@@ -43,14 +43,18 @@ Show that $\AA^1$ is not isomorphic to $X = V(xy-1)$.
 :::
 
 ::: {.solution}
-<1>1. The coordinate ring of the hyperbola is
+
+::: pf
+
+::: {.pf-step #hyperbola-coordinate-ring}
+The coordinate ring of the hyperbola is
 $$
 \boxed{
 \CC[X]\cong\CC[x,x^{-1}].
 }
 $$
 
-::: {.proof}
+::: pf-proof
 One has
 $$
 \CC[X]
@@ -71,12 +75,15 @@ is surjective and has kernel $(xy-1)$. Hence it induces the displayed
 isomorphism.
 :::
 
-<1>2. The only units in $\CC[t]$ are the nonzero constants:
+:::
+
+::: {.pf-step #ct-units-constants}
+The only units in $\CC[t]$ are the nonzero constants:
 $$
 \CC[t]^\times=\CC^\times.
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 f(t)g(t)=1
@@ -89,31 +96,37 @@ Thus both degrees are zero, so both polynomials are nonzero constants.
 Conversely every nonzero constant is a unit.
 :::
 
-<1>3. The coordinate ring $\CC[X]$ has a nonconstant unit.
+:::
 
-::: {.proof}
-Under step <1>1,
+::: {.pf-step #hyperbola-has-nonconstant-unit}
+The coordinate ring $\CC[X]$ has a nonconstant unit.
+
+::: pf-proof
+Under step [](#hyperbola-coordinate-ring){.pf-ref},
 $$
 x\in\CC[x,x^{-1}]
 $$
 is a unit with inverse $x^{-1}$. It is not constant.
 :::
 
-<1>4. There is no $\CC$-algebra isomorphism
+:::
+
+::: {.pf-step #no-algebra-isomorphism}
+There is no $\CC$-algebra isomorphism
 $$
 \CC[X]\xrightarrow{\sim}\CC[t].
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose
 $$
 \varphi:\CC[X]\xrightarrow{\sim}\CC[t]
 $$
-were a $\CC$-algebra isomorphism. By step <1>3, $x$ is a unit, so
+were a $\CC$-algebra isomorphism. By step [](#hyperbola-has-nonconstant-unit){.pf-ref}, $x$ is a unit, so
 $$
 \varphi(x)
 $$
-is a unit in $\CC[t]$. Step <1>2 gives
+is a unit in $\CC[t]$. Step [](#ct-units-constants){.pf-ref} gives
 $$
 \varphi(x)=c
 $$
@@ -131,16 +144,19 @@ in $\CC[x,x^{-1}]$, contradicting injectivity of $\varphi$. Therefore no such
 isomorphism exists.
 :::
 
-<1>5. Hence
+:::
+
+::: {.pf-step #varieties-not-isomorphic}
+Hence
 $$
 \boxed{
 \AA^1_\CC\not\cong V(xy-1).
 }
 $$
 
-::: {.proof}
+::: pf-proof
 An isomorphism of affine varieties induces an isomorphism of their coordinate
-rings. Step <1>4 shows that the coordinate rings
+rings. Step [](#no-algebra-isomorphism){.pf-ref} shows that the coordinate rings
 $$
 \CC[t]
 \qquad\text{and}\qquad
@@ -150,9 +166,12 @@ are not isomorphic as $\CC$-algebras. Therefore the affine varieties are not
 isomorphic.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#varieties-not-isomorphic){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

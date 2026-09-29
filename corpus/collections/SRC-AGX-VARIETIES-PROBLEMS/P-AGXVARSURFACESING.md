@@ -71,7 +71,10 @@ $$
 d=\deg f.
 $$
 
-<1>1. The point $P$ is smooth exactly when
+::: pf
+
+::: {.pf-step #rank-criterion-smooth}
+The point $P$ is smooth exactly when
 $$
 \rank
 \begin{pmatrix}
@@ -81,7 +84,7 @@ f_x(P)&f_y(P)&f_z(P)
 1.
 $$
 
-::: {.proof}
+::: pf-proof
 The curve $C$ is a hypersurface in the smooth surface $\PP^2_\CC$, so its
 codimension is $1$. Choose a nonzero coordinate of $P$; after permuting
 coordinates, assume $c\ne0$ and scale the representative so that
@@ -120,20 +123,26 @@ $$
 has rank $1$.
 :::
 
-<1>2. The point $P$ is singular if and only if
+:::
+
+::: {.pf-step #singularity-criterion}
+The point $P$ is singular if and only if
 $$
 \boxed{
 f_x(P)=f_y(P)=f_z(P)=0.
 }
 $$
 
-::: {.proof}
+::: pf-proof
 A one-row matrix has rank less than $1$ exactly when all of its entries
-vanish. By step <1>1, rank less than $1$ is exactly the singular condition.
+vanish. By step [](#rank-criterion-smooth){.pf-ref}, rank less than $1$ is exactly the singular condition.
 This proves (a).
 :::
 
-<1>3. If $P$ is smooth, the kernel of the homogeneous differential
+:::
+
+::: {.pf-step #kernel-two-dim}
+If $P$ is smooth, the kernel of the homogeneous differential
 $$
 df_P:\CC^3\longrightarrow\CC
 $$
@@ -145,7 +154,7 @@ u f_x(P)+v f_y(P)+w f_z(P)=0
 \right\}.
 $$
 
-::: {.proof}
+::: pf-proof
 The differential of the homogeneous polynomial $f$ at a representative
 $(a,b,c)$ of $P$ is
 $$
@@ -153,18 +162,21 @@ df_P(u,v,w)
 =
 u f_x(P)+v f_y(P)+w f_z(P).
 $$
-Since $P$ is smooth, step <1>1 says that this linear functional is nonzero.
+Since $P$ is smooth, step [](#rank-criterion-smooth){.pf-ref} says that this linear functional is nonzero.
 Therefore its kernel is a vector subspace of codimension one in $\CC^3$,
 hence has dimension two, with the displayed equation.
 :::
 
-<1>4. The radial vector
+:::
+
+::: {.pf-step #radial-vector-in-kernel}
+The radial vector
 $$
 (a,b,c)
 $$
 belongs to $\ker df_P$.
 
-::: {.proof}
+::: pf-proof
 Euler's identity for a homogeneous polynomial of degree $d$ is
 $$
 x f_x+y f_y+z f_z=d f.
@@ -180,10 +192,13 @@ $$
 because $P\in C=V(f)$. Hence $(a,b,c)\in\ker df_P$.
 :::
 
-<1>5. The projectivization of $\ker df_P$ is the tangent line to $C$ at
+:::
+
+::: {.pf-step #projectivized-kernel-is-tangent}
+The projectivization of $\ker df_P$ is the tangent line to $C$ at
 $P$.
 
-::: {.proof}
+::: pf-proof
 The affine cone over $C$ is
 $$
 \widehat C=V(f)\subseteq\AA^3_\CC.
@@ -195,37 +210,43 @@ T_{(a,b,c)}\widehat C
 =
 \ker df_P.
 $$
-Step <1>4 shows that this tangent plane contains the radial line through
+Step [](#radial-vector-in-kernel){.pf-ref} shows that this tangent plane contains the radial line through
 $(a,b,c)$. The projective tangent space is the image of this plane under the
 quotient by the radial direction:
 $$
 \PP(\ker df_P)\subseteq\PP^2_\CC.
 $$
-Because $\ker df_P$ is two-dimensional by step <1>3, its projectivization is
+Because $\ker df_P$ is two-dimensional by step [](#kernel-two-dim){.pf-ref}, its projectivization is
 a projective line: the tangent line to $C$ at $P$.
 :::
 
-<1>6. The tangent line at a smooth point $P$ has equation
+:::
+
+::: {.pf-step #tangent-line-equation}
+The tangent line at a smooth point $P$ has equation
 $$
 \boxed{
 x f_x(P)+y f_y(P)+z f_z(P)=0.
 }
 $$
 
-::: {.proof}
-Step <1>3 gives exactly this homogeneous linear equation for
+::: pf-proof
+Step [](#kernel-two-dim){.pf-ref} gives exactly this homogeneous linear equation for
 $$
 \ker df_P.
 $$
-Step <1>5 identifies the projectivization of that kernel with the tangent
-line. Step <1>4 verifies explicitly that the line passes through $P$.
+Step [](#projectivized-kernel-is-tangent){.pf-ref} identifies the projectivization of that kernel with the tangent
+line. Step [](#radial-vector-in-kernel){.pf-ref} verifies explicitly that the line passes through $P$.
 This proves (b).
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves the singularity criterion, and step <1>6 proves the
+::: pf-qed
+Step [](#singularity-criterion){.pf-ref} proves the singularity criterion, and step [](#tangent-line-equation){.pf-ref} proves the
 tangent-line formula.
 :::
+
+:::
+
 :::

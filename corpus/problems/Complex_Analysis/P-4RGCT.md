@@ -31,28 +31,46 @@ is a polynomial of degree $n$, then it has $n$ zeros in $\mathbb{C}$.
 ::: {.solution}
 **Goal:** Apply Rouch\'e's theorem to prove the Fundamental Theorem of Algebra: a polynomial $P_n(z) = a_0 + a_1 z + \cdots + a_{n-1}z^{n-1} + a_n z^n$ with $a_n \ne 0$ has exactly $n$ zeros in $\CC$ counting multiplicity.
 
-<1>1. Setup: compare $P_n$ with its leading term $a_n z^n$ on a large circle.
-::: {.proof}
+::: pf
+
+::: {.pf-step #setup-leading-term}
+Setup: compare $P_n$ with its leading term $a_n z^n$ on a large circle.
+
+::: pf-proof
 write $P_n(z) = a_n z^n + Q(z)$ with $Q(z) = a_0 + \cdots + a_{n-1}z^{n-1}$ a polynomial of degree $\le n-1$.
 :::
 
-<1>2. For sufficiently large $R$, $|Q(z)| < |a_n z^n|$ on $|z| = R$.
-::: {.proof}
+:::
+
+::: {.pf-step #bound-lower-terms}
+For sufficiently large $R$, $|Q(z)| < |a_n z^n|$ on $|z| = R$.
+
+::: pf-proof
 on $|z| = R$, $|a_n z^n| = |a_n|R^n$ and $|Q(z)| \le \sum_{k=0}^{n-1}|a_k|R^k \le C R^{n-1}$ for $R \ge 1$; choose $R$ with $C R^{n-1} < |a_n| R^n$, i.e. $R > C/|a_n|$.
 :::
 
-<1>3. $P_n$ has exactly $n$ zeros in $|z| < R$ counting multiplicity.
-::: {.proof}
-Rouch\'e's theorem on $|z| = R$ with $f = a_n z^n$ and $g = Q$: by <1>2, $|Q| < |a_n z^n|$, so $P_n = f + g$ has the same number of zeros in $|z| < R$ as $a_n z^n$, which has exactly $n$ (all at $0$, with multiplicity $n$).
 :::
 
-<1>4. $P_n$ has exactly $n$ zeros in $\CC$ counting multiplicity.
-::: {.proof}
-by <1>3, $P_n$ has $n$ zeros (counting multiplicity) in $|z| < R$; since $R$ can be chosen arbitrarily large and a degree-$n$ polynomial has at most $n$ zeros counting multiplicity, these are all of them.
+::: {.pf-step #n-zeros-in-disk}
+$P_n$ has exactly $n$ zeros in $|z| < R$ counting multiplicity.
+
+::: pf-proof
+Rouch\'e's theorem on $|z| = R$ with $f = a_n z^n$ and $g = Q$: by step [](#bound-lower-terms){.pf-ref}, $|Q| < |a_n z^n|$, so $P_n = f + g$ has the same number of zeros in $|z| < R$ as $a_n z^n$, which has exactly $n$ (all at $0$, with multiplicity $n$).
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>1–<1>4 prove the Fundamental Theorem of Algebra via Rouch\'e's theorem.
 :::
+
+::: {.pf-step #n-zeros-in-plane}
+$P_n$ has exactly $n$ zeros in $\CC$ counting multiplicity.
+
+::: pf-proof
+by step [](#n-zeros-in-disk){.pf-ref}, $P_n$ has $n$ zeros (counting multiplicity) in $|z| < R$; since $R$ can be chosen arbitrarily large and a degree-$n$ polynomial has at most $n$ zeros counting multiplicity, these are all of them.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#setup-leading-term){.pf-ref}, [](#bound-lower-terms){.pf-ref}, [](#n-zeros-in-disk){.pf-ref} and [](#n-zeros-in-plane){.pf-ref} prove the Fundamental Theorem of Algebra via Rouch\'e's theorem.
+:::
+
 :::

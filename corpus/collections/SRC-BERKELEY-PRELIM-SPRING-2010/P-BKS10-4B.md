@@ -39,9 +39,12 @@ Prove or disprove each assertion:
 ::: {.solution}
 Let $V\coloneqq\CC^n$ be the common underlying vector space.
 
-<1>1. Assertion 1 is false.
+::: pf
 
-::: {.proof}
+::: {.pf-step #assertion-one-false}
+Assertion 1 is false.
+
+::: pf-proof
 Take
 $$
 A=
@@ -70,9 +73,12 @@ This matrix is nonzero and nilpotent, so its only eigenvalue is $0$ and it
 cannot be diagonalizable.
 :::
 
-<1>2. Assertion 2 is false.
+:::
 
-::: {.proof}
+::: {.pf-step #assertion-two-false}
+Assertion 2 is false.
+
+::: pf-proof
 Set
 $$
 N=
@@ -115,13 +121,16 @@ However,
 $$
 AB=N.
 $$
-As in step <1>1, $N$ is a nonzero nilpotent matrix and is not
+As in step [](#assertion-one-false){.pf-ref}, $N$ is a nonzero nilpotent matrix and is not
 diagonalizable.
 :::
 
-<1>3. Assertion 3 is true.
+:::
 
-::: {.proof}
+::: {.pf-step #assertion-three-true}
+Assertion 3 is true.
+
+::: pf-proof
 Assume
 $$
 A^2=A.
@@ -148,9 +157,12 @@ A basis adapted to this direct sum consists of eigenvectors with
 eigenvalues $0$ and $1$, so $A$ is diagonalizable.
 :::
 
-<1>4. Assertion 4 is true.
+:::
 
-::: {.proof}
+::: {.pf-step #assertion-four-true}
+Assertion 4 is true.
+
+::: pf-proof
 If $AB$ is invertible, then
 $$
 0\neq\det(AB)=\det(A)\det(B).
@@ -165,18 +177,24 @@ Hence $BA$ is similar to $AB$. Similarity preserves diagonalizability, so
 $BA$ is diagonalizable whenever $AB$ is.
 :::
 
-<1>5. The four answers are
+:::
+
+::: {.pf-step #answer-summary}
+The four answers are
 $$
 \boxed{\text{false},\ \text{false},\ \text{true},\ \text{true}}.
 $$
 
-::: {.proof}
-Steps <1>1--<1>4 establish the assertions in order.
+::: pf-proof
+Steps [](#assertion-one-false){.pf-ref}, [](#assertion-two-false){.pf-ref}, [](#assertion-three-true){.pf-ref} and [](#assertion-four-true){.pf-ref} establish the assertions in order.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 records the required conclusions.
 :::
+
+::: pf-qed
+Step [](#answer-summary){.pf-ref} records the required conclusions.
+:::
+
+:::
+
 :::

@@ -46,8 +46,12 @@ be the quotient map, where $M$ is the Möbius band, and set
 C=q\bigl([0,1]\times\{1/2\}\bigr)\subseteq M.
 \]
 
-<1>1. The subspace $C$ is homeomorphic to $S^1$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #c-homeomorphic-s1}
+The subspace $C$ is homeomorphic to $S^1$.
+
+::: pf-proof
 On the horizontal midline, the only nontrivial identification is
 \[
 (0,1/2)\sim(1,1/2),
@@ -74,14 +78,18 @@ The space $C$ is compact as the continuous image under $q$ of the compact interv
 Therefore the continuous bijection $\bar\phi$ is a homeomorphism.
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #r-well-defined}
+The map
 \[
 R:X\longrightarrow C,
 \qquad
 R(s,t)=q(s,1/2),
 \]
 is constant on every equivalence class of $\sim$.
-::: {.proof}
+
+::: pf-proof
 Away from the two vertical boundary edges, equivalence classes are singletons, so there is nothing to check.
 For a generating boundary identification
 \[
@@ -103,7 +111,10 @@ so these two values are equal in $C$.
 Thus $R$ is constant on equivalence classes.
 :::
 
-<1>3. The map $R$ descends to a continuous map
+:::
+
+::: {.pf-step #r-descends}
+The map $R$ descends to a continuous map
 \[
 r:M\longrightarrow C
 \]
@@ -111,14 +122,15 @@ satisfying
 \[
 r\circ q=R.
 \]
-::: {.proof}
+
+::: pf-proof
 The map
 \[
 (s,t)\longmapsto(s,1/2)
 \]
 from $X$ to $X$ is continuous, so its composite with $q$ is continuous and has image in $C$.
 Hence $R:X\to C$ is continuous.
-By <1>2 it is constant on the fibers of the quotient map $q$.
+By step [](#r-well-defined){.pf-ref} it is constant on the fibers of the quotient map $q$.
 The universal property of the quotient topology therefore gives a unique continuous map
 \[
 r:M\to C
@@ -126,8 +138,12 @@ r:M\to C
 with $r\circ q=R$.
 :::
 
-<1>4. The map $r$ restricts to the identity on $C$.
-::: {.proof}
+:::
+
+::: {.pf-step #r-restricts-to-identity}
+The map $r$ restricts to the identity on $C$.
+
+::: pf-proof
 Every point of $C$ has the form
 \[
 c=q(s,1/2)
@@ -147,14 +163,23 @@ r|_C=\operatorname{id}_C.
 \]
 :::
 
-<1>5. Therefore $S^1$ is a retract of the Möbius band.
-::: {.proof}
-By <1>1, $C\cong S^1$.
-By <1>3--<1>4, the inclusion
+:::
+
+::: pf-step
+Therefore $S^1$ is a retract of the Möbius band.
+
+::: pf-proof
+By step [](#c-homeomorphic-s1){.pf-ref}, $C\cong S^1$.
+By steps [](#r-descends){.pf-ref} and [](#r-restricts-to-identity){.pf-ref}, the inclusion
 \[
 C\hookrightarrow M
 \]
 has the left inverse $r:M\to C$.
 Hence $C$ is a retract of $M$, so the Möbius band contains a retract homeomorphic to $S^1$.
 :::
+
+:::
+
+:::
+
 :::

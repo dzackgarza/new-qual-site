@@ -33,7 +33,10 @@ $$
 D\coloneqq\{x\in\RR:f\text{ is discontinuous at }x\}.
 $$
 
-<1>1. For every $x\in\RR$, the finite numbers
+::: pf
+
+::: {.pf-step #one-sided-bounds}
+For every $x\in\RR$, the finite numbers
 $$
 L_x
 \coloneqq
@@ -50,7 +53,7 @@ $$
 L_x\leq f(x)\leq R_x.
 $$
 
-::: {.proof}
+::: pf-proof
 Because $f$ is increasing,
 $$
 f(t)\leq f(x)
@@ -67,7 +70,10 @@ below. Thus $R_x$ is finite. The displayed inequalities follow directly
 from monotonicity.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #one-sided-limits}
+One has
 $$
 \lim_{t\to x^-}f(t)=L_x
 $$
@@ -76,7 +82,7 @@ $$
 \lim_{t\to x^+}f(t)=R_x.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $\varepsilon>0$. By the definition of supremum, there is some
 $s<x$ with
 $$
@@ -111,27 +117,33 @@ R_x+\varepsilon.
 $$
 :::
 
-<1>3. The function $f$ is continuous at $x$ exactly when
+:::
+
+::: {.pf-step #continuity-criterion}
+The function $f$ is continuous at $x$ exactly when
 $$
 L_x=f(x)=R_x.
 $$
 
-::: {.proof}
+::: pf-proof
 If $f$ is continuous at $x$, both one-sided limits equal $f(x)$, so the
-claim follows from step <1>2.
+claim follows from step [](#one-sided-limits){.pf-ref}.
 
-Conversely, if the three quantities are equal, step <1>2 shows that both
+Conversely, if the three quantities are equal, step [](#one-sided-limits){.pf-ref} shows that both
 one-sided limits equal $f(x)$, hence the two-sided limit exists and equals
 $f(x)$.
 :::
 
-<1>4. For every $x\in D$, there is a nonempty open interval
+:::
+
+::: {.pf-step #jump-interval-exists}
+For every $x\in D$, there is a nonempty open interval
 $$
 J_x\subseteq(L_x,R_x).
 $$
 
-::: {.proof}
-By step <1>3, if $x\in D$, then either
+::: pf-proof
+By step [](#continuity-criterion){.pf-ref}, if $x\in D$, then either
 $$
 L_x<f(x)
 $$
@@ -151,7 +163,10 @@ If both inequalities hold, choose either interval. In every case $J_x$ is
 a nonempty open interval.
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #intervals-disjoint}
+If
 $$
 x<y
 $$
@@ -160,7 +175,7 @@ $$
 J_x\cap J_y=\varnothing.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose any $t$ with
 $$
 x<t<y.
@@ -178,15 +193,18 @@ $J_y$ is strictly greater than $L_y$. Therefore every point of $J_x$ is
 strictly less than every point of $J_y$.
 :::
 
-<1>6. The set $D$ is countable.
+:::
 
-::: {.proof}
+::: {.pf-step #d-countable}
+The set $D$ is countable.
+
+::: pf-proof
 Every nonempty open interval contains a rational number. For each
 $x\in D$, choose
 $$
 q_x\in J_x\cap\QQ.
 $$
-Step <1>5 shows that the intervals $J_x$ are pairwise disjoint, so
+Step [](#intervals-disjoint){.pf-ref} shows that the intervals $J_x$ are pairwise disjoint, so
 distinct points of $D$ receive distinct rationals. Thus
 $$
 x\longmapsto q_x
@@ -194,15 +212,18 @@ $$
 is an injection from $D$ into the countable set $\QQ$.
 :::
 
-<1>7. There exists
+:::
+
+::: {.pf-step #continuity-point-exists}
+There exists
 $$
 \boxed{x\in\RR}
 $$
 at which $f$ is continuous.
 
-::: {.proof}
+::: pf-proof
 The real line is uncountable, while the discontinuity set $D$ is countable
-by step <1>6. Hence
+by step [](#d-countable){.pf-ref}. Hence
 $$
 \RR\setminus D
 \neq
@@ -211,9 +232,12 @@ $$
 Every point in this complement is a continuity point.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required existence statement.
 :::
+
+::: pf-qed
+Step [](#continuity-point-exists){.pf-ref} is the required existence statement.
+:::
+
+:::
+
 :::

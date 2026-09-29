@@ -48,23 +48,29 @@ $$
 $$
 for every $j$.
 
-<1>1. Any root of $p'$ that is also a root of $p$ lies in the half-plane
+::: pf
+
+::: {.pf-step #shared-root-case}
+Any root of $p'$ that is also a root of $p$ lies in the half-plane
 $\operatorname{Re}z>0$.
 
-::: {.proof}
+::: pf-proof
 Every root of $p$ has positive real part by hypothesis. Hence any point that
 is simultaneously a root of $p$ and $p'$ already lies in the required
 half-plane.
 :::
 
-<1>2. If $w$ is not a root of $p$, then
+:::
+
+::: {.pf-step #logarithmic-derivative-formula}
+If $w$ is not a root of $p$, then
 $$
 \frac{p'(w)}{p(w)}
 =
 \sum_{j=1}^n\frac{1}{w-\lambda_j}.
 $$
 
-::: {.proof}
+::: pf-proof
 Differentiating the factored expression for $p$ gives
 $$
 p'(z)
@@ -75,12 +81,15 @@ $$
 whenever $p(z)\ne0$. Dividing by $p(w)$ yields the formula.
 :::
 
-<1>3. If $\operatorname{Re}w\leq0$, then for every $j$,
+:::
+
+::: {.pf-step #reciprocal-negative-real-part}
+If $\operatorname{Re}w\leq0$, then for every $j$,
 $$
 \operatorname{Re}\frac{1}{w-\lambda_j}<0.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $\operatorname{Re}\lambda_j>0$,
 $$
 \operatorname{Re}(w-\lambda_j)
@@ -97,14 +106,17 @@ $$
 Applying this with $u=w-\lambda_j$ gives the claim.
 :::
 
-<1>4. Every root $w$ of $p'$ satisfies
+:::
+
+::: {.pf-step #root-boxed}
+Every root $w$ of $p'$ satisfies
 $$
 \boxed{\operatorname{Re}w>0}.
 $$
 
-::: {.proof}
-Let $p'(w)=0$. If $p(w)=0$, step <1>1 applies. Suppose instead that
-$p(w)\ne0$. Then step <1>2 gives
+::: pf-proof
+Let $p'(w)=0$. If $p(w)=0$, step [](#shared-root-case){.pf-ref} applies. Suppose instead that
+$p(w)\ne0$. Then step [](#logarithmic-derivative-formula){.pf-ref} gives
 $$
 0
 =
@@ -113,13 +125,15 @@ $$
 \sum_{j=1}^n\frac{1}{w-\lambda_j}.
 $$
 If $\operatorname{Re}w\leq0$, every summand on the right has strictly
-negative real part by step <1>3, so their sum has strictly negative real
+negative real part by step [](#reciprocal-negative-real-part){.pf-ref}, so their sum has strictly negative real
 part and cannot equal $0$. Therefore $\operatorname{Re}w>0$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the assertion for every zero of $p'$.
+::: pf-qed
+Step [](#root-boxed){.pf-ref} proves the assertion for every zero of $p'$.
+:::
+
 :::
 :::

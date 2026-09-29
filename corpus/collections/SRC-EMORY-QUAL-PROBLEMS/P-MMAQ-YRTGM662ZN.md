@@ -44,9 +44,12 @@ Write $V^\vee=\operatorname{Hom}_F(V,F)$ for the algebraic
 dual. We use basis existence and basis extension, valid
 for arbitrary vector spaces by Zorn's lemma [@DF04].
 
-<1>1. The map $e:V\to V^{\vee\vee}$ is linear and injective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #e-is-linear-and-injective}
+The map $e:V\to V^{\vee\vee}$ is linear and injective.
+
+::: pf-proof
 For fixed $v$, evaluation $f\mapsto f(v)$ is linear
 on $V^\vee$. For $a,b\in F$ and $v,w\in V$,
 $$
@@ -60,9 +63,12 @@ Then $e(v)(f)=1$, so $e(v)\ne0$. The kernel is
 therefore zero.
 :::
 
-<1>2. When $V$ is finite-dimensional, $e$ is onto.
+:::
 
-::: {.proof}
+::: pf-step
+When $V$ is finite-dimensional, $e$ is onto.
+
+::: pf-proof
 Choose a basis $v_1,\ldots,v_n$ and let
 $\varepsilon_i$ be its coordinate functionals.
 Every $f\in V^\vee$ satisfies
@@ -74,13 +80,16 @@ $$
 $$
 Hence $\Phi=e(v)$, proving surjectivity. If $V=0$,
 the same statement uses the empty basis and all
-three spaces are zero. Together with step <1>1,
+three spaces are zero. Together with step [](#e-is-linear-and-injective){.pf-ref},
 this proves the forward implication in part (2).
 :::
 
-<1>3. When $V$ is infinite-dimensional, $e$ is not onto.
+:::
 
-::: {.proof}
+::: pf-step
+When $V$ is infinite-dimensional, $e$ is not onto.
+
+::: pf-proof
 Choose a basis $(v_i)_{i\in I}$ with $I$ infinite.
 Sending $f$ to $(f(v_i))_{i\in I}$ identifies $V^\vee$
 with the full function space $F^I$: every assignment
@@ -110,5 +119,9 @@ for every $i\in J$. Hence $v=0$, which would imply
 $\lambda=0$, contrary to $\lambda(\mathbf1)=1$.
 This constructs a double-dual element not in the
 image and proves the converse implication.
+:::
+
+:::
+
 :::
 :::

@@ -28,6 +28,7 @@ Evaluate $\int _ { - \infty } ^ { \infty } { \frac { x ^ { 2 } } { x ^ { n } + 1
 :::
 
 ::: {.solution}
+
 Because $n$ is even, the integrand is even.
 Thus it suffices to compute
 \[
@@ -44,11 +45,15 @@ F(z)=\frac{z^2}{1+z^n},
 \omega=e^{2\pi i/n}=\rho^2.
 \]
 
-<1>1. In the sector $0<\arg z<2\pi/n$, the function $F$ has exactly one pole, at $z=\rho$, and
+::: pf
+
+::: {.pf-step #pole-and-residue}
+In the sector $0<\arg z<2\pi/n$, the function $F$ has exactly one pole, at $z=\rho$, and
 \[
 \operatorname{Res}_{z=\rho}F(z)=-\frac{\rho^3}{n}.
 \]
-::: {.proof}
+
+::: pf-proof
 The poles satisfy $z^n=-1$, so they are
 \[
 e^{(2k+1)\pi i/n}.
@@ -64,8 +69,12 @@ Therefore
 Since $\rho^n=-1$, one has $\rho^{3-n}=-\rho^3$, giving the formula.
 :::
 
-<1>2. The integral over the circular arc of radius $R$ in this sector tends to $0$ as $R\to\infty$.
-::: {.proof}
+:::
+
+::: {.pf-step #arc-integral-vanishes}
+The integral over the circular arc of radius $R$ in this sector tends to $0$ as $R\to\infty$.
+
+::: pf-proof
 On the arc, $|z|=R$.
 For $R$ large,
 \[
@@ -79,8 +88,12 @@ The arc length is $2\pi R/n$, hence its integral is $O(R^{3-n})$.
 Since $n\ge4$, this tends to $0$.
 :::
 
-<1>3. The two radial sides of the sector contribute $(1-\rho^6)I$ in the limit.
-::: {.proof}
+:::
+
+::: {.pf-step #radial-sides-contribution}
+The two radial sides of the sector contribute $(1-\rho^6)I$ in the limit.
+
+::: pf-proof
 The lower radial side contributes
 \[
 \int_0^R \frac{x^2}{1+x^n}\,dx.
@@ -99,12 +112,16 @@ Therefore the upper side contributes
 Letting $R\to\infty$ gives $(1-\rho^6)I$.
 :::
 
-<1>4. The residue theorem gives
+:::
+
+::: {.pf-step #I-value}
+The residue theorem gives
 \[
 I=\frac{\pi}{n\sin(3\pi/n)}.
 \]
-::: {.proof}
-By <1>1--<1>3, the residue theorem yields
+
+::: pf-proof
+By steps [](#pole-and-residue){.pf-ref}, [](#arc-integral-vanishes){.pf-ref} and [](#radial-sides-contribution){.pf-ref}, the residue theorem yields
 \[
 (1-\rho^6)I
 =2\pi i\left(-\frac{\rho^3}{n}\right)
@@ -128,13 +145,22 @@ I=\frac{\pi}{n\sin(3\pi/n)}.
 \]
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #final-integral-value}
+Therefore
 \[
 \boxed{\int_{-\infty}^{\infty}\frac{x^2}{x^n+1}\,dx
 =\frac{2\pi}{n\sin(3\pi/n)}}.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $n$ is even, $x^n$ and $x^2$ are both even functions, so the integrand is even.
-Thus the integral over the whole real line is $2I$, and <1>4 gives the displayed value.
+Thus the integral over the whole real line is $2I$, and step [](#I-value){.pf-ref} gives the displayed value.
 :::
+
+:::
+
+:::
+
 :::

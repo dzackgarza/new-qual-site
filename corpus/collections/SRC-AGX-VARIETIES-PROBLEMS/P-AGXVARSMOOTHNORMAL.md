@@ -51,13 +51,17 @@ characteristic zero.
 :::
 
 ::: {.solution}
-<1>1. If $X$ is smooth, then every local ring
+
+::: pf
+
+::: {.pf-step #local-rings-regular}
+If $X$ is smooth, then every local ring
 $$
 \mco_{X,p}
 $$
 is regular.
 
-::: {.proof}
+::: pf-proof
 The field $k$ is perfect because it is algebraically closed. For schemes
 locally of finite type over a perfect field, smoothness implies regularity;
 indeed smoothness and regularity are equivalent in this setting by
@@ -67,10 +71,13 @@ Therefore, if $X$ is smooth, then for every point $p\in X$ the local ring
 $\mco_{X,p}$ is regular.
 :::
 
-<1>2. Every smooth variety $X$ is normal.
+:::
 
-::: {.proof}
-By step <1>1, every local ring $\mco_{X,p}$ is a regular local ring. Every
+::: {.pf-step #smooth-implies-normal}
+Every smooth variety $X$ is normal.
+
+::: pf-proof
+By step [](#local-rings-regular){.pf-ref}, every local ring $\mco_{X,p}$ is a regular local ring. Every
 regular local ring is a normal domain by [[D-QJ5M9]]. Hence every local ring
 of $X$ is normal.
 
@@ -82,9 +89,12 @@ $$
 This proves (a).
 :::
 
-<1>3. Normality does not imply smoothness in dimension at least $2$.
+:::
 
-::: {.proof}
+::: {.pf-step #converse-fails-dim2}
+Normality does not imply smoothness in dimension at least $2$.
+
+::: pf-proof
 Let $n>1$ and let
 $$
 \mu_n
@@ -102,12 +112,15 @@ of $V_n$ [[P-AGXVAREXQUOTSING]]. Thus
 $$
 V_n\text{ is normal but not smooth}.
 $$
-Therefore the converse to step <1>2 fails already in dimension $2$.
+Therefore the converse to step [](#smooth-implies-normal){.pf-ref} fails already in dimension $2$.
 :::
 
-<1>4. For curves, normality does imply smoothness.
+:::
 
-::: {.proof}
+::: {.pf-step #curves-normal-implies-smooth}
+For curves, normality does imply smoothness.
+
+::: pf-proof
 Let $C$ be a normal curve over $k$. At every closed point $p\in C$, the
 local ring $\mco_{C,p}$ is a one-dimensional Noetherian normal local domain.
 Such a ring is a discrete valuation ring, hence regular, by [[D-QJ5M9]].
@@ -125,7 +138,10 @@ C\text{ smooth}.
 $$
 :::
 
-<1>5. The precise comparison is:
+:::
+
+::: {.pf-step #comparison-summary}
+The precise comparison is:
 $$
 \boxed{
 \text{smooth}\Longrightarrow\text{normal},
@@ -133,15 +149,18 @@ $$
 $$
 the converse fails in dimension $\geq2$, and it holds for curves.
 
-::: {.proof}
-Step <1>2 proves smooth implies normal. Step <1>3 gives a normal singular
-surface, so the converse fails in dimension at least two. Step <1>4 proves
+::: pf-proof
+Step [](#smooth-implies-normal){.pf-ref} proves smooth implies normal. Step [](#converse-fails-dim2){.pf-ref} gives a normal singular
+surface, so the converse fails in dimension at least two. Step [](#curves-normal-implies-smooth){.pf-ref} proves
 the dimension-one converse.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers both parts of the problem.
 :::
+
+::: pf-qed
+Step [](#comparison-summary){.pf-ref} answers both parts of the problem.
+:::
+
+:::
+
 :::

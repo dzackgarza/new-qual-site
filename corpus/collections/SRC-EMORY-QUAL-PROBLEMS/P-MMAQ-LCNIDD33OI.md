@@ -37,10 +37,14 @@ Conclude that if $R$ is a PID and $p\in R$ is prime, then $R/(p)$ is a field.
 :::
 
 ::: {.solution}
-<1>1. If $I$ is maximal in a commutative unital ring $R$,
+
+::: pf
+
+::: {.pf-step #maximal-ideal-quotient-is-field}
+If $I$ is maximal in a commutative unital ring $R$,
 then $R/I$ is a field.
 
-::: {.proof}
+::: pf-proof
 A maximal ideal is proper, so $1+I\ne0+I$.
 For a nonzero coset $a+I$, one has $a\notin I$.
 The ideal $I+(a)$ strictly contains $I$, and hence
@@ -50,9 +54,12 @@ $(b+I)(a+I)=1+I$. Thus every nonzero element of
 the nonzero commutative quotient is invertible.
 :::
 
-<1>2. Every nonzero prime ideal $P$ of a PID is maximal.
+:::
 
-::: {.proof}
+::: {.pf-step #nonzero-prime-ideal-is-maximal}
+Every nonzero prime ideal $P$ of a PID is maximal.
+
+::: pf-proof
 Write $P=(a)$ with $a\ne0$. Let $J$ be an ideal
 containing $P$, and write $J=(b)$. The containment
 gives $a=bc$ for some $c\in R$.
@@ -65,14 +72,21 @@ and $J=R$. There is no ideal strictly between
 the proper ideal $P$ and $R$, proving maximality.
 :::
 
-<1>3. If $p$ is a prime element of a PID, then $R/(p)$ is a field.
+:::
 
-::: {.proof}
+::: pf-step
+If $p$ is a prime element of a PID, then $R/(p)$ is a field.
+
+::: pf-proof
 By definition a prime element is nonzero and not
 a unit, and $p\mid ab$ implies $p\mid a$ or
 $p\mid b$. These assertions say respectively that
 $(p)$ is nonzero, proper, and a prime ideal.
-Step <1>2 makes it maximal, and step <1>1 makes
+Step [](#nonzero-prime-ideal-is-maximal){.pf-ref} makes it maximal, and step [](#maximal-ideal-quotient-is-field){.pf-ref} makes
 its quotient a field.
+:::
+
+:::
+
 :::
 :::

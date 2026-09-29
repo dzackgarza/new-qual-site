@@ -37,7 +37,11 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The general solution of the homogeneous equation
+
+::: pf
+
+::: {.pf-step #homogeneous-solution}
+The general solution of the homogeneous equation
 $$
 y''-2y'+y=0
 $$
@@ -46,7 +50,7 @@ $$
 y_h(x)=(a+bx)e^x.
 $$
 
-::: {.proof}
+::: pf-proof
 The characteristic polynomial is
 $$
 r^2-2r+1=(r-1)^2,
@@ -54,7 +58,10 @@ $$
 so the repeated root $r=1$ gives the displayed homogeneous solution.
 :::
 
-<1>2. A particular solution of
+:::
+
+::: {.pf-step #particular-solution}
+A particular solution of
 $$
 y''-2y'+y=e^{-x}
 $$
@@ -63,7 +70,7 @@ $$
 y_p(x)=\frac14e^{-x}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $y_p=ce^{-x}$,
 $$
 y_p''-2y_p'+y_p
@@ -73,62 +80,77 @@ $$
 Taking $c=1/4$ gives the forcing term $e^{-x}$.
 :::
 
-<1>3. Hence every solution has the form
+:::
+
+::: {.pf-step #general-solution-form}
+Hence every solution has the form
 $$
 y(x)=\frac14e^{-x}+ae^x+bxe^x.
 $$
 
-::: {.proof}
-This is the sum of the homogeneous solution from step <1>1 and the
-particular solution from step <1>2.
+::: pf-proof
+This is the sum of the homogeneous solution from step [](#homogeneous-solution){.pf-ref} and the
+particular solution from step [](#particular-solution){.pf-ref}.
 :::
 
-<1>4. The condition $y(0)=0$ gives
+:::
+
+::: {.pf-step #constant-a}
+The condition $y(0)=0$ gives
 $$
 a=-\frac14.
 $$
 
-::: {.proof}
-Substituting $x=0$ into step <1>3 gives
+::: pf-proof
+Substituting $x=0$ into step [](#general-solution-form){.pf-ref} gives
 $$
 0=y(0)=\frac14+a.
 $$
 :::
 
-<1>5. The condition $y'(0)=0$ then gives
+:::
+
+::: {.pf-step #constant-b}
+The condition $y'(0)=0$ then gives
 $$
 b=\frac12.
 $$
 
-::: {.proof}
-Differentiating step <1>3,
+::: pf-proof
+Differentiating step [](#general-solution-form){.pf-ref},
 $$
 y'(x)
 =-\frac14e^{-x}+ae^x+b(1+x)e^x.
 $$
-Thus, using $a=-1/4$ from step <1>4,
+Thus, using $a=-1/4$ from step [](#constant-a){.pf-ref},
 $$
 0=y'(0)=-\frac14-\frac14+b,
 $$
 so $b=1/2$.
 :::
 
-<1>6. The required solution is
+:::
+
+::: {.pf-step #final-solution}
+The required solution is
 $$
 \boxed{
 y(x)=\frac14e^{-x}-\frac14e^x+\frac12xe^x.
 }
 $$
 
-::: {.proof}
-Substitute the constants from steps <1>4--<1>5 into the general
-solution in step <1>3.
+::: pf-proof
+Substitute the constants from steps [](#constant-a){.pf-ref} and [](#constant-b){.pf-ref} into the general
+solution in step [](#general-solution-form){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the unique solution satisfying the differential equation
+::: pf-qed
+Step [](#final-solution){.pf-ref} is the unique solution satisfying the differential equation
 and both initial conditions.
 :::
+
+:::
+
 :::

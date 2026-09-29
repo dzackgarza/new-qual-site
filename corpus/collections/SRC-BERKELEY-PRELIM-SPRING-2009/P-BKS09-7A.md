@@ -42,14 +42,17 @@ $$
 I\coloneqq\int_0^\pi\frac{d\theta}{a+\cos\theta}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #symmetry-doubling}
+One has
 $$
 2I
 =
 \int_0^{2\pi}\frac{d\theta}{a+\cos\theta}.
 $$
 
-::: {.proof}
+::: pf-proof
 With the substitution $u=2\pi-\theta$,
 $$
 \int_\pi^{2\pi}\frac{d\theta}{a+\cos\theta}
@@ -61,14 +64,17 @@ $$
 Adding the integral over $[0,\pi]$ proves the claim.
 :::
 
-<1>2. The full-period integral satisfies
+:::
+
+::: {.pf-step #contour-form}
+The full-period integral satisfies
 $$
 \int_0^{2\pi}\frac{d\theta}{a+\cos\theta}
 =
 -2i\int_{\abs z=1}\frac{dz}{z^2+2az+1}.
 $$
 
-::: {.proof}
+::: pf-proof
 Put $z=e^{i\theta}$. Then
 $$
 dz=iz\,d\theta,
@@ -92,7 +98,10 @@ $$
 $$
 :::
 
-<1>3. Of the two poles
+:::
+
+::: {.pf-step #pole-inside}
+Of the two poles
 $$
 \alpha=-a+\sqrt{a^2-1},
 \qquad
@@ -100,7 +109,7 @@ $$
 $$
 only $\alpha$ lies inside the unit circle.
 
-::: {.proof}
+::: pf-proof
 The denominator factors as
 $$
 z^2+2az+1=(z-\alpha)(z-\beta).
@@ -123,13 +132,16 @@ a+\sqrt{a^2-1}
 $$
 :::
 
-<1>4. The full-period integral equals
+:::
+
+::: {.pf-step #full-period-value}
+The full-period integral equals
 $$
 \frac{2\pi}{\sqrt{a^2-1}}.
 $$
 
-::: {.proof}
-By step <1>3, the residue theorem uses only the pole $\alpha$. Its residue is
+::: pf-proof
+By step [](#pole-inside){.pf-ref}, the residue theorem uses only the pole $\alpha$. Its residue is
 $$
 \operatorname{Res}_{z=\alpha}
 \frac{1}{z^2+2az+1}
@@ -138,7 +150,7 @@ $$
 =
 \frac{1}{2\sqrt{a^2-1}}.
 $$
-Thus step <1>2 gives
+Thus step [](#contour-form){.pf-ref} gives
 $$
 \begin{aligned}
 \int_0^{2\pi}\frac{d\theta}{a+\cos\theta}
@@ -152,20 +164,26 @@ $$
 $$
 :::
 
-<1>5. The requested integral is
+:::
+
+::: {.pf-step #final-value}
+The requested integral is
 $$
 \boxed{
 I=\frac{\pi}{\sqrt{a^2-1}}
 }.
 $$
 
-::: {.proof}
-Combine step <1>1 with step <1>4 and divide by $2$.
+::: pf-proof
+Combine step [](#symmetry-doubling){.pf-ref} with step [](#full-period-value){.pf-ref} and divide by $2$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested value.
 :::
+
+::: pf-qed
+Step [](#final-value){.pf-ref} gives the requested value.
+:::
+
+:::
+
 :::

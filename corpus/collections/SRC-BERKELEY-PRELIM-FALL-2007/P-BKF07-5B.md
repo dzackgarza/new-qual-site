@@ -37,6 +37,7 @@ for every \(|z|\ge R\). Prove that
 :::
 
 ::: {.solution}
+
 Set
 $$
 g(z)\coloneqq\frac1{f(z)}.
@@ -44,26 +45,32 @@ $$
 Choose $R_0>R$ so large that every zero
 $a_1,\ldots,a_n$ lies in the disk $\abs{z}<R_0$.
 
-<1>1. For every $r\ge R_0$,
+::: pf
+
+::: {.pf-step #contour-integral-residue-sum}
+For every $r\ge R_0$,
 $$
 \int_{\abs{z}=r}g(z)\,dz
 =2\pi i\sum_{j=1}^n\operatorname{Res}_{z=a_j}g(z).
 $$
 
-::: {.proof}
+::: pf-proof
 The function $g=1/f$ is meromorphic on $\CC$, with poles precisely at
 the zeros $a_1,\ldots,a_n$ of $f$. For $r\ge R_0$, all of these poles
 lie inside the circle $\abs{z}=r$, and there are no poles on or outside
 that circle. The residue theorem therefore gives the displayed identity.
 :::
 
-<1>2. For every $r\ge R_0$,
+:::
+
+::: {.pf-step #integral-bound}
+For every $r\ge R_0$,
 $$
 \left|\int_{\abs{z}=r}g(z)\,dz\right|
 \le 2\pi r^{1-\alpha}.
 $$
 
-::: {.proof}
+::: pf-proof
 On the circle $\abs{z}=r$, the hypothesis gives
 $$
 \abs{g(z)}
@@ -78,30 +85,39 @@ $$
 $$
 :::
 
-<1>3. The contour integrals in step <1>1 tend to $0$ as
-$r\to\infty$.
-
-::: {.proof}
-Since $\alpha>1$, the exponent $1-\alpha$ is negative. Hence
-$2\pi r^{1-\alpha}\to0$, and step <1>2 gives the claim.
 :::
 
-<1>4. The sum of residues satisfies
+::: {.pf-step #integral-tends-to-zero}
+The contour integrals in step [](#contour-integral-residue-sum){.pf-ref} tend to $0$ as
+$r\to\infty$.
+
+::: pf-proof
+Since $\alpha>1$, the exponent $1-\alpha$ is negative. Hence
+$2\pi r^{1-\alpha}\to0$, and step [](#integral-bound){.pf-ref} gives the claim.
+:::
+
+:::
+
+::: {.pf-step #residue-sum-zero}
+The sum of residues satisfies
 $$
 \sum_{j=1}^n\operatorname{Res}_{z=a_j}\frac1{f(z)}
 =\boxed{0}.
 $$
 
-::: {.proof}
-By step <1>1, for every $r\ge R_0$ the contour integral equals
+::: pf-proof
+By step [](#contour-integral-residue-sum){.pf-ref}, for every $r\ge R_0$ the contour integral equals
 $2\pi i$ times the displayed sum, which is independent of $r$.
-Step <1>3 shows that the left-hand side tends to $0$ as $r\to\infty$.
+Step [](#integral-tends-to-zero){.pf-ref} shows that the left-hand side tends to $0$ as $r\to\infty$.
 Therefore the constant residue sum must be $0$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required identity.
 :::
+
+::: pf-qed
+Step [](#residue-sum-zero){.pf-ref} is the required identity.
+:::
+
+:::
+
 :::

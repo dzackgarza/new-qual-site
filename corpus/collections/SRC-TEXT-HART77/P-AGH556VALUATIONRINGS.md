@@ -72,12 +72,15 @@ R\subsetneq K;
 $$
 the ring $K$ is the separate trivial case.
 
-<1>1. The valuation ring $R$ has a unique center
+::: pf
+
+::: {.pf-step #unique-center-exists}
+The valuation ring $R$ has a unique center
 $$
 x_0\in X.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $X$ is projective, it is proper over $k$. The valuation-center
 criterion [[P-AGH245VALCENTER|Exercise II.4.5]] says that every valuation
 ring of $K/k$ has a unique center on a proper model. Equivalently, the
@@ -92,9 +95,12 @@ $$
 and the image of the closed point is $x_0$.
 :::
 
-<1>2. The center $x_0$ is not the generic point of $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #center-not-generic-point}
+The center $x_0$ is not the generic point of $X$.
+
+::: pf-proof
 If $x_0=\eta_X$, then domination gives
 $$
 \OO_{X,\eta_X}=K\subseteq R.
@@ -104,18 +110,21 @@ $$
 R=K,
 $$
 contrary to the nontriviality assumption.
+
+Because $\dim X=2$, step [](#center-not-generic-point){.pf-ref} leaves two possibilities: $x_0$ is the
+generic point of an irreducible curve, or $x_0$ is a closed point.
 :::
 
-Because $\dim X=2$, step <1>2 leaves two possibilities: $x_0$ is the
-generic point of an irreducible curve, or $x_0$ is a closed point.
+:::
 
-<1>3. If $x_0$ has codimension one, then
+::: {.pf-step #codim-one-center-type-one}
+If $x_0$ has codimension one, then
 $$
 \boxed{R=\OO_{X,x_0},}
 $$
 so $R$ is of type (1) in Exercise II.4.12.
 
-::: {.proof}
+::: pf-proof
 Since $X$ is nonsingular and $x_0$ has codimension one,
 $$
 \OO_{X,x_0}
@@ -130,11 +139,14 @@ $$
 R=\OO_{X,x_0}.
 $$
 This is the first surface construction in Exercise II.4.12.
-:::
 
 Assume from now on that $x_0$ is closed.
+:::
 
-<1>4. As long as the center $x_i$ of $R$ on $X_i$ is closed, define
+:::
+
+::: {.pf-step #successive-centers-on-blowups}
+As long as the center $x_i$ of $R$ on $X_i$ is closed, define
 $$
 X_{i+1}=\Bl_{x_i}X_i.
 $$
@@ -151,9 +163,9 @@ $$
 X_{i+1}\longrightarrow X_i.
 $$
 
-::: {.proof}
+::: pf-proof
 The blowup of a nonsingular projective surface at a closed point is again a
-nonsingular projective surface. Hence step <1>1 applies to every $X_i$ and
+nonsingular projective surface. Hence step [](#unique-center-exists){.pf-ref} applies to every $X_i$ and
 gives a unique center $x_{i+1}$ on $X_{i+1}$.
 
 The morphism
@@ -175,21 +187,24 @@ x_{i+1}\in\pi_{i+1}^{-1}(x_i)=E_{i+1}.
 $$
 :::
 
-<1>5. If for some $n\ge1$ the center $x_n$ is the generic point of
+:::
+
+::: {.pf-step #divisorial-center-type-two}
+If for some $n\ge1$ the center $x_n$ is the generic point of
 $E_n$, then
 $$
 \boxed{R=\OO_{X_n,x_n},}
 $$
 and $R$ is of type (2) in Exercise II.4.12.
 
-::: {.proof}
+::: pf-proof
 The surface $X_n$ is nonsingular, so the local ring at the generic point of
 the irreducible curve $E_n$ is a DVR:
 $$
 \OO_{X_n,x_n}.
 $$
 The valuation ring $R$ dominates this DVR because $x_n$ is its center.
-As in step <1>3, domination between valuation rings of the same fraction
+As in step [](#codim-one-center-type-one){.pf-ref}, domination between valuation rings of the same fraction
 field forces equality.
 
 The composite birational morphism
@@ -202,7 +217,10 @@ birational model which is contracted to a closed point of $X$, the second
 construction of Exercise II.4.12.
 :::
 
-<1>6. If no center ever becomes divisorial, then every $x_i$ is closed and
+:::
+
+::: {.pf-step #union-contained-in-r}
+If no center ever becomes divisorial, then every $x_i$ is closed and
 the construction gives an infinite chain
 $$
 X=X_0
@@ -224,7 +242,7 @@ $$
 \boxed{R_0\subseteq R.}
 $$
 
-::: {.proof}
+::: pf-proof
 By definition of center, $R$ dominates every $A_i$, so
 $$
 A_i\subseteq R
@@ -243,7 +261,10 @@ R_0=R.
 $$
 :::
 
-<1>7. Let
+:::
+
+::: {.pf-step #element-eventually-regular}
+Let
 $$
 f\in R.
 $$
@@ -252,7 +273,7 @@ $$
 \boxed{f\in A_i=\OO_{X_i,x_i}.}
 $$
 
-::: {.proof}
+::: pf-proof
 The case $f=0$ is immediate, so assume
 $$
 f\in K^\times.
@@ -358,18 +379,21 @@ the same element belongs to $A_i$ for every $i\ge N$, exactly as asserted
 in the hint.
 :::
 
-<1>8. In the infinite closed-center case,
+:::
+
+::: {.pf-step #r-equals-union-type-three}
+In the infinite closed-center case,
 $$
 \boxed{R=R_0=\bigcup_{i\ge0}\OO_{X_i,x_i}.}
 $$
 Thus $R$ is of type (3) in Exercise II.4.12.
 
-::: {.proof}
-Step <1>6 gives
+::: pf-proof
+Step [](#union-contained-in-r){.pf-ref} gives
 $$
 R_0\subseteq R.
 $$
-Conversely, step <1>7 shows that every element
+Conversely, step [](#element-eventually-regular){.pf-ref} shows that every element
 $$
 f\in R
 $$
@@ -384,29 +408,34 @@ valuation ring; no additional dominating valuation ring is needed. This is
 the assertion deferred from Exercise II.4.12 to the present exercise.
 :::
 
-<1>9. Every nontrivial valuation ring of $K/k$ is one of the three kinds
+:::
+
+::: {.pf-step #trichotomy-established}
+Every nontrivial valuation ring of $K/k$ is one of the three kinds
 from Exercise II.4.12.
 
-::: {.proof}
-By steps <1>1--<1>2, its center on $X$ is either divisorial or closed.
-The divisorial case is type (1) by step <1>3.
+::: pf-proof
+By steps [](#unique-center-exists){.pf-ref} and [](#center-not-generic-point){.pf-ref}, its center on $X$ is either divisorial or closed.
+The divisorial case is type (1) by step [](#codim-one-center-type-one){.pf-ref}.
 
-Starting from a closed center, step <1>4 gives successive centers on point
+Starting from a closed center, step [](#successive-centers-on-blowups){.pf-ref} gives successive centers on point
 blowups. If one of them becomes the generic point of the exceptional curve,
-step <1>5 gives type (2). If this never happens, every center remains closed
-and steps <1>6--<1>8 give type (3).
+step [](#divisorial-center-type-two){.pf-ref} gives type (2). If this never happens, every center remains closed
+and steps [](#union-contained-in-r){.pf-ref}, [](#element-eventually-regular){.pf-ref} and [](#r-equals-union-type-three){.pf-ref} give type (3).
 
 These alternatives exhaust all possibilities for points on the exceptional
 curve of a nonsingular surface.
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>5 give the first two valuation types from their centers on
-successive smooth models. Steps <1>6--<1>8 prove the infinite-center case
-and the essential equality $R=R_0$ using Exercise V.5.1. Step <1>9 assembles
+::: pf-qed
+Steps [](#unique-center-exists){.pf-ref}, [](#center-not-generic-point){.pf-ref}, [](#codim-one-center-type-one){.pf-ref}, [](#successive-centers-on-blowups){.pf-ref} and [](#divisorial-center-type-two){.pf-ref} give the first two valuation types from their centers on
+successive smooth models. Steps [](#union-contained-in-r){.pf-ref}, [](#element-eventually-regular){.pf-ref} and [](#r-equals-union-type-three){.pf-ref} prove the infinite-center case
+and the essential equality $R=R_0$ using Exercise V.5.1. Step [](#trichotomy-established){.pf-ref} assembles
 the exhaustive trichotomy, with the trivial valuation ring $K$ separately
 excluded exactly as in Exercise II.4.12.
+:::
+
 :::
 :::

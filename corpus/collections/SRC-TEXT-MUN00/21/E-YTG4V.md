@@ -55,16 +55,22 @@ $$
 ::: {.solution}
 Throughout, $\rho((x,y),(x_0,y_0))<\delta$ means $\abs{x-x_0}<\delta$ and $\abs{y-y_0}<\delta$.
 
-<1>1. (a) Addition is continuous.
+::: pf
 
-::: {.proof}
+::: {.pf-step #part-a}
+(a) Addition is continuous.
+
+::: pf-proof
 Given $\varepsilon>0$, let $\delta=\varepsilon/2$.
 If $\rho((x,y),(x_0,y_0))<\delta$, then $\abs{(x+y)-(x_0+y_0)}\le\abs{x-x_0}+\abs{y-y_0}<2\delta=\varepsilon$.
 :::
 
-<1>2. (b) Multiplication is continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #part-b}
+(b) Multiplication is continuous.
+
+::: pf-proof
 Given $(x_0,y_0)$ and $0<\varepsilon<1$, let $\delta=\varepsilon/\bigl(3(\abs{x_0}+\abs{y_0}+1)\bigr)$, so $\delta<1$.
 Since $xy-x_0y_0=x_0(y-y_0)+y_0(x-x_0)+(x-x_0)(y-y_0)$, if $\rho((x,y),(x_0,y_0))<\delta$ then
 $$
@@ -72,9 +78,12 @@ $$
 $$
 :::
 
-<1>3. (c) The reciprocal $r(x)=1/x$ is continuous on $\RR-\{0\}$.
+:::
 
-::: {.proof}
+::: {.pf-step #part-c}
+(c) The reciprocal $r(x)=1/x$ is continuous on $\RR-\{0\}$.
+
+::: pf-proof
 Let $x_0\ne0$ and $\varepsilon>0$, and put $\delta=\min\{\abs{x_0}/2,\ \varepsilon\abs{x_0}^2/2\}$.
 If $\abs{x-x_0}<\delta$, then $\abs x>\abs{x_0}/2$, so
 $$
@@ -82,16 +91,22 @@ $$
 $$
 :::
 
-<1>4. (d) Subtraction and the quotient $(x,y)\mapsto x/y$ on $\RR\times(\RR-\{0\})$ are continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #part-d}
+(d) Subtraction and the quotient $(x,y)\mapsto x/y$ on $\RR\times(\RR-\{0\})$ are continuous.
+
+::: pf-proof
 Negation $y\mapsto-y$ is continuous, since $\abs{(-y)-(-y_0)}=\abs{y-y_0}$.
-Subtraction is addition composed with $\operatorname{id}\times(-)$, and the quotient is multiplication composed with $\operatorname{id}\times r$; a product of continuous maps is continuous by [[E-G4SRA]], and steps <1>1, <1>2, <1>3 give the remaining factors.
+Subtraction is addition composed with $\operatorname{id}\times(-)$, and the quotient is multiplication composed with $\operatorname{id}\times r$; a product of continuous maps is continuous by [[E-G4SRA]], and steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, [](#part-c){.pf-ref} give the remaining factors.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>4 prove (a) through (d).
 :::
+
+::: pf-qed
+Steps [](#part-a){.pf-ref} through [](#part-d){.pf-ref} prove (a) through (d).
+:::
+
+:::
+
 :::

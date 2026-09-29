@@ -39,11 +39,16 @@ Calculate the dimension of $(R/I) \otimes_R M$ as a vector space over the field 
 
 
 ::: {.solution}
-<1>1. There is a canonical isomorphism
+
+::: pf
+
+::: {.pf-step #tensor-quotient-iso}
+There is a canonical isomorphism
 \[
 (R/I)\otimes_R M\cong M/IM.
 \]
-::: {.proof}
+
+::: pf-proof
 Define
 \[
 \Phi:(R/I)\otimes_RM\longrightarrow M/IM
@@ -91,7 +96,10 @@ and
 Thus \(\Phi\) and \(\Psi\) are inverse isomorphisms.
 :::
 
-<1>2. Let \(I=(\pi)\) with \(\pi\) irreducible, and write the elementary-divisor decomposition
+:::
+
+::: {.pf-step #dimension-elementary-divisors}
+Let \(I=(\pi)\) with \(\pi\) irreducible, and write the elementary-divisor decomposition
 \[
 M\cong R^r\oplus
 \bigoplus_{j=1}^t R/(q_j^{e_j}),
@@ -102,7 +110,8 @@ Then
 \dim_K((R/I)\otimes_RM)
 =r+\#\{j:q_j\text{ is associate to }\pi\}.
 \]
-::: {.proof}
+
+::: pf-proof
 Since \(I\) is maximal in the PID \(R\),
 \[
 I=(\pi)
@@ -119,7 +128,7 @@ K\otimes_RM
 \]
 The free part contributes dimension \(r\).
 
-For a torsion summand, <1>1 gives
+For a torsion summand, step [](#tensor-quotient-iso){.pf-ref} gives
 \[
 K\otimes_RR/(q_j^{e_j})
 \cong
@@ -140,7 +149,10 @@ so the quotient is zero.
 Summing the contributions proves the formula.
 :::
 
-<1>3. In invariant-factor form, if
+:::
+
+::: {.pf-step #dimension-invariant-factors}
+In invariant-factor form, if
 \[
 M\cong R^r\oplus\bigoplus_{j=1}^sR/(d_j),
 \qquad d_1\mid d_2\mid\cdots\mid d_s,
@@ -150,7 +162,8 @@ then
 \dim_K((R/I)\otimes_RM)
 =r+\#\{j:\pi\mid d_j\}.
 \]
-::: {.proof}
+
+::: pf-proof
 As above,
 \[
 K\otimes_RR/(d_j)
@@ -158,5 +171,13 @@ K\otimes_RR/(d_j)
 \]
 This is \(K\) exactly when \(d_j\in I\), equivalently \(\pi\mid d_j\), and is zero otherwise.
 Adding the free contribution gives the stated formula.
+:::
+
+:::
+
+::: pf-qed
+Step [](#tensor-quotient-iso){.pf-ref} answers part (a); steps [](#dimension-elementary-divisors){.pf-ref} and [](#dimension-invariant-factors){.pf-ref} answer part (b) in elementary-divisor and invariant-factor form.
+:::
+
 :::
 :::

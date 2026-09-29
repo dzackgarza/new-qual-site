@@ -31,21 +31,28 @@ Show that $f$ is continuous.
 :::
 
 ::: {.solution}
+
 Let $d_X$ and $d_Y$ denote the metrics on $X$ and $Y$.
 
-<1>1. Fix $x\in X$ and $\epsilon>0$. There exists an index $N$ such
+::: pf
+
+::: {.pf-step #uniform-convergence-N}
+Fix $x\in X$ and $\epsilon>0$. There exists an index $N$ such
 that
 $$
 d_Y(f_N(t),f(t))<\frac{\epsilon}{3}
 $$
 for every $t\in X$.
 
-::: {.proof}
+::: pf-proof
 This is exactly uniform convergence of $f_n$ to $f$, applied with
 $\epsilon/3$.
 :::
 
-<1>2. There exists $\delta>0$ such that
+:::
+
+::: {.pf-step #fN-continuity-delta}
+There exists $\delta>0$ such that
 $$
 d_X(x,x')<\delta
 $$
@@ -54,18 +61,21 @@ $$
 d_Y(f_N(x),f_N(x'))<\frac{\epsilon}{3}.
 $$
 
-::: {.proof}
+::: pf-proof
 The function $f_N$ is continuous at the fixed point $x$. Apply its
 continuity with tolerance $\epsilon/3$.
 :::
 
-<1>3. If $d_X(x,x')<\delta$, then
+:::
+
+::: {.pf-step #f-close-bound}
+If $d_X(x,x')<\delta$, then
 $$
 d_Y(f(x),f(x'))<\epsilon.
 $$
 
-::: {.proof}
-By the triangle inequality and steps <1>1--<1>2,
+::: pf-proof
+By the triangle inequality and steps [](#uniform-convergence-N){.pf-ref} and [](#fN-continuity-delta){.pf-ref},
 $$
 \begin{aligned}
 d_Y(f(x),f(x'))
@@ -82,29 +92,38 @@ d_Y(f(x),f_N(x))
 \epsilon.
 \end{aligned}
 $$
-The two outer bounds come from step <1>1, which holds uniformly for
+The two outer bounds come from step [](#uniform-convergence-N){.pf-ref}, which holds uniformly for
 all points of $X$.
 :::
 
-<1>4. The function $f$ is continuous at $x$.
+:::
 
-::: {.proof}
-Step <1>3 gives the $\epsilon$--$\delta$ condition for continuity at
+::: {.pf-step #f-continuous-at-x}
+The function $f$ is continuous at $x$.
+
+::: pf-proof
+Step [](#f-close-bound){.pf-ref} gives the $\epsilon$--$\delta$ condition for continuity at
 $x$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #f-continuous-on-X}
+Therefore
 $$
 \boxed{f\text{ is continuous on }X}.
 $$
 
-::: {.proof}
-The point $x\in X$ in step <1>1 was arbitrary.
+::: pf-proof
+The point $x\in X$ in step [](#uniform-convergence-N){.pf-ref} was arbitrary.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-continuous-on-X){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

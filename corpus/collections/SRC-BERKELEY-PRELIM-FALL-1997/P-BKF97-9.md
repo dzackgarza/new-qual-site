@@ -28,14 +28,18 @@ Prove that if $p$ is prime, then every group of order $p^2$ is abelian.
 :::
 
 ::: {.solution}
+
 Let
 $$
 \abs G=p^2.
 $$
 
-<1>1. The center $Z(G)$ is nontrivial.
+::: pf
 
-::: {.proof}
+::: {.pf-step #center-nontrivial}
+The center $Z(G)$ is nontrivial.
+
+::: pf-proof
 The class equation is
 $$
 \abs G
@@ -59,23 +63,29 @@ $$
 In particular, the center has more than one element.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #center-order-p-or-p-squared}
+One has
 $$
 \abs{Z(G)}\in\{p,p^2\}.
 $$
 
-::: {.proof}
-By Lagrange's theorem, the order of $Z(G)$ divides $p^2$. Step <1>1 shows
+::: pf-proof
+By Lagrange's theorem, the order of $Z(G)$ divides $p^2$. Step [](#center-nontrivial){.pf-ref} shows
 it is divisible by $p$, leaving only the two displayed possibilities.
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #center-full-implies-abelian}
+If
 $$
 \abs{Z(G)}=p^2,
 $$
 then $G$ is abelian.
 
-::: {.proof}
+::: pf-proof
 In this case $Z(G)$ is a subgroup of $G$ having the same finite order as
 $G$, so
 $$
@@ -85,7 +95,10 @@ That equality is exactly the assertion that every pair of elements of $G$
 commutes.
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #quotient-cyclic-order-p}
+If
 $$
 \abs{Z(G)}=p,
 $$
@@ -95,7 +108,7 @@ G/Z(G)
 $$
 is cyclic.
 
-::: {.proof}
+::: pf-proof
 The quotient has order
 $$
 \frac{p^2}{p}=p.
@@ -103,9 +116,12 @@ $$
 Every group of prime order is cyclic.
 :::
 
-<1>5. If $G/Z(G)$ is cyclic, then $G$ is abelian.
+:::
 
-::: {.proof}
+::: {.pf-step #cyclic-quotient-implies-abelian}
+If $G/Z(G)$ is cyclic, then $G$ is abelian.
+
+::: pf-proof
 Suppose
 $$
 G/Z(G)=\langle gZ(G)\rangle.
@@ -132,16 +148,22 @@ $$
 Thus every pair of elements commutes.
 :::
 
-<1>6. The group $G$ is abelian.
-
-::: {.proof}
-By step <1>2, either $\abs{Z(G)}=p^2$, handled by step <1>3, or
-$\abs{Z(G)}=p$, in which case steps <1>4 and <1>5 give the conclusion.
 :::
 
-<1>7. Q.E.D.
+::: {.pf-step #G-abelian}
+The group $G$ is abelian.
 
-::: {.proof}
-Step <1>6 proves the claim.
+::: pf-proof
+By step [](#center-order-p-or-p-squared){.pf-ref}, either $\abs{Z(G)}=p^2$, handled by step [](#center-full-implies-abelian){.pf-ref}, or
+$\abs{Z(G)}=p$, in which case steps [](#quotient-cyclic-order-p){.pf-ref} and [](#cyclic-quotient-implies-abelian){.pf-ref} give the conclusion.
 :::
+
+:::
+
+::: pf-qed
+Step [](#G-abelian){.pf-ref} proves the claim.
+:::
+
+:::
+
 :::

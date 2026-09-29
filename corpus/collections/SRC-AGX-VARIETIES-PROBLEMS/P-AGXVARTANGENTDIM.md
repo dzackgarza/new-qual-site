@@ -68,7 +68,10 @@ r=\rank J_F(p),
 $$
 where $J_F(p)$ is the Jacobian matrix at $p$.
 
-<1>1. The Zariski tangent space satisfies
+::: pf
+
+::: {.pf-step #tangent-space-formula}
+The Zariski tangent space satisfies
 $$
 T_pX=\ker dF(p)
 $$
@@ -77,7 +80,7 @@ $$
 \boxed{\dim_\CC T_pX=n-r.}
 $$
 
-::: {.proof}
+::: pf-proof
 The Zariski tangent space at $p$ is the kernel of the differentials of
 generators of $I(X)$, that is, $T_pX=\ker dF(p)$. The linear map
 $$
@@ -91,19 +94,22 @@ n-r.
 $$
 :::
 
-<1>2. If $p$ is smooth, then
+:::
+
+::: {.pf-step #smooth-tangent-dim-d}
+If $p$ is smooth, then
 $$
 \dim_\CC T_pX=d.
 $$
 
-::: {.proof}
+::: pf-proof
 By the Jacobian criterion,
 $$
 p\text{ smooth}
 \quad\Longleftrightarrow\quad
 r=n-d.
 $$
-Substituting this into step <1>1 gives
+Substituting this into step [](#tangent-space-formula){.pf-ref} gives
 $$
 \dim_\CC T_pX
 =
@@ -113,12 +119,15 @@ d.
 $$
 :::
 
-<1>3. If $p$ is singular, then
+:::
+
+::: {.pf-step #singular-tangent-dim-gt-d}
+If $p$ is singular, then
 $$
 \dim_\CC T_pX>d.
 $$
 
-::: {.proof}
+::: pf-proof
 At a singular point the Jacobian rank is strictly smaller than the
 codimension:
 $$
@@ -132,10 +141,13 @@ n-(n-d)
 =
 d.
 $$
-Step <1>1 identifies the left-hand side with $\dim_\CC T_pX$.
+Step [](#tangent-space-formula){.pf-ref} identifies the left-hand side with $\dim_\CC T_pX$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #equivalence-statement}
+Therefore
 $$
 \boxed{
 p\text{ is smooth}
@@ -144,14 +156,17 @@ p\text{ is smooth}
 }
 $$
 
-::: {.proof}
-Step <1>2 gives equality at smooth points, while step <1>3 shows that every
+::: pf-proof
+Step [](#smooth-tangent-dim-d){.pf-ref} gives equality at smooth points, while step [](#singular-tangent-dim-gt-d){.pf-ref} shows that every
 singular point has strictly larger tangent dimension.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove both assertions.
 :::
+
+::: pf-qed
+Steps [](#tangent-space-formula){.pf-ref}, [](#smooth-tangent-dim-d){.pf-ref}, [](#singular-tangent-dim-gt-d){.pf-ref} and [](#equivalence-statement){.pf-ref} prove both assertions.
+:::
+
+:::
+
 :::

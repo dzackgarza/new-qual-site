@@ -45,9 +45,12 @@ $$
 $$
 The topology in (c) is the topology on the classical sets of projective points over $k$.
 
-<1>1. The image of $\psi$ is exactly $Q$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #image-of-psi-is-q}
+The image of $\psi$ is exactly $Q$.
+
+::: pf-proof
 Substituting the four coordinates gives $(ac)(bd)-(ad)(bc)=0$, so the image lies in $Q$.
 Conversely, a point $[x:y:z:w]$ of $Q$ defines a nonzero matrix
 $$
@@ -63,13 +66,16 @@ The other nonzero-entry charts have the same form, so $\dim Q=2$ by [[P-AGH27DIM
 This proves (a).
 :::
 
-<1>2. The ruling lines in (b) are
+:::
+
+::: {.pf-step #ruling-lines-construction}
+The ruling lines in (b) are
 $$
 \boxed{L_{[a:b]}=\{[ac:bd:ad:bc]:[c:d]\in\PP^1\},\qquad
 M_{[c:d]}=\{[ac:bd:ad:bc]:[a:b]\in\PP^1\}.}
 $$
 
-::: {.proof}
+::: pf-proof
 For fixed $[a:b]$, the vectors in the first parametrization have the form
 $$
 c(a,0,0,b)+d(0,b,a,0).
@@ -77,7 +83,7 @@ $$
 The two displayed vectors are linearly independent, since $(a,b)\ne(0,0)$ and their nonzero coordinates lie in disjoint pairs of positions.
 Their projectivized span is consequently a line by [[P-AGH211LINEAR]].
 Similarly, for fixed $[c:d]$, the second parametrization is the projectivized span of the independent vectors $(c,0,d,0)$ and $(0,d,0,c)$.
-All these lines lie in $Q$ by step <1>1.
+All these lines lie in $Q$ by step [](#image-of-psi-is-q){.pf-ref}.
 
 Under the bijection $\psi$, the first family is the image of the subsets $\{t\}\times\PP^1$, and the second is the image of $\PP^1\times\{u\}$.
 Two distinct members of either family are therefore disjoint.
@@ -85,13 +91,16 @@ For every $t,u$, their intersection is precisely the one point $\psi(t,u)$.
 This also proves that each family is parametrized without repetition by $\PP^1$.
 :::
 
-<1>3. The closed curve
+:::
+
+::: {.pf-step #diagonal-curve-not-a-line}
+The closed curve
 $$
 C=Q\cap Z(z-w)=\{[a^2:b^2:ab:ab]:[a:b]\in\PP^1\}
 $$
 is not a line.
 
-::: {.proof}
+::: pf-proof
 In the coordinates of $\psi$, the extra equation $z=w$ is $ad=bc$.
 For nonzero two-dimensional vectors, this determinant equation is equivalent to $[a:b]=[c:d]$.
 Thus $C$ is precisely the image under $\psi$ of the diagonal of the set $\PP^1\times\PP^1$.
@@ -106,9 +115,12 @@ A projective line is the projectivization of a two-dimensional vector space, so 
 Hence $C$ is a curve other than either ruling line, in every characteristic.
 :::
 
-<1>4. The product topology in (c) does not make $\psi$ a homeomorphism onto $Q$.
+:::
 
-::: {.proof}
+::: {.pf-step #product-topology-not-homeomorphism}
+The product topology in (c) does not make $\psi$ a homeomorphism onto $Q$.
+
+::: pf-proof
 Every proper Zariski-closed subset of $\PP_k^1$ is finite.
 Indeed, it is contained in the zero set of a nonzero homogeneous polynomial, whose zeros on either affine chart are zeros of a nonzero one-variable polynomial, apart from a possible missing endpoint.
 Conversely, every finite subset is closed because points are closed.
@@ -119,14 +131,17 @@ Every nonempty basic open rectangle $A\times B$ in the product topology meets $\
 Thus $\Delta$ is dense in the product topology.
 It is a proper subset, since there are distinct projective points, and hence is not closed.
 
-But step <1>3 gives $\psi^{-1}(C)=\Delta$, whereas $C$ is Zariski-closed in $Q$.
+But step [](#diagonal-curve-not-a-line){.pf-ref} gives $\psi^{-1}(C)=\Delta$, whereas $C$ is Zariski-closed in $Q$.
 Therefore $\psi$ from the product-topological space to $Q$ is not even continuous, and in particular is not a homeomorphism.
 This proves (c).
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), step <1>2 proves (b), and steps <1>3--<1>4 prove both assertions in (c).
 :::
+
+::: pf-qed
+Step [](#image-of-psi-is-q){.pf-ref} proves (a), step [](#ruling-lines-construction){.pf-ref} proves (b), and steps [](#diagonal-curve-not-a-line){.pf-ref} and [](#product-topology-not-homeomorphism){.pf-ref} prove both assertions in (c).
+:::
+
+:::
+
 :::

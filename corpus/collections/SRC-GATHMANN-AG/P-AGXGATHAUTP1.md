@@ -58,7 +58,10 @@ x=X/Y
 $$
 on $D(Y)\cong\AA^1$.
 
-<1>1. Part (a): for every automorphism
+::: pf
+
+::: {.pf-step #pullback-preserves-o1}
+Part (a): for every automorphism
 $$
 f:\PP^1\longrightarrow\PP^1,
 $$
@@ -67,7 +70,7 @@ $$
 \boxed{f^*\OO_{\PP^1}(1)\cong\OO_{\PP^1}(1).}
 $$
 
-::: {.proof}
+::: pf-proof
 The Picard group of the projective line is
 $$
 \Pic(\PP^1)\cong\ZZ,
@@ -98,10 +101,13 @@ $$
 Because $m,n$ are positive integers, $m=n=1$.
 :::
 
-<1>2. Part (a): every automorphism of $\PP^1$ is induced by an invertible
+:::
+
+::: {.pf-step #automorphism-from-matrix}
+Part (a): every automorphism of $\PP^1$ is induced by an invertible
 $2\times2$ matrix.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 [U:V]
@@ -117,7 +123,7 @@ of
 $$
 f^*\OO_{\PP^1}(1).
 $$
-By step <1>1 this line bundle is $\OO_{\PP^1}(1)$, whose global sections
+By step [](#pullback-preserves-o1){.pf-ref} this line bundle is $\OO_{\PP^1}(1)$, whose global sections
 are the linear forms in $X,Y$.
 Hence there are scalars $a,b,c,d\in k$ such that
 $$
@@ -150,17 +156,20 @@ $$
 is invertible.
 :::
 
-<1>3. Part (a): in the affine coordinate $x=X/Y$, the automorphism is
+:::
+
+::: {.pf-step #mobius-form}
+Part (a): in the affine coordinate $x=X/Y$, the automorphism is
 $$
 \boxed{f(x)=\frac{ax+b}{cx+d}}.
 $$
 
-::: {.proof}
+::: pf-proof
 On the locus where
 $$
 cX+dY\ne0,
 $$
-step <1>2 gives
+step [](#automorphism-from-matrix){.pf-ref} gives
 $$
 f(x)
 =
@@ -175,14 +184,17 @@ given by the inverse matrix, so it is indeed an automorphism of
 $\PP^1$.
 :::
 
-<1>4. Part (b): every ordered triple of distinct points of $\PP^1$ can
+:::
+
+::: {.pf-step #triple-to-standard-position}
+Part (b): every ordered triple of distinct points of $\PP^1$ can
 be carried to
 $$
 (\infty,0,1)
 $$
 by a projective linear map.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 p_1,p_2,p_3\in\PP^1
@@ -224,7 +236,10 @@ $$
 $$
 :::
 
-<1>5. Part (b): for any two ordered triples of distinct points
+:::
+
+::: {.pf-step #existence-of-triple-map}
+Part (b): for any two ordered triples of distinct points
 $$
 (a_1,a_2,a_3),
 \qquad
@@ -235,8 +250,8 @@ $$
 \boxed{f(a_i)=b_i\quad(i=1,2,3).}
 $$
 
-::: {.proof}
-Apply step <1>4 to obtain automorphisms
+::: pf-proof
+Apply step [](#triple-to-standard-position){.pf-ref} to obtain automorphisms
 $$
 \tau_a,\tau_b:\PP^1\longrightarrow\PP^1
 $$
@@ -259,9 +274,12 @@ $$
 for all $i$.
 :::
 
-<1>6. Part (b): the automorphism in step <1>5 is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #uniqueness-of-triple-map}
+Part (b): the automorphism in step [](#existence-of-triple-map){.pf-ref} is unique.
+
+::: pf-proof
 Suppose $f$ and $g$ both send $a_i$ to $b_i$.
 Then
 $$
@@ -302,10 +320,12 @@ g=f.
 $$
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>6 prove existence
+::: pf-qed
+Steps [](#pullback-preserves-o1){.pf-ref}, [](#automorphism-from-matrix){.pf-ref} and [](#mobius-form){.pf-ref} prove part (a), and steps [](#triple-to-standard-position){.pf-ref}, [](#existence-of-triple-map){.pf-ref} and [](#uniqueness-of-triple-map){.pf-ref} prove existence
 and uniqueness in part (b).
+:::
+
 :::
 :::

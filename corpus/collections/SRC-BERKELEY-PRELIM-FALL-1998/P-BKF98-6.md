@@ -31,7 +31,11 @@ Let $A$ and $B$ be linear transformations on a finite-dimensional vector space $
 :::
 
 ::: {.solution}
-<1>1. The restriction
+
+::: pf
+
+::: {.pf-step #B-image-in-kerA}
+The restriction
 $$
 B|_{\ker(AB)}:
 \ker(AB)\longrightarrow V
@@ -41,7 +45,7 @@ $$
 \ker A.
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 x\in\ker(AB),
@@ -56,12 +60,15 @@ $$
 Hence $Bx\in\ker A$.
 :::
 
-<1>2. The kernel of the restricted map in step <1>1 is exactly
+:::
+
+::: {.pf-step #restricted-kernel-is-kerB}
+The kernel of the restricted map in step [](#B-image-in-kerA){.pf-ref} is exactly
 $$
 \ker B.
 $$
 
-::: {.proof}
+::: pf-proof
 Certainly
 $$
 \ker B\subseteq\ker(AB),
@@ -76,7 +83,10 @@ $$
 $$
 :::
 
-<1>3. Rank--nullity for the restricted map gives
+:::
+
+::: {.pf-step #rank-nullity-restricted}
+Rank--nullity for the restricted map gives
 $$
 \dim\ker(AB)
 =
@@ -85,24 +95,27 @@ $$
 \dim B(\ker(AB)).
 $$
 
-::: {.proof}
+::: pf-proof
 Apply the rank--nullity theorem to
 $$
 B|_{\ker(AB)}.
 $$
-Step <1>2 identifies its kernel, while its image is
+Step [](#restricted-kernel-is-kerB){.pf-ref} identifies its kernel, while its image is
 $B(\ker(AB))$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #image-dim-leq-kerA}
+One has
 $$
 \dim B(\ker(AB))
 \leq
 \dim\ker A.
 $$
 
-::: {.proof}
-Step <1>1 gives the inclusion
+::: pf-proof
+Step [](#B-image-in-kerA){.pf-ref} gives the inclusion
 $$
 B(\ker(AB))
 \subseteq
@@ -112,7 +125,10 @@ The dimension of a subspace cannot exceed the dimension of the containing
 space.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #nullity-bound}
+Therefore
 $$
 \boxed{
 \dim\ker(AB)
@@ -121,13 +137,16 @@ $$
 }.
 $$
 
-::: {.proof}
-Substitute the estimate from step <1>4 into the equality from step <1>3.
+::: pf-proof
+Substitute the estimate from step [](#image-dim-leq-kerA){.pf-ref} into the equality from step [](#rank-nullity-restricted){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required inequality.
 :::
+
+::: pf-qed
+Step [](#nullity-bound){.pf-ref} is the required inequality.
+:::
+
+:::
+
 :::

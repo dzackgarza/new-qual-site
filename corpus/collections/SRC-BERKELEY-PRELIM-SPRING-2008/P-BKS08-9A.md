@@ -33,7 +33,11 @@ $$
 :::
 
 ::: {.solution}
-<1>1. For every integer $k\ge1$,
+
+::: pf
+
+::: {.pf-step #order-lower-bound}
+For every integer $k\ge1$,
 $$
 f(2k+1)\ge k(k+1)
 $$
@@ -42,7 +46,7 @@ $$
 f(2k+2)\ge k(k+1).
 $$
 
-::: {.proof}
+::: pf-proof
 In $S_{2k+1}$, take a $k$-cycle and a disjoint $(k+1)$-cycle. Their
 product has order
 $$
@@ -53,13 +57,16 @@ permutation belongs to $S_{2k+2}$ after fixing the remaining point.
 Since $f(n)$ is the maximum element order, both inequalities follow.
 :::
 
-<1>2. If $n=2k+1$ or $n=2k+2$, then
+:::
+
+::: {.pf-step #ratio-bound}
+If $n=2k+1$ or $n=2k+2$, then
 $$
 0\le\frac{n}{f(n)}\le\frac{2}{k}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#order-lower-bound){.pf-ref},
 $$
 \frac{n}{f(n)}
 \le
@@ -69,31 +76,40 @@ $$
 Nonnegativity is immediate.
 :::
 
-<1>3. In fact,
+:::
+
+::: {.pf-step #limit-zero}
+In fact,
 $$
 \lim_{n\to\infty}\frac{n}{f(n)}=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Every $n\ge3$ is either $2k+1$ or $2k+2$ for a unique $k\ge1$, and
 $k\to\infty$ as $n\to\infty$. Hence the upper bound $2/k$ in
-step <1>2 tends to $0$. The squeeze theorem gives the displayed limit.
+step [](#ratio-bound){.pf-ref} tends to $0$. The squeeze theorem gives the displayed limit.
 :::
 
-<1>4. Consequently
+:::
+
+::: {.pf-step #liminf-zero}
+Consequently
 $$
 \boxed{
 \liminf_{n\to\infty}\frac{n}{f(n)}=0.
 }
 $$
 
-::: {.proof}
-The liminf equals the limit established in step <1>3.
+::: pf-proof
+The liminf equals the limit established in step [](#limit-zero){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#liminf-zero){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

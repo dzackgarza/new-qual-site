@@ -32,12 +32,16 @@ L=\QQ(u),
 u=\sqrt{2+\sqrt2}.
 \]
 
-<1>1. The minimal polynomial of $u$ over $\QQ$ is
+::: pf
+
+::: pf-step
+The minimal polynomial of $u$ over $\QQ$ is
 \[
 f(x)=x^4-4x^2+2,
 \]
 and $[L:\QQ]=4$.
-::: {.proof}
+
+::: pf-proof
 From
 \[
 u^2=2+\sqrt2
@@ -63,8 +67,12 @@ which is not a square in $\QQ$, whereas the norm of a square in $E$ is a square 
 Since $[E:\QQ]=2$, one gets $[L:\QQ]=4$. Therefore the degree-$4$ polynomial $f$ is the minimal polynomial of $u$.
 :::
 
-<1>2. The polynomial $f$ splits in $L$.
-::: {.proof}
+:::
+
+::: pf-step
+The polynomial $f$ splits in $L$.
+
+::: pf-proof
 Put
 \[
 v=\sqrt{2-\sqrt2}.
@@ -84,8 +92,12 @@ The four roots of $f$ are
 all of which lie in $L$. Thus $L/\QQ$ is the splitting field of the separable polynomial $f$, hence is Galois.
 :::
 
-<1>3. The Galois group is cyclic of order $4$.
-::: {.proof}
+:::
+
+::: pf-step
+The Galois group is cyclic of order $4$.
+
+::: pf-proof
 Define $\sigma\in\Gal(L/\QQ)$ by
 \[
 \sigma(u)=v.
@@ -114,11 +126,15 @@ Thus $\sigma$ has order $4$. Since $|\Gal(L/\QQ)|=[L:\QQ]=4$, it follows that
 \]
 :::
 
-<1>4. The only proper nontrivial intermediate field is
+:::
+
+::: {.pf-step #unique-intermediate-field}
+The only proper nontrivial intermediate field is
 \[
 \QQ(\sqrt2).
 \]
-::: {.proof}
+
+::: pf-proof
 A cyclic group of order $4$ has a unique subgroup of order $2$, namely $\langle\sigma^2\rangle$. By the Galois correspondence, $L/\QQ$ therefore has a unique intermediate field of degree $2$ over $\QQ$.
 
 Now $\sigma^2(u)=-u$, so
@@ -128,11 +144,20 @@ Now $\sigma^2(u)=-u$, so
 Hence $\QQ(\sqrt2)$ is fixed by $\langle\sigma^2\rangle$. Since it has degree $2$ over $\QQ$, it is exactly the corresponding fixed field.
 :::
 
-<1>5. Hence the full intermediate-field lattice is
+:::
+
+::: pf-step
+Hence the full intermediate-field lattice is
 \[
 \QQ\subsetneq\QQ(\sqrt2)\subsetneq L=\QQ(\sqrt{2+\sqrt2}).
 \]
-::: {.proof}
-This is <1>4 together with the bottom and top fields.
+
+::: pf-proof
+This is step [](#unique-intermediate-field){.pf-ref} together with the bottom and top fields.
 :::
+
+:::
+
+:::
+
 :::

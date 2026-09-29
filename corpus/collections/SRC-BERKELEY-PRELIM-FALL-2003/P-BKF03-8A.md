@@ -29,6 +29,7 @@ Let p be a prime, and let G be the group $\mathbb { Z } / p ^ { 2 } \mathbb { Z 
 
 
 ::: {.solution}
+
 Let
 \[
 e_1=(1,0),\qquad e_2=(0,1),
@@ -40,8 +41,12 @@ An endomorphism is determined by
 \]
 with $a,c\in\mathbb Z/p^2\mathbb Z$ and $b,d\in\mathbb Z/p\mathbb Z$.
 
-<1>1. Necessarily $c\in p\mathbb Z/p^2\mathbb Z$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #c-divisible-by-p}
+Necessarily $c\in p\mathbb Z/p^2\mathbb Z$.
+
+::: pf-proof
 Because $pe_2=0$, one must have
 \[
 0=\alpha(pe_2)=p(c,d)=(pc,0).
@@ -49,12 +54,16 @@ Because $pe_2=0$, one must have
 Thus $pc=0$ modulo $p^2$, which is equivalent to $c$ being divisible by $p$.
 :::
 
-<1>2. An automorphism must satisfy
+:::
+
+::: {.pf-step #necessary-conditions}
+An automorphism must satisfy
 \[
 a\notin p\mathbb Z/p^2\mathbb Z
 \qquad\text{and}\qquad d\ne0.
 \]
-::: {.proof}
+
+::: pf-proof
 If $a$ were divisible by $p$, then $p(a,b)=(pa,0)=0$, so $\alpha(e_1)$ would have order at most $p$, impossible because automorphisms preserve the order $p^2$ of $e_1$.
 Hence $a$ is a unit modulo $p^2$.
 
@@ -68,8 +77,12 @@ Since $a\bmod p\ne0$, these two vectors span the quotient if and only if $d\ne0$
 An automorphism must induce an automorphism of this quotient, so $d\ne0$.
 :::
 
-<1>3. Conversely, if $a$ is a unit mod $p^2$, $c$ is divisible by $p$, and $d\ne0$, then the corresponding endomorphism is an automorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #sufficient-conditions}
+Conversely, if $a$ is a unit mod $p^2$, $c$ is divisible by $p$, and $d\ne0$, then the corresponding endomorphism is an automorphism.
+
+::: pf-proof
 The element $(a,b)$ has order $p^2$ because its first coordinate is a unit modulo $p^2$.
 Hence the subgroup it generates contains
 \[
@@ -83,8 +96,12 @@ Its order divides $|G|=p^3$, so it must have order $p^3$ and hence equals $G$.
 Therefore the endomorphism is surjective, and since $G$ is finite it is an automorphism.
 :::
 
-<1>4. One has $|\operatorname{Aut}(G)|=p^3(p-1)^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #aut-count}
+One has $|\operatorname{Aut}(G)|=p^3(p-1)^2$.
+
+::: pf-proof
 There are
 \[
 p^2-p=p(p-1)
@@ -96,5 +113,10 @@ Therefore
 =\boxed{p^3(p-1)^2}.
 \]
 :::
+
+:::
+
+:::
+
 :::
 

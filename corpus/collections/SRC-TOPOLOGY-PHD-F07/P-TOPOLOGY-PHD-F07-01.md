@@ -37,8 +37,12 @@ B(x_0,\epsilon)=\{x\in X:d(x,x_0)<\epsilon\},
 \qquad \epsilon>0.
 \]
 
-<1>1. Every point $y\in B(x_0,\epsilon)$ is contained in an open ball centered at $y$ that lies inside $B(x_0,\epsilon)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #ball-around-point}
+Every point $y\in B(x_0,\epsilon)$ is contained in an open ball centered at $y$ that lies inside $B(x_0,\epsilon)$.
+
+::: pf-proof
 Fix
 \[
 y\in B(x_0,\epsilon).
@@ -69,12 +73,21 @@ B(y,r)\subseteq B(x_0,\epsilon).
 \]
 :::
 
-<1>2. The ball $B(x_0,\epsilon)$ is open.
-::: {.proof}
-By <1>1, for every point $y\in B(x_0,\epsilon)$ there is a radius $r>0$ such that
+:::
+
+::: pf-step
+The ball $B(x_0,\epsilon)$ is open.
+
+::: pf-proof
+By step [](#ball-around-point){.pf-ref}, for every point $y\in B(x_0,\epsilon)$ there is a radius $r>0$ such that
 \[
 y\in B(y,r)\subseteq B(x_0,\epsilon).
 \]
 This is exactly the metric-topology criterion for $B(x_0,\epsilon)$ to be open.
 :::
+
+:::
+
+:::
+
 :::

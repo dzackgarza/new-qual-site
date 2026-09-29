@@ -42,7 +42,10 @@ The system is consistent and has the one-parameter family of solutions
 \qquad t\in F.
 \]
 
-<1>1. Row reduction of the augmented matrix gives
+::: pf
+
+::: pf-step
+Row reduction of the augmented matrix gives
 \[
 \left[
 \begin{array}{ccc|c}
@@ -60,13 +63,18 @@ The system is consistent and has the one-parameter family of solutions
 \end{array}
 \right].
 \]
-::: {.proof}
+
+::: pf-proof
 This is ordinary Gaussian elimination; in particular no row of the form
 $[0\ 0\ 0\mid c]$ with $c\ne0$ occurs, so the system is consistent.
 :::
 
-<1>2. The displayed family is exactly the solution set.
-::: {.proof}
+:::
+
+::: pf-step
+The displayed family is exactly the solution set.
+
+::: pf-proof
 The reduced equations are
 \[
 x_1+x_3=\frac12,
@@ -75,4 +83,9 @@ x_2-x_3=-\frac12.
 \]
 Set the free variable $x_3=t$ and solve for $x_1,x_2$.
 :::
+
+:::
+
+:::
+
 :::

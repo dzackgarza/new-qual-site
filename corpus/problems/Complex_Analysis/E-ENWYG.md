@@ -33,24 +33,33 @@ Integrate $f$ over a keyhole contour with outer radius $R$ and inner radius $\rh
 
 Write $I$ for the requested integral and $A\coloneqq\int_0^\infty{dx\over(1+x^2)^2}={\pi\over4}$.
 
-<1>1. The circles of radii $R$ and $\rho$ contribute $0$ in the limit.
+::: pf
 
-::: {.proof}
+::: {.pf-step #circles-vanish}
+The circles of radii $R$ and $\rho$ contribute $0$ in the limit.
+
+::: pf-proof
 By the ML estimate, the outer circle contributes $O\qty{R(\log R+2\pi)^2/R^4}\to0$ and the inner circle contributes $O\qty{\rho(\abs{\log\rho}+2\pi)^2}\to0$.
 :::
 
-<1>2. The two edges of the slit contribute $-4\pi i I+4\pi^2A$.
+:::
 
-::: {.proof}
+::: {.pf-step #edges-contribution}
+The two edges of the slit contribute $-4\pi i I+4\pi^2A$.
+
+::: pf-proof
 On the upper edge $\log z=\log x$, and on the lower edge, traversed from $\infty$ to $0$, $\log z=\log x+2\pi i$. So the edges contribute
 \[
 \int_0^\infty{\log^2x-(\log x+2\pi i)^2\over(1+x^2)^2}\,dx=-4\pi i I+4\pi^2A
 .\]
 :::
 
-<1>3. $\Res_{z=i}f=-{\pi\over4}+{i\pi^2\over16}$ and $\Res_{z=-i}f={3\pi\over4}-{9i\pi^2\over16}$.
+:::
 
-::: {.proof}
+::: {.pf-step #residues}
+$\Res_{z=i}f=-{\pi\over4}+{i\pi^2\over16}$ and $\Res_{z=-i}f={3\pi\over4}-{9i\pi^2\over16}$.
+
+::: pf-proof
 With $h(z)=\log^2z$, $h'(z)=2\log z/z$, and on this branch $\log i=i\pi/2$, $\log(-i)=3\pi i/2$. At the double poles,
 \[
 \Res_{z=i}f=\dd{}{z}{h(z)\over(z+i)^2}\bigg|_{z=i}={h'(i)\over(2i)^2}-{2h(i)\over(2i)^3}={\pi\over-4}-{-\pi^2/2\over-8i}=-{\pi\over4}+{i\pi^2\over16}
@@ -60,15 +69,21 @@ With $h(z)=\log^2z$, $h'(z)=2\log z/z$, and on this branch $\log i=i\pi/2$, $\lo
 .\]
 :::
 
-<1>4. $I=\boxed{-\pi/4}$.
+:::
 
-::: {.proof}
-By steps <1>1 to <1>3 and the residue theorem,
+::: pf-step
+$I=\boxed{-\pi/4}$.
+
+::: pf-proof
+By steps [](#circles-vanish){.pf-ref}, [](#edges-contribution){.pf-ref} and [](#residues){.pf-ref} and the residue theorem,
 \[
 -4\pi iI+4\pi^2A=2\pi i\qty{{\pi\over2}-{i\pi^2\over2}}=\pi^3+i\pi^2
 .\]
 The real parts agree since $A=\pi/4$, and the imaginary parts give $-4\pi I=\pi^2$.
 :::
+
+:::
+
 :::
 
 ::: {.remark}

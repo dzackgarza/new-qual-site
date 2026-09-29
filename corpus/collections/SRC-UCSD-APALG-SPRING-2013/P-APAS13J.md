@@ -35,71 +35,142 @@ Find the reduced Gröbner basis for $I$ relative to lexicographic order where $y
 :::
 
 ::: {.solution}
+
 **Part (a).**
 
-<1>1. The reduced Gröbner basis of $I$ for lex order with $y > x$ is
+::: pf
+
+::: {.pf-step #grobner-basis-i}
+The reduced Gröbner basis of $I$ for lex order with $y > x$ is
 $$\{x^3 + x^2 - 6x,\ x^2 - xy - 2x,\ 2x^2 - 4x - y^2 + y\}.$$
-::: {.proof}
+
+::: pf-proof
 Buchberger's algorithm (or a computer algebra system) applied to the two generators $x^2 - xy - 2x$ and $y^2 - 2xy - y$; the leading monomials are $x^3$, $xy$, and $y^2$.
+:::
+
+:::
+
 :::
 
 **Part (b).**
 
-<1>1. $\CC[x] \cap I = (x^3 + x^2 - 6x)$.
-::: {.proof}
-by the elimination theorem, the polynomials in the Gröbner basis of <1>1 that involve only $x$ generate the elimination ideal; the only such polynomial is $x^3 + x^2 - 6x$.
+::: pf
+
+::: {.pf-step #elimination-ideal-generator}
+$\CC[x] \cap I = (x^3 + x^2 - 6x)$.
+
+::: pf-proof
+by the elimination theorem, the polynomials in the Gröbner basis of step [](#grobner-basis-i){.pf-ref} that involve only $x$ generate the elimination ideal; the only such polynomial is $x^3 + x^2 - 6x$.
 :::
 
-<1>2. A reduced Gröbner basis for $\CC[x] \cap I$ is $\{x^3 + x^2 - 6x\}$.
-::: {.proof}
-<1>1; a single polynomial is its own reduced Gröbner basis.
+:::
+
+::: {.pf-step #reduced-grobner-basis-elimination}
+A reduced Gröbner basis for $\CC[x] \cap I$ is $\{x^3 + x^2 - 6x\}$.
+
+::: pf-proof
+Step [](#elimination-ideal-generator){.pf-ref}; a single polynomial is its own reduced Gröbner basis.
+:::
+
+:::
+
 :::
 
 **Part (c).**
 
-<1>1. $x^3 + x^2 - 6x = x(x-2)(x+3)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #factor-cubic}
+$x^3 + x^2 - 6x = x(x-2)(x+3)$.
+
+::: pf-proof
 factor.
 :::
 
-<1>2. The solutions are $(-3, -5)$, $(0, 0)$, $(0, 1)$, and $(2, 0)$.
-<2>1. For $x = -3$: the second equation gives $y^2 + 6y - y = y^2 + 5y = y(y+5) = 0$, and the first gives $9 + 3y + 6 = 0 \Rightarrow y = -5$.
-::: {.proof}
+:::
+
+::: {.pf-step #solve-for-each-root}
+The solutions are $(-3, -5)$, $(0, 0)$, $(0, 1)$, and $(2, 0)$.
+
+::: pf-proof
+
+::: pf-step
+For $x = -3$: the second equation gives $y^2 + 6y - y = y^2 + 5y = y(y+5) = 0$, and the first gives $9 + 3y + 6 = 0 \Rightarrow y = -5$.
+
+::: pf-proof
 substitute $x = -3$; the consistent solution is $y = -5$.
 :::
-<2>2. For $x = 0$: the first equation is $0 = 0$, and the second gives $y^2 - y = y(y-1) = 0$, so $y = 0$ or $y = 1$.
-::: {.proof}
+
+:::
+
+::: pf-step
+For $x = 0$: the first equation is $0 = 0$, and the second gives $y^2 - y = y(y-1) = 0$, so $y = 0$ or $y = 1$.
+
+::: pf-proof
 substitute $x = 0$.
 :::
-<2>3. For $x = 2$: the first equation gives $4 - 2y - 4 = -2y = 0 \Rightarrow y = 0$, and the second gives $y^2 - 4y - y = y^2 - 5y = 0$, consistent with $y = 0$.
-::: {.proof}
+
+:::
+
+::: pf-step
+For $x = 2$: the first equation gives $4 - 2y - 4 = -2y = 0 \Rightarrow y = 0$, and the second gives $y^2 - 4y - y = y^2 - 5y = 0$, consistent with $y = 0$.
+
+::: pf-proof
 substitute $x = 2$.
 :::
 
-<1>3. Hence the solution set is $\{(-3,-5), (0,0), (0,1), (2,0)\}$.
-::: {.proof}
-<1>1 and <1>2.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #solution-set}
+Hence the solution set is $\{(-3,-5), (0,0), (0,1), (2,0)\}$.
+
+::: pf-proof
+Steps [](#factor-cubic){.pf-ref} and [](#solve-for-each-root){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **Part (d).**
 
-<1>1. The leading monomials of the Gröbner basis are $x^3$, $xy$, and $y^2$.
-::: {.proof}
-<1>1.
+::: pf
+
+::: pf-step
+The leading monomials of the Gröbner basis are $x^3$, $xy$, and $y^2$.
+
+::: pf-proof
+Step [](#grobner-basis-i){.pf-ref}.
 :::
 
-<1>2. The standard monomials (those not divisible by any leading monomial) are $1, x, x^2, y$.
-::: {.proof}
+:::
+
+::: pf-step
+The standard monomials (those not divisible by any leading monomial) are $1, x, x^2, y$.
+
+::: pf-proof
 a monomial $x^a y^b$ is standard iff $a < 3$, $b < 2$, and not ($a \ge 1$ and $b \ge 1$); this leaves exactly $1, x, x^2, y$.
 :::
 
-<1>3. Hence $\{1, x, x^2, y\}$ is a vector space basis for $\CC[x,y]/I$.
-::: {.proof}
+:::
+
+::: {.pf-step #quotient-basis}
+Hence $\{1, x, x^2, y\}$ is a vector space basis for $\CC[x,y]/I$.
+
+::: pf-proof
 the standard monomials form a basis of the quotient (Macaulay's theorem).
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>1 (a), <1>2 (b), <1>3 (c), and <1>3 (d).
 :::
+
+::: pf-qed
+Step [](#grobner-basis-i){.pf-ref} (a), step [](#reduced-grobner-basis-elimination){.pf-ref} (b), step [](#solution-set){.pf-ref} (c), and step [](#quotient-basis){.pf-ref} (d).
+:::
+
+:::
+
 :::

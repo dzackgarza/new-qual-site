@@ -33,18 +33,25 @@ are linearly independent over $\mathbb R$.
 :::
 
 ::: {.solution}
-<1>1. Suppose real coefficients $c_1,\ldots,c_n$ satisfy
+
+::: pf
+
+::: {.pf-step #linear-relation-assumption}
+Suppose real coefficients $c_1,\ldots,c_n$ satisfy
 $$
 \sum_{j=1}^n c_je^{\alpha_jt}=0
 $$
 for every real $t$.
 
-::: {.proof}
+::: pf-proof
 This is the general form of a real linear relation among the given
 functions. It remains to show that every coefficient is zero.
 :::
 
-<1>2. For each integer
+:::
+
+::: {.pf-step #moment-relations}
+For each integer
 $$
 k=0,\ldots,n-1,
 $$
@@ -53,8 +60,8 @@ $$
 \sum_{j=1}^n c_j\alpha_j^k=0.
 $$
 
-::: {.proof}
-Differentiate the identity from step <1>1 exactly $k$ times:
+::: pf-proof
+Differentiate the identity from step [](#linear-relation-assumption){.pf-ref} exactly $k$ times:
 $$
 \sum_{j=1}^n
 c_j\alpha_j^k e^{\alpha_jt}
@@ -63,7 +70,10 @@ $$
 Evaluating at $t=0$ gives the displayed relation.
 :::
 
-<1>3. The relations from step <1>2 form the matrix equation
+:::
+
+::: {.pf-step #vandermonde-system}
+The relations from step [](#moment-relations){.pf-ref} form the matrix equation
 $$
 \begin{pmatrix}
 1&1&\cdots&1\\
@@ -81,13 +91,16 @@ c_n
 =0.
 $$
 
-::: {.proof}
-The row indexed by $k$ is exactly the equation in step <1>2.
+::: pf-proof
+The row indexed by $k$ is exactly the equation in step [](#moment-relations){.pf-ref}.
 :::
 
-<1>4. The matrix in step <1>3 is invertible.
+:::
 
-::: {.proof}
+::: {.pf-step #vandermonde-invertible}
+The matrix in step [](#vandermonde-system){.pf-ref} is invertible.
+
+::: pf-proof
 It is a Vandermonde matrix. Its determinant is
 $$
 \prod_{1\leq i<j\leq n}
@@ -97,30 +110,39 @@ The numbers $\alpha_1,\ldots,\alpha_n$ are distinct, so every factor is
 nonzero. Hence the determinant is nonzero.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #coefficients-zero}
+One has
 $$
 c_1=\cdots=c_n=0.
 $$
 
-::: {.proof}
-Step <1>3 places the coefficient vector in the kernel of the invertible
-matrix from step <1>4. That kernel is trivial.
+::: pf-proof
+Step [](#vandermonde-system){.pf-ref} places the coefficient vector in the kernel of the invertible
+matrix from step [](#vandermonde-invertible){.pf-ref}. That kernel is trivial.
 :::
 
-<1>6. The functions
+:::
+
+::: {.pf-step #functions-linearly-independent}
+The functions
 $$
 e^{\alpha_1t},\ldots,e^{\alpha_nt}
 $$
 are linearly independent over $\RR$.
 
-::: {.proof}
-Step <1>5 shows that the only real linear relation among them is the
+::: pf-proof
+Step [](#coefficients-zero){.pf-ref} shows that the only real linear relation among them is the
 trivial relation.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#functions-linearly-independent){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

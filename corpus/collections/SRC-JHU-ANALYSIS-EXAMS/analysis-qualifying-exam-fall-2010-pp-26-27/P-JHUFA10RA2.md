@@ -48,8 +48,13 @@ pointwise almost everywhere.
 :::
 
 ::: {.solution}
-<1>1. The convolution $\chi_E*\chi_F$ is uniformly continuous.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The convolution $\chi_E*\chi_F$ is uniformly continuous.
+
+::: pf-proof
 Because $m(E),m(F)<\infty$, both characteristic functions lie in $L^2(\mathbb R)$, with
 \[
 \|\chi_E\|_2=m(E)^{1/2},
@@ -89,8 +94,12 @@ where $(\tau_t\phi)(u)=\phi(u+t)$. Therefore
 Translations are continuous in $L^2(\mathbb R)$ [@Fol13], so the right-hand side tends to $0$ as $t\to0$. Hence $h$ is uniformly continuous, and in particular continuous.
 :::
 
-<1>2. Rewrite the second convolution as a one-sided average.
-::: {.proof}
+:::
+
+::: pf-step
+Rewrite the second convolution as a one-sided average.
+
+::: pf-proof
 For every $x\in\mathbb R$,
 \[
 (\chi_E*\chi_{[0,1/n]})(x)
@@ -108,8 +117,12 @@ n(\chi_E*\chi_{[0,1/n]})(x)
 \]
 :::
 
-<1>3. Apply the Lebesgue differentiation theorem.
-::: {.proof}
+:::
+
+::: pf-step
+Apply the Lebesgue differentiation theorem.
+
+::: pf-proof
 Since $\chi_E\in L^1_{\mathrm{loc}}(\mathbb R)$, almost every
 $x$ is a Lebesgue point [@Fol13]. At such a point,
 $$
@@ -128,5 +141,9 @@ n(\chi_E*\chi_{[0,1/n]})(x)
 \longrightarrow \chi_E(x)
 \]
 for almost every $x\in\mathbb R$.
+:::
+
+:::
+
 :::
 :::

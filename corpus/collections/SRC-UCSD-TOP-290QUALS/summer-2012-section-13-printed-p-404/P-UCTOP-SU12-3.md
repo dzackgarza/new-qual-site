@@ -18,11 +18,16 @@ Compute the homology $H_*(X; \mathbb{Z})$.
 :::
 
 ::: {.solution}
-<1>1. Under the three half-turn face pairings, the eight cube vertices fall into four equivalence classes, the twelve edges into six classes, and the six faces into three classes. Thus the quotient has cellular chain groups
+
+::: pf
+
+::: {.pf-step #cellular-chain-groups}
+Under the three half-turn face pairings, the eight cube vertices fall into four equivalence classes, the twelve edges into six classes, and the six faces into three classes. Thus the quotient has cellular chain groups
 $$
 0\to \mathbb Z\xrightarrow{\partial_3}\mathbb Z^3\xrightarrow{\partial_2}\mathbb Z^6\xrightarrow{\partial_1}\mathbb Z^4\to0.
 $$
-::: {.proof}
+
+::: pf-proof
 Write a cube vertex as $(x,y,z)\in\{0,1\}^3$. The pairing of the two faces perpendicular to the $x$-axis is
 $$(0,y,z)\sim(1,1-y,1-z),$$
 and cyclically for the other two coordinate directions. The resulting vertex classes are
@@ -32,7 +37,10 @@ $$
 For each coordinate direction, the four parallel edges split into two orbits under the other two face pairings, giving six edge classes total. Each opposite pair of square faces gives one $2$-cell, and the cube interior gives one $3$-cell.
 :::
 
-<1>2. Choose oriented edge classes $e_0,\dots,e_5$ so that $e_0,e_2,e_4$ form a spanning tree of the quotient $1$-skeleton. With suitable orientations of the three quotient faces, their cellular boundaries are the columns of
+:::
+
+::: {.pf-step #boundary-matrix}
+Choose oriented edge classes $e_0,\dots,e_5$ so that $e_0,e_2,e_4$ form a spanning tree of the quotient $1$-skeleton. With suitable orientations of the three quotient faces, their cellular boundaries are the columns of
 $$
 \partial_2=
 \begin{pmatrix}
@@ -44,7 +52,8 @@ $$
 1&-1&0
 \end{pmatrix}.
 $$
-::: {.proof}
+
+::: pf-proof
 Take representatives of the six edge classes to be the positive coordinate edges
 $$
 \begin{aligned}
@@ -60,7 +69,10 @@ $$
 which are exactly the displayed columns.
 :::
 
-<1>3. Collapsing the spanning tree $e_0,e_2,e_4$ identifies
+:::
+
+::: {.pf-step #h1-coker}
+Collapsing the spanning tree $e_0,e_2,e_4$ identifies
 $$
 H_1(X;\mathbb Z)\cong \operatorname{coker}
 \begin{pmatrix}
@@ -69,11 +81,15 @@ H_1(X;\mathbb Z)\cong \operatorname{coker}
 1&-1&0
 \end{pmatrix}.
 $$
-::: {.proof}
-After collapsing the tree, the three non-tree edges $e_1,e_3,e_5$ form a basis for the first homology of the quotient $1$-skeleton. The attaching maps of the three $2$-cells have coordinates given by the corresponding three rows of the matrix in <1>2.
+
+::: pf-proof
+After collapsing the tree, the three non-tree edges $e_1,e_3,e_5$ form a basis for the first homology of the quotient $1$-skeleton. The attaching maps of the three $2$-cells have coordinates given by the corresponding three rows of the matrix in step [](#boundary-matrix){.pf-ref}.
 :::
 
-<1>4. The Smith normal form of this $3\times3$ matrix is
+:::
+
+::: {.pf-step #h1-smith-form}
+The Smith normal form of this $3\times3$ matrix is
 $$
 \operatorname{diag}(1,1,2),
 $$
@@ -81,21 +97,33 @@ so
 $$
 H_1(X;\mathbb Z)\cong\mathbb Z/2.
 $$
-::: {.proof}
+
+::: pf-proof
 The matrix has determinant $2$, and one of its $2\times2$ minors is $\pm1$. Hence its Smith invariants are $1,1,2$.
 :::
 
-<1>5. The map $\partial_2$ is injective, so $H_2(X;\mathbb Z)=0$ once $\partial_3=0$.
-::: {.proof}
-The $3\times3$ minor used in <1>3 has determinant $2\ne0$, hence $\partial_2$ has rank $3$, equal to the rank of its domain.
 :::
 
-<1>6. The cellular boundary $\partial_3$ is zero.
-::: {.proof}
+::: {.pf-step #h2-zero}
+The map $\partial_2$ is injective, so $H_2(X;\mathbb Z)=0$ once $\partial_3=0$.
+
+::: pf-proof
+The $3\times3$ minor used in step [](#h1-coker){.pf-ref} has determinant $2\ne0$, hence $\partial_2$ has rank $3$, equal to the rank of its domain.
+:::
+
+:::
+
+::: {.pf-step #partial3-zero}
+The cellular boundary $\partial_3$ is zero.
+
+::: pf-proof
 For each quotient $2$-cell, the two opposite cube faces occur in the boundary of the $3$-cell with opposite incidence signs. The half-turn within the face is orientation-preserving, so the two contributions cancel. Thus every coefficient of $\partial_3$ is zero.
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{H_i(X;\mathbb Z)\cong
 \begin{cases}
@@ -104,7 +132,13 @@ $$
 0,&i=2\text{ or }i>3.
 \end{cases}}
 $$
-::: {.proof}
-The quotient is connected, giving $H_0\cong\mathbb Z$. Combine <1>4--<1>6 with the cellular chain complex in <1>1.
+
+::: pf-proof
+The quotient is connected, giving $H_0\cong\mathbb Z$. Combine steps [](#h1-smith-form){.pf-ref}, [](#h2-zero){.pf-ref} and [](#partial3-zero){.pf-ref} with the cellular chain complex in step [](#cellular-chain-groups){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

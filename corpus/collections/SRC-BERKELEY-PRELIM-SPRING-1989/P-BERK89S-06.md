@@ -41,9 +41,12 @@ $$
 T=\{X\in M_n(\RR):\trace(X)=0\}.
 $$
 
-<1>1. Every commutator $AB-BA$ lies in $T$, and therefore $S\subseteq T$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s-subset-t}
+Every commutator $AB-BA$ lies in $T$, and therefore $S\subseteq T$.
+
+::: pf-proof
 For $A,B\in M_n(\RR)$, cyclicity of the trace gives
 $$
 \trace(AB-BA)=\trace(AB)-\trace(BA)=0.
@@ -51,9 +54,12 @@ $$
 Thus every generator of $S$ is in $T$, so $S\subseteq T$.
 :::
 
-<1>2. The subspace $T$ has dimension $n^2-1$.
+:::
 
-::: {.proof}
+::: {.pf-step #t-dimension}
+The subspace $T$ has dimension $n^2-1$.
+
+::: pf-proof
 The trace map
 $$
 \trace:M_n(\RR)\longrightarrow\RR
@@ -66,11 +72,14 @@ $$
 $$
 :::
 
-<1>3. Assume $n\geq2$. Every off-diagonal matrix unit $E_{ij}$ with
+:::
+
+::: {.pf-step #generators-in-s}
+Assume $n\geq2$. Every off-diagonal matrix unit $E_{ij}$ with
 $i\neq j$, and every diagonal difference $E_{ii}-E_{nn}$ with $1\leq i<n$,
 lies in $S$.
 
-::: {.proof}
+::: pf-proof
 If $i\neq j$, then
 $$
 [E_{ii},E_{ij}]
@@ -88,9 +97,12 @@ $$
 so each stated diagonal difference also belongs to $S$.
 :::
 
-<1>4. If $n\geq2$, then $T\subseteq S$.
+:::
 
-::: {.proof}
+::: {.pf-step #t-subset-s}
+If $n\geq2$, then $T\subseteq S$.
+
+::: pf-proof
 Let $X=(x_{ij})\in T$. Since $\trace(X)=0$,
 $$
 x_{nn}=-\sum_{i=1}^{n-1}x_{ii}.
@@ -101,25 +113,30 @@ X
 =\sum_{i\neq j}x_{ij}E_{ij}
 +\sum_{i=1}^{n-1}x_{ii}(E_{ii}-E_{nn}).
 $$
-Every summand on the right lies in $S$ by step <1>3, hence $X\in S$.
+Every summand on the right lies in $S$ by step [](#generators-in-s){.pf-ref}, hence $X\in S$.
 Thus $T\subseteq S$.
 :::
 
-<1>5. In every case, $S=T$ and $\dim S=n^2-1$.
+:::
 
-::: {.proof}
-If $n=1$, step <1>2 gives $T=\{0\}$, and step <1>1 gives
+::: {.pf-step #s-equals-t}
+In every case, $S=T$ and $\dim S=n^2-1$.
+
+::: pf-proof
+If $n=1$, step [](#t-dimension){.pf-ref} gives $T=\{0\}$, and step [](#s-subset-t){.pf-ref} gives
 $S\subseteq T$, so $S=T$ and $\dim S=0=n^2-1$.
 
-If $n\geq2$, steps <1>1 and <1>4 give $S=T$. Step <1>2 then yields
+If $n\geq2$, steps [](#s-subset-t){.pf-ref} and [](#t-subset-s){.pf-ref} give $S=T$. Step [](#t-dimension){.pf-ref} then yields
 $$
 \dim S=\dim T=n^2-1.
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required dimension statement.
+::: pf-qed
+Step [](#s-equals-t){.pf-ref} is the required dimension statement.
+:::
+
 :::
 :::

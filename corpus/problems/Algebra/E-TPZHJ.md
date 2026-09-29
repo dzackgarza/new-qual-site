@@ -38,39 +38,55 @@ d_i:V_i\longrightarrow V_{i+1}
 \]
 be the maps in the exact sequence, with $V_0=V_{k+1}=0$ and the evident zero maps at the ends.
 
-<1>1. For every $1\le i\le k$,
+::: pf
+
+::: {.pf-step #rank-nullity}
+For every $1\le i\le k$,
 \[
 \dim_D V_i=\dim_D\ker d_i+\dim_D\operatorname{im}d_i.
 \]
-::: {.proof}
+
+::: pf-proof
 This is rank-nullity over the division ring $D$. Equivalently, choose a basis of $\ker d_i$, extend it to a basis of $V_i$, and observe that the images of the added basis vectors form a basis of $\operatorname{im}d_i$.
 :::
 
-<1>2. Exactness gives
+:::
+
+::: {.pf-step #kernel-eq-image}
+Exactness gives
 \[
 \ker d_i=\operatorname{im}d_{i-1}
 \qquad(1\le i\le k).
 \]
-::: {.proof}
+
+::: pf-proof
 This is exactly the definition of exactness at $V_i$.
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #dim-vi-sum}
+Hence
 \[
 \dim_D V_i
 =\dim_D\operatorname{im}d_{i-1}
  +\dim_D\operatorname{im}d_i.
 \]
-::: {.proof}
-Substitute <1>2 into <1>1.
+
+::: pf-proof
+Substitute step [](#kernel-eq-image){.pf-ref} into step [](#rank-nullity){.pf-ref}.
 :::
 
-<1>4. The alternating sum telescopes to zero:
+:::
+
+::: pf-step
+The alternating sum telescopes to zero:
 \[
 \sum_{i=1}^k(-1)^i\dim_DV_i=0.
 \]
-::: {.proof}
-Using <1>3,
+
+::: pf-proof
+Using step [](#dim-vi-sum){.pf-ref},
 \[
 \begin{aligned}
 \sum_{i=1}^k(-1)^i\dim_DV_i
@@ -88,4 +104,9 @@ All interior terms cancel. The remaining boundary terms vanish because
 \]
 Therefore the sum is zero.
 :::
+
+:::
+
+:::
+
 :::

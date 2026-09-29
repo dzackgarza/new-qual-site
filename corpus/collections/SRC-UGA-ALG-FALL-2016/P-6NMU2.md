@@ -43,7 +43,10 @@ The roots of $x^3-5$ are
 \alpha,\quad \zeta\alpha,\quad \zeta^2\alpha.
 \]
 
-<1>1. The splitting field is
+::: pf
+
+::: pf-step
+The splitting field is
 \[
 K=\mathbb Q(\alpha,\zeta),
 \]
@@ -51,7 +54,8 @@ and
 \[
 [K:\mathbb Q]=6.
 \]
-::: {.proof}
+
+::: pf-proof
 The polynomial $x^3-5$ is Eisenstein at $5$, hence irreducible over $\mathbb Q$. Therefore
 \[
 [\mathbb Q(\alpha):\mathbb Q]=3.
@@ -72,7 +76,10 @@ Hence
 \]
 :::
 
-<1>2. Define automorphisms $\sigma,\tau\in\operatorname{Gal}(K/\mathbb Q)$ by
+:::
+
+::: pf-step
+Define automorphisms $\sigma,\tau\in\operatorname{Gal}(K/\mathbb Q)$ by
 \[
 \sigma(\alpha)=\zeta\alpha,
 \qquad
@@ -90,7 +97,8 @@ Then
 \qquad
 \tau\sigma\tau=\sigma^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
 The map $\sigma$ cyclically permutes the three roots of $x^3-5$ and fixes $\zeta$, so it extends to a $\mathbb Q$-automorphism of $K$ of order $3$.
 The map $\tau$ is complex conjugation on $K$, hence has order $2$.
 Finally,
@@ -104,13 +112,17 @@ Finally,
 and both sides send $\zeta$ to $\zeta$, so $\tau\sigma\tau=\sigma^{-1}$.
 :::
 
-<1>3. The Galois group is
+:::
+
+::: pf-step
+The Galois group is
 \[
 G=\operatorname{Gal}(K/\mathbb Q)
 =\langle\sigma,\tau\mid \sigma^3=\tau^2=1,\ \tau\sigma\tau=\sigma^{-1}\rangle
 \cong S_3.
 \]
-::: {.proof}
+
+::: pf-proof
 The six elements
 \[
 1,\sigma,\sigma^2,\tau,\sigma\tau,\sigma^2\tau
@@ -120,11 +132,15 @@ Since $[K:\mathbb Q]=6$, the full Galois group also has order $6$, so these auto
 The displayed presentation is the standard presentation of $S_3$.
 :::
 
-<1>4. The subgroup $\langle\sigma\rangle$ of order $3$ fixes exactly
+:::
+
+::: {.pf-step #sigma-fixed-field}
+The subgroup $\langle\sigma\rangle$ of order $3$ fixes exactly
 \[
 \mathbb Q(\zeta).
 \]
-::: {.proof}
+
+::: pf-proof
 The automorphism $\sigma$ fixes $\zeta$, so
 \[
 \mathbb Q(\zeta)\subseteq K^{\langle\sigma\rangle}.
@@ -138,7 +154,10 @@ By the fundamental theorem of Galois theory,
 Also $[\mathbb Q(\zeta):\mathbb Q]=2$, so equality holds.
 :::
 
-<1>5. The three subgroups of order $2$ have fixed fields
+:::
+
+::: {.pf-step #order-two-fixed-fields}
+The three subgroups of order $2$ have fixed fields
 \[
 K^{\langle\tau\rangle}=\mathbb Q(\alpha),
 \]
@@ -149,7 +168,8 @@ and
 \[
 K^{\langle\sigma^2\tau\rangle}=\mathbb Q(\zeta\alpha).
 \]
-::: {.proof}
+
+::: pf-proof
 The first equality is immediate because $\tau$ fixes $\alpha$, and the fixed field of an order-$2$ subgroup has degree $3$ over $\mathbb Q$.
 
 For $\sigma\tau$, using composition from right to left,
@@ -169,7 +189,10 @@ Similarly,
 so $\mathbb Q(\zeta\alpha)$ is the fixed field of $\langle\sigma^2\tau\rangle$.
 :::
 
-<1>6. The complete subgroup--field correspondence is
+:::
+
+::: pf-step
+The complete subgroup--field correspondence is
 \[
 \begin{array}{c|c}
 H\le G & K^H\\ \hline
@@ -181,7 +204,13 @@ G & \mathbb Q\\
 \{1\} & K
 \end{array}.
 \]
-::: {.proof}
-These are all subgroups of $S_3$: the whole group, its unique subgroup of order $3$, its three subgroups of order $2$, and the trivial subgroup. By <1>4 and <1>5 their fixed fields are exactly those displayed, and the fundamental theorem of Galois theory reverses inclusions and gives all intermediate fields.
+
+::: pf-proof
+These are all subgroups of $S_3$: the whole group, its unique subgroup of order $3$, its three subgroups of order $2$, and the trivial subgroup. By step [](#sigma-fixed-field){.pf-ref} and step [](#order-two-fixed-fields){.pf-ref} their fixed fields are exactly those displayed, and the fundamental theorem of Galois theory reverses inclusions and gives all intermediate fields.
 :::
+
+:::
+
+:::
+
 :::

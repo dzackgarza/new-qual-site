@@ -48,7 +48,10 @@ A
 $$
 and let $e_1,e_2,e_3$ be the standard basis of $F^3$.
 
-<1>1. The vector $e_1$ is cyclic for $A$:
+::: pf
+
+::: {.pf-step #e1-is-cyclic}
+The vector $e_1$ is cyclic for $A$:
 $$
 e_1,
 \qquad
@@ -58,7 +61,7 @@ A^2e_1=e_3
 $$
 form a basis of $F^3$.
 
-::: {.proof}
+::: pf-proof
 The first column of $A$ is $e_2$, so $Ae_1=e_2$. The second column of
 $A$ is $e_3$, so
 $$
@@ -67,15 +70,18 @@ $$
 Thus the three displayed vectors are exactly the standard basis.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #a-cubed-relation}
+One has
 $$
 A^3e_1
 =
 a e_1+bAe_1+cA^2e_1.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#e1-is-cyclic){.pf-ref},
 $$
 A^3e_1=Ae_3.
 $$
@@ -86,14 +92,17 @@ $$
 Substitute $e_2=Ae_1$ and $e_3=A^2e_1$.
 :::
 
-<1>3. The polynomial
+:::
+
+::: {.pf-step #q-annihilates-a}
+The polynomial
 $$
 q(t)\coloneqq t^3-ct^2-bt-a
 $$
 annihilates $A$.
 
-::: {.proof}
-Step <1>2 says
+::: pf-proof
+Step [](#a-cubed-relation){.pf-ref} says
 $$
 q(A)e_1=0.
 $$
@@ -105,16 +114,19 @@ and
 $$
 q(A)A^2e_1=A^2q(A)e_1=0.
 $$
-By step <1>1, the vectors $e_1,Ae_1,A^2e_1$ form a basis. Hence
+By step [](#e1-is-cyclic){.pf-ref}, the vectors $e_1,Ae_1,A^2e_1$ form a basis. Hence
 $q(A)$ vanishes on a basis and therefore
 $$
 q(A)=0.
 $$
 :::
 
-<1>4. No nonzero polynomial of degree at most $2$ annihilates $A$.
+:::
 
-::: {.proof}
+::: {.pf-step #no-smaller-annihilator}
+No nonzero polynomial of degree at most $2$ annihilates $A$.
+
+::: pf-proof
 Suppose
 $$
 p(t)=u+vt+wt^2
@@ -123,30 +135,35 @@ satisfies $p(A)=0$. Applying this operator to $e_1$ gives
 $$
 u e_1+vAe_1+wA^2e_1=0.
 $$
-The three vectors are linearly independent by step <1>1, so
+The three vectors are linearly independent by step [](#e1-is-cyclic){.pf-ref}, so
 $$
 u=v=w=0.
 $$
 Thus $p=0$.
 :::
 
-<1>5. The minimal polynomial of $A$ is
+:::
+
+::: {.pf-step #minimal-polynomial-boxed}
+The minimal polynomial of $A$ is
 $$
 \boxed{
 m_A(t)=t^3-ct^2-bt-a
 }.
 $$
 
-::: {.proof}
-Step <1>3 gives a monic degree-$3$ annihilating polynomial. Step <1>4
+::: pf-proof
+Step [](#q-annihilates-a){.pf-ref} gives a monic degree-$3$ annihilating polynomial. Step [](#no-smaller-annihilator){.pf-ref}
 shows that no nonzero annihilating polynomial has smaller degree. By the
 definition of the minimal polynomial, it must therefore equal $q(t)$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 computes the requested minimal polynomial for arbitrary
+::: pf-qed
+Step [](#minimal-polynomial-boxed){.pf-ref} computes the requested minimal polynomial for arbitrary
 $a,b,c\in F$.
+:::
+
 :::
 :::

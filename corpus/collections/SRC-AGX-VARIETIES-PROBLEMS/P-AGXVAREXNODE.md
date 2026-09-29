@@ -67,9 +67,12 @@ $$
 F(x,y)=x^2-y^2(y-1)=x^2+y^2-y^3.
 $$
 
-<1>1. The origin is the unique singular point of $X$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #origin-unique-singular}
+The origin is the unique singular point of $X$.
+
+::: pf-proof
 The partial derivatives are
 $$
 F_x=2x,
@@ -99,7 +102,10 @@ $$
 $$
 :::
 
-<1>2. The germ $(X,0)$ has exactly two smooth branches, with tangent lines
+:::
+
+::: {.pf-step #two-smooth-branches}
+The germ $(X,0)$ has exactly two smooth branches, with tangent lines
 $$
 x+iy=0
 \qquad\text{and}\qquad
@@ -107,7 +113,7 @@ x-iy=0,
 $$
 and the two branches meet transversally.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 s(y)=\sqrt{1-y}\in\CC\{y\}
@@ -147,7 +153,10 @@ These are distinct linear forms, so the tangent lines are distinct. Hence the
 two smooth branches meet transversally at the origin.
 :::
 
-<1>3. The morphism
+:::
+
+::: {.pf-step #nu-aff-finite-birational}
+The morphism
 $$
 \nu_{\mathrm{aff}}:\AA^1_\CC\longrightarrow X,
 \qquad
@@ -156,7 +165,7 @@ t\longmapsto
 $$
 is finite and birational.
 
-::: {.proof}
+::: pf-proof
 The image lies on $X$, because
 $$
 \begin{aligned}
@@ -201,13 +210,16 @@ $$
 so the morphism is birational.
 :::
 
-<1>4. The normalization of the affine nodal cubic is
+:::
+
+::: {.pf-step #normalization-a1}
+The normalization of the affine nodal cubic is
 $$
 \boxed{X^{\operatorname{norm}}\cong\AA^1_\CC.}
 $$
 
-::: {.proof}
-By step <1>3, $\CC[t]$ is integral over $A$ and has the same fraction field.
+::: pf-proof
+By step [](#nu-aff-finite-birational){.pf-ref}, $\CC[t]$ is integral over $A$ and has the same fraction field.
 Let $\overline A$ be the integral closure of $A$ in that field. Then
 $$
 \CC[t]\subseteq\overline A.
@@ -225,7 +237,10 @@ $$
 which proves the normalization statement.
 :::
 
-<1>5. The affine normalization from step <1>3 extends to the morphism
+:::
+
+::: {.pf-step #nu-extends-to-p1}
+The affine normalization from step [](#nu-aff-finite-birational){.pf-ref} extends to the morphism
 $$
 \nu:\PP^1_\CC\longrightarrow\overline X
 $$
@@ -242,7 +257,7 @@ v^3
 }
 $$
 
-::: {.proof}
+::: pf-proof
 The three homogeneous coordinate functions have degree $3$. They do not
 vanish simultaneously: if $v=0$, then $u\neq0$ and the first coordinate is
 $u^3\neq0$; if $v\neq0$ and $u^2+v^2=0$, then the third coordinate
@@ -279,18 +294,21 @@ t=u
 \longmapsto
 [t(t^2+1):t^2+1:1],
 $$
-which is exactly the affine normalization from step <1>3.
+which is exactly the affine normalization from step [](#nu-aff-finite-birational){.pf-ref}.
 :::
 
-<1>6. The morphism $\nu:\PP^1_\CC\to\overline X$ is the normalization
+:::
+
+::: {.pf-step #nu-is-normalization-birational}
+The morphism $\nu:\PP^1_\CC\to\overline X$ is the normalization
 morphism and is birational.
 
-::: {.proof}
+::: pf-proof
 On the dense open set where $y\neq0$, the rational function
 $$
 t=\frac{x}{y}
 $$
-recovers the affine parameter from step <1>3. Thus $\nu$ induces an
+recovers the affine parameter from step [](#nu-aff-finite-birational){.pf-ref}. Thus $\nu$ induces an
 isomorphism of function fields and is birational.
 
 The source $\PP^1_\CC$ is smooth, hence normal. The morphism $\nu$ is
@@ -299,7 +317,10 @@ finite birational morphism from a normal curve, and hence it is the
 normalization of $\overline X$.
 :::
 
-<1>7. The fiber over the node
+:::
+
+::: {.pf-step #fiber-over-node}
+The fiber over the node
 $$
 P=[0:0:1]\in\overline X
 $$
@@ -312,7 +333,7 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 \nu([u:v])=[0:0:1],
@@ -334,27 +355,33 @@ $$
 Thus the fiber is the displayed two-point set.
 :::
 
-<1>8. The conclusion of Zariski's Main Theorem fails for $\nu$: the
+:::
+
+::: {.pf-step #zariski-main-fails}
+The conclusion of Zariski's Main Theorem fails for $\nu$: the
 birational morphism $\nu$ has a disconnected fiber over the node, where the
 target $\overline X$ is not normal.
 
-::: {.proof}
+::: pf-proof
 Zariski's Main Theorem states that a birational morphism between normal
 projective varieties has connected fibers. The normalization morphism
 $$
 \nu:\PP^1_\CC\longrightarrow\overline X
 $$
-is birational and has normal source, but step <1>7 gives a disconnected fiber
+is birational and has normal source, but step [](#fiber-over-node){.pf-ref} gives a disconnected fiber
 over the node. The normalization is an isomorphism over the normal locus of
 $\overline X$, so $\overline X$ is not normal at $P$.
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 establish the nodal singularity and its two transverse
-branches. Steps <1>3--<1>4 compute the affine normalization. Steps
-<1>5--<1>7 compute the projective normalization and the two-point fiber, and
-step <1>8 gives the requested comparison with Zariski's Main Theorem.
 :::
+
+::: pf-qed
+Steps [](#origin-unique-singular){.pf-ref} and [](#two-smooth-branches){.pf-ref} establish the nodal singularity and its two transverse
+branches. Steps [](#nu-aff-finite-birational){.pf-ref} and [](#normalization-a1){.pf-ref} compute the affine normalization. Steps
+[](#nu-extends-to-p1){.pf-ref}, [](#nu-is-normalization-birational){.pf-ref} and [](#fiber-over-node){.pf-ref} compute the projective normalization and the two-point fiber, and
+step [](#zariski-main-fails){.pf-ref} gives the requested comparison with Zariski's Main Theorem.
+:::
+
+:::
+
 :::

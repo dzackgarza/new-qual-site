@@ -38,15 +38,21 @@ n\cdot a=
 \end{cases}
 \]
 
-<1>1. This rule is a $\mathbb Z$-module structure on $A$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #rule-is-module-structure}
+This rule is a $\mathbb Z$-module structure on $A$.
+
+::: pf-proof
 Since $A$ is abelian, expanding sums gives $n\cdot(a+b)=n\cdot a+n\cdot b$ and $(m+n)\cdot a=m\cdot a+n\cdot a$, and regrouping repeated addition gives $(mn)\cdot a=m\cdot(n\cdot a)$. By definition $1\cdot a=a$.
 :::
 
-<1>2. Every $\mathbb Z$-module structure on $A$ agrees with the rule of step <1>1.
+:::
 
-::: {.proof}
+::: {.pf-step #uniqueness-of-structure}
+Every $\mathbb Z$-module structure on $A$ agrees with the rule of step [](#rule-is-module-structure){.pf-ref}.
+
+::: pf-proof
 Let $A$ carry a $\mathbb Z$-module structure. The module axioms give $1\cdot a=a$ and, by distributivity over $1+\cdots+1$,
 \[
 n\cdot a=\underbrace{(1\cdot a)+\cdots+(1\cdot a)}_{n\text{ times}}
@@ -54,9 +60,12 @@ n\cdot a=\underbrace{(1\cdot a)+\cdots+(1\cdot a)}_{n\text{ times}}
 for $n>0$. Also $0\cdot a=(0+0)\cdot a=0\cdot a+0\cdot a$, so $0\cdot a=0$, and $n\cdot a+(-n)\cdot a=0\cdot a=0$, so $(-n)\cdot a=-(n\cdot a)$.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 gives existence and step <1>2 gives uniqueness of the $\mathbb Z$-module structure on $A$.
 :::
+
+::: pf-qed
+Step [](#rule-is-module-structure){.pf-ref} gives existence and step [](#uniqueness-of-structure){.pf-ref} gives uniqueness of the $\mathbb Z$-module structure on $A$.
+:::
+
+:::
+
 :::

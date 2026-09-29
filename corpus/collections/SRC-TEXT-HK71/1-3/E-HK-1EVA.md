@@ -49,8 +49,12 @@ entry of each nonzero row is $1$, and every column containing such a leading
 $1$ has all its other entries equal to $0$ [@HK71]. No condition orders the
 nonzero rows; that stronger requirement belongs to row-reduced echelon form.
 
-<1>1. If exactly one row is nonzero, there are exactly two possibilities.
-::: {.proof}
+::: pf
+
+::: {.pf-step #one-nonzero-row-cases}
+If exactly one row is nonzero, there are exactly two possibilities.
+
+::: pf-proof
 Suppose first that the first row is nonzero and the second row is zero. Then
 $c=d=0$. If $a\ne0$, row-reducedness forces the leading entry $a$ to equal
 $1$, and the sum condition gives $1+b=0$, so
@@ -69,8 +73,12 @@ A=\begin{pmatrix}0&0\\1&-1\end{pmatrix}.
 $$
 :::
 
-<1>2. If both rows are nonzero, no matrix satisfies the sum condition.
-::: {.proof}
+:::
+
+::: {.pf-step #two-nonzero-rows-impossible}
+If both rows are nonzero, no matrix satisfies the sum condition.
+
+::: pf-proof
 Each nonzero row has a leading $1$. The two leading $1$'s cannot occur in the
 same column, because a pivot column must have all other entries zero.
 
@@ -88,12 +96,21 @@ $$
 whose entries also sum to $2$. Therefore no matrix with two nonzero rows works.
 :::
 
-<1>3. The zero matrix supplies the third example, and all three displayed matrices are row-reduced.
-::: {.proof}
+:::
+
+::: pf-step
+The zero matrix supplies the third example, and all three displayed matrices are row-reduced.
+
+::: pf-proof
 The zero matrix is row-reduced vacuously and has entry sum zero. In each of the
 two rank-one matrices displayed above, the only nonzero row has leading entry
 $1$, and its leading column has zero in the other row; their entry sums are
-$1-1=0$. Thus all three satisfy the hypotheses. Steps <1>1 and <1>2 show that
+$1-1=0$. Thus all three satisfy the hypotheses. Steps [](#one-nonzero-row-cases){.pf-ref} and [](#two-nonzero-rows-impossible){.pf-ref} show that
 there are no others.
 :::
+
+:::
+
+:::
+
 :::

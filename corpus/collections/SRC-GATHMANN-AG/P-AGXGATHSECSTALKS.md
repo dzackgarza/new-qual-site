@@ -43,10 +43,14 @@ c. For a general sheaf $\mcf$ on $X$, (b) is false.
 :::
 
 ::: {.solution}
-<1>1. (a) If $\phi$ and $\psi$ have the same germ at every point of $U$,
+
+::: pf
+
+::: {.pf-step #same-germs-implies-equal}
+(a) If $\phi$ and $\psi$ have the same germ at every point of $U$,
 then $\phi=\psi$ in $\mcf(U)$.
 
-::: {.proof}
+::: pf-proof
 Fix $a\in U$. Equality of the two germs in $\mcf_a$ means that there is an
 open neighborhood
 $$
@@ -61,13 +65,16 @@ agree on an open cover of $U$. By the uniqueness axiom for the sheaf
 $\mcf$, the two sections are equal on $U$.
 :::
 
-<1>2. (b) If $X$ is irreducible, $\mcf=\OO_X$, and the germs of
+:::
+
+::: {.pf-step #irreducible-regular-functions-agree}
+(b) If $X$ is irreducible, $\mcf=\OO_X$, and the germs of
 $\phi,\psi\in\OO_X(U)$ agree at one point $a\in U$, then
 $$
 \boxed{\phi=\psi\text{ on }U}.
 $$
 
-::: {.proof}
+::: pf-proof
 Equality of the germs at $a$ gives a nonempty open neighborhood
 $$
 W\subseteq U
@@ -94,9 +101,12 @@ $$
 Thus $h=0$ on $U$, so $\phi=\psi$ everywhere on $U$.
 :::
 
-<1>3. (c) Equality on one stalk does not determine sections of a general sheaf.
+:::
 
-::: {.proof}
+::: {.pf-step #counterexample-general-sheaf}
+(c) Equality on one stalk does not determine sections of a general sheaf.
+
+::: pf-proof
 Let $X=\RR$ with its standard topology and let $\mcf$ be the sheaf of
 continuous real-valued functions. On $U=\RR$, define
 $$
@@ -119,9 +129,11 @@ But $\psi(2)=1\ne0=\phi(2)$, so $\phi\ne\psi$ as global sections. This
 gives the required counterexample.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove (a)--(c), respectively.
+::: pf-qed
+Steps [](#same-germs-implies-equal){.pf-ref}, [](#irreducible-regular-functions-agree){.pf-ref} and [](#counterexample-general-sheaf){.pf-ref} prove (a)--(c), respectively.
+:::
+
 :::
 :::

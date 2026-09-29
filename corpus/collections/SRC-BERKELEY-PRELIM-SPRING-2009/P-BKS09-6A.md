@@ -35,10 +35,14 @@ Given $A \in M _ { 2 } ( \mathbb { C } )$ , define $C ( A ) = \{ B \in M _ { 2 }
 :::
 
 ::: {.solution}
-<1>1. For every $A\in M_2(\CC)$, the set $C(A)$ is a complex linear
+
+::: pf
+
+::: {.pf-step #c-a-subspace}
+For every $A\in M_2(\CC)$, the set $C(A)$ is a complex linear
 subspace of $M_2(\CC)$.
 
-::: {.proof}
+::: pf-proof
 The zero matrix commutes with $A$. If $B,D\in C(A)$ and
 $\lambda,\mu\in\CC$, then
 $$
@@ -52,10 +56,13 @@ $$
 Thus $C(A)$ is closed under linear combinations.
 :::
 
-<1>2. If $A$ is not a scalar matrix, there exists $v\in\CC^2$ such that
+:::
+
+::: {.pf-step #exists-independent-vector}
+If $A$ is not a scalar matrix, there exists $v\in\CC^2$ such that
 $v$ and $Av$ are linearly independent.
 
-::: {.proof}
+::: pf-proof
 Suppose instead that $Av\in\CC v$ for every $v\in\CC^2$. Choose a basis
 $e_1,e_2$. Then
 $$
@@ -69,13 +76,16 @@ $A=\lambda_1I$, contrary to the hypothesis. Therefore such a vector $v$
 exists.
 :::
 
-<1>3. If $A$ is not scalar, then
+:::
+
+::: {.pf-step #centralizer-span}
+If $A$ is not scalar, then
 $$
 C(A)=\operatorname{span}_{\CC}\{I,A\}.
 $$
 
-::: {.proof}
-Choose $v$ as in step <1>2. Then $(v,Av)$ is a basis of $\CC^2$. Let
+::: pf-proof
+Choose $v$ as in step [](#exists-independent-vector){.pf-ref}. Then $(v,Av)$ is a basis of $\CC^2$. Let
 $B\in C(A)$. There are unique $\alpha,\beta\in\CC$ such that
 $$
 Bv=\alpha v+\beta Av.
@@ -98,23 +108,29 @@ $C(A)\subseteq\operatorname{span}\{I,A\}$, while the reverse inclusion is
 immediate because both $I$ and $A$ commute with $A$.
 :::
 
-<1>4. If $A$ is not scalar, then
+:::
+
+::: {.pf-step #dim-nonscalar}
+If $A$ is not scalar, then
 $$
 \dim_{\CC}C(A)=2.
 $$
 
-::: {.proof}
-By step <1>3, $C(A)$ is spanned by $I$ and $A$. These two matrices are
+::: pf-proof
+By step [](#centralizer-span){.pf-ref}, $C(A)$ is spanned by $I$ and $A$. These two matrices are
 linearly independent: a relation $\alpha I+\beta A=0$ with $\beta\neq0$
 would make $A$ scalar, while $\beta=0$ then forces $\alpha=0$.
 :::
 
-<1>5. If $A$ is scalar, then
+:::
+
+::: {.pf-step #dim-scalar}
+If $A$ is scalar, then
 $$
 \dim_{\CC}C(A)=4.
 $$
 
-::: {.proof}
+::: pf-proof
 If $A=\lambda I$, then every matrix commutes with $A$, so
 $$
 C(A)=M_2(\CC).
@@ -123,7 +139,10 @@ The four matrix units form a basis of $M_2(\CC)$, hence its complex
 dimension is $4$.
 :::
 
-<1>6. The possible dimensions and the requested rule are
+:::
+
+::: {.pf-step #dimension-rule}
+The possible dimensions and the requested rule are
 $$
 \boxed{
 \dim_{\CC}C(A)=
@@ -134,15 +153,18 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>4 and <1>5 give all possibilities. Thus determining whether the
+::: pf-proof
+Steps [](#dim-nonscalar){.pf-ref} and [](#dim-scalar){.pf-ref} give all possibilities. Thus determining whether the
 off-diagonal entries of $A$ vanish and its two diagonal entries are equal
 immediately determines the dimension.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), and step <1>6 proves parts (b) and (c).
 :::
+
+::: pf-qed
+Step [](#c-a-subspace){.pf-ref} proves part (a), and step [](#dimension-rule){.pf-ref} proves parts (b) and (c).
+:::
+
+:::
+
 :::

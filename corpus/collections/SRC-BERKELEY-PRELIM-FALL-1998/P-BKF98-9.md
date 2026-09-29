@@ -27,6 +27,7 @@ Suppose $G$ is a finite group such that every Sylow subgroup of $G$ is normal an
 :::
 
 ::: {.solution}
+
 Write
 $$
 \abs G
@@ -35,19 +36,25 @@ $$
 $$
 with distinct primes $p_i$, and let $P_i$ be a Sylow $p_i$-subgroup.
 
-<1>1. For each $i$, the Sylow subgroup $P_i$ is unique.
+::: pf
 
-::: {.proof}
+::: {.pf-step #sylow-unique}
+For each $i$, the Sylow subgroup $P_i$ is unique.
+
+::: pf-proof
 All Sylow $p_i$-subgroups are conjugate. Since $P_i$ is normal by
 hypothesis, every conjugate of $P_i$ equals $P_i$. Thus there is only one.
 :::
 
-<1>2. If $i\neq j$, then
+:::
+
+::: {.pf-step #sylow-trivial-intersection}
+If $i\neq j$, then
 $$
 P_i\cap P_j=\{1\}.
 $$
 
-::: {.proof}
+::: pf-proof
 The order of $P_i\cap P_j$ divides both
 $$
 \abs{P_i}=p_i^{a_i}
@@ -59,10 +66,13 @@ $$
 These two orders are coprime, so the intersection has order $1$.
 :::
 
-<1>3. If $i\neq j$, then every element of $P_i$ commutes with every
+:::
+
+::: {.pf-step #sylow-elements-commute}
+If $i\neq j$, then every element of $P_i$ commutes with every
 element of $P_j$.
 
-::: {.proof}
+::: pf-proof
 Take
 $$
 x\in P_i,
@@ -91,13 +101,16 @@ $$
 (xyx^{-1})y^{-1}
 \in P_j.
 $$
-Step <1>2 therefore gives
+Step [](#sylow-trivial-intersection){.pf-ref} therefore gives
 $$
 [x,y]=1.
 $$
 :::
 
-<1>4. The product
+:::
+
+::: {.pf-step #product-full-order}
+The product
 $$
 P_1P_2\cdots P_r
 $$
@@ -108,8 +121,8 @@ $$
 \abs G.
 $$
 
-::: {.proof}
-Step <1>3 shows that the Sylow subgroups commute elementwise, so their
+::: pf-proof
+Step [](#sylow-elements-commute){.pf-ref} shows that the Sylow subgroups commute elementwise, so their
 setwise product is a subgroup.
 
 Because their orders are pairwise coprime and their pairwise intersections
@@ -127,28 +140,37 @@ $$
 $$
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #G-equals-product}
+One has
 $$
 G=P_1P_2\cdots P_r.
 $$
 
-::: {.proof}
-Step <1>4 gives a subgroup of the finite group $G$ having the same order as
+::: pf-proof
+Step [](#product-full-order){.pf-ref} gives a subgroup of the finite group $G$ having the same order as
 $G$, so it must equal $G$.
 :::
 
-<1>6. The group $G$ is abelian.
+:::
 
-::: {.proof}
-Each $P_i$ is abelian by hypothesis, and step <1>3 shows that elements from
-different Sylow subgroups also commute. By step <1>5, every element of $G$
+::: {.pf-step #G-abelian}
+The group $G$ is abelian.
+
+::: pf-proof
+Each $P_i$ is abelian by hypothesis, and step [](#sylow-elements-commute){.pf-ref} shows that elements from
+different Sylow subgroups also commute. By step [](#G-equals-product){.pf-ref}, every element of $G$
 is a product of elements from the $P_i$. Therefore every pair of elements
 of $G$ commutes.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 proves the claim.
 :::
+
+::: pf-qed
+Step [](#G-abelian){.pf-ref} proves the claim.
+:::
+
+:::
+
 :::

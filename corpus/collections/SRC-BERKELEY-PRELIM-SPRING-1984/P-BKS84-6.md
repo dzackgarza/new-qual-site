@@ -36,12 +36,15 @@ to exist.
 :::
 
 ::: {.solution}
-<1>1. If $(x_n)$ has a finite limit, then
+::: pf
+
+::: {.pf-step #necessity-a-bound}
+If $(x_n)$ has a finite limit, then
 $$
 a\leq\frac14.
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose
 $$
 x_n\longrightarrow L\in\RR.
@@ -65,7 +68,10 @@ $$
 Therefore $a\leq1/4$.
 :::
 
-<1>2. Assume
+:::
+
+::: {.pf-step #smaller-root-properties}
+Assume
 $$
 0<a\leq\frac14
 $$
@@ -80,7 +86,7 @@ $$
 a+r^2=r.
 $$
 
-::: {.proof}
+::: pf-proof
 The displayed value $r$ is the smaller real root of
 $$
 t^2-t+a=0.
@@ -90,12 +96,15 @@ $0\leq\sqrt{1-4a}<1$, which gives $0<r\leq1/2$. The root equation is
 equivalent to $a+r^2=r$.
 :::
 
-<1>3. For every $n\geq0$,
+:::
+
+::: {.pf-step #xn-bounded-by-r}
+For every $n\geq0$,
 $$
 0\leq x_n\leq r.
 $$
 
-::: {.proof}
+::: pf-proof
 The claim holds for $n=0$ because $x_0=0$. If $0\leq x_n\leq r$, then
 $$
 0
@@ -108,12 +117,15 @@ a+r^2
 =
 r
 $$
-by step <1>2. Induction proves the claim.
+by step [](#smaller-root-properties){.pf-ref}. Induction proves the claim.
 :::
 
-<1>4. The sequence $(x_n)$ is strictly increasing.
+:::
 
-::: {.proof}
+::: {.pf-step #xn-increasing}
+The sequence $(x_n)$ is strictly increasing.
+
+::: pf-proof
 First,
 $$
 x_1=a>0=x_0.
@@ -131,7 +143,10 @@ $$
 Induction gives $x_{n+1}>x_n$ for every $n$.
 :::
 
-<1>5. If $0<a\leq1/4$, then
+:::
+
+::: {.pf-step #limit-equals-r}
+If $0<a\leq1/4$, then
 $$
 \lim_{n\to\infty}x_n
 =
@@ -140,9 +155,9 @@ r
 \frac{1-\sqrt{1-4a}}2.
 $$
 
-::: {.proof}
-Steps <1>3--<1>4 show that $(x_n)$ is increasing and bounded above, hence
-it converges to some finite $L$. As in step <1>1,
+::: pf-proof
+Steps [](#xn-bounded-by-r){.pf-ref} and [](#xn-increasing){.pf-ref} show that $(x_n)$ is increasing and bounded above, hence
+it converges to some finite $L$. As in step [](#necessity-a-bound){.pf-ref},
 $$
 L=a+L^2,
 $$
@@ -156,21 +171,26 @@ s
 =
 \frac{1+\sqrt{1-4a}}2.
 $$
-Step <1>3 gives $L\leq r$, while $r\leq s$. Hence $L=r$.
+Step [](#xn-bounded-by-r){.pf-ref} gives $L\leq r$, while $r\leq s$. Hence $L=r$.
 :::
 
-<1>6. The necessary and sufficient condition is
+:::
+
+::: {.pf-step #condition-boxed}
+The necessary and sufficient condition is
 $$
 \boxed{0<a\leq\frac14}.
 $$
 
-::: {.proof}
-Necessity is step <1>1, and sufficiency is step <1>5.
+::: pf-proof
+Necessity is step [](#necessity-a-bound){.pf-ref}, and sufficiency is step [](#limit-equals-r){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is exactly the requested criterion.
+::: pf-qed
+Step [](#condition-boxed){.pf-ref} is exactly the requested criterion.
+:::
+
 :::
 :::

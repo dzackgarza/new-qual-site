@@ -20,23 +20,33 @@ Show that if $a + \operatorname{Nil}(R)$ is nilpotent in the quotient ring $R/\o
 :::
 
 ::: {.solution}
-<1>1. There is $n\ge1$ with $a^n\in\operatorname{Nil}(R)$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #a-power-in-nilradical}
+There is $n\ge1$ with $a^n\in\operatorname{Nil}(R)$.
+
+::: pf-proof
 Multiplication of cosets gives $(a+\operatorname{Nil}(R))^n=a^n+\operatorname{Nil}(R)$ for every $n\ge1$.
 Since $a+\operatorname{Nil}(R)$ is nilpotent, $a^n+\operatorname{Nil}(R)=\operatorname{Nil}(R)$ for some $n\ge1$, that is, $a^n\in\operatorname{Nil}(R)$.
 :::
 
-<1>2. $a^{nm}=0$ for some $m\ge1$.
-
-::: {.proof}
-By step <1>1, $a^n$ is nilpotent, so $(a^n)^m=0$ for some $m\ge1$, and $a^{nm}=(a^n)^m$.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #a-power-nm-zero}
+$a^{nm}=0$ for some $m\ge1$.
 
-::: {.proof}
-By step <1>2, $a$ is nilpotent, so $a\in\operatorname{Nil}(R)$.
+::: pf-proof
+By step [](#a-power-in-nilradical){.pf-ref}, $a^n$ is nilpotent, so $(a^n)^m=0$ for some $m\ge1$, and $a^{nm}=(a^n)^m$.
+:::
+
+:::
+
+::: pf-qed
+By step [](#a-power-nm-zero){.pf-ref}, $a$ is nilpotent, so $a\in\operatorname{Nil}(R)$.
 Equivalently, $R/\operatorname{Nil}(R)$ has no nonzero nilpotent elements.
 :::
+
+:::
+
 :::

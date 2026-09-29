@@ -37,7 +37,10 @@ A=
 \end{pmatrix}.
 $$
 
-<1>1. The eigenvalues of $A$ are
+::: pf
+
+::: {.pf-step #eigenvalues}
+The eigenvalues of $A$ are
 $$
 \lambda_+
 \coloneqq
@@ -50,7 +53,7 @@ $$
 \frac{1-\sqrt5}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The characteristic polynomial is
 $$
 \det(tI-A)
@@ -60,14 +63,20 @@ $$
 Its two roots are the displayed numbers.
 :::
 
-<1>2. The matrix $A$ is diagonalizable over $\RR$.
+:::
 
-::: {.proof}
-The two eigenvalues in step <1>1 are distinct and real. Therefore $A$ has
+::: {.pf-step #diagonalizable}
+The matrix $A$ is diagonalizable over $\RR$.
+
+::: pf-proof
+The two eigenvalues in step [](#eigenvalues){.pf-ref} are distinct and real. Therefore $A$ has
 a basis of real eigenvectors.
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #convergence-region}
+If
 $$
 \abs{x}
 <
@@ -79,8 +88,8 @@ $$
 $$
 converges.
 
-::: {.proof}
-By step <1>2, choose an invertible real matrix $P$ such that
+::: pf-proof
+By step [](#diagonalizable){.pf-ref}, choose an invertible real matrix $P$ such that
 $$
 P^{-1}AP
 =
@@ -125,7 +134,10 @@ sum by the fixed matrices $P$ and $P^{-1}$ gives convergence of the
 matrix series.
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #divergence-region}
+If
 $$
 \abs{x}
 \geq
@@ -133,7 +145,7 @@ $$
 $$
 then the matrix series diverges.
 
-::: {.proof}
+::: pf-proof
 Let $v\neq0$ be an eigenvector for $\lambda_+$. If the matrix series
 converged, its terms would tend to the zero matrix, and therefore
 $$
@@ -155,7 +167,10 @@ $$
 the stated lower bound on $\abs{x}$ is exactly this divergent regime.
 :::
 
-<1>5. The series converges exactly for
+:::
+
+::: {.pf-step #exact-interval}
+The series converges exactly for
 $$
 \boxed{
 -\frac{\sqrt5-1}{2}
@@ -166,15 +181,18 @@ x
 }.
 $$
 
-::: {.proof}
-Step <1>3 proves convergence throughout the displayed interval, and step
-<1>4 proves divergence at every real point outside it, including both
+::: pf-proof
+Step [](#convergence-region){.pf-ref} proves convergence throughout the displayed interval, and step
+[](#divergence-region){.pf-ref} proves divergence at every real point outside it, including both
 endpoints.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives precisely the requested set of real numbers.
 :::
+
+::: pf-qed
+Step [](#exact-interval){.pf-ref} gives precisely the requested set of real numbers.
+:::
+
+:::
+
 :::

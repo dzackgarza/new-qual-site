@@ -34,8 +34,13 @@ converges.
 :::
 
 ::: {.solution}
-<1>1. Use the necessary condition for convergence of a series.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Use the necessary condition for convergence of a series.
+
+::: pf-proof
 Since $\sum a_n$ converges,
 \[
 a_n\longrightarrow0.
@@ -47,8 +52,12 @@ Hence there exists $N$ such that
 \]
 :::
 
-<1>2. Compare the tails.
-::: {.proof}
+:::
+
+::: pf-step
+Compare the tails.
+
+::: pf-proof
 For $n\ge N$,
 \[
 a_n^2\le a_n.
@@ -58,5 +67,9 @@ The comparison test therefore gives convergence of
 \sum_{n=N}^\infty a_n^2.
 \]
 Adding the finitely many terms with $n<N$ proves that $\sum_{n=1}^\infty a_n^2$ converges.
+:::
+
+:::
+
 :::
 :::

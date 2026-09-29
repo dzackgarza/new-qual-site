@@ -34,9 +34,13 @@ has at least one root in the disk $|z|\le2$.
 :::
 
 ::: {.solution}
-<1>1. If $a=0$, the equation has the root $z=-1$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #a-zero-case}
+If $a=0$, the equation has the root $z=-1$.
+
+::: pf-proof
 When $a=0$, the equation is
 $$
 1+z=0,
@@ -44,7 +48,10 @@ $$
 whose root $-1$ satisfies $\abs{-1}=1\le2$.
 :::
 
-<1>2. Suppose $a\ne0$ and set
+:::
+
+::: {.pf-step #q-equivalent-equation}
+Suppose $a\ne0$ and set
 $$
 b=\frac1a.
 $$
@@ -53,7 +60,7 @@ $$
 q(z)=z^n+bz+b=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Multiplying
 $$
 1+z+az^n=0
@@ -65,10 +72,13 @@ $$
 which is exactly $q(z)=0$.
 :::
 
-<1>3. If $\abs b\le2^n$, then $q$ has a root $z$ with
+:::
+
+::: {.pf-step #vieta-bound-case}
+If $\abs b\le2^n$, then $q$ has a root $z$ with
 $\abs z\le2$.
 
-::: {.proof}
+::: pf-proof
 Let $z_1,\ldots,z_n$ be the roots of the monic polynomial $q$,
 counted with multiplicity. Vieta's formula gives
 $$
@@ -86,9 +96,12 @@ contrary to the hypothesis. Hence at least one root lies in
 $\abs z\le2$.
 :::
 
-<1>4. If $\abs b>2^n$, then $q$ has a root in $\abs z<2$.
+:::
 
-::: {.proof}
+::: {.pf-step #rouche-case}
+If $\abs b>2^n$, then $q$ has a root in $\abs z<2$.
+
+::: pf-proof
 Write
 $$
 q(z)=g(z)+h(z),
@@ -121,19 +134,25 @@ function $g(z)=b(1+z)$ has exactly one zero there, namely $z=-1$.
 Therefore $q$ also has a zero in $\abs z<2$.
 :::
 
-<1>5. For every $a\in\CC$ and every integer $n\ge2$, the equation
+:::
+
+::: {.pf-step #root-exists-all-cases}
+For every $a\in\CC$ and every integer $n\ge2$, the equation
 has a root in $\abs z\le2$.
 
-::: {.proof}
-Step <1>1 handles $a=0$. If $a\ne0$, step <1>2 reduces the problem
+::: pf-proof
+Step [](#a-zero-case){.pf-ref} handles $a=0$. If $a\ne0$, step [](#q-equivalent-equation){.pf-ref} reduces the problem
 to $q(z)=0$. The alternatives $\abs b\le2^n$ and $\abs b>2^n$ are
-exhaustive, and steps <1>3 and <1>4 give the required root in the two
+exhaustive, and steps [](#vieta-bound-case){.pf-ref} and [](#rouche-case){.pf-ref} give the required root in the two
 cases.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the required conclusion.
 :::
+
+::: pf-qed
+Step [](#root-exists-all-cases){.pf-ref} proves the required conclusion.
+:::
+
+:::
+
 :::

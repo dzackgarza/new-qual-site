@@ -37,13 +37,16 @@ are linearly independent.
 :::
 
 ::: {.solution}
-<1>1. Any relation
+::: pf
+
+::: {.pf-step #trivial-relation-only}
+Any relation
 $$
 a_0x+a_1Tx+\cdots+a_{m-1}T^{m-1}x=0
 $$
 has all coefficients equal to zero.
 
-::: {.proof}
+::: pf-proof
 Suppose instead that some coefficient is nonzero, and let $r$ be the least
 index such that $a_r\ne0$. Apply $T^{m-1-r}$ to the displayed relation.
 All terms with index less than $r$ vanish because their coefficients are
@@ -63,19 +66,24 @@ Since $a_r\ne0$ and the scalars form a field, this implies
 $T^{m-1}x=0$, contrary to the hypothesis.
 :::
 
-<1>2. Therefore
+:::
+
+::: {.pf-step #vectors-are-independent}
+Therefore
 $$
 \boxed{x,Tx,\ldots,T^{m-1}x\text{ are linearly independent}.}
 $$
 
-::: {.proof}
-By step <1>1, the only linear relation among these vectors is the trivial
+::: pf-proof
+By step [](#trivial-relation-only){.pf-ref}, the only linear relation among these vectors is the trivial
 one.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 is the required conclusion.
+::: pf-qed
+Step [](#vectors-are-independent){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

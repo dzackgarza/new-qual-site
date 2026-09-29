@@ -37,19 +37,26 @@ as $K$-algebras.
 :::
 
 ::: {.solution}
-<1>1. The defining relations imply
+
+::: pf
+
+::: {.pf-step #ab-plus-ba-equals-one}
+The defining relations imply
 $$
 ab+ba=1.
 $$
 
-::: {.proof}
+::: pf-proof
 Expanding $(a+b)^2=1$ and using $a^2=b^2=0$ gives
 $$
 a^2+ab+ba+b^2=ab+ba=1.
 $$
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #matrix-unit-relations}
+Define
 $$
 e_{11}=ab,
 \qquad
@@ -68,8 +75,8 @@ $$
 e_{11}+e_{22}=1.
 $$
 
-::: {.proof}
-The last equality is step <1>1. For the diagonal products,
+::: pf-proof
+The last equality is step [](#ab-plus-ba-equals-one){.pf-ref}. For the diagonal products,
 $$
 \begin{aligned}
 e_{11}^2
@@ -111,7 +118,10 @@ The remaining products contain either $a^2$ or $b^2$ and are therefore
 zero. These are exactly the matrix-unit relations.
 :::
 
-<1>3. There is a surjective $K$-algebra homomorphism
+:::
+
+::: {.pf-step #Phi-surjective}
+There is a surjective $K$-algebra homomorphism
 $$
 \Phi:M_2(K)\longrightarrow R
 $$
@@ -120,8 +130,8 @@ $$
 \Phi(E_{ij})=e_{ij}.
 $$
 
-::: {.proof}
-By step <1>2, the four elements $e_{ij}$ satisfy the multiplication rules
+::: pf-proof
+By step [](#matrix-unit-relations){.pf-ref}, the four elements $e_{ij}$ satisfy the multiplication rules
 for the standard matrix units and $e_{11}+e_{22}=1$. Therefore the
 $K$-linear map determined by
 $$
@@ -139,9 +149,12 @@ Since $R$ is generated as a $K$-algebra by $a$ and $b$, the map is
 surjective.
 :::
 
-<1>4. Every nonzero two-sided ideal of $M_2(K)$ is all of $M_2(K)$.
+:::
 
-::: {.proof}
+::: {.pf-step #M2K-simple}
+Every nonzero two-sided ideal of $M_2(K)$ is all of $M_2(K)$.
+
+::: pf-proof
 Let $I\subseteq M_2(K)$ be a nonzero two-sided ideal and choose a nonzero
 matrix
 $$
@@ -160,10 +173,13 @@ I=M_2(K).
 $$
 :::
 
-<1>5. The homomorphism $\Phi$ in step <1>3 is injective.
+:::
 
-::: {.proof}
-Its kernel is a two-sided ideal of $M_2(K)$. By step <1>4, the kernel is
+::: {.pf-step #Phi-injective}
+The homomorphism $\Phi$ in step [](#Phi-surjective){.pf-ref} is injective.
+
+::: pf-proof
+Its kernel is a two-sided ideal of $M_2(K)$. By step [](#M2K-simple){.pf-ref}, the kernel is
 either $0$ or all of $M_2(K)$. But
 $$
 \Phi(I_2)=1_R,
@@ -175,22 +191,28 @@ $$
 $$
 :::
 
-<1>6. There is a $K$-algebra isomorphism
+:::
+
+::: {.pf-step #R-isomorphic-to-M2K}
+There is a $K$-algebra isomorphism
 $$
 \boxed{
 R\cong M_2(K).
 }
 $$
 
-::: {.proof}
-By step <1>3, $\Phi$ is surjective, and by step <1>5 it is injective.
+::: pf-proof
+By step [](#Phi-surjective){.pf-ref}, $\Phi$ is surjective, and by step [](#Phi-injective){.pf-ref} it is injective.
 Thus $\Phi:M_2(K)\to R$ is an isomorphism. Reversing its direction gives
 the displayed isomorphism.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#R-isomorphic-to-M2K){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

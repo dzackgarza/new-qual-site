@@ -53,7 +53,10 @@ $$
 U=D(x)\cup D(y).
 $$
 
-<1>1. A regular function $f\in\OO(U)$ is represented on the two principal
+::: pf
+
+::: {.pf-step #representation-on-principal-opens}
+A regular function $f\in\OO(U)$ is represented on the two principal
 opens by
 $$
 f|_{D(x)}=\frac{a}{x^m},
@@ -62,7 +65,7 @@ f|_{D(y)}=\frac{b}{y^n}
 $$
 for some $a,b\in R$ and $m,n\ge0$.
 
-::: {.proof}
+::: pf-proof
 The principal opens are affine:
 $$
 D(x)=\Spec R_x,
@@ -78,10 +81,13 @@ $$
 Every element of these localizations has the displayed form.
 :::
 
-<1>2. The two representatives in step <1>1 are restrictions of one
+:::
+
+::: {.pf-step #representatives-agree-on-overlap}
+The two representatives in step [](#representation-on-principal-opens){.pf-ref} are restrictions of one
 polynomial $c\in k[x,y]$.
 
-::: {.proof}
+::: pf-proof
 On the overlap
 $$
 D(xy)=D(x)\cap D(y)
@@ -121,11 +127,14 @@ Since $D(x)$ and $D(y)$ cover $U$, the function $f$ is the restriction of
 the polynomial $c$ to all of $U$.
 :::
 
-<1>3. Every regular function on $U$ extends uniquely to a regular
+:::
+
+::: {.pf-step #extension-exists-and-unique}
+Every regular function on $U$ extends uniquely to a regular
 function on $\AA^2$.
 
-::: {.proof}
-By step <1>2, a given $f\in\OO(U)$ is the restriction of some
+::: pf-proof
+By step [](#representatives-agree-on-overlap){.pf-ref}, a given $f\in\OO(U)$ is the restriction of some
 $$
 c\in k[x,y]=\OO(\AA^2),
 $$
@@ -136,11 +145,13 @@ nonempty open subset $U$ of the irreducible variety $\AA^2$. Hence their
 difference is the zero polynomial. The extension is therefore unique.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is exactly the required extension statement, based on the
-localization calculation in steps <1>1--<1>2.
+::: pf-qed
+Step [](#extension-exists-and-unique){.pf-ref} is exactly the required extension statement, based on the
+localization calculation in steps [](#representation-on-principal-opens){.pf-ref} and [](#representatives-agree-on-overlap){.pf-ref}.
+:::
+
 :::
 :::
 

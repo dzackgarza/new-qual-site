@@ -34,9 +34,13 @@ Hint: choose a vertex, partition the remaining vertices according to the color o
 :::
 
 ::: {.solution}
-<1>1. If $m=0$ or $n=0$, the assertion holds.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #boundary-case}
+If $m=0$ or $n=0$, the assertion holds.
+
+::: pf-proof
 If $m=0$, then a complete red subgraph on
 $$
 m+1=1
@@ -45,7 +49,10 @@ vertex is just any vertex. Similarly, if $n=0$, any vertex is a complete
 blue subgraph on $n+1=1$ vertex.
 :::
 
-<1>2. Suppose $m,n>0$ and set
+:::
+
+::: {.pf-step #partition-bound}
+Suppose $m,n>0$ and set
 $$
 N\coloneqq\binom{m+n}{m}.
 $$
@@ -63,7 +70,7 @@ $$
 \binom{m+n-1}{m}.
 $$
 
-::: {.proof}
+::: pf-proof
 The sets $R$ and $B$ partition the other $N-1$ vertices, so
 $$
 \abs{R}+\abs{B}=N-1.
@@ -95,7 +102,10 @@ $$
 contradicting $\abs{R}+\abs{B}=N-1$.
 :::
 
-<1>3. Assume inductively that the theorem holds for every pair of
+:::
+
+::: {.pf-step #red-branch}
+Assume inductively that the theorem holds for every pair of
 nonnegative integers whose sum is less than $m+n$. If
 $$
 \abs{R}
@@ -104,7 +114,7 @@ $$
 $$
 then the desired red or blue clique exists.
 
-::: {.proof}
+::: pf-proof
 Choose a subset
 $$
 R_0\subseteq R
@@ -126,7 +136,10 @@ every vertex of that red $m$-clique lies in $R$, so all its edges to $v$
 are red. Adding $v$ produces a complete red subgraph on $m+1$ vertices.
 :::
 
-<1>4. Under the same induction hypothesis, if
+:::
+
+::: {.pf-step #blue-branch}
+Under the same induction hypothesis, if
 $$
 \abs{B}
 \geq
@@ -134,7 +147,7 @@ $$
 $$
 then the desired red or blue clique exists.
 
-::: {.proof}
+::: pf-proof
 Choose
 $$
 B_0\subseteq B
@@ -157,19 +170,25 @@ lie in $B$. Adding $v$ produces a complete blue subgraph on $n+1$
 vertices.
 :::
 
-<1>5. The theorem holds for all nonnegative integers $m,n$.
+:::
 
-::: {.proof}
-Proceed by induction on $m+n$. Step <1>1 supplies the boundary cases. For
-$m,n>0$, step <1>2 guarantees that one of the hypotheses of step <1>3 or
-step <1>4 holds, and either step yields the required clique. This completes
+::: {.pf-step #induction-complete}
+The theorem holds for all nonnegative integers $m,n$.
+
+::: pf-proof
+Proceed by induction on $m+n$. Step [](#boundary-case){.pf-ref} supplies the boundary cases. For
+$m,n>0$, step [](#partition-bound){.pf-ref} guarantees that one of the hypotheses of step [](#red-branch){.pf-ref} or
+step [](#blue-branch){.pf-ref} holds, and either step yields the required clique. This completes
 the induction.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the asserted red $K_{m+1}$ or blue $K_{n+1}$ in every
+::: pf-qed
+Step [](#induction-complete){.pf-ref} gives the asserted red $K_{m+1}$ or blue $K_{n+1}$ in every
 two-coloring of the edges of the specified complete graph.
 :::
+
+:::
+
 :::

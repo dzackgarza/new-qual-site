@@ -40,92 +40,168 @@ If one attempts to generalize the proof of Lemma 37.1 to the countable intersect
 ::: {.solution}
 **(a).**
 
-<1>1. Let $\{X_\alpha\}$ be a family of Lindelöf spaces, and let $\mathcal{U}$ be an open cover of $X = \prod_\alpha X_\alpha$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Let $\{X_\alpha\}$ be a family of Lindelöf spaces, and let $\mathcal{U}$ be an open cover of $X = \prod_\alpha X_\alpha$.
+
+::: pf-proof
 setup.
 :::
 
-<1>2. Suppose $X$ is not Lindelöf, so $\mathcal{U}$ has no countable subcover.
-::: {.proof}
+:::
+
+::: {.pf-step #not-lindelof-assumption}
+Suppose $X$ is not Lindelöf, so $\mathcal{U}$ has no countable subcover.
+
+::: pf-proof
 assume for contradiction.
 :::
 
-<1>3. The collection $\mathcal{A} = \{X - U : U \in \mathcal{U}\}$ has the countable intersection property.
-::: {.proof}
-if $\bigcap_{i=1}^{\infty} (X - U_i) = \varnothing$, then $\{U_i\}$ would be a countable subcover, contradicting <1>2.
 :::
 
-<1>4. By (i), extend $\mathcal{A}$ to a maximal collection $\mathcal{D}$ with the countable intersection property.
-::: {.proof}
+::: pf-step
+The collection $\mathcal{A} = \{X - U : U \in \mathcal{U}\}$ has the countable intersection property.
+
+::: pf-proof
+if $\bigcap_{i=1}^{\infty} (X - U_i) = \varnothing$, then $\{U_i\}$ would be a countable subcover, contradicting step [](#not-lindelof-assumption){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+By (i), extend $\mathcal{A}$ to a maximal collection $\mathcal{D}$ with the countable intersection property.
+
+::: pf-proof
 (i).
 :::
 
-<1>5. By (ii), $\mathcal{D}$ is closed under countable intersections, and any set meeting every element of $\mathcal{D}$ is in $\mathcal{D}$.
-::: {.proof}
+:::
+
+::: pf-step
+By (ii), $\mathcal{D}$ is closed under countable intersections, and any set meeting every element of $\mathcal{D}$ is in $\mathcal{D}$.
+
+::: pf-proof
 (ii).
 :::
 
-<1>6. For each $\alpha$, the projections $\pi_\alpha(D)$ for $D \in \mathcal{D}$ have the countable intersection property in $X_\alpha$, so (by Lindelöfness of $X_\alpha$) there is a point $x_\alpha$ in the closure of every $\pi_\alpha(D)$.
-::: {.proof}
+:::
+
+::: {.pf-step #projections-cip}
+For each $\alpha$, the projections $\pi_\alpha(D)$ for $D \in \mathcal{D}$ have the countable intersection property in $X_\alpha$, so (by Lindelöfness of $X_\alpha$) there is a point $x_\alpha$ in the closure of every $\pi_\alpha(D)$.
+
+::: pf-proof
 Lindelöfness implies the countable intersection property of closed sets has nonempty intersection.
 :::
 
-<1>7. The point $x = (x_\alpha)$ lies in $\overline{D}$ for every $D \in \mathcal{D}$, so every neighborhood of $x$ meets every $D \in \mathcal{D}$.
-::: {.proof}
-<1>6.
 :::
 
-<1>8. By (ii), every neighborhood of $x$ is in $\mathcal{D}$, so $x \in \bigcap_{D \in \mathcal{D}} \overline{D}$, contradicting that $\mathcal{D}$ contains $X - U$ for each $U \in \mathcal{U}$ (so $\bigcap_{D \in \mathcal{D}} \overline{D} = \varnothing$ since $\mathcal{U}$ covers $X$).
-::: {.proof}
-<1>7 and the fact that $\mathcal{U}$ covers $X$.
+::: {.pf-step #x-in-closure-of-every-d}
+The point $x = (x_\alpha)$ lies in $\overline{D}$ for every $D \in \mathcal{D}$, so every neighborhood of $x$ meets every $D \in \mathcal{D}$.
+
+::: pf-proof
+Step [](#projections-cip){.pf-ref}.
 :::
 
-<1>9. Contradiction, so $X$ is Lindelöf.
-::: {.proof}
-<1>8.
+:::
+
+::: {.pf-step #contradiction-x-in-every-neighborhood}
+By (ii), every neighborhood of $x$ is in $\mathcal{D}$, so $x \in \bigcap_{D \in \mathcal{D}} \overline{D}$, contradicting that $\mathcal{D}$ contains $X - U$ for each $U \in \mathcal{U}$ (so $\bigcap_{D \in \mathcal{D}} \overline{D} = \varnothing$ since $\mathcal{U}$ covers $X$).
+
+::: pf-proof
+Step [](#x-in-closure-of-every-d){.pf-ref} and the fact that $\mathcal{U}$ covers $X$.
+:::
+
+:::
+
+::: {.pf-step #x-lindelof-conclusion}
+Contradiction, so $X$ is Lindelöf.
+
+::: pf-proof
+Step [](#contradiction-x-in-every-neighborhood){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(b).**
 
-<1>1. Let $\mathcal{D}$ be maximal with the countable intersection property.
-::: {.proof}
+::: pf
+
+::: pf-step
+Let $\mathcal{D}$ be maximal with the countable intersection property.
+
+::: pf-proof
 setup.
 :::
 
-<1>2. If $D_1, D_2, \ldots \in \mathcal{D}$, then $\bigcap_i D_i \in \mathcal{D}$.
-::: {.proof}
+:::
+
+::: {.pf-step #countable-intersections-in-d}
+If $D_1, D_2, \ldots \in \mathcal{D}$, then $\bigcap_i D_i \in \mathcal{D}$.
+
+::: pf-proof
 if $\bigcap_i D_i \notin \mathcal{D}$, then by maximality $\mathcal{D} \cup \{\bigcap_i D_i\}$ fails the countable intersection property, so there are $E_1, E_2, \ldots \in \mathcal{D}$ with $(\bigcap_i D_i) \cap \bigcap_j E_j = \varnothing$; but then $D_1, D_2, \ldots, E_1, E_2, \ldots$ is a countable subcollection of $\mathcal{D}$ with empty intersection, contradicting the countable intersection property of $\mathcal{D}$.
 :::
 
-<1>3. If $A$ meets every element of $\mathcal{D}$, then $A \in \mathcal{D}$.
-::: {.proof}
-if $A \notin \mathcal{D}$, then by maximality $\mathcal{D} \cup \{A\}$ fails the countable intersection property, so there are $D_1, D_2, \ldots \in \mathcal{D}$ with $A \cap \bigcap_i D_i = \varnothing$; but $\bigcap_i D_i \in \mathcal{D}$ by <1>2, contradicting that $A$ meets every element of $\mathcal{D}$.
 :::
 
-<1>4. Hence (ii) holds.
-::: {.proof}
-<1>2 and <1>3.
+::: {.pf-step #meets-every-element-in-d}
+If $A$ meets every element of $\mathcal{D}$, then $A \in \mathcal{D}$.
+
+::: pf-proof
+if $A \notin \mathcal{D}$, then by maximality $\mathcal{D} \cup \{A\}$ fails the countable intersection property, so there are $D_1, D_2, \ldots \in \mathcal{D}$ with $A \cap \bigcap_i D_i = \varnothing$; but $\bigcap_i D_i \in \mathcal{D}$ by step [](#countable-intersections-in-d){.pf-ref}, contradicting that $A$ meets every element of $\mathcal{D}$.
+:::
+
+:::
+
+::: {.pf-step #ii-holds}
+Hence (ii) holds.
+
+::: pf-proof
+Steps [](#countable-intersections-in-d){.pf-ref} and [](#meets-every-element-in-d){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(c).**
 
-<1>1. The proof of Lemma 37.1 (for the finite intersection property) uses Zorn's lemma to extend $\mathcal{A}$ to a maximal collection with the finite intersection property.
-::: {.proof}
+::: pf
+
+::: pf-step
+The proof of Lemma 37.1 (for the finite intersection property) uses Zorn's lemma to extend $\mathcal{A}$ to a maximal collection with the finite intersection property.
+
+::: pf-proof
 recall the structure of the proof.
 :::
 
-<1>2. The breakdown occurs in the Zorn's-lemma step: the union of a chain of collections with the finite intersection property again has the finite intersection property, but the union of a chain of collections with the *countable* intersection property need not have the countable intersection property.
-::: {.proof}
+:::
+
+::: {.pf-step #breakdown-in-zorn-step}
+The breakdown occurs in the Zorn's-lemma step: the union of a chain of collections with the finite intersection property again has the finite intersection property, but the union of a chain of collections with the *countable* intersection property need not have the countable intersection property.
+
+::: pf-proof
 a countable intersection of elements of the union may involve one element from each of countably many different collections in the chain, and there is no single collection in the chain containing all of them.
 :::
 
-<1>3. Hence Zorn's lemma cannot be applied to extend $\mathcal{A}$ to a maximal collection with the countable intersection property, so (i) fails.
-::: {.proof}
-<1>2.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>9 (a), <1>4 (b), <1>3 (c).
+::: {.pf-step #i-fails}
+Hence Zorn's lemma cannot be applied to extend $\mathcal{A}$ to a maximal collection with the countable intersection property, so (i) fails.
+
+::: pf-proof
+Step [](#breakdown-in-zorn-step){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#x-lindelof-conclusion){.pf-ref} (a), [](#ii-holds){.pf-ref} (b), [](#i-fails){.pf-ref} (c).
+:::
+
+:::
+
 :::

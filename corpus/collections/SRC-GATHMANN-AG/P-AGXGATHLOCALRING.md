@@ -59,7 +59,10 @@ $$
 $$
 be the maximal ideal corresponding to $a\in\AA^n$.
 
-<1>1. Since $a\in X$, one has
+::: pf
+
+::: {.pf-step #maximal-ideal-of-a-in-x}
+Since $a\in X$, one has
 $$
 I\subseteq\mfm,
 $$
@@ -68,7 +71,7 @@ $$
 \boxed{\overline{\mfm}=\mfm/I.}
 $$
 
-::: {.proof}
+::: pf-proof
 Every polynomial in $I(X)$ vanishes at every point of $X$, hence in
 particular at $a$. Therefore
 $$
@@ -92,7 +95,10 @@ This is exactly the maximal ideal of the point $a$ in the coordinate ring
 $A(X)$.
 :::
 
-<1>2. The two local rings are
+:::
+
+::: {.pf-step #local-rings-as-localizations}
+The two local rings are
 $$
 \OO_{\AA^n,a}=B_{\mfm}
 \qquad\text{and}\qquad
@@ -100,18 +106,21 @@ $$
 =(B/I)_{\mfm/I}.
 $$
 
-::: {.proof}
+::: pf-proof
 For an affine variety $Z$ with coordinate ring $A(Z)$, the local ring at a
 point is the localization of $A(Z)$ at the maximal ideal of that point
 ([[D-VARREG]]).
 
 For $\AA^n$ the coordinate ring is $B$, with maximal ideal $\mfm$ at $a$.
 For $X$ the coordinate ring is $A=B/I$, with maximal ideal
-$\overline{\mfm}=\mfm/I$ by step <1>1. Substituting these two coordinate
+$\overline{\mfm}=\mfm/I$ by step [](#maximal-ideal-of-a-in-x){.pf-ref}. Substituting these two coordinate
 rings gives the displayed formulas.
 :::
 
-<1>3. The quotient map
+:::
+
+::: {.pf-step #phi-well-defined-and-surjective}
+The quotient map
 $$
 B\longrightarrow B/I
 $$
@@ -123,7 +132,7 @@ $$
 \frac{f+I}{s+I}.
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 s\notin\mfm,
@@ -151,13 +160,16 @@ Thus the fraction is the image under $\Phi$ of $f/s\in B_{\mfm}$.
 Therefore $\Phi$ is surjective.
 :::
 
-<1>4. The kernel of $\Phi$ is
+:::
+
+::: {.pf-step #kernel-of-phi}
+The kernel of $\Phi$ is
 $$
 \boxed{\ker\Phi=IB_{\mfm}
 =I(X)\OO_{\AA^n,a}.}
 $$
 
-::: {.proof}
+::: pf-proof
 First, every element $h\in I$ maps to zero in $B/I$, so
 $$
 \frac h1\in\ker\Phi.
@@ -208,7 +220,10 @@ $$
 Combining the two inclusions proves the claim.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #isomorphism-of-local-rings}
+Therefore
 $$
 \boxed{
 \OO_{X,a}
@@ -218,8 +233,8 @@ I(X)\OO_{\AA^n,a}.
 }
 $$
 
-::: {.proof}
-By step <1>3, $\Phi$ is surjective, and by step <1>4 its kernel is
+::: pf-proof
+By step [](#phi-well-defined-and-surjective){.pf-ref}, $\Phi$ is surjective, and by step [](#kernel-of-phi){.pf-ref} its kernel is
 $$
 I(X)\OO_{\AA^n,a}.
 $$
@@ -229,7 +244,7 @@ B_{\mfm}/IB_{\mfm}
 \cong
 (B/I)_{\mfm/I}.
 $$
-Using the local-ring identifications from step <1>2 gives precisely
+Using the local-ring identifications from step [](#local-rings-as-localizations){.pf-ref} gives precisely
 $$
 \OO_{\AA^n,a}/I(X)\OO_{\AA^n,a}
 \cong
@@ -238,11 +253,13 @@ $$
 This is the canonical identification asserted in the problem.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 identify the two local rings as localizations of $B$ and
-$B/I$. Steps <1>3--<1>4 compute the induced localization map and its
-kernel. Step <1>5 applies the first isomorphism theorem.
+::: pf-qed
+Steps [](#maximal-ideal-of-a-in-x){.pf-ref} and [](#local-rings-as-localizations){.pf-ref} identify the two local rings as localizations of $B$ and
+$B/I$. Steps [](#phi-well-defined-and-surjective){.pf-ref} and [](#kernel-of-phi){.pf-ref} compute the induced localization map and its
+kernel. Step [](#isomorphism-of-local-rings){.pf-ref} applies the first isomorphism theorem.
+:::
+
 :::
 :::

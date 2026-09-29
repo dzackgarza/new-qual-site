@@ -44,7 +44,11 @@ Prove that for any $\lambda\in\operatorname{eig}(A)$, it holds that
 :::
 
 ::: {.solution}
-<1>1. If $A$ is Hermitian with eigenvalues
+
+::: pf
+
+::: {.pf-step #rayleigh-quotient-two-sided-bound}
+If $A$ is Hermitian with eigenvalues
 \[
 \lambda_n\le\cdots\le\lambda_1,
 \]
@@ -52,7 +56,8 @@ then for every nonzero $x$,
 \[
 \lambda_n\le \frac{x^HAx}{x^Hx}\le\lambda_1.
 \]
-::: {.proof}
+
+::: pf-proof
 By the spectral theorem there is an orthonormal eigenbasis $u_1,\ldots,u_n$ with
 \[
 Au_j=\lambda_j u_j.
@@ -76,19 +81,26 @@ Hence the Rayleigh quotient is
 a convex combination of the eigenvalues. It therefore lies between the smallest and largest eigenvalues.
 :::
 
-<1>2. The minimum of the Rayleigh quotient is
+:::
+
+::: {.pf-step #rayleigh-quotient-minimum}
+The minimum of the Rayleigh quotient is
 \[
 \boxed{\lambda_n=\min_{x\ne0}\frac{x^HAx}{x^Hx}}.
 \]
-::: {.proof}
-By <1>1 every Rayleigh quotient is at least $\lambda_n$. Taking $x=u_n$, an eigenvector for $\lambda_n$, gives
+
+::: pf-proof
+By step [](#rayleigh-quotient-two-sided-bound){.pf-ref} every Rayleigh quotient is at least $\lambda_n$. Taking $x=u_n$, an eigenvector for $\lambda_n$, gives
 \[
 \frac{u_n^HAu_n}{u_n^Hu_n}=\lambda_n.
 \]
 Thus the lower bound is attained and is the minimum.
 :::
 
-<1>3. Every matrix $A\in M_n$ has a decomposition
+:::
+
+::: {.pf-step #hermitian-splitting-exists}
+Every matrix $A\in M_n$ has a decomposition
 \[
 A=S+iT
 \]
@@ -97,7 +109,8 @@ with $S,T$ Hermitian, namely
 \boxed{S=\frac{A+A^H}{2},\qquad
 T=\frac{A-A^H}{2i}}.
 \]
-::: {.proof}
+
+::: pf-proof
 One has
 \[
 S^H=\frac{A^H+A}{2}=S.
@@ -117,8 +130,12 @@ S+iT
 \]
 :::
 
-<1>4. The decomposition in <1>3 is unique.
-::: {.proof}
+:::
+
+::: {.pf-step #hermitian-splitting-unique}
+The decomposition in step [](#hermitian-splitting-exists){.pf-ref} is unique.
+
+::: pf-proof
 Suppose
 \[
 A=S_1+iT_1=S_2+iT_2
@@ -138,7 +155,10 @@ so $S_1=S_2$. Subtracting them yields
 so $T_1=T_2$.
 :::
 
-<1>5. Let $Av=\lambda v$ with $v\ne0$. If $A=S+iT$ is the decomposition from <1>3, then
+:::
+
+::: {.pf-step #eigenvalue-real-imag-as-rayleigh-quotients}
+Let $Av=\lambda v$ with $v\ne0$. If $A=S+iT$ is the decomposition from step [](#hermitian-splitting-exists){.pf-ref}, then
 \[
 \operatorname{Re}\lambda
 =\frac{v^HSv}{v^Hv},
@@ -146,7 +166,8 @@ so $T_1=T_2$.
 \operatorname{Im}\lambda
 =\frac{v^HTv}{v^Hv}.
 \]
-::: {.proof}
+
+::: pf-proof
 From $Av=\lambda v$,
 \[
 \lambda
@@ -157,7 +178,10 @@ From $Av=\lambda v$,
 Because $S$ and $T$ are Hermitian, the two Rayleigh quotients on the right are real. Comparing real and imaginary parts gives the formulas.
 :::
 
-<1>6. Therefore every eigenvalue $\lambda$ of $A$ satisfies
+:::
+
+::: {.pf-step #eigenvalue-bounds-from-splitting}
+Therefore every eigenvalue $\lambda$ of $A$ satisfies
 \[
 \boxed{\lambda_n(S)\le\operatorname{Re}\lambda\le\lambda_1(S)}
 \]
@@ -165,7 +189,17 @@ and
 \[
 \boxed{\lambda_n(T)\le\operatorname{Im}\lambda\le\lambda_1(T)}.
 \]
-::: {.proof}
-Apply the two-sided Rayleigh quotient bound from <1>1 first to the Hermitian matrix $S$ and the vector $v$, then to $T$ and $v$. Substitute the identities from <1>5.
+
+::: pf-proof
+Apply the two-sided Rayleigh quotient bound from step [](#rayleigh-quotient-two-sided-bound){.pf-ref} first to the Hermitian matrix $S$ and the vector $v$, then to $T$ and $v$. Substitute the identities from step [](#eigenvalue-real-imag-as-rayleigh-quotients){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#rayleigh-quotient-minimum){.pf-ref} answers part (a); steps [](#hermitian-splitting-exists){.pf-ref} and [](#hermitian-splitting-unique){.pf-ref} answer part (b); step [](#eigenvalue-bounds-from-splitting){.pf-ref} answers part (c).
+:::
+
+:::
+
 :::

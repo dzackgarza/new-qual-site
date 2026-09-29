@@ -43,9 +43,13 @@ Prove that in a locally connected space the connected components of $X$ are open
 The source's phrase "the connected components of each point form a base of neighborhoods" does not specify a neighborhood base.
 We use the standard definition: $X$ is locally connected if every point has a neighborhood base consisting of connected open sets.
 
-<1>1. Let $C$ be a connected component of $X$ and let $x\in C$.
+::: pf
+
+::: {.pf-step #connected-nbhd-exists}
+Let $C$ be a connected component of $X$ and let $x\in C$.
 There is a connected open neighborhood $U_x$ of $x$.
-::: {.proof}
+
+::: pf-proof
 By local connectedness, the point $x$ has a neighborhood base of connected open sets.
 In particular, taking the neighborhood $X$ itself gives a connected open neighborhood
 \[
@@ -53,11 +57,15 @@ x\in U_x\subseteq X.
 \]
 :::
 
-<1>2. The neighborhood $U_x$ from <1>1 satisfies
+:::
+
+::: {.pf-step #nbhd-in-component}
+The neighborhood $U_x$ from step [](#connected-nbhd-exists){.pf-ref} satisfies
 \[
 U_x\subseteq C.
 \]
-::: {.proof}
+
+::: pf-proof
 Both $C$ and $U_x$ are connected, and they meet at $x$.
 The union of two connected subsets with nonempty intersection is connected, so
 \[
@@ -76,9 +84,13 @@ C\cup U_x=C.
 Hence $U_x\subseteq C$.
 :::
 
-<1>3. The component $C$ is open in $X$.
-::: {.proof}
-By <1>1--<1>2, for every $x\in C$ there is an open set $U_x$ satisfying
+:::
+
+::: {.pf-step #component-open}
+The component $C$ is open in $X$.
+
+::: pf-proof
+By steps [](#connected-nbhd-exists){.pf-ref} and [](#nbhd-in-component){.pf-ref}, for every $x\in C$ there is an open set $U_x$ satisfying
 \[
 x\in U_x\subseteq C.
 \]
@@ -89,8 +101,17 @@ C = \bigcup_{x \in C} U_x.
 An arbitrary union of open sets is open, so $C$ is open.
 :::
 
-<1>4. Hence every connected component of a locally connected space is open.
-::: {.proof}
-The component $C$ in <1>1 was arbitrary, and <1>3 proves it is open.
 :::
+
+::: pf-step
+Hence every connected component of a locally connected space is open.
+
+::: pf-proof
+The component $C$ in step [](#connected-nbhd-exists){.pf-ref} was arbitrary, and step [](#component-open){.pf-ref} proves it is open.
+:::
+
+:::
+
+:::
+
 :::

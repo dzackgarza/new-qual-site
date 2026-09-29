@@ -35,17 +35,26 @@ Show that $R$ has an ideal $I$ which is a maximal element of the collection of t
 :::
 
 ::: {.solution}
-<1>1. Zorn's Lemma states: if every chain in a nonempty partially ordered set has an upper bound in that partially ordered set, then the partially ordered set has a maximal element.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #zorns-lemma-statement}
+Zorn's Lemma states: if every chain in a nonempty partially ordered set has an upper bound in that partially ordered set, then the partially ordered set has a maximal element.
+
+::: pf-proof
 This is the statement of Zorn's Lemma used in the remaining parts.
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #p-nonempty}
+Let
 \[
 \mathcal P:=\{J\triangleleft R:J\cap X=\varnothing\},
 \]
 ordered by inclusion. Then $\mathcal P$ is nonempty.
-::: {.proof}
+
+::: pf-proof
 Since $0\notin X$, the zero ideal satisfies
 \[
 (0)\cap X=\varnothing.
@@ -56,8 +65,12 @@ Hence
 \]
 :::
 
-<1>3. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
-::: {.proof}
+:::
+
+::: {.pf-step #chains-have-upper-bounds}
+Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+
+::: pf-proof
 Let $\mathcal C\subseteq\mathcal P$ be a chain and set
 \[
 J:=\bigcup_{I\in\mathcal C}I.
@@ -79,9 +92,13 @@ J\cap X=\varnothing,
 so $J\in\mathcal P$. It contains every member of $\mathcal C$, hence is an upper bound.
 :::
 
-<1>4. There is an ideal $I$ maximal among the ideals disjoint from $X$.
-::: {.proof}
-By <1>2, $\mathcal P$ is nonempty, and by <1>3 every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+:::
+
+::: {.pf-step #part-b-maximal-ideal}
+There is an ideal $I$ maximal among the ideals disjoint from $X$.
+
+::: pf-proof
+By step [](#p-nonempty){.pf-ref}, $\mathcal P$ is nonempty, and by step [](#chains-have-upper-bounds){.pf-ref} every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
 Zorn's Lemma therefore gives a maximal element
 \[
 I\in\mathcal P.
@@ -94,8 +111,12 @@ and no strictly larger ideal has empty intersection with $X$.
 This proves part (b).
 :::
 
-<1>5. If $X\neq\varnothing$, then $I$ is a proper ideal.
-::: {.proof}
+:::
+
+::: {.pf-step #i-proper}
+If $X\neq\varnothing$, then $I$ is a proper ideal.
+
+::: pf-proof
 If $I=R$, then every element of the nonempty set $X$ would lie in $I$, so
 \[
 I\cap X=X\neq\varnothing,
@@ -107,8 +128,12 @@ I\neq R.
 \]
 :::
 
-<1>6. If $ab\in I$ and $a,b\notin I$, then one obtains an element of $I\cap X$.
-::: {.proof}
+:::
+
+::: {.pf-step #contradiction-if-neither-in-i}
+If $ab\in I$ and $a,b\notin I$, then one obtains an element of $I\cap X$.
+
+::: pf-proof
 Assume
 \[
 ab\in I,
@@ -148,14 +173,26 @@ xy\in I\cap X,
 a contradiction.
 :::
 
-<1>7. The ideal $I$ is prime.
-::: {.proof}
-By <1>5, $I$ is proper.
-If $ab\in I$, then <1>6 shows that it is impossible for both $a$ and $b$ to lie outside $I$.
+:::
+
+::: {.pf-step #part-c-i-prime}
+The ideal $I$ is prime.
+
+::: pf-proof
+By step [](#i-proper){.pf-ref}, $I$ is proper.
+If $ab\in I$, then step [](#contradiction-if-neither-in-i){.pf-ref} shows that it is impossible for both $a$ and $b$ to lie outside $I$.
 Hence
 \[
 a\in I\quad\text{or}\quad b\in I.
 \]
 Thus $I$ is prime, proving part (c).
+:::
+
+:::
+
+::: pf-qed
+Step [](#zorns-lemma-statement){.pf-ref} answers part (a); step [](#part-b-maximal-ideal){.pf-ref} answers part (b); and step [](#part-c-i-prime){.pf-ref} answers part (c).
+:::
+
 :::
 :::

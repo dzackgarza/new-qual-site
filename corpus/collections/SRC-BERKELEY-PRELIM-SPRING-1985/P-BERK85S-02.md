@@ -32,12 +32,15 @@ Show that $ab$ has order $rs$.
 :::
 
 ::: {.solution}
-<1>1. The element $ab$ satisfies
+::: pf
+
+::: {.pf-step #ab-power-rs-identity}
+The element $ab$ satisfies
 $$
 (ab)^{rs}=e.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $G$ is abelian,
 $$
 (ab)^{rs}
@@ -50,7 +53,10 @@ $$
 Thus $ab$ has finite order dividing $rs$.
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #r-divides-m}
+If
 $$
 (ab)^m=e
 $$
@@ -59,7 +65,7 @@ $$
 r\mid m.
 $$
 
-::: {.proof}
+::: pf-proof
 Commutativity gives
 $$
 a^mb^m=e,
@@ -81,12 +87,15 @@ Since $a$ has order $r$, this implies $r\mid ms$. Because
 $\gcd(r,s)=1$, Euclid's lemma gives $r\mid m$.
 :::
 
-<1>3. Under the same hypothesis,
+:::
+
+::: {.pf-step #s-divides-m}
+Under the same hypothesis,
 $$
 s\mid m.
 $$
 
-::: {.proof}
+::: pf-proof
 From $a^m=b^{-m}$, raise both sides to the $r$th power:
 $$
 (a^r)^m=b^{-mr}.
@@ -95,11 +104,14 @@ Hence $b^{mr}=e$. Since $b$ has order $s$, one has $s\mid mr$.
 The coprimality $\gcd(r,s)=1$ therefore gives $s\mid m$.
 :::
 
-<1>4. Every positive exponent $m$ satisfying $(ab)^m=e$ is divisible by
+:::
+
+::: {.pf-step #rs-divides-m}
+Every positive exponent $m$ satisfying $(ab)^m=e$ is divisible by
 $rs$.
 
-::: {.proof}
-Steps <1>2 and <1>3 give
+::: pf-proof
+Steps [](#r-divides-m){.pf-ref} and [](#s-divides-m){.pf-ref} give
 $$
 r\mid m
 \qquad\text{and}\qquad
@@ -111,20 +123,25 @@ rs\mid m.
 $$
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #order-boxed}
+Therefore
 $$
 \boxed{\operatorname{ord}(ab)=rs}.
 $$
 
-::: {.proof}
-Step <1>1 shows that the order of $ab$ divides $rs$. Step <1>4 shows
+::: pf-proof
+Step [](#ab-power-rs-identity){.pf-ref} shows that the order of $ab$ divides $rs$. Step [](#rs-divides-m){.pf-ref} shows
 that every positive exponent annihilating $ab$, in particular its order,
 is divisible by $rs$. The two divisibilities force equality.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-qed
+Step [](#order-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

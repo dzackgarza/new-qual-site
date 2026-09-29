@@ -36,8 +36,12 @@ H^1(X,\mathcal O_X^\times).
 }
 \]
 
-<1>1. A line bundle determines a Čech $1$-cocycle with values in $\mathcal O_X^\times$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #cocycle-from-bundle}
+A line bundle determines a Čech $1$-cocycle with values in $\mathcal O_X^\times$.
+
+::: pf-proof
 Let $\mathcal L$ be an invertible sheaf and choose an open cover
 \[
 X=\bigcup_iU_i
@@ -67,8 +71,12 @@ g_{ij}g_{jk}=g_{ik}.
 Thus $(g_{ij})$ is a Čech $1$-cocycle with values in $\mathcal O_X^\times$.
 :::
 
-<1>2. Changing the local trivializations changes the cocycle by a coboundary.
-::: {.proof}
+:::
+
+::: pf-step
+Changing the local trivializations changes the cocycle by a coboundary.
+
+::: pf-proof
 Replace
 \[
 e_i
@@ -93,8 +101,12 @@ This is exactly multiplication by the Čech coboundary of the $0$-cochain $(u_i)
 Hence the cohomology class of $(g_{ij})$ depends only on the isomorphism class of $\mathcal L$.
 :::
 
-<1>3. Conversely, a Čech $1$-cocycle with values in $\mathcal O_X^\times$ glues the trivial line bundles on the $U_i$ to a line bundle on $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #bundle-from-cocycle}
+Conversely, a Čech $1$-cocycle with values in $\mathcal O_X^\times$ glues the trivial line bundles on the $U_i$ to a line bundle on $X$.
+
+::: pf-proof
 Start with
 \[
 \mathcal O_{U_i}e_i
@@ -112,13 +124,17 @@ is exactly the compatibility condition for these identifications on triple overl
 Replacing $(g_{ij})$ by a coboundary-equivalent cocycle changes the local bases by units and gives an isomorphic line bundle.
 :::
 
-<1>4. The constructions in <1>1 and <1>3 are inverse and respect the group laws, giving
+:::
+
+::: {.pf-step #pic-h1-iso}
+The constructions in steps [](#cocycle-from-bundle){.pf-ref} and [](#bundle-from-cocycle){.pf-ref} are inverse and respect the group laws, giving
 \[
 \boxed{
 \operatorname{Pic}(X)\cong H^1(X,\mathcal O_X^\times).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Starting from a line bundle, extracting its transition functions and gluing them back recovers the original bundle.  Starting from a cocycle, gluing and then reading the transition functions recovers the same cohomology class.
 
 If $\mathcal L$ and $\mathcal M$ have transition functions $g_{ij}$ and $h_{ij}$, then
@@ -132,7 +148,10 @@ g_{ij}h_{ij}.
 Thus tensor product in $\operatorname{Pic}(X)$ corresponds to addition in the abelian cohomology group $H^1(X,\mathcal O_X^\times)$.
 :::
 
-<1>5. On a complex manifold, the exponential sequence refines the relation:
+:::
+
+::: {.pf-step #exponential-sequence}
+On a complex manifold, the exponential sequence refines the relation:
 \[
 0\longrightarrow2\pi i\,\mathbb Z
 \longrightarrow\mathcal O_X
@@ -147,17 +166,21 @@ H^1(X,\mathcal O_X)
 \xrightarrow{c_1}
 H^2(X,\mathbb Z).
 \]
-::: {.proof}
+
+::: pf-proof
 The exponential map is locally surjective because every nowhere-vanishing holomorphic function has a local holomorphic logarithm.  Its kernel consists of the locally constant functions with values in $2\pi i\mathbb Z$, giving the short exact sequence of sheaves.
 
-Taking sheaf cohomology and using <1>4 to identify
+Taking sheaf cohomology and using step [](#pic-h1-iso){.pf-ref} to identify
 \[
 H^1(X,\mathcal O_X^\times)=\operatorname{Pic}(X)
 \]
 gives the displayed part of the long exact sequence.  The connecting homomorphism is the first Chern class.
 :::
 
-<1>6. For a compact Riemann surface,
+:::
+
+::: {.pf-step #jacobian-identification}
+For a compact Riemann surface,
 \[
 \operatorname{Pic}^0(X)
 \cong
@@ -165,7 +188,8 @@ H^1(X,\mathcal O_X)
 /H^1(X,2\pi i\mathbb Z),
 \]
 which is its Jacobian.
-::: {.proof}
+
+::: pf-proof
 Because $X$ is compact and connected,
 \[
 H^0(X,\mathcal O_X)=\mathbb C,
@@ -180,15 +204,18 @@ H^1(X,\mathcal O_X)
 \]
 is injective.
 
-By exactness in <1>5, the kernel of
+By exactness in step [](#exponential-sequence){.pf-ref}, the kernel of
 \[
 c_1:\operatorname{Pic}(X)\to H^2(X,\mathbb Z)
 \]
 is the image of $H^1(X,\mathcal O_X)$, with kernel equal to the image of $H^1(X,2\pi i\mathbb Z)$.  The kernel of $c_1$ is precisely the degree-zero component $\operatorname{Pic}^0(X)$.  Therefore the quotient has the displayed form.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>4 identifies $\operatorname{Pic}(X)$ with $H^1(X,\mathcal O_X^\times)$; steps <1>5--<1>6 relate it to $H^1(X,\mathcal O_X)$ through the exponential sequence and identify $\operatorname{Pic}^0$ of a compact Riemann surface with its Jacobian.
+:::
+
+::: pf-qed
+Step [](#pic-h1-iso){.pf-ref} identifies $\operatorname{Pic}(X)$ with $H^1(X,\mathcal O_X^\times)$; steps [](#exponential-sequence){.pf-ref} and [](#jacobian-identification){.pf-ref} relate it to $H^1(X,\mathcal O_X)$ through the exponential sequence and identify $\operatorname{Pic}^0$ of a compact Riemann surface with its Jacobian.
+:::
+
 :::
 :::

@@ -32,12 +32,17 @@ Prove that $\mathbb R$ is not compact.
 :::
 
 ::: {.solution}
-<1>1. The family
+
+::: pf
+
+::: {.pf-step #cover-is-open}
+The family
 \[
 \mathcal U=\{(-n,n):n\in\mathbb N,\ n\ge1\}
 \]
 is an open cover of $\mathbb R$.
-::: {.proof}
+
+::: pf-proof
 Each interval $(-n,n)$ is Euclidean open.
 Given $x\in\mathbb R$, choose an integer $n>|x|$.
 Then
@@ -48,8 +53,12 @@ so $x\in(-n,n)$.
 Thus the union of the members of $\mathcal U$ is all of $\mathbb R$.
 :::
 
-<1>2. No finite subfamily of $\mathcal U$ covers $\mathbb R$.
-::: {.proof}
+:::
+
+::: {.pf-step #no-finite-subcover}
+No finite subfamily of $\mathcal U$ covers $\mathbb R$.
+
+::: pf-proof
 Take finitely many members
 \[
 (-n_1,n_1),\ldots,(-n_k,n_k).
@@ -66,9 +75,18 @@ The point $N+1$ does not belong to this union.
 Hence the chosen finite subfamily does not cover $\mathbb R$.
 :::
 
-<1>3. Therefore $\mathbb R$ is not compact.
-::: {.proof}
-Compactness requires every open cover to have a finite subcover.
-The open cover in <1>1 has no finite subcover by <1>2, so $\mathbb R$ fails the definition of compactness.
 :::
+
+::: pf-step
+Therefore $\mathbb R$ is not compact.
+
+::: pf-proof
+Compactness requires every open cover to have a finite subcover.
+The open cover in step [](#cover-is-open){.pf-ref} has no finite subcover by step [](#no-finite-subcover){.pf-ref}, so $\mathbb R$ fails the definition of compactness.
+:::
+
+:::
+
+:::
+
 :::

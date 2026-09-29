@@ -34,13 +34,21 @@ A field $K$ is \dfn{perfect} if every irreducible polynomial over $K$ is separab
 F:K\to K,\qquad x\mapsto x^p.
 \]
 
-<1>1. Every finite field is perfect.
-::: {.proof}
+::: pf
+
+::: pf-step
+Every finite field is perfect.
+
+::: pf-proof
 Let $K=\mathbb F_{p^m}$. Frobenius is injective because $x^p=0$ implies $x=0$. Since $K$ is finite, every injective self-map is surjective. Hence $K^p=K$, so $K$ is perfect.
 :::
 
-<1>2. The field $\mathbb F_p(t)$ is imperfect.
-::: {.proof}
+:::
+
+::: pf-step
+The field $\mathbb F_p(t)$ is imperfect.
+
+::: pf-proof
 Its $p$th powers form
 \[
 \mathbb F_p(t)^p=\mathbb F_p(t^p),
@@ -55,4 +63,9 @@ is irreducible over $\mathbb F_p(t)$ (for example by Eisenstein at $t$ in $\math
 \]
 so it is inseparable. Hence $\mathbb F_p(t)$ is not perfect.
 :::
+
+:::
+
+:::
+
 :::

@@ -59,7 +59,10 @@ Show that the matrix $\left\|Y_i . Y_j\right\|$ is negative definite.
 We use the standing hypotheses of the surfaces chapter, so $X$ and $X'$
 are nonsingular projective surfaces.
 
-<1>1. The birational morphism $f$ factors as a finite sequence of point
+::: pf
+
+::: {.pf-step #factorization-into-blowups}
+The birational morphism $f$ factors as a finite sequence of point
 blowups:
 $$
 X=X_n
@@ -81,19 +84,22 @@ $$
 E_j\cong\PP^1.
 $$
 
-::: {.proof}
+::: pf-proof
 This is the factorization theorem for birational morphisms of nonsingular
 projective surfaces [[T-SRFZMT]]. Each elementary factor is a monoidal
 transformation at a point.
 :::
 
-<1>2. Every irreducible curve $Y\subseteq X$ contracted by $f$ is the final
+:::
+
+::: {.pf-step #contracted-curve-is-p1}
+Every irreducible curve $Y\subseteq X$ contracted by $f$ is the final
 strict transform of one of the exceptional curves $E_j$. In particular,
 $$
 \boxed{Y\cong\PP^1.}
 $$
 
-::: {.proof}
+::: pf-proof
 For
 $$
 0\le i\le n,
@@ -138,13 +144,16 @@ Y=Y_n\cong\PP^1.
 $$
 :::
 
-<1>3. The numerical classes of all irreducible curves contracted by $f$ are
+:::
+
+::: {.pf-step #exceptional-classes-independent}
+The numerical classes of all irreducible curves contracted by $f$ are
 linearly independent in
 $$
 \operatorname{NS}(X)_\RR.
 $$
 
-::: {.proof}
+::: pf-proof
 At the $j$th blowup, the standard blowup decomposition gives
 $$
 \operatorname{NS}(X_j)_\RR
@@ -186,12 +195,15 @@ $$
 $$
 are linearly independent.
 
-By step <1>2, every irreducible curve contracted by $f$ is one of the
+By step [](#contracted-curve-is-p1){.pf-ref}, every irreducible curve contracted by $f$ is one of the
 $\overline E_j$. Any subset of these classes is therefore linearly
 independent.
 :::
 
-<1>4. Let $H$ be a very ample divisor on $X'$ and put
+:::
+
+::: {.pf-step #pullback-square-and-orthogonal}
+Let $H$ be a very ample divisor on $X'$ and put
 $$
 D=f^*H.
 $$
@@ -205,7 +217,7 @@ D\cdot C=0
 $$
 for every curve $C$ contracted by $f$.
 
-::: {.proof}
+::: pf-proof
 Because $f$ is birational of degree one, the projection formula for
 intersection products gives
 $$
@@ -232,7 +244,10 @@ exceptional curves is exactly why the retained source's statement
 "pullback of ample is ample" cannot be used.
 :::
 
-<1>5. The intersection form is negative definite on the orthogonal
+:::
+
+::: {.pf-step #hodge-index-negative-definite-complement}
+The intersection form is negative definite on the orthogonal
 complement
 $$
 D^\perp
@@ -240,7 +255,7 @@ D^\perp
 \operatorname{NS}(X)_\RR.
 $$
 
-::: {.proof}
+::: pf-proof
 The Hodge index theorem says that the intersection form on
 $$
 \operatorname{NS}(X)_\RR
@@ -251,7 +266,7 @@ $$
 $$
 [[T-SRFHODGE]].
 
-Step <1>4 gives $D^2>0$. In a real vector space with a symmetric form of
+Step [](#pullback-square-and-orthogonal){.pf-ref} gives $D^2>0$. In a real vector space with a symmetric form of
 signature $(1,\rho-1)$, the orthogonal complement of any positive-square
 vector is negative definite: the positive index is already exhausted by
 the line $\RR D$. Therefore every nonzero
@@ -264,13 +279,16 @@ $$
 $$
 :::
 
-<1>6. If $Y\subseteq X$ is an irreducible curve contracted by $f$, then
+:::
+
+::: {.pf-step #contracted-curve-negative-square}
+If $Y\subseteq X$ is an irreducible curve contracted by $f$, then
 $$
 \boxed{Y^2<0.}
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+By step [](#pullback-square-and-orthogonal){.pf-ref},
 $$
 D\cdot Y=0,
 $$
@@ -283,14 +301,17 @@ then
 $$
 A\cdot Y>0.
 $$
-Step <1>5 therefore gives
+Step [](#hodge-index-negative-definite-complement){.pf-ref} therefore gives
 $$
 Y^2<0.
 $$
-Together with step <1>2 this proves part (a).
+Together with step [](#contracted-curve-is-p1){.pf-ref} this proves part (a).
 :::
 
-<1>7. For the components
+:::
+
+::: {.pf-step #fibre-classes-negative-square}
+For the components
 $$
 Y_1,\ldots,Y_r
 $$
@@ -301,8 +322,8 @@ $$
 \left(\sum_{i=1}^r a_iY_i\right)^2<0.}
 $$
 
-::: {.proof}
-Each $Y_i$ is contracted by $f$, so step <1>4 gives
+::: pf-proof
+Each $Y_i$ is contracted by $f$, so step [](#pullback-square-and-orthogonal){.pf-ref} gives
 $$
 D\cdot Y_i=0.
 $$
@@ -312,25 +333,28 @@ Z=\sum_{i=1}^r a_iY_i
 $$
 lies in $D^\perp$.
 
-If the coefficient vector is nonzero, step <1>3 says that the numerical
+If the coefficient vector is nonzero, step [](#exceptional-classes-independent){.pf-ref} says that the numerical
 classes $[Y_i]$ are linearly independent. Thus
 $$
 [Z]\ne0
 $$
-in $\operatorname{NS}(X)_\RR$. Step <1>5 now gives
+in $\operatorname{NS}(X)_\RR$. Step [](#hodge-index-negative-definite-complement){.pf-ref} now gives
 $$
 Z^2<0.
 $$
 :::
 
-<1>8. The intersection matrix
+:::
+
+::: {.pf-step #intersection-matrix-negative-definite}
+The intersection matrix
 $$
 \boxed{
 \bigl(Y_i\cdot Y_j\bigr)_{1\le i,j\le r}
 \text{ is negative definite}.}
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 A=(Y_i\cdot Y_j)_{i,j}.
@@ -345,17 +369,19 @@ a^TAa
 =
 \left(\sum_{i=1}^r a_iY_i\right)^2.
 $$
-By step <1>7 this quantity is strictly negative for every nonzero $a$.
+By step [](#fibre-classes-negative-square){.pf-ref} this quantity is strictly negative for every nonzero $a$.
 This is exactly negative definiteness of $A$, proving part (b).
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 identify contracted irreducible curves as independent
-strict transforms of exceptional $\PP^1$'s. Steps <1>4--<1>6 combine the
+::: pf-qed
+Steps [](#factorization-into-blowups){.pf-ref}, [](#contracted-curve-is-p1){.pf-ref} and [](#exceptional-classes-independent){.pf-ref} identify contracted irreducible curves as independent
+strict transforms of exceptional $\PP^1$'s. Steps [](#pullback-square-and-orthogonal){.pf-ref}, [](#hodge-index-negative-definite-complement){.pf-ref} and [](#contracted-curve-negative-square){.pf-ref} combine the
 positive-square pullback of a very ample divisor with Hodge index to prove
-part (a). Steps <1>7--<1>8 apply the same negative-definite orthogonal
+part (a). Steps [](#fibre-classes-negative-square){.pf-ref} and [](#intersection-matrix-negative-definite){.pf-ref} apply the same negative-definite orthogonal
 complement to the whole exceptional fibre and prove part (b).
+:::
+
 :::
 :::

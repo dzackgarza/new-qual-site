@@ -32,14 +32,18 @@ For which pairs of monic polynomials \((p(x),m(x))\) over \(\mathbb C\) does the
 :::
 
 ::: {.solution}
-<1>1. If such a matrix $A\in M_n(\CC)$ exists, then
+
+::: pf
+
+::: {.pf-step #necessary-degree-and-divisibility}
+If such a matrix $A\in M_n(\CC)$ exists, then
 $$
 \deg p=n
 \qquad\text{and}\qquad
 m\mid p.
 $$
 
-::: {.proof}
+::: pf-proof
 The characteristic polynomial of an $n\times n$ matrix is monic of
 degree $n$, so $\deg p=n$.
 
@@ -61,9 +65,12 @@ By the defining minimality of $m$, no nonzero polynomial of degree
 less than $\deg m$ annihilates $A$. Hence $r=0$, so $m\mid p$.
 :::
 
-<1>2. If such a matrix exists, every root of $p$ is a root of $m$.
+:::
 
-::: {.proof}
+::: {.pf-step #root-of-p-is-root-of-m}
+If such a matrix exists, every root of $p$ is a root of $m$.
+
+::: pf-proof
 Let $\lambda$ be a root of $p$. Over $\CC$, this means that
 $\lambda$ is an eigenvalue of $A$. Choose a nonzero eigenvector $v$:
 $$
@@ -76,19 +83,25 @@ $$
 Because $v\ne0$, one has $m(\lambda)=0$.
 :::
 
-<1>3. Thus the necessary conditions are
+:::
+
+::: {.pf-step #necessary-conditions-combined}
+Thus the necessary conditions are
 $$
 \deg p=n,\qquad m\mid p,
 $$
 and $p,m$ have the same set of roots.
 
-::: {.proof}
-Steps <1>1 and <1>2 give the first two assertions and show that every
+::: pf-proof
+Steps [](#necessary-degree-and-divisibility){.pf-ref} and [](#root-of-p-is-root-of-m){.pf-ref} give the first two assertions and show that every
 root of $p$ is a root of $m$. Conversely, because $m\mid p$, every
 root of $m$ is a root of $p$. Hence their root sets are equal.
 :::
 
-<1>4. Assume the conditions in step <1>3. Write
+:::
+
+::: {.pf-step #factor-exponents}
+Assume the conditions in step [](#necessary-conditions-combined){.pf-ref}. Write
 $$
 p(x)=\prod_{j=1}^d(x-\lambda_j)^{n_j},
 $$
@@ -101,14 +114,17 @@ $$
 1\le r_j\le n_j.
 $$
 
-::: {.proof}
+::: pf-proof
 The common-root condition forces precisely the same distinct linear
 factors to occur in $p$ and $m$. Since $m\mid p$, the exponent of each
 factor in $m$ is at most its exponent in $p$. Each exponent in $m$ is
 positive because each $\lambda_j$ is a root of $m$.
 :::
 
-<1>5. For each $j$, let
+:::
+
+::: {.pf-step #A-char-poly-is-p}
+For each $j$, let
 $$
 A_j
 =
@@ -122,7 +138,7 @@ A=A_1\oplus\cdots\oplus A_d.
 $$
 Then the characteristic polynomial of $A$ is $p$.
 
-::: {.proof}
+::: pf-proof
 The block $J_{r_j}(\lambda_j)$ has characteristic polynomial
 $(x-\lambda_j)^{r_j}$, while
 $\lambda_j I_{n_j-r_j}$ has characteristic polynomial
@@ -145,10 +161,13 @@ $$
 so $A$ is indeed an $n\times n$ matrix.
 :::
 
-<1>6. The minimal polynomial of the matrix $A$ from step <1>5 is
+:::
+
+::: {.pf-step #A-min-poly-is-m}
+The minimal polynomial of the matrix $A$ from step [](#A-char-poly-is-p){.pf-ref} is
 $m$.
 
-::: {.proof}
+::: pf-proof
 For a Jordan block $J_{r_j}(\lambda_j)$, the minimal polynomial is
 $(x-\lambda_j)^{r_j}$. The scalar block
 $\lambda_j I_{n_j-r_j}$, when present, has minimal polynomial
@@ -172,7 +191,10 @@ m(x).
 $$
 :::
 
-<1>7. Therefore such a matrix exists exactly for the pairs satisfying
+:::
+
+::: {.pf-step #classification}
+Therefore such a matrix exists exactly for the pairs satisfying
 $$
 \boxed{
 \deg p=n,\qquad
@@ -181,15 +203,18 @@ m\mid p,\qquad
 }.
 $$
 
-::: {.proof}
-Necessity is step <1>3. Under those conditions, steps <1>4--<1>6
+::: pf-proof
+Necessity is step [](#necessary-conditions-combined){.pf-ref}. Under those conditions, steps [](#factor-exponents){.pf-ref}, [](#A-char-poly-is-p){.pf-ref} and [](#A-min-poly-is-m){.pf-ref}
 construct an $A\in M_n(\CC)$ with characteristic polynomial $p$ and
 minimal polynomial $m$, proving sufficiency.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 gives the complete classification.
 :::
+
+::: pf-qed
+Step [](#classification){.pf-ref} gives the complete classification.
+:::
+
+:::
+
 :::

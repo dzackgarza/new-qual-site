@@ -52,8 +52,13 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. Approximate by compactly supported truncations.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Approximate by compactly supported truncations.
+
+::: pf-proof
 Fix $\varepsilon>0$. Choose $R>0$ such that, for
 \[
 f_R=f\mathbf1_{[-R,R]},\qquad g_R=g\mathbf1_{[-R,R]},
@@ -70,8 +75,12 @@ If $n>2R$, then $f_R$ and $(g_R)_n(x):=g_R(x-n)$ have disjoint supports, so
 \]
 :::
 
-<1>2. Compare with the original functions.
-::: {.proof}
+:::
+
+::: pf-step
+Compare with the original functions.
+
+::: pf-proof
 Translation invariance gives
 \[
 \|g_n-(g_R)_n\|_1=\|g-g_R\|_1<\varepsilon.
@@ -95,4 +104,7 @@ Letting $\varepsilon\downarrow0$ proves
 \boxed{\lim_{n\to\infty}\|f+g(\cdot-n)\|_1=\|f\|_1+\|g\|_1.}
 \]
 :::
+
+:::
+
 :::

@@ -25,32 +25,44 @@ Show that if $H$ is also a subgroup of $G$, then both $H$ and $\overline{H}$ are
 ::: {.solution}
 Let $m\colon G\times G\to G$ and $i\colon G\to G$ be multiplication and inversion, which are continuous.
 
-<1>1. If $K\subseteq G$ is a subgroup, then $K$ with the subspace topology is a topological group.
+::: pf
 
-::: {.proof}
+::: {.pf-step #subgroup-is-topological-group}
+If $K\subseteq G$ is a subgroup, then $K$ with the subspace topology is a topological group.
+
+::: pf-proof
 By [[E-R3NOE]], the product topology on $K\times K$ is the subspace topology from $G\times G$.
 The maps $m|_{K\times K}$ and $i|_K$ are restrictions of continuous maps to subspaces, and they take values in the subspace $K$ because $K$ is a subgroup; a continuous map with image in a subspace is continuous into that subspace.
 :::
 
-<1>2. $\overline H$ is closed under inversion.
+:::
 
-::: {.proof}
+::: {.pf-step #closure-closed-under-inversion}
+$\overline H$ is closed under inversion.
+
+::: pf-proof
 $i$ is continuous and $i\circ i=\operatorname{id}_G$, so $i$ is a homeomorphism and $i(\overline H)=\overline{i(H)}=\overline H$.
 :::
 
-<1>3. $\overline H$ is closed under multiplication.
+:::
 
-::: {.proof}
+::: {.pf-step #closure-closed-under-multiplication}
+$\overline H$ is closed under multiplication.
+
+::: pf-proof
 Let $x,y\in\overline H$ and let $W$ be an open neighborhood of $xy$.
 By continuity of $m$ at $(x,y)$ there are open $U\ni x$ and $V\ni y$ with $UV\subseteq W$.
 Choose $h_1\in U\cap H$ and $h_2\in V\cap H$; then $h_1h_2\in W\cap H$.
 Hence every neighborhood of $xy$ meets $H$, and $xy\in\overline H$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 applies to $H$.
-The identity lies in $H\subseteq\overline H$, so by steps <1>2 and <1>3 $\overline H$ is a subgroup, and step <1>1 applies to $\overline H$.
 :::
+
+::: pf-qed
+Step [](#subgroup-is-topological-group){.pf-ref} applies to $H$.
+The identity lies in $H\subseteq\overline H$, so by steps [](#closure-closed-under-inversion){.pf-ref} and [](#closure-closed-under-multiplication){.pf-ref} $\overline H$ is a subgroup, and step [](#subgroup-is-topological-group){.pf-ref} applies to $\overline H$.
+:::
+
+:::
+
 :::

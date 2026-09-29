@@ -49,13 +49,16 @@ $$
 be a normal affine curve over $\CC$.
 Thus $A$ is a finitely generated integral $\CC$-algebra of dimension $1$ and is integrally closed in its fraction field.
 
-<1>1. For every point $p\in X$, the local ring
+::: pf
+
+::: {.pf-step #local-ring-normal-1dim}
+For every point $p\in X$, the local ring
 $$
 \mco_{X,p}=A_{\mathfrak m_p}
 $$
 is a one-dimensional Noetherian normal local domain.
 
-::: {.proof}
+::: pf-proof
 Because $A$ is finitely generated over a field, it is Noetherian.
 Localization preserves the Noetherian property and the domain property.
 
@@ -93,20 +96,26 @@ $$
 $$
 :::
 
-<1>2. Every local ring $\mco_{X,p}$ is a discrete valuation ring and hence regular.
+:::
 
-::: {.proof}
-By step <1>1, $\mco_{X,p}$ is a one-dimensional Noetherian normal local domain.
+::: {.pf-step #local-ring-dvr-regular}
+Every local ring $\mco_{X,p}$ is a discrete valuation ring and hence regular.
+
+::: pf-proof
+By step [](#local-ring-normal-1dim){.pf-ref}, $\mco_{X,p}$ is a one-dimensional Noetherian normal local domain.
 By the one-dimensional normality criterion [[D-QJ5M9]], such a ring is a discrete valuation ring.
 A DVR is a regular local ring of dimension $1$.
 :::
 
-<1>3. Every point $p\in X$ is smooth.
+:::
 
-::: {.proof}
+::: {.pf-step #every-point-smooth}
+Every point $p\in X$ is smooth.
+
+::: pf-proof
 The field $\CC$ is perfect.
 For a variety of finite type over a perfect field, a point is smooth exactly when its local ring is regular.
-Step <1>2 shows that
+Step [](#local-ring-dvr-regular){.pf-ref} shows that
 $$
 \mco_{X,p}
 $$
@@ -114,19 +123,25 @@ is regular for every $p\in X$.
 Hence every point is smooth.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #x-smooth}
+Therefore
 $$
 \boxed{X\text{ is smooth}.}
 $$
 
-::: {.proof}
+::: pf-proof
 A variety is smooth when it is smooth at every point.
-This is step <1>3.
+This is step [](#every-point-smooth){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove that normality of an affine curve over $\CC$ forces smoothness.
 :::
+
+::: pf-qed
+Steps [](#local-ring-normal-1dim){.pf-ref}, [](#local-ring-dvr-regular){.pf-ref}, [](#every-point-smooth){.pf-ref} and [](#x-smooth){.pf-ref} prove that normality of an affine curve over $\CC$ forces smoothness.
+:::
+
+:::
+
 :::

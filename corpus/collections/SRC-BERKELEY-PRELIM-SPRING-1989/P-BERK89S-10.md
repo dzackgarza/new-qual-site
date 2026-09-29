@@ -44,7 +44,10 @@ $$
 Y=\begin{pmatrix}D&-B\\-C&A\end{pmatrix}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #block-product-identity}
+One has
 $$
 XY=YX=
 \begin{pmatrix}
@@ -53,7 +56,7 @@ XY=YX=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
 Direct block multiplication gives
 $$
 XY=
@@ -78,14 +81,17 @@ DA-BC&DB-BD\\
 $$
 :::
 
-<1>2. If $\Delta$ is invertible, then $X$ is invertible.
+:::
 
-::: {.proof}
+::: {.pf-step #delta-invertible-implies-x}
+If $\Delta$ is invertible, then $X$ is invertible.
+
+::: pf-proof
 Let
 $$
 Z=\begin{pmatrix}\Delta^{-1}&0\\0&\Delta^{-1}\end{pmatrix}.
 $$
-By step <1>1,
+By step [](#block-product-identity){.pf-ref},
 $$
 X(YZ)=(XY)Z=I_{2n}.
 $$
@@ -93,9 +99,12 @@ Since $X$ is a square matrix, the existence of this right inverse implies
 that $X$ is invertible.
 :::
 
-<1>3. If $\Delta$ is singular, then $X$ is singular.
+:::
 
-::: {.proof}
+::: {.pf-step #delta-singular-implies-x}
+If $\Delta$ is singular, then $X$ is singular.
+
+::: pf-proof
 Choose $0\neq v\in\RR^n$ with $\Delta v=0$. Consider first
 $$
 u_1=\binom{Dv}{-Cv}.
@@ -132,17 +141,22 @@ $$
 Thus $X$ is singular in every case.
 :::
 
-<1>4. The matrix $X$ is invertible if and only if $AD-BC$ is invertible.
+:::
 
-::: {.proof}
-Step <1>2 proves that invertibility of $AD-BC=\Delta$ implies invertibility
-of $X$. The contrapositive of step <1>3 proves that invertibility of $X$
+::: {.pf-step #equivalence}
+The matrix $X$ is invertible if and only if $AD-BC$ is invertible.
+
+::: pf-proof
+Step [](#delta-invertible-implies-x){.pf-ref} proves that invertibility of $AD-BC=\Delta$ implies invertibility
+of $X$. The contrapositive of step [](#delta-singular-implies-x){.pf-ref} proves that invertibility of $X$
 implies invertibility of $\Delta$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required equivalence.
+::: pf-qed
+Step [](#equivalence){.pf-ref} is the required equivalence.
+:::
+
 :::
 :::

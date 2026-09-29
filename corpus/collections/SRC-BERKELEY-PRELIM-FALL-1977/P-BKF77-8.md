@@ -32,8 +32,13 @@ subject to $x(0)=1$ and $x'(0)=0$.
 :::
 
 ::: {.solution}
-<1>1. The solutions of $x''-2x'+x=0$ are $x_h(t)=(C_1+C_2t)e^t$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The solutions of $x''-2x'+x=0$ are $x_h(t)=(C_1+C_2t)e^t$.
+
+::: pf-proof
 The characteristic polynomial of
 $$
 x''-2x'+x=0
@@ -48,8 +53,12 @@ x_h(t)=(C_1+C_2t)e^t.
 $$
 :::
 
-<1>2. $x_p(t)=\frac12\cos t$ is a particular solution.
-::: {.proof}
+:::
+
+::: pf-step
+$x_p(t)=\frac12\cos t$ is a particular solution.
+
+::: pf-proof
 Try
 $$
 x_p(t)=a\sin t+b\cos t.
@@ -79,8 +88,12 @@ x_p(t)=\frac12\cos t.
 $$
 :::
 
-<1>3. The unique solution with $x(0)=1$, $x'(0)=0$ is $x(t)=\frac{(1-t)e^t+\cos t}{2}$.
-::: {.proof}
+:::
+
+::: pf-step
+The unique solution with $x(0)=1$, $x'(0)=0$ is $x(t)=\frac{(1-t)e^t+\cos t}{2}$.
+
+::: pf-proof
 The general solution is
 $$
 x(t)=(C_1+C_2t)e^t+\frac12\cos t.
@@ -111,5 +124,9 @@ $$
 \boxed{
 x(t)=\frac{(1-t)e^t+\cos t}{2}.}
 $$
+:::
+
+:::
+
 :::
 :::

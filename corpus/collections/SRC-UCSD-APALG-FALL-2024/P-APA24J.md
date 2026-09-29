@@ -24,6 +24,7 @@ Find an explicit generating set of the invariant ring $\mathbb{C}[x_1, x_2, x_3]
 :::
 
 ::: {.solution}
+
 Let
 \[
 s=\begin{pmatrix}0&1&0\\1&0&0\\0&0&1\end{pmatrix},
@@ -32,12 +33,16 @@ t=\begin{pmatrix}1&0&0\\0&1&0\\0&0&-1\end{pmatrix}.
 \]
 Then \(s\) swaps \(x_1,x_2\), while \(t\) fixes \(x_1,x_2\) and sends \(x_3\mapsto-x_3\). The two matrices commute, so \(G\cong C_2\times C_2\).
 
-<1>1. The \(t\)-invariant subring is
+::: pf
+
+::: {.pf-step #t-invariant-subring}
+The \(t\)-invariant subring is
 \[
 \mathbb C[x_1,x_2,x_3]^{\langle t\rangle}
 =\mathbb C[x_1,x_2,x_3^2].
 \]
-::: {.proof}
+
+::: pf-proof
 Write a polynomial uniquely as
 \[
 f=\sum_{k\ge0} f_k(x_1,x_2)x_3^k.
@@ -51,13 +56,17 @@ The condition \(t\cdot f=f\) is
 Hence \(f_k=0\) for every odd \(k\). Therefore exactly the even powers of \(x_3\) occur, so the invariant ring is \(\mathbb C[x_1,x_2,x_3^2]\).
 :::
 
-<1>2. Taking \(s\)-invariants next gives
+:::
+
+::: {.pf-step #s-invariant-of-t-invariant}
+Taking \(s\)-invariants next gives
 \[
 \mathbb C[x_1,x_2,x_3^2]^{\langle s\rangle}
 =
 \mathbb C[x_1+x_2,x_1x_2,x_3^2].
 \]
-::: {.proof}
+
+::: pf-proof
 The element \(x_3^2\) is fixed by \(s\), and \(s\) acts on \(\mathbb C[x_1,x_2]\) by interchanging the two variables. By the fundamental theorem of symmetric polynomials in two variables,
 \[
 \mathbb C[x_1,x_2]^{S_2}
@@ -66,7 +75,10 @@ The element \(x_3^2\) is fixed by \(s\), and \(s\) acts on \(\mathbb C[x_1,x_2]\
 Since \(x_3^2\) is an independent fixed variable, adjoining it gives the displayed invariant ring.
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{
 \mathbb C[x_1,x_2,x_3]^G
@@ -74,7 +86,13 @@ Since \(x_3^2\) is an independent fixed variable, adjoining it gives the display
 \mathbb C[x_1+x_2,\ x_1x_2,\ x_3^2]
 }.
 \]
-::: {.proof}
-Because \(s\) and \(t\) commute and generate \(G\), a polynomial is \(G\)-invariant exactly when it is invariant under both generators. Apply <1>1 and then <1>2. The three displayed generators are themselves fixed by both \(s\) and \(t\), so the containment in the reverse direction is immediate.
+
+::: pf-proof
+Because \(s\) and \(t\) commute and generate \(G\), a polynomial is \(G\)-invariant exactly when it is invariant under both generators. Apply step [](#t-invariant-subring){.pf-ref} and then step [](#s-invariant-of-t-invariant){.pf-ref}. The three displayed generators are themselves fixed by both \(s\) and \(t\), so the containment in the reverse direction is immediate.
 :::
+
+:::
+
+:::
+
 :::

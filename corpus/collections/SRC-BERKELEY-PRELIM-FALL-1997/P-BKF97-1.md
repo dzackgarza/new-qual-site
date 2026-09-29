@@ -34,14 +34,18 @@ Show that $(x_n)$ converges, and evaluate its limit.
 :::
 
 ::: {.solution}
+
 Define
 $$
 \phi(x)\coloneqq\frac1{2+x}.
 $$
 
-<1>1. Every term of the sequence is positive.
+::: pf
 
-::: {.proof}
+::: {.pf-step #terms-positive}
+Every term of the sequence is positive.
+
+::: pf-proof
 One has
 $$
 x_0=1>0.
@@ -56,14 +60,17 @@ $$
 Induction proves the claim.
 :::
 
-<1>2. For all $x,y\geq0$,
+:::
+
+::: {.pf-step #phi-lipschitz}
+For all $x,y\geq0$,
 $$
 \abs{\phi(x)-\phi(y)}
 \leq
 \frac14\abs{x-y}.
 $$
 
-::: {.proof}
+::: pf-proof
 The derivative is
 $$
 \phi'(t)
@@ -79,7 +86,10 @@ $$
 The mean value theorem gives the displayed Lipschitz estimate.
 :::
 
-<1>3. For every $n\geq1$,
+:::
+
+::: {.pf-step #consecutive-difference-bound}
+For every $n\geq1$,
 $$
 \abs{x_{n+1}-x_n}
 \leq
@@ -87,12 +97,12 @@ $$
 \abs{x_1-x_0}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 x_{n+1}=\phi(x_n)
 $$
-and all terms are nonnegative by step <1>1, step <1>2 gives
+and all terms are nonnegative by step [](#terms-positive){.pf-ref}, step [](#phi-lipschitz){.pf-ref} gives
 $$
 \abs{x_{n+1}-x_n}
 \leq
@@ -101,9 +111,12 @@ $$
 Iterating this inequality yields the claimed bound.
 :::
 
-<1>4. The sequence $(x_n)$ is Cauchy.
+:::
 
-::: {.proof}
+::: {.pf-step #sequence-cauchy}
+The sequence $(x_n)$ is Cauchy.
+
+::: pf-proof
 If $m>n$, then
 $$
 \begin{aligned}
@@ -120,17 +133,20 @@ The geometric tail tends to zero as $n\to\infty$, uniformly in $m>n$.
 Thus $(x_n)$ is Cauchy.
 :::
 
-<1>5. The sequence converges to a nonnegative real number $L$ satisfying
+:::
+
+::: {.pf-step #limit-fixed-point}
+The sequence converges to a nonnegative real number $L$ satisfying
 $$
 L=\frac1{2+L}.
 $$
 
-::: {.proof}
-The real numbers are complete, so step <1>4 gives
+::: pf-proof
+The real numbers are complete, so step [](#sequence-cauchy){.pf-ref} gives
 $$
 x_n\longrightarrow L
 $$
-for some $L\in\RR$. Step <1>1 gives $L\geq0$. Passing to the limit in
+for some $L\in\RR$. Step [](#terms-positive){.pf-ref} gives $L\geq0$. Passing to the limit in
 $$
 x_{n+1}=\frac1{2+x_n}
 $$
@@ -138,13 +154,16 @@ is valid by continuity of $\phi$ and gives the displayed fixed-point
 equation.
 :::
 
-<1>6. The limit is
+:::
+
+::: {.pf-step #limit-value}
+The limit is
 $$
 \boxed{\sqrt2-1}.
 $$
 
-::: {.proof}
-The fixed-point equation from step <1>5 is equivalent to
+::: pf-proof
+The fixed-point equation from step [](#limit-fixed-point){.pf-ref} is equivalent to
 $$
 L^2+2L-1=0.
 $$
@@ -156,12 +175,15 @@ Only
 $$
 \sqrt2-1
 $$
-is nonnegative, so step <1>5 forces this value.
+is nonnegative, so step [](#limit-fixed-point){.pf-ref} forces this value.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>4--<1>6 prove convergence and evaluate the limit.
 :::
+
+::: pf-qed
+Steps [](#sequence-cauchy){.pf-ref}, [](#limit-fixed-point){.pf-ref} and [](#limit-value){.pf-ref} prove convergence and evaluate the limit.
+:::
+
+:::
+
 :::

@@ -39,7 +39,11 @@ and
 :::
 
 ::: {.solution}
-<1>1. The characteristic equation is
+
+::: pf
+
+::: {.pf-step #characteristic-roots}
+The characteristic equation is
 $$
 r^4+1=0,
 $$
@@ -54,7 +58,7 @@ e^{5i\pi/4},
 e^{7i\pi/4}.
 $$
 
-::: {.proof}
+::: pf-proof
 The equation $r^4=-1$ has the four solutions
 $$
 r
@@ -67,14 +71,17 @@ k=0,1,2,3.
 $$
 :::
 
-<1>2. The roots with negative real part are
+:::
+
+::: {.pf-step #roots-with-negative-real-part}
+The roots with negative real part are
 $$
 \frac{-1+i}{\sqrt2}
 \qquad\text{and}\qquad
 \frac{-1-i}{\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
 These are
 $$
 e^{3i\pi/4}
@@ -85,7 +92,10 @@ Their real part is $-1/\sqrt2$, while the other two roots have positive
 real part.
 :::
 
-<1>3. Every real solution whose value and first derivative tend to zero as
+:::
+
+::: {.pf-step #decaying-solution-form}
+Every real solution whose value and first derivative tend to zero as
 $x\to\infty$ has the form
 $$
 y(x)
@@ -98,8 +108,8 @@ A\cos\frac{x}{\sqrt2}
 $$
 for real constants $A,B$.
 
-::: {.proof}
-The two roots from step <1>2 give the real basis
+::: pf-proof
+The two roots from step [](#roots-with-negative-real-part){.pf-ref} give the real basis
 $$
 e^{-x/\sqrt2}\cos\frac{x}{\sqrt2},
 \qquad
@@ -112,7 +122,10 @@ two decay conditions. Thus precisely the displayed two-dimensional real
 space consists of decaying solutions.
 :::
 
-<1>4. The condition
+:::
+
+::: {.pf-step #A-zero}
+The condition
 $$
 y(0)=0
 $$
@@ -121,18 +134,21 @@ $$
 A=0.
 $$
 
-::: {.proof}
-Substitution of $x=0$ in step <1>3 gives $y(0)=A$.
+::: pf-proof
+Substitution of $x=0$ in step [](#decaying-solution-form){.pf-ref} gives $y(0)=A$.
 :::
 
-<1>5. With $A=0$,
+:::
+
+::: {.pf-step #y-prime-zero-formula}
+With $A=0$,
 $$
 y'(0)
 =
 \frac{B}{\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 a=\frac1{\sqrt2}.
@@ -153,7 +169,10 @@ $$
 At $x=0$ this gives $y'(0)=Ba=B/\sqrt2$.
 :::
 
-<1>6. The condition
+:::
+
+::: {.pf-step #B-value}
+The condition
 $$
 y'(0)=1
 $$
@@ -162,11 +181,14 @@ $$
 B=\sqrt2.
 $$
 
-::: {.proof}
-Apply step <1>5.
+::: pf-proof
+Apply step [](#y-prime-zero-formula){.pf-ref}.
 :::
 
-<1>7. The required function is
+:::
+
+::: {.pf-step #explicit-solution}
+The required function is
 $$
 \boxed{
 y(x)
@@ -176,16 +198,19 @@ y(x)
 }.
 $$
 
-::: {.proof}
-Steps <1>3--<1>6 determine this solution. It solves the differential
+::: pf-proof
+Steps [](#decaying-solution-form){.pf-ref}, [](#A-zero){.pf-ref}, [](#y-prime-zero-formula){.pf-ref} and [](#B-value){.pf-ref} determine this solution. It solves the differential
 equation because it is built from characteristic roots of $r^4+1$, and its
 value and first derivative tend to zero because they are bounded
 trigonometric factors times $e^{-x/\sqrt2}$.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 verifies all requested conditions.
 :::
+
+::: pf-qed
+Step [](#explicit-solution){.pf-ref} verifies all requested conditions.
+:::
+
+:::
+
 :::

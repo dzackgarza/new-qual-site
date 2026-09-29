@@ -40,14 +40,17 @@ $$
 F(z)\coloneqq\frac{\cot z}{z^2}.
 $$
 
-<1>1. For every nonzero integer $n$,
+::: pf
+
+::: {.pf-step #residue-nonzero-n}
+For every nonzero integer $n$,
 $$
 \operatorname{Res}_{z=n\pi}F(z)
 =
 \frac{1}{n^2\pi^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 At $z=n\pi$, the function $\sin z$ has a simple zero and
 $$
 (\sin z)'\big|_{z=n\pi}
@@ -64,14 +67,17 @@ Since $z^{-2}$ is holomorphic at $n\pi\neq0$, multiplication gives the
 stated residue.
 :::
 
-<1>2. At the origin,
+:::
+
+::: {.pf-step #residue-origin}
+At the origin,
 $$
 \operatorname{Res}_{z=0}F(z)
 =
 -\frac13.
 $$
 
-::: {.proof}
+::: pf-proof
 The Taylor expansions at $0$ give
 $$
 \sin z
@@ -109,7 +115,10 @@ $$
 whose residue is $-1/3$.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #cotangent-bound}
+Let
 $$
 R_N\coloneqq\left(N+\frac12\right)\pi
 $$
@@ -123,7 +132,7 @@ $$
 $$
 for every $z\in\Gamma_N$.
 
-::: {.proof}
+::: pf-proof
 On a vertical side,
 $$
 z=\left(N+\frac12\right)\pi+iy
@@ -167,7 +176,10 @@ C\coloneqq\coth(\pi/2).
 $$
 :::
 
-<1>4. The contour integrals satisfy
+:::
+
+::: {.pf-step #contour-vanishes}
+The contour integrals satisfy
 $$
 \lim_{N\to\infty}
 \int_{\Gamma_N}F(z)\,dz
@@ -175,12 +187,12 @@ $$
 0.
 $$
 
-::: {.proof}
+::: pf-proof
 Every point of $\Gamma_N$ satisfies
 $$
 \abs{z}\geq R_N,
 $$
-and the perimeter of $\Gamma_N$ is $8R_N$. By step <1>3,
+and the perimeter of $\Gamma_N$ is $8R_N$. By step [](#cotangent-bound){.pf-ref},
 $$
 \abs{F(z)}
 \leq
@@ -199,7 +211,10 @@ $$
 $$
 :::
 
-<1>5. For every $N\geq1$,
+:::
+
+::: {.pf-step #partial-sum-identity}
+For every $N\geq1$,
 $$
 \frac{1}{2\pi i}
 \int_{\Gamma_N}F(z)\,dz
@@ -210,14 +225,14 @@ $$
 \sum_{n=1}^N\frac1{n^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The poles inside $\Gamma_N$ are exactly
 $$
 n\pi,
 \qquad
 -N\leq n\leq N.
 $$
-The residue theorem, together with steps <1>1 and <1>2, gives
+The residue theorem, together with steps [](#residue-nonzero-n){.pf-ref} and [](#residue-origin){.pf-ref}, gives
 $$
 \begin{aligned}
 \frac{1}{2\pi i}
@@ -240,7 +255,10 @@ $$
 $$
 :::
 
-<1>6. The Basel sum is
+:::
+
+::: {.pf-step #basel-sum}
+The Basel sum is
 $$
 \boxed{
 \sum_{n=1}^{\infty}\frac1{n^2}
@@ -249,8 +267,8 @@ $$
 }.
 $$
 
-::: {.proof}
-Let $N\to\infty$ in step <1>5. By step <1>4, the left-hand side tends
+::: pf-proof
+Let $N\to\infty$ in step [](#partial-sum-identity){.pf-ref}. By step [](#contour-vanishes){.pf-ref}, the left-hand side tends
 to $0$. Hence
 $$
 0
@@ -263,10 +281,13 @@ $$
 which rearranges to the displayed value.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 give all residues of $F$, and step <1>6 gives the
+::: pf-qed
+Steps [](#residue-nonzero-n){.pf-ref} and [](#residue-origin){.pf-ref} give all residues of $F$, and step [](#basel-sum){.pf-ref} gives the
 requested series evaluation.
 :::
+
+:::
+
 :::

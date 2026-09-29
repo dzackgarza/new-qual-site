@@ -22,25 +22,41 @@ Compute the fundamental group of the space $X_k$ resulting from attaching a $2$-
 :::
 
 ::: {.solution}
-<1>1. The space $X_k$ has one $0$-cell, one $1$-cell $a$, and one $2$-cell attached by the loop $a^k$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The space $X_k$ has one $0$-cell, one $1$-cell $a$, and one $2$-cell attached by the loop $a^k$.
+
+::: pf-proof
 The attaching map $z\mapsto z^k$ has degree $k$ on the circle.
 :::
 
-<1>2. Van Kampen gives
+:::
+
+::: pf-step
+Van Kampen gives
 $$
 \boxed{\pi_1(X_k)\cong\langle a\mid a^k=1\rangle\cong\mathbb Z/k.}
 $$
-::: {.proof}
+
+::: pf-proof
 The $2$-cell imposes precisely the relation that the generator of the circle has order dividing $k$.
 :::
 
-<1>3. Path-connected covering spaces of $X_{30}$ up to equivalence correspond to conjugacy classes of subgroups of $\mathbb Z/30$.
-::: {.proof}
+:::
+
+::: {.pf-step #coverings-correspond-to-subgroups-z30}
+Path-connected covering spaces of $X_{30}$ up to equivalence correspond to conjugacy classes of subgroups of $\mathbb Z/30$.
+
+::: pf-proof
 The CW complex is connected, locally path-connected, and semilocally simply connected, so the standard covering classification applies. The group is abelian, so conjugacy does nothing.
 :::
 
-<1>4. A cyclic group has exactly one subgroup for each divisor of its order. Since
+:::
+
+::: {.pf-step #eight-divisors}
+A cyclic group has exactly one subgroup for each divisor of its order. Since
 $$
 30=2\cdot3\cdot5,
 $$
@@ -49,15 +65,25 @@ $$
 (1+1)^3=8
 $$
 positive divisors.
-::: {.proof}
+
+::: pf-proof
 Subgroups of $\mathbb Z/n$ are uniquely determined by their order, and subgroup orders are exactly the divisors of $n$.
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{X_{30}\text{ has }8\text{ path-connected covering spaces up to equivalence}.}
 $$
-::: {.proof}
-Combine <1>3 and <1>4, including the identity and universal covers.
+
+::: pf-proof
+Combine step [](#coverings-correspond-to-subgroups-z30){.pf-ref} and step [](#eight-divisors){.pf-ref}, including the identity and universal covers.
 :::
+
+:::
+
+:::
+
 :::

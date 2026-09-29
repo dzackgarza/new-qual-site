@@ -35,12 +35,16 @@ f(z)=C\sin z.
 :::
 
 ::: {.solution}
-<1>1. For every integer $k$,
+
+::: pf
+
+::: {.pf-step #f-vanishes-at-integer-multiples-of-pi}
+For every integer $k$,
 $$
 f(k\pi)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 The hypothesis gives
 $$
 \abs{f(k\pi)}
@@ -51,14 +55,17 @@ $$
 Hence $f(k\pi)=0$.
 :::
 
-<1>2. For each integer $k$, the quotient
+:::
+
+::: {.pf-step #quotient-removable-at-zeros}
+For each integer $k$, the quotient
 $$
 \frac{f(z)}{\sin z}
 $$
 has a removable singularity at $z=k\pi$.
 
-::: {.proof}
-By step <1>1 and holomorphic factorization at a zero,
+::: pf-proof
+By step [](#f-vanishes-at-integer-multiples-of-pi){.pf-ref} and holomorphic factorization at a zero,
 $$
 f(z)
 =
@@ -89,28 +96,34 @@ and the right side is holomorphic at $k\pi$. This supplies the removable
 extension.
 :::
 
-<1>3. There is an entire function $h$ such that
+:::
+
+::: {.pf-step #entire-extension-h}
+There is an entire function $h$ such that
 $$
 h(z)=\frac{f(z)}{\sin z}
 $$
 whenever $\sin z\neq0$.
 
-::: {.proof}
+::: pf-proof
 The quotient is holomorphic away from the discrete zero set
 $$
 \pi\ZZ.
 $$
-Step <1>2 gives a removable holomorphic extension at every point of that
+Step [](#quotient-removable-at-zeros){.pf-ref} gives a removable holomorphic extension at every point of that
 set. Combining these local extensions gives an entire function $h$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #h-modulus-one}
+One has
 $$
 \abs{h(z)}=1
 $$
 for every $z\in\CC$.
 
-::: {.proof}
+::: pf-proof
 If $\sin z\neq0$, the hypothesis gives
 $$
 \abs{h(z)}
@@ -119,14 +132,17 @@ $$
 =1.
 $$
 The complement of $\pi\ZZ$ is dense in $\CC$, and $h$ is continuous by
-step <1>3. Therefore the same equality holds at the removed points by
+step [](#entire-extension-h){.pf-ref}. Therefore the same equality holds at the removed points by
 continuity.
 :::
 
-<1>5. The function $h$ is constant.
+:::
 
-::: {.proof}
-Step <1>4 shows that the entire function $h$ is bounded. Liouville's
+::: {.pf-step #h-constant}
+The function $h$ is constant.
+
+::: pf-proof
+Step [](#h-modulus-one){.pf-ref} shows that the entire function $h$ is bounded. Liouville's
 theorem therefore gives
 $$
 h(z)=C
@@ -134,7 +150,10 @@ $$
 for some constant $C\in\CC$.
 :::
 
-<1>6. The constant $C$ satisfies
+:::
+
+::: {.pf-step #f-equals-C-sin}
+The constant $C$ satisfies
 $$
 \abs C=1
 $$
@@ -144,8 +163,8 @@ f(z)=C\sin z
 $$
 for every $z\in\CC$.
 
-::: {.proof}
-Step <1>4 applied to the constant function from step <1>5 gives
+::: pf-proof
+Step [](#h-modulus-one){.pf-ref} applied to the constant function from step [](#h-constant){.pf-ref} gives
 $\abs C=1$. On every point with $\sin z\neq0$,
 $$
 f(z)=h(z)\sin z=C\sin z.
@@ -154,9 +173,12 @@ Both sides are entire, so the identity extends to all $z$; equivalently, it
 also holds directly at the common zeros.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-equals-C-sin){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

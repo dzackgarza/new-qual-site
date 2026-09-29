@@ -30,14 +30,19 @@ a. Show that every group $G$ of order 36 is solvable.
 :::
 
 ::: {.solution}
-<1>1. A group $G$ is **solvable** if its derived series
+
+::: pf
+
+::: pf-step
+A group $G$ is **solvable** if its derived series
 \[
 G^{(0)}=G,
 \qquad
 G^{(i+1)}=[G^{(i)},G^{(i)}]
 \]
 reaches the trivial subgroup after finitely many steps.
-::: {.proof}
+
+::: pf-proof
 Equivalently, $G$ is solvable if there exists $r\ge0$ such that
 \[
 G^{(r)}=1.
@@ -45,12 +50,16 @@ G^{(r)}=1.
 This is the definition used below.
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #extension-solvable-lemma}
+If
 \[
 1\longrightarrow N\longrightarrow G\longrightarrow Q\longrightarrow1
 \]
 is exact and both $N$ and $Q$ are solvable, then $G$ is solvable.
-::: {.proof}
+
+::: pf-proof
 Suppose $Q^{(r)}=1$. The image of $G^{(r)}$ in $Q$ lies in $Q^{(r)}$, so
 \[
 G^{(r)}\subseteq N.
@@ -63,12 +72,16 @@ G^{(r+s)}
 =1.
 \]
 Thus $G$ is solvable.
-:::
 
 Now let $|G|=36=2^2\cdot3^2$.
+:::
 
-<1>3. The number $n_3$ of Sylow $3$-subgroups is either $1$ or $4$.
-::: {.proof}
+:::
+
+::: pf-step
+The number $n_3$ of Sylow $3$-subgroups is either $1$ or $4$.
+
+::: pf-proof
 Sylow's theorems give
 \[
 n_3\equiv1\pmod3
@@ -78,8 +91,12 @@ n_3\mid4.
 The divisors of $4$ are $1,2,4$, and those congruent to $1$ modulo $3$ are $1$ and $4$.
 :::
 
-<1>4. If $n_3=1$, then $G$ is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #n3-one-solvable}
+If $n_3=1$, then $G$ is solvable.
+
+::: pf-proof
 Let $P$ be the unique Sylow $3$-subgroup. Then $P\trianglelefteq G$ and
 \[
 |P|=9.
@@ -90,15 +107,19 @@ The quotient has order
 |G/P|=4,
 \]
 and every group of order $4$ is abelian, hence solvable.
-By <1>2, $G$ is solvable.
+By step [](#extension-solvable-lemma){.pf-ref}, $G$ is solvable.
 :::
 
-<1>5. Suppose $n_3=4$. Conjugation on the set of the four Sylow $3$-subgroups gives a homomorphism
+:::
+
+::: {.pf-step #phi-image-order}
+Suppose $n_3=4$. Conjugation on the set of the four Sylow $3$-subgroups gives a homomorphism
 \[
 \varphi:G\longrightarrow S_4.
 \]
 Its image has order $4$ or $12$.
-::: {.proof}
+
+::: pf-proof
 The conjugation action of $G$ on its Sylow $3$-subgroups is transitive, because all Sylow subgroups are conjugate. Hence $\operatorname{im}\varphi$ acts transitively on a set of four points, so by orbit-stabilizer its order is divisible by $4$.
 
 Also
@@ -116,9 +137,13 @@ Thus its order divides
 The positive divisors of $12$ divisible by $4$ are $4$ and $12$.
 :::
 
-<1>6. In the case $n_3=4$, the kernel of $\varphi$ is abelian and the image of $\varphi$ is solvable.
-::: {.proof}
-By <1>5,
+:::
+
+::: {.pf-step #kernel-and-image-solvable}
+In the case $n_3=4$, the kernel of $\varphi$ is abelian and the image of $\varphi$ is solvable.
+
+::: pf-proof
+By step [](#phi-image-order){.pf-ref},
 \[
 |\ker\varphi|
 =\frac{|G|}{|\operatorname{im}\varphi|}
@@ -136,9 +161,13 @@ Every group of order $3$ or $9$ is abelian, so $\ker\varphi$ is solvable.
 The image $\operatorname{im}\varphi$ is a subgroup of $S_4$. By the allowed fact that $S_4$ is solvable, every subgroup of $S_4$ is solvable, because the derived series of a subgroup is contained term-by-term in the derived series of the ambient group.
 :::
 
-<1>7. Therefore every group of order $36$ is solvable.
-::: {.proof}
-If $n_3=1$, this is <1>4.
+:::
+
+::: pf-step
+Therefore every group of order $36$ is solvable.
+
+::: pf-proof
+If $n_3=1$, this is step [](#n3-one-solvable){.pf-ref}.
 If $n_3=4$, then
 \[
 1\longrightarrow\ker\varphi
@@ -146,6 +175,11 @@ If $n_3=4$, then
 \longrightarrow\operatorname{im}\varphi
 \longrightarrow1
 \]
-is exact, with solvable kernel and solvable quotient by <1>6. Hence $G$ is solvable by <1>2.
+is exact, with solvable kernel and solvable quotient by step [](#kernel-and-image-solvable){.pf-ref}. Hence $G$ is solvable by step [](#extension-solvable-lemma){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

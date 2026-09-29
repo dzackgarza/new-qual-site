@@ -25,17 +25,23 @@ Justify your answer.
 :::
 
 ::: {.solution}
-<1>1. In the product topology, $\overline{\RR^\infty}=\boxed{\RR^\omega}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #closure-product-topology}
+In the product topology, $\overline{\RR^\infty}=\boxed{\RR^\omega}$.
+
+::: pf-proof
 A nonempty basic open set is $\prod_iU_i$ with $U_i$ open and nonempty, and $U_i=\RR$ except for $i$ in a finite set $F$.
 Choose $z_i\in U_i$ for $i\in F$ and $z_i=0$ for $i\notin F$.
 Then $z=(z_i)$ is eventually zero and lies in $\prod_iU_i$, so every nonempty open set meets $\RR^\infty$.
 :::
 
-<1>2. In the box topology, $\overline{\RR^\infty}=\boxed{\RR^\infty}$.
+:::
 
-::: {.proof}
+::: {.pf-step #closure-box-topology}
+In the box topology, $\overline{\RR^\infty}=\boxed{\RR^\infty}$.
+
+::: pf-proof
 Let $x\notin\RR^\infty$, so the set $S=\{i:x_i\ne0\}$ is infinite.
 Put $U_i=\RR-\{0\}$ for $i\in S$ and $U_i=\RR$ for $i\notin S$.
 Then $\prod_iU_i$ is a box neighborhood of $x$.
@@ -43,9 +49,12 @@ An eventually-zero sequence $z$ has $z_i=0$ for some $i\in S$, because $S$ is in
 Hence the complement of $\RR^\infty$ is box-open.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 give the closure in the two topologies.
 :::
+
+::: pf-qed
+Steps [](#closure-product-topology){.pf-ref} and [](#closure-box-topology){.pf-ref} give the closure in the two topologies.
+:::
+
+:::
+
 :::

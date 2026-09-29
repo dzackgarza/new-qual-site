@@ -30,8 +30,13 @@ Prove that $f(x)=0$ for every $x\in[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. Assume that $f$ is positive somewhere.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Assume that $f$ is positive somewhere.
+
+::: pf-proof
 Suppose $f(x_0)>0$ for some $x_0\in[0,1]$. Set
 \[
 \varepsilon:=\frac{f(x_0)}2>0.
@@ -47,8 +52,12 @@ f(x)>\varepsilon.
 \]
 :::
 
-<1>2. Integrate on that neighborhood.
-::: {.proof}
+:::
+
+::: pf-step
+Integrate on that neighborhood.
+
+::: pf-proof
 The interval
 \[
 I=(x_0-\delta,x_0+\delta)\cap[0,1]
@@ -65,5 +74,9 @@ Therefore no such $x_0$ exists, and
 \[
 \boxed{f\equiv0.}
 \]
+:::
+
+:::
+
 :::
 :::

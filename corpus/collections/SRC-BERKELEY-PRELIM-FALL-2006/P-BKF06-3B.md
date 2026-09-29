@@ -34,9 +34,13 @@ Show that $g$ is continuous.
 :::
 
 ::: {.solution}
-<1>1. For every $x\in\RR$, the maximum defining $g(x)$ exists.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #max-exists}
+For every $x\in\RR$, the maximum defining $g(x)$ exists.
+
+::: pf-proof
 For fixed $x$, the function
 $$
 y\longmapsto f(x,y)
@@ -45,7 +49,10 @@ is continuous on the compact interval $[0,1]$. Hence it attains a
 maximum there.
 :::
 
-<1>2. Fix $a\in\RR$ and $\epsilon>0$. There exists
+:::
+
+::: {.pf-step #uniform-continuity-delta}
+Fix $a\in\RR$ and $\epsilon>0$. There exists
 $\delta\in(0,1]$ such that
 $$
 \abs{x-z}<\delta
@@ -56,7 +63,7 @@ $$
 $$
 for every $y\in[0,1]$.
 
-::: {.proof}
+::: pf-proof
 The rectangle
 $$
 K=[a-1,a+1]\times[0,1]
@@ -71,17 +78,20 @@ For points $(x,y),(z,y)\in K$, their Euclidean distance is
 $\abs{x-z}$. Thus the displayed implication follows.
 :::
 
-<1>3. Under the hypotheses of step <1>2,
+:::
+
+::: {.pf-step #g-close-bound}
+Under the hypotheses of step [](#uniform-continuity-delta){.pf-ref},
 $$
 \abs{g(x)-g(z)}<\epsilon.
 $$
 
-::: {.proof}
-By step <1>1, choose $y_x\in[0,1]$ with
+::: pf-proof
+By step [](#max-exists){.pf-ref}, choose $y_x\in[0,1]$ with
 $$
 g(x)=f(x,y_x).
 $$
-Then step <1>2 gives
+Then step [](#uniform-continuity-delta){.pf-ref} gives
 $$
 g(x)
 =
@@ -101,29 +111,38 @@ $$
 $$
 :::
 
-<1>4. The function $g$ is continuous at $a$.
+:::
 
-::: {.proof}
-If $\abs{x-a}<\delta$, where $\delta$ is from step <1>2, then
-$x,a\in[a-1,a+1]$. Applying step <1>3 with $z=a$ gives
+::: {.pf-step #g-continuous-at-a}
+The function $g$ is continuous at $a$.
+
+::: pf-proof
+If $\abs{x-a}<\delta$, where $\delta$ is from step [](#uniform-continuity-delta){.pf-ref}, then
+$x,a\in[a-1,a+1]$. Applying step [](#g-close-bound){.pf-ref} with $z=a$ gives
 $$
 \abs{g(x)-g(a)}<\epsilon.
 $$
 This is continuity at $a$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #g-continuous-everywhere}
+Therefore
 $$
 \boxed{g\text{ is continuous on }\RR}.
 $$
 
-::: {.proof}
-The point $a\in\RR$ in step <1>4 was arbitrary.
+::: pf-proof
+The point $a\in\RR$ in step [](#g-continuous-at-a){.pf-ref} was arbitrary.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#g-continuous-everywhere){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

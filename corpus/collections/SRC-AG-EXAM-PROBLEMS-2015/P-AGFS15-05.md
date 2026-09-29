@@ -53,8 +53,12 @@ g(x)=(x-e_1)(x-e_2)(x-e_3).
 \]
 Because the \(e_j\) are pairwise distinct and \(\operatorname{char}k=0\), the projective cubic \(\overline C\) is nonsingular. We compute orders at the three points \(P_j\) and at \(P_\infty\).
 
-<1>1. At each \(P_j\), \(y\) has order \(1\) and \(dx\) has order \(1\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #orders-at-branch-points}
+At each \(P_j\), \(y\) has order \(1\) and \(dx\) has order \(1\).
+
+::: pf-proof
 Fix \(j\), and write
 \[
 g(x)=(x-e_j)g_j(x),
@@ -93,8 +97,12 @@ The factor in parentheses is a unit at \(P_j\), while \(y\) has order \(1\) and 
 \]
 :::
 
-<1>2. At \(P_\infty\), \(y\) and \(dx\) both have order \(-3\).
-::: {.proof}
+:::
+
+::: {.pf-step #orders-at-infinity}
+At \(P_\infty\), \(y\) and \(dx\) both have order \(-3\).
+
+::: pf-proof
 The projective closure is
 \[
 Y^2Z=(X-e_1Z)(X-e_2Z)(X-e_3Z),
@@ -148,15 +156,16 @@ Because \(\operatorname{char}k=0\), the leading coefficient is nonzero, so
 \]
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
+:::
+
+::: pf-qed
 The only zeros of \(y\) are \(P_1,P_2,P_3\), each of order \(1\), and its only pole is \(P_\infty\), of order \(3\). Thus
 \[
 \operatorname{div}(y)
 =[P_1]+[P_2]+[P_3]-3[P_\infty].
 \]
 
-By step <1>1, \(dx\) has a simple zero at each \(P_j\), and by step <1>2 it has a pole of order \(3\) at \(P_\infty\). These account for degree \(0\), the degree of a canonical divisor on this genus-one curve, so there are no further zeros or poles. Hence
+By step [](#orders-at-branch-points){.pf-ref}, \(dx\) has a simple zero at each \(P_j\), and by step [](#orders-at-infinity){.pf-ref} it has a pole of order \(3\) at \(P_\infty\). These account for degree \(0\), the degree of a canonical divisor on this genus-one curve, so there are no further zeros or poles. Hence
 \[
 \operatorname{div}(dx)
 =[P_1]+[P_2]+[P_3]-3[P_\infty].
@@ -168,4 +177,5 @@ Therefore
 \]
 Thus \(dx/y\) has neither zeros nor poles, so it is a regular nowhere-vanishing differential on \(\overline C\).
 :::
+
 :::

@@ -37,12 +37,16 @@ a^2+b^2=5\cdot17\cdot37?
 :::
 
 ::: {.solution}
+
 Set
 $$
 N=5\cdot17\cdot37.
 $$
 
-<1>1. In the Gaussian integers,
+::: pf
+
+::: {.pf-step #gaussian-factorization}
+In the Gaussian integers,
 $$
 N
 =
@@ -51,7 +55,7 @@ $$
 and the six displayed factors are pairwise nonassociate Gaussian
 primes, grouped into the three indicated conjugate pairs.
 
-::: {.proof}
+::: pf-proof
 Their norms are
 $$
 2^2+1^2=5,
@@ -89,7 +93,10 @@ units $\{\pm1,\pm i\}$ shows that no factor in the display is
 associate to any other factor except itself.
 :::
 
-<1>2. Up to multiplication by a unit, there are exactly
+:::
+
+::: {.pf-step #eight-alpha-choices}
+Up to multiplication by a unit, there are exactly
 $$
 2^3=8
 $$
@@ -98,8 +105,8 @@ $$
 \alpha\overline{\alpha}=N.
 $$
 
-::: {.proof}
-By step <1>1 and unique factorization, for each rational prime
+::: pf-proof
+By step [](#gaussian-factorization){.pf-ref} and unique factorization, for each rational prime
 $p\in\{5,17,37\}$ the factorization of $N$ contains exactly one
 Gaussian prime $\pi_p$ and exactly one conjugate prime
 $\overline{\pi_p}$. If
@@ -120,13 +127,16 @@ There are two independent choices for each of the three rational
 primes, hence $2^3=8$ choices up to multiplication by a Gaussian unit.
 :::
 
-<1>3. No integer solution of
+:::
+
+::: {.pf-step #no-trivial-solutions}
+No integer solution of
 $$
 a^2+b^2=N
 $$
 has $ab=0$ or $\abs a=\abs b$.
 
-::: {.proof}
+::: pf-proof
 The integer $N$ is not a square, so if $ab=0$ then the nonzero square
 would have to equal $N$, which is impossible. Also $N$ is odd, whereas
 $\abs a=\abs b$ would give
@@ -136,10 +146,13 @@ $$
 which is even. Thus neither possibility occurs.
 :::
 
-<1>4. The eight unit-classes from step <1>2 form four distinct pairs
+:::
+
+::: {.pf-step #four-conjugate-pairs}
+The eight unit-classes from step [](#eight-alpha-choices){.pf-ref} form four distinct pairs
 under complex conjugation.
 
-::: {.proof}
+::: pf-proof
 Conjugation sends each choice of one prime from each conjugate pair to
 the complementary choice, so it permutes the eight unit-classes.
 Suppose a unit-class were fixed. Then for
@@ -148,12 +161,15 @@ $$
 \overline{\alpha}=u\alpha
 $$
 for some $u\in\{\pm1,\pm i\}$. For $u=1$ or $-1$, one of $a,b$
-vanishes; for $u=i$ or $-i$, one has $\abs a=\abs b$. Step <1>3
+vanishes; for $u=i$ or $-i$, one has $\abs a=\abs b$. Step [](#no-trivial-solutions){.pf-ref}
 excludes all four cases. Thus conjugation has no fixed unit-class and
 the eight classes split into four pairs.
 :::
 
-<1>5. Each conjugation pair of unit-classes corresponds to exactly one
+:::
+
+::: {.pf-step #pair-to-integer-solution}
+Each conjugation pair of unit-classes corresponds to exactly one
 integer pair
 $$
 a\ge b\ge0,
@@ -161,7 +177,7 @@ a\ge b\ge0,
 a^2+b^2=N.
 $$
 
-::: {.proof}
+::: pf-proof
 Multiplication of $a+bi$ by a Gaussian unit changes signs and
 interchanges the two coordinates up to sign; complex conjugation
 changes the sign of the second coordinate. Hence the equivalence
@@ -171,25 +187,31 @@ $$
 \qquad\text{and}\qquad
 (\pm b,\pm a).
 $$
-By step <1>3, the absolute values are nonzero and unequal. Therefore
+By step [](#no-trivial-solutions){.pf-ref}, the absolute values are nonzero and unequal. Therefore
 exactly one member of each equivalence class has
 $a>b>0$, and hence exactly one has $a\ge b\ge0$.
 :::
 
-<1>6. The required number of pairs is
+:::
+
+::: {.pf-step #answer-four}
+The required number of pairs is
 $$
 \boxed{4}.
 $$
 
-::: {.proof}
-By step <1>4 there are four equivalence classes under units and
-conjugation, and step <1>5 identifies each with exactly one admissible
+::: pf-proof
+By step [](#four-conjugate-pairs){.pf-ref} there are four equivalence classes under units and
+conjugation, and step [](#pair-to-integer-solution){.pf-ref} identifies each with exactly one admissible
 ordered pair.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required count.
 :::
+
+::: pf-qed
+Step [](#answer-four){.pf-ref} is the required count.
+:::
+
+:::
+
 :::

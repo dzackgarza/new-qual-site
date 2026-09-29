@@ -30,12 +30,15 @@ a^2-a+1>0.
 :::
 
 ::: {.solution}
-<1>1. If $a\le0$, then
+::: pf
+
+::: {.pf-step #nonpositive-case}
+If $a\le0$, then
 $$
 a^2-a+1>0.
 $$
 
-::: {.proof}
+::: pf-proof
 In an ordered integral domain, squares are nonnegative, so $a^2\ge0$. The
 assumption $a\le0$ gives $-a\ge0$, while $1>0$. Hence
 $$
@@ -43,24 +46,30 @@ a^2-a+1=a^2+(-a)+1>0.
 $$
 :::
 
-<1>2. If $0<a<1$, then
+:::
+
+::: {.pf-step #unit-interval-case}
+If $0<a<1$, then
 $$
 a^2-a+1>0.
 $$
 
-::: {.proof}
+::: pf-proof
 One has $a^2\ge0$ and $1-a>0$. Therefore
 $$
 a^2-a+1=a^2+(1-a)>0.
 $$
 :::
 
-<1>3. If $a\ge1$, then
+:::
+
+::: {.pf-step #at-least-one-case}
+If $a\ge1$, then
 $$
 a^2-a+1>0.
 $$
 
-::: {.proof}
+::: pf-proof
 Now $a>0$ and $a-1\ge0$, so
 $$
 a(a-1)\ge0.
@@ -71,20 +80,25 @@ a^2-a+1=a(a-1)+1>0.
 $$
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #positivity-boxed}
+Therefore
 $$
 \boxed{a^2-a+1>0}
 $$
 for every $a\in D$.
 
-::: {.proof}
+::: pf-proof
 By trichotomy, every $a$ lies in exactly one of the ranges treated in steps
-<1>1--<1>3.
+[](#nonpositive-case){.pf-ref}, [](#unit-interval-case){.pf-ref}, and [](#at-least-one-case){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required inequality.
+::: pf-qed
+Step [](#positivity-boxed){.pf-ref} is the required inequality.
+:::
+
 :::
 :::

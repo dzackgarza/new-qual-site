@@ -45,11 +45,15 @@ S_+=\bigoplus_{d>0}S_d
 \]
 for the irrelevant ideal.
 
-<1>1. If every element of $S_+$ is nilpotent, then
+::: pf
+
+::: {.pf-step #nilpotent-implies-proj-empty}
+If every element of $S_+$ is nilpotent, then
 \[
 \Proj S=\varnothing.
 \]
-::: {.proof}
+
+::: pf-proof
 Every prime ideal contains every nilpotent element.
 Hence every homogeneous prime ideal contains all of $S_+$.
 But by definition
@@ -60,12 +64,16 @@ But by definition
 Thus no prime belongs to $\Proj S$.
 :::
 
-<1>2. Conversely, if
+:::
+
+::: {.pf-step #proj-empty-implies-homog-nilpotent}
+Conversely, if
 \[
 \Proj S=\varnothing,
 \]
 then every homogeneous element of positive degree is nilpotent.
-::: {.proof}
+
+::: pf-proof
 Let
 \[
 f\in S_d,
@@ -123,8 +131,12 @@ contradiction.
 Therefore every homogeneous positive-degree element is nilpotent.
 :::
 
-<1>3. If every homogeneous element of $S_+$ is nilpotent, then every element of $S_+$ is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #homog-nilpotent-implies-nilpotent}
+If every homogeneous element of $S_+$ is nilpotent, then every element of $S_+$ is nilpotent.
+
+::: pf-proof
 Every element
 \[
 s\in S_+
@@ -138,7 +150,10 @@ The nilpotent elements of a commutative ring form the nilradical, which is an id
 Hence $s$ is nilpotent.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #proj-empty-iff-splus-nilpotent}
+Therefore
 \[
 \boxed{
 \Proj S=\varnothing
@@ -146,11 +161,15 @@ Hence $s$ is nilpotent.
 \text{every element of }S_+\text{ is nilpotent}.
 }
 \]
-::: {.proof}
-The forward implication is <1>2--<1>3 and the reverse implication is <1>1.
+
+::: pf-proof
+The forward implication is steps [](#proj-empty-implies-homog-nilpotent){.pf-ref} and [](#homog-nilpotent-implies-nilpotent){.pf-ref} and the reverse implication is step [](#nilpotent-implies-proj-empty){.pf-ref}.
 :::
 
-<1>5. Let
+:::
+
+::: {.pf-step #u-is-open-union-of-dplus}
+Let
 \[
 \phi:S\longrightarrow T
 \]
@@ -170,7 +189,8 @@ D_+(\phi(s)),
 }
 \]
 so $U$ is open in $\Proj T$.
-::: {.proof}
+
+::: pf-proof
 A homogeneous prime $\mathfrak p\in\Proj T$ fails to contain the ideal $\phi(S_+)$ exactly when there is some homogeneous positive-degree element
 \[
 s\in S_+
@@ -186,7 +206,10 @@ That is exactly the condition
 Taking the union over all such $s$ gives the formula.
 :::
 
-<1>6. For $\mathfrak p\in U$, define
+:::
+
+::: {.pf-step #f-of-p-in-proj-s}
+For $\mathfrak p\in U$, define
 \[
 f(\mathfrak p)=\phi^{-1}(\mathfrak p).
 \]
@@ -194,7 +217,8 @@ Then
 \[
 f(\mathfrak p)\in\Proj S.
 \]
-::: {.proof}
+
+::: pf-proof
 The inverse image of a prime ideal under a ring homomorphism is prime, and because $\phi$ preserves degrees, the inverse image of a homogeneous ideal is homogeneous.
 Thus
 \[
@@ -218,7 +242,10 @@ so the inverse-image prime does not contain $S_+$.
 Therefore it belongs to $\Proj S$.
 :::
 
-<1>7. The map of points
+:::
+
+::: {.pf-step #f-continuous-preimage-formula}
+The map of points
 \[
 f:U\longrightarrow\Proj S
 \]
@@ -229,7 +256,8 @@ f^{-1}(D_+(s))
 =D_+(\phi(s)).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 For $\mathfrak p\in U$,
 \[
 \begin{aligned}
@@ -245,7 +273,10 @@ s\notin\phi^{-1}(\mathfrak p)\\
 The distinguished opens form a basis of $\Proj S$, so this identity proves continuity.
 :::
 
-<1>8. On the distinguished opens from <1>7, the homomorphism $\phi$ induces degree-zero localization maps
+:::
+
+::: {.pf-step #localization-map-s-to-t}
+On the distinguished opens from step [](#f-continuous-preimage-formula){.pf-ref}, the homomorphism $\phi$ induces degree-zero localization maps
 \[
 \boxed{
 S_{(s)}
@@ -253,7 +284,8 @@ S_{(s)}
 T_{(\phi(s))}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Because $\phi$ is graded and
 \[
 \phi(s)
@@ -270,7 +302,10 @@ It preserves degrees, so it restricts to the degree-zero parts
 \]
 :::
 
-<1>9. The affine morphisms
+:::
+
+::: {.pf-step #f-glues-to-morphism}
+The affine morphisms
 \[
 D_+(\phi(s))
 =\Spec T_{(\phi(s))}
@@ -278,14 +313,15 @@ D_+(\phi(s))
 \Spec S_{(s)}
 =D_+(s)
 \]
-from <1>8 agree on overlaps and glue to a morphism of schemes
+from step [](#localization-map-s-to-t){.pf-ref} agree on overlaps and glue to a morphism of schemes
 \[
 \boxed{
 f:U\longrightarrow\Proj S.
 }
 \]
-::: {.proof}
-The affine morphism is the one induced by the ring map in <1>8. On points it is contraction of primes, hence agrees with the set map in <1>6.
+
+::: pf-proof
+The affine morphism is the one induced by the ring map in step [](#localization-map-s-to-t){.pf-ref}. On points it is contraction of primes, hence agrees with the set map in step [](#f-of-p-in-proj-s){.pf-ref}.
 
 If $s,t\in S_+$ are homogeneous, then on the overlap
 \[
@@ -294,10 +330,13 @@ D_+(\phi(s))\cap D_+(\phi(t))
 \]
 both local morphisms are obtained from the same graded homomorphism $\phi$ after localizing further by $st$.
 Hence they agree.
-Since the opens $D_+(\phi(s))$ cover $U$ by <1>5, they glue uniquely to the desired scheme morphism.
+Since the opens $D_+(\phi(s))$ cover $U$ by step [](#u-is-open-union-of-dplus){.pf-ref}, they glue uniquely to the desired scheme morphism.
 :::
 
-<1>10. Suppose now that there is an integer $d_0$ such that
+:::
+
+::: {.pf-step #u-equals-proj-t}
+Suppose now that there is an integer $d_0$ such that
 \[
 \phi_d:S_d\xrightarrow{\sim}T_d
 \]
@@ -306,7 +345,8 @@ Then
 \[
 \boxed{U=\Proj T.}
 \]
-::: {.proof}
+
+::: pf-proof
 Suppose
 \[
 \mathfrak p\in\Proj T
@@ -354,7 +394,10 @@ contradicting
 Therefore no point of $\Proj T$ is excluded from $U$.
 :::
 
-<1>11. Let $s\in S$ be homogeneous of positive degree and assume
+:::
+
+::: {.pf-step #localization-map-iso}
+Let $s\in S$ be homogeneous of positive degree and assume
 \[
 \deg s\ge d_0.
 \]
@@ -366,8 +409,9 @@ S_{(s)}
 T_{(\phi(s))}
 }
 \]
-from <1>8 is an isomorphism.
-::: {.proof}
+from step [](#localization-map-s-to-t){.pf-ref} is an isomorphism.
+
+::: pf-proof
 Put
 \[
 r=\deg s.
@@ -438,7 +482,10 @@ in the localization.
 Hence the map is injective.
 :::
 
-<1>12. The opens
+:::
+
+::: {.pf-step #dplus-s-cover-proj-s}
+The opens
 \[
 D_+(s),
 \qquad
@@ -447,7 +494,8 @@ s\in S_+\text{ homogeneous},
 \deg s\ge d_0,
 \]
 cover $\Proj S$.
-::: {.proof}
+
+::: pf-proof
 Let
 \[
 \mathfrak q\in\Proj S.
@@ -475,19 +523,23 @@ Thus
 \]
 :::
 
-<1>13. Under the eventual degreewise-isomorphism hypothesis, the morphism
+:::
+
+::: {.pf-step #f-is-isomorphism}
+Under the eventual degreewise-isomorphism hypothesis, the morphism
 \[
 f:\Proj T\longrightarrow\Proj S
 \]
 is an isomorphism.
-::: {.proof}
-By <1>10 the domain $U$ is all of $\Proj T$.
 
-The opens in <1>12 cover $\Proj S$, and their inverse images are
+::: pf-proof
+By step [](#u-equals-proj-t){.pf-ref} the domain $U$ is all of $\Proj T$.
+
+The opens in step [](#dplus-s-cover-proj-s){.pf-ref} cover $\Proj S$, and their inverse images are
 \[
 D_+(\phi(s))
 \]
-by <1>7. On every such pair, <1>11 shows that the defining ring map
+by step [](#f-continuous-preimage-formula){.pf-ref}. On every such pair, step [](#localization-map-iso){.pf-ref} shows that the defining ring map
 \[
 S_{(s)}\to T_{(\phi(s))}
 \]
@@ -505,7 +557,10 @@ The local inverses agree on overlaps, so they glue to a global inverse.
 Therefore $f$ is an isomorphism.
 :::
 
-<1>14. Let $V\subseteq\mathbb P^n_k$ be a projective variety with homogeneous coordinate ring
+:::
+
+::: {.pf-step #affine-coord-ring-of-vi}
+Let $V\subseteq\mathbb P^n_k$ be a projective variety with homogeneous coordinate ring
 \[
 S=k[x_0,\ldots,x_n]/I(V).
 \]
@@ -521,7 +576,8 @@ have affine coordinate rings
 S_{(x_i)}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Dehomogenizing with respect to $x_i$ identifies the affine variety $V_i$ with the zero set of the dehomogenized equations of $I(V)$ in the affine chart
 \[
 \{x_i\ne0\}\cong\mathbb A^n.
@@ -533,27 +589,35 @@ S_{x_i},
 namely $S_{(x_i)}$.
 :::
 
-<1>15. The standard affine opens of $\Proj S$ are
+:::
+
+::: {.pf-step #dplus-xi-matches-vi}
+The standard affine opens of $\Proj S$ are
 \[
 D_+(x_i)
 \cong
 \Spec S_{(x_i)}.
 \]
-Under the affine identification of <1>14, they are exactly the schemes associated to the affine varieties $V_i$.
-::: {.proof}
+Under the affine identification of step [](#affine-coord-ring-of-vi){.pf-ref}, they are exactly the schemes associated to the affine varieties $V_i$.
+
+::: pf-proof
 The standard theorem on $\Proj$ gives
 \[
 D_+(x_i)=\Spec S_{(x_i)}.
 \]
-Step <1>14 gives the same affine coordinate ring for $V_i$.
+Step [](#affine-coord-ring-of-vi){.pf-ref} gives the same affine coordinate ring for $V_i$.
 Hence the scheme associated to $V_i$ is naturally isomorphic to this standard open of $\Proj S$.
 :::
 
-<1>16. These local isomorphisms agree on overlaps, and therefore
+:::
+
+::: {.pf-step #tv-iso-proj-s}
+These local isomorphisms agree on overlaps, and therefore
 \[
 \boxed{t(V)\cong\Proj S.}
 \]
-::: {.proof}
+
+::: pf-proof
 On
 \[
 V_i\cap V_j,
@@ -566,13 +630,17 @@ D_+(x_i)\cap D_+(x_j)
 \]
 inside $\Proj S$.
 
-Thus the affine identifications from <1>15 commute with the overlap identifications.
+Thus the affine identifications from step [](#dplus-xi-matches-vi){.pf-ref} commute with the overlap identifications.
 The associated scheme $t(V)$ is obtained by gluing the affine schemes of the $V_i$ by these transition maps, while $\Proj S$ is obtained by gluing the same affine schemes by the same maps.
 The local isomorphisms therefore glue to the displayed global isomorphism.
 :::
 
-<1>17. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), <1>5--<1>9 prove part (b), <1>10--<1>13 prove part (c), and <1>14--<1>16 prove part (d).
 :::
+
+::: pf-qed
+Steps [](#nilpotent-implies-proj-empty){.pf-ref}, [](#proj-empty-implies-homog-nilpotent){.pf-ref}, [](#homog-nilpotent-implies-nilpotent){.pf-ref} and [](#proj-empty-iff-splus-nilpotent){.pf-ref} prove part (a), steps [](#u-is-open-union-of-dplus){.pf-ref}, [](#f-of-p-in-proj-s){.pf-ref}, [](#f-continuous-preimage-formula){.pf-ref}, [](#localization-map-s-to-t){.pf-ref} and [](#f-glues-to-morphism){.pf-ref} prove part (b), steps [](#u-equals-proj-t){.pf-ref}, [](#localization-map-iso){.pf-ref}, [](#dplus-s-cover-proj-s){.pf-ref} and [](#f-is-isomorphism){.pf-ref} prove part (c), and steps [](#affine-coord-ring-of-vi){.pf-ref}, [](#dplus-xi-matches-vi){.pf-ref} and [](#tv-iso-proj-s){.pf-ref} prove part (d).
+:::
+
+:::
+
 :::

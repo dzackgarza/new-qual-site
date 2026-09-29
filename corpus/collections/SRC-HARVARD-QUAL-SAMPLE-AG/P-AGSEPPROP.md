@@ -39,7 +39,10 @@ g,h:Z\longrightarrow X
 \]
 be $Y$-morphisms.
 
-<1>1. The scheme-theoretic equalizer of $g$ and $h$ is the pullback of the diagonal:
+::: pf
+
+::: {.pf-step #equalizer-pullback-definition}
+The scheme-theoretic equalizer of $g$ and $h$ is the pullback of the diagonal:
 \[
 \begin{array}{ccc}
 E&\longrightarrow&X\\
@@ -47,7 +50,8 @@ E&\longrightarrow&X\\
 Z&\xrightarrow{(g,h)}&X\times_YX.
 \end{array}
 \]
-::: {.proof}
+
+::: pf-proof
 By the universal property of the fibre product, a morphism $T\to Z$ factors through $E$ exactly when the two composites
 \[
 T\longrightarrow Z\overset{g,h}{\rightrightarrows}X
@@ -55,16 +59,23 @@ T\longrightarrow Z\overset{g,h}{\rightrightarrows}X
 are equal.  Thus $E$ represents the equalizer of $g$ and $h$.
 :::
 
-<1>2. If $f$ is separated, then $E\to Z$ is a closed immersion.
-::: {.proof}
+:::
+
+::: {.pf-step #separated-gives-closed-equalizer}
+If $f$ is separated, then $E\to Z$ is a closed immersion.
+
+::: pf-proof
 Separatedness means that
 \[
 \Delta_{X/Y}:X\longrightarrow X\times_YX
 \]
-is a closed immersion.  Closed immersions are preserved by base change, so the pullback $E\to Z$ in <1>1 is a closed immersion.
+is a closed immersion.  Closed immersions are preserved by base change, so the pullback $E\to Z$ in step [](#equalizer-pullback-definition){.pf-ref} is a closed immersion.
 :::
 
-<1>3. Consequently, if $f$ is separated, $Z$ is reduced, and $g$ and $h$ agree on a dense open subset
+:::
+
+::: {.pf-step #dense-reduced-gives-equality}
+Consequently, if $f$ is separated, $Z$ is reduced, and $g$ and $h$ agree on a dense open subset
 \[
 U\subseteq Z,
 \]
@@ -72,12 +83,13 @@ then
 \[
 \boxed{g=h.}
 \]
-::: {.proof}
+
+::: pf-proof
 Since $g|_U=h|_U$, the inclusion
 \[
 U\hookrightarrow Z
 \]
-factors through the equalizer $E$.  Thus the underlying closed subset $|E|\subseteq|Z|$ contains the dense subset $U$.  By <1>2, $|E|$ is closed, so
+factors through the equalizer $E$.  Thus the underlying closed subset $|E|\subseteq|Z|$ contains the dense subset $U$.  By step [](#separated-gives-closed-equalizer){.pf-ref}, $|E|$ is closed, so
 \[
 |E|=|Z|.
 \]
@@ -90,26 +102,34 @@ so every local section of $\mathcal I$ is nilpotent.  Because $Z$ is reduced, it
 \[
 \mathcal I=0.
 \]
-Therefore $E=Z$, and by the equalizer property in <1>1, $g=h$.
+Therefore $E=Z$, and by the equalizer property in step [](#equalizer-pullback-definition){.pf-ref}, $g=h$.
 :::
 
-<1>4. If $f$ is only quasi-separated, the corresponding conclusion is that the equalizer
+:::
+
+::: {.pf-step #quasiseparated-gives-quasicompact-immersion}
+If $f$ is only quasi-separated, the corresponding conclusion is that the equalizer
 \[
 E\longrightarrow Z
 \]
 is a quasicompact immersion.
-::: {.proof}
+
+::: pf-proof
 For every morphism of schemes the diagonal is an immersion.  Quasi-separatedness of $f$ means, by definition, that
 \[
 \Delta_{X/Y}
 \]
-is quasicompact.  Both properties are preserved by base change, so the equalizer morphism in <1>1 is a quasicompact immersion.
+is quasicompact.  Both properties are preserved by base change, so the equalizer morphism in step [](#equalizer-pullback-definition){.pf-ref} is a quasicompact immersion.
 
 Equivalently, the agreement locus is retrocompact in $Z$: its intersection with every quasicompact open subset of $Z$ is quasicompact.
 :::
 
-<1>5. Quasi-separatedness does not imply the uniqueness statement in <1>3.
-::: {.proof}
+:::
+
+::: {.pf-step #quasiseparated-counterexample}
+Quasi-separatedness does not imply the uniqueness statement in step [](#dense-reduced-gives-equality){.pf-ref}.
+
+::: pf-proof
 Let $X$ be the affine line with doubled origin: glue two copies
 \[
 U_1\cong\mathbb A^1_k,
@@ -145,10 +165,13 @@ because that is precisely the open along which the two copies were glued, but th
 g\ne h.
 \]
 
-Their equalizer is exactly $\mathbb G_m\hookrightarrow\mathbb A^1$, which is a quasicompact immersion, as <1>4 predicts, but not a closed immersion.
+Their equalizer is exactly $\mathbb G_m\hookrightarrow\mathbb A^1$, which is a quasicompact immersion, as step [](#quasiseparated-gives-quasicompact-immersion){.pf-ref} predicts, but not a closed immersion.
 :::
 
-<1>6. Thus
+:::
+
+::: pf-step
+Thus
 \[
 \boxed{
 \begin{gathered}
@@ -160,12 +183,16 @@ g|_U=h|_U\text{ on a dense open }U
 }
 \]
 whereas replacing separated by quasi-separated only makes the equalizer quasicompact; it does not force equality.
-::: {.proof}
-This is exactly the combination of <1>3--<1>5.
+
+::: pf-proof
+This is exactly the combination of steps [](#dense-reduced-gives-equality){.pf-ref}, [](#quasiseparated-gives-quasicompact-immersion){.pf-ref} and [](#quasiseparated-counterexample){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>3 gives the dense-open uniqueness property of separated morphisms, and steps <1>4--<1>5 give the quasi-separated analogue and a counterexample to uniqueness in that case.
+:::
+
+::: pf-qed
+Step [](#dense-reduced-gives-equality){.pf-ref} gives the dense-open uniqueness property of separated morphisms, and steps [](#quasiseparated-gives-quasicompact-immersion){.pf-ref} and [](#quasiseparated-counterexample){.pf-ref} give the quasi-separated analogue and a counterexample to uniqueness in that case.
+:::
+
 :::
 :::

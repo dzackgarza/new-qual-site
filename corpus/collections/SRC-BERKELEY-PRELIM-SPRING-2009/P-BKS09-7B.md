@@ -54,13 +54,16 @@ $$
 1+\sum_{n=2}^{\infty}a_n z^{2n-2}.
 $$
 
-<1>1. The function $\phi$ is analytic, even, and nonvanishing on the unit
+::: pf
+
+::: {.pf-step #phi-properties}
+The function $\phi$ is analytic, even, and nonvanishing on the unit
 disk, and
 $$
 f(z^2)=z^2\phi(z).
 $$
 
-::: {.proof}
+::: pf-proof
 Substituting $w=z^2$ in the power series for $f$ gives
 $$
 f(z^2)
@@ -80,22 +83,28 @@ Since $f$ is univalent, this would imply $z^2=0$, a contradiction. At
 $z=0$, one has $\phi(0)=1$. Hence $\phi$ has no zeros in the unit disk.
 :::
 
-<1>2. There is an analytic function $h$ on the unit disk such that
+:::
+
+::: {.pf-step #h-square-root}
+There is an analytic function $h$ on the unit disk such that
 $$
 h(z)^2=\phi(z)
 $$
 and $h(0)=1$.
 
-::: {.proof}
-The unit disk is simply connected, and step <1>1 shows that $\phi$ is a
+::: pf-proof
+The unit disk is simply connected, and step [](#phi-properties){.pf-ref} shows that $\phi$ is a
 nonvanishing analytic function there. Hence $\phi$ admits an analytic
 square root. Choosing the sign of that square root so that its value at $0$
 is $1$ gives $h$.
 :::
 
-<1>3. The function $h$ is even.
+:::
 
-::: {.proof}
+::: {.pf-step #h-even}
+The function $h$ is even.
+
+::: pf-proof
 Because $h^2=\phi$ and $\phi$ is even,
 $$
 h(-z)^2
@@ -119,7 +128,10 @@ $$
 so $q\equiv1$ and therefore $h(-z)=h(z)$.
 :::
 
-<1>4. The analytic square-root branch
+:::
+
+::: {.pf-step #g-odd-analytic}
+The analytic square-root branch
 $$
 g(z)\coloneqq zh(z)
 $$
@@ -129,8 +141,8 @@ g(z)^2=f(z^2)
 $$
 and is odd and analytic on the unit disk.
 
-::: {.proof}
-Steps <1>1 and <1>2 give
+::: pf-proof
+Steps [](#phi-properties){.pf-ref} and [](#h-square-root){.pf-ref} give
 $$
 g(z)^2
 =
@@ -141,7 +153,7 @@ z^2\phi(z)
 f(z^2).
 $$
 Thus $g$ is an analytic choice of the square root in the statement. Since
-$h$ is analytic, so is $g$. By step <1>3,
+$h$ is analytic, so is $g$. By step [](#h-even){.pf-ref},
 $$
 g(-z)
 =
@@ -154,14 +166,17 @@ $$
 so $g$ is odd.
 :::
 
-<1>5. The function $g$ is univalent on the unit disk.
+:::
 
-::: {.proof}
+::: {.pf-step #g-univalent}
+The function $g$ is univalent on the unit disk.
+
+::: pf-proof
 Suppose
 $$
 g(z_1)=g(z_2).
 $$
-Squaring and using step <1>4 gives
+Squaring and using step [](#g-odd-analytic){.pf-ref} gives
 $$
 f(z_1^2)=f(z_2^2).
 $$
@@ -171,7 +186,7 @@ z_1^2=z_2^2,
 $$
 so either $z_1=z_2$ or $z_1=-z_2$.
 
-In the second case, oddness from step <1>4 and the assumed equality give
+In the second case, oddness from step [](#g-odd-analytic){.pf-ref} and the assumed equality give
 $$
 g(z_1)
 =
@@ -187,12 +202,15 @@ Univalence of $f$ implies $z_1^2=0$, hence $z_1=z_2=0$. Thus in every case
 $z_1=z_2$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves that the intended square-root branch is analytic and odd,
-and step <1>5 proves that it is univalent.
 :::
+
+::: pf-qed
+Step [](#g-odd-analytic){.pf-ref} proves that the intended square-root branch is analytic and odd,
+and step [](#g-univalent){.pf-ref} proves that it is univalent.
+:::
+
+:::
+
 :::
 
 ::: {.remark}

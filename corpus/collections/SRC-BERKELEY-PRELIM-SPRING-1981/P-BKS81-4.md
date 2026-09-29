@@ -44,12 +44,15 @@ s(t)\coloneqq x(t)^2+y(t)^2,
 s_0\coloneqq x_0^2+y_0^2.
 $$
 
-<1>1. Every solution satisfies
+::: pf
+
+::: {.pf-step #radial-ode}
+Every solution satisfies
 $$
 s'(t)=2s(t)(1-s(t)).
 $$
 
-::: {.proof}
+::: pf-proof
 Using the differential equations,
 $$
 \begin{aligned}
@@ -63,16 +66,19 @@ s'
 $$
 :::
 
-<1>2. Part (1) is false as printed.
+:::
 
-::: {.proof}
+::: {.pf-step #part-one-is-false}
+Part (1) is false as printed.
+
+::: pf-proof
 Take
 $$
 (x_0,y_0)=(2,0),
 \qquad
 s_0=4.
 $$
-The scalar equation in step <1>1 with this initial value has the solution
+The scalar equation in step [](#radial-ode){.pf-ref} with this initial value has the solution
 $$
 s(t)=\frac{4}{4-3e^{-2t}}.
 $$
@@ -90,14 +96,17 @@ s(t)\longrightarrow+\infty
 \text{as }t\downarrow t_*.
 $$
 Any solution of the original system must have its squared radius satisfy
-step <1>1, so no solution with this initial condition can extend to all
+step [](#radial-ode){.pf-ref}, so no solution with this initial condition can extend to all
 $t\in\RR$.
 :::
 
-<1>3. The corrected forward-time assertion is true: for every initial
+:::
+
+::: {.pf-step #forward-solution-exists}
+The corrected forward-time assertion is true: for every initial
 condition there is a unique solution defined for all $t\ge0$.
 
-::: {.proof}
+::: pf-proof
 The vector field is polynomial, hence locally Lipschitz, so the initial-value
 problem has a unique local solution.
 
@@ -140,13 +149,16 @@ satisfy the given system and the prescribed initial condition for all
 $t\ge0$. Local uniqueness makes this the unique forward solution.
 :::
 
-<1>4. If $s_0>0$, then
+:::
+
+::: {.pf-step #radius-limit-one}
+If $s_0>0$, then
 $$
 \lim_{t\to\infty}s(t)=1.
 $$
 
-::: {.proof}
-The solution constructed in step <1>3 has
+::: pf-proof
+The solution constructed in step [](#forward-solution-exists){.pf-ref} has
 $$
 s(t)=r(t)^2
 =
@@ -156,7 +168,10 @@ Since $e^{-2t}\to0$, the denominator tends to $s_0$, and the displayed
 quotient tends to $1$.
 :::
 
-<1>5. Under the hypothesis of Part (2), the solution approaches the unit
+:::
+
+::: {.pf-step #approaches-unit-circle}
+Under the hypothesis of Part (2), the solution approaches the unit
 circle:
 $$
 \boxed{
@@ -164,8 +179,8 @@ $$
 }.
 $$
 
-::: {.proof}
-The assumptions $x_0\ne0$ and $y_0\ne0$ imply $s_0>0$. By step <1>4,
+::: pf-proof
+The assumptions $x_0\ne0$ and $y_0\ne0$ imply $s_0>0$. By step [](#radius-limit-one){.pf-ref},
 $$
 \sqrt{x(t)^2+y(t)^2}
 =
@@ -176,19 +191,24 @@ The Euclidean distance from a point of radius $r$ to the unit circle is
 $\abs{r-1}$, so the asserted distance tends to zero.
 :::
 
-<1>6. Thus Part (1) is false as stated, while its forward-time correction
-and Part (2) are true.
-
-::: {.proof}
-Step <1>2 gives the counterexample to the printed Part (1), step <1>3 proves
-the corrected forward-time assertion, and step <1>5 proves Part (2).
 :::
 
-<1>7. Q.E.D.
+::: {.pf-step #summary}
+Thus Part (1) is false as stated, while its forward-time correction
+and Part (2) are true.
 
-::: {.proof}
-Step <1>6 settles both printed requests, including the necessary correction
+::: pf-proof
+Step [](#part-one-is-false){.pf-ref} gives the counterexample to the printed Part (1), step [](#forward-solution-exists){.pf-ref} proves
+the corrected forward-time assertion, and step [](#approaches-unit-circle){.pf-ref} proves Part (2).
+:::
+
+:::
+
+::: pf-qed
+Step [](#summary){.pf-ref} settles both printed requests, including the necessary correction
 to the first.
+:::
+
 :::
 :::
 

@@ -33,7 +33,11 @@ Note that 2012 has prime factorization $2 ^ { 2 } \cdot 503$, and that 502 has p
 :::
 
 ::: {.solution}
-<1>1. The Chinese remainder theorem gives
+
+::: pf
+
+::: {.pf-step #crt-decomposition}
+The Chinese remainder theorem gives
 $$
 (\ZZ/2012\ZZ)^\times
 \cong
@@ -42,7 +46,7 @@ $$
 (\ZZ/503\ZZ)^\times.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 2012=4\cdot503
@@ -63,12 +67,15 @@ An element in a product ring is a unit exactly when each coordinate is a
 unit, so restricting the isomorphism to unit groups gives the claim.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #mod4-units}
+One has
 $$
 (\ZZ/4\ZZ)^\times\cong C_2.
 $$
 
-::: {.proof}
+::: pf-proof
 The two units modulo $4$ are
 $$
 1
@@ -82,12 +89,15 @@ $$
 so the group is cyclic of order $2$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #mod503-units}
+One has
 $$
 (\ZZ/503\ZZ)^\times\cong C_{502}.
 $$
 
-::: {.proof}
+::: pf-proof
 The number $503$ is prime, so
 $$
 \ZZ/503\ZZ=\FF_{503}
@@ -100,12 +110,15 @@ $$
 elements.
 :::
 
-<1>4. The cyclic group $C_{502}$ decomposes as
+:::
+
+::: {.pf-step #c502-decomposition}
+The cyclic group $C_{502}$ decomposes as
 $$
 C_{502}\cong C_2\times C_{251}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 502=2\cdot251
@@ -124,7 +137,10 @@ $$
 $$
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #final-structure}
+Therefore
 $$
 \boxed{
 (\ZZ/2012\ZZ)^\times
@@ -133,8 +149,8 @@ C_2\times C_2\times C_{251}
 }.
 $$
 
-::: {.proof}
-Combine steps <1>1--<1>4:
+::: pf-proof
+Combine steps [](#crt-decomposition){.pf-ref}, [](#mod4-units){.pf-ref}, [](#mod503-units){.pf-ref} and [](#c502-decomposition){.pf-ref}:
 $$
 \begin{aligned}
 (\ZZ/2012\ZZ)^\times
@@ -148,9 +164,12 @@ The displayed factors all have prime order, so this is split into as many
 nontrivial cyclic factors as possible.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required abstract-group structure.
 :::
+
+::: pf-qed
+Step [](#final-structure){.pf-ref} is the required abstract-group structure.
+:::
+
+:::
+
 :::

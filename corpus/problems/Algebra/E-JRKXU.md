@@ -32,11 +32,15 @@ E=\QQ(\sqrt2),
 F=\QQ(u)=E(u).
 \]
 
-<1>1. The minimal polynomial of $u$ over $\QQ$ is
+::: pf
+
+::: {.pf-step #min-poly-of-u}
+The minimal polynomial of $u$ over $\QQ$ is
 \[
 f(x)=x^4-6x^2+7.
 \]
-::: {.proof}
+
+::: pf-proof
 Since
 \[
 u^2=3+\sqrt2,
@@ -58,7 +62,10 @@ N_{E/\QQ}(3+\sqrt2)=(3+\sqrt2)(3-\sqrt2)=7
 is not a square in $\QQ$. Thus $u\notin E$, so $[F:E]=2$ and therefore $[F:\QQ]=4$. Since $f$ has degree $4$, it is the minimal polynomial of $u$.
 :::
 
-<1>2. The roots of $f$ are
+:::
+
+::: {.pf-step #roots-of-f}
+The roots of $f$ are
 \[
 \pm u,
 \qquad
@@ -66,7 +73,8 @@ is not a square in $\QQ$. Thus $u\notin E$, so $[F:E]=2$ and therefore $[F:\QQ]=
 \qquad
 v:=\sqrt{3-\sqrt2}.
 \]
-::: {.proof}
+
+::: pf-proof
 The equation $f(x)=0$ is
 \[
 (x^2-3)^2=2,
@@ -81,8 +89,12 @@ uv=\sqrt{(3+\sqrt2)(3-\sqrt2)}=\sqrt7.
 \]
 :::
 
-<1>3. One has $\sqrt7\notin F$.
-::: {.proof}
+:::
+
+::: {.pf-step #sqrt7-not-in-f}
+One has $\sqrt7\notin F$.
+
+::: pf-proof
 Because $F/E$ is quadratic with basis $1,u$, write any element of $F$ uniquely as $a+bu$ with $a,b\in E$. Suppose
 \[
 (a+bu)^2=7.
@@ -106,17 +118,30 @@ N_{E/\QQ}(3-\sqrt2)=7
 is not a square in $\QQ$, whereas the norm of $b^2$ would be a square. This is again impossible. Thus $\sqrt7\notin F$.
 :::
 
-<1>4. The root $v=\sqrt{3-\sqrt2}$ does not lie in $F$.
-::: {.proof}
-If $v\in F$, then by <1>2,
+:::
+
+::: {.pf-step #v-not-in-f}
+The root $v=\sqrt{3-\sqrt2}$ does not lie in $F$.
+
+::: pf-proof
+If $v\in F$, then by step [](#roots-of-f){.pf-ref},
 \[
 \sqrt7=uv\in F,
 \]
-contradicting <1>3.
+contradicting step [](#sqrt7-not-in-f){.pf-ref}.
 :::
 
-<1>5. Therefore $F=\QQ(u)$ is not the splitting field of the minimal polynomial of $u$ over $\QQ$.
-::: {.proof}
-By <1>1--<1>2, the minimal polynomial is $f(x)=x^4-6x^2+7$ and one of its roots is $v$. By <1>4, $v\notin F$, so $f$ does not split over $F$.
 :::
+
+::: pf-step
+Therefore $F=\QQ(u)$ is not the splitting field of the minimal polynomial of $u$ over $\QQ$.
+
+::: pf-proof
+By steps [](#min-poly-of-u){.pf-ref} and [](#roots-of-f){.pf-ref}, the minimal polynomial is $f(x)=x^4-6x^2+7$ and one of its roots is $v$. By step [](#v-not-in-f){.pf-ref}, $v\notin F$, so $f$ does not split over $F$.
+:::
+
+:::
+
+:::
+
 :::

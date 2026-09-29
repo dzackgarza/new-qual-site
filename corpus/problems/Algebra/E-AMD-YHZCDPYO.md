@@ -26,8 +26,13 @@ Show that $\text{rad}(IJ) = \text{rad}(I) \intersect \text{rad}(J)$
 
 
 ::: {.solution}
-<1>1. One has $\operatorname{rad}(IJ)\subseteq\operatorname{rad}(I)\cap\operatorname{rad}(J)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #rad-ij-subset-cap}
+One has $\operatorname{rad}(IJ)\subseteq\operatorname{rad}(I)\cap\operatorname{rad}(J)$.
+
+::: pf-proof
 Since $IJ\subseteq I$ and $IJ\subseteq J$, monotonicity of radicals gives
 \[
 \operatorname{rad}(IJ)\subseteq\operatorname{rad}(I),
@@ -40,8 +45,12 @@ Hence
 \]
 :::
 
-<1>2. One has $\operatorname{rad}(I)\cap\operatorname{rad}(J)\subseteq\operatorname{rad}(IJ)$.
-::: {.proof}
+:::
+
+::: {.pf-step #cap-subset-rad-ij}
+One has $\operatorname{rad}(I)\cap\operatorname{rad}(J)\subseteq\operatorname{rad}(IJ)$.
+
+::: pf-proof
 Let $x\in\operatorname{rad}(I)\cap\operatorname{rad}(J)$. Then for some integers $m,n\ge1$,
 \[
 x^m\in I,
@@ -55,11 +64,20 @@ x^{m+n}=x^m x^n\in IJ,
 so $x\in\operatorname{rad}(IJ)$.
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \operatorname{rad}(IJ)=\operatorname{rad}(I)\cap\operatorname{rad}(J).
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+Combine steps [](#rad-ij-subset-cap){.pf-ref} and [](#cap-subset-rad-ij){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

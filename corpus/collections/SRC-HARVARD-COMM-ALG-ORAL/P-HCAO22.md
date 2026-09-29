@@ -35,16 +35,24 @@ Let $K=\operatorname{Frac}(R)$, and let $\widetilde R$ be the integral closure
 of $R$ in $K$. Then $\widetilde R$ is a Dedekind domain. In particular, it is
 Noetherian, integrally closed, and one-dimensional.
 
-<1>1. The ring $\widetilde R$ is integrally closed in $K$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #r-tilde-integrally-closed}
+The ring $\widetilde R$ is integrally closed in $K$.
+
+::: pf-proof
 Let $x\in K$ be integral over $\widetilde R$. Since every element of
 $\widetilde R$ is integral over $R$, transitivity of integral dependence shows
 that $x$ is integral over $R$. By definition of the integral closure,
 $x\in\widetilde R$.
 :::
 
-<1>2. The ring $\widetilde R$ is Noetherian.
-::: {.proof}
+:::
+
+::: {.pf-step #r-tilde-noetherian}
+The ring $\widetilde R$ is Noetherian.
+
+::: pf-proof
 Apply the Krull--Akizuki theorem to the one-dimensional Noetherian domain $R$
 and the finite field extension
 \[
@@ -57,8 +65,12 @@ R\subseteq A\subseteq K
 is Noetherian. Taking $A=\widetilde R$ gives the claim.
 :::
 
-<1>3. The ring $\widetilde R$ has dimension $1$.
-::: {.proof}
+:::
+
+::: {.pf-step #r-tilde-dimension-one}
+The ring $\widetilde R$ has dimension $1$.
+
+::: pf-proof
 The extension $R\subseteq\widetilde R$ is integral. By lying over and going up,
 chains of prime ideals in $R$ lift to chains in $\widetilde R$, while contraction
 of a strict chain of primes in an integral extension remains strict. Hence
@@ -67,10 +79,18 @@ of a strict chain of primes in an integral extension remains strict. Hence
 \]
 :::
 
-<1>4. Therefore $\widetilde R$ is Dedekind.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore $\widetilde R$ is Dedekind.
+
+::: pf-proof
 A Noetherian, integrally closed domain of dimension $1$ is a Dedekind domain.
-Apply <1>1--<1>3.
+Apply steps [](#r-tilde-integrally-closed){.pf-ref}, [](#r-tilde-noetherian){.pf-ref} and [](#r-tilde-dimension-one){.pf-ref}.
+:::
+
+:::
+
 :::
 :::
 

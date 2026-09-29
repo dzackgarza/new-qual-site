@@ -31,13 +31,22 @@ Show that this implies that $\pi_1(S^1 \vee S^1, (1, 1))$ is not abelian.
 :::
 
 ::: {.solution}
-<1>1. Away from the wedge point, $p:E\to S^1\vee S^1$ is locally a disjoint union of homeomorphisms.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #local-homeomorphism-away-from-wedge}
+Away from the wedge point, $p:E\to S^1\vee S^1$ is locally a disjoint union of homeomorphisms.
+
+::: pf-proof
 A point in the interior of one circle of $S^1\vee S^1$ has a small arc neighborhood avoiding the wedge point. Its preimage consists of disjoint open intervals lying in horizontal grid lines (for the first circle) or vertical grid lines (for the second circle), and $p$ restricts on each interval to the usual exponential-coordinate homeomorphism onto the arc.
 :::
 
-<1>2. The wedge point also has an evenly covered neighborhood.
-::: {.proof}
+:::
+
+::: {.pf-step #wedge-point-evenly-covered}
+The wedge point also has an evenly covered neighborhood.
+
+::: pf-proof
 Choose sufficiently short open arcs $A_1,A_2\subset S^1$ about $1$, and let
 $$
 U=(A_1\times\{1\})\cup(\{1\}\times A_2)\subset S^1\vee S^1.
@@ -45,36 +54,65 @@ $$
 For every lattice point $(m,n)\in\mathbb Z^2$, the component of $p^{-1}(U)$ containing $(m,n)$ is a small cross made from one horizontal and one vertical interval through $(m,n)$. Different lattice points give disjoint crosses, and $p$ maps each cross homeomorphically onto $U$.
 :::
 
-<1>3. Hence $p$ is a covering map.
-::: {.proof}
-Steps <1>1 and <1>2 provide an evenly covered neighborhood of every point of the figure-eight.
 :::
 
-<1>4. Let $a$ be the loop around the first circle and $b$ the loop around the second. Then
+::: {.pf-step #p-is-covering-map}
+Hence $p$ is a covering map.
+
+::: pf-proof
+Steps [](#local-homeomorphism-away-from-wedge){.pf-ref} and [](#wedge-point-evenly-covered){.pf-ref} provide an evenly covered neighborhood of every point of the figure-eight.
+:::
+
+:::
+
+::: {.pf-step #commutator-identity}
+Let $a$ be the loop around the first circle and $b$ the loop around the second. Then
 $$
 [p\circ\sigma]=aba^{-1}b^{-1}.
 $$
-::: {.proof}
+
+::: pf-proof
 Traversing the unit square counterclockwise from $(0,0)$ gives: bottom edge from $(0,0)$ to $(1,0)$ maps to $a$; right edge maps to $b$; the top edge is traversed from $(1,1)$ to $(0,1)$ and maps to $a^{-1}$; the left edge maps to $b^{-1}$. Concatenating gives the commutator.
 :::
 
-<1>5. The induced homomorphism
+:::
+
+::: {.pf-step #p-star-injective}
+The induced homomorphism
 $$
 p_*:\pi_1(E,(0,0))\to\pi_1(S^1\vee S^1,(1,1))
 $$
 is injective.
-::: {.proof}
+
+::: pf-proof
 Every covering map induces an injective homomorphism on fundamental groups. Concretely, if a loop in $E$ projects to a null-homotopic loop, lift a null-homotopy starting from that loop; uniqueness of lifts contracts the original loop.
 :::
 
-<1>6. The class $[\sigma]$ is nontrivial in $\pi_1(E,(0,0))$.
-::: {.proof}
+:::
+
+::: {.pf-step #sigma-nontrivial}
+The class $[\sigma]$ is nontrivial in $\pi_1(E,(0,0))$.
+
+::: pf-proof
 The space $E$ is a graph with vertices $\mathbb Z^2$ and unit horizontal and vertical edges. The loop $\sigma$ is the boundary of one square in this graph. Its cellular $1$-cycle is the nonzero sum of those four oriented edges, and the graph has no $2$-cells, so this cycle is nonzero in $H_1(E;\mathbb Z)$. Therefore $[\sigma]$ cannot be null-homotopic.
 :::
 
-<1>7. Thus $\pi_1(S^1\vee S^1)$ is nonabelian.
-::: {.proof}
-By <1>5--<1>6, $p_*[\sigma]\ne1$. By <1>4 this element is the commutator $aba^{-1}b^{-1}$. In an abelian group every commutator is trivial, so the fundamental group cannot be abelian.
 :::
+
+::: {.pf-step #s1vs1-nonabelian}
+Thus $\pi_1(S^1\vee S^1)$ is nonabelian.
+
+::: pf-proof
+By steps [](#p-star-injective){.pf-ref} and [](#sigma-nontrivial){.pf-ref}, $p_*[\sigma]\ne1$. By step [](#commutator-identity){.pf-ref} this element is the commutator $aba^{-1}b^{-1}$. In an abelian group every commutator is trivial, so the fundamental group cannot be abelian.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#p-is-covering-map){.pf-ref}, [](#commutator-identity){.pf-ref} and [](#s1vs1-nonabelian){.pf-ref} answer parts (a), (b) and (c).
+:::
+
+:::
+
 :::
 

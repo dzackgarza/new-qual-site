@@ -43,12 +43,15 @@ $$
 and let $\log$ denote the principal holomorphic logarithm on
 $\CC\setminus(-\infty,0]$.
 
-<1>1. The map $\Phi$ sends $A$ into the closed first quadrant with the origin
+::: pf
+
+::: {.pf-step #phi-maps-quadrant}
+The map $\Phi$ sends $A$ into the closed first quadrant with the origin
 removed; it sends the interior of $A$ into the open first quadrant, the real
 boundary segment into the positive real axis, and the semicircular boundary
 into the positive imaginary axis.
 
-::: {.proof}
+::: pf-proof
 Write $z=x+iy$. Since $z\neq1$ on $A$,
 $$
 \Phi(z)
@@ -78,7 +81,10 @@ imaginary axis. Finally, $\Phi(z)=0$ would force $z=-1$, which is excluded
 from $A$.
 :::
 
-<1>2. The explicit function
+:::
+
+::: {.pf-step #u-harmonic}
+The explicit function
 $$
 \boxed{
 u(z)
@@ -89,8 +95,8 @@ u(z)
 $$
 is continuous on $A$ and harmonic on the interior of $A$.
 
-::: {.proof}
-By step <1>1, $\Phi(A)$ lies in the domain of the principal logarithm, so
+::: pf-proof
+By step [](#phi-maps-quadrant){.pf-ref}, $\Phi(A)$ lies in the domain of the principal logarithm, so
 $\log\circ\Phi$ is continuous on $A$. Hence $u$ is continuous on $A$.
 
 On the interior of $A$, the image of $\Phi$ lies in the open first quadrant,
@@ -99,16 +105,19 @@ $\log\circ\Phi$ is holomorphic on the interior of $A$. Its imaginary part is
 therefore harmonic, and so is $u$.
 :::
 
-<1>3. The function in step <1>2 has the prescribed boundary values.
+:::
 
-::: {.proof}
-For $z\in A\cap\RR$, step <1>1 gives $\Phi(z)>0$, so the principal argument
+::: {.pf-step #u-boundary-values}
+The function in step [](#u-harmonic){.pf-ref} has the prescribed boundary values.
+
+::: pf-proof
+For $z\in A\cap\RR$, step [](#phi-maps-quadrant){.pf-ref} gives $\Phi(z)>0$, so the principal argument
 of $\Phi(z)$ is $0$. Hence
 $$
 u(z)=3.
 $$
 
-If $z\in A$ lies on the unit circle, step <1>1 gives
+If $z\in A$ lies on the unit circle, step [](#phi-maps-quadrant){.pf-ref} gives
 $\Phi(z)\in i\RR_{>0}$, whose principal argument is $\pi/2$. Therefore
 $$
 u(z)
@@ -119,9 +128,12 @@ u(z)
 $$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3 verify all required properties of the displayed function.
 :::
+
+::: pf-qed
+Steps [](#u-harmonic){.pf-ref} and [](#u-boundary-values){.pf-ref} verify all required properties of the displayed function.
+:::
+
+:::
+
 :::

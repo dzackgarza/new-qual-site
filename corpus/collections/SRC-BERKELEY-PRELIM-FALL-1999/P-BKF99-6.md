@@ -34,11 +34,15 @@ if and only if the characteristic polynomial of $T$ has a factor $f\in F[t]$ sat
 :::
 
 ::: {.solution}
-<1>1. If $T$ has a nonzero proper invariant subspace $W$, then its
+
+::: pf
+
+::: {.pf-step #invariant-subspace-gives-factor}
+If $T$ has a nonzero proper invariant subspace $W$, then its
 characteristic polynomial has a factor of degree strictly between $0$ and
 $n$.
 
-::: {.proof}
+::: pf-proof
 Let $d=\dim W$, so $0<d<n$. Choose a basis of $W$ and extend it to a basis of
 $V$. Since $W$ is $T$-invariant, the matrix of $T$ in this basis has block
 upper-triangular form
@@ -61,22 +65,28 @@ Thus $f(t)=\det(tI_d-A)$ is a factor of $\chi_T$ with
 $\deg f=d$, and $0<d<n$.
 :::
 
-<1>2. If $T$ has no nonzero proper invariant subspace, then $V$ is a simple
+:::
+
+::: {.pf-step #simple-module}
+If $T$ has no nonzero proper invariant subspace, then $V$ is a simple
 $F[t]$-module under the action
 $$
 p(t)\cdot v=p(T)v.
 $$
 
-::: {.proof}
+::: pf-proof
 The $F[t]$-submodules for this action are exactly the $F$-linear subspaces
 stable under $T$. Thus the assumption says precisely that the only
 $F[t]$-submodules are $0$ and $V$.
 :::
 
-<1>3. Under the hypothesis of step <1>2, the characteristic polynomial
+:::
+
+::: {.pf-step #char-poly-irreducible}
+Under the hypothesis of step [](#simple-module){.pf-ref}, the characteristic polynomial
 $\chi_T$ is irreducible over $F$.
 
-::: {.proof}
+::: pf-proof
 Choose $0\neq v\in V$. Since $V$ is simple, the nonzero submodule
 $F[t]v$ equals $V$. Therefore
 $$
@@ -106,18 +116,24 @@ $$
 which is irreducible.
 :::
 
-<1>4. If $\chi_T$ has a factor $f\in F[t]$ with
+:::
+
+::: {.pf-step #reducible-implies-invariant-subspace}
+If $\chi_T$ has a factor $f\in F[t]$ with
 $0<\deg f<n$, then $T$ has a nonzero proper invariant subspace.
 
-::: {.proof}
+::: pf-proof
 Such a factorization makes the degree-$n$ polynomial $\chi_T$ reducible.
-The contrapositive of step <1>3 says that $T$ cannot have no nonzero proper
+The contrapositive of step [](#char-poly-irreducible){.pf-ref} says that $T$ cannot have no nonzero proper
 invariant subspace. Hence such a subspace exists.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves one implication and step <1>4 proves the converse.
 :::
+
+::: pf-qed
+Step [](#invariant-subspace-gives-factor){.pf-ref} proves one implication and step [](#reducible-implies-invariant-subspace){.pf-ref} proves the converse.
+:::
+
+:::
+
 :::

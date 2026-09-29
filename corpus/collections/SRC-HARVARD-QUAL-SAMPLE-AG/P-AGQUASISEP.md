@@ -27,7 +27,11 @@ Do you know what quasi-separated means?
 :::
 
 ::: {.solution}
-<1>1. A morphism
+
+::: pf
+
+::: {.pf-step #quasi-separated-definition}
+A morphism
 \[
 f:X\longrightarrow Y
 \]
@@ -36,7 +40,8 @@ is quasi-separated if its relative diagonal
 \Delta_{X/Y}:X\longrightarrow X\times_YX
 \]
 is quasicompact.
-::: {.proof}
+
+::: pf-proof
 This is the definition.  Thus quasi-separatedness is obtained from separatedness by weakening the requirement
 \[
 \Delta_{X/Y}\text{ closed immersion}
@@ -47,8 +52,12 @@ to the finiteness condition
 \]
 :::
 
-<1>2. A scheme $X$ is quasi-separated if and only if the intersection of any two affine open subsets of $X$ is quasicompact.
-::: {.proof}
+:::
+
+::: {.pf-step #affine-intersection-criterion}
+A scheme $X$ is quasi-separated if and only if the intersection of any two affine open subsets of $X$ is quasicompact.
+
+::: pf-proof
 Regard quasi-separatedness of $X$ as quasi-separatedness of the structure morphism
 \[
 X\longrightarrow\operatorname{Spec}\mathbb Z.
@@ -65,8 +74,12 @@ U\cap V.
 Since the products $U\times V$ form an affine open cover of $X\times X$, the diagonal is quasicompact exactly when each such inverse image $U\cap V$ is quasicompact.
 :::
 
-<1>3. Equivalently, $X$ is quasi-separated if the intersection of any two quasicompact open subsets is quasicompact.
-::: {.proof}
+:::
+
+::: {.pf-step #quasicompact-intersection-criterion}
+Equivalently, $X$ is quasi-separated if the intersection of any two quasicompact open subsets is quasicompact.
+
+::: pf-proof
 The implication to affine opens is immediate because affine schemes are quasicompact.
 
 Conversely, let $U,V$ be quasicompact opens.  Choose finite affine covers
@@ -83,8 +96,12 @@ U\cap V
 If intersections of affine opens are quasicompact, this is a finite union of quasicompact opens and is therefore quasicompact.
 :::
 
-<1>4. Every separated morphism is quasi-separated.
-::: {.proof}
+:::
+
+::: {.pf-step #separated-implies-quasiseparated}
+Every separated morphism is quasi-separated.
+
+::: pf-proof
 If $f$ is separated, then
 \[
 \Delta_{X/Y}:X\to X\times_YX
@@ -92,8 +109,12 @@ If $f$ is separated, then
 is a closed immersion.  Closed immersions are quasicompact, so the diagonal is quasicompact.  Hence $f$ is quasi-separated.
 :::
 
-<1>5. Every morphism with Noetherian source is quasi-separated; in particular every morphism between Noetherian schemes is quasi-separated.
-::: {.proof}
+:::
+
+::: {.pf-step #noetherian-implies-quasiseparated}
+Every morphism with Noetherian source is quasi-separated; in particular every morphism between Noetherian schemes is quasi-separated.
+
+::: pf-proof
 If $X$ is Noetherian, every open subset of $X$ is quasicompact.  For the diagonal
 \[
 \Delta_{X/Y}:X\longrightarrow X\times_YX,
@@ -101,8 +122,11 @@ If $X$ is Noetherian, every open subset of $X$ is quasicompact.  For the diagona
 the inverse image of every affine open of the target is an open subset of $X$, hence is quasicompact.  Thus the diagonal is a quasicompact morphism.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Step <1>1 is the definition, and steps <1>2--<1>5 give its standard working forms and immediate relation to separatedness.
+:::
+
+::: pf-qed
+Step [](#quasi-separated-definition){.pf-ref} is the definition, and steps [](#affine-intersection-criterion){.pf-ref}, [](#quasicompact-intersection-criterion){.pf-ref}, [](#separated-implies-quasiseparated){.pf-ref} and [](#noetherian-implies-quasiseparated){.pf-ref} give its standard working forms and immediate relation to separatedness.
+:::
+
 :::
 :::

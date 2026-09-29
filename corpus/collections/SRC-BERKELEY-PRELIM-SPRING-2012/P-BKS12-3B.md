@@ -40,7 +40,10 @@ F(z)\coloneqq\frac{z^4}{z^5-z-1}.
 $$
 Take $C$ with the standard positive, counterclockwise orientation.
 
-<1>1. Every zero of
+::: pf
+
+::: {.pf-step #zeros-inside}
+Every zero of
 $$
 z^5-z-1
 $$
@@ -50,7 +53,7 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
+::: pf-proof
 On $\abs{z}=2$,
 $$
 \abs{z^5}=32,
@@ -72,12 +75,15 @@ number of zeros in $\abs{z}<2$, namely five counted with multiplicity.
 Since the denominator has degree five, these are all its zeros.
 :::
 
-<1>2. The residue of $F$ at infinity is
+:::
+
+::: {.pf-step #residue-at-infinity}
+The residue of $F$ at infinity is
 $$
 \operatorname{Res}_{z=\infty}F(z)=-1.
 $$
 
-::: {.proof}
+::: pf-proof
 For large $z$,
 $$
 \begin{aligned}
@@ -98,9 +104,12 @@ The residue at infinity is the negative of the coefficient of $z^{-1}$ in
 the Laurent expansion at infinity. Hence it is $-1$.
 :::
 
-<1>3. The sum of all finite residues of $F$ is $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #finite-residue-sum}
+The sum of all finite residues of $F$ is $1$.
+
+::: pf-proof
 For a rational function,
 $$
 \sum_{\text{finite }a}\operatorname{Res}_{z=a}F
@@ -109,10 +118,13 @@ $$
 =
 0.
 $$
-Step <1>2 therefore gives the finite-residue sum as $1$.
+Step [](#residue-at-infinity){.pf-ref} therefore gives the finite-residue sum as $1$.
 :::
 
-<1>4. The contour integral is
+:::
+
+::: {.pf-step #contour-value}
+The contour integral is
 $$
 \boxed{
 \int_C\frac{z^4}{z^5-z-1}\,dz
@@ -121,9 +133,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>1, $C$ encloses every finite pole of $F$. The residue theorem
-and step <1>3 therefore give
+::: pf-proof
+By step [](#zeros-inside){.pf-ref}, $C$ encloses every finite pole of $F$. The residue theorem
+and step [](#finite-residue-sum){.pf-ref} therefore give
 $$
 \int_CF(z)\,dz
 =
@@ -135,9 +147,12 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required value.
 :::
+
+::: pf-qed
+Step [](#contour-value){.pf-ref} is the required value.
+:::
+
+:::
+
 :::

@@ -33,26 +33,36 @@ Show that $X$ is a Hausdorff space if and only if $\Delta$ is closed in $X \time
 :::
 
 ::: {.solution}
-<1>1. If $X$ is Hausdorff, then $\Delta$ is closed in $X\times X$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #hausdorff-implies-diagonal-closed}
+If $X$ is Hausdorff, then $\Delta$ is closed in $X\times X$.
+
+::: pf-proof
 Let $(x,y)\notin\Delta$, so $x\neq y$.
 Choose disjoint open $U\ni x$ and $V\ni y$.
 Then $U\times V$ is an open neighborhood of $(x,y)$, and it misses $\Delta$: if $(z,z)\in U\times V$, then $z\in U\cap V=\varnothing$.
 So $(X\times X)\setminus\Delta$ is open.
 :::
 
-<1>2. If $\Delta$ is closed in $X\times X$, then $X$ is Hausdorff.
+:::
 
-::: {.proof}
+::: {.pf-step #diagonal-closed-implies-hausdorff}
+If $\Delta$ is closed in $X\times X$, then $X$ is Hausdorff.
+
+::: pf-proof
 Let $x\neq y$.
 Then $(x,y)$ lies in the open set $(X\times X)\setminus\Delta$, so there are open $U\ni x$ and $V\ni y$ with $U\times V\subseteq(X\times X)\setminus\Delta$.
 If $z\in U\cap V$, then $(z,z)\in(U\times V)\cap\Delta=\varnothing$; so $U\cap V=\varnothing$.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 give the two implications.
 :::
+
+::: pf-qed
+Steps [](#hausdorff-implies-diagonal-closed){.pf-ref} and [](#diagonal-closed-implies-hausdorff){.pf-ref} give the two implications.
+:::
+
+:::
+
 :::

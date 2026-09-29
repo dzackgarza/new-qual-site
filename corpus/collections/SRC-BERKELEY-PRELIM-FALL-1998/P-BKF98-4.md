@@ -39,6 +39,7 @@ be?
 :::
 
 ::: {.solution}
+
 Set
 $$
 r\coloneqq\log2.
@@ -48,7 +49,10 @@ $$
 0<r<1.
 $$
 
-<1>1. The function
+::: pf
+
+::: {.pf-step #g-normalized-bound}
+The function
 $$
 g(z)\coloneqq e^{-z}f(z)
 $$
@@ -62,7 +66,7 @@ $$
 $$
 for $\abs z=1$.
 
-::: {.proof}
+::: pf-proof
 The exponential never vanishes, so $g$ has the same domain of analyticity
 as $f$. The prescribed zero gives
 $$
@@ -82,7 +86,10 @@ e^{-\Re z}\abs{e^z}
 $$
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #blaschke-factor-B}
+Define
 $$
 B(z)\coloneqq\frac{z+r}{1+rz}.
 $$
@@ -96,7 +103,7 @@ $$
 $$
 for $\abs z=1$.
 
-::: {.proof}
+::: pf-proof
 The only pole of $B$ is at
 $$
 z=-\frac1r,
@@ -119,7 +126,10 @@ $$
 Hence the two moduli are equal, so $\abs{B(z)}=1$.
 :::
 
-<1>3. The quotient
+:::
+
+::: {.pf-step #quotient-q-bounded}
+The quotient
 $$
 q(z)\coloneqq\frac{g(z)}{B(z)}
 $$
@@ -129,12 +139,12 @@ $$
 $$
 throughout the closed unit disk.
 
-::: {.proof}
+::: pf-proof
 Both $g$ and $B$ vanish at $-r$, while $B$ has a simple zero there.
 Therefore $g/B$ has at worst a removable singularity at $-r$, and it
 extends holomorphically.
 
-On $\abs z=1$, steps <1>1 and <1>2 give
+On $\abs z=1$, steps [](#g-normalized-bound){.pf-ref} and [](#blaschke-factor-B){.pf-ref} give
 $$
 \abs{q(z)}
 =
@@ -145,15 +155,18 @@ The maximum modulus principle then gives the same bound throughout the unit
 disk.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #g-at-r-bound}
+One has
 $$
 \abs{g(r)}
 \leq
 \frac{2r}{1+r^2}.
 $$
 
-::: {.proof}
-Step <1>3 gives
+::: pf-proof
+Step [](#quotient-q-bounded){.pf-ref} gives
 $$
 \abs{g(r)}
 =
@@ -169,7 +182,10 @@ B(r)
 $$
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #f-at-log2-bound}
+Therefore
 $$
 \abs{f(\log2)}
 \leq
@@ -178,26 +194,29 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $f(z)=e^zg(z)$ and $e^r=2$,
 $$
 \abs{f(r)}
 =
 2\abs{g(r)}.
 $$
-Apply step <1>4 and substitute $r=\log2$.
+Apply step [](#g-at-r-bound){.pf-ref} and substitute $r=\log2$.
 :::
 
-<1>6. The bound in step <1>5 is attained.
+:::
 
-::: {.proof}
+::: {.pf-step #bound-attained}
+The bound in step [](#f-at-log2-bound){.pf-ref} is attained.
+
+::: pf-proof
 For any constant $C$ with $\abs C=1$, define
 $$
 f_C(z)
 \coloneqq
 C e^z B(z).
 $$
-By step <1>2, this function is analytic on a neighborhood of the closed
+By step [](#blaschke-factor-B){.pf-ref}, this function is analytic on a neighborhood of the closed
 unit disk and satisfies
 $$
 f_C(-r)=0.
@@ -216,23 +235,29 @@ $$
 =
 2\frac{2r}{1+r^2},
 $$
-which is exactly the bound in step <1>5.
+which is exactly the bound in step [](#f-at-log2-bound){.pf-ref}.
 :::
 
-<1>7. The largest possible value is
+:::
+
+::: {.pf-step #largest-value}
+The largest possible value is
 $$
 \boxed{
 \frac{4\log2}{1+(\log2)^2}
 }.
 $$
 
-::: {.proof}
-Step <1>5 gives the upper bound and step <1>6 shows it is sharp.
+::: pf-proof
+Step [](#f-at-log2-bound){.pf-ref} gives the upper bound and step [](#bound-attained){.pf-ref} shows it is sharp.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 answers the question.
 :::
+
+::: pf-qed
+Step [](#largest-value){.pf-ref} answers the question.
+:::
+
+:::
+
 :::

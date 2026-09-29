@@ -40,7 +40,10 @@ T(it)=\frac{t-1}{t+1}\in[-1,0),
 $$
 so the slit maps to that radial segment.
 
-<1>1. Rotate by $-1$:
+::: pf
+
+::: pf-step
+Rotate by $-1$:
 $$
 \zeta=-T(z).
 $$
@@ -53,8 +56,10 @@ Squaring maps this slit sector biholomorphically onto
 $$
 \{u:\Re u>0\}\setminus(0,1].
 $$
+:::
 
-<1>2. The Cayley transform
+::: pf-step
+The Cayley transform
 $$
 v=\frac{u-1}{u+1}
 $$
@@ -66,8 +71,10 @@ The principal square root maps this slit disk biholomorphically onto the right h
 $$
 H_+=\{s:|s|<1,\ \Re s>0\}.
 $$
+:::
 
-<1>3. Finally,
+::: pf-step
+Finally,
 $$
 q=\frac{s-i}{s+i}
 $$
@@ -81,4 +88,6 @@ z\mapsto T(z)\mapsto -T(z)\mapsto(-T(z))^2
 \mapsto q\mapsto q^2
 $$
 with the principal square root is a bijective conformal map $G\to\mathbb H$.
+:::
+
 :::

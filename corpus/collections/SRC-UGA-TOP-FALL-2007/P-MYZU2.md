@@ -33,8 +33,12 @@ Let
 Y=\bigcup_{\alpha\in A}X_\alpha.
 \]
 
-<1>1. Any separation of $Y$ would separate one of the subspaces $X_\alpha$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #separation-restricts}
+Any separation of $Y$ would separate one of the subspaces $X_\alpha$.
+
+::: pf-proof
 Suppose
 \[
 Y=U\disjoint V.
@@ -54,9 +58,16 @@ The sets $U\cap X_\alpha$ and $V\cap X_\alpha$ are disjoint, nonempty, open in t
 Thus they form a separation of $X_\alpha$.
 :::
 
-<1>2. $Y$ is connected.
-::: {.proof}
-If $Y$ were disconnected, a separation would exist.
-By <1>1 it would separate some $X_\alpha$, contradicting the hypothesis that every $X_\alpha$ is connected.
 :::
+
+::: pf-step
+$Y$ is connected.
+
+::: pf-proof
+If $Y$ were disconnected, a separation would exist.
+By step [](#separation-restricts){.pf-ref} it would separate some $X_\alpha$, contradicting the hypothesis that every $X_\alpha$ is connected.
+:::
+
+:::
+
 :::

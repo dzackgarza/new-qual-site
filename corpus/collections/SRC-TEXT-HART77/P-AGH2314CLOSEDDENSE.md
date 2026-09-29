@@ -28,12 +28,17 @@ Give an example to show that this is not true for arbitrary schemes.
 :::
 
 ::: {.solution}
-<1>1. Let $X$ be of finite type over a field $k$.  Every affine open
+
+::: pf
+
+::: {.pf-step #affine-opens-finitely-generated-k-algebra}
+Let $X$ be of finite type over a field $k$.  Every affine open
 \[
 U=\Spec A\subseteq X
 \]
 has $A$ a finitely generated $k$-algebra.
-::: {.proof}
+
+::: pf-proof
 Apply Hartshorne II.3.3(c) to the finite type structure morphism
 \[
 X\longrightarrow\Spec k.
@@ -41,15 +46,19 @@ X\longrightarrow\Spec k.
 Since the target is affine, every affine open in $X$ has coordinate ring finitely generated over $k$.
 :::
 
-<1>2. If $x\in X$ has residue field $\kappa(x)$ finite over $k$, then $x$ is a closed point of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #finite-residue-field-implies-closed}
+If $x\in X$ has residue field $\kappa(x)$ finite over $k$, then $x$ is a closed point of $X$.
+
+::: pf-proof
 Suppose $y$ is a specialization of $x$.  Choose an affine neighborhood
 \[
 V=\Spec B
 \]
 of $y$.  Open subsets are stable under generization, so $x\in V$ as well.
 
-Let $\mathfrak p\subseteq B$ be the prime corresponding to $x$.  By <1>1, $B$ is a finitely generated $k$-algebra, hence so is $B/\mathfrak p$.  Moreover
+Let $\mathfrak p\subseteq B$ be the prime corresponding to $x$.  By step [](#affine-opens-finitely-generated-k-algebra){.pf-ref}, $B$ is a finitely generated $k$-algebra, hence so is $B/\mathfrak p$.  Moreover
 \[
 B/\mathfrak p\subseteq\kappa(x),
 \]
@@ -58,28 +67,40 @@ and $\kappa(x)$ is finite-dimensional over $k$.  Therefore $B/\mathfrak p$ is fi
 Hence $x$ has no proper specialization inside $V$.  Since $y\in V$ is a specialization of $x$, we obtain $y=x$.  Therefore $x$ has no proper specialization in $X$ and is closed.
 :::
 
-<1>3. Every nonempty open subset $W\subseteq X$ contains a closed point of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #nonempty-open-contains-closed-point}
+Every nonempty open subset $W\subseteq X$ contains a closed point of $X$.
+
+::: pf-proof
 Choose any point of $W$ and an affine neighborhood
 \[
 U=\Spec A\subseteq W.
 \]
 The nonzero ring $A$ has a maximal ideal $\mathfrak m$, giving a point $x\in U$.
 
-By <1>1, $A$ is a finitely generated $k$-algebra.  Zariski's lemma therefore implies that
+By step [](#affine-opens-finitely-generated-k-algebra){.pf-ref}, $A$ is a finitely generated $k$-algebra.  Zariski's lemma therefore implies that
 \[
 \kappa(x)=A/\mathfrak m
 \]
-is a finite algebraic extension of $k$.  Step <1>2 now shows that $x$ is closed in all of $X$.
+is a finite algebraic extension of $k$.  Step [](#finite-residue-field-implies-closed){.pf-ref} now shows that $x$ is closed in all of $X$.
 :::
 
-<1>4. The closed points of $X$ are dense.
-::: {.proof}
-A subset is dense exactly when every nonempty open subset meets it.  This is precisely <1>3.
 :::
 
-<1>5. The conclusion fails for arbitrary schemes.
-::: {.proof}
+::: {.pf-step #closed-points-dense}
+The closed points of $X$ are dense.
+
+::: pf-proof
+A subset is dense exactly when every nonempty open subset meets it.  This is precisely step [](#nonempty-open-contains-closed-point){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #counterexample-dvr}
+The conclusion fails for arbitrary schemes.
+
+::: pf-proof
 Let
 \[
 R=k[t]_{(t)}
@@ -101,8 +122,12 @@ The only closed point is $(t)$.  Its closure is itself:
 Thus the set of closed points is not dense.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Step <1>4 proves density for finite-type schemes over a field, and <1>5 gives the requested counterexample.
 :::
+
+::: pf-qed
+Step [](#closed-points-dense){.pf-ref} proves density for finite-type schemes over a field, and step [](#counterexample-dvr){.pf-ref} gives the requested counterexample.
+:::
+
+:::
+
 :::

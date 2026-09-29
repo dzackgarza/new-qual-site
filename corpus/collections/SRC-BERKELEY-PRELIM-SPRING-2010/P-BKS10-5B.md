@@ -34,7 +34,11 @@ Hint: first treat the case in which the integral vanishes for every $n\ge0$.
 :::
 
 ::: {.solution}
-<1>1. Choose an integer $N\geq0$ such that
+
+::: pf
+
+::: {.pf-step #g-polynomial-orthogonal}
+Choose an integer $N\geq0$ such that
 $$
 \int_0^1 f(x)x^n\,dx=0
 $$
@@ -48,7 +52,7 @@ $$
 $$
 for every polynomial $p$.
 
-::: {.proof}
+::: pf-proof
 For every integer $m\geq0$,
 $$
 \int_0^1 g(x)x^m\,dx
@@ -61,12 +65,15 @@ By linearity, the same equality holds with $x^m$ replaced by any
 polynomial $p$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #g-l2-norm-zero}
+One has
 $$
 \int_0^1\abs{g(x)}^2\,dx=0.
 $$
 
-::: {.proof}
+::: pf-proof
 By the Weierstrass approximation theorem, there is a sequence of
 polynomials $p_j$ converging uniformly on $[0,1]$ to
 $$
@@ -75,7 +82,7 @@ $$
 For real-valued $f$, the conjugation is redundant; the same argument uses
 $g$ itself.
 
-By step <1>1,
+By step [](#g-polynomial-orthogonal){.pf-ref},
 $$
 \int_0^1g(x)p_j(x)\,dx=0
 $$
@@ -103,25 +110,31 @@ $$
 $$
 :::
 
-<1>3. The function $g$ vanishes identically on $[0,1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #g-vanishes}
+The function $g$ vanishes identically on $[0,1]$.
+
+::: pf-proof
 The function
 $$
 x\longmapsto\abs{g(x)}^2
 $$
 is continuous and nonnegative. If it were positive at some point, it would
 remain bounded below by a positive number on a nondegenerate interval,
-making its integral positive. This contradicts step <1>2. Therefore
+making its integral positive. This contradicts step [](#g-l2-norm-zero){.pf-ref}. Therefore
 $$
 g(x)=0
 $$
 for every $x\in[0,1]$.
 :::
 
-<1>4. The original function $f$ vanishes identically on $[0,1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #f-vanishes}
+The original function $f$ vanishes identically on $[0,1]$.
+
+::: pf-proof
 For every $x\in(0,1]$,
 $$
 0=g(x)=x^Nf(x).
@@ -141,9 +154,12 @@ $$
 Thus $f\equiv0$ on $[0,1]$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-vanishes){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

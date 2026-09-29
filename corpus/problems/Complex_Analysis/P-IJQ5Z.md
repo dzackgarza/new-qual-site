@@ -47,7 +47,10 @@ is a biholomorphism from $\Omega$ onto the right half-plane
 H=\{u:\Re u>0\}.
 \]
 
-<1>1. The Cayley transform
+::: pf
+
+::: pf-step
+The Cayley transform
 \[
 C(u)=\frac{u-1}{u+1}
 \]
@@ -56,17 +59,23 @@ maps $H$ biholomorphically onto $\mathbb D$. Indeed, if $u=x+iy$ with $x>0$, the
 |C(u)|^2
 =\frac{(x-1)^2+y^2}{(x+1)^2+y^2}<1.
 \]
+:::
 
-<1>2. Therefore
+::: pf-step
+Therefore
 \[
 F(z)=\frac{\sqrt z-1}{\sqrt z+1}
 \]
 is a conformal bijection $\Omega\to\mathbb D$.
+:::
 
-<1>3. Solving for $z$ gives
+::: pf-step
+Solving for $z$ gives
 \[
 F^{-1}(w)=\left(\frac{1+w}{1-w}\right)^2,
 \qquad |w|<1.
 \]
 Since $(1+w)/(1-w)$ lies in the right half-plane, its square lies in $\Omega$, so this is indeed the inverse.
+:::
+
 :::

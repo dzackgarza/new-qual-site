@@ -44,7 +44,10 @@ f_t(s,t)=-6s+2t,
 f_t(P)=-4\sqrt2\ne0.
 \]
 
-<1>1. Over $\mathbb R$, the implicit-function theorem gives neighborhoods $U\ni s_0$ and $V\ni t_0$ and a unique $C^1$ function
+::: pf
+
+::: pf-step
+Over $\mathbb R$, the implicit-function theorem gives neighborhoods $U\ni s_0$ and $V\ni t_0$ and a unique $C^1$ function
 \[
 g:U\to V
 \]
@@ -58,10 +61,14 @@ Moreover,
 \[
 g'(s)=-\frac{f_s(s,g(s))}{f_t(s,g(s))}.
 \]
+:::
 
-<1>2. Over $\mathbb C$, regarding the same polynomial as holomorphic on $\mathbb C^2$, the complex implicit-function theorem gives neighborhoods $U,V\subset\mathbb C$ and a unique holomorphic map $g:U\to V$ satisfying the same equations.
+::: pf-step
+Over $\mathbb C$, regarding the same polynomial as holomorphic on $\mathbb C^2$, the complex implicit-function theorem gives neighborhoods $U,V\subset\mathbb C$ and a unique holomorphic map $g:U\to V$ satisfying the same equations.
+:::
 
-<1>3. To derive the complex theorem from the real one, write
+::: pf-step
+To derive the complex theorem from the real one, write
 \[
 s=x+iy,
 \qquad
@@ -88,8 +95,10 @@ Hence
 \det D_tF=|f_t|^2.
 \]
 At $P$ this determinant is nonzero, so the real implicit-function theorem gives a unique $C^1$ map $g$.
+:::
 
-<1>4. Differentiating $F(s,g(s))=0$ gives
+::: pf-step
+Differentiating $F(s,g(s))=0$ gives
 \[
 Dg=-(D_tF)^{-1}D_sF.
 \]
@@ -101,4 +110,6 @@ Both $D_tF$ and $D_sF$ are real matrices representing multiplication by complex 
 \end{pmatrix}.
 \]
 Thus $g$ satisfies the Cauchy--Riemann equations. Since $g$ is $C^1$, it is holomorphic, proving the complex conclusion from the real theorem.
+:::
+
 :::

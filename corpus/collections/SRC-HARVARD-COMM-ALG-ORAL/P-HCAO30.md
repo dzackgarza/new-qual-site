@@ -42,8 +42,12 @@ when either
 \]
 or $|\alpha|=|\beta|$ and $\alpha$ precedes $\beta$ lexicographically.
 
-<1>1. This is a term order.
-::: {.proof}
+::: pf
+
+::: pf-step
+This is a term order.
+
+::: pf-proof
 Lexicographic order is a term order on exponent vectors. Comparing total degree
 first preserves totality and well-ordering. Moreover, adding the same exponent
 vector $\gamma$ preserves both the total-degree comparison and, when the
@@ -51,9 +55,17 @@ degrees tie, the lexicographic comparison. Hence multiplication by a monomial
 preserves the order.
 :::
 
-<1>2. It refines total degree.
-::: {.proof}
+:::
+
+::: pf-step
+It refines total degree.
+
+::: pf-proof
 If $|\alpha|<|\beta|$, the first clause forces
 $x^\alpha\prec x^\beta$, independently of the lexicographic tie-breaker.
+:::
+
+:::
+
 :::
 :::

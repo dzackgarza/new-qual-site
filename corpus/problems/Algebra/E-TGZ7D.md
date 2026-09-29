@@ -30,7 +30,11 @@ Let $\phi,\psi$ be commuting endomorphisms of a finite-dimensional vector space 
 :::
 
 ::: {.solution}
-<1>1. Assume $k$ is algebraically closed. Then $\phi$ has an eigenvalue $\lambda$, and its nonzero eigenspace
+
+::: pf
+
+::: pf-step
+Assume $k$ is algebraically closed. Then $\phi$ has an eigenvalue $\lambda$, and its nonzero eigenspace
 \[
 E_\lambda=\ker(\phi-\lambda I)
 \]
@@ -39,10 +43,16 @@ is invariant under $\psi$, because for $v\in E_\lambda$,
 \phi(\psi v)=\psi(\phi v)=\lambda\psi v.
 \]
 The restriction $\psi|_{E_\lambda}$ has an eigenvector $0\ne v\in E_\lambda$ since $k$ is algebraically closed. Then $v$ is an eigenvector of both operators.
+:::
 
-<1>2. Now suppose both $\phi$ and $\psi$ are diagonalizable. Decompose
+::: pf-step
+Now suppose both $\phi$ and $\psi$ are diagonalizable. Decompose
 \[
 E=\bigoplus_\lambda E_\lambda
 \]
 into eigenspaces of $\phi$. As above, every $E_\lambda$ is $\psi$-invariant. Since $\psi$ is diagonalizable, its minimal polynomial splits into distinct linear factors; the minimal polynomial of each restriction $\psi|_{E_\lambda}$ divides it, so each restriction is diagonalizable. Choose an eigenbasis for $\psi$ inside each $E_\lambda$. The union of these bases is a basis of $E$ consisting of simultaneous eigenvectors of $\phi$ and $\psi$.
+:::
+
+:::
+
 :::

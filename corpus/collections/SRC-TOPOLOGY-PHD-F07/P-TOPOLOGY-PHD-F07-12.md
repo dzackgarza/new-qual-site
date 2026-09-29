@@ -37,13 +37,17 @@ Prove that in a regular space disjoint closed and compact sets can be separated 
 ::: {.solution}
 Let $F,K\subseteq X$ be disjoint, with $F$ closed and $K$ compact.
 
-<1>1. For each $x\in K$, there are disjoint open sets $U_x,V_x\subseteq X$ such that
+::: pf
+
+::: {.pf-step #separate-x-from-f}
+For each $x\in K$, there are disjoint open sets $U_x,V_x\subseteq X$ such that
 \[
 x\in U_x
 \qquad\text{and}\qquad
 F\subseteq V_x.
 \]
-::: {.proof}
+
+::: pf-proof
 For each $x\in K$, disjointness of $F$ and $K$ gives
 \[
 x\notin F.
@@ -60,13 +64,17 @@ U_x\cap V_x=\varnothing.
 \]
 :::
 
-<1>2. Finitely many of the sets $U_x$ cover $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #finite-subcover}
+Finitely many of the sets $U_x$ cover $K$.
+
+::: pf-proof
 The family
 \[
 \{U_x:x\in K\}
 \]
-is an open cover of $K$ by <1>1. Since $K$ is compact, there exist points
+is an open cover of $K$ by step [](#separate-x-from-f){.pf-ref}. Since $K$ is compact, there exist points
 \[
 x_1,\ldots,x_n\in K
 \]
@@ -76,7 +84,10 @@ K\subseteq U_{x_1}\cup\cdots\cup U_{x_n}.
 \]
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #u-v-contain}
+Define
 \[
 U=U_{x_1}\cup\cdots\cup U_{x_n},
 \qquad
@@ -88,13 +99,18 @@ K\subseteq U
 \qquad\text{and}\qquad
 F\subseteq V.
 \]
-::: {.proof}
-The set $U$ is a finite union of open sets, hence open, and contains $K$ by <1>2. The set $V$ is a finite intersection of open sets, hence open.
-By <1>1, every $V_{x_i}$ contains $F$, so their intersection $V$ also contains $F$.
+
+::: pf-proof
+The set $U$ is a finite union of open sets, hence open, and contains $K$ by step [](#finite-subcover){.pf-ref}. The set $V$ is a finite intersection of open sets, hence open.
+By step [](#separate-x-from-f){.pf-ref}, every $V_{x_i}$ contains $F$, so their intersection $V$ also contains $F$.
 :::
 
-<1>4. The open sets $U$ and $V$ are disjoint.
-::: {.proof}
+:::
+
+::: {.pf-step #u-v-disjoint}
+The open sets $U$ and $V$ are disjoint.
+
+::: pf-proof
 Suppose $y\in U\cap V$.
 Since $y\in U$, there is some $i$ such that
 \[
@@ -109,15 +125,24 @@ This contradicts
 \[
 U_{x_i}\cap V_{x_i}=\varnothing
 \]
-from <1>1. Therefore
+from step [](#separate-x-from-f){.pf-ref}. Therefore
 \[
 U\cap V=\varnothing.
 \]
 :::
 
-<1>5. Hence the closed set $F$ and the compact set $K$ can be separated by disjoint open sets.
-::: {.proof}
-By <1>3, $U$ and $V$ are open neighborhoods of $K$ and $F$, respectively, and by <1>4 they are disjoint.
+:::
+
+::: pf-step
+Hence the closed set $F$ and the compact set $K$ can be separated by disjoint open sets.
+
+::: pf-proof
+By step [](#u-v-contain){.pf-ref}, $U$ and $V$ are open neighborhoods of $K$ and $F$, respectively, and by step [](#u-v-disjoint){.pf-ref} they are disjoint.
 This is exactly the required separation.
 :::
+
+:::
+
+:::
+
 :::

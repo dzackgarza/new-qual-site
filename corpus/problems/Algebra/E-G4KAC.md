@@ -35,8 +35,12 @@ We use the description
 J(R)=\bigcap_{M\text{ maximal left ideal}}M.
 \]
 
-<1>1. If $j\in J(R)$, then $1-j$ is a unit.
-::: {.proof}
+::: pf
+
+::: {.pf-step #unit-if-j-in-jacobson}
+If $j\in J(R)$, then $1-j$ is a unit.
+
+::: pf-proof
 If the left ideal $R(1-j)$ were proper, it would lie in a maximal left ideal $M$. Since $j\in J(R)\subseteq M$, we would have
 \[
 1=(1-j)+j\in M,
@@ -56,13 +60,21 @@ v=v(ua)=(vu)a=a.
 Thus $au=1$ as well, and $a=1-j$ is a unit.
 :::
 
-<1>2. If $x\in J(R)$, then $1-xr$ is a unit for every $r\in R$.
-::: {.proof}
-Since $J(R)$ is a two-sided ideal, $xr\in J(R)$. Apply <1>1 to $j=xr$.
 :::
 
-<1>3. Conversely, suppose $1-xr$ is a unit for every $r\in R$. Then $x\in J(R)$.
-::: {.proof}
+::: {.pf-step #forward-direction}
+If $x\in J(R)$, then $1-xr$ is a unit for every $r\in R$.
+
+::: pf-proof
+Since $J(R)$ is a two-sided ideal, $xr\in J(R)$. Apply step [](#unit-if-j-in-jacobson){.pf-ref} to $j=xr$.
+:::
+
+:::
+
+::: {.pf-step #converse-direction}
+Conversely, suppose $1-xr$ is a unit for every $r\in R$. Then $x\in J(R)$.
+
+::: pf-proof
 We first use the elementary identity: if $1-ab$ is a unit, then so is $1-ba$, with inverse
 \[
 (1-ba)^{-1}=1+b(1-ab)^{-1}a.
@@ -80,8 +92,15 @@ m=1-rx.
 But $1-rx$ is a unit, impossible for an element of the proper left ideal $M$. Therefore $x\in M$ for every maximal left ideal $M$, hence $x\in J(R)$.
 :::
 
-Thus
+:::
+
+::: pf-qed
+By steps [](#forward-direction){.pf-ref} and [](#converse-direction){.pf-ref}, thus
 \[
 x\in J(R)\iff 1-xR\subseteq R^\times.
 \]
+:::
+
+:::
+
 :::

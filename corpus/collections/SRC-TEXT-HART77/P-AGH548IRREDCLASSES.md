@@ -74,7 +74,10 @@ and the $27$ lines are exactly the $(-1)$-curves listed in
 
 We first prove the linear-system lemma needed for the sufficiency of (c).
 
-<1>1. For $2\le r\le6$, write
+::: pf
+
+::: {.pf-step #linear-system-globally-generated-induction}
+For $2\le r\le6$, write
 $$
 X_r=\operatorname{Bl}_{P_1,\ldots,P_r}\PP^2,
 \qquad
@@ -89,16 +92,16 @@ $$
 \boxed{\OO_{X_r}(M)\text{ is globally generated}.}
 $$
 
-::: {.proof}
+::: pf-proof
 We prove this by induction on $r$, and for fixed $r$ by induction on the
 nonnegative anticanonical degree
 $$
 A_r\cdot M.
 $$
 The nonnegativity of this degree follows from the explicit decompositions of
-$A_r$ into $(-1)$-curve classes recorded in step <1>3 below.
+$A_r$ into $(-1)$-curve classes recorded in step [](#anticanonical-decomposition){.pf-ref} below.
 
-The base $r=2$ is proved in step <1>2. Assume $r>2$ and the assertion known
+The base $r=2$ is proved in step [](#x2-base-case){.pf-ref}. Assume $r>2$ and the assertion known
 for $X_{r-1}$.
 
 If there is a $(-1)$-curve $E$ with
@@ -156,7 +159,7 @@ so
 $$
 N\cdot E=M\cdot E-1\ge0.
 $$
-Step <1>3 shows that $A_r$ is a positive integral sum of $(-1)$-curve
+Step [](#anticanonical-decomposition){.pf-ref} shows that $A_r$ is a positive integral sum of $(-1)$-curve
 classes. Hence
 $$
 A_r\cdot N\ge0.
@@ -178,17 +181,20 @@ is very ample, in particular globally generated.
 
 This induction is well-founded also at anticanonical degree zero. Indeed, if
 $A_r\cdot M=0$ and every intersection $M\cdot E$ with a $(-1)$-curve were
-positive, the positive line decomposition of $A_r$ in step <1>3 would force
+positive, the positive line decomposition of $A_r$ in step [](#anticanonical-decomposition){.pf-ref} would force
 $A_r\cdot M>0$. Thus at degree zero the zero-intersection contraction case
 applies until the explicit $r=2$ base is reached.
 :::
 
-<1>2. The global-generation assertion of step <1>1 holds on
+:::
+
+::: {.pf-step #x2-base-case}
+The global-generation assertion of step [](#linear-system-globally-generated-induction){.pf-ref} holds on
 $$
 X_2=\operatorname{Bl}_{P_1,P_2}\PP^2.
 $$
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 M=ah-b_1e_1-b_2e_2.
@@ -228,10 +234,13 @@ summand line bundles are globally generated. Nonnegative tensor products of
 globally generated line bundles are globally generated, proving the claim.
 :::
 
-<1>3. For every $2\le r\le6$, the anticanonical class $A_r$ is a positive
+:::
+
+::: {.pf-step #anticanonical-decomposition}
+For every $2\le r\le6$, the anticanonical class $A_r$ is a positive
 integral sum of $(-1)$-curve classes.
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 L_{ij}=h-e_i-e_j.
@@ -267,14 +276,17 @@ $$
 $$
 :::
 
-<1>4. Under the hypotheses of step <1>1, if moreover
+:::
+
+::: {.pf-step #positive-square-irreducible-member}
+Under the hypotheses of step [](#linear-system-globally-generated-induction){.pf-ref}, if moreover
 $$
 M^2>0,
 $$
 then a general member of $|M|$ is a nonsingular irreducible curve.
 
-::: {.proof}
-We refine the induction in step <1>1.
+::: pf-proof
+We refine the induction in step [](#linear-system-globally-generated-induction){.pf-ref}.
 
 First take $r=2$. The decomposition there writes
 $$
@@ -322,7 +334,7 @@ Bertini's theorem for a base-point-free separable system gives a nonsingular
 general member, and Bertini irreducibility for a system with
 two-dimensional image makes it irreducible.
 
-Now let $r>2$. If $M\cdot E=0$ for some $(-1)$-curve, step <1>1 writes
+Now let $r>2$. If $M\cdot E=0$ for some $(-1)$-curve, step [](#linear-system-globally-generated-induction){.pf-ref} writes
 $$
 M=\sigma^*M'
 $$
@@ -336,12 +348,15 @@ point form a proper hyperplane in $|M'|$; choose the general smooth member
 outside that hyperplane. Its pullback is isomorphic to it and is a
 nonsingular irreducible member of $|M|$.
 
-If $M\cdot E>0$ for every $(-1)$-curve, step <1>1 proves that $M$ is very
+If $M\cdot E>0$ for every $(-1)$-curve, step [](#linear-system-globally-generated-induction){.pf-ref} proves that $M$ is very
 ample. A general hyperplane section of the corresponding embedding is
 nonsingular and irreducible by Bertini. This completes the induction.
 :::
 
-<1>5. Let $C\subseteq S$ be an irreducible curve and put
+:::
+
+::: {.pf-step #self-intersection-lower-bound}
+Let $C\subseteq S$ be an irreducible curve and put
 $$
 d=H\cdot C>0.
 $$
@@ -350,7 +365,7 @@ $$
 \boxed{C^2\ge d-2.}
 $$
 
-::: {.proof}
+::: pf-proof
 Adjunction and $K_S=-H$ give
 $$
 2p_a(C)-2=C^2-d.
@@ -366,14 +381,17 @@ $$
 which is the displayed inequality.
 :::
 
-<1>6. If an irreducible curve $C$ on $S$ has
+:::
+
+::: {.pf-step #negative-square-is-line}
+If an irreducible curve $C$ on $S$ has
 $$
 C^2<0,
 $$
 then $C$ is one of the $27$ lines.
 
-::: {.proof}
-Step <1>5 gives
+::: pf-proof
+Step [](#self-intersection-lower-bound){.pf-ref} gives
 $$
 d-2\le C^2<0.
 $$
@@ -390,7 +408,10 @@ $$
 is a projective line. Thus $C$ is one of the $27$ lines on $S$.
 :::
 
-<1>7. If an irreducible curve $C$ is not a line and satisfies
+:::
+
+::: {.pf-step #zero-square-is-conic}
+If an irreducible curve $C$ is not a line and satisfies
 $$
 C^2=0,
 $$
@@ -402,8 +423,8 @@ p_a(C)=0.}
 $$
 Thus $C$ is a conic.
 
-::: {.proof}
-Step <1>5 gives
+::: pf-proof
+Step [](#self-intersection-lower-bound){.pf-ref} gives
 $$
 d\le2.
 $$
@@ -422,7 +443,10 @@ $$
 In the anticanonical embedding a degree-two irreducible curve is a conic.
 :::
 
-<1>8. If $C$ is an irreducible curve which is neither a line nor a conic of
+:::
+
+::: {.pf-step #positive-square-satisfies-c}
+If $C$ is an irreducible curve which is neither a line nor a conic of
 self-intersection zero, then its class satisfies condition (c):
 $$
 \boxed{C\cdot L\ge0\text{ for every line }L,
@@ -430,14 +454,14 @@ $$
 C^2>0.}
 $$
 
-::: {.proof}
+::: pf-proof
 If $L$ is any line and $C\ne L$, the two distinct irreducible curves have
 nonnegative intersection number:
 $$
 C\cdot L\ge0.
 $$
-Since $C$ is not a line, step <1>6 excludes negative self-intersection; since
-it is not a conic of square zero, step <1>7 excludes zero self-intersection.
+Since $C$ is not a line, step [](#negative-square-is-line){.pf-ref} excludes negative self-intersection; since
+it is not a conic of square zero, step [](#zero-square-is-conic){.pf-ref} excludes zero self-intersection.
 Therefore
 $$
 C^2>0.
@@ -445,10 +469,13 @@ $$
 This proves the necessity of alternatives (a)--(c).
 :::
 
-<1>9. Every class in alternative (a) contains an irreducible nonsingular
+:::
+
+::: {.pf-step #line-classes-contain-line}
+Every class in alternative (a) contains an irreducible nonsingular
 curve.
 
-::: {.proof}
+::: pf-proof
 Alternative (a) is, by definition, one of the $27$ line classes. The
 corresponding line
 $$
@@ -457,10 +484,13 @@ $$
 is itself nonsingular and irreducible.
 :::
 
-<1>10. Every class in alternative (b) contains an irreducible nonsingular
+:::
+
+::: {.pf-step #conic-classes-contain-conic}
+Every class in alternative (b) contains an irreducible nonsingular
 conic.
 
-::: {.proof}
+::: pf-proof
 Let $D$ satisfy
 $$
 H\cdot D=2,
@@ -540,10 +570,13 @@ where the residual curves $Q_\Pi$ have class $H-L=D$. As proved directly in
 nonsingular and irreducible. Thus $D$ contains such a conic.
 :::
 
-<1>11. Every class in alternative (c) contains an irreducible nonsingular
+:::
+
+::: {.pf-step #condition-c-contains-curve}
+Every class in alternative (c) contains an irreducible nonsingular
 curve.
 
-::: {.proof}
+::: pf-proof
 For the cubic surface $S=X_6$, the lines are exactly its $(-1)$-curves.
 Condition (c) says precisely that
 $$
@@ -553,29 +586,34 @@ for every $(-1)$-curve $E$, and that
 $$
 D^2>0.
 $$
-Step <1>4, applied with $r=6$ and $M=D$, therefore gives a nonsingular
+Step [](#positive-square-irreducible-member){.pf-ref}, applied with $r=6$ and $M=D$, therefore gives a nonsingular
 irreducible member of $|D|$.
 :::
 
-<1>12. A divisor class on the cubic surface contains an irreducible curve if
+:::
+
+::: {.pf-step #iff-classification-equivalence}
+A divisor class on the cubic surface contains an irreducible curve if
 and only if it contains an irreducible nonsingular curve, and this happens
 exactly in alternatives (a), (b), and (c).
 
-::: {.proof}
-If the class contains an irreducible curve, steps <1>6--<1>8 place it in one
-of the three alternatives. Conversely, steps <1>9--<1>11 show that every
+::: pf-proof
+If the class contains an irreducible curve, steps [](#negative-square-is-line){.pf-ref}, [](#zero-square-is-conic){.pf-ref} and [](#positive-square-satisfies-c){.pf-ref} place it in one
+of the three alternatives. Conversely, steps [](#line-classes-contain-line){.pf-ref}, [](#conic-classes-contain-conic){.pf-ref} and [](#condition-c-contains-curve){.pf-ref} show that every
 class in one of those alternatives contains an irreducible nonsingular
 curve. A nonsingular irreducible curve is in particular irreducible, so the
 two existence conditions are equivalent and both are equivalent to the
 classification (a)--(c).
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 establish the lower-degree del Pezzo linear-system lemma
-suggested by the hint. Steps <1>5--<1>8 prove necessity, and steps
-<1>9--<1>12 prove sufficiency and the equivalence of the two existence
+::: pf-qed
+Steps [](#linear-system-globally-generated-induction){.pf-ref}, [](#x2-base-case){.pf-ref}, [](#anticanonical-decomposition){.pf-ref} and [](#positive-square-irreducible-member){.pf-ref} establish the lower-degree del Pezzo linear-system lemma
+suggested by the hint. Steps [](#self-intersection-lower-bound){.pf-ref}, [](#negative-square-is-line){.pf-ref}, [](#zero-square-is-conic){.pf-ref} and [](#positive-square-satisfies-c){.pf-ref} prove necessity, and steps
+[](#line-classes-contain-line){.pf-ref}, [](#conic-classes-contain-conic){.pf-ref}, [](#condition-c-contains-curve){.pf-ref} and [](#iff-classification-equivalence){.pf-ref} prove sufficiency and the equivalence of the two existence
 conditions.
+:::
+
 :::
 :::

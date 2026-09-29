@@ -69,12 +69,15 @@ y^2z^{r-2}
 =0.
 $$
 
-<1>1. The only point of $Y$ on the line at infinity $z=0$ is
+::: pf
+
+::: {.pf-step #unique-point-at-infinity}
+The only point of $Y$ on the line at infinity $z=0$ is
 $$
 P=[0:1:0].
 $$
 
-::: {.proof}
+::: pf-proof
 Setting $z=0$ in the homogeneous equation gives
 $$
 -x^r=0.
@@ -85,9 +88,12 @@ $$
 $$
 :::
 
-<1>2. The point $P$ is singular on $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #point-at-infinity-singular}
+The point $P$ is singular on $Y$.
+
+::: pf-proof
 Since $r\ge5$, each first partial derivative of
 $$
 F=y^2z^{r-2}-\prod_i(x-a_i z)
@@ -108,9 +114,12 @@ a positive power of $x$ or $z$. Thus the Jacobian criterion makes $P$
 singular.
 :::
 
-<1>3. The affine part of $Y$ is nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #affine-part-nonsingular}
+The affine part of $Y$ is nonsingular.
+
+::: pf-proof
 On $z=1$ the equation is
 $$
 y^2-f(x)=0.
@@ -132,12 +141,15 @@ This is impossible. Therefore $P$ is the only singular point of the
 projective plane curve.
 :::
 
-<1>4. In the affine chart $y=1$ at $P$, the local equation has multiplicity
+:::
+
+::: {.pf-step #multiplicity-at-infinity}
+In the affine chart $y=1$ at $P$, the local equation has multiplicity
 $$
 \boxed{r-2}.
 $$
 
-::: {.proof}
+::: pf-proof
 With local coordinates $(x,z)$ at $P$, the equation becomes
 $$
 z^{r-2}
@@ -150,7 +162,10 @@ degree $r-2$. Hence the lowest nonzero homogeneous term is $z^{r-2}$, so
 the multiplicity at the origin is $r-2$.
 :::
 
-<1>5. Blow up $P$ and use the chart
+:::
+
+::: {.pf-step #strict-transform-equation}
+Blow up $P$ and use the chart
 $$
 x=u,
 \qquad
@@ -161,8 +176,8 @@ $$
 v^{r-2}=u^2\prod_{i=1}^r(1-a_i v).
 $$
 
-::: {.proof}
-Substitution in the equation of step <1>4 gives
+::: pf-proof
+Substitution in the equation of step [](#multiplicity-at-infinity){.pf-ref} gives
 $$
 u^{r-2}v^{r-2}
 -
@@ -181,7 +196,10 @@ It meets the exceptional divisor $u=0$ only at $v=0$, corresponding to the
 unique tangent direction $z=0$ at $P$.
 :::
 
-<1>6. The unique infinitely near singularity after the first blowup is
+:::
+
+::: {.pf-step #infinitely-near-A-singularity}
+The unique infinitely near singularity after the first blowup is
 analytically of type
 $$
 U^2=v^{r-2},
@@ -191,7 +209,7 @@ $$
 \boxed{\left\lfloor\frac{r-2}{2}\right\rfloor}.
 $$
 
-::: {.proof}
+::: pf-proof
 The factor
 $$
 h(v)=\prod_i(1-a_i v)
@@ -201,7 +219,7 @@ unit has a square root in $k[[v]]$. Replacing
 $$
 U=u\sqrt{h(v)}
 $$
-turns the completed local equation of step <1>5 into
+turns the completed local equation of step [](#strict-transform-equation){.pf-ref} into
 $$
 U^2=v^{r-2}.
 $$
@@ -216,7 +234,10 @@ $$
 $$
 :::
 
-<1>7. The delta invariant of the original point at infinity is
+:::
+
+::: {.pf-step #delta-invariant-formula}
+The delta invariant of the original point at infinity is
 $$
 \boxed{
 \delta_P
@@ -226,7 +247,7 @@ $$
 \left\lfloor\frac{r-2}{2}\right\rfloor.}
 $$
 
-::: {.proof}
+::: pf-proof
 For a plane curve singularity, the genus-drop formula under successive
 point blowups is
 $$
@@ -237,13 +258,16 @@ $$
 where $Q$ runs through the singular point and its infinitely near singular
 points with multiplicities $m_Q$ [[D-CRVPLSING]].
 
-The first point has multiplicity $r-2$ by step <1>4. After that first
-blowup, the residual singularity is the $A_{r-3}$ singularity of step <1>6,
+The first point has multiplicity $r-2$ by step [](#multiplicity-at-infinity){.pf-ref}. After that first
+blowup, the residual singularity is the $A_{r-3}$ singularity of step [](#infinitely-near-A-singularity){.pf-ref},
 whose complete remaining contribution to delta is
 $\lfloor(r-2)/2\rfloor$. Hence the displayed formula.
 :::
 
-<1>8. Equivalently,
+:::
+
+::: {.pf-step #delta-invariant-piecewise}
+Equivalently,
 $$
 \delta_P
 =
@@ -253,8 +277,8 @@ $$
 \end{cases}
 $$
 
-::: {.proof}
-If $r=2m$, then $r-2=2m-2$ is even and step <1>7 gives
+::: pf-proof
+If $r=2m$, then $r-2=2m-2$ is even and step [](#delta-invariant-formula){.pf-ref} gives
 $$
 \binom{2m-2}{2}+m-1
 =
@@ -262,7 +286,7 @@ $$
 =
 \frac{(r-2)^2}{2}.
 $$
-If $r=2m+1$, then $r-2=2m-1$ is odd and step <1>7 gives
+If $r=2m+1$, then $r-2=2m-1$ is odd and step [](#delta-invariant-formula){.pf-ref} gives
 $$
 \binom{2m-1}{2}+m-1
 =
@@ -272,7 +296,10 @@ $$
 $$
 :::
 
-<1>9. The normalization $\widetilde Y$ has genus
+:::
+
+::: {.pf-step #normalization-genus}
+The normalization $\widetilde Y$ has genus
 $$
 \boxed{
 g(\widetilde Y)
@@ -280,18 +307,18 @@ g(\widetilde Y)
 \left\lfloor\frac{r-1}{2}\right\rfloor.}
 $$
 
-::: {.proof}
+::: pf-proof
 The plane curve $Y$ has degree $r$, hence arithmetic genus
 $$
 p_a(Y)=\frac{(r-1)(r-2)}2.
 $$
-By step <1>3, $P$ is its only singular point. Therefore
+By step [](#affine-part-nonsingular){.pf-ref}, $P$ is its only singular point. Therefore
 $$
 g(\widetilde Y)
 =
 p_a(Y)-\delta_P.
 $$
-Using step <1>8 gives
+Using step [](#delta-invariant-piecewise){.pf-ref} gives
 $$
 g(\widetilde Y)
 =
@@ -303,13 +330,16 @@ $$
 which is exactly $\lfloor(r-1)/2\rfloor$.
 :::
 
-<1>10. The rational function $x$ defines a finite morphism
+:::
+
+::: {.pf-step #degree-two-map-to-p1}
+The rational function $x$ defines a finite morphism
 $$
 \widetilde Y\longrightarrow\PP^1
 $$
 of degree $2$.
 
-::: {.proof}
+::: pf-proof
 The function field of $Y$, and hence of its normalization, is
 $$
 k(\widetilde Y)=k(x,y),
@@ -329,31 +359,36 @@ The corresponding nonconstant morphism to the nonsingular projective curve
 $\PP^1$ is finite and has degree $2$.
 :::
 
-<1>11. Hyperelliptic curves occur in every genus $g\ge2$.
+:::
 
-::: {.proof}
+::: {.pf-step #hyperelliptic-every-genus}
+Hyperelliptic curves occur in every genus $g\ge2$.
+
+::: pf-proof
 Given $g\ge2$, choose either
 $$
 r=2g+1
 \qquad\text{or}\qquad
 r=2g+2
 $$
-distinct scalars $a_i\in k$. Step <1>9 gives
+distinct scalars $a_i\in k$. Step [](#normalization-genus){.pf-ref} gives
 $$
 g(\widetilde Y)=g,
 $$
-and step <1>10 gives a degree-two morphism
+and step [](#degree-two-map-to-p1){.pf-ref} gives a degree-two morphism
 $$
 \widetilde Y\to\PP^1.
 $$
 Thus $\widetilde Y$ is a hyperelliptic curve of genus $g$.
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>8 resolve the unique point at infinity and compute its delta
-invariant, step <1>9 computes the genus of the normalization, and steps
-<1>10--<1>11 give hyperelliptic curves of every genus at least two.
+::: pf-qed
+Steps [](#unique-point-at-infinity){.pf-ref}, [](#point-at-infinity-singular){.pf-ref}, [](#affine-part-nonsingular){.pf-ref}, [](#multiplicity-at-infinity){.pf-ref}, [](#strict-transform-equation){.pf-ref}, [](#infinitely-near-A-singularity){.pf-ref}, [](#delta-invariant-formula){.pf-ref} and [](#delta-invariant-piecewise){.pf-ref} resolve the unique point at infinity and compute its delta
+invariant, step [](#normalization-genus){.pf-ref} computes the genus of the normalization, and steps
+[](#degree-two-map-to-p1){.pf-ref} and [](#hyperelliptic-every-genus){.pf-ref} give hyperelliptic curves of every genus at least two.
+:::
+
 :::
 :::

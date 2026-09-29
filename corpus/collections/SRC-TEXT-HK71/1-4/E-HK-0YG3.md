@@ -36,13 +36,21 @@ N=\{X\in F^3:RX=0\}=\{X\in F^3:R'X=0\}.
 We show that a $2\times3$ row-reduced echelon matrix is uniquely determined by
 $N$.
 
-<1>1. If $\dim N=3$, then $R=R'=0$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #dim-n-three}
+If $\dim N=3$, then $R=R'=0$.
+
+::: pf-proof
 Rank-nullity gives $\operatorname{rank}R=\operatorname{rank}R'=0$.
 :::
 
-<1>2. If $\dim N=2$, then $R=R'$.
-::: {.proof}
+:::
+
+::: {.pf-step #dim-n-two}
+If $\dim N=2$, then $R=R'$.
+
+::: pf-proof
 Both matrices have rank $1$. Their row spaces are the one-dimensional
 annihilator
 \[
@@ -54,8 +62,12 @@ normalized vector in the first row, with zero second row. Thus both RREF
 matrices coincide.
 :::
 
-<1>3. If $\dim N=1$, then $R=R'$.
-::: {.proof}
+:::
+
+::: {.pf-step #dim-n-one}
+If $\dim N=1$, then $R=R'$.
+
+::: pf-proof
 Write $N=Fv$ with $v=(v_1,v_2,v_3)^t\ne0$. Both matrices have rank $2$.
 
 If $v_3\ne0$, the free variable in the reduced system is $x_3$, and
@@ -92,9 +104,18 @@ and the unique RREF is
 Thus in every rank-$2$ case the common nullspace determines the matrix.
 :::
 
-<1>4. Therefore $R=R'$.
-::: {.proof}
-The possibilities in <1>1--<1>3 exhaust all dimensions of the nullspace of a
+:::
+
+::: pf-step
+Therefore $R=R'$.
+
+::: pf-proof
+The possibilities in steps [](#dim-n-three){.pf-ref}, [](#dim-n-two){.pf-ref}, and [](#dim-n-one){.pf-ref} exhaust all dimensions of the nullspace of a
 $2\times3$ matrix.
 :::
+
+:::
+
+:::
+
 :::

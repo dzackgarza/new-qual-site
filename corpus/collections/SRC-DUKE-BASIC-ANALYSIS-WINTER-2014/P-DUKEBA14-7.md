@@ -30,8 +30,13 @@ Let $g$ be a positive Riemann integrable function on $[1,2]$. Prove that there e
 :::
 
 ::: {.solution}
-<1>1. Bound the weighted average.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Bound the weighted average.
+
+::: pf-proof
 On $[1,2]$,
 \[
 e\le e^{t^2}\le e^4.
@@ -52,8 +57,12 @@ e\le
 \]
 :::
 
-<1>2. Apply the intermediate value theorem.
-::: {.proof}
+:::
+
+::: pf-step
+Apply the intermediate value theorem.
+
+::: pf-proof
 The continuous function $h(t)=e^{t^2}$ maps $[1,2]$ onto $[e,e^4]$. Therefore there exists $c\in[1,2]$ such that
 \[
 e^{c^2}
@@ -61,5 +70,9 @@ e^{c^2}
 \frac{\int_1^2e^{t^2}g(t)\,dt}{\int_1^2g(t)\,dt}.
 \]
 Multiplying by $\int_1^2g$ gives the desired identity.
+:::
+
+:::
+
 :::
 :::

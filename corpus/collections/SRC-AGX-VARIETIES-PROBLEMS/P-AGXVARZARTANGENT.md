@@ -64,13 +64,16 @@ $$
 $$
 We regard $\CC$ as an $\mco$-module through evaluation at $p$.
 
-<1>1. Every $\CC$-derivation
+::: pf
+
+::: {.pf-step #derivations-annihilate-m2}
+Every $\CC$-derivation
 $$
 D:\mco\longrightarrow\CC
 $$
 annihilates $\mfm^2$.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 a,b\in\mfm.
@@ -87,7 +90,10 @@ $$
 Thus $D$ vanishes on every product of two elements of $\mfm$, hence on the ideal $\mfm^2$.
 :::
 
-<1>2. Restriction induces a linear map
+:::
+
+::: {.pf-step #phi-map}
+Restriction induces a linear map
 $$
 \Phi:
 \Der_\CC(\mco,\CC)
@@ -95,18 +101,21 @@ $$
 \Hom_\CC(\mfm/\mfm^2,\CC).
 $$
 
-::: {.proof}
+::: pf-proof
 For a derivation $D$, define
 $$
 \Phi(D)([a])=D(a),
 \qquad
 a\in\mfm.
 $$
-Step <1>1 shows that this depends only on the class of $a$ modulo $\mfm^2$.
+Step [](#derivations-annihilate-m2){.pf-ref} shows that this depends only on the class of $a$ modulo $\mfm^2$.
 Additivity and $\CC$-linearity of $D$ make $\Phi(D)$ a $\CC$-linear functional.
 :::
 
-<1>3. Every linear functional
+:::
+
+::: {.pf-step #dlambda-construction}
+Every linear functional
 $$
 \lambda:\mfm/\mfm^2\longrightarrow\CC
 $$
@@ -121,7 +130,7 @@ D_\lambda(a)
 \lambda\bigl([a-a(p)]\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 For every $a\in\mco$, the difference
 $$
 a-a(p)
@@ -153,7 +162,10 @@ Thus $D_\lambda$ satisfies the Leibniz rule and is a derivation into the
 residue field.
 :::
 
-<1>4. The maps of steps <1>2--<1>3 are inverse isomorphisms:
+:::
+
+::: {.pf-step #der-iso-cotangent-dual}
+The maps of steps [](#phi-map){.pf-ref} and [](#dlambda-construction){.pf-ref} are inverse isomorphisms:
 $$
 \boxed{
 \Der_\CC(\mco,\CC)
@@ -162,7 +174,7 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Let $D$ be a derivation.
 Since derivations kill constants,
 $$
@@ -181,12 +193,15 @@ $$
 Thus both composites are identities.
 :::
 
-<1>5. The Zariski tangent space $T_pX$ is canonically
+:::
+
+::: {.pf-step #tpx-equals-derivations}
+The Zariski tangent space $T_pX$ is canonically
 $$
 \Der_\CC(\mco_{X,p},\CC).
 $$
 
-::: {.proof}
+::: pf-proof
 Embed
 $$
 X\subseteq\AA^n_\CC
@@ -245,7 +260,10 @@ T_pX
 $$
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #final-iso}
+Therefore
 $$
 \boxed{
 T_pX
@@ -254,13 +272,16 @@ T_pX
 }
 $$
 
-::: {.proof}
-Step <1>5 identifies $T_pX$ with the derivation space, and step <1>4 identifies that derivation space with the dual of the cotangent space $\mfm_p/\mfm_p^2$.
+::: pf-proof
+Step [](#tpx-equals-derivations){.pf-ref} identifies $T_pX$ with the derivation space, and step [](#der-iso-cotangent-dual){.pf-ref} identifies that derivation space with the dual of the cotangent space $\mfm_p/\mfm_p^2$.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required canonical isomorphism.
 :::
+
+::: pf-qed
+Step [](#final-iso){.pf-ref} is the required canonical isomorphism.
+:::
+
+:::
+
 :::

@@ -40,6 +40,7 @@ is a power of $2$ for every integer $n$.
 :::
 
 ::: {.solution}
+
 Use the standard integer-index convention
 $$
 \binom{\alpha}{n}=0
@@ -47,13 +48,16 @@ $$
 $$
 and for $n\geq0$ use the usual generalized binomial formula.
 
-<1>1. If $n<0$, then the reduced denominator of
+::: pf
+
+::: {.pf-step #denominator-n-negative}
+If $n<0$, then the reduced denominator of
 $$
 \binom{1/2}{n}
 $$
 is $1$, hence a power of $2$.
 
-::: {.proof}
+::: pf-proof
 By the stated convention the binomial coefficient is $0$, whose reduced
 rational form is $0/1$. Since
 $$
@@ -62,16 +66,22 @@ $$
 the claim holds.
 :::
 
-<1>2. If $n=0$, then the reduced denominator is again $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #denominator-n-zero}
+If $n=0$, then the reduced denominator is again $1$.
+
+::: pf-proof
 One has
 $$
 \binom{1/2}{0}=1.
 $$
 :::
 
-<1>3. Suppose $n\geq1$. Then
+:::
+
+::: {.pf-step #binomial-formula-positive-n}
+Suppose $n\geq1$. Then
 $$
 \binom{1/2}{n}
 =
@@ -79,7 +89,7 @@ $$
 \frac{(2n-3)!!}{2^n n!}.
 $$
 
-::: {.proof}
+::: pf-proof
 Expanding the generalized binomial coefficient gives
 $$
 \begin{aligned}
@@ -97,7 +107,10 @@ For $n=1$, the empty odd product is interpreted as $(-1)!!=1$, so the
 same formula applies.
 :::
 
-<1>4. For every $n\geq1$,
+:::
+
+::: {.pf-step #catalan-number-integer}
+For every $n\geq1$,
 $$
 C_{n-1}
 \coloneqq
@@ -105,7 +118,7 @@ C_{n-1}
 $$
 is an integer.
 
-::: {.proof}
+::: pf-proof
 The identity
 $$
 \frac1n\binom{2n-2}{n-1}
@@ -117,7 +130,10 @@ $$
 expresses $C_{n-1}$ as a difference of two integers.
 :::
 
-<1>5. For $n\geq1$,
+:::
+
+::: {.pf-step #binomial-via-catalan}
+For $n\geq1$,
 $$
 \binom{1/2}{n}
 =
@@ -125,7 +141,7 @@ $$
 \frac{C_{n-1}}{2^{2n-1}}.
 $$
 
-::: {.proof}
+::: pf-proof
 The double-factorial identity
 $$
 (2n-2)!
@@ -149,17 +165,20 @@ $$
 =
 \frac{C_{n-1}}{2^{n-1}}.
 $$
-Substitute this into step <1>3.
+Substitute this into step [](#binomial-formula-positive-n){.pf-ref}.
 :::
 
-<1>6. For every $n\geq1$, the reduced denominator of
+:::
+
+::: {.pf-step #denominator-power-of-two-positive-n}
+For every $n\geq1$, the reduced denominator of
 $$
 \binom{1/2}{n}
 $$
 is a power of $2$.
 
-::: {.proof}
-By steps <1>4 and <1>5, the number has the form
+::: pf-proof
+By steps [](#catalan-number-integer){.pf-ref} and [](#binomial-via-catalan){.pf-ref}, the number has the form
 $$
 \frac{m}{2^{2n-1}}
 $$
@@ -171,15 +190,21 @@ $$
 for some integer $r\geq0$.
 :::
 
-<1>7. The claim holds for every integer $n$.
-
-::: {.proof}
-Steps <1>1 and <1>2 handle $n\leq0$, and step <1>6 handles $n\geq1$.
 :::
 
-<1>8. Q.E.D.
+::: {.pf-step #claim-for-every-n}
+The claim holds for every integer $n$.
 
-::: {.proof}
-Step <1>7 is the required conclusion.
+::: pf-proof
+Steps [](#denominator-n-negative){.pf-ref} and [](#denominator-n-zero){.pf-ref} handle $n\leq0$, and step [](#denominator-power-of-two-positive-n){.pf-ref} handles $n\geq1$.
 :::
+
+:::
+
+::: pf-qed
+Step [](#claim-for-every-n){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

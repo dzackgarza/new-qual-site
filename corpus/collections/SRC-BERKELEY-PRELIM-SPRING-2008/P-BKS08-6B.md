@@ -48,13 +48,16 @@ $$
 \boxed{g(x)=e^{-x}}.
 $$
 
-<1>1. For every $x>0$,
+::: pf
+
+::: {.pf-step #derivative-identity}
+For every $x>0$,
 $$
 \frac{d}{dx}\left(e^{-x}(y'(x)+y(x))\right)
 =e^{-x}f(x).
 $$
 
-::: {.proof}
+::: pf-proof
 Using the differential equation,
 $$
 \begin{aligned}
@@ -66,14 +69,17 @@ $$
 $$
 :::
 
-<1>2. For every $L>0$,
+:::
+
+::: {.pf-step #integral-boundary}
+For every $L>0$,
 $$
 \int_0^L e^{-x}f(x)\,dx
 =e^{-L}(y'(L)+y(L)).
 $$
 
-::: {.proof}
-Integrate the identity in step <1>1 from $0$ to $L$. The lower
+::: pf-proof
+Integrate the identity in step [](#derivative-identity){.pf-ref} from $0$ to $L$. The lower
 boundary term is
 $$
 y'(0)+y(0)=0
@@ -81,45 +87,57 @@ $$
 by the initial conditions.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #full-integral-zero}
+One has
 $$
 \int_0^\infty e^{-x}f(x)\,dx=0.
 $$
 
-::: {.proof}
+::: pf-proof
 By hypothesis,
 $$
 y(L)\longrightarrow0
 \qquad\text{and}\qquad
 y'(L)\longrightarrow0.
 $$
-Hence the right-hand side of step <1>2 tends to $0$ as
+Hence the right-hand side of step [](#integral-boundary){.pf-ref} tends to $0$ as
 $L\to\infty$. Taking the limit gives the displayed identity.
 :::
 
-<1>4. Since $f(x)=0$ for $x>1$,
+:::
+
+::: {.pf-step #interval-integral-zero}
+Since $f(x)=0$ for $x>1$,
 $$
 \boxed{
 \int_0^1 f(x)e^{-x}\,dx=0.
 }
 $$
 
-::: {.proof}
-The integral in step <1>3 equals the integral over $[0,1]$ because
+::: pf-proof
+The integral in step [](#full-integral-zero){.pf-ref} equals the integral over $[0,1]$ because
 $f$ vanishes on $(1,\infty)$.
 :::
 
-<1>5. The function $g(x)=e^{-x}$ is nonzero and is independent of
+:::
+
+::: {.pf-step #g-properties}
+The function $g(x)=e^{-x}$ is nonzero and is independent of
 $y$ and $f$.
 
-::: {.proof}
+::: pf-proof
 The exponential $e^{-x}$ is positive for every $x\ge0$ and was chosen
 without reference to either $y$ or $f$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>4--<1>5 give the required function and orthogonality identity.
 :::
+
+::: pf-qed
+Steps [](#interval-integral-zero){.pf-ref} and [](#g-properties){.pf-ref} give the required function and orthogonality identity.
+:::
+
+:::
+
 :::

@@ -39,7 +39,10 @@ A=(a_{ij}),
 B=(b_{ij}).
 $$
 
-<1>1. The trace pairing is
+::: pf
+
+::: {.pf-step #trace-pairing-formula}
+The trace pairing is
 $$
 \operatorname{tr}(AB^*)
 =
@@ -47,7 +50,7 @@ $$
 a_{ij}\overline{b_{ij}}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 (B^*)_{ji}=\overline{b_{ij}},
@@ -61,7 +64,10 @@ $$
 Summing the diagonal entries gives the displayed identity.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #trace-norm-formulas}
+One has
 $$
 \operatorname{tr}(AA^*)
 =
@@ -74,11 +80,14 @@ $$
 \sum_{i=1}^n\sum_{j=1}^n\abs{b_{ij}}^2.
 $$
 
-::: {.proof}
-Apply step <1>1 first with $B=A$ and then with $A=B$.
+::: pf-proof
+Apply step [](#trace-pairing-formula){.pf-ref} first with $B=A$ and then with $A=B$.
 :::
 
-<1>3. The required inequality holds:
+:::
+
+::: {.pf-step #inequality-boxed}
+The required inequality holds:
 $$
 \boxed{
 \abs{\operatorname{tr}(AB^*)}^2
@@ -87,8 +96,8 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>1 and the Cauchy--Schwarz inequality in $\CC^{n^2}$,
+::: pf-proof
+By step [](#trace-pairing-formula){.pf-ref} and the Cauchy--Schwarz inequality in $\CC^{n^2}$,
 $$
 \begin{aligned}
 \abs{\operatorname{tr}(AB^*)}^2
@@ -107,13 +116,15 @@ a_{ij}\overline{b_{ij}}
 \right).
 \end{aligned}
 $$
-Step <1>2 identifies the two factors on the right with
+Step [](#trace-norm-formulas){.pf-ref} identifies the two factors on the right with
 $\operatorname{tr}(AA^*)$ and $\operatorname{tr}(BB^*)$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is the stated inequality.
+::: pf-qed
+Step [](#inequality-boxed){.pf-ref} is the stated inequality.
+:::
+
 :::
 :::

@@ -42,7 +42,10 @@ R_A(x)\coloneqq
 $$
 for the Rayleigh quotient of $A$.
 
-<1>1. There is an orthonormal basis $e_1,\ldots,e_n$ of $\RR^n$ such that
+::: pf
+
+::: {.pf-step #eigenbasis-quotient}
+There is an orthonormal basis $e_1,\ldots,e_n$ of $\RR^n$ such that
 $$
 Ae_i=\lambda_i e_i
 $$
@@ -58,7 +61,7 @@ R_A(x)
 {\sum_{i=1}^n x_i^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Because $A$ is real symmetric, the spectral theorem gives an orthonormal
 eigenbasis with the eigenvalues ordered as in the statement. Then
 $$
@@ -76,10 +79,13 @@ $$
 $$
 :::
 
-<1>2. For every $k$-dimensional subspace $V\subseteq\RR^n$, the minimum
+:::
+
+::: pf-step
+For every $k$-dimensional subspace $V\subseteq\RR^n$, the minimum
 of $R_A$ on $V\setminus\{0\}$ is attained.
 
-::: {.proof}
+::: pf-proof
 The Rayleigh quotient is homogeneous of degree $0$, so its values on
 $V\setminus\{0\}$ are the same as its values on the unit sphere
 $$
@@ -89,7 +95,10 @@ The set $S(V)$ is compact and $R_A$ is continuous there. Hence $R_A$
 attains a minimum on $S(V)$.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #w-quotient-bound}
+Let
 $$
 W\coloneqq\operatorname{span}\{e_k,e_{k+1},\ldots,e_n\}.
 $$
@@ -98,12 +107,12 @@ $$
 R_A(x)\leq\lambda_k.
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 x=\sum_{i=k}^n x_i e_i\neq0,
 $$
-then step <1>1 and the inequalities
+then step [](#eigenbasis-quotient){.pf-ref} and the inequalities
 $$
 \lambda_i\leq\lambda_k
 \qquad
@@ -120,15 +129,18 @@ R_A(x)
 $$
 :::
 
-<1>4. For every $k$-dimensional subspace $V\subseteq\RR^n$,
+:::
+
+::: {.pf-step #upper-bound}
+For every $k$-dimensional subspace $V\subseteq\RR^n$,
 $$
 \min_{x\in V\setminus\{0\}}R_A(x)
 \leq
 \lambda_k.
 $$
 
-::: {.proof}
-The subspace $W$ in step <1>3 has dimension
+::: pf-proof
+The subspace $W$ in step [](#w-quotient-bound){.pf-ref} has dimension
 $$
 \dim W=n-k+1.
 $$
@@ -148,14 +160,17 @@ $$
 \geq
 1.
 $$
-Choose $0\neq x\in V\cap W$. By step <1>3,
+Choose $0\neq x\in V\cap W$. By step [](#w-quotient-bound){.pf-ref},
 $$
 R_A(x)\leq\lambda_k.
 $$
 The minimum on $V\setminus\{0\}$ is at most this value.
 :::
 
-<1>5. For
+:::
+
+::: {.pf-step #lower-bound}
+For
 $$
 V_0\coloneqq\operatorname{span}\{e_1,\ldots,e_k\},
 $$
@@ -166,12 +181,12 @@ $$
 \lambda_k.
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 x=\sum_{i=1}^k x_i e_i\neq0,
 $$
-then step <1>1 and
+then step [](#eigenbasis-quotient){.pf-ref} and
 $$
 \lambda_i\geq\lambda_k
 \qquad
@@ -193,7 +208,10 @@ $$
 Hence the minimum is exactly $\lambda_k$.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #minmax-identity}
+Therefore
 $$
 \boxed{
 \lambda_k
@@ -204,16 +222,19 @@ $$
 }.
 $$
 
-::: {.proof}
-Step <1>4 shows that every $k$-dimensional subspace contributes a minimum
+::: pf-proof
+Step [](#upper-bound){.pf-ref} shows that every $k$-dimensional subspace contributes a minimum
 at most $\lambda_k$, so the displayed maximum is at most $\lambda_k$.
-Step <1>5 exhibits the $k$-dimensional subspace $V_0$ whose minimum equals
+Step [](#lower-bound){.pf-ref} exhibits the $k$-dimensional subspace $V_0$ whose minimum equals
 $\lambda_k$, so the maximum is at least $\lambda_k$.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required min-max identity.
 :::
+
+::: pf-qed
+Step [](#minmax-identity){.pf-ref} is the required min-max identity.
+:::
+
+:::
+
 :::

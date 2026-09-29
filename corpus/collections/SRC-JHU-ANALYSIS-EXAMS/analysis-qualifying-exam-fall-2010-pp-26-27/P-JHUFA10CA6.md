@@ -49,15 +49,19 @@ The vanishing first-jet condition specifies the meaning of
 is required, rather than vanishing to at least second order,
 there are no holomorphic examples in (a): the identity
 theorem forces the zero function, which has no zero of
-exact order two. The function $F$ of step <1>2 has exact quadratic
+exact order two. The function $F$ of step [](#nonholomorphic-example){.pf-ref} has exact quadratic
 order at every prescribed point and therefore answers (b)
 under either interpretation.
 :::
 
 ::: {.solution}
-<1>1. Under the first-jet interpretation, the only holomorphic function is zero.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #zero-function-only-holomorphic}
+Under the first-jet interpretation, the only holomorphic function is zero.
+
+::: pf-proof
 The distinct zeros $1/n$, $n\geq2$, accumulate at the
 interior point zero of the connected disk. The identity
 theorem gives $f\equiv0$ [@SS03]. This function has
@@ -66,9 +70,12 @@ satisfy the stated first-jet condition. The exact-order
 alternative follows as explained in the remark.
 :::
 
-<1>2. A nonholomorphic example is $C^1$ even at the accumulation point.
+:::
 
-::: {.proof}
+::: {.pf-step #nonholomorphic-example}
+A nonholomorphic example is $C^1$ even at the accumulation point.
+
+::: pf-proof
 Define
 $$
 F(z)=\begin{cases}
@@ -100,9 +107,12 @@ to zero. Thus $DF(0)=0$, the partial derivatives extend
 continuously by zero, and $F\in C^1(D)$.
 :::
 
-<1>3. The prescribed zeros have exact quadratic order, and $F$ is not holomorphic.
+:::
 
-::: {.proof}
+::: pf-step
+The prescribed zeros have exact quadratic order, and $F$ is not holomorphic.
+
+::: pf-proof
 At $a=1/n$, $n\geq2$, the holomorphic function
 $s(z)=\sin(\pi/z)$ has value zero and derivative
 $$
@@ -120,7 +130,11 @@ $F(z)/(z-a)^2\to u_a(a)\ne0$.
 
 Finally $F(i/2)\ne0$, since $\sin(-2\pi i)=-i\sinh(2\pi)\ne0$.
 If $F$ were holomorphic on $D$, the zeros accumulating
-at zero would force $F\equiv0$ by step <1>1, contradicting
+at zero would force $F\equiv0$ by step [](#zero-function-only-holomorphic){.pf-ref}, contradicting
 this value. Thus it is the required nonholomorphic example.
+:::
+
+:::
+
 :::
 :::

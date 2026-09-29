@@ -33,14 +33,22 @@ Prove $U$ is a prime ideal.
 ::: {.solution}
 Let \(U\) be maximal, under inclusion, among the non-finitely generated ideals of \(R\).
 
-<1>1. The ideal \(U\) is proper.
-::: {.proof}
+::: pf
+
+::: {.pf-step #u-proper}
+The ideal \(U\) is proper.
+
+::: pf-proof
 The unit ideal \(R=(1)\) is finitely generated.
 Since \(U\) is not finitely generated, \(U\neq R\).
 :::
 
-<1>2. If \(a\notin U\), then the ideal \(U+(a)\) is finitely generated.
-::: {.proof}
+:::
+
+::: {.pf-step #u-plus-a-fg}
+If \(a\notin U\), then the ideal \(U+(a)\) is finitely generated.
+
+::: pf-proof
 The inclusion
 \[
 U\subsetneq U+(a)
@@ -50,12 +58,16 @@ By maximality of \(U\) among non-finitely generated ideals, every ideal strictly
 Hence \(U+(a)\) is finitely generated.
 :::
 
-<1>3. If \(a,b\notin U\) and \(ab\in U\), then the colon ideal
+:::
+
+::: {.pf-step #colon-ideal-fg}
+If \(a,b\notin U\) and \(ab\in U\), then the colon ideal
 \[
 (U:a):=\{r\in R:ra\in U\}
 \]
 is finitely generated.
-::: {.proof}
+
+::: pf-proof
 Clearly
 \[
 U\subseteq (U:a).
@@ -71,9 +83,13 @@ U\subsetneq(U:a).
 By maximality of \(U\), the ideal \((U:a)\) is finitely generated.
 :::
 
-<1>4. The situation in <1>3 would force \(U\) to be finitely generated.
-::: {.proof}
-By <1>2, \(U+(a)\) is finitely generated.
+:::
+
+::: {.pf-step #u-would-be-fg}
+The situation in step [](#colon-ideal-fg){.pf-ref} would force \(U\) to be finitely generated.
+
+::: pf-proof
+By step [](#u-plus-a-fg){.pf-ref}, \(U+(a)\) is finitely generated.
 Choose generators \(c_1,\ldots,c_m\).
 Write
 \[
@@ -87,7 +103,7 @@ U+(a)=(u_1,\ldots,u_m,a).
 \]
 Indeed, each \(c_i\) lies in the ideal on the right, while each \(u_i=c_i-r_i a\) lies in \(U+(a)\).
 
-By <1>3, write
+By step [](#colon-ideal-fg){.pf-ref}, write
 \[
 (U:a)=(t_1,\ldots,t_s).
 \]
@@ -119,14 +135,22 @@ which proves the claim.
 Thus \(U\) would be finitely generated, contradicting its definition.
 :::
 
-<1>5. Therefore \(U\) is prime.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore \(U\) is prime.
+
+::: pf-proof
 Suppose \(ab\in U\).
-If both \(a\notin U\) and \(b\notin U\), then <1>3 and <1>4 give a contradiction.
+If both \(a\notin U\) and \(b\notin U\), then steps [](#colon-ideal-fg){.pf-ref} and [](#u-would-be-fg){.pf-ref} give a contradiction.
 Hence
 \[
 a\in U\quad\text{or}\quad b\in U.
 \]
-Together with <1>1, this is exactly the definition that \(U\) is prime.
+Together with step [](#u-proper){.pf-ref}, this is exactly the definition that \(U\) is prime.
+:::
+
+:::
+
 :::
 :::

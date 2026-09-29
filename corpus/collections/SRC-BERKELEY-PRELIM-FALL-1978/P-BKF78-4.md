@@ -38,7 +38,10 @@ For the real parameter $r$ in the problem, $r^2\ne1$ implies either
 $\abs{r}<1$ or $\abs{r}>1$.
 Write $I(r)$ for the integral in the problem.
 
-<1>1. With $z=e^{i\theta}$, the integral is
+::: pf
+
+::: {.pf-step #contour-integral}
+With $z=e^{i\theta}$, the integral is
 $$
 I(r)
 =
@@ -46,7 +49,7 @@ I(r)
 \frac{dz}{i(z-r)(1-rz)}.
 $$
 
-::: {.proof}
+::: pf-proof
 On $\abs{z}=1$,
 $$
 d\theta=\frac{dz}{iz}
@@ -61,13 +64,16 @@ $$
 so substitution into the original integral gives the displayed contour integral.
 :::
 
-<1>2. If $\abs{r}<1$, then
+:::
+
+::: {.pf-step #case-r-less-1}
+If $\abs{r}<1$, then
 $$
 I(r)=\frac{2\pi}{1-r^2}.
 $$
 
-::: {.proof}
-In this case the integrand in step <1>1 has exactly one pole inside
+::: pf-proof
+In this case the integrand in step [](#contour-integral){.pf-ref} has exactly one pole inside
 $\abs{z}=1$, namely $z=r$. Its residue there is
 $$
 \frac{1}{i(1-r^2)}.
@@ -82,12 +88,15 @@ I(r)
 $$
 :::
 
-<1>3. If $\abs{r}>1$, then
+:::
+
+::: {.pf-step #case-r-greater-1}
+If $\abs{r}>1$, then
 $$
 I(r)=\frac{2\pi}{r^2-1}.
 $$
 
-::: {.proof}
+::: pf-proof
 Now $z=r$ lies outside the unit circle, while $z=1/r$ lies inside it.
 Thus the only enclosed pole is $z=1/r$. Its residue is
 $$
@@ -105,7 +114,10 @@ $$
 The residue theorem gives the stated value.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #combined-formula}
+Therefore
 $$
 \boxed{
 \int_0^{2\pi}
@@ -115,15 +127,17 @@ $$
 }.
 $$
 
-::: {.proof}
-If $\abs{r}<1$, then $1-r^2>0$, so step <1>2 gives the boxed
-formula. If $\abs{r}>1$, then $r^2-1>0$, so step <1>3 gives the same
+::: pf-proof
+If $\abs{r}<1$, then $1-r^2>0$, so step [](#case-r-less-1){.pf-ref} gives the boxed
+formula. If $\abs{r}>1$, then $r^2-1>0$, so step [](#case-r-greater-1){.pf-ref} gives the same
 formula.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the requested evaluation.
+::: pf-qed
+Step [](#combined-formula){.pf-ref} is the requested evaluation.
+:::
+
 :::
 :::

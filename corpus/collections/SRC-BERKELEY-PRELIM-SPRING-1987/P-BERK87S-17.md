@@ -46,12 +46,15 @@ $$
 d\coloneqq\dim_{\CC}V.
 $$
 
-<1>1. If $d=0$, the assertion holds with
+::: pf
+
+::: {.pf-step #zero-dimensional-case}
+If $d=0$, the assertion holds with
 $$
 \boxed{L=1}.
 $$
 
-::: {.proof}
+::: pf-proof
 Then
 $$
 V=\{0\},
@@ -63,17 +66,23 @@ $$
 has exactly the zero function as its solution.
 :::
 
-<1>2. Assume $d>0$. Differentiation restricts to a linear endomorphism
+:::
+
+::: {.pf-step #t-defined}
+Assume $d>0$. Differentiation restricts to a linear endomorphism
 $$
 T\coloneqq D|_V:V\to V.
 $$
 
-::: {.proof}
+::: pf-proof
 This is exactly the hypothesis that $V$ is invariant under
 differentiation.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #cayley-hamilton}
+Let
 $$
 P(\lambda)
 \coloneqq
@@ -87,12 +96,15 @@ P(T)=0
 $$
 on $V$.
 
-::: {.proof}
+::: pf-proof
 This is the Cayley--Hamilton theorem applied to the endomorphism $T$ of
 the $d$-dimensional complex vector space $V$.
 :::
 
-<1>4. Define the nonzero constant-coefficient differential operator
+:::
+
+::: {.pf-step #v-subset-kernel}
+Define the nonzero constant-coefficient differential operator
 $$
 L
 \coloneqq
@@ -105,7 +117,7 @@ $$
 V\subseteq\ker L.
 $$
 
-::: {.proof}
+::: pf-proof
 If $f\in V$, every derivative of $f$ that occurs in $P(D)f$ is computed
 by repeated application of the restricted operator $T$. Hence
 $$
@@ -116,10 +128,13 @@ P(D)f
 P(T)f
 =0
 $$
-by step <1>3.
+by step [](#cayley-hamilton){.pf-ref}.
 :::
 
-<1>5. A solution $f$ of
+:::
+
+::: {.pf-step #uniqueness-by-initial-values}
+A solution $f$ of
 $$
 Lf=0
 $$
@@ -128,7 +143,7 @@ $$
 f(0),f'(0),\ldots,f^{(d-1)}(0).
 $$
 
-::: {.proof}
+::: pf-proof
 The equation is monic of order $d$:
 $$
 f^{(d)}
@@ -147,13 +162,16 @@ admit at most one solution. Equivalently, a solution whose first $d$
 initial derivatives vanish is identically zero.
 :::
 
-<1>6. The solution space
+:::
+
+::: {.pf-step #kernel-dimension-bound}
+The solution space
 $$
 W\coloneqq\ker L
 $$
 has dimension at most $d$.
 
-::: {.proof}
+::: pf-proof
 Consider the linear map
 $$
 J:W\to\CC^d,
@@ -162,7 +180,7 @@ J(f)
 =
 \bigl(f(0),f'(0),\ldots,f^{(d-1)}(0)\bigr).
 $$
-By step <1>5, $J$ is injective. Therefore
+By step [](#uniqueness-by-initial-values){.pf-ref}, $J$ is injective. Therefore
 $$
 \dim_{\CC}W
 \leq
@@ -171,13 +189,16 @@ $$
 $$
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #equality-boxed}
+One has
 $$
 \boxed{V=\ker L}.
 $$
 
-::: {.proof}
-Step <1>4 gives
+::: pf-proof
+Step [](#v-subset-kernel){.pf-ref} gives
 $$
 V\subseteq W.
 $$
@@ -189,7 +210,7 @@ this inclusion gives
 $$
 d\leq\dim W.
 $$
-Step <1>6 gives the reverse inequality
+Step [](#kernel-dimension-bound){.pf-ref} gives the reverse inequality
 $$
 \dim W\leq d.
 $$
@@ -197,11 +218,13 @@ Hence the dimensions are equal, and the inclusion of finite-dimensional
 spaces must be equality.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 settles the zero-dimensional case. For $d>0$, step <1>7 gives
+::: pf-qed
+Step [](#zero-dimensional-case){.pf-ref} settles the zero-dimensional case. For $d>0$, step [](#equality-boxed){.pf-ref} gives
 a nonzero constant-coefficient operator whose solution space is exactly
 $V$.
+:::
+
 :::
 :::

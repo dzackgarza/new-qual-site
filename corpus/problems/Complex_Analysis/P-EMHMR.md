@@ -40,13 +40,18 @@ For every integer $k$, define
 I_k=\frac1{2\pi i}\int_\gamma\frac{f(z)}{(z-a)^{k+1}}\,dz.
 \]
 
-<1>1. A Laurent series converges uniformly on every circle compactly contained in its annulus of convergence. Hence the first expansion may be integrated term by term on $\gamma$:
+::: pf
+
+::: pf-step
+A Laurent series converges uniformly on every circle compactly contained in its annulus of convergence. Hence the first expansion may be integrated term by term on $\gamma$:
 \[
 I_k
 =\sum_{n\in\mathbb Z}c_n\frac1{2\pi i}\int_\gamma(z-a)^{n-k-1}\,dz.
 \]
+:::
 
-<1>2. For every integer $m$,
+::: pf-step
+For every integer $m$,
 \[
 \frac1{2\pi i}\int_\gamma(z-a)^m\,dz
 =\begin{cases}
@@ -58,8 +63,10 @@ Therefore only the term $n=k$ survives, and
 \[
 I_k=c_k.
 \]
+:::
 
-<1>3. Applying the same computation to the second Laurent expansion gives
+::: pf-step
+Applying the same computation to the second Laurent expansion gives
 \[
 I_k=c_k'.
 \]
@@ -73,4 +80,6 @@ Hence Laurent coefficients on a fixed annulus are unique, with
 \[
 c_k=\frac1{2\pi i}\int_{|z-a|=\rho}\frac{f(z)}{(z-a)^{k+1}}\,dz.
 \]
+:::
+
 :::

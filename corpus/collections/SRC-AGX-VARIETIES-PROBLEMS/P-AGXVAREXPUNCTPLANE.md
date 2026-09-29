@@ -51,13 +51,16 @@ $$
 U=D(x)\cup D(y).
 $$
 
-<1>1. Every global regular function on $U$ is the restriction of a unique
+::: pf
+
+::: {.pf-step #global-functions-are-polynomials}
+Every global regular function on $U$ is the restriction of a unique
 polynomial in $\CC[x,y]$:
 $$
 \boxed{\OO(U)=\CC[x,y].}
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 D(x)=\operatorname{Specm}R_x,
@@ -116,7 +119,10 @@ Uniqueness follows because a polynomial vanishing on the nonempty open subset
 $U$ of the irreducible affine plane must be zero.
 :::
 
-<1>2. Under the identification in step <1>1, the canonical map
+:::
+
+::: {.pf-step #canonical-map-is-inclusion}
+Under the identification in step [](#global-functions-are-polynomials){.pf-ref}, the canonical map
 $$
 \alpha:U\longrightarrow
 \operatorname{Specm}\OO(U)
@@ -130,7 +136,7 @@ $$
 U\hookrightarrow\AA^2_\CC.
 $$
 
-::: {.proof}
+::: pf-proof
 For a point
 $$
 p=(a,b)\in U,
@@ -138,7 +144,7 @@ $$
 the canonical map to the maximal spectrum of global functions sends $p$ to the
 maximal ideal of global regular functions vanishing at $p$.
 
-By step <1>1, the global functions are exactly the restrictions of
+By step [](#global-functions-are-polynomials){.pf-ref}, the global functions are exactly the restrictions of
 polynomials in $\CC[x,y]$. The vanishing ideal at $(a,b)$ is therefore
 $$
 (x-a,y-b)\subseteq\CC[x,y].
@@ -147,10 +153,13 @@ This is exactly the point $(a,b)$ of $\AA^2_\CC$. Hence $\alpha$ agrees
 pointwise with the inclusion of the punctured plane into the affine plane.
 :::
 
-<1>3. If $U$ were affine, the map $\alpha$ in step <1>2 would be an
+:::
+
+::: {.pf-step #affine-forces-iso}
+If $U$ were affine, the map $\alpha$ in step [](#canonical-map-is-inclusion){.pf-ref} would be an
 isomorphism.
 
-::: {.proof}
+::: pf-proof
 For any affine variety $Y$, the canonical morphism
 $$
 Y\longrightarrow\operatorname{Specm}\OO(Y)
@@ -160,7 +169,10 @@ correspondence. Thus affineness of $U$ would force $\alpha$ to be an
 isomorphism.
 :::
 
-<1>4. The punctured affine plane is not affine:
+:::
+
+::: {.pf-step #punctured-plane-not-affine}
+The punctured affine plane is not affine:
 $$
 \boxed{
 \AA^2_\CC\setminus\{(0,0)\}
@@ -168,19 +180,22 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>2, $\alpha$ is the inclusion
+::: pf-proof
+By step [](#canonical-map-is-inclusion){.pf-ref}, $\alpha$ is the inclusion
 $$
 U\hookrightarrow\AA^2_\CC.
 $$
 It is not surjective, because $(0,0)$ is not in its image. Therefore it is
-not an isomorphism. Step <1>3 shows that this is impossible if $U$ is affine.
+not an isomorphism. Step [](#affine-forces-iso){.pf-ref} shows that this is impossible if $U$ is affine.
 Hence $U$ is not affine.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#punctured-plane-not-affine){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

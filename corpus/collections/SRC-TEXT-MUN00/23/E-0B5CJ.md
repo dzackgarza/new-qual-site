@@ -32,30 +32,42 @@ is connected.
 ::: {.solution}
 Let $Z=(X\times Y)-(A\times B)$, and choose $x_0\in X-A$ and $y_0\in Y-B$. A union of connected subspaces with a point in common is connected.
 
-<1>1. For $x\in X-A$ the slice $\{x\}\times Y$, and for $y\in Y-B$ the slice $X\times\{y\}$, is a connected subset of $Z$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #slices-connected}
+For $x\in X-A$ the slice $\{x\}\times Y$, and for $y\in Y-B$ the slice $X\times\{y\}$, is a connected subset of $Z$.
+
+::: pf-proof
 The slices are homeomorphic to $Y$ and $X$ by [[E-OTJ9S]], hence connected.
 If $x\notin A$, no point $(x,y)$ lies in $A\times B$; similarly if $y\notin B$.
 :::
 
-<1>2. The cross $C_0=(\{x_0\}\times Y)\cup(X\times\{y_0\})$ is a connected subset of $Z$.
-
-::: {.proof}
-By step <1>1, both slices are connected subsets of $Z$, and they share $(x_0,y_0)$.
 :::
 
-<1>3. Every point $(x,y)\in Z$ lies in a connected subset of $Z$ that contains $C_0$.
+::: {.pf-step #cross-connected}
+The cross $C_0=(\{x_0\}\times Y)\cup(X\times\{y_0\})$ is a connected subset of $Z$.
 
-::: {.proof}
+::: pf-proof
+By step [](#slices-connected){.pf-ref}, both slices are connected subsets of $Z$, and they share $(x_0,y_0)$.
+:::
+
+:::
+
+::: {.pf-step #every-point-joins-cross}
+Every point $(x,y)\in Z$ lies in a connected subset of $Z$ that contains $C_0$.
+
+::: pf-proof
 Since $(x,y)\notin A\times B$, either $x\notin A$ or $y\notin B$.
-If $x\notin A$, the slice $\{x\}\times Y$ meets $C_0$ at $(x,y_0)$, so $C_0\cup(\{x\}\times Y)$ is connected by step <1>1.
+If $x\notin A$, the slice $\{x\}\times Y$ meets $C_0$ at $(x,y_0)$, so $C_0\cup(\{x\}\times Y)$ is connected by step [](#slices-connected){.pf-ref}.
 If $y\notin B$, the slice $X\times\{y\}$ meets $C_0$ at $(x_0,y)$, so $C_0\cup(X\times\{y\})$ is connected.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-By step <1>3, $Z$ is a union of connected subsets that all contain $(x_0,y_0)$, so $Z$ is connected.
 :::
+
+::: pf-qed
+By step [](#every-point-joins-cross){.pf-ref}, $Z$ is a union of connected subsets that all contain $(x_0,y_0)$, so $Z$ is connected.
+:::
+
+:::
+
 :::

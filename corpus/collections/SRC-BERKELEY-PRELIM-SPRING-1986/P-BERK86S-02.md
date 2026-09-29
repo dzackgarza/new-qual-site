@@ -39,13 +39,16 @@ $$
 H\coloneqq\{m+n\sqrt2:m,n\in\ZZ\}.
 $$
 
-<1>1. Every element of $H$ is a period of $f$:
+::: pf
+
+::: {.pf-step #h-is-periods}
+Every element of $H$ is a period of $f$:
 $$
 f(x+h)=f(x)
 $$
 for all $x\in\RR$ and $h\in H$.
 
-::: {.proof}
+::: pf-proof
 The hypotheses say that $1$ and $\sqrt2$ are periods. If $p$ is a
 period, then so is $-p$, because replacing $x$ by $x-p$ in
 $$
@@ -59,7 +62,10 @@ $$
 with $m,n\in\ZZ$ is a period.
 :::
 
-<1>2. For every positive integer $N$, there exists
+:::
+
+::: {.pf-step #small-period-exists}
+For every positive integer $N$, there exists
 $$
 h_N\in H
 $$
@@ -68,7 +74,7 @@ $$
 0<h_N<\frac1N.
 $$
 
-::: {.proof}
+::: pf-proof
 Consider the $N+1$ fractional parts
 $$
 \{j\sqrt2\},
@@ -94,10 +100,13 @@ Replacing it by its negative if necessary gives the required positive
 $h_N$.
 :::
 
-<1>3. The subgroup $H$ is dense in $\RR$.
+:::
 
-::: {.proof}
-Fix $t\in\RR$. For each $N$, choose $h_N$ as in step <1>2 and let
+::: {.pf-step #h-dense}
+The subgroup $H$ is dense in $\RR$.
+
+::: pf-proof
+Fix $t\in\RR$. For each $N$, choose $h_N$ as in step [](#small-period-exists){.pf-ref} and let
 $q_N\in\ZZ$ be an integer nearest to $t/h_N$. Then
 $$
 \abs{q_Nh_N-t}
@@ -111,13 +120,16 @@ $H$ and converges to $t$. Thus every real number lies in the closure of
 $H$.
 :::
 
-<1>4. For arbitrary $x,y\in\RR$,
+:::
+
+::: {.pf-step #values-equal}
+For arbitrary $x,y\in\RR$,
 $$
 f(y)=f(x).
 $$
 
-::: {.proof}
-Apply step <1>3 to
+::: pf-proof
+Apply step [](#h-dense){.pf-ref} to
 $$
 t=y-x.
 $$
@@ -129,7 +141,7 @@ Hence
 $$
 x+p_N\longrightarrow y.
 $$
-By step <1>1,
+By step [](#h-is-periods){.pf-ref},
 $$
 f(x+p_N)=f(x)
 $$
@@ -143,18 +155,23 @@ f(x).
 $$
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #constant-boxed}
+Therefore
 $$
 \boxed{f\text{ is constant on }\RR}.
 $$
 
-::: {.proof}
-Step <1>4 shows that any two values of $f$ are equal.
+::: pf-proof
+Step [](#values-equal){.pf-ref} shows that any two values of $f$ are equal.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-qed
+Step [](#constant-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

@@ -39,12 +39,17 @@ C_5&=\{ba,b^3a\},
 :::
 
 ::: {.solution}
-<1>1. The relations imply
+
+::: pf
+
+::: {.pf-step #relation-and-normal-form}
+The relations imply
 \[
 ab=b^3a,
 \]
 and every element of $G$ has the form $b^k$ or $b^ka$ with $0\le k<4$.
-::: {.proof}
+
+::: pf-proof
 From
 \[
 b^{-1}ab=a^3
@@ -66,7 +71,10 @@ so $ab=b^3a$.
 Using this relation, every word in $a,b$ can be moved into the form $b^ka^\varepsilon$ with $\varepsilon\in\{0,1\}$: replace every occurrence of $a^2$ by $b^2$ and move the remaining $a$ to the right. Since $b^4=(b^2)^2=(a^2)^2=a^4=1$, we may take $0\le k<4$. The problem states that $|G|=8$, so these eight normal forms are precisely all elements of $G$.
 :::
 
-<1>2. The subgroup
+:::
+
+::: {.pf-step #h-normal-quotient}
+The subgroup
 \[
 H=\{1,b^2\}
 \]
@@ -74,8 +82,9 @@ is normal, and
 \[
 G/H\cong C_2\times C_2.
 \]
-::: {.proof}
-The element $b^2=a^2$ is central by <1>1, so $H\trianglelefteq G$.
+
+::: pf-proof
+The element $b^2=a^2$ is central by step [](#relation-and-normal-form){.pf-ref}, so $H\trianglelefteq G$.
 In the quotient,
 \[
 (aH)^2=a^2H=H,
@@ -88,7 +97,10 @@ G/H\cong C_2\times C_2.
 \]
 :::
 
-<1>3. The four linear characters lifted from $G/H$ have the following values on the five conjugacy classes:
+:::
+
+::: {.pf-step #lifted-linear-characters}
+The four linear characters lifted from $G/H$ have the following values on the five conjugacy classes:
 \[
 \begin{array}{c|rrrrr}
 & C_1 & C_2 & C_3 & C_4 & C_5\\ \hline
@@ -98,12 +110,16 @@ G/H\cong C_2\times C_2.
 \chi_3&1&1&-1&-1&1
 \end{array}.
 \]
-::: {.proof}
+
+::: pf-proof
 Every linear character of $C_2\times C_2$ is determined by independently sending the two generators $bH$ and $aH$ to $\pm1$. All such characters are trivial on $H$, so they take value $1$ on $C_1$ and $C_2$.
 The classes $C_3,C_4,C_5$ map respectively to $bH,aH,baH$, giving exactly the four rows displayed above.
 :::
 
-<1>4. There is a two-dimensional representation $\rho$ of $G$ given by
+:::
+
+::: {.pf-step #two-dim-rep-character}
+There is a two-dimensional representation $\rho$ of $G$ given by
 \[
 \rho(a)=
 \begin{pmatrix}
@@ -122,7 +138,8 @@ Its character has values
 \chi_4=(2,-2,0,0,0)
 \]
 on $C_1,\ldots,C_5$.
-::: {.proof}
+
+::: pf-proof
 Both matrices square to $-I$, so
 \[
 \rho(a)^2=\rho(b)^2=-I,
@@ -144,7 +161,10 @@ The traces are
 and each of $\rho(a),\rho(b),\rho(ba)$ has trace $0$. Since character values are constant on conjugacy classes, this gives the stated row.
 :::
 
-<1>5. The representation $\rho$ is irreducible, and the complete character table of $G$ is
+:::
+
+::: {.pf-step #complete-character-table}
+The representation $\rho$ is irreducible, and the complete character table of $G$ is
 \[
 \boxed{
 \begin{array}{c|rrrrr}
@@ -157,7 +177,8 @@ and each of $\rho(a),\rho(b),\rho(ba)$ has trace $0$. Since character values are
 \chi_4&2&-2&0&0&0
 \end{array}.}
 \]
-::: {.proof}
+
+::: pf-proof
 For $\chi_4$,
 \[
 \langle\chi_4,\chi_4\rangle
@@ -170,4 +191,13 @@ The four linear characters are irreducible automatically. Their degree squares s
 \]
 so these five irreducibles exhaust all irreducible representations of $G$.
 :::
+
+:::
+
+::: pf-qed
+Step [](#relation-and-normal-form){.pf-ref} answers part (a); step [](#h-normal-quotient){.pf-ref} answers part (b)(i); step [](#lifted-linear-characters){.pf-ref} answers part (b)(ii); step [](#complete-character-table){.pf-ref} answers part (b)(iii).
+:::
+
+:::
+
 :::

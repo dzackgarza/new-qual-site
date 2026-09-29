@@ -47,13 +47,16 @@ $$
 U\longmapsto\mcf(U)/\mcf'(U).
 $$
 
-<1>1. For every $x\in X$, the stalk of the quotient sheaf is canonically
+::: pf
+
+::: {.pf-step #stalk-of-quotient-sheaf}
+For every $x\in X$, the stalk of the quotient sheaf is canonically
 $$
 (\mcf/\mcf')_x\cong\mcf_x/\mcf'_x,
 $$
 and the induced stalk map $q_x$ is the ordinary quotient homomorphism.
 
-::: {.proof}
+::: pf-proof
 Taking a stalk is a filtered colimit over neighborhoods of $x$.
 Filtered colimits of abelian groups commute with cokernels, so
 $$
@@ -67,10 +70,13 @@ Sheafification does not change stalks.
 Hence the stalk of the quotient sheaf is exactly $\mcf_x/\mcf'_x$, and $q_x$ is induced by the quotient maps on sections.
 :::
 
-<1>2. The natural morphism $q:\mcf\to\mcf/\mcf'$ is surjective and has kernel $\mcf'$.
+:::
 
-::: {.proof}
-By step <1>1, for every $x\in X$ the map
+::: {.pf-step #q-surjective-kernel-fprime}
+The natural morphism $q:\mcf\to\mcf/\mcf'$ is surjective and has kernel $\mcf'$.
+
+::: pf-proof
+By step [](#stalk-of-quotient-sheaf){.pf-ref}, for every $x\in X$ the map
 $$
 q_x:\mcf_x\longrightarrow\mcf_x/\mcf'_x
 $$
@@ -89,13 +95,16 @@ $$
 is exact, proving part (a).
 :::
 
-<1>3. In an exact sequence
+:::
+
+::: {.pf-step #i-identifies-fprime-subsheaf}
+In an exact sequence
 $$
 0\longrightarrow\mcf'\xrightarrow{i}\mcf\xrightarrow{p}\mcf''\longrightarrow0,
 $$
 the morphism $i$ identifies $\mcf'$ with a subsheaf of $\mcf$.
 
-::: {.proof}
+::: pf-proof
 Exactness at $\mcf'$ says that $i$ is injective.
 Equivalently, every stalk map
 $$
@@ -111,12 +120,15 @@ is an isomorphism on every stalk, hence an isomorphism of sheaves.
 Thus we may identify $\mcf'$ with the subsheaf $\operatorname{im}i\subseteq\mcf$.
 :::
 
-<1>4. With the identification of step <1>3, there is a canonical isomorphism
+:::
+
+::: {.pf-step #quotient-iso-fdoubleprime}
+With the identification of step [](#i-identifies-fprime-subsheaf){.pf-ref}, there is a canonical isomorphism
 $$
 \boxed{\mcf/\mcf'\cong\mcf''}.
 $$
 
-::: {.proof}
+::: pf-proof
 Exactness at $\mcf$ gives
 $$
 \ker p=\operatorname{im}i=\mcf'.
@@ -142,9 +154,12 @@ Thus $\bar p$ is an isomorphism on every stalk and hence an isomorphism of sheav
 This proves part (b).
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>4 prove part (b).
 :::
+
+::: pf-qed
+Steps [](#stalk-of-quotient-sheaf){.pf-ref} and [](#q-surjective-kernel-fprime){.pf-ref} prove part (a), and steps [](#i-identifies-fprime-subsheaf){.pf-ref} and [](#quotient-iso-fdoubleprime){.pf-ref} prove part (b).
+:::
+
+:::
+
 :::

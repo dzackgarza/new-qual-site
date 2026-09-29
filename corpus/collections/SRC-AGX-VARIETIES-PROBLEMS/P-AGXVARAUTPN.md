@@ -45,9 +45,12 @@ V=k^{n+1},
 $$
 For $n=0$ both sides are the trivial group.
 
-<1>1. Every element of $\GL(V)$ induces an automorphism of $\PP(V)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #gl-acts-on-pn}
+Every element of $\GL(V)$ induces an automorphism of $\PP(V)$.
+
+::: pf-proof
 For
 $$
 A\in\GL(V),
@@ -68,7 +71,10 @@ $$
 $$
 :::
 
-<1>2. The kernel of
+:::
+
+::: {.pf-step #kernel-is-scalars}
+The kernel of
 $$
 \GL(V)\longrightarrow\Aut_k(\PP(V))
 $$
@@ -77,7 +83,7 @@ $$
 k^\times I\cong\GG_m(k).
 $$
 
-::: {.proof}
+::: pf-proof
 Every scalar matrix acts trivially on one-dimensional subspaces, so
 $$
 k^\times I
@@ -108,7 +114,10 @@ $$
 for every $i,j$. Thus $A=\lambda I$ is scalar.
 :::
 
-<1>3. Therefore the projective linear action gives an injective
+:::
+
+::: {.pf-step #pgl-injects}
+Therefore the projective linear action gives an injective
 homomorphism
 $$
 \PGL(V)=\GL(V)/k^\times
@@ -116,11 +125,14 @@ $$
 \Aut_k(\PP(V)).
 $$
 
-::: {.proof}
-This is the first isomorphism theorem applied to steps <1>1--<1>2.
+::: pf-proof
+This is the first isomorphism theorem applied to steps [](#gl-acts-on-pn){.pf-ref} and [](#kernel-is-scalars){.pf-ref}.
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #pullback-o1-trivial}
+Let
 $$
 f\in\Aut_k(\PP^n).
 $$
@@ -129,7 +141,7 @@ $$
 \boxed{f^*\OO_{\PP^n}(1)\cong\OO_{\PP^n}(1)}.
 $$
 
-::: {.proof}
+::: pf-proof
 The Picard group is
 $$
 \Pic(\PP^n_k)\cong\ZZ,
@@ -152,7 +164,10 @@ $$
 $$
 :::
 
-<1>5. After choosing an isomorphism
+:::
+
+::: {.pf-step #invertible-linear-map-t}
+After choosing an isomorphism
 $$
 \alpha:f^*\OO(1)\xrightarrow{\sim}\OO(1),
 $$
@@ -164,7 +179,7 @@ H^0(\PP^n,\OO(1))
 H^0(\PP^n,\OO(1)).
 $$
 
-::: {.proof}
+::: pf-proof
 Pullback along $f$ gives an isomorphism
 $$
 H^0(\PP^n,\OO(1))
@@ -176,9 +191,12 @@ gives $T$. Both maps are invertible, so $T$ is an invertible
 $k$-linear transformation.
 :::
 
-<1>6. The automorphism $f$ is induced by an element of $\GL_{n+1}(k)$.
+:::
 
-::: {.proof}
+::: {.pf-step #f-is-projective-linear}
+The automorphism $f$ is induced by an element of $\GL_{n+1}(k)$.
+
+::: pf-proof
 Let
 $$
 x_0,\ldots,x_n
@@ -221,7 +239,10 @@ $$
 Therefore every automorphism of $\PP^n$ is projective linear.
 :::
 
-<1>7. Consequently,
+:::
+
+::: {.pf-step #equivalence-statement}
+Consequently,
 $$
 \boxed{
 \Aut_k(\PP^n)
@@ -232,15 +253,18 @@ $$
 }
 $$
 
-::: {.proof}
-Step <1>3 gives injectivity of the projective linear action, and step
-<1>6 gives surjectivity. The quotient description is the definition of
+::: pf-proof
+Step [](#pgl-injects){.pf-ref} gives injectivity of the projective linear action, and step
+[](#f-is-projective-linear){.pf-ref} gives surjectivity. The quotient description is the definition of
 $\PGL_{n+1}(k)$.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required identification.
 :::
+
+::: pf-qed
+Step [](#equivalence-statement){.pf-ref} is the required identification.
+:::
+
+:::
+
 :::

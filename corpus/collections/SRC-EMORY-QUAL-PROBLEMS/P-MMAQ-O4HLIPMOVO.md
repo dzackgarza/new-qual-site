@@ -41,74 +41,135 @@ Every finite field has prime characteristic and cardinality
 a positive power of that prime [@DF04]. When an embedding
 $K\hookrightarrow L$ is given, identify $K$ with its image.
 
-<1>1. Forward direction ($K\hookrightarrow L\implies \operatorname{char} K = \operatorname{char} L = p$ and $r \mid s$):
-<2>1. If $K$ is a subfield of $L$, then $L$ is a finite-dimensional vector space over $K$.
+::: pf
+
+::: {.pf-step #forward-direction}
+Forward direction ($K\hookrightarrow L\implies \operatorname{char} K = \operatorname{char} L = p$ and $r \mid s$):
+
+::: pf-proof
+
+::: pf-step
+If $K$ is a subfield of $L$, then $L$ is a finite-dimensional vector space over $K$.
 Let $d = [L : K] \ge 1$ denote the degree of the extension.
-::: {.proof}
+
+::: pf-proof
 Multiplication $K\times L\to L$ restricted from $L$ makes $L$ a $K$-vector space, and $L$ is finite.
 :::
-<2>2. Since $K$ has characteristic $p$, $L$ must also have characteristic $p$.
+
+:::
+
+::: pf-step
+Since $K$ has characteristic $p$, $L$ must also have characteristic $p$.
 The cardinality of $L$ is related to the cardinality of $K$ by:
 \[
 \# L = (\# K)^d = (p^r)^d = p^{rd}.
 \]
-::: {.proof}
+
+::: pf-proof
 A $d$-dimensional vector space over a field with $q$ elements contains $q^d$ elements.
 :::
-<2>3. Since $\# L = p^s$, we have $s = rd$, which implies $r \mid s$ (and therefore $r \le s$).
-::: {.proof}
+
+:::
+
+::: pf-step
+Since $\# L = p^s$, we have $s = rd$, which implies $r \mid s$ (and therefore $r \le s$).
+
+::: pf-proof
 Unique factorization in $\mathbb Z$ turns $p^s = p^{rd}$ into $s=rd$.
 :::
 
-<1>2. Reverse direction ($\#K = p^r, \, \#L = p^s$ with $r \mid s \implies K \hookrightarrow L$):
-<2>1. If $r \mid s$, then $(p^r - 1) \mid (p^s - 1)$ because:
+:::
+
+:::
+
+:::
+
+::: {.pf-step #reverse-direction}
+Reverse direction ($\#K = p^r, \, \#L = p^s$ with $r \mid s \implies K \hookrightarrow L$):
+
+::: pf-proof
+
+::: pf-step
+If $r \mid s$, then $(p^r - 1) \mid (p^s - 1)$ because:
 \[
 x^k - 1 = (x - 1)(x^{k-1} + \dots + 1) \quad \text{applied to } x = p^r, \, s = kr.
 \]
-::: {.proof}
+
+::: pf-proof
 Evaluate the displayed factorization of $x^k-1$ at the integer $x=p^r$.
 :::
-<2>2. The multiplicative group $L^\times$ is a cyclic group of order $p^s - 1$.
+
+:::
+
+::: pf-step
+The multiplicative group $L^\times$ is a cyclic group of order $p^s - 1$.
 Since $(p^r - 1) \mid (p^s - 1)$, $L^\times$ contains a unique cyclic subgroup $H$ of order $p^r - 1$.
-::: {.proof}
+
+::: pf-proof
 The multiplicative group of a finite field is cyclic,
 and a cyclic group has exactly one subgroup for each
 divisor of its order [@DF04].
 :::
-<2>3. The subset $K' = H \cup \{0\} \subseteq L$ consists precisely of all roots of the polynomial $f(x) = x^{p^r} - x \in \mathbb{F}_p[x]$ in $L$.
+
+:::
+
+::: pf-step
+The subset $K' = H \cup \{0\} \subseteq L$ consists precisely of all roots of the polynomial $f(x) = x^{p^r} - x \in \mathbb{F}_p[x]$ in $L$.
 Since the map $\phi(x) = x^{p^r}$ is an automorphism of $L$ (the $r$-th power of the Frobenius automorphism), the fixed set:
 \[
 K' = \operatorname{Fix}(\phi) = \{\alpha \in L \mid \alpha^{p^r} = \alpha\}
 \]
 is a subfield of $L$.
-::: {.proof}
+
+::: pf-proof
 The Frobenius map is an automorphism of a finite field,
 and the fixed elements of any field automorphism form
 a subfield [@DF04].
 :::
-<2>4. The subfield $K'$ has cardinality $\# K' = p^r = \# K$.
+
+:::
+
+::: pf-step
+The subfield $K'$ has cardinality $\# K' = p^r = \# K$.
 Since any two finite fields with $p^r$ elements are isomorphic, $K \cong K' \subseteq L$, so $K$ is isomorphic to a subfield of $L$.
-::: {.proof}
+
+::: pf-proof
 Finite fields of the same cardinality are isomorphic [@DF04].
 :::
 
-<1>3. Conclusion:
+:::
+
+:::
+
+:::
+
+::: pf-step
+Conclusion:
 $K$ embeds in $L$ if and only if $\#K=p^r$ and $\#L=p^s$
 for the same prime $p$ with $r\mid s$.
-::: {.proof}
-This follows from <1>1 and <1>2. Inside a common algebraic
+
+::: pf-proof
+This follows from step [](#forward-direction){.pf-ref} and step [](#reverse-direction){.pf-ref}. Inside a common algebraic
 closure, any subfield with $p^r$ elements is exactly the
 root set of $T^{p^r}-T$: all its elements are roots by
 Lagrange's theorem and the polynomial has at most $p^r$
 roots. Thus $K$ equals the constructed $K'$ in that
 setting, proving the final assertion of the remark.
 :::
+
+:::
+
+:::
 :::
 
 ::: {.solution}
-<1>1. An embedding forces the stated characteristic and divisibility.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #embedding-forces-divisibility}
+An embedding forces the stated characteristic and divisibility.
+
+::: pf-proof
 Every finite field has prime characteristic $p$ and
 is a finite-dimensional vector space over its prime
 subfield $\mathbb F_p$ [@DF04]. Its size is therefore
@@ -123,9 +184,12 @@ Consequently $r\mid s$. This also proves the
 four-versus-eight obstruction in the remark.
 :::
 
-<1>2. If $r\mid s$, then $L$ contains a subfield of size $p^r$.
+:::
 
-::: {.proof}
+::: pf-step
+If $r\mid s$, then $L$ contains a subfield of size $p^r$.
+
+::: pf-proof
 Write $s=rd$ with $d\geq1$, and put
 $h(T)=T^{p^r}-T$. In $\mathbb F_p[T]/(h)$ the
 class $t$ satisfies $t^{p^r}=t$. Iterating this
@@ -152,9 +216,12 @@ $(a^{-1})^{p^r}=a^{-1}$. Hence $K'$ is a subfield
 of $L$, of the claimed cardinality.
 :::
 
-<1>3. The field $K$ embeds in this subfield $K'$.
+:::
 
-::: {.proof}
+::: {.pf-step #k-embeds-in-subfield}
+The field $K$ embeds in this subfield $K'$.
+
+::: pf-proof
 Every element of $K$ is a root of $h$, again by
 Lagrange's theorem in $K^\times$. Thus $K$ is a
 splitting field of $h$ over $\mathbb F_p$.
@@ -169,6 +236,14 @@ $p^r$ is exactly the root set of $h$: it contains
 $p^r$ roots and a degree-$p^r$ polynomial has no
 others. Thus in that setting $K=K'$, which proves
 the literal-containment assertion of the remark.
+:::
+
+:::
+
+::: pf-qed
+Step [](#embedding-forces-divisibility){.pf-ref} proves the only-if direction, and step [](#k-embeds-in-subfield){.pf-ref} proves the if direction.
+:::
+
 :::
 :::
 

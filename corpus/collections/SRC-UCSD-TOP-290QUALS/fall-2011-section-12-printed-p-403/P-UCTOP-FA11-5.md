@@ -17,22 +17,35 @@ Let $M$ be a closed oriented 4-manifold whose second homology $H_2(M; \mathbb{Z}
 :::
 
 ::: {.solution}
-<1>1. Suppose a free $\mathbb Z/2$-action existed and let $N=M/(\mathbb Z/2)$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Suppose a free $\mathbb Z/2$-action existed and let $N=M/(\mathbb Z/2)$.
+
+::: pf-proof
 A free action of a finite group on a manifold gives a covering map $M\to N$ of degree $2$.
 :::
 
-<1>2. Euler characteristic would satisfy
+:::
+
+::: {.pf-step #euler-char-even}
+Euler characteristic would satisfy
 $$
 \chi(M)=2\chi(N),
 $$
 so $\chi(M)$ would be even.
-::: {.proof}
+
+::: pf-proof
 Euler characteristic multiplies by the degree of a finite covering of finite CW complexes; closed manifolds have finite CW type.
 :::
 
-<1>3. On the other hand, $\chi(M)$ is odd.
-::: {.proof}
+:::
+
+::: {.pf-step #euler-char-odd}
+On the other hand, $\chi(M)$ is odd.
+
+::: pf-proof
 Since $M$ is closed, connected, and oriented of dimension $4$, Poincaré duality over $\mathbb Q$ gives
 $$
 b_0=b_4=1,\qquad b_3=b_1.
@@ -44,8 +57,17 @@ $$
 which is odd.
 :::
 
-<1>4. This contradiction proves that no free $\mathbb Z/2$-action exists on $M$.
-::: {.proof}
-<1>2 and <1>3 give incompatible parities for $\chi(M)$.
 :::
+
+::: pf-step
+This contradiction proves that no free $\mathbb Z/2$-action exists on $M$.
+
+::: pf-proof
+Steps [](#euler-char-even){.pf-ref} and [](#euler-char-odd){.pf-ref} give incompatible parities for $\chi(M)$.
+:::
+
+:::
+
+:::
+
 :::

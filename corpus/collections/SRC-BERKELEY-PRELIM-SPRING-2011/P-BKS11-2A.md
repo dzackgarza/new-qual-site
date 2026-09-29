@@ -39,12 +39,15 @@ $$
 2\cos(2\pi/7).
 $$
 
-<1>1. The number $\alpha$ satisfies
+::: pf
+
+::: {.pf-step #cubic-relation}
+The number $\alpha$ satisfies
 $$
 \alpha^3+\alpha^2-2\alpha-1=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Expanding gives
 $$
 \alpha^2
@@ -77,13 +80,16 @@ $$
 $$
 :::
 
-<1>2. The polynomial
+:::
+
+::: {.pf-step #p-irreducible}
+The polynomial
 $$
 p(t)\coloneqq t^3+t^2-2t-1
 $$
 is irreducible over $\QQ$.
 
-::: {.proof}
+::: pf-proof
 The polynomial is primitive. Modulo $2$ it becomes
 $$
 \overline p(t)=t^3+t^2+1\in\FF_2[t].
@@ -102,7 +108,10 @@ equivalently a root. Hence $\overline p$ is irreducible over $\FF_2$.
 Gauss's lemma then implies that $p$ is irreducible over $\QQ$.
 :::
 
-<1>3. The minimal polynomial of $\alpha$ over $\QQ$ is
+:::
+
+::: {.pf-step #minimal-polynomial}
+The minimal polynomial of $\alpha$ over $\QQ$ is
 $$
 \boxed{t^3+t^2-2t-1},
 $$
@@ -111,16 +120,19 @@ $$
 [\QQ(\alpha):\QQ]=3.
 $$
 
-::: {.proof}
-Step <1>1 shows that $p(\alpha)=0$, while step <1>2 shows that $p$ is
+::: pf-proof
+Step [](#cubic-relation){.pf-ref} shows that $p(\alpha)=0$, while step [](#p-irreducible){.pf-ref} shows that $p$ is
 irreducible over $\QQ$. Since $p$ is monic, it is the minimal polynomial
 of $\alpha$.
 :::
 
-<1>4. The number $\alpha$ is not contained in any finite extension
+:::
+
+::: {.pf-step #no-power-of-two-extension}
+The number $\alpha$ is not contained in any finite extension
 $K/\QQ$ whose degree is a power of $2$.
 
-::: {.proof}
+::: pf-proof
 Suppose
 $$
 \alpha\in K
@@ -133,7 +145,7 @@ Then
 $$
 \QQ\subseteq\QQ(\alpha)\subseteq K.
 $$
-By the tower formula and step <1>3,
+By the tower formula and step [](#minimal-polynomial){.pf-ref},
 $$
 [K:\QQ]
 =
@@ -145,10 +157,13 @@ $$
 Thus $3$ divides $2^r$, which is impossible.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 supplies the required irreducible polynomial, and step <1>4 gives
+::: pf-qed
+Step [](#minimal-polynomial){.pf-ref} supplies the required irreducible polynomial, and step [](#no-power-of-two-extension){.pf-ref} gives
 the degree obstruction.
 :::
+
+:::
+
 :::

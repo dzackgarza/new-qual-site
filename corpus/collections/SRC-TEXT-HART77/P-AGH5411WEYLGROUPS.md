@@ -114,7 +114,10 @@ G_i=2h-\sum_{j\ne i}e_j
 $$
 for the $6+15+6=27$ line classes [[FE-SRFCUBIC]].
 
-<1>1. The assignment
+::: pf
+
+::: {.pf-step #an-surjects-onto-sn}
+The assignment
 $$
 s_i\longmapsto(i,i+1)
 $$
@@ -123,7 +126,7 @@ $$
 \mathbf A_n\longrightarrow\Sigma_n.
 $$
 
-::: {.proof}
+::: pf-proof
 Each adjacent transposition is an involution. Two adjacent transpositions
 with disjoint supports commute, so their product has order two, while
 $$
@@ -134,7 +137,10 @@ transpositions generate the full symmetric group, so the homomorphism is
 surjective.
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #coset-representatives}
+Let
 $$
 W_n=\mathbf A_n,
 \qquad
@@ -151,7 +157,7 @@ s_{n-1}s_{n-2},
 s_{n-1}s_{n-2}\cdots s_1.
 $$
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 r_j=s_{n-1}s_{n-2}\cdots s_j
@@ -190,13 +196,16 @@ multiplication by a generator. Because $1\in\mathcal U$, every word in the
 generators lies in $\mathcal U$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #an-order-bound}
+One has
 $$
 \boxed{|\mathbf A_n|\le n!}.
 $$
 
-::: {.proof}
-Step <1>2 gives at most $n$ right cosets of $W_{n-1}$. Hence
+::: pf-proof
+Step [](#coset-representatives){.pf-ref} gives at most $n$ right cosets of $W_{n-1}$. Hence
 $$
 |W_n|\le n|W_{n-1}|.
 $$
@@ -206,20 +215,26 @@ $$
 $$
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #an-iso-sn}
+Therefore
 $$
 \boxed{\mathbf A_n\cong\Sigma_n.}
 $$
 
-::: {.proof}
-Step <1>1 gives a surjection onto the group of order $n!$, while step <1>3
+::: pf-proof
+Step [](#an-surjects-onto-sn){.pf-ref} gives a surjection onto the group of order $n!$, while step [](#an-order-bound){.pf-ref}
 gives at most $n!$ elements in the source. Thus the source has exactly
 $n!$ elements and the surjection is injective. This proves part (a).
-:::
 
 We now turn to the cubic surface.
+:::
 
-<1>5. Put
+:::
+
+::: {.pf-step #simple-roots-square-minus-two}
+Put
 $$
 \alpha_i=e_i-e_{i+1}
 \qquad(1\le i\le5),
@@ -230,7 +245,7 @@ $$
 $$
 All six classes have square $-2$ and are orthogonal to $K_S$.
 
-::: {.proof}
+::: pf-proof
 For each $i$,
 $$
 \alpha_i^2=e_i^2+e_{i+1}^2=-2,
@@ -249,7 +264,10 @@ K_S\cdot\beta=-3+1+1+1=0.
 $$
 :::
 
-<1>6. For a class $\gamma$ with $\gamma^2=-2$, define
+:::
+
+::: {.pf-step #reflections-formulas}
+For a class $\gamma$ with $\gamma^2=-2$, define
 $$
 s_\gamma(D)=D+(D\cdot\gamma)\gamma.
 $$
@@ -257,7 +275,7 @@ Then $s_{\alpha_i}$ interchanges $e_i,e_{i+1}$ and fixes the other standard
 basis classes, while $s_\beta$ is the action on $\Pic S$ of the quadratic
 transformation based at $P_1,P_2,P_3$.
 
-::: {.proof}
+::: pf-proof
 For $\alpha_i=e_i-e_{i+1}$,
 $$
 e_i\cdot\alpha_i=-1,
@@ -289,10 +307,13 @@ the standard quadratic transformation centered at the first three points,
 as in [[P-AGH542QUADTRANSFORM]].
 :::
 
-<1>7. The six reflections of step <1>6 satisfy the Coxeter relations of the
+:::
+
+::: {.pf-step #e6-coxeter-relations}
+The six reflections of step [](#reflections-formulas){.pf-ref} satisfy the Coxeter relations of the
 $E_6$ diagram, with $s_\beta$ attached to $s_{\alpha_3}$.
 
-::: {.proof}
+::: pf-proof
 The only nonzero pairings between distinct simple roots are
 $$
 \alpha_i\cdot\alpha_{i+1}=1
@@ -320,13 +341,16 @@ whose product has order three. Thus the defining $E_6$ Coxeter relations
 hold.
 :::
 
-<1>8. Hence the assignments in part (b) define a homomorphism
+:::
+
+::: {.pf-step #homomorphism-to-g}
+Hence the assignments in part (b) define a homomorphism
 $$
 \Phi:\mathbf E_6\longrightarrow G.
 $$
 
-::: {.proof}
-Every reflection in step <1>6 preserves the intersection form and fixes
+::: pf-proof
+Every reflection in step [](#reflections-formulas){.pf-ref} preserves the intersection form and fixes
 $K_S$. It therefore preserves the set of classes satisfying
 $$
 L^2=-1,
@@ -335,11 +359,14 @@ K_S\cdot L=-1,
 $$
 which is exactly the set of $27$ line classes [[FE-SRFCUBIC]]. Since it also
 preserves pairwise intersection numbers, it preserves the incidence graph of
-the $27$ lines. Thus the reflections define elements of $G$, and step <1>7
+the $27$ lines. Thus the reflections define elements of $G$, and step [](#e6-coxeter-relations){.pf-ref}
 shows that the Coxeter presentation gives the asserted homomorphism.
 :::
 
-<1>9. The incidence relations between the three families of lines are:
+:::
+
+::: {.pf-step #incidence-relations}
+The incidence relations between the three families of lines are:
 $$
 \begin{aligned}
 E_i\cdot E_j&=0 &&(i\ne j),\\
@@ -354,7 +381,7 @@ G_i\cdot G_j&=0 &&(i\ne j).
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
 Substitute the divisor classes
 $$
 E_i=e_i,
@@ -372,18 +399,21 @@ e_i^2=-1,
 h\cdot e_i=e_i\cdot e_j=0\quad(i\ne j).
 $$
 Each displayed formula follows immediately.
-:::
 
 Call an unordered set of six mutually skew lines a **six**.
+:::
 
-<1>10. There are exactly
+:::
+
+::: {.pf-step #seventy-two-sixes}
+There are exactly
 $$
 \boxed{72}
 $$
 sixes in the configuration of $27$ lines.
 
-::: {.proof}
-We classify a six by the number of $E$-lines it contains, using step <1>9.
+::: pf-proof
+We classify a six by the number of $E$-lines it contains, using step [](#incidence-relations){.pf-ref}.
 
 If it contains all six $E_i$, we obtain the standard six
 $$
@@ -428,7 +458,10 @@ $$
 $$
 :::
 
-<1>11. Under permutations of the six indices, the $72$ sixes fall into five
+:::
+
+::: {.pf-step #five-orbits}
+Under permutations of the six indices, the $72$ sixes fall into five
 orbits represented by
 $$
 \begin{aligned}
@@ -440,8 +473,8 @@ $$
 \end{aligned}
 $$
 
-::: {.proof}
-The five cases in step <1>10 are distinguished by the numbers of $E$- and
+::: pf-proof
+The five cases in step [](#seventy-two-sixes){.pf-ref} are distinguished by the numbers of $E$- and
 $G$-lines:
 $$
 (6,0),
@@ -461,7 +494,10 @@ of the four-edge star among the other five indices. Thus the displayed five
 sets are orbit representatives.
 :::
 
-<1>12. Let $s_{ijk}$ denote the conjugate of $s_\beta$ corresponding to the
+:::
+
+::: {.pf-step #orbit-connecting-moves}
+Let $s_{ijk}$ denote the conjugate of $s_\beta$ corresponding to the
 quadratic transformation centered at $P_i,P_j,P_k$. Then
 $$
 \begin{aligned}
@@ -472,7 +508,7 @@ s_{123}(\mathcal S_3)&=\mathcal S_4.
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
 The subgroup generated by $x_1,\ldots,x_5$ is the full permutation group on
 the six indices by part (a), so every $s_{ijk}$ is a conjugate of $s_\beta$
 and belongs to the image of $\Phi$.
@@ -489,25 +525,31 @@ index is the unique remaining sixth index. Applying these rules to the four
 displayed representatives gives exactly the stated identities.
 :::
 
-<1>13. The image
+:::
+
+::: {.pf-step #h-transitive-on-sixes}
+The image
 $$
 H=\operatorname{im}(\Phi)\subseteq G
 $$
 acts transitively on all $72$ sixes.
 
-::: {.proof}
+::: pf-proof
 The index-permutation subgroup is transitive on each of the five orbit types
-from step <1>11. Step <1>12 connects all five types to the standard type.
+from step [](#five-orbits){.pf-ref}. Step [](#orbit-connecting-moves){.pf-ref} connects all five types to the standard type.
 Hence every six lies in the $H$-orbit of $\mathcal S_0$.
 :::
 
-<1>14. The stabilizer in $G$ of the standard six
+:::
+
+::: {.pf-step #stabilizer-is-s6}
+The stabilizer in $G$ of the standard six
 $$
 \mathcal S_0=\{E_1,\ldots,E_6\}
 $$
 is exactly the symmetric group $\Sigma_6$ permuting its six members.
 
-::: {.proof}
+::: pf-proof
 Every permutation of the $E_i$ is realized by the elements
 $x_1,\ldots,x_5$, so $\Sigma_6$ is contained in the stabilizer.
 
@@ -521,7 +563,10 @@ $27$ lines. The stabilizer therefore embeds in $\Sigma_6$, and equality
 follows.
 :::
 
-<1>15. The homomorphism
+:::
+
+::: {.pf-step #phi-surjective-order}
+The homomorphism
 $$
 \Phi:\mathbf E_6\longrightarrow G
 $$
@@ -530,15 +575,15 @@ $$
 \boxed{|G|=72\cdot6!=51840.}
 $$
 
-::: {.proof}
-By step <1>13, the subgroup $H=\operatorname{im}(\Phi)$ is transitive on
+::: pf-proof
+By step [](#h-transitive-on-sixes){.pf-ref}, the subgroup $H=\operatorname{im}(\Phi)$ is transitive on
 the $72$ sixes. It contains the full stabilizer $\Sigma_6$ of
 $\mathcal S_0$. Hence orbit--stabilizer gives
 $$
 |H|\ge72\cdot6!=51840.
 $$
 
-On the other hand $G$ also acts on the $72$ sixes, and step <1>14 says that
+On the other hand $G$ also acts on the $72$ sixes, and step [](#stabilizer-is-s6){.pf-ref} says that
 the stabilizer of $\mathcal S_0$ in $G$ has order $6!$. Therefore
 $$
 |G|\le72\cdot6!=51840.
@@ -552,11 +597,14 @@ $$
 H=G.
 $$
 This proves part (b).
-:::
 
 We finish by estimating the abstract Coxeter group itself.
+:::
 
-<1>16. In the lattice
+:::
+
+::: {.pf-step #seventy-two-roots}
+In the lattice
 $$
 K_S^\perp\subseteq\Pic S,
 $$
@@ -569,7 +617,7 @@ $$
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
 Write a root as
 $$
 r=ah-\sum_{i=1}^6b_ie_i.
@@ -632,9 +680,12 @@ $$
 $$
 :::
 
-<1>17. The Weyl group acts transitively on these $72$ roots.
+:::
 
-::: {.proof}
+::: {.pf-step #weyl-transitive-on-roots}
+The Weyl group acts transitively on these $72$ roots.
+
+::: pf-proof
 The subgroup generated by $s_{\alpha_1},\ldots,s_{\alpha_5}$ permutes the
 indices, so it is transitive on the roots $e_i-e_j$ up to the evident change
 of ordered pair.
@@ -671,7 +722,10 @@ $$
 Thus the final pair of roots also belongs to the same orbit.
 :::
 
-<1>18. Let
+:::
+
+::: {.pf-step #a5-orthogonal-subsystem}
+Let
 $$
 \rho=2h-\sum_{i=1}^6e_i.
 $$
@@ -683,7 +737,7 @@ $$
 which form a root system of type $A_5$ with Weyl group $\Sigma_6$ of order
 $720$.
 
-::: {.proof}
+::: pf-proof
 Directly,
 $$
 \rho\cdot(e_i-e_j)=0.
@@ -708,21 +762,24 @@ $$
 This is type $A_5$, whose Weyl group is $\Sigma_6$ by part (a).
 :::
 
-<1>19. The standard faithful geometric representation of a Coxeter group
+:::
+
+::: {.pf-step #e6-order-51840}
+The standard faithful geometric representation of a Coxeter group
 gives
 $$
 \boxed{|\mathbf E_6|=72\cdot720=51840.}
 $$
 
-::: {.proof}
+::: pf-proof
 The geometric representation theorem for Coxeter groups identifies the
 abstract group given by the Coxeter presentation with the reflection group
-generated by the six simple-root reflections of step <1>7; in particular
+generated by the six simple-root reflections of step [](#e6-coxeter-relations){.pf-ref}; in particular
 this representation is faithful.
 
 For a finite Weyl group, the stabilizer of a root is the Weyl group of the
-root subsystem orthogonal to that root. By step <1>18, the stabilizer of
-$\rho$ is therefore the type-$A_5$ Weyl group, of order $720$. Step <1>17
+root subsystem orthogonal to that root. By step [](#a5-orthogonal-subsystem){.pf-ref}, the stabilizer of
+$\rho$ is therefore the type-$A_5$ Weyl group, of order $720$. Step [](#weyl-transitive-on-roots){.pf-ref}
 shows that the orbit of $\rho$ consists of all $72$ roots. Orbit--stabilizer
 now gives
 $$
@@ -734,13 +791,16 @@ $$
 $$
 :::
 
-<1>20. The map of part (b) is an isomorphism:
+:::
+
+::: {.pf-step #e6-iso-g}
+The map of part (b) is an isomorphism:
 $$
 \boxed{\mathbf E_6\cong G.}
 $$
 
-::: {.proof}
-Step <1>15 gives a surjective homomorphism
+::: pf-proof
+Step [](#phi-surjective-order){.pf-ref} gives a surjective homomorphism
 $$
 \mathbf E_6\twoheadrightarrow G
 $$
@@ -748,7 +808,7 @@ and shows
 $$
 |G|=51840.
 $$
-Step <1>19 gives
+Step [](#e6-order-51840){.pf-ref} gives
 $$
 |\mathbf E_6|=51840.
 $$
@@ -756,10 +816,12 @@ A surjection between finite groups of equal order is an isomorphism. This
 proves part (c).
 :::
 
-<1>21. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), steps <1>5--<1>15 prove part (b), and
-steps <1>16--<1>20 prove part (c).
+::: pf-qed
+Steps [](#an-surjects-onto-sn){.pf-ref}, [](#coset-representatives){.pf-ref}, [](#an-order-bound){.pf-ref} and [](#an-iso-sn){.pf-ref} prove part (a), steps [](#simple-roots-square-minus-two){.pf-ref}, [](#reflections-formulas){.pf-ref}, [](#e6-coxeter-relations){.pf-ref}, [](#homomorphism-to-g){.pf-ref}, [](#incidence-relations){.pf-ref}, [](#seventy-two-sixes){.pf-ref}, [](#five-orbits){.pf-ref}, [](#orbit-connecting-moves){.pf-ref}, [](#h-transitive-on-sixes){.pf-ref}, [](#stabilizer-is-s6){.pf-ref} and [](#phi-surjective-order){.pf-ref} prove part (b), and
+steps [](#seventy-two-roots){.pf-ref}, [](#weyl-transitive-on-roots){.pf-ref}, [](#a5-orthogonal-subsystem){.pf-ref}, [](#e6-order-51840){.pf-ref} and [](#e6-iso-g){.pf-ref} prove part (c).
+:::
+
 :::
 :::

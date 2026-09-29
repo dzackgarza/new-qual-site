@@ -36,12 +36,16 @@ For which primes \(p\) is the unit group \(R^\times\) cyclic?
 :::
 
 ::: {.solution}
+
 Let $\bar x$ denote the image of $x$ in
 $$
 R=\FF_p[x]/(x^3).
 $$
 
-<1>1. An element
+::: pf
+
+::: {.pf-step #unit-characterization}
+An element
 $$
 c+a\bar x+b\bar x^2
 $$
@@ -50,7 +54,7 @@ $$
 \abs{R^\times}=(p-1)p^2.
 $$
 
-::: {.proof}
+::: pf-proof
 If $c=0$, then
 $$
 a\bar x+b\bar x^2
@@ -72,7 +76,10 @@ so the element is a unit. There are $p-1$ choices for $c$ and $p$
 choices each for $a,b$, giving the stated cardinality.
 :::
 
-<1>2. Suppose $p\ge3$. Then the subset
+:::
+
+::: {.pf-step #p-torsion-subset}
+Suppose $p\ge3$. Then the subset
 $$
 U=
 \{1+a\bar x+b\bar x^2:a,b\in\FF_p\}
@@ -83,8 +90,8 @@ $$
 u^p=1.
 $$
 
-::: {.proof}
-Step <1>1 shows that every displayed element is a unit, and distinct
+::: pf-proof
+Step [](#unit-characterization){.pf-ref} shows that every displayed element is a unit, and distinct
 pairs $(a,b)$ give distinct elements, so $\abs U=p^2$.
 
 Since $R$ is a commutative ring of characteristic $p$, the Frobenius
@@ -102,26 +109,32 @@ $$
 because $p\ge3$ and $\bar x^3=0$.
 :::
 
-<1>3. If $p\ge3$, the group $R^\times$ is not cyclic.
+:::
 
-::: {.proof}
+::: {.pf-step #not-cyclic-p-geq-3}
+If $p\ge3$, the group $R^\times$ is not cyclic.
+
+::: pf-proof
 In a finite cyclic group, the equation
 $$
 g^p=1
 $$
 has at most $p$ solutions: if the group has order $N$, the number is
-$\gcd(p,N)\le p$. Step <1>2 exhibits $p^2>p$ distinct solutions in
+$\gcd(p,N)\le p$. Step [](#p-torsion-subset){.pf-ref} exhibits $p^2>p$ distinct solutions in
 $R^\times$. Hence $R^\times$ cannot be cyclic.
 :::
 
-<1>4. If $p=2$, then $R^\times$ has four elements and
+:::
+
+::: {.pf-step #order-four-element-p2}
+If $p=2$, then $R^\times$ has four elements and
 $$
 1+\bar x
 $$
 has order four.
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+Step [](#unit-characterization){.pf-ref} gives
 $$
 \abs{R^\times}=(2-1)2^2=4.
 $$
@@ -141,19 +154,25 @@ $$
 Thus $1+\bar x$ has order exactly four.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #cyclic-iff-p2}
+Therefore
 $$
 \boxed{R^\times\text{ is cyclic exactly when }p=2}.
 $$
 
-::: {.proof}
-Step <1>3 excludes every prime $p\ge3$, while step <1>4 gives an
+::: pf-proof
+Step [](#not-cyclic-p-geq-3){.pf-ref} excludes every prime $p\ge3$, while step [](#order-four-element-p2){.pf-ref} gives an
 element of order $\abs{R^\times}=4$ when $p=2$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required classification.
 :::
+
+::: pf-qed
+Step [](#cyclic-iff-p2){.pf-ref} is the required classification.
+:::
+
+:::
+
 :::

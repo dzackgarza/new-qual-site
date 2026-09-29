@@ -23,56 +23,136 @@ Show that if $f: X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdor
 :::
 
 ::: {.solution}
-<1>1. Let $C \subseteq X$ be an arbitrary closed subset.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #c-closed-subset}
+Let $C \subseteq X$ be an arbitrary closed subset.
+
+::: pf-proof
 setup.
 :::
 
-<1>2. $C$ is a compact subspace of $X$.
-<2>1. $X$ is compact by hypothesis.
-::: {.proof}
+:::
+
+::: {.pf-step #c-compact}
+$C$ is a compact subspace of $X$.
+
+::: pf-proof
+
+::: {.pf-step #x-compact-hypothesis}
+$X$ is compact by hypothesis.
+
+::: pf-proof
 hypothesis.
 :::
-<2>2. Every closed subset of a compact topological space is compact.
-::: {.proof}
+
+:::
+
+::: {.pf-step #closed-subset-of-compact-is-compact}
+Every closed subset of a compact topological space is compact.
+
+::: pf-proof
 if $\mathcal{U}$ is an open cover of $C$, then $\mathcal{U} \cup \{X \setminus C\}$ is an open cover of $X$; the finite subcover of $X$ yields a finite subcover of $C$.
 :::
-<2>3. Hence $C$ is compact.
-::: {.proof}
-<2>1 and <2>2.
+
 :::
 
-<1>3. The image $f(C)$ is a compact subspace of $Y$.
-<2>1. $f: X \to Y$ is continuous.
-::: {.proof}
+::: pf-step
+Hence $C$ is compact.
+
+::: pf-proof
+Steps [](#x-compact-hypothesis){.pf-ref} and [](#closed-subset-of-compact-is-compact){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #fc-compact}
+The image $f(C)$ is a compact subspace of $Y$.
+
+::: pf-proof
+
+::: {.pf-step #f-continuous-hypothesis}
+$f: X \to Y$ is continuous.
+
+::: pf-proof
 hypothesis.
 :::
-<2>2. The continuous image of any compact space is compact.
-::: {.proof}
+
+:::
+
+::: {.pf-step #continuous-image-of-compact-is-compact}
+The continuous image of any compact space is compact.
+
+::: pf-proof
 if $\{V_\alpha\}$ is an open cover of $f(C)$, then $\{f^{-1}(V_\alpha)\}$ is an open cover of $C$; a finite subcover of $C$ maps under $f$ to a finite subcover of $f(C)$.
 :::
-<2>3. Hence $f(C)$ is compact in $Y$.
-::: {.proof}
-<1>2, <2>1, and <2>2.
+
 :::
 
-<1>4. $f(C)$ is a closed subset of $Y$.
-<2>1. $Y$ is Hausdorff by hypothesis.
-::: {.proof}
+::: pf-step
+Hence $f(C)$ is compact in $Y$.
+
+::: pf-proof
+Steps [](#c-compact){.pf-ref}, [](#f-continuous-hypothesis){.pf-ref}, and [](#continuous-image-of-compact-is-compact){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #fc-closed}
+$f(C)$ is a closed subset of $Y$.
+
+::: pf-proof
+
+::: {.pf-step #y-hausdorff-hypothesis}
+$Y$ is Hausdorff by hypothesis.
+
+::: pf-proof
 hypothesis.
 :::
-<2>2. Every compact subset of a Hausdorff space is closed.
-::: {.proof}
-for any $y_0 \notin f(C)$, Hausdorff separation gives disjoint open neighborhoods $U_x$ of $x \in f(C)$ and $V_x$ of $y_0$; compactness of $f(C)$ yields a finite subcover $\bigcup_{i=1}^n U_{x_i} \supset f(C)$, and the intersection $\bigcap_{i=1}^n V_{x_i}$ is an open neighborhood of $y_0$ disjoint from $f(C)$.
-:::
-<2>3. Hence $f(C)$ is closed in $Y$.
-::: {.proof}
-<1>3, <2>1, and <2>2.
+
 :::
 
-<1>5. Conclusion: $f$ maps every closed set $C \subseteq X$ to a closed set $f(C) \subseteq Y$, so $f$ is a closed map.
-::: {.proof}
-<1>1 and <1>4.
+::: {.pf-step #compact-subset-of-hausdorff-is-closed}
+Every compact subset of a Hausdorff space is closed.
+
+::: pf-proof
+for any $y_0 \notin f(C)$, Hausdorff separation gives disjoint open neighborhoods $U_x$ of $x \in f(C)$ and $V_x$ of $y_0$; compactness of $f(C)$ yields a finite subcover $\bigcup_{i=1}^n U_{x_i} \supset f(C)$, and the intersection $\bigcap_{i=1}^n V_{x_i}$ is an open neighborhood of $y_0$ disjoint from $f(C)$.
 :::
+
+:::
+
+::: pf-step
+Hence $f(C)$ is closed in $Y$.
+
+::: pf-proof
+Steps [](#fc-compact){.pf-ref}, [](#y-hausdorff-hypothesis){.pf-ref}, and [](#compact-subset-of-hausdorff-is-closed){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+Conclusion: $f$ maps every closed set $C \subseteq X$ to a closed set $f(C) \subseteq Y$, so $f$ is a closed map.
+
+::: pf-proof
+Steps [](#c-closed-subset){.pf-ref} and [](#fc-closed){.pf-ref}.
 Q.E.D.
+:::
+
+:::
+
+:::
+
 :::

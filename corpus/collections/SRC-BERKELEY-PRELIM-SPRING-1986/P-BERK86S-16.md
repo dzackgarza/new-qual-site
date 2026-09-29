@@ -45,9 +45,12 @@ $$
 \beta\coloneqq[x]_{R_2}.
 $$
 
-<1>1. For $p=2$, the rings $R_1$ and $R_2$ are isomorphic.
+::: pf
 
-::: {.proof}
+::: {.pf-step #p-two-isomorphic}
+For $p=2$, the rings $R_1$ and $R_2$ are isomorphic.
+
+::: pf-proof
 In $R_1$,
 $$
 \alpha^2=2=0.
@@ -82,9 +85,12 @@ $\FF_2$, hence both have four elements. A surjective map between these
 finite sets is bijective, so it is an isomorphism.
 :::
 
-<1>2. For $p=5$, the rings $R_1$ and $R_2$ are isomorphic.
+:::
 
-::: {.proof}
+::: {.pf-step #p-five-isomorphic}
+For $p=5$, the rings $R_1$ and $R_2$ are isomorphic.
+
+::: pf-proof
 In $R_1$,
 $$
 \alpha^2=2.
@@ -116,10 +122,13 @@ Again both rings have $5^2=25$ elements, so the surjective homomorphism
 is an isomorphism.
 :::
 
-<1>3. For $p=11$, the polynomial $x^2-2$ is irreducible over
+:::
+
+::: {.pf-step #x2-2-irreducible-11}
+For $p=11$, the polynomial $x^2-2$ is irreducible over
 $\FF_{11}$.
 
-::: {.proof}
+::: pf-proof
 The quadratic residues modulo $11$ are
 $$
 0,\ 1,\ 3,\ 4,\ 5,\ 9.
@@ -129,13 +138,16 @@ A quadratic polynomial over a field is irreducible exactly when it has
 no root.
 :::
 
-<1>4. For $p=11$, the polynomial $x^2-3$ splits into distinct linear
+:::
+
+::: {.pf-step #x2-3-splits-11}
+For $p=11$, the polynomial $x^2-3$ splits into distinct linear
 factors:
 $$
 x^2-3=(x-5)(x+5).
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 5^2=25=3
@@ -144,13 +156,16 @@ in $\FF_{11}$, both $5$ and $-5$ are roots. They are distinct because
 $5\neq-5$ modulo $11$.
 :::
 
-<1>5. For $p=11$, the rings $R_1$ and $R_2$ are not isomorphic.
+:::
 
-::: {.proof}
-By step <1>3, the ideal $(x^2-2)$ is maximal in $\FF_{11}[x]$, so
+::: {.pf-step #p-eleven-not-isomorphic}
+For $p=11$, the rings $R_1$ and $R_2$ are not isomorphic.
+
+::: pf-proof
+By step [](#x2-2-irreducible-11){.pf-ref}, the ideal $(x^2-2)$ is maximal in $\FF_{11}[x]$, so
 $R_1$ is a field.
 
-By step <1>4, in $R_2$ the nonzero classes
+By step [](#x2-3-splits-11){.pf-ref}, in $R_2$ the nonzero classes
 $$
 [x-5]
 \qquad\text{and}\qquad
@@ -161,7 +176,10 @@ is divisible by $x^2-3$. Thus $R_2$ has zero divisors and is not a
 field. A field cannot be isomorphic to a ring with nonzero zero divisors.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #table-boxed}
+Therefore
 $$
 \boxed{
 \begin{array}{c|ccc}
@@ -171,13 +189,15 @@ R_1\cong R_2&\text{yes}&\text{yes}&\text{no}
 }.
 $$
 
-::: {.proof}
-Steps <1>1, <1>2, and <1>5 settle the three cases respectively.
+::: pf-proof
+Steps [](#p-two-isomorphic){.pf-ref}, [](#p-five-isomorphic){.pf-ref}, and [](#p-eleven-not-isomorphic){.pf-ref} settle the three cases respectively.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 gives the complete comparison.
+::: pf-qed
+Step [](#table-boxed){.pf-ref} gives the complete comparison.
+:::
+
 :::
 :::

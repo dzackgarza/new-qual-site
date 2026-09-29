@@ -21,25 +21,42 @@ Give an example of a system of two linear equations in two unknowns which has no
 :::
 
 ::: {.solution}
-<1>1. The system
+
+::: pf
+
+::: pf-step
+The system
 $$\begin{cases} x + y = 1 \\ x + y = 2 \end{cases}$$
 has no solution.
-::: {.proof}
+
+::: pf-proof
 the two equations are inconsistent.
 :::
 
-<1>2. Justification: subtracting the first equation from the second gives $0 = 1$, a contradiction.
-::: {.proof}
+:::
+
+::: {.pf-step #subtracting-gives-0eq1}
+Justification: subtracting the first equation from the second gives $0 = 1$, a contradiction.
+
+::: pf-proof
 $(x + y) - (x + y) = 2 - 1$, i.e. $0 = 1$.
 :::
 
-<1>3. Hence no pair $(x, y)$ satisfies both equations.
-::: {.proof}
-<1>2.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>3.
+::: {.pf-step #no-pair-satisfies-both}
+Hence no pair $(x, y)$ satisfies both equations.
+
+::: pf-proof
+Step [](#subtracting-gives-0eq1){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#no-pair-satisfies-both){.pf-ref}.
+:::
+
+:::
+
 :::

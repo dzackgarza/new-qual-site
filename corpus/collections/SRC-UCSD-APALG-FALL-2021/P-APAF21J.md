@@ -28,6 +28,7 @@ Given another Young diagram $\lambda\vdash d$, show that $C_\alpha$ acts in the 
 :::
 
 ::: {.solution}
+
 For a partition
 \[
 \alpha=(1^{m_1}2^{m_2}\cdots)\vdash d,
@@ -41,12 +42,16 @@ Then the conjugacy class of cycle type $\alpha$ has size
 |C_\alpha|=\frac{d!}{z_\alpha}.
 \]
 
-<1>1. The class sum
+::: pf
+
+::: {.pf-step #class-sum-is-central}
+The class sum
 \[
 C_\alpha:=\sum_{g\in C_\alpha}g\in\mathbb C S_d
 \]
 is central in the group algebra.
-::: {.proof}
+
+::: pf-proof
 For every $h\in S_d$,
 \[
 hC_\alpha h^{-1}
@@ -55,15 +60,22 @@ hC_\alpha h^{-1}
 Conjugation by $h$ permutes the elements of the conjugacy class $C_\alpha$, so the right-hand side is again $C_\alpha$. Thus $hC_\alpha=C_\alpha h$ for every $h$, hence $C_\alpha\in Z(\mathbb C S_d)$.
 :::
 
-<1>2. On the irreducible module $V^\lambda$, the class sum $C_\alpha$ acts by a scalar:
+:::
+
+::: {.pf-step #class-sum-acts-by-scalar}
+On the irreducible module $V^\lambda$, the class sum $C_\alpha$ acts by a scalar:
 \[
 \rho_\lambda(C_\alpha)=\omega_\alpha^\lambda I.
 \]
-::: {.proof}
-By <1>1, the operator $\rho_\lambda(C_\alpha)$ commutes with every $\rho_\lambda(h)$ for $h\in S_d$. Since $V^\lambda$ is irreducible over $\mathbb C$, Schur's lemma implies that every such commuting endomorphism is scalar.
+
+::: pf-proof
+By step [](#class-sum-is-central){.pf-ref}, the operator $\rho_\lambda(C_\alpha)$ commutes with every $\rho_\lambda(h)$ for $h\in S_d$. Since $V^\lambda$ is irreducible over $\mathbb C$, Schur's lemma implies that every such commuting endomorphism is scalar.
 :::
 
-<1>3. The scalar is
+:::
+
+::: {.pf-step #scalar-formula-general}
+The scalar is
 \[
 \boxed{
 \omega_\alpha^\lambda
@@ -71,8 +83,9 @@ By <1>1, the operator $\rho_\lambda(C_\alpha)$ commutes with every $\rho_\lambda
 =\frac{d!}{z_\alpha}\frac{\chi^\lambda(\alpha)}{f^\lambda},}
 \]
 where $f^\lambda=\dim V^\lambda=\chi^\lambda(1)$.
-::: {.proof}
-Take traces in the identity from <1>2. On one hand,
+
+::: pf-proof
+Take traces in the identity from step [](#class-sum-acts-by-scalar){.pf-ref}. On one hand,
 \[
 \operatorname{tr}(\rho_\lambda(C_\alpha))
 =\sum_{g\in C_\alpha}\chi^\lambda(g)
@@ -86,11 +99,15 @@ because the character is constant on conjugacy classes. On the other hand,
 Equating the two traces gives the formula.
 :::
 
-<1>4. Suppose now that $\alpha=(d)$, so $C_{(d)}$ is the class of $d$-cycles. Then
+:::
+
+::: {.pf-step #d-cycle-class-size}
+Suppose now that $\alpha=(d)$, so $C_{(d)}$ is the class of $d$-cycles. Then
 \[
 |C_{(d)}|=(d-1)!.
 \]
-::: {.proof}
+
+::: pf-proof
 For the partition $(d)$ one has $m_d=1$ and all other $m_j=0$, so
 \[
 z_{(d)}=d.
@@ -101,7 +118,10 @@ Hence
 \]
 :::
 
-<1>5. The irreducible character value on a $d$-cycle is
+:::
+
+::: {.pf-step #character-value-on-d-cycle}
+The irreducible character value on a $d$-cycle is
 \[
 \chi^\lambda((d))=
 \begin{cases}
@@ -109,7 +129,8 @@ Hence
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 Apply the Murnaghan--Nakayama rule to a permutation consisting of one cycle of length $d$. One must remove a rim hook of length $d$ from the Young diagram of $\lambda$, leaving the empty diagram. Thus the whole diagram of $\lambda$ must itself be a rim hook.
 
 A Young diagram is a rim hook precisely when it is connected and contains no $2\times2$ square. For a partition diagram this is equivalent to being a hook
@@ -123,11 +144,15 @@ Such a hook has height $r+1$, so Murnaghan--Nakayama assigns the sign
 If $\lambda$ is not a hook there is no admissible rim-hook removal, so the character value is $0$.
 :::
 
-<1>6. For a hook partition $\lambda=(d-r,1^r)$,
+:::
+
+::: {.pf-step #hook-dimension-formula}
+For a hook partition $\lambda=(d-r,1^r)$,
 \[
 f^\lambda=\binom{d-1}{r}.
 \]
-::: {.proof}
+
+::: pf-proof
 By the hook-length formula,
 \[
 f^\lambda=\frac{d!}{\prod_{u\in\lambda}h(u)}.
@@ -153,7 +178,10 @@ f^\lambda
 \]
 :::
 
-<1>7. Hence for the class of $d$-cycles,
+:::
+
+::: {.pf-step #scalar-formula-for-d-cycles}
+Hence for the class of $d$-cycles,
 \[
 \boxed{
 \omega_{(d)}^\lambda=
@@ -162,13 +190,23 @@ f^\lambda
 0,&\lambda\text{ is not a hook}.
 \end{cases}}
 \]
-::: {.proof}
-If $\lambda$ is not a hook, <1>5 gives $\chi^\lambda((d))=0$, so <1>3 gives $\omega_{(d)}^\lambda=0$.
-For $\lambda=(d-r,1^r)$, combine <1>3--<1>6:
+
+::: pf-proof
+If $\lambda$ is not a hook, step [](#character-value-on-d-cycle){.pf-ref} gives $\chi^\lambda((d))=0$, so step [](#scalar-formula-general){.pf-ref} gives $\omega_{(d)}^\lambda=0$.
+For $\lambda=(d-r,1^r)$, combine steps [](#scalar-formula-general){.pf-ref}, [](#d-cycle-class-size){.pf-ref}, [](#character-value-on-d-cycle){.pf-ref} and [](#hook-dimension-formula){.pf-ref}:
 \[
 \omega_{(d)}^\lambda
 =\frac{(d-1)!(-1)^r}{\binom{d-1}{r}}
 =(-1)^r r!(d-1-r)!.
 \]
 :::
+
+:::
+
+::: pf-qed
+Step [](#scalar-formula-general){.pf-ref} answers part (a); step [](#scalar-formula-for-d-cycles){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

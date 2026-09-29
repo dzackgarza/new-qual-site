@@ -35,13 +35,17 @@ Give an example of two operators on an infinite-dimensional complex vector space
 :::
 
 ::: {.solution}
-<1>1. On a nonzero finite-dimensional complex vector space, no
+
+::: pf
+
+::: {.pf-step #finite-dim-impossible}
+On a nonzero finite-dimensional complex vector space, no
 operators $A,B$ can satisfy
 $$
 AB-BA=I.
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose the vector space has dimension $n>0$. Taking traces and using
 cyclicity of trace gives
 $$
@@ -56,7 +60,10 @@ $$
 a contradiction.
 :::
 
-<1>2. On the infinite-dimensional complex vector space $\CC[x]$, let
+:::
+
+::: {.pf-step #infinite-dim-example}
+On the infinite-dimensional complex vector space $\CC[x]$, let
 $$
 A(p)\coloneqq p',
 \qquad
@@ -67,7 +74,7 @@ $$
 \boxed{AB-BA=I}.
 $$
 
-::: {.proof}
+::: pf-proof
 For every polynomial $p$,
 $$
 \begin{aligned}
@@ -81,10 +88,13 @@ Thus the commutator acts as the identity on every element of
 $\CC[x]$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves the finite-dimensional impossibility, and step <1>2
+::: pf-qed
+Step [](#finite-dim-impossible){.pf-ref} proves the finite-dimensional impossibility, and step [](#infinite-dim-example){.pf-ref}
 provides the required infinite-dimensional example.
 :::
+
+:::
+
 :::

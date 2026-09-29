@@ -44,7 +44,10 @@ x^{\alpha-1}
 $$
 where $\log x$ is the real logarithm.
 
-<1>1. The improper integral
+::: pf
+
+::: {.pf-step #convergence-strip-boxed}
+The improper integral
 $$
 I(\alpha)
 \coloneqq
@@ -55,7 +58,7 @@ $$
 \boxed{0<\Re\alpha<1}.
 $$
 
-::: {.proof}
+::: pf-proof
 Near $0$,
 $$
 \frac{x^{\alpha-1}}{1+x}
@@ -83,7 +86,10 @@ exactly in the displayed strip. In that strip the integral is in fact
 absolutely convergent.
 :::
 
-<1>2. Assume henceforth that $0<\Re\alpha<1$. On
+:::
+
+::: {.pf-step #f-residue}
+Assume henceforth that $0<\Re\alpha<1$. On
 $$
 \CC\setminus[0,\infty)
 $$
@@ -106,7 +112,7 @@ $$
 -e^{i\pi\alpha}.
 $$
 
-::: {.proof}
+::: pf-proof
 The only zero of the denominator is $-1$, whose argument in the chosen
 branch is $\pi$. Hence
 $$
@@ -118,7 +124,10 @@ e^{(\alpha-1)i\pi}
 $$
 :::
 
-<1>3. Integrate $F$ around the positively oriented keyhole contour
+:::
+
+::: {.pf-step #circular-arcs-vanish}
+Integrate $F$ around the positively oriented keyhole contour
 with radii $0<\epsilon<1<R$ about the positive real axis. The outer
 and inner circular contributions tend to $0$ as
 $$
@@ -127,7 +136,7 @@ R\to\infty,
 \epsilon\to0.
 $$
 
-::: {.proof}
+::: pf-proof
 On either circular arc, the factor
 $$
 e^{-\Im(\alpha)\arg z}
@@ -161,13 +170,16 @@ $$
 because $\Re\alpha>0$.
 :::
 
-<1>4. In the same limit, the sum of the two straight portions of the
+:::
+
+::: {.pf-step #straight-segments-sum}
+In the same limit, the sum of the two straight portions of the
 keyhole contour is
 $$
 \left(1-e^{2\pi i\alpha}\right)I(\alpha).
 $$
 
-::: {.proof}
+::: pf-proof
 On the upper side of the positive axis, $\arg z\to0$, so the
 integrand tends to
 $$
@@ -191,17 +203,20 @@ $$
 Adding the two contributions gives the claim.
 :::
 
-<1>5. The residue theorem gives
+:::
+
+::: {.pf-step #residue-theorem-equation}
+The residue theorem gives
 $$
 \left(1-e^{2\pi i\alpha}\right)I(\alpha)
 =
 -2\pi i e^{i\pi\alpha}.
 $$
 
-::: {.proof}
-By step <1>3, the circular integrals disappear in the limit. By step
-<1>4, the remaining contour integral tends to the left-hand side.
-Step <1>2 and the residue theorem give
+::: pf-proof
+By step [](#circular-arcs-vanish){.pf-ref}, the circular integrals disappear in the limit. By step
+[](#straight-segments-sum){.pf-ref}, the remaining contour integral tends to the left-hand side.
+Step [](#f-residue){.pf-ref} and the residue theorem give
 $$
 2\pi i\operatorname{Res}_{z=-1}F
 =
@@ -209,7 +224,10 @@ $$
 $$
 :::
 
-<1>6. For $0<\Re\alpha<1$,
+:::
+
+::: {.pf-step #value-boxed}
+For $0<\Re\alpha<1$,
 $$
 \boxed{
 I(\alpha)
@@ -218,30 +236,35 @@ I(\alpha)
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Use
 $$
 1-e^{2\pi i\alpha}
 =
 -2i e^{i\pi\alpha}\sin(\pi\alpha)
 $$
-in step <1>5 and cancel the nonzero common factor
+in step [](#residue-theorem-equation){.pf-ref} and cancel the nonzero common factor
 $-2i e^{i\pi\alpha}$.
 :::
 
-<1>7. If $\alpha$ is required to be real, the restriction is exactly
+:::
+
+::: {.pf-step #real-restriction-boxed}
+If $\alpha$ is required to be real, the restriction is exactly
 $$
 \boxed{0<\alpha<1}.
 $$
 
-::: {.proof}
-This is step <1>1 specialized to real $\alpha$.
+::: pf-proof
+This is step [](#convergence-strip-boxed){.pf-ref} specialized to real $\alpha$.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1, <1>6, and <1>7 give the convergence restriction and the
+::: pf-qed
+Steps [](#convergence-strip-boxed){.pf-ref}, [](#value-boxed){.pf-ref}, and [](#real-restriction-boxed){.pf-ref} give the convergence restriction and the
 required value of the integral.
+:::
+
 :::
 :::

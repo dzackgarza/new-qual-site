@@ -32,6 +32,7 @@ Find all prime ideals of \(K\times L\).
 :::
 
 ::: {.solution}
+
 Let
 $$
 I\coloneqq K\times\{0\},
@@ -39,9 +40,12 @@ I\coloneqq K\times\{0\},
 J\coloneqq\{0\}\times L.
 $$
 
-<1>1. The ideals $I$ and $J$ are maximal, hence prime.
+::: pf
 
-::: {.proof}
+::: {.pf-step #I-J-maximal-prime}
+The ideals $I$ and $J$ are maximal, hence prime.
+
+::: pf-proof
 The second coordinate projection
 $$
 \pi_L:K\times L\longrightarrow L
@@ -55,10 +59,13 @@ projection has kernel $J$ and quotient isomorphic to $K$, so $J$ is
 maximal.
 :::
 
-<1>2. Every prime ideal $P\subseteq K\times L$ is equal to $I$ or
+:::
+
+::: {.pf-step #every-prime-is-I-or-J}
+Every prime ideal $P\subseteq K\times L$ is equal to $I$ or
 $J$.
 
-::: {.proof}
+::: pf-proof
 In $K\times L$,
 $$
 (1,0)(0,1)=(0,0)\in P.
@@ -69,26 +76,32 @@ If $(1,0)\in P$, then for every $a\in K$,
 $$
 (a,0)=(a,0)(1,0)\in P,
 $$
-so $I\subseteq P$. By maximality of $I$ from step <1>1 and properness
+so $I\subseteq P$. By maximality of $I$ from step [](#I-J-maximal-prime){.pf-ref} and properness
 of the prime ideal $P$, this forces $P=I$.
 
 If $(0,1)\in P$, the same argument gives $J\subseteq P$, hence
 $P=J$.
 :::
 
-<1>3. The prime ideals of $K\times L$ are exactly
+:::
+
+::: {.pf-step #prime-ideals-list}
+The prime ideals of $K\times L$ are exactly
 $$
 \boxed{K\times\{0\},\ \{0\}\times L}.
 $$
 
-::: {.proof}
-Step <1>1 shows that both displayed ideals are prime, and step <1>2
+::: pf-proof
+Step [](#I-J-maximal-prime){.pf-ref} shows that both displayed ideals are prime, and step [](#every-prime-is-I-or-J){.pf-ref}
 shows that there are no others.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested classification.
 :::
+
+::: pf-qed
+Step [](#prime-ideals-list){.pf-ref} gives the requested classification.
+:::
+
+:::
+
 :::

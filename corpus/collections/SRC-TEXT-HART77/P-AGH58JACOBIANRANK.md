@@ -44,9 +44,12 @@ J(P)=
 \right]_{\substack{1\le i\le t\\0\le j\le n}}.
 $$
 
-<1>1. The rank of $J(P)$ is independent of the chosen nonzero homogeneous-coordinate representative of $P$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #rank-independent-of-representative}
+The rank of $J(P)$ is independent of the chosen nonzero homogeneous-coordinate representative of $P$.
+
+::: pf-proof
 Replace
 $$
 (a_0,\ldots,a_n)
@@ -65,7 +68,10 @@ Multiplying individual rows by nonzero scalars does not change matrix rank.
 Hence the rank depends only on the projective point $P$.
 :::
 
-<1>2. Choose an index $\ell$ with $a_\ell\ne0$ and normalize the coordinates so that $a_\ell=1$.
+:::
+
+::: {.pf-step #affine-chart-equations}
+Choose an index $\ell$ with $a_\ell\ne0$ and normalize the coordinates so that $a_\ell=1$.
 On the standard affine chart $U_\ell=D_+(x_\ell)\cong\AA^n$, the affine equations of $Y\cap U_\ell$ are
 $$
 g_i(u_0,\ldots,\widehat{u_\ell},\ldots,u_n)
@@ -73,7 +79,7 @@ g_i(u_0,\ldots,\widehat{u_\ell},\ldots,u_n)
 f_i(u_0,\ldots,u_{\ell-1},1,u_{\ell+1},\ldots,u_n).
 $$
 
-::: {.proof}
+::: pf-proof
 This is the standard dehomogenization of homogeneous equations on the chart $x_\ell\ne0$.
 The point $P$ corresponds to the affine point
 $$
@@ -83,9 +89,12 @@ Since localization and dehomogenization preserve the vanishing ideal on the char
 The open subvariety $Y\cap U_\ell$ has the same dimension $r$ as $Y$, because it is a nonempty open subset of the irreducible variety $Y$.
 :::
 
-<1>3. The affine Jacobian matrix of the $g_i$ at $p$ is obtained from $J(P)$ by deleting column $\ell$.
+:::
 
-::: {.proof}
+::: {.pf-step #affine-jacobian-is-submatrix}
+The affine Jacobian matrix of the $g_i$ at $p$ is obtained from $J(P)$ by deleting column $\ell$.
+
+::: pf-proof
 For $j\ne\ell$, differentiating the dehomogenized polynomial gives
 $$
 \frac{\partial g_i}{\partial u_j}(p)
@@ -95,9 +104,12 @@ $$
 Thus the $t\times n$ affine Jacobian consists exactly of the columns of $J(P)$ indexed by $j\ne\ell$.
 :::
 
-<1>4. The deleted column $\ell$ lies in the span of the remaining columns, so the projective and affine Jacobian matrices have the same rank.
+:::
 
-::: {.proof}
+::: {.pf-step #deleted-column-in-span}
+The deleted column $\ell$ lies in the span of the remaining columns, so the projective and affine Jacobian matrices have the same rank.
+
+::: pf-proof
 Euler's identity for the homogeneous polynomial $f_i$ is
 $$
 \sum_{j=0}^n x_j\frac{\partial f_i}{\partial x_j}=d_i f_i.
@@ -114,32 +126,37 @@ C_\ell=-\sum_{j\ne\ell}a_j C_j,
 $$
 where $C_j$ denotes column $j$ of $J(P)$.
 Thus adjoining column $\ell$ to the affine Jacobian does not increase its rank.
-By step <1>3, the two ranks are equal.
+By step [](#affine-jacobian-is-submatrix){.pf-ref}, the two ranks are equal.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #jacobian-criterion-equivalence}
+One has
 $$
 \boxed{P\text{ nonsingular on }Y
 \quad\Longleftrightarrow\quad
 \operatorname{rank}J(P)=n-r.}
 $$
 
-::: {.proof}
-The affine variety $Y\cap U_\ell\subseteq\AA^n$ has dimension $r$ by step <1>2.
+::: pf-proof
+The affine variety $Y\cap U_\ell\subseteq\AA^n$ has dimension $r$ by step [](#affine-chart-equations){.pf-ref}.
 The affine Jacobian criterion says that $P$ is nonsingular on this affine open exactly when its affine Jacobian has rank
 $$
 n-r
 $$
 [@Har10a, Chapter I, §5].
 Nonsingularity is local, so this is equivalent to $P$ being nonsingular on $Y$.
-Step <1>4 identifies the affine Jacobian rank with $\operatorname{rank}J(P)$.
+Step [](#deleted-column-in-span){.pf-ref} identifies the affine Jacobian rank with $\operatorname{rank}J(P)$.
 The displayed equivalence follows.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 verifies that the stated rank is intrinsic to the projective point.
-Steps <1>2--<1>4 compare it with the affine Jacobian rank, and step <1>5 applies the affine criterion to prove the result.
+::: pf-qed
+Step [](#rank-independent-of-representative){.pf-ref} verifies that the stated rank is intrinsic to the projective point.
+Steps [](#affine-chart-equations){.pf-ref}, [](#affine-jacobian-is-submatrix){.pf-ref} and [](#deleted-column-in-span){.pf-ref} compare it with the affine Jacobian rank, and step [](#jacobian-criterion-equivalence){.pf-ref} applies the affine criterion to prove the result.
+:::
+
 :::
 :::

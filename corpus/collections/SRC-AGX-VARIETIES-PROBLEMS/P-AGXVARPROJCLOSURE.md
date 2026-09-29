@@ -73,12 +73,15 @@ $$
 Under the standard embedding, $U_0\cong\AA^n_k$ and $X$ is identified with
 a closed subset of $U_0$.
 
-<1>1. The projective closure satisfies
+::: pf
+
+::: {.pf-step #closure-intersect-u0}
+The projective closure satisfies
 $$
 \boxed{\overline X\intersect U_0=X.}
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 j:U_0\hookrightarrow\PP^n_k
@@ -120,13 +123,16 @@ $$
 $$
 :::
 
-<1>2. The complement of $U_0$ in $\PP^n_k$ is exactly the hyperplane at
+:::
+
+::: {.pf-step #complement-u0-is-h0}
+The complement of $U_0$ in $\PP^n_k$ is exactly the hyperplane at
 infinity:
 $$
 \PP^n_k\sm U_0=H_0.
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 U_0=\{[x_0:\ldots:x_n]:x_0\ne0\}.
@@ -139,7 +145,10 @@ H_0.
 $$
 :::
 
-<1>3. The projective closure decomposes as
+:::
+
+::: {.pf-step #closure-decomposition}
+The projective closure decomposes as
 $$
 \boxed{
 \overline X
@@ -148,8 +157,8 @@ X\union(H_0\intersect\overline X).
 }
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#complement-u0-is-h0){.pf-ref},
 $$
 \PP^n_k
 =
@@ -163,7 +172,7 @@ $$
 \union
 (\overline X\intersect H_0).
 $$
-Step <1>1 identifies the first term with $X$. Therefore
+Step [](#closure-intersect-u0){.pf-ref} identifies the first term with $X$. Therefore
 $$
 \overline X
 =
@@ -171,7 +180,10 @@ X\union(H_0\intersect\overline X).
 $$
 :::
 
-<1>4. With
+:::
+
+::: {.pf-step #boundary-formula}
+With
 $$
 \bd X
 \coloneqq
@@ -182,15 +194,18 @@ $$
 \boxed{\overline X=X\union\bd X.}
 $$
 
-::: {.proof}
-This is the identity in step <1>3 with $\bd X$ written for the boundary at
+::: pf-proof
+This is the identity in step [](#closure-decomposition){.pf-ref} with $\bd X$ written for the boundary at
 infinity.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 identifies the affine part of the projective closure with $X$, and
-steps <1>2--<1>4 identify the remaining part with the boundary at infinity.
 :::
+
+::: pf-qed
+Step [](#closure-intersect-u0){.pf-ref} identifies the affine part of the projective closure with $X$, and
+steps [](#complement-u0-is-h0){.pf-ref}, [](#closure-decomposition){.pf-ref} and [](#boundary-formula){.pf-ref} identify the remaining part with the boundary at infinity.
+:::
+
+:::
+
 :::

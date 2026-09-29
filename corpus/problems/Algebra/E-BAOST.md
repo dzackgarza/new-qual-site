@@ -43,8 +43,13 @@ audit:
 
 
 ::: {.solution}
-<1>1. A finite transitive action on at least two points has a fixed-point-free element.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+A finite transitive action on at least two points has a fixed-point-free element.
+
+::: pf-proof
 For $g\in G$, let $X^g$ be its fixed-point set. Burnside's orbit-counting lemma gives
 \[
 1=|X/G|=\frac1{|G|}\sum_{g\in G}|X^g|,
@@ -62,7 +67,10 @@ The identity fixes all of $X$, and $|X|\ge2$. If every $g\in G$ fixed at least o
 a contradiction. Hence some $g$ has $X^g=\varnothing$.
 :::
 
-<1>2. The numbers of subgroups $H\le\ZZ^3$ with quotient of order $p^2$ are
+:::
+
+::: pf-step
+The numbers of subgroups $H\le\ZZ^3$ with quotient of order $p^2$ are
 \[
 \begin{array}{c|c}
 K & \#\{H:\ZZ^3/H\cong K\}\\ \hline
@@ -70,7 +78,8 @@ K & \#\{H:\ZZ^3/H\cong K\}\\ \hline
 \ZZ/p^2\ZZ & p^2(p^2+p+1).
 \end{array}
 \]
-::: {.proof}
+
+::: pf-proof
 There are exactly two abelian groups of order $p^2$.
 
 For $K\cong(\ZZ/p\ZZ)^2$, any such $H$ contains $p\ZZ^3$, and $H/p\ZZ^3$ is a one-dimensional subspace of
@@ -102,8 +111,12 @@ Therefore the number of kernels is
 \]
 :::
 
-<1>3. Every group of order $pq$ has a nontrivial proper normal subgroup; under the two stated congruence hypotheses it is abelian.
-::: {.proof}
+:::
+
+::: pf-step
+Every group of order $pq$ has a nontrivial proper normal subgroup; under the two stated congruence hypotheses it is abelian.
+
+::: pf-proof
 Interchange $p$ and $q$ if necessary so that $p<q$. Let $n_q$ be the number of Sylow $q$-subgroups. Then
 \[
 n_q\mid p,
@@ -121,8 +134,12 @@ n_p\equiv1\pmod p.
 Hence $n_p=1$ or $q$, and the congruence hypothesis excludes $q$, so the Sylow $p$-subgroup $P$ is also normal. Since $P\cap Q=1$ and $|P||Q|=|G|$, we have $G=PQ$. For $a\in P$ and $b\in Q$, the commutator $aba^{-1}b^{-1}$ lies in both $P$ and $Q$ because both are normal, hence is trivial. Thus $P$ and $Q$ commute elementwise and $G\cong P\times Q$ is abelian.
 :::
 
-<1>4. If $p$ is the smallest prime divisor of $|G|$ and $H\trianglelefteq G$ has order $p$, then $H\subseteq Z(G)$.
-::: {.proof}
+:::
+
+::: pf-step
+If $p$ is the smallest prime divisor of $|G|$ and $H\trianglelefteq G$ has order $p$, then $H\subseteq Z(G)$.
+
+::: pf-proof
 Since $|H|=p$, $H\cong C_p$, so
 \[
 |\operatorname{Aut}(H)|=p-1.
@@ -138,8 +155,12 @@ The order of $\operatorname{im}\theta$ divides both $|G|$ and $p-1$. Every prime
 so $\operatorname{im}\theta=1$. Thus every $g\in G$ centralizes every $h\in H$, proving $H\subseteq Z(G)$.
 :::
 
-<1>5. If $G$ has even order and its Sylow $2$-subgroup $P=\langle x\rangle$ is cyclic, then left multiplication by $x$ has sign $-1$, and $G$ has a quotient of order $2$.
-::: {.proof}
+:::
+
+::: pf-step
+If $G$ has even order and its Sylow $2$-subgroup $P=\langle x\rangle$ is cyclic, then left multiplication by $x$ has sign $-1$, and $G$ has a quotient of order $2$.
+
+::: pf-proof
 Write
 \[
 |P|=2^r\quad(r\ge1),
@@ -177,4 +198,9 @@ is a homomorphism. Since $\varepsilon(x)=-1$, it is surjective. Therefore its ke
 G/\ker\varepsilon\cong C_2.
 \]
 :::
+
+:::
+
+:::
+
 :::

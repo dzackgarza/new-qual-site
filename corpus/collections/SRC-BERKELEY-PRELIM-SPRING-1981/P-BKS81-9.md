@@ -35,9 +35,12 @@ Show that the following are equivalent:
 :::
 
 ::: {.solution}
-<1>1. Conditions (1) and (2) are equivalent.
+::: pf
 
-::: {.proof}
+::: {.pf-step #trace-eigenvalue-equivalence}
+Conditions (1) and (2) are equivalent.
+
+::: pf-proof
 Since
 $$
 \operatorname{tr}A=\lambda_1+\lambda_2+\lambda_3,
@@ -57,12 +60,18 @@ Thus $\operatorname{tr}A$ is not any eigenvalue of $A$ exactly when all
 three pairwise sums are nonzero, which is condition (2).
 :::
 
-<1>2. Condition (2) is equivalent to condition (3).
+:::
 
-<2>1. Orthogonal diagonalization reduces the map $L$ to the case in which
+::: {.pf-step #condition-two-iff-three}
+Condition (2) is equivalent to condition (3).
+
+::: pf-proof
+
+::: {.pf-step #diagonalize-a}
+Orthogonal diagonalization reduces the map $L$ to the case in which
 $A$ is diagonal.
 
-::: {.proof}
+::: pf-proof
 Because $A$ is real symmetric, there is an orthogonal matrix $Q$ such that
 $$
 Q^{\mathsf T}AQ
@@ -92,7 +101,10 @@ $$
 is an isomorphism.
 :::
 
-<2>2. In the standard coordinates on $S$, the map $L_D$ is diagonal with
+:::
+
+::: {.pf-step #l-diagonal-entries}
+In the standard coordinates on $S$, the map $L_D$ is diagonal with
 diagonal entries
 $$
 \lambda_1+\lambda_2,
@@ -102,7 +114,7 @@ $$
 \lambda_2+\lambda_3.
 $$
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 W=
@@ -126,10 +138,13 @@ Thus, under the coordinate identification $S\cong\RR^3$ given by
 $(u,v,w)$, the map is diagonal with the asserted entries.
 :::
 
-<2>3. Therefore $L$ is an isomorphism exactly when condition (2) holds.
+:::
 
-::: {.proof}
-By step <2>2, $L_D$ is invertible exactly when none of its three diagonal
+::: {.pf-step #l-iso-iff-condition-two}
+Therefore $L$ is an isomorphism exactly when condition (2) holds.
+
+::: pf-proof
+By step [](#l-diagonal-entries){.pf-ref}, $L_D$ is invertible exactly when none of its three diagonal
 entries is zero, equivalently when
 $$
 (\lambda_1+\lambda_2)
@@ -137,24 +152,31 @@ $$
 (\lambda_2+\lambda_3)
 \ne0.
 $$
-Step <2>1 transfers this criterion back to $L$.
+Step [](#diagonalize-a){.pf-ref} transfers this criterion back to $L$.
 :::
 
-<2>4. Q.E.D.
-
-::: {.proof}
-Steps <2>1--<2>3 prove the equivalence of conditions (2) and (3).
 :::
 
-<1>3. Hence conditions (1), (2), and (3) are all equivalent.
-
-::: {.proof}
-Step <1>1 proves $(1)\iff(2)$, and step <1>2 proves $(2)\iff(3)$.
+::: pf-qed
+Steps [](#diagonalize-a){.pf-ref}, [](#l-diagonal-entries){.pf-ref}, and [](#l-iso-iff-condition-two){.pf-ref} prove the equivalence of conditions (2) and (3).
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is the required equivalence.
+:::
+
+::: {.pf-step #all-three-equivalent}
+Hence conditions (1), (2), and (3) are all equivalent.
+
+::: pf-proof
+Step [](#trace-eigenvalue-equivalence){.pf-ref} proves $(1)\iff(2)$, and step [](#condition-two-iff-three){.pf-ref} proves $(2)\iff(3)$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#all-three-equivalent){.pf-ref} is the required equivalence.
+:::
+
 :::
 :::

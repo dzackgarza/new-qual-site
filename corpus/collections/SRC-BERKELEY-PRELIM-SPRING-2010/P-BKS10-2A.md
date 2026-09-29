@@ -34,9 +34,12 @@ Determine how many subgroups of order $67$ the group $G$ can have, and give exam
 ::: {.solution}
 Let $n_{67}$ denote the number of subgroups of $G$ of order $67$.
 
-<1>1. Every subgroup of $G$ of order $67$ is a Sylow $67$-subgroup.
+::: pf
 
-::: {.proof}
+::: pf-step
+Every subgroup of $G$ of order $67$ is a Sylow $67$-subgroup.
+
+::: pf-proof
 Since
 $$
 \abs G
@@ -47,12 +50,15 @@ the largest power of $67$ dividing $\abs G$ is $67^1$. Therefore the
 Sylow $67$-subgroups are exactly the subgroups of order $67$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #order-count}
+One has
 $$
 \boxed{n_{67}=1}.
 $$
 
-::: {.proof}
+::: pf-proof
 By the Sylow theorems,
 $$
 n_{67}\equiv1\pmod{67}
@@ -69,23 +75,29 @@ n_{67}=1.
 $$
 :::
 
-<1>3. The cyclic group of order $2010$ is an example realizing the unique
+:::
+
+::: {.pf-step #cyclic-example}
+The cyclic group of order $2010$ is an example realizing the unique
 possible value.
 
-::: {.proof}
+::: pf-proof
 The cyclic group
 $$
 C_{2010}
 $$
 has order $2010$. A cyclic group has a unique subgroup of order $d$ for
 each divisor $d$ of its order, so it has exactly one subgroup of order
-$67$, in agreement with step <1>2.
+$67$, in agreement with step [](#order-count){.pf-ref}.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>2 determines the only possible number of order-$67$ subgroups, and
-step <1>3 supplies the requested example.
 :::
+
+::: pf-qed
+Step [](#order-count){.pf-ref} determines the only possible number of order-$67$ subgroups, and
+step [](#cyclic-example){.pf-ref} supplies the requested example.
+:::
+
+:::
+
 :::

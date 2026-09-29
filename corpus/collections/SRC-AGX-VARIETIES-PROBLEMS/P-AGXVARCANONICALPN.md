@@ -46,7 +46,11 @@ where $H\subseteq\PP^n$ is a hyperplane.
 :::
 
 ::: {.solution}
-<1>1. The Euler sequence on $\PP^n$ is
+
+::: pf
+
+::: {.pf-step #euler-sequence}
+The Euler sequence on $\PP^n$ is
 $$
 0
 \longrightarrow
@@ -59,16 +63,19 @@ T_{\PP^n}
 0.
 $$
 
-::: {.proof}
+::: pf-proof
 This is the Euler sequence for projective space [[T-MODEULER]].
 :::
 
-<1>2. Taking determinants in step <1>1 gives
+:::
+
+::: {.pf-step #determinant-tangent-bundle}
+Taking determinants in step [](#euler-sequence){.pf-ref} gives
 $$
 \boxed{\det T_{\PP^n}\cong\OO_{\PP^n}(n+1)}.
 $$
 
-::: {.proof}
+::: pf-proof
 For a short exact sequence of locally free sheaves
 $$
 0\to\mce'\to\mce\to\mce''\to0,
@@ -96,12 +103,15 @@ $$
 $$
 :::
 
-<1>3. The canonical line bundle is
+:::
+
+::: {.pf-step #canonical-bundle-op-n-1}
+The canonical line bundle is
 $$
 \boxed{\omega_{\PP^n}\cong\OO_{\PP^n}(-n-1)}.
 $$
 
-::: {.proof}
+::: pf-proof
 Because $\PP^n$ is smooth of dimension $n$,
 $$
 \omega_{\PP^n}
@@ -110,7 +120,7 @@ $$
 =
 \dualof{(\det T_{\PP^n})}.
 $$
-Step <1>2 therefore gives
+Step [](#determinant-tangent-bundle){.pf-ref} therefore gives
 $$
 \omega_{\PP^n}
 \cong
@@ -120,12 +130,15 @@ $$
 $$
 :::
 
-<1>4. If $H$ is a hyperplane, then
+:::
+
+::: {.pf-step #canonical-divisor-formula}
+If $H$ is a hyperplane, then
 $$
 \boxed{K_{\PP^n}\sim -(n+1)H}.
 $$
 
-::: {.proof}
+::: pf-proof
 The hyperplane divisor $H$ corresponds to the line bundle
 $$
 \OO_{\PP^n}(H)\cong\OO_{\PP^n}(1).
@@ -136,16 +149,19 @@ $$
 \cong
 \OO_{\PP^n}(-n-1).
 $$
-By step <1>3 this is the canonical line bundle.
+By step [](#canonical-bundle-op-n-1){.pf-ref} this is the canonical line bundle.
 Therefore the canonical divisor class is
 $$
 K_{\PP^n}\sim -(n+1)H.
 $$
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the asserted linear equivalence, and step <1>3 is its equivalent canonical-bundle form.
 :::
+
+::: pf-qed
+Step [](#canonical-divisor-formula){.pf-ref} is the asserted linear equivalence, and step [](#canonical-bundle-op-n-1){.pf-ref} is its equivalent canonical-bundle form.
+:::
+
+:::
+
 :::

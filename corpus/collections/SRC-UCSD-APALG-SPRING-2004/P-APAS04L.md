@@ -31,17 +31,26 @@ Let $I$ and $J$ be ideals in the polynomial ring $R = k[x_1, \dots, x_n]$ where 
 :::
 
 ::: {.solution}
-<1>1. One has $\sqrt{\sqrt I}=\sqrt I$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #sqrt-sqrt-identity}
+One has $\sqrt{\sqrt I}=\sqrt I$.
+
+::: pf-proof
 The inclusion $\sqrt I\subseteq\sqrt{\sqrt I}$ is immediate from $I\subseteq\sqrt I$.
 Conversely, if $f\in\sqrt{\sqrt I}$, then $f^m\in\sqrt I$ for some $m\ge1$. Hence $(f^m)^r=f^{mr}\in I$ for some $r\ge1$, so $f\in\sqrt I$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #sqrt-intersection-product}
+One has
 \[
 \sqrt{I\cap J}=\sqrt{IJ}=\sqrt I\cap\sqrt J.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $IJ\subseteq I\cap J$, we have
 \[
 \sqrt{IJ}\subseteq\sqrt{I\cap J}.
@@ -54,12 +63,16 @@ f^{a+b}=f^af^b\in IJ,
 so $f\in\sqrt{IJ}$. The three containments give equality.
 :::
 
-<1>3. For
+:::
+
+::: {.pf-step #part-c-membership}
+For
 \[
 I_1=\langle x^2+x,\ x^2-y\rangle,
 \]
 one has $x^2-y^2\in I_1$, hence certainly $x^2-y^2\in\sqrt{I_1}$.
-::: {.proof}
+
+::: pf-proof
 In $R/I_1$ we have
 \[
 y=x^2=-x.
@@ -71,7 +84,10 @@ y^2=x^2,
 so the class of $x^2-y^2$ in $R/I_1$ is zero. Equivalently, $x^2-y^2\in I_1$.
 :::
 
-<1>4. For
+:::
+
+::: {.pf-step #part-d-membership}
+For
 \[
 I_2=\langle x+y,\ x^2-y\rangle,
 \]
@@ -81,7 +97,8 @@ x^2+y^2\in\sqrt{I_2}
 \quad\Longleftrightarrow\quad
 \operatorname{char}k=2.
 \]
-::: {.proof}
+
+::: pf-proof
 Modulo $I_2$ we have $y=-x$ and $x^2=-x$, hence
 \[
 x^2+y^2=2x^2=-2x.
@@ -101,4 +118,13 @@ is radical. Thus $I_2$ is radical. The class of $x^2+y^2$ is $-2x$, which is non
 x^2+y^2\notin I_2=\sqrt{I_2}.
 \]
 :::
+
+:::
+
+::: pf-qed
+Step [](#sqrt-sqrt-identity){.pf-ref} answers part (a); step [](#sqrt-intersection-product){.pf-ref} answers part (b); step [](#part-c-membership){.pf-ref} answers part (c); step [](#part-d-membership){.pf-ref} answers part (d).
+:::
+
+:::
+
 :::

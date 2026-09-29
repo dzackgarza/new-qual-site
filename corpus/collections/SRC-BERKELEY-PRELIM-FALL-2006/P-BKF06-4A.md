@@ -32,7 +32,11 @@ Prove that $R$ is a field.
 :::
 
 ::: {.solution}
-<1>1. For every nonzero $a\in R$, the map
+
+::: pf
+
+::: {.pf-step #ma-injective}
+For every nonzero $a\in R$, the map
 $$
 m_a:R\longrightarrow R,
 \qquad
@@ -40,7 +44,7 @@ m_a(x)=ax,
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
 Suppose
 $$
 m_a(x)=m_a(y).
@@ -53,24 +57,30 @@ Since $a\ne0$ and $R$ has no zero divisors, one must have
 $x-y=0$. Thus $x=y$, so $m_a$ is injective.
 :::
 
-<1>2. For every nonzero $a\in R$, there exists $b\in R$ such that
+:::
+
+::: {.pf-step #ab-equals-one}
+For every nonzero $a\in R$, there exists $b\in R$ such that
 $$
 ab=1.
 $$
 
-::: {.proof}
+::: pf-proof
 The set $R$ is finite, so the injective self-map $m_a$ from step
-<1>1 is surjective. In particular, $1\in R$ lies in its image.
+[](#ma-injective){.pf-ref} is surjective. In particular, $1\in R$ lies in its image.
 Hence there is $b\in R$ with
 $$
 m_a(b)=ab=1.
 $$
 :::
 
-<1>3. Every nonzero element of $R$ is invertible.
+:::
 
-::: {.proof}
-Let $a\in R$ be nonzero. Step <1>2 gives $b\in R$ with $ab=1$.
+::: {.pf-step #nonzero-invertible}
+Every nonzero element of $R$ is invertible.
+
+::: pf-proof
+Let $a\in R$ be nonzero. Step [](#ab-equals-one){.pf-ref} gives $b\in R$ with $ab=1$.
 Because $R$ is commutative,
 $$
 ba=ab=1.
@@ -78,17 +88,23 @@ $$
 Thus $b$ is a two-sided inverse of $a$.
 :::
 
-<1>4. Therefore $R$ is a field.
+:::
 
-::: {.proof}
+::: {.pf-step #R-is-field}
+Therefore $R$ is a field.
+
+::: pf-proof
 The ring $R$ is commutative with identity by hypothesis, and step
-<1>3 shows that every nonzero element has a multiplicative inverse.
+[](#nonzero-invertible){.pf-ref} shows that every nonzero element has a multiplicative inverse.
 This is precisely the definition of a field.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the required conclusion.
 :::
+
+::: pf-qed
+Step [](#R-is-field){.pf-ref} proves the required conclusion.
+:::
+
+:::
+
 :::

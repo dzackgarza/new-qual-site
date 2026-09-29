@@ -43,11 +43,15 @@ Justify your answer.
 ::: {.solution}
 Write $\bar X$ for the image of $X$ in $R$.
 
-<1>1. There is an isomorphism
+::: pf
+
+::: {.pf-step #r-iso-localization}
+There is an isomorphism
 \[
 R\cong \mathbb Z[1/2]=S^{-1}\mathbb Z.
 \]
-::: {.proof}
+
+::: pf-proof
 In $R$ the relation $2\bar X+1=0$ gives
 \[
 2(-\bar X)=1,
@@ -77,9 +81,13 @@ The composite $\psi\phi$ fixes $\mathbb Z$ and $\bar X$, hence is the identity o
 Thus $\phi$ and $\psi$ are inverse isomorphisms.
 :::
 
-<1>2. The $\mathbb Z$-module $R$ is flat.
-::: {.proof}
-By <1>1 it suffices to consider $S^{-1}\mathbb Z$.
+:::
+
+::: {.pf-step #r-flat}
+The $\mathbb Z$-module $R$ is flat.
+
+::: pf-proof
+By step [](#r-iso-localization){.pf-ref} it suffices to consider $S^{-1}\mathbb Z$.
 For every exact sequence of $\mathbb Z$-modules
 \[
 0\longrightarrow M'\longrightarrow M\longrightarrow M''\longrightarrow0,
@@ -101,12 +109,16 @@ tensoring with $R\cong S^{-1}\mathbb Z$ is exact.
 Therefore $R$ is flat over $\mathbb Z$.
 :::
 
-<1>3. The $\mathbb Z$-module $R$ is not projective.
-::: {.proof}
+:::
+
+::: {.pf-step #r-not-projective}
+The $\mathbb Z$-module $R$ is not projective.
+
+::: pf-proof
 Every projective module over the principal ideal domain $\mathbb Z$ is free: a projective module is a direct summand of a free module, hence a submodule of a free $\mathbb Z$-module, and every submodule of a free module over a PID is free.
 
 Suppose $R$ were projective.
-Then, by <1>1, $\mathbb Z[1/2]$ would be a nonzero free $\mathbb Z$-module.
+Then, by step [](#r-iso-localization){.pf-ref}, $\mathbb Z[1/2]$ would be a nonzero free $\mathbb Z$-module.
 But multiplication by $2$ is surjective on $\mathbb Z[1/2]$, since
 \[
 \frac{a}{2^k}=2\frac{a}{2^{k+1}}.
@@ -115,8 +127,12 @@ Multiplication by $2$ is not surjective on any nonzero free $\mathbb Z$-module: 
 This contradiction shows that $R$ is not projective over $\mathbb Z$.
 :::
 
-<1>4. The $\mathbb Z$-module $R$ is not injective.
-::: {.proof}
+:::
+
+::: {.pf-step #r-not-injective}
+The $\mathbb Z$-module $R$ is not injective.
+
+::: pf-proof
 Let
 \[
 i:3\mathbb Z\hookrightarrow\mathbb Z
@@ -137,5 +153,13 @@ Writing $u=F(1)$, we would obtain
 \]
 But no element of $\mathbb Z[1/2]$ satisfies $3u=1$: if $u=a/2^k$, then $3a=2^k$, impossible because the left side is divisible by $3$ and the right side is not.
 Therefore the required extension does not exist, so $R$ is not injective.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#r-iso-localization){.pf-ref}, [](#r-flat){.pf-ref}, [](#r-not-projective){.pf-ref}, and [](#r-not-injective){.pf-ref} answer parts (a), (b), (c), and (d).
+:::
+
 :::
 :::

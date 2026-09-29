@@ -26,8 +26,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. A $K$-automorphism fixes every coefficient of $f$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #automorphism-fixes-coefficients}
+A $K$-automorphism fixes every coefficient of $f$.
+
+::: pf-proof
 Write
 \[
 f(x)=a_0+a_1x+\cdots+a_nx^n
@@ -35,9 +40,13 @@ f(x)=a_0+a_1x+\cdots+a_nx^n
 with $a_i\in K$. If $\sigma\in\operatorname{Aut}_K(F)$, then by definition $\sigma(a_i)=a_i$ for every $i$.
 :::
 
-<1>2. If $r\in F$ satisfies $f(r)=0$, then $f(\sigma(r))=0$.
-::: {.proof}
-Using <1>1 and the fact that $\sigma$ is a field homomorphism,
+:::
+
+::: {.pf-step #root-preserved}
+If $r\in F$ satisfies $f(r)=0$, then $f(\sigma(r))=0$.
+
+::: pf-proof
+Using step [](#automorphism-fixes-coefficients){.pf-ref} and the fact that $\sigma$ is a field homomorphism,
 \[
 \begin{aligned}
 f(\sigma(r))
@@ -51,8 +60,17 @@ f(\sigma(r))
 Thus $\sigma(r)$ is again a root of $f$.
 :::
 
-<1>3. Hence $K$-automorphisms of $F$ permute the roots in $F$ of every polynomial in $K[x]$.
-::: {.proof}
-By <1>2, each automorphism sends the set of roots in $F$ into itself. Since $\sigma$ is bijective and $\sigma^{-1}$ has the same property, the induced map on that root set is a permutation.
 :::
+
+::: pf-step
+Hence $K$-automorphisms of $F$ permute the roots in $F$ of every polynomial in $K[x]$.
+
+::: pf-proof
+By step [](#root-preserved){.pf-ref}, each automorphism sends the set of roots in $F$ into itself. Since $\sigma$ is bijective and $\sigma^{-1}$ has the same property, the induced map on that root set is a permutation.
+:::
+
+:::
+
+:::
+
 :::

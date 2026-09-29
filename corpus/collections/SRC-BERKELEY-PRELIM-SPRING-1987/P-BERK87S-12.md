@@ -36,7 +36,10 @@ to an accuracy of two decimal places: find $I^*$ such that
 :::
 
 ::: {.solution}
-<1>1. For every $x\in[0,1/2]$,
+::: pf
+
+::: {.pf-step #taylor-remainder}
+For every $x\in[0,1/2]$,
 $$
 \sin x
 =
@@ -47,7 +50,7 @@ x-\frac{x^3}{6}+R(x),
 \frac{x^4}{24}.
 $$
 
-::: {.proof}
+::: pf-proof
 Taylor's theorem about $0$, through degree $3$, gives
 $$
 \sin x
@@ -63,7 +66,10 @@ $$
 the stated remainder bound follows.
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #i0-value}
+If
 $$
 I_0
 \coloneqq
@@ -79,7 +85,7 @@ I_0
 \frac{71}{144}.
 $$
 
-::: {.proof}
+::: pf-proof
 Direct integration gives
 $$
 \begin{aligned}
@@ -96,15 +102,18 @@ x-\frac{x^3}{18}
 $$
 :::
 
-<1>3. The approximation error satisfies
+:::
+
+::: {.pf-step #approximation-error-bound}
+The approximation error satisfies
 $$
 \abs{I-I_0}
 \leq
 \frac1{1536}.
 $$
 
-::: {.proof}
-For $x>0$, step <1>1 gives
+::: pf-proof
+For $x>0$, step [](#taylor-remainder){.pf-ref} gives
 $$
 \frac{\sin x}{x}
 =
@@ -136,7 +145,10 @@ $$
 $$
 :::
 
-<1>4. The number
+:::
+
+::: {.pf-step #final-approximation-boxed}
+The number
 $$
 \boxed{I^*=0.49}
 $$
@@ -145,8 +157,8 @@ $$
 \abs{I-I^*}<0.005.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3,
+::: pf-proof
+By steps [](#i0-value){.pf-ref} and [](#approximation-error-bound){.pf-ref},
 $$
 \begin{aligned}
 \abs{I-0.49}
@@ -186,10 +198,12 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the required two-decimal approximation with the stated
+::: pf-qed
+Step [](#final-approximation-boxed){.pf-ref} gives the required two-decimal approximation with the stated
 strict error tolerance.
+:::
+
 :::
 :::

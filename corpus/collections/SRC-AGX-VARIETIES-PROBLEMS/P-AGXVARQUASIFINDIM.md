@@ -59,13 +59,16 @@ Z=\overline{f(X)}\subseteq Y
 $$
 with its reduced induced structure.
 
-<1>1. The closed subset $Z$ is an affine variety, and the induced morphism
+::: pf
+
+::: {.pf-step #z-affine-g-dominant-qf}
+The closed subset $Z$ is an affine variety, and the induced morphism
 $$
 g:X\longrightarrow Z
 $$
 is dominant and quasi-finite.
 
-::: {.proof}
+::: pf-proof
 The variety $X$ is irreducible, so its continuous image $f(X)$ is
 irreducible. The closure of an irreducible subset is irreducible, hence $Z$
 is irreducible. Since $Z$ is closed in the affine variety $Y$, it is affine.
@@ -82,12 +85,15 @@ under $f$. Since $f$ is quasi-finite, that fibre is finite. Hence $g$ is
 quasi-finite.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #dim-x-le-dim-z}
+One has
 $$
 \dim X\leq\dim Z.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose any point
 $$
 z\in g(X).
@@ -121,25 +127,31 @@ $$
 $$
 :::
 
-<1>3. Since $Z\subseteq Y$ is closed,
+:::
+
+::: {.pf-step #dim-z-le-dim-y}
+Since $Z\subseteq Y$ is closed,
 $$
 \dim Z\leq\dim Y.
 $$
 
-::: {.proof}
+::: pf-proof
 Every chain of irreducible closed subsets of $Z$ is also a chain of
 irreducible closed subsets of $Y$. Therefore the supremum of chain lengths
 defining $\dim Z$ cannot exceed the corresponding supremum defining
 $\dim Y$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #dim-x-le-dim-y}
+Therefore
 $$
 \boxed{\dim X\leq\dim Y.}
 $$
 
-::: {.proof}
-Steps <1>2 and <1>3 give
+::: pf-proof
+Steps [](#dim-x-le-dim-z){.pf-ref} and [](#dim-z-le-dim-y){.pf-ref} give
 $$
 \dim X
 \leq
@@ -149,10 +161,13 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove that a quasi-finite morphism of affine varieties
+::: pf-qed
+Steps [](#z-affine-g-dominant-qf){.pf-ref}, [](#dim-x-le-dim-z){.pf-ref}, [](#dim-z-le-dim-y){.pf-ref} and [](#dim-x-le-dim-y){.pf-ref} prove that a quasi-finite morphism of affine varieties
 cannot raise dimension.
 :::
+
+:::
+
 :::

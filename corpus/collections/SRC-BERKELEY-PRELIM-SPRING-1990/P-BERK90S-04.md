@@ -37,10 +37,13 @@ Suppose $I$ and $J$ are [[D-GOFWL|ideals]] of $R$ with
 $\abs{R/I}=\abs{R/J}=3$. Write $\FF_3=\ZZ/3\ZZ$.
 For $K\in\{I,J\}$, let $q_K\colon R\to R/K$ be the quotient map.
 
-<1>1. For each $K\in\{I,J\}$, there is a surjective unital ring
+::: pf
+
+::: {.pf-step #homomorphism-exists}
+For each $K\in\{I,J\}$, there is a surjective unital ring
 homomorphism $\varphi_K\colon R\to\FF_3$ with kernel $K$.
 
-::: {.proof}
+::: pf-proof
 The element $1+K$ is nonzero because $R/K$ has three elements. Its additive
 order is therefore three, and it generates the additive group of $R/K$.
 Consequently the map
@@ -57,10 +60,13 @@ Since $q_K$ is surjective with kernel $K$ and $\alpha_K^{-1}$ is an
 isomorphism, $\varphi_K$ has the stated properties.
 :::
 
-<1>2. For every $u\in R^*$,
+:::
+
+::: {.pf-step #squares-map-to-one}
+For every $u\in R^*$,
 $\varphi_I(u^2)=\varphi_J(u^2)=1$.
 
-::: {.proof}
+::: pf-proof
 For $K\in\{I,J\}$, the equation $uu^{-1}=1$ gives
 $$
 \varphi_K(u)\varphi_K(u^{-1})=1.
@@ -70,16 +76,19 @@ are $1$ and $-1$, and each has square $1$. Hence
 $\varphi_K(u^2)=\varphi_K(u)^2=1$ for both choices of $K$.
 :::
 
-<1>3. The homomorphisms $\varphi_I$ and $\varphi_J$ are equal.
+:::
 
-::: {.proof}
+::: {.pf-step #homomorphisms-equal}
+The homomorphisms $\varphi_I$ and $\varphi_J$ are equal.
+
+::: pf-proof
 Let $r\in R$. By the additive-generation hypothesis there are an integer
 $s\geq0$, integers $a_1,\ldots,a_s$, and elements $u_1,\ldots,u_s\in R^*$
 such that
 $$
 r=\sum_{\ell=1}^{s}a_\ell u_\ell^2.
 $$
-Additivity and step <1>2 give
+Additivity and step [](#squares-map-to-one){.pf-ref} give
 $$
 \varphi_I(r)
 =\sum_{\ell=1}^{s}a_\ell\varphi_I(u_\ell^2)
@@ -89,13 +98,15 @@ $$
 Since $r$ was arbitrary, the two maps are equal.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>3 give
+::: pf-qed
+Steps [](#homomorphism-exists){.pf-ref} and [](#homomorphisms-equal){.pf-ref} give
 $$
 I=\ker\varphi_I=\ker\varphi_J=J.
 $$
 Thus any two ideals with a three-element quotient coincide.
+:::
+
 :::
 :::

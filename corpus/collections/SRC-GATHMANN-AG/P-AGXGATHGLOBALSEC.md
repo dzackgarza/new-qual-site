@@ -59,7 +59,10 @@ $$
 A(Z)=\Gamma(Z,\OO_Z).
 $$
 
-<1>1. Part (a): if
+::: pf
+
+::: {.pf-step #morphism-from-algebra-map}
+Part (a): if
 $$
 Y=\Spec A
 $$
@@ -72,7 +75,7 @@ $$
 \boxed{f_\varphi:X\longrightarrow Y.}
 $$
 
-::: {.proof}
+::: pf-proof
 Choose an affine open cover
 $$
 X=\bigcup_i U_i,
@@ -124,7 +127,10 @@ $$
 This is the construction proved in [[P-AGH224HOMSPEC]].
 :::
 
-<1>2. Part (a): the assignments
+:::
+
+::: {.pf-step #bijection-established}
+Part (a): the assignments
 $$
 f\longmapsto f^*
 \qquad\text{and}\qquad
@@ -133,13 +139,13 @@ $$
 are inverse. Hence the displayed correspondence remains a bijection when
 $X$ is arbitrary and $Y$ is affine.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 \varphi:A\longrightarrow A(X).
 $$
 On every affine open $U_i=\Spec B_i$, the morphism $f_\varphi$ of step
-<1>1 restricts to the affine morphism induced by
+[](#morphism-from-algebra-map){.pf-ref} restricts to the affine morphism induced by
 $$
 A\xrightarrow{\varphi}A(X)\longrightarrow B_i.
 $$
@@ -177,7 +183,10 @@ $$
 Thus the correspondence is both surjective and injective.
 :::
 
-<1>3. Part (b):
+:::
+
+::: {.pf-step #no-bijection-counterexample}
+Part (b):
 $$
 \boxed{\text{No.}}
 $$
@@ -188,7 +197,7 @@ X=\Spec k,
 Y=\PP^1.
 $$
 
-::: {.proof}
+::: pf-proof
 The variety $X$ is affine, while $Y$ is a non-affine prevariety.
 With homogeneous coordinates $[S:T]$, the standard affine cover
 $$
@@ -240,12 +249,14 @@ $$
 is not injective, so it cannot be a bijection.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove that the bijection persists for arbitrary $X$ when
-$Y$ is affine. Step <1>3 gives an affine $X$ and a non-affine $Y$ for which
+::: pf-qed
+Steps [](#morphism-from-algebra-map){.pf-ref} and [](#bijection-established){.pf-ref} prove that the bijection persists for arbitrary $X$ when
+$Y$ is affine. Step [](#no-bijection-counterexample){.pf-ref} gives an affine $X$ and a non-affine $Y$ for which
 the map is not injective, proving that the analogous statement in part (b)
 fails.
+:::
+
 :::
 :::

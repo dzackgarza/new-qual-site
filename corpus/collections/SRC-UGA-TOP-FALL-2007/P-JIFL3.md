@@ -42,7 +42,10 @@ denote the circle obtained by identifying the equator of $S^2$ with
 S^1\times\{p\}\subset T^2.
 \]
 
-<1>1. Mayer--Vietoris may be applied using an open cover $X=U\cup V$ with
+::: pf
+
+::: pf-step
+Mayer--Vietoris may be applied using an open cover $X=U\cup V$ with
 \[
 U\simeq S^2,
 \qquad
@@ -50,14 +53,18 @@ V\simeq T^2,
 \qquad
 U\cap V\simeq C\simeq S^1.
 \]
-::: {.proof}
+
+::: pf-proof
 The equator in $S^2$ and the circle $S^1\times\{p\}$ in $T^2$ both have annular neighborhoods.
 After the two circles are identified, enlarge the images of $S^2$ and $T^2$ slightly across these annuli.
 The resulting sets $U$ and $V$ are open, retract respectively onto the sphere and torus, and their intersection retracts onto the common circle $C$.
 Thus their homology may be replaced by that of the displayed deformation retracts in the Mayer--Vietoris sequence.
 :::
 
-<1>2. The relevant homology groups are
+:::
+
+::: {.pf-step #pieces-homology}
+The relevant homology groups are
 \[
 H_k(S^2;\ZZ)
 \cong
@@ -84,16 +91,21 @@ H_k(C;\ZZ)
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 These are the standard integral homology groups of the sphere, torus, and circle.
 :::
 
-<1>3. The Mayer--Vietoris map
+:::
+
+::: {.pf-step #phi-map}
+The Mayer--Vietoris map
 \[
 \Phi:H_1(C)\longrightarrow H_1(S^2)\oplus H_1(T^2)
 \]
 is injective and has cokernel isomorphic to $\ZZ$.
-::: {.proof}
+
+::: pf-proof
 Let $a,b$ be the standard basis of
 \[
 H_1(T^2;\ZZ)\cong\ZZ^2,
@@ -119,11 +131,15 @@ This map is injective, and
 \]
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #h2-computation}
+One has
 \[
 H_2(X;\ZZ)\cong\ZZ^2.
 \]
-::: {.proof}
+
+::: pf-proof
 The degree-$2$ portion of Mayer--Vietoris is
 \[
 H_2(C)
@@ -136,7 +152,7 @@ H_1(C)
 \xrightarrow{\Phi}
 H_1(S^2)\oplus H_1(T^2).
 \]
-Using <1>2, this becomes
+Using step [](#pieces-homology){.pf-ref}, this becomes
 \[
 0
 \longrightarrow
@@ -148,7 +164,7 @@ H_2(X)
 \xrightarrow{\Phi}
 \ZZ^2.
 \]
-The map $\Phi$ is injective by <1>3, so the image of
+The map $\Phi$ is injective by step [](#phi-map){.pf-ref}, so the image of
 \[
 H_2(X)\longrightarrow\ZZ
 \]
@@ -160,11 +176,15 @@ Therefore
 is both injective and surjective, hence an isomorphism.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #h1-computation}
+One has
 \[
 H_1(X;\ZZ)\cong\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
 The next part of Mayer--Vietoris is
 \[
 H_1(C)
@@ -188,10 +208,13 @@ Exactness therefore gives
 \[
 H_1(X)\cong\operatorname{coker}\Phi.
 \]
-By <1>3 this cokernel is $\ZZ$.
+By step [](#phi-map){.pf-ref} this cokernel is $\ZZ$.
 :::
 
-<1>6. The space $X$ is connected, so
+:::
+
+::: {.pf-step #h0-and-high-degree}
+The space $X$ is connected, so
 \[
 H_0(X;\ZZ)\cong\ZZ,
 \]
@@ -200,11 +223,12 @@ and
 H_k(X;\ZZ)=0
 \qquad(k\ge3).
 \]
-::: {.proof}
+
+::: pf-proof
 The images of $S^2$ and $T^2$ in $X$ are connected and meet along the nonempty circle $C$, so their union $X$ is connected.
 Thus $H_0(X)\cong\ZZ$.
 
-For $k\ge3$, the adjacent homology groups of $C$, $S^2$, and $T^2$ in the Mayer--Vietoris sequence vanish by <1>2, except possibly the groups in degree $2$ already used in <1>4.
+For $k\ge3$, the adjacent homology groups of $C$, $S^2$, and $T^2$ in the Mayer--Vietoris sequence vanish by step [](#pieces-homology){.pf-ref}, except possibly the groups in degree $2$ already used in step [](#h2-computation){.pf-ref}.
 In particular, the degree-$3$ segment is
 \[
 0\longrightarrow0\longrightarrow H_3(X)\longrightarrow H_2(C)=0,
@@ -212,7 +236,10 @@ In particular, the degree-$3$ segment is
 so $H_3(X)=0$, and the same vanishing argument applies in all higher degrees.
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 H_k(X;\ZZ)
 \cong
@@ -222,7 +249,11 @@ H_k(X;\ZZ)
 0,&k\ge3.
 \end{cases}
 \]
-::: {.proof}
-This collects <1>4--<1>6.
+
+::: pf-proof
+This collects step [](#h2-computation){.pf-ref}, step [](#h1-computation){.pf-ref} and step [](#h0-and-high-degree){.pf-ref}.
 :::
+
+:::
+
 :::

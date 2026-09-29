@@ -40,9 +40,13 @@ Calculate $\int_\gamma f(z) \, dz$.
 :::
 
 ::: {.solution}
-<1>1. The winding numbers are determined by three quadratic polynomials.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+The winding numbers are determined by three quadratic polynomials.
+
+::: pf-proof
 Put $P(w)=3w^2/2+2w+3/2$. For $w=e^{i\theta}$,
 $$
 P(w)=(2+3\cos\theta)e^{i\theta}=\gamma(\theta).
@@ -77,9 +81,12 @@ $$
 $$
 :::
 
-<1>2. The indexed residue formula evaluates the integral.
+:::
 
-::: {.proof}
+::: pf-step
+The indexed residue formula evaluates the integral.
+
+::: pf-proof
 The only possible poles of $f$ are $1/2$, $2$, and $-5i$.
 At the first two, the residues are
 $$
@@ -96,5 +103,9 @@ $$
 $$
 [@SS03]. The use of winding numbers accounts for both
 loops and both traversals, without assuming the curve simple.
+:::
+
+:::
+
 :::
 :::

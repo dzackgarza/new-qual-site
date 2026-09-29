@@ -33,10 +33,13 @@ Let $f:\mathbb R\to\mathbb R$ be continuous and $1$-periodic.
 :::
 
 ::: {.solution}
-<1>1. Part (1): $f$ is bounded above and below on $\mathbb R$ and attains
+::: pf
+
+::: {.pf-step #bounded-and-attains-extrema}
+Part (1): $f$ is bounded above and below on $\mathbb R$ and attains
 both a global maximum and a global minimum.
 
-::: {.proof}
+::: pf-proof
 The restriction of $f$ to the compact interval $[0,1]$ is continuous, so
 the extreme value theorem gives points $x_{\min},x_{\max}\in[0,1]$ such
 that
@@ -58,9 +61,12 @@ Hence the same two inequalities hold for every $x\in\mathbb R$, and the
 bounding values are attained at $x_{\min}$ and $x_{\max}$.
 :::
 
-<1>2. Part (2): $f$ is uniformly continuous on $\mathbb R$.
+:::
 
-::: {.proof}
+::: {.pf-step #uniformly-continuous}
+Part (2): $f$ is uniformly continuous on $\mathbb R$.
+
+::: pf-proof
 Fix $\varepsilon>0$. By the Heine--Cantor theorem, the restriction of $f$
 to the compact interval $[-1,2]$ is uniformly continuous. Hence there is
 $\eta>0$ such that
@@ -103,12 +109,15 @@ $$
 The same $\delta$ works for all $x,y\in\mathbb R$.
 :::
 
-<1>3. Part (3): there exists $x_0\in\mathbb R$ such that
+:::
+
+::: {.pf-step #exists-x0-equal-shift}
+Part (3): there exists $x_0\in\mathbb R$ such that
 $$
 f(x_0+\pi)=f(x_0).
 $$
 
-::: {.proof}
+::: pf-proof
 Define
 $$
 g(x)\coloneqq f(x+\pi)-f(x).
@@ -144,10 +153,12 @@ f(x_0+\pi)=f(x_0).
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 establish Parts (1), (2), and (3),
+::: pf-qed
+Steps [](#bounded-and-attains-extrema){.pf-ref}, [](#uniformly-continuous){.pf-ref}, and [](#exists-x0-equal-shift){.pf-ref} establish Parts (1), (2), and (3),
 respectively.
+:::
+
 :::
 :::

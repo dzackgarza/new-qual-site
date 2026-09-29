@@ -37,11 +37,15 @@ for every \(z\in K\setminus\{y\}\).
 :::
 
 ::: {.solution}
+
 Fix $x\in\RR^n$.
 
-<1>1. The distance from $x$ to $K$ is attained at some point $y\in K$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #minimizer-exists}
+The distance from $x$ to $K$ is attained at some point $y\in K$.
+
+::: pf-proof
 Choose $y_0\in K$, which is possible because $K$ is nonempty, and set
 $$
 R=\norm{x-y_0}.
@@ -69,9 +73,12 @@ Thus $d\le\norm{x-z}$ for every $z\in K$, so $y$ is a global
 distance minimizer.
 :::
 
-<1>2. The minimizer from step <1>1 is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #minimizer-unique}
+The minimizer from step [](#minimizer-exists){.pf-ref} is unique.
+
+::: pf-proof
 Suppose that $y,z\in K$ are distinct minimizers, and let
 $$
 d=\norm{x-y}=\norm{x-z}.
@@ -103,25 +110,31 @@ contradicting the minimality of $y$ and $z$. Therefore there is only
 one minimizer.
 :::
 
-<1>3. For the unique minimizer $y$, every $z\in K\setminus\{y\}$
+:::
+
+::: {.pf-step #strict-inequality}
+For the unique minimizer $y$, every $z\in K\setminus\{y\}$
 satisfies
 $$
 \norm{x-y}<\norm{x-z}.
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+Step [](#minimizer-exists){.pf-ref} gives
 $$
 \norm{x-y}\le\norm{x-z}
 $$
 for every $z\in K$. Equality for some $z\ne y$ would make $z$ a
-second minimizer, contradicting step <1>2.
+second minimizer, contradicting step [](#minimizer-unique){.pf-ref}.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove existence, uniqueness, and the required strict
+::: pf-qed
+Steps [](#minimizer-exists){.pf-ref}, [](#minimizer-unique){.pf-ref} and [](#strict-inequality){.pf-ref} prove existence, uniqueness, and the required strict
 inequality.
 :::
+
+:::
+
 :::

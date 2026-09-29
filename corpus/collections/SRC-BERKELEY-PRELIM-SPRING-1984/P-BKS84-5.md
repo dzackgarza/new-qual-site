@@ -30,7 +30,10 @@ and suppose $A$ has no eigenvalue of absolute value $1$. Prove that $A$ and $B$ 
 :::
 
 ::: {.solution}
-<1>1. For every eigenvalue $\lambda$ of $A$,
+::: pf
+
+::: {.pf-step #b-maps-eigenspace}
+For every eigenvalue $\lambda$ of $A$,
 $$
 B\bigl(E_\lambda(A)\bigr)
 \subseteq
@@ -39,7 +42,7 @@ $$
 where $E_\mu(A)=\ker(A-\mu I)$ and $E_\mu(A)=\{0\}$ when $\mu$ is
 not an eigenvalue.
 
-::: {.proof}
+::: pf-proof
 If $v\in E_\lambda(A)$, then
 $$
 \begin{aligned}
@@ -55,10 +58,13 @@ $$
 Thus $Bv\in\ker(A-\lambda^2I)=E_{\lambda^2}(A)$.
 :::
 
-<1>2. If $A$ has an eigenvalue of modulus greater than $1$, then $A$ and
+:::
+
+::: {.pf-step #modulus-greater-than-one-case}
+If $A$ has an eigenvalue of modulus greater than $1$, then $A$ and
 $B$ have a common nonzero eigenvector.
 
-::: {.proof}
+::: pf-proof
 Choose an eigenvalue $\lambda$ of $A$ having maximal absolute value.
 Under the present hypothesis, choose it with $\abs{\lambda}>1$. Then
 $$
@@ -68,7 +74,7 @@ $$
 >
 \abs{\lambda},
 $$
-so $\lambda^2$ is not an eigenvalue of $A$ by maximality. Step <1>1
+so $\lambda^2$ is not an eigenvalue of $A$ by maximality. Step [](#b-maps-eigenspace){.pf-ref}
 therefore gives
 $$
 B(E_\lambda(A))=\{0\}.
@@ -82,11 +88,14 @@ $$
 so $v$ is a common eigenvector.
 :::
 
-<1>3. Suppose every eigenvalue of $A$ has modulus less than $1$ and
+:::
+
+::: {.pf-step #modulus-less-nonzero-case}
+Suppose every eigenvalue of $A$ has modulus less than $1$ and
 $0$ is not an eigenvalue. Then $A$ and $B$ have a common nonzero
 eigenvector.
 
-::: {.proof}
+::: pf-proof
 Choose an eigenvalue $\lambda$ of $A$ having minimal absolute value.
 Since $0<\abs{\lambda}<1$,
 $$
@@ -97,15 +106,18 @@ $$
 \abs{\lambda}.
 $$
 Thus $\lambda^2$ is not an eigenvalue of $A$ by minimality. As in step
-<1>2, step <1>1 gives $B(E_\lambda(A))=\{0\}$, and any nonzero
+[](#modulus-greater-than-one-case){.pf-ref}, step [](#b-maps-eigenspace){.pf-ref} gives $B(E_\lambda(A))=\{0\}$, and any nonzero
 $v\in E_\lambda(A)$ is a common eigenvector of $A$ and $B$.
 :::
 
-<1>4. Suppose every eigenvalue of $A$ has modulus less than $1$ and
+:::
+
+::: {.pf-step #zero-eigenvalue-case}
+Suppose every eigenvalue of $A$ has modulus less than $1$ and
 $0$ is an eigenvalue. Then $A$ and $B$ have a common nonzero eigenvector.
 
-::: {.proof}
-Step <1>1 with $\lambda=0$ gives
+::: pf-proof
+Step [](#b-maps-eigenspace){.pf-ref} with $\lambda=0$ gives
 $$
 B(E_0(A))\subseteq E_0(A).
 $$
@@ -123,19 +135,24 @@ $$
 Hence $v$ is a common eigenvector.
 :::
 
-<1>5. $A$ and $B$ have a common nonzero eigenvector.
+:::
 
-::: {.proof}
+::: {.pf-step #common-eigenvector-exists}
+$A$ and $B$ have a common nonzero eigenvector.
+
+::: pf-proof
 Because $A$ is a complex matrix, it has an eigenvalue. By hypothesis no
 eigenvalue has modulus $1$. If some eigenvalue has modulus greater than
-$1$, step <1>2 applies. Otherwise all eigenvalues have modulus less than
-$1$, and either step <1>3 or step <1>4 applies according as $0$ is or is
+$1$, step [](#modulus-greater-than-one-case){.pf-ref} applies. Otherwise all eigenvalues have modulus less than
+$1$, and either step [](#modulus-less-nonzero-case){.pf-ref} or step [](#zero-eigenvalue-case){.pf-ref} applies according as $0$ is or is
 not an eigenvalue.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-qed
+Step [](#common-eigenvector-exists){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

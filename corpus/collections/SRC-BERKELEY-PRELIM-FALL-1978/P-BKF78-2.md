@@ -40,12 +40,16 @@ Prove that a subsequence of $\{G_n\}$ converges uniformly.
 :::
 
 ::: {.solution}
-<1>1. For every $n$ and every $x\in[0,1]$,
+
+::: pf
+
+::: {.pf-step #gn-bounded}
+For every $n$ and every $x\in[0,1]$,
 $$
 \abs{G_n(x)}\le1.
 $$
 
-::: {.proof}
+::: pf-proof
 Using $\abs{g_n(t)}\le1$,
 $$
 \abs{G_n(x)}
@@ -60,14 +64,17 @@ x
 $$
 :::
 
-<1>2. For every $n$ and every $x,y\in[0,1]$,
+:::
+
+::: {.pf-step #gn-lipschitz}
+For every $n$ and every $x,y\in[0,1]$,
 $$
 \abs{G_n(x)-G_n(y)}
 \le
 \abs{x-y}.
 $$
 
-::: {.proof}
+::: pf-proof
 Assume first that $x\ge y$. Then
 $$
 G_n(x)-G_n(y)
@@ -85,11 +92,14 @@ $$
 The case $y\ge x$ is identical after interchanging $x$ and $y$.
 :::
 
-<1>3. The family $\{G_n\}$ is uniformly bounded and equicontinuous
+:::
+
+::: {.pf-step #family-equicontinuous}
+The family $\{G_n\}$ is uniformly bounded and equicontinuous
 in $C([0,1])$.
 
-::: {.proof}
-Uniform boundedness is step <1>1. Step <1>2 shows that every $G_n$
+::: pf-proof
+Uniform boundedness is step [](#gn-bounded){.pf-ref}. Step [](#gn-lipschitz){.pf-ref} shows that every $G_n$
 is $1$-Lipschitz, so for every $\varepsilon>0$, choosing
 $\delta=\varepsilon$ gives
 $$
@@ -102,19 +112,24 @@ The same Lipschitz estimate also shows that every $G_n$ is
 continuous.
 :::
 
-<1>4. Some subsequence of $\{G_n\}$ converges uniformly on
+:::
+
+::: {.pf-step #subsequence-converges}
+Some subsequence of $\{G_n\}$ converges uniformly on
 $[0,1]$.
 
-::: {.proof}
-The interval $[0,1]$ is compact. By step <1>3, the sequence lies in
+::: pf-proof
+The interval $[0,1]$ is compact. By step [](#family-equicontinuous){.pf-ref}, the sequence lies in
 a uniformly bounded equicontinuous family of continuous functions.
 The Arzelà--Ascoli theorem therefore supplies a subsequence
 $\{G_{n_j}\}$ that converges uniformly on $[0,1]$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-qed
+Step [](#subsequence-converges){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

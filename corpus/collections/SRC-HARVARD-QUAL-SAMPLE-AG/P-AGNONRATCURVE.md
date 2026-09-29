@@ -32,8 +32,12 @@ Consider the Fermat cubic
 C=V(x^3+y^3+z^3)\subseteq\mathbb P^2_{\mathbb C}.
 \]
 
-<1>1. The curve $C$ is smooth.
-::: {.proof}
+::: pf
+
+::: pf-step
+The curve $C$ is smooth.
+
+::: pf-proof
 The three partial derivatives of
 \[
 F=x^3+y^3+z^3
@@ -53,11 +57,15 @@ x=y=z=0,
 which is not a point of projective space.  Hence the projective Jacobian criterion shows that $C$ is smooth.
 :::
 
-<1>2. The genus of $C$ is
+:::
+
+::: pf-step
+The genus of $C$ is
 \[
 g(C)=1.
 \]
-::: {.proof}
+
+::: pf-proof
 A smooth plane curve of degree $d$ has genus
 \[
 g=\frac{(d-1)(d-2)}2.
@@ -68,8 +76,12 @@ g(C)=\frac{2\cdot1}{2}=1.
 \]
 :::
 
-<1>3. The curve $C$ is not rational.
-::: {.proof}
+:::
+
+::: {.pf-step #curve-not-rational}
+The curve $C$ is not rational.
+
+::: pf-proof
 If $C$ were rational, its function field would be isomorphic to
 \[
 \mathbb C(t),
@@ -85,17 +97,24 @@ g(\mathbb P^1)=0.
 This is impossible.  Hence $C$ is not rational.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #final-example}
+Therefore
 \[
 \boxed{V(x^3+y^3+z^3)\subseteq\mathbb P^2_{\mathbb C}}
 \]
 is a projective curve that is not rational.
-::: {.proof}
-It is projective by construction and nonrational by <1>3.
+
+::: pf-proof
+It is projective by construction and nonrational by step [](#curve-not-rational){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>4 is the requested example.
+:::
+
+::: pf-qed
+Step [](#final-example){.pf-ref} is the requested example.
+:::
+
 :::
 :::

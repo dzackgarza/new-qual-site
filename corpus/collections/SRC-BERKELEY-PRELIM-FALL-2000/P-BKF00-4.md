@@ -30,13 +30,17 @@ where the unit circle is oriented counterclockwise.
 :::
 
 ::: {.solution}
-<1>1. The poles of $1/\sin(4z)$ in the open unit disk are precisely
+
+::: pf
+
+::: {.pf-step #poles-identified}
+The poles of $1/\sin(4z)$ in the open unit disk are precisely
 $$
 -\frac{\pi}{4},\qquad 0,\qquad \frac{\pi}{4},
 $$
 and all three are simple.
 
-::: {.proof}
+::: pf-proof
 The zeros of $\sin(4z)$ are
 $$
 z=\frac{k\pi}{4},\qquad k\in\ZZ.
@@ -54,18 +58,21 @@ and therefore the corresponding poles of $1/\sin(4z)$, are simple. No zero
 lies on $\abs{z}=1$.
 :::
 
-<1>2. The sum of the residues inside the unit circle is
+:::
+
+::: {.pf-step #sum-of-residues}
+The sum of the residues inside the unit circle is
 $$
 \sum_{\abs{z_0}<1}\Res_{z=z_0}\frac{1}{\sin(4z)}=-\frac14.
 $$
 
-::: {.proof}
+::: pf-proof
 At a simple zero $z_0$ of $\sin(4z)$,
 $$
 \Res_{z=z_0}\frac{1}{\sin(4z)}
 =\frac{1}{4\cos(4z_0)}.
 $$
-Thus step <1>1 gives
+Thus step [](#poles-identified){.pf-ref} gives
 $$
 \begin{aligned}
 \Res_{z=0}\frac{1}{\sin(4z)}&=\frac14,\\
@@ -76,13 +83,16 @@ $$
 Their sum is $-1/4$.
 :::
 
-<1>3. The value of the integral is
+:::
+
+::: {.pf-step #integral-value}
+The value of the integral is
 $$
 \boxed{-\frac14}.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>2,
+::: pf-proof
+By the residue theorem and step [](#sum-of-residues){.pf-ref},
 $$
 \frac{1}{2\pi i}\int_{\abs{z}=1}\frac{dz}{\sin(4z)}
 =\sum_{\abs{z_0}<1}\Res_{z=z_0}\frac{1}{\sin(4z)}
@@ -90,9 +100,12 @@ $$
 $$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested value.
 :::
+
+::: pf-qed
+Step [](#integral-value){.pf-ref} gives the requested value.
+:::
+
+:::
+
 :::

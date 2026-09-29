@@ -30,8 +30,13 @@ Let $L:V_1\to V_2$ be a linear map between normed vector spaces. Prove that $L$ 
 :::
 
 ::: {.solution}
-<1>1. A global linear bound implies continuity.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #bound-implies-continuous}
+A global linear bound implies continuity.
+
+::: pf-proof
 If
 \[
 \|L(v)\|\le c\|v\|
@@ -45,8 +50,12 @@ for all $v$, then for $u,v\in V_1$,
 Thus $L$ is Lipschitz, hence continuous.
 :::
 
-<1>2. Continuity at the origin implies a global bound.
-::: {.proof}
+:::
+
+::: {.pf-step #continuity-implies-bound}
+Continuity at the origin implies a global bound.
+
+::: pf-proof
 Assume $L$ is continuous. By continuity at $0$, there exists $\delta>0$ such that
 \[
 \|w\|<\delta
@@ -66,5 +75,13 @@ and therefore
 \|L(v)\|<\frac2\delta\|v\|.
 \]
 For $v=0$ both sides of $\|L(v)\|\le\frac2\delta\|v\|$ are $0$. Hence $\|L(v)\|\le c\|v\|$ for every $v\in V_1$, with $c=2/\delta$.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#bound-implies-continuous){.pf-ref} and [](#continuity-implies-bound){.pf-ref} give both directions of the equivalence.
+:::
+
 :::
 :::

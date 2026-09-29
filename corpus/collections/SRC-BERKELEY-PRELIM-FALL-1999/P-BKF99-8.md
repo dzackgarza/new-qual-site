@@ -30,26 +30,32 @@ where the circle is oriented counterclockwise.
 :::
 
 ::: {.solution}
+
 Set
 $$
 F(z)=\frac{(z+2)^2}{z^2(2z-1)}.
 $$
 
-<1>1. The poles of $F$ inside $\abs{z}=1$ are a double pole at $0$ and a
+::: pf
+
+::: {.pf-step #poles-identified}
+The poles of $F$ inside $\abs{z}=1$ are a double pole at $0$ and a
 simple pole at $1/2$.
 
-::: {.proof}
+::: pf-proof
 The denominator is $z^2(2z-1)$. Its zeros are $0$, with multiplicity $2$,
 and $1/2$, with multiplicity $1$. The numerator is nonzero at both points,
 and both have modulus less than $1$.
 :::
 
-<1>2.
+:::
+
+::: {.pf-step #residue-at-zero}
 $$
 \operatorname{Res}(F,0)=-12.
 $$
 
-::: {.proof}
+::: pf-proof
 For the double pole at $0$,
 $$
 \operatorname{Res}(F,0)
@@ -71,12 +77,14 @@ $$
 At $z=0$ this equals $-12$.
 :::
 
-<1>3.
+:::
+
+::: {.pf-step #residue-at-half}
 $$
 \operatorname{Res}(F,1/2)=25.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $2z-1=2(z-1/2)$,
 $$
 \operatorname{Res}(F,1/2)
@@ -90,13 +98,15 @@ $$
 $$
 :::
 
-<1>4.
+:::
+
+::: {.pf-step #integral-value}
 $$
 I=\boxed{13}.
 $$
 
-::: {.proof}
-By the residue theorem and steps <1>1--<1>3,
+::: pf-proof
+By the residue theorem and steps [](#poles-identified){.pf-ref}, [](#residue-at-zero){.pf-ref} and [](#residue-at-half){.pf-ref},
 $$
 I
 =
@@ -109,9 +119,12 @@ I
 $$
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+Step [](#integral-value){.pf-ref} gives the requested value.
+:::
+
+:::
+
 :::

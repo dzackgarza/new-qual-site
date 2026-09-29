@@ -35,7 +35,10 @@ T_{j,j+1}=T_{j+1,j}=1
 $$
 and all other entries zero.
 
-<1>1. With
+::: pf
+
+::: {.pf-step #similarity}
+With
 $$
 D
 \coloneqq
@@ -49,7 +52,7 @@ $$
 D^{-1}AD=iT.
 $$
 
-::: {.proof}
+::: pf-proof
 The only nonzero entries of $A$ are
 $$
 A_{j,j+1}=-1
@@ -77,7 +80,10 @@ $$
 All other entries remain zero. Thus $D^{-1}AD=iT$.
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #eigenvector-formula}
+For
 $$
 \theta_k
 \coloneqq
@@ -101,7 +107,7 @@ $$
 2\cos\theta_k.
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 v^{(k)}_0=0
@@ -133,7 +139,10 @@ $$
 because $0<\theta_k<\pi$, so $v^{(k)}\neq0$.
 :::
 
-<1>3. The numbers
+:::
+
+::: {.pf-step #eigenvalues-complete}
+The numbers
 $$
 2\cos\theta_k,
 \qquad
@@ -141,18 +150,21 @@ $$
 $$
 are all the eigenvalues of $T$.
 
-::: {.proof}
+::: pf-proof
 The angles
 $$
 0<\theta_1<\theta_2<\cdots<\theta_n<\pi
 $$
 are distinct, and cosine is strictly decreasing on $[0,\pi]$. Hence the
-$n$ eigenvalues exhibited in step <1>2 are distinct. An $n\times n$
+$n$ eigenvalues exhibited in step [](#eigenvector-formula){.pf-ref} are distinct. An $n\times n$
 matrix has exactly $n$ eigenvalues counted with algebraic multiplicity, so
 these exhaust the spectrum.
 :::
 
-<1>4. The eigenvalues of $A$ are
+:::
+
+::: {.pf-step #eigenvalues-of-a}
+The eigenvalues of $A$ are
 $$
 \boxed{
 2i\cos\left(\frac{k\pi}{n+1}\right),
@@ -161,15 +173,18 @@ k=1,\ldots,n
 }.
 $$
 
-::: {.proof}
-By step <1>1, $A$ is similar to $iT$. Similar matrices have the same
+::: pf-proof
+By step [](#similarity){.pf-ref}, $A$ is similar to $iT$. Similar matrices have the same
 eigenvalues, and multiplying a matrix by $i$ multiplies every eigenvalue by
-$i$. Apply step <1>3.
+$i$. Apply step [](#eigenvalues-complete){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the complete spectrum.
 :::
+
+::: pf-qed
+Step [](#eigenvalues-of-a){.pf-ref} gives the complete spectrum.
+:::
+
+:::
+
 :::

@@ -31,31 +31,43 @@ Choose $b_{ij},c_{jkl}\in B$ with
 $$x_i=\sum_{j=1}^m b_{ij}y_j,\qquad y_jy_k=\sum_{l=1}^m c_{jkl}y_l ,$$
 and let $B_0=R[\{b_{ij}\}\cup\{c_{jkl}\}]\subseteq B$.
 
-<1>1. $B_0$ is a Noetherian ring.
+::: pf
 
-::: {.proof}
+::: {.pf-step #b0-noetherian}
+$B_0$ is a Noetherian ring.
+
+::: pf-proof
 $B_0$ is a quotient of a polynomial ring in finitely many variables over the Noetherian ring $R$, so the Hilbert basis theorem applies.
 :::
 
-<1>2. $A=\sum_{j=1}^m B_0y_j$; in particular $A$ is a finitely generated $B_0$-module.
+:::
 
-::: {.proof}
+::: {.pf-step #a-fin-gen-b0-module}
+$A=\sum_{j=1}^m B_0y_j$; in particular $A$ is a finitely generated $B_0$-module.
+
+::: pf-proof
 Put $M=\sum_j B_0y_j$.
 Since $y_1=1$, $B_0\subseteq M$, and the relations $y_jy_k=\sum_l c_{jkl}y_l$ with $c_{jkl}\in B_0$ show that $M$ is closed under multiplication.
 So $M$ is an $R$-subalgebra of $A$, and it contains each $x_i=\sum_j b_{ij}y_j$.
 Hence $A=R[x_1,\dots,x_n]\subseteq M\subseteq A$.
 :::
 
-<1>3. $B$ is a finitely generated $B_0$-module.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2, $A$ is a finitely generated module over the Noetherian ring $B_0$, hence a Noetherian $B_0$-module.
+::: {.pf-step #b-fin-gen-b0-module}
+$B$ is a finitely generated $B_0$-module.
+
+::: pf-proof
+By steps [](#b0-noetherian){.pf-ref} and [](#a-fin-gen-b0-module){.pf-ref}, $A$ is a finitely generated module over the Noetherian ring $B_0$, hence a Noetherian $B_0$-module.
 Its $B_0$-submodule $B$ is therefore finitely generated.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-If $B=\sum_{r=1}^pB_0z_r$ (step <1>3), then $B=R[\{b_{ij}\},\{c_{jkl}\},z_1,\dots,z_p]$ is a finitely generated $R$-algebra.
 :::
+
+::: pf-qed
+If $B=\sum_{r=1}^pB_0z_r$ (step [](#b-fin-gen-b0-module){.pf-ref}), then $B=R[\{b_{ij}\},\{c_{jkl}\},z_1,\dots,z_p]$ is a finitely generated $R$-algebra.
+:::
+
+:::
+
 :::

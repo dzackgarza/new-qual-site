@@ -60,13 +60,16 @@ $$
 C_b:\quad g=x^4-x^2y^3-x^2y^5+y^8=0.
 $$
 
-<1>1. Both singularities have multiplicity $4$ at the origin and the same
+::: pf
+
+::: {.pf-step #same-multiplicity-tangent}
+Both singularities have multiplicity $4$ at the origin and the same
 unique tangent line
 $$
 x=0.
 $$
 
-::: {.proof}
+::: pf-proof
 For both equations the lowest nonzero homogeneous term is
 $$
 x^4.
@@ -75,7 +78,10 @@ Hence both local equations have order $4$ in the maximal ideal $(x,y)$, and
 their tangent cone is the quadruple line $x=0$.
 :::
 
-<1>2. Blow up the origin in the chart
+:::
+
+::: {.pf-step #a-first-blowup-transform}
+Blow up the origin in the chart
 $$
 x=uv,
 \qquad
@@ -86,7 +92,7 @@ $$
 \boxed{u(u^3-v)=0}.
 $$
 
-::: {.proof}
+::: pf-proof
 Substitution gives
 $$
 x^4-xy^4
@@ -102,12 +108,15 @@ Q=(u,v)=(0,0).
 $$
 :::
 
-<1>3. The infinitely near point $Q$ of (a) has multiplicity
+:::
+
+::: {.pf-step #a-infinitely-near-mult-two}
+The infinitely near point $Q$ of (a) has multiplicity
 $$
 \boxed{2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The strict-transform equation is
 $$
 u^4-uv.
@@ -125,10 +134,13 @@ $u=0$ and the branch $v=u^3$, with distinct tangent directions $u=0$ and
 $v=0$.
 :::
 
-<1>4. After one more blowup at $Q$, the two strict branches of (a) separate,
+:::
+
+::: {.pf-step #a-branches-separate}
+After one more blowup at $Q$, the two strict branches of (a) separate,
 so there are no further singular points of the strict transform.
 
-::: {.proof}
+::: pf-proof
 The tangent directions at $Q$ are distinct. Under the blowup of $Q$, points
 of the new exceptional curve parametrize these tangent directions, so the
 two branches meet the new exceptional curve at distinct points. Each branch
@@ -139,12 +151,15 @@ but they occur at smooth points of the curve and contribute no further
 singular multiplicities.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #a-delta-seven}
+Therefore
 $$
 \boxed{\delta_0(C_a)=7}.
 $$
 
-::: {.proof}
+::: pf-proof
 By the multiplicity formula [[D-CRVPLSING]], the only singular strict
 transform multiplicities are
 $$
@@ -161,13 +176,16 @@ $$
 $$
 :::
 
-<1>6. Under the same first blowup, the strict transform of (b) is
+:::
+
+::: {.pf-step #b-first-blowup-transform}
+Under the same first blowup, the strict transform of (b) is
 $$
 \boxed{
 u^4-u^2v-u^2v^3+v^4=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Substitution gives
 $$
 \begin{aligned}
@@ -181,13 +199,16 @@ On $E_1:(v=0)$ its equation is $u^4=0$, so again its unique point over the
 origin is $Q=(0,0)$.
 :::
 
-<1>7. The first infinitely near point of (b) has multiplicity
+:::
+
+::: {.pf-step #b-infinitely-near-mult-three}
+The first infinitely near point of (b) has multiplicity
 $$
 \boxed{3},
 $$
 not $2$.
 
-::: {.proof}
+::: pf-proof
 At $(u,v)=(0,0)$ the lowest-degree nonzero term of
 $$
 u^4-u^2v-u^2v^3+v^4
@@ -204,10 +225,13 @@ This already contradicts the assertion that the two singularities have the
 same infinitely near multiplicities.
 :::
 
-<1>8. Blowing up this multiplicity-$3$ point resolves all singularities of
+:::
+
+::: {.pf-step #b-resolves-after-blowup}
+Blowing up this multiplicity-$3$ point resolves all singularities of
 the strict transform of (b).
 
-::: {.proof}
+::: pf-proof
 The tangent cone at $Q$ is
 $$
 u^2v=0,
@@ -232,12 +256,15 @@ two tangent directions. Thus the strict transform has no singular point
 after this second blowup.
 :::
 
-<1>9. Therefore
+:::
+
+::: {.pf-step #b-delta-nine}
+Therefore
 $$
 \boxed{\delta_0(C_b)=9}.
 $$
 
-::: {.proof}
+::: pf-proof
 The singular multiplicities encountered are
 $$
 4,3.
@@ -253,9 +280,12 @@ $$
 $$
 :::
 
-<1>10. The transcribed claim of V.3.8 is therefore false.
+:::
 
-::: {.proof}
+::: {.pf-step #transcribed-claim-false}
+The transcribed claim of V.3.8 is therefore false.
+
+::: pf-proof
 Although the two original singularities both have multiplicity $4$, their
 first infinitely near singular points have different multiplicities:
 $$
@@ -272,12 +302,16 @@ matching of resolution data is not true for the equations transcribed on
 this card.
 :::
 
-<1>11. Q.E.D. for the transcribed statement: the displayed equations give a
+:::
+
+::: pf-qed
+For the transcribed statement, the displayed equations give a
 countercalculation to its claimed matching data.
 
-::: {.proof}
-Steps <1>1--<1>5 compute the infinitely near multiplicities and delta
-invariant of (a); steps <1>6--<1>9 do the same for (b); step <1>10 exhibits
+Steps [](#same-multiplicity-tangent){.pf-ref}, [](#a-first-blowup-transform){.pf-ref}, [](#a-infinitely-near-mult-two){.pf-ref}, [](#a-branches-separate){.pf-ref} and [](#a-delta-seven){.pf-ref} compute the infinitely near multiplicities and delta
+invariant of (a); steps [](#b-first-blowup-transform){.pf-ref}, [](#b-infinitely-near-mult-three){.pf-ref}, [](#b-resolves-after-blowup){.pf-ref} and [](#b-delta-nine){.pf-ref} do the same for (b); step [](#transcribed-claim-false){.pf-ref} exhibits
 the contradiction to the source claim.
+:::
+
 :::
 :::

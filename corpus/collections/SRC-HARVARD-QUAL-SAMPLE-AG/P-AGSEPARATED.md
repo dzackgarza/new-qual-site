@@ -33,8 +33,13 @@ Give examples with $Z$ nonreduced, or $f$ not separated, where $g \neq h$.
 :::
 
 ::: {.solution}
-<1>1. If a scheme $X$ is separated over an affine base $S$, then the intersection of any two affine open subschemes $U,V\subseteq X$ is affine.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #affine-intersection-in-separated-scheme}
+If a scheme $X$ is separated over an affine base $S$, then the intersection of any two affine open subschemes $U,V\subseteq X$ is affine.
+
+::: pf-proof
 The intersection is the inverse image of the diagonal:
 \[
 U\cap V
@@ -60,7 +65,10 @@ a\otimes b\longmapsto ab,
 so it is a closed immersion.
 :::
 
-<1>2. Let $f:X\to Y$ be separated and let
+:::
+
+::: {.pf-step #equalizer-closed-immersion}
+Let $f:X\to Y$ be separated and let
 \[
 g,h:Z\longrightarrow X
 \]
@@ -69,7 +77,8 @@ be $Y$-morphisms.  Their scheme-theoretic equalizer
 E\longrightarrow Z
 \]
 is a closed immersion.
-::: {.proof}
+
+::: pf-proof
 The pair $(g,h)$ defines
 \[
 (g,h):Z\longrightarrow X\times_YX.
@@ -82,8 +91,12 @@ E
 where $X\to X\times_YX$ is the diagonal.  Separatedness makes that diagonal a closed immersion, and closed immersions are stable under base change.
 :::
 
-<1>3. If $g$ and $h$ agree on a dense open subset $U\subseteq Z$, then the underlying closed subset $|E|$ is all of $|Z|$.
-::: {.proof}
+:::
+
+::: {.pf-step #dense-open-forces-equality}
+If $g$ and $h$ agree on a dense open subset $U\subseteq Z$, then the underlying closed subset $|E|$ is all of $|Z|$.
+
+::: pf-proof
 The equality
 \[
 g|_U=h|_U
@@ -92,18 +105,22 @@ means precisely that $U\to Z$ factors through the equalizer $E$.  Thus
 \[
 U\subseteq |E|.
 \]
-By <1>2, $|E|$ is closed in $|Z|$.  Since $U$ is dense,
+By step [](#equalizer-closed-immersion){.pf-ref}, $|E|$ is closed in $|Z|$.  Since $U$ is dense,
 \[
 |E|=|Z|.
 \]
 :::
 
-<1>4. If, in addition, $Z$ is reduced, then
+:::
+
+::: {.pf-step #reduced-gives-equality}
+If, in addition, $Z$ is reduced, then
 \[
 \boxed{g=h.}
 \]
-::: {.proof}
-Let $\mathcal I\subseteq\mathcal O_Z$ be the ideal sheaf defining the closed immersion $E\hookrightarrow Z$.  By <1>3,
+
+::: pf-proof
+Let $\mathcal I\subseteq\mathcal O_Z$ be the ideal sheaf defining the closed immersion $E\hookrightarrow Z$.  By step [](#dense-open-forces-equality){.pf-ref},
 \[
 V(\mathcal I)=Z,
 \]
@@ -116,8 +133,12 @@ E=Z.
 The universal property of the equalizer now gives $g=h$.
 :::
 
-<1>5. Reducedness of $Z$ is necessary, even when the target is affine and hence separated.
-::: {.proof}
+:::
+
+::: {.pf-step #nonreduced-counterexample}
+Reducedness of $Z$ is necessary, even when the target is affine and hence separated.
+
+::: pf-proof
 Let
 \[
 A=k[x,\varepsilon]/(\varepsilon^2,x\varepsilon),
@@ -161,8 +182,12 @@ and $D(x)$ is the complement of the single closed point $x=0$ there.
 Hence two maps to the separated scheme $\mathbb A^1$ can agree on a dense open and still differ when the source is nonreduced.
 :::
 
-<1>6. Separatedness of $f$ is also necessary, even when $Z$ is reduced.
-::: {.proof}
+:::
+
+::: {.pf-step #nonseparated-counterexample}
+Separatedness of $f$ is also necessary, even when $Z$ is reduced.
+
+::: pf-proof
 Let $X$ be the affine line with doubled origin, obtained by gluing
 \[
 U_1\cong\mathbb A^1_k,
@@ -196,7 +221,10 @@ g(0)\ne h(0)
 are the two distinct origins.  Therefore $g\ne h$.
 :::
 
-<1>7. The dense-open uniqueness principle is therefore
+:::
+
+::: {.pf-step #dense-open-principle}
+The dense-open uniqueness principle is therefore
 \[
 \boxed{
 f\text{ separated and }Z\text{ reduced}
@@ -206,12 +234,16 @@ g|_U=h|_U\text{ on dense open }U
 }
 \]
 and neither hypothesis can be dropped.
-::: {.proof}
-The implication is <1>2--<1>4.  Step <1>5 shows failure without reducedness, and <1>6 shows failure without separatedness.
+
+::: pf-proof
+The implication is steps [](#equalizer-closed-immersion){.pf-ref}, [](#dense-open-forces-equality){.pf-ref} and [](#reduced-gives-equality){.pf-ref}.  Step [](#nonreduced-counterexample){.pf-ref} shows failure without reducedness, and step [](#nonseparated-counterexample){.pf-ref} shows failure without separatedness.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>7 answer each part of the question.
+:::
+
+::: pf-qed
+Steps [](#affine-intersection-in-separated-scheme){.pf-ref}, [](#equalizer-closed-immersion){.pf-ref}, [](#dense-open-forces-equality){.pf-ref}, [](#reduced-gives-equality){.pf-ref}, [](#nonreduced-counterexample){.pf-ref}, [](#nonseparated-counterexample){.pf-ref} and [](#dense-open-principle){.pf-ref} answer each part of the question.
+:::
+
 :::
 :::

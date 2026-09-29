@@ -33,13 +33,18 @@ S_N=\sum_{n=1}^N f_n.
 \]
 Each $S_N$ is holomorphic on $\Omega$.
 
-<1>1. The limit $F$ is continuous. For every $z_0\in\Omega$, choose $r>0$ with
+::: pf
+
+::: pf-step
+The limit $F$ is continuous. For every $z_0\in\Omega$, choose $r>0$ with
 \[
 \overline{D_r(z_0)}\subset\Omega.
 \]
 The convergence $S_N\to F$ is uniform on this compact disk, so $F$ is a uniform limit of continuous functions there and is therefore continuous near $z_0$.
+:::
 
-<1>2. Let $T$ be any closed triangle contained in $\Omega$. Since each $S_N$ is holomorphic on a neighborhood of $T$, Cauchy's theorem gives
+::: pf-step
+Let $T$ be any closed triangle contained in $\Omega$. Since each $S_N$ is holomorphic on a neighborhood of $T$, Cauchy's theorem gives
 \[
 \int_{\partial T}S_N(z)\,dz=0.
 \]
@@ -49,12 +54,18 @@ The boundary $\partial T$ is compact, so $S_N\to F$ uniformly on $\partial T$. H
 =\lim_{N\to\infty}\int_{\partial T}S_N(z)\,dz
 =0.
 \]
+:::
 
-<1>3. Morera's theorem now implies that $F$ is holomorphic on $\Omega$.
+::: pf-step
+Morera's theorem now implies that $F$ is holomorphic on $\Omega$.
+:::
 
-<1>4. Moreover, once holomorphy is known, Cauchy's integral formula on nested compact disks shows that for every $k\ge1$,
+::: pf-step
+Moreover, once holomorphy is known, Cauchy's integral formula on nested compact disks shows that for every $k\ge1$,
 \[
 F^{(k)}=\sum_{n=1}^\infty f_n^{(k)}
 \]
 with locally uniform convergence of the derivative series.
+:::
+
 :::

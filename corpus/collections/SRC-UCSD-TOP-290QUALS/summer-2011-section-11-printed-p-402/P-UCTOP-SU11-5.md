@@ -25,7 +25,11 @@ Use the universal coefficient theorem to show that $\chi(X) = \chi_2(X)$.
 :::
 
 ::: {.solution}
-<1>1. Write
+
+::: pf
+
+::: pf-step
+Write
 $$
 H_i(X;\mathbb Z)\cong\mathbb Z^{b_i}\oplus T_i,
 $$
@@ -33,40 +37,57 @@ where $T_i$ is finite, and set
 $$
 t_i=\dim_{\mathbb F_2}(T_i\otimes\mathbb F_2).
 $$
-::: {.proof}
+
+::: pf-proof
 The total integral homology is finitely generated, so each $H_i$ has this form and only finitely many are nonzero.
 :::
 
-<1>2. The homological universal coefficient theorem gives a split short exact sequence
+:::
+
+::: pf-step
+The homological universal coefficient theorem gives a split short exact sequence
 $$
 0\to H_i(X;\mathbb Z)\otimes\mathbb F_2
 \to H_i(X;\mathbb F_2)
 \to \operatorname{Tor}(H_{i-1}(X;\mathbb Z),\mathbb F_2)\to0.
 $$
-::: {.proof}
+
+::: pf-proof
 This is the universal coefficient theorem for homology with coefficients in $\mathbb F_2$.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #dimension-formula}
+Therefore
 $$
 \dim_{\mathbb F_2}H_i(X;\mathbb F_2)=b_i+t_i+t_{i-1}.
 $$
-::: {.proof}
+
+::: pf-proof
 The free summand contributes $b_i$. For a finite abelian group $T$, both $T\otimes\mathbb F_2$ and $\operatorname{Tor}(T,\mathbb F_2)$ have the same $\mathbb F_2$-dimension, namely the number of cyclic summands of even order; this is $t_i$ for $T_i$ and $t_{i-1}$ for $T_{i-1}$.
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #chi2-split-sum}
+Hence
 $$
 \chi_2(X)=\sum_i(-1)^i b_i
 +\sum_i(-1)^i t_i
 +\sum_i(-1)^i t_{i-1}.
 $$
-::: {.proof}
-Substitute <1>3 into the definition of $\chi_2$.
+
+::: pf-proof
+Substitute step [](#dimension-formula){.pf-ref} into the definition of $\chi_2$.
 :::
 
-<1>5. The two torsion sums cancel.
-::: {.proof}
+:::
+
+::: {.pf-step #torsion-sums-cancel}
+The two torsion sums cancel.
+
+::: pf-proof
 Reindex the last sum:
 $$
 \sum_i(-1)^i t_{i-1}=-\sum_j(-1)^j t_j.
@@ -74,11 +95,20 @@ $$
 Only finitely many terms are nonzero, so this reindexing is legitimate.
 :::
 
-<1>6. Thus
+:::
+
+::: pf-step
+Thus
 $$
 \chi_2(X)=\sum_i(-1)^i b_i=\chi(X).
 $$
-::: {.proof}
-Over $\mathbb Q$, $\dim_{\mathbb Q}H_i(X;\mathbb Q)=b_i$. Apply <1>4--<1>5.
+
+::: pf-proof
+Over $\mathbb Q$, $\dim_{\mathbb Q}H_i(X;\mathbb Q)=b_i$. Apply steps [](#chi2-split-sum){.pf-ref} and [](#torsion-sums-cancel){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

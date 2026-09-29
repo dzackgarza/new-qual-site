@@ -39,8 +39,12 @@ The system $AX=Y$ has a solution for every triple
 (y_1,y_2,y_3)\in F^3.
 \]
 
-<1>1. The coefficient matrix $A$ is invertible.
-::: {.proof}
+::: pf
+
+::: {.pf-step #a-is-invertible}
+The coefficient matrix $A$ is invertible.
+
+::: pf-proof
 Its determinant is
 \[
 \det\begin{bmatrix}
@@ -51,13 +55,22 @@ Its determinant is
 \]
 :::
 
-<1>2. Hence $AX=Y$ is solvable for every $Y\in F^3$.
-::: {.proof}
-By <1>1, $A^{-1}$ exists. For arbitrary
+:::
+
+::: pf-step
+Hence $AX=Y$ is solvable for every $Y\in F^3$.
+
+::: pf-proof
+By step [](#a-is-invertible){.pf-ref}, $A^{-1}$ exists. For arbitrary
 $Y=(y_1,y_2,y_3)^t$, take
 \[
 X=A^{-1}Y.
 \]
 Then $AX=Y$. In fact the solution is unique.
 :::
+
+:::
+
+:::
+
 :::

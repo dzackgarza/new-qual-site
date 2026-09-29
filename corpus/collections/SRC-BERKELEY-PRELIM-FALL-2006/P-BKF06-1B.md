@@ -36,14 +36,18 @@ Show that $f$ is constant.
 :::
 
 ::: {.solution}
-<1>1. For every integer $n\ge0$ and every $z\in\CC$,
+
+::: pf
+
+::: {.pf-step #growth-bound-2n}
+For every integer $n\ge0$ and every $z\in\CC$,
 $$
 \abs{f\left(z^{2^n}\right)}
 \le
 2^n\abs{f(z)}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $n=0$ this is equality. Suppose it holds for $n$. Applying the
 hypothesis to $z^{2^n}$ gives
 $$
@@ -62,7 +66,10 @@ $$
 The claim follows by induction.
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #max-bound-on-Rn}
+Let
 $$
 M=\max_{\abs z=2}\abs{f(z)}
 $$
@@ -77,14 +84,14 @@ $$
 2^nM.
 $$
 
-::: {.proof}
+::: pf-proof
 The maximum $M$ exists because $f$ is continuous on the compact
 circle $\abs z=2$. If $\abs w=R_n$, choose a $2^n$-th root $z$ of
 $w$. Then
 $$
 \abs z=R_n^{1/2^n}=2.
 $$
-By step <1>1,
+By step [](#growth-bound-2n){.pf-ref},
 $$
 \abs{f(w)}
 =
@@ -97,14 +104,17 @@ $$
 Taking the maximum over the circle proves the claim.
 :::
 
-<1>3. For every integer $m\ge1$ and every $n\ge0$,
+:::
+
+::: {.pf-step #derivative-bound}
+For every integer $m\ge1$ and every $n\ge0$,
 $$
 \abs{f^{(m)}(0)}
 \le
 m!M\,2^{n-m2^n}.
 $$
 
-::: {.proof}
+::: pf-proof
 Cauchy's derivative estimate on the circle of radius $R_n$ gives
 $$
 \abs{f^{(m)}(0)}
@@ -112,7 +122,7 @@ $$
 \frac{m!}{R_n^m}
 \max_{\abs w=R_n}\abs{f(w)}.
 $$
-Using step <1>2 and $R_n=2^{2^n}$ yields
+Using step [](#max-bound-on-Rn){.pf-ref} and $R_n=2^{2^n}$ yields
 $$
 \abs{f^{(m)}(0)}
 \le
@@ -122,35 +132,44 @@ m!M\,2^{n-m2^n}.
 $$
 :::
 
-<1>4. For every $m\ge1$,
+:::
+
+::: {.pf-step #derivatives-vanish}
+For every $m\ge1$,
 $$
 f^{(m)}(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Fix $m\ge1$. Since
 $$
 n-m2^n\longrightarrow-\infty,
 $$
-the right-hand side in step <1>3 tends to zero as $n\to\infty$.
+the right-hand side in step [](#derivative-bound){.pf-ref} tends to zero as $n\to\infty$.
 The nonnegative number $\abs{f^{(m)}(0)}$ is bounded by all of these
 quantities, so it must be zero.
 :::
 
-<1>5. The entire function $f$ is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #f-constant}
+The entire function $f$ is constant.
+
+::: pf-proof
 The Taylor series of $f$ at $0$ converges on all of $\CC$. By step
-<1>4, every coefficient of positive degree vanishes. Hence
+[](#derivatives-vanish){.pf-ref}, every coefficient of positive degree vanishes. Hence
 $$
 f(z)=f(0)
 $$
 for every $z\in\CC$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-constant){.pf-ref} proves the required conclusion.
+:::
+
+:::
+
 :::

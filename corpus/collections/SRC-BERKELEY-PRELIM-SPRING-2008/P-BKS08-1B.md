@@ -42,7 +42,10 @@ T:P_n\longrightarrow\RR,
 T(p)=\int_0^1\frac{p(x)}{x^2+1}\,dx.
 $$
 
-<1>1. Define
+::: pf
+
+::: {.pf-step #l-linear}
+Define
 $$
 L:P_n\longrightarrow P_n^*
 $$
@@ -52,7 +55,7 @@ L(q)(p)=\int_0^1p(x)q(x)\,dx.
 $$
 Then $L$ is linear.
 
-::: {.proof}
+::: pf-proof
 For $q_1,q_2\in P_n$ and $a,b\in\RR$,
 $$
 \begin{aligned}
@@ -65,9 +68,12 @@ for every $p\in P_n$. Thus
 $L(aq_1+bq_2)=aL(q_1)+bL(q_2)$.
 :::
 
-<1>2. The map $L$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #l-injective}
+The map $L$ is injective.
+
+::: pf-proof
 Suppose $L(q)=0$. Taking $p=q$ gives
 $$
 0=L(q)(q)=\int_0^1q(x)^2\,dx.
@@ -79,26 +85,35 @@ on $[0,1]$. A polynomial vanishing on an interval is the zero
 polynomial, so $q=0$.
 :::
 
-<1>3. The map $L$ is an isomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #l-isomorphism}
+The map $L$ is an isomorphism.
+
+::: pf-proof
 The real vector space $P_n$ has dimension $n+1$, and its dual
-$P_n^*$ has the same dimension. By step <1>2, the linear map
+$P_n^*$ has the same dimension. By step [](#l-injective){.pf-ref}, the linear map
 $L:P_n\to P_n^*$ is injective between vector spaces of equal finite
 dimension, hence is surjective as well.
 :::
 
-<1>4. There exists $q\in P_n$ such that
+:::
+
+::: {.pf-step #q-exists-with-lq-equals-t}
+There exists $q\in P_n$ such that
 $$
 L(q)=T.
 $$
 
-::: {.proof}
-The functional $T$ belongs to $P_n^*$, and step <1>3 says that $L$ is
+::: pf-proof
+The functional $T$ belongs to $P_n^*$, and step [](#l-isomorphism){.pf-ref} says that $L$ is
 surjective.
 :::
 
-<1>5. For this $q$, every $p\in P_n$ satisfies
+:::
+
+::: {.pf-step #pairing-identity}
+For this $q$, every $p\in P_n$ satisfies
 $$
 \boxed{
 \int_0^1p(x)q(x)\,dx
@@ -107,14 +122,17 @@ $$
 }
 $$
 
-::: {.proof}
-The identity $L(q)=T$ from step <1>4 means precisely the displayed
+::: pf-proof
+The identity $L(q)=T$ from step [](#q-exists-with-lq-equals-t){.pf-ref} means precisely the displayed
 equality after evaluating both functionals at an arbitrary $p\in P_n$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the required existence statement.
 :::
+
+::: pf-qed
+Step [](#pairing-identity){.pf-ref} proves the required existence statement.
+:::
+
+:::
+
 :::

@@ -37,10 +37,13 @@ $$
 M\coloneqq\sup_{y\in\RR^3}\abs{f(y)}<\infty.
 $$
 
-<1>1. For every fixed $x\in\RR^3$, the integral defining $u(x)$ is
+::: pf
+
+::: {.pf-step #u-well-defined}
+For every fixed $x\in\RR^3$, the integral defining $u(x)$ is
 absolutely convergent.
 
-::: {.proof}
+::: pf-proof
 Since $f$ vanishes outside the ball of radius $R$,
 $$
 \int_{\RR^3}
@@ -70,7 +73,10 @@ $$
 Thus $u(x)$ is well defined.
 :::
 
-<1>2. If $L>R$, $\abs x\geq L$, and $y\in\operatorname{supp}f$, then
+:::
+
+::: {.pf-step #ratio-estimate}
+If $L>R$, $\abs x\geq L$, and $y\in\operatorname{supp}f$, then
 $$
 \left|
 \frac{\abs x}{\abs{x-y}}-1
@@ -79,7 +85,7 @@ $$
 \frac{R}{L-R}.
 $$
 
-::: {.proof}
+::: pf-proof
 The reverse triangle inequality gives
 $$
 \bigl|\abs x-\abs{x-y}\bigr|
@@ -108,7 +114,10 @@ $$
 $$
 :::
 
-<1>3. If $L>R$ and $\abs x\geq L$, then
+:::
+
+::: {.pf-step #difference-bound}
+If $L>R$ and $\abs x\geq L$, then
 $$
 \left|
 \abs x\,u(x)-\int_{\RR^3}f(y)\,dy
@@ -118,7 +127,7 @@ $$
 \int_{\RR^3}\abs{f(y)}\,dy.
 $$
 
-::: {.proof}
+::: pf-proof
 For such $x$, the denominator $\abs{x-y}$ is nonzero on
 $\operatorname{supp}f$. Hence
 $$
@@ -130,11 +139,14 @@ f(y)
 \frac{\abs x}{\abs{x-y}}-1
 \right)dy.
 $$
-Taking absolute values and applying step <1>2 on the support of $f$ gives
+Taking absolute values and applying step [](#ratio-estimate){.pf-ref} on the support of $f$ gives
 the stated estimate.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #limit-formula}
+One has
 $$
 \boxed{
 \lim_{\abs x\to\infty}\abs x\,u(x)
@@ -143,22 +155,25 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The integral
 $$
 \int_{\RR^3}\abs{f(y)}\,dy
 $$
 is finite because $f$ is continuous with compact support. The right-hand
-side of the estimate in step <1>3 tends to $0$ as $L\to\infty$.
+side of the estimate in step [](#difference-bound){.pf-ref} tends to $0$ as $L\to\infty$.
 Therefore, given $\varepsilon>0$, choosing $L$ sufficiently large makes
-the difference in step <1>3 smaller than $\varepsilon$ for every
+the difference in step [](#difference-bound){.pf-ref} smaller than $\varepsilon$ for every
 $\abs x\geq L$. This is exactly the asserted limit.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves that $u$ is well defined, and step <1>4 proves the required
+::: pf-qed
+Step [](#u-well-defined){.pf-ref} proves that $u$ is well defined, and step [](#limit-formula){.pf-ref} proves the required
 asymptotic formula.
 :::
+
+:::
+
 :::

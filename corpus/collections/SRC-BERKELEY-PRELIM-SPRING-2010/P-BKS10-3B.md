@@ -36,13 +36,16 @@ $$
 F(z)\coloneqq z^7+e^z.
 $$
 
-<1>1. The function $F$ has exactly seven zeros in the disk
+::: pf
+
+::: {.pf-step #seven-zeros}
+The function $F$ has exactly seven zeros in the disk
 $$
 \abs{z}<2,
 $$
 counted with multiplicity.
 
-::: {.proof}
+::: pf-proof
 On the circle $\abs{z}=2$,
 $$
 \abs{z^7}=2^7=128,
@@ -62,10 +65,13 @@ same number of zeros inside the circle. The latter has seven zeros counted
 with multiplicity, all at $0$.
 :::
 
-<1>2. The function $F$ has exactly one real zero, and it lies in
+:::
+
+::: {.pf-step #real-zero}
+The function $F$ has exactly one real zero, and it lies in
 $(-1,0)$.
 
-::: {.proof}
+::: pf-proof
 For real $x$,
 $$
 F'(x)=7x^6+e^x>0,
@@ -82,9 +88,12 @@ The intermediate value theorem gives a real zero in $(-1,0)$, and strict
 monotonicity makes it unique.
 :::
 
-<1>3. Every zero of $F$ is simple.
+:::
 
-::: {.proof}
+::: {.pf-step #zeros-simple}
+Every zero of $F$ is simple.
+
+::: pf-proof
 If $z$ were a multiple zero, then
 $$
 z^7+e^z=0
@@ -112,12 +121,15 @@ $$
 This contradiction proves simplicity.
 :::
 
-<1>4. Besides the one real zero from step <1>2, the disk
+:::
+
+::: {.pf-step #conjugate-pairs}
+Besides the one real zero from step [](#real-zero){.pf-ref}, the disk
 $\abs{z}<2$ contains six nonreal zeros, arranged in three conjugate pairs.
 
-::: {.proof}
-Steps <1>1 and <1>3 show that there are seven distinct zeros in the disk.
-Step <1>2 accounts for exactly one of them on the real axis. Since
+::: pf-proof
+Steps [](#seven-zeros){.pf-ref} and [](#zeros-simple){.pf-ref} show that there are seven distinct zeros in the disk.
+Step [](#real-zero){.pf-ref} accounts for exactly one of them on the real axis. Since
 $$
 \overline{F(z)}
 =
@@ -127,20 +139,26 @@ every nonreal zero occurs together with its complex conjugate. Thus the
 remaining six zeros form three conjugate pairs.
 :::
 
-<1>5. The number of solutions satisfying all three conditions is
+:::
+
+::: {.pf-step #solution-count}
+The number of solutions satisfying all three conditions is
 $$
 \boxed{3}.
 $$
 
-::: {.proof}
-Each conjugate pair in step <1>4 contains exactly one zero with positive
+::: pf-proof
+Each conjugate pair in step [](#conjugate-pairs){.pf-ref} contains exactly one zero with positive
 imaginary part and one with negative imaginary part. There are three such
 pairs.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested number.
 :::
+
+::: pf-qed
+Step [](#solution-count){.pf-ref} gives the requested number.
+:::
+
+:::
+
 :::

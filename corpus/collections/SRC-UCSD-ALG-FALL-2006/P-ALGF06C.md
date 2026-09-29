@@ -36,8 +36,13 @@ Let $G$ be a group and let $Z(G)$ denote its center.
 
 
 ::: {.solution}
-<1>1. If $G/Z(G)$ is cyclic, then $G$ is abelian and hence $G=Z(G)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #cyclic-quotient-forces-equality}
+If $G/Z(G)$ is cyclic, then $G$ is abelian and hence $G=Z(G)$.
+
+::: pf-proof
 Suppose
 \[
 G/Z(G)=\langle gZ(G)\rangle.
@@ -62,8 +67,12 @@ G=Z(G).
 \]
 :::
 
-<1>2. If $|G|=p^3$ and $G$ is noncommutative, then $|Z(G)|=p$.
-::: {.proof}
+:::
+
+::: {.pf-step #order-p3-center-order-p}
+If $|G|=p^3$ and $G$ is noncommutative, then $|Z(G)|=p$.
+
+::: pf-proof
 Let $G$ act on itself by conjugation.
 For $g\in G$, the conjugacy class of $g$ has cardinality
 \[
@@ -93,15 +102,19 @@ If $|Z(G)|=p^2$, then
 |G/Z(G)|=p,
 \]
 so $G/Z(G)$ is cyclic.
-By <1>1 this would again imply $G=Z(G)$, a contradiction.
+By step [](#cyclic-quotient-forces-equality){.pf-ref} this would again imply $G=Z(G)$, a contradiction.
 Therefore the only possibility is
 \[
 |Z(G)|=p.
 \]
 :::
 
-<1>3. There is a noncommutative group of order $16$ whose center is not cyclic.
-::: {.proof}
+:::
+
+::: {.pf-step #order-16-noncyclic-center-example}
+There is a noncommutative group of order $16$ whose center is not cyclic.
+
+::: pf-proof
 Let
 \[
 D_8=\langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle
@@ -151,5 +164,13 @@ Z(G)
 \cong C_2\times C_2.
 \]
 The group $C_2\times C_2$ is not cyclic, so this $G$ has all the required properties.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#cyclic-quotient-forces-equality){.pf-ref}, [](#order-p3-center-order-p){.pf-ref}, and [](#order-16-noncyclic-center-example){.pf-ref} answer parts (a), (b), and (c).
+:::
+
 :::
 :::

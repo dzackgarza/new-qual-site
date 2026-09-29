@@ -41,8 +41,12 @@ T(G)=\{g\in G:o(g)<\infty\}.
 \]
 We verify the subgroup conditions.
 
-<1>1. The identity belongs to $T(G)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #identity-in-torsion}
+The identity belongs to $T(G)$.
+
+::: pf-proof
 The identity has order $1$, hence finite order.
 Therefore
 \[
@@ -50,8 +54,12 @@ e\in T(G).
 \]
 :::
 
-<1>2. If $x\in T(G)$, then $x^{-1}\in T(G)$.
-::: {.proof}
+:::
+
+::: {.pf-step #inverse-in-torsion}
+If $x\in T(G)$, then $x^{-1}\in T(G)$.
+
+::: pf-proof
 Since $x$ has finite order, there is an integer $m\ge1$ such that
 \[
 x^m=e.
@@ -66,8 +74,12 @@ x^{-1}\in T(G).
 \]
 :::
 
-<1>3. If $x,y\in T(G)$, then $xy\in T(G)$.
-::: {.proof}
+:::
+
+::: {.pf-step #product-in-torsion}
+If $x,y\in T(G)$, then $xy\in T(G)$.
+
+::: pf-proof
 Choose positive integers $m,n$ such that
 \[
 x^m=e,
@@ -93,12 +105,20 @@ Hence
 Therefore $xy$ has finite order and belongs to $T(G)$.
 :::
 
-<1>4. Hence $T(G)$ is a subgroup of $G$.
-::: {.proof}
-By <1>1, $T(G)$ is nonempty; by <1>2 and <1>3, it is closed under inverses and products.
+:::
+
+::: pf-step
+Hence $T(G)$ is a subgroup of $G$.
+
+::: pf-proof
+By step [](#identity-in-torsion){.pf-ref}, $T(G)$ is nonempty; by steps [](#inverse-in-torsion){.pf-ref} and [](#product-in-torsion){.pf-ref}, it is closed under inverses and products.
 Therefore
 \[
 T(G)\le G.
 \]
+:::
+
+:::
+
 :::
 :::

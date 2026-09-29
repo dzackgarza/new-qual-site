@@ -38,7 +38,10 @@ Let
 \]
 Fix $z\in D_s(z_0)$. Since $|z-z_0|<s$, the closed disk $\overline{D_\delta(z)}$ is contained in $D_r(z_0)$.
 
-<1>1. For every $0<\rho<\delta$, the mean-value formula gives
+::: pf
+
+::: pf-step
+For every $0<\rho<\delta$, the mean-value formula gives
 \[
 f(z)=\frac1{2\pi}\int_0^{2\pi}f(z+\rho e^{i\theta})\,d\theta.
 \]
@@ -51,15 +54,19 @@ Thus
 \[
 f(z)=\frac1{\pi\delta^2}\iint_{D_\delta(z)}f(w)\,dA(w).
 \]
+:::
 
-<1>2. Taking absolute values,
+::: pf-step
+Taking absolute values,
 \[
 |f(z)|
 \le\frac1{\pi\delta^2}\iint_{D_\delta(z)}|f(w)|\,dA(w)
 \le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
 \]
+:::
 
-<1>3. Taking the supremum over $z\in D_s(z_0)$ yields
+::: pf-step
+Taking the supremum over $z\in D_s(z_0)$ yields
 \[
 \|f\|_{(\infty,s)}
 \le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
@@ -68,4 +75,6 @@ Hence one may take
 \[
 c=\frac1{\pi(r-s)^2}.
 \]
+:::
+
 :::

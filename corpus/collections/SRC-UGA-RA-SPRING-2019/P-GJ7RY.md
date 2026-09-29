@@ -41,8 +41,13 @@ Let $C([0,1])$ be the space of continuous real-valued functions on $[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. Completeness in the uniform norm.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #uniform-norm-complete}
+Completeness in the uniform norm.
+
+::: pf-proof
 Let $(f_n)$ be Cauchy in $\|\cdot\|_\infty$. For each $x\in[0,1]$, the real sequence $(f_n(x))$ is Cauchy, so define
 \[
 f(x):=\lim_{n\to\infty}f_n(x).
@@ -63,8 +68,12 @@ for every $x$, hence
 Thus $f_n\to f$ uniformly. A uniform limit of continuous functions is continuous, so $f\in C([0,1])$ and the space is complete.
 :::
 
-<1>2. Failure of completeness in the $L^1$ norm.
-::: {.proof}
+:::
+
+::: {.pf-step #l1-norm-not-complete}
+Failure of completeness in the $L^1$ norm.
+
+::: pf-proof
 Let
 \[
 g=\mathbf1_{[1/2,1]}.
@@ -92,4 +101,13 @@ But limits in $L^1$ are unique up to almost-everywhere equality, so $h=g$ almost
 
 Therefore $C([0,1])$ is not complete under $\|\cdot\|_1$.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#uniform-norm-complete){.pf-ref} and [](#l1-norm-not-complete){.pf-ref} answer parts 1 and 2.
+:::
+
+:::
+
 :::

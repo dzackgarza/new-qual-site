@@ -38,7 +38,11 @@ but that this conclusion need not hold for $k\ge3$.
 :::
 
 ::: {.solution}
-<1>1. If $x\in H_1$ and $y\in H_2$, then the commutator
+
+::: pf
+
+::: {.pf-step #commutator-in-intersection}
+If $x\in H_1$ and $y\in H_2$, then the commutator
 $$
 [x,y]
 \coloneqq
@@ -49,7 +53,7 @@ $$
 H_1\cap H_2.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $H_1\trianglelefteq G$,
 $$
 yx^{-1}y^{-1}\in H_1,
@@ -75,14 +79,17 @@ $$
 Thus the commutator lies in both subgroups.
 :::
 
-<1>2. When $k=2$, the subgroups $H_1$ and $H_2$ commute elementwise.
+:::
 
-::: {.proof}
+::: {.pf-step #H1-H2-commute-elementwise}
+When $k=2$, the subgroups $H_1$ and $H_2$ commute elementwise.
+
+::: pf-proof
 By hypothesis,
 $$
 H_1\cap H_2=\{1\}.
 $$
-Step <1>1 therefore gives
+Step [](#commutator-in-intersection){.pf-ref} therefore gives
 $$
 [x,y]=1
 $$
@@ -92,7 +99,10 @@ xy=yx.
 $$
 :::
 
-<1>3. When $k=2$, the set
+:::
+
+::: {.pf-step #H1H2-is-subgroup}
+When $k=2$, the set
 $$
 H_1H_2
 \coloneqq
@@ -100,14 +110,14 @@ H_1H_2
 $$
 is a subgroup of $G$.
 
-::: {.proof}
+::: pf-proof
 For
 $$
 h_1,h_1'\in H_1,
 \qquad
 h_2,h_2'\in H_2,
 $$
-step <1>2 gives
+step [](#H1-H2-commute-elementwise){.pf-ref} gives
 $$
 (h_1h_2)(h_1'h_2')
 =
@@ -126,7 +136,10 @@ $$
 Thus $H_1H_2$ is a subgroup.
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #mu-isomorphism}
+The map
 $$
 \mu:H_1\times H_2\longrightarrow H_1H_2,
 \qquad
@@ -134,8 +147,8 @@ $$
 $$
 is an isomorphism.
 
-::: {.proof}
-Step <1>2 implies
+::: pf-proof
+Step [](#H1-H2-commute-elementwise){.pf-ref} implies
 $$
 \begin{aligned}
 \mu(h_1,h_2)\mu(h_1',h_2')
@@ -161,24 +174,30 @@ $$
 Thus $h_1=h_2=1$, so the kernel is trivial. Hence $\mu$ is an isomorphism.
 :::
 
-<1>5. Therefore, for $k=2$, the group $G$ contains a subgroup isomorphic
+:::
+
+::: {.pf-step #k-equals-2-case}
+Therefore, for $k=2$, the group $G$ contains a subgroup isomorphic
 to
 $$
 H_1\times H_2.
 $$
 
-::: {.proof}
-Take the subgroup $H_1H_2$ from step <1>3 and apply the isomorphism in
-step <1>4.
+::: pf-proof
+Take the subgroup $H_1H_2$ from step [](#H1H2-is-subgroup){.pf-ref} and apply the isomorphism in
+step [](#mu-isomorphism){.pf-ref}.
 :::
 
-<1>6. Fix any integer $k\geq3$ and let
+:::
+
+::: {.pf-step #G-has-k-order-two-subgroups}
+Fix any integer $k\geq3$ and let
 $$
 G=(C_2)^{k-1}.
 $$
 Then $G$ contains at least $k$ distinct subgroups of order $2$.
 
-::: {.proof}
+::: pf-proof
 Regard $G$ as the additive group of the vector space
 $$
 \FF_2^{\,k-1}.
@@ -199,10 +218,13 @@ H_1,\ldots,H_k.
 $$
 :::
 
-<1>7. The subgroups from step <1>6 are normal and pairwise intersect
+:::
+
+::: {.pf-step #subgroups-normal-and-trivial-intersection}
+The subgroups from step [](#G-has-k-order-two-subgroups){.pf-ref} are normal and pairwise intersect
 trivially.
 
-::: {.proof}
+::: pf-proof
 The group $G$ is abelian, so every subgroup is normal. Two distinct
 subgroups of order $2$ can share no nonidentity element, because the unique
 nonidentity element determines such a subgroup. Therefore
@@ -212,12 +234,15 @@ $$
 whenever $i\neq j$.
 :::
 
-<1>8. The group $G$ from step <1>6 cannot contain a subgroup isomorphic to
+:::
+
+::: {.pf-step #G-cannot-contain-product}
+The group $G$ from step [](#G-has-k-order-two-subgroups){.pf-ref} cannot contain a subgroup isomorphic to
 $$
 H_1\times\cdots\times H_k.
 $$
 
-::: {.proof}
+::: pf-proof
 Each $H_i$ has order $2$, so
 $$
 \abs{H_1\times\cdots\times H_k}
@@ -234,10 +259,13 @@ No subgroup of a finite group can have order larger than the group itself.
 Thus the displayed direct product cannot occur as a subgroup of $G$.
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 proves the assertion for $k=2$, while steps <1>6--<1>8 give a
+::: pf-qed
+Step [](#k-equals-2-case){.pf-ref} proves the assertion for $k=2$, while steps [](#G-has-k-order-two-subgroups){.pf-ref}, [](#subgroups-normal-and-trivial-intersection){.pf-ref} and [](#G-cannot-contain-product){.pf-ref} give a
 counterexample for every $k\geq3$.
 :::
+
+:::
+
 :::

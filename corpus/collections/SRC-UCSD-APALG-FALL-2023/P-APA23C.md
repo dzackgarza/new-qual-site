@@ -29,57 +29,102 @@ Prove that the eigenvalues of $|A|$ are the singular values of $A$.
 :::
 
 ::: {.solution}
+
 **Part (a).**
 
-<1>1. $|A| = (A^H A)^{1/2}$, the unique positive semidefinite square root of $A^H A$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #modulus-definition}
+$|A| = (A^H A)^{1/2}$, the unique positive semidefinite square root of $A^H A$.
+
+::: pf-proof
 definition of the modulus of $A$.
 :::
 
-<1>2. The singular values of $A$ are the nonnegative square roots of the eigenvalues of $A^H A$.
-::: {.proof}
+:::
+
+::: {.pf-step #singular-values-definition}
+The singular values of $A$ are the nonnegative square roots of the eigenvalues of $A^H A$.
+
+::: pf-proof
 definition of singular values.
 :::
 
-<1>3. The eigenvalues of $|A| = (A^H A)^{1/2}$ are the square roots of the eigenvalues of $A^H A$.
-::: {.proof}
+:::
+
+::: {.pf-step #eigenvalues-of-ahasqrt}
+The eigenvalues of $|A| = (A^H A)^{1/2}$ are the square roots of the eigenvalues of $A^H A$.
+
+::: pf-proof
 if $A^H A$ has eigenvalues $\lambda_i \ge 0$ (it is positive semidefinite), then $(A^H A)^{1/2}$ has eigenvalues $\sqrt{\lambda_i}$.
 :::
 
-<1>4. Hence the eigenvalues of $|A|$ are exactly the singular values of $A$.
-::: {.proof}
-<1>2 and <1>3.
+:::
+
+::: {.pf-step #eigenvalues-of-modulus-are-singular-values}
+Hence the eigenvalues of $|A|$ are exactly the singular values of $A$.
+
+::: pf-proof
+Steps [](#singular-values-definition){.pf-ref} and [](#eigenvalues-of-ahasqrt){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **Part (b).**
 
-<1>1. $A^H A$ and $A A^H$ have the same nonzero eigenvalues, with the same multiplicities.
-::: {.proof}
+::: pf
+
+::: {.pf-step #ahsa-aah-same-nonzero-eigenvalues}
+$A^H A$ and $A A^H$ have the same nonzero eigenvalues, with the same multiplicities.
+
+::: pf-proof
 for $\lambda \neq 0$, $A^H A v = \lambda v$ implies $A A^H (Av) = \lambda (Av)$ with $Av \neq 0$, giving an injection between the nonzero eigenspaces; the argument is symmetric.
 :::
 
-<1>2. When $m = n$, $A^H A$ and $A A^H$ are both $n \times n$, so they have the same full multiset of eigenvalues (including $0$).
-::: {.proof}
-<1>1 plus the fact that both have $n$ eigenvalues counted with multiplicity, and the zero eigenvalue has the same multiplicity in both (equal to $n$ minus the number of nonzero eigenvalues).
 :::
 
-<1>3. $|A| = (A^H A)^{1/2}$ and $|A^H| = (A A^H)^{1/2}$.
-::: {.proof}
+::: {.pf-step #ahsa-aah-same-full-spectrum-when-square}
+When $m = n$, $A^H A$ and $A A^H$ are both $n \times n$, so they have the same full multiset of eigenvalues (including $0$).
+
+::: pf-proof
+Step [](#ahsa-aah-same-nonzero-eigenvalues){.pf-ref} plus the fact that both have $n$ eigenvalues counted with multiplicity, and the zero eigenvalue has the same multiplicity in both (equal to $n$ minus the number of nonzero eigenvalues).
+:::
+
+:::
+
+::: {.pf-step #modulus-formulas-for-a-and-ah}
+$|A| = (A^H A)^{1/2}$ and $|A^H| = (A A^H)^{1/2}$.
+
+::: pf-proof
 definition, since $(A^H)^H A^H = A A^H$.
 :::
 
-<1>4. $|A|$ and $|A^H|$ are both positive semidefinite Hermitian matrices with the same eigenvalues.
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. Hence $|A|$ and $|A^H|$ are unitarily similar (in particular, similar).
-::: {.proof}
+::: {.pf-step #modulus-and-adjoint-modulus-same-eigenvalues}
+$|A|$ and $|A^H|$ are both positive semidefinite Hermitian matrices with the same eigenvalues.
+
+::: pf-proof
+Steps [](#ahsa-aah-same-full-spectrum-when-square){.pf-ref} and [](#modulus-formulas-for-a-and-ah){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #modulus-and-adjoint-modulus-similar}
+Hence $|A|$ and $|A^H|$ are unitarily similar (in particular, similar).
+
+::: pf-proof
 two Hermitian matrices are unitarily similar iff they have the same eigenvalues (both are unitarily diagonalizable with the same diagonal).
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>4 (part (a)) and <1>5 (part (b)).
 :::
+
+::: pf-qed
+Step [](#eigenvalues-of-modulus-are-singular-values){.pf-ref} (part (a)) and step [](#modulus-and-adjoint-modulus-similar){.pf-ref} (part (b)).
+:::
+
+:::
+
 :::

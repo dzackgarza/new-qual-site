@@ -50,13 +50,16 @@ On the chart $u\ne0$, put $t=v/u$, so $y=xt$.
 On the chart $v\ne0$, put $s=u/v$, so $x=ys$.
 For a curve of multiplicity $m$ at the origin, substituting in either chart produces a factor $x^m$ or $y^m$; removing that exceptional factor gives the strict-transform equation.
 
-<1>1. Blowing up the node
+::: pf
+
+::: {.pf-step #node-blowup-separates-branches}
+Blowing up the node
 $$
 xy=x^6+y^6
 $$
 separates its two branches into two nonsingular points above the origin.
 
-::: {.proof}
+::: pf-proof
 On the chart $y=xt$, the equation becomes
 $$
 x^2t=x^6+x^6t^6,
@@ -82,13 +85,16 @@ Away from the exceptional divisor the blowup is an isomorphism, and [[P-AGH51PLA
 Thus its strict transform is nonsingular.
 :::
 
-<1>2. Blowing up the cusp at the origin of
+:::
+
+::: {.pf-step #cusp-quartic-blowup-nonsingular}
+Blowing up the cusp at the origin of
 $$
 x^3=y^2+x^4+y^4
 $$
 gives a nonsingular point above the cusp.
 
-::: {.proof}
+::: pf-proof
 The tangent direction is $y=0$, so use $y=xt$.
 Substitution gives
 $$
@@ -110,9 +116,12 @@ Hence the whole strict transform is nonsingular whenever the original curve has 
 In characteristics $7$ and $13$, the two additional singular points found on that card lie away from the origin and remain singular after this blowup.
 :::
 
-<1>3. More generally, blowing up any node produces two distinct nonsingular points above it.
+:::
 
-::: {.proof}
+::: {.pf-step #general-node-two-points}
+More generally, blowing up any node produces two distinct nonsingular points above it.
+
+::: pf-proof
 Translate the node to the origin.
 Its multiplicity is two and its tangent cone is the product of two distinct linear forms.
 After an invertible linear change of coordinates, write
@@ -143,13 +152,16 @@ $$
 with both $P_i$ nonsingular on the strict transform, proving part (2).
 :::
 
-<1>4. Blowing up the tacnode
+:::
+
+::: {.pf-step #tacnode-blowup-gives-node}
+Blowing up the tacnode
 $$
 x^2=x^4+y^4
 $$
 once produces a node.
 
-::: {.proof}
+::: pf-proof
 The tacnode has double tangent line $x=0$, so use the chart $x=ys$.
 The equation becomes
 $$
@@ -166,17 +178,20 @@ s^2-y^2=(s-y)(s+y).
 $$
 Because the tacnode exercise assumes $\operatorname{char}k\ne2$, these are two distinct tangent directions.
 The point therefore has multiplicity two and distinct tangents: it is a node.
-Step <1>3 shows that one further blowup resolves it.
+Step [](#general-node-two-points){.pf-ref} shows that one further blowup resolves it.
 This proves part (3).
 :::
 
-<1>5. The origin of
+:::
+
+::: {.pf-step #cusp-y3x5-first-blowup}
+The origin of
 $$
 Y=V(y^3-x^5)
 $$
 has multiplicity three, and its first blowup produces an ordinary cusp.
 
-::: {.proof}
+::: pf-proof
 The first nonzero homogeneous part of $y^3-x^5$ is $y^3$, so
 $$
 \boxed{\mu_O(Y)=3.}
@@ -200,9 +215,12 @@ $$
 Thus the triple point becomes a cuspidal double point after one blowup.
 :::
 
-<1>6. A second blowup resolves the cusp from step <1>5.
+:::
 
-::: {.proof}
+::: {.pf-step #cusp-y3x5-second-blowup}
+A second blowup resolves the cusp from step [](#cusp-y3x5-first-blowup){.pf-ref}.
+
+::: pf-proof
 For the cusp $t^3=x^2$, the tangent line is $x=0$.
 On the blowup chart adapted to that tangent, put
 $$
@@ -221,16 +239,18 @@ Away from that point the blowup is an isomorphism and the preceding strict trans
 Hence the second blowup resolves the singularity, completing part (4).
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 establish the requested explicit node and cusp calculations in part (1), with the necessary characteristic qualification for the cusp quartic.
-Step <1>3 proves the general node statement in part (2), step <1>4 proves part (3), and steps <1>5--<1>6 prove part (4).
+::: pf-qed
+Steps [](#node-blowup-separates-branches){.pf-ref} and [](#cusp-quartic-blowup-nonsingular){.pf-ref} establish the requested explicit node and cusp calculations in part (1), with the necessary characteristic qualification for the cusp quartic.
+Step [](#general-node-two-points){.pf-ref} proves the general node statement in part (2), step [](#tacnode-blowup-gives-node){.pf-ref} proves part (3), and steps [](#cusp-y3x5-first-blowup){.pf-ref} and [](#cusp-y3x5-second-blowup){.pf-ref} prove part (4).
+:::
+
 :::
 :::
 
 ::: {.remark title="Characteristic exception inherited from Exercise I.5.1"}
 Under only the source's assumption $\operatorname{char}k\ne2$, the cusp quartic in part (1) has two additional singular points in characteristics $7$ and $13$.
 Blowing up the origin is an isomorphism near those points, so it cannot make the entire strict transform nonsingular in those characteristics.
-The chart computation in step <1>2 proves that the singularity over the origin itself is resolved in every characteristic different from $2$; the global nonsingularity assertion requires excluding $7$ and $13$ as well.
+The chart computation in step [](#cusp-quartic-blowup-nonsingular){.pf-ref} proves that the singularity over the origin itself is resolved in every characteristic different from $2$; the global nonsingularity assertion requires excluding $7$ and $13$ as well.
 :::

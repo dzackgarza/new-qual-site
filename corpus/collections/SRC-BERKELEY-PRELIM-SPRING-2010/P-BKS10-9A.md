@@ -32,12 +32,16 @@ for $x>0$.
 :::
 
 ::: {.solution}
-<1>1. The differential equation is equivalent to
+
+::: pf
+
+::: {.pf-step #equivalent-derivative-form}
+The differential equation is equivalent to
 $$
 (xy)'=x.
 $$
 
-::: {.proof}
+::: pf-proof
 By the product rule,
 $$
 (xy)'=xy'+y.
@@ -49,7 +53,10 @@ $$
 is exactly the displayed derivative identity.
 :::
 
-<1>2. Every solution on $(0,\infty)$ has the form
+:::
+
+::: {.pf-step #general-solution-form}
+Every solution on $(0,\infty)$ has the form
 $$
 \boxed{
 y(x)=\frac{x}{2}+\frac{C}{x}
@@ -57,8 +64,8 @@ y(x)=\frac{x}{2}+\frac{C}{x}
 $$
 for some constant $C\in\RR$.
 
-::: {.proof}
-Integrating the identity in step <1>1 on the connected interval
+::: pf-proof
+Integrating the identity in step [](#equivalent-derivative-form){.pf-ref} on the connected interval
 $(0,\infty)$ gives
 $$
 xy
@@ -71,9 +78,12 @@ y(x)=\frac{x}{2}+\frac{C}{x}.
 $$
 :::
 
-<1>3. Every function displayed in step <1>2 is a solution.
+:::
 
-::: {.proof}
+::: {.pf-step #form-satisfies-equation}
+Every function displayed in step [](#general-solution-form){.pf-ref} is a solution.
+
+::: pf-proof
 For
 $$
 y(x)=\frac{x}{2}+\frac{C}{x},
@@ -94,9 +104,12 @@ x.
 $$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3 give exactly all solutions on $x>0$.
 :::
+
+::: pf-qed
+Steps [](#general-solution-form){.pf-ref} and [](#form-satisfies-equation){.pf-ref} give exactly all solutions on $x>0$.
+:::
+
+:::
+
 :::

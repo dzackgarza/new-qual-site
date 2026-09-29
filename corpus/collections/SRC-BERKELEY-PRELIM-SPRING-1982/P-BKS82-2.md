@@ -30,10 +30,13 @@ Let $S\subset\mathbb R^n$ be uncountable. Prove that there is a sequence of dist
 Let $\mathcal B$ be the family of open balls in $\RR^n$ whose centers lie
 in $\QQ^n$ and whose radii are positive rational numbers.
 
-<1>1. The family $\mathcal B$ is a countable basis for the topology of
+::: pf
+
+::: {.pf-step #countable-basis}
+The family $\mathcal B$ is a countable basis for the topology of
 $\RR^n$.
 
-::: {.proof}
+::: pf-proof
 Both $\QQ^n$ and $\QQ_{>0}$ are countable, so $\mathcal B$ is countable.
 If $U\subset\RR^n$ is open and $x\in U$, choose $\varepsilon>0$ with
 $B(x,\varepsilon)\subset U$. Density of $\QQ^n$ gives
@@ -52,14 +55,17 @@ $$
 Thus $\mathcal B$ is a basis.
 :::
 
-<1>2. Some point $x\in S$ is not isolated in $S$.
+:::
 
-::: {.proof}
+::: {.pf-step #nonisolated-point-exists}
+Some point $x\in S$ is not isolated in $S$.
+
+::: pf-proof
 Suppose every point of $S$ were isolated. Enumerate the countable basis as
 $$
 \mathcal B=\{B_1,B_2,\ldots\}.
 $$
-For each $x\in S$, isolation and step <1>1 give at least one basis element
+For each $x\in S$, isolation and step [](#countable-basis){.pf-ref} give at least one basis element
 $B_j$ such that
 $$
 x\in B_j
@@ -76,10 +82,13 @@ is an injection from $S$ into $\NN$, contradicting that $S$ is
 uncountable.
 :::
 
-<1>3. Every neighborhood of the point $x$ from step <1>2 contains
+:::
+
+::: {.pf-step #every-neighborhood-infinite}
+Every neighborhood of the point $x$ from step [](#nonisolated-point-exists){.pf-ref} contains
 infinitely many points of $S$ distinct from $x$.
 
-::: {.proof}
+::: pf-proof
 Suppose some neighborhood $U$ of $x$ met $S\setminus\{x\}$ in only
 finitely many points. Choose $\varepsilon>0$ with
 $B(x,\varepsilon)\subset U$. If
@@ -105,11 +114,14 @@ gives
 $$
 B(x,\delta)\cap S=\{x\},
 $$
-contradicting step <1>2. If there are no such $y_i$, the ball
+contradicting step [](#nonisolated-point-exists){.pf-ref}. If there are no such $y_i$, the ball
 $B(x,\varepsilon)$ itself isolates $x$, giving the same contradiction.
 :::
 
-<1>4. There is a sequence of distinct points
+:::
+
+::: {.pf-step #distinct-sequence-constructed}
+There is a sequence of distinct points
 $$
 x_k\in S\setminus\{x\}
 $$
@@ -119,9 +131,9 @@ $$
 $$
 for every $k\ge1$.
 
-::: {.proof}
+::: pf-proof
 Choose the points recursively. After distinct
-$x_1,\ldots,x_{k-1}$ have been chosen, step <1>3 says that
+$x_1,\ldots,x_{k-1}$ have been chosen, step [](#every-neighborhood-infinite){.pf-ref} says that
 $$
 B(x,1/k)\cap(S\setminus\{x\})
 $$
@@ -129,21 +141,26 @@ is infinite. Removing the finitely many previously chosen points leaves a
 nonempty set, so one may choose $x_k$ from it.
 :::
 
-<1>5. The sequence from step <1>4 consists of distinct points of $S$ and
+:::
+
+::: {.pf-step #sequence-converges}
+The sequence from step [](#distinct-sequence-constructed){.pf-ref} consists of distinct points of $S$ and
 converges to the point $x\in S$.
 
-::: {.proof}
+::: pf-proof
 Distinctness is part of the recursive construction. Moreover,
 $$
 0\le\norm{x_k-x}<\frac1k\longrightarrow0,
 $$
-so $x_k\to x$. Since step <1>2 chose $x\in S$, the limit belongs to
+so $x_k\to x$. Since step [](#nonisolated-point-exists){.pf-ref} chose $x\in S$, the limit belongs to
 $S$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required sequence and limit.
+::: pf-qed
+Step [](#sequence-converges){.pf-ref} is the required sequence and limit.
+:::
+
 :::
 :::

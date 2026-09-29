@@ -44,12 +44,15 @@ A=
 \end{pmatrix}.
 $$
 
-<1>1. The characteristic polynomial of $A$ is
+::: pf
+
+::: {.pf-step #characteristic-polynomial}
+The characteristic polynomial of $A$ is
 $$
 \chi_A(t)=(t-2)^2(t-5).
 $$
 
-::: {.proof}
+::: pf-proof
 The matrix $tI-A$ is block lower triangular with upper-left block
 $$
 \begin{pmatrix}
@@ -76,7 +79,10 @@ t-4&-1\\
 $$
 :::
 
-<1>2. The eigenspace for the eigenvalue $2$ is one-dimensional:
+:::
+
+::: {.pf-step #eigenspace-for-two}
+The eigenspace for the eigenvalue $2$ is one-dimensional:
 $$
 \ker(A-2I)
 =
@@ -90,7 +96,7 @@ $$
 \right\}.
 $$
 
-::: {.proof}
+::: pf-proof
 One has
 $$
 A-2I
@@ -112,7 +118,10 @@ $$
 Thus $y=-2x$ and $z=5x$, giving the stated one-dimensional eigenspace.
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #jordan-chain-for-two}
+If
 $$
 v\coloneqq
 \begin{pmatrix}
@@ -135,8 +144,8 @@ $$
 (A-2I)w=v.
 $$
 
-::: {.proof}
-The first identity is step <1>2. Direct multiplication gives
+::: pf-proof
+The first identity is step [](#eigenspace-for-two){.pf-ref}. Direct multiplication gives
 $$
 (A-2I)w
 =
@@ -150,7 +159,10 @@ $$
 Thus $(v,w)$ is a Jordan chain of length $2$ for the eigenvalue $2$.
 :::
 
-<1>4. The vector
+:::
+
+::: {.pf-step #eigenvector-for-five}
+The vector
 $$
 u\coloneqq
 \begin{pmatrix}
@@ -161,14 +173,17 @@ u\coloneqq
 $$
 is an eigenvector for the eigenvalue $5$.
 
-::: {.proof}
+::: pf-proof
 The third column of $A$ is $(0,0,5)^T$, so
 $$
 Au=5u.
 $$
 :::
 
-<1>5. The vectors $v,w,u$ form a basis of $\RR^3$, and in this basis the
+:::
+
+::: {.pf-step #jordan-form-boxed}
+The vectors $v,w,u$ form a basis of $\RR^3$, and in this basis the
 matrix of $A$ is
 $$
 \boxed{
@@ -180,13 +195,13 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The vectors $v$ and $w$ are linearly independent because
 $(A-2I)w=v\ne0$ while $(A-2I)v=0$. Their span is the generalized
 $2$-eigenspace. The vector $u$ is a $5$-eigenvector, so it does not lie in
 that generalized $2$-eigenspace; hence $v,w,u$ are linearly independent.
 
-By steps <1>3 and <1>4,
+By steps [](#jordan-chain-for-two){.pf-ref} and [](#eigenvector-for-five){.pf-ref},
 $$
 Av=2v,
 \qquad
@@ -199,9 +214,11 @@ $(v,w,u)$ are $(2,0,0)^T$, $(1,2,0)^T$, and $(0,0,5)^T$, respectively,
 which gives the displayed Jordan matrix.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the real Jordan canonical form of $A$.
+::: pf-qed
+Step [](#jordan-form-boxed){.pf-ref} is the real Jordan canonical form of $A$.
+:::
+
 :::
 :::

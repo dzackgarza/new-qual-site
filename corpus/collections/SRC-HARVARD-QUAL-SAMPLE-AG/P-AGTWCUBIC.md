@@ -39,7 +39,10 @@ Let $C\subseteq\mathbb P^3$ be the projective closure of the affine twisted cubi
 [s:t]\longmapsto[s^3:s^2t:st^2:t^3].
 \]
 
-<1>1. The three quadrics
+::: pf
+
+::: {.pf-step #three-quadrics-cut-out-c}
+The three quadrics
 \[
 q_1=xz-y^2,
 \qquad
@@ -48,7 +51,8 @@ q_2=xw-yz,
 q_3=yw-z^2.
 \]
 cut out $C$ set-theoretically.
-::: {.proof}
+
+::: pf-proof
 Each $q_i$ vanishes on the parametrization, so
 \[
 C\subseteq V(q_1,q_2,q_3).
@@ -82,7 +86,10 @@ V(q_1,q_2,q_3)=C
 set-theoretically.
 :::
 
-<1>2. Define a quadric and a cubic by
+:::
+
+::: {.pf-step #f-g-cut-out-c}
+Define a quadric and a cubic by
 \[
 F=y^2-xz
 \]
@@ -95,7 +102,8 @@ Then
 \boxed{C=V(F,G)}
 \]
 set-theoretically.
-::: {.proof}
+
+::: pf-proof
 Since
 \[
 F=-q_1
@@ -137,7 +145,7 @@ Hence $A=0$, and then $B=0$.  Thus
 \[
 q_1=q_2=q_3=0,
 \]
-so <1>1 gives $P\in C$.
+so step [](#three-quadrics-cut-out-c){.pf-ref} gives $P\in C$.
 
 If $x=0$, then $F=0$ gives $y=0$, and $G=0$ becomes
 \[
@@ -150,8 +158,12 @@ P=[0:0:0:1]\in C.
 Therefore $V(F,G)=C$ as sets.
 :::
 
-<1>3. The twisted cubic is not the scheme-theoretic intersection of two surfaces in $\mathbb P^3$.
-::: {.proof}
+:::
+
+::: {.pf-step #not-scheme-theoretic-intersection}
+The twisted cubic is not the scheme-theoretic intersection of two surfaces in $\mathbb P^3$.
+
+::: pf-proof
 Suppose instead that
 \[
 C=V(H_1,H_2)
@@ -191,14 +203,21 @@ a_0=a_1=a_2=a_3=0.
 Thus no plane contains $C$, a contradiction.
 :::
 
-<1>4. Equivalently, the pair $(F,G)$ from <1>2 cuts out a nonreduced scheme supported on $C$, rather than the twisted cubic scheme itself.
-::: {.proof}
-Step <1>2 proves that the reduced closed subscheme underlying $V(F,G)$ is $C$.  If $V(F,G)$ itself were the twisted cubic scheme, then $C$ would be the scheme-theoretic complete intersection of a quadric and a cubic, contradicting <1>3.  Thus $V(F,G)$ has underlying set $C$ and a nonreduced scheme structure along $C$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>2 proves the set-theoretic intersection statement, and step <1>3 proves the failure of scheme-theoretic complete intersection.
+::: pf-step
+Equivalently, the pair $(F,G)$ from step [](#f-g-cut-out-c){.pf-ref} cuts out a nonreduced scheme supported on $C$, rather than the twisted cubic scheme itself.
+
+::: pf-proof
+Step [](#f-g-cut-out-c){.pf-ref} proves that the reduced closed subscheme underlying $V(F,G)$ is $C$.  If $V(F,G)$ itself were the twisted cubic scheme, then $C$ would be the scheme-theoretic complete intersection of a quadric and a cubic, contradicting step [](#not-scheme-theoretic-intersection){.pf-ref}.  Thus $V(F,G)$ has underlying set $C$ and a nonreduced scheme structure along $C$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#f-g-cut-out-c){.pf-ref} proves the set-theoretic intersection statement, and step [](#not-scheme-theoretic-intersection){.pf-ref} proves the failure of scheme-theoretic complete intersection.
+:::
+
 :::
 :::
 

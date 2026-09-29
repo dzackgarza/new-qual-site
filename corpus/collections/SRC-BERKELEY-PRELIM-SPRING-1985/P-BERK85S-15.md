@@ -37,12 +37,15 @@ Find a cubic polynomial with integer coefficients having $\alpha$ as a root.
 :::
 
 ::: {.solution}
-<1>1. Since $\zeta$ is a primitive seventh root of unity,
+::: pf
+
+::: {.pf-step #cyclotomic-relation}
+Since $\zeta$ is a primitive seventh root of unity,
 $$
 1+\zeta+\zeta^2+\zeta^3+\zeta^4+\zeta^5+\zeta^6=0.
 $$
 
-::: {.proof}
+::: pf-proof
 One has $\zeta^7=1$ and $\zeta\neq1$. Hence
 $$
 0
@@ -53,7 +56,10 @@ $$
 $$
 :::
 
-<1>2. Dividing the relation in step <1>1 by $\zeta^3$ gives
+:::
+
+::: {.pf-step #divided-relation}
+Dividing the relation in step [](#cyclotomic-relation){.pf-ref} by $\zeta^3$ gives
 $$
 (\zeta^3+\zeta^{-3})
 +
@@ -64,7 +70,7 @@ $$
 =0.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $\zeta^7=1$,
 $$
 \zeta^{-1}=\zeta^6,
@@ -76,7 +82,10 @@ $$
 The displayed equation is exactly the divided cyclotomic relation.
 :::
 
-<1>3. In terms of $\alpha=\zeta+\zeta^{-1}$,
+:::
+
+::: {.pf-step #alpha-power-identities}
+In terms of $\alpha=\zeta+\zeta^{-1}$,
 $$
 \zeta^2+\zeta^{-2}
 =
@@ -89,7 +98,7 @@ $$
 \alpha^3-3\alpha.
 $$
 
-::: {.proof}
+::: pf-proof
 Squaring $\alpha$ gives
 $$
 \alpha^2
@@ -107,13 +116,16 @@ $$
 Rearranging gives both identities.
 :::
 
-<1>4. The number $\alpha$ is a root of
+:::
+
+::: {.pf-step #cubic-boxed}
+The number $\alpha$ is a root of
 $$
 \boxed{p(x)=x^3+x^2-2x-1\in\ZZ[x]}.
 $$
 
-::: {.proof}
-Substitute the identities from step <1>3 into step <1>2:
+::: pf-proof
+Substitute the identities from step [](#alpha-power-identities){.pf-ref} into step [](#divided-relation){.pf-ref}:
 $$
 (\alpha^3-3\alpha)
 +
@@ -129,9 +141,11 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the requested cubic polynomial with integer coefficients.
+::: pf-qed
+Step [](#cubic-boxed){.pf-ref} gives the requested cubic polynomial with integer coefficients.
+:::
+
 :::
 :::

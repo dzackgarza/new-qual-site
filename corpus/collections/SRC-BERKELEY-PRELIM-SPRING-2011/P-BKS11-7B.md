@@ -36,24 +36,30 @@ z=x+iy,
 $$
 be holomorphic.
 
-<1>1. The real and imaginary parts satisfy the Cauchy--Riemann equations
+::: pf
+
+::: pf-step
+The real and imaginary parts satisfy the Cauchy--Riemann equations
 $$
 u_x=v_y,
 \qquad
 u_y=-v_x.
 $$
 
-::: {.proof}
+::: pf-proof
 These are the Cauchy--Riemann equations for the holomorphic function
 $h=u+iv$.
 :::
 
-<1>2. The real part $u$ is harmonic:
+:::
+
+::: {.pf-step #u-harmonic}
+The real part $u$ is harmonic:
 $$
 u_{xx}+u_{yy}=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Holomorphic functions are smooth, so the required second derivatives
 exist and mixed partials commute. Differentiate
 $$
@@ -78,12 +84,15 @@ $$
 their sum is zero.
 :::
 
-<1>3. The imaginary part $v$ is harmonic:
+:::
+
+::: {.pf-step #v-harmonic}
+The imaginary part $v$ is harmonic:
 $$
 v_{xx}+v_{yy}=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Rewrite the Cauchy--Riemann equations as
 $$
 v_x=-u_y,
@@ -100,7 +109,10 @@ $$
 Equality of the mixed partials of $u$ yields the claim.
 :::
 
-<1>4. The polynomials
+:::
+
+::: {.pf-step #pq-harmonic}
+The polynomials
 $$
 P(x,y)
 \coloneqq
@@ -114,7 +126,7 @@ Q(x,y)
 $$
 are real homogeneous harmonic polynomials of degree $6$.
 
-::: {.proof}
+::: pf-proof
 The holomorphic polynomial
 $$
 z^6=(x+iy)^6
@@ -128,13 +140,16 @@ $$
 \operatorname{Im}(z^6)=Q(x,y).
 $$
 Every monomial displayed has total degree $6$, so both polynomials are
-homogeneous of degree $6$. Steps <1>2 and <1>3 show that the real and
+homogeneous of degree $6$. Steps [](#u-harmonic){.pf-ref} and [](#v-harmonic){.pf-ref} show that the real and
 imaginary parts of a holomorphic function are harmonic.
 :::
 
-<1>5. The polynomials $P$ and $Q$ are linearly independent over $\RR$.
+:::
 
-::: {.proof}
+::: {.pf-step #pq-independent}
+The polynomials $P$ and $Q$ are linearly independent over $\RR$.
+
+::: pf-proof
 The coefficient of $x^6$ in $P$ is $1$, while the coefficient of $x^6$
 in $Q$ is $0$. Hence a relation
 $$
@@ -143,11 +158,14 @@ $$
 forces $a=0$. Since $Q\neq0$, it then forces $b=0$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 prove the harmonicity assertion, while steps <1>4 and
-<1>5 provide the required pair of linearly independent real homogeneous
+::: pf-qed
+Steps [](#u-harmonic){.pf-ref} and [](#v-harmonic){.pf-ref} prove the harmonicity assertion, while steps [](#pq-harmonic){.pf-ref} and
+[](#pq-independent){.pf-ref} provide the required pair of linearly independent real homogeneous
 harmonic polynomials of degree $6$.
 :::
+
+:::
+
 :::

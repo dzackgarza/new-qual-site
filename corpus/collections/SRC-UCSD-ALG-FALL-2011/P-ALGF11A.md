@@ -44,8 +44,12 @@ this action gives a homomorphism
 \rho:G\longrightarrow S_5.
 \]
 
-<1>1. The homomorphism \(\rho\) is nontrivial.
-::: {.proof}
+::: pf
+
+::: {.pf-step #rho-nontrivial}
+The homomorphism \(\rho\) is nontrivial.
+
+::: pf-proof
 If \(\rho\) were trivial, every \(g\in G\) would fix the coset \(H\).
 Thus
 \[
@@ -56,8 +60,12 @@ Hence \(G=H\), contradicting \(|G|=60\) and \(|H|=12\).
 Therefore \(\rho\) is nontrivial.
 :::
 
-<1>2. The homomorphism \(\rho\) is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #rho-injective}
+The homomorphism \(\rho\) is injective.
+
+::: pf-proof
 The kernel
 \[
 \ker\rho
@@ -67,7 +75,7 @@ Hence
 \[
 \ker\rho\in\{1,G\}.
 \]
-By <1>1, \(\rho\) is nontrivial, so \(\ker\rho\neq G\).
+By step [](#rho-nontrivial){.pf-ref}, \(\rho\) is nontrivial, so \(\ker\rho\neq G\).
 Therefore
 \[
 \ker\rho=1,
@@ -75,13 +83,17 @@ Therefore
 and \(\rho\) is injective.
 :::
 
-<1>3. The image \(\rho(G)\) is contained in \(A_5\).
-::: {.proof}
+:::
+
+::: {.pf-step #image-in-a5}
+The image \(\rho(G)\) is contained in \(A_5\).
+
+::: pf-proof
 Consider the sign homomorphism restricted to the image:
 \[
 \operatorname{sgn}|_{\rho(G)}:\rho(G)\longrightarrow\{\pm1\}.
 \]
-Because \(\rho:G\to\rho(G)\) is an isomorphism by <1>2, the group \(\rho(G)\) is simple.
+Because \(\rho:G\to\rho(G)\) is an isomorphism by step [](#rho-injective){.pf-ref}, the group \(\rho(G)\) is simple.
 If the restricted sign map were nontrivial, its kernel would be a normal subgroup of index \(2\) in \(\rho(G)\), hence a nontrivial proper normal subgroup.
 This contradicts simplicity.
 Thus the restricted sign map is trivial, so every element of \(\rho(G)\) is even and
@@ -90,8 +102,12 @@ Thus the restricted sign map is trivial, so every element of \(\rho(G)\) is even
 \]
 :::
 
-<1>4. Hence \(G\cong A_5\).
-::: {.proof}
+:::
+
+::: pf-step
+Hence \(G\cong A_5\).
+
+::: pf-proof
 By injectivity,
 \[
 |\rho(G)|=|G|=60.
@@ -100,7 +116,7 @@ Also
 \[
 |A_5|=\frac{5!}{2}=60.
 \]
-By <1>3, \(\rho(G)\subseteq A_5\), and the two finite groups have the same order.
+By step [](#image-in-a5){.pf-ref}, \(\rho(G)\subseteq A_5\), and the two finite groups have the same order.
 Therefore
 \[
 \rho(G)=A_5.
@@ -109,5 +125,9 @@ Since \(\rho\) is injective,
 \[
 G\cong A_5.
 \]
+:::
+
+:::
+
 :::
 :::

@@ -39,14 +39,20 @@ $$
 F(x)\coloneqq\int_0^1 f(x+t)\,dt.
 $$
 
-<1>1. The function $f$ is uniformly continuous on $[a,b+1]$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-uniformly-continuous}
+The function $f$ is uniformly continuous on $[a,b+1]$.
+
+::: pf-proof
 The interval $[a,b+1]$ is compact and $f$ is continuous on
 $\mathbb R$. Therefore the Heine--Cantor theorem applies.
 :::
 
-<1>2. Define the modulus
+:::
+
+::: {.pf-step #modulus-vanishes}
+Define the modulus
 $$
 \omega(\delta)
 \coloneqq
@@ -62,12 +68,15 @@ $$
 \qquad(\delta\downarrow0).
 $$
 
-::: {.proof}
-This is exactly the uniform continuity from step <1>1, written in
+::: pf-proof
+This is exactly the uniform continuity from step [](#f-uniformly-continuous){.pf-ref}, written in
 terms of the modulus of continuity.
 :::
 
-<1>3. For every $x\in[a,b]$,
+:::
+
+::: {.pf-step #fn-as-riemann-sum}
+For every $x\in[a,b]$,
 $$
 f_n(x)
 =
@@ -76,7 +85,7 @@ f_n(x)
 f\left(x+\frac{k}{n}\right)\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
 Each interval of integration has length $1/n$, so its $k$th term is
 $$
 \frac1n f\left(x+\frac{k}{n}\right).
@@ -84,15 +93,18 @@ $$
 Summing gives the definition of $f_n(x)$.
 :::
 
-<1>4. For every $x\in[a,b]$,
+:::
+
+::: {.pf-step #pointwise-difference-bound}
+For every $x\in[a,b]$,
 $$
 \abs{f_n(x)-F(x)}
 \leq
 \omega\left(\frac1n\right).
 $$
 
-::: {.proof}
-By step <1>3 and by splitting the integral defining $F$ over the same
+::: pf-proof
+By step [](#fn-as-riemann-sum){.pf-ref} and by splitting the integral defining $F$ over the same
 partition,
 $$
 \begin{aligned}
@@ -126,19 +138,25 @@ most $\omega(1/n)$, and the total length of all subintervals is $1$.
 This yields the claimed bound.
 :::
 
-<1>5. The sequence $(f_n)$ converges uniformly to $F$ on $[a,b]$.
+:::
 
-::: {.proof}
-Taking the supremum in step <1>4 gives
+::: {.pf-step #uniform-convergence-on-interval}
+The sequence $(f_n)$ converges uniformly to $F$ on $[a,b]$.
+
+::: pf-proof
+Taking the supremum in step [](#pointwise-difference-bound){.pf-ref} gives
 $$
 \sup_{x\in[a,b]}\abs{f_n(x)-F(x)}
 \leq
 \omega\left(\frac1n\right).
 $$
-By step <1>2, the right-hand side tends to $0$.
+By step [](#modulus-vanishes){.pf-ref}, the right-hand side tends to $0$.
 :::
 
-<1>6. Therefore, on every finite interval,
+:::
+
+::: {.pf-step #conclusion-boxed}
+Therefore, on every finite interval,
 $$
 \boxed{
 f_n(x)\longrightarrow
@@ -147,14 +165,16 @@ f_n(x)\longrightarrow
 $$
 uniformly.
 
-::: {.proof}
-The interval $[a,b]$ was arbitrary, and step <1>5 proves uniform
+::: pf-proof
+The interval $[a,b]$ was arbitrary, and step [](#uniform-convergence-on-interval){.pf-ref} proves uniform
 convergence on it.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the required conclusion.
+::: pf-qed
+Step [](#conclusion-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

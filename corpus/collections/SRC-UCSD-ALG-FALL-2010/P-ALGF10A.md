@@ -36,11 +36,15 @@ H=\langle r_1,\ldots,r_m\rangle\subseteq (\mathbb Q,+)
 \]
 be finitely generated.
 
-<1>1. There is a positive integer \(D\) such that
+::: pf
+
+::: {.pf-step #common-denominator}
+There is a positive integer \(D\) such that
 \[
 H\subseteq \frac1D\mathbb Z.
 \]
-::: {.proof}
+
+::: pf-proof
 Write
 \[
 r_i=\frac{a_i}{b_i}
@@ -58,8 +62,12 @@ r_i=\frac{c_i}{D}.
 Every element of \(H\) is an integral linear combination of the \(r_i\), hence belongs to \(D^{-1}\mathbb Z\).
 :::
 
-<1>2. Every subgroup of \(D^{-1}\mathbb Z\) is cyclic.
-::: {.proof}
+:::
+
+::: {.pf-step #subgroups-of-d-inverse-z-cyclic}
+Every subgroup of \(D^{-1}\mathbb Z\) is cyclic.
+
+::: pf-proof
 The map
 \[
 D^{-1}\mathbb Z\longrightarrow\mathbb Z,
@@ -76,8 +84,16 @@ for some integer \(d\ge0\): if the subgroup is nonzero, take its least positive 
 Therefore every subgroup of \(D^{-1}\mathbb Z\) is cyclic.
 :::
 
-<1>3. Hence \(H\) is cyclic.
-::: {.proof}
-By <1>1, \(H\) is a subgroup of \(D^{-1}\mathbb Z\), and by <1>2 every such subgroup is cyclic.
+:::
+
+::: pf-step
+Hence \(H\) is cyclic.
+
+::: pf-proof
+By step [](#common-denominator){.pf-ref}, \(H\) is a subgroup of \(D^{-1}\mathbb Z\), and by step [](#subgroups-of-d-inverse-z-cyclic){.pf-ref} every such subgroup is cyclic.
+:::
+
+:::
+
 :::
 :::

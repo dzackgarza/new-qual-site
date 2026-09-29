@@ -61,7 +61,10 @@ $$
 H=-K_S=3h-e_1-\cdots-e_6.
 $$
 
-<1>1. If
+::: pf
+
+::: {.pf-step #degree-genus-formula}
+If
 $$
 D=ah-\sum_{i=1}^6b_i e_i,
 $$
@@ -73,7 +76,7 @@ $$
 g(C)=1+\frac{a^2-\sum_i b_i^2-\deg C}{2}.}
 $$
 
-::: {.proof}
+::: pf-proof
 The intersection form is
 $$
 h^2=1,
@@ -103,7 +106,10 @@ $$
 which is the stated genus formula.
 :::
 
-<1>2. The following nine divisor classes have exactly the requested
+:::
+
+::: {.pf-step #nine-divisor-classes}
+The following nine divisor classes have exactly the requested
 degree-genus pairs:
 $$
 \begin{aligned}
@@ -128,7 +134,7 @@ D_{10,11}
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
 For these classes, respectively,
 $$
 \begin{aligned}
@@ -137,7 +143,7 @@ $$
 &\qquad(14,40),(14,38),(14,36),(17,51).
 \end{aligned}
 $$
-Step <1>1 therefore gives
+Step [](#degree-genus-formula){.pf-ref} therefore gives
 $$
 \begin{aligned}
 (H\cdot D,D^2)
@@ -145,7 +151,7 @@ $$
 &\qquad(10,24),(10,26),(10,28),(10,30).
 \end{aligned}
 $$
-Applying the genus formula in step <1>1 gives, in the same order,
+Applying the genus formula in step [](#degree-genus-formula){.pf-ref} gives, in the same order,
 $$
 (d,g)
 =
@@ -154,10 +160,13 @@ $$
 $$
 :::
 
-<1>3. Every class in step <1>2 intersects each of the 27 lines on $S$
+:::
+
+::: {.pf-step #positive-line-intersections}
+Every class in step [](#nine-divisor-classes){.pf-ref} intersects each of the 27 lines on $S$
 positively.
 
-::: {.proof}
+::: pf-proof
 The 27 line classes on the cubic surface are
 $$
 E_i=e_i,
@@ -172,7 +181,7 @@ For a class
 $$
 D=ah-\sum_i b_i e_i
 $$
-from step <1>2, every $b_i$ is positive, so
+from step [](#nine-divisor-classes){.pf-ref}, every $b_i$ is positive, so
 $$
 D\cdot E_i=b_i>0.
 $$
@@ -206,25 +215,30 @@ $$
 for every $i$ in every case.
 :::
 
-<1>4. Each class in step <1>2 contains a nonsingular irreducible curve.
+:::
 
-::: {.proof}
-Step <1>2 shows that every one of the nine classes has positive
-self-intersection. Step <1>3 shows that it has nonnegative intersection with
+::: {.pf-step #nonsingular-irreducible-member}
+Each class in step [](#nine-divisor-classes){.pf-ref} contains a nonsingular irreducible curve.
+
+::: pf-proof
+Step [](#nine-divisor-classes){.pf-ref} shows that every one of the nine classes has positive
+self-intersection. Step [](#positive-line-intersections){.pf-ref} shows that it has nonnegative intersection with
 every line on the cubic surface. Therefore alternative (c) of
 [[P-AGH548IRREDCLASSES|Exercise V.4.8]] applies: each class contains a
 nonsingular irreducible curve.
 
-For such a curve, step <1>2 computes its degree and genus. Since the cubic
+For such a curve, step [](#nine-divisor-classes){.pf-ref} computes its degree and genus. Since the cubic
 surface is already embedded in $\PP^3$ by $|H|$, these are nonsingular curves
 in $\PP^3$ with precisely the degree-genus pairs requested in the problem.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 constructs a divisor class for each requested pair, step <1>3
+::: pf-qed
+Step [](#nine-divisor-classes){.pf-ref} constructs a divisor class for each requested pair, step [](#positive-line-intersections){.pf-ref}
 checks the line-intersection hypotheses needed for the cubic-surface
-existence criterion, and step <1>4 supplies the required nonsingular curves.
+existence criterion, and step [](#nonsingular-irreducible-member){.pf-ref} supplies the required nonsingular curves.
+:::
+
 :::
 :::

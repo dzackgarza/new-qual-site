@@ -40,9 +40,12 @@ F\coloneqq\{r\in K:i(r)=r\}
 $$
 be the fixed field.
 
-<1>1. One has $\QQ(y)\subseteq F$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #qy-in-fixed-field}
+One has $\QQ(y)\subseteq F$.
+
+::: pf-proof
 Since $i$ fixes $\QQ$ pointwise and
 $$
 i(y)
@@ -57,42 +60,51 @@ the automorphism $i$ fixes every rational function in $y$ with coefficients
 in $\QQ$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #degree-two}
+One has
 $$
 [K:\QQ(y)]=2.
 $$
 
-::: {.proof}
+::: pf-proof
 The element $x$ satisfies
 $$
 x^2-yx+1=0,
 $$
 so $[K:\QQ(y)]\leq2$. If the degree were $1$, then
-$x\in\QQ(y)$. Step <1>1 would then imply $i(x)=x$, but
+$x\in\QQ(y)$. Step [](#qy-in-fixed-field){.pf-ref} would then imply $i(x)=x$, but
 $$
 i(x)=x^{-1}\neq x
 $$
 in the rational function field $\QQ(x)$. Hence the degree is exactly $2$.
 :::
 
-<1>3. The fixed field $F$ is a proper subfield of $K$.
+:::
 
-::: {.proof}
+::: {.pf-step #fixed-field-proper}
+The fixed field $F$ is a proper subfield of $K$.
+
+::: pf-proof
 The element $x$ is not fixed by $i$, because $i(x)=x^{-1}\neq x$. Thus
 $x\notin F$, so $F\neq K$.
 :::
 
-<1>4. The fixed field is
+:::
+
+::: {.pf-step #fixed-field-formula}
+The fixed field is
 $$
 \boxed{F=\QQ(x+x^{-1})}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#qy-in-fixed-field){.pf-ref},
 $$
 \QQ(y)\subseteq F\subseteq K.
 $$
-Step <1>2 and the tower formula give
+Step [](#degree-two){.pf-ref} and the tower formula give
 $$
 2
 =
@@ -100,7 +112,7 @@ $$
 =
 [K:F][F:\QQ(y)].
 $$
-Step <1>3 gives $[K:F]>1$. Therefore
+Step [](#fixed-field-proper){.pf-ref} gives $[K:F]>1$. Therefore
 $$
 [K:F]=2,
 \qquad
@@ -109,9 +121,12 @@ $$
 and hence $F=\QQ(y)=\QQ(x+x^{-1})$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required description of the fixed subfield.
 :::
+
+::: pf-qed
+Step [](#fixed-field-formula){.pf-ref} is the required description of the fixed subfield.
+:::
+
+:::
+
 :::

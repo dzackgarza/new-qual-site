@@ -39,15 +39,24 @@ Show that both $A$ and the quotient $X/A$ are normal.
 :::
 
 ::: {.solution}
-<1>1. The closed subspace $A$ is Hausdorff.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #a-hausdorff}
+The closed subspace $A$ is Hausdorff.
+
+::: pf-proof
 A normal space is Hausdorff and separates disjoint closed sets by disjoint open sets; in particular $X$ is Hausdorff.
 Every subspace of a Hausdorff space is Hausdorff.
 Therefore $A$, with its subspace topology, is Hausdorff.
 :::
 
-<1>2. Any two disjoint closed subsets of $A$ have disjoint open neighborhoods in $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #a-separation}
+Any two disjoint closed subsets of $A$ have disjoint open neighborhoods in $A$.
+
+::: pf-proof
 Let $C,D\subseteq A$ be disjoint and closed in $A$.
 Since $A$ is closed in $X$, both $C$ and $D$ are closed in $X$.
 Normality of $X$ gives disjoint open subsets $U,V\subseteq X$ with
@@ -65,19 +74,27 @@ V\cap A
 are disjoint open subsets of $A$ containing $C$ and $D$, respectively.
 :::
 
-<1>3. Hence $A$ is normal.
-::: {.proof}
-Step <1>1 verifies the Hausdorff requirement, and <1>2 verifies separation of arbitrary disjoint closed subsets of $A$.
+:::
+
+::: {.pf-step #a-normal}
+Hence $A$ is normal.
+
+::: pf-proof
+Step [](#a-hausdorff){.pf-ref} verifies the Hausdorff requirement, and step [](#a-separation){.pf-ref} verifies separation of arbitrary disjoint closed subsets of $A$.
 These are the two conditions defining normality.
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #q-closed}
+Let
 \[
 q:X\longrightarrow X/A
 \]
 be the quotient map collapsing $A$ to one point.
 Then $q$ is a closed map.
-::: {.proof}
+
+::: pf-proof
 Let $C\subseteq X$ be closed.
 If $C\cap A=\varnothing$, then no additional point is introduced when one saturates $C$ under the quotient relation, so
 \[
@@ -94,11 +111,15 @@ Therefore $q(C)$ is closed in $X/A$.
 Thus $q$ is closed.
 :::
 
-<1>5. The quotient $X/A$ is a $T_1$ space.
-::: {.proof}
+:::
+
+::: {.pf-step #xa-t1}
+The quotient $X/A$ is a $T_1$ space.
+
+::: pf-proof
 Let $y\in X/A$ and choose $x\in X$ with $q(x)=y$.
 Since $X$ is Hausdorff, the singleton $\{x\}$ is closed in $X$.
-By <1>4, its image
+By step [](#q-closed){.pf-ref}, its image
 \[
 q(\{x\})=\{y\}
 \]
@@ -106,8 +127,12 @@ is closed in $X/A$.
 Hence every singleton in $X/A$ is closed, which is the $T_1$ property.
 :::
 
-<1>6. Any two disjoint closed subsets of $X/A$ have disjoint open neighborhoods.
-::: {.proof}
+:::
+
+::: {.pf-step #xa-separation}
+Any two disjoint closed subsets of $X/A$ have disjoint open neighborhoods.
+
+::: pf-proof
 Let $F,G\subseteq X/A$ be disjoint closed subsets.
 Their inverse images
 \[
@@ -129,7 +154,7 @@ U'= (X/A)\setminus q(X\setminus U),
 \qquad
 V'= (X/A)\setminus q(X\setminus V).
 \]
-The complements $X\setminus U$ and $X\setminus V$ are closed, so <1>4 implies that their images are closed.
+The complements $X\setminus U$ and $X\setminus V$ are closed, so step [](#q-closed){.pf-ref} implies that their images are closed.
 Hence $U'$ and $V'$ are open.
 
 If $y\in F$, then the whole fiber
@@ -149,17 +174,34 @@ U'\cap V'=\varnothing.
 So $U'$ and $V'$ are the required disjoint open neighborhoods.
 :::
 
-<1>7. The quotient $X/A$ is Hausdorff.
-::: {.proof}
+:::
+
+::: {.pf-step #xa-hausdorff}
+The quotient $X/A$ is Hausdorff.
+
+::: pf-proof
 Let $y,z\in X/A$ be distinct.
-By <1>5, the singleton sets $\{y\}$ and $\{z\}$ are disjoint closed subsets.
-Applying <1>6 to these two closed sets gives disjoint open neighborhoods of $y$ and $z$.
+By step [](#xa-t1){.pf-ref}, the singleton sets $\{y\}$ and $\{z\}$ are disjoint closed subsets.
+Applying step [](#xa-separation){.pf-ref} to these two closed sets gives disjoint open neighborhoods of $y$ and $z$.
 Thus $X/A$ is Hausdorff.
 :::
 
-<1>8. Therefore $X/A$ is normal.
-::: {.proof}
-Step <1>7 verifies the Hausdorff requirement, while <1>6 separates arbitrary disjoint closed subsets by disjoint open neighborhoods.
+:::
+
+::: {.pf-step #xa-normal}
+Therefore $X/A$ is normal.
+
+::: pf-proof
+Step [](#xa-hausdorff){.pf-ref} verifies the Hausdorff requirement, while step [](#xa-separation){.pf-ref} separates arbitrary disjoint closed subsets by disjoint open neighborhoods.
 These are the two conditions defining normality.
 :::
+
+:::
+
+::: pf-qed
+Step [](#a-normal){.pf-ref} shows $A$ is normal, and step [](#xa-normal){.pf-ref} shows $X/A$ is normal.
+:::
+
+:::
+
 :::

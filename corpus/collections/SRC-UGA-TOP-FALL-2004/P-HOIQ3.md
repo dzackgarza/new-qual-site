@@ -59,8 +59,13 @@ Let $\widehat X=X\cup\theset{\infty}$ ($X$ with one point adjoined), and conside
 :::
 
 ::: {.solution}
-<1>1. The sets in $\mcb$ that contain $\infty$ are exactly the complements in $\widehat X$ of compact subsets of $X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #sets-with-infinity}
+The sets in $\mcb$ that contain $\infty$ are exactly the complements in $\widehat X$ of compact subsets of $X$.
+
+::: pf-proof
 Since $X$ is Hausdorff, every compact subset of $X$ is closed.
 Thus, if $K\subseteq X$ is compact, then
 \[
@@ -86,20 +91,28 @@ Hence
 In particular, the intersection with $X$ of every member of $\mcb$ is open in $X$.
 :::
 
-<1>2. The family $\mcb$ contains $\emptyset$ and $\widehat X$.
-::: {.proof}
+:::
+
+::: {.pf-step #contains-empty-and-whole}
+The family $\mcb$ contains $\emptyset$ and $\widehat X$.
+
+::: pf-proof
 We have
 \[
 \emptyset\in\mct\subseteq\mcb.
 \]
-Also the empty set is compact, so <1>1 gives
+Also the empty set is compact, so step [](#sets-with-infinity){.pf-ref} gives
 \[
 \widehat X=\widehat X\setminus\emptyset\in\mcb.
 \]
 :::
 
-<1>3. The family $\mcb$ is closed under arbitrary unions.
-::: {.proof}
+:::
+
+::: {.pf-step #closed-under-unions}
+The family $\mcb$ is closed under arbitrary unions.
+
+::: pf-proof
 Let
 \[
 U=\bigcup_{i\in I}U_i,
@@ -113,7 +126,7 @@ U\in\mct\subseteq\mcb.
 
 Suppose instead that $\infty\in U$.
 Choose $j\in I$ with $\infty\in U_j$.
-By <1>1,
+By step [](#sets-with-infinity){.pf-ref},
 \[
 K_j=\widehat X\setminus U_j
 \]
@@ -129,7 +142,7 @@ K
 =
 K_j\cap\bigcap_{i\in I}\bigl(X\setminus(U_i\cap X)\bigr).
 \]
-Each $U_i\cap X$ is open in $X$ by <1>1, so every set in the intersection on the right is closed in $X$.
+Each $U_i\cap X$ is open in $X$ by step [](#sets-with-infinity){.pf-ref}, so every set in the intersection on the right is closed in $X$.
 Thus $K$ is closed in the compact space $K_j$, hence compact.
 Therefore
 \[
@@ -137,14 +150,18 @@ U=\widehat X\setminus K\in\mcb.
 \]
 :::
 
-<1>4. The family $\mcb$ is closed under finite intersections.
-::: {.proof}
+:::
+
+::: pf-step
+The family $\mcb$ is closed under finite intersections.
+
+::: pf-proof
 It is enough to consider two members $U,V\in\mcb$.
 If at least one of them does not contain $\infty$, then
 \[
 U\cap V\subseteq X.
 \]
-By <1>1, both $U\cap X$ and $V\cap X$ are open in $X$, so
+By step [](#sets-with-infinity){.pf-ref}, both $U\cap X$ and $V\cap X$ are open in $X$, so
 \[
 U\cap V\in\mct\subseteq\mcb.
 \]
@@ -164,18 +181,22 @@ U\cap V
 \]
 and $K\cup L$ is compact.
 Hence $U\cap V\in\mcb$.
-Together with <1>2 and <1>3, this proves that $\mcb$ is a topology on $\widehat X$.
+Together with step [](#contains-empty-and-whole){.pf-ref} and step [](#closed-under-unions){.pf-ref}, this proves that $\mcb$ is a topology on $\widehat X$.
 :::
 
-<1>5. The space $\widehat X$ is compact.
-::: {.proof}
+:::
+
+::: pf-step
+The space $\widehat X$ is compact.
+
+::: pf-proof
 Let $\mathcal U$ be an open cover of $\widehat X$.
 Choose
 \[
 U_\infty\in\mathcal U
 \]
 with $\infty\in U_\infty$.
-By <1>1,
+By step [](#sets-with-infinity){.pf-ref},
 \[
 K=\widehat X\setminus U_\infty
 \]
@@ -201,14 +222,18 @@ cover all of $\widehat X$.
 Thus $\widehat X$ is compact.
 :::
 
-<1>6. The subspace $X$ is dense in $\widehat X$.
-::: {.proof}
+:::
+
+::: {.pf-step #x-dense-in-xhat}
+The subspace $X$ is dense in $\widehat X$.
+
+::: pf-proof
 Every point of $X$ already lies in $X$, so it remains only to show
 \[
 \infty\in\overline X.
 \]
 Let $U$ be any open neighborhood of $\infty$.
-By <1>1,
+By step [](#sets-with-infinity){.pf-ref},
 \[
 U=\widehat X\setminus K
 \]
@@ -221,8 +246,12 @@ Hence every neighborhood of $\infty$ meets $X$, and therefore
 This completes the assertions requested in part (a).
 :::
 
-<1>7. In fact, $\widehat X$ is Hausdorff.
-::: {.proof}
+:::
+
+::: {.pf-step #xhat-is-hausdorff}
+In fact, $\widehat X$ is Hausdorff.
+
+::: pf-proof
 Two distinct points of $X$ have disjoint open neighborhoods because $X$ is Hausdorff; these neighborhoods are also open in $\widehat X$.
 
 Now let $x\in X$.
@@ -239,8 +268,12 @@ are disjoint open neighborhoods of $x$ and $\infty$, respectively.
 Thus $\widehat X$ is Hausdorff.
 :::
 
-<1>8. Under the usual convention that compact spaces need not be Hausdorff, part (b) is false as printed.
-::: {.proof}
+:::
+
+::: {.pf-step #printed-part-b-false}
+Under the usual convention that compact spaces need not be Hausdorff, part (b) is false as printed.
+
+::: pf-proof
 Let $p\notin X$ and set
 \[
 Y=X\cup\{p\}.
@@ -258,7 +291,7 @@ Also every neighborhood of $p$ meets $X$, hence $X$ is dense in $Y$, and plainly
 Y\setminus X=\{p\}.
 \]
 However $Y$ is not Hausdorff: $p$ cannot be separated from any point of $X$ by disjoint neighborhoods.
-By <1>7, $\widehat X$ is Hausdorff.
+By step [](#xhat-is-hausdorff){.pf-ref}, $\widehat X$ is Hausdorff.
 Therefore
 \[
 Y\not\cong\widehat X.
@@ -266,8 +299,12 @@ Y\not\cong\widehat X.
 So the hypotheses printed in part (b) do not imply its conclusion.
 :::
 
-<1>9. The intended uniqueness statement is true if $Y$ is assumed compact Hausdorff.
-::: {.proof}
+:::
+
+::: {.pf-step #corrected-uniqueness}
+The intended uniqueness statement is true if $Y$ is assumed compact Hausdorff.
+
+::: pf-proof
 Assume now that $Y$ is compact Hausdorff, that $X\subseteq Y$ is dense, and that
 \[
 Y\setminus X=\{p\}.
@@ -296,7 +333,7 @@ h^{-1}(U)=U
 is open in $Y$.
 
 Next let $U$ contain $\infty$.
-By <1>1,
+By step [](#sets-with-infinity){.pf-ref},
 \[
 U=\widehat X\setminus K
 \]
@@ -314,8 +351,12 @@ It follows that $h$ is a homeomorphism.
 Thus part (b) is correct after adding the missing Hausdorff hypothesis on $Y$.
 :::
 
-<1>10. The one-point compactification of $(0,1)$ is homeomorphic to $S^1$.
-::: {.proof}
+:::
+
+::: {.pf-step #compactify-open-interval}
+The one-point compactification of $(0,1)$ is homeomorphic to $S^1$.
+
+::: pf-proof
 The interval $(0,1)$ is homeomorphic to $\RR$, for example by
 \[
 t\longmapsto \tan\bigl(\pi(t-\tfrac12)\bigr).
@@ -326,23 +367,36 @@ S^1\setminus\{N\}\cong\RR
 \]
 for any chosen point $N\in S^1$.
 Thus, after identifying $(0,1)$ with $S^1\setminus\{N\}$, the circle $S^1$ is a compact Hausdorff space containing $(0,1)$ densely with one-point complement.
-By <1>9, its one-point compactification is therefore
+By step [](#corrected-uniqueness){.pf-ref}, its one-point compactification is therefore
 \[
 \boxed{S^1}.
 \]
 :::
 
-<1>11. The one-point compactification of $\RR^2$ is homeomorphic to $S^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #compactify-r2}
+The one-point compactification of $\RR^2$ is homeomorphic to $S^2$.
+
+::: pf-proof
 Stereographic projection gives a homeomorphism
 \[
 S^2\setminus\{N\}\cong\RR^2.
 \]
 The sphere $S^2$ is compact Hausdorff, and $S^2\setminus\{N\}$ is dense with singleton complement.
-Applying <1>9 gives
+Applying step [](#corrected-uniqueness){.pf-ref} gives
 \[
 \boxed{\widehat{\RR^2}\cong S^2}.
 \]
 This proves part (c).
 :::
+
+:::
+
+::: pf-qed
+Step [](#x-dense-in-xhat){.pf-ref} answers part (a), steps [](#printed-part-b-false){.pf-ref} and [](#corrected-uniqueness){.pf-ref} answer part (b), and steps [](#compactify-open-interval){.pf-ref} and [](#compactify-r2){.pf-ref} answer part (c).
+:::
+
+:::
+
 :::

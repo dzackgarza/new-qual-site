@@ -27,7 +27,11 @@ What does the degree — the leading term of the Hilbert polynomial $P_X(r)$ —
 :::
 
 ::: {.solution}
-<1>1. If
+
+::: pf
+
+::: pf-step
+If
 \[
 i:C\hookrightarrow\mathbb P^N
 \]
@@ -35,18 +39,23 @@ is a projective embedding of a smooth projective curve, then the embedding is en
 \[
 L=i^*\mathcal O_{\mathbb P^N}(1).
 \]
-::: {.proof}
+
+::: pf-proof
 Hyperplane sections of the embedded curve pull back to divisors in the complete linear system of $L$.  Conversely, a very ample line bundle and a basis of its global sections give a projective embedding.  Thus the hyperplane bundle restricted to $C$ is exactly the line bundle measuring the embedding.
 :::
 
-<1>2. The Hilbert polynomial of the embedded curve is
+:::
+
+::: {.pf-step #hilbert-poly-embedded-curve}
+The Hilbert polynomial of the embedded curve is
 \[
 \boxed{
 P_C(r)=\chi(C,L^{\otimes r})
 =r\deg L+1-g(C).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 By definition,
 \[
 \mathcal O_C(r)=i^*\mathcal O_{\mathbb P^N}(r)=L^{\otimes r},
@@ -66,17 +75,24 @@ Taking $M=L^{\otimes r}$ and using
 gives the formula.
 :::
 
-<1>3. Therefore the degree of the embedded curve is
+:::
+
+::: {.pf-step #degree-equals-linebundle-degree}
+Therefore the degree of the embedded curve is
 \[
 \boxed{\deg i(C)=\deg L.}
 \]
-::: {.proof}
-For a projective curve the coefficient of $r$ in its Hilbert polynomial is its degree.  Step <1>2 shows that this coefficient is $\deg L$.
+
+::: pf-proof
+For a projective curve the coefficient of $r$ in its Hilbert polynomial is its degree.  Step [](#hilbert-poly-embedded-curve){.pf-ref} shows that this coefficient is $\deg L$.
 
 Geometrically, this is the same statement: a general hyperplane cuts the curve in the zero divisor of a section of $L$, and that divisor has degree $\deg L$.
 :::
 
-<1>4. On $\mathbb P^1$,
+:::
+
+::: {.pf-step #cubic-veronese}
+On $\mathbb P^1$,
 \[
 L=\mathcal O_{\mathbb P^1}(3)
 \]
@@ -91,7 +107,8 @@ and defines the cubic Veronese embedding
 [s:t]\longmapsto[s^3:s^2t:st^2:t^3].
 \]
 Its image is the twisted cubic.
-::: {.proof}
+
+::: pf-proof
 One has
 \[
 h^0(\mathbb P^1,\mathcal O(3))=4,
@@ -99,12 +116,16 @@ h^0(\mathbb P^1,\mathcal O(3))=4,
 and the displayed monomials form a basis.  The complete linear system $|\mathcal O(3)|$ is very ample, so the associated map is an embedding.  By definition its image is the degree-three rational normal curve in $\mathbb P^3$, i.e. the twisted cubic.
 :::
 
-<1>5. Its Hilbert polynomial is
+:::
+
+::: {.pf-step #twisted-cubic-hilbert-poly}
+Its Hilbert polynomial is
 \[
 \boxed{P_{\nu_3(\mathbb P^1)}(r)=3r+1.}
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+By step [](#hilbert-poly-embedded-curve){.pf-ref},
 \[
 P(r)
 =\chi\bigl(\mathbb P^1,\mathcal O(3r)\bigr)
@@ -114,13 +135,20 @@ P(r)
 Thus the leading coefficient is $3$, exactly the degree of $\mathcal O(3)$ and of the twisted cubic.
 :::
 
-<1>6. This also explains why degree can change when the same abstract curve is embedded differently.
-::: {.proof}
+:::
+
+::: pf-step
+This also explains why degree can change when the same abstract curve is embedded differently.
+
+::: pf-proof
 The identity embedding of $\mathbb P^1$ uses $\mathcal O(1)$ and has degree $1$, while the cubic Veronese uses $\mathcal O(3)$ and has degree $3$.  The abstract curve and its genus have not changed; only the embedding line bundle has.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Steps <1>2--<1>5 give the requested connection between the leading Hilbert-polynomial term and $\mathcal O(3)$ on $\mathbb P^1$.
+:::
+
+::: pf-qed
+Steps [](#hilbert-poly-embedded-curve){.pf-ref}, [](#degree-equals-linebundle-degree){.pf-ref}, [](#cubic-veronese){.pf-ref} and [](#twisted-cubic-hilbert-poly){.pf-ref} give the requested connection between the leading Hilbert-polynomial term and $\mathcal O(3)$ on $\mathbb P^1$.
+:::
+
 :::
 :::

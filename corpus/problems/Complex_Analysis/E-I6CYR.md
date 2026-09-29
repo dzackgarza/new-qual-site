@@ -30,33 +30,43 @@ B(z, w) = {\Gamma(z) \Gamma(w) \over \Gamma(z+w)}
 ::: {.solution}
 Let $\operatorname{Re}(z) > 0$ and $\operatorname{Re}(w) > 0$, let $s>0$, and define $f(t) = t^{z-1}$ and $g(t) = t^{w-1}$ for $t > 0$. Recall $B(z, w) = \int_0^1 u^{z-1} (1 - u)^{w-1}\,du$.
 
-<1>1. $\mathcal{L}\{f\}(s) = \frac{\Gamma(z)}{s^z}$ and $\mathcal{L}\{g\}(s) = \frac{\Gamma(w)}{s^w}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #laplace-of-power}
+$\mathcal{L}\{f\}(s) = \frac{\Gamma(z)}{s^z}$ and $\mathcal{L}\{g\}(s) = \frac{\Gamma(w)}{s^w}$.
+
+::: pf-proof
 Substituting $u = st$, so $t = u/s$ and $dt = du/s$,
 $$\mathcal{L}\{f\}(s) = \int_0^\infty t^{z-1} e^{-st}\,dt = \int_0^\infty \left(\frac{u}{s}\right)^{z-1} e^{-u} \frac{du}{s} = \frac{1}{s^z} \int_0^\infty u^{z-1} e^{-u}\,du = \frac{\Gamma(z)}{s^z}.$$
 The same computation with $w$ in place of $z$ gives $\mathcal{L}\{g\}$.
 :::
 
-<1>2. $(f * g)(x) = x^{z+w-1} B(z, w)$ for $x > 0$.
+:::
 
-::: {.proof}
+::: {.pf-step #convolution-value}
+$(f * g)(x) = x^{z+w-1} B(z, w)$ for $x > 0$.
+
+::: pf-proof
 Substituting $t = xu$, so $dt = x\,du$,
 $$(f * g)(x) = \int_0^x t^{z-1} (x - t)^{w-1}\,dt = \int_0^1 (xu)^{z-1} (x - xu)^{w-1} x\,du = x^{z+w-1} \int_0^1 u^{z-1} (1 - u)^{w-1}\,du.$$
 :::
 
-<1>3. $B(z, w) \frac{\Gamma(z+w)}{s^{z+w}} = \frac{\Gamma(z)\Gamma(w)}{s^{z+w}}$.
+:::
 
-::: {.proof}
-By step <1>2 and step <1>1 with $z+w$ in place of $z$,
+::: {.pf-step #laplace-of-convolution}
+$B(z, w) \frac{\Gamma(z+w)}{s^{z+w}} = \frac{\Gamma(z)\Gamma(w)}{s^{z+w}}$.
+
+::: pf-proof
+By step [](#convolution-value){.pf-ref} and step [](#laplace-of-power){.pf-ref} with $z+w$ in place of $z$,
 $$\mathcal{L}\{f * g\}(s) = B(z, w) \int_0^\infty x^{z+w-1} e^{-sx}\,dx = B(z, w) \frac{\Gamma(z+w)}{s^{z+w}}.$$
-By the convolution theorem for Laplace transforms and step <1>1,
+By the convolution theorem for Laplace transforms and step [](#laplace-of-power){.pf-ref},
 $$\mathcal{L}\{f * g\}(s) = \mathcal{L}\{f\}(s) \cdot \mathcal{L}\{g\}(s) = \frac{\Gamma(z)\Gamma(w)}{s^{z+w}}.$$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Multiply step <1>3 by $s^{z+w}$ and divide by $\Gamma(z+w)$, which has no zeros.
 :::
+
+::: pf-qed
+Multiply step [](#laplace-of-convolution){.pf-ref} by $s^{z+w}$ and divide by $\Gamma(z+w)$, which has no zeros.
+:::
+
 :::

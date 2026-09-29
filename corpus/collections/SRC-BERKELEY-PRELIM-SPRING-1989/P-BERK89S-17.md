@@ -39,13 +39,16 @@ Here the index of $I$ means the order of the additive quotient $R/I$.
 :::
 
 ::: {.solution}
-<1>1. Let $S$ be a nonzero ring with identity and let $x\in S$ satisfy
+::: pf
+
+::: {.pf-step #five-distinct-elements}
+Let $S$ be a nonzero ring with identity and let $x\in S$ satisfy
 $$
 x^3=x+1.
 $$
 Then $0,1,x,x^2,x+1$ are five distinct elements of $S$.
 
-::: {.proof}
+::: pf-proof
 The relation can be rewritten as
 $$
 x(x^2-1)=1,
@@ -67,9 +70,12 @@ Comparing this with $x^3=x+1$ gives $x=0$, again a contradiction. Hence all
 five displayed elements are distinct.
 :::
 
-<1>2. If $I$ is an ideal of $R$ with index less than $5$, then $I=R$.
+:::
 
-::: {.proof}
+::: {.pf-step #ideal-equals-r}
+If $I$ is an ideal of $R$ with index less than $5$, then $I=R$.
+
+::: pf-proof
 Suppose $I\neq R$. Then the quotient ring $S=R/I$ is nonzero and has
 identity $1+I$. The element
 $$
@@ -79,7 +85,7 @@ satisfies
 $$
 x^3=x+1
 $$
-because $a^3=a+1$ in $R$. By step <1>1, the ring $S$ has at least five
+because $a^3=a+1$ in $R$. By step [](#five-distinct-elements){.pf-ref}, the ring $S$ has at least five
 elements. But
 $$
 \abs{S}=\abs{R/I}=[R:I]<5,
@@ -87,12 +93,15 @@ $$
 a contradiction. Therefore $I=R$.
 :::
 
-<1>3. There is an example with an ideal of index exactly $5$:
+:::
+
+::: {.pf-step #example-boxed}
+There is an example with an ideal of index exactly $5$:
 $$
 \boxed{R=\FF_5,\qquad a=2,\qquad I=(0).}
 $$
 
-::: {.proof}
+::: pf-proof
 In $\FF_5$,
 $$
 2^3=8=3=2+1,
@@ -104,9 +113,11 @@ $$
 Thus this ring and ideal satisfy part (2).
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part (1), and step <1>3 proves part (2).
+::: pf-qed
+Step [](#ideal-equals-r){.pf-ref} proves part (1), and step [](#example-boxed){.pf-ref} proves part (2).
+:::
+
 :::
 :::

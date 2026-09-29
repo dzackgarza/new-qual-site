@@ -70,23 +70,29 @@ $$
 Irreducible Zariski-closed subsets of $\AA^2_k$ correspond to prime ideals
 of $A$.
 
-<1>1. The prime ideal $(0)$ corresponds to the whole affine plane
+::: pf
+
+::: {.pf-step #height-zero-is-a2}
+The prime ideal $(0)$ corresponds to the whole affine plane
 $$
 V(0)=\AA^2_k.
 $$
 
-::: {.proof}
+::: pf-proof
 The ring $A=k[x,y]$ is a domain, so $(0)$ is prime. Its zero set is all of
 $\AA^2_k$.
 :::
 
-<1>2. Every height-one prime ideal of $A$ has the form
+:::
+
+::: {.pf-step #height-one-prime-principal}
+Every height-one prime ideal of $A$ has the form
 $$
 (f)
 $$
 for an irreducible nonconstant polynomial $f\in k[x,y]$.
 
-::: {.proof}
+::: pf-proof
 The polynomial ring
 $$
 k[x,y]
@@ -103,13 +109,16 @@ is prime in the UFD $A$, so $(f)$ is prime; Krull's principal ideal theorem
 gives it height one.
 :::
 
-<1>3. The height-one primes correspond exactly to irreducible plane curves
+:::
+
+::: {.pf-step #height-one-curves}
+The height-one primes correspond exactly to irreducible plane curves
 $$
 V(f)\subseteq\AA^2_k.
 $$
 
-::: {.proof}
-If $\mathfrak p=(f)$ is a height-one prime as in step <1>2, then
+::: pf-proof
+If $\mathfrak p=(f)$ is a height-one prime as in step [](#height-one-prime-principal){.pf-ref}, then
 $$
 A/\mathfrak p
 =
@@ -128,17 +137,20 @@ $$
 Thus it is a curve.
 
 Conversely, every irreducible closed curve in $\AA^2_k$ has a prime
-vanishing ideal of height one, hence is of this form by step <1>2.
+vanishing ideal of height one, hence is of this form by step [](#height-one-prime-principal){.pf-ref}.
 :::
 
-<1>4. Every height-two prime ideal of $A$ is the maximal ideal of a point:
+:::
+
+::: {.pf-step #height-two-points}
+Every height-two prime ideal of $A$ is the maximal ideal of a point:
 $$
 \mathfrak m_{(a,b)}
 =
 (x-a,y-b).
 $$
 
-::: {.proof}
+::: pf-proof
 The ring $A$ has Krull dimension $2$. A prime ideal of height $2$ is
 therefore maximal. By the weak Nullstellensatz over the algebraically closed
 field $k$, every maximal ideal of $k[x,y]$ is
@@ -155,16 +167,19 @@ $$
 $$
 :::
 
-<1>5. There are no other nonempty irreducible closed subvarieties of
+:::
+
+::: {.pf-step #classification-exhaustive}
+There are no other nonempty irreducible closed subvarieties of
 $\AA^2_k$.
 
-::: {.proof}
+::: pf-proof
 Every prime ideal of the two-dimensional domain $A$ has height
 $$
 0,\ 1,\ \text{or }2.
 $$
-Step <1>1 classifies height zero, steps <1>2--<1>3 classify height one, and
-step <1>4 classifies height two. These exhaust all prime ideals and hence all
+Step [](#height-zero-is-a2){.pf-ref} classifies height zero, steps [](#height-one-prime-principal){.pf-ref} and [](#height-one-curves){.pf-ref} classify height one, and
+step [](#height-two-points){.pf-ref} classifies height two. These exhaust all prime ideals and hence all
 nonempty irreducible closed subvarieties.
 
 An irreducible topological space is nonempty by definition, and
@@ -174,13 +189,16 @@ $$
 corresponds to the unit ideal, which is not prime.
 :::
 
-<1>6. Every irreducible plane curve
+:::
+
+::: {.pf-step #curves-infinite-points}
+Every irreducible plane curve
 $$
 C=V(f)
 $$
 has infinitely many $k$-points.
 
-::: {.proof}
+::: pf-proof
 Write $f$ as a polynomial in $y$:
 $$
 f(x,y)
@@ -225,7 +243,10 @@ $$
 Distinct values of $c$ give distinct points, so $C(k)$ is infinite.
 :::
 
-<1>7. Therefore the complete classification is
+:::
+
+::: {.pf-step #classification-summary}
+Therefore the complete classification is
 $$
 \boxed{
 \AA^2_k,\quad
@@ -234,14 +255,17 @@ V(f)\text{ for irreducible nonconstant }f,\quad
 }
 $$
 
-::: {.proof}
-Step <1>5 gives the exhaustive classification, and step <1>6 proves the
+::: pf-proof
+Step [](#classification-exhaustive){.pf-ref} gives the exhaustive classification, and step [](#curves-infinite-points){.pf-ref} proves the
 additional cardinality assertion for the curve case.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#classification-summary){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

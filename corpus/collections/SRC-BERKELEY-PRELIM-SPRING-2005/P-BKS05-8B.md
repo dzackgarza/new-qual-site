@@ -30,9 +30,13 @@ Let $f:\RR\to\RR$ be differentiable on $\RR$. Suppose that $f(0)=0$, and that $\
 :::
 
 ::: {.solution}
-<1>1. One has $f(x)=0$ for every $x\geq0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #vanishes-nonneg}
+One has $f(x)=0$ for every $x\geq0$.
+
+::: pf-proof
 Define
 $$
 g(x)\coloneqq e^{-2x}f(x)^2.
@@ -62,9 +66,12 @@ $$
 Hence $g(x)=0$, so $f(x)=0$.
 :::
 
-<1>2. One has $f(x)=0$ for every $x\leq0$.
+:::
 
-::: {.proof}
+::: {.pf-step #vanishes-nonpos}
+One has $f(x)=0$ for every $x\leq0$.
+
+::: pf-proof
 Define
 $$
 h(x)\coloneqq e^{2x}f(x)^2.
@@ -90,16 +97,22 @@ $$
 Hence $h(x)=0$, so $f(x)=0$.
 :::
 
-<1>3. The function $f$ vanishes identically on $\RR$.
+:::
 
-::: {.proof}
-Step <1>1 gives the conclusion on $[0,\infty)$, and step <1>2 gives it on
+::: {.pf-step #vanishes-everywhere}
+The function $f$ vanishes identically on $\RR$.
+
+::: pf-proof
+Step [](#vanishes-nonneg){.pf-ref} gives the conclusion on $[0,\infty)$, and step [](#vanishes-nonpos){.pf-ref} gives it on
 $(-\infty,0]$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#vanishes-everywhere){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

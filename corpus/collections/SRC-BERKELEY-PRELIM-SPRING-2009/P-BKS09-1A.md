@@ -39,12 +39,15 @@ $$
 g(x)\coloneqq f(x)-f(0).
 $$
 
-<1>1. For every $\alpha>0$,
+::: pf
+
+::: {.pf-step #constant-term-integral}
+For every $\alpha>0$,
 $$
 \alpha\int_0^1 x^{\alpha-1}f(0)\,dx=f(0).
 $$
 
-::: {.proof}
+::: pf-proof
 Since $\alpha>0$,
 $$
 \alpha\int_0^1x^{\alpha-1}\,dx
@@ -56,7 +59,10 @@ $$
 Multiplying by $f(0)$ gives the claim.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #remainder-vanishes}
+One has
 $$
 \lim_{\alpha\to0^+}
 \alpha\int_0^1x^{\alpha-1}g(x)\,dx
@@ -64,7 +70,7 @@ $$
 0.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $\varepsilon>0$. By continuity of $g$ at $0$ and $g(0)=0$, choose
 $\delta\in(0,1)$ such that
 $$
@@ -105,7 +111,10 @@ $$
 The displayed estimate is then $<\varepsilon$, proving the limit.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #limit-value}
+Therefore
 $$
 \lim_{\alpha\to0^+}
 \alpha\int_0^1x^{\alpha-1}f(x)\,dx
@@ -113,15 +122,18 @@ $$
 \boxed{f(0)}.
 $$
 
-::: {.proof}
-Since $f=g+f(0)$, split the integral into these two terms. Step <1>1
-evaluates the constant term, and step <1>2 shows that the remaining term
+::: pf-proof
+Since $f=g+f(0)$, split the integral into these two terms. Step [](#constant-term-integral){.pf-ref}
+evaluates the constant term, and step [](#remainder-vanishes){.pf-ref} shows that the remaining term
 tends to $0$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required limit.
 :::
+
+::: pf-qed
+Step [](#limit-value){.pf-ref} is the required limit.
+:::
+
+:::
+
 :::

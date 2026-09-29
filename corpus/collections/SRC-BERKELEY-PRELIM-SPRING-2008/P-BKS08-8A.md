@@ -41,9 +41,12 @@ S\coloneqq R/pR,
 T\coloneqq R/qR.
 $$
 
-<1>1. The ring $S$ has characteristic exactly $p$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s-char-p}
+The ring $S$ has characteristic exactly $p$.
+
+::: pf-proof
 Since $p=0$ in $S$, the characteristic of $S$ divides the prime $p$,
 provided that $S$ is nonzero. If $S=0$, then $1\in pR$, so
 $1=pr$ for some $r\in R$. Multiplying by $q$ gives
@@ -54,17 +57,23 @@ in $R$, contradicting $\operatorname{char}R=pq$. Hence $S\ne0$,
 and therefore $\operatorname{char}S=p$.
 :::
 
-<1>2. The ring $T$ has characteristic exactly $q$.
+:::
 
-::: {.proof}
+::: {.pf-step #t-char-q}
+The ring $T$ has characteristic exactly $q$.
+
+::: pf-proof
 The same argument with $p$ and $q$ interchanged shows that $T\ne0$,
 while $q=0$ in $T$. Since $q$ is prime,
 $\operatorname{char}T=q$.
 :::
 
-<1>3. The ideals $pR$ and $qR$ are comaximal.
+:::
 
-::: {.proof}
+::: {.pf-step #comaximal}
+The ideals $pR$ and $qR$ are comaximal.
+
+::: pf-proof
 Since $p$ and $q$ are distinct primes, there exist integers $m,n$ such
 that
 $$
@@ -77,13 +86,16 @@ $$
 so $pR+qR=R$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #intersection-zero}
+One has
 $$
 pR\cap qR=0.
 $$
 
-::: {.proof}
-Let $a\in pR\cap qR$. Using the Bézout identity from step <1>3,
+::: pf-proof
+Let $a\in pR\cap qR$. Using the Bézout identity from step [](#comaximal){.pf-ref},
 $$
 a=(mp+nq)a=m(pa)+n(qa).
 $$
@@ -95,7 +107,10 @@ $$
 because $R$ has characteristic $pq$. Hence $a=0$.
 :::
 
-<1>5. The map
+:::
+
+::: {.pf-step #phi-isomorphism}
+The map
 $$
 \Phi:R\longrightarrow S\times T,
 \qquad
@@ -103,30 +118,36 @@ r\longmapsto(r+pR,r+qR),
 $$
 is an isomorphism.
 
-::: {.proof}
-By step <1>3, the ideals $pR$ and $qR$ are comaximal. The Chinese
+::: pf-proof
+By step [](#comaximal){.pf-ref}, the ideals $pR$ and $qR$ are comaximal. The Chinese
 remainder theorem therefore gives a surjection
 $$
 R\longrightarrow R/pR\times R/qR
 $$
-whose kernel is $pR\cap qR$. Step <1>4 identifies this kernel with
+whose kernel is $pR\cap qR$. Step [](#intersection-zero){.pf-ref} identifies this kernel with
 $0$, so the map is also injective.
 :::
 
-<1>6. Consequently there are rings $S,T$ of characteristics $p,q$,
+:::
+
+::: {.pf-step #conclusion}
+Consequently there are rings $S,T$ of characteristics $p,q$,
 respectively, such that
 $$
 \boxed{R\cong S\times T}.
 $$
 
-::: {.proof}
-Steps <1>1--<1>2 give the required characteristics, and step <1>5 gives
+::: pf-proof
+Steps [](#s-char-p){.pf-ref} and [](#t-char-q){.pf-ref} give the required characteristics, and step [](#phi-isomorphism){.pf-ref} gives
 the isomorphism.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the desired decomposition.
 :::
+
+::: pf-qed
+Step [](#conclusion){.pf-ref} is the desired decomposition.
+:::
+
+:::
+
 :::

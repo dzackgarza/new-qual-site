@@ -36,7 +36,10 @@ Define the product of homotopy classes of loops $[\alpha]_{x_0}$ based at $x_0$ 
 ::: {.solution}
 All homotopies of loops below are taken relative to the endpoints.
 
-<1>1. For loops
+::: pf
+
+::: {.pf-step #define-product}
+For loops
 \[
 \alpha,
 \beta:I\to X
@@ -56,7 +59,8 @@ Then define the product of homotopy classes by
 =
 [\alpha\mathbin{\cdot}\beta]_{x_0}.
 \]
-::: {.proof}
+
+::: pf-proof
 Since
 \[
 \alpha(1)=x_0=\beta(0),
@@ -72,8 +76,12 @@ Moreover,
 so it is again a loop based at $x_0$.
 :::
 
-<1>2. The product in <1>1 is well-defined on homotopy classes.
-::: {.proof}
+:::
+
+::: pf-step
+The product in step [](#define-product){.pf-ref} is well-defined on homotopy classes.
+
+::: pf-proof
 Suppose
 \[
 \alpha\simeq\alpha'
@@ -127,7 +135,10 @@ Thus
 so the class of the concatenation depends only on $[\alpha]_{x_0}$ and $[\beta]_{x_0}$.
 :::
 
-<1>3. For three based loops $\alpha,\beta,\gamma$, define a single traversal
+:::
+
+::: pf-step
+For three based loops $\alpha,\beta,\gamma$, define a single traversal
 \[
 P:[0,3]\to X
 \]
@@ -142,7 +153,8 @@ P(u)
 \end{cases}
 \]
 Then $P$ is continuous.
-::: {.proof}
+
+::: pf-proof
 At the two joining parameters,
 \[
 \alpha(1)=\beta(0)=x_0
@@ -154,7 +166,10 @@ and
 Hence the three formulas agree on their overlaps, and the pasting lemma gives continuity.
 :::
 
-<1>4. The two parenthesized concatenations are reparametrizations of $P$:
+:::
+
+::: {.pf-step #reparam-formulas}
+The two parenthesized concatenations are reparametrizations of $P$:
 \[
 (\alpha\mathbin{\cdot}\beta)\mathbin{\cdot}\gamma
 =P\circ r_L,
@@ -182,7 +197,8 @@ r_R(s)
 4s-1,&\frac12\le s\le1.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 For the left parenthesization, expanding the definition of concatenation gives
 \[
 ((\alpha\mathbin{\cdot}\beta)\mathbin{\cdot}\gamma)(s)
@@ -208,8 +224,12 @@ Similarly,
 which is $P(r_R(s))$.
 :::
 
-<1>5. The two parenthesizations in <1>4 are homotopic relative to the endpoints.
-::: {.proof}
+:::
+
+::: {.pf-step #parenthesizations-homotopic}
+The two parenthesizations in step [](#reparam-formulas){.pf-ref} are homotopic relative to the endpoints.
+
+::: pf-proof
 For $t\in I$, set
 \[
 r_t(s)=(1-t)r_L(s)+t r_R(s).
@@ -229,7 +249,7 @@ F:I\times I\to X,
 F(s,t)=P(r_t(s)).
 \]
 This is continuous.
-By <1>4,
+By step [](#reparam-formulas){.pf-ref},
 \[
 F(-,0)=(\alpha\mathbin{\cdot}\beta)\mathbin{\cdot}\gamma
 \]
@@ -246,13 +266,17 @@ F(1,t)=P(3)=x_0,
 so the endpoints remain fixed throughout the homotopy.
 :::
 
-<1>6. The product of based loop homotopy classes is associative:
+:::
+
+::: pf-step
+The product of based loop homotopy classes is associative:
 \[
 \boxed{([\alpha]_{x_0}[\beta]_{x_0})[\gamma]_{x_0}
 =[\alpha]_{x_0}([\beta]_{x_0}[\gamma]_{x_0}).}
 \]
-::: {.proof}
-By the definition in <1>1, the left side is represented by
+
+::: pf-proof
+By the definition in step [](#define-product){.pf-ref}, the left side is represented by
 \[
 (\alpha\mathbin{\cdot}\beta)\mathbin{\cdot}\gamma
 \]
@@ -260,6 +284,11 @@ and the right side by
 \[
 \alpha\mathbin{\cdot}(\beta\mathbin{\cdot}\gamma).
 \]
-These loops are endpoint-fixed homotopic by <1>5, so they determine the same homotopy class.
+These loops are endpoint-fixed homotopic by step [](#parenthesizations-homotopic){.pf-ref}, so they determine the same homotopy class.
 :::
+
+:::
+
+:::
+
 :::

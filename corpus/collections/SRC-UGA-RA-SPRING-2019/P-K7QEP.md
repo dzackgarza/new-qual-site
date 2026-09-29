@@ -44,8 +44,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Inclusion and density.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #l2-dense-in-l1}
+Inclusion and density.
+
+::: pf-proof
 By Cauchy--Schwarz,
 \[
 \|f\|_1
@@ -58,8 +63,12 @@ Hence $L^2\subseteq L^1$ continuously.
 Bounded measurable functions lie in $L^2([0,1])$, and bounded simple functions are dense in $L^1([0,1])$. Therefore $L^2([0,1])$ is dense in $L^1([0,1])$.
 :::
 
-<1>2. Restrict $\Lambda$ to $L^2$ and apply Riesz.
-::: {.proof}
+:::
+
+::: {.pf-step #riesz-on-l2}
+Restrict $\Lambda$ to $L^2$ and apply Riesz.
+
+::: pf-proof
 For $f\in L^2$,
 \[
 |\Lambda(f)|\le \|\Lambda\|\,\|f\|_1
@@ -72,8 +81,12 @@ Thus $\Lambda|_{L^2}$ is a bounded linear functional on the Hilbert space $L^2([
 \]
 :::
 
-<1>3. Prove that $g\in L^\infty$ and $\|g\|_\infty\le\|\Lambda\|$.
-::: {.proof}
+:::
+
+::: {.pf-step #g-in-linfty}
+Prove that $g\in L^\infty$ and $\|g\|_\infty\le\|\Lambda\|$.
+
+::: pf-proof
 Let $M:=\|\Lambda\|$. Suppose for contradiction that
 \[
 m(E)>0,
@@ -102,8 +115,12 @@ so $g\in L^\infty$ and
 \]
 :::
 
-<1>4. Extend the representation to every $L^1$ function.
-::: {.proof}
+:::
+
+::: {.pf-step #extend-to-l1}
+Extend the representation to every $L^1$ function.
+
+::: pf-proof
 Let $f\in L^1$. Choose $f_n\in L^2$ with
 \[
 \|f_n-f\|_1\to0.
@@ -124,8 +141,12 @@ Therefore
 for every $f\in L^1$.
 :::
 
-<1>5. Prove equality of the norms.
-::: {.proof}
+:::
+
+::: {.pf-step #norms-equal}
+Prove equality of the norms.
+
+::: pf-proof
 The representation and Hölder's inequality give
 \[
 |\Lambda(f)|\le\|f\|_1\|g\|_\infty,
@@ -134,7 +155,7 @@ so
 \[
 \|\Lambda\|\le\|g\|_\infty.
 \]
-Combined with Step 3,
+Combined with Step [](#g-in-linfty){.pf-ref},
 \[
 \|g\|_\infty\le\|\Lambda\|,
 \]
@@ -143,4 +164,13 @@ we obtain
 \boxed{\|g\|_\infty=\|\Lambda\|.}
 \]
 :::
+
+:::
+
+::: pf-qed
+Steps [](#l2-dense-in-l1){.pf-ref}, [](#riesz-on-l2){.pf-ref}, [](#g-in-linfty){.pf-ref}, [](#extend-to-l1){.pf-ref} and [](#norms-equal){.pf-ref} answer parts 1 and 2.
+:::
+
+:::
+
 :::

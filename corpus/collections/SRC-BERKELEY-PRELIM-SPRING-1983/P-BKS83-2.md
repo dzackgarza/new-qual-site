@@ -40,14 +40,17 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. For each column $j$,
+::: pf
+
+::: {.pf-step #column-dominance-strict}
+For each column $j$,
 $$
 a_{jj}
 >
 \sum_{i\ne j}\abs{a_{ij}}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $a_{ij}\le0$ for $i\ne j$,
 $$
 \sum_{i=1}^n a_{ij}
@@ -60,7 +63,10 @@ The column-sum hypothesis says that the left-hand side is positive, giving
 the stated strict inequality.
 :::
 
-<1>2. Any real matrix $M=(m_{ij})$ satisfying
+:::
+
+::: {.pf-step #diagonal-dominance-nonsingular}
+Any real matrix $M=(m_{ij})$ satisfying
 $$
 \abs{m_{jj}}
 >
@@ -68,7 +74,7 @@ $$
 $$
 for every column $j$ is nonsingular.
 
-::: {.proof}
+::: pf-proof
 Suppose $M$ were singular. Then $M^T$ would be singular, so there would be
 a nonzero vector $x=(x_1,\ldots,x_n)^T$ such that
 $$
@@ -105,7 +111,10 @@ Dividing by $\abs{x_k}>0$ contradicts strict column diagonal dominance.
 Thus $M$ is nonsingular.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #homotopy-nonsingular}
+Let
 $$
 D
 \coloneqq
@@ -119,9 +128,9 @@ D+t(A-D).
 $$
 Then every $A_t$ is nonsingular.
 
-::: {.proof}
+::: pf-proof
 The diagonal entries of $A_t$ are $a_{jj}$, while its off-diagonal entries
-are $t a_{ij}$. By step <1>1,
+are $t a_{ij}$. By step [](#column-dominance-strict){.pf-ref},
 $$
 a_{jj}
 >
@@ -132,28 +141,34 @@ t\sum_{i\ne j}\abs{a_{ij}}
 \sum_{i\ne j}\abs{(A_t)_{ij}}.
 $$
 Thus $A_t$ is strictly column diagonally dominant for every
-$t\in[0,1]$. Step <1>2 implies that every $A_t$ is nonsingular.
+$t\in[0,1]$. Step [](#diagonal-dominance-nonsingular){.pf-ref} implies that every $A_t$ is nonsingular.
 :::
 
-<1>4. The function
+:::
+
+::: {.pf-step #determinant-sign-constant}
+The function
 $$
 t\longmapsto\det A_t
 $$
 has constant sign on $[0,1]$.
 
-::: {.proof}
+::: pf-proof
 The determinant is a polynomial in the matrix entries, so
-$t\mapsto\det A_t$ is continuous. By step <1>3 it never vanishes on the
+$t\mapsto\det A_t$ is continuous. By step [](#homotopy-nonsingular){.pf-ref} it never vanishes on the
 connected interval $[0,1]$. A continuous nonzero real-valued function on a
 connected set cannot change sign.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #det-positive-boxed}
+One has
 $$
 \boxed{\det A>0}.
 $$
 
-::: {.proof}
+::: pf-proof
 At $t=0$,
 $$
 A_0=D,
@@ -165,7 +180,7 @@ $$
 \prod_{j=1}^n a_{jj}
 >0
 $$
-because every diagonal entry is positive. By step <1>4,
+because every diagonal entry is positive. By step [](#determinant-sign-constant){.pf-ref},
 $\det A_t$ has the same positive sign for all $t\in[0,1]$. Since
 $A_1=A$, it follows that
 $$
@@ -173,9 +188,11 @@ $$
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the desired conclusion.
+::: pf-qed
+Step [](#det-positive-boxed){.pf-ref} is the desired conclusion.
+:::
+
 :::
 :::

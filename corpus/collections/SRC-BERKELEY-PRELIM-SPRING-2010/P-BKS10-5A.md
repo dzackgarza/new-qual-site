@@ -36,12 +36,16 @@ Prove rigorously that:
 :::
 
 ::: {.solution}
-<1>1. If $c>1$ and $y(c)=0$, then
+
+::: pf
+
+::: {.pf-step #derivative-at-zero}
+If $c>1$ and $y(c)=0$, then
 $$
 y'(c)=1-\frac1c>0.
 $$
 
-::: {.proof}
+::: pf-proof
 Substituting $y(c)=0$ into the differential equation gives
 $$
 y'(c)
@@ -53,13 +57,16 @@ $$
 Since $c>1$, this quantity is positive.
 :::
 
-<1>2. Suppose $y(1)>0$. Then
+:::
+
+::: {.pf-step #positivity-case-a}
+Suppose $y(1)>0$. Then
 $$
 y(x)>0
 $$
 for every $x\in[1,b)$.
 
-::: {.proof}
+::: pf-proof
 Assume otherwise. By continuity, there is some $x_0>1$ with
 $y(x_0)\leq0$, and the set
 $$
@@ -87,13 +94,16 @@ $y'(c)$ exists, passage to the limit $h\to0^-$ gives
 $$
 y'(c)\leq0.
 $$
-This contradicts step <1>1.
+This contradicts step [](#derivative-at-zero){.pf-ref}.
 :::
 
-<1>3. If $y(1)>0$, then $y$ is strictly increasing on $[1,b)$.
+:::
 
-::: {.proof}
-By step <1>2, $y(x)>0$ for every $x>1$. Hence
+::: {.pf-step #part-a}
+If $y(1)>0$, then $y$ is strictly increasing on $[1,b)$.
+
+::: pf-proof
+By step [](#positivity-case-a){.pf-ref}, $y(x)>0$ for every $x>1$. Hence
 $$
 y'(x)
 =
@@ -118,7 +128,10 @@ $$
 This proves part (a).
 :::
 
-<1>4. Suppose $y(1)=0$. Then
+:::
+
+::: {.pf-step #initial-derivatives}
+Suppose $y(1)=0$. Then
 $$
 y'(1)=0
 $$
@@ -127,7 +140,7 @@ $$
 y''(1)=1.
 $$
 
-::: {.proof}
+::: pf-proof
 The differential equation gives
 $$
 y'(1)
@@ -154,20 +167,23 @@ y''(1)
 $$
 :::
 
-<1>5. If $y(1)=0$, then there is $\delta>0$ such that
+:::
+
+::: {.pf-step #positivity-near-one}
+If $y(1)=0$, then there is $\delta>0$ such that
 $$
 y(x)>0
 $$
 for every $x\in(1,1+\delta]$.
 
-::: {.proof}
+::: pf-proof
 Since $y''(1)=1$ and $y''$ is continuous, there is $\delta>0$ such that
 $$
 y''(x)>0
 $$
 for $1\leq x\leq1+\delta$, after shrinking $\delta$ so that this
 interval lies in $I$. Hence $y'$ is strictly increasing there. By step
-<1>4,
+[](#initial-derivatives){.pf-ref},
 $$
 y'(1)=0,
 $$
@@ -180,28 +196,34 @@ interval, and since $y(1)=0$, one has $y(x)>0$ for every
 $x\in(1,1+\delta]$.
 :::
 
-<1>6. If $y(1)=0$, then
+:::
+
+::: {.pf-step #positivity-case-b}
+If $y(1)=0$, then
 $$
 y(x)>0
 $$
 for every $x\in(1,b)$.
 
-::: {.proof}
-Step <1>5 gives positivity immediately to the right of $1$. If $y$ vanished
+::: pf-proof
+Step [](#positivity-near-one){.pf-ref} gives positivity immediately to the right of $1$. If $y$ vanished
 again at some point, choose its first zero $c>1$ after this initial positive
 interval. Then $y(x)>0$ for $x<c$ sufficiently close to $c$. Exactly as in
-step <1>2, the left derivative at $c$ would satisfy
+step [](#positivity-case-a){.pf-ref}, the left derivative at $c$ would satisfy
 $$
 y'(c)\leq0,
 $$
-contradicting step <1>1.
+contradicting step [](#derivative-at-zero){.pf-ref}.
 :::
 
-<1>7. If $y(1)=0$, then $y$ is strictly increasing on $[1,b)$.
+:::
 
-::: {.proof}
-By step <1>6, $y(x)>0$ for every $x>1$. The same calculation as in step
-<1>3 gives
+::: {.pf-step #part-b}
+If $y(1)=0$, then $y$ is strictly increasing on $[1,b)$.
+
+::: pf-proof
+By step [](#positivity-case-b){.pf-ref}, $y(x)>0$ for every $x>1$. The same calculation as in step
+[](#part-a){.pf-ref} gives
 $$
 y'(x)>0
 $$
@@ -212,9 +234,12 @@ $$
 whenever $1\leq x_1<x_2<b$. This proves part (b).
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), and step <1>7 proves part (b).
 :::
+
+::: pf-qed
+Step [](#part-a){.pf-ref} proves part (a), and step [](#part-b){.pf-ref} proves part (b).
+:::
+
+:::
+
 :::

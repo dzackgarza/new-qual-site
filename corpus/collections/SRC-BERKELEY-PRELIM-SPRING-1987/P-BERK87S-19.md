@@ -41,13 +41,16 @@ m\coloneqq\operatorname{ord}(g)
 $$
 is maximal among the orders of elements of $G$.
 
-<1>1. If two commuting elements $x,y$ have finite coprime orders $r,s$,
+::: pf
+
+::: {.pf-step #coprime-order-product}
+If two commuting elements $x,y$ have finite coprime orders $r,s$,
 then
 $$
 \operatorname{ord}(xy)=rs.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $x$ and $y$ commute,
 $$
 (xy)^{rs}=x^{rs}y^{rs}=1.
@@ -65,9 +68,12 @@ Similarly, raising $x^k=y^{-k}$ to the $r$th power gives $s\mid k$.
 Thus $rs\mid k$. Therefore the least positive such $k$ is $rs$.
 :::
 
-<1>2. Every $h\in G$ has order dividing $m$.
+:::
 
-::: {.proof}
+::: {.pf-step #order-divides-m}
+Every $h\in G$ has order dividing $m$.
+
+::: pf-proof
 Let
 $$
 n\coloneqq\operatorname{ord}(h).
@@ -98,7 +104,7 @@ $$
 y\coloneqq h^s
 $$
 has order $p^b$. Their orders are coprime. Since $G\subset F^\times$ is
-abelian, step <1>1 gives
+abelian, step [](#coprime-order-product){.pf-ref} gives
 $$
 \operatorname{ord}(xy)
 =
@@ -111,13 +117,16 @@ $$
 contradicting the maximality of $m$. Therefore $n\mid m$.
 :::
 
-<1>3. Every element of $G$ is a root of the polynomial
+:::
+
+::: {.pf-step #elements-are-roots}
+Every element of $G$ is a root of the polynomial
 $$
 X^m-1\in F[X].
 $$
 
-::: {.proof}
-For $h\in G$, step <1>2 gives
+::: pf-proof
+For $h\in G$, step [](#order-divides-m){.pf-ref} gives
 $$
 \operatorname{ord}(h)\mid m.
 $$
@@ -128,23 +137,29 @@ $$
 so $h$ is a root of $X^m-1$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #upper-bound}
+One has
 $$
 \abs{G}\leq m.
 $$
 
-::: {.proof}
-By step <1>3, all distinct elements of $G$ are roots of the nonzero
+::: pf-proof
+By step [](#elements-are-roots){.pf-ref}, all distinct elements of $G$ are roots of the nonzero
 degree-$m$ polynomial $X^m-1$. A nonzero polynomial of degree $m$ over a
 field has at most $m$ roots.
 :::
 
-<1>5. One also has
+:::
+
+::: {.pf-step #lower-bound}
+One also has
 $$
 \abs{G}\geq m.
 $$
 
-::: {.proof}
+::: pf-proof
 The cyclic subgroup
 $$
 \langle g\rangle
@@ -152,14 +167,17 @@ $$
 has exactly $m$ elements and is contained in $G$.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #cyclic-boxed}
+Therefore
 $$
 \boxed{G=\langle g\rangle}
 $$
 and $G$ is cyclic.
 
-::: {.proof}
-Steps <1>4 and <1>5 give
+::: pf-proof
+Steps [](#upper-bound){.pf-ref} and [](#lower-bound){.pf-ref} give
 $$
 \abs{G}=m.
 $$
@@ -167,10 +185,12 @@ But $\langle g\rangle\subseteq G$ already has $m$ elements, so the two
 finite sets are equal.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 proves the assertion for an arbitrary finite subgroup
+::: pf-qed
+Step [](#cyclic-boxed){.pf-ref} proves the assertion for an arbitrary finite subgroup
 $G\leq F^\times$.
+:::
+
 :::
 :::

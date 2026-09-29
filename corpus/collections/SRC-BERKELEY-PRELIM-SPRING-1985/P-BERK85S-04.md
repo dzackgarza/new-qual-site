@@ -43,13 +43,16 @@ $$
 c\coloneqq\operatorname{Res}_{z=1}f(z).
 $$
 
-<1>1. The function
+::: pf
+
+::: {.pf-step #g-is-holomorphic}
+The function
 $$
 g(z)\coloneqq f(z)-\frac{c}{z-1}
 $$
 extends holomorphically to the whole disk $\abs{z}<R$.
 
-::: {.proof}
+::: pf-proof
 Because $z=1$ is a simple pole of $f$ with residue $c$, its Laurent
 expansion near $1$ has the form
 $$
@@ -60,7 +63,10 @@ singularity of $g$ at $1$ is removable. Away from $1$, both terms defining
 $g$ are holomorphic on $\abs{z}<R$.
 :::
 
-<1>2. Write
+:::
+
+::: {.pf-step #bn-tends-to-zero}
+Write
 $$
 g(z)=\sum_{n=0}^{\infty}b_nz^n
 $$
@@ -69,12 +75,12 @@ $$
 b_n\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose any $\rho$ with
 $$
 1<\rho<R.
 $$
-By step <1>1, $g$ is holomorphic on a neighborhood of the closed disk
+By step [](#g-is-holomorphic){.pf-ref}, $g$ is holomorphic on a neighborhood of the closed disk
 $\abs{z}\leq\rho$. Set
 $$
 M_\rho\coloneqq\max_{\abs{z}=\rho}\abs{g(z)}.
@@ -96,12 +102,15 @@ $$
 Since $\rho>1$, the right-hand side tends to $0$.
 :::
 
-<1>3. For every $n\geq0$,
+:::
+
+::: {.pf-step #an-formula}
+For every $n\geq0$,
 $$
 a_n=b_n-c.
 $$
 
-::: {.proof}
+::: pf-proof
 For $\abs{z}<1$,
 $$
 \frac{c}{z-1}
@@ -114,7 +123,10 @@ Since $f=g+c/(z-1)$, comparison with the Maclaurin series of $f$ gives
 $a_n=b_n-c$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #limit-boxed}
+Therefore
 $$
 \boxed{
 \lim_{n\to\infty}a_n
@@ -123,17 +135,19 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#an-formula){.pf-ref},
 $$
 a_n=b_n-c,
 $$
-and step <1>2 gives $b_n\to0$.
+and step [](#bn-tends-to-zero){.pf-ref} gives $b_n\to0$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves, in particular, that the required limit exists.
+::: pf-qed
+Step [](#limit-boxed){.pf-ref} proves, in particular, that the required limit exists.
+:::
+
 :::
 :::

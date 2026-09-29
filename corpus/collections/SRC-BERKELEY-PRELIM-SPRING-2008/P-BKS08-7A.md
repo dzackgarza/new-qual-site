@@ -31,24 +31,31 @@ Find all irreducible polynomials of degree at most $4$ over $\mathbb F_2$.
 :::
 
 ::: {.solution}
-<1>1. The irreducible polynomials of degree $1$ are
+
+::: pf
+
+::: {.pf-step #degree-one-irreducibles}
+The irreducible polynomials of degree $1$ are
 $$
 x,
 \qquad
 x+1.
 $$
 
-::: {.proof}
+::: pf-proof
 These are exactly the two monic linear polynomials over $\FF_2$, and
 every nonconstant linear polynomial over a field is irreducible.
 :::
 
-<1>2. The unique irreducible polynomial of degree $2$ is
+:::
+
+::: {.pf-step #degree-two-irreducible}
+The unique irreducible polynomial of degree $2$ is
 $$
 x^2+x+1.
 $$
 
-::: {.proof}
+::: pf-proof
 A monic quadratic over a field is irreducible exactly when it has no
 root in that field. An irreducible quadratic over $\FF_2$ must have
 constant term $1$, so the only possibilities are
@@ -61,14 +68,17 @@ The first has $1$ as a root, while the second takes the value $1$ at
 both $0$ and $1$. Hence only $x^2+x+1$ is irreducible.
 :::
 
-<1>3. The irreducible polynomials of degree $3$ are
+:::
+
+::: {.pf-step #degree-three-irreducibles}
+The irreducible polynomials of degree $3$ are
 $$
 x^3+x+1,
 \qquad
 x^3+x^2+1.
 $$
 
-::: {.proof}
+::: pf-proof
 A reducible cubic over a field has a linear factor, so a cubic over
 $\FF_2$ is irreducible exactly when it has no root in $\FF_2$.
 Any irreducible cubic must have constant term $1$, so write
@@ -83,7 +93,10 @@ Thus $f(1)\ne0$ exactly when $a+b=1$. The two possibilities are
 $(a,b)=(0,1)$ and $(1,0)$, giving the displayed cubics.
 :::
 
-<1>4. A monic quartic over $\FF_2$ with no root in $\FF_2$ is one of
+:::
+
+::: {.pf-step #rootless-quartics}
+A monic quartic over $\FF_2$ with no root in $\FF_2$ is one of
 $$
 \begin{aligned}
 &x^4+x^3+1,\qquad x^4+x^2+1,\\
@@ -91,7 +104,7 @@ $$
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
 An irreducible quartic must have constant term $1$, so write
 $$
 f(x)=x^4+ax^3+bx^2+cx+1.
@@ -105,24 +118,30 @@ $a+b+c=1$. The four triples of odd parity give exactly the four
 polynomials displayed above.
 :::
 
-<1>5. Among the four quartics in step <1>4, exactly
+:::
+
+::: {.pf-step #quartic-reducibility}
+Among the four quartics in step [](#rootless-quartics){.pf-ref}, exactly
 $$
 x^4+x^2+1
 $$
 is reducible.
 
-::: {.proof}
+::: pf-proof
 A reducible quartic with no linear factor must be a product of two
-irreducible quadratics. By step <1>2, the only irreducible quadratic
+irreducible quadratics. By step [](#degree-two-irreducible){.pf-ref}, the only irreducible quadratic
 over $\FF_2$ is $q(x)=x^2+x+1$. Hence the only such reducible quartic
 is
 $$
 q(x)^2=(x^2+x+1)^2=x^4+x^2+1.
 $$
-Therefore the other three quartics in step <1>4 are irreducible.
+Therefore the other three quartics in step [](#rootless-quartics){.pf-ref} are irreducible.
 :::
 
-<1>6. The complete list is
+:::
+
+::: {.pf-step #complete-list}
+The complete list is
 $$
 \boxed{
 \begin{gathered}
@@ -135,14 +154,17 @@ x^4+x^3+x^2+x+1.
 }
 $$
 
-::: {.proof}
-Steps <1>1--<1>5 classify every degree from $1$ through $4$ and show
+::: pf-proof
+Steps [](#degree-one-irreducibles){.pf-ref}, [](#degree-two-irreducible){.pf-ref}, [](#degree-three-irreducibles){.pf-ref}, [](#rootless-quartics){.pf-ref} and [](#quartic-reducibility){.pf-ref} classify every degree from $1$ through $4$ and show
 that no other polynomial in those degrees is irreducible.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested list.
 :::
+
+::: pf-qed
+Step [](#complete-list){.pf-ref} is the requested list.
+:::
+
+:::
+
 :::

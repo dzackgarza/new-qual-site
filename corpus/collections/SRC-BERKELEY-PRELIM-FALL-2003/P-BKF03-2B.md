@@ -39,40 +39,57 @@ whenever $1 < m < N$ and $1 < n < N$. Show that all the $u_{m,n}$ are zero.
 
 
 ::: {.solution}
+
 Suppose, for contradiction, that the array is not identically zero.
 
-<1>1. After replacing every $u_{m,n}$ by $-u_{m,n}$ if necessary, we may assume that the maximum value
+::: pf
+
+::: {.pf-step #M-positive}
+After replacing every $u_{m,n}$ by $-u_{m,n}$ if necessary, we may assume that the maximum value
 \[
 M:=\max_{1\le m,n\le N}u_{m,n}
 \]
 is strictly positive.
-::: {.proof}
+
+::: pf-proof
 If some entry is positive, then the maximum is positive already.
 If no entry is positive but the array is nonzero, then some entry is negative; replacing the entire array by its negative preserves both the zero boundary conditions and the averaging equations, and produces a positive entry.
 :::
 
-<1>2. Every point at which the value $M$ is attained lies in the interior.
-::: {.proof}
+:::
+
+::: {.pf-step #max-in-interior}
+Every point at which the value $M$ is attained lies in the interior.
+
+::: pf-proof
 Every boundary value is $0$ by hypothesis, whereas $M>0$.
 Hence no maximizing point can have $m\in\{1,N\}$ or $n\in\{1,N\}$.
 :::
 
-<1>3. Choose a maximizing point $(m,n)$ with $m$ minimal.
+:::
+
+::: {.pf-step #neighbor-strictly-less}
+Choose a maximizing point $(m,n)$ with $m$ minimal.
 Then
 \[
 u_{m-1,n}<M,
 \]
 while each of the other three neighboring values is at most $M$.
-::: {.proof}
-By <1>2, $1<m<N$ and $1<n<N$, so all four neighbors are defined.
+
+::: pf-proof
+By step [](#max-in-interior){.pf-ref}, $1<m<N$ and $1<n<N$, so all four neighbors are defined.
 Since $M$ is the global maximum, every neighbor is at most $M$.
 If $u_{m-1,n}=M$, then $(m-1,n)$ would also be a maximizing point with smaller first coordinate, contradicting the choice of $m$.
 Thus $u_{m-1,n}<M$.
 :::
 
-<1>4. The averaging identity now contradicts $u_{m,n}=M$.
-::: {.proof}
-Using <1>3,
+:::
+
+::: {.pf-step #contradiction-all-zero}
+The averaging identity now contradicts $u_{m,n}=M$.
+
+::: pf-proof
+Using step [](#neighbor-strictly-less){.pf-ref},
 \[
 \begin{aligned}
 u_{m,n}
@@ -87,5 +104,10 @@ Therefore
 \boxed{u_{m,n}=0\text{ for all }1\le m,n\le N}.
 \]
 :::
+
+:::
+
+:::
+
 :::
 

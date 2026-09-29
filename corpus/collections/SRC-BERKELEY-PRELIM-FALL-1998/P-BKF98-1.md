@@ -31,13 +31,17 @@ is contained in at least one $U_\alpha$.
 :::
 
 ::: {.solution}
-<1>1. For every $p\in C$, there are an index $\alpha(p)\in I$ and a number
+
+::: pf
+
+::: {.pf-step #local-double-ball-in-cover}
+For every $p\in C$, there are an index $\alpha(p)\in I$ and a number
 $r_p>0$ such that
 $$
 B(p,2r_p)\subseteq U_{\alpha(p)}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since the family $(U_\alpha)$ covers $C$, choose $\alpha(p)$ with
 $$
 p\in U_{\alpha(p)}.
@@ -53,7 +57,10 @@ r_p=\frac{\rho_p}{2}.
 $$
 :::
 
-<1>2. There are points
+:::
+
+::: {.pf-step #finite-subcover-of-half-balls}
+There are points
 $$
 p_1,\ldots,p_m\in C
 $$
@@ -64,7 +71,7 @@ C
 \bigcup_{j=1}^m B(p_j,r_{p_j}).
 $$
 
-::: {.proof}
+::: pf-proof
 The balls
 $$
 B(p,r_p),
@@ -75,7 +82,10 @@ form an open cover of the compact set $C$. Compactness gives a finite
 subcover.
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #epsilon-positive}
+Define
 $$
 \varepsilon
 \coloneqq
@@ -86,20 +96,23 @@ $$
 \varepsilon>0.
 $$
 
-::: {.proof}
+::: pf-proof
 Every $r_{p_j}$ is positive, and the minimum is taken over finitely many
 numbers.
 :::
 
-<1>4. For every $p\in C$, there is some $j$ such that
+:::
+
+::: {.pf-step #q-in-double-ball}
+For every $p\in C$, there is some $j$ such that
 $$
 B(p,\varepsilon)
 \subseteq
 B(p_j,2r_{p_j}).
 $$
 
-::: {.proof}
-Fix $p\in C$. By step <1>2, choose $j$ such that
+::: pf-proof
+Fix $p\in C$. By step [](#finite-subcover-of-half-balls){.pf-ref}, choose $j$ such that
 $$
 d(p,p_j)<r_{p_j}.
 $$
@@ -107,7 +120,7 @@ If
 $$
 q\in B(p,\varepsilon),
 $$
-then step <1>3 gives
+then step [](#epsilon-positive){.pf-ref} gives
 $$
 d(q,p)<\varepsilon\leq r_{p_j}.
 $$
@@ -124,14 +137,17 @@ $$
 Thus $q\in B(p_j,2r_{p_j})$.
 :::
 
-<1>5. For every $p\in C$, the ambient ball
+:::
+
+::: {.pf-step #ball-in-original-cover-member}
+For every $p\in C$, the ambient ball
 $$
 B(p,\varepsilon)
 $$
 is contained in one member of the original cover.
 
-::: {.proof}
-Choose $j$ as in step <1>4. By step <1>1,
+::: pf-proof
+Choose $j$ as in step [](#q-in-double-ball){.pf-ref}. By step [](#local-double-ball-in-cover){.pf-ref},
 $$
 B(p_j,2r_{p_j})
 \subseteq
@@ -145,10 +161,13 @@ U_{\alpha(p_j)}.
 $$
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-The positive number $\varepsilon$ from step <1>3 has the required property
-by step <1>5.
 :::
+
+::: pf-qed
+The positive number $\varepsilon$ from step [](#epsilon-positive){.pf-ref} has the required property
+by step [](#ball-in-original-cover-member){.pf-ref}.
+:::
+
+:::
+
 :::

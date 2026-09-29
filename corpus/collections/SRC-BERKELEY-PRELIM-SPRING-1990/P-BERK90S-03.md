@@ -36,23 +36,32 @@ $$
 Put $C\coloneqq\sum_{j=0}^{n-1}\abs{c_j}^2$. Let $\zeta\in\CC$ be a
 zero of the polynomial, and put $r\coloneqq\abs{\zeta}$.
 
-<1>1. If $C=0$, then $r<\sqrt{1+C}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #case-c-zero}
+If $C=0$, then $r<\sqrt{1+C}$.
+
+::: pf-proof
 Every summand defining $C$ is nonnegative. Thus $C=0$ forces every
 coefficient $c_j$ to vanish. The polynomial is then $z^n$, so $\zeta=0$
 and $r=0<1=\sqrt{1+C}$.
 :::
 
-<1>2. If $C>0$ and $r\leq1$, then $r<\sqrt{1+C}$.
+:::
 
-::: {.proof}
+::: {.pf-step #case-small-r}
+If $C>0$ and $r\leq1$, then $r<\sqrt{1+C}$.
+
+::: pf-proof
 The assumption $C>0$ gives $r\leq1<\sqrt{1+C}$.
 :::
 
-<1>3. If $C>0$ and $r>1$, then $r<\sqrt{1+C}$.
+:::
 
-::: {.proof}
+::: {.pf-step #case-large-r}
+If $C>0$ and $r>1$, then $r<\sqrt{1+C}$.
+
+::: pf-proof
 The equation defining $\zeta$ gives
 $$
 \zeta^n=-\sum_{j=0}^{n-1}c_j\zeta^j.
@@ -77,11 +86,13 @@ The last inequality is strict because $C>0$ and $r^{-2n}>0$.
 Consequently $r^2<1+C$, and taking nonnegative square roots proves the claim.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Since $C\geq0$ and $r\geq0$, steps <1>1--<1>3 cover every case and show
+::: pf-qed
+Since $C\geq0$ and $r\geq0$, steps [](#case-c-zero){.pf-ref}, [](#case-small-r){.pf-ref}, and [](#case-large-r){.pf-ref} cover every case and show
 that $\abs{\zeta}<\sqrt{1+C}$. The zero $\zeta$ was arbitrary, so every
 zero lies in the stated open disk.
+:::
+
 :::
 :::

@@ -45,7 +45,10 @@ P_2=[0:1:0]
 $$
 in $\PP^2$ with coordinates $[x_0:x_1:x_2]$.
 
-<1>1. The vector space of conics through $P_1$ and $P_2$ has basis
+::: pf
+
+::: {.pf-step #conics-through-two-points-basis}
+The vector space of conics through $P_1$ and $P_2$ has basis
 $$
 x_0^2,
 \qquad
@@ -56,7 +59,7 @@ x_0x_2,
 x_1x_2.
 $$
 
-::: {.proof}
+::: pf-proof
 A general conic is a linear combination of
 $$
 x_0^2, x_1^2, x_2^2, x_0x_1, x_0x_2, x_1x_2.
@@ -66,7 +69,10 @@ vanishing at $P_2$ forces the coefficient of $x_1^2$ to be zero. The four
 remaining monomials are linearly independent and give the displayed basis.
 :::
 
-<1>2. The corresponding rational map is
+:::
+
+::: {.pf-step #rational-map-base-locus}
+The corresponding rational map is
 $$
 \phi:\PP^2\dashrightarrow\PP^3,
 \qquad
@@ -76,7 +82,7 @@ $$
 $$
 Its base locus is exactly $\{P_1,P_2\}$.
 
-::: {.proof}
+::: pf-proof
 All four coordinates vanish precisely when
 $$
 x_0=0,
@@ -91,7 +97,10 @@ $$
 $$
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #lifts-to-morphism}
+Let
 $$
 \pi:X'=\operatorname{Bl}_{\{P_1,P_2\}}\PP^2\longrightarrow\PP^2
 $$
@@ -100,7 +109,7 @@ $$
 \psi:X'\longrightarrow\PP^3.
 $$
 
-::: {.proof}
+::: pf-proof
 If $H$ denotes the pullback of the class of a line and $E_1,E_2$ the two
 exceptional curves, then the strict transforms of the conics through the
 base points form the complete linear system
@@ -111,12 +120,15 @@ Blowing up the two simple base points removes the base locus, so this linear
 system is base-point free and defines the asserted morphism.
 :::
 
-<1>4. The image of $\psi$ is contained in the quadric
+:::
+
+::: {.pf-step #image-in-quadric}
+The image of $\psi$ is contained in the quadric
 $$
 Y=V(y_0y_3-y_1y_2)\subseteq\PP^3.
 $$
 
-::: {.proof}
+::: pf-proof
 Write the four target coordinates in the order
 $$
 [y_0:y_1:y_2:y_3]
@@ -136,9 +148,12 @@ $$
 Thus every point in the image satisfies the quadric equation.
 :::
 
-<1>5. The quadric $Y$ is nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #quadric-nonsingular}
+The quadric $Y$ is nonsingular.
+
+::: pf-proof
 For
 $$
 F=y_0y_3-y_1y_2,
@@ -157,9 +172,12 @@ They vanish simultaneously only at the zero vector, which is not a point of
 $\PP^3$. Hence $Y$ is nonsingular.
 :::
 
-<1>6. The morphism $\psi$ is birational onto $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #birational-onto-quadric}
+The morphism $\psi$ is birational onto $Y$.
+
+::: pf-proof
 On the dense open set $x_0\ne0$, scale so $x_0=1$. Then
 $$
 \phi([1:x_1:x_2])
@@ -180,7 +198,10 @@ dense opens and is birational. Since its image is a closed irreducible
 surface contained in the irreducible surface $Y$, the image is all of $Y$.
 :::
 
-<1>7. Let $L\subseteq X'$ be the strict transform of the line
+:::
+
+::: {.pf-step #exceptional-line-contracted}
+Let $L\subseteq X'$ be the strict transform of the line
 $$
 x_0=0
 $$
@@ -195,7 +216,7 @@ $$
 p=[0:0:0:1]\in Y.
 $$
 
-::: {.proof}
+::: pf-proof
 The class formula is the standard strict-transform formula, and therefore
 $$
 L^2
@@ -225,7 +246,10 @@ $$
 $$
 :::
 
-<1>8. Projection from $p$ defines the rational inverse
+:::
+
+::: {.pf-step #projection-inverse}
+Projection from $p$ defines the rational inverse
 $$
 \rho:Y\dashrightarrow\PP^2,
 \qquad
@@ -234,12 +258,12 @@ $$
 [y_0:y_1:y_2].
 $$
 
-::: {.proof}
+::: pf-proof
 The map is defined away from $p$, the unique point of $Y$ at which
 $$
 y_0=y_1=y_2=0.
 $$
-On $y_0\ne0$, step <1>6 shows directly that it is inverse to $\phi$.
+On $y_0\ne0$, step [](#birational-onto-quadric){.pf-ref} shows directly that it is inverse to $\phi$.
 
 On the quadric, the two ruling lines through $p$ are
 $$
@@ -257,7 +281,10 @@ respectively. Thus $\rho$ is exactly the birational inverse whose two
 exceptional images are the base points of $\phi$.
 :::
 
-<1>9. The graph of $\rho$ is simultaneously
+:::
+
+::: {.pf-step #graph-is-blowup-both-ways}
+The graph of $\rho$ is simultaneously
 $$
 \operatorname{Bl}_pY
 $$
@@ -266,7 +293,7 @@ $$
 \operatorname{Bl}_{\{P_1,P_2\}}\PP^2=X'.
 $$
 
-::: {.proof}
+::: pf-proof
 For projection of a projective variety from a point $p$, the closure of the
 graph is the blowup of the variety at the base point of that projection.
 Hence the graph of $\rho$ is $\operatorname{Bl}_pY$.
@@ -285,7 +312,10 @@ X'\cong\operatorname{Bl}_pY.
 $$
 :::
 
-<1>10. Consequently the conic system gives the required morphism and
+:::
+
+::: {.pf-step #morphism-and-isomorphism-summary}
+Consequently the conic system gives the required morphism and
 identification:
 $$
 \boxed{
@@ -294,15 +324,17 @@ X'\xrightarrow{\psi}Y\subseteq\PP^3,
 X'\cong\operatorname{Bl}_pY.}
 $$
 
-::: {.proof}
-Steps <1>3--<1>6 construct the morphism onto the nonsingular quadric.
-Steps <1>7--<1>9 identify its unique contracted $(-1)$-curve and show that
+::: pf-proof
+Steps [](#lifts-to-morphism){.pf-ref}, [](#image-in-quadric){.pf-ref}, [](#quadric-nonsingular){.pf-ref} and [](#birational-onto-quadric){.pf-ref} construct the morphism onto the nonsingular quadric.
+Steps [](#exceptional-line-contracted){.pf-ref}, [](#projection-inverse){.pf-ref} and [](#graph-is-blowup-both-ways){.pf-ref} identify its unique contracted $(-1)$-curve and show that
 the morphism is the blowdown inverse to blowing up the point $p\in Y$.
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>10 prove both assertions of the exercise.
+::: pf-qed
+Steps [](#conics-through-two-points-basis){.pf-ref}, [](#rational-map-base-locus){.pf-ref}, [](#lifts-to-morphism){.pf-ref}, [](#image-in-quadric){.pf-ref}, [](#quadric-nonsingular){.pf-ref}, [](#birational-onto-quadric){.pf-ref}, [](#exceptional-line-contracted){.pf-ref}, [](#projection-inverse){.pf-ref}, [](#graph-is-blowup-both-ways){.pf-ref} and [](#morphism-and-isomorphism-summary){.pf-ref} prove both assertions of the exercise.
+:::
+
 :::
 :::

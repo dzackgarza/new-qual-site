@@ -40,9 +40,14 @@ denotes the set of $2\times 2$ real matrices.)
 :::
 
 ::: {.solution}
-<1>1. If $z^HAz=0$ for every $z\in\mathbb C^n$, then every diagonal entry of $A$ is
+
+::: pf
+
+::: {.pf-step #diagonal-entries-zero}
+If $z^HAz=0$ for every $z\in\mathbb C^n$, then every diagonal entry of $A$ is
 zero.
-::: {.proof}
+
+::: pf-proof
 Write $A=(a_{ij})$ and let $e_i$ be the $i$th standard basis vector. Taking $z=e_i$
 gives
 \[
@@ -51,9 +56,13 @@ gives
 Thus $a_{ii}=0$ for every $i$.
 :::
 
-<1>2. Every off-diagonal entry of $A$ is also zero; hence $A=0$.
-::: {.proof}
-Fix $i\neq j$. Taking $z=e_i+e_j$ and using <1>1 gives
+:::
+
+::: {.pf-step #a-is-zero}
+Every off-diagonal entry of $A$ is also zero; hence $A=0$.
+
+::: pf-proof
+Fix $i\neq j$. Taking $z=e_i+e_j$ and using step [](#diagonal-entries-zero){.pf-ref} gives
 \[
 0=(e_i+e_j)^HA(e_i+e_j)=a_{ij}+a_{ji}.
 \]
@@ -65,12 +74,16 @@ Hence $a_{ij}+a_{ji}=0$ and $a_{ij}-a_{ji}=0$, so $a_{ij}=a_{ji}=0$. Since this 
 for every $i\neq j$, all entries of $A$ vanish.
 :::
 
-<1>3. For part (b), the matrix
+:::
+
+::: {.pf-step #part-b-example}
+For part (b), the matrix
 \[
 A=\begin{pmatrix}0&1\\-1&0\end{pmatrix}
 \]
 is nonzero and satisfies $x^TAx=0$ for every $x\in\mathbb R^2$.
-::: {.proof}
+
+::: pf-proof
 For $x=(u,v)^T$,
 \[
 x^TAx=(u,v)\begin{pmatrix}v\\-u\end{pmatrix}=uv-vu=0.
@@ -78,8 +91,12 @@ x^TAx=(u,v)\begin{pmatrix}v\\-u\end{pmatrix}=uv-vu=0.
 The matrix is visibly nonzero.
 :::
 
-<1>4. If $A$ is normal, then $\|Ax\|_2=\|A^Hx\|_2$ for every $x\in\mathbb C^n$.
-::: {.proof}
+:::
+
+::: {.pf-step #normal-implies-norm-equal}
+If $A$ is normal, then $\|Ax\|_2=\|A^Hx\|_2$ for every $x\in\mathbb C^n$.
+
+::: pf-proof
 Normality means $A^HA=AA^H$. Therefore
 \[
 \|Ax\|_2^2=x^HA^HAx=x^HAA^Hx=\|A^Hx\|_2^2.
@@ -87,34 +104,55 @@ Normality means $A^HA=AA^H$. Therefore
 Both norms are nonnegative, so they are equal.
 :::
 
-<1>5. Conversely, if $\|Ax\|_2=\|A^Hx\|_2$ for every $x$, then $A$ is normal.
-::: {.proof}
+:::
+
+::: {.pf-step #norm-equal-implies-normal}
+Conversely, if $\|Ax\|_2=\|A^Hx\|_2$ for every $x$, then $A$ is normal.
+
+::: pf-proof
 For every $x$,
 \[
 0=\|Ax\|_2^2-\|A^Hx\|_2^2
  =x^H(A^HA-AA^H)x.
 \]
-Applying part (a), proved in <1>1--<1>2, to the matrix $A^HA-AA^H$ gives
+Applying part (a) (steps [](#diagonal-entries-zero){.pf-ref} and [](#a-is-zero){.pf-ref}) to the matrix $A^HA-AA^H$ gives
 \[
 A^HA-AA^H=0.
 \]
 Thus $A$ is normal.
 :::
 
-<1>6. If $A$ is normal, then $(Ax,Ay)=(A^Hx,A^Hy)$ for every $x,y\in\mathbb C^n$.
-::: {.proof}
+:::
+
+::: {.pf-step #normal-implies-inner-product-equal}
+If $A$ is normal, then $(Ax,Ay)=(A^Hx,A^Hy)$ for every $x,y\in\mathbb C^n$.
+
+::: pf-proof
 Using the standard Hermitian inner product $(u,v)=u^Hv$ and $A^HA=AA^H$,
 \[
 (Ax,Ay)=x^HA^HAy=x^HAA^Hy=(A^Hx,A^Hy).
 \]
 :::
 
-<1>7. Conversely, if $(Ax,Ay)=(A^Hx,A^Hy)$ for all $x,y$, then $A$ is normal.
-::: {.proof}
+:::
+
+::: {.pf-step #inner-product-equal-implies-normal}
+Conversely, if $(Ax,Ay)=(A^Hx,A^Hy)$ for all $x,y$, then $A$ is normal.
+
+::: pf-proof
 Setting $y=x$ gives
 \[
 \|Ax\|_2^2=\|A^Hx\|_2^2
 \]
-for every $x$. By <1>5, $A$ is normal.
+for every $x$. By step [](#norm-equal-implies-normal){.pf-ref}, $A$ is normal.
 :::
+
+:::
+
+::: pf-qed
+Step [](#a-is-zero){.pf-ref} answers part (a); step [](#part-b-example){.pf-ref} answers part (b); steps [](#normal-implies-norm-equal){.pf-ref} and [](#norm-equal-implies-normal){.pf-ref} answer part (c); steps [](#normal-implies-inner-product-equal){.pf-ref} and [](#inner-product-equal-implies-normal){.pf-ref} answer part (d).
+:::
+
+:::
+
 :::

@@ -44,18 +44,22 @@ for the usual inner product.
 :::
 
 ::: {.solution}
+
 Let
 $$
 e_1,\ldots,e_n
 $$
 be the standard basis of $\RR^n$.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #f-zero-at-origin}
+One has
 $$
 f(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Apply the homogeneity hypothesis with $t=0$:
 $$
 f(0)
@@ -67,12 +71,15 @@ f(0x)
 $$
 :::
 
-<1>2. For every $x\in\RR^n$,
+:::
+
+::: {.pf-step #g-diagonal-twice-f}
+For every $x\in\RR^n$,
 $$
 g(x,x)=2f(x).
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 g(x,x)
@@ -93,7 +100,10 @@ g(x,x)
 $$
 :::
 
-<1>3. Define the real matrix
+:::
+
+::: {.pf-step #matrix-A-definition}
+Define the real matrix
 $$
 A=(a_{ij})
 $$
@@ -108,19 +118,22 @@ $$
 A:\RR^n\longrightarrow\RR^n.
 $$
 
-::: {.proof}
+::: pf-proof
 Every real $n\times n$ matrix defines a linear endomorphism of $\RR^n$ in
 the standard basis.
 :::
 
-<1>4. For every $x\in\RR^n$,
+:::
+
+::: {.pf-step #quadratic-form-equals-half-g}
+For every $x\in\RR^n$,
 $$
 \langle x,Ax\rangle
 =
 \frac12g(x,x).
 $$
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 x=\sum_{i=1}^n x_i e_i.
@@ -147,26 +160,32 @@ $$
 This gives the identity.
 :::
 
-<1>5. For every $x\in\RR^n$,
+:::
+
+::: {.pf-step #f-equals-quadratic-form}
+For every $x\in\RR^n$,
 $$
 \boxed{
 f(x)=\langle x,Ax\rangle
 }.
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+Step [](#g-diagonal-twice-f){.pf-ref} gives
 $$
 f(x)=\frac12g(x,x),
 $$
-and step <1>4 identifies the right side with
+and step [](#quadratic-form-equals-half-g){.pf-ref} identifies the right side with
 $\langle x,Ax\rangle$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-The linear transformation constructed in step <1>3 has the required
-property by step <1>5.
 :::
+
+::: pf-qed
+The linear transformation constructed in step [](#matrix-A-definition){.pf-ref} has the required
+property by step [](#f-equals-quadratic-form){.pf-ref}.
+:::
+
+:::
+
 :::

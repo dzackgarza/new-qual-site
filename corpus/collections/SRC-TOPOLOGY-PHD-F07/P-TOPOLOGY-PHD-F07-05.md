@@ -44,8 +44,12 @@ r:D\longrightarrow[0,1),
 r(z)=|z|.
 \]
 
-<1>1. The modulus map $r$ is constant exactly on the equivalence classes of $\sim$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #r-constant-on-classes}
+The modulus map $r$ is constant exactly on the equivalence classes of $\sim$.
+
+::: pf-proof
 By definition,
 \[
 z_1\sim z_2
@@ -57,7 +61,10 @@ r(z_1)=r(z_2).
 Thus the fibers of $r$ are precisely the equivalence classes.
 :::
 
-<1>2. There is a unique continuous map
+:::
+
+::: {.pf-step #bar-r-continuous}
+There is a unique continuous map
 \[
 \bar r:D/\!\sim\longrightarrow[0,1)
 \]
@@ -65,16 +72,21 @@ satisfying
 \[
 \bar r(q(z))=|z|.
 \]
-::: {.proof}
-The modulus map $r$ is continuous and is constant on equivalence classes by <1>1. By the universal property of the quotient topology, $r$ therefore factors uniquely as
+
+::: pf-proof
+The modulus map $r$ is continuous and is constant on equivalence classes by step [](#r-constant-on-classes){.pf-ref}. By the universal property of the quotient topology, $r$ therefore factors uniquely as
 \[
 r=\bar r\circ q
 \]
 with $\bar r$ continuous.
 :::
 
-<1>3. The map $\bar r$ is bijective.
-::: {.proof}
+:::
+
+::: {.pf-step #bar-r-bijective}
+The map $\bar r$ is bijective.
+
+::: pf-proof
 For surjectivity, if $t\in[0,1)$, regard $t$ as the point $t+0i\in D$.
 Then
 \[
@@ -87,13 +99,17 @@ For injectivity, if
 then $|z_1|=|z_2|$, so $z_1\sim z_2$ by definition and hence $q(z_1)=q(z_2)$.
 :::
 
-<1>4. The inverse of $\bar r$ is the continuous map
+:::
+
+::: {.pf-step #bar-r-inverse}
+The inverse of $\bar r$ is the continuous map
 \[
 s:[0,1)\longrightarrow D/\!\sim,
 \qquad
 s(t)=q(t).
 \]
-::: {.proof}
+
+::: pf-proof
 The inclusion
 \[
 j:[0,1)\longrightarrow D,
@@ -120,14 +136,23 @@ Since $z\sim |z|$, their quotient classes agree, so $q(|z|)=q(z)$.
 Hence $s$ and $\bar r$ are mutual inverses.
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 D/\!\sim\ \cong [0,1),
 \]
 and in particular $D/\!\sim$ is Hausdorff.
-::: {.proof}
-By <1>2--<1>4, $\bar r$ is a homeomorphism.
+
+::: pf-proof
+By steps [](#bar-r-continuous){.pf-ref}, [](#bar-r-bijective){.pf-ref}, and [](#bar-r-inverse){.pf-ref}, $\bar r$ is a homeomorphism.
 The interval $[0,1)$ is a subspace of the Hausdorff space $\mathbb R$, hence is Hausdorff.
 Hausdorffness is preserved by homeomorphism, so the quotient is Hausdorff.
 :::
+
+:::
+
+:::
+
 :::

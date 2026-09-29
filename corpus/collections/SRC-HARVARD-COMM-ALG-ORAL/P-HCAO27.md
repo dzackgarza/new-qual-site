@@ -37,22 +37,30 @@ S=k[x_1,\ldots,x_n]
 with its standard grading, and suppose $I\subseteq S$ is homogeneous. Choose a
 term order and compute a Gröbner basis $G$ of $I$.
 
-<1>1. The initial monomial ideal of $I$ is
+::: pf
+
+::: pf-step
+The initial monomial ideal of $I$ is
 \[
 \operatorname{in}(I)
 =\langle \operatorname{in}(g):g\in G\rangle.
 \]
-::: {.proof}
+
+::: pf-proof
 By definition of a Gröbner basis, the leading monomials of the elements of $G$
 generate the initial ideal.
 :::
 
-<1>2. For every degree $d$,
+:::
+
+::: {.pf-step #basis-of-quotient-degree-d}
+For every degree $d$,
 \[
 \dim_k(S/I)_d
 =\dim_k(S/\operatorname{in}(I))_d.
 \]
-::: {.proof}
+
+::: pf-proof
 The monomials not lying in $\operatorname{in}(I)$ are the standard monomials.
 Division by the Gröbner basis gives every class in $S/I$ a unique remainder
 which is a $k$-linear combination of standard monomials. When $I$ is
@@ -60,22 +68,30 @@ homogeneous, this reduction preserves degree. Hence the degree-$d$ standard
 monomials form a $k$-basis of $(S/I)_d$.
 :::
 
-<1>3. Therefore the Hilbert function of $S/I$ is computed by counting standard
+:::
+
+::: pf-step
+Therefore the Hilbert function of $S/I$ is computed by counting standard
 monomials:
 \[
 H_{S/I}(d)
 =\#\{x^\alpha:|\alpha|=d,\ x^\alpha\notin\operatorname{in}(I)\}.
 \]
-::: {.proof}
-This is the basis description from <1>2.
+
+::: pf-proof
+This is the basis description from step [](#basis-of-quotient-degree-d){.pf-ref}.
 :::
 
-<1>4. The Hilbert function of the ideal $I$ is
+:::
+
+::: pf-step
+The Hilbert function of the ideal $I$ is
 \[
 H_I(d)=\dim_k I_d
 =\binom{n+d-1}{d}-H_{S/I}(d).
 \]
-::: {.proof}
+
+::: pf-proof
 The degree-$d$ component of
 \[
 0\longrightarrow I\longrightarrow S\longrightarrow S/I\longrightarrow0
@@ -84,5 +100,9 @@ is an exact sequence of finite-dimensional $k$-vector spaces, and
 \[
 \dim_k S_d=\binom{n+d-1}{d}.
 \]
+:::
+
+:::
+
 :::
 :::

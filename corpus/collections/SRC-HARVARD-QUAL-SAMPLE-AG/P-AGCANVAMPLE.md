@@ -29,16 +29,23 @@ When is a canonical divisor very ample?
 ::: {.solution}
 Let $C$ be a smooth projective curve of genus $g$ over an algebraically closed field.
 
-<1>1. A divisor $L$ on $C$ is very ample if and only if
+::: pf
+
+::: {.pf-step #very-ample-criterion}
+A divisor $L$ on $C$ is very ample if and only if
 \[
 \ell(L-p-q)=\ell(L)-2
 \]
 for every pair of points $p,q\in C$, allowing $p=q$.
-::: {.proof}
+
+::: pf-proof
 For $p\ne q$, this condition says that the complete linear system $|L|$ separates the two points.  For $p=q$, it says that $|L|$ separates tangent directions at $p$.  A base-point-free linear system defines a closed immersion exactly when it separates points and tangent vectors, which is the stated length-two criterion.
 :::
 
-<1>2. Assume $g\ge2$.  For every effective divisor
+:::
+
+::: {.pf-step #length-formula}
+Assume $g\ge2$.  For every effective divisor
 \[
 D=p+q
 \]
@@ -46,7 +53,8 @@ of degree $2$,
 \[
 \boxed{\ell(K_C-D)=g-3+\ell(D).}
 \]
-::: {.proof}
+
+::: pf-proof
 Riemann--Roch for $D$ gives
 \[
 \ell(D)-\ell(K_C-D)
@@ -56,7 +64,10 @@ Riemann--Roch for $D$ gives
 Rearranging yields the displayed formula.
 :::
 
-<1>3. Since
+:::
+
+::: {.pf-step #canonical-very-ample-condition}
+Since
 \[
 \ell(K_C)=g,
 \]
@@ -65,24 +76,29 @@ the canonical divisor is very ample exactly when
 \ell(D)=1
 \]
 for every effective divisor $D$ of degree $2$.
-::: {.proof}
-By <1>1, $K_C$ is very ample exactly when
+
+::: pf-proof
+By step [](#very-ample-criterion){.pf-ref}, $K_C$ is very ample exactly when
 \[
 \ell(K_C-D)=\ell(K_C)-2=g-2
 \]
-for every degree-two effective $D$.  By <1>2, this becomes
+for every degree-two effective $D$.  By step [](#length-formula){.pf-ref}, this becomes
 \[
 g-3+\ell(D)=g-2,
 \]
 which is equivalent to $\ell(D)=1$.
 :::
 
-<1>4. For a curve of genus at least $2$, there exists an effective degree-two divisor $D$ with
+:::
+
+::: {.pf-step #hyperelliptic-criterion}
+For a curve of genus at least $2$, there exists an effective degree-two divisor $D$ with
 \[
 \ell(D)\ge2
 \]
 if and only if $C$ is hyperelliptic.
-::: {.proof}
+
+::: pf-proof
 Such a divisor carries a pencil of meromorphic functions with poles bounded by $D$.  The associated nonconstant map
 \[
 C\longrightarrow\mathbb P^1
@@ -96,17 +112,24 @@ C\longrightarrow\mathbb P^1
 pulls a point of $\mathbb P^1$ back to a degree-two divisor whose complete linear system contains the pulled-back pencil, so $\ell(D)\ge2$.
 :::
 
-<1>5. Therefore, for $g\ge2$,
+:::
+
+::: {.pf-step #genus-geq-2-equivalence}
+Therefore, for $g\ge2$,
 \[
 K_C\text{ is very ample}
 \quad\Longleftrightarrow\quad
 C\text{ is nonhyperelliptic}.
 \]
-::: {.proof}
-Combine <1>3 and <1>4.
+
+::: pf-proof
+Combine steps [](#canonical-very-ample-condition){.pf-ref} and [](#hyperelliptic-criterion){.pf-ref}.
 :::
 
-<1>6. The low-genus cases give the final criterion
+:::
+
+::: {.pf-step #final-criterion}
+The low-genus cases give the final criterion
 \[
 \boxed{
 K_C\text{ is very ample}
@@ -114,7 +137,8 @@ K_C\text{ is very ample}
 g\ge3\text{ and }C\text{ is nonhyperelliptic}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 If $g=0$, then
 \[
 \deg K_C=-2,
@@ -143,11 +167,15 @@ C\longrightarrow\mathbb P^1,
 \]
 not an embedding.
 
-For $g\ge3$, <1>5 gives the asserted equivalence.
+For $g\ge3$, step [](#genus-geq-2-equivalence){.pf-ref} gives the asserted equivalence.
 :::
 
-<1>7. In the hyperelliptic case, the canonical map is explicitly two-to-one onto a rational normal curve of degree $g-1$ in $\mathbb P^{g-1}$.
-::: {.proof}
+:::
+
+::: {.pf-step #hyperelliptic-canonical-map}
+In the hyperelliptic case, the canonical map is explicitly two-to-one onto a rational normal curve of degree $g-1$ in $\mathbb P^{g-1}$.
+
+::: pf-proof
 Let
 \[
 \pi:C\longrightarrow\mathbb P^1
@@ -182,8 +210,11 @@ C\xrightarrow{\pi}\mathbb P^1
 where the second map is the rational normal curve embedding.  The first map has degree $2$, so the composition cannot be an embedding.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Step <1>6 is the requested criterion; step <1>7 describes the exceptional hyperelliptic map geometrically.
+:::
+
+::: pf-qed
+Step [](#final-criterion){.pf-ref} is the requested criterion; step [](#hyperelliptic-canonical-map){.pf-ref} describes the exceptional hyperelliptic map geometrically.
+:::
+
 :::
 :::

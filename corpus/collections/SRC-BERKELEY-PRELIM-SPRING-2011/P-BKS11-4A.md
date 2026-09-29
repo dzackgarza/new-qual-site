@@ -30,13 +30,16 @@ Let $M _ { n } ( k )$ be the n by n matrices over a field k. Find (with proof) a
 ::: {.solution}
 For $1\leq i,j\leq n$, let $E_{ij}$ denote the standard matrix unit.
 
-<1>1. Every admissible linear map $f$ vanishes on every commutator:
+::: pf
+
+::: {.pf-step #f-vanishes-on-commutators}
+Every admissible linear map $f$ vanishes on every commutator:
 $$
 f([A,B])=0
 $$
 for all $A,B\in M_n(k)$.
 
-::: {.proof}
+::: pf-proof
 By linearity and the hypothesis,
 $$
 f([A,B])
@@ -49,12 +52,15 @@ f(AB)-f(BA)
 $$
 :::
 
-<1>2. If $i\neq j$, then
+:::
+
+::: {.pf-step #f-off-diagonal-zero}
+If $i\neq j$, then
 $$
 f(E_{ij})=0.
 $$
 
-::: {.proof}
+::: pf-proof
 For $i\neq j$,
 $$
 [E_{ii},E_{ij}]
@@ -65,22 +71,25 @@ E_{ij}-0
 =
 E_{ij}.
 $$
-Apply step <1>1.
+Apply step [](#f-vanishes-on-commutators){.pf-ref}.
 :::
 
-<1>3. If $i\neq j$, then
+:::
+
+::: {.pf-step #f-diagonal-equal}
+If $i\neq j$, then
 $$
 f(E_{ii})=f(E_{jj}).
 $$
 
-::: {.proof}
+::: pf-proof
 One has
 $$
 [E_{ij},E_{ji}]
 =
 E_{ii}-E_{jj}.
 $$
-Step <1>1 therefore gives
+Step [](#f-vanishes-on-commutators){.pf-ref} therefore gives
 $$
 0
 =
@@ -90,13 +99,16 @@ f(E_{ii})-f(E_{jj}).
 $$
 :::
 
-<1>4. There is a scalar $c\in k$ such that
+:::
+
+::: {.pf-step #f-necessity}
+There is a scalar $c\in k$ such that
 $$
 f(A)=c\operatorname{tr}(A)
 $$
 for every $A\in M_n(k)$.
 
-::: {.proof}
+::: pf-proof
 If $n=1$, every linear map $M_1(k)=k\to k$ is multiplication by a scalar,
 so the conclusion is immediate.
 
@@ -104,11 +116,11 @@ Assume $n\geq2$ and set
 $$
 c\coloneqq f(E_{11}).
 $$
-By step <1>3,
+By step [](#f-diagonal-equal){.pf-ref},
 $$
 f(E_{ii})=c
 $$
-for every $i$, and step <1>2 gives
+for every $i$, and step [](#f-off-diagonal-zero){.pf-ref} gives
 $$
 f(E_{ij})=0
 $$
@@ -128,10 +140,13 @@ c\operatorname{tr}(A).
 $$
 :::
 
-<1>5. Conversely, every scalar multiple of the trace satisfies the required
+:::
+
+::: {.pf-step #f-sufficiency}
+Conversely, every scalar multiple of the trace satisfies the required
 identity.
 
-::: {.proof}
+::: pf-proof
 For arbitrary matrices $A=(a_{ij})$ and $B=(b_{ij})$,
 $$
 \begin{aligned}
@@ -148,7 +163,10 @@ using commutativity of the field $k$. Multiplication by any scalar
 $c\in k$ preserves the equality.
 :::
 
-<1>6. The complete family is
+:::
+
+::: {.pf-step #complete-family}
+The complete family is
 $$
 \boxed{
 f=c\operatorname{tr},
@@ -157,13 +175,16 @@ c\in k
 }.
 $$
 
-::: {.proof}
-Step <1>4 proves necessity, and step <1>5 proves sufficiency.
+::: pf-proof
+Step [](#f-necessity){.pf-ref} proves necessity, and step [](#f-sufficiency){.pf-ref} proves sufficiency.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required classification.
 :::
+
+::: pf-qed
+Step [](#complete-family){.pf-ref} is the required classification.
+:::
+
+:::
+
 :::

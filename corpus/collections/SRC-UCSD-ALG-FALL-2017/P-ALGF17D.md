@@ -35,8 +35,13 @@ If $R$ is a PID and $M$ is a finitely generated $R$-module then show that $M$ is
 :::
 
 ::: {.solution}
-<1>1. If $M$ is flat, then $M$ is torsion-free.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #flat-implies-torsion-free}
+If $M$ is flat, then $M$ is torsion-free.
+
+::: pf-proof
 Assume $R$ is a PID and $M$ is flat.
 Since a PID is an integral domain, multiplication by any nonzero element $r\in R$ defines an injective $R$-linear map
 \[
@@ -70,8 +75,12 @@ forces $m=0$.
 Thus $M$ is torsion-free.
 :::
 
-<1>2. If $M$ is finitely generated and torsion-free, then $M$ is free.
-::: {.proof}
+:::
+
+::: {.pf-step #torsion-free-implies-free}
+If $M$ is finitely generated and torsion-free, then $M$ is free.
+
+::: pf-proof
 By the structure theorem for finitely generated modules over a PID,
 \[
 M\cong R^s\oplus T,
@@ -92,8 +101,12 @@ M\cong R^s
 for some $s\ge0$, so $M$ is free.
 :::
 
-<1>3. Every free module is flat.
-::: {.proof}
+:::
+
+::: {.pf-step #free-implies-flat}
+Every free module is flat.
+
+::: pf-proof
 Let $F$ be a free $R$-module, say
 \[
 F\cong\bigoplus_{j\in J}R.
@@ -118,9 +131,17 @@ A direct sum of injective maps is injective.
 Hence $F$ is flat.
 :::
 
-<1>4. Therefore a finitely generated module over a PID is flat if and only if it is torsion-free.
-::: {.proof}
-If $M$ is flat, <1>1 gives torsion-freeness.
-If $M$ is torsion-free and finitely generated, <1>2 makes it free, and <1>3 then makes it flat.
+:::
+
+::: pf-step
+Therefore a finitely generated module over a PID is flat if and only if it is torsion-free.
+
+::: pf-proof
+If $M$ is flat, step [](#flat-implies-torsion-free){.pf-ref} gives torsion-freeness.
+If $M$ is torsion-free and finitely generated, step [](#torsion-free-implies-free){.pf-ref} makes it free, and step [](#free-implies-flat){.pf-ref} then makes it flat.
+:::
+
+:::
+
 :::
 :::

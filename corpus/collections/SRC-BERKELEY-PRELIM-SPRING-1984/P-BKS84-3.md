@@ -38,7 +38,10 @@ for every $0\le x\le1$.
 :::
 
 ::: {.solution}
-<1>1. Define
+::: pf
+
+::: {.pf-step #g-convex-setup}
+Define
 $$
 g(x)\coloneqq e^x f(x).
 $$
@@ -49,7 +52,7 @@ g''(x)\geq0
 $$
 for $0<x<1$.
 
-::: {.proof}
+::: pf-proof
 The endpoint conditions give
 $$
 g(0)=f(0)=0,
@@ -68,9 +71,12 @@ $$
 because $e^x>0$ and the assumed differential inequality holds.
 :::
 
-<1>2. The derivative $g'$ is nondecreasing on $(0,1)$.
+:::
 
-::: {.proof}
+::: {.pf-step #g-prime-nondecreasing}
+The derivative $g'$ is nondecreasing on $(0,1)$.
+
+::: pf-proof
 Let $0<a<b<1$. Since $g''$ exists on $(0,1)$, the function $g'$ is
 continuous on $[a,b]$ and differentiable on $(a,b)$. By the mean value
 theorem, for some $c\in(a,b)$,
@@ -80,15 +86,18 @@ g'(b)-g'(a)
 g''(c)(b-a)
 \geq0
 $$
-by step <1>1. Hence $g'(a)\leq g'(b)$.
+by step [](#g-convex-setup){.pf-ref}. Hence $g'(a)\leq g'(b)$.
 :::
 
-<1>3. For every $x\in(0,1)$,
+:::
+
+::: {.pf-step #g-nonpositive}
+For every $x\in(0,1)$,
 $$
 g(x)\leq0.
 $$
 
-::: {.proof}
+::: pf-proof
 Fix $x\in(0,1)$. The mean value theorem on $[0,x]$ gives
 $c\in(0,x)$ such that
 $$
@@ -102,8 +111,8 @@ $$
 =
 g'(d).
 $$
-Since $c<d$, step <1>2 gives $g'(c)\leq g'(d)$. Using
-$g(0)=g(1)=0$ from step <1>1,
+Since $c<d$, step [](#g-prime-nondecreasing){.pf-ref} gives $g'(c)\leq g'(d)$. Using
+$g(0)=g(1)=0$ from step [](#g-convex-setup){.pf-ref},
 $$
 \frac{g(x)}{x}
 \leq
@@ -116,13 +125,16 @@ $$
 and therefore $g(x)\leq0$.
 :::
 
-<1>4. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #f-nonpositive-boxed}
+For every $x\in[0,1]$,
 $$
 \boxed{f(x)\leq0}.
 $$
 
-::: {.proof}
-For $0<x<1$, step <1>3 and
+::: pf-proof
+For $0<x<1$, step [](#g-nonpositive){.pf-ref} and
 $$
 f(x)=e^{-x}g(x)
 $$
@@ -130,9 +142,11 @@ give $f(x)\leq0$ because $e^{-x}>0$. At the endpoints,
 $f(0)=f(1)=0$ by hypothesis.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-qed
+Step [](#f-nonpositive-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

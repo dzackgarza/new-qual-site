@@ -25,22 +25,31 @@ Show that the product of two Hausdorff spaces is Hausdorff.
 ::: {.solution}
 Let $X$ and $Y$ be Hausdorff, and let $p_1=(x_1,y_1)$ and $p_2=(x_2,y_2)$ be distinct points of $X\times Y$, so that $x_1\ne x_2$ or $y_1\ne y_2$.
 
-<1>1. If $x_1\ne x_2$, then $p_1$ and $p_2$ have disjoint open neighborhoods.
+::: pf
 
-::: {.proof}
+::: {.pf-step #separate-by-x}
+If $x_1\ne x_2$, then $p_1$ and $p_2$ have disjoint open neighborhoods.
+
+::: pf-proof
 Choose disjoint open $U_1\ni x_1$ and $U_2\ni x_2$ in $X$.
 Then $U_1\times Y$ and $U_2\times Y$ are open in $X\times Y$, contain $p_1$ and $p_2$, and $(U_1\times Y)\cap(U_2\times Y)=(U_1\cap U_2)\times Y=\varnothing$.
 :::
 
-<1>2. If $y_1\ne y_2$, then $p_1$ and $p_2$ have disjoint open neighborhoods.
-
-::: {.proof}
-Choose disjoint open $V_1\ni y_1$ and $V_2\ni y_2$ in $Y$; then $X\times V_1$ and $X\times V_2$ are disjoint open neighborhoods of $p_1$ and $p_2$, as in step <1>1.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #separate-by-y}
+If $y_1\ne y_2$, then $p_1$ and $p_2$ have disjoint open neighborhoods.
 
-::: {.proof}
-Steps <1>1 and <1>2 cover both cases.
+::: pf-proof
+Choose disjoint open $V_1\ni y_1$ and $V_2\ni y_2$ in $Y$; then $X\times V_1$ and $X\times V_2$ are disjoint open neighborhoods of $p_1$ and $p_2$, as in step [](#separate-by-x){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#separate-by-x){.pf-ref} and [](#separate-by-y){.pf-ref} cover both cases.
+:::
+
+:::
+
 :::

@@ -45,7 +45,10 @@ $$
 \dim\widetilde X=n.
 $$
 
-<1>1. For every $i\ge0$,
+::: pf
+
+::: {.pf-step #cohomology-invariance}
+For every $i\ge0$,
 $$
 \boxed{
 H^i(\widetilde X,\OO_{\widetilde X})
@@ -53,7 +56,7 @@ H^i(\widetilde X,\OO_{\widetilde X})
 H^i(X,\OO_X).}
 $$
 
-::: {.proof}
+::: pf-proof
 This is Hartshorne V.3.4, applied to the blowup
 $$
 \pi:\widetilde X=\operatorname{Bl}_Y X\longrightarrow X
@@ -64,7 +67,10 @@ V.3.1.  In the surface case the same fact is recorded in [[FE-SRFBLOW]] as
 the invariance of $\chi(\OO)$, $p_g$, and $q$.
 :::
 
-<1>2. The structure-sheaf Euler characteristic is unchanged:
+:::
+
+::: {.pf-step #euler-char-invariance}
+The structure-sheaf Euler characteristic is unchanged:
 $$
 \boxed{
 \chi(\widetilde X,\OO_{\widetilde X})
@@ -72,7 +78,7 @@ $$
 \chi(X,\OO_X).}
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 \chi(Z,\OO_Z)
@@ -80,24 +86,27 @@ $$
 \sum_{i\ge0}(-1)^i
 \dim_k H^i(Z,\OO_Z)
 $$
-for a projective variety $Z$.  Step <1>1 identifies every summand for
+for a projective variety $Z$.  Step [](#cohomology-invariance){.pf-ref} identifies every summand for
 $Z=\widetilde X$ with the corresponding summand for $Z=X$, so the two
 alternating sums agree.
 :::
 
-<1>3. The arithmetic genera agree:
+:::
+
+::: {.pf-step #arithmetic-genus-equal}
+The arithmetic genera agree:
 $$
 \boxed{p_a(\widetilde X)=p_a(X).}
 $$
 
-::: {.proof}
+::: pf-proof
 For a nonempty projective scheme of dimension $n$, the arithmetic genus is
 [[D-COHEULER]]
 $$
 p_a(Z)=(-1)^n\bigl(\chi(Z,\OO_Z)-1\bigr).
 $$
 The varieties $X$ and $\widetilde X$ have the same dimension $n$, and step
-<1>2 gives equality of their structure-sheaf Euler characteristics.
+[](#euler-char-invariance){.pf-ref} gives equality of their structure-sheaf Euler characteristics.
 Substitution into the displayed definition gives
 $$
 p_a(\widetilde X)
@@ -110,10 +119,12 @@ p_a(X).
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove the asserted invariance of the arithmetic genus under
+::: pf-qed
+Steps [](#cohomology-invariance){.pf-ref}, [](#euler-char-invariance){.pf-ref} and [](#arithmetic-genus-equal){.pf-ref} prove the asserted invariance of the arithmetic genus under
 blowing up a nonsingular centre.
+:::
+
 :::
 :::

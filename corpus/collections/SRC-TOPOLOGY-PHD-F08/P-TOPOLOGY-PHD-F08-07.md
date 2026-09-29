@@ -44,8 +44,12 @@ X\times Y=\varnothing
 \]
 is Hausdorff even when $X$ is not.
 
-<1>1. If $X$ and $Y$ are Hausdorff, then $X\times Y$ is Hausdorff.
-::: {.proof}
+::: pf
+
+::: {.pf-step #reverse-implication}
+If $X$ and $Y$ are Hausdorff, then $X\times Y$ is Hausdorff.
+
+::: pf-proof
 Take distinct points
 \[
 (x_1,y_1),(x_2,y_2)\in X\times Y.
@@ -83,8 +87,12 @@ X\times V_2.
 Thus any two distinct points of $X\times Y$ have disjoint open neighborhoods, so the product is Hausdorff.
 :::
 
-<1>2. Every subspace of a Hausdorff space is Hausdorff.
-::: {.proof}
+:::
+
+::: {.pf-step #subspace-hausdorff}
+Every subspace of a Hausdorff space is Hausdorff.
+
+::: pf-proof
 Let $A$ be a subspace of a Hausdorff space $Z$, and take distinct $a,b\in A$.
 Choose disjoint open sets $U,V\subseteq Z$ with
 \[
@@ -102,9 +110,13 @@ are disjoint open neighborhoods of $a,b$ in the subspace $A$.
 Hence $A$ is Hausdorff.
 :::
 
-<1>3. Assume $X\ne\varnothing$, $Y\ne\varnothing$, and $X\times Y$ is Hausdorff.
+:::
+
+::: {.pf-step #x-hausdorff}
+Assume $X\ne\varnothing$, $Y\ne\varnothing$, and $X\times Y$ is Hausdorff.
 Then $X$ is Hausdorff.
-::: {.proof}
+
+::: pf-proof
 Choose $y_0\in Y$.
 The map
 \[
@@ -116,12 +128,16 @@ is a homeomorphism: it is continuous, and its inverse is the restriction of the 
 \[
 p_X:X\times Y\to X.
 \]
-By <1>2, the slice $X\times\{y_0\}$ is Hausdorff as a subspace of the Hausdorff product.
+By step [](#subspace-hausdorff){.pf-ref}, the slice $X\times\{y_0\}$ is Hausdorff as a subspace of the Hausdorff product.
 Hausdorffness is preserved by homeomorphism, so $X$ is Hausdorff.
 :::
 
-<1>4. Under the same assumptions, $Y$ is Hausdorff.
-::: {.proof}
+:::
+
+::: {.pf-step #y-hausdorff}
+Under the same assumptions, $Y$ is Hausdorff.
+
+::: pf-proof
 Choose $x_0\in X$.
 The map
 \[
@@ -130,14 +146,23 @@ i_Y:Y\longrightarrow\{x_0\}\times Y,
 i_Y(y)=(x_0,y),
 \]
 is a homeomorphism whose inverse is the restriction of the second coordinate projection.
-The slice $\{x_0\}\times Y$ is Hausdorff by <1>2, so $Y$ is Hausdorff.
+The slice $\{x_0\}\times Y$ is Hausdorff by step [](#subspace-hausdorff){.pf-ref}, so $Y$ is Hausdorff.
 :::
 
-<1>5. Therefore, for nonempty spaces $X$ and $Y$,
+:::
+
+::: pf-step
+Therefore, for nonempty spaces $X$ and $Y$,
 \[
 \boxed{X\times Y\text{ is Hausdorff}\iff X\text{ and }Y\text{ are Hausdorff}.}
 \]
-::: {.proof}
-The forward implication follows from <1>3--<1>4, and the reverse implication is <1>1.
+
+::: pf-proof
+The forward implication follows from steps [](#x-hausdorff){.pf-ref} and [](#y-hausdorff){.pf-ref}, and the reverse implication is step [](#reverse-implication){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

@@ -24,28 +24,48 @@ What is the Galois group of $K$ over $F$?
 :::
 
 ::: {.solution}
-<1>1. By the fundamental theorem of Galois theory, $K$ corresponds to a subgroup $H = \operatorname{Gal}(E/K) \le G$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+By the fundamental theorem of Galois theory, $K$ corresponds to a subgroup $H = \operatorname{Gal}(E/K) \le G$.
+
+::: pf-proof
 Galois correspondence.
 :::
 
-<1>2. Since $G$ is abelian, every subgroup $H \le G$ is normal.
-::: {.proof}
+:::
+
+::: {.pf-step #subgroups-normal}
+Since $G$ is abelian, every subgroup $H \le G$ is normal.
+
+::: pf-proof
 abelian groups have all subgroups normal.
 :::
 
-<1>3. Hence $K/F$ is Galois (a subgroup $H$ corresponds to a Galois intermediate field iff $H$ is normal in $G$).
-::: {.proof}
-<1>2 and the fundamental theorem.
 :::
 
-<1>4. The Galois group of $K$ over $F$ is $\operatorname{Gal}(K/F) \cong G/H$.
-::: {.proof}
+::: {.pf-step #k-galois}
+Hence $K/F$ is Galois (a subgroup $H$ corresponds to a Galois intermediate field iff $H$ is normal in $G$).
+
+::: pf-proof
+step [](#subgroups-normal){.pf-ref} and the fundamental theorem.
+:::
+
+:::
+
+::: {.pf-step #galois-group-quotient}
+The Galois group of $K$ over $F$ is $\operatorname{Gal}(K/F) \cong G/H$.
+
+::: pf-proof
 fundamental theorem of Galois theory.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>3 and <1>4.
+:::
+
+::: pf-qed
+step [](#k-galois){.pf-ref} and step [](#galois-group-quotient){.pf-ref}.
+:::
+
 :::
 :::

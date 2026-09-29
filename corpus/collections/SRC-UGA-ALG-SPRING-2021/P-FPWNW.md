@@ -32,92 +32,168 @@ d. Write down one representative from each isomorphism class of abelian groups o
 ::: {.solution}
 **(a).**
 
-<1>1. Let $G$ have order $p^2$. Then $Z(G) \neq 1$ (a $p$-group has nontrivial center).
-::: {.proof}
+::: pf
+
+::: {.pf-step #center-nontrivial}
+Let $G$ have order $p^2$. Then $Z(G) \neq 1$ (a $p$-group has nontrivial center).
+
+::: pf-proof
 class equation.
 :::
 
-<1>2. $G/Z(G)$ has order $1$ or $p$ (since $|Z(G)|$ is $p$ or $p^2$).
-::: {.proof}
-<1>1 and Lagrange.
 :::
 
-<1>3. If $|G/Z(G)| = p$, then $G/Z(G)$ is cyclic, which forces $G$ abelian (a group with cyclic center quotient is abelian).
-::: {.proof}
+::: {.pf-step #quotient-order}
+$G/Z(G)$ has order $1$ or $p$ (since $|Z(G)|$ is $p$ or $p^2$).
+
+::: pf-proof
+Step [](#center-nontrivial){.pf-ref} and Lagrange.
+:::
+
+:::
+
+::: {.pf-step #cyclic-quotient-abelian}
+If $|G/Z(G)| = p$, then $G/Z(G)$ is cyclic, which forces $G$ abelian (a group with cyclic center quotient is abelian).
+
+::: pf-proof
 standard fact.
 :::
 
-<1>4. If $|G/Z(G)| = 1$, then $G = Z(G)$ is abelian.
-::: {.proof}
-<1>2.
 :::
 
-<1>5. Hence $G$ is abelian.
-::: {.proof}
-<1>3 and <1>4.
+::: {.pf-step #trivial-quotient-abelian}
+If $|G/Z(G)| = 1$, then $G = Z(G)$ is abelian.
+
+::: pf-proof
+Step [](#quotient-order){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #part-a-conclusion}
+Hence $G$ is abelian.
+
+::: pf-proof
+Step [](#cyclic-quotient-abelian){.pf-ref} and step [](#trivial-quotient-abelian){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(b).**
 
-<1>1. **Sylow 1:** For each prime $p$ dividing $|G|$, there is a Sylow $p$-subgroup.
+::: pf
+
+::: {.pf-step #part-b-sylow-statement}
+**Sylow 1:** For each prime $p$ dividing $|G|$, there is a Sylow $p$-subgroup.
 **Sylow 2:** All Sylow $p$-subgroups are conjugate, and the number $n_p$ satisfies $n_p \equiv 1 \pmod p$ and $n_p \mid |G|$.
 **Sylow 3:** $n_p \equiv 1 \pmod p$ and $n_p$ divides $|G|/p^a$ (where $p^a$ is the largest power of $p$ dividing $|G|$).
-::: {.proof}
+
+::: pf-proof
 statement of the Sylow theorems.
+:::
+
+:::
+
 :::
 
 **(c).**
 
-<1>1. Let $G$ have order $4225 = 5^2 \cdot 13^2$. By Sylow, $n_5 \equiv 1 \pmod 5$ and $n_5 \mid 13^2 = 169$, so $n_5 \in \{1, 169\}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Let $G$ have order $4225 = 5^2 \cdot 13^2$. By Sylow, $n_5 \equiv 1 \pmod 5$ and $n_5 \mid 13^2 = 169$, so $n_5 \in \{1, 169\}$.
+
+::: pf-proof
 Sylow's theorem.
 :::
 
-<1>2. $n_{13} \equiv 1 \pmod{13}$ and $n_{13} \mid 25$, so $n_{13} = 1$.
-::: {.proof}
+:::
+
+::: {.pf-step #n13-equals-one}
+$n_{13} \equiv 1 \pmod{13}$ and $n_{13} \mid 25$, so $n_{13} = 1$.
+
+::: pf-proof
 Sylow's theorem (the divisors of $25$ are $1, 5, 25$, and only $1 \equiv 1 \pmod{13}$).
 :::
 
-<1>3. Hence $G$ has a unique normal Sylow $13$-subgroup $P \cong \ZZ/13^2$ or $\ZZ/13 \times \ZZ/13$.
-::: {.proof}
-<1>2.
 :::
 
-<1>4. The normal subgroup $P$ acts by conjugation on the Sylow $5$-subgroups, so $n_5$ divides $|P| = 169$ and $n_5 \equiv 1 \pmod 5$; the only such divisor is $n_5 = 1$.
-::: {.proof}
-<1>3 and Sylow (the orbit sizes divide $169$, and $n_5 \equiv 1 \pmod 5$ forces $n_5 = 1$).
+::: {.pf-step #unique-sylow-13}
+Hence $G$ has a unique normal Sylow $13$-subgroup $P \cong \ZZ/13^2$ or $\ZZ/13 \times \ZZ/13$.
+
+::: pf-proof
+Step [](#n13-equals-one){.pf-ref}.
 :::
 
-<1>5. Hence $G$ has a unique normal Sylow $5$-subgroup $Q$ and a unique normal Sylow $13$-subgroup $P$, so $G = P \times Q$.
-::: {.proof}
-<1>3 and <1>4.
 :::
 
-<1>6. $P$ and $Q$ are abelian (groups of order $p^2$ are abelian by (a)), so $G = P \times Q$ is abelian.
-::: {.proof}
-<1>5 and (a).
+::: {.pf-step #n5-equals-one}
+The normal subgroup $P$ acts by conjugation on the Sylow $5$-subgroups, so $n_5$ divides $|P| = 169$ and $n_5 \equiv 1 \pmod 5$; the only such divisor is $n_5 = 1$.
+
+::: pf-proof
+Step [](#unique-sylow-13){.pf-ref} and Sylow (the orbit sizes divide $169$, and $n_5 \equiv 1 \pmod 5$ forces $n_5 = 1$).
+:::
+
+:::
+
+::: {.pf-step #unique-sylow-5-and-13}
+Hence $G$ has a unique normal Sylow $5$-subgroup $Q$ and a unique normal Sylow $13$-subgroup $P$, so $G = P \times Q$.
+
+::: pf-proof
+Step [](#unique-sylow-13){.pf-ref} and step [](#n5-equals-one){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #part-c-conclusion}
+$P$ and $Q$ are abelian (groups of order $p^2$ are abelian by (a)), so $G = P \times Q$ is abelian.
+
+::: pf-proof
+Step [](#unique-sylow-5-and-13){.pf-ref} and (a).
+:::
+
+:::
+
 :::
 
 **(d).**
 
-<1>1. The abelian groups of order $4225 = 5^2 \cdot 13^2$ are the products of abelian groups of order $5^2$ and $13^2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #abelian-groups-as-products}
+The abelian groups of order $4225 = 5^2 \cdot 13^2$ are the products of abelian groups of order $5^2$ and $13^2$.
+
+::: pf-proof
 fundamental theorem of finite abelian groups.
 :::
 
-<1>2. The abelian groups of order $5^2$ are $\ZZ/25$ and $\ZZ/5 \times \ZZ/5$; the abelian groups of order $13^2$ are $\ZZ/169$ and $\ZZ/13 \times \ZZ/13$.
-::: {.proof}
+:::
+
+::: {.pf-step #abelian-groups-of-prime-square-order}
+The abelian groups of order $5^2$ are $\ZZ/25$ and $\ZZ/5 \times \ZZ/5$; the abelian groups of order $13^2$ are $\ZZ/169$ and $\ZZ/13 \times \ZZ/13$.
+
+::: pf-proof
 fundamental theorem.
 :::
 
-<1>3. Hence the four isomorphism classes are:
-$$\ZZ/25 \times \ZZ/169,\ \ZZ/25 \times \ZZ/13 \times \ZZ/13,\ \ZZ/5 \times \ZZ/5 \times \ZZ/169,\ \ZZ/5 \times \ZZ/5 \times \ZZ/13 \times \ZZ/13.$$
-::: {.proof}
-<1>1 and <1>2.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>5 (a), <1>1 (b), <1>6 (c), <1>3 (d).
+::: {.pf-step #part-d-isomorphism-classes}
+Hence the four isomorphism classes are:
+$$\ZZ/25 \times \ZZ/169,\ \ZZ/25 \times \ZZ/13 \times \ZZ/13,\ \ZZ/5 \times \ZZ/5 \times \ZZ/169,\ \ZZ/5 \times \ZZ/5 \times \ZZ/13 \times \ZZ/13.$$
+
+::: pf-proof
+Step [](#abelian-groups-as-products){.pf-ref} and step [](#abelian-groups-of-prime-square-order){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#part-a-conclusion){.pf-ref} (a), step [](#part-b-sylow-statement){.pf-ref} (b), step [](#part-c-conclusion){.pf-ref} (c), step [](#part-d-isomorphism-classes){.pf-ref} (d).
+:::
+
+:::
+
 :::

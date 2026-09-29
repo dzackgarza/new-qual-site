@@ -34,7 +34,11 @@ Find all possibilities for \(f\).
 :::
 
 ::: {.solution}
-<1>1. Every solution of the first two identities has the form
+
+::: pf
+
+::: {.pf-step #f-g-general-solution}
+Every solution of the first two identities has the form
 $$
 f(z)=ae^{iz}+be^{-iz},
 \qquad
@@ -42,7 +46,7 @@ g(z)=aie^{iz}-bie^{-iz}
 $$
 for some $a,b\in\CC$.
 
-::: {.proof}
+::: pf-proof
 Differentiating $f'=g$ and using $g'=-f$ gives
 $$
 f''=-f.
@@ -55,7 +59,10 @@ $$
 Since $g=f'$, the displayed formula for $g$ follows.
 :::
 
-<1>2. The identity
+:::
+
+::: {.pf-step #double-angle-equivalent}
+The identity
 $$
 f(2z)=2f(z)g(z)
 $$
@@ -65,8 +72,8 @@ $$
 $$
 for every $z\in\CC$.
 
-::: {.proof}
-Using step <1>1,
+::: pf-proof
+Using step [](#f-g-general-solution){.pf-ref},
 $$
 f(2z)=ae^{2iz}+be^{-2iz},
 $$
@@ -85,15 +92,18 @@ because the two mixed terms cancel. Moving the right-hand side to
 the left gives the claim.
 :::
 
-<1>3. The identity in step <1>2 holds for all $z$ if and only if
+:::
+
+::: {.pf-step #coefficient-conditions}
+The identity in step [](#double-angle-equivalent){.pf-ref} holds for all $z$ if and only if
 $$
 a-2ia^2=0
 \qquad\text{and}\qquad
 b+2ib^2=0.
 $$
 
-::: {.proof}
-Multiplying the identity in step <1>2 by $e^{2iz}$ gives
+::: pf-proof
+Multiplying the identity in step [](#double-angle-equivalent){.pf-ref} by $e^{2iz}$ gives
 $$
 (a-2ia^2)e^{4iz}+(b+2ib^2)=0
 $$
@@ -102,15 +112,18 @@ form $Ce^{4iz}+D=0$ for all $z$ forces $C=D=0$. The converse is
 immediate.
 :::
 
-<1>4. The possible coefficients are
+:::
+
+::: {.pf-step #possible-coefficients}
+The possible coefficients are
 $$
 a\in\left\{0,-\frac{i}{2}\right\},
 \qquad
 b\in\left\{0,\frac{i}{2}\right\}.
 $$
 
-::: {.proof}
-The equations from step <1>3 factor as
+::: pf-proof
+The equations from step [](#coefficient-conditions){.pf-ref} factor as
 $$
 a(1-2ia)=0,
 \qquad
@@ -119,7 +132,10 @@ $$
 Solving them gives exactly the displayed possibilities.
 :::
 
-<1>5. Hence the complete list of possibilities for $f$ is
+:::
+
+::: {.pf-step #f-list}
+Hence the complete list of possibilities for $f$ is
 $$
 \boxed{
 0,\qquad
@@ -129,9 +145,9 @@ $$
 }.
 $$
 
-::: {.proof}
-Substituting the four pairs $(a,b)$ from step <1>4 into the formula
-for $f$ in step <1>1 gives the first three functions and
+::: pf-proof
+Substituting the four pairs $(a,b)$ from step [](#possible-coefficients){.pf-ref} into the formula
+for $f$ in step [](#f-g-general-solution){.pf-ref} gives the first three functions and
 $$
 -\frac{i}{2}e^{iz}+\frac{i}{2}e^{-iz}
 =
@@ -139,14 +155,17 @@ $$
 =
 \sin z.
 $$
-Conversely, step <1>3 shows that every such pair satisfies the
-double-angle identity, while step <1>1 already gives the first two
+Conversely, step [](#coefficient-conditions){.pf-ref} shows that every such pair satisfies the
+double-angle identity, while step [](#f-g-general-solution){.pf-ref} already gives the first two
 differential identities.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives all and only the possibilities.
 :::
+
+::: pf-qed
+Step [](#f-list){.pf-ref} gives all and only the possibilities.
+:::
+
+:::
+
 :::

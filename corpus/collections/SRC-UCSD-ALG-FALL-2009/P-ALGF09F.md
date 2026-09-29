@@ -42,11 +42,15 @@ is equivalent to
 A(A-I)(A+I)=0.
 \]
 
-<1>1. The minimal polynomial of $A$ divides
+::: pf
+
+::: {.pf-step #min-poly-divides}
+The minimal polynomial of $A$ divides
 \[
 t(t-1)(t+1).
 \]
-::: {.proof}
+
+::: pf-proof
 Let $m_A(t)$ be the minimal polynomial of $A$.
 Since
 \[
@@ -63,14 +67,18 @@ m_A(t)\mid t(t-1)(t+1).
 \]
 :::
 
-<1>2. The operator $A$ is diagonalizable over $\mathbb C$, with possible eigenvalues only $1,-1,0$.
-::: {.proof}
+:::
+
+::: {.pf-step #diagonalizable}
+The operator $A$ is diagonalizable over $\mathbb C$, with possible eigenvalues only $1,-1,0$.
+
+::: pf-proof
 The polynomial
 \[
 t(t-1)(t+1)
 \]
 splits over $\mathbb C$ into three distinct linear factors.
-By <1>1, the minimal polynomial $m_A$ also splits into distinct linear factors.
+By step [](#min-poly-divides){.pf-ref}, the minimal polynomial $m_A$ also splits into distinct linear factors.
 A linear operator over a field is diagonalizable if and only if its minimal polynomial splits into distinct linear factors.
 Therefore $A$ is diagonalizable.
 Its eigenvalues are roots of $m_A$, hence belong to
@@ -79,7 +87,10 @@ Its eigenvalues are roots of $m_A$, hence belong to
 \]
 :::
 
-<1>3. Define
+:::
+
+::: pf-step
+Define
 \[
 U_1:=\ker(A-I),
 \qquad
@@ -91,8 +102,9 @@ Then
 \[
 V=U_1\oplus U_2\oplus U_3.
 \]
-::: {.proof}
-By <1>2, $A$ is diagonalizable and its only possible eigenvalues are $1,-1,0$.
+
+::: pf-proof
+By step [](#diagonalizable){.pf-ref}, $A$ is diagonalizable and its only possible eigenvalues are $1,-1,0$.
 A diagonalizable operator is the direct sum of its eigenspaces.
 The eigenspaces corresponding to $1,-1,0$ are exactly
 \[
@@ -109,11 +121,15 @@ V=U_1\oplus U_2\oplus U_3.
 \]
 :::
 
-<1>4. For $v=u_1+u_2+u_3$ with $u_i\in U_i$, one has
+:::
+
+::: pf-step
+For $v=u_1+u_2+u_3$ with $u_i\in U_i$, one has
 \[
 \phi(v)=u_1-u_2.
 \]
-::: {.proof}
+
+::: pf-proof
 By definition of the three eigenspaces,
 \[
 Au_1=u_1,
@@ -130,5 +146,9 @@ Since $\phi$ is left multiplication by $A$,
 =u_1-u_2.
 \]
 This is exactly the required decomposition and action formula.
+:::
+
+:::
+
 :::
 :::

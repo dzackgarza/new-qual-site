@@ -61,12 +61,15 @@ $$
 R=A(X).
 $$
 
-<1>1. For every subset $S\subseteq X$,
+::: pf
+
+::: {.pf-step #closure-invariant-vanishing-ideal}
+For every subset $S\subseteq X$,
 $$
 \boxed{I(\overline S)=I(S).}
 $$
 
-::: {.proof}
+::: pf-proof
 The inclusion
 $$
 I(\overline S)\subseteq I(S)
@@ -88,20 +91,23 @@ Thus $f$ vanishes on $\overline S$, hence
 $$
 f\in I(\overline S).
 $$
-:::
 
 For part (a), write
 $$
 I_i=I(Y_i)\subseteq R
 \qquad(i=1,2).
 $$
+:::
 
-<1>2. One has
+:::
+
+::: {.pf-step #forward-inclusion-quotient}
+One has
 $$
 I(Y_1\sm Y_2)\subseteq I_1:I_2.
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 f\in I(Y_1\sm Y_2)
@@ -138,12 +144,15 @@ f\in I_1:I_2.
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #reverse-inclusion-quotient}
+One has
 $$
 I_1:I_2\subseteq I(Y_1\sm Y_2).
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 f\in I_1:I_2
@@ -188,7 +197,10 @@ f\in I(Y_1\sm Y_2).
 $$
 :::
 
-<1>4. Part (a):
+:::
+
+::: {.pf-step #ideal-quotient-formula-part-a}
+Part (a):
 $$
 \boxed{
 I(\overline{Y_1\sm Y_2})
@@ -197,14 +209,14 @@ I(Y_1):I(Y_2).
 }
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#closure-invariant-vanishing-ideal){.pf-ref},
 $$
 I(\overline{Y_1\sm Y_2})
 =
 I(Y_1\sm Y_2).
 $$
-Steps <1>2 and <1>3 give
+Steps [](#forward-inclusion-quotient){.pf-ref} and [](#reverse-inclusion-quotient){.pf-ref} give
 $$
 I(Y_1\sm Y_2)
 =
@@ -217,12 +229,15 @@ $$
 gives the displayed identity.
 :::
 
-<1>5. If $J\subseteq R$ is radical, then
+:::
+
+::: {.pf-step #radical-ideal-equals-vanishing-ideal}
+If $J\subseteq R$ is radical, then
 $$
 \boxed{I(V(J))=J.}
 $$
 
-::: {.proof}
+::: pf-proof
 Choose an affine embedding
 $$
 X\subseteq\AA^n
@@ -259,7 +274,10 @@ I_X(V_X(J))=J.
 $$
 :::
 
-<1>6. Part (b):
+:::
+
+::: {.pf-step #closure-formula-part-b}
+Part (b):
 $$
 \boxed{
 \overline{V(J_1)\sm V(J_2)}
@@ -268,18 +286,18 @@ V(J_1:J_2).
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 Y_i=V(J_i).
 $$
 The proof of part (a) uses only that $Y_1$ and $Y_2$ are closed subsets of
-$X$, so step <1>4 applies to these zero loci even if they are reducible.
-By step <1>5 and the radicality of $J_1,J_2$,
+$X$, so step [](#ideal-quotient-formula-part-a){.pf-ref} applies to these zero loci even if they are reducible.
+By step [](#radical-ideal-equals-vanishing-ideal){.pf-ref} and the radicality of $J_1,J_2$,
 $$
 I(Y_i)=I(V(J_i))=J_i.
 $$
-Therefore step <1>4 gives
+Therefore step [](#ideal-quotient-formula-part-a){.pf-ref} gives
 $$
 I\!\left(\overline{V(J_1)\sm V(J_2)}\right)
 =
@@ -307,10 +325,12 @@ V(J_1:J_2).
 $$
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove part (a). Steps <1>5--<1>6 apply the strong
+::: pf-qed
+Steps [](#closure-invariant-vanishing-ideal){.pf-ref}, [](#forward-inclusion-quotient){.pf-ref}, [](#reverse-inclusion-quotient){.pf-ref} and [](#ideal-quotient-formula-part-a){.pf-ref} prove part (a). Steps [](#radical-ideal-equals-vanishing-ideal){.pf-ref} and [](#closure-formula-part-b){.pf-ref} apply the strong
 Nullstellensatz to radical ideals in $A(X)$ and prove part (b).
+:::
+
 :::
 :::

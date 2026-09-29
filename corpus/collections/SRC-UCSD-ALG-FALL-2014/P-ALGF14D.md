@@ -53,8 +53,12 @@ u^{-1}=\frac{\bar u}{N(u)}\in A,
 \]
 so \(u\) is a unit.
 
-<1>1. The element \(2\) is irreducible in \(A\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #two-irreducible}
+The element \(2\) is irreducible in \(A\).
+
+::: pf-proof
 Suppose
 \[
 2=\alpha\beta
@@ -94,8 +98,12 @@ Hence no element of \(A\) has norm \(\pm2\).
 Therefore every factorization of \(2\) has a unit factor, so \(2\) is irreducible.
 :::
 
-<1>2. The element \(2\) is not prime in \(A\).
-::: {.proof}
+:::
+
+::: {.pf-step #two-not-prime}
+The element \(2\) is not prime in \(A\).
+
+::: pf-proof
 We have
 \[
 (\sqrt{10})(\sqrt{10})=10=2\cdot5,
@@ -122,10 +130,22 @@ which is impossible.
 Thus \(2\) divides a product without dividing either factor, so it is not prime.
 :::
 
-<1>3. The ring \(A\) is not a UFD.
-::: {.proof}
+:::
+
+::: {.pf-step #not-ufd}
+The ring \(A\) is not a UFD.
+
+::: pf-proof
 In every unique factorization domain, every irreducible element is prime.
-By <1>1, \(2\) is irreducible in \(A\), while by <1>2 it is not prime.
+By step [](#two-irreducible){.pf-ref}, \(2\) is irreducible in \(A\), while by step [](#two-not-prime){.pf-ref} it is not prime.
 Therefore \(A\) cannot be a unique factorization domain.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#two-irreducible){.pf-ref}, [](#two-not-prime){.pf-ref}, and [](#not-ufd){.pf-ref} answer parts (i), (ii), and (iii).
+:::
+
 :::
 :::

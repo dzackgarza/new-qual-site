@@ -49,11 +49,15 @@ i\alpha,
 -i\alpha.
 \]
 
-<1>1. The splitting field is
+::: pf
+
+::: pf-step
+The splitting field is
 \[
 E=\mathbb Q(\alpha,i).
 \]
-::: {.proof}
+
+::: pf-proof
 The field $\mathbb Q(\alpha,i)$ contains all four roots displayed above, so it contains the splitting field.
 Conversely, any splitting field contains both $\alpha$ and $i\alpha$, hence also their quotient
 \[
@@ -63,11 +67,15 @@ Therefore it contains $\mathbb Q(\alpha,i)$.
 Thus the two fields are equal.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #degree-eight}
+One has
 \[
 [E:\mathbb Q]=8.
 \]
-::: {.proof}
+
+::: pf-proof
 The polynomial
 \[
 x^4-5
@@ -98,14 +106,18 @@ By the tower law,
 \]
 :::
 
-<1>3. There is an automorphism $r\in\operatorname{Gal}(E/\mathbb Q)$ satisfying
+:::
+
+::: pf-step
+There is an automorphism $r\in\operatorname{Gal}(E/\mathbb Q)$ satisfying
 \[
 r(\alpha)=i\alpha,
 \qquad
 r(i)=i,
 \]
 and it has order $4$.
-::: {.proof}
+
+::: pf-proof
 The fields $\mathbb Q(\alpha)$ and $\mathbb Q(i)$ have intersection $\mathbb Q$: their intersection has degree dividing $2$, and a nontrivial intersection would equal the imaginary quadratic field $\mathbb Q(i)$, impossible because $\mathbb Q(\alpha)\subseteq\mathbb R$.
 Therefore
 \[
@@ -120,7 +132,10 @@ Iterating gives
 so $r$ has order $4$.
 :::
 
-<1>4. Complex conjugation gives an automorphism $s$ satisfying
+:::
+
+::: pf-step
+Complex conjugation gives an automorphism $s$ satisfying
 \[
 s(\alpha)=\alpha,
 \qquad
@@ -130,7 +145,8 @@ and
 \[
 srs=r^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
 Because $E=\mathbb Q(\alpha,i)$ is stable under complex conjugation, conjugation restricts to a $\mathbb Q$-automorphism $s$ of $E$.
 Clearly $s^2=1$.
 On the generators,
@@ -151,7 +167,10 @@ srs=r^{-1}.
 \]
 :::
 
-<1>5. With the roots labeled
+:::
+
+::: {.pf-step #galois-group-dihedral}
+With the roots labeled
 \[
 1:\alpha,
 \qquad
@@ -167,7 +186,8 @@ one has
 =\langle(1234),(24)\rangle
 \cong D_4.
 \]
-::: {.proof}
+
+::: pf-proof
 Under the chosen labeling, $r$ acts by
 \[
 (1234),
@@ -181,7 +201,7 @@ The subgroup they generate is the dihedral group
 \langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle
 \]
 of order $8$.
-By <1>2, the Galois group of the splitting field has order
+By step [](#degree-eight){.pf-ref}, the Galois group of the splitting field has order
 \[
 [E:\mathbb Q]=8.
 \]
@@ -191,5 +211,13 @@ Therefore, as a subgroup of $S_4$,
 \operatorname{Gal}(E/\mathbb Q)
 =\langle(1234),(24)\rangle.
 \]
+:::
+
+:::
+
+::: pf-qed
+Step [](#degree-eight){.pf-ref} answers part (a), and step [](#galois-group-dihedral){.pf-ref} answers part (b).
+:::
+
 :::
 :::

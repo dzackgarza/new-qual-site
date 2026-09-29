@@ -33,14 +33,17 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. For every $x>0$,
+::: pf
+
+::: {.pf-step #half-interval-bound}
+For every $x>0$,
 $$
 \frac{x}{2}f(x)
 \le
 \int_{x/2}^{x}f(t)\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 \frac x2\le t\le x,
@@ -59,7 +62,10 @@ $$
 $$
 :::
 
-<1>2. For every $x>0$,
+:::
+
+::: {.pf-step #xf-bounded-by-tail}
+For every $x>0$,
 $$
 0
 \le
@@ -68,8 +74,8 @@ xf(x)
 2\int_{x/2}^{\infty}f(t)\,dt.
 $$
 
-::: {.proof}
-Positivity of $f$ gives the lower bound. By step <1>1,
+::: pf-proof
+Positivity of $f$ gives the lower bound. By step [](#half-interval-bound){.pf-ref},
 $$
 xf(x)
 \le
@@ -79,14 +85,17 @@ xf(x)
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #tail-vanishes}
+One has
 $$
 \lim_{x\to\infty}
 \int_{x/2}^{\infty}f(t)\,dt
 =0.
 $$
 
-::: {.proof}
+::: pf-proof
 The improper integral
 $$
 \int_0^\infty f(t)\,dt
@@ -100,20 +109,25 @@ $$
 Since $x/2\to\infty$ as $x\to\infty$, the displayed limit follows.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #limit-boxed}
+Therefore
 $$
 \boxed{
 \lim_{x\to\infty}xf(x)=0
 }.
 $$
 
-::: {.proof}
-Combine steps <1>2 and <1>3 and apply the squeeze theorem.
+::: pf-proof
+Combine steps [](#xf-bounded-by-tail){.pf-ref} and [](#tail-vanishes){.pf-ref} and apply the squeeze theorem.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required limit.
+::: pf-qed
+Step [](#limit-boxed){.pf-ref} is the required limit.
+:::
+
 :::
 :::

@@ -46,9 +46,13 @@ topology.
 :::
 
 ::: {.solution}
-<1>1. Every proper Zariski closed subset of $C$ is finite.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #proper-closed-finite}
+Every proper Zariski closed subset of $C$ is finite.
+
+::: pf-proof
 Let
 $$
 Z\subsetneq C
@@ -78,9 +82,12 @@ $1$, contradicting $\dim Z_i=0$. Thus $Z_i=\{p\}$. Therefore every $Z_i$ is
 a point, and $Z$ is finite.
 :::
 
-<1>2. Every finite subset of $C$ is Zariski closed.
+:::
 
-::: {.proof}
+::: {.pf-step #finite-subsets-closed}
+Every finite subset of $C$ is Zariski closed.
+
+::: pf-proof
 Since $k$ is algebraically closed, every point of a $k$-variety is a closed
 point. Thus every singleton
 $$
@@ -90,26 +97,35 @@ is Zariski closed. A finite union of closed subsets is closed, so every finite
 subset of $C$ is Zariski closed.
 :::
 
-<1>3. The Zariski closed subsets of $C$ are exactly $C$ and its finite
+:::
+
+::: {.pf-step #closed-subsets-characterization}
+The Zariski closed subsets of $C$ are exactly $C$ and its finite
 subsets.
 
-::: {.proof}
-Step <1>1 shows that every proper closed subset is finite. Step <1>2 shows
+::: pf-proof
+Step [](#proper-closed-finite){.pf-ref} shows that every proper closed subset is finite. Step [](#finite-subsets-closed){.pf-ref} shows
 that every finite subset is closed. Together with $C$ itself, these are
 precisely the closed subsets.
 :::
 
-<1>4. Therefore the Zariski topology on $C$ is the cofinite topology.
+:::
 
-::: {.proof}
+::: {.pf-step #cofinite-topology-conclusion}
+Therefore the Zariski topology on $C$ is the cofinite topology.
+
+::: pf-proof
 By definition, the cofinite topology is the topology whose closed subsets are
-the whole space and the finite subsets. Step <1>3 gives exactly this
+the whole space and the finite subsets. Step [](#closed-subsets-characterization){.pf-ref} gives exactly this
 description for the Zariski topology on $C$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#cofinite-topology-conclusion){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

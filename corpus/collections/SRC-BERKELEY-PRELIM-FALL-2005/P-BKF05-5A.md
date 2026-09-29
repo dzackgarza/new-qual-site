@@ -37,10 +37,14 @@ for every \(x\in\mathbb R\)? Prove your answer.
 :::
 
 ::: {.solution}
-<1>1. Any function satisfying the stated differential inequality would
+
+::: pf
+
+::: {.pf-step #f-nondecreasing}
+Any function satisfying the stated differential inequality would
 be nondecreasing on $\RR$.
 
-::: {.proof}
+::: pf-proof
 For every $x\in\RR$,
 $$
 f'(x)\ge f(x)^2\ge0.
@@ -49,25 +53,31 @@ Hence $f'\ge0$ everywhere, so the mean value theorem implies that $f$
 is nondecreasing.
 :::
 
-<1>2. Such a function would satisfy
+:::
+
+::: {.pf-step #f-geq-one}
+Such a function would satisfy
 $$
 f(x)\ge1
 $$
 for every $x\ge0$.
 
-::: {.proof}
-By step <1>1, $f$ is nondecreasing, and the hypothesis gives
+::: pf-proof
+By step [](#f-nondecreasing){.pf-ref}, $f$ is nondecreasing, and the hypothesis gives
 $f(0)=1$. Therefore $f(x)\ge f(0)=1$ whenever $x\ge0$.
 :::
 
-<1>3. On $[0,1]$, define
+:::
+
+::: {.pf-step #g-nonincreasing-derivative}
+On $[0,1]$, define
 $$
 g(x)=\frac1{f(x)}+x.
 $$
 Then $g'(x)\le0$ for every $x\in[0,1]$.
 
-::: {.proof}
-Step <1>2 gives $f(x)>0$ on $[0,1]$, so $g$ is differentiable there.
+::: pf-proof
+Step [](#f-geq-one){.pf-ref} gives $f(x)>0$ on $[0,1]$, so $g$ is differentiable there.
 Using the assumed inequality,
 $$
 \begin{aligned}
@@ -84,15 +94,18 @@ g'(x)
 $$
 :::
 
-<1>4. The conclusions of steps <1>2 and <1>3 are contradictory.
+:::
 
-::: {.proof}
-By step <1>3 and the mean value theorem, $g$ is nonincreasing on
+::: {.pf-step #contradiction}
+The conclusions of steps [](#f-geq-one){.pf-ref} and [](#g-nonincreasing-derivative){.pf-ref} are contradictory.
+
+::: pf-proof
+By step [](#g-nonincreasing-derivative){.pf-ref} and the mean value theorem, $g$ is nonincreasing on
 $[0,1]$. Hence
 $$
 g(1)\le g(0)=1.
 $$
-But step <1>2 gives $f(1)\ge1$, so
+But step [](#f-geq-one){.pf-ref} gives $f(1)\ge1$, so
 $$
 g(1)
 =
@@ -103,19 +116,25 @@ $$
 This is a contradiction.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #no-such-function}
+Therefore
 $$
 \boxed{\text{no such differentiable function exists}}.
 $$
 
-::: {.proof}
+::: pf-proof
 Assuming that such a function existed led to the contradiction in step
-<1>4. Hence no function can satisfy all the stated conditions.
+[](#contradiction){.pf-ref}. Hence no function can satisfy all the stated conditions.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers the question and proves the answer.
 :::
+
+::: pf-qed
+Step [](#no-such-function){.pf-ref} answers the question and proves the answer.
+:::
+
+:::
+
 :::

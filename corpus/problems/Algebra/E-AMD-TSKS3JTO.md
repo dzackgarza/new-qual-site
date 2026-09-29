@@ -30,8 +30,12 @@ Show that $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i$ of degre
 ::: {.solution}
 Work in an algebraic closure $\overline{\FF}_p$.
 
-<1>1. The roots of $x^{p^n}-x$ are exactly the elements fixed by the $n$th power of Frobenius.
-::: {.proof}
+::: pf
+
+::: pf-step
+The roots of $x^{p^n}-x$ are exactly the elements fixed by the $n$th power of Frobenius.
+
+::: pf-proof
 For $\alpha\in\overline{\FF}_p$,
 \[
 \alpha^{p^n}-\alpha=0
@@ -41,8 +45,12 @@ For $\alpha\in\overline{\FF}_p$,
 These fixed points form the finite field $\FF_{p^n}$.
 :::
 
-<1>2. The polynomial $x^{p^n}-x$ is squarefree.
-::: {.proof}
+:::
+
+::: {.pf-step #xpn-x-squarefree}
+The polynomial $x^{p^n}-x$ is squarefree.
+
+::: pf-proof
 Its derivative in characteristic $p$ is
 \[
 \frac{d}{dx}(x^{p^n}-x)=p^n x^{p^n-1}-1=-1,
@@ -50,8 +58,12 @@ Its derivative in characteristic $p$ is
 so it has no repeated roots.
 :::
 
-<1>3. Let $f\in\FF_p[x]$ be monic irreducible of degree $d$, and let $\alpha$ be a root. Then $f\mid x^{p^n}-x$ if and only if $d\mid n$.
-::: {.proof}
+:::
+
+::: {.pf-step #irreducible-divides-iff-degree-divides-n}
+Let $f\in\FF_p[x]$ be monic irreducible of degree $d$, and let $\alpha$ be a root. Then $f\mid x^{p^n}-x$ if and only if $d\mid n$.
+
+::: pf-proof
 The roots of $f$ are the Frobenius conjugates
 \[
 \alpha,\alpha^p,\ldots,\alpha^{p^{d-1}},
@@ -67,11 +79,20 @@ d\mid n.
 Indeed, writing $n=qd+r$ with $0\le r<d$, the equality $\alpha^{p^n}=\alpha$ and $\alpha^{p^d}=\alpha$ imply $\alpha^{p^r}=\alpha$; minimality of $d$ forces $r=0$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 x^{p^n}-x=\prod_{\substack{f\text{ monic irreducible in }\FF_p[x]\\ \deg f\mid n}} f(x).
 \]
-::: {.proof}
-By <1>3, the irreducible divisors are exactly the displayed factors. By <1>2, each occurs with multiplicity one. Since both sides are monic, their irreducible factorizations agree exactly.
+
+::: pf-proof
+By step [](#irreducible-divides-iff-degree-divides-n){.pf-ref}, the irreducible divisors are exactly the displayed factors. By step [](#xpn-x-squarefree){.pf-ref}, each occurs with multiplicity one. Since both sides are monic, their irreducible factorizations agree exactly.
 :::
+
+:::
+
+:::
+
 :::

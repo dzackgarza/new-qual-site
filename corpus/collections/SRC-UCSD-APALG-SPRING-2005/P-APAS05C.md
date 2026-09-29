@@ -21,6 +21,7 @@ Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \qua
 :::
 
 ::: {.solution}
+
 Let
 \[
 N:=A-\lambda I.
@@ -30,12 +31,16 @@ Since $gm(\lambda)=1$,
 \ker N=\mathbb Cx.
 \]
 
-<1>1. The subspace
+::: pf
+
+::: {.pf-step #w-is-invariant-complement-candidate}
+The subspace
 \[
 W:=\operatorname{im}N
 \]
 has dimension $n-1$ and is $A$-invariant.
-::: {.proof}
+
+::: pf-proof
 By rank-nullity,
 \[
 \dim W=\operatorname{rank}N=n-\dim\ker N=n-1.
@@ -47,11 +52,15 @@ Aw=ANz=NAz\in W.
 Thus $W$ is $A$-invariant.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #x-intersect-w-trivial}
+One has
 \[
 \mathbb Cx\cap W=\{0\}.
 \]
-::: {.proof}
+
+::: pf-proof
 Suppose instead that $0\ne cx\in W$. Since $c\ne0$, this implies $x\in W$, so there exists $z\in\mathbb C^n$ with
 \[
 Nz=x,
@@ -80,7 +89,10 @@ Hence the characteristic polynomial of $A|_U$ is $(t-\lambda)^2$. Extending $(x,
 Therefore $\mathbb Cx\cap W=0$.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #p-is-nonsingular}
+Therefore
 \[
 \mathbb C^n=\mathbb Cx\oplus W.
 \]
@@ -91,15 +103,19 @@ X=(x_2\ \cdots\ x_n),
 P=(x\quad X).
 \]
 Then $P$ is nonsingular.
-::: {.proof}
-By <1>1 and <1>2,
+
+::: pf-proof
+By steps [](#w-is-invariant-complement-candidate){.pf-ref} and [](#x-intersect-w-trivial){.pf-ref},
 \[
 \dim(\mathbb Cx+W)=1+(n-1)=n,
 \]
 so the sum is direct and equals all of $\mathbb C^n$. Hence the columns of $P$ form a basis, so $P$ is invertible.
 :::
 
-<1>4. Relative to the basis given by the columns of $P$,
+:::
+
+::: {.pf-step #block-diagonal-form}
+Relative to the basis given by the columns of $P$,
 \[
 P^{-1}AP=
 \begin{pmatrix}
@@ -108,15 +124,19 @@ P^{-1}AP=
 \end{pmatrix}
 \]
 for some $(n-1)\times(n-1)$ matrix $M$.
-::: {.proof}
-The line $\mathbb Cx$ is $A$-invariant and $Ax=\lambda x$. By <1>1, the complementary subspace $W$ is also $A$-invariant. Therefore the matrix of $A$ with respect to the direct-sum basis
+
+::: pf-proof
+The line $\mathbb Cx$ is $A$-invariant and $Ax=\lambda x$. By step [](#w-is-invariant-complement-candidate){.pf-ref}, the complementary subspace $W$ is also $A$-invariant. Therefore the matrix of $A$ with respect to the direct-sum basis
 \[
 \mathbb C^n=\mathbb Cx\oplus W
 \]
 has no off-diagonal blocks. Its first block is $[\lambda]$, and the second block is the matrix $M$ of $A|_W$ in the basis $x_2,\ldots,x_n$.
 :::
 
-<1>5. Writing
+:::
+
+::: pf-step
+Writing
 \[
 P^{-1}=
 \begin{pmatrix}
@@ -132,7 +152,13 @@ A(x\quad X)
 =
 \begin{pmatrix}\lambda&0\\0&M\end{pmatrix}.}
 \]
-::: {.proof}
-This is simply the identity from <1>4 after writing the first row of $P^{-1}$ as $y^*$ and the remaining $n-1$ rows as $Y^*$.
+
+::: pf-proof
+This is simply the identity from step [](#block-diagonal-form){.pf-ref} after writing the first row of $P^{-1}$ as $y^*$ and the remaining $n-1$ rows as $Y^*$.
 :::
+
+:::
+
+:::
+
 :::

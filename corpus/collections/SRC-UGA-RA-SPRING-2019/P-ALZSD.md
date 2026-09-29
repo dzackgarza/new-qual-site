@@ -43,8 +43,13 @@ for every Borel set $E$.
 :::
 
 ::: {.solution}
-<1>1. Continuity from above.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #continuity-from-above}
+Continuity from above.
+
+::: pf-proof
 Set
 \[
 F:=\bigcap_{k=1}^\infty F_k,
@@ -73,8 +78,12 @@ The tail of the convergent series tends to $0$, hence
 \]
 :::
 
-<1>2. Absolute continuity in the epsilon--delta sense.
-::: {.proof}
+:::
+
+::: {.pf-step #eps-delta-absolute-continuity}
+Absolute continuity in the epsilon--delta sense.
+
+::: pf-proof
 Assume the conclusion fails. Then there exist $\varepsilon_0>0$ and Borel sets $E_n$ such that
 \[
 m(E_n)<2^{-n}
@@ -113,4 +122,13 @@ for every $N$. Therefore
 \]
 a contradiction. Thus the desired $\delta$ exists.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#continuity-from-above){.pf-ref} and [](#eps-delta-absolute-continuity){.pf-ref} answer parts 1 and 2.
+:::
+
+:::
+
 :::

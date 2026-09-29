@@ -31,15 +31,19 @@ Find the smallest positive integer \(n\) for which \(S_n\) contains a cyclic sub
 :::
 
 ::: {.solution}
+
 Since
 $$
 111=3\cdot37,
 $$
 the two prime factors are distinct.
 
-<1>1. The group $S_{40}$ contains an element of order $111$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #S40-has-order-111-element}
+The group $S_{40}$ contains an element of order $111$.
+
+::: pf-proof
 Take a $3$-cycle and a disjoint $37$-cycle in $S_{40}$, and let
 $\sigma$ be their product. Disjoint cycles commute, and the order of
 their product is the least common multiple of their lengths. Therefore
@@ -54,19 +58,25 @@ Hence $\langle\sigma\rangle$ is a cyclic subgroup of $S_{40}$ of
 order $111$.
 :::
 
-<1>2. If $\sigma\in S_n$ has order $111$, then every cycle length in
+:::
+
+::: {.pf-step #cycle-lengths-divide-111}
+If $\sigma\in S_n$ has order $111$, then every cycle length in
 the disjoint-cycle decomposition of $\sigma$ divides $111$.
 
-::: {.proof}
+::: pf-proof
 The order of a permutation is the least common multiple of the lengths
 of its disjoint cycles. If that least common multiple is $111$, each
 cycle length divides $111$.
 :::
 
-<1>3. Every permutation of order $111$ moves at least $40$ letters.
+:::
 
-::: {.proof}
-By step <1>2, every nontrivial cycle length is one of
+::: {.pf-step #moves-at-least-40}
+Every permutation of order $111$ moves at least $40$ letters.
+
+::: pf-proof
+By step [](#cycle-lengths-divide-111){.pf-ref}, every nontrivial cycle length is one of
 $$
 3,\qquad37,\qquad111.
 $$
@@ -83,20 +93,26 @@ $$
 letters. Thus in every case $n\ge40$.
 :::
 
-<1>4. The smallest possible $n$ is
+:::
+
+::: {.pf-step #smallest-n-40}
+The smallest possible $n$ is
 $$
 \boxed{40}.
 $$
 
-::: {.proof}
-Step <1>1 gives an order-$111$ cyclic subgroup in $S_{40}$, while step
-<1>3 shows that no $S_n$ with $n<40$ can contain an element, and hence
+::: pf-proof
+Step [](#S40-has-order-111-element){.pf-ref} gives an order-$111$ cyclic subgroup in $S_{40}$, while step
+[](#moves-at-least-40){.pf-ref} shows that no $S_n$ with $n<40$ can contain an element, and hence
 a cyclic subgroup, of order $111$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested minimum.
 :::
+
+::: pf-qed
+Step [](#smallest-n-40){.pf-ref} is the requested minimum.
+:::
+
+:::
+
 :::

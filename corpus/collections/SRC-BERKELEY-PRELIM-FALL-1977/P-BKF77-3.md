@@ -32,8 +32,13 @@ if and only if every eigenvalue of $T$ has absolute value less than $1$.
 :::
 
 ::: {.solution}
-<1>1. If $T^k\to0$, then every eigenvalue has absolute value less than $1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #eigenvalue-bound-necessary}
+If $T^k\to0$, then every eigenvalue has absolute value less than $1$.
+
+::: pf-proof
 Let $\lambda$ be an eigenvalue of $T$, and choose a nonzero eigenvector
 $v$ with
 $$
@@ -61,8 +66,12 @@ $$
 $$
 :::
 
-<1>2. If $T=SJS^{-1}$ with $J$ in Jordan form, then $T^k\to0$ as soon as $J_\lambda^k\to0$ for every Jordan block $J_\lambda$ of $J$.
-::: {.proof}
+:::
+
+::: pf-step
+If $T=SJS^{-1}$ with $J$ in Jordan form, then $T^k\to0$ as soon as $J_\lambda^k\to0$ for every Jordan block $J_\lambda$ of $J$.
+
+::: pf-proof
 Assume every eigenvalue of $T$ has absolute value less than $1$. Over
 $\mathbb C$, write
 $$
@@ -76,8 +85,12 @@ Thus it is enough to prove that every Jordan block occurring in $J$ has
 powers tending to zero.
 :::
 
-<1>3. Powers of a Jordan block with $|\lambda|<1$ tend to zero.
-::: {.proof}
+:::
+
+::: {.pf-step #jordan-block-powers-vanish}
+Powers of a Jordan block with $|\lambda|<1$ tend to zero.
+
+::: pf-proof
 Let
 $$
 J_\lambda=\lambda I+N
@@ -123,9 +136,13 @@ J_\lambda^k\longrightarrow0.
 $$
 :::
 
-<1>4. If every eigenvalue of $T$ has absolute value less than $1$, then $T^k\to0$.
-::: {.proof}
-Every Jordan block of $J$ has powers tending to zero by step <1>3, so
+:::
+
+::: pf-step
+If every eigenvalue of $T$ has absolute value less than $1$, then $T^k\to0$.
+
+::: pf-proof
+Every Jordan block of $J$ has powers tending to zero by step [](#jordan-block-powers-vanish){.pf-ref}, so
 $$
 J^k\to0.
 $$
@@ -133,12 +150,16 @@ Therefore
 $$
 T^k=SJ^kS^{-1}\to0.
 $$
-Combining this with step <1>1 proves
+Combining this with step [](#eigenvalue-bound-necessary){.pf-ref} proves
 $$
 \boxed{
 T^k\to0
 \iff
 \text{every eigenvalue $\lambda$ of $T$ satisfies $|\lambda|<1$.}}
 $$
+:::
+
+:::
+
 :::
 :::

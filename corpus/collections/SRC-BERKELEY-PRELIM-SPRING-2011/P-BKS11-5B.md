@@ -37,7 +37,10 @@ $$
 I_n\coloneqq\int_0^\pi\sin^n x\,dx.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #recurrence}
+One has
 $$
 I_0=\pi,
 \qquad
@@ -50,7 +53,7 @@ I_n
 \frac{n-1}{n}I_{n-2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The initial values are immediate. For $n\geq2$, write
 $$
 I_n
@@ -87,7 +90,10 @@ $$
 which is the stated recurrence.
 :::
 
-<1>2. For every $m\geq1$,
+:::
+
+::: {.pf-step #closed-forms}
+For every $m\geq1$,
 $$
 I_{2m}
 =
@@ -104,24 +110,30 @@ I_{2m+1}
 \frac{2k}{2k+1}.
 $$
 
-::: {.proof}
-Iterate the recurrence in step <1>1 separately through the even and odd
+::: pf-proof
+Iterate the recurrence in step [](#recurrence){.pf-ref} separately through the even and odd
 indices, terminating at $I_0=\pi$ and $I_1=2$, respectively.
 :::
 
-<1>3. These formulas evaluate $I_n$ for every nonnegative integer $n$.
+:::
 
-::: {.proof}
-Every nonnegative integer is either $2m$ or $2m+1$, so step <1>2 covers
+::: {.pf-step #part-a}
+These formulas evaluate $I_n$ for every nonnegative integer $n$.
+
+::: pf-proof
+Every nonnegative integer is either $2m$ or $2m+1$, so step [](#closed-forms){.pf-ref} covers
 all cases. This proves part (a).
 :::
 
-<1>4. For every $n\geq0$,
+:::
+
+::: {.pf-step #part-b}
+For every $n\geq0$,
 $$
 I_n>I_{n+1}>0.
 $$
 
-::: {.proof}
+::: pf-proof
 On $(0,\pi)$,
 $$
 0<\sin x\leq1.
@@ -144,7 +156,10 @@ Also $I_{n+1}>0$ because its integrand is positive on $(0,\pi)$.
 This proves part (b).
 :::
 
-<1>5. Let $P_j$ denote the product of the first $j$ displayed factors in
+:::
+
+::: {.pf-step #product-bounds}
+Let $P_j$ denote the product of the first $j$ displayed factors in
 part (c). Then for $n\geq1$,
 $$
 P_{2n-1}
@@ -162,7 +177,7 @@ P_{2n}
 \frac2\pi.
 $$
 
-::: {.proof}
+::: pf-proof
 The product has factors
 $$
 \frac{2k-1}{2k},
@@ -188,7 +203,7 @@ P_{2n-1}
 \frac{2I_{2n}}{\pi I_{2n-1}},
 \end{aligned}
 $$
-using step <1>2. Similarly,
+using step [](#closed-forms){.pf-ref}. Similarly,
 $$
 \begin{aligned}
 P_{2n}
@@ -205,15 +220,18 @@ P_{2n}
 \frac{2I_{2n}}{\pi I_{2n+1}}.
 \end{aligned}
 $$
-The inequalities now follow from step <1>4.
+The inequalities now follow from step [](#part-b){.pf-ref}.
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #difference-vanishes}
+One has
 $$
 P_{2n}-P_{2n-1}\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
 The last factor passing from $P_{2n-1}$ to $P_{2n}$ is
 $$
 \frac{2n+1}{2n}
@@ -226,7 +244,7 @@ P_{2n}-P_{2n-1}
 =
 \frac{P_{2n-1}}{2n}.
 $$
-By step <1>5,
+By step [](#product-bounds){.pf-ref},
 $$
 0<P_{2n-1}<\frac2\pi,
 $$
@@ -241,13 +259,16 @@ P_{2n}-P_{2n-1}
 $$
 :::
 
-<1>7. The infinite product in part (c) converges to
+:::
+
+::: {.pf-step #product-value}
+The infinite product in part (c) converges to
 $$
 \boxed{\frac2\pi}.
 $$
 
-::: {.proof}
-By step <1>5,
+::: pf-proof
+By step [](#product-bounds){.pf-ref},
 $$
 P_{2n-1}
 <
@@ -255,15 +276,18 @@ P_{2n-1}
 <
 P_{2n}.
 $$
-By step <1>6, the distance between the two bounding quantities tends to
+By step [](#difference-vanishes){.pf-ref}, the distance between the two bounding quantities tends to
 $0$. Therefore both subsequences converge to $2/\pi$, and so the full
 sequence of partial products converges to $2/\pi$.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves part (a), step <1>4 proves part (b), and step <1>7 proves
+::: pf-qed
+Step [](#part-a){.pf-ref} proves part (a), step [](#part-b){.pf-ref} proves part (b), and step [](#product-value){.pf-ref} proves
 part (c).
 :::
+
+:::
+
 :::

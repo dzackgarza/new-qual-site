@@ -39,9 +39,12 @@ Write $q=|K|=p^r$, where $p$ is the characteristic,
 and put $d=[L:K]$. Counting coordinates in a $K$-basis
 gives $|L|=q^d$.
 
-<1>1. The extension $L/K$ is Galois.
+::: pf
 
-::: {.proof}
+::: {.pf-step #l-over-k-is-galois}
+The extension $L/K$ is Galois.
+
+::: pf-proof
 The group $L^\times$ has order $q^d-1$, so every
 $a\in L$ satisfies $a^{q^d}=a$, also for $a=0$.
 The factor theorem and comparison of degrees give
@@ -56,10 +59,13 @@ A splitting field of a separable polynomial is a
 Galois extension [@DF04].
 :::
 
-<1>2. The automorphism $\varphi(a)=a^q$ generates
+:::
+
+::: pf-step
+The automorphism $\varphi(a)=a^q$ generates
 $\operatorname{Gal}(L/K)$ and has order $d$.
 
-::: {.proof}
+::: pf-proof
 The characteristic-$p$ binomial identity, iterated
 $r$ times, gives $(a+b)^q=a^q+b^q$.
 Multiplication and the identity are preserved as well,
@@ -68,7 +74,7 @@ is surjective because $L$ is finite. For $a\in K$,
 Lagrange's theorem in $K^\times$ gives $a^q=a$,
 including zero. Thus $\varphi$ fixes $K$.
 
-Step <1>1 gives $\varphi^d=1$. For $0<j<d$, equality
+Step [](#l-over-k-is-galois){.pf-ref} gives $\varphi^d=1$. For $0<j<d$, equality
 $\varphi^j=1$ would make all $q^d$ elements of $L$
 roots of the nonzero polynomial $T^{q^j}-T$, whose
 degree $q^j$ is smaller than $q^d$. The root bound
@@ -77,5 +83,9 @@ Since a finite Galois group has order equal to the
 extension degree [@DF04], these $d$ powers exhaust
 $\operatorname{Gal}(L/K)$. It is therefore cyclic.
 For $d=1$, this argument gives the trivial group.
+:::
+
+:::
+
 :::
 :::

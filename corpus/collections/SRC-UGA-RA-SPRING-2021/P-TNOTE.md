@@ -36,8 +36,13 @@ b. $f_n(x) \converges{n\to\infty}\to 1$ for almost every $x$ \( \iff \)
 :::
 
 ::: {.solution}
-<1>1. Uniform convergence is equivalent to eventual equality $E_n=X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #uniform-conv-eventual-equality}
+Uniform convergence is equivalent to eventual equality $E_n=X$.
+
+::: pf-proof
 If $\chi_{E_n}\to1$ uniformly, take $\varepsilon=1/2$. For all sufficiently large $n$ and every $x\in X$,
 \[
 |\chi_{E_n}(x)-1|<\frac12.
@@ -47,8 +52,12 @@ Since $\chi_{E_n}(x)$ is either $0$ or $1$, this forces $\chi_{E_n}(x)=1$ for ev
 Conversely, if $E_n=X$ for every $n\ge N$, then $\chi_{E_n}\equiv1$ for $n\ge N$, so the convergence is uniform.
 :::
 
-<1>2. Identify the exceptional set for pointwise convergence.
-::: {.proof}
+:::
+
+::: {.pf-step #ae-convergence-characterization}
+Identify the exceptional set for pointwise convergence.
+
+::: pf-proof
 For a fixed $x\in X$, because the values are only $0$ and $1$,
 \[
 \chi_{E_n}(x)\to1
@@ -65,4 +74,13 @@ Therefore $\chi_{E_n}(x)\to1$ for almost every $x$ if and only if
 \mu\left(\bigcap_{N=1}^\infty\bigcup_{k\ge N}(X\setminus E_k)\right)=0.
 \]
 :::
+
+:::
+
+::: pf-qed
+Steps [](#uniform-conv-eventual-equality){.pf-ref} and [](#ae-convergence-characterization){.pf-ref} answer parts a and b.
+:::
+
+:::
+
 :::

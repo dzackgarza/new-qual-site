@@ -50,8 +50,12 @@ H=N_G(P)
 K=N_G(H).
 \]
 
-<1>1. We have $P\normal H$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p-normal-h}
+We have $P\normal H$.
+
+::: pf-proof
 By definition,
 \[
 H=N_G(P)=\{g\in G:gPg^{-1}=P\}.
@@ -62,8 +66,12 @@ P\normal H.
 \]
 :::
 
-<1>2. We have $H\normal K$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-normal-k}
+We have $H\normal K$.
+
+::: pf-proof
 By definition,
 \[
 K=N_G(H)=\{g\in G:gHg^{-1}=H\}.
@@ -74,13 +82,17 @@ H\normal K.
 \]
 :::
 
-<1>3. We have $P\normal K$.
-::: {.proof}
+:::
+
+::: {.pf-step #p-normal-k}
+We have $P\normal K$.
+
+::: pf-proof
 The subgroup chain is
 \[
 P\le H\le K\le G.
 \]
-The subgroup $P$ is Sylow in $G$, while <1>1 and <1>2 give
+The subgroup $P$ is Sylow in $G$, while steps [](#p-normal-h){.pf-ref} and [](#h-normal-k){.pf-ref} give
 \[
 P\normal H\normal K.
 \]
@@ -90,9 +102,13 @@ P\normal K.
 \]
 :::
 
-<1>4. We have $K\le H$.
-::: {.proof}
-By <1>3, every $k\in K$ satisfies
+:::
+
+::: {.pf-step #k-le-h}
+We have $K\le H$.
+
+::: pf-proof
+By step [](#p-normal-k){.pf-ref}, every $k\in K$ satisfies
 \[
 kPk^{-1}=P.
 \]
@@ -102,8 +118,12 @@ K\le N_G(P)=H.
 \]
 :::
 
-<1>5. We have $H\le K$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-le-k}
+We have $H\le K$.
+
+::: pf-proof
 Every subgroup normalizes itself: for $h\in H$,
 \[
 hHh^{-1}=H.
@@ -114,12 +134,20 @@ H\le N_G(H)=K.
 \]
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 N_G(N_G(P))=N_G(P).
 \]
-::: {.proof}
-Steps <1>4 and <1>5 give $K=H$.
+
+::: pf-proof
+Steps [](#k-le-h){.pf-ref} and [](#h-le-k){.pf-ref} give $K=H$.
 Substituting the definitions of $H$ and $K$ gives the required equality.
+:::
+
+:::
+
 :::
 :::

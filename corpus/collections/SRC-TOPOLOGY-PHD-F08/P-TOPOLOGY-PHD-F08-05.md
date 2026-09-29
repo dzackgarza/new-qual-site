@@ -35,8 +35,13 @@ Prove that in a Hausdorff topological space a compact subset is closed.
 :::
 
 ::: {.solution}
-<1>1. A closed subset of a compact topological space is compact.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+A closed subset of a compact topological space is compact.
+
+::: pf-proof
 Let $X$ be compact and let $F\subseteq X$ be closed.
 Suppose
 \[
@@ -58,7 +63,14 @@ Intersecting with $F$, the corresponding finitely many $U_i$ cover $F$.
 Thus every open cover of $F$ has a finite subcover, so $F$ is compact.
 :::
 
-<1>2. Let $X$ be Hausdorff, let $K\subseteq X$ be compact, and let
+:::
+
+:::
+
+::: pf
+
+::: pf-step
+Let $X$ be Hausdorff, let $K\subseteq X$ be compact, and let
 \[
 x\in X\setminus K.
 \]
@@ -68,14 +80,19 @@ y\in U_y,
 \qquad
 x\in V_y.
 \]
-::: {.proof}
+
+::: pf-proof
 For every $y\in K$, we have $x\ne y$.
 Since $X$ is Hausdorff, the two distinct points $x$ and $y$ have disjoint open neighborhoods.
 Name the neighborhood of $y$ by $U_y$ and the neighborhood of $x$ by $V_y$.
 :::
 
-<1>3. The point $x$ has an open neighborhood disjoint from $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #neighborhood-disjoint-from-k}
+The point $x$ has an open neighborhood disjoint from $K$.
+
+::: pf-proof
 The family
 \[
 \{U_y:y\in K\}
@@ -105,9 +122,18 @@ V\cap K=\varnothing.
 \]
 :::
 
-<1>4. Every compact subset of a Hausdorff space is closed.
-::: {.proof}
-By <1>3, every point of $X\setminus K$ has an open neighborhood contained in $X\setminus K$.
+:::
+
+::: pf-step
+Every compact subset of a Hausdorff space is closed.
+
+::: pf-proof
+By step [](#neighborhood-disjoint-from-k){.pf-ref}, every point of $X\setminus K$ has an open neighborhood contained in $X\setminus K$.
 Therefore $X\setminus K$ is open, and hence $K$ is closed.
 :::
+
+:::
+
+:::
+
 :::

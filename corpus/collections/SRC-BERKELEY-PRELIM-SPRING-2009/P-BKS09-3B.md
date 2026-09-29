@@ -37,12 +37,15 @@ $$
 G(z)\coloneqq-5z^3.
 $$
 
-<1>1. On the unit circle,
+::: pf
+
+::: {.pf-step #rouche-inequality}
+On the unit circle,
 $$
 \abs{F(z)-G(z)}<\abs{G(z)}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $\abs z=1$, then
 $$
 \begin{aligned}
@@ -63,33 +66,42 @@ $$
 $$
 :::
 
-<1>2. The polynomials $F$ and $G$ have the same number of zeros in
+:::
+
+::: {.pf-step #same-zero-count}
+The polynomials $F$ and $G$ have the same number of zeros in
 $\abs z<1$, counted with multiplicity.
 
-::: {.proof}
-Both functions are holomorphic on and inside the unit circle, and step <1>1
+::: pf-proof
+Both functions are holomorphic on and inside the unit circle, and step [](#rouche-inequality){.pf-ref}
 is the strict inequality required by Rouché's theorem. The conclusion follows
 directly from that theorem.
 :::
 
-<1>3. The equation has
+:::
+
+::: {.pf-step #root-count}
+The equation has
 $$
 \boxed{3}
 $$
 roots in the disk $\abs z<1$, counted with multiplicity.
 
-::: {.proof}
+::: pf-proof
 The polynomial
 $$
 G(z)=-5z^3
 $$
-has exactly one zero, $z=0$, of multiplicity $3$. Step <1>2 transfers this
+has exactly one zero, $z=0$, of multiplicity $3$. Step [](#same-zero-count){.pf-ref} transfers this
 count to $F$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested number of roots.
 :::
+
+::: pf-qed
+Step [](#root-count){.pf-ref} gives the requested number of roots.
+:::
+
+:::
+
 :::

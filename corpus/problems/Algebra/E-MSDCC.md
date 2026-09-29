@@ -42,8 +42,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The intersection of two subgroups is a subgroup.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #intersection-is-subgroup}
+The intersection of two subgroups is a subgroup.
+
+::: pf-proof
 Let $H,K\le G$. The identity lies in both subgroups, so $H\cap K$ is nonempty. If $x,y\in H\cap K$, then $x,y\in H$ and $x,y\in K$. Since both are subgroups,
 \[
 xy^{-1}\in H
@@ -53,7 +58,10 @@ xy^{-1}\in K.
 Hence $xy^{-1}\in H\cap K$. The one-step subgroup test gives $H\cap K\le G$.
 :::
 
-<1>2. If $H\cong C_m$ and $K\cong C_n$, then
+:::
+
+::: {.pf-step #cyclic-intersection-order}
+If $H\cong C_m$ and $K\cong C_n$, then
 \[
 |H\cap K|\mid\gcd(m,n).
 \]
@@ -61,8 +69,9 @@ If moreover $H$ and $K$ lie in a common cyclic subgroup, then
 \[
 H\cap K\cong C_{\gcd(m,n)}.
 \]
-::: {.proof}
-By <1>1, $H\cap K$ is a subgroup of both $H$ and $K$. Lagrange's theorem therefore gives
+
+::: pf-proof
+By step [](#intersection-is-subgroup){.pf-ref}, $H\cap K$ is a subgroup of both $H$ and $K$. Lagrange's theorem therefore gives
 \[
 |H\cap K|\mid m,
 \qquad
@@ -73,17 +82,25 @@ so $|H\cap K|\mid\gcd(m,n)$.
 Now suppose $H,K\le C$ for a cyclic group $C$. Put $d=\gcd(m,n)$. A cyclic group has a unique subgroup of each order dividing its order. Let $D\le C$ be the unique subgroup of order $d$. Since $d\mid m$ and $d\mid n$, one has $D\le H$ and $D\le K$, hence $D\le H\cap K$. The first paragraph gives $|H\cap K|\le d$, while $|D|=d$, so $H\cap K=D\cong C_d$.
 :::
 
-<1>3. Subgroups of coprime finite orders intersect trivially.
-::: {.proof}
-If $|H|$ and $|K|$ are coprime, then by <1>2 the order of $H\cap K$ divides both $|H|$ and $|K|$. Hence
+:::
+
+::: pf-step
+Subgroups of coprime finite orders intersect trivially.
+
+::: pf-proof
+If $|H|$ and $|K|$ are coprime, then by step [](#cyclic-intersection-order){.pf-ref} the order of $H\cap K$ divides both $|H|$ and $|K|$. Hence
 \[
 |H\cap K|=1,
 \]
 so $H\cap K=\{e\}$.
 :::
 
-<1>4. The union $H\cup K$ is a subgroup if and only if $H\subseteq K$ or $K\subseteq H$.
-::: {.proof}
+:::
+
+::: pf-step
+The union $H\cup K$ is a subgroup if and only if $H\subseteq K$ or $K\subseteq H$.
+
+::: pf-proof
 If $H\subseteq K$, then $H\cup K=K$; similarly if $K\subseteq H$.
 
 Conversely, suppose $H\cup K$ is a subgroup and neither subgroup contains the other. Choose
@@ -103,8 +120,12 @@ h=(hk)k^{-1}\in K,
 again a contradiction. Thus one subgroup must contain the other.
 :::
 
-<1>5. Two subgroups of the same prime order are either equal or intersect trivially.
-::: {.proof}
+:::
+
+::: pf-step
+Two subgroups of the same prime order are either equal or intersect trivially.
+
+::: pf-proof
 Let $|H|=|K|=p$ with $p$ prime. By Lagrange,
 \[
 |H\cap K|\mid p,
@@ -115,8 +136,12 @@ H=H\cap K=K.
 \]
 :::
 
-<1>6. Distinct subgroups of order $p^k$ can have trivial intersection or intersection of order $p^\ell$ for every $1\le\ell\le k-1$.
-::: {.proof}
+:::
+
+::: pf-step
+Distinct subgroups of order $p^k$ can have trivial intersection or intersection of order $p^\ell$ for every $1\le\ell\le k-1$.
+
+::: pf-proof
 Work in elementary abelian $p$-groups, viewed as vector spaces over $\FF_p$.
 
 For trivial intersection, take
@@ -147,8 +172,12 @@ S_1\cap S_2=\spanof\{e_1,\ldots,e_\ell\}
 has dimension $\ell$ and order $p^\ell$.
 :::
 
-<1>7. A product $HK$ of subgroups need not be a subgroup.
-::: {.proof}
+:::
+
+::: pf-step
+A product $HK$ of subgroups need not be a subgroup.
+
+::: pf-proof
 Take $G=S_3$,
 \[
 H=\langle(12)\rangle,
@@ -161,4 +190,9 @@ HK=\{e,(12),(23),(123)\},
 \]
 so $|HK|=4$. If $HK$ were a subgroup of $S_3$, Lagrange's theorem would force $4\mid6$, which is false. Hence $HK$ is not a subgroup.
 :::
+
+:::
+
+:::
+
 :::

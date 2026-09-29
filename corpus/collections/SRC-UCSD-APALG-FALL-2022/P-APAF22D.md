@@ -23,10 +23,15 @@ When decomposed into a sum of irreducible representations, which Specht modules 
 :::
 
 ::: {.solution}
+
 Partition the set of ordered triples according to their equality pattern.
 
-<1>1. The all-equal triples form one transitive $S_{10}$-orbit isomorphic to $S_{10}/S_9$, the triples with exactly two equal coordinates form three transitive orbits each isomorphic to $S_{10}/S_8$, and the triples with three distinct coordinates form one transitive orbit isomorphic to $S_{10}/S_7$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #orbit-decomposition-of-x}
+The all-equal triples form one transitive $S_{10}$-orbit isomorphic to $S_{10}/S_9$, the triples with exactly two equal coordinates form three transitive orbits each isomorphic to $S_{10}/S_8$, and the triples with three distinct coordinates form one transitive orbit isomorphic to $S_{10}/S_7$.
+
+::: pf-proof
 The all-equal orbit consists of $(i,i,i)$; the stabilizer of $(1,1,1)$ fixes $1$ and is therefore $S_9$.
 
 For triples with exactly two equal entries, the repeated positions are one of $(1,2)$, $(1,3)$, or $(2,3)$, and these patterns are preserved by the diagonal action. For example, the stabilizer of $(1,1,2)$ fixes $1$ and $2$ individually, hence is $S_8$. The same holds for the other two patterns.
@@ -34,7 +39,10 @@ For triples with exactly two equal entries, the repeated positions are one of $(
 For the all-distinct orbit, the stabilizer of $(1,2,3)$ fixes $1,2,3$ individually and is $S_7$.
 :::
 
-<1>2. Hence, as a permutation module,
+:::
+
+::: {.pf-step #v-as-induced-trivial-modules}
+Hence, as a permutation module,
 \[
 V\cong
 \operatorname{Ind}_{S_9}^{S_{10}}\mathbf 1
@@ -49,24 +57,32 @@ S_8\times S_1\times S_1,
 \qquad
 S_7\times S_1\times S_1\times S_1.
 \]
-::: {.proof}
-A transitive permutation representation on $G/H$ is the induced trivial representation $\operatorname{Ind}_H^G\mathbf 1$. Apply this to the five orbits in <1>1 and take their direct sum.
+
+::: pf-proof
+A transitive permutation representation on $G/H$ is the induced trivial representation $\operatorname{Ind}_H^G\mathbf 1$. Apply this to the five orbits in step [](#orbit-decomposition-of-x){.pf-ref} and take their direct sum.
 :::
 
-<1>3. Under the Frobenius characteristic map,
+:::
+
+::: {.pf-step #frobenius-characteristic-of-v}
+Under the Frobenius characteristic map,
 \[
 \operatorname{ch}(V)
 =h_9h_1+3h_8h_1^2+h_7h_1^3.
 \]
-::: {.proof}
+
+::: pf-proof
 For a Young subgroup $S_{\mu_1}\times\cdots\times S_{\mu_r}$, the Frobenius characteristic of the induced trivial representation is
 \[
 h_{\mu_1}\cdots h_{\mu_r}.
 \]
-Apply this to the three summands in <1>2.
+Apply this to the three summands in step [](#v-as-induced-trivial-modules){.pf-ref}.
 :::
 
-<1>4. Repeated application of Pieri's rule gives
+:::
+
+::: {.pf-step #pieri-expansions}
+Repeated application of Pieri's rule gives
 \[
 \begin{aligned}
 h_9h_1&=s_{(10)}+s_{(9,1)},\\
@@ -77,11 +93,15 @@ h_7h_1^3
 &\qquad+s_{(7,3)}+2s_{(7,2,1)}+s_{(7,1,1,1)}.
 \end{aligned}
 \]
-::: {.proof}
+
+::: pf-proof
 Since $h_r=s_{(r)}$, multiplying by $h_1=s_{(1)}$ adds one box to a Young diagram in every possible way, with multiplicity equal to the number of paths through successive one-box additions. Applying this once, twice, and three times to the one-row diagrams $(9)$, $(8)$, and $(7)$ gives the displayed expansions.
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{
 \begin{aligned}
@@ -94,8 +114,9 @@ V\cong{}&5S^{(10)}
 \oplus S^{(7,1,1,1)}.
 \end{aligned}}
 \]
-::: {.proof}
-Substitute the three Pieri expansions from <1>4 into
+
+::: pf-proof
+Substitute the three Pieri expansions from step [](#pieri-expansions){.pf-ref} into
 \[
 h_9h_1+3h_8h_1^2+h_7h_1^3
 \]
@@ -107,4 +128,9 @@ As a consistency check, the dimensions of the three orbit modules are
 \]
 which is the dimension of the original permutation representation.
 :::
+
+:::
+
+:::
+
 :::

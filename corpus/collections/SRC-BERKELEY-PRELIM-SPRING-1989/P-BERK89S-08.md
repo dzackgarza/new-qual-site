@@ -44,13 +44,16 @@ $$
 $$
 the standard automorphism of $D$ carrying $a$ to $0$.
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #g-defined-fixes-two}
+The map
 $$
 g=\phi_a\circ f\circ\phi_a^{-1}:D\longrightarrow D
 $$
 is analytic and fixes both $0$ and the nonzero point $c=\phi_a(b)$.
 
-::: {.proof}
+::: pf-proof
 Because $\phi_a$ is a biholomorphic automorphism of $D$, the map $g$ is an
 analytic self-map of $D$. Since $f(a)=a$ and $\phi_a(a)=0$,
 $$
@@ -64,18 +67,21 @@ The points $a$ and $b$ are distinct and $\phi_a$ is injective, so
 $c\neq0$.
 :::
 
-<1>2. There exists $\eta\in\CC$ with $\abs{\eta}=1$ such that
+:::
+
+::: {.pf-step #schwarz-rotation}
+There exists $\eta\in\CC$ with $\abs{\eta}=1$ such that
 $$
 g(z)=\eta z
 $$
 for every $z\in D$.
 
-::: {.proof}
+::: pf-proof
 Since $g:D\to D$ is analytic and $g(0)=0$, Schwarz's lemma gives
 $$
 \abs{g(z)}\leq\abs{z}
 $$
-for every $z\in D$. By step <1>1, $g(c)=c$ for some $c\neq0$, so equality
+for every $z\in D$. By step [](#g-defined-fixes-two){.pf-ref}, $g(c)=c$ for some $c\neq0$, so equality
 holds at the nonzero point $c$:
 $$
 \abs{g(c)}=\abs{c}.
@@ -84,35 +90,43 @@ The equality case of Schwarz's lemma therefore implies that
 $g(z)=\eta z$ for some $\eta$ with $\abs{\eta}=1$.
 :::
 
-<1>3. The map $g$ is the identity on $D$.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2,
+::: {.pf-step #g-is-identity}
+The map $g$ is the identity on $D$.
+
+::: pf-proof
+By steps [](#g-defined-fixes-two){.pf-ref} and [](#schwarz-rotation){.pf-ref},
 $$
 c=g(c)=\eta c.
 $$
 Since $c\neq0$, this gives $\eta=1$. Hence $g(z)=z$ for every $z\in D$.
 :::
 
-<1>4. For every $z\in D$,
+:::
+
+::: {.pf-step #f-is-identity-boxed}
+For every $z\in D$,
 $$
 \boxed{f(z)=z}.
 $$
 
-::: {.proof}
+::: pf-proof
 The definition of $g$ gives
 $$
 f=\phi_a^{-1}\circ g\circ\phi_a.
 $$
-By step <1>3, $g$ is the identity, so
+By step [](#g-is-identity){.pf-ref}, $g$ is the identity, so
 $$
 f=\phi_a^{-1}\circ\phi_a=\operatorname{id}_D.
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-qed
+Step [](#f-is-identity-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

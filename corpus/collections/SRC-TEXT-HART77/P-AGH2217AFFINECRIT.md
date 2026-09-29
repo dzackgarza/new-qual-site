@@ -34,7 +34,11 @@ Part (b) uses Hartshorne II.2.4 and II.2.16(d).
 :::
 
 ::: {.solution}
-<1>1. Under the hypotheses of part (a), the local inverses
+
+::: pf
+
+::: {.pf-step #local-inverses-glue-to-g}
+Under the hypotheses of part (a), the local inverses
 \[
 g_i:U_i\longrightarrow f^{-1}(U_i)
 \]
@@ -43,7 +47,7 @@ glue to a morphism
 g:Y\longrightarrow X.
 \]
 
-::: {.proof}
+::: pf-proof
 For each $i$, the restriction
 \[
 f_i=f|_{f^{-1}(U_i)}:f^{-1}(U_i)\longrightarrow U_i
@@ -58,9 +62,12 @@ Hence they agree.
 Morphisms of schemes glue uniquely on an open cover of the source, so the $g_i$ determine a morphism $g:Y\to X$.
 :::
 
-<1>2. The morphism $g$ is inverse to $f$; therefore $f$ is an isomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #g-inverse-to-f-isomorphism}
+The morphism $g$ is inverse to $f$; therefore $f$ is an isomorphism.
+
+::: pf-proof
 On every $U_i$,
 \[
 (f\circ g)|_{U_i}=f_i\circ g_i=\id_{U_i},
@@ -72,19 +79,25 @@ so $f\circ g=\id_Y$.  Likewise the opens $f^{-1}(U_i)$ cover $X$, and
 Thus $g\circ f=\id_X$.
 :::
 
-<1>3. If $X$ is affine, then the condition in part (b) holds.
+:::
 
-::: {.proof}
+::: {.pf-step #affine-implies-condition-b}
+If $X$ is affine, then the condition in part (b) holds.
+
+::: pf-proof
 Write $X=\Spec A$ and take $f_1=1\in A$.  Then $X_{f_1}=X$ is affine and $f_1$ generates the unit ideal.
 :::
 
-<1>4. Conversely, suppose that
+:::
+
+::: {.pf-step #xfi-cover-x}
+Conversely, suppose that
 \[
 A=\Gamma(X,\mathcal O_X)
 \]
 contains elements $f_1,\ldots,f_r$ such that each $X_{f_i}$ is affine and the $f_i$ generate the unit ideal.  Then the $X_{f_i}$ cover $X$.
 
-::: {.proof}
+::: pf-proof
 Choose $a_i\in A$ with
 \[
 \sum_i a_if_i=1.
@@ -96,9 +109,12 @@ If a point $x\in X$ lay outside every $X_{f_i}$, then every germ $(f_i)_x$ would
 which is impossible.  Hence the $X_{f_i}$ cover $X$.
 :::
 
-<1>5. The finite affine cover $\{X_{f_i}\}$ satisfies the hypothesis of Hartshorne II.2.16(c).
+:::
 
-::: {.proof}
+::: {.pf-step #xfi-satisfy-2-16c-hypothesis}
+The finite affine cover $\{X_{f_i}\}$ satisfies the hypothesis of Hartshorne II.2.16(c).
+
+::: pf-proof
 For all $i,j$,
 \[
 X_{f_i}\cap X_{f_j}=X_{f_if_j}.
@@ -106,7 +122,10 @@ X_{f_i}\cap X_{f_j}=X_{f_if_j}.
 Inside the affine scheme $X_{f_i}$ this is the distinguished open where $f_j|_{X_{f_i}}$ is invertible.  Hence it is affine, and in particular quasi-compact.
 :::
 
-<1>6. Let
+:::
+
+::: {.pf-step #eta-preimage-dfi-equals-xfi}
+Let
 \[
 \eta:X\longrightarrow\Spec A
 \]
@@ -116,7 +135,7 @@ be the canonical morphism corresponding under Hartshorne II.2.4 to the identity 
 \]
 for every $i$.
 
-::: {.proof}
+::: pf-proof
 For $x\in X$, the prime ideal corresponding to $\eta(x)$ is
 \[
 \{a\in A:a_x\in\mathfrak m_x\}.
@@ -131,14 +150,17 @@ x\in X_{f_i}.
 \]
 :::
 
-<1>7. For every $i$, the restriction
+:::
+
+::: {.pf-step #eta-i-isomorphism}
+For every $i$, the restriction
 \[
 \eta_i:X_{f_i}\longrightarrow D(f_i)
 \]
 is an isomorphism.
 
-::: {.proof}
-By <1>5, Hartshorne II.2.16(d) applies to $X$, so
+::: pf-proof
+By step [](#xfi-satisfy-2-16c-hypothesis){.pf-ref}, Hartshorne II.2.16(d) applies to $X$, so
 \[
 \Gamma(X_{f_i},\mathcal O_X)\cong A_{f_i}.
 \]
@@ -159,9 +181,12 @@ D(f_i).
 Under these identifications, $\eta_i$ is induced by the localization map $A_{f_i}\to\Gamma(X_{f_i},\mathcal O_X)$, which is the isomorphism above.  Hence $\eta_i$ is an isomorphism.
 :::
 
-<1>8. The distinguished opens $D(f_1),\ldots,D(f_r)$ cover $\Spec A$.
+:::
 
-::: {.proof}
+::: {.pf-step #dfi-cover-speca}
+The distinguished opens $D(f_1),\ldots,D(f_r)$ cover $\Spec A$.
+
+::: pf-proof
 Their complement is
 \[
 V(f_1,\ldots,f_r).
@@ -172,17 +197,23 @@ V(1)=\varnothing.
 \]
 :::
 
-<1>9. The canonical morphism $\eta:X\to\Spec A$ is an isomorphism.  Consequently $X$ is affine.
+:::
 
-::: {.proof}
-By <1>8, the $D(f_i)$ cover $\Spec A$.  By <1>6 and <1>7, for every $i$ the induced map
+::: {.pf-step #eta-isomorphism-x-affine}
+The canonical morphism $\eta:X\to\Spec A$ is an isomorphism.  Consequently $X$ is affine.
+
+::: pf-proof
+By step [](#dfi-cover-speca){.pf-ref}, the $D(f_i)$ cover $\Spec A$.  By steps [](#eta-preimage-dfi-equals-xfi){.pf-ref} and [](#eta-i-isomorphism){.pf-ref}, for every $i$ the induced map
 \[
 \eta^{-1}(D(f_i))=X_{f_i}\longrightarrow D(f_i)
 \]
-is an isomorphism.  Part (a), proved in <1>1--<1>2, therefore shows that $\eta$ is an isomorphism.
+is an isomorphism.  Part (a), proved in steps [](#local-inverses-glue-to-g){.pf-ref} and [](#g-inverse-to-f-isomorphism){.pf-ref}, therefore shows that $\eta$ is an isomorphism.
 :::
 
-<1>10. Hence
+:::
+
+::: {.pf-step #affine-iff-condition-b}
+Hence
 \[
 \boxed{
 X\text{ is affine}
@@ -194,13 +225,16 @@ X\text{ is affine}
 }
 \]
 
-::: {.proof}
-The forward implication is <1>3 and the reverse implication is <1>4--<1>9.
+::: pf-proof
+The forward implication is step [](#affine-implies-condition-b){.pf-ref} and the reverse implication is steps [](#xfi-cover-x){.pf-ref}, [](#xfi-satisfy-2-16c-hypothesis){.pf-ref}, [](#eta-preimage-dfi-equals-xfi){.pf-ref}, [](#eta-i-isomorphism){.pf-ref}, [](#dfi-cover-speca){.pf-ref} and [](#eta-isomorphism-x-affine){.pf-ref}.
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>10 prove part (b).
 :::
+
+::: pf-qed
+Steps [](#local-inverses-glue-to-g){.pf-ref} and [](#g-inverse-to-f-isomorphism){.pf-ref} prove part (a), and steps [](#affine-implies-condition-b){.pf-ref}, [](#xfi-cover-x){.pf-ref}, [](#xfi-satisfy-2-16c-hypothesis){.pf-ref}, [](#eta-preimage-dfi-equals-xfi){.pf-ref}, [](#eta-i-isomorphism){.pf-ref}, [](#dfi-cover-speca){.pf-ref}, [](#eta-isomorphism-x-affine){.pf-ref} and [](#affine-iff-condition-b){.pf-ref} prove part (b).
+:::
+
+:::
+
 :::

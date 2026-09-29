@@ -37,6 +37,7 @@ $$
 
 
 ::: {.solution}
+
 Define
 \[
 \phi(t):=\frac{t}{1+t}\qquad(t\ge0).
@@ -46,8 +47,12 @@ Then
 d(f,g)=\int_0^1\phi(|f(x)-g(x)|)\,dx.
 \]
 
-<1>1. The function $d$ is nonnegative, symmetric, and satisfies $d(f,g)=0$ if and only if $f=g$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #d-nonneg-symm-definite}
+The function $d$ is nonnegative, symmetric, and satisfies $d(f,g)=0$ if and only if $f=g$.
+
+::: pf-proof
 Nonnegativity and symmetry are immediate from the definition.
 If $f=g$, then $d(f,g)=0$.
 Conversely, suppose $d(f,g)=0$.
@@ -61,8 +66,12 @@ Its integral would then be positive, a contradiction.
 Thus $f=g$.
 :::
 
-<1>2. The function $d$ satisfies the triangle inequality.
-::: {.proof}
+:::
+
+::: {.pf-step #d-triangle-inequality}
+The function $d$ satisfies the triangle inequality.
+
+::: pf-proof
 The function $\phi$ is increasing on $[0,\infty)$.
 For nonnegative $a,b$,
 \[
@@ -86,7 +95,10 @@ d(f,h)\le d(f,g)+d(g,h).
 Thus $d$ is a metric.
 :::
 
-<1>3. Define, for $n\ge1$,
+:::
+
+::: {.pf-step #fn-cauchy}
+Define, for $n\ge1$,
 \[
 f_n(x)=\begin{cases}
 n^2x,&0\le x\le1/n,\\[2mm]
@@ -94,7 +106,8 @@ n^2x,&0\le x\le1/n,\\[2mm]
 \end{cases}
 \]
 Then $f_n\in C[0,1]$ and $(f_n)$ is $d$-Cauchy.
-::: {.proof}
+
+::: pf-proof
 At $x=1/n$, the two formulas agree because $n^2(1/n)=n=1/(1/n)$, so $f_n$ is continuous.
 
 If $x\ge\max\{1/m,1/n\}$, then $f_m(x)=f_n(x)=1/x$.
@@ -110,8 +123,12 @@ as $m,n\to\infty$.
 Thus $(f_n)$ is Cauchy.
 :::
 
-<1>4. The sequence $(f_n)$ does not converge in $(C[0,1],d)$.
-::: {.proof}
+:::
+
+::: {.pf-step #fn-does-not-converge}
+The sequence $(f_n)$ does not converge in $(C[0,1],d)$.
+
+::: pf-proof
 Suppose $d(f_n,f)\to0$ for some $f\in C[0,1]$.
 Fix $a\in(0,1]$.
 We claim that $f(a)=1/a$.
@@ -139,6 +156,13 @@ But no continuous function on $[0,1]$ can agree with $1/x$ on $(0,1]$, since $1/
 This contradiction proves that $(f_n)$ has no limit in $C[0,1]$.
 :::
 
+:::
+
+::: pf-qed
 Hence $(C[0,1],d)$ is not complete.
+:::
+
+:::
+
 :::
 

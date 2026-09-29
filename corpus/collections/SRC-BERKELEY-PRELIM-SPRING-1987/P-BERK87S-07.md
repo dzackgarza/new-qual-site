@@ -38,13 +38,16 @@ where $a$ is continuously differentiable and $b$ is continuous.
 :::
 
 ::: {.solution}
-<1>1. The function
+::: pf
+
+::: {.pf-step #c-continuous}
+The function
 $$
 c(t)\coloneqq\frac{q(t)}{p(t)}
 $$
 is continuous on $\RR$.
 
-::: {.proof}
+::: pf-proof
 Both $p$ and $q$ are continuous, and the hypothesis
 $$
 p(t)>0
@@ -52,7 +55,10 @@ $$
 for every $t$ implies that the denominator never vanishes.
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #a-defined}
+Define
 $$
 a(t)
 \coloneqq
@@ -65,8 +71,8 @@ $$
 a'(t)=a(t)\frac{q(t)}{p(t)}.
 $$
 
-::: {.proof}
-By step <1>1, the fundamental theorem of calculus gives
+::: pf-proof
+By step [](#c-continuous){.pf-ref}, the fundamental theorem of calculus gives
 $$
 \frac{d}{dt}
 \int_0^t c(s)\,ds
@@ -85,18 +91,24 @@ Continuity of $c$ also gives $a\in C^1(\RR)$, and an exponential is
 strictly positive.
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #b-continuous}
+Define
 $$
 b(t)\coloneqq a(t)\frac{r(t)}{p(t)}.
 $$
 Then $b$ is continuous.
 
-::: {.proof}
+::: pf-proof
 The functions $a$ and $r$ are continuous, while $p$ is continuous and
 nowhere zero. Hence their displayed product and quotient is continuous.
 :::
 
-<1>4. For every twice differentiable function $x$,
+:::
+
+::: {.pf-step #self-adjoint-identity}
+For every twice differentiable function $x$,
 $$
 (a(t)x'(t))'+b(t)x(t)
 =
@@ -106,8 +118,8 @@ p(t)x''(t)+q(t)x'(t)+r(t)x(t)
 \right).
 $$
 
-::: {.proof}
-By the product rule and step <1>2,
+::: pf-proof
+By the product rule and step [](#a-defined){.pf-ref},
 $$
 \begin{aligned}
 (ax')'+bx
@@ -128,14 +140,17 @@ px''+qx'+rx
 $$
 :::
 
-<1>5. The two differential equations have exactly the same solutions.
+:::
 
-::: {.proof}
-By step <1>2 and the hypothesis $p>0$,
+::: {.pf-step #same-solutions-boxed}
+The two differential equations have exactly the same solutions.
+
+::: pf-proof
+By step [](#a-defined){.pf-ref} and the hypothesis $p>0$,
 $$
 \frac{a(t)}{p(t)}>0
 $$
-for every $t$. Thus the right-hand side in step <1>4 vanishes at every
+for every $t$. Thus the right-hand side in step [](#self-adjoint-identity){.pf-ref} vanishes at every
 $t$ if and only if
 $$
 p(t)x''(t)+q(t)x'(t)+r(t)x(t)=0
@@ -149,10 +164,12 @@ $$
 has exactly the same solution set as the original equation.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 give the required regularity of $a$ and $b$, and
-step <1>5 proves equivalence of the equations.
+::: pf-qed
+Steps [](#a-defined){.pf-ref} and [](#b-continuous){.pf-ref} give the required regularity of $a$ and $b$, and
+step [](#same-solutions-boxed){.pf-ref} proves equivalence of the equations.
+:::
+
 :::
 :::

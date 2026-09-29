@@ -33,7 +33,11 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #pairs-cancel}
+Let
 $$
 Z\coloneqq\{g\in G:g\ne g^{-1}\}.
 $$
@@ -42,30 +46,36 @@ $$
 \prod_{g\in Z}g=1.
 $$
 
-::: {.proof}
+::: pf-proof
 The map $g\mapsto g^{-1}$ partitions $Z$ into disjoint two-element
 sets $\{g,g^{-1}\}$. Since $G$ is abelian, the product may be
 rearranged into these pairs, each of which has product $1$.
 :::
 
-<1>2. For the product $c$ of all elements of $G$,
+:::
+
+::: {.pf-step #product-formula}
+For the product $c$ of all elements of $G$,
 $$
 c=\prod_{\substack{g\in G\\g^2=1}}g.
 $$
 
-::: {.proof}
+::: pf-proof
 The elements outside $Z$ are exactly those satisfying $g=g^{-1}$, or
-equivalently $g^2=1$. Step <1>1 shows that the product of all elements
+equivalently $g^2=1$. Step [](#pairs-cancel){.pf-ref} shows that the product of all elements
 in $Z$ is $1$, leaving only the displayed product.
 :::
 
-<1>3. In part (a),
+:::
+
+::: {.pf-step #abelian-square-identity}
+In part (a),
 $$
 \boxed{c^2=1}.
 $$
 
-::: {.proof}
-By step <1>2 and commutativity,
+::: pf-proof
+By step [](#product-formula){.pf-ref} and commutativity,
 $$
 c^2
 =
@@ -74,13 +84,16 @@ c^2
 $$
 :::
 
-<1>4. In the multiplicative group $F^\times$, the self-inverse
+:::
+
+::: pf-step
+In the multiplicative group $F^\times$, the self-inverse
 elements are precisely the nonzero roots of
 $$
 x^2-1=(x-1)(x+1).
 $$
 
-::: {.proof}
+::: pf-proof
 An element $x\in F^\times$ is self-inverse exactly when $x^2=1$.
 Because $F$ is a field,
 $$
@@ -90,13 +103,16 @@ implies $x=1$ or $x=-1$. Conversely, both $1$ and $-1$ satisfy
 $x^2=1$.
 :::
 
-<1>5. In part (b),
+:::
+
+::: {.pf-step #field-product-value}
+In part (b),
 $$
 \boxed{c=-1}.
 $$
 
-::: {.proof}
-Apply step <1>2 to the finite abelian group $F^\times$. If
+::: pf-proof
+Apply step [](#product-formula){.pf-ref} to the finite abelian group $F^\times$. If
 $\operatorname{char}F\ne2$, the self-inverse elements are the two
 distinct elements $1$ and $-1$, so their product is $-1$. If
 $\operatorname{char}F=2$, then $1=-1$, and the only self-inverse
@@ -104,9 +120,12 @@ element is $1$, whose product is again $1=-1$. Thus in every
 characteristic, $c=-1$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>5 prove parts (a) and (b), respectively.
 :::
+
+::: pf-qed
+Steps [](#abelian-square-identity){.pf-ref} and [](#field-product-value){.pf-ref} prove parts (a) and (b), respectively.
+:::
+
+:::
+
 :::

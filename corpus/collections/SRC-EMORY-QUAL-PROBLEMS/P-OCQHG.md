@@ -32,10 +32,14 @@ Prove that $F$ is not a finitely generated $R$-module.
 :::
 
 ::: {.solution}
-<1>1. Finite generation of $F$ would give a nonzero
+
+::: pf
+
+::: pf-step
+Finite generation of $F$ would give a nonzero
 $d\in R$ with $dF\subseteq R$.
 
-::: {.proof}
+::: pf-proof
 Suppose $F$ is generated over $R$ by finitely many
 fractions $a_i/b_i$, where $a_i,b_i\in R$ and
 $b_i\ne0$. Since $F\ne0$, the generating family
@@ -47,9 +51,12 @@ generators by $d$ therefore gives an element of $R$.
 Thus $dF\subseteq R$.
 :::
 
-<1>2. This forces $R$ to be a field, a contradiction.
+:::
 
-::: {.proof}
+::: pf-step
+This forces $R$ to be a field, a contradiction.
+
+::: pf-proof
 Since $d$ is a nonzero element of the field $F$,
 multiplication by $d$ is a bijection of $F$ onto
 itself: $x=d(x/d)$ for every $x\in F$. Thus
@@ -59,5 +66,9 @@ $R=F$, contradicting the hypothesis that $R$ is
 not a field. Hence $F$ is not finitely generated.
 The argument uses only that $R$ is a nonfield
 integral domain; principality is not needed.
+:::
+
+:::
+
 :::
 :::

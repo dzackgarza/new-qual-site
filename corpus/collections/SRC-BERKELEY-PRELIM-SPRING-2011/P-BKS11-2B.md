@@ -31,7 +31,10 @@ Prove that every finite group is isomorphic to a group of even permutations of a
 ::: {.solution}
 Let $G$ be a group.
 
-<1>1. For each $g\in G$, the map
+::: pf
+
+::: {.pf-step #lambda-bijective}
+For each $g\in G$, the map
 $$
 \lambda_g:G\longrightarrow G,
 \qquad
@@ -39,7 +42,7 @@ $$
 $$
 is a permutation of the underlying set of $G$.
 
-::: {.proof}
+::: pf-proof
 The inverse of $\lambda_g$ is
 $$
 \lambda_{g^{-1}},
@@ -59,7 +62,10 @@ $$
 Thus $\lambda_g$ is bijective.
 :::
 
-<1>2. The assignment
+:::
+
+::: {.pf-step #lambda-injective-hom}
+The assignment
 $$
 \Lambda:G\longrightarrow\operatorname{Sym}(G),
 \qquad
@@ -67,7 +73,7 @@ g\longmapsto\lambda_g,
 $$
 is an injective group homomorphism.
 
-::: {.proof}
+::: pf-proof
 For $g,h,x\in G$,
 $$
 \lambda_g(\lambda_h(x))
@@ -101,17 +107,23 @@ $$
 Thus the kernel is trivial.
 :::
 
-<1>3. Every group is isomorphic to a group of permutations.
+:::
 
-::: {.proof}
-By step <1>2, $\Lambda$ identifies $G$ with the subgroup
+::: {.pf-step #cayley-theorem}
+Every group is isomorphic to a group of permutations.
+
+::: pf-proof
+By step [](#lambda-injective-hom){.pf-ref}, $\Lambda$ identifies $G$ with the subgroup
 $$
 \Lambda(G)\leq\operatorname{Sym}(G).
 $$
 This is Cayley's theorem.
 :::
 
-<1>4. Now suppose $G$ is finite and set
+:::
+
+::: {.pf-step #rho-injective-hom}
+Now suppose $G$ is finite and set
 $$
 Y\coloneqq G\times\{0,1\}.
 $$
@@ -130,13 +142,13 @@ $$
 G\longrightarrow\operatorname{Sym}(Y).
 $$
 
-::: {.proof}
+::: pf-proof
 The set $Y$ is finite because $G$ is finite. On each copy
 $$
 G\times\{i\},
 $$
 the map $\rho_g$ is exactly a copy of the permutation $\lambda_g$ from
-step <1>1. Hence it is bijective.
+step [](#lambda-bijective){.pf-ref}. Hence it is bijective.
 
 The same multiplication calculation as in step <1>2 gives
 $$
@@ -154,9 +166,12 @@ $$
 so $g=e$. Thus the homomorphism is injective.
 :::
 
-<1>5. Every permutation $\rho_g$ from step <1>4 is even.
+:::
 
-::: {.proof}
+::: {.pf-step #rho-even}
+Every permutation $\rho_g$ from step [](#rho-injective-hom){.pf-ref} is even.
+
+::: pf-proof
 The permutation $\rho_g$ preserves the two disjoint subsets
 $$
 G\times\{0\}
@@ -178,11 +193,14 @@ $$
 Hence $\rho_g$ is even.
 :::
 
-<1>6. Every finite group is isomorphic to a group of even permutations of
+:::
+
+::: {.pf-step #even-permutation-embedding}
+Every finite group is isomorphic to a group of even permutations of
 a finite set.
 
-::: {.proof}
-By steps <1>4 and <1>5, the injective homomorphism
+::: pf-proof
+By steps [](#rho-injective-hom){.pf-ref} and [](#rho-even){.pf-ref}, the injective homomorphism
 $$
 G\longrightarrow\operatorname{Sym}(Y)
 $$
@@ -198,10 +216,13 @@ $$
 $$
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the first assertion, and step <1>6 proves the finite
+::: pf-qed
+Step [](#cayley-theorem){.pf-ref} proves the first assertion, and step [](#even-permutation-embedding){.pf-ref} proves the finite
 even-permutation refinement.
 :::
+
+:::
+
 :::

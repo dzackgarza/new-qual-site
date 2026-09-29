@@ -37,9 +37,12 @@ Then show $\im \psi = Z(\mfa)$.
 Write $T=k[z_{ij}:0\le i\le r,\ 0\le j\le s]$ and $S=k[x_0,\ldots,x_r,y_0,\ldots,y_s]$, and let $\theta:T\to S$ be the substitution in the hint.
 Put $\mfa=\ker\theta$.
 
-<1>1. The map $\psi$ is well-defined and its image is contained in $Z(\mfa)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #psi-well-defined-image-in-za}
+The map $\psi$ is well-defined and its image is contained in $Z(\mfa)$.
+
+::: pf-proof
 For nonzero vectors $a,b$, choose indices $i,j$ with $a_i\ne0$ and $b_j\ne0$.
 Then $a_ib_j\ne0$, so the matrix $(a_ib_j)$ gives a projective point.
 Replacing the two vectors by $\lambda a$ and $\mu b$ multiplies the entire matrix by $\lambda\mu$, leaving that point unchanged.
@@ -48,9 +51,12 @@ For every $F\in\mfa$, the polynomial $F((x_iy_j)_{ij})$ is identically zero.
 It therefore vanishes at every pair $a,b$, so the image satisfies all the equations of $\mfa$.
 :::
 
-<1>2. The ideal $\mfa$ is homogeneous and prime, and every point of $Z(\mfa)$ is in the image of $\psi$.
+:::
 
-::: {.proof}
+::: {.pf-step #za-equals-image-of-psi}
+The ideal $\mfa$ is homogeneous and prime, and every point of $Z(\mfa)$ is in the image of $\psi$.
+
+::: pf-proof
 The map $\theta$ sends a homogeneous polynomial of degree $d$ to a homogeneous polynomial of degree $2d$, or to zero.
 Distinct source degrees have distinct target degrees, so the kernel is homogeneous.
 The quotient $T/\mfa\cong\im\theta$ is a subring of the domain $S$, hence is a domain.
@@ -72,10 +78,13 @@ The displayed equations say $c_{ij}=u_iv_j$, so $[c_{ij}]=\psi([u],[v])$.
 This proves the reverse inclusion, and hence $\im\psi=Z(\mfa)$.
 :::
 
-<1>3. The image is a projective variety, and the recovered factors are unique.
+:::
 
-::: {.proof}
-The zero set $Z(\mfa)$ is nonempty by step <1>1, since both projective factors contain points.
+::: {.pf-step #image-is-variety-factors-unique}
+The image is a projective variety, and the recovered factors are unique.
+
+::: pf-proof
+The zero set $Z(\mfa)$ is nonempty by step [](#psi-well-defined-image-in-za){.pf-ref}, since both projective factors contain points.
 The homogeneous prime correspondence in [[P-AGH24CORRESPONDENCE]] therefore makes it irreducible and closed in $\PP^N$.
 It is consequently a projective subvariety, as required.
 
@@ -86,9 +95,12 @@ This verifies the stated injectivity and identifies the inverse on every nonzero
 The description also includes $r=0$ or $s=0$, when every nonzero matrix automatically has rank one.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 identify the image with the zero set from the hint, and step <1>3 proves it is a projective variety.
 :::
+
+::: pf-qed
+Steps [](#psi-well-defined-image-in-za){.pf-ref} and [](#za-equals-image-of-psi){.pf-ref} identify the image with the zero set from the hint, and step [](#image-is-variety-factors-unique){.pf-ref} proves it is a projective variety.
+:::
+
+:::
+
 :::

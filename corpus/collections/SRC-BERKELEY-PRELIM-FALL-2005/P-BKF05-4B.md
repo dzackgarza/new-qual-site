@@ -36,18 +36,22 @@ for every integer \(n\ge2\).
 :::
 
 ::: {.solution}
+
 Let
 $$
 D=\{z\in\CC:\abs z<1\}.
 $$
 
-<1>1. If such a holomorphic function $f$ exists, then
+::: pf
+
+::: {.pf-step #identity-relation}
+If such a holomorphic function $f$ exists, then
 $$
 (1+az)f(z)=z
 $$
 for every $z\in D$.
 
-::: {.proof}
+::: pf-proof
 Define
 $$
 h(z)=(1+az)f(z)-z.
@@ -67,18 +71,21 @@ The points $1/n$ are distinct and converge to $0\in D$. Hence the
 identity theorem implies $h\equiv0$ on $D$, proving the identity.
 :::
 
-<1>2. Existence of such an $f$ forces
+:::
+
+::: {.pf-step #abs-a-leq-one-necessary}
+Existence of such an $f$ forces
 $$
 \abs a\le1.
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose $\abs a>1$. Then $a\ne0$ and
 $$
 z_0=-\frac1a
 $$
 satisfies $\abs{z_0}<1$, so $z_0\in D$. Evaluating the identity from
-step <1>1 at $z_0$ gives
+step [](#identity-relation){.pf-ref} at $z_0$ gives
 $$
 0
 =
@@ -89,14 +96,17 @@ $$
 which is impossible because $z_0\ne0$. Therefore $\abs a\le1$.
 :::
 
-<1>3. If $\abs a\le1$, then
+:::
+
+::: {.pf-step #f-formula-sufficient}
+If $\abs a\le1$, then
 $$
 f(z)=\frac{z}{1+az}
 $$
 is holomorphic on $D$ and satisfies all the required interpolation
 conditions.
 
-::: {.proof}
+::: pf-proof
 If $a=0$, the denominator is identically one. If $a\ne0$, its only
 zero is $-1/a$, whose modulus is
 $$
@@ -113,18 +123,24 @@ f(1/n)
 $$
 :::
 
-<1>4. The required set of parameters is
+:::
+
+::: {.pf-step #parameter-set}
+The required set of parameters is
 $$
 \boxed{\{a\in\CC:\abs a\le1\}}.
 $$
 
-::: {.proof}
-Step <1>2 proves necessity, and step <1>3 proves sufficiency.
+::: pf-proof
+Step [](#abs-a-leq-one-necessary){.pf-ref} proves necessity, and step [](#f-formula-sufficient){.pf-ref} proves sufficiency.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the complete classification.
 :::
+
+::: pf-qed
+Step [](#parameter-set){.pf-ref} is the complete classification.
+:::
+
+:::
+
 :::

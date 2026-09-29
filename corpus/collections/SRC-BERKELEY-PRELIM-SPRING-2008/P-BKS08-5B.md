@@ -42,13 +42,17 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The roots of $x^5-2$ are
+
+::: pf
+
+::: {.pf-step #roots-of-quintic}
+The roots of $x^5-2$ are
 $$
 \alpha,\ \zeta\alpha,\ \zeta^2\alpha,\
 \zeta^3\alpha,\ \zeta^4\alpha.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $\alpha^5=2$ and $\zeta^5=1$,
 $$
 (\zeta^j\alpha)^5=2
@@ -58,33 +62,42 @@ of the primitive fifth root $\zeta$ are distinct, and a degree-$5$
 polynomial has no further roots.
 :::
 
-<1>2. The field $E=\QQ(\zeta,\alpha)$ is the splitting field of
+:::
+
+::: {.pf-step #splitting-field}
+The field $E=\QQ(\zeta,\alpha)$ is the splitting field of
 $x^5-2$ over $\QQ$.
 
-::: {.proof}
-Step <1>1 shows that all roots of $x^5-2$ lie in $E$. Conversely, any
+::: pf-proof
+Step [](#roots-of-quintic){.pf-ref} shows that all roots of $x^5-2$ lie in $E$. Conversely, any
 splitting field contains the real root $\alpha$ and also contains
 $(\zeta\alpha)/\alpha=\zeta$. Hence it contains both generators of
 $E$. Therefore $E$ is exactly the splitting field.
 :::
 
-<1>3. The extension $E/\QQ$ is Galois.
+:::
 
-::: {.proof}
+::: {.pf-step #e-galois}
+The extension $E/\QQ$ is Galois.
+
+::: pf-proof
 The polynomial $x^5-2$ is separable over $\QQ$: its derivative is
 $5x^4$, and the two polynomials have no common root. A splitting field
 of a separable polynomial is a finite Galois extension. Apply
-step <1>2.
+step [](#splitting-field){.pf-ref}.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #degrees-four-five}
+One has
 $$
 [\QQ(\zeta):\QQ]=4
 \qquad\text{and}\qquad
 [\QQ(\alpha):\QQ]=5.
 $$
 
-::: {.proof}
+::: pf-proof
 The primitive fifth root $\zeta$ has cyclotomic polynomial
 $$
 \Phi_5(x)=x^4+x^3+x^2+x+1,
@@ -96,15 +109,18 @@ $\QQ$. Since $\alpha$ is a root, its minimal polynomial has degree
 $5$.
 :::
 
-<1>5. The integer $[E:\QQ]$ is divisible by $20$.
+:::
 
-::: {.proof}
+::: {.pf-step #divisible-by-20}
+The integer $[E:\QQ]$ is divisible by $20$.
+
+::: pf-proof
 Since $\QQ(\zeta)\subseteq E$, the tower law gives
 $$
 [E:\QQ]=[E:\QQ(\zeta)]\cdot4,
 $$
 so $4$ divides $[E:\QQ]$. Similarly,
-$\QQ(\alpha)\subseteq E$ and step <1>4 give
+$\QQ(\alpha)\subseteq E$ and step [](#degrees-four-five){.pf-ref} give
 $$
 [E:\QQ]=[E:\QQ(\alpha)]\cdot5,
 $$
@@ -112,34 +128,43 @@ so $5$ divides $[E:\QQ]$. Because $4$ and $5$ are coprime, $20$
 divides $[E:\QQ]$.
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #at-most-20}
+One has
 $$
 [E:\QQ]\le20.
 $$
 
-::: {.proof}
+::: pf-proof
 Over $\QQ(\alpha)$, the element $\zeta$ satisfies the degree-$4$
 polynomial $\Phi_5$. Hence
 $$
 [E:\QQ(\alpha)]\le4.
 $$
-Using $[\QQ(\alpha):\QQ]=5$ from step <1>4 and the tower law gives
+Using $[\QQ(\alpha):\QQ]=5$ from step [](#degrees-four-five){.pf-ref} and the tower law gives
 the claimed upper bound.
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #degree-equals-20}
+Therefore
 $$
 \boxed{[E:\QQ]=20}.
 $$
 
-::: {.proof}
-Step <1>5 says the positive integer $[E:\QQ]$ is a multiple of $20$,
-while step <1>6 says it is at most $20$.
+::: pf-proof
+Step [](#divisible-by-20){.pf-ref} says the positive integer $[E:\QQ]$ is a multiple of $20$,
+while step [](#at-most-20){.pf-ref} says it is at most $20$.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), and step <1>7 proves part (b).
 :::
+
+::: pf-qed
+Step [](#e-galois){.pf-ref} proves part (a), and step [](#degree-equals-20){.pf-ref} proves part (b).
+:::
+
+:::
+
 :::

@@ -20,8 +20,13 @@ Prove that $G$ is cyclic.
 :::
 
 ::: {.solution}
-<1>1. For every prime $p\mid |G|$, the $p$-primary component $G_p$ is cyclic.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #p-primary-component-cyclic}
+For every prime $p\mid |G|$, the $p$-primary component $G_p$ is cyclic.
+
+::: pf-proof
 By the fundamental theorem of finite abelian groups,
 \[
 G_p\cong C_{p^{a_1}}\times\cdots\times C_{p^{a_r}}
@@ -43,13 +48,17 @@ are distinct subgroups of $G_p$, hence of $G$, both of order $p$. This contradic
 Therefore $r=1$, so $G_p$ is cyclic.
 :::
 
-<1>2. The group $G$ is cyclic.
-::: {.proof}
+:::
+
+::: pf-step
+The group $G$ is cyclic.
+
+::: pf-proof
 Again by the primary decomposition theorem,
 \[
 G\cong\prod_{p\mid |G|}G_p.
 \]
-By <1>1, each $G_p$ is cyclic of order $p^{a_p}$. The orders of distinct primary components are pairwise coprime.
+By step [](#p-primary-component-cyclic){.pf-ref}, each $G_p$ is cyclic of order $p^{a_p}$. The orders of distinct primary components are pairwise coprime.
 If $g_p$ generates $G_p$, then the element
 \[
 g=(g_p)_p\in\prod_pG_p
@@ -60,4 +69,9 @@ has order
 \]
 Thus $g$ generates $G$, so $G$ is cyclic.
 :::
+
+:::
+
+:::
+
 :::

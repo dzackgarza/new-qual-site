@@ -37,8 +37,12 @@ If you cannot do it for a general metric space do it for $\mathbb R^n$.
 ::: {.solution}
 Let $(X,d)$ be a metric space and let $K\subseteq X$ be compact.
 
-<1>1. The set $K$ is bounded.
-::: {.proof}
+::: pf
+
+::: {.pf-step #k-bounded}
+The set $K$ is bounded.
+
+::: pf-proof
 If $K=\varnothing$, it is bounded trivially.
 Assume $K\ne\varnothing$ and choose $x_0\in X$.
 The family
@@ -54,9 +58,13 @@ K\subseteq B(x_0,N).
 Hence $K$ is bounded.
 :::
 
-<1>2. Fix $x\in X\setminus K$.
+:::
+
+::: {.pf-step #disjoint-nbhds}
+Fix $x\in X\setminus K$.
 For every $y\in K$, there are disjoint open neighborhoods $U_y$ of $y$ and $V_y$ of $x$.
-::: {.proof}
+
+::: pf-proof
 Since $x\ne y$,
 \[
 r_y=\frac13d(x,y)>0.
@@ -81,8 +89,12 @@ U_y\cap V_y=\varnothing.
 \]
 :::
 
-<1>3. The point $x$ has an open neighborhood disjoint from $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #neighborhood-disjoint-from-k}
+The point $x$ has an open neighborhood disjoint from $K$.
+
+::: pf-proof
 The sets
 \[
 \{U_y:y\in K\}
@@ -111,15 +123,19 @@ But $z\in V$ implies
 \[
 z\in V_{y_i},
 \]
-contradicting <1>2. Therefore
+contradicting step [](#disjoint-nbhds){.pf-ref}. Therefore
 \[
 V\cap K=\varnothing.
 \]
 :::
 
-<1>4. The set $K$ is closed.
-::: {.proof}
-By <1>3, every point of
+:::
+
+::: {.pf-step #k-closed}
+The set $K$ is closed.
+
+::: pf-proof
+By step [](#neighborhood-disjoint-from-k){.pf-ref}, every point of
 \[
 X\setminus K
 \]
@@ -127,8 +143,17 @@ has an open neighborhood contained in $X\setminus K$.
 Hence $X\setminus K$ is open, so $K$ is closed.
 :::
 
-<1>5. Therefore every compact subset of a metric space is closed and bounded.
-::: {.proof}
-Boundedness is <1>1 and closedness is <1>4.
 :::
+
+::: pf-step
+Therefore every compact subset of a metric space is closed and bounded.
+
+::: pf-proof
+Boundedness is step [](#k-bounded){.pf-ref} and closedness is step [](#k-closed){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

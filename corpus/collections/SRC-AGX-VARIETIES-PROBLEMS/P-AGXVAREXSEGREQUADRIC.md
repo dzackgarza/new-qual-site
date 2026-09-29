@@ -56,9 +56,12 @@ $$
 [a_0b_0:a_0b_1:a_1b_0:a_1b_1].
 $$
 
-<1>1. The image of $\sigma$ is contained in $Q$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #image-subset-q}
+The image of $\sigma$ is contained in $Q$.
+
+::: pf-proof
 At a point of the image,
 $$
 \begin{aligned}
@@ -73,9 +76,12 @@ $$
 $$
 :::
 
-<1>2. Every point of $Q$ lies in the image of $\sigma$.
+:::
 
-::: {.proof}
+::: {.pf-step #q-subset-image}
+Every point of $Q$ lies in the image of $\sigma$.
+
+::: pf-proof
 Let
 $$
 p=[x_0:x_1:x_2:x_3]\in Q.
@@ -127,7 +133,10 @@ Q\subseteq\operatorname{im}\sigma.
 $$
 :::
 
-<1>3. The Segre image is exactly the quadric:
+:::
+
+::: {.pf-step #image-equals-q}
+The Segre image is exactly the quadric:
 $$
 \boxed{
 \operatorname{im}\sigma
@@ -136,13 +145,16 @@ V(x_0x_3-x_1x_2).
 }
 $$
 
-::: {.proof}
-Steps <1>1 and <1>2 give the two inclusions.
+::: pf-proof
+Steps [](#image-subset-q){.pf-ref} and [](#q-subset-image){.pf-ref} give the two inclusions.
 :::
 
-<1>4. The quadric $Q$ is smooth.
+:::
 
-::: {.proof}
+::: {.pf-step #q-is-smooth}
+The quadric $Q$ is smooth.
+
+::: pf-proof
 Put
 $$
 F=x_0x_3-x_1x_2.
@@ -165,10 +177,13 @@ which is impossible in projective space. Hence $Q$ has no singular points.
 Therefore $Q$ is smooth.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 identifies the image of the Segre embedding, and step <1>4 proves
+::: pf-qed
+Step [](#image-equals-q){.pf-ref} identifies the image of the Segre embedding, and step [](#q-is-smooth){.pf-ref} proves
 that this image is a smooth quadric surface.
 :::
+
+:::
+
 :::

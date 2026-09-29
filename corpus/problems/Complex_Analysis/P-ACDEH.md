@@ -27,35 +27,57 @@ Show that $f(z)$ is a polynomial in $z$ of degree $\leq 2$.
 ::: {.solution}
 **Goal:** Prove that if $f$ is entire and $\abs{f(z)} \leq M \abs z^2$ for all $z$ outside some disk (i.e. for $\abs z \geq R_0$), then $f$ is a polynomial of degree $\leq 2$.
 
-<1>1. Write $f(z) = \sum_{n=0}^{\infty} a_n z^n$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #taylor-expansion}
+Write $f(z) = \sum_{n=0}^{\infty} a_n z^n$.
+
+::: pf-proof
 $f$ is entire.
 :::
 
-<1>2. For $R \geq R_0$, $M(R) := \max_{\abs z = R} \abs{f(z)} \leq M R^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #max-modulus-bound}
+For $R \geq R_0$, $M(R) := \max_{\abs z = R} \abs{f(z)} \leq M R^2$.
+
+::: pf-proof
 By hypothesis applied on the circle $\abs z = R$.
 :::
 
-<1>3. For $n \geq 3$ and $R \geq R_0$, $\abs{a_n} \leq \frac{M(R)}{R^n} \leq \frac{M R^2}{R^n} = M R^{2-n}$.
-::: {.proof}
-Cauchy's estimate <1>2.
 :::
 
-<1>4. $a_n = 0$ for all $n \geq 3$.
-::: {.proof}
-<1>3 holds for arbitrarily large $R$, and $R^{2-n} \to 0$ as $R \to \infty$ for $n \geq 3$.
+::: {.pf-step #coefficient-bound}
+For $n \geq 3$ and $R \geq R_0$, $\abs{a_n} \leq \frac{M(R)}{R^n} \leq \frac{M R^2}{R^n} = M R^{2-n}$.
+
+::: pf-proof
+Cauchy's estimate, step [](#max-modulus-bound){.pf-ref}.
 :::
 
-<1>5. $f(z) = a_0 + a_1 z + a_2 z^2$, a polynomial of degree at most $2$.
-::: {.proof}
-<1>1 and <1>4.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5 is the claim.
+::: {.pf-step #higher-coeffs-zero}
+$a_n = 0$ for all $n \geq 3$.
+
+::: pf-proof
+Step [](#coefficient-bound){.pf-ref} holds for arbitrarily large $R$, and $R^{2-n} \to 0$ as $R \to \infty$ for $n \geq 3$.
 :::
+
+:::
+
+::: {.pf-step #polynomial-degree-2}
+$f(z) = a_0 + a_1 z + a_2 z^2$, a polynomial of degree at most $2$.
+
+::: pf-proof
+Steps [](#taylor-expansion){.pf-ref} and [](#higher-coeffs-zero){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Step [](#polynomial-degree-2){.pf-ref} is the claim.
+:::
+
 :::
 
 ::: {.solution}

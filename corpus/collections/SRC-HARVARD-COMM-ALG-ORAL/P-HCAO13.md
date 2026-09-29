@@ -25,48 +25,84 @@ Show that every maximal element of this set is a prime ideal.
 :::
 
 ::: {.solution}
-<1>1. Let $I$ be maximal among ideals disjoint from $S$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Let $I$ be maximal among ideals disjoint from $S$.
+
+::: pf-proof
 by hypothesis.
 :::
 
-<1>2. Suppose $ab \in I$ with $a, b \notin I$.
-::: {.proof}
+:::
+
+::: pf-step
+Suppose $ab \in I$ with $a, b \notin I$.
+
+::: pf-proof
 assume for contradiction that $I$ is not prime.
 :::
 
-<1>3. The ideals $I + (a)$ and $I + (b)$ are strictly larger than $I$.
-::: {.proof}
+:::
+
+::: pf-step
+The ideals $I + (a)$ and $I + (b)$ are strictly larger than $I$.
+
+::: pf-proof
 they contain $a$ and $b$ respectively, which are not in $I$.
 :::
 
-<1>4. Hence each meets $S$.
-::: {.proof}
+:::
+
+::: {.pf-step #each-meets-s}
+Hence each meets $S$.
+
+::: pf-proof
 by maximality of $I$, any strictly larger ideal is not disjoint from $S$.
 :::
 
-<1>5. So there are $s_1 \in (I + (a)) \cap S$ and $s_2 \in (I + (b)) \cap S$.
-::: {.proof}
-by <1>4.
 :::
 
-<1>6. Write $s_1 = i_1 + r_1 a$ and $s_2 = i_2 + r_2 b$ with $i_1, i_2 \in I$ and $r_1, r_2 \in R$.
-::: {.proof}
+::: pf-step
+So there are $s_1 \in (I + (a)) \cap S$ and $s_2 \in (I + (b)) \cap S$.
+
+::: pf-proof
+by step [](#each-meets-s){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+Write $s_1 = i_1 + r_1 a$ and $s_2 = i_2 + r_2 b$ with $i_1, i_2 \in I$ and $r_1, r_2 \in R$.
+
+::: pf-proof
 elements of $I + (a)$ and $I + (b)$ have this form.
 :::
 
-<1>7. $s_1 s_2 = (i_1 + r_1 a)(i_2 + r_2 b) = i_1 i_2 + i_1 r_2 b + r_1 a i_2 + r_1 r_2 ab \in I$.
-::: {.proof}
+:::
+
+::: pf-step
+$s_1 s_2 = (i_1 + r_1 a)(i_2 + r_2 b) = i_1 i_2 + i_1 r_2 b + r_1 a i_2 + r_1 r_2 ab \in I$.
+
+::: pf-proof
 each term lies in $I$ (the first three contain a factor in $I$, and the last contains $ab \in I$).
 :::
 
-<1>8. But $s_1 s_2 \in S$ (since $S$ is multiplicative), so $s_1 s_2 \in I \cap S$, contradicting $I \cap S = \emptyset$.
-::: {.proof}
+:::
+
+::: {.pf-step #s1s2-in-intersection}
+But $s_1 s_2 \in S$ (since $S$ is multiplicative), so $s_1 s_2 \in I \cap S$, contradicting $I \cap S = \emptyset$.
+
+::: pf-proof
 $S$ is closed under multiplication, and $I$ is disjoint from $S$.
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-the contradiction in <1>8 shows $I$ is prime.
+:::
+
+::: pf-qed
+the contradiction in step [](#s1s2-in-intersection){.pf-ref} shows $I$ is prime.
+:::
+
 :::
 :::

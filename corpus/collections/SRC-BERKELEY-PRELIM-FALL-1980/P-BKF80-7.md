@@ -30,7 +30,10 @@ $$
 \frac{A_0}{2}+\sum_{n=1}^\infty(A_n\cos nx+B_n\sin nx).
 $$
 
-<1>1. The Fourier coefficients satisfy
+::: pf
+
+::: {.pf-step #coefficient-relations}
+The Fourier coefficients satisfy
 $$
 kA_0=a_0,
 \qquad
@@ -40,7 +43,7 @@ kA_0=a_0,
 $$
 for every $n\geq1$.
 
-::: {.proof}
+::: pf-proof
 Since $f''=g-kf$ is continuous and $f$ is periodic, $f$ is $C^2$ and $f'$ is also $2\pi$-periodic. Integrating the differential equation over $[-\pi,\pi]$ gives
 $$
 \int_{-\pi}^{\pi}f''(x)\,dx=0,
@@ -63,7 +66,10 @@ $$
 $$
 :::
 
-<1>2. If $k\neq0$, the Fourier series of $f$ is
+:::
+
+::: {.pf-step #fourier-series-formula}
+If $k\neq0$, the Fourier series of $f$ is
 $$
 \boxed{
 \frac{a_0}{2k}
@@ -81,21 +87,24 @@ c-\sum_{n=1}^\infty
 c\coloneqq\frac1{2\pi}\int_{-\pi}^{\pi}f(x)\,dx.
 $$
 
-::: {.proof}
-The hypothesis $k\neq n^2$ for $n\geq1$ makes every nonconstant denominator in step <1>1 nonzero. Thus
+::: pf-proof
+The hypothesis $k\neq n^2$ for $n\geq1$ makes every nonconstant denominator in step [](#coefficient-relations){.pf-ref} nonzero. Thus
 $$
 A_n=\frac{a_n}{k-n^2},
 \qquad
 B_n=\frac{b_n}{k-n^2}.
 $$
-If $k\neq0$, step <1>1 also gives $A_0=a_0/k$, which yields the first displayed series.
+If $k\neq0$, step [](#coefficient-relations){.pf-ref} also gives $A_0=a_0/k$, which yields the first displayed series.
 
-If $k=0$, the constant relation in step <1>1 gives $a_0=0$, while $A_0$ is not determined by the differential equation. Since the constant term in the Fourier series is the mean of $f$, one has $A_0/2=c$, giving the second displayed series.
+If $k=0$, the constant relation in step [](#coefficient-relations){.pf-ref} gives $a_0=0$, while $A_0$ is not determined by the differential equation. Since the constant term in the Fourier series is the mean of $f$, one has $A_0/2=c$, giving the second displayed series.
 :::
 
-<1>3. In either case, the displayed Fourier series converges absolutely and uniformly on $\RR$.
+:::
 
-::: {.proof}
+::: {.pf-step #uniform-convergence-series}
+In either case, the displayed Fourier series converges absolutely and uniformly on $\RR$.
+
+::: pf-proof
 Let $M=\max_{[-\pi,\pi]}\abs g$. The Fourier coefficients of $g$ satisfy
 $$
 \abs{a_n}\leq2M,
@@ -118,17 +127,22 @@ $$
 Since $\sum n^{-2}$ converges and $\abs{\sin(nx)},\abs{\cos(nx)}\leq1$, the Weierstrass $M$-test gives absolute and uniform convergence.
 :::
 
-<1>4. The Fourier series converges everywhere to $f$.
+:::
 
-::: {.proof}
-Let $F$ denote the uniform sum from step <1>3. Uniform convergence permits termwise integration against $1$, $\cos(nx)$, and $\sin(nx)$, so $F$ has the Fourier coefficients displayed in step <1>2. These are exactly the Fourier coefficients $A_n,B_n$ of $f$ from step <1>1. Thus the continuous periodic function $h=f-F$ has every Fourier coefficient equal to zero.
+::: {.pf-step #converges-to-f}
+The Fourier series converges everywhere to $f$.
+
+::: pf-proof
+Let $F$ denote the uniform sum from step [](#uniform-convergence-series){.pf-ref}. Uniform convergence permits termwise integration against $1$, $\cos(nx)$, and $\sin(nx)$, so $F$ has the Fourier coefficients displayed in step [](#fourier-series-formula){.pf-ref}. These are exactly the Fourier coefficients $A_n,B_n$ of $f$ from step [](#coefficient-relations){.pf-ref}. Thus the continuous periodic function $h=f-F$ has every Fourier coefficient equal to zero.
 
 By Fejér's theorem, the Cesàro means of the Fourier series of a continuous periodic function converge uniformly to that function. Every Cesàro mean of the Fourier series of $h$ is identically zero, so $h=0$. Hence $F=f$ everywhere.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 gives the Fourier series, and steps <1>3--<1>4 prove its everywhere convergence to $f$.
+::: pf-qed
+Step [](#fourier-series-formula){.pf-ref} gives the Fourier series, and steps [](#uniform-convergence-series){.pf-ref} and [](#converges-to-f){.pf-ref} prove its everywhere convergence to $f$.
+:::
+
 :::
 :::

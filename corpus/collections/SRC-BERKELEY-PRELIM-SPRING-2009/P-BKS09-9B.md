@@ -38,14 +38,17 @@ $$
 n_k\longrightarrow\infty.
 $$
 
-<1>1. Let $I=[a,b]$ be a closed interval with $a<b$. For every sufficiently
+::: pf
+
+::: {.pf-step #interval-with-sin-large}
+Let $I=[a,b]$ be a closed interval with $a<b$. For every sufficiently
 large positive integer $n$, there is a nondegenerate closed subinterval
 $J^+\subseteq I$ on which
 $$
 \sin(nx)\geq\frac12.
 $$
 
-::: {.proof}
+::: pf-proof
 For each integer $m$, set
 $$
 J_{m,n}^+
@@ -83,14 +86,17 @@ $$
 so this whole interval $J_{m,n}^+$ lies inside $I$.
 :::
 
-<1>2. Let $I=[a,b]$ be a closed interval with $a<b$. For every sufficiently
+:::
+
+::: {.pf-step #interval-with-sin-small}
+Let $I=[a,b]$ be a closed interval with $a<b$. For every sufficiently
 large positive integer $n$, there is a nondegenerate closed subinterval
 $J^-\subseteq I$ on which
 $$
 \sin(nx)\leq-\frac12.
 $$
 
-::: {.proof}
+::: pf-proof
 For each integer $m$, set
 $$
 J_{m,n}^-
@@ -110,11 +116,14 @@ $$
 \sin(nx)\leq-\frac12.
 $$
 The left endpoints are again spaced by $2\pi/n$. The same argument as in
-step <1>1 shows that one of these intervals is contained in $I$ for all
+step [](#interval-with-sin-large){.pf-ref} shows that one of these intervals is contained in $I$ for all
 sufficiently large $n$.
 :::
 
-<1>3. There exist indices
+:::
+
+::: {.pf-step #nested-intervals-exist}
+There exist indices
 $$
 k_1<k_2<k_3<\cdots
 $$
@@ -132,12 +141,12 @@ $$
 $$
 for every $x\in I_j$ when $j$ is even.
 
-::: {.proof}
+::: pf-proof
 Begin with the compact interval
 $$
 I_0=[0,1].
 $$
-Because $n_k\to\infty$, step <1>1 permits choosing an index $k_1$ and a
+Because $n_k\to\infty$, step [](#interval-with-sin-large){.pf-ref} permits choosing an index $k_1$ and a
 nondegenerate closed interval $I_1\subseteq I_0$ on which
 $$
 \sin(n_{k_1}x)\geq\frac12.
@@ -147,20 +156,23 @@ Suppose $k_j$ and $I_j$ have been chosen. Since the tail
 $$
 n_{k_j+1},n_{k_j+2},\ldots
 $$
-is still unbounded, choose $k_{j+1}>k_j$ sufficiently large that step <1>2
-applies to $I_j$ when $j+1$ is even, or step <1>1 applies when $j+1$ is
+is still unbounded, choose $k_{j+1}>k_j$ sufficiently large that step [](#interval-with-sin-small){.pf-ref}
+applies to $I_j$ when $j+1$ is even, or step [](#interval-with-sin-large){.pf-ref} applies when $j+1$ is
 odd. The corresponding subinterval is $I_{j+1}$. This recursive
 construction has all the stated properties.
 :::
 
-<1>4. There exists $x_0\in\RR$ such that the numerical sequence
+:::
+
+::: {.pf-step #exists-nonconvergent-point}
+There exists $x_0\in\RR$ such that the numerical sequence
 $$
 \sin(n_{k_j}x_0)
 $$
 does not converge.
 
-::: {.proof}
-The intervals in step <1>3 are nonempty compact subsets of the compact
+::: pf-proof
+The intervals in step [](#nested-intervals-exist){.pf-ref} are nonempty compact subsets of the compact
 interval $I_0$ and are nested. Hence
 $$
 \bigcap_{j=1}^{\infty}I_j\neq\varnothing.
@@ -169,7 +181,7 @@ Choose
 $$
 x_0\in\bigcap_{j=1}^{\infty}I_j.
 $$
-Then step <1>3 gives
+Then step [](#nested-intervals-exist){.pf-ref} gives
 $$
 \sin(n_{k_j}x_0)\geq\frac12
 $$
@@ -181,31 +193,41 @@ for every even $j$. A sequence with these two infinite families of values
 cannot converge.
 :::
 
-<1>5. The original sequence $f_n(x)=\sin(nx)$ has no pointwise convergent
+:::
+
+::: {.pf-step #subsequence-not-convergent}
+The original sequence $f_n(x)=\sin(nx)$ has no pointwise convergent
 subsequence.
 
-::: {.proof}
-The subsequence $\sin(n_kx)$ was arbitrary. Step <1>4 constructs a further
+::: pf-proof
+The subsequence $\sin(n_kx)$ was arbitrary. Step [](#exists-nonconvergent-point){.pf-ref} constructs a further
 subsequence that fails to converge at the point $x_0$. If
 $\sin(n_kx)$ converged pointwise, then every further subsequence would
 converge at every point, in particular at $x_0$. This contradiction shows
 that the arbitrary subsequence is not pointwise convergent.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the required assertion.
 :::
+
+::: pf-qed
+Step [](#subsequence-not-convergent){.pf-ref} proves the required assertion.
+:::
+
+:::
+
 :::
 
 ::: {.solution}
-<1>1. If $n\neq m$ are positive integers, then
+
+::: pf
+
+::: {.pf-step #orthogonality-integral}
+If $n\neq m$ are positive integers, then
 $$
 \int_0^{2\pi}(\sin nx-\sin mx)^2\,dx=2\pi.
 $$
 
-::: {.proof}
+::: pf-proof
 Expanding the square,
 $$
 \int_0^{2\pi}\sin^2 nx\,dx=\int_0^{2\pi}\sin^2 mx\,dx=\pi
@@ -215,23 +237,29 @@ $$
 for $n\neq m$.
 :::
 
-<1>2. For $n_1<n_2<\cdots$, the sequence $\sin(n_kx)$ does not converge
+:::
+
+::: {.pf-step #l2-argument-conclusion}
+For $n_1<n_2<\cdots$, the sequence $\sin(n_kx)$ does not converge
 pointwise on $[0,2\pi]$.
 
-::: {.proof}
+::: pf-proof
 Suppose it does. Then
 $$
 g_k(x)\coloneqq(\sin n_kx-\sin n_{k+1}x)^2
 $$
 tends to $0$ for every $x\in[0,2\pi]$, and $0\leq g_k\leq4$. By the
 bounded convergence theorem on $[0,2\pi]$,
-$\int_0^{2\pi}g_k\,dx\to0$. Since $n_k\neq n_{k+1}$, step <1>1 gives
+$\int_0^{2\pi}g_k\,dx\to0$. Since $n_k\neq n_{k+1}$, step [](#orthogonality-integral){.pf-ref} gives
 $\int_0^{2\pi}g_k\,dx=2\pi$ for every $k$, a contradiction.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Every subsequence of $f_n$ has the form in step <1>2.
 :::
+
+::: pf-qed
+Every subsequence of $f_n$ has the form in step [](#l2-argument-conclusion){.pf-ref}.
+:::
+
+:::
+
 :::

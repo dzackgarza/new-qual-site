@@ -29,31 +29,44 @@ Justify your answer.
 :::
 
 ::: {.solution}
-<1>1. Over $\mathbb C$, the polynomials
+
+::: pf
+
+::: {.pf-step #squarefree-vanishing-polynomials}
+Over $\mathbb C$, the polynomials
 \[
 f=x(x-1),\qquad g=y(y-1)
 \]
 vanish on $\mathrm V(I)$.
-::: {.proof}
+
+::: pf-proof
 At each of the two points $(0,0)$ and $(1,1)$, both $x(x-1)$ and $y(y-1)$ vanish.
 :::
 
-<1>2. There exist positive integers $a,b$ such that
+:::
+
+::: {.pf-step #powers-of-f-g-in-ideal}
+There exist positive integers $a,b$ such that
 \[
 f^a\in I,
 \qquad
 g^b\in I.
 \]
-::: {.proof}
+
+::: pf-proof
 By Hilbert's Nullstellensatz,
 \[
 I(\mathrm V(I))=\sqrt I.
 \]
-By <1>1, $f,g\in I(\mathrm V(I))$, hence $f,g\in\sqrt I$. By the definition of the radical, some positive powers $f^a$ and $g^b$ lie in $I$.
+By step [](#squarefree-vanishing-polynomials){.pf-ref}, $f,g\in I(\mathrm V(I))$, hence $f,g\in\sqrt I$. By the definition of the radical, some positive powers $f^a$ and $g^b$ lie in $I$.
 :::
 
-<1>3. The quotient $\mathbb C[x,y]/I$ is finite-dimensional over $\mathbb C$.
-::: {.proof}
+:::
+
+::: {.pf-step #quotient-finite-dimensional}
+The quotient $\mathbb C[x,y]/I$ is finite-dimensional over $\mathbb C$.
+
+::: pf-proof
 The polynomial
 \[
 f^a=[x(x-1)]^a
@@ -62,7 +75,7 @@ is monic of degree $2a$ in $x$, and
 \[
 g^b=[y(y-1)]^b
 \]
-is monic of degree $2b$ in $y$. By <1>2 both lie in $I$.
+is monic of degree $2b$ in $y$. By step [](#powers-of-f-g-in-ideal){.pf-ref} both lie in $I$.
 
 Modulo $I$, the relation $f^a=0$ expresses $x^{2a}$ as a linear combination of lower powers of $x$, and repeatedly applying it reduces every polynomial to one having $x$-degree $<2a$. Likewise $g^b=0$ reduces the $y$-degree to $<2b$.
 Therefore the finitely many residue classes
@@ -75,8 +88,12 @@ span $\mathbb C[x,y]/I$. Hence
 \]
 :::
 
-<1>4. The analogous statement over $\mathbb R$ is false.
-::: {.proof}
+:::
+
+::: {.pf-step #real-counterexample-infinite-dimensional}
+The analogous statement over $\mathbb R$ is false.
+
+::: pf-proof
 Let
 \[
 F=(x^2+y^2)\bigl((x-1)^2+(y-1)^2\bigr)
@@ -118,4 +135,13 @@ Hence the classes of
 \]
 are linearly independent in $\mathbb R[x,y]/J$, so this quotient is infinite-dimensional over $\mathbb R$.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#quotient-finite-dimensional){.pf-ref} and [](#real-counterexample-infinite-dimensional){.pf-ref} answer parts (a) and (b).
+:::
+
+:::
+
 :::

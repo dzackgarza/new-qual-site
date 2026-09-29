@@ -23,8 +23,16 @@ Compute the cohomology $H^*(\Sigma L(p) \times \Sigma L(q))$.
 :::
 
 ::: {.solution}
-<1>1. Homology and cohomology of the suspension $\Sigma L(p)$:
-<2>1. The reduced homology of the suspension satisfies $\widetilde{H}_{k+1}(\Sigma X) \cong \widetilde{H}_k(X)$.
+
+::: pf
+
+::: {.pf-step #suspension-homology-cohomology}
+Homology and cohomology of the suspension $\Sigma L(p)$:
+
+::: pf-proof
+
+::: pf-step
+The reduced homology of the suspension satisfies $\widetilde{H}_{k+1}(\Sigma X) \cong \widetilde{H}_k(X)$.
 Given $\widetilde{H}_*(L(p)) = (0, \mathbb{Z}_p, 0, \mathbb{Z})$, the homology of $X = \Sigma L(p)$ is:
 \[
 H_k(X) = \begin{cases}
@@ -33,10 +41,15 @@ H_k(X) = \begin{cases}
 0 & k = 1, 3 \text{ or } k \ge 5.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 suspension isomorphism for reduced homology.
 :::
-<2>2. By the Universal Coefficient Theorem for Cohomology, $H^k(X) \cong \operatorname{Hom}(H_k(X), \mathbb{Z}) \oplus \operatorname{Ext}(H_{k-1}(X), \mathbb{Z})$:
+
+:::
+
+::: pf-step
+By the Universal Coefficient Theorem for Cohomology, $H^k(X) \cong \operatorname{Hom}(H_k(X), \mathbb{Z}) \oplus \operatorname{Ext}(H_{k-1}(X), \mathbb{Z})$:
 - $H^0(X) \cong \mathbb{Z}$,
 - $H^1(X) \cong \operatorname{Hom}(0, \mathbb{Z}) \oplus \operatorname{Ext}(\mathbb{Z}, \mathbb{Z}) = 0$,
 - $H^2(X) \cong \operatorname{Hom}(\mathbb{Z}_p, \mathbb{Z}) \oplus \operatorname{Ext}(0, \mathbb{Z}) = 0$,
@@ -44,19 +57,36 @@ suspension isomorphism for reduced homology.
 - $H^4(X) \cong \operatorname{Hom}(\mathbb{Z}, \mathbb{Z}) \oplus \operatorname{Ext}(0, \mathbb{Z}) \cong \mathbb{Z}$,
 - $H^k(X) = 0$ for $k \ge 5$.
 Symmetrically for $Y = \Sigma L(q)$, $H^*(Y) = (\mathbb{Z}, 0, 0, \mathbb{Z}_q, \mathbb{Z}, 0, \ldots)$.
-::: {.proof}
+
+::: pf-proof
 Universal Coefficient Theorem for Cohomology.
 :::
 
-<1>2. Cohomology of the product $\Sigma L(p) \times \Sigma L(q)$ via the Künneth Formula:
-<2>1. The Künneth formula for cohomology splits as:
+:::
+
+:::
+
+:::
+
+::: {.pf-step #product-cohomology-kunneth}
+Cohomology of the product $\Sigma L(p) \times \Sigma L(q)$ via the Künneth Formula:
+
+::: pf-proof
+
+::: pf-step
+The Künneth formula for cohomology splits as:
 \[
 H^k(X \times Y) \cong \left( \bigoplus_{i+j=k} H^i(X) \otimes H^j(Y) \right) \oplus \left( \bigoplus_{i+j=k+1} \operatorname{Tor}(H^i(X), H^j(Y)) \right).
 \]
-::: {.proof}
+
+::: pf-proof
 Künneth Theorem for cohomology with principal ideal domain coefficients $\mathbb{Z}$.
 :::
-<2>2. Evaluating each degree $k \in \{0, 1, \dots, 8\}$:
+
+:::
+
+::: pf-step
+Evaluating each degree $k \in \{0, 1, \dots, 8\}$:
 - **$k = 0$:** $H^0(X) \otimes H^0(Y) \cong \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
 - **$k = 1$:** $0$.
 - **$k = 2$:** $0$.
@@ -67,17 +97,28 @@ Künneth Theorem for cohomology with principal ideal domain coefficients $\mathb
 - **$k = 7$:** $(H^3(X) \otimes H^4(Y)) \oplus (H^4(X) \otimes H^3(Y)) \cong \mathbb{Z}_p \oplus \mathbb{Z}_q$.
 - **$k = 8$:** $H^4(X) \otimes H^4(Y) \cong \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
 - **$k \ge 9$:** $H^k(X \times Y) = 0$.
-::: {.proof}
+
+::: pf-proof
 direct calculation from the Künneth components.
 :::
 
-<1>3. Conclusion:
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Conclusion:
 The integral cohomology groups $H^k(\Sigma L(p) \times \Sigma L(q))$ for $k = 0, 1, \dots, 8$ are:
 \[
 \mathbb{Z}, \quad 0, \quad 0, \quad \mathbb{Z}_p \oplus \mathbb{Z}_q, \quad \mathbb{Z} \oplus \mathbb{Z}, \quad \mathbb{Z}_{\gcd(p, q)}, \quad \mathbb{Z}_{\gcd(p, q)}, \quad \mathbb{Z}_p \oplus \mathbb{Z}_q, \quad \mathbb{Z},
 \]
-and $0$ for all $k \ge 9$. Q.E.D.
-::: {.proof}
-<1>1 and <1>2.
+and $0$ for all $k \ge 9$.
+
+Steps [](#suspension-homology-cohomology){.pf-ref} and [](#product-cohomology-kunneth){.pf-ref}.
 :::
+
+:::
+
 :::

@@ -30,9 +30,12 @@ Show that every nonconstant rational function $f$ on $Y$ defines a surjective mo
 ::: {.solution}
 Let $K=K(Y)$ and let $f\in K\setminus k$.
 
-<1>1. The rational function $f$ defines a morphism from a nonempty open subset of $Y$ to $\PP^1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #morphism-on-open-subset}
+The rational function $f$ defines a morphism from a nonempty open subset of $Y$ to $\PP^1$.
+
+::: pf-proof
 There is a nonempty open subset $U\subseteq Y$ on which $f$ is regular.
 On $U$ define
 $$
@@ -43,9 +46,12 @@ $$
 This is a morphism because its image lies in the standard affine chart $\AA^1\subseteq\PP^1$ and is represented there by the regular function $f|_U$.
 :::
 
-<1>2. The morphism $\varphi_U$ extends uniquely to a morphism $\varphi:Y\to\PP^1$.
+:::
 
-::: {.proof}
+::: {.pf-step #morphism-extends-to-y}
+The morphism $\varphi_U$ extends uniquely to a morphism $\varphi:Y\to\PP^1$.
+
+::: pf-proof
 The complement $Y\setminus U$ is a proper closed subset of the noetherian irreducible curve $Y$, hence is finite.
 Write it as $\{P_1,\ldots,P_m\}$.
 Proposition I.6.8 says that a morphism from a nonsingular curve with one point removed to a projective variety extends uniquely over that point.
@@ -65,9 +71,12 @@ whose restriction to $U$ is $\varphi_U$.
 Uniqueness at each extension step makes the final morphism unique.
 :::
 
-<1>3. The morphism $\varphi$ is nonconstant and surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #morphism-nonconstant-surjective}
+The morphism $\varphi$ is nonconstant and surjective.
+
+::: pf-proof
 If $\varphi$ were constant, then its restriction to $U$ would be constant.
 Since $\varphi_U$ is given in the affine chart by $f$, this would force $f$ to be constant in the function field, contrary to the hypothesis.
 
@@ -81,25 +90,30 @@ $$
 $$
 :::
 
-<1>4. Every fibre of $\varphi$ is finite.
+:::
 
-::: {.proof}
+::: {.pf-step #fibres-finite}
+Every fibre of $\varphi$ is finite.
+
+::: pf-proof
 Fix $P\in\PP^1$.
 The fibre
 $$
 \varphi^{-1}(P)
 $$
 is closed in $Y$ because $P$ is closed.
-It is a proper subset: if it were all of $Y$, then $\varphi$ would be constant with value $P$, contradicting step <1>3.
+It is a proper subset: if it were all of $Y$, then $\varphi$ would be constant with value $P$, contradicting step [](#morphism-nonconstant-surjective){.pf-ref}.
 
 A proper closed subset of an irreducible noetherian curve has dimension zero.
 Such a closed subset has only finitely many irreducible components, each of which is a closed point.
 Hence $\varphi^{-1}(P)$ is a finite set of points.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 construct the morphism associated to $f$, step <1>3 proves that it is surjective, and step <1>4 proves that every fibre is finite.
+::: pf-qed
+Steps [](#morphism-on-open-subset){.pf-ref} and [](#morphism-extends-to-y){.pf-ref} construct the morphism associated to $f$, step [](#morphism-nonconstant-surjective){.pf-ref} proves that it is surjective, and step [](#fibres-finite){.pf-ref} proves that every fibre is finite.
+:::
+
 :::
 :::

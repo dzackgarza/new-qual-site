@@ -35,8 +35,12 @@ Let $0$ denote the zero ring, in which
 0=1.
 \]
 
-<1>1. The zero ring has no prime ideals.
-::: {.proof}
+::: pf
+
+::: {.pf-step #zero-ring-no-primes}
+The zero ring has no prime ideals.
+
+::: pf-proof
 By definition, a prime ideal is a proper ideal.  The zero ring has only one ideal,
 \[
 (0)=(1)=0,
@@ -44,21 +48,29 @@ By definition, a prime ideal is a proper ideal.  The zero ring has only one idea
 which is the whole ring and hence is not proper.  Therefore there are no prime ideals.
 :::
 
-<1>2. Consequently
+:::
+
+::: {.pf-step #specz-ero-empty}
+Consequently
 \[
 \boxed{\operatorname{Spec}0=\varnothing}
 \]
 as a topological space.
-::: {.proof}
-The points of the spectrum are the prime ideals, and <1>1 shows that there are none.
+
+::: pf-proof
+The points of the spectrum are the prime ideals, and step [](#zero-ring-no-primes){.pf-ref} shows that there are none.
 :::
 
-<1>3. The structure sheaf on $\operatorname{Spec}0$ is the unique sheaf of rings on the empty space, with
+:::
+
+::: {.pf-step #structure-sheaf-empty-scheme}
+The structure sheaf on $\operatorname{Spec}0$ is the unique sheaf of rings on the empty space, with
 \[
 \mathcal O_{\operatorname{Spec}0}(\varnothing)=0.
 \]
 Thus $\operatorname{Spec}0$ is the empty scheme.
-::: {.proof}
+
+::: pf-proof
 The empty topological space has only the open set $\varnothing$.  For a sheaf of unital rings, the sheaf axiom for the empty covering forces the ring of sections on $\varnothing$ to have exactly one element.  The unique one-element unital ring is the zero ring.
 
 This agrees with the affine formula
@@ -67,19 +79,27 @@ This agrees with the affine formula
 \]
 :::
 
-<1>4. For every scheme $X$, there is exactly one continuous map
+:::
+
+::: {.pf-step #unique-continuous-map-from-empty}
+For every scheme $X$, there is exactly one continuous map
 \[
 \varnothing\longrightarrow |X|.
 \]
-::: {.proof}
+
+::: pf-proof
 A function with empty domain is uniquely determined because it has no values to choose.
 :::
 
-<1>5. For this continuous map $f:\varnothing\to X$, there is exactly one morphism of sheaves of rings
+:::
+
+::: {.pf-step #unique-sheaf-morphism-from-empty}
+For this continuous map $f:\varnothing\to X$, there is exactly one morphism of sheaves of rings
 \[
 f^\sharp:\mathcal O_X\longrightarrow f_*\mathcal O_{\varnothing}.
 \]
-::: {.proof}
+
+::: pf-proof
 For every open set $U\subseteq X$,
 \[
 (f_*\mathcal O_{\varnothing})(U)
@@ -94,12 +114,19 @@ There is exactly one unital ring homomorphism
 because the target has $1=0$.  These unique maps automatically commute with all restrictions, so they define a unique sheaf morphism.
 :::
 
-<1>6. The pair from <1>4--<1>5 is automatically a morphism of locally ringed spaces.
-::: {.proof}
+:::
+
+::: {.pf-step #pair-is-morphism-locally-ringed}
+The pair from steps [](#unique-continuous-map-from-empty){.pf-ref} and [](#unique-sheaf-morphism-from-empty){.pf-ref} is automatically a morphism of locally ringed spaces.
+
+::: pf-proof
 The locality condition for a morphism of locally ringed spaces is a condition on the induced map of stalks at each point of the source.  The source has no points, so there are no stalk maps to check.  Thus the condition is vacuous.
 :::
 
-<1>7. Hence for every scheme $X$,
+:::
+
+::: {.pf-step #spec-zero-initial}
+Hence for every scheme $X$,
 \[
 \boxed{
 \operatorname{Hom}_{\mathrm{Sch}}(\operatorname{Spec}0,X)
@@ -107,11 +134,15 @@ The locality condition for a morphism of locally ringed spaces is a condition on
 }
 \]
 Therefore $\operatorname{Spec}0$ is the initial object of the category of schemes.
-::: {.proof}
-Steps <1>4--<1>6 construct a unique scheme morphism from the empty scheme to $X$.  This is exactly the universal property of an initial object.
+
+::: pf-proof
+Steps [](#unique-continuous-map-from-empty){.pf-ref}, [](#unique-sheaf-morphism-from-empty){.pf-ref} and [](#pair-is-morphism-locally-ringed){.pf-ref} construct a unique scheme morphism from the empty scheme to $X$.  This is exactly the universal property of an initial object.
 :::
 
-<1>8. The ring-theoretic direction is consistent with this variance: every ring $R$ has a unique unital homomorphism
+:::
+
+::: pf-step
+The ring-theoretic direction is consistent with this variance: every ring $R$ has a unique unital homomorphism
 \[
 R\longrightarrow0,
 \]
@@ -119,12 +150,17 @@ and the contravariant functor $\operatorname{Spec}$ turns it into the unique sch
 \[
 \operatorname{Spec}0\longrightarrow\operatorname{Spec}R.
 \]
-::: {.proof}
+
+::: pf-proof
 There is only one set map from $R$ to the one-element ring, and it preserves all ring operations and the identity because $1_0=0_0$.  Contravariance reverses its direction on spectra.
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>3 describe $\operatorname{Spec}0$, and <1>4--<1>7 prove its initial property.
 :::
+
+::: pf-qed
+Steps [](#zero-ring-no-primes){.pf-ref}, [](#specz-ero-empty){.pf-ref} and [](#structure-sheaf-empty-scheme){.pf-ref} describe $\operatorname{Spec}0$, and steps [](#unique-continuous-map-from-empty){.pf-ref}, [](#unique-sheaf-morphism-from-empty){.pf-ref}, [](#pair-is-morphism-locally-ringed){.pf-ref} and [](#spec-zero-initial){.pf-ref} prove its initial property.
+:::
+
+:::
+
 :::

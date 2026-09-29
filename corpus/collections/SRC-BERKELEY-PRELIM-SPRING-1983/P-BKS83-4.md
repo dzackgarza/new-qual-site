@@ -35,7 +35,10 @@ Describe the structure of the group of all Euclidean transformations of $\mathbb
 :::
 
 ::: {.solution}
-<1>1. The four points
+::: pf
+
+::: {.pf-step #network-underdetermined}
+The four points
 $$
 P_0=(0,0),
 \qquad
@@ -48,7 +51,7 @@ $$
 do not determine the Euclidean symmetry group of a triangular network
 containing them.
 
-::: {.proof}
+::: pf-proof
 Let $N_1$ be the boundary of the unit square together with the diagonal
 segment from $P_0$ to $P_3$. This is a planar network consisting of two
 triangular cells.
@@ -76,15 +79,17 @@ Both networks contain $P_0,P_1,P_2,P_3$, but their Euclidean symmetry
 groups are not isomorphic because they have different orders.
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
 The requested group is
 $$
 \{g\in\operatorname{Isom}(\mathbb R^2):g(N)=N\}
 $$
-for the network $N$. Step <1>1 shows that it depends on $N$ beyond the
+for the network $N$. Step [](#network-underdetermined){.pf-ref} shows that it depends on $N$ beyond the
 points $P_0,P_1,P_2,P_3$: the networks $N_1$ and $N_2$ give symmetry
 groups of orders $4$ and $8$.
+:::
+
 :::
 :::

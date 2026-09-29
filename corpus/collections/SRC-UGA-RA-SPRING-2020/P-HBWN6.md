@@ -48,8 +48,13 @@ Fubini's theorem applied to $H$ then shows that $f\ast g$ is defined almost ever
 :::
 
 ::: {.solution}
-<1>1. Prove that $H$ is measurable.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #h-measurable}
+Prove that $H$ is measurable.
+
+::: pf-proof
 The maps
 \[
 (x,y)\mapsto y
@@ -69,8 +74,12 @@ H(x,y)=f(y)g(x-y)
 is therefore measurable on $\mathbb R^2$.
 :::
 
-<1>2. Prove that $H\in L^1(\mathbb R^2)$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-in-l1}
+Prove that $H\in L^1(\mathbb R^2)$.
+
+::: pf-proof
 Since $|H|$ is nonnegative and measurable, Tonelli's theorem applies directly:
 \[
 \begin{aligned}
@@ -84,8 +93,12 @@ Since $|H|$ is nonnegative and measurable, Tonelli's theorem applies directly:
 Hence $H\in L^1(\mathbb R^2)$.
 :::
 
-<1>3. Deduce the $L^1$ convolution bound.
-::: {.proof}
+:::
+
+::: {.pf-step #convolution-bound}
+Deduce the $L^1$ convolution bound.
+
+::: pf-proof
 By Fubini's theorem, for almost every $x$ the slice $y\mapsto H(x,y)$ is integrable, so
 \[
 (f*g)(x)=\int_{\mathbb R}H(x,y)\,dy
@@ -109,5 +122,14 @@ Thus
 \|f*g\|_1\le\|f\|_1\|g\|_1.}
 \]
 :::
+
+:::
+
+::: pf-qed
+Steps [](#h-measurable){.pf-ref} and [](#h-in-l1){.pf-ref} show $H\in L^1(\mathbb R^2)$, and step [](#convolution-bound){.pf-ref} deduces that $f*g\in L^1(\mathbb R)$ with $\|f*g\|_1\le\|f\|_1\|g\|_1$.
+:::
+
+:::
+
 :::
 

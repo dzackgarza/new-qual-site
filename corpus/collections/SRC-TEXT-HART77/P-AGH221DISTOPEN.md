@@ -41,11 +41,15 @@ be the localization map.  It induces a morphism of affine schemes
 \mathfrak q\longmapsto\lambda^{-1}(\mathfrak q).
 \]
 
-<1>1. The image of $\lambda^*$ is exactly
+::: pf
+
+::: pf-step
+The image of $\lambda^*$ is exactly
 \[
 D(f)=\{\mathfrak p\in\operatorname{Spec}A:f\notin\mathfrak p\}.
 \]
-::: {.proof}
+
+::: pf-proof
 If
 \[
 \mathfrak q\in\operatorname{Spec}A_f,
@@ -75,7 +79,10 @@ is a prime ideal of $A_f$, and
 Thus every point of $D(f)$ occurs in the image.
 :::
 
-<1>2. Extension and contraction give inverse bijections
+:::
+
+::: {.pf-step #spec-af-bijects-df}
+Extension and contraction give inverse bijections
 \[
 \boxed{
 \operatorname{Spec}A_f
@@ -84,12 +91,17 @@ Thus every point of $D(f)$ occurs in the image.
 D(f).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 The standard prime-correspondence theorem for localization says that prime ideals of $A_f$ are in bijection with prime ideals of $A$ disjoint from the powers of $f$, precisely the primes not containing $f$.  The inverse maps are contraction and extension.
 :::
 
-<1>3. The bijection in <1>2 is a homeomorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #bijection-is-homeomorphism}
+The bijection in step [](#spec-af-bijects-df){.pf-ref} is a homeomorphism.
+
+::: pf-proof
 A basis for the topology on $\operatorname{Spec}A_f$ is given by distinguished opens
 \[
 D_{A_f}(a/1),
@@ -119,7 +131,10 @@ D_A(a)\cap D_A(f)
 form a basis for the subspace topology on $D(f)$.  Hence the bijection sends a basis to a basis and is a homeomorphism.
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #local-ring-iso-af-q-ap}
+Let
 \[
 \mathfrak p\in D(f),
 \qquad
@@ -133,7 +148,8 @@ Then the induced map on local rings is an isomorphism
 A_{\mathfrak p}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Because $f\notin\mathfrak p$, the element $f$ is already a unit in the local ring $A_{\mathfrak p}$.  Hence the localization map
 \[
 A\longrightarrow A_{\mathfrak p}
@@ -151,8 +167,12 @@ A_{\mathfrak p}.
 \]
 :::
 
-<1>5. Under the homeomorphism of <1>3, the structure sheaf on $\operatorname{Spec}A_f$ is naturally isomorphic to the restriction $\mathcal O_X|_{D(f)}$.
-::: {.proof}
+:::
+
+::: {.pf-step #structure-sheaf-iso}
+Under the homeomorphism of step [](#bijection-is-homeomorphism){.pf-ref}, the structure sheaf on $\operatorname{Spec}A_f$ is naturally isomorphic to the restriction $\mathcal O_X|_{D(f)}$.
+
+::: pf-proof
 It is enough to compare the sheaves on the basis
 \[
 D_A(a)\cap D_A(f)
@@ -183,10 +203,13 @@ A_{af}.
 \]
 These isomorphisms commute with restriction to smaller distinguished opens because all restriction maps are localization maps.  Hence they glue to an isomorphism of sheaves on the homeomorphic spaces.
 
-Equivalently, the same conclusion follows stalkwise from <1>4, since the stalk of $\mathcal O_X|_{D(f)}$ at $\mathfrak p$ is $A_{\mathfrak p}$.
+Equivalently, the same conclusion follows stalkwise from step [](#local-ring-iso-af-q-ap){.pf-ref}, since the stalk of $\mathcal O_X|_{D(f)}$ at $\mathfrak p$ is $A_{\mathfrak p}$.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #df-locally-ringed-space-iso}
+Therefore
 \[
 \boxed{
 \left(D(f),\mathcal O_X|_{D(f)}\right)
@@ -195,12 +218,17 @@ Equivalently, the same conclusion follows stalkwise from <1>4, since the stalk o
 }
 \]
 as locally ringed spaces.
-::: {.proof}
-Step <1>3 gives the homeomorphism of underlying spaces and <1>5 gives the compatible isomorphism of structure sheaves.  The stalk maps are the local-ring isomorphisms in <1>4, so the resulting ringed-space isomorphism is an isomorphism of locally ringed spaces.
+
+::: pf-proof
+Step [](#bijection-is-homeomorphism){.pf-ref} gives the homeomorphism of underlying spaces and step [](#structure-sheaf-iso){.pf-ref} gives the compatible isomorphism of structure sheaves.  The stalk maps are the local-ring isomorphisms in step [](#local-ring-iso-af-q-ap){.pf-ref}, so the resulting ringed-space isomorphism is an isomorphism of locally ringed spaces.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>6 is the assertion of the exercise.
 :::
+
+::: pf-qed
+Step [](#df-locally-ringed-space-iso){.pf-ref} is the assertion of the exercise.
+:::
+
+:::
+
 :::

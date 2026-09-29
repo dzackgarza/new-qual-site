@@ -54,9 +54,12 @@ $$
 be the comorphism. Since $f$ is [[D-MORFIN|finite]], $B$ is a finite
 $A$-module via $\varphi$.
 
-<1>1. Every finite morphism of affine varieties is closed.
+::: pf
 
-::: {.proof}
+::: {.pf-step #finite-morphism-closed}
+Every finite morphism of affine varieties is closed.
+
+::: pf-proof
 Let
 $$
 Z=V(J)\subseteq X
@@ -78,7 +81,10 @@ which is closed in $Y$.
 Thus $f$ is a closed map.
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #dim-b-equals-dim-a-mod-i}
+If
 $$
 I=\ker\varphi,
 $$
@@ -87,7 +93,7 @@ $$
 \dim B=\dim(A/I).
 $$
 
-::: {.proof}
+::: pf-proof
 The ring $B$ is finite over $A$, hence integral over the image
 $$
 A/I\hookrightarrow B.
@@ -100,13 +106,16 @@ $$
 $$
 :::
 
-<1>3. Under the hypothesis
+:::
+
+::: {.pf-step #comorphism-injective}
+Under the hypothesis
 $$
 \dim X=\dim Y,
 $$
 the comorphism $\varphi:A\to B$ is injective.
 
-::: {.proof}
+::: pf-proof
 The varieties $X$ and $Y$ are irreducible, so $A$ and $B$ are finitely
 generated integral algebras over the ground field. In particular,
 $$
@@ -127,7 +136,7 @@ so
 $$
 \dim(A/I)<\dim A.
 $$
-By step <1>2,
+By step [](#dim-b-equals-dim-a-mod-i){.pf-ref},
 $$
 \dim B=\dim(A/I)<\dim A.
 $$
@@ -142,24 +151,30 @@ $$
 and $\varphi$ is injective.
 :::
 
-<1>4. The morphism $f$ is surjective.
+:::
 
-::: {.proof}
-By step <1>3, the comorphism is injective, so $f$ is dominant. Thus
+::: {.pf-step #f-surjective}
+The morphism $f$ is surjective.
+
+::: pf-proof
+By step [](#comorphism-injective){.pf-ref}, the comorphism is injective, so $f$ is dominant. Thus
 $$
 \overline{f(X)}=Y.
 $$
-By step <1>1, the image $f(X)$ is closed. Hence
+By step [](#finite-morphism-closed){.pf-ref}, the image $f(X)$ is closed. Hence
 $$
 f(X)=\overline{f(X)}=Y,
 $$
 so $f$ is surjective.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves closedness for every finite morphism, and steps <1>2--<1>4
+::: pf-qed
+Step [](#finite-morphism-closed){.pf-ref} proves closedness for every finite morphism, and steps [](#dim-b-equals-dim-a-mod-i){.pf-ref}, [](#comorphism-injective){.pf-ref} and [](#f-surjective){.pf-ref}
 show that the equal-dimension hypothesis forces surjectivity.
 :::
+
+:::
+
 :::

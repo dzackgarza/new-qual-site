@@ -42,6 +42,7 @@ In each case determine whether the group is free abelian; if it is, give a basis
 :::
 
 ::: {.solution}
+
 Set
 $$
 v=
@@ -52,7 +53,10 @@ v=
 \end{pmatrix}.
 $$
 
-<1>1. The image of $A$ is
+::: pf
+
+::: {.pf-step #image-of-A}
+The image of $A$ is
 $$
 \operatorname{im}A
 =
@@ -77,7 +81,7 @@ $$
 \right\}}.
 $$
 
-::: {.proof}
+::: pf-proof
 The three columns of $A$ are
 $$
 6v,
@@ -101,13 +105,16 @@ $9v-6v=3v$ shows that the proposed generator itself lies in the
 image.
 :::
 
-<1>2. The kernel of $A$ consists of the triples $(x,y,z)\in\ZZ^3$
+:::
+
+::: {.pf-step #kernel-equation}
+The kernel of $A$ consists of the triples $(x,y,z)\in\ZZ^3$
 satisfying
 $$
 2x+3y+4z=0.
 $$
 
-::: {.proof}
+::: pf-proof
 For $(x,y,z)^T\in\ZZ^3$,
 $$
 A
@@ -131,7 +138,10 @@ $$
 or equivalently $2x+3y+4z=0$.
 :::
 
-<1>3. The kernel is free abelian of rank two with basis
+:::
+
+::: {.pf-step #kernel-basis}
+The kernel is free abelian of rank two with basis
 $$
 \boxed{
 \left\{
@@ -148,8 +158,8 @@ $$
 \right\}}.
 $$
 
-::: {.proof}
-If $(x,y,z)$ satisfies the equation in step <1>2, reducing modulo
+::: pf-proof
+If $(x,y,z)$ satisfies the equation in step [](#kernel-equation){.pf-ref}, reducing modulo
 $2$ shows that $y$ is even. Write $y=2s$. Then
 $$
 2x+6s+4z=0,
@@ -184,7 +194,10 @@ The two displayed vectors are visibly linearly independent over
 $\ZZ$, so they form a basis.
 :::
 
-<1>4. The cokernel has structure
+:::
+
+::: {.pf-step #cokernel-structure}
+The cokernel has structure
 $$
 \boxed{
 \operatorname{coker}A
@@ -194,8 +207,8 @@ $$
 $$
 It is not free abelian.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#image-of-A){.pf-ref},
 $$
 \operatorname{im}A=3\ZZ v.
 $$
@@ -235,10 +248,13 @@ The class of $v$ has order exactly $3$, so the cokernel has nonzero
 torsion and therefore is not free abelian.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1, <1>3, and <1>4 give the structures and the requested
+::: pf-qed
+Steps [](#image-of-A){.pf-ref}, [](#kernel-basis){.pf-ref}, and [](#cokernel-structure){.pf-ref} give the structures and the requested
 bases in the free cases.
 :::
+
+:::
+
 :::

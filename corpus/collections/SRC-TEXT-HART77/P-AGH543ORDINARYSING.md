@@ -57,14 +57,20 @@ records the positive-characteristic inseparable case separately, using the
 source cited for this exercise rather than a false Bertini assertion for an
 inseparable pencil.
 
-<1>1. If $C$ has no bad singularities, there is nothing to prove.
+::: pf
 
-::: {.proof}
+::: pf-step
+If $C$ has no bad singularities, there is nothing to prove.
+
+::: pf-proof
 In this case every singular point is already an ordinary multiple point, so
 the empty sequence of quadratic transformations has the required property.
 :::
 
-<1>2. Let $P$ be a bad singular point of a current plane model
+:::
+
+::: {.pf-step #choose-auxiliary-points}
+Let $P$ be a bad singular point of a current plane model
 $$
 C\subseteq\PP^2.
 $$
@@ -85,7 +91,7 @@ have the following properties:
   $\mu_P(C)$ at $P$ and meet $C$ transversely in distinct smooth points
   away from $P$.
 
-::: {.proof}
+::: pf-proof
 The singular locus of the integral plane curve is finite. A general line
 avoids this finite set and is not tangent to the smooth locus, so it meets
 $C$ transversely in distinct smooth points. This applies directly to the
@@ -108,7 +114,10 @@ transverse line avoiding the singular locus. This gives the stated
 properties.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #quadratic-transform-realizes-blowup}
+Let
 $$
 \varphi:\PP^2\dashrightarrow\PP^{2\prime}
 $$
@@ -123,7 +132,7 @@ $$
 the strict transform of $C$ near the exceptional curve over $P$ is exactly
 the strict transform obtained by the ordinary point blowup of $P$.
 
-::: {.proof}
+::: pf-proof
 The resolved quadratic transformation is the blowup of the three source
 base points followed by the contraction of the three strict transforms of
 the joining lines, as in [[P-AGH542QUADTRANSFORM]].
@@ -131,7 +140,7 @@ the joining lines, as in [[P-AGH542QUADTRANSFORM]].
 Let $E_P$ be the exceptional curve over $P$. The only two contracted curves
 meeting $E_P$ are the strict transforms of $PA$ and $PB$, and they meet
 $E_P$ at the two points representing their tangent directions at $P$.
-By step <1>2 neither direction belongs to the tangent cone of $C$ at $P$.
+By step [](#choose-auxiliary-points){.pf-ref} neither direction belongs to the tangent cone of $C$ at $P$.
 Hence the strict transform of $C$ on $S$ does not meet $E_P$ at either of
 those two points.
 
@@ -141,10 +150,13 @@ transform of $C$ meets $E_P$. Thus the germs of the new plane curve along
 the image of $E_P$ are exactly the germs produced by blowing up $C$ at $P$.
 :::
 
-<1>4. The quadratic transformation in step <1>3 creates only ordinary
+:::
+
+::: {.pf-step #contraction-points-ordinary}
+The quadratic transformation in step [](#quadratic-transform-realizes-blowup){.pf-ref} creates only ordinary
 singularities at the three contraction points of the fundamental lines.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 m=\mu_P(C),
@@ -162,7 +174,7 @@ d-m
 $$
 at the three contraction points.
 
-More importantly, step <1>2 describes the branches there. The strict
+More importantly, step [](#choose-auxiliary-points){.pf-ref} describes the branches there. The strict
 transform of $AB$ meets the strict transform of $C$ in $d$ distinct points,
 all transversely. Contracting $AB$ identifies these points to one target
 point; on the inverse blowup they correspond to $d$ distinct points of the
@@ -180,35 +192,44 @@ $0$ or $1$, the corresponding target point is not singular, which is even
 better.
 :::
 
-<1>5. Every singularity of $C$ away from the three fundamental lines is
+:::
+
+::: {.pf-step #other-singularities-unchanged}
+Every singularity of $C$ away from the three fundamental lines is
 unchanged by the transformation.
 
-::: {.proof}
+::: pf-proof
 The quadratic transformation is an isomorphism away from its three base
-points and the three fundamental lines. By the choice in step <1>2, those
+points and the three fundamental lines. By the choice in step [](#choose-auxiliary-points){.pf-ref}, those
 lines contain no singular point of $C$ except the chosen point $P$, while
 $A,B$ do not lie on $C$. Hence every other singular germ of $C$ lies in the
 isomorphism locus and is carried isomorphically to the new plane model.
 :::
 
-<1>6. Thus one quadratic transformation can replace one prescribed point
+:::
+
+::: {.pf-step #one-blowup-replaced-safely}
+Thus one quadratic transformation can replace one prescribed point
 blowup at a bad singularity without introducing any new bad singularity.
 
-::: {.proof}
-By step <1>3, the germs lying over the chosen bad point $P$ are exactly those
-obtained from its point blowup. Step <1>4 says all singularities introduced
-by contracting the fundamental lines are ordinary. Step <1>5 says every
+::: pf-proof
+By step [](#quadratic-transform-realizes-blowup){.pf-ref}, the germs lying over the chosen bad point $P$ are exactly those
+obtained from its point blowup. Step [](#contraction-points-ordinary){.pf-ref} says all singularities introduced
+by contracting the fundamental lines are ordinary. Step [](#other-singularities-unchanged){.pf-ref} says every
 other old singularity is unchanged. Therefore the only possible bad
 singularities after the quadratic transformation are precisely the bad
 infinitely near singularities which the prescribed blowup of $P$ would
 produce.
 :::
 
-<1>7. The resolution result (3.8) cited in the exercise gives a finite
+:::
+
+::: {.pf-step #resolution-sequence-exists}
+The resolution result (3.8) cited in the exercise gives a finite
 sequence of point blowups after which the strict transform of $C$ is
 nonsingular.
 
-::: {.proof}
+::: pf-proof
 This is exactly the curve-resolution input requested by the exercise. It
 produces finitely many ordinary point blowups, each centered at a singular
 point of the current strict transform, such that the final strict transform
@@ -216,22 +237,25 @@ is nonsingular. Equivalently, there are only finitely many bad infinitely
 near singular germs which need to be eliminated.
 :::
 
-<1>8. Suppose every bad centre encountered in the resolution sequence has
+:::
+
+::: {.pf-step #separable-case-induction}
+Suppose every bad centre encountered in the resolution sequence has
 separable projection. Then replacing the successive point blowups by the
-quadratic transformations of steps <1>2--<1>6 gives, after finitely many
+quadratic transformations of steps [](#choose-auxiliary-points){.pf-ref}, [](#quadratic-transform-realizes-blowup){.pf-ref}, [](#contraction-points-ordinary){.pf-ref}, [](#other-singularities-unchanged){.pf-ref} and [](#one-blowup-replaced-safely){.pf-ref} gives, after finitely many
 steps, a plane strict transform having only ordinary singularities.
 
-::: {.proof}
-Proceed through the finite point-blowup sequence of step <1>7. At each bad
-centre, choose the two auxiliary points generally as in step <1>2. In
+::: pf-proof
+Proceed through the finite point-blowup sequence of step [](#resolution-sequence-exists){.pf-ref}. At each bad
+centre, choose the two auxiliary points generally as in step [](#choose-auxiliary-points){.pf-ref}. In
 addition, avoid the finite set of ordinary singularities already present;
 the same open conditions allow this.
 
-Step <1>6 shows inductively that the quadratic transformation performs the
+Step [](#one-blowup-replaced-safely){.pf-ref} shows inductively that the quadratic transformation performs the
 required next blowup on the bad germ and creates no new bad germ. Ordinary
 singularities already present and away from the chosen fundamental lines are
-preserved by step <1>5, while the newly contracted-line singularities are
-ordinary by step <1>4.
+preserved by step [](#other-singularities-unchanged){.pf-ref}, while the newly contracted-line singularities are
+ordinary by step [](#contraction-points-ordinary){.pf-ref}.
 
 After the finitely many prescribed centres have been processed, no bad
 infinitely near singularity remains, because the corresponding point-blowup
@@ -240,10 +264,13 @@ final plane model are therefore all ordinary multiple points with distinct
 tangent directions.
 :::
 
-<1>9. The same conclusion holds when an inseparable projection occurs in
+:::
+
+::: {.pf-step #inseparable-case}
+The same conclusion holds when an inseparable projection occurs in
 positive characteristic.
 
-::: {.proof}
+::: pf-proof
 This is the exceptional case for which the retained source of this exercise
 does not use the general-pencil argument above.  It explicitly refers to
 Hirschfeld, *Algebraic Curves over Finite Fields*, Theorem 3.27.  That
@@ -258,13 +285,15 @@ transformations.  This is exactly the positive-characteristic case for which
 the retained solution cites that theorem.
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2--<1>6 show how to realize one required resolution blowup by a
+::: pf-qed
+Steps [](#choose-auxiliary-points){.pf-ref}, [](#quadratic-transform-realizes-blowup){.pf-ref}, [](#contraction-points-ordinary){.pf-ref}, [](#other-singularities-unchanged){.pf-ref} and [](#one-blowup-replaced-safely){.pf-ref} show how to realize one required resolution blowup by a
 quadratic transformation without creating nonordinary singularities whenever
-the relevant projection is separable. Steps <1>7--<1>8 iterate this through
-the finite resolution sequence in that case, and step <1>9 supplies the
+the relevant projection is separable. Steps [](#resolution-sequence-exists){.pf-ref} and [](#separable-case-induction){.pf-ref} iterate this through
+the finite resolution sequence in that case, and step [](#inseparable-case){.pf-ref} supplies the
 inseparable positive-characteristic case from the source cited for V.4.3.
+:::
+
 :::
 :::

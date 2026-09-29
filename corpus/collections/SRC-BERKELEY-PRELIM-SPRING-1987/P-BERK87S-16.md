@@ -34,9 +34,12 @@ is continuous.
 :::
 
 ::: {.solution}
-<1>1. The value $g(x)$ is finite for every $x\in X$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #g-finite}
+The value $g(x)$ is finite for every $x\in X$.
+
+::: pf-proof
 Uniform boundedness gives a constant $M>0$ such that
 $$
 \abs{f(x)}\leq M
@@ -49,13 +52,16 @@ for all $f\in\mathcal F$, so the supremum defining $g(x)$ is a finite
 real number.
 :::
 
-<1>2. Fix $x_0\in X$ and $\varepsilon>0$. There exists $\delta>0$ such
+:::
+
+::: {.pf-step #upper-bound}
+Fix $x_0\in X$ and $\varepsilon>0$. There exists $\delta>0$ such
 that, whenever $d(x,x_0)<\delta$,
 $$
 g(x)\leq g(x_0)+\frac{\varepsilon}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
 By equicontinuity at $x_0$, there exists $\delta>0$ such that
 $$
 d(x,x_0)<\delta
@@ -77,13 +83,16 @@ g(x)\leq g(x_0)+\frac{\varepsilon}{2}.
 $$
 :::
 
-<1>3. For the same $\delta$, whenever $d(x,x_0)<\delta$,
+:::
+
+::: {.pf-step #lower-bound}
+For the same $\delta$, whenever $d(x,x_0)<\delta$,
 $$
 g(x_0)\leq g(x)+\frac{\varepsilon}{2}.
 $$
 
-::: {.proof}
-The equicontinuity estimate from step <1>2 also gives, for every
+::: pf-proof
+The equicontinuity estimate from step [](#upper-bound){.pf-ref} also gives, for every
 $f\in\mathcal F$,
 $$
 f(x_0)
@@ -95,10 +104,13 @@ $$
 Taking the supremum over $f\in\mathcal F$ yields the stated inequality.
 :::
 
-<1>4. The function $g$ is continuous at $x_0$.
+:::
 
-::: {.proof}
-By steps <1>2 and <1>3, if $d(x,x_0)<\delta$, then
+::: {.pf-step #continuous-at-x0}
+The function $g$ is continuous at $x_0$.
+
+::: pf-proof
+By steps [](#upper-bound){.pf-ref} and [](#lower-bound){.pf-ref}, if $d(x,x_0)<\delta$, then
 $$
 \abs{g(x)-g(x_0)}
 \leq
@@ -109,10 +121,12 @@ $$
 This is continuity at $x_0$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-The point $x_0\in X$ was arbitrary, so step <1>4 proves that $g$ is
+::: pf-qed
+The point $x_0\in X$ was arbitrary, so step [](#continuous-at-x0){.pf-ref} proves that $g$ is
 continuous on $X$.
+:::
+
 :::
 :::

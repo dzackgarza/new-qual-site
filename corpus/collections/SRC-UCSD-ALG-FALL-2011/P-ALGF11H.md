@@ -49,11 +49,15 @@ A=
 \end{pmatrix}.
 \]
 
-<1>1. The characteristic and minimal polynomials of \(A\) are both
+::: pf
+
+::: {.pf-step #char-and-min-poly}
+The characteristic and minimal polynomials of \(A\) are both
 \[
 t^3-1.
 \]
-::: {.proof}
+
+::: pf-proof
 A direct determinant computation gives
 \[
 \det(tI-A)
@@ -90,18 +94,22 @@ m_A(t)=t^3-1.
 \]
 :::
 
-<1>2. Over \(\mathbb C\), the Jordan canonical form is
+:::
+
+::: {.pf-step #jordan-form-c}
+Over \(\mathbb C\), the Jordan canonical form is
 \[
 \operatorname{diag}(1,\omega,\omega^2),
 \]
 where \(\omega=e^{2\pi i/3}\).
-::: {.proof}
+
+::: pf-proof
 Over \(\mathbb C\),
 \[
 t^3-1=(t-1)(t-\omega)(t-\omega^2),
 \]
 and the three roots are distinct.
-By <1>1, the minimal polynomial of \(A\) has no repeated factor over \(\mathbb C\).
+By step [](#char-and-min-poly){.pf-ref}, the minimal polynomial of \(A\) has no repeated factor over \(\mathbb C\).
 Therefore \(A\) is diagonalizable.
 Its eigenvalues are exactly the roots of its characteristic polynomial, namely
 \[
@@ -118,11 +126,15 @@ Thus its Jordan form is
 up to reordering of the diagonal entries.
 :::
 
-<1>3. Over \(\overline{\mathbb F}_3\), the characteristic and minimal polynomials are
+:::
+
+::: {.pf-step #char-and-min-poly-f3}
+Over \(\overline{\mathbb F}_3\), the characteristic and minimal polynomials are
 \[
 (t-1)^3.
 \]
-::: {.proof}
+
+::: pf-proof
 In characteristic \(3\),
 \[
 t^3-1=(t-1)^3,
@@ -131,14 +143,17 @@ because
 \[
 (t-1)^3=t^3-3t^2+3t-1=t^3-1.
 \]
-The cyclic-vector argument in <1>1 works over every field, so the minimal polynomial still has degree \(3\).
+The cyclic-vector argument in step [](#char-and-min-poly){.pf-ref} works over every field, so the minimal polynomial still has degree \(3\).
 Hence over \(\overline{\mathbb F}_3\),
 \[
 m_A(t)=(t-1)^3.
 \]
 :::
 
-<1>4. Over \(\overline{\mathbb F}_3\), the Jordan canonical form is one size-3 block
+:::
+
+::: {.pf-step #jordan-form-f3}
+Over \(\overline{\mathbb F}_3\), the Jordan canonical form is one size-3 block
 \[
 J_3(1)=
 \begin{pmatrix}
@@ -147,9 +162,18 @@ J_3(1)=
 0&0&1
 \end{pmatrix}.
 \]
-::: {.proof}
-By <1>3, the only eigenvalue is \(1\), and the largest Jordan block has size equal to the exponent of \(t-1\) in the minimal polynomial, namely \(3\).
+
+::: pf-proof
+By step [](#char-and-min-poly-f3){.pf-ref}, the only eigenvalue is \(1\), and the largest Jordan block has size equal to the exponent of \(t-1\) in the minimal polynomial, namely \(3\).
 Since the whole vector space has dimension \(3\), there must be exactly one Jordan block, of size \(3\).
 Thus the Jordan form is \(J_3(1)\).
+:::
+
+:::
+
+::: pf-qed
+Step [](#jordan-form-c){.pf-ref} answers part (a), and step [](#jordan-form-f3){.pf-ref} answers part (b).
+:::
+
 :::
 :::

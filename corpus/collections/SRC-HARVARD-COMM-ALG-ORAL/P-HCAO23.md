@@ -39,9 +39,13 @@ A=\widetilde R\subseteq K.
 \]
 We prove the special case of the Krull--Akizuki argument needed here.
 
-<1>1. Let $M\subseteq K$ be any $R$-submodule and let $0\ne x\in R$.
+::: pf
+
+::: {.pf-step #quotient-has-finite-length}
+Let $M\subseteq K$ be any $R$-submodule and let $0\ne x\in R$.
 Then $M/xM$ has finite length as an $R$-module.
-::: {.proof}
+
+::: pf-proof
 First suppose that $(R,\mathfrak m)$ is local. Put
 \[
 \ell=\operatorname{length}_R(R/xR).
@@ -121,8 +125,12 @@ shows that every summand has finite length. Therefore $M/xM$ has finite length
 over $R$.
 :::
 
-<1>2. Every nonzero ideal $I\subseteq A$ contains a nonzero element of $R$.
-::: {.proof}
+:::
+
+::: {.pf-step #ideal-contains-r-element}
+Every nonzero ideal $I\subseteq A$ contains a nonzero element of $R$.
+
+::: pf-proof
 Choose $0\ne y\in I$. Since $y\in K$, write
 \[
 y=\frac ab
@@ -137,10 +145,14 @@ because $b\in R\subseteq A$. Thus
 \]
 :::
 
-<1>3. Every ideal of $A$ is finitely generated.
-::: {.proof}
-The zero ideal is finitely generated, so let $0\ne I\subseteq A$. By <1>2,
-choose $0\ne x\in I\cap R$. Apply <1>1 to the $R$-submodule
+:::
+
+::: {.pf-step #ideal-of-a-finitely-generated}
+Every ideal of $A$ is finitely generated.
+
+::: pf-proof
+The zero ideal is finitely generated, so let $0\ne I\subseteq A$. By step [](#ideal-contains-r-element){.pf-ref},
+choose $0\ne x\in I\cap R$. Apply step [](#quotient-has-finite-length){.pf-ref} to the $R$-submodule
 \[
 A\subseteq K.
 \]
@@ -169,9 +181,17 @@ I=(x,y_1,\ldots,y_n)
 as an ideal of $A$.
 :::
 
-<1>4. Hence $\widetilde R=A$ is Noetherian.
-::: {.proof}
+:::
+
+::: pf-step
+Hence $\widetilde R=A$ is Noetherian.
+
+::: pf-proof
 A ring is Noetherian if and only if every ideal is finitely generated. This is
-exactly <1>3.
+exactly step [](#ideal-of-a-finitely-generated){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

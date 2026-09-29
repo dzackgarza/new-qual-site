@@ -39,12 +39,15 @@ $$
 For $R>1$, let $C_R$ be the upper semicircle of radius $R$, oriented from
 $R$ to $-R$.
 
-<1>1. The semicircular contribution tends to zero:
+::: pf
+
+::: {.pf-step #arc-vanishes}
+The semicircular contribution tends to zero:
 $$
 \lim_{R\to\infty}\int_{C_R}F(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
 On $C_R$,
 $$
 \abs{z^4+1}
@@ -62,7 +65,10 @@ $$
 $$
 :::
 
-<1>2. The poles of $F$ in the upper half-plane are
+:::
+
+::: pf-step
+The poles of $F$ in the upper half-plane are
 $$
 \alpha=e^{i\pi/4}
 =
@@ -75,7 +81,7 @@ $$
 \frac{-1+i}{\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The roots of $z^4+1=0$ are
 $$
 e^{i(2k+1)\pi/4},
@@ -86,7 +92,10 @@ Exactly the roots with arguments $\pi/4$ and $3\pi/4$ lie in the upper
 half-plane.
 :::
 
-<1>3. The sum of the two upper-half-plane residues is
+:::
+
+::: pf-step
+The sum of the two upper-half-plane residues is
 $$
 \operatorname{Res}_{z=\alpha}F
 +
@@ -95,7 +104,7 @@ $$
 -\frac{i}{2\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Every root of $z^4+1$ is simple, so at a root $\rho$,
 $$
 \operatorname{Res}_{z=\rho}F
@@ -132,14 +141,17 @@ $$
 $$
 :::
 
-<1>4. The integral over the whole real line is
+:::
+
+::: {.pf-step #full-line-value}
+The integral over the whole real line is
 $$
 \int_{-\infty}^{\infty}\frac{dx}{x^4+1}
 =
 \frac{\pi}{\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The residue theorem on the contour formed by $[-R,R]$ and $C_R$ gives
 $$
 \int_{-R}^{R}\frac{dx}{x^4+1}
@@ -151,10 +163,13 @@ $$
 -\frac{i}{2\sqrt2}
 \right).
 $$
-Let $R\to\infty$ and apply step <1>1.
+Let $R\to\infty$ and apply step [](#arc-vanishes){.pf-ref}.
 :::
 
-<1>5. The requested integral is
+:::
+
+::: {.pf-step #final-value}
+The requested integral is
 $$
 \boxed{
 \int_0^\infty\frac{dx}{x^4+1}
@@ -163,14 +178,17 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The integrand is even, so the integral over $[0,\infty)$ is one half of
-the full-line integral in step <1>4.
+the full-line integral in step [](#full-line-value){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required residue evaluation.
 :::
+
+::: pf-qed
+Step [](#final-value){.pf-ref} is the required residue evaluation.
+:::
+
+:::
+
 :::

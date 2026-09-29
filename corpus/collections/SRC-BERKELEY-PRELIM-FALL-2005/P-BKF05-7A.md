@@ -38,17 +38,21 @@ How many zeros, counted with multiplicity, does \(f\) have in the annulus
 :::
 
 ::: {.solution}
+
 Set
 $$
 g(z)=5z^3.
 $$
 
-<1>1. On the circle $\abs{z}=2$,
+::: pf
+
+::: {.pf-step #rouche-bound-at-2}
+On the circle $\abs{z}=2$,
 $$
 \abs{f(z)-g(z)}<\abs{g(z)}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $\abs{z}=2$, then
 $$
 \begin{aligned}
@@ -73,22 +77,28 @@ $$
 Thus the inequality is strict.
 :::
 
-<1>2. The polynomial $f$ has exactly three zeros, counted with
+:::
+
+::: {.pf-step #three-zeros-in-disk-2}
+The polynomial $f$ has exactly three zeros, counted with
 multiplicity, in $\abs{z}<2$.
 
-::: {.proof}
-By step <1>1 and Rouché's theorem, $f$ and $g$ have the same number of
+::: pf-proof
+By step [](#rouche-bound-at-2){.pf-ref} and Rouché's theorem, $f$ and $g$ have the same number of
 zeros in $\abs z<2$, counted with multiplicity. The polynomial
 $g(z)=5z^3$ has exactly three such zeros, all at $0$. Hence so does
 $f$.
 :::
 
-<1>3. On the circle $\abs{z}=1$,
+:::
+
+::: {.pf-step #rouche-bound-at-1}
+On the circle $\abs{z}=1$,
 $$
 \abs{f(z)-g(z)}<\abs{g(z)}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $\abs z=1$, then
 $$
 \abs{f(z)-g(z)}
@@ -104,19 +114,25 @@ $$
 Thus the inequality is again strict.
 :::
 
-<1>4. The polynomial $f$ has exactly three zeros, counted with
+:::
+
+::: {.pf-step #three-zeros-in-disk-1}
+The polynomial $f$ has exactly three zeros, counted with
 multiplicity, in $\abs z<1$.
 
-::: {.proof}
-Apply Rouché's theorem using step <1>3. Again $f$ and $g$ have the same
+::: pf-proof
+Apply Rouché's theorem using step [](#rouche-bound-at-1){.pf-ref}. Again $f$ and $g$ have the same
 number of zeros in the disk, and $g(z)=5z^3$ has exactly three.
 :::
 
-<1>5. The polynomial $f$ has no zeros on either boundary circle
+:::
+
+::: {.pf-step #no-zeros-on-boundary}
+The polynomial $f$ has no zeros on either boundary circle
 $\abs z=1$ or $\abs z=2$.
 
-::: {.proof}
-On either circle, steps <1>1 and <1>3 give
+::: pf-proof
+On either circle, steps [](#rouche-bound-at-2){.pf-ref} and [](#rouche-bound-at-1){.pf-ref} give
 $$
 \abs{f-g}<\abs g.
 $$
@@ -128,7 +144,10 @@ contradicting the strict inequality. Thus neither circle contains a
 zero of $f$.
 :::
 
-<1>6. The number of zeros of $f$ in
+:::
+
+::: {.pf-step #zero-count-annulus}
+The number of zeros of $f$ in
 $$
 1\le\abs z\le2
 $$
@@ -137,15 +156,18 @@ $$
 \boxed{0}.
 $$
 
-::: {.proof}
-Steps <1>2 and <1>4 show that the number of zeros in
-$1\le\abs z<2$ is $3-3=0$. Step <1>5 shows that the circle
+::: pf-proof
+Steps [](#three-zeros-in-disk-2){.pf-ref} and [](#three-zeros-in-disk-1){.pf-ref} show that the number of zeros in
+$1\le\abs z<2$ is $3-3=0$. Step [](#no-zeros-on-boundary){.pf-ref} shows that the circle
 $\abs z=2$ contains no zero. Hence the closed annulus contains no zeros.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required count.
 :::
+
+::: pf-qed
+Step [](#zero-count-annulus){.pf-ref} is the required count.
+:::
+
+:::
+
 :::

@@ -41,8 +41,12 @@ Write
 |G|=p(p+1)=p2^n.
 \]
 
-<1>1. The number of Sylow $p$-subgroups is $p+1$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #sylow-p-count}
+The number of Sylow $p$-subgroups is $p+1$.
+
+::: pf-proof
 Let $n_p$ denote the number of Sylow $p$-subgroups.
 By Sylow's theorem,
 \[
@@ -58,11 +62,15 @@ n_p=p+1.
 \]
 :::
 
-<1>2. A Sylow $2$-subgroup $H$ is unique, hence normal, and has order $p+1$.
-::: {.proof}
+:::
+
+::: {.pf-step #unique-sylow2-normal}
+A Sylow $2$-subgroup $H$ is unique, hence normal, and has order $p+1$.
+
+::: pf-proof
 Each Sylow $p$-subgroup has order $p$.
 Distinct such subgroups intersect only in the identity, since an intersection of two groups of prime order is either trivial or the whole subgroup.
-By <1>1, the Sylow $p$-subgroups therefore contain
+By step [](#sylow-p-count){.pf-ref}, the Sylow $p$-subgroups therefore contain
 \[
 (p+1)(p-1)=p^2-1
 \]
@@ -92,11 +100,15 @@ This description is independent of the choice of Sylow $2$-subgroup, so every Sy
 Therefore $H$ is unique and hence normal in $G$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #semidirect-decomposition}
+One has
 \[
 G\cong H\rtimes\mathbb Z_p.
 \]
-::: {.proof}
+
+::: pf-proof
 Let $P$ be a Sylow $p$-subgroup.
 Then $|P|=p$, so
 \[
@@ -117,8 +129,12 @@ G=H\rtimes P\cong H\rtimes\mathbb Z_p.
 \]
 :::
 
-<1>4. If $1\neq x\in H$, then $p$ does not divide $|C_G(x)|$.
-::: {.proof}
+:::
+
+::: {.pf-step #centralizer-not-divisible-by-p}
+If $1\neq x\in H$, then $p$ does not divide $|C_G(x)|$.
+
+::: pf-proof
 Suppose instead that $p\mid |C_G(x)|$.
 By Cauchy's theorem, $C_G(x)$ contains an element $y$ of order $p$.
 Let
@@ -129,7 +145,7 @@ Then $x$ centralizes $P$, hence normalizes $P$, so
 \[
 x\in N_G(P).
 \]
-By <1>1,
+By step [](#sylow-p-count){.pf-ref},
 \[
 [G:N_G(P)]=n_p=p+1,
 \]
@@ -146,8 +162,12 @@ But $x\in H$ and $H\cap P=1$, contradicting $x\neq1$.
 Hence $p\nmid |C_G(x)|$.
 :::
 
-<1>5. The subgroup $H$ is abelian.
-::: {.proof}
+:::
+
+::: {.pf-step #h-abelian}
+The subgroup $H$ is abelian.
+
+::: pf-proof
 Fix $1\neq x\in H$.
 Because $H\triangleleft G$, every conjugate of $x$ lies in $H$.
 Hence the conjugacy class of $x$ has at most
@@ -155,7 +175,7 @@ Hence the conjugacy class of $x$ has at most
 |H|-1=p
 \]
 elements.
-By <1>4, the centralizer $C_G(x)$ has order a power of $2$, say $2^k$ with $0\le k\le n$.
+By step [](#centralizer-not-divisible-by-p){.pf-ref}, the centralizer $C_G(x)$ has order a power of $2$, say $2^k$ with $0\le k\le n$.
 The orbit-stabilizer formula for conjugation gives
 \[
 |x^G|=[G:C_G(x)]
@@ -167,7 +187,7 @@ Thus
 \[
 |C_G(x)|=2^n=|H|.
 \]
-The centralizer is a $2$-subgroup, so by uniqueness of the Sylow $2$-subgroup from <1>2,
+The centralizer is a $2$-subgroup, so by uniqueness of the Sylow $2$-subgroup from step [](#unique-sylow2-normal){.pf-ref},
 \[
 C_G(x)=H.
 \]
@@ -177,5 +197,13 @@ Since this holds for every nonidentity $x\in H$ (and trivially for $x=1$),
 H=Z(H),
 \]
 so $H$ is abelian.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#unique-sylow2-normal){.pf-ref} and [](#semidirect-decomposition){.pf-ref} answer part (a), and step [](#h-abelian){.pf-ref} answers part (b).
+:::
+
 :::
 :::

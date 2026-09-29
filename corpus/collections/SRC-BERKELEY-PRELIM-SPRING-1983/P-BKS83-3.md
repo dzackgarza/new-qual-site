@@ -50,10 +50,13 @@ $$
 $$
 for their absolute inversive distance.
 
-<1>1. The quantity $\mathcal I$ is invariant under fractional linear
+::: pf
+
+::: {.pf-step #inversive-distance-invariant}
+The quantity $\mathcal I$ is invariant under fractional linear
 transformations.
 
-::: {.proof}
+::: pf-proof
 This is the standard inversive-distance invariant of generalized circles:
 Möbius transformations preserve the inversive distance of any two circles
 or lines. In particular, if a fractional linear transformation carries one
@@ -61,7 +64,10 @@ pair of disjoint circles to another pair, their absolute inversive
 distances are equal.
 :::
 
-<1>2. The two boundary circles of the source annulus
+:::
+
+::: {.pf-step #source-inversive-distance}
+The two boundary circles of the source annulus
 $$
 r<|z|<1
 $$
@@ -72,7 +78,7 @@ $$
 \frac{1+r^2}{2r}.
 $$
 
-::: {.proof}
+::: pf-proof
 The circles are concentric, so their center distance is $d=0$, and their
 radii are $1$ and $r$. Hence
 $$
@@ -84,13 +90,16 @@ $$
 $$
 :::
 
-<1>3. The two boundary circles of the target domain have inversive
+:::
+
+::: {.pf-step #target-inversive-distance}
+The two boundary circles of the target domain have inversive
 distance
 $$
 \mathcal I_{\mathrm{tgt}}=2.
 $$
 
-::: {.proof}
+::: pf-proof
 The circles
 $$
 |z|=1
@@ -116,21 +125,24 @@ $$
 $$
 :::
 
-<1>4. The radius $r$ satisfies
+:::
+
+::: {.pf-step #quadratic-for-r}
+The radius $r$ satisfies
 $$
 r^2-4r+1=0.
 $$
 
-::: {.proof}
+::: pf-proof
 By hypothesis, a fractional linear transformation maps the two source
 boundary circles to the two target boundary circles, possibly interchanging
-them. Step <1>1 therefore gives
+them. Step [](#inversive-distance-invariant){.pf-ref} therefore gives
 $$
 \mathcal I_{\mathrm{src}}
 =
 \mathcal I_{\mathrm{tgt}}.
 $$
-Using steps <1>2 and <1>3,
+Using steps [](#source-inversive-distance){.pf-ref} and [](#target-inversive-distance){.pf-ref},
 $$
 \frac{1+r^2}{2r}=2.
 $$
@@ -140,13 +152,16 @@ r^2-4r+1=0.
 $$
 :::
 
-<1>5. Hence
+:::
+
+::: {.pf-step #r-value-boxed}
+Hence
 $$
 \boxed{r=2-\sqrt3}.
 $$
 
-::: {.proof}
-The roots of the quadratic in step <1>4 are
+::: pf-proof
+The roots of the quadratic in step [](#quadratic-for-r){.pf-ref} are
 $$
 r=2\pm\sqrt3.
 $$
@@ -161,9 +176,11 @@ r=2-\sqrt3.
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the required value of the inner radius.
+::: pf-qed
+Step [](#r-value-boxed){.pf-ref} gives the required value of the inner radius.
+:::
+
 :::
 :::

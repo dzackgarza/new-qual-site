@@ -34,8 +34,13 @@ Show that the following conditions are equivalent:
 :::
 
 ::: {.solution}
-<1>1. If $\Spec A$ is disconnected, then $A$ has nonzero orthogonal idempotents $e_1,e_2$ with $e_1+e_2=1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #disconnected-implies-idempotents}
+If $\Spec A$ is disconnected, then $A$ has nonzero orthogonal idempotents $e_1,e_2$ with $e_1+e_2=1$.
+
+::: pf-proof
 Write
 \[
 \Spec A=U\amalg V
@@ -65,11 +70,15 @@ e_1+e_2=1.
 Both are nonzero: if, for example, $e_1=0$, then its restriction to the nonempty open $U$ would be the zero section, contradicting that it restricts to $1$ there.  Thus condition (2) holds.
 :::
 
-<1>2. Suppose condition (2) holds.  Then
+:::
+
+::: {.pf-step #idempotents-give-product-decomp}
+Suppose condition (2) holds.  Then
 \[
 \boxed{A\cong Ae_1\times Ae_2.}
 \]
-::: {.proof}
+
+::: pf-proof
 Define
 \[
 \Phi:A\longrightarrow Ae_1\times Ae_2,
@@ -102,12 +111,16 @@ while
 Thus $\Phi$ is an isomorphism.  Since $e_1,e_2$ are nonzero, both factor rings are nonzero.  Hence condition (3) holds.
 :::
 
-<1>3. Suppose
+:::
+
+::: {.pf-step #product-implies-disconnected}
+Suppose
 \[
 A\cong A_1\times A_2
 \]
 with $A_1,A_2\ne0$.  Then $\Spec A$ is disconnected.
-::: {.proof}
+
+::: pf-proof
 Let
 \[
 e_1=(1,0),
@@ -139,12 +152,19 @@ D(e_2)\cong\Spec A_2,
 and a nonzero ring has a prime ideal.  Thus $\Spec A$ is a disjoint union of two nonempty open subsets and is disconnected.
 :::
 
-<1>4. Therefore the three conditions are equivalent.
-::: {.proof}
-Step <1>1 proves $(1)\Rightarrow(2)$, step <1>2 proves $(2)\Rightarrow(3)$, and step <1>3 proves $(3)\Rightarrow(1)$.
 :::
 
-<1>5. Equivalently,
+::: {.pf-step #three-conditions-equivalent}
+Therefore the three conditions are equivalent.
+
+::: pf-proof
+Step [](#disconnected-implies-idempotents){.pf-ref} proves $(1)\Rightarrow(2)$, step [](#idempotents-give-product-decomp){.pf-ref} proves $(2)\Rightarrow(3)$, and step [](#product-implies-disconnected){.pf-ref} proves $(3)\Rightarrow(1)$.
+:::
+
+:::
+
+::: pf-step
+Equivalently,
 \[
 \boxed{
 \Spec A\text{ is connected}
@@ -152,12 +172,17 @@ Step <1>1 proves $(1)\Rightarrow(2)$, step <1>2 proves $(2)\Rightarrow(3)$, and 
 A\text{ has no idempotents other than }0,1.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 A nontrivial idempotent $e$ gives the complementary pair $e,1-e$, and every pair in condition (2) has this form.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Step <1>4 is the required equivalence.
 :::
+
+::: pf-qed
+Step [](#three-conditions-equivalent){.pf-ref} is the required equivalence.
+:::
+
+:::
+
 :::

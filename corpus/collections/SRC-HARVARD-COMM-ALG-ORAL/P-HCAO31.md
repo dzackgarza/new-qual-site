@@ -43,36 +43,52 @@ f_1=x^2+y,
 f_2=x^2+x.
 \]
 
-<1>1. The two displayed generators have the same initial monomial:
+::: pf
+
+::: {.pf-step #generators-share-initial-monomial}
+The two displayed generators have the same initial monomial:
 \[
 \operatorname{in}(f_1)=\operatorname{in}(f_2)=x^2.
 \]
-::: {.proof}
+
+::: pf-proof
 Under lexicographic order with $x\succ y$, the monomial $x^2$ is larger than
 both $x$ and $y$.
 :::
 
-<1>2. Their difference belongs to $I$ and has initial monomial $x$:
+:::
+
+::: {.pf-step #difference-has-initial-monomial-x}
+Their difference belongs to $I$ and has initial monomial $x$:
 \[
 f_2-f_1=x-y,
 \qquad
 \operatorname{in}(x-y)=x.
 \]
-::: {.proof}
+
+::: pf-proof
 Ideals are closed under subtraction, and $x\succ y$ in the chosen order.
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \operatorname{in}(I)\ne
 \langle \operatorname{in}(f_1),\operatorname{in}(f_2)\rangle.
 \]
-::: {.proof}
-By <1>2, $x\in\operatorname{in}(I)$. By <1>1,
+
+::: pf-proof
+By step [](#difference-has-initial-monomial-x){.pf-ref}, $x\in\operatorname{in}(I)$. By step [](#generators-share-initial-monomial){.pf-ref},
 \[
 \langle \operatorname{in}(f_1),\operatorname{in}(f_2)\rangle=(x^2),
 \]
 and $x\notin(x^2)$. Thus the inclusion of the generator-initial ideal into
 $\operatorname{in}(I)$ is strict.
+:::
+
+:::
+
 :::
 :::

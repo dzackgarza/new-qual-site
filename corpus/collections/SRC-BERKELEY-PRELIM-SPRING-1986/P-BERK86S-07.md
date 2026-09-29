@@ -36,7 +36,10 @@ and
 :::
 
 ::: {.solution}
-<1>1. The first integral equation is equivalent, after setting
+::: pf
+
+::: {.pf-step #volterra-reduced}
+The first integral equation is equivalent, after setting
 $$
 u(x)\coloneqq e^{-x}\varphi(x),
 $$
@@ -45,7 +48,7 @@ $$
 u(x)=1+\lambda\int_0^x u(y)\,dy.
 $$
 
-::: {.proof}
+::: pf-proof
 Factor $e^x$ from the kernel:
 $$
 \begin{aligned}
@@ -57,13 +60,16 @@ $$
 Divide by $e^x$ and use the definition of $u$.
 :::
 
-<1>2. The first equation has exactly one solution, namely
+:::
+
+::: {.pf-step #phi-boxed}
+The first equation has exactly one solution, namely
 $$
 \boxed{\varphi(x)=e^{(1+\lambda)x}}.
 $$
 
-::: {.proof}
-Any solution of step <1>1 is continuous, since its right-hand side is an
+::: pf-proof
+Any solution of step [](#volterra-reduced){.pf-ref} is continuous, since its right-hand side is an
 indefinite integral plus a constant. The fundamental theorem of calculus
 therefore gives
 $$
@@ -83,7 +89,10 @@ Conversely, direct substitution verifies that this function satisfies the
 original integral equation, so there are no additional solutions.
 :::
 
-<1>3. For a solution of the second equation, define
+:::
+
+::: {.pf-step #psi-formula}
+For a solution of the second equation, define
 $$
 C\coloneqq\int_0^1 e^{-y}\psi(y)\,dy.
 $$
@@ -92,7 +101,7 @@ $$
 \psi(x)=e^x(1+\lambda C).
 $$
 
-::: {.proof}
+::: pf-proof
 The integral in the second equation is over the fixed interval $[0,1]$,
 so
 $$
@@ -106,13 +115,16 @@ $$
 Substitution gives the displayed formula.
 :::
 
-<1>4. The scalar $C$ from step <1>3 must satisfy
+:::
+
+::: {.pf-step #scalar-equation}
+The scalar $C$ from step [](#psi-formula){.pf-ref} must satisfy
 $$
 (1-\lambda)C=1.
 $$
 
-::: {.proof}
-Insert the formula from step <1>3 into the definition of $C$:
+::: pf-proof
+Insert the formula from step [](#psi-formula){.pf-ref} into the definition of $C$:
 $$
 \begin{aligned}
 C
@@ -128,17 +140,20 @@ $$
 Rearranging yields the claim.
 :::
 
-<1>5. If $\lambda\neq1$, the second equation has exactly one solution:
+:::
+
+::: {.pf-step #psi-lambda-not-one}
+If $\lambda\neq1$, the second equation has exactly one solution:
 $$
 \boxed{\psi(x)=\frac{e^x}{1-\lambda}}.
 $$
 
-::: {.proof}
-Step <1>4 gives
+::: pf-proof
+Step [](#scalar-equation){.pf-ref} gives
 $$
 C=\frac1{1-\lambda}.
 $$
-Then step <1>3 gives
+Then step [](#psi-formula){.pf-ref} gives
 $$
 \psi(x)
 =
@@ -153,17 +168,23 @@ The scalar equation determines $C$ uniquely, so no other solution is
 possible. Direct substitution verifies the displayed function.
 :::
 
-<1>6. If $\lambda=1$, the second equation has no solution.
+:::
 
-::: {.proof}
-For $\lambda=1$, step <1>4 becomes
+::: {.pf-step #no-solution-lambda-one}
+If $\lambda=1$, the second equation has no solution.
+
+::: pf-proof
+For $\lambda=1$, step [](#scalar-equation){.pf-ref} becomes
 $$
 0\cdot C=1,
 $$
 which is impossible.
 :::
 
-<1>7. Hence all solutions are
+:::
+
+::: {.pf-step #combined-boxed}
+Hence all solutions are
 $$
 \boxed{
 \varphi(x)=e^{(1+\lambda)x}
@@ -181,13 +202,15 @@ $$
 }
 $$
 
-::: {.proof}
-Combine steps <1>2, <1>5, and <1>6.
+::: pf-proof
+Combine steps [](#phi-boxed){.pf-ref}, [](#psi-lambda-not-one){.pf-ref}, and [](#no-solution-lambda-one){.pf-ref}.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>7 is the complete solution set for both equations.
+::: pf-qed
+Step [](#combined-boxed){.pf-ref} is the complete solution set for both equations.
+:::
+
 :::
 :::

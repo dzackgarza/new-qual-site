@@ -36,9 +36,13 @@ is irreducible over the field $\mathbb F_p$.
 :::
 
 ::: {.solution}
+
 Let $\alpha$ be a root of $f$ in a splitting field over $\FF_p$.
 
-<1>1. The roots of $f$ are precisely
+::: pf
+
+::: {.pf-step #roots-are-alpha-plus-a}
+The roots of $f$ are precisely
 $$
 \alpha+a,
 \qquad
@@ -46,7 +50,7 @@ a\in\FF_p,
 $$
 and they are pairwise distinct.
 
-::: {.proof}
+::: pf-proof
 For every $a\in\FF_p$, characteristic $p$ gives
 $$
 (x+a)^p=x^p+a^p=x^p+a.
@@ -69,12 +73,15 @@ distinct because the elements $a$ are. Since $f$ has degree $p$,
 these $p$ distinct roots are all of its roots.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #alpha-not-in-Fp}
+One has
 $$
 \alpha\notin\FF_p.
 $$
 
-::: {.proof}
+::: pf-proof
 For every $a\in\FF_p$, Fermat's identity $a^p=a$ gives
 $$
 f(a)=a^p-a+1=1.
@@ -82,11 +89,14 @@ $$
 Thus $f$ has no root in $\FF_p$, while $f(\alpha)=0$.
 :::
 
-<1>3. Every monic factor $g\in\FF_p[x]$ of $f$ has degree either
+:::
+
+::: {.pf-step #factor-degree-0-or-p}
+Every monic factor $g\in\FF_p[x]$ of $f$ has degree either
 $0$ or $p$.
 
-::: {.proof}
-By step <1>1, in the splitting field every monic factor of $f$ has
+::: pf-proof
+By step [](#roots-are-alpha-plus-a){.pf-ref}, in the splitting field every monic factor of $f$ has
 the form
 $$
 g(x)=\prod_{a\in I}(x-(\alpha+a))
@@ -103,7 +113,7 @@ $$
 $$
 If $0<\abs I<p$, then the class of $\abs I$ is nonzero in
 $\FF_p$ and therefore invertible. It would follow that
-$\alpha\in\FF_p$, contradicting step <1>2. Hence
+$\alpha\in\FF_p$, contradicting step [](#alpha-not-in-Fp){.pf-ref}. Hence
 $$
 \abs I=0
 \qquad\text{or}\qquad
@@ -112,21 +122,27 @@ $$
 Since $\deg g=\abs I$, the claim follows.
 :::
 
-<1>4. The polynomial
+:::
+
+::: {.pf-step #f-irreducible}
+The polynomial
 $$
 \boxed{x^p-x+1}
 $$
 is irreducible over $\FF_p$.
 
-::: {.proof}
+::: pf-proof
 If $f$ had a nontrivial factorization over $\FF_p$, it would have a
-monic factor of degree strictly between $0$ and $p$. Step <1>3 shows
+monic factor of degree strictly between $0$ and $p$. Step [](#factor-degree-0-or-p){.pf-ref} shows
 that no such factor exists. Hence $f$ is irreducible.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-irreducible){.pf-ref} proves the required conclusion.
+:::
+
+:::
+
 :::

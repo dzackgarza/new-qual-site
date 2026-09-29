@@ -36,8 +36,13 @@ is nilpotent if and only if each $a_n \in A$ is nilpotent.
 
 
 ::: {.solution}
-<1>1. If \(f\) is nilpotent, then every coefficient \(a_n\) is nilpotent.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #necessity}
+If \(f\) is nilpotent, then every coefficient \(a_n\) is nilpotent.
+
+::: pf-proof
 Suppose
 \[
 f^m=0
@@ -84,8 +89,12 @@ a_n^{mN}=0.
 Thus \(a_n\) is nilpotent, completing the induction.
 :::
 
-<1>2. In a commutative Noetherian ring, the nilradical is a nilpotent ideal.
-::: {.proof}
+:::
+
+::: {.pf-step #nilradical-nilpotent}
+In a commutative Noetherian ring, the nilradical is a nilpotent ideal.
+
+::: pf-proof
 Let
 \[
 \mathcal N:=\{a\in A:a\text{ is nilpotent}\}.
@@ -110,10 +119,14 @@ Hence
 \]
 :::
 
-<1>3. If every coefficient \(a_n\) is nilpotent, then \(f\) is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #sufficiency}
+If every coefficient \(a_n\) is nilpotent, then \(f\) is nilpotent.
+
+::: pf-proof
 If every \(a_n\) is nilpotent, then every coefficient lies in the nilradical \(\mathcal N\).
-By <1>2, choose \(N\) such that
+By step [](#nilradical-nilpotent){.pf-ref}, choose \(N\) such that
 \[
 \mathcal N^N=0.
 \]
@@ -128,8 +141,16 @@ f^N=0.
 Thus \(f\) is nilpotent.
 :::
 
-<1>4. Therefore \(f\) is nilpotent if and only if every \(a_n\) is nilpotent.
-::: {.proof}
-Necessity is <1>1, and sufficiency is <1>3.
+:::
+
+::: pf-step
+Therefore \(f\) is nilpotent if and only if every \(a_n\) is nilpotent.
+
+::: pf-proof
+Necessity is step [](#necessity){.pf-ref}, and sufficiency is step [](#sufficiency){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

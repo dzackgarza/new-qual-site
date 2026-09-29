@@ -39,8 +39,12 @@ D(t)=\operatorname{Spec}k[t,t^{-1}]
 \]
 by the identity.  Denote the resulting scheme by $X$.
 
-<1>1. The scheme $X$ is the affine line with doubled origin.
-::: {.proof}
+::: pf
+
+::: pf-step
+The scheme $X$ is the affine line with doubled origin.
+
+::: pf-proof
 Away from $t=0$, the two copies are identified, so every nonzero point occurs once.  The origins
 \[
 0_1\in U_1,
@@ -50,12 +54,16 @@ Away from $t=0$, the two copies are identified, so every nonzero point occurs on
 are not in the gluing locus and remain distinct.  Thus the underlying scheme has one copy of every nonzero point and two origins.
 :::
 
-<1>2. The structure morphism
+:::
+
+::: {.pf-step #not-separated}
+The structure morphism
 \[
 \boxed{X\longrightarrow\operatorname{Spec}k}
 \]
 is not separated.
-::: {.proof}
+
+::: pf-proof
 Consider the diagonal
 \[
 \Delta:X\longrightarrow X\times_kX.
@@ -97,13 +105,20 @@ X\to\operatorname{Spec}k
 is not separated.
 :::
 
-<1>3. In $X$, every open neighborhood of $0_1$ meets every open neighborhood of $0_2$.
-::: {.proof}
-An open neighborhood of $0_i$ meets the common copy of $\mathbb G_m$ in a nonempty open subset.  Two nonempty open subsets of the irreducible curve $\mathbb G_m$ intersect.  The point $(0_1,0_2)$ in the closure of the diagonal in step <1>2 is the scheme-theoretic form of this statement.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>2 supplies the requested non-separated morphism.
+::: pf-step
+In $X$, every open neighborhood of $0_1$ meets every open neighborhood of $0_2$.
+
+::: pf-proof
+An open neighborhood of $0_i$ meets the common copy of $\mathbb G_m$ in a nonempty open subset.  Two nonempty open subsets of the irreducible curve $\mathbb G_m$ intersect.  The point $(0_1,0_2)$ in the closure of the diagonal in step [](#not-separated){.pf-ref} is the scheme-theoretic form of this statement.
+:::
+
+:::
+
+::: pf-qed
+Step [](#not-separated){.pf-ref} supplies the requested non-separated morphism.
+:::
+
 :::
 :::

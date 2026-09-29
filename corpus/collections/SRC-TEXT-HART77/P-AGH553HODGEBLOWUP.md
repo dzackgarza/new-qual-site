@@ -79,7 +79,10 @@ $$
 \mathcal B=\Omega_{\widetilde X}.
 $$
 
-<1>1. For every $i\ge0$ there is a natural isomorphism
+::: pf
+
+::: {.pf-step #cohomology-pullback-iso}
+For every $i\ge0$ there is a natural isomorphism
 $$
 \boxed{
 H^i(\widetilde X,\mathcal A)
@@ -87,7 +90,7 @@ H^i(\widetilde X,\mathcal A)
 H^i(X,\Omega_X).}
 $$
 
-::: {.proof}
+::: pf-proof
 For a monoidal transformation of a nonsingular surface at a point,
 $$
 \pi_*\OO_{\widetilde X}\cong\OO_X
@@ -116,7 +119,10 @@ $$
 Exercise III.8.1 [[P-AGH381DEGENLERAY]] therefore gives the displayed cohomology isomorphisms.
 :::
 
-<1>2. There is an exact sequence
+:::
+
+::: {.pf-step #relative-differential-sequence}
+There is an exact sequence
 $$
 \boxed{
 0
@@ -130,7 +136,7 @@ $$
 0.}
 $$
 
-::: {.proof}
+::: pf-proof
 The usual sequence of relative differentials gives a right-exact sequence
 $$
 \pi^*\Omega_X
@@ -192,7 +198,10 @@ $$
 giving the asserted short exact sequence.
 :::
 
-<1>3. The cohomology of the quotient is
+:::
+
+::: {.pf-step #exceptional-cohomology}
+The cohomology of the quotient is
 $$
 \boxed{
 H^0(E,\Omega_E)=0,
@@ -202,7 +211,7 @@ H^1(E,\Omega_E)\cong k,
 H^i(E,\Omega_E)=0\ (i\ge2).}
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 E\cong\PP^1,
@@ -226,7 +235,10 @@ $$
 Finally a coherent sheaf on the one-dimensional projective scheme $E$ has no cohomology in degrees at least two.
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #h0-iso}
+The map
 $$
 H^0(\widetilde X,\mathcal A)
 \longrightarrow
@@ -234,8 +246,8 @@ H^0(\widetilde X,\mathcal B)
 $$
 is an isomorphism.
 
-::: {.proof}
-The beginning of the long exact cohomology sequence of step <1>2 is
+::: pf-proof
+The beginning of the long exact cohomology sequence of step [](#relative-differential-sequence){.pf-ref} is
 $$
 0
 \longrightarrow
@@ -245,10 +257,13 @@ H^0(\widetilde X,\mathcal B)
 \longrightarrow
 H^0(E,\Omega_E).
 $$
-The last term is zero by step <1>3. Hence the first map is both injective and surjective.
+The last term is zero by step [](#exceptional-cohomology){.pf-ref}. Hence the first map is both injective and surjective.
 :::
 
-<1>5. The map
+:::
+
+::: {.pf-step #h2-iso}
+The map
 $$
 \boxed{
 H^2(\widetilde X,\mathcal A)
@@ -257,8 +272,8 @@ H^2(\widetilde X,\mathcal B)}
 $$
 is an isomorphism.
 
-::: {.proof}
-The end of the long exact sequence of step <1>2 contains
+::: pf-proof
+The end of the long exact sequence of step [](#relative-differential-sequence){.pf-ref} contains
 $$
 H^1(E,\Omega_E)
 \longrightarrow
@@ -271,7 +286,7 @@ $$
 Thus the displayed map on $H^2$ is surjective.
 We show its source and target have the same finite dimension.
 
-By step <1>1,
+By step [](#cohomology-pullback-iso){.pf-ref},
 $$
 h^2(\widetilde X,\mathcal A)
 =
@@ -293,7 +308,7 @@ h^2(\widetilde X,\mathcal A)
 =
 h^0(X,\Omega_X).
 $$
-Step <1>1 in degree zero and step <1>4 give
+Step [](#cohomology-pullback-iso){.pf-ref} in degree zero and step [](#h0-iso){.pf-ref} give
 $$
 h^0(X,\Omega_X)
 =
@@ -316,7 +331,10 @@ $$
 A surjective linear map between finite-dimensional vector spaces of equal dimension is an isomorphism.
 :::
 
-<1>6. The long exact sequence of step <1>2 reduces in degree one to a short exact sequence
+:::
+
+::: {.pf-step #h1-short-exact}
+The long exact sequence of step [](#relative-differential-sequence){.pf-ref} reduces in degree one to a short exact sequence
 $$
 \boxed{
 0
@@ -330,8 +348,8 @@ k
 0.}
 $$
 
-::: {.proof}
-Using step <1>3, the middle part of the long exact sequence is
+::: pf-proof
+Using step [](#exceptional-cohomology){.pf-ref}, the middle part of the long exact sequence is
 $$
 0
 \longrightarrow
@@ -343,7 +361,7 @@ H^1(E,\Omega_E)
 \xrightarrow{\delta}
 H^2(\widetilde X,\mathcal A).
 $$
-Step <1>5 says the following map
+Step [](#h2-iso){.pf-ref} says the following map
 $$
 H^2(\widetilde X,\mathcal A)
 \longrightarrow
@@ -362,20 +380,23 @@ H^1(E,\Omega_E)
 $$
 is surjective.
 
-Now apply step <1>1 to identify
+Now apply step [](#cohomology-pullback-iso){.pf-ref} to identify
 $$
 H^1(\widetilde X,\mathcal A)
 \cong
 H^1(X,\Omega_X)
 $$
-and step <1>3 to identify
+and step [](#exceptional-cohomology){.pf-ref} to identify
 $$
 H^1(E,\Omega_E)\cong k.
 $$
 This gives the asserted short exact sequence.
 :::
 
-<1>7. Consequently
+:::
+
+::: {.pf-step #direct-sum-splitting}
+Consequently
 $$
 \boxed{
 H^1(\widetilde X,\Omega_{\widetilde X})
@@ -383,18 +404,20 @@ H^1(\widetilde X,\Omega_{\widetilde X})
 H^1(X,\Omega_X)\oplus k.}
 $$
 
-::: {.proof}
-All groups in step <1>6 are vector spaces over $k$.
+::: pf-proof
+All groups in step [](#h1-short-exact){.pf-ref} are vector spaces over $k$.
 Every short exact sequence of $k$-vector spaces splits.
 Choosing a lift in $H^1(\widetilde X,\Omega_{\widetilde X})$ of $1\in k$ therefore gives a splitting and the displayed isomorphism.
 
 The splitting need not be canonical; the assertion of the exercise is the vector-space isomorphism.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 identifies the cohomology of the pulled-back cotangent bundle, steps <1>2--<1>3 identify the relative differential contribution with the one-dimensional group $H^1(E,\Omega_E)$, and steps <1>4--<1>6 show that its connecting map to degree two vanishes.
-Step <1>7 gives the required direct sum.
+::: pf-qed
+Step [](#cohomology-pullback-iso){.pf-ref} identifies the cohomology of the pulled-back cotangent bundle, steps [](#relative-differential-sequence){.pf-ref} and [](#exceptional-cohomology){.pf-ref} identify the relative differential contribution with the one-dimensional group $H^1(E,\Omega_E)$, and steps [](#h0-iso){.pf-ref}, [](#h2-iso){.pf-ref} and [](#h1-short-exact){.pf-ref} show that its connecting map to degree two vanishes.
+Step [](#direct-sum-splitting){.pf-ref} gives the required direct sum.
+:::
+
 :::
 :::

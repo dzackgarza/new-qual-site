@@ -71,16 +71,22 @@ J_\CC(p)
 $$
 be the complex Jacobian matrix.
 
-<1>1. The point $p$ is algebraically smooth exactly when
+::: pf
+
+::: {.pf-step #jacobian-criterion}
+The point $p$ is algebraically smooth exactly when
 $$
 \rank_\CC J_\CC(p)=n-d.
 $$
 
-::: {.proof}
+::: pf-proof
 This is the Jacobian criterion [[PR-MORJAC]] for the affine variety $X$.
 :::
 
-<1>2. Viewed as a real map
+:::
+
+::: {.pf-step #real-rank-doubles}
+Viewed as a real map
 $$
 F_\RR:\RR^{2n}\longrightarrow\RR^{2m},
 $$
@@ -91,7 +97,7 @@ $$
 2\rank_\CC J_\CC(p).
 $$
 
-::: {.proof}
+::: pf-proof
 The differential
 $$
 dF(p):\CC^n\longrightarrow\CC^m
@@ -102,11 +108,14 @@ hence a real vector space of dimension $2r$. Therefore its underlying real
 linear map has rank $2r$.
 :::
 
-<1>3. If $p$ is algebraically smooth, then $X$ is a smooth real submanifold
+:::
+
+::: {.pf-step #smooth-implies-submanifold}
+If $p$ is algebraically smooth, then $X$ is a smooth real submanifold
 of dimension $2d$ near $p$.
 
-::: {.proof}
-Assume $p$ is smooth. By step <1>1,
+::: pf-proof
+Assume $p$ is smooth. By step [](#jacobian-criterion){.pf-ref},
 $$
 \rank_\CC J_\CC(p)=n-d.
 $$
@@ -117,7 +126,7 @@ G:\CC^n\longrightarrow\CC^{n-d}
 $$
 for the resulting submap.
 
-By step <1>2,
+By step [](#real-rank-doubles){.pf-ref},
 $$
 \rank_\RR dG_\RR(p)=2(n-d).
 $$
@@ -139,12 +148,15 @@ manifold, so $X=M$ near $p$, and $X$ is a smooth real submanifold of
 dimension $2d$ there.
 :::
 
-<1>4. If $X$ is a smooth real submanifold $M$ of dimension $2d$ near $p$,
+:::
+
+::: {.pf-step #submanifold-implies-complex-submanifold}
+If $X$ is a smooth real submanifold $M$ of dimension $2d$ near $p$,
 then $X$ is a complex submanifold of dimension $d$ near $p$.
 
-::: {.proof}
+::: pf-proof
 The smooth points of $X$ are dense in $X$. At a smooth point $q$ near $p$,
-step <1>3 makes $X$ a complex submanifold of dimension $d$ equal to $M$ near
+step [](#smooth-implies-submanifold){.pf-ref} makes $X$ a complex submanifold of dimension $d$ equal to $M$ near
 $q$, so $T_qM$ is a complex subspace of $\CC^n$. Complex subspaces of real
 dimension $2d$ form a closed set, and $T_qM$ depends continuously on $q$, so
 $T_pM$ is a complex subspace too.
@@ -160,11 +172,14 @@ continuity, and $\varphi$ is holomorphic. Its graph $M$ is a complex
 submanifold of dimension $d$.
 :::
 
-<1>5. Under the hypothesis of step <1>4, the point $p$ is algebraically
+:::
+
+::: {.pf-step #complex-submanifold-implies-smooth}
+Under the hypothesis of step [](#submanifold-implies-complex-submanifold){.pf-ref}, the point $p$ is algebraically
 smooth.
 
-::: {.proof}
-By step <1>4 the analytic local ring of $X$ at $p$ is the ring of convergent
+::: pf-proof
+By step [](#submanifold-implies-complex-submanifold){.pf-ref} the analytic local ring of $X$ at $p$ is the ring of convergent
 power series in $d$ variables. The algebraic local ring $\OO_{X,p}$ and the
 analytic local ring have isomorphic completions [@Mum94, §I.10], so
 $\widehat{\OO_{X,p}}\cong\CC[[z_1,\ldots,z_d]]$ is regular. A noetherian local
@@ -172,7 +187,10 @@ ring is regular exactly when its completion is, so $\OO_{X,p}$ is regular of
 dimension $d$, and $p$ is smooth.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #equivalence-statement}
+Therefore
 $$
 \boxed{
 p\text{ is smooth}
@@ -181,14 +199,17 @@ X\text{ is locally a smooth real }2d\text{-manifold near }p.
 }
 $$
 
-::: {.proof}
-Step <1>3 proves the forward implication, and steps <1>4--<1>5 prove the
+::: pf-proof
+Step [](#smooth-implies-submanifold){.pf-ref} proves the forward implication, and steps [](#submanifold-implies-complex-submanifold){.pf-ref} and [](#complex-submanifold-implies-smooth){.pf-ref} prove the
 converse.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required equivalence.
 :::
+
+::: pf-qed
+Step [](#equivalence-statement){.pf-ref} is the required equivalence.
+:::
+
+:::
+
 :::

@@ -36,18 +36,24 @@ m\coloneqq\dim W,
 n\coloneqq\dim V.
 $$
 
-<1>1. There is a basis
+::: pf
+
+::: {.pf-step #extended-basis}
+There is a basis
 $$
 v_1,\ldots,v_m,v_{m+1},\ldots,v_n
 $$
 of $V$ such that $v_1,\ldots,v_m$ is a basis of $W$.
 
-::: {.proof}
+::: pf-proof
 Choose any basis $v_1,\ldots,v_m$ of the subspace $W$ and extend it to a
 basis of the finite-dimensional space $V$.
 :::
 
-<1>2. Relative to the basis in step <1>1, the matrix of $T$ has block form
+:::
+
+::: {.pf-step #block-form}
+Relative to the basis in step [](#extended-basis){.pf-ref}, the matrix of $T$ has block form
 $$
 [T]
 =
@@ -59,7 +65,7 @@ $$
 where $A$ is the matrix of $T|_W$ in the basis
 $v_1,\ldots,v_m$.
 
-::: {.proof}
+::: pf-proof
 Because $W$ is $T$-invariant,
 $$
 T(v_j)\in W
@@ -70,15 +76,18 @@ upper-left block records exactly the coordinates of the restricted map
 $T|_W$ in the chosen basis of $W$.
 :::
 
-<1>3. The characteristic polynomial of $T$ factors as
+:::
+
+::: {.pf-step #characteristic-factorization}
+The characteristic polynomial of $T$ factors as
 $$
 \chi_T(t)
 =
 \chi_{T|_W}(t)\det(tI_{n-m}-D).
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#block-form){.pf-ref},
 $$
 tI_n-[T]
 =
@@ -104,16 +113,22 @@ $$
 $$
 :::
 
-<1>4. The polynomial $\chi_{T|_W}$ divides $\chi_T$ in $k[t]$.
+:::
 
-::: {.proof}
-Step <1>3 expresses $\chi_T$ as $\chi_{T|_W}$ times a polynomial in
+::: {.pf-step #divisibility}
+The polynomial $\chi_{T|_W}$ divides $\chi_T$ in $k[t]$.
+
+::: pf-proof
+Step [](#characteristic-factorization){.pf-ref} expresses $\chi_T$ as $\chi_{T|_W}$ times a polynomial in
 $k[t]$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required divisibility statement.
 :::
+
+::: pf-qed
+Step [](#divisibility){.pf-ref} is the required divisibility statement.
+:::
+
+:::
+
 :::

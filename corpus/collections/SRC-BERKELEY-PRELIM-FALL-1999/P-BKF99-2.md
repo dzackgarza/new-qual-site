@@ -40,11 +40,15 @@ Prove that
 :::
 
 ::: {.solution}
+
 Choose $x_n\in E_n$ for every $n$.
 
-<1>1. The sequence $(x_n)$ is Cauchy.
+::: pf
 
-::: {.proof}
+::: {.pf-step #sequence-cauchy}
+The sequence $(x_n)$ is Cauchy.
+
+::: pf-proof
 Let $\varepsilon>0$. Since
 $\operatorname{diam}(E_n)\to0$, choose $N$ such that
 $$
@@ -67,35 +71,46 @@ $$
 Thus $(x_n)$ is Cauchy.
 :::
 
-<1>2. There exists $x\in X$ such that $x_n\to x$.
-
-::: {.proof}
-The metric space $X$ is complete, and $(x_n)$ is Cauchy by step <1>1.
 :::
 
-<1>3. For every positive integer $k$, $x\in E_k$.
+::: {.pf-step #limit-exists}
+There exists $x\in X$ such that $x_n\to x$.
 
-::: {.proof}
+::: pf-proof
+The metric space $X$ is complete, and $(x_n)$ is Cauchy by step [](#sequence-cauchy){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #x-in-Ek}
+For every positive integer $k$, $x\in E_k$.
+
+::: pf-proof
 Fix $k$. For every $n\geq k$, nestedness gives
 $$
 x_n\in E_n\subseteq E_k.
 $$
 Hence the tail $(x_n)_{n\geq k}$ lies in $E_k$ and converges to $x$ by step
-<1>2. Since $E_k$ is closed, it contains the limit $x$.
+[](#limit-exists){.pf-ref}. Since $E_k$ is closed, it contains the limit $x$.
 :::
 
-<1>4.
+:::
+
+::: {.pf-step #x-in-intersection}
 $$
 x\in\bigcap_{n=1}^{\infty}E_n.
 $$
 
-::: {.proof}
-This follows from step <1>3, since $x$ belongs to every $E_k$.
+::: pf-proof
+This follows from step [](#x-in-Ek){.pf-ref}, since $x$ belongs to every $E_k$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 exhibits an element of the required intersection.
 :::
+
+::: pf-qed
+Step [](#x-in-intersection){.pf-ref} exhibits an element of the required intersection.
+:::
+
+:::
+
 :::

@@ -33,7 +33,11 @@ audit:
 
 
 ::: {.solution}
-<1>1. A right Noetherian ring which is not left Noetherian is
+
+::: pf
+
+::: {.pf-step #right-not-left-noetherian}
+A right Noetherian ring which is not left Noetherian is
 \[
 R=
 \left\{
@@ -47,7 +51,8 @@ a&m\\
 K:=k(t),
 \]
 where \(k\) is any field and \(k\subset K\) is the natural inclusion.
-::: {.proof}
+
+::: pf-proof
 Let
 \[
 e_1=\begin{pmatrix}1&0\\0&0\end{pmatrix},
@@ -105,7 +110,10 @@ is a strictly increasing chain of left ideals of \(R\).
 Hence \(R\) is not left Noetherian.
 :::
 
-<1>2. A module satisfying DCC but not ACC is the Prüfer \(p\)-group
+:::
+
+::: {.pf-step #dcc-not-acc}
+A module satisfying DCC but not ACC is the Prüfer \(p\)-group
 \[
 C_{p^\infty}:=\bigcup_{n\ge1}\mu_{p^n}\subset\mathbb C^\times,
 \]
@@ -113,7 +121,8 @@ viewed as a \(\mathbb Z\)-module, where
 \[
 \mu_{p^n}:=\{z\in\mathbb C^\times:z^{p^n}=1\}.
 \]
-::: {.proof}
+
+::: pf-proof
 Each \(\mu_{p^n}\) is cyclic of order \(p^n\), and
 \[
 \mu_p\subsetneq\mu_{p^2}\subsetneq\mu_{p^3}\subsetneq\cdots.
@@ -139,5 +148,13 @@ Now consider any descending chain of subgroups of \(C_{p^\infty}\).
 If every term is the whole group, the chain is constant.
 Otherwise, after the first proper term, every subsequent term lies inside a finite group \(\mu_{p^N}\), so the descending chain must stabilize.
 Thus \(C_{p^\infty}\) satisfies DCC but not ACC.
+:::
+
+:::
+
+::: pf-qed
+Step [](#right-not-left-noetherian){.pf-ref} answers part (a), and step [](#dcc-not-acc){.pf-ref} answers part (b).
+:::
+
 :::
 :::

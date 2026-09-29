@@ -30,31 +30,44 @@ audit:
 
 
 ::: {.solution}
-<1>1. Let \(\zeta_n\) be a primitive \(n\)-th root of unity and let
+
+::: pf
+
+::: pf-step
+Let \(\zeta_n\) be a primitive \(n\)-th root of unity and let
 \[
 K=\mathbb Q(\zeta_n).
 \]
 Then \(K\) is the splitting field of \(x^n-1\) over \(\mathbb Q\).
-::: {.proof}
+
+::: pf-proof
 Every root of \(x^n-1\) is a power of \(\zeta_n\), hence belongs to \(\mathbb Q(\zeta_n)\). Conversely, every splitting field contains a primitive \(n\)-th root of unity, so it contains \(\mathbb Q(\zeta_n)\).
 :::
 
-<1>2. For every \(\sigma\in\operatorname{Gal}(K/\mathbb Q)\), there is a unique residue class \(a_\sigma\in(\mathbb Z/n\mathbb Z)^\times\) such that
+:::
+
+::: pf-step
+For every \(\sigma\in\operatorname{Gal}(K/\mathbb Q)\), there is a unique residue class \(a_\sigma\in(\mathbb Z/n\mathbb Z)^\times\) such that
 \[
 \sigma(\zeta_n)=\zeta_n^{a_\sigma}.
 \]
-::: {.proof}
+
+::: pf-proof
 An automorphism preserves multiplicative order, so \(\sigma(\zeta_n)\) is again a primitive \(n\)-th root of unity. The primitive \(n\)-th roots are exactly \(\zeta_n^a\) with \(\gcd(a,n)=1\), and the exponent is unique modulo \(n\).
 :::
 
-<1>3. The map
+:::
+
+::: {.pf-step #theta-injective-homomorphism}
+The map
 \[
 \Theta:\operatorname{Gal}(K/\mathbb Q)\longrightarrow (\mathbb Z/n\mathbb Z)^\times,
 \qquad
 \Theta(\sigma)=a_\sigma,
 \]
 is an injective group homomorphism.
-::: {.proof}
+
+::: pf-proof
 If \(\sigma(\zeta_n)=\zeta_n^a\) and \(\tau(\zeta_n)=\zeta_n^b\), then
 \[
 (\sigma\tau)(\zeta_n)
@@ -65,8 +78,17 @@ If \(\sigma(\zeta_n)=\zeta_n^a\) and \(\tau(\zeta_n)=\zeta_n^b\), then
 so \(\Theta(\sigma\tau)=\Theta(\sigma)\Theta(\tau)\). If \(\Theta(\sigma)=1\), then \(\sigma(\zeta_n)=\zeta_n\). Since \(K=\mathbb Q(\zeta_n)\), this forces \(\sigma=\operatorname{id}_K\). Hence \(\Theta\) is injective.
 :::
 
-<1>4. Therefore \(\operatorname{Gal}(x^n-1/\mathbb Q)\) is abelian.
-::: {.proof}
-By <1>3, the Galois group is isomorphic to a subgroup of \((\mathbb Z/n\mathbb Z)^\times\), and this latter group is abelian. Every subgroup of an abelian group is abelian.
 :::
+
+::: pf-step
+Therefore \(\operatorname{Gal}(x^n-1/\mathbb Q)\) is abelian.
+
+::: pf-proof
+By step [](#theta-injective-homomorphism){.pf-ref}, the Galois group is isomorphic to a subgroup of \((\mathbb Z/n\mathbb Z)^\times\), and this latter group is abelian. Every subgroup of an abelian group is abelian.
+:::
+
+:::
+
+:::
+
 :::

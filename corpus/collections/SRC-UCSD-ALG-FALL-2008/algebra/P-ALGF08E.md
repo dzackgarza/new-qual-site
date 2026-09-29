@@ -36,12 +36,16 @@ Let
 be a \(K\)-monomorphism.
 Thus \(\sigma\) fixes every element of \(K\) and is injective.
 
-<1>1. For every \(a\in L\), all iterates
+::: pf
+
+::: {.pf-step #iterates-are-roots}
+For every \(a\in L\), all iterates
 \[
 a,\sigma(a),\sigma^2(a),\ldots
 \]
 are roots of the same polynomial over \(K\).
-::: {.proof}
+
+::: pf-proof
 Because \(L/K\) is algebraic, \(a\) has a minimal polynomial
 \[
 m_a(T)\in K[T].
@@ -62,10 +66,14 @@ for every \(n\ge0\).
 Thus every iterate is a root of \(m_a\).
 :::
 
-<1>2. Every element \(a\in L\) lies in the image of \(\sigma\).
-::: {.proof}
+:::
+
+::: {.pf-step #element-has-preimage}
+Every element \(a\in L\) lies in the image of \(\sigma\).
+
+::: pf-proof
 The polynomial \(m_a\) has only finitely many roots in the field \(L\).
-By <1>1, the infinite sequence
+By step [](#iterates-are-roots){.pf-ref}, the infinite sequence
 \[
 a,\sigma(a),\sigma^2(a),\ldots
 \]
@@ -93,13 +101,21 @@ Since \(r-s\ge1\), this is defined, and
 Thus \(a\in\operatorname{im}\sigma\).
 :::
 
-<1>3. Therefore \(\sigma\) is onto.
-::: {.proof}
-By <1>2, every \(a\in L\) has a preimage under \(\sigma\).
+:::
+
+::: pf-step
+Therefore \(\sigma\) is onto.
+
+::: pf-proof
+By step [](#element-has-preimage){.pf-ref}, every \(a\in L\) has a preimage under \(\sigma\).
 Hence
 \[
 \operatorname{im}\sigma=L,
 \]
 so every \(K\)-monomorphism \(L\to L\) is surjective.
+:::
+
+:::
+
 :::
 :::

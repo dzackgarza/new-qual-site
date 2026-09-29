@@ -56,10 +56,13 @@ H=-K_X=3L-E_1-\cdots-E_5,
 H^2=4.
 $$
 
-<1>1. The five exceptional curves $E_i$ are lines in the anticanonical
+::: pf
+
+::: {.pf-step #exceptional-curves-lines}
+The five exceptional curves $E_i$ are lines in the anticanonical
 embedding.
 
-::: {.proof}
+::: pf-proof
 The intersection form on the blowup is
 $$
 L^2=1,
@@ -78,10 +81,13 @@ Each $E_i\cong\PP^1$, and the very ample divisor $H$ embeds it as a curve of
 degree one in $\PP^4$. Thus every $E_i$ is a line on $X$.
 :::
 
-<1>2. For every pair $1\le i<j\le5$, the strict transform of the line through
+:::
+
+::: {.pf-step #pairwise-join-lines}
+For every pair $1\le i<j\le5$, the strict transform of the line through
 $P_i$ and $P_j$ is a line on $X$.
 
-::: {.proof}
+::: pf-proof
 Because the five points are in general position, the line through $P_i,P_j$
 contains none of the other three points. Its strict transform $L_{ij}$ has
 class
@@ -103,10 +109,13 @@ $$
 such curves.
 :::
 
-<1>3. The strict transform of the conic through $P_1,\ldots,P_5$ is a line
+:::
+
+::: {.pf-step #conic-transform-line}
+The strict transform of the conic through $P_1,\ldots,P_5$ is a line
 on $X$.
 
-::: {.proof}
+::: pf-proof
 Five points in general position determine a unique conic $Q$. It is
 irreducible: if it were the union of two lines, one of those lines would
 contain at least three of the five points, contrary to general position.
@@ -123,10 +132,13 @@ Since $\widetilde Q\cong\PP^1$, it is mapped to a line by the anticanonical
 embedding.
 :::
 
-<1>4. The surface $X$ contains 16 distinct lines.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 give respectively
+::: {.pf-step #sixteen-lines-total}
+The surface $X$ contains 16 distinct lines.
+
+::: pf-proof
+Steps [](#exceptional-curves-lines){.pf-ref}, [](#pairwise-join-lines){.pf-ref} and [](#conic-transform-line){.pf-ref} give respectively
 $$
 5,
 \qquad
@@ -149,12 +161,15 @@ $$
 lines. This proves part (a).
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #h0-two-h-thirteen}
+One has
 $$
 \boxed{h^0(X,\OO_X(2H))=13.}
 $$
 
-::: {.proof}
+::: pf-proof
 The surface $X$ is rational, so
 $$
 \chi(\OO_X)=1.
@@ -189,10 +204,13 @@ by [[P-AGH5412KODAIRAVANISH|Exercise V.4.12]], applied to the ample divisor
 $3H$. Thus $h^0(X,\OO_X(2H))=\chi(\OO_X(2H))=13$.
 :::
 
-<1>6. At least two linearly independent quadric hypersurfaces of $\PP^4$
+:::
+
+::: {.pf-step #two-quadrics-contain-x}
+At least two linearly independent quadric hypersurfaces of $\PP^4$
 contain $X$.
 
-::: {.proof}
+::: pf-proof
 The anticanonical embedding satisfies
 $$
 \OO_X(1)=\OO_X(H),
@@ -207,7 +225,7 @@ The source has dimension
 $$
 \binom{4+2}{2}=15,
 $$
-whereas step <1>5 gives dimension $13$ for the target. Hence the kernel has
+whereas step [](#h0-two-h-thirteen){.pf-ref} gives dimension $13$ for the target. Hence the kernel has
 dimension at least two. Choose linearly independent quadrics
 $$
 Q_1,Q_2
@@ -218,9 +236,12 @@ X\subseteq Q_1\cap Q_2.
 $$
 :::
 
-<1>7. The quadrics $Q_1$ and $Q_2$ have no common hypersurface component.
+:::
 
-::: {.proof}
+::: {.pf-step #quadrics-no-common-component}
+The quadrics $Q_1$ and $Q_2$ have no common hypersurface component.
+
+::: pf-proof
 If two independent quadrics in $\PP^4$ have a common hypersurface component,
 that component is a hyperplane: their equations have a common linear factor.
 Thus their intersection is the union of that hyperplane and a codimension-two
@@ -231,14 +252,17 @@ $\PP^4$. Hence $Q_1,Q_2$ form a regular sequence and their intersection is a
 pure surface complete intersection.
 :::
 
-<1>8. One has
+:::
+
+::: {.pf-step #x-is-complete-intersection}
+One has
 $$
 \boxed{X=Q_1\cap Q_2}
 $$
 scheme-theoretically.
 
-::: {.proof}
-By step <1>7, the complete intersection
+::: pf-proof
+By step [](#quadrics-no-common-component){.pf-ref}, the complete intersection
 $$
 Y=Q_1\cap Q_2
 $$
@@ -250,7 +274,7 @@ On the other hand, the degree of the anticanonically embedded surface is
 $$
 \deg X=H^2=4.
 $$
-Step <1>6 gives $X\subseteq Y$. Since $Y$ is pure of the same dimension as
+Step [](#two-quadrics-contain-x){.pf-ref} gives $X\subseteq Y$. Since $Y$ is pure of the same dimension as
 the irreducible reduced surface $X$, the component of $Y$ supported on $X$
 already contributes at least $\deg X=4$ to the degree of $Y$. Equality of the
 degrees leaves neither another two-dimensional component nor a nonreduced
@@ -260,9 +284,11 @@ Therefore $X$ is the complete intersection of two quadric hypersurfaces in
 $\PP^4$, proving part (b).
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves part (a), and steps <1>5--<1>8 prove part (b).
+::: pf-qed
+Step [](#sixteen-lines-total){.pf-ref} proves part (a), and steps [](#h0-two-h-thirteen){.pf-ref}, [](#two-quadrics-contain-x){.pf-ref}, [](#quadrics-no-common-component){.pf-ref} and [](#x-is-complete-intersection){.pf-ref} prove part (b).
+:::
+
 :::
 :::

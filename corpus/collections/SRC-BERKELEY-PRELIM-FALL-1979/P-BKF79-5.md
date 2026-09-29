@@ -31,7 +31,10 @@ Let $A$ be a real skew-symmetric matrix, so $A_{ij}=-A_{ji}$. Prove that $A$ has
 ::: {.solution}
 Let $A$ be an $n\times n$ matrix and let $V=\RR^n$.
 
-<1>1. The bilinear form
+::: pf
+
+::: pf-step
+The bilinear form
 $$
 \omega:V\times V\longrightarrow\RR,
 \qquad
@@ -39,7 +42,7 @@ $$
 $$
 is alternating.
 
-::: {.proof}
+::: pf-proof
 Since $A^T=-A$,
 $$
 \omega(v,u)
@@ -59,9 +62,12 @@ $$
 so $\omega(v,v)=0$ over $\RR$.
 :::
 
-<1>2. The radical of $\omega$ is exactly $\ker A$.
+:::
 
-::: {.proof}
+::: {.pf-step #radical-is-kernel}
+The radical of $\omega$ is exactly $\ker A$.
+
+::: pf-proof
 For $u\in V$,
 $$
 \omega(u,v)
@@ -73,7 +79,10 @@ $$
 Thus $\omega(u,v)=0$ for every $v\in V$ if and only if $Au=0$.
 :::
 
-<1>3. The form $\omega$ induces a nondegenerate alternating form
+:::
+
+::: {.pf-step #quotient-nondegenerate}
+The form $\omega$ induces a nondegenerate alternating form
 $\overline\omega$ on
 $$
 \overline V
@@ -85,8 +94,8 @@ $$
 \dim\overline V=\operatorname{rank}A.
 $$
 
-::: {.proof}
-Because $\ker A$ is the radical by step <1>2, changing either
+::: pf-proof
+Because $\ker A$ is the radical by step [](#radical-is-kernel){.pf-ref}, changing either
 representative by an element of $\ker A$ does not change the value of
 $\omega$. Hence $\omega$ descends to the quotient. The induced form
 has zero radical by construction, so it is nondegenerate. Finally,
@@ -100,10 +109,13 @@ $$
 $$
 :::
 
-<1>4. Every finite-dimensional real vector space carrying a
+:::
+
+::: {.pf-step #even-dim-lemma}
+Every finite-dimensional real vector space carrying a
 nondegenerate alternating bilinear form has even dimension.
 
-::: {.proof}
+::: pf-proof
 We argue by induction on the dimension. Dimension $0$ is even.
 
 Let $W$ be nonzero and let $\beta$ be a nondegenerate alternating
@@ -172,20 +184,25 @@ $$
 By induction, $\dim U^\perp$ is even, so $\dim W$ is even.
 :::
 
-<1>5. The rank of $A$ is even.
+:::
 
-::: {.proof}
-By step <1>3, $\overline V$ carries a nondegenerate alternating form
+::: {.pf-step #rank-is-even}
+The rank of $A$ is even.
+
+::: pf-proof
+By step [](#quotient-nondegenerate){.pf-ref}, $\overline V$ carries a nondegenerate alternating form
 and
 $$
 \dim\overline V=\operatorname{rank}A.
 $$
-Step <1>4 says that $\dim\overline V$ is even.
+Step [](#even-dim-lemma){.pf-ref} says that $\dim\overline V$ is even.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-qed
+Step [](#rank-is-even){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

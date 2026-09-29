@@ -54,10 +54,13 @@ Then consider $f^* H_0, f^* H_1$ and $\tilde{H}_0=f^*\left(H_0-P\right)^{-}$.
 :::
 
 ::: {.solution}
-<1>1. As literally transcribed, the statement is false if the image of
+::: pf
+
+::: {.pf-step #one-dim-image-counterexample}
+As literally transcribed, the statement is false if the image of
 $f$ is allowed to be one-dimensional.
 
-::: {.proof}
+::: pf-proof
 Let $C$ be any nonsingular projective curve and take
 $$
 X=C\times\PP^1.
@@ -100,7 +103,6 @@ Thus the conclusion requires the intended surface-contraction hypothesis
 $$
 \dim f(X)=2.
 $$
-:::
 
 Assume for the rest of the proof that
 $$
@@ -112,8 +114,12 @@ $$
 f(X)=X_0.
 $$
 Hence $f$ is dominant and generically finite.
+:::
 
-<1>2. Let $H$ be a very ample Cartier divisor on $X_0$ and put
+:::
+
+::: {.pf-step #pullback-square-positive}
+Let $H$ be a very ample Cartier divisor on $X_0$ and put
 $$
 D=f^*H.
 $$
@@ -122,7 +128,7 @@ $$
 \boxed{D^2>0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Because $f$ is dominant and generically finite, it has a positive degree
 $$
 d=[K(X):K(X_0)]>0.
@@ -143,12 +149,15 @@ D^2>0.
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #pullback-meets-y-zero}
+One has
 $$
 \boxed{D\cdot Y=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Choose
 $$
 H_1\in|H|
@@ -184,13 +193,16 @@ $$
 because $Y$ is contracted to a point.
 :::
 
-<1>4. The numerical class
+:::
+
+::: {.pf-step #y-class-nonzero}
+The numerical class
 $$
 [Y]\in\operatorname{NS}(X)_\RR
 $$
 is nonzero.
 
-::: {.proof}
+::: pf-proof
 Let $A$ be any ample divisor on the nonsingular projective surface $X$.
 Since $Y$ is an irreducible curve,
 $$
@@ -199,7 +211,10 @@ $$
 Thus $Y$ cannot be numerically equivalent to zero.
 :::
 
-<1>5. The intersection form is negative definite on
+:::
+
+::: {.pf-step #orthogonal-complement-negative-definite}
+The intersection form is negative definite on
 $$
 D^\perp
 =
@@ -209,7 +224,7 @@ D^\perp
 \right\}.
 $$
 
-::: {.proof}
+::: pf-proof
 The Hodge index theorem [[T-SRFHODGE]] says that the intersection form on
 $$
 \operatorname{NS}(X)_\RR
@@ -218,7 +233,7 @@ has signature
 $$
 (1,\rho(X)-1).
 $$
-Step <1>2 gives
+Step [](#pullback-square-positive){.pf-ref} gives
 $$
 D^2>0.
 $$
@@ -237,7 +252,10 @@ $$
 $$
 :::
 
-<1>6. Under the intended hypothesis
+:::
+
+::: {.pf-step #y-negative-square}
+Under the intended hypothesis
 $$
 \dim f(X)=2,
 $$
@@ -246,12 +264,12 @@ $$
 \boxed{Y^2<0.}
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#pullback-meets-y-zero){.pf-ref},
 $$
 [Y]\in D^\perp.
 $$
-By step <1>4 this class is nonzero. Step <1>5 therefore gives
+By step [](#y-class-nonzero){.pf-ref} this class is nonzero. Step [](#orthogonal-complement-negative-definite){.pf-ref} therefore gives
 $$
 Y^2<0.
 $$
@@ -260,10 +278,13 @@ projective surface, including the birational situation referred to by the
 retained V.5.7 solution through Exercise V.5.4.
 :::
 
-<1>7. The divisors appearing in the printed hint are compatible with the
+:::
+
+::: {.pf-step #hint-divisors-reconciled}
+The divisors appearing in the printed hint are compatible with the
 same calculation.
 
-::: {.proof}
+::: pf-proof
 Choose
 $$
 H_0\in|H|,
@@ -283,7 +304,7 @@ for some integer
 $$
 m>0.
 $$
-Intersecting with $Y$ and using step <1>3 gives
+Intersecting with $Y$ and using step [](#pullback-meets-y-zero){.pf-ref} gives
 $$
 0
 =
@@ -291,7 +312,7 @@ f^*H_0\cdot Y
 =
 \widetilde H_0\cdot Y+mY^2.
 $$
-Step <1>6 says $Y^2<0$, so necessarily
+Step [](#y-negative-square){.pf-ref} says $Y^2<0$, so necessarily
 $$
 \widetilde H_0\cdot Y=-mY^2>0.
 $$
@@ -300,13 +321,15 @@ hyperplane avoiding $P$ gives zero intersection with $Y$, while a
 hyperplane through $P$ acquires the exceptional component $mY$.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 records the missing hypothesis in the literal transcription.
-Under the intended two-dimensional-image hypothesis, steps <1>2--<1>5
+::: pf-qed
+Step [](#one-dim-image-counterexample){.pf-ref} records the missing hypothesis in the literal transcription.
+Under the intended two-dimensional-image hypothesis, steps [](#pullback-square-positive){.pf-ref}, [](#pullback-meets-y-zero){.pf-ref}, [](#y-class-nonzero){.pf-ref} and [](#orthogonal-complement-negative-definite){.pf-ref}
 place the nonzero class of $Y$ in the negative-definite orthogonal
-complement of the positive-square divisor $f^*H$. Step <1>6 gives
-$Y^2<0$, and step <1>7 reconciles the proof with the printed hint.
+complement of the positive-square divisor $f^*H$. Step [](#y-negative-square){.pf-ref} gives
+$Y^2<0$, and step [](#hint-divisors-reconciled){.pf-ref} reconciles the proof with the printed hint.
+:::
+
 :::
 :::

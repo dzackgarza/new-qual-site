@@ -39,6 +39,7 @@ converges.
 :::
 
 ::: {.solution}
+
 For each integer $n\ge0$, define
 $$
 a_n=
@@ -46,9 +47,12 @@ a_n=
 f(x)\abs{\sin x}\,dx.
 $$
 
-<1>1. The sequence $(a_n)$ is nonnegative and nonincreasing.
+::: pf
 
-::: {.proof}
+::: {.pf-step #an-nonneg-nonincreasing}
+The sequence $(a_n)$ is nonnegative and nonincreasing.
+
+::: pf-proof
 After the substitution $x=t+n\pi$,
 $$
 a_n
@@ -64,12 +68,15 @@ $$
 for $0\le t\le\pi$, and therefore $a_{n+1}\le a_n$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #an-to-zero}
+One has
 $$
 a_n\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
 For $0\le t\le\pi$, monotonicity gives
 $$
 0\le f(t+n\pi)\le f(n\pi).
@@ -86,14 +93,17 @@ The hypothesis $f(x)\to0$ as $x\to\infty$ therefore implies
 $a_n\to0$.
 :::
 
-<1>3. The sequence
+:::
+
+::: {.pf-step #IN-converges}
+The sequence
 $$
 I_N\coloneqq
 \int_0^{N\pi}f(x)\sin x\,dx
 $$
 converges as $N\to\infty$.
 
-::: {.proof}
+::: pf-proof
 On the interval $[n\pi,(n+1)\pi]$, the sign of $\sin x$ is
 $(-1)^n$. Therefore
 $$
@@ -107,12 +117,15 @@ I_N
 \sum_{n=0}^{N-1}(-1)^n a_n.
 \end{aligned}
 $$
-By steps <1>1 and <1>2, the sequence $(a_n)$ is nonnegative,
+By steps [](#an-nonneg-nonincreasing){.pf-ref} and [](#an-to-zero){.pf-ref}, the sequence $(a_n)$ is nonnegative,
 nonincreasing, and tends to zero. The alternating-series theorem
 therefore shows that the displayed series, and hence $I_N$, converges.
 :::
 
-<1>4. If $N\pi\le R<(N+1)\pi$, then
+:::
+
+::: {.pf-step #partial-period-bound}
+If $N\pi\le R<(N+1)\pi$, then
 $$
 \abs{
 \int_0^R f(x)\sin x\,dx-I_N
@@ -120,7 +133,7 @@ $$
 \le a_N.
 $$
 
-::: {.proof}
+::: pf-proof
 The difference is the integral over the final partial half-period:
 $$
 \begin{aligned}
@@ -145,7 +158,10 @@ a_N.
 $$
 :::
 
-<1>5. The improper integral
+:::
+
+::: {.pf-step #integral-converges}
+The improper integral
 $$
 \boxed{
 \int_0^\infty f(x)\sin x\,dx
@@ -153,10 +169,10 @@ $$
 }.
 $$
 
-::: {.proof}
-Let $L=\lim_{N\to\infty}I_N$, whose existence is given by step <1>3.
+::: pf-proof
+Let $L=\lim_{N\to\infty}I_N$, whose existence is given by step [](#IN-converges){.pf-ref}.
 For $R\to\infty$, let $N$ be the integer with
-$N\pi\le R<(N+1)\pi$. Then $N\to\infty$, and step <1>4 gives
+$N\pi\le R<(N+1)\pi$. Then $N\to\infty$, and step [](#partial-period-bound){.pf-ref} gives
 $$
 \abs{
 \int_0^R f(x)\sin x\,dx-L
@@ -164,13 +180,16 @@ $$
 \le
 a_N+\abs{I_N-L}.
 $$
-Both terms tend to zero by steps <1>2 and <1>3. Hence the truncated
+Both terms tend to zero by steps [](#an-to-zero){.pf-ref} and [](#IN-converges){.pf-ref}. Hence the truncated
 integrals converge to $L$ as $R\to\infty$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required convergence statement.
 :::
+
+::: pf-qed
+Step [](#integral-converges){.pf-ref} is the required convergence statement.
+:::
+
+:::
+
 :::

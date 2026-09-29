@@ -36,8 +36,12 @@ Consider the ideal
 (x)\subset k[x,y].
 \]
 
-<1>1. The ideal $(x)$ is a nonzero prime ideal.
-::: {.proof}
+::: pf
+
+::: {.pf-step #x-is-nonzero-prime}
+The ideal $(x)$ is a nonzero prime ideal.
+
+::: pf-proof
 There is an isomorphism
 \[
 k[x,y]/(x)\cong k[y].
@@ -46,8 +50,12 @@ Since $k[y]$ is an integral domain, $(x)$ is prime. It is nonzero because
 $x\ne0$ in $k[x,y]$.
 :::
 
-<1>2. The ideal $(x)$ is not maximal.
-::: {.proof}
+:::
+
+::: {.pf-step #x-not-maximal}
+The ideal $(x)$ is not maximal.
+
+::: pf-proof
 The quotient $k[y]$ is not a field: for example, $y$ is a nonzero nonunit.
 Hence $k[x,y]/(x)$ is not a field, so $(x)$ is not maximal.
 
@@ -57,9 +65,17 @@ Equivalently, one has the strict chain
 \]
 :::
 
-<1>3. Therefore $k[x,y]$ is not a Dedekind domain.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore $k[x,y]$ is not a Dedekind domain.
+
+::: pf-proof
 In a Dedekind domain every nonzero prime ideal is maximal. The nonzero prime
-ideal $(x)$ violates this condition by <1>1--<1>2.
+ideal $(x)$ violates this condition by steps [](#x-is-nonzero-prime){.pf-ref} and [](#x-not-maximal){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

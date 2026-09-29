@@ -42,7 +42,10 @@ $$
 K(Y)\subseteq K(X).
 $$
 
-<1>1. Let
+::: pf
+
+::: {.pf-step #finite-algebra-b}
+Let
 $$
 V=\Spec A\subseteq Y
 $$
@@ -54,7 +57,7 @@ B=\Gamma(U,\OO_X).
 $$
 Then $B$ is a finite $A$-algebra contained in $K(X)$.
 
-::: {.proof}
+::: pf-proof
 The restricted morphism
 $$
 \pi_U:U\longrightarrow V
@@ -78,10 +81,13 @@ B\injects K(X).
 $$
 :::
 
-<1>2. Every element of $B$ is integral over $A$.
+:::
 
-::: {.proof}
-By step <1>1, $B$ is finite as an $A$-module. Every element of a finite
+::: {.pf-step #b-integral-over-a}
+Every element of $B$ is integral over $A$.
+
+::: pf-proof
+By step [](#finite-algebra-b){.pf-ref}, $B$ is finite as an $A$-module. Every element of a finite
 $A$-algebra is integral over $A$. Therefore
 $$
 B
@@ -92,10 +98,13 @@ where $\overline A^{\,K(X)}$ denotes the integral closure of $A$ in
 $K(X)$.
 :::
 
-<1>3. Since $X$ is normal, every element of $K(X)$ integral over $A$
+:::
+
+::: {.pf-step #integral-elements-in-b}
+Since $X$ is normal, every element of $K(X)$ integral over $A$
 belongs to $B$.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 \alpha\in K(X)
@@ -132,7 +141,10 @@ $$
 $$
 :::
 
-<1>4. Consequently,
+:::
+
+::: {.pf-step #gamma-equals-integral-closure}
+Consequently,
 $$
 \boxed{
 \Gamma(\pi^{-1}V,\OO_X)
@@ -142,20 +154,23 @@ $$
 $$
 for every nonempty affine open $V\subseteq Y$.
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+Step [](#b-integral-over-a){.pf-ref} gives
 $$
 B\subseteq\overline A^{\,K(X)},
 $$
-and step <1>3 gives the reverse inclusion.
+and step [](#integral-elements-in-b){.pf-ref} gives the reverse inclusion.
 :::
 
-<1>5. If $Y$ is integrally closed in $K(X)$, then
+:::
+
+::: {.pf-step #forward-implication-connected}
+If $Y$ is integrally closed in $K(X)$, then
 $$
 \OO_Y\xrightarrow{\sim}\pi_*\OO_X.
 $$
 
-::: {.proof}
+::: pf-proof
 By hypothesis, for every nonempty affine open
 $$
 V=\Spec A\subseteq Y,
@@ -164,7 +179,7 @@ the ring $A$ is integrally closed in $K(X)$:
 $$
 A=\overline A^{\,K(X)}.
 $$
-Step <1>4 therefore gives
+Step [](#gamma-equals-integral-closure){.pf-ref} therefore gives
 $$
 \Gamma(V,\OO_Y)
 =
@@ -178,13 +193,16 @@ These identifications are induced by the natural sheaf map and are
 compatible with restriction. Hence that map is an isomorphism.
 :::
 
-<1>6. Conversely, if
+:::
+
+::: {.pf-step #converse-implication-connected}
+Conversely, if
 $$
 \OO_Y\xrightarrow{\sim}\pi_*\OO_X,
 $$
 then $Y$ is integrally closed in $K(X)$.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 V=\Spec A\subseteq Y
@@ -198,7 +216,7 @@ A
 \Gamma(\pi^{-1}V,\OO_X)
 =B.
 $$
-By step <1>4,
+By step [](#gamma-equals-integral-closure){.pf-ref},
 $$
 B=\overline A^{\,K(X)}.
 $$
@@ -210,7 +228,10 @@ Since this holds on every affine open, $Y$ is integrally closed in
 $K(X)$.
 :::
 
-<1>7. Under these hypotheses,
+:::
+
+::: {.pf-step #equivalence-statement}
+Under these hypotheses,
 $$
 \boxed{
 Y\text{ is integrally closed in }K(X)
@@ -219,16 +240,19 @@ Y\text{ is integrally closed in }K(X)
 }
 $$
 
-::: {.proof}
-Step <1>5 proves the forward implication and step <1>6 proves the reverse
+::: pf-proof
+Step [](#forward-implication-connected){.pf-ref} proves the forward implication and step [](#converse-implication-connected){.pf-ref} proves the reverse
 implication.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the asserted equivalence.
 :::
+
+::: pf-qed
+Step [](#equivalence-statement){.pf-ref} is the asserted equivalence.
+:::
+
+:::
+
 :::
 
 ::: {.remark}

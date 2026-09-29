@@ -29,7 +29,11 @@ Compute the integer homology groups $H_n(\mathbb{RP}^2 \times X; \mathbb{Z})$ fo
 :::
 
 ::: {.solution}
-<1>1. The integral homology of $\mathbb{RP}^2$ is
+
+::: pf
+
+::: pf-step
+The integral homology of $\mathbb{RP}^2$ is
 $$
 H_i(\mathbb{RP}^2;\mathbb Z)\cong
 \begin{cases}
@@ -39,7 +43,10 @@ H_i(\mathbb{RP}^2;\mathbb Z)\cong
 \end{cases}
 $$
 
-<1>2. The homological Künneth theorem gives, noncanonically,
+:::
+
+::: pf-step
+The homological Künneth theorem gives, noncanonically,
 $$
 H_n(\mathbb{RP}^2\times X;\mathbb Z)
 \cong H_n(X)
@@ -48,7 +55,10 @@ H_n(\mathbb{RP}^2\times X;\mathbb Z)
 $$
 where groups with negative indices are interpreted as zero.
 
-<1>3. In degrees $0,1,2$ this yields
+:::
+
+::: pf-step
+In degrees $0,1,2$ this yields
 $$
 H_0\cong\mathbb Z,
 \qquad
@@ -58,24 +68,46 @@ H_2\cong\mathbb Z/2,
 $$
 because $H_1(X)=\mathbb Z/1=0$ and $H_2(X)=\mathbb Z/2$.
 
-<1>4. Let $n\ge3$.
-<2>1. The first summand is $H_n(X)\cong\mathbb Z/n$.
-<2>2. For positive $m$,
+:::
+
+::: pf-step
+Let $n\ge3$.
+
+::: pf-proof
+
+::: pf-step
+The first summand is $H_n(X)\cong\mathbb Z/n$.
+:::
+
+::: pf-step
+For positive $m$,
 $$
 (\mathbb Z/2)\otimes(\mathbb Z/m)
 \cong
 \operatorname{Tor}_1^{\mathbb Z}(\mathbb Z/2,\mathbb Z/m)
 \cong \mathbb Z/\gcd(2,m).
 $$
-<2>3. Therefore the tensor summand is $\mathbb Z/2$ exactly when $n-1$ is even, while the Tor summand is $\mathbb Z/2$ exactly when $n-2$ is even.
-<2>4. Exactly one of the consecutive integers $n-1,n-2$ is even, so exactly one of these two summands is nonzero. Hence
+:::
+
+::: pf-step
+Therefore the tensor summand is $\mathbb Z/2$ exactly when $n-1$ is even, while the Tor summand is $\mathbb Z/2$ exactly when $n-2$ is even.
+:::
+
+::: pf-step
+Exactly one of the consecutive integers $n-1,n-2$ is even, so exactly one of these two summands is nonzero. Hence
 $$
 H_n(\mathbb{RP}^2\times X;\mathbb Z)
 \cong \mathbb Z/n\oplus\mathbb Z/2
 \qquad(n\ge3).
 $$
+:::
 
-<1>5. Thus
+:::
+
+:::
+
+::: pf-step
+Thus
 $$
 H_n(\mathbb{RP}^2\times X;\mathbb Z)\cong
 \begin{cases}
@@ -84,4 +116,9 @@ H_n(\mathbb{RP}^2\times X;\mathbb Z)\cong
 \mathbb Z/n\oplus\mathbb Z/2,&n\ge3.
 \end{cases}
 $$
+
+:::
+
+:::
+
 :::

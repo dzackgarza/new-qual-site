@@ -52,12 +52,15 @@ $$
 X=\PP^n(\CC).
 $$
 
-<1>1. If $n=0$, then
+::: pf
+
+::: {.pf-step #cohomology-n-zero}
+If $n=0$, then
 $$
 H^*(X;\ZZ)\cong\ZZ\cong\ZZ[h]/(h).
 $$
 
-::: {.proof}
+::: pf-proof
 In this case
 $$
 X=\PP^0(\CC)
@@ -66,14 +69,17 @@ is a point. Its integral cohomology is $\ZZ$ in degree $0$ and vanishes in
 positive degrees, which is the displayed ring. Hence assume $n\geq1$ below.
 :::
 
-<1>2. The space $X$ has a CW decomposition with one cell in each real
+:::
+
+::: {.pf-step #cw-decomposition-even-cells}
+The space $X$ has a CW decomposition with one cell in each real
 dimension
 $$
 0,2,\ldots,2n
 $$
 and no cells in odd dimensions.
 
-::: {.proof}
+::: pf-proof
 For $0\leq r\leq n$, let
 $$
 X_r
@@ -105,7 +111,10 @@ Thus $X_r$ is obtained from $X_{r-1}$ by attaching one $2r$-cell, which
 gives the asserted CW decomposition.
 :::
 
-<1>3. Additively,
+:::
+
+::: {.pf-step #additive-cohomology-groups}
+Additively,
 $$
 H^q(X;\ZZ)
 \cong
@@ -115,8 +124,8 @@ H^q(X;\ZZ)
 \end{cases}
 $$
 
-::: {.proof}
-By step <1>2, the cellular cochain group is
+::: pf-proof
+By step [](#cw-decomposition-even-cells){.pf-ref}, the cellular cochain group is
 $$
 C^q_{\mathrm{cell}}(X;\ZZ)
 \cong
@@ -130,7 +139,10 @@ there are no odd-dimensional cells. Hence all cellular differentials vanish,
 so cellular cohomology gives exactly the displayed groups.
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #hyperplane-class-generates}
+Let
 $$
 H\cong\PP^{n-1}(\CC)\subseteq X
 $$
@@ -146,7 +158,7 @@ h^r
 $$
 and $h^r$ generates $H^{2r}(X;\ZZ)$.
 
-::: {.proof}
+::: pf-proof
 Choose $r$ hyperplanes
 $$
 H_1,\ldots,H_r\subseteq X
@@ -171,7 +183,7 @@ h^r
 $$
 
 The standard linear $\PP^{n-r}(\CC)$ is the closure of the unique
-$2(n-r)$-cell in the filtration from step <1>2, so its fundamental class
+$2(n-r)$-cell in the filtration from step [](#cw-decomposition-even-cells){.pf-ref}, so its fundamental class
 generates
 $$
 H_{2(n-r)}(X;\ZZ)\cong\ZZ.
@@ -182,7 +194,10 @@ H^{2r}(X;\ZZ)\cong\ZZ.
 $$
 :::
 
-<1>5. The cohomology ring is
+:::
+
+::: {.pf-step #cohomology-ring-formula}
+The cohomology ring is
 $$
 \boxed{
 H^*(\PP^n(\CC);\ZZ)
@@ -193,12 +208,12 @@ H^*(\PP^n(\CC);\ZZ)
 }
 $$
 
-::: {.proof}
-For $n=0$, this is step <1>1. Assume $n\geq1$. By step <1>4, the powers
+::: pf-proof
+For $n=0$, this is step [](#cohomology-n-zero){.pf-ref}. Assume $n\geq1$. By step [](#hyperplane-class-generates){.pf-ref}, the powers
 $$
 1,h,\ldots,h^n
 $$
-generate every nonzero cohomology group from step <1>3. Since $X$ has real
+generate every nonzero cohomology group from step [](#additive-cohomology-groups){.pf-ref}. Since $X$ has real
 dimension $2n$,
 $$
 H^{2n+2}(X;\ZZ)=0,
@@ -215,13 +230,16 @@ H^*(X;\ZZ)
 $$
 sending $h$ to the hyperplane class is surjective. In each even degree
 $0,2,\ldots,2n$, both sides are free of rank one and the image of $h^r$ is
-a generator by step <1>4; both sides vanish in every other degree. Therefore
+a generator by step [](#hyperplane-class-generates){.pf-ref}; both sides vanish in every other degree. Therefore
 the homomorphism is an isomorphism.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested integral singular cohomology ring.
 :::
+
+::: pf-qed
+Step [](#cohomology-ring-formula){.pf-ref} gives the requested integral singular cohomology ring.
+:::
+
+:::
+
 :::

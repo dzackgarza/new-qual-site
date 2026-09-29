@@ -31,7 +31,11 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let $u,v\in H^2(S^2\times S^2;\mathbb Z)$ be the pullbacks of the positive generator of $H^2(S^2;\mathbb Z)$ under the two projections. Then
+
+::: pf
+
+::: pf-step
+Let $u,v\in H^2(S^2\times S^2;\mathbb Z)$ be the pullbacks of the positive generator of $H^2(S^2;\mathbb Z)$ under the two projections. Then
 $$
 H^*(S^2\times S^2;\mathbb Z)
 \cong \mathbb Z[u,v]/(u^2,v^2),
@@ -39,7 +43,10 @@ H^*(S^2\times S^2;\mathbb Z)
 $$
 and $uv$ generates $H^4(S^2\times S^2;\mathbb Z)$ after choosing the product orientation.
 
-<1>2. If $x\in H^2(\mathbb{CP}^2;\mathbb Z)$ is the standard generator, then
+:::
+
+::: pf-step
+If $x\in H^2(\mathbb{CP}^2;\mathbb Z)$ is the standard generator, then
 $$
 H^*(\mathbb{CP}^2;\mathbb Z)
 \cong \mathbb Z[x]/(x^3),
@@ -47,23 +54,47 @@ H^*(\mathbb{CP}^2;\mathbb Z)
 $$
 with $x^2$ generating $H^4(\mathbb{CP}^2;\mathbb Z)$ after choosing the usual orientation.
 
-<1>3. Let $f:S^2\times S^2\to\mathbb{CP}^2$ be continuous.
-<2>1. Since $H^2(S^2\times S^2;\mathbb Z)=\mathbb Zu\oplus\mathbb Zv$, write
+:::
+
+::: pf-step
+Let $f:S^2\times S^2\to\mathbb{CP}^2$ be continuous.
+
+::: pf-proof
+
+::: pf-step
+Since $H^2(S^2\times S^2;\mathbb Z)=\mathbb Zu\oplus\mathbb Zv$, write
 $$
 f^*(x)=au+bv
 $$
 for integers $a,b$.
-<2>2. Naturality of cup products gives
+:::
+
+::: pf-step
+Naturality of cup products gives
 $$
 f^*(x^2)=(au+bv)^2
 =a^2u^2+2ab\,uv+b^2v^2
 =2ab\,uv.
 $$
-<2>3. By the definition of degree,
+:::
+
+::: pf-step
+By the definition of degree,
 $$
 f^*(x^2)=\deg(f)\,uv.
 $$
 Thus $\deg(f)=2ab$, which is even.
+:::
 
-<1>4. Therefore no map $S^2\times S^2\to\mathbb{CP}^2$ has odd degree.
+:::
+
+:::
+
+::: pf-step
+Therefore no map $S^2\times S^2\to\mathbb{CP}^2$ has odd degree.
+
+:::
+
+:::
+
 :::

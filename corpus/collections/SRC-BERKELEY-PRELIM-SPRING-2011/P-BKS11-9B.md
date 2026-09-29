@@ -43,9 +43,13 @@ are both defined, then they are equal.
 :::
 
 ::: {.solution}
-<1>1. Assertion (a) is false.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #assertion-a-false}
+Assertion (a) is false.
+
+::: pf-proof
 For $n\geq1$, define
 $$
 f_n(x)
@@ -101,9 +105,12 @@ $$
 $$
 :::
 
-<1>2. Assertion (b) is false.
+:::
 
-::: {.proof}
+::: {.pf-step #assertion-b-false}
+Assertion (b) is false.
+
+::: pf-proof
 For nonnegative integers $m,n$, define
 $$
 g(m,n)
@@ -156,9 +163,12 @@ $$
 Both iterated sums are defined, but they are unequal.
 :::
 
-<1>3. Assertion (c) is false.
+:::
 
-::: {.proof}
+::: {.pf-step #assertion-c-false}
+Assertion (c) is false.
+
+::: pf-proof
 For $n\geq1$, define
 $$
 h_n(x)
@@ -187,16 +197,22 @@ $$
 This function is not continuous at $0$.
 :::
 
-<1>4. The three assertions are all false.
+:::
 
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 give explicit counterexamples to parts (a),
+::: {.pf-step #all-false}
+The three assertions are all false.
+
+::: pf-proof
+Steps [](#assertion-a-false){.pf-ref}, [](#assertion-b-false){.pf-ref}, and [](#assertion-c-false){.pf-ref} give explicit counterexamples to parts (a),
 (b), and (c), respectively.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 settles every requested assertion.
 :::
+
+::: pf-qed
+Step [](#all-false){.pf-ref} settles every requested assertion.
+:::
+
+:::
+
 :::

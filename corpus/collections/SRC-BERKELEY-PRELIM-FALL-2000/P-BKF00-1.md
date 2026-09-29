@@ -31,6 +31,7 @@ Prove that the restriction $f|_W:W\to W$ has the same trace as $f:V\to V$.
 :::
 
 ::: {.solution}
+
 Let
 $$
 r=\dim W,
@@ -38,9 +39,12 @@ r=\dim W,
 n=\dim V.
 $$
 
-<1>1. The subspace $W$ is invariant under $f$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #W-f-invariant}
+The subspace $W$ is invariant under $f$.
+
+::: pf-proof
 If $w\in W$, then by definition of $W=\operatorname{im}f$ there is some
 $v\in V$ such that
 $$
@@ -54,7 +58,10 @@ Therefore $f(W)\subseteq W$, so the restriction $f|_W:W\to W$ is an
 endomorphism.
 :::
 
-<1>2. Choose a basis
+:::
+
+::: {.pf-step #basis-extension}
+Choose a basis
 $$
 w_1,\ldots,w_r
 $$
@@ -64,12 +71,15 @@ w_1,\ldots,w_r,u_{r+1},\ldots,u_n
 $$
 of $V$.
 
-::: {.proof}
+::: pf-proof
 This is the basis-extension theorem for the finite-dimensional subspace
 $W\subseteq V$.
 :::
 
-<1>3. Relative to the basis in step <1>2, the matrix of $f$ has the block
+:::
+
+::: {.pf-step #block-matrix-form}
+Relative to the basis in step [](#basis-extension){.pf-ref}, the matrix of $f$ has the block
 form
 $$
 [f]
@@ -82,8 +92,8 @@ $$
 where $A$ is the matrix of $f|_W$ in the basis
 $w_1,\ldots,w_r$.
 
-::: {.proof}
-By step <1>1, each $f(w_i)$ belongs to $W$, so the first $r$ columns have
+::: pf-proof
+By step [](#W-f-invariant){.pf-ref}, each $f(w_i)$ belongs to $W$, so the first $r$ columns have
 zero coordinates in the complementary basis vectors
 $u_{r+1},\ldots,u_n$. Their first $r$ coordinates are exactly the columns
 of the matrix $A$ of $f|_W$.
@@ -95,15 +105,18 @@ $u_{r+1},\ldots,u_n$. Their coordinates in $W$ form the block $B$.
 This gives the displayed matrix.
 :::
 
-<1>4. The two traces are equal:
+:::
+
+::: {.pf-step #traces-equal}
+The two traces are equal:
 $$
 \boxed{
 \operatorname{tr}(f|_W)=\operatorname{tr}(f).
 }
 $$
 
-::: {.proof}
-By step <1>3, the diagonal entries of $[f]$ consist of the diagonal entries
+::: pf-proof
+By step [](#block-matrix-form){.pf-ref}, the diagonal entries of $[f]$ consist of the diagonal entries
 of $A$ followed by $n-r$ zeros. Therefore
 $$
 \operatorname{tr}(f)
@@ -114,9 +127,12 @@ Since $A$ is the matrix of $f|_W$, its trace is
 $\operatorname{tr}(f|_W)$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required equality.
 :::
+
+::: pf-qed
+Step [](#traces-equal){.pf-ref} is the required equality.
+:::
+
+:::
+
 :::

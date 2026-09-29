@@ -61,12 +61,15 @@ $$
 For $g\in A$ and $y\in Y$, the value $g(y)$ is well defined: any two lifts
 of $g$ to $S$ differ by an element of $I(Y)$ and therefore agree on $Y$.
 
-<1>1. (a) For every ideal $J\normal A$,
+::: pf
+
+::: {.pf-step #vy-equals-v-preimage}
+(a) For every ideal $J\normal A$,
 $$
 \boxed{V_Y(J)=V(\pi^{-1}(J)).}
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 I(Y)=\ker\pi\subseteq\pi^{-1}(J),
@@ -89,12 +92,15 @@ $f\in\pi^{-1}(J)$ and evaluation of $g$ at $y$ is evaluation of any such
 lift.
 :::
 
-<1>2. (b) For every affine subvariety $X\subseteq Y$,
+:::
+
+::: {.pf-step #preimage-iy-equals-i}
+(b) For every affine subvariety $X\subseteq Y$,
 $$
 \boxed{\pi^{-1}(I_Y(X))=I(X).}
 $$
 
-::: {.proof}
+::: pf-proof
 For $f\in S$,
 $$
 \begin{aligned}
@@ -107,22 +113,25 @@ f\in\pi^{-1}(I_Y(X))
 $$
 :::
 
-<1>3. (c) For every ideal $J\normal A$,
+:::
+
+::: {.pf-step #iy-vy-subset-radical}
+(c) For every ideal $J\normal A$,
 $$
 \boxed{I_Y(V_Y(J))\subseteq\sqrt J}.
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 g\in I_Y(V_Y(J))
 $$
-and choose a lift $f\in S$ with $\pi(f)=g$. By step <1>2,
+and choose a lift $f\in S$ with $\pi(f)=g$. By step [](#preimage-iy-equals-i){.pf-ref},
 $$
 f\in\pi^{-1}\bigl(I_Y(V_Y(J))\bigr)
 =I(V_Y(J)).
 $$
-By step <1>1,
+By step [](#vy-equals-v-preimage){.pf-ref},
 $$
 V_Y(J)=V(\pi^{-1}(J)),
 $$
@@ -142,7 +151,10 @@ $$
 Thus $g\in\sqrt J$.
 :::
 
-<1>4. The assignments
+:::
+
+::: {.pf-step #inverse-correspondence}
+The assignments
 $$
 X\longmapsto I_Y(X),
 \qquad
@@ -151,7 +163,7 @@ $$
 restrict to mutually inverse correspondences between affine subvarieties of
 $Y$ and radical ideals of $A$.
 
-::: {.proof}
+::: pf-proof
 First, $I_Y(X)$ is radical for every affine subvariety $X\subseteq Y$. If
 $$
 g^m\in I_Y(X),
@@ -159,7 +171,7 @@ $$
 then $g(x)^m=0$ for every $x\in X$, hence $g(x)=0$ for every $x\in X$ and
 therefore $g\in I_Y(X)$.
 
-For every $X\subseteq Y$, steps <1>1--<1>2 give
+For every $X\subseteq Y$, steps [](#vy-equals-v-preimage){.pf-ref} and [](#preimage-iy-equals-i){.pf-ref} give
 $$
 V_Y(I_Y(X))
 =V\bigl(\pi^{-1}(I_Y(X))\bigr)
@@ -174,7 +186,7 @@ Conversely, for every ideal $J\normal A$ one always has
 $$
 J\subseteq I_Y(V_Y(J)).
 $$
-If $J$ is radical, step <1>3 gives
+If $J$ is radical, step [](#iy-vy-subset-radical){.pf-ref} gives
 $$
 I_Y(V_Y(J))
 \subseteq
@@ -190,9 +202,12 @@ for every radical ideal $J$.
 Thus the two assignments are inverse on the stated classes.
 :::
 
-<1>5. The bijection in step <1>4 reverses inclusions.
+:::
 
-::: {.proof}
+::: {.pf-step #inclusion-reversing}
+The bijection in step [](#inverse-correspondence){.pf-ref} reverses inclusions.
+
+::: pf-proof
 If $X_1\subseteq X_2$, every function vanishing on $X_2$ vanishes on
 $X_1$, so
 $$
@@ -206,10 +221,12 @@ $$
 This proves that the bijection is inclusion reversing.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove (a)--(c). Steps <1>4--<1>5 establish the concluding
+::: pf-qed
+Steps [](#vy-equals-v-preimage){.pf-ref}, [](#preimage-iy-equals-i){.pf-ref} and [](#iy-vy-subset-radical){.pf-ref} prove (a)--(c). Steps [](#inverse-correspondence){.pf-ref} and [](#inclusion-reversing){.pf-ref} establish the concluding
 inclusion-reversing bijection.
+:::
+
 :::
 :::

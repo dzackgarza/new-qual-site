@@ -23,33 +23,58 @@ Prove that, if $K$ is a closed subspace of $H$ invariant under the action of $G$
 :::
 
 ::: {.solution}
-<1>1. Let $v \in K^\perp$ and $g \in G$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #fix-v-and-g}
+Let $v \in K^\perp$ and $g \in G$.
+
+::: pf-proof
 take an arbitrary element of $K^\perp$ and an arbitrary group element.
 :::
 
-<1>2. For any $w \in K$, $\langle U(g)v, w \rangle = \langle v, U(g)^* w \rangle = \langle v, U(g)^{-1} w \rangle = \langle v, U(g^{-1}) w \rangle$.
-::: {.proof}
+:::
+
+::: {.pf-step #inner-product-rewrite-via-unitary}
+For any $w \in K$, $\langle U(g)v, w \rangle = \langle v, U(g)^* w \rangle = \langle v, U(g)^{-1} w \rangle = \langle v, U(g^{-1}) w \rangle$.
+
+::: pf-proof
 $U(g)$ is unitary, so $U(g)^* = U(g)^{-1} = U(g^{-1})$.
 :::
 
-<1>3. $U(g^{-1}) w \in K$ (since $K$ is $G$-invariant).
-::: {.proof}
+:::
+
+::: {.pf-step #preimage-in-k}
+$U(g^{-1}) w \in K$ (since $K$ is $G$-invariant).
+
+::: pf-proof
 hypothesis.
 :::
 
-<1>4. Hence $\langle U(g)v, w \rangle = \langle v, U(g^{-1})w \rangle = 0$ (since $v \in K^\perp$).
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. Therefore $U(g)v \in K^\perp$ for all $g \in G$, so $K^\perp$ is $G$-invariant.
-::: {.proof}
-<1>4 (for arbitrary $w \in K$).
+::: {.pf-step #inner-product-vanishes}
+Hence $\langle U(g)v, w \rangle = \langle v, U(g^{-1})w \rangle = 0$ (since $v \in K^\perp$).
+
+::: pf-proof
+Steps [](#inner-product-rewrite-via-unitary){.pf-ref} and [](#preimage-in-k){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
 :::
+
+::: {.pf-step #u-g-v-in-k-perp}
+Therefore $U(g)v \in K^\perp$ for all $g \in G$, so $K^\perp$ is $G$-invariant.
+
+::: pf-proof
+Step [](#inner-product-vanishes){.pf-ref} (for arbitrary $w \in K$).
+:::
+
+:::
+
+::: pf-qed
+Step [](#u-g-v-in-k-perp){.pf-ref}.
+:::
+
+:::
+
 :::

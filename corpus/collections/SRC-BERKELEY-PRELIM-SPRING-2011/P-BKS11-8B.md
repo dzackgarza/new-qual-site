@@ -28,14 +28,18 @@ For $p$ a prime show that the number of non-singular $n \times n$ matrices with 
 :::
 
 ::: {.solution}
-<1>1. The number of nonsingular $n\times n$ matrices over $\FF_p$ is
+
+::: pf
+
+::: pf-step
+The number of nonsingular $n\times n$ matrices over $\FF_p$ is
 $$
 \abs{\operatorname{GL}_n(\FF_p)}
 =
 \prod_{k=0}^{n-1}(p^n-p^k).
 $$
 
-::: {.proof}
+::: pf-proof
 An invertible matrix is the same thing as an ordered basis of
 $\FF_p^n$, given by its columns.
 
@@ -52,7 +56,10 @@ choices. Multiplying these numbers for $k=0,\ldots,n-1$ gives the stated
 formula.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #factored-order}
+One has
 $$
 \abs{\operatorname{GL}_n(\FF_p)}
 =
@@ -60,7 +67,7 @@ p^{n(n-1)/2}
 \prod_{j=1}^n(p^j-1).
 $$
 
-::: {.proof}
+::: pf-proof
 For each $k$,
 $$
 p^n-p^k
@@ -81,7 +88,10 @@ p^{n(n-1)/2}
 $$
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #s-congruence}
+If
 $$
 s\coloneqq\prod_{j=1}^n(p^j-1),
 $$
@@ -90,7 +100,7 @@ $$
 s\equiv(-1)^n\pmod p.
 $$
 
-::: {.proof}
+::: pf-proof
 For every $j\geq1$,
 $$
 p^j-1\equiv-1\pmod p.
@@ -98,30 +108,36 @@ $$
 Multiplying the $n$ congruences gives the claim.
 :::
 
-<1>4. The required exponent is
+:::
+
+::: {.pf-step #exponent-value}
+The required exponent is
 $$
 \boxed{
 r=\frac{n(n-1)}2
 }.
 $$
 
-::: {.proof}
-Step <1>2 gives the representation
+::: pf-proof
+Step [](#factored-order){.pf-ref} gives the representation
 $$
 \abs{\operatorname{GL}_n(\FF_p)}
 =
 p^{n(n-1)/2}s,
 $$
-and step <1>3 gives
+and step [](#s-congruence){.pf-ref} gives
 $$
 s\equiv(-1)^n\pmod p.
 $$
 In particular $p\nmid s$, so the displayed exponent of $p$ is exact.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>4 give the requested form and determine $r$.
 :::
+
+::: pf-qed
+Steps [](#factored-order){.pf-ref}, [](#s-congruence){.pf-ref} and [](#exponent-value){.pf-ref} give the requested form and determine $r$.
+:::
+
+:::
+
 :::

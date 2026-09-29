@@ -36,8 +36,13 @@ Let $F \geq K$ be an extension field of degree 2.
 :::
 
 ::: {.solution}
-<1>1. If $\operatorname{char}K\neq2$, every degree-$2$ extension $F/K$ is Galois.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #char-neq-2-galois}
+If $\operatorname{char}K\neq2$, every degree-$2$ extension $F/K$ is Galois.
+
+::: pf-proof
 Choose
 \[
 \alpha\in F\setminus K.
@@ -71,8 +76,12 @@ Therefore $F$ is the splitting field over $K$ of the separable polynomial $m$.
 So $F/K$ is normal and separable, hence Galois.
 :::
 
-<1>2. There are quadratic Galois extensions in characteristic $2$.
-::: {.proof}
+:::
+
+::: {.pf-step #char-2-galois-example}
+There are quadratic Galois extensions in characteristic $2$.
+
+::: pf-proof
 Take
 \[
 K=\mathbb F_2
@@ -112,8 +121,12 @@ x\longmapsto x^2.
 \]
 :::
 
-<1>3. There are quadratic extensions in characteristic $2$ which are not Galois.
-::: {.proof}
+:::
+
+::: {.pf-step #char-2-not-galois-example}
+There are quadratic extensions in characteristic $2$ which are not Galois.
+
+::: pf-proof
 Let $t$ be transcendental over $\mathbb F_2$, set
 \[
 K=\mathbb F_2(t),
@@ -153,5 +166,13 @@ T^2-t=(T-u)^2.
 \]
 Hence the minimal polynomial of $u$ is inseparable.
 Therefore $F/K$ is not separable and consequently is not Galois.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#char-neq-2-galois){.pf-ref}, [](#char-2-galois-example){.pf-ref}, and [](#char-2-not-galois-example){.pf-ref} answer parts (a), (b), and (c).
+:::
+
 :::
 :::

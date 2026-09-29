@@ -47,9 +47,12 @@ X_n^h\coloneqq
 $$
 for the fixed-point set of $h$.
 
-<1>1. Simultaneous conjugation preserves $X_n$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #conjugation-preserves-xn}
+Simultaneous conjugation preserves $X_n$.
+
+::: pf-proof
 Let $(g_1,\ldots,g_n)\in X_n$ and $h\in G$. For every $i,j$,
 $$
 \begin{aligned}
@@ -63,10 +66,13 @@ Thus the conjugated tuple again has pairwise commuting coordinates and lies
 in $X_n$.
 :::
 
-<1>2. The displayed formula defines an action of $G$ on $X_n$.
+:::
 
-::: {.proof}
-Step <1>1 shows that the formula is well-defined on $X_n$. The identity
+::: {.pf-step #group-action}
+The displayed formula defines an action of $G$ on $X_n$.
+
+::: pf-proof
+Step [](#conjugation-preserves-xn){.pf-ref} shows that the formula is well-defined on $X_n$. The identity
 element acts trivially. For $h,k\in G$ and $(g_1,\ldots,g_n)\in X_n$,
 coordinatewise conjugation gives
 $$
@@ -77,10 +83,13 @@ $$
 These are precisely the two action axioms.
 :::
 
-<1>3. For each $h\in G$, the elements of $X_n^h$ are exactly the pairwise
+:::
+
+::: {.pf-step #fixed-points-characterization}
+For each $h\in G$, the elements of $X_n^h$ are exactly the pairwise
 commuting $n$-tuples whose entries all commute with $h$.
 
-::: {.proof}
+::: pf-proof
 For $(g_1,\ldots,g_n)\in X_n$,
 $$
 h\cdot(g_1,\ldots,g_n)=(g_1,\ldots,g_n)
@@ -92,47 +101,56 @@ $$
 for every $i$, equivalently $hg_i=g_ih$ for every $i$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #sum-formula}
+One has
 $$
 \abs{X_{n+1}}
 =
 \sum_{h\in G}\abs{X_n^h}.
 $$
 
-::: {.proof}
+::: pf-proof
 Partition $X_{n+1}$ according to its last coordinate $h$. For fixed
 $h\in G$, a tuple
 $$
 (g_1,\ldots,g_n,h)
 $$
 belongs to $X_{n+1}$ exactly when $(g_1,\ldots,g_n)\in X_n$ and every
-$g_i$ commutes with $h$. By step <1>3, the possible first $n$ coordinates
+$g_i$ commutes with $h$. By step [](#fixed-points-characterization){.pf-ref}, the possible first $n$ coordinates
 are exactly the elements of $X_n^h$. Thus the fiber with last coordinate
 $h$ has cardinality $\abs{X_n^h}$, and summing over $h$ gives the formula.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #counting-identity}
+One has
 $$
 \abs{X_{n+1}}
 =
 \boxed{\abs G\,\abs{X_n/G}}.
 $$
 
-::: {.proof}
-Burnside's lemma applied to the action in step <1>2 gives
+::: pf-proof
+Burnside's lemma applied to the action in step [](#group-action){.pf-ref} gives
 $$
 \abs{X_n/G}
 =
 \frac{1}{\abs G}
 \sum_{h\in G}\abs{X_n^h}.
 $$
-Multiplying by $\abs G$ and applying step <1>4 yields the stated identity.
+Multiplying by $\abs G$ and applying step [](#sum-formula){.pf-ref} yields the stated identity.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves the action assertion, and step <1>5 proves the required
+::: pf-qed
+Step [](#group-action){.pf-ref} proves the action assertion, and step [](#counting-identity){.pf-ref} proves the required
 counting identity.
 :::
+
+:::
+
 :::

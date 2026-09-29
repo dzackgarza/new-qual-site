@@ -29,8 +29,13 @@ u\longmapsto (u,0)\in\mathbb R^p\times\mathbb R^{n-p}.
 :::
 
 ::: {.solution}
-<1>1. Choose $p$ target coordinates with an invertible Jacobian minor.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Choose $p$ target coordinates with an invertible Jacobian minor.
+
+::: pf-proof
 Since $Df_{x_0}$ has rank $p$, some $p\times p$ minor is invertible. After permuting the coordinates of $\mathbb R^n$, assume it is the minor formed by the first $p$ components. Write
 \[
 F=(f_1,\ldots,f_p):U\to\mathbb R^p.
@@ -38,8 +43,12 @@ F=(f_1,\ldots,f_p):U\to\mathbb R^p.
 Then $DF_{x_0}$ is invertible.
 :::
 
-<1>2. Use $F$ as a coordinate system on the domain.
-::: {.proof}
+:::
+
+::: pf-step
+Use $F$ as a coordinate system on the domain.
+
+::: pf-proof
 By the inverse function theorem, there are neighborhoods $V$ of $x_0$ and $W$ of $F(x_0)$ such that
 \[
 F:V\to W
@@ -56,8 +65,12 @@ where
 \]
 :::
 
-<1>3. Straighten the graph in the target.
-::: {.proof}
+:::
+
+::: pf-step
+Straighten the graph in the target.
+
+::: pf-proof
 Near $(F(x_0),\phi(F(x_0)))=f(x_0)$ define
 \[
 \Psi(u,v)=(u,v-\phi(u)),
@@ -79,8 +92,12 @@ which is invertible everywhere. In fact the inverse is explicitly
 Thus $\Psi$ is a local $C^1$ change of target coordinates.
 :::
 
-<1>4. Compute the map in the new coordinates.
-::: {.proof}
+:::
+
+::: pf-step
+Compute the map in the new coordinates.
+
+::: pf-proof
 For $u\in W$,
 \[
 \Psi(f(H(u)))
@@ -91,5 +108,9 @@ Hence, after the domain coordinate change $x\mapsto F(x)$ and the target coordin
 \[
 u\mapsto(u,0).
 \]
+:::
+
+:::
+
 :::
 :::

@@ -40,31 +40,75 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Statement of the Dominated Convergence Theorem.
-    <2>1. Let $\{f_n\}$ be measurable on a Lebesgue measurable set $E$, converging almost everywhere to $f$, with $|f_n| \leq g$ a.e. for all $n$, where $g \geq 0$ is integrable on $E$. Then $f$ is integrable, $|f_n-f|\to0$ in $L^1(E)$, and in particular $\int_E f_n\to\int_E f$.
-        ::: {.proof}
-        This is Lebesgue's dominated convergence theorem. Part (2) replaces almost-everywhere convergence by convergence in measure through a subsequence argument.
-        :::
 
-<1>2. Proof of part (2): convergence in measure plus domination forces $\int_E |f_n - f| \to 0$.
-    <2>1. Some subsequence $f_{n_k} \to f$ a.e. on $E$.
-        ::: {.proof}
-        Since $f_n \to f$ in measure, choose indices $n_1 < n_2 < \cdots$ with $m\theset{|f_{n_k} - f| > 2^{-k}} < 2^{-k}$. The sets $B_k = \theset{|f_{n_k} - f| > 2^{-k}}$ satisfy $\sum_k m(B_k) < \infty$, so Borel–Cantelli gives $m(\limsup_k B_k) = 0$; outside $\limsup_k B_k$, $f_{n_k}(x) \to f(x)$.
-        :::
-    <2>2. $|f| \leq g$ a.e., so $f$ is integrable and $|f_{n_k} - f| \leq 2g$ a.e.
-        ::: {.proof}
-        Pass to the a.e. limit in $|f_{n_k}| \leq g$ using <2>1; then $|f_{n_k} - f| \leq |f_{n_k}| + |f| \leq 2g$ a.e., and $2g$ is integrable.
-        :::
-    <2>3. $\int_E |f_{n_k} - f| \to 0$.
-        ::: {.proof}
-        Apply the dominated convergence theorem to $h_k := |f_{n_k} - f|$: by <2>1 and <2>2, $h_k \to 0$ a.e. with $|h_k| \leq 2g$ integrable; the theorem's conclusion gives $\int_E h_k \to 0$.
-        :::
-    <2>4. The full sequence satisfies $\int_E |f_n - f| \to 0$.
-        ::: {.proof}
-        If not, some $\varepsilon > 0$ and subsequence have $\int_E |f_{n_j} - f| \geq \varepsilon$. Applying <2>1 to that subsequence yields a further subsequence converging a.e., and <2>3 gives $\int |f_{n_{j_l}} - f| \to 0$, contradicting $\geq \varepsilon$. Hence the whole sequence converges to $0$.
-        :::
-    <2>5. Q.E.D.
-        ::: {.proof}
-        <2>4 is the desired conclusion of part (2).
-        :::
+::: pf
+
+::: pf-step
+Statement of the Dominated Convergence Theorem.
+
+::: pf-proof
+
+::: pf-step
+Let $\{f_n\}$ be measurable on a Lebesgue measurable set $E$, converging almost everywhere to $f$, with $|f_n| \leq g$ a.e. for all $n$, where $g \geq 0$ is integrable on $E$. Then $f$ is integrable, $|f_n-f|\to0$ in $L^1(E)$, and in particular $\int_E f_n\to\int_E f$.
+
+::: pf-proof
+This is Lebesgue's dominated convergence theorem. Part (2) replaces almost-everywhere convergence by convergence in measure through a subsequence argument.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+Proof of part (2): convergence in measure plus domination forces $\int_E |f_n - f| \to 0$.
+
+::: pf-proof
+
+::: {.pf-step #subsequence-converges-ae}
+Some subsequence $f_{n_k} \to f$ a.e. on $E$.
+
+::: pf-proof
+Since $f_n \to f$ in measure, choose indices $n_1 < n_2 < \cdots$ with $m\theset{|f_{n_k} - f| > 2^{-k}} < 2^{-k}$. The sets $B_k = \theset{|f_{n_k} - f| > 2^{-k}}$ satisfy $\sum_k m(B_k) < \infty$, so Borel–Cantelli gives $m(\limsup_k B_k) = 0$; outside $\limsup_k B_k$, $f_{n_k}(x) \to f(x)$.
+:::
+
+:::
+
+::: {.pf-step #f-integrable-and-dominated}
+$|f| \leq g$ a.e., so $f$ is integrable and $|f_{n_k} - f| \leq 2g$ a.e.
+
+::: pf-proof
+Pass to the a.e. limit in $|f_{n_k}| \leq g$ using step [](#subsequence-converges-ae){.pf-ref}; then $|f_{n_k} - f| \leq |f_{n_k}| + |f| \leq 2g$ a.e., and $2g$ is integrable.
+:::
+
+:::
+
+::: {.pf-step #subsequence-integral-to-zero}
+$\int_E |f_{n_k} - f| \to 0$.
+
+::: pf-proof
+Apply the dominated convergence theorem to $h_k := |f_{n_k} - f|$: by steps [](#subsequence-converges-ae){.pf-ref} and [](#f-integrable-and-dominated){.pf-ref}, $h_k \to 0$ a.e. with $|h_k| \leq 2g$ integrable; the theorem's conclusion gives $\int_E h_k \to 0$.
+:::
+
+:::
+
+::: {.pf-step #full-sequence-integral-to-zero}
+The full sequence satisfies $\int_E |f_n - f| \to 0$.
+
+::: pf-proof
+If not, some $\varepsilon > 0$ and subsequence have $\int_E |f_{n_j} - f| \geq \varepsilon$. Applying step [](#subsequence-converges-ae){.pf-ref} to that subsequence yields a further subsequence converging a.e., and step [](#subsequence-integral-to-zero){.pf-ref} gives $\int |f_{n_{j_l}} - f| \to 0$, contradicting $\geq \varepsilon$. Hence the whole sequence converges to $0$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#full-sequence-integral-to-zero){.pf-ref} is the desired conclusion of part (2).
+:::
+
+:::
+
+:::
+
+:::
 :::

@@ -29,7 +29,10 @@ How can you tell if a scheme is affine?
 ::: {.solution}
 There are three standard answers, depending on what information about the scheme is available.
 
-<1>1. The intrinsic recognition map is
+::: pf
+
+::: {.pf-step #recognition-criterion}
+The intrinsic recognition map is
 \[
 \eta_X:X\longrightarrow\operatorname{Spec}\Gamma(X,\mathcal O_X).
 \]
@@ -41,7 +44,8 @@ X\text{ is affine}
 \eta_X\text{ is an isomorphism}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 For every scheme $X$ and ring $A$ there is a natural bijection
 \[
 \operatorname{Hom}_{\mathrm{Sch}}(X,\operatorname{Spec}A)
@@ -57,7 +61,10 @@ If $X=\operatorname{Spec}B$ is affine, then
 and $\eta_X$ is the identity after this identification.  Conversely, if $\eta_X$ is an isomorphism, then $X$ is isomorphic to the spectrum of a ring and hence is affine.
 :::
 
-<1>2. For a Noetherian scheme, Serre's cohomological criterion says
+:::
+
+::: {.pf-step #serre-criterion}
+For a Noetherian scheme, Serre's cohomological criterion says
 \[
 \boxed{
 X\text{ affine}
@@ -73,11 +80,15 @@ H^1(X,\mathcal I)=0
 }
 \]
 for every coherent ideal sheaf $\mathcal I\subseteq\mathcal O_X$.
-::: {.proof}
+
+::: pf-proof
 This is Serre's criterion for affineness.  The forward direction is affine vanishing for quasicoherent sheaves.  The converse is the criterion proper; in the ideal-sheaf form it produces enough global functions to cover $X$ by affine global-principal opens and then shows those functions generate the unit ideal.
 :::
 
-<1>3. A concrete version of the same argument is the following.  Suppose $X$ is Noetherian and there are global functions
+:::
+
+::: {.pf-step #global-principal-criterion}
+A concrete version of the same argument is the following.  Suppose $X$ is Noetherian and there are global functions
 \[
 f_1,\ldots,f_r\in A:=\Gamma(X,\mathcal O_X)
 \]
@@ -90,7 +101,8 @@ for some $a_i\in A$ and every open
 X_{f_i}=\{x\in X:(f_i)_x\in\mathcal O_{X,x}^{\times}\}
 \]
 is affine.  Then $X$ is affine.
-::: {.proof}
+
+::: pf-proof
 The equation $\sum_i a_if_i=1$ implies that the $X_{f_i}$ cover $X$.
 
 Because $X$ is Noetherian, it is quasicompact and quasiseparated, so restriction gives
@@ -107,16 +119,20 @@ restricts to an isomorphism
 \[
 X_{f_i}\xrightarrow{\sim}D(f_i).
 \]
-The equation $\sum_i a_if_i=1$ also says that the distinguished opens $D(f_i)$ cover $\operatorname{Spec}A$.  Thus $\eta_X$ is an isomorphism on open covers of source and target, hence globally.  Apply <1>1.
+The equation $\sum_i a_if_i=1$ also says that the distinguished opens $D(f_i)$ cover $\operatorname{Spec}A$.  Thus $\eta_X$ is an isomorphism on open covers of source and target, hence globally.  Apply step [](#recognition-criterion){.pf-ref}.
 :::
 
-<1>4. The projective line and the punctured affine plane are not affine: for both, the map $\eta_X$ of <1>1 is not an isomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+The projective line and the punctured affine plane are not affine: for both, the map $\eta_X$ of step [](#recognition-criterion){.pf-ref} is not an isomorphism.
+
+::: pf-proof
 For the projective line,
 \[
 \Gamma(\mathbb P^1_k,\mathcal O)=k,
 \]
-so the canonical map in <1>1 is
+so the canonical map in step [](#recognition-criterion){.pf-ref} is
 \[
 \mathbb P^1_k\longrightarrow\operatorname{Spec}k,
 \]
@@ -129,8 +145,11 @@ For $X=\mathbb A^2_k\setminus\{0\}$, Hartogs extension gives
 so $\eta_X$ is the open immersion $X\hookrightarrow\mathbb A^2_k$, which misses the origin and is not an isomorphism.  Thus $X$ is not affine, although its ring of global functions is the coordinate ring of an affine scheme.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>1 is the formal recognition criterion, step <1>2 is Serre's cohomological criterion, and step <1>3 is the global-principal version used in its proof.
+:::
+
+::: pf-qed
+Step [](#recognition-criterion){.pf-ref} is the formal recognition criterion, step [](#serre-criterion){.pf-ref} is Serre's cohomological criterion, and step [](#global-principal-criterion){.pf-ref} is the global-principal version used in its proof.
+:::
+
 :::
 :::

@@ -34,8 +34,13 @@ Give a proof or a counterexample.
 :::
 
 ::: {.solution}
-<1>1. If $X$ is locally path connected, every path component of $X$ is open.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #path-components-open}
+If $X$ is locally path connected, every path component of $X$ is open.
+
+::: pf-proof
 Let $C$ be a path component and let $x\in C$.
 Local path connectedness gives an open path-connected neighborhood $U_x$ of $x$.
 Every point of $U_x$ can be joined to $x$ by a path in $U_x$, so every point of $U_x$ lies in the same path component as $x$.
@@ -46,14 +51,21 @@ U_x\subseteq C.
 Since this holds at every $x\in C$, the component $C$ is open.
 :::
 
-<1>2. If $X$ is connected and locally path connected, then $X$ is path connected.
-::: {.proof}
-The path components partition $X$, and by <1>1 every component is open.
+:::
+
+::: {.pf-step #connected-lpc-path-connected}
+If $X$ is connected and locally path connected, then $X$ is path connected.
+
+::: pf-proof
+The path components partition $X$, and by step [](#path-components-open){.pf-ref} every component is open.
 If there were at least two components, one component and the union of all the others would be disjoint nonempty open sets whose union is $X$, contradicting connectedness.
 Thus $X$ has one path component.
 :::
 
-<1>3. The comb space
+:::
+
+::: {.pf-step #comb-space-path-connected}
+The comb space
 \[
 X=([0,1]\times\{0\})
 \cup(\{0\}\times[0,1])
@@ -61,17 +73,22 @@ X=([0,1]\times\{0\})
 \subseteq\RR^2.
 \]
 is path connected.
-::: {.proof}
+
+::: pf-proof
 Every point on a vertical segment can be joined vertically to the base $[0,1]\times\{0\}$.
 The base is itself path connected and meets every vertical segment.
 Concatenating these paths joins any two points of $X$.
 :::
 
-<1>4. The comb space in <1>3 is not locally path connected at
+:::
+
+::: {.pf-step #comb-space-not-lpc}
+The comb space in step [](#comb-space-path-connected){.pf-ref} is not locally path connected at
 \[
 p=(0,1/2).
 \]
-::: {.proof}
+
+::: pf-proof
 Let
 \[
 U=X\cap B_{1/4}(p).
@@ -100,8 +117,21 @@ A path from $p$ to $q_n$ would therefore have to meet the base, contrary to the 
 Therefore $U$ contains no path-connected neighborhood of $p$, so $X$ is not locally path connected at $p$.
 :::
 
-<1>5. The converse in part (b) is false.
-::: {.proof}
-By <1>3 the comb space is path connected, while by <1>4 it is not locally path connected.
 :::
+
+::: {.pf-step #converse-false}
+The converse in part (b) is false.
+
+::: pf-proof
+By step [](#comb-space-path-connected){.pf-ref} the comb space is path connected, while by step [](#comb-space-not-lpc){.pf-ref} it is not locally path connected.
+:::
+
+:::
+
+::: pf-qed
+Step [](#connected-lpc-path-connected){.pf-ref} answers part (a), and step [](#converse-false){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

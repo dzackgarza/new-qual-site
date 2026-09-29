@@ -19,8 +19,13 @@ What are the commensurability classes of closed (not necessarily orientable) $2$
 :::
 
 ::: {.solution}
-<1>1. The sign of Euler characteristic is invariant under commensurability.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #sign-invariant}
+The sign of Euler characteristic is invariant under commensurability.
+
+::: pf-proof
 If $X\to Y$ is a finite covering of degree $d$, then
 $$
 \chi(X)=d\chi(Y).
@@ -28,23 +33,39 @@ $$
 Hence positive, zero, and negative Euler characteristic cannot mix under finite covers or under the equivalence relation they generate.
 :::
 
-<1>2. The closed surfaces with positive Euler characteristic, namely $S^2$ and $\mathbb{RP}^2$, form one commensurability class.
-::: {.proof}
+:::
+
+::: {.pf-step #positive-class}
+The closed surfaces with positive Euler characteristic, namely $S^2$ and $\mathbb{RP}^2$, form one commensurability class.
+
+::: pf-proof
 The antipodal quotient $S^2\to\mathbb{RP}^2$ is a two-sheeted covering.
 :::
 
-<1>3. The closed surfaces with Euler characteristic zero, namely $T^2$ and the Klein bottle $K$, form one class.
-::: {.proof}
+:::
+
+::: {.pf-step #zero-class}
+The closed surfaces with Euler characteristic zero, namely $T^2$ and the Klein bottle $K$, form one class.
+
+::: pf-proof
 The torus is the orientation double cover of the Klein bottle.
 :::
 
-<1>4. Every closed nonorientable surface with negative Euler characteristic is commensurable with a closed orientable surface of genus at least $2$.
-::: {.proof}
+:::
+
+::: {.pf-step #negative-nonorientable-commensurable}
+Every closed nonorientable surface with negative Euler characteristic is commensurable with a closed orientable surface of genus at least $2$.
+
+::: pf-proof
 Its orientation double cover is orientable, finite-sheeted, and has Euler characteristic twice the negative Euler characteristic of the original surface, hence genus at least $2$.
 :::
 
-<1>5. Any two closed orientable surfaces $\Sigma_g,\Sigma_h$ with $g,h\ge2$ are commensurable.
-::: {.proof}
+:::
+
+::: {.pf-step #negative-orientable-commensurable}
+Any two closed orientable surfaces $\Sigma_g,\Sigma_h$ with $g,h\ge2$ are commensurable.
+
+::: pf-proof
 For every $d\ge1$, $\pi_1(\Sigma_g)$ surjects onto $\mathbb Z/d$, so it has a connected subgroup of index $d$ and hence a connected degree-$d$ cover. Such a cover has genus
 $$
 1+d(g-1).
@@ -60,11 +81,20 @@ $$
 so they are homeomorphic and give a common finite cover.
 :::
 
-<1>6. Therefore there are exactly three commensurability classes:
+:::
+
+::: pf-step
+Therefore there are exactly three commensurability classes:
 $$
 \boxed{\chi>0,\qquad \chi=0,\qquad \chi<0.}
 $$
-::: {.proof}
-Existence within each sign class is <1>2--<1>5, while <1>1 separates the three classes.
+
+::: pf-proof
+Existence within each sign class is steps [](#positive-class){.pf-ref}, [](#zero-class){.pf-ref}, [](#negative-nonorientable-commensurable){.pf-ref} and [](#negative-orientable-commensurable){.pf-ref}, while step [](#sign-invariant){.pf-ref} separates the three classes.
 :::
+
+:::
+
+:::
+
 :::

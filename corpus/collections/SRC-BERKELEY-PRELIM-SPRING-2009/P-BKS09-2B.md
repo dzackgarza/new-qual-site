@@ -32,10 +32,13 @@ Prove that the condition $B A - A B = A$ implies that A is nilpotent.
 ::: {.solution}
 Let $K$ be the ground field.
 
-<1>1. It suffices to prove the result after extending scalars from $K$ to an
+::: pf
+
+::: {.pf-step #reduce-to-closure}
+It suffices to prove the result after extending scalars from $K$ to an
 algebraic closure $\overline K$.
 
-::: {.proof}
+::: pf-proof
 The relation
 $$
 BA-AB=A
@@ -46,11 +49,14 @@ already lie in $K$, is zero over $K$. Thus nilpotence after scalar extension
 implies nilpotence over the original field.
 :::
 
-<1>2. Suppose the ground field is algebraically closed. If $v$ is an
+:::
+
+::: {.pf-step #eigenvector-shift}
+Suppose the ground field is algebraically closed. If $v$ is an
 eigenvector of $B$ with eigenvalue $\lambda$ and $Av\neq0$, then $Av$ is
 an eigenvector of $B$ with eigenvalue $\lambda+1$.
 
-::: {.proof}
+::: pf-proof
 The given relation is equivalent to
 $$
 BA=A(B+I).
@@ -67,11 +73,14 @@ If $Av\neq0$, this says exactly that $Av$ is an eigenvector with the stated
 eigenvalue.
 :::
 
-<1>3. Under the hypotheses of step <1>2, the kernel of $A$ is nonzero.
+:::
 
-::: {.proof}
+::: {.pf-step #kernel-nonzero}
+Under the hypotheses of step [](#eigenvector-shift){.pf-ref}, the kernel of $A$ is nonzero.
+
+::: pf-proof
 Because the field is algebraically closed, $B$ has an eigenvector
-$v\neq0$, say $Bv=\lambda v$. Repeated application of step <1>2 shows
+$v\neq0$, say $Bv=\lambda v$. Repeated application of step [](#eigenvector-shift){.pf-ref} shows
 that, as long as $A^rv\neq0$, the vector $A^rv$ is an eigenvector of $B$
 with eigenvalue
 $$
@@ -90,9 +99,12 @@ $$
 is nonzero and satisfies $Aw=0$. Hence $\ker A\neq0$.
 :::
 
-<1>4. The subspace $W\coloneqq\ker A$ is invariant under $B$.
+:::
 
-::: {.proof}
+::: {.pf-step #kernel-b-invariant}
+The subspace $W\coloneqq\ker A$ is invariant under $B$.
+
+::: pf-proof
 Rearranging the relation gives
 $$
 AB=BA-A.
@@ -108,15 +120,18 @@ $$
 Thus $Bw\in W$.
 :::
 
-<1>5. Over an algebraically closed field, $A$ is nilpotent.
+:::
 
-::: {.proof}
+::: {.pf-step #nilpotent-over-closure}
+Over an algebraically closed field, $A$ is nilpotent.
+
+::: pf-proof
 Proceed by induction on $n$. The assertion is immediate for $n=0$. Assume
-$n>0$. By step <1>3, the subspace
+$n>0$. By step [](#kernel-nonzero){.pf-ref}, the subspace
 $$
 W=\ker A
 $$
-is nonzero, and by step <1>4 it is invariant under both $A$ and $B$.
+is nonzero, and by step [](#kernel-b-invariant){.pf-ref} it is invariant under both $A$ and $B$.
 Therefore $A$ and $B$ induce endomorphisms $\overline A,\overline B$ on
 the quotient $V/W$, where $V=\overline K^n$. Passing the relation to the
 quotient gives
@@ -142,16 +157,22 @@ $$
 So $A$ is nilpotent.
 :::
 
-<1>6. The original matrix $A$ over $K$ is nilpotent.
-
-::: {.proof}
-Step <1>5 proves nilpotence after extending scalars to $\overline K$.
-Step <1>1 then descends the same matrix identity $A^N=0$ to $K$.
 :::
 
-<1>7. Q.E.D.
+::: {.pf-step #nilpotent-conclusion}
+The original matrix $A$ over $K$ is nilpotent.
 
-::: {.proof}
-Step <1>6 is the required conclusion.
+::: pf-proof
+Step [](#nilpotent-over-closure){.pf-ref} proves nilpotence after extending scalars to $\overline K$.
+Step [](#reduce-to-closure){.pf-ref} then descends the same matrix identity $A^N=0$ to $K$.
 :::
+
+:::
+
+::: pf-qed
+Step [](#nilpotent-conclusion){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

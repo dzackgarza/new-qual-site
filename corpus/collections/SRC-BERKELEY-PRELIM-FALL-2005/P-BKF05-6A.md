@@ -38,19 +38,23 @@ B^2=A.
 :::
 
 ::: {.solution}
+
 Set
 $$
 N=A-I.
 $$
 Then $N$ is a real matrix and $N^m=0$.
 
-<1>1. There is a polynomial $P\in\RR[x]$ such that
+::: pf
+
+::: {.pf-step #taylor-poly-square-identity}
+There is a polynomial $P\in\RR[x]$ such that
 $$
 P(x)^2=1+x+x^mQ(x)
 $$
 for some $Q\in\RR[x]$.
 
-::: {.proof}
+::: pf-proof
 Let $P$ be the Taylor polynomial of degree $m-1$ at $0$ for
 $$
 h(x)=\sqrt{1+x}.
@@ -87,25 +91,31 @@ $$
 for some $Q\in\RR[x]$.
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #B-real-matrix}
+Define
 $$
 B=P(N).
 $$
 Then $B$ is a real $n\times n$ matrix.
 
-::: {.proof}
-The matrix $N$ has real entries, and step <1>1 gives
+::: pf-proof
+The matrix $N$ has real entries, and step [](#taylor-poly-square-identity){.pf-ref} gives
 $P\in\RR[x]$. Therefore the polynomial expression $P(N)$ has real
 entries and the same size as $N$.
 :::
 
-<1>3. The matrix $B$ satisfies
+:::
+
+::: {.pf-step #B-squared-equals-A}
+The matrix $B$ satisfies
 $$
 B^2=A.
 $$
 
-::: {.proof}
-Substitute $N$ into the polynomial identity from step <1>1:
+::: pf-proof
+Substitute $N$ into the polynomial identity from step [](#taylor-poly-square-identity){.pf-ref}:
 $$
 \begin{aligned}
 B^2
@@ -125,19 +135,25 @@ $$
 because $N^m=0$.
 :::
 
-<1>4. Hence a real square root of $A$ is
+:::
+
+::: {.pf-step #real-square-root}
+Hence a real square root of $A$ is
 $$
 \boxed{B=P(A-I)}.
 $$
 
-::: {.proof}
-Step <1>2 shows that $B$ is real, and step <1>3 shows that
+::: pf-proof
+Step [](#B-real-matrix){.pf-ref} shows that $B$ is real, and step [](#B-squared-equals-A){.pf-ref} shows that
 $B^2=A$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required real matrix.
 :::
+
+::: pf-qed
+Step [](#real-square-root){.pf-ref} gives the required real matrix.
+:::
+
+:::
+
 :::

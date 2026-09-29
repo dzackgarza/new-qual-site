@@ -44,22 +44,30 @@ Define the connected component of $x$ to be
 K_x=\bigcup_{C\in\mathcal C_x}C.
 \]
 
-<1>1. The family $\mathcal C_x$ is nonempty.
-::: {.proof}
+::: pf
+
+::: {.pf-step #cx-nonempty}
+The family $\mathcal C_x$ is nonempty.
+
+::: pf-proof
 The singleton $\{x\}$ is connected and contains $x$, so
 \[
 \{x\}\in\mathcal C_x.
 \]
 :::
 
-<1>2. The set $K_x$ is connected.
-::: {.proof}
+:::
+
+::: {.pf-step #kx-connected}
+The set $K_x$ is connected.
+
+::: pf-proof
 Suppose, for contradiction, that
 \[
 K_x=U\cup V
 \]
 is a separation of $K_x$, so $U$ and $V$ are disjoint nonempty sets open in the subspace $K_x$.
-By <1>1, $x\in K_x$.
+By step [](#cx-nonempty){.pf-ref}, $x\in K_x$.
 Since $U$ and $V$ are disjoint and cover $K_x$, exactly one contains $x$; after interchanging them if necessary, assume
 \[
 x\in U.
@@ -90,8 +98,12 @@ so $V=\varnothing$, contradicting that $U,V$ form a separation.
 Thus $K_x$ is connected.
 :::
 
-<1>3. The set $K_x$ is maximal among connected subsets of $X$ containing $x$.
-::: {.proof}
+:::
+
+::: {.pf-step #kx-maximal}
+The set $K_x$ is maximal among connected subsets of $X$ containing $x$.
+
+::: pf-proof
 Let $D\subseteq X$ be connected with
 \[
 K_x\subseteq D.
@@ -108,17 +120,26 @@ Together with $K_x\subseteq D$, this gives $D=K_x$.
 Thus no strictly larger connected subset containing $x$ exists.
 :::
 
-<1>4. Consequently, connected components are exactly the maximal connected subsets of $X$, and every connected component is connected.
-::: {.proof}
-By <1>2--<1>3, $K_x$ is connected and maximal connected for every $x\in X$.
+:::
+
+::: pf-step
+Consequently, connected components are exactly the maximal connected subsets of $X$, and every connected component is connected.
+
+::: pf-proof
+By steps [](#kx-connected){.pf-ref} and [](#kx-maximal){.pf-ref}, $K_x$ is connected and maximal connected for every $x\in X$.
 Conversely, if $M\subseteq X$ is maximal connected and $x\in M$, then $M\in\mathcal C_x$, so
 \[
 M\subseteq K_x.
 \]
-Since $K_x$ is connected by <1>2 and contains $M$, maximality of $M$ gives
+Since $K_x$ is connected by step [](#kx-connected){.pf-ref} and contains $M$, maximality of $M$ gives
 \[
 M=K_x.
 \]
 Hence the two standard descriptions agree, and in particular every connected component is connected.
 :::
+
+:::
+
+:::
+
 :::

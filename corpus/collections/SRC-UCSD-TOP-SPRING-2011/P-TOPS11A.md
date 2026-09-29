@@ -19,32 +19,54 @@ Show that $f$ is homotopic to $g$.
 :::
 
 ::: {.solution}
-<1>1. For $x\in X$ and $t\in I$, define
+
+::: pf
+
+::: pf-step
+For $x\in X$ and $t\in I$, define
 $$
 H(x,t)=\frac{(1-t)f(x)+t g(x)}{\|(1-t)f(x)+t g(x)\|}.
 $$
-::: {.proof}
+
+::: pf-proof
 We regard $S^2$ as the unit sphere in $\mathbb R^3$.
 :::
 
-<1>2. The denominator never vanishes.
-::: {.proof}
+:::
+
+::: {.pf-step #denominator-nonvanishing}
+The denominator never vanishes.
+
+::: pf-proof
 If $(1-t)f(x)+t g(x)=0$, then the two unit vectors $f(x)$ and $g(x)$ are collinear with opposite directions. Since their norms are equal, this forces $t=1/2$ and $g(x)=-f(x)$, contrary to the hypothesis.
 :::
 
-<1>3. Hence $H$ is a continuous map $X\times I\to S^2$ with
+:::
+
+::: pf-step
+Hence $H$ is a continuous map $X\times I\to S^2$ with
 $$
 H(x,0)=f(x),\qquad H(x,1)=g(x).
 $$
-::: {.proof}
-Continuity follows from <1>2, and the endpoint formulas are immediate.
+
+::: pf-proof
+Continuity follows from step [](#denominator-nonvanishing){.pf-ref}, and the endpoint formulas are immediate.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{f\simeq g.}
 $$
-::: {.proof}
+
+::: pf-proof
 The map $H$ is the required homotopy.
 :::
+
+:::
+
+:::
+
 :::

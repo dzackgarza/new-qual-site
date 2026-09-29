@@ -38,13 +38,17 @@ where \(S\) is an \(r\times r\) diagonal matrix whose diagonal entries are all \
 :::
 
 ::: {.solution}
-<1>1. The matrix $P$ is diagonalizable over $\RR$, and every
+
+::: pf
+
+::: {.pf-step #P-diagonalizable-eigenvalues}
+The matrix $P$ is diagonalizable over $\RR$, and every
 eigenvalue of $P$ belongs to
 $$
 \{0,1,-1\}.
 $$
 
-::: {.proof}
+::: pf-proof
 The relation $P^3=P$ says that $P$ is annihilated by
 $$
 q(t)=t^3-t=t(t-1)(t+1).
@@ -55,7 +59,10 @@ $P$ is diagonalizable over $\RR$. Every eigenvalue is a root of
 $q$, giving the displayed set.
 :::
 
-<1>2. There is an invertible matrix $T\in\RR^{n\times n}$ such that
+:::
+
+::: {.pf-step #T-J-decomposition}
+There is an invertible matrix $T\in\RR^{n\times n}$ such that
 $$
 P=TJT^{-1},
 \qquad
@@ -68,14 +75,17 @@ $$
 where $S$ is an $r\times r$ diagonal matrix with diagonal entries
 all equal to $\pm1$.
 
-::: {.proof}
-By step <1>1, choose an eigenbasis for $P$. Since
+::: pf-proof
+By step [](#P-diagonalizable-eigenvalues){.pf-ref}, choose an eigenbasis for $P$. Since
 $r=\operatorname{rank}P$, exactly $r$ diagonal entries in a diagonal
 form of $P$ are nonzero. Reorder the eigenbasis so those entries come
 first. They are all $\pm1$, giving the displayed block form.
 :::
 
-<1>3. Write
+:::
+
+::: {.pf-step #U-V-block-decomposition}
+Write
 $$
 T=
 \begin{pmatrix}
@@ -93,18 +103,21 @@ Z^T
 $$
 with $V^T$ the first $r$ rows of $T^{-1}$.
 
-::: {.proof}
+::: pf-proof
 This is simply the block decomposition of $T$ and $T^{-1}$ conforming
-to the block sizes $r$ and $n-r$ in step <1>2. In particular
+to the block sizes $r$ and $n-r$ in step [](#T-J-decomposition){.pf-ref}. In particular
 $V\in\RR^{n\times r}$.
 :::
 
-<1>4. The matrices $U$ and $V$ satisfy
+:::
+
+::: {.pf-step #VtU-identity}
+The matrices $U$ and $V$ satisfy
 $$
 \boxed{V^TU=I_r}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $T^{-1}T=I_n$, the upper-left $r\times r$ block of the product
 is
 $$
@@ -113,13 +126,16 @@ $$
 The corresponding block of $I_n$ is $I_r$, proving the claim.
 :::
 
-<1>5. The same matrices satisfy
+:::
+
+::: {.pf-step #P-equals-USVt}
+The same matrices satisfy
 $$
 \boxed{P=USV^T}.
 $$
 
-::: {.proof}
-Using the block forms from steps <1>2--<1>3,
+::: pf-proof
+Using the block forms from steps [](#T-J-decomposition){.pf-ref} and [](#U-V-block-decomposition){.pf-ref},
 $$
 \begin{aligned}
 P
@@ -140,10 +156,13 @@ USV^T.
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2, <1>4, and <1>5 give the required matrices and diagonal
+::: pf-qed
+Steps [](#T-J-decomposition){.pf-ref}, [](#VtU-identity){.pf-ref}, and [](#P-equals-USVt){.pf-ref} give the required matrices and diagonal
 matrix $S$.
 :::
+
+:::
+
 :::

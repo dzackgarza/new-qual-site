@@ -33,8 +33,13 @@ Is $h$ necessarily uniformly continuous? Prove it or give a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Choose compactly supported $L^1$ functions with an integrable singularity.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Choose compactly supported $L^1$ functions with an integrable singularity.
+
+::: pf-proof
 Let
 \[
 f(x)=g(x)=x^{-2/3}\mathbf 1_{(0,1)}(x).
@@ -46,8 +51,12 @@ Then $f,g\in L^1(\mathbb R)$ because
 and both supports are contained in the compact interval $[0,1]$.
 :::
 
-<1>2. Compute the convolution near the origin.
-::: {.proof}
+:::
+
+::: pf-step
+Compute the convolution near the origin.
+
+::: pf-proof
 For $0<x<1$, the integrand is nonzero exactly when $0<y<x$, so
 \[
 (f*g)(x)
@@ -64,6 +73,10 @@ The integral is the finite positive beta value $B(1/3,1/3)$. Hence
 \qquad(0<x<1).
 \]
 Thus $(f*g)(x)\to\infty$ as $x\downarrow0$. In particular $f*g$ is not continuous, and therefore cannot be uniformly continuous.
+:::
+
+:::
+
 :::
 :::
 

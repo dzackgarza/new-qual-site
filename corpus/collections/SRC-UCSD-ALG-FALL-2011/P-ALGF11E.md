@@ -35,13 +35,17 @@ If $K$ is the splitting field of $f(x)$ over $F$, prove that the Galois group $\
 Let \(\Omega\) be the set of distinct roots of \(f\) in its splitting field \(K\).
 Every \(F\)-automorphism of \(K\) permutes \(\Omega\), and this action is faithful because \(K\) is generated over \(F\) by the roots.
 
-<1>1. Suppose \(\operatorname{char}F\neq2\) and \(f\) has four distinct roots.
+::: pf
+
+::: {.pf-step #embeds-preserving-partition}
+Suppose \(\operatorname{char}F\neq2\) and \(f\) has four distinct roots.
 Then
 \[
 \operatorname{Gal}(K/F)
 \]
 embeds in the subgroup of \(S_4\) preserving a partition into two pairs.
-::: {.proof}
+
+::: pf-proof
 Choose a root \(\alpha\).
 Because
 \[
@@ -69,8 +73,12 @@ Thus the induced permutation preserves the unordered partition
 \]
 :::
 
-<1>2. The subgroup of \(S_4\) preserving two opposite pairs is isomorphic to \(D_4\), the dihedral group of order \(8\).
-::: {.proof}
+:::
+
+::: {.pf-step #partition-subgroup-is-d4}
+The subgroup of \(S_4\) preserving two opposite pairs is isomorphic to \(D_4\), the dihedral group of order \(8\).
+
+::: pf-proof
 Label
 \[
 1=\alpha,
@@ -81,7 +89,7 @@ Label
 \quad
 4=-\beta.
 \]
-The partition from <1>1 is
+The partition from step [](#embeds-preserving-partition){.pf-ref} is
 \[
 \bigl\{\{1,3\},\{2,4\}\bigr\}.
 \]
@@ -104,11 +112,15 @@ r^4=s^2=1,
 srs=r^{-1}.
 \]
 Thus this subgroup is the dihedral group \(D_4\) of order \(8\).
-By <1>1, the faithful Galois action embeds \(\operatorname{Gal}(K/F)\) into it.
+By step [](#embeds-preserving-partition){.pf-ref}, the faithful Galois action embeds \(\operatorname{Gal}(K/F)\) into it.
 :::
 
-<1>3. If \(\operatorname{char}F\neq2\) but \(f\) has fewer than four distinct roots, then \(\operatorname{Gal}(K/F)\) is isomorphic to a subgroup of \(C_2\), hence of \(D_4\).
-::: {.proof}
+:::
+
+::: {.pf-step #char-neq-2-degenerate}
+If \(\operatorname{char}F\neq2\) but \(f\) has fewer than four distinct roots, then \(\operatorname{Gal}(K/F)\) is isomorphic to a subgroup of \(C_2\), hence of \(D_4\).
+
+::: pf-proof
 The roots still occur in opposite pairs.
 If there is only one nonzero opposite pair, every automorphism can at most interchange its two elements; any zero root is fixed.
 If the two opposite pairs coincide because \(y^2+by+c\) has a repeated root, there is again only one nonzero pair to permute.
@@ -120,8 +132,12 @@ Consequently
 up to isomorphism.
 :::
 
-<1>4. If \(\operatorname{char}F=2\), then \(f\) has at most two distinct roots, so again \(\operatorname{Gal}(K/F)\) embeds in \(C_2\le D_4\).
-::: {.proof}
+:::
+
+::: {.pf-step #char-2-case}
+If \(\operatorname{char}F=2\), then \(f\) has at most two distinct roots, so again \(\operatorname{Gal}(K/F)\) embeds in \(C_2\le D_4\).
+
+::: pf-proof
 In characteristic \(2\), put
 \[
 g(y):=y^2+by+c.
@@ -151,12 +167,20 @@ Since the automorphism action on the distinct roots is faithful,
 is isomorphic to a subgroup of \(S_2\cong C_2\), which is a subgroup of \(D_4\).
 :::
 
-<1>5. In all characteristics,
+:::
+
+::: pf-step
+In all characteristics,
 \[
 \operatorname{Gal}(K/F)
 \]
 is isomorphic to a subgroup of \(D_4\).
-::: {.proof}
-The four-distinct-root case is <1>1–<1>2; the remaining characteristic-not-\(2\) cases are <1>3; and characteristic \(2\) is <1>4.
+
+::: pf-proof
+The four-distinct-root case is steps [](#embeds-preserving-partition){.pf-ref} and [](#partition-subgroup-is-d4){.pf-ref}; the remaining characteristic-not-\(2\) cases are step [](#char-neq-2-degenerate){.pf-ref}; and characteristic \(2\) is step [](#char-2-case){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

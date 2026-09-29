@@ -33,8 +33,13 @@ Compute the integer homology groups $H_0(K_5; \mathbb{Z})$ and $H_1(K_5; \mathbb
 :::
 
 ::: {.solution}
-<1>1. Give $K_5$ its natural one-dimensional CW structure.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Give $K_5$ its natural one-dimensional CW structure.
+
+::: pf-proof
 There are five vertices and one edge for each unordered pair of distinct vertices, hence
 \[
 \#E=\binom52=10.
@@ -50,11 +55,15 @@ For an oriented edge from vertex $v_i$ to vertex $v_j$,
 \]
 :::
 
-<1>2. The image of $\partial_1$ is the subgroup
+:::
+
+::: pf-step
+The image of $\partial_1$ is the subgroup
 \[
 A=\left\{(n_1,\ldots,n_5)\in\ZZ^5:\sum_{i=1}^5n_i=0\right\}.
 \]
-::: {.proof}
+
+::: pf-proof
 Every boundary $v_j-v_i$ has coordinate sum zero, so $\operatorname{im}\partial_1\subseteq A$.
 Conversely, fix $v_1$.
 Because $K_5$ contains the edge from $v_1$ to every $v_i$, the image contains
@@ -68,11 +77,15 @@ These four elements generate $A$: if $\sum_i n_i=0$, then
 Hence $\operatorname{im}\partial_1=A\cong\ZZ^4$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #h0-computation}
+One has
 \[
 H_0(K_5;\ZZ)\cong\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
 Cellular homology gives
 \[
 H_0(K_5;\ZZ)=\ZZ^5/A.
@@ -87,11 +100,15 @@ is surjective and has kernel $A$.
 The first isomorphism theorem therefore gives $\ZZ^5/A\cong\ZZ$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #h1-computation}
+One has
 \[
 H_1(K_5;\ZZ)\cong\ZZ^6.
 \]
-::: {.proof}
+
+::: pf-proof
 There are no $2$-cells, so
 \[
 H_1(K_5;\ZZ)=\ker\partial_1.
@@ -115,4 +132,13 @@ Hence
 H_1(K_5;\ZZ)\cong\ZZ^6.
 \]
 :::
+
+:::
+
+::: pf-qed
+Step [](#h0-computation){.pf-ref} and step [](#h1-computation){.pf-ref} compute $H_0(K_5;\ZZ)$ and $H_1(K_5;\ZZ)$.
+:::
+
+:::
+
 :::

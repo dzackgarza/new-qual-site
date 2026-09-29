@@ -25,37 +25,58 @@ Show there is a continuous surjective closed map $g: \beta(X) \to Y$ that equals
 :::
 
 ::: {.solution}
-<1>1. Let $i : X \to Y$ be the inclusion of $X$ into its compactification $Y$ (a continuous map into a compact Hausdorff space).
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #inclusion-into-y}
+Let $i : X \to Y$ be the inclusion of $X$ into its compactification $Y$ (a continuous map into a compact Hausdorff space).
+
+::: pf-proof
 A compactification $Y$ of $X$ is a compact Hausdorff space containing $X$ as a dense subspace, so $i$ is continuous.
 :::
 
-<1>2. By the universal property of the Stone–Čech compactification, $i$ extends uniquely to a continuous map $g : \beta(X) \to Y$.
-::: {.proof}
-Every continuous map from $X$ to a compact Hausdorff space extends uniquely to a continuous map on $\beta(X)$; step <1>1 supplies such a map.
 :::
 
-<1>3. $g$ equals the identity on $X$.
+::: {.pf-step #g-exists}
+By the universal property of the Stone–Čech compactification, $i$ extends uniquely to a continuous map $g : \beta(X) \to Y$.
 
-::: {.proof}
-By step <1>2, $g$ extends the inclusion $i$.
+::: pf-proof
+Every continuous map from $X$ to a compact Hausdorff space extends uniquely to a continuous map on $\beta(X)$; step [](#inclusion-into-y){.pf-ref} supplies such a map.
 :::
 
-<1>4. $g$ is surjective.
-
-::: {.proof}
-The image $g(\beta(X))$ is compact because $\beta(X)$ is compact and $g$ is continuous, so it is closed in the Hausdorff space $Y$. By step <1>3 it contains $X$, which is dense in $Y$. Hence $g(\beta(X)) = Y$.
 :::
 
-<1>5. $g$ is closed.
+::: {.pf-step #g-extends-identity}
+$g$ equals the identity on $X$.
 
-::: {.proof}
+::: pf-proof
+By step [](#g-exists){.pf-ref}, $g$ extends the inclusion $i$.
+:::
+
+:::
+
+::: pf-step
+$g$ is surjective.
+
+::: pf-proof
+The image $g(\beta(X))$ is compact because $\beta(X)$ is compact and $g$ is continuous, so it is closed in the Hausdorff space $Y$. By step [](#g-extends-identity){.pf-ref} it contains $X$, which is dense in $Y$. Hence $g(\beta(X)) = Y$.
+:::
+
+:::
+
+::: {.pf-step #g-closed}
+$g$ is closed.
+
+::: pf-proof
 A closed subset of the compact space $\beta(X)$ is compact, its image under $g$ is compact, and a compact subset of the Hausdorff space $Y$ is closed.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>2 through <1>5 show that $g : \beta(X) \to Y$ is a continuous surjective closed map equal to the identity on $X$.
 :::
+
+::: pf-qed
+Steps [](#g-exists){.pf-ref} through [](#g-closed){.pf-ref} show that $g : \beta(X) \to Y$ is a continuous surjective closed map equal to the identity on $X$.
+:::
+
+:::
+
 :::

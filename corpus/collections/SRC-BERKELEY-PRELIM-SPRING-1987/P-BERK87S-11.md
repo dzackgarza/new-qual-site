@@ -41,12 +41,15 @@ g(x)\coloneqq e^{-x}\left(1+x+\frac{x^2}{2}\right).
 $$
 The given equation is equivalent to $g(x)=a$.
 
-<1>1. For every $x\in\RR$,
+::: pf
+
+::: {.pf-step #g-prime-formula}
+For every $x\in\RR$,
 $$
 g'(x)=-\frac{x^2}{2}e^{-x}.
 $$
 
-::: {.proof}
+::: pf-proof
 Differentiating gives
 $$
 \begin{aligned}
@@ -57,10 +60,13 @@ g'(x)
 $$
 :::
 
-<1>2. The function $g$ is strictly decreasing on $\RR$.
+:::
 
-::: {.proof}
-If $x<y$, the fundamental theorem of calculus and step <1>1 give
+::: {.pf-step #g-strictly-decreasing}
+The function $g$ is strictly decreasing on $\RR$.
+
+::: pf-proof
+If $x<y$, the fundamental theorem of calculus and step [](#g-prime-formula){.pf-ref} give
 $$
 g(y)-g(x)
 =
@@ -71,14 +77,17 @@ $t=0$. Hence its integral over every nontrivial interval is strictly
 positive, so $g(y)-g(x)<0$.
 :::
 
-<1>3. The endpoint limits of $g$ are
+:::
+
+::: {.pf-step #g-endpoint-limits}
+The endpoint limits of $g$ are
 $$
 \lim_{x\to-\infty}g(x)=+\infty,
 \qquad
 \lim_{x\to+\infty}g(x)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 1+x+\frac{x^2}{2}
@@ -94,26 +103,31 @@ As $x\to+\infty$, each of $e^{-x}$, $xe^{-x}$, and $x^2e^{-x}$ tends
 to $0$, so $g(x)\to0$.
 :::
 
-<1>4. For every $a>0$, there exists exactly one $x\in\RR$ such that
+:::
+
+::: {.pf-step #unique-solution}
+For every $a>0$, there exists exactly one $x\in\RR$ such that
 $$
 g(x)=a.
 $$
 
-::: {.proof}
-By step <1>3, there exist real numbers $u<v$ with
+::: pf-proof
+By step [](#g-endpoint-limits){.pf-ref}, there exist real numbers $u<v$ with
 $$
 g(u)>a>g(v).
 $$
 The function $g$ is continuous, so the intermediate value theorem gives
-some $x\in(u,v)$ with $g(x)=a$. Step <1>2 shows that $g$ is strictly
+some $x\in(u,v)$ with $g(x)=a$. Step [](#g-strictly-decreasing){.pf-ref} shows that $g$ is strictly
 decreasing, so two distinct points cannot have the same value. Thus this
 solution is unique.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-The original equation is equivalent to $g(x)=a$, and step <1>4 proves
+::: pf-qed
+The original equation is equivalent to $g(x)=a$, and step [](#unique-solution){.pf-ref} proves
 that the latter equation has exactly one real solution.
+:::
+
 :::
 :::

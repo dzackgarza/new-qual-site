@@ -41,8 +41,12 @@ $$
 \qquad t\in\mathbb C.}
 $$
 
-<1>1. Row-reduce the coefficient matrix.
-::: {.proof}
+::: pf
+
+::: pf-step
+Row-reduce the coefficient matrix.
+
+::: pf-proof
 The coefficient matrix is
 $$
 A=
@@ -91,8 +95,12 @@ Elementary row operations preserve the solution set of a homogeneous system
 [@HK71].
 :::
 
-<1>2. Read off the solutions.
-::: {.proof}
+:::
+
+::: pf-step
+Read off the solutions.
+
+::: pf-proof
 The reduced equations are
 $$
 x_1-\frac54x_3=0,
@@ -108,4 +116,9 @@ $$
 Conversely every such triple satisfies the reduced system, hence also the
 original system. Therefore the displayed family is exhaustive.
 :::
+
+:::
+
+:::
+
 :::

@@ -28,8 +28,12 @@ Show that the order of any element in a finite group divides the order of the gr
 ::: {.solution}
 Let $G$ be finite and let $g\in G$.
 
-<1>1. The cyclic subgroup $\langle g\rangle$ has order equal to the order of $g$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #cyclic-order-eq-g-order}
+The cyclic subgroup $\langle g\rangle$ has order equal to the order of $g$.
+
+::: pf-proof
 By definition, the order $|g|$ is the least positive integer $n$ such that $g^n=e$. Then
 \[
 \langle g\rangle=\{e,g,g^2,\ldots,g^{n-1}\}
@@ -37,20 +41,33 @@ By definition, the order $|g|$ is the least positive integer $n$ such that $g^n=
 has exactly $n=|g|$ elements.
 :::
 
-<1>2. Lagrange's theorem gives
+:::
+
+::: {.pf-step #lagrange-formula}
+Lagrange's theorem gives
 \[
 |G|=[G:\langle g\rangle]\,|\langle g\rangle|.
 \]
-::: {.proof}
+
+::: pf-proof
 The left cosets of the subgroup $\langle g\rangle$ partition the finite group $G$, and each coset has $|\langle g\rangle|$ elements. Their number is the index $[G:\langle g\rangle]$.
 :::
 
-<1>3. Therefore $|g|$ divides $|G|$.
-::: {.proof}
-By <1>1 and <1>2,
+:::
+
+::: pf-step
+Therefore $|g|$ divides $|G|$.
+
+::: pf-proof
+By steps [](#cyclic-order-eq-g-order){.pf-ref} and [](#lagrange-formula){.pf-ref},
 \[
 |G|=[G:\langle g\rangle]\,|g|,
 \]
 and the index is a positive integer.
 :::
+
+:::
+
+:::
+
 :::

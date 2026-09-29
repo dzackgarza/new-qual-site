@@ -33,8 +33,13 @@ Prove that $f_n\to0$ almost everywhere.
 :::
 
 ::: {.solution}
-<1>1. The series $\sum_n |f_n|$ is finite almost everywhere.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The series $\sum_n |f_n|$ is finite almost everywhere.
+
+::: pf-proof
 For $N\ge1$, set
 \[
 S_N(x)=\sum_{n=1}^N |f_n(x)|.
@@ -49,8 +54,12 @@ Then $S_N$ is measurable and $S_N\uparrow S:=\sum_{n=1}^\infty |f_n|$. By the mo
 Hence $S(x)<\infty$ for almost every $x\in[0,1]$; otherwise its integral would be infinite.
 :::
 
-<1>2. Absolute summability implies pointwise convergence to zero.
-::: {.proof}
+:::
+
+::: pf-step
+Absolute summability implies pointwise convergence to zero.
+
+::: pf-proof
 For every $x$ for which $S(x)<\infty$, the numerical series
 \[
 \sum_{n=1}^\infty |f_n(x)|
@@ -60,5 +69,9 @@ converges. Therefore its terms tend to zero:
 |f_n(x)|\longrightarrow0.
 \]
 Thus $f_n(x)\to0$ for almost every $x\in[0,1]$.
+:::
+
+:::
+
 :::
 :::

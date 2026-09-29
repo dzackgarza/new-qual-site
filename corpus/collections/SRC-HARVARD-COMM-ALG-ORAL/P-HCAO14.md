@@ -35,8 +35,12 @@ Yes, for the usual polynomial ring over the quaternion division ring with a
 central indeterminate $x$. In fact one has both right and left division with
 remainder.
 
-<1>1. Right division is possible.
-::: {.proof}
+::: pf
+
+::: {.pf-step #right-division-possible}
+Right division is possible.
+
+::: pf-proof
 Let
 \[
 f=a_mx^m+\cdots+a_0,
@@ -65,8 +69,12 @@ f=qg+r,
 \]
 :::
 
-<1>2. Left division is possible as well.
-::: {.proof}
+:::
+
+::: {.pf-step #left-division-possible}
+Left division is possible as well.
+
+::: pf-proof
 At the same step choose
 \[
 c=b_n^{-1}a_m.
@@ -84,9 +92,17 @@ f=gq+r,
 \]
 :::
 
-<1>3. Thus $R[x]$ has the usual degree division algorithm, with sidedness
+:::
+
+::: pf-step
+Thus $R[x]$ has the usual degree division algorithm, with sidedness
 specified because $R[x]$ is noncommutative.
-::: {.proof}
-This is exactly <1>1 and <1>2.
+
+::: pf-proof
+This is exactly step [](#right-division-possible){.pf-ref} and step [](#left-division-possible){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

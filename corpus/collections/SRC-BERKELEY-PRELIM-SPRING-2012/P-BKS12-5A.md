@@ -43,7 +43,10 @@ $$
 u(t)\coloneqq y(e^t).
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #derivative-relations}
+One has
 $$
 u'(t)=xy'(x)
 $$
@@ -53,7 +56,7 @@ u''(t)=x^2y''(x)+xy'(x),
 $$
 where $x=e^t$.
 
-::: {.proof}
+::: pf-proof
 By the chain rule,
 $$
 u'(t)
@@ -78,13 +81,16 @@ xy'(x)+x^2y''(x).
 $$
 :::
 
-<1>2. The differential equation is equivalent to
+:::
+
+::: {.pf-step #transformed-ode}
+The differential equation is equivalent to
 $$
 u''(t)+u(t)=0.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#derivative-relations){.pf-ref},
 $$
 x^2y''+xy'
 =
@@ -94,14 +100,17 @@ Also $y(x)=u(t)$. Substituting these identities into the given equation
 gives the displayed constant-coefficient equation.
 :::
 
-<1>3. The initial conditions become
+:::
+
+::: {.pf-step #transformed-initial-conditions}
+The initial conditions become
 $$
 u(0)=0,
 \qquad
 u'(0)=1.
 $$
 
-::: {.proof}
+::: pf-proof
 The point $x=1$ corresponds to
 $$
 t=\log1=0.
@@ -110,7 +119,7 @@ Therefore
 $$
 u(0)=y(1)=0.
 $$
-By step <1>1,
+By step [](#derivative-relations){.pf-ref},
 $$
 u'(0)
 =
@@ -120,12 +129,15 @@ u'(0)
 $$
 :::
 
-<1>4. The unique solution for $u$ is
+:::
+
+::: {.pf-step #u-solution}
+The unique solution for $u$ is
 $$
 u(t)=\sin t.
 $$
 
-::: {.proof}
+::: pf-proof
 The general real solution of
 $$
 u''+u=0
@@ -134,7 +146,7 @@ is
 $$
 u(t)=A\cos t+B\sin t.
 $$
-The conditions in step <1>3 give
+The conditions in step [](#transformed-initial-conditions){.pf-ref} give
 $$
 A=0,
 \qquad
@@ -142,7 +154,10 @@ B=1.
 $$
 :::
 
-<1>5. The required solution is
+:::
+
+::: {.pf-step #y-solution}
+The required solution is
 $$
 \boxed{
 y(x)=\sin(\log x)
@@ -151,19 +166,22 @@ y(x)=\sin(\log x)
 x>0.
 $$
 
-::: {.proof}
-Since $t=\log x$, step <1>4 gives
+::: pf-proof
+Since $t=\log x$, step [](#u-solution){.pf-ref} gives
 $$
 y(x)=u(\log x)=\sin(\log x).
 $$
-The change of variables in steps <1>1 and <1>2 is reversible for $x>0$,
+The change of variables in steps [](#derivative-relations){.pf-ref} and [](#transformed-ode){.pf-ref} is reversible for $x>0$,
 so this function satisfies the original differential equation and the
 initial conditions.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested solution.
 :::
+
+::: pf-qed
+Step [](#y-solution){.pf-ref} is the requested solution.
+:::
+
+:::
+
 :::

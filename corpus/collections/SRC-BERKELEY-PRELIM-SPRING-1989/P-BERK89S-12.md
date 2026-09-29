@@ -32,9 +32,12 @@ where $C$ is the positively oriented circle $|z|=2$.
 :::
 
 ::: {.solution}
-<1>1. The integrand is holomorphic on and inside $C$ except at $z=1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #singularity-inside-contour}
+The integrand is holomorphic on and inside $C$ except at $z=1$.
+
+::: pf-proof
 The only possible singularity of
 $$
 (2z-1)e^{z/(z-1)}
@@ -44,9 +47,12 @@ inside $C$, and the integrand is holomorphic everywhere else on and inside
 the contour.
 :::
 
-<1>2. The residue of the integrand at $z=1$ is $2e$.
+:::
 
-::: {.proof}
+::: {.pf-step #residue-value}
+The residue of the integrand at $z=1$ is $2e$.
+
+::: pf-proof
 Set $w=z-1$. Then
 $$
 2z-1=2w+1,
@@ -68,13 +74,16 @@ $$
 $$
 :::
 
-<1>3. The integral equals
+:::
+
+::: {.pf-step #integral-value-boxed}
+The integral equals
 $$
 \boxed{4\pi i e}.
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2, the residue theorem gives
+::: pf-proof
+By steps [](#singularity-inside-contour){.pf-ref} and [](#residue-value){.pf-ref}, the residue theorem gives
 $$
 \int_C(2z-1)e^{z/(z-1)}\,dz
 =2\pi i\operatorname{Res}_{z=1}(2z-1)e^{z/(z-1)}
@@ -83,9 +92,11 @@ $$
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 gives the requested value.
+::: pf-qed
+Step [](#integral-value-boxed){.pf-ref} gives the requested value.
+:::
+
 :::
 :::

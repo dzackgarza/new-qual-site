@@ -34,8 +34,13 @@ Prove that $M/K$ is Galois.
 
 
 ::: {.solution}
-<1>1. Under the hypotheses of part (a), \(M/K\) has at least \([M:K]\) distinct \(K\)-automorphisms.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #at-least-mk-automorphisms}
+Under the hypotheses of part (a), \(M/K\) has at least \([M:K]\) distinct \(K\)-automorphisms.
+
+::: pf-proof
 Let
 \[
 A:=\{\sigma\in\operatorname{Aut}_K(M):\sigma(L)=L\}.
@@ -67,14 +72,18 @@ Therefore the finite-group exact sequence gives
 Thus \(M\) has at least \([M:K]\) distinct \(K\)-automorphisms.
 :::
 
-<1>2. The extension \(M/K\) is Galois.
-::: {.proof}
+:::
+
+::: {.pf-step #part-a-galois}
+The extension \(M/K\) is Galois.
+
+::: pf-proof
 The tower is finite because both \(L/K\) and \(M/L\) are finite Galois extensions.
 For every finite extension,
 \[
 |\operatorname{Aut}_K(M)|\le[M:K].
 \]
-By <1>1, the subgroup \(A\subseteq\operatorname{Aut}_K(M)\) already has exactly \([M:K]\) elements.
+By step [](#at-least-mk-automorphisms){.pf-ref}, the subgroup \(A\subseteq\operatorname{Aut}_K(M)\) already has exactly \([M:K]\) elements.
 Hence
 \[
 |\operatorname{Aut}_K(M)|=[M:K].
@@ -83,7 +92,10 @@ A finite extension has as many base-field automorphisms as its degree if and onl
 Therefore \(M/K\) is Galois.
 :::
 
-<1>3. For part (b), take
+:::
+
+::: {.pf-step #part-b-tower-galois}
+For part (b), take
 \[
 K=\mathbb Q,
 \qquad
@@ -92,7 +104,8 @@ L=\mathbb Q(\sqrt2),
 M=\mathbb Q(\sqrt[4]{2}).
 \]
 Then \(L/K\) and \(M/L\) are Galois.
-::: {.proof}
+
+::: pf-proof
 The extension
 \[
 \mathbb Q(\sqrt2)/\mathbb Q
@@ -121,8 +134,12 @@ It is separable because the characteristic is zero.
 Therefore \(M/L\) is Galois.
 :::
 
-<1>4. The extension \(M/K\) in <1>3 is not Galois.
-::: {.proof}
+:::
+
+::: {.pf-step #part-b-mk-not-galois}
+The extension \(M/K\) in step [](#part-b-tower-galois){.pf-ref} is not Galois.
+
+::: pf-proof
 The polynomial
 \[
 x^4-2
@@ -139,5 +156,13 @@ M=\mathbb Q(\alpha)
 is contained in \(\mathbb R\), so it does not contain \(i\alpha\).
 Hence the minimal polynomial \(x^4-2\) does not split over \(M\).
 Thus \(M/\mathbb Q\) is not normal, and therefore is not Galois.
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-galois){.pf-ref} answers part (a), and step [](#part-b-mk-not-galois){.pf-ref} answers part (b).
+:::
+
 :::
 :::

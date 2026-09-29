@@ -27,8 +27,12 @@ Show that $A_n$ is simple for $n\geq 5$
 ::: {.solution}
 We prove by induction on \(n\ge5\) that \(A_n\) is simple.
 
-<1>1. The group \(A_5\) is simple.
-::: {.proof}
+::: pf
+
+::: pf-step
+The group \(A_5\) is simple.
+
+::: pf-proof
 Its conjugacy classes have sizes
 \[
 1,\ 15,\ 20,\ 12,\ 12.
@@ -36,8 +40,12 @@ Its conjugacy classes have sizes
 A normal subgroup is a union of conjugacy classes containing the identity, and its order must divide \(60\). No proper nontrivial sum of these class sizes containing \(1\) divides \(60\). Hence the only normal subgroups are \(1\) and \(A_5\).
 :::
 
-<1>2. Assume \(n\ge6\) and \(A_{n-1}\) is simple. Let \(N\trianglelefteq A_n\) be nontrivial.
-::: {.proof}
+:::
+
+::: pf-step
+Assume \(n\ge6\) and \(A_{n-1}\) is simple. Let \(N\trianglelefteq A_n\) be nontrivial.
+
+::: pf-proof
 For each point \(i\), let
 \[
 H_i=\operatorname{Stab}_{A_n}(i)\cong A_{n-1}.
@@ -59,7 +67,12 @@ is nontrivial. Its support is contained in the union of the supports of the two 
 For \(n=6\), a fixed-point-free even permutation has cycle type \((3)(3)\) or \((4)(2)\). After relabeling, in the first case take \(\sigma=(1\ 2\ 3)(4\ 5\ 6)\) and \(S=\{1,2,4\}\); then \(\sigma(S)=\{2,3,5\}\). In the second case take \(\sigma=(1\ 2\ 3\ 4)(5\ 6)\) and \(S=\{1,2,5\}\); then \(\sigma(S)=\{2,3,6\}\). Thus in either case \(S\cap\sigma(S)\ne\varnothing\) but \(S\ne\sigma(S)\). Let \(\tau\) be a \(3\)-cycle supported on \(S\). Then \(\sigma\tau\sigma^{-1}\ne\tau\), so the same commutator \(\rho\) is nontrivial, and its support is contained in \(S\cup\sigma(S)\), which has \(5\) points. Hence \(\rho\) fixes a point, again a contradiction.
 
 Therefore some \(N\cap H_i\) is nontrivial, and the first paragraph gives \(N=A_n\).
-:::
 
 Thus \(A_n\) is simple for every \(n\ge5\).
+:::
+
+:::
+
+:::
+
 :::

@@ -44,9 +44,12 @@ S_N(x)
 \frac{e^{i\sqrt n\,x}}{n^2+1}.
 $$
 
-<1>1. The series defining $f$ converges uniformly on $\RR$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #uniform-convergence}
+The series defining $f$ converges uniformly on $\RR$.
+
+::: pf-proof
 For every real $x$ and every $n\geq0$,
 $$
 \abs{
@@ -63,14 +66,17 @@ converges. The Weierstrass M-test therefore gives uniform convergence of
 $S_N$ to $f$ on all of $\RR$.
 :::
 
-<1>2. For $n=0$, the mean of the $n$th summand over $[-R,R]$ is $1$.
+:::
+
+::: {.pf-step #term-mean-formula}
+For $n=0$, the mean of the $n$th summand over $[-R,R]$ is $1$.
 For every $n\geq1$, it is
 $$
 \frac{1}{n^2+1}
 \frac{\sin(\sqrt n\,R)}{\sqrt n\,R}.
 $$
 
-::: {.proof}
+::: pf-proof
 The $n=0$ summand is identically $1$. If $n\geq1$, then
 $$
 \begin{aligned}
@@ -90,7 +96,10 @@ $$
 $$
 :::
 
-<1>3. For each fixed $N$,
+:::
+
+::: {.pf-step #partial-sum-mean-limit}
+For each fixed $N$,
 $$
 \lim_{R\to\infty}
 \frac1{2R}\int_{-R}^{R}S_N(x)\,dx
@@ -98,8 +107,8 @@ $$
 1.
 $$
 
-::: {.proof}
-By step <1>2, the mean of $S_N$ is
+::: pf-proof
+By step [](#term-mean-formula){.pf-ref}, the mean of $S_N$ is
 $$
 1
 +
@@ -119,7 +128,10 @@ $$
 The sum is finite, so its nonconstant terms all tend to $0$.
 :::
 
-<1>4. For every $N$ and every $R>0$,
+:::
+
+::: {.pf-step #tail-bound}
+For every $N$ and every $R>0$,
 $$
 \abs{
 \frac1{2R}
@@ -130,7 +142,7 @@ $$
 \sum_{n=N+1}^{\infty}\frac1{n^2+1}.
 $$
 
-::: {.proof}
+::: pf-proof
 Uniform convergence permits termwise subtraction, and for every $x$,
 $$
 \abs{f(x)-S_N(x)}
@@ -156,19 +168,22 @@ $$
 The bound is independent of $R$.
 :::
 
-<1>5. The requested limit exists and equals
+:::
+
+::: {.pf-step #limit-value}
+The requested limit exists and equals
 $$
 \boxed{1}.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $\varepsilon>0$. Choose $N$ so large that
 $$
 \sum_{n=N+1}^{\infty}\frac1{n^2+1}
 <
 \frac{\varepsilon}{2}.
 $$
-By step <1>3, for all sufficiently large $R$,
+By step [](#partial-sum-mean-limit){.pf-ref}, for all sufficiently large $R$,
 $$
 \abs{
 \frac1{2R}\int_{-R}^{R}S_N(x)\,dx-1
@@ -176,7 +191,7 @@ $$
 <
 \frac{\varepsilon}{2}.
 $$
-Step <1>4 then gives
+Step [](#tail-bound){.pf-ref} then gives
 $$
 \abs{
 \frac1{2R}\int_{-R}^{R}f(x)\,dx-1
@@ -187,10 +202,13 @@ $$
 This proves both existence of the limit and its value.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves uniform convergence, and step <1>5 computes the requested
+::: pf-qed
+Step [](#uniform-convergence){.pf-ref} proves uniform convergence, and step [](#limit-value){.pf-ref} computes the requested
 mean.
 :::
+
+:::
+
 :::

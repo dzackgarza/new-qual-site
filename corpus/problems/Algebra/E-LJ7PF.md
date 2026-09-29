@@ -26,17 +26,26 @@ Let $A\in M_n(\CC)$ be normal, so $AA^*=A^*A$. Show that $A$ is unitarily diagon
 :::
 
 ::: {.solution}
-<1>1. By Schur triangularization, there is a unitary matrix $U$ such that
+
+::: pf
+
+::: {.pf-step #schur-triangularization}
+By Schur triangularization, there is a unitary matrix $U$ such that
 \[
 T:=U^*AU
 \]
 is upper triangular.
-::: {.proof}
+
+::: pf-proof
 Schur's theorem applies to every complex square matrix. Thus $A=UTU^*$ for some unitary $U$ and upper-triangular $T$.
 :::
 
-<1>2. The triangular matrix $T$ is normal.
-::: {.proof}
+:::
+
+::: pf-step
+The triangular matrix $T$ is normal.
+
+::: pf-proof
 Since $A$ is normal,
 \[
 AA^*=A^*A.
@@ -48,8 +57,12 @@ TT^*=T^*T.
 Thus $T$ is normal.
 :::
 
-<1>3. Every upper-triangular normal complex matrix is diagonal.
-::: {.proof}
+:::
+
+::: {.pf-step #upper-triangular-normal-is-diagonal}
+Every upper-triangular normal complex matrix is diagonal.
+
+::: pf-proof
 We argue by induction on $n$. The result is immediate for $n=1$.
 
 Write $T=(t_{ij})$. Comparing the $(1,1)$ entries of $TT^*$ and $T^*T$ gives
@@ -71,12 +84,21 @@ T_1T_1^*=T_1^*T_1,
 so $T_1$ is normal. By induction $T_1$ is diagonal. Therefore $T$ is diagonal.
 :::
 
-<1>4. Therefore $A$ is unitarily diagonalizable.
-::: {.proof}
-By <1>1 and <1>3, $T=D$ is diagonal. Hence
+:::
+
+::: pf-step
+Therefore $A$ is unitarily diagonalizable.
+
+::: pf-proof
+By steps [](#schur-triangularization){.pf-ref} and [](#upper-triangular-normal-is-diagonal){.pf-ref}, $T=D$ is diagonal. Hence
 \[
 A=UDU^*,
 \]
 which is a unitary diagonalization of $A$.
 :::
+
+:::
+
+:::
+
 :::

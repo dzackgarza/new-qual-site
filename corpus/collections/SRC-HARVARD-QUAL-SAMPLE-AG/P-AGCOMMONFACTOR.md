@@ -32,8 +32,12 @@ Assume first that $k$ is algebraically closed and that
 0\ne f,g\in k[x,y].
 \]
 
-<1>1. If $f$ and $g$ have no nonconstant common factor, then every prime ideal containing $(f,g)$ has height $2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #height-two-primes}
+If $f$ and $g$ have no nonconstant common factor, then every prime ideal containing $(f,g)$ has height $2$.
+
+::: pf-proof
 The polynomial ring
 \[
 k[x,y]
@@ -49,25 +53,36 @@ If a height-one prime $(h)$ contained both $f$ and $g$, then $h$ would divide bo
 Thus every prime containing $(f,g)$ has height $2$.  If $(f,g)=k[x,y]$, there are no such primes and the common zero set is empty.
 :::
 
-<1>2. Under the hypothesis of <1>1, the affine scheme
+:::
+
+::: {.pf-step #zero-dimensional}
+Under the hypothesis of step [](#height-two-primes){.pf-ref}, the affine scheme
 \[
 V(f,g)=\operatorname{Spec}k[x,y]/(f,g)
 \]
 is either empty or zero-dimensional.
-::: {.proof}
+
+::: pf-proof
 If $(f,g)=k[x,y]$, the spectrum is empty.  Otherwise the quotient is nonzero.
-The dimension of the quotient is the supremum of the dimensions of the prime chains above $(f,g)$.  Step <1>1 says every such prime is maximal of height $2$ in the two-dimensional ring $k[x,y]$.  Hence
+The dimension of the quotient is the supremum of the dimensions of the prime chains above $(f,g)$.  Step [](#height-two-primes){.pf-ref} says every such prime is maximal of height $2$ in the two-dimensional ring $k[x,y]$.  Hence
 \[
 \dim k[x,y]/(f,g)=0.
 \]
 :::
 
-<1>3. A zero-dimensional affine scheme of finite type over $k$ has only finitely many closed points.
-::: {.proof}
+:::
+
+::: {.pf-step #finite-points}
+A zero-dimensional affine scheme of finite type over $k$ has only finitely many closed points.
+
+::: pf-proof
 A zero-dimensional finitely generated $k$-algebra is Artinian.  An Artinian ring has only finitely many prime ideals, all maximal.  Therefore its spectrum has finitely many points.
 :::
 
-<1>4. Hence, if the curves
+:::
+
+::: {.pf-step #gcd-nontrivial}
+Hence, if the curves
 \[
 V(f),\qquad V(g)\subseteq\mathbb A^2_k
 \]
@@ -76,16 +91,21 @@ have infinitely many common points, then
 \boxed{\gcd(f,g)\ne1.}
 \]
 Equivalently, $f$ and $g$ have a nonconstant common factor.
-::: {.proof}
-If $f$ and $g$ were coprime, steps <1>1--<1>3 would make
+
+::: pf-proof
+If $f$ and $g$ were coprime, steps [](#height-two-primes){.pf-ref}, [](#zero-dimensional){.pf-ref} and [](#finite-points){.pf-ref} would make
 \[
 V(f)\cap V(g)=V(f,g)
 \]
 a finite set.  This contradicts the hypothesis of infinitely many common points.
 :::
 
-<1>5. Geometrically, the common factor is exactly a common curve component.
-::: {.proof}
+:::
+
+::: pf-step
+Geometrically, the common factor is exactly a common curve component.
+
+::: pf-proof
 Let $h$ be an irreducible common factor.  Then
 \[
 V(h)\subseteq V(f)\cap V(g),
@@ -99,16 +119,23 @@ f,g\in(h),
 so $h$ divides both.
 :::
 
-<1>6. Thus the answer is
+:::
+
+::: {.pf-step #answer-yes}
+Thus the answer is
 \[
 \boxed{\text{yes: infinitely many common points force a common factor.}}
 \]
-::: {.proof}
-This is <1>4.  Equivalently, Bézout's theorem says that two projective plane curves with no common component have only finitely many intersections, counted with total multiplicity at most the product of their degrees.
+
+::: pf-proof
+This is step [](#gcd-nontrivial){.pf-ref}.  Equivalently, Bézout's theorem says that two projective plane curves with no common component have only finitely many intersections, counted with total multiplicity at most the product of their degrees.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>6 is the requested conclusion.
+:::
+
+::: pf-qed
+Step [](#answer-yes){.pf-ref} is the requested conclusion.
+:::
+
 :::
 :::

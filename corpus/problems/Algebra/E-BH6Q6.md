@@ -39,9 +39,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. A finite group acting transitively on a set $X$ with $|X|\ge2$ has an element with no fixed point.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+A finite group acting transitively on a set $X$ with $|X|\ge2$ has an element with no fixed point.
+
+::: pf-proof
 For $g\in G$ let $X^g$ be its fixed-point set.
 By Burnside's orbit-counting lemma, $1=|X/G|=\frac1{|G|}\sum_{g\in G}|X^g|$, so $\sum_{g}|X^g|=|G|$.
 If every $g$ had $|X^g|\ge1$, then, since $|X^e|=|X|\ge2$,
@@ -49,9 +53,12 @@ $$\sum_{g\in G}|X^g|\ge 2+(|G|-1)=|G|+1,$$
 a contradiction.
 :::
 
-<1>2. The subgroups $H\le\ZZ^3$ with $\ZZ^3/H\cong K$ number $p^2+p+1$ for $K\cong(\ZZ/p\ZZ)^2$ and $p^2(p^2+p+1)$ for $K\cong\ZZ/p^2\ZZ$.
+:::
 
-::: {.proof}
+::: pf-step
+The subgroups $H\le\ZZ^3$ with $\ZZ^3/H\cong K$ number $p^2+p+1$ for $K\cong(\ZZ/p\ZZ)^2$ and $p^2(p^2+p+1)$ for $K\cong\ZZ/p^2\ZZ$.
+
+::: pf-proof
 These are the two abelian groups of order $p^2$.
 If $\ZZ^3/H\cong(\ZZ/p\ZZ)^2$, then $p\ZZ^3\subseteq H$ and $H/p\ZZ^3$ is a line in $\ZZ^3/p\ZZ^3\cong\FF_p^3$; conversely each line gives such an $H$.
 There are $(p^3-1)/(p-1)=p^2+p+1$ lines.
@@ -61,31 +68,45 @@ A homomorphism is a triple in $(\ZZ/p^2\ZZ)^3$, surjective exactly when some ent
 Dividing by $|\Aut(\ZZ/p^2\ZZ)|=p(p-1)$ gives $p^2(p^2+p+1)$ kernels.
 :::
 
-<1>3. If $|G|=pq$ with $p<q$ primes, then the Sylow $q$-subgroup $Q$ is normal; if moreover $q\not\equiv1\pmod p$, then $G\cong\ZZ/pq\ZZ$.
+:::
 
-::: {.proof}
+::: pf-step
+If $|G|=pq$ with $p<q$ primes, then the Sylow $q$-subgroup $Q$ is normal; if moreover $q\not\equiv1\pmod p$, then $G\cong\ZZ/pq\ZZ$.
+
+::: pf-proof
 $n_q\mid p$ and $n_q\equiv1\pmod q$ with $p<q$ force $n_q=1$.
 If $q\not\equiv1\pmod p$, then $n_p\mid q$ and $n_p\equiv1\pmod p$ force $n_p=1$, so the Sylow $p$-subgroup $P$ is normal too.
 Then $P\cap Q=1$, $G=PQ$, and for $a\in P$, $b\in Q$ the commutator $aba^{-1}b^{-1}$ lies in $P\cap Q=1$.
 So $G\cong P\times Q\cong\ZZ/p\ZZ\times\ZZ/q\ZZ\cong\ZZ/pq\ZZ$.
 :::
 
-<1>4. If $p$ is the smallest prime dividing $|G|$ and $H\trianglelefteq G$ has order $p$, then $H\subseteq Z(G)$.
+:::
 
-::: {.proof}
+::: pf-step
+If $p$ is the smallest prime dividing $|G|$ and $H\trianglelefteq G$ has order $p$, then $H\subseteq Z(G)$.
+
+::: pf-proof
 Conjugation gives a homomorphism $\theta\colon G\to\Aut(H)\cong(\ZZ/p\ZZ)^\times$, a group of order $p-1$.
 $|\operatorname{im}\theta|$ divides $|G|$ and $p-1$; every prime factor of $p-1$ is less than $p$, so $\gcd(|G|,p-1)=1$ and $\theta$ is trivial.
 Thus every element of $G$ commutes with every element of $H$.
 :::
 
-<1>5. If $|G|=2^km$ with $k\ge1$, $m$ odd, and $P=\langle x\rangle$ is a cyclic Sylow $2$-subgroup, then $\lambda_x\colon y\mapsto xy$ has sign $-1$ and $G$ has a quotient of order $2$.
+:::
 
-::: {.proof}
+::: pf-step
+If $|G|=2^km$ with $k\ge1$, $m$ odd, and $P=\langle x\rangle$ is a cyclic Sylow $2$-subgroup, then $\lambda_x\colon y\mapsto xy$ has sign $-1$ and $G$ has a quotient of order $2$.
+
+::: pf-proof
 The orbits of $\langle x\rangle$ acting on $G$ by left multiplication are the right cosets $Py$, each a cycle of $\lambda_x$ of length $2^k$.
 There are $m$ of them, each of sign $(-1)^{2^k-1}=-1$, so $\operatorname{sgn}(\lambda_x)=(-1)^m=-1$.
 The left regular representation $\lambda\colon G\to\operatorname{Sym}(G)$ is a homomorphism, so $\operatorname{sgn}\circ\lambda\colon G\to\{\pm1\}$ is a homomorphism, surjective since it sends $x$ to $-1$.
 Its kernel has index $2$.
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

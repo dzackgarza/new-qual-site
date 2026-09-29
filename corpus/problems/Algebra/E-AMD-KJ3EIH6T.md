@@ -40,8 +40,12 @@ where $Q\cong C_4$ or $C_2^2$, and the action lands in
 \operatorname{Aut}(C_7)\cong C_6.
 \]
 
-<1>1. If $Q\cong C_4$, there are two possibilities.
-::: {.proof}
+::: pf
+
+::: {.pf-step #q-cyclic-case}
+If $Q\cong C_4$, there are two possibilities.
+
+::: pf-proof
 The image of $C_4\to C_6$ has order dividing $2$. The trivial action gives
 \[
 C_7\times C_4\cong C_{28}.
@@ -52,8 +56,12 @@ C_7\rtimes C_4.
 \]
 :::
 
-<1>2. If $Q\cong C_2^2$, there are two possibilities.
-::: {.proof}
+:::
+
+::: {.pf-step #q-klein-case}
+If $Q\cong C_2^2$, there are two possibilities.
+
+::: pf-proof
 Any image lies in the unique subgroup $C_2\le C_6$. The trivial action gives
 \[
 C_7\times C_2^2\cong C_{14}\times C_2.
@@ -65,9 +73,16 @@ Every nonzero homomorphism $C_2^2\to C_2$ is equivalent under $\operatorname{Aut
 With the convention that $D_m$ has order $2m$, this group is also isomorphic to $D_{14}$.
 :::
 
-Thus there are exactly four isomorphism types:
+:::
+
+::: pf-qed
+By steps [](#q-cyclic-case){.pf-ref} and [](#q-klein-case){.pf-ref}, thus there are exactly four isomorphism types:
 \[
 C_{28},\qquad C_{14}\times C_2,\qquad C_7\rtimes C_4,\qquad D_7\times C_2\cong D_{14}.
 \]
 The two abelian groups are distinguished by cyclicity, and the two nonabelian groups by the isomorphism type of their Sylow $2$-subgroups ($C_4$ versus $C_2^2$).
+:::
+
+:::
+
 :::

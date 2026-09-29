@@ -37,8 +37,12 @@ F(z)=\frac{e^{iz}}{1+z^4}
 $$
 and integrate over the upper semicircle of radius $R>1$.
 
-<1>1. The semicircular contribution tends to zero.
-::: {.proof}
+::: pf
+
+::: {.pf-step #semicircle-vanishes}
+The semicircular contribution tends to zero.
+
+::: pf-proof
 On the upper half-plane,
 $$
 |e^{iz}|=e^{-\operatorname{Im}z}\le1.
@@ -55,8 +59,12 @@ $$
 which tends to $0$ as $R\to\infty$.
 :::
 
-<1>2. With $a=1/\sqrt2$, $c=\cos a$, $s=\sin a$, the residues of $F$ in the upper half-plane sum to $-\frac{i e^{-a}}{2\sqrt2}(c+s)$.
-::: {.proof}
+:::
+
+::: pf-step
+With $a=1/\sqrt2$, $c=\cos a$, $s=\sin a$, the residues of $F$ in the upper half-plane sum to $-\frac{i e^{-a}}{2\sqrt2}(c+s)$.
+
+::: pf-proof
 The poles there are
 $$
 \zeta_1=e^{i\pi/4},
@@ -101,9 +109,13 @@ $$
 $$
 :::
 
-<1>3. $\int_{-\infty}^{\infty}\frac{\cos x}{1+x^4}\,dx=\frac{\pi}{\sqrt2}e^{-1/\sqrt2}\left(\cos\frac1{\sqrt2}+\sin\frac1{\sqrt2}\right)$.
-::: {.proof}
-Letting $R\to\infty$, step <1>1 and the residue theorem yield
+:::
+
+::: pf-step
+$\int_{-\infty}^{\infty}\frac{\cos x}{1+x^4}\,dx=\frac{\pi}{\sqrt2}e^{-1/\sqrt2}\left(\cos\frac1{\sqrt2}+\sin\frac1{\sqrt2}\right)$.
+
+::: pf-proof
+Letting $R\to\infty$, step [](#semicircle-vanishes){.pf-ref} and the residue theorem yield
 $$
 \int_{-\infty}^{\infty}\frac{e^{ix}}{1+x^4}\,dx
 =2\pi i\left(-\frac{i e^{-a}}{2\sqrt2}(c+s)\right)
@@ -119,5 +131,9 @@ $$
 \cos\frac1{\sqrt2}+\sin\frac1{\sqrt2}
 \right).}
 $$
+:::
+
+:::
+
 :::
 :::

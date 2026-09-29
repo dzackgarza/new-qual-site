@@ -47,9 +47,13 @@ Hausdorff if and only if $X$ is a singleton.
 :::
 
 ::: {.solution}
-<1>1. Every two nonempty Zariski-open subsets of $X$ intersect.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #opens-intersect}
+Every two nonempty Zariski-open subsets of $X$ intersect.
+
+::: pf-proof
 An affine variety is irreducible by definition. Let
 $$
 U,V\subseteq X
@@ -76,10 +80,13 @@ U\intersect V\ne\varnothing.
 $$
 :::
 
-<1>2. If $X$ contains two distinct points, then its Zariski topology is not
+:::
+
+::: {.pf-step #not-hausdorff-if-two-points}
+If $X$ contains two distinct points, then its Zariski topology is not
 Hausdorff.
 
-::: {.proof}
+::: pf-proof
 Suppose
 $$
 p,q\in X,
@@ -94,18 +101,24 @@ q\in V,
 \qquad
 U\intersect V=\varnothing.
 $$
-Both $U$ and $V$ are nonempty, contradicting step <1>1. Hence a variety with
+Both $U$ and $V$ are nonempty, contradicting step [](#opens-intersect){.pf-ref}. Hence a variety with
 at least two points is not Hausdorff.
 :::
 
-<1>3. A singleton variety is Hausdorff.
+:::
 
-::: {.proof}
+::: {.pf-step #singleton-hausdorff}
+A singleton variety is Hausdorff.
+
+::: pf-proof
 Every singleton topological space is Hausdorff: there are no two distinct
 points whose neighborhoods must be separated.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #equivalence-statement}
+Therefore
 $$
 \boxed{
 X\text{ is Hausdorff in its Zariski topology}
@@ -114,15 +127,18 @@ X\text{ is a point}.
 }
 $$
 
-::: {.proof}
-Step <1>2 shows that Hausdorffness forces $X$ to contain at most one point.
-A variety is nonempty, so it must then be a singleton. Step <1>3 proves the
+::: pf-proof
+Step [](#not-hausdorff-if-two-points){.pf-ref} shows that Hausdorffness forces $X$ to contain at most one point.
+A variety is nonempty, so it must then be a singleton. Step [](#singleton-hausdorff){.pf-ref} proves the
 converse.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#equivalence-statement){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

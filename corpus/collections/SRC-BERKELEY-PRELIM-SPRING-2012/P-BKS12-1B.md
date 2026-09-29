@@ -38,10 +38,13 @@ $$
 0<\varepsilon<\pi.
 $$
 
-<1>1. The function $F_\varepsilon$ is even, so all sine Fourier
+::: pf
+
+::: {.pf-step #even-sine-vanish}
+The function $F_\varepsilon$ is even, so all sine Fourier
 coefficients vanish.
 
-::: {.proof}
+::: pf-proof
 On the fundamental interval $(-\pi,\pi)$, the value of
 $F_\varepsilon(x)$ depends only on $\abs{x}$. Thus
 $$
@@ -54,14 +57,17 @@ $$
 is odd, so its integral over $[-\pi,\pi]$ is zero.
 :::
 
-<1>2. The constant Fourier coefficient satisfies
+:::
+
+::: {.pf-step #a0-value}
+The constant Fourier coefficient satisfies
 $$
 \frac{a_0}{2}
 =
 \frac{\varepsilon}{\pi}.
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 a_0
@@ -76,14 +82,17 @@ a_0
 $$
 :::
 
-<1>3. For every integer $n\geq1$,
+:::
+
+::: {.pf-step #an-formula}
+For every integer $n\geq1$,
 $$
 a_n
 =
 \frac{2\sin(n\varepsilon)}{\pi n}.
 $$
 
-::: {.proof}
+::: pf-proof
 Using evenness,
 $$
 \begin{aligned}
@@ -101,7 +110,10 @@ F_\varepsilon(x)\cos(nx)\,dx\\
 $$
 :::
 
-<1>4. For $0<\varepsilon<\pi$, the Fourier series is
+:::
+
+::: {.pf-step #fourier-series-generic}
+For $0<\varepsilon<\pi$, the Fourier series is
 $$
 \boxed{
 \frac{\varepsilon}{\pi}
@@ -112,8 +124,8 @@ $$
 }.
 $$
 
-::: {.proof}
-Combine steps <1>1--<1>3 with the real Fourier expansion
+::: pf-proof
+Combine steps [](#even-sine-vanish){.pf-ref}, [](#a0-value){.pf-ref} and [](#an-formula){.pf-ref} with the real Fourier expansion
 $$
 \frac{a_0}{2}
 +
@@ -125,11 +137,14 @@ $F_\varepsilon$, and at the jump points it converges to the midpoint of
 the two one-sided limits, by the Dirichlet convergence theorem.
 :::
 
-<1>5. In the degenerate parameter ranges, the Fourier series is
+:::
+
+::: {.pf-step #fourier-series-degenerate}
+In the degenerate parameter ranges, the Fourier series is
 identically $0$ for $\varepsilon\leq0$ and identically $1$ for
 $\varepsilon\geq\pi$.
 
-::: {.proof}
+::: pf-proof
 On the fundamental interval $\abs{x}<\pi$, if $\varepsilon\leq0$ then
 the condition $\abs{x}<\varepsilon$ never holds, so the function is zero.
 If $\varepsilon\geq\pi$, then $\abs{x}<\varepsilon$ holds throughout the
@@ -138,7 +153,10 @@ irrelevant endpoint representatives. Its Fourier series is therefore the
 constant series $1$.
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #sum-value}
+One has
 $$
 \boxed{
 \sum_{n=1}^{\infty}\frac{\sin n}{n}
@@ -147,12 +165,12 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 \varepsilon=1
 $$
-in step <1>4. Since
+in step [](#fourier-series-generic){.pf-ref}. Since
 $$
 0<1<\pi
 $$
@@ -172,10 +190,13 @@ $$
 Multiplying by $\pi/2$ and rearranging gives the displayed value.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4 and <1>5 give the Fourier series, and step <1>6 evaluates the
+::: pf-qed
+Steps [](#fourier-series-generic){.pf-ref} and [](#fourier-series-degenerate){.pf-ref} give the Fourier series, and step [](#sum-value){.pf-ref} evaluates the
 requested sum.
 :::
+
+:::
+
 :::

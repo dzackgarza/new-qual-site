@@ -42,7 +42,10 @@ $$
 be its equatorial disk. As part of the boundary of the upper half-ball, $D$
 has outward unit normal $-\vec k$.
 
-<1>1. The curl is
+::: pf
+
+::: {.pf-step #curl-formula}
+The curl is
 $$
 \boxed{
 \nabla\times\vec F
@@ -51,7 +54,7 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Writing
 $$
 \vec F=(P,Q,R)
@@ -78,13 +81,16 @@ $$
 $$
 :::
 
-<1>2. The outward flux of $\nabla\times\vec F$ through $D$ is
+:::
+
+::: {.pf-step #flux-through-disk}
+The outward flux of $\nabla\times\vec F$ through $D$ is
 $$
 16\pi.
 $$
 
-::: {.proof}
-On $D$ one has $z=0$, so step <1>1 gives
+::: pf-proof
+On $D$ one has $z=0$, so step [](#curl-formula){.pf-ref} gives
 $$
 (\nabla\times\vec F)\cdot(-\vec k)=1-3y.
 $$
@@ -99,15 +105,18 @@ $\operatorname{area}(D)=\pi4^2=16\pi$. Hence the flux through $D$ is
 $16\pi$.
 :::
 
-<1>3. The outward flux over the upper hemisphere is
+:::
+
+::: {.pf-step #flux-through-hemisphere}
+The outward flux over the upper hemisphere is
 $$
 \boxed{
 \iint_S(\nabla\times\vec F)\cdot\vec n\,dS=-16\pi
 }.
 $$
 
-::: {.proof}
-From step <1>1,
+::: pf-proof
+From step [](#curl-formula){.pf-ref},
 $$
 \nabla\cdot(\nabla\times\vec F)=0.
 $$
@@ -119,13 +128,15 @@ $$
 +
 \iint_D(\nabla\times\vec F)\cdot(-\vec k)\,dA.
 $$
-Step <1>2 evaluates the second integral as $16\pi$, so the first is
+Step [](#flux-through-disk){.pf-ref} evaluates the second integral as $16\pi$, so the first is
 $-16\pi$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 answers part (1), and step <1>3 answers part (2).
+::: pf-qed
+Step [](#curl-formula){.pf-ref} answers part (1), and step [](#flux-through-hemisphere){.pf-ref} answers part (2).
+:::
+
 :::
 :::

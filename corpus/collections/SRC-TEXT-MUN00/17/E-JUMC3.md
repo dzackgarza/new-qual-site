@@ -22,21 +22,31 @@ Show that if $U$ is open in $X$ and $A$ is closed in $X$, then $U - A$ is open i
 :::
 
 ::: {.solution}
-<1>1. $U-A$ is open in $X$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #u-minus-a-open}
+$U-A$ is open in $X$.
+
+::: pf-proof
 $U-A=U\cap(X-A)$, and $X-A$ is open because $A$ is closed; a finite intersection of open sets is open.
 :::
 
-<1>2. $A-U$ is closed in $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #a-minus-u-closed}
+$A-U$ is closed in $X$.
+
+::: pf-proof
 $A-U=A\cap(X-U)$, and $X-U$ is closed because $U$ is open; an intersection of closed sets is closed.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2.
 :::
+
+::: pf-qed
+Steps [](#u-minus-a-open){.pf-ref} and [](#a-minus-u-closed){.pf-ref}.
+:::
+
+:::
+
 :::

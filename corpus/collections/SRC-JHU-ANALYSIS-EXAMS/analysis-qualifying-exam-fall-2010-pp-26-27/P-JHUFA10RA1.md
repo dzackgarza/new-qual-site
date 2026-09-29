@@ -48,8 +48,12 @@ Yes. In fact the stronger estimate
 \]
 holds.
 
-<1>1. Extract a subsequence converging almost everywhere.
-::: {.proof}
+::: pf
+
+::: pf-step
+Extract a subsequence converging almost everywhere.
+
+::: pf-proof
 Since $f_j\to f$ in $L^2(\mathbb R^n)$, there is a subsequence $f_{j_k}$ such that
 \[
 f_{j_k}(x)\longrightarrow f(x)
@@ -66,8 +70,12 @@ and apply Tonelli to
 Its integral is finite, so the series is finite almost everywhere; hence its terms tend to zero almost everywhere [@Fol13].
 :::
 
-<1>2. Apply Fatou's lemma with the Gaussian weight.
-::: {.proof}
+:::
+
+::: pf-step
+Apply Fatou's lemma with the Gaussian weight.
+
+::: pf-proof
 For almost every $x$,
 \[
 e^{100|x|^2}|f_{j_k}(x)|^2
@@ -86,5 +94,9 @@ Since $e^{99|x|^2}\le e^{100|x|^2}$,
 \[
 \int_{\mathbb R^n} e^{99|x|^2}|f(x)|^2\,dx\le M<\infty.
 \]
+:::
+
+:::
+
 :::
 :::

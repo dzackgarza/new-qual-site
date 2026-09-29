@@ -45,10 +45,13 @@ $$
 \chi(g)=\operatorname{sgn}(\lambda_g)\in\{\pm1\}.
 $$
 
-<1>1. If $g\in G$ has order $d$, then $\lambda_g$ is a product of
+::: pf
+
+::: {.pf-step #cycle-decomposition}
+If $g\in G$ has order $d$, then $\lambda_g$ is a product of
 $2m/d$ disjoint cycles, each of length $d$.
 
-::: {.proof}
+::: pf-proof
 For any $x\in G$, the orbit of $x$ under repeated application of
 $\lambda_g$ is
 $$
@@ -59,10 +62,13 @@ $d$. These orbits are the cycles of $\lambda_g$, they partition the $2m$
 elements of $G$, and therefore there are $2m/d$ of them.
 :::
 
-<1>2. The permutation $\lambda_g$ is even if and only if $d$ is odd.
+:::
 
-::: {.proof}
-A cycle of length $d$ has sign $(-1)^{d-1}$, so step <1>1 gives
+::: {.pf-step #even-iff-odd-order}
+The permutation $\lambda_g$ is even if and only if $d$ is odd.
+
+::: pf-proof
+A cycle of length $d$ has sign $(-1)^{d-1}$, so step [](#cycle-decomposition){.pf-ref} gives
 $$
 \chi(g)=(-1)^{(d-1)(2m/d)}.
 $$
@@ -77,9 +83,12 @@ is odd, while $d-1$ is also odd. Hence $\chi(g)=-1$. This proves the
 equivalence.
 :::
 
-<1>3. The map $\chi:G\to\{\pm1\}$ is a group homomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #chi-homomorphism}
+The map $\chi:G\to\{\pm1\}$ is a group homomorphism.
+
+::: pf-proof
 For $g,h,x\in G$,
 $$
 \lambda_{gh}(x)=ghx=\lambda_g(\lambda_h(x)),
@@ -91,37 +100,48 @@ $$
 $$
 :::
 
-<1>4. The set $N$ is the kernel of $\chi$.
+:::
 
-::: {.proof}
-By definition, $\chi(g)=1$ exactly when $\lambda_g$ is even. Step <1>2
+::: {.pf-step #n-is-kernel}
+The set $N$ is the kernel of $\chi$.
+
+::: pf-proof
+By definition, $\chi(g)=1$ exactly when $\lambda_g$ is even. Step [](#even-iff-odd-order){.pf-ref}
 shows that this occurs exactly when $g$ has odd order. Hence
 $$
 N=\ker\chi.
 $$
 :::
 
-<1>5. The homomorphism $\chi$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #chi-surjective}
+The homomorphism $\chi$ is surjective.
+
+::: pf-proof
 Because $2$ divides $\abs{G}$, Cauchy's theorem gives an element $t\in G$
-of order $2$. By step <1>2, $\lambda_t$ is odd, so $\chi(t)=-1$. Also
+of order $2$. By step [](#even-iff-odd-order){.pf-ref}, $\lambda_t$ is odd, so $\chi(t)=-1$. Also
 $\chi(e)=1$. Thus the image of $\chi$ is all of $\{\pm1\}$.
 :::
 
-<1>6. The set $N$ is a normal subgroup of $G$ of index $2$.
+:::
 
-::: {.proof}
-By steps <1>3 and <1>4, $N$ is the kernel of a homomorphism, hence is a
-normal subgroup. By step <1>5 and the first isomorphism theorem,
+::: {.pf-step #n-normal-index-two}
+The set $N$ is a normal subgroup of $G$ of index $2$.
+
+::: pf-proof
+By steps [](#chi-homomorphism){.pf-ref} and [](#n-is-kernel){.pf-ref}, $N$ is the kernel of a homomorphism, hence is a
+normal subgroup. By step [](#chi-surjective){.pf-ref} and the first isomorphism theorem,
 $$
 [G:N]=\abs{\operatorname{im}\chi}=2.
 $$
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part (1), and step <1>6 proves part (2).
+::: pf-qed
+Step [](#even-iff-odd-order){.pf-ref} proves part (1), and step [](#n-normal-index-two){.pf-ref} proves part (2).
+:::
+
 :::
 :::

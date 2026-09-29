@@ -26,23 +26,32 @@ The quotient $\mathbb{R}/\mathbb{Z}$ is a familiar topological group; what is it
 ::: {.solution}
 Let $\varphi\colon\mathbb R\to S^1$, $\varphi(t)=e^{2\pi it}$.
 
-<1>1. $\varphi$ is a continuous surjective homomorphism from $(\mathbb R,+)$ to $(S^1,\cdot)$ with kernel $\mathbb Z$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #phi-is-quotient-homomorphism}
+$\varphi$ is a continuous surjective homomorphism from $(\mathbb R,+)$ to $(S^1,\cdot)$ with kernel $\mathbb Z$.
+
+::: pf-proof
 $\varphi(s+t)=\varphi(s)\varphi(t)$, every point of $S^1$ is $e^{2\pi it}$ for some $t$, and $e^{2\pi it}=1$ if and only if $t\in\mathbb Z$.
 :::
 
-<1>2. $\varphi$ is an open map.
+:::
 
-::: {.proof}
+::: {.pf-step #phi-is-open}
+$\varphi$ is an open map.
+
+::: pf-proof
 For each $a\in\mathbb R$, $\varphi$ maps $(a,a+1)$ homeomorphically onto the open arc $S^1-\{\varphi(a)\}$, so it maps open subsets of $(a,a+1)$ to open subsets of $S^1$; every open subset of $\mathbb R$ is a union of such sets.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-By step <1>1 and the first isomorphism theorem, $\varphi$ induces a group isomorphism $\mathbb R/\mathbb Z\to S^1$.
-By steps <1>1 and <1>2, $\varphi$ is a quotient map, so this bijection is a homeomorphism.
+::: pf-qed
+By step [](#phi-is-quotient-homomorphism){.pf-ref} and the first isomorphism theorem, $\varphi$ induces a group isomorphism $\mathbb R/\mathbb Z\to S^1$.
+By steps [](#phi-is-quotient-homomorphism){.pf-ref} and [](#phi-is-open){.pf-ref}, $\varphi$ is a quotient map, so this bijection is a homeomorphism.
 Hence $\mathbb R/\mathbb Z\cong\boxed{S^1}$ as topological groups.
 :::
+
+:::
+
 :::

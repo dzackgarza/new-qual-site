@@ -28,19 +28,28 @@ Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e.
 ::: {.solution}
 **Goal:** Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e. $(fg)'/(fg) = f'/f + g'/g$, wherever $f, g$ are nonzero holomorphic functions.
 
-<1>1. Differentiate $fg$ by the product rule.
-    ::: {.proof}
-    $(fg)' = f'g + fg'$.
-    :::
+::: pf
 
-<1>2. Divide both sides by $fg \neq 0$.
-    ::: {.proof}
-    $\frac{(fg)'}{fg} = \frac{f'g + fg'}{fg} = \frac{f'g}{fg} + \frac{fg'}{fg} = \frac{f'}{f} + \frac{g'}{g}$.
-    :::
+::: {.pf-step #product-rule}
+Differentiate $fg$ by the product rule.
 
-<1>3. Q.E.D.
-    ::: {.proof}
-    <1>1 and <1>2 establish the identity, valid on any region where $f, g$ are holomorphic and $fg \neq 0$.
-    :::
+::: pf-proof
+$(fg)' = f'g + fg'$.
+:::
+
+:::
+
+::: {.pf-step #divide-by-fg}
+Divide both sides by $fg \neq 0$.
+
+::: pf-proof
+$\frac{(fg)'}{fg} = \frac{f'g + fg'}{fg} = \frac{f'g}{fg} + \frac{fg'}{fg} = \frac{f'}{f} + \frac{g'}{g}$.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#product-rule){.pf-ref} and [](#divide-by-fg){.pf-ref} establish the identity, valid on any region where $f, g$ are holomorphic and $fg \neq 0$.
+:::
 
 :::

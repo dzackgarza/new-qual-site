@@ -29,22 +29,31 @@ $$
 h\colon P\times X_n\to X_1\times\cdots\times X_n,\qquad h((x_1,\ldots,x_{n-1}),x_n)=(x_1,\ldots,x_n).
 $$
 
-<1>1. $h$ is a continuous bijection.
+::: pf
 
-::: {.proof}
+::: {.pf-step #h-continuous-bijection}
+$h$ is a continuous bijection.
+
+::: pf-proof
 It has inverse $k(x_1,\ldots,x_n)=((x_1,\ldots,x_{n-1}),x_n)$.
 Its coordinates are $\pi_i\circ h=p_i\circ q_1$ for $i<n$ and $\pi_n\circ h=q_2$, composites of continuous projections; a map into a product is continuous if and only if its coordinates are.
 :::
 
-<1>2. $k=h^{-1}$ is continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #k-continuous}
+$k=h^{-1}$ is continuous.
+
+::: pf-proof
 Its coordinates are $q_1\circ k=(\pi_1,\ldots,\pi_{n-1})\colon X_1\times\cdots\times X_n\to P$, continuous because its coordinates $\pi_i$ are, and $q_2\circ k=\pi_n$.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By steps <1>1 and <1>2, $h$ is a homeomorphism.
 :::
+
+::: pf-qed
+By steps [](#h-continuous-bijection){.pf-ref} and [](#k-continuous){.pf-ref}, $h$ is a homeomorphism.
+:::
+
+:::
+
 :::

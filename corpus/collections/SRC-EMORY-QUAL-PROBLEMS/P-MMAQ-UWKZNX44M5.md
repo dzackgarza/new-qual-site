@@ -40,9 +40,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. A group with cyclic quotient by its center is abelian.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #cyclic-quotient-by-center-implies-abelian}
+A group with cyclic quotient by its center is abelian.
+
+::: pf-proof
 Choose $a\in G$ whose coset generates $G/Z(G)$.
 Every element of $G$ has the form $a^i z$ for some
 integer $i$ and $z\in Z(G)$. For any two such elements,
@@ -55,10 +59,13 @@ Thus every pair of elements commutes. The argument
 also covers the trivial cyclic quotient by taking $a=1$.
 :::
 
-<1>2. A group of order $p^n$, with $n\geq1$, has
+:::
+
+::: {.pf-step #p-group-has-nontrivial-center}
+A group of order $p^n$, with $n\geq1$, has
 nontrivial center.
 
-::: {.proof}
+::: pf-proof
 Let $G$ act on itself by conjugation. The orbit of
 $x$ has size $[G:C_G(x)]$ by orbit-stabilizer, where
 $C_G(x)$ is its centralizer [@DF04]. The orbit has
@@ -72,16 +79,23 @@ one has $p\mid|Z(G)|$. The center contains the identity,
 so its positive order is at least $p$.
 :::
 
-<1>3. Every group of order $p^2$ is abelian.
+:::
 
-::: {.proof}
-By step <1>2 and Lagrange's theorem, the center has
+::: pf-step
+Every group of order $p^2$ is abelian.
+
+::: pf-proof
+By step [](#p-group-has-nontrivial-center){.pf-ref} and Lagrange's theorem, the center has
 order $p$ or $p^2$. In the second case $Z(G)=G$,
 so the group is abelian. In the first case $G/Z(G)$
 has prime order $p$. A group of prime order is cyclic:
 any nonidentity element generates a subgroup whose
-order divides $p$ and exceeds one. Step <1>1 then
+order divides $p$ and exceeds one. Step [](#cyclic-quotient-by-center-implies-abelian){.pf-ref} then
 again gives that $G$ is abelian. In fact this rules
 out center order $p$, leaving $Z(G)=G$.
+:::
+
+:::
+
 :::
 :::

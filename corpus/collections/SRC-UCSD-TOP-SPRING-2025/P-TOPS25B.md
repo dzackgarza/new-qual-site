@@ -20,21 +20,39 @@ Compute its singular homology with integral coefficients.
 :::
 
 ::: {.solution}
-<1>1. The quotient $X=\mathbb{RP}^9/\mathbb{RP}^4$ inherits one cell in each dimension $5,6,7,8,9$, together with the quotient basepoint.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The quotient $X=\mathbb{RP}^9/\mathbb{RP}^4$ inherits one cell in each dimension $5,6,7,8,9$, together with the quotient basepoint.
+
+::: pf-proof
 Use the standard CW filtration $\mathbb{RP}^0\subset\cdots\subset\mathbb{RP}^9$ and collapse its $4$-skeleton.
 :::
 
-<1>2. Its reduced cellular chain complex is
+:::
+
+::: {.pf-step #reduced-chain-complex}
+Its reduced cellular chain complex is
 $$0\to\mathbb Z\xrightarrow{2}\mathbb Z\xrightarrow0\mathbb Z\xrightarrow2\mathbb Z\xrightarrow0\mathbb Z\to0,$$
 with the terms in degrees $9,8,7,6,5$.
-::: {.proof}
+
+::: pf-proof
 For real projective space the cellular boundary in degree $k$ is multiplication by $1+(-1)^k$: it is $0$ for odd $k$ and $2$ for even $k$.
 :::
 
-<1>3. Therefore
-$$\boxed{H_i(X;\mathbb Z)\cong\begin{cases}\mathbb Z,&i=0,9,\\ \mathbb Z/2,&i=5,7,\\0,&\text{otherwise.}\end{cases}}$$
-::: {.proof}
-Read kernels modulo images from the complex in <1>2.
 :::
+
+::: pf-step
+Therefore
+$$\boxed{H_i(X;\mathbb Z)\cong\begin{cases}\mathbb Z,&i=0,9,\\ \mathbb Z/2,&i=5,7,\\0,&\text{otherwise.}\end{cases}}$$
+
+::: pf-proof
+Read kernels modulo images from the complex in step [](#reduced-chain-complex){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

@@ -40,12 +40,15 @@ J_m(a)\coloneqq
 \int_{-\infty}^{\infty}\frac{dx}{(a+x^2)^m}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #j1-formula}
+One has
 $$
 J_1(a)=\pi a^{-1/2}.
 $$
 
-::: {.proof}
+::: pf-proof
 With the substitution $x=\sqrt a\,t$,
 $$
 \begin{aligned}
@@ -58,12 +61,15 @@ J_1(a)
 $$
 :::
 
-<1>2. For every $m\ge1$,
+:::
+
+::: {.pf-step #recurrence}
+For every $m\ge1$,
 $$
 J_{m+1}(a)=-\frac1mJ_m'(a).
 $$
 
-::: {.proof}
+::: pf-proof
 Differentiating under the integral sign gives
 $$
 J_m'(a)
@@ -76,7 +82,10 @@ value of the differentiated integrand is bounded by a constant
 multiple of $(1+x^2)^{-m-1}$, which is integrable.
 :::
 
-<1>3. Successive applications of step <1>2 give
+:::
+
+::: {.pf-step #j-values}
+Successive applications of step [](#recurrence){.pf-ref} give
 $$
 \begin{aligned}
 J_2(a)&=\frac{\pi}{2}a^{-3/2},\\
@@ -86,8 +95,8 @@ J_5(a)&=\frac{35\pi}{128}a^{-9/2}.
 \end{aligned}
 $$
 
-::: {.proof}
-Starting from step <1>1,
+::: pf-proof
+Starting from step [](#j1-formula){.pf-ref},
 $$
 J_2(a)
 =-J_1'(a)
@@ -112,7 +121,10 @@ J_5(a)
 $$
 :::
 
-<1>4. Setting $a=1$ yields
+:::
+
+::: {.pf-step #integral-value}
+Setting $a=1$ yields
 $$
 \boxed{
 \int_{-\infty}^{\infty}\frac{dx}{(1+x^2)^5}
@@ -120,13 +132,16 @@ $$
 }
 $$
 
-::: {.proof}
-The integral is $J_5(1)$ by definition, and step <1>3 gives its value.
+::: pf-proof
+The integral is $J_5(1)$ by definition, and step [](#j-values){.pf-ref} gives its value.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested evaluation.
 :::
+
+::: pf-qed
+Step [](#integral-value){.pf-ref} is the requested evaluation.
+:::
+
+:::
+
 :::

@@ -38,8 +38,13 @@ Show that there is a unique morphism $g: X \to Y_{\mathrm{red}}$ such that $f$ i
 :::
 
 ::: {.solution}
-<1>1. If every ring of sections $\mathcal O_X(U)$ is reduced, then every local ring $\mathcal O_{X,P}$ is reduced.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #sections-reduced-implies-stalks-reduced}
+If every ring of sections $\mathcal O_X(U)$ is reduced, then every local ring $\mathcal O_{X,P}$ is reduced.
+
+::: pf-proof
 Let
 \[
 \xi\in\mathcal O_{X,P}
@@ -80,8 +85,12 @@ Hence
 Thus the local ring has no nonzero nilpotents.
 :::
 
-<1>2. Conversely, if every local ring $\mathcal O_{X,P}$ is reduced, then every ring $\mathcal O_X(U)$ is reduced.
-::: {.proof}
+:::
+
+::: {.pf-step #stalks-reduced-implies-sections-reduced}
+Conversely, if every local ring $\mathcal O_{X,P}$ is reduced, then every ring $\mathcal O_X(U)$ is reduced.
+
+::: pf-proof
 Let
 \[
 s\in\mathcal O_X(U)
@@ -109,7 +118,10 @@ s=0.
 So $\mathcal O_X(U)$ is reduced.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #reduced-iff-local-rings-reduced}
+Therefore
 \[
 \boxed{
 X\text{ is reduced}
@@ -117,11 +129,15 @@ X\text{ is reduced}
 \mathcal O_{X,P}\text{ is reduced for every }P\in X.
 }
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+Combine steps [](#sections-reduced-implies-stalks-reduced){.pf-ref} and [](#stalks-reduced-implies-sections-reduced){.pf-ref}.
 :::
 
-<1>4. Reduction commutes with localization.
+:::
+
+::: {.pf-step #reduction-commutes-with-localization}
+Reduction commutes with localization.
 For a ring $A$ and $f\in A$,
 \[
 \boxed{
@@ -134,7 +150,8 @@ where
 \[
 A_{\mathrm{red}}=A/\sqrt{(0)}.
 \]
-::: {.proof}
+
+::: pf-proof
 The nilradical localizes:
 \[
 \sqrt{(0)}_{A_f}
@@ -166,7 +183,10 @@ A_f/(\sqrt0)_f
 \]
 :::
 
-<1>5. Let
+:::
+
+::: {.pf-step #reduced-sheaf-restricts-to-specared}
+Let
 \[
 V=\operatorname{Spec}A\subseteq X
 \]
@@ -175,7 +195,8 @@ Then the restriction of $(\mathcal O_X)_{\mathrm{red}}$ to $V$ is the usual stru
 \[
 \operatorname{Spec}A_{\mathrm{red}}.
 \]
-::: {.proof}
+
+::: pf-proof
 On the distinguished basis
 \[
 D(f)\subseteq V,
@@ -185,7 +206,7 @@ the presheaf whose sheafification defines $(\mathcal O_X)_{\mathrm{red}}$ has va
 \mathcal O_X(D(f))_{\mathrm{red}}
 =(A_f)_{\mathrm{red}}.
 \]
-By <1>4 this is
+By step [](#reduction-commutes-with-localization){.pf-ref} this is
 \[
 (A_{\mathrm{red}})_{\bar f},
 \]
@@ -196,7 +217,10 @@ which is exactly
 These identifications commute with restriction maps, so after sheafification the two structure sheaves agree on the affine chart.
 :::
 
-<1>6. The quotient map
+:::
+
+::: {.pf-step #speca-red-homeomorphic-to-speca}
+The quotient map
 \[
 A\longrightarrow A_{\mathrm{red}}
 \]
@@ -208,7 +232,8 @@ induces a homeomorphism
 \operatorname{Spec}A.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Every prime ideal of $A$ contains the nilradical
 \[
 \sqrt{(0)}.
@@ -232,35 +257,43 @@ define corresponding prime sets.
 Thus the bijection is a homeomorphism.
 :::
 
-<1>7. The locally ringed space
+:::
+
+::: {.pf-step #xred-is-scheme}
+The locally ringed space
 \[
 X_{\mathrm{red}}
 :=
 \left(X,(\mathcal O_X)_{\mathrm{red}}\right)
 \]
 is a scheme.
-::: {.proof}
+
+::: pf-proof
 Choose an affine open cover
 \[
 X=\bigcup_iV_i,
 \qquad
 V_i\cong\operatorname{Spec}A_i.
 \]
-By <1>5--<1>6, on the same underlying open subset $V_i$ the reduced structure is isomorphic to
+By steps [](#reduced-sheaf-restricts-to-specared){.pf-ref} and [](#speca-red-homeomorphic-to-speca){.pf-ref}, on the same underlying open subset $V_i$ the reduced structure is isomorphic to
 \[
 \operatorname{Spec}(A_i)_{\mathrm{red}}.
 \]
 Thus $X_{\mathrm{red}}$ is covered by affine schemes and hence is a scheme.
 :::
 
-<1>8. The identity map of the underlying topological space, together with the quotient on structure sheaves, defines a morphism
+:::
+
+::: {.pf-step #iota-morphism-homeomorphism}
+The identity map of the underlying topological space, together with the quotient on structure sheaves, defines a morphism
 \[
 \boxed{
 \iota:X_{\mathrm{red}}\longrightarrow X
 }
 \]
 which is a homeomorphism on underlying spaces.
-::: {.proof}
+
+::: pf-proof
 Sectionwise quotient gives a morphism of presheaves
 \[
 \mathcal O_X
@@ -288,7 +321,7 @@ Affinely it is the morphism
 \longrightarrow
 \operatorname{Spec}A
 \]
-from <1>6, so it is a homeomorphism locally and hence globally.
+from step [](#speca-red-homeomorphic-to-speca){.pf-ref}, so it is a homeomorphism locally and hence globally.
 
 On a stalk it is the quotient
 \[
@@ -300,7 +333,10 @@ The inverse image of the maximal ideal of the quotient is the maximal ideal of t
 Thus $\iota$ is a morphism of schemes.
 :::
 
-<1>9. Let
+:::
+
+::: {.pf-step #fsharp-kills-nilpotents}
+Let
 \[
 f:X\longrightarrow Y
 \]
@@ -312,7 +348,8 @@ f^\sharp:\mathcal O_Y
 f_*\mathcal O_X
 \]
 annihilates every nilpotent local section of $\mathcal O_Y$.
-::: {.proof}
+
+::: pf-proof
 Let $V\subseteq Y$ be open and suppose
 \[
 s\in\mathcal O_Y(V)
@@ -338,7 +375,10 @@ f^\sharp(s)=0.
 \]
 :::
 
-<1>10. The morphism $f^\sharp$ factors uniquely through the reduced structure sheaf:
+:::
+
+::: {.pf-step #fsharp-factors-through-reduced}
+The morphism $f^\sharp$ factors uniquely through the reduced structure sheaf:
 \[
 \boxed{
 \mathcal O_Y
@@ -348,8 +388,9 @@ f^\sharp(s)=0.
 f_*\mathcal O_X.
 }
 \]
-::: {.proof}
-By <1>9, on each open set $V$ the ring map
+
+::: pf-proof
+By step [](#fsharp-kills-nilpotents){.pf-ref}, on each open set $V$ the ring map
 \[
 \mathcal O_Y(V)
 \longrightarrow
@@ -372,20 +413,24 @@ By the universal property of sheafification, it factors uniquely through
 \]
 :::
 
-<1>11. The continuous map underlying $g$ is the same as the map underlying $f$, and the morphism
+:::
+
+::: {.pf-step #g-morphism-of-schemes}
+The continuous map underlying $g$ is the same as the map underlying $f$, and the morphism
 \[
 g:X\longrightarrow Y_{\mathrm{red}}
 \]
-defined by <1>10 is a morphism of schemes satisfying
+defined by step [](#fsharp-factors-through-reduced){.pf-ref} is a morphism of schemes satisfying
 \[
 f=\iota_Y\circ g.
 \]
-::: {.proof}
+
+::: pf-proof
 The reduction morphism
 \[
 \iota_Y:Y_{\mathrm{red}}\to Y
 \]
-is the identity on the underlying topological space by <1>8, so any factorization of $f$ through it must use the same continuous map
+is the identity on the underlying topological space by step [](#iota-morphism-homeomorphism){.pf-ref}, so any factorization of $f$ through it must use the same continuous map
 \[
 |X|\to|Y|=|Y_{\mathrm{red}}|.
 \]
@@ -423,11 +468,15 @@ The equality
 \[
 f=\iota_Y\circ g
 \]
-holds both on underlying spaces and on structure sheaves by the factorization in <1>10.
+holds both on underlying spaces and on structure sheaves by the factorization in step [](#fsharp-factors-through-reduced){.pf-ref}.
 :::
 
-<1>12. The factorization $g$ is unique.
-::: {.proof}
+:::
+
+::: {.pf-step #g-unique}
+The factorization $g$ is unique.
+
+::: pf-proof
 Any such factorization must have the same underlying continuous map, because
 \[
 |Y_{\mathrm{red}}|\to|Y|
@@ -444,11 +493,14 @@ must compose with
 \mathcal O_Y\to(\mathcal O_Y)_{\mathrm{red}}
 \]
 to give $f^\sharp$.
-The uniqueness in <1>10 therefore forces the sheaf map to be $g^\sharp$.
+The uniqueness in step [](#fsharp-factors-through-reduced){.pf-ref} therefore forces the sheaf map to be $g^\sharp$.
 Hence the scheme morphism is unique.
 :::
 
-<1>13. Thus reduction has the universal property
+:::
+
+::: {.pf-step #universal-property-of-reduction}
+Thus reduction has the universal property
 \[
 \boxed{
 \operatorname{Hom}(X,Y_{\mathrm{red}})
@@ -457,12 +509,17 @@ Hence the scheme morphism is unique.
 }
 \]
 for every reduced scheme $X$.
-::: {.proof}
-Existence and uniqueness are exactly <1>11 and <1>12.
+
+::: pf-proof
+Existence and uniqueness are exactly steps [](#g-morphism-of-schemes){.pf-ref} and [](#g-unique){.pf-ref}.
 :::
 
-<1>14. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), <1>4--<1>8 prove part (b), and <1>9--<1>13 prove part (c).
 :::
+
+::: pf-qed
+Steps [](#sections-reduced-implies-stalks-reduced){.pf-ref}, [](#stalks-reduced-implies-sections-reduced){.pf-ref} and [](#reduced-iff-local-rings-reduced){.pf-ref} prove part (a), steps [](#reduction-commutes-with-localization){.pf-ref}, [](#reduced-sheaf-restricts-to-specared){.pf-ref}, [](#speca-red-homeomorphic-to-speca){.pf-ref}, [](#xred-is-scheme){.pf-ref} and [](#iota-morphism-homeomorphism){.pf-ref} prove part (b), and steps [](#fsharp-kills-nilpotents){.pf-ref}, [](#fsharp-factors-through-reduced){.pf-ref}, [](#g-morphism-of-schemes){.pf-ref}, [](#g-unique){.pf-ref} and [](#universal-property-of-reduction){.pf-ref} prove part (c).
+:::
+
+:::
+
 :::

@@ -22,8 +22,13 @@ Note, mathematically, this can be written as: there exists $U \in M_n(\mathbb{C}
 :::
 
 ::: {.solution}
-<1>1. If $A$ is unitarily diagonalizable, then $A$ is normal.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #diagonalizable-implies-normal}
+If $A$ is unitarily diagonalizable, then $A$ is normal.
+
+::: pf-proof
 Suppose
 \[
 A=UDU^H
@@ -41,8 +46,12 @@ AA^H=UDD^HU^H.
 Since $D$ is diagonal, $D^HD=DD^H$, so $A^HA=AA^H$.
 :::
 
-<1>2. Every upper-triangular normal matrix is diagonal.
-::: {.proof}
+:::
+
+::: {.pf-step #upper-triangular-normal-is-diagonal}
+Every upper-triangular normal matrix is diagonal.
+
+::: pf-proof
 We argue by induction on the size $n$. The case $n=1$ is immediate.
 
 Let $T=(t_{ij})\in M_n(\mathbb C)$ be upper triangular and normal. Comparing the $(1,1)$ entries of
@@ -66,8 +75,12 @@ T=\begin{pmatrix}t_{11}&0\\0&B\end{pmatrix}
 with $B$ upper triangular. Normality of $T$ implies $B$ is normal, so by induction $B$ is diagonal. Hence $T$ is diagonal.
 :::
 
-<1>3. If $A$ is normal, then $A$ is unitarily diagonalizable.
-::: {.proof}
+:::
+
+::: {.pf-step #normal-implies-diagonalizable}
+If $A$ is normal, then $A$ is unitarily diagonalizable.
+
+::: pf-proof
 By Schur decomposition there exists a unitary matrix $U$ such that
 \[
 T=U^HAU
@@ -80,18 +93,27 @@ T^HT=U^HA^HAU,
 TT^H=U^HAA^HU.
 \]
 Since $A^HA=AA^H$, we have $T^HT=TT^H$, so $T$ is normal.
-By <1>2, $T$ is diagonal. Therefore
+By step [](#upper-triangular-normal-is-diagonal){.pf-ref}, $T$ is diagonal. Therefore
 \[
 U^HAU=T
 \]
 is diagonal, so $A$ is unitarily diagonalizable.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{A\text{ is unitarily diagonalizable}\iff A\text{ is normal}.}
 \]
-::: {.proof}
-The forward implication is <1>1 and the reverse implication is <1>3.
+
+::: pf-proof
+The forward implication is step [](#diagonalizable-implies-normal){.pf-ref} and the reverse implication is step [](#normal-implies-diagonalizable){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

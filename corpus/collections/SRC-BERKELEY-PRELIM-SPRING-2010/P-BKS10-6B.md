@@ -36,12 +36,15 @@ $$
 E\coloneqq7^{7^7}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #e-mod-four}
+One has
 $$
 E\equiv3\pmod4.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 7\equiv3\pmod4
@@ -59,9 +62,12 @@ E
 $$
 :::
 
-<1>2. Powers of $7$ modulo $10$ have period $4$.
+:::
 
-::: {.proof}
+::: {.pf-step #powers-of-seven-period}
+Powers of $7$ modulo $10$ have period $4$.
+
+::: pf-proof
 Directly,
 $$
 7^1\equiv7,
@@ -76,17 +82,20 @@ $$
 Multiplication by $7^4\equiv1$ repeats the cycle.
 :::
 
-<1>3. The last decimal digit of the given power tower is
+:::
+
+::: {.pf-step #last-digit}
+The last decimal digit of the given power tower is
 $$
 \boxed{3}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#e-mod-four){.pf-ref},
 $$
 E\equiv3\pmod4.
 $$
-By the period in step <1>2,
+By the period in step [](#powers-of-seven-period){.pf-ref},
 $$
 7^E
 \equiv
@@ -98,9 +107,12 @@ $$
 Thus the last decimal digit is $3$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested digit.
 :::
+
+::: pf-qed
+Step [](#last-digit){.pf-ref} gives the requested digit.
+:::
+
+:::
+
 :::

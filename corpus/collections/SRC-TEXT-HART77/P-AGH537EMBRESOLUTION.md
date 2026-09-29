@@ -61,7 +61,10 @@ $$
 where only singular points $Q$ of the successive strict transforms
 contribute, since a smooth point has multiplicity one.
 
-<1>1. For (a),
+::: pf
+
+::: {.pf-step #a-first-blowup}
+For (a),
 $$
 C_a:\quad x^3+y^5=0,
 $$
@@ -76,7 +79,7 @@ x=uv,
 y=v.
 $$
 
-::: {.proof}
+::: pf-proof
 Substitution gives
 $$
 x^3+y^5
@@ -99,7 +102,10 @@ is its unique point over the origin. It has multiplicity $2$, and its
 tangent is $v=0$, the exceptional curve $E_1$.
 :::
 
-<1>2. Blowing up $Q_1$ in (a), with
+:::
+
+::: {.pf-step #a-second-blowup}
+Blowing up $Q_1$ in (a), with
 $$
 v=uw,
 $$
@@ -110,7 +116,7 @@ $$
 This strict transform is smooth but passes through the intersection of the
 two exceptional curves and is tangent to the new exceptional curve.
 
-::: {.proof}
+::: pf-proof
 Substitution gives
 $$
 u^3+u^2w^2
@@ -129,13 +135,16 @@ The curve $u+w^2=0$ is smooth at their intersection $(0,0)$, but its tangent
 is $u=0=E_2$. Thus the total transform is not yet normal crossings.
 :::
 
-<1>3. The third blowup in (a) produces a point at which the strict transform
+:::
+
+::: {.pf-step #a-third-fourth-blowup}
+The third blowup in (a) produces a point at which the strict transform
 and two exceptional curves meet with three distinct tangent directions; a
 fourth blowup separates these three branches and completes an embedded
 resolution.
 
-::: {.proof}
-At the point of step <1>2 use
+::: pf-proof
+At the point of step [](#a-second-blowup){.pf-ref} use
 $$
 u=st,
 \qquad
@@ -166,12 +175,15 @@ three distinct points. All remaining intersections are transverse, so the
 total transform is simple normal crossings.
 :::
 
-<1>4. For (a),
+:::
+
+::: {.pf-step #a-delta-four}
+For (a),
 $$
 \boxed{\delta_P(C_a)=4}.
 $$
 
-::: {.proof}
+::: pf-proof
 The strict transform is singular only at the original point, of multiplicity
 $3$, and at $Q_1$, of multiplicity $2$. All later centres lie on a smooth
 strict transform. Hence
@@ -185,7 +197,10 @@ $$
 $$
 :::
 
-<1>5. For (b),
+:::
+
+::: {.pf-step #b-first-two-blowups}
+For (b),
 $$
 C_b:\quad x^3+x^4+y^5=0,
 $$
@@ -198,7 +213,7 @@ $$
 u+w^2+u^3w=0.
 $$
 
-::: {.proof}
+::: pf-proof
 The same first chart $x=uv$, $y=v$ gives
 $$
 x^3+x^4+y^5
@@ -216,13 +231,16 @@ Thus the second strict transform is smooth, passes through $E_1'\cap E_2$,
 and is tangent to $E_2:(u=0)$ exactly as in (a).
 :::
 
-<1>6. The third and fourth blowups for (b) have the same incidence pattern
+:::
+
+::: {.pf-step #b-third-fourth-delta}
+The third and fourth blowups for (b) have the same incidence pattern
 as for (a), and
 $$
 \boxed{\delta_P(C_b)=4}.
 $$
 
-::: {.proof}
+::: pf-proof
 At the third centre put $u=st$, $w=s$. The second strict-transform equation
 becomes
 $$
@@ -233,7 +251,7 @@ $$
 t+s+s^3t^3=0.
 $$
 Its tangent at the origin is $t+s=0$, distinct from the two exceptional
-directions $s=0$ and $t=0$. Thus, exactly as in step <1>3, a fourth blowup
+directions $s=0$ and $t=0$. Thus, exactly as in step [](#a-third-fourth-blowup){.pf-ref}, a fourth blowup
 of the triple point completes the embedded resolution.
 
 The only singular strict transforms have multiplicities $3$ and $2$.
@@ -243,7 +261,10 @@ $$
 $$
 :::
 
-<1>7. For (d),
+:::
+
+::: {.pf-step #d-first-two-blowups}
+For (d),
 $$
 C_d:\quad x^3+y^5+y^6=0,
 $$
@@ -256,7 +277,7 @@ $$
 u+w^2+uw^3=0.
 $$
 
-::: {.proof}
+::: pf-proof
 The first blowup gives
 $$
 x^3+y^5+y^6
@@ -274,13 +295,16 @@ The second strict transform is smooth and tangent to $E_2:(u=0)$ at
 $E_1'\cap E_2$, just as in (a) and (b).
 :::
 
-<1>8. The third and fourth blowups for (d) again have the same incidence
+:::
+
+::: {.pf-step #d-third-fourth-delta}
+The third and fourth blowups for (d) again have the same incidence
 pattern as (a), and
 $$
 \boxed{\delta_P(C_d)=4}.
 $$
 
-::: {.proof}
+::: pf-proof
 With $u=st$, $w=s$, the second strict-transform equation becomes
 $$
 s\bigl(t+s+s^3t\bigr)=0.
@@ -297,10 +321,13 @@ $$
 $$
 :::
 
-<1>9. The singularities (a), (b), and (d) are equivalent.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3, <1>5--<1>6, and <1>7--<1>8 exhibit the same succession of
+::: {.pf-step #abd-equivalent}
+The singularities (a), (b), and (d) are equivalent.
+
+::: pf-proof
+Steps [](#a-first-blowup){.pf-ref}, [](#a-second-blowup){.pf-ref} and [](#a-third-fourth-blowup){.pf-ref}, steps [](#b-first-two-blowups){.pf-ref} and [](#b-third-fourth-delta){.pf-ref}, and steps [](#d-first-two-blowups){.pf-ref} and [](#d-third-fourth-delta){.pf-ref} exhibit the same succession of
 centres, exceptional-component incidences, tangencies, and multiplicities:
 the curve has multiplicities $3,2,1,1$ at the four centres; after the first
 blowup it is a double point tangent to $E_1$; after the second it is smooth,
@@ -321,7 +348,10 @@ $$
 for (d), which analytically identify both germs with (a).
 :::
 
-<1>10. For (c),
+:::
+
+::: {.pf-step #c-first-blowup}
+For (c),
 $$
 C_c:\quad x^3+y^4+y^5=0,
 $$
@@ -331,7 +361,7 @@ u^3+v+v^2=0,
 $$
 which is tangent to the exceptional curve.
 
-::: {.proof}
+::: pf-proof
 With $x=uv$, $y=v$,
 $$
 x^3+y^4+y^5
@@ -342,13 +372,16 @@ The strict transform is smooth at the origin because the coefficient of
 $v$ in its linear term is $1$. Its tangent is $v=0=E_1$.
 :::
 
-<1>11. Three further blowups give an embedded resolution of (c), and
+:::
+
+::: {.pf-step #c-resolution-delta-three}
+Three further blowups give an embedded resolution of (c), and
 $$
 \boxed{\delta_P(C_c)=3}.
 $$
 
-::: {.proof}
-Blow up the tangency in step <1>10 by setting $v=uw$. Then
+::: pf-proof
+Blow up the tangency in step [](#c-first-blowup){.pf-ref} by setting $v=uw$. Then
 $$
 u^3+uw+u^2w^2
 =
@@ -376,16 +409,22 @@ $$
 $$
 :::
 
-<1>12. The singularity (c) is not equivalent to any of (a), (b), or (d).
+:::
 
-::: {.proof}
+::: {.pf-step #c-not-equivalent}
+The singularity (c) is not equivalent to any of (a), (b), or (d).
+
+::: pf-proof
 After the first blowup, (c) is already smooth, whereas the strict transforms
 of (a), (b), and (d) have multiplicity $2$. Thus their infinitely near
 multiplicity data differ. Equivalently, the delta invariant of (c) is $3$
 while that of (a), (b), and (d) is $4$.
 :::
 
-<1>13. For (e),
+:::
+
+::: {.pf-step #e-first-blowup-node}
+For (e),
 $$
 C_e:\quad x^3+xy^3+y^5=0,
 $$
@@ -398,7 +437,7 @@ $$
 v(u+v)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 With $x=uv$, $y=v$,
 $$
 x^3+xy^3+y^5
@@ -414,12 +453,15 @@ ordinary node of multiplicity $2$ there. One branch is tangent to the old
 exceptional curve $E_1:(v=0)$ and the other has tangent $u+v=0$.
 :::
 
-<1>14. Two further blowups give an embedded resolution of (e), and
+:::
+
+::: {.pf-step #e-resolution-delta-four}
+Two further blowups give an embedded resolution of (e), and
 $$
 \boxed{\delta_P(C_e)=4}.
 $$
 
-::: {.proof}
+::: pf-proof
 Blow up the node with $v=uw$. Then
 $$
 u^3+u^2w+u^2w^2
@@ -449,9 +491,12 @@ $$
 $$
 :::
 
-<1>15. The singularity (e) is not equivalent to any of (a)--(d).
+:::
 
-::: {.proof}
+::: {.pf-step #e-not-equivalent}
+The singularity (e) is not equivalent to any of (a)--(d).
+
+::: pf-proof
 The first strict transform of (e) is a node and therefore has two analytic
 branches. In contrast, (a), (b), (c), and (d) have a single branch through
 every infinitely near point in their displayed resolutions. Correspondingly,
@@ -462,7 +507,10 @@ Branch incidence and the exceptional-resolution graph are part of the
 equivalence data in (3.9.4), so (e) is inequivalent to all four others.
 :::
 
-<1>16. The complete answer is
+:::
+
+::: {.pf-step #summary-table}
+The complete answer is
 $$
 \boxed{
 \begin{array}{c|ccccc}
@@ -475,16 +523,18 @@ $$
 \boxed{\{(a),(b),(d)\},\qquad\{(c)\},\qquad\{(e)\}.}
 $$
 
-::: {.proof}
-The delta values are steps <1>4, <1>6, <1>11, <1>8, and <1>14.
-Step <1>9 proves the equivalence of (a), (b), and (d); steps <1>12 and
-<1>15 separate (c) and (e) from all other classes.
+::: pf-proof
+The delta values are steps [](#a-delta-four){.pf-ref}, [](#b-third-fourth-delta){.pf-ref}, [](#c-resolution-delta-three){.pf-ref}, [](#d-third-fourth-delta){.pf-ref}, and [](#e-resolution-delta-four){.pf-ref}.
+Step [](#abd-equivalent){.pf-ref} proves the equivalence of (a), (b), and (d); steps [](#c-not-equivalent){.pf-ref} and
+[](#e-not-equivalent){.pf-ref} separate (c) and (e) from all other classes.
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>16 give an embedded resolution, delta invariant, and
+::: pf-qed
+Steps [](#a-first-blowup){.pf-ref}, [](#a-second-blowup){.pf-ref}, [](#a-third-fourth-blowup){.pf-ref}, [](#a-delta-four){.pf-ref}, [](#b-first-two-blowups){.pf-ref}, [](#b-third-fourth-delta){.pf-ref}, [](#d-first-two-blowups){.pf-ref}, [](#d-third-fourth-delta){.pf-ref}, [](#abd-equivalent){.pf-ref}, [](#c-first-blowup){.pf-ref}, [](#c-resolution-delta-three){.pf-ref}, [](#c-not-equivalent){.pf-ref}, [](#e-first-blowup-node){.pf-ref}, [](#e-resolution-delta-four){.pf-ref}, [](#e-not-equivalent){.pf-ref} and [](#summary-table){.pf-ref} give an embedded resolution, delta invariant, and
 equivalence classification for every singularity in the exercise.
+:::
+
 :::
 :::

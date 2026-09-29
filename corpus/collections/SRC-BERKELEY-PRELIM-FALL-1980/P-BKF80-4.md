@@ -25,9 +25,12 @@ $$
 ::: {.solution}
 Choose a unit vector $w\in v^\perp$, and let $R\in SO(3)$ be the rotation through $180^\circ$ about the line $\RR w$.
 
-<1>1. $H_v$ is a subgroup of $G$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #hv-subgroup}
+$H_v$ is a subgroup of $G$.
+
+::: pf-proof
 The identity fixes $v$, so $I\in H_v$. If $T,U\in H_v$, then
 $$
 (TU)v=T(Uv)=Tv=v,
@@ -39,12 +42,15 @@ $$
 so $T^{-1}\in H_v$. Hence $H_v\leq G$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #sv-characterization}
+One has
 $$
 S_v=\{T\in SO(3):Tv=-v\}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $T\in S_v$, its rotation axis is a line $L\subset v^\perp$. A half-turn fixes $L$ pointwise and acts as $-I$ on $L^\perp$. Since $v\perp L$, one has $Tv=-v$.
 
 Conversely, suppose $T\in SO(3)$ and $Tv=-v$. Because $T$ is orthogonal, the plane $v^\perp$ is $T$-invariant. Moreover,
@@ -54,27 +60,32 @@ $$
 An orthogonal operator on a two-dimensional real inner-product space with determinant $-1$ has eigenvalues $1$ and $-1$. Hence there is a unit vector $u\in v^\perp$ with $Tu=u$. If $z\in v^\perp$ is a unit vector orthogonal to $u$, then the determinant condition forces $Tz=-z$. Together with $Tv=-v$, this shows that $T$ fixes the axis $\RR u$ and negates its orthogonal complement. Thus $T$ is the rotation through $180^\circ$ about the line $\RR u\subset v^\perp$, so $T\in S_v$.
 :::
 
-<1>3. $S_v=\boxed{R H_v}$.
+:::
 
-::: {.proof}
-Since the axis of $R$ lies in $v^\perp$, step <1>2 gives $Rv=-v$.
+::: {.pf-step #sv-coset}
+$S_v=\boxed{R H_v}$.
+
+::: pf-proof
+Since the axis of $R$ lies in $v^\perp$, step [](#sv-characterization){.pf-ref} gives $Rv=-v$.
 
 If $H\in H_v$, then
 $$
 (RH)v=R(Hv)=Rv=-v,
 $$
-so step <1>2 gives $RH\in S_v$. Hence $RH_v\subseteq S_v$.
+so step [](#sv-characterization){.pf-ref} gives $RH\in S_v$. Hence $RH_v\subseteq S_v$.
 
-Conversely, let $T\in S_v$. Since a half-turn satisfies $R^{-1}=R$, step <1>2 gives
+Conversely, let $T\in S_v$. Since a half-turn satisfies $R^{-1}=R$, step [](#sv-characterization){.pf-ref} gives
 $$
 (R^{-1}T)v=R(-v)=v.
 $$
 Thus $R^{-1}T\in H_v$, so $T\in RH_v$. Therefore $S_v=RH_v$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part 1, and step <1>3 proves that $S_v$ is a left coset of $H_v$ in $G$.
+::: pf-qed
+Step [](#hv-subgroup){.pf-ref} proves part 1, and step [](#sv-coset){.pf-ref} proves that $S_v$ is a left coset of $H_v$ in $G$.
+:::
+
 :::
 :::

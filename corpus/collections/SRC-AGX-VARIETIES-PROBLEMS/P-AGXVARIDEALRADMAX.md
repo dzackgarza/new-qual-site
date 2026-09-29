@@ -57,9 +57,12 @@ I(X)
 \{f\in A:f(a)=0\text{ for every }a\in X\}.
 $$
 
-<1>1. The ideal $I(X)$ is radical.
+::: pf
 
-::: {.proof}
+::: {.pf-step #ideal-is-radical}
+The ideal $I(X)$ is radical.
+
+::: pf-proof
 Let
 $$
 f^m\in I(X)
@@ -87,7 +90,10 @@ $$
 so $I(X)$ is radical.
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #singleton-ideal-maximal}
+If
 $$
 X=\{a\},
 \qquad
@@ -101,7 +107,7 @@ I(X)
 $$
 is maximal.
 
-::: {.proof}
+::: pf-proof
 Evaluation at $a$ defines a surjective homomorphism
 $$
 \operatorname{ev}_a:A\longrightarrow k,
@@ -122,9 +128,12 @@ because quotienting by these generators sends every polynomial to its
 constant value at $a$.
 :::
 
-<1>3. If $I(X)$ is maximal, then $X$ is a singleton.
+:::
 
-::: {.proof}
+::: {.pf-step #maximal-implies-singleton}
+If $I(X)$ is maximal, then $X$ is a singleton.
+
+::: pf-proof
 Since a maximal ideal is proper,
 $$
 I(X)\ne A.
@@ -141,7 +150,7 @@ Every polynomial vanishing on all of $X$ vanishes at $a$, hence
 $$
 I(X)\subseteq I(\{a\}).
 $$
-By step <1>2, $I(\{a\})$ is a proper ideal. Since $I(X)$ is maximal, the
+By step [](#singleton-ideal-maximal){.pf-ref}, $I(\{a\})$ is a proper ideal. Since $I(X)$ is maximal, the
 inclusion forces
 $$
 I(X)=I(\{a\}).
@@ -165,7 +174,10 @@ X=\{a\}.
 $$
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #maximality-equivalence}
+Therefore
 $$
 \boxed{
 I(X)\text{ is maximal}
@@ -174,15 +186,18 @@ X\text{ is a point}.
 }
 $$
 
-::: {.proof}
-Step <1>2 proves that a singleton has maximal vanishing ideal, and step
-<1>3 proves that a maximal vanishing ideal comes from a singleton.
+::: pf-proof
+Step [](#singleton-ideal-maximal){.pf-ref} proves that a singleton has maximal vanishing ideal, and step
+[](#maximal-implies-singleton){.pf-ref} proves that a maximal vanishing ideal comes from a singleton.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves radicality, and step <1>4 proves the maximality
+::: pf-qed
+Step [](#ideal-is-radical){.pf-ref} proves radicality, and step [](#maximality-equivalence){.pf-ref} proves the maximality
 characterization.
 :::
+
+:::
+
 :::

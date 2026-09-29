@@ -32,7 +32,11 @@ for every $z\in\mathbb C$. Find all possibilities for \(f\), and justify your an
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #f-vanishes-to-order-two}
+One has
 $$
 f(0)=0
 $$
@@ -41,7 +45,7 @@ $$
 f'(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Evaluating the hypothesis at $z=0$ gives
 $$
 \abs{f(0)}\leq0,
@@ -63,7 +67,10 @@ $$
 so the last limit is $0$.
 :::
 
-<1>2. The function
+:::
+
+::: {.pf-step #h-entire}
+The function
 $$
 h(z)
 \coloneqq
@@ -74,8 +81,8 @@ f''(0)/2,&z=0
 $$
 is entire.
 
-::: {.proof}
-Step <1>1 shows that the Taylor series of $f$ at $0$ has no constant or
+::: pf-proof
+Step [](#f-vanishes-to-order-two){.pf-ref} shows that the Taylor series of $f$ at $0$ has no constant or
 linear term. Thus
 $$
 f(z)
@@ -93,13 +100,16 @@ which proves that the displayed definition removes the apparent
 singularity at $0$ and gives an entire function.
 :::
 
-<1>3. The entire function $h$ satisfies
+:::
+
+::: {.pf-step #h-bounded}
+The entire function $h$ satisfies
 $$
 \abs{h(z)}\leq1
 $$
 for every $z\in\CC$.
 
-::: {.proof}
+::: pf-proof
 For $z\neq0$, the hypothesis gives
 $$
 \abs{h(z)}
@@ -111,14 +121,17 @@ $$
 By continuity of $h$, the same inequality holds at $z=0$.
 :::
 
-<1>4. There is a constant $a\in\CC$ with $\abs{a}\leq1$ such that
+:::
+
+::: {.pf-step #f-form-necessary}
+There is a constant $a\in\CC$ with $\abs{a}\leq1$ such that
 $$
 f(z)=az^2
 $$
 for every $z\in\CC$.
 
-::: {.proof}
-By step <1>3, $h$ is a bounded entire function. Liouville's theorem implies
+::: pf-proof
+By step [](#h-bounded){.pf-ref}, $h$ is a bounded entire function. Liouville's theorem implies
 that
 $$
 h(z)=a
@@ -127,13 +140,16 @@ for some constant $a$. The same step gives $\abs a\leq1$. Since
 $f(z)=z^2h(z)$, the stated formula follows.
 :::
 
-<1>5. Conversely, every function
+:::
+
+::: {.pf-step #f-form-sufficient}
+Conversely, every function
 $$
 f(z)=az^2
 $$
 with $\abs{a}\leq1$ satisfies the hypothesis.
 
-::: {.proof}
+::: pf-proof
 For every $z\in\CC$,
 $$
 \abs{f(z)}
@@ -144,7 +160,10 @@ $$
 $$
 :::
 
-<1>6. The complete list is
+:::
+
+::: {.pf-step #complete-list}
+The complete list is
 $$
 \boxed{
 f(z)=az^2
@@ -153,14 +172,17 @@ a\in\CC, \abs{a}\leq1
 }.
 $$
 
-::: {.proof}
-Step <1>4 shows that every admissible entire function has this form, and
-step <1>5 shows that every function of this form is admissible.
+::: pf-proof
+Step [](#f-form-necessary){.pf-ref} shows that every admissible entire function has this form, and
+step [](#f-form-sufficient){.pf-ref} shows that every function of this form is admissible.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required classification.
 :::
+
+::: pf-qed
+Step [](#complete-list){.pf-ref} is the required classification.
+:::
+
+:::
+
 :::

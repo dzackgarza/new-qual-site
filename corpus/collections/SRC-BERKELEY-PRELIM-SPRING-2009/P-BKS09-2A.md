@@ -28,12 +28,16 @@ Prove that if an $n \times n$ matrix X over R satisfies $X ^ { 2 } = - I$ , then
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #determinant-square}
+One has
 $$
 (\det X)^2=(-1)^n.
 $$
 
-::: {.proof}
+::: pf-proof
 By multiplicativity of the determinant and the relation $X^2=-I$,
 $$
 (\det X)^2
@@ -46,30 +50,39 @@ $$
 $$
 :::
 
-<1>2. One has $(-1)^n=1$.
+:::
 
-::: {.proof}
+::: {.pf-step #sign-positive}
+One has $(-1)^n=1$.
+
+::: pf-proof
 Because $X$ is a real matrix, $\det X\in\RR$, so
 $$
 (\det X)^2\geq0.
 $$
-By step <1>1, this square equals $(-1)^n$, which is either $1$ or $-1$.
+By step [](#determinant-square){.pf-ref}, this square equals $(-1)^n$, which is either $1$ or $-1$.
 It therefore must equal $1$.
 :::
 
-<1>3. The integer $n$ is even.
+:::
 
-::: {.proof}
-By step <1>2,
+::: {.pf-step #n-even}
+The integer $n$ is even.
+
+::: pf-proof
+By step [](#sign-positive){.pf-ref},
 $$
 (-1)^n=1.
 $$
 This holds exactly when $n$ is even.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#n-even){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

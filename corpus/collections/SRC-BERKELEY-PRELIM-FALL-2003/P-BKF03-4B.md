@@ -30,8 +30,13 @@ Let L be a line in C, and let f be an entire function such that $f ( \mathbb { C
 
 
 ::: {.solution}
-<1>1. There is an entire function $g$, constant if and only if $f$ is constant, whose image does not meet the imaginary axis $i\mathbb R$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #g-def-and-property}
+There is an entire function $g$, constant if and only if $f$ is constant, whose image does not meet the imaginary axis $i\mathbb R$.
+
+::: pf-proof
 Write the line as
 \[
 L=z_0+e^{i\theta}\mathbb R.
@@ -49,25 +54,33 @@ Moreover, $g$ is constant if and only if $f$ is constant.
 Thus it suffices to prove the claim for $g$.
 :::
 
-<1>2. The connected set $g(\mathbb C)$ lies entirely in one of the two open half-planes
+:::
+
+::: {.pf-step #image-in-half-plane}
+The connected set $g(\mathbb C)$ lies entirely in one of the two open half-planes
 \[
 \{w:\operatorname{Re}w>0\},
 \qquad
 \{w:\operatorname{Re}w<0\}.
 \]
-::: {.proof}
+
+::: pf-proof
 The complement $\mathbb C\setminus i\mathbb R$ has exactly those two connected components.
 Since $\mathbb C$ is connected and $g$ is continuous, its image $g(\mathbb C)$ is connected.
 Because it avoids $i\mathbb R$, it must be contained in a single component.
 :::
 
-<1>3. After replacing $g$ by $-g$ if necessary, assume
+:::
+
+::: {.pf-step #exp-g-bounded}
+After replacing $g$ by $-g$ if necessary, assume
 \[
 \operatorname{Re}g(z)<0
 \qquad(z\in\mathbb C).
 \]
 Then $e^{g}$ is a bounded entire function.
-::: {.proof}
+
+::: pf-proof
 If the image lies in the right half-plane, replace $g$ by $-g$; this does not affect whether $g$ is constant.
 Under the displayed assumption,
 \[
@@ -77,15 +90,24 @@ for every $z$.
 Thus $e^g$ is entire and bounded.
 :::
 
-<1>4. Therefore $g$, and hence $f$, is constant.
-::: {.proof}
+:::
+
+::: {.pf-step #g-and-f-constant}
+Therefore $g$, and hence $f$, is constant.
+
+::: pf-proof
 By Liouville's theorem, the bounded entire function $e^g$ is constant.
 Differentiating gives
 \[
 0=(e^g)'=g'e^g.
 \]
 Since $e^g$ never vanishes, $g'=0$ identically.
-Hence $g$ is constant, and by <1>1 so is $f$.
+Hence $g$ is constant, and by step [](#g-def-and-property){.pf-ref} so is $f$.
 :::
+
+:::
+
+:::
+
 :::
 

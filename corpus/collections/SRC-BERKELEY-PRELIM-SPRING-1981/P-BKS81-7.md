@@ -29,7 +29,10 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. The target integral satisfies
+::: pf
+
+::: {.pf-step #reduce-to-cosine-integral}
+The target integral satisfies
 $$
 \int_{-\infty}^{\infty}
 \frac{x\sin x}{(1+x^2)^2}\,dx
@@ -39,7 +42,7 @@ $$
 \frac{\cos x}{1+x^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 \frac{x}{(1+x^2)^2}
@@ -62,7 +65,10 @@ The boundary term tends to zero as $R\to\infty$. Both improper integrals
 converge absolutely, so the displayed identity follows.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #cosine-integral-value}
+One has
 $$
 \int_{-\infty}^{\infty}
 \frac{\cos x}{1+x^2}\,dx
@@ -70,7 +76,7 @@ $$
 \frac{\pi}{e}.
 $$
 
-::: {.proof}
+::: pf-proof
 Integrate
 $$
 F(z)\coloneqq\frac{e^{iz}}{1+z^2}
@@ -109,7 +115,10 @@ $$
 Taking real parts gives the asserted cosine integral.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #value-boxed}
+Therefore
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -119,13 +128,15 @@ $$
 }.
 $$
 
-::: {.proof}
-Substitute the value from step <1>2 into the identity from step <1>1.
+::: pf-proof
+Substitute the value from step [](#cosine-integral-value){.pf-ref} into the identity from step [](#reduce-to-cosine-integral){.pf-ref}.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is the requested value.
+::: pf-qed
+Step [](#value-boxed){.pf-ref} is the requested value.
+:::
+
 :::
 :::

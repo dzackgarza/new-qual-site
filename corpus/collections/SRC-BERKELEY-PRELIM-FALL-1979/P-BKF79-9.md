@@ -35,12 +35,16 @@ Find $f'(t)$ explicitly.
 :::
 
 ::: {.solution}
-<1>1. For every $t>0$,
+
+::: pf
+
+::: {.pf-step #f-explicit-formula}
+For every $t>0$,
 $$
 f(t)=\frac{\sqrt\pi}{\sqrt t}.
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 u=\sqrt t\,x.
@@ -67,15 +71,18 @@ $$
 using the given Gaussian integral.
 :::
 
-<1>2. For every $t>0$,
+:::
+
+::: {.pf-step #f-derivative}
+For every $t>0$,
 $$
 f'(t)
 =
 \boxed{-\frac{\sqrt\pi}{2t^{3/2}}}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#f-explicit-formula){.pf-ref},
 $$
 f(t)=\sqrt\pi\,t^{-1/2}.
 $$
@@ -89,9 +96,11 @@ f'(t)
 $$
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 is the requested derivative.
+::: pf-qed
+Step [](#f-derivative){.pf-ref} is the requested derivative.
+:::
+
 :::
 :::

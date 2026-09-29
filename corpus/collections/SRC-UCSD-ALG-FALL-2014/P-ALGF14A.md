@@ -28,28 +28,41 @@ Prove that for any proper subgroup $H$ we have that $H \neq N_G(H)$.
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: pf-step
+Let
 \[
 1=Z_0(G)\le Z_1(G)\le \cdots \le Z_c(G)=G
 \]
 be the upper central series of the nilpotent group \(G\).
-::: {.proof}
+
+::: pf-proof
 By nilpotence, the upper central series reaches \(G\) after finitely many steps.
 :::
 
-<1>2. Since \(H<G\), there is a least index \(i\ge 1\) such that \(Z_i(G)\nsubseteq H\). Thus
+:::
+
+::: pf-step
+Since \(H<G\), there is a least index \(i\ge 1\) such that \(Z_i(G)\nsubseteq H\). Thus
 \[
 Z_{i-1}(G)\le H.
 \]
-::: {.proof}
+
+::: pf-proof
 Because \(Z_0(G)=1\le H\) and \(Z_c(G)=G\nsubseteq H\), such a least \(i\) exists.
 :::
 
-<1>3. Choose \(x\in Z_i(G)\setminus H\). Then for every \(h\in H\),
+:::
+
+::: {.pf-step #x-not-in-h-commutator-in-h}
+Choose \(x\in Z_i(G)\setminus H\). Then for every \(h\in H\),
 \[
 [x,h]\in Z_{i-1}(G)\le H.
 \]
-::: {.proof}
+
+::: pf-proof
 By definition of the upper central series,
 \[
 Z_i(G)/Z_{i-1}(G)=Z\bigl(G/Z_{i-1}(G)\bigr).
@@ -57,8 +70,12 @@ Z_i(G)/Z_{i-1}(G)=Z\bigl(G/Z_{i-1}(G)\bigr).
 Hence the image of \(x\) is central modulo \(Z_{i-1}(G)\), so \([x,h]\in Z_{i-1}(G)\).
 :::
 
-<1>4. The element \(x\) normalizes \(H\).
-::: {.proof}
+:::
+
+::: {.pf-step #x-normalizes-h}
+The element \(x\) normalizes \(H\).
+
+::: pf-proof
 For \(h\in H\), one has
 \[
 xhx^{-1}=[x,h]h\in H.
@@ -74,8 +91,16 @@ xHx^{-1}=H,
 so \(x\in N_G(H)\).
 :::
 
-<1>5. Since \(x\notin H\), we have \(H<N_G(H)\).
-::: {.proof}
-By <1>3, \(x\notin H\), while by <1>4, \(x\in N_G(H)\). Hence the inclusion \(H\le N_G(H)\) is proper.
+:::
+
+::: pf-step
+Since \(x\notin H\), we have \(H<N_G(H)\).
+
+::: pf-proof
+By step [](#x-not-in-h-commutator-in-h){.pf-ref}, \(x\notin H\), while by step [](#x-normalizes-h){.pf-ref}, \(x\in N_G(H)\). Hence the inclusion \(H\le N_G(H)\) is proper.
+:::
+
+:::
+
 :::
 :::

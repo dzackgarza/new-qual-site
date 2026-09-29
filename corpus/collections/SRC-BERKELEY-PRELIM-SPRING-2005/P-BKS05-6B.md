@@ -41,12 +41,15 @@ $$
 f(z)\coloneqq\frac{ze^{iz}}{z^2+a^2}.
 $$
 
-<1>1. The contribution from the semicircular arc tends to zero:
+::: pf
+
+::: {.pf-step #arc-contribution-vanishes}
+The contribution from the semicircular arc tends to zero:
 $$
 \lim_{R\to\infty}\int_{C_R}f(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
 On $C_R$ one has
 $$
 \abs{z^2+a^2}
@@ -85,7 +88,10 @@ $$
 $$
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #contour-integral-limit}
+One has
 $$
 \lim_{R\to\infty}
 \int_{-R}^{R}\frac{xe^{ix}}{x^2+a^2}\,dx
@@ -93,7 +99,7 @@ $$
 \pi i e^{-a}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $R>a$, the positively oriented contour formed by $[-R,R]$ and $C_R$
 contains only the pole $z=ia$ of $f$. Its residue is
 $$
@@ -113,16 +119,19 @@ $$
 =
 \pi i e^{-a}.
 $$
-Letting $R\to\infty$ and applying step <1>1 proves the claim.
+Letting $R\to\infty$ and applying step [](#arc-contribution-vanishes){.pf-ref} proves the claim.
 :::
 
-<1>3. The requested improper integral is
+:::
+
+::: {.pf-step #integral-value}
+The requested improper integral is
 $$
 \boxed{\frac{\pi}{2}e^{-a}}.
 $$
 
-::: {.proof}
-Taking imaginary parts in step <1>2 yields
+::: pf-proof
+Taking imaginary parts in step [](#contour-integral-limit){.pf-ref} yields
 $$
 \lim_{R\to\infty}
 \int_{-R}^{R}\frac{x\sin x}{x^2+a^2}\,dx
@@ -141,9 +150,12 @@ $$
 $$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the required value.
 :::
+
+::: pf-qed
+Step [](#integral-value){.pf-ref} gives the required value.
+:::
+
+:::
+
 :::

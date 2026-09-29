@@ -35,8 +35,12 @@ Assume the standard convention that a ring with identity has \(1\neq0\). Let
 S:=\{s\in R: sx=0\Longrightarrow x=0\}.
 \]
 
-<1>1. The set \(S\) is multiplicatively closed and contains \(1\), but not \(0\).
-::: {.proof}
+::: pf
+
+::: pf-step
+The set \(S\) is multiplicatively closed and contains \(1\), but not \(0\).
+
+::: pf-proof
 Clearly \(1\in S\), and \(0\notin S\) because \(0\cdot1=0\) with \(1\neq0\). If \(s,t\in S\) and
 \[
 stx=0,
@@ -48,8 +52,12 @@ tx=0.
 Since \(t\) is also a non-zero-divisor, \(x=0\). Thus \(st\in S\).
 :::
 
-<1>2. There is an ideal \(P\subseteq R\) maximal among the ideals disjoint from \(S\).
-::: {.proof}
+:::
+
+::: {.pf-step #maximal-disjoint-ideal-exists}
+There is an ideal \(P\subseteq R\) maximal among the ideals disjoint from \(S\).
+
+::: pf-proof
 Let
 \[
 \mathcal C:=\{I\triangleleft R:I\cap S=\varnothing\},
@@ -73,8 +81,12 @@ I_\lambda\cap S=\varnothing.
 Thus \(I\in\mathcal C\), so every chain has an upper bound in \(\mathcal C\). By Zorn's lemma, \(\mathcal C\) has a maximal element \(P\).
 :::
 
-<1>3. The ideal \(P\) is prime.
-::: {.proof}
+:::
+
+::: {.pf-step #maximal-ideal-is-prime}
+The ideal \(P\) is prime.
+
+::: pf-proof
 Because \(1\in S\) and \(P\cap S=\varnothing\), one has \(1\notin P\), so \(P\neq R\).
 
 Suppose
@@ -121,12 +133,20 @@ st\in P\cap S,
 contradicting \(P\cap S=\varnothing\). Therefore \(a\in P\) or \(b\in P\), and \(P\) is prime.
 :::
 
-<1>4. Hence \(R\) has a prime ideal disjoint from all non-zero-divisors.
-::: {.proof}
-The ideal \(P\) from <1>2 is prime by <1>3 and satisfies
+:::
+
+::: pf-step
+Hence \(R\) has a prime ideal disjoint from all non-zero-divisors.
+
+::: pf-proof
+The ideal \(P\) from step [](#maximal-disjoint-ideal-exists){.pf-ref} is prime by step [](#maximal-ideal-is-prime){.pf-ref} and satisfies
 \[
 P\cap S=\varnothing
 \]
 by construction.
+:::
+
+:::
+
 :::
 :::

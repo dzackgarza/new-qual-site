@@ -30,8 +30,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a): if $m<n$, every system of $m$ homogeneous linear equations in $n$ unknowns over $F$ has a nonzero solution.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Part (a): if $m<n$, every system of $m$ homogeneous linear equations in $n$ unknowns over $F$ has a nonzero solution.
+
+::: pf-proof
 We prove the following statement for every $m\ge0$: if
 $$
 m<n,
@@ -80,8 +85,12 @@ nonzero because its last $n-1$ coordinates are not all zero.
 Thus every such homogeneous system has a nonzero solution.
 :::
 
-<1>2. Any linearly independent subset of a finitely spanned space is finite.
-::: {.proof}
+:::
+
+::: {.pf-step #independent-subset-is-finite}
+Any linearly independent subset of a finitely spanned space is finite.
+
+::: pf-proof
 Suppose
 $$
 V=\operatorname{span}\{v_1,\ldots,v_N\}.
@@ -109,9 +118,13 @@ linearly dependent. Therefore a linearly independent subset of $V$ has at
 most $N$ elements.
 :::
 
-<1>3. Every maximal linearly independent subset spans $V$.
-::: {.proof}
-Let $B$ be maximal linearly independent. By step <1>2 it is finite. If
+:::
+
+::: {.pf-step #maximal-set-spans}
+Every maximal linearly independent subset spans $V$.
+
+::: pf-proof
+Let $B$ be maximal linearly independent. By step [](#independent-subset-is-finite){.pf-ref} it is finite. If
 $$
 \operatorname{span}B\ne V,
 $$
@@ -123,15 +136,19 @@ Then $B\cup\{v\}$ is linearly independent, contradicting maximality. Thus
 $B$ spans $V$ and is a basis.
 :::
 
-<1>4. Any two maximal linearly independent subsets have the same cardinality.
-::: {.proof}
+:::
+
+::: pf-step
+Any two maximal linearly independent subsets have the same cardinality.
+
+::: pf-proof
 Let
 $$
 B=\{b_1,\ldots,b_r\},
 \qquad
 C=\{c_1,\ldots,c_s\}
 $$
-be maximal linearly independent subsets. By step <1>3 both are bases.
+be maximal linearly independent subsets. By step [](#maximal-set-spans){.pf-ref} both are bases.
 
 Suppose, for contradiction, that $r>s$. Since $C$ spans $V$, write
 $$
@@ -159,5 +176,9 @@ $$
 $$
 So every maximal linearly independent subset of $V$ has the same number of
 elements.
+:::
+
+:::
+
 :::
 :::

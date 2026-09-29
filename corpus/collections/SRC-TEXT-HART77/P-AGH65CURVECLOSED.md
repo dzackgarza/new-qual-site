@@ -29,9 +29,12 @@ Show that $X$ is in fact a closed subset of $Y$.
 :::
 
 ::: {.solution}
-<1>1. The locally closed inclusion of $X$ in $Y$ is a morphism of varieties.
+::: pf
 
-::: {.proof}
+::: {.pf-step #inclusion-is-morphism}
+The locally closed inclusion of $X$ in $Y$ is a morphism of varieties.
+
+::: pf-proof
 By hypothesis there is an open subset $U\subseteq Y$ such that $X$ is closed in $U$.
 The inclusion $X\hookrightarrow U$ is a closed immersion of varieties and the inclusion $U\hookrightarrow Y$ is an open immersion.
 Their composite
@@ -41,28 +44,36 @@ $$
 is therefore a morphism whose image is the given subset $X\subseteq Y$.
 :::
 
-<1>2. The variety $X$ is complete.
+:::
 
-::: {.proof}
+::: {.pf-step #x-complete}
+The variety $X$ is complete.
+
+::: pf-proof
 The curve $X$ is projective over $k$ by hypothesis.
 Projective varieties are complete, so $X$ is complete in the sense of Chapter I.
 :::
 
-<1>3. The image $i(X)$ is closed in $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #image-closed}
+The image $i(X)$ is closed in $Y$.
+
+::: pf-proof
 A defining property of a complete variety is that its image under every morphism to a variety is closed.
-Apply this to the morphism $i:X\to Y$ from step <1>1.
-Since $X$ is complete by step <1>2, the subset
+Apply this to the morphism $i:X\to Y$ from step [](#inclusion-is-morphism){.pf-ref}.
+Since $X$ is complete by step [](#x-complete){.pf-ref}, the subset
 $$
 i(X)=X
 $$
 is closed in $Y$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is exactly the required conclusion.
+::: pf-qed
+Step [](#image-closed){.pf-ref} is exactly the required conclusion.
+:::
+
 :::
 :::

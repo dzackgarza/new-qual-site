@@ -47,12 +47,16 @@ there are $\alpha_1,\ldots,\alpha_n\in I$ such that
 X=U_{\alpha_1}\cup\cdots\cup U_{\alpha_n}.
 \]
 
-<1>1. Fix an arbitrary open cover $\mathcal U$ of $[0,1]$ and define
+::: pf
+
+::: {.pf-step #s-nonempty-bounded}
+Fix an arbitrary open cover $\mathcal U$ of $[0,1]$ and define
 \[
 S=\left\{x\in[0,1]:[0,x]\text{ is covered by finitely many members of }\mathcal U\right\}.
 \]
 Then $S$ is nonempty and bounded above.
-::: {.proof}
+
+::: pf-proof
 Since $\mathcal U$ covers $[0,1]$, some $U_0\in\mathcal U$ contains $0$.
 Thus the singleton interval
 \[
@@ -63,13 +67,17 @@ Hence $S\ne\varnothing$.
 Also $S\subseteq[0,1]$, so $1$ is an upper bound for $S$.
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #sup-equals-one}
+Let
 \[
 s=\sup S.
 \]
 Then $s=1$.
-::: {.proof}
-The supremum exists by <1>1 and the least-upper-bound property of $\RR$.
+
+::: pf-proof
+The supremum exists by step [](#s-nonempty-bounded){.pf-ref} and the least-upper-bound property of $\RR$.
 Suppose for contradiction that $s<1$.
 Because $\mathcal U$ covers $[0,1]$, choose $U\in\mathcal U$ with
 \[
@@ -111,14 +119,18 @@ But $s+\delta>s$, contradicting that $s$ is an upper bound for $S$.
 Hence $s=1$.
 :::
 
-<1>3. The whole interval $[0,1]$ has a finite subcover from $\mathcal U$.
-::: {.proof}
+:::
+
+::: {.pf-step #finite-subcover}
+The whole interval $[0,1]$ has a finite subcover from $\mathcal U$.
+
+::: pf-proof
 Choose $U_1\in\mathcal U$ with $1\in U_1$.
 Since $U_1$ is open in $[0,1]$, there is $\varepsilon>0$ such that
 \[
 (1-\varepsilon,1]\subseteq U_1.
 \]
-By <1>2,
+By step [](#sup-equals-one){.pf-ref},
 \[
 \sup S=1.
 \]
@@ -135,13 +147,22 @@ Together with $U_1$, they cover
 Thus $\mathcal U$ has a finite subcover of $[0,1]$.
 :::
 
-<1>4. Therefore $[0,1]$ is compact.
-::: {.proof}
-The open cover $\mathcal U$ in <1>1 was arbitrary, and <1>3 produced a finite subcover.
+:::
+
+::: pf-step
+Therefore $[0,1]$ is compact.
+
+::: pf-proof
+The open cover $\mathcal U$ in step [](#s-nonempty-bounded){.pf-ref} was arbitrary, and step [](#finite-subcover){.pf-ref} produced a finite subcover.
 This is exactly the definition of compactness.
 Hence
 \[
 \boxed{[0,1]\text{ is compact}.}
 \]
 :::
+
+:::
+
+:::
+
 :::

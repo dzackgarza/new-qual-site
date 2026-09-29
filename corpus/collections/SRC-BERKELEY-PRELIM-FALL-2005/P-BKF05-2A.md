@@ -38,6 +38,7 @@ be a rational function with complex coefficients and \(\deg P<\deg Q\). Prove th
 :::
 
 ::: {.solution}
+
 If $P=0$, the assertion is immediate from the empty sum, so assume
 $P\ne0$. Multiplying numerator and denominator by the same nonzero
 constant if necessary, assume that $Q$ is monic. Factor
@@ -49,7 +50,10 @@ $$
 N\coloneqq\deg Q=\sum_{i=1}^r n_i.
 $$
 
-<1>1. Let
+::: pf
+
+::: {.pf-step #Ra-definition}
+Let
 $$
 V=
 \left\{
@@ -66,7 +70,7 @@ $$
 \frac{R_a(z)}{Q(z)}.
 $$
 
-::: {.proof}
+::: pf-proof
 Putting the left-hand side over the common denominator $Q$ gives
 $$
 R_a(z)=
@@ -78,7 +82,10 @@ $N-j\le N-1$, so $\deg R_a<N$. The numerator with denominator $Q$ is
 unique because $Q$ is a nonzero polynomial.
 :::
 
-<1>2. The linear map
+:::
+
+::: {.pf-step #phi-injective}
+The linear map
 $$
 \Phi:V\longrightarrow
 \{R\in\CC[z]:\deg R<N\},
@@ -87,7 +94,7 @@ a\longmapsto R_a,
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
 Suppose $\Phi(a)=0$. Then, as a rational function,
 $$
 \sum_{i=1}^r\sum_{j=1}^{n_i}
@@ -108,9 +115,12 @@ Hence every coefficient with first index $i$ is zero. Since $i$ was
 arbitrary, all $a_{ij}$ vanish, so $\ker\Phi=0$.
 :::
 
-<1>3. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #phi-surjective}
+The map $\Phi$ is surjective.
+
+::: pf-proof
 The domain has dimension
 $$
 \dim_{\CC}V
@@ -120,12 +130,15 @@ $$
 N.
 $$
 The codomain, with basis $1,z,\ldots,z^{N-1}$, also has dimension
-$N$. By step <1>2, $\Phi$ is an injective linear map between
+$N$. By step [](#phi-injective){.pf-ref}, $\Phi$ is an injective linear map between
 finite-dimensional vector spaces of the same dimension. Therefore it
 is surjective.
 :::
 
-<1>4. There are coefficients $a_{ij}\in\CC$ such that
+:::
+
+::: {.pf-step #partial-fraction-coefficients}
+There are coefficients $a_{ij}\in\CC$ such that
 $$
 \frac{P(z)}{Q(z)}
 =
@@ -133,28 +146,34 @@ $$
 \frac{a_{ij}}{(z-b_i)^j}.
 $$
 
-::: {.proof}
+::: pf-proof
 The hypothesis $\deg P<\deg Q=N$ places $P$ in the codomain of
-$\Phi$. By step <1>3, choose $a\in V$ with $\Phi(a)=P$. The defining
-identity from step <1>1 then gives exactly the displayed partial
+$\Phi$. By step [](#phi-surjective){.pf-ref}, choose $a\in V$ with $\Phi(a)=P$. The defining
+identity from step [](#Ra-definition){.pf-ref} then gives exactly the displayed partial
 fraction expansion.
 :::
 
-<1>5. Thus $f$ is a sum of terms
+:::
+
+::: {.pf-step #f-sum-of-terms}
+Thus $f$ is a sum of terms
 $$
 \boxed{\frac{a}{(z-b)^k}},
 \qquad
 a,b\in\CC.
 $$
 
-::: {.proof}
-Every summand in step <1>4 has the required form, with
+::: pf-proof
+Every summand in step [](#partial-fraction-coefficients){.pf-ref} has the required form, with
 $b=b_i$ and $k=j$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the asserted decomposition.
 :::
+
+::: pf-qed
+Step [](#f-sum-of-terms){.pf-ref} is the asserted decomposition.
+:::
+
+:::
+
 :::

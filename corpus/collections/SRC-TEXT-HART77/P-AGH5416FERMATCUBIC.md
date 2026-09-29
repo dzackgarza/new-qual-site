@@ -89,9 +89,12 @@ $$
 $$
 and read all subscripts $a,b,c,d$ below in $\ZZ/3$.
 
-<1>1. The surface $S$ is nonsingular.
+::: pf
 
-::: {.proof}
+::: pf-step
+The surface $S$ is nonsingular.
+
+::: pf-proof
 Since $\operatorname{char}k\ne3$,
 $$
 \frac{\partial F}{\partial x_i}=3x_i^2.
@@ -103,7 +106,10 @@ $$
 which is not a point of projective space. Hence $S$ is nonsingular.
 :::
 
-<1>2. For $a,b\in\ZZ/3$, define three families of lines
+:::
+
+::: {.pf-step #twenty-seven-lines-on-surface}
+For $a,b\in\ZZ/3$, define three families of lines
 $$
 \begin{aligned}
 A_{ab}&:
@@ -122,7 +128,7 @@ x_1+\omega^b x_2=0.
 $$
 All $27$ of these lines lie on $S$.
 
-::: {.proof}
+::: pf-proof
 On $A_{ab}$ one has
 $$
 x_0=-\omega^a x_1,
@@ -145,10 +151,13 @@ other two pairings of the four coordinates, proves that every $B_{ab}$ and
 $C_{ab}$ lies on $S$.
 :::
 
-<1>3. The $27$ lines in step <1>2 are pairwise distinct. Hence they are
+:::
+
+::: {.pf-step #lines-distinct-complete-list}
+The $27$ lines in step [](#twenty-seven-lines-on-surface){.pf-ref} are pairwise distinct. Hence they are
 exactly all the lines on $S$.
 
-::: {.proof}
+::: pf-proof
 Within one family, the two exponents are recovered from the two defining
 linear equations, so different pairs $(a,b)$ give different lines.
 
@@ -163,11 +172,14 @@ $$
 would force its nonzero coordinate $x_0$ to vanish. By symmetry no two
 lines from different families coincide.
 
-Thus step <1>2 gives $3\cdot3^2=27$ distinct lines. A nonsingular cubic
+Thus step [](#twenty-seven-lines-on-surface){.pf-ref} gives $3\cdot3^2=27$ distinct lines. A nonsingular cubic
 surface has exactly $27$ lines [[FE-SRFCUBIC]], so these are all of them.
 :::
 
-<1>4. For two distinct lines in the same family,
+:::
+
+::: {.pf-step #same-family-incidence}
+For two distinct lines in the same family,
 $$
 \boxed{
 A_{ab}\cap A_{cd}\ne\varnothing
@@ -177,7 +189,7 @@ a=c\text{ or }b=d,
 $$
 and the identical criterion holds in the $B$- and $C$-families.
 
-::: {.proof}
+::: pf-proof
 Suppose first that
 $$
 a=c,
@@ -203,7 +215,10 @@ projective point of intersection. The other two families are obtained by
 permuting the coordinates.
 :::
 
-<1>5. Lines from the $A$- and $B$-families satisfy
+:::
+
+::: {.pf-step #ab-family-incidence}
+Lines from the $A$- and $B$-families satisfy
 $$
 \boxed{
 A_{ab}\cap B_{cd}\ne\varnothing
@@ -211,7 +226,7 @@ A_{ab}\cap B_{cd}\ne\varnothing
 a+d\equiv b+c\pmod3.}
 $$
 
-::: {.proof}
+::: pf-proof
 On a common point we may write, from the equations of $A_{ab}$ and
 $B_{cd}$,
 $$
@@ -243,7 +258,10 @@ which is the displayed congruence. When it holds, taking $x_3=1$ gives the
 unique point of intersection.
 :::
 
-<1>6. Lines from the $A$- and $C$-families satisfy
+:::
+
+::: {.pf-step #ac-family-incidence}
+Lines from the $A$- and $C$-families satisfy
 $$
 \boxed{
 A_{ab}\cap C_{cd}\ne\varnothing
@@ -251,7 +269,7 @@ A_{ab}\cap C_{cd}\ne\varnothing
 c\equiv a+b+d\pmod3.}
 $$
 
-::: {.proof}
+::: pf-proof
 The equations give
 $$
 x_2=-\omega^b x_3
@@ -271,7 +289,10 @@ $$
 These are compatible exactly under the displayed congruence.
 :::
 
-<1>7. Lines from the $B$- and $C$-families satisfy
+:::
+
+::: {.pf-step #bc-family-incidence}
+Lines from the $B$- and $C$-families satisfy
 $$
 \boxed{
 B_{ab}\cap C_{cd}\ne\varnothing
@@ -279,7 +300,7 @@ B_{ab}\cap C_{cd}\ne\varnothing
 a+b\equiv c+d\pmod3.}
 $$
 
-::: {.proof}
+::: pf-proof
 Put $x_2=t$. The $C$-equation gives
 $$
 x_1=-\omega^d t,
@@ -310,17 +331,20 @@ a+b\equiv c+d\pmod3.
 $$
 :::
 
-<1>8. The formulas in steps <1>4--<1>7 give the complete incidence
+:::
+
+::: {.pf-step #incidence-count-ten-sixteen}
+The formulas in steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref} and [](#bc-family-incidence){.pf-ref} give the complete incidence
 configuration of the $27$ lines. In particular every line meets exactly
 $10$ of the other lines and is skew to the remaining $16$.
 
-::: {.proof}
-Fix $A_{ab}$. By step <1>4 it meets exactly four other $A$-lines: two with
+::: pf-proof
+Fix $A_{ab}$. By step [](#same-family-incidence){.pf-ref} it meets exactly four other $A$-lines: two with
 the same first exponent and two with the same second exponent.
 
-For each $c\in\ZZ/3$, step <1>5 determines a unique $d$ for which
+For each $c\in\ZZ/3$, step [](#ab-family-incidence){.pf-ref} determines a unique $d$ for which
 $A_{ab}$ meets $B_{cd}$. Thus it meets exactly three $B$-lines.
-Likewise, for each $d$, step <1>6 determines a unique $c$, so it meets
+Likewise, for each $d$, step [](#ac-family-incidence){.pf-ref} determines a unique $c$, so it meets
 exactly three $C$-lines.
 
 Hence $A_{ab}$ meets
@@ -333,10 +357,13 @@ $16$. The preceding congruences decide every possible pair, so they give the
 full incidence relations.
 :::
 
-<1>9. Every automorphism of the smooth cubic surface $S$ is induced by a
+:::
+
+::: {.pf-step #automorphisms-are-projective-linear}
+Every automorphism of the smooth cubic surface $S$ is induced by a
 projective linear transformation of $\PP^3$.
 
-::: {.proof}
+::: pf-proof
 Adjunction for the cubic hypersurface gives
 $$
 K_S
@@ -369,17 +396,20 @@ $$
 H^0(S,-K_S)
 $$
 extends the automorphism uniquely to an element of $\PGL_4(k)$.
-:::
 
 Assume first that
 $$
 \operatorname{char}k\ne2,3.
 $$
+:::
 
-<1>10. Any projective linear automorphism preserving $S$ permutes the four
+:::
+
+::: {.pf-step #automorphism-permutes-hyperplanes}
+Any projective linear automorphism preserving $S$ permutes the four
 coordinate hyperplanes.
 
-::: {.proof}
+::: pf-proof
 Let $A\in\GL_4(k)$ represent a projective automorphism of $S$. Since the
 homogeneous ideal of $S$ is generated by the irreducible cubic $F$, there is
 $c\in k^\times$ such that
@@ -418,7 +448,10 @@ Its four irreducible components are the four coordinate hyperplanes.
 Therefore $A$ permutes them.
 :::
 
-<1>11. If $\operatorname{char}k\ne2,3$, then
+:::
+
+::: {.pf-step #aut-order-648}
+If $\operatorname{char}k\ne2,3$, then
 $$
 \boxed{
 \Aut(S)
@@ -433,8 +466,8 @@ $$
 \boxed{|\Aut(S)|=27\cdot24=648.}
 $$
 
-::: {.proof}
-By step <1>10, a matrix representing an automorphism is monomial: after a
+::: pf-proof
+By step [](#automorphism-permutes-hyperplanes){.pf-ref}, a matrix representing an automorphism is monomial: after a
 permutation of the coordinates it is diagonal,
 $$
 \operatorname{diag}(\lambda_0,\lambda_1,\lambda_2,\lambda_3).
@@ -469,14 +502,17 @@ semidirect product. Its order is
 $$
 3^3\cdot4!=648.
 $$
-:::
 
 Now assume
 $$
 \operatorname{char}k=2.
 $$
+:::
 
-<1>12. A projective linear transformation represented by
+:::
+
+::: {.pf-step #char-two-unitary-condition}
+A projective linear transformation represented by
 $A\in\GL_4(k)$ preserves $S$ if and only if, after multiplying $A$ by a
 scalar, one has
 $$
@@ -484,7 +520,7 @@ $$
 $$
 and every entry of this normalized matrix lies in $\FF_4$.
 
-::: {.proof}
+::: pf-proof
 In characteristic $2$,
 $$
 F(x)
@@ -497,7 +533,7 @@ F(Ax)
 =
 x^{(2)T}A^{(2)T}Ax.
 $$
-As in step <1>10, preservation of $S$ is equivalent to
+As in step [](#automorphism-permutes-hyperplanes){.pf-ref}, preservation of $S$ is equivalent to
 $$
 F(Ax)=cF(x)
 $$
@@ -538,7 +574,10 @@ Conversely, every matrix over $\FF_4$ satisfying
 $A^{(2)T}A=I$ preserves $F$ exactly.
 :::
 
-<1>13. In characteristic $2$,
+:::
+
+::: {.pf-step #aut-order-25920-char-two}
+In characteristic $2$,
 $$
 \boxed{
 \Aut(S)
@@ -557,8 +596,8 @@ $$
 \boxed{|\Aut(S)|=25920.}
 $$
 
-::: {.proof}
-Step <1>12 identifies the normalized linear stabilizer of $F$ with the
+::: pf-proof
+Step [](#char-two-unitary-condition){.pf-ref} identifies the normalized linear stabilizer of $F$ with the
 finite unitary group $U_4(2)$. Two normalized matrices define the same
 projective transformation exactly when they differ by a scalar
 $$
@@ -611,16 +650,18 @@ $$
 $$
 :::
 
-<1>14. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2--<1>3 give the explicit $27$ lines, and steps <1>4--<1>8
-verify all their incidence relations. Step <1>9 reduces the automorphism
-problem to projective linear algebra. Steps <1>10--<1>11 compute the
+::: pf-qed
+Steps [](#twenty-seven-lines-on-surface){.pf-ref} and [](#lines-distinct-complete-list){.pf-ref} give the explicit $27$ lines, and steps [](#same-family-incidence){.pf-ref}, [](#ab-family-incidence){.pf-ref}, [](#ac-family-incidence){.pf-ref}, [](#bc-family-incidence){.pf-ref} and [](#incidence-count-ten-sixteen){.pf-ref}
+verify all their incidence relations. Step [](#automorphisms-are-projective-linear){.pf-ref} reduces the automorphism
+problem to projective linear algebra. Steps [](#automorphism-permutes-hyperplanes){.pf-ref} and [](#aut-order-648){.pf-ref} compute the
 classical automorphism group of order $648$ in characteristic different from
-$2,3$, while steps <1>12--<1>13 give the exceptional characteristic-$2$
+$2,3$, while steps [](#char-two-unitary-condition){.pf-ref} and [](#aut-order-25920-char-two){.pf-ref} give the exceptional characteristic-$2$
 group of order $25920$. In characteristic $3$ the displayed equation is a
 triple plane, as noted at the start, so the smooth-cubic question does not
 apply.
+:::
+
 :::
 :::

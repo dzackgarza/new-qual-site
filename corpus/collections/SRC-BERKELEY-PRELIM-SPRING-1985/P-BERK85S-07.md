@@ -34,9 +34,12 @@ What restrictions, if any, must be placed on $b$?
 :::
 
 ::: {.solution}
-<1>1. For every $b\in\CC$, the integral in the problem converges absolutely.
+::: pf
 
-::: {.proof}
+::: {.pf-step #convergence-for-all-b}
+For every $b\in\CC$, the integral in the problem converges absolutely.
+
+::: pf-proof
 For $x\geq0$,
 $$
 \begin{aligned}
@@ -63,7 +66,10 @@ $$
 so the majorant is integrable on $[0,\infty)$.
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #f-entire-derivative}
+Define
 $$
 F(b)\coloneqq
 \int_{-\infty}^{\infty}e^{-x^2}e^{2ibx}\,dx.
@@ -76,7 +82,7 @@ F'(b)
 x e^{-x^2}e^{2ibx}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $K\subset\CC$ be compact and choose $M>0$ such that
 $\abs{\operatorname{Im}(b)}\leq M$ for every $b\in K$. Then
 $$
@@ -95,13 +101,16 @@ differentiation-under-the-integral theorem applies on every compact subset
 of $\CC$, proving the claim.
 :::
 
-<1>3. For every $b\in\CC$,
+:::
+
+::: {.pf-step #f-satisfies-ode}
+For every $b\in\CC$,
 $$
 F'(b)=-2bF(b).
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#f-entire-derivative){.pf-ref},
 $$
 F'(b)
 =
@@ -139,13 +148,16 @@ F'(b)=2i(ibF(b))=-2bF(b).
 $$
 :::
 
-<1>4. For every $b\in\CC$,
+:::
+
+::: {.pf-step #f-value}
+For every $b\in\CC$,
 $$
 F(b)=\sqrt\pi\,e^{-b^2}.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#f-satisfies-ode){.pf-ref},
 $$
 \frac{d}{db}\left(e^{b^2}F(b)\right)
 =
@@ -164,7 +176,10 @@ $$
 Hence the constant is $\sqrt\pi$.
 :::
 
-<1>5. For every $b\in\CC$,
+:::
+
+::: {.pf-step #final-value-boxed}
+For every $b\in\CC$,
 $$
 \boxed{
 \int_0^\infty e^{-x^2}\cos(2bx)\,dx
@@ -174,10 +189,10 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 For real $x$, the function $\cos(2bx)$ is even in $x$ and
 $\sin(2bx)$ is odd in $x$. Moreover the same exponential estimate used
-in step <1>1 gives
+in step [](#convergence-for-all-b){.pf-ref} gives
 $$
 \abs{\sin(2bx)}
 \leq
@@ -196,13 +211,15 @@ e^{-x^2}\bigl(\cos(2bx)+i\sin(2bx)\bigr)\,dx\\
 2\int_0^\infty e^{-x^2}\cos(2bx)\,dx.
 \end{aligned}
 $$
-Apply step <1>4 and divide by $2$. Since step <1>1 holds for every
+Apply step [](#f-value){.pf-ref} and divide by $2$. Since step [](#convergence-for-all-b){.pf-ref} holds for every
 $b\in\CC$, no restriction on $b$ is required.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 proves both assertions.
+::: pf-qed
+Step [](#final-value-boxed){.pf-ref} proves both assertions.
+:::
+
 :::
 :::

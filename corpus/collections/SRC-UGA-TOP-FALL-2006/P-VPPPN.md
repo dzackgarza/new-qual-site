@@ -42,7 +42,11 @@ Then $X$ is the quotient space of the disjoint union $A \disjoint B$ obtained by
 :::
 
 ::: {.solution}
-<1>1. The Mayer--Vietoris theorem gives the long exact sequence
+
+::: pf
+
+::: {.pf-step #mv-theorem}
+The Mayer--Vietoris theorem gives the long exact sequence
 \[
 \cdots
 \longrightarrow H_k(U\cap V)
@@ -54,11 +58,15 @@ H_{k-1}(U\cap V)
 \longrightarrow\cdots
 \]
 whenever $X=U\cup V$ is an open cover.
-::: {.proof}
+
+::: pf-proof
 Here $i:U\cap V\hookrightarrow U$ and $j:U\cap V\hookrightarrow V$ are the inclusions.
 :::
 
-<1>2. For the space in part (b), Mayer--Vietoris may be computed using
+:::
+
+::: pf-step
+For the space in part (b), Mayer--Vietoris may be computed using
 \[
 U\simeq A,
 \qquad
@@ -70,14 +78,18 @@ where the second boundary inclusion is read through the gluing map
 \[
 \phi(z,w)=(zw^3,w).
 \]
-::: {.proof}
+
+::: pf-proof
 The images of $A$ and $B$ in the quotient are closed rather than open, so take open collar neighborhoods of the two solid tori in $X$.
 Each collar neighborhood deformation retracts onto the corresponding solid torus, while their intersection deformation retracts onto the common boundary torus.
 Under these deformation retractions, the two maps from the intersection into the pieces are the boundary inclusion into $A$ and the boundary inclusion into $B$ after applying $\phi$.
-Thus the Mayer--Vietoris sequence in <1>1 has the displayed homotopy data.
+Thus the Mayer--Vietoris sequence in step [](#mv-theorem){.pf-ref} has the displayed homotopy data.
 :::
 
-<1>3. The homology groups of the pieces and their intersection are
+:::
+
+::: {.pf-step #pieces-homology}
+The homology groups of the pieces and their intersection are
 \[
 H_k(A)\cong H_k(B)\cong
 \begin{cases}
@@ -94,12 +106,16 @@ H_k(T^2)\cong
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 Each solid torus $S^1\times D^2$ deformation retracts onto its core circle $S^1\times\{0\}$.
 The homology of $T^2$ is the standard homology of the product $S^1\times S^1$.
 :::
 
-<1>4. Let $a$ and $b$ denote the generators of $H_1(A)$ and $H_1(B)$ coming from their core circles.
+:::
+
+::: pf-step
+Let $a$ and $b$ denote the generators of $H_1(A)$ and $H_1(B)$ coming from their core circles.
 On the common boundary torus let
 \[
 \alpha(t)=(e^{2\pi i t},1),
@@ -116,7 +132,8 @@ satisfies
 \qquad
 \Psi([\beta])=(0,-3b).
 \]
-::: {.proof}
+
+::: pf-proof
 For the inclusion into $A$, the loop $\alpha$ is a longitude and represents $a$, while $\beta$ is a meridian and bounds the disk $\{1\}\times D^2$.
 Hence
 \[
@@ -145,7 +162,10 @@ Thus
 The first Mayer--Vietoris map is $(i_A)_*\oplus-(i_B\circ\phi)_*$, giving the claimed formulas.
 :::
 
-<1>5. Relative to the bases $([\alpha],[\beta])$ and $(a,b)$, the map $\Psi$ has matrix
+:::
+
+::: {.pf-step #psi-matrix}
+Relative to the bases $([\alpha],[\beta])$ and $(a,b)$, the map $\Psi$ has matrix
 \[
 M=
 \begin{pmatrix}
@@ -154,7 +174,8 @@ M=
 \end{pmatrix}.
 \]
 It is injective and its cokernel is $\ZZ/3\ZZ$.
-::: {.proof}
+
+::: pf-proof
 The determinant is
 \[
 \det M=-3\ne0,
@@ -173,13 +194,17 @@ Therefore
 \]
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #h3-h2-computation}
+One has
 \[
 H_3(X;\ZZ)\cong\ZZ,
 \qquad
 H_2(X;\ZZ)=0.
 \]
-::: {.proof}
+
+::: pf-proof
 The degree-$3$ and degree-$2$ part of Mayer--Vietoris is
 \[
 0
@@ -191,7 +216,7 @@ The degree-$3$ and degree-$2$ part of Mayer--Vietoris is
 \xrightarrow{\Psi}
 H_1(A)\oplus H_1(B).
 \]
-By <1>3 this becomes
+By step [](#pieces-homology){.pf-ref} this becomes
 \[
 0
 \longrightarrow H_3(X)
@@ -202,16 +227,20 @@ By <1>3 this becomes
 \xrightarrow{\Psi}\ZZ^2.
 \]
 Hence $H_3(X)\cong\ZZ$.
-By <1>5, $\ker\Psi=0$, so exactness gives $H_2(X)=0$.
+By step [](#psi-matrix){.pf-ref}, $\ker\Psi=0$, so exactness gives $H_2(X)=0$.
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #h1-h0-computation}
+One has
 \[
 H_1(X;\ZZ)\cong\ZZ/3\ZZ,
 \qquad
 H_0(X;\ZZ)\cong\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
 The next part of Mayer--Vietoris is
 \[
 H_1(T^2)
@@ -232,11 +261,14 @@ Exactness therefore gives
 \[
 H_1(X)\cong\operatorname{coker}\Psi\cong\ZZ/3\ZZ
 \]
-by <1>5.
+by step [](#psi-matrix){.pf-ref}.
 The same exact sequence in degree zero says that $H_0(X)$ is the cokernel of the diagonal-with-sign map above, which is $\ZZ$.
 :::
 
-<1>8. Therefore
+:::
+
+::: {.pf-step #homology-summary}
+Therefore
 \[
 H_k(X;\ZZ)
 \cong
@@ -246,8 +278,18 @@ H_k(X;\ZZ)
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
-Steps <1>6 and <1>7 give the groups in degrees $0$ through $3$.
-For $k>3$, all adjacent homology groups of $A$, $B$, and $T^2$ in the Mayer--Vietoris sequence vanish by <1>3, so $H_k(X)=0$.
+
+::: pf-proof
+Steps [](#h3-h2-computation){.pf-ref} and [](#h1-h0-computation){.pf-ref} give the groups in degrees $0$ through $3$.
+For $k>3$, all adjacent homology groups of $A$, $B$, and $T^2$ in the Mayer--Vietoris sequence vanish by step [](#pieces-homology){.pf-ref}, so $H_k(X)=0$.
 :::
+
+:::
+
+::: pf-qed
+Step [](#mv-theorem){.pf-ref} answers part (a), and step [](#homology-summary){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

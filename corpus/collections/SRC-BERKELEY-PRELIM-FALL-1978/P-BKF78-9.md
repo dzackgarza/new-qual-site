@@ -51,9 +51,12 @@ $$
 r=\norm{Te_1}.
 $$
 
-<1>1. If $i\neq j$, then $Te_i$ and $Te_j$ are orthogonal.
+::: pf
 
-::: {.proof}
+::: {.pf-step #images-orthogonal}
+If $i\neq j$, then $Te_i$ and $Te_j$ are orthogonal.
+
+::: pf-proof
 Since the standard basis is orthonormal,
 $$
 \langle e_i,e_j\rangle=0
@@ -64,12 +67,15 @@ $$
 $$
 :::
 
-<1>2. For every $i$,
+:::
+
+::: {.pf-step #images-equal-norm}
+For every $i$,
 $$
 \norm{Te_i}=r.
 $$
 
-::: {.proof}
+::: pf-proof
 The assertion is immediate for $i=1$. If $i\neq1$, then
 $$
 \langle e_1+e_i,e_1-e_i\rangle=0.
@@ -80,7 +86,7 @@ $$
 =
 \langle T(e_1+e_i),T(e_1-e_i)\rangle.
 $$
-Using linearity of $T$ and step <1>1,
+Using linearity of $T$ and step [](#images-orthogonal){.pf-ref},
 $$
 \begin{aligned}
 0
@@ -93,19 +99,22 @@ $$
 Thus $\norm{Te_i}=\norm{Te_1}=r$.
 :::
 
-<1>3. For all $x,y\in\CC^n$,
+:::
+
+::: {.pf-step #inner-product-scales}
+For all $x,y\in\CC^n$,
 $$
 \langle Tx,Ty\rangle=r^2\langle x,y\rangle.
 $$
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 x=\sum_{i=1}^n x_i e_i,
 \qquad
 y=\sum_{i=1}^n y_i e_i.
 $$
-By steps <1>1 and <1>2,
+By steps [](#images-orthogonal){.pf-ref} and [](#images-equal-norm){.pf-ref},
 $$
 \begin{aligned}
 \langle Tx,Ty\rangle
@@ -120,18 +129,24 @@ r^2\langle x,y\rangle.
 $$
 :::
 
-<1>4. If $r=0$, then $T=0$, so the conclusion holds with $k=0$ and
+:::
+
+::: {.pf-step #r-zero-case}
+If $r=0$, then $T=0$, so the conclusion holds with $k=0$ and
 $S=I$.
 
-::: {.proof}
-By step <1>2, $r=0$ implies $Te_i=0$ for every basis vector $e_i$.
+::: pf-proof
+By step [](#images-equal-norm){.pf-ref}, $r=0$ implies $Te_i=0$ for every basis vector $e_i$.
 Thus $T=0$. The identity operator $I$ is unitary, and
 $$
 T=0=0\cdot I.
 $$
 :::
 
-<1>5. If $r>0$, then
+:::
+
+::: {.pf-step #r-positive-case}
+If $r>0$, then
 $$
 S=r^{-1}T
 $$
@@ -140,8 +155,8 @@ $$
 T=rS.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#inner-product-scales){.pf-ref},
 $$
 \langle Sx,Sy\rangle
 =
@@ -153,10 +168,12 @@ for all $x,y\in\CC^n$. Thus $S$ is unitary in the sense stated in the
 problem, and its definition gives $T=rS$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the assertion when $r=0$, and step <1>5 proves it when
+::: pf-qed
+Step [](#r-zero-case){.pf-ref} proves the assertion when $r=0$, and step [](#r-positive-case){.pf-ref} proves it when
 $r>0$.
+:::
+
 :::
 :::

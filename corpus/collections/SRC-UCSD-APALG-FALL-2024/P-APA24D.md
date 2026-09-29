@@ -26,16 +26,21 @@ from the definition of the induced matrix $1$-norm in terms of vector $1$-norms:
 :::
 
 ::: {.solution}
+
 Let
 \[
 M:=\max_{1\le j\le n}\sum_{i=1}^m|a_{ij}|.
 \]
 
-<1>1. For every $x\in\mathbb C^n$,
+::: pf
+
+::: {.pf-step #ax-bound-by-m}
+For every $x\in\mathbb C^n$,
 \[
 \|Ax\|_1\le M\|x\|_1.
 \]
-::: {.proof}
+
+::: pf-proof
 Write $x=(x_1,\ldots,x_n)^T$. Then
 \[
 (Ax)_i=\sum_{j=1}^n a_{ij}x_j,
@@ -52,20 +57,28 @@ so by the triangle inequality,
 \]
 :::
 
-<1>2. Hence
+:::
+
+::: {.pf-step #norm-upper-bound}
+Hence
 \[
 \|A\|_1\le M.
 \]
-::: {.proof}
-If $\|x\|_1=1$, then <1>1 gives
+
+::: pf-proof
+If $\|x\|_1=1$, then step [](#ax-bound-by-m){.pf-ref} gives
 \[
 \|Ax\|_1\le M.
 \]
 Taking the maximum over all such $x$ gives the inequality.
 :::
 
-<1>3. There is a unit vector in the vector $1$-norm for which equality holds.
-::: {.proof}
+:::
+
+::: {.pf-step #equality-achieved}
+There is a unit vector in the vector $1$-norm for which equality holds.
+
+::: pf-proof
 Choose $j_0$ with
 \[
 \sum_{i=1}^m|a_{ij_0}|=M
@@ -83,11 +96,20 @@ and
 Therefore $\|A\|_1\ge M$.
 :::
 
-<1>4. Consequently
+:::
+
+::: pf-step
+Consequently
 \[
 \boxed{\|A\|_1=\max_{1\le j\le n}\sum_{i=1}^m|a_{ij}|.}
 \]
-::: {.proof}
-Combine <1>2 and <1>3.
+
+::: pf-proof
+Combine steps [](#norm-upper-bound){.pf-ref} and [](#equality-achieved){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

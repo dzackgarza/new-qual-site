@@ -36,12 +36,15 @@ J_k=\int_C\frac{(z-1)\cdots(z-k)}{z}\,dz.
 :::
 
 ::: {.solution}
-<1>1. For $k=0$,
+::: pf
+
+::: {.pf-step #i0-value-boxed}
+For $k=0$,
 $$
 \boxed{I_0=2\pi i}.
 $$
 
-::: {.proof}
+::: pf-proof
 When $k=0$,
 $$
 I_0=\int_C\frac{dz}{z}.
@@ -50,7 +53,10 @@ The contour contains the simple pole at $0$ with residue $1$, so the
 residue theorem gives $I_0=2\pi i$.
 :::
 
-<1>2. For $k\geq1$ and $0\leq j\leq k$, the residue of the integrand of
+:::
+
+::: {.pf-step #residue-formula}
+For $k\geq1$ and $0\leq j\leq k$, the residue of the integrand of
 $I_k$ at $z=j$ is
 $$
 \operatorname{Res}_{z=j}
@@ -59,7 +65,7 @@ $$
 \frac{(-1)^{k-j}}{j!(k-j)!}.
 $$
 
-::: {.proof}
+::: pf-proof
 The pole at $j$ is simple, so its residue is
 $$
 \frac{1}{
@@ -77,13 +83,16 @@ $$
 Taking the reciprocal gives the claimed residue.
 :::
 
-<1>3. For every $k\geq1$,
+:::
+
+::: {.pf-step #ik-zero-boxed}
+For every $k\geq1$,
 $$
 \boxed{I_k=0}.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>2,
+::: pf-proof
+By the residue theorem and step [](#residue-formula){.pf-ref},
 $$
 \begin{aligned}
 I_k
@@ -102,13 +111,16 @@ I_k
 $$
 :::
 
-<1>4. For every $k\geq0$, the only pole of the integrand of $J_k$ is
+:::
+
+::: {.pf-step #jk-residue}
+For every $k\geq0$, the only pole of the integrand of $J_k$ is
 $z=0$, and its residue is
 $$
 (-1)^k k!.
 $$
 
-::: {.proof}
+::: pf-proof
 The numerator
 $$
 (z-1)\cdots(z-k)
@@ -124,17 +136,23 @@ For $k=0$, the product is empty and equals $1=0!$, so the same formula
 holds.
 :::
 
-<1>5. Therefore, for every $k\geq0$,
+:::
+
+::: {.pf-step #jk-value-boxed}
+Therefore, for every $k\geq0$,
 $$
 \boxed{J_k=2\pi i\,(-1)^k k!}.
 $$
 
-::: {.proof}
+::: pf-proof
 The contour encloses $0$ and the integrand of $J_k$ has no other poles.
-Apply the residue theorem to the residue computed in step <1>4.
+Apply the residue theorem to the residue computed in step [](#jk-residue){.pf-ref}.
 :::
 
-<1>6. Thus the two requested families are
+:::
+
+::: {.pf-step #combined-boxed}
+Thus the two requested families are
 $$
 \boxed{
 I_k=
@@ -147,13 +165,15 @@ J_k=2\pi i\,(-1)^k k!
 }.
 $$
 
-::: {.proof}
-Combine steps <1>1, <1>3, and <1>5.
+::: pf-proof
+Combine steps [](#i0-value-boxed){.pf-ref}, [](#ik-zero-boxed){.pf-ref}, and [](#jk-value-boxed){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 gives both evaluations.
+::: pf-qed
+Step [](#combined-boxed){.pf-ref} gives both evaluations.
+:::
+
 :::
 :::

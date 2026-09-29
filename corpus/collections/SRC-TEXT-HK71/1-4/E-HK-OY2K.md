@@ -39,7 +39,10 @@ All solutions are
 \qquad s,t\in F.
 \]
 
-<1>1. Row reduction of the augmented matrix yields
+::: pf
+
+::: pf-step
+Row reduction of the augmented matrix yields
 \[
 \left[
 \begin{array}{ccccc|c}
@@ -50,13 +53,18 @@ All solutions are
 \end{array}
 \right].
 \]
-::: {.proof}
+
+::: pf-proof
 Applying Gaussian elimination to the coefficient matrix together with the
 right-hand side gives the displayed reduced row-echelon augmented matrix.
 :::
 
-<1>2. The displayed family is exactly the solution set.
-::: {.proof}
+:::
+
+::: pf-step
+The displayed family is exactly the solution set.
+
+::: pf-proof
 The reduced system is
 \[
 x_1-2x_3+x_4=1,
@@ -75,4 +83,9 @@ x_5=1,
 \]
 which gives precisely the stated solutions.
 :::
+
+:::
+
+:::
+
 :::

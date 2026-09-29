@@ -66,8 +66,12 @@ Use homogeneous coordinates \([X:Y:Z]\) on \(\mathbb P^2\), with the standard em
 \]
 Recall that \(\mathbb P^2=(k^3\setminus\{0\})/k^\times\).
 
-<1>1. The coordinate ring is \(k[t^2,t^3]\), and \(Z\) is irreducible.
-::: {.proof}
+::: pf
+
+::: {.pf-step #coordinate-ring-irreducible}
+The coordinate ring is \(k[t^2,t^3]\), and \(Z\) is irreducible.
+
+::: pf-proof
 By definition,
 \[
 A(Z)=k[x,y]/(y^2-x^3).
@@ -87,8 +91,12 @@ A(Z)\cong k[t^2,t^3]\subseteq k[t].
 Since \(k[t]\) is a domain, so is \(A(Z)\). Therefore \(Z\) is irreducible.
 :::
 
-<1>2. The projective closure is the cuspidal cubic \(Y^2Z=X^3\), with one point at infinity.
-::: {.proof}
+:::
+
+::: {.pf-step #projective-closure}
+The projective closure is the cuspidal cubic \(Y^2Z=X^3\), with one point at infinity.
+
+::: pf-proof
 Homogenizing \(y^2-x^3\) gives
 \[
 \overline Z=V(Y^2Z-X^3)\subseteq\mathbb P^2.
@@ -100,8 +108,12 @@ On the line at infinity \(Z=0\), the equation becomes \(X^3=0\), so \(X=0\). Thu
 Geometrically, \(\overline Z\) is the projective cuspidal cubic: its affine part has a cusp at \((0,0)\), and one smooth point is added at infinity.
 :::
 
-<1>3. The map \(f:Z\setminus\{0\}\to\mathbb P^1\) does not extend to a morphism on \(Z\).
-::: {.proof}
+:::
+
+::: {.pf-step #no-extension-at-cusp}
+The map \(f:Z\setminus\{0\}\to\mathbb P^1\) does not extend to a morphism on \(Z\).
+
+::: pf-proof
 Every nonzero point of \(Z\) has \(x\ne0\), because \(x=0\) forces \(y=0\). Hence on \(Z\setminus\{0\}\),
 \[
 f(x,y)=[x:y]=[1:y/x].
@@ -128,8 +140,12 @@ But
 and \(t\notin\mathcal O_{Z,0}\). Indeed, if \(t=a/b\) with \(a,b\in k[t^2,t^3]\) and \(b(0)\ne0\), then the \(t\)-adic order of \(a=tb\) would be \(1\), whereas every nonzero element of \(k[t^2,t^3]\) has order \(0\) or at least \(2\). This is impossible. Therefore no such extension exists.
 :::
 
-<1>4. The displayed \(f\) is neither bijective nor an isomorphism onto \(\mathbb P^1\), but it is birational.
-::: {.proof}
+:::
+
+::: {.pf-step #f-properties}
+The displayed \(f\) is neither bijective nor an isomorphism onto \(\mathbb P^1\), but it is birational.
+
+::: pf-proof
 Via \(t\mapsto(t^2,t^3)\), the punctured curve is \(\mathbb G_m\), and
 \[
 f(t)=[1:t].
@@ -148,8 +164,12 @@ t=\frac yx.
 As shown below, \(k(Z)=k(t)=k(\mathbb P^1)\). Therefore \(f\) is a birational equivalence.
 :::
 
-<1>5. The function field is \(k(t)\).
-::: {.proof}
+:::
+
+::: {.pf-step #function-field}
+The function field is \(k(t)\).
+
+::: pf-proof
 From \(A(Z)=k[t^2,t^3]\),
 \[
 k(Z)=\operatorname{Frac}k[t^2,t^3].
@@ -164,8 +184,12 @@ belongs to this fraction field, it contains \(k(t)\); the reverse inclusion is i
 \]
 :::
 
-<1>6. Blowing up the cusp produces \(\mathbb A^1\), with map \(t\mapsto(t^2,t^3)\).
-::: {.proof}
+:::
+
+::: {.pf-step #blowup-of-cusp}
+Blowing up the cusp produces \(\mathbb A^1\), with map \(t\mapsto(t^2,t^3)\).
+
+::: pf-proof
 View \(Z\) inside \(\mathbb A^2\) and blow up the origin. On the \(x\)-chart of the blow-up, write
 \[
 y=ux.
@@ -199,8 +223,12 @@ u\longmapsto(u^2,u^3).
 The exceptional fiber over the cusp is the single point \(u=0\).
 :::
 
-<1>7. The only singular point of \(Z\) is the cusp \((0,0)\).
-::: {.proof}
+:::
+
+::: {.pf-step #singular-locus}
+The only singular point of \(Z\) is the cusp \((0,0)\).
+
+::: pf-proof
 Let
 \[
 F(x,y)=y^2-x^3.
@@ -217,8 +245,12 @@ Z_{\mathrm{sm}}=Z\setminus\{(0,0)\}.
 \]
 :::
 
-<1>8. The integral closure is \(k[t]\), and the normalization is \(\mathbb A^1\to Z\), \(t\mapsto(t^2,t^3)\).
-::: {.proof}
+:::
+
+::: {.pf-step #integral-closure}
+The integral closure is \(k[t]\), and the normalization is \(\mathbb A^1\to Z\), \(t\mapsto(t^2,t^3)\).
+
+::: pf-proof
 Inside the common function field \(k(t)\), the element \(t\) is integral over \(A(Z)=k[t^2,t^3]\), because it satisfies the monic equation
 \[
 T^2-t^2=0
@@ -234,4 +266,13 @@ Consequently the normalization is
  t\longmapsto(t^2,t^3).
 \]
 :::
+
+:::
+
+::: pf-qed
+Steps [](#coordinate-ring-irreducible){.pf-ref} through [](#integral-closure){.pf-ref} answer parts 1 through 8.
+:::
+
+:::
+
 :::

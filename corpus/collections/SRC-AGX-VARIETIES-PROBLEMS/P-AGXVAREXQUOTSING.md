@@ -76,7 +76,10 @@ $$
 z_i=x^{n-i}y^i.
 $$
 
-<1>1. The invariant ring is
+::: pf
+
+::: {.pf-step #invariant-ring-generators}
+The invariant ring is
 $$
 \boxed{
 R
@@ -91,7 +94,7 @@ $$
 \dim X=2.
 $$
 
-::: {.proof}
+::: pf-proof
 For a monomial $x^ay^b$,
 $$
 \zeta\cdot x^ay^b
@@ -133,9 +136,12 @@ $$
 $$
 :::
 
-<1>2. The ring $R$ is normal.
+:::
 
-::: {.proof}
+::: {.pf-step #r-is-normal}
+The ring $R$ is normal.
+
+::: pf-proof
 Let
 $$
 K=\Frac R
@@ -159,7 +165,10 @@ $$
 Thus $R$ is integrally closed in its fraction field and is normal.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #singular-locus-candidates}
+Let
 $$
 \mfm=(z_0,z_1,\ldots,z_n)\subseteq R.
 $$
@@ -170,7 +179,7 @@ X\setminus\{\bar0\}
 D(z_0)\cup D(z_n).
 $$
 
-::: {.proof}
+::: pf-proof
 The quotient map
 $$
 \AA^2_\CC\longrightarrow X
@@ -201,7 +210,10 @@ for every $i$. Hence $\mathfrak p=\mfm$. Therefore the only point outside
 $D(z_0)\cup D(z_n)$ is $\bar0$.
 :::
 
-<1>4. The open set $D(z_0)$ is smooth and has coordinate ring
+:::
+
+::: {.pf-step #d-z0-smooth}
+The open set $D(z_0)$ is smooth and has coordinate ring
 $$
 \boxed{
 R_{z_0}
@@ -214,7 +226,7 @@ t=\frac yx.
 }
 $$
 
-::: {.proof}
+::: pf-proof
 In $R_{z_0}$ one has
 $$
 t
@@ -256,10 +268,13 @@ $$
 This Laurent polynomial ring is regular, so $D(z_0)$ is smooth.
 :::
 
-<1>5. The open set $D(z_n)$ is smooth.
+:::
 
-::: {.proof}
-Interchanging $x$ and $y$ in step <1>4 gives
+::: {.pf-step #d-zn-smooth}
+The open set $D(z_n)$ is smooth.
+
+::: pf-proof
+Interchanging $x$ and $y$ in step [](#d-z0-smooth){.pf-ref} gives
 $$
 R_{z_n}
 \cong
@@ -272,14 +287,17 @@ $$
 This is again a regular Laurent polynomial ring. Hence $D(z_n)$ is smooth.
 :::
 
-<1>6. The point $\bar0$ is singular, with
+:::
+
+::: {.pf-step #tangent-space-dim}
+The point $\bar0$ is singular, with
 $$
 \boxed{
 \dim_\CC T_{\bar0}X=n+1.
 }
 $$
 
-::: {.proof}
+::: pf-proof
 The invariant ring inherits the usual grading from $\CC[x,y]$. Its positive
 degrees are multiples of $n$, and the degree-$n$ piece has basis
 $$
@@ -295,7 +313,7 @@ are linearly independent in
 $$
 \mfm/\mfm^2,
 $$
-and step <1>1 shows that every invariant of degree $qn$ with $q\geq2$ is a
+and step [](#invariant-ring-generators){.pf-ref} shows that every invariant of degree $qn$ with $q\geq2$ is a
 product of degree-$n$ invariants, hence lies in $\mfm^2$. Thus these classes
 also generate $\mfm/\mfm^2$. Hence
 $$
@@ -310,30 +328,36 @@ $$
 n+1.
 $$
 
-By step <1>1,
+By step [](#invariant-ring-generators){.pf-ref},
 $$
 \dim X=2,
 $$
 while $n+1>2$ because $n>1$. Therefore $\bar0$ is singular.
 :::
 
-<1>7. The quotient has exactly one singular point:
+:::
+
+::: {.pf-step #unique-singular-point}
+The quotient has exactly one singular point:
 $$
 \boxed{
 \operatorname{Sing}(X)=\{\bar0\}.
 }
 $$
 
-::: {.proof}
-By step <1>3, every point other than $\bar0$ lies in $D(z_0)$ or $D(z_n)$.
-Steps <1>4--<1>5 show that both opens are smooth. Step <1>6 shows that
+::: pf-proof
+By step [](#singular-locus-candidates){.pf-ref}, every point other than $\bar0$ lies in $D(z_0)$ or $D(z_n)$.
+Steps [](#d-z0-smooth){.pf-ref} and [](#d-zn-smooth){.pf-ref} show that both opens are smooth. Step [](#tangent-space-dim){.pf-ref} shows that
 $\bar0$ is singular. Hence it is the unique singular point.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves normality, and step <1>7 proves uniqueness of the singular
+::: pf-qed
+Step [](#r-is-normal){.pf-ref} proves normality, and step [](#unique-singular-point){.pf-ref} proves uniqueness of the singular
 point.
 :::
+
+:::
+
 :::

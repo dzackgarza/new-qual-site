@@ -32,48 +32,115 @@ Let $G$ be a finite group.
 :::
 
 ::: {.solution}
-<1>1. (1) $G \neq \bigcup_{g \in G} gHg^{-1}$ for $H < G$ proper.
-<2>1. The number of distinct conjugates of $H$ is $[G : N_G(H)] \le [G : H]$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #no-union-of-conjugates}
+(1) $G \neq \bigcup_{g \in G} gHg^{-1}$ for $H < G$ proper.
+
+::: pf-proof
+
+::: pf-step
+The number of distinct conjugates of $H$ is $[G : N_G(H)] \le [G : H]$.
+
+::: pf-proof
 The conjugates of $H$ are indexed by $G/N_G(H)$, and $N_G(H) \supseteq H$, so $[G : N_G(H)] \le [G : H]$.
 :::
-<2>2. Each conjugate has $|H|$ elements, and all contain the identity.
-::: {.proof}
+
+:::
+
+::: pf-step
+Each conjugate has $|H|$ elements, and all contain the identity.
+
+::: pf-proof
 $|gHg^{-1}| = |H|$, and $1 \in gHg^{-1}$ for all $g$.
 :::
-<2>3. Hence $\abs{\bigcup_g gHg^{-1}} \le 1 + [G:H](|H| - 1) = 1 + |G| - [G:H] < |G|$.
-::: {.proof}
+
+:::
+
+::: pf-step
+Hence $\abs{\bigcup_g gHg^{-1}} \le 1 + [G:H](|H| - 1) = 1 + |G| - [G:H] < |G|$.
+
+::: pf-proof
 The union has at most $1 + (\text{number of conjugates})(|H| - 1)$ elements (counting the identity once), and $[G:H] > 1$ since $H$ is proper.
 :::
-<2>4. Hence the union is a proper subset of $G$.
-::: {.proof}
+
+:::
+
+::: pf-step
+Hence the union is a proper subset of $G$.
+
+::: pf-proof
 It has fewer than $|G|$ elements.
 :::
 
-<1>2. (2) A transitive action on $|X| > 1$ has a fixed-point-free element.
-<2>1. Suppose every $g \in G$ fixes some point of $X$.
-::: {.proof}
-Assume this for contradiction.
-:::
-<2>2. Then $G = \bigcup_{x \in X} G_x$, where $G_x$ is the stabilizer of $x$.
-::: {.proof}
-Every element fixes some point, so every element lies in some stabilizer.
-:::
-<2>3. The stabilizers $G_x$ are all conjugate (since the action is transitive).
-::: {.proof}
-$G_{gx} = g G_x g^{-1}$.
-:::
-<2>4. Hence $G$ is a union of conjugates of the proper subgroup $G_x$ (proper since $|X| > 1$ and the action is transitive).
-::: {.proof}
-$G_x$ is proper because the orbit of $x$ is all of $X$ with $|X| > 1$, so $G_x \neq G$.
-:::
-<2>5. This contradicts <1>1.
-::: {.proof}
-<1>1 says $G$ is not a union of conjugates of a proper subgroup.
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>1 proves (1); <1>2 proves (2).
+:::
+
+:::
+
+::: {.pf-step #fixed-point-free-element-exists}
+(2) A transitive action on $|X| > 1$ has a fixed-point-free element.
+
+::: pf-proof
+
+::: pf-step
+Suppose every $g \in G$ fixes some point of $X$.
+
+::: pf-proof
+Assume this for contradiction.
+:::
+
+:::
+
+::: pf-step
+Then $G = \bigcup_{x \in X} G_x$, where $G_x$ is the stabilizer of $x$.
+
+::: pf-proof
+Every element fixes some point, so every element lies in some stabilizer.
+:::
+
+:::
+
+::: pf-step
+The stabilizers $G_x$ are all conjugate (since the action is transitive).
+
+::: pf-proof
+$G_{gx} = g G_x g^{-1}$.
+:::
+
+:::
+
+::: {.pf-step #g-is-union-of-conjugates-of-gx}
+Hence $G$ is a union of conjugates of the proper subgroup $G_x$ (proper since $|X| > 1$ and the action is transitive).
+
+::: pf-proof
+$G_x$ is proper because the orbit of $x$ is all of $X$ with $|X| > 1$, so $G_x \neq G$.
+:::
+
+:::
+
+::: pf-step
+This contradicts step [](#no-union-of-conjugates){.pf-ref}.
+
+::: pf-proof
+Step [](#no-union-of-conjugates){.pf-ref} says $G$ is not a union of conjugates of a proper subgroup.
+:::
+
+:::
+
+::: pf-qed
+Step [](#g-is-union-of-conjugates-of-gx){.pf-ref} contradicts step [](#no-union-of-conjugates){.pf-ref}, so the assumption fails and some element of $G$ has no fixed point in $X$.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#no-union-of-conjugates){.pf-ref} proves (1); step [](#fixed-point-free-element-exists){.pf-ref} proves (2).
+:::
+
 :::
 :::

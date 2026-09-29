@@ -34,7 +34,10 @@ Compute the cohomology $H^*(\Sigma L(p) \times \Sigma L(q); \mathbb{Z})$, where 
 ::: {.solution}
 Put $A=\Sigma L(p)$ and $B=\Sigma L(q)$.
 
-<1>1. The suspension isomorphism gives
+::: pf
+
+::: pf-step
+The suspension isomorphism gives
 $$
 H_i(A;\mathbb Z)\cong
 \begin{cases}
@@ -45,15 +48,26 @@ H_i(A;\mathbb Z)\cong
 $$
 and the analogous formula for $B$ with $p$ replaced by $q$.
 
-<1>2. Apply the homological Künneth theorem to $A\times B$.
-<2>1. The only possible torsion--torsion tensor and Tor terms are
+:::
+
+::: pf-step
+Apply the homological Künneth theorem to $A\times B$.
+
+::: pf-proof
+
+::: pf-step
+The only possible torsion--torsion tensor and Tor terms are
 $$
 \mathbb Z_p\otimes\mathbb Z_q
 \quad\text{and}\quad
 \operatorname{Tor}_1^{\mathbb Z}(\mathbb Z_p,\mathbb Z_q),
 $$
 and both vanish because $\gcd(p,q)=1$.
-<2>2. Therefore
+
+:::
+
+::: pf-step
+Therefore
 $$
 H_i(A\times B;\mathbb Z)\cong
 \begin{cases}
@@ -65,7 +79,14 @@ H_i(A\times B;\mathbb Z)\cong
 $$
 Since $p$ and $q$ are coprime, $\mathbb Z_p\oplus\mathbb Z_q\cong\mathbb Z_{pq}$.
 
-<1>3. The universal coefficient theorem for cohomology gives a split short exact sequence
+:::
+
+:::
+
+:::
+
+::: pf-step
+The universal coefficient theorem for cohomology gives a split short exact sequence
 $$
 0\longrightarrow
 \operatorname{Ext}(H_{k-1}(A\times B),\mathbb Z)
@@ -74,8 +95,16 @@ $$
 \operatorname{Hom}(H_k(A\times B),\mathbb Z)
 \longrightarrow0.
 $$
-<2>1. The free summands in homology contribute to cohomology in the same degree, while each $\mathbb Z_{pq}$ in degrees $2$ and $6$ contributes an $\operatorname{Ext}$ term $\mathbb Z_{pq}$ in degrees $3$ and $7$.
-<2>2. Hence
+
+::: pf-proof
+
+::: pf-step
+The free summands in homology contribute to cohomology in the same degree, while each $\mathbb Z_{pq}$ in degrees $2$ and $6$ contributes an $\operatorname{Ext}$ term $\mathbb Z_{pq}$ in degrees $3$ and $7$.
+
+:::
+
+::: pf-step
+Hence
 $$
 H^k(\Sigma L(p)\times\Sigma L(q);\mathbb Z)\cong
 \begin{cases}
@@ -85,4 +114,13 @@ H^k(\Sigma L(p)\times\Sigma L(q);\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::

@@ -43,8 +43,12 @@ Write
 f:=Y^2+X.
 \]
 
-<1>1. The polynomial $f$ is irreducible in $\mathbb Q(X)[Y]$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #f-irreducible}
+The polynomial $f$ is irreducible in $\mathbb Q(X)[Y]$.
+
+::: pf-proof
 Because $f$ is quadratic in $Y$, it is reducible over $\mathbb Q(X)$ if and only if it has a root in $\mathbb Q(X)$.
 Such a root would give an element $r(X)\in\mathbb Q(X)$ satisfying
 \[
@@ -68,7 +72,10 @@ v_X(-X)=1.
 Therefore $-X$ is not a square in $\mathbb Q(X)$, so $f$ has no root and is irreducible.
 :::
 
-<1>2. The ring
+:::
+
+::: {.pf-step #r1-local}
+The ring
 \[
 R_1=\mathbb Q(X)[Y]/(f^3)
 \]
@@ -76,9 +83,10 @@ is local, with unique maximal ideal
 \[
 \mathfrak m_1=(f)/(f^3).
 \]
-::: {.proof}
+
+::: pf-proof
 Since $\mathbb Q(X)$ is a field, $\mathbb Q(X)[Y]$ is a principal ideal domain.
-By <1>1, the irreducible polynomial $f$ generates a maximal ideal $(f)$.
+By step [](#f-irreducible){.pf-ref}, the irreducible polynomial $f$ generates a maximal ideal $(f)$.
 
 Maximal ideals of $R_1$ correspond to maximal ideals $M$ of $\mathbb Q(X)[Y]$ containing $(f^3)$.
 If $f^3\in M$, then $f\in M$ because every maximal ideal is prime.
@@ -93,12 +101,16 @@ M=(f).
 Thus $R_1$ has exactly one maximal ideal, namely $(f)/(f^3)$, and is local.
 :::
 
-<1>3. The ring
+:::
+
+::: {.pf-step #r2-not-local}
+The ring
 \[
 R_2=\mathbb Q[X,Y]/(f^3)
 \]
 has at least two distinct maximal ideals.
-::: {.proof}
+
+::: pf-proof
 In $\mathbb Q[X,Y]$, consider
 \[
 \mathfrak m=(X,Y)
@@ -145,12 +157,16 @@ as $X(-1,1)=-1\neq0$.
 Thus $R_2$ is not local.
 :::
 
-<1>4. The ideal
+:::
+
+::: {.pf-step #prime-not-maximal-in-r2}
+The ideal
 \[
 \mathfrak p:=(f)/(f^3)\subset R_2
 \]
 is prime but not maximal.
-::: {.proof}
+
+::: pf-proof
 The quotient by $\mathfrak p$ is
 \[
 R_2/\mathfrak p
@@ -169,8 +185,12 @@ The ring $\mathbb Q[Y]$ is an integral domain, so $\mathfrak p$ is prime.
 It is not a field, so $\mathfrak p$ is not maximal.
 :::
 
-<1>5. There are no prime ideals of $R_1$ which are not maximal.
-::: {.proof}
+:::
+
+::: {.pf-step #no-nonmaximal-primes-in-r1}
+There are no prime ideals of $R_1$ which are not maximal.
+
+::: pf-proof
 Every prime ideal contains every nilpotent element.
 In $R_1$, the ideal
 \[
@@ -178,7 +198,15 @@ In $R_1$, the ideal
 \]
 consists of nilpotent elements modulo $(f^3)$ in the sense that every element of the ideal has a sufficiently high power equal to zero.
 Thus every prime ideal of $R_1$ contains $\mathfrak m_1$.
-But <1>2 shows that $\mathfrak m_1$ is maximal.
+But step [](#r1-local){.pf-ref} shows that $\mathfrak m_1$ is maximal.
 Therefore every prime ideal equals $\mathfrak m_1$, so every prime ideal of $R_1$ is maximal.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#r1-local){.pf-ref}, [](#r2-not-local){.pf-ref}, [](#prime-not-maximal-in-r2){.pf-ref}, and [](#no-nonmaximal-primes-in-r1){.pf-ref} answer parts (a), (b), and (c).
+:::
+
 :::
 :::

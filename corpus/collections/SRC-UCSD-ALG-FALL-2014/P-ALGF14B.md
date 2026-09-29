@@ -49,11 +49,15 @@ N:=\ker\varphi.
 \]
 We will prove that \(K\) has exactly \(n\) Sylow \(p\)-subgroups.
 
-<1>1. For every Sylow \(p\)-subgroup \(P\) of \(G\), one has
+::: pf
+
+::: {.pf-step #n-in-normalizer}
+For every Sylow \(p\)-subgroup \(P\) of \(G\), one has
 \[
 N\subseteq N_G(P).
 \]
-::: {.proof}
+
+::: pf-proof
 An element of \(N\) acts trivially on the whole set \(\Omega\), so in particular it fixes \(P\) under conjugation.
 Thus if \(x\in N\), then
 \[
@@ -62,8 +66,12 @@ xPx^{-1}=P,
 which means \(x\in N_G(P)\).
 :::
 
-<1>2. The subgroup \(\varphi(P)\) is a Sylow \(p\)-subgroup of \(K\).
-::: {.proof}
+:::
+
+::: pf-step
+The subgroup \(\varphi(P)\) is a Sylow \(p\)-subgroup of \(K\).
+
+::: pf-proof
 Because \(N\triangleleft G\), the intersection \(P\cap N\) is a Sylow \(p\)-subgroup of \(N\).
 Indeed, a Sylow \(p\)-subgroup of a normal subgroup is the intersection of that normal subgroup with some Sylow \(p\)-subgroup of the whole group, and here we may choose \(P\) itself.
 Hence the \(p\)-part of \(|N|\) is \(|P\cap N|\).
@@ -80,9 +88,13 @@ is
 Thus \(\varphi(P)\) is a Sylow \(p\)-subgroup of \(K\).
 :::
 
-<1>3. The normalizer of \(\varphi(P)\) in \(K\) is exactly \(\varphi(N_G(P))\).
-::: {.proof}
-By <1>1, the subgroup \(N\) normalizes \(P\).
+:::
+
+::: {.pf-step #normalizer-image}
+The normalizer of \(\varphi(P)\) in \(K\) is exactly \(\varphi(N_G(P))\).
+
+::: pf-proof
+By step [](#n-in-normalizer){.pf-ref}, the subgroup \(N\) normalizes \(P\).
 Hence \(P\triangleleft PN\).
 Since \(P\) is a Sylow \(p\)-subgroup of \(G\), it is also a Sylow \(p\)-subgroup of \(PN\); being normal there, it is the unique Sylow \(p\)-subgroup of \(PN\).
 
@@ -111,13 +123,17 @@ N_K(\varphi(P))=\varphi(N_G(P)).
 \]
 :::
 
-<1>4. The group \(K\le S_n\) has exactly \(n\) Sylow \(p\)-subgroups.
-::: {.proof}
+:::
+
+::: pf-step
+The group \(K\le S_n\) has exactly \(n\) Sylow \(p\)-subgroups.
+
+::: pf-proof
 By Sylow's theorem, the number of Sylow \(p\)-subgroups of \(K\) is
 \[
 [K:N_K(\varphi(P))].
 \]
-Using <1>3 and the fact \(N\subseteq N_G(P)\),
+Using step [](#normalizer-image){.pf-ref} and the fact \(N\subseteq N_G(P)\),
 \[
 [K:N_K(\varphi(P))]
 =[G/N:N_G(P)/N]
@@ -125,5 +141,9 @@ Using <1>3 and the fact \(N\subseteq N_G(P)\),
 \]
 The last index is exactly the number of conjugates of \(P\), hence exactly the number of Sylow \(p\)-subgroups of \(G\), which is \(n\).
 Thus \(K\) is a subgroup of \(S_n\) with exactly \(n\) Sylow \(p\)-subgroups.
+:::
+
+:::
+
 :::
 :::

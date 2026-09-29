@@ -28,10 +28,13 @@ Let $A,B$ be Hermitian $n\times n$ complex matrices, and suppose $A$ is positive
 :::
 
 ::: {.solution}
-<1>1. The matrix $A$ has an invertible Hermitian positive-definite square
+::: pf
+
+::: {.pf-step #square-root-exists}
+The matrix $A$ has an invertible Hermitian positive-definite square
 root $S=A^{1/2}$.
 
-::: {.proof}
+::: pf-proof
 By the spectral theorem, there is a unitary matrix $U$ and positive real
 numbers $\lambda_1,\ldots,\lambda_n$ such that
 $$
@@ -49,9 +52,12 @@ Then $S=S^*$, every eigenvalue of $S$ is positive, $S$ is invertible, and
 $S^2=A$.
 :::
 
-<1>2. The matrix $AB$ is similar to $SBS$.
+:::
 
-::: {.proof}
+::: {.pf-step #ab-similar-to-sbs}
+The matrix $AB$ is similar to $SBS$.
+
+::: pf-proof
 Since $A=S^2$ and $S$ is invertible,
 $$
 S^{-1}(AB)S
@@ -62,9 +68,12 @@ SBS.
 $$
 :::
 
-<1>3. The matrix $SBS$ is Hermitian.
+:::
 
-::: {.proof}
+::: {.pf-step #sbs-is-hermitian}
+The matrix $SBS$ is Hermitian.
+
+::: pf-proof
 Because both $S$ and $B$ are Hermitian,
 $$
 (SBS)^*
@@ -75,20 +84,25 @@ SBS.
 $$
 :::
 
-<1>4. Every eigenvalue of $AB$ is real.
+:::
 
-::: {.proof}
-By step <1>3 and the spectral theorem, every eigenvalue of the Hermitian
+::: {.pf-step #eigenvalues-real}
+Every eigenvalue of $AB$ is real.
+
+::: pf-proof
+By step [](#sbs-is-hermitian){.pf-ref} and the spectral theorem, every eigenvalue of the Hermitian
 matrix $SBS$ is real. Similar matrices have the same characteristic
-polynomial and therefore the same eigenvalues. Step <1>2 now gives
+polynomial and therefore the same eigenvalues. Step [](#ab-similar-to-sbs){.pf-ref} now gives
 $$
 \boxed{\text{every eigenvalue of }AB\text{ lies in }\RR}.
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-qed
+Step [](#eigenvalues-real){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

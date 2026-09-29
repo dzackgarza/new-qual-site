@@ -41,9 +41,12 @@ r^n=s^2=e,
 srs=r^{-1}.
 $$
 
-<1>1. A rotation $r^k$ is central if and only if $n$ divides $2k$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #rotation-central-condition}
+A rotation $r^k$ is central if and only if $n$ divides $2k$.
+
+::: pf-proof
 Every rotation commutes with $r$, so $r^k$ is central exactly when it also
 commutes with $s$. From $srs=r^{-1}$ one obtains
 $$
@@ -60,9 +63,12 @@ $$
 Since $r$ has order $n$, the last condition is equivalent to $n\mid2k$.
 :::
 
-<1>2. No reflection $r^ks$ lies in the center of $D_n$.
+:::
 
-::: {.proof}
+::: {.pf-step #reflection-not-central}
+No reflection $r^ks$ lies in the center of $D_n$.
+
+::: pf-proof
 For any $k$,
 $$
 (r^ks)r=r^k(sr)=r^{k-1}s,
@@ -75,7 +81,10 @@ If these were equal, then $r^{k-1}=r^{k+1}$, so $r^2=e$. This would force
 $n\mid2$, impossible because $n\geq3$. Thus no reflection commutes with $r$.
 :::
 
-<1>3. The center is
+:::
+
+::: {.pf-step #center-boxed}
+The center is
 $$
 \boxed{
 Z(D_n)=
@@ -86,8 +95,8 @@ Z(D_n)=
 }
 $$
 
-::: {.proof}
-By step <1>2, every central element is a rotation. Step <1>1 says that the
+::: pf-proof
+By step [](#reflection-not-central){.pf-ref}, every central element is a rotation. Step [](#rotation-central-condition){.pf-ref} says that the
 central rotations are exactly the $r^k$ with $2k\equiv0\pmod n$.
 
 If $n$ is odd, multiplication by $2$ is invertible modulo $n$, so only
@@ -95,9 +104,11 @@ $k\equiv0\pmod n$ occurs. If $n$ is even, the solutions modulo $n$ are
 $k\equiv0$ and $k\equiv n/2$. These give the two stated cases.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 gives the requested center.
+::: pf-qed
+Step [](#center-boxed){.pf-ref} gives the requested center.
+:::
+
 :::
 :::

@@ -37,6 +37,7 @@ Prove that the series defining every \(c_j\) converges and that \((c_j)\) is rap
 :::
 
 ::: {.solution}
+
 For each integer $r\ge0$, set
 $$
 A_r=\sum_{j\in\ZZ}\abs{j}^r\abs{a_j},
@@ -45,14 +46,17 @@ B_r=\sum_{j\in\ZZ}\abs{j}^r\abs{b_j},
 $$
 with the convention $\abs0^0=1$ when $r=0$.
 
-<1>1. For every integer $r\ge0$,
+::: pf
+
+::: {.pf-step #Ar-Br-finite}
+For every integer $r\ge0$,
 $$
 A_r<\infty
 \qquad\text{and}\qquad
 B_r<\infty.
 $$
 
-::: {.proof}
+::: pf-proof
 Rapid decrease of $(a_j)$ implies that there is a constant $C_r$ such
 that
 $$
@@ -72,14 +76,17 @@ converges by comparison with
 $\sum_{j\ne0}\abs j^{-2}$. The same argument applies to $(b_j)$.
 :::
 
-<1>2. For every $j\in\ZZ$, the series
+:::
+
+::: {.pf-step #cj-converges-absolutely}
+For every $j\in\ZZ$, the series
 $$
 c_j=\sum_{k\in\ZZ}a_kb_{j-k}
 $$
 converges absolutely.
 
-::: {.proof}
-By step <1>1 with $r=0$, both $(a_k)$ and $(b_\ell)$ are absolutely
+::: pf-proof
+By step [](#Ar-Br-finite){.pf-ref} with $r=0$, both $(a_k)$ and $(b_\ell)$ are absolutely
 summable. Hence
 $$
 \begin{aligned}
@@ -97,13 +104,16 @@ $$
 Thus the defining series for $c_j$ is absolutely convergent.
 :::
 
-<1>3. For every positive integer $n$,
+:::
+
+::: {.pf-step #weighted-sum-finite}
+For every positive integer $n$,
 $$
 \sum_{j\in\ZZ}\abs{j}^n\abs{c_j}<\infty.
 $$
 
-::: {.proof}
-By absolute convergence from step <1>2 and the triangle inequality,
+::: pf-proof
+By absolute convergence from step [](#cj-converges-absolutely){.pf-ref} and the triangle inequality,
 $$
 \abs{c_j}
 \le
@@ -133,7 +143,7 @@ $$
 \binom ni
 \abs k^i\abs\ell^{n-i},
 $$
-step <1>1 gives
+step [](#Ar-Br-finite){.pf-ref} gives
 $$
 \begin{aligned}
 \sum_{j\in\ZZ}\abs j^n\abs{c_j}
@@ -155,10 +165,13 @@ $$
 $$
 :::
 
-<1>4. The sequence $(c_j)$ is rapidly decreasing.
+:::
 
-::: {.proof}
-Fix a positive integer $n$. By step <1>3, the nonnegative series
+::: {.pf-step #cj-rapidly-decreasing}
+The sequence $(c_j)$ is rapidly decreasing.
+
+::: pf-proof
+Fix a positive integer $n$. By step [](#weighted-sum-finite){.pf-ref}, the nonnegative series
 $$
 \sum_{j\in\ZZ}\abs j^n\abs{c_j}
 $$
@@ -174,17 +187,23 @@ Thus $(j^nc_j)_{j\in\ZZ}$ is bounded for every positive integer $n$,
 which is exactly rapid decrease.
 :::
 
-<1>5. Therefore every convolution sum defining $c_j$ converges, and
+:::
+
+::: {.pf-step #both-assertions}
+Therefore every convolution sum defining $c_j$ converges, and
 the convolution sequence is rapidly decreasing.
 
-::: {.proof}
-Step <1>2 proves convergence of every defining series, and step <1>4
+::: pf-proof
+Step [](#cj-converges-absolutely){.pf-ref} proves convergence of every defining series, and step [](#cj-rapidly-decreasing){.pf-ref}
 proves rapid decrease.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves both required assertions.
 :::
+
+::: pf-qed
+Step [](#both-assertions){.pf-ref} proves both required assertions.
+:::
+
+:::
+
 :::

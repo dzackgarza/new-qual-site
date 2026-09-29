@@ -43,9 +43,13 @@ subset $U\subseteq X$ is dense in $X$.
 :::
 
 ::: {.solution}
-<1>1. Any two nonempty Zariski-open subsets of $X$ intersect.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #opens-intersect}
+Any two nonempty Zariski-open subsets of $X$ intersect.
+
+::: pf-proof
 An affine variety is irreducible by definition. Let
 $$
 U,V\subseteq X
@@ -66,12 +70,15 @@ U\cap V\neq\emptyset.
 $$
 :::
 
-<1>2. Every nonempty open subset $U\subseteq X$ satisfies
+:::
+
+::: {.pf-step #open-is-dense}
+Every nonempty open subset $U\subseteq X$ satisfies
 $$
 \boxed{\overline U=X.}
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose
 $$
 \overline U\subsetneq X.
@@ -88,12 +95,15 @@ one has
 $$
 U\cap V=\emptyset,
 $$
-contradicting step <1>1. Therefore $\overline U=X$, so $U$ is dense.
+contradicting step [](#opens-intersect){.pf-ref}. Therefore $\overline U=X$, so $U$ is dense.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 is exactly the assertion of the problem.
 :::
+
+::: pf-qed
+Step [](#open-is-dense){.pf-ref} is exactly the assertion of the problem.
+:::
+
+:::
+
 :::

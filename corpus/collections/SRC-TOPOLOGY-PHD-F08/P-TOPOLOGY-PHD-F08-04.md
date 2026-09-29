@@ -41,11 +41,15 @@ Prove that the real-valued function on $X$ defined by $x\mapsto d(x,A)$ is conti
 ::: {.solution}
 The statement is meaningful as a real-valued function when $A\ne\varnothing$, which we assume below.
 
-<1>1. For all $x,y\in X$,
+::: pf
+
+::: {.pf-step #triangle-inequality-distance}
+For all $x,y\in X$,
 \[
 d(x,A)\le d(x,y)+d(y,A).
 \]
-::: {.proof}
+
+::: pf-proof
 Fix $x,y\in X$.
 For every $a\in A$, the triangle inequality gives
 \[
@@ -71,13 +75,17 @@ d(x,y)+\inf_{a\in A}d(y,a)
 \]
 :::
 
-<1>2. The distance-to-$A$ function is $1$-Lipschitz:
+:::
+
+::: {.pf-step #lipschitz}
+The distance-to-$A$ function is $1$-Lipschitz:
 \[
 |d(x,A)-d(y,A)|\le d(x,y)
 \]
 for all $x,y\in X$.
-::: {.proof}
-From <1>1,
+
+::: pf-proof
+From step [](#triangle-inequality-distance){.pf-ref},
 \[
 d(x,A)-d(y,A)\le d(x,y).
 \]
@@ -91,20 +99,24 @@ Together these inequalities are equivalent to
 \]
 :::
 
-<1>3. The function
+:::
+
+::: pf-step
+The function
 \[
 f:X\to\mathbb R,
 \qquad
 f(x)=d(x,A),
 \]
 is continuous.
-::: {.proof}
+
+::: pf-proof
 Let $x\in X$ and let $\varepsilon>0$.
 Take
 \[
 \delta=\varepsilon.
 \]
-If $d(x,y)<\delta$, then by <1>2,
+If $d(x,y)<\delta$, then by step [](#lipschitz){.pf-ref},
 \[
 |f(x)-f(y)|
 =|d(x,A)-d(y,A)|
@@ -114,4 +126,9 @@ If $d(x,y)<\delta$, then by <1>2,
 \]
 Thus $f$ is continuous at every $x\in X$; indeed, the same estimate shows that it is uniformly continuous.
 :::
+
+:::
+
+:::
+
 :::

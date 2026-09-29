@@ -34,17 +34,24 @@ Show that $\RR$ and $\RR^2$ (with their usual topologies) are not homeomorphic.
 :::
 
 ::: {.solution}
-<1>1. For every $c\in\RR$, the punctured line $\RR\setminus\{c\}$ is disconnected.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #punctured-line-disconnected}
+For every $c\in\RR$, the punctured line $\RR\setminus\{c\}$ is disconnected.
+
+::: pf-proof
 It is the disjoint union $\RR\setminus\{c\}=(-\infty,c)\sqcup(c,\infty)$.
 Both pieces are nonempty and open in the subspace $\RR\setminus\{c\}$.
 Hence they form a separation.
 :::
 
-<1>2. For every $a\in\RR^2$, the punctured plane $\RR^2\setminus\{a\}$ is path-connected.
+:::
 
-::: {.proof}
+::: {.pf-step #punctured-plane-path-connected}
+For every $a\in\RR^2$, the punctured plane $\RR^2\setminus\{a\}$ is path-connected.
+
+::: pf-proof
 Translation by $-a$ is a homeomorphism from $\RR^2\setminus\{a\}$ to $\RR^2\setminus\{0\}$, so it suffices to prove the latter is path-connected.
 
 Take $x,y\in\RR^2\setminus\{0\}$.
@@ -56,18 +63,24 @@ The same argument shows that the line segment from $z$ to $y$ avoids the origin.
 Concatenating these two line segments gives a path from $x$ to $y$ in $\RR^2\setminus\{0\}$.
 :::
 
-<1>3. There is no homeomorphism $h\colon\RR\to\RR^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #no-homeomorphism}
+There is no homeomorphism $h\colon\RR\to\RR^2$.
+
+::: pf-proof
 Assume such an $h$ exists, choose $c\in\RR$, and put $a=h(c)$.
 The restriction $h|_{\RR\setminus\{c\}}\colon\RR\setminus\{c\}\to\RR^2\setminus\{a\}$ is a bijection whose inverse is the corresponding restriction of $h^{-1}$, so it is a homeomorphism.
-By step <1>1 its domain is disconnected, while by step <1>2 its codomain is path-connected and hence connected.
+By step [](#punctured-line-disconnected){.pf-ref} its domain is disconnected, while by step [](#punctured-plane-path-connected){.pf-ref} its codomain is path-connected and hence connected.
 A homeomorphic image of a disconnected space is disconnected, a contradiction.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 shows that $\RR$ and $\RR^2$ are not homeomorphic.
 :::
+
+::: pf-qed
+Step [](#no-homeomorphism){.pf-ref} shows that $\RR$ and $\RR^2$ are not homeomorphic.
+:::
+
+:::
+
 :::

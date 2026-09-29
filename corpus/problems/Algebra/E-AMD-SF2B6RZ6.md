@@ -28,8 +28,13 @@ Show that $HK$ is a subgroup of $G$ iff $HK = KH$.
 :::
 
 ::: {.solution}
-<1>1. If \(HK\le G\), then \(HK=KH\).
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #hk-subgroup-implies-hk-eq-kh}
+If \(HK\le G\), then \(HK=KH\).
+
+::: pf-proof
 Since \(HK\) is a subgroup, it is closed under inverses. Therefore
 \[
 HK=(HK)^{-1}=K^{-1}H^{-1}=KH,
@@ -37,8 +42,12 @@ HK=(HK)^{-1}=K^{-1}H^{-1}=KH,
 because \(H^{-1}=H\) and \(K^{-1}=K\).
 :::
 
-<1>2. Conversely, suppose \(HK=KH\). Then \(HK\) is nonempty and closed under \(xy^{-1}\).
-::: {.proof}
+:::
+
+::: {.pf-step #hk-eq-kh-implies-closed}
+Conversely, suppose \(HK=KH\). Then \(HK\) is nonempty and closed under \(xy^{-1}\).
+
+::: pf-proof
 The identity lies in \(HK\). Let
 \[
 x=h_1k_1,
@@ -63,8 +72,17 @@ xy^{-1}=h_1h_3k_3\in HK.
 \]
 :::
 
-<1>3. Therefore \(HK\le G\) if and only if \(HK=KH\).
-::: {.proof}
-By <1>2, the nonempty subset \(HK\) satisfies the one-step subgroup criterion \(x,y\in HK\Rightarrow xy^{-1}\in HK\), so it is a subgroup. Together with <1>1 this proves the equivalence.
 :::
+
+::: pf-step
+Therefore \(HK\le G\) if and only if \(HK=KH\).
+
+::: pf-proof
+By step [](#hk-eq-kh-implies-closed){.pf-ref}, the nonempty subset \(HK\) satisfies the one-step subgroup criterion \(x,y\in HK\Rightarrow xy^{-1}\in HK\), so it is a subgroup. Together with step [](#hk-subgroup-implies-hk-eq-kh){.pf-ref} this proves the equivalence.
+:::
+
+:::
+
+:::
+
 :::

@@ -37,8 +37,12 @@ A=\left(k[x,y]/(x^2,xy)\right)_{(x,y)}.
 Then $A$ is a one-dimensional Noetherian local ring of depth $0$, hence is not
 Cohen--Macaulay.
 
-<1>1. The ring $A$ has Krull dimension $1$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #a-has-dimension-one}
+The ring $A$ has Krull dimension $1$.
+
+::: pf-proof
 In $k[x,y]$,
 \[
 \sqrt{(x^2,xy)}=(x),
@@ -57,9 +61,13 @@ Localizing at the maximal ideal $(x,y)$ preserves the chain
 so the local ring still has dimension $1$.
 :::
 
-<1>2. The image of $x$ in $A$ is nonzero and is annihilated by the maximal
+:::
+
+::: {.pf-step #x-annihilated-by-m}
+The image of $x$ in $A$ is nonzero and is annihilated by the maximal
 ideal $\mathfrak m=(x,y)A$.
-::: {.proof}
+
+::: pf-proof
 The element $x$ is not in the ideal $(x^2,xy)$, so its image is nonzero before
 localization and remains nonzero after localization at $(x,y)$. Moreover,
 \[
@@ -70,19 +78,31 @@ y\cdot x=xy=0
 in $A$. Hence every element of $\mathfrak m$ annihilates $x$.
 :::
 
-<1>3. Every element of $\mathfrak m$ is a zerodivisor, so
+:::
+
+::: {.pf-step #depth-is-zero}
+Every element of $\mathfrak m$ is a zerodivisor, so
 \[
 \operatorname{depth}A=0.
 \]
-::: {.proof}
-By <1>2 every element of $\mathfrak m$ kills the same nonzero element $x$.
+
+::: pf-proof
+By step [](#x-annihilated-by-m){.pf-ref} every element of $\mathfrak m$ kills the same nonzero element $x$.
 Thus no element of $\mathfrak m$ is $A$-regular. A nonzero local ring has depth
 $0$ exactly when its maximal ideal contains no nonzerodivisor.
 :::
 
-<1>4. Therefore $A$ is not Cohen--Macaulay.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore $A$ is not Cohen--Macaulay.
+
+::: pf-proof
 A Noetherian local ring is Cohen--Macaulay precisely when its depth equals its
-Krull dimension. Here <1>1 gives dimension $1$ and <1>3 gives depth $0$.
+Krull dimension. Here step [](#a-has-dimension-one){.pf-ref} gives dimension $1$ and step [](#depth-is-zero){.pf-ref} gives depth $0$.
+:::
+
+:::
+
 :::
 :::

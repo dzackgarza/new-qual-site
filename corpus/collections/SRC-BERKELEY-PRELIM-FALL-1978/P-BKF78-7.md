@@ -39,14 +39,18 @@ xH\ne Hx.
 :::
 
 ::: {.solution}
-<1>1. The map
+
+::: pf
+
+::: {.pf-step #coset-bijection}
+The map
 $$
 gH\longmapsto Hg^{-1}
 $$
 is a bijection from the set of left cosets of $H$ to the set of right
 cosets of $H$.
 
-::: {.proof}
+::: pf-proof
 For every $g\in G$,
 $$
 (gH)^{-1}
@@ -63,14 +67,20 @@ a left coset. Since inversion of subsets is an involution, this
 assignment is bijective.
 :::
 
-<1>2. The subgroup $H$ has the same number of left cosets as right
-cosets.
-
-::: {.proof}
-This follows immediately from the bijection in step <1>1.
 :::
 
-<1>3. For part 2, write the symmetry group of the square as
+::: {.pf-step #part-one-done}
+The subgroup $H$ has the same number of left cosets as right
+cosets.
+
+::: pf-proof
+This follows immediately from the bijection in step [](#coset-bijection){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #square-group-setup}
+For part 2, write the symmetry group of the square as
 $$
 G
 =
@@ -82,18 +92,21 @@ $$
 H=\langle s\rangle=\{1,s\}.
 $$
 
-::: {.proof}
+::: pf-proof
 The element $s$ has order $2$, so $H=\{1,s\}$ is a subgroup of $G$.
 The displayed presentation records the standard relation between a
 quarter-turn and a reflection of the square.
 :::
 
-<1>4. With $x=r$,
+:::
+
+::: {.pf-step #example-done}
+With $x=r$,
 $$
 \boxed{rH\ne Hr}.
 $$
 
-::: {.proof}
+::: pf-proof
 We have
 $$
 rH=\{r,rs\},
@@ -112,10 +125,12 @@ hence $r^2=1$, contradicting that $r$ is a quarter-turn of order $4$.
 Thus $rs\ne sr$, so the two displayed cosets are different.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part 1, and steps <1>3 and <1>4 give the requested
+::: pf-qed
+Step [](#part-one-done){.pf-ref} proves part 1, and steps [](#square-group-setup){.pf-ref} and [](#example-done){.pf-ref} give the requested
 example for part 2.
+:::
+
 :::
 :::

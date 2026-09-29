@@ -35,11 +35,15 @@ B=k[t].
 \]
 The inclusion $A\subseteq B$ is the normalization of the cuspidal affine curve.
 
-<1>1. The conductor of $A\subseteq B$ is
+::: pf
+
+::: pf-step
+The conductor of $A\subseteq B$ is
 \[
 I=t^2B=(t^2,t^3)\subseteq A.
 \]
-::: {.proof}
+
+::: pf-proof
 Every monomial $t^n$ with $n\ge2$ lies in $A$.  Thus
 \[
 t^2B\subseteq A,
@@ -53,17 +57,24 @@ b=a_0+a_1t+a_2t^2+\cdots\in B
 lies in the conductor, then in particular $b\in A$, so $a_1=0$.  Also $bt\in A$, which forces $a_0=0$.  Hence $b\in t^2B$.  Therefore the conductor is exactly $I=t^2B$.
 :::
 
-<1>2. The conductor square has quotients
+:::
+
+::: pf-step
+The conductor square has quotients
 \[
 A/I\cong k,
 \qquad
 B/I\cong k[t]/(t^2).
 \]
-::: {.proof}
+
+::: pf-proof
 Modulo $(t^2,t^3)$, every element of $A$ reduces to its constant term, giving $A/I\cong k$.  In $B=k[t]$, the ideal is $(t^2)$, giving the second quotient.
 :::
 
-<1>3. The conductor square gives an exact sequence
+:::
+
+::: {.pf-step #conductor-exact-sequence}
+The conductor square gives an exact sequence
 \[
 B^*\times(A/I)^*
 \longrightarrow
@@ -75,7 +86,8 @@ B^*\times(A/I)^*
 \longrightarrow
 \operatorname{Pic}(B/I).
 \]
-::: {.proof}
+
+::: pf-proof
 The conductor square
 \[
 \begin{array}{ccc}
@@ -87,8 +99,12 @@ The conductor square
 is a Milnor patching square.  The Mayer--Vietoris sequence for units and line bundles gives the displayed exact segment.
 :::
 
-<1>4. The three Picard groups on the right of <1>3 vanish.
-::: {.proof}
+:::
+
+::: {.pf-step #picard-groups-vanish}
+The three Picard groups on the right of step [](#conductor-exact-sequence){.pf-ref} vanish.
+
+::: pf-proof
 The ring
 \[
 B=k[t]
@@ -104,17 +120,24 @@ B/I\cong k[t]/(t^2)
 is local Artinian, and every rank-one projective module over a local ring is free, so its Picard group is also zero.
 :::
 
-<1>5. Hence
+:::
+
+::: {.pf-step #pic-a-quotient}
+Hence
 \[
 \operatorname{Pic}(A)
 \cong
 (B/I)^*/\operatorname{im}\bigl(B^*\times(A/I)^*\bigr).
 \]
-::: {.proof}
-This is exactness of <1>3 together with the vanishing in <1>4.
+
+::: pf-proof
+This is exactness of step [](#conductor-exact-sequence){.pf-ref} together with the vanishing in step [](#picard-groups-vanish){.pf-ref}.
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #unit-computation}
+One has
 \[
 (B/I)^*
 =\{a+bt\pmod{t^2}:a\in k^*,\ b\in k\}
@@ -125,7 +148,8 @@ and the image of
 B^*\times(A/I)^*
 \]
 is exactly the subgroup of constant units $k^*$.
-::: {.proof}
+
+::: pf-proof
 An element $a+bt$ of $k[t]/(t^2)$ is a unit exactly when $a\ne0$, and then
 \[
 a+bt=a\left(1+\frac ba t\right).
@@ -140,7 +164,10 @@ B^*=k^*
 The patching map sends a pair of constants to their ratio in $(B/I)^*$, so its image is precisely $k^*$.
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #final-picard-computation}
+Therefore
 \[
 \boxed{
 \operatorname{Pic}(k[t^2,t^3])
@@ -150,8 +177,9 @@ The patching map sends a pair of constants to their ratio in $(B/I)^*$, so its i
 (k,+).
 }
 \]
-::: {.proof}
-Steps <1>5 and <1>6 give
+
+::: pf-proof
+Steps [](#pic-a-quotient){.pf-ref} and [](#unit-computation){.pf-ref} give
 \[
 \operatorname{Pic}(A)
 \cong
@@ -172,8 +200,11 @@ a\longmapsto1+at
 is an isomorphism from the additive group of $k$ to this multiplicative unit subgroup.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Step <1>7 is the required Picard-group calculation.
+:::
+
+::: pf-qed
+Step [](#final-picard-computation){.pf-ref} is the required Picard-group calculation.
+:::
+
 :::
 :::

@@ -31,12 +31,16 @@ Evaluate
 :::
 
 ::: {.solution}
+
 Let
 $$
 F(z)\coloneqq\frac1{1+z^{2n}}.
 $$
 
-<1>1. The poles of $F$ in the open upper half-plane are
+::: pf
+
+::: {.pf-step #upper-half-plane-poles}
+The poles of $F$ in the open upper half-plane are
 $$
 z_k
 =
@@ -47,7 +51,7 @@ z_k
 k=0,\ldots,n-1.
 $$
 
-::: {.proof}
+::: pf-proof
 The poles are the solutions of
 $$
 z^{2n}=-1.
@@ -64,14 +68,17 @@ Exactly the first $n$ of them have arguments strictly between $0$ and
 $\pi$.
 :::
 
-<1>2. For each $k=0,\ldots,n-1$,
+:::
+
+::: {.pf-step #residue-at-pole}
+For each $k=0,\ldots,n-1$,
 $$
 \Res_{z=z_k}F
 =
 -\frac{z_k}{2n}.
 $$
 
-::: {.proof}
+::: pf-proof
 The poles are simple. Therefore
 $$
 \Res_{z=z_k}F
@@ -91,14 +98,17 @@ $$
 Substitution gives the formula.
 :::
 
-<1>3. The sum of the upper-half-plane poles is
+:::
+
+::: {.pf-step #sum-of-poles}
+The sum of the upper-half-plane poles is
 $$
 \sum_{k=0}^{n-1}z_k
 =
 i\csc\left(\frac{\pi}{2n}\right).
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 \alpha\coloneqq\frac{\pi}{2n}.
@@ -139,23 +149,29 @@ i\csc\alpha.
 $$
 :::
 
-<1>4. The sum of the residues of $F$ in the upper half-plane is
+:::
+
+::: {.pf-step #sum-of-residues}
+The sum of the residues of $F$ in the upper half-plane is
 $$
 -\frac{i}{2n}
 \csc\left(\frac{\pi}{2n}\right).
 $$
 
-::: {.proof}
-Combine steps <1>2 and <1>3.
+::: pf-proof
+Combine steps [](#residue-at-pole){.pf-ref} and [](#sum-of-poles){.pf-ref}.
 :::
 
-<1>5. The integral of $F$ over the upper semicircle
+:::
+
+::: {.pf-step #arc-integral-vanishes}
+The integral of $F$ over the upper semicircle
 $$
 \abs z=R
 $$
 tends to zero as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
 For $R>2$,
 $$
 \abs{1+z^{2n}}
@@ -175,7 +191,10 @@ $$
 which tends to zero because $n\geq1$.
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #integral-value}
+One has
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -186,9 +205,9 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Apply the residue theorem to the upper semicircular contour and let
-$R\to\infty$. Step <1>5 removes the arc contribution, while step <1>4
+$R\to\infty$. Step [](#arc-integral-vanishes){.pf-ref} removes the arc contribution, while step [](#sum-of-residues){.pf-ref}
 gives
 $$
 \begin{aligned}
@@ -206,9 +225,12 @@ $$
 $$
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the requested value.
 :::
+
+::: pf-qed
+Step [](#integral-value){.pf-ref} gives the requested value.
+:::
+
+:::
+
 :::

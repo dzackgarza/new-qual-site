@@ -33,9 +33,12 @@ $$
 N=16\cdot27\cdot25\cdot7.
 $$
 
-<1>1. The exponent of $(\ZZ/16\ZZ)^\times$ is $4$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #exponent-16}
+The exponent of $(\ZZ/16\ZZ)^\times$ is $4$.
+
+::: pf-proof
 Let $x$ be odd. Then
 $$
 x^2\equiv1\pmod8,
@@ -64,9 +67,12 @@ $$
 $$
 :::
 
-<1>2. The exponent of $(\ZZ/27\ZZ)^\times$ is $18$.
+:::
 
-::: {.proof}
+::: {.pf-step #exponent-27}
+The exponent of $(\ZZ/27\ZZ)^\times$ is $18$.
+
+::: pf-proof
 Euler's theorem gives
 $$
 x^{18}\equiv1\pmod{27}
@@ -91,9 +97,12 @@ Among the divisors of $18$, this rules out every proper divisor as the
 order of $2$.
 :::
 
-<1>3. The exponent of $(\ZZ/25\ZZ)^\times$ is $20$.
+:::
 
-::: {.proof}
+::: {.pf-step #exponent-25}
+The exponent of $(\ZZ/25\ZZ)^\times$ is $20$.
+
+::: pf-proof
 Euler's theorem gives
 $$
 x^{20}\equiv1\pmod{25}
@@ -110,9 +119,12 @@ The proper divisors of $20$ are $1,2,4,5,10$; the displayed congruences
 exclude all of them.
 :::
 
-<1>4. The exponent of $(\ZZ/7\ZZ)^\times$ is $6$.
+:::
 
-::: {.proof}
+::: {.pf-step #exponent-7}
+The exponent of $(\ZZ/7\ZZ)^\times$ is $6$.
+
+::: pf-proof
 Fermat's theorem gives
 $$
 x^6\equiv1\pmod7
@@ -127,12 +139,15 @@ $$
 $$
 :::
 
-<1>5. The exponent of $(\ZZ/N\ZZ)^\times$ is
+:::
+
+::: {.pf-step #exponent-formula}
+The exponent of $(\ZZ/N\ZZ)^\times$ is
 $$
 \operatorname{lcm}(4,18,20,6)=180.
 $$
 
-::: {.proof}
+::: pf-proof
 The four moduli $16,27,25,7$ are pairwise coprime, so the Chinese
 remainder theorem gives
 $$
@@ -148,7 +163,7 @@ $$
 $$
 An integer power annihilates every element of a direct product exactly
 when it is a common multiple of the exponents of all factors. Steps
-<1>1--<1>4 therefore give the exponent as their least common multiple.
+[](#exponent-16){.pf-ref}, [](#exponent-27){.pf-ref}, [](#exponent-25){.pf-ref} and [](#exponent-7){.pf-ref} therefore give the exponent as their least common multiple.
 Direct calculation yields
 $$
 \operatorname{lcm}(4,18,20,6)
@@ -159,20 +174,26 @@ $$
 $$
 :::
 
-<1>6. The smallest positive integer with the required property is
+:::
+
+::: {.pf-step #minimal-m}
+The smallest positive integer with the required property is
 $$
 \boxed{180}.
 $$
 
-::: {.proof}
-Step <1>5 shows both that every unit modulo $N$ has $180$th power $1$ and
+::: pf-proof
+Step [](#exponent-formula){.pf-ref} shows both that every unit modulo $N$ has $180$th power $1$ and
 that any exponent with this property must be divisible by each of
 $4,18,20,6$, hence by $180$.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required minimal exponent.
 :::
+
+::: pf-qed
+Step [](#minimal-m){.pf-ref} is the required minimal exponent.
+:::
+
+:::
+
 :::

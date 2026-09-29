@@ -29,9 +29,12 @@ Let $K\subset\mathbb R^n$. Suppose every continuous real-valued function on $K$ 
 :::
 
 ::: {.solution}
-<1>1. The set $K$ is bounded.
+::: pf
 
-::: {.proof}
+::: {.pf-step #k-is-bounded}
+The set $K$ is bounded.
+
+::: pf-proof
 The function
 $$
 f:K\to\RR,
@@ -46,9 +49,12 @@ $$
 for every $x\in K$. Hence $K$ is bounded.
 :::
 
-<1>2. The set $K$ is closed in $\RR^n$.
+:::
 
-::: {.proof}
+::: {.pf-step #k-is-closed}
+The set $K$ is closed in $\RR^n$.
+
+::: pf-proof
 Suppose instead that $K$ is not closed. Then there is a point
 $$
 p\in\overline K\setminus K.
@@ -74,16 +80,21 @@ Thus $g$ is unbounded on $K$, contradicting the hypothesis. Hence $K$ is
 closed.
 :::
 
-<1>3. The set $K$ is compact.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2, $K$ is a closed and bounded subset of $\RR^n$.
+::: {.pf-step #k-is-compact}
+The set $K$ is compact.
+
+::: pf-proof
+By steps [](#k-is-bounded){.pf-ref} and [](#k-is-closed){.pf-ref}, $K$ is a closed and bounded subset of $\RR^n$.
 The Heine--Borel theorem therefore implies that $K$ is compact.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is the required conclusion.
+::: pf-qed
+Step [](#k-is-compact){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

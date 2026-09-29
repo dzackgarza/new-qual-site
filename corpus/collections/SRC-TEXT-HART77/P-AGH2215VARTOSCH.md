@@ -37,7 +37,11 @@ Injectivity follows because a morphism of varieties over $k$ is determined by it
 :::
 
 ::: {.solution}
-<1>1. A point of $t(V)$ corresponds to an irreducible closed subvariety
+
+::: pf
+
+::: {.pf-step #point-corresponds-to-subvariety}
+A point of $t(V)$ corresponds to an irreducible closed subvariety
 \[
 Z\subseteq V,
 \]
@@ -47,7 +51,8 @@ and its residue field is the function field
 \kappa(\eta_Z)=k(Z).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Choose an affine open subset
 \[
 U=\operatorname{Spec}A
@@ -68,11 +73,15 @@ The point $\eta_Z$ is the prime $\mathfrak p$.  Its residue field is
 which is precisely the rational function field of the irreducible variety $Z$.
 :::
 
-<1>2. If $P\in t(V)$ is a closed point, then
+:::
+
+::: {.pf-step #closed-point-residue-field-k}
+If $P\in t(V)$ is a closed point, then
 \[
 \boxed{\kappa(P)=k.}
 \]
-::: {.proof}
+
+::: pf-proof
 A closed point of $t(V)$ corresponds to an ordinary closed point
 \[
 p\in V.
@@ -88,13 +97,17 @@ A/\mathfrak m\cong k.
 This quotient is the residue field at the closed point.
 :::
 
-<1>3. Conversely, if
+:::
+
+::: {.pf-step #residue-field-k-implies-closed}
+Conversely, if
 \[
 P\in t(V)
 \]
 has residue field $k$, then $P$ is closed.
-::: {.proof}
-Let $Z$ be the irreducible closed subvariety whose generic point is $P$.  By <1>1,
+
+::: pf-proof
+Let $Z$ be the irreducible closed subvariety whose generic point is $P$.  By step [](#point-corresponds-to-subvariety){.pf-ref},
 \[
 k(Z)=\kappa(P)=k.
 \]
@@ -112,7 +125,10 @@ Z=\{P\},
 so $P$ is closed in $t(V)$.
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #closed-iff-residue-field-k}
+Hence
 \[
 \boxed{
 P\in t(V)\text{ is closed}
@@ -120,11 +136,15 @@ P\in t(V)\text{ is closed}
 \kappa(P)=k.
 }
 \]
-::: {.proof}
-Combine <1>2 and <1>3.
+
+::: pf-proof
+Combine steps [](#closed-point-residue-field-k){.pf-ref} and [](#residue-field-k-implies-closed){.pf-ref}.
 :::
 
-<1>5. Let
+:::
+
+::: {.pf-step #morphism-preserves-residue-field-k}
+Let
 \[
 f:X\longrightarrow Y
 \]
@@ -136,7 +156,8 @@ Then
 \[
 \boxed{\kappa(f(P))=k.}
 \]
-::: {.proof}
+
+::: pf-proof
 Put
 \[
 Q=f(P).
@@ -170,7 +191,10 @@ The injection is therefore a $k$-algebra isomorphism
 \]
 :::
 
-<1>6. Let
+:::
+
+::: {.pf-step #f-sends-closed-points-set-map}
+Let
 \[
 F:t(V)\longrightarrow t(W)
 \]
@@ -180,14 +204,19 @@ be a morphism of schemes over $k$.  Then $F$ sends closed points to closed point
 f:V\longrightarrow W.
 }
 \]
-::: {.proof}
-By <1>4, the closed points of $t(V)$ are exactly the points with residue field $k$.  By <1>5, $F$ sends each such point to a point of $t(W)$ whose residue field is $k$, which by <1>4 is closed.
+
+::: pf-proof
+By step [](#closed-iff-residue-field-k){.pf-ref}, the closed points of $t(V)$ are exactly the points with residue field $k$.  By step [](#morphism-preserves-residue-field-k){.pf-ref}, $F$ sends each such point to a point of $t(W)$ whose residue field is $k$, which by step [](#closed-iff-residue-field-k){.pf-ref} is closed.
 
 The closed points of $t(V)$ and $t(W)$ identify respectively with the ordinary points of the classical varieties $V$ and $W$.  Restricting the underlying map of $F$ to those closed points gives the stated set map $f$.
 :::
 
-<1>7. The map $f:V\to W$ is continuous in the Zariski topology.
-::: {.proof}
+:::
+
+::: {.pf-step #f-continuous}
+The map $f:V\to W$ is continuous in the Zariski topology.
+
+::: pf-proof
 The classical variety $V$ identifies with the subspace of closed points of $t(V)$, and similarly for $W$.  Let
 \[
 C\subseteq W
@@ -209,7 +238,10 @@ f^{-1}(C),
 which is therefore closed in $V$.  Hence $f$ is continuous.
 :::
 
-<1>8. Fix $P\in V$.  There are affine open neighborhoods
+:::
+
+::: {.pf-step #affine-neighborhoods-exist}
+Fix $P\in V$.  There are affine open neighborhoods
 \[
 P\in V_0\subseteq V,
 \qquad
@@ -219,7 +251,8 @@ such that
 \[
 f(V_0)\subseteq W_0.
 \]
-::: {.proof}
+
+::: pf-proof
 Choose an affine open neighborhood
 \[
 W_0\subseteq W
@@ -249,7 +282,10 @@ f(V_0)\subseteq W_0.
 \]
 :::
 
-<1>9. Write
+:::
+
+::: {.pf-step #f-restriction-induced-by-ring-hom}
+Write
 \[
 V_0=\operatorname{Spec}_{\mathrm{var}}A,
 \qquad
@@ -266,15 +302,19 @@ is induced by a $k$-algebra homomorphism
 \[
 \varphi:B\longrightarrow A.
 \]
-::: {.proof}
-By <1>8, the scheme morphism $F$ maps the open subscheme $t(V_0)$ into $t(W_0)$.  Both are affine schemes associated to the affine varieties.  The affine anti-equivalence therefore identifies the restricted morphism with a unique ring homomorphism
+
+::: pf-proof
+By step [](#affine-neighborhoods-exist){.pf-ref}, the scheme morphism $F$ maps the open subscheme $t(V_0)$ into $t(W_0)$.  Both are affine schemes associated to the affine varieties.  The affine anti-equivalence therefore identifies the restricted morphism with a unique ring homomorphism
 \[
 B\to A.
 \]
 Because $F$ is a morphism over $k$, this homomorphism is a $k$-algebra homomorphism.
 :::
 
-<1>10. The $k$-algebra map $\varphi:B\to A$ defines a morphism of affine varieties
+:::
+
+::: {.pf-step #f0-agrees-with-f-on-v0}
+The $k$-algebra map $\varphi:B\to A$ defines a morphism of affine varieties
 \[
 f_0:V_0\longrightarrow W_0,
 \]
@@ -282,7 +322,8 @@ and on closed points
 \[
 f_0=f|_{V_0}.
 \]
-::: {.proof}
+
+::: pf-proof
 The classical affine-coordinate correspondence sends a $k$-algebra homomorphism
 \[
 B\to A
@@ -298,24 +339,32 @@ The associated scheme morphism is exactly the affine scheme morphism induced by 
 \[
 F|_{t(V_0)}.
 \]
-Hence their maps on closed points agree.  By definition of $f$ in <1>6, this says
+Hence their maps on closed points agree.  By definition of $f$ in step [](#f-sends-closed-points-set-map){.pf-ref}, this says
 \[
 f_0=f|_{V_0}.
 \]
 :::
 
-<1>11. The set map $f:V\to W$ is a morphism of varieties.
-::: {.proof}
-Every point $P\in V$ has an affine neighborhood $V_0$ on which <1>10 identifies $f$ with a morphism of affine varieties.  Regularity of a map of varieties is local on the source and target.  Therefore $f$ is a morphism globally.
 :::
 
-<1>12. The associated scheme morphism
+::: {.pf-step #f-is-morphism-of-varieties}
+The set map $f:V\to W$ is a morphism of varieties.
+
+::: pf-proof
+Every point $P\in V$ has an affine neighborhood $V_0$ on which step [](#f0-agrees-with-f-on-v0){.pf-ref} identifies $f$ with a morphism of affine varieties.  Regularity of a map of varieties is local on the source and target.  Therefore $f$ is a morphism globally.
+:::
+
+:::
+
+::: {.pf-step #tf-equals-f-original}
+The associated scheme morphism
 \[
 t(f):t(V)\longrightarrow t(W)
 \]
 is the original morphism $F$.
-::: {.proof}
-On each affine neighborhood $V_0$ from <1>8, both
+
+::: pf-proof
+On each affine neighborhood $V_0$ from step [](#affine-neighborhoods-exist){.pf-ref}, both
 \[
 t(f)|_{t(V_0)}
 \quad\text{and}\quad
@@ -325,25 +374,33 @@ are the affine scheme morphism induced by the same ring homomorphism
 \[
 \varphi:B\to A
 \]
-from <1>9.  Thus they agree on an open cover of $t(V)$, hence agree globally.
+from step [](#f-restriction-induced-by-ring-hom){.pf-ref}.  Thus they agree on an open cover of $t(V)$, hence agree globally.
 :::
 
-<1>13. Therefore the natural map
+:::
+
+::: {.pf-step #map-surjective}
+Therefore the natural map
 \[
 \operatorname{Hom}_{\mathsf{Var}_k}(V,W)
 \longrightarrow
 \operatorname{Hom}_{\mathsf{Sch}_k}(t(V),t(W))
 \]
 is surjective.
-::: {.proof}
-Given any scheme morphism $F$, steps <1>6--<1>12 construct a variety morphism $f$ satisfying
+
+::: pf-proof
+Given any scheme morphism $F$, steps [](#f-sends-closed-points-set-map){.pf-ref}, [](#f-continuous){.pf-ref}, [](#affine-neighborhoods-exist){.pf-ref}, [](#f-restriction-induced-by-ring-hom){.pf-ref}, [](#f0-agrees-with-f-on-v0){.pf-ref}, [](#f-is-morphism-of-varieties){.pf-ref} and [](#tf-equals-f-original){.pf-ref} construct a variety morphism $f$ satisfying
 \[
 t(f)=F.
 \]
 :::
 
-<1>14. The same natural map is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #map-injective}
+The same natural map is injective.
+
+::: pf-proof
 If
 \[
 t(f)=t(g),
@@ -360,7 +417,10 @@ f=g.
 \]
 :::
 
-<1>15. Hence the functor
+:::
+
+::: {.pf-step #t-fully-faithful}
+Hence the functor
 \[
 t:\mathsf{Var}_k\longrightarrow\mathsf{Sch}_k
 \]
@@ -372,12 +432,17 @@ is fully faithful:
 \operatorname{Hom}_{\mathsf{Sch}_k}(t(V),t(W)).
 }
 \]
-::: {.proof}
-Surjectivity is <1>13 and injectivity is <1>14.
+
+::: pf-proof
+Surjectivity is step [](#map-surjective){.pf-ref} and injectivity is step [](#map-injective){.pf-ref}.
 :::
 
-<1>16. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), <1>5 proves part (b), and <1>6--<1>15 prove part (c).
 :::
+
+::: pf-qed
+Steps [](#point-corresponds-to-subvariety){.pf-ref}, [](#closed-point-residue-field-k){.pf-ref}, [](#residue-field-k-implies-closed){.pf-ref} and [](#closed-iff-residue-field-k){.pf-ref} prove part (a), step [](#morphism-preserves-residue-field-k){.pf-ref} proves part (b), and steps [](#f-sends-closed-points-set-map){.pf-ref}, [](#f-continuous){.pf-ref}, [](#affine-neighborhoods-exist){.pf-ref}, [](#f-restriction-induced-by-ring-hom){.pf-ref}, [](#f0-agrees-with-f-on-v0){.pf-ref}, [](#f-is-morphism-of-varieties){.pf-ref}, [](#tf-equals-f-original){.pf-ref}, [](#map-surjective){.pf-ref}, [](#map-injective){.pf-ref} and [](#t-fully-faithful){.pf-ref} prove part (c).
+:::
+
+:::
+
 :::

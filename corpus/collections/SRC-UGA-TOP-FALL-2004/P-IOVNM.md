@@ -42,8 +42,12 @@ q:X\longrightarrow X/R
 \]
 be the quotient projection.
 
-<1>1. The saturation of every closed subset of $X$ is closed.
-::: {.proof}
+::: pf
+
+::: {.pf-step #saturation-closed}
+The saturation of every closed subset of $X$ is closed.
+
+::: pf-proof
 Let $F\subseteq X$ be closed.
 Since $X$ is compact, $F$ is compact, and therefore
 \[
@@ -80,10 +84,14 @@ is compact.
 Since $X$ is Hausdorff, it is therefore closed in $X$.
 :::
 
-<1>2. The quotient map $q$ is a closed map.
-::: {.proof}
+:::
+
+::: {.pf-step #quotient-map-closed}
+The quotient map $q$ is a closed map.
+
+::: pf-proof
 Let $F\subseteq X$ be closed.
-By <1>1,
+By step [](#saturation-closed){.pf-ref},
 \[
 q^{-1}(q(F))
 \]
@@ -101,8 +109,12 @@ is closed in $X/R$.
 Thus $q$ is closed.
 :::
 
-<1>3. Every equivalence class is compact.
-::: {.proof}
+:::
+
+::: {.pf-step #equivalence-class-compact}
+Every equivalence class is compact.
+
+::: pf-proof
 Fix $x\in X$ and consider
 \[
 i_x:X\longrightarrow X\times X,
@@ -117,10 +129,14 @@ Since $R$ is closed, $[x]$ is closed in $X$.
 Because $X$ is compact, $[x]$ is compact.
 :::
 
-<1>4. Any two distinct equivalence classes have disjoint open neighborhoods in $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #classes-have-disjoint-nbhds}
+Any two distinct equivalence classes have disjoint open neighborhoods in $X$.
+
+::: pf-proof
 Let $A$ and $B$ be distinct equivalence classes.
-They are disjoint compact subsets of the Hausdorff space $X$ by <1>3.
+They are disjoint compact subsets of the Hausdorff space $X$ by step [](#equivalence-class-compact){.pf-ref}.
 
 For each $a\in A$ and $b\in B$, choose disjoint open neighborhoods
 \[
@@ -174,8 +190,12 @@ and $U\cap V=\emptyset$.
 Indeed, if $z\in U$, then $z\in U_{a_j}$ for some $j$, while every point of $V$ lies in $V_{a_j}$, and those two sets are disjoint.
 :::
 
-<1>5. Distinct points of $X/R$ have disjoint open neighborhoods.
-::: {.proof}
+:::
+
+::: {.pf-step #quotient-points-have-disjoint-nbhds}
+Distinct points of $X/R$ have disjoint open neighborhoods.
+
+::: pf-proof
 Let
 \[
 \alpha,\beta\in X/R,
@@ -188,7 +208,7 @@ A=q^{-1}(\alpha),
 \qquad
 B=q^{-1}(\beta).
 \]
-By <1>4, choose disjoint open sets $U,V\subseteq X$ such that
+By step [](#classes-have-disjoint-nbhds){.pf-ref}, choose disjoint open sets $U,V\subseteq X$ such that
 \[
 A\subseteq U,
 \qquad
@@ -202,7 +222,7 @@ O_\alpha=(X/R)\setminus q(X\setminus U),
 O_\beta=(X/R)\setminus q(X\setminus V).
 \]
 The sets $X\setminus U$ and $X\setminus V$ are closed in $X$.
-By <1>2 their images under $q$ are closed, so $O_\alpha$ and $O_\beta$ are open in $X/R$.
+By step [](#quotient-map-closed){.pf-ref} their images under $q$ are closed, so $O_\alpha$ and $O_\beta$ are open in $X/R$.
 
 Since the whole fiber $A$ lies in $U$, no representative of $\alpha$ lies in $X\setminus U$.
 Hence
@@ -230,8 +250,15 @@ O_\alpha\cap O_\beta=\emptyset.
 \]
 :::
 
-<1>6. Therefore $X/R$ is Hausdorff.
-::: {.proof}
-By <1>5, every pair of distinct points of $X/R$ has disjoint open neighborhoods, which is exactly the Hausdorff condition.
 :::
+
+::: pf-step
+Therefore $X/R$ is Hausdorff.
+
+::: pf-proof
+By step [](#quotient-points-have-disjoint-nbhds){.pf-ref}, every pair of distinct points of $X/R$ has disjoint open neighborhoods, which is exactly the Hausdorff condition.
+:::
+
+:::
+
 :::

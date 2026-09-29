@@ -33,60 +33,80 @@ Throughout, $0<r<R$, so that $z^{-m}$ is defined on $K$. Let $f(z) = z^m p(z) - 
 
 **Part (1).**
 
-<1>1. $f$ is a polynomial with $\abs{f(0)} = 1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-value-at-zero}
+$f$ is a polynomial with $\abs{f(0)} = 1$.
+
+::: pf-proof
 $z^m p(z) - 1$ is a polynomial, and $f(0) = 0^m p(0) - 1 = -1$ since $m\ge1$.
 :::
 
-<1>2. If $p \not\equiv 0$, then $f$ is nonconstant.
+:::
 
-::: {.proof}
+::: {.pf-step #f-nonconstant}
+If $p \not\equiv 0$, then $f$ is nonconstant.
+
+::: pf-proof
 The term $z^m p(z)$ has degree $m + \deg(p) \ge 1$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Let $p\not\equiv0$. By step <1>2 and the maximum modulus principle on the closed disk $\overline{D(0,R)}$, the modulus of $f$ at the interior point $0$ is strictly less than its maximum on the circle $\abs z=R$. By step <1>1, $M_R > \abs{f(0)} = 1$. The remark treats $p\equiv0$.
+::: pf-qed
+Let $p\not\equiv0$. By step [](#f-nonconstant){.pf-ref} and the maximum modulus principle on the closed disk $\overline{D(0,R)}$, the modulus of $f$ at the interior point $0$ is strictly less than its maximum on the circle $\abs z=R$. By step [](#f-value-at-zero){.pf-ref}, $M_R > \abs{f(0)} = 1$. The remark treats $p\equiv0$.
+:::
+
 :::
 
 **Part (2)(i).**
 
-<1>4. For every polynomial $p$, $\sup_{z \in K} |p(z) - z^{-m}| \geq R^{-m}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #lower-bound-on-circle-R}
+For every polynomial $p$, $\sup_{z \in K} |p(z) - z^{-m}| \geq R^{-m}$.
+
+::: pf-proof
 On the circle $\abs z=R$, which lies in $K$,
 $$|p(z) - z^{-m}| = \frac{|z^m p(z) - 1|}{|z|^m} = \frac{|z^m p(z) - 1|}{R^m},$$
 so $\sup_{z \in K} |p(z) - z^{-m}| \geq M_R/R^m$. If $p\not\equiv0$, Part (1) gives $M_R>1$. If $p\equiv0$, then $\sup_{z\in K}\abs{z^{-m}}=r^{-m}>R^{-m}$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the bound with $\varepsilon_0 = R^{-m}$.
+::: pf-qed
+Step [](#lower-bound-on-circle-R){.pf-ref} gives the bound with $\varepsilon_0 = R^{-m}$.
+:::
+
 :::
 
 **Part (2)(ii).** Let $\rho = \frac{r+R}{2}$ and let $\gamma_\rho$ be the circle $z = \rho e^{i\theta}$, $0\le\theta\le2\pi$, which lies in $K$. Let $S = \sup_{z \in K} |p(z) - z^{-m}|$.
 
-<1>6. $\oint_{\gamma_\rho} \big( p(z) - z^{-m} \big) z^{m-1} \, dz = -2\pi i$ for every polynomial $p$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #contour-integral-value}
+$\oint_{\gamma_\rho} \big( p(z) - z^{-m} \big) z^{m-1} \, dz = -2\pi i$ for every polynomial $p$.
+
+::: pf-proof
 By linearity the integral is $\oint_{\gamma_\rho} p(z) z^{m-1} \, dz - \oint_{\gamma_\rho} \frac{dz}{z}$. The first integral vanishes by Cauchy's theorem, since $p(z)z^{m-1}$ is a polynomial, and the second equals $2\pi i$.
 :::
 
-<1>7. $S\geq\rho^{-m}$.
+:::
 
-::: {.proof}
-On $\gamma_\rho$, $|z^{m-1}| = \rho^{m-1}$, and $\gamma_\rho$ has length $2\pi \rho$. By step <1>6 and the $ML$-inequality,
+::: {.pf-step #lower-bound-rho}
+$S\geq\rho^{-m}$.
+
+::: pf-proof
+On $\gamma_\rho$, $|z^{m-1}| = \rho^{m-1}$, and $\gamma_\rho$ has length $2\pi \rho$. By step [](#contour-integral-value){.pf-ref} and the $ML$-inequality,
 $$2\pi = \left| \oint_{\gamma_\rho} \big( p(z) - z^{-m} \big) z^{m-1} \, dz \right| \leq S \cdot \rho^{m-1} \cdot 2\pi \rho = 2\pi \rho^m S.$$
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 gives the bound with $\varepsilon_0 = \rho^{-m} = \left(\frac{2}{r+R}\right)^m$, which depends only on $r$, $R$ and $m$.
 :::
+
+::: pf-qed
+Step [](#lower-bound-rho){.pf-ref} gives the bound with $\varepsilon_0 = \rho^{-m} = \left(\frac{2}{r+R}\right)^m$, which depends only on $r$, $R$ and $m$.
+:::
+
 :::
 
 ::: {.remark}

@@ -29,8 +29,13 @@ Either construct an example or prove that one does not exist.
 :::
 
 ::: {.solution}
-<1>1. Construct an open dense set of finite positive measure.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Construct an open dense set of finite positive measure.
+
+::: pf-proof
 Enumerate the rationals as $\mathbb Q=\{q_1,q_2,\ldots\}$ and set
 \[
 U=\bigcup_{n=1}^\infty \left(q_n-2^{-n-3},q_n+2^{-n-3}\right).
@@ -48,8 +53,12 @@ Thus
 \]
 :::
 
-<1>2. Dilate to obtain measure exactly one.
-::: {.proof}
+:::
+
+::: pf-step
+Dilate to obtain measure exactly one.
+
+::: pf-proof
 Let $a=m(U)>0$ and define
 \[
 V=a^{-1}U=\{a^{-1}x:x\in U\}.
@@ -60,5 +69,9 @@ By the scaling property of Lebesgue measure,
 m(V)=a^{-1}m(U)=1.
 \]
 Hence an open dense subset of $\mathbb R$ of Lebesgue measure exactly one does exist.
+:::
+
+:::
+
 :::
 :::

@@ -36,8 +36,12 @@ Let
 where \(p\neq q\) are primes.
 Write \(n_p\) and \(n_q\) for the numbers of Sylow \(p\)- and \(q\)-subgroups, respectively.
 
-<1>1. If neither Sylow subgroup is normal, then \(q>p\), \(n_p=q\), and \(n_q=p^2\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #neither-normal-implies-counts}
+If neither Sylow subgroup is normal, then \(q>p\), \(n_p=q\), and \(n_q=p^2\).
+
+::: pf-proof
 Sylow's theorem gives
 \[
 n_p\mid q,
@@ -75,11 +79,15 @@ n_q=p^2.
 \]
 :::
 
-<1>2. Under the assumptions of <1>1, necessarily
+:::
+
+::: {.pf-step #forces-p2q3}
+Under the assumptions of step [](#neither-normal-implies-counts){.pf-ref}, necessarily
 \[
 (p,q)=(2,3).
 \]
-::: {.proof}
+
+::: pf-proof
 From
 \[
 n_q=p^2\equiv1\pmod q
@@ -106,8 +114,12 @@ q=3.
 \]
 :::
 
-<1>3. In a group of order \(12\), four Sylow \(3\)-subgroups force the Sylow \(2\)-subgroup to be unique.
-::: {.proof}
+:::
+
+::: {.pf-step #order-12-four-3sylows-forces-unique-2sylow}
+In a group of order \(12\), four Sylow \(3\)-subgroups force the Sylow \(2\)-subgroup to be unique.
+
+::: pf-proof
 Assume
 \[
 |G|=12
@@ -138,10 +150,14 @@ n_2=1.
 \]
 :::
 
-<1>4. Therefore \(G\) has a normal Sylow subgroup.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore \(G\) has a normal Sylow subgroup.
+
+::: pf-proof
 Suppose for contradiction that neither a Sylow \(p\)-subgroup nor a Sylow \(q\)-subgroup were normal.
-By <1>1 and <1>2, one would have
+By steps [](#neither-normal-implies-counts){.pf-ref} and [](#forces-p2q3){.pf-ref}, one would have
 \[
 p=2,
 \qquad
@@ -149,11 +165,15 @@ q=3,
 \qquad
 n_3=4.
 \]
-But <1>3 then gives
+But step [](#order-12-four-3sylows-forces-unique-2sylow){.pf-ref} then gives
 \[
 n_2=1,
 \]
 so the Sylow \(2\)-subgroup is normal, a contradiction.
 Therefore at least one of the Sylow \(p\)- or Sylow \(q\)-subgroups is normal.
+:::
+
+:::
+
 :::
 :::

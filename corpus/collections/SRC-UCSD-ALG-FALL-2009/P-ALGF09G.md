@@ -45,8 +45,12 @@ and let
 V(I):=\{a\in\mathbb C^n:f(a)=0\text{ for all }f\in I\}.
 \]
 
-<1>1. Condition (i) implies condition (ii).
-::: {.proof}
+::: pf
+
+::: {.pf-step #i-implies-ii}
+Condition (i) implies condition (ii).
+
+::: pf-proof
 Assume
 \[
 R/I
@@ -78,8 +82,12 @@ I\cap\mathbb C[x_i]\neq(0).
 This holds for every $i$.
 :::
 
-<1>2. Condition (ii) implies condition (i).
-::: {.proof}
+:::
+
+::: {.pf-step #ii-implies-i}
+Condition (ii) implies condition (i).
+
+::: pf-proof
 Assume that for each $i$ there is a nonzero polynomial
 \[
 f_i(x_i)\in I\cap\mathbb C[x_i].
@@ -110,8 +118,12 @@ such monomials.
 Hence $R/I$ is spanned by finitely many vectors over $\mathbb C$, so it is finite-dimensional.
 :::
 
-<1>3. Condition (ii) implies condition (iii).
-::: {.proof}
+:::
+
+::: {.pf-step #ii-implies-iii}
+Condition (ii) implies condition (iii).
+
+::: pf-proof
 For each $i$, choose
 \[
 0\neq f_i(x_i)\in I\cap\mathbb C[x_i].
@@ -134,8 +146,12 @@ is contained in the finite Cartesian product of those root sets.
 Therefore $V(I)$ is finite, possibly empty.
 :::
 
-<1>4. Condition (iii) implies condition (ii).
-::: {.proof}
+:::
+
+::: {.pf-step #iii-implies-ii}
+Condition (iii) implies condition (ii).
+
+::: pf-proof
 Assume first that
 \[
 V(I)=\{a^{(1)},\ldots,a^{(r)}\}
@@ -183,16 +199,24 @@ for every $i$.
 Thus (ii) holds in the empty case as well.
 :::
 
-<1>5. Therefore (i), (ii), and (iii) are equivalent.
-::: {.proof}
-By <1>1 and <1>2,
+:::
+
+::: pf-step
+Therefore (i), (ii), and (iii) are equivalent.
+
+::: pf-proof
+By steps [](#i-implies-ii){.pf-ref} and [](#ii-implies-i){.pf-ref},
 \[
 \text{(i)}\Longleftrightarrow\text{(ii)}.
 \]
-By <1>3 and <1>4,
+By steps [](#ii-implies-iii){.pf-ref} and [](#iii-implies-ii){.pf-ref},
 \[
 \text{(ii)}\Longleftrightarrow\text{(iii)}.
 \]
 Hence all three conditions are equivalent.
+:::
+
+:::
+
 :::
 :::

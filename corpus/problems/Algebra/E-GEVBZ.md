@@ -31,12 +31,16 @@ Let $T:V\to W$ be a linear map of vector spaces over a field, with $V$ finite-di
 ::: {.solution}
 Set $U=\operatorname{im}T$, which is finite-dimensional because $V$ is finite-dimensional.
 
-<1>1. Define an endomorphism $S$ of the finite-dimensional space $V\oplus U$ by
+::: pf
+
+::: pf-step
+Define an endomorphism $S$ of the finite-dimensional space $V\oplus U$ by
 \[
 S(v,u)=(0,Tv).
 \]
 Then $S^2=0$.
-::: {.proof}
+
+::: pf-proof
 For $(v,u)\in V\oplus U$,
 \[
 S^2(v,u)=S(0,Tv)=(0,T0)=(0,0).
@@ -44,8 +48,12 @@ S^2(v,u)=S(0,Tv)=(0,T0)=(0,0).
 Thus the minimal polynomial of $S$ divides $x^2$. In particular it splits over the base field, so $S$ has Jordan canonical form consisting only of nilpotent Jordan blocks of sizes $1$ and $2$.
 :::
 
-<1>2. For every Jordan block of $S$, its rank plus its nullity equals its size.
-::: {.proof}
+:::
+
+::: {.pf-step #rank-plus-nullity-per-block}
+For every Jordan block of $S$, its rank plus its nullity equals its size.
+
+::: pf-proof
 A size-$1$ block is $J_1(0)=[0]$, which has rank $0$ and nullity $1$. A size-$2$ block is
 \[
 J_2(0)=\begin{pmatrix}0&1\\0&0\end{pmatrix},
@@ -56,13 +64,17 @@ which has rank $1$ and nullity $1$. Thus each block contributes its full dimensi
 \]
 :::
 
-<1>3. The image and kernel of $S$ are
+:::
+
+::: {.pf-step #image-and-kernel-of-s}
+The image and kernel of $S$ are
 \[
 \operatorname{im}S=\{0\}\oplus U,
 \qquad
 \ker S=\ker T\oplus U.
 \]
-::: {.proof}
+
+::: pf-proof
 By definition,
 \[
 \operatorname{im}S=\{(0,Tv):v\in V\}=\{0\}\oplus\operatorname{im}T=\{0\}\oplus U.
@@ -73,18 +85,22 @@ Also $S(v,u)=0$ exactly when $Tv=0$, with no restriction on $u\in U$. Hence
 \]
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \dim V=\dim\ker T+\dim\operatorname{im}T.
 \]
-::: {.proof}
-By <1>3,
+
+::: pf-proof
+By step [](#image-and-kernel-of-s){.pf-ref},
 \[
 \operatorname{rank}S=\dim U,
 \qquad
 \operatorname{nullity}S=\dim\ker T+\dim U.
 \]
-Substituting these into <1>2 gives
+Substituting these into step [](#rank-plus-nullity-per-block){.pf-ref} gives
 \[
 \dim V+\dim U
 =\dim U+\dim\ker T+\dim U.
@@ -95,4 +111,9 @@ Cancelling $\dim U$ from both sides gives
 =\dim\ker T+\dim\operatorname{im}T.
 \]
 :::
+
+:::
+
+:::
+
 :::

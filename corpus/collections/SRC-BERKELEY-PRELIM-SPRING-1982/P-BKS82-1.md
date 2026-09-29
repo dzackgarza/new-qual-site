@@ -36,7 +36,10 @@ n\ge1,
 a_n\ne0.
 $$
 
-<1>1. There is an $R>0$ such that
+::: pf
+
+::: {.pf-step #growth-estimate}
+There is an $R>0$ such that
 $$
 \abs{p(z)}
 \ge
@@ -44,7 +47,7 @@ $$
 $$
 whenever $\abs{z}\ge R$.
 
-::: {.proof}
+::: pf-proof
 For $z\ne0$,
 $$
 \frac{p(z)}{a_nz^n}
@@ -72,15 +75,18 @@ $$
 which is the asserted estimate.
 :::
 
-<1>2. Suppose, for contradiction, that $p$ has no zero in $\CC$. Then
+:::
+
+::: {.pf-step #reciprocal-bounded-outside-disk}
+Suppose, for contradiction, that $p$ has no zero in $\CC$. Then
 $$
 f(z)\coloneqq\frac1{p(z)}
 $$
 is an entire function and is bounded on $\{z:\abs{z}\ge R\}$.
 
-::: {.proof}
+::: pf-proof
 The assumption that $p$ has no zero makes $1/p$ holomorphic on all of
-$\CC$. By step <1>1, for $\abs{z}\ge R$,
+$\CC$. By step [](#growth-estimate){.pf-ref}, for $\abs{z}\ge R$,
 $$
 \abs{f(z)}
 =
@@ -93,38 +99,49 @@ $$
 Thus $f$ is bounded outside the open disk of radius $R$.
 :::
 
-<1>3. Under the assumption in step <1>2, the entire function $f$ is
+:::
+
+::: {.pf-step #reciprocal-bounded-everywhere}
+Under the assumption in step [](#reciprocal-bounded-outside-disk){.pf-ref}, the entire function $f$ is
 bounded on all of $\CC$.
 
-::: {.proof}
+::: pf-proof
 The function $f$ is continuous on the compact disk
 $$
 \{z:\abs{z}\le R\},
 $$
-so it is bounded there. Step <1>2 gives a bound on the complement of that
+so it is bounded there. Step [](#reciprocal-bounded-outside-disk){.pf-ref} gives a bound on the complement of that
 disk. Combining the two bounds shows that $f$ is bounded on $\CC$.
 :::
 
-<1>4. The assumption that $p$ has no complex root is impossible.
+:::
 
-::: {.proof}
-By step <1>3 and Liouville's theorem, $f$ is constant. Since
+::: {.pf-step #no-root-impossible}
+The assumption that $p$ has no complex root is impossible.
+
+::: pf-proof
+By step [](#reciprocal-bounded-everywhere){.pf-ref} and Liouville's theorem, $f$ is constant. Since
 $f=1/p$ never vanishes, its constant value is nonzero, and therefore
 $p=1/f$ is constant. This contradicts $n\ge1$.
 :::
 
-<1>5. Every nonconstant polynomial with complex coefficients has a complex
+:::
+
+::: {.pf-step #root-exists}
+Every nonconstant polynomial with complex coefficients has a complex
 root.
 
-::: {.proof}
-If such a polynomial had no complex root, step <1>4 would give a
+::: pf-proof
+If such a polynomial had no complex root, step [](#no-root-impossible){.pf-ref} would give a
 contradiction. Therefore it has at least one root in $\CC$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is precisely the Fundamental Theorem of Algebra in the form
+::: pf-qed
+Step [](#root-exists){.pf-ref} is precisely the Fundamental Theorem of Algebra in the form
 requested.
+:::
+
 :::
 :::

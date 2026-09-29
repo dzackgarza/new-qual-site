@@ -32,29 +32,49 @@ Prove that for every \( \eps > 0 \) there exists $M>0$ and a set $E\subseteq X$ 
 :::
 
 ::: {.solution}
-<1>1. Define $g(x) = \sup_{n \ge 1}|f_n(x)|$ (extended real-valued).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Define $g(x) = \sup_{n \ge 1}|f_n(x)|$ (extended real-valued).
+
+::: pf-proof
 $g$ is measurable as the supremum of countably many measurable functions.
 :::
 
-<1>2. $g(x) < \infty$ for almost every $x$.
-::: {.proof}
+:::
+
+::: {.pf-step #g-finite-ae}
+$g(x) < \infty$ for almost every $x$.
+
+::: pf-proof
 for a.e. $x$, $f_n(x) \to f(x) \in \RR$, so the sequence $(f_n(x))$ is bounded and $\sup_n|f_n(x)| < \infty$.
 :::
 
-<1>3. $\mu\{g > M\} \to 0$ as $M \to \infty$.
-::: {.proof}
-the sets $\{g > M\}$ decrease to $\{g = \infty\}$ as $M \to \infty$, which has measure $0$ by <1>2; since $\mu(X) < \infty$, continuity from above gives $\mu\{g > M\} \to \mu\{g = \infty\} = 0$.
 :::
 
-<1>4. Given $\eps > 0$, choose $M$ with $\mu\{g > M\} < \eps$ and set $E = \{g > M\}$; then $\mu(E) \le \eps$ and $|f_n(x)| \le M$ for all $x \in X \setminus E$ and all $n$.
-::: {.proof}
-<1>3 gives $M$; for $x \notin E$: $g(x) \le M$, so $|f_n(x)| \le g(x) \le M$ for every $n$ by definition of $g$.
+::: {.pf-step #measure-tail-vanishes}
+$\mu\{g > M\} \to 0$ as $M \to \infty$.
+
+::: pf-proof
+the sets $\{g > M\}$ decrease to $\{g = \infty\}$ as $M \to \infty$, which has measure $0$ by step [](#g-finite-ae){.pf-ref}; since $\mu(X) < \infty$, continuity from above gives $\mu\{g > M\} \to \mu\{g = \infty\} = 0$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4 is exactly the claim.
 :::
-(Only the a.e. convergence and finiteness of $\mu$ are used.)
+
+::: {.pf-step #choose-m-and-e}
+Given $\eps > 0$, choose $M$ with $\mu\{g > M\} < \eps$ and set $E = \{g > M\}$; then $\mu(E) \le \eps$ and $|f_n(x)| \le M$ for all $x \in X \setminus E$ and all $n$.
+
+::: pf-proof
+Step [](#measure-tail-vanishes){.pf-ref} gives $M$; for $x \notin E$: $g(x) \le M$, so $|f_n(x)| \le g(x) \le M$ for every $n$ by definition of $g$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#choose-m-and-e){.pf-ref} is exactly the claim. (Only the a.e. convergence and finiteness of $\mu$ are used.)
+:::
+
+:::
+
 :::

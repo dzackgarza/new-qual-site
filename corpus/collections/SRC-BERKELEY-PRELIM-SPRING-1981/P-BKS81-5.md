@@ -32,7 +32,10 @@ into irreducible factors over $\mathbb R$, over $\mathbb Z$, and over $\mathbb Z
 :::
 
 ::: {.solution}
-<1>1. Over $\RR$, the irreducible factorizations are
+::: pf
+
+::: {.pf-step #factorizations-over-r}
+Over $\RR$, the irreducible factorizations are
 $$
 \boxed{
 x^4-4
@@ -48,7 +51,7 @@ x^3-2
 }
 $$
 
-::: {.proof}
+::: pf-proof
 The first identity follows from
 $$
 x^4-4=(x^2-2)(x^2+2).
@@ -66,7 +69,10 @@ $$
 so it is irreducible over $\RR$.
 :::
 
-<1>2. Over $\ZZ$, the irreducible factorizations are
+:::
+
+::: {.pf-step #factorizations-over-z}
+Over $\ZZ$, the irreducible factorizations are
 $$
 \boxed{
 x^4-4=(x^2-2)(x^2+2)
@@ -77,7 +83,7 @@ $$
 \boxed{x^3-2\text{ is irreducible}.}
 $$
 
-::: {.proof}
+::: pf-proof
 Both quadratic factors of $x^4-4$ are primitive. Neither has a rational
 root, so neither factors into linear polynomials over $\QQ$; by Gauss's
 lemma they are irreducible in $\ZZ[x]$.
@@ -87,7 +93,10 @@ divides every nonleading coefficient, while $4$ does not divide the
 constant term $-2$. Hence it is irreducible in $\ZZ[x]$.
 :::
 
-<1>3. Over $\ZZ/3\ZZ$, the irreducible factorizations are
+:::
+
+::: {.pf-step #factorizations-over-z3}
+Over $\ZZ/3\ZZ$, the irreducible factorizations are
 $$
 \boxed{
 x^4-4=(x-1)(x+1)(x^2+1)
@@ -100,7 +109,7 @@ x^3-2=(x+1)^3.
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Modulo $3$,
 $$
 x^4-4=x^4-1=(x-1)(x+1)(x^2+1).
@@ -117,10 +126,12 @@ $$
 The factor $x+1$ is linear and therefore irreducible.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 give the complete irreducible decompositions over all
+::: pf-qed
+Steps [](#factorizations-over-r){.pf-ref}, [](#factorizations-over-z){.pf-ref}, and [](#factorizations-over-z3){.pf-ref} give the complete irreducible decompositions over all
 three requested coefficient rings.
+:::
+
 :::
 :::

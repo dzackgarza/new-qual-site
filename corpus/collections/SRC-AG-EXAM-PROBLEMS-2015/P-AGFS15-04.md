@@ -56,8 +56,12 @@ Write \(K=k(z)=k(\mathbb P^1)\).
    \boxed{f(z)=az+b\quad\text{or}\quad f(z)=az^{-1}+b,\qquad a\in k^\times,\ b\in k.}
    \]
 
-<1>1. Every Laurent polynomial extends uniquely to \(\mathbb P^1\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #extension-to-p1}
+Every Laurent polynomial extends uniquely to \(\mathbb P^1\).
+
+::: pf-proof
 A Laurent polynomial \(f\) is an element of the rational function field \(K=k(z)\). A rational function on the nonsingular complete curve \(\mathbb P^1\) determines a morphism to \(\mathbb P^1\): at a point where \(f\) is finite it has value \([f:1]\), and at a pole it has value \([1:0]\). Thus \(f\) extends to a morphism
 \[
 \overline f:\mathbb P^1\longrightarrow\mathbb P^1.
@@ -66,8 +70,12 @@ A Laurent polynomial \(f\) is an element of the rational function field \(K=k(z)
 The punctured affine line is a dense open subset of \(\mathbb P^1\). Since \(\mathbb P^1\) is separated, two morphisms \(\mathbb P^1\to\mathbb P^1\) agreeing on a dense open subset agree everywhere. Hence the extension is unique.
 :::
 
-<1>2. The automorphisms of \(\mathbb G_m\) are \(z\mapsto az^{\pm1}\).
-::: {.proof}
+:::
+
+::: {.pf-step #automorphisms-of-gm}
+The automorphisms of \(\mathbb G_m\) are \(z\mapsto az^{\pm1}\).
+
+::: pf-proof
 The coordinate ring of \(\mathbb G_m\) is
 \[
 k[z,z^{-1}].
@@ -87,8 +95,12 @@ f(z)=az\quad\text{or}\quad f(z)=az^{-1},\qquad a\ne0.
 Each such map has an inverse of the same form, so these and only these are automorphisms.
 :::
 
-<1>3. Classify when pullback on rational differentials is bijective.
-::: {.proof}
+:::
+
+::: {.pf-step #pullback-isomorphism-classification}
+Classify when pullback on rational differentials is bijective.
+
+::: pf-proof
 The \(K\)-vector space of rational differentials is one-dimensional:
 \[
 \Omega_{\mathbb P^1}=K\,dz.
@@ -119,4 +131,13 @@ f(z)=az^{-1}+b,
 \]
 with \(a\ne0\). Conversely, each of these functions has degree one, so its pullback on rational differentials is bijective.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#extension-to-p1){.pf-ref}, [](#automorphisms-of-gm){.pf-ref} and [](#pullback-isomorphism-classification){.pf-ref} answer parts 1, 2 and 3.
+:::
+
+:::
+
 :::

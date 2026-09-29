@@ -21,32 +21,54 @@ Compute $\pi_4(X)$.
 :::
 
 ::: {.solution}
-<1>1. The standard CW construction of $\mathbb{RP}^4$ is obtained from $\mathbb{RP}^3$ by attaching a $4$-cell via the antipodal quotient
+
+::: pf
+
+::: {.pf-step #rp4-cw-structure}
+The standard CW construction of $\mathbb{RP}^4$ is obtained from $\mathbb{RP}^3$ by attaching a $4$-cell via the antipodal quotient
 $$
 q:S^3\to\mathbb{RP}^3.
 $$
-::: {.proof}
+
+::: pf-proof
 In the usual CW structure on real projective space, the characteristic map of the top cell descends from a hemisphere of $S^4$, and its boundary attaching map is exactly the double covering $S^3\to\mathbb{RP}^3$.
 :::
 
-<1>2. Hence the given space is
+:::
+
+::: pf-step
+Hence the given space is
 $$
 X\cong\mathbb{RP}^4.
 $$
-::: {.proof}
-It has precisely the standard cell attachment described in <1>1.
+
+::: pf-proof
+It has precisely the standard cell attachment described in step [](#rp4-cw-structure){.pf-ref}.
 :::
 
-<1>3. The universal covering map $S^4\to\mathbb{RP}^4$ induces an isomorphism on $\pi_4$.
-::: {.proof}
+:::
+
+::: pf-step
+The universal covering map $S^4\to\mathbb{RP}^4$ induces an isomorphism on $\pi_4$.
+
+::: pf-proof
 Covering maps induce isomorphisms on all homotopy groups in degrees at least $2$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{\pi_4(X)\cong\pi_4(S^4)\cong\mathbb Z.}
 $$
-::: {.proof}
+
+::: pf-proof
 The identity class generates $\pi_4(S^4)\cong\mathbb Z$.
 :::
+
+:::
+
+:::
+
 :::

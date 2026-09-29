@@ -33,9 +33,12 @@ Show by example that this result is false if either
 :::
 
 ::: {.solution}
-<1>1. The extension theorem fails in dimension two even when the target is projective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #dimension-two-counterexample}
+The extension theorem fails in dimension two even when the target is projective.
+
+::: pf-proof
 Take
 $$
 X=\AA_k^2=\Spec k[x,y],\qquad Y=\PP_k^1,
@@ -71,9 +74,12 @@ Thus the rational map does not extend across the origin.
 This disproves the dimension-$\ge2$ analogue while retaining a projective target.
 :::
 
-<1>2. The extension theorem fails for a nonprojective target even when the source is a nonsingular curve.
+:::
 
-::: {.proof}
+::: {.pf-step #nonprojective-target-counterexample}
+The extension theorem fails for a nonprojective target even when the source is a nonsingular curve.
+
+::: pf-proof
 Take
 $$
 X=\AA_k^1=\Spec k[t],\qquad Y=\AA_k^1,
@@ -96,9 +102,11 @@ Thus $t^{-1}$ has no extension over $0$ with values in $\AA^1$.
 The same rational function does extend to $\PP^1$ by sending $0$ to $\infty$, which isolates precisely the missing projectivity of the target in this example.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves failure when the source has dimension at least two, and step <1>2 proves failure when the target is not projective.
+::: pf-qed
+Step [](#dimension-two-counterexample){.pf-ref} proves failure when the source has dimension at least two, and step [](#nonprojective-target-counterexample){.pf-ref} proves failure when the target is not projective.
+:::
+
 :::
 :::

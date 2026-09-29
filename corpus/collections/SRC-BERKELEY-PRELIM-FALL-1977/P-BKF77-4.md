@@ -39,8 +39,12 @@ $$
 elements, so in particular there are only finitely many functions
 $V\to V$, and hence only finitely many invertible linear operators on $V$.
 
-<1>1. The powers of $P$ lie in a finite group.
-::: {.proof}
+::: pf
+
+::: pf-step
+The powers of $P$ lie in a finite group.
+
+::: pf-proof
 Because $P$ is invertible, every power
 $$
 P^k\qquad(k\ge0)
@@ -51,8 +55,12 @@ GL(V).
 $$
 :::
 
-<1>2. Two powers must coincide.
-::: {.proof}
+:::
+
+::: pf-step
+Two powers must coincide.
+
+::: pf-proof
 The infinite sequence
 $$
 I,P,P^2,P^3,\ldots
@@ -67,8 +75,12 @@ P^i=P^j.
 $$
 :::
 
-<1>3. $P^{j-i}=I$ with $j-i>0$.
-::: {.proof}
+:::
+
+::: pf-step
+$P^{j-i}=I$ with $j-i>0$.
+
+::: pf-proof
 Multiplying
 $$
 P^i=P^j
@@ -85,5 +97,9 @@ we have found a positive integer $n$ such that
 $$
 \boxed{P^n=I.}
 $$
+:::
+
+:::
+
 :::
 :::

@@ -36,12 +36,17 @@ Prove that f (z) is entire.
 
 
 ::: {.solution}
-<1>1. The hypothesis implies
+
+::: pf
+
+::: {.pf-step #arbitrary-polynomial-weight}
+The hypothesis implies
 \[
 \int_\Gamma q(z)f(z)\,dz=0
 \]
 for every polynomial $q\in\mathbb C[z]$ and every closed contour $\Gamma$ avoiding the poles of $f$.
-::: {.proof}
+
+::: pf-proof
 Fix a polynomial $p$.
 Applying the hypothesis first to $p+1$ and then to $p$, and subtracting, gives
 \[
@@ -56,8 +61,12 @@ which is again a polynomial over $\mathbb C$.
 Then $2p+1=q$, giving the desired identity.
 :::
 
-<1>2. The function $f$ has no poles.
-::: {.proof}
+:::
+
+::: {.pf-step #f-no-poles}
+The function $f$ has no poles.
+
+::: pf-proof
 Suppose, for contradiction, that $f$ has a pole of order $m\ge1$ at $a$.
 Its Laurent expansion near $a$ has the form
 \[
@@ -74,13 +83,22 @@ By the residue theorem,
 \[
 \int_\Gamma q(z)f(z)\,dz=2\pi i\,c_{-m}\ne0,
 \]
-contradicting <1>1. Thus $f$ has no poles.
+contradicting step [](#arbitrary-polynomial-weight){.pf-ref}. Thus $f$ has no poles.
 :::
 
-<1>3. Therefore $f$ is entire.
-::: {.proof}
-A meromorphic function on $\mathbb C$ is holomorphic away from its poles.
-By <1>2 there are no poles, so $f$ is holomorphic on all of $\mathbb C$.
 :::
+
+::: {.pf-step #f-entire}
+Therefore $f$ is entire.
+
+::: pf-proof
+A meromorphic function on $\mathbb C$ is holomorphic away from its poles.
+By step [](#f-no-poles){.pf-ref} there are no poles, so $f$ is holomorphic on all of $\mathbb C$.
+:::
+
+:::
+
+:::
+
 :::
 

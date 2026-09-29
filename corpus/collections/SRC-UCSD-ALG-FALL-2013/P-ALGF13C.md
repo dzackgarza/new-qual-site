@@ -35,8 +35,13 @@ Let $A$ be a commutative noetherian ring.
 :::
 
 ::: {.solution}
-<1>1. Every ideal of \(A\) contains a finite product of prime ideals.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #part-a-every-ideal}
+Every ideal of \(A\) contains a finite product of prime ideals.
+
+::: pf-proof
 Call an ideal \(I\subseteq A\) good if there exist prime ideals \(P_1,\ldots,P_k\) such that
 \[
 P_1P_2\cdots P_k\subseteq I.
@@ -90,19 +95,27 @@ so \(I\) is good, a contradiction.
 Therefore every ideal is good.
 :::
 
-<1>2. The zero ideal contains a finite product of prime ideals.
-::: {.proof}
-Apply <1>1 to \(I=(0)\).
+:::
+
+::: {.pf-step #zero-ideal-product}
+The zero ideal contains a finite product of prime ideals.
+
+::: pf-proof
+Apply step [](#part-a-every-ideal){.pf-ref} to \(I=(0)\).
 There exist prime ideals \(P_1,\ldots,P_k\) such that
 \[
 P_1P_2\cdots P_k=(0).
 \]
 :::
 
-<1>3. Every minimal prime of \(A\) is equal to one of the primes \(P_i\) from <1>2.
-::: {.proof}
+:::
+
+::: {.pf-step #minimal-prime-is-pi}
+Every minimal prime of \(A\) is equal to one of the primes \(P_i\) from step [](#zero-ideal-product){.pf-ref}.
+
+::: pf-proof
 Let \(\mathfrak p\) be a minimal prime ideal of \(A\).
-By <1>2,
+By step [](#zero-ideal-product){.pf-ref},
 \[
 P_1P_2\cdots P_k\subseteq\mathfrak p.
 \]
@@ -118,12 +131,24 @@ P_i=\mathfrak p.
 \]
 :::
 
-<1>4. Hence \(A\) has only finitely many minimal prime ideals.
-::: {.proof}
-By <1>3, every minimal prime belongs to the finite set
+:::
+
+::: {.pf-step #finitely-many-minimal-primes}
+Hence \(A\) has only finitely many minimal prime ideals.
+
+::: pf-proof
+By step [](#minimal-prime-is-pi){.pf-ref}, every minimal prime belongs to the finite set
 \[
 \{P_1,\ldots,P_k\}.
 \]
 Thus there are only finitely many minimal primes.
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-every-ideal){.pf-ref} answers part (a), and step [](#finitely-many-minimal-primes){.pf-ref} answers part (b).
+:::
+
 :::
 :::

@@ -39,14 +39,23 @@ Each $E_n$ is closed in $\Omega$ because $f^{(n)}$ is continuous, and the hypoth
 \Omega=\bigcup_{n=0}^{\infty}E_n.
 \]
 
-<1>1. The region $\Omega$ is a locally compact Hausdorff space, hence a Baire space. Therefore a countable union of closed subsets with empty interior cannot equal $\Omega$. Thus some $E_N$ has nonempty interior.
+::: pf
 
-<1>2. Hence $f^{(N)}$ vanishes on a nonempty open subset of $\Omega$. Since $f^{(N)}$ is holomorphic and $\Omega$ is connected, the identity theorem gives
+::: pf-step
+The region $\Omega$ is a locally compact Hausdorff space, hence a Baire space. Therefore a countable union of closed subsets with empty interior cannot equal $\Omega$. Thus some $E_N$ has nonempty interior.
+:::
+
+::: pf-step
+Hence $f^{(N)}$ vanishes on a nonempty open subset of $\Omega$. Since $f^{(N)}$ is holomorphic and $\Omega$ is connected, the identity theorem gives
 \[
 f^{(N)}\equiv0\quad\text{on }\Omega.
 \]
+:::
 
-<1>3. If $N=0$, then $f\equiv0$, which is a polynomial. If $N\ge1$, then $f^{(N)}\equiv0$, so the Taylor expansion of $f$ at any point terminates after degree at most $N-1$. Equivalently, repeated integration gives a polynomial $P$ of degree at most $N-1$ such that $f=P$ on $\Omega$.
+::: pf-step
+If $N=0$, then $f\equiv0$, which is a polynomial. If $N\ge1$, then $f^{(N)}\equiv0$, so the Taylor expansion of $f$ at any point terminates after degree at most $N-1$. Equivalently, repeated integration gives a polynomial $P$ of degree at most $N-1$ such that $f=P$ on $\Omega$.
 
 Therefore $f$ is a polynomial.
+:::
+
 :::

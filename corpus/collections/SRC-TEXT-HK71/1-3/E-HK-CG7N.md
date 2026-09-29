@@ -55,18 +55,31 @@ Row-reduce $A$:
 \end{bmatrix}.
 \]
 
-<1>1. The matrix has a pivot in every column.
-::: {.proof}
+::: pf
+
+::: pf-step
+The matrix has a pivot in every column.
+
+::: pf-proof
 The displayed echelon form has three nonzero pivots; equivalently its reduced
 row-echelon form is $I_3$.
 :::
 
-<1>2. The only solution of $AX=0$ is
+:::
+
+::: pf-step
+The only solution of $AX=0$ is
 \[
 X=\begin{bmatrix}0\\0\\0\end{bmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
 Row operations preserve the solution set of a homogeneous system. Since the
 reduced system is $I_3X=0$, all three coordinates vanish.
 :::
+
+:::
+
+:::
+
 :::

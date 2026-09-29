@@ -49,17 +49,24 @@ is an isomorphism.
 :::
 
 ::: {.solution}
-<1>1. Both $X$ and $Y$ are normal.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #x-y-normal}
+Both $X$ and $Y$ are normal.
+
+::: pf-proof
 A smooth variety is regular, and every regular local ring is integrally
 closed. Hence smooth varieties are normal.
 :::
 
-<1>2. Every fiber of $f$ consists of a single point.
+:::
 
-::: {.proof}
-By step <1>1, $Y$ is normal, so Zariski's Main Theorem applies to the
+::: {.pf-step #fibers-are-singletons}
+Every fiber of $f$ consists of a single point.
+
+::: pf-proof
+By step [](#x-y-normal){.pf-ref}, $Y$ is normal, so Zariski's Main Theorem applies to the
 birational morphism
 $$
 f:X\longrightarrow Y:
@@ -74,18 +81,24 @@ constant, contradicting birationality. Thus no fiber has positive dimension.
 Zariski's Main Theorem therefore forces every fiber to be a singleton.
 :::
 
-<1>3. The morphism $f$ is finite.
+:::
 
-::: {.proof}
+::: {.pf-step #f-is-finite}
+The morphism $f$ is finite.
+
+::: pf-proof
 Since $X$ and $Y$ are projective, $f$ is proper and of finite type. By step
-<1>2 all fibers are finite, so $f$ is quasi-finite. A proper quasi-finite
+[](#fibers-are-singletons){.pf-ref} all fibers are finite, so $f$ is quasi-finite. A proper quasi-finite
 morphism is finite. Hence $f$ is finite.
 :::
 
-<1>4. A finite birational morphism onto the normal variety $Y$ is an
+:::
+
+::: {.pf-step #finite-birational-isomorphism}
+A finite birational morphism onto the normal variety $Y$ is an
 isomorphism.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 V=\Spec A\subseteq Y
@@ -105,7 +118,7 @@ $$
 A\subseteq B\subseteq K.
 $$
 Because $B$ is finite over $A$, every element of $B$ is integral over $A$.
-By step <1>1, $Y$ is normal, so $A$ is integrally closed in its fraction
+By step [](#x-y-normal){.pf-ref}, $Y$ is normal, so $A$ is integrally closed in its fraction
 field $K$. Therefore
 $$
 B\subseteq A.
@@ -118,10 +131,13 @@ Thus $f^{-1}(V)\to V$ is an isomorphism for every affine open $V\subseteq Y$.
 These local isomorphisms show that $f$ is an isomorphism.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 makes $f$ finite, and step <1>4 uses birationality and normality of
+::: pf-qed
+Step [](#f-is-finite){.pf-ref} makes $f$ finite, and step [](#finite-birational-isomorphism){.pf-ref} uses birationality and normality of
 $Y$ to conclude that $f$ is an isomorphism.
 :::
+
+:::
+
 :::

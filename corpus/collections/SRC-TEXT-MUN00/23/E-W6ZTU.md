@@ -24,24 +24,33 @@ Does the converse hold?
 :::
 
 ::: {.solution}
-<1>1. A discrete space $X$ is totally disconnected.
+::: pf
 
-::: {.proof}
+::: {.pf-step #discrete-totally-disconnected}
+A discrete space $X$ is totally disconnected.
+
+::: pf-proof
 Let $C\subseteq X$ contain distinct points $x$ and $y$.
 Every subset of $C$ is open in $C$, so $\theset{x}$ and $C\sm\theset{x}$ are disjoint nonempty open subsets of $C$ with union $C$, and $C$ is not connected.
 :::
 
-<1>2. The converse is false: $\QQ$ with the subspace topology from $\RR$ is totally disconnected but not discrete.
+:::
 
-::: {.proof}
+::: {.pf-step #converse-fails}
+The converse is false: $\QQ$ with the subspace topology from $\RR$ is totally disconnected but not discrete.
+
+::: pf-proof
 Let $C\subseteq\QQ$ contain rationals $p<q$, and choose an irrational $r$ with $p<r<q$.
 Then $C\cap(-\infty,r)$ and $C\cap(r,\infty)$ are disjoint nonempty open subsets of $C$ with union $C$, so $C$ is not connected.
 No singleton $\theset{q}$ is open in $\QQ$, since every open interval about $q$ contains other rationals.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves the statement, and step <1>2 answers the question about the converse.
 :::
+
+::: pf-qed
+Step [](#discrete-totally-disconnected){.pf-ref} proves the statement, and step [](#converse-fails){.pf-ref} answers the question about the converse.
+:::
+
+:::
+
 :::

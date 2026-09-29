@@ -24,27 +24,36 @@ Let $f: \mathbb{R} \to \mathbb{R}$ be the function $f(x) = x^3 - x$ . By restric
 ::: {.solution}
 Put $c=1/\sqrt3$, so that $f(c)=c^3-c=\frac1{3\sqrt3}-\frac1{\sqrt3}=-\frac2{3\sqrt3}$.
 
-<1>1. $f$ is strictly increasing on $[c,\infty)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-increasing-on-tail}
+$f$ is strictly increasing on $[c,\infty)$.
+
+::: pf-proof
 $f'(x)=3x^2-1>0$ for $x>c$.
 :::
 
-<1>2. $f([c,\infty))=[-\frac2{3\sqrt3},\infty)$.
+:::
 
-::: {.proof}
-By step <1>1, $f(x)\ge f(c)$ for $x\ge c$.
+::: {.pf-step #f-image-is-ray}
+$f([c,\infty))=[-\frac2{3\sqrt3},\infty)$.
+
+::: pf-proof
+By step [](#f-increasing-on-tail){.pf-ref}, $f(x)\ge f(c)$ for $x\ge c$.
 Since $f$ is continuous and $f(x)\to\infty$ as $x\to\infty$, the intermediate value theorem gives every value $y\ge f(c)$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2,
+::: pf-qed
+By steps [](#f-increasing-on-tail){.pf-ref} and [](#f-image-is-ray){.pf-ref},
 $$
 \boxed{g\colon[1/\sqrt3,\infty)\to[-2/(3\sqrt3),\infty),\quad g(x)=x^3-x}
 $$
 is injective and surjective.
 Its graph is the part of the cubic $y=x^3-x$ to the right of the local minimum $(c,f(c))$, and the graph of $g^{-1}$ is its reflection in the line $y=x$.
 :::
+
+:::
+
 :::

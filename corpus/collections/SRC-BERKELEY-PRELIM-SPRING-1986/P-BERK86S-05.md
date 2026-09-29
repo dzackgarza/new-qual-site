@@ -35,9 +35,12 @@ $$
 $$
 be a field automorphism.
 
-<1>1. The automorphism $\sigma$ fixes every rational number.
+::: pf
 
-::: {.proof}
+::: {.pf-step #fixes-rationals}
+The automorphism $\sigma$ fixes every rational number.
+
+::: pf-proof
 A field automorphism preserves $0$ and $1$. Hence, for every positive
 integer $n$,
 $$
@@ -58,12 +61,15 @@ $$
 Thus $\sigma(q)=q$ for every $q\in\QQ$.
 :::
 
-<1>2. If $x>0$, then
+:::
+
+::: {.pf-step #preserves-positivity}
+If $x>0$, then
 $$
 \sigma(x)>0.
 $$
 
-::: {.proof}
+::: pf-proof
 Every positive real number is a nonzero square:
 $$
 x=y^2
@@ -81,15 +87,18 @@ $$
 $$
 :::
 
-<1>3. The automorphism $\sigma$ preserves the usual order on $\RR$:
+:::
+
+::: {.pf-step #preserves-order}
+The automorphism $\sigma$ preserves the usual order on $\RR$:
 $$
 x<y
 \quad\Longrightarrow\quad
 \sigma(x)<\sigma(y).
 $$
 
-::: {.proof}
-If $x<y$, then $y-x>0$. By step <1>2,
+::: pf-proof
+If $x<y$, then $y-x>0$. By step [](#preserves-positivity){.pf-ref},
 $$
 \sigma(y)-\sigma(x)
 =
@@ -99,12 +108,15 @@ $$
 Hence $\sigma(x)<\sigma(y)$.
 :::
 
-<1>4. Every $x\in\RR$ satisfies
+:::
+
+::: {.pf-step #fixes-every-real}
+Every $x\in\RR$ satisfies
 $$
 \sigma(x)=x.
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose first that
 $$
 x<\sigma(x).
@@ -113,7 +125,7 @@ By density of $\QQ$ in $\RR$, choose $q\in\QQ$ with
 $$
 x<q<\sigma(x).
 $$
-Step <1>3 applied to $x<q$, together with step <1>1, gives
+Step [](#preserves-order){.pf-ref} applied to $x<q$, together with step [](#fixes-rationals){.pf-ref}, gives
 $$
 \sigma(x)<\sigma(q)=q,
 $$
@@ -127,7 +139,7 @@ choose $q\in\QQ$ with
 $$
 \sigma(x)<q<x.
 $$
-Step <1>3 applied to $q<x$ gives
+Step [](#preserves-order){.pf-ref} applied to $q<x$ gives
 $$
 q=\sigma(q)<\sigma(x),
 $$
@@ -136,19 +148,24 @@ contradicting $\sigma(x)<q$.
 Both strict inequalities are impossible, so $\sigma(x)=x$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #identity-boxed}
+Therefore
 $$
 \boxed{\sigma=\operatorname{id}_{\RR}}.
 $$
 
-::: {.proof}
-Step <1>4 shows that $\sigma$ fixes every real number.
+::: pf-proof
+Step [](#fixes-every-real){.pf-ref} shows that $\sigma$ fixes every real number.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Since $\sigma$ was an arbitrary field automorphism, step <1>5 proves that
+::: pf-qed
+Since $\sigma$ was an arbitrary field automorphism, step [](#identity-boxed){.pf-ref} proves that
 the identity is the only one.
+:::
+
 :::
 :::

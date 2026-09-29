@@ -52,8 +52,13 @@ b. Prove that if $G$ is closed and $Y$ is compact, then $f$ is continuous.
 :::
 
 ::: {.solution}
-<1>1. If $f:X\to Y$ is continuous and $Y$ is Hausdorff, then its graph $G$ is closed in $X\times Y$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #graph-closed-if-continuous}
+If $f:X\to Y$ is continuous and $Y$ is Hausdorff, then its graph $G$ is closed in $X\times Y$.
+
+::: pf-proof
 It is enough to prove that $(X\times Y)\setminus G$ is open.
 Let
 \[
@@ -86,12 +91,16 @@ because $x\in f^{-1}(U)$, while also $y\in V$, contradicting $U\cap V=\varnothin
 Thus every point of $(X\times Y)\setminus G$ has an open neighborhood contained in the complement, so the complement is open and $G$ is closed.
 :::
 
-<1>2. If $Y$ is compact, then the projection
+:::
+
+::: {.pf-step #projection-closed}
+If $Y$ is compact, then the projection
 \[
 \pi_X:X\times Y\longrightarrow X
 \]
 sends closed subsets of $X\times Y$ to closed subsets of $X$.
-::: {.proof}
+
+::: pf-proof
 Let $F\subseteq X\times Y$ be closed, and let
 \[
 x_0\in X\setminus\pi_X(F).
@@ -145,8 +154,12 @@ Thus every point outside $\pi_X(F)$ has an open neighborhood outside it.
 Hence $X\setminus\pi_X(F)$ is open and $\pi_X(F)$ is closed.
 :::
 
-<1>3. If $G$ is closed and $Y$ is compact, then $f$ is continuous.
-::: {.proof}
+:::
+
+::: {.pf-step #f-continuous-if-graph-closed}
+If $G$ is closed and $Y$ is compact, then $f$ is continuous.
+
+::: pf-proof
 Let $C\subseteq Y$ be closed.
 Then
 \[
@@ -161,7 +174,7 @@ Hence
 F=G\cap(X\times C)
 \]
 is closed in $X\times Y$.
-By <1>2, its projection $\pi_X(F)$ is closed in $X$.
+By step [](#projection-closed){.pf-ref}, its projection $\pi_X(F)$ is closed in $X$.
 
 We claim that
 \[
@@ -181,4 +194,13 @@ X\setminus f^{-1}(W)=f^{-1}(C)
 is closed, so $f^{-1}(W)$ is open.
 This is exactly continuity of $f$.
 :::
+
+:::
+
+::: pf-qed
+Step [](#graph-closed-if-continuous){.pf-ref} answers part (a), and step [](#f-continuous-if-graph-closed){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

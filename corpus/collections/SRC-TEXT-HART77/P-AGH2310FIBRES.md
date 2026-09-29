@@ -36,9 +36,13 @@ b. Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ 
 :::
 
 ::: {.solution}
-<1>1. It is enough to identify the topology of a fibre affine-locally on $X$ and $Y$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #reduce-fibre-topology-to-affine}
+It is enough to identify the topology of a fibre affine-locally on $X$ and $Y$.
+
+::: pf-proof
 Choose an affine neighborhood
 \[
 V=\Spec B\subseteq Y
@@ -58,7 +62,10 @@ U\times_V\Spec\kappa(y)
 These affine pieces cover $X_y$, so it suffices to compare each $|U_y|$ with $U\cap f^{-1}(y)$.
 :::
 
-<1>2. There is a canonical ring isomorphism
+:::
+
+::: {.pf-step #fibre-ring-tensor-localization}
+There is a canonical ring isomorphism
 \[
 A\otimes_B\kappa(\mathfrak p)
 \cong
@@ -67,7 +74,7 @@ S^{-1}(A/\mathfrak p A),
 S=B\setminus\mathfrak p.
 \]
 
-::: {.proof}
+::: pf-proof
 Since
 \[
 \kappa(\mathfrak p)
@@ -86,7 +93,10 @@ S^{-1}(A/\mathfrak p A).
 \]
 :::
 
-<1>3. The points of $U_y$ correspond bijectively to the primes
+:::
+
+::: {.pf-step #uy-points-correspond-to-primes}
+The points of $U_y$ correspond bijectively to the primes
 \[
 \mathfrak q\in\Spec A
 \]
@@ -95,8 +105,8 @@ such that
 \mathfrak q\cap B=\mathfrak p.
 \]
 
-::: {.proof}
-By <1>2, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
+::: pf-proof
+By step [](#fibre-ring-tensor-localization){.pf-ref}, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
 
 The first condition gives
 \[
@@ -109,11 +119,14 @@ while disjointness from $B\setminus\mathfrak p$ gives the reverse inclusion.  Th
 These are exactly the points of $U$ mapping to $y$.
 :::
 
-<1>4. The bijection in <1>3 is a homeomorphism from $|U_y|$ onto $U\cap f^{-1}(y)$ with the induced topology.
+:::
 
-::: {.proof}
+::: {.pf-step #uy-homeomorphism-onto-fiber}
+The bijection in step [](#uy-points-correspond-to-primes){.pf-ref} is a homeomorphism from $|U_y|$ onto $U\cap f^{-1}(y)$ with the induced topology.
+
+::: pf-proof
 Let $R=S^{-1}(A/\mathfrak pA)$ be the fibre ring.  Any closed subset of $\Spec R$ is $V_R(J)$ for an ideal $J\subseteq R$.
-Let $I\subseteq A$ be the inverse image in $A$ of the contraction of $J$ to $A/\mathfrak pA$.  Under the prime correspondence of <1>3,
+Let $I\subseteq A$ be the inverse image in $A$ of the contraction of $J$ to $A/\mathfrak pA$.  Under the prime correspondence of step [](#uy-points-correspond-to-primes){.pf-ref},
 \[
 V_R(J)
 \]
@@ -124,24 +137,30 @@ V_A(I)\cap f^{-1}(y)\cap U.
 Thus closed subsets on the fibre side are precisely intersections with closed subsets of $U$, which is the induced topology.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #xy-homeomorphism-global}
+Therefore
 \[
 \boxed{|X_y|\xrightarrow{\sim}f^{-1}(y)}
 \]
 is a homeomorphism onto the set-theoretic fibre with its subspace topology.
 
-::: {.proof}
-The affine homeomorphisms from <1>4 are compatible on overlaps because they all arise from the projection $X_y\to X$.  They glue to the claimed global homeomorphism.
+::: pf-proof
+The affine homeomorphisms from step [](#uy-homeomorphism-onto-fiber){.pf-ref} are compatible on overlaps because they all arise from the projection $X_y\to X$.  They glue to the claimed global homeomorphism.
 :::
 
-<1>6. In part (b), the coordinate ring of $X$ is canonically isomorphic to $k[t]$, with the structural map
+:::
+
+::: {.pf-step #coordinate-ring-of-x-is-kt}
+In part (b), the coordinate ring of $X$ is canonically isomorphic to $k[t]$, with the structural map
 \[
 k[s]\longrightarrow k[t],
 \qquad
 s\longmapsto t^2.
 \]
 
-::: {.proof}
+::: pf-proof
 The quotient relation $s-t^2=0$ eliminates $s$:
 \[
 k[s,t]/(s-t^2)\cong k[t].
@@ -149,7 +168,10 @@ k[s,t]/(s-t^2)\cong k[t].
 Under this isomorphism, the inclusion of the base coordinate ring is exactly $s\mapsto t^2$.
 :::
 
-<1>7. For a closed point $y=(s-a)$ of $Y$, the fibre is
+:::
+
+::: {.pf-step #closed-fibre-formula}
+For a closed point $y=(s-a)$ of $Y$, the fibre is
 \[
 \boxed{
 X_y
@@ -157,7 +179,7 @@ X_y
 \Spec k[t]/(t^2-a).}
 \]
 
-::: {.proof}
+::: pf-proof
 Since $k$ is algebraically closed,
 \[
 \kappa(y)=k.
@@ -172,9 +194,12 @@ X_y
 \]
 :::
 
-<1>8. Assume $a\ne0$ and $\operatorname{char}k\ne2$.  Then $X_y$ consists of two reduced points, each with residue field $k$.
+:::
 
-::: {.proof}
+::: {.pf-step #fibre-two-points-char-neq-2}
+Assume $a\ne0$ and $\operatorname{char}k\ne2$.  Then $X_y$ consists of two reduced points, each with residue field $k$.
+
+::: pf-proof
 Choose $r\in k$ with $r^2=a$.  Since $a\ne0$, we have $r\ne0$, and since $2\ne0$ in $k$,
 \[
 r\ne-r.
@@ -194,19 +219,25 @@ k\times k.
 Therefore the fibre is the disjoint union of two reduced $k$-points.
 :::
 
-<1>9. If $a=0$, then the fibre is a nonreduced one-point scheme.
+:::
 
-::: {.proof}
-By <1>7,
+::: {.pf-step #fibre-nonreduced-a-zero}
+If $a=0$, then the fibre is a nonreduced one-point scheme.
+
+::: pf-proof
+By step [](#closed-fibre-formula){.pf-ref},
 \[
 X_0=\Spec k[t]/(t^2).
 \]
 The quotient has the unique prime ideal $(t)$, so the spectrum has one point.  The class of $t$ is nonzero and nilpotent, so the scheme is not reduced.
 :::
 
-<1>10. If $a\ne0$ and $\operatorname{char}k=2$, then the fibre is likewise a nonreduced one-point scheme.
+:::
 
-::: {.proof}
+::: {.pf-step #fibre-nonreduced-char-2}
+If $a\ne0$ and $\operatorname{char}k=2$, then the fibre is likewise a nonreduced one-point scheme.
+
+::: pf-proof
 Choose $r\in k$ with $r^2=a$.  In characteristic $2$,
 \[
 t^2-a=t^2-r^2=(t-r)^2.
@@ -218,7 +249,10 @@ X_y\cong\Spec k[t]/(t-r)^2,
 which has one point and a nonzero nilpotent.  This is the correction recorded in the erratum.
 :::
 
-<1>11. Let $\eta$ be the generic point of $Y$.  Then
+:::
+
+::: {.pf-step #generic-fibre-ring}
+Let $\eta$ be the generic point of $Y$.  Then
 \[
 \kappa(\eta)=k(s)
 \]
@@ -229,7 +263,7 @@ X_\eta
 \Spec\bigl(k(s)[t]/(t^2-s)\bigr).
 \]
 
-::: {.proof}
+::: pf-proof
 The generic point corresponds to the zero prime of $k[s]$, whose residue field is its fraction field $k(s)$.  Base change along
 \[
 k[s]\hookrightarrow k(s)
@@ -242,13 +276,16 @@ k(s)[t]/(t^2-s).
 \]
 :::
 
-<1>12. The polynomial
+:::
+
+::: {.pf-step #t2-s-irreducible}
+The polynomial
 \[
 t^2-s\in k(s)[t]
 \]
 is irreducible in every characteristic.
 
-::: {.proof}
+::: pf-proof
 A quadratic polynomial of the form $t^2-s$ is reducible over the field $k(s)$ exactly when $s$ is a square in $k(s)$.
 
 But the discrete valuation $v_s$ on $k(s)$ associated to the prime $(s)$ satisfies
@@ -258,7 +295,10 @@ v_s(s)=1.
 Every square has even $v_s$-valuation.  Therefore $s$ is not a square in $k(s)$, so $t^2-s$ is irreducible.
 :::
 
-<1>13. The generic fibre is a one-point scheme whose residue field has degree two over $k(s)$:
+:::
+
+::: {.pf-step #generic-fibre-degree-two}
+The generic fibre is a one-point scheme whose residue field has degree two over $k(s)$:
 \[
 \boxed{
 X_\eta
@@ -268,8 +308,8 @@ X_\eta
 [\kappa(X_\eta):k(s)]=2.}
 \]
 
-::: {.proof}
-By <1>12, the quotient
+::: pf-proof
+By step [](#t2-s-irreducible){.pf-ref}, the quotient
 \[
 k(s)[t]/(t^2-s)
 \]
@@ -279,11 +319,14 @@ The spectrum of a field is one point.
 If $\operatorname{char}k\ne2$, the extension is separable.  If $\operatorname{char}k=2$, it is purely inseparable.  Its degree is $2$ in either case.
 :::
 
-<1>14. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 prove part (a).  Steps <1>6--<1>9 prove the source's intended characteristic-$\ne2$ closed-fibre statements, <1>10 records the characteristic-$2$ correction, and <1>11--<1>13 prove the generic-fibre statement.
 :::
+
+::: pf-qed
+Steps [](#reduce-fibre-topology-to-affine){.pf-ref}, [](#fibre-ring-tensor-localization){.pf-ref}, [](#uy-points-correspond-to-primes){.pf-ref}, [](#uy-homeomorphism-onto-fiber){.pf-ref} and [](#xy-homeomorphism-global){.pf-ref} prove part (a).  Steps [](#coordinate-ring-of-x-is-kt){.pf-ref}, [](#closed-fibre-formula){.pf-ref}, [](#fibre-two-points-char-neq-2){.pf-ref} and [](#fibre-nonreduced-a-zero){.pf-ref} prove the source's intended characteristic-$\ne2$ closed-fibre statements, step [](#fibre-nonreduced-char-2){.pf-ref} records the characteristic-$2$ correction, and steps [](#generic-fibre-ring){.pf-ref}, [](#t2-s-irreducible){.pf-ref} and [](#generic-fibre-degree-two){.pf-ref} prove the generic-fibre statement.
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Erratum"}

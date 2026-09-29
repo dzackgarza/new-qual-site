@@ -42,7 +42,10 @@ We first prove the forward implication for plane curve germs.  For the
 counterexample to the converse we work over a field of characteristic zero,
 for example $k=\CC$.
 
-<1>1. Let
+::: pf
+
+::: {.pf-step #ambient-automorphism-lift}
+Let
 $$
 A_f=k[[x,y]]/(f),
 \qquad
@@ -62,7 +65,7 @@ $$
 $$
 for a unit $u\in k[[x,y]]^\times$.
 
-::: {.proof}
+::: pf-proof
 An analytic isomorphism is, by (I, 5.6.1), an isomorphism of completed local
 rings. Choose lifts $X,Y\in k[[x,y]]$ of the images of the residue classes
 of $x,y$ under the isomorphism. Since the induced map on cotangent spaces
@@ -93,10 +96,13 @@ $$
 $$
 :::
 
-<1>2. A formal ambient automorphism as in step <1>1 identifies the complete
+:::
+
+::: {.pf-step #automorphism-identifies-resolution-data}
+A formal ambient automorphism as in step [](#ambient-automorphism-lift){.pf-ref} identifies the complete
 embedded resolution data obtained by successive point blowups.
 
-::: {.proof}
+::: pf-proof
 The automorphism $\Phi$ carries the maximal ideal $(x,y)$ to itself and
 identifies the two curve ideals. The blowup of the closed point is the
 Proj of the Rees algebra of this maximal ideal. Therefore $\Phi$ induces an
@@ -114,21 +120,27 @@ This is precisely the embedded-resolution data entering equivalence in
 (3.9.4). Hence analytically isomorphic curve singularities are equivalent.
 :::
 
-<1>3. Equivalently, in characteristic zero analytic isomorphism preserves
+:::
+
+::: {.pf-step #puiseux-characteristic-equivalence}
+Equivalently, in characteristic zero analytic isomorphism preserves
 the Puiseux characteristic, and equal Puiseux characteristic gives the same
 equivalence class in (3.9.4).
 
-::: {.proof}
+::: pf-proof
 This is the standard Puiseux-resolution theorem cited by the retained source
 for V.3.6 (Wall, *Singular Points of Plane Curves*). The characteristic
 exponents of each branch, together with pairwise contact data, determine the
 successive point-blowup resolution data, and conversely that resolution data
-recovers the Puiseux characteristics. Step <1>2 gives the forward statement
+recovers the Puiseux characteristics. Step [](#automorphism-identifies-resolution-data){.pf-ref} gives the forward statement
 without needing this classification theorem; we record it here because it
 will identify the counterexample below as equivalent.
 :::
 
-<1>4. Consider over $k=\CC$ the two irreducible plane-curve germs
+:::
+
+::: {.pf-step #same-puiseux-pair}
+Consider over $k=\CC$ the two irreducible plane-curve germs
 $$
 C_1:\quad f_1=y^3+x^7=0,
 $$
@@ -141,7 +153,7 @@ $$
 \boxed{(3,7)}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $C_1$ there is the parametrization
 $$
 x=t^3,
@@ -184,16 +196,22 @@ the reparametrizations $t\mapsto\zeta t$ with $\zeta^3=1$. Thus $C_2$ is
 irreducible and also has Puiseux pair $(3,7)$.
 :::
 
-<1>5. The singularities $C_1$ and $C_2$ are equivalent in the sense of
+:::
+
+::: {.pf-step #c1-c2-equivalent}
+The singularities $C_1$ and $C_2$ are equivalent in the sense of
 (3.9.4).
 
-::: {.proof}
-By step <1>4, they have identical Puiseux characteristic. The
-Puiseux-resolution theorem of step <1>3 therefore gives identical embedded
+::: pf-proof
+By step [](#same-puiseux-pair){.pf-ref}, they have identical Puiseux characteristic. The
+Puiseux-resolution theorem of step [](#puiseux-characteristic-equivalence){.pf-ref} therefore gives identical embedded
 resolution data, hence equivalence in the sense of (3.9.4).
 :::
 
-<1>6. For a plane hypersurface germ $f=0$, put
+:::
+
+::: {.pf-step #tjurina-number-invariant}
+For a plane hypersurface germ $f=0$, put
 $$
 \tau(f)
 =
@@ -203,8 +221,8 @@ $$
 The Tjurina number $\tau(f)$ is invariant under analytic isomorphism of the
 curve germ.
 
-::: {.proof}
-By step <1>1, an analytic isomorphism is induced by a formal coordinate
+::: pf-proof
+By step [](#ambient-automorphism-lift){.pf-ref}, an analytic isomorphism is induced by a formal coordinate
 automorphism $\Phi$ together with multiplication of the equation by a unit:
 $$
 \Phi(f)=ug.
@@ -231,12 +249,15 @@ because $u$ is a unit. Hence the two Tjurina algebras are isomorphic and
 have the same dimension.
 :::
 
-<1>7. The first germ has
+:::
+
+::: {.pf-step #tjurina-f1-twelve}
+The first germ has
 $$
 \boxed{\tau(f_1)=12}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 (f_1)_x=7x^6,
@@ -258,12 +279,15 @@ $$
 form a basis of the Tjurina algebra. There are $6\cdot2=12$ such monomials.
 :::
 
-<1>8. The second germ has
+:::
+
+::: {.pf-step #tjurina-f2-eleven}
+The second germ has
 $$
 \boxed{\tau(f_2)=11}.
 $$
 
-::: {.proof}
+::: pf-proof
 The derivatives are
 $$
 (f_2)_x=5x^4y+7x^6,
@@ -319,28 +343,33 @@ $$
 There are $7+4=11$ of them.
 :::
 
-<1>9. The equivalent singularities $C_1$ and $C_2$ are not analytically
+:::
+
+::: {.pf-step #not-analytically-isomorphic}
+The equivalent singularities $C_1$ and $C_2$ are not analytically
 isomorphic.
 
-::: {.proof}
-If they were analytically isomorphic, step <1>6 would give
+::: pf-proof
+If they were analytically isomorphic, step [](#tjurina-number-invariant){.pf-ref} would give
 $$
 \tau(f_1)=\tau(f_2).
 $$
-But steps <1>7--<1>8 give
+But steps [](#tjurina-f1-twelve){.pf-ref} and [](#tjurina-f2-eleven){.pf-ref} give
 $$
 12\ne11.
 $$
-Thus the germs are not analytically isomorphic. Together with step <1>5,
+Thus the germs are not analytically isomorphic. Together with step [](#c1-c2-equivalent){.pf-ref},
 this proves that equivalence in the sense of (3.9.4) does not imply analytic
 isomorphism.
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove that analytic isomorphism implies equivalence.
-Steps <1>4--<1>9 give two equivalent singularities which are not analytically
+::: pf-qed
+Steps [](#ambient-automorphism-lift){.pf-ref} and [](#automorphism-identifies-resolution-data){.pf-ref} prove that analytic isomorphism implies equivalence.
+Steps [](#same-puiseux-pair){.pf-ref}, [](#c1-c2-equivalent){.pf-ref}, [](#tjurina-number-invariant){.pf-ref}, [](#tjurina-f1-twelve){.pf-ref}, [](#tjurina-f2-eleven){.pf-ref} and [](#not-analytically-isomorphic){.pf-ref} give two equivalent singularities which are not analytically
 isomorphic, proving that the converse fails.
+:::
+
 :::
 :::

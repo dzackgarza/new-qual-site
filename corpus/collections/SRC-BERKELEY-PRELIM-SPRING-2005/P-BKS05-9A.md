@@ -47,7 +47,10 @@ $$
 Because $f$ vanishes outside a bounded set, this integral is finite for
 every $\varepsilon>0$.
 
-<1>1. There are constants $a,b,c\in\RR$, $C>0$, and $\rho>0$ such
+::: pf
+
+::: {.pf-step #taylor-decomposition}
+There are constants $a,b,c\in\RR$, $C>0$, and $\rho>0$ such
 that
 $$
 f(x,y)=a+bx+cy+E(x,y)
@@ -58,7 +61,7 @@ $$
 $$
 whenever $x^2+y^2<\rho^2$.
 
-::: {.proof}
+::: pf-proof
 Take
 $$
 a=f(0,0),
@@ -72,14 +75,17 @@ by a constant times $x^2+y^2$ on a sufficiently small disk, because the
 second derivatives of $f$ are continuous and therefore bounded there.
 :::
 
-<1>2. For every $0<\delta<\varepsilon<\rho$,
+:::
+
+::: {.pf-step #constant-term-vanishes}
+For every $0<\delta<\varepsilon<\rho$,
 $$
 \iint_{\delta^2<x^2+y^2<\varepsilon^2}
 \frac{1}{(x+iy)^3}\,dx\,dy
 =0.
 $$
 
-::: {.proof}
+::: pf-proof
 In polar coordinates $x+iy=re^{i\theta}$ and
 $dx\,dy=r\,dr\,d\theta$. Hence the integral equals
 $$
@@ -89,10 +95,13 @@ $$
 $$
 :::
 
-<1>3. For every $0<\delta<\varepsilon<\rho$, the corresponding
+:::
+
+::: {.pf-step #linear-terms-vanish}
+For every $0<\delta<\varepsilon<\rho$, the corresponding
 annular integrals with numerator $x$ or $y$ are also zero.
 
-::: {.proof}
+::: pf-proof
 For the numerator $x=r\cos\theta$, the angular factor is
 $$
 \cos\theta\,e^{-3i\theta}
@@ -110,7 +119,10 @@ whose integral is likewise zero. The radial integrals are finite for
 $0<\delta<\varepsilon$, so both annular integrals vanish.
 :::
 
-<1>4. The remainder contribution over a small annulus tends uniformly
+:::
+
+::: {.pf-step #remainder-bound}
+The remainder contribution over a small annulus tends uniformly
 to zero:
 $$
 \left|
@@ -121,8 +133,8 @@ $$
 2\pi C(\varepsilon-\delta).
 $$
 
-::: {.proof}
-On the annulus, step <1>1 gives
+::: pf-proof
+On the annulus, step [](#taylor-decomposition){.pf-ref} gives
 $$
 \frac{|E(x,y)|}{|x+iy|^3}
 \leq
@@ -146,10 +158,13 @@ $$
 $$
 :::
 
-<1>5. The family $I(\varepsilon)$ is Cauchy as
+:::
+
+::: {.pf-step #cauchy-criterion}
+The family $I(\varepsilon)$ is Cauchy as
 $\varepsilon\to0^+$.
 
-::: {.proof}
+::: pf-proof
 For $0<\delta<\varepsilon<\rho$,
 $$
 I(\delta)-I(\varepsilon)
@@ -157,8 +172,8 @@ I(\delta)-I(\varepsilon)
 \iint_{\delta^2<x^2+y^2<\varepsilon^2}
 \frac{f(x,y)}{(x+iy)^3}\,dx\,dy.
 $$
-Insert the decomposition from step <1>1. Steps <1>2 and <1>3 show that
-the constant and linear terms contribute zero, while step <1>4 gives
+Insert the decomposition from step [](#taylor-decomposition){.pf-ref}. Steps [](#constant-term-vanishes){.pf-ref} and [](#linear-terms-vanish){.pf-ref} show that
+the constant and linear terms contribute zero, while step [](#remainder-bound){.pf-ref} gives
 $$
 |I(\delta)-I(\varepsilon)|
 \leq2\pi C\varepsilon.
@@ -167,17 +182,23 @@ The right-hand side tends to zero with $\varepsilon$, which is the
 Cauchy criterion.
 :::
 
-<1>6. The required limit exists.
+:::
 
-::: {.proof}
+::: {.pf-step #limit-exists}
+The required limit exists.
+
+::: pf-proof
 The values $I(\varepsilon)$ lie in the complete field $\CC$. By step
-<1>5 they form a Cauchy family as $\varepsilon\to0^+$, so they
+[](#cauchy-criterion){.pf-ref} they form a Cauchy family as $\varepsilon\to0^+$, so they
 converge to a finite complex limit.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the asserted existence of the principal-value limit.
 :::
+
+::: pf-qed
+Step [](#limit-exists){.pf-ref} is the asserted existence of the principal-value limit.
+:::
+
+:::
+
 :::

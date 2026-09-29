@@ -25,23 +25,32 @@ Show that if $H < G$ is a proper subgroup, then $\Union_{g\in G} gH\inverseof{g}
 ::: {.solution}
 Let $G$ be finite, $m=\# H$, and $n'=[G:H]>1$.
 
-<1>1. $H$ has $n=[G:N_G(H)]\le n'$ distinct conjugates.
+::: pf
 
-::: {.proof}
+::: {.pf-step #n-conjugates-bound}
+$H$ has $n=[G:N_G(H)]\le n'$ distinct conjugates.
+
+::: pf-proof
 By orbit-stabilizer for the conjugation action on subgroups, $n=[G:N_G(H)]$, and $H\le N_G(H)$ gives $n\le[G:H]$.
 :::
 
-<1>2. $\# \Union_{g\in G} gH\inverseof{g}\le 1+n(m-1)$.
+:::
 
-::: {.proof}
+::: {.pf-step #union-size-bound}
+$\# \Union_{g\in G} gH\inverseof{g}\le 1+n(m-1)$.
+
+::: pf-proof
 Each of the $n$ conjugates has $m$ elements, one of which is the identity, and the identity is common to all of them.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By steps <1>1 and <1>2 and Lagrange's theorem $n'm=\# G$, $$\# \Union_{g\in G} gH\inverseof{g}\le 1+n'(m-1)=\# G-(n'-1)<\# G .$$
 :::
+
+::: pf-qed
+By steps [](#n-conjugates-bound){.pf-ref} and [](#union-size-bound){.pf-ref} and Lagrange's theorem $n'm=\# G$, $$\# \Union_{g\in G} gH\inverseof{g}\le 1+n'(m-1)=\# G-(n'-1)<\# G .$$
+:::
+
+:::
+
 :::
 
 ::: {.remark}

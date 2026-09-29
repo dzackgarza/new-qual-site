@@ -31,12 +31,16 @@ Explicitly describe the dual group of $C(d)$.
 :::
 
 ::: {.solution}
+
 Let
 \[
 \zeta=e^{2\pi i/d}.
 \]
 
-<1>1. The dual group $\widehat{C(d)}$ consists of the $d$ characters
+::: pf
+
+::: {.pf-step #dual-group-of-cd}
+The dual group $\widehat{C(d)}$ consists of the $d$ characters
 \[
 \chi_j:C(d)\to\mathbb C^\times,
 \qquad
@@ -47,7 +51,8 @@ Moreover
 \[
 \widehat{C(d)}\cong C(d)\cong C_d.
 \]
-::: {.proof}
+
+::: pf-proof
 A character of the cyclic group $C(d)=\langle\gamma\rangle$ is determined by the value of $\gamma$. Since $\gamma^d=1$, that value must satisfy
 \[
 \chi(\gamma)^d=1,
@@ -59,7 +64,10 @@ so it is one of $1,\zeta,\ldots,\zeta^{d-1}$. Conversely, each choice $\chi_j(\g
 so $\chi_1$ generates the dual group and has order $d$.
 :::
 
-<1>2. A Cayley graph of $C(d)$ requires a connection set $S\subseteq C(d)$. For a simple undirected Cayley graph one assumes
+:::
+
+::: {.pf-step #cayley-graph-definition}
+A Cayley graph of $C(d)$ requires a connection set $S\subseteq C(d)$. For a simple undirected Cayley graph one assumes
 \[
 1\notin S,
 \qquad
@@ -70,11 +78,15 @@ and defines
 \operatorname{Cay}(C(d),S)
 \]
 to have vertex set $C(d)$, with $h$ adjacent to $hs$ for every $h\in C(d)$ and $s\in S$.
-::: {.proof}
+
+::: pf-proof
 The condition $1\notin S$ excludes loops. The condition $S=S^{-1}$ makes adjacency symmetric: if $hs=k$, then $h=ks^{-1}$ with $s^{-1}\in S$.
 :::
 
-<1>3. Let $A_S$ be the adjacency operator of $\operatorname{Cay}(C(d),S)$, acting on functions $f:C(d)\to\mathbb C$ by
+:::
+
+::: {.pf-step #character-eigenvector-formula}
+Let $A_S$ be the adjacency operator of $\operatorname{Cay}(C(d),S)$, acting on functions $f:C(d)\to\mathbb C$ by
 \[
 (A_Sf)(h)=\sum_{s\in S}f(hs).
 \]
@@ -82,7 +94,8 @@ Then every character $\chi_j$ is an eigenvector, with eigenvalue
 \[
 \boxed{\lambda_j=\sum_{s\in S}\chi_j(s)}.
 \]
-::: {.proof}
+
+::: pf-proof
 For $h\in C(d)$,
 \[
 (A_S\chi_j)(h)
@@ -93,8 +106,12 @@ For $h\in C(d)$,
 Thus $\chi_j$ is an eigenvector with the displayed eigenvalue.
 :::
 
-<1>4. The $d$ character vectors form a basis of the function space $\mathbb C^{C(d)}$, so <1>3 gives the full adjacency spectrum.
-::: {.proof}
+:::
+
+::: {.pf-step #character-basis-gives-full-spectrum}
+The $d$ character vectors form a basis of the function space $\mathbb C^{C(d)}$, so step [](#character-eigenvector-formula){.pf-ref} gives the full adjacency spectrum.
+
+::: pf-proof
 For $0\le j,k<d$, character orthogonality gives
 \[
 \sum_{m=0}^{d-1}\chi_j(\gamma^m)\overline{\chi_k(\gamma^m)}
@@ -107,7 +124,10 @@ d,&j=k,\\
 Hence the $d$ character vectors are pairwise orthogonal and nonzero. Since the function space has dimension $d$, they form a basis.
 :::
 
-<1>5. For the standard cycle graph, take
+:::
+
+::: {.pf-step #cycle-graph-eigenvalues}
+For the standard cycle graph, take
 \[
 S=\{\gamma,\gamma^{-1}\}.
 \]
@@ -121,12 +141,13 @@ and the corresponding eigenvalues are
 \boxed{\lambda_j=\zeta^j+\zeta^{-j}
 =2\cos\frac{2\pi j}{d}}.
 \]
-::: {.proof}
+
+::: pf-proof
 Order the vertices as
 \[
 1,\gamma,\gamma^2,\ldots,\gamma^{d-1}.
 \]
-Then the coordinate vector of $\chi_j$ is exactly $v_j$. By <1>3,
+Then the coordinate vector of $\chi_j$ is exactly $v_j$. By step [](#character-eigenvector-formula){.pf-ref},
 \[
 \lambda_j
 =\chi_j(\gamma)+\chi_j(\gamma^{-1})
@@ -135,11 +156,24 @@ Then the coordinate vector of $\chi_j$ is exactly $v_j$. By <1>3,
 \]
 :::
 
-<1>6. If instead the intended convention is the directed Cayley graph with the single generator $S=\{\gamma\}$, the same eigenvectors $v_j$ have eigenvalues
+:::
+
+::: {.pf-step #directed-cycle-eigenvalues}
+If instead the intended convention is the directed Cayley graph with the single generator $S=\{\gamma\}$, the same eigenvectors $v_j$ have eigenvalues
 \[
 \lambda_j=\zeta^j.
 \]
-::: {.proof}
-This is the formula of <1>3 with $S=\{\gamma\}$.
+
+::: pf-proof
+This is the formula of step [](#character-eigenvector-formula){.pf-ref} with $S=\{\gamma\}$.
 :::
+
+:::
+
+::: pf-qed
+Step [](#dual-group-of-cd){.pf-ref} answers part (a); steps [](#cayley-graph-definition){.pf-ref}, [](#character-eigenvector-formula){.pf-ref}, [](#character-basis-gives-full-spectrum){.pf-ref}, [](#cycle-graph-eigenvalues){.pf-ref} and [](#directed-cycle-eigenvalues){.pf-ref} answer part (b).
+:::
+
+:::
+
 :::

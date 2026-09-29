@@ -32,45 +32,63 @@ Show that if the family $\ts{A_\alpha}$ is locally finite and each $A_\alpha$ is
 ::: {.solution}
 For a closed set $C\subseteq Y$ put $F_\alpha=(f|_{A_\alpha})^{-1}(C)=f^{-1}(C)\cap A_\alpha$, so that $f^{-1}(C)=\bigcup_\alpha F_\alpha$ because the $A_\alpha$ cover $X$.
 
-<1>1. If $A_\alpha$ is closed in $X$, then $F_\alpha$ is closed in $X$ and $F_\alpha\subseteq A_\alpha$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #restriction-preimage-closed}
+If $A_\alpha$ is closed in $X$, then $F_\alpha$ is closed in $X$ and $F_\alpha\subseteq A_\alpha$.
+
+::: pf-proof
 Since $f|_{A_\alpha}$ is continuous, $F_\alpha$ is closed in the subspace $A_\alpha$, and a closed subset of a closed subspace is closed in $X$.
 :::
 
-<1>2. (a) If the $A_\alpha$ are finitely many closed sets, $f$ is continuous.
-
-::: {.proof}
-By step <1>1, $f^{-1}(C)$ is a finite union of closed sets for every closed $C\subseteq Y$.
 :::
 
-<1>3. (b) For the closed sets $A_0=(-\infty,0]$ and $A_n=[\frac1n,\infty)$, $n\in\mathbb Z_+$, covering $\mathbb R$, the function $f\colon\mathbb R\to\mathbb R$ with $f(x)=0$ for $x\le0$ and $f(x)=1$ for $x>0$ is continuous on each $A_n$ but not continuous.
+::: {.pf-step #part-a}
+(a) If the $A_\alpha$ are finitely many closed sets, $f$ is continuous.
 
-::: {.proof}
+::: pf-proof
+By step [](#restriction-preimage-closed){.pf-ref}, $f^{-1}(C)$ is a finite union of closed sets for every closed $C\subseteq Y$.
+:::
+
+:::
+
+::: {.pf-step #part-b}
+(b) For the closed sets $A_0=(-\infty,0]$ and $A_n=[\frac1n,\infty)$, $n\in\mathbb Z_+$, covering $\mathbb R$, the function $f\colon\mathbb R\to\mathbb R$ with $f(x)=0$ for $x\le0$ and $f(x)=1$ for $x>0$ is continuous on each $A_n$ but not continuous.
+
+::: pf-proof
 The sets cover $\mathbb R$, since every $x>0$ exceeds some $\frac1n$.
 The restriction of $f$ to $A_0$ is constant $0$ and to each $A_n$, $n\ge1$, is constant $1$.
 The set $f^{-1}(\{0\})=(-\infty,0]$ is closed, but $f^{-1}(\{1\})=(0,\infty)$ is not closed, although $\{1\}$ is closed.
 :::
 
-<1>4. The union of a locally finite family $\{F_\alpha\}$ of closed sets is closed.
+:::
 
-::: {.proof}
+::: {.pf-step #locally-finite-union-closed}
+The union of a locally finite family $\{F_\alpha\}$ of closed sets is closed.
+
+::: pf-proof
 Let $F=\bigcup_\alpha F_\alpha$ and $x\in\overline F$.
 Choose an open $U\ni x$ meeting only $F_{\alpha_1},\ldots,F_{\alpha_k}$.
 Then $U\cap F\subseteq F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}$, and $x\in\overline{U\cap F}$ because $U$ is an open neighborhood of $x$.
 Hence $x\in\overline{F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}}=F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}\subseteq F$.
 :::
 
-<1>5. (c) If $\{A_\alpha\}$ is locally finite and each $A_\alpha$ is closed, $f$ is continuous.
-
-::: {.proof}
-By step <1>1, each $F_\alpha$ is closed and $F_\alpha\subseteq A_\alpha$, so $\{F_\alpha\}$ is locally finite.
-By step <1>4, $f^{-1}(C)=\bigcup_\alpha F_\alpha$ is closed for every closed $C\subseteq Y$.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #part-c}
+(c) If $\{A_\alpha\}$ is locally finite and each $A_\alpha$ is closed, $f$ is continuous.
 
-::: {.proof}
-Steps <1>2, <1>3, and <1>5 answer (a), (b), and (c).
+::: pf-proof
+By step [](#restriction-preimage-closed){.pf-ref}, each $F_\alpha$ is closed and $F_\alpha\subseteq A_\alpha$, so $\{F_\alpha\}$ is locally finite.
+By step [](#locally-finite-union-closed){.pf-ref}, $f^{-1}(C)=\bigcup_\alpha F_\alpha$ is closed for every closed $C\subseteq Y$.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, and [](#part-c){.pf-ref} answer (a), (b), and (c).
+:::
+
+:::
+
 :::

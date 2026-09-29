@@ -54,7 +54,10 @@ $$
 \overline{n}=n\cdot1_F\in F.
 $$
 
-<1>1. For every $v=(v_1,\ldots,v_n)^T\in F^n$,
+::: pf
+
+::: {.pf-step #m-rank-one-formula}
+For every $v=(v_1,\ldots,v_n)^T\in F^n$,
 $$
 Mv=(v_1+\cdots+v_n)u.
 $$
@@ -67,7 +70,7 @@ $$
 M^2=\overline{n}M.
 $$
 
-::: {.proof}
+::: pf-proof
 Every row of $M$ consists entirely of $1$'s, so each coordinate of
 $Mv$ is $v_1+\cdots+v_n$, giving the first formula. The image is
 therefore the line $Fu$, and $u\neq0$, so the rank is $1$.
@@ -85,7 +88,10 @@ M^2v
 $$
 :::
 
-<1>2. The kernel of $M$ is the hyperplane
+:::
+
+::: {.pf-step #kernel-is-hyperplane}
+The kernel of $M$ is the hyperplane
 $$
 H
 =
@@ -96,22 +102,25 @@ v_1+\cdots+v_n=0
 $$
 which has dimension $n-1$.
 
-::: {.proof}
-By step <1>1, $Mv=0$ exactly when
+::: pf-proof
+By step [](#m-rank-one-formula){.pf-ref}, $Mv=0$ exactly when
 $v_1+\cdots+v_n=0$. The defining linear functional is nonzero, so
 its kernel has codimension $1$.
 :::
 
-<1>3. The characteristic polynomial of $M$ is
+:::
+
+::: {.pf-step #char-poly}
+The characteristic polynomial of $M$ is
 $$
 \boxed{
 \chi_M(t)=t^{n-1}(t-\overline{n})
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose a basis $h_1,\ldots,h_{n-1}$ of $H$ and append a vector
-$w\notin H$. Step <1>2 shows that $M$ vanishes on all $h_i$, so in
+$w\notin H$. Step [](#kernel-is-hyperplane){.pf-ref} shows that $M$ vanishes on all $h_i$, so in
 this basis the first $n-1$ columns have only zeros.
 
 Modulo $H$, the action of $M$ is multiplication by $\overline{n}$.
@@ -127,7 +136,10 @@ $$
 Its characteristic polynomial is therefore the displayed one.
 :::
 
-<1>4. If $\overline{n}\neq0$, then $M$ is diagonalizable and its
+:::
+
+::: {.pf-step #diagonalizable-case}
+If $\overline{n}\neq0$, then $M$ is diagonalizable and its
 Jordan form is
 $$
 \boxed{
@@ -136,9 +148,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>2, $M$ vanishes on the $(n-1)$-dimensional space $H$.
-Step <1>1 gives
+::: pf-proof
+By step [](#kernel-is-hyperplane){.pf-ref}, $M$ vanishes on the $(n-1)$-dimensional space $H$.
+Step [](#m-rank-one-formula){.pf-ref} gives
 $$
 Mu=\overline{n}u.
 $$
@@ -155,10 +167,13 @@ Relative to a basis of $H$ followed by $u$, the matrix is diagonal
 with eigenvalues $0,\ldots,0,\overline{n}$.
 :::
 
-<1>5. If $\overline{n}=0$, then $M$ is not diagonalizable.
+:::
 
-::: {.proof}
-Step <1>1 gives
+::: {.pf-step #not-diagonalizable-case}
+If $\overline{n}=0$, then $M$ is not diagonalizable.
+
+::: pf-proof
+Step [](#m-rank-one-formula){.pf-ref} gives
 $$
 M^2=0,
 $$
@@ -167,7 +182,10 @@ nonzero nilpotent matrix. A diagonalizable nilpotent matrix must be
 the zero matrix, so $M$ is not diagonalizable.
 :::
 
-<1>6. If $\overline{n}=0$, the Jordan form of $M$ is
+:::
+
+::: {.pf-step #nilpotent-jordan-form}
+If $\overline{n}=0$, the Jordan form of $M$ is
 $$
 \boxed{
 J_2(0)\oplus
@@ -176,9 +194,9 @@ J_2(0)\oplus
 $$
 with one block of size $2$ and $n-2$ blocks of size $1$.
 
-::: {.proof}
-In this case step <1>5 gives $M^2=0$, so every nilpotent Jordan block
-has size at most $2$. Step <1>1 gives
+::: pf-proof
+In this case step [](#not-diagonalizable-case){.pf-ref} gives $M^2=0$, so every nilpotent Jordan block
+has size at most $2$. Step [](#m-rank-one-formula){.pf-ref} gives
 $$
 \operatorname{rank}M=1.
 $$
@@ -188,7 +206,10 @@ size-$2$ block. The remaining $n-2$ dimensions are size-$1$ zero
 blocks.
 :::
 
-<1>7. The dependence on the characteristic is exactly whether
+:::
+
+::: {.pf-step #characteristic-dependence}
+The dependence on the characteristic is exactly whether
 $\overline{n}$ vanishes:
 $$
 \boxed{
@@ -198,17 +219,19 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The scalar $\overline{n}$ vanishes precisely when $F$ has positive
 characteristic $p$ dividing the integer $n$. If it does not vanish,
-step <1>4 gives the diagonal Jordan form. If it vanishes, steps
-<1>5 and <1>6 give the nontrivial nilpotent Jordan form.
+step [](#diagonalizable-case){.pf-ref} gives the diagonal Jordan form. If it vanishes, steps
+[](#not-diagonalizable-case){.pf-ref} and [](#nilpotent-jordan-form){.pf-ref} give the nontrivial nilpotent Jordan form.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 answers part 1, steps <1>4 and <1>5 answer part 2, and
-steps <1>4, <1>6, and <1>7 answer part 3.
+::: pf-qed
+Step [](#char-poly){.pf-ref} answers part 1, steps [](#diagonalizable-case){.pf-ref} and [](#not-diagonalizable-case){.pf-ref} answer part 2, and
+steps [](#diagonalizable-case){.pf-ref}, [](#nilpotent-jordan-form){.pf-ref}, and [](#characteristic-dependence){.pf-ref} answer part 3.
+:::
+
 :::
 :::

@@ -55,9 +55,12 @@ X_i=X\intersect U_i.
 $$
 The nonempty $X_i$ form an affine open cover of $X$.
 
-<1>1. Every nonempty chart $X_i$ is a normal affine curve over $\CC$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #charts-normal-affine-curves}
+Every nonempty chart $X_i$ is a normal affine curve over $\CC$.
+
+::: pf-proof
 A projective variety is normal when each of its affine charts is normal, so
 each $X_i$ is normal.
 
@@ -67,27 +70,36 @@ $X_i$ has dimension $1$. Thus each $X_i$ is a normal affine curve over
 $\CC$.
 :::
 
-<1>2. Every nonempty chart $X_i$ is smooth.
+:::
 
-::: {.proof}
-Step <1>1 shows that $X_i$ is a normal affine curve over $\CC$. Every normal affine curve over $\CC$ is smooth
+::: {.pf-step #charts-smooth}
+Every nonempty chart $X_i$ is smooth.
+
+::: pf-proof
+Step [](#charts-normal-affine-curves){.pf-ref} shows that $X_i$ is a normal affine curve over $\CC$. Every normal affine curve over $\CC$ is smooth
 [[P-AGXVARNORMALCURVE]], so $X_i$ is smooth.
 :::
 
-<1>3. The projective curve $X$ is smooth.
+:::
 
-::: {.proof}
-The charts $X_i$ cover $X$, and by step <1>2 every nonempty chart is smooth.
+::: {.pf-step #x-smooth}
+The projective curve $X$ is smooth.
+
+::: pf-proof
+The charts $X_i$ cover $X$, and by step [](#charts-smooth){.pf-ref} every nonempty chart is smooth.
 Smoothness is local on the source, so every point of $X$ is smooth. Hence
 $$
 \boxed{X\text{ is smooth}.}
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 reduce projective normality chartwise to the smoothness of
+::: pf-qed
+Steps [](#charts-normal-affine-curves){.pf-ref}, [](#charts-smooth){.pf-ref} and [](#x-smooth){.pf-ref} reduce projective normality chartwise to the smoothness of
 normal affine curves.
 :::
+
+:::
+
 :::

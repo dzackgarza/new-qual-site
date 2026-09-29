@@ -33,9 +33,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If $G/Z(G)$ is cyclic, then $G$ is abelian.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #cyclic-quotient-abelian}
+If $G/Z(G)$ is cyclic, then $G$ is abelian.
+
+::: pf-proof
 Suppose
 $$
 G/Z(G)=\langle gZ(G)\rangle.
@@ -60,18 +64,24 @@ $$
 Thus every pair of elements of $G$ commutes.
 :::
 
-<1>2. If $G$ is nonabelian, then $G/Z(G)$ is not cyclic.
-
-::: {.proof}
-This is the contrapositive of step <1>1, and proves part 1.
 :::
 
-<1>3. If $\abs G=p^n$ with $n>0$, then
+::: {.pf-step #nonabelian-noncyclic-quotient}
+If $G$ is nonabelian, then $G/Z(G)$ is not cyclic.
+
+::: pf-proof
+This is the contrapositive of step [](#cyclic-quotient-abelian){.pf-ref}, and proves part 1.
+:::
+
+:::
+
+::: {.pf-step #center-divisible-by-p}
+If $\abs G=p^n$ with $n>0$, then
 $$
 p\mid\abs{Z(G)}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $x\in G$, the conjugacy class of $x$ has cardinality
 $$
 [G:C_G(x)].
@@ -96,10 +106,13 @@ $$
 $$
 :::
 
-<1>4. If $\abs G=p^n$ with $n>0$, then $Z(G)$ is nontrivial.
+:::
 
-::: {.proof}
-The identity element lies in $Z(G)$, so $\abs{Z(G)}>0$. By step <1>3,
+::: {.pf-step #center-nontrivial}
+If $\abs G=p^n$ with $n>0$, then $Z(G)$ is nontrivial.
+
+::: pf-proof
+The identity element lies in $Z(G)$, so $\abs{Z(G)}>0$. By step [](#center-divisible-by-p){.pf-ref},
 this positive integer is divisible by $p$, hence
 $$
 \abs{Z(G)}\geq p>1.
@@ -107,10 +120,13 @@ $$
 This proves part 2.
 :::
 
-<1>5. If $\abs G=p^2$, then $G$ is abelian.
+:::
 
-::: {.proof}
-By step <1>4, the center has order divisible by $p$. Since its order also
+::: {.pf-step #order-p-squared-abelian}
+If $\abs G=p^2$, then $G$ is abelian.
+
+::: pf-proof
+By step [](#center-nontrivial){.pf-ref}, the center has order divisible by $p$. Since its order also
 divides $p^2$, either
 $$
 \abs{Z(G)}=p
@@ -125,14 +141,17 @@ In the first case,
 $$
 \abs{G/Z(G)}=p.
 $$
-Every group of prime order is cyclic, so $G/Z(G)$ is cyclic. Step <1>1
+Every group of prime order is cyclic, so $G/Z(G)$ is cyclic. Step [](#cyclic-quotient-abelian){.pf-ref}
 then implies that $G$ is abelian. This proves part 3.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part 1, step <1>4 proves part 2, and step <1>5 proves
+::: pf-qed
+Step [](#nonabelian-noncyclic-quotient){.pf-ref} proves part 1, step [](#center-nontrivial){.pf-ref} proves part 2, and step [](#order-p-squared-abelian){.pf-ref} proves
 part 3.
 :::
+
+:::
+
 :::

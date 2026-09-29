@@ -38,12 +38,16 @@ R=k[\varepsilon]/(\varepsilon^2),
 S=\operatorname{Spec}R.
 \]
 
-<1>1. The scheme $S$ has a single point, corresponding to the maximal ideal
+::: pf
+
+::: pf-step
+The scheme $S$ has a single point, corresponding to the maximal ideal
 \[
 (\varepsilon),
 \]
 and its residue field is $k$.
-::: {.proof}
+
+::: pf-proof
 Every prime ideal contains every nilpotent element, so any prime of $R$ contains $\varepsilon$.  Prime ideals of $R$ therefore correspond to prime ideals of
 \[
 R/(\varepsilon)\cong k.
@@ -56,7 +60,10 @@ R/(\varepsilon)\cong k.
 \]
 :::
 
-<1>2. A $k$-morphism
+:::
+
+::: {.pf-step #f-determines-point-and-local-hom}
+A $k$-morphism
 \[
 f:S\longrightarrow X
 \]
@@ -71,15 +78,20 @@ and a local $k$-algebra homomorphism
 \longrightarrow
 R.
 \]
-::: {.proof}
+
+::: pf-proof
 The source has one point, so the underlying continuous map chooses $x$.  The map on stalks at that point is local because $f$ is a morphism of schemes.  Since $f$ is a morphism over $\operatorname{Spec}k$, the stalk map commutes with the structure maps from $k$, so it is a $k$-algebra homomorphism.
 :::
 
-<1>3. The point $x$ in <1>2 is $k$-rational:
+:::
+
+::: {.pf-step #x-is-k-rational}
+The point $x$ in step [](#f-determines-point-and-local-hom){.pf-ref} is $k$-rational:
 \[
 \boxed{\kappa(x)=k.}
 \]
-::: {.proof}
+
+::: pf-proof
 Reduce the local homomorphism
 \[
 \phi:\mathcal O_{X,x}\to R
@@ -96,7 +108,10 @@ R/(\varepsilon)
 The structural map $k\to\kappa(x)$ followed by this injection is the identity because $f$ is a $k$-morphism.  Hence the inclusion $k\to\kappa(x)$ is an isomorphism: the image of $\kappa(x)$ in $k$ contains all of $k$ and is contained in $k$.  Thus $\kappa(x)=k$ as a $k$-algebra.
 :::
 
-<1>4. Under the identification $\kappa(x)=k$, every local $k$-algebra map
+:::
+
+::: {.pf-step #local-hom-form-with-derivation}
+Under the identification $\kappa(x)=k$, every local $k$-algebra map
 \[
 \phi:\mathcal O_{X,x}\longrightarrow R
 \]
@@ -111,7 +126,8 @@ where
 D:\mathcal O_{X,x}\longrightarrow k
 \]
 is a $k$-derivation and $\bar a$ is the residue class of $a$ in $k$.
-::: {.proof}
+
+::: pf-proof
 Every element of $R$ has a unique expression
 \[
 c+d\varepsilon,
@@ -147,7 +163,10 @@ which is the Leibniz rule for a derivation to the residue-field module $k$.
 Conversely, any $k$-derivation $D$ makes the displayed formula additive, multiplicative, and unital, hence defines such a $k$-algebra homomorphism.
 :::
 
-<1>5. A $k$-derivation
+:::
+
+::: {.pf-step #derivation-equals-linear-functional}
+A $k$-derivation
 \[
 D:\mathcal O_{X,x}\longrightarrow k
 \]
@@ -157,7 +176,8 @@ is equivalent to a $k$-linear functional
 \mathfrak m_x/\mathfrak m_x^2
 \longrightarrow k.
 \]
-::: {.proof}
+
+::: pf-proof
 If
 \[
 a,b\in\mathfrak m_x,
@@ -212,7 +232,10 @@ D(ab)=\bar aD(b)+\bar bD(a),
 so $D$ is a $k$-derivation.
 :::
 
-<1>6. Therefore local $k$-algebra maps
+:::
+
+::: {.pf-step #local-maps-parametrized-by-tangent-space}
+Therefore local $k$-algebra maps
 \[
 \mathcal O_{X,x}\longrightarrow k[\varepsilon]/(\varepsilon^2)
 \]
@@ -224,11 +247,15 @@ T_xX
 (\mathfrak m_x/\mathfrak m_x^2)^\vee.
 }
 \]
-::: {.proof}
-Step <1>4 identifies such local maps with $k$-derivations to $k$, and <1>5 identifies those derivations with the dual of $\mathfrak m_x/\mathfrak m_x^2$.
+
+::: pf-proof
+Step [](#local-hom-form-with-derivation){.pf-ref} identifies such local maps with $k$-derivations to $k$, and step [](#derivation-equals-linear-functional){.pf-ref} identifies those derivations with the dual of $\mathfrak m_x/\mathfrak m_x^2$.
 :::
 
-<1>7. Conversely, let $x\in X$ be $k$-rational and let
+:::
+
+::: {.pf-step #phi-v-local-hom}
+Conversely, let $x\in X$ be $k$-rational and let
 \[
 v\in T_xX.
 \]
@@ -240,8 +267,9 @@ define a local $k$-algebra homomorphism
 \[
 \phi_v:\mathcal O_{X,x}\longrightarrow R.
 \]
-::: {.proof}
-By <1>5, $v$ corresponds to a $k$-derivation $D_v$.  Step <1>4 shows that $\phi_v$ is a $k$-algebra homomorphism.
+
+::: pf-proof
+By step [](#derivation-equals-linear-functional){.pf-ref}, $v$ corresponds to a $k$-derivation $D_v$.  Step [](#local-hom-form-with-derivation){.pf-ref} shows that $\phi_v$ is a $k$-algebra homomorphism.
 
 Its reduction modulo $(\varepsilon)$ is the residue map
 \[
@@ -254,12 +282,16 @@ so
 Thus $\phi_v$ is local.
 :::
 
-<1>8. The local homomorphism $\phi_v$ defines a unique $k$-morphism
+:::
+
+::: {.pf-step #phi-v-gives-morphism-fv}
+The local homomorphism $\phi_v$ defines a unique $k$-morphism
 \[
 f_v:\operatorname{Spec}R\longrightarrow X
 \]
 with underlying point $x$.
-::: {.proof}
+
+::: pf-proof
 Send the unique point of $\operatorname{Spec}R$ to $x$.
 
 For an open set $U\subseteq X$ containing $x$, define the pullback on sections as
@@ -272,12 +304,15 @@ R,
 \]
 where the first map takes a germ at $x$.  If $x\notin U$, the inverse image in the one-point source is empty, so use the unique map to the zero ring.
 
-These maps commute with restrictions and define a morphism of sheaves.  The only stalk map is $\phi_v$, which is local by <1>7, so this is a morphism of schemes.  It is a $k$-morphism because $\phi_v$ is a $k$-algebra map.
+These maps commute with restrictions and define a morphism of sheaves.  The only stalk map is $\phi_v$, which is local by step [](#phi-v-local-hom){.pf-ref}, so this is a morphism of schemes.  It is a $k$-morphism because $\phi_v$ is a $k$-algebra map.
 
 Uniqueness follows because any morphism with underlying point $x$ is determined by its local-ring map at that point, exactly as in Hartshorne II.2.7.
 :::
 
-<1>9. The two constructions are inverse.  Hence
+:::
+
+::: {.pf-step #constructions-inverse}
+The two constructions are inverse.  Hence
 \[
 \boxed{
 \operatorname{Hom}_k
@@ -288,18 +323,23 @@ Uniqueness follows because any morphism with underlying point $x$ is determined 
 \coprod_{x\in X(k)}T_xX.
 }
 \]
-::: {.proof}
-Starting with a morphism, steps <1>2--<1>6 extract its point $x$ and the coefficient derivation $D$, hence the tangent vector $v$.  Reconstructing from $v$ gives the same stalk homomorphism
+
+::: pf-proof
+Starting with a morphism, steps [](#f-determines-point-and-local-hom){.pf-ref}, [](#x-is-k-rational){.pf-ref}, [](#local-hom-form-with-derivation){.pf-ref}, [](#derivation-equals-linear-functional){.pf-ref} and [](#local-maps-parametrized-by-tangent-space){.pf-ref} extract its point $x$ and the coefficient derivation $D$, hence the tangent vector $v$.  Reconstructing from $v$ gives the same stalk homomorphism
 \[
 a\mapsto\bar a+D(a)\varepsilon,
 \]
-and therefore the same morphism by <1>8.
+and therefore the same morphism by step [](#phi-v-gives-morphism-fv){.pf-ref}.
 
 Starting from $(x,v)$, the constructed morphism has stalk map $\phi_v$, whose $\varepsilon$-coefficient is exactly $D_v$ and hence recovers the original tangent vector.
 :::
 
-<1>10. Q.E.D.
-::: {.proof}
-Step <1>9 is the equivalence requested by the exercise.
 :::
+
+::: pf-qed
+Step [](#constructions-inverse){.pf-ref} is the equivalence requested by the exercise.
+:::
+
+:::
+
 :::

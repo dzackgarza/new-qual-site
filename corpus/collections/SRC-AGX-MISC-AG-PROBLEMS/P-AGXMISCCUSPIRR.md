@@ -34,7 +34,11 @@ Express $Y$ as the image of $\AA^1$ under a continuous map.
 :::
 
 ::: {.solution}
-<1>1. The polynomial map
+
+::: pf
+
+::: {.pf-step #image-contained-in-y}
+The polynomial map
 $$
 \phi:\AA^1_\CC\longrightarrow\AA^2_\CC,
 \qquad
@@ -42,7 +46,7 @@ t\longmapsto(t^2,t^3)
 $$
 has image contained in $Y$.
 
-::: {.proof}
+::: pf-proof
 For every $t\in\CC$,
 $$
 (t^2)^3-(t^3)^2=t^6-t^6=0.
@@ -50,9 +54,12 @@ $$
 Hence $\phi(t)\in Y$.
 :::
 
-<1>2. The map $\phi:\AA^1_\CC\to Y$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #phi-surjective}
+The map $\phi:\AA^1_\CC\to Y$ is surjective.
+
+::: pf-proof
 Let
 $$
 (x,y)\in Y,
@@ -89,13 +96,16 @@ $$
 Thus $(x,y)=\phi(t)$.
 :::
 
-<1>3. The variety $Y$ is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #y-irreducible}
+The variety $Y$ is irreducible.
+
+::: pf-proof
 The affine line $\AA^1_\CC$ is irreducible because its coordinate ring
 $\CC[t]$ is an integral domain. The polynomial map $\phi$ is a morphism,
 hence continuous in the Zariski topology. A continuous image of an
-irreducible topological space is irreducible, and step <1>2 gives
+irreducible topological space is irreducible, and step [](#phi-surjective){.pf-ref} gives
 $$
 \phi(\AA^1_\CC)=Y.
 $$
@@ -105,10 +115,13 @@ $$
 $$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 identify $Y$ as the image of the irreducible affine line,
-and step <1>3 applies the irreducible-image criterion.
 :::
+
+::: pf-qed
+Steps [](#image-contained-in-y){.pf-ref} and [](#phi-surjective){.pf-ref} identify $Y$ as the image of the irreducible affine line,
+and step [](#y-irreducible){.pf-ref} applies the irreducible-image criterion.
+:::
+
+:::
+
 :::

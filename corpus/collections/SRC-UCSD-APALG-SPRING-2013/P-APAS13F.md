@@ -30,27 +30,47 @@ Then $A^\lambda$ denotes the irreducible representation of the symmetric group $
 :::
 
 ::: {.solution}
+
 **Part (a).**
 
-<1>1. The conjugacy classes of $S_5$ are indexed by cycle types $1^5, 2\cdot 1^3, 2^2\cdot 1, 3\cdot 1^2, 3\cdot 2, 4\cdot 1, 5$, with sizes $1, 10, 15, 20, 20, 30, 24$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The conjugacy classes of $S_5$ are indexed by cycle types $1^5, 2\cdot 1^3, 2^2\cdot 1, 3\cdot 1^2, 3\cdot 2, 4\cdot 1, 5$, with sizes $1, 10, 15, 20, 20, 30, 24$.
+
+::: pf-proof
 standard count of permutations by cycle type.
 :::
 
-<1>2. The values of $\chi^{(2,2,1)}$ on these classes are
+:::
+
+::: {.pf-step #chi-221-character-values}
+The values of $\chi^{(2,2,1)}$ on these classes are
 $$\chi^{(2,2,1)} = (5,\ -1,\ 1,\ -1,\ -1,\ 1,\ 0).$$
-::: {.proof}
+
+::: pf-proof
 computed by the Murnaghan–Nakayama rule (or the hook-length formula for the degree $5$ and the standard character table of $S_5$).
 :::
 
-<1>3. Verification: $\sum_{\mu} |C_\mu|\, \chi^{(2,2,1)}(\mu)^2 = 25 + 10 + 15 + 20 + 20 + 30 + 0 = 120 = |S_5|$.
-::: {.proof}
-first orthogonality relation, confirming <1>2.
+:::
+
+::: pf-step
+Verification: $\sum_{\mu} |C_\mu|\, \chi^{(2,2,1)}(\mu)^2 = 25 + 10 + 15 + 20 + 20 + 30 + 0 = 120 = |S_5|$.
+
+::: pf-proof
+first orthogonality relation, confirming step [](#chi-221-character-values){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **Part (b).**
 
-<1>1. The character table of $S_3$ is
+::: pf
+
+::: pf-step
+The character table of $S_3$ is
 $$\begin{array}{c|ccc}
 & 1^3 & 2\cdot 1 & 3 \\ \hline
 (3) & 1 & 1 & 1 \\
@@ -63,11 +83,15 @@ $$\begin{array}{c|cc}
 (2) & 1 & 1 \\
 (1,1) & 1 & -1
 \end{array}.$$
-::: {.proof}
+
+::: pf-proof
 standard character tables.
 :::
 
-<1>2. The irreps of $S_3 \times S_2$ are the tensor products $\chi^{\nu} \otimes \chi^{\rho}$, giving the character table
+:::
+
+::: {.pf-step #s3-times-s2-character-table}
+The irreps of $S_3 \times S_2$ are the tensor products $\chi^{\nu} \otimes \chi^{\rho}$, giving the character table
 $$\begin{array}{c|cccccc}
 & (1^3,1^2) & (2\cdot1,1^2) & (3,1^2) & (1^3,2) & (2\cdot1,2) & (3,2) \\ \hline
 (3)\otimes(2) & 1 & 1 & 1 & 1 & 1 & 1 \\
@@ -77,37 +101,62 @@ $$\begin{array}{c|cccccc}
 (1^3)\otimes(2) & 1 & -1 & 1 & 1 & -1 & 1 \\
 (1^3)\otimes(1,1) & 1 & -1 & 1 & -1 & 1 & -1
 \end{array}.$$
-::: {.proof}
+
+::: pf-proof
 the character of a tensor product is the product of the characters.
+:::
+
+:::
+
 :::
 
 **Part (c).**
 
-<1>1. The Young subgroup $S_3 \times S_2 \le S_5$ embeds with $S_3$ acting on $\{1,2,3\}$ and $S_2$ on $\{4,5\}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The Young subgroup $S_3 \times S_2 \le S_5$ embeds with $S_3$ acting on $\{1,2,3\}$ and $S_2$ on $\{4,5\}$.
+
+::: pf-proof
 definition of the Young subgroup for $\lambda = (3,2)$.
 :::
 
-<1>2. The restriction of $\chi^{(2,2,1)}$ to $S_3 \times S_2$ has values
-$$(5,\ -1,\ -1,\ -1,\ 1,\ -1)$$
-on the six classes of <1>2.
-::: {.proof}
-evaluate <1>2 on the embedded classes: identity $\mapsto 1^5$ (value $5$); a transposition in $S_3$ or in $S_2$ $\mapsto 2\cdot 1^3$ (value $-1$); a $3$-cycle $\mapsto 3\cdot 1^2$ (value $-1$); a transposition in $S_3$ times one in $S_2$ $\mapsto 2^2\cdot 1$ (value $1$); a $3$-cycle times a transposition $\mapsto 3\cdot 2$ (value $-1$).
 :::
 
-<1>3. Decomposing <1>2 against the table of <1>2 gives
+::: {.pf-step #restricted-character-values}
+The restriction of $\chi^{(2,2,1)}$ to $S_3 \times S_2$ has values
+$$(5,\ -1,\ -1,\ -1,\ 1,\ -1)$$
+on the six classes of step [](#s3-times-s2-character-table){.pf-ref}.
+
+::: pf-proof
+evaluate step [](#chi-221-character-values){.pf-ref} on the embedded classes: identity $\mapsto 1^5$ (value $5$); a transposition in $S_3$ or in $S_2$ $\mapsto 2\cdot 1^3$ (value $-1$); a $3$-cycle $\mapsto 3\cdot 1^2$ (value $-1$); a transposition in $S_3$ times one in $S_2$ $\mapsto 2^2\cdot 1$ (value $1$); a $3$-cycle times a transposition $\mapsto 3\cdot 2$ (value $-1$).
+:::
+
+:::
+
+::: {.pf-step #restriction-decomposition}
+Decomposing step [](#restricted-character-values){.pf-ref} against the table of step [](#s3-times-s2-character-table){.pf-ref} gives
 $$A^{(2,2,1)}\downarrow_{S_3\times S_2}^{S_5} = \left(A^{(2,1)} \boxtimes A^{(2)}\right) \oplus \left(A^{(2,1)} \boxtimes A^{(1,1)}\right) \oplus \left(A^{(1,1,1)} \boxtimes A^{(1,1)}\right).$$
-::: {.proof}
+
+::: pf-proof
 the Littlewood–Richardson rule (equivalently, solving the linear system for the multiplicities); the multiplicities are $1$ for $(2,1)\otimes(2)$, $(2,1)\otimes(1,1)$, and $(1^3)\otimes(1,1)$, and $0$ otherwise.
 :::
 
-<1>4. Dimension check: $2\cdot 1 + 2\cdot 1 + 1\cdot 1 = 5 = \dim A^{(2,2,1)}$.
-::: {.proof}
-<1>3 and the hook-length formula.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>2 (part (a)), <1>2 (part (b)), and <1>3 (part (c)).
+::: pf-step
+Dimension check: $2\cdot 1 + 2\cdot 1 + 1\cdot 1 = 5 = \dim A^{(2,2,1)}$.
+
+::: pf-proof
+Step [](#restriction-decomposition){.pf-ref} and the hook-length formula.
 :::
+
+:::
+
+::: pf-qed
+Step [](#chi-221-character-values){.pf-ref} (part (a)), step [](#s3-times-s2-character-table){.pf-ref} (part (b)), and step [](#restriction-decomposition){.pf-ref} (part (c)).
+:::
+
+:::
+
 :::

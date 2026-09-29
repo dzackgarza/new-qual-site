@@ -26,8 +26,13 @@ State and prove the integral test for convergence of series. You may assume the 
 :::
 
 ::: {.solution}
-<1>1. State the test.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+State the test.
+
+::: pf-proof
 Let $f:[1,\infty)\to[0,\infty)$ be decreasing. Then
 \[
 \sum_{n=1}^\infty f(n)
@@ -39,8 +44,12 @@ converges if and only if the improper integral
 converges.
 :::
 
-<1>2. Compare each integral over a unit interval with neighboring terms.
-::: {.proof}
+:::
+
+::: pf-step
+Compare each integral over a unit interval with neighboring terms.
+
+::: pf-proof
 For $n\ge1$ and $x\in[n,n+1]$, monotonicity gives
 \[
 f(n+1)\le f(x)\le f(n).
@@ -57,10 +66,18 @@ Summing from $n=1$ to $N$ yields
 \]
 :::
 
-<1>3. Deduce equivalence of convergence.
-::: {.proof}
+:::
+
+::: pf-step
+Deduce equivalence of convergence.
+
+::: pf-proof
 If $\sum f(n)$ converges, the right inequality bounds the increasing partial integrals, so $\int_1^\infty f<\infty$.
 
 Conversely, if $\int_1^\infty f<\infty$, the left inequality bounds the partial sums of $\sum_{n=2}^\infty f(n)$; adding the finite first term $f(1)$ gives convergence of $\sum_{n=1}^\infty f(n)$.
+:::
+
+:::
+
 :::
 :::

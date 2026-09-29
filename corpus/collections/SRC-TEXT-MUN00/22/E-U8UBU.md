@@ -37,37 +37,52 @@ Conclude that $G/H$ is a homogeneous space.
 ::: {.solution}
 Let $p\colon G\to G/H$ be the quotient map. A map $g\colon G/H\to Z$ is continuous if and only if $g\circ p$ is continuous, by the definition of the quotient topology. Left and right translations of $G$ are homeomorphisms ([[E-1KV5G]]).
 
-<1>1. (a) The map $\bar f_\alpha(xH)=(\alpha x)H$ is a well-defined homeomorphism of $G/H$, and $G/H$ is homogeneous.
+::: pf
 
-::: {.proof}
+::: {.pf-step #part-a}
+(a) The map $\bar f_\alpha(xH)=(\alpha x)H$ is a well-defined homeomorphism of $G/H$, and $G/H$ is homogeneous.
+
+::: pf-proof
 $f_\alpha(xH)=(\alpha x)H$, so $\bar f_\alpha$ is well defined and $\bar f_\alpha\circ p=p\circ f_\alpha$ is continuous; hence $\bar f_\alpha$ is continuous.
 Its inverse is $\bar f_{\alpha^{-1}}$, continuous for the same reason.
 Given cosets $xH$ and $yH$, the homeomorphism $\bar f_{yx^{-1}}$ carries $xH$ to $yH$.
 :::
 
-<1>2. (b) If $H$ is closed, one-point sets are closed in $G/H$.
+:::
 
-::: {.proof}
+::: {.pf-step #part-b}
+(b) If $H$ is closed, one-point sets are closed in $G/H$.
+
+::: pf-proof
 $p^{-1}(\{xH\})=xH=f_x(H)$ is closed, as the image of the closed set $H$ under a homeomorphism.
 :::
 
-<1>3. (c) $p$ is open.
+:::
 
-::: {.proof}
+::: {.pf-step #part-c}
+(c) $p$ is open.
+
+::: pf-proof
 For open $U\subseteq G$, $p^{-1}(p(U))=UH=\bigcup_{h\in H}Uh$ is a union of right translates of $U$, hence open, so $p(U)$ is open.
 :::
 
-<1>4. (d) If $H$ is closed and normal, $G/H$ is a topological group.
+:::
 
-::: {.proof}
+::: {.pf-step #part-d}
+(d) If $H$ is closed and normal, $G/H$ is a topological group.
+
+::: pf-proof
 Since $H$ is normal, $G/H$ is a group with multiplication $\bar m(xH,yH)=xyH$ and inversion $\bar\iota(xH)=x^{-1}H$, and $\bar m\circ(p\times p)=p\circ m$, $\bar\iota\circ p=p\circ\iota$.
-By step <1>3, $p\times p$ is a continuous open surjection, hence a quotient map, so $\bar m$ is continuous; $\bar\iota$ is continuous because $\bar\iota\circ p$ is.
-By step <1>2, $G/H$ is $T_1$.
+By step [](#part-c){.pf-ref}, $p\times p$ is a continuous open surjection, hence a quotient map, so $\bar m$ is continuous; $\bar\iota$ is continuous because $\bar\iota\circ p$ is.
+By step [](#part-b){.pf-ref}, $G/H$ is $T_1$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>4 prove (a) through (d).
 :::
+
+::: pf-qed
+Steps [](#part-a){.pf-ref} through [](#part-d){.pf-ref} prove (a) through (d).
+:::
+
+:::
+
 :::

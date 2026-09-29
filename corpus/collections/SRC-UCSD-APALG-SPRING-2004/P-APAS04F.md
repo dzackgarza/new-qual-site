@@ -39,9 +39,13 @@ Here $S_3\times S_2$ is the Young subgroup of $S_5$ consisting of all permutatio
 
 
 ::: {.solution}
+
 Write \(\chi=\chi^{(4,1)}\).
 
-<1>1. The values of \(\chi\) on the conjugacy classes of \(S_5\), ordered by cycle type
+::: pf
+
+::: {.pf-step #character-values}
+The values of \(\chi\) on the conjugacy classes of \(S_5\), ordered by cycle type
 \[
 (1^5),\ (2,1^3),\ (2^2,1),\ (3,1^2),\ (3,2),\ (4,1),\ (5),
 \]
@@ -49,7 +53,8 @@ are
 \[
 \boxed{4,\ 2,\ 0,\ 1,\ -1,\ 0,\ -1}.
 \]
-::: {.proof}
+
+::: pf-proof
 The Specht module \(S^{(4,1)}\) is the standard representation of \(S_5\), obtained from the permutation representation \(\mathbb C^5\) by removing the one-dimensional invariant line spanned by \(e_1+\cdots+e_5\). Hence for every \(\sigma\in S_5\),
 \[
 \chi^{(4,1)}(\sigma)=\#\operatorname{Fix}(\sigma)-1.
@@ -63,7 +68,10 @@ which yields the displayed row.
 This agrees with the Murnaghan--Nakayama rule: removing rim hooks from the hook diagram \((4,1)\) gives exactly the same signed contributions for each cycle type.
 :::
 
-<1>2. The restriction of \(S^{(4,1)}\) to the Young subgroup \(S_3\times S_2\) decomposes as
+:::
+
+::: {.pf-step #restriction-decomposition}
+The restriction of \(S^{(4,1)}\) to the Young subgroup \(S_3\times S_2\) decomposes as
 \[
 \boxed{
 S^{(4,1)}\!\downarrow_{S_3\times S_2}^{S_5}
@@ -75,7 +83,8 @@ S^{(4,1)}\!\downarrow_{S_3\times S_2}^{S_5}
 (S^{(3)}\boxtimes S^{(1,1)}).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Restrict first the permutation representation \(\mathbb C^5\). Under \(S_3\times S_2\), the first three basis vectors and the last two basis vectors span invariant subspaces, so
 \[
 \mathbb C^5\!\downarrow_{S_3\times S_2}
@@ -106,4 +115,13 @@ Finally,
 \]
 and the restricted trivial representation \(S^{(5)}\) is one copy of \(S^{(3)}\boxtimes S^{(2)}\). Subtracting that copy gives the asserted decomposition.
 :::
+
+:::
+
+::: pf-qed
+Step [](#character-values){.pf-ref} answers part (a); step [](#restriction-decomposition){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

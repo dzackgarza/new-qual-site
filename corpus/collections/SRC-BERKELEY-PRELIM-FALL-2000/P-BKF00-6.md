@@ -34,17 +34,21 @@ are two-sided ideals in $E(U,U)$.
 :::
 
 ::: {.solution}
+
 Set $R=E(U,U)$. For endomorphisms $A,B$ of $V$, juxtaposition denotes
 composition, so $AB=A\circ B$.
 
-<1>1. For subspaces $A,B\subseteq V$ and $T\in\Endo_K(V)$,
+::: pf
+
+::: {.pf-step #finite-dim-lift-criterion}
+For subspaces $A,B\subseteq V$ and $T\in\Endo_K(V)$,
 $T\in E(A,B)$ if and only if there is a finite-dimensional subspace
 $L\subseteq V$ such that
 $$
 T(A)\subseteq B+L.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $q_B:V\to V/B$ be the quotient map. If $T\in E(A,B)$, then
 $q_B(T(A))$ is finite-dimensional. Choose finitely many vectors
 $y_1,\ldots,y_m\in T(A)$ whose cosets span $q_B(T(A))$, and set
@@ -57,11 +61,14 @@ $q_B(T(A))\subseteq q_B(L)$, and $q_B(L)$ is finite-dimensional. Thus
 $T\in E(A,B)$.
 :::
 
-<1>2. $R$ is a subring of $\Endo_K(V)$.
+:::
 
-::: {.proof}
+::: {.pf-step #R-subring}
+$R$ is a subring of $\Endo_K(V)$.
+
+::: pf-proof
 The zero endomorphism and the identity lie in $R$, since both send $U$ into
-$U$. Let $A,B\in R$. By step <1>1 there are finite-dimensional subspaces
+$U$. Let $A,B\in R$. By step [](#finite-dim-lift-criterion){.pf-ref} there are finite-dimensional subspaces
 $L_A,L_B\subseteq V$ such that
 $$
 A(U)\subseteq U+L_A,
@@ -72,22 +79,25 @@ Then
 $$
 (A-B)(U)\subseteq U+(L_A+L_B),
 $$
-and $L_A+L_B$ is finite-dimensional, so $A-B\in R$ by step <1>1.
+and $L_A+L_B$ is finite-dimensional, so $A-B\in R$ by step [](#finite-dim-lift-criterion){.pf-ref}.
 Moreover,
 $$
 AB(U)
 \subseteq A(U+L_B)
 \subseteq U+L_A+A(L_B).
 $$
-The space $L_A+A(L_B)$ is finite-dimensional, so step <1>1 gives
+The space $L_A+A(L_B)$ is finite-dimensional, so step [](#finite-dim-lift-criterion){.pf-ref} gives
 $AB\in R$. Hence $R$ is an additive subgroup closed under multiplication
 and containing the identity.
 :::
 
-<1>3. $E(V,U)$ is a two-sided ideal of $R$.
+:::
 
-::: {.proof}
-If $F\in E(V,U)$, then step <1>1 gives a finite-dimensional subspace
+::: {.pf-step #E-V-U-ideal}
+$E(V,U)$ is a two-sided ideal of $R$.
+
+::: pf-proof
+If $F\in E(V,U)$, then step [](#finite-dim-lift-criterion){.pf-ref} gives a finite-dimensional subspace
 $L_F\subseteq V$ such that
 $$
 F(V)\subseteq U+L_F.
@@ -98,7 +108,7 @@ $L_F,L_G$,
 $$
 (F-G)(V)\subseteq U+(L_F+L_G),
 $$
-so step <1>1 shows that $F-G\in E(V,U)$. Thus $E(V,U)$ is an additive
+so step [](#finite-dim-lift-criterion){.pf-ref} shows that $F-G\in E(V,U)$. Thus $E(V,U)$ is an additive
 subgroup of $R$.
 
 Now let $A\in R$ and $F\in E(V,U)$. Choose finite-dimensional
@@ -118,19 +128,22 @@ whose image modulo $U$ is finite-dimensional. Also
 $$
 FA(V)\subseteq F(V)\subseteq U+L_F.
 $$
-By step <1>1, both $AF$ and $FA$ lie in $E(V,U)$. Hence $E(V,U)$ is a
+By step [](#finite-dim-lift-criterion){.pf-ref}, both $AF$ and $FA$ lie in $E(V,U)$. Hence $E(V,U)$ is a
 two-sided ideal of $R$.
 :::
 
-<1>4. $E(U,0)$ is a two-sided ideal of $R$.
+:::
 
-::: {.proof}
+::: {.pf-step #E-U-0-ideal}
+$E(U,0)$ is a two-sided ideal of $R$.
+
+::: pf-proof
 An endomorphism $F$ lies in $E(U,0)$ exactly when $F(U)$ is
 finite-dimensional. Hence $E(U,0)\subseteq R$, and it is an additive
 subgroup because sums and negatives of finite-dimensional images are again
 contained in finite-dimensional subspaces.
 
-Let $A\in R$ and $F\in E(U,0)$. By step <1>1, choose a finite-dimensional
+Let $A\in R$ and $F\in E(U,0)$. By step [](#finite-dim-lift-criterion){.pf-ref}, choose a finite-dimensional
 subspace $L_A\subseteq V$ such that $A(U)\subseteq U+L_A$. Since $F(U)$ is
 finite-dimensional,
 $$
@@ -146,10 +159,13 @@ and the space on the right is finite-dimensional. Thus both $AF$ and $FA$
 belong to $E(U,0)$, proving two-sided absorption.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves that $E(U,U)$ is a subring, while steps <1>3 and <1>4
+::: pf-qed
+Step [](#R-subring){.pf-ref} proves that $E(U,U)$ is a subring, while steps [](#E-V-U-ideal){.pf-ref} and [](#E-U-0-ideal){.pf-ref}
 prove that $E(V,U)$ and $E(U,0)$ are two-sided ideals in it.
 :::
+
+:::
+
 :::

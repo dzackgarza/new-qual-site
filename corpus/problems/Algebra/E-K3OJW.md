@@ -31,13 +31,17 @@ audit:
 ::: {.solution}
 Let $n_p$ denote the number of Sylow $p$-subgroups of $G$.
 
-<1>1. Sylow's theorem gives
+::: pf
+
+::: pf-step
+Sylow's theorem gives
 \[
 n_p\mid v,
 \qquad
 n_p\equiv1\pmod p.
 \]
-::: {.proof}
+
+::: pf-proof
 Since
 \[
 |G|=p^e v
@@ -45,8 +49,12 @@ Since
 with $p\nmid v$, a Sylow $p$-subgroup has order $p^e$. The third Sylow theorem says that the number of such subgroups divides the complementary factor $v$ and is congruent to $1$ modulo $p$.
 :::
 
-<1>2. One has $n_p=1$.
-::: {.proof}
+:::
+
+::: pf-step
+One has $n_p=1$.
+
+::: pf-proof
 Because $n_p\mid v$, we have
 \[
 1\le n_p\le v<p.
@@ -54,8 +62,17 @@ Because $n_p\mid v$, we have
 The only positive integer strictly less than $p$ that is congruent to $1$ modulo $p$ is $1$. Thus $n_p=1$.
 :::
 
-<1>3. Therefore the Sylow $p$-subgroup is normal.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore the Sylow $p$-subgroup is normal.
+
+::: pf-proof
 All Sylow $p$-subgroups are conjugate. Since there is exactly one, it is fixed by conjugation by every element of $G$, hence is normal.
 :::
+
+:::
+
+:::
+
 :::

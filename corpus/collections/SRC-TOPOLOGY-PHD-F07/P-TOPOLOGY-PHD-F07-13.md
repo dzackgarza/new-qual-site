@@ -44,8 +44,12 @@ H((x,y),t)
 =\bigl(x,\,y\cos(\pi t),\,y\sin(\pi t)\bigr).
 \]
 
-<1>1. The formula for $H$ takes values in $S^2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #h-in-s2}
+The formula for $H$ takes values in $S^2$.
+
+::: pf-proof
 If $(x,y)\in S^1$, then
 \[
 x^2+y^2=1.
@@ -63,8 +67,12 @@ Therefore
 Hence $H((x,y),t)\in S^2$ for every $((x,y),t)\in S^1\times I$.
 :::
 
-<1>2. The map $H:S^1\times I\to S^2$ is continuous.
-::: {.proof}
+:::
+
+::: {.pf-step #h-continuous}
+The map $H:S^1\times I\to S^2$ is continuous.
+
+::: pf-proof
 The coordinate functions
 \[
 (x,y,t)\longmapsto x,
@@ -75,11 +83,15 @@ The coordinate functions
 \]
 are continuous on $S^1\times I$ as restrictions and products of continuous real-valued functions.
 Thus the corresponding map into $\mathbb R^3$ is continuous.
-By <1>1 its image lies in the subspace $S^2$, so $H$ is continuous as a map to $S^2$.
+By step [](#h-in-s2){.pf-ref} its image lies in the subspace $S^2$, so $H$ is continuous as a map to $S^2$.
 :::
 
-<1>3. At $t=0$, the map $H$ equals $f$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-at-zero}
+At $t=0$, the map $H$ equals $f$.
+
+::: pf-proof
 For $(x,y)\in S^1$,
 \[
 H((x,y),0)
@@ -94,8 +106,12 @@ H((\cos s,\sin s),0)
 \]
 :::
 
-<1>4. At $t=1$, the map $H$ equals $g$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-at-one}
+At $t=1$, the map $H$ equals $g$.
+
+::: pf-proof
 For $(x,y)\in S^1$,
 \[
 H((x,y),1)
@@ -110,9 +126,13 @@ H((\cos s,\sin s),1)
 \]
 :::
 
-<1>5. Therefore $f\simeq g$.
-::: {.proof}
-By <1>2, $H$ is continuous, and <1>3--<1>4 give
+:::
+
+::: pf-step
+Therefore $f\simeq g$.
+
+::: pf-proof
+By step [](#h-continuous){.pf-ref}, $H$ is continuous, and steps [](#h-at-zero){.pf-ref} and [](#h-at-one){.pf-ref} give
 \[
 H(-,0)=f,
 \qquad
@@ -120,4 +140,9 @@ H(-,1)=g.
 \]
 Hence $H$ is a homotopy from $f$ to $g$.
 :::
+
+:::
+
+:::
+
 :::

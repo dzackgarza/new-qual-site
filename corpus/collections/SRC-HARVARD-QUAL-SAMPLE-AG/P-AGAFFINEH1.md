@@ -36,12 +36,16 @@ H^1(X,\mathcal I)=0
 \]
 for every coherent ideal sheaf $\mathcal I\subseteq\mathcal O_X$.
 
-<1>1. Every closed point $x\in X$ has an affine neighborhood of the form
+::: pf
+
+::: {.pf-step #affine-neighborhood-from-global-function}
+Every closed point $x\in X$ has an affine neighborhood of the form
 \[
 X_f=\{p\in X:f_p\in\mathcal O_{X,p}^{\times}\}
 \]
 for some global function $f\in\Gamma(X,\mathcal O_X)$.
-::: {.proof}
+
+::: pf-proof
 Choose an affine open neighborhood
 \[
 U=\operatorname{Spec}A
@@ -97,13 +101,17 @@ X_f=D(f|_U),
 and is therefore affine.
 :::
 
-<1>2. Finitely many affine principal opens
+:::
+
+::: {.pf-step #finite-affine-cover}
+Finitely many affine principal opens
 \[
 X_{f_1},\ldots,X_{f_n}
 \]
-of the form constructed in <1>1 cover $X$.
-::: {.proof}
-Let $W$ be the union of all affine opens $X_f$ obtained from global functions.  By <1>1, every closed point of $X$ belongs to $W$.
+of the form constructed in step [](#affine-neighborhood-from-global-function){.pf-ref} cover $X$.
+
+::: pf-proof
+Let $W$ be the union of all affine opens $X_f$ obtained from global functions.  By step [](#affine-neighborhood-from-global-function){.pf-ref}, every closed point of $X$ belongs to $W$.
 
 If $X\setminus W$ were nonempty, it would be a nonempty closed subset of the Noetherian space $X$, hence would contain a closed point.  That contradicts the preceding sentence.  Therefore
 \[
@@ -112,11 +120,15 @@ W=X.
 Since a Noetherian scheme is quasi-compact, finitely many of these opens cover $X$.
 :::
 
-<1>3. The functions $f_1,\ldots,f_n$ from <1>2 generate the unit ideal in
+:::
+
+::: {.pf-step #functions-generate-unit-ideal}
+The functions $f_1,\ldots,f_n$ from step [](#finite-affine-cover){.pf-ref} generate the unit ideal in
 \[
 A=\Gamma(X,\mathcal O_X).
 \]
-::: {.proof}
+
+::: pf-proof
 Consider the sheaf map
 \[
 \Phi:\mathcal O_X^{\oplus n}\longrightarrow\mathcal O_X,
@@ -168,8 +180,12 @@ is surjective.  In particular there are $a_i\in A$ with
 Thus the $f_i$ generate the unit ideal.
 :::
 
-<1>4. The scheme $X$ is affine.
-::: {.proof}
+:::
+
+::: {.pf-step #x-is-affine}
+The scheme $X$ is affine.
+
+::: pf-proof
 Put
 \[
 A=\Gamma(X,\mathcal O_X).
@@ -187,30 +203,38 @@ restricts to an isomorphism
 X_f\xrightarrow{\sim}D(f).
 \]
 
-By <1>2, the opens $X_{f_i}$ cover $X$.  By <1>3, the $f_i$ generate the unit ideal in $A$, so the distinguished opens $D(f_i)$ cover $\operatorname{Spec}A$.  Thus $\eta$ is an isomorphism on open covers of both source and target, and therefore is an isomorphism globally.  Hence
+By step [](#finite-affine-cover){.pf-ref}, the opens $X_{f_i}$ cover $X$.  By step [](#functions-generate-unit-ideal){.pf-ref}, the $f_i$ generate the unit ideal in $A$, so the distinguished opens $D(f_i)$ cover $\operatorname{Spec}A$.  Thus $\eta$ is an isomorphism on open covers of both source and target, and therefore is an isomorphism globally.  Hence
 \[
 X\cong\operatorname{Spec}A
 \]
 is affine.
 :::
 
-<1>5. The Noetherian hypothesis can be weakened as follows: it is enough that $X$ be quasi-compact and quasi-separated and that
+:::
+
+::: {.pf-step #weakened-hypothesis}
+The Noetherian hypothesis can be weakened as follows: it is enough that $X$ be quasi-compact and quasi-separated and that
 \[
 H^1(X,\mathcal I)=0
 \]
 for every finite-type quasi-coherent ideal sheaf $\mathcal I\subseteq\mathcal O_X$.
-::: {.proof}
+
+::: pf-proof
 Every quasi-coherent ideal sheaf is a filtered colimit of its finite-type quasi-coherent ideal subsheaves.  On a quasi-compact quasi-separated scheme, cohomology of quasi-coherent sheaves commutes with filtered colimits.  Hence the stated hypothesis implies
 \[
 H^1(X,\mathcal J)=0
 \]
 for every quasi-coherent ideal sheaf $\mathcal J$.
 
-The affineness argument of <1>1--<1>4 then applies in the general quasi-coherent form.  In particular, if one wants to retain the literal hypothesis involving coherent ideals, Noetherian may be replaced by the assumption that $X$ is quasi-compact, quasi-separated, and coherent, so that every finite-type quasi-coherent ideal is coherent.
+The affineness argument of steps [](#affine-neighborhood-from-global-function){.pf-ref}, [](#finite-affine-cover){.pf-ref}, [](#functions-generate-unit-ideal){.pf-ref} and [](#x-is-affine){.pf-ref} then applies in the general quasi-coherent form.  In particular, if one wants to retain the literal hypothesis involving coherent ideals, Noetherian may be replaced by the assumption that $X$ is quasi-compact, quasi-separated, and coherent, so that every finite-type quasi-coherent ideal is coherent.
 :::
 
-<1>6. Quasi-compactness cannot be omitted.
-::: {.proof}
+:::
+
+::: {.pf-step #quasicompactness-counterexample}
+Quasi-compactness cannot be omitted.
+
+::: pf-proof
 Let
 \[
 X=\coprod_{n\ge1}\operatorname{Spec}k
@@ -229,8 +253,11 @@ Thus in particular $H^1(X,\mathcal I)=0$ for every coherent ideal sheaf $\mathca
 But $X$ is not quasi-compact, whereas every affine scheme is quasi-compact.  Hence $X$ is not affine.  This gives the required counterexample.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>4 proves the Noetherian statement, step <1>5 gives the weakening, and step <1>6 shows that quasi-compactness cannot be omitted.
+:::
+
+::: pf-qed
+Step [](#x-is-affine){.pf-ref} proves the Noetherian statement, step [](#weakened-hypothesis){.pf-ref} gives the weakening, and step [](#quasicompactness-counterexample){.pf-ref} shows that quasi-compactness cannot be omitted.
+:::
+
 :::
 :::

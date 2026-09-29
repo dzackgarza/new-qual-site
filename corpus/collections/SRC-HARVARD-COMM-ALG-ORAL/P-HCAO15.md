@@ -32,9 +32,13 @@ The groups are not isomorphic because $\operatorname{GL}_3(\mathbb R)$ contains
 an elementary abelian $2$-subgroup of rank $3$, whereas
 $\operatorname{GL}_2(\mathbb R)$ does not.
 
-<1>1. The group $\operatorname{GL}_3(\mathbb R)$ contains a subgroup isomorphic
+::: pf
+
+::: {.pf-step #gl3-has-rank-3-elementary-abelian}
+The group $\operatorname{GL}_3(\mathbb R)$ contains a subgroup isomorphic
 to $(\mathbb Z/2\mathbb Z)^3$.
-::: {.proof}
+
+::: pf-proof
 Take the diagonal sign matrices
 \[
 \left\{
@@ -46,9 +50,13 @@ They form a subgroup of order $8$ in which every nonidentity element has order
 $2$, hence a copy of $(\mathbb Z/2\mathbb Z)^3$.
 :::
 
-<1>2. Every elementary abelian $2$-subgroup of $\operatorname{GL}_2(\mathbb R)$
+:::
+
+::: {.pf-step #gl2-elementary-abelian-bound}
+Every elementary abelian $2$-subgroup of $\operatorname{GL}_2(\mathbb R)$
 has order at most $4$.
-::: {.proof}
+
+::: pf-proof
 Let $E\le\operatorname{GL}_2(\mathbb R)$ be elementary abelian. Every
 $A\in E$ satisfies $A^2=I$, so its minimal polynomial divides
 \[
@@ -67,11 +75,19 @@ Thus, after conjugation, $E$ is contained in
 which has order $4$.
 :::
 
-<1>3. Therefore $\operatorname{GL}_3(\mathbb R)$ and
+:::
+
+::: pf-step
+Therefore $\operatorname{GL}_3(\mathbb R)$ and
 $\operatorname{GL}_2(\mathbb R)$ are not isomorphic as abstract groups.
-::: {.proof}
-An abstract group isomorphism preserves subgroup isomorphism types. By <1>1
-the first group has a subgroup isomorphic to $(\mathbb Z/2)^3$, while <1>2
+
+::: pf-proof
+An abstract group isomorphism preserves subgroup isomorphism types. By step [](#gl3-has-rank-3-elementary-abelian){.pf-ref}
+the first group has a subgroup isomorphic to $(\mathbb Z/2)^3$, while step [](#gl2-elementary-abelian-bound){.pf-ref}
 shows the second cannot.
+:::
+
+:::
+
 :::
 :::

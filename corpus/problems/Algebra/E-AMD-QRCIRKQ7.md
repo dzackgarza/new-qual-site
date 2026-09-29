@@ -27,24 +27,51 @@ If $\mfp = J\cap K$ with $a\in J\sm\mfp$ and $b\in K\sm\mfp$, then $ab\in J\cap 
 :::
 
 ::: {.solution}
-<1>1. Recall that $I$ is *irreducible* when $I = J \cap K$ for ideals $J, K$ forces $I = J$ or $I = K$.
 
-<1>2. Let $\mfp$ be prime and suppose $\mfp = J \cap K$ with $\mfp \neq J$ and $\mfp \neq K$.
+::: pf
 
-<1>3. There are $a \in J \sm \mfp$ and $b \in K \sm \mfp$.
-::: {.proof}
+::: pf-step
+Recall that $I$ is *irreducible* when $I = J \cap K$ for ideals $J, K$ forces $I = J$ or $I = K$.
+:::
+
+::: pf-step
+Let $\mfp$ be prime and suppose $\mfp = J \cap K$ with $\mfp \neq J$ and $\mfp \neq K$.
+:::
+
+::: {.pf-step #exists-a-and-b-outside-p}
+There are $a \in J \sm \mfp$ and $b \in K \sm \mfp$.
+
+::: pf-proof
 $\mfp = J \cap K \subseteq J$, so $\mfp \neq J$ gives an $a \in J$ outside $\mfp$, and likewise for $K$.
 :::
 
-<1>4. $ab \in \mfp$.
-::: {.proof}
-<2>1. $ab \in J$, because $a \in J$ and $J$ is an ideal.
-<2>2. $ab \in K$, because $b \in K$ and $K$ is an ideal.
-<2>3. So $ab \in J \cap K = \mfp$.
+:::
+
+::: pf-step
+$ab \in \mfp$.
+
+::: pf-proof
+
+::: pf-step
+$ab \in J$, because $a \in J$ and $J$ is an ideal.
+:::
+
+::: pf-step
+$ab \in K$, because $b \in K$ and $K$ is an ideal.
+:::
+
+::: pf-step
+So $ab \in J \cap K = \mfp$.
+:::
 
 :::
-<1>5. Q.E.D.
-::: {.proof}
-$\mfp$ is prime and $ab \in \mfp$, so $a \in \mfp$ or $b \in \mfp$, contradicting step <1>3. Hence $\mfp = J$ or $\mfp = K$, and $\mfp$ is irreducible.
+
 :::
+
+::: pf-qed
+$\mfp$ is prime and $ab \in \mfp$, so $a \in \mfp$ or $b \in \mfp$, contradicting step [](#exists-a-and-b-outside-p){.pf-ref}. Hence $\mfp = J$ or $\mfp = K$, and $\mfp$ is irreducible.
+:::
+
+:::
+
 :::

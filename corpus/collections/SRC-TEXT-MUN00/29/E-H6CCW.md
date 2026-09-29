@@ -23,57 +23,116 @@ Show that if $J$ is a directed set and $K$ is cofinal in $J$, then $K$ is a dire
 :::
 
 ::: {.solution}
-<1>1. Definition and properties of a directed set:
-<2>1. A set $(J, \preceq)$ is a **directed set** if:
+
+::: pf
+
+::: {.pf-step #directed-set-definition}
+Definition and properties of a directed set:
+
+::: pf-proof
+
+::: pf-step
+A set $(J, \preceq)$ is a **directed set** if:
 (i) $\preceq$ is a preorder on $J$ (reflexive: $\alpha \preceq \alpha$, and transitive: $\alpha \preceq \beta \land \beta \preceq \gamma \implies \alpha \preceq \gamma$), and
 (ii) for every pair $\alpha_1, \alpha_2 \in J$, there exists an upper bound $\gamma \in J$ such that $\alpha_1 \preceq \gamma$ and $\alpha_2 \preceq \gamma$.
-::: {.proof}
+
+::: pf-proof
 definition of a directed set.
 :::
-<2>2. The subset $K \subseteq J$ inherits the relation $\preceq$.
+
+:::
+
+::: pf-step
+The subset $K \subseteq J$ inherits the relation $\preceq$.
 Since reflexivity and transitivity hold on all elements of $J$, they hold on all elements of $K$.
-::: {.proof}
+
+::: pf-proof
 restriction of a preorder to a subset.
 :::
 
-<1>2. Existence of common upper bounds in $K$:
-<2>1. Let $k_1, k_2 \in K$ be arbitrary elements.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #common-upper-bounds-in-k}
+Existence of common upper bounds in $K$:
+
+::: pf-proof
+
+::: pf-step
+Let $k_1, k_2 \in K$ be arbitrary elements.
 Since $K \subseteq J$, $k_1, k_2 \in J$.
-::: {.proof}
+
+::: pf-proof
 subset containment.
 :::
-<2>2. Since $J$ is directed, there exists an element $\alpha \in J$ such that:
+
+:::
+
+::: pf-step
+Since $J$ is directed, there exists an element $\alpha \in J$ such that:
 \[
 k_1 \preceq \alpha \quad \text{and} \quad k_2 \preceq \alpha.
 \]
-::: {.proof}
+
+::: pf-proof
 directedness of $J$.
 :::
-<2>3. Since $K$ is cofinal in $J$, there exists an element $\beta \in K$ such that:
+
+:::
+
+::: {.pf-step #cofinal-upper-bound}
+Since $K$ is cofinal in $J$, there exists an element $\beta \in K$ such that:
 \[
 \alpha \preceq \beta.
 \]
-::: {.proof}
+
+::: pf-proof
 definition of cofinality of $K$ in $J$.
 :::
-<2>4. By transitivity of $\preceq$:
+
+:::
+
+::: {.pf-step #transitivity-gives-upper-bound}
+By transitivity of $\preceq$:
 \[
 k_1 \preceq \alpha \text{ and } \alpha \preceq \beta \implies k_1 \preceq \beta,
 \]
 \[
 k_2 \preceq \alpha \text{ and } \alpha \preceq \beta \implies k_2 \preceq \beta.
 \]
-::: {.proof}
+
+::: pf-proof
 transitivity of preorder $\preceq$.
 :::
-<2>5. Thus $\beta \in K$ is a common upper bound for $k_1$ and $k_2$ in $K$.
-::: {.proof}
-<2>3 and <2>4.
+
 :::
 
-<1>3. Conclusion:
-$K$ with the inherited relation is a directed set. Q.E.D.
-::: {.proof}
-<1>1 and <1>2.
+::: pf-step
+Thus $\beta \in K$ is a common upper bound for $k_1$ and $k_2$ in $K$.
+
+::: pf-proof
+Steps [](#cofinal-upper-bound){.pf-ref} and [](#transitivity-gives-upper-bound){.pf-ref}.
 :::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+Conclusion:
+$K$ with the inherited relation is a directed set. Q.E.D.
+
+::: pf-proof
+Steps [](#directed-set-definition){.pf-ref} and [](#common-upper-bounds-in-k){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

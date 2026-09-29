@@ -36,11 +36,16 @@ Explain your answer fully.
 :::
 
 ::: {.solution}
-<1>1. If a compact connected surface $\Sigma$ admits a fixed-point-free map $f:\Sigma\to\Sigma$ homotopic to the identity, then
+
+::: pf
+
+::: {.pf-step #euler-char-zero}
+If a compact connected surface $\Sigma$ admits a fixed-point-free map $f:\Sigma\to\Sigma$ homotopic to the identity, then
 \[
 \chi(\Sigma)=0.
 \]
-::: {.proof}
+
+::: pf-proof
 A compact surface has the homotopy type of a finite CW complex, so the Lefschetz number of $f$ is
 \[
 L(f)=\sum_q(-1)^q
@@ -63,7 +68,10 @@ Since $f$ is fixed-point-free, necessarily $L(f)=0$.
 Therefore $\chi(\Sigma)=0$.
 :::
 
-<1>2. The compact connected surfaces with Euler characteristic zero are precisely
+:::
+
+::: {.pf-step #zero-euler-char-list}
+The compact connected surfaces with Euler characteristic zero are precisely
 \[
 T^2,
 \qquad
@@ -74,7 +82,8 @@ K,
 M,
 \]
 where $K$ is the Klein bottle and $M$ is the Möbius band.
-::: {.proof}
+
+::: pf-proof
 By the classification of compact connected surfaces, an orientable surface has the form $\Sigma_{g,b}$ and
 \[
 \chi(\Sigma_{g,b})=2-2g-b,
@@ -98,8 +107,12 @@ The equation $2-k-b=0$ has exactly the solutions
 which give the Klein bottle and the Möbius band.
 :::
 
-<1>3. The torus admits a fixed-point-free map homotopic to the identity.
-::: {.proof}
+:::
+
+::: {.pf-step #torus-example}
+The torus admits a fixed-point-free map homotopic to the identity.
+
+::: pf-proof
 Write
 \[
 T^2=S^1\times S^1.
@@ -117,8 +130,12 @@ The equality $F_1(z,w)=(z,w)$ would require $-z=z$, impossible for $z\in S^1$.
 Thus $F_1$ is fixed-point-free and homotopic to the identity.
 :::
 
-<1>4. The annulus admits a fixed-point-free map homotopic to the identity.
-::: {.proof}
+:::
+
+::: {.pf-step #annulus-example}
+The annulus admits a fixed-point-free map homotopic to the identity.
+
+::: pf-proof
 Write the annulus as $S^1\times[0,1]$ and define
 \[
 F_t(z,s)=\left(e^{\pi i t}z,s\right).
@@ -126,8 +143,12 @@ F_t(z,s)=\left(e^{\pi i t}z,s\right).
 Again $F_0=\operatorname{id}$ and $F_1(z,s)=(-z,s)$ has no fixed point.
 :::
 
-<1>5. The Möbius band admits a fixed-point-free map homotopic to the identity.
-::: {.proof}
+:::
+
+::: {.pf-step #mobius-example}
+The Möbius band admits a fixed-point-free map homotopic to the identity.
+
+::: pf-proof
 Use the quotient model
 \[
 M=\frac{\RR\times[-1,1]}{(x,s)\sim(x+1,-s)}.
@@ -151,8 +172,12 @@ The first coordinate would give $1/2=m$, impossible because $m$ is an integer.
 Thus $F_1$ has no fixed point.
 :::
 
-<1>6. The Klein bottle admits a fixed-point-free map homotopic to the identity.
-::: {.proof}
+:::
+
+::: {.pf-step #klein-bottle-example}
+The Klein bottle admits a fixed-point-free map homotopic to the identity.
+
+::: pf-proof
 Use the quotient model
 \[
 K=\RR^2/\Gamma,
@@ -179,9 +204,16 @@ for some $n\in\ZZ$, which is impossible.
 Thus $F_1$ is fixed-point-free.
 :::
 
-<1>7. Therefore the required surfaces are exactly the torus, annulus, Klein bottle, and Möbius band.
-::: {.proof}
-By <1>1 and <1>2, no other compact connected surface can admit such a map.
-By <1>3--<1>6, each of the four listed surfaces does admit one.
 :::
+
+::: pf-step
+Therefore the required surfaces are exactly the torus, annulus, Klein bottle, and Möbius band.
+
+::: pf-proof
+By step [](#euler-char-zero){.pf-ref} and step [](#zero-euler-char-list){.pf-ref}, no other compact connected surface can admit such a map.
+By step [](#torus-example){.pf-ref}, step [](#annulus-example){.pf-ref}, step [](#mobius-example){.pf-ref} and step [](#klein-bottle-example){.pf-ref}, each of the four listed surfaces does admit one.
+:::
+
+:::
+
 :::

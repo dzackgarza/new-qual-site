@@ -38,7 +38,10 @@ For $w\in D_s(z_0)$ one has
 D_\delta(w)\subset D_r(z_0).
 \]
 
-<1>1. The area mean-value formula for holomorphic functions gives
+::: pf
+
+::: pf-step
+The area mean-value formula for holomorphic functions gives
 \[
 f(w)=\frac1{\pi\delta^2}\iint_{D_\delta(w)}f(z)\,dA(z).
 \]
@@ -48,8 +51,10 @@ Hence
 \le\frac1{\pi\delta^2}\iint_{D_\delta(w)}|f(z)|\,dA(z)
 \le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
 \]
+:::
 
-<1>2. Taking the supremum over $w\in D_s(z_0)$ gives
+::: pf-step
+Taking the supremum over $w\in D_s(z_0)$ gives
 \[
 \|f\|_{(\infty,s)}
 \le\frac1{\pi(r-s)^2}\|f\|_{(1,r)}.
@@ -58,4 +63,6 @@ Thus one may take
 \[
 c=\frac1{\pi(r-s)^2}.
 \]
+:::
+
 :::

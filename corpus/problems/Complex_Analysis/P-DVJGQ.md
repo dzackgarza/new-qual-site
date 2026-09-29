@@ -21,50 +21,84 @@ State the most general version of the implicit function theorem for real functio
 :::
 
 ::: {.solution}
-<1>1. **Implicit Function Theorem.** Let $F : \mathbb{R}^{n+m} \to \mathbb{R}^m$ be $C^k$ ($k \ge 1$), and let $(a, b) \in \mathbb{R}^n \times \mathbb{R}^m$ with $F(a, b) = 0$. If the $m \times m$ matrix $\frac{\partial F}{\partial y}(a, b)$ (the partial derivatives with respect to the last $m$ variables) is invertible, then there are open neighborhoods $U \ni a$ and $V \ni b$ and a unique $C^k$ function $g : U \to V$ such that $g(a) = b$ and $F(x, g(x)) = 0$ for all $x \in U$.
-::: {.proof}
+::: pf
+
+::: pf-step
+**Implicit Function Theorem.** Let $F : \mathbb{R}^{n+m} \to \mathbb{R}^m$ be $C^k$ ($k \ge 1$), and let $(a, b) \in \mathbb{R}^n \times \mathbb{R}^m$ with $F(a, b) = 0$. If the $m \times m$ matrix $\frac{\partial F}{\partial y}(a, b)$ (the partial derivatives with respect to the last $m$ variables) is invertible, then there are open neighborhoods $U \ni a$ and $V \ni b$ and a unique $C^k$ function $g : U \to V$ such that $g(a) = b$ and $F(x, g(x)) = 0$ for all $x \in U$.
+
+::: pf-proof
 statement of the theorem.
 :::
 
-<1>2. Define $\Phi : \mathbb{R}^{n+m} \to \mathbb{R}^{n+m}$ by $\Phi(x, y) = (x, F(x, y))$.
-::: {.proof}
+:::
+
+::: pf-step
+Define $\Phi : \mathbb{R}^{n+m} \to \mathbb{R}^{n+m}$ by $\Phi(x, y) = (x, F(x, y))$.
+
+::: pf-proof
 augment $F$ with the identity on the first $n$ coordinates.
 :::
 
-<1>3. The Jacobian of $\Phi$ at $(a, b)$ is
+:::
+
+::: {.pf-step #jacobian-invertible}
+The Jacobian of $\Phi$ at $(a, b)$ is
 $$D\Phi(a,b) = \begin{pmatrix} I_n & 0 \\ \frac{\partial F}{\partial x}(a,b) & \frac{\partial F}{\partial y}(a,b) \end{pmatrix},$$
 which is invertible because $\frac{\partial F}{\partial y}(a,b)$ is invertible.
-::: {.proof}
+
+::: pf-proof
 block matrix; its determinant is $\det \frac{\partial F}{\partial y}(a,b) \neq 0$.
 :::
 
-<1>4. By the inverse function theorem, $\Phi$ has a $C^k$ local inverse $\Psi$ near $(a, b)$.
-::: {.proof}
-<1>3 and the inverse function theorem.
 :::
 
-<1>5. Write $\Psi(x, z) = (x, \psi(x, z))$; then $\Phi(x, \psi(x,z)) = (x, z)$, so $F(x, \psi(x,z)) = z$.
-::: {.proof}
-<1>4, matching the first $n$ coordinates.
+::: {.pf-step #local-inverse-exists}
+By the inverse function theorem, $\Phi$ has a $C^k$ local inverse $\Psi$ near $(a, b)$.
+
+::: pf-proof
+Step [](#jacobian-invertible){.pf-ref} and the inverse function theorem.
 :::
 
-<1>6. Define $g(x) = \psi(x, 0)$.
-::: {.proof}
+:::
+
+::: {.pf-step #psi-relation}
+Write $\Psi(x, z) = (x, \psi(x, z))$; then $\Phi(x, \psi(x,z)) = (x, z)$, so $F(x, \psi(x,z)) = z$.
+
+::: pf-proof
+Step [](#local-inverse-exists){.pf-ref}, matching the first $n$ coordinates.
+:::
+
+:::
+
+::: {.pf-step #define-g}
+Define $g(x) = \psi(x, 0)$.
+
+::: pf-proof
 set $z = 0$.
 :::
 
-<1>7. Then $F(x, g(x)) = F(x, \psi(x,0)) = 0$, and $g(a) = \psi(a, 0) = b$ (since $\Phi(a,b) = (a, 0)$).
-::: {.proof}
-<1>5 and <1>6.
 :::
 
-<1>8. Hence $g$ is the desired implicit function, proving the implicit function theorem from the inverse function theorem.
-::: {.proof}
-<1>7.
+::: {.pf-step #g-satisfies-equation}
+Then $F(x, g(x)) = F(x, \psi(x,0)) = 0$, and $g(a) = \psi(a, 0) = b$ (since $\Phi(a,b) = (a, 0)$).
+
+::: pf-proof
+Steps [](#psi-relation){.pf-ref} and [](#define-g){.pf-ref}.
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-<1>8.
 :::
+
+::: {.pf-step #g-is-implicit-function}
+Hence $g$ is the desired implicit function, proving the implicit function theorem from the inverse function theorem.
+
+::: pf-proof
+Step [](#g-satisfies-equation){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Step [](#g-is-implicit-function){.pf-ref}.
+:::
+
 :::

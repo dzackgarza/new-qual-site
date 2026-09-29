@@ -43,7 +43,10 @@ Note: a similar result holds for $\PP^n$ (II, 7.1.1): every automorphism is give
 ::: {.solution}
 Use homogeneous coordinates $[X:Z]$ on $\PP^1$, with affine coordinate $x=X/Z$ on $Z\ne0$ and $\infty=[1:0]$.
 
-<1>1. Every matrix
+::: pf
+
+::: {.pf-step #matrix-gives-automorphism}
+Every matrix
 $$
 M=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in\operatorname{GL}_2(k)
 $$
@@ -53,7 +56,7 @@ T_M([X:Z])=[aX+bZ:cX+dZ]
 $$
 of $\PP^1$.
 
-::: {.proof}
+::: pf-proof
 The two homogeneous linear forms $aX+bZ$ and $cX+dZ$ have no common nonzero zero because $M$ is invertible.
 Hence they define a morphism $T_M:\PP^1\to\PP^1$.
 The inverse matrix $M^{-1}$ gives a morphism $T_{M^{-1}}$ satisfying
@@ -72,12 +75,15 @@ Thus these transformations form the projective linear group $\operatorname{PGL}_
 This proves part (a).
 :::
 
-<1>2. Pullback of rational functions gives an isomorphism
+:::
+
+::: {.pf-step #aut-p1-iso-aut-kx}
+Pullback of rational functions gives an isomorphism
 $$
 \Aut(\PP^1)\xrightarrow{\cong}\Aut_k k(x).
 $$
 
-::: {.proof}
+::: pf-proof
 An automorphism $\phi:\PP^1\to\PP^1$ induces the $k$-automorphism
 $$
 \phi^*:K(\PP^1)=k(x)\longrightarrow k(x),
@@ -94,9 +100,12 @@ Thus the pullback construction is bijective, and after the harmless inverse conv
 This proves part (b).
 :::
 
-<1>3. Every automorphism of $\PP^1$ fixing $\infty$ has the affine form $x\mapsto ax+b$ with $a\ne0$.
+:::
 
-::: {.proof}
+::: {.pf-step #fixing-infinity-is-affine}
+Every automorphism of $\PP^1$ fixing $\infty$ has the affine form $x\mapsto ax+b$ with $a\ne0$.
+
+::: pf-proof
 Let $\phi\in\Aut(\PP^1)$ satisfy $\phi(\infty)=\infty$.
 Then
 $$
@@ -121,12 +130,15 @@ Therefore $\phi$ is the fractional linear transformation represented by
 $\begin{pmatrix}a&b\\0&1\end{pmatrix}$.
 :::
 
-<1>4. Every automorphism of $\PP^1$ is fractional linear.
+:::
 
-::: {.proof}
+::: {.pf-step #every-automorphism-fractional-linear}
+Every automorphism of $\PP^1$ is fractional linear.
+
+::: pf-proof
 Let $\phi\in\Aut(\PP^1)$ and put $P=\phi(\infty)$.
-By step <1>1 there is a fractional linear transformation $T$ with $T(P)=\infty$.
-Then $T\circ\phi$ fixes $\infty$, so step <1>3 shows that $T\circ\phi$ is fractional linear.
+By step [](#matrix-gives-automorphism){.pf-ref} there is a fractional linear transformation $T$ with $T(P)=\infty$.
+Then $T\circ\phi$ fixes $\infty$, so step [](#fixing-infinity-is-affine){.pf-ref} shows that $T\circ\phi$ is fractional linear.
 Since $T^{-1}$ is fractional linear as well, so is
 $$
 \phi=T^{-1}\circ(T\circ\phi).
@@ -134,25 +146,30 @@ $$
 Thus every automorphism of $\PP^1$ lies in $\PGL(1)$.
 :::
 
-<1>5. Every $k$-automorphism of $k(x)$ is fractional linear, and
+:::
+
+::: {.pf-step #field-automorphism-fractional-linear}
+Every $k$-automorphism of $k(x)$ is fractional linear, and
 $$
 \boxed{\PGL(1)\cong\Aut(\PP^1)\cong\Aut_k k(x)}.
 $$
 
-::: {.proof}
-By step <1>2, a field automorphism corresponds to a unique automorphism of $\PP^1$.
-Step <1>4 makes that curve automorphism fractional linear, so its action on the affine coordinate is
+::: pf-proof
+By step [](#aut-p1-iso-aut-kx){.pf-ref}, a field automorphism corresponds to a unique automorphism of $\PP^1$.
+Step [](#every-automorphism-fractional-linear){.pf-ref} makes that curve automorphism fractional linear, so its action on the affine coordinate is
 $$
 x\longmapsto\frac{ax+b}{cx+d},
 \qquad ad-bc\ne0.
 $$
-Conversely step <1>1 shows that every such formula is induced by an automorphism of $\PP^1$ and therefore of $k(x)$.
+Conversely step [](#matrix-gives-automorphism){.pf-ref} shows that every such formula is induced by an automorphism of $\PP^1$ and therefore of $k(x)$.
 This proves part (c) and both asserted isomorphisms.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part (a), step <1>2 proves part (b), and steps <1>3--<1>5 prove part (c).
+::: pf-qed
+Step [](#matrix-gives-automorphism){.pf-ref} proves part (a), step [](#aut-p1-iso-aut-kx){.pf-ref} proves part (b), and steps [](#fixing-infinity-is-affine){.pf-ref}, [](#every-automorphism-fractional-linear){.pf-ref} and [](#field-automorphism-fractional-linear){.pf-ref} prove part (c).
+:::
+
 :::
 :::

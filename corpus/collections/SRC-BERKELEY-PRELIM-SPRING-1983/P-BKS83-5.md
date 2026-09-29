@@ -40,10 +40,13 @@ y_a(x)\coloneqq
 \end{cases}
 $$
 
-<1>1. Every real-valued solution $y$ is nondecreasing, satisfies
+::: pf
+
+::: {.pf-step #monotone-and-zero-forward}
+Every real-valued solution $y$ is nondecreasing, satisfies
 $y(x)=0$ for $x\ge0$, and satisfies $y(x)\le0$ for $x\le0$.
 
-::: {.proof}
+::: pf-proof
 At every $x$ where the differential equation holds, the radicand must be
 nonnegative, so
 $$
@@ -61,11 +64,14 @@ $y$ to take a value in $(0,2)$ on $[0,x_1]$, where the real square root is
 undefined. Therefore $y(x)=0$ for every $x\ge0$.
 :::
 
-<1>2. If $y$ is not identically zero, there is a unique $a\le0$ such that
+:::
+
+::: {.pf-step #left-boundary-point-a}
+If $y$ is not identically zero, there is a unique $a\le0$ such that
 $y(x)<0$ for $x<a$ and $y(x)=0$ for $x\ge a$.
 
-::: {.proof}
-By step <1>1, the zero set is nonempty because it contains $[0,\infty)$.
+::: pf-proof
+By step [](#monotone-and-zero-forward){.pf-ref}, the zero set is nonempty because it contains $[0,\infty)$.
 Since $y$ is nondecreasing and never positive on $(-\infty,0]$, whenever
 $y(x_0)=0$ one has $y(x)=0$ for every $x\ge x_0$. Thus the zero set is an
 upper ray.
@@ -81,12 +87,15 @@ $$
 The endpoint $a$ is unique.
 :::
 
-<1>3. On the interval $(-\infty,a)$ of step <1>2,
+:::
+
+::: {.pf-step #explicit-formula-on-negative-branch}
+On the interval $(-\infty,a)$ of step [](#left-boundary-point-a){.pf-ref},
 $$
 y(x)=1-\cosh(a-x).
 $$
 
-::: {.proof}
+::: pf-proof
 For $x<a$, set
 $$
 u(x)\coloneqq1-y(x).
@@ -118,10 +127,13 @@ y(x)=1-\cosh(a-x).
 $$
 :::
 
-<1>4. Conversely, every $y_a$ with $a\le0$ is a global solution, and so is
+:::
+
+::: {.pf-step #family-verified}
+Conversely, every $y_a$ with $a\le0$ is a global solution, and so is
 the constant function $y\equiv0$.
 
-::: {.proof}
+::: pf-proof
 For $x<a$,
 $$
 y_a'(x)=\sinh(a-x),
@@ -145,7 +157,10 @@ $a\le0$ implies $y_a(0)=0$. The constant zero function satisfies
 $0'=0=\sqrt{0\cdot(0-2)}$ and the initial condition.
 :::
 
-<1>5. The complete set of solutions is
+:::
+
+::: {.pf-step #solution-set-boxed}
+The complete set of solutions is
 $$
 \boxed{
 y\equiv0
@@ -154,15 +169,17 @@ y=y_a\text{ for some }a\le0
 }.
 $$
 
-::: {.proof}
-Steps <1>1--<1>3 show that every nonzero solution must equal exactly one
-$y_a$, while step <1>4 verifies every function in the displayed family.
+::: pf-proof
+Steps [](#monotone-and-zero-forward){.pf-ref}, [](#left-boundary-point-a){.pf-ref}, and [](#explicit-formula-on-negative-branch){.pf-ref} show that every nonzero solution must equal exactly one
+$y_a$, while step [](#family-verified){.pf-ref} verifies every function in the displayed family.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives all and only the real-valued global solutions satisfying
+::: pf-qed
+Step [](#solution-set-boxed){.pf-ref} gives all and only the real-valued global solutions satisfying
 the prescribed initial condition.
+:::
+
 :::
 :::

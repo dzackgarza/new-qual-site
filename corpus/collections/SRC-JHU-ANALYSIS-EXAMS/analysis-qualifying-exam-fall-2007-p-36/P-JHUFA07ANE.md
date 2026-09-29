@@ -23,21 +23,29 @@ audit:
 ::: {.solution}
 Let $f(x)=x^{-1/2}\mathbf 1_{(0,1]}(x)$ and $g(x)=x^{-1}\mathbf 1_{[1,\infty)}(x)$.
 
-<1>1. $\boxed{f=x^{-1/2}\mathbf 1_{(0,1]}}\in L^1(\RR)\setminus L^2(\RR)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-in-l1-not-l2}
+$\boxed{f=x^{-1/2}\mathbf 1_{(0,1]}}\in L^1(\RR)\setminus L^2(\RR)$.
+
+::: pf-proof
 $\int_\RR\abs f=\int_0^1x^{-1/2}\,dx=2$, while $\int_\RR\abs f^2=\int_0^1x^{-1}\,dx=\lim_{\eps\to0^+}(-\log\eps)=\infty$.
 :::
 
-<1>2. $\boxed{g=x^{-1}\mathbf 1_{[1,\infty)}}\in L^2(\RR)\setminus L^1(\RR)$.
+:::
 
-::: {.proof}
+::: {.pf-step #g-in-l2-not-l1}
+$\boxed{g=x^{-1}\mathbf 1_{[1,\infty)}}\in L^2(\RR)\setminus L^1(\RR)$.
+
+::: pf-proof
 $\int_\RR\abs g^2=\int_1^\infty x^{-2}\,dx=1$, while $\int_\RR\abs g=\int_1^\infty x^{-1}\,dx=\lim_{R\to\infty}\log R=\infty$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 give the two examples.
+::: pf-qed
+Steps [](#f-in-l1-not-l2){.pf-ref} and [](#g-in-l2-not-l1){.pf-ref} give the two examples.
+:::
+
 :::
 :::

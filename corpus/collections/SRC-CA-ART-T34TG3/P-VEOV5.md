@@ -40,52 +40,76 @@ d. Show that if the real part of an entire function is bounded, then $f$ is cons
 :::
 
 ::: {.solution}
-<1>1. (a) $f^{(n)}(0) = 0$ for all $n > k$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #cauchy-derivative-vanishing}
+(a) $f^{(n)}(0) = 0$ for all $n > k$.
+
+::: pf-proof
 By the Cauchy estimates on $\abs{z} = R$, $\abs{f^{(n)}(0)} \leq \frac{n!}{R^n}\qty(A R^k + B) = n!\qty(A R^{k-n} + B R^{-n})$ for every $R > 0$. For $n > k$ the right-hand side tends to $0$ as $R \to \infty$.
 :::
 
-<1>2. (a) $f$ is a polynomial of degree $\leq k$.
-
-::: {.proof}
-The Taylor series of the entire function $f$ about $0$ converges on $\CC$: $f(z) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} z^n$. By step <1>1, only the terms with $n \leq k$ are nonzero.
 :::
 
-<1>3. (b) Let $S=\{z\in\DD:\theta<\arg z<\phi\}$ and choose an integer $N$ with $2\pi/N<\phi-\theta$. Then $g(z)\coloneqq\prod_{j=0}^{N-1} f\qty(e^{2\pi i j/N}z)$ is identically zero on $\DD$.
+::: {.pf-step #f-is-polynomial}
+(a) $f$ is a polynomial of degree $\leq k$.
 
-::: {.proof}
+::: pf-proof
+The Taylor series of the entire function $f$ about $0$ converges on $\CC$: $f(z) = \sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!} z^n$. By step [](#cauchy-derivative-vanishing){.pf-ref}, only the terms with $n \leq k$ are nonzero.
+:::
+
+:::
+
+::: {.pf-step #rotated-product-vanishes}
+(b) Let $S=\{z\in\DD:\theta<\arg z<\phi\}$ and choose an integer $N$ with $2\pi/N<\phi-\theta$. Then $g(z)\coloneqq\prod_{j=0}^{N-1} f\qty(e^{2\pi i j/N}z)$ is identically zero on $\DD$.
+
+::: pf-proof
 Put $M=\sup_{\DD}\abs f<\infty$. For every $z\neq0$, some rotation $e^{2\pi ij/N}z$ has argument in $(\theta,\phi)$, because consecutive rotations differ in argument by $2\pi/N<\phi-\theta$. Fix $\varepsilon>0$. By hypothesis there is $\rho<1$ with $\abs{f(z)}<\varepsilon$ for $z\in S$ and $\rho<\abs z<1$. Hence $\abs{g(z)}\le\varepsilon M^{N-1}$ for $\rho<\abs z<1$. For each $r\in(\rho,1)$, the maximum modulus principle on $\abs z\le r$ extends this bound to $\abs z\le r$, so it holds on all of $\DD$. Since $\varepsilon$ is arbitrary, $g\equiv0$.
 :::
 
-<1>4. (b) $f \equiv 0$.
-
-::: {.proof}
-The holomorphic functions on the connected disc $\DD$ form an integral domain, so by step <1>3 one factor $f(e^{2\pi ij/N}z)$ is identically zero on $\DD$. Rotation is a bijection of $\DD$, hence $f\equiv0$.
 :::
 
-<1>5. (c) There exists $z \in S^1$ with $\prod_{j=1}^n \abs{z - w_j} \geq 1$.
+::: {.pf-step #f-is-zero}
+(b) $f \equiv 0$.
 
-::: {.proof}
+::: pf-proof
+The holomorphic functions on the connected disc $\DD$ form an integral domain, so by step [](#rotated-product-vanishes){.pf-ref} one factor $f(e^{2\pi ij/N}z)$ is identically zero on $\DD$. Rotation is a bijection of $\DD$, hence $f\equiv0$.
+:::
+
+:::
+
+::: {.pf-step #product-distances-at-least-one}
+(c) There exists $z \in S^1$ with $\prod_{j=1}^n \abs{z - w_j} \geq 1$.
+
+::: pf-proof
 The polynomial $P(z) = \prod_{j=1}^n (z - w_j)$ is holomorphic, and $\abs{P(0)} = \prod_j \abs{w_j} = 1$. By the maximum modulus principle on $\overline\DD$, $\max_{\abs z = 1}\abs{P(z)} \geq 1$.
 :::
 
-<1>6. (c) There exists $w \in S^1$ with $\prod_j \abs{w - w_j} = 1$.
-
-::: {.proof}
-The function $\varphi(z) = \prod_j \abs{z - w_j}$ is continuous on $S^1$, $\varphi(w_1) = 0$, and $\varphi(z)\ge1$ at the point $z$ of step <1>5. By the intermediate value theorem along an arc of $S^1$ from $w_1$ to $z$, $\varphi$ takes the value $1$.
 :::
 
-<1>7. (d) If $\Re f$ is bounded, then $f$ is constant.
+::: {.pf-step #product-distances-equal-one}
+(c) There exists $w \in S^1$ with $\prod_j \abs{w - w_j} = 1$.
 
-::: {.proof}
+::: pf-proof
+The function $\varphi(z) = \prod_j \abs{z - w_j}$ is continuous on $S^1$, $\varphi(w_1) = 0$, and $\varphi(z)\ge1$ at the point $z$ of step [](#product-distances-at-least-one){.pf-ref}. By the intermediate value theorem along an arc of $S^1$ from $w_1$ to $z$, $\varphi$ takes the value $1$.
+:::
+
+:::
+
+::: {.pf-step #bounded-real-part-constant}
+(d) If $\Re f$ is bounded, then $f$ is constant.
+
+::: pf-proof
 Suppose $\Re f \leq M$. Then $g(z) = e^{f(z)}$ is entire and $\abs{g(z)} = e^{\Re f(z)} \leq e^M$, so $g$ is constant by Liouville's theorem. Hence $0=g' = f'e^{f}$, and $e^f\neq0$, so $f'\equiv0$ and $f$ is constant. (If instead $\Re f$ is bounded below, apply this to $-f$.)
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves (a), step <1>4 proves (b), steps <1>5 and <1>6 prove (c), and step <1>7 proves (d).
+::: pf-qed
+Step [](#f-is-polynomial){.pf-ref} proves (a), step [](#f-is-zero){.pf-ref} proves (b), steps [](#product-distances-at-least-one){.pf-ref} and [](#product-distances-equal-one){.pf-ref} prove (c), and step [](#bounded-real-part-constant){.pf-ref} proves (d).
+:::
+
 :::
 :::
 

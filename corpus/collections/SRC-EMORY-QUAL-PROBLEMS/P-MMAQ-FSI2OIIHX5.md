@@ -37,11 +37,15 @@ Prove that if $H$ is a subgroup of $G$ of order $p^k$ for some $k<n$, then the n
 :::
 
 ::: {.solution}
-<1>1. Choose a Sylow $p$-subgroup $P$ of $G$ containing $H$.
+
+::: pf
+
+::: {.pf-step #fixed-points-count-formula}
+Choose a Sylow $p$-subgroup $P$ of $G$ containing $H$.
 The left action of $H$ on $P/H$ has exactly
 $[N_P(H):H]$ fixed points.
 
-::: {.proof}
+::: pf-proof
 Sylow containment provides $P$, of order $p^n$ [@DF04].
 Here $P/H$ means the set of left cosets, not a quotient
 group. Left multiplication by $H$ is well defined on
@@ -53,9 +57,12 @@ fixed cosets are precisely those with $g\in N_P(H)$.
 There are $[N_P(H):H]$ such cosets.
 :::
 
-<1>2. The index $[N_P(H):H]$ is at least $p$.
+:::
 
-::: {.proof}
+::: pf-step
+The index $[N_P(H):H]$ is at least $p$.
+
+::: pf-proof
 Each orbit has order dividing $|H|=p^k$ by
 orbit-stabilizer [@DF04]. Hence every orbit with more
 than one member has size divisible by $p$.
@@ -63,11 +70,15 @@ The total number of cosets is $[P:H]=p^{n-k}$, which
 is divisible by $p$ because $k<n$. Subtracting the
 non-singleton orbit sizes shows that the number of
 fixed points is divisible by $p$. It is positive,
-since the coset $H$ is fixed. Thus step <1>1 gives
+since the coset $H$ is fixed. Thus step [](#fixed-points-count-formula){.pf-ref} gives
 $[N_P(H):H]\geq p>1$.
 
 Consequently $H\subsetneq N_P(H)\subseteq N_G(H)$,
 proving the assertion. This also covers $H=1$:
 then all cosets are fixed and the same count applies.
+:::
+
+:::
+
 :::
 :::

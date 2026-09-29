@@ -43,12 +43,15 @@ z=Re^{i\theta},
 $$
 oriented from $R$ to $-R$.
 
-<1>1. The semicircular contribution tends to zero:
+::: pf
+
+::: {.pf-step #arc-vanishes}
+The semicircular contribution tends to zero:
 $$
 \lim_{R\to\infty}\int_{C_R}F(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
 On $C_R$,
 $$
 \abs{z^2+3}
@@ -95,7 +98,10 @@ $$
 $$
 :::
 
-<1>2. The only pole of $F$ in the upper half-plane is
+:::
+
+::: {.pf-step #residue-value}
+The only pole of $F$ in the upper half-plane is
 $$
 z=i\sqrt3,
 $$
@@ -106,7 +112,7 @@ $$
 \frac12e^{-2\sqrt3}.
 $$
 
-::: {.proof}
+::: pf-proof
 The poles are at
 $$
 z=\pm i\sqrt3,
@@ -123,7 +129,10 @@ $$
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #full-line-limit}
+One has
 $$
 \lim_{R\to\infty}
 \int_{-R}^{R}\frac{xe^{2ix}}{x^2+3}\,dx
@@ -131,7 +140,7 @@ $$
 \pi i e^{-2\sqrt3}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $R>\sqrt3$, the residue theorem on the contour consisting of
 $[-R,R]$ and $C_R$ gives
 $$
@@ -142,10 +151,13 @@ $$
 2\pi i
 \operatorname{Res}_{z=i\sqrt3}F(z).
 $$
-Apply steps <1>1 and <1>2 and let $R\to\infty$.
+Apply steps [](#arc-vanishes){.pf-ref} and [](#residue-value){.pf-ref} and let $R\to\infty$.
 :::
 
-<1>4. The requested integral is
+:::
+
+::: {.pf-step #final-value}
+The requested integral is
 $$
 \boxed{
 \int_0^\infty\frac{x\sin(2x)}{x^2+3}\,dx
@@ -154,8 +166,8 @@ $$
 }.
 $$
 
-::: {.proof}
-Taking imaginary parts in step <1>3 gives
+::: pf-proof
+Taking imaginary parts in step [](#full-line-limit){.pf-ref} gives
 $$
 \lim_{R\to\infty}
 \int_{-R}^{R}\frac{x\sin(2x)}{x^2+3}\,dx
@@ -176,9 +188,12 @@ Dividing the limiting identity by $2$ proves the displayed value and, at
 the same time, the existence of the improper integral.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required residue evaluation.
 :::
+
+::: pf-qed
+Step [](#final-value){.pf-ref} gives the required residue evaluation.
+:::
+
+:::
+
 :::

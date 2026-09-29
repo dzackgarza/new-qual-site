@@ -39,12 +39,16 @@ Prove that
 :::
 
 ::: {.solution}
+
 For $R>0$, write
 $$
 I_R=\int_{\Gamma_R}\frac{e^{iz}}{z}\,dz.
 $$
 
-<1>1. The counterclockwise parametrization
+::: pf
+
+::: {.pf-step #parametrization-integral-form}
+The counterclockwise parametrization
 $$
 z=Re^{i\theta},
 \qquad
@@ -57,7 +61,7 @@ I_R
 i\int_0^\pi e^{iR\cos\theta-R\sin\theta}\,d\theta.
 $$
 
-::: {.proof}
+::: pf-proof
 For this parametrization,
 $$
 dz=iRe^{i\theta}\,d\theta
@@ -82,15 +86,18 @@ e^{iR\cos\theta-R\sin\theta}\,d\theta.
 $$
 :::
 
-<1>2. For every $R>0$,
+:::
+
+::: {.pf-step #abs-IR-bound}
+For every $R>0$,
 $$
 \abs{I_R}
 \le
 \int_0^\pi e^{-R\sin\theta}\,d\theta.
 $$
 
-::: {.proof}
-By step <1>1 and the triangle inequality,
+::: pf-proof
+By step [](#parametrization-integral-form){.pf-ref} and the triangle inequality,
 $$
 \abs{I_R}
 \le
@@ -106,12 +113,15 @@ $$
 the claimed estimate follows.
 :::
 
-<1>3. For $0\le\theta\le\pi/2$,
+:::
+
+::: {.pf-step #sin-theta-bound}
+For $0\le\theta\le\pi/2$,
 $$
 \sin\theta\ge\frac{2\theta}{\pi}.
 $$
 
-::: {.proof}
+::: pf-proof
 The function $\sin\theta$ is concave on $[0,\pi/2]$, so its graph
 lies above the chord joining
 $$
@@ -122,20 +132,23 @@ $$
 That chord has equation $y=2\theta/\pi$.
 :::
 
-<1>4. For every $R>0$,
+:::
+
+::: {.pf-step #final-bound-pi-over-R}
+For every $R>0$,
 $$
 \abs{I_R}\le\frac{\pi}{R}.
 $$
 
-::: {.proof}
-Using step <1>2 and the symmetry
+::: pf-proof
+Using step [](#abs-IR-bound){.pf-ref} and the symmetry
 $\sin(\pi-\theta)=\sin\theta$,
 $$
 \int_0^\pi e^{-R\sin\theta}\,d\theta
 =
 2\int_0^{\pi/2}e^{-R\sin\theta}\,d\theta.
 $$
-By step <1>3,
+By step [](#sin-theta-bound){.pf-ref},
 $$
 \begin{aligned}
 2\int_0^{\pi/2}e^{-R\sin\theta}\,d\theta
@@ -149,25 +162,31 @@ $$
 \frac{\pi}{R}.
 \end{aligned}
 $$
-Combining this with step <1>2 proves the estimate.
+Combining this with step [](#abs-IR-bound){.pf-ref} proves the estimate.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #limit-zero}
+Therefore
 $$
 \boxed{\lim_{R\to\infty}I_R=0}.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+By step [](#final-bound-pi-over-R){.pf-ref},
 $$
 0\le\abs{I_R}\le\frac{\pi}{R},
 $$
 and the right-hand side tends to zero.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required limit.
 :::
+
+::: pf-qed
+Step [](#limit-zero){.pf-ref} is the required limit.
+:::
+
+:::
+
 :::

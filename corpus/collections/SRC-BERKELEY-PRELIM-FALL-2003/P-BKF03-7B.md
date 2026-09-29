@@ -37,8 +37,13 @@ Prove that $| X | = c | G |$ where c is the number of conjugacy classes in G.
 
 
 ::: {.solution}
-<1>1. For each $g\in G$, the number of elements commuting with $g$ is $|C_G(g)|$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #centralizer-count}
+For each $g\in G$, the number of elements commuting with $g$ is $|C_G(g)|$.
+
+::: pf-proof
 By definition,
 \[
 C_G(g)=\{h\in G:hg=gh\}.
@@ -50,8 +55,12 @@ Consequently
 \]
 :::
 
-<1>2. Each conjugacy class contributes exactly $|G|$ to this sum.
-::: {.proof}
+:::
+
+::: {.pf-step #conjugacy-class-contributes-G}
+Each conjugacy class contributes exactly $|G|$ to this sum.
+
+::: pf-proof
 Let $K$ be the conjugacy class of an element $g$.
 Centralizer size is constant on conjugacy classes, so
 \[
@@ -67,27 +76,40 @@ and hence
 \]
 :::
 
-<1>3. If $c$ is the number of conjugacy classes of $G$, then
+:::
+
+::: {.pf-step #X-equals-cG}
+If $c$ is the number of conjugacy classes of $G$, then
 \[
 |X|=c|G|.
 \]
-::: {.proof}
-Partition the sum in <1>1 by conjugacy classes.
-By <1>2 each of the $c$ classes contributes $|G|$, giving the formula.
+
+::: pf-proof
+Partition the sum in step [](#centralizer-count){.pf-ref} by conjugacy classes.
+By step [](#conjugacy-class-contributes-G){.pf-ref} each of the $c$ classes contributes $|G|$, giving the formula.
 :::
 
-<1>4. For $G=S_5$, there are $840$ commuting ordered pairs.
-::: {.proof}
+:::
+
+::: {.pf-step #S5-value}
+For $G=S_5$, there are $840$ commuting ordered pairs.
+
+::: pf-proof
 Conjugacy classes in $S_5$ are determined by cycle type, hence by partitions of $5$.
 The seven partitions are
 \[
 5,\ 4+1,\ 3+2,\ 3+1+1,\ 2+2+1,\ 2+1+1+1,\ 1+1+1+1+1.
 \]
 Thus $c=7$.
-Since $|S_5|=5!=120$, <1>3 gives
+Since $|S_5|=5!=120$, step [](#X-equals-cG){.pf-ref} gives
 \[
 |X|=7\cdot120=\boxed{840}.
 \]
 :::
+
+:::
+
+:::
+
 :::
 

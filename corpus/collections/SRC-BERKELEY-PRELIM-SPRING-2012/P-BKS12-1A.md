@@ -28,7 +28,11 @@ Suppose that $X$ is a compact metric space. If $Y$ is another metric space (poss
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #y0-not-in-fiber}
+Let
 $$
 y_0\in Y\setminus p(Z).
 $$
@@ -37,7 +41,7 @@ $$
 (x,y_0)\notin Z.
 $$
 
-::: {.proof}
+::: pf-proof
 If $(x,y_0)\in Z$ for some $x\in X$, then by definition of the projection,
 $$
 y_0=p(x,y_0)\in p(Z),
@@ -45,7 +49,10 @@ $$
 contrary to the choice of $y_0$.
 :::
 
-<1>2. For every $x\in X$, there are open sets
+:::
+
+::: {.pf-step #product-neighborhood}
+For every $x\in X$, there are open sets
 $$
 U_x\subseteq X,
 \qquad
@@ -62,8 +69,8 @@ $$
 (U_x\times V_x)\cap Z=\varnothing.
 $$
 
-::: {.proof}
-By step <1>1, $(x,y_0)$ lies in the open set
+::: pf-proof
+By step [](#y0-not-in-fiber){.pf-ref}, $(x,y_0)$ lies in the open set
 $$
 (X\times Y)\setminus Z.
 $$
@@ -72,19 +79,25 @@ is such a product neighborhood of $(x,y_0)$ contained in the complement
 of $Z$.
 :::
 
-<1>3. There exist points $x_1,\ldots,x_m\in X$ such that
+:::
+
+::: {.pf-step #finite-subcover}
+There exist points $x_1,\ldots,x_m\in X$ such that
 $$
 X
 =
 U_{x_1}\cup\cdots\cup U_{x_m}.
 $$
 
-::: {.proof}
+::: pf-proof
 The sets $U_x$, for $x\in X$, form an open cover of the compact space
 $X$. Compactness supplies a finite subcover.
 :::
 
-<1>4. The set
+:::
+
+::: {.pf-step #v-avoids-pz}
+The set
 $$
 V
 \coloneqq
@@ -95,7 +108,7 @@ $$
 V\cap p(Z)=\varnothing.
 $$
 
-::: {.proof}
+::: pf-proof
 The intersection is finite, so $V$ is open, and every $V_{x_j}$ contains
 $y_0$, so $y_0\in V$.
 
@@ -107,38 +120,47 @@ Then there is an $x\in X$ with
 $$
 (x,y)\in Z.
 $$
-By step <1>3, choose $j$ such that $x\in U_{x_j}$. Since $y\in V$, one
+By step [](#finite-subcover){.pf-ref}, choose $j$ such that $x\in U_{x_j}$. Since $y\in V$, one
 also has $y\in V_{x_j}$. Thus
 $$
 (x,y)\in U_{x_j}\times V_{x_j},
 $$
-contradicting step <1>2.
+contradicting step [](#product-neighborhood){.pf-ref}.
 :::
 
-<1>5. The complement
+:::
+
+::: {.pf-step #complement-open}
+The complement
 $$
 Y\setminus p(Z)
 $$
 is open.
 
-::: {.proof}
-For every $y_0\in Y\setminus p(Z)$, step <1>4 constructs an open
+::: pf-proof
+For every $y_0\in Y\setminus p(Z)$, step [](#v-avoids-pz){.pf-ref} constructs an open
 neighborhood $V$ of $y_0$ contained in $Y\setminus p(Z)$.
 :::
 
-<1>6. The set
+:::
+
+::: {.pf-step #pz-closed}
+The set
 $$
 \boxed{p(Z)}
 $$
 is closed in $Y$.
 
-::: {.proof}
-Step <1>5 shows that its complement is open.
+::: pf-proof
+Step [](#complement-open){.pf-ref} shows that its complement is open.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#pz-closed){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

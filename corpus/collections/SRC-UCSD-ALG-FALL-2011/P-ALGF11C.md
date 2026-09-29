@@ -48,8 +48,12 @@ be the canonical localization map, and define
 \]
 This is a ring homomorphism.
 
-<1>1. If \(a\in\ker\phi\), then for every \(i\) some power of \(f_i\) annihilates \(a\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #power-annihilates}
+If \(a\in\ker\phi\), then for every \(i\) some power of \(f_i\) annihilates \(a\).
+
+::: pf-proof
 Suppose \(a\in\ker\phi\).
 Then
 \[
@@ -63,8 +67,12 @@ f_i^{N_i}a=0.
 If necessary increase \(N_i\) so that \(N_i\ge1\).
 :::
 
-<1>2. There is an integer \(N\) such that every monomial of total degree \(N\) in \(f_1,\ldots,f_n\) is divisible by some \(f_i^{N_i}\).
-::: {.proof}
+:::
+
+::: {.pf-step #monomial-degree-bound}
+There is an integer \(N\) such that every monomial of total degree \(N\) in \(f_1,\ldots,f_n\) is divisible by some \(f_i^{N_i}\).
+
+::: pf-proof
 Set
 \[
 N:=1+\sum_{i=1}^n(N_i-1).
@@ -89,13 +97,17 @@ e_i\ge N_i,
 so the monomial is divisible by \(f_i^{N_i}\).
 :::
 
-<1>3. The kernel of \(\phi\) is zero.
-::: {.proof}
+:::
+
+::: pf-step
+The kernel of \(\phi\) is zero.
+
+::: pf-proof
 Because \(f_1,\ldots,f_n\) generate the unit ideal, choose \(r_1,\ldots,r_n\in A\) such that
 \[
 r_1f_1+\cdots+r_nf_n=1.
 \]
-Let \(a\in\ker\phi\), and choose \(N_i\) and \(N\) as in <1>1 and <1>2.
+Let \(a\in\ker\phi\), and choose \(N_i\) and \(N\) as in steps [](#power-annihilates){.pf-ref} and [](#monomial-degree-bound){.pf-ref}.
 Then
 \[
 a
@@ -103,7 +115,7 @@ a
 =(r_1f_1+\cdots+r_nf_n)^N a.
 \]
 After expanding, every summand is an \(A\)-multiple of a monomial of total degree \(N\) in the \(f_i\).
-By <1>2, each such monomial is divisible by some \(f_i^{N_i}\), and by <1>1,
+By step [](#monomial-degree-bound){.pf-ref}, each such monomial is divisible by some \(f_i^{N_i}\), and by step [](#power-annihilates){.pf-ref},
 \[
 f_i^{N_i}a=0.
 \]
@@ -112,5 +124,9 @@ Hence every summand in the expansion vanishes, so
 a=0.
 \]
 Therefore \(\ker\phi=0\), and \(\phi\) is injective.
+:::
+
+:::
+
 :::
 :::

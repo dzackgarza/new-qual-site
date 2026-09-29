@@ -23,28 +23,49 @@ Show that if $G$ is a locally compact topological group and $H$ is a subgroup, t
 :::
 
 ::: {.solution}
-<1>1. Let $\pi : G \to G/H$ be the quotient map, and let $gH \in G/H$ be an arbitrary coset.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #pi-definition}
+Let $\pi : G \to G/H$ be the quotient map, and let $gH \in G/H$ be an arbitrary coset.
+
+::: pf-proof
 fix a point of $G/H$.
 :::
 
-<1>2. Since $G$ is locally compact, there is a compact neighborhood $K$ of $g$ in $G$.
-::: {.proof}
+:::
+
+::: pf-step
+Since $G$ is locally compact, there is a compact neighborhood $K$ of $g$ in $G$.
+
+::: pf-proof
 definition of local compactness.
 :::
 
-<1>3. $\pi(K)$ is a compact neighborhood of $gH$ in $G/H$.
-::: {.proof}
+:::
+
+::: {.pf-step #pi-k-compact-neighborhood}
+$\pi(K)$ is a compact neighborhood of $gH$ in $G/H$.
+
+::: pf-proof
 $\pi$ is continuous and surjective, so $\pi(K)$ is compact; and $\pi$ is an open map (the quotient map of a topological group by a subgroup is open), so $\pi(K)$ is a neighborhood of $\pi(g) = gH$.
 :::
 
-<1>4. Hence every point of $G/H$ has a compact neighborhood, so $G/H$ is locally compact.
-::: {.proof}
-<1>1 and <1>3.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
+::: {.pf-step #every-point-has-compact-neighborhood}
+Hence every point of $G/H$ has a compact neighborhood, so $G/H$ is locally compact.
+
+::: pf-proof
+Steps [](#pi-definition){.pf-ref} and [](#pi-k-compact-neighborhood){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#every-point-has-compact-neighborhood){.pf-ref}.
+:::
+
+:::
+
 :::

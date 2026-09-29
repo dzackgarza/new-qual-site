@@ -65,13 +65,16 @@ $$
 d=D\cdot H.
 $$
 
-<1>1. Adjunction gives
+::: pf
+
+::: {.pf-step #adjunction-genus-formula}
+Adjunction gives
 $$
 \boxed{
 p_a(D)=1+\frac{D^2-d}{2}.}
 $$
 
-::: {.proof}
+::: pf-proof
 On a nonsingular surface,
 $$
 2p_a(D)-2=D\cdot(D+K_S).
@@ -83,12 +86,15 @@ $$
 Solving for $p_a(D)$ gives the formula.
 :::
 
-<1>2. The self-intersection of $D$ satisfies
+:::
+
+::: {.pf-step #hodge-index-bound}
+The self-intersection of $D$ satisfies
 $$
 \boxed{3D^2\le d^2.}
 $$
 
-::: {.proof}
+::: pf-proof
 The hyperplane class $H$ is ample. The Hodge index inequality
 [[P-AGH519HODGEINDEX]] gives
 $$
@@ -106,20 +112,26 @@ $$
 $$
 :::
 
-<1>3. One also has the parity condition
+:::
+
+::: {.pf-step #parity-condition}
+One also has the parity condition
 $$
 \boxed{D^2\equiv d\pmod2.}
 $$
 
-::: {.proof}
-Step <1>1 shows that
+::: pf-proof
+Step [](#adjunction-genus-formula){.pf-ref} shows that
 $$
 D^2-d=2p_a(D)-2
 $$
 is even. Hence $D^2$ and $d$ have the same parity.
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #bound-d-equiv-0}
+If
 $$
 d=3m,
 $$
@@ -128,8 +140,8 @@ $$
 \boxed{D^2\le3m^2.}
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+Step [](#hodge-index-bound){.pf-ref} gives
 $$
 D^2\le\frac{d^2}{3}=3m^2.
 $$
@@ -139,7 +151,10 @@ $$
 $$
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #bound-d-equiv-1}
+If
 $$
 d=3m+1,
 $$
@@ -148,8 +163,8 @@ $$
 \boxed{D^2\le3m^2+2m-1.}
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+Step [](#hodge-index-bound){.pf-ref} gives
 $$
 D^2\le\frac{(3m+1)^2}{3}
 =
@@ -166,13 +181,16 @@ $$
 3m^2-m-1
 $$
 is odd, so the integer $3m^2+2m$ has the wrong parity for $D^2$ by step
-<1>3. The next smaller integer has the required parity, giving
+[](#parity-condition){.pf-ref}. The next smaller integer has the required parity, giving
 $$
 D^2\le3m^2+2m-1.
 $$
 :::
 
-<1>6. If
+:::
+
+::: {.pf-step #bound-d-equiv-2}
+If
 $$
 d=3m+2,
 $$
@@ -181,8 +199,8 @@ $$
 \boxed{D^2\le3m^2+4m.}
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+Step [](#hodge-index-bound){.pf-ref} gives
 $$
 D^2\le\frac{(3m+2)^2}{3}
 =
@@ -199,13 +217,16 @@ $$
 3m^2+m-1
 $$
 is odd. Hence the top integer allowed by Hodge has the wrong parity, and
-step <1>3 forces
+step [](#parity-condition){.pf-ref} forces
 $$
 D^2\le3m^2+4m.
 $$
 :::
 
-<1>7. If $d\equiv0\pmod3$, then
+:::
+
+::: {.pf-step #genus-bound-mod-0}
+If $d\equiv0\pmod3$, then
 $$
 \boxed{
 p_a(D)
@@ -213,8 +234,8 @@ p_a(D)
 \frac16(d-1)(d-2)+\frac23.}
 $$
 
-::: {.proof}
-Write $d=3m$. By steps <1>1 and <1>4,
+::: pf-proof
+Write $d=3m$. By steps [](#adjunction-genus-formula){.pf-ref} and [](#bound-d-equiv-0){.pf-ref},
 $$
 \begin{aligned}
 p_a(D)
@@ -234,7 +255,10 @@ $$
 $$
 :::
 
-<1>8. If $d\equiv1\pmod3$, then
+:::
+
+::: {.pf-step #genus-bound-mod-1}
+If $d\equiv1\pmod3$, then
 $$
 \boxed{
 p_a(D)
@@ -242,8 +266,8 @@ p_a(D)
 \frac16(d-1)(d-2).}
 $$
 
-::: {.proof}
-Write $d=3m+1$. Steps <1>1 and <1>5 give
+::: pf-proof
+Write $d=3m+1$. Steps [](#adjunction-genus-formula){.pf-ref} and [](#bound-d-equiv-1){.pf-ref} give
 $$
 \begin{aligned}
 p_a(D)
@@ -265,7 +289,10 @@ $$
 this is the required bound.
 :::
 
-<1>9. If $d\equiv2\pmod3$, then
+:::
+
+::: {.pf-step #genus-bound-mod-2}
+If $d\equiv2\pmod3$, then
 $$
 \boxed{
 p_a(D)
@@ -273,8 +300,8 @@ p_a(D)
 \frac16(d-1)(d-2).}
 $$
 
-::: {.proof}
-Write $d=3m+2$. By steps <1>1 and <1>6,
+::: pf-proof
+Write $d=3m+2$. By steps [](#adjunction-genus-formula){.pf-ref} and [](#bound-d-equiv-2){.pf-ref},
 $$
 \begin{aligned}
 p_a(D)
@@ -296,7 +323,10 @@ $$
 This proves the numerical inequality in every residue class.
 :::
 
-<1>10. Choose one of the $27$ lines
+:::
+
+::: {.pf-step #line-conic-decomposition}
+Choose one of the $27$ lines
 $$
 L\subseteq S.
 $$
@@ -305,7 +335,7 @@ $$
 \boxed{H=L+Q,\qquad Q\sim H-L.}
 $$
 
-::: {.proof}
+::: pf-proof
 Planes in $\PP^3$ containing $L$ form a pencil. For such a plane $\Pi$,
 the plane section $S\cap\Pi$ has degree $3$ and contains $L$, so
 scheme-theoretically
@@ -326,7 +356,10 @@ L+Q\sim H.
 $$
 :::
 
-<1>11. The line and conic classes satisfy
+:::
+
+::: {.pf-step #line-conic-numerics}
+The line and conic classes satisfy
 $$
 \boxed{
 L^2=-1,
@@ -338,7 +371,7 @@ Q^2=0,
 H\cdot Q=2.}
 $$
 
-::: {.proof}
+::: pf-proof
 The first two equalities are the defining numerical properties of a line on
 the cubic surface [[FE-SRFCUBIC]]. Since $Q=H-L$,
 $$
@@ -359,13 +392,16 @@ Q^2
 $$
 :::
 
-<1>12. The residual conics cut out by planes through $L$ form a base-point
+:::
+
+::: {.pf-step #conic-globally-generated}
+The residual conics cut out by planes through $L$ form a base-point
 free pencil in $|H-L|$. Consequently
 $$
 \boxed{\OO_S(Q)\text{ is globally generated}.}
 $$
 
-::: {.proof}
+::: pf-proof
 Every residual conic has class $H-L=Q$, so these residual conics form a
 one-dimensional linear subsystem of $|Q|$.
 
@@ -399,13 +435,16 @@ point anywhere on $S$: already this residual-conic subpencil has no base
 point. Therefore $\OO_S(Q)$ is globally generated.
 :::
 
-<1>13. The line bundle
+:::
+
+::: {.pf-step #h-plus-l-globally-generated}
+The line bundle
 $$
 \OO_S(H+L)
 $$
 is globally generated.
 
-::: {.proof}
+::: pf-proof
 The section cutting out $L$ gives the exact sequence
 $$
 0
@@ -458,9 +497,12 @@ section of $L$ has no base point because $H$ is very ample. Hence
 \(\OO_S(H+L)\) is globally generated everywhere.
 :::
 
-<1>14. The morphism defined by $|H+L|$ is birational onto its image.
+:::
 
-::: {.proof}
+::: {.pf-step #h-plus-l-birational}
+The morphism defined by $|H+L|$ is birational onto its image.
+
+::: pf-proof
 On the open set $S\setminus L$, the subsystem
 $$
 s_L\,H^0(S,\OO_S(H))
@@ -477,13 +519,16 @@ system $|H+L|$ therefore defines a generically one-to-one morphism, hence a
 birational morphism onto its image.
 :::
 
-<1>15. For every $m\ge1$, a general member of
+:::
+
+::: {.pf-step #general-mh-irreducible}
+For every $m\ge1$, a general member of
 $$
 |mH|
 $$
 is nonsingular and irreducible.
 
-::: {.proof}
+::: pf-proof
 The hyperplane bundle $\OO_S(H)$ is very ample, and every positive power of
 a very ample bundle is very ample. Thus $|mH|$ is the hyperplane system of
 an embedding. Bertini's hyperplane theorem gives a nonsingular general
@@ -491,38 +536,44 @@ member; since $S$ is irreducible of dimension two, a general hyperplane
 section is connected, hence a nonsingular connected curve is irreducible.
 :::
 
-<1>16. For every $n\ge1$, the class
+:::
+
+::: {.pf-step #nh-minus-l-irreducible}
+For every $n\ge1$, the class
 $$
 nH-L
 $$
 contains a nonsingular irreducible curve.
 
-::: {.proof}
+::: pf-proof
 For $n=1$ this is the nonsingular irreducible conic
 $$
 Q\sim H-L
 $$
-from step <1>10.
+from step [](#line-conic-decomposition){.pf-ref}.
 
 For $n\ge2$,
 $$
 nH-L=(n-1)H+Q.
 $$
 The bundle $\OO_S((n-1)H)$ is very ample and $\OO_S(Q)$ is globally
-generated by step <1>12. Exercise II.7.5(d), proved in
+generated by step [](#conic-globally-generated){.pf-ref}. Exercise II.7.5(d), proved in
 [[P-AGH275AMPLEPROPS]], says that the tensor product of a very ample bundle
 and a globally generated bundle is very ample. Hence $\OO_S(nH-L)$ is very
 ample. A general member is therefore nonsingular and irreducible by the same
-Bertini argument as in step <1>15.
+Bertini argument as in step [](#general-mh-irreducible){.pf-ref}.
 :::
 
-<1>17. For every $n\ge1$, the class
+:::
+
+::: {.pf-step #nh-minus-q-irreducible}
+For every $n\ge1$, the class
 $$
 nH-Q
 $$
 contains a nonsingular irreducible curve.
 
-::: {.proof}
+::: pf-proof
 Since $Q=H-L$,
 $$
 nH-Q=(n-1)H+L.
@@ -533,8 +584,8 @@ For $n=2$, the class is
 $$
 H+L.
 $$
-By step <1>13 its complete linear system is base-point free, and by step
-<1>14 the associated morphism is birational, hence separable. Bertini's
+By step [](#h-plus-l-globally-generated){.pf-ref} its complete linear system is base-point free, and by step
+[](#h-plus-l-birational){.pf-ref} the associated morphism is birational, hence separable. Bertini's
 theorem for a base-point-free separable linear system therefore gives a
 nonsingular general member. Since the associated morphism has
 two-dimensional image, Bertini's irreducibility theorem for a base-point-free
@@ -545,11 +596,14 @@ $$
 nH-Q=(n-2)H+(H+L).
 $$
 The first summand is very ample and the second is globally generated by step
-<1>13. Again [[P-AGH275AMPLEPROPS]] makes their tensor product very ample,
+[](#h-plus-l-globally-generated){.pf-ref}. Again [[P-AGH275AMPLEPROPS]] makes their tensor product very ample,
 and a general member is nonsingular and irreducible.
 :::
 
-<1>18. If
+:::
+
+::: {.pf-step #sharp-mod-0-realized}
+If
 $$
 d=3m>0,
 $$
@@ -560,19 +614,22 @@ $$
 has degree $d$, reaches the upper bound, and contains a nonsingular
 irreducible curve.
 
-::: {.proof}
+::: pf-proof
 Since $m\ge1$,
 $$
 H\cdot(mH)=3m=d,
 \qquad
 (mH)^2=3m^2.
 $$
-Thus equality holds in the self-intersection bound of step <1>4, hence in
-the genus bound of step <1>7. Step <1>15 supplies a nonsingular irreducible
+Thus equality holds in the self-intersection bound of step [](#bound-d-equiv-0){.pf-ref}, hence in
+the genus bound of step [](#genus-bound-mod-0){.pf-ref}. Step [](#general-mh-irreducible){.pf-ref} supplies a nonsingular irreducible
 member.
 :::
 
-<1>19. If
+:::
+
+::: {.pf-step #sharp-mod-1-realized}
+If
 $$
 d=3m+1>0,
 $$
@@ -583,8 +640,8 @@ $$
 has degree $d$, reaches the upper bound, and contains a nonsingular
 irreducible curve.
 
-::: {.proof}
-Put $n=m+1$. Since $d>0$, one has $n\ge1$. By step <1>11,
+::: pf-proof
+Put $n=m+1$. Since $d>0$, one has $n\ge1$. By step [](#line-conic-numerics){.pf-ref},
 $$
 H\cdot D_m
 =
@@ -599,15 +656,18 @@ D_m^2
 &=3m^2+2m-1.
 \end{aligned}
 $$
-This is equality in step <1>5, so step <1>8 gives the maximal arithmetic
+This is equality in step [](#bound-d-equiv-1){.pf-ref}, so step [](#genus-bound-mod-1){.pf-ref} gives the maximal arithmetic
 genus. Since
 $$
 D_m=nH-Q,
 $$
-step <1>17 gives a nonsingular irreducible member.
+step [](#nh-minus-q-irreducible){.pf-ref} gives a nonsingular irreducible member.
 :::
 
-<1>20. If
+:::
+
+::: {.pf-step #sharp-mod-2-realized}
+If
 $$
 d=3m+2>0,
 $$
@@ -618,8 +678,8 @@ $$
 has degree $d$, reaches the upper bound, and contains a nonsingular
 irreducible curve.
 
-::: {.proof}
-Put $n=m+1\ge1$. Using step <1>11,
+::: pf-proof
+Put $n=m+1\ge1$. Using step [](#line-conic-numerics){.pf-ref},
 $$
 H\cdot D_m
 =
@@ -634,21 +694,23 @@ D_m^2
 &=3m^2+4m.
 \end{aligned}
 $$
-Thus equality holds in step <1>6, and step <1>9 gives the maximal genus.
+Thus equality holds in step [](#bound-d-equiv-2){.pf-ref}, and step [](#genus-bound-mod-2){.pf-ref} gives the maximal genus.
 Because
 $$
 D_m=nH-L,
 $$
-step <1>16 supplies a nonsingular irreducible member.
+step [](#nh-minus-l-irreducible){.pf-ref} supplies a nonsingular irreducible member.
 :::
 
-<1>21. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>9 prove the stated sharp genus bound for every divisor of
-degree $d$. Steps <1>10--<1>17 construct the smooth line/conic auxiliary
+::: pf-qed
+Steps [](#adjunction-genus-formula){.pf-ref}, [](#hodge-index-bound){.pf-ref}, [](#parity-condition){.pf-ref}, [](#bound-d-equiv-0){.pf-ref}, [](#bound-d-equiv-1){.pf-ref}, [](#bound-d-equiv-2){.pf-ref}, [](#genus-bound-mod-0){.pf-ref}, [](#genus-bound-mod-1){.pf-ref} and [](#genus-bound-mod-2){.pf-ref} prove the stated sharp genus bound for every divisor of
+degree $d$. Steps [](#line-conic-decomposition){.pf-ref}, [](#line-conic-numerics){.pf-ref}, [](#conic-globally-generated){.pf-ref}, [](#h-plus-l-globally-generated){.pf-ref}, [](#h-plus-l-birational){.pf-ref}, [](#general-mh-irreducible){.pf-ref}, [](#nh-minus-l-irreducible){.pf-ref} and [](#nh-minus-q-irreducible){.pf-ref} construct the smooth line/conic auxiliary
 classes and prove the needed linear systems contain nonsingular irreducible
-curves. Steps <1>18--<1>20 realize equality for every positive degree in the
+curves. Steps [](#sharp-mod-0-realized){.pf-ref}, [](#sharp-mod-1-realized){.pf-ref} and [](#sharp-mod-2-realized){.pf-ref} realize equality for every positive degree in the
 three residue classes modulo $3$.
+:::
+
 :::
 :::

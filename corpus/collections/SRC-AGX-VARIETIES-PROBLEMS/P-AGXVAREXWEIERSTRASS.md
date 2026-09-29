@@ -51,13 +51,16 @@ $$
 p(x)=x^3+g_2x+g_3.
 $$
 
-<1>1. The only point of $X$ on the line $z=0$ is
+::: pf
+
+::: {.pf-step #point-at-infinity-nonsingular}
+The only point of $X$ on the line $z=0$ is
 $$
 O=(0:1:0),
 $$
 and $O$ is nonsingular.
 
-::: {.proof}
+::: pf-proof
 On $z=0$ the equation $F=0$ becomes
 $$
 -x^3=0,
@@ -78,7 +81,10 @@ $$
 By the projective Jacobian criterion, $O$ is nonsingular.
 :::
 
-<1>2. A point $(a:b:1)\in X$ is singular if and only if
+:::
+
+::: {.pf-step #affine-singular-criterion}
+A point $(a:b:1)\in X$ is singular if and only if
 $$
 b=0,
 \qquad
@@ -87,7 +93,7 @@ p(a)=0,
 p'(a)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 On the affine chart $z=1$, the curve is
 $$
 f(x,y)
@@ -117,11 +123,14 @@ $$
 This proves the claim.
 :::
 
-<1>3. The curve $X$ is singular if and only if $p$ has a multiple root.
+:::
 
-::: {.proof}
-By step <1>1, the point at infinity is nonsingular, so every singular point
-of $X$ lies in the chart $z=1$. By step <1>2, such a singular point exists
+::: {.pf-step #singular-iff-multiple-root}
+The curve $X$ is singular if and only if $p$ has a multiple root.
+
+::: pf-proof
+By step [](#point-at-infinity-nonsingular){.pf-ref}, the point at infinity is nonsingular, so every singular point
+of $X$ lies in the chart $z=1$. By step [](#affine-singular-criterion){.pf-ref}, such a singular point exists
 exactly when there is some $a\in\CC$ satisfying
 $$
 p(a)=p'(a)=0.
@@ -131,14 +140,17 @@ and only if it is also a root of the derivative. Thus the displayed
 condition is equivalent to $p$ having a multiple root.
 :::
 
-<1>4. Equivalently,
+:::
+
+::: {.pf-step #discriminant-criterion}
+Equivalently,
 $$
 X\text{ is nonsingular}
 \quad\Longleftrightarrow\quad
 4g_2^3+27g_3^2\ne0.
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose first that $a$ is a multiple root of $p$. Then
 $$
 3a^2+g_2=0
@@ -185,13 +197,16 @@ Thus $p$ has a multiple root. Therefore its discriminant
 $$
 -4g_2^3-27g_3^2
 $$
-is nonzero exactly when $X$ is nonsingular, by step <1>3.
+is nonzero exactly when $X$ is nonsingular, by step [](#singular-iff-multiple-root){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the required equivalence, and step <1>4 records it in the
+::: pf-qed
+Step [](#singular-iff-multiple-root){.pf-ref} proves the required equivalence, and step [](#discriminant-criterion){.pf-ref} records it in the
 usual discriminant form.
 :::
+
+:::
+
 :::

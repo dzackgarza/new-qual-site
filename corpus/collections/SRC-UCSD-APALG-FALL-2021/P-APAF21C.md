@@ -30,8 +30,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If $A\in M_n(\mathbb C)$ is positive semidefinite, define its positive semidefinite square root by spectral calculus.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #psd-square-root-definition}
+If $A\in M_n(\mathbb C)$ is positive semidefinite, define its positive semidefinite square root by spectral calculus.
+
+::: pf-proof
 By the Hermitian spectral theorem,
 \[
 A=U\operatorname{diag}(\lambda_1,\ldots,\lambda_n)U^H,
@@ -44,28 +49,40 @@ A^{1/2}=U\operatorname{diag}(\sqrt{\lambda_1},\ldots,\sqrt{\lambda_n})U^H.
 Then $A^{1/2}$ is positive semidefinite and $(A^{1/2})^2=A$. Uniqueness follows because any positive semidefinite square root is diagonalized in the same eigenspaces and must have eigenvalues $\sqrt{\lambda_i}$.
 :::
 
-<1>2. For $A\in M_{m,n}(\mathbb C)$, define
+:::
+
+::: {.pf-step #modulus-definition}
+For $A\in M_{m,n}(\mathbb C)$, define
 \[
 |A|=(A^HA)^{1/2}\in M_n(\mathbb C).
 \]
-::: {.proof}
+
+::: pf-proof
 The matrix $A^HA$ is Hermitian positive semidefinite because
 \[
 x^HA^HAx=\|Ax\|^2\ge0.
 \]
-Hence <1>1 applies.
+Hence step [](#psd-square-root-definition){.pf-ref} applies.
 :::
 
-<1>3. The eigenvalues of $|A|$ are exactly the singular values of $A$, with multiplicity.
-::: {.proof}
-If the eigenvalues of $A^HA$ are $\mu_1,\ldots,\mu_n\ge0$, then by definition the singular values are $\sqrt{\mu_i}$. Spectral calculus in <1>1 shows that these are precisely the eigenvalues of $(A^HA)^{1/2}=|A|$.
 :::
 
-<1>4. For square $A$, one has
+::: {.pf-step #eigenvalues-of-modulus-are-singular-values}
+The eigenvalues of $|A|$ are exactly the singular values of $A$, with multiplicity.
+
+::: pf-proof
+If the eigenvalues of $A^HA$ are $\mu_1,\ldots,\mu_n\ge0$, then by definition the singular values are $\sqrt{\mu_i}$. Spectral calculus in step [](#psd-square-root-definition){.pf-ref} shows that these are precisely the eigenvalues of $(A^HA)^{1/2}=|A|$.
+:::
+
+:::
+
+::: {.pf-step #psd-iff-modulus-equals-self}
+For square $A$, one has
 \[
 A\ge0\iff |A|=A.
 \]
-::: {.proof}
+
+::: pf-proof
 If $A\ge0$, then $A=A^H$ and $A^HA=A^2$. Since $A$ itself is the positive semidefinite square root of $A^2$, uniqueness gives
 \[
 |A|=(A^2)^{1/2}=A.
@@ -73,7 +90,10 @@ If $A\ge0$, then $A=A^H$ and $A^HA=A^2$. Since $A$ itself is the positive semide
 Conversely, $|A|$ is positive semidefinite by definition, so if $A=|A|$, then $A\ge0$.
 :::
 
-<1>5. Let $r=\operatorname{rank}A$ and let
+:::
+
+::: {.pf-step #modulus-formulas-from-svd}
+Let $r=\operatorname{rank}A$ and let
 \[
 A=U\Sigma V^H
 \]
@@ -85,7 +105,8 @@ and
 \[
 |A^H|=U\operatorname{diag}(\sigma_1,\ldots,\sigma_r,0_{m-r})U^H.
 \]
-::: {.proof}
+
+::: pf-proof
 The SVD gives
 \[
 A^HA=V\Sigma^H\Sigma V^H,
@@ -95,9 +116,13 @@ AA^H=U\Sigma\Sigma^H U^H.
 The matrices $\Sigma^H\Sigma$ and $\Sigma\Sigma^H$ are diagonal, with diagonal entries $\sigma_1^2,\ldots,\sigma_r^2$ followed by the appropriate number of zeros. Taking their positive square roots yields the displayed formulas.
 :::
 
-<1>6. Therefore $|A|$ and $|A^H|$ have the same nonzero eigenvalues with the same multiplicities, and they are unitarily similar after adjoining zero blocks to equalize sizes.
-::: {.proof}
-The formulas in <1>5 show that both nonzero spectra are exactly
+:::
+
+::: {.pf-step #modulus-and-adjoint-modulus-similar}
+Therefore $|A|$ and $|A^H|$ have the same nonzero eigenvalues with the same multiplicities, and they are unitarily similar after adjoining zero blocks to equalize sizes.
+
+::: pf-proof
+The formulas in step [](#modulus-formulas-from-svd){.pf-ref} show that both nonzero spectra are exactly
 \[
 \sigma_1,\ldots,\sigma_r.
 \]
@@ -115,4 +140,13 @@ If $n\ge m$, similarly
 \]
 In particular, when $m=n$, the two matrices are unitarily similar without adding any zero block.
 :::
+
+:::
+
+::: pf-qed
+Step [](#psd-square-root-definition){.pf-ref} answers part (a); step [](#modulus-definition){.pf-ref} answers part (b); step [](#eigenvalues-of-modulus-are-singular-values){.pf-ref} answers part (c); step [](#psd-iff-modulus-equals-self){.pf-ref} answers part (d); step [](#modulus-and-adjoint-modulus-similar){.pf-ref} answers part (e).
+:::
+
+:::
+
 :::

@@ -30,11 +30,16 @@ Let $\phi ( n )$ be the Euler phi function, so $\phi ( n ) = \# ( \mathbb { Z } 
 
 
 ::: {.solution}
+
 Choose a prime $p$ dividing $\gcd(n,\phi(n))$.
 Then $p\mid n$ and $p\mid\phi(n)$.
 
-<1>1. Either $p^2\mid n$, or there is a prime $q\ne p$ with $q\mid n$ and $p\mid(q-1)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #case-dichotomy}
+Either $p^2\mid n$, or there is a prime $q\ne p$ with $q\mid n$ and $p\mid(q-1)$.
+
+::: pf-proof
 Write
 \[
 n=\prod_{r\mid n} r^{a_r}.
@@ -49,12 +54,16 @@ Otherwise $a_p=1$, so the factor $p^{a_p-1}$ contributes no factor of $p$ to $\p
 Because $p\mid\phi(n)$ and $p\nmid(p-1)$, some distinct prime $q\mid n$ must satisfy $p\mid(q-1)$.
 :::
 
-<1>2. If $p^2\mid n$, then
+:::
+
+::: {.pf-step #G-noncyclic-p2-case}
+If $p^2\mid n$, then
 \[
 G=C_p\times C_p\times C_{n/p^2}
 \]
 is a noncyclic group of order $n$.
-::: {.proof}
+
+::: pf-proof
 Its order is
 \[
 |G|=p\cdot p\cdot\frac{n}{p^2}=n.
@@ -63,9 +72,13 @@ The subgroup $C_p\times C_p\times\{1\}$ is not cyclic.
 A subgroup of a cyclic group must be cyclic, so $G$ itself cannot be cyclic.
 :::
 
-<1>3. Suppose instead that $p^2\nmid n$.
-Let $q\ne p$ be as in <1>1. There exists a nonabelian group $H$ of order $pq$.
-::: {.proof}
+:::
+
+::: {.pf-step #H-nonabelian-order-pq}
+Suppose instead that $p^2\nmid n$.
+Let $q\ne p$ be as in step [](#case-dichotomy){.pf-ref}. There exists a nonabelian group $H$ of order $pq$.
+
+::: pf-proof
 Since $\mathbb F_q^\times$ is cyclic of order $q-1$ and $p\mid(q-1)$, it has a subgroup
 \[
 \mu_p=\{a\in\mathbb F_q^\times:a^p=1\}
@@ -91,21 +104,32 @@ whereas
 These differ because $a\ne1$, so $H$ is nonabelian.
 :::
 
-<1>4. In the second case,
+:::
+
+::: {.pf-step #G-noncyclic-second-case}
+In the second case,
 \[
 G=H\times C_{n/(pq)}
 \]
 is a noncyclic group of order $n$.
-::: {.proof}
+
+::: pf-proof
 Because $p$ and $q$ are distinct primes dividing $n$, $pq\mid n$.
 Thus
 \[
 |G|=pq\cdot\frac{n}{pq}=n.
 \]
-The direct factor $H$ is nonabelian by <1>3, so $G$ is nonabelian.
+The direct factor $H$ is nonabelian by step [](#H-nonabelian-order-pq){.pf-ref}, so $G$ is nonabelian.
 Every cyclic group is abelian; hence $G$ is not cyclic.
 :::
 
+:::
+
+::: pf-qed
 In either case there exists a noncyclic group of order $n$.
+:::
+
+:::
+
 :::
 

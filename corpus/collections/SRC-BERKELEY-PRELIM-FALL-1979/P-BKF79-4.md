@@ -37,34 +37,44 @@ r=x^{250}+15x^{14}+x^2+5.
 :::
 
 ::: {.solution}
-<1>1. For every $r\in\ZZ[x]$,
+
+::: pf
+
+::: {.pf-step #r-minus-r3-in-ideal}
+For every $r\in\ZZ[x]$,
 $$
 r(x)-r(3)\in(x-3).
 $$
 
-::: {.proof}
+::: pf-proof
 By the factor theorem, the polynomial $r(x)-r(3)$ vanishes at $x=3$,
 so it is divisible by $x-3$ in $\ZZ[x]$.
 :::
 
-<1>2. For every $r\in\ZZ[x]$, there is a unique integer
+:::
+
+::: {.pf-step #alpha-exists}
+For every $r\in\ZZ[x]$, there is a unique integer
 $\alpha$ with $0\leq\alpha\leq6$ such that
 $$
 r(3)-\alpha\in(7).
 $$
 
-::: {.proof}
+::: pf-proof
 The integers $0,1,\ldots,6$ form a complete set of representatives
 for the residue classes modulo $7$. Choose $\alpha$ to represent the
 class of the integer $r(3)$.
 :::
 
-<1>3. The integer $\alpha$ from step <1>2 satisfies
+:::
+
+::: {.pf-step #part-one-done}
+The integer $\alpha$ from step [](#alpha-exists){.pf-ref} satisfies
 $$
 r-\alpha\in I.
 $$
 
-::: {.proof}
+::: pf-proof
 We can write
 $$
 r-\alpha
@@ -73,7 +83,7 @@ r-\alpha
 +
 \bigl(r(3)-\alpha\bigr).
 $$
-By step <1>1, the first summand lies in $(x-3)$, and by step <1>2 the
+By step [](#r-minus-r3-in-ideal){.pf-ref}, the first summand lies in $(x-3)$, and by step [](#alpha-exists){.pf-ref} the
 second lies in $(7)$. Hence their sum lies in
 $$
 (7,x-3)=I.
@@ -81,7 +91,10 @@ $$
 This proves part 1.
 :::
 
-<1>4. For
+:::
+
+::: {.pf-step #r3-congruence}
+For
 $$
 r=x^{250}+15x^{14}+x^2+5,
 $$
@@ -90,7 +103,7 @@ $$
 r(3)\equiv6\pmod7.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 3^6\equiv1\pmod7,
@@ -118,19 +131,24 @@ r(3)
 $$
 :::
 
-<1>5. For the polynomial in part 2,
+:::
+
+::: {.pf-step #alpha-value}
+For the polynomial in part 2,
 $$
 \boxed{\alpha=6}.
 $$
 
-::: {.proof}
-Step <1>4 shows that the unique representative of $r(3)$ modulo $7$
+::: pf-proof
+Step [](#r3-congruence){.pf-ref} shows that the unique representative of $r(3)$ modulo $7$
 in the range $0\leq\alpha\leq6$ is $6$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves part 1, and step <1>5 proves part 2.
+::: pf-qed
+Step [](#part-one-done){.pf-ref} proves part 1, and step [](#alpha-value){.pf-ref} proves part 2.
+:::
+
 :::
 :::

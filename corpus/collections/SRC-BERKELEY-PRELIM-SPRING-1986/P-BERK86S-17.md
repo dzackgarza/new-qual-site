@@ -40,7 +40,10 @@ $$
 $$
 and choose a basis $f_1,\ldots,f_d$ of $V$.
 
-<1>1. There is a matrix $M=(M_{ij})\in M_d(\CC)$ such that
+::: pf
+
+::: {.pf-step #differentiation-matrix}
+There is a matrix $M=(M_{ij})\in M_d(\CC)$ such that
 $$
 f_j'
 =
@@ -48,13 +51,16 @@ f_j'
 $$
 for every $1\leq j\leq d$.
 
-::: {.proof}
+::: pf-proof
 By hypothesis, differentiation maps $V$ into itself. Therefore each
 $f_j'$ is a unique linear combination of the chosen basis. Put its
 coefficients in the $j$th column of $M$.
 :::
 
-<1>2. For the row vector
+:::
+
+::: {.pf-step #f-prime-equation}
+For the row vector
 $$
 F(x)\coloneqq
 \begin{pmatrix}
@@ -66,8 +72,8 @@ $$
 F'(x)=F(x)M.
 $$
 
-::: {.proof}
-The $j$th component of $F'(x)$ is $f_j'(x)$. By step <1>1,
+::: pf-proof
+The $j$th component of $F'(x)$ is $f_j'(x)$. By step [](#differentiation-matrix){.pf-ref},
 $$
 f_j'(x)
 =
@@ -76,12 +82,15 @@ $$
 which is exactly the $j$th component of the row vector $F(x)M$.
 :::
 
-<1>3. For every $x\in\RR$,
+:::
+
+::: {.pf-step #f-exponential-formula}
+For every $x\in\RR$,
 $$
 F(x)=F(0)e^{xM}.
 $$
 
-::: {.proof}
+::: pf-proof
 Consider
 $$
 G(x)\coloneqq F(x)e^{-xM}.
@@ -92,7 +101,7 @@ $$
 =
 -Me^{-xM},
 $$
-step <1>2 gives
+step [](#f-prime-equation){.pf-ref} gives
 $$
 \begin{aligned}
 G'(x)
@@ -112,13 +121,16 @@ $$
 Right multiplication by $e^{xM}$ yields the claim.
 :::
 
-<1>4. For every $a,x\in\RR$,
+:::
+
+::: {.pf-step #translation-formula}
+For every $a,x\in\RR$,
 $$
 F(x+a)=F(x)e^{aM}.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#f-exponential-formula){.pf-ref},
 $$
 \begin{aligned}
 F(x+a)
@@ -134,7 +146,10 @@ The middle equality holds because both matrix exponentials are functions
 of the same matrix $M$.
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #translate-in-v}
+If
 $$
 f=\sum_{j=1}^d c_jf_j\in V,
 $$
@@ -144,7 +159,7 @@ x\longmapsto f(x+a)
 $$
 also belongs to $V$.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 c=
@@ -158,7 +173,7 @@ Then
 $$
 f(x)=F(x)c.
 $$
-By step <1>4,
+By step [](#translation-formula){.pf-ref},
 $$
 f(x+a)
 =
@@ -171,19 +186,24 @@ is a fixed complex linear combination of $f_1(x),\ldots,f_d(x)$. Hence
 the translated function lies in $V$.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #closed-under-translation-boxed}
+Therefore
 $$
 \boxed{V\text{ is closed under every real translation}}.
 $$
 
-::: {.proof}
-Step <1>5 applies to every $f\in V$ and every $a\in\RR$; the zero-space
-case was settled before step <1>1.
+::: pf-proof
+Step [](#translate-in-v){.pf-ref} applies to every $f\in V$ and every $a\in\RR$; the zero-space
+case was settled before step [](#differentiation-matrix){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the required conclusion.
+::: pf-qed
+Step [](#closed-under-translation-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

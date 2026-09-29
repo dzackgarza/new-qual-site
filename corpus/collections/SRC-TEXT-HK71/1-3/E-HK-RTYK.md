@@ -41,8 +41,12 @@ R=\begin{bmatrix}
 \end{bmatrix}.
 \]
 
-<1>1. Row reduction of $A$ yields $R$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Row reduction of $A$ yields $R$.
+
+::: pf-proof
 Applying elementary row operations to
 \[
 A=\begin{bmatrix}
@@ -64,10 +68,19 @@ Each step in Gaussian elimination is an elementary row operation, so this
 matrix is row-equivalent to $A$.
 :::
 
-<1>2. The displayed matrix is row-reduced.
-::: {.proof}
+:::
+
+::: pf-step
+The displayed matrix is row-reduced.
+
+::: pf-proof
 Its two nonzero rows have leading entries $1$ in columns $1$ and $2$, each
 pivot is the only nonzero entry in its column, the second pivot lies to the
 right of the first, and the zero row is last.
 :::
+
+:::
+
+:::
+
 :::

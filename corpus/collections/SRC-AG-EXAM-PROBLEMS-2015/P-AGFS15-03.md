@@ -43,8 +43,12 @@ U:=\overline X\cap D_+(F)
 \]
 is the required affine open subset.
 
-<1>1. There is a homogeneous polynomial \(F\) vanishing on \(Z\) and on no point of \(S\).
-::: {.proof}
+::: pf
+
+::: pf-step
+There is a homogeneous polynomial \(F\) vanishing on \(Z\) and on no point of \(S\).
+
+::: pf-proof
 Write
 \[
 S=\{p_1,\dots,p_r\}.
@@ -72,8 +76,12 @@ F\in I(Z)_d
 outside all these evaluation kernels. Then \(F|_Z=0\) and \(F(p_i)\ne0\) for every \(i\).
 :::
 
-<1>2. The principal open \(U=\overline X\cap D_+(F)\) is affine, lies in \(X\), and contains \(S\).
-::: {.proof}
+:::
+
+::: pf-step
+The principal open \(U=\overline X\cap D_+(F)\) is affine, lies in \(X\), and contains \(S\).
+
+::: pf-proof
 Let \(A\) be the homogeneous coordinate ring of \(\overline X\), so that
 \[
 \overline X=\operatorname{Proj}A.
@@ -94,4 +102,7 @@ S\subseteq U.
 \]
 Thus \(U\) is an affine open subset of \(X\) containing \(S\).
 :::
+
+:::
+
 :::

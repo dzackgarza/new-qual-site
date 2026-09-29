@@ -52,9 +52,12 @@ Which of the following are isomorphic as ringed spaces over $\CC$?
 ::: {.solution}
 Write the six spaces as $X_a,\ldots,X_f$ in the order listed.
 
-<1>1. The spaces $X_a$ and $X_c$ are isomorphic.
+::: pf
 
-::: {.proof}
+::: {.pf-step #xa-cong-xc}
+The spaces $X_a$ and $X_c$ are isomorphic.
+
+::: pf-proof
 The curve
 $$
 V(x_2-x_1^2,x_3-x_1^3)
@@ -80,12 +83,15 @@ with $\AA^1\sm\{0\}$.
 Thus $X_a\cong X_c$.
 :::
 
-<1>2. The space $X_f$ is isomorphic to $\AA^1\sm\{0\}$, and hence
+:::
+
+::: {.pf-step #xf-cong-punctured-line}
+The space $X_f$ is isomorphic to $\AA^1\sm\{0\}$, and hence
 $$
 X_a\cong X_c\cong X_f.
 $$
 
-::: {.proof}
+::: pf-proof
 On $X_f$ one has
 $$
 (x_1-x_2)(x_1+x_2)=1.
@@ -110,12 +116,15 @@ u\longmapsto
 \right).
 $$
 Both maps are regular and inverse to each other.
-Step <1>1 then gives the displayed three-way isomorphism.
+Step [](#xa-cong-xc){.pf-ref} then gives the displayed three-way isomorphism.
 :::
 
-<1>3. The spaces $X_b$ and $X_d$ are isomorphic.
+:::
 
-::: {.proof}
+::: {.pf-step #xb-cong-xd}
+The spaces $X_b$ and $X_d$ are isomorphic.
+
+::: pf-proof
 Set
 $$
 u=x_1+ix_2,
@@ -138,9 +147,12 @@ which is $X_d$ after renaming $u,v$ as the two affine coordinates.
 Therefore $X_b\cong X_d$.
 :::
 
-<1>4. The space $X_e$ is irreducible, whereas $X_b$ and $X_d$ are reducible.
+:::
 
-::: {.proof}
+::: {.pf-step #xe-irreducible-xb-xd-reducible}
+The space $X_e$ is irreducible, whereas $X_b$ and $X_d$ are reducible.
+
+::: pf-proof
 The defining polynomial of $X_e$ is
 $$
 y^2-x^2(x+1).
@@ -169,9 +181,12 @@ X_e\not\cong X_d.
 $$
 :::
 
-<1>5. The space $X_e$ is not isomorphic to $X_a$, $X_c$, or $X_f$.
+:::
 
-::: {.proof}
+::: {.pf-step #xe-not-cong-punctured-line-class}
+The space $X_e$ is not isomorphic to $X_a$, $X_c$, or $X_f$.
+
+::: pf-proof
 At the origin of $X_e$, let
 $$
 A=\CC[x,y]/(y^2-x^3-x^2),
@@ -191,7 +206,7 @@ $$
 \dim_{\CC}\mathfrak{n}/\mathfrak{n}^2=2.
 $$
 
-On the other hand, each of $X_a,X_c,X_f$ is isomorphic by steps <1>1--<1>2 to
+On the other hand, each of $X_a,X_c,X_f$ is isomorphic by steps [](#xa-cong-xc){.pf-ref} and [](#xf-cong-punctured-line){.pf-ref} to
 $$
 \AA^1\sm\{0\}
 =\Spec\CC[t,t^{-1}]
@@ -210,7 +225,10 @@ for the corresponding maximal ideal of each stalk.
 Hence the origin of $X_e$ cannot map to any point of the punctured-line class, and $X_e$ is not isomorphic to $X_a$, $X_c$, or $X_f$.
 :::
 
-<1>6. The complete list of isomorphism classes is
+:::
+
+::: {.pf-step #complete-classification}
+The complete list of isomorphism classes is
 $$
 \boxed{
 \{X_a,X_c,X_f\},
@@ -221,17 +239,19 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>1--<1>3 give the isomorphisms within the first two displayed classes.
-Step <1>4 separates $X_e$ from the reducible class $\{X_b,X_d\}$, and step <1>5 separates $X_e$ from $\{X_a,X_c,X_f\}$.
+::: pf-proof
+Steps [](#xa-cong-xc){.pf-ref}, [](#xf-cong-punctured-line){.pf-ref} and [](#xb-cong-xd){.pf-ref} give the isomorphisms within the first two displayed classes.
+Step [](#xe-irreducible-xb-xd-reducible){.pf-ref} separates $X_e$ from the reducible class $\{X_b,X_d\}$, and step [](#xe-not-cong-punctured-line-class){.pf-ref} separates $X_e$ from $\{X_a,X_c,X_f\}$.
 
 It remains to separate the first two classes.
-The spaces $X_a,X_c,X_f\cong\AA^1\sm\{0\}$ are irreducible, whereas $X_b$ and $X_d$ are reducible by step <1>4. Hence no member of the first class is isomorphic to a member of the second.
+The spaces $X_a,X_c,X_f\cong\AA^1\sm\{0\}$ are irreducible, whereas $X_b$ and $X_d$ are reducible by step [](#xe-irreducible-xb-xd-reducible){.pf-ref}. Hence no member of the first class is isomorphic to a member of the second.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 gives all and only the isomorphisms among the six ringed spaces.
+::: pf-qed
+Step [](#complete-classification){.pf-ref} gives all and only the isomorphisms among the six ringed spaces.
+:::
+
 :::
 :::

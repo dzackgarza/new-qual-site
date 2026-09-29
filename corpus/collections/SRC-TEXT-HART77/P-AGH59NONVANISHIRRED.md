@@ -36,7 +36,10 @@ Show that $f$ is irreducible, and hence that $Y$ is a nonsingular variety.
 ::: {.solution}
 The ground field $k$ is algebraically closed, as throughout the chapter.
 
-<1>1. If $f$ has a factorization
+::: pf
+
+::: {.pf-step #factorization-gives-common-zero}
+If $f$ has a factorization
 $$
 f=gh
 $$
@@ -45,16 +48,19 @@ $$
 P\in Z(g)\cap Z(h).
 $$
 
-::: {.proof}
+::: pf-proof
 Each of $Z(g)$ and $Z(h)$ is a nonempty projective plane curve.
 Indeed, a nonconstant homogeneous polynomial in three variables defines a positive-dimensional projective hypersurface.
 Exercise I.3.7, proved on [[P-AGH37HYPMEETS]], says that any two projective plane curves meet.
 Hence their intersection contains a point $P$.
 :::
 
-<1>2. At every point $P\in Z(g)\cap Z(h)$, all three first partial derivatives of $f=gh$ vanish.
+:::
 
-::: {.proof}
+::: {.pf-step #common-zero-kills-partials}
+At every point $P\in Z(g)\cap Z(h)$, all three first partial derivatives of $f=gh$ vanish.
+
+::: pf-proof
 For each coordinate $x_i\in\{x,y,z\}$, the product rule gives
 $$
 \frac{\partial f}{\partial x_i}
@@ -70,9 +76,12 @@ $$
 Since $f(P)=0$ as well, such a point is singular on the hypersurface.
 :::
 
-<1>3. The polynomial $f$ is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #f-irreducible}
+The polynomial $f$ is irreducible.
+
+::: pf-proof
 Suppose instead that $f$ is reducible.
 Because $f$ is homogeneous, it admits a factorization
 $$
@@ -81,19 +90,22 @@ $$
 with $g,h$ homogeneous of positive degree.
 To see that the factors may be taken homogeneous, factor $f$ into irreducibles in the graded UFD $k[x,y,z]$; the least- and greatest-degree terms of a product show that every irreducible factor of a homogeneous element is homogeneous.
 
-By step <1>1, choose
+By step [](#factorization-gives-common-zero){.pf-ref}, choose
 $$
 P\in Z(g)\cap Z(h).
 $$
-Step <1>2 makes all three first partial derivatives of $f$ vanish at $P$.
+Step [](#common-zero-kills-partials){.pf-ref} makes all three first partial derivatives of $f$ vanish at $P$.
 This contradicts the hypothesis of the problem.
 Therefore no such factorization exists and $f$ is irreducible.
 :::
 
-<1>4. The algebraic set $Y=Z(f)$ is a nonsingular projective variety.
+:::
 
-::: {.proof}
-Step <1>3 makes the principal homogeneous ideal $(f)$ prime.
+::: {.pf-step #y-nonsingular-variety}
+The algebraic set $Y=Z(f)$ is a nonsingular projective variety.
+
+::: pf-proof
+Step [](#f-irreducible){.pf-ref} makes the principal homogeneous ideal $(f)$ prime.
 Thus $Y$ is irreducible by the [[P-AGH24CORRESPONDENCE|projective ideal correspondence]], and it is nonempty because $f$ has positive degree.
 Hence $Y$ is a projective variety.
 
@@ -106,10 +118,12 @@ This is the assumed condition at every $P\in Y$.
 Thus $Y$ is nonsingular.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove irreducibility, and step <1>4 gives the asserted nonsingular-variety conclusion.
+::: pf-qed
+Steps [](#factorization-gives-common-zero){.pf-ref}, [](#common-zero-kills-partials){.pf-ref} and [](#f-irreducible){.pf-ref} prove irreducibility, and step [](#y-nonsingular-variety){.pf-ref} gives the asserted nonsingular-variety conclusion.
+:::
+
 :::
 :::
 

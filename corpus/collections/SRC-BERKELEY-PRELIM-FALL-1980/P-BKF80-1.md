@@ -30,7 +30,10 @@ b(x)\coloneqq\cos x,
 f(x,t)\coloneqq e^{t^2+xt}.
 $$
 
-<1>1. For every $x$,
+::: pf
+
+::: {.pf-step #f-prime-formula}
+For every $x$,
 $$
 F'(x)
 =-\sin x\,e^{\cos^2x+x\cos x}
@@ -38,7 +41,7 @@ F'(x)
 +\int_{\sin x}^{\cos x} t e^{t^2+xt}\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
 The functions $a$, $b$, and $f$ are smooth, so the Leibniz rule gives
 $$
 F'(x)
@@ -52,10 +55,13 @@ $$
 which yields the stated formula.
 :::
 
-<1>2. $F'(0)=\boxed{\dfrac{e-3}{2}}$.
+:::
 
-::: {.proof}
-Substituting $x=0$ into step <1>1 gives
+::: {.pf-step #f-prime-value}
+$F'(0)=\boxed{\dfrac{e-3}{2}}$.
+
+::: pf-proof
+Substituting $x=0$ into step [](#f-prime-formula){.pf-ref} gives
 $$
 F'(0)=-1+\int_0^1 t e^{t^2}\,dt.
 $$
@@ -71,9 +77,11 @@ F'(0)=-1+\frac{e-1}{2}=\frac{e-3}{2}.
 $$
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 gives the requested value.
+::: pf-qed
+Step [](#f-prime-value){.pf-ref} gives the requested value.
+:::
+
 :::
 :::

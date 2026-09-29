@@ -42,17 +42,21 @@ Prove that if u is not identically zero in $x ^ { 2 } + y ^ { 2 } < 1$ , then $\
 :::
 
 ::: {.solution}
+
 Let
 $$
 \Omega=\{(x,y)\in\RR^2:x^2+y^2<1\}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #integral-u-squared-positive}
+One has
 $$
 \int_\Omega u^2\,dA>0.
 $$
 
-::: {.proof}
+::: pf-proof
 The function $u$ is continuous and is not identically zero on
 $\Omega$. Hence there is a point at which $\abs{u}>0$, and continuity
 gives an open neighborhood on which $u^2$ is bounded below by a
@@ -60,7 +64,10 @@ positive constant. Therefore its integral over $\Omega$ is strictly
 positive.
 :::
 
-<1>2. The differential equation and boundary condition imply the
+:::
+
+::: {.pf-step #energy-identity}
+The differential equation and boundary condition imply the
 energy identity
 $$
 \lambda\int_\Omega u^2\,dA
@@ -70,7 +77,7 @@ $$
 a\int_{\partial\Omega}u^2\,ds.
 $$
 
-::: {.proof}
+::: pf-proof
 Multiply
 $$
 \Delta u+\lambda u=0
@@ -103,9 +110,12 @@ $$
 which rearranges to the asserted identity.
 :::
 
-<1>3. The right-hand side in step <1>2 is strictly positive.
+:::
 
-::: {.proof}
+::: {.pf-step #rhs-strictly-positive}
+The right-hand side in step [](#energy-identity){.pf-ref} is strictly positive.
+
+::: pf-proof
 Both terms are nonnegative because $a>0$. Suppose their sum were zero.
 Then
 $$
@@ -121,25 +131,31 @@ $$
 0=u_n=-au.
 $$
 Since $a>0$, this forces $u=0$, contradicting the hypothesis that $u$
-is not identically zero. Hence the right-hand side of step <1>2 is
+is not identically zero. Hence the right-hand side of step [](#energy-identity){.pf-ref} is
 strictly positive.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #lambda-positive}
+One has
 $$
 \boxed{\lambda>0}.
 $$
 
-::: {.proof}
-By step <1>1, the factor
+::: pf-proof
+By step [](#integral-u-squared-positive){.pf-ref}, the factor
 $\int_\Omega u^2\,dA$ on the left-hand side of the identity in step
-<1>2 is positive. By step <1>3, its right-hand side is positive.
+[](#energy-identity){.pf-ref} is positive. By step [](#rhs-strictly-positive){.pf-ref}, its right-hand side is positive.
 Dividing by $\int_\Omega u^2\,dA$ therefore gives $\lambda>0$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#lambda-positive){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

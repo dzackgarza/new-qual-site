@@ -36,14 +36,19 @@ Regarding the entries of $A ( m , n )$ as representing congruence classes (mod p
 
 
 ::: {.solution}
+
 Let
 \[
 k:=\min\{m,n,p\}.
 \]
 We prove that the rank is exactly $k$.
 
-<1>1. The upper-left $k\times k$ minor of $A(m,n)$ is a Vandermonde matrix with nonzero determinant in $\mathbb F_p$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #vandermonde-minor-nonzero}
+The upper-left $k\times k$ minor of $A(m,n)$ is a Vandermonde matrix with nonzero determinant in $\mathbb F_p$.
+
+::: pf-proof
 Its rows are indexed by $i=0,\dots,k-1$ and columns by $j=0,\dots,k-1$, so it is
 \[
 V=(j^i)_{0\le i,j\le k-1}.
@@ -62,21 +67,29 @@ Hence no factor is $0$ in $\mathbb F_p$, so $\det V\ne0$ in $\mathbb F_p$. There
 \]
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #rank-leq-m-n}
+One has
 \[
 \operatorname{rank}_{\mathbb F_p}A(m,n)\le m
 \qquad\text{and}\qquad
 \operatorname{rank}_{\mathbb F_p}A(m,n)\le n.
 \]
-::: {.proof}
+
+::: pf-proof
 These are the standard row and column bounds for the rank of an $m\times n$ matrix.
 :::
 
-<1>3. One also has
+:::
+
+::: {.pf-step #rank-leq-p}
+One also has
 \[
 \operatorname{rank}_{\mathbb F_p}A(m,n)\le p.
 \]
-::: {.proof}
+
+::: pf-proof
 After reducing modulo $p$, the column indexed by $j$ depends only on the residue class of $j$ modulo $p$, because its entries are
 \[
 1,j,j^2,\dots,j^{m-1}
@@ -84,18 +97,27 @@ After reducing modulo $p$, the column indexed by $j$ depends only on the residue
 in $\mathbb F_p$. Thus there are at most $p$ distinct columns. The column space is therefore spanned by at most $p$ columns, so its dimension is at most $p$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #rank-equals-min}
+One has
 \[
 \operatorname{rank}_{\mathbb F_p}A(m,n)=\min\{m,n,p\}.
 \]
-::: {.proof}
-By <1>2 and <1>3,
+
+::: pf-proof
+By steps [](#rank-leq-m-n){.pf-ref} and [](#rank-leq-p){.pf-ref},
 \[
 \operatorname{rank}_{\mathbb F_p}A(m,n)\le\min\{m,n,p\}=k.
 \]
-By <1>1, the reverse inequality holds. Hence
+By step [](#vandermonde-minor-nonzero){.pf-ref}, the reverse inequality holds. Hence
 \[
 \boxed{\operatorname{rank}_{\mathbb F_p}A(m,n)=\min\{m,n,p\}}.
 \]
 :::
+
+:::
+
+:::
+
 :::

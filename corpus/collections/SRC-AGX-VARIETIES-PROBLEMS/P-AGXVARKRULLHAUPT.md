@@ -59,9 +59,12 @@ $$
 Since $X$ is an affine variety, $A$ is a finitely generated integral
 $k$-algebra.
 
-<1>1. If $f^{-1}(0)$ is nonempty, then $f$ is a nonzero nonunit of $A$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-nonzero-nonunit}
+If $f^{-1}(0)$ is nonempty, then $f$ is a nonzero nonunit of $A$.
+
+::: pf-proof
 Because $f$ is nonconstant, it is not the zero element of $A$. Since $A$ is
 a domain, $f$ is therefore not a zero divisor.
 
@@ -73,13 +76,16 @@ Thus whenever the zero fibre has an irreducible component, $f$ is also a
 nonunit.
 :::
 
-<1>2. Let $Z$ be an irreducible component of $f^{-1}(0)$. Then there is a
+:::
+
+::: {.pf-step #z-equals-vp}
+Let $Z$ be an irreducible component of $f^{-1}(0)$. Then there is a
 prime ideal $\mathfrak p\subseteq A$, minimal over $(f)$, such that
 $$
 Z=V(\mathfrak p).
 $$
 
-::: {.proof}
+::: pf-proof
 The zero fibre is the closed subset
 $$
 f^{-1}(0)=V(f)\subseteq X.
@@ -90,27 +96,33 @@ component $Z$ is $V(\mathfrak p)$ for a prime $\mathfrak p$ minimal over
 $(f)$.
 :::
 
-<1>3. Every prime $\mathfrak p$ occurring in step <1>2 has
+:::
+
+::: {.pf-step #height-p-one}
+Every prime $\mathfrak p$ occurring in step [](#z-equals-vp){.pf-ref} has
 $$
 \height\mathfrak p=1.
 $$
 
-::: {.proof}
-By step <1>1, $f$ is neither a unit nor a zero divisor in the Noetherian ring
+::: pf-proof
+By step [](#f-nonzero-nonunit){.pf-ref}, $f$ is neither a unit nor a zero divisor in the Noetherian ring
 $A$. Krull's principal ideal theorem
 [[PR-VARHT|Hauptidealsatz]]
 therefore says that every prime minimal over $(f)$ has height one. This
-applies to the prime $\mathfrak p$ from step <1>2.
+applies to the prime $\mathfrak p$ from step [](#z-equals-vp){.pf-ref}.
 :::
 
-<1>4. Every irreducible component $Z$ of $f^{-1}(0)$ has
+:::
+
+::: {.pf-step #dim-z-formula}
+Every irreducible component $Z$ of $f^{-1}(0)$ has
 $$
 \boxed{
 \dim Z=\dim X-1.
 }
 $$
 
-::: {.proof}
+::: pf-proof
 For the prime $\mathfrak p$ corresponding to $Z$, one has
 $$
 \dim Z=\dim(A/\mathfrak p).
@@ -120,7 +132,7 @@ The affine height-dimension formula
 $$
 \dim(A/\mathfrak p)+\height\mathfrak p=\dim A.
 $$
-By step <1>3,
+By step [](#height-p-one){.pf-ref},
 $$
 \height\mathfrak p=1.
 $$
@@ -134,10 +146,13 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-If $f^{-1}(0)=\varnothing$, the assertion is vacuous. Otherwise steps
-<1>2--<1>4 prove the stated dimension for every irreducible component.
 :::
+
+::: pf-qed
+If $f^{-1}(0)=\varnothing$, the assertion is vacuous. Otherwise steps
+[](#z-equals-vp){.pf-ref}, [](#height-p-one){.pf-ref} and [](#dim-z-formula){.pf-ref} prove the stated dimension for every irreducible component.
+:::
+
+:::
+
 :::

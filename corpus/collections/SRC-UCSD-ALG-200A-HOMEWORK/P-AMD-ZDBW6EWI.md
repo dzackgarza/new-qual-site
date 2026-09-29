@@ -44,11 +44,15 @@ Show that $\operatorname{Aut}(G)$ is abelian and
 ::: {.solution}
 Fix a generator $g$ of $G$.
 
-<1>1. There is a group isomorphism
+::: pf
+
+::: {.pf-step #aut-iso-to-units}
+There is a group isomorphism
 \[
 (\mathbb Z/n\mathbb Z)^\times\cong\operatorname{Aut}(G).
 \]
-::: {.proof}
+
+::: pf-proof
 For an integer $a$ with $\gcd(a,n)=1$, define
 \[
 \sigma_a(x)=x^a.
@@ -67,14 +71,22 @@ Hence
 is a well-defined bijective homomorphism $(\mathbb Z/n\mathbb Z)^\times\to\operatorname{Aut}(G)$.
 :::
 
-<1>2. The group $\operatorname{Aut}(G)$ is abelian.
-::: {.proof}
-The ring $\mathbb Z/n\mathbb Z$ is commutative, so its group of units $(\mathbb Z/n\mathbb Z)^\times$ is abelian under multiplication.
-By <1>1, $\operatorname{Aut}(G)$ is isomorphic to this abelian group, hence is abelian.
 :::
 
-<1>3. The group $\operatorname{Aut}(G)$ has order $\varphi(n)$.
-::: {.proof}
+::: {.pf-step #aut-abelian}
+The group $\operatorname{Aut}(G)$ is abelian.
+
+::: pf-proof
+The ring $\mathbb Z/n\mathbb Z$ is commutative, so its group of units $(\mathbb Z/n\mathbb Z)^\times$ is abelian under multiplication.
+By step [](#aut-iso-to-units){.pf-ref}, $\operatorname{Aut}(G)$ is isomorphic to this abelian group, hence is abelian.
+:::
+
+:::
+
+::: {.pf-step #aut-order-phi-n}
+The group $\operatorname{Aut}(G)$ has order $\varphi(n)$.
+
+::: pf-proof
 The units in $\mathbb Z/n\mathbb Z$ are exactly the residue classes $[a]$ with
 \[
 \gcd(a,n)=1.
@@ -84,9 +96,17 @@ Therefore
 \[
 |(\mathbb Z/n\mathbb Z)^\times|=\varphi(n).
 \]
-Using <1>1,
+Using step [](#aut-iso-to-units){.pf-ref},
 \[
 |\operatorname{Aut}(G)|=\varphi(n).
 \]
+:::
+
+:::
+
+::: pf-qed
+Steps [](#aut-abelian){.pf-ref} and [](#aut-order-phi-n){.pf-ref} show that $\operatorname{Aut}(G)$ is abelian of order $\varphi(n)$.
+:::
+
 :::
 :::

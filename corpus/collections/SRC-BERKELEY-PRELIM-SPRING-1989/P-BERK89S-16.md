@@ -34,14 +34,17 @@ Prove that both $f$ and $g$ are polynomials.
 :::
 
 ::: {.solution}
-<1>1. If an entire function $H$ satisfies
+::: pf
+
+::: {.pf-step #infinity-limit-implies-polynomial}
+If an entire function $H$ satisfies
 $$
 H(z)\longrightarrow\infty
 \qquad(z\to\infty),
 $$
 then $H$ is a nonconstant polynomial.
 
-::: {.proof}
+::: pf-proof
 For sufficiently small nonzero $w$, the function $H(1/w)$ is nonzero and
 $$
 \frac{1}{H(1/w)}\longrightarrow0
@@ -53,13 +56,16 @@ function $H$ has a pole at infinity. An entire function with a pole at
 infinity is a polynomial. The displayed limit excludes a constant polynomial.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #g-tends-to-infinity}
+One has
 $$
 g(z)\longrightarrow\infty
 \qquad(z\to\infty).
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose not. Then there are a sequence $z_j$ with $\abs{z_j}\to\infty$ and
 a constant $M$ such that $\abs{g(z_j)}\leq M$ for every $j$. Passing to a
 subsequence, we may assume that $g(z_j)\to w$ for some $w\in\CC$. Continuity
@@ -70,19 +76,25 @@ $$
 contradicting the hypothesis that $f(g(z))\to\infty$ as $z\to\infty$.
 :::
 
-<1>3. The function $g$ is a nonconstant polynomial.
-
-::: {.proof}
-This follows immediately from steps <1>1 and <1>2.
 :::
 
-<1>4. One has
+::: {.pf-step #g-is-polynomial}
+The function $g$ is a nonconstant polynomial.
+
+::: pf-proof
+This follows immediately from steps [](#infinity-limit-implies-polynomial){.pf-ref} and [](#g-tends-to-infinity){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #f-tends-to-infinity}
+One has
 $$
 f(w)\longrightarrow\infty
 \qquad(w\to\infty).
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose not. Then there are $w_j\in\CC$ with $\abs{w_j}\to\infty$ and a
 constant $M$ such that
 $$
@@ -90,7 +102,7 @@ $$
 $$
 for every $j$.
 
-By step <1>3, $g$ is a nonconstant complex polynomial. Hence for each $j$,
+By step [](#g-is-polynomial){.pf-ref}, $g$ is a nonconstant complex polynomial. Hence for each $j$,
 the fundamental theorem of algebra gives $z_j\in\CC$ such that
 $$
 g(z_j)=w_j.
@@ -107,16 +119,21 @@ which contradicts $f(g(z))\to\infty$ as $z\to\infty$. Thus the stated limit
 for $f$ holds.
 :::
 
-<1>5. Both $f$ and $g$ are polynomials.
-
-::: {.proof}
-Step <1>3 gives the assertion for $g$. Applying step <1>1 to the limit in
-step <1>4 gives the assertion for $f$.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #both-polynomials}
+Both $f$ and $g$ are polynomials.
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-proof
+Step [](#g-is-polynomial){.pf-ref} gives the assertion for $g$. Applying step [](#infinity-limit-implies-polynomial){.pf-ref} to the limit in
+step [](#f-tends-to-infinity){.pf-ref} gives the assertion for $f$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#both-polynomials){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

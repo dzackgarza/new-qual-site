@@ -54,7 +54,10 @@ U_{ii}=X_i,
 \phi_{ii}=\operatorname{id}_{X_i}.
 \]
 
-<1>1. On the disjoint union of underlying sets
+::: pf
+
+::: {.pf-step #sim-is-equivalence-relation}
+On the disjoint union of underlying sets
 \[
 S=\coprod_i|X_i|
 \]
@@ -68,7 +71,7 @@ y=\phi_{ij}(x).
 \]
 Then $\sim$ is an equivalence relation.
 
-::: {.proof}
+::: pf-proof
 Reflexivity follows from
 \[
 U_{ii}=X_i,
@@ -129,7 +132,10 @@ z
 Thus $x\sim z$.
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #psi-i-injective}
+Let
 \[
 |X|=S/\!\sim
 \]
@@ -143,7 +149,7 @@ be the quotient map, and put
 \]
 Each $\psi_i$ is injective.
 
-::: {.proof}
+::: pf-proof
 If
 \[
 x,x'\in X_i
@@ -159,13 +165,16 @@ x'=\phi_{ii}(x)=x.
 Thus $\psi_i$ is injective.
 :::
 
-<1>3. The image
+:::
+
+::: {.pf-step #vi-open-in-x}
+The image
 \[
 V_i:=\psi_i(X_i)
 \]
 is open in $|X|$.
 
-::: {.proof}
+::: pf-proof
 By definition of the quotient topology, it is enough to show that
 \[
 q^{-1}(V_i)
@@ -191,14 +200,17 @@ X_i
 Every $U_{ji}$ is open in $X_j$, so this is open in the disjoint-union topology.  Therefore $V_i$ is open.
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #psi-i-homeomorphism-onto-vi}
+The map
 \[
 \psi_i:X_i\longrightarrow V_i
 \]
 is a homeomorphism.
 
-::: {.proof}
-It is already a continuous bijection by <1>2 and the definition of the quotient topology.
+::: pf-proof
+It is already a continuous bijection by step [](#psi-i-injective){.pf-ref} and the definition of the quotient topology.
 We show it is open.
 
 Let
@@ -230,7 +242,10 @@ is open in $S$, so $\psi_i(W)$ is open in $|X|$.
 Hence $\psi_i$ is an open continuous bijection and therefore a homeomorphism onto $V_i$.
 :::
 
-<1>5. The opens $V_i$ cover $|X|$, and
+:::
+
+::: {.pf-step #vi-cover-and-overlap-formula}
+The opens $V_i$ cover $|X|$, and
 \[
 \boxed{
 V_i\cap V_j
@@ -247,7 +262,7 @@ Moreover,
 }
 \]
 
-::: {.proof}
+::: pf-proof
 The images cover because every equivalence class has a representative in some component $X_i$.
 
 A point of $V_i$ belongs to $V_j$ exactly when its representative
@@ -268,7 +283,10 @@ This proves both the intersection formula and
 \]
 :::
 
-<1>6. Transport the structure sheaf $\mathcal O_{X_i}$ along the homeomorphism
+:::
+
+::: {.pf-step #gi-sheaves-and-overlap-isos}
+Transport the structure sheaf $\mathcal O_{X_i}$ along the homeomorphism
 \[
 \psi_i:X_i\xrightarrow{\sim}V_i
 \]
@@ -280,14 +298,14 @@ The scheme isomorphisms $\phi_{ij}$ induce compatible sheaf isomorphisms
 \mathcal G_j|_{V_i\cap V_j}.
 \]
 
-::: {.proof}
+::: pf-proof
 Define
 \[
 \mathcal G_i=(\psi_i)_*\mathcal O_{X_i}
 \]
 on $V_i$, using the homeomorphism $\psi_i$.
 
-By <1>5, the overlap $V_i\cap V_j$ corresponds under $\psi_i$ to $U_{ij}$ and under $\psi_j$ to $U_{ji}$.
+By step [](#vi-cover-and-overlap-formula){.pf-ref}, the overlap $V_i\cap V_j$ corresponds under $\psi_i$ to $U_{ij}$ and under $\psi_j$ to $U_{ji}$.
 The scheme isomorphism
 \[
 \phi_{ij}:U_{ij}\xrightarrow{\sim}U_{ji}
@@ -305,7 +323,10 @@ and the triple-overlap cocycle
 imply the corresponding inverse and cocycle identities for these sheaf isomorphisms.
 :::
 
-<1>7. The local sheaves $\mathcal G_i$ glue to a sheaf of rings
+:::
+
+::: {.pf-step #gi-glue-to-ox}
+The local sheaves $\mathcal G_i$ glue to a sheaf of rings
 \[
 \mathcal O_X
 \]
@@ -316,15 +337,18 @@ on $|X|$, together with isomorphisms
 \mathcal G_i.
 \]
 
-::: {.proof}
+::: pf-proof
 Apply the sheaf-gluing theorem of Hartshorne II.1.22 to the open cover
 \[
 |X|=\bigcup_iV_i
 \]
-and the compatible sheaf isomorphisms from <1>6.
+and the compatible sheaf isomorphisms from step [](#gi-sheaves-and-overlap-isos){.pf-ref}.
 :::
 
-<1>8. The locally ringed space
+:::
+
+::: {.pf-step #x-is-scheme-psi-i-iso}
+The locally ringed space
 \[
 X=(|X|,\mathcal O_X)
 \]
@@ -334,7 +358,7 @@ is a scheme, and each
 \]
 is an isomorphism of schemes onto the open subscheme $V_i$.
 
-::: {.proof}
+::: pf-proof
 By construction,
 \[
 (V_i,\mathcal O_X|_{V_i})
@@ -347,7 +371,10 @@ Thus every $V_i$ is itself a scheme and $\psi_i$ is an isomorphism onto it.
 The opens $V_i$ cover $X$.  Each $X_i$ has an affine open cover, and transporting all those affine opens through the $\psi_i$ gives an affine open cover of $X$.  Hence $X$ is a scheme.
 :::
 
-<1>9. The maps $\psi_i$ satisfy all four required properties:
+:::
+
+::: {.pf-step #four-properties-hold}
+The maps $\psi_i$ satisfy all four required properties:
 \[
 \begin{aligned}
 &\psi_i:X_i\xrightarrow{\sim}V_i\subseteq X,\\
@@ -357,13 +384,16 @@ The opens $V_i$ cover $X$.  Each $X_i$ has an affine open cover, and transportin
 \end{aligned}
 \]
 
-::: {.proof}
-The first property is <1>8, and the remaining three are <1>5.
+::: pf-proof
+The first property is step [](#x-is-scheme-psi-i-iso){.pf-ref}, and the remaining three are step [](#vi-cover-and-overlap-formula){.pf-ref}.
 :::
 
-<1>10. The glued scheme is unique up to a unique isomorphism compatible with the maps $\psi_i$.
+:::
 
-::: {.proof}
+::: {.pf-step #glued-scheme-unique}
+The glued scheme is unique up to a unique isomorphism compatible with the maps $\psi_i$.
+
+::: pf-proof
 Suppose
 \[
 X'
@@ -419,7 +449,10 @@ FG=\operatorname{id}_{X'}.
 Thus $F$ is an isomorphism.  Any compatible isomorphism must agree with $F_i$ on every $V_i$, so it is unique.
 :::
 
-<1>11. If all $U_{ij}$ for $i\ne j$ are empty, then no distinct components are identified and
+:::
+
+::: {.pf-step #disjoint-union-case}
+If all $U_{ij}$ for $i\ne j$ are empty, then no distinct components are identified and
 \[
 \boxed{
 X=\coprod_iX_i
@@ -427,15 +460,18 @@ X=\coprod_iX_i
 \]
 is their disjoint union as a scheme.
 
-::: {.proof}
-The equivalence relation of <1>1 becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
+::: pf-proof
+The equivalence relation of step [](#sim-is-equivalence-relation){.pf-ref} becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
 
 There are no nontrivial overlap isomorphisms of structure sheaves to impose.  Thus $\mathcal O_X$ restricts independently to $\mathcal O_{X_i}$ on each open-and-closed component.  This is precisely the scheme-theoretic disjoint union.
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>9 construct the required scheme and maps, <1>10 gives the expected uniqueness, and <1>11 identifies the disjoint-union special case.
 :::
+
+::: pf-qed
+Steps [](#sim-is-equivalence-relation){.pf-ref}, [](#psi-i-injective){.pf-ref}, [](#vi-open-in-x){.pf-ref}, [](#psi-i-homeomorphism-onto-vi){.pf-ref}, [](#vi-cover-and-overlap-formula){.pf-ref}, [](#gi-sheaves-and-overlap-isos){.pf-ref}, [](#gi-glue-to-ox){.pf-ref}, [](#x-is-scheme-psi-i-iso){.pf-ref} and [](#four-properties-hold){.pf-ref} construct the required scheme and maps, step [](#glued-scheme-unique){.pf-ref} gives the expected uniqueness, and step [](#disjoint-union-case){.pf-ref} identifies the disjoint-union special case.
+:::
+
+:::
+
 :::

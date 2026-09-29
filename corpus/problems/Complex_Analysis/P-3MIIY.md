@@ -31,38 +31,62 @@ Compute the following integrals.
 ::: {.solution}
 **Goal:** Compute a batch of standard integrals: (i) $\int_0^\infty \frac{\sin x}{x}\,dx$; (ii) $\int_0^\infty \qty(\frac{\sin x}{x})^2\,dx$; (iii) $\int_0^\infty \frac{x^{a-1}}{(1+x)^2}\,dx$ for $0 < a < 2$; (iv) $\int_0^\infty \frac{\cos(ax) - \cos(bx)}{x^2}\,dx$ for $a, b > 0$; (v) $\int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx$ for $0 < a < n$; (vi) $\int_0^\infty \frac{\log x}{1 + x^n}\,dx$ for $n \ge 2$; (vii) $\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx$; (viii) $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$ for $a \in \CC$.
 
-<1>1. (i) $\int_0^\infty \frac{\sin x}{x}\,dx = \frac{\pi}{2}$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #sin-x-over-x-integral}
+(i) $\int_0^\infty \frac{\sin x}{x}\,dx = \frac{\pi}{2}$.
+
+::: pf-proof
 Integrate $e^{iz}/z$ over the indented semicircle in the upper half-plane: $\int_{\eps \le \abs{x} \le R} \frac{e^{ix}}{x}\,dx + \text{(arcs)} = 0$ by Cauchy's theorem (no poles inside).
-:::
 The small semicircle around 0 contributes $-i\pi$ (half of $-2\pi i \Res_0(1/z)$, with sign from indenting above); the large arc vanishes (Jordan's lemma); taking real parts and $\eps \to 0$, $R \to \infty$: $\int_\RR \frac{\cos x}{x}\,dx = 0$ (principal value) and $\int_\RR \frac{\sin x}{x}\,dx = \pi$.
 Since $\sin x/x$ is even: $\int_0^\infty \frac{\sin x}{x}\,dx = \pi/2$.
-
-<1>2. (ii) $\int_0^\infty \qty(\frac{\sin x}{x})^2\,dx = \frac{\pi}{2}$.
-::: {.proof}
-Use $\qty(\frac{\sin x}{x})^2 = \frac{1 - \cos 2x}{2x^2}$, so the integral is $\frac12 \int_0^\infty \frac{1 - \cos(2x)}{x^2}\,dx$.
 :::
+
+:::
+
+::: {.pf-step #sinc-squared-integral}
+(ii) $\int_0^\infty \qty(\frac{\sin x}{x})^2\,dx = \frac{\pi}{2}$.
+
+::: pf-proof
+Use $\qty(\frac{\sin x}{x})^2 = \frac{1 - \cos 2x}{2x^2}$, so the integral is $\frac12 \int_0^\infty \frac{1 - \cos(2x)}{x^2}\,dx$.
 By (iv) with $a = 0$, $b = 2$ (or by direct evaluation), $\int_0^\infty \frac{1 - \cos(2x)}{x^2}\,dx = \pi$, giving $\pi/2$.
 Alternatively, Feynman's trick: $\int_0^\infty \frac{1 - \cos(\lambda x)}{x^2}\,dx = \frac{\pi\lambda}{2}$ (differentiate w.r.t. $\lambda$, integrate $\int_0^\infty \sin(\lambda x)/x\,dx = \pi/2$).
-
-<1>3. (iii) $\int_0^\infty \frac{x^{a-1}}{(1+x)^2}\,dx = \frac{\pi(1-a)}{\sin(\pi a)}$ for $0 < a < 2$.
-::: {.proof}
-This is the Beta function: substituting $x = t/(1-t)$, $\int_0^\infty \frac{x^{a-1}}{(1+x)^2}\,dx = \int_0^1 t^{a-1}(1-t)^{1-a}\,dt = B(a, 2-a) = \Gamma(a)\Gamma(2-a) = \frac{\pi}{\sin(\pi a)} \cdot \qty(\text{using }\Gamma(2-a) = (1-a)\Gamma(1-a))$ — precisely $\Gamma(a)\Gamma(2-a) = \Gamma(a)(1-a)\Gamma(1-a) = (1-a)\frac{\pi}{\sin\pi a}$.
 :::
-So the integral equals $\frac{\pi(1-a)}{\sin(\pi a)}$, valid for $0 < a < 2$ (reflection formula; at $a = 1$ the formula gives $0/0$, limit $= 1$, correct as $\int_0^\infty 1/(1+x)^2\,dx = 1$).
 
-<1>4. (iv) $\int_0^\infty \frac{\cos(ax) - \cos(bx)}{x^2}\,dx = \frac{\pi}{2}(b - a)$ for $a, b > 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #beta-function-integral}
+(iii) $\int_0^\infty \frac{x^{a-1}}{(1+x)^2}\,dx = \frac{\pi(1-a)}{\sin(\pi a)}$ for $0 < a < 2$.
+
+::: pf-proof
+This is the Beta function: substituting $x = t/(1-t)$, $\int_0^\infty \frac{x^{a-1}}{(1+x)^2}\,dx = \int_0^1 t^{a-1}(1-t)^{1-a}\,dt = B(a, 2-a) = \Gamma(a)\Gamma(2-a) = \frac{\pi}{\sin(\pi a)} \cdot \qty(\text{using }\Gamma(2-a) = (1-a)\Gamma(1-a))$ — precisely $\Gamma(a)\Gamma(2-a) = \Gamma(a)(1-a)\Gamma(1-a) = (1-a)\frac{\pi}{\sin\pi a}$.
+So the integral equals $\frac{\pi(1-a)}{\sin(\pi a)}$, valid for $0 < a < 2$ (reflection formula; at $a = 1$ the formula gives $0/0$, limit $= 1$, correct as $\int_0^\infty 1/(1+x)^2\,dx = 1$).
+:::
+
+:::
+
+::: {.pf-step #cos-difference-integral}
+(iv) $\int_0^\infty \frac{\cos(ax) - \cos(bx)}{x^2}\,dx = \frac{\pi}{2}(b - a)$ for $a, b > 0$.
+
+::: pf-proof
 $\frac{\cos(ax) - \cos(bx)}{x^2} = \int_a^b \frac{\sin(tx)}{x}\,dt$, so by Fubini and (i), the integral equals $\int_a^b \frac{\pi}{2}\,dt = \frac{\pi}{2}(b - a)$.
 :::
 
-<1>5. (v) $\int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx = \frac{\pi}{n\sin(\pi a/n)}$ for $0 < a < n$.
-::: {.proof}
+:::
+
+::: {.pf-step #power-over-1-plus-xn}
+(v) $\int_0^\infty \frac{x^{a-1}}{1 + x^n}\,dx = \frac{\pi}{n\sin(\pi a/n)}$ for $0 < a < n$.
+
+::: pf-proof
 Sector contour of angle $2\pi/n$ as in the standard computation: the pole at $e^{i\pi/n}$ contributes, and the second ray picks up a factor $e^{2\pi i a/n}$; solving gives $\frac{\pi}{n\sin(\pi a/n)}$.
 :::
 
-<1>6. (vi) $\int_0^\infty \frac{\log x}{1 + x^n}\,dx = -\frac{\pi^2}{n^2}\cot\qty(\frac{\pi}{n})\csc\qty(\frac{\pi}{n})$ for $n \ge 2$.
-::: {.proof}
+:::
+
+::: {.pf-step #log-over-1-plus-xn}
+(vi) $\int_0^\infty \frac{\log x}{1 + x^n}\,dx = -\frac{\pi^2}{n^2}\cot\qty(\frac{\pi}{n})\csc\qty(\frac{\pi}{n})$ for $n \ge 2$.
+
+::: pf-proof
 For $0<a<n$, part (v) gives
 \[
 M(a)=\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx
@@ -85,13 +109,21 @@ At $a=1$ this is exactly
 \]
 :::
 
-<1>7. (vii) $\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx = -\frac{\pi}{4}$.
-::: {.proof}
+:::
+
+::: {.pf-step #log-over-1-plus-x2-squared}
+(vii) $\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx = -\frac{\pi}{4}$.
+
+::: pf-proof
 $H(a) = \int_0^\infty \frac{x^{a-1}}{(1+x^2)^2}\,dx = \frac{\pi}{2}\qty(1 - \frac a2)\csc\qty(\frac{\pi a}{2})$; differentiating at $a = 1$ (as in the companion computation) gives $-\pi/4$.
 :::
 
-<1>8. (viii) $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$ for $a \in \CC$.
-::: {.proof}
+:::
+
+::: {.pf-step #log-abs-integral}
+(viii) $\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$ for $a \in \CC$.
+
+::: pf-proof
 For $a=0$ the integral is $0$. Assume $a\ne0$. Choose a root $r$ of
 \[
 ar^2-2r+a=0
@@ -156,8 +188,10 @@ where $r$ is either root of $ar^2-2r+a=0$ with $|r|\le1$.
 For $a=0$, take $r=0$; the same formula gives $I(0)=0$.
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-<1>1–<1>8 evaluate all eight integrals.
 :::
+
+::: pf-qed
+Steps [](#sin-x-over-x-integral){.pf-ref}, [](#sinc-squared-integral){.pf-ref}, [](#beta-function-integral){.pf-ref}, [](#cos-difference-integral){.pf-ref}, [](#power-over-1-plus-xn){.pf-ref}, [](#log-over-1-plus-xn){.pf-ref}, [](#log-over-1-plus-x2-squared){.pf-ref} and [](#log-abs-integral){.pf-ref} evaluate all eight integrals.
+:::
+
 :::

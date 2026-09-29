@@ -35,8 +35,12 @@ Hint: $1 + n$, with $n$ a nilpotent element, is invertible.
 ::: {.solution}
 Let \(N\) denote the set of nilpotent elements of \(R\).
 
-<1>1. Every unit of \(R\) is central.
-::: {.proof}
+::: pf
+
+::: {.pf-step #units-central}
+Every unit of \(R\) is central.
+
+::: pf-proof
 Let \(u\in R^\times\).
 Conjugation by \(u\),
 \[
@@ -54,15 +58,19 @@ for every \(r\in R\), and therefore \(ur=ru\).
 Thus \(u\in Z(R)\).
 :::
 
-<1>2. Every nilpotent element of \(R\) is central.
-::: {.proof}
+:::
+
+::: {.pf-step #nilpotents-central}
+Every nilpotent element of \(R\) is central.
+
+::: pf-proof
 Let \(n\in N\), say \(n^m=0\).
 Then
 \[
 (1+n)^{-1}=1-n+n^2-\cdots+(-1)^{m-1}n^{m-1},
 \]
 so \(1+n\) is a unit.
-By <1>1, \(1+n\) is central.
+By step [](#units-central){.pf-ref}, \(1+n\) is central.
 Since \(1\) is central,
 \[
 n=(1+n)-1
@@ -74,8 +82,12 @@ N\subseteq Z(R).
 \]
 :::
 
-<1>3. The set \(N\) is an additive subgroup of \(R\).
-::: {.proof}
+:::
+
+::: {.pf-step #n-additive-subgroup}
+The set \(N\) is an additive subgroup of \(R\).
+
+::: pf-proof
 Clearly \(0\in N\), and if \(n^r=0\), then
 \[
 (-n)^r=(-1)^r n^r=0,
@@ -88,7 +100,7 @@ n^r=0,
 \qquad
 m^s=0.
 \]
-By <1>2, \(n\) and \(m\) are central and hence commute.
+By step [](#nilpotents-central){.pf-ref}, \(n\) and \(m\) are central and hence commute.
 Therefore the binomial theorem applies:
 \[
 (n+m)^{r+s-1}
@@ -103,10 +115,14 @@ and \(n+m\in N\).
 Thus \(N\) is an additive subgroup.
 :::
 
-<1>4. The set \(N\) absorbs multiplication from both sides by arbitrary elements of \(R\).
-::: {.proof}
+:::
+
+::: {.pf-step #n-absorbs-multiplication}
+The set \(N\) absorbs multiplication from both sides by arbitrary elements of \(R\).
+
+::: pf-proof
 Let \(n\in N\), say \(n^k=0\), and let \(r\in R\).
-By <1>2, \(n\) is central, so
+By step [](#nilpotents-central){.pf-ref}, \(n\) is central, so
 \[
 (rn)^k=r^k n^k=0.
 \]
@@ -114,9 +130,17 @@ Thus \(rn\in N\).
 Also \(nr=rn\), so \(nr\in N\).
 :::
 
-<1>5. Therefore \(N\) is a two-sided ideal of \(R\).
-::: {.proof}
-By <1>3, \(N\) is an additive subgroup, and by <1>4 it absorbs multiplication from either side by elements of \(R\).
+:::
+
+::: pf-step
+Therefore \(N\) is a two-sided ideal of \(R\).
+
+::: pf-proof
+By step [](#n-additive-subgroup){.pf-ref}, \(N\) is an additive subgroup, and by step [](#n-absorbs-multiplication){.pf-ref} it absorbs multiplication from either side by elements of \(R\).
 Hence \(N\triangleleft R\).
+:::
+
+:::
+
 :::
 :::

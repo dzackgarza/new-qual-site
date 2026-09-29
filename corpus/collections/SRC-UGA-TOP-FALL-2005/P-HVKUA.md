@@ -50,8 +50,12 @@ L=\{0\}\times[-1,1],
 \]
 so that $X=G\cup L$.
 
-<1>1. The graph $G$ is connected.
-::: {.proof}
+::: pf
+
+::: {.pf-step #graph-connected}
+The graph $G$ is connected.
+
+::: pf-proof
 The interval $(0,1]$ is connected, and the map
 \[
 \phi:(0,1]\longrightarrow\RR^2,
@@ -66,8 +70,12 @@ G=\phi((0,1])
 is connected.
 :::
 
-<1>2. One has $X=\overline G$.
-::: {.proof}
+:::
+
+::: {.pf-step #x-is-closure-of-g}
+One has $X=\overline G$.
+
+::: pf-proof
 First let $y\in[-1,1]$.
 Choose $\alpha\in\RR$ with
 \[
@@ -109,15 +117,23 @@ Therefore
 Hence $X=\overline G$.
 :::
 
-<1>3. The space $X$ is connected.
-::: {.proof}
-By <1>1, $G$ is connected.
-The closure of a connected subspace is connected, and by <1>2 that closure is $X$.
+:::
+
+::: {.pf-step #x-connected}
+The space $X$ is connected.
+
+::: pf-proof
+By step [](#graph-connected){.pf-ref}, $G$ is connected.
+The closure of a connected subspace is connected, and by step [](#x-is-closure-of-g){.pf-ref} that closure is $X$.
 Therefore $X$ is connected.
 :::
 
-<1>4. No path in $X$ joins a point of $L$ to a point of $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #no-path-joins}
+No path in $X$ joins a point of $L$ to a point of $G$.
+
+::: pf-proof
 Suppose to the contrary that
 \[
 \gamma:[0,1]\longrightarrow X
@@ -187,10 +203,23 @@ Thus $v$ takes the values $1$ and $-1$ along two sequences tending to $t_0$, con
 Therefore no such path exists.
 :::
 
-<1>5. Hence $X$ is not path connected.
-::: {.proof}
+:::
+
+::: {.pf-step #x-not-path-connected}
+Hence $X$ is not path connected.
+
+::: pf-proof
 Both $L$ and $G$ are nonempty.
-By <1>4, no point of $L$ can be joined by a path in $X$ to a point of $G$.
+By step [](#no-path-joins){.pf-ref}, no point of $L$ can be joined by a path in $X$ to a point of $G$.
 Therefore $X$ is not path connected.
 :::
+
+:::
+
+::: pf-qed
+Step [](#x-connected){.pf-ref} and step [](#x-not-path-connected){.pf-ref} show that $X$ is connected but not path connected.
+:::
+
+:::
+
 :::

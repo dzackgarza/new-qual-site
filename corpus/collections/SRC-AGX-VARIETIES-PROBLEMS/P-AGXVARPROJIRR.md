@@ -60,9 +60,12 @@ $$
 $$
 be the affine cone over $X$.
 
-<1>1. The affine cone $\widehat X$ is irreducible.
+::: pf
 
-::: {.proof}
+::: {.pf-step #cone-irreducible}
+The affine cone $\widehat X$ is irreducible.
+
+::: pf-proof
 Its coordinate ring is
 $$
 k[\widehat X]
@@ -74,7 +77,10 @@ set has integral-domain coordinate ring exactly when it is irreducible.
 Therefore $\widehat X$ is irreducible.
 :::
 
-<1>2. The punctured cone
+:::
+
+::: {.pf-step #punctured-cone-irreducible}
+The punctured cone
 $$
 \widehat X^\times
 \coloneqq
@@ -82,7 +88,7 @@ $$
 $$
 is a nonempty irreducible topological space.
 
-::: {.proof}
+::: pf-proof
 The origin is closed in affine space, so $\widehat X^\times$ is open in
 $\widehat X$. A nonempty open subset of an irreducible topological space is
 irreducible.
@@ -91,7 +97,10 @@ It is nonempty because $X$ is nonempty: any projective point of $X$ has a
 nonzero affine representative lying in $\widehat X$.
 :::
 
-<1>3. The projectivization map
+:::
+
+::: {.pf-step #q-continuous-surjective}
+The projectivization map
 $$
 q:\widehat X^\times\longrightarrow X,
 \qquad
@@ -101,7 +110,7 @@ q:\widehat X^\times\longrightarrow X,
 $$
 is continuous and surjective.
 
-::: {.proof}
+::: pf-proof
 Every point of $X$ has a nonzero homogeneous representative in the affine
 cone, so $q$ is surjective.
 
@@ -119,10 +128,13 @@ which is closed in the subspace $\widehat X^\times$. Thus inverse images of
 closed subsets are closed, so $q$ is continuous.
 :::
 
-<1>4. The projective variety $X$ is irreducible.
+:::
 
-::: {.proof}
-By step <1>2, $\widehat X^\times$ is irreducible. By step <1>3,
+::: {.pf-step #x-irreducible}
+The projective variety $X$ is irreducible.
+
+::: pf-proof
+By step [](#punctured-cone-irreducible){.pf-ref}, $\widehat X^\times$ is irreducible. By step [](#q-continuous-surjective){.pf-ref},
 $$
 X=q(\widehat X^\times)
 $$
@@ -133,10 +145,13 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 show that $V_+(P)$ is irreducible for every homogeneous
+::: pf-qed
+Steps [](#cone-irreducible){.pf-ref}, [](#punctured-cone-irreducible){.pf-ref}, [](#q-continuous-surjective){.pf-ref} and [](#x-irreducible){.pf-ref} show that $V_+(P)$ is irreducible for every homogeneous
 prime $P$ with $V_+(P)\neq\varnothing$.
 :::
+
+:::
+
 :::

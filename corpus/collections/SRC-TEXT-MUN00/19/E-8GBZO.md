@@ -24,16 +24,23 @@ Which one?
 
 ::: {.solution}
 For $f\colon A\to\prod_{\alpha\in J}X_\alpha$ with coordinate functions $f_\alpha=\pi_\alpha\circ f$, the theorem states that $f$ is continuous if and only if every $f_\alpha$ is continuous.
-<1>1. In the box topology, each projection $\pi_\alpha$ is continuous, so $\boxed{f\text{ continuous}\Rightarrow\text{every }f_\alpha\text{ continuous}}$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #forward-implication}
+In the box topology, each projection $\pi_\alpha$ is continuous, so $\boxed{f\text{ continuous}\Rightarrow\text{every }f_\alpha\text{ continuous}}$.
+
+::: pf-proof
 For $U$ open in $X_\alpha$, $\pi_\alpha^{-1}(U)=U\times\prod_{\beta\ne\alpha}X_\beta$ is a product of open sets, hence box-open.
 A composite of continuous maps is continuous.
 :::
 
-<1>2. The map $f\colon\mathbb R\to\mathbb R^\omega$, $f(t)=(t,t,t,\ldots)$, has continuous coordinates but is not continuous for the box topology.
+:::
 
-::: {.proof}
+::: {.pf-step #reverse-implication-fails}
+The map $f\colon\mathbb R\to\mathbb R^\omega$, $f(t)=(t,t,t,\ldots)$, has continuous coordinates but is not continuous for the box topology.
+
+::: pf-proof
 Each $f_n$ is the identity of $\mathbb R$.
 The set $B=\prod_{n\ge1}(-\frac1n,\frac1n)$ is box-open, and
 $$
@@ -42,9 +49,12 @@ $$
 which is not open in $\mathbb R$.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves the implication that holds, and step <1>2 shows that the other implication fails.
 :::
+
+::: pf-qed
+Step [](#forward-implication){.pf-ref} proves the implication that holds, and step [](#reverse-implication-fails){.pf-ref} shows that the other implication fails.
+:::
+
+:::
+
 :::

@@ -33,6 +33,7 @@ Show that $\{f_k\}_{k \geq 1}$ has a convergent subsequence in $L^2(\mathbb{R}^n
 :::
 
 ::: {.solution}
+
 Let $\mathcal F$ denote the unitary Fourier transform on $L^2(\mathbb R^n)$. For $R>0$, let
 \[
 P_Rh:=\mathbf1_{B_R}h
@@ -43,8 +44,12 @@ Q_Rh:=\mathcal F^{-1}(\mathbf1_{B_R}\widehat h).
 \]
 Thus $P_R$ truncates in physical space and $Q_R$ truncates in frequency space.
 
-<1>1. Approximate the sequence uniformly by doubly truncated functions.
-::: {.proof}
+::: pf
+
+::: {.pf-step #approximate-by-doubly-truncated}
+Approximate the sequence uniformly by doubly truncated functions.
+
+::: pf-proof
 For every $h\in L^2$,
 \[
 \begin{aligned}
@@ -79,8 +84,12 @@ The hypothesis therefore implies
 \]
 :::
 
-<1>2. Show that $P_RQ_R$ is compact.
-::: {.proof}
+:::
+
+::: pf-step
+Show that $P_RQ_R$ is compact.
+
+::: pf-proof
 Write
 \[
 P_RQ_R
@@ -109,9 +118,13 @@ P_RQ_R=A_R\mathcal F
 is compact as well.
 :::
 
-<1>3. Prove total boundedness of $\{f_k\}$.
-::: {.proof}
-Fix $\varepsilon>0$. By Step 1, choose $R$ so large that
+:::
+
+::: pf-step
+Prove total boundedness of $\{f_k\}$.
+
+::: pf-proof
+Fix $\varepsilon>0$. By step [](#approximate-by-doubly-truncated){.pf-ref}, choose $R$ so large that
 \[
 \sup_k\|f_k-P_RQ_Rf_k\|_2<\frac\varepsilon2.
 \]
@@ -128,8 +141,12 @@ For each $k$, choose a point of that finite net within $\varepsilon/2$ of $P_RQ_
 of $f_k$. Hence $\{f_k:k\ge1\}$ is totally bounded in $L^2(\mathbb R^n)$.
 :::
 
-<1>4. Extract a convergent subsequence.
-::: {.proof}
+:::
+
+::: pf-step
+Extract a convergent subsequence.
+
+::: pf-proof
 Every sequence in a totally bounded metric space has a Cauchy subsequence. Since $L^2(\mathbb R^n)$ is complete, that Cauchy subsequence converges in $L^2$.
 
 Therefore
@@ -137,4 +154,9 @@ Therefore
 \boxed{\{f_k\}_{k\ge1}\text{ has an }L^2\text{-convergent subsequence}.}
 \]
 :::
+
+:::
+
+:::
+
 :::

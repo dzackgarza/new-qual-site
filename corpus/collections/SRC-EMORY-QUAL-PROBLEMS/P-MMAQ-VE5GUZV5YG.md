@@ -45,10 +45,13 @@ For $n=1$, both $S_1$ and $H$ are trivial. The identity
 automorphism proves both assertions, with $S_0$ also
 the trivial group. Henceforth suppose $n\geq2$.
 
-<1>1. The left-coset action defines an injective homomorphism
+::: pf
+
+::: pf-step
+The left-coset action defines an injective homomorphism
 $\rho:S_n\longrightarrow\operatorname{Sym}(S_n/H)$.
 
-::: {.proof}
+::: pf-proof
 Left multiplication is well defined: replacing a
 representative $x$ by $xh$ with $h\in H$ does not change
 $gxH$. Multiplication by $g^{-1}$ is its inverse, and
@@ -70,10 +73,13 @@ Finally, for $n=2$ the group $H$ itself is trivial.
 Thus the action is faithful in every case.
 :::
 
-<1>2. Relabeling the cosets produces the required
+:::
+
+::: pf-step
+Relabeling the cosets produces the required
 automorphism $f$ and the isomorphism $H\cong S_{n-1}$.
 
-::: {.proof}
+::: pf-proof
 The set $S_n/H$ has $n$ elements. Choose a bijection
 with $\{1,\ldots,n\}$ that labels the coset $H$ by $n$.
 Through this bijection, $\rho$ becomes an injective
@@ -91,9 +97,12 @@ $H_n\to S_{n-1}$: any permutation of those letters
 extends uniquely by fixing $n$. This proves part (1).
 :::
 
-<1>3. The only subgroups containing $H$ are $H$ and $S_n$.
+:::
 
-::: {.proof}
+::: pf-step
+The only subgroups containing $H$ are $H$ and $S_n$.
+
+::: pf-proof
 It suffices to prove this for $H_n$, since $f$ bijects
 subgroups and preserves inclusion. Suppose
 $H_n\subsetneq J\leq S_n$ and choose $g\in J\setminus H_n$.
@@ -106,5 +115,9 @@ is the full stabilizer in $S_n$.
 Orbit-stabilizer gives
 $|J|=n|H_n|=n!$, hence $J=S_n$.
 This proves part (2) and, for $n\geq2$, maximality of $H$.
+:::
+
+:::
+
 :::
 :::

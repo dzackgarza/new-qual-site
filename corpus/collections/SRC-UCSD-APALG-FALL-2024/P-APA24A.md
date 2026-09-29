@@ -23,6 +23,7 @@ where $Y + Z = \{ y + z \mid y \in Y,\ z \in Z \}$.
 :::
 
 ::: {.solution}
+
 Let
 \[
 u_1,\ldots,u_r
@@ -37,18 +38,26 @@ u_1,\ldots,u_r,z_1,\ldots,z_q
 \]
 of $Z$.
 
-<1>1. The list
+::: pf
+
+::: {.pf-step #combined-list-spans}
+The list
 \[
 u_1,\ldots,u_r,y_1,\ldots,y_p,z_1,\ldots,z_q
 \]
 spans $Y+Z$.
-::: {.proof}
+
+::: pf-proof
 Every $w\in Y+Z$ has the form $w=y+z$ with $y\in Y$ and $z\in Z$.
 Expand $y$ in the chosen basis of $Y$ and $z$ in the chosen basis of $Z$. Their sum is therefore a linear combination of the displayed vectors.
 :::
 
-<1>2. The displayed list is linearly independent.
-::: {.proof}
+:::
+
+::: {.pf-step #combined-list-independent}
+The displayed list is linearly independent.
+
+::: pf-proof
 Suppose
 \[
 \sum_{i=1}^r a_i u_i+\sum_{j=1}^p b_jy_j+\sum_{k=1}^q c_kz_k=0.
@@ -78,12 +87,16 @@ u_1,\ldots,u_r,z_1,\ldots,z_q
 is a basis of $Z$, all $a_i$ and $c_k$ are also zero.
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \dim(Y+Z)=\dim Y+\dim Z-\dim(Y\cap Z).
 \]
-::: {.proof}
-By <1>1 and <1>2, the displayed list is a basis of $Y+Z$, so
+
+::: pf-proof
+By steps [](#combined-list-spans){.pf-ref} and [](#combined-list-independent){.pf-ref}, the displayed list is a basis of $Y+Z$, so
 \[
 \dim(Y+Z)=r+p+q.
 \]
@@ -102,4 +115,9 @@ Hence
 \]
 which equals $\dim(Y+Z)$.
 :::
+
+:::
+
+:::
+
 :::

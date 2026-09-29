@@ -53,12 +53,15 @@ $$
 h(t)\coloneqq\varphi_2(t)-\varphi_1(t).
 $$
 
-<1>1. At every $t\in(a,b)$ for which $h(t)=0$, one has
+::: pf
+
+::: {.pf-step #contact-derivative-positive}
+At every $t\in(a,b)$ for which $h(t)=0$, one has
 $$
 h'(t)>0.
 $$
 
-::: {.proof}
+::: pf-proof
 If $h(t)=0$, then
 $$
 \varphi_1(t)=\varphi_2(t)=x
@@ -76,14 +79,17 @@ v_2(x)-v_1(x)
 $$
 :::
 
-<1>2. There is $\delta>0$ such that
+:::
+
+::: {.pf-step #positive-just-after-t0}
+There is $\delta>0$ such that
 $$
 h(t)>0
 $$
 for every $t\in(t_0,t_0+\delta)$.
 
-::: {.proof}
-The hypothesis gives $h(t_0)=0$, and step <1>1 gives $h'(t_0)>0$.
+::: pf-proof
+The hypothesis gives $h(t_0)=0$, and step [](#contact-derivative-positive){.pf-ref} gives $h'(t_0)>0$.
 Hence
 $$
 \lim_{t\downarrow t_0}
@@ -96,15 +102,18 @@ For all sufficiently small $t-t_0>0$, the quotient is positive, and
 therefore $h(t)>0$.
 :::
 
-<1>3. In fact,
+:::
+
+::: {.pf-step #positive-throughout}
+In fact,
 $$
 h(t)>0
 $$
 for every $t\in(t_0,b)$.
 
-::: {.proof}
+::: pf-proof
 Suppose otherwise. Then there is $s\in(t_0,b)$ with $h(s)\leq0$.
-Choose $\delta>0$ as in step <1>2 with $t_0+\delta<s$. By continuity of
+Choose $\delta>0$ as in step [](#positive-just-after-t0){.pf-ref} with $t_0+\delta<s$. By continuity of
 $h$, there is at least one zero of $h$ in $[t_0+\delta,s]$. Let
 $$
 \tau
@@ -125,17 +134,20 @@ h'(\tau)
 \frac{h(\tau)-h(t)}{\tau-t}
 \leq0.
 $$
-But step <1>1 applies at the contact point $\tau$ and gives
+But step [](#contact-derivative-positive){.pf-ref} applies at the contact point $\tau$ and gives
 $h'(\tau)>0$, a contradiction.
 :::
 
-<1>4. Therefore, for every $t\in(t_0,b)$,
+:::
+
+::: {.pf-step #strict-inequality-boxed}
+Therefore, for every $t\in(t_0,b)$,
 $$
 \boxed{\varphi_1(t)<\varphi_2(t)}.
 $$
 
-::: {.proof}
-By the definition of $h$, step <1>3 says
+::: pf-proof
+By the definition of $h$, step [](#positive-throughout){.pf-ref} says
 $$
 \varphi_2(t)-\varphi_1(t)>0.
 $$
@@ -143,9 +155,11 @@ This is stronger than the required inequality
 $\varphi_1(t)\leq\varphi_2(t)$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the desired comparison.
+::: pf-qed
+Step [](#strict-inequality-boxed){.pf-ref} proves the desired comparison.
+:::
+
 :::
 :::

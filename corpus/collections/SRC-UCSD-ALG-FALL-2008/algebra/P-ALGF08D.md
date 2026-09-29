@@ -41,8 +41,12 @@ G:=\operatorname{Gal}(E/F),
 H:=\operatorname{Gal}(E/K).
 \]
 
-<1>1. The subgroup \(H\) is normal in \(G\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #h-normal-in-g}
+The subgroup \(H\) is normal in \(G\).
+
+::: pf-proof
 By hypothesis, \(G\) is abelian.
 Every subgroup of an abelian group is normal, so
 \[
@@ -50,8 +54,12 @@ H\triangleleft G.
 \]
 :::
 
-<1>2. The extension \(K/F\) is Galois.
-::: {.proof}
+:::
+
+::: pf-step
+The extension \(K/F\) is Galois.
+
+::: pf-proof
 The fundamental theorem of Galois theory for the finite Galois extension \(E/F\) states that an intermediate field \(K\) is Galois over \(F\) if and only if its corresponding subgroup
 \[
 H=\operatorname{Gal}(E/K)
@@ -60,7 +68,7 @@ is normal in
 \[
 G=\operatorname{Gal}(E/F).
 \]
-By <1>1, \(H\) is normal.
+By step [](#h-normal-in-g){.pf-ref}, \(H\) is normal.
 Therefore
 \[
 K/F
@@ -71,5 +79,9 @@ Moreover, the restriction map induces the canonical isomorphism
 \operatorname{Gal}(K/F)\cong G/H.
 \]
 Since \(K\) was arbitrary, every intermediate extension of \(E/F\) is Galois over \(F\).
+:::
+
+:::
+
 :::
 :::

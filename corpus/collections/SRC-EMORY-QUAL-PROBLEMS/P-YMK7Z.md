@@ -38,9 +38,12 @@ X^6=(X^2)(X^2)(X^2)=(X^3)(X^3)
 $$
 into irreducibles of $R$.
 
-<1>1. The ring $R$ is a domain whose units are exactly $F^\times$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #units-are-f-times}
+The ring $R$ is a domain whose units are exactly $F^\times$.
+
+::: pf-proof
 One has $R=F+X^2F[X]$. This set contains $0,1$ and
 is closed under subtraction. For $f,g\in R$, the
 coefficient of $X$ in $fg$ is $f_0g_1+f_1g_0=0$,
@@ -55,13 +58,16 @@ nonunit in $R$ has degree at least two: degree one
 is forbidden by the defining coefficient condition.
 :::
 
-<1>2. The displayed factorizations are into nonassociate irreducibles.
+:::
 
-::: {.proof}
+::: pf-step
+The displayed factorizations are into nonassociate irreducibles.
+
+::: pf-proof
 The elements $X^2$ and $X^3$ are nonzero nonunits.
 If either were a product of two nonunits, both factors
 would be nonzero and have degree at least two by
-step <1>1. Their product would then have degree
+step [](#units-are-f-times){.pf-ref}. Their product would then have degree
 at least four, a contradiction. Both monomials
 are therefore irreducible in $R$.
 
@@ -71,5 +77,9 @@ Consequently the two factorizations of $X^6$ have
 different irreducible factors and different lengths;
 they cannot agree up to units and order. This violates
 unique factorization, so $R$ is not a UFD.
+:::
+
+:::
+
 :::
 :::

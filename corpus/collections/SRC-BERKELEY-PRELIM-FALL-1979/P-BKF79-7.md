@@ -38,14 +38,18 @@ Show that $W$ is two-dimensional and $S$-invariant, and give an explicit basis.
 :::
 
 ::: {.solution}
-<1>1. A nonzero sequence $a=(a_1,a_2,\ldots)$ is a $\lambda$-eigenvector
+
+::: pf
+
+::: {.pf-step #eigenvector-recurrence}
+A nonzero sequence $a=(a_1,a_2,\ldots)$ is a $\lambda$-eigenvector
 of $S$ if and only if
 $$
 a_{n+1}=\lambda a_n
 $$
 for every $n\geq1$.
 
-::: {.proof}
+::: pf-proof
 The equation $S(a)=\lambda a$ is the coordinatewise equality
 $$
 (a_2,a_3,\ldots)
@@ -55,7 +59,10 @@ $$
 which is equivalent to the displayed recurrence.
 :::
 
-<1>2. For every $\lambda\in\CC$, the $\lambda$-eigenspace of $S$ is
+:::
+
+::: {.pf-step #eigenspace-formula}
+For every $\lambda\in\CC$, the $\lambda$-eigenspace of $S$ is
 $$
 \boxed{
 \operatorname{span}_{\CC}
@@ -63,8 +70,8 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#eigenvector-recurrence){.pf-ref},
 $$
 a_n=a_1\lambda^{n-1}
 $$
@@ -76,10 +83,13 @@ $$
 and this sequence is directly checked to satisfy $S(a)=\lambda a$.
 :::
 
-<1>3. A sequence in $W$ is uniquely determined by its first two
+:::
+
+::: {.pf-step #w-determined-by-first-two}
+A sequence in $W$ is uniquely determined by its first two
 coordinates.
 
-::: {.proof}
+::: pf-proof
 Given $x_1,x_2\in\CC$, the recurrence
 $$
 x_{n+2}=x_{n+1}+x_n
@@ -88,7 +98,10 @@ successively determines $x_3,x_4,\ldots$. Conversely, the resulting
 sequence satisfies the recurrence by construction.
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #phi-isomorphism}
+The map
 $$
 \Phi:W\longrightarrow\CC^2,
 \qquad
@@ -99,15 +112,18 @@ $$
 \boxed{\dim_{\CC}W=2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The recurrence is homogeneous and linear, so $W$ is a vector
-subspace. The map $\Phi$ is linear, and step <1>3 says exactly that
+subspace. The map $\Phi$ is linear, and step [](#w-determined-by-first-two){.pf-ref} says exactly that
 it is bijective.
 :::
 
-<1>5. The subspace $W$ is $S$-invariant.
+:::
 
-::: {.proof}
+::: {.pf-step #w-invariant}
+The subspace $W$ is $S$-invariant.
+
+::: pf-proof
 Let $x\in W$ and put $y=Sx$, so $y_n=x_{n+1}$. Then
 $$
 \begin{aligned}
@@ -120,7 +136,10 @@ $$
 Hence $y\in W$.
 :::
 
-<1>6. Set
+:::
+
+::: {.pf-step #alpha-beta-roots}
+Set
 $$
 \alpha=\frac{1+\sqrt5}{2},
 \qquad
@@ -133,14 +152,17 @@ $$
 \beta^2=\beta+1.
 $$
 
-::: {.proof}
+::: pf-proof
 The numbers $\alpha$ and $\beta$ are the two roots of
 $$
 r^2-r-1=0.
 $$
 :::
 
-<1>7. The sequences
+:::
+
+::: {.pf-step #u-v-in-w}
+The sequences
 $$
 u=(1,\alpha,\alpha^2,\ldots),
 \qquad
@@ -148,8 +170,8 @@ v=(1,\beta,\beta^2,\ldots)
 $$
 belong to $W$.
 
-::: {.proof}
-For $u$, step <1>6 gives
+::: pf-proof
+For $u$, step [](#alpha-beta-roots){.pf-ref} gives
 $$
 u_{n+2}
 =
@@ -164,7 +186,10 @@ $$
 The same calculation with $\beta$ proves the assertion for $v$.
 :::
 
-<1>8. The sequences $u$ and $v$ form the explicit basis
+:::
+
+::: {.pf-step #basis-of-w}
+The sequences $u$ and $v$ form the explicit basis
 $$
 \boxed{
 \{(1,\alpha,\alpha^2,\ldots),
@@ -173,13 +198,16 @@ $$
 $$
 of $W$.
 
-::: {.proof}
-By step <1>2, $u$ and $v$ are eigenvectors of $S$ with distinct
+::: pf-proof
+By step [](#eigenspace-formula){.pf-ref}, $u$ and $v$ are eigenvectors of $S$ with distinct
 eigenvalues $\alpha\neq\beta$, so they are linearly independent.
-Step <1>4 gives $\dim W=2$, hence they form a basis.
+Step [](#phi-isomorphism){.pf-ref} gives $\dim W=2$, hence they form a basis.
 :::
 
-<1>9. Define
+:::
+
+::: {.pf-step #f-initial-values}
+Define
 $$
 F_n
 \coloneqq
@@ -187,7 +215,7 @@ F_n
 $$
 Then $F_1=F_2=1$.
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 \alpha-\beta=\sqrt5
@@ -210,13 +238,16 @@ F_2
 $$
 :::
 
-<1>10. The sequence $(F_n)$ satisfies the Fibonacci recurrence
+:::
+
+::: {.pf-step #f-recurrence}
+The sequence $(F_n)$ satisfies the Fibonacci recurrence
 $$
 F_{n+2}=F_{n+1}+F_n.
 $$
 
-::: {.proof}
-By step <1>6,
+::: pf-proof
+By step [](#alpha-beta-roots){.pf-ref},
 $$
 \alpha^{n+2}=\alpha^{n+1}+\alpha^n
 $$
@@ -227,7 +258,10 @@ $$
 Subtracting and dividing by $\sqrt5$ gives the claim.
 :::
 
-<1>11. The Fibonacci numbers are
+:::
+
+::: {.pf-step #fibonacci-formula}
+The Fibonacci numbers are
 $$
 \boxed{
 f_n
@@ -241,17 +275,19 @@ f_n
 }
 $$
 
-::: {.proof}
-Steps <1>9--<1>10 show that $(F_n)$ satisfies the same recurrence and
+::: pf-proof
+Steps [](#f-initial-values){.pf-ref} and [](#f-recurrence){.pf-ref} show that $(F_n)$ satisfies the same recurrence and
 the same initial conditions as $(f_n)$. A second-order recurrence is
 uniquely determined by its first two terms, so $f_n=F_n$ for every
 $n\geq1$.
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 answers part 1, steps <1>4--<1>8 answer part 2, and step
-<1>11 answers part 3.
+::: pf-qed
+Step [](#eigenspace-formula){.pf-ref} answers part 1, steps [](#phi-isomorphism){.pf-ref}, [](#w-invariant){.pf-ref}, [](#alpha-beta-roots){.pf-ref}, [](#u-v-in-w){.pf-ref}, and [](#basis-of-w){.pf-ref} answer part 2, and step
+[](#fibonacci-formula){.pf-ref} answers part 3.
+:::
+
 :::
 :::

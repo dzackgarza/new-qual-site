@@ -26,18 +26,31 @@ Show that $\maxspec(R) \subseteq \spec(R)$, and give an example where the contai
 
 
 ::: {.solution}
-<1>1. Every maximal ideal of $R$ is prime.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #maximal-implies-prime}
+Every maximal ideal of $R$ is prime.
+
+::: pf-proof
 Let $\mathfrak m$ be a maximal ideal. Then $R/\mathfrak m$ is a field, hence an integral domain. Therefore $\mathfrak m$ is prime.
 :::
 
-<1>2. Hence $\maxspec(R)\subseteq\spec(R)$.
-::: {.proof}
-By definition, $\maxspec(R)$ is the set of maximal ideals and $\spec(R)$ is the set of prime ideals. The inclusion follows from <1>1.
 :::
 
-<1>3. The inclusion can be strict.
-::: {.proof}
+::: pf-step
+Hence $\maxspec(R)\subseteq\spec(R)$.
+
+::: pf-proof
+By definition, $\maxspec(R)$ is the set of maximal ideals and $\spec(R)$ is the set of prime ideals. The inclusion follows from step [](#maximal-implies-prime){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+The inclusion can be strict.
+
+::: pf-proof
 Take $R=\ZZ$. Since $\ZZ$ is an integral domain, $(0)$ is a prime ideal. It is not maximal because
 \[
 (0)\subsetneq (2)\subsetneq\ZZ.
@@ -49,11 +62,20 @@ Thus
 so $\maxspec(\ZZ)\subsetneq\spec(\ZZ)$.
 :::
 
-<1>4. Strictness is not automatic for every ring.
-::: {.proof}
+:::
+
+::: pf-step
+Strictness is not automatic for every ring.
+
+::: pf-proof
 If $R=k$ is a field, then $(0)$ is its only proper ideal, and it is both prime and maximal. Hence
 \[
 \maxspec(k)=\spec(k)=\{(0)\}.
 \]
 :::
+
+:::
+
+:::
+
 :::

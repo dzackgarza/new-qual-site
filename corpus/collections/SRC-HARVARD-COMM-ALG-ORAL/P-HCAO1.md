@@ -29,9 +29,12 @@ Show that $x_1, \ldots, x_n$ generate $M$.
 Let $N=Ax_1+\cdots+Ax_n\subseteq M$ and $Q=M/N$. As a quotient of the finitely
 generated module $M$, the module $Q$ is finitely generated.
 
-<1>1. $Q=\mathfrak mQ$ for every maximal ideal $\mathfrak m$ of $A$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #q-equals-mq}
+$Q=\mathfrak mQ$ for every maximal ideal $\mathfrak m$ of $A$.
+
+::: pf-proof
 By hypothesis the images of $x_1,\ldots,x_n$ span $M/\mathfrak mM$ over
 $A/\mathfrak m$, so $M=N+\mathfrak mM$. Taking the image in $Q=M/N$ gives
 $$
@@ -39,29 +42,37 @@ Q=(N+\mathfrak mM)/N=\mathfrak m(M/N)=\mathfrak mQ.
 $$
 :::
 
-<1>2. $Q_{\mathfrak m}=0$ for every maximal ideal $\mathfrak m$ of $A$.
+:::
 
-::: {.proof}
+::: {.pf-step #q-localizes-to-zero}
+$Q_{\mathfrak m}=0$ for every maximal ideal $\mathfrak m$ of $A$.
+
+::: pf-proof
 The module $Q_{\mathfrak m}$ is finitely generated over the local ring
-$(A_{\mathfrak m},\mathfrak mA_{\mathfrak m})$. Localizing step <1>1 gives
+$(A_{\mathfrak m},\mathfrak mA_{\mathfrak m})$. Localizing step [](#q-equals-mq){.pf-ref} gives
 $Q_{\mathfrak m}=(\mathfrak mA_{\mathfrak m})Q_{\mathfrak m}$, so Nakayama's
 lemma gives $Q_{\mathfrak m}=0$.
 :::
 
-<1>3. $Q=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #q-is-zero}
+$Q=0$.
+
+::: pf-proof
 If $Q\ne0$, the annihilator $\operatorname{Ann}_A(Q)$ of the finitely generated
 module $Q$ is a proper ideal, contained in some maximal ideal $\mathfrak m$.
-By step <1>2, $Q_{\mathfrak m}=0$, so each generator $q_i$ of $Q$ satisfies
+By step [](#q-localizes-to-zero){.pf-ref}, $Q_{\mathfrak m}=0$, so each generator $q_i$ of $Q$ satisfies
 $s_iq_i=0$ for some $s_i\notin\mathfrak m$. The product
 $s=\prod_is_i\notin\mathfrak m$ annihilates $Q$, contradicting
 $\operatorname{Ann}_A(Q)\subseteq\mathfrak m$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-By step <1>3, $M/N=0$, so $N=M$ and $x_1,\ldots,x_n$ generate $M$.
+::: pf-qed
+By step [](#q-is-zero){.pf-ref}, $M/N=0$, so $N=M$ and $x_1,\ldots,x_n$ generate $M$.
+:::
+
 :::
 :::

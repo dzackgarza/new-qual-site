@@ -39,7 +39,10 @@ $$
 \alpha\coloneqq\frac1{\sqrt2}.
 $$
 
-<1>1. The poles of $F$ in the open upper half-plane are
+::: pf
+
+::: {.pf-step #poles-and-residues}
+The poles of $F$ in the open upper half-plane are
 $$
 z_1=e^{i\pi/4}=\alpha(1+i),
 \qquad
@@ -54,7 +57,7 @@ $$
 (k=1,2).
 $$
 
-::: {.proof}
+::: pf-proof
 The zeros of $z^4+1$ are
 $$
 e^{i\pi/4},
@@ -70,12 +73,15 @@ the derivative of $z^4+1$ is $4z^3$ and none of these roots is zero.
 The simple-pole residue formula gives the stated residues.
 :::
 
-<1>2. If $C_R$ is the upper semicircle $\abs{z}=R$ with $R>1$, then
+:::
+
+::: {.pf-step #arc-vanishes}
+If $C_R$ is the upper semicircle $\abs{z}=R$ with $R>1$, then
 $$
 \lim_{R\to\infty}\int_{C_R}F(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
 On $C_R$ one has
 $$
 \abs{e^{iz}}=e^{-\operatorname{Im}z}\le1
@@ -95,7 +101,10 @@ $$
 $$
 :::
 
-<1>3. The exponential integral satisfies
+:::
+
+::: {.pf-step #exponential-integral-formula}
+The exponential integral satisfies
 $$
 \int_{-\infty}^{\infty}\frac{e^{ix}}{x^4+1}\,dx
 =
@@ -107,7 +116,7 @@ $$
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
 For $R>1$, apply the residue theorem to the positively oriented contour
 formed by $[-R,R]$ and $C_R$. It encloses exactly $z_1$ and $z_2$, so
 $$
@@ -123,10 +132,13 @@ $$
 \right).
 $$
 The real-axis integrand is absolutely integrable, and the semicircle term
-tends to $0$ by step <1>2. Letting $R\to\infty$ gives the identity.
+tends to $0$ by step [](#arc-vanishes){.pf-ref}. Letting $R\to\infty$ gives the identity.
 :::
 
-<1>4. The sum of the two residues is
+:::
+
+::: {.pf-step #residue-sum}
+The sum of the two residues is
 $$
 \operatorname{Res}(F,z_1)
 +
@@ -139,7 +151,7 @@ e^{-\alpha}
 \bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 z_1^3=z_2,
@@ -150,7 +162,7 @@ z_2^3=z_1,
 \qquad
 \frac1{z_1}=-z_2,
 $$
-step <1>1 gives
+step [](#poles-and-residues){.pf-ref} gives
 $$
 \operatorname{Res}(F,z_1)
 +
@@ -183,7 +195,10 @@ $$
 Substitution gives the stated residue sum.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #exponential-integral-value}
+Therefore
 $$
 \int_{-\infty}^{\infty}\frac{e^{ix}}{x^4+1}\,dx
 =
@@ -196,8 +211,8 @@ e^{-1/\sqrt2}
 \right).
 $$
 
-::: {.proof}
-Combine steps <1>3 and <1>4 and use
+::: pf-proof
+Combine steps [](#exponential-integral-formula){.pf-ref} and [](#residue-sum){.pf-ref} and use
 $\alpha=1/\sqrt2$:
 $$
 2\pi i
@@ -212,7 +227,10 @@ e^{-\alpha}
 $$
 :::
 
-<1>6. Hence
+:::
+
+::: {.pf-step #cosine-integral-boxed}
+Hence
 $$
 \boxed{
 \int_{-\infty}^{\infty}\frac{\cos x}{x^4+1}\,dx
@@ -227,15 +245,17 @@ e^{-1/\sqrt2}
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The cosine integral is the real part of the exponential integral in step
-<1>5. The quantity on the right-hand side of step <1>5 is real, so taking
+[](#exponential-integral-value){.pf-ref}. The quantity on the right-hand side of step [](#exponential-integral-value){.pf-ref} is real, so taking
 real parts gives exactly the displayed value.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the requested contour-integral evaluation.
+::: pf-qed
+Step [](#cosine-integral-boxed){.pf-ref} is the requested contour-integral evaluation.
+:::
+
 :::
 :::

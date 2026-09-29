@@ -35,8 +35,13 @@ Prove that $x^n = 0$.
 
 
 ::: {.solution}
-<1>1. If \(x\in M_n(\mathbb C)\) is nilpotent, then every eigenvalue of \(x\) is zero.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #eigenvalues-zero}
+If \(x\in M_n(\mathbb C)\) is nilpotent, then every eigenvalue of \(x\) is zero.
+
+::: pf-proof
 Choose \(m\ge1\) such that
 \[
 x^m=0.
@@ -52,10 +57,14 @@ Hence \(\lambda^m=0\), so
 Thus zero is the only eigenvalue of \(x\).
 :::
 
-<1>2. The characteristic polynomial of \(x\) is \(t^n\), and therefore \(x^n=0\).
-::: {.proof}
+:::
+
+::: {.pf-step #part-i-xn-zero}
+The characteristic polynomial of \(x\) is \(t^n\), and therefore \(x^n=0\).
+
+::: pf-proof
 Over \(\mathbb C\), the characteristic polynomial splits into linear factors and its roots are exactly the eigenvalues, counted with algebraic multiplicity.
-By <1>1 every eigenvalue is zero, so
+By step [](#eigenvalues-zero){.pf-ref} every eigenvalue is zero, so
 \[
 \chi_x(t)=t^n.
 \]
@@ -69,8 +78,12 @@ x^n=0.
 \]
 :::
 
-<1>3. Nilpotent similarity classes in \(M_4(\mathbb C)\) are in bijection with partitions of \(4\).
-::: {.proof}
+:::
+
+::: pf-step
+Nilpotent similarity classes in \(M_4(\mathbb C)\) are in bijection with partitions of \(4\).
+
+::: pf-proof
 Every nilpotent complex matrix has Jordan canonical form consisting entirely of Jordan blocks
 \[
 J_r(0).
@@ -79,8 +92,12 @@ Two nilpotent matrices are similar if and only if their multisets of Jordan bloc
 Thus a similarity class is determined exactly by a partition of the dimension \(4\).
 :::
 
-<1>4. There are exactly five nilpotent similarity classes in \(M_4(\mathbb C)\).
-::: {.proof}
+:::
+
+::: {.pf-step #part-ii-five-classes}
+There are exactly five nilpotent similarity classes in \(M_4(\mathbb C)\).
+
+::: pf-proof
 The partitions of \(4\) are
 \[
 4,
@@ -115,5 +132,13 @@ Therefore there are
 5
 \]
 similarity classes of nilpotent matrices in \(M_4(\mathbb C)\).
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-i-xn-zero){.pf-ref} answers part (i), and step [](#part-ii-five-classes){.pf-ref} answers part (ii).
+:::
+
 :::
 :::

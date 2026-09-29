@@ -31,8 +31,13 @@ Prove that a subset $A\subset B$ is relatively open in $B$ if and only if $A$ is
 :::
 
 ::: {.solution}
-<1>1. If $A$ is relatively open in $B$, then $A$ is open in $X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #relatively-open-implies-open}
+If $A$ is relatively open in $B$, then $A$ is open in $X$.
+
+::: pf-proof
 By definition of the subspace topology, relative openness of $A$ in $B$ means that there is an open set $U\subseteq X$ such that
 \[
 A=B\cap U.
@@ -41,8 +46,12 @@ The set $B$ is open in $X$ by hypothesis, and $U$ is open in $X$.
 Therefore their intersection $B\cap U=A$ is open in $X$.
 :::
 
-<1>2. If $A$ is open in $X$ and $A\subseteq B$, then $A$ is relatively open in $B$.
-::: {.proof}
+:::
+
+::: {.pf-step #open-implies-relatively-open}
+If $A$ is open in $X$ and $A\subseteq B$, then $A$ is relatively open in $B$.
+
+::: pf-proof
 Since $A\subseteq B$,
 \[
 A=B\cap A.
@@ -51,13 +60,22 @@ The second factor $A$ is open in $X$.
 Thus $A$ has the form $B\cap U$ for an open subset $U=A$ of $X$, which is exactly the definition of being open in the subspace $B$.
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+Hence
 \[
 A\text{ is open in }B
 \quad\Longleftrightarrow\quad
 A\text{ is open in }X.
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+Combine step [](#relatively-open-implies-open){.pf-ref} and step [](#open-implies-relatively-open){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

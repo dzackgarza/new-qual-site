@@ -50,8 +50,12 @@ We use two standard field-extension facts for finite-type schemes:
 
 These are the scheme forms of Stacks Project, Lemmas 33.8.9 and 33.6.4, respectively.
 
-<1>1. If $X_{\bar k}$ is irreducible, then $X_{k_s}$ is irreducible.
-::: {.proof}
+::: pf
+
+::: {.pf-step #xbark-irred-implies-xks-irred}
+If $X_{\bar k}$ is irreducible, then $X_{k_s}$ is irreducible.
+
+::: pf-proof
 Choose an embedding
 \[
 k_s\subseteq\bar k.
@@ -65,8 +69,12 @@ is surjective because $\Spec\bar k\to\Spec k_s$ is faithfully flat and hence sur
 The continuous image of an irreducible topological space is irreducible.  Hence irreducibility of $X_{\bar k}$ implies irreducibility of $X_{k_s}$.
 :::
 
-<1>2. If $X_{k_s}$ is irreducible, then $X_K$ is irreducible for every extension field $K/k$.
-::: {.proof}
+:::
+
+::: {.pf-step #xks-irred-implies-xk-irred}
+If $X_{k_s}$ is irreducible, then $X_K$ is irreducible for every extension field $K/k$.
+
+::: pf-proof
 This is the standard separable-closure criterion for geometric irreducibility.  The algebraic content is the following pair of facts.
 
 First, over a separably closed field, an irreducible scheme remains irreducible after every field extension: affinely, tensoring a ring with a unique minimal prime over a separably closed field with a field extension again has a unique minimal prime.
@@ -84,17 +92,25 @@ is surjective, so $X_K$ is irreducible.
 This is precisely the implication in the separable-closure test for geometric irreducibility.
 :::
 
-<1>3. The following are equivalent:
+:::
+
+::: {.pf-step #irreducibility-tfae}
+The following are equivalent:
 
 1. $X_{\bar k}$ is irreducible;
 2. $X_{k_s}$ is irreducible;
 3. $X_K$ is irreducible for every field extension $K/k$.
-::: {.proof}
-Step <1>1 proves $(1)\Rightarrow(2)$, and <1>2 proves $(2)\Rightarrow(3)$.  The implication $(3)\Rightarrow(1)$ is immediate by taking $K=\bar k$.
+
+::: pf-proof
+Step [](#xbark-irred-implies-xks-irred){.pf-ref} proves $(1)\Rightarrow(2)$, and step [](#xks-irred-implies-xk-irred){.pf-ref} proves $(2)\Rightarrow(3)$.  The implication $(3)\Rightarrow(1)$ is immediate by taking $K=\bar k$.
 :::
 
-<1>4. If $X_{\bar k}$ is reduced, then $X_{k_p}$ is reduced.
-::: {.proof}
+:::
+
+::: {.pf-step #xbark-reduced-implies-xkp-reduced}
+If $X_{\bar k}$ is reduced, then $X_{k_p}$ is reduced.
+
+::: pf-proof
 Embed the perfect closure $k_p$ into $\bar k$.  On an affine open $U=\Spec A\subseteq X$, the ring map
 \[
 A\otimes_k k_p
@@ -106,8 +122,12 @@ is injective because $k_p\to\bar k$ is an extension of fields and tensoring a $k
 If $A\otimes_k k_p$ had a nonzero nilpotent, its image would be a nonzero nilpotent in $A\otimes_k\bar k$, contradiction.  Hence every affine chart of $X_{k_p}$ is reduced.
 :::
 
-<1>5. If $X_{k_p}$ is reduced, then $X_K$ is reduced for every extension field $K/k$.
-::: {.proof}
+:::
+
+::: {.pf-step #xkp-reduced-implies-xk-reduced}
+If $X_{k_p}$ is reduced, then $X_K$ is reduced for every extension field $K/k$.
+
+::: pf-proof
 The field $k_p$ is perfect.  A reduced finite-type scheme over a perfect field is geometrically reduced: affinely, a reduced finitely generated algebra over a perfect field remains reduced after every field extension.
 
 Choose a common overfield $\Omega$ of $K$ and $k_p$.  The preceding fact gives that
@@ -121,17 +141,25 @@ On every affine chart of $X_K$, the base-change map to the corresponding affine 
 Equivalently, this is the perfect-closure criterion for geometric reducedness: finite purely inseparable extensions are exactly the obstruction, and they all embed in $k_p$.
 :::
 
-<1>6. The following are equivalent:
+:::
+
+::: {.pf-step #reducedness-tfae}
+The following are equivalent:
 
 1. $X_{\bar k}$ is reduced;
 2. $X_{k_p}$ is reduced;
 3. $X_K$ is reduced for every field extension $K/k$.
-::: {.proof}
-Step <1>4 proves $(1)\Rightarrow(2)$, and <1>5 proves $(2)\Rightarrow(3)$.  The implication $(3)\Rightarrow(1)$ is immediate by taking $K=\bar k$.
+
+::: pf-proof
+Step [](#xbark-reduced-implies-xkp-reduced){.pf-ref} proves $(1)\Rightarrow(2)$, and step [](#xkp-reduced-implies-xk-reduced){.pf-ref} proves $(2)\Rightarrow(3)$.  The implication $(3)\Rightarrow(1)$ is immediate by taking $K=\bar k$.
 :::
 
-<1>7. An integral scheme need not be geometrically irreducible.
-::: {.proof}
+:::
+
+::: {.pf-step #integral-not-geom-irreducible}
+An integral scheme need not be geometrically irreducible.
+
+::: pf-proof
 Take
 \[
 k=\mathbb R,
@@ -155,8 +183,12 @@ X_\mathbb C
 is reducible.  Hence $X$ is not geometrically irreducible.
 :::
 
-<1>8. An integral scheme need not be geometrically reduced.
-::: {.proof}
+:::
+
+::: {.pf-step #integral-not-geom-reduced}
+An integral scheme need not be geometrically reduced.
+
+::: pf-proof
 Let
 \[
 k=\mathbb F_p(u)
@@ -184,8 +216,12 @@ X_{k(u^{1/p})}
 is nonreduced.  Thus $X$ is not geometrically reduced.
 :::
 
-<1>9. There are integral schemes which are simultaneously neither geometrically irreducible nor geometrically reduced.
-::: {.proof}
+:::
+
+::: {.pf-step #integral-neither-example}
+There are integral schemes which are simultaneously neither geometrically irreducible nor geometrically reduced.
+
+::: pf-proof
 Let
 \[
 k=\mathbb F_p(u,v),
@@ -234,8 +270,12 @@ E\otimes_k\bar k
 This ring has more than one minimal prime and has nonzero nilpotents.  Therefore $X_{\bar k}$ is both reducible and nonreduced, so $X$ is neither geometrically irreducible nor geometrically reduced.
 :::
 
-<1>10. Q.E.D.
-::: {.proof}
-Step <1>3 proves part (a), step <1>6 proves part (b), and steps <1>7--<1>9 give the examples requested in part (c).
 :::
+
+::: pf-qed
+Step [](#irreducibility-tfae){.pf-ref} proves part (a), step [](#reducedness-tfae){.pf-ref} proves part (b), and steps [](#integral-not-geom-irreducible){.pf-ref}, [](#integral-not-geom-reduced){.pf-ref} and [](#integral-neither-example){.pf-ref} give the examples requested in part (c).
+:::
+
+:::
+
 :::

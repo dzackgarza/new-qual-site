@@ -34,9 +34,12 @@ with multiplicity.
 :::
 
 ::: {.solution}
-<1>1. The function maps $A$ into the unit disk and has a positive finite zero count.
+::: pf
 
-::: {.proof}
+::: pf-step
+The function maps $A$ into the unit disk and has a positive finite zero count.
+
+::: pf-proof
 The maximum modulus principle on the compact closed
 annulus gives $|f|\leq1$, with strict inequality in $A$
 because $f|_A$ is nonconstant [@SS03]. If $f$ had no
@@ -49,9 +52,12 @@ of the holomorphy domain unless $f$ vanishes identically
 on its component, by the identity theorem [@SS03].
 :::
 
-<1>2. Every point of the unit disk has exactly $N$ preimages in $A$, with multiplicity.
+:::
 
-::: {.proof}
+::: {.pf-step #every-point-n-preimages}
+Every point of the unit disk has exactly $N$ preimages in $A$, with multiplicity.
+
+::: pf-proof
 Give $\partial A$ the positive orientation, outer circle
 counterclockwise and inner circle clockwise. For a fixed
 $w$ with $|w|<1$ and $0\leq t\leq1$, one has
@@ -67,10 +73,13 @@ integral continuous in $t$, hence constant. Thus
 $N_w(1)=N_w(0)=N$.
 :::
 
-<1>3. A zero count of one is impossible.
+:::
 
-::: {.proof}
-Suppose $N=1$. Step <1>2 makes $f:A\to D$ bijective,
+::: pf-step
+A zero count of one is impossible.
+
+::: pf-proof
+Suppose $N=1$. Step [](#every-point-n-preimages){.pf-ref} makes $f:A\to D$ bijective,
 where $D$ is the unit disk, and every fiber point is
 simple. Hence $f'$ never vanishes in $A$, and its
 inverse $g:D\to A$ is holomorphic by the inverse
@@ -89,5 +98,9 @@ $$
 $$
 This contradiction excludes $N=1$. Together with
 $N\geq1$, it proves $N\geq2$.
+:::
+
+:::
+
 :::
 :::

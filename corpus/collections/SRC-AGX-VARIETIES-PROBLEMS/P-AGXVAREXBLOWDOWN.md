@@ -49,7 +49,10 @@ Is this finite? Dominant? Open? Closed? What are the fibers?
 ::: {.solution}
 Write $(u,v)$ for the coordinates on the target $\AA^2_k$.
 
-<1>1. For $(a,b)\in\AA^2(k)$, the fibers are
+::: pf
+
+::: {.pf-step #fibers-computation}
+For $(a,b)\in\AA^2(k)$, the fibers are
 $$
 \boxed{
 f^{-1}(a,b)
@@ -67,7 +70,7 @@ f(\AA^2_k)
 D(u)\cup\{(0,0)\}.
 $$
 
-::: {.proof}
+::: pf-proof
 A point $(x,y)$ belongs to the fiber over $(a,b)$ exactly when
 $$
 x=a,
@@ -89,10 +92,13 @@ $a=0$ and $b\neq0$ the fiber is empty. The displayed description of the
 image follows immediately.
 :::
 
-<1>2. The morphism $f$ is dominant.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #f-is-dominant}
+The morphism $f$ is dominant.
+
+::: pf-proof
+By step [](#fibers-computation){.pf-ref},
 $$
 D(u)\subseteq f(\AA^2_k).
 $$
@@ -108,10 +114,13 @@ $$
 Hence the image of $f$ is dense, which is exactly dominance.
 :::
 
-<1>3. The morphism $f$ is not finite.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #f-not-finite}
+The morphism $f$ is not finite.
+
+::: pf-proof
+By step [](#fibers-computation){.pf-ref},
 $$
 f^{-1}(0,0)=\{0\}\times\AA^1_k,
 $$
@@ -119,9 +128,12 @@ which is a positive-dimensional, hence infinite, fiber. A finite morphism has
 finite fibers. Therefore $f$ is not finite.
 :::
 
-<1>4. The morphism $f$ is not open.
+:::
 
-::: {.proof}
+::: {.pf-step #f-not-open}
+The morphism $f$ is not open.
+
+::: pf-proof
 The whole source $\AA^2_k$ is open. If $f$ were an open map, its image
 $$
 f(\AA^2_k)=D(u)\cup\{(0,0)\}
@@ -132,7 +144,7 @@ Let
 $$
 L=V(u)\cong\AA^1_k
 $$
-be the vertical coordinate line. Step <1>1 gives
+be the vertical coordinate line. Step [](#fibers-computation){.pf-ref} gives
 $$
 f(\AA^2_k)\cap L=\{(0,0)\}.
 $$
@@ -142,9 +154,12 @@ an infinite curve whose Zariski topology is cofinite
 open. This contradiction proves that $f$ is not open.
 :::
 
-<1>5. The morphism $f$ is not closed.
+:::
 
-::: {.proof}
+::: {.pf-step #f-not-closed}
+The morphism $f$ is not closed.
+
+::: pf-proof
 Consider the closed hyperbola
 $$
 H=V(xy-1)\subseteq\AA^2_k.
@@ -171,22 +186,28 @@ and therefore is not closed in $\AA^2_k$. Since $H$ is closed, $f$ is not a
 closed map.
 :::
 
-<1>6. The four requested properties are
+:::
+
+::: {.pf-step #summary-of-properties}
+The four requested properties are
 $$
 \boxed{
 \text{$f$ is dominant, but it is neither finite, open, nor closed.}
 }
 $$
 
-::: {.proof}
-Dominance is step <1>2, non-finiteness is step <1>3, failure of openness is
-step <1>4, and failure of closedness is step <1>5. The fibers were computed
-in step <1>1.
+::: pf-proof
+Dominance is step [](#f-is-dominant){.pf-ref}, non-finiteness is step [](#f-not-finite){.pf-ref}, failure of openness is
+step [](#f-not-open){.pf-ref}, and failure of closedness is step [](#f-not-closed){.pf-ref}. The fibers were computed
+in step [](#fibers-computation){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>6 answer every part of the problem.
 :::
+
+::: pf-qed
+Steps [](#fibers-computation){.pf-ref}, [](#f-is-dominant){.pf-ref}, [](#f-not-finite){.pf-ref}, [](#f-not-open){.pf-ref}, [](#f-not-closed){.pf-ref} and [](#summary-of-properties){.pf-ref} answer every part of the problem.
+:::
+
+:::
+
 :::

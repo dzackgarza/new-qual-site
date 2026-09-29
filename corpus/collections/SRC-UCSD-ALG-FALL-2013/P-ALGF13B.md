@@ -33,8 +33,12 @@ Prove that if $D[x]$ is a PID, then $D$ is a field.
 ::: {.solution}
 Let \(0\neq a\in D\). We prove that \(a\) is a unit.
 
-<1>1. The ideal \((a,x)\subseteq D[x]\) is principal.
-::: {.proof}
+::: pf
+
+::: pf-step
+The ideal \((a,x)\subseteq D[x]\) is principal.
+
+::: pf-proof
 By hypothesis \(D[x]\) is a principal ideal domain, so there exists \(f(x)\in D[x]\) such that
 \[
 (a,x)=(f).
@@ -42,8 +46,12 @@ By hypothesis \(D[x]\) is a principal ideal domain, so there exists \(f(x)\in D[
 Thus \(f\mid a\) and \(f\mid x\) in \(D[x]\).
 :::
 
-<1>2. The generator \(f\) is a unit of \(D[x]\).
-::: {.proof}
+:::
+
+::: {.pf-step #f-is-unit}
+The generator \(f\) is a unit of \(D[x]\).
+
+::: pf-proof
 Because \(f\mid a\) and \(a\neq0\) is constant, degree additivity in the domain \(D[x]\) gives
 \[
 \deg f=0.
@@ -65,9 +73,13 @@ fc=1.
 Thus \(f\) is a unit in \(D\), hence also in \(D[x]\).
 :::
 
-<1>3. The element \(a\) is a unit in \(D\).
-::: {.proof}
-By <1>2,
+:::
+
+::: {.pf-step #a-is-unit}
+The element \(a\) is a unit in \(D\).
+
+::: pf-proof
+By step [](#f-is-unit){.pf-ref},
 \[
 (a,x)=(f)=D[x].
 \]
@@ -82,8 +94,16 @@ Evaluating at \(x=0\) yields
 Hence \(a\) is a unit of \(D\).
 :::
 
-<1>4. Therefore \(D\) is a field.
-::: {.proof}
-Every nonzero element \(a\in D\) is a unit by <1>3, which is exactly the definition of a field for an integral domain.
+:::
+
+::: pf-step
+Therefore \(D\) is a field.
+
+::: pf-proof
+Every nonzero element \(a\in D\) is a unit by step [](#a-is-unit){.pf-ref}, which is exactly the definition of a field for an integral domain.
+:::
+
+:::
+
 :::
 :::

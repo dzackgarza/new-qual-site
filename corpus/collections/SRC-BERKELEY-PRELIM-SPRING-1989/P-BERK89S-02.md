@@ -44,7 +44,10 @@ K_r\coloneqq\ker A^r,
 $$
 where $A^0$ is the identity map.
 
-<1>1. The subspaces $K_r$ form an ascending chain
+::: pf
+
+::: {.pf-step #kernel-chain-stabilizes}
+The subspaces $K_r$ form an ascending chain
 $$
 K_0\subseteq K_1\subseteq K_2\subseteq\cdots,
 $$
@@ -54,7 +57,7 @@ K_j=K_r
 $$
 for every $j\geq r$.
 
-::: {.proof}
+::: pf-proof
 If $v\in K_r$, then $A^rv=0$, so
 $$
 A^{r+1}v=A(A^rv)=0.
@@ -73,7 +76,10 @@ so $v\in K_{r+1}$. Therefore $K_{r+2}=K_{r+1}$. Repeating this argument
 inductively gives $K_j=K_r$ for every $j\geq r$.
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #strict-chain-to-s}
+Let
 $$
 s\coloneqq\min\{r\geq0:K_r=V\}.
 $$
@@ -82,22 +88,25 @@ $$
 K_0\subsetneq K_1\subsetneq\cdots\subsetneq K_s=V.
 $$
 
-::: {.proof}
+::: pf-proof
 The integer $s$ exists because $A^m=0$, so $K_m=V$. By minimality of
 $s$, one has $K_r\neq V$ for every $r<s$.
 
-If $K_r=K_{r+1}$ for some $r<s$, step <1>1 would imply
+If $K_r=K_{r+1}$ for some $r<s$, step [](#kernel-chain-stabilizes){.pf-ref} would imply
 $K_s=K_r\neq V$, contradicting the definition of $s$. Thus every
 inclusion before $K_s$ is strict.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s-bound}
+One has
 $$
 s\leq n.
 $$
 
-::: {.proof}
-Since $K_0=\{0\}$ and each of the $s$ inclusions in step <1>2 is strict,
+::: pf-proof
+Since $K_0=\{0\}$ and each of the $s$ inclusions in step [](#strict-chain-to-s){.pf-ref} is strict,
 dimension increases by at least $1$ at each step. Therefore
 $$
 s
@@ -110,13 +119,16 @@ n.
 $$
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #an-zero-boxed}
+One has
 $$
 \boxed{A^n=0}.
 $$
 
-::: {.proof}
-By step <1>3, $s\leq n$. Since the kernel chain is ascending,
+::: pf-proof
+By step [](#s-bound){.pf-ref}, $s\leq n$. Since the kernel chain is ascending,
 $$
 V
 =
@@ -130,9 +142,11 @@ Hence $K_n=V$, which means $A^nv=0$ for every $v\in V$. Therefore
 $A^n=0$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-qed
+Step [](#an-zero-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

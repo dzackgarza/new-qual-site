@@ -37,7 +37,11 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The characteristic equation of the recurrence is
+
+::: pf
+
+::: {.pf-step #characteristic-roots}
+The characteristic equation of the recurrence is
 $$
 r^2-r+\frac12=0,
 $$
@@ -47,7 +51,7 @@ r_\pm=\frac{1\pm i}{2}
 =2^{-1/2}e^{\pm i\pi/4}.
 $$
 
-::: {.proof}
+::: pf-proof
 Substituting $x_n=r^n$ into
 $x_n=x_{n-1}-\frac12x_{n-2}$ gives
 $$
@@ -61,7 +65,10 @@ Their polar form follows from
 $\abs{1\pm i}=\sqrt2$ and arguments $\pm\pi/4$.
 :::
 
-<1>2. Every real solution has the form
+:::
+
+::: {.pf-step #general-solution-form}
+Every real solution has the form
 $$
 x_n
 =2^{-n/2}
@@ -72,8 +79,8 @@ A\cos\frac{n\pi}{4}
 $$
 for real constants $A,B$.
 
-::: {.proof}
-The two distinct characteristic roots in step <1>1 give the complex
+::: pf-proof
+The two distinct characteristic roots in step [](#characteristic-roots){.pf-ref} give the complex
 general solution
 $$
 x_n=C_+r_+^n+C_-r_-^n.
@@ -82,22 +89,28 @@ Taking real linear combinations of the conjugate roots gives exactly
 the displayed sine-cosine form.
 :::
 
-<1>3. The initial condition $x_0=1$ gives
+:::
+
+::: {.pf-step #constant-a}
+The initial condition $x_0=1$ gives
 $$
 A=1.
 $$
 
-::: {.proof}
-Setting $n=0$ in step <1>2 gives $x_0=A$.
+::: pf-proof
+Setting $n=0$ in step [](#general-solution-form){.pf-ref} gives $x_0=A$.
 :::
 
-<1>4. The initial condition $x_1=1$ then gives
+:::
+
+::: {.pf-step #constant-b}
+The initial condition $x_1=1$ then gives
 $$
 B=1.
 $$
 
-::: {.proof}
-Using $A=1$ from step <1>3,
+::: pf-proof
+Using $A=1$ from step [](#constant-a){.pf-ref},
 $$
 1=x_1
 =2^{-1/2}
@@ -109,7 +122,10 @@ $$
 Hence $B=1$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #closed-form}
+Therefore
 $$
 \boxed{
 x_n
@@ -123,18 +139,21 @@ x_n
 }
 $$
 
-::: {.proof}
-Substitute $A=B=1$ into step <1>2. The second expression follows from
+::: pf-proof
+Substitute $A=B=1$ into step [](#general-solution-form){.pf-ref}. The second expression follows from
 $$
 \cos\theta+\sin\theta
 =\sqrt2\cos\left(\theta-\frac\pi4\right).
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the unique sequence determined by the recurrence and
+::: pf-qed
+Step [](#closed-form){.pf-ref} gives the unique sequence determined by the recurrence and
 the two initial values.
 :::
+
+:::
+
 :::

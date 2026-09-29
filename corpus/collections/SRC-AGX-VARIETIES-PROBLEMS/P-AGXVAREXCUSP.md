@@ -59,14 +59,18 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The coordinate ring of $X$ is
+
+::: pf
+
+::: {.pf-step #coordinate-ring-ct2t3}
+The coordinate ring of $X$ is
 $$
 \boxed{
 A(X)\cong\CC[t^2,t^3]\subseteq\CC[t].
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Consider the homomorphism
 $$
 \phi:\CC[x,y]\longrightarrow\CC[t],
@@ -114,9 +118,12 @@ $$
 $$
 :::
 
-<1>2. The origin is the unique singular point of $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #origin-unique-singular}
+The origin is the unique singular point of $X$.
+
+::: pf-proof
 Let
 $$
 F(x,y)=x^3-y^2.
@@ -145,7 +152,10 @@ $$
 The origin lies on $X$, so it is the unique singular point.
 :::
 
-<1>3. The morphism
+:::
+
+::: {.pf-step #nu-finite-birational}
+The morphism
 $$
 \nu:\AA^1_\CC\longrightarrow X,
 \qquad
@@ -153,8 +163,8 @@ t\longmapsto(t^2,t^3),
 $$
 is finite and birational.
 
-::: {.proof}
-By step <1>1, the comorphism of $\nu$ is the inclusion
+::: pf-proof
+By step [](#coordinate-ring-ct2t3){.pf-ref}, the comorphism of $\nu$ is the inclusion
 $$
 \CC[t^2,t^3]\hookrightarrow\CC[t].
 $$
@@ -181,9 +191,12 @@ $$
 and $\nu$ is birational.
 :::
 
-<1>4. The normalization of $X$ is $\AA^1_\CC$.
+:::
 
-::: {.proof}
+::: {.pf-step #normalization-is-a1}
+The normalization of $X$ is $\AA^1_\CC$.
+
+::: pf-proof
 Let
 $$
 A=\CC[t^2,t^3]
@@ -192,7 +205,7 @@ K=\CC(t),
 $$
 and let $\overline A$ be the integral closure of $A$ in $K$.
 
-Step <1>3 shows that $\CC[t]$ is integral over $A$, so
+Step [](#nu-finite-birational){.pf-ref} shows that $\CC[t]$ is integral over $A$, so
 $$
 \CC[t]\subseteq\overline A.
 $$
@@ -217,9 +230,12 @@ $$
 and the normalization morphism is precisely $\nu$.
 :::
 
-<1>5. The germ $(X,0)$ is unibranch.
+:::
 
-::: {.proof}
+::: {.pf-step #germ-unibranch}
+The germ $(X,0)$ is unibranch.
+
+::: pf-proof
 The analytic branches of $X$ at the origin correspond to the irreducible
 factors of
 $$
@@ -259,12 +275,15 @@ Hence $y^2-x^3$ is irreducible in $\CC\{x,y\}$, so the germ has exactly one
 analytic branch. Thus $(X,0)$ is unibranch.
 :::
 
-<1>6. The normalization has exactly one point over the cusp:
+:::
+
+::: {.pf-step #fiber-over-cusp}
+The normalization has exactly one point over the cusp:
 $$
 \boxed{\nu^{-1}(0,0)=\{0\}.}
 $$
 
-::: {.proof}
+::: pf-proof
 The equations
 $$
 t^2=0,
@@ -273,13 +292,16 @@ t^3=0
 $$
 hold simultaneously exactly when $t=0$. Thus the unique point of the
 normalization lying over the singularity is the origin of $\AA^1$.
-This agrees with the unibranch computation in step <1>5.
+This agrees with the unibranch computation in step [](#germ-unibranch){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves the singular-point claim, step <1>5 proves the unibranch
-claim, and steps <1>3--<1>4 identify the normalization and its morphism.
 :::
+
+::: pf-qed
+Step [](#origin-unique-singular){.pf-ref} proves the singular-point claim, step [](#germ-unibranch){.pf-ref} proves the unibranch
+claim, and steps [](#nu-finite-birational){.pf-ref} and [](#normalization-is-a1){.pf-ref} identify the normalization and its morphism.
+:::
+
+:::
+
 :::

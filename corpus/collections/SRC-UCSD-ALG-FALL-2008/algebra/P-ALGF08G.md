@@ -32,8 +32,12 @@ Show that the polynomial ring over a commutative ring with identity has infinite
 Let \(A\) be a commutative ring with \(1\neq0\).
 We prove that \(A[x]\) has infinitely many maximal ideals.
 
-<1>1. For every field \(k\), the ring \(k[x]\) has infinitely many maximal ideals.
-::: {.proof}
+::: pf
+
+::: {.pf-step #field-poly-ring-infinitely-many-maximal-ideals}
+For every field \(k\), the ring \(k[x]\) has infinitely many maximal ideals.
+
+::: pf-proof
 The ring \(k[x]\) is a Euclidean domain, hence a PID and a UFD.
 Its nonzero maximal ideals are exactly the ideals
 \[
@@ -66,8 +70,12 @@ so \(g\) divides their difference \(1\), impossible for a nonconstant irreducibl
 Hence \(k[x]\) has infinitely many monic irreducibles, and therefore infinitely many maximal ideals.
 :::
 
-<1>2. The ring \(A[x]\) has a quotient isomorphic to \(k[x]\) for some field \(k\).
-::: {.proof}
+:::
+
+::: pf-step
+The ring \(A[x]\) has a quotient isomorphic to \(k[x]\) for some field \(k\).
+
+::: pf-proof
 Since \(A\neq0\) is a commutative ring with identity, it has a maximal ideal \(\mathfrak m\).
 Set
 \[
@@ -88,8 +96,12 @@ A[x]/\mathfrak m A[x]\cong k[x].
 \]
 :::
 
-<1>3. Distinct maximal ideals of \(k[x]\) pull back to distinct maximal ideals of \(A[x]\).
-::: {.proof}
+:::
+
+::: pf-step
+Distinct maximal ideals of \(k[x]\) pull back to distinct maximal ideals of \(A[x]\).
+
+::: pf-proof
 Let \(M\) be a maximal ideal of \(k[x]\).
 Since \(\pi\) is surjective,
 \[
@@ -106,6 +118,10 @@ so
 \[
 \pi^{-1}(M_1)\neq\pi^{-1}(M_2).
 \]
-Therefore the infinitely many maximal ideals of \(k[x]\) from <1>1 give infinitely many distinct maximal ideals of \(A[x]\).
+Therefore the infinitely many maximal ideals of \(k[x]\) from step [](#field-poly-ring-infinitely-many-maximal-ideals){.pf-ref} give infinitely many distinct maximal ideals of \(A[x]\).
+:::
+
+:::
+
 :::
 :::

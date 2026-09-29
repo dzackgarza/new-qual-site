@@ -40,7 +40,10 @@ For $n=3,4,6$, show that this embedding is an isomorphism onto the dihedral grou
 ::: {.solution}
 Write $\alpha=2^{1/n}$ and $G=\operatorname{Gal}(K/\mathbb Q)$.
 
-<1>1. Each $\sigma\in G$ determines a unique pair
+::: pf
+
+::: {.pf-step #sigma-determined-by-pair}
+Each $\sigma\in G$ determines a unique pair
 \[
 (a,b)\in \mathbb Z/n\mathbb Z\times(\mathbb Z/n\mathbb Z)^\times
 \]
@@ -48,12 +51,17 @@ by
 \[
 \sigma(\alpha)=\zeta_n^a\alpha,\qquad \sigma(\zeta_n)=\zeta_n^b.
 \]
-::: {.proof}
+
+::: pf-proof
 The conjugates of $\alpha$ are the roots $\zeta_n^a\alpha$ of $x^n-2$, and an automorphism sends the primitive $n$th root $\zeta_n$ to another primitive $n$th root. Since $K=\mathbb Q(\alpha,\zeta_n)$, the pair determines $\sigma$ uniquely.
 :::
 
-<1>2. This gives an injective homomorphism into the affine group.
-::: {.proof}
+:::
+
+::: pf-step
+This gives an injective homomorphism into the affine group.
+
+::: pf-proof
 If $\sigma_i$ corresponds to $(a_i,b_i)$, then
 \[
 (\sigma_1\sigma_2)(\alpha)=\zeta_n^{a_1+b_1a_2}\alpha,
@@ -64,11 +72,15 @@ Hence composition corresponds to
 \[
 (a_1,b_1)(a_2,b_2)=(a_1+b_1a_2,b_1b_2),
 \]
-the semidirect-product law. Injectivity follows from <1>1.
+the semidirect-product law. Injectivity follows from step [](#sigma-determined-by-pair){.pf-ref}.
 :::
 
-<1>3. For $n=3,4,6$, the embedding is onto and $G\cong D_n$.
-::: {.proof}
+:::
+
+::: pf-step
+For $n=3,4,6$, the embedding is onto and $G\cong D_n$.
+
+::: pf-proof
 For these three values, $\varphi(n)=2$ and
 \[
 (\mathbb Z/n\mathbb Z)^\times=\{\pm1\}.
@@ -87,8 +99,12 @@ G\cong (\mathbb Z/n\mathbb Z)\rtimes\{\pm1\}=D_n.
 \]
 :::
 
-<1>4. The degree formula $[K:\mathbb Q]=n\varphi(n)$ cannot be used for arbitrary $n$.
-::: {.proof}
+:::
+
+::: pf-step
+The degree formula $[K:\mathbb Q]=n\varphi(n)$ cannot be used for arbitrary $n$.
+
+::: pf-proof
 For example, when $n=8$,
 \[
 \sqrt2=\alpha^4\in\mathbb Q(\alpha),
@@ -97,4 +113,9 @@ For example, when $n=8$,
 \]
 Thus the two subfields have nontrivial intersection, so their degrees do not multiply.
 :::
+
+:::
+
+:::
+
 :::

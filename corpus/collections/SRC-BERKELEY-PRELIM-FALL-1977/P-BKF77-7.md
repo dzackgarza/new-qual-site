@@ -38,8 +38,12 @@ I_n=\int_0^\infty\frac{dx}{1+x^{2n}}.
 $$
 Since the integrand is even, the required integral is $2I_n$.
 
-<1>1. In the sector $0<\arg z<\pi/n$, the function $F(z)=1/(1+z^{2n})$ has the single simple pole $\zeta=e^{i\pi/(2n)}$, with residue $-\zeta/(2n)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+In the sector $0<\arg z<\pi/n$, the function $F(z)=1/(1+z^{2n})$ has the single simple pole $\zeta=e^{i\pi/(2n)}$, with residue $-\zeta/(2n)$.
+
+::: pf-proof
 Let
 $$
 F(z)=\frac1{1+z^{2n}},
@@ -72,8 +76,12 @@ $$
 $$
 :::
 
-<1>2. With $I_n(R)=\int_0^R(1+x^{2n})^{-1}\,dx$, the two radii of the sector contribute $\left(1-e^{i\pi/n}\right)I_n(R)$, and the arc contribution tends to $0$ as $R\to\infty$.
-::: {.proof}
+:::
+
+::: pf-step
+With $I_n(R)=\int_0^R(1+x^{2n})^{-1}\,dx$, the two radii of the sector contribute $\left(1-e^{i\pi/n}\right)I_n(R)$, and the arc contribution tends to $0$ as $R\to\infty$.
+
+::: pf-proof
 The integral along the positive real radius is
 $$
 I_n(R)=\int_0^R\frac{dx}{1+x^{2n}}.
@@ -103,8 +111,12 @@ $$
 which tends to $0$ as $R\to\infty$.
 :::
 
-<1>3. $\int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}=\frac\pi n\csc\left(\frac\pi{2n}\right)$.
-::: {.proof}
+:::
+
+::: pf-step
+$\int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}=\frac\pi n\csc\left(\frac\pi{2n}\right)$.
+
+::: pf-proof
 Letting $R\to\infty$ in the sector integral gives
 $$
 \left(1-e^{i\pi/n}\right)I_n
@@ -135,5 +147,9 @@ $$
 \int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}}
 =\frac\pi n\csc\left(\frac\pi{2n}\right).}
 $$
+:::
+
+:::
+
 :::
 :::

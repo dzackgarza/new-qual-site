@@ -42,33 +42,39 @@ $$
 \alpha\coloneqq\sqrt[3]{2}.
 $$
 
-<1>1. The polynomial
+::: pf
+
+::: {.pf-step #m-irreducible}
+The polynomial
 $$
 m(x)\coloneqq x^3-2
 $$
 is irreducible in $\QQ[x]$.
 
-::: {.proof}
+::: pf-proof
 Eisenstein's criterion applies with the prime $2$: every nonleading
 coefficient is divisible by $2$, while the constant coefficient $-2$ is
 not divisible by $4$.
 :::
 
-<1>2. Evaluation at $\alpha$ induces an isomorphism
+:::
+
+::: {.pf-step #isomorphism-with-quotient}
+Evaluation at $\alpha$ induces an isomorphism
 $$
 \QQ[x]/(x^3-2)
 \cong
 F.
 $$
 
-::: {.proof}
+::: pf-proof
 The evaluation homomorphism
 $$
 \operatorname{ev}_\alpha:\QQ[x]\to\CC,
 \qquad
 p(x)\longmapsto p(\alpha),
 $$
-has kernel $(x^3-2)$ by step <1>1, since $x^3-2$ is the minimal polynomial
+has kernel $(x^3-2)$ by step [](#m-irreducible){.pf-ref}, since $x^3-2$ is the minimal polynomial
 of $\alpha$ over $\QQ$. Every polynomial has a unique remainder
 $$
 a+bx+cx^2
@@ -80,33 +86,42 @@ $$
 The first isomorphism theorem gives the stated isomorphism.
 :::
 
-<1>3. The set $F$ is a field.
+:::
 
-::: {.proof}
-By step <1>1, the ideal $(x^3-2)$ is maximal in the PID $\QQ[x]$.
-Therefore $\QQ[x]/(x^3-2)$ is a field, and step <1>2 identifies it with
+::: {.pf-step #f-is-field}
+The set $F$ is a field.
+
+::: pf-proof
+By step [](#m-irreducible){.pf-ref}, the ideal $(x^3-2)$ is maximal in the PID $\QQ[x]$.
+Therefore $\QQ[x]/(x^3-2)$ is a field, and step [](#isomorphism-with-quotient){.pf-ref} identifies it with
 $F$.
 :::
 
-<1>4. Every element of $F$ has a unique expression
+:::
+
+::: {.pf-step #unique-representation}
+Every element of $F$ has a unique expression
 $$
 a+b\sqrt[3]{2}+c\sqrt[3]{4},
 \qquad
 a,b,c\in\QQ.
 $$
 
-::: {.proof}
+::: pf-proof
 Existence is the definition of $F$. For uniqueness, suppose
 $$
 a+b\alpha+c\alpha^2=0.
 $$
 Then the polynomial $a+bx+cx^2$ lies in the kernel of
-$\operatorname{ev}_\alpha$. By step <1>2 this kernel is $(x^3-2)$, but a
+$\operatorname{ev}_\alpha$. By step [](#isomorphism-with-quotient){.pf-ref} this kernel is $(x^3-2)$, but a
 nonzero polynomial of degree at most $2$ cannot be divisible by the
 degree-$3$ polynomial $x^3-2$. Hence $a=b=c=0$.
 :::
 
-<1>5. The requested inverse is
+:::
+
+::: {.pf-step #inverse-boxed}
+The requested inverse is
 $$
 \boxed{
 (1-\sqrt[3]{2})^{-1}
@@ -115,7 +130,7 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $\alpha^3=2$,
 $$
 \begin{aligned}
@@ -128,13 +143,15 @@ $$
 1.
 \end{aligned}
 $$
-The displayed inverse belongs to $F$ by step <1>4.
+The displayed inverse belongs to $F$ by step [](#unique-representation){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>3, <1>4, and <1>5 establish respectively the field property,
+::: pf-qed
+Steps [](#f-is-field){.pf-ref}, [](#unique-representation){.pf-ref}, and [](#inverse-boxed){.pf-ref} establish respectively the field property,
 uniqueness, and the requested inverse.
+:::
+
 :::
 :::

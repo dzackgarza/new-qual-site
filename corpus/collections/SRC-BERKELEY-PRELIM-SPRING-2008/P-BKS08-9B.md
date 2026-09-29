@@ -39,10 +39,13 @@ f(x)=\frac{x}{\sin x}
 $$
 for $x\ne0$.
 
-<1>1. The singularity of $f$ at $0$ is removable, and the extension
+::: pf
+
+::: {.pf-step #removable-singularity}
+The singularity of $f$ at $0$ is removable, and the extension
 with $f(0)=1$ is analytic near $0$.
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 \frac{\sin x}{x}
@@ -54,13 +57,16 @@ therefore analytic there and equals the removable extension of
 $x/\sin x$.
 :::
 
-<1>2. Near $0$,
+:::
+
+::: {.pf-step #taylor-expansion}
+Near $0$,
 $$
 f(x)
 =1+\frac{x^2}{6}+\frac{7x^4}{360}+O(x^6).
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 u(x)=\frac{x^2}{6}-\frac{x^4}{120}+O(x^6).
@@ -89,14 +95,17 @@ f(x)
 $$
 :::
 
-<1>3. The fourth derivative of the analytic extension at $0$ is
+:::
+
+::: {.pf-step #fourth-derivative-value}
+The fourth derivative of the analytic extension at $0$ is
 $$
 f^{(4)}(0)=\frac{7}{15}.
 $$
 
-::: {.proof}
+::: pf-proof
 For an analytic function, the coefficient of $x^4$ in its Taylor
-series at $0$ is $f^{(4)}(0)/4!$. By step <1>2,
+series at $0$ is $f^{(4)}(0)/4!$. By step [](#taylor-expansion){.pf-ref},
 $$
 \frac{f^{(4)}(0)}{4!}=\frac7{360},
 $$
@@ -108,7 +117,10 @@ f^{(4)}(0)
 $$
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #limit-value}
+Hence
 $$
 \boxed{
 \lim_{x\to0}\frac{d^4}{dx^4}
@@ -117,15 +129,18 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>1, the removable extension of $f$ is analytic near $0$.
+::: pf-proof
+By step [](#removable-singularity){.pf-ref}, the removable extension of $f$ is analytic near $0$.
 Therefore $f^{(4)}$ is continuous at $0$. The required limit is thus
-$f^{(4)}(0)$, whose value is given by step <1>3.
+$f^{(4)}(0)$, whose value is given by step [](#fourth-derivative-value){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested evaluation.
 :::
+
+::: pf-qed
+Step [](#limit-value){.pf-ref} is the requested evaluation.
+:::
+
+:::
+
 :::

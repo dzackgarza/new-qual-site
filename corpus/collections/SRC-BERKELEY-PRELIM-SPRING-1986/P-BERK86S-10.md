@@ -39,7 +39,10 @@ e_j=(0,\ldots,0,1,0,\ldots,0)\in\CC^n
 $$
 be the $j$th coordinate idempotent.
 
-<1>1. Any surjective ring homomorphism
+::: pf
+
+::: {.pf-step #phi-of-one}
+Any surjective ring homomorphism
 $$
 \phi:\CC^n\to\CC
 $$
@@ -48,7 +51,7 @@ $$
 \phi(1,\ldots,1)=1.
 $$
 
-::: {.proof}
+::: pf-proof
 Surjectivity gives $x\in\CC^n$ with $\phi(x)=1$. Then
 $$
 \phi(1,\ldots,1)
@@ -62,7 +65,10 @@ Thus the conclusion holds even under a convention in which a ring
 homomorphism is not assumed a priori to preserve the identity.
 :::
 
-<1>2. There is a unique index $j$ such that
+:::
+
+::: {.pf-step #unique-index}
+There is a unique index $j$ such that
 $$
 \phi(e_j)=1,
 $$
@@ -72,7 +78,7 @@ $$
 $$
 for every $k\neq j$.
 
-::: {.proof}
+::: pf-proof
 Each $e_k$ is idempotent, so $\phi(e_k)$ is an idempotent of the field
 $\CC$. Hence
 $$
@@ -82,7 +88,7 @@ Moreover,
 $$
 e_1+\cdots+e_n=(1,\ldots,1),
 $$
-so step <1>1 gives
+so step [](#phi-of-one){.pf-ref} gives
 $$
 \phi(e_1)+\cdots+\phi(e_n)=1.
 $$
@@ -98,7 +104,10 @@ Hence two distinct coordinate idempotents cannot both map to $1$.
 Therefore the index is unique.
 :::
 
-<1>3. Fix the index $j$ from step <1>2 and define
+:::
+
+::: {.pf-step #phi-formula}
+Fix the index $j$ from step [](#unique-index){.pf-ref} and define
 $$
 \iota_j:\CC\to\CC^n,
 \qquad
@@ -113,7 +122,7 @@ $$
 \phi(z_1,\ldots,z_n)=\sigma(z_j).
 $$
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 (z_1,\ldots,z_n)
@@ -124,7 +133,7 @@ If $k\neq j$, then
 $$
 \iota_k(z_k)=e_k\iota_k(z_k),
 $$
-so step <1>2 gives
+so step [](#unique-index){.pf-ref} gives
 $$
 \phi(\iota_k(z_k))
 =
@@ -141,10 +150,13 @@ $$
 $$
 :::
 
-<1>4. The map $\sigma:\CC\to\CC$ from step <1>3 is a field
+:::
+
+::: {.pf-step #sigma-is-automorphism}
+The map $\sigma:\CC\to\CC$ from step [](#phi-formula){.pf-ref} is a field
 automorphism.
 
-::: {.proof}
+::: pf-proof
 The coordinate inclusion $\iota_j$ preserves addition and multiplication,
 so its composite with $\phi$ does as well. Also
 $$
@@ -153,16 +165,19 @@ $$
 \phi(e_j)
 =1
 $$
-by step <1>2. Thus $\sigma$ is a unital ring homomorphism from the field
+by step [](#unique-index){.pf-ref}. Thus $\sigma$ is a unital ring homomorphism from the field
 $\CC$ to itself. Its kernel is therefore zero, so it is injective.
 
-By step <1>3, the image of $\phi$ equals the image of $\sigma$. Since
+By step [](#phi-formula){.pf-ref}, the image of $\phi$ equals the image of $\sigma$. Since
 $\phi$ is surjective, $\sigma$ is surjective as well. Thus $\sigma$ is a
 bijection preserving addition and multiplication, hence a field
 automorphism of $\CC$.
 :::
 
-<1>5. Conversely, for every index $j$ and every
+:::
+
+::: {.pf-step #converse-works}
+Conversely, for every index $j$ and every
 $\sigma\in\Aut(\CC)$, the map
 $$
 \phi_{\sigma,j}(z_1,\ldots,z_n)
@@ -171,7 +186,7 @@ $$
 $$
 is a surjective ring homomorphism $\CC^n\to\CC$.
 
-::: {.proof}
+::: pf-proof
 The coordinate projection
 $$
 \pi_j:\CC^n\to\CC
@@ -186,7 +201,10 @@ $$
 is a surjective ring homomorphism.
 :::
 
-<1>6. Hence all surjective ring homomorphisms are exactly
+:::
+
+::: {.pf-step #classification-boxed}
+Hence all surjective ring homomorphisms are exactly
 $$
 \boxed{
 (z_1,\ldots,z_n)\longmapsto\sigma(z_j),
@@ -196,16 +214,18 @@ $$
 }.
 $$
 
-::: {.proof}
-Steps <1>2--<1>4 show that every surjective ring homomorphism has the
-displayed form, and step <1>5 shows that every map of that form works.
+::: pf-proof
+Steps [](#unique-index){.pf-ref}, [](#phi-formula){.pf-ref}, and [](#sigma-is-automorphism){.pf-ref} show that every surjective ring homomorphism has the
+displayed form, and step [](#converse-works){.pf-ref} shows that every map of that form works.
 Such a map is $\CC$-linear exactly when $\sigma=\operatorname{id}_{\CC}$,
 so the $\CC$-linear ones are the coordinate projections.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the complete classification.
+::: pf-qed
+Step [](#classification-boxed){.pf-ref} is the complete classification.
+:::
+
 :::
 :::

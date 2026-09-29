@@ -35,7 +35,11 @@ b. $V\big(y^2 - xz,\ z^2 - y^3\big) \subseteq \AA^3$.
 :::
 
 ::: {.solution}
-<1>1. In part (a), the first equation factors as
+
+::: pf
+
+::: {.pf-step #factorization-y4-x2}
+In part (a), the first equation factors as
 $$
 y^4-x^2
 =
@@ -48,13 +52,16 @@ x=y^2
 x=-y^2.
 $$
 
-::: {.proof}
+::: pf-proof
 This is the displayed factorization over $\CC$.
 :::
 
-<1>2. On the branch $x=-y^2$, the second equation vanishes identically.
+:::
 
-::: {.proof}
+::: {.pf-step #branch-neg-vanishes}
+On the branch $x=-y^2$, the second equation vanishes identically.
+
+::: pf-proof
 Substituting $x=-y^2$ gives
 $$
 \begin{aligned}
@@ -71,12 +78,15 @@ $$
 lies in the algebraic set.
 :::
 
-<1>3. On the branch $x=y^2$, the second equation vanishes exactly at
+:::
+
+::: {.pf-step #branch-pos-roots}
+On the branch $x=y^2$, the second equation vanishes exactly at
 $$
 (0,0),\qquad(1,1),\qquad(1,-1).
 $$
 
-::: {.proof}
+::: pf-proof
 Substituting $x=y^2$ gives
 $$
 \begin{aligned}
@@ -94,7 +104,10 @@ $$
 Since $x=y^2$, these give the three displayed points.
 :::
 
-<1>4. The irreducible components in part (a) are
+:::
+
+::: {.pf-step #components-part-a}
+The irreducible components in part (a) are
 $$
 \boxed{
 V(x+y^2),\qquad
@@ -103,12 +116,12 @@ V(x+y^2),\qquad
 }
 $$
 
-::: {.proof}
-By steps <1>1--<1>3, the algebraic set is
+::: pf-proof
+By steps [](#factorization-y4-x2){.pf-ref}, [](#branch-neg-vanishes){.pf-ref} and [](#branch-pos-roots){.pf-ref}, the algebraic set is
 $$
 C\cup\{(1,1),(1,-1)\}.
 $$
-The point $(0,0)$ from step <1>3 already lies on $C$.
+The point $(0,0)$ from step [](#branch-pos-roots){.pf-ref} already lies on $C$.
 
 The curve $C$ is irreducible because
 $$
@@ -123,7 +136,10 @@ Therefore none of the three listed irreducible closed subsets is contained
 in another, so they are precisely the irreducible components.
 :::
 
-<1>5. In part (b), every point satisfying
+:::
+
+::: {.pf-step #parametrize-z2-y3}
+In part (b), every point satisfying
 $$
 z^2=y^3
 $$
@@ -133,7 +149,7 @@ y=t^2,\qquad z=t^3
 $$
 with $t=z/y$.
 
-::: {.proof}
+::: pf-proof
 If $y=0$, then $z^2=0$, so $z=0$.
 
 If $y\ne0$, put
@@ -155,13 +171,16 @@ t^3=ty=\frac zy\,y=z.
 $$
 :::
 
-<1>6. On the locus $y=z=0$, the first equation imposes no condition on
+:::
+
+::: {.pf-step #locus-yz-zero}
+On the locus $y=z=0$, the first equation imposes no condition on
 $x$, giving the line
 $$
 L=V(y,z).
 $$
 
-::: {.proof}
+::: pf-proof
 If $y=z=0$, then
 $$
 y^2-xz=0
@@ -169,14 +188,17 @@ $$
 for every $x\in\CC$. Hence this locus is exactly the $x$-axis.
 :::
 
-<1>7. Away from $y=z=0$, the first equation forces $x=t$, so the
+:::
+
+::: {.pf-step #away-from-origin-locus}
+Away from $y=z=0$, the first equation forces $x=t$, so the
 remaining points lie on
 $$
 C'=V(y-x^2,\ z-x^3).
 $$
 
-::: {.proof}
-Using step <1>5,
+::: pf-proof
+Using step [](#parametrize-z2-y3){.pf-ref},
 $$
 y=t^2,\qquad z=t^3
 $$
@@ -199,7 +221,10 @@ V(y-x^2,z-x^3).
 $$
 :::
 
-<1>8. The irreducible components in part (b) are
+:::
+
+::: {.pf-step #components-part-b}
+The irreducible components in part (b) are
 $$
 \boxed{
 V(y,z),\qquad
@@ -207,8 +232,8 @@ V(y-x^2,\ z-x^3).
 }
 $$
 
-::: {.proof}
-Steps <1>5--<1>7 show that the algebraic set is $L\cup C'$.
+::: pf-proof
+Steps [](#parametrize-z2-y3){.pf-ref}, [](#locus-yz-zero){.pf-ref} and [](#away-from-origin-locus){.pf-ref} show that the algebraic set is $L\cup C'$.
 Moreover,
 $$
 \CC[x,y,z]/(y,z)\cong\CC[x]
@@ -228,10 +253,13 @@ $$
 Thus they are exactly the irreducible components.
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the components in part (a), and step <1>8 gives the
+::: pf-qed
+Step [](#components-part-a){.pf-ref} gives the components in part (a), and step [](#components-part-b){.pf-ref} gives the
 components in part (b).
 :::
+
+:::
+
 :::

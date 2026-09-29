@@ -30,8 +30,13 @@ Then $\mcp$ holds for $X$.
 :::
 
 ::: {.solution}
-<1>1. In a noetherian topological space, every nonempty collection of closed subsets has a minimal element under inclusion.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #noetherian-has-minimal-closed}
+In a noetherian topological space, every nonempty collection of closed subsets has a minimal element under inclusion.
+
+::: pf-proof
 A topological space is noetherian exactly when every descending chain of closed subsets stabilizes.
 
 Let $\mathcal C$ be a nonempty collection of closed subsets.  If it had no minimal element, choose
@@ -51,7 +56,10 @@ Y_0\supsetneq Y_1\supsetneq Y_2\supsetneq\cdots,
 contradicting noetherianity.  Hence a minimal member exists.
 :::
 
-<1>2. Suppose, for contradiction, that $\mcp$ does not hold for every closed subset of $X$.
+:::
+
+::: pf-step
+Suppose, for contradiction, that $\mcp$ does not hold for every closed subset of $X$.
 Let
 \[
 \mathcal B
@@ -62,31 +70,48 @@ Choose a minimal member
 \[
 Y\in\mathcal B.
 \]
-::: {.proof}
-Under the contradictory assumption, $\mathcal B$ is nonempty.  Step <1>1 therefore supplies a minimal member.
+
+::: pf-proof
+Under the contradictory assumption, $\mathcal B$ is nonempty.  Step [](#noetherian-has-minimal-closed){.pf-ref} therefore supplies a minimal member.
 :::
 
-<1>3. Every proper closed subset
+:::
+
+::: {.pf-step #proper-subsets-of-y-satisfy-p}
+Every proper closed subset
 \[
 Z\subsetneq Y
 \]
 satisfies $\mcp$.
-::: {.proof}
+
+::: pf-proof
 If some proper closed $Z\subsetneq Y$ failed $\mcp$, then $Z\in\mathcal B$, contradicting minimality of $Y$ in $\mathcal B$.
 :::
 
-<1>4. The property $\mcp$ holds for $Y$, a contradiction.
-::: {.proof}
-By <1>3, $\mcp$ holds for every proper closed subset of $Y$.  The induction hypothesis stated in the problem therefore implies that $\mcp$ holds for $Y$ itself.  This contradicts $Y\in\mathcal B$.
 :::
 
-<1>5. Hence $\mcp$ holds for every closed subset of $X$, in particular for $X$.
-::: {.proof}
-Step <1>4 shows that the family $\mathcal B$ of counterexamples must be empty.  Since $X$ is a closed subset of itself, $\mcp(X)$ holds.
+::: {.pf-step #p-holds-for-y-contradiction}
+The property $\mcp$ holds for $Y$, a contradiction.
+
+::: pf-proof
+By step [](#proper-subsets-of-y-satisfy-p){.pf-ref}, $\mcp$ holds for every proper closed subset of $Y$.  The induction hypothesis stated in the problem therefore implies that $\mcp$ holds for $Y$ itself.  This contradicts $Y\in\mathcal B$.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Step <1>5 is the desired conclusion.
 :::
+
+::: {.pf-step #p-holds-for-x}
+Hence $\mcp$ holds for every closed subset of $X$, in particular for $X$.
+
+::: pf-proof
+Step [](#p-holds-for-y-contradiction){.pf-ref} shows that the family $\mathcal B$ of counterexamples must be empty.  Since $X$ is a closed subset of itself, $\mcp(X)$ holds.
+:::
+
+:::
+
+::: pf-qed
+Step [](#p-holds-for-x){.pf-ref} is the desired conclusion.
+:::
+
+:::
+
 :::

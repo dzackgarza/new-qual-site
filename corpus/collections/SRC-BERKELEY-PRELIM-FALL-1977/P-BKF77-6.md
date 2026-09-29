@@ -36,8 +36,13 @@ is analytic.
 :::
 
 ::: {.solution}
-<1>1. $u$ is harmonic.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+$u$ is harmonic.
+
+::: pf-proof
 We have
 $$
 u_x=3x^2-3y^2,
@@ -57,8 +62,12 @@ $$
 everywhere on $\mathbb R^2$, so $u$ is harmonic.
 :::
 
-<1>2. The harmonic conjugates of $u$ are $v(x,y)=3x^2y-y^3+C$ with $C\in\mathbb R$.
-::: {.proof}
+:::
+
+::: pf-step
+The harmonic conjugates of $u$ are $v(x,y)=3x^2y-y^3+C$ with $C\in\mathbb R$.
+
+::: pf-proof
 For
 $$
 f=u+iv
@@ -89,8 +98,12 @@ $$
 $$
 :::
 
-<1>3. The analytic function is $f(z)=z^3+iC$.
-::: {.proof}
+:::
+
+::: pf-step
+The analytic function is $f(z)=z^3+iC$.
+
+::: pf-proof
 Since
 $$
 (x+iy)^3
@@ -100,5 +113,9 @@ the resulting analytic function is
 $$
 \boxed{f(z)=z^3+iC,\qquad C\in\mathbb R.}
 $$
+:::
+
+:::
+
 :::
 :::

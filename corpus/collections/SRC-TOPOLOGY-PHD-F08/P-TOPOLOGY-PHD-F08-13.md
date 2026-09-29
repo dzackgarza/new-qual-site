@@ -36,18 +36,27 @@ Give a brief explanation.
 :::
 
 ::: {.solution}
-<1>1. A Möbius band is the quotient
+
+::: pf
+
+::: pf-step
+A Möbius band is the quotient
 \[
 M=([0,1]\times[-1,1])/{\sim},
 \qquad
 (0,t)\sim(1,-t).
 \]
-::: {.proof}
+
+::: pf-proof
 This is the standard rectangle model: the two vertical edges are glued with a half-twist.
 :::
 
-<1>2. The boundary $\partial M$ is a single circle.
-::: {.proof}
+:::
+
+::: pf-step
+The boundary $\partial M$ is a single circle.
+
+::: pf-proof
 The boundary is the image of
 \[
 [0,1]\times\{-1,1\}.
@@ -61,8 +70,12 @@ Under the twisted edge identification,
 so the two horizontal edges join end-to-end to form one circle.
 :::
 
-<1>3. In the quotient $M/\partial M$, a collar of $\partial M$ becomes a disk.
-::: {.proof}
+:::
+
+::: {.pf-step #collar-becomes-disk}
+In the quotient $M/\partial M$, a collar of $\partial M$ becomes a disk.
+
+::: pf-proof
 Choose a closed collar
 \[
 N\cong S^1\times[0,1]
@@ -83,32 +96,45 @@ The cone on $S^1$ is homeomorphic to the closed disk $D^2$ via
 Its boundary corresponds to $S^1\times\{1\}$.
 :::
 
-<1>4. The quotient $M/\partial M$ is obtained by attaching a disk to a Möbius band along its boundary.
-::: {.proof}
+:::
+
+::: {.pf-step #attach-disk-decomposition}
+The quotient $M/\partial M$ is obtained by attaching a disk to a Möbius band along its boundary.
+
+::: pf-proof
 Remove the interior of the collar $N$ from $M$.
 The remaining surface
 \[
 M'=M\setminus\operatorname{int}(N)
 \]
 is again a Möbius band, with boundary $S^1\times\{1\}$.
-By <1>3, the collapsed collar becomes a disk whose boundary is exactly this circle.
+By step [](#collar-becomes-disk){.pf-ref}, the collapsed collar becomes a disk whose boundary is exactly this circle.
 Thus
 \[
 M/\partial M\cong M'\cup_{\partial M'}D^2.
 \]
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{M/\partial M\cong\mathbb{RP}^2}.
 \]
-::: {.proof}
+
+::: pf-proof
 The real projective plane is obtained by attaching a $2$-disk to a Möbius band along its boundary.
 Indeed, in the disk model
 \[
 \mathbb{RP}^2=D^2/(x\sim -x\text{ on }\partial D^2),
 \]
 an annular neighborhood of the boundary descends to a Möbius band, while the remaining central disk caps its boundary.
-By <1>4, $M/\partial M$ has exactly this decomposition.
+By step [](#attach-disk-decomposition){.pf-ref}, $M/\partial M$ has exactly this decomposition.
 :::
+
+:::
+
+:::
+
 :::

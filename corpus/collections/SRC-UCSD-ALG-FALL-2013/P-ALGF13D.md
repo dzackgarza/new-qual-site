@@ -35,8 +35,13 @@ Prove that if $P$ is a projective $A$-module, then $P \otimes_A B$ is a projecti
 :::
 
 ::: {.solution}
-<1>1. If \(P\oplus Q\) is injective, then both \(P\) and \(Q\) are injective.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #sum-injective-implies-summands}
+If \(P\oplus Q\) is injective, then both \(P\) and \(Q\) are injective.
+
+::: pf-proof
 We prove the assertion for \(P\); the argument for \(Q\) is identical.
 Let
 \[
@@ -76,8 +81,12 @@ extends \(f\), because on \(N\)
 Thus \(P\) satisfies the extension property and is injective.
 :::
 
-<1>2. If \(P\) and \(Q\) are injective, then \(P\oplus Q\) is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #summands-injective-implies-sum}
+If \(P\) and \(Q\) are injective, then \(P\oplus Q\) is injective.
+
+::: pf-proof
 Let \(N\hookrightarrow M\) be an inclusion and let
 \[
 f:N\to P\oplus Q
@@ -107,13 +116,21 @@ extends \(f\).
 Hence \(P\oplus Q\) is injective.
 :::
 
-<1>3. Therefore \(P\oplus Q\) is injective if and only if both summands are injective.
-::: {.proof}
-The forward implication is <1>1 and the reverse implication is <1>2.
 :::
 
-<1>4. If \(P\) is projective over \(A\), then \(P\otimes_A B\) is projective over \(B\).
-::: {.proof}
+::: {.pf-step #part-a-iff}
+Therefore \(P\oplus Q\) is injective if and only if both summands are injective.
+
+::: pf-proof
+The forward implication is step [](#sum-injective-implies-summands){.pf-ref} and the reverse implication is step [](#summands-injective-implies-sum){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #part-b-projective}
+If \(P\) is projective over \(A\), then \(P\otimes_A B\) is projective over \(B\).
+
+::: pf-proof
 Because \(P\) is projective, there exists an \(A\)-module \(Q\) and a free \(A\)-module \(F\) such that
 \[
 P\oplus Q\cong F.
@@ -139,5 +156,13 @@ F\otimes_A B
 \]
 which is a free \(B\)-module.
 Therefore \(P\otimes_A B\) is a direct summand of a free \(B\)-module, hence is projective as a \(B\)-module.
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-iff){.pf-ref} answers part (a), and step [](#part-b-projective){.pf-ref} answers part (b).
+:::
+
 :::
 :::

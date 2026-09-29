@@ -59,7 +59,10 @@ g(x)
 \right)(x-a)^2.
 $$
 
-<1>1. The polynomial $g$ satisfies
+::: pf
+
+::: {.pf-step #g-derivatives-formula}
+The polynomial $g$ satisfies
 $$
 g(a)=\frac1A,
 \qquad
@@ -68,30 +71,36 @@ g'(a)=-\frac{B}{A^2},
 g''(a)=\frac{2B^2}{A^3}-\frac{C}{A^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 These identities follow by differentiating the displayed quadratic
 polynomial and substituting $x=a$.
 :::
 
-<1>2. For $p=fg$, one has
+:::
+
+::: {.pf-step #p-value-one}
+For $p=fg$, one has
 $$
 p(a)=1.
 $$
 
-::: {.proof}
-By the definition of $A$ and step <1>1,
+::: pf-proof
+By the definition of $A$ and step [](#g-derivatives-formula){.pf-ref},
 $$
 p(a)=f(a)g(a)=A\frac1A=1.
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #p-prime-zero}
+One has
 $$
 p'(a)=0.
 $$
 
-::: {.proof}
-The product rule and step <1>1 give
+::: pf-proof
+The product rule and step [](#g-derivatives-formula){.pf-ref} give
 $$
 \begin{aligned}
 p'(a)
@@ -106,17 +115,20 @@ A\left(-\frac{B}{A^2}\right)
 $$
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #p-double-prime-zero}
+One has
 $$
 p''(a)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Differentiating the product twice gives
 $$
 p''=f''g+2f'g'+fg''.
 $$
-Therefore, by step <1>1,
+Therefore, by step [](#g-derivatives-formula){.pf-ref},
 $$
 \begin{aligned}
 p''(a)
@@ -139,7 +151,10 @@ A\left(
 $$
 :::
 
-<1>5. Thus the real polynomial
+:::
+
+::: {.pf-step #g-boxed}
+Thus the real polynomial
 $$
 \boxed{
 g(x)
@@ -155,8 +170,8 @@ g(x)
 $$
 has all the required properties.
 
-::: {.proof}
-Its coefficients are real because $f$ and $a$ are real. Steps <1>2--<1>4
+::: pf-proof
+Its coefficients are real because $f$ and $a$ are real. Steps [](#p-value-one){.pf-ref}, [](#p-prime-zero){.pf-ref}, and [](#p-double-prime-zero){.pf-ref}
 show that $p=fg$ satisfies
 $$
 p(a)=1,
@@ -167,9 +182,11 @@ p''(a)=0.
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the required polynomial.
+::: pf-qed
+Step [](#g-boxed){.pf-ref} gives the required polynomial.
+:::
+
 :::
 :::

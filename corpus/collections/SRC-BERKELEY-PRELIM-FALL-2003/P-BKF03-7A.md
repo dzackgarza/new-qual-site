@@ -39,6 +39,7 @@ Find an explicit continuous function $f:D\to\mathbb R$ satisfying all the follow
 
 
 ::: {.solution}
+
 Define
 \[
 w(z):=\frac{1+z}{1-z}
@@ -49,8 +50,12 @@ Set
 \boxed{f(z)=\frac{2}{\pi}\operatorname{Im}\Log\!\left(\frac{1+z}{1-z}\right)}.
 \]
 
-<1>1. The formula is well-defined and continuous on $D$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #formula-continuous}
+The formula is well-defined and continuous on $D$.
+
+::: pf-proof
 For $|z|<1$,
 \[
 \operatorname{Re}w(z)=\frac{1-|z|^2}{|1-z|^2}>0,
@@ -66,8 +71,12 @@ Since $z=1$ is also removed, the denominator never vanishes on $D$.
 Therefore $\Log\circ w$ and hence $f$ are continuous on $D$.
 :::
 
-<1>2. The function $f$ is harmonic on the open unit disk.
-::: {.proof}
+:::
+
+::: {.pf-step #f-harmonic}
+The function $f$ is harmonic on the open unit disk.
+
+::: pf-proof
 On $|z|<1$, the map $w$ takes values in the open right half-plane, where the principal logarithm is holomorphic.
 Thus
 \[
@@ -77,8 +86,12 @@ is holomorphic on the disk.
 The imaginary part of a holomorphic function is harmonic, so $f=(2/\pi)\operatorname{Im}F$ is harmonic there.
 :::
 
-<1>3. On the upper boundary semicircle, $f=1$, and on the lower boundary semicircle, $f=-1$.
-::: {.proof}
+:::
+
+::: {.pf-step #boundary-values}
+On the upper boundary semicircle, $f=1$, and on the lower boundary semicircle, $f=-1$.
+
+::: pf-proof
 Write $z=e^{i\theta}$ with $0<\theta<2\pi$ and $\theta\ne\pi$.
 Then
 \[
@@ -98,5 +111,10 @@ f(z)=\frac2\pi\cdot\left(-\frac\pi2\right)=-1.
 \]
 These are exactly the required boundary values.
 :::
+
+:::
+
+:::
+
 :::
 

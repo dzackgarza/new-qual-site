@@ -53,8 +53,12 @@ Moreover, an element $u\in R$ is a unit if and only if $N(u)=\pm1$: necessity fo
 u^{-1}=\frac{\bar u}{N(u)}\in R.
 \]
 
-<1>1. The unit group $R^\times$ is infinite.
-::: {.proof}
+::: pf
+
+::: {.pf-step #unit-group-infinite}
+The unit group $R^\times$ is infinite.
+
+::: pf-proof
 Set
 \[
 u:=3+\sqrt{10}.
@@ -76,8 +80,12 @@ so the positive real numbers $u^k$ are pairwise distinct.
 Thus $R^\times$ contains infinitely many elements.
 :::
 
-<1>2. The element $2$ is irreducible in $R$.
-::: {.proof}
+:::
+
+::: {.pf-step #two-irreducible}
+The element $2$ is irreducible in $R$.
+
+::: pf-proof
 Suppose
 \[
 2=\alpha\beta
@@ -118,8 +126,12 @@ Hence no element of $R$ has norm $\pm2$.
 Therefore in every factorization $2=\alpha\beta$, one factor is a unit, so $2$ is irreducible.
 :::
 
-<1>3. The irreducible element $2$ is not prime.
-::: {.proof}
+:::
+
+::: {.pf-step #two-not-prime}
+The irreducible element $2$ is not prime.
+
+::: pf-proof
 We have
 \[
 2\mid10=(\sqrt{10})(\sqrt{10}),
@@ -143,8 +155,12 @@ which is impossible.
 Thus $2$ divides a product without dividing either factor, so $2$ is not prime.
 :::
 
-<1>4. Every nonzero nonunit of $R$ is a finite product of irreducibles.
-::: {.proof}
+:::
+
+::: {.pf-step #r-is-atomic}
+Every nonzero nonunit of $R$ is a finite product of irreducibles.
+
+::: pf-proof
 We induct on the positive integer
 \[
 |N(\alpha)|
@@ -174,12 +190,24 @@ By induction, both $\beta$ and $\gamma$ are finite products of irreducibles, and
 Thus $R$ is atomic. As usual, the assertion concerns nonzero nonunits; units are accounted for by a unit factor, while $0$ cannot be a finite product of irreducibles in this domain.
 :::
 
-<1>5. The ring $R$ is not a unique factorization domain.
-::: {.proof}
+:::
+
+::: {.pf-step #r-not-ufd}
+The ring $R$ is not a unique factorization domain.
+
+::: pf-proof
 In a unique factorization domain every irreducible element is prime.
 Indeed, if an irreducible $p$ divides $ab$, write $ab=pc$ and compare irreducible factorizations of both sides; uniqueness forces $p$ to be associate to an irreducible factor of $a$ or of $b$, so $p$ divides $a$ or $b$.
 
-By <1>2, the element $2$ is irreducible in $R$, while by <1>3 it is not prime.
+By step [](#two-irreducible){.pf-ref}, the element $2$ is irreducible in $R$, while by step [](#two-not-prime){.pf-ref} it is not prime.
 Therefore $R$ cannot be a unique factorization domain.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#unit-group-infinite){.pf-ref}, [](#two-irreducible){.pf-ref}, [](#two-not-prime){.pf-ref}, [](#r-is-atomic){.pf-ref}, and [](#r-not-ufd){.pf-ref} answer parts (a), (b), (c), (d), and (e).
+:::
+
 :::
 :::

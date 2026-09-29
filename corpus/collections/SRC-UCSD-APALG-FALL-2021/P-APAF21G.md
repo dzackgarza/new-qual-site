@@ -32,6 +32,7 @@ Find the decomposition of $\mathbb{C}[X]$ into irreducibles.
 :::
 
 ::: {.solution}
+
 Order the conjugacy classes of $S_4$ by cycle type
 \[
 (1^4),\quad(2,1^2),\quad(2^2),\quad(3,1),\quad(4),
@@ -41,21 +42,29 @@ with respective sizes
 1,6,3,8,6.
 \]
 
-<1>1. The trivial character and the sign character are
+::: pf
+
+::: {.pf-step #trivial-and-sign-characters}
+The trivial character and the sign character are
 \[
 \chi^{(4)}=(1,1,1,1,1),
 \qquad
 \chi^{(1^4)}=(1,-1,1,1,-1).
 \]
-::: {.proof}
+
+::: pf-proof
 The trivial character is identically $1$. The sign of a transposition and of a $4$-cycle is $-1$, while the identity, a product of two disjoint transpositions, and a $3$-cycle are even.
 :::
 
-<1>2. The standard $3$-dimensional representation has character
+:::
+
+::: {.pf-step #standard-representation-character}
+The standard $3$-dimensional representation has character
 \[
 \chi^{(3,1)}=(3,1,-1,0,-1).
 \]
-::: {.proof}
+
+::: pf-proof
 The permutation representation of $S_4$ on $\mathbb C^4$ has character equal to the number of fixed points of the permutation. Its values on the five classes are
 \[
 4,2,0,1,0.
@@ -67,19 +76,27 @@ It decomposes as the trivial line spanned by $(1,1,1,1)$ plus the standard subsp
 Subtracting the trivial character gives the displayed row.
 :::
 
-<1>3. Tensoring the standard representation with sign gives
+:::
+
+::: {.pf-step #standard-sign-twist-character}
+Tensoring the standard representation with sign gives
 \[
 \chi^{(2,1,1)}=(3,-1,-1,0,1).
 \]
-::: {.proof}
-Tensoring by the one-dimensional sign representation multiplies character values pointwise by the sign. Multiply the row in <1>2 by the sign row in <1>1.
+
+::: pf-proof
+Tensoring by the one-dimensional sign representation multiplies character values pointwise by the sign. Multiply the row in step [](#standard-representation-character){.pf-ref} by the sign row in step [](#trivial-and-sign-characters){.pf-ref}.
 :::
 
-<1>4. The remaining $2$-dimensional irreducible character is
+:::
+
+::: {.pf-step #two-dimensional-irreducible-character}
+The remaining $2$-dimensional irreducible character is
 \[
 \chi^{(2,2)}=(2,0,2,-1,0).
 \]
-::: {.proof}
+
+::: pf-proof
 Let $S_4$ act on the three partitions of $\{1,2,3,4\}$ into two unordered pairs:
 \[
 12|34,\qquad13|24,\qquad14|23.
@@ -102,7 +119,10 @@ Its character norm is
 so this $2$-dimensional representation is irreducible.
 :::
 
-<1>5. Therefore the complete character table of $S_4$ is
+:::
+
+::: {.pf-step #s4-character-table}
+Therefore the complete character table of $S_4$ is
 \[
 \begin{array}{c|rrrrr}
 & (1^4)&(2,1^2)&(2^2)&(3,1)&(4)\\
@@ -114,32 +134,50 @@ so this $2$-dimensional representation is irreducible.
 \chi^{(1^4)}&1&-1&1&1&-1
 \end{array}.
 \]
-::: {.proof}
-The five displayed characters are irreducible: the one-dimensional rows are irreducible, the standard representation is irreducible, its sign twist is irreducible, and <1>4 proves irreducibility of the $2$-dimensional row. Their degree squares sum to
+
+::: pf-proof
+The five displayed characters are irreducible: the one-dimensional rows are irreducible, the standard representation is irreducible, its sign twist is irreducible, and step [](#two-dimensional-irreducible-character){.pf-ref} proves irreducibility of the $2$-dimensional row. Their degree squares sum to
 \[
 1^2+3^2+2^2+3^2+1^2=24=|S_4|,
 \]
 so they form the complete set of irreducible characters.
 :::
 
-<1>6. The permutation character of $\mathbb C[X]$, where $X$ is the set of $2$-element subsets, is
+:::
+
+::: {.pf-step #permutation-character-of-2-subsets}
+The permutation character of $\mathbb C[X]$, where $X$ is the set of $2$-element subsets, is
 \[
 \chi_X=(6,2,2,0,0).
 \]
-::: {.proof}
+
+::: pf-proof
 The character value is the number of $2$-subsets fixed setwise by a representative permutation. The identity fixes all $6$. A transposition fixes its own $2$-set and the complementary $2$-set, hence $2$. A double transposition fixes its two transposition-orbits, hence $2$. A $3$-cycle and a $4$-cycle fix no $2$-subset.
 :::
 
-<1>7. The decomposition is
+:::
+
+::: {.pf-step #decomposition-of-cx}
+The decomposition is
 \[
 \boxed{\mathbb C[X]\cong S^{(4)}\oplus S^{(3,1)}\oplus S^{(2,2)}.}
 \]
-::: {.proof}
-Adding the corresponding character rows from <1>5 gives
+
+::: pf-proof
+Adding the corresponding character rows from step [](#s4-character-table){.pf-ref} gives
 \[
 (1,1,1,1,1)+(3,1,-1,0,-1)+(2,0,2,-1,0)
 =(6,2,2,0,0),
 \]
-which is exactly the permutation character from <1>6. Equality of characters over $\mathbb C$ implies isomorphism of representations.
+which is exactly the permutation character from step [](#permutation-character-of-2-subsets){.pf-ref}. Equality of characters over $\mathbb C$ implies isomorphism of representations.
 :::
+
+:::
+
+::: pf-qed
+Step [](#s4-character-table){.pf-ref} gives the character table of $S_4$; step [](#decomposition-of-cx){.pf-ref} gives the decomposition of $\mathbb C[X]$.
+:::
+
+:::
+
 :::

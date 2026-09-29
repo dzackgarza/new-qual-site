@@ -20,9 +20,13 @@ Justify your answer.
 :::
 
 ::: {.solution}
+
 No. There are indecomposable $G$-modules over $\mathbb F_3$ that are reducible.
 
-<1>1. Let $V=\mathbb F_3^2$ with basis $e_1,e_2$. Let the $C_4$ and $C_2$ factors act trivially, and let a generator $g$ of the $C_3$ factor act by
+::: pf
+
+::: {.pf-step #example-module-v}
+Let $V=\mathbb F_3^2$ with basis $e_1,e_2$. Let the $C_4$ and $C_2$ factors act trivially, and let a generator $g$ of the $C_3$ factor act by
 \[
 J=
 \begin{pmatrix}
@@ -31,7 +35,8 @@ J=
 \end{pmatrix}.
 \]
 This defines a $G$-module.
-::: {.proof}
+
+::: pf-proof
 Write $J=I+N$ with
 \[
 N=
@@ -51,8 +56,12 @@ C_4\times C_3\times C_2.
 \]
 :::
 
-<1>2. The module $V$ is reducible.
-::: {.proof}
+:::
+
+::: {.pf-step #v-is-reducible}
+The module $V$ is reducible.
+
+::: pf-proof
 The line
 \[
 L=\mathbb F_3 e_1
@@ -60,8 +69,12 @@ L=\mathbb F_3 e_1
 is fixed by $J$, since $Je_1=e_1$. The other two group factors act trivially, so $L$ is a nonzero proper $G$-submodule of $V$.
 :::
 
-<1>3. The only one-dimensional $J$-invariant subspace of $V$ is $L=\mathbb F_3e_1$.
-::: {.proof}
+:::
+
+::: {.pf-step #unique-invariant-line}
+The only one-dimensional $J$-invariant subspace of $V$ is $L=\mathbb F_3e_1$.
+
+::: pf-proof
 If a one-dimensional subspace $M=\mathbb F_3v$ is $J$-invariant, then $v$ is an eigenvector of $J$. Since
 \[
 J-I=N
@@ -69,14 +82,27 @@ J-I=N
 has kernel exactly $\mathbb F_3e_1$, the eigenspace for the only eigenvalue $1$ is precisely $L$. Thus $M=L$.
 :::
 
-<1>4. The module $V$ is indecomposable.
-::: {.proof}
-If $V$ decomposed as a direct sum of two nonzero $G$-submodules, then, because $\dim V=2$, both summands would be one-dimensional. Each would therefore be a one-dimensional $J$-invariant subspace. By <1>3 both would have to equal $L$, which cannot give a direct-sum decomposition of $V$.
+:::
+
+::: {.pf-step #v-is-indecomposable}
+The module $V$ is indecomposable.
+
+::: pf-proof
+If $V$ decomposed as a direct sum of two nonzero $G$-submodules, then, because $\dim V=2$, both summands would be one-dimensional. Each would therefore be a one-dimensional $J$-invariant subspace. By step [](#unique-invariant-line){.pf-ref} both would have to equal $L$, which cannot give a direct-sum decomposition of $V$.
 Thus $V$ is indecomposable.
 :::
 
-<1>5. Hence an indecomposable $G$-module over $\mathbb F_3$ need not be irreducible.
-::: {.proof}
-The module constructed in <1>1 is reducible by <1>2 and indecomposable by <1>4, providing the required counterexample.
 :::
+
+::: pf-step
+Hence an indecomposable $G$-module over $\mathbb F_3$ need not be irreducible.
+
+::: pf-proof
+The module constructed in step [](#example-module-v){.pf-ref} is reducible by step [](#v-is-reducible){.pf-ref} and indecomposable by step [](#v-is-indecomposable){.pf-ref}, providing the required counterexample.
+:::
+
+:::
+
+:::
+
 :::

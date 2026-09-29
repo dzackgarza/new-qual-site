@@ -43,12 +43,15 @@ $$
 d(A,X)=\norm{A-X}_F^2.
 $$
 
-<1>1. For every real $2\times2$ matrix $B$ and every unit vector $u\in\RR^2$,
+::: pf
+
+::: {.pf-step #cauchy-schwarz-bound}
+For every real $2\times2$ matrix $B$ and every unit vector $u\in\RR^2$,
 $$
 \norm{Bu}_2^2\leq\norm{B}_F^2.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $r_1,r_2\in\RR^2$ be the two rows of $B$. By Cauchy--Schwarz,
 $$
 \norm{Bu}_2^2
@@ -58,17 +61,20 @@ $$
 Since $\norm u_2=1$, the right-hand side is $\norm B_F^2$.
 :::
 
-<1>2. Every $X\in\Sigma$ satisfies
+:::
+
+::: {.pf-step #lower-bound-one}
+Every $X\in\Sigma$ satisfies
 $$
 d(A,X)\geq1.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $X$ is singular, choose a unit vector
 $$
 u=\begin{pmatrix}p\\q\end{pmatrix}\in\ker X.
 $$
-Apply step <1>1 to $B=A-X$. Since $Xu=0$,
+Apply step [](#cauchy-schwarz-bound){.pf-ref} to $B=A-X$. Since $Xu=0$,
 $$
 d(A,X)
 =\norm{A-X}_F^2
@@ -85,12 +91,15 @@ $$
 Hence $d(A,X)\geq1$.
 :::
 
-<1>3. The minimum distance is $\boxed{1}$, attained by
+:::
+
+::: {.pf-step #min-distance-value}
+The minimum distance is $\boxed{1}$, attained by
 $$
 \boxed{S=\begin{pmatrix}0&0\\0&2\end{pmatrix}}.
 $$
 
-::: {.proof}
+::: pf-proof
 The matrix $S$ is singular. Moreover,
 $$
 A-S=\begin{pmatrix}1&0\\0&0\end{pmatrix},
@@ -99,13 +108,15 @@ so the printed distance convention gives
 $$
 d(A,S)=\norm{A-S}_F^2=1.
 $$
-Together with the lower bound in step <1>2, this proves that the minimum is $1$ and that $S$ attains it.
+Together with the lower bound in step [](#lower-bound-one){.pf-ref}, this proves that the minimum is $1$ and that $S$ attains it.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 gives both requested conclusions.
+::: pf-qed
+Step [](#min-distance-value){.pf-ref} gives both requested conclusions.
+:::
+
 :::
 :::
 

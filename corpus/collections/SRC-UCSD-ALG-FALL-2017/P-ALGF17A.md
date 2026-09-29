@@ -34,8 +34,13 @@ Let $G$ be a group of order $231 = (3)(7)(11)$.
 :::
 
 ::: {.solution}
-<1>1. The Sylow $11$-subgroup and the Sylow $7$-subgroup of $G$ are both normal.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The Sylow $11$-subgroup and the Sylow $7$-subgroup of $G$ are both normal.
+
+::: pf-proof
 Let $n_{11}$ be the number of Sylow $11$-subgroups. Sylow's theorem gives
 \[
 n_{11}\equiv1\pmod{11},
@@ -61,8 +66,12 @@ n_7=1,
 so the Sylow $7$-subgroup $P_7$ is normal.
 :::
 
-<1>2. The product $H:=P_7P_{11}$ is a normal cyclic subgroup of order $77$.
-::: {.proof}
+:::
+
+::: pf-step
+The product $H:=P_7P_{11}$ is a normal cyclic subgroup of order $77$.
+
+::: pf-proof
 Since $P_7$ and $P_{11}$ are normal, their product is a subgroup and is normal in $G$.
 Their orders are coprime, so
 \[
@@ -84,11 +93,15 @@ H\cong P_7\times P_{11}
 \]
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #part-a-semidirect}
+One has
 \[
 G\cong C_{77}\rtimes C_3.
 \]
-::: {.proof}
+
+::: pf-proof
 Let $Q$ be a Sylow $3$-subgroup of $G$. Then
 \[
 |Q|=3,
@@ -111,8 +124,12 @@ G\cong H\rtimes Q
 This proves part (a).
 :::
 
-<1>4. Up to isomorphism there are only two possible actions of $C_3$ on $C_{77}$.
-::: {.proof}
+:::
+
+::: {.pf-step #two-actions}
+Up to isomorphism there are only two possible actions of $C_3$ on $C_{77}$.
+
+::: pf-proof
 A semidirect product $C_{77}\rtimes C_3$ is determined by a homomorphism
 \[
 \theta:C_3\longrightarrow\operatorname{Aut}(C_{77}).
@@ -141,8 +158,12 @@ produces an isomorphic semidirect product. Hence all nontrivial actions yield on
 Thus there are at most two isomorphism types: the trivial action and the nontrivial action.
 :::
 
-<1>5. The two actions yield nonisomorphic groups, so there are exactly two groups of order $231$ up to isomorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #part-b-two-groups}
+The two actions yield nonisomorphic groups, so there are exactly two groups of order $231$ up to isomorphism.
+
+::: pf-proof
 For the trivial action one obtains the direct product
 \[
 C_{77}\times C_3\cong C_{231},
@@ -150,7 +171,15 @@ C_{77}\times C_3\cong C_{231},
 which is abelian.
 For the nontrivial action, the image of $C_3$ in $\operatorname{Aut}(C_{77})$ is nontrivial, so some element of $C_3$ fails to commute with some element of $C_{77}$. Hence the resulting semidirect product is nonabelian.
 Therefore the two groups are not isomorphic.
-By <1>3 and <1>4, every group of order $231$ is one of these two types.
+By steps [](#part-a-semidirect){.pf-ref} and [](#two-actions){.pf-ref}, every group of order $231$ is one of these two types.
 Thus there are precisely two isomorphism classes.
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-semidirect){.pf-ref} answers part (a), and step [](#part-b-two-groups){.pf-ref} answers part (b).
+:::
+
 :::
 :::

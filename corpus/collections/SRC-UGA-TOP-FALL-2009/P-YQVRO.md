@@ -36,12 +36,16 @@ Put
 M=S^1\times\DD^2.
 \]
 
-<1>1. Homotopy classes of self-maps of $M$ are indexed by an integer
+::: pf
+
+::: {.pf-step #classify-homotopy-classes}
+Homotopy classes of self-maps of $M$ are indexed by an integer
 \[
 k\in\ZZ,
 \]
 the degree induced on the core circle.
-::: {.proof}
+
+::: pf-proof
 Let
 \[
 i:S^1\longrightarrow M,
@@ -84,11 +88,15 @@ Hence
 \]
 :::
 
-<1>2. If $f$ represents the class indexed by $k$, then its Lefschetz number is
+:::
+
+::: pf-step
+If $f$ represents the class indexed by $k$, then its Lefschetz number is
 \[
 L(f)=1-k.
 \]
-::: {.proof}
+
+::: pf-proof
 The solid torus deformation retracts onto $S^1$, so with rational coefficients
 \[
 H_j(M;\QQ)\cong
@@ -107,12 +115,16 @@ L(f)
 \]
 :::
 
-<1>3. Every map in a class with
+:::
+
+::: {.pf-step #kne1-fixed-point}
+Every map in a class with
 \[
 k\ne1
 \]
 has a fixed point.
-::: {.proof}
+
+::: pf-proof
 If $g\simeq f$, homotopy invariance of the induced homology maps gives
 \[
 L(g)=L(f)=1-k.
@@ -122,12 +134,16 @@ The Lefschetz fixed-point theorem for the finite CW complex $M$ therefore implie
 Since $g$ was arbitrary in the homotopy class, every representative has a fixed point.
 :::
 
-<1>4. The class
+:::
+
+::: {.pf-step #k1-excluded}
+The class
 \[
 k=1
 \]
 does not have the required property.
-::: {.proof}
+
+::: pf-proof
 Choose a unit complex number
 \[
 \lambda\ne1
@@ -143,7 +159,7 @@ The map on the core circle is the rotation
 z\longmapsto\lambda z,
 \]
 which has degree $1$.
-Thus $R_\lambda$ lies in the class $k=1$ by <1>1.
+Thus $R_\lambda$ lies in the class $k=1$ by step [](#classify-homotopy-classes){.pf-ref}.
 
 It has no fixed point: if
 \[
@@ -153,11 +169,18 @@ then $\lambda z=z$, and since $z\in S^1$ is nonzero this forces $\lambda=1$, con
 Hence the degree-one class contains a fixed-point-free representative.
 :::
 
-<1>5. Therefore the required homotopy classes are exactly
+:::
+
+::: pf-step
+Therefore the required homotopy classes are exactly
 \[
 \boxed{\{k\in\ZZ:k\ne1\}}.
 \]
-::: {.proof}
-Step <1>3 proves that every class with $k\ne1$ has the required fixed-point property, while <1>4 excludes the remaining class $k=1$.
+
+::: pf-proof
+Step [](#kne1-fixed-point){.pf-ref} proves that every class with $k\ne1$ has the required fixed-point property, while step [](#k1-excluded){.pf-ref} excludes the remaining class $k=1$.
 :::
+
+:::
+
 :::

@@ -37,7 +37,11 @@ S^*BS=I.
 :::
 
 ::: {.solution}
-<1>1. There exists an invertible Hermitian matrix
+
+::: pf
+
+::: {.pf-step #Q-def-and-property}
+There exists an invertible Hermitian matrix
 $$
 Q=B^{-1/2}
 $$
@@ -46,7 +50,7 @@ $$
 Q^*BQ=I.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $B$ is positive definite, the spectral theorem gives a unitary
 matrix $V$ and a diagonal matrix
 $$
@@ -84,13 +88,16 @@ I.
 $$
 :::
 
-<1>2. The matrix
+:::
+
+::: {.pf-step #H-hermitian}
+The matrix
 $$
 H=Q^*AQ
 $$
 is Hermitian.
 
-::: {.proof}
+::: pf-proof
 Using $A^*=A$,
 $$
 H^*
@@ -104,18 +111,24 @@ H.
 $$
 :::
 
-<1>3. There exists a unitary matrix $U$ such that
+:::
+
+::: {.pf-step #H-diagonalized}
+There exists a unitary matrix $U$ such that
 $$
 U^*HU=\Lambda
 $$
 is diagonal.
 
-::: {.proof}
+::: pf-proof
 This is the spectral theorem for the Hermitian matrix $H$ from step
-<1>2.
+[](#H-hermitian){.pf-ref}.
 :::
 
-<1>4. Set
+:::
+
+::: {.pf-step #S-satisfies-SBS}
+Set
 $$
 S=QU.
 $$
@@ -124,8 +137,8 @@ $$
 S^*BS=I.
 $$
 
-::: {.proof}
-Both $Q$ and $U$ are invertible, so $S$ is invertible. By step <1>1
+::: pf-proof
+Both $Q$ and $U$ are invertible, so $S$ is invertible. By step [](#Q-def-and-property){.pf-ref}
 and unitarity of $U$,
 $$
 \begin{aligned}
@@ -142,14 +155,17 @@ I.
 $$
 :::
 
-<1>5. The same matrix $S$ satisfies
+:::
+
+::: {.pf-step #S-satisfies-SAS}
+The same matrix $S$ satisfies
 $$
 \boxed{S^*AS=\Lambda},
 $$
 which is diagonal.
 
-::: {.proof}
-By the definitions of $S$ and $H$ and by step <1>3,
+::: pf-proof
+By the definitions of $S$ and $H$ and by step [](#H-diagonalized){.pf-ref},
 $$
 \begin{aligned}
 S^*AS
@@ -165,9 +181,12 @@ U^*HU
 $$
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>4 and <1>5 give the required invertible matrix $S$.
 :::
+
+::: pf-qed
+Steps [](#S-satisfies-SBS){.pf-ref} and [](#S-satisfies-SAS){.pf-ref} give the required invertible matrix $S$.
+:::
+
+:::
+
 :::

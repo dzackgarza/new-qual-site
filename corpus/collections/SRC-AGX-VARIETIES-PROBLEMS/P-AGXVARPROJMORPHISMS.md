@@ -83,9 +83,12 @@ X\subseteq\PP^n_\CC,
 Y\subseteq\PP^m_\CC.
 $$
 
-<1>1. The morphism $f:X\to Y$ is projective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-is-projective}
+The morphism $f:X\to Y$ is projective.
+
+::: pf-proof
 Because the projective variety $Y$ is separated over $\CC$, the graph
 $$
 \Gamma_f
@@ -123,18 +126,24 @@ restricted to the graph is exactly $f$.
 Hence $f$ has the factorization required by [[D-MORPROJ|the definition of a projective morphism]].
 :::
 
-<1>2. The morphism $f$ is proper and closed.
+:::
 
-::: {.proof}
-By step <1>1, $f$ is projective.
+::: {.pf-step #f-proper-closed}
+The morphism $f$ is proper and closed.
+
+::: pf-proof
+By step [](#f-is-projective){.pf-ref}, $f$ is projective.
 Projective morphisms over a Noetherian base are proper by [[D-MORPROJ]]. A proper morphism is universally closed by definition ([[D-8XX95]]), hence in particular is a closed map.
 This proves (a).
 :::
 
-<1>3. The image $f(X)$ is a projective subvariety of $Y$.
+:::
 
-::: {.proof}
-By step <1>2, $f$ is closed, so
+::: {.pf-step #image-projective-subvariety}
+The image $f(X)$ is a projective subvariety of $Y$.
+
+::: pf-proof
+By step [](#f-proper-closed){.pf-ref}, $f$ is closed, so
 $$
 f(X)\subseteq Y
 $$
@@ -147,14 +156,17 @@ It is nonempty because $X$ is nonempty.
 Thus $f(X)$ is a projective variety, proving (b).
 :::
 
-<1>4. Every dominant morphism $f:X\to Y$ is surjective; in particular every birational morphism is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #dominant-implies-surjective}
+Every dominant morphism $f:X\to Y$ is surjective; in particular every birational morphism is surjective.
+
+::: pf-proof
 If $f$ is dominant, then
 $$
 \overline{f(X)}=Y.
 $$
-Step <1>2 makes $f(X)$ closed, so
+Step [](#f-proper-closed){.pf-ref} makes $f(X)$ closed, so
 $$
 f(X)=\overline{f(X)}=Y.
 $$
@@ -165,9 +177,12 @@ Hence the same conclusion applies to every birational morphism.
 This proves (c).
 :::
 
-<1>5. Every global regular function on $X$ is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #global-functions-constant}
+Every global regular function on $X$ is constant.
+
+::: pf-proof
 The projective variety $X$ is irreducible, hence connected.
 The proposition [[PR-EFW6B|regular functions on a projective variety are constant]] gives
 $$
@@ -176,12 +191,15 @@ $$
 Thus every global regular function on $X$ is constant, proving (d).
 :::
 
-<1>6. If $U\subseteq X$ is a Zariski-open dense affine subset, then
+:::
+
+::: {.pf-step #function-field-formula}
+If $U\subseteq X$ is a Zariski-open dense affine subset, then
 $$
 \boxed{\CC(X)=\Frac\mco(U).}
 $$
 
-::: {.proof}
+::: pf-proof
 Since $X$ is irreducible and $U$ is a nonempty open subset, $U$ is irreducible.
 Write
 $$
@@ -202,13 +220,16 @@ $$
 This proves (e).
 :::
 
-<1>7. If $f$ is birational, then
+:::
+
+::: {.pf-step #birational-implies-field-iso}
+If $f$ is birational, then
 $$
 f^*:\CC(Y)\longrightarrow\CC(X)
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
 Birationality gives dense open subsets
 $$
 U\subseteq X,
@@ -228,14 +249,17 @@ $$
 The isomorphism $U\cong V$ induces an isomorphism of these fields, and this is exactly the pullback $f^*$.
 :::
 
-<1>8. Conversely, let $f$ be dominant and suppose
+:::
+
+::: {.pf-step #field-iso-implies-birational}
+Conversely, let $f$ be dominant and suppose
 $$
 f^*:\CC(Y)\xrightarrow{\sim}\CC(X)
 $$
 is an isomorphism.
 Then $f$ is birational.
 
-::: {.proof}
+::: pf-proof
 Choose a nonempty affine open
 $$
 V=\mspec A\subseteq Y.
@@ -246,7 +270,7 @@ $$
 U=\mspec B\subseteq f^{-1}(V).
 $$
 The restriction $U\to V$ is a morphism of varieties, so $B$ is a finitely generated $A$-algebra.
-By step <1>6,
+By step [](#function-field-formula){.pf-ref},
 $$
 \Frac A=\CC(Y),
 \qquad
@@ -303,7 +327,10 @@ Because $s\ne0$ in the domains $A$ and $B$, these distinguished opens are nonemp
 Thus $f$ is birational.
 :::
 
-<1>9. For a dominant morphism $f:X\to Y$,
+:::
+
+::: {.pf-step #birational-criterion}
+For a dominant morphism $f:X\to Y$,
 $$
 \boxed{
 f\text{ is birational}
@@ -312,14 +339,17 @@ f^*:\CC(Y)\xrightarrow{\sim}\CC(X).
 }
 $$
 
-::: {.proof}
-Step <1>7 proves the forward implication and step <1>8 proves the converse.
+::: pf-proof
+Step [](#birational-implies-field-iso){.pf-ref} proves the forward implication and step [](#field-iso-implies-birational){.pf-ref} proves the converse.
 This proves (f).
 :::
 
-<1>10. The product $X\cross Y$ is a projective variety.
+:::
 
-::: {.proof}
+::: {.pf-step #product-projective}
+The product $X\cross Y$ is a projective variety.
+
+::: pf-proof
 The product projections show
 $$
 X\cross Y
@@ -356,9 +386,12 @@ Hence $\sigma(X\cross Y)$ is a projective variety isomorphic to $X\cross Y$.
 This proves (g).
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove (a), step <1>3 proves (b), step <1>4 proves (c), step <1>5 proves (d), step <1>6 proves (e), steps <1>7--<1>9 prove (f), and step <1>10 proves (g).
 :::
+
+::: pf-qed
+Steps [](#f-is-projective){.pf-ref} and [](#f-proper-closed){.pf-ref} prove (a), step [](#image-projective-subvariety){.pf-ref} proves (b), step [](#dominant-implies-surjective){.pf-ref} proves (c), step [](#global-functions-constant){.pf-ref} proves (d), step [](#function-field-formula){.pf-ref} proves (e), steps [](#birational-implies-field-iso){.pf-ref}, [](#field-iso-implies-birational){.pf-ref} and [](#birational-criterion){.pf-ref} prove (f), and step [](#product-projective){.pf-ref} proves (g).
+:::
+
+:::
+
 :::

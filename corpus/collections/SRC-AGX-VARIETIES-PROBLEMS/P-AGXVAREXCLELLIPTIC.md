@@ -51,14 +51,17 @@ Compute the divisor class group $\Cl(X)$.
 ::: {.solution}
 Let $\overline X\subseteq\PP^2_k$ be the projective closure of $X$.
 
-<1>1. The curve $\overline X$ is a smooth plane cubic of genus $1$, and
+::: pf
+
+::: {.pf-step #smooth-cubic-genus-one}
+The curve $\overline X$ is a smooth plane cubic of genus $1$, and
 $$
 \overline X\setminus X=\{O\},
 \qquad
 O=[0:1:0].
 $$
 
-::: {.proof}
+::: pf-proof
 In homogeneous coordinates $[X:Y:Z]$,
 $$
 \overline X
@@ -108,25 +111,31 @@ Together with the chosen point $O$, this makes $\overline X$ an elliptic
 curve.
 :::
 
-<1>2. Since $X$ is smooth,
+:::
+
+::: {.pf-step #cl-equals-pic}
+Since $X$ is smooth,
 $$
 \Cl(X)=\Pic(X).
 $$
 
-::: {.proof}
+::: pf-proof
 Every local ring of a smooth curve is a discrete valuation ring. Hence every
 Weil divisor on $X$ is locally principal, so every Weil divisor is Cartier.
 Therefore the Weil divisor class group and the Picard group coincide.
 :::
 
-<1>3. Restriction of divisors induces an isomorphism
+:::
+
+::: {.pf-step #pic-quotient-iso}
+Restriction of divisors induces an isomorphism
 $$
 \Pic(\overline X)\big/\ZZ[O]
 \xrightarrow{\sim}
 \Pic(X).
 $$
 
-::: {.proof}
+::: pf-proof
 Every divisor on $X$ is also a divisor on $\overline X$ whose support avoids
 $O$, so restriction gives a surjection
 $$
@@ -155,14 +164,17 @@ Conversely, the divisor $O$ restricts to the zero divisor on $X$. Hence the
 kernel is exactly $\ZZ[O]$, proving the quotient description.
 :::
 
-<1>4. There is a canonical isomorphism
+:::
+
+::: {.pf-step #pic-quotient-pic0}
+There is a canonical isomorphism
 $$
 \Pic(\overline X)\big/\ZZ[O]
 \xrightarrow{\sim}
 \Pic^0(\overline X).
 $$
 
-::: {.proof}
+::: pf-proof
 The degree homomorphism
 $$
 \deg:\Pic(\overline X)\longrightarrow\ZZ
@@ -180,7 +192,10 @@ $$
 Quotienting by the second summand gives the displayed isomorphism.
 :::
 
-<1>5. The Abel--Jacobi map
+:::
+
+::: {.pf-step #abel-jacobi-iso}
+The Abel--Jacobi map
 $$
 \alpha:\overline X(k)\longrightarrow\Pic^0(\overline X),
 \qquad
@@ -188,7 +203,7 @@ P\longmapsto[P-O],
 $$
 is an isomorphism of groups.
 
-::: {.proof}
+::: pf-proof
 Let $D$ be a divisor of degree $0$ on $\overline X$. Since $\overline X$ has
 genus $1$, Riemann--Roch applied to the degree-one divisor $D+O$ gives
 $$
@@ -213,7 +228,10 @@ Under the usual elliptic-curve group law with identity $O$, this bijection is
 a group isomorphism ([[PR-CRVGRP|the elliptic-curve group law]]).
 :::
 
-<1>6. The divisor class group of the affine curve is
+:::
+
+::: {.pf-step #class-group-formula}
+The divisor class group of the affine curve is
 $$
 \boxed{
 \Cl(X)
@@ -224,8 +242,8 @@ $$
 where $\overline X(k)$ carries its elliptic-curve group law with identity
 $O=[0:1:0]$.
 
-::: {.proof}
-Combining steps <1>2--<1>5 gives
+::: pf-proof
+Combining steps [](#cl-equals-pic){.pf-ref}, [](#pic-quotient-iso){.pf-ref}, [](#pic-quotient-pic0){.pf-ref} and [](#abel-jacobi-iso){.pf-ref} gives
 $$
 \Cl(X)
 \cong
@@ -239,11 +257,14 @@ $$
 $$
 :::
 
-<1>7. Equivalently, every divisor on $X$ is linearly equivalent either to
+:::
+
+::: {.pf-step #every-divisor-point-or-zero}
+Equivalently, every divisor on $X$ is linearly equivalent either to
 $0$ or to a point $P\in X(k)$.
 
-::: {.proof}
-Under the isomorphism of step <1>6, the identity element $O\in\overline X(k)$
+::: pf-proof
+Under the isomorphism of step [](#class-group-formula){.pf-ref}, the identity element $O\in\overline X(k)$
 corresponds to the zero class because the divisor $O$ disappears on
 $X=\overline X\setminus\{O\}$.
 
@@ -256,10 +277,13 @@ $[P]$ on $X$. Hence every nonzero class of $\Cl(X)$ is represented by a
 point of $X$.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 computes the group, and step <1>7 represents each class by $0$ or
+::: pf-qed
+Step [](#class-group-formula){.pf-ref} computes the group, and step [](#every-divisor-point-or-zero){.pf-ref} represents each class by $0$ or
 a point of $X$.
 :::
+
+:::
+
 :::

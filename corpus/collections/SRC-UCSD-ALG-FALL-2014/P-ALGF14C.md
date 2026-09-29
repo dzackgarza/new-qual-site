@@ -46,15 +46,23 @@ such that
 \]
 We show that every ideal is good.
 
-<1>1. If some ideal is not good, then there is a maximal non-good ideal.
-::: {.proof}
+::: pf
+
+::: pf-step
+If some ideal is not good, then there is a maximal non-good ideal.
+
+::: pf-proof
 Because \(A\) is Noetherian, every ascending chain of ideals stabilizes.
 Therefore every nonempty collection of ideals has a maximal element under inclusion.
 If non-good ideals exist, choose one maximal among them and call it \(I\).
 :::
 
-<1>2. The maximal non-good ideal \(I\) is not prime.
-::: {.proof}
+:::
+
+::: {.pf-step #maximal-not-prime}
+The maximal non-good ideal \(I\) is not prime.
+
+::: pf-proof
 If \(I\) were prime, then the one-factor product
 \[
 I
@@ -64,9 +72,13 @@ Thus \(I\) would be good, contrary to its choice.
 Hence \(I\) is not prime.
 :::
 
-<1>3. The existence of a maximal non-good ideal gives a contradiction.
-::: {.proof}
-By <1>2, choose
+:::
+
+::: {.pf-step #no-non-good-ideal}
+The existence of a maximal non-good ideal gives a contradiction.
+
+::: pf-proof
+By step [](#maximal-not-prime){.pf-ref}, choose
 \[
 a,b\notin I
 \qquad\text{with}\qquad
@@ -122,9 +134,13 @@ so \(I\) is good, a contradiction.
 Thus no non-good ideal exists.
 :::
 
-<1>4. There are prime ideals \(\mathfrak p_1,\ldots,\mathfrak p_n\) whose product is the zero ideal.
-::: {.proof}
-By <1>3, every ideal of \(A\) is good.
+:::
+
+::: pf-step
+There are prime ideals \(\mathfrak p_1,\ldots,\mathfrak p_n\) whose product is the zero ideal.
+
+::: pf-proof
+By step [](#no-non-good-ideal){.pf-ref}, every ideal of \(A\) is good.
 Apply this to the zero ideal.
 There exist prime ideals \(\mathfrak p_1,\ldots,\mathfrak p_n\) such that
 \[
@@ -134,5 +150,9 @@ An ideal contained in the zero ideal is the zero ideal itself, so
 \[
 \mathfrak p_1\cdots\mathfrak p_n=(0).
 \]
+:::
+
+:::
+
 :::
 :::

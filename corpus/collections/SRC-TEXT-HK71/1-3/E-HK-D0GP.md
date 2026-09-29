@@ -30,8 +30,12 @@ Prove that the interchange of two rows of a matrix can be accomplished by a fini
 ::: {.solution}
 Suppose the two rows to be interchanged are $R_i$ and $R_j$.
 
-<1>1. Replace $R_i$ by $R_i+R_j$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Replace $R_i$ by $R_i+R_j$.
+
+::: pf-proof
 This is an elementary operation of the type “add a scalar multiple of one row
 to another.” The pair becomes
 \[
@@ -39,24 +43,36 @@ to another.” The pair becomes
 \]
 :::
 
-<1>2. Replace $R_j$ by $R_j-R_i$, where $R_i$ now denotes the new first row.
-::: {.proof}
+:::
+
+::: pf-step
+Replace $R_j$ by $R_j-R_i$, where $R_i$ now denotes the new first row.
+
+::: pf-proof
 The pair becomes
 \[
 (R_i+R_j,\ -R_i).
 \]
 :::
 
-<1>3. Replace $R_i$ by $R_i+R_j$.
-::: {.proof}
+:::
+
+::: pf-step
+Replace $R_i$ by $R_i+R_j$.
+
+::: pf-proof
 The pair becomes
 \[
 (R_j,\ -R_i).
 \]
 :::
 
-<1>4. Multiply $R_j$ by $-1$.
-::: {.proof}
+:::
+
+::: pf-step
+Multiply $R_j$ by $-1$.
+
+::: pf-proof
 This is an elementary row scaling, and the pair becomes
 \[
 (R_j,R_i).
@@ -64,4 +80,9 @@ This is an elementary row scaling, and the pair becomes
 Thus the original rows have been interchanged using only the other two kinds of
 elementary row operations.
 :::
+
+:::
+
+:::
+
 :::

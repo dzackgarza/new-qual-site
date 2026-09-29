@@ -60,9 +60,12 @@ R=S/(F),
 $$
 and write $x_i$ also for the residue class of $x_i$ in $R$.
 
-<1>1. (a) The polynomial $F$ is irreducible in $S$, hence $(F)$ is prime and $R$ is an integral domain.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-irreducible-r-domain}
+(a) The polynomial $F$ is irreducible in $S$, hence $(F)$ is prime and $R$ is an integral domain.
+
+::: pf-proof
 View $F$ as a polynomial of degree one in $x_4$ over
 $$
 A=k[x_1,x_2,x_3].
@@ -91,12 +94,15 @@ The polynomial ring $S$ is a UFD, so every irreducible element is prime.
 Therefore $(F)$ is prime and $R=S/(F)$ is an integral domain.
 :::
 
-<1>2. (a) One has
+:::
+
+::: {.pf-step #dim-r-is-3}
+(a) One has
 $$
 \boxed{\dim R=3}.
 $$
 
-::: {.proof}
+::: pf-proof
 The ideals
 $$
 (0)
@@ -118,7 +124,7 @@ R/\gens{x_1,x_2,x_3,x_4}
 &\cong k,
 \end{aligned}
 $$
-and $(0)$ is prime by step <1>1. Thus $\dim R\ge3$.
+and $(0)$ is prime by step [](#f-irreducible-r-domain){.pf-ref}. Thus $\dim R\ge3$.
 
 Conversely, a strict chain of prime ideals in $R=S/(F)$ lifts to a strict
 chain of prime ideals of $S$ containing $(F)$. Since
@@ -130,9 +136,12 @@ the lifted chain shows that the original chain has length at most $3$.
 Hence $\dim R\le3$.
 :::
 
-<1>3. (b) Each of $x_1,x_2,x_3,x_4$ is irreducible in $R$.
+:::
 
-::: {.proof}
+::: {.pf-step #xi-irreducible}
+(b) Each of $x_1,x_2,x_3,x_4$ is irreducible in $R$.
+
+::: pf-proof
 The relation $F$ is homogeneous of degree $2$, so $R$ is a positively
 graded domain with
 $$
@@ -149,9 +158,12 @@ degrees add to $1$. One factor has degree $0$, hence lies in $k^\times$.
 Thus $x_i$ is irreducible.
 :::
 
-<1>4. (b) None of $x_1,x_2,x_3,x_4$ is prime in $R$.
+:::
 
-::: {.proof}
+::: {.pf-step #xi-not-prime}
+(b) None of $x_1,x_2,x_3,x_4$ is prime in $R$.
+
+::: pf-proof
 The defining relation gives
 $$
 x_1x_4=x_2x_3.
@@ -180,21 +192,24 @@ $$
 Together with $x_1x_4=x_2x_3$, these quotients show in the same way that
 $x_2,x_3,x_4$ are not prime.
 
-By step <1>3 the four elements are irreducible. In a UFD every irreducible
+By step [](#xi-irreducible){.pf-ref} the four elements are irreducible. In a UFD every irreducible
 element is prime, so
 $$
 \boxed{R\text{ is not a UFD}.}
 $$
 :::
 
-<1>5. (c) The equality
+:::
+
+::: {.pf-step #nonassociate-factorizations}
+(c) The equality
 $$
 x_1x_4=x_2x_3
 $$
 gives two factorizations into irreducibles, and no factor in one is associate to a factor in the other.
 
-::: {.proof}
-The equality is the defining relation of $R$, and step <1>3 shows that all
+::: pf-proof
+The equality is the defining relation of $R$, and step [](#xi-irreducible){.pf-ref} shows that all
 four factors are irreducible.
 
 Every unit of $R$ lies in $k^\times$: if $uv=1$, then comparison of the
@@ -209,14 +224,17 @@ $x_i$ are scalar multiples, hence no two are associates. The two displayed
 factorizations are therefore nonassociate.
 :::
 
-<1>6. (d) The ideal
+:::
+
+::: {.pf-step #ideal-prime-codim-one}
+(d) The ideal
 $$
 I=\gens{x_1,x_2}
 $$
 is a prime ideal of codimension $1$.
 
-::: {.proof}
-As in step <1>2,
+::: pf-proof
+As in step [](#dim-r-is-3){.pf-ref},
 $$
 R/I\cong k[x_3,x_4],
 $$
@@ -228,7 +246,7 @@ I
 \subsetneq
 \gens{x_1,x_2,x_3,x_4}
 $$
-consists of prime ideals. Since $\dim R=3$ by step <1>2, there cannot be a
+consists of prime ideals. Since $\dim R=3$ by step [](#dim-r-is-3){.pf-ref}, there cannot be a
 nonzero prime strictly between $(0)$ and $I$, for otherwise adjoining the
 two displayed primes would produce a prime chain of length at least $4$.
 Because $I\ne(0)$ and $R$ is a domain, it follows that
@@ -238,9 +256,12 @@ $$
 Thus $I$ has codimension $1$.
 :::
 
-<1>7. (d) The ideal $I=\gens{x_1,x_2}$ is not principal.
+:::
 
-::: {.proof}
+::: {.pf-step #ideal-not-principal}
+(d) The ideal $I=\gens{x_1,x_2}$ is not principal.
+
+::: pf-proof
 Suppose
 $$
 I=(g).
@@ -249,19 +270,21 @@ Since $I$ is proper, $g$ is not a unit. As $x_1\in I$, write
 $$
 x_1=gh.
 $$
-By the irreducibility of $x_1$ from step <1>3, the factor $h$ must be a
+By the irreducibility of $x_1$ from step [](#xi-irreducible){.pf-ref}, the factor $h$ must be a
 unit. Hence $g$ is associate to $x_1$ and
 $$
 I=(x_1).
 $$
-But step <1>4 shows, in particular, that $x_2\notin(x_1)$, contradicting
+But step [](#xi-not-prime){.pf-ref} shows, in particular, that $x_2\notin(x_1)$, contradicting
 $x_2\in I$. Therefore $I$ is not principal.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove (a), steps <1>3--<1>4 prove (b), step <1>5 proves
-(c), and steps <1>6--<1>7 prove (d).
+::: pf-qed
+Steps [](#f-irreducible-r-domain){.pf-ref} and [](#dim-r-is-3){.pf-ref} prove (a), steps [](#xi-irreducible){.pf-ref} and [](#xi-not-prime){.pf-ref} prove (b), step [](#nonassociate-factorizations){.pf-ref} proves
+(c), and steps [](#ideal-prime-codim-one){.pf-ref} and [](#ideal-not-principal){.pf-ref} prove (d).
+:::
+
 :::
 :::

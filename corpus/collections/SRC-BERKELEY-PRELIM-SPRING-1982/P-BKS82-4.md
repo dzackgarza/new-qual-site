@@ -27,7 +27,10 @@ Let $f:\mathbb R^2\to\mathbb R$ have directional derivatives in every direction 
 :::
 
 ::: {.solution}
-<1>1. The answer is no. Consider
+::: pf
+
+::: {.pf-step #counterexample-function}
+The answer is no. Consider
 $$
 \boxed{
 f(x,y)
@@ -39,11 +42,14 @@ f(x,y)
 }
 $$
 
-::: {.proof}
+::: pf-proof
 This defines a real-valued function on all of $\RR^2$.
 :::
 
-<1>2. The function $f$ has a directional derivative at the origin in every
+:::
+
+::: {.pf-step #directional-derivatives-exist}
+The function $f$ has a directional derivative at the origin in every
 nonzero direction $v=(a,b)$, namely
 $$
 D_vf(0,0)
@@ -51,7 +57,7 @@ D_vf(0,0)
 \frac{a^3}{a^2+b^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $t\ne0$,
 $$
 f(ta,tb)
@@ -72,15 +78,18 @@ $$
 Thus every directional derivative exists.
 :::
 
-<1>3. If $f$ were differentiable at the origin, its derivative would have
+:::
+
+::: {.pf-step #candidate-derivative}
+If $f$ were differentiable at the origin, its derivative would have
 to be the linear map
 $$
 L(h,k)=h.
 $$
 
-::: {.proof}
+::: pf-proof
 Differentiability implies that the directional derivative in each direction
-$v$ equals the derivative applied to $v$. Step <1>2 gives
+$v$ equals the derivative applied to $v$. Step [](#directional-derivatives-exist){.pf-ref} gives
 $$
 D_{(1,0)}f(0,0)=1,
 \qquad
@@ -95,10 +104,13 @@ $$
 By linearity, $L(h,k)=h$.
 :::
 
-<1>4. The differentiability remainder for the map $L$ in step <1>3 does
+:::
+
+::: {.pf-step #remainder-not-vanishing}
+The differentiability remainder for the map $L$ in step [](#candidate-derivative){.pf-ref} does
 not tend to zero.
 
-::: {.proof}
+::: pf-proof
 Along the diagonal $(h,k)=(t,t)$ with $t\ne0$,
 $$
 f(t,t)=\frac{t^3}{2t^2}=\frac t2
@@ -122,18 +134,23 @@ $$
 This does not tend to $0$ as $t\to0$.
 :::
 
-<1>5. Therefore $f$ is not differentiable at the origin although all of
+:::
+
+::: {.pf-step #not-differentiable-conclusion}
+Therefore $f$ is not differentiable at the origin although all of
 its directional derivatives there exist.
 
-::: {.proof}
-If $f$ were differentiable, step <1>3 would identify its derivative with
-$L$, but step <1>4 contradicts the defining remainder estimate for
+::: pf-proof
+If $f$ were differentiable, step [](#candidate-derivative){.pf-ref} would identify its derivative with
+$L$, but step [](#remainder-not-vanishing){.pf-ref} contradicts the defining remainder estimate for
 differentiability.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>5 give the required counterexample.
+::: pf-qed
+Steps [](#counterexample-function){.pf-ref}, [](#directional-derivatives-exist){.pf-ref}, [](#candidate-derivative){.pf-ref}, [](#remainder-not-vanishing){.pf-ref}, and [](#not-differentiable-conclusion){.pf-ref} give the required counterexample.
+:::
+
 :::
 :::

@@ -37,8 +37,12 @@ For a nonzero polynomial $f\in R[x]$, define its content $c(f)$ to be a gcd of
 its coefficients, determined up to a unit. A polynomial is primitive if its
 content is a unit.
 
-<1>1. The product of two primitive polynomials in $R[x]$ is primitive.
-::: {.proof}
+::: pf
+
+::: {.pf-step #primitive-product-primitive}
+The product of two primitive polynomials in $R[x]$ is primitive.
+
+::: pf-proof
 Let $f,g\in R[x]$ be primitive. Suppose a prime element $p\in R$ divided every
 coefficient of $fg$. Reducing modulo $(p)$ gives
 \[
@@ -52,9 +56,13 @@ zero in the polynomial ring over a domain, a contradiction. Thus no prime
 divides all coefficients of $fg$, so $fg$ is primitive.
 :::
 
-<1>2. If $f\in R[x]$ is primitive, then $f$ is reducible in $R[x]$ if and only
+:::
+
+::: {.pf-step #primitive-reducible-iff}
+If $f\in R[x]$ is primitive, then $f$ is reducible in $R[x]$ if and only
 if it is reducible in $K[x]$.
-::: {.proof}
+
+::: pf-proof
 A factorization of the primitive polynomial $f$ into two nonunits of $R[x]$
 has no constant nonunit factor, so both factors have positive degree and
 give a factorization in $K[x]$. For the reverse implication, suppose
@@ -72,7 +80,7 @@ where $a,b\in K^\times$ and $g_0,h_0\in R[x]$ are primitive. Then
 \[
 f=(ab)g_0h_0.
 \]
-By <1>1, $g_0h_0$ is primitive.
+By step [](#primitive-product-primitive){.pf-ref}, $g_0h_0$ is primitive.
 
 We claim that if two primitive polynomials $u,v\in R[x]$ satisfy
 $u=\lambda v$ for some $\lambda\in K^\times$, then $\lambda$ is a unit of
@@ -90,8 +98,12 @@ f=g_0\,(ab\,h_0)
 is a nontrivial factorization in $R[x]$.
 :::
 
-<1>3. Every nonzero nonunit of $R[x]$ factors into irreducibles.
-::: {.proof}
+:::
+
+::: {.pf-step #factors-into-irreducibles}
+Every nonzero nonunit of $R[x]$ factors into irreducibles.
+
+::: pf-proof
 Let $0\ne f\in R[x]$. Write
 \[
 f=c(f)f_0
@@ -110,34 +122,46 @@ $q_i$ by a scalar in $K^\times$. Thus
 f_0=\lambda p_1\cdots p_m
 \]
 for some $\lambda\in K^\times$. Both sides apart from the scalar are primitive
-by <1>1, so the scalar claim from <1>2 gives $\lambda\in R^\times$.
+by step [](#primitive-product-primitive){.pf-ref}, so the scalar claim from step [](#primitive-reducible-iff){.pf-ref} gives $\lambda\in R^\times$.
 
 Each $p_i$ is irreducible in $R[x]$: otherwise it would be reducible in $K[x]$
-by the forward implication of <1>2, contradicting irreducibility of $q_i$. The
+by the forward implication of step [](#primitive-reducible-iff){.pf-ref}, contradicting irreducibility of $q_i$. The
 irreducible factors of $c(f)$ remain irreducible as constant polynomials, since
 any factorization of a nonzero constant in $R[x]$ has constant factors. Hence
 $f$ factors into irreducibles in $R[x]$.
 :::
 
-<1>4. Factorization into irreducibles in $R[x]$ is unique up to order and
+:::
+
+::: {.pf-step #factorization-unique}
+Factorization into irreducibles in $R[x]$ is unique up to order and
 associates.
-::: {.proof}
+
+::: pf-proof
 Separate any factorization of $f$ into its constant irreducible factors and its
 positive-degree primitive irreducible factors. The product of the constant
 factors is, up to a unit, the content $c(f)$, whose factorization is unique in
 $R$.
 
 After dividing by the content, the remaining primitive factorization is a
-factorization of $f_0$ in $K[x]$. By <1>2, each primitive irreducible of
+factorization of $f_0$ in $K[x]$. By step [](#primitive-reducible-iff){.pf-ref}, each primitive irreducible of
 $R[x]$ remains irreducible in $K[x]$. Uniqueness in the UFD $K[x]$ therefore
 matches the positive-degree factors up to scalar associates. If two primitive
-$R[x]$ polynomials are scalar associates in $K[x]$, the scalar claim in <1>2
+$R[x]$ polynomials are scalar associates in $K[x]$, the scalar claim in step [](#primitive-reducible-iff){.pf-ref}
 shows that the scalar is a unit of $R$, so they are already associates in
 $R[x]$. Thus the factorization is unique in $R[x]$.
 :::
 
-<1>5. Therefore $R[x]$ is a UFD.
-::: {.proof}
-Existence is <1>3 and uniqueness is <1>4.
+:::
+
+::: pf-step
+Therefore $R[x]$ is a UFD.
+
+::: pf-proof
+Existence is step [](#factors-into-irreducibles){.pf-ref} and uniqueness is step [](#factorization-unique){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

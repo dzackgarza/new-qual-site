@@ -38,13 +38,17 @@ f(-2)\in\left\{\frac13,-\frac13\right\}.
 :::
 
 ::: {.solution}
-<1>1. In a neighborhood of $0$,
+
+::: pf
+
+::: {.pf-step #f-equals-binomial-series}
+In a neighborhood of $0$,
 $$
 f(z)=(1-4z)^{-1/2},
 $$
 where the branch is the one taking the value $1$ at $0$.
 
-::: {.proof}
+::: pf-proof
 For $\abs z<1/4$, the generalized binomial series gives
 $$
 (1-4z)^{-1/2}
@@ -79,14 +83,17 @@ near $0$. This is exactly the Taylor series of $f$ there, so the two
 holomorphic functions agree on some neighborhood of $0$.
 :::
 
-<1>2. The holomorphic function
+:::
+
+::: {.pf-step #G-vanishes-identically}
+The holomorphic function
 $$
 G(z)=(1-4z)f(z)^2-1
 $$
 vanishes identically on $U$.
 
-::: {.proof}
-The function $G$ is holomorphic on all of $U$. By step <1>1, on a
+::: pf-proof
+The function $G$ is holomorphic on all of $U$. By step [](#f-equals-binomial-series){.pf-ref}, on a
 nonempty neighborhood of $0$ one has
 $$
 f(z)^2=(1-4z)^{-1},
@@ -99,13 +106,16 @@ $$
 on $U$.
 :::
 
-<1>3. At $z=-2$,
+:::
+
+::: {.pf-step #f-minus-2-squared}
+At $z=-2$,
 $$
 f(-2)^2=\frac19.
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+Step [](#G-vanishes-identically){.pf-ref} gives
 $$
 (1-4z)f(z)^2=1
 $$
@@ -116,7 +126,10 @@ $$
 which is the claimed identity.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #f-minus-2-value}
+Therefore
 $$
 \boxed{
 f(-2)\in
@@ -126,16 +139,19 @@ f(-2)\in
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The only complex numbers whose square is $1/9$ are $1/3$ and $-1/3$,
-so the conclusion follows from step <1>3.
+so the conclusion follows from step [](#f-minus-2-squared){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-minus-2-value){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::
 
 ::: {.remark}

@@ -52,7 +52,10 @@ X\subseteq\PP^3
 $$
 be the nonsingular cubic surface and let $D$ be ample.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #h0-h1-structure-sheaf}
+One has
 $$
 \boxed{
 H^0(X,\OO_X)=k,
@@ -60,7 +63,7 @@ H^0(X,\OO_X)=k,
 H^1(X,\OO_X)=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 The cubic surface is
 $$
 X\cong\operatorname{Bl}_{P_1,\ldots,P_6}\PP^2
@@ -85,12 +88,15 @@ H^0(X,\OO_X)=k.
 $$
 :::
 
-<1>2. The divisor class $D$ contains a nonsingular irreducible curve
+:::
+
+::: {.pf-step #nonsingular-curve-in-class}
+The divisor class $D$ contains a nonsingular irreducible curve
 $$
 \boxed{C\in|D|.}
 $$
 
-::: {.proof}
+::: pf-proof
 The ampleness criterion (4.11) gives
 $$
 D\cdot L>0
@@ -107,7 +113,10 @@ C\sim D.
 $$
 :::
 
-<1>3. The line bundle
+:::
+
+::: {.pf-step #h0-negative-d-vanishes}
+The line bundle
 $$
 \OO_X(-D)
 $$
@@ -116,10 +125,10 @@ $$
 \boxed{H^0(X,\OO_X(-D))=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose a nonzero section existed. If it vanished nowhere, it would
 trivialize $\OO_X(-D)$, forcing $D\sim0$ and hence $D^2=0$, contrary to
-step <1>2. Thus its zero divisor is a nonzero effective divisor
+step [](#nonsingular-curve-in-class){.pf-ref}. Thus its zero divisor is a nonzero effective divisor
 $$
 E\sim-D.
 $$
@@ -135,10 +144,13 @@ D\cdot E
 -D^2
 <0,
 $$
-since $D^2>0$ by step <1>2. This contradiction proves the vanishing.
+since $D^2>0$ by step [](#nonsingular-curve-in-class){.pf-ref}. This contradiction proves the vanishing.
 :::
 
-<1>4. The curve $C$ gives an exact sequence
+:::
+
+::: {.pf-step #ideal-sheaf-sequence}
+The curve $C$ gives an exact sequence
 $$
 0
 \longrightarrow
@@ -151,7 +163,7 @@ $$
 0.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $C$ is an effective Cartier divisor linearly equivalent to $D$, its
 ideal sheaf is
 $$
@@ -161,7 +173,10 @@ The standard ideal-sheaf sequence of $C$ is therefore exactly the displayed
 sequence.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #h0-oc-restriction-iso}
+One has
 $$
 \boxed{H^0(C,\OO_C)=k,}
 $$
@@ -171,8 +186,8 @@ H^0(X,\OO_X)\longrightarrow H^0(C,\OO_C)
 $$
 is an isomorphism.
 
-::: {.proof}
-The curve $C$ is nonsingular and irreducible by step <1>2, hence integral
+::: pf-proof
+The curve $C$ is nonsingular and irreducible by step [](#nonsingular-curve-in-class){.pf-ref}, hence integral
 and projective. Thus every global regular function on $C$ is constant:
 $$
 H^0(C,\OO_C)=k.
@@ -185,13 +200,16 @@ $$
 it is therefore the identity map on $k$.
 :::
 
-<1>6. Consequently
+:::
+
+::: {.pf-step #h1-negative-d-vanishes}
+Consequently
 $$
 \boxed{H^1(X,\OO_X(-D))=0.}
 $$
 
-::: {.proof}
-The long exact cohomology sequence of step <1>4 begins
+::: pf-proof
+The long exact cohomology sequence of step [](#ideal-sheaf-sequence){.pf-ref} begins
 $$
 0
 \longrightarrow
@@ -205,7 +223,7 @@ H^1(X,\OO_X(-D))
 \longrightarrow
 H^1(X,\OO_X).
 $$
-By steps <1>1, <1>3, and <1>5 this becomes
+By steps [](#h0-h1-structure-sheaf){.pf-ref}, [](#h0-negative-d-vanishes){.pf-ref}, and [](#h0-oc-restriction-iso){.pf-ref} this becomes
 $$
 0
 \longrightarrow
@@ -225,10 +243,12 @@ H^1(X,\OO_X(-D))=0.
 $$
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>5 establish the cohomological inputs for the divisor sequence,
-and step <1>6 gives the required vanishing.
+::: pf-qed
+Steps [](#h0-h1-structure-sheaf){.pf-ref}, [](#nonsingular-curve-in-class){.pf-ref}, [](#h0-negative-d-vanishes){.pf-ref}, [](#ideal-sheaf-sequence){.pf-ref} and [](#h0-oc-restriction-iso){.pf-ref} establish the cohomological inputs for the divisor sequence,
+and step [](#h1-negative-d-vanishes){.pf-ref} gives the required vanishing.
+:::
+
 :::
 :::

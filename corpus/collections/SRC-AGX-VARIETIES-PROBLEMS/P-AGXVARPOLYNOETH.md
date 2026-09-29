@@ -49,9 +49,13 @@ is a Noetherian ring.
 :::
 
 ::: {.solution}
-<1>1. The field $k$ is Noetherian.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #k-noetherian}
+The field $k$ is Noetherian.
+
+::: pf-proof
 The only ideals of a field are
 $$
 (0)
@@ -62,14 +66,17 @@ Both are finitely generated, so every ideal of $k$ is finitely generated.
 Thus $k$ is Noetherian.
 :::
 
-<1>2. For every integer $r$ with $0\leq r\leq n$, the polynomial ring
+:::
+
+::: {.pf-step #polynomial-ring-noetherian}
+For every integer $r$ with $0\leq r\leq n$, the polynomial ring
 $$
 k[x_1,\ldots,x_r]
 $$
 is Noetherian.
 
-::: {.proof}
-We argue by induction on $r$. The case $r=0$ is step <1>1.
+::: pf-proof
+We argue by induction on $r$. The case $r=0$ is step [](#k-noetherian){.pf-ref}.
 
 Assume
 $$
@@ -93,7 +100,10 @@ $$
 is Noetherian. This completes the induction.
 :::
 
-<1>3. The coordinate ring of affine $n$-space is Noetherian:
+:::
+
+::: {.pf-step #coordinate-ring-noetherian}
+The coordinate ring of affine $n$-space is Noetherian:
 $$
 \boxed{
 \mco(\AA^n_k)=k[x_1,\ldots,x_n]
@@ -101,18 +111,21 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 \mco(\AA^n_k)=k[x_1,\ldots,x_n].
 $$
-Step <1>2 with $r=n$ shows that this polynomial ring is Noetherian.
+Step [](#polynomial-ring-noetherian){.pf-ref} with $r=n$ shows that this polynomial ring is Noetherian.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove the stated Noetherianity of the affine-space
+::: pf-qed
+Steps [](#k-noetherian){.pf-ref}, [](#polynomial-ring-noetherian){.pf-ref} and [](#coordinate-ring-noetherian){.pf-ref} prove the stated Noetherianity of the affine-space
 coordinate ring.
 :::
+
+:::
+
 :::

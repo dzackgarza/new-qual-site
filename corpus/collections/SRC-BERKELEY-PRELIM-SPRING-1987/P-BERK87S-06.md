@@ -41,12 +41,15 @@ $$
 r\coloneqq\frac{1-\abs{z}}{2}.
 $$
 
-<1>1. If $\abs{w-z}=r$, then
+::: pf
+
+::: {.pf-step #circle-inside-disk}
+If $\abs{w-z}=r$, then
 $$
 1-\abs{w}\geq r.
 $$
 
-::: {.proof}
+::: pf-proof
 By the triangle inequality,
 $$
 \abs{w}
@@ -67,15 +70,18 @@ $$
 In particular, the circle $\abs{w-z}=r$ lies inside the open unit disk.
 :::
 
-<1>2. On the circle $\abs{w-z}=r$,
+:::
+
+::: {.pf-step #bound-on-circle}
+On the circle $\abs{w-z}=r$,
 $$
 \abs{f(w)}
 \leq
 \frac{2C}{1-\abs{z}}.
 $$
 
-::: {.proof}
-By the hypothesis and step <1>1,
+::: pf-proof
+By the hypothesis and step [](#circle-inside-disk){.pf-ref},
 $$
 \abs{f(w)}
 \leq
@@ -87,7 +93,10 @@ $$
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #derivative-bound-boxed}
+One has
 $$
 \boxed{
 \abs{f'(z)}
@@ -96,7 +105,7 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The Cauchy derivative estimate on the circle $\abs{w-z}=r$ gives
 $$
 \abs{f'(z)}
@@ -104,7 +113,7 @@ $$
 \frac{1}{r}
 \max_{\abs{w-z}=r}\abs{f(w)}.
 $$
-Using step <1>2 and the definition of $r$,
+Using step [](#bound-on-circle){.pf-ref} and the definition of $r$,
 $$
 \abs{f'(z)}
 \leq
@@ -116,10 +125,12 @@ $$
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-The point $z$ was arbitrary, so step <1>3 proves the required estimate
+::: pf-qed
+The point $z$ was arbitrary, so step [](#derivative-bound-boxed){.pf-ref} proves the required estimate
 throughout the unit disk.
+:::
+
 :::
 :::

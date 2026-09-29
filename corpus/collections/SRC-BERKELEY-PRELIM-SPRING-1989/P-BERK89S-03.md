@@ -33,12 +33,15 @@ Prove that $g$ is continuous on $[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. For every $x\in[0,1]$, there exists $y_x\in[0,1]$ such that
+::: pf
+
+::: {.pf-step #maximizer-exists}
+For every $x\in[0,1]$, there exists $y_x\in[0,1]$ such that
 $$
 g(x)=f(x,y_x).
 $$
 
-::: {.proof}
+::: pf-proof
 For fixed $x$, the function
 $$
 y\longmapsto f(x,y)
@@ -47,7 +50,10 @@ is continuous on the compact interval $[0,1]$. By the extreme-value
 theorem, it attains its maximum at some $y_x\in[0,1]$.
 :::
 
-<1>2. For every $\varepsilon>0$, there exists $\delta>0$ such that
+:::
+
+::: {.pf-step #uniform-continuity}
+For every $\varepsilon>0$, there exists $\delta>0$ such that
 $$
 \abs{x-x'}<\delta
 \quad\Longrightarrow\quad
@@ -55,7 +61,7 @@ $$
 $$
 for all $x,x',y\in[0,1]$.
 
-::: {.proof}
+::: pf-proof
 The square $[0,1]^2$ is compact, and $f$ is continuous on it. Hence $f$
 is uniformly continuous. Therefore, for the given $\varepsilon>0$, there
 exists $\delta>0$ such that points of the square at Euclidean distance
@@ -69,13 +75,16 @@ $$
 which gives the stated implication.
 :::
 
-<1>3. If $\abs{x-x'}<\delta$, with $\delta$ as in step <1>2, then
+:::
+
+::: {.pf-step #upper-comparison}
+If $\abs{x-x'}<\delta$, with $\delta$ as in step [](#uniform-continuity){.pf-ref}, then
 $$
 g(x)\leq g(x')+\varepsilon.
 $$
 
-::: {.proof}
-Choose $y_x$ as in step <1>1. Then step <1>2 gives
+::: pf-proof
+Choose $y_x$ as in step [](#maximizer-exists){.pf-ref}. Then step [](#uniform-continuity){.pf-ref} gives
 $$
 \begin{aligned}
 g(x)
@@ -87,24 +96,30 @@ $$
 The displayed strict inequality implies the stated weak inequality.
 :::
 
-<1>4. Under the same hypothesis,
+:::
+
+::: {.pf-step #lower-comparison}
+Under the same hypothesis,
 $$
 g(x')\leq g(x)+\varepsilon.
 $$
 
-::: {.proof}
-Interchanging $x$ and $x'$ in step <1>3 gives the claim, since
+::: pf-proof
+Interchanging $x$ and $x'$ in step [](#upper-comparison){.pf-ref} gives the claim, since
 $\abs{x'-x}=\abs{x-x'}<\delta$.
 :::
 
-<1>5. The function $g$ is continuous on $[0,1]$.
+:::
 
-::: {.proof}
-By steps <1>3 and <1>4, whenever $\abs{x-x'}<\delta$,
+::: {.pf-step #g-continuous}
+The function $g$ is continuous on $[0,1]$.
+
+::: pf-proof
+By steps [](#upper-comparison){.pf-ref} and [](#lower-comparison){.pf-ref}, whenever $\abs{x-x'}<\delta$,
 $$
 \abs{g(x)-g(x')}\leq\varepsilon.
 $$
-Applying steps <1>2--<1>4 with $\varepsilon/2$ in place of
+Applying steps [](#uniform-continuity){.pf-ref}, [](#upper-comparison){.pf-ref}, and [](#lower-comparison){.pf-ref} with $\varepsilon/2$ in place of
 $\varepsilon$ yields
 $$
 \abs{g(x)-g(x')}<\varepsilon.
@@ -112,9 +127,11 @@ $$
 Thus $g$ is uniformly continuous, hence continuous, on $[0,1]$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 proves the required continuity.
+::: pf-qed
+Step [](#g-continuous){.pf-ref} proves the required continuity.
+:::
+
 :::
 :::

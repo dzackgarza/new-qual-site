@@ -55,12 +55,15 @@ $$
 \mco(\GG_m)=\CC[t,t^{-1}].
 $$
 
-<1>1. The units of $\CC[x]$ are exactly the nonzero constants:
+::: pf
+
+::: {.pf-step #cx-units-constants}
+The units of $\CC[x]$ are exactly the nonzero constants:
 $$
 \CC[x]^\times=\CC^\times.
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 u,v\in\CC[x]
@@ -85,10 +88,13 @@ Thus every unit is a nonzero constant. Conversely every nonzero constant is
 a unit.
 :::
 
-<1>2. The comorphism of $f$ sends the target coordinate $t$ to a nonzero
+:::
+
+::: {.pf-step #comorphism-sends-t-constant}
+The comorphism of $f$ sends the target coordinate $t$ to a nonzero
 constant.
 
-::: {.proof}
+::: pf-proof
 The morphism $f$ corresponds to a homomorphism
 $$
 f^*:\CC[t,t^{-1}]\longrightarrow\CC[x].
@@ -97,7 +103,7 @@ The element $t$ is a unit in the source ring, so
 $$
 f^*(t)
 $$
-must be a unit in $\CC[x]$. By step <1>1, there is a
+must be a unit in $\CC[x]$. By step [](#cx-units-constants){.pf-ref}, there is a
 $$
 c\in\CC^\times
 $$
@@ -107,9 +113,12 @@ f^*(t)=c.
 $$
 :::
 
-<1>3. The morphism $f$ is the constant morphism with value $c$.
+:::
 
-::: {.proof}
+::: {.pf-step #f-is-constant}
+The morphism $f$ is the constant morphism with value $c$.
+
+::: pf-proof
 For a point
 $$
 a\in\AA^1_\CC,
@@ -129,10 +138,13 @@ $$
 for every $a$, so $f$ is constant.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 show that every morphism from the affine line to the
+::: pf-qed
+Steps [](#cx-units-constants){.pf-ref}, [](#comorphism-sends-t-constant){.pf-ref} and [](#f-is-constant){.pf-ref} show that every morphism from the affine line to the
 punctured affine line has constant image.
 :::
+
+:::
+
 :::

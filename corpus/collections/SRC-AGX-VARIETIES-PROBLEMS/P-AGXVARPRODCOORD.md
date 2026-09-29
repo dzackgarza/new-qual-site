@@ -66,9 +66,12 @@ $$
 (x_1,\ldots,x_n,y_1,\ldots,y_m).
 $$
 
-<1>1. The subset $X\cross Y$ is Zariski closed in $\AA^{n+m}_\CC$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #product-is-closed}
+The subset $X\cross Y$ is Zariski closed in $\AA^{n+m}_\CC$.
+
+::: pf-proof
 Let
 $$
 I(X)\subseteq\CC[x_1,\ldots,x_n],
@@ -91,7 +94,10 @@ $$
 Thus $X\cross Y$ is closed.
 :::
 
-<1>2. If $Z\subseteq X\cross Y$ is closed, then
+:::
+
+::: {.pf-step #fiber-condition-closed}
+If $Z\subseteq X\cross Y$ is closed, then
 $$
 X_Z
 =
@@ -99,7 +105,7 @@ X_Z
 $$
 is closed in $X$.
 
-::: {.proof}
+::: pf-proof
 Choose finitely many polynomials
 $$
 F_1,\ldots,F_r\in S
@@ -133,9 +139,12 @@ Zariski closed in $X$. Intersecting these closed conditions for
 $F_1,\ldots,F_r$ gives $X_Z$.
 :::
 
-<1>3. The closed subset $X\cross Y$ is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #product-irreducible}
+The closed subset $X\cross Y$ is irreducible.
+
+::: pf-proof
 Suppose
 $$
 X\cross Y=Z_1\union Z_2
@@ -146,7 +155,7 @@ X_i
 =
 \{x\in X:\{x\}\cross Y\subseteq Z_i\}.
 $$
-By step <1>2, each $X_i$ is closed in $X$.
+By step [](#fiber-condition-closed){.pf-ref}, each $X_i$ is closed in $X$.
 
 Fix $x\in X$. The fibre
 $$
@@ -170,7 +179,10 @@ $$
 Thus $X\cross Y$ is irreducible.
 :::
 
-<1>4. The natural homomorphism
+:::
+
+::: {.pf-step #coordinate-ring-tensor-iso}
+The natural homomorphism
 $$
 \mco(X)\tensor_\CC\mco(Y)
 \longrightarrow
@@ -178,7 +190,7 @@ $$
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
 The quotient map
 $$
 S
@@ -189,7 +201,7 @@ has kernel
 $$
 I(X)S+I(Y)S.
 $$
-By step <1>1 this ideal is contained in
+By step [](#product-is-closed){.pf-ref} this ideal is contained in
 $$
 I(X\cross Y).
 $$
@@ -236,18 +248,24 @@ $$
 $$
 :::
 
-<1>5. The product $X\cross Y$ is an affine variety.
+:::
 
-::: {.proof}
-Step <1>1 shows that it is Zariski closed in affine space, and step <1>3
+::: {.pf-step #product-is-affine}
+The product $X\cross Y$ is an affine variety.
+
+::: pf-proof
+Step [](#product-is-closed){.pf-ref} shows that it is Zariski closed in affine space, and step [](#product-irreducible){.pf-ref}
 shows that it is irreducible. An irreducible Zariski-closed subset of affine
 space is an affine variety.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 proves that $X\cross Y$ is an affine variety, and step <1>4
+::: pf-qed
+Step [](#product-is-affine){.pf-ref} proves that $X\cross Y$ is an affine variety, and step [](#coordinate-ring-tensor-iso){.pf-ref}
 computes its coordinate ring.
 :::
+
+:::
+
 :::

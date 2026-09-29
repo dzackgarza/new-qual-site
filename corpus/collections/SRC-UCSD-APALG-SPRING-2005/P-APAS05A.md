@@ -27,8 +27,13 @@ T(X) = \frac12\bigl(X - X^T\bigr).
 :::
 
 ::: {.solution}
-<1>1. The map $T$ is linear.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #t-is-linear}
+The map $T$ is linear.
+
+::: pf-proof
 For $X,Y\in M_n(\mathbb R)$ and $a,b\in\mathbb R$,
 \[
 \begin{aligned}
@@ -40,7 +45,10 @@ T(aX+bY)
 \]
 :::
 
-<1>2. The null space is the space of symmetric matrices:
+:::
+
+::: {.pf-step #kernel-dimension}
+The null space is the space of symmetric matrices:
 \[
 \ker T=\{X\in M_n(\mathbb R):X^T=X\}.
 \]
@@ -48,7 +56,8 @@ Its dimension is
 \[
 \boxed{\dim\ker T=\frac{n(n+1)}2.}
 \]
-::: {.proof}
+
+::: pf-proof
 We have
 \[
 T(X)=0
@@ -61,7 +70,10 @@ A symmetric matrix is determined freely by its $n$ diagonal entries and its $n(n
 \]
 :::
 
-<1>3. For $M_3(\mathbb R)$, use the ordered standard basis
+:::
+
+::: {.pf-step #matrix-representation}
+For $M_3(\mathbb R)$, use the ordered standard basis
 \[
 \mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
 \]
@@ -81,7 +93,8 @@ Then
 0&0&0&0&0&0&0&0&0
 \end{pmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
 For $i=j$,
 \[
 T(E_{ii})=0.
@@ -98,4 +111,13 @@ T(E_{21})=\frac12(E_{21}-E_{12}),
 \]
 and similarly for the pairs $(1,3)$ and $(2,3)$. Writing these coordinate vectors as the columns of the matrix in the ordered basis $\mathcal B$ gives exactly the displayed matrix.
 :::
+
+:::
+
+::: pf-qed
+Step [](#t-is-linear){.pf-ref} answers part (a); step [](#kernel-dimension){.pf-ref} answers part (b); step [](#matrix-representation){.pf-ref} answers part (c).
+:::
+
+:::
+
 :::

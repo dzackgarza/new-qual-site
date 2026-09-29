@@ -53,14 +53,17 @@ for every $y\in Y$.
 Since a projective morphism is of finite presentation, flatness together
 with smooth geometric fibres implies that $f$ is smooth.
 
-<1>1. If
+::: pf
+
+::: {.pf-step #bundle-implies-degree-one-line-bundle}
+If
 $$
 X\cong\PP_Y(\mce)
 $$
 for a rank-two vector bundle $\mce$ on $Y$, then $X$ has a relative
 degree-one line bundle.
 
-::: {.proof}
+::: pf-proof
 The projective bundle carries its tautological quotient line bundle
 $$
 \OO_{\PP_Y(\mce)}(1).
@@ -72,7 +75,10 @@ $$
 its restriction is $\OO_{\PP^1}(1)$, which has degree $1$.
 :::
 
-<1>2. Conversely, suppose $\mcl$ is a relative degree-one line bundle.
+:::
+
+::: {.pf-step #fibre-cohomology-h0-h1}
+Conversely, suppose $\mcl$ is a relative degree-one line bundle.
 For every fibre $C=X_y$,
 $$
 h^0(C,\mcl_y)=2,
@@ -80,7 +86,7 @@ h^0(C,\mcl_y)=2,
 h^1(C,\mcl_y)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 The curve $C$ is smooth proper of genus $0$, and
 $$
 \deg\mcl_y=1.
@@ -105,7 +111,10 @@ $$
 so it has no nonzero section. Hence $h^1=0$ and $h^0=2$.
 :::
 
-<1>3. The sheaf
+:::
+
+::: {.pf-step #pushforward-locally-free-rank-2}
+The sheaf
 $$
 \mce=f_*\mcl
 $$
@@ -116,9 +125,9 @@ $$
 H^0(X_y,\mcl_y).
 $$
 
-::: {.proof}
+::: pf-proof
 The line bundle $\mcl$ is flat over $Y$ because it is locally free over
-$\OO_X$ and $X$ is flat over $Y$. By step <1>2, the fibre dimensions
+$\OO_X$ and $X$ is flat over $Y$. By step [](#fibre-cohomology-h0-h1){.pf-ref}, the fibre dimensions
 $$
 h^0(X_y,\mcl_y)=2
 $$
@@ -127,15 +136,18 @@ $f_*\mcl$ is locally free of rank $2$ and commutes with restriction to
 every fibre.
 :::
 
-<1>4. For every fibre $C=X_y$, the line bundle $\mcl_y$ is isomorphic to
+:::
+
+::: {.pf-step #fibre-isomorphic-p1}
+For every fibre $C=X_y$, the line bundle $\mcl_y$ is isomorphic to
 $\OO_{\PP^1}(1)$ after identifying $C\cong\PP^1_{\kappa(y)}$, and its
 complete linear system defines an isomorphism
 $$
 C\xrightarrow{\sim}\PP\bigl(H^0(C,\mcl_y)\bigr).
 $$
 
-::: {.proof}
-By step <1>2, $\mcl_y$ has a nonzero section. Its zero divisor is an
+::: pf-proof
+By step [](#fibre-cohomology-h0-h1){.pf-ref}, $\mcl_y$ has a nonzero section. Its zero divisor is an
 effective divisor of degree $1$, hence a single $\kappa(y)$-rational point
 $p$. A smooth proper genus-zero curve with a rational point is
 $\PP^1_{\kappa(y)}$ [[D-VARSEVBRAUER]], and under such an identification
@@ -146,7 +158,10 @@ The complete linear system of $\OO_{\PP^1}(1)$ is the standard
 isomorphism to projective one-space.
 :::
 
-<1>5. The evaluation homomorphism
+:::
+
+::: {.pf-step #evaluation-map-fibrewise-iso}
+The evaluation homomorphism
 $$
 f^*\mce\longrightarrow\mcl
 $$
@@ -156,14 +171,14 @@ g:X\longrightarrow\PP_Y(\mce)
 $$
 whose restriction to every fibre is an isomorphism.
 
-::: {.proof}
-By step <1>3, restriction of the evaluation map to $X_y$ is
+::: pf-proof
+By step [](#pushforward-locally-free-rank-2){.pf-ref}, restriction of the evaluation map to $X_y$ is
 $$
 H^0(X_y,\mcl_y)\tensor\OO_{X_y}
 \longrightarrow
 \mcl_y.
 $$
-By step <1>4 this is the usual evaluation map for $\OO_{\PP^1}(1)$, so
+By step [](#fibre-isomorphic-p1){.pf-ref} this is the usual evaluation map for $\OO_{\PP^1}(1)$, so
 it is surjective. The cokernel of the global evaluation map is coherent
 and has zero restriction to every fibre; Nakayama's lemma therefore
 implies that the cokernel is zero.
@@ -173,23 +188,26 @@ $$
 f^*\mce\twoheadrightarrow\mcl
 $$
 defines the displayed morphism to the projective bundle. Base change in
-step <1>3 identifies its fibre map with the complete-linear-system map in
-step <1>4, hence
+step [](#pushforward-locally-free-rank-2){.pf-ref} identifies its fibre map with the complete-linear-system map in
+step [](#fibre-isomorphic-p1){.pf-ref}, hence
 $$
 g_y:X_y\xrightarrow{\sim}\PP(\mce_y)
 $$
 for every $y$.
 :::
 
-<1>6. The morphism $g$ is an isomorphism. Thus a relative degree-one line
+:::
+
+::: {.pf-step #g-is-isomorphism}
+The morphism $g$ is an isomorphism. Thus a relative degree-one line
 bundle makes $X$ a Zariski $\PP^1$-bundle.
 
-::: {.proof}
+::: pf-proof
 The morphism $g$ is proper because $X$ is proper over $Y$ and
 $\PP_Y(\mce)$ is separated over $Y$. Since every fibre map $g_y$ is an
 isomorphism, $g$ is quasi-finite. Proper and quasi-finite implies finite.
 
-The map on the generic fibre is an isomorphism by step <1>5, so $g$ is
+The map on the generic fibre is an isomorphism by step [](#evaluation-map-fibrewise-iso){.pf-ref}, so $g$ is
 birational. Since $Y$ is smooth and $\mce$ is locally free,
 $$
 \PP_Y(\mce)
@@ -202,7 +220,10 @@ g:X\xrightarrow{\sim}\PP_Y(\mce).
 $$
 :::
 
-<1>7. Hence
+:::
+
+::: {.pf-step #equivalence-statement}
+Hence
 $$
 \boxed{
 X\cong\PP_Y(\mce)\text{ for a rank-two }\mce
@@ -211,15 +232,18 @@ X\text{ carries a relative degree-one line bundle}.
 }
 $$
 
-::: {.proof}
-Step <1>1 proves the forward implication and steps <1>2--<1>6 prove the
+::: pf-proof
+Step [](#bundle-implies-degree-one-line-bundle){.pf-ref} proves the forward implication and steps [](#fibre-cohomology-h0-h1){.pf-ref}, [](#pushforward-locally-free-rank-2){.pf-ref}, [](#fibre-isomorphic-p1){.pf-ref}, [](#evaluation-map-fibrewise-iso){.pf-ref} and [](#g-is-isomorphism){.pf-ref} prove the
 reverse implication.
 :::
 
-<1>8. Tsen's theorem supplies such a degree-one line bundle for the
+:::
+
+::: {.pf-step #tsen-gives-degree-one-bundle}
+Tsen's theorem supplies such a degree-one line bundle for the
 generic genus-zero fibre.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 K=k(Y)
@@ -260,18 +284,24 @@ $$
 has relative degree $1$.
 :::
 
-<1>9. In particular, over a smooth curve $Y$ over an algebraically closed
+:::
+
+::: {.pf-step #bundle-conclusion}
+In particular, over a smooth curve $Y$ over an algebraically closed
 field, every such smooth genus-zero family is a Zariski $\PP^1$-bundle.
 
-::: {.proof}
-Step <1>8 constructs a relative degree-one line bundle, and step <1>7
+::: pf-proof
+Step [](#tsen-gives-degree-one-bundle){.pf-ref} constructs a relative degree-one line bundle, and step [](#equivalence-statement){.pf-ref}
 applies the criterion.
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>7 proves the requested equivalence, and steps <1>8--<1>9 use
+::: pf-qed
+Step [](#equivalence-statement){.pf-ref} proves the requested equivalence, and steps [](#tsen-gives-degree-one-bundle){.pf-ref} and [](#bundle-conclusion){.pf-ref} use
 Tsen's theorem to produce the relative degree-one line bundle.
 :::
+
+:::
+
 :::

@@ -38,9 +38,12 @@ If $r=0$, then $G$ is a union of finitely many left cosets of $K$, contrary
 to $[G:K]=\infty$; similarly, $s=0$ contradicts $[G:H]=\infty$. Hence we may
 assume $r,s\geq1$.
 
-<1>1. The subgroup $L$ has finite index in $H$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #l-finite-index-in-h}
+The subgroup $L$ has finite index in $H$.
+
+::: pf-proof
 Since $H$ has infinite index in $G$, there is a left coset $gH$ distinct from
 all of the finitely many cosets $a_iH$. Distinct left cosets of $H$ are
 disjoint, so the assumed cover gives
@@ -63,24 +66,30 @@ Thus every nonempty set in the preceding finite union is a left coset of
 $L$ in $H$. Hence $[H:L]<\infty$.
 :::
 
-<1>2. The subgroup $L$ has finite index in $K$.
+:::
 
-::: {.proof}
+::: {.pf-step #l-finite-index-in-k}
+The subgroup $L$ has finite index in $K$.
+
+::: pf-proof
 Since $K$ also has infinite index in $G$, choose a left coset $g'K$ distinct
 from every listed coset $b_jK$. Then the assumed cover forces
 $$
 g'K\subseteq\bigcup_{i=1}^r a_iH.
 $$
 Multiplying by $(g')^{-1}$ and repeating the intersection argument from step
-<1>1, with $H$ and $K$ interchanged, writes $K$ as a finite union of left
+[](#l-finite-index-in-h){.pf-ref}, with $H$ and $K$ interchanged, writes $K$ as a finite union of left
 cosets of $K\cap H=L$. Therefore $[K:L]<\infty$.
 :::
 
-<1>3. The assumed finite cover is impossible.
+:::
 
-::: {.proof}
-By step <1>1, every left coset of $H$ is a finite union of left cosets of
-$L$. By step <1>2, the same is true for every left coset of $K$. Hence the
+::: {.pf-step #contradiction}
+The assumed finite cover is impossible.
+
+::: pf-proof
+By step [](#l-finite-index-in-h){.pf-ref}, every left coset of $H$ is a finite union of left cosets of
+$L$. By step [](#l-finite-index-in-k){.pf-ref}, the same is true for every left coset of $K$. Hence the
 assumed finite cover of $G$ refines to a finite cover of $G$ by left cosets of
 $L$. Thus $[G:L]<\infty$.
 
@@ -92,10 +101,12 @@ $$
 This contradicts the hypothesis that $H$ has infinite index in $G$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 contradicts the existence of any finite union of left cosets of
+::: pf-qed
+Step [](#contradiction){.pf-ref} contradicts the existence of any finite union of left cosets of
 $H$ and $K$ equal to $G$.
+:::
+
 :::
 :::

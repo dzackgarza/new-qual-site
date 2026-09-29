@@ -39,12 +39,16 @@ The equation $AX=cX$ is equivalent to
 (A-cI)X=0.
 \]
 
-<1>1. The solutions of $AX=2X$ are
+::: pf
+
+::: pf-step
+The solutions of $AX=2X$ are
 \[
 X=t\begin{bmatrix}1\\1\\1\end{bmatrix},
 \qquad t\in F.
 \]
-::: {.proof}
+
+::: pf-proof
 For $c=2$,
 \[
 A-2I=
@@ -64,12 +68,16 @@ Hence $x_1=x_3$ and $x_2=x_3$, giving the stated one-dimensional solution
 space.
 :::
 
-<1>2. The solutions of $AX=3X$ are
+:::
+
+::: pf-step
+The solutions of $AX=3X$ are
 \[
 X=t\begin{bmatrix}0\\0\\1\end{bmatrix},
 \qquad t\in F.
 \]
-::: {.proof}
+
+::: pf-proof
 For $c=3$,
 \[
 A-3I=
@@ -87,4 +95,9 @@ A-3I=
 \]
 Thus $x_1=x_2=0$ and $x_3$ is arbitrary.
 :::
+
+:::
+
+:::
+
 :::

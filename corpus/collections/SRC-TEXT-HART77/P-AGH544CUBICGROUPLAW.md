@@ -55,7 +55,10 @@ two named points coincide, the corresponding secant line is interpreted as
 the tangent line at that regular point. This is exactly the usual
 chord-and-tangent convention.
 
-<1>1. For part (a), let
+::: pf
+
+::: {.pf-step #nine-point-divisor}
+For part (a), let
 $$
 M_P=PP',
 \qquad
@@ -72,7 +75,7 @@ $$
 P+P'+P''+Q+Q'+Q''+R+R'+R''.
 $$
 
-::: {.proof}
+::: pf-proof
 Each line $M_P$ meets the irreducible plane cubic $C$ in a divisor of degree
 $3$:
 $$
@@ -84,7 +87,10 @@ has no common component with $C$, and Bezout gives the displayed total
 intersection divisor of degree $9$.
 :::
 
-<1>2. Assume first that the nine intersections displayed in step <1>1 are
+:::
+
+::: {.pf-step #eight-points-on-reducible-cubic}
+Assume first that the nine intersections displayed in step [](#nine-point-divisor){.pf-ref} are
 distinct reduced points. Let
 $$
 N=P''Q''
@@ -98,7 +104,7 @@ $$
 P,Q,R,P',Q',R',P'',Q''.
 $$
 
-::: {.proof}
+::: pf-proof
 By hypothesis,
 $$
 P,Q,R\in L,
@@ -112,14 +118,17 @@ $$
 Thus all the listed points lie on $D'$.
 :::
 
-<1>3. Under the reducedness hypothesis of step <1>2, the ninth point $R''$
+:::
+
+::: {.pf-step #cayley-bacharach-collinear-reduced}
+Under the reducedness hypothesis of step [](#eight-points-on-reducible-cubic){.pf-ref}, the ninth point $R''$
 lies on $N$. Hence
 $$
 P'',Q'',R''
 $$
 are collinear.
 
-::: {.proof}
+::: pf-proof
 Apply the Cayley--Bacharach theorem (4.5) to the two cubics $C$ and $D$.
 They have no common component, and $D'$ contains eight of their nine distinct
 intersection points. Therefore Cayley--Bacharach forces $D'$ to contain the
@@ -147,10 +156,13 @@ $$
 This proves part (a).
 :::
 
-<1>4. The conclusion of part (a) remains valid with arbitrary intersection
+:::
+
+::: {.pf-step #collinear-with-multiplicity}
+The conclusion of part (a) remains valid with arbitrary intersection
 multiplicities, including tangent and coincident-point cases.
 
-::: {.proof}
+::: pf-proof
 Write $H$ for the hyperplane divisor class on the integral plane cubic $C$.
 Every line cuts a Cartier divisor linearly equivalent to $H$. Thus, with
 intersection multiplicities understood,
@@ -207,12 +219,15 @@ $\PP^2$. Hence some line cuts $C$ in exactly $Z$, counted with
 multiplicity. This says precisely that $P'',Q'',R''$ are collinear in the
 chord-and-tangent sense.
 
-Step <1>3 is the Cayley--Bacharach proof requested in (4.5); the present
+Step [](#cayley-bacharach-collinear-reduced){.pf-ref} is the Cayley--Bacharach proof requested in (4.5); the present
 argument supplies the scheme-theoretic completion when points coalesce or a
 line becomes tangent.
 :::
 
-<1>5. For regular points $X,Y\in C$, write
+:::
+
+::: {.pf-step #group-law-via-star-and-iota}
+For regular points $X,Y\in C$, write
 $$
 X*Y
 $$
@@ -226,13 +241,16 @@ $$
 \boxed{X+Y=\iota(X*Y).}
 $$
 
-::: {.proof}
+::: pf-proof
 By definition, the line $XY$ meets $C$ a third time at $X*Y$. The line
 $P_0(X*Y)$ then meets $C$ a third time at $\iota(X*Y)$. This is exactly the
 two-line recipe defining $X+Y$.
 :::
 
-<1>6. Fix regular points $P,Q,R$ and define
+:::
+
+::: {.pf-step #two-collinear-triples}
+Fix regular points $P,Q,R$ and define
 $$
 A=P*Q,
 \qquad
@@ -254,7 +272,7 @@ T,B,P_0
 $$
 are collinear triples on $C$.
 
-::: {.proof}
+::: pf-proof
 The first triple is collinear by the definition of $A=P*Q$. For the second,
 $T=\iota(B)=P_0*B$ is by definition the third point on the line through
 $P_0$ and $B$. Hence
@@ -264,7 +282,10 @@ $$
 are collinear as well.
 :::
 
-<1>7. Let
+:::
+
+::: {.pf-step #v-r-s-collinear}
+Let
 $$
 V=P*T
 $$
@@ -273,8 +294,8 @@ $$
 \boxed{V,R,S\text{ are collinear}.}
 $$
 
-::: {.proof}
-Apply part (a) to the two collinear triples from step <1>6, pairing them as
+::: pf-proof
+Apply part (a) to the two collinear triples from step [](#two-collinear-triples){.pf-ref}, pairing them as
 $$
 (P,Q,A)
 \qquad\text{and}\qquad
@@ -302,13 +323,16 @@ V,R,S.
 $$
 :::
 
-<1>8. The point $V$ is also the third point on the line $SR$:
+:::
+
+::: {.pf-step #v-equals-s-star-r}
+The point $V$ is also the third point on the line $SR$:
 $$
 \boxed{V=S*R.}
 $$
 
-::: {.proof}
-Step <1>7 says that $S,R,V$ lie on one line. A line meets the cubic in a
+::: pf-proof
+Step [](#v-r-s-collinear){.pf-ref} says that $S,R,V$ lie on one line. A line meets the cubic in a
 degree-three divisor, counted with multiplicity. Since $S$ and $R$ are the
 first two intersections in the chord-and-tangent convention, its third
 intersection is exactly $S*R$. Hence
@@ -317,13 +341,16 @@ V=S*R.
 $$
 :::
 
-<1>9. The operation is associative:
+:::
+
+::: {.pf-step #associativity}
+The operation is associative:
 $$
 \boxed{(P+Q)+R=P+(Q+R).}
 $$
 
-::: {.proof}
-Using step <1>5 and the definitions of $S,T,V$,
+::: pf-proof
+Using step [](#group-law-via-star-and-iota){.pf-ref} and the definitions of $S,T,V$,
 $$
 \begin{aligned}
 (P+Q)+R
@@ -332,7 +359,7 @@ $$
 &=\iota(V)
 \end{aligned}
 $$
-by step <1>8. On the other hand,
+by step [](#v-equals-s-star-r){.pf-ref}. On the other hand,
 $$
 \begin{aligned}
 P+(Q+R)
@@ -347,15 +374,17 @@ $$
 $$
 
 The tangent interpretation covers the cases in which some of the points
-coincide; step <1>4 proves part (a) with precisely those intersection
+coincide; step [](#collinear-with-multiplicity){.pf-ref} proves part (a) with precisely those intersection
 multiplicities, so the same calculation remains valid.
 This proves part (b).
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove the cubic lemma in part (a), and steps <1>5--<1>9 use
+::: pf-qed
+Steps [](#nine-point-divisor){.pf-ref}, [](#eight-points-on-reducible-cubic){.pf-ref}, [](#cayley-bacharach-collinear-reduced){.pf-ref} and [](#collinear-with-multiplicity){.pf-ref} prove the cubic lemma in part (a), and steps [](#group-law-via-star-and-iota){.pf-ref}, [](#two-collinear-triples){.pf-ref}, [](#v-r-s-collinear){.pf-ref}, [](#v-equals-s-star-r){.pf-ref} and [](#associativity){.pf-ref} use
 that lemma to prove associativity of the chord-and-tangent law.
+:::
+
 :::
 :::

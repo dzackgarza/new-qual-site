@@ -39,8 +39,13 @@ Prove that $H\normal G$.
 :::
 
 ::: {.solution}
-<1>1. For each $g\in G$, conjugation by $g$ restricts to an automorphism of $K$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #conjugation-restricts-to-automorphism-of-k}
+For each $g\in G$, conjugation by $g$ restricts to an automorphism of $K$.
+
+::: pf-proof
 Since $K\normal G$,
 \[
 gKg^{-1}=K
@@ -60,10 +65,14 @@ c_g|_K:K\longrightarrow K
 is an automorphism of $K$.
 :::
 
-<1>2. Every conjugation by an element of $G$ preserves $H$.
-::: {.proof}
+:::
+
+::: pf-step
+Every conjugation by an element of $G$ preserves $H$.
+
+::: pf-proof
 Because $H$ is characteristic in $K$, every automorphism of $K$ maps $H$ to itself.
-Applying this to the automorphism $c_g|_K$ from <1>1 gives
+Applying this to the automorphism $c_g|_K$ from step [](#conjugation-restricts-to-automorphism-of-k){.pf-ref} gives
 \[
 gHg^{-1}
 =c_g(H)
@@ -72,12 +81,20 @@ gHg^{-1}
 for every $g\in G$.
 :::
 
-<1>3. Hence $H\normal G$.
-::: {.proof}
+:::
+
+::: pf-step
+Hence $H\normal G$.
+
+::: pf-proof
 The equality
 \[
 gHg^{-1}=H
 \]
 for all $g\in G$ is exactly the normality criterion.
+:::
+
+:::
+
 :::
 :::

@@ -44,7 +44,10 @@ h_{ij}=\frac1{i+j-1}.
 \]
 We first prove the inverse formula for a general Cauchy matrix and then specialize it.
 
-<1>1. Let $x_1,\ldots,x_n$ and $y_1,\ldots,y_n$ be scalars such that the $x_i$ are distinct, the $y_i$ are distinct, and $x_i+y_j\ne0$ for all $i,j$. For
+::: pf
+
+::: {.pf-step #cauchy-matrix-inverse-formula}
+Let $x_1,\ldots,x_n$ and $y_1,\ldots,y_n$ be scalars such that the $x_i$ are distinct, the $y_i$ are distinct, and $x_i+y_j\ne0$ for all $i,j$. For
 \[
 C_{ij}=\frac1{x_i+y_j},
 \]
@@ -61,7 +64,8 @@ one has
 \displaystyle\prod_{k\ne i}(y_i-y_k)
 }.
 \]
-::: {.proof}
+
+::: pf-proof
 Fix $j$. Define
 \[
 R_j(z)=
@@ -101,7 +105,10 @@ Evaluating the partial-fraction expansion at $z=x_m$ yields
 Thus the matrix $B=(b_{ij})$ satisfies $CB=I$, hence $B=C^{-1}$.
 :::
 
-<1>2. For the Hilbert matrix take
+:::
+
+::: {.pf-step #hilbert-inverse-formula}
+For the Hilbert matrix take
 \[
 x_j=j-1,\qquad y_i=i.
 \]
@@ -112,8 +119,9 @@ Then
 \frac{(n+i-1)!(n+j-1)!}
 {(i+j-1)(i-1)!^2(j-1)!^2(n-i)!(n-j)!}.
 \]
-::: {.proof}
-In the formula of <1>1,
+
+::: pf-proof
+In the formula of step [](#cauchy-matrix-inverse-formula){.pf-ref},
 \[
 \prod_{k=1}^n(x_j+y_k)=\frac{(n+j-1)!}{(j-1)!},
 \qquad
@@ -132,19 +140,32 @@ and
 Since $(-1)^{2n-i-j}=(-1)^{i+j}$, substitution gives the displayed expression.
 :::
 
-<1>3. Equivalently,
+:::
+
+::: {.pf-step #hilbert-inverse-binomial-form}
+Equivalently,
 \[
 (H_n^{-1})_{ij}=(-1)^{i+j}(i+j-1)
 \binom{n+i-1}{n-j}
 \binom{n+j-1}{n-i}
 \binom{i+j-2}{i-1}^{\!2}.
 \]
-::: {.proof}
-Expanding the three binomial coefficients into factorials and cancelling gives exactly the expression in <1>2.
+
+::: pf-proof
+Expanding the three binomial coefficients into factorials and cancelling gives exactly the expression in step [](#hilbert-inverse-formula){.pf-ref}.
 :::
 
-<1>4. Hence $H_n$ is invertible and every entry of $H_n^{-1}$ is an integer.
-::: {.proof}
-The matrix in <1>3 is an inverse by <1>1--<1>3. Every factor in the formula of <1>3 is an integer, so every inverse entry is an integer.
 :::
+
+::: pf-step
+Hence $H_n$ is invertible and every entry of $H_n^{-1}$ is an integer.
+
+::: pf-proof
+The matrix in step [](#hilbert-inverse-binomial-form){.pf-ref} is an inverse by steps [](#cauchy-matrix-inverse-formula){.pf-ref}, [](#hilbert-inverse-formula){.pf-ref}, and [](#hilbert-inverse-binomial-form){.pf-ref}. Every factor in the formula of step [](#hilbert-inverse-binomial-form){.pf-ref} is an integer, so every inverse entry is an integer.
+:::
+
+:::
+
+:::
+
 :::

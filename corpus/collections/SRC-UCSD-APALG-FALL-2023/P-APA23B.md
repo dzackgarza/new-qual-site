@@ -29,7 +29,11 @@ where $\lambda_1(C)$ and $\lambda_n(C)$ denote the largest and smallest eigenval
 :::
 
 ::: {.solution}
-<1>1. Every matrix $A\in M_n$ has a decomposition
+
+::: pf
+
+::: {.pf-step #hermitian-splitting-exists}
+Every matrix $A\in M_n$ has a decomposition
 \[
 A=S+iT
 \]
@@ -39,7 +43,8 @@ S=\frac{A+A^H}{2},
 \qquad
 T=\frac{A-A^H}{2i}.
 \]
-::: {.proof}
+
+::: pf-proof
 One has
 \[
 S^H=\frac{A^H+A}{2}=S
@@ -55,8 +60,12 @@ S+iT
 \]
 :::
 
-<1>2. The decomposition in <1>1 is unique.
-::: {.proof}
+:::
+
+::: {.pf-step #hermitian-splitting-unique}
+The decomposition in step [](#hermitian-splitting-exists){.pf-ref} is unique.
+
+::: pf-proof
 Suppose
 \[
 A=S_1+iT_1=S_2+iT_2
@@ -74,13 +83,17 @@ T_1=T_2=\frac{A-A^H}{2i}.
 This proves part (a).
 :::
 
-<1>3. Let $Av=\lambda v$ with $v\ne0$. Then
+:::
+
+::: {.pf-step #eigenvalue-real-imag-as-rayleigh}
+Let $Av=\lambda v$ with $v\ne0$. Then
 \[
 \operatorname{Re}\lambda=\frac{v^HSv}{v^Hv},
 \qquad
 \operatorname{Im}\lambda=\frac{v^HTv}{v^Hv}.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $A=S+iT$,
 \[
 \lambda v^Hv=v^HAv=v^HSv+i\,v^HTv.
@@ -88,11 +101,15 @@ Since $A=S+iT$,
 Because $S$ and $T$ are Hermitian, both $v^HSv$ and $v^HTv$ are real. Taking real and imaginary parts and dividing by the positive scalar $v^Hv$ gives the formulas.
 :::
 
-<1>4. If $C$ is Hermitian with smallest and largest eigenvalues $\lambda_n(C)$ and $\lambda_1(C)$, then for every nonzero $v$,
+:::
+
+::: {.pf-step #rayleigh-quotient-bound}
+If $C$ is Hermitian with smallest and largest eigenvalues $\lambda_n(C)$ and $\lambda_1(C)$, then for every nonzero $v$,
 \[
 \lambda_n(C)\le \frac{v^HCv}{v^Hv}\le\lambda_1(C).
 \]
-::: {.proof}
+
+::: pf-proof
 Choose an orthonormal eigenbasis $u_1,\ldots,u_n$ of $C$ and write
 \[
 v=\sum_j c_j u_j,
@@ -107,14 +124,27 @@ Then
 which is a convex combination of the real eigenvalues $\mu_j$. Hence it lies between the smallest and largest eigenvalues.
 :::
 
-<1>5. Therefore every eigenvalue $\lambda$ of $A$ satisfies
+:::
+
+::: {.pf-step #eigenvalue-bounds}
+Therefore every eigenvalue $\lambda$ of $A$ satisfies
 \[
 \boxed{
 \lambda_n(S)\le\operatorname{Re}\lambda\le\lambda_1(S),
 \qquad
 \lambda_n(T)\le\operatorname{Im}\lambda\le\lambda_1(T).}
 \]
-::: {.proof}
-Apply <1>4 first to $C=S$ and then to $C=T$, and use the identities in <1>3. This proves part (b).
+
+::: pf-proof
+Apply step [](#rayleigh-quotient-bound){.pf-ref} first to $C=S$ and then to $C=T$, and use the identities in step [](#eigenvalue-real-imag-as-rayleigh){.pf-ref}. This proves part (b).
 :::
+
+:::
+
+::: pf-qed
+Step [](#hermitian-splitting-unique){.pf-ref} answers part (a); step [](#eigenvalue-bounds){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

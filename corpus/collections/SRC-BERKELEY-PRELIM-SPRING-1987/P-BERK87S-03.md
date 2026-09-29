@@ -43,9 +43,12 @@ g\coloneqq f^2,
 h\coloneqq f^3.
 $$
 
-<1>1. If $g\equiv0$, then $f$ is analytic on $D$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #trivial-case}
+If $g\equiv0$, then $f$ is analytic on $D$.
+
+::: pf-proof
 For every $z\in D$,
 $$
 f(z)^2=g(z)=0,
@@ -53,7 +56,10 @@ $$
 so $f\equiv0$, which is analytic.
 :::
 
-<1>2. Assume $g\not\equiv0$. On
+:::
+
+::: {.pf-step #f-analytic-on-u}
+Assume $g\not\equiv0$. On
 $$
 U\coloneqq\{z\in D:g(z)\ne0\},
 $$
@@ -63,7 +69,7 @@ f=\frac{h}{g},
 $$
 so $f$ is analytic on $U$.
 
-::: {.proof}
+::: pf-proof
 If $z\in U$, then $g(z)=f(z)^2\ne0$, hence $f(z)\ne0$. Therefore
 $$
 \frac{h(z)}{g(z)}
@@ -76,16 +82,19 @@ Since $g$ and $h$ are analytic and $g$ does not vanish on $U$, the quotient
 $h/g$ is analytic on $U$.
 :::
 
-<1>3. Let $a\in D$ satisfy $g(a)=0$. Then $f$ is analytic in a neighborhood
+:::
+
+::: {.pf-step #f-analytic-near-zero}
+Let $a\in D$ satisfy $g(a)=0$. Then $f$ is analytic in a neighborhood
 of $a$.
 
-::: {.proof}
+::: pf-proof
 Because $g$ is analytic and not identically zero, its zeros are isolated.
 Choose $r>0$ such that
 $$
 \{z:0<\abs{z-a}<r\}\subseteq U.
 $$
-On this punctured disk, step <1>2 gives
+On this punctured disk, step [](#f-analytic-on-u){.pf-ref} gives
 $$
 \frac{h(z)}{g(z)}=f(z).
 $$
@@ -116,17 +125,22 @@ so $f(a)=0$. Thus the analytic extension agrees with the original function
 $f$ at $a$, proving that $f$ is analytic near $a$.
 :::
 
-<1>4. The function $f$ is analytic on all of $D$.
-
-::: {.proof}
-By step <1>2, $f$ is analytic at every point where $g$ is nonzero. By step
-<1>3, it is analytic at every zero of $g$. These two sets cover $D$.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #f-analytic-everywhere}
+The function $f$ is analytic on all of $D$.
 
-::: {.proof}
-Step <1>1 handles the case $g\equiv0$, and step <1>4 handles the case
+::: pf-proof
+By step [](#f-analytic-on-u){.pf-ref}, $f$ is analytic at every point where $g$ is nonzero. By step
+[](#f-analytic-near-zero){.pf-ref}, it is analytic at every zero of $g$. These two sets cover $D$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#trivial-case){.pf-ref} handles the case $g\equiv0$, and step [](#f-analytic-everywhere){.pf-ref} handles the case
 $g\not\equiv0$.
+:::
+
 :::
 :::

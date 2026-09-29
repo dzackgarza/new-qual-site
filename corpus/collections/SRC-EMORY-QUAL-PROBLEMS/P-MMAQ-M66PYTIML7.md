@@ -38,10 +38,13 @@ $$
 where $C_m$ is cyclic of order $m$ and $D_{2m}$ is the
 dihedral group of order $2m$.
 
-<1>1. Every group $G$ of order $182$ has a normal cyclic
+::: pf
+
+::: pf-step
+Every group $G$ of order $182$ has a normal cyclic
 subgroup $N$ of order $91$.
 
-::: {.proof}
+::: pf-proof
 Sylow's theorems give $n_7\mid26$ and $n_7\equiv1\pmod7$
 [@DF04]. Among $1,2,13,26$, only $1$ has this congruence.
 Thus the Sylow $7$-subgroup $P$ is normal. The quotient
@@ -63,10 +66,13 @@ order $91$. A pair of generators has order $91$, proving
 that $N$ is cyclic.
 :::
 
-<1>2. Every such $G$ is obtained from $C_{91}$ by an
+:::
+
+::: {.pf-step #four-square-one-automorphisms}
+Every such $G$ is obtained from $C_{91}$ by an
 automorphism whose square is the identity, and exactly four qualify.
 
-::: {.proof}
+::: pf-proof
 Cauchy's theorem gives an element $s\in G$ of order two
 [@DF04]. Since $N$ has odd order, $s\notin N$.
 As $[G:N]=2$, every element has a unique form $a^i s^e$,
@@ -99,12 +105,15 @@ The rule $(i,e)\mapsto a^i s^e$ is an isomorphism onto
 any $G$ with the given conjugation action.
 :::
 
-<1>3. The four actions give the displayed four groups,
+:::
+
+::: pf-step
+The four actions give the displayed four groups,
 and none of them are isomorphic to one another.
 
-::: {.proof}
+::: pf-proof
 Identify $C_{91}$ with $C_7\times C_{13}$. The signs
-in step <1>2 specify whether the involution fixes or
+in step [](#four-square-one-automorphisms){.pf-ref} specify whether the involution fixes or
 inverts each factor. Fixing both gives
 $C_{91}\times C_2\cong C_{182}$. Inverting just one
 gives the corresponding dihedral factor and the other
@@ -117,15 +126,19 @@ Elements of $N$ have odd order by Lagrange's theorem,
 whereas an element outside $N$ has nontrivial image in
 $G/N\cong C_2$ and therefore has even order. Thus any
 isomorphism $G_u\to G_v$ takes $N_u$ to $N_v$.
-With the generators of step <1>2, it must take
+With the generators of step [](#four-square-one-automorphisms){.pf-ref}, it must take
 $a\mapsto b^k$ for a unit $k$ modulo $91$, and
 $s\mapsto b^j t$ for some $j$. Since $N_v$ is abelian,
 conjugation by $b^j t$ acts on $N_v$ in the same way as
 conjugation by $t$. Applying the isomorphism to
 $sas^{-1}=a^u$ therefore gives $b^{kv}=b^{ku}$.
 Canceling the unit $k$ modulo $91$ yields $u=v$.
-The four residues in step <1>2 are distinct, so the four
+The four residues in step [](#four-square-one-automorphisms){.pf-ref} are distinct, so the four
 groups are pairwise nonisomorphic. The preceding steps
 prove that the list is exhaustive.
+:::
+
+:::
+
 :::
 :::

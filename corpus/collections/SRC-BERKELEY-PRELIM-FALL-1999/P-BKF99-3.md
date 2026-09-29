@@ -36,12 +36,16 @@ a_i u_j=0\quad(j\ne i).
 :::
 
 ::: {.solution}
-<1>1. There are unique elements $u_i\in I_i$ such that
+
+::: pf
+
+::: {.pf-step #identity-decomposition-unique}
+There are unique elements $u_i\in I_i$ such that
 $$
 1=u_1+\cdots+u_n.
 $$
 
-::: {.proof}
+::: pf-proof
 The hypothesis
 $$
 R=I_1\oplus\cdots\oplus I_n
@@ -51,14 +55,17 @@ as a sum of elements from the respective $I_i$. Apply this to the identity
 element $1\in R$.
 :::
 
-<1>2. If $a_i\in I_i$, then
+:::
+
+::: {.pf-step #ai-decomposition}
+If $a_i\in I_i$, then
 $$
 a_i=a_i u_1+\cdots+a_i u_n,
 $$
 and each $a_i u_j$ belongs to $I_j$.
 
-::: {.proof}
-Multiplying the equality in step <1>1 on the left by $a_i$ gives
+::: pf-proof
+Multiplying the equality in step [](#identity-decomposition-unique){.pf-ref} on the left by $a_i$ gives
 $$
 a_i=a_i1=a_i u_1+\cdots+a_i u_n.
 $$
@@ -66,28 +73,34 @@ Since $u_j\in I_j$ and $I_j$ is a left ideal, multiplication on the left by
 $a_i\in R$ gives $a_i u_j\in I_j$.
 :::
 
-<1>3. For every $a_i\in I_i$,
+:::
+
+::: {.pf-step #orthogonal-idempotent-identities}
+For every $a_i\in I_i$,
 $$
 a_i u_i=a_i,
 \qquad
 a_i u_j=0\quad(j\neq i).
 $$
 
-::: {.proof}
+::: pf-proof
 The element $a_i$ already has the direct-sum decomposition
 $$
 a_i=0+\cdots+0+a_i+0+\cdots+0,
 $$
-with $a_i$ in the $i$th summand. Step <1>2 gives another decomposition of
+with $a_i$ in the $i$th summand. Step [](#ai-decomposition){.pf-ref} gives another decomposition of
 $a_i$, whose $j$th component is $a_i u_j\in I_j$. Uniqueness of the
 direct-sum decomposition therefore gives $a_i u_i=a_i$ and
 $a_i u_j=0$ for $j\neq i$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-The elements $u_i$ constructed in step <1>1 satisfy the required identities
-by step <1>3.
 :::
+
+::: pf-qed
+The elements $u_i$ constructed in step [](#identity-decomposition-unique){.pf-ref} satisfy the required identities
+by step [](#orthogonal-idempotent-identities){.pf-ref}.
+:::
+
+:::
+
 :::

@@ -32,8 +32,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The units of a ring with unity form a group under multiplication.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The units of a ring with unity form a group under multiplication.
+
+::: pf-proof
 Let $R$ be a ring with identity $1$, and let
 $$
 R^\times=\{u\in R:\text{$u$ has a two-sided multiplicative inverse}\}.
@@ -59,8 +64,12 @@ Finally, if $u$ is a unit, then its inverse $u^{-1}$ is again a unit, with
 inverse $u$. Hence $R^\times$ satisfies all the group axioms.
 :::
 
-<1>2. A class $[k]\in\mathbb Z_n$ is a unit if and only if $\gcd(k,n)=1$.
-::: {.proof}
+:::
+
+::: {.pf-step #unit-iff-coprime}
+A class $[k]\in\mathbb Z_n$ is a unit if and only if $\gcd(k,n)=1$.
+
+::: pf-proof
 The residue class $[k]\in\mathbb Z_n$ is a unit exactly when there exists
 $[\ell]\in\mathbb Z_n$ such that
 $$
@@ -84,9 +93,13 @@ $$
 $$
 :::
 
-<1>3. If $n=pq$ with $p\ne q$ prime, then $\mathbb Z_n$ has $(p-1)(q-1)$ units.
-::: {.proof}
-By step <1>2, a residue class modulo $pq$ fails to be a unit exactly when
+:::
+
+::: pf-step
+If $n=pq$ with $p\ne q$ prime, then $\mathbb Z_n$ has $(p-1)(q-1)$ units.
+
+::: pf-proof
+By step [](#unit-iff-coprime){.pf-ref}, a residue class modulo $pq$ fails to be a unit exactly when
 its representative is divisible by $p$ or by $q$.
 
 Among the $pq$ residue classes, exactly $q$ are multiples of $p$, and exactly
@@ -105,6 +118,10 @@ Thus
 $$
 \boxed{|\mathbb Z_{pq}^\times|=(p-1)(q-1).}
 $$
+:::
+
+:::
+
 :::
 :::
 

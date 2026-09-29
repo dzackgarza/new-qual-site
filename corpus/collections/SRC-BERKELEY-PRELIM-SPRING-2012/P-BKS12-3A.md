@@ -36,7 +36,10 @@ M_n
 x^n e^{-x^{1/4}}\sin(x^{1/4})\,dx.
 $$
 
-<1>1. After the substitution $x=y^4$,
+::: pf
+
+::: {.pf-step #substitution-form}
+After the substitution $x=y^4$,
 $$
 M_n
 =
@@ -45,7 +48,7 @@ M_n
 y^{4n+3}e^{-(1-i)y}\,dy.
 $$
 
-::: {.proof}
+::: pf-proof
 The substitution gives
 $$
 dx=4y^3\,dy
@@ -69,14 +72,17 @@ which is integrable on $[0,\infty)$. Hence taking the imaginary part may
 be interchanged with integration.
 :::
 
-<1>2. If $m\geq0$ and $a\in\CC$ has $\operatorname{Re}(a)>0$, then
+:::
+
+::: {.pf-step #gamma-formula}
+If $m\geq0$ and $a\in\CC$ has $\operatorname{Re}(a)>0$, then
 $$
 \int_0^\infty y^m e^{-ay}\,dy
 =
 \frac{m!}{a^{m+1}}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $m=0$,
 $$
 \int_0^\infty e^{-ay}\,dy
@@ -108,7 +114,10 @@ The boundary term vanishes because exponential decay dominates the
 polynomial factor. Induction on $m$ yields the formula.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #integral-value}
+One has
 $$
 \int_0^\infty
 y^{4n+3}e^{-(1-i)y}\,dy
@@ -116,8 +125,8 @@ y^{4n+3}e^{-(1-i)y}\,dy
 \frac{(4n+3)!}{(1-i)^{4n+4}}.
 $$
 
-::: {.proof}
-Apply step <1>2 with
+::: pf-proof
+Apply step [](#gamma-formula){.pf-ref} with
 $$
 m=4n+3
 $$
@@ -128,9 +137,12 @@ $$
 whose real part is $1>0$.
 :::
 
-<1>4. The number in step <1>3 is real.
+:::
 
-::: {.proof}
+::: {.pf-step #value-real}
+The number in step [](#integral-value){.pf-ref} is real.
+
+::: pf-proof
 One has
 $$
 (1-i)^2=-2i
@@ -150,21 +162,27 @@ $$
 which is a nonzero real number. The numerator $(4n+3)!$ is also real.
 :::
 
-<1>5. Every moment of $f$ is
+:::
+
+::: {.pf-step #moment-zero}
+Every moment of $f$ is
 $$
 \boxed{M_n=0}
 $$
 for $n=0,1,2,\ldots$.
 
-::: {.proof}
-By step <1>1, $M_n$ is four times the imaginary part of the integral in
-step <1>3. Step <1>4 shows that this integral is real, so its imaginary
+::: pf-proof
+By step [](#substitution-form){.pf-ref}, $M_n$ is four times the imaginary part of the integral in
+step [](#integral-value){.pf-ref}. Step [](#value-real){.pf-ref} shows that this integral is real, so its imaginary
 part is zero.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives all requested moments.
 :::
+
+::: pf-qed
+Step [](#moment-zero){.pf-ref} gives all requested moments.
+:::
+
+:::
+
 :::

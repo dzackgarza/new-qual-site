@@ -49,14 +49,17 @@ For which is the stalk $\mcf_a$ a local ring?
 For the first sheaf, write $C_a$ for the stalk at $a$. For the second,
 write $P_a$ for the stalk at $a$.
 
-<1>1. The ring $C_a$ has the unique maximal ideal
+::: pf
+
+::: {.pf-step #continuous-stalk-is-local}
+The ring $C_a$ has the unique maximal ideal
 $$
 \mfm_a
 \coloneqq
 \{[f]_a\in C_a:f(a)=0\}.
 $$
 
-::: {.proof}
+::: pf-proof
 Evaluation at $a$ gives a surjective ring homomorphism
 $$
 \operatorname{ev}_a:C_a\longrightarrow \RR,
@@ -80,14 +83,17 @@ contained in $\mfm_a$. Therefore every maximal ideal equals $\mfm_a$, and
 $C_a$ is local.
 :::
 
-<1>2. There is a canonical ring isomorphism
+:::
+
+::: {.pf-step #polynomial-stalk-isomorphism}
+There is a canonical ring isomorphism
 $$
 \Phi:\RR[t]\xrightarrow{\sim}P_a,
 \qquad
 p\longmapsto[p]_a.
 $$
 
-::: {.proof}
+::: pf-proof
 Every germ in $P_a$ has a representative that is polynomial on some
 neighborhood of $a$, by the definition of a locally polynomial function.
 Hence $\Phi$ is surjective.
@@ -97,9 +103,12 @@ polynomial that vanishes on a nonempty open interval is the zero polynomial.
 Thus $p=0$, so $\Phi$ is injective.
 :::
 
-<1>3. The ring $P_a$ is not local.
+:::
 
-::: {.proof}
+::: {.pf-step #polynomial-stalk-not-local}
+The ring $P_a$ is not local.
+
+::: pf-proof
 In $\RR[t]$, the ideals
 $$
 (t-a)
@@ -107,24 +116,29 @@ $$
 (t-(a+1))
 $$
 are distinct maximal ideals, since the corresponding quotient rings are both
-isomorphic to $\RR$. By the isomorphism in step <1>2, their images are two
+isomorphic to $\RR$. By the isomorphism in step [](#polynomial-stalk-isomorphism){.pf-ref}, their images are two
 distinct maximal ideals of $P_a$. Hence $P_a$ is not local.
 :::
 
-<1>4. The requested classification is
+:::
+
+::: {.pf-step #classification-answer}
+The requested classification is
 $$
 \boxed{\text{the stalk is local exactly for the sheaf of continuous functions.}}
 $$
 
-::: {.proof}
-Step <1>1 proves that the stalk of the sheaf of continuous functions is
-local. Step <1>3 proves that the stalk of the sheaf of locally polynomial
+::: pf-proof
+Step [](#continuous-stalk-is-local){.pf-ref} proves that the stalk of the sheaf of continuous functions is
+local. Step [](#polynomial-stalk-not-local){.pf-ref} proves that the stalk of the sheaf of locally polynomial
 functions is not local.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the complete answer to the two cases in the problem.
+::: pf-qed
+Step [](#classification-answer){.pf-ref} gives the complete answer to the two cases in the problem.
+:::
+
 :::
 :::

@@ -42,8 +42,12 @@ For $n\neq1$ its order is
 |G_n|=3|n^3-1|.
 \]
 
-<1>1. If $n=1$, then $G_n\cong C_3\times\mathbb Z$, so $G_n$ is infinite.
-::: {.proof}
+::: pf
+
+::: {.pf-step #n-eq-1-infinite}
+If $n=1$, then $G_n\cong C_3\times\mathbb Z$, so $G_n$ is infinite.
+
+::: pf-proof
 When $n=1$, the defining relation becomes
 \[
 xyx^{-1}=y,
@@ -75,7 +79,10 @@ G_1\cong C_3\times\mathbb Z.
 Therefore $G_1$ is infinite.
 :::
 
-<1>2. Suppose $n\neq1$ and set
+:::
+
+::: {.pf-step #normal-form-bound}
+Suppose $n\neq1$ and set
 \[
 m:=|n^3-1|.
 \]
@@ -89,7 +96,8 @@ y^a x^2,
 \qquad 0\le a<m.
 \]
 In particular, $|G_n|\le3m$.
-::: {.proof}
+
+::: pf-proof
 Conjugating $y$ three times by $x$ gives
 \[
 x^3 y x^{-3}=y^{n^3}.
@@ -112,8 +120,12 @@ Using $x^3=1$, its $x$-exponent may be reduced modulo $3$, and using $y^m=1$, it
 Thus every element has one of the stated $3m$ normal forms.
 :::
 
-<1>3. There is a group of order $3m$ satisfying the defining relations of $G_n$.
-::: {.proof}
+:::
+
+::: {.pf-step #semidirect-product-quotient}
+There is a group of order $3m$ satisfying the defining relations of $G_n$.
+
+::: pf-proof
 Since
 \[
 \gcd(n,n^3-1)=1,
@@ -166,7 +178,10 @@ Consequently
 \]
 :::
 
-<1>4. For $n\neq1$, one has
+:::
+
+::: pf-step
+For $n\neq1$, one has
 \[
 G_n\cong C_{|n^3-1|}\rtimes C_3
 \]
@@ -174,12 +189,13 @@ and
 \[
 |G_n|=3|n^3-1|.
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+By step [](#normal-form-bound){.pf-ref},
 \[
 |G_n|\le3m,
 \]
-while <1>3 gives a quotient of $G_n$ of order $3m$, so
+while step [](#semidirect-product-quotient){.pf-ref} gives a quotient of $G_n$ of order $3m$, so
 \[
 |G_n|\ge3m.
 \]
@@ -187,7 +203,11 @@ Thus
 \[
 |G_n|=3m=3|n^3-1|.
 \]
-The surjection in <1>3 is therefore an isomorphism.
-Together with <1>1, this also proves that $G_n$ is finite if and only if $n\neq1$.
+The surjection in step [](#semidirect-product-quotient){.pf-ref} is therefore an isomorphism.
+Together with step [](#n-eq-1-infinite){.pf-ref}, this also proves that $G_n$ is finite if and only if $n\neq1$.
+:::
+
+:::
+
 :::
 :::

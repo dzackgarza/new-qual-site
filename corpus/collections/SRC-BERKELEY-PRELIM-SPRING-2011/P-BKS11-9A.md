@@ -34,12 +34,15 @@ F(x)\coloneqq\sum_{n=0}^{\infty}C(n)x^n
 $$
 initially as a formal power series.
 
-<1>1. The recurrence is equivalent to
+::: pf
+
+::: {.pf-step #quadratic-relation}
+The recurrence is equivalent to
 $$
 F(x)=1+xF(x)^2.
 $$
 
-::: {.proof}
+::: pf-proof
 The coefficient of $x^n$ in $F(x)^2$ is
 $$
 \sum_{j=0}^n C(j)C(n-j).
@@ -57,7 +60,10 @@ F(x)-1=xF(x)^2.
 $$
 :::
 
-<1>2. The unique formal power-series solution of step <1>1 with constant
+:::
+
+::: {.pf-step #formal-solution}
+The unique formal power-series solution of step [](#quadratic-relation){.pf-ref} with constant
 term $1$ is
 $$
 F(x)
@@ -67,8 +73,8 @@ $$
 where $\sqrt{1-4x}$ denotes the formal square root with constant term
 $1$.
 
-::: {.proof}
-The quadratic equation in step <1>1 is
+::: pf-proof
+The quadratic equation in step [](#quadratic-relation){.pf-ref} is
 $$
 xF(x)^2-F(x)+1=0.
 $$
@@ -109,7 +115,10 @@ has zero constant term, so division by $x$ is valid in
 $\QQ[[x]]$. Thus the minus sign is forced.
 :::
 
-<1>3. For every $n\geq0$,
+:::
+
+::: {.pf-step #closed-form-catalan}
+For every $n\geq0$,
 $$
 \boxed{
 C(n)
@@ -120,11 +129,11 @@ C(n)
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 For $n=0$, the formula gives $1$, agreeing with the defining value
 $C(0)=1$. Assume now that $n\geq1$.
 
-From step <1>2 and the binomial expansion,
+From step [](#formal-solution){.pf-ref} and the binomial expansion,
 $$
 \begin{aligned}
 F(x)
@@ -176,13 +185,16 @@ $$
 The equivalent binomial-coefficient form follows immediately.
 :::
 
-<1>4. The ordinary power series $F(x)$ has radius of convergence
+:::
+
+::: {.pf-step #radius-of-convergence}
+The ordinary power series $F(x)$ has radius of convergence
 $$
 \frac14.
 $$
 
-::: {.proof}
-Using the formula in step <1>3,
+::: pf-proof
+Using the formula in step [](#closed-form-catalan){.pf-ref},
 $$
 \frac{C(n+1)}{C(n)}
 =
@@ -198,7 +210,10 @@ $$
 The ratio test therefore gives radius of convergence $1/4$.
 :::
 
-<1>5. Consequently, for $\abs{x}<1/4$,
+:::
+
+::: {.pf-step #analytic-identity}
+Consequently, for $\abs{x}<1/4$,
 $$
 \boxed{
 \sum_{n=0}^{\infty}C(n)x^n
@@ -208,10 +223,10 @@ $$
 $$
 with the value at $x=0$ understood as $1$.
 
-::: {.proof}
-By step <1>4, the Catalan generating series converges for
+::: pf-proof
+By step [](#radius-of-convergence){.pf-ref}, the Catalan generating series converges for
 $\abs{x}<1/4$. In that disk the ordinary binomial series for
-$\sqrt{1-4x}$ converges, so the formal identity of step <1>2 is an
+$\sqrt{1-4x}$ converges, so the formal identity of step [](#formal-solution){.pf-ref} is an
 analytic identity there. At $x=0$, the apparent singularity is removable;
 equivalently,
 $$
@@ -222,10 +237,13 @@ $$
 whose value at $0$ is $1$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the generating function, and step <1>3 gives the explicit
+::: pf-qed
+Step [](#analytic-identity){.pf-ref} gives the generating function, and step [](#closed-form-catalan){.pf-ref} gives the explicit
 formula for $C(n)$.
 :::
+
+:::
+
 :::

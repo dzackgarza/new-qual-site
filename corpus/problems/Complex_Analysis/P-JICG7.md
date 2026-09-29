@@ -32,24 +32,37 @@ Prove that $f$ is a polynomial of degree at most $n-1$.
 ::: {.solution}
 **Goal:** If $f$ is entire and $\lim_{z\to\infty} \frac{f(z)}{z^n} = 0$ for some integer $n \geq 1$, prove $f$ is a polynomial of degree at most $n-1$.
 
-<1>1. For every $\varepsilon > 0$ there is $R_\varepsilon$ such that $\abs{f(z)} \leq \varepsilon \abs{z}^n$ for all $\abs{z} \geq R_\varepsilon$.
-    ::: {.proof}
-    This is the definition of $f(z)/z^n \to 0$ as $z \to \infty$.
-    :::
+::: pf
 
-<1>2. For each $k \geq n$, the Taylor coefficient $\frac{f^{(k)}(0)}{k!} = 0$.
-    ::: {.proof}
-    By the Cauchy estimates applied on $\abs{z} = R$ for $R \geq R_\varepsilon$, $\abs{f^{(k)}(0)} \leq \frac{k!}{R^k} \max_{\abs{z} = R}\abs{f(z)} \leq k!\, \varepsilon R^{n-k}$ using <1>1. Since $k \geq n$, letting $R \to \infty$ gives $\abs{f^{(k)}(0)} \leq 0$ (as $R^{n-k} \to 0$), so $f^{(k)}(0) = 0$. (More precisely, fix $\varepsilon$ and take the limit $R\to\infty$: $\abs{f^{(k)}(0)} \leq \liminf k!\varepsilon R^{n-k} = 0$.)
-    :::
+::: {.pf-step #eps-bound}
+For every $\varepsilon > 0$ there is $R_\varepsilon$ such that $\abs{f(z)} \leq \varepsilon \abs{z}^n$ for all $\abs{z} \geq R_\varepsilon$.
 
-<1>3. $f(z) = \sum_{k=0}^{n-1} \frac{f^{(k)}(0)}{k!} z^k$, a polynomial of degree $\leq n-1$.
-    ::: {.proof}
-    The Taylor series of the entire function $f$ about $0$ converges to $f$ everywhere; by <1>2 all terms with $k \geq n$ vanish.
-    :::
+::: pf-proof
+This is the definition of $f(z)/z^n \to 0$ as $z \to \infty$.
+:::
 
-<1>4. Q.E.D.
-    ::: {.proof}
-    <1>3 proves the claim.
-    :::
+:::
+
+::: {.pf-step #high-coeffs-zero}
+For each $k \geq n$, the Taylor coefficient $\frac{f^{(k)}(0)}{k!} = 0$.
+
+::: pf-proof
+By the Cauchy estimates applied on $\abs{z} = R$ for $R \geq R_\varepsilon$, $\abs{f^{(k)}(0)} \leq \frac{k!}{R^k} \max_{\abs{z} = R}\abs{f(z)} \leq k!\, \varepsilon R^{n-k}$ using step [](#eps-bound){.pf-ref}. Since $k \geq n$, letting $R \to \infty$ gives $\abs{f^{(k)}(0)} \leq 0$ (as $R^{n-k} \to 0$), so $f^{(k)}(0) = 0$. (More precisely, fix $\varepsilon$ and take the limit $R\to\infty$: $\abs{f^{(k)}(0)} \leq \liminf k!\varepsilon R^{n-k} = 0$.)
+:::
+
+:::
+
+::: {.pf-step #polynomial-form}
+$f(z) = \sum_{k=0}^{n-1} \frac{f^{(k)}(0)}{k!} z^k$, a polynomial of degree $\leq n-1$.
+
+::: pf-proof
+The Taylor series of the entire function $f$ about $0$ converges to $f$ everywhere; by step [](#high-coeffs-zero){.pf-ref} all terms with $k \geq n$ vanish.
+:::
+
+:::
+
+::: pf-qed
+Step [](#polynomial-form){.pf-ref} proves the claim.
+:::
 
 :::

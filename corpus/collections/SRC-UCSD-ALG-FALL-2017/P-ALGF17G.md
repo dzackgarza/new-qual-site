@@ -41,8 +41,13 @@ If $K \subset B \subset A$ is an intermediary field and $[B : K] < \infty$ then 
 :::
 
 ::: {.solution}
-<1>1. If $\alpha\in A$ and $f(x)\in M[x]$ is its minimal polynomial over $M$, then every coefficient of $f$ is algebraic over $K$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #coeffs-algebraic-over-k}
+If $\alpha\in A$ and $f(x)\in M[x]$ is its minimal polynomial over $M$, then every coefficient of $f$ is algebraic over $K$.
+
+::: pf-proof
 Let
 \[
 g(x)\in K[x]
@@ -56,13 +61,17 @@ The coefficients of $f$ are elementary symmetric polynomials in those roots.
 Hence every coefficient of $f$ is algebraic over $K$.
 :::
 
-<1>2. The minimal polynomial $f(x)$ from part (a) belongs to $K[x]$.
-::: {.proof}
+:::
+
+::: {.pf-step #part-a-f-in-k}
+The minimal polynomial $f(x)$ from part (a) belongs to $K[x]$.
+
+::: pf-proof
 By definition,
 \[
 f(x)\in M[x].
 \]
-By <1>1, every coefficient of $f$ is algebraic over $K$.
+By step [](#coeffs-algebraic-over-k){.pf-ref}, every coefficient of $f$ is algebraic over $K$.
 Since the coefficients lie in $M\subseteq L$, they therefore belong to the subfield $A$ of elements of $L$ algebraic over $K$.
 Thus every coefficient lies in
 \[
@@ -75,11 +84,15 @@ f(x)\in K[x].
 This proves part (a).
 :::
 
-<1>3. In characteristic zero, if $K\subseteq B\subseteq A$ and $[B:K]<\infty$, then there is an element $\alpha\in B$ with
+:::
+
+::: {.pf-step #primitive-element-b}
+In characteristic zero, if $K\subseteq B\subseteq A$ and $[B:K]<\infty$, then there is an element $\alpha\in B$ with
 \[
 B=K(\alpha).
 \]
-::: {.proof}
+
+::: pf-proof
 A finite extension in characteristic zero is separable.
 The primitive element theorem therefore applies to $B/K$, giving
 \[
@@ -88,8 +101,12 @@ B=K(\alpha)
 for some $\alpha\in B$.
 :::
 
-<1>4. For the element $\alpha$ from <1>3, its minimal polynomial over $M$ is the same as its minimal polynomial over $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #same-min-poly}
+For the element $\alpha$ from step [](#primitive-element-b){.pf-ref}, its minimal polynomial over $M$ is the same as its minimal polynomial over $K$.
+
+::: pf-proof
 Let
 \[
 g(x)\in K[x]
@@ -99,7 +116,7 @@ be the minimal polynomial of $\alpha$ over $K$, and let
 f(x)\in M[x]
 \]
 be the minimal polynomial over $M$.
-Since $\alpha\in B\subseteq A$, part (a), proved in <1>2, gives
+Since $\alpha\in B\subseteq A$, part (a), proved in step [](#part-a-f-in-k){.pf-ref}, gives
 \[
 f(x)\in K[x].
 \]
@@ -119,12 +136,16 @@ Consequently
 \]
 :::
 
-<1>5. Every finite intermediate field $B$ as in part (b) satisfies
+:::
+
+::: {.pf-step #part-b-degree-bound}
+Every finite intermediate field $B$ as in part (b) satisfies
 \[
 [B:K]\le[L:M].
 \]
-::: {.proof}
-By <1>3 and <1>4,
+
+::: pf-proof
+By steps [](#primitive-element-b){.pf-ref} and [](#same-min-poly){.pf-ref},
 \[
 [B:K]=[M(\alpha):M].
 \]
@@ -147,11 +168,15 @@ Hence
 This proves part (b).
 :::
 
-<1>6. The whole algebraic extension $A/K$ satisfies
+:::
+
+::: {.pf-step #part-c-final-bound}
+The whole algebraic extension $A/K$ satisfies
 \[
 [A:K]\le[L:M].
 \]
-::: {.proof}
+
+::: pf-proof
 Set
 \[
 d:=[L:M].
@@ -184,5 +209,13 @@ Therefore
 [A:K]\le d=[L:M].
 \]
 This proves part (c).
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-f-in-k){.pf-ref} answers part (a); step [](#part-b-degree-bound){.pf-ref} answers part (b); and step [](#part-c-final-bound){.pf-ref} answers part (c).
+:::
+
 :::
 :::

@@ -35,8 +35,12 @@ For each $g\in G$, let $x_g$ be an indeterminate, with all of the $x_g$ algebrai
 E:=F(x_g:g\in G).
 \]
 
-<1>1. The group $G$ acts faithfully on $E$ by $F$-automorphisms.
-::: {.proof}
+::: pf
+
+::: {.pf-step #faithful-action}
+The group $G$ acts faithfully on $E$ by $F$-automorphisms.
+
+::: pf-proof
 For $h\in G$, define
 \[
 \sigma_h(x_g):=x_{hg}
@@ -63,7 +67,10 @@ It is injective: if $h\neq1$, then
 Thus we identify $G$ with a finite subgroup of $\operatorname{Aut}_F(E)$.
 :::
 
-<1>2. Let a finite group $H$ act faithfully by automorphisms on a field $K$, and set $K^H:=\{a\in K:\sigma(a)=a\text{ for all }\sigma\in H\}$.
+:::
+
+::: {.pf-step #galois-descent-lemma}
+Let a finite group $H$ act faithfully by automorphisms on a field $K$, and set $K^H:=\{a\in K:\sigma(a)=a\text{ for all }\sigma\in H\}$.
 Then
 \[
 [K:K^H]=|H|
@@ -72,7 +79,8 @@ and
 \[
 \operatorname{Gal}(K/K^H)=H.
 \]
-::: {.proof}
+
+::: pf-proof
 Write
 \[
 H=\{\sigma_1,\ldots,\sigma_m\},
@@ -141,8 +149,12 @@ Therefore
 \]
 :::
 
-<1>3. Taking the fixed field of the action in <1>1 produces the required extension.
-::: {.proof}
+:::
+
+::: pf-step
+Taking the fixed field of the action in step [](#faithful-action){.pf-ref} produces the required extension.
+
+::: pf-proof
 Set
 \[
 L:=E^G.
@@ -151,7 +163,7 @@ Because every element of $G$ fixes $F$ pointwise,
 \[
 F\subseteq L\subseteq E.
 \]
-Applying <1>2 to the faithful action of $G$ on $E$ gives
+Applying step [](#galois-descent-lemma){.pf-ref} to the faithful action of $G$ on $E$ gives
 \[
 [E:L]=|G|
 \]
@@ -160,5 +172,9 @@ and shows that $E/L$ is Galois with
 \operatorname{Gal}(E/L)=G.
 \]
 Thus every finite group occurs as a Galois group over some extension of the prescribed field $F$.
+:::
+
+:::
+
 :::
 :::

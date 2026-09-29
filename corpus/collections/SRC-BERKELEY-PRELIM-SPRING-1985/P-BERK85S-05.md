@@ -38,9 +38,12 @@ $$
 f(x)\coloneqq x^4+x^3+x+3\in\FF_5[x].
 $$
 
-<1>1. The polynomial $f$ has no root in $\FF_5$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #no-linear-root}
+The polynomial $f$ has no root in $\FF_5$.
+
+::: pf-proof
 Direct evaluation gives
 $$
 \begin{aligned}
@@ -54,22 +57,28 @@ $$
 in $\FF_5$. Hence $f$ has no linear factor.
 :::
 
-<1>2. If $f$ were reducible, it would factor as
+:::
+
+::: {.pf-step #quadratic-factorization-form}
+If $f$ were reducible, it would factor as
 $$
 f(x)=(x^2+ax+b)(x^2+cx+d)
 $$
 with $a,b,c,d\in\FF_5$.
 
-::: {.proof}
-Since $f$ has degree four and has no linear factor by step <1>1, every
+::: pf-proof
+Since $f$ has degree four and has no linear factor by step [](#no-linear-root){.pf-ref}, every
 nontrivial factorization has factor degrees $2$ and $2$. Because $f$ is
 monic, multiplying the two factors by inverse nonzero constants makes both
 quadratic factors monic without changing their product.
 :::
 
-<1>3. No factorization from step <1>2 exists.
+:::
 
-::: {.proof}
+::: {.pf-step #no-such-factorization}
+No factorization from step [](#quadratic-factorization-form){.pf-ref} exists.
+
+::: pf-proof
 Comparing coefficients gives
 $$
 a+c=1,
@@ -121,21 +130,26 @@ $$
 contradicting the required coefficient $ad+bc=1$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #irreducible-boxed}
+Therefore
 $$
 \boxed{f\text{ is irreducible over }\FF_5}.
 $$
 
-::: {.proof}
-Step <1>1 excludes a linear factor, and step <1>3 excludes a factorization
+::: pf-proof
+Step [](#no-linear-root){.pf-ref} excludes a linear factor, and step [](#no-such-factorization){.pf-ref} excludes a factorization
 into two quadratics. These are all nontrivial degree patterns for a quartic
 over a field. Hence $f$ is irreducible, so its complete factorization in
 $\FF_5[x]$ is the polynomial itself.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the complete factorization.
+::: pf-qed
+Step [](#irreducible-boxed){.pf-ref} gives the complete factorization.
+:::
+
 :::
 :::

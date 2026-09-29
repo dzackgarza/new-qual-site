@@ -30,9 +30,12 @@ for all $x,y\in\mathbb R^n$. Prove that $F$ is one-to-one, onto, and has a conti
 :::
 
 ::: {.solution}
-<1>1. The map $F$ is injective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-is-injective}
+The map $F$ is injective.
+
+::: pf-proof
 If $F(x)=F(y)$, then the assumed inequality gives
 $$
 0
@@ -44,9 +47,12 @@ $$
 Since $\lambda>0$, this forces $\norm{x-y}=0$, hence $x=y$.
 :::
 
-<1>2. The image $F(\mathbb R^n)$ is closed in $\mathbb R^n$.
+:::
 
-::: {.proof}
+::: {.pf-step #image-is-closed}
+The image $F(\mathbb R^n)$ is closed in $\mathbb R^n$.
+
+::: pf-proof
 Let
 $$
 F(x_j)\longrightarrow z
@@ -65,18 +71,24 @@ $$
 Uniqueness of limits yields $F(x)=z$, so $z$ belongs to the image.
 :::
 
-<1>3. The image $F(\mathbb R^n)$ is open in $\mathbb R^n$.
+:::
 
-::: {.proof}
-By step <1>1, $F:\mathbb R^n\to\mathbb R^n$ is continuous and injective.
+::: {.pf-step #image-is-open}
+The image $F(\mathbb R^n)$ is open in $\mathbb R^n$.
+
+::: pf-proof
+By step [](#f-is-injective){.pf-ref}, $F:\mathbb R^n\to\mathbb R^n$ is continuous and injective.
 The invariance of domain theorem therefore implies that $F$ is an open map.
 In particular, the image of the open set $\mathbb R^n$ is open.
 :::
 
-<1>4. The map $F$ is surjective.
+:::
 
-::: {.proof}
-The image is nonempty, closed by step <1>2, and open by step <1>3.
+::: {.pf-step #f-is-surjective}
+The map $F$ is surjective.
+
+::: pf-proof
+The image is nonempty, closed by step [](#image-is-closed){.pf-ref}, and open by step [](#image-is-open){.pf-ref}.
 Since $\mathbb R^n$ is connected, its only nonempty subset that is both
 open and closed is the whole space. Therefore
 $$
@@ -84,11 +96,14 @@ F(\mathbb R^n)=\mathbb R^n.
 $$
 :::
 
-<1>5. The inverse $F^{-1}:\mathbb R^n\to\mathbb R^n$ is
+:::
+
+::: {.pf-step #inverse-is-lipschitz}
+The inverse $F^{-1}:\mathbb R^n\to\mathbb R^n$ is
 $1/\lambda$-Lipschitz, hence continuous.
 
-::: {.proof}
-By steps <1>1 and <1>4, the inverse is defined on all of $\mathbb R^n$.
+::: pf-proof
+By steps [](#f-is-injective){.pf-ref} and [](#f-is-surjective){.pf-ref}, the inverse is defined on all of $\mathbb R^n$.
 For $u,v\in\mathbb R^n$, write
 $$
 x=F^{-1}(u),
@@ -111,10 +126,12 @@ $$
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1, <1>4, and <1>5 prove respectively that $F$ is one-to-one,
+::: pf-qed
+Steps [](#f-is-injective){.pf-ref}, [](#f-is-surjective){.pf-ref}, and [](#inverse-is-lipschitz){.pf-ref} prove respectively that $F$ is one-to-one,
 onto, and has a continuous inverse.
+:::
+
 :::
 :::

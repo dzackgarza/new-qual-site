@@ -29,16 +29,24 @@ Show that the stabilizer of an element need not be a normal subgroup.
 ::: {.solution}
 Consider the natural action of $S_3$ on $X=\{1,2,3\}$.
 
-<1>1. The stabilizer of $1$ is
+::: pf
+
+::: pf-step
+The stabilizer of $1$ is
 \[
 (S_3)_1=\{1,(23)\}.
 \]
-::: {.proof}
+
+::: pf-proof
 A permutation fixes $1$ exactly when it permutes only $2$ and $3$. Hence the only possibilities are the identity and $(23)$.
 :::
 
-<1>2. This stabilizer is not normal in $S_3$.
-::: {.proof}
+:::
+
+::: pf-step
+This stabilizer is not normal in $S_3$.
+
+::: pf-proof
 Conjugating its nonidentity element by $(12)$ gives
 \[
 (12)(23)(12)^{-1}=(13),
@@ -50,8 +58,17 @@ and $(13)\notin\{1,(23)\}$. Therefore
 so $(S_3)_1$ is not normal in $S_3$.
 :::
 
-<1>3. Thus a point stabilizer need not be a normal subgroup.
-::: {.proof}
+:::
+
+::: pf-step
+Thus a point stabilizer need not be a normal subgroup.
+
+::: pf-proof
 The action above supplies the required counterexample.
 :::
+
+:::
+
+:::
+
 :::

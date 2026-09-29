@@ -41,9 +41,12 @@ Show that the following conditions are equivalent.
 Write $J=\mfa$ and distinguish its affine zero set $V_a(J)\subseteq\AA_k^{n+1}$ from its projective zero set $Z(J)\subseteq\PP_k^n$.
 The vector subspace $S_d$ consists of the homogeneous polynomials of degree $d$.
 
-<1>1. Conditions (i) and (ii) are equivalent.
+::: pf
 
-::: {.proof}
+::: {.pf-step #i-equiv-ii}
+Conditions (i) and (ii) are equivalent.
+
+::: pf-proof
 If $J=S$, then $Z(J)=\varnothing$ and $\sqrt J=S$, so both conditions hold.
 Now assume $J$ is proper.
 It contains no nonzero constant, and homogeneity implies $J\subseteq S_+$.
@@ -62,9 +65,12 @@ Conversely, if $\sqrt J=S_+$, a point vanishes on $J$ exactly when it vanishes o
 Finally $\sqrt J=S$ forces $1\in J$, which is the unit-ideal case already treated.
 :::
 
-<1>2. Condition (ii) implies (iii).
+:::
 
-::: {.proof}
+::: {.pf-step #ii-implies-iii}
+Condition (ii) implies (iii).
+
+::: pf-proof
 For $J=S$, any positive $d$ works.
 If $\sqrt J=S_+$, choose integers $N_i\ge1$ with $x_i^{N_i}\in J$ for $0\le i\le n$.
 Set
@@ -76,18 +82,24 @@ It is therefore divisible by one of the powers $x_i^{N_i}$ and belongs to $J$.
 Since these monomials span $S_D$, the whole graded piece $S_D$ is contained in $J$.
 :::
 
-<1>3. Condition (iii) implies (i).
+:::
 
-::: {.proof}
+::: {.pf-step #iii-implies-i}
+Condition (iii) implies (i).
+
+::: pf-proof
 If $S_d\subseteq J$ for a positive $d$, then $x_i^d\in J$ for every $i$.
 At a point of $\PP^n$, at least one coordinate is nonzero, and its $d$th power is nonzero as well.
 Thus these polynomials have no common projective zero, so neither does $J$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves (i) equivalent to (ii), and steps <1>2--<1>3 prove (ii) implies (iii) implies (i).
+::: pf-qed
+Step [](#i-equiv-ii){.pf-ref} proves (i) equivalent to (ii), and steps [](#ii-implies-iii){.pf-ref} and [](#iii-implies-i){.pf-ref} prove (ii) implies (iii) implies (i).
 These implications establish all three equivalences, including the unit ideal.
 :::
+
+:::
+
 :::

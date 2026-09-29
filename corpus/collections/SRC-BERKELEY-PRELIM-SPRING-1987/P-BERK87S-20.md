@@ -38,14 +38,17 @@ I\coloneqq
 \int_0^\pi\frac{\cos4\theta}{1+\cos^2\theta}\,d\theta.
 $$
 
-<1>1. After the substitution $x=2\theta$,
+::: pf
+
+::: {.pf-step #substitution-identity}
+After the substitution $x=2\theta$,
 $$
 I
 =
 \int_0^{2\pi}\frac{\cos 2x}{3+\cos x}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 1+\cos^2\theta
@@ -64,14 +67,17 @@ Setting $x=2\theta$ gives $dx=2\,d\theta$ and yields the stated
 integral.
 :::
 
-<1>2. For every real $x$,
+:::
+
+::: {.pf-step #partial-fraction}
+For every real $x$,
 $$
 \frac{\cos2x}{3+\cos x}
 =
 2\cos x-6+\frac{17}{3+\cos x}.
 $$
 
-::: {.proof}
+::: pf-proof
 Writing $c=\cos x$ and using $\cos2x=2c^2-1$,
 $$
 2c^2-1
@@ -80,14 +86,17 @@ $$
 Since $3+\cos x\geq2>0$, division by $3+\cos x$ is valid.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #reciprocal-cosine-integral}
+One has
 $$
 \int_0^{2\pi}\frac{dx}{3+\cos x}
 =
 \frac{\pi}{\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The integrand is invariant under $x\mapsto2\pi-x$, so
 $$
 \int_0^{2\pi}\frac{dx}{3+\cos x}
@@ -119,7 +128,10 @@ $$
 Doubling gives the claim.
 :::
 
-<1>4. The value of the integral is
+:::
+
+::: {.pf-step #value-boxed}
+The value of the integral is
 $$
 \boxed{
 I
@@ -128,8 +140,8 @@ I
 }.
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2,
+::: pf-proof
+By steps [](#substitution-identity){.pf-ref} and [](#partial-fraction){.pf-ref},
 $$
 I
 =
@@ -137,7 +149,7 @@ I
 -6\int_0^{2\pi}dx
 +17\int_0^{2\pi}\frac{dx}{3+\cos x}.
 $$
-The first integral is zero, the second term is $-12\pi$, and step <1>3
+The first integral is zero, the second term is $-12\pi$, and step [](#reciprocal-cosine-integral){.pf-ref}
 evaluates the last integral. Hence
 $$
 I
@@ -148,9 +160,11 @@ I
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the requested value.
+::: pf-qed
+Step [](#value-boxed){.pf-ref} gives the requested value.
+:::
+
 :::
 :::

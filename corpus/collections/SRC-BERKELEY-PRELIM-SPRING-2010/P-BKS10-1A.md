@@ -31,13 +31,17 @@ Hint: for a point $x$, find $m<n$ such that $f^n(x)$ is close to $f^m(x)$.
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that $f$ is not surjective. Then there are
+
+::: pf
+
+::: {.pf-step #not-surjective-assumption}
+Suppose, for contradiction, that $f$ is not surjective. Then there are
 $x\in X$ and $\varepsilon>0$ such that
 $$
 B(x,\varepsilon)\cap f(X)=\varnothing.
 $$
 
-::: {.proof}
+::: pf-proof
 If $f$ is not surjective, choose
 $$
 x\in X\setminus f(X).
@@ -55,12 +59,15 @@ $$
 gives the stated disjoint ball.
 :::
 
-<1>2. There exist integers $0\leq j<k$ such that
+:::
+
+::: {.pf-step #close-iterates-exist}
+There exist integers $0\leq j<k$ such that
 $$
 d\bigl(f^j(x),f^k(x)\bigr)<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
 The sequence
 $$
 x,f(x),f^2(x),\ldots
@@ -71,12 +78,15 @@ subsequence, say with indices $j<k$, have distance less than
 $\varepsilon$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #iterate-close-to-x}
+One has
 $$
 d\bigl(x,f^{k-j}(x)\bigr)<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
 Every iterate $f^j$ is again an isometry. Therefore
 $$
 d\bigl(f^j(x),f^k(x)\bigr)
@@ -85,12 +95,15 @@ d\bigl(f^j(x),f^j(f^{k-j}(x))\bigr)
 =
 d\bigl(x,f^{k-j}(x)\bigr).
 $$
-Step <1>2 gives the strict inequality.
+Step [](#close-iterates-exist){.pf-ref} gives the strict inequality.
 :::
 
-<1>4. The assumption that $f$ is not surjective is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #assumption-impossible}
+The assumption that $f$ is not surjective is impossible.
+
+::: pf-proof
 Since $k-j\geq1$,
 $$
 f^{k-j}(x)
@@ -99,19 +112,25 @@ f\bigl(f^{k-j-1}(x)\bigr)
 \in
 f(X).
 $$
-By step <1>3 this point also lies in $B(x,\varepsilon)$, contradicting
-step <1>1.
+By step [](#iterate-close-to-x){.pf-ref} this point also lies in $B(x,\varepsilon)$, contradicting
+step [](#not-surjective-assumption){.pf-ref}.
 :::
 
-<1>5. The map $f$ is surjective.
-
-::: {.proof}
-Step <1>4 rules out failure of surjectivity.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #f-surjective}
+The map $f$ is surjective.
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-proof
+Step [](#assumption-impossible){.pf-ref} rules out failure of surjectivity.
 :::
+
+:::
+
+::: pf-qed
+Step [](#f-surjective){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

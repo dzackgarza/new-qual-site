@@ -35,7 +35,11 @@ Also, explain briefly how the 2-holed torus and the connected sum $\RP^2 \# \RP^
 :::
 
 ::: {.solution}
-<1>1. Every compact connected surface without boundary is homeomorphic to exactly one surface of one of the following two types:
+
+::: pf
+
+::: {.pf-step #classification-theorem}
+Every compact connected surface without boundary is homeomorphic to exactly one surface of one of the following two types:
 \[
 M_g=\mathop{\#}_{i=1}^{g}T^2
 \qquad(g\ge0),
@@ -46,19 +50,24 @@ N_k=\mathop{\#}_{i=1}^{k}\RP^2
 \qquad(k\ge1).
 \]
 The surfaces $M_g$ are orientable and the surfaces $N_k$ are nonorientable.
-::: {.proof}
+
+::: pf-proof
 This is the classification theorem for compact connected surfaces.
 The orientability and the integer $g$ or $k$ determine the homeomorphism type uniquely.
 If disconnected surfaces are allowed, each connected component is one of these surfaces.
 :::
 
-<1>2. For the orientable surface $M_g$,
+:::
+
+::: {.pf-step #orientable-invariants}
+For the orientable surface $M_g$,
 \[
 H_1(M_g;\ZZ)\cong\ZZ^{2g},
 \qquad
 \chi(M_g)=2-2g.
 \]
-::: {.proof}
+
+::: pf-proof
 Use the standard CW structure with one $0$-cell, $2g$ oriented $1$-cells
 \[
 a_1,b_1,\ldots,a_g,b_g,
@@ -88,13 +97,17 @@ The same CW structure gives
 \]
 :::
 
-<1>3. For the nonorientable surface $N_k$,
+:::
+
+::: {.pf-step #nonorientable-invariants}
+For the nonorientable surface $N_k$,
 \[
 H_1(N_k;\ZZ)\cong\ZZ^{k-1}\oplus\ZZ/2\ZZ,
 \qquad
 \chi(N_k)=2-k.
 \]
-::: {.proof}
+
+::: pf-proof
 Use the standard CW structure with one $0$-cell, $k$ oriented $1$-cells
 \[
 a_1,\ldots,a_k,
@@ -125,7 +138,10 @@ The CW structure has one $0$-cell, $k$ $1$-cells, and one $2$-cell, so
 \]
 :::
 
-<1>4. The 2-holed torus is the orientable genus-two surface
+:::
+
+::: {.pf-step #two-holed-torus}
+The 2-holed torus is the orientable genus-two surface
 \[
 M_2=T^2\#T^2,
 \]
@@ -135,12 +151,16 @@ H_1(M_2;\ZZ)\cong\ZZ^4,
 \qquad
 \chi(M_2)=-2.
 \]
-::: {.proof}
+
+::: pf-proof
 By definition, a closed orientable surface with two handles is the connected sum of two tori, hence is $M_2$ in the orientable branch of the classification.
-The displayed invariants follow from <1>2 with $g=2$.
+The displayed invariants follow from step [](#orientable-invariants){.pf-ref} with $g=2$.
 :::
 
-<1>5. The connected sum
+:::
+
+::: {.pf-step #rp2-connect-sum}
+The connected sum
 \[
 \RP^2\#\RP^2
 \]
@@ -150,12 +170,22 @@ H_1(\RP^2\#\RP^2;\ZZ)\cong\ZZ\oplus\ZZ/2\ZZ,
 \qquad
 \chi(\RP^2\#\RP^2)=0.
 \]
-::: {.proof}
+
+::: pf-proof
 By the definition of the nonorientable family,
 \[
 N_2=\RP^2\#\RP^2.
 \]
 The standard polygon presentations show that $N_2$ is homeomorphic to the Klein bottle.
-The displayed invariants are the case $k=2$ of <1>3.
+The displayed invariants are the case $k=2$ of step [](#nonorientable-invariants){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#classification-theorem){.pf-ref} states the classification; steps [](#orientable-invariants){.pf-ref} and [](#nonorientable-invariants){.pf-ref} give the invariants; and steps [](#two-holed-torus){.pf-ref} and [](#rp2-connect-sum){.pf-ref} place the two named surfaces.
+:::
+
+:::
+
 :::

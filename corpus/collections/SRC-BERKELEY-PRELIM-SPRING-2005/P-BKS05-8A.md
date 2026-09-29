@@ -31,14 +31,18 @@ Let $C$ and $D$ be two $n\times n$ positive definite Hermitian matrices over $\C
 :::
 
 ::: {.solution}
-<1>1. Let $\lambda$ be an eigenvalue of $A=CD$, and choose a nonzero
+
+::: pf
+
+::: {.pf-step #dx-nonzero}
+Let $\lambda$ be an eigenvalue of $A=CD$, and choose a nonzero
 eigenvector $x$ such that
 $$
 CDx=\lambda x.
 $$
 Then $Dx\neq0$.
 
-::: {.proof}
+::: pf-proof
 Since $D$ is positive definite, its kernel is zero: if $Dv=0$, then
 $$
 v^*Dv=0,
@@ -47,14 +51,17 @@ which is impossible for nonzero $v$. Thus $D$ is invertible. Since
 $x\neq0$, one has $Dx\neq0$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #quadratic-form-identity}
+One has
 $$
 (Dx)^*C(Dx)
 =
 \lambda x^*Dx.
 $$
 
-::: {.proof}
+::: pf-proof
 Using $CDx=\lambda x$ and the fact that $D$ is Hermitian,
 $$
 \begin{aligned}
@@ -67,10 +74,13 @@ $$
 $$
 :::
 
-<1>3. The eigenvalue $\lambda$ is a positive real number.
+:::
 
-::: {.proof}
-By step <1>1 and positive definiteness of $C$,
+::: {.pf-step #eigenvalue-positive}
+The eigenvalue $\lambda$ is a positive real number.
+
+::: pf-proof
+By step [](#dx-nonzero){.pf-ref} and positive definiteness of $C$,
 $$
 (Dx)^*C(Dx)>0.
 $$
@@ -78,7 +88,7 @@ Positive definiteness of $D$ also gives
 $$
 x^*Dx>0.
 $$
-Both quantities are positive real numbers. Hence step <1>2 yields
+Both quantities are positive real numbers. Hence step [](#quadratic-form-identity){.pf-ref} yields
 $$
 \lambda
 =
@@ -88,16 +98,22 @@ $$
 Thus $\lambda\in\RR_{>0}$.
 :::
 
-<1>4. Every eigenvalue of $A$ is positive real.
-
-::: {.proof}
-The choice of eigenvalue $\lambda$ in step <1>1 was arbitrary, so
-step <1>3 applies to every eigenvalue.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #all-eigenvalues-positive}
+Every eigenvalue of $A$ is positive real.
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-proof
+The choice of eigenvalue $\lambda$ in step [](#dx-nonzero){.pf-ref} was arbitrary, so
+step [](#eigenvalue-positive){.pf-ref} applies to every eigenvalue.
 :::
+
+:::
+
+::: pf-qed
+Step [](#all-eigenvalues-positive){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

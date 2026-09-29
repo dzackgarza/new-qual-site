@@ -40,11 +40,16 @@ where $y$ is an indeterminate.
 :::
 
 ::: {.solution}
-<1>1. The characteristic polynomial of $A$ is
+
+::: pf
+
+::: pf-step
+The characteristic polynomial of $A$ is
 \[
 f(x)=x^3+y.
 \]
-::: {.proof}
+
+::: pf-proof
 One computes
 \[
 xI-A=
@@ -60,8 +65,12 @@ Expanding the determinant along the first row gives
 \]
 :::
 
-<1>2. The polynomial $x^3+y$ is irreducible in $\mathbb Q(y)[x]$.
-::: {.proof}
+:::
+
+::: {.pf-step #part-a-irreducible}
+The polynomial $x^3+y$ is irreducible in $\mathbb Q(y)[x]$.
+
+::: pf-proof
 Regard
 \[
 x^3+y
@@ -80,8 +89,12 @@ It is primitive as a polynomial in $x$, so Gauss's lemma implies that it remains
 This proves part (a).
 :::
 
-<1>3. Over $\mathbb Q(y)$, the minimal polynomial of $A$ equals $x^3+y$.
-::: {.proof}
+:::
+
+::: {.pf-step #min-poly-q}
+Over $\mathbb Q(y)$, the minimal polynomial of $A$ equals $x^3+y$.
+
+::: pf-proof
 Let $e_1,e_2,e_3$ be the standard basis vectors.
 Directly from the columns of $A$,
 \[
@@ -102,22 +115,30 @@ m_A(x)=x^3+y.
 \]
 :::
 
-<1>4. The matrix $A$ is diagonalizable over the algebraic closure of $\mathbb Q(y)$.
-::: {.proof}
+:::
+
+::: {.pf-step #part-b-diagonalizable}
+The matrix $A$ is diagonalizable over the algebraic closure of $\mathbb Q(y)$.
+
+::: pf-proof
 In characteristic zero,
 \[
 f'(x)=3x^2.
 \]
 The polynomials $x^3+y$ and $3x^2$ are relatively prime in $\mathbb Q(y)[x]$, because $y\neq0$ in the field $\mathbb Q(y)$.
 Thus $x^3+y$ has three distinct roots in an algebraic closure.
-By <1>3, this is the minimal polynomial of $A$, so the minimal polynomial splits into distinct linear factors over the algebraic closure.
+By step [](#min-poly-q){.pf-ref}, this is the minimal polynomial of $A$, so the minimal polynomial splits into distinct linear factors over the algebraic closure.
 Therefore $A$ is diagonalizable there.
 This proves part (b).
 :::
 
-<1>5. Over $\mathbb F_3(y)$, the minimal polynomial of $A$ is still $x^3+y$.
-::: {.proof}
-The cyclic-vector computation from <1>3 uses only the displayed matrix and therefore remains valid over $\mathbb F_3(y)$:
+:::
+
+::: {.pf-step #min-poly-f3}
+Over $\mathbb F_3(y)$, the minimal polynomial of $A$ is still $x^3+y$.
+
+::: pf-proof
+The cyclic-vector computation from step [](#min-poly-q){.pf-ref} uses only the displayed matrix and therefore remains valid over $\mathbb F_3(y)$:
 \[
 e_1,Ae_1,A^2e_1
 \]
@@ -133,8 +154,12 @@ m_A(x)=x^3+y.
 \]
 :::
 
-<1>6. The matrix $A$ is not diagonalizable over the algebraic closure of $\mathbb F_3(y)$.
-::: {.proof}
+:::
+
+::: {.pf-step #part-c-not-diagonalizable}
+The matrix $A$ is not diagonalizable over the algebraic closure of $\mathbb F_3(y)$.
+
+::: pf-proof
 Let $\overline F$ be an algebraic closure of $\mathbb F_3(y)$ and choose $\alpha\in\overline F$ with
 \[
 \alpha^3=-y.
@@ -144,12 +169,20 @@ In characteristic $3$,
 (x-\alpha)^3=x^3-\alpha^3=x^3+y.
 \]
 Thus over $\overline F$ the characteristic polynomial has only the single root $\alpha$, with multiplicity $3$.
-By <1>5, the minimal polynomial has degree $3$; equivalently after scalar extension it is
+By step [](#min-poly-f3){.pf-ref}, the minimal polynomial has degree $3$; equivalently after scalar extension it is
 \[
 (x-\alpha)^3.
 \]
 This polynomial has a repeated factor, so the minimal polynomial is not squarefree.
 Therefore $A$ is not diagonalizable over $\overline F$.
 This proves part (c).
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-irreducible){.pf-ref} answers part (a); step [](#part-b-diagonalizable){.pf-ref} answers part (b); and step [](#part-c-not-diagonalizable){.pf-ref} answers part (c).
+:::
+
 :::
 :::

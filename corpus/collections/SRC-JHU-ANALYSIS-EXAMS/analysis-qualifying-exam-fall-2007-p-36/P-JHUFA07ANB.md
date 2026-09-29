@@ -32,9 +32,12 @@ audit:
 ::: {.solution}
 The functions are exactly $\boxed{f(z)=ce^z,\ |c|\leq1}$.
 
-<1>1. The quotient by the exponential is a bounded entire function.
+::: pf
 
-::: {.proof}
+::: pf-step
+The quotient by the exponential is a bounded entire function.
+
+::: pf-proof
 Since $e^{-z}$ is entire, $h(z)=f(z)e^{-z}$ is entire.
 The given inequality implies
 $$
@@ -45,12 +48,19 @@ therefore gives $h=c$ for a constant $c$ with $|c|\leq1$
 [@SS03]. Thus $f(z)=ce^z$.
 :::
 
-<1>2. Every such constant gives an admissible function.
+:::
 
-::: {.proof}
+::: pf-step
+Every such constant gives an admissible function.
+
+::: pf-proof
 For $|c|\leq1$, the function $ce^z$ is entire and
 $|ce^z|=|c||e^z|\leq|e^z|$ everywhere. Hence every
 listed function satisfies the hypothesis, completing
 both directions of the classification.
+:::
+
+:::
+
 :::
 :::

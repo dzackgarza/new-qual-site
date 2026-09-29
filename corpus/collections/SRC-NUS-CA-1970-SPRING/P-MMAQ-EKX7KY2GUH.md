@@ -32,13 +32,64 @@ In coordinates, $\oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds = \oint_{\
 
 ### Proof
 
-<1>1. **Decompose the theorem into separate claims for $P$ and $Q$.** <2>1. Linearity of the integral gives: $$\iint_R \text{div}(\mathbf{F}) \, dA = \iint_R \frac{\partial P}{\partial x} \, dA + \iint_R \frac{\partial Q}{\partial y} \, dA.$$ *Proof:* Additivity of the double integral.
-<2>2. The boundary flux splits into: $$\oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds = \oint_{\partial R} P \, dy - \oint_{\partial R} Q \, dx.$$ *Proof:* Standard identification of $\mathbf{n}\,ds = (dy, -dx)$ for counterclockwise boundary orientation.
-<2>3. It suffices to prove: $$\text{(I)} \quad \iint_R \frac{\partial P}{\partial x} \, dA = \oint_{\partial R} P \, dy, \qquad \text{and} \qquad \text{(II)} \quad \iint_R \frac{\partial Q}{\partial y} \, dA = -\oint_{\partial R} Q \, dx.$$ *Proof:* Adding (I) and (II) yields the full theorem.
-<2>4. Q.E.D.
+::: pf
 
-<1>2. **Proof of Claim (I): $\iint_R \frac{\partial P}{\partial x} \, dA = \oint_{\partial R} P \, dy$.** <2>1. By Fubini's Theorem and the Fundamental Theorem of Calculus: $$\iint_R \frac{\partial P}{\partial x} \, dA = \int_c^d \left( \int_a^b \frac{\partial P}{\partial x}(x, y) \, dx \right) dy = \int_c^d \big( P(b, y) - P(a, y) \big) \, dy.$$ *Proof:* FTC on the inner integral since $P$ is $C^1$.
-<2>2. Parametrize the four sides of the boundary $\partial R = \gamma_1 + \gamma_2 + \gamma_3 + \gamma_4$:
+::: pf-step
+**Decompose the theorem into separate claims for $P$ and $Q$.**
+
+::: pf-proof
+
+::: pf-step
+Linearity of the integral gives: $$\iint_R \text{div}(\mathbf{F}) \, dA = \iint_R \frac{\partial P}{\partial x} \, dA + \iint_R \frac{\partial Q}{\partial y} \, dA.$$
+
+::: pf-proof
+*Proof:* Additivity of the double integral.
+:::
+
+:::
+
+::: pf-step
+The boundary flux splits into: $$\oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds = \oint_{\partial R} P \, dy - \oint_{\partial R} Q \, dx.$$
+
+::: pf-proof
+*Proof:* Standard identification of $\mathbf{n}\,ds = (dy, -dx)$ for counterclockwise boundary orientation.
+:::
+
+:::
+
+::: {.pf-step #suffices-to-prove-I-and-II}
+It suffices to prove: $$\text{(I)} \quad \iint_R \frac{\partial P}{\partial x} \, dA = \oint_{\partial R} P \, dy, \qquad \text{and} \qquad \text{(II)} \quad \iint_R \frac{\partial Q}{\partial y} \, dA = -\oint_{\partial R} Q \, dx.$$
+
+::: pf-proof
+*Proof:* Adding (I) and (II) yields the full theorem.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#suffices-to-prove-I-and-II){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #claim-I-proof}
+**Proof of Claim (I): $\iint_R \frac{\partial P}{\partial x} \, dA = \oint_{\partial R} P \, dy$.**
+
+::: pf-proof
+
+::: {.pf-step #claim-I-ftc-identity}
+By Fubini's Theorem and the Fundamental Theorem of Calculus: $$\iint_R \frac{\partial P}{\partial x} \, dA = \int_c^d \left( \int_a^b \frac{\partial P}{\partial x}(x, y) \, dx \right) dy = \int_c^d \big( P(b, y) - P(a, y) \big) \, dy.$$
+
+::: pf-proof
+*Proof:* FTC on the inner integral since $P$ is $C^1$.
+:::
+
+:::
+
+::: pf-step
+Parametrize the four sides of the boundary $\partial R = \gamma_1 + \gamma_2 + \gamma_3 + \gamma_4$:
 
 - Bottom edge $\gamma_1$: $x \in [a, b], y = c \implies dy = 0$.
 
@@ -47,14 +98,55 @@ In coordinates, $\oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds = \oint_{\
 - Top edge $\gamma_3$: $x \in [a, b], y = d \implies dy = 0$.
 
 - Left edge $\gamma_4$: $x = a, y \in [c, d]$ (oriented downwards) $\implies dy = -dy$.
-  *Proof:* Counterclockwise orientation of the rectangle perimeter.
-  <2>3. Compute the line integral $\oint_{\partial R} P \, dy$: $$\oint_{\partial R} P \, dy = \int_{\gamma_1} P \, dy + \int_{\gamma_2} P \, dy + \int_{\gamma_3} P \, dy + \int_{\gamma_4} P \, dy = 0 + \int_c^d P(b, y) \, dy + 0 + \int_d^c P(a, y) \, dy = \int_c^d \big( P(b, y) - P(a, y) \big) \, dy.$$ *Proof:* Sum of line integrals along the four segments.
-  <2>4. Comparing <2>1 and <2>3 establishes $\iint_R \frac{\partial P}{\partial x} \, dA = \oint_{\partial R} P \, dy$.
-  *Proof:* Both equal $\int_c^d (P(b,y) - P(a,y))\,dy$.
-  <2>5. Q.E.D.
 
-<1>3. **Proof of Claim (II): $\iint_R \frac{\partial Q}{\partial y} \, dA = -\oint_{\partial R} Q \, dx$.** <2>1. By Fubini's Theorem and the Fundamental Theorem of Calculus: $$\iint_R \frac{\partial Q}{\partial y} \, dA = \int_a^b \left( \int_c^d \frac{\partial Q}{\partial y}(x, y) \, dy \right) dx = \int_a^b \big( Q(x, d) - Q(x, c) \big) \, dx.$$ *Proof:* FTC on the inner integral with respect to $y$.
-<2>2. Compute the line integral $\oint_{\partial R} Q \, dx$ along the four sides:
+::: pf-proof
+*Proof:* Counterclockwise orientation of the rectangle perimeter.
+:::
+
+:::
+
+::: {.pf-step #claim-I-line-integral-computation}
+Compute the line integral $\oint_{\partial R} P \, dy$: $$\oint_{\partial R} P \, dy = \int_{\gamma_1} P \, dy + \int_{\gamma_2} P \, dy + \int_{\gamma_3} P \, dy + \int_{\gamma_4} P \, dy = 0 + \int_c^d P(b, y) \, dy + 0 + \int_d^c P(a, y) \, dy = \int_c^d \big( P(b, y) - P(a, y) \big) \, dy.$$
+
+::: pf-proof
+*Proof:* Sum of line integrals along the four segments.
+:::
+
+:::
+
+::: {.pf-step #claim-I-established}
+Comparing step [](#claim-I-ftc-identity){.pf-ref} and step [](#claim-I-line-integral-computation){.pf-ref} establishes $\iint_R \frac{\partial P}{\partial x} \, dA = \oint_{\partial R} P \, dy$.
+
+::: pf-proof
+*Proof:* Both equal $\int_c^d (P(b,y) - P(a,y))\,dy$.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#claim-I-established){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #claim-II-proof}
+**Proof of Claim (II): $\iint_R \frac{\partial Q}{\partial y} \, dA = -\oint_{\partial R} Q \, dx$.**
+
+::: pf-proof
+
+::: {.pf-step #claim-II-ftc-identity}
+By Fubini's Theorem and the Fundamental Theorem of Calculus: $$\iint_R \frac{\partial Q}{\partial y} \, dA = \int_a^b \left( \int_c^d \frac{\partial Q}{\partial y}(x, y) \, dy \right) dx = \int_a^b \big( Q(x, d) - Q(x, c) \big) \, dx.$$
+
+::: pf-proof
+*Proof:* FTC on the inner integral with respect to $y$.
+:::
+
+:::
+
+::: pf-step
+Compute the line integral $\oint_{\partial R} Q \, dx$ along the four sides:
 
 - Bottom edge $\gamma_1$: $x \in [a, b]$ from left to right, $y = c \implies \int_{\gamma_1} Q \, dx = \int_a^b Q(x, c) \, dx$.
 
@@ -63,11 +155,59 @@ In coordinates, $\oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds = \oint_{\
 - Top edge $\gamma_3$: $x$ from $b$ to $a$, $y = d \implies \int_{\gamma_3} Q \, dx = \int_b^a Q(x, d) \, dx = -\int_a^b Q(x, d) \, dx$.
 
 - Left edge $\gamma_4$: $x = a \implies dx = 0$.
-  *Proof:* Parametrizations of the four edges.
-  <2>3. Summing these four contributions: $$\oint_{\partial R} Q \, dx = \int_a^b Q(x, c) \, dx - \int_a^b Q(x, d) \, dx = -\int_a^b \big( Q(x, d) - Q(x, c) \big) \, dx.$$ *Proof:* Adding line integrals along the boundary.
-  <2>4. Negating both sides yields $-\oint_{\partial R} Q \, dx = \int_a^b (Q(x, d) - Q(x, c)) \, dx = \iint_R \frac{\partial Q}{\partial y} \, dA$.
-  *Proof:* Compares <2>1 and <2>3. <2>5. Q.E.D.
 
-<1>4. **Conclusion: $\iint_R \text{div}(\mathbf{F}) \, dA = \oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds$.** <2>1. Adding the equalities from <1>2 and <1>3 proves the theorem for any closed rectangle $R$.
-*Proof:* Follows from <1>1.<2>3. <2>2. Q.E.D.
+::: pf-proof
+*Proof:* Parametrizations of the four edges.
+:::
+
+:::
+
+::: {.pf-step #claim-II-line-integral-computation}
+Summing these four contributions: $$\oint_{\partial R} Q \, dx = \int_a^b Q(x, c) \, dx - \int_a^b Q(x, d) \, dx = -\int_a^b \big( Q(x, d) - Q(x, c) \big) \, dx.$$
+
+::: pf-proof
+*Proof:* Adding line integrals along the boundary.
+:::
+
+:::
+
+::: {.pf-step #claim-II-established}
+Negating both sides yields $-\oint_{\partial R} Q \, dx = \int_a^b (Q(x, d) - Q(x, c)) \, dx = \iint_R \frac{\partial Q}{\partial y} \, dA$.
+
+::: pf-proof
+*Proof:* Compares step [](#claim-II-ftc-identity){.pf-ref} and step [](#claim-II-line-integral-computation){.pf-ref}.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#claim-II-established){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+**Conclusion: $\iint_R \text{div}(\mathbf{F}) \, dA = \oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds$.**
+
+::: pf-proof
+
+::: {.pf-step #theorem-follows-from-claims}
+Adding the equalities from step [](#claim-I-proof){.pf-ref} and step [](#claim-II-proof){.pf-ref} proves the theorem for any closed rectangle $R$.
+
+::: pf-proof
+*Proof:* Follows from step [](#suffices-to-prove-I-and-II){.pf-ref}.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#theorem-follows-from-claims){.pf-ref}.
+:::
+
+:::
+
 :::

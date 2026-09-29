@@ -36,22 +36,31 @@ Give an example for which $x^TAx=x^TBx$ for all $x\in\mathbb{C}^n$ but $A\neq B$
 :::
 
 ::: {.solution}
-<1>1. **Schur decomposition theorem.** For every $A\in M_n(\mathbb C)$ there is a unitary matrix $U$ such that
+
+::: pf
+
+::: {.pf-step #schur-decomposition-statement}
+**Schur decomposition theorem.** For every $A\in M_n(\mathbb C)$ there is a unitary matrix $U$ such that
 \[
 U^HAU=T
 \]
 is upper triangular. The diagonal entries of $T$ are the eigenvalues of $A$, counted with algebraic multiplicity.
-::: {.proof}
+
+::: pf-proof
 This is the requested statement; no proof is required in part (a).
 :::
 
-<1>2. If $C\in M_n(\mathbb C)$ satisfies
+:::
+
+::: {.pf-step #hermitian-form-zero-implies-zero-matrix}
+If $C\in M_n(\mathbb C)$ satisfies
 \[
 x^HCx=0
 \qquad\text{for every }x\in\mathbb C^n,
 \]
 then $C=0$.
-::: {.proof}
+
+::: pf-proof
 Let $e_1,\ldots,e_n$ be the standard basis. Taking $x=e_i$ gives
 \[
 C_{ii}=e_i^HC e_i=0
@@ -72,22 +81,30 @@ C_{ij}=C_{ji}=0.
 Thus every entry of $C$ vanishes.
 :::
 
-<1>3. Hence, if
+:::
+
+::: {.pf-step #hermitian-form-determines-matrix}
+Hence, if
 \[
 x^HAx=x^HBx
 \qquad\text{for every }x\in\mathbb C^n,
 \]
 then $A=B$.
-::: {.proof}
-Apply <1>2 to $C=A-B$. The hypothesis becomes
+
+::: pf-proof
+Apply step [](#hermitian-form-zero-implies-zero-matrix){.pf-ref} to $C=A-B$. The hypothesis becomes
 \[
 x^H(A-B)x=0
 \]
 for every $x$, so $A-B=0$.
 :::
 
-<1>4. The analogous assertion with transpose in place of Hermitian transpose is false.
-::: {.proof}
+:::
+
+::: {.pf-step #transpose-counterexample}
+The analogous assertion with transpose in place of Hermitian transpose is false.
+
+::: pf-proof
 Take
 \[
 A=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
@@ -105,12 +122,16 @@ x^TAx
 Thus ordinary transpose quadratic forms do not determine an arbitrary complex matrix.
 :::
 
-<1>5. Suppose $A^2=A$. Then
+:::
+
+::: {.pf-step #idempotent-decomposition}
+Suppose $A^2=A$. Then
 \[
 V=\operatorname{im}A\oplus\ker A,
 \]
 and $A$ is the projection onto $\operatorname{im}A$ along $\ker A$.
-::: {.proof}
+
+::: pf-proof
 For every $x\in V$,
 \[
 x=Ax+(x-Ax).
@@ -126,13 +147,17 @@ u=Av=A^2v=A(Av)=Au=0.
 Thus the sum is direct, and $A$ acts as the identity on its image and as zero on its kernel.
 :::
 
-<1>6. If $A$ is an orthogonal projection, then $A=A^H$.
-::: {.proof}
+:::
+
+::: {.pf-step #orthogonal-implies-hermitian}
+If $A$ is an orthogonal projection, then $A=A^H$.
+
+::: pf-proof
 For an orthogonal projection,
 \[
 \operatorname{im}A\perp\ker A.
 \]
-By <1>5, write
+By step [](#idempotent-decomposition){.pf-ref}, write
 \[
 x=u+v,
 \qquad
@@ -155,9 +180,13 @@ Orthogonality gives
 Therefore $A$ is self-adjoint, i.e. $A=A^H$.
 :::
 
-<1>7. Conversely, if $A^2=A$ and $A=A^H$, then $A$ is an orthogonal projection.
-::: {.proof}
-By <1>5, $A$ is a projection onto $\operatorname{im}A$ along $\ker A$. It remains to show these two subspaces are orthogonal.
+:::
+
+::: {.pf-step #hermitian-implies-orthogonal}
+Conversely, if $A^2=A$ and $A=A^H$, then $A$ is an orthogonal projection.
+
+::: pf-proof
+By step [](#idempotent-decomposition){.pf-ref}, $A$ is a projection onto $\operatorname{im}A$ along $\ker A$. It remains to show these two subspaces are orthogonal.
 Let $u\in\operatorname{im}A$ and $v\in\ker A$. Write $u=Ax$. Then
 \[
 \langle u,v\rangle
@@ -173,11 +202,24 @@ Hence
 so the projection is orthogonal.
 :::
 
-<1>8. Thus, among projections $A^2=A$,
+:::
+
+::: {.pf-step #orthogonal-projection-iff-hermitian}
+Thus, among projections $A^2=A$,
 \[
 \boxed{A\text{ is orthogonal}\iff A=A^H}.
 \]
-::: {.proof}
-Combine <1>6 and <1>7.
+
+::: pf-proof
+Combine steps [](#orthogonal-implies-hermitian){.pf-ref} and [](#hermitian-implies-orthogonal){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#schur-decomposition-statement){.pf-ref} answers part (a); steps [](#hermitian-form-determines-matrix){.pf-ref} and [](#transpose-counterexample){.pf-ref} answer part (b); step [](#orthogonal-projection-iff-hermitian){.pf-ref} answers part (c).
+:::
+
+:::
+
 :::

@@ -30,10 +30,14 @@ Let $V,W$ be finite-dimensional vector spaces, let $X\subseteq W$ be a subspace,
 :::
 
 ::: {.solution}
-<1>1. The restriction of $T$ to $T^{-1}(X)$ has image
+
+::: pf
+
+::: {.pf-step #restricted-map-image-kernel}
+The restriction of $T$ to $T^{-1}(X)$ has image
 $X\cap\operatorname{im}T$ and kernel $\ker T$.
 
-::: {.proof}
+::: pf-proof
 If $v\in T^{-1}(X)$, then $T(v)\in X$ and, by definition, $T(v)$ lies in
 $\operatorname{im}T$. Thus the image of the restriction is contained in
 $X\cap\operatorname{im}T$. Conversely, if
@@ -43,25 +47,29 @@ restriction. Its kernel consists exactly of those $v$ with $T(v)=0$, namely
 $\ker T$.
 :::
 
-<1>2.
+:::
+
+::: {.pf-step #rank-nullity-identity}
 $$
 \dim T^{-1}(X)
 =
 \dim\ker T+\dim(X\cap\operatorname{im}T).
 $$
 
-::: {.proof}
-Apply the rank-nullity theorem to the restricted map described in step <1>1.
+::: pf-proof
+Apply the rank-nullity theorem to the restricted map described in step [](#restricted-map-image-kernel){.pf-ref}.
 :::
 
-<1>3.
+:::
+
+::: {.pf-step #dimension-formula-inequality}
 $$
 \dim(X\cap\operatorname{im}T)
 \geq
 \dim X+\dim\operatorname{im}T-\dim W.
 $$
 
-::: {.proof}
+::: pf-proof
 The dimension formula for the subspaces $X$ and $\operatorname{im}T$ gives
 $$
 \dim(X\cap\operatorname{im}T)
@@ -76,15 +84,17 @@ $$
 which yields the claimed inequality.
 :::
 
-<1>4.
+:::
+
+::: {.pf-step #dimension-lower-bound}
 $$
 \dim T^{-1}(X)
 \geq
 \dim V-\dim W+\dim X.
 $$
 
-::: {.proof}
-Combining steps <1>2 and <1>3 gives
+::: pf-proof
+Combining steps [](#rank-nullity-identity){.pf-ref} and [](#dimension-formula-inequality){.pf-ref} gives
 $$
 \dim T^{-1}(X)
 \geq
@@ -97,9 +107,12 @@ $$
 Substitution proves the desired inequality.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#dimension-lower-bound){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

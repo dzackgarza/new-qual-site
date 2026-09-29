@@ -35,23 +35,33 @@ with \(\phi(h)=h\) for every \(h\in H\). Show that \(G\) is a direct product of 
 :::
 
 ::: {.solution}
-<1>1. The claim holds when $G$ is trivial.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #base-case-trivial}
+The claim holds when $G$ is trivial.
+
+::: pf-proof
 The trivial group is the empty direct product of groups of prime
 order.
 :::
 
-<1>2. Assume $G$ is nontrivial and that the claim holds for all
+:::
+
+::: {.pf-step #choose-subgroup-order-p}
+Assume $G$ is nontrivial and that the claim holds for all
 smaller finite groups satisfying the same retract hypothesis. Choose
 a subgroup $H\le G$ of prime order $p$.
 
-::: {.proof}
+::: pf-proof
 By Cauchy's theorem, if a prime $p$ divides $\abs G$, then $G$ has an
 element of order $p$. The subgroup it generates has order $p$.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #K-def-and-order}
+Let
 $$
 \phi:G\longrightarrow H
 $$
@@ -65,7 +75,7 @@ $$
 $$
 and $K$ is strictly smaller than $G$.
 
-::: {.proof}
+::: pf-proof
 Since $\phi$ restricts to the identity on $H$, it is surjective.
 The first isomorphism theorem therefore gives
 $$
@@ -78,9 +88,12 @@ $$
 Thus $\abs G=\abs K\,\abs H$ and $\abs K<\abs G$.
 :::
 
-<1>4. The group $K$ satisfies the same retract hypothesis.
+:::
 
-::: {.proof}
+::: {.pf-step #K-satisfies-retract-hypothesis}
+The group $K$ satisfies the same retract hypothesis.
+
+::: pf-proof
 Let $L\le K$. By the hypothesis on $G$, there is a homomorphism
 $$
 \rho:G\longrightarrow L
@@ -94,14 +107,20 @@ which is still the identity on $L$. Hence every subgroup of $K$ is a
 retract of $K$.
 :::
 
-<1>5. The group $K$ is a direct product of groups of prime order.
+:::
 
-::: {.proof}
-By steps <1>3--<1>4, $K$ is smaller than $G$ and satisfies the
+::: {.pf-step #K-is-product-of-primes}
+The group $K$ is a direct product of groups of prime order.
+
+::: pf-proof
+By steps [](#K-def-and-order){.pf-ref} and [](#K-satisfies-retract-hypothesis){.pf-ref}, $K$ is smaller than $G$ and satisfies the
 induction hypothesis.
 :::
 
-<1>6. Let
+:::
+
+::: {.pf-step #alpha-injective}
+Let
 $$
 \sigma:G\longrightarrow K
 $$
@@ -113,7 +132,7 @@ $$
 $$
 Then $\alpha$ is injective.
 
-::: {.proof}
+::: pf-proof
 The subgroup $K\le G$ has a retraction $\sigma$ by the original
 hypothesis. Both components of $\alpha$ are homomorphisms, so
 $\alpha$ is a homomorphism.
@@ -123,34 +142,43 @@ $\sigma|_K=\operatorname{id}_K$, while $\sigma(g)=1$. Hence $g=1$.
 Thus $\ker\alpha=\{1\}$ and $\alpha$ is injective.
 :::
 
-<1>7. The map $\alpha$ is an isomorphism
+:::
+
+::: {.pf-step #alpha-isomorphism}
+The map $\alpha$ is an isomorphism
 $$
 G\cong K\times H.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#K-def-and-order){.pf-ref},
 $$
 \abs G=\abs K\,\abs H=\abs{K\times H}.
 $$
-The injective map $\alpha$ from step <1>6 is therefore a bijection
+The injective map $\alpha$ from step [](#alpha-injective){.pf-ref} is therefore a bijection
 between finite groups of equal order, hence an isomorphism.
 :::
 
-<1>8. Therefore $G$ is a direct product of groups of prime order.
+:::
 
-::: {.proof}
-By step <1>5, write $K$ as a direct product of groups of prime order.
-The group $H$ itself has prime order. Step <1>7 gives
+::: {.pf-step #G-is-product-of-primes}
+Therefore $G$ is a direct product of groups of prime order.
+
+::: pf-proof
+By step [](#K-is-product-of-primes){.pf-ref}, write $K$ as a direct product of groups of prime order.
+The group $H$ itself has prime order. Step [](#alpha-isomorphism){.pf-ref} gives
 $$
 G\cong K\times H,
 $$
 so adjoining the factor $H$ gives the required decomposition.
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>8 complete the induction on $\abs G$.
 :::
+
+::: pf-qed
+Steps [](#base-case-trivial){.pf-ref}, [](#choose-subgroup-order-p){.pf-ref}, [](#K-def-and-order){.pf-ref}, [](#K-satisfies-retract-hypothesis){.pf-ref}, [](#K-is-product-of-primes){.pf-ref}, [](#alpha-injective){.pf-ref}, [](#alpha-isomorphism){.pf-ref} and [](#G-is-product-of-primes){.pf-ref} complete the induction on $\abs G$.
+:::
+
+:::
+
 :::

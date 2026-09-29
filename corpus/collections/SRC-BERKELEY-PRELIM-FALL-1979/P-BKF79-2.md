@@ -37,13 +37,16 @@ $$
 \phi(z)=\frac{z-i}{z+i}.
 $$
 
-<1>1. The map $\phi$ is a biholomorphism from the open upper
+::: pf
+
+::: {.pf-step #cayley-map}
+The map $\phi$ is a biholomorphism from the open upper
 half-plane onto the unit disk, with
 $$
 \phi(i)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 For $z=x+iy$ with $y>0$,
 $$
 \abs{z-i}^2=x^2+(y-1)^2
@@ -72,15 +75,18 @@ Thus this formula maps the unit disk into the upper half-plane and is
 the inverse of $\phi$. Finally, $\phi(i)=0$.
 :::
 
-<1>2. The function
+:::
+
+::: {.pf-step #g-def}
+The function
 $$
 g(w)=f\left(i\frac{1+w}{1-w}\right)
 $$
 is holomorphic on the unit disk, satisfies $\abs{g(w)}\leq1$, and
 $g(0)=0$.
 
-::: {.proof}
-By step <1>1, the argument of $f$ lies in the upper half-plane for
+::: pf-proof
+By step [](#cayley-map){.pf-ref}, the argument of $f$ lies in the upper half-plane for
 $\abs w<1$, so $g$ is holomorphic there and inherits the bound
 $\abs g\leq1$. Also
 $$
@@ -88,21 +94,27 @@ g(0)=f(i)=0.
 $$
 :::
 
-<1>3. For every $w$ in the unit disk,
+:::
+
+::: {.pf-step #schwarz-bound}
+For every $w$ in the unit disk,
 $$
 \abs{g(w)}\leq\abs w.
 $$
 
-::: {.proof}
-This is Schwarz's lemma applied to the function in step <1>2.
+::: pf-proof
+This is Schwarz's lemma applied to the function in step [](#g-def){.pf-ref}.
 :::
 
-<1>4. Every function satisfying the hypotheses obeys
+:::
+
+::: {.pf-step #upper-bound}
+Every function satisfying the hypotheses obeys
 $$
 \abs{f(2i)}\leq\frac13.
 $$
 
-::: {.proof}
+::: pf-proof
 We have
 $$
 \phi(2i)
@@ -111,7 +123,7 @@ $$
 =
 \frac13.
 $$
-Since $g(\phi(z))=f(z)$, step <1>3 gives
+Since $g(\phi(z))=f(z)$, step [](#schwarz-bound){.pf-ref} gives
 $$
 \abs{f(2i)}
 =
@@ -121,14 +133,17 @@ $$
 $$
 :::
 
-<1>5. The bound in step <1>4 is attained.
+:::
 
-::: {.proof}
+::: {.pf-step #bound-attained}
+The bound in step [](#upper-bound){.pf-ref} is attained.
+
+::: pf-proof
 Take
 $$
 f(z)=\phi(z)=\frac{z-i}{z+i}.
 $$
-By step <1>1, this function is holomorphic on the upper half-plane,
+By step [](#cayley-map){.pf-ref}, this function is holomorphic on the upper half-plane,
 has modulus strictly less than $1$ there, and satisfies $f(i)=0$.
 Moreover,
 $$
@@ -136,19 +151,24 @@ $$
 $$
 :::
 
-<1>6. The largest possible value is
+:::
+
+::: {.pf-step #sharp-value}
+The largest possible value is
 $$
 \boxed{\frac13}.
 $$
 
-::: {.proof}
-Step <1>4 gives the upper bound, and step <1>5 shows that equality is
+::: pf-proof
+Step [](#upper-bound){.pf-ref} gives the upper bound, and step [](#bound-attained){.pf-ref} shows that equality is
 possible.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the requested sharp value.
+::: pf-qed
+Step [](#sharp-value){.pf-ref} is the requested sharp value.
+:::
+
 :::
 :::

@@ -29,14 +29,23 @@ Prove that $M$ cannot be embedded as a submanifold of $S^3$.
 :::
 
 ::: {.solution}
-<1>1. Suppose for contradiction that $M$ embeds as a compact submanifold of $S^3$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #assume-embedding}
+Suppose for contradiction that $M$ embeds as a compact submanifold of $S^3$.
+
+::: pf-proof
 Identify $M$ with its image in $S^3$.
 Because a compact manifold has the homotopy type of a finite CW complex, its homology groups are finitely generated.
 :::
 
-<1>2. Alexander duality implies that $H^2(M;\ZZ)$ is free abelian.
-::: {.proof}
+:::
+
+::: {.pf-step #h2-free-abelian}
+Alexander duality implies that $H^2(M;\ZZ)$ is free abelian.
+
+::: pf-proof
 The embedded manifold $M$ is compact and locally contractible, so Alexander duality gives
 \[
 \widetilde H^2(M;\ZZ)
@@ -48,8 +57,12 @@ Hence $\widetilde H^2(M;\ZZ)$ is free abelian.
 In degree $2>0$, reduced and unreduced cohomology agree, so $H^2(M;\ZZ)$ is free abelian.
 :::
 
-<1>3. If $H_1(M;\ZZ)$ has nonzero torsion, then $H^2(M;\ZZ)$ has nonzero torsion.
-::: {.proof}
+:::
+
+::: {.pf-step #h1-torsion-implies-h2-torsion}
+If $H_1(M;\ZZ)$ has nonzero torsion, then $H^2(M;\ZZ)$ has nonzero torsion.
+
+::: pf-proof
 The universal coefficient theorem for cohomology gives a natural short exact sequence
 \[
 0
@@ -62,7 +75,7 @@ H^2(M;\ZZ)
 \longrightarrow
 0.
 \]
-By <1>1, the finitely generated abelian group $H_1(M;\ZZ)$ decomposes as
+By step [](#assume-embedding){.pf-ref}, the finitely generated abelian group $H_1(M;\ZZ)$ decomposes as
 \[
 H_1(M;\ZZ)\cong \ZZ^r\oplus T
 \]
@@ -78,10 +91,19 @@ is nonzero torsion.
 The left arrow in the UCT sequence is injective, so this torsion subgroup embeds in $H^2(M;\ZZ)$.
 :::
 
-<1>4. Therefore $M$ cannot embed in $S^3$.
-::: {.proof}
-The hypothesis says that $H_1(M;\ZZ)$ has nonzero torsion.
-By <1>3, $H^2(M;\ZZ)$ then has nonzero torsion, while <1>2 says that $H^2(M;\ZZ)$ is free abelian.
-This contradiction disproves the assumed embedding from <1>1.
 :::
+
+::: pf-step
+Therefore $M$ cannot embed in $S^3$.
+
+::: pf-proof
+The hypothesis says that $H_1(M;\ZZ)$ has nonzero torsion.
+By step [](#h1-torsion-implies-h2-torsion){.pf-ref}, $H^2(M;\ZZ)$ then has nonzero torsion, while step [](#h2-free-abelian){.pf-ref} says that $H^2(M;\ZZ)$ is free abelian.
+This contradiction disproves the assumed embedding from step [](#assume-embedding){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

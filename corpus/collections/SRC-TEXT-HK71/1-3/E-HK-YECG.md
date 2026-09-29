@@ -35,52 +35,96 @@ is a $2 \times 2$ matrix over the field $F$ . Prove the following.
 ::: {.solution}
 **Part (a).**
 
-<1>1. If $A = 0$, then $AX = 0$ for every $X = (x_1, x_2)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #zero-matrix-all-solutions}
+If $A = 0$, then $AX = 0$ for every $X = (x_1, x_2)$.
+
+::: pf-proof
 the zero matrix sends every vector to $0$.
+:::
+
+:::
+
 :::
 
 **Part (b).**
 
-<1>1. If $ad - bc \neq 0$, then $A$ is invertible.
-::: {.proof}
+::: pf
+
+::: pf-step
+If $ad - bc \neq 0$, then $A$ is invertible.
+
+::: pf-proof
 $\det A = ad - bc \neq 0$.
 :::
 
-<1>2. Hence $AX = 0$ implies $X = A^{-1} \cdot 0 = 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #ax0-implies-x-zero}
+Hence $AX = 0$ implies $X = A^{-1} \cdot 0 = 0$.
+
+::: pf-proof
 multiply both sides by $A^{-1}$.
 :::
 
-<1>3. Therefore the only solution is the trivial one.
-::: {.proof}
-<1>2.
+:::
+
+::: {.pf-step #trivial-solution-only}
+Therefore the only solution is the trivial one.
+
+::: pf-proof
+Step [](#ax0-implies-x-zero){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **Part (c).**
 
-<1>1. If $ad - bc = 0$ and $A \neq 0$, then $\operatorname{rank}(A) = 1$.
-::: {.proof}
+::: pf
+
+::: pf-step
+If $ad - bc = 0$ and $A \neq 0$, then $\operatorname{rank}(A) = 1$.
+
+::: pf-proof
 $A$ is nonzero but singular, so its rank is $1$ (a nonzero $2 \times 2$ matrix of determinant $0$ has rank $1$).
 :::
 
-<1>2. Hence the solution space $\{X : AX = 0\}$ is $1$-dimensional.
-::: {.proof}
+:::
+
+::: pf-step
+Hence the solution space $\{X : AX = 0\}$ is $1$-dimensional.
+
+::: pf-proof
 by rank–nullity, $\dim \ker A = 2 - \operatorname{rank}(A) = 1$.
 :::
 
-<1>3. Let $(x_1^0, x_2^0)$ be any nonzero solution.
-::: {.proof}
+:::
+
+::: pf-step
+Let $(x_1^0, x_2^0)$ be any nonzero solution.
+
+::: pf-proof
 such a solution exists since $\ker A \neq 0$.
 :::
 
-<1>4. Then $(x_1, x_2)$ is a solution iff $(x_1, x_2) = y(x_1^0, x_2^0)$ for some scalar $y$.
-::: {.proof}
+:::
+
+::: {.pf-step #solution-iff-scalar-multiple}
+Then $(x_1, x_2)$ is a solution iff $(x_1, x_2) = y(x_1^0, x_2^0)$ for some scalar $y$.
+
+::: pf-proof
 the solution space is $1$-dimensional and spanned by $(x_1^0, x_2^0)$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>1 (a), <1>3 (b), and <1>4 (c).
 :::
+
+::: pf-qed
+Steps [](#zero-matrix-all-solutions){.pf-ref} (a), [](#trivial-solution-only){.pf-ref} (b), and [](#solution-iff-scalar-multiple){.pf-ref} (c).
+:::
+
+:::
+
 :::

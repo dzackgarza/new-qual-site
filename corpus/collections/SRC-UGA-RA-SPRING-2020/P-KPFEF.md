@@ -44,8 +44,13 @@ c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf
 :::
 
 ::: {.solution}
-<1>1. Prove the $L^1$ tails vanish, and give a counterexample to pointwise decay.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #tails-vanish}
+Prove the $L^1$ tails vanish, and give a counterexample to pointwise decay.
+
+::: pf-proof
 Since $|f|\in L^1(\mathbb R)$ and
 \[
 \mathbf1_{\{|x|\ge N\}}|f(x)|\longrightarrow0
@@ -70,8 +75,12 @@ The intervals are disjoint up to endpoints and
 so $f\in L^1(\mathbb R)$. But $f(k)=1$ for every positive integer $k$, hence $f(x)$ does not tend to $0$ as $x\to\infty$.
 :::
 
-<1>2. If $f$ is decreasing and integrable on $[1,\infty)$, prove $f(x)\to0$ and $xf(x)\to0$.
-::: {.proof}
+:::
+
+::: {.pf-step #decreasing-l1-decay}
+If $f$ is decreasing and integrable on $[1,\infty)$, prove $f(x)\to0$ and $xf(x)\to0$.
+
+::: pf-proof
 Because $f$ is decreasing, the extended limit
 \[
 L:=\lim_{x\to\infty}f(x)
@@ -101,8 +110,12 @@ Consequently
 and the already established $f(x)\to0$ follows as well.
 :::
 
-<1>3. Show that $xf(x)\to0$ does not imply integrability.
-::: {.proof}
+:::
+
+::: {.pf-step #decay-not-sufficient}
+Show that $xf(x)\to0$ does not imply integrability.
+
+::: pf-proof
 Define
 \[
 f(x)=
@@ -123,4 +136,13 @@ However,
 \]
 Hence the condition $xf(x)\to0$ does not imply $f\in L^1([1,\infty))$.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#tails-vanish){.pf-ref}, [](#decreasing-l1-decay){.pf-ref} and [](#decay-not-sufficient){.pf-ref} answer parts a, b and c.
+:::
+
+:::
+
 :::

@@ -30,9 +30,13 @@ Show that if $f : \mathbb { C } \to \hat { \mathbb { C } }$ is a meromorphic fun
 :::
 
 ::: {.solution}
-<1>1. The function $f$ has only finitely many poles.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #finitely-many-poles}
+The function $f$ has only finitely many poles.
+
+::: pf-proof
 The bound
 $$
 \abs{f(z)}\leq C\abs z^n
@@ -44,13 +48,16 @@ have an accumulation point in that disk, contradicting isolatedness of the
 poles. Hence there are only finitely many.
 :::
 
-<1>2. There is a polynomial $P$ such that
+:::
+
+::: {.pf-step #pole-cleared-entire}
+There is a polynomial $P$ such that
 $$
 g\coloneqq Pf
 $$
 is entire.
 
-::: {.proof}
+::: pf-proof
 Let the distinct poles of $f$ be $a_1,\ldots,a_r$, with respective orders
 $m_1,\ldots,m_r$, and set
 $$
@@ -63,9 +70,12 @@ holomorphic, so after filling in the removable singularities, $g=Pf$ is
 entire.
 :::
 
-<1>3. The entire function $g$ is a polynomial.
+:::
 
-::: {.proof}
+::: {.pf-step #g-is-polynomial}
+The entire function $g$ is a polynomial.
+
+::: pf-proof
 Let
 $$
 m\coloneqq m_1+\cdots+m_r=\deg P.
@@ -96,19 +106,25 @@ integer $k$. The Taylor series of the entire function $g$ consequently has
 only finitely many nonzero coefficients, so $g$ is a polynomial.
 :::
 
-<1>4. The function $f$ is rational.
+:::
 
-::: {.proof}
-By steps <1>2 and <1>3, both $P$ and $g=Pf$ are polynomials. Therefore
+::: {.pf-step #f-rational}
+The function $f$ is rational.
+
+::: pf-proof
+By steps [](#pole-cleared-entire){.pf-ref} and [](#g-is-polynomial){.pf-ref}, both $P$ and $g=Pf$ are polynomials. Therefore
 $$
 f=\frac{g}{P}
 $$
 as meromorphic functions on $\CC$, so $f$ is rational.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-rational){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

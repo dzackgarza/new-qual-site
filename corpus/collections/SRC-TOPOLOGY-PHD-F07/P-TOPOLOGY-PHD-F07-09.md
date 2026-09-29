@@ -38,8 +38,12 @@ Prove that every closed subspace of a locally compact Hausdorff space is locally
 ::: {.solution}
 Let $X$ be locally compact Hausdorff, and let $A\subseteq X$ be closed.
 
-<1>1. The subspace $A$ is Hausdorff.
-::: {.proof}
+::: pf
+
+::: {.pf-step #a-hausdorff}
+The subspace $A$ is Hausdorff.
+
+::: pf-proof
 Take distinct points $a,b\in A$.
 Since $X$ is Hausdorff, there are disjoint open sets $U,V\subseteq X$ with
 \[
@@ -51,29 +55,41 @@ Then $U\cap A$ and $V\cap A$ are disjoint open neighborhoods of $a$ and $b$ in t
 Thus $A$ is Hausdorff.
 :::
 
-<1>2. Fix $a\in A$.
+:::
+
+::: {.pf-step #compact-nbhd-exists}
+Fix $a\in A$.
 There is a compact neighborhood $K$ of $a$ in $X$ and an open set $U\subseteq X$ such that
 \[
 a\in U\subseteq K.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $X$ is locally compact, $a$ has a compact neighborhood $K$.
 By the definition of neighborhood, $K$ contains an open set $U$ containing $a$.
 :::
 
-<1>3. The set $K\cap A$ is compact.
-::: {.proof}
+:::
+
+::: {.pf-step #k-cap-a-compact}
+The set $K\cap A$ is compact.
+
+::: pf-proof
 Because $A$ is closed in $X$, the intersection
 \[
 K\cap A
 \]
 is closed in the subspace $K$.
-A closed subspace of a compact space is compact, and $K$ is compact by <1>2. Therefore $K\cap A$ is compact.
+A closed subspace of a compact space is compact, and $K$ is compact by step [](#compact-nbhd-exists){.pf-ref}. Therefore $K\cap A$ is compact.
 :::
 
-<1>4. The set $K\cap A$ is a neighborhood of $a$ in the subspace $A$.
-::: {.proof}
-By <1>2,
+:::
+
+::: {.pf-step #k-cap-a-neighborhood}
+The set $K\cap A$ is a neighborhood of $a$ in the subspace $A$.
+
+::: pf-proof
+By step [](#compact-nbhd-exists){.pf-ref},
 \[
 a\in U\subseteq K.
 \]
@@ -85,10 +101,19 @@ The set $U\cap A$ is open in $A$ by the definition of the subspace topology.
 Thus $K\cap A$ contains an open neighborhood of $a$ in $A$, so it is a neighborhood of $a$ in $A$.
 :::
 
-<1>5. Therefore $A$ is locally compact.
-::: {.proof}
-The point $a\in A$ was arbitrary.
-By <1>3--<1>4, every point of $A$ has a compact neighborhood in $A$.
-Together with the Hausdorff property from <1>1, this is precisely local compactness in the sense stated in the problem.
 :::
+
+::: pf-step
+Therefore $A$ is locally compact.
+
+::: pf-proof
+The point $a\in A$ was arbitrary.
+By steps [](#k-cap-a-compact){.pf-ref} and [](#k-cap-a-neighborhood){.pf-ref}, every point of $A$ has a compact neighborhood in $A$.
+Together with the Hausdorff property from step [](#a-hausdorff){.pf-ref}, this is precisely local compactness in the sense stated in the problem.
+:::
+
+:::
+
+:::
+
 :::

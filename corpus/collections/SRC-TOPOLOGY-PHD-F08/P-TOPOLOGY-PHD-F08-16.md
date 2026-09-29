@@ -36,7 +36,11 @@ Compute the fundamental group of $\mathbb R^3-C$ where $C$ denotes the circle $x
 :::
 
 ::: {.solution}
-<1>1. A subspace $A\subseteq X$ is a deformation retract of $X$ if there is a retraction
+
+::: pf
+
+::: pf-step
+A subspace $A\subseteq X$ is a deformation retract of $X$ if there is a retraction
 \[
 r:X\to A,
 \qquad
@@ -48,7 +52,8 @@ i\circ r\simeq\operatorname{id}_X,
 \]
 where $i:A\hookrightarrow X$ is the inclusion.
 It is a strong deformation retract if the homotopy can be chosen to fix $A$ pointwise at every time.
-::: {.proof}
+
+::: pf-proof
 Equivalently, a deformation retract is given by a homotopy
 \[
 H:X\times I\to X
@@ -64,14 +69,16 @@ For a strong deformation retract one additionally requires
 H(a,t)=a
 \]
 for every $a\in A$ and $t\in I$.
-:::
-
 Let
 \[
 C=\{(x,y,z)\in\mathbb R^3:x^2+y^2=1,\ z=0\}.
 \]
+:::
 
-<1>2. Under inverse stereographic projection
+:::
+
+::: {.pf-step #circle-becomes-great-circle}
+Under inverse stereographic projection
 \[
 \Phi:\mathbb R^3\longrightarrow S^3\setminus\{N\}\subseteq\mathbb R^4,
 \]
@@ -79,7 +86,8 @@ the circle $C$ becomes the great circle
 \[
 C_0=\{(x_1,x_2,0,0):x_1^2+x_2^2=1\}.
 \]
-::: {.proof}
+
+::: pf-proof
 Take
 \[
 S^3=\{(x_1,x_2,x_3,x_4)\in\mathbb R^4:x_1^2+x_2^2+x_3^2+x_4^2=1\}
@@ -111,7 +119,10 @@ S^3\setminus(C_0\cup\{N\}).
 \]
 :::
 
-<1>3. The complement
+:::
+
+::: {.pf-step #m-retracts-to-d}
+The complement
 \[
 M=S^3\setminus C_0
 \]
@@ -119,7 +130,8 @@ strongly deformation retracts onto the complementary great circle
 \[
 D=\{(0,0,x_3,x_4):x_3^2+x_4^2=1\}\cong S^1.
 \]
-::: {.proof}
+
+::: pf-proof
 Write a point of $S^3$ as
 \[
 (u,v)\in\mathbb R^2\times\mathbb R^2,
@@ -160,24 +172,32 @@ for all $t$.
 Thus $H$ is a strong deformation retraction of $M$ onto $D$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #pi1-m}
+Therefore
 \[
 \pi_1(M)\cong\mathbb Z.
 \]
-::: {.proof}
-By <1>3, the inclusion $D\hookrightarrow M$ is a homotopy equivalence.
+
+::: pf-proof
+By step [](#m-retracts-to-d){.pf-ref}, the inclusion $D\hookrightarrow M$ is a homotopy equivalence.
 Hence
 \[
 \pi_1(M)\cong\pi_1(D)\cong\pi_1(S^1)\cong\mathbb Z.
 \]
 :::
 
-<1>5. The inclusion
+:::
+
+::: {.pf-step #v-iso-to-m}
+The inclusion
 \[
 M\setminus\{N\}\hookrightarrow M
 \]
 induces an isomorphism on fundamental groups.
-::: {.proof}
+
+::: pf-proof
 The point $N$ lies in $D$ and is disjoint from $C_0$.
 Choose a sufficiently small open $3$-ball
 \[
@@ -201,7 +221,7 @@ U\setminus\{N\}\cong B^3\setminus\{0\}
 deformation retracts onto $S^2$ and is therefore path-connected and simply connected.
 
 The space $V$ is path-connected.
-Indeed, by <1>2 it is homeomorphic to $\mathbb R^3\setminus C$.
+Indeed, by step [](#circle-becomes-great-circle){.pf-ref} it is homeomorphic to $\mathbb R^3\setminus C$.
 Write a point there as $(x,y,z)$ and put
 \[
 \rho=\sqrt{x^2+y^2}.
@@ -236,21 +256,30 @@ the canonical homomorphism
 is an isomorphism.
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+Hence
 \[
 \boxed{\pi_1(\mathbb R^3\setminus C)\cong\mathbb Z.}
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+By step [](#circle-becomes-great-circle){.pf-ref},
 \[
 \mathbb R^3\setminus C
 \cong
 M\setminus\{N\}.
 \]
-By <1>5,
+By step [](#v-iso-to-m){.pf-ref},
 \[
 \pi_1(M\setminus\{N\})\cong\pi_1(M),
 \]
-and <1>4 computes the latter group as $\mathbb Z$.
+and step [](#pi1-m){.pf-ref} computes the latter group as $\mathbb Z$.
 :::
+
+:::
+
+:::
+
 :::

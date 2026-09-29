@@ -49,9 +49,13 @@ Show that $C$ is an elliptic curve.
 :::
 
 ::: {.solution}
-<1>1. The smooth plane cubic $C$ is irreducible.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #c-irreducible}
+The smooth plane cubic $C$ is irreducible.
+
+::: pf-proof
 Let
 $$
 C=V(F),
@@ -88,12 +92,15 @@ Thus $P$ is singular on $C$, contradicting smoothness. Therefore $F$ is
 irreducible and $C$ is an integral projective curve.
 :::
 
-<1>2. The geometric genus of $C$ is
+:::
+
+::: {.pf-step #genus-one}
+The geometric genus of $C$ is
 $$
 \boxed{g(C)=1.}
 $$
 
-::: {.proof}
+::: pf-proof
 For an integral plane curve of degree $d$, the genus formula
 [[D-CRVPLSING]] gives
 $$
@@ -117,21 +124,27 @@ g(C)
 $$
 :::
 
-<1>3. The curve $C$ is elliptic.
+:::
 
-::: {.proof}
+::: {.pf-step #c-elliptic}
+The curve $C$ is elliptic.
+
+::: pf-proof
 An elliptic curve is a projective curve of geometric genus $1$, and step
-<1>2 gives this condition. Therefore
+[](#genus-one){.pf-ref} gives this condition. Therefore
 $$
 \boxed{C\text{ is an elliptic curve}.}
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 verifies that the smooth cubic is an integral projective curve,
-step <1>2 computes its genus, and step <1>3 concludes that it is an elliptic
+::: pf-qed
+Step [](#c-irreducible){.pf-ref} verifies that the smooth cubic is an integral projective curve,
+step [](#genus-one){.pf-ref} computes its genus, and step [](#c-elliptic){.pf-ref} concludes that it is an elliptic
 curve.
 :::
+
+:::
+
 :::

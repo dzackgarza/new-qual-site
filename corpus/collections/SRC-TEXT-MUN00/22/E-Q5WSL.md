@@ -35,34 +35,49 @@ Show that the following are topological groups:
 ::: {.solution}
 Each of the five spaces is a subspace of some $\RR^k$, hence $T_1$, and each is a group under the stated operation; it remains to show that multiplication and inversion are continuous.
 
-<1>1. (a) $(\ZZ,+)$ is a topological group.
+::: pf
 
-::: {.proof}
+::: {.pf-step #part-a}
+(a) $(\ZZ,+)$ is a topological group.
+
+::: pf-proof
 The subspace topology on $\ZZ\subseteq\RR$ is discrete, so $\ZZ\times\ZZ$ is discrete and every map out of $\ZZ$ or $\ZZ\times\ZZ$ is continuous.
 :::
 
-<1>2. (b), (c) $(\RR,+)$ and $(\RR_+,\cdot)$ are topological groups.
+:::
 
-::: {.proof}
+::: {.pf-step #parts-b-c}
+(b), (c) $(\RR,+)$ and $(\RR_+,\cdot)$ are topological groups.
+
+::: pf-proof
 Addition, negation, multiplication, and $x\mapsto1/x$ on $(0,\infty)$ are continuous by [[E-YTG4V]].
 :::
 
-<1>3. (d) $(S^1,\cdot)$ is a topological group.
+:::
 
-::: {.proof}
+::: {.pf-step #part-d}
+(d) $(S^1,\cdot)$ is a topological group.
+
+::: pf-proof
 Complex multiplication $(z,w)\mapsto zw$ and conjugation $z\mapsto\bar z$ are continuous on $\CC=\RR^2$, being polynomial in the real coordinates, and on $S^1$ the inverse is $z^{-1}=\bar z$; restrictions to $S^1$ are continuous.
 :::
 
-<1>4. (e) $\mathrm{GL}(n)$ is a topological group.
+:::
 
-::: {.proof}
+::: {.pf-step #part-e}
+(e) $\mathrm{GL}(n)$ is a topological group.
+
+::: pf-proof
 Each entry of $AB$ is a polynomial in the entries of $A$ and $B$, so multiplication is continuous.
 By Cramer's rule each entry of $A^{-1}$ is a polynomial in the entries of $A$ divided by $\det A\ne0$, so inversion is continuous on $\mathrm{GL}(n)$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1 through <1>4 treat (a) through (e).
 :::
+
+::: pf-qed
+Steps [](#part-a){.pf-ref} through [](#part-e){.pf-ref} treat (a) through (e).
+:::
+
+:::
+
 :::

@@ -54,8 +54,12 @@ Assume henceforth that all three subgroups are proper, and set
 K=H_1\cap H_2\cap H_3.
 \]
 
-<1>1. The pairwise intersections are all equal to $K$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #pairwise-intersections-equal-k}
+The pairwise intersections are all equal to $K$.
+
+::: pf-proof
 It suffices by symmetry to prove $H_1\cap H_2=K$.
 
 Because $H_1$ and $H_2$ are both proper, they cannot cover $G$: a group that is the union of two subgroups must equal one of them.
@@ -81,17 +85,21 @@ H_1\cap H_2=K.
 The same argument applies to the other two pairs.
 :::
 
-<1>2. Put $a_i=[H_i:K]$.
+:::
+
+::: {.pf-step #index-sum-formula}
+Put $a_i=[H_i:K]$.
 Then each $a_i\ge 2$ and
 \[
 [G:K]=a_1+a_2+a_3-2.
 \]
-::: {.proof}
+
+::: pf-proof
 If $a_i=1$, then $H_i=K$ is contained in each of the other two subgroups.
 The three-subgroup cover would then reduce to a cover of $G$ by two proper subgroups, which is impossible.
 Hence $a_i\ge2$.
 
-By <1>1 and inclusion-exclusion,
+By step [](#pairwise-intersections-equal-k){.pf-ref} and inclusion-exclusion,
 \[
 \begin{aligned}
 |G|
@@ -104,11 +112,15 @@ By <1>1 and inclusion-exclusion,
 Dividing by $|K|$ gives the asserted formula.
 :::
 
-<1>3. For distinct $i,j$,
+:::
+
+::: {.pf-step #product-bound}
+For distinct $i,j$,
 \[
 a_i a_j\le [G:K].
 \]
-::: {.proof}
+
+::: pf-proof
 For finite subgroups $A,B\le G$, the multiplication map
 \[
 A\times B\longrightarrow AB,
@@ -120,7 +132,7 @@ Consequently
 \[
 |AB|=\frac{|A||B|}{|A\cap B|}.
 \]
-Applying this with $A=H_i$ and $B=H_j$ and using <1>1 gives
+Applying this with $A=H_i$ and $B=H_j$ and using step [](#pairwise-intersections-equal-k){.pf-ref} gives
 \[
 |H_iH_j|=|K|a_i a_j.
 \]
@@ -131,13 +143,17 @@ Since $H_iH_j\subseteq G$,
 and division by $|K|$ proves the claim.
 :::
 
-<1>4. We have $a_1=a_2=a_3=2$.
-::: {.proof}
+:::
+
+::: {.pf-step #indices-equal-two}
+We have $a_1=a_2=a_3=2$.
+
+::: pf-proof
 Relabel the subgroups so that
 \[
 2\le a_1\le a_2\le a_3.
 \]
-By <1>2 and <1>3,
+By steps [](#index-sum-formula){.pf-ref} and [](#product-bound){.pf-ref},
 \[
 a_2a_3\le a_1+a_2+a_3-2.
 \]
@@ -152,9 +168,13 @@ a_1=a_2=a_3=2.
 \]
 :::
 
-<1>5. Each $H_i$ has index $2$ in $G$.
-::: {.proof}
-By <1>2 and <1>4,
+:::
+
+::: pf-step
+Each $H_i$ has index $2$ in $G$.
+
+::: pf-proof
+By steps [](#index-sum-formula){.pf-ref} and [](#indices-equal-two){.pf-ref},
 \[
 [G:K]=2+2+2-2=4.
 \]
@@ -165,8 +185,12 @@ Therefore, for each $i$,
 This proves the second alternative.
 :::
 
-<1>6. The smallest group realizing the second alternative is the Klein four group $C_2\times C_2$.
-::: {.proof}
+:::
+
+::: pf-step
+The smallest group realizing the second alternative is the Klein four group $C_2\times C_2$.
+
+::: pf-proof
 In
 \[
 C_2\times C_2=\{(0,0),(1,0),(0,1),(1,1)\},
@@ -178,5 +202,9 @@ Such a cover cannot use the same proper subgroup twice, since then two proper su
 Thus it requires three distinct proper subgroups.
 Groups of orders $1$, $2$, and $3$ do not have three distinct proper subgroups.
 Hence order $4$ is minimal, and $C_2\times C_2$ provides an example of that order.
+:::
+
+:::
+
 :::
 :::

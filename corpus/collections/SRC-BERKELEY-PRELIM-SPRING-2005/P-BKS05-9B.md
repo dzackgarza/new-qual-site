@@ -37,10 +37,13 @@ $$
 \mu_n\coloneqq\{\zeta\in\CC:\zeta^n=1\}.
 $$
 
-<1>1. If $n$ is even, no polynomial $f\in\RR[x]$ satisfies the divisibility
+::: pf
+
+::: {.pf-step #even-n-impossible}
+If $n$ is even, no polynomial $f\in\RR[x]$ satisfies the divisibility
 condition.
 
-::: {.proof}
+::: pf-proof
 When $n$ is even, $-1\in\mu_n$, so $x+1$ divides $x^n-1$. If
 $x^n-1$ divided $f(x)^2-x$, then evaluation at $x=-1$ would give
 $$
@@ -49,7 +52,10 @@ $$
 This is impossible because $f(-1)\in\RR$.
 :::
 
-<1>2. Suppose $n$ is odd. A polynomial $f\in\RR[x]$ of degree $<n$
+:::
+
+::: {.pf-step #square-root-condition}
+Suppose $n$ is odd. A polynomial $f\in\RR[x]$ of degree $<n$
 satisfies
 $$
 x^n-1\mid f(x)^2-x
@@ -58,7 +64,7 @@ exactly when, for every $\zeta\in\mu_n$, its value $f(\zeta)$ is a square
 root of $\zeta$, with the choices on conjugate roots related by complex
 conjugation.
 
-::: {.proof}
+::: pf-proof
 The roots in $\mu_n$ are distinct, since the derivative of $x^n-1$ is
 $nx^{n-1}$ and no element of $\mu_n$ is zero. Hence
 $$
@@ -90,12 +96,15 @@ coefficients of $F$ are real. Thus the stated conjugation compatibility is
 exactly the condition for the interpolating polynomial to lie in $\RR[x]$.
 :::
 
-<1>3. For odd $n$, the number of such polynomials is
+:::
+
+::: {.pf-step #count-odd-n}
+For odd $n$, the number of such polynomials is
 $$
 \boxed{2^{(n+1)/2}}.
 $$
 
-::: {.proof}
+::: pf-proof
 Because $n$ is odd, the only real element of $\mu_n$ is $1$; the remaining
 $n-1$ roots form $(n-1)/2$ conjugate pairs.
 
@@ -112,7 +121,7 @@ $$
 f(\overline\zeta)=\overline s,
 $$
 which is automatically a square root of $\overline\zeta$. These choices are
-independent from pair to pair. Step <1>2 shows that every such compatible
+independent from pair to pair. Step [](#square-root-condition){.pf-ref} shows that every such compatible
 set of choices gives exactly one polynomial in $\RR[x]$ of degree $<n$,
 and every desired polynomial arises this way. Therefore the number is
 $$
@@ -120,9 +129,12 @@ $$
 $$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), and step <1>3 proves part (b).
 :::
+
+::: pf-qed
+Step [](#even-n-impossible){.pf-ref} proves part (a), and step [](#count-odd-n){.pf-ref} proves part (b).
+:::
+
+:::
+
 :::

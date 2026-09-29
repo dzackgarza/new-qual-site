@@ -38,8 +38,12 @@ f_i\in F^p:=\{a^p:a\in F\}
 \]
 Equivalently, every coefficient of $f$ must have a $p$-th root in $F$.
 
-<1>1. In characteristic $p$, taking the $p$-th power of a polynomial applies Frobenius to its coefficients and multiplies every exponent by $p$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #frobenius-on-polynomials}
+In characteristic $p$, taking the $p$-th power of a polynomial applies Frobenius to its coefficients and multiplies every exponent by $p$.
+
+::: pf-proof
 Let
 \[
 g(x)=\sum_j g_jx^j\in F[x].
@@ -61,8 +65,12 @@ g(x)^p
 \]
 :::
 
-<1>2. If every $f_i$ is a $p$-th power in $F$, then $f(x^p)$ is a $p$-th power in $F[x]$.
-::: {.proof}
+:::
+
+::: pf-step
+If every $f_i$ is a $p$-th power in $F$, then $f(x^p)$ is a $p$-th power in $F[x]$.
+
+::: pf-proof
 For each $i$, choose $g_i\in F$ such that
 \[
 g_i^p=f_i.
@@ -71,7 +79,7 @@ Set
 \[
 g(x):=\sum_i g_i x^i.
 \]
-By <1>1,
+By step [](#frobenius-on-polynomials){.pf-ref},
 \[
 g(x)^p
 =\sum_i g_i^p x^{ip}
@@ -81,13 +89,17 @@ g(x)^p
 Thus the condition is sufficient.
 :::
 
-<1>3. If $f(x^p)=g(x)^p$ for some $g\in F[x]$, then every $f_i$ is a $p$-th power in $F$.
-::: {.proof}
+:::
+
+::: pf-step
+If $f(x^p)=g(x)^p$ for some $g\in F[x]$, then every $f_i$ is a $p$-th power in $F$.
+
+::: pf-proof
 Write
 \[
 g(x)=\sum_j g_jx^j.
 \]
-By <1>1,
+By step [](#frobenius-on-polynomials){.pf-ref},
 \[
 g(x)^p=\sum_j g_j^p x^{jp}.
 \]
@@ -105,5 +117,9 @@ f_i\in F^p
 \]
 for every $i$.
 This proves necessity and completes the equivalence.
+:::
+
+:::
+
 :::
 :::

@@ -29,7 +29,11 @@ Are differentials quasicoherent?
 :::
 
 ::: {.solution}
-<1>1. For a ring map
+
+::: pf
+
+::: {.pf-step #kahler-differentials-definition}
+For a ring map
 \[
 A\longrightarrow B,
 \]
@@ -46,7 +50,8 @@ d(bb')=b\,db'+b'\,db,
 \qquad
 da=0\quad(a\in A).
 \]
-::: {.proof}
+
+::: pf-proof
 These relations say precisely that the map
 \[
 d:B\longrightarrow\Omega_{B/A},
@@ -56,7 +61,10 @@ b\longmapsto db
 is an $A$-derivation.
 :::
 
-<1>2. The defining property of $\Omega_{B/A}$ is universal:
+:::
+
+::: {.pf-step #universal-property}
+The defining property of $\Omega_{B/A}$ is universal:
 \[
 \boxed{
 \operatorname{Hom}_B(\Omega_{B/A},M)
@@ -65,7 +73,8 @@ is an $A$-derivation.
 }
 \]
 naturally for every $B$-module $M$.
-::: {.proof}
+
+::: pf-proof
 Given a $B$-linear map
 \[
 \phi:\Omega_{B/A}\longrightarrow M,
@@ -91,7 +100,10 @@ with
 These two constructions are inverse.
 :::
 
-<1>3. Differentials commute with localization.  If $S\subseteq B$ is multiplicative, then
+:::
+
+::: {.pf-step #differentials-localization}
+Differentials commute with localization.  If $S\subseteq B$ is multiplicative, then
 \[
 \boxed{
 \Omega_{S^{-1}B/A}
@@ -103,7 +115,8 @@ In particular, for $f\in B$,
 \[
 \Omega_{B_f/A}\cong(\Omega_{B/A})_f.
 \]
-::: {.proof}
+
+::: pf-proof
 An $A$-derivation $D:B\to M$ into an $S^{-1}B$-module extends uniquely to $S^{-1}B$ by the quotient rule
 \[
 D\!\left(\frac b s\right)
@@ -115,7 +128,7 @@ Thus, for every $S^{-1}B$-module $M$,
 \cong
 \operatorname{Der}_A(B,M).
 \]
-Using <1>2 and the adjunction for localization,
+Using step [](#universal-property){.pf-ref} and the adjunction for localization,
 \[
 \begin{aligned}
 \operatorname{Hom}_{S^{-1}B}(S^{-1}\Omega_{B/A},M)
@@ -130,7 +143,10 @@ Using <1>2 and the adjunction for localization,
 By the universal property, $S^{-1}\Omega_{B/A}$ is therefore $\Omega_{S^{-1}B/A}$.
 :::
 
-<1>4. For a morphism of schemes
+:::
+
+::: {.pf-step #relative-differentials-sheaf}
+For a morphism of schemes
 \[
 f:X\longrightarrow Y,
 \]
@@ -148,12 +164,13 @@ one has
 \Omega_{X/Y}|_U\cong\widetilde{\Omega_{B/A}}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 On a principal open
 \[
 D(g)\subseteq U,
 \]
-step <1>3 gives
+step [](#differentials-localization){.pf-ref} gives
 \[
 \Omega_{B_g/A}
 \cong
@@ -162,20 +179,28 @@ step <1>3 gives
 This is exactly the compatibility required for the affine modules $\Omega_{B/A}$ to define a sheaf under restriction.  The resulting sheaf is, by definition, $\Omega_{X/Y}$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #omega-quasicoherent}
+Therefore
 \[
 \boxed{\Omega_{X/Y}\text{ is quasicoherent}.}
 \]
-::: {.proof}
-Quasicoherence is affine-local on $X$.  By <1>4, on every affine $U=\operatorname{Spec}B$ lying over an affine $V=\operatorname{Spec}A$, the restriction of $\Omega_{X/Y}$ is the sheaf associated to the $B$-module $\Omega_{B/A}$:
+
+::: pf-proof
+Quasicoherence is affine-local on $X$.  By step [](#relative-differentials-sheaf){.pf-ref}, on every affine $U=\operatorname{Spec}B$ lying over an affine $V=\operatorname{Spec}A$, the restriction of $\Omega_{X/Y}$ is the sheaf associated to the $B$-module $\Omega_{B/A}$:
 \[
 \Omega_{X/Y}|_U\cong\widetilde{\Omega_{B/A}}.
 \]
 That is precisely the definition of a quasicoherent $\mathcal O_X$-module.
 :::
 
-<1>6. If $f$ is of finite type over a Noetherian scheme, then $\Omega_{X/Y}$ is in fact coherent.
-::: {.proof}
+:::
+
+::: pf-step
+If $f$ is of finite type over a Noetherian scheme, then $\Omega_{X/Y}$ is in fact coherent.
+
+::: pf-proof
 Affinely, if $A$ is Noetherian and $B$ is a finitely generated $A$-algebra, choose generators
 \[
 B=A[b_1,\ldots,b_n].
@@ -187,8 +212,11 @@ db_1,\ldots,db_n
 generate $\Omega_{B/A}$ as a $B$-module, so it is finite.  Since $B$ is Noetherian, a finite $B$-module is coherent.  These affine coherent modules glue to $\Omega_{X/Y}$.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>2 define differentials, and steps <1>3--<1>5 prove quasicoherence.
+:::
+
+::: pf-qed
+Steps [](#kahler-differentials-definition){.pf-ref} and [](#universal-property){.pf-ref} define differentials, and steps [](#differentials-localization){.pf-ref}, [](#relative-differentials-sheaf){.pf-ref} and [](#omega-quasicoherent){.pf-ref} prove quasicoherence.
+:::
+
 :::
 :::

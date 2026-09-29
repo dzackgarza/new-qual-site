@@ -30,7 +30,11 @@ Prove that there does not exist a continuous map $f:S^2\to S^2$ from the unit sp
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that a continuous map
+
+::: pf
+
+::: {.pf-step #assume-orthogonal-map}
+Suppose, for contradiction, that a continuous map
 \[
 f:S^2\longrightarrow S^2
 \]
@@ -41,15 +45,19 @@ f(x)\perp x
 (x\in S^2).
 \]
 
-<1>2. Define
+:::
+
+::: {.pf-step #homotopy-well-defined}
+Define
 \[
 H:S^2\times[0,1]\longrightarrow\RR^3,
 \qquad
 H(x,t)=\cos(\pi t)x+\sin(\pi t)f(x).
 \]
 Then $H(x,t)\in S^2$ for every $(x,t)$.
-::: {.proof}
-Since both $x$ and $f(x)$ lie on the unit sphere and are orthogonal by <1>1,
+
+::: pf-proof
+Since both $x$ and $f(x)$ lie on the unit sphere and are orthogonal by step [](#assume-orthogonal-map){.pf-ref},
 \[
 \begin{aligned}
 \|H(x,t)\|^2
@@ -63,8 +71,12 @@ Since both $x$ and $f(x)$ lie on the unit sphere and are orthogonal by <1>1,
 Thus $H$ takes values in $S^2$.
 :::
 
-<1>3. The map $H$ is a homotopy from the identity map of $S^2$ to the antipodal map.
-::: {.proof}
+:::
+
+::: {.pf-step #identity-homotopic-to-antipodal}
+The map $H$ is a homotopy from the identity map of $S^2$ to the antipodal map.
+
+::: pf-proof
 Continuity follows from continuity of $f$ and of the trigonometric functions.
 At the endpoints,
 \[
@@ -82,9 +94,13 @@ a_2(x)=-x.
 \]
 :::
 
-<1>4. This homotopy is impossible because the two endpoint maps have different degrees.
-::: {.proof}
-Degree is invariant under homotopy, so <1>3 would imply
+:::
+
+::: {.pf-step #homotopy-impossible}
+This homotopy is impossible because the two endpoint maps have different degrees.
+
+::: pf-proof
+Degree is invariant under homotopy, so step [](#identity-homotopic-to-antipodal){.pf-ref} would imply
 \[
 \deg(\operatorname{id}_{S^2})=\deg(a_2).
 \]
@@ -100,11 +116,18 @@ and therefore
 \[
 \deg(a_2)=(-1)^3=-1.
 \]
-Thus <1>3 would force $1=-1$, a contradiction.
+Thus step [](#identity-homotopic-to-antipodal){.pf-ref} would force $1=-1$, a contradiction.
 :::
 
-<1>5. Therefore no such continuous map $f:S^2\to S^2$ exists.
-::: {.proof}
-The assumption in <1>1 led to the contradiction in <1>4.
 :::
+
+::: pf-step
+Therefore no such continuous map $f:S^2\to S^2$ exists.
+
+::: pf-proof
+The assumption in step [](#assume-orthogonal-map){.pf-ref} led to the contradiction in step [](#homotopy-impossible){.pf-ref}.
+:::
+
+:::
+
 :::

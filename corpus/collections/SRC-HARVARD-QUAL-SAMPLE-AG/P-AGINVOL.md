@@ -33,7 +33,10 @@ How would you show that quotient is $\CP^1$?
 ::: {.solution}
 Fix an origin $0\in E$, so that the elliptic curve is a complex Lie group.
 
-<1>1. Every holomorphic automorphism $\varphi:E\to E$ has a unique form
+::: pf
+
+::: {.pf-step #automorphism-decomposition}
+Every holomorphic automorphism $\varphi:E\to E$ has a unique form
 \[
 \varphi=t_a\circ u,
 \qquad
@@ -42,7 +45,8 @@ a=\varphi(0),
 u(0)=0,
 \]
 where $t_a(x)=x+a$ is translation and $u$ is a group automorphism of $E$.
-::: {.proof}
+
+::: pf-proof
 Set
 \[
 u=t_{-a}\circ\varphi.
@@ -60,7 +64,10 @@ U(z)=cz
 for some $c\in\mathbb C$.  Since $u$ is an automorphism, $c\Lambda=\Lambda$.  Thus $u$ is induced by multiplication by $c$ and is a group automorphism.
 :::
 
-<1>2. The nonidentity involutions of $E$ are exactly the following two types:
+:::
+
+::: {.pf-step #involution-classification}
+The nonidentity involutions of $E$ are exactly the following two types:
 
 1. translations
 \[
@@ -75,8 +82,9 @@ t_a(x)=x+a,
 \qquad
 a\in E.
 \]
-::: {.proof}
-Let $\varphi=t_a\circ u$ be an involution.  By <1>1, after uniformizing $E=\mathbb C/\Lambda$, the origin-fixing automorphism $u$ is multiplication by some $c$ with $c\Lambda=\Lambda$.  The linear part of $\varphi^2$ is $u^2$, so
+
+::: pf-proof
+Let $\varphi=t_a\circ u$ be an involution.  By step [](#automorphism-decomposition){.pf-ref}, after uniformizing $E=\mathbb C/\Lambda$, the origin-fixing automorphism $u$ is multiplication by some $c$ with $c\Lambda=\Lambda$.  The linear part of $\varphi^2$ is $u^2$, so
 \[
 c^2=1.
 \]
@@ -102,8 +110,12 @@ and
 for every $a\in E$.
 :::
 
-<1>3. A nontrivial translation involution $t_a$, with $a\in E[2]\setminus\{0\}$, has no fixed points, and its quotient is again an elliptic curve.
-::: {.proof}
+:::
+
+::: {.pf-step #translation-involution-quotient}
+A nontrivial translation involution $t_a$, with $a\in E[2]\setminus\{0\}$, has no fixed points, and its quotient is again an elliptic curve.
+
+::: pf-proof
 A fixed point would satisfy
 \[
 x+a=x,
@@ -126,7 +138,10 @@ Since $g(E)=1$, this is
 so $g'=1$.  The quotient is therefore another elliptic curve; equivalently, this quotient map is a degree-two isogeny.
 :::
 
-<1>4. The involution
+:::
+
+::: {.pf-step #sigma-fixed-points}
+The involution
 \[
 \sigma_a(x)=a-x
 \]
@@ -134,7 +149,8 @@ has exactly four fixed points, namely the four solutions of
 \[
 2x=a.
 \]
-::: {.proof}
+
+::: pf-proof
 The fixed-point equation is
 \[
 a-x=x,
@@ -150,13 +166,17 @@ E[2]\cong(\mathbb Z/2\mathbb Z)^2,
 which has four elements.  Thus every fibre of $[2]$ has four points, so $2x=a$ has exactly four solutions.
 :::
 
-<1>5. The quotient
+:::
+
+::: {.pf-step #sigma-quotient-genus-zero}
+The quotient
 \[
 E/\langle\sigma_a\rangle
 \]
 has genus $0$ and hence is isomorphic to $\mathbb{CP}^1$.
-::: {.proof}
-The quotient map has degree $2$.  By <1>4 it is simply ramified at four points, so the total ramification contribution in Riemann--Hurwitz is $4$.  If the quotient has genus $g'$, then
+
+::: pf-proof
+The quotient map has degree $2$.  By step [](#sigma-fixed-points){.pf-ref} it is simply ramified at four points, so the total ramification contribution in Riemann--Hurwitz is $4$.  If the quotient has genus $g'$, then
 \[
 2g(E)-2
 =2(2g'-2)+4.
@@ -171,8 +191,12 @@ hence $g'=0$.  Every compact Riemann surface of genus $0$ is biholomorphic to th
 \]
 :::
 
-<1>6. The quotient in <1>5 can also be identified explicitly with $\mathbb{CP}^1$.
-::: {.proof}
+:::
+
+::: {.pf-step #explicit-cp1-identification}
+The quotient in step [](#sigma-quotient-genus-zero){.pf-ref} can also be identified explicitly with $\mathbb{CP}^1$.
+
+::: pf-proof
 Choose $b\in E$ with
 \[
 2b=a.
@@ -211,8 +235,11 @@ E\longrightarrow E/\{\pm1\}\cong\mathbb{CP}^1.
 Its four branch points are the four fixed points $E[2]$ of negation.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>2 classifies the involutions, steps <1>3 and <1>4 identify their fixed-point behaviour, and steps <1>5--<1>6 identify the quotient arising from the fixed-point involution with $\mathbb{CP}^1$.
+:::
+
+::: pf-qed
+Step [](#involution-classification){.pf-ref} classifies the involutions, steps [](#translation-involution-quotient){.pf-ref} and [](#sigma-fixed-points){.pf-ref} identify their fixed-point behaviour, and steps [](#sigma-quotient-genus-zero){.pf-ref} and [](#explicit-cp1-identification){.pf-ref} identify the quotient arising from the fixed-point involution with $\mathbb{CP}^1$.
+:::
+
 :::
 :::

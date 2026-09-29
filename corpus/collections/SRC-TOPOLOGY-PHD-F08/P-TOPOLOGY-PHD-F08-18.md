@@ -40,14 +40,18 @@ Use this fact to deduce that there is no $n$-sheeted covering of the circle $S^1
 ::: {.solution}
 The requested conclusion is false.
 
-<1>1. For every integer $n\ge1$, the map
+::: pf
+
+::: {.pf-step #n-sheeted-covering}
+For every integer $n\ge1$, the map
 \[
 p_n:S^1\to S^1,
 \qquad
 p_n(z)=z^n,
 \]
 is an $n$-sheeted covering map.
-::: {.proof}
+
+::: pf-proof
 Fix
 \[
 w=e^{i\theta_0}\in S^1.
@@ -81,7 +85,10 @@ Thus $U$ is evenly covered and has exactly $n$ sheets.
 Since $w$ was arbitrary, $p_n$ is an $n$-sheeted covering.
 :::
 
-<1>2. Under the standard identification
+:::
+
+::: {.pf-step #induced-homomorphism}
+Under the standard identification
 \[
 \pi_1(S^1,1)\cong\mathbb Z,
 \]
@@ -91,7 +98,8 @@ the induced homomorphism is
 \qquad
 m\longmapsto nm.
 \]
-::: {.proof}
+
+::: pf-proof
 A generator of $\pi_1(S^1,1)$ is represented by
 \[
 \alpha(t)=e^{2\pi i t}.
@@ -105,7 +113,10 @@ which winds $n$ times around the circle and therefore represents $n\in\mathbb Z$
 Since $(p_n)_*$ is a group homomorphism, it sends $m$ to $nm$.
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #index-n}
+Hence
 \[
 (p_n)_*\pi_1(S^1,1)=n\mathbb Z
 \]
@@ -113,18 +124,23 @@ and
 \[
 [\mathbb Z:n\mathbb Z]=n.
 \]
-::: {.proof}
-The image statement follows immediately from <1>2. The quotient
+
+::: pf-proof
+The image statement follows immediately from step [](#induced-homomorphism){.pf-ref}. The quotient
 \[
 \mathbb Z/n\mathbb Z
 \]
 has exactly $n$ elements, so the subgroup $n\mathbb Z$ has index $n$ in $\mathbb Z$.
 :::
 
-<1>4. The quoted covering-space fact is therefore consistent with these covers and contradicts the requested conclusion.
-::: {.proof}
-By <1>1, every fiber of $p_n$ has cardinality $n$.
-By <1>3, the induced subgroup has index $n$.
+:::
+
+::: pf-step
+The quoted covering-space fact is therefore consistent with these covers and contradicts the requested conclusion.
+
+::: pf-proof
+By step [](#n-sheeted-covering){.pf-ref}, every fiber of $p_n$ has cardinality $n$.
+By step [](#index-n){.pf-ref}, the induced subgroup has index $n$.
 Thus the equality quoted in the problem reads
 \[
 |p_n^{-1}(1)|
@@ -133,4 +149,9 @@ Thus the equality quoted in the problem reads
 \]
 So the theorem does not rule out finite-sheeted coverings of $S^1$; the maps $p_n(z)=z^n$ provide one for every finite $n\ge1$.
 :::
+
+:::
+
+:::
+
 :::

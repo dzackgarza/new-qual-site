@@ -50,13 +50,16 @@ Let $k$ be the algebraically closed ground field. A morphism of affine
 varieties is [[D-MORFIN|finite]] when the coordinate ring of the source is a
 finite module over the coordinate ring of the target via the comorphism.
 
-<1>1. Every non-constant morphism
+::: pf
+
+::: {.pf-step #affine-line-finite}
+Every non-constant morphism
 $$
 f:\AA^1\longrightarrow\AA^1
 $$
 is finite.
 
-::: {.proof}
+::: pf-proof
 Choose coordinates $t$ on the target and $x$ on the source. The comorphism is
 $$
 f^*:k[t]\longrightarrow k[x],
@@ -92,14 +95,17 @@ $$
 Hence $f$ is finite.
 :::
 
-<1>2. The units of the Laurent polynomial ring are exactly
+:::
+
+::: {.pf-step #laurent-units-classification}
+The units of the Laurent polynomial ring are exactly
 $$
 k[x,x^{-1}]^\times
 =
 \{c x^n:c\in k^\times,\ n\in\ZZ\}.
 $$
 
-::: {.proof}
+::: pf-proof
 For a nonzero Laurent polynomial
 $$
 u=\sum_{i=r}^s a_ix^i,
@@ -128,19 +134,22 @@ $$
 Conversely every such Laurent monomial is a unit.
 :::
 
-<1>3. Every non-constant morphism
+:::
+
+::: {.pf-step #punctured-line-finite}
+Every non-constant morphism
 $$
 g:\AA^1\smz\longrightarrow\AA^1\smz
 $$
 is finite.
 
-::: {.proof}
+::: pf-proof
 The punctured affine line has coordinate ring
 $$
 k[x,x^{-1}].
 $$
 A morphism to $\AA^1\smz$ is determined by the image of the target coordinate
-$t$, which must be a unit. By step <1>2,
+$t$, which must be a unit. By step [](#laurent-units-classification){.pf-ref},
 $$
 g^*(t)=c x^n
 $$
@@ -174,10 +183,13 @@ Thus $k[x,x^{-1}]$ is a finite, indeed free, $R$-module of rank $r$. Hence
 $g$ is finite.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves the affine-line case, and step <1>3 proves the punctured-line
-case after the unit classification in step <1>2.
 :::
+
+::: pf-qed
+Step [](#affine-line-finite){.pf-ref} proves the affine-line case, and step [](#punctured-line-finite){.pf-ref} proves the punctured-line
+case after the unit classification in step [](#laurent-units-classification){.pf-ref}.
+:::
+
+:::
+
 :::

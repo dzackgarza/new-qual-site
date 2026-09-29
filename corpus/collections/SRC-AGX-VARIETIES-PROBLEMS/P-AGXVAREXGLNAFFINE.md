@@ -50,7 +50,10 @@ $$
 \Delta=\det(x_{ij}).
 $$
 
-<1>1. The subset
+::: pf
+
+::: {.pf-step #y-is-affine}
+The subset
 $$
 Y
 =
@@ -60,7 +63,7 @@ V(t\Delta-1)
 $$
 is an affine variety.
 
-::: {.proof}
+::: pf-proof
 Its coordinate ring is
 $$
 \CC[x_{ij},t]/(t\Delta-1).
@@ -87,12 +90,15 @@ The localization of the domain $\CC[x_{ij}]$ is again a domain, so
 $(t\Delta-1)$ is prime. Hence $Y$ is an affine variety.
 :::
 
-<1>2. Projection to the matrix coordinates gives a bijection
+:::
+
+::: {.pf-step #pi-bijective}
+Projection to the matrix coordinates gives a bijection
 $$
 \pi:Y\longrightarrow\GL_n(\CC).
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 (A,t)\in Y,
@@ -110,9 +116,12 @@ $$
 The value of $t$ is uniquely determined by $A$, so $\pi$ is bijective.
 :::
 
-<1>3. The bijection in step <1>2 is an isomorphism of varieties.
+:::
 
-::: {.proof}
+::: {.pf-step #pi-isomorphism}
+The bijection in step [](#pi-bijective){.pf-ref} is an isomorphism of varieties.
+
+::: pf-proof
 The projection
 $$
 \pi:Y\longrightarrow M_n(\CC)
@@ -142,7 +151,10 @@ Y\cong\GL_n(\CC).
 $$
 :::
 
-<1>4. Consequently,
+:::
+
+::: {.pf-step #gln-affine-conclusion}
+Consequently,
 $$
 \boxed{
 \GL_n(\CC)\text{ is an affine variety}
@@ -157,15 +169,18 @@ $$
 }
 $$
 
-::: {.proof}
-Step <1>1 shows that $Y$ is affine, and step <1>3 identifies $Y$ with
+::: pf-proof
+Step [](#y-is-affine){.pf-ref} shows that $Y$ is affine, and step [](#pi-isomorphism){.pf-ref} identifies $Y$ with
 $\GL_n(\CC)$. The coordinate-ring description is the isomorphism established
-in step <1>1.
+in step [](#y-is-affine){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#gln-affine-conclusion){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

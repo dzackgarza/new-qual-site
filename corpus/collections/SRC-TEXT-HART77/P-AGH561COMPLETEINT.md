@@ -57,12 +57,15 @@ $$
 a=\sum_{i=1}^{n-2}d_i-n-1.
 $$
 
-<1>1. The canonical class of $X$ is
+::: pf
+
+::: {.pf-step #canonical-class-formula}
+The canonical class of $X$ is
 $$
 \boxed{K_X\sim aH}.
 $$
 
-::: {.proof}
+::: pf-proof
 For a nonsingular complete intersection of hypersurfaces of degrees
 $d_1,\ldots,d_{n-2}$ in $\PP^n$, the adjunction formula
 [[P-AGH284COMPINT]] gives
@@ -81,9 +84,12 @@ K_X\sim aH.
 $$
 :::
 
-<1>2. If $a>0$, then $X$ is of general type.
+:::
 
-::: {.proof}
+::: {.pf-step #positive-a-general-type}
+If $a>0$, then $X$ is of general type.
+
+::: pf-proof
 The hyperplane class $H$ is ample on $X$. Hence for $a>0$ the canonical
 divisor
 $$
@@ -93,7 +99,10 @@ is ample. Every ample divisor is big, so $K_X$ is big. Therefore $X$ is
 of general type.
 :::
 
-<1>3. If $X$ is not covered by step <1>2, then, up to permuting the
+:::
+
+::: {.pf-step #exceptional-tuples-enumerated}
+If $X$ is not covered by step [](#positive-a-general-type){.pf-ref}, then, up to permuting the
 $d_i$, its degree data are exactly
 $$
 \boxed{
@@ -108,7 +117,7 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 The exceptional condition is
 $$
 a\le0,
@@ -159,7 +168,10 @@ $$
 There are no possibilities for $n\ge6$.
 :::
 
-<1>4. The three exceptional tuples with $a<0$ are del Pezzo surfaces:
+:::
+
+::: {.pf-step #negative-a-del-pezzo}
+The three exceptional tuples with $a<0$ are del Pezzo surfaces:
 $$
 \begin{array}{c|c|c|c}
 (n;d_i) & K_X & K_X^2 & \text{surface}\\
@@ -170,8 +182,8 @@ $$
 \end{array}
 $$
 
-::: {.proof}
-For each of these tuples step <1>1 gives $-K_X$ as a positive multiple
+::: pf-proof
+For each of these tuples step [](#canonical-class-formula){.pf-ref} gives $-K_X$ as a positive multiple
 of the ample hyperplane class. Hence $-K_X$ is ample, so $X$ is a del
 Pezzo surface.
 
@@ -205,7 +217,10 @@ these cases lie in the $\kappa=-\infty$ part of the surface
 classification.
 :::
 
-<1>5. The three exceptional tuples with $a=0$ are K3 surfaces:
+:::
+
+::: {.pf-step #zero-a-k3}
+The three exceptional tuples with $a=0$ are K3 surfaces:
 $$
 \begin{array}{c|c}
 (n;d_i) & H^2\\
@@ -216,12 +231,12 @@ $$
 \end{array}
 $$
 
-::: {.proof}
+::: pf-proof
 For these three tuples,
 $$
 \sum_i d_i=n+1,
 $$
-so step <1>1 gives
+so step [](#canonical-class-formula){.pf-ref} gives
 $$
 \omega_X\cong\OO_X.
 $$
@@ -258,24 +273,29 @@ $$
 namely $4$, $6$, and $8$.
 :::
 
-<1>6. All other degree data give surfaces of general type, while the six
-tuples in step <1>3 are precisely the del Pezzo and K3 exceptions listed
-in steps <1>4 and <1>5.
-
-::: {.proof}
-Step <1>3 exhausts every tuple for which $a\le0$. Therefore every tuple
-not in that list has $a>0$, and step <1>2 makes $X$ of general type.
-Among the six exceptions, step <1>4 classifies the three cases with
-$a<0$, and step <1>5 classifies the three cases with $a=0$.
 :::
 
-<1>7. Q.E.D.
+::: {.pf-step #classification-summary}
+All other degree data give surfaces of general type, while the six
+tuples in step [](#exceptional-tuples-enumerated){.pf-ref} are precisely the del Pezzo and K3 exceptions listed
+in steps [](#negative-a-del-pezzo){.pf-ref} and [](#zero-a-k3){.pf-ref}.
 
-::: {.proof}
-Step <1>1 computes the canonical class. Steps <1>2--<1>3 reduce the
-problem to exactly six exceptional degree patterns. Steps <1>4--<1>5
+::: pf-proof
+Step [](#exceptional-tuples-enumerated){.pf-ref} exhausts every tuple for which $a\le0$. Therefore every tuple
+not in that list has $a>0$, and step [](#positive-a-general-type){.pf-ref} makes $X$ of general type.
+Among the six exceptions, step [](#negative-a-del-pezzo){.pf-ref} classifies the three cases with
+$a<0$, and step [](#zero-a-k3){.pf-ref} classifies the three cases with $a=0$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#canonical-class-formula){.pf-ref} computes the canonical class. Steps [](#positive-a-general-type){.pf-ref} and [](#exceptional-tuples-enumerated){.pf-ref} reduce the
+problem to exactly six exceptional degree patterns. Steps [](#negative-a-del-pezzo){.pf-ref} and [](#zero-a-k3){.pf-ref}
 place those exceptions in the del Pezzo and K3 parts of the surface
-classification, and step <1>6 proves that every remaining case is of
+classification, and step [](#classification-summary){.pf-ref} proves that every remaining case is of
 general type.
+:::
+
 :::
 :::

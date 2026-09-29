@@ -43,23 +43,29 @@ $$
 \Phi(X)=X^4.
 $$
 
-<1>1. The map $\Phi$ is continuously differentiable and satisfies
+::: pf
+
+::: {.pf-step #phi-smooth}
+The map $\Phi$ is continuously differentiable and satisfies
 $$
 \Phi(I)=I.
 $$
 
-::: {.proof}
+::: pf-proof
 Each entry of $X^4$ is a polynomial in the entries of $X$, so
 $\Phi$ is a polynomial map and hence is continuously differentiable.
 The identity $\Phi(I)=I$ is immediate.
 :::
 
-<1>2. The derivative of $\Phi$ at $I$ is
+:::
+
+::: {.pf-step #d-phi-formula}
+The derivative of $\Phi$ at $I$ is
 $$
 D\Phi_I(H)=4H.
 $$
 
-::: {.proof}
+::: pf-proof
 For a matrix $H$ and a real scalar $t$,
 $$
 \Phi(I+tH)
@@ -76,45 +82,56 @@ $$
 which gives the displayed derivative.
 :::
 
-<1>3. The linear map
+:::
+
+::: {.pf-step #d-phi-invertible}
+The linear map
 $$
 D\Phi_I:M_{n\times n}\to M_{n\times n}
 $$
 is invertible.
 
-::: {.proof}
-By step <1>2, this map is multiplication by the nonzero scalar $4$.
+::: pf-proof
+By step [](#d-phi-formula){.pf-ref}, this map is multiplication by the nonzero scalar $4$.
 Its inverse is multiplication by $1/4$.
 :::
 
-<1>4. There are neighborhoods $V$ and $U$ of $I$ such that
+:::
+
+::: {.pf-step #phi-bijection}
+There are neighborhoods $V$ and $U$ of $I$ such that
 $$
 \Phi|_V:V\longrightarrow U
 $$
 is a bijection.
 
-::: {.proof}
-Steps <1>1 and <1>3 verify the hypotheses of the inverse function
+::: pf-proof
+Steps [](#phi-smooth){.pf-ref} and [](#d-phi-invertible){.pf-ref} verify the hypotheses of the inverse function
 theorem at $I$. Therefore there are neighborhoods $V$ of $I$ and
 $U$ of $\Phi(I)=I$ such that $\Phi|_V$ is a diffeomorphism from
 $V$ onto $U$, in particular a bijection.
 :::
 
-<1>5. For every $A\in U$, there is a unique $X\in V$ satisfying
+:::
+
+::: {.pf-step #existence-uniqueness}
+For every $A\in U$, there is a unique $X\in V$ satisfying
 $$
 \boxed{X^4=A}.
 $$
 
-::: {.proof}
-By step <1>4, every $A\in U$ has a unique preimage
+::: pf-proof
+By step [](#phi-bijection){.pf-ref}, every $A\in U$ has a unique preimage
 $X\in V$ under $\Phi$. By definition of $\Phi$, the equation
 $\Phi(X)=A$ is exactly $X^4=A$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4 and <1>5 give the required neighborhoods and the stated
+::: pf-qed
+Steps [](#phi-bijection){.pf-ref} and [](#existence-uniqueness){.pf-ref} give the required neighborhoods and the stated
 existence and uniqueness.
+:::
+
 :::
 :::

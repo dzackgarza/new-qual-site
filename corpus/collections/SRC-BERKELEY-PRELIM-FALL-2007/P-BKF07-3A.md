@@ -32,12 +32,16 @@ A^2x=0\quad\Longrightarrow\quad Ax=0.
 :::
 
 ::: {.solution}
-<1>1. If $A^2x=0$, then
+
+::: pf
+
+::: {.pf-step #x-star-A-star-A-x-zero}
+If $A^2x=0$, then
 $$
 x^*A^*Ax=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $A$ is Hermitian,
 $$
 A^*=A.
@@ -54,12 +58,15 @@ x^*0
 $$
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #equals-norm-squared}
+One has
 $$
 x^*A^*Ax=\|Ax\|^2.
 $$
 
-::: {.proof}
+::: pf-proof
 By the standard Hermitian inner product on $\CC^n$,
 $$
 x^*A^*Ax
@@ -71,22 +78,28 @@ x^*A^*Ax
 $$
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #Ax-zero}
+Hence
 $$
 \boxed{Ax=0}.
 $$
 
-::: {.proof}
-Steps <1>1--<1>2 give
+::: pf-proof
+Steps [](#x-star-A-star-A-x-zero){.pf-ref} and [](#equals-norm-squared){.pf-ref} give
 $$
 \|Ax\|^2=0.
 $$
 Positive definiteness of the norm implies $Ax=0$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required implication.
 :::
+
+::: pf-qed
+Step [](#Ax-zero){.pf-ref} is the required implication.
+:::
+
+:::
+
 :::

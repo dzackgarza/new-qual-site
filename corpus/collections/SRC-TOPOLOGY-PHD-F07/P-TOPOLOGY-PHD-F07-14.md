@@ -44,7 +44,10 @@ Show that $f\sim g$, that is, $f$ is homotopic to $g$ if and only if $f\mathbin{
 ::: {.solution}
 Throughout, $\simeq_p$ denotes path homotopy relative to the endpoints.
 
-<1>1. Path homotopy is compatible with concatenation, and for every path $\alpha$ from $a$ to $b$ one has
+::: pf
+
+::: {.pf-step #path-homotopy-identities}
+Path homotopy is compatible with concatenation, and for every path $\alpha$ from $a$ to $b$ one has
 \[
 \alpha\mathbin{\cdot}c_b\simeq_p\alpha,
 \qquad
@@ -55,7 +58,8 @@ c_a\mathbin{\cdot}\alpha\simeq_p\alpha,
 \alpha^{-1}\mathbin{\cdot}\alpha\simeq_p c_b,
 \]
 and concatenation is associative up to path homotopy.
-::: {.proof}
+
+::: pf-proof
 If $H$ is a path homotopy from $\alpha_0$ to $\alpha_1$ and $K$ is a path homotopy from $\beta_0$ to $\beta_1$, with the terminal point of each $\alpha_i$ equal to the initial point of each $\beta_i$, then
 \[
 L(s,t)=
@@ -101,18 +105,22 @@ is a path homotopy between $\gamma\circ r_0$ and $\gamma\circ r_1$.
 The paths $\alpha\mathbin{\cdot}c_b$ and $c_a\mathbin{\cdot}\alpha$ are reparametrizations of $\alpha$, while the two parenthesizations of a triple concatenation are reparametrizations of the same path obtained by traversing the three factors successively.
 :::
 
-<1>2. If $f\simeq_p g$, then
+:::
+
+::: pf-step
+If $f\simeq_p g$, then
 \[
 f\mathbin{\cdot}g^{-1}\simeq_p c_p.
 \]
-::: {.proof}
-By compatibility of path homotopy with concatenation from <1>1,
+
+::: pf-proof
+By compatibility of path homotopy with concatenation from step [](#path-homotopy-identities){.pf-ref},
 \[
 f\mathbin{\cdot}g^{-1}
 \simeq_p
 g\mathbin{\cdot}g^{-1}.
 \]
-The cancellation identity in <1>1 gives
+The cancellation identity in step [](#path-homotopy-identities){.pf-ref} gives
 \[
 g\mathbin{\cdot}g^{-1}\simeq_p c_p.
 \]
@@ -122,20 +130,24 @@ f\mathbin{\cdot}g^{-1}\simeq_p c_p.
 \]
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #concatenation-converse}
+If
 \[
 f\mathbin{\cdot}g^{-1}\simeq_p c_p,
 \]
 then $f\simeq_p g$.
-::: {.proof}
+
+::: pf-proof
 Concatenate the assumed homotopy on the right with $g$.
-By <1>1,
+By step [](#path-homotopy-identities){.pf-ref},
 \[
 (f\mathbin{\cdot}g^{-1})\mathbin{\cdot}g
 \simeq_p
 c_p\mathbin{\cdot}g.
 \]
-Using associativity, cancellation, and the constant-path identities from <1>1,
+Using associativity, cancellation, and the constant-path identities from step [](#path-homotopy-identities){.pf-ref},
 \[
 \begin{aligned}
 (f\mathbin{\cdot}g^{-1})\mathbin{\cdot}g
@@ -152,8 +164,12 @@ Hence $f\simeq_p g$.
 This proves part (i).
 :::
 
-<1>4. Under the standard definition of simply connected, if $X$ is simply connected, then any two paths in $X$ with the same initial and terminal points are path homotopic.
-::: {.proof}
+:::
+
+::: {.pf-step #simply-connected-implies-path-homotopic}
+Under the standard definition of simply connected, if $X$ is simply connected, then any two paths in $X$ with the same initial and terminal points are path homotopic.
+
+::: pf-proof
 Let $f,g:I\to X$ both run from $p$ to $q$.
 Then
 \[
@@ -164,14 +180,18 @@ Since $X$ is simply connected, every based loop is path homotopic to the constan
 \[
 f\mathbin{\cdot}g^{-1}\simeq_p c_p.
 \]
-By <1>3,
+By step [](#concatenation-converse){.pf-ref},
 \[
 f\simeq_p g.
 \]
 :::
 
-<1>5. The converse in part (ii) is false as literally stated if "simply connected" includes path-connectedness.
-::: {.proof}
+:::
+
+::: {.pf-step #discrete-counterexample}
+The converse in part (ii) is false as literally stated if "simply connected" includes path-connectedness.
+
+::: pf-proof
 Let
 \[
 X=\{0,1\}
@@ -189,8 +209,12 @@ Thus $X$ is not simply connected under the standard definition.
 So the path-homotopy condition alone does not imply simple connectedness.
 :::
 
-<1>6. The intended converse becomes correct after adding the hypothesis that $X$ is path-connected.
-::: {.proof}
+:::
+
+::: {.pf-step #path-connected-converse}
+The intended converse becomes correct after adding the hypothesis that $X$ is path-connected.
+
+::: pf-proof
 Assume $X$ is path-connected and that any two paths with the same initial and terminal points are path homotopic.
 Fix $p\in X$ and let
 \[
@@ -208,8 +232,17 @@ Hence every loop based at $p$ is null-homotopic, and therefore
 Together with the assumed path-connectedness, this says that $X$ is simply connected.
 :::
 
-<1>7. Thus part (ii) is correct either with path-connectedness included as a hypothesis in the converse, or under the nonstandard convention that "simply connected" means only that every loop is null-homotopic componentwise.
-::: {.proof}
-The standard forward implication is <1>4, the literal converse fails by <1>5, and the corrected standard converse is <1>6. If one drops path-connectedness from the definition of simply connected, the proof in <1>6 applies within each path component without any additional global hypothesis.
 :::
+
+::: pf-step
+Thus part (ii) is correct either with path-connectedness included as a hypothesis in the converse, or under the nonstandard convention that "simply connected" means only that every loop is null-homotopic componentwise.
+
+::: pf-proof
+The standard forward implication is step [](#simply-connected-implies-path-homotopic){.pf-ref}, the literal converse fails by step [](#discrete-counterexample){.pf-ref}, and the corrected standard converse is step [](#path-connected-converse){.pf-ref}. If one drops path-connectedness from the definition of simply connected, the proof in step [](#path-connected-converse){.pf-ref} applies within each path component without any additional global hypothesis.
+:::
+
+:::
+
+:::
+
 :::

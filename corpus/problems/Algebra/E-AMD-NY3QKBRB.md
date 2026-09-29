@@ -23,20 +23,42 @@ Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto gh\i
 :::
 
 ::: {.solution}
-<1>1. Write $\varphi: G \to \aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
 
-<1>2. $g \in \ker \varphi$ if and only if $g \in Z(G)$.
+::: pf
 
-::: {.proof}
-<2>1. $\ker \varphi = \ts{ g \in G \st c_g = \id_G }$, since the identity of $\aut(G)$ is the identity automorphism.
-<2>2. $c_g = \id_G$ says $gh\inverseof{g} = h$ for every $h \in G$.
-<2>3. Multiplying on the right by $g$, this is equivalent to $gh = hg$ for every $h \in G$.
-<2>4. That is the defining condition for $g \in Z(G)$.
+::: pf-step
+Write $\varphi: G \to \aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
+:::
+
+::: {.pf-step #kernel-iff-center}
+$g \in \ker \varphi$ if and only if $g \in Z(G)$.
+
+::: pf-proof
+
+::: pf-step
+$\ker \varphi = \ts{ g \in G \st c_g = \id_G }$, since the identity of $\aut(G)$ is the identity automorphism.
+:::
+
+::: pf-step
+$c_g = \id_G$ says $gh\inverseof{g} = h$ for every $h \in G$.
+:::
+
+::: pf-step
+Multiplying on the right by $g$, this is equivalent to $gh = hg$ for every $h \in G$.
+:::
+
+::: pf-step
+That is the defining condition for $g \in Z(G)$.
+:::
 
 :::
-<1>3. Q.E.D.
 
-::: {.proof}
-Step <1>2 is the equality $\ker \varphi = Z(G)$ of subsets, and both sides are subgroups of $G$.
 :::
+
+::: pf-qed
+Step [](#kernel-iff-center){.pf-ref} is the equality $\ker \varphi = Z(G)$ of subsets, and both sides are subgroups of $G$.
+:::
+
+:::
+
 :::

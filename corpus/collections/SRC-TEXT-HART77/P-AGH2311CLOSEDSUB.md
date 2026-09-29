@@ -46,8 +46,13 @@ A second proof using sheaves of ideals is given in [@Har10a, Corollary II.5.10].
 :::
 
 ::: {.solution}
-<1>1. Closed immersions are stable under arbitrary base change.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #closed-immersions-stable-under-base-change}
+Closed immersions are stable under arbitrary base change.
+
+::: pf-proof
 Let
 \[
 i:Y\hookrightarrow X
@@ -75,13 +80,17 @@ B\twoheadrightarrow B/IB,
 so it is a closed immersion.
 :::
 
-<1>2. Let $i:Y\hookrightarrow X=\Spec A$ be a closed subscheme.  The scheme $Y$ has a finite affine cover of the form
+:::
+
+::: {.pf-step #y-finite-affine-cover-distinguished}
+Let $i:Y\hookrightarrow X=\Spec A$ be a closed subscheme.  The scheme $Y$ has a finite affine cover of the form
 \[
 Y\cap D(f_1),\ldots,Y\cap D(f_r),
 \qquad
 f_i\in A.
 \]
-::: {.proof}
+
+::: pf-proof
 The underlying space of $Y$ is closed in the quasi-compact space $X$, hence is quasi-compact.  Cover $Y$ by affine open subsets of $Y$.
 
 For each $y\in Y$, choose an affine open $W\subseteq Y$ containing $y$.  Write $W=Y\cap O$ for an open $O\subseteq X$.  Choose a distinguished open
@@ -95,9 +104,13 @@ Y\cap D(f)=W\cap D(f)
 is distinguished inside the affine scheme $W$, hence is affine.  These opens cover $Y$, and quasi-compactness gives a finite subcover.
 :::
 
-<1>3. We may enlarge the list in <1>2 so that the distinguished opens $D(f_i)$ cover all of $X$, while every $Y\cap D(f_i)$ remains affine.
-::: {.proof}
-The opens from <1>2 cover $Y$.  The complement $X\setminus Y$ is covered by distinguished opens $D(g)$ contained in $X\setminus Y$.
+:::
+
+::: {.pf-step #enlarge-cover-to-cover-x}
+We may enlarge the list in step [](#y-finite-affine-cover-distinguished){.pf-ref} so that the distinguished opens $D(f_i)$ cover all of $X$, while every $Y\cap D(f_i)$ remains affine.
+
+::: pf-proof
+The opens from step [](#y-finite-affine-cover-distinguished){.pf-ref} cover $Y$.  The complement $X\setminus Y$ is covered by distinguished opens $D(g)$ contained in $X\setminus Y$.
 
 Together these form an open cover of the affine scheme $X$, hence a finite subcover.  Add the finitely many selected $g$'s to the list.  For every added one,
 \[
@@ -106,8 +119,12 @@ Y\cap D(g)=\varnothing,
 which is affine.
 :::
 
-<1>4. The functions $f_1,\ldots,f_r$ from <1>3 generate the unit ideal of $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #fi-generate-unit-ideal}
+The functions $f_1,\ldots,f_r$ from step [](#enlarge-cover-to-cover-x){.pf-ref} generate the unit ideal of $A$.
+
+::: pf-proof
 Since the $D(f_i)$ cover $\Spec A$,
 \[
 V(f_1,\ldots,f_r)=\varnothing.
@@ -118,8 +135,12 @@ Therefore
 \]
 :::
 
-<1>5. The closed subscheme $Y$ is affine.
-::: {.proof}
+:::
+
+::: {.pf-step #y-is-affine}
+The closed subscheme $Y$ is affine.
+
+::: pf-proof
 Let
 \[
 B=\Gamma(Y,\mathcal O_Y).
@@ -128,22 +149,26 @@ The restrictions of the $f_i$ to $Y$ are elements of $B$ and generate the unit i
 \[
 \sum_i a_if_i=1
 \]
-from <1>4 restricts to $Y$.
+from step [](#fi-generate-unit-ideal){.pf-ref} restricts to $Y$.
 
 Their nonvanishing loci are
 \[
 Y_{f_i}=Y\cap D(f_i),
 \]
-which are affine by <1>3.  Hartshorne II.2.17(b) therefore implies that $Y$ is affine.
+which are affine by step [](#enlarge-cover-to-cover-x){.pf-ref}.  Hartshorne II.2.17(b) therefore implies that $Y$ is affine.
 :::
 
-<1>6. There is an ideal $I\subseteq A$ such that
+:::
+
+::: {.pf-step #y-is-speca-mod-i}
+There is an ideal $I\subseteq A$ such that
 \[
 Y\cong\Spec(A/I)
 \]
 over $X=\Spec A$.
-::: {.proof}
-By <1>5, write
+
+::: pf-proof
+By step [](#y-is-affine){.pf-ref}, write
 \[
 Y=\Spec B.
 \]
@@ -163,13 +188,17 @@ Then $B\cong A/I$, and the given closed immersion is the standard map
 \]
 :::
 
-<1>7. Let $Y\subseteq X$ be closed and give it the reduced induced structure.  If $Y'\subseteq X$ is any closed subscheme with the same underlying topological space, then
+:::
+
+::: {.pf-step #reduced-induced-factors-through-yprime}
+Let $Y\subseteq X$ be closed and give it the reduced induced structure.  If $Y'\subseteq X$ is any closed subscheme with the same underlying topological space, then
 \[
 Y\longrightarrow X
 \]
 factors uniquely through $Y'$.
-::: {.proof}
-This is local on $X$.  Take $X=\Spec A$.  By <1>6, write
+
+::: pf-proof
+This is local on $X$.  Take $X=\Spec A$.  By step [](#y-is-speca-mod-i){.pf-ref}, write
 \[
 Y'=\Spec(A/I).
 \]
@@ -196,7 +225,10 @@ Y\longrightarrow Y'\longrightarrow X.
 It is unique because $Y'\to X$ is a monomorphism, as every immersion is.
 :::
 
-<1>8. Let $f:Z\to X$ be any morphism.  Consider all quasi-coherent ideal sheaves
+:::
+
+::: {.pf-step #sum-of-ideal-sheaves-quasicoherent}
+Let $f:Z\to X$ be any morphism.  Consider all quasi-coherent ideal sheaves
 \[
 \mathcal I_\lambda\subseteq\mathcal O_X
 \]
@@ -205,7 +237,8 @@ such that $f$ factors through the corresponding closed subscheme $Y_\lambda\subs
 \mathcal I=\sum_\lambda\mathcal I_\lambda.
 \]
 Then $\mathcal I$ is a quasi-coherent ideal sheaf.
-::: {.proof}
+
+::: pf-proof
 The family is nonempty because $X$ itself is a closed subscheme of $X$, corresponding to the zero ideal sheaf.
 
 On an affine open $U=\Spec A\subseteq X$, each restriction $\mathcal I_\lambda|_U$ corresponds to an ideal $I_\lambda\subseteq A$.  Their sheaf-theoretic sum restricts to the sheaf associated to
@@ -215,8 +248,12 @@ On an affine open $U=\Spec A\subseteq X$, each restriction $\mathcal I_\lambda|_
 because localization commutes with arbitrary sums of submodules.  Hence $\mathcal I$ is quasi-coherent.
 :::
 
-<1>9. Let $Y\subseteq X$ be the closed subscheme defined by $\mathcal I$ from <1>8.  Then $f$ factors through $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #f-factors-through-y}
+Let $Y\subseteq X$ be the closed subscheme defined by $\mathcal I$ from step [](#sum-of-ideal-sheaves-quasicoherent){.pf-ref}.  Then $f$ factors through $Y$.
+
+::: pf-proof
 Factoring through $Y_\lambda$ means that the pullback of $\mathcal I_\lambda$ to $Z$ maps to zero in $\mathcal O_Z$.  Therefore the pullback of their sum
 \[
 \mathcal I=\sum_\lambda\mathcal I_\lambda
@@ -229,8 +266,12 @@ Z\longrightarrow Y\longrightarrow X.
 \]
 :::
 
-<1>10. The closed subscheme $Y$ from <1>9 is contained in every closed subscheme $Y'\subseteq X$ through which $f$ factors.
-::: {.proof}
+:::
+
+::: {.pf-step #y-contained-in-every-yprime}
+The closed subscheme $Y$ from step [](#f-factors-through-y){.pf-ref} is contained in every closed subscheme $Y'\subseteq X$ through which $f$ factors.
+
+::: pf-proof
 Let $\mathcal I_{Y'}$ be the ideal sheaf of such a $Y'$.  It is one of the summands used to define $\mathcal I$, so
 \[
 \mathcal I_{Y'}\subseteq\mathcal I.
@@ -241,17 +282,25 @@ Y\longrightarrow Y'\longrightarrow X.
 \]
 :::
 
-<1>11. Hence $Y$ is the unique scheme-theoretic image of $f$.
-::: {.proof}
-Steps <1>9 and <1>10 show that $Y$ has the defining minimality property.  If two closed subschemes had that property, each would factor through the other over $X$, and the resulting maps would be inverse because closed immersions are monomorphisms.  Thus the scheme-theoretic image is unique.
 :::
 
-<1>12. Assume now that $Z$ is reduced, and put
+::: {.pf-step #y-unique-scheme-theoretic-image}
+Hence $Y$ is the unique scheme-theoretic image of $f$.
+
+::: pf-proof
+Steps [](#f-factors-through-y){.pf-ref} and [](#y-contained-in-every-yprime){.pf-ref} show that $Y$ has the defining minimality property.  If two closed subschemes had that property, each would factor through the other over $X$, and the resulting maps would be inverse because closed immersions are monomorphisms.  Thus the scheme-theoretic image is unique.
+:::
+
+:::
+
+::: {.pf-step #f-factors-through-tred}
+Assume now that $Z$ is reduced, and put
 \[
 T=\overline{f(Z)}\subseteq X.
 \]
 Then $f$ factors through the reduced induced subscheme $T_{\mathrm{red}}$.
-::: {.proof}
+
+::: pf-proof
 This is local on $X$.  Let $U=\Spec A\subseteq X$ and write
 \[
 T\cap U=V(J)
@@ -272,8 +321,12 @@ On an affine open $W=\Spec C\subseteq f^{-1}(U)$, the section $f^*a$ corresponds
 Thus the ring map $A\to\Gamma(W,\mathcal O_Z)$ kills $J$ on every affine $W$, and $f|_{f^{-1}(U)}$ factors through $\Spec(A/J)$.  These local factorizations glue.
 :::
 
-<1>13. The reduced induced subscheme $T_{\mathrm{red}}$ is contained in every closed subscheme $Y'\subseteq X$ through which $f$ factors.
-::: {.proof}
+:::
+
+::: {.pf-step #tred-contained-in-every-yprime}
+The reduced induced subscheme $T_{\mathrm{red}}$ is contained in every closed subscheme $Y'\subseteq X$ through which $f$ factors.
+
+::: pf-proof
 If $f$ factors through $Y'$, then
 \[
 f(Z)\subseteq|Y'|.
@@ -304,16 +357,24 @@ T_{\mathrm{red}}\cap U\longrightarrow Y'\cap U.
 These factorizations glue over $X$.
 :::
 
-<1>14. If $Z$ is reduced, the scheme-theoretic image of $f$ is exactly
+:::
+
+::: {.pf-step #scheme-theoretic-image-is-fz-closure-red}
+If $Z$ is reduced, the scheme-theoretic image of $f$ is exactly
 \[
 \boxed{\overline{f(Z)}_{\mathrm{red}}.}
 \]
-::: {.proof}
-Step <1>12 shows that $f$ factors through $T_{\mathrm{red}}$, and <1>13 shows that this closed subscheme is contained in every other closed subscheme through which $f$ factors.  By uniqueness in <1>11, it is the scheme-theoretic image.
+
+::: pf-proof
+Step [](#f-factors-through-tred){.pf-ref} shows that $f$ factors through $T_{\mathrm{red}}$, and step [](#tred-contained-in-every-yprime){.pf-ref} shows that this closed subscheme is contained in every other closed subscheme through which $f$ factors.  By uniqueness in step [](#y-unique-scheme-theoretic-image){.pf-ref}, it is the scheme-theoretic image.
 :::
 
-<1>15. Q.E.D.
-::: {.proof}
-Step <1>1 proves part (a); steps <1>2--<1>6 prove part (b); <1>7 proves part (c); and steps <1>8--<1>14 prove part (d).
 :::
+
+::: pf-qed
+Step [](#closed-immersions-stable-under-base-change){.pf-ref} proves part (a); steps [](#y-finite-affine-cover-distinguished){.pf-ref}, [](#enlarge-cover-to-cover-x){.pf-ref}, [](#fi-generate-unit-ideal){.pf-ref}, [](#y-is-affine){.pf-ref} and [](#y-is-speca-mod-i){.pf-ref} prove part (b); step [](#reduced-induced-factors-through-yprime){.pf-ref} proves part (c); and steps [](#sum-of-ideal-sheaves-quasicoherent){.pf-ref}, [](#f-factors-through-y){.pf-ref}, [](#y-contained-in-every-yprime){.pf-ref}, [](#y-unique-scheme-theoretic-image){.pf-ref}, [](#f-factors-through-tred){.pf-ref}, [](#tred-contained-in-every-yprime){.pf-ref} and [](#scheme-theoretic-image-is-fz-closure-red){.pf-ref} prove part (d).
+:::
+
+:::
+
 :::

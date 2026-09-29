@@ -28,9 +28,12 @@ Show that if $R$ is a local ring then $R\setminus \unitsof{R}$ is a proper ideal
 ::: {.solution}
 Let $\mathfrak m$ be the unique maximal ideal of the local ring $R$.
 
-<1>1. Every element of $\mathfrak m$ is a nonunit.
+::: pf
 
-::: {.proof}
+::: {.pf-step #m-subset-nonunits}
+Every element of $\mathfrak m$ is a nonunit.
+
+::: pf-proof
 If $x\in\mathfrak m$ were a unit, then $1=x^{-1}x\in\mathfrak m$, contradicting the properness of the maximal ideal $\mathfrak m$.
 Thus
 \[
@@ -38,32 +41,46 @@ Thus
 \]
 :::
 
-<1>2. Every nonunit of $R$ lies in $\mathfrak m$.
+:::
 
-::: {.proof}
+::: {.pf-step #nonunits-subset-m}
+Every nonunit of $R$ lies in $\mathfrak m$.
+
+::: pf-proof
 Let $x\in R$ be a nonunit. Then the principal ideal $(x)$ is proper, so it is contained in a maximal ideal of $R$. Since $R$ is local, its only maximal ideal is $\mathfrak m$. Hence $x\in\mathfrak m$, and therefore
 \[
 R\setminus \unitsof{R}\subseteq\mathfrak m.
 \]
 :::
 
-<1>3. The set of nonunits is a proper ideal.
+:::
 
-::: {.proof}
-By <1>1 and <1>2,
+::: pf-step
+The set of nonunits is a proper ideal.
+
+::: pf-proof
+By steps [](#m-subset-nonunits){.pf-ref} and [](#nonunits-subset-m){.pf-ref},
 \[
 R\setminus \unitsof{R}=\mathfrak m.
 \]
 Since $\mathfrak m$ is a proper ideal, so is the set of nonunits.
 :::
 
-<1>4. In fact, the set of nonunits equals the Jacobson radical.
+:::
 
-::: {.proof}
+::: pf-step
+In fact, the set of nonunits equals the Jacobson radical.
+
+::: pf-proof
 By definition, $J(R)$ is the intersection of all maximal ideals of $R$. A local ring has the single maximal ideal $\mathfrak m$, so
 \[
 J(R)=\mathfrak m=R\setminus \unitsof{R}.
 \]
 In particular, $R\setminus \unitsof{R}\subseteq J(R)$.
 :::
+
+:::
+
+:::
+
 :::

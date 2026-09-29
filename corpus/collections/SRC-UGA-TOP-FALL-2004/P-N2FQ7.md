@@ -43,7 +43,10 @@ X=T^2\cup_{S^1}M,
 \]
 where $M$ is the Möbius band and the attaching circle $S^1=\partial M$ is identified homeomorphically with a meridian of $T^2$.
 
-<1>1. Choose generators
+::: pf
+
+::: {.pf-step #boundary-inclusion-images}
+Choose generators
 \[
 \pi_1(T^2)=\langle a,b\mid [a,b]=1\rangle
 \]
@@ -61,7 +64,8 @@ and
 d\longmapsto c^2
 \]
 on fundamental groups, up to replacing a generator by its inverse.
-::: {.proof}
+
+::: pf-proof
 The first assertion is the standard product presentation for
 \[
 T^2=S^1\times S^1,
@@ -77,19 +81,23 @@ the two horizontal boundary edges join to one boundary circle, and their project
 Hence the boundary inclusion sends a generator to $c^2$, up to orientation.
 :::
 
-<1>2. The fundamental group of $X$ has presentation
+:::
+
+::: {.pf-step #amalgamated-presentation}
+The fundamental group of $X$ has presentation
 \[
 \pi_1(X)
 \cong
 \langle a,b,c\mid [a,b]=1,\ a=c^2\rangle.
 \]
-::: {.proof}
+
+::: pf-proof
 Choose open neighborhoods of the torus and Möbius-band pieces whose intersection deformation retracts onto the attaching circle.
 Seifert--van Kampen identifies $\pi_1(X)$ with the amalgamated product
 \[
 \pi_1(T^2)*_{\pi_1(S^1)}\pi_1(M).
 \]
-By <1>1, the common generator of $\pi_1(S^1)$ is identified with $a$ in the torus group and with $c^2$ in the Möbius-band group.
+By step [](#boundary-inclusion-images){.pf-ref}, the common generator of $\pi_1(S^1)$ is identified with $a$ in the torus group and with $c^2$ in the Möbius-band group.
 Adding this identification to the presentations of the two pieces gives exactly
 \[
 \langle a,b,c\mid [a,b]=1,\ a=c^2\rangle.
@@ -97,16 +105,20 @@ Adding this identification to the presentations of the two pieces gives exactly
 If the chosen gluing reverses one orientation, the relation is $a=c^{-2}$ instead; replacing $c$ by $c^{-1}$ gives the displayed presentation.
 :::
 
-<1>3. Eliminating $a$ gives
+:::
+
+::: {.pf-step #pi1-presentation}
+Eliminating $a$ gives
 \[
 \boxed{\pi_1(X)\cong\langle b,c\mid [c^2,b]=1\rangle}.
 \]
-::: {.proof}
+
+::: pf-proof
 Substitute
 \[
 a=c^2
 \]
-into the commutator relation $[a,b]=1$ from <1>2.
+into the commutator relation $[a,b]=1$ from step [](#amalgamated-presentation){.pf-ref}.
 The resulting relation is
 \[
 c^2bc^{-2}b^{-1}=1,
@@ -115,7 +127,10 @@ equivalently $[c^2,b]=1$.
 Tietze elimination of the now redundant generator $a$ gives the displayed two-generator presentation.
 :::
 
-<1>4. The homomorphism
+:::
+
+::: {.pf-step #mv-map-injective}
+The homomorphism
 \[
 H_1(S^1;\ZZ)
 \longrightarrow
@@ -128,9 +143,10 @@ in Mayer--Vietoris is, after choosing the bases $a,b,c$,
 1\longmapsto(a,-2c).
 \]
 In particular, this homomorphism is injective.
-::: {.proof}
+
+::: pf-proof
 The two components of the Mayer--Vietoris map are induced by the two inclusions of the attaching circle, with a sign on one component.
-By <1>1, these maps send its generator to $a$ and $2c$ in first homology.
+By step [](#boundary-inclusion-images){.pf-ref}, these maps send its generator to $a$ and $2c$ in first homology.
 Thus, in coordinates,
 \[
 1\longmapsto(1,0,-2),
@@ -139,11 +155,15 @@ up to signs.
 Because its first coordinate is $\pm1$, the map is injective.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #h2-computation}
+One has
 \[
 H_2(X;\ZZ)\cong\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
 The relevant part of the Mayer--Vietoris sequence is
 \[
 0=H_2(S^1)
@@ -162,7 +182,7 @@ H_2(T^2)\cong\ZZ,
 \qquad
 H_2(M)=0,
 \]
-and the final arrow is injective by <1>4.
+and the final arrow is injective by step [](#mv-map-injective){.pf-ref}.
 Exactness therefore makes
 \[
 H_2(T^2)\longrightarrow H_2(X)
@@ -174,11 +194,15 @@ H_2(X)\cong\ZZ.
 \]
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #h1-computation}
+One has
 \[
 H_1(X;\ZZ)\cong\ZZ^2.
 \]
-::: {.proof}
+
+::: pf-proof
 Because the spaces $S^1$, $T^2$, and $M$ are connected, the next part of Mayer--Vietoris is
 \[
 H_1(S^1)
@@ -202,7 +226,7 @@ H_1(X)
 \cong
 \operatorname{coker}\phi.
 \]
-By <1>4,
+By step [](#mv-map-injective){.pf-ref},
 \[
 \operatorname{coker}\phi
 \cong
@@ -215,7 +239,10 @@ H_1(X)\cong\ZZ^2.
 \]
 :::
 
-<1>7. The remaining homology groups are
+:::
+
+::: {.pf-step #remaining-homology}
+The remaining homology groups are
 \[
 H_0(X;\ZZ)\cong\ZZ
 \]
@@ -224,7 +251,8 @@ and
 H_k(X;\ZZ)=0
 \qquad(k\ge3).
 \]
-::: {.proof}
+
+::: pf-proof
 The space $X$ is connected because it is the union of two connected spaces with nonempty connected intersection, so
 \[
 H_0(X)\cong\ZZ.
@@ -236,7 +264,10 @@ H_k(T^2)=H_k(M)=H_{k-1}(S^1)=0,
 so exactness gives $H_k(X)=0$.
 :::
 
-<1>8. Therefore
+:::
+
+::: {.pf-step #homology-summary}
+Therefore
 \[
 \boxed{
 H_k(X;\ZZ)
@@ -248,7 +279,17 @@ H_k(X;\ZZ)
 0,&k\ge3.
 \end{cases}}
 \]
-::: {.proof}
-Combine <1>5, <1>6, and <1>7.
+
+::: pf-proof
+Combine step [](#h2-computation){.pf-ref}, step [](#h1-computation){.pf-ref}, and step [](#remaining-homology){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#pi1-presentation){.pf-ref} computes $\pi_1(X)$, and step [](#homology-summary){.pf-ref} computes $H_*(X)$.
+:::
+
+:::
+
 :::

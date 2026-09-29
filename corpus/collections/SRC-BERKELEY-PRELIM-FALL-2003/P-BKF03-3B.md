@@ -30,7 +30,11 @@ Prove that $| \operatorname* { d e t } ( A + B ) | \leq 2 ^ { n }$
 
 
 ::: {.solution}
-<1>1. The matrix
+
+::: pf
+
+::: {.pf-step #C-unitary-factorization}
+The matrix
 \[
 C:=A^{-1}B
 \]
@@ -38,7 +42,8 @@ is unitary, and
 \[
 A+B=A(I+C).
 \]
-::: {.proof}
+
+::: pf-proof
 Because $A$ and $B$ are unitary, $A^{-1}=A^*$ and
 \[
 C^*C=(A^{-1}B)^*(A^{-1}B)=B^*(A^{-1})^*A^{-1}B.
@@ -51,8 +56,12 @@ Thus $C$ is unitary.
 The factorization $A+B=A(I+A^{-1}B)=A(I+C)$ is immediate.
 :::
 
-<1>2. One has $|\det A|=1$.
-::: {.proof}
+:::
+
+::: {.pf-step #det-A-modulus-one}
+One has $|\det A|=1$.
+
+::: pf-proof
 From $A^*A=I$, taking determinants gives
 \[
 \overline{\det A}\,\det A=1.
@@ -60,8 +69,12 @@ From $A^*A=I$, taking determinants gives
 Hence $|\det A|^2=1$, so $|\det A|=1$.
 :::
 
-<1>3. If $\lambda_1,\dots,\lambda_n$ are the eigenvalues of $C$, counted with algebraic multiplicity, then $|\lambda_j|=1$ for every $j$.
-::: {.proof}
+:::
+
+::: {.pf-step #eigenvalues-modulus-one}
+If $\lambda_1,\dots,\lambda_n$ are the eigenvalues of $C$, counted with algebraic multiplicity, then $|\lambda_j|=1$ for every $j$.
+
+::: pf-proof
 A unitary matrix is normal, hence unitarily diagonalizable.
 Equivalently, if $Cv=\lambda v$ with $v\ne0$, then
 \[
@@ -70,12 +83,16 @@ Equivalently, if $Cv=\lambda v$ with $v\ne0$, then
 so $|\lambda|=1$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #final-bound}
+Therefore
 \[
 |\det(A+B)|\le2^n.
 \]
-::: {.proof}
-By <1>1 and <1>2,
+
+::: pf-proof
+By steps [](#C-unitary-factorization){.pf-ref} and [](#det-A-modulus-one){.pf-ref},
 \[
 |\det(A+B)|=|\det A|\,|\det(I+C)|=|\det(I+C)|.
 \]
@@ -83,7 +100,7 @@ The eigenvalues of $I+C$ are $1+\lambda_1,\dots,1+\lambda_n$, so
 \[
 |\det(I+C)|=\prod_{j=1}^n|1+\lambda_j|.
 \]
-By <1>3 and the triangle inequality,
+By step [](#eigenvalues-modulus-one){.pf-ref} and the triangle inequality,
 \[
 |1+\lambda_j|\le1+|\lambda_j|=2.
 \]
@@ -92,5 +109,10 @@ Thus
 \boxed{|\det(A+B)|\le2^n}.
 \]
 :::
+
+:::
+
+:::
+
 :::
 

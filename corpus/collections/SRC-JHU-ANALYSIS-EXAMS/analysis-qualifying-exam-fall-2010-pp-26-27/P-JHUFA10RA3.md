@@ -52,8 +52,12 @@ $$\|Tf\|_{L^2} \leq \sqrt{\alpha \beta} \|f\|_{L^2}.$$
 ::: {.solution}
 Let $f\in L^2(\mathbb R^n)$.
 
-<1>1. The integral defining $Tf$ converges absolutely almost everywhere.
-::: {.proof}
+::: pf
+
+::: pf-step
+The integral defining $Tf$ converges absolutely almost everywhere.
+
+::: pf-proof
 Set
 $$
 B(x)=\int_{\mathbb R^n}K(x,y)\frac{|f(y)|^2}{q(y)}\,dy.
@@ -84,8 +88,12 @@ Tonelli applied to positive and negative real and imaginary
 parts. Set $Tf=0$ on the exceptional null set.
 :::
 
-<1>2. The same weighted inequality gives the claimed norm bound.
-::: {.proof}
+:::
+
+::: pf-step
+The same weighted inequality gives the claimed norm bound.
+
+::: pf-proof
 For almost every $x$, Cauchy–Schwarz in the $y$ variable gives
 \[
 \begin{aligned}
@@ -117,5 +125,9 @@ Taking square roots yields
 \[
 \|Tf\|_{L^2}\le \sqrt{\alpha\beta}\,\|f\|_{L^2}.
 \]
+:::
+
+:::
+
 :::
 :::

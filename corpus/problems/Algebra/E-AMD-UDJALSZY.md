@@ -26,8 +26,13 @@ Show that for $H\leq G$, $C_H(x) = H \intersect C_G(x)$.
 
 
 ::: {.solution}
-<1>1. An element $h$ lies in $C_H(x)$ if and only if it lies in $H\cap C_G(x)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #h-in-ch-iff-h-cap-cg}
+An element $h$ lies in $C_H(x)$ if and only if it lies in $H\cap C_G(x)$.
+
+::: pf-proof
 By definition,
 \[
 h\in C_H(x)
@@ -46,8 +51,17 @@ h\in H\cap C_G(x).
 \]
 :::
 
-<1>2. Hence $C_H(x)=H\cap C_G(x)$.
-::: {.proof}
-The two subsets have the same elements by <1>1.
 :::
+
+::: pf-step
+Hence $C_H(x)=H\cap C_G(x)$.
+
+::: pf-proof
+The two subsets have the same elements by step [](#h-in-ch-iff-h-cap-cg){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

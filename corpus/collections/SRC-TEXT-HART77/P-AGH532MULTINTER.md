@@ -54,14 +54,17 @@ $$
 \pi:\widetilde X\longrightarrow X.
 $$
 
-<1>1. The total transforms satisfy
+::: pf
+
+::: {.pf-step #total-transform-formula}
+The total transforms satisfy
 $$
 \pi^*C=\widetilde C+rE,
 \qquad
 \pi^*D=\widetilde D+sE.
 $$
 
-::: {.proof}
+::: pf-proof
 For a curve through the centre of a blowup, the exceptional divisor occurs
 in the total transform with coefficient equal to the multiplicity at the
 centre. Thus the standard strict-transform formula [[FE-SRFBLOW]] gives
@@ -71,7 +74,10 @@ $$
 and the analogous formula for $D$.
 :::
 
-<1>2. The blowup intersection identities are
+:::
+
+::: {.pf-step #blowup-intersection-identities}
+The blowup intersection identities are
 $$
 \pi^*C\cdot\pi^*D=C\cdot D,
 \qquad
@@ -80,7 +86,7 @@ $$
 E^2=-1.
 $$
 
-::: {.proof}
+::: pf-proof
 These are the standard intersection formulas for the blowup of a
 nonsingular surface at a point [[FE-SRFBLOW]].  Pullback preserves the
 intersection product of divisors from $X$, every pulled-back divisor has
@@ -88,7 +94,10 @@ intersection zero with the exceptional curve, and the exceptional curve has
 self-intersection $-1$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #single-blowup-multiplicity-drop}
+One has
 $$
 \boxed{
 \widetilde C\cdot\widetilde D
@@ -96,14 +105,14 @@ $$
 C\cdot D-rs.}
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#total-transform-formula){.pf-ref},
 $$
 \widetilde C=\pi^*C-rE,
 \qquad
 \widetilde D=\pi^*D-sE.
 $$
-Therefore step <1>2 gives
+Therefore step [](#blowup-intersection-identities){.pf-ref} gives
 $$
 \begin{aligned}
 \widetilde C\cdot\widetilde D
@@ -125,11 +134,14 @@ $$
 which is the first assertion.
 :::
 
-<1>4. Assume $C$ and $D$ have no common irreducible component. There is a
+:::
+
+::: {.pf-step #finite-resolution-disjoint}
+Assume $C$ and $D$ have no common irreducible component. There is a
 finite sequence of point blowups after which their strict transforms are
 disjoint.
 
-::: {.proof}
+::: pf-proof
 Resolve the reduced divisor $C\cup D$ by finitely many point blowups on the
 nonsingular surface.  After resolution, its irreducible strict transforms
 are nonsingular and meet, if at all, only transversely.  If the strict
@@ -143,7 +155,10 @@ remaining common point therefore produces a surface on which the final
 strict transforms of $C$ and $D$ are disjoint.
 :::
 
-<1>5. Along the sequence in step <1>4, let
+:::
+
+::: {.pf-step #telescoping-step-identity}
+Along the sequence in step [](#finite-resolution-disjoint){.pf-ref}, let
 $$
 C_0=C,
 \qquad
@@ -159,15 +174,18 @@ C_{i+1}\cdot D_{i+1}
 \mu_{P_i}(C_i)\mu_{P_i}(D_i).
 $$
 
-::: {.proof}
-Apply step <1>3 on the $i$th surface. If the centre $P_i$ lies on only one
+::: pf-proof
+Apply step [](#single-blowup-multiplicity-drop){.pf-ref} on the $i$th surface. If the centre $P_i$ lies on only one
 of the two strict transforms, the multiplicity of the other there is zero,
 so the same formula still applies and contributes zero.  The nonzero terms
 are exactly the points at which the current strict transforms meet: the
 ordinary intersection points on $X$ and their infinitely near successors.
 :::
 
-<1>6. The global intersection number is the sum of the products of
+:::
+
+::: {.pf-step #sum-over-common-points}
+The global intersection number is the sum of the products of
 multiplicities at all ordinary and infinitely near common points:
 $$
 \boxed{
@@ -176,8 +194,8 @@ C\cdot D
 \sum_P \mu_P(C)\mu_P(D).}
 $$
 
-::: {.proof}
-Sum the identities of step <1>5 over the finite blowup sequence. The left
+::: pf-proof
+Sum the identities of step [](#telescoping-step-identity){.pf-ref} over the finite blowup sequence. The left
 side telescopes:
 $$
 \sum_i
@@ -185,7 +203,7 @@ $$
 =
 C_0\cdot D_0-C_N\cdot D_N.
 $$
-By step <1>4 the final strict transforms are disjoint, so
+By step [](#finite-resolution-disjoint){.pf-ref} the final strict transforms are disjoint, so
 $$
 C_N\cdot D_N=0.
 $$
@@ -199,10 +217,12 @@ Omitting the zero terms leaves precisely the sum over all common points of
 $C$ and $D$, including infinitely near common points.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the single-blowup formula, and steps <1>4--<1>6 give the
+::: pf-qed
+Step [](#single-blowup-multiplicity-drop){.pf-ref} proves the single-blowup formula, and steps [](#finite-resolution-disjoint){.pf-ref}, [](#telescoping-step-identity){.pf-ref} and [](#sum-over-common-points){.pf-ref} give the
 iterated intersection-multiplicity formula.
+:::
+
 :::
 :::

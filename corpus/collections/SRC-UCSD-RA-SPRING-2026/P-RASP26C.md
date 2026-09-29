@@ -33,14 +33,19 @@ Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such th
 :::
 
 ::: {.solution}
+
 Because
 \[
 X=\operatorname{span}\{u\}+\mathcal M
 \]
 and $\mathcal M\ne X$, the quotient $X/\mathcal M$ is one-dimensional.
 
-<1>1. If $\mathcal M$ is not closed, then $B+\mathcal M=X$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #not-closed-implies-sum-is-x}
+If $\mathcal M$ is not closed, then $B+\mathcal M=X$.
+
+::: pf-proof
 The closure $\overline{\mathcal M}$ is a vector subspace containing $\mathcal M$. Since $\mathcal M$ has algebraic codimension one, there is no vector subspace strictly between $\mathcal M$ and $X$. Because $\mathcal M$ is not closed,
 \[
 \mathcal M\subsetneq\overline{\mathcal M},
@@ -65,8 +70,12 @@ Hence
 \]
 :::
 
-<1>2. If $\mathcal M$ is closed, then $B+\mathcal M\ne X$.
-::: {.proof}
+:::
+
+::: {.pf-step #closed-implies-sum-not-x}
+If $\mathcal M$ is closed, then $B+\mathcal M\ne X$.
+
+::: pf-proof
 Since $u\notin\mathcal M$ and $\mathcal M$ is closed,
 \[
 d:=\operatorname{dist}(u,\mathcal M)>0.
@@ -90,23 +99,31 @@ contradicting
 \]
 Thus $B+\mathcal M\ne X$.
 
-Combining Steps 1 and 2 proves
+Combining steps [](#not-closed-implies-sum-is-x){.pf-ref} and [](#closed-implies-sum-not-x){.pf-ref} proves
 \[
 \boxed{B+\mathcal M=X\iff\mathcal M\text{ is not closed}.}
 \]
 :::
 
-<1>3. Prove weak openness when $\mathcal M$ is not closed.
-::: {.proof}
-In this case Step 1 gives
+:::
+
+::: {.pf-step #weakly-open-not-closed}
+Prove weak openness when $\mathcal M$ is not closed.
+
+::: pf-proof
+In this case step [](#not-closed-implies-sum-is-x){.pf-ref} gives
 \[
 B+\mathcal M=X,
 \]
 which is weakly open.
 :::
 
-<1>4. Prove weak openness when $\mathcal M$ is closed.
-::: {.proof}
+:::
+
+::: {.pf-step #weakly-open-closed}
+Prove weak openness when $\mathcal M$ is closed.
+
+::: pf-proof
 Since $\mathcal M$ is a closed codimension-one subspace, there exists a nonzero bounded linear functional
 \[
 \varphi\in X^*
@@ -140,4 +157,13 @@ The functional $\varphi$ is continuous for the weak topology by definition. Henc
 \boxed{B+\mathcal M\text{ is weakly open}.}
 \]
 :::
+
+:::
+
+::: pf-qed
+Steps [](#weakly-open-not-closed){.pf-ref} and [](#weakly-open-closed){.pf-ref} show $B+\mathcal M$ is weakly open whether or not $\mathcal M$ is closed.
+:::
+
+:::
+
 :::

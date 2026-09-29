@@ -36,6 +36,7 @@ Show that \(S\) is closed in \(\mathbb R^n\).
 :::
 
 ::: {.solution}
+
 Extend $u_1,\ldots,u_k$ to a basis
 $u_1,\ldots,u_n$ of $\RR^n$, and let
 $$
@@ -44,30 +45,39 @@ $$
 be the linear map whose matrix has columns $u_1,\ldots,u_n$ in the
 standard basis.
 
-<1>1. The map $U$ is a homeomorphism of $\RR^n$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #U-homeomorphism}
+The map $U$ is a homeomorphism of $\RR^n$.
+
+::: pf-proof
 The vectors $u_1,\ldots,u_n$ form a basis, so the matrix of $U$ is
 invertible. Hence $U$ and $U^{-1}$ are linear maps between
 finite-dimensional normed spaces and are continuous. Thus $U$ is a
 homeomorphism.
 :::
 
-<1>2. The subset
+:::
+
+::: {.pf-step #A-times-zero-closed}
+The subset
 $$
 A\times\{0\}\subseteq\RR^k\times\RR^{n-k}=\RR^n
 $$
 is closed.
 
-::: {.proof}
+::: pf-proof
 The set $A$ is closed in $\RR^k$ by hypothesis, and $\{0\}$ is
 closed in $\RR^{n-k}$. Their product is therefore closed in
 $\RR^k\times\RR^{n-k}$.
 :::
 
-<1>3. The image of $A\times\{0\}$ under $U$ is exactly $S$.
+:::
 
-::: {.proof}
+::: {.pf-step #image-equals-S}
+The image of $A\times\{0\}$ under $U$ is exactly $S$.
+
+::: pf-proof
 For $(\alpha_1,\ldots,\alpha_k,0,\ldots,0)\in A\times\{0\}$,
 the definition of $U$ gives
 $$
@@ -78,17 +88,23 @@ As $(\alpha_1,\ldots,\alpha_k)$ ranges over $A$, these are exactly
 the elements of $S$.
 :::
 
-<1>4. The set $S$ is closed in $\RR^n$.
+:::
 
-::: {.proof}
-By step <1>2, $A\times\{0\}$ is closed. By step <1>1, the
-homeomorphism $U$ maps closed sets to closed sets. Step <1>3 identifies
+::: {.pf-step #S-closed}
+The set $S$ is closed in $\RR^n$.
+
+::: pf-proof
+By step [](#A-times-zero-closed){.pf-ref}, $A\times\{0\}$ is closed. By step [](#U-homeomorphism){.pf-ref}, the
+homeomorphism $U$ maps closed sets to closed sets. Step [](#image-equals-S){.pf-ref} identifies
 its image with $S$, so $S$ is closed.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#S-closed){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

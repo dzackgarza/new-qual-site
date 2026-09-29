@@ -46,8 +46,12 @@ For each \(i\), we will prove
 \mathfrak m\cap k[x_i]\neq(0).
 \]
 
-<1>1. The residue field \(L:=R/\mathfrak m\) is a finite algebraic extension of \(k\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #residue-field-finite-algebraic}
+The residue field \(L:=R/\mathfrak m\) is a finite algebraic extension of \(k\).
+
+::: pf-proof
 Because \(\mathfrak m\) is maximal,
 \[
 L=R/\mathfrak m
@@ -67,10 +71,14 @@ Therefore
 and in particular every \(\alpha_i\) is algebraic over \(k\).
 :::
 
-<1>2. For every \(i\), the maximal ideal \(\mathfrak m\) contains a nonzero polynomial involving only \(x_i\).
-::: {.proof}
+:::
+
+::: {.pf-step #nonzero-poly-in-single-variable}
+For every \(i\), the maximal ideal \(\mathfrak m\) contains a nonzero polynomial involving only \(x_i\).
+
+::: pf-proof
 Fix \(i\).
-By <1>1, \(\alpha_i\) is algebraic over \(k\).
+By step [](#residue-field-finite-algebraic){.pf-ref}, \(\alpha_i\) is algebraic over \(k\).
 Let
 \[
 f_i(T)\in k[T]
@@ -102,12 +110,20 @@ Therefore
 \]
 :::
 
-<1>3. The conclusion holds for every variable.
-::: {.proof}
-The argument in <1>2 applies independently to each
+:::
+
+::: pf-step
+The conclusion holds for every variable.
+
+::: pf-proof
+The argument in step [](#nonzero-poly-in-single-variable){.pf-ref} applies independently to each
 \[
 i=1,\ldots,n.
 \]
 Thus a maximal ideal of \(k[x_1,\ldots,x_n]\) has nonzero intersection with each one-variable subring \(k[x_i]\).
+:::
+
+:::
+
 :::
 :::

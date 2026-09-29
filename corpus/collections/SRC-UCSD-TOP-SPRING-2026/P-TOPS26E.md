@@ -20,7 +20,11 @@ Compute
 :::
 
 ::: {.solution}
-<1>1. Put
+
+::: pf
+
+::: {.pf-step #ext-additive-first-variable}
+Put
 $$B=\mathbb Z\oplus\mathbb Z/6\oplus\mathbb Z/21.$$
 Since $\operatorname{Ext}^1_{\mathbb Z}(-,B)$ sends finite direct sums in the first variable to direct sums,
 $$
@@ -29,33 +33,46 @@ $$
 \operatorname{Ext}^1(\mathbb Q,B)\oplus\operatorname{Ext}^1(\mathbb Z,B)
 \oplus\operatorname{Ext}^1(\mathbb Z/3,B)\oplus\operatorname{Ext}^1(\mathbb Z/7,B).
 $$
-::: {.proof}
+
+::: pf-proof
 Ext is contravariant and additive in its first argument for finite direct sums.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #ext-cyclic-formula}
+One has
 $$\operatorname{Ext}^1(\mathbb Z,B)=0,
 \qquad
 \operatorname{Ext}^1(\mathbb Z/n,B)\cong B/nB.$$
-::: {.proof}
+
+::: pf-proof
 The first equality holds because $\mathbb Z$ is free. For the second, apply $\operatorname{Hom}_{\mathbb Z}(-,B)$ to
 $$0\to\mathbb Z\xrightarrow{n}\mathbb Z\to\mathbb Z/n\to0.$$
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #ext-z3-z7-computation}
+Hence
 $$
 \operatorname{Ext}^1(\mathbb Z/3,B)\cong(\mathbb Z/3)^3,
 \qquad
 \operatorname{Ext}^1(\mathbb Z/7,B)\cong(\mathbb Z/7)^2.
 $$
-::: {.proof}
+
+::: pf-proof
 Modulo $3$, the three summands of $B$ contribute $\mathbb Z/3$, $\mathbb Z/3$, and $\mathbb Z/3$. Modulo $7$, they contribute $\mathbb Z/7$, $0$, and $\mathbb Z/7$.
 :::
 
-<1>4. The classical computation is
+:::
+
+::: {.pf-step #ext-q-z-classical}
+The classical computation is
 $$\operatorname{Ext}^1_{\mathbb Z}(\mathbb Q,\mathbb Z)\cong\widehat{\mathbb Z}/\mathbb Z,$$
 where $\widehat{\mathbb Z}=\prod_p\mathbb Z_p$ is the profinite completion.
-::: {.proof}
+
+::: pf-proof
 Apply $\operatorname{Hom}_{\mathbb Z}(-,\mathbb Z)$ to
 $$0\to\mathbb Z\to\mathbb Q\to\mathbb Q/\mathbb Z\to0.$$
 Since $\operatorname{Hom}(\mathbb Q,\mathbb Z)=\operatorname{Hom}(\mathbb Q/\mathbb Z,\mathbb Z)=0$, the resulting exact sequence is
@@ -69,9 +86,13 @@ $$\operatorname{Ext}^1(\mathbb Q/\mathbb Z,\mathbb Z)\cong\prod_p\mathbb Z_p=\wi
 The map from $\mathbb Z$ is the diagonal embedding, giving the quotient above.
 :::
 
-<1>5. For every finite abelian group $F$,
+:::
+
+::: {.pf-step #ext-q-finite-vanishes}
+For every finite abelian group $F$,
 $$\operatorname{Ext}^1_{\mathbb Z}(\mathbb Q,F)=0.$$
-::: {.proof}
+
+::: pf-proof
 It suffices to take $F=\mathbb Z/n$. Apply $\operatorname{Hom}(\mathbb Q,-)$ to
 $$0\to\mathbb Z\xrightarrow n\mathbb Z\to\mathbb Z/n\to0.$$
 Since $\operatorname{Hom}(\mathbb Q,\mathbb Z)=\operatorname{Hom}(\mathbb Q,\mathbb Z/n)=0$ and $\operatorname{Ext}^2_{\mathbb Z}(\mathbb Q,\mathbb Z)=0$, one obtains
@@ -79,13 +100,20 @@ $$\operatorname{Ext}^1(\mathbb Q,\mathbb Z/n)\cong\operatorname{coker}\bigl(n:\w
 Multiplication by $n$ on $\widehat{\mathbb Z}/\mathbb Z$ is surjective: for $x\in\widehat{\mathbb Z}$ choose $m\in\mathbb Z$ with $x+m\equiv0\pmod{n\widehat{\mathbb Z}}$, then $(x+m)/n\in\widehat{\mathbb Z}$. Hence the cokernel vanishes.
 :::
 
-<1>6. Therefore
-$$\operatorname{Ext}^1(\mathbb Q,B)\cong\widehat{\mathbb Z}/\mathbb Z.$$
-::: {.proof}
-Ext is additive in the second variable over the finite direct sum defining $B$, and the finite summands vanish by <1>5.
 :::
 
-<1>7. Combining the preceding steps,
+::: {.pf-step #ext-q-b}
+Therefore
+$$\operatorname{Ext}^1(\mathbb Q,B)\cong\widehat{\mathbb Z}/\mathbb Z.$$
+
+::: pf-proof
+Ext is additive in the second variable over the finite direct sum defining $B$, and the finite summands vanish by step [](#ext-q-finite-vanishes){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+Combining the preceding steps,
 $$
 \boxed{
 \operatorname{Ext}^1_{\mathbb Z}(\mathbb Q\oplus\mathbb Z\oplus\mathbb Z_3\oplus\mathbb Z_7,
@@ -93,7 +121,13 @@ $$
 \cong
 \widehat{\mathbb Z}/\mathbb Z\oplus(\mathbb Z/3)^3\oplus(\mathbb Z/7)^2.}
 $$
-::: {.proof}
-Use <1>1--<1>6.
+
+::: pf-proof
+Use steps [](#ext-additive-first-variable){.pf-ref}, [](#ext-cyclic-formula){.pf-ref}, [](#ext-z3-z7-computation){.pf-ref}, [](#ext-q-z-classical){.pf-ref}, [](#ext-q-finite-vanishes){.pf-ref} and [](#ext-q-b){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

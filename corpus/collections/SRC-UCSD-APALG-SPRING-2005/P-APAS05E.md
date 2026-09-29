@@ -18,13 +18,18 @@ Prove that a group of order $120$ is not simple.
 :::
 
 ::: {.solution}
+
 Suppose, for contradiction, that $G$ is simple and
 \[
 |G|=120=2^3\cdot3\cdot5.
 \]
 
-<1>1. The number $n_5$ of Sylow $5$-subgroups is $6$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The number $n_5$ of Sylow $5$-subgroups is $6$.
+
+::: pf-proof
 By Sylow's theorems,
 \[
 n_5\equiv1\pmod5,
@@ -38,11 +43,15 @@ n_5=6.
 \]
 :::
 
-<1>2. Conjugation on the six Sylow $5$-subgroups gives an injective homomorphism
+:::
+
+::: pf-step
+Conjugation on the six Sylow $5$-subgroups gives an injective homomorphism
 \[
 \rho:G\hookrightarrow S_6.
 \]
-::: {.proof}
+
+::: pf-proof
 Let $\Omega$ be the set of six Sylow $5$-subgroups. Conjugation defines an action of $G$ on $\Omega$, hence a homomorphism
 \[
 \rho:G\to\operatorname{Sym}(\Omega)\cong S_6.
@@ -54,8 +63,12 @@ The action is transitive by Sylow's conjugacy theorem, so it is nontrivial. Thus
 Therefore $\rho$ is injective.
 :::
 
-<1>3. The image $\rho(G)$ is contained in $A_6$.
-::: {.proof}
+:::
+
+::: pf-step
+The image $\rho(G)$ is contained in $A_6$.
+
+::: pf-proof
 Compose $\rho$ with the sign homomorphism:
 \[
 G\xrightarrow{\rho}S_6\xrightarrow{\operatorname{sgn}}\{\pm1\}.
@@ -67,8 +80,12 @@ Therefore the sign is trivial on $\rho(G)$, so
 \]
 :::
 
-<1>4. The subgroup $\rho(G)$ has index $3$ in $A_6$.
-::: {.proof}
+:::
+
+::: pf-step
+The subgroup $\rho(G)$ has index $3$ in $A_6$.
+
+::: pf-proof
 Since $\rho$ is injective,
 \[
 |\rho(G)|=120.
@@ -83,8 +100,12 @@ Hence
 \]
 :::
 
-<1>5. This is impossible, so $G$ is not simple.
-::: {.proof}
+:::
+
+::: pf-step
+This is impossible, so $G$ is not simple.
+
+::: pf-proof
 We use the standard theorem that $A_n$ is simple for every $n\ge5$, in particular $A_6$ is simple.
 
 If $H:=\rho(G)$ had index $3$ in $A_6$, left multiplication on the three cosets $A_6/H$ would define a homomorphism
@@ -101,4 +122,9 @@ Thus $\psi$ would be injective. But this is impossible because
 \]
 The contradiction shows that the original assumption that $G$ is simple was false. Therefore every group of order $120$ is nonsimple.
 :::
+
+:::
+
+:::
+
 :::

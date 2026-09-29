@@ -45,7 +45,10 @@ a_k\coloneqq\frac{f^{(k)}(0)}{k!},
 c_{n,k}\coloneqq\frac{g_n^{(k)}(0)}{k!}.
 $$
 
-<1>1. For every $k\geq0$, the limit
+::: pf
+
+::: {.pf-step #ck-limit-exists}
+For every $k\geq0$, the limit
 $$
 c_k\coloneqq\lim_{n\to\infty}c_{n,k}
 $$
@@ -54,7 +57,7 @@ $$
 \abs{c_k}\leq\abs{a_k}.
 $$
 
-::: {.proof}
+::: pf-proof
 Existence follows from the second hypothesis after division by $k!$.
 The first hypothesis gives
 $$
@@ -63,12 +66,15 @@ $$
 for every $n$. Passing to the limit in $n$ yields the stated bound.
 :::
 
-<1>2. For every $R>0$,
+:::
+
+::: {.pf-step #majorant-series-converges}
+For every $R>0$,
 $$
 \sum_{k=0}^{\infty}\abs{a_k}R^k<\infty.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $f$ is entire, its Taylor series at $0$ has infinite radius of
 convergence:
 $$
@@ -79,33 +85,39 @@ radius of convergence. Since the radius here is infinite, the displayed
 majorant series converges for every finite $R$.
 :::
 
-<1>3. The series
+:::
+
+::: {.pf-step #g-is-entire}
+The series
 $$
 g(z)\coloneqq\sum_{k=0}^{\infty}c_kz^k
 $$
 defines an entire function.
 
-::: {.proof}
-Fix $R>0$. For $\abs{z}\leq R$, step <1>1 gives
+::: pf-proof
+Fix $R>0$. For $\abs{z}\leq R$, step [](#ck-limit-exists){.pf-ref} gives
 $$
 \abs{c_kz^k}
 \leq
 \abs{a_k}R^k.
 $$
-The right-hand series is summable by step <1>2. Hence the Weierstrass
+The right-hand series is summable by step [](#majorant-series-converges){.pf-ref}. Hence the Weierstrass
 M-test gives uniform convergence of the series defining $g$ on
 $\abs{z}\leq R$. Since each partial sum is a polynomial, the standard
 Weierstrass theorem implies that $g$ is holomorphic on $\abs{z}<R$.
 As $R$ is arbitrary, $g$ is entire.
 :::
 
-<1>4. For every $R>0$,
+:::
+
+::: {.pf-step #uniform-on-disk}
+For every $R>0$,
 $$
 g_n\longrightarrow g
 $$
 uniformly on the closed disk $\abs{z}\leq R$.
 
-::: {.proof}
+::: pf-proof
 Because each $g_n$ is entire,
 $$
 g_n(z)=\sum_{k=0}^{\infty}c_{n,k}z^k.
@@ -117,14 +129,14 @@ $$
 \sum_{k=0}^{\infty}
 \abs{c_{n,k}-c_k}R^k.
 $$
-By step <1>1 and the corresponding bound on $c_{n,k}$,
+By step [](#ck-limit-exists){.pf-ref} and the corresponding bound on $c_{n,k}$,
 $$
 \abs{c_{n,k}-c_k}
 \leq
 2\abs{a_k}.
 $$
 
-Let $\varepsilon>0$. By step <1>2, choose $N$ such that
+Let $\varepsilon>0$. By step [](#majorant-series-converges){.pf-ref}, choose $N$ such that
 $$
 2\sum_{k>N}\abs{a_k}R^k<\frac{\varepsilon}{2}.
 $$
@@ -145,21 +157,26 @@ $$
 This is uniform convergence on the closed disk.
 :::
 
-<1>5. The sequence $(g_n)$ converges uniformly on every compact subset of
-$\CC$, and its limit is the entire function $g$ from step <1>3.
+:::
 
-::: {.proof}
+::: {.pf-step #uniform-on-compact}
+The sequence $(g_n)$ converges uniformly on every compact subset of
+$\CC$, and its limit is the entire function $g$ from step [](#g-is-entire){.pf-ref}.
+
+::: pf-proof
 Let $K\subset\CC$ be compact. Then $K$ is bounded, so
 $$
 K\subset\{z:\abs{z}\leq R\}
 $$
-for some $R>0$. Step <1>4 gives uniform convergence on that disk and hence
-on $K$. Step <1>3 proves that the limit $g$ is entire.
+for some $R>0$. Step [](#uniform-on-disk){.pf-ref} gives uniform convergence on that disk and hence
+on $K$. Step [](#g-is-entire){.pf-ref} proves that the limit $g$ is entire.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is exactly the required conclusion.
+::: pf-qed
+Step [](#uniform-on-compact){.pf-ref} is exactly the required conclusion.
+:::
+
 :::
 :::

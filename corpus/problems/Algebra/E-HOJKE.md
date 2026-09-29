@@ -33,33 +33,45 @@ Show that TFAE:
 Let $A$ be a commutative ring with $1\neq0$; ring homomorphisms preserve $1$.
 Number the three conditions (1), (2), (3) in the order stated.
 
-<1>1. (1) implies (2).
+::: pf
 
-::: {.proof}
+::: {.pf-step #field-implies-simple}
+(1) implies (2).
+
+::: pf-proof
 Let $I$ be a nonzero ideal of the field $A$ and $0\neq x\in I$.
 Then $1=x^{-1}x\in I$, so $a=a\cdot1\in I$ for every $a\in A$ and $I=A$.
 :::
 
-<1>2. (2) implies (3).
+:::
 
-::: {.proof}
+::: {.pf-step #simple-implies-injective}
+(2) implies (3).
+
+::: pf-proof
 Let $\varphi\colon A\to B$ be a ring homomorphism to a field.
 $\ker\varphi$ is an ideal, and $\varphi(1)=1\neq0$ gives $\ker\varphi\neq A$.
 By (2), $\ker\varphi=0$, so $\varphi$ is injective.
 :::
 
-<1>3. (3) implies (1).
+:::
 
-::: {.proof}
+::: {.pf-step #injective-implies-field}
+(3) implies (1).
+
+::: pf-proof
 Let $0\neq x\in A$ and suppose $(x)\neq A$.
 The proper ideal $(x)$ lies in a maximal ideal $\mathfrak m$ (Zorn's lemma), and $\pi\colon A\to A/\mathfrak m$ is a homomorphism to a field.
 By (3), $\mathfrak m=\ker\pi=0$, so $x\in\mathfrak m=0$, a contradiction.
 Hence $(x)=A$, so $x$ is a unit, and $A$ is a field.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2 and <1>3 give $(1)\Rightarrow(2)\Rightarrow(3)\Rightarrow(1)$.
 :::
+
+::: pf-qed
+Steps [](#field-implies-simple){.pf-ref}, [](#simple-implies-injective){.pf-ref} and [](#injective-implies-field){.pf-ref} give $(1)\Rightarrow(2)\Rightarrow(3)\Rightarrow(1)$.
+:::
+
+:::
+
 :::

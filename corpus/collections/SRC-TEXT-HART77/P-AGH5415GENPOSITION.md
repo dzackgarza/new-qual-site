@@ -91,7 +91,10 @@ $$
 K_X=-3h+\sum_{i=1}^r e_i.
 $$
 
-<1>1. An admissible quadratic transformation centered at
+::: pf
+
+::: {.pf-step #quadratic-transform-basis-change}
+An admissible quadratic transformation centered at
 $P_1,P_2,P_3$ identifies the two marked blowups and changes the Picard basis
 by
 $$
@@ -121,7 +124,7 @@ b_i'&=b_i\qquad(i\ge4).
 \end{aligned}}
 $$
 
-::: {.proof}
+::: pf-proof
 The common resolution of a quadratic transformation is described in
 [[P-AGH542QUADTRANSFORM]]. The pullback of a target line is
 $$
@@ -139,13 +142,16 @@ the target basis gives the same formulas with primed and unprimed
 coefficients interchanged, which is the boxed transformation law.
 :::
 
-<1>2. For six points, the condition
+:::
+
+::: {.pf-step #six-point-condition-preserved}
+For six points, the condition
 $$
 \boxed{\text{no three are collinear and the six do not lie on a conic}}
 $$
 is preserved by every admissible transformation.
 
-::: {.proof}
+::: pf-proof
 It suffices to consider a transformation centered at $P_1,P_2,P_3$.
 Denote the target base points by $Q_1,Q_2,Q_3$ and the images of
 $P_4,P_5,P_6$ by $R_4,R_5,R_6$.
@@ -191,11 +197,14 @@ target. Since the quadratic transformation is an involution, the converse
 holds as well.
 :::
 
-<1>3. Six points are in general position if and only if no three are
+:::
+
+::: {.pf-step #six-points-general-position-iff}
+Six points are in general position if and only if no three are
 collinear and not all six lie on a conic.
 
-::: {.proof}
-If the six points satisfy the two stated conditions, step <1>2 shows that
+::: pf-proof
+If the six points satisfy the two stated conditions, step [](#six-point-condition-preserved){.pf-ref} shows that
 every successive admissible transformation preserves them. In particular no
 three points become collinear after any finite sequence, so the six points
 are in general position.
@@ -203,14 +212,17 @@ are in general position.
 Conversely, general position includes the requirement that the original six
 points have no collinear triple. Suppose all six nevertheless lie on a
 conic. Choose any three as centers of an admissible transformation. By the
-first calculation in step <1>2, the images of the other three points are
+first calculation in step [](#six-point-condition-preserved){.pf-ref}, the images of the other three points are
 collinear. This contradicts general position. This proves (a).
 :::
 
-<1>4. General position is preserved after any finite sequence of admissible
+:::
+
+::: {.pf-step #general-position-preserved-under-sequence}
+General position is preserved after any finite sequence of admissible
 transformations.
 
-::: {.proof}
+::: pf-proof
 Let $\mathbf Q$ be obtained from a general-position configuration
 $\mathbf P$ by a finite admissible sequence $w$. Any further finite
 admissible sequence $v$ starting from $\mathbf Q$ gives the concatenated
@@ -223,10 +235,13 @@ configuration has no three collinear. Since this holds for every $v$,
 $\mathbf Q$ is itself in general position. This proves (b).
 :::
 
-<1>5. Let $k$ be uncountable. A nonempty open subset of $\PP_k^2$ cannot be
+:::
+
+::: {.pf-step #uncountable-field-lemma}
+Let $k$ be uncountable. A nonempty open subset of $\PP_k^2$ cannot be
 covered by countably many proper closed subsets.
 
-::: {.proof}
+::: pf-proof
 Let $U\subseteq\PP^2$ be nonempty open and let
 $$
 Z_1,Z_2,\ldots
@@ -249,7 +264,10 @@ $U\cap\ell$ is the complement of finitely many points in $\ell$. Therefore
 $U\cap\ell$ contains a point outside every $Z_n$.
 :::
 
-<1>6. Fix $P_1,\ldots,P_r$ in general position. For every fixed finite word
+:::
+
+::: {.pf-step #bad-locus-proper-closed}
+Fix $P_1,\ldots,P_r$ in general position. For every fixed finite word
 $w$ of admissible transformations and every fixed triple of labels, the set
 of points
 $$
@@ -262,7 +280,7 @@ $$
 and the specified terminal triple is collinear is contained in a proper
 closed subset of $\PP^2$.
 
-::: {.proof}
+::: pf-proof
 Work on the open subset on which the successive centers occurring in $w$
 are noncollinear and all quadratic transformations are defined at the
 remaining labeled points. The standard quadratic formula
@@ -284,7 +302,10 @@ a fixed proper plane curve. The latter is also not an identity on $\PP^2$.
 Thus the cleared determinant defines a proper closed subset.
 :::
 
-<1>7. If $k$ is uncountable and $P_1,\ldots,P_r$ are in general position,
+:::
+
+::: {.pf-step #dense-general-position-extension}
+If $k$ is uncountable and $P_1,\ldots,P_r$ are in general position,
 there is a dense subset
 $$
 \boxed{V\subseteq\PP^2}
@@ -292,10 +313,10 @@ $$
 such that every $P_{r+1}\in V$ makes
 $P_1,\ldots,P_r,P_{r+1}$ a general-position configuration.
 
-::: {.proof}
+::: pf-proof
 There are only finitely many choices of a triple of labels at each stage,
 so there are only countably many finite words of admissible transformations.
-For each word there are finitely many terminal triples. Step <1>6 therefore
+For each word there are finitely many terminal triples. Step [](#bad-locus-proper-closed){.pf-ref} therefore
 produces only countably many proper closed bad subsets of $\PP^2$.
 
 Also exclude the finitely many original lines through pairs of the fixed
@@ -304,13 +325,16 @@ of all these bad subsets and put
 $$
 V=\PP^2\setminus B.
 $$
-Step <1>5, applied inside every nonempty open subset of $\PP^2$, shows that
+Step [](#uncountable-field-lemma){.pf-ref}, applied inside every nonempty open subset of $\PP^2$, shows that
 $V$ is dense. For $P_{r+1}\in V$, no collinear triple occurs initially or
 after any finite admissible word. This is exactly the definition of general
 position, proving (c).
 :::
 
-<1>8. Let $r\le8$, and let
+:::
+
+::: {.pf-step #degree-bound-nonneg-square}
+Let $r\le8$, and let
 $$
 D=ah-\sum_{i=1}^r b_i e_i
 $$
@@ -329,7 +353,7 @@ $$
 \boxed{D^2\ge0.}
 $$
 
-::: {.proof}
+::: pf-proof
 If $a=0$, the hypothesis forces every $b_i=0$, so the conclusion is
 immediate. Assume $a>0$.
 
@@ -369,10 +393,13 @@ D^2=a^2-\sum_i b_i^2\ge0.
 $$
 :::
 
-<1>9. For $r=7$ or $8$, every irreducible curve of negative
+:::
+
+::: {.pf-step #negative-curve-is-minus-one-curve}
+For $r=7$ or $8$, every irreducible curve of negative
 self-intersection is a nonsingular rational $(-1)$-curve.
 
-::: {.proof}
+::: pf-proof
 Let $C\subseteq X(\mathbf P)$ be irreducible with $C^2<0$. If $C$ is an
 exceptional divisor, the assertion is immediate. Otherwise its plane image
 has positive degree, so after relabeling its class is
@@ -383,18 +410,18 @@ a>0,
 \qquad
 b_1\ge\cdots\ge b_r\ge0.
 $$
-By step <1>8, negativity forces
+By step [](#degree-bound-nonneg-square){.pf-ref}, negativity forces
 $$
 b_1+b_2+b_3>a.
 $$
 Perform the admissible quadratic transformation centered at the three points
-with these largest multiplicities. Step <1>1 gives the new plane degree
+with these largest multiplicities. Step [](#quadratic-transform-basis-change){.pf-ref} gives the new plane degree
 $$
 a'=2a-b_1-b_2-b_3<a.
 $$
 The marked blowup itself is unchanged up to isomorphism, so the transformed
 curve remains irreducible and has the same negative self-intersection.
-Step <1>4 says the new point configuration is again in general position.
+Step [](#general-position-preserved-under-sequence){.pf-ref} says the new point configuration is again in general position.
 
 Repeat. The nonnegative plane degree decreases strictly, so after finitely
 many steps it is zero. An irreducible curve of plane degree zero on a
@@ -408,7 +435,10 @@ C^2=-1.
 $$
 :::
 
-<1>10. A nonexceptional $(-1)$-curve
+:::
+
+::: {.pf-step #minus-one-curve-numerics}
+A nonexceptional $(-1)$-curve
 $$
 C\sim ah-\sum_{i=1}^r b_i e_i
 $$
@@ -420,8 +450,8 @@ $$
 \sum_i b_i^2=a^2+1.}
 $$
 
-::: {.proof}
-Step <1>9 gives
+::: pf-proof
+Step [](#negative-curve-is-minus-one-curve){.pf-ref} gives
 $$
 C^2=-1
 $$
@@ -444,7 +474,10 @@ $$
 which is the first equality. The equation $C^2=-1$ gives the second.
 :::
 
-<1>11. For $r=7$, the possible $(-1)$-curve classes are exactly
+:::
+
+::: {.pf-step #r7-classes-fifty-six}
+For $r=7$, the possible $(-1)$-curve classes are exactly
 $$
 \begin{array}{c|c|c}
 a & (b_1,\ldots,b_7)\text{ up to permutation} & \text{number}\\
@@ -457,8 +490,8 @@ a & (b_1,\ldots,b_7)\text{ up to permutation} & \text{number}\\
 $$
 Thus there are $56$ such classes.
 
-::: {.proof}
-For $a>0$, step <1>10 and Cauchy--Schwarz give
+::: pf-proof
+For $a>0$, step [](#minus-one-curve-numerics){.pf-ref} and Cauchy--Schwarz give
 $$
 (3a-1)^2
 \le
@@ -470,7 +503,7 @@ a^2-3a-3\le0.
 $$
 Thus $a\le3$.
 
-For $a=1$ or $2$, subtracting the two equations in step <1>10 gives
+For $a=1$ or $2$, subtracting the two equations in step [](#minus-one-curve-numerics){.pf-ref} gives
 $$
 \sum_i b_i(b_i-1)=(a-1)(a-2)=0.
 $$
@@ -492,19 +525,22 @@ $$
 $$
 :::
 
-<1>12. Every class in step <1>11 is represented by exactly one irreducible
+:::
+
+::: {.pf-step #r7-classes-realized-unique}
+Every class in step [](#r7-classes-fifty-six){.pf-ref} is represented by exactly one irreducible
 nonsingular rational curve. Hence for $r=7$ there are exactly $56$ negative
 curves, and there are no others.
 
-::: {.proof}
-Starting with any nonexceptional row of step <1>11, choose three largest
-multiplicities and apply step <1>1. The plane degree decreases:
+::: pf-proof
+Starting with any nonexceptional row of step [](#r7-classes-fifty-six){.pf-ref}, choose three largest
+multiplicities and apply step [](#quadratic-transform-basis-change){.pf-ref}. The plane degree decreases:
 $$
 3\longmapsto2\longmapsto1\longmapsto0.
 $$
 The multiplicity patterns become successively the preceding rows, ending in
 an exceptional divisor. Because every intermediate point configuration is
-general by step <1>4, these are admissible transformations. Reversing them
+general by step [](#general-position-preserved-under-sequence){.pf-ref}, these are admissible transformations. Reversing them
 pulls the final exceptional divisor back to an irreducible nonsingular
 rational curve in the original class. Thus every listed class is effective.
 
@@ -512,11 +548,14 @@ There cannot be two distinct irreducible curves in the same listed class:
 their intersection number would be the self-intersection $-1$, whereas
 distinct irreducible curves on a smooth surface have nonnegative
 intersection. Hence each class has exactly one representative.
-Step <1>9 says every irreducible negative curve must be one of these
+Step [](#negative-curve-is-minus-one-curve){.pf-ref} says every irreducible negative curve must be one of these
 $(-1)$-curves. This proves the $r=7$ assertion in (d).
 :::
 
-<1>13. For $r=8$, the possible $(-1)$-curve classes are exactly
+:::
+
+::: {.pf-step #r8-classes-two-forty}
+For $r=8$, the possible $(-1)$-curve classes are exactly
 $$
 \begin{array}{c|c|c}
 a & (b_1,\ldots,b_8)\text{ up to permutation} & \text{number}\\
@@ -532,8 +571,8 @@ a & (b_1,\ldots,b_8)\text{ up to permutation} & \text{number}\\
 $$
 Thus there are $240$ such classes.
 
-::: {.proof}
-Step <1>10 and Cauchy--Schwarz give
+::: pf-proof
+Step [](#minus-one-curve-numerics){.pf-ref} and Cauchy--Schwarz give
 $$
 (3a-1)^2
 \le
@@ -551,7 +590,7 @@ $$
 It would force all eight integers $b_i$ to equal $20/8=5/2$, impossible.
 Thus $a\le6$.
 
-For $a=1,2$, the argument of step <1>11 gives respectively two and five
+For $a=1,2$, the argument of step [](#r7-classes-fifty-six){.pf-ref} gives respectively two and five
 entries equal to $1$.
 
 For $a=3$, writing $x_i=b_i-1$ gives
@@ -603,13 +642,16 @@ $$
 $$
 :::
 
-<1>14. Every class in step <1>13 is represented by exactly one irreducible
+:::
+
+::: {.pf-step #r8-classes-realized-unique}
+Every class in step [](#r8-classes-two-forty){.pf-ref} is represented by exactly one irreducible
 nonsingular rational curve. Hence for $r=8$ there are exactly $240$
 negative curves, and there are no others.
 
-::: {.proof}
-As in step <1>12, apply an admissible transformation at three points with
-largest multiplicities. Direct substitution in step <1>1 gives the degree
+::: pf-proof
+As in step [](#r7-classes-realized-unique){.pf-ref}, apply an admissible transformation at three points with
+largest multiplicities. Direct substitution in step [](#quadratic-transform-basis-change){.pf-ref} gives the degree
 reductions
 $$
 6\longmapsto5\longmapsto4\longmapsto2\longmapsto1\longmapsto0
@@ -621,14 +663,17 @@ of that class on the original surface.
 
 Uniqueness again follows from negative self-intersection: two distinct
 irreducible curves in the same class would have intersection $-1$. Finally
-step <1>9 excludes every other irreducible curve of negative
+step [](#negative-curve-is-minus-one-curve){.pf-ref} excludes every other irreducible curve of negative
 self-intersection. This completes (d).
 :::
 
-<1>15. For $r=9$, the orbit of a line class under admissible
+:::
+
+::: {.pf-step #r9-orbit-unbounded-degree}
+For $r=9$, the orbit of a line class under admissible
 transformations contains classes of arbitrarily large plane degree.
 
-::: {.proof}
+::: pf-proof
 Start with the line
 $$
 L=P_1P_2,
@@ -673,7 +718,7 @@ Since it is an integer,
 $$
 m_1+m_2+m_3\le d-1.
 $$
-Transform at these three points. Step <1>1 gives the new degree
+Transform at these three points. Step [](#quadratic-transform-basis-change){.pf-ref} gives the new degree
 $$
 d'
 =
@@ -691,17 +736,20 @@ Each is positive because each pair sum is at most
 $m_1+m_2+m_3\le d-1$; the other six multiplicities are unchanged. Thus the
 same argument applies again.
 
-Step <1>4 guarantees that every successive nine-point configuration remains
+Step [](#general-position-preserved-under-sequence){.pf-ref} guarantees that every successive nine-point configuration remains
 in general position. Iterating therefore gives finite admissible sequences
 for which the plane degree of the transform of $L$ tends to infinity.
 :::
 
-<1>16. The surface obtained by blowing up nine points in general position
+:::
+
+::: {.pf-step #r9-infinitely-many-minus-one-curves}
+The surface obtained by blowing up nine points in general position
 contains infinitely many irreducible nonsingular rational $(-1)$-curves.
 
-::: {.proof}
+::: pf-proof
 An admissible transformation acts on the marked Picard lattice by the
-isometry of step <1>1. Step <1>15 shows that the orbit of the line class
+isometry of step [](#quadratic-transform-basis-change){.pf-ref}. Step [](#r9-orbit-unbounded-degree){.pf-ref} shows that the orbit of the line class
 $$
 h-e_1-e_2
 $$
@@ -720,12 +768,14 @@ element. Infinitely many orbit classes therefore give infinitely many
 distinct curves on $X$. This proves (e).
 :::
 
-<1>17. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2--<1>3 prove (a), step <1>4 proves (b), and steps <1>5--<1>7
-prove (c). Steps <1>8--<1>14 classify all negative curves for $r=7,8$ and
-give the counts $56$ and $240$, proving (d). Steps <1>15--<1>16 prove the
+::: pf-qed
+Steps [](#six-point-condition-preserved){.pf-ref} and [](#six-points-general-position-iff){.pf-ref} prove (a), step [](#general-position-preserved-under-sequence){.pf-ref} proves (b), and steps [](#uncountable-field-lemma){.pf-ref}, [](#bad-locus-proper-closed){.pf-ref} and [](#dense-general-position-extension){.pf-ref}
+prove (c). Steps [](#degree-bound-nonneg-square){.pf-ref}, [](#negative-curve-is-minus-one-curve){.pf-ref}, [](#minus-one-curve-numerics){.pf-ref}, [](#r7-classes-fifty-six){.pf-ref}, [](#r7-classes-realized-unique){.pf-ref}, [](#r8-classes-two-forty){.pf-ref} and [](#r8-classes-realized-unique){.pf-ref} classify all negative curves for $r=7,8$ and
+give the counts $56$ and $240$, proving (d). Steps [](#r9-orbit-unbounded-degree){.pf-ref} and [](#r9-infinitely-many-minus-one-curves){.pf-ref} prove the
 starred $r=9$ assertion (e).
+:::
+
 :::
 :::

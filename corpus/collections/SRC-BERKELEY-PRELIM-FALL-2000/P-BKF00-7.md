@@ -30,7 +30,11 @@ for every $x\in\mathbb R$.
 :::
 
 ::: {.solution}
-<1>1. There exists $\delta>0$ such that
+
+::: pf
+
+::: {.pf-step #delta-exists}
+There exists $\delta>0$ such that
 $$
 \abs{u-v}<\delta
 \quad\Longrightarrow\quad
@@ -38,11 +42,14 @@ $$
 $$
 for all $u,v\in\RR$.
 
-::: {.proof}
+::: pf-proof
 Apply uniform continuity with $\varepsilon=1$.
 :::
 
-<1>2. Set
+:::
+
+::: {.pf-step #B-and-n-defined}
+Set
 $$
 B=\frac{2}{\delta}>0.
 $$
@@ -51,7 +58,7 @@ $$
 B\abs{x}<n\le B\abs{x}+1.
 $$
 
-::: {.proof}
+::: pf-proof
 Take
 $$
 n=\lfloor B\abs{x}\rfloor+1.
@@ -60,17 +67,20 @@ Since $x\neq0$ and $B>0$, this integer is positive and has the displayed
 inequalities.
 :::
 
-<1>3. For $x\neq0$ and $n$ as in step <1>2,
+:::
+
+::: {.pf-step #f-x-bound-n}
+For $x\neq0$ and $n$ as in step [](#B-and-n-defined){.pf-ref},
 $$
 \abs{f(x)}<n.
 $$
 
-::: {.proof}
+::: pf-proof
 For $j=0,\ldots,n$, set
 $$
 x_j=\frac{j}{n}x.
 $$
-Then $x_0=0$, $x_n=x$, and step <1>2 gives
+Then $x_0=0$, $x_n=x$, and step [](#B-and-n-defined){.pf-ref} gives
 $$
 \abs{x_j-x_{j-1}}
 =\frac{\abs{x}}{n}
@@ -78,7 +88,7 @@ $$
 =\frac{\delta}{2}
 <\delta
 $$
-for $j=1,\ldots,n$. Hence step <1>1 implies
+for $j=1,\ldots,n$. Hence step [](#delta-exists){.pf-ref} implies
 $$
 \abs{f(x_j)-f(x_{j-1})}<1
 $$
@@ -93,23 +103,29 @@ $$
 $$
 :::
 
-<1>4. For every $x\in\RR$,
+:::
+
+::: {.pf-step #final-bound}
+For every $x\in\RR$,
 $$
 \abs{f(x)}\le\boxed{1+B\abs{x}}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $x=0$, then $f(0)=0$, so the inequality is immediate. If $x\neq0$,
-steps <1>2 and <1>3 give
+steps [](#B-and-n-defined){.pf-ref} and [](#f-x-bound-n){.pf-ref} give
 $$
 \abs{f(x)}<n\le1+B\abs{x}.
 $$
 Thus the same bound holds for every real $x$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required constant $B>0$ and the asserted bound.
 :::
+
+::: pf-qed
+Step [](#final-bound){.pf-ref} gives the required constant $B>0$ and the asserted bound.
+:::
+
+:::
+
 :::

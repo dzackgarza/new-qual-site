@@ -43,12 +43,15 @@ $$
 be the set of left cosets of $H$ in $G$. By hypothesis,
 $\abs{X}=n$.
 
-<1>1. Left multiplication defines a homomorphism
+::: pf
+
+::: {.pf-step #phi-homomorphism}
+Left multiplication defines a homomorphism
 $$
 \varphi:G\longrightarrow\operatorname{Sym}(X)\cong S_n.
 $$
 
-::: {.proof}
+::: pf-proof
 For $g\in G$, define
 $$
 \varphi(g)(xH)=gxH.
@@ -63,22 +66,28 @@ $$
 so $\varphi$ is a homomorphism.
 :::
 
-<1>2. Set
+:::
+
+::: {.pf-step #n-normal}
+Set
 $$
 N\coloneqq\ker\varphi.
 $$
 Then $N\trianglelefteq G$.
 
-::: {.proof}
+::: pf-proof
 The kernel of a group homomorphism is normal.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #n-subset-h}
+One has
 $$
 N\subseteq H.
 $$
 
-::: {.proof}
+::: pf-proof
 If $g\in N$, then $\varphi(g)$ fixes every coset in $X$, in
 particular the coset $H$. Thus
 $$
@@ -87,12 +96,15 @@ $$
 which is equivalent to $g\in H$.
 :::
 
-<1>4. The index of $N$ satisfies
+:::
+
+::: {.pf-step #index-bound}
+The index of $N$ satisfies
 $$
 [G:N]\le n!.
 $$
 
-::: {.proof}
+::: pf-proof
 By the first isomorphism theorem,
 $$
 G/N\cong\operatorname{im}\varphi.
@@ -107,18 +119,24 @@ $$
 $$
 :::
 
-<1>5. Therefore $G$ contains a normal subgroup $N$ with
+:::
+
+::: {.pf-step #conclusion}
+Therefore $G$ contains a normal subgroup $N$ with
 $$
 \boxed{N\subseteq H\quad\text{and}\quad[G:N]\le n!}.
 $$
 
-::: {.proof}
-Steps <1>2--<1>4 establish all three required properties.
+::: pf-proof
+Steps [](#n-normal){.pf-ref}, [](#n-subset-h){.pf-ref} and [](#index-bound){.pf-ref} establish all three required properties.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the desired conclusion.
 :::
+
+::: pf-qed
+Step [](#conclusion){.pf-ref} is the desired conclusion.
+:::
+
+:::
+
 :::

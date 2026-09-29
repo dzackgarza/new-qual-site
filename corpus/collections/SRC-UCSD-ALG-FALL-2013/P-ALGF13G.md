@@ -37,8 +37,13 @@ K^{\mathrm{ab}} = \{\alpha \in L \mid K[\alpha]/K \text{ is Galois and } \mathrm
 :::
 
 ::: {.solution}
-<1>1. If \(K\subseteq E\subseteq L\), \(E/K\) is Galois, and \(\operatorname{Gal}(E/K)\) is abelian, then every \(\alpha\in E\) belongs to \(K^{\mathrm{ab}}\).
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #part-a-e-subset-kab}
+If \(K\subseteq E\subseteq L\), \(E/K\) is Galois, and \(\operatorname{Gal}(E/K)\) is abelian, then every \(\alpha\in E\) belongs to \(K^{\mathrm{ab}}\).
+
+::: pf-proof
 Fix \(\alpha\in E\) and set
 \[
 M:=K[\alpha].
@@ -63,8 +68,12 @@ E\subseteq K^{\mathrm{ab}}.
 \]
 :::
 
-<1>2. The compositum of two finite abelian Galois subextensions of \(L/K\) is again a finite abelian Galois subextension.
-::: {.proof}
+:::
+
+::: {.pf-step #compositum-abelian-galois}
+The compositum of two finite abelian Galois subextensions of \(L/K\) is again a finite abelian Galois subextension.
+
+::: pf-proof
 Let \(E/K\) and \(F/K\) be finite Galois extensions contained in \(L\), with both Galois groups abelian.
 Because finite Galois extensions are splitting fields of separable polynomials, choose separable polynomials \(f,g\in K[x]\) such that \(E\) and \(F\) are their splitting fields.
 Then the compositum
@@ -91,8 +100,12 @@ and is consequently abelian.
 Since \(E,F\subseteq L\) and \(L\) is a field, also \(EF\subseteq L\).
 :::
 
-<1>3. The set \(K^{\mathrm{ab}}\) contains \(K\) and is closed under addition, subtraction, and multiplication.
-::: {.proof}
+:::
+
+::: {.pf-step #kab-closed-under-arithmetic}
+The set \(K^{\mathrm{ab}}\) contains \(K\) and is closed under addition, subtraction, and multiplication.
+
+::: pf-proof
 If \(a\in K\), then
 \[
 K[a]=K,
@@ -111,8 +124,8 @@ E:=K[\alpha],
 F:=K[\beta].
 \]
 By definition, \(E/K\) and \(F/K\) are finite Galois with abelian Galois groups.
-By <1>2, \(EF/K\) is finite Galois and abelian.
-Part (a), proved in <1>1, then gives
+By step [](#compositum-abelian-galois){.pf-ref}, \(EF/K\) is finite Galois and abelian.
+Part (a), proved in step [](#part-a-e-subset-kab){.pf-ref}, then gives
 \[
 EF\subseteq K^{\mathrm{ab}}.
 \]
@@ -128,24 +141,40 @@ Since
 all three elements lie in \(K^{\mathrm{ab}}\).
 :::
 
-<1>4. The set \(K^{\mathrm{ab}}\) is closed under inverses of nonzero elements.
-::: {.proof}
+:::
+
+::: {.pf-step #kab-closed-under-inverses}
+The set \(K^{\mathrm{ab}}\) is closed under inverses of nonzero elements.
+
+::: pf-proof
 Let \(0\neq\alpha\in K^{\mathrm{ab}}\).
 Then
 \[
 E:=K[\alpha]
 \]
-is a field contained in \(K^{\mathrm{ab}}\) by <1>1, applied to the abelian Galois extension \(E/K\).
+is a field contained in \(K^{\mathrm{ab}}\) by step [](#part-a-e-subset-kab){.pf-ref}, applied to the abelian Galois extension \(E/K\).
 Since \(\alpha^{-1}\in E\), it follows that
 \[
 \alpha^{-1}\in K^{\mathrm{ab}}.
 \]
 :::
 
-<1>5. Therefore \(K^{\mathrm{ab}}\) is a subfield of \(L\).
-::: {.proof}
+:::
+
+::: {.pf-step #part-b-subfield}
+Therefore \(K^{\mathrm{ab}}\) is a subfield of \(L\).
+
+::: pf-proof
 By definition \(K^{\mathrm{ab}}\subseteq L\).
-By <1>3 it contains \(K\) and is closed under addition, subtraction, and multiplication, and by <1>4 it is closed under inverses of nonzero elements.
+By step [](#kab-closed-under-arithmetic){.pf-ref} it contains \(K\) and is closed under addition, subtraction, and multiplication, and by step [](#kab-closed-under-inverses){.pf-ref} it is closed under inverses of nonzero elements.
 Hence it is a subfield of \(L\).
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-e-subset-kab){.pf-ref} answers part (a), and step [](#part-b-subfield){.pf-ref} answers part (b).
+:::
+
 :::
 :::

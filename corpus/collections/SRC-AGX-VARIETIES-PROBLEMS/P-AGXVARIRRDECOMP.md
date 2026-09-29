@@ -59,9 +59,12 @@ different $X_j$. These subsets are the irreducible components of $X$.
 Uniqueness means uniqueness of the collection of components, without an
 ordering. The empty set has the empty decomposition.
 
-<1>1. The affine space $\AA^n_k$ is a Noetherian topological space.
+::: pf
 
-::: {.proof}
+::: {.pf-step #an-noetherian}
+The affine space $\AA^n_k$ is a Noetherian topological space.
+
+::: pf-proof
 Let
 $$
 Y_1\supseteq Y_2\supseteq\cdots
@@ -84,13 +87,16 @@ for every closed $Y_i$, the original chain of closed subsets also stabilizes.
 Thus $\AA^n_k$ is Noetherian.
 :::
 
-<1>2. Every Zariski-closed subset of $\AA^n_k$ is a finite union of
+:::
+
+::: {.pf-step #finite-irreducible-decomposition}
+Every Zariski-closed subset of $\AA^n_k$ is a finite union of
 irreducible Zariski-closed subsets.
 
-::: {.proof}
+::: pf-proof
 Suppose otherwise. Among the closed subsets that admit no such finite
 decomposition, choose one minimal under inclusion; this is possible by the
-descending chain condition from step <1>1. Call it $Y$.
+descending chain condition from step [](#an-noetherian){.pf-ref}. Call it $Y$.
 
 The set $Y$ is nonempty, because the empty set is the empty finite union. It
 is not irreducible, because otherwise $Y$ itself would be a one-term
@@ -109,10 +115,13 @@ a contradiction.
 Therefore every closed subset admits a finite irreducible decomposition.
 :::
 
-<1>3. Every finite irreducible decomposition can be reduced to one in which
+:::
+
+::: {.pf-step #noncontainment-reduction}
+Every finite irreducible decomposition can be reduced to one in which
 no member is contained in another.
 
-::: {.proof}
+::: pf-proof
 Starting from a finite decomposition
 $$
 X=Y_1\union\cdots\union Y_s,
@@ -123,7 +132,10 @@ finitely many members, this process terminates and leaves a finite
 decomposition in which no distinct member contains another.
 :::
 
-<1>4. If an irreducible subset $T$ is contained in a finite union of closed
+:::
+
+::: {.pf-step #irreducible-subset-in-union}
+If an irreducible subset $T$ is contained in a finite union of closed
 sets
 $$
 C_1\union\cdots\union C_s,
@@ -134,7 +146,7 @@ T\subseteq C_j
 $$
 for some $j$.
 
-::: {.proof}
+::: pf-proof
 Inside the irreducible space $T$,
 $$
 T=(T\intersect C_1)\union\cdots\union(T\intersect C_s)
@@ -144,9 +156,12 @@ of the two closed subsets is all of $T$. Induction on $s$ gives the same
 conclusion for any finite number of closed subsets.
 :::
 
-<1>5. A decomposition satisfying the noncontainment condition is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #decomposition-unique}
+A decomposition satisfying the noncontainment condition is unique.
+
+::: pf-proof
 Suppose
 $$
 X=X_1\union\cdots\union X_r
@@ -161,11 +176,11 @@ Fix $i$. Since
 $$
 X_i\subseteq Y_1\union\cdots\union Y_s,
 $$
-step <1>4 gives
+step [](#irreducible-subset-in-union){.pf-ref} gives
 $$
 X_i\subseteq Y_j
 $$
-for some $j$. Applying step <1>4 to
+for some $j$. Applying step [](#irreducible-subset-in-union){.pf-ref} to
 $$
 Y_j\subseteq X_1\union\cdots\union X_r
 $$
@@ -187,10 +202,13 @@ among the $X_i$. The two decompositions therefore have exactly the same
 members.
 :::
 
-<1>6. The members of this unique decomposition are exactly the maximal
+:::
+
+::: {.pf-step #members-are-irreducible-components}
+The members of this unique decomposition are exactly the maximal
 irreducible closed subsets of $X$.
 
-::: {.proof}
+::: pf-proof
 Let $X_i$ be a member and suppose
 $$
 X_i\subseteq Z\subseteq X
@@ -199,7 +217,7 @@ with $Z$ irreducible and closed. Since
 $$
 Z\subseteq X_1\union\cdots\union X_r,
 $$
-step <1>4 gives
+step [](#irreducible-subset-in-union){.pf-ref} gives
 $$
 Z\subseteq X_j
 $$
@@ -210,16 +228,19 @@ $$
 so the noncontainment condition gives $j=i$, and hence $Z=X_i$. Thus every
 $X_i$ is maximal irreducible.
 
-Conversely, step <1>4 shows that every irreducible closed subset of $X$ is
+Conversely, step [](#irreducible-subset-in-union){.pf-ref} shows that every irreducible closed subset of $X$ is
 contained in some $X_i$, so every maximal irreducible closed subset is one of
 the $X_i$.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove existence of a finite decomposition with the required
-noncontainment property, step <1>5 proves uniqueness, and step <1>6 identifies
+::: pf-qed
+Steps [](#an-noetherian){.pf-ref}, [](#finite-irreducible-decomposition){.pf-ref} and [](#noncontainment-reduction){.pf-ref} prove existence of a finite decomposition with the required
+noncontainment property, step [](#decomposition-unique){.pf-ref} proves uniqueness, and step [](#members-are-irreducible-components){.pf-ref} identifies
 the members as the irreducible components.
 :::
+
+:::
+
 :::

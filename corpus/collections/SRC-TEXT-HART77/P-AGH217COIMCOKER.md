@@ -31,14 +31,18 @@ Let $\varphi: \mcf \to \mcg$ be a morphism of sheaves.
 :::
 
 ::: {.solution}
-<1>1. The morphism $\varphi:\mcf\to\mcg$ factors canonically as
+
+::: pf
+
+::: {.pf-step #varphi-factors-through-quotient}
+The morphism $\varphi:\mcf\to\mcg$ factors canonically as
 $$
 \mcf\xrightarrow{q}\mcf/\ker\varphi
 \xrightarrow{\bar\varphi}\im\varphi
 \hookrightarrow\mcg.
 $$
 
-::: {.proof}
+::: pf-proof
 The kernel subsheaf $\ker\varphi\subseteq\mcf$ is annihilated by $\varphi$.
 By the universal property of the quotient sheaf, $\varphi$ therefore induces a unique morphism
 $$
@@ -51,13 +55,16 @@ $$
 This gives the displayed factorization.
 :::
 
-<1>2. The induced morphism
+:::
+
+::: {.pf-step #quotient-iso-image}
+The induced morphism
 $$
 \boxed{\mcf/\ker\varphi\xrightarrow{\sim}\im\varphi}
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
 At a point $x\in X$, the stalk of the quotient is
 $$
 (\mcf/\ker\varphi)_x
@@ -79,12 +86,15 @@ Hence $\bar\varphi$ is an isomorphism on every stalk and therefore an isomorphis
 This proves part (a).
 :::
 
-<1>3. By definition, the cokernel sheaf of $\varphi$ is the cokernel of the inclusion
+:::
+
+::: {.pf-step #cokernel-is-cokernel-of-image-inclusion}
+By definition, the cokernel sheaf of $\varphi$ is the cokernel of the inclusion
 $$
 \im\varphi\hookrightarrow\mcg.
 $$
 
-::: {.proof}
+::: pf-proof
 The cokernel of a morphism of sheaves is obtained by sheafifying the presheaf cokernel.
 Since the morphism
 $$
@@ -94,13 +104,16 @@ is injective, its cokernel is precisely the quotient sheaf of $\mcg$ by the subs
 The original map $\varphi$ and the inclusion of its image have the same cokernel, because the map $\mcf\to\mcg$ factors through $\im\varphi$ and has image exactly that subsheaf.
 :::
 
-<1>4. There is a canonical isomorphism
+:::
+
+::: {.pf-step #cokernel-iso-quotient}
+There is a canonical isomorphism
 $$
 \boxed{\coker\varphi\cong\mcg/\im\varphi}.
 $$
 
-::: {.proof}
-By step <1>3, the cokernel fits into the short exact sequence
+::: pf-proof
+By step [](#cokernel-is-cokernel-of-image-inclusion){.pf-ref}, the cokernel fits into the short exact sequence
 $$
 \im\varphi\longrightarrow\mcg\longrightarrow\coker\varphi\longrightarrow0.
 $$
@@ -112,9 +125,12 @@ $$
 This proves part (b).
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>4 prove part (b).
 :::
+
+::: pf-qed
+Steps [](#varphi-factors-through-quotient){.pf-ref} and [](#quotient-iso-image){.pf-ref} prove part (a), and steps [](#cokernel-is-cokernel-of-image-inclusion){.pf-ref} and [](#cokernel-iso-quotient){.pf-ref} prove part (b).
+:::
+
+:::
+
 :::

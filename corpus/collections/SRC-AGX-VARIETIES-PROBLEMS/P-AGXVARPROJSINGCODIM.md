@@ -67,14 +67,17 @@ X_i=X\intersect U_i.
 $$
 The nonempty $X_i$ are affine varieties and cover $X$.
 
-<1>1. For every $i$,
+::: pf
+
+::: {.pf-step #sing-intersect-chart}
+For every $i$,
 $$
 \operatorname{Sing}(X)\intersect X_i
 =
 \operatorname{Sing}(X_i).
 $$
 
-::: {.proof}
+::: pf-proof
 Smoothness and regularity are local properties. The open immersion
 $$
 X_i\hookrightarrow X
@@ -84,13 +87,16 @@ ring of $X$ at $p$. Hence $p$ is smooth in $X_i$ exactly when it is smooth
 in $X$, giving the displayed identity.
 :::
 
-<1>2. For every nonempty affine chart $X_i$, the subset
+:::
+
+::: {.pf-step #chart-sing-proper-closed}
+For every nonempty affine chart $X_i$, the subset
 $$
 \operatorname{Sing}(X_i)
 $$
 is a proper Zariski-closed subset of $X_i$.
 
-::: {.proof}
+::: pf-proof
 For an affine variety over an algebraically closed field, the regular locus
 is a nonempty Zariski-open subset; equivalently the singular locus is proper
 and closed [@Har10a, Theorem I.5.3]; the proof uses the Jacobian criterion
@@ -99,14 +105,17 @@ and closed [@Har10a, Theorem I.5.3]; the proof uses the Jacobian criterion
 Applying that theorem to the affine variety $X_i$ gives the assertion.
 :::
 
-<1>3. The singular locus
+:::
+
+::: {.pf-step #sing-closed}
+The singular locus
 $$
 \operatorname{Sing}(X)
 $$
 is Zariski closed in $X$.
 
-::: {.proof}
-By step <1>1 and step <1>2, for every chart $X_i$ the intersection
+::: pf-proof
+By step [](#sing-intersect-chart){.pf-ref} and step [](#chart-sing-proper-closed){.pf-ref}, for every chart $X_i$ the intersection
 $$
 \operatorname{Sing}(X)\intersect X_i
 $$
@@ -118,23 +127,29 @@ $$
 is open in $X$, so $\operatorname{Sing}(X)$ is closed.
 :::
 
-<1>4. The singular locus is a proper subset of $X$.
+:::
 
-::: {.proof}
-Since $X$ is nonempty, at least one chart $X_i$ is nonempty. By step <1>2,
-that chart contains a smooth point. Step <1>1 says that this point is smooth
+::: {.pf-step #sing-proper}
+The singular locus is a proper subset of $X$.
+
+::: pf-proof
+Since $X$ is nonempty, at least one chart $X_i$ is nonempty. By step [](#chart-sing-proper-closed){.pf-ref},
+that chart contains a smooth point. Step [](#sing-intersect-chart){.pf-ref} says that this point is smooth
 in $X$ as well. Hence
 $$
 \operatorname{Sing}(X)\ne X.
 $$
-Together with step <1>3, this proves that the singular locus is proper
+Together with step [](#sing-closed){.pf-ref}, this proves that the singular locus is proper
 Zariski closed.
 :::
 
-<1>5. Assume now that $X$ is normal. Every codimension-one point of $X$ is
+:::
+
+::: {.pf-step #codim-one-smooth}
+Assume now that $X$ is normal. Every codimension-one point of $X$ is
 smooth.
 
-::: {.proof}
+::: pf-proof
 Let $\eta$ be the generic point of an irreducible closed subset of
 codimension one. Then
 $$
@@ -150,14 +165,17 @@ smoothness for varieties over $k$ by [[T-MORSMREG]]. Therefore $\eta$ is a
 smooth point of $X$.
 :::
 
-<1>6. If $X$ is normal, every irreducible component $Z$ of
+:::
+
+::: {.pf-step #codim-bound}
+If $X$ is normal, every irreducible component $Z$ of
 $\operatorname{Sing}(X)$ has
 $$
 \boxed{\codim(Z,X)\geq2.}
 $$
 
-::: {.proof}
-By step <1>4, the singular locus is a proper closed subset, so every
+::: pf-proof
+By step [](#sing-proper){.pf-ref}, the singular locus is a proper closed subset, so every
 irreducible component has positive codimension.
 
 Suppose some component $Z$ had codimension one, and let $\eta_Z$ be its
@@ -166,15 +184,18 @@ locus is closed,
 $$
 \eta_Z\in\operatorname{Sing}(X).
 $$
-But step <1>5 says every codimension-one point is smooth, a contradiction.
+But step [](#codim-one-smooth){.pf-ref} says every codimension-one point is smooth, a contradiction.
 Thus codimension one cannot occur, and every component has codimension at
 least two.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove that the singular locus is proper Zariski closed.
-Steps <1>5--<1>6 prove the codimension bound under normality.
 :::
+
+::: pf-qed
+Steps [](#sing-intersect-chart){.pf-ref}, [](#chart-sing-proper-closed){.pf-ref}, [](#sing-closed){.pf-ref} and [](#sing-proper){.pf-ref} prove that the singular locus is proper Zariski closed.
+Steps [](#codim-one-smooth){.pf-ref} and [](#codim-bound){.pf-ref} prove the codimension bound under normality.
+:::
+
+:::
+
 :::

@@ -26,33 +26,58 @@ What is $H_1(X; \mathbb{Z})$?
 :::
 
 ::: {.solution}
-<1>1. $H_1(X_n) = \ZZ$ for each $n$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+$H_1(X_n) = \ZZ$ for each $n$.
+
+::: pf-proof
 The union of $C_k$ with the bottom circle of $C_{k+1}$ is the mapping cylinder of the degree-$k$ attaching map $S^1\to S^1$. A mapping cylinder deformation retracts onto its target, regardless of whether the attaching map is a homotopy equivalence. Iterating these retractions collapses the finite telescope $X_n$ onto the terminal circle in $C_n$. Hence $X_n\simeq S^1$ and $H_1(X_n)\cong\ZZ$.
 :::
 
-<1>2. The inclusion $X_n \hookrightarrow X_{n+1}$ induces on $H_1$ the map $\ZZ \to \ZZ$ given by multiplication by $n$.
-::: {.proof}
+:::
+
+::: pf-step
+The inclusion $X_n \hookrightarrow X_{n+1}$ induces on $H_1$ the map $\ZZ \to \ZZ$ given by multiplication by $n$.
+
+::: pf-proof
 the inclusion of $X_n$ into $X_{n+1}$ sends the generator of $H_1(X_n)$ (the core circle of $C_n$) to the core circle of $C_{n+1}$ via the gluing map of degree $n$, so the induced map is multiplication by $n$.
 :::
 
-<1>3. $H_1(X) = \varinjlim H_1(X_n)$.
-::: {.proof}
+:::
+
+::: {.pf-step #h1-is-direct-limit}
+$H_1(X) = \varinjlim H_1(X_n)$.
+
+::: pf-proof
 homology commutes with direct limits (filtered colimits) of spaces.
 :::
 
-<1>4. The direct limit of the system $\ZZ \xrightarrow{1} \ZZ \xrightarrow{2} \ZZ \xrightarrow{3} \ZZ \xrightarrow{4} \cdots$ is $\QQ$.
-::: {.proof}
+:::
+
+::: {.pf-step #direct-limit-is-q}
+The direct limit of the system $\ZZ \xrightarrow{1} \ZZ \xrightarrow{2} \ZZ \xrightarrow{3} \ZZ \xrightarrow{4} \cdots$ is $\QQ$.
+
+::: pf-proof
 the direct limit of $\ZZ \xrightarrow{\cdot n} \ZZ$ over all $n$ is the localization of $\ZZ$ at all nonzero integers, i.e. $\QQ$ (every element is a fraction $a/b$ with $b$ a product of the gluing degrees).
 :::
 
-<1>5. Hence $H_1(X;\ZZ) = \QQ$.
-::: {.proof}
-<1>3 and <1>4.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+::: {.pf-step #h1-equals-q}
+Hence $H_1(X;\ZZ) = \QQ$.
+
+::: pf-proof
+Step [](#h1-is-direct-limit){.pf-ref} and step [](#direct-limit-is-q){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#h1-equals-q){.pf-ref}.
+:::
+
+:::
+
 :::

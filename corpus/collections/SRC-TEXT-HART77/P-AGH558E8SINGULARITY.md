@@ -70,10 +70,13 @@ If $\tilde{X}$ is the resulting nonsingular surface, then the inverse image of $
 :::
 
 ::: {.solution}
-<1>1. Part (a): $A$ is a noetherian domain, and $z$ is a prime element of
+::: pf
+
+::: {.pf-step #z-is-prime}
+Part (a): $A$ is a noetherian domain, and $z$ is a prime element of
 $A$.
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 F=x^2+y^3+z^5.
@@ -120,7 +123,10 @@ is impossible because its $y$-adic valuation is $3$. Thus $A/(z)$ is a
 domain, so $(z)$ is prime in $A$. In particular $z$ is irreducible.
 :::
 
-<1>2. Part (a): with
+:::
+
+::: {.pf-step #coordinate-change-ufd}
+Part (a): with
 $$
 t=z^{-1},
 \qquad
@@ -137,7 +143,7 @@ $$
 \boxed{A[z^{-1}]=k[u,v,t^{-1}].}
 $$
 
-::: {.proof}
+::: pf-proof
 In $A[z^{-1}]$ the defining equation gives
 $$
 u^2+v^3
@@ -205,14 +211,17 @@ algebraically independent.
 This is a localization of the polynomial UFD $k[u,v]$, hence is a UFD.
 :::
 
-<1>3. Part (a): $A$ is a unique factorization domain.
+:::
 
-::: {.proof}
-We use the prime element $z$ from step <1>1 and the UFD
+::: {.pf-step #a-is-ufd}
+Part (a): $A$ is a unique factorization domain.
+
+::: pf-proof
+We use the prime element $z$ from step [](#z-is-prime){.pf-ref} and the UFD
 $$
 A[z^{-1}]
 $$
-from step <1>2.
+from step [](#coordinate-change-ufd){.pf-ref}.
 
 Because $A$ is noetherian, every nonzero nonunit of $A$ factors into
 irreducibles. It remains to prove that every irreducible of $A$ is prime.
@@ -267,10 +276,13 @@ Therefore every irreducible of $A$ is prime. Since $A$ is atomic, $A$ is
 a UFD.
 :::
 
-<1>4. Part (b): after the first blowup, the only singular point of the
+:::
+
+::: {.pf-step #first-blowup-singular-locus}
+Part (b): after the first blowup, the only singular point of the
 strict transform lies on one exceptional line $E_1$.
 
-::: {.proof}
+::: pf-proof
 Blow up the origin of
 $$
 X:\quad x^2+y^3+z^5=0.
@@ -331,14 +343,17 @@ Away from the exceptional divisor the blowup is an isomorphism, so this
 is the only singular point of the first strict transform.
 :::
 
-<1>5. After the second blowup, the reduced exceptional locus is
+:::
+
+::: {.pf-step #second-blowup-singular-locus}
+After the second blowup, the reduced exceptional locus is
 $$
 E_1\cup E_2,
 $$
 and its unique singular point is $E_1\cap E_2$.
 
-::: {.proof}
-Rename the coordinates in the singular chart of step <1>4 as
+::: pf-proof
+Rename the coordinates in the singular chart of step [](#first-blowup-singular-locus){.pf-ref} as
 $$
 x,y,z,
 $$
@@ -383,13 +398,16 @@ E_1\cap E_2.
 $$
 :::
 
-<1>6. The third blowup separates $E_1$ and $E_2$, introduces a projective
+:::
+
+::: {.pf-step #third-blowup-two-points}
+The third blowup separates $E_1$ and $E_2$, introduces a projective
 line $E_3$, and leaves exactly two singular points: an ordinary double
 point at $E_1\cap E_3$ and a point with local equation
 $X^2+zY(Y+z)=0$ at $E_2\cap E_3$.
 
-::: {.proof}
-Rename the coordinates in step <1>5 as $x,y,z$, so
+::: pf-proof
+Rename the coordinates in step [](#second-blowup-singular-locus){.pf-ref} as $x,y,z$, so
 $$
 X_2:\quad x^2+y^2z+yz^3=0.
 $$
@@ -442,10 +460,13 @@ $$
 with the two displayed intersection points still singular.
 :::
 
-<1>7. Blowing up the ordinary double point $E_1\cap E_3$ once resolves
+:::
+
+::: {.pf-step #resolve-ordinary-double-point-e1e3}
+Blowing up the ordinary double point $E_1\cap E_3$ once resolves
 that point and inserts a projective line $E_4$ between $E_1$ and $E_3$.
 
-::: {.proof}
+::: pf-proof
 At this point the local equation has quadratic tangent cone
 $$
 X^2+yZ=0,
@@ -471,12 +492,15 @@ E_1-E_4-E_3.
 $$
 :::
 
-<1>8. Blowing up the point $E_2\cap E_3$ with local equation
+:::
+
+::: {.pf-step #e5-three-double-points}
+Blowing up the point $E_2\cap E_3$ with local equation
 $X^2+zY(Y+z)=0$ introduces a projective line $E_5$ carrying exactly
 three ordinary double points.
 
-::: {.proof}
-Use the exact local equation from step <1>6:
+::: pf-proof
+Use the exact local equation from step [](#third-blowup-two-points){.pf-ref}:
 $$
 X^2+zY(Y+z)=0.
 $$
@@ -537,15 +561,18 @@ point $V=0$ is where the strict transform of $E_2$ meets $E_5$, and the
 third point is a free point of $E_5$.
 :::
 
-<1>9. Three further blowups resolve the three ordinary double points on
+:::
+
+::: {.pf-step #resolve-remaining-three-points}
+Three further blowups resolve the three ordinary double points on
 $E_5$ and produce projective lines $E_6,E_7,E_8$.
 
-::: {.proof}
+::: pf-proof
 Blow up the ordinary double point
 $$
 E_2\cap E_5.
 $$
-As in step <1>7, this resolves that point and inserts a smooth conic
+As in step [](#resolve-ordinary-double-point-e1e3){.pf-ref}, this resolves that point and inserts a smooth conic
 $$
 E_6\cong\PP^1
 $$
@@ -573,10 +600,13 @@ three points are distinct. Therefore after these three blowups the strict
 transform is nonsingular.
 :::
 
-<1>10. The resolution uses exactly eight successive point blowups, and
+:::
+
+::: {.pf-step #eight-blowups-e8-diagram}
+The resolution uses exactly eight successive point blowups, and
 the reduced inverse image of $P$ has dual graph $\mathbf E_8$.
 
-::: {.proof}
+::: pf-proof
 The number of blowups is
 $$
 3+1+1+3=8:
@@ -616,11 +646,13 @@ $$
 which is the Dynkin diagram $\mathbf E_8$.
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove part (a). Steps <1>4--<1>10 give the eight
+::: pf-qed
+Steps [](#z-is-prime){.pf-ref}, [](#coordinate-change-ufd){.pf-ref} and [](#a-is-ufd){.pf-ref} prove part (a). Steps [](#first-blowup-singular-locus){.pf-ref}, [](#second-blowup-singular-locus){.pf-ref}, [](#third-blowup-two-points){.pf-ref}, [](#resolve-ordinary-double-point-e1e3){.pf-ref}, [](#e5-three-double-points){.pf-ref}, [](#resolve-remaining-three-points){.pf-ref} and [](#eight-blowups-e8-diagram){.pf-ref} give the eight
 successive blowups, prove smoothness after the eighth, and identify the
 exceptional incidence graph required in part (b).
+:::
+
 :::
 :::

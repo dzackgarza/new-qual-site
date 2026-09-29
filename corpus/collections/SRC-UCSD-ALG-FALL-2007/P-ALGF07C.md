@@ -33,8 +33,13 @@ Let $\phi: \mathbb{C}[x] \to F$ be a ring homomorphism where $F$ is a field and 
 :::
 
 ::: {.solution}
-<1>1. There is a non-surjective example.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #nonsurjective-example}
+There is a non-surjective example.
+
+::: pf-proof
 Take
 \[
 F=\mathbb C(x),
@@ -52,8 +57,12 @@ The map is not surjective, since
 is not a polynomial and hence does not lie in the image.
 :::
 
-<1>2. For any such homomorphism, $\phi(1)=1_F$ and the restriction of $\phi$ to $\mathbb C$ is injective.
-::: {.proof}
+:::
+
+::: pf-step
+For any such homomorphism, $\phi(1)=1_F$ and the restriction of $\phi$ to $\mathbb C$ is injective.
+
+::: pf-proof
 Since
 \[
 \phi(1)^2=\phi(1),
@@ -72,8 +81,12 @@ is a nonzero ring homomorphism from a field.
 Its kernel is therefore the zero ideal, so it is injective.
 :::
 
-<1>3. If $\phi$ is surjective, then $F\cong\mathbb C$.
-::: {.proof}
+:::
+
+::: {.pf-step #onto-implies-c}
+If $\phi$ is surjective, then $F\cong\mathbb C$.
+
+::: pf-proof
 If $\phi$ is onto, the first isomorphism theorem gives
 \[
 F\cong \mathbb C[x]/\ker\phi.
@@ -90,5 +103,13 @@ Therefore, for some $a\in\mathbb C$,
 F\cong\mathbb C[x]/(x-a)\cong\mathbb C,
 \]
 where the last isomorphism is evaluation at $a$.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#nonsurjective-example){.pf-ref} and [](#onto-implies-c){.pf-ref} answer parts (a) and (b).
+:::
+
 :::
 :::

@@ -27,17 +27,20 @@ Let a finite group $G$ act transitively on a set $X$ with $|X|\ge2$. Prove that 
 :::
 
 ::: {.solution}
+
 For $g\in G$, let
 $$
 \operatorname{Fix}(g)=\{x\in X:g x=x\}.
 $$
 
-<1>1.
+::: pf
+
+::: {.pf-step #double-count-fixed-points}
 $$
 \sum_{g\in G}\abs{\operatorname{Fix}(g)}=\abs{G}.
 $$
 
-::: {.proof}
+::: pf-proof
 Count the set
 $$
 S=\{(g,x)\in G\times X:g x=x\}
@@ -65,12 +68,15 @@ $$
 $$
 :::
 
-<1>2. Some element $g\in G$ satisfies
+:::
+
+::: {.pf-step #element-with-no-fixed-point}
+Some element $g\in G$ satisfies
 $$
 \abs{\operatorname{Fix}(g)}=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose instead that every element of $G$ fixed at least one point. The
 identity element fixes every point, so
 $$
@@ -87,12 +93,15 @@ $$
 =
 \abs{G}+1,
 $$
-contradicting step <1>1. Thus at least one element has no fixed point.
+contradicting step [](#double-count-fixed-points){.pf-ref}. Thus at least one element has no fixed point.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-The element supplied by step <1>2 is the required derangement.
 :::
+
+::: pf-qed
+The element supplied by step [](#element-with-no-fixed-point){.pf-ref} is the required derangement.
+:::
+
+:::
+
 :::

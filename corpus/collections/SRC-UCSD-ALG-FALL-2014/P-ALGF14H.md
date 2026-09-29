@@ -41,7 +41,10 @@ Prove that $g(\alpha_i+\alpha_j) = 0$ for any $1 \leq i < j \leq n$.
 ::: {.solution}
 Because the roots are algebraic, we write \(F(\alpha_1,\alpha_2)\) for the field denoted \(F[\alpha_1,\alpha_2]\) in the statement.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #tower-degrees}
+One has
 \[
 [F(\alpha_1):F]=n
 \]
@@ -49,7 +52,8 @@ and
 \[
 [F(\alpha_1,\alpha_2):F(\alpha_1)]=n-1.
 \]
-::: {.proof}
+
+::: pf-proof
 Since \(\alpha_1\) is a root of the degree-\(n\) polynomial \(f\),
 \[
 [F(\alpha_1):F]\le n.
@@ -74,14 +78,18 @@ The two factors on the right are at most \(n-1\) and \(n\), respectively, while 
 Therefore both bounds are equalities.
 :::
 
-<1>2. The polynomial \(f\) is irreducible over \(F\), and
+:::
+
+::: {.pf-step #part-i-irreducibility}
+The polynomial \(f\) is irreducible over \(F\), and
 \[
 \frac{f(x)}{x-\alpha_1}
 \]
 is irreducible over \(F(\alpha_1)\).
-::: {.proof}
+
+::: pf-proof
 Let \(m_1(x)\) be the minimal polynomial of \(\alpha_1\) over \(F\).
-It divides \(f\), and by <1>1,
+It divides \(f\), and by step [](#tower-degrees){.pf-ref},
 \[
 \deg m_1=[F(\alpha_1):F]=n=\deg f.
 \]
@@ -92,7 +100,7 @@ It divides
 \[
 \frac{f(x)}{x-\alpha_1},
 \]
-and by <1>1,
+and by step [](#tower-degrees){.pf-ref},
 \[
 \deg m_2
 =[F(\alpha_1,\alpha_2):F(\alpha_1)]
@@ -101,12 +109,16 @@ and by <1>1,
 The quotient \(f(x)/(x-\alpha_1)\) also has degree \(n-1\), so it is a nonzero scalar multiple of \(m_2\), hence irreducible over \(F(\alpha_1)\).
 :::
 
-<1>3. For every \(j\) with \(2\le j\le n\),
+:::
+
+::: pf-step
+For every \(j\) with \(2\le j\le n\),
 \[
 g(\alpha_1+\alpha_j)=0.
 \]
-::: {.proof}
-By <1>2, the minimal polynomial of \(\alpha_2\) over \(F(\alpha_1)\) is, up to a nonzero scalar,
+
+::: pf-proof
+By step [](#part-i-irreducibility){.pf-ref}, the minimal polynomial of \(\alpha_2\) over \(F(\alpha_1)\) is, up to a nonzero scalar,
 \[
 \frac{f(x)}{x-\alpha_1}.
 \]
@@ -135,9 +147,13 @@ and the coefficients of \(g\) lie in \(F\), applying \(\sigma_j\) gives
 \]
 :::
 
-<1>4. The finite extension \(F(\alpha_1,\alpha_2)/F\) is separable and has exactly \(n(n-1)\) \(F\)-embeddings into an algebraic closure of \(F\).
-::: {.proof}
-By <1>2, \(f\) is the minimal polynomial of \(\alpha_1\) up to a scalar.
+:::
+
+::: {.pf-step #separable-tower}
+The finite extension \(F(\alpha_1,\alpha_2)/F\) is separable and has exactly \(n(n-1)\) \(F\)-embeddings into an algebraic closure of \(F\).
+
+::: pf-proof
+By step [](#part-i-irreducibility){.pf-ref}, \(f\) is the minimal polynomial of \(\alpha_1\) up to a scalar.
 The polynomial \(f\) has \(n\) distinct roots by hypothesis, so \(\alpha_1\) is separable over \(F\).
 Likewise, the minimal polynomial of \(\alpha_2\) over \(F(\alpha_1)\) is proportional to
 \[
@@ -153,7 +169,10 @@ is separable.
 Its degree is \(n(n-1)\) by hypothesis, so it has exactly \(n(n-1)\) \(F\)-embeddings into an algebraic closure.
 :::
 
-<1>5. For every ordered pair \((i,j)\) with \(i\neq j\), there is an \(F\)-embedding
+:::
+
+::: {.pf-step #every-pair-realized}
+For every ordered pair \((i,j)\) with \(i\neq j\), there is an \(F\)-embedding
 \[
 \sigma_{ij}:F(\alpha_1,\alpha_2)\longrightarrow E
 \]
@@ -163,7 +182,8 @@ such that
 \qquad
 \sigma_{ij}(\alpha_2)=\alpha_j.
 \]
-::: {.proof}
+
+::: pf-proof
 Let \(\sigma\) be any \(F\)-embedding of \(F(\alpha_1,\alpha_2)\) into an algebraic closure.
 Because \(f(\alpha_1)=0\) and \(\sigma\) fixes \(F\),
 \[
@@ -196,16 +216,20 @@ for some \(j\neq i\).
 Hence every embedding determines an ordered pair of distinct roots, and its image lies in \(E\).
 
 An embedding is completely determined by the images of the generators \(\alpha_1\) and \(\alpha_2\), so two embeddings giving the same ordered pair are equal.
-Thus the \(n(n-1)\) embeddings from <1>4 inject into the set of \(n(n-1)\) ordered pairs \((i,j)\) with \(i\neq j\).
+Thus the \(n(n-1)\) embeddings from step [](#separable-tower){.pf-ref} inject into the set of \(n(n-1)\) ordered pairs \((i,j)\) with \(i\neq j\).
 The two finite sets have the same cardinality, so every ordered pair occurs.
 :::
 
-<1>6. For all \(i\neq j\),
+:::
+
+::: {.pf-step #part-ii-all-sums}
+For all \(i\neq j\),
 \[
 g(\alpha_i+\alpha_j)=0.
 \]
-::: {.proof}
-Choose the embedding \(\sigma_{ij}\) from <1>5.
+
+::: pf-proof
+Choose the embedding \(\sigma_{ij}\) from step [](#every-pair-realized){.pf-ref}.
 Since
 \[
 g(\alpha_1+\alpha_2)=0
@@ -217,5 +241,13 @@ and \(g\in F[x]\), applying \(\sigma_{ij}\) gives
 =g(\alpha_i+\alpha_j).
 \]
 In particular this holds for every \(1\le i<j\le n\), as required.
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-i-irreducibility){.pf-ref} answers part (i), and step [](#part-ii-all-sums){.pf-ref} answers part (ii).
+:::
+
 :::
 :::

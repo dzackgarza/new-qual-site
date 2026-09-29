@@ -38,6 +38,7 @@ Prove that $f(z)=z$ for every $z\in\mathbb D$.
 :::
 
 ::: {.solution}
+
 Define the disk automorphism
 $$
 \phi_a(z)
@@ -45,12 +46,15 @@ $$
 \frac{z-a}{1-\overline a z}.
 $$
 
-<1>1. The map $\phi_a$ is a biholomorphic self-map of $\DD$ satisfying
+::: pf
+
+::: {.pf-step #phi-a-automorphism}
+The map $\phi_a$ is a biholomorphic self-map of $\DD$ satisfying
 $$
 \phi_a(a)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 This is the standard disk automorphism associated with $a\in\DD$. Direct
 substitution gives $\phi_a(a)=0$, and its inverse is
 $$
@@ -60,7 +64,10 @@ $$
 $$
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #g-fixes-origin}
+The map
 $$
 g
 \coloneqq
@@ -71,7 +78,7 @@ $$
 g(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Each map in the composition is holomorphic from $\DD$ to itself. Moreover,
 $$
 \phi_a^{-1}(0)=a,
@@ -87,7 +94,10 @@ g(0)
 $$
 :::
 
-<1>3. The point
+:::
+
+::: {.pf-step #c-nonzero-fixed-point}
+The point
 $$
 c\coloneqq\phi_a(b)
 $$
@@ -96,7 +106,7 @@ $$
 g(c)=c.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $a\neq b$ and $\phi_a$ is injective,
 $$
 c=\phi_a(b)\neq\phi_a(a)=0.
@@ -119,14 +129,17 @@ c.
 $$
 :::
 
-<1>4. The function $g$ is the identity on $\DD$.
+:::
 
-::: {.proof}
-By step <1>2, Schwarz's lemma applies:
+::: {.pf-step #g-is-identity}
+The function $g$ is the identity on $\DD$.
+
+::: pf-proof
+By step [](#g-fixes-origin){.pf-ref}, Schwarz's lemma applies:
 $$
 \abs{g(z)}\leq\abs z
 $$
-for every $z\in\DD$. Step <1>3 gives equality at the nonzero point $c$:
+for every $z\in\DD$. Step [](#c-nonzero-fixed-point){.pf-ref} gives equality at the nonzero point $c$:
 $$
 \abs{g(c)}
 =
@@ -143,10 +156,13 @@ $$
 and $c\neq0$, one has $\lambda=1$. Thus $g(z)=z$ on $\DD$.
 :::
 
-<1>5. The original map $f$ is the identity on $\DD$.
+:::
 
-::: {.proof}
-By step <1>4,
+::: {.pf-step #f-is-identity}
+The original map $f$ is the identity on $\DD$.
+
+::: pf-proof
+By step [](#g-is-identity){.pf-ref},
 $$
 \phi_a\circ f\circ\phi_a^{-1}
 =
@@ -160,9 +176,12 @@ f
 $$
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#f-is-identity){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

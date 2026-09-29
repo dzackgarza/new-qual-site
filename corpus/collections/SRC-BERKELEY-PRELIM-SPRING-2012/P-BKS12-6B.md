@@ -33,7 +33,10 @@ $$
 g(x)\coloneqq nf(x)\in\ZZ[x].
 $$
 
-<1>1. If integers $a$ and $b$ satisfy
+::: pf
+
+::: {.pf-step #congruence-preservation}
+If integers $a$ and $b$ satisfy
 $$
 a\equiv b\pmod n,
 $$
@@ -42,7 +45,7 @@ $$
 g(a)\equiv g(b)\pmod n.
 $$
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 g(x)=\sum_{k=0}^d c_kx^k,
@@ -61,44 +64,53 @@ for every $k\geq0$. Multiplying by the integer coefficients $c_k$ and
 summing yields the claim.
 :::
 
-<1>2. For every integer $m$, there are integers $q$ and $i$ such that
+:::
+
+::: {.pf-step #division-algorithm}
+For every integer $m$, there are integers $q$ and $i$ such that
 $$
 m=i+qn,
 \qquad
 0\leq i<n.
 $$
 
-::: {.proof}
+::: pf-proof
 This is the division algorithm applied to $m$ by the positive integer
 $n$. It applies equally to positive and negative integers $m$.
 :::
 
-<1>3. For $m,i$ as in step <1>2,
+:::
+
+::: {.pf-step #difference-divisible}
+For $m,i$ as in step [](#division-algorithm){.pf-ref},
 $$
 \frac{g(m)-g(i)}n
 \in
 \ZZ.
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+Step [](#division-algorithm){.pf-ref} gives
 $$
 m\equiv i\pmod n.
 $$
-By step <1>1,
+By step [](#congruence-preservation){.pf-ref},
 $$
 g(m)\equiv g(i)\pmod n.
 $$
 Thus $n$ divides $g(m)-g(i)$.
 :::
 
-<1>4. For every integer $m$,
+:::
+
+::: {.pf-step #f-integer-valued}
+For every integer $m$,
 $$
 \boxed{f(m)\in\ZZ}.
 $$
 
-::: {.proof}
-Choose $i$ as in step <1>2. Then
+::: pf-proof
+Choose $i$ as in step [](#division-algorithm){.pf-ref}. Then
 $$
 \begin{aligned}
 f(m)
@@ -118,12 +130,15 @@ The first term is an integer by the hypothesis because
 $$
 0\leq i<n,
 $$
-and the second is an integer by step <1>3.
+and the second is an integer by step [](#difference-divisible){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the required integer-valuedness at every integer.
 :::
+
+::: pf-qed
+Step [](#f-integer-valued){.pf-ref} proves the required integer-valuedness at every integer.
+:::
+
+:::
+
 :::

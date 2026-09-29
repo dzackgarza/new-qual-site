@@ -39,8 +39,13 @@ g. If $f: X \to Y$ is a morphism of finite type and $Y$ is noetherian, then $X$ 
 :::
 
 ::: {.solution}
-<1>1. A closed immersion is of finite type.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #closed-immersion-finite-type}
+A closed immersion is of finite type.
+
+::: pf-proof
 Let
 \[
 i:Z\hookrightarrow X
@@ -58,8 +63,12 @@ for some ideal $I\subseteq A$.
 The quotient $A/I$ is generated as an $A$-algebra by the image of $1$, indeed by no extra algebra generators at all.  Thus it is a finitely generated $A$-algebra.  Hartshorne II.3.3(b) shows that $i$ is of finite type.
 :::
 
-<1>2. An open immersion is locally of finite type.
-::: {.proof}
+:::
+
+::: {.pf-step #open-immersion-locally-finite-type}
+An open immersion is locally of finite type.
+
+::: pf-proof
 Let
 \[
 j:U\hookrightarrow X
@@ -79,13 +88,21 @@ D(f)\cong\Spec A_f,
 and $A_f=A[f^{-1}]$ is generated as an $A$-algebra by the single element $f^{-1}$.  Hence $j$ is locally of finite type.
 :::
 
-<1>3. A quasi-compact open immersion is of finite type.
-::: {.proof}
-By <1>2 it is locally of finite type.  It is quasi-compact by hypothesis.  Hartshorne II.3.3(a) therefore implies that it is of finite type.
 :::
 
-<1>4. The composition of two locally finite type morphisms is locally of finite type.
-::: {.proof}
+::: {.pf-step #qc-open-immersion-finite-type}
+A quasi-compact open immersion is of finite type.
+
+::: pf-proof
+By step [](#open-immersion-locally-finite-type){.pf-ref} it is locally of finite type.  It is quasi-compact by hypothesis.  Hartshorne II.3.3(a) therefore implies that it is of finite type.
+:::
+
+:::
+
+::: {.pf-step #composition-locally-finite-type}
+The composition of two locally finite type morphisms is locally of finite type.
+
+::: pf-proof
 Let
 \[
 X\xrightarrow{f}Y\xrightarrow{g}Z
@@ -121,8 +138,12 @@ A_{jk}=C[b_1,\ldots,b_m,a_1,\ldots,a_n].
 Thus $A_{jk}$ is finitely generated over $C$.  These affines cover $(g\circ f)^{-1}(W)$, proving local finite type.
 :::
 
-<1>5. The composition of two quasi-compact morphisms is quasi-compact.
-::: {.proof}
+:::
+
+::: {.pf-step #composition-quasicompact}
+The composition of two quasi-compact morphisms is quasi-compact.
+
+::: pf-proof
 Let $W\subseteq Z$ be affine.  Since $g$ is quasi-compact,
 \[
 g^{-1}(W)
@@ -138,13 +159,21 @@ Since $f$ is quasi-compact, every $f^{-1}(V_i)$ is quasi-compact.  Their finite 
 so this inverse image is quasi-compact.  Hartshorne II.3.2 gives the assertion.
 :::
 
-<1>6. The composition of two finite type morphisms is of finite type.
-::: {.proof}
-By Hartshorne II.3.3(a), finite type means locally finite type plus quasi-compact.  Apply <1>4 to the local finite type parts and <1>5 to the quasi-compact parts.
 :::
 
-<1>7. A base change of a locally finite type morphism is locally of finite type.
-::: {.proof}
+::: {.pf-step #composition-finite-type}
+The composition of two finite type morphisms is of finite type.
+
+::: pf-proof
+By Hartshorne II.3.3(a), finite type means locally finite type plus quasi-compact.  Apply step [](#composition-locally-finite-type){.pf-ref} to the local finite type parts and step [](#composition-quasicompact){.pf-ref} to the quasi-compact parts.
+:::
+
+:::
+
+::: {.pf-step #base-change-locally-finite-type}
+A base change of a locally finite type morphism is locally of finite type.
+
+::: pf-proof
 It is enough to work affinely.  Suppose
 \[
 \Spec A\longrightarrow\Spec B
@@ -168,8 +197,12 @@ A\otimes_BB'=B'[a_1\otimes1,\ldots,a_n\otimes1].
 Thus the base-changed algebra is finitely generated.  Covering source and target by such affine charts gives the general statement.
 :::
 
-<1>8. A base change of a quasi-compact morphism is quasi-compact.
-::: {.proof}
+:::
+
+::: {.pf-step #base-change-quasicompact}
+A base change of a quasi-compact morphism is quasi-compact.
+
+::: pf-proof
 Let $f:X\to Y$ be quasi-compact and $Y'\to Y$ any morphism.  It is enough to test the base change
 \[
 f':X\times_YY'\longrightarrow Y'
@@ -179,34 +212,46 @@ over an affine open $V'\subseteq Y'$.  Cover the image of $V'$ in $Y$ by affine 
 Over such an affine $W'\to V_i$, the preimage is the base change of the quasi-compact scheme $f^{-1}(V_i)$ along $W'\to V_i$.  Choose a finite affine cover of $f^{-1}(V_i)$; its base changes are affine and finitely many, so the preimage over $W'$ is quasi-compact.  A finite union gives quasi-compactness over $V'$.
 :::
 
-<1>9. A base change of a finite type morphism is of finite type.
-::: {.proof}
-Finite type is locally finite type plus quasi-compact by II.3.3(a).  Apply <1>7 and <1>8.
 :::
 
-<1>10. If $X$ and $Y$ are of finite type over $S$, then
+::: {.pf-step #base-change-finite-type}
+A base change of a finite type morphism is of finite type.
+
+::: pf-proof
+Finite type is locally finite type plus quasi-compact by II.3.3(a).  Apply steps [](#base-change-locally-finite-type){.pf-ref} and [](#base-change-quasicompact){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #product-finite-type-over-s}
+If $X$ and $Y$ are of finite type over $S$, then
 \[
 X\times_SY\longrightarrow S
 \]
 is of finite type.
-::: {.proof}
+
+::: pf-proof
 The projection
 \[
 X\times_SY\longrightarrow Y
 \]
-is the base change of $X\to S$, so it is of finite type by <1>9.  The morphism $Y\to S$ is finite type by hypothesis.  Their composition is the structure morphism
+is the base change of $X\to S$, so it is of finite type by step [](#base-change-finite-type){.pf-ref}.  The morphism $Y\to S$ is finite type by hypothesis.  Their composition is the structure morphism
 \[
 X\times_SY\to S,
 \]
-which is finite type by <1>6.
+which is finite type by step [](#composition-finite-type){.pf-ref}.
 :::
 
-<1>11. Suppose
+:::
+
+::: {.pf-step #f-locally-finite-type-from-composite}
+Suppose
 \[
 X\xrightarrow{f}Y\xrightarrow{g}Z
 \]
 and $g\circ f$ is locally of finite type.  Then $f$ is locally of finite type.
-::: {.proof}
+
+::: pf-proof
 Fix $x\in X$.  Choose an affine open
 \[
 W=\Spec C\subseteq Z
@@ -245,17 +290,25 @@ C[\alpha_1,\ldots,\alpha_n]
 while the left side is a subring of $A_a$, so equality holds.  Thus $f$ is locally of finite type at $x$.  Since $x$ was arbitrary, $f$ is locally of finite type.
 :::
 
-<1>12. If $f$ is quasi-compact and $g\circ f$ is of finite type, then $f$ is of finite type.
-::: {.proof}
-The composite $g\circ f$ is locally of finite type, so <1>11 shows that $f$ is locally of finite type.  Together with the assumed quasi-compactness of $f$, II.3.3(a) gives that $f$ is of finite type.
 :::
 
-<1>13. Let $f:X\to Y$ be finite type and let $Y$ be noetherian.  Then $X$ has a finite affine cover
+::: {.pf-step #f-finite-type-from-composite-qc}
+If $f$ is quasi-compact and $g\circ f$ is of finite type, then $f$ is of finite type.
+
+::: pf-proof
+The composite $g\circ f$ is locally of finite type, so step [](#f-locally-finite-type-from-composite){.pf-ref} shows that $f$ is locally of finite type.  Together with the assumed quasi-compactness of $f$, II.3.3(a) gives that $f$ is of finite type.
+:::
+
+:::
+
+::: {.pf-step #x-has-noetherian-affine-cover}
+Let $f:X\to Y$ be finite type and let $Y$ be noetherian.  Then $X$ has a finite affine cover
 \[
 X=\bigcup_{i,j}\Spec A_{ij}
 \]
 in which every $A_{ij}$ is noetherian.
-::: {.proof}
+
+::: pf-proof
 Because $Y$ is noetherian, it is quasi-compact and has a finite affine cover
 \[
 Y=\bigcup_{i=1}^mV_i,
@@ -271,13 +324,21 @@ By II.3.3(b), each $f^{-1}(V_i)$ has a finite affine cover
 with each $A_{ij}$ finitely generated over $B_i$.  Hilbert's basis theorem therefore implies that each $A_{ij}$ is noetherian.  Altogether these form a finite affine cover of $X$.
 :::
 
-<1>14. The scheme $X$ in <1>13 is noetherian.
-::: {.proof}
+:::
+
+::: {.pf-step #x-is-noetherian}
+The scheme $X$ in step [](#x-has-noetherian-affine-cover){.pf-ref} is noetherian.
+
+::: pf-proof
 Each affine chart $\Spec A_{ij}$ is a noetherian topological space because $A_{ij}$ is a noetherian ring.  A finite union of noetherian open subspaces is noetherian.  Thus the underlying topological space of $X$ is noetherian, and its affine coordinate rings are noetherian.  Hence $X$ is a noetherian scheme.
 :::
 
-<1>15. Q.E.D.
-::: {.proof}
-Steps <1>1, <1>3, <1>6, <1>9, <1>10, <1>12, and <1>14 prove parts (a)--(g), respectively.
 :::
+
+::: pf-qed
+Steps [](#closed-immersion-finite-type){.pf-ref}, [](#qc-open-immersion-finite-type){.pf-ref}, [](#composition-finite-type){.pf-ref}, [](#base-change-finite-type){.pf-ref}, [](#product-finite-type-over-s){.pf-ref}, [](#f-finite-type-from-composite-qc){.pf-ref} and [](#x-is-noetherian){.pf-ref} prove parts (a)--(g), respectively.
+:::
+
+:::
+
 :::

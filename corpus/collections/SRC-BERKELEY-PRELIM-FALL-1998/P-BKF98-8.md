@@ -27,7 +27,11 @@ Let $R$ be a finite ring with identity, and let $a\in R$ be an element which is 
 :::
 
 ::: {.solution}
-<1>1. The map
+
+::: pf
+
+::: {.pf-step #La-injective}
+The map
 $$
 L_a:R\longrightarrow R,
 \qquad
@@ -35,7 +39,7 @@ L_a(x)=ax
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
 If
 $$
 L_a(x)=L_a(y),
@@ -51,14 +55,17 @@ $$
 so $x=y$.
 :::
 
-<1>2. There is an element $b\in R$ such that
+:::
+
+::: {.pf-step #ab-equals-one}
+There is an element $b\in R$ such that
 $$
 ab=1.
 $$
 
-::: {.proof}
+::: pf-proof
 The set $R$ is finite, so every injective self-map of $R$ is surjective.
-By step <1>1, $L_a$ is surjective. Hence the identity element lies in its
+By step [](#La-injective){.pf-ref}, $L_a$ is surjective. Hence the identity element lies in its
 image:
 $$
 L_a(b)=ab=1
@@ -66,7 +73,10 @@ $$
 for some $b\in R$.
 :::
 
-<1>3. The map
+:::
+
+::: {.pf-step #Ra-injective-surjective}
+The map
 $$
 R_a:R\longrightarrow R,
 \qquad
@@ -74,7 +84,7 @@ R_a(x)=xa
 $$
 is injective and therefore surjective.
 
-::: {.proof}
+::: pf-proof
 If
 $$
 xa=ya,
@@ -87,19 +97,25 @@ Since $a$ is not a zero divisor, $x=y$. Thus $R_a$ is injective, and
 finiteness of $R$ makes it surjective.
 :::
 
-<1>4. There is an element $c\in R$ such that
+:::
+
+::: {.pf-step #ca-equals-one}
+There is an element $c\in R$ such that
 $$
 ca=1.
 $$
 
-::: {.proof}
-By surjectivity of $R_a$ from step <1>3, the identity element lies in its
+::: pf-proof
+By surjectivity of $R_a$ from step [](#Ra-injective-surjective){.pf-ref}, the identity element lies in its
 image.
 :::
 
-<1>5. The elements $b$ and $c$ from steps <1>2 and <1>4 are equal.
+:::
 
-::: {.proof}
+::: {.pf-step #b-equals-c}
+The elements $b$ and $c$ from steps [](#ab-equals-one){.pf-ref} and [](#ca-equals-one){.pf-ref} are equal.
+
+::: pf-proof
 Using associativity,
 $$
 c
@@ -112,10 +128,13 @@ b.
 $$
 :::
 
-<1>6. The element $a$ is invertible.
+:::
 
-::: {.proof}
-By steps <1>2, <1>4, and <1>5, the single element
+::: {.pf-step #a-invertible}
+The element $a$ is invertible.
+
+::: pf-proof
+By steps [](#ab-equals-one){.pf-ref}, [](#ca-equals-one){.pf-ref}, and [](#b-equals-c){.pf-ref}, the single element
 $$
 b=c
 $$
@@ -126,9 +145,12 @@ $$
 Thus it is the inverse of $a$.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 proves the claim.
 :::
+
+::: pf-qed
+Step [](#a-invertible){.pf-ref} proves the claim.
+:::
+
+:::
+
 :::

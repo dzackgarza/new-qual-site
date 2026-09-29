@@ -64,13 +64,16 @@ j:\AA^1_k\hookrightarrow\PP^1_k
 $$
 be the standard open immersion.
 
-<1>1. The image
+::: pf
+
+::: {.pf-step #image-is-closed}
+The image
 $$
 (j\circ f)(X)
 $$
 is closed in $\PP^1_k$.
 
-::: {.proof}
+::: pf-proof
 Because $X$ is complete, for every $k$-variety $Y$ the projection
 $$
 \operatorname{pr}_2:X\times_k Y\longrightarrow Y
@@ -93,27 +96,33 @@ $$
 The projection is closed by completeness of $X$, so this image is closed in $\PP^1_k$.
 :::
 
-<1>2. The image $(j\circ f)(X)$ is finite.
+:::
 
-::: {.proof}
+::: {.pf-step #image-is-finite}
+The image $(j\circ f)(X)$ is finite.
+
+::: pf-proof
 By construction,
 $$
 (j\circ f)(X)\subseteq j(\AA^1_k)
 =
 \PP^1_k\setminus\{\infty\}.
 $$
-Hence the closed subset $(j\circ f)(X)$ from step <1>1 is a proper closed subset of $\PP^1_k$.
+Hence the closed subset $(j\circ f)(X)$ from step [](#image-is-closed){.pf-ref} is a proper closed subset of $\PP^1_k$.
 
 Every proper closed subset of $\PP^1_k$ is finite: it is contained in the zero locus of a nonzero homogeneous polynomial in two variables, and such a zero locus has only finitely many points on $\PP^1_k$.
 Therefore $(j\circ f)(X)$ is finite.
 :::
 
-<1>3. The image $(j\circ f)(X)$ consists of one point.
+:::
 
-::: {.proof}
+::: {.pf-step #image-is-single-point}
+The image $(j\circ f)(X)$ consists of one point.
+
+::: pf-proof
 A morphism is continuous in the Zariski topology, so the image of the connected space $X$ is connected.
 
-By step <1>2, $(j\circ f)(X)$ is a proper closed subset of $\PP^1_k$, hence a finite union of closed points.
+By step [](#image-is-finite){.pf-ref}, $(j\circ f)(X)$ is a proper closed subset of $\PP^1_k$, hence a finite union of closed points.
 Since $k$ is algebraically closed, those closed points are $k$-rational.
 A finite union of closed points has the discrete induced topology, and a finite discrete space is connected only when it has one point.
 Hence
@@ -126,9 +135,12 @@ a\in\AA^1(k)=k.
 $$
 :::
 
-<1>4. Every $f\in\OO_X(X)$ is the constant function $a$ from step <1>3.
+:::
 
-::: {.proof}
+::: {.pf-step #f-is-constant}
+Every $f\in\OO_X(X)$ is the constant function $a$ from step [](#image-is-single-point){.pf-ref}.
+
+::: pf-proof
 The open immersion $j$ is injective on points.
 Since
 $$
@@ -145,23 +157,29 @@ $$
 as a global regular function.
 :::
 
-<1>5. Consequently,
+:::
+
+::: {.pf-step #global-sections-equal-k}
+Consequently,
 $$
 \boxed{\OO_X(X)=k.}
 $$
 
-::: {.proof}
+::: pf-proof
 Constant functions give the canonical inclusion
 $$
 k\hookrightarrow\OO_X(X).
 $$
-Step <1>4 shows that every global regular function lies in its image.
+Step [](#f-is-constant){.pf-ref} shows that every global regular function lies in its image.
 Therefore the inclusion is an equality.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the desired conclusion.
 :::
+
+::: pf-qed
+Step [](#global-sections-equal-k){.pf-ref} is the desired conclusion.
+:::
+
+:::
+
 :::

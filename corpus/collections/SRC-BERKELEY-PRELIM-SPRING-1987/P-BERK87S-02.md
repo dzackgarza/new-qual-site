@@ -40,12 +40,15 @@ T(u,v)=(u+v,u^2+v^2).
 :::
 
 ::: {.solution}
-<1>1. The Jacobian determinant of $T$ at $(u,v)\in W$ is
+::: pf
+
+::: {.pf-step #jacobian-nonzero}
+The Jacobian determinant of $T$ at $(u,v)\in W$ is
 $$
 \det DT(u,v)=2(v-u)\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
 The derivative matrix is
 $$
 DT(u,v)
@@ -66,15 +69,21 @@ $$
 Since $(u,v)\in W$ means $u>v$, this determinant is nonzero.
 :::
 
-<1>2. The map $T$ is locally one-to-one on $W$.
+:::
 
-::: {.proof}
-By step <1>1, the derivative of $T$ is invertible at every point of the
+::: {.pf-step #locally-injective}
+The map $T$ is locally one-to-one on $W$.
+
+::: pf-proof
+By step [](#jacobian-nonzero){.pf-ref}, the derivative of $T$ is invertible at every point of the
 open set $W$. The inverse function theorem therefore gives, around each
 point of $W$, a neighborhood on which $T$ is one-to-one.
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #range-necessary-condition}
+If
 $$
 T(u,v)=(s,q),
 $$
@@ -83,7 +92,7 @@ $$
 q>\frac{s^2}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 s=u+v,
@@ -112,7 +121,10 @@ q
 $$
 :::
 
-<1>4. Conversely, if $(s,q)\in\RR^2$ satisfies
+:::
+
+::: {.pf-step #range-sufficient-condition}
+Conversely, if $(s,q)\in\RR^2$ satisfies
 $$
 q>\frac{s^2}{2},
 $$
@@ -127,7 +139,7 @@ v
 \frac{s-\sqrt{2q-s^2}}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The hypothesis makes
 $$
 d\coloneqq\sqrt{2q-s^2}
@@ -150,7 +162,10 @@ $$
 Hence $T(u,v)=(s,q)$.
 :::
 
-<1>5. The range of $T$ is
+:::
+
+::: {.pf-step #range-boxed}
+The range of $T$ is
 $$
 \boxed{
 T(W)
@@ -162,19 +177,22 @@ q>\frac{s^2}{2}
 }.
 $$
 
-::: {.proof}
-Step <1>3 gives the inclusion from left to right, and step <1>4 gives
+::: pf-proof
+Step [](#range-necessary-condition){.pf-ref} gives the inclusion from left to right, and step [](#range-sufficient-condition){.pf-ref} gives
 the reverse inclusion.
 :::
 
-<1>6. The map $T$ is globally one-to-one on $W$.
+:::
 
-::: {.proof}
+::: {.pf-step #globally-injective}
+The map $T$ is globally one-to-one on $W$.
+
+::: pf-proof
 Suppose
 $$
 T(u,v)=(s,q)
 $$
-with $(u,v)\in W$. Step <1>3 gives
+with $(u,v)\in W$. Step [](#range-necessary-condition){.pf-ref} gives
 $$
 (u-v)^2
 =
@@ -197,10 +215,12 @@ $$
 Thus every point in the range has at most one preimage.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves local one-to-one behavior, step <1>5 determines the
-range, and step <1>6 proves global injectivity.
+::: pf-qed
+Step [](#locally-injective){.pf-ref} proves local one-to-one behavior, step [](#range-boxed){.pf-ref} determines the
+range, and step [](#globally-injective){.pf-ref} proves global injectivity.
+:::
+
 :::
 :::

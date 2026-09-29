@@ -37,10 +37,14 @@ How many zeros does \(f\) have in
 :::
 
 ::: {.solution}
-<1>1. The polynomial $f$ has exactly four zeros, counted with
+
+::: pf
+
+::: {.pf-step #four-zeros-unit-disk}
+The polynomial $f$ has exactly four zeros, counted with
 multiplicity, in the disk $\abs z<1$.
 
-::: {.proof}
+::: pf-proof
 On $\abs z=1$,
 $$
 \begin{aligned}
@@ -64,12 +68,15 @@ $\abs z<1$. The polynomial $z^4$ has four zeros there, counted with
 multiplicity.
 :::
 
-<1>2. The polynomial $f$ has no zero in the closed disk
+:::
+
+::: {.pf-step #no-zero-half-disk}
+The polynomial $f$ has no zero in the closed disk
 $$
 \abs z\le\frac12.
 $$
 
-::: {.proof}
+::: pf-proof
 If $\abs z\le1/2$, then the reverse triangle inequality gives
 $$
 \begin{aligned}
@@ -92,30 +99,39 @@ $$
 Thus $f(z)\ne0$ throughout the closed disk.
 :::
 
-<1>3. Every zero of $f$ in the unit disk lies in the annulus
+:::
+
+::: {.pf-step #zeros-in-annulus}
+Every zero of $f$ in the unit disk lies in the annulus
 $$
 \frac12<\abs z<1.
 $$
 
-::: {.proof}
-Step <1>2 excludes all zeros with $\abs z\le1/2$, while step <1>1
+::: pf-proof
+Step [](#no-zero-half-disk){.pf-ref} excludes all zeros with $\abs z\le1/2$, while step [](#four-zeros-unit-disk){.pf-ref}
 counts the zeros with $\abs z<1$. Hence the four zeros counted in
-step <1>1 all lie in the stated annulus.
+step [](#four-zeros-unit-disk){.pf-ref} all lie in the stated annulus.
 :::
 
-<1>4. Therefore the number of zeros in the annulus, counted with
+:::
+
+::: {.pf-step #count-four}
+Therefore the number of zeros in the annulus, counted with
 multiplicity, is
 $$
 \boxed{4}.
 $$
 
-::: {.proof}
-This is exactly the count from step <1>3.
+::: pf-proof
+This is exactly the count from step [](#zeros-in-annulus){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 answers the problem.
 :::
+
+::: pf-qed
+Step [](#count-four){.pf-ref} answers the problem.
+:::
+
+:::
+
 :::

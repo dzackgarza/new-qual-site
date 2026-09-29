@@ -34,8 +34,13 @@ We write $\alpha^{1/2}$ to denote the unique positive definite square-root of $\
 :::
 
 ::: {.solution}
-<1>1. The product of two positive definite self-adjoint maps need not be self-adjoint.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #counterexample-product-not-self-adjoint}
+The product of two positive definite self-adjoint maps need not be self-adjoint.
+
+::: pf-proof
 Take $V=\mathbb R^2$ with its standard inner product and
 \[
 \alpha=
@@ -62,12 +67,16 @@ However
 which is not symmetric. Hence $\alpha\circ\beta$ need not be self-adjoint, and therefore need not be a positive definite self-adjoint map in the sense of the problem.
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #gamma-self-adjoint}
+The map
 \[
 \gamma:=\alpha^{1/2}\beta\alpha^{1/2}
 \]
 is self-adjoint.
-::: {.proof}
+
+::: pf-proof
 Because $\alpha^{1/2}$ and $\beta$ are self-adjoint,
 \[
 \gamma^*
@@ -77,8 +86,12 @@ Because $\alpha^{1/2}$ and $\beta$ are self-adjoint,
 \]
 :::
 
-<1>3. The map $\gamma$ is positive definite.
-::: {.proof}
+:::
+
+::: {.pf-step #gamma-positive-definite}
+The map $\gamma$ is positive definite.
+
+::: pf-proof
 Let $0\ne v\in V$. Since $\alpha^{1/2}$ is positive definite, it is invertible, so
 \[
 w:=\alpha^{1/2}v\ne0.
@@ -92,12 +105,16 @@ Then
 Because $\beta$ is positive definite and $w\ne0$, the last quantity is positive. Hence $\gamma$ is positive definite.
 :::
 
-<1>4. The maps $\alpha\beta$ and $\gamma$ are similar:
+:::
+
+::: {.pf-step #alpha-beta-similar-to-gamma}
+The maps $\alpha\beta$ and $\gamma$ are similar:
 \[
 \alpha\beta
 =\alpha^{1/2}\gamma\alpha^{-1/2}.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $\alpha^{1/2}$ is invertible,
 \[
 \alpha^{1/2}\gamma\alpha^{-1/2}
@@ -106,14 +123,27 @@ Since $\alpha^{1/2}$ is invertible,
 \]
 :::
 
-<1>5. Therefore $\alpha\beta$ is diagonalizable and all of its eigenvalues are positive real numbers.
-::: {.proof}
-By <1>2 and <1>3, $\gamma$ is positive definite and self-adjoint. The spectral theorem therefore gives an orthonormal eigenbasis for $\gamma$, and every eigenvalue $\lambda$ of $\gamma$ satisfies
+:::
+
+::: {.pf-step #alpha-beta-diagonalizable-positive-eigenvalues}
+Therefore $\alpha\beta$ is diagonalizable and all of its eigenvalues are positive real numbers.
+
+::: pf-proof
+By steps [](#gamma-self-adjoint){.pf-ref} and [](#gamma-positive-definite){.pf-ref}, $\gamma$ is positive definite and self-adjoint. The spectral theorem therefore gives an orthonormal eigenbasis for $\gamma$, and every eigenvalue $\lambda$ of $\gamma$ satisfies
 \[
 \lambda\|v\|^2=\langle\gamma v,v\rangle>0
 \]
 for a corresponding nonzero eigenvector $v$. Thus every eigenvalue of $\gamma$ is real and positive, and $\gamma$ is diagonalizable.
 
-By <1>4, $\alpha\beta$ is similar to $\gamma$. Similar matrices have the same eigenvalues and diagonalizability. Hence $\alpha\beta$ is diagonalizable and all of its eigenvalues are positive real numbers.
+By step [](#alpha-beta-similar-to-gamma){.pf-ref}, $\alpha\beta$ is similar to $\gamma$. Similar matrices have the same eigenvalues and diagonalizability. Hence $\alpha\beta$ is diagonalizable and all of its eigenvalues are positive real numbers.
 :::
+
+:::
+
+::: pf-qed
+Step [](#counterexample-product-not-self-adjoint){.pf-ref} answers part (a); steps [](#gamma-self-adjoint){.pf-ref} and [](#gamma-positive-definite){.pf-ref} answer part (b); step [](#alpha-beta-diagonalizable-positive-eigenvalues){.pf-ref} answers part (c).
+:::
+
+:::
+
 :::

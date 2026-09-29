@@ -50,14 +50,18 @@ the cofinite topology.
 :::
 
 ::: {.solution}
-<1>1. The points of $\operatorname{Specm}k[x]$ are exactly
+
+::: pf
+
+::: {.pf-step #points-are-ma}
+The points of $\operatorname{Specm}k[x]$ are exactly
 $$
 \mathfrak m_a=(x-a),
 \qquad
 a\in k.
 $$
 
-::: {.proof}
+::: pf-proof
 By the weak Nullstellensatz, every maximal ideal of the finitely generated
 $k$-algebra $k[x]$ is the kernel of evaluation at a point $a\in k$. Hence it
 has the form
@@ -71,10 +75,13 @@ $$
 is a field, so every $(x-a)$ is maximal.
 :::
 
-<1>2. Every proper Zariski-closed subset of
+:::
+
+::: {.pf-step #proper-closed-finite}
+Every proper Zariski-closed subset of
 $\operatorname{Specm}k[x]$ is finite.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 Z=V_{\max}(I)
@@ -92,7 +99,7 @@ $$
 f\ne0.
 $$
 
-By step <1>1,
+By step [](#points-are-ma){.pf-ref},
 $$
 \mathfrak m_a\in V_{\max}(f)
 \quad\Longleftrightarrow\quad
@@ -103,9 +110,12 @@ $$
 A nonzero polynomial has only finitely many roots. Therefore $Z$ is finite.
 :::
 
-<1>3. Every finite subset of $\operatorname{Specm}k[x]$ is Zariski closed.
+:::
 
-::: {.proof}
+::: {.pf-step #finite-subsets-closed}
+Every finite subset of $\operatorname{Specm}k[x]$ is Zariski closed.
+
+::: pf-proof
 Let
 $$
 F
@@ -133,21 +143,27 @@ $$
 The empty set is also closed, being $V_{\max}(1)$.
 :::
 
-<1>4. The Zariski closed subsets are exactly the whole space and the finite
+:::
+
+::: {.pf-step #closed-subsets-characterization}
+The Zariski closed subsets are exactly the whole space and the finite
 subsets.
 
-::: {.proof}
-Step <1>2 shows every proper closed subset is finite. Step <1>3 shows every
+::: pf-proof
+Step [](#proper-closed-finite){.pf-ref} shows every proper closed subset is finite. Step [](#finite-subsets-closed){.pf-ref} shows every
 finite subset is closed. Together with the whole space, these are exactly the
 closed subsets.
 :::
 
-<1>5. Therefore the Zariski topology on $\operatorname{Specm}k[x]$ is the
+:::
+
+::: {.pf-step #cofinite-conclusion}
+Therefore the Zariski topology on $\operatorname{Specm}k[x]$ is the
 cofinite topology.
 
-::: {.proof}
+::: pf-proof
 The cofinite topology is defined by declaring the whole space and the finite
-subsets to be the closed sets. Step <1>4 gives exactly this family.
+subsets to be the closed sets. Step [](#closed-subsets-characterization){.pf-ref} gives exactly this family.
 
 Equivalently, the correspondence between affine varieties and their
 coordinate rings identifies
@@ -158,9 +174,12 @@ and this is the special case of
 [[P-AGXVARCURVECOFIN|the cofinite topology on an irreducible curve]].
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#cofinite-conclusion){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

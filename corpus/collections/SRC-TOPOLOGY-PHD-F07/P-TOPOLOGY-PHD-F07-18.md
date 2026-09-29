@@ -40,8 +40,12 @@ Let the three removed points be
 p_1,p_2,p_3\in S^2.
 \]
 
-<1>1. The three-times punctured sphere is homeomorphic to the plane with two points removed.
-::: {.proof}
+::: pf
+
+::: {.pf-step #homeomorphic-to-punctured-plane}
+The three-times punctured sphere is homeomorphic to the plane with two points removed.
+
+::: pf-proof
 Stereographic projection from $p_3$ is a homeomorphism
 \[
 S^2\setminus\{p_3\}\longrightarrow\mathbb R^2.
@@ -55,8 +59,12 @@ S^2\setminus\{p_1,p_2,p_3\}
 \]
 :::
 
-<1>2. The space $\mathbb R^2\setminus\{a,b\}$ deformation retracts onto a graph homeomorphic to two circles joined by an arc.
-::: {.proof}
+:::
+
+::: {.pf-step #retract-to-wedge}
+The space $\mathbb R^2\setminus\{a,b\}$ deformation retracts onto a graph homeomorphic to two circles joined by an arc.
+
+::: pf-proof
 Choose disjoint small closed disks $D_a,D_b$ centered at $a,b$.
 Choose an embedded arc $J$ joining one point of $\partial D_a$ to one point of $\partial D_b$, with interior disjoint from the two disks.
 Set
@@ -87,8 +95,12 @@ Contracting $J$ to a point gives
 \]
 :::
 
-<1>3. The fundamental group of $S^1\vee S^1$ is the free group on two generators.
-::: {.proof}
+:::
+
+::: {.pf-step #pi1-wedge}
+The fundamental group of $S^1\vee S^1$ is the free group on two generators.
+
+::: pf-proof
 Let $U$ and $V$ be open neighborhoods in $S^1\vee S^1$ of the first and second circles, enlarged slightly across the wedge point so that
 \[
 U\cap V
@@ -113,13 +125,22 @@ The Seifert--van Kampen theorem therefore gives
 This is the free group $F_2$ on two generators.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{\pi_1\bigl(S^2\setminus\{p_1,p_2,p_3\}\bigr)\cong F_2\cong\mathbb Z*\mathbb Z.}
 \]
-::: {.proof}
-By <1>1, the punctured sphere is homeomorphic to the twice-punctured plane.
-By <1>2, that plane has the homotopy type of $S^1\vee S^1$.
-Fundamental groups are invariant under homeomorphism and homotopy equivalence, and <1>3 computes the latter group as $F_2$.
+
+::: pf-proof
+By step [](#homeomorphic-to-punctured-plane){.pf-ref}, the punctured sphere is homeomorphic to the twice-punctured plane.
+By step [](#retract-to-wedge){.pf-ref}, that plane has the homotopy type of $S^1\vee S^1$.
+Fundamental groups are invariant under homeomorphism and homotopy equivalence, and step [](#pi1-wedge){.pf-ref} computes the latter group as $F_2$.
 :::
+
+:::
+
+:::
+
 :::

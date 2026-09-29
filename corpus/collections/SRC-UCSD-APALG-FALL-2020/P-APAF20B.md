@@ -34,30 +34,43 @@ Prove that $\lambda\in\{-3,-2,-1,1,2,3\}$.
 :::
 
 ::: {.solution}
-<1>1. The operator norm is
+
+::: pf
+
+::: {.pf-step #operator-norm-value}
+The operator norm is
 \[
 \boxed{\|\psi\|_{\mathrm{op}}=3}.
 \]
-::: {.proof}
+
+::: pf-proof
 For a linear map on a finite-dimensional Hermitian space, the operator norm induced by the Euclidean norm equals the largest singular value. Since the singular values are $3,2,1$, the largest is $3$.
 :::
 
-<1>2. The Frobenius norm is
+:::
+
+::: {.pf-step #frobenius-norm-value}
+The Frobenius norm is
 \[
 \boxed{\|\psi\|_{\mathrm{Frob}}=\sqrt{14}}.
 \]
-::: {.proof}
+
+::: pf-proof
 The squared Frobenius norm is the trace of $\psi^*\psi$, equivalently the sum of the squares of the singular values. Hence
 \[
 \|\psi\|_{\mathrm{Frob}}^2=3^2+2^2+1^2=14.
 \]
 :::
 
-<1>3. For every vector $v\in\mathbb C^3$,
+:::
+
+::: {.pf-step #singular-value-bounds-on-image}
+For every vector $v\in\mathbb C^3$,
 \[
 \|v\|\le \|\psi v\|\le3\|v\|.
 \]
-::: {.proof}
+
+::: pf-proof
 Choose a singular value decomposition
 \[
 \psi=U\Sigma V^*,
@@ -80,27 +93,35 @@ Therefore
 Because $\|w\|=\|v\|$, taking square roots yields the claimed inequalities.
 :::
 
-<1>4. If $\lambda$ is an eigenvalue of $\psi$, then
+:::
+
+::: {.pf-step #eigenvalue-modulus-bound}
+If $\lambda$ is an eigenvalue of $\psi$, then
 \[
 \boxed{1\le|\lambda|\le3}.
 \]
-::: {.proof}
+
+::: pf-proof
 Let $0\ne v$ satisfy
 \[
 \psi v=\lambda v.
 \]
-Applying <1>3 gives
+Applying step [](#singular-value-bounds-on-image){.pf-ref} gives
 \[
 \|v\|\le\|\psi v\|=|\lambda|\|v\|\le3\|v\|.
 \]
 Since $v\ne0$, divide by $\|v\|$ to obtain the result.
 :::
 
-<1>5. If $\psi$ is self-adjoint, then every eigenvalue belongs to
+:::
+
+::: {.pf-step #self-adjoint-eigenvalue-set}
+If $\psi$ is self-adjoint, then every eigenvalue belongs to
 \[
 \boxed{\{-3,-2,-1,1,2,3\}}.
 \]
-::: {.proof}
+
+::: pf-proof
 A self-adjoint operator is unitarily diagonalizable with real eigenvalues, say
 \[
 \psi=Q\operatorname{diag}(\lambda_1,\lambda_2,\lambda_3)Q^*,
@@ -117,4 +138,13 @@ Thus the singular values of $\psi$, which are the nonnegative square roots of th
 \]
 Their multiset is $\{3,2,1\}$ by hypothesis. Hence each real eigenvalue has absolute value $1$, $2$, or $3$, so each lies in the displayed set.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#operator-norm-value){.pf-ref} and [](#frobenius-norm-value){.pf-ref} answer part (a); step [](#eigenvalue-modulus-bound){.pf-ref} answers part (b); step [](#self-adjoint-eigenvalue-set){.pf-ref} answers part (c).
+:::
+
+:::
+
 :::

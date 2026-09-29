@@ -34,10 +34,13 @@ R\coloneqq M_n(k).
 $$
 For $1\leq r,s\leq n$, let $E_{rs}$ denote the standard matrix unit.
 
-<1>1. Let $I\subseteq R$ be a nonzero two-sided ideal. Then $I$ contains
+::: pf
+
+::: {.pf-step #single-unit-in-ideal}
+Let $I\subseteq R$ be a nonzero two-sided ideal. Then $I$ contains
 at least one matrix unit $E_{rs}$.
 
-::: {.proof}
+::: pf-proof
 Choose a nonzero matrix
 $$
 A=(a_{ij})\in I.
@@ -63,10 +66,13 @@ E_{rs}\in I.
 $$
 :::
 
-<1>2. Every matrix unit $E_{rs}$ belongs to $I$.
+:::
 
-::: {.proof}
-The computation in step <1>1 holds for arbitrary $r$ and $s$, while the
+::: {.pf-step #all-units-in-ideal}
+Every matrix unit $E_{rs}$ belongs to $I$.
+
+::: pf-proof
+The computation in step [](#single-unit-in-ideal){.pf-ref} holds for arbitrary $r$ and $s$, while the
 same nonzero entry $a_{pq}$ of $A$ is used throughout. Therefore
 $$
 E_{rs}\in I
@@ -74,14 +80,17 @@ $$
 for every pair of indices.
 :::
 
-<1>3. Every nonzero two-sided ideal $I$ equals $R$.
+:::
 
-::: {.proof}
+::: {.pf-step #nonzero-ideal-is-whole}
+Every nonzero two-sided ideal $I$ equals $R$.
+
+::: pf-proof
 The matrix units
 $$
 \{E_{rs}:1\leq r,s\leq n\}
 $$
-form a $k$-basis of $M_n(k)$. By step <1>2, they all lie in $I$. Since an
+form a $k$-basis of $M_n(k)$. By step [](#all-units-in-ideal){.pf-ref}, they all lie in $I$. Since an
 ideal is in particular an additive subgroup closed under multiplication by
 scalar matrices, it contains every $k$-linear combination of the matrix
 units. Hence
@@ -90,19 +99,25 @@ I=R.
 $$
 :::
 
-<1>4. The only two-sided ideals of $M_n(k)$ are
+:::
+
+::: {.pf-step #ideal-classification}
+The only two-sided ideals of $M_n(k)$ are
 $$
 \boxed{0\text{ and }M_n(k)}.
 $$
 
-::: {.proof}
-The zero ideal is a two-sided ideal, and step <1>3 shows that every nonzero
+::: pf-proof
+The zero ideal is a two-sided ideal, and step [](#nonzero-ideal-is-whole){.pf-ref} shows that every nonzero
 two-sided ideal is the whole ring.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required classification.
 :::
+
+::: pf-qed
+Step [](#ideal-classification){.pf-ref} is the required classification.
+:::
+
+:::
+
 :::

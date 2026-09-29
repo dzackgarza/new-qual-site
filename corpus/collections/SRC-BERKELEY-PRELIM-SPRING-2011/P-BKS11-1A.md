@@ -32,9 +32,13 @@ A non-empty metric space X is said to be connected if it is not the union of two
 :::
 
 ::: {.solution}
-<1>1. The unit interval $[0,1]$ is connected.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #unit-interval-connected}
+The unit interval $[0,1]$ is connected.
+
+::: pf-proof
 Suppose, for contradiction, that
 $$
 [0,1]=U\sqcup V
@@ -60,9 +64,12 @@ are points of $U\cap[u,v]$ arbitrarily close to $c$ from the left. This
 is a contradiction.
 :::
 
-<1>2. Every path-connected space is connected.
+:::
 
-::: {.proof}
+::: {.pf-step #path-connected-implies-connected}
+Every path-connected space is connected.
+
+::: pf-proof
 Let $Y$ be path-connected and suppose
 $$
 Y=U\sqcup V
@@ -84,10 +91,13 @@ $$
 \gamma^{-1}(V)
 $$
 are nonempty disjoint open subsets of $[0,1]$ whose union is the whole
-interval, contradicting step <1>1. This proves part (a).
+interval, contradicting step [](#unit-interval-connected){.pf-ref}. This proves part (a).
 :::
 
-<1>3. For part (b), write
+:::
+
+::: {.pf-step #a-and-b-connected}
+For part (b), write
 $$
 A\coloneqq\{(0,y):y\in\RR\}
 $$
@@ -98,7 +108,7 @@ B\coloneqq
 $$
 Then both $A$ and $B$ are connected.
 
-::: {.proof}
+::: pf-proof
 The set $A$ is a line, hence path-connected. The map
 $$
 (0,\infty)\longrightarrow\RR^2,
@@ -109,12 +119,15 @@ is continuous and has image $B$. Since $(0,\infty)$ is an interval and
 therefore connected, its continuous image $B$ is connected.
 :::
 
-<1>4. The closure $\overline B$ is contained in $X=A\cup B$, and
+:::
+
+::: {.pf-step #closure-contains-origin}
+The closure $\overline B$ is contained in $X=A\cup B$, and
 $$
 A\cap\overline B\neq\varnothing.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $(x_j,\sin(1/x_j))\in B$ converge to a point $(x,y)$.
 If $x>0$, then continuity of
 $$
@@ -144,11 +157,14 @@ $$
 Hence $(0,0)\in A\cap\overline B$.
 :::
 
-<1>5. The space $X$ is connected.
+:::
 
-::: {.proof}
-By step <1>3, $B$ is connected, so its closure $\overline B$ is
-connected. The set $A$ is connected by the same step, and step <1>4 gives
+::: {.pf-step #x-connected}
+The space $X$ is connected.
+
+::: pf-proof
+By step [](#a-and-b-connected){.pf-ref}, $B$ is connected, so its closure $\overline B$ is
+connected. The set $A$ is connected by the same step, and step [](#closure-contains-origin){.pf-ref} gives
 $$
 A\cap\overline B\neq\varnothing.
 $$
@@ -158,7 +174,7 @@ $$
 A\cup\overline B
 $$
 is connected. Since $B\subseteq\overline B$ and
-$\overline B\subseteq A\cup B$ by step <1>4,
+$\overline B\subseteq A\cup B$ by step [](#closure-contains-origin){.pf-ref},
 $$
 A\cup\overline B
 =
@@ -169,9 +185,12 @@ $$
 Thus $X$ is connected.
 :::
 
-<1>6. There is no path in $X$ from $(0,0)$ to a point of $B$.
+:::
 
-::: {.proof}
+::: {.pf-step #no-path-to-b}
+There is no path in $X$ from $(0,0)$ to a point of $B$.
+
+::: pf-proof
 Suppose instead that
 $$
 \gamma(t)=(r(t),s(t)),
@@ -259,20 +278,26 @@ But $p_j,q_j\to t_0$, so continuity of $s$ would force both sequences
 $s(p_j)$ and $s(q_j)$ to converge to $s(t_0)$. This is impossible.
 :::
 
-<1>7. The space $X$ is not path-connected.
+:::
 
-::: {.proof}
+::: {.pf-step #x-not-path-connected}
+The space $X$ is not path-connected.
+
+::: pf-proof
 The point $(0,0)$ lies in $X$, and $B$ is nonempty, for example
 $$
 (1,\sin1)\in B.
 $$
-Step <1>6 shows that these points cannot be joined by a path in $X$.
+Step [](#no-path-to-b){.pf-ref} shows that these points cannot be joined by a path in $X$.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part (a), while steps <1>5 and <1>7 prove respectively
+::: pf-qed
+Step [](#path-connected-implies-connected){.pf-ref} proves part (a), while steps [](#x-connected){.pf-ref} and [](#x-not-path-connected){.pf-ref} prove respectively
 the connectedness and failure of path-connectedness required in part (b).
 :::
+
+:::
+
 :::

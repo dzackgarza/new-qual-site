@@ -38,6 +38,7 @@ A+B+C=0.
 :::
 
 ::: {.solution}
+
 Let
 $$
 a\coloneqq\operatorname{rank}A,
@@ -47,7 +48,10 @@ b\coloneqq\operatorname{rank}B,
 c\coloneqq\operatorname{rank}C.
 $$
 
-<1>1. Every realizable triple $(a,b,c)$ satisfies
+::: pf
+
+::: {.pf-step #necessary-inequalities}
+Every realizable triple $(a,b,c)$ satisfies
 $$
 0\le a,b,c\le n
 $$
@@ -60,7 +64,7 @@ b\le c+a,
 c\le a+b.
 $$
 
-::: {.proof}
+::: pf-proof
 The bounds $0\le a,b,c\le n$ hold for ranks of $n\times n$
 matrices. Since $C=-(A+B)$,
 $$
@@ -76,8 +80,11 @@ The other two inequalities follow in the same way from
 $A=-(B+C)$ and $B=-(C+A)$.
 :::
 
-<1>2. Conversely, let $(a,b,c)\in\{0,\ldots,n\}^3$ satisfy the
-three inequalities in step <1>1. After permuting the three matrices if
+:::
+
+::: {.pf-step #permute-largest-c}
+Conversely, let $(a,b,c)\in\{0,\ldots,n\}^3$ satisfy the
+three inequalities in step [](#necessary-inequalities){.pf-ref}. After permuting the three matrices if
 necessary, assume
 $$
 c\ge a,
@@ -85,13 +92,16 @@ c\ge a,
 c\ge b.
 $$
 
-::: {.proof}
+::: pf-proof
 The conditions and the equation $A+B+C=0$ are symmetric under
 permuting $A,B,C$. Thus one may label a largest member of
 $\{a,b,c\}$ by $c$.
 :::
 
-<1>3. Define diagonal matrices $A$ and $B$ by
+:::
+
+::: {.pf-step #AB-rank-construction}
+Define diagonal matrices $A$ and $B$ by
 $$
 A_{ii}=
 \begin{cases}
@@ -116,7 +126,7 @@ $$
 \operatorname{rank}(A+B)=c.
 $$
 
-::: {.proof}
+::: pf-proof
 The first two rank equalities are immediate from the numbers of nonzero
 diagonal entries. The inequality $c\le a+b$ is equivalent to
 $$
@@ -135,14 +145,17 @@ it is $1$. Thus $A+B$ has exactly $c$ nonzero diagonal entries, and
 $\operatorname{rank}(A+B)=c$.
 :::
 
-<1>4. Setting $C\coloneqq-(A+B)$ realizes the triple $(a,b,c)$.
+:::
 
-::: {.proof}
+::: {.pf-step #C-realizes-triple}
+Setting $C\coloneqq-(A+B)$ realizes the triple $(a,b,c)$.
+
+::: pf-proof
 By construction,
 $$
 A+B+C=0.
 $$
-Step <1>3 gives
+Step [](#AB-rank-construction){.pf-ref} gives
 $$
 \operatorname{rank}C
 =\operatorname{rank}(A+B)
@@ -151,7 +164,10 @@ $$
 while the ranks of $A$ and $B$ are $a$ and $b$.
 :::
 
-<1>5. The possible rank triples are exactly
+:::
+
+::: {.pf-step #classification}
+The possible rank triples are exactly
 $$
 \boxed{
 \left\{
@@ -161,14 +177,17 @@ a\le b+c,\ b\le c+a,\ c\le a+b
 }
 $$
 
-::: {.proof}
-Step <1>1 gives the necessary conditions, and steps <1>2--<1>4 realize
+::: pf-proof
+Step [](#necessary-inequalities){.pf-ref} gives the necessary conditions, and steps [](#permute-largest-c){.pf-ref}, [](#AB-rank-construction){.pf-ref} and [](#C-realizes-triple){.pf-ref} realize
 every triple satisfying them.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested classification.
 :::
+
+::: pf-qed
+Step [](#classification){.pf-ref} is the requested classification.
+:::
+
+:::
+
 :::

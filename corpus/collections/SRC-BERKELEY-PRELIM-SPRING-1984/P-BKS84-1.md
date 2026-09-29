@@ -34,9 +34,12 @@ Let $a>0$. Evaluate
 :::
 
 ::: {.solution}
-<1>1. The improper integral converges absolutely.
+::: pf
 
-::: {.proof}
+::: {.pf-step #integral-converges-absolutely}
+The improper integral converges absolutely.
+
+::: pf-proof
 On $(0,1]$,
 $$
 \frac{\abs{\log x}}{a^2+x^2}
@@ -60,7 +63,10 @@ $$
 Hence the given integral is absolutely convergent.
 :::
 
-<1>2. With
+:::
+
+::: {.pf-step #substitution-formula}
+With
 $$
 J=\int_0^\infty\frac{\log t}{1+t^2}\,dt,
 $$
@@ -73,7 +79,7 @@ $$
 \frac{J}{a}.
 $$
 
-::: {.proof}
+::: pf-proof
 Set $x=at$. Since $a>0$,
 $$
 dx=a\,dt
@@ -108,12 +114,15 @@ $$
 the claimed formula follows.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #j-vanishes}
+One has
 $$
 J=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Split
 $$
 J
@@ -135,7 +144,10 @@ $$
 This cancels the first integral, so $J=0$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #value-boxed}
+Therefore
 $$
 \boxed{
 \int_0^\infty\frac{\log x}{a^2+x^2}\,dx
@@ -144,13 +156,15 @@ $$
 }.
 $$
 
-::: {.proof}
-Substitute step <1>3 into the formula of step <1>2.
+::: pf-proof
+Substitute step [](#j-vanishes){.pf-ref} into the formula of step [](#substitution-formula){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the requested value.
+::: pf-qed
+Step [](#value-boxed){.pf-ref} gives the requested value.
+:::
+
 :::
 :::

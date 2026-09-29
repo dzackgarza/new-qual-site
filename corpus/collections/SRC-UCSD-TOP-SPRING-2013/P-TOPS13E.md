@@ -29,23 +29,40 @@ Define the loop $\eta : I \to \mathbb{R}^3 \setminus \{0\}$ by $\eta(s) = (\cos(
 :::
 
 ::: {.solution}
-<1>1. Suppose for contradiction that such an $f$ exists.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #assume-f-exists}
+Suppose for contradiction that such an $f$ exists.
+
+::: pf-proof
 assume the contrary.
 :::
 
-<1>2. Define $g(x) = \frac{f(x) - f(-x)}{|f(x) - f(-x)|} \in S^1$, which is continuous and satisfies $g(-x) = -g(x)$.
-::: {.proof}
+:::
+
+::: {.pf-step #define-g}
+Define $g(x) = \frac{f(x) - f(-x)}{|f(x) - f(-x)|} \in S^1$, which is continuous and satisfies $g(-x) = -g(x)$.
+
+::: pf-proof
 $f(x) \neq f(-x)$ so the denominator is nonzero; and $g(-x) = \frac{f(-x) - f(x)}{|f(-x)-f(x)|} = -g(x)$.
 :::
 
-<1>3. Let $\eta(s) = (\cos 2\pi s, \sin 2\pi s, 0)$ and $h = g \circ \eta: S^1 \to S^1$.
-::: {.proof}
+:::
+
+::: {.pf-step #define-eta-and-h}
+Let $\eta(s) = (\cos 2\pi s, \sin 2\pi s, 0)$ and $h = g \circ \eta: S^1 \to S^1$.
+
+::: pf-proof
 definition.
 :::
 
-<1>4. $h$ is nullhomotopic.
-::: {.proof}
+:::
+
+::: {.pf-step #h-nullhomotopic}
+$h$ is nullhomotopic.
+
+::: pf-proof
 The loop $\eta$ contracts to the north pole inside $\RR^3\setminus\{0\}$ via
 $$
 H(s,t)=(1-t)\eta(s)+t(0,0,1).
@@ -57,18 +74,35 @@ $$
 for every $t\in[0,1]$, so this homotopy never meets the origin. Therefore $\eta$ is nullhomotopic, and so is $h=g\circ\eta$.
 :::
 
-<1>5. Hence $h$ has degree $0$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-has-degree-zero}
+Hence $h$ has degree $0$.
+
+::: pf-proof
 a nullhomotopic map $S^1 \to S^1$ has degree $0$.
 :::
 
-<1>6. But $h$ has odd degree.
-<2>1. $h(s + 1/2) = g(\eta(s + 1/2)) = g(-\eta(s)) = -g(\eta(s)) = -h(s)$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-has-odd-degree}
+But $h$ has odd degree.
+
+::: pf-proof
+
+::: pf-step
+$h(s + 1/2) = g(\eta(s + 1/2)) = g(-\eta(s)) = -g(\eta(s)) = -h(s)$.
+
+::: pf-proof
 $\eta(s + 1/2) = -\eta(s)$ and $g(-x) = -g(x)$.
 :::
-<2>2. A map $h:S^1\to S^1$ with $h(s+1/2)=-h(s)$ has odd degree.
-::: {.proof}
+
+:::
+
+::: pf-step
+A map $h:S^1\to S^1$ with $h(s+1/2)=-h(s)$ has odd degree.
+
+::: pf-proof
 Write $S^1=\RR/\ZZ$ and choose a lift $\widetilde h:\RR\to\RR$ of $h$. There is an integer $d=\deg h$ such that
 $$
 \widetilde h(s+1)=\widetilde h(s)+d.
@@ -84,18 +118,34 @@ $$
 Thus $d=1+2k$ is odd.
 :::
 
-<1>7. Contradiction.
-::: {.proof}
-<1>5 says $\deg h = 0$ but <1>6 says $\deg h$ is odd.
 :::
 
-<1>8. Hence no such $f$ exists.
-::: {.proof}
-<1>1–<1>7.
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-<1>8.
 :::
+
+::: {.pf-step #contradiction-step}
+Contradiction.
+
+::: pf-proof
+Step [](#h-has-degree-zero){.pf-ref} says $\deg h = 0$ but step [](#h-has-odd-degree){.pf-ref} says $\deg h$ is odd.
+:::
+
+:::
+
+::: {.pf-step #no-such-f-exists}
+Hence no such $f$ exists.
+
+::: pf-proof
+Steps [](#assume-f-exists){.pf-ref}, [](#define-g){.pf-ref}, [](#define-eta-and-h){.pf-ref}, [](#h-nullhomotopic){.pf-ref}, [](#h-has-degree-zero){.pf-ref}, [](#h-has-odd-degree){.pf-ref} and [](#contradiction-step){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Step [](#no-such-f-exists){.pf-ref}.
+:::
+
+:::
+
 :::

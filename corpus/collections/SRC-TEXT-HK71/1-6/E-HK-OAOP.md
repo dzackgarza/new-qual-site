@@ -22,23 +22,40 @@ Prove that $C = AB$ is not invertible.
 :::
 
 ::: {.solution}
-<1>1. $C = AB$ is a $2 \times 2$ matrix of rank at most $1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #c-has-rank-at-most-1}
+$C = AB$ is a $2 \times 2$ matrix of rank at most $1$.
+
+::: pf-proof
 $A$ has rank at most $1$ (it is $2 \times 1$), and $\operatorname{rank}(AB) \le \operatorname{rank}(A) \le 1$.
 :::
 
-<1>2. A $2 \times 2$ matrix is invertible iff it has rank $2$.
-::: {.proof}
+:::
+
+::: {.pf-step #square-2x2-invertible-iff-rank-2}
+A $2 \times 2$ matrix is invertible iff it has rank $2$.
+
+::: pf-proof
 standard.
 :::
 
-<1>3. Hence $C$ has rank $\le 1 < 2$, so $C$ is not invertible.
-::: {.proof}
-<1>1 and <1>2.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>3.
+::: {.pf-step #c-not-invertible}
+Hence $C$ has rank $\le 1 < 2$, so $C$ is not invertible.
+
+::: pf-proof
+Steps [](#c-has-rank-at-most-1){.pf-ref} and [](#square-2x2-invertible-iff-rank-2){.pf-ref}.
 :::
+
+:::
+
+::: pf-qed
+Step [](#c-not-invertible){.pf-ref}.
+:::
+
+:::
+
 :::

@@ -37,7 +37,10 @@ x^q-x.
 :::
 
 ::: {.solution}
-<1>1. For each $a\in F$, define
+::: pf
+
+::: {.pf-step #lagrange-basis}
+For each $a\in F$, define
 $$
 \ell_a(x)
 \coloneqq
@@ -55,23 +58,26 @@ $$
 $$
 for every $c\in F$.
 
-::: {.proof}
+::: pf-proof
 Every denominator $a-b$ in the product is nonzero and hence invertible in
 the field $F$, so $\ell_a\in F[x]$. If $c=a$, every factor is $1$. If
 $c\ne a$, the factor indexed by $b=c$ is $0$.
 :::
 
-<1>2. Every function $\varphi:F\to F$ is represented by a polynomial in
+:::
+
+::: {.pf-step #existence}
+Every function $\varphi:F\to F$ is represented by a polynomial in
 $F[x]$.
 
-::: {.proof}
+::: pf-proof
 Define
 $$
 f(x)
 \coloneqq
 \sum_{a\in F}\varphi(a)\ell_a(x).
 $$
-For any $c\in F$, step <1>1 gives
+For any $c\in F$, step [](#lagrange-basis){.pf-ref} gives
 $$
 f(c)
 =
@@ -82,12 +88,15 @@ $$
 Thus $\varphi=\varphi_f$.
 :::
 
-<1>3. In $F[x]$ one has
+:::
+
+::: {.pf-step #product-identity-boxed}
+In $F[x]$ one has
 $$
 \boxed{\prod_{a\in F}(x-a)=x^q-x}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $a=0$, then $a^q=a$. If $a\ne0$, then $a\in F^\times$, whose order is
 $q-1$. Lagrange's theorem gives
 $$
@@ -105,29 +114,35 @@ Their difference has degree less than $q$ and at least $q$ roots, so it is
 zero.
 :::
 
-<1>4. If $f,g\in F[x]$ satisfy $\varphi_f=\varphi_g$, then
+:::
+
+::: {.pf-step #difference-divisible}
+If $f,g\in F[x]$ satisfy $\varphi_f=\varphi_g$, then
 $$
 x^q-x\mid f-g.
 $$
 
-::: {.proof}
+::: pf-proof
 For every $a\in F$,
 $$
 (f-g)(a)=0.
 $$
 By the factor theorem, $x-a$ divides $f-g$ for every $a\in F$. The distinct
 linear factors $x-a$ are pairwise coprime, so their product divides $f-g$.
-Step <1>3 identifies this product with $x^q-x$.
+Step [](#product-identity-boxed){.pf-ref} identifies this product with $x^q-x$.
 :::
 
-<1>5. Conversely, if
+:::
+
+::: {.pf-step #converse-holds}
+Conversely, if
 $$
 f-g=(x^q-x)r
 $$
 for some $r\in F[x]$, then $\varphi_f=\varphi_g$.
 
-::: {.proof}
-For every $a\in F$, step <1>3 gives
+::: pf-proof
+For every $a\in F$, step [](#product-identity-boxed){.pf-ref} gives
 $$
 a^q-a=0.
 $$
@@ -141,11 +156,13 @@ $$
 so the two polynomials define the same function on $F$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves existence. Steps <1>4 and <1>5 show that two representing
+::: pf-qed
+Step [](#existence){.pf-ref} proves existence. Steps [](#difference-divisible){.pf-ref} and [](#converse-holds){.pf-ref} show that two representing
 polynomials define the same function exactly when their difference is a
 multiple of $x^q-x$, which is the asserted uniqueness.
+:::
+
 :::
 :::

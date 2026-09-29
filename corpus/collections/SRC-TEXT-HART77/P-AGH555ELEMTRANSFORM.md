@@ -73,7 +73,10 @@ X'=\PP(\mathcal E').
 $$
 We use Hartshorne's quotient convention for projective bundles.
 
-<1>1. Let $p\in C$, let
+::: pf
+
+::: {.pf-step #elementary-transform-as-kernel}
+Let $p\in C$, let
 $$
 q:\mathcal E\otimes k(p)\twoheadrightarrow k(p)
 $$
@@ -98,7 +101,7 @@ $$
 $$
 where $P\in\PP(\mathcal E_p)$ is the point represented by $q$.
 
-::: {.proof}
+::: pf-proof
 Away from $p$, the inclusion
 $$
 \mathcal F\hookrightarrow\mathcal E
@@ -147,11 +150,14 @@ contract the strict transform of the fibre through $P$. This is the
 elementary transformation of (5.7.1), and its target is $\PP(\mathcal F)$.
 :::
 
-<1>2. The inverse of an elementary transformation is again an elementary
+:::
+
+::: {.pf-step #inverse-is-elementary-transform}
+The inverse of an elementary transformation is again an elementary
 transformation.
 
-::: {.proof}
-In the local coordinates of step <1>1, the generic inverse of
+::: pf-proof
+In the local coordinates of step [](#elementary-transform-as-kernel){.pf-ref}, the generic inverse of
 $$
 [x:y]\dashrightarrow[x:ty]
 $$
@@ -168,13 +174,16 @@ new fibre, exactly the same elementary-transformation construction. Hence
 the operation is reversible by another elementary transformation.
 :::
 
-<1>3. If $D\subseteq X$ is a section containing the centre $P$ and
+:::
+
+::: {.pf-step #section-self-intersection-drops}
+If $D\subseteq X$ is a section containing the centre $P$ and
 $\widetilde D$ is its transform under $\operatorname{elm}_P$, then
 $$
 \boxed{\widetilde D^{\,2}=D^2-1.}
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 b:Z\longrightarrow X
@@ -204,7 +213,10 @@ $$
 This is the first calculation requested in the hint.
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #injective-comparison-map}
+Let
 $$
 K=k(C)
 $$
@@ -226,7 +238,7 @@ $$
 $$
 whose cokernel is a finite-length torsion sheaf.
 
-::: {.proof}
+::: pf-proof
 Choose any $K$-linear isomorphism
 $$
 \varphi_\eta:\mathcal E_\eta\xrightarrow{\sim}\mathcal E'_\eta.
@@ -251,7 +263,10 @@ has rank zero. On the noetherian projective curve $C$, a coherent rank-zero
 sheaf is supported on finitely many closed points and has finite length.
 :::
 
-<1>5. There are rank-two locally free sheaves
+:::
+
+::: {.pf-step #composition-series-of-torsion}
+There are rank-two locally free sheaves
 $$
 \mathcal F_0,\mathcal F_1,\ldots,\mathcal F_N
 $$
@@ -277,12 +292,12 @@ k(p_i)
 $$
 for some point $p_i\in C$.
 
-::: {.proof}
+::: pf-proof
 The finite-length torsion sheaf
 $$
 \mathcal T=\mathcal E'(A)/\mathcal E
 $$
-from step <1>4 has a composition series
+from step [](#injective-comparison-map){.pf-ref} has a composition series
 $$
 \mathcal T=\mathcal T_0
 \supset
@@ -315,7 +330,10 @@ Each $\mathcal F_i$ is a torsion-free coherent sheaf of rank two on the
 nonsingular curve $C$, hence is locally free of rank two.
 :::
 
-<1>6. For every $0\le i<N$,
+:::
+
+::: {.pf-step #each-step-is-elementary-transform}
+For every $0\le i<N$,
 $$
 \PP(\mathcal F_{i+1})
 $$
@@ -325,8 +343,8 @@ $$
 $$
 by one elementary transformation.
 
-::: {.proof}
-The quotient in step <1>5,
+::: pf-proof
+The quotient in step [](#composition-series-of-torsion){.pf-ref},
 $$
 \mathcal F_i\twoheadrightarrow k(p_i),
 $$
@@ -344,7 +362,7 @@ $$
 =
 \ker\bigl(\mathcal F_i\to k(p_i)\bigr).
 $$
-Step <1>1 therefore gives
+Step [](#elementary-transform-as-kernel){.pf-ref} therefore gives
 $$
 \operatorname{elm}_{P_i}\PP(\mathcal F_i)
 \cong
@@ -352,7 +370,10 @@ $$
 $$
 :::
 
-<1>7. There is a finite sequence of elementary transformations taking
+:::
+
+::: {.pf-step #finite-sequence-to-twisted-target}
+There is a finite sequence of elementary transformations taking
 $$
 \PP(\mathcal E)
 $$
@@ -361,8 +382,8 @@ $$
 \PP(\mathcal E'(A)).
 $$
 
-::: {.proof}
-Step <1>6 gives a finite sequence
+::: pf-proof
+Step [](#each-step-is-elementary-transform){.pf-ref} gives a finite sequence
 $$
 \PP(\mathcal E'(A))
 =
@@ -378,12 +399,15 @@ $$
 $$
 in which every arrow is an elementary transformation.
 
-By step <1>2, every arrow can be reversed by another elementary
+By step [](#inverse-is-elementary-transform){.pf-ref}, every arrow can be reversed by another elementary
 transformation. Reversing the finite sequence therefore gives elementary
 transformations from $\PP(\mathcal E)$ to $\PP(\mathcal E'(A))$.
 :::
 
-<1>8. Twisting by a line bundle does not change a projective bundle:
+:::
+
+::: {.pf-step #twist-invariance-of-projective-bundle}
+Twisting by a line bundle does not change a projective bundle:
 $$
 \boxed{
 \PP(\mathcal E'(A))
@@ -393,7 +417,7 @@ $$
 $$
 over $C$.
 
-::: {.proof}
+::: pf-proof
 For every $C$-scheme $T$, tensoring with the pullback of $\OO_C(A)$ gives a
 bijection between invertible quotients of $\mathcal E'_T$ and invertible
 quotients of
@@ -414,7 +438,10 @@ $$
 for an invertible sheaf $\mathcal L$.
 :::
 
-<1>9. There is a finite sequence of elementary transformations transforming
+:::
+
+::: {.pf-step #full-sequence-x-to-xprime}
+There is a finite sequence of elementary transformations transforming
 $X$ into $X'$:
 $$
 \boxed{
@@ -428,21 +455,23 @@ X=\PP(\mathcal E)
 }
 $$
 
-::: {.proof}
-Step <1>7 supplies the finite elementary-transformation sequence from
-$\PP(\mathcal E)$ to $\PP(\mathcal E'(A))$, and step <1>8 identifies the
+::: pf-proof
+Step [](#finite-sequence-to-twisted-target){.pf-ref} supplies the finite elementary-transformation sequence from
+$\PP(\mathcal E)$ to $\PP(\mathcal E'(A))$, and step [](#twist-invariance-of-projective-bundle){.pf-ref} identifies the
 latter ruled surface over $C$ with $X'$. Thus the two given geometrically
 ruled surfaces are connected by finitely many elementary transformations.
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 identify the geometric elementary transformation with a
+::: pf-qed
+Steps [](#elementary-transform-as-kernel){.pf-ref}, [](#inverse-is-elementary-transform){.pf-ref} and [](#section-self-intersection-drops){.pf-ref} identify the geometric elementary transformation with a
 length-one modification of the defining rank-two bundle and verify the
-self-intersection calculation from the hint. Steps <1>4--<1>6 factor the
+self-intersection calculation from the hint. Steps [](#injective-comparison-map){.pf-ref}, [](#composition-series-of-torsion){.pf-ref} and [](#each-step-is-elementary-transform){.pf-ref} factor the
 difference between the two bundles into finitely many such modifications,
-and steps <1>7--<1>9 reverse the resulting chain and remove the harmless
+and steps [](#finite-sequence-to-twisted-target){.pf-ref}, [](#twist-invariance-of-projective-bundle){.pf-ref} and [](#full-sequence-x-to-xprime){.pf-ref} reverse the resulting chain and remove the harmless
 line-bundle twist.
+:::
+
 :::
 :::

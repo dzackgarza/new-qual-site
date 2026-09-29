@@ -43,13 +43,16 @@ $$
 \mcf'=\ro{\mcf}{U}.
 $$
 
-<1>1. There is a canonical map
+::: pf
+
+::: {.pf-step #alpha-map}
+There is a canonical map
 $$
 \alpha:\mcf_a\longrightarrow\mcf'_a
 $$
 defined by restricting a representative to its intersection with $U$.
 
-::: {.proof}
+::: pf-proof
 Represent a germ in $\mcf_a$ by a pair
 $$
 (V,s),
@@ -82,13 +85,16 @@ is an open neighborhood of $a$ in $U$ on which the corresponding
 restricted representatives agree. Hence $\alpha$ is well defined.
 :::
 
-<1>2. There is a canonical map
+:::
+
+::: {.pf-step #beta-map}
+There is a canonical map
 $$
 \beta:\mcf'_a\longrightarrow\mcf_a
 $$
 that regards a representative in $U$ as the same representative in $X$.
 
-::: {.proof}
+::: pf-proof
 Represent a germ in $\mcf'_a$ by
 $$
 (V,s),
@@ -107,9 +113,12 @@ neighborhood is also open in $X$, so they determine the same germ in
 $\mcf_a$. Thus $\beta$ is well defined.
 :::
 
-<1>3. The maps $\alpha$ and $\beta$ are inverse isomorphisms.
+:::
 
-::: {.proof}
+::: {.pf-step #alpha-beta-inverse}
+The maps $\alpha$ and $\beta$ are inverse isomorphisms.
+
+::: pf-proof
 For a representative $(V,s)$ in $U$, one has $V\cap U=V$, so
 $$
 \alpha\beta([V,s]_a)=[V,s]_a.
@@ -134,10 +143,12 @@ The construction uses only restriction maps, so it preserves whatever
 algebraic structure the sheaf values carry.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 construct the canonical stalk isomorphism and prove that
+::: pf-qed
+Steps [](#alpha-map){.pf-ref}, [](#beta-map){.pf-ref} and [](#alpha-beta-inverse){.pf-ref} construct the canonical stalk isomorphism and prove that
 its two representative-level maps are inverse.
+:::
+
 :::
 :::

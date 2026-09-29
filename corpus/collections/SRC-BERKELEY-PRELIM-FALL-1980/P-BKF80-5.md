@@ -27,9 +27,12 @@ I\coloneqq\int_0^\infty\frac{x^{m-1}}{1+x^n}\,dx,
 \theta\coloneqq\frac{\pi m}{n}.
 $$
 
-<1>1. The improper integral $I$ converges.
+::: pf
 
-::: {.proof}
+::: {.pf-step #integral-converges}
+The improper integral $I$ converges.
+
+::: pf-proof
 Near $0$ the integrand is $O(x^{m-1})$, which is integrable because $m>0$. As $x\to\infty$,
 $$
 \frac{x^{m-1}}{1+x^n}=O(x^{m-n-1}),
@@ -37,7 +40,10 @@ $$
 and $m-n-1<-1$ because $m<n$. Hence the integral converges at both endpoints.
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #sector-integral-identity}
+Let
 $$
 h(z)\coloneqq\frac{z^{m-1}}{1+z^n}.
 $$
@@ -49,7 +55,7 @@ $$
 $$
 as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
 Along the positive real ray, the radial contribution is
 $$
 \int_0^R\frac{x^{m-1}}{1+x^n}\,dx.
@@ -72,7 +78,10 @@ $$
 while the arc length is $2\pi R/n$. Hence its integral is $O(R^{m-n})$, which tends to $0$ because $m<n$.
 :::
 
-<1>3. The sector contains exactly one pole of $h$, namely
+:::
+
+::: {.pf-step #residue-computation}
+The sector contains exactly one pole of $h$, namely
 $$
 z_0=e^{i\pi/n},
 $$
@@ -82,7 +91,7 @@ $$
 =-\frac1n e^{i\pi m/n}.
 $$
 
-::: {.proof}
+::: pf-proof
 The poles of $h$ are the roots of $z^n=-1$, with arguments $(2k+1)\pi/n$. Exactly one of these has argument strictly between $0$ and $2\pi/n$, namely $z_0=e^{i\pi/n}$. It is simple, and therefore
 $$
 \begin{aligned}
@@ -95,18 +104,21 @@ $$
 $$
 :::
 
-<1>4. The value of the integral is
+:::
+
+::: {.pf-step #integral-value}
+The value of the integral is
 $$
 I=\boxed{\frac{\pi}{n}\csc\left(\frac{\pi m}{n}\right)}.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>3,
+::: pf-proof
+By the residue theorem and step [](#residue-computation){.pf-ref},
 $$
 \int_{\Gamma_R}h(z)\,dz
 =-\frac{2\pi i}{n}e^{i\pi m/n}
 $$
-for all sufficiently large $R$. Letting $R\to\infty$ in step <1>2 and using step <1>1 yields
+for all sufficiently large $R$. Letting $R\to\infty$ in step [](#sector-integral-identity){.pf-ref} and using step [](#integral-converges){.pf-ref} yields
 $$
 \left(1-e^{2i\theta}\right)I
 =-\frac{2\pi i}{n}e^{i\theta}.
@@ -122,9 +134,11 @@ I=\frac{\pi}{n\sin\theta}
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the requested value.
+::: pf-qed
+Step [](#integral-value){.pf-ref} gives the requested value.
+:::
+
 :::
 :::

@@ -55,8 +55,12 @@ so that its directed boundary word is
 x\,y\,z\,x^{-1}\,z\,y^{-1}.
 \]
 
-<1>1. All six polygon vertices are identified to one vertex in the quotient.
-::: {.proof}
+::: pf
+
+::: {.pf-step #vertices-identified}
+All six polygon vertices are identified to one vertex in the quotient.
+
+::: pf-proof
 Matching equally labelled edges in the directions indicated by their labels gives the endpoint identifications
 \[
 \begin{array}{c|c}
@@ -80,12 +84,16 @@ v_2\sim v_4.
 Hence every $v_i$ belongs to the same equivalence class.
 :::
 
-<1>2. The quotient surface has Euler characteristic
+:::
+
+::: {.pf-step #euler-characteristic}
+The quotient surface has Euler characteristic
 \[
 \chi=-1.
 \]
-::: {.proof}
-The polygon quotient gives a CW structure with one $2$-cell, one $1$-cell for each paired label $x,y,z$, and by <1>1 one $0$-cell.
+
+::: pf-proof
+The polygon quotient gives a CW structure with one $2$-cell, one $1$-cell for each paired label $x,y,z$, and by step [](#vertices-identified){.pf-ref} one $0$-cell.
 Thus
 \[
 F=1,
@@ -100,8 +108,12 @@ and therefore
 \]
 :::
 
-<1>3. The quotient surface is nonorientable.
-::: {.proof}
+:::
+
+::: {.pf-step #nonorientable}
+The quotient surface is nonorientable.
+
+::: pf-proof
 In the boundary word the two occurrences of $z$ have the same exponent:
 \[
 \cdots z\cdots z\cdots.
@@ -112,7 +124,10 @@ The $z$-pair violates this condition, so no orientation descends to the quotient
 Hence the surface is nonorientable.
 :::
 
-<1>4. The surface in part (i) is
+:::
+
+::: pf-step
+The surface in part (i) is
 \[
 \boxed{\mathbb{RP}^2\#\mathbb{RP}^2\#\mathbb{RP}^2},
 \]
@@ -120,7 +135,8 @@ the nonorientable surface of genus $3$, and its Euler characteristic is
 \[
 \boxed{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
 By the classification theorem for compact connected surfaces, a closed nonorientable surface is uniquely a connected sum
 \[
 N_k=\#^k\mathbb{RP}^2
@@ -129,18 +145,21 @@ for some $k\ge1$, and
 \[
 \chi(N_k)=2-k.
 \]
-By <1>2--<1>3 the present surface is nonorientable and has Euler characteristic $-1$.
+By steps [](#euler-characteristic){.pf-ref} and [](#nonorientable){.pf-ref} the present surface is nonorientable and has Euler characteristic $-1$.
 Therefore
 \[
 -1=2-k,
 \]
 so $k=3$.
+For part (ii), a finite polygon can only produce a compact quotient, so the polygon classification applies to compact connected surfaces without boundary.
 :::
 
-For part (ii), a finite polygon can only produce a compact quotient, so the polygon classification applies to compact connected surfaces without boundary.
+:::
 
-<1>5. Every compact connected surface without boundary can be represented by a polygon with an even number of sides whose sides are identified in pairs.
-::: {.proof}
+::: {.pf-step #polygon-presentation-exists}
+Every compact connected surface without boundary can be represented by a polygon with an even number of sides whose sides are identified in pairs.
+
+::: pf-proof
 Such a surface admits a finite triangulation.
 By joining adjacent triangles across suitably chosen edges, one may cut the triangulation open to a single polygonal disk.
 Every edge along the boundary of this disk comes from cutting an edge of the surface and therefore occurs exactly twice.
@@ -148,7 +167,10 @@ Recovering the original surface consists of identifying each such pair.
 Consequently the boundary has an even number of sides and can be encoded by a word in which each edge label occurs exactly twice, with an exponent recording its direction along the boundary.
 :::
 
-<1>6. In the orientable case, elementary cut-and-paste changes of the polygon reduce the edge word to
+:::
+
+::: {.pf-step #orientable-normal-form}
+In the orientable case, elementary cut-and-paste changes of the polygon reduce the edge word to
 \[
 a_1b_1a_1^{-1}b_1^{-1}
 \cdots
@@ -162,7 +184,8 @@ of genus $g$, with
 \[
 \chi(\Sigma_g)=2-2g.
 \]
-::: {.proof}
+
+::: pf-proof
 For an orientable quotient, every paired label can be arranged to occur once in each direction.
 The standard polygon-reduction moves gather the pairs into commutator blocks
 \[
@@ -184,7 +207,10 @@ giving
 The sphere is the genus-$0$ case; it may also be represented by a $2$-gon with word $aa^{-1}$.
 :::
 
-<1>7. In the nonorientable case, elementary cut-and-paste changes reduce the edge word to
+:::
+
+::: {.pf-step #nonorientable-normal-form}
+In the nonorientable case, elementary cut-and-paste changes reduce the edge word to
 \[
 a_1a_1a_2a_2\cdots a_ka_k.
 \]
@@ -196,7 +222,8 @@ of genus $k$, with
 \[
 \chi(N_k)=2-k.
 \]
-::: {.proof}
+
+::: pf-proof
 The presence of a paired edge occurring twice with the same direction produces a crosscap.
 The polygon-reduction moves collect all orientation-reversing pairs into square blocks
 \[
@@ -217,9 +244,13 @@ so
 \]
 :::
 
-<1>8. These normal forms classify compact connected surfaces without boundary.
-::: {.proof}
-Every such surface has a paired polygon presentation by <1>5. The reduction in <1>6--<1>7 places it in exactly one of two families: orientable or nonorientable.
+:::
+
+::: pf-step
+These normal forms classify compact connected surfaces without boundary.
+
+::: pf-proof
+Every such surface has a paired polygon presentation by step [](#polygon-presentation-exists){.pf-ref}. The reduction in steps [](#orientable-normal-form){.pf-ref} and [](#nonorientable-normal-form){.pf-ref} places it in exactly one of two families: orientable or nonorientable.
 Orientability distinguishes the two families.
 Within the orientable family, the Euler characteristic determines
 \[
@@ -231,4 +262,9 @@ k=2-\chi.
 \]
 Thus the polygonal normal form records exactly the orientability and genus, which are the invariants in the classification theorem.
 :::
+
+:::
+
+:::
+
 :::

@@ -47,7 +47,10 @@ We use only the inequalities in the statement.  The pairwise condition is
 needed only for distinct indices; if the phrase ``for each $i,j$'' is read
 as also including $i=j$, that is a stronger hypothesis.
 
-<1>1. We first prove the following elementary lemma.  Let
+::: pf
+
+::: {.pf-step #sum-squares-lemma}
+We first prove the following elementary lemma.  Let
 $$
 A>0,
 $$
@@ -69,7 +72,7 @@ $$
 \boxed{\sum_{i=1}^6x_i^2<A^2.}
 $$
 
-::: {.proof}
+::: pf-proof
 Reorder the variables so that
 $$
 x_1\ge x_2\ge\cdots\ge x_6>0,
@@ -145,7 +148,10 @@ $$
 This proves the lemma.
 :::
 
-<1>2. Put
+:::
+
+::: {.pf-step #a-positive}
+Put
 $$
 s=\sum_{i=1}^6 b_i.
 $$
@@ -154,14 +160,17 @@ $$
 \boxed{a>0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Every $b_i$ is positive, and for two distinct indices $i,j$ one has
 $$
 a>b_i+b_j>0.
 $$
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #case-small-sum}
+If
 $$
 s\le2a,
 $$
@@ -170,8 +179,8 @@ $$
 \boxed{\sum_i b_i^2<a^2.}
 $$
 
-::: {.proof}
-Apply the lemma of step <1>1 with
+::: pf-proof
+Apply the lemma of step [](#sum-squares-lemma){.pf-ref} with
 $$
 A=a,
 \qquad
@@ -194,7 +203,10 @@ $$
 $$
 :::
 
-<1>4. It remains to treat the case
+:::
+
+::: {.pf-step #translated-positive}
+It remains to treat the case
 $$
 s>2a.
 $$
@@ -211,7 +223,7 @@ $$
 \boxed{c_i>0\text{ for every }i.}
 $$
 
-::: {.proof}
+::: pf-proof
 For each $i$, the third family of hypotheses gives
 $$
 2a-\sum_{j\ne i}b_j>0.
@@ -230,7 +242,10 @@ c_i=b_i-t>0.
 $$
 :::
 
-<1>5. Put
+:::
+
+::: {.pf-step #translated-bound-A}
+Put
 $$
 A=a-2t.
 $$
@@ -243,7 +258,7 @@ $$
 \boxed{c_i+c_j<A.}
 $$
 
-::: {.proof}
+::: pf-proof
 Using the pairwise hypothesis,
 $$
 \begin{aligned}
@@ -253,15 +268,18 @@ c_i+c_j
 &=A.
 \end{aligned}
 $$
-The left side is positive by step <1>4, so necessarily $A>0$.
+The left side is positive by step [](#translated-positive){.pf-ref}, so necessarily $A>0$.
 :::
 
-<1>6. The translated variables also satisfy
+:::
+
+::: {.pf-step #translated-sum-bound}
+The translated variables also satisfy
 $$
 \boxed{\sum_i c_i<2A.}
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 s=2a+t,
@@ -284,30 +302,36 @@ $$
 $$
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #translated-sum-squares}
+Therefore
 $$
 \boxed{\sum_i c_i^2<A^2.}
 $$
 
-::: {.proof}
-Steps <1>4--<1>6 verify all hypotheses of the lemma in step <1>1 for the
+::: pf-proof
+Steps [](#translated-positive){.pf-ref}, [](#translated-bound-A){.pf-ref} and [](#translated-sum-bound){.pf-ref} verify all hypotheses of the lemma in step [](#sum-squares-lemma){.pf-ref} for the
 six numbers $c_i$ and the positive number $A=a-2t$. Hence
 $$
 \sum_i c_i^2<A^2.
 $$
 :::
 
-<1>8. In the case $s>2a$ one still has
+:::
+
+::: {.pf-step #case-large-sum}
+In the case $s>2a$ one still has
 $$
 \boxed{\sum_i b_i^2<a^2.}
 $$
 
-::: {.proof}
+::: pf-proof
 Because
 $$
 b_i=c_i+t,
 $$
-step <1>7 gives
+step [](#translated-sum-squares){.pf-ref} gives
 $$
 \begin{aligned}
 \sum_i b_i^2
@@ -341,20 +365,25 @@ $$
 $$
 :::
 
-<1>9. Consequently
+:::
+
+::: {.pf-step #conclusion}
+Consequently
 $$
 \boxed{a^2-\sum_{i=1}^6b_i^2>0.}
 $$
 
-::: {.proof}
-If $s\le2a$, this is step <1>3. If $s>2a$, it is step <1>8. These two cases
+::: pf-proof
+If $s\le2a$, this is step [](#case-small-sum){.pf-ref}. If $s>2a$, it is step [](#case-large-sum){.pf-ref}. These two cases
 exhaust all possibilities.
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves the elementary auxiliary inequality, and steps <1>2--<1>9
+::: pf-qed
+Step [](#sum-squares-lemma){.pf-ref} proves the elementary auxiliary inequality, and steps [](#a-positive){.pf-ref}, [](#case-small-sum){.pf-ref}, [](#translated-positive){.pf-ref}, [](#translated-bound-A){.pf-ref}, [](#translated-sum-bound){.pf-ref}, [](#translated-sum-squares){.pf-ref}, [](#case-large-sum){.pf-ref} and [](#conclusion){.pf-ref}
 apply it directly to the hypotheses of the problem.
+:::
+
 :::
 :::

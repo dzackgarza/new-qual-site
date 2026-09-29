@@ -33,13 +33,18 @@ Prove that if $B$ is a closed subset of $X$ such that $A\subset B$ then $\overli
 :::
 
 ::: {.solution}
-<1>1. Define the closure of $A$ by
+
+::: pf
+
+::: {.pf-step #closure-definition}
+Define the closure of $A$ by
 \[
 \overline A
 =\bigcap\{F\subseteq X:F\text{ is closed in }X\text{ and }A\subseteq F\}.
 \]
 Thus $\overline A$ is the smallest closed subset of $X$ containing $A$.
-::: {.proof}
+
+::: pf-proof
 The family being intersected is nonempty because $X$ itself is closed and contains $A$.
 An arbitrary intersection of closed sets is closed, so $\overline A$ is closed.
 Every member of the family contains $A$, hence their intersection contains $A$.
@@ -50,12 +55,16 @@ Finally, if $F$ is any closed subset of $X$ containing $A$, then $F$ is one of t
 This proves the stated minimality.
 :::
 
-<1>2. If $B$ is closed and $A\subseteq B$, then
+:::
+
+::: pf-step
+If $B$ is closed and $A\subseteq B$, then
 \[
 \overline A\subseteq B.
 \]
-::: {.proof}
-Since $B$ is closed and contains $A$, it belongs to the family of closed supersets occurring in the definition in <1>1. An intersection is contained in each set being intersected.
+
+::: pf-proof
+Since $B$ is closed and contains $A$, it belongs to the family of closed supersets occurring in the definition in step [](#closure-definition){.pf-ref}. An intersection is contained in each set being intersected.
 Therefore
 \[
 \overline A
@@ -63,4 +72,9 @@ Therefore
 \subseteq B.
 \]
 :::
+
+:::
+
+:::
+
 :::

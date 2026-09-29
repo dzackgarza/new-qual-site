@@ -33,13 +33,18 @@ Prove that $U$ is a relatively open subset of $\mathcal{P}([0,1])$ with respect 
 :::
 
 ::: {.solution}
+
 Fix $\mu_0\in U$ and define
 \[
 F_{\mu_0}(y):=\int_0^1 f(x,y)\,d\mu_0(x).
 \]
 
-<1>1. Obtain a uniform margin below $1$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Obtain a uniform margin below $1$.
+
+::: pf-proof
 Because $f$ is continuous on the compact square $[0,1]^2$, it is uniformly continuous. Hence the map
 \[
 y\longmapsto f_y:=f(\cdot,y)
@@ -61,8 +66,12 @@ Put
 \]
 :::
 
-<1>2. Reduce the parameter family to finitely many weak* test functions.
-::: {.proof}
+:::
+
+::: pf-step
+Reduce the parameter family to finitely many weak* test functions.
+
+::: pf-proof
 The set
 \[
 K:=\{f_y:y\in[0,1]\}\subset C([0,1])
@@ -83,8 +92,12 @@ V:=\left\{
 Each condition involves evaluation of the measure at one continuous function, so $V$ is relatively weak* open and contains $\mu_0$.
 :::
 
-<1>3. Show that $V\subset U$.
-::: {.proof}
+:::
+
+::: pf-step
+Show that $V\subset U$.
+
+::: pf-proof
 Fix $\mu\in V$ and $y\in[0,1]$. Choose $j$ with
 \[
 \|f_y-f_{y_j}\|_\infty<\eta.
@@ -125,4 +138,9 @@ Hence every $\mu_0\in U$ has a relative weak* neighborhood contained in $U$, so
 \boxed{U\text{ is relatively weak* open in }\mathcal P([0,1]).}
 \]
 :::
+
+:::
+
+:::
+
 :::

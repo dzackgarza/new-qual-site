@@ -76,14 +76,17 @@ P=\sum_{n_i<0}(-n_i)C_i
 $$
 are effective divisors with no common irreducible component.
 
-<1>1. After a birational morphism
+::: pf
+
+::: {.pf-step #snc-resolution}
+After a birational morphism
 $$
 g_1:X_1\longrightarrow X
 $$
 which is a finite composition of point blowups, the support of the divisor
 of $f$ on $X_1$ is a simple normal-crossing divisor.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 Y=\operatorname{Supp}(Z)\cup\operatorname{Supp}(P).
@@ -105,15 +108,18 @@ some exceptional curves, with integer coefficients. Hence its support is a
 union of components of the resolved total transform of $Y$. A union of
 components of a simple normal-crossing divisor is again simple normal
 crossings.
-:::
 
 On any subsequent surface write
 $$
 (f)=Z'-P'
 $$
 for the positive and negative parts.
+:::
 
-<1>2. Suppose a zero component of multiplicity $a>0$ and a pole component
+:::
+
+::: {.pf-step #blowup-crossing-coefficient}
+Suppose a zero component of multiplicity $a>0$ and a pole component
 of multiplicity $b>0$ meet at a point $Q$. After blowing up $Q$, their
 strict transforms are disjoint and the exceptional curve $E$ occurs in
 $(f)$ with coefficient
@@ -121,7 +127,7 @@ $$
 \boxed{a-b.}
 $$
 
-::: {.proof}
+::: pf-proof
 Because the support is simple normal crossings, there are regular parameters
 $$
 x,y\in\OO_{X,Q}
@@ -156,7 +162,10 @@ corresponding to the tangent directions $x=0$ and $y=0$, so they no longer
 meet one another.
 :::
 
-<1>3. The effect of step <1>2 on zero--pole crossings is the Euclidean
+:::
+
+::: {.pf-step #euclidean-algorithm-step}
+The effect of step [](#blowup-crossing-coefficient){.pf-ref} on zero--pole crossings is the Euclidean
 algorithm:
 $$
 \boxed{
@@ -168,8 +177,8 @@ $$
 \end{cases}}
 $$
 
-::: {.proof}
-If $a=b$, step <1>2 gives coefficient zero on $E$. Since the two strict
+::: pf-proof
+If $a=b$, step [](#blowup-crossing-coefficient){.pf-ref} gives coefficient zero on $E$. Since the two strict
 transforms are disjoint, no zero component meets a pole component over $Q$.
 
 If $a>b$, then $E$ is a zero component of multiplicity $a-b$. It meets the
@@ -188,12 +197,15 @@ $$
 $$
 :::
 
-<1>4. A finite sequence of further point blowups makes
+:::
+
+::: {.pf-step #zero-pole-disjoint}
+A finite sequence of further point blowups makes
 $$
 \boxed{\operatorname{Supp}(Z')\cap\operatorname{Supp}(P')=\varnothing.}
 $$
 
-::: {.proof}
+::: pf-proof
 At every stage the support of $(f)$ remains simple normal crossings: blowing
 up a transverse crossing of two components replaces it by an exceptional
 curve meeting the two strict transforms transversely at distinct points.
@@ -212,7 +224,7 @@ finitely many components, and two distinct irreducible curves on the
 noetherian surface have zero-dimensional, hence finite, intersection unless
 they share a component. The positive and negative parts share none.
 
-Blow up one zero--pole crossing of orders $(a,b)$. By step <1>3:
+Blow up one zero--pole crossing of orders $(a,b)$. By step [](#euclidean-algorithm-step){.pf-ref}:
 
 - if $a=b$, its contribution $a+b$ disappears;
 - if $a>b$, it is replaced by a contribution
@@ -225,21 +237,24 @@ away from its centre. Hence $M$ strictly decreases after every such blowup.
 Because $M$ is a nonnegative integer, the process terminates after finitely
 many steps. At termination $M=0$, which is exactly the displayed
 disjointness.
-:::
 
 Let
 $$
 g:X'\longrightarrow X
 $$
-be the composite of the embedded resolution in step <1>1 and all the
-additional blowups in step <1>4. On $X'$ write
+be the composite of the embedded resolution in step [](#snc-resolution){.pf-ref} and all the
+additional blowups in step [](#zero-pole-disjoint){.pf-ref}. On $X'$ write
 $$
 (f)=Z'-P',
 \qquad
 \operatorname{Supp}(Z')\cap\operatorname{Supp}(P')=\varnothing.
 $$
+:::
 
-<1>5. The rational functions
+:::
+
+::: {.pf-step #sections-and-zero-divisors}
+The rational functions
 $$
 1,\qquad f
 $$
@@ -254,7 +269,7 @@ P',
 Z'.
 $$
 
-::: {.proof}
+::: pf-proof
 For a divisor $D$ on a nonsingular variety,
 $$
 H^0(X',\OO_{X'}(D))
@@ -281,7 +296,10 @@ $$
 which gives $P'$ for $1$ and $Z'$ for $f$.
 :::
 
-<1>6. The two-dimensional subspace
+:::
+
+::: {.pf-step #pencil-base-point-free}
+The two-dimensional subspace
 $$
 V=\langle f,1\rangle
 \subseteq
@@ -289,24 +307,27 @@ H^0(X',\OO_{X'}(P'))
 $$
 is base-point free.
 
-::: {.proof}
+::: pf-proof
 Since $f$ is nonconstant, the sections $f$ and $1$ are linearly independent.
-By step <1>5, their common zero locus is
+By step [](#sections-and-zero-divisors){.pf-ref}, their common zero locus is
 $$
 \operatorname{Supp}(Z')\cap\operatorname{Supp}(P').
 $$
-Step <1>4 makes this intersection empty. Hence at every point of $X'$ at
+Step [](#zero-pole-disjoint){.pf-ref} makes this intersection empty. Hence at every point of $X'$ at
 least one of the two sections is nonzero, which is precisely base-point
 freeness of $V$.
 :::
 
-<1>7. The base-point-free pencil $V$ defines a morphism
+:::
+
+::: {.pf-step #morphism-to-p1}
+The base-point-free pencil $V$ defines a morphism
 $$
 \boxed{\varphi_f:X'\longrightarrow\PP^1}
 $$
 whose induced rational function is $f$.
 
-::: {.proof}
+::: pf-proof
 The standard construction of a morphism from a base-point-free linear
 system [[T-DIVMAPPN]] applied to the ordered basis $(f,1)$ gives
 regular local coordinate pairs which are never simultaneously zero.
@@ -331,15 +352,18 @@ Therefore the morphism $\varphi_f$ represents the pullback of the original
 rational map defined by $f$.
 :::
 
-<1>8. The morphism $g:X'\to X$ is birational and resolves the rational
+:::
+
+::: {.pf-step #g-birational-resolves-f}
+The morphism $g:X'\to X$ is birational and resolves the rational
 function $f$ in the required sense.
 
-::: {.proof}
+::: pf-proof
 Every morphism used to construct $g$ is the blowup of a point on a
 nonsingular surface. Each is birational, and a finite composition of
 birational morphisms is birational. Hence $g$ is a birational morphism.
 
-Step <1>7 gives a genuine morphism
+Step [](#morphism-to-p1){.pf-ref} gives a genuine morphism
 $$
 \varphi_f:X'\to\PP^1
 $$
@@ -347,13 +371,15 @@ which agrees in the common function field with the rational function $f$.
 This is exactly the required resolution.
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 makes the divisor of $f$ simple normal crossings. Steps
-<1>2--<1>4 separate its zero and pole divisors by finitely many additional
-blowups. Steps <1>5--<1>7 turn the resulting disjoint positive and negative
+::: pf-qed
+Step [](#snc-resolution){.pf-ref} makes the divisor of $f$ simple normal crossings. Steps
+[](#blowup-crossing-coefficient){.pf-ref}, [](#euclidean-algorithm-step){.pf-ref} and [](#zero-pole-disjoint){.pf-ref} separate its zero and pole divisors by finitely many additional
+blowups. Steps [](#sections-and-zero-divisors){.pf-ref}, [](#pencil-base-point-free){.pf-ref} and [](#morphism-to-p1){.pf-ref} turn the resulting disjoint positive and negative
 parts into a base-point-free pencil and hence a morphism to $\PP^1$.
-Step <1>8 verifies that the composite modification is birational.
+Step [](#g-birational-resolves-f){.pf-ref} verifies that the composite modification is birational.
+:::
+
 :::
 :::

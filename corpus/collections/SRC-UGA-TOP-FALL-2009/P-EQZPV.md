@@ -41,11 +41,15 @@ Then
 X=S^2/A.
 \]
 
-<1>1. For every $k\ge1$,
+::: pf
+
+::: {.pf-step #quotient-iso}
+For every $k\ge1$,
 \[
 \widetilde H_k(X;\ZZ)\cong H_k(S^2,A;\ZZ).
 \]
-::: {.proof}
+
+::: pf-proof
 Choose a CW structure on $S^2$ in which the three points $p_1,p_2,p_3$ are $0$-cells.
 Then $A$ is a subcomplex.
 For a CW pair, collapsing the subcomplex gives the quotient isomorphism
@@ -58,11 +62,15 @@ for every $k$.
 Since $S^2/A=X$, this gives the claim.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #h2-relative}
+One has
 \[
 H_2(S^2,A;\ZZ)\cong\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
 The degree-$2$ portion of the long exact sequence of the pair $(S^2,A)$ is
 \[
 H_2(A)
@@ -87,11 +95,15 @@ H_2(S^2,A)\cong\ZZ.
 \]
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #h1-relative}
+One has
 \[
 H_1(S^2,A;\ZZ)\cong\ZZ^2.
 \]
-::: {.proof}
+
+::: pf-proof
 The next portion of the long exact sequence is
 \[
 0=H_1(S^2)
@@ -132,11 +144,15 @@ H_1(S^2,A)
 It also gives $H_0(S^2,A)=0$.
 :::
 
-<1>4. For every $k\ge3$,
+:::
+
+::: {.pf-step #high-degree-vanishing}
+For every $k\ge3$,
 \[
 H_k(S^2,A;\ZZ)=0.
 \]
-::: {.proof}
+
+::: pf-proof
 For $k\ge3$, the relevant part of the long exact sequence is
 \[
 H_k(A)
@@ -151,11 +167,15 @@ All three outside groups vanish: a finite discrete space has no positive-degree 
 Thus the middle relative group vanishes.
 :::
 
-<1>5. The quotient $X$ is path connected, so
+:::
+
+::: {.pf-step #h0-computation}
+The quotient $X$ is path connected, so
 \[
 H_0(X;\ZZ)\cong\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
 The sphere $S^2$ is path connected, and the quotient map
 \[
 S^2\longrightarrow X
@@ -165,7 +185,10 @@ The continuous image of a path-connected space is path connected.
 Therefore $X$ is path connected, and its zeroth homology is $\ZZ$.
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+Hence
 \[
 \boxed{
 H_k(X;\ZZ)
@@ -176,8 +199,12 @@ H_k(X;\ZZ)
 0,&\text{otherwise}.
 \end{cases}}
 \]
-::: {.proof}
-For $k\ge1$, combine the quotient isomorphism in <1>1 with the relative-homology computations in <1>2--<1>4.
-Degree zero is <1>5.
+
+::: pf-proof
+For $k\ge1$, combine the quotient isomorphism in step [](#quotient-iso){.pf-ref} with the relative-homology computations in step [](#h2-relative){.pf-ref}, step [](#h1-relative){.pf-ref} and step [](#high-degree-vanishing){.pf-ref}.
+Degree zero is step [](#h0-computation){.pf-ref}.
 :::
+
+:::
+
 :::

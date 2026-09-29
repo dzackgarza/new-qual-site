@@ -27,15 +27,19 @@ Describe all three-dimensional vector spaces $V$ of complex-valued $C^\infty$ fu
 :::
 
 ::: {.solution}
+
 Let $D:V\to V$ denote differentiation.
 
-<1>1. For every Jordan block of $D$ of size $m$ and eigenvalue $\lambda$,
+::: pf
+
+::: {.pf-step #jordan-block-invariant-subspace}
+For every Jordan block of $D$ of size $m$ and eigenvalue $\lambda$,
 the corresponding invariant subspace is
 $$
 e^{\lambda x}\operatorname{span}_{\CC}\{1,x,\ldots,x^{m-1}\}.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose a Jordan chain $f_0,\ldots,f_{m-1}$ satisfying
 $$
 (D-\lambda)f_0=0,
@@ -56,7 +60,10 @@ e^{\lambda x}\operatorname{span}\{1,x,\ldots,x^{m-1}\}.
 $$
 :::
 
-<1>2. Every finite-dimensional differentiation-invariant space of
+:::
+
+::: {.pf-step #general-decomposition}
+Every finite-dimensional differentiation-invariant space of
 complex-valued smooth functions is a direct sum
 $$
 \bigoplus_{j=1}^r
@@ -65,7 +72,7 @@ e^{\lambda_j x}
 $$
 where the $\lambda_j$ are distinct and $m_j\geq1$.
 
-::: {.proof}
+::: pf-proof
 Over $\CC$, the linear operator $D$ has a Jordan decomposition. Group its
 Jordan blocks by eigenvalue. For a fixed eigenvalue $\lambda$, there cannot
 be two Jordan blocks: each block contains a nonzero eigenvector, while every
@@ -75,11 +82,14 @@ f'=\lambda f
 $$
 is a scalar multiple of $e^{\lambda x}$, so the $\lambda$-eigenspace of
 $D$ on the ambient function space is one-dimensional. Thus there is at most
-one block for each eigenvalue. Step <1>1 identifies the subspace belonging to
+one block for each eigenvalue. Step [](#jordan-block-invariant-subspace){.pf-ref} identifies the subspace belonging to
 each block, and the Jordan decomposition gives their direct sum.
 :::
 
-<1>3. If $\dim V=3$, then $V$ is exactly one of the following forms:
+:::
+
+::: {.pf-step #three-dim-classification}
+If $\dim V=3$, then $V$ is exactly one of the following forms:
 $$
 \boxed{
 \begin{aligned}
@@ -92,16 +102,19 @@ $$
 \end{aligned}}
 $$
 
-::: {.proof}
-By step <1>2, the positive integers $m_j$ sum to $3$. The only partitions of
+::: pf-proof
+By step [](#general-decomposition){.pf-ref}, the positive integers $m_j$ sum to $3$. The only partitions of
 $3$ are $1+1+1$, $2+1$, and $3$. Substituting these three possibilities into
-the decomposition of step <1>2 gives exactly the displayed list.
+the decomposition of step [](#general-decomposition){.pf-ref} gives exactly the displayed list.
 :::
 
-<1>4. Every space in step <1>3 is three-dimensional and invariant under
+:::
+
+::: {.pf-step #each-space-invariant-and-3d}
+Every space in step [](#three-dim-classification){.pf-ref} is three-dimensional and invariant under
 differentiation.
 
-::: {.proof}
+::: pf-proof
 For each $\lambda$ and $m$,
 $$
 D\left(e^{\lambda x}x^k\right)
@@ -116,10 +129,13 @@ eigenspaces of $D$ for distinct eigenvalues. Their dimensions therefore sum
 to $3$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 shows that every possible $V$ is on the list, and step <1>4 verifies
+::: pf-qed
+Step [](#three-dim-classification){.pf-ref} shows that every possible $V$ is on the list, and step [](#each-space-invariant-and-3d){.pf-ref} verifies
 that every space on the list has the required properties.
 :::
+
+:::
+
 :::

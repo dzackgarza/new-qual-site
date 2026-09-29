@@ -32,28 +32,35 @@ Let $f$ be a rational function with no poles in the closed upper half-plane. Pro
 :::
 
 ::: {.solution}
+
 Set
 $$
 M=\sup\{\abs{f(x)}:x\in\RR\}.
 $$
 
-<1>1. If $f$ has a pole at infinity, then both suprema in the statement are
+::: pf
+
+::: {.pf-step #pole-at-infinity-case}
+If $f$ has a pole at infinity, then both suprema in the statement are
 $+\infty$.
 
-::: {.proof}
+::: pf-proof
 Write $f=p/q$ with relatively prime polynomials. A pole at infinity means
 $\deg p>\deg q$, so $\abs{f(x)}\to\infty$ as $\abs{x}\to\infty$ along
 the real axis. Hence $M=+\infty$. Since the real axis is contained in the
 closed upper half-plane, the supremum there is also $+\infty$.
 :::
 
-<1>2. Suppose $f$ has no pole at infinity. Then the finite limit
+:::
+
+::: {.pf-step #finite-limit-at-infinity}
+Suppose $f$ has no pole at infinity. Then the finite limit
 $$
 L=\lim_{z\to\infty}f(z)
 $$
 exists and satisfies $\abs{L}\leq M$.
 
-::: {.proof}
+::: pf-proof
 For a rational function $p/q$ with $\deg p\leq\deg q$, the limit at
 infinity exists and is finite. Taking the limit along the real axis gives
 $$
@@ -64,14 +71,17 @@ $$
 $$
 :::
 
-<1>3. Under the hypothesis of step <1>2, for every $z$ with
+:::
+
+::: {.pf-step #bound-on-upper-half-plane}
+Under the hypothesis of step [](#finite-limit-at-infinity){.pf-ref}, for every $z$ with
 $\operatorname{Im}z\geq0$,
 $$
 \abs{f(z)}\leq M.
 $$
 
-::: {.proof}
-Fix such a $z$ and let $\varepsilon>0$. By step <1>2 and the definition of
+::: pf-proof
+Fix such a $z$ and let $\varepsilon>0$. By step [](#finite-limit-at-infinity){.pf-ref} and the definition of
 the limit at infinity, there is $R_0$ such that
 $$
 \abs{f(w)-L}<\varepsilon
@@ -82,7 +92,7 @@ upper half-disk
 $$
 D_R=\{w:\abs{w}<R,\ \operatorname{Im}w>0\},
 $$
-the triangle inequality and step <1>2 give
+the triangle inequality and step [](#finite-limit-at-infinity){.pf-ref} give
 $$
 \abs{f(w)}
 \leq
@@ -100,23 +110,28 @@ $$
 As $\varepsilon>0$ is arbitrary, $\abs{f(z)}\leq M$.
 :::
 
-<1>4.
+:::
+
+::: {.pf-step #sup-equality}
 $$
 \sup\{\abs{f(z)}:\operatorname{Im}z\geq0\}
 =
 \sup\{\abs{f(z)}:\operatorname{Im}z=0\}.
 $$
 
-::: {.proof}
-If $f$ has a pole at infinity, step <1>1 proves the equality. Otherwise,
-step <1>3 shows that the left-hand supremum is at most $M$, while inclusion
+::: pf-proof
+If $f$ has a pole at infinity, step [](#pole-at-infinity-case){.pf-ref} proves the equality. Otherwise,
+step [](#bound-on-upper-half-plane){.pf-ref} shows that the left-hand supremum is at most $M$, while inclusion
 of the real axis in the closed upper half-plane shows that it is at least
 $M$. The right-hand supremum is $M$ by definition.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required equality.
 :::
+
+::: pf-qed
+Step [](#sup-equality){.pf-ref} is the required equality.
+:::
+
+:::
+
 :::

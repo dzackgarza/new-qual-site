@@ -29,11 +29,16 @@ Does the genus of a curve depend on the embedding?
 :::
 
 ::: {.solution}
-<1>1. For a connected projective curve $C$, the arithmetic genus is
+
+::: pf
+
+::: {.pf-step #arithmetic-genus-definition}
+For a connected projective curve $C$, the arithmetic genus is
 \[
 \boxed{p_a(C)=1-\chi(C,\mathcal O_C).}
 \]
-::: {.proof}
+
+::: pf-proof
 For a projective curve,
 \[
 \chi(C,\mathcal O_C)
@@ -46,13 +51,17 @@ p_a(C)=1-\chi(C,\mathcal O_C).
 Equivalently, if an embedding is used to form the Hilbert polynomial, its constant term is $\chi(\mathcal O_C)=1-p_a(C)$.
 :::
 
-<1>2. If $C$ is smooth, projective, and geometrically connected, then the usual genus is
+:::
+
+::: {.pf-step #genus-serre-duality}
+If $C$ is smooth, projective, and geometrically connected, then the usual genus is
 \[
 \boxed{
 g(C)=h^1(C,\mathcal O_C)=h^0(C,\omega_C).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 For a geometrically connected proper curve,
 \[
 h^0(C,\mathcal O_C)=1.
@@ -72,7 +81,10 @@ H^0(C,\omega_C),
 so the two dimensions agree.
 :::
 
-<1>3. Over an algebraically closed field, for a possibly singular integral projective curve $C$, the geometric genus is
+:::
+
+::: {.pf-step #geometric-genus-definition}
+Over an algebraically closed field, for a possibly singular integral projective curve $C$, the geometric genus is
 \[
 \boxed{
 p_g(C)=h^0(\widetilde C,\omega_{\widetilde C}),
@@ -83,30 +95,39 @@ where
 \nu:\widetilde C\longrightarrow C
 \]
 is the normalization.
-::: {.proof}
+
+::: pf-proof
 The normalization $\widetilde C$ is normal and one-dimensional, hence regular; over an algebraically closed field it is therefore smooth.  It is the smooth projective model of the function field obtained by resolving the curve singularities.  Its ordinary smooth genus is therefore the intrinsic genus of the function field, and this is by definition the geometric genus of $C$.
 :::
 
-<1>4. For a smooth projective curve,
+:::
+
+::: {.pf-step #smooth-genus-agreement}
+For a smooth projective curve,
 \[
 \boxed{p_a(C)=p_g(C)=g(C).}
 \]
-::: {.proof}
+
+::: pf-proof
 If $C$ is smooth, it is already normal, so
 \[
 \widetilde C=C.
 \]
-Then <1>2 computes both the arithmetic genus and the geometric genus as
+Then step [](#genus-serre-duality){.pf-ref} computes both the arithmetic genus and the geometric genus as
 \[
 h^1(C,\mathcal O_C)=h^0(C,\omega_C).
 \]
 :::
 
-<1>5. Over $\mathbb C$, this same integer is the topological genus: the underlying compact Riemann surface has Euler characteristic
+:::
+
+::: {.pf-step #topological-genus}
+Over $\mathbb C$, this same integer is the topological genus: the underlying compact Riemann surface has Euler characteristic
 \[
 \boxed{\chi_{\mathrm{top}}(C)=2-2g(C).}
 \]
-::: {.proof}
+
+::: pf-proof
 For a compact Riemann surface, Hodge theory identifies
 \[
 \dim_{\mathbb C}H^0(C,\Omega_C^1)=g
@@ -125,8 +146,12 @@ and therefore
 \]
 :::
 
-<1>6. The genus does not depend on a projective embedding of the curve.
-::: {.proof}
+:::
+
+::: {.pf-step #embedding-independence}
+The genus does not depend on a projective embedding of the curve.
+
+::: pf-proof
 The quantities
 \[
 \chi(C,\mathcal O_C),
@@ -144,8 +169,11 @@ C\hookrightarrow\mathbb P^N
 can change the degree and the full Hilbert polynomial presentation, but it cannot change $p_a$, $p_g$, or the smooth genus $g$.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>5 give the standard meanings of genus, and step <1>6 proves the requested embedding independence.
+:::
+
+::: pf-qed
+Steps [](#arithmetic-genus-definition){.pf-ref}, [](#genus-serre-duality){.pf-ref}, [](#geometric-genus-definition){.pf-ref}, [](#smooth-genus-agreement){.pf-ref} and [](#topological-genus){.pf-ref} give the standard meanings of genus, and step [](#embedding-independence){.pf-ref} proves the requested embedding independence.
+:::
+
 :::
 :::

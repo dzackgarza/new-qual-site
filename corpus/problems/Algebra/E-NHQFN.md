@@ -28,12 +28,16 @@ audit:
 ::: {.solution}
 Fix a positive integer $n$, and work in an algebraic closure $\overline{\FF}_p$.
 
-<1>1. The set
+::: pf
+
+::: pf-step
+The set
 \[
 K=\{a\in\overline{\FF}_p:a^{p^n}=a\}
 \]
 is a field with exactly $p^n$ elements.
-::: {.proof}
+
+::: pf-proof
 The polynomial
 \[
 f(x)=x^{p^n}-x
@@ -55,16 +59,24 @@ Also $0,1\in K$, and if $0\neq a\in K$, then
 Thus $K$ is a subfield of $\overline{\FF}_p$ with $p^n$ elements.
 :::
 
-<1>2. The multiplicative group $K^\times$ is cyclic of order $p^n-1$.
-::: {.proof}
+:::
+
+::: pf-step
+The multiplicative group $K^\times$ is cyclic of order $p^n-1$.
+
+::: pf-proof
 The multiplicative group of every finite field is cyclic. Since $|K|=p^n$, its nonzero elements form a cyclic group of order $p^n-1$.
 :::
 
-<1>3. Let $\alpha$ generate $K^\times$. Then
+:::
+
+::: {.pf-step #alpha-generates-degree-n}
+Let $\alpha$ generate $K^\times$. Then
 \[
 [\FF_p(\alpha):\FF_p]=n.
 \]
-::: {.proof}
+
+::: pf-proof
 Set
 \[
 d=[\FF_p(\alpha):\FF_p].
@@ -84,17 +96,30 @@ p^n-1\mid p^d-1.
 If $d<n$, then $p^d-1<p^n-1$, impossible. Therefore $d=n$.
 :::
 
-<1>4. The minimal polynomial of $\alpha$ over $\FF_p$ is irreducible of degree $n$.
-::: {.proof}
+:::
+
+::: {.pf-step #min-poly-irreducible-degree-n}
+The minimal polynomial of $\alpha$ over $\FF_p$ is irreducible of degree $n$.
+
+::: pf-proof
 By definition, the minimal polynomial $m_\alpha(x)\in\FF_p[x]$ is irreducible, and
 \[
 \deg m_\alpha=[\FF_p(\alpha):\FF_p].
 \]
-By <1>3, this degree is $n$.
+By step [](#alpha-generates-degree-n){.pf-ref}, this degree is $n$.
 :::
 
-<1>5. Therefore for every positive integer $n$ there exists an irreducible polynomial of degree $n$ over $\FF_p$.
-::: {.proof}
-The polynomial $m_\alpha$ from <1>4 is such a polynomial.
 :::
+
+::: pf-step
+Therefore for every positive integer $n$ there exists an irreducible polynomial of degree $n$ over $\FF_p$.
+
+::: pf-proof
+The polynomial $m_\alpha$ from step [](#min-poly-irreducible-degree-n){.pf-ref} is such a polynomial.
+:::
+
+:::
+
+:::
+
 :::

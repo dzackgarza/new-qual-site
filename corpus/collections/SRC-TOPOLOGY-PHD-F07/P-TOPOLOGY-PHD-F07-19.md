@@ -41,8 +41,12 @@ Let
 V=M\setminus\{q\}.
 \]
 
-<1>1. Every singleton in $M$ is closed; in particular, $V$ is open in $M$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #singletons-closed}
+Every singleton in $M$ is closed; in particular, $V$ is open in $M$.
+
+::: pf-proof
 Fix distinct points $x,y\in M$.
 Choose a Euclidean neighborhood $N$ of $y$ and an open set $O\subseteq M$ with
 \[
@@ -77,8 +81,12 @@ is open, so $\{x\}$ is closed.
 Taking $x=q$ proves that $V$ is open.
 :::
 
-<1>2. We may choose an open neighborhood $U$ of $q$ homeomorphic to $\mathbb R^n$, with $q$ corresponding to $0$.
-::: {.proof}
+:::
+
+::: {.pf-step #chart-exists}
+We may choose an open neighborhood $U$ of $q$ homeomorphic to $\mathbb R^n$, with $q$ corresponding to $0$.
+
+::: pf-proof
 Let $N$ be a neighborhood of $q$ homeomorphic by
 \[
 h:N\longrightarrow\mathbb R^n
@@ -102,13 +110,17 @@ U\cong\mathbb R^n
 sending $q$ to $0$.
 :::
 
-<1>3. The punctured chart
+:::
+
+::: {.pf-step #punctured-chart-path-connected}
+The punctured chart
 \[
 U\setminus\{q\}
 \]
 is path-connected.
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+By step [](#chart-exists){.pf-ref},
 \[
 U\setminus\{q\}
 \cong
@@ -128,13 +140,17 @@ Since $n\ge3$, the sphere $S^{n-1}$ has dimension at least $2$ and is path-conne
 Therefore $U\setminus\{q\}$ is path-connected.
 :::
 
-<1>4. The punctured manifold $V=M\setminus\{q\}$ is path-connected.
-::: {.proof}
+:::
+
+::: {.pf-step #v-path-connected}
+The punctured manifold $V=M\setminus\{q\}$ is path-connected.
+
+::: pf-proof
 Every point of $M$ has a Euclidean neighborhood, so $M$ is locally path-connected.
 The open subspace $V$ is therefore locally path-connected as well.
-Hence every path component of $V$ is open in $V$, and by <1>1 is consequently open in $M$.
+Hence every path component of $V$ is open in $V$, and by step [](#singletons-closed){.pf-ref} is consequently open in $M$.
 
-By <1>3, the set
+By step [](#punctured-chart-path-connected){.pf-ref}, the set
 \[
 U\setminus\{q\}
 \]
@@ -156,9 +172,13 @@ would be a separation of $M$, contradicting the connectedness of $M$.
 Therefore $W$ is empty and $V=C_0$ is path-connected.
 :::
 
-<1>5. For $n\ge3$, the punctured chart $U\setminus\{q\}$ is simply connected.
-::: {.proof}
-By <1>3 it deformation retracts onto
+:::
+
+::: {.pf-step #punctured-chart-simply-connected}
+For $n\ge3$, the punctured chart $U\setminus\{q\}$ is simply connected.
+
+::: pf-proof
+By step [](#punctured-chart-path-connected){.pf-ref} it deformation retracts onto
 \[
 S^{n-1}.
 \]
@@ -185,21 +205,25 @@ this amalgamated product is the trivial group.
 Thus $S^m$ is simply connected for $m\ge2$, and hence so is $U\setminus\{q\}$.
 :::
 
-<1>6. The inclusion
+:::
+
+::: pf-step
+The inclusion
 \[
 i:V=M\setminus\{q\}\hookrightarrow M
 \]
 induces an isomorphism on fundamental groups.
-::: {.proof}
+
+::: pf-proof
 Choose a basepoint
 \[
 x_0\in U\setminus\{q\}.
 \]
-By <1>1--<1>2, both $U$ and $V$ are open, and
+By steps [](#singletons-closed){.pf-ref} and [](#chart-exists){.pf-ref}, both $U$ and $V$ are open, and
 \[
 M=U\cup V.
 \]
-By <1>3--<1>4, the sets $U$, $V$, and
+By steps [](#punctured-chart-path-connected){.pf-ref} and [](#v-path-connected){.pf-ref}, the sets $U$, $V$, and
 \[
 U\cap V=U\setminus\{q\}
 \]
@@ -208,7 +232,7 @@ Furthermore,
 \[
 \pi_1(U,x_0)=0
 \]
-because $U\cong\mathbb R^n$, and by <1>5,
+because $U\cong\mathbb R^n$, and by step [](#punctured-chart-simply-connected){.pf-ref},
 \[
 \pi_1(U\cap V,x_0)=0.
 \]
@@ -235,4 +259,9 @@ Hence
 \boxed{\pi_1(M\setminus\{q\})\cong\pi_1(M).}
 \]
 :::
+
+:::
+
+:::
+
 :::

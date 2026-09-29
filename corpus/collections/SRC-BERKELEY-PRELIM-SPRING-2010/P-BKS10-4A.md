@@ -32,7 +32,11 @@ Show that $A+B$ is invertible.
 :::
 
 ::: {.solution}
-<1>1. Let $v\in\RR^n$ satisfy
+
+::: pf
+
+::: {.pf-step #commuting-powers}
+Let $v\in\RR^n$ satisfy
 $$
 (A+B)v=0.
 $$
@@ -45,7 +49,7 @@ $$
 A^3v=-B^3v.
 $$
 
-::: {.proof}
+::: pf-proof
 The kernel assumption gives
 $$
 Av=-Bv.
@@ -74,7 +78,10 @@ B^2Av
 $$
 :::
 
-<1>2. The vector $v$ satisfies
+:::
+
+::: {.pf-step #b-power-relations}
+The vector $v$ satisfies
 $$
 B^3v=-v
 $$
@@ -83,8 +90,8 @@ $$
 B^2v=-v.
 $$
 
-::: {.proof}
-Since $A^3=I_n$, step <1>1 gives
+::: pf-proof
+Since $A^3=I_n$, step [](#commuting-powers){.pf-ref} gives
 $$
 v=A^3v=-B^3v,
 $$
@@ -99,14 +106,17 @@ $$
 hence $B^2v=-v$.
 :::
 
-<1>3. One has $v=0$.
+:::
 
-::: {.proof}
-Apply $B$ to the equality $B^2v=-v$ from step <1>2:
+::: {.pf-step #v-zero}
+One has $v=0$.
+
+::: pf-proof
+Apply $B$ to the equality $B^2v=-v$ from step [](#b-power-relations){.pf-ref}:
 $$
 B^3v=-Bv.
 $$
-The other equality in step <1>2 gives $B^3v=-v$, so
+The other equality in step [](#b-power-relations){.pf-ref} gives $B^3v=-v$, so
 $$
 Bv=v.
 $$
@@ -114,17 +124,20 @@ Applying $B$ once more yields
 $$
 B^2v=v.
 $$
-But step <1>2 also gives $B^2v=-v$. Therefore
+But step [](#b-power-relations){.pf-ref} also gives $B^2v=-v$. Therefore
 $$
 v=-v.
 $$
 Over $\RR$ this forces $v=0$.
 :::
 
-<1>4. The matrix $A+B$ is invertible.
+:::
 
-::: {.proof}
-Step <1>3 shows
+::: {.pf-step #invertible-conclusion}
+The matrix $A+B$ is invertible.
+
+::: pf-proof
+Step [](#v-zero){.pf-ref} shows
 $$
 \ker(A+B)=\{0\}.
 $$
@@ -133,9 +146,12 @@ defined by $A+B$ is injective, hence bijective. Therefore $A+B$ is
 invertible.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#invertible-conclusion){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

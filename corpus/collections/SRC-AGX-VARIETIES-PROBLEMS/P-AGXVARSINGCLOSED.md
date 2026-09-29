@@ -69,10 +69,13 @@ J
 $$
 be the Jacobian matrix.
 
-<1>1. The singular locus is the common zero set on $X$ of all
+::: pf
+
+::: {.pf-step #sing-locus-minors}
+The singular locus is the common zero set on $X$ of all
 $c\times c$ minors of $J$.
 
-::: {.proof}
+::: pf-proof
 If $c=0$, the Jacobian criterion says that every point is smooth, so the
 singular locus is empty and the assertion is immediate.
 
@@ -113,7 +116,10 @@ is the intersection of $X$ with the zero loci of those minors, hence is
 Zariski closed.
 :::
 
-<1>2. Over the function field
+:::
+
+::: {.pf-step #jacobian-rank-generic}
+Over the function field
 $$
 K=k(X),
 $$
@@ -122,7 +128,7 @@ $$
 c=n-d.
 $$
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 A=k[X]
@@ -178,11 +184,14 @@ c.
 $$
 :::
 
-<1>3. At least one $c\times c$ minor of $J$ is a nonzero regular function
+:::
+
+::: {.pf-step #minor-nonzero-regular}
+At least one $c\times c$ minor of $J$ is a nonzero regular function
 on $X$.
 
-::: {.proof}
-By step <1>2, the rank of $J$ over $K$ is $c$. Hence some $c\times c$
+::: pf-proof
+By step [](#jacobian-rank-generic){.pf-ref}, the rank of $J$ over $K$ is $c$. Hence some $c\times c$
 minor $\Delta$ has nonzero determinant in $K$.
 
 The entries of $J$ lie in $A$, so $\Delta\in A$. Its image in the fraction
@@ -193,12 +202,15 @@ $$
 in the domain $A$.
 :::
 
-<1>4. The smooth locus contains the nonempty distinguished open
+:::
+
+::: {.pf-step #smooth-locus-contains-dx}
+The smooth locus contains the nonempty distinguished open
 $$
 D_X(\Delta).
 $$
 
-::: {.proof}
+::: pf-proof
 Since $\Delta\ne0$ in the domain $A$, the distinguished open
 $$
 D_X(\Delta)
@@ -213,7 +225,7 @@ the chosen $c\times c$ minor is nonzero at $p$, so
 $$
 \rank J(p)\geq c.
 $$
-Step <1>1 gives the opposite inequality
+Step [](#sing-locus-minors){.pf-ref} gives the opposite inequality
 $$
 \rank J(p)\leq c.
 $$
@@ -224,10 +236,13 @@ $$
 and the Jacobian criterion makes $p$ smooth.
 :::
 
-<1>5. The singular locus is a proper Zariski-closed subset of $X$.
+:::
 
-::: {.proof}
-Step <1>1 proves closedness. Step <1>4 produces a nonempty open subset
+::: {.pf-step #sing-locus-proper-closed}
+The singular locus is a proper Zariski-closed subset of $X$.
+
+::: pf-proof
+Step [](#sing-locus-minors){.pf-ref} proves closedness. Step [](#smooth-locus-contains-dx){.pf-ref} produces a nonempty open subset
 consisting entirely of smooth points, so
 $$
 \operatorname{Sing}(X)\ne X.
@@ -235,7 +250,10 @@ $$
 Hence the singular locus is proper closed.
 :::
 
-<1>6. The smooth locus
+:::
+
+::: {.pf-step #smooth-locus-dense-open}
+The smooth locus
 $$
 X_{\reg}
 =
@@ -243,8 +261,8 @@ X\sm\operatorname{Sing}(X)
 $$
 is dense Zariski open.
 
-::: {.proof}
-By step <1>5, the complement of the singular locus is a nonempty open subset
+::: pf-proof
+By step [](#sing-locus-proper-closed){.pf-ref}, the complement of the singular locus is a nonempty open subset
 of the irreducible variety $X$. Every nonempty open subset of an irreducible
 space is dense. Therefore
 $$
@@ -252,10 +270,13 @@ $$
 $$
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 prove that the singular locus is proper Zariski closed, and
-step <1>6 gives the dense-open smooth locus.
 :::
+
+::: pf-qed
+Steps [](#sing-locus-minors){.pf-ref}, [](#jacobian-rank-generic){.pf-ref}, [](#minor-nonzero-regular){.pf-ref}, [](#smooth-locus-contains-dx){.pf-ref} and [](#sing-locus-proper-closed){.pf-ref} prove that the singular locus is proper Zariski closed, and
+step [](#smooth-locus-dense-open){.pf-ref} gives the dense-open smooth locus.
+:::
+
+:::
+
 :::

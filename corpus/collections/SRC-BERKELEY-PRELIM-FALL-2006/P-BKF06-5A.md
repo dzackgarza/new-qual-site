@@ -34,9 +34,13 @@ has no nonzero eigenvectors.
 :::
 
 ::: {.solution}
-<1>1. If $Tf=\lambda f$ with $\lambda=0$, then $f=0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #lambda-zero-implies-f-zero}
+If $Tf=\lambda f$ with $\lambda=0$, then $f=0$.
+
+::: pf-proof
 The equation $Tf=0$ means
 $$
 \int_0^x f(y)\,dy=0
@@ -46,7 +50,10 @@ left-hand side is differentiable with derivative $f(x)$. Hence
 $f(x)=0$ for every $x$.
 :::
 
-<1>2. If $Tf=\lambda f$ with $\lambda\ne0$, then $f$ is
+:::
+
+::: {.pf-step #differentiable-and-ode}
+If $Tf=\lambda f$ with $\lambda\ne0$, then $f$ is
 differentiable and satisfies
 $$
 f'(x)=\frac1\lambda f(x),
@@ -54,7 +61,7 @@ f'(x)=\frac1\lambda f(x),
 f(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 The function $Tf$ is differentiable, with
 $$
 (Tf)'=f.
@@ -71,14 +78,17 @@ $$
 so $f(0)=0$.
 :::
 
-<1>3. The equations in step <1>2 force $f=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #f-forced-zero}
+The equations in step [](#differentiable-and-ode){.pf-ref} force $f=0$.
+
+::: pf-proof
 Define
 $$
 h(x)=e^{-x/\lambda}f(x).
 $$
-Then step <1>2 gives
+Then step [](#differentiable-and-ode){.pf-ref} gives
 $$
 h'(x)
 =
@@ -94,18 +104,24 @@ $$
 one has $h=0$ and therefore $f=0$.
 :::
 
-<1>4. The operator $T$ has no nonzero eigenvectors.
+:::
 
-::: {.proof}
+::: {.pf-step #no-nonzero-eigenvectors}
+The operator $T$ has no nonzero eigenvectors.
+
+::: pf-proof
 If $f$ were an eigenvector with eigenvalue $\lambda$, then step
-<1>1 would give $f=0$ when $\lambda=0$, while steps <1>2--<1>3
+[](#lambda-zero-implies-f-zero){.pf-ref} would give $f=0$ when $\lambda=0$, while steps [](#differentiable-and-ode){.pf-ref} and [](#f-forced-zero){.pf-ref}
 would give $f=0$ when $\lambda\ne0$. Both contradict the
 requirement that an eigenvector be nonzero.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#no-nonzero-eigenvectors){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

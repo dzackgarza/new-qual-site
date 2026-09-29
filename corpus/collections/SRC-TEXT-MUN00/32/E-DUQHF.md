@@ -24,36 +24,75 @@ Show that a closed subspace of a normal space is normal.
 ::: {.solution}
 **Goal.** Show a closed subspace of a normal space is normal.
 
-<1>1. Let $X$ be normal and $Y \subseteq X$ closed.
-::: {.proof}
+::: pf
+
+::: pf-step
+Let $X$ be normal and $Y \subseteq X$ closed.
+
+::: pf-proof
 setup.
 :::
 
-<1>2. $Y$ is $T_1$.
-::: {.proof}
+:::
+
+::: pf-step
+$Y$ is $T_1$.
+
+::: pf-proof
 a subspace of a $T_1$ space is $T_1$ (singletons are closed in $X$, hence in $Y$).
 :::
 
-<1>3. $Y$ is normal.
-<2>1. Let $A, B \subseteq Y$ be disjoint closed subsets of $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #y-is-normal}
+$Y$ is normal.
+
+::: pf-proof
+
+::: pf-step
+Let $A, B \subseteq Y$ be disjoint closed subsets of $Y$.
+
+::: pf-proof
 take arbitrary disjoint closed sets in $Y$.
 :::
-<2>2. $A$ and $B$ are closed in $X$.
-::: {.proof}
+
+:::
+
+::: pf-step
+$A$ and $B$ are closed in $X$.
+
+::: pf-proof
 $A$ is closed in $Y$ and $Y$ is closed in $X$, so $A$ is closed in $X$; same for $B$.
 :::
-<2>3. By normality of $X$, there are disjoint open $U, V \subseteq X$ with $A \subseteq U$ and $B \subseteq V$.
-::: {.proof}
+
+:::
+
+::: pf-step
+By normality of $X$, there are disjoint open $U, V \subseteq X$ with $A \subseteq U$ and $B \subseteq V$.
+
+::: pf-proof
 $A, B$ are disjoint closed sets in the normal space $X$.
 :::
-<2>4. Then $U \cap Y$ and $V \cap Y$ are disjoint open sets in $Y$ separating $A$ and $B$.
-::: {.proof}
+
+:::
+
+::: pf-step
+Then $U \cap Y$ and $V \cap Y$ are disjoint open sets in $Y$ separating $A$ and $B$.
+
+::: pf-proof
 restrict the open sets to $Y$.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>3 shows $Y$ is normal.
 :::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#y-is-normal){.pf-ref} shows $Y$ is normal.
+:::
+
+:::
+
 :::

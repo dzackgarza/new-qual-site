@@ -40,8 +40,12 @@ E:=L^H=\{x\in L:h(x)=x\text{ for every }h\in H\}
 \]
 be the fixed field of \(H\).
 
-<1>1. The extension \(E/K\) is finite and separable.
-::: {.proof}
+::: pf
+
+::: {.pf-step #e-finite-separable}
+The extension \(E/K\) is finite and separable.
+
+::: pf-proof
 Since \(L/K\) is finite Galois, it is finite and separable.
 Every intermediate extension of a finite separable extension is again finite and separable.
 Thus
@@ -51,12 +55,16 @@ K\subseteq E\subseteq L
 gives a finite separable extension \(E/K\).
 :::
 
-<1>2. There exists \(\alpha\in E\) such that
+:::
+
+::: pf-step
+There exists \(\alpha\in E\) such that
 \[
 E=K(\alpha).
 \]
-::: {.proof}
-By <1>1, \(E/K\) is a finite separable extension.
+
+::: pf-proof
+By step [](#e-finite-separable){.pf-ref}, \(E/K\) is a finite separable extension.
 The primitive element theorem therefore provides an element
 \[
 \alpha\in E
@@ -67,8 +75,12 @@ E=K(\alpha).
 \]
 :::
 
-<1>3. Every element of \(H\) fixes \(\alpha\).
-::: {.proof}
+:::
+
+::: {.pf-step #h-fixes-alpha}
+Every element of \(H\) fixes \(\alpha\).
+
+::: pf-proof
 By construction,
 \[
 \alpha\in E=L^H.
@@ -83,8 +95,12 @@ H\subseteq\operatorname{Stab}_G(\alpha).
 \]
 :::
 
-<1>4. Every element of \(G\) fixing \(\alpha\) belongs to \(H\).
-::: {.proof}
+:::
+
+::: {.pf-step #fixing-implies-in-h}
+Every element of \(G\) fixing \(\alpha\) belongs to \(H\).
+
+::: pf-proof
 Let \(\sigma\in G\) satisfy
 \[
 \sigma(\alpha)=\alpha.
@@ -107,11 +123,19 @@ Thus \(\sigma\in H\), proving
 \]
 :::
 
-<1>5. The stabilizer of \(\alpha\) is exactly \(H\).
-::: {.proof}
-Combine <1>3 and <1>4:
+:::
+
+::: pf-step
+The stabilizer of \(\alpha\) is exactly \(H\).
+
+::: pf-proof
+Combine steps [](#h-fixes-alpha){.pf-ref} and [](#fixing-implies-in-h){.pf-ref}:
 \[
 \operatorname{Stab}_G(\alpha)=H.
 \]
+:::
+
+:::
+
 :::
 :::

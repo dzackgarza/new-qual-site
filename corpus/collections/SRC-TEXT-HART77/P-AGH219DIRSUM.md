@@ -37,9 +37,12 @@ $$
 $$
 with restriction maps taken componentwise.
 
-<1>1. The presheaf $\mcf\oplus\mcg$ is a sheaf.
+::: pf
 
-::: {.proof}
+::: {.pf-step #direct-sum-presheaf-is-sheaf}
+The presheaf $\mcf\oplus\mcg$ is a sheaf.
+
+::: pf-proof
 Let $U=\bigcup_iU_i$ be an open cover.
 Suppose
 $$
@@ -56,7 +59,10 @@ Thus $(s,t)$ is the unique section of $\mcf\oplus\mcg$ restricting to every $(s_
 This proves both existence and uniqueness in the sheaf gluing axiom.
 :::
 
-<1>2. With the projection morphisms
+:::
+
+::: {.pf-step #direct-sum-is-product}
+With the projection morphisms
 $$
 p_\mcf:\mcf\oplus\mcg\to\mcf,
 \qquad
@@ -64,7 +70,7 @@ p_\mcg:\mcf\oplus\mcg\to\mcg,
 $$
 the sheaf $\mcf\oplus\mcg$ is a categorical product of $\mcf$ and $\mcg$.
 
-::: {.proof}
+::: pf-proof
 Let $\mch$ be a sheaf with morphisms
 $$
 f:\mch\to\mcf,
@@ -91,7 +97,10 @@ Any morphism with these two properties must agree with $h$ on every section, sin
 Hence $h$ is unique, proving the product universal property.
 :::
 
-<1>3. With the inclusion morphisms
+:::
+
+::: {.pf-step #direct-sum-is-coproduct}
+With the inclusion morphisms
 $$
 i_\mcf:\mcf\to\mcf\oplus\mcg,
 \qquad
@@ -99,7 +108,7 @@ i_\mcg:\mcg\to\mcf\oplus\mcg,
 $$
 the sheaf $\mcf\oplus\mcg$ is a categorical coproduct of $\mcf$ and $\mcg$.
 
-::: {.proof}
+::: pf-proof
 Let $\mch$ be a sheaf with morphisms
 $$
 f:\mcf\to\mch,
@@ -130,16 +139,22 @@ so any morphism satisfying those two identities must equal $h$.
 Thus $h$ is unique, proving the coproduct universal property.
 :::
 
-<1>4. Hence $\mcf\oplus\mcg$ is both product and coproduct in the category of sheaves of abelian groups.
+:::
 
-::: {.proof}
-Step <1>2 proves the product universal property, and step <1>3 proves the coproduct universal property for the same sheaf.
+::: {.pf-step #direct-sum-is-biproduct}
+Hence $\mcf\oplus\mcg$ is both product and coproduct in the category of sheaves of abelian groups.
+
+::: pf-proof
+Step [](#direct-sum-is-product){.pf-ref} proves the product universal property, and step [](#direct-sum-is-coproduct){.pf-ref} proves the coproduct universal property for the same sheaf.
 This common object is therefore the biproduct, or direct sum, of $\mcf$ and $\mcg$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves that the sectionwise direct sum is a sheaf, and steps <1>2--<1>4 prove both required universal properties.
 :::
+
+::: pf-qed
+Step [](#direct-sum-presheaf-is-sheaf){.pf-ref} proves that the sectionwise direct sum is a sheaf, and steps [](#direct-sum-is-product){.pf-ref}, [](#direct-sum-is-coproduct){.pf-ref} and [](#direct-sum-is-biproduct){.pf-ref} prove both required universal properties.
+:::
+
+:::
+
 :::

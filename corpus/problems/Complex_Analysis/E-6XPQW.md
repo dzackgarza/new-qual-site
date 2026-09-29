@@ -42,20 +42,46 @@ and consider
 F(z)=\frac{\pi\cot(\pi z)}{(z-\tfrac12)^2}.
 \]
 
-<1>1. On $\partial Q_N$, $|\cot(\pi z)|$ is bounded by a constant independent of $N$.
-<2>1. On the vertical sides, $\Re z$ is a half-integer, so $|\cot(\pi z)|=|\tanh(\pi\Im z)|\le1$.
-<2>2. On the horizontal sides, $|\Im z|=N+1/2$. For real $x$ and $y\neq0$, $\abs{\cot(x+iy)}^2=\frac{\cos^2x+\sinh^2y}{\sin^2x+\sinh^2y}\le\coth^2y$, so $\abs{\cot(\pi z)}\le\coth(\pi(N+\tfrac12))\le\coth(\pi/2)$.
-<2>3. Also $|z-1/2|\ge N$ on $\partial Q_N$, while the perimeter is $O(N)$. Hence
+::: pf
+
+::: pf-step
+On $\partial Q_N$, $|\cot(\pi z)|$ is bounded by a constant independent of $N$.
+
+::: pf-proof
+
+::: pf-step
+On the vertical sides, $\Re z$ is a half-integer, so $|\cot(\pi z)|=|\tanh(\pi\Im z)|\le1$.
+:::
+
+::: pf-step
+On the horizontal sides, $|\Im z|=N+1/2$. For real $x$ and $y\neq0$, $\abs{\cot(x+iy)}^2=\frac{\cos^2x+\sinh^2y}{\sin^2x+\sinh^2y}\le\coth^2y$, so $\abs{\cot(\pi z)}\le\coth(\pi(N+\tfrac12))\le\coth(\pi/2)$.
+:::
+
+::: pf-step
+Also $|z-1/2|\ge N$ on $\partial Q_N$, while the perimeter is $O(N)$. Hence
 \[
 \oint_{\partial Q_N}F(z)\,dz\longrightarrow0.
 \]
+:::
 
-<1>2. The poles inside $Q_N$ are the integers $k=-N,\dots,N$ and $z=1/2$.
-<2>1. Since $\pi\cot(\pi z)$ has residue $1$ at every integer,
+:::
+
+:::
+
+::: pf-step
+The poles inside $Q_N$ are the integers $k=-N,\dots,N$ and $z=1/2$.
+
+::: pf-proof
+
+::: pf-step
+Since $\pi\cot(\pi z)$ has residue $1$ at every integer,
 \[
 \operatorname{Res}(F;k)=\frac1{(k-1/2)^2}.
 \]
-<2>2. Writing $w=z-1/2$,
+:::
+
+::: pf-step
+Writing $w=z-1/2$,
 \[
 \pi\cot(\pi z)=-\pi\tan(\pi w)=-\pi^2w+O(w^3),
 \]
@@ -67,8 +93,14 @@ and therefore
 \[
 \operatorname{Res}(F;1/2)=-\pi^2.
 \]
+:::
 
-<1>3. The residue theorem gives
+:::
+
+:::
+
+::: pf-step
+The residue theorem gives
 \[
 \frac1{2\pi i}\oint_{\partial Q_N}F(z)\,dz
 =\sum_{k=-N}^N\frac1{(k-1/2)^2}-\pi^2.
@@ -77,5 +109,9 @@ Letting $N\to\infty$ yields
 \[
 \sum_{k\in\mathbb Z}\frac1{(k-1/2)^2}=\pi^2.
 \]
+:::
+
+:::
+
 :::
 

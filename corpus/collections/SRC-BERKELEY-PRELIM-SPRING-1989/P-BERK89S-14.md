@@ -39,9 +39,12 @@ A=f(\RR^2),
 $$
 and let $S\subset\RR^2$ be the finite set of singular points of $f$.
 
-<1>1. The image $A$ is closed in $\RR^2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #a-is-closed}
+The image $A$ is closed in $\RR^2$.
+
+::: pf-proof
 Let $y_j\in A$ and suppose $y_j\to y$. Choose $x_j\in\RR^2$ with
 $f(x_j)=y_j$. Since the convergent sequence $(y_j)$ is bounded, there is
 $M>0$ such that
@@ -63,14 +66,17 @@ $$
 Therefore $y\in A$, so $A$ is closed.
 :::
 
-<1>2. The boundary of $A$ satisfies
+:::
+
+::: {.pf-step #boundary-finite}
+The boundary of $A$ satisfies
 $$
 \partial A\subseteq f(S),
 $$
 and is therefore finite.
 
-::: {.proof}
-Let $y\in\partial A$. By step <1>1, $A$ is closed, so $y\in A$ and there
+::: pf-proof
+Let $y\in\partial A$. By step [](#a-is-closed){.pf-ref}, $A$ is closed, so $y\in A$ and there
 is $x\in\RR^2$ with $f(x)=y$.
 
 If $x\notin S$, then $Df_x$ is invertible. The inverse function theorem gives
@@ -80,20 +86,26 @@ contrary to $y\in\partial A$. Hence $x\in S$, so $y\in f(S)$. Because $S$
 is finite, $f(S)$ and therefore $\partial A$ are finite.
 :::
 
-<1>3. The image $A$ has nonempty interior.
+:::
 
-::: {.proof}
+::: {.pf-step #a-has-interior}
+The image $A$ has nonempty interior.
+
+::: pf-proof
 The singular set $S$ is finite, whereas $\RR^2$ is infinite, so choose
 $x_0\in\RR^2\setminus S$. The inverse function theorem gives a neighborhood
 $U$ of $x_0$ for which $f(U)$ is open in $\RR^2$. Since
 $f(U)\subseteq A$, the set $A$ has nonempty interior.
 :::
 
-<1>4. One has $A=\RR^2$.
+:::
 
-::: {.proof}
-Suppose instead that $A\neq\RR^2$. Since $A$ is closed by step <1>1,
-$\RR^2\setminus A$ is a nonempty open set. Step <1>3 gives
+::: {.pf-step #a-equals-plane}
+One has $A=\RR^2$.
+
+::: pf-proof
+Suppose instead that $A\neq\RR^2$. Since $A$ is closed by step [](#a-is-closed){.pf-ref},
+$\RR^2\setminus A$ is a nonempty open set. Step [](#a-has-interior){.pf-ref} gives
 $\operatorname{int}(A)\neq\varnothing$. Moreover,
 $$
 \RR^2\setminus\partial A
@@ -102,21 +114,26 @@ $$
 The two sets on the right are nonempty, disjoint, and open in
 $\RR^2\setminus\partial A$. Thus they disconnect $\RR^2\setminus\partial A$.
 
-But step <1>2 says that $\partial A$ is finite, and the plane with finitely
+But step [](#boundary-finite){.pf-ref} says that $\partial A$ is finite, and the plane with finitely
 many points removed is path connected: two points can be joined by a polygonal
 path whose finitely many line segments are chosen to avoid the deleted points.
 This contradiction proves $A=\RR^2$.
 :::
 
-<1>5. The map $f$ is onto $\RR^2$.
-
-::: {.proof}
-By definition, $A=f(\RR^2)$. Step <1>4 gives $A=\RR^2$.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #f-onto}
+The map $f$ is onto $\RR^2$.
 
-::: {.proof}
-Step <1>5 is the required surjectivity.
+::: pf-proof
+By definition, $A=f(\RR^2)$. Step [](#a-equals-plane){.pf-ref} gives $A=\RR^2$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#f-onto){.pf-ref} is the required surjectivity.
+:::
+
 :::
 :::

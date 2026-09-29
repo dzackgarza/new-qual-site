@@ -32,10 +32,14 @@ Prove that $X$ is irreducible if and only if every nonempty open subset of $X$ i
 :::
 
 ::: {.solution}
-<1>1. If $X$ is irreducible, then any two nonempty open subsets of $X$
+
+::: pf
+
+::: {.pf-step #irreducible-opens-intersect}
+If $X$ is irreducible, then any two nonempty open subsets of $X$
 intersect.
 
-::: {.proof}
+::: pf-proof
 Suppose $U,V\subseteq X$ are nonempty open subsets with
 $$
 U\cap V=\emptyset.
@@ -47,10 +51,13 @@ $$
 where both closed subsets are proper. This contradicts irreducibility.
 :::
 
-<1>2. If $X$ is irreducible, every nonempty open subset of $X$ is
+:::
+
+::: {.pf-step #forward-implication}
+If $X$ is irreducible, every nonempty open subset of $X$ is
 connected.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 \emptyset\ne U\subseteq X
@@ -61,14 +68,17 @@ $$
 U=A\sqcup B.
 $$
 Because $U$ is open in $X$, the sets $A$ and $B$ are also open in $X$.
-They are nonempty and disjoint, contradicting step <1>1. Hence $U$ is
+They are nonempty and disjoint, contradicting step [](#irreducible-opens-intersect){.pf-ref}. Hence $U$ is
 connected.
 :::
 
-<1>3. Conversely, suppose every nonempty open subset of $X$ is connected.
+:::
+
+::: {.pf-step #converse-implication}
+Conversely, suppose every nonempty open subset of $X$ is connected.
 Then $X$ is irreducible.
 
-::: {.proof}
+::: pf-proof
 Suppose instead that
 $$
 X=F\cup G
@@ -101,7 +111,10 @@ Therefore no such decomposition $X=F\cup G$ exists, and $X$ is
 irreducible.
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #equivalence-statement}
+Hence
 $$
 \boxed{
 X\text{ is irreducible}
@@ -110,14 +123,17 @@ X\text{ is irreducible}
 }
 $$
 
-::: {.proof}
-Step <1>2 proves the forward implication and step <1>3 proves the reverse
+::: pf-proof
+Step [](#forward-implication){.pf-ref} proves the forward implication and step [](#converse-implication){.pf-ref} proves the reverse
 implication.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the asserted equivalence.
 :::
+
+::: pf-qed
+Step [](#equivalence-statement){.pf-ref} is exactly the asserted equivalence.
+:::
+
+:::
+
 :::

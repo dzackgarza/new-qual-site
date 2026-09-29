@@ -46,9 +46,12 @@ X=V(f)\subseteq\AA_k^3,
 $$
 and its vertex is $P=(0,0,0)$.
 
-<1>1. The vertex $P$ is singular on $X$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #vertex-singular}
+The vertex $P$ is singular on $X$.
+
+::: pf-proof
 Every first partial derivative of the degree-$d$ homogeneous polynomial $f$ is homogeneous of degree $d-1>0$.
 Hence
 $$
@@ -57,9 +60,12 @@ $$
 Since $f(P)=0$, the Jacobian criterion makes $P$ singular.
 :::
 
-<1>2. Every nonzero point of $X$ is nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #nonzero-points-nonsingular}
+Every nonzero point of $X$ is nonsingular.
+
+::: pf-proof
 Let $Q=(a,b,c)\in X\setminus\{P\}$ and let
 $$
 q=[a:b:c]\in Y\subseteq\PP^2.
@@ -75,13 +81,16 @@ f_x(Q),\quad f_y(Q),\quad f_z(Q)
 $$
 is nonzero.
 The affine Jacobian criterion therefore makes $Q$ nonsingular on $X$.
-Combined with step <1>1, this proves
+Combined with step [](#vertex-singular){.pf-ref}, this proves
 $$
 \boxed{\Sing X=\{P\}.}
 $$
 :::
 
-<1>3. On the blowup chart corresponding to the $x$-direction, the strict transform is
+:::
+
+::: {.pf-step #x-chart-strict-transform}
+On the blowup chart corresponding to the $x$-direction, the strict transform is
 $$
 \widetilde X_x
 \cong
@@ -90,7 +99,7 @@ $$
 \AA_x^1\times\bigl(Y\cap D_+(x)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 The blowup of $\AA^3$ at the origin is the closed subvariety of
 $$
 \AA^3\times\PP^2_{[U:V:W]}
@@ -120,11 +129,14 @@ The standard affine chart $Y\cap D_+(x)$ has coordinates $u=y/x$, $v=z/x$ and eq
 The displayed product decomposition follows because the strict-transform equation is independent of the coordinate $x$.
 :::
 
-<1>4. The strict transform $\widetilde X$ is nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #blowup-nonsingular}
+The strict transform $\widetilde X$ is nonsingular.
+
+::: pf-proof
 The three blowup charts $U\ne0$, $V\ne0$, $W\ne0$ cover the blowup.
-Step <1>3 gives
+Step [](#x-chart-strict-transform){.pf-ref} gives
 $$
 \widetilde X_x\cong\AA^1\times(Y\cap D_+(x)).
 $$
@@ -148,11 +160,14 @@ $$
 $$
 :::
 
-<1>5. The exceptional fibre is naturally isomorphic to $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #exceptional-fibre-iso-y}
+The exceptional fibre is naturally isomorphic to $Y$.
+
+::: pf-proof
 On the $x$-chart, the exceptional divisor is given by $x=0$.
-Intersecting with the strict-transform equation from step <1>3 gives
+Intersecting with the strict-transform equation from step [](#x-chart-strict-transform){.pf-ref} gives
 $$
 \varphi^{-1}(P)\cap\widetilde X_x
 =
@@ -170,9 +185,11 @@ $$
 Concretely, the isomorphism sends a point of the exceptional fibre represented by the direction $[U:V:W]$ to the point $[U:V:W]\in Y$; the equation $f(U,V,W)=0$ follows from the strict-transform equations.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove part (1), steps <1>3--<1>4 prove part (2), and step <1>5 proves part (3).
+::: pf-qed
+Steps [](#vertex-singular){.pf-ref} and [](#nonzero-points-nonsingular){.pf-ref} prove part (1), steps [](#x-chart-strict-transform){.pf-ref} and [](#blowup-nonsingular){.pf-ref} prove part (2), and step [](#exceptional-fibre-iso-y){.pf-ref} proves part (3).
+:::
+
 :::
 :::

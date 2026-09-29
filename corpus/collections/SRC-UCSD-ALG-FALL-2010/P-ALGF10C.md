@@ -32,8 +32,12 @@ Show that if $H$ is a cyclic normal subgroup of $G$, then every subgroup of $H$ 
 ::: {.solution}
 Let \(K\le H\), where \(H\triangleleft G\) and \(H\) is cyclic.
 
-<1>1. The subgroup \(K\) is characteristic in \(H\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #k-characteristic-in-h}
+The subgroup \(K\) is characteristic in \(H\).
+
+::: pf-proof
 Write
 \[
 H=\langle h\rangle.
@@ -54,8 +58,12 @@ Every automorphism of \(H\) sends \(h\) to \(h\) or \(h^{-1}\), so it preserves 
 Thus in either case every subgroup of \(H\), and in particular \(K\), is characteristic in \(H\).
 :::
 
-<1>2. The subgroup \(K\) is normal in \(G\).
-::: {.proof}
+:::
+
+::: pf-step
+The subgroup \(K\) is normal in \(G\).
+
+::: pf-proof
 Fix \(g\in G\).
 Because \(H\triangleleft G\), conjugation by \(g\) restricts to an automorphism
 \[
@@ -63,7 +71,7 @@ c_g:H\longrightarrow H,
 \qquad
 x\longmapsto gxg^{-1}.
 \]
-By <1>1, \(K\) is characteristic in \(H\), so
+By step [](#k-characteristic-in-h){.pf-ref}, \(K\) is characteristic in \(H\), so
 \[
 c_g(K)=K.
 \]
@@ -73,5 +81,9 @@ gKg^{-1}=K
 \]
 for every \(g\in G\).
 Therefore \(K\triangleleft G\).
+:::
+
+:::
+
 :::
 :::

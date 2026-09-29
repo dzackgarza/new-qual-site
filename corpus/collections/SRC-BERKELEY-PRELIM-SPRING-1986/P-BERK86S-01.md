@@ -29,7 +29,10 @@ Let $e=(a,b,c)$ be a unit vector in $\mathbb R^3$. Let $T$ be rotation by $180^\
 :::
 
 ::: {.solution}
-<1>1. Every $v\in\RR^3$ has the orthogonal decomposition
+::: pf
+
+::: {.pf-step #orthogonal-decomposition}
+Every $v\in\RR^3$ has the orthogonal decomposition
 $$
 v
 =
@@ -39,7 +42,7 @@ v
 $$
 where the second summand is orthogonal to $e$.
 
-::: {.proof}
+::: pf-proof
 Since $e$ is a unit vector,
 $$
 \inner{v-\inner{v}{e}e}{e}
@@ -52,15 +55,18 @@ Thus the first summand is the projection of $v$ onto the rotation axis
 and the second lies in its orthogonal plane.
 :::
 
-<1>2. The half-turn satisfies
+:::
+
+::: {.pf-step #half-turn-formula}
+The half-turn satisfies
 $$
 T(v)=2\inner{v}{e}e-v.
 $$
 
-::: {.proof}
+::: pf-proof
 A rotation by $180^\circ$ about the axis $\RR e$ fixes every vector on
 that axis and sends every vector in the orthogonal plane to its negative.
-Applying this to the decomposition in step <1>1 gives
+Applying this to the decomposition in step [](#orthogonal-decomposition){.pf-ref} gives
 $$
 \begin{aligned}
 T(v)
@@ -74,7 +80,10 @@ T(v)
 $$
 :::
 
-<1>3. In the standard basis, the matrix of $T$ is
+:::
+
+::: {.pf-step #matrix-boxed}
+In the standard basis, the matrix of $T$ is
 $$
 \boxed{
 \begin{pmatrix}
@@ -85,7 +94,7 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Regard
 $$
 e=
@@ -99,7 +108,7 @@ For a column vector $v$, one has
 $$
 \inner{v}{e}=e^{\mathsf T}v.
 $$
-Hence step <1>2 becomes
+Hence step [](#half-turn-formula){.pf-ref} becomes
 $$
 T(v)
 =
@@ -118,9 +127,11 @@ $$
 so expanding $2ee^{\mathsf T}-I_3$ gives the displayed matrix.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is the requested standard-basis matrix.
+::: pf-qed
+Step [](#matrix-boxed){.pf-ref} is the requested standard-basis matrix.
+:::
+
 :::
 :::

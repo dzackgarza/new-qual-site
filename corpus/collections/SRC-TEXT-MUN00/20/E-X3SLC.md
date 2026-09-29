@@ -31,34 +31,46 @@ is a bounded metric that gives the topology of $X$.
 ::: {.solution}
 Let $f(t)=t/(1+t)=1-1/(1+t)$ for $t\ge0$, so that $d'=f\circ d$; $f$ is increasing, $f(0)=0$, and $0\le f<1$.
 
-<1>1. $f(a+b)\le f(a)+f(b)$ for $a,b\ge0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-superadditive}
+$f(a+b)\le f(a)+f(b)$ for $a,b\ge0$.
+
+::: pf-proof
 $$
 f(a+b)=\frac a{1+a+b}+\frac b{1+a+b}\le\frac a{1+a}+\frac b{1+b}.
 $$
 :::
 
-<1>2. $d'$ is a metric bounded by $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #d-prime-is-metric}
+$d'$ is a metric bounded by $1$.
+
+::: pf-proof
 $d'\ge0$, with $d'(x,y)=0$ if and only if $d(x,y)=0$, that is, $x=y$; $d'$ is symmetric because $d$ is; and $d'<1$ because $f<1$.
-Since $f$ is increasing, step <1>1 gives
+Since $f$ is increasing, step [](#f-superadditive){.pf-ref} gives
 $$
 d'(x,z)=f(d(x,z))\le f(d(x,y)+d(y,z))\le d'(x,y)+d'(y,z).
 $$
 :::
 
-<1>3. For $0<r\le\frac12$ and every $x$, $B_d(x,r)\subseteq B_{d'}(x,r)$ and $B_{d'}(x,r)\subseteq B_d(x,2r)$.
+:::
 
-::: {.proof}
+::: {.pf-step #ball-comparison}
+For $0<r\le\frac12$ and every $x$, $B_d(x,r)\subseteq B_{d'}(x,r)$ and $B_{d'}(x,r)\subseteq B_d(x,2r)$.
+
+::: pf-proof
 $d'\le d$ gives the first inclusion.
 If $d'(x,y)<r\le\frac12$, then $d(x,y)=d'(x,y)/(1-d'(x,y))<r/(1-r)\le2r$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-By step <1>3, every ball of either metric about a point contains a ball of the other metric about that point, so $d$ and $d'$ have the same open sets; step <1>2 shows that $d'$ is a bounded metric.
 :::
+
+::: pf-qed
+By step [](#ball-comparison){.pf-ref}, every ball of either metric about a point contains a ball of the other metric about that point, so $d$ and $d'$ have the same open sets; step [](#d-prime-is-metric){.pf-ref} shows that $d'$ is a bounded metric.
+:::
+
+:::
+
 :::

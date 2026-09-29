@@ -33,7 +33,11 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The map
+
+::: pf
+
+::: {.pf-step #phi-iso}
+The map
 $$
 \Phi:\CC\longrightarrow S,
 \qquad
@@ -41,7 +45,7 @@ $$
 $$
 is a ring isomorphism.
 
-::: {.proof}
+::: pf-proof
 The map is bijective by the definition of $S$. It preserves addition entrywise. For $z=a+bi$ and $w=c+di$,
 $$
 \Phi(z)\Phi(w)
@@ -54,13 +58,16 @@ $$
 Also $\Phi(1)=I_2$. Thus $\Phi$ is a ring isomorphism.
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #j-squared-neg-identity}
+For
 $$
 J\coloneqq\frac{2A-I_2}{\sqrt{47}},
 $$
 one has $J^2=-I_2$.
 
-::: {.proof}
+::: pf-proof
 The characteristic polynomial of $A$ is
 $$
 \chi_A(T)=T^2-T+12.
@@ -78,14 +85,17 @@ J^2
 $$
 :::
 
-<1>3. The set
+:::
+
+::: {.pf-step #t-subring-iso}
+The set
 $$
 T\coloneqq\{aI_2+bJ:a,b\in\RR\}
 $$
 is a subring of $M_2(\RR)$ isomorphic to $S$, and $A\in T$.
 
-::: {.proof}
-Because $J^2=-I_2$ by step <1>2, the map
+::: pf-proof
+Because $J^2=-I_2$ by step [](#j-squared-neg-identity){.pf-ref}, the map
 $$
 \Psi:\CC\longrightarrow T,
 \qquad
@@ -95,7 +105,7 @@ preserves addition and multiplication. It is surjective by definition. If
 $$
 aI_2+bJ=0,
 $$
-and $b\neq0$, then $J=-(a/b)I_2$, whose square is a nonnegative scalar multiple of $I_2$, contradicting $J^2=-I_2$. Thus $b=0$, and then $a=0$, so $\Psi$ is injective. Hence $T\cong\CC$, and step <1>1 gives $T\cong S$.
+and $b\neq0$, then $J=-(a/b)I_2$, whose square is a nonnegative scalar multiple of $I_2$, contradicting $J^2=-I_2$. Thus $b=0$, and then $a=0$, so $\Psi$ is injective. Hence $T\cong\CC$, and step [](#phi-iso){.pf-ref} gives $T\cong S$.
 
 Finally, the definition of $J$ rearranges to
 $$
@@ -104,10 +114,13 @@ $$
 so $A\in T$.
 :::
 
-<1>4. There exists $X\in M_2(\RR)$ satisfying $X^4+13X=A$.
+:::
 
-::: {.proof}
-Under the isomorphism $\Psi$ of step <1>3, the matrix $A$ corresponds to
+::: {.pf-step #x-exists}
+There exists $X\in M_2(\RR)$ satisfying $X^4+13X=A$.
+
+::: pf-proof
+Under the isomorphism $\Psi$ of step [](#t-subring-iso){.pf-ref}, the matrix $A$ corresponds to
 $$
 \alpha\coloneqq\frac12+\frac{\sqrt{47}}2i\in\CC.
 $$
@@ -128,9 +141,11 @@ X^4+13X
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part 1, step <1>3 proves part 2, and step <1>4 proves part 3.
+::: pf-qed
+Step [](#phi-iso){.pf-ref} proves part 1, step [](#t-subring-iso){.pf-ref} proves part 2, and step [](#x-exists){.pf-ref} proves part 3.
+:::
+
 :::
 :::

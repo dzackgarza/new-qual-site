@@ -41,14 +41,17 @@ and make $A(z)$ noninvertible?
 :::
 
 ::: {.solution}
-<1>1. The determinant of $A(z)$ is
+::: pf
+
+::: {.pf-step #determinant-formula}
+The determinant of $A(z)$ is
 $$
 \det A(z)
 =
 8z^4+6z^2+1.
 $$
 
-::: {.proof}
+::: pf-proof
 Expanding along the first row gives
 $$
 \begin{aligned}
@@ -75,14 +78,17 @@ $$
 $$
 :::
 
-<1>2. The determinant factors as
+:::
+
+::: {.pf-step #determinant-factors}
+The determinant factors as
 $$
 \det A(z)
 =
 (4z^2+1)(2z^2+1).
 $$
 
-::: {.proof}
+::: pf-proof
 Direct multiplication gives
 $$
 (4z^2+1)(2z^2+1)
@@ -91,7 +97,10 @@ $$
 $$
 :::
 
-<1>3. The matrix $A(z)$ is noninvertible exactly for
+:::
+
+::: {.pf-step #singular-points}
+The matrix $A(z)$ is noninvertible exactly for
 $$
 z
 \in
@@ -103,9 +112,9 @@ z
 \right\}.
 $$
 
-::: {.proof}
+::: pf-proof
 A square matrix over $\CC$ is noninvertible exactly when its determinant
-is zero. By step <1>2,
+is zero. By step [](#determinant-factors){.pf-ref},
 $$
 \det A(z)=0
 $$
@@ -118,10 +127,13 @@ $$
 which gives the four displayed values.
 :::
 
-<1>4. All four values from step <1>3 lie in the open unit disk and are
+:::
+
+::: {.pf-step #points-in-disk-distinct}
+All four values from step [](#singular-points){.pf-ref} lie in the open unit disk and are
 distinct.
 
-::: {.proof}
+::: pf-proof
 Their absolute values are respectively
 $$
 \frac12
@@ -133,19 +145,24 @@ within each pair the two roots are negatives of one another and nonzero,
 so all four roots are distinct.
 :::
 
-<1>5. Therefore the requested number of values is
+:::
+
+::: {.pf-step #count-boxed}
+Therefore the requested number of values is
 $$
 \boxed{4}.
 $$
 
-::: {.proof}
-Steps <1>3 and <1>4 identify exactly four distinct points in
+::: pf-proof
+Steps [](#singular-points){.pf-ref} and [](#points-in-disk-distinct){.pf-ref} identify exactly four distinct points in
 $\abs{z}<1$ at which $A(z)$ is noninvertible.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required count.
+::: pf-qed
+Step [](#count-boxed){.pf-ref} is the required count.
+:::
+
 :::
 :::

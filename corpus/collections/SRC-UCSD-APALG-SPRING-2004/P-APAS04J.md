@@ -25,12 +25,17 @@ Here if $n\ge 0$, then we can define $n\cdot 1$ by induction as $0\cdot 1=0$, $1
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #c-equals-integer-multiples}
+One has
 \[
 C=\{n\cdot1:n\in\mathbb Z\},
 \]
 and this is a subring of $R$.
-::: {.proof}
+
+::: pf-proof
 The set
 \[
 D:=\{n\cdot1:n\in\mathbb Z\}
@@ -50,14 +55,18 @@ Moreover
 so $C$ is closed under multiplication and is therefore a subring of $R$.
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #phi-is-surjective-homomorphism}
+The map
 \[
 \phi:\mathbb Z\to C,
 \qquad
 \phi(n)=n\cdot1,
 \]
 is a surjective ring homomorphism.
-::: {.proof}
+
+::: pf-proof
 For $m,n\in\mathbb Z$,
 \[
 \phi(m+n)=(m+n)\cdot1=m\cdot1+n\cdot1=\phi(m)+\phi(n),
@@ -66,10 +75,13 @@ and
 \[
 \phi(mn)=(mn)\cdot1=(m\cdot1)(n\cdot1)=\phi(m)\phi(n).
 \]
-Also $\phi(1)=1$. By <1>1, every element of $C$ is $n\cdot1$ for some $n\in\mathbb Z$, so $\phi$ is surjective.
+Also $\phi(1)=1$. By step [](#c-equals-integer-multiples){.pf-ref}, every element of $C$ is $n\cdot1$ for some $n\in\mathbb Z$, so $\phi$ is surjective.
 :::
 
-<1>3. Either
+:::
+
+::: {.pf-step #c-is-z-or-zp}
+Either
 \[
 C\cong\mathbb Z
 \]
@@ -78,7 +90,8 @@ or
 C\cong\mathbb Z/p\mathbb Z
 \]
 for some prime $p$.
-::: {.proof}
+
+::: pf-proof
 Because $C$ is a subring of the integral domain $R$, it is itself an integral domain. Hence the kernel of the surjective homomorphism $\phi:\mathbb Z\to C$ is a prime ideal of $\mathbb Z$.
 
 Every ideal of $\mathbb Z$ is of the form $d\mathbb Z$ for a unique $d\ge0$. If $d>0$ and $d\mathbb Z$ is prime, then $d$ must be prime: if $d=ab$ with $1<a,d$ and $1<b<d$, then
@@ -99,4 +112,13 @@ C\cong\mathbb Z/\ker\phi.
 \]
 Therefore either $C\cong\mathbb Z$, or $C\cong\mathbb Z/p\mathbb Z=\mathbb Z_p$ for some prime $p$.
 :::
+
+:::
+
+::: pf-qed
+Step [](#c-equals-integer-multiples){.pf-ref} answers part (a); step [](#phi-is-surjective-homomorphism){.pf-ref} answers part (b); step [](#c-is-z-or-zp){.pf-ref} answers part (c).
+:::
+
+:::
+
 :::

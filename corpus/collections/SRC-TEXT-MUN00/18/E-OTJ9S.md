@@ -30,28 +30,40 @@ are imbeddings.
 ::: {.solution}
 An imbedding is a map that is a homeomorphism onto its image.
 
-<1>1. $f$ is continuous and injective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #f-continuous-injective}
+$f$ is continuous and injective.
+
+::: pf-proof
 Its coordinates are $\pi_1\circ f=\operatorname{id}_X$ and the constant map $\pi_2\circ f\equiv y_0$, both continuous, and a map into a product is continuous if and only if its coordinates are.
 If $f(x_1)=f(x_2)$, then $(x_1,y_0)=(x_2,y_0)$, so $x_1=x_2$.
 :::
 
-<1>2. $f$ is a homeomorphism onto $X\times\{y_0\}$.
+:::
 
-::: {.proof}
+::: {.pf-step #f-homeomorphism-onto-image}
+$f$ is a homeomorphism onto $X\times\{y_0\}$.
+
+::: pf-proof
 The inverse of $f\colon X\to X\times\{y_0\}$ is the restriction of $\pi_1$ to $X\times\{y_0\}$, which is continuous.
 :::
 
-<1>3. $g$ is an imbedding.
-
-::: {.proof}
-Exchange the roles of the factors in steps <1>1 and <1>2: $g$ has coordinates the constant map at $x_0$ and $\operatorname{id}_Y$, and its inverse on $\{x_0\}\times Y$ is the restriction of $\pi_2$.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #g-imbedding}
+$g$ is an imbedding.
 
-::: {.proof}
-Steps <1>1 and <1>2 show that $f$ is an imbedding, and step <1>3 treats $g$.
+::: pf-proof
+Exchange the roles of the factors in steps [](#f-continuous-injective){.pf-ref} and [](#f-homeomorphism-onto-image){.pf-ref}: $g$ has coordinates the constant map at $x_0$ and $\operatorname{id}_Y$, and its inverse on $\{x_0\}\times Y$ is the restriction of $\pi_2$.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#f-continuous-injective){.pf-ref} and [](#f-homeomorphism-onto-image){.pf-ref} show that $f$ is an imbedding, and step [](#g-imbedding){.pf-ref} treats $g$.
+:::
+
+:::
+
 :::

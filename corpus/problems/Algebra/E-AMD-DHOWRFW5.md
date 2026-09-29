@@ -39,13 +39,21 @@ N\cap A_n=A_n
 N\cap A_n=1.
 \]
 
-<1>1. If \(N\cap A_n=A_n\), then \(N=A_n\) or \(N=S_n\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #intersection-full-case}
+If \(N\cap A_n=A_n\), then \(N=A_n\) or \(N=S_n\).
+
+::: pf-proof
 In this case \(A_n\le N\le S_n\). Since \([S_n:A_n]=2\), there is no intermediate subgroup strictly between them.
 :::
 
-<1>2. The case \(N\cap A_n=1\) is impossible.
-::: {.proof}
+:::
+
+::: {.pf-step #intersection-trivial-impossible}
+The case \(N\cap A_n=1\) is impossible.
+
+::: pf-proof
 The quotient map \(S_n\to S_n/A_n\cong C_2\) restricts injectively to \(N\), because its kernel on \(N\) is \(N\cap A_n=1\). Since \(N\ne1\), it follows that \(|N|=2\).
 
 Write \(N=\{1,\sigma\}\). Normality implies
@@ -55,8 +63,15 @@ g\sigma g^{-1}\in N\setminus\{1\}=\{\sigma\}
 for every \(g\in S_n\). Hence \(\sigma\in Z(S_n)\). But \(Z(S_n)=1\) for \(n\ge3\), contradiction.
 :::
 
-Thus every nontrivial proper normal subgroup of \(S_n\) equals \(A_n\). Therefore
+:::
+
+::: pf-qed
+Steps [](#intersection-full-case){.pf-ref} and [](#intersection-trivial-impossible){.pf-ref} show that every nontrivial proper normal subgroup of \(S_n\) equals \(A_n\). Therefore
 \[
 \boxed{A_n\text{ is the unique nontrivial proper normal subgroup of }S_n\quad(n\ge5).}
 \]
+:::
+
+:::
+
 :::

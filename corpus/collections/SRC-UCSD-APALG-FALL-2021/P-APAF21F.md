@@ -26,9 +26,13 @@ Is every indecomposable $\mathbb{Z}$-module over the complex numbers irreducible
 :::
 
 ::: {.solution}
+
 No.
 
-<1>1. Let $V=\mathbb C^2$ and let the generator $1\in\mathbb Z$ act by
+::: pf
+
+::: {.pf-step #example-representation-t}
+Let $V=\mathbb C^2$ and let the generator $1\in\mathbb Z$ act by
 \[
 T=
 \begin{pmatrix}
@@ -37,7 +41,8 @@ T=
 \end{pmatrix}.
 \]
 This defines a complex representation of $\mathbb Z$.
-::: {.proof}
+
+::: pf-proof
 The matrix $T$ is invertible, with determinant $1$. Define
 \[
 \rho(n)=T^n
@@ -50,8 +55,12 @@ Then
 so $\rho$ is a representation of the additive group $\mathbb Z$.
 :::
 
-<1>2. The representation is reducible.
-::: {.proof}
+:::
+
+::: {.pf-step #representation-is-reducible}
+The representation is reducible.
+
+::: pf-proof
 The line
 \[
 W=\mathbb C e_1
@@ -63,8 +72,12 @@ Te_1=e_1.
 Thus $W$ is invariant under $T$, hence under every $T^n=\rho(n)$. Therefore $V$ has a proper nonzero $\mathbb Z$-submodule.
 :::
 
-<1>3. The representation is nevertheless indecomposable.
-::: {.proof}
+:::
+
+::: {.pf-step #representation-is-indecomposable}
+The representation is nevertheless indecomposable.
+
+::: pf-proof
 Suppose
 \[
 V=V_1\oplus V_2
@@ -84,8 +97,17 @@ T-I=
 Thus the minimal polynomial of $T$ is $(x-1)^2$, which has a repeated root, so $T$ is not diagonalizable. This contradiction shows that no such direct-sum decomposition exists.
 :::
 
-<1>4. Therefore an indecomposable complex representation of $\mathbb Z$ need not be irreducible.
-::: {.proof}
-The representation in <1>1 is reducible by <1>2 and indecomposable by <1>3.
 :::
+
+::: pf-step
+Therefore an indecomposable complex representation of $\mathbb Z$ need not be irreducible.
+
+::: pf-proof
+The representation in step [](#example-representation-t){.pf-ref} is reducible by step [](#representation-is-reducible){.pf-ref} and indecomposable by step [](#representation-is-indecomposable){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

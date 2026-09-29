@@ -30,10 +30,15 @@ for all $v\in V$.
 :::
 
 ::: {.solution}
+
 Let $\rho:G\to\operatorname{GL}(V)$ denote the representation.
 
-<1>1. The operator $\rho(g)$ commutes with $\rho(h)$ for every $h\in G$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #rho-g-commutes-with-rho-h}
+The operator $\rho(g)$ commutes with $\rho(h)$ for every $h\in G$.
+
+::: pf-proof
 Since $g\in Z(G)$,
 \[
 gh=hg
@@ -45,24 +50,37 @@ for every $h\in G$. Therefore
 Thus $\rho(g)$ is an endomorphism of the $G$-module $V$.
 :::
 
-<1>2. There exists $c\in\mathbb C$ such that
+:::
+
+::: {.pf-step #rho-g-is-scalar}
+There exists $c\in\mathbb C$ such that
 \[
 \rho(g)=cI_V.
 \]
-::: {.proof}
+
+::: pf-proof
 The representation $V$ is irreducible over the algebraically closed field $\mathbb C$. By Schur's lemma,
 \[
 \operatorname{End}_G(V)=\mathbb C\,I_V.
 \]
-By <1>1, $\rho(g)\in\operatorname{End}_G(V)$, so $\rho(g)=cI_V$ for some $c\in\mathbb C$.
+By step [](#rho-g-commutes-with-rho-h){.pf-ref}, $\rho(g)\in\operatorname{End}_G(V)$, so $\rho(g)=cI_V$ for some $c\in\mathbb C$.
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+Hence
 \[
 g\cdot v=cv
 \qquad\text{for every }v\in V.
 \]
-::: {.proof}
-This is exactly the statement $\rho(g)=cI_V$ from <1>2 evaluated on $v$.
+
+::: pf-proof
+This is exactly the statement $\rho(g)=cI_V$ from step [](#rho-g-is-scalar){.pf-ref} evaluated on $v$.
 :::
+
+:::
+
+:::
+
 :::

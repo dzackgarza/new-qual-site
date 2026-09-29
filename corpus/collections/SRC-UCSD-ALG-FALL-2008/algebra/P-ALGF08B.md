@@ -35,8 +35,12 @@ Let
 \]
 We will show that \(G\) has a nontrivial proper normal Sylow subgroup.
 
-<1>1. The number \(n_5\) of Sylow \(5\)-subgroups is either \(1\) or \(6\), and the number \(n_3\) of Sylow \(3\)-subgroups is either \(1\) or \(10\).
-::: {.proof}
+::: pf
+
+::: pf-step
+The number \(n_5\) of Sylow \(5\)-subgroups is either \(1\) or \(6\), and the number \(n_3\) of Sylow \(3\)-subgroups is either \(1\) or \(10\).
+
+::: pf-proof
 Sylow's theorem gives
 \[
 n_5\equiv1\pmod5,
@@ -59,8 +63,12 @@ n_3\in\{1,10\}.
 \]
 :::
 
-<1>2. It is impossible to have simultaneously \(n_5=6\) and \(n_3=10\).
-::: {.proof}
+:::
+
+::: {.pf-step #not-both-max}
+It is impossible to have simultaneously \(n_5=6\) and \(n_3=10\).
+
+::: pf-proof
 Distinct subgroups of order \(5\) intersect trivially, because their intersection is a subgroup whose order divides \(5\), and a nontrivial intersection would force the two subgroups to coincide.
 Hence six Sylow \(5\)-subgroups contribute
 \[
@@ -81,9 +89,13 @@ distinct nonidentity elements, although \(G\) has only \(29\) nonidentity elemen
 This is impossible.
 :::
 
-<1>3. Therefore \(G\) has a nontrivial proper normal subgroup.
-::: {.proof}
-By <1>2, either
+:::
+
+::: pf-step
+Therefore \(G\) has a nontrivial proper normal subgroup.
+
+::: pf-proof
+By step [](#not-both-max){.pf-ref}, either
 \[
 n_5=1
 \]
@@ -93,5 +105,9 @@ n_3=1.
 \]
 A unique Sylow subgroup is invariant under conjugation and hence normal.
 Thus either the Sylow \(5\)-subgroup or the Sylow \(3\)-subgroup is a nontrivial proper normal subgroup of \(G\).
+:::
+
+:::
+
 :::
 :::

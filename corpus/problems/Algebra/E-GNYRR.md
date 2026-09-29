@@ -44,8 +44,13 @@ and hence $\chi_A(A)=0$. Finally, deduce Cayley-Hamilton for an arbitrary operat
 :::
 
 ::: {.solution}
-<1>1. For every $i$, the flag subspace $\Fil_iV$ is $A$-invariant.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+For every $i$, the flag subspace $\Fil_iV$ is $A$-invariant.
+
+::: pf-proof
 Because the matrix of $A$ in the ordered basis $v_1,\ldots,v_n$ is upper triangular, for each $j$ one has
 \[
 Av_j\in\spanof\ts{v_1,\ldots,v_j}=\Fil_jV.
@@ -56,11 +61,15 @@ A(\Fil_iV)\subseteq\Fil_iV.
 \]
 :::
 
-<1>2. For every $i$, one has
+:::
+
+::: {.pf-step #filtration-drop}
+For every $i$, one has
 \[
 (A-\lambda_iI)\Fil_iV\subseteq\Fil_{i-1}V.
 \]
-::: {.proof}
+
+::: pf-proof
 For $j<i$, both $Av_j$ and $\lambda_i v_j$ lie in $\Fil_{i-1}V$, hence so does $(A-\lambda_iI)v_j$. For $j=i$, upper triangularity gives
 \[
 Av_i=\lambda_i v_i+w
@@ -72,12 +81,16 @@ for some $w\in\Fil_{i-1}V$. Therefore
 Since $v_1,\ldots,v_i$ span $\Fil_iV$, the inclusion follows.
 :::
 
-<1>3. The product of the linear factors annihilates $V$:
+:::
+
+::: {.pf-step #product-annihilates-v}
+The product of the linear factors annihilates $V$:
 \[
 (A-\lambda_1I)\cdots(A-\lambda_nI)V=0.
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+By step [](#filtration-drop){.pf-ref},
 \[
 (A-\lambda_nI)\Fil_nV\subseteq\Fil_{n-1}V.
 \]
@@ -89,28 +102,36 @@ Applying successively the factors with indices $n-1,n-2,\ldots,1$ gives
 Since $\Fil_nV=V$, the displayed product is the zero operator.
 :::
 
-<1>4. For an upper-triangular matrix,
+:::
+
+::: {.pf-step #char-poly-eq-zero}
+For an upper-triangular matrix,
 \[
 \chi_A(t)=\prod_{i=1}^n(t-\lambda_i),
 \]
 so $\chi_A(A)=0$.
-::: {.proof}
+
+::: pf-proof
 The determinant of $tI-A$ is the product of its diagonal entries, namely
 \[
 \det(tI-A)=\prod_{i=1}^n(t-\lambda_i).
 \]
-Evaluating this polynomial at $A$ yields exactly the product in <1>3. Hence $\chi_A(A)=0$.
+Evaluating this polynomial at $A$ yields exactly the product in step [](#product-annihilates-v){.pf-ref}. Hence $\chi_A(A)=0$.
 :::
 
-<1>5. Cayley-Hamilton holds for every endomorphism of a finite-dimensional vector space over an arbitrary field.
-::: {.proof}
+:::
+
+::: pf-step
+Cayley-Hamilton holds for every endomorphism of a finite-dimensional vector space over an arbitrary field.
+
+::: pf-proof
 Let $A\in\Endo_k(V)$ and let $\overline{k}$ be an algebraic closure of $k$. Extend scalars:
 \[
 \overline{V}=V\otimes_k\overline{k},
 \qquad
 \overline{A}=A\otimes1.
 \]
-Over $\overline{k}$, the characteristic polynomial of $A$ splits, so $\overline{A}$ admits an upper-triangular matrix in some basis. By <1>4,
+Over $\overline{k}$, the characteristic polynomial of $A$ splits, so $\overline{A}$ admits an upper-triangular matrix in some basis. By step [](#char-poly-eq-zero){.pf-ref},
 \[
 \chi_{\overline{A}}(\overline{A})=0.
 \]
@@ -129,4 +150,9 @@ in $\Endo_{\overline{k}}(\overline{V})$. The natural map
 \]
 is injective because $k\to\overline{k}$ is a field extension. Therefore $\chi_A(A)=0$ already over $k$.
 :::
+
+:::
+
+:::
+
 :::

@@ -35,7 +35,11 @@ y(0)=1.
 :::
 
 ::: {.solution}
-<1>1. Every solution satisfies
+
+::: pf
+
+::: {.pf-step #derivative-zero}
+Every solution satisfies
 $$
 \frac{d}{dx}
 \left(
@@ -45,7 +49,7 @@ e^{-x^3/3}(y-3)
 0.
 $$
 
-::: {.proof}
+::: pf-proof
 By the product rule and the differential equation,
 $$
 \begin{aligned}
@@ -69,34 +73,43 @@ x^2y-3x^2-x^2y+3x^2
 $$
 :::
 
-<1>2. The initial condition forces
+:::
+
+::: {.pf-step #initial-condition-value}
+The initial condition forces
 $$
 e^{-x^3/3}(y-3)=-2.
 $$
 
-::: {.proof}
-By step <1>1, the left-hand side is constant. At $x=0$ it equals
+::: pf-proof
+By step [](#derivative-zero){.pf-ref}, the left-hand side is constant. At $x=0$ it equals
 $$
 e^0(y(0)-3)=1-3=-2.
 $$
 :::
 
-<1>3. The solution is
+:::
+
+::: {.pf-step #solution-formula}
+The solution is
 $$
 \boxed{
 y(x)=3-2e^{x^3/3}
 }.
 $$
 
-::: {.proof}
-Solving the identity in step <1>2 for $y$ gives the displayed
+::: pf-proof
+Solving the identity in step [](#initial-condition-value){.pf-ref} for $y$ gives the displayed
 formula.
 :::
 
-<1>4. The function in step <1>3 satisfies both the differential
+:::
+
+::: {.pf-step #solution-verifies}
+The function in step [](#solution-formula){.pf-ref} satisfies both the differential
 equation and the initial condition.
 
-::: {.proof}
+::: pf-proof
 For
 $$
 y(x)=3-2e^{x^3/3},
@@ -121,10 +134,12 @@ y(0)=3-2=1.
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 show that any solution must be the function in step
-<1>3, and step <1>4 verifies that this function is indeed a solution.
+::: pf-qed
+Steps [](#derivative-zero){.pf-ref}, [](#initial-condition-value){.pf-ref} and [](#solution-formula){.pf-ref} show that any solution must be the function in step
+[](#solution-formula){.pf-ref}, and step [](#solution-verifies){.pf-ref} verifies that this function is indeed a solution.
+:::
+
 :::
 :::

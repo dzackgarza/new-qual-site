@@ -35,8 +35,12 @@ Hint: Use the Fundamental Theorem of Galois Theory.
 ::: {.solution}
 We prove the finite and infinite base-field cases separately.
 
-<1>1. If \(F\) is finite, then \(E/F\) is simple.
-::: {.proof}
+::: pf
+
+::: {.pf-step #finite-field-case}
+If \(F\) is finite, then \(E/F\) is simple.
+
+::: pf-proof
 Because \([E:F]<\infty\), the field \(E\) is finite.
 The multiplicative group \(E^\times\) of a finite field is cyclic.
 Choose a generator \(a\in E^\times\).
@@ -47,8 +51,12 @@ F(a)=E.
 \]
 :::
 
-<1>2. Suppose \(F\) is infinite. Then there are only finitely many intermediate fields between \(F\) and \(E\).
-::: {.proof}
+:::
+
+::: {.pf-step #finitely-many-intermediate-fields}
+Suppose \(F\) is infinite. Then there are only finitely many intermediate fields between \(F\) and \(E\).
+
+::: pf-proof
 Let \(N\) be the normal closure of \(E/F\).
 Since \(E/F\) is finite and separable, \(N/F\) is a finite Galois extension.
 Set
@@ -69,8 +77,12 @@ A finite group has only finitely many subgroups.
 Hence \(E/F\) has only finitely many intermediate fields.
 :::
 
-<1>3. A finite-dimensional vector space over an infinite field is not the union of finitely many proper linear subspaces.
-::: {.proof}
+:::
+
+::: {.pf-step #not-union-of-proper-subspaces}
+A finite-dimensional vector space over an infinite field is not the union of finitely many proper linear subspaces.
+
+::: pf-proof
 Let \(V\) be finite-dimensional over an infinite field \(F\), and suppose
 \[
 V=V_1\cup\cdots\cup V_r
@@ -91,14 +103,18 @@ A nonzero polynomial over an infinite field cannot vanish at every point of \(F^
 This contradiction proves the claim.
 :::
 
-<1>4. If \(F\) is infinite, then \(E=F(a)\) for some \(a\in E\).
-::: {.proof}
-By <1>2, list the proper intermediate fields as
+:::
+
+::: {.pf-step #infinite-field-case}
+If \(F\) is infinite, then \(E=F(a)\) for some \(a\in E\).
+
+::: pf-proof
+By step [](#finitely-many-intermediate-fields){.pf-ref}, list the proper intermediate fields as
 \[
 K_1,\ldots,K_r.
 \]
 Each \(K_i\) is a proper \(F\)-linear subspace of the finite-dimensional \(F\)-vector space \(E\).
-By <1>3,
+By step [](#not-union-of-proper-subspaces){.pf-ref},
 \[
 E\neq K_1\cup\cdots\cup K_r.
 \]
@@ -114,8 +130,16 @@ E=F(a).
 \]
 :::
 
-<1>5. Therefore every finite separable extension is simple.
-::: {.proof}
-The finite-field case is <1>1 and the infinite-field case is <1>4.
+:::
+
+::: pf-step
+Therefore every finite separable extension is simple.
+
+::: pf-proof
+The finite-field case is step [](#finite-field-case){.pf-ref} and the infinite-field case is step [](#infinite-field-case){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

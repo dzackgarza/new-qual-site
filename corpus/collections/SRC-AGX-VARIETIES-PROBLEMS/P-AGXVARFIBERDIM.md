@@ -61,7 +61,10 @@ A\hookrightarrow B
 $$
 is injective.
 
-<1>1. Let $y\in f(X)$, let $\mathfrak p\subseteq A$ be the maximal ideal
+::: pf
+
+::: {.pf-step #fiber-component-affine}
+Let $y\in f(X)$, let $\mathfrak p\subseteq A$ be the maximal ideal
 of $y$, and let $Z$ be an irreducible component of $f^{-1}(y)$. Then there is
 a prime $\mathfrak q\subseteq B$, minimal over $\mathfrak pB$, such that
 $$
@@ -69,7 +72,7 @@ Z=V(\mathfrak q)=\Spec(B/\mathfrak q),
 $$
 so $Z$ is an affine variety.
 
-::: {.proof}
+::: pf-proof
 Since $k$ is algebraically closed,
 $$
 \kappa(y)=k.
@@ -104,12 +107,15 @@ $$
 $$
 :::
 
-<1>2. For the prime $\mathfrak q$ of step <1>1,
+:::
+
+::: {.pf-step #height-q-le-m}
+For the prime $\mathfrak q$ of step [](#fiber-component-affine){.pf-ref},
 $$
 \height\mathfrak q\leq m.
 $$
 
-::: {.proof}
+::: pf-proof
 Localize the injective map $A\to B$ at
 $\mathfrak p$ and $\mathfrak q$:
 $$
@@ -145,15 +151,18 @@ $$
 which proves the claim.
 :::
 
-<1>3. Every irreducible component $Z$ of every nonempty fibre satisfies
+:::
+
+::: {.pf-step #dimension-lower-bound}
+Every irreducible component $Z$ of every nonempty fibre satisfies
 $$
 \boxed{
 \dim Z\geq\dim X-\dim Y.
 }
 $$
 
-::: {.proof}
-For the prime $\mathfrak q$ of step <1>1, the affine dimension formula
+::: pf-proof
+For the prime $\mathfrak q$ of step [](#fiber-component-affine){.pf-ref}, the affine dimension formula
 [[P-AGH2320DIMENSION]] gives
 $$
 \dim(B/\mathfrak q)+\height\mathfrak q
@@ -162,7 +171,7 @@ $$
 =
 n.
 $$
-By step <1>2,
+By step [](#height-q-le-m){.pf-ref},
 $$
 \height\mathfrak q\leq m.
 $$
@@ -178,7 +187,10 @@ e.
 $$
 :::
 
-<1>4. There is a nonempty Zariski-open subset
+:::
+
+::: {.pf-step #flat-open-subset}
+There is a nonempty Zariski-open subset
 $$
 V\subseteq Y
 $$
@@ -192,7 +204,7 @@ f^{-1}(V)\longrightarrow V
 $$
 is flat.
 
-::: {.proof}
+::: pf-proof
 Generic flatness [[T-MORGEN]] gives a nonempty open subset
 $$
 V_0\subseteq Y
@@ -219,7 +231,10 @@ The intersection is nonempty and open because $Y$ is irreducible. It has both
 required properties.
 :::
 
-<1>5. If $y\in V$ and $Z$ is any irreducible component of $f^{-1}(y)$,
+:::
+
+::: {.pf-step #equality-on-v}
+If $y\in V$ and $Z$ is any irreducible component of $f^{-1}(y)$,
 then
 $$
 \boxed{
@@ -227,9 +242,9 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Let $\mathfrak p\subseteq A$ and $\mathfrak q\subseteq B$ be as in
-step <1>1. Since $y\in V$, the local map
+step [](#fiber-component-affine){.pf-ref}. Since $y\in V$, the local map
 $$
 A_{\mathfrak p}\longrightarrow B_{\mathfrak q}
 $$
@@ -245,11 +260,11 @@ $\mathfrak q$. Hence
 $$
 \height\mathfrak q\geq m.
 $$
-Step <1>2 gives the reverse inequality, so
+Step [](#height-q-le-m){.pf-ref} gives the reverse inequality, so
 $$
 \height\mathfrak q=m.
 $$
-Using the affine dimension formula exactly as in step <1>3 now gives
+Using the affine dimension formula exactly as in step [](#dimension-lower-bound){.pf-ref} now gives
 $$
 \dim Z
 =
@@ -261,22 +276,28 @@ e.
 $$
 :::
 
-<1>6. The equality locus contains a Zariski-dense open subset of $Y$.
+:::
 
-::: {.proof}
-The set $V$ from step <1>4 is a nonempty open subset of the irreducible
-variety $Y$, so it is Zariski dense. Step <1>5 shows that for every
+::: {.pf-step #equality-locus-dense}
+The equality locus contains a Zariski-dense open subset of $Y$.
+
+::: pf-proof
+The set $V$ from step [](#flat-open-subset){.pf-ref} is a nonempty open subset of the irreducible
+variety $Y$, so it is Zariski dense. Step [](#equality-on-v){.pf-ref} shows that for every
 $y\in V$, every irreducible component of the fibre has dimension
 $$
 \dim X-\dim Y.
 $$
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves that every fibre component is affine, step <1>3 proves the
-dimension lower bound for every $y\in f(X)$, and steps <1>4--<1>6 prove
+::: pf-qed
+Step [](#fiber-component-affine){.pf-ref} proves that every fibre component is affine, step [](#dimension-lower-bound){.pf-ref} proves the
+dimension lower bound for every $y\in f(X)$, and steps [](#flat-open-subset){.pf-ref}, [](#equality-on-v){.pf-ref} and [](#equality-locus-dense){.pf-ref} prove
 generic equality on a Zariski-dense open subset of $Y$.
 :::
+
+:::
+
 :::

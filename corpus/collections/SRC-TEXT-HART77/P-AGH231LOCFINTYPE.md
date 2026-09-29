@@ -27,9 +27,13 @@ Show that a morphism $f: X \to Y$ is locally of finite type if and only if for e
 :::
 
 ::: {.solution}
-<1>1. If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is locally of finite type.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #condition-implies-locally-finite-type}
+If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is locally of finite type.
+
+::: pf-proof
 Choose any affine open cover
 \[
 Y=\bigcup_i V_i.
@@ -42,7 +46,10 @@ with each $A_{ij}$ a finitely generated $B_i$-algebra.
 This is exactly the definition of $f$ being locally of finite type.
 :::
 
-<1>2. Conversely, suppose $f$ is locally of finite type.  Fix an arbitrary affine open
+:::
+
+::: {.pf-step #choose-affine-neighborhoods}
+Conversely, suppose $f$ is locally of finite type.  Fix an arbitrary affine open
 \[
 V=\Spec B\subseteq Y
 \]
@@ -56,11 +63,14 @@ U=\Spec A\subseteq f^{-1}(V_i)
 \]
 containing $x$ such that $A$ is a finitely generated $B_i$-algebra.
 
-::: {.proof}
+::: pf-proof
 This is the defining affine-cover condition for a locally finite type morphism: choose one target affine from a witnessing cover which contains $f(x)$, and then one source affine from the corresponding cover of its inverse image which contains $x$.
 :::
 
-<1>3. There is a distinguished open
+:::
+
+::: {.pf-step #distinguished-open-w}
+There is a distinguished open
 \[
 W=D(g)\subseteq V
 \]
@@ -69,7 +79,7 @@ with
 f(x)\in W\subseteq V\cap V_i.
 \]
 
-::: {.proof}
+::: pf-proof
 The intersection $V\cap V_i$ is an open neighborhood of $f(x)$ inside the affine scheme $V=\Spec B$.  Distinguished opens form a basis for the topology of an affine scheme, so some
 \[
 D(g),\qquad g\in B,
@@ -77,7 +87,10 @@ D(g),\qquad g\in B,
 contains $f(x)$ and is contained in $V\cap V_i$.
 :::
 
-<1>4. There is a distinguished affine neighborhood
+:::
+
+::: {.pf-step #distinguished-neighborhood-uprime}
+There is a distinguished affine neighborhood
 \[
 U'=D(a)\subseteq U
 \]
@@ -86,7 +99,7 @@ of $x$ such that
 U'\subseteq f^{-1}(W).
 \]
 
-::: {.proof}
+::: pf-proof
 The set
 \[
 U\cap f^{-1}(W)
@@ -98,13 +111,16 @@ x\in D(a)\subseteq U\cap f^{-1}(W).
 Set $U'=D(a)$.
 :::
 
-<1>5. The affine neighborhood
+:::
+
+::: {.pf-step #uprime-finitely-generated-over-b}
+The affine neighborhood
 \[
 U'=\Spec A_a
 \]
 has coordinate ring finitely generated as a $B$-algebra.
 
-::: {.proof}
+::: pf-proof
 Because $W=D(g)\subseteq V=\Spec B$,
 \[
 W\cong\Spec B_g.
@@ -137,25 +153,34 @@ A_a
 so $A_a$ is a finitely generated $B$-algebra.
 :::
 
-<1>6. The inverse image $f^{-1}(V)$ is covered by affine opens whose coordinate rings are finitely generated $B$-algebras.
+:::
 
-::: {.proof}
-The point $x\in f^{-1}(V)$ was arbitrary.  Steps <1>2--<1>5 construct, around every such $x$, an affine open
+::: {.pf-step #preimage-v-covered-by-fg-affines}
+The inverse image $f^{-1}(V)$ is covered by affine opens whose coordinate rings are finitely generated $B$-algebras.
+
+::: pf-proof
+The point $x\in f^{-1}(V)$ was arbitrary.  Steps [](#choose-affine-neighborhoods){.pf-ref}, [](#distinguished-open-w){.pf-ref}, [](#distinguished-neighborhood-uprime){.pf-ref} and [](#uprime-finitely-generated-over-b){.pf-ref} construct, around every such $x$, an affine open
 \[
 U'=\Spec A_a\subseteq f^{-1}(V)
 \]
 with $A_a$ finitely generated over $B$.  These neighborhoods therefore form the required affine cover.
 :::
 
-<1>7. Hence the two conditions are equivalent.
-
-::: {.proof}
-Step <1>1 proves one implication and steps <1>2--<1>6 prove the converse.
 :::
 
-<1>8. Q.E.D.
+::: {.pf-step #two-conditions-equivalent}
+Hence the two conditions are equivalent.
 
-::: {.proof}
-Step <1>7 is the claimed equivalence.
+::: pf-proof
+Step [](#condition-implies-locally-finite-type){.pf-ref} proves one implication and steps [](#choose-affine-neighborhoods){.pf-ref}, [](#distinguished-open-w){.pf-ref}, [](#distinguished-neighborhood-uprime){.pf-ref}, [](#uprime-finitely-generated-over-b){.pf-ref} and [](#preimage-v-covered-by-fg-affines){.pf-ref} prove the converse.
 :::
+
+:::
+
+::: pf-qed
+Step [](#two-conditions-equivalent){.pf-ref} is the claimed equivalence.
+:::
+
+:::
+
 :::

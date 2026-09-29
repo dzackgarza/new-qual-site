@@ -41,35 +41,44 @@ if and only if the null space of $M$ has dimension one.
 ::: {.solution}
 Let $V=\CC^n$, and regard $M$ as a nilpotent endomorphism of $V$.
 
-<1>1. In the nilpotent Jordan form of $M$, the number of Jordan blocks
+::: pf
+
+::: {.pf-step #jordan-blocks-count}
+In the nilpotent Jordan form of $M$, the number of Jordan blocks
 is
 $$
 \dim\ker M.
 $$
 
-::: {.proof}
+::: pf-proof
 Each nilpotent Jordan block has a one-dimensional kernel, and the
 kernel of a block-diagonal matrix is the direct sum of the kernels of
 its blocks.
 :::
 
-<1>2. Suppose $\dim\ker M=1$. Then there exists $v\in V$ such that
+:::
+
+::: {.pf-step #cyclic-basis}
+Suppose $\dim\ker M=1$. Then there exists $v\in V$ such that
 $$
 v,Mv,\ldots,M^{n-1}v
 $$
 is a basis of $V$.
 
-::: {.proof}
-By step <1>1, the Jordan form of $M$ has exactly one block. Since the
+::: pf-proof
+By step [](#jordan-blocks-count){.pf-ref}, the Jordan form of $M$ has exactly one block. Since the
 block has size $n$, a vector at the top of its Jordan chain has the
 displayed iterates as a basis.
 :::
 
-<1>3. If $\dim\ker M=1$, then every $A\in C(M)$ belongs to
+:::
+
+::: {.pf-step #centralizer-subset-poly}
+If $\dim\ker M=1$, then every $A\in C(M)$ belongs to
 $\CC[M]$.
 
-::: {.proof}
-Take $v$ as in step <1>2. Write
+::: pf-proof
+Take $v$ as in step [](#cyclic-basis){.pf-ref}. Write
 $$
 Av=\sum_{i=0}^{n-1}a_iM^iv
 $$
@@ -86,27 +95,33 @@ A(M^jv)
 &=p(M)(M^jv).
 \end{aligned}
 $$
-The vectors $M^jv$ form a basis by step <1>2, so $A=p(M)$.
+The vectors $M^jv$ form a basis by step [](#cyclic-basis){.pf-ref}, so $A=p(M)$.
 Therefore $A\in\CC[M]$.
 :::
 
-<1>4. If $\dim\ker M=1$, then
+:::
+
+::: {.pf-step #equality-forward}
+If $\dim\ker M=1$, then
 $$
 C(M)=\CC[M].
 $$
 
-::: {.proof}
-Step <1>3 gives $C(M)\subseteq\CC[M]$. The reverse inclusion always
+::: pf-proof
+Step [](#centralizer-subset-poly){.pf-ref} gives $C(M)\subseteq\CC[M]$. The reverse inclusion always
 holds because every polynomial in $M$ commutes with $M$.
 :::
 
-<1>5. Suppose instead that $\dim\ker M>1$. Then
+:::
+
+::: {.pf-step #multiple-blocks-not-equal}
+Suppose instead that $\dim\ker M>1$. Then
 $$
 C(M)\ne\CC[M].
 $$
 
-::: {.proof}
-By step <1>1, the Jordan form of $M$ has at least two blocks. In that
+::: pf-proof
+By step [](#jordan-blocks-count){.pf-ref}, the Jordan form of $M$ has at least two blocks. In that
 Jordan decomposition, let $P$ be the projection onto one block and
 zero on all the others. Since both $P$ and $M$ are block diagonal,
 $$
@@ -124,7 +139,10 @@ the selected block and zero on the kernel lines from the other blocks.
 Thus $P\in C(M)\setminus\CC[M]$.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #equivalence}
+Therefore
 $$
 \boxed{
 C(M)=\CC[M]
@@ -133,14 +151,17 @@ C(M)=\CC[M]
 }
 $$
 
-::: {.proof}
-The forward implication is the contrapositive of step <1>5, and the
-reverse implication is step <1>4.
+::: pf-proof
+The forward implication is the contrapositive of step [](#multiple-blocks-not-equal){.pf-ref}, and the
+reverse implication is step [](#equality-forward){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the desired equivalence.
 :::
+
+::: pf-qed
+Step [](#equivalence){.pf-ref} is the desired equivalence.
+:::
+
+:::
+
 :::

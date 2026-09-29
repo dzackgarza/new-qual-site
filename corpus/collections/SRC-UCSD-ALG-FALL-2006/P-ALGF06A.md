@@ -47,8 +47,12 @@ Since $\operatorname{gm}(\lambda)=1$, we have
 \operatorname{rank}N=n-1.
 \]
 
-<1>1. There is a left eigenvector $y\neq0$ for $\lambda$, and it satisfies $y^*x\neq0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+There is a left eigenvector $y\neq0$ for $\lambda$, and it satisfies $y^*x\neq0$.
+
+::: pf-proof
 Because
 \[
 \operatorname{rank}N^*=\operatorname{rank}N=n-1,
@@ -110,8 +114,12 @@ y^*x=1.
 \]
 :::
 
-<1>2. Choose the remaining columns $X$ so that $(x\ \ X)$ is nonsingular and its first dual row is $y^*$.
-::: {.proof}
+:::
+
+::: pf-step
+Choose the remaining columns $X$ so that $(x\ \ X)$ is nonsingular and its first dual row is $y^*$.
+
+::: pf-proof
 Since
 \[
 \dim\ker y^*=n-1
@@ -146,8 +154,12 @@ Y^*x=0.
 \]
 :::
 
-<1>3. In this basis, $A$ has the required block-diagonal form.
-::: {.proof}
+:::
+
+::: pf-step
+In this basis, $A$ has the required block-diagonal form.
+
+::: pf-proof
 Since $Ax=\lambda x$,
 \[
 y^*Ax=\lambda y^*x=\lambda
@@ -179,5 +191,9 @@ where
 M:=Y^*AX.
 \]
 This is exactly the required decomposition.
+:::
+
+:::
+
 :::
 :::

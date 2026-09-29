@@ -45,10 +45,13 @@ Prove that if $[L:F] = n!$ then:
 Let $X$ be the set of the $n$ distinct roots of $f$ in $L$,
 and put $G=\operatorname{Gal}(L/F)$.
 
-<1>1. The action of $G$ on $X$ identifies it with
+::: pf
+
+::: {.pf-step #symmetric-group-identification}
+The action of $G$ on $X$ identifies it with
 the full symmetric group $\operatorname{Sym}(X)$.
 
-::: {.proof}
+::: pf-proof
 The extension is Galois because it is the splitting
 field of a separable polynomial [@DF04]. Its automorphisms
 permute the roots. If an automorphism fixes every root,
@@ -58,35 +61,44 @@ Since $|G|=[L:F]=n!=|\operatorname{Sym}(X)|$, its image
 is the whole symmetric group.
 :::
 
-<1>2. The polynomial $f$ is irreducible over $F$.
+:::
 
-::: {.proof}
+::: pf-step
+The polynomial $f$ is irreducible over $F$.
+
+::: pf-proof
 Choose $r\in X$ and let $m_r$ be its monic minimal
 polynomial over $F$. This polynomial divides $f$.
 For every $\sigma\in G$, applying $\sigma$ to
-$m_r(r)=0$ gives $m_r(\sigma(r))=0$. Step <1>1 says
+$m_r(r)=0$ gives $m_r(\sigma(r))=0$. Step [](#symmetric-group-identification){.pf-ref} says
 that these images include all $n$ roots. The root bound
 gives $\deg m_r\geq n$, while $m_r\mid f$ gives
 $\deg m_r\leq n$. Thus $f$ is a nonzero constant
 multiple of the irreducible polynomial $m_r$.
 :::
 
-<1>3. For each root $r$, no other root belongs to $F(r)$.
+:::
 
-::: {.proof}
+::: pf-step
+For each root $r$, no other root belongs to $F(r)$.
+
+::: pf-proof
 The subgroup $H=\operatorname{Gal}(L/F(r))$ consists
 exactly of the permutations fixing $r$. Suppose
 $s\in X\setminus\{r\}$. Since $n\geq3$, there is
-$t\in X\setminus\{r,s\}$. Step <1>1 supplies the
+$t\in X\setminus\{r,s\}$. Step [](#symmetric-group-identification){.pf-ref} supplies the
 automorphism acting as the transposition $(s\ t)$.
 It fixes $r$ and hence fixes $F(r)$ pointwise, but
 does not fix $s$. Consequently $s\notin F(r)$.
 :::
 
-<1>4. The root field $F(r)$ has no strict intermediate
+:::
+
+::: pf-step
+The root field $F(r)$ has no strict intermediate
 field over $F$.
 
-::: {.proof}
+::: pf-proof
 The point stabilizer $H$ is a maximal proper subgroup
 of $G$. Indeed, if $H\subsetneq J\leq G$, choose
 $g\in J$ moving $r$. Since $H$ permutes the remaining
@@ -99,5 +111,9 @@ gives $H\subseteq\operatorname{Gal}(L/E)\subseteq G$
 [@DF04]. The subgroup must be $H$ or $G$, so its
 fixed field $E$ must be $F(r)$ or $F$. These are
 exactly the two allowed endpoints.
+:::
+
+:::
+
 :::
 :::

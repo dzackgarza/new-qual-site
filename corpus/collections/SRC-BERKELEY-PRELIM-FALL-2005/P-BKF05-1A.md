@@ -31,7 +31,11 @@ Let \(M\) be a compact metric space and let \((U_i)_{i\in I}\) be an open cover 
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that no such
+
+::: pf
+
+::: {.pf-step #no-epsilon-assumption}
+Suppose, for contradiction, that no such
 $\varepsilon>0$ exists. Then for every positive integer $n$ there are
 points $x_n,y_n\in M$ such that
 $$
@@ -39,7 +43,7 @@ d(x_n,y_n)<\frac1n
 $$
 and no member of the cover contains both $x_n$ and $y_n$.
 
-::: {.proof}
+::: pf-proof
 Negating the required statement says that for every
 $\varepsilon>0$ there are $x,y\in M$ with
 $d(x,y)<\varepsilon$ such that, for every $j\in I$, at least one of
@@ -47,7 +51,10 @@ $x,y$ does not belong to $U_j$. Apply this with
 $\varepsilon=1/n$.
 :::
 
-<1>2. There are indices
+:::
+
+::: {.pf-step #subsequences-converge-to-p}
+There are indices
 $$
 n_1<n_2<\cdots
 $$
@@ -58,11 +65,11 @@ x_{n_k}\longrightarrow p
 y_{n_k}\longrightarrow p.
 $$
 
-::: {.proof}
+::: pf-proof
 Compactness of the metric space $M$ implies sequential compactness, so
 the sequence $(x_n)$ has a convergent subsequence
 $x_{n_k}\to p$ for some $p\in M$. Since $n_k\to\infty$,
-step <1>1 gives
+step [](#no-epsilon-assumption){.pf-ref} gives
 $$
 d(x_{n_k},y_{n_k})<\frac1{n_k}\longrightarrow0.
 $$
@@ -76,36 +83,45 @@ $$
 Hence $y_{n_k}\to p$ as well.
 :::
 
-<1>3. The sequences in step <1>2 contradict their defining property
-from step <1>1.
+:::
 
-::: {.proof}
+::: {.pf-step #contradiction-established}
+The sequences in step [](#subsequences-converge-to-p){.pf-ref} contradict their defining property
+from step [](#no-epsilon-assumption){.pf-ref}.
+
+::: pf-proof
 Because $(U_i)_{i\in I}$ covers $M$, choose $j\in I$ with
 $p\in U_j$. Since $U_j$ is open, there is $r>0$ such that
 $$
 B(p,r)\subseteq U_j.
 $$
-By step <1>2, for all sufficiently large $k$ both
+By step [](#subsequences-converge-to-p){.pf-ref}, for all sufficiently large $k$ both
 $x_{n_k}$ and $y_{n_k}$ lie in $B(p,r)$, hence both lie in $U_j$.
-This contradicts step <1>1, which says that no cover element contains
+This contradicts step [](#no-epsilon-assumption){.pf-ref}, which says that no cover element contains
 both members of any pair $(x_n,y_n)$.
 :::
 
-<1>4. There exists $\varepsilon>0$ such that
+:::
+
+::: {.pf-step #epsilon-exists}
+There exists $\varepsilon>0$ such that
 $$
 d(x,y)<\varepsilon
 \quad\Longrightarrow\quad
 \text{some $U_j$ contains both $x$ and $y$}.
 $$
 
-::: {.proof}
-Step <1>3 contradicts the negation assumed in step <1>1. Therefore the
+::: pf-proof
+Step [](#contradiction-established){.pf-ref} contradicts the negation assumed in step [](#no-epsilon-assumption){.pf-ref}. Therefore the
 required positive $\varepsilon$ exists.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the required conclusion.
 :::
+
+::: pf-qed
+Step [](#epsilon-exists){.pf-ref} is exactly the required conclusion.
+:::
+
+:::
+
 :::

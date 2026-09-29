@@ -36,12 +36,17 @@ there is a bijection between elements in $G\cdot x$ and the left cosets of $G_x$
 :::
 
 ::: {.solution}
-<1>1. The stabilizer
+
+::: pf
+
+::: pf-step
+The stabilizer
 \[
 G_x=\{g\in G\mid g\cdot x=x\}
 \]
 is a subgroup of \(G\).
-::: {.proof}
+
+::: pf-proof
 The identity satisfies \(e\cdot x=x\), so \(e\in G_x\). If \(g,h\in G_x\), then
 \[
 (gh^{-1})\cdot x=g\cdot(h^{-1}\cdot x).
@@ -53,14 +58,18 @@ Since \(h\cdot x=x\), applying \(h^{-1}\) gives \(h^{-1}\cdot x=x\). Hence
 so \(gh^{-1}\in G_x\). By the subgroup criterion, \(G_x\le G\).
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #phi-well-defined}
+Define
 \[
 \Phi:G/G_x\longrightarrow G\cdot x,
 \qquad
 \Phi(gG_x)=g\cdot x.
 \]
 Then \(\Phi\) is well defined.
-::: {.proof}
+
+::: pf-proof
 Suppose \(gG_x=hG_x\). Then \(h^{-1}g\in G_x\), so
 \[
 (h^{-1}g)\cdot x=x.
@@ -69,8 +78,12 @@ Applying \(h\) gives \(g\cdot x=h\cdot x\). Thus the value of \(\Phi\) depends o
 the left coset.
 :::
 
-<1>3. The map \(\Phi\) is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #phi-injective}
+The map \(\Phi\) is injective.
+
+::: pf-proof
 If \(\Phi(gG_x)=\Phi(hG_x)\), then \(g\cdot x=h\cdot x\). Applying \(h^{-1}\) gives
 \[
 (h^{-1}g)\cdot x=x,
@@ -78,8 +91,12 @@ If \(\Phi(gG_x)=\Phi(hG_x)\), then \(g\cdot x=h\cdot x\). Applying \(h^{-1}\) gi
 so \(h^{-1}g\in G_x\). Hence \(gG_x=hG_x\).
 :::
 
-<1>4. The map \(\Phi\) is surjective.
-::: {.proof}
+:::
+
+::: {.pf-step #phi-surjective}
+The map \(\Phi\) is surjective.
+
+::: pf-proof
 Every element of the orbit \(G\cdot x\) has the form \(g\cdot x\) for some \(g\in G\),
 and
 \[
@@ -87,8 +104,17 @@ and
 \]
 :::
 
-<1>5. Therefore \(G\cdot x\) is in bijection with the set of left cosets \(G/G_x\).
-::: {.proof}
-By <1>2--<1>4, \(\Phi\) is a well-defined bijection.
 :::
+
+::: pf-step
+Therefore \(G\cdot x\) is in bijection with the set of left cosets \(G/G_x\).
+
+::: pf-proof
+By steps [](#phi-well-defined){.pf-ref}, [](#phi-injective){.pf-ref} and [](#phi-surjective){.pf-ref}, \(\Phi\) is a well-defined bijection.
+:::
+
+:::
+
+:::
+
 :::

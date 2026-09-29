@@ -33,9 +33,12 @@ $$
 M\coloneqq2^p-1.
 $$
 
-<1>1. The integer $p$ divides $M-1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #p-divides-m-minus-one}
+The integer $p$ divides $M-1$.
+
+::: pf-proof
 Since $p$ is prime, Fermat's little theorem gives
 $$
 2^p\equiv2\pmod p.
@@ -52,21 +55,27 @@ M-1
 $$
 :::
 
-<1>2. There is an integer $k\geq1$ such that
+:::
+
+::: {.pf-step #k-exists}
+There is an integer $k\geq1$ such that
 $$
 M-1=pk.
 $$
 
-::: {.proof}
-This is exactly the divisibility statement in step <1>1.
+::: pf-proof
+This is exactly the divisibility statement in step [](#p-divides-m-minus-one){.pf-ref}.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #two-p-mod-m}
+One has
 $$
 2^p\equiv1\pmod M.
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 M=2^p-1,
@@ -77,13 +86,16 @@ $$
 $$
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #fermat-condition}
+One has
 $$
 2^{M-1}\equiv1\pmod M.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#k-exists){.pf-ref},
 $$
 2^{M-1}
 =
@@ -91,7 +103,7 @@ $$
 =
 (2^p)^k.
 $$
-Applying step <1>3 gives
+Applying step [](#two-p-mod-m){.pf-ref} gives
 $$
 (2^p)^k
 \equiv
@@ -102,22 +114,28 @@ $$
 $$
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #pseudoprime-conclusion}
+Therefore
 $$
 \boxed{2^p-1}
 $$
 is a pseudoprime to base $2$ in the sense of the stated definition.
 
-::: {.proof}
-Step <1>4 says exactly that
+::: pf-proof
+Step [](#fermat-condition){.pf-ref} says exactly that
 $$
 M\mid 2^{M-1}-1.
 $$
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#pseudoprime-conclusion){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

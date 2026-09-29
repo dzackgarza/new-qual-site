@@ -38,12 +38,15 @@ is increasing.
 :::
 
 ::: {.solution}
-<1>1. For every $x>0$,
+::: pf
+
+::: {.pf-step #mvt-inequality}
+For every $x>0$,
 $$
 \frac{f(x)}{x}\leq f'(x).
 $$
 
-::: {.proof}
+::: pf-proof
 Fix $x>0$. By the mean value theorem applied to $f$ on $[0,x]$, there is
 $c\in(0,x)$ such that
 $$
@@ -60,12 +63,15 @@ $$
 Substitution gives the claim.
 :::
 
-<1>2. For every $x>0$,
+:::
+
+::: {.pf-step #g-prime-nonnegative}
+For every $x>0$,
 $$
 g'(x)\geq0.
 $$
 
-::: {.proof}
+::: pf-proof
 For $x>0$,
 $$
 \begin{aligned}
@@ -76,24 +82,30 @@ g'(x)
 \frac{f'(x)-f(x)/x}{x}.
 \end{aligned}
 $$
-The numerator is nonnegative by step <1>1, and $x>0$.
+The numerator is nonnegative by step [](#mvt-inequality){.pf-ref}, and $x>0$.
 :::
 
-<1>3. The function $g$ is increasing on $(0,\infty)$.
+:::
 
-::: {.proof}
-By step <1>2, $g'(x)\geq0$ throughout $(0,\infty)$. The standard
+::: {.pf-step #g-increasing-positive}
+The function $g$ is increasing on $(0,\infty)$.
+
+::: pf-proof
+By step [](#g-prime-nonnegative){.pf-ref}, $g'(x)\geq0$ throughout $(0,\infty)$. The standard
 monotonicity theorem for differentiable functions therefore gives that
 $g$ is increasing there.
 :::
 
-<1>4. For every $x>0$,
+:::
+
+::: {.pf-step #g-zero-bound}
+For every $x>0$,
 $$
 g(0)\leq g(x).
 $$
 
-::: {.proof}
-The point $c\in(0,x)$ furnished by the mean value theorem in step <1>1
+::: pf-proof
+The point $c\in(0,x)$ furnished by the mean value theorem in step [](#mvt-inequality){.pf-ref}
 satisfies
 $$
 g(x)
@@ -109,19 +121,24 @@ $$
 By the definition of $g(0)$, this is exactly $g(0)\leq g(x)$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #conclusion-boxed}
+Therefore
 $$
 \boxed{g\text{ is increasing on }[0,\infty)}.
 $$
 
-::: {.proof}
-Step <1>3 compares any two positive arguments, and step <1>4 compares
+::: pf-proof
+Step [](#g-increasing-positive){.pf-ref} compares any two positive arguments, and step [](#g-zero-bound){.pf-ref} compares
 $0$ with every positive argument.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-qed
+Step [](#conclusion-boxed){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

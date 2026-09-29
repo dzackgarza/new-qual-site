@@ -27,14 +27,19 @@ Prove that there exists a complex number $c \in \mathbb{C}$ such that $\varphi(v
 :::
 
 ::: {.solution}
+
 Let $\rho:G\to\operatorname{GL}(V)$ be the representation and set
 \[
 z:=\sum_{g\in G}\overline{\chi(g)}\,g\in\mathbb C[G].
 \]
 Then $\varphi=\rho(z)$.
 
-<1>1. The element $z$ is central in $\mathbb C[G]$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #z-is-central}
+The element $z$ is central in $\mathbb C[G]$.
+
+::: pf-proof
 Characters are class functions, so for every $h,g\in G$,
 \[
 \chi(hgh^{-1})=\chi(g).
@@ -49,16 +54,24 @@ hzh^{-1}
 where we reindexed by $x=hgh^{-1}$.
 :::
 
-<1>2. There exists $c\in\mathbb C$ such that
+:::
+
+::: {.pf-step #phi-is-scalar}
+There exists $c\in\mathbb C$ such that
 \[
 \varphi=cI_V.
 \]
-::: {.proof}
-By <1>1, $\rho(z)$ commutes with $\rho(h)$ for every $h\in G$. Since $V$ is irreducible over $\mathbb C$, Schur's lemma implies that every such endomorphism is scalar. Hence $\varphi=cI_V$.
+
+::: pf-proof
+By step [](#z-is-central){.pf-ref}, $\rho(z)$ commutes with $\rho(h)$ for every $h\in G$. Since $V$ is irreducible over $\mathbb C$, Schur's lemma implies that every such endomorphism is scalar. Hence $\varphi=cI_V$.
 :::
 
-<1>3. The trace of $\varphi$ is $|G|$.
-::: {.proof}
+:::
+
+::: {.pf-step #trace-of-phi}
+The trace of $\varphi$ is $|G|$.
+
+::: pf-proof
 Using linearity of trace,
 \[
 \operatorname{tr}(\varphi)
@@ -74,19 +87,28 @@ For an irreducible complex character,
 Thus $\operatorname{tr}(\varphi)=|G|$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{c=\frac{|G|}{\dim V}}.
 \]
-::: {.proof}
-Since $\varphi=cI_V$ by <1>2,
+
+::: pf-proof
+Since $\varphi=cI_V$ by step [](#phi-is-scalar){.pf-ref},
 \[
 \operatorname{tr}(\varphi)=c\dim V.
 \]
-Combining this with <1>3 gives
+Combining this with step [](#trace-of-phi){.pf-ref} gives
 \[
 c\dim V=|G|,
 \]
 and hence the stated value of $c$.
 :::
+
+:::
+
+:::
+
 :::

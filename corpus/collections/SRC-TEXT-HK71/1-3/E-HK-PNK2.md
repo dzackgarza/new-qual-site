@@ -39,8 +39,12 @@ A=\begin{bmatrix}2&0&0\\a&-1&0\\b&c&3\end{bmatrix},
 B=\begin{bmatrix}1&1&2\\-2&0&-1\\1&3&5\end{bmatrix}.
 \]
 
-<1>1. The matrix $A$ has rank $3$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #a-has-rank-3}
+The matrix $A$ has rank $3$.
+
+::: pf-proof
 $A$ is lower triangular and
 \[
 \det A=2(-1)3=-6\ne0.
@@ -48,8 +52,12 @@ $A$ is lower triangular and
 Hence $A$ is invertible and has rank $3$.
 :::
 
-<1>2. The matrix $B$ has rank $2$.
-::: {.proof}
+:::
+
+::: {.pf-step #b-has-rank-2}
+The matrix $B$ has rank $2$.
+
+::: pf-proof
 Its determinant is
 \[
 \det B=0,
@@ -62,9 +70,18 @@ columns is
 so its rank is at least $2$.
 :::
 
-<1>3. Therefore $A$ and $B$ are not row-equivalent.
-::: {.proof}
-Elementary row operations preserve rank, whereas <1>1 and <1>2 give different
+:::
+
+::: pf-step
+Therefore $A$ and $B$ are not row-equivalent.
+
+::: pf-proof
+Elementary row operations preserve rank, whereas steps [](#a-has-rank-3){.pf-ref} and [](#b-has-rank-2){.pf-ref} give different
 ranks.
 :::
+
+:::
+
+:::
+
 :::

@@ -34,7 +34,10 @@ Let $X$ be a smooth projective connected curve over $\mathbb C$.  Its Jacobian i
 \]
 where the homology group is embedded as the period lattice.
 
-<1>1. For a degree-zero divisor
+::: pf
+
+::: pf-step
+For a degree-zero divisor
 \[
 D=\sum_i n_i p_i,
 \qquad
@@ -49,7 +52,8 @@ the Abel--Jacobi class is
 \in\operatorname{Jac}(X),
 \]
 where $p_0\in X$ is any base point.
-::: {.proof}
+
+::: pf-proof
 Changing the integration paths changes the displayed functional by periods, so its class in the quotient is well-defined.  Because $\deg D=0$, changing the common base point contributes
 \[
 \left(\sum_i n_i\right)\int_{p_0'}^{p_0}\omega=0,
@@ -57,7 +61,10 @@ Changing the integration paths changes the displayed functional by periods, so i
 so the class is independent of the choice of $p_0$ as well.
 :::
 
-<1>2. Abel's theorem states
+:::
+
+::: {.pf-step #abels-theorem}
+Abel's theorem states
 \[
 \boxed{
 D\text{ is principal}
@@ -65,7 +72,8 @@ D\text{ is principal}
 \operatorname{AJ}(D)=0\text{ in }\operatorname{Jac}(X).
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Equivalently, the kernel of the Abel--Jacobi homomorphism
 \[
 \operatorname{Div}^0(X)\longrightarrow\operatorname{Jac}(X)
@@ -73,7 +81,10 @@ Equivalently, the kernel of the Abel--Jacobi homomorphism
 is exactly the subgroup $\operatorname{Prin}(X)$ of principal divisors.  This is the standard form of Abel's theorem for a compact Riemann surface.
 :::
 
-<1>3. Equivalently, if $p_1,\ldots,p_m,q_1,\ldots,q_m\in X$ are counted with multiplicity, then there exists a nonzero meromorphic function $f$ with
+:::
+
+::: {.pf-step #zero-pole-criterion}
+Equivalently, if $p_1,\ldots,p_m,q_1,\ldots,q_m\in X$ are counted with multiplicity, then there exists a nonzero meromorphic function $f$ with
 \[
 \operatorname{div}(f)
 =\sum_{i=1}^m p_i-
@@ -88,15 +99,19 @@ if and only if
 \quad\text{in }\operatorname{Jac}(X).
 }
 \]
-::: {.proof}
-Apply <1>2 to the degree-zero divisor
+
+::: pf-proof
+Apply step [](#abels-theorem){.pf-ref} to the degree-zero divisor
 \[
 D=\sum_i p_i-\sum_i q_i.
 \]
 The divisor is principal exactly when it is the divisor of a meromorphic function, while additivity of the Abel--Jacobi map gives the displayed equality.
 :::
 
-<1>4. Thus Abel's theorem makes the Abel--Jacobi map descend to an injective homomorphism
+:::
+
+::: pf-step
+Thus Abel's theorem makes the Abel--Jacobi map descend to an injective homomorphism
 \[
 \operatorname{Pic}^0(X)
 =\operatorname{Div}^0(X)/\operatorname{Prin}(X)
@@ -107,12 +122,16 @@ Jacobi inversion is the separate surjectivity statement; together the two theore
 \[
 \operatorname{Pic}^0(X)\cong\operatorname{Jac}(X).
 \]
-::: {.proof}
-By <1>2, two degree-zero divisors have the same Abel--Jacobi image exactly when their difference is principal.  Hence the induced map on $\operatorname{Pic}^0(X)$ is injective.  Surjectivity is not part of this kernel statement; it is supplied by Jacobi inversion.
+
+::: pf-proof
+By step [](#abels-theorem){.pf-ref}, two degree-zero divisors have the same Abel--Jacobi image exactly when their difference is principal.  Hence the induced map on $\operatorname{Pic}^0(X)$ is injective.  Surjectivity is not part of this kernel statement; it is supplied by Jacobi inversion.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>2 is Abel's theorem, and step <1>3 is its equivalent zero-and-pole formulation.
+:::
+
+::: pf-qed
+Step [](#abels-theorem){.pf-ref} is Abel's theorem, and step [](#zero-pole-criterion){.pf-ref} is its equivalent zero-and-pole formulation.
+:::
+
 :::
 :::

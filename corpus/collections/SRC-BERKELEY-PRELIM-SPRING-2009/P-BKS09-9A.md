@@ -31,7 +31,11 @@ Let $d _ { k } : = \operatorname { L C M } \{ 1 , 2 , \dots , k \}$ (the least c
 :::
 
 ::: {.solution}
-<1>1. The integral $I_m$ can be written as
+
+::: pf
+
+::: {.pf-step #binomial-expansion}
+The integral $I_m$ can be written as
 $$
 I_m
 =
@@ -39,7 +43,7 @@ I_m
 (-1)^j\binom mj\frac{1}{m+j+1}.
 $$
 
-::: {.proof}
+::: pf-proof
 By the binomial theorem,
 $$
 x^m(1-x)^m
@@ -59,27 +63,33 @@ I_m
 $$
 :::
 
-<1>2. The number $d_{2m+1}I_m$ is an integer.
+:::
 
-::: {.proof}
+::: {.pf-step #integer-product}
+The number $d_{2m+1}I_m$ is an integer.
+
+::: pf-proof
 For $0\leq j\leq m$, the denominator $m+j+1$ is an integer between
 $1$ and $2m+1$, so it divides
 $$
 d_{2m+1}=\operatorname{lcm}(1,2,\ldots,2m+1).
 $$
-Every summand in step <1>1 therefore becomes an integer after multiplication
+Every summand in step [](#binomial-expansion){.pf-ref} therefore becomes an integer after multiplication
 by $d_{2m+1}$. Hence
 $$
 d_{2m+1}I_m\in\ZZ.
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #integral-bound}
+One has
 $$
 0<I_m\leq4^{-m}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $0\leq x\leq1$,
 $$
 0\leq x(1-x)
@@ -99,23 +109,29 @@ $$
 $$
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #product-at-least-one}
+One has
 $$
 d_{2m+1}I_m\geq1.
 $$
 
-::: {.proof}
-By step <1>2, $d_{2m+1}I_m$ is an integer. By step <1>3 and
+::: pf-proof
+By step [](#integer-product){.pf-ref}, $d_{2m+1}I_m$ is an integer. By step [](#integral-bound){.pf-ref} and
 $d_{2m+1}>0$, it is positive. Every positive integer is at least $1$.
 :::
 
-<1>5. The required lower bound is
+:::
+
+::: {.pf-step #lower-bound}
+The required lower bound is
 $$
 \boxed{d_{2m+1}\geq2^{2m}}.
 $$
 
-::: {.proof}
-Steps <1>3 and <1>4 give
+::: pf-proof
+Steps [](#integral-bound){.pf-ref} and [](#product-at-least-one){.pf-ref} give
 $$
 1
 \leq
@@ -129,10 +145,13 @@ d_{2m+1}\geq4^m=2^{2m}.
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves the integrality assertion, and step <1>5 proves the required
+::: pf-qed
+Step [](#integer-product){.pf-ref} proves the integrality assertion, and step [](#lower-bound){.pf-ref} proves the required
 lower bound.
 :::
+
+:::
+
 :::

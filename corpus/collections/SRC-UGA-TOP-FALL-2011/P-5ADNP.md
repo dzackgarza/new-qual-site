@@ -46,8 +46,13 @@ Use that closed subsets of $A$ are intersections of $A$ with closed subsets of $
 :::
 
 ::: {.solution}
-<1>1. The set $A\cap\cl_X(B)$ is closed in $A$ and contains $B$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #a-cap-clx-closed}
+The set $A\cap\cl_X(B)$ is closed in $A$ and contains $B$.
+
+::: pf-proof
 The set $\cl_X(B)$ is closed in $X$, so its intersection with $A$ is closed in the subspace $A$.
 Also
 \[
@@ -61,18 +66,26 @@ B\subseteq A\cap\cl_X(B).
 \]
 :::
 
-<1>2. $\cl_A(B)\subseteq A\cap\cl_X(B)$.
-::: {.proof}
-By definition, $\cl_A(B)$ is the smallest closed subset of $A$ containing $B$.
-Apply <1>1.
 :::
 
-<1>3. Let $C$ be any closed subset of $A$ containing $B$.
+::: {.pf-step #cla-subset-a-cap-clx}
+$\cl_A(B)\subseteq A\cap\cl_X(B)$.
+
+::: pf-proof
+By definition, $\cl_A(B)$ is the smallest closed subset of $A$ containing $B$.
+Apply step [](#a-cap-clx-closed){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #contained-in-every-c}
+Let $C$ be any closed subset of $A$ containing $B$.
 Then
 \[
 A\cap\cl_X(B)\subseteq C.
 \]
-::: {.proof}
+
+::: pf-proof
 Because $C$ is closed in the subspace $A$, there is a closed set $F\subseteq X$ such that
 \[
 C=A\cap F.
@@ -87,17 +100,28 @@ A\cap\cl_X(B)\subseteq A\cap F=C.
 \]
 :::
 
-<1>4. $A\cap\cl_X(B)\subseteq\cl_A(B)$.
-::: {.proof}
-The closure $\cl_A(B)$ is the intersection of all closed subsets $C\subseteq A$ containing $B$.
-By <1>3, $A\cap\cl_X(B)$ lies in every such $C$, hence in their intersection.
 :::
 
-<1>5. Therefore
+::: {.pf-step #a-cap-clx-subset-cla}
+$A\cap\cl_X(B)\subseteq\cl_A(B)$.
+
+::: pf-proof
+The closure $\cl_A(B)$ is the intersection of all closed subsets $C\subseteq A$ containing $B$.
+By step [](#contained-in-every-c){.pf-ref}, $A\cap\cl_X(B)$ lies in every such $C$, hence in their intersection.
+:::
+
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{\cl_A(B)=A\cap\cl_X(B)}.
 \]
-::: {.proof}
-Combine <1>2 and <1>4.
+
+::: pf-proof
+Combine step [](#cla-subset-a-cap-clx){.pf-ref} and step [](#a-cap-clx-subset-cla){.pf-ref}.
 :::
+
+:::
+
 :::

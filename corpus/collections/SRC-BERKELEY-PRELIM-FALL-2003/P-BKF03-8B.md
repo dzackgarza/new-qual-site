@@ -30,6 +30,7 @@ How many conjugacy classes?
 
 
 ::: {.solution}
+
 The equation is
 \[
 A^3=A^2,
@@ -39,8 +40,12 @@ equivalently
 A^2(A-I)=0.
 \]
 
-<1>1. Every Jordan block of $A$ has eigenvalue $0$ or $1$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #eigenvalues-zero-or-one}
+Every Jordan block of $A$ has eigenvalue $0$ or $1$.
+
+::: pf-proof
 The polynomial
 \[
 q(x)=x^2(x-1)
@@ -49,11 +54,15 @@ annihilates $A$.
 Therefore the minimal polynomial of $A$ divides $q$, so every eigenvalue is a root of $q$, namely $0$ or $1$.
 :::
 
-<1>2. The only possible Jordan blocks are
+:::
+
+::: {.pf-step #possible-jordan-blocks}
+The only possible Jordan blocks are
 \[
 [0],\qquad [1],\qquad J_2(0)=\begin{pmatrix}0&1\\0&0\end{pmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
 For eigenvalue $0$, the exponent of $x$ in the minimal polynomial is at most $2$, so Jordan blocks at $0$ have size at most $2$.
 Thus the only possibilities are $[0]$ and $J_2(0)$.
 
@@ -61,18 +70,26 @@ For eigenvalue $1$, the factor $x-1$ occurs only to the first power in $q$, so e
 Thus only $[1]$ is allowed.
 :::
 
-<1>3. A conjugacy class is uniquely determined by the multiplicities $(a,b,c)$ of these three block types, subject to
+:::
+
+::: {.pf-step #conjugacy-class-multiplicities}
+A conjugacy class is uniquely determined by the multiplicities $(a,b,c)$ of these three block types, subject to
 \[
 a+b+2c=5.
 \]
-::: {.proof}
+
+::: pf-proof
 Over $\mathbb C$, conjugacy classes are determined uniquely by Jordan normal form.
 If $a$ is the number of $[0]$ blocks, $b$ the number of $[1]$ blocks, and $c$ the number of $J_2(0)$ blocks, then the total dimension is exactly $a+b+2c$.
 Conversely, every nonnegative triple satisfying the displayed equation gives a valid Jordan form annihilated by $x^2(x-1)$.
 :::
 
-<1>4. There are exactly $12$ such triples.
-::: {.proof}
+:::
+
+::: {.pf-step #twelve-triples}
+There are exactly $12$ such triples.
+
+::: pf-proof
 The integer $c$ can be $0,1,$ or $2$.
 For fixed $c$, the number of nonnegative solutions of
 \[
@@ -84,5 +101,10 @@ Therefore the total number is
 6+4+2=\boxed{12}.
 \]
 :::
+
+:::
+
+:::
+
 :::
 

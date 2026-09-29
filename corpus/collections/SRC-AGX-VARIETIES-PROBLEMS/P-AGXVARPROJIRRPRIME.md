@@ -61,9 +61,13 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Suppose that $X$ is irreducible. Then $I(X)$ is prime.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #forward-implication}
+Suppose that $X$ is irreducible. Then $I(X)$ is prime.
+
+::: pf-proof
 Assume for contradiction that the homogeneous ideal $I(X)$ is not prime.
 A homogeneous ideal $I$ is prime if and only if, for all homogeneous $f,g$,
 $fg\in I$ implies $f\in I$ or $g\in I$. Hence there exist
@@ -111,9 +115,12 @@ Thus $X$ is the union of two proper closed subsets, contradicting
 irreducibility. Hence $I(X)$ is prime.
 :::
 
-<1>2. Suppose that $I(X)$ is prime. Then $X$ is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #converse-implication}
+Suppose that $I(X)$ is prime. Then $X$ is irreducible.
+
+::: pf-proof
 Since $X$ is Zariski closed,
 $$
 X=V_+\bigl(I(X)\bigr).
@@ -123,7 +130,10 @@ every homogeneous prime $P$ with $V_+(P)$ nonempty [[P-AGXVARPROJIRR]].
 Therefore $X$ is irreducible.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #equivalence-statement}
+Therefore
 $$
 \boxed{
 X\text{ is irreducible}
@@ -132,15 +142,18 @@ I(X)\text{ is a homogeneous prime ideal}.
 }
 $$
 
-::: {.proof}
-Step <1>1 proves the forward implication. Step <1>2 proves the converse.
+::: pf-proof
+Step [](#forward-implication){.pf-ref} proves the forward implication. Step [](#converse-implication){.pf-ref} proves the converse.
 The ideal $I(X)$ is homogeneous by its projective vanishing-ideal
 construction.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required equivalence.
 :::
+
+::: pf-qed
+Step [](#equivalence-statement){.pf-ref} is the required equivalence.
+:::
+
+:::
+
 :::

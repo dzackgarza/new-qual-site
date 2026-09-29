@@ -33,13 +33,18 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a) holds with
+
+::: pf
+
+::: {.pf-step #part-a-example}
+Part (a) holds with
 \[
 M=\mathbb Z,
 \qquad
 N=\mathbb Z\oplus\mathbb Z/2\mathbb Z.
 \]
-::: {.proof}
+
+::: pf-proof
 The two modules are not isomorphic because $N$ contains a nonzero element of order $2$, whereas $M$ is torsion-free.
 On the other hand,
 \[
@@ -67,8 +72,12 @@ Therefore
 \]
 :::
 
-<1>2. Complexification is obtained from the real elementary-divisor decomposition by splitting each irreducible real quadratic into its two conjugate linear factors.
-::: {.proof}
+:::
+
+::: {.pf-step #complexification-decomposition}
+Complexification is obtained from the real elementary-divisor decomposition by splitting each irreducible real quadratic into its two conjugate linear factors.
+
+::: pf-proof
 The ring $\mathbb R[x]$ is a PID.
 Thus the structure theorem gives an elementary-divisor decomposition
 \[
@@ -128,8 +137,12 @@ Consequently
 has free rank $r$, the same elementary divisors $(x-a)^e$ with multiplicities $m_{a,e}$ for real $a$, and for each nonreal conjugate pair $\{z,\bar z\}$ it has both elementary divisors $(x-z)^e$ and $(x-\bar z)^e$, each with multiplicity $n_{z,e}$.
 :::
 
-<1>3. The isomorphism type of a finitely generated $\mathbb R[x]$-module is determined by its complexification.
-::: {.proof}
+:::
+
+::: {.pf-step #complexification-determines-isomorphism}
+The isomorphism type of a finitely generated $\mathbb R[x]$-module is determined by its complexification.
+
+::: pf-proof
 Suppose
 \[
 \mathbb C[x]\otimes_{\mathbb R[x]}M
@@ -138,7 +151,7 @@ Suppose
 \]
 Since $\mathbb C[x]$ is a PID, the structure theorem over $\mathbb C[x]$ implies that the two complexified modules have the same free rank and exactly the same elementary divisors with the same multiplicities.
 
-By <1>2, the real elementary-divisor data can be recovered uniquely from this complex data.
+By step [](#complexification-decomposition){.pf-ref}, the real elementary-divisor data can be recovered uniquely from this complex data.
 For each real $a$, every block $(x-a)^e$ comes from the identical real block, so its multiplicity is read off directly.
 For each nonreal $z$, the complexification of a real $q_z^e$-block contributes exactly one $(x-z)^e$-block and one $(x-\bar z)^e$-block.
 Thus the common multiplicity of the conjugate pair recovers the multiplicity of the real irreducible block
@@ -152,5 +165,13 @@ The structure theorem for finitely generated modules over the PID $\mathbb R[x]$
 \[
 M\cong N.
 \]
+:::
+
+:::
+
+::: pf-qed
+Steps [](#part-a-example){.pf-ref}, [](#complexification-decomposition){.pf-ref}, and [](#complexification-determines-isomorphism){.pf-ref} answer parts (a), (b), and (c).
+:::
+
 :::
 :::

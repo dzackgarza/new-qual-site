@@ -37,9 +37,12 @@ $$
 =\frac{\pi}{n\sin(\pi/n)}}.
 $$
 
-<1>1. The exact convergence range is $n>1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #convergence-range}
+The exact convergence range is $n>1$.
+
+::: pf-proof
 For $n>1$, the integrand is at most one on $(0,1)$
 and at most $x^{-n}$ on $[1,\infty)$, so both ends
 are integrable. If $n\leq0$, it is at least $1/2$ for
@@ -48,9 +51,12 @@ there because $1+x^n\leq2x$. These comparisons prove
 divergence in all the remaining real cases.
 :::
 
-<1>2. An annular sector contains exactly one simple pole.
+:::
 
-::: {.proof}
+::: pf-step
+An annular sector contains exactly one simple pole.
+
+::: pf-proof
 Fix $n>1$ and set $\theta=2\pi/n<2\pi$. Choose a
 logarithm branch on an open sector slightly wider than
 $0\leq\arg z\leq\theta$, and define
@@ -78,9 +84,12 @@ The residue theorem gives the total contour integral
 $-2\pi i\zeta/n$ [@SS03].
 :::
 
-<1>3. The arcs vanish and the phase factors simplify.
+:::
 
-::: {.proof}
+::: pf-step
+The arcs vanish and the phase factors simplify.
+
+::: pf-proof
 The outer and inner arc integrals have moduli bounded by
 $$
 \frac{\theta R}{R^n-1}\longrightarrow0,
@@ -89,7 +98,7 @@ $$
 $$
 respectively, using the arc lengths and $|z^n|=|z|^n$.
 Letting $R\to\infty$ and $\varepsilon\downarrow0$,
-step <1>1 and the residue identity therefore give
+step [](#convergence-range){.pf-ref} and the residue identity therefore give
 $$
 (1-e^{2\pi i/n})I=-\frac{2\pi i e^{i\pi/n}}n.
 $$
@@ -97,5 +106,9 @@ Finally
 $1-e^{2\pi i/n}=-2i e^{i\pi/n}\sin(\pi/n)$, whose
 sine factor is positive for $n>1$. Dividing gives
 $I=\pi/(n\sin(\pi/n))$ as claimed.
+:::
+
+:::
+
 :::
 :::

@@ -31,6 +31,7 @@ Prove that for every real $\alpha>1$,
 :::
 
 ::: {.solution}
+
 Set
 $$
 \beta\coloneqq\frac1\alpha.
@@ -40,7 +41,10 @@ $$
 0<\beta<1.
 $$
 
-<1>1. The substitution
+::: pf
+
+::: {.pf-step #substitution-t-equals-x-alpha}
+The substitution
 $$
 t=x^\alpha
 $$
@@ -53,7 +57,7 @@ $$
 \frac{t^{\beta-1}}{1+t}\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
 From $t=x^\alpha$,
 $$
 x=t^{1/\alpha}=t^\beta
@@ -69,7 +73,10 @@ $$
 Substitute into the integral.
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #beta-integral-value}
+Define
 $$
 J(\beta)
 \coloneqq
@@ -83,7 +90,7 @@ J(\beta)
 \frac{\pi}{\sin(\pi\beta)}.
 $$
 
-::: {.proof}
+::: pf-proof
 Use the branch
 $$
 z^{\beta-1}
@@ -136,7 +143,10 @@ J(\beta)
 $$
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #final-integral-value}
+Therefore
 $$
 \boxed{
 \int_0^\infty\frac{dx}{1+x^\alpha}
@@ -145,16 +155,19 @@ $$
 }.
 $$
 
-::: {.proof}
-Combine steps <1>1 and <1>2 and substitute
+::: pf-proof
+Combine steps [](#substitution-t-equals-x-alpha){.pf-ref} and [](#beta-integral-value){.pf-ref} and substitute
 $$
 \beta=\frac1\alpha.
 $$
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required identity.
 :::
+
+::: pf-qed
+Step [](#final-integral-value){.pf-ref} is the required identity.
+:::
+
+:::
+
 :::

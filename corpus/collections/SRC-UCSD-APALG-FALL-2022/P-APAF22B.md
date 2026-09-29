@@ -43,13 +43,18 @@ By considering $A$, or otherwise, prove that $\phi$ is normal.
 :::
 
 ::: {.solution}
-<1>1. The squared Frobenius norm of $A$ is
+
+::: pf
+
+::: {.pf-step #frobenius-norm-of-a-decomposition}
+The squared Frobenius norm of $A$ is
 \[
 \|A\|_{\mathrm{Frob}}^2
 =\sum_{i=1}^n|\lambda_i|^2+
 \sum_{1\le i<j\le n}|a_{ij}|^2.
 \]
-::: {.proof}
+
+::: pf-proof
 Because $A$ is upper triangular, its only possibly nonzero entries are the diagonal entries $\lambda_i$ and the entries $a_{ij}$ with $i<j$. By definition,
 \[
 \|A\|_{\mathrm{Frob}}^2=\sum_{i,j}|a_{ij}|^2,
@@ -57,11 +62,15 @@ Because $A$ is upper triangular, its only possibly nonzero entries are the diago
 which gives the displayed decomposition.
 :::
 
-<1>2. One also has
+:::
+
+::: {.pf-step #frobenius-norm-equals-sum-singular-squares}
+One also has
 \[
 \|A\|_{\mathrm{Frob}}^2=\sum_{i=1}^n\sigma_i^2.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $B$ is orthonormal, $A$ is the matrix of $\phi$ in an orthonormal basis. The Frobenius norm is unitarily invariant, and
 \[
 \|A\|_{\mathrm{Frob}}^2
@@ -73,12 +82,16 @@ The eigenvalues of $A^*A$ are the squares $\sigma_1^2,\ldots,\sigma_n^2$ of the 
 \]
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #eigenvalue-singular-value-inequality}
+Hence
 \[
 \boxed{\sum_{i=1}^n|\lambda_i|^2\le\sum_{i=1}^n\sigma_i^2}.
 \]
-::: {.proof}
-Combine <1>1 and <1>2:
+
+::: pf-proof
+Combine steps [](#frobenius-norm-of-a-decomposition){.pf-ref} and [](#frobenius-norm-equals-sum-singular-squares){.pf-ref}:
 \[
 \sum_{i=1}^n\sigma_i^2
 =\sum_{i=1}^n|\lambda_i|^2+\sum_{i<j}|a_{ij}|^2.
@@ -86,8 +99,12 @@ Combine <1>1 and <1>2:
 The second sum on the right is nonnegative, which gives the inequality.
 :::
 
-<1>4. If equality holds in <1>3, then $A$ is diagonal.
-::: {.proof}
+:::
+
+::: {.pf-step #equality-implies-a-diagonal}
+If equality holds in step [](#eigenvalue-singular-value-inequality){.pf-ref}, then $A$ is diagonal.
+
+::: pf-proof
 Under the equality hypothesis,
 \[
 0=\sum_{i<j}|a_{ij}|^2.
@@ -98,9 +115,13 @@ A=\operatorname{diag}(\lambda_1,\ldots,\lambda_n).
 \]
 :::
 
-<1>5. Therefore $\phi$ is normal.
-::: {.proof}
-By <1>4, the matrix of $\phi$ in the orthonormal basis $B$ is diagonal. A diagonal matrix commutes with its adjoint:
+:::
+
+::: {.pf-step #phi-is-normal}
+Therefore $\phi$ is normal.
+
+::: pf-proof
+By step [](#equality-implies-a-diagonal){.pf-ref}, the matrix of $\phi$ in the orthonormal basis $B$ is diagonal. A diagonal matrix commutes with its adjoint:
 \[
 AA^*=A^*A.
 \]
@@ -110,4 +131,13 @@ Normality is invariant under unitary change of orthonormal basis, so
 \]
 Hence $\phi$ is normal.
 :::
+
+:::
+
+::: pf-qed
+Step [](#eigenvalue-singular-value-inequality){.pf-ref} answers part (a); step [](#phi-is-normal){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

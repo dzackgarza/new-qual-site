@@ -32,18 +32,28 @@ the restriction $f|_A$ attains a maximum on $A$. Prove that $A$ is compact.
 :::
 
 ::: {.solution}
-<1>1. The subset $A$ is closed in $X$.
 
-<2>1. Suppose for contradiction that $A$ is not closed, and choose
+::: pf
+
+::: {.pf-step #A-is-closed}
+The subset $A$ is closed in $X$.
+
+::: pf-proof
+
+::: {.pf-step #not-closed-assumption}
+Suppose for contradiction that $A$ is not closed, and choose
 $$
 x\in\overline A\setminus A.
 $$
 
-::: {.proof}
+::: pf-proof
 If $A$ is not closed, then $\overline A\neq A$, so such a point exists.
 :::
 
-<2>2. The function
+:::
+
+::: {.pf-step #g-continuous}
+The function
 $$
 g:X\to\RR,
 \qquad
@@ -51,7 +61,7 @@ g(y)=-d(y,x),
 $$
 is continuous.
 
-::: {.proof}
+::: pf-proof
 The reverse triangle inequality gives
 $$
 \abs{d(y,x)-d(z,x)}\leq d(y,z)
@@ -60,10 +70,13 @@ for all $y,z\in X$. Thus $y\mapsto d(y,x)$ is $1$-Lipschitz and hence
 continuous, so $g$ is continuous.
 :::
 
-<2>3. The restriction $g|_A$ has supremum $0$ on $A$ but does not attain
+:::
+
+::: {.pf-step #g-sup-not-attained}
+The restriction $g|_A$ has supremum $0$ on $A$ but does not attain
 that value.
 
-::: {.proof}
+::: pf-proof
 Since $x\notin A$, every $a\in A$ satisfies $d(a,x)>0$, and therefore
 $$
 g(a)=-d(a,x)<0.
@@ -86,25 +99,33 @@ $$
 Consequently $g|_A$ has no maximum.
 :::
 
-<2>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <2>2 gives a continuous real-valued function on $X$, while step <2>3
+::: pf-qed
+Step [](#g-continuous){.pf-ref} gives a continuous real-valued function on $X$, while step [](#g-sup-not-attained){.pf-ref}
 shows that its restriction to $A$ does not attain a maximum. This
-contradicts the hypothesis, so the assumption in step <2>1 is false.
+contradicts the hypothesis, so the assumption in step [](#not-closed-assumption){.pf-ref} is false.
 Therefore $A$ is closed.
 :::
 
-<1>2. The subset $A$ is compact.
+:::
 
-::: {.proof}
-By step <1>1, $A$ is closed in the compact space $X$. Every closed subset
+:::
+
+::: {.pf-step #A-is-compact}
+The subset $A$ is compact.
+
+::: pf-proof
+By step [](#A-is-closed){.pf-ref}, $A$ is closed in the compact space $X$. Every closed subset
 of a compact space is compact.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#A-is-compact){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

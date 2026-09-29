@@ -32,13 +32,21 @@ Fix $x\in X$ and write
 G_x=\{g\in G:g\cdot x=x\}.
 \]
 
-<1>1. The identity belongs to $G_x$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #identity-in-gx}
+The identity belongs to $G_x$.
+
+::: pf-proof
 By the identity axiom for a group action, $e\cdot x=x$.
 :::
 
-<1>2. If $g,h\in G_x$, then $gh^{-1}\in G_x$.
-::: {.proof}
+:::
+
+::: {.pf-step #closed-under-quotient}
+If $g,h\in G_x$, then $gh^{-1}\in G_x$.
+
+::: pf-proof
 Since $h\cdot x=x$, applying $h^{-1}$ gives $h^{-1}\cdot x=x$. Hence
 \[
 (gh^{-1})\cdot x
@@ -49,8 +57,17 @@ Since $h\cdot x=x$, applying $h^{-1}$ gives $h^{-1}\cdot x=x$. Hence
 Thus $gh^{-1}\in G_x$.
 :::
 
-<1>3. Therefore $G_x\le G$.
-::: {.proof}
-By <1>1, $G_x$ is nonempty, and by <1>2 it satisfies the one-step subgroup criterion. Hence it is a subgroup of $G$.
 :::
+
+::: pf-step
+Therefore $G_x\le G$.
+
+::: pf-proof
+By step [](#identity-in-gx){.pf-ref}, $G_x$ is nonempty, and by step [](#closed-under-quotient){.pf-ref} it satisfies the one-step subgroup criterion. Hence it is a subgroup of $G$.
+:::
+
+:::
+
+:::
+
 :::

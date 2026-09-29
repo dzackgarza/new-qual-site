@@ -21,6 +21,7 @@ Given $n\geq 1$ and $\|\cdot\|$ a matrix norm of $M_n(\mathbb{C})=\mathbb{C}^{n\
 :::
 
 ::: {.solution}
+
 Fix the first standard basis vector \(e_1\in\mathbb C^n\), regarded as a column vector, and define
 \[
 \|x\|_0:=\|x e_1^H\|
@@ -28,8 +29,12 @@ Fix the first standard basis vector \(e_1\in\mathbb C^n\), regarded as a column 
 \]
 Here \(xe_1^H\in M_n(\mathbb C)\) is the matrix whose first column is \(x\) and whose remaining columns are zero.
 
-<1>1. The function \(\|\cdot\|_0\) is a vector norm on \(\mathbb C^n\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #norm0-is-a-norm}
+The function \(\|\cdot\|_0\) is a vector norm on \(\mathbb C^n\).
+
+::: pf-proof
 For \(x,y\in\mathbb C^n\) and \(c\in\mathbb C\), the matrix norm axioms give
 \[
 \|x+y\|_0
@@ -47,12 +52,16 @@ and
 Also \(\|x\|_0\ge0\). Finally, if \(\|x\|_0=0\), then \(xe_1^H=0\) because a matrix norm is definite, and hence its first column \(x\) is zero. Thus \(x=0\).
 :::
 
-<1>2. The vector norm \(\|\cdot\|_0\) is compatible with the given matrix norm:
+:::
+
+::: {.pf-step #norm0-is-compatible}
+The vector norm \(\|\cdot\|_0\) is compatible with the given matrix norm:
 \[
 \|Ax\|_0\le \|A\|\,\|x\|_0
 \qquad(A\in M_n(\mathbb C),\ x\in\mathbb C^n).
 \]
-::: {.proof}
+
+::: pf-proof
 Using associativity and consistency of the matrix norm,
 \[
 \|Ax\|_0
@@ -64,12 +73,16 @@ Using associativity and consistency of the matrix norm,
 This proves part (a).
 :::
 
-<1>3. Every eigenvalue \(\lambda\) of \(A\) satisfies
+:::
+
+::: {.pf-step #eigenvalue-bound}
+Every eigenvalue \(\lambda\) of \(A\) satisfies
 \[
 |\lambda|\le \|A\|.
 \]
-::: {.proof}
-Let \(0\ne x\in\mathbb C^n\) be an eigenvector with \(Ax=\lambda x\). By <1>2,
+
+::: pf-proof
+Let \(0\ne x\in\mathbb C^n\) be an eigenvector with \(Ax=\lambda x\). By step [](#norm0-is-compatible){.pf-ref},
 \[
 |\lambda|\,\|x\|_0
 =\|\lambda x\|_0
@@ -82,4 +95,13 @@ Since \(x\ne0\), one has \(\|x\|_0>0\). Dividing by \(\|x\|_0\) yields
 \]
 This proves part (b).
 :::
+
+:::
+
+::: pf-qed
+Steps [](#norm0-is-a-norm){.pf-ref} and [](#norm0-is-compatible){.pf-ref} answer part (a); step [](#eigenvalue-bound){.pf-ref} answers part (b).
+:::
+
+:::
+
 :::

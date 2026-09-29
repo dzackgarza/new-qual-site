@@ -34,14 +34,18 @@ Compute
 :::
 
 ::: {.solution}
-<1>1. The function
+
+::: pf
+
+::: {.pf-step #g-analytic-extension}
+The function
 $$
 g(x)=\frac{x}{\sin x}
 $$
 for $x\ne0$ extends to a real-analytic function near $0$ by setting
 $g(0)=1$.
 
-::: {.proof}
+::: pf-proof
 The function
 $$
 h(x)=
@@ -59,21 +63,24 @@ $g=1/h$ is real analytic there and agrees with $x/\sin x$ away from
 $0$.
 :::
 
-<1>2. The Taylor expansion of $g$ at $0$ begins
+:::
+
+::: {.pf-step #taylor-expansion-g}
+The Taylor expansion of $g$ at $0$ begins
 $$
 g(x)
 =
 1+\frac{x^2}{6}+\frac{7x^4}{360}+O(x^6).
 $$
 
-::: {.proof}
+::: pf-proof
 Since $h$ is even, its reciprocal $g=1/h$ is even on the
-neighborhood from step <1>1. Thus its Taylor series has only even
+neighborhood from step [](#g-analytic-extension){.pf-ref}. Thus its Taylor series has only even
 powers. Write
 $$
 g(x)=1+ax^2+bx^4+O(x^6).
 $$
-Multiplying this by the expansion for $h$ from step <1>1 gives
+Multiplying this by the expansion for $h$ from step [](#g-analytic-extension){.pf-ref} gives
 $$
 \begin{aligned}
 1
@@ -103,14 +110,17 @@ b
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #g4-value}
+One has
 $$
 g^{(4)}(0)=\boxed{\frac7{15}}.
 $$
 
-::: {.proof}
-Because $g$ is analytic by step <1>1, the coefficient of $x^4$ in its
-Taylor series is $g^{(4)}(0)/4!$. Step <1>2 therefore gives
+::: pf-proof
+Because $g$ is analytic by step [](#g-analytic-extension){.pf-ref}, the coefficient of $x^4$ in its
+Taylor series is $g^{(4)}(0)/4!$. Step [](#taylor-expansion-g){.pf-ref} therefore gives
 $$
 g^{(4)}(0)
 =
@@ -120,25 +130,31 @@ g^{(4)}(0)
 $$
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #limit-equals-g4}
+Therefore
 $$
 \lim_{x\to0}\frac{d^4}{dx^4}\left(\frac{x}{\sin x}\right)
 =
 \frac7{15}.
 $$
 
-::: {.proof}
-The analytic extension $g$ from step <1>1 agrees with $x/\sin x$ for
+::: pf-proof
+The analytic extension $g$ from step [](#g-analytic-extension){.pf-ref} agrees with $x/\sin x$ for
 $x\ne0$, and $g^{(4)}$ is continuous at $0$. Hence
 $$
 \lim_{x\to0}g^{(4)}(x)=g^{(4)}(0),
 $$
-which step <1>3 evaluates.
+which step [](#g4-value){.pf-ref} evaluates.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested limit.
 :::
+
+::: pf-qed
+Step [](#limit-equals-g4){.pf-ref} is the requested limit.
+:::
+
+:::
+
 :::

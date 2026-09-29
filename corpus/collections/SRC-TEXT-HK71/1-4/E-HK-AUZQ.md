@@ -42,9 +42,13 @@ $Y=(y_1,y_2,y_3,y_4)^t$ satisfying
 3y_1+y_2-7y_4=0.
 \]
 
-<1>1. Every vector in the column space of $A$ satisfies the two displayed
+::: pf
+
+::: {.pf-step #column-space-satisfies-relations}
+Every vector in the column space of $A$ satisfies the two displayed
 relations.
-::: {.proof}
+
+::: pf-proof
 The vectors
 \[
 u=(-2,-3,7,0)^t,
@@ -66,17 +70,26 @@ v^tY=v^tAX=0,
 which are exactly the stated equations.
 :::
 
-<1>2. The two relations are also sufficient.
-::: {.proof}
+:::
+
+::: pf-step
+The two relations are also sufficient.
+
+::: pf-proof
 Row reduction shows $\operatorname{rank}A=2$. Therefore the left nullspace
 \[
 \ker(A^t)
 \]
-has dimension $4-2=2$. The two vectors $u,v$ in <1>1 are linearly independent,
+has dimension $4-2=2$. The two vectors $u,v$ in step [](#column-space-satisfies-relations){.pf-ref} are linearly independent,
 so they form a basis of this left nullspace.
 
 The column space is the annihilator of the left nullspace. Consequently a vector
 $Y$ lies in the column space of $A$ exactly when $u^tY=v^tY=0$, namely exactly
 when the two displayed relations hold.
 :::
+
+:::
+
+:::
+
 :::

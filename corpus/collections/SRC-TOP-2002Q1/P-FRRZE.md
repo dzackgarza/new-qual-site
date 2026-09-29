@@ -41,9 +41,12 @@ Find the fundamental group of the space $X$ consisting of $\RR^3$ with the three
 ::: {.solution}
 Let $L\subset\RR^3$ be the union of the three coordinate axes, so that $X=\RR^3\setminus L$, and let $e_1,e_2,e_3$ be the standard basis of $\RR^3$.
 
-<1>1. The space $X$ strongly deformation retracts onto $S^2\setminus\{\pm e_1,\pm e_2,\pm e_3\}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #retract-to-sphere-minus-points}
+The space $X$ strongly deformation retracts onto $S^2\setminus\{\pm e_1,\pm e_2,\pm e_3\}$.
+
+::: pf-proof
 Every point of $X$ is nonzero.
 Define $H\colon X\times[0,1]\to\RR^3$ by
 $$H(v,t)=\left((1-t)+\frac{t}{\norm{v}}\right)v.$$
@@ -56,16 +59,22 @@ Finally, $S^2\cap L=\{\pm e_1,\pm e_2,\pm e_3\}$.
 Hence $H$ is a strong deformation retraction of $X$ onto $S^2\setminus\{\pm e_1,\pm e_2,\pm e_3\}$.
 :::
 
-<1>2. $S^2\setminus\{\pm e_1,\pm e_2,\pm e_3\}$ is homeomorphic to $\RR^2\setminus\{p_1,\ldots,p_5\}$ for five distinct points $p_1,\ldots,p_5\in\RR^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #sphere-homeo-plane-minus-five}
+$S^2\setminus\{\pm e_1,\pm e_2,\pm e_3\}$ is homeomorphic to $\RR^2\setminus\{p_1,\ldots,p_5\}$ for five distinct points $p_1,\ldots,p_5\in\RR^2$.
+
+::: pf-proof
 Stereographic projection from $-e_3$ is a homeomorphism $S^2\setminus\{-e_3\}\cong\RR^2$.
 It sends the other five deleted points to five distinct points $p_1,\ldots,p_5\in\RR^2$, and its restriction is the required homeomorphism.
 :::
 
-<1>3. $\RR^2\setminus\{p_1,\ldots,p_5\}$ is homotopy equivalent to $\bigvee_{i=1}^5 S^1$.
+:::
 
-::: {.proof}
+::: {.pf-step #plane-minus-five-wedge}
+$\RR^2\setminus\{p_1,\ldots,p_5\}$ is homotopy equivalent to $\bigvee_{i=1}^5 S^1$.
+
+::: pf-proof
 Choose a closed disk $D\subset\RR^2$ containing all five punctures in its interior.
 Radially collapsing the complement of $D$ onto $\partial D$ gives a strong deformation retraction of $\RR^2\setminus\{p_1,\ldots,p_5\}$ onto $D\setminus\{p_1,\ldots,p_5\}$.
 
@@ -78,12 +87,15 @@ Cutting $M$ along these arcs produces a disk, so $M$ has a handle decomposition 
 Collapsing the $0$-handle to a point and each $1$-handle across its transverse interval gives a deformation retraction onto the core graph $\bigvee_{i=1}^5 S^1$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-By steps <1>1, <1>2, and <1>3, $X\simeq\bigvee_{i=1}^5S^1$.
+::: pf-qed
+By steps [](#retract-to-sphere-minus-points){.pf-ref}, [](#sphere-homeo-plane-minus-five){.pf-ref}, and [](#plane-minus-five-wedge){.pf-ref}, $X\simeq\bigvee_{i=1}^5S^1$.
 By the Seifert--van Kampen theorem,
 $$\pi_1(X)\cong\pi_1\Bigl(\bigvee_{i=1}^5S^1\Bigr)\cong\underbrace{\ZZ*\cdots*\ZZ}_{5\text{ factors}}=\boxed{F_5},$$
 the free group of rank $5$.
 :::
+
+:::
+
 :::

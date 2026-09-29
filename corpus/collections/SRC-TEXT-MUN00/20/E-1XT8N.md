@@ -27,15 +27,21 @@ a homeomorphism?
 ::: {.solution}
 Here $h(\mathbf x)=(a_ix_i+b_i)_{i\ge1}$ with $a_i>0$, as in [[E-AWEWJ]], and the uniform topology is given by $\bar\rho(\mathbf x,\mathbf y)=\sup_i\min\{\abs{x_i-y_i},1\}$.
 
-<1>1. Translation $\mathbf x\mapsto\mathbf x+\mathbf b$ is an isometry of $(\mathbb R^\omega,\bar\rho)$, so $h$ is continuous, or a homeomorphism, if and only if $\mathbf x\mapsto(a_ix_i)_i$ is.
+::: pf
 
-::: {.proof}
+::: {.pf-step #translation-isometry}
+Translation $\mathbf x\mapsto\mathbf x+\mathbf b$ is an isometry of $(\mathbb R^\omega,\bar\rho)$, so $h$ is continuous, or a homeomorphism, if and only if $\mathbf x\mapsto(a_ix_i)_i$ is.
+
+::: pf-proof
 $\min\{\abs{(x_i+b_i)-(y_i+b_i)},1\}=\min\{\abs{x_i-y_i},1\}$ for every $i$.
 :::
 
-<1>2. $h$ is continuous if and only if $\boxed{\sup_i a_i<\infty}$.
+:::
 
-::: {.proof}
+::: {.pf-step #continuity-condition}
+$h$ is continuous if and only if $\boxed{\sup_i a_i<\infty}$.
+
+::: pf-proof
 Suppose $M=\sup_ia_i<\infty$, and let $0<\varepsilon\le1$.
 If $\bar\rho(\mathbf x,\mathbf y)<\min\{\varepsilon/M,1\}$, then $\abs{x_i-y_i}<\varepsilon/M$ for every $i$, so $\abs{a_ix_i-a_iy_i}<\varepsilon$ and $\bar\rho(h\mathbf x,h\mathbf y)\le\varepsilon$.
 
@@ -45,16 +51,22 @@ Then $\bar\rho(\mathbf y,\mathbf 0)=\delta/2<\delta$, but the $k$-th coordinates
 Hence $h$ is not continuous at $\mathbf 0$.
 :::
 
-<1>3. $h$ is a homeomorphism if and only if $\boxed{\sup_ia_i<\infty\text{ and }\inf_ia_i>0}$.
+:::
 
-::: {.proof}
+::: {.pf-step #homeomorphism-condition}
+$h$ is a homeomorphism if and only if $\boxed{\sup_ia_i<\infty\text{ and }\inf_ia_i>0}$.
+
+::: pf-proof
 Since every $a_i>0$, $h$ is bijective with inverse $h^{-1}(\mathbf y)=\bigl((y_i-b_i)/a_i\bigr)_i$, a map of the same form with coefficients $1/a_i$.
-By step <1>2, $h$ is continuous if and only if $\sup_ia_i<\infty$, and $h^{-1}$ is continuous if and only if $\sup_i(1/a_i)<\infty$, that is, $\inf_ia_i>0$.
+By step [](#continuity-condition){.pf-ref}, $h$ is continuous if and only if $\sup_ia_i<\infty$, and $h^{-1}$ is continuous if and only if $\sup_i(1/a_i)<\infty$, that is, $\inf_ia_i>0$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3 give the two conditions; by step <1>1 neither depends on $(b_i)$.
 :::
+
+::: pf-qed
+Steps [](#continuity-condition){.pf-ref} and [](#homeomorphism-condition){.pf-ref} give the two conditions; by step [](#translation-isometry){.pf-ref} neither depends on $(b_i)$.
+:::
+
+:::
+
 :::

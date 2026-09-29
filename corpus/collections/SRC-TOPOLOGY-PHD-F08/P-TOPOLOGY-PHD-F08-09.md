@@ -33,7 +33,11 @@ Prove that $\mathbb R$ with the usual topology is connected.
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that
+
+::: pf
+
+::: pf-step
+Suppose, for contradiction, that
 \[
 \mathbb R=U\cup V
 \]
@@ -48,12 +52,16 @@ After interchanging $u$ and $v$ and simultaneously interchanging $U$ and $V$ if 
 \[
 u<v.
 \]
-::: {.proof}
+
+::: pf-proof
 If $u>v$, rename the point in $V$ as the left endpoint and the point in $U$ as the right endpoint, and interchange the names of the two sets.
 The hypotheses of a separation are symmetric in $U$ and $V$.
 :::
 
-<1>2. The set
+:::
+
+::: pf-step
+The set
 \[
 S=U\cap[u,v]
 \]
@@ -65,15 +73,20 @@ with
 \[
 u\le c\le v.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $u\in U\cap[u,v]$, the set $S$ is nonempty.
 Every element of $S$ lies in $[u,v]$, so $v$ is an upper bound.
 The least-upper-bound property of $\mathbb R$ therefore gives $c=\sup S$.
 Since $u\in S$, we have $u\le c$, and since $v$ is an upper bound, $c\le v$.
 :::
 
-<1>3. The point $c$ cannot lie in $U$.
-::: {.proof}
+:::
+
+::: {.pf-step #c-not-in-u}
+The point $c$ cannot lie in $U$.
+
+::: pf-proof
 Suppose $c\in U$.
 Because $v\in V$ and $U\cap V=\varnothing$, we have $c\ne v$, so
 \[
@@ -95,8 +108,12 @@ and $t>c$, contradicting that $c$ is an upper bound of $S$.
 Hence $c\notin U$.
 :::
 
-<1>4. The point $c$ cannot lie in $V$.
-::: {.proof}
+:::
+
+::: {.pf-step #c-not-in-v}
+The point $c$ cannot lie in $V$.
+
+::: pf-proof
 Suppose $c\in V$.
 Because $u\in U$ and $U\cap V=\varnothing$, we have $c\ne u$, so
 \[
@@ -115,7 +132,7 @@ Hence there exists $s\in S$ with
 \[
 c-\delta<s\le c.
 \]
-By <1>3, $c\notin U$.
+By step [](#c-not-in-u){.pf-ref}, $c\notin U$.
 Since $s\in S\subseteq U$, we have $s\ne c$, and therefore $s<c$.
 Also
 \[
@@ -126,9 +143,13 @@ Thus $s\in U\cap V$, contradicting disjointness.
 Therefore $c\notin V$.
 :::
 
-<1>5. Therefore $\mathbb R$ is connected.
-::: {.proof}
-By <1>3--<1>4,
+:::
+
+::: pf-step
+Therefore $\mathbb R$ is connected.
+
+::: pf-proof
+By steps [](#c-not-in-u){.pf-ref} and [](#c-not-in-v){.pf-ref},
 \[
 c\notin U\cup V,
 \]
@@ -138,4 +159,9 @@ contradicting the assumed equality
 \]
 Thus no separation of $\mathbb R$ exists, so $\mathbb R$ is connected.
 :::
+
+:::
+
+:::
+
 :::

@@ -26,8 +26,13 @@ Let $f$ be a bounded Riemann integrable function on $[0,1]$. Prove that $f^2$ is
 :::
 
 ::: {.solution}
-<1>1. Control the oscillation of $f^2$ by that of $f$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Control the oscillation of $f^2$ by that of $f$.
+
+::: pf-proof
 Choose $M\ge1$ with $|f(x)|\le M$ on $[0,1]$. For all $x,y$,
 \[
 |f(x)^2-f(y)^2|
@@ -41,8 +46,12 @@ Hence on every subinterval $I$,
 \]
 :::
 
-<1>2. Apply the Darboux criterion.
-::: {.proof}
+:::
+
+::: pf-step
+Apply the Darboux criterion.
+
+::: pf-proof
 Given $\varepsilon>0$, Riemann integrability of $f$ gives a partition $P$ such that
 \[
 U(f,P)-L(f,P)
@@ -56,5 +65,9 @@ U(f^2,P)-L(f^2,P)
 <\varepsilon.
 \]
 By the Darboux criterion, $f^2$ is Riemann integrable.
+:::
+
+:::
+
 :::
 :::

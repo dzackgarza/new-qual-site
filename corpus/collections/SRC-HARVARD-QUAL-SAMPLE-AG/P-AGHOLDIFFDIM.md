@@ -32,11 +32,15 @@ Let $X$ be a compact Riemann surface of genus $g$, and let $K$ denote a canonica
 H^0(X,\Omega_X^1)=H^0(X,\mathcal O_X(K)).
 \]
 
-<1>1. Riemann--Roch for the zero divisor says
+::: pf
+
+::: {.pf-step #riemann-roch-zero-divisor}
+Riemann--Roch for the zero divisor says
 \[
 \ell(0)-\ell(K)=1-g.
 \]
-::: {.proof}
+
+::: pf-proof
 Riemann--Roch states that for every divisor $D$,
 \[
 \ell(D)-\ell(K-D)=\deg D+1-g.
@@ -47,11 +51,15 @@ Taking $D=0$ gives
 \]
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #l0-equals-one}
+One has
 \[
 \ell(0)=1.
 \]
-::: {.proof}
+
+::: pf-proof
 A section of $\mathcal O_X$ is a holomorphic function on the compact connected Riemann surface $X$.  By the maximum principle every such function is constant.  Hence
 \[
 H^0(X,\mathcal O_X)=\mathbb C
@@ -59,12 +67,16 @@ H^0(X,\mathcal O_X)=\mathbb C
 and $\ell(0)=1$.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #lk-equals-g}
+Therefore
 \[
 \ell(K)=g.
 \]
-::: {.proof}
-Substitute <1>2 into <1>1:
+
+::: pf-proof
+Substitute step [](#l0-equals-one){.pf-ref} into step [](#riemann-roch-zero-divisor){.pf-ref}:
 \[
 1-\ell(K)=1-g,
 \]
@@ -74,18 +86,25 @@ so
 \]
 :::
 
-<1>4. Thus
+:::
+
+::: {.pf-step #holomorphic-diff-dimension}
+Thus
 \[
 \boxed{
 \dim_{\mathbb C}H^0(X,\Omega_X^1)=g.
 }
 \]
-::: {.proof}
-The line bundle $\mathcal O_X(K)$ is the holomorphic cotangent bundle $\Omega_X^1$, so its global sections are precisely the holomorphic differentials.  Apply <1>3.
+
+::: pf-proof
+The line bundle $\mathcal O_X(K)$ is the holomorphic cotangent bundle $\Omega_X^1$, so its global sections are precisely the holomorphic differentials.  Apply step [](#lk-equals-g){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>4 is the required dimension.
+:::
+
+::: pf-qed
+Step [](#holomorphic-diff-dimension){.pf-ref} is the required dimension.
+:::
+
 :::
 :::

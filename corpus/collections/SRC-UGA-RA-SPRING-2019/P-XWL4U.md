@@ -41,8 +41,13 @@ Assume $f_k\to f$ almost everywhere. Prove that $f\in L^2([0,1])$, that $\|f\|_2
 :::
 
 ::: {.solution}
-<1>1. The limit belongs to $L^2$ with the same bound.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #limit-in-l2}
+The limit belongs to $L^2$ with the same bound.
+
+::: pf-proof
 Since $|f_k|^2\to |f|^2$ almost everywhere, Fatou's lemma gives
 \[
 \int_0^1|f|^2
@@ -57,8 +62,12 @@ f\in L^2([0,1])
 \]
 :::
 
-<1>2. Prove $f_k\to f$ in $L^1$.
-::: {.proof}
+:::
+
+::: {.pf-step #l1-convergence}
+Prove $f_k\to f$ in $L^1$.
+
+::: pf-proof
 Fix $\varepsilon>0$. Choose $\delta>0$ such that
 \[
 2M\sqrt\delta<\frac\varepsilon2.
@@ -95,18 +104,31 @@ f_k\to f\quad\text{in }L^1([0,1]).
 \]
 :::
 
-<1>3. Conclude convergence of the integrals.
-::: {.proof}
+:::
+
+::: {.pf-step #integral-convergence}
+Conclude convergence of the integrals.
+
+::: pf-proof
 Since
 \[
 \left|\int_0^1 f_k-\int_0^1 f\right|
 \le \int_0^1|f_k-f|
 =\|f_k-f\|_1,
 \]
-Step 2 yields
+Step [](#l1-convergence){.pf-ref} yields
 \[
 \boxed{
 \int_0^1 f_k(x)\,dx\to\int_0^1 f(x)\,dx.}
 \]
 :::
+
+:::
+
+::: pf-qed
+Steps [](#limit-in-l2){.pf-ref}, [](#l1-convergence){.pf-ref} and [](#integral-convergence){.pf-ref} establish that $f\in L^2([0,1])$, that $\|f\|_2\le M$, and that $\int_0^1 f_k\to\int_0^1 f$.
+:::
+
+:::
+
 :::

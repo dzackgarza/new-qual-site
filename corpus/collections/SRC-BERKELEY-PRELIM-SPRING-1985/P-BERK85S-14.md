@@ -33,9 +33,12 @@ converges, and evaluate $I$.
 :::
 
 ::: {.solution}
-<1>1. The improper integral converges absolutely.
+::: pf
 
-::: {.proof}
+::: {.pf-step #converges-absolutely}
+The improper integral converges absolutely.
+
+::: pf-proof
 For $0<x\leq\pi/2$, concavity of $\sin x$ on $[0,\pi]$ gives the chord
 bound
 $$
@@ -68,7 +71,10 @@ $$
 In particular, the stated improper Riemann integral converges.
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #i-equals-two-j}
+If
 $$
 J\coloneqq\int_0^{\pi/2}\log(\sin x)\,dx,
 $$
@@ -77,7 +83,7 @@ $$
 I=2J.
 $$
 
-::: {.proof}
+::: pf-proof
 The substitution $u=\pi-x$ gives
 $$
 \int_{\pi/2}^{\pi}\log(\sin x)\,dx
@@ -85,32 +91,38 @@ $$
 \int_0^{\pi/2}\log(\sin u)\,du
 =J.
 $$
-The substitutions are legitimate by step <1>1.
+The substitutions are legitimate by step [](#converges-absolutely){.pf-ref}.
 :::
 
-<1>3. One also has
+:::
+
+::: {.pf-step #j-with-cosine}
+One also has
 $$
 J
 =
 \int_0^{\pi/2}\log(\cos x)\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
 Use the substitution $u=\pi/2-x$ and the identity
 $$
 \sin(\pi/2-u)=\cos u.
 $$
 :::
 
-<1>4. The number $J$ satisfies
+:::
+
+::: {.pf-step #two-j-equation}
+The number $J$ satisfies
 $$
 2J
 =
 -\frac{\pi}{2}\log2+J.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#j-with-cosine){.pf-ref},
 $$
 \begin{aligned}
 2J
@@ -126,7 +138,7 @@ $$
 \int_0^{\pi/2}\log(\sin(2x))\,dx.
 \end{aligned}
 $$
-With $u=2x$ and step <1>2,
+With $u=2x$ and step [](#i-equals-two-j){.pf-ref},
 $$
 \int_0^{\pi/2}\log(\sin(2x))\,dx
 =
@@ -138,7 +150,10 @@ $$
 Substitution gives the claimed equation.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #value-boxed}
+Therefore
 $$
 \boxed{
 I
@@ -147,17 +162,19 @@ I
 }.
 $$
 
-::: {.proof}
-Step <1>4 gives
+::: pf-proof
+Step [](#two-j-equation){.pf-ref} gives
 $$
 J=-\frac{\pi}{2}\log2.
 $$
-Apply $I=2J$ from step <1>2.
+Apply $I=2J$ from step [](#i-equals-two-j){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves convergence and step <1>5 evaluates the integral.
+::: pf-qed
+Step [](#converges-absolutely){.pf-ref} proves convergence and step [](#value-boxed){.pf-ref} evaluates the integral.
+:::
+
 :::
 :::

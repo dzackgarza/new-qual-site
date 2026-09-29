@@ -18,25 +18,38 @@ Show that if $M$ is a compact orientable manifold with boundary $\partial M$, th
 :::
 
 ::: {.solution}
-<1>1. Let $i:\partial M\hookrightarrow M$ be the inclusion and let $n=\dim M$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Let $i:\partial M\hookrightarrow M$ be the inclusion and let $n=\dim M$.
+
+::: pf-proof
 It suffices to argue on a connected component with nonempty boundary.
 :::
 
-<1>2. The relative fundamental class satisfies
+:::
+
+::: {.pf-step #fundamental-class-nonzero}
+The relative fundamental class satisfies
 $$
 \partial[M,\partial M]=[\partial M]\ne0
 $$
 in $H_{n-1}(\partial M;\mathbb Z)$.
-::: {.proof}
+
+::: pf-proof
 This is the boundary formula for the relative fundamental class of a compact oriented manifold. The boundary class is the sum of the fundamental classes of its oriented components and is nonzero.
 :::
 
-<1>3. Exactness of the pair sequence implies
+:::
+
+::: {.pf-step #boundary-class-killed}
+Exactness of the pair sequence implies
 $$
 i_*[\partial M]=0.
 $$
-::: {.proof}
+
+::: pf-proof
 The segment
 $$
 H_n(M,\partial M)\xrightarrow{\partial}H_{n-1}(\partial M)\xrightarrow{i_*}H_{n-1}(M)
@@ -44,8 +57,12 @@ $$
 is exact, so the image of the boundary map lies in the kernel of $i_*$.
 :::
 
-<1>4. A retraction $r:M\to\partial M$ would make $i_*$ injective.
-::: {.proof}
+:::
+
+::: {.pf-step #retraction-implies-injective}
+A retraction $r:M\to\partial M$ would make $i_*$ injective.
+
+::: pf-proof
 If $r\circ i=\operatorname{id}_{\partial M}$, then
 $$
 r_*\circ i_*=\operatorname{id}_{H_*(\partial M)},
@@ -53,8 +70,17 @@ $$
 so $i_*$ has a left inverse.
 :::
 
-<1>5. Therefore no such retraction exists.
-::: {.proof}
-The nonzero class in <1>2 is killed by $i_*$ in <1>3, contradicting injectivity from <1>4.
 :::
+
+::: pf-step
+Therefore no such retraction exists.
+
+::: pf-proof
+The nonzero class in step [](#fundamental-class-nonzero){.pf-ref} is killed by $i_*$ in step [](#boundary-class-killed){.pf-ref}, contradicting injectivity from step [](#retraction-implies-injective){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

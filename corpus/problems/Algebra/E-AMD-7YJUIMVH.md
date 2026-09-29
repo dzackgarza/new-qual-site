@@ -28,8 +28,12 @@ Let $V$ be an $n$-dimensional vector space over a field $F$, with basis $\{v_0,\
 ::: {.solution}
 Let \(V\) have basis \(v_0,\dots,v_{n-1}\) and \(T(v_i)=v_{i+1\bmod n}\).
 
-<1>1. The minimal polynomial of \(T\) is \(x^n-1\) over every base field.
-::: {.proof}
+::: pf
+
+::: {.pf-step #minimal-poly-is-xn-minus-1}
+The minimal polynomial of \(T\) is \(x^n-1\) over every base field.
+
+::: pf-proof
 Since \(T^n(v_i)=v_i\) for every basis vector, \(T^n=I\), so the minimal polynomial \(m_T\) divides \(x^n-1\).
 
 On the other hand,
@@ -48,10 +52,19 @@ then applying it to \(v_0\) gives \(\sum_{j=0}^{m}a_jv_j=0\), hence every \(a_j=
 \]
 :::
 
-<1>2. The operator \(T\) is diagonalizable exactly when \(x^n-1\) splits into distinct linear factors over the base field.
-::: {.proof}
-A linear operator is diagonalizable iff its minimal polynomial splits into distinct linear factors. By <1>1, the minimal polynomial is \(x^n-1\), so this criterion is immediate.
 :::
 
+::: pf-step
+The operator \(T\) is diagonalizable exactly when \(x^n-1\) splits into distinct linear factors over the base field.
+
+::: pf-proof
+A linear operator is diagonalizable iff its minimal polynomial splits into distinct linear factors. By step [](#minimal-poly-is-xn-minus-1){.pf-ref}, the minimal polynomial is \(x^n-1\), so this criterion is immediate.
+
 In particular, over \(\CC\) (or any field containing all \(n\)-th roots of unity with characteristic not dividing \(n\)), \(x^n-1\) has \(n\) distinct roots, hence \(T\) is diagonalizable.
+:::
+
+:::
+
+:::
+
 :::

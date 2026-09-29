@@ -51,17 +51,23 @@ $$
 u_n\coloneqq y(nh).
 $$
 
-<1>1. The difference equation is equivalent to
+::: pf
+
+::: {.pf-step #difference-equation-form}
+The difference equation is equivalent to
 $$
 u_{n+2}-2u_{n+1}+(1+h^2)u_n=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Multiply the given equation by $h^2$ and move the term
 $-h^2y(nh)$ to the left.
 :::
 
-<1>2. The characteristic equation of the recurrence in step <1>1 is
+:::
+
+::: {.pf-step #characteristic-roots}
+The characteristic equation of the recurrence in step [](#difference-equation-form){.pf-ref} is
 $$
 r^2-2r+(1+h^2)=0,
 $$
@@ -70,7 +76,7 @@ $$
 r_\pm=1\pm ih.
 $$
 
-::: {.proof}
+::: pf-proof
 Substituting $u_n=r^n$ into the recurrence gives
 $$
 r^n\left(r^2-2r+1+h^2\right)=0.
@@ -78,7 +84,10 @@ $$
 Since $h>0$, the two roots $1\pm ih$ are distinct.
 :::
 
-<1>3. The general solution is
+:::
+
+::: {.pf-step #general-solution-boxed}
+The general solution is
 $$
 \boxed{
 y(nh)
@@ -90,8 +99,8 @@ where $A,B\in\CC$ are arbitrary.
 For real-valued solutions, the coefficients are exactly those satisfying
 $B=\overline A$.
 
-::: {.proof}
-Each characteristic root from step <1>2 yields a solution, and the two
+::: pf-proof
+Each characteristic root from step [](#characteristic-roots){.pf-ref} yields a solution, and the two
 solutions are linearly independent because the roots are distinct. A
 second-order recurrence is uniquely determined by $u_0$ and $u_1$, so
 their span is the full complex solution space. Since the two basis
@@ -99,7 +108,10 @@ solutions are complex conjugates, their linear combination is real for
 every $n$ exactly when $B=\overline A$.
 :::
 
-<1>4. The solution satisfying $y(0)=0$ and $y(h)=h$ is
+:::
+
+::: {.pf-step #particular-solution-boxed}
+The solution satisfying $y(0)=0$ and $y(h)=h$ is
 $$
 \boxed{
 S_h(nh)
@@ -108,8 +120,8 @@ S_h(nh)
 }.
 $$
 
-::: {.proof}
-Step <1>3 and $u_0=0$ give
+::: pf-proof
+Step [](#general-solution-boxed){.pf-ref} and $u_0=0$ give
 $$
 A+B=0.
 $$
@@ -124,14 +136,17 @@ $$
 so $A=1/(2i)$ and $B=-1/(2i)$.
 :::
 
-<1>5. For every fixed $x>0$,
+:::
+
+::: {.pf-step #limit-is-sine}
+For every fixed $x>0$,
 $$
 \lim_{n\to\infty}S_{x/n}(x)=\sin x.
 $$
 
-::: {.proof}
+::: pf-proof
 The standing hypothesis $h>0$ makes the substitution $h=x/n$ literal
-when $x>0$. By step <1>4,
+when $x>0$. By step [](#particular-solution-boxed){.pf-ref},
 $$
 S_{x/n}(x)
 =
@@ -160,9 +175,11 @@ recurrence is allowed for nonzero negative step size, to negative $x$ as
 well.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>3, <1>4, and <1>5 answer parts 1, 2, and 3 respectively.
+::: pf-qed
+Steps [](#general-solution-boxed){.pf-ref}, [](#particular-solution-boxed){.pf-ref}, and [](#limit-is-sine){.pf-ref} answer parts 1, 2, and 3 respectively.
+:::
+
 :::
 :::

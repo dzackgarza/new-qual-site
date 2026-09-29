@@ -42,7 +42,10 @@ $$
 i:X\hookrightarrow\PP^n_\CC.
 $$
 
-<1>1. The product embedding
+::: pf
+
+::: {.pf-step #product-closed-immersion}
+The product embedding
 $$
 i\cross\id_Y:
 X\cross Y
@@ -53,7 +56,7 @@ X\cross Y
 $$
 is a closed immersion.
 
-::: {.proof}
+::: pf-proof
 The map $i$ is a closed immersion because $X$ is projective. Closed
 immersions are preserved by arbitrary base change. Base-changing $i$ along
 $$
@@ -67,14 +70,17 @@ $$
 Hence this map is a closed immersion.
 :::
 
-<1>2. The projection
+:::
+
+::: {.pf-step #pi2-projective}
+The projection
 $$
 \pi_2:X\cross Y\longrightarrow Y
 $$
 is projective.
 
-::: {.proof}
-By step <1>1, $\pi_2$ factors as
+::: pf-proof
+By step [](#product-closed-immersion){.pf-ref}, $\pi_2$ factors as
 $$
 X\cross Y
 \hookrightarrow
@@ -87,25 +93,34 @@ projective-space projection. This is precisely the definition of a
 projective morphism in [[D-MORPROJ]].
 :::
 
-<1>3. The projection $\pi_2$ is proper.
+:::
 
-::: {.proof}
+::: {.pf-step #pi2-proper}
+The projection $\pi_2$ is proper.
+
+::: pf-proof
 Projective morphisms over a Noetherian base are proper by [[D-MORPROJ]].
-The affine variety $Y$ is Noetherian, so step <1>2 implies that $\pi_2$ is
+The affine variety $Y$ is Noetherian, so step [](#pi2-projective){.pf-ref} implies that $\pi_2$ is
 proper.
 :::
 
-<1>4. The projection $\pi_2$ is a closed map in the Zariski topology.
+:::
 
-::: {.proof}
+::: {.pf-step #pi2-closed}
+The projection $\pi_2$ is a closed map in the Zariski topology.
+
+::: pf-proof
 A proper morphism is universally closed by definition ([[D-8XX95]]). In
 particular, without any further base change, it sends closed subsets to
-closed subsets. Step <1>3 therefore implies that $\pi_2$ is closed.
+closed subsets. Step [](#pi2-proper){.pf-ref} therefore implies that $\pi_2$ is closed.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove properness, and step <1>4 proves Zariski closedness.
 :::
+
+::: pf-qed
+Steps [](#product-closed-immersion){.pf-ref}, [](#pi2-projective){.pf-ref} and [](#pi2-proper){.pf-ref} prove properness, and step [](#pi2-closed){.pf-ref} proves Zariski closedness.
+:::
+
+:::
+
 :::

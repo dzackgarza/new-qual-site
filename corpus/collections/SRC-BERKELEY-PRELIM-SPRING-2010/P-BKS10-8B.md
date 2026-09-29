@@ -32,7 +32,11 @@ prove that $A=I$.
 :::
 
 ::: {.solution}
-<1>1. The real equation
+
+::: pf
+
+::: {.pf-step #unique-real-root}
+The real equation
 $$
 t^5+t=2
 $$
@@ -41,7 +45,7 @@ $$
 t=1.
 $$
 
-::: {.proof}
+::: pf-proof
 Set
 $$
 p(t)\coloneqq t^5+t-2.
@@ -57,9 +61,12 @@ $$
 the value $1$ is its unique real zero.
 :::
 
-<1>2. Every eigenvalue of $A$ equals $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #eigenvalues-are-one}
+Every eigenvalue of $A$ equals $1$.
+
+::: pf-proof
 Because $A$ is Hermitian, the spectral theorem gives an orthonormal basis
 of eigenvectors and all eigenvalues of $A$ are real. Let $v\neq0$ be an
 eigenvector with
@@ -80,24 +87,30 @@ Hence
 $$
 \lambda^5+\lambda=2.
 $$
-Step <1>1 therefore gives $\lambda=1$.
+Step [](#unique-real-root){.pf-ref} therefore gives $\lambda=1$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #a-equals-identity}
+One has
 $$
 \boxed{A=I}.
 $$
 
-::: {.proof}
+::: pf-proof
 By the Hermitian spectral theorem, $A$ is unitarily diagonalizable. Step
-<1>2 shows that every diagonal entry in such a diagonalization is $1$.
+[](#eigenvalues-are-one){.pf-ref} shows that every diagonal entry in such a diagonalization is $1$.
 Thus the diagonal form is $I$, and conjugating $I$ by a unitary matrix
 leaves it unchanged. Hence $A=I$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#a-equals-identity){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

@@ -32,13 +32,16 @@ Justify your answer.
 :::
 
 ::: {.solution}
-<1>1. The function
+::: pf
+
+::: {.pf-step #h-decreasing}
+The function
 $$
 h(x)\coloneqq\frac{\log x}{x}
 $$
 is strictly decreasing for $x>e$.
 
-::: {.proof}
+::: pf-proof
 Differentiation gives
 $$
 h'(x)
@@ -48,19 +51,22 @@ $$
 If $x>e$, then $\log x>1$, so $h'(x)<0$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #h-comparison}
+One has
 $$
 \frac{\log\pi}{\pi}
 <
 \frac{\log3}{3}.
 $$
 
-::: {.proof}
+::: pf-proof
 The standard inequalities
 $$
 e<3<\pi
 $$
-put both $3$ and $\pi$ in the interval on which step <1>1 shows that
+put both $3$ and $\pi$ in the interval on which step [](#h-decreasing){.pf-ref} shows that
 $h$ is strictly decreasing. Since $3<\pi$,
 $$
 h(\pi)<h(3),
@@ -68,13 +74,16 @@ $$
 which is the displayed inequality.
 :::
 
-<1>3. The larger number is
+:::
+
+::: {.pf-step #larger-number-boxed}
+The larger number is
 $$
 \boxed{3^\pi}.
 $$
 
-::: {.proof}
-Multiplying the inequality in step <1>2 by the positive number $3\pi$
+::: pf-proof
+Multiplying the inequality in step [](#h-comparison){.pf-ref} by the positive number $3\pi$
 gives
 $$
 3\log\pi<\pi\log3.
@@ -91,9 +100,11 @@ e^{\pi\log3}
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 gives the requested comparison.
+::: pf-qed
+Step [](#larger-number-boxed){.pf-ref} gives the requested comparison.
+:::
+
 :::
 :::

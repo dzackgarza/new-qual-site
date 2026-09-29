@@ -37,13 +37,16 @@ Determine the number of conjugacy classes of $16 \times 16$ matrices with entrie
 There are exactly $\boxed{4}$ conjugacy classes.
 Put $p=x^2+1$ and $q=x^3+2$.
 
-<1>1. The classes correspond bijectively to integer tuples
+::: pf
+
+::: {.pf-step #bijection-with-tuples}
+The classes correspond bijectively to integer tuples
 $$
 (a,b,c,d),\qquad a,c\geq1,\quad b,d\geq0,
 \qquad 4a+2b+6c+3d=16.
 $$
 
-::: {.proof}
+::: pf-proof
 The polynomial $p$ has no rational root and is
 irreducible. The polynomial $q$ is Eisenstein at
 two and is also irreducible [@DF04]. They are
@@ -79,7 +82,10 @@ Thus uniqueness of the elementary divisors gives
 the asserted bijection.
 :::
 
-<1>2. The four possible tuples and representatives are
+:::
+
+::: pf-step
+The four possible tuples and representatives are
 
 | $(a,b,c,d)$ | Representative |
 | --- | --- |
@@ -90,7 +96,7 @@ the asserted bijection.
 
 Here $C_f$ is the companion matrix of the monic polynomial $f$.
 
-::: {.proof}
+::: pf-proof
 Since $a\geq1$, one has $6c\leq12$, so $c=1$ or $2$.
 If $c=2$, the equation becomes $4a+2b+3d=4$;
 it forces $a=1,b=d=0$.
@@ -104,9 +110,13 @@ These disjoint cases give exactly the four rows.
 A companion block $C_f$ represents multiplication
 by $x$ on $\mathbb Q[x]/(f)$. Thus every displayed
 matrix realizes its tuple and has the required
-dimension and minimal polynomial by step <1>1.
+dimension and minimal polynomial by step [](#bijection-with-tuples){.pf-ref}.
 Different rows have different elementary divisors,
 so they are not conjugate. No additional tuple,
 and hence no additional conjugacy class, is possible.
+:::
+
+:::
+
 :::
 :::

@@ -41,47 +41,102 @@ $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$
 \(b) What changes if $|g(z)| \le 1$ on $|z| = 1$?
 \(c) If $f$ is analytic on $|z| < 1$ with $|f(z)| < 1$ and $f \not\equiv z$, can $f$ have more than one fixed point in $|z| < 1$?
 
-<1>1. (a) Setup: apply Rouch\'e to $g(z) - z$ on $|z| = 1$.
-<2>1. On $|z| = 1$, $|g(z)| < |z| = 1$.
-    ::: {.proof}
-    given $|g(z)| < 1$ on $|z| = 1$.
-    :::
-<2>2. $g(z) - z$ and $-z$ have the same number of zeros in $|z| < 1$.
-    ::: {.proof}
-    Rouch\'e's theorem with $f(z) = -z$ and $g$ as perturbation: $|g(z)| < |{-z}|$ on $|z| = 1$ by <2>1, and $(g - z) = (-z) + g$.
-    :::
-<2>3. $g$ has exactly one fixed point in $|z| < 1$.
-    ::: {.proof}
-    $-z$ has exactly one zero (at $z = 0$, simple) in $|z| < 1$; by <2>2, $g(z) - z$ has exactly one zero (counting multiplicity) there.
-    :::
+::: pf
 
-<1>2. (b) With $|g(z)| \le 1$ on $|z| = 1$, the conclusion of (a) may fail.
-    ::: {.proof}
-    example $g(z) = \tfrac{z+1}{2}$: $|g(z)| \le \tfrac{|z|+1}{2} = 1$ on $|z| = 1$ (equality at $z = 1$), but the only fixed point solves $z = \tfrac{z+1}{2}$, i.e. $z = 1$, which lies on $|z| = 1$, not in $|z| < 1$. So $g$ has no fixed point in the open disk.
-    :::
+::: {.pf-step #rouche-setup-a}
+(a) Setup: apply Rouch\'e to $g(z) - z$ on $|z| = 1$.
 
-<1>3. (c) No: a non-identity analytic map $f: D \to D$ has at most one fixed point in $D$.
-<2>1. Recall the Schwarz--Pick inequality: for $a, b \in D$, $\rho(f(a), f(b)) \le \rho(a, b)$ for the hyperbolic distance $\rho$, with strict inequality if $f$ is not an automorphism.
-    ::: {.proof}
-    standard form of Schwarz--Pick.
-    :::
-<2>2. If $f$ had two distinct fixed points $a, b \in D$, then $f$ must be an automorphism.
-    ::: {.proof}
-    $\rho(a, b) = \rho(f(a), f(b)) \le \rho(a, b)$; equality in <2>1 forces $f \in \Aut(D)$.
-    :::
-<2>3. A non-identity automorphism of $D$ has exactly one fixed point in $D$.
-    ::: {.proof}
-    writing $\psi(z) = e^{i\theta}\frac{z - \alpha}{1 - \bar\alpha z}$, the fixed-point equation is a quadratic with product of roots of modulus $|\alpha| < 1$, so exactly one root lies in $D$ (or, for $\alpha = 0$, the only fixed point in $D$ is $0$ unless $\psi$ is the identity).
-    :::
-<2>4. Conclusion for (c).
-    ::: {.proof}
-    if $f \not\equiv z$ had two fixed points, <2>2 makes $f$ a non-identity automorphism, contradicting <2>3; hence at most one fixed point.
-    :::
+::: pf-proof
 
-<1>4. Q.E.D.
-    ::: {.proof}
-    <1>1 proves (a); <1>2 answers (b) with an example; <1>3 answers (c).
-    :::
+::: {.pf-step #g-lt-z-on-circle}
+On $|z| = 1$, $|g(z)| < |z| = 1$.
+
+::: pf-proof
+given $|g(z)| < 1$ on $|z| = 1$.
+:::
+
+:::
+
+::: {.pf-step #same-zero-count-a}
+$g(z) - z$ and $-z$ have the same number of zeros in $|z| < 1$.
+
+::: pf-proof
+Rouch\'e's theorem with $f(z) = -z$ and $g$ as perturbation: $|g(z)| < |{-z}|$ on $|z| = 1$ by step [](#g-lt-z-on-circle){.pf-ref}, and $(g - z) = (-z) + g$.
+:::
+
+:::
+
+::: pf-step
+$g$ has exactly one fixed point in $|z| < 1$.
+
+::: pf-proof
+$-z$ has exactly one zero (at $z = 0$, simple) in $|z| < 1$; by step [](#same-zero-count-a){.pf-ref}, $g(z) - z$ has exactly one zero (counting multiplicity) there.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #part-b-counterexample}
+(b) With $|g(z)| \le 1$ on $|z| = 1$, the conclusion of (a) may fail.
+
+::: pf-proof
+example $g(z) = \tfrac{z+1}{2}$: $|g(z)| \le \tfrac{|z|+1}{2} = 1$ on $|z| = 1$ (equality at $z = 1$), but the only fixed point solves $z = \tfrac{z+1}{2}$, i.e. $z = 1$, which lies on $|z| = 1$, not in $|z| < 1$. So $g$ has no fixed point in the open disk.
+:::
+
+:::
+
+::: {.pf-step #part-c-at-most-one}
+(c) No: a non-identity analytic map $f: D \to D$ has at most one fixed point in $D$.
+
+::: pf-proof
+
+::: {.pf-step #schwarz-pick}
+Recall the Schwarz--Pick inequality: for $a, b \in D$, $\rho(f(a), f(b)) \le \rho(a, b)$ for the hyperbolic distance $\rho$, with strict inequality if $f$ is not an automorphism.
+
+::: pf-proof
+standard form of Schwarz--Pick.
+:::
+
+:::
+
+::: {.pf-step #equality-forces-automorphism}
+If $f$ had two distinct fixed points $a, b \in D$, then $f$ must be an automorphism.
+
+::: pf-proof
+$\rho(a, b) = \rho(f(a), f(b)) \le \rho(a, b)$; equality in step [](#schwarz-pick){.pf-ref} forces $f \in \Aut(D)$.
+:::
+
+:::
+
+::: {.pf-step #automorphism-one-fixed-point}
+A non-identity automorphism of $D$ has exactly one fixed point in $D$.
+
+::: pf-proof
+writing $\psi(z) = e^{i\theta}\frac{z - \alpha}{1 - \bar\alpha z}$, the fixed-point equation is a quadratic with product of roots of modulus $|\alpha| < 1$, so exactly one root lies in $D$ (or, for $\alpha = 0$, the only fixed point in $D$ is $0$ unless $\psi$ is the identity).
+:::
+
+:::
+
+::: pf-step
+Conclusion for (c).
+
+::: pf-proof
+if $f \not\equiv z$ had two fixed points, step [](#equality-forces-automorphism){.pf-ref} makes $f$ a non-identity automorphism, contradicting step [](#automorphism-one-fixed-point){.pf-ref}; hence at most one fixed point.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#rouche-setup-a){.pf-ref} proves (a); step [](#part-b-counterexample){.pf-ref} answers (b) with an example; step [](#part-c-at-most-one){.pf-ref} answers (c).
+:::
+
 :::
 
 ::: {.solution title="Part 1"}

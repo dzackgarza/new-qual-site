@@ -17,17 +17,22 @@ Show that any tensor $T \in \mathbb{C}^3 \wedge \mathbb{C}^3$ can be written as 
 :::
 
 ::: {.solution}
+
 Fix a basis $e_1,e_2,e_3$ of $\mathbb C^3$. Every element of $\mathbb C^3\wedge\mathbb C^3$ has a unique form
 \[
 T=a\,e_1\wedge e_2+b\,e_1\wedge e_3+c\,e_2\wedge e_3.
 \]
 We exhibit $v_1,v_2$ explicitly.
 
-<1>1. If $a\ne0$, then
+::: pf
+
+::: {.pf-step #case-a-nonzero}
+If $a\ne0$, then
 \[
 T=\left(e_1-\frac ca e_3\right)\wedge(ae_2+be_3).
 \]
-::: {.proof}
+
+::: pf-proof
 Expanding and using $e_i\wedge e_i=0$ and $e_3\wedge e_2=-e_2\wedge e_3$ gives
 \[
 \begin{aligned}
@@ -38,11 +43,15 @@ Expanding and using $e_i\wedge e_i=0$ and $e_3\wedge e_2=-e_2\wedge e_3$ gives
 \]
 :::
 
-<1>2. If $a=0$ and $b\ne0$, then
+:::
+
+::: {.pf-step #case-a-zero-b-nonzero}
+If $a=0$ and $b\ne0$, then
 \[
 T=\left(e_1+\frac cb e_2\right)\wedge(be_3).
 \]
-::: {.proof}
+
+::: pf-proof
 Directly,
 \[
 \left(e_1+\frac cb e_2\right)\wedge(be_3)
@@ -50,16 +59,29 @@ Directly,
 \]
 :::
 
-<1>3. If $a=b=0$, then
+:::
+
+::: {.pf-step #case-a-b-zero}
+If $a=b=0$, then
 \[
 T=e_2\wedge(ce_3).
 \]
-::: {.proof}
+
+::: pf-proof
 In this case $T=c\,e_2\wedge e_3$, so the displayed equality is immediate. This includes $T=0$ when $c=0$.
 :::
 
-<1>4. Hence every bivector in $\mathbb C^3\wedge\mathbb C^3$ is decomposable.
-::: {.proof}
-The three cases <1>1--<1>3 exhaust all triples $(a,b,c)\in\mathbb C^3$, and each gives an explicit factorization $T=v_1\wedge v_2$.
 :::
+
+::: pf-step
+Hence every bivector in $\mathbb C^3\wedge\mathbb C^3$ is decomposable.
+
+::: pf-proof
+The three cases, steps [](#case-a-nonzero){.pf-ref}, [](#case-a-zero-b-nonzero){.pf-ref} and [](#case-a-b-zero){.pf-ref}, exhaust all triples $(a,b,c)\in\mathbb C^3$, and each gives an explicit factorization $T=v_1\wedge v_2$.
+:::
+
+:::
+
+:::
+
 :::

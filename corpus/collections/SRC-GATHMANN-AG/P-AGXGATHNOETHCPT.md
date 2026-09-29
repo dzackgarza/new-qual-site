@@ -46,9 +46,12 @@ b. A complex affine variety of dimension at least 1 is never compact in the clas
 In part (a), compactness means that every open cover has a finite subcover;
 no Hausdorff hypothesis is used.
 
-<1>1. (a) Every Noetherian topological space is compact.
+::: pf
 
-::: {.proof}
+::: {.pf-step #noetherian-implies-compact}
+(a) Every Noetherian topological space is compact.
+
+::: pf-proof
 Let $X$ be Noetherian and let
 $$
 X=\bigcup_{i\in I}U_i
@@ -71,9 +74,12 @@ gives a finite subcover of $F$, contradicting $F\in\mathcal C$.
 Therefore the original cover of $X$ has a finite subcover.
 :::
 
-<1>2. (a) Every open subset of an affine variety is compact in the Zariski topology.
+:::
 
-::: {.proof}
+::: {.pf-step #open-subsets-of-affine-variety-compact}
+(a) Every open subset of an affine variety is compact in the Zariski topology.
+
+::: pf-proof
 Let $X$ be an affine variety. Its coordinate ring
 $$
 A(X)=k[x_1,\ldots,x_n]/I(X)
@@ -87,13 +93,16 @@ ascending-chain condition ([[D-9DIKB|Noetherian spaces]]).
 If $U\subseteq X$ is open, every open subset of $U$ is open in $X$.
 Thus every ascending chain of open subsets of $U$ is also an ascending
 chain of open subsets of $X$, and therefore stabilizes. Hence $U$ is
-Noetherian. Step <1>1 applied to $U$ shows that $U$ is compact in the
+Noetherian. Step [](#noetherian-implies-compact){.pf-ref} applied to $U$ shows that $U$ is compact in the
 Zariski topology.
 :::
 
-<1>3. (b) A complex affine variety of positive dimension is not compact in the classical topology.
+:::
 
-::: {.proof}
+::: {.pf-step #affine-variety-not-compact-classical}
+(b) A complex affine variety of positive dimension is not compact in the classical topology.
+
+::: pf-proof
 Let $X$ be a complex affine variety with $\dim X\geq1$, and suppose for
 contradiction that $X$ is compact in the classical topology.
 
@@ -131,9 +140,11 @@ example, it is unbounded in its Euclidean topology. Hence $X$ cannot be
 compact in the classical topology.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and step <1>3 proves part (b).
+::: pf-qed
+Steps [](#noetherian-implies-compact){.pf-ref} and [](#open-subsets-of-affine-variety-compact){.pf-ref} prove part (a), and step [](#affine-variety-not-compact-classical){.pf-ref} proves part (b).
+:::
+
 :::
 :::

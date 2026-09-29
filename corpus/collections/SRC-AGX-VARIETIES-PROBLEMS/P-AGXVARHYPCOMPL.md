@@ -62,7 +62,10 @@ $$
 D(f)=\AA^n\sm V(f).
 $$
 
-<1>1. The hypersurface
+::: pf
+
+::: {.pf-step #y-affine-coord-ring}
+The hypersurface
 $$
 Y
 =
@@ -79,7 +82,7 @@ A_f.
 }
 $$
 
-::: {.proof}
+::: pf-proof
 The coordinate ring of $Y$ is
 $$
 \mco(Y)
@@ -116,12 +119,15 @@ Since $A$ is a domain, its localization $A_f$ is a domain. Thus $(tf-1)$ is
 prime and $Y$ is an irreducible affine variety.
 :::
 
-<1>2. Projection onto the first $n$ coordinates restricts to an isomorphism
+:::
+
+::: {.pf-step #pi-isomorphism}
+Projection onto the first $n$ coordinates restricts to an isomorphism
 $$
 \pi:Y\xrightarrow{\sim}D(f).
 $$
 
-::: {.proof}
+::: pf-proof
 If
 $$
 (a_1,\ldots,a_n,t)\in Y,
@@ -154,7 +160,10 @@ The projection is regular, and its inverse is regular on $D(f)$ because
 $f$ is nowhere zero there. Therefore $\pi$ is an isomorphism.
 :::
 
-<1>3. The hypersurface complement is affine and
+:::
+
+::: {.pf-step #complement-affine-coord-ring}
+The hypersurface complement is affine and
 $$
 \boxed{
 \mco\bigl(\AA^n\sm V(f)\bigr)
@@ -163,20 +172,23 @@ k[x_1,\ldots,x_n]_f.
 }
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#pi-isomorphism){.pf-ref},
 $$
 D(f)\cong Y.
 $$
-Step <1>1 shows that $Y$ is affine and computes its coordinate ring as
+Step [](#y-affine-coord-ring){.pf-ref} shows that $Y$ is affine and computes its coordinate ring as
 $A_f$. Transporting this structure across the isomorphism gives the result;
 see also [[PR-WZGOQ]].
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 identify the complement with an affine hypersurface and
+::: pf-qed
+Steps [](#y-affine-coord-ring){.pf-ref}, [](#pi-isomorphism){.pf-ref} and [](#complement-affine-coord-ring){.pf-ref} identify the complement with an affine hypersurface and
 compute its coordinate ring.
 :::
+
+:::
+
 :::

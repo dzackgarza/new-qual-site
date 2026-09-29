@@ -37,10 +37,13 @@ V\coloneqq\FF_p^n,
 $$
 viewed as an additive group.
 
-<1>1. Every automorphism of $G$ is an element of
+::: pf
+
+::: {.pf-step #automorphisms-are-gln}
+Every automorphism of $G$ is an element of
 $\operatorname{GL}_n(\FF_p)$.
 
-::: {.proof}
+::: pf-proof
 The additive groups $G$ and $V$ are naturally the same. If
 $\varphi:G\to G$ is a group homomorphism, then for every
 $a\in\FF_p$ and $v\in V$,
@@ -52,10 +55,13 @@ homomorphism is $\FF_p$-linear, and the automorphisms are exactly the
 invertible linear maps.
 :::
 
-<1>2. If $A\in\operatorname{GL}_n(\FF_p)$ has order $p^2$ and
+:::
+
+::: {.pf-step #nilpotency-bound}
+If $A\in\operatorname{GL}_n(\FF_p)$ has order $p^2$ and
 $N\coloneqq A-I$, then $N^p=0$.
 
-::: {.proof}
+::: pf-proof
 Since $A^{p^2}=I$ and the characteristic is $p$,
 $$
 N^{p^2}
@@ -83,9 +89,12 @@ a contradiction. Therefore $m\le n$. Since $n\le p$, one has
 $N^p=0$. The same conclusion is immediate when $N=0$.
 :::
 
-<1>3. No such $A$ can have order $p^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #order-not-p-squared}
+No such $A$ can have order $p^2$.
+
+::: pf-proof
 Because $I$ and $N$ commute, the binomial theorem in characteristic $p$
 gives
 $$
@@ -93,14 +102,16 @@ A^p
 =(I+N)^p
 =I+N^p.
 $$
-Step <1>2 gives $N^p=0$, so $A^p=I$. Hence the order of $A$ divides $p$,
+Step [](#nilpotency-bound){.pf-ref} gives $N^p=0$, so $A^p=I$. Hence the order of $A$ divides $p$,
 contradicting the assumption that its order is $p^2$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-By step <1>1 every automorphism of $G$ is represented by such a matrix,
-and step <1>3 excludes order $p^2$.
+::: pf-qed
+By step [](#automorphisms-are-gln){.pf-ref} every automorphism of $G$ is represented by such a matrix,
+and step [](#order-not-p-squared){.pf-ref} excludes order $p^2$.
+:::
+
 :::
 :::

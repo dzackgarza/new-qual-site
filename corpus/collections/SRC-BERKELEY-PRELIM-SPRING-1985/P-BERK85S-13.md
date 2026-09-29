@@ -36,22 +36,28 @@ has at least one root in the closed disk
 :::
 
 ::: {.solution}
-<1>1. If $a=0$, the equation has the root $z=-1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #zero-a-case}
+If $a=0$, the equation has the root $z=-1$.
+
+::: pf-proof
 For $a=0$, the equation is $1+z=0$, and
 $$
 \abs{-1}=1\leq2.
 $$
 :::
 
-<1>2. Suppose $a\neq0$, set $b\coloneqq a^{-1}$, and define
+:::
+
+::: {.pf-step #p-same-roots}
+Suppose $a\neq0$, set $b\coloneqq a^{-1}$, and define
 $$
 p(z)\coloneqq z^n+bz+b.
 $$
 Then $p$ has exactly the same roots as $1+z+az^n$.
 
-::: {.proof}
+::: pf-proof
 Multiplying the original polynomial by the nonzero scalar $b$ gives
 $$
 b(1+z+az^n)=b+bz+z^n=p(z).
@@ -59,10 +65,13 @@ $$
 Multiplication by a nonzero scalar does not change the zero set.
 :::
 
-<1>3. If $\abs b\leq2^n$, then $p$ has a root $z_0$ with
+:::
+
+::: {.pf-step #small-b-case}
+If $\abs b\leq2^n$, then $p$ has a root $z_0$ with
 $\abs{z_0}\leq2$.
 
-::: {.proof}
+::: pf-proof
 Let $z_1,\ldots,z_n$ be the roots of the monic polynomial $p$, counted with
 multiplicity. By Vieta's formula,
 $$
@@ -75,10 +84,13 @@ $$
 contradicting $\abs b\leq2^n$.
 :::
 
-<1>4. If $\abs b>2^n$, then $p$ has a root $z_0$ with
+:::
+
+::: {.pf-step #large-b-case}
+If $\abs b>2^n$, then $p$ has a root $z_0$ with
 $\abs{z_0}<2$.
 
-::: {.proof}
+::: pf-proof
 On the circle $\abs z=2$, let
 $$
 g(z)\coloneqq b(1+z).
@@ -101,22 +113,27 @@ $\abs z<2$, counted with multiplicity. The function $g$ has exactly one
 zero there, namely $z=-1$. Thus $p$ has a zero in $\abs z<2$.
 :::
 
-<1>5. For every $a\in\CC$ and every integer $n\geq2$,
+:::
+
+::: {.pf-step #conclusion-boxed}
+For every $a\in\CC$ and every integer $n\geq2$,
 $$
 \boxed{\text{there exists }z_0\in\CC\text{ such that }
 1+z_0+az_0^n=0\text{ and }\abs{z_0}\leq2}.
 $$
 
-::: {.proof}
-Step <1>1 handles $a=0$. For $a\neq0$, either
-$\abs b\leq2^n$ or $\abs b>2^n$; steps <1>3 and <1>4 respectively give
-the required root, and step <1>2 transfers that root to the original
+::: pf-proof
+Step [](#zero-a-case){.pf-ref} handles $a=0$. For $a\neq0$, either
+$\abs b\leq2^n$ or $\abs b>2^n$; steps [](#small-b-case){.pf-ref} and [](#large-b-case){.pf-ref} respectively give
+the required root, and step [](#p-same-roots){.pf-ref} transfers that root to the original
 polynomial.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is exactly the required conclusion.
+::: pf-qed
+Step [](#conclusion-boxed){.pf-ref} is exactly the required conclusion.
+:::
+
 :::
 :::

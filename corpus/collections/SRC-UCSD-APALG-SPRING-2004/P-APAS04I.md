@@ -23,12 +23,17 @@ Let $H$ be a subgroup of a finite group $G$ and $A\colon H\to GL(n,\mathbb{C})$ 
 :::
 
 ::: {.solution}
-<1>1. For any character $\phi$ of $G$,
+
+::: pf
+
+::: {.pf-step #frobenius-reciprocity}
+For any character $\phi$ of $G$,
 \[
 (\chi^{A\uparrow_H^G},\phi)_G
 =(\chi^A,\phi\downarrow_H^G)_H.
 \]
-::: {.proof}
+
+::: pf-proof
 The induced-character formula is
 \[
 \chi^{A\uparrow_H^G}(g)
@@ -62,8 +67,12 @@ Thus the inner sum is independent of $x$, and
 This is Frobenius reciprocity.
 :::
 
-<1>2. An irreducible representation can induce to a reducible representation.
-::: {.proof}
+:::
+
+::: {.pf-step #irreducible-induces-reducible-example}
+An irreducible representation can induce to a reducible representation.
+
+::: pf-proof
 Take
 \[
 G=C_2=\{1,s\},\qquad H=\{1\}.
@@ -79,13 +88,17 @@ which decomposes as
 Hence $A\uparrow_H^G$ is reducible.
 :::
 
-<1>3. If $K\le H\le G$ and $B$ is a representation of $K$, then
+:::
+
+::: {.pf-step #induction-transitivity}
+If $K\le H\le G$ and $B$ is a representation of $K$, then
 \[
 B\uparrow_K^G
 \cong
 (B\uparrow_K^H)\uparrow_H^G.
 \]
-::: {.proof}
+
+::: pf-proof
 Using the group-algebra construction of induction,
 \[
 B\uparrow_K^H
@@ -124,4 +137,13 @@ This is well-defined over $\mathbb C[K]$: for $k\in K$,
 \]
 The maps $\Phi$ and $\Psi$ are inverse to one another and commute with the left $G$-action. Therefore they give an isomorphism of $G$-representations, proving transitivity of induction.
 :::
+
+:::
+
+::: pf-qed
+Step [](#frobenius-reciprocity){.pf-ref} answers part (a); step [](#irreducible-induces-reducible-example){.pf-ref} answers part (b); step [](#induction-transitivity){.pf-ref} answers part (c).
+:::
+
+:::
+
 :::

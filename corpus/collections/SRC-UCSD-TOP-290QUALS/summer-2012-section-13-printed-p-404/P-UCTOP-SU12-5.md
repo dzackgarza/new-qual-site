@@ -17,11 +17,16 @@ Compute the first, second and third homotopy groups of $X = \mathbb{RP}^2 \times
 :::
 
 ::: {.solution}
-<1>1. The fundamental group is
+
+::: pf
+
+::: pf-step
+The fundamental group is
 $$
 \pi_1(X)\cong\mathbb Z/2\oplus\mathbb Z\oplus\mathbb Z.
 $$
-::: {.proof}
+
+::: pf-proof
 Fundamental groups commute with finite products, and
 $$
 \pi_1(\mathbb{RP}^2)=\mathbb Z/2,
@@ -30,20 +35,31 @@ $$
 $$
 :::
 
-<1>2. For every $n\ge2$,
+:::
+
+::: {.pf-step #pi-n-x-equals-pi-n-rp2}
+For every $n\ge2$,
 $$
 \pi_n(X)\cong\pi_n(\mathbb{RP}^2).
 $$
-::: {.proof}
+
+::: pf-proof
 Higher homotopy groups commute with products, while $\pi_n(S^1)=0$ for $n\ge2$.
 :::
 
-<1>3. The universal cover $S^2\to\mathbb{RP}^2$ induces isomorphisms on homotopy groups in degrees at least $2$.
-::: {.proof}
+:::
+
+::: {.pf-step #universal-cover-iso-degree2}
+The universal cover $S^2\to\mathbb{RP}^2$ induces isomorphisms on homotopy groups in degrees at least $2$.
+
+::: pf-proof
 Every covering map induces isomorphisms on $\pi_n$ for $n\ge2$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 $$
 \boxed{
 \pi_1(X)=\mathbb Z/2\oplus\mathbb Z^2,
@@ -52,12 +68,18 @@ $$
 \qquad
 \pi_3(X)=\mathbb Z.}
 $$
-::: {.proof}
-Use <1>2--<1>3 together with
+
+::: pf-proof
+Use steps [](#pi-n-x-equals-pi-n-rp2){.pf-ref} and [](#universal-cover-iso-degree2){.pf-ref} together with
 $$
 \pi_2(S^2)\cong\mathbb Z,
 \qquad
 \pi_3(S^2)\cong\mathbb Z.
 $$
 :::
+
+:::
+
+:::
+
 :::

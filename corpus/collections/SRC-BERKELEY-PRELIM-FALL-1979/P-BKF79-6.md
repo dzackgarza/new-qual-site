@@ -37,13 +37,17 @@ X^2=N.
 :::
 
 ::: {.solution}
-<1>1. Every nilpotent operator $T$ on an $n$-dimensional vector space
+
+::: pf
+
+::: {.pf-step #nilpotent-power-vanishes}
+Every nilpotent operator $T$ on an $n$-dimensional vector space
 satisfies
 $$
 T^n=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $m$ be the nilpotency index of $T$, so
 $$
 T^m=0,
@@ -69,10 +73,13 @@ Therefore $m$ linearly independent vectors lie in an $n$-dimensional
 space, so $m\leq n$. Hence $T^n=0$.
 :::
 
-<1>2. If an operator $X$ satisfied $X^2=N$, then $X$ would be
+:::
+
+::: {.pf-step #x-nilpotent}
+If an operator $X$ satisfied $X^2=N$, then $X$ would be
 nilpotent.
 
-::: {.proof}
+::: pf-proof
 The hypothesis $N^n=0$ would give
 $$
 X^{2n}
@@ -83,26 +90,32 @@ $$
 Thus some positive power of $X$ is zero.
 :::
 
-<1>3. Under the assumption in step <1>2,
+:::
+
+::: {.pf-step #xn-zero}
+Under the assumption in step [](#x-nilpotent){.pf-ref},
 $$
 X^n=0.
 $$
 
-::: {.proof}
-Apply step <1>1 to the nilpotent operator $X$.
+::: pf-proof
+Apply step [](#nilpotent-power-vanishes){.pf-ref} to the nilpotent operator $X$.
 :::
 
-<1>4. Under the assumption $X^2=N$, one would have
+:::
+
+::: {.pf-step #n-power-zero}
+Under the assumption $X^2=N$, one would have
 $$
 N^{n-1}=0.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $n>1$,
 $$
 2n-2\geq n.
 $$
-Therefore step <1>3 gives
+Therefore step [](#xn-zero){.pf-ref} gives
 $$
 N^{n-1}
 =(X^2)^{n-1}
@@ -111,19 +124,24 @@ N^{n-1}
 $$
 :::
 
-<1>5. No operator $X$ satisfies $X^2=N$.
+:::
 
-::: {.proof}
-Step <1>4 contradicts the hypothesis
+::: {.pf-step #no-such-x}
+No operator $X$ satisfies $X^2=N$.
+
+::: pf-proof
+Step [](#n-power-zero){.pf-ref} contradicts the hypothesis
 $$
 N^{n-1}\neq0.
 $$
 Hence no such $X$ exists.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+::: pf-qed
+Step [](#no-such-x){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

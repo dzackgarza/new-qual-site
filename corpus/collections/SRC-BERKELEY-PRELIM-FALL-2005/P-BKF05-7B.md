@@ -40,9 +40,13 @@ is unitary.
 :::
 
 ::: {.solution}
-<1>1. (a) The operator $I+iT$ is invertible.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #I-plus-iT-invertible}
+(a) The operator $I+iT$ is invertible.
+
+::: pf-proof
 It suffices, since $V$ is finite-dimensional, to prove that $I+iT$ is
 injective. Suppose
 $$
@@ -65,9 +69,12 @@ In particular $\norm v=0$, hence $v=0$. Thus $I+iT$ is injective and
 hence invertible.
 :::
 
-<1>2. The operator $I-iT$ is also invertible.
+:::
 
-::: {.proof}
+::: {.pf-step #I-minus-iT-invertible}
+The operator $I-iT$ is also invertible.
+
+::: pf-proof
 Since $T^*=T$,
 $$
 (I+iT)^*=I-iT.
@@ -78,10 +85,13 @@ $$
 =
 \big((I+iT)^{-1}\big)^*.
 $$
-Step <1>1 therefore implies that $I-iT$ is invertible.
+Step [](#I-plus-iT-invertible){.pf-ref} therefore implies that $I-iT$ is invertible.
 :::
 
-<1>3. (b) If
+:::
+
+::: {.pf-step #A-star-formula}
+(b) If
 $$
 A=(I-iT)(I+iT)^{-1},
 $$
@@ -90,8 +100,8 @@ $$
 A^*=(I-iT)^{-1}(I+iT).
 $$
 
-::: {.proof}
-Using $(BC)^*=C^*B^*$, step <1>2, and $T^*=T$ gives
+::: pf-proof
+Using $(BC)^*=C^*B^*$, step [](#I-minus-iT-invertible){.pf-ref}, and $T^*=T$ gives
 $$
 \begin{aligned}
 A^*
@@ -107,11 +117,14 @@ A^*
 $$
 :::
 
-<1>4. The operator $A$ is unitary.
+:::
 
-::: {.proof}
+::: {.pf-step #A-unitary}
+The operator $A$ is unitary.
+
+::: pf-proof
 The operators $I+iT$ and $I-iT$ commute, since both are polynomials
-in $T$. Therefore step <1>3 gives
+in $T$. Therefore step [](#A-star-formula){.pf-ref} gives
 $$
 \begin{aligned}
 A^*A
@@ -128,9 +141,12 @@ $$
 Thus $A^*=A^{-1}$, so $A$ is unitary.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), and step <1>4 proves part (b).
 :::
+
+::: pf-qed
+Step [](#I-plus-iT-invertible){.pf-ref} proves part (a), and step [](#A-unitary){.pf-ref} proves part (b).
+:::
+
+:::
+
 :::

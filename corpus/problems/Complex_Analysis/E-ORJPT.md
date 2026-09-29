@@ -23,33 +23,55 @@ Show that $\prod_{n\in \ZZ} (1 + a_n) < \infty$ if $\ts{a_n} \in \ell_1(\ZZ)$.
 :::
 
 ::: {.solution}
-<1>1. Since $\{a_n\} \in \ell_1(\ZZ)$, we have $\sum_{n \in \ZZ} |a_n| < \infty$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #l1-sum-finite}
+Since $\{a_n\} \in \ell_1(\ZZ)$, we have $\sum_{n \in \ZZ} |a_n| < \infty$.
+
+::: pf-proof
 definition of $\ell_1$.
 :::
 
-<1>2. Hence $a_n \to 0$, so for all sufficiently large $|n|$ we have $|a_n| < 1/2$.
-::: {.proof}
+:::
+
+::: pf-step
+Hence $a_n \to 0$, so for all sufficiently large $|n|$ we have $|a_n| < 1/2$.
+
+::: pf-proof
 a convergent series has terms tending to $0$.
 :::
 
-<1>3. For $|a_n| < 1/2$, $|\log(1 + a_n)| \le 2|a_n|$.
-::: {.proof}
+:::
+
+::: {.pf-step #log-bound}
+For $|a_n| < 1/2$, $|\log(1 + a_n)| \le 2|a_n|$.
+
+::: pf-proof
 $|\log(1+z)| \le 2|z|$ for $|z| \le 1/2$ (standard estimate).
 :::
 
-<1>4. Hence $\sum_{n} |\log(1 + a_n)| \le 2\sum_n |a_n| < \infty$.
-::: {.proof}
-<1>3 and <1>1.
 :::
 
-<1>5. Therefore $\sum_n \log(1 + a_n)$ converges absolutely, so the product $\prod_n (1 + a_n)$ converges to a finite nonzero value.
-::: {.proof}
+::: pf-step
+Hence $\sum_{n} |\log(1 + a_n)| \le 2\sum_n |a_n| < \infty$.
+
+::: pf-proof
+Steps [](#log-bound){.pf-ref} and [](#l1-sum-finite){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #product-converges}
+Therefore $\sum_n \log(1 + a_n)$ converges absolutely, so the product $\prod_n (1 + a_n)$ converges to a finite nonzero value.
+
+::: pf-proof
 a product $\prod (1 + a_n)$ converges (absolutely) iff $\sum \log(1 + a_n)$ converges (absolutely).
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
 :::
+
+::: pf-qed
+Step [](#product-converges){.pf-ref}.
+:::
+
 :::

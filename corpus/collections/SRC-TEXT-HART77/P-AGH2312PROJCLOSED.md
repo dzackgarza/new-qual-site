@@ -37,7 +37,11 @@ Hartshorne II.5.16 shows that every closed subscheme of $X$ comes from a homogen
 :::
 
 ::: {.solution}
-<1>1. If
+
+::: pf
+
+::: {.pf-step #phi-splus-equals-tplus}
+If
 \[
 \phi:S\twoheadrightarrow T
 \]
@@ -45,7 +49,8 @@ is a surjective degree-preserving homomorphism, then
 \[
 \phi(S_+)=T_+.
 \]
-::: {.proof}
+
+::: pf-proof
 For every $d>0$, surjectivity as a graded homomorphism means
 \[
 \phi(S_d)=T_d.
@@ -56,25 +61,33 @@ Taking the direct sum over positive degrees gives
 \]
 :::
 
-<1>2. The open set
+:::
+
+::: {.pf-step #u-equals-projt}
+The open set
 \[
 U=\{\mathfrak p\in\Proj T:\mathfrak p\not\supseteq\phi(S_+)\}
 \]
 from Hartshorne II.2.14 is all of $\Proj T$.
-::: {.proof}
-By <1>1,
+
+::: pf-proof
+By step [](#phi-splus-equals-tplus){.pf-ref},
 \[
 \phi(S_+)=T_+.
 \]
 By definition, a point of $\Proj T$ is a homogeneous prime ideal which does not contain $T_+$.  Hence every point belongs to $U$.
 :::
 
-<1>3. For every homogeneous $s\in S_+$, the induced ring map
+:::
+
+::: {.pf-step #local-map-surjective}
+For every homogeneous $s\in S_+$, the induced ring map
 \[
 S_{(s)}\longrightarrow T_{(\phi(s))}
 \]
 is surjective.
-::: {.proof}
+
+::: pf-proof
 Localizing the surjection $S\twoheadrightarrow T$ at the powers of $s$ gives a surjection of graded rings
 \[
 S_s\twoheadrightarrow T_{\phi(s)}.
@@ -92,7 +105,10 @@ choose a homogeneous lift $u\in S_{n\deg s}$ of $t$.  Then
 maps to the given element.  Thus the degree-zero map is surjective.
 :::
 
-<1>4. On the standard affine chart $D_+(s)\subseteq\Proj S$, the morphism
+:::
+
+::: {.pf-step #restriction-is-closed-immersion}
+On the standard affine chart $D_+(s)\subseteq\Proj S$, the morphism
 \[
 f:\Proj T\longrightarrow\Proj S
 \]
@@ -106,26 +122,34 @@ D_+(\phi(s))
 =
 D_+(s).
 \]
-::: {.proof}
+
+::: pf-proof
 Hartshorne II.2.14 constructs the restriction from the homomorphism
 \[
 S_{(s)}\longrightarrow T_{(\phi(s))}.
 \]
-This homomorphism is surjective by <1>3.  A surjective ring homomorphism induces a closed immersion of affine spectra.
+This homomorphism is surjective by step [](#local-map-surjective){.pf-ref}.  A surjective ring homomorphism induces a closed immersion of affine spectra.
 :::
 
-<1>5. The morphism
+:::
+
+::: {.pf-step #f-is-closed-immersion}
+The morphism
 \[
 \boxed{f:\Proj T\longrightarrow\Proj S}
 \]
 is a closed immersion.
-::: {.proof}
-The standard opens $D_+(s)$ for homogeneous $s\in S_+$ cover $\Proj S$.  By <1>4, the inverse image over every such member is a closed subscheme and the restricted morphism is a closed immersion.
+
+::: pf-proof
+The standard opens $D_+(s)$ for homogeneous $s\in S_+$ cover $\Proj S$.  By step [](#restriction-is-closed-immersion){.pf-ref}, the inverse image over every such member is a closed subscheme and the restricted morphism is a closed immersion.
 
 Being a closed immersion is local on the target.  Hence $f$ is a closed immersion globally.
 :::
 
-<1>6. Now let $I\subseteq S$ be homogeneous and put
+:::
+
+::: {.pf-step #iprime-subset-i-quotient-surjection}
+Now let $I\subseteq S$ be homogeneous and put
 \[
 I'=\bigoplus_{d\ge d_0}I_d.
 \]
@@ -133,18 +157,23 @@ Then $I'\subseteq I$ is a homogeneous ideal, and the quotient map induces a grad
 \[
 S/I'\twoheadrightarrow S/I.
 \]
-::: {.proof}
+
+::: pf-proof
 Because the grading is nonnegative, multiplying an element of $I_d$ with $d\ge d_0$ by a homogeneous element of nonnegative degree stays in a component of degree at least $d_0$.  Thus $I'$ is an ideal, and it is homogeneous by construction.
 
 The inclusion $I'\subseteq I$ gives the displayed quotient homomorphism.
 :::
 
-<1>7. For every $d\ge d_0$, the degree-$d$ component map
+:::
+
+::: {.pf-step #degree-d-iso-for-d-geq-d0}
+For every $d\ge d_0$, the degree-$d$ component map
 \[
 (S/I')_d\longrightarrow(S/I)_d
 \]
 is an isomorphism.
-::: {.proof}
+
+::: pf-proof
 For $d\ge d_0$,
 \[
 I'_d=I_d.
@@ -155,24 +184,32 @@ Therefore
 \]
 :::
 
-<1>8. The morphism
+:::
+
+::: {.pf-step #proj-si-iso-proj-siprime}
+The morphism
 \[
 \Proj(S/I)\longrightarrow\Proj(S/I')
 \]
-induced by <1>6 is an isomorphism.
-::: {.proof}
-By <1>7, the graded homomorphism
+induced by step [](#iprime-subset-i-quotient-surjection){.pf-ref} is an isomorphism.
+
+::: pf-proof
+By step [](#degree-d-iso-for-d-geq-d0){.pf-ref}, the graded homomorphism
 \[
 S/I'\longrightarrow S/I
 \]
 is an isomorphism in every sufficiently large degree.  Hartshorne II.2.14(c) states that such a graded map induces an isomorphism on $\Proj$.
 :::
 
-<1>9. The homogeneous ideals $I$ and $I'$ define the same closed subscheme of
+:::
+
+::: {.pf-step #i-and-iprime-same-subscheme}
+The homogeneous ideals $I$ and $I'$ define the same closed subscheme of
 \[
 X=\Proj S.
 \]
-::: {.proof}
+
+::: pf-proof
 The maps to $X$ fit into
 \[
 \Proj(S/I)
@@ -181,20 +218,28 @@ The maps to $X$ fit into
 \longrightarrow
 \Proj S,
 \]
-and the first arrow is an isomorphism by <1>8.  Both composites are induced by the same quotient map from $S$, so this isomorphism identifies the two closed immersions over $X$.  Therefore their scheme-theoretic images in $X$ are the same closed subscheme.
+and the first arrow is an isomorphism by step [](#proj-si-iso-proj-siprime){.pf-ref}.  Both composites are induced by the same quotient map from $S$, so this isomorphism identifies the two closed immersions over $X$.  Therefore their scheme-theoretic images in $X$ are the same closed subscheme.
 :::
 
-<1>10. Thus homogeneous ideals are not determined by the closed subschemes they define on $\Proj S$.
-::: {.proof}
+:::
+
+::: {.pf-step #ideals-not-determined-by-subscheme}
+Thus homogeneous ideals are not determined by the closed subschemes they define on $\Proj S$.
+
+::: pf-proof
 Whenever $I$ has a nonzero component in some degree below $d_0$, one has
 \[
 I'\ne I,
 \]
-while <1>9 shows that the associated closed subschemes are identical.
+while step [](#i-and-iprime-same-subscheme){.pf-ref} shows that the associated closed subschemes are identical.
 :::
 
-<1>11. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>5 prove part (a), and steps <1>6--<1>10 prove part (b).
 :::
+
+::: pf-qed
+Steps [](#phi-splus-equals-tplus){.pf-ref}, [](#u-equals-projt){.pf-ref}, [](#local-map-surjective){.pf-ref}, [](#restriction-is-closed-immersion){.pf-ref} and [](#f-is-closed-immersion){.pf-ref} prove part (a), and steps [](#iprime-subset-i-quotient-surjection){.pf-ref}, [](#degree-d-iso-for-d-geq-d0){.pf-ref}, [](#proj-si-iso-proj-siprime){.pf-ref}, [](#i-and-iprime-same-subscheme){.pf-ref} and [](#ideals-not-determined-by-subscheme){.pf-ref} prove part (b).
+:::
+
+:::
+
 :::

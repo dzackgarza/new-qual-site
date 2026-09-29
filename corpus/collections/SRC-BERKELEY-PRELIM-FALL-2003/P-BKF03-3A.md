@@ -30,10 +30,15 @@ Prove that the series $I + A + A ^ { 2 } + . . .$ converges if and only if every
 
 
 ::: {.solution}
+
 Convergence of a matrix series is equivalent in any matrix norm on $M_2(\mathbb C)$, so we may freely conjugate the series by a fixed invertible matrix.
 
-<1>1. If $\sum_{n=0}^\infty A^n$ converges, then every eigenvalue of $A$ has modulus less than $1$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #necessity}
+If $\sum_{n=0}^\infty A^n$ converges, then every eigenvalue of $A$ has modulus less than $1$.
+
+::: pf-proof
 Convergence of the series implies its terms tend to zero:
 \[
 A^n\longrightarrow0.
@@ -47,9 +52,13 @@ Since $A^nv\to0$ and $v\ne0$, one must have $\lambda^n\to0$.
 This is equivalent to $|\lambda|<1$.
 :::
 
-<1>2. Let $A=SJS^{-1}$ with $J$ a Jordan normal form of $A$.
+:::
+
+::: {.pf-step #jordan-reduction}
+Let $A=SJS^{-1}$ with $J$ a Jordan normal form of $A$.
 If $\sum_{n=0}^\infty J^n$ converges, then $\sum_{n=0}^\infty A^n$ converges.
-::: {.proof}
+
+::: pf-proof
 There is an invertible matrix $S$ such that
 \[
 A=SJS^{-1},
@@ -65,8 +74,12 @@ Thus the series for $A$ converges if the series for $J$ converges.
 For a $2\times2$ matrix, $J$ is either diagonal or a single Jordan block.
 :::
 
-<1>3. If $J=\operatorname{diag}(\lambda,\mu)$ with $|\lambda|,|\mu|<1$, then $\sum J^n$ converges.
-::: {.proof}
+:::
+
+::: {.pf-step #diagonal-case}
+If $J=\operatorname{diag}(\lambda,\mu)$ with $|\lambda|,|\mu|<1$, then $\sum J^n$ converges.
+
+::: pf-proof
 One has
 \[
 J^n=\begin{pmatrix}\lambda^n&0\\0&\mu^n\end{pmatrix}.
@@ -79,13 +92,17 @@ Therefore
 and both scalar geometric series converge.
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #jordan-block-case}
+If
 \[
 J=\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix},
 \qquad |\lambda|<1,
 \]
 then $\sum J^n$ also converges.
-::: {.proof}
+
+::: pf-proof
 Write $J=\lambda I+N$ with
 \[
 N=\begin{pmatrix}0&1\\0&0\end{pmatrix},
@@ -104,6 +121,13 @@ also converges absolutely for $|\lambda|<1$.
 Hence every entry of $\sum J^n$ converges.
 :::
 
-By <1>2--<1>4, if every eigenvalue of $A$ has modulus less than $1$, then $\sum A^n$ converges.
-Together with <1>1, this proves the equivalence.
+:::
+
+::: pf-qed
+By steps [](#jordan-reduction){.pf-ref}, [](#diagonal-case){.pf-ref} and [](#jordan-block-case){.pf-ref}, if every eigenvalue of $A$ has modulus less than $1$, then $\sum A^n$ converges.
+Together with step [](#necessity){.pf-ref}, this proves the equivalence.
+:::
+
+:::
+
 :::

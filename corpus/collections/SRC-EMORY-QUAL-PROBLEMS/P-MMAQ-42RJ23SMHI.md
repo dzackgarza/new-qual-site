@@ -38,9 +38,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. A group $G$ of order $351$ is not simple.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+A group $G$ of order $351$ is not simple.
+
+::: pf-proof
 Sylow's theorems give $n_{13}\mid27$ and
 $n_{13}\equiv1\pmod{13}$ [@DF04]. The divisors of
 $27$ are $1,3,9,27$, so $n_{13}=1$ or $27$.
@@ -63,9 +67,12 @@ and is nontrivial and proper. This proves nonsimplicity
 also in the second case.
 :::
 
-<1>2. A group $G$ of order $33$ is cyclic.
+:::
 
-::: {.proof}
+::: pf-step
+A group $G$ of order $33$ is cyclic.
+
+::: pf-proof
 Here $n_{11}\mid3$ and $n_{11}\equiv1\pmod{11}$,
 so the Sylow $11$-subgroup $Q$ is unique. Also
 $n_3\mid11$ and $n_3\equiv1\pmod3$; since
@@ -83,5 +90,9 @@ have order $33$, so the homomorphism is an isomorphism.
 The prime-order groups $P,Q$ are cyclic. A pair of
 generators has order $\operatorname{lcm}(3,11)=33$,
 and its image generates $G$.
+:::
+
+:::
+
 :::
 :::

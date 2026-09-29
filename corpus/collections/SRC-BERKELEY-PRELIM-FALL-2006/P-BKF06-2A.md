@@ -37,7 +37,11 @@ e^A:=\sum_{n=0}^{\infty}\frac{A^n}{n!}.
 :::
 
 ::: {.solution}
-<1>1. The vectors
+
+::: pf
+
+::: {.pf-step #eigenvectors}
+The vectors
 $$
 v_2=
 \begin{pmatrix}
@@ -53,7 +57,7 @@ v_1=
 $$
 are eigenvectors of $A$ with eigenvalues $2$ and $1$, respectively.
 
-::: {.proof}
+::: pf-proof
 Direct multiplication gives
 $$
 A v_2
@@ -96,7 +100,10 @@ v_1.
 $$
 :::
 
-<1>2. With
+:::
+
+::: {.pf-step #A-diagonalization}
+With
 $$
 C=
 \begin{pmatrix}
@@ -122,8 +129,8 @@ C^{-1}
 \end{pmatrix}.
 $$
 
-::: {.proof}
-The columns of $C$ are the eigenvectors from step <1>1, so
+::: pf-proof
+The columns of $C$ are the eigenvectors from step [](#eigenvectors){.pf-ref}, so
 $$
 AC=CD.
 $$
@@ -135,13 +142,16 @@ which gives the displayed inverse. Multiplying $AC=CD$ on the right
 by $C^{-1}$ yields $A=CDC^{-1}$.
 :::
 
-<1>3. The matrix exponential satisfies
+:::
+
+::: {.pf-step #eA-formula}
+The matrix exponential satisfies
 $$
 e^A=Ce^D C^{-1}.
 $$
 
-::: {.proof}
-From step <1>2,
+::: pf-proof
+From step [](#A-diagonalization){.pf-ref},
 $$
 A^n=CD^nC^{-1}
 $$
@@ -162,7 +172,10 @@ Ce^D C^{-1}.
 $$
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #eA-value}
+Hence
 $$
 \boxed{
 e^A=
@@ -173,7 +186,7 @@ e^2-e&-e^2+2e
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $D$ is diagonal,
 $$
 e^D=
@@ -182,7 +195,7 @@ e^2&0\\
 0&e
 \end{pmatrix}.
 $$
-Using steps <1>2 and <1>3,
+Using steps [](#A-diagonalization){.pf-ref} and [](#eA-formula){.pf-ref},
 $$
 \begin{aligned}
 e^A
@@ -219,9 +232,12 @@ e^2-e&-e^2+2e
 $$
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required matrix exponential.
 :::
+
+::: pf-qed
+Step [](#eA-value){.pf-ref} gives the required matrix exponential.
+:::
+
+:::
+
 :::

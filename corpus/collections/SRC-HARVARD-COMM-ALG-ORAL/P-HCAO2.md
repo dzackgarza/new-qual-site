@@ -54,12 +54,15 @@ For $N=0$ the ring is $\mathbb Z$ and its unit group is
 $\{1,-1\}\cong C_2$. For $N=1$ the ring has one element
 and its unit group is trivial.
 
-<1>1. For $N\geq2$, the class $\bar a$ is a unit of $\mathbb Z/N\mathbb Z$ if
+::: pf
+
+::: {.pf-step #crt-unit-group-decomposition}
+For $N\geq2$, the class $\bar a$ is a unit of $\mathbb Z/N\mathbb Z$ if
 and only if $\gcd(a,N)=1$, and
 $(\mathbb Z/N\mathbb Z)^\times\cong\prod_{\ell\mid N}(\mathbb Z/\ell^{e_\ell}\mathbb Z)^\times$,
 where the factor at $\ell$ has order $\ell^{e_\ell-1}(\ell-1)$.
 
-::: {.proof}
+::: pf-proof
 For $N\geq2$, a residue class $\bar a$ is a unit exactly
 when $ab\equiv1\pmod N$ for some integer $b$.
 Such an equality gives $ab+cN=1$, implying $\gcd(a,N)=1$.
@@ -78,10 +81,13 @@ factor has $\ell^{e-1}(\ell-1)$ units. Multiplying the
 factor sizes proves the asserted formula for $\varphi(N)$.
 :::
 
-<1>2. For an odd prime $\ell$, the units modulo $\ell^e$
+:::
+
+::: {.pf-step #odd-prime-power-units-cyclic}
+For an odd prime $\ell$, the units modulo $\ell^e$
 form a cyclic group of order $\ell^{e-1}(\ell-1)$.
 
-::: {.proof}
+::: pf-proof
 The multiplicative group of the finite field $\mathbb F_\ell$
 is cyclic [@DF04]. Choose an integer $a$ whose residue has
 order $\ell-1$. There is a choice $b=a$ or $b=a+\ell$
@@ -114,18 +120,21 @@ but not by $\ell^{j+2}$.
 
 Let $d_e$ be the order of $b$ modulo $\ell^e$.
 Reduction modulo $\ell$ makes $\ell-1$ divide $d_e$,
-and Lagrange's theorem and step <1>1 make $d_e$ divide
+and Lagrange's theorem and step [](#crt-unit-group-decomposition){.pf-ref} make $d_e$ divide
 $(\ell-1)\ell^{e-1}$. Hence $d_e=(\ell-1)\ell^h$
 for $0\leq h\leq e-1$. The preceding exact divisibility
 forces $h+1\geq e$. Thus $h=e-1$, giving an element
 whose order equals the whole unit-group order, as required.
 :::
 
-<1>3. $(\mathbb Z/2\mathbb Z)^\times\cong C_1$,
+:::
+
+::: {.pf-step #power-of-two-units-structure}
+$(\mathbb Z/2\mathbb Z)^\times\cong C_1$,
 $(\mathbb Z/4\mathbb Z)^\times\cong C_2$, and
 $(\mathbb Z/2^e\mathbb Z)^\times\cong C_2\times C_{2^{e-2}}$ for $e\geq3$.
 
-::: {.proof}
+::: pf-proof
 Modulo $2$ there is one unit. Modulo $4$ the units are
 $1,-1$, giving $C_2$. Now let $e\geq3$.
 For every $j\geq0$, the integer $5^{2^j}-1$ is divisible
@@ -152,16 +161,23 @@ and is not in $\langle5\rangle$. The factors commute,
 so this gives $C_2\times C_{2^{e-2}}$.
 :::
 
-<1>4. For $N=0$ the unit group is $\{1,-1\}\cong C_2$, and for $N=1$ it is
+:::
+
+::: pf-step
+For $N=0$ the unit group is $\{1,-1\}\cong C_2$, and for $N=1$ it is
 trivial.
 
-::: {.proof}
+::: pf-proof
 The ideals $(q-1)$ and $(|q-1|)$ in $\mathbb Z$ coincide.
 When $q=1$, the quotient by $(0)$ is $\mathbb Z$;
 its only integer units are $1,-1$. When $|q-1|=1$,
 the quotient is the zero ring. Its sole element is its
 identity and is its own multiplicative inverse, so its
 unit group has one element. All other integers $q$
-give $N\geq2$ and are covered by steps <1>1–<1>3.
+give $N\geq2$ and are covered by steps [](#crt-unit-group-decomposition){.pf-ref}, [](#odd-prime-power-units-cyclic){.pf-ref} and [](#power-of-two-units-structure){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

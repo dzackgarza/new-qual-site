@@ -48,7 +48,10 @@ u=b-a,
 v=c-a.
 $$
 
-<1>1. The identity
+::: pf
+
+::: {.pf-step #identity-equivalent-form}
+The identity
 $$
 a^2+b^2+c^2=ab+bc+ca
 $$
@@ -57,7 +60,7 @@ $$
 u^2+v^2=uv.
 $$
 
-::: {.proof}
+::: pf-proof
 Substitute
 $$
 b=a+u,
@@ -71,7 +74,10 @@ $$
 Thus the two displayed equations are equivalent.
 :::
 
-<1>2. If the algebraic identity holds, then
+:::
+
+::: {.pf-step #ratio-values}
+If the algebraic identity holds, then
 $$
 \frac vu
 =
@@ -82,12 +88,12 @@ e^{i\pi/3}
 e^{-i\pi/3}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $a,b,c$ are distinct, in particular
 $$
 u=b-a\neq0.
 $$
-Divide the equation from step <1>1 by $u^2$ and put
+Divide the equation from step [](#identity-equivalent-form){.pf-ref} by $u^2$ and put
 $$
 t=\frac vu.
 $$
@@ -105,11 +111,14 @@ e^{\pm i\pi/3}.
 $$
 :::
 
-<1>3. If the algebraic identity holds, then $a,b,c$ are the vertices
+:::
+
+::: {.pf-step #identity-implies-equilateral}
+If the algebraic identity holds, then $a,b,c$ are the vertices
 of an equilateral triangle.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#ratio-values){.pf-ref},
 $$
 \abs v=\abs u.
 $$
@@ -140,7 +149,10 @@ $$
 all three side lengths are equal.
 :::
 
-<1>4. Conversely, if $a,b,c$ are the vertices of an equilateral
+:::
+
+::: {.pf-step #equilateral-implies-ratio}
+Conversely, if $a,b,c$ are the vertices of an equilateral
 triangle, then
 $$
 \frac vu=e^{i\pi/3}
@@ -148,7 +160,7 @@ $$
 \frac vu=e^{-i\pi/3}.
 $$
 
-::: {.proof}
+::: pf-proof
 Because the triangle is equilateral,
 $$
 \abs u=\abs v=\abs{v-u}>0.
@@ -177,13 +189,16 @@ t=e^{\pm i\pi/3}.
 $$
 :::
 
-<1>5. If $a,b,c$ form an equilateral triangle, then
+:::
+
+::: {.pf-step #equilateral-implies-identity}
+If $a,b,c$ form an equilateral triangle, then
 $$
 a^2+b^2+c^2=ab+bc+ca.
 $$
 
-::: {.proof}
-By step <1>4, the number
+::: pf-proof
+By step [](#equilateral-implies-ratio){.pf-ref}, the number
 $$
 t=\frac vu
 $$
@@ -195,20 +210,25 @@ Multiplying by $u^2$ yields
 $$
 u^2+v^2=uv.
 $$
-Step <1>1 converts this back to the required identity.
+Step [](#identity-equivalent-form){.pf-ref} converts this back to the required identity.
 :::
 
-<1>6. Therefore the identity $a^2+b^2+c^2=ab+bc+ca$ is necessary and
+:::
+
+::: {.pf-step #equivalence-conclusion}
+Therefore the identity $a^2+b^2+c^2=ab+bc+ca$ is necessary and
 sufficient for three distinct complex numbers to be the vertices of
 an equilateral triangle.
 
-::: {.proof}
-Step <1>3 proves sufficiency and step <1>5 proves necessity.
+::: pf-proof
+Step [](#identity-implies-equilateral){.pf-ref} proves sufficiency and step [](#equilateral-implies-identity){.pf-ref} proves necessity.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the asserted equivalence.
+::: pf-qed
+Step [](#equivalence-conclusion){.pf-ref} is the asserted equivalence.
+:::
+
 :::
 :::

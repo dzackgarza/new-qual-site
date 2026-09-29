@@ -34,8 +34,12 @@ Given $A \in M_{m,n}$ with $m \geq n$, prove that there exists a unique $U \in M
 The uniqueness assertion is false as stated.
 The precise result is that the positive semidefinite factor $H$ is always unique, while the factor $U$ with orthonormal columns is unique if and only if $A$ has full column rank.
 
-<1>1. A positive semidefinite matrix has a unique positive semidefinite square root.
-::: {.proof}
+::: pf
+
+::: {.pf-step #psd-square-root-unique}
+A positive semidefinite matrix has a unique positive semidefinite square root.
+
+::: pf-proof
 Let $B$ be Hermitian positive semidefinite.
 By the spectral theorem there are a unitary matrix $Q$ and numbers $\mu_1,\ldots,\mu_n\ge0$ such that
 \[
@@ -54,21 +58,29 @@ The spectral theorem applied to that restriction shows that every eigenvalue is 
 Thus $C=\sqrt\mu I$ on each eigenspace of $B$, so $C=B^{1/2}$.
 :::
 
-<1>2. In every factorization $A=UH$ with $U^*U=I_n$ and $H\ge0$, one has
+:::
+
+::: {.pf-step #h-unique}
+In every factorization $A=UH$ with $U^*U=I_n$ and $H\ge0$, one has
 \[
 H=(A^*A)^{1/2}.
 \]
-::: {.proof}
+
+::: pf-proof
 Indeed,
 \[
 A^*A=H U^*UH=H^2.
 \]
-By <1>1, $H$ is the unique positive semidefinite square root of $A^*A$.
+By step [](#psd-square-root-unique){.pf-ref}, $H$ is the unique positive semidefinite square root of $A^*A$.
 Thus the factor $H$ is unique whenever such a factorization exists.
 :::
 
-<1>3. Such a factorization exists for every $A\in M_{m,n}$ with $m\ge n$.
-::: {.proof}
+:::
+
+::: {.pf-step #existence}
+Such a factorization exists for every $A\in M_{m,n}$ with $m\ge n$.
+
+::: pf-proof
 Set
 \[
 H:=(A^*A)^{1/2},
@@ -121,8 +133,12 @@ UHv=U_0Hv=Av.
 Thus $A=UH$.
 :::
 
-<1>4. The factor $U$ is unique exactly when $A$ has full column rank.
-::: {.proof}
+:::
+
+::: {.pf-step #u-unique-iff-full-rank}
+The factor $U$ is unique exactly when $A$ has full column rank.
+
+::: pf-proof
 If $\operatorname{rank}A=n$, then $H$ is invertible, so every factorization satisfies
 \[
 U=AH^{-1}.
@@ -130,13 +146,17 @@ U=AH^{-1}.
 Hence $U$ is unique.
 
 Conversely, if $\operatorname{rank}A<n$, then $K=\ker A\neq0$.
-In the construction of <1>3, choose an isometric embedding $V:K\to(\operatorname{Ran}A)^\perp$.
+In the construction of step [](#existence){.pf-ref}, choose an isometric embedding $V:K\to(\operatorname{Ran}A)^\perp$.
 Replacing $V$ by $-V$ gives a distinct isometric extension of $U_0$, hence a distinct matrix $U$, while $UH=A$ is unchanged because $H$ vanishes on $K$.
 Therefore $U$ is not unique.
 :::
 
-<1>5. In particular, the statement in the problem fails already for $A=0$.
-::: {.proof}
+:::
+
+::: {.pf-step #a-zero-counterexample}
+In particular, the statement in the problem fails already for $A=0$.
+
+::: pf-proof
 Then $H=0$.
 For example, with $e_1,\ldots,e_m$ the standard basis and $m\ge n\ge1$, both
 \[
@@ -151,5 +171,13 @@ have orthonormal columns, are distinct, and satisfy
 A=0=U_1H=U_2H.
 \]
 Thus the unconditional uniqueness of $U$ requested by the sourced problem is false.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#h-unique){.pf-ref}, [](#existence){.pf-ref}, [](#u-unique-iff-full-rank){.pf-ref}, and [](#a-zero-counterexample){.pf-ref} establish the corrected result and show that the problem's unconditional uniqueness claim is false.
+:::
+
 :::
 :::

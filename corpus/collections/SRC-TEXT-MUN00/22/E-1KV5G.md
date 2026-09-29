@@ -34,24 +34,33 @@ Conclude that $G$ is a homogeneous space.
 ::: {.solution}
 Let $m\colon G\times G\to G$ be the continuous multiplication.
 
-<1>1. $f_\alpha$ and $g_\alpha$ are continuous for every $\alpha\in G$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #translations-continuous}
+$f_\alpha$ and $g_\alpha$ are continuous for every $\alpha\in G$.
+
+::: pf-proof
 The maps $x\mapsto(\alpha,x)$ and $x\mapsto(x,\alpha)$ from $G$ to $G\times G$ are continuous, since their coordinates are constant or the identity.
 Composing with $m$ gives $f_\alpha$ and $g_\alpha$.
 :::
 
-<1>2. $f_\alpha$ and $g_\alpha$ are homeomorphisms.
-
-::: {.proof}
-$f_{\alpha^{-1}}\circ f_\alpha=f_\alpha\circ f_{\alpha^{-1}}=\operatorname{id}_G$ and $g_{\alpha^{-1}}\circ g_\alpha=g_\alpha\circ g_{\alpha^{-1}}=\operatorname{id}_G$ by associativity, and the inverses are continuous by step <1>1.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #translations-homeomorphisms}
+$f_\alpha$ and $g_\alpha$ are homeomorphisms.
 
-::: {.proof}
+::: pf-proof
+$f_{\alpha^{-1}}\circ f_\alpha=f_\alpha\circ f_{\alpha^{-1}}=\operatorname{id}_G$ and $g_{\alpha^{-1}}\circ g_\alpha=g_\alpha\circ g_{\alpha^{-1}}=\operatorname{id}_G$ by associativity, and the inverses are continuous by step [](#translations-continuous){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
 Given $x,y\in G$, put $\alpha=yx^{-1}$.
-By step <1>2, $f_\alpha$ is a homeomorphism of $G$ onto itself, and $f_\alpha(x)=yx^{-1}x=y$.
+By step [](#translations-homeomorphisms){.pf-ref}, $f_\alpha$ is a homeomorphism of $G$ onto itself, and $f_\alpha(x)=yx^{-1}x=y$.
 So $G$ is homogeneous.
 :::
+
+:::
+
 :::

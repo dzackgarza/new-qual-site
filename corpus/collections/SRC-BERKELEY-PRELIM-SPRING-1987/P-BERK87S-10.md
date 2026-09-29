@@ -43,7 +43,10 @@ $$
 \{e_g:g\in G\}.
 $$
 
-<1>1. For each $a\in G$, define a linear map
+::: pf
+
+::: {.pf-step #rho-defined}
+For each $a\in G$, define a linear map
 $$
 \rho(a):V\to V
 $$
@@ -53,7 +56,7 @@ $$
 $$
 for every $g\in G$.
 
-::: {.proof}
+::: pf-proof
 Left multiplication
 $$
 g\longmapsto ag
@@ -63,7 +66,10 @@ the basis of $V$ to a basis and therefore extends uniquely to a linear
 automorphism of $V$.
 :::
 
-<1>2. The assignment
+:::
+
+::: {.pf-step #rho-is-homomorphism}
+The assignment
 $$
 \rho:G\to GL(V),
 \qquad
@@ -71,7 +77,7 @@ a\longmapsto\rho(a),
 $$
 is a group homomorphism.
 
-::: {.proof}
+::: pf-proof
 For $a,b,g\in G$,
 $$
 \rho(a)\rho(b)e_g
@@ -89,11 +95,14 @@ $$
 because the two maps agree on a basis.
 :::
 
-<1>3. Each $\rho(a)$ is orthogonal with respect to the inner product for
+:::
+
+::: {.pf-step #rho-is-orthogonal}
+Each $\rho(a)$ is orthogonal with respect to the inner product for
 which the basis $(e_g)_{g\in G}$ is orthonormal.
 
-::: {.proof}
-By step <1>1, $\rho(a)$ permutes the orthonormal basis vectors. Hence for
+::: pf-proof
+By step [](#rho-defined){.pf-ref}, $\rho(a)$ permutes the orthonormal basis vectors. Hence for
 all $g,h\in G$,
 $$
 \inner{\rho(a)e_g}{\rho(a)e_h}
@@ -109,9 +118,12 @@ Therefore, after identifying $V$ with $\RR^n$ by this orthonormal basis,
 its matrix lies in $O(n)$.
 :::
 
-<1>4. The homomorphism $\rho$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #rho-injective}
+The homomorphism $\rho$ is injective.
+
+::: pf-proof
 Let $e\in G$ denote the identity. If
 $$
 \rho(a)=\rho(b),
@@ -129,20 +141,25 @@ $$
 Distinct group elements label distinct basis vectors, so $a=b$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #embedding-boxed}
+Therefore
 $$
 \boxed{G\cong\rho(G)\leq O(n)}.
 $$
 
-::: {.proof}
-Steps <1>2 and <1>4 show that $\rho$ is an injective group
-homomorphism, while step <1>3 shows that every matrix in its image is
+::: pf-proof
+Steps [](#rho-is-homomorphism){.pf-ref} and [](#rho-injective){.pf-ref} show that $\rho$ is an injective group
+homomorphism, while step [](#rho-is-orthogonal){.pf-ref} shows that every matrix in its image is
 orthogonal.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the required isomorphic embedding into $O(n)$.
+::: pf-qed
+Step [](#embedding-boxed){.pf-ref} gives the required isomorphic embedding into $O(n)$.
+:::
+
 :::
 :::

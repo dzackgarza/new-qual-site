@@ -48,7 +48,10 @@ M
 \end{pmatrix}.
 $$
 
-<1>1. The vector
+::: pf
+
+::: {.pf-step #eigenvector-found}
+The vector
 $$
 v
 =
@@ -60,7 +63,7 @@ v
 $$
 is an eigenvector of $M$ with eigenvalue $-\sqrt2$.
 
-::: {.proof}
+::: pf-proof
 Direct multiplication gives
 $$
 Mv
@@ -82,7 +85,10 @@ Mv
 $$
 :::
 
-<1>2. The function
+:::
+
+::: {.pf-step #x-is-solution}
+The function
 $$
 X(t)
 \coloneqq
@@ -90,8 +96,8 @@ e^{-\sqrt2 t}v
 $$
 is a solution of the system.
 
-::: {.proof}
-Using step <1>1,
+::: pf-proof
+Using step [](#eigenvector-found){.pf-ref},
 $$
 X'(t)
 =
@@ -103,7 +109,10 @@ MX(t).
 $$
 :::
 
-<1>3. This solution has the required limiting behavior:
+:::
+
+::: {.pf-step #limiting-behavior}
+This solution has the required limiting behavior:
 $$
 \norm{X(t)}\longrightarrow0
 \quad(t\to+\infty),
@@ -114,7 +123,7 @@ $$
 \quad(t\to-\infty).
 $$
 
-::: {.proof}
+::: pf-proof
 Since $v\neq0$,
 $$
 \norm{X(t)}
@@ -125,9 +134,11 @@ The scalar factor tends to $0$ as $t\to+\infty$ and to $\infty$ as
 $t\to-\infty$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2--<1>3 exhibit the requested solution explicitly.
+::: pf-qed
+Steps [](#x-is-solution){.pf-ref} and [](#limiting-behavior){.pf-ref} exhibit the requested solution explicitly.
+:::
+
 :::
 :::

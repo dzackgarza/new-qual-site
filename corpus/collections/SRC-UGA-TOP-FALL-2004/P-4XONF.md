@@ -40,11 +40,15 @@ B=S^1_a\vee S^1_b
 \]
 with wedge point $v$ and oriented loop-edges $a$ and $b$.
 
-<1>1. A three-sheeted covering of $B$ is determined, up to relabeling its fiber over $v$, by a pair of permutations
+::: pf
+
+::: {.pf-step #monodromy-pair-determines-covering}
+A three-sheeted covering of $B$ is determined, up to relabeling its fiber over $v$, by a pair of permutations
 \[
 (\sigma,\tau)\in S_3\times S_3.
 \]
-::: {.proof}
+
+::: pf-proof
 Label the fiber over $v$ by
 \[
 p^{-1}(v)=\{1,2,3\}.
@@ -63,32 +67,43 @@ Map every $a$-edge homeomorphically to the $a$-circle and every $b$-edge homeomo
 At each vertex there is exactly one incoming and one outgoing lift of each oriented base edge, so this graph maps to $B$ as a three-sheeted covering.
 :::
 
-<1>2. The covering determined by $(\sigma,\tau)$ is connected exactly when the subgroup
+:::
+
+::: {.pf-step #connected-iff-transitive}
+The covering determined by $(\sigma,\tau)$ is connected exactly when the subgroup
 \[
 \langle\sigma,\tau\rangle\le S_3
 \]
 acts transitively on $\{1,2,3\}$.
-::: {.proof}
+
+::: pf-proof
 A path in $B$ based at $v$ is represented by a word in $a^{\pm1}$ and $b^{\pm1}$.
 Lifting such a word from a point $i$ in the fiber ends at the point obtained by applying the corresponding word in $\sigma^{\pm1}$ and $\tau^{\pm1}$.
 Hence two vertices of the covering graph lie in the same path component exactly when they lie in the same orbit of $\langle\sigma,\tau\rangle$.
 Thus the graph is connected exactly when there is one orbit.
 :::
 
-<1>3. Two pairs $(\sigma,\tau)$ and $(\sigma',\tau')$ determine isomorphic covering spaces over $B$ exactly when they are simultaneously conjugate:
+:::
+
+::: pf-step
+Two pairs $(\sigma,\tau)$ and $(\sigma',\tau')$ determine isomorphic covering spaces over $B$ exactly when they are simultaneously conjugate:
 \[
 (\sigma',\tau')
 =
 (h\sigma h^{-1},h\tau h^{-1})
 \]
 for some $h\in S_3$.
-::: {.proof}
+
+::: pf-proof
 Relabeling the three points of the fiber by $h$ changes each monodromy permutation by conjugation with $h$.
 Every isomorphism of covering spaces over $B$ restricts to such a relabeling of the fiber over $v$, and it must intertwine the lifts of both base loops.
 Thus simultaneous conjugacy is precisely the equivalence relation corresponding to isomorphism of covers over the fixed base.
 :::
 
-<1>4. Put
+:::
+
+::: {.pf-step #seven-connected-pairs}
+Put
 \[
 r=(123),
 \qquad
@@ -111,14 +126,19 @@ r&r\\
 r&r^{-1}
 \end{array}}
 \]
-::: {.proof}
+
+::: pf-proof
 Any pair containing the $3$-cycle $r$ generates a transitive subgroup, since $\langle r\rangle$ is already transitive.
 The remaining pair $(s,t)$ consists of two distinct transpositions; they generate $S_3$, hence act transitively.
-Therefore all seven displayed pairs define connected covers by <1>2.
+Therefore all seven displayed pairs define connected covers by step [](#connected-iff-transitive){.pf-ref}.
 :::
 
-<1>5. Every connected three-sheeted covering is isomorphic to one of the seven covers in <1>4.
-::: {.proof}
+:::
+
+::: pf-step
+Every connected three-sheeted covering is isomorphic to one of the seven covers in step [](#seven-connected-pairs){.pf-ref}.
+
+::: pf-proof
 Let $(\sigma,\tau)$ be a transitive pair.
 We classify it by the cycle type of $\sigma$.
 
@@ -173,8 +193,12 @@ giving $(r,r)$ and $(r,r^{-1})$.
 These exhaust all possibilities.
 :::
 
-<1>6. The seven covers in <1>4 are pairwise nonisomorphic over $B$.
-::: {.proof}
+:::
+
+::: pf-step
+The seven covers in step [](#seven-connected-pairs){.pf-ref} are pairwise nonisomorphic over $B$.
+
+::: pf-proof
 Simultaneous conjugation preserves the cycle type of each coordinate, so pairs having different cycle-type pairs cannot be equivalent.
 This already separates all displayed pairs except potentially
 \[
@@ -191,14 +215,21 @@ Thus these two covers are also nonisomorphic.
 Hence there are exactly seven isomorphism classes.
 :::
 
-<1>7. Equivalently, each row of <1>4 can be drawn as a three-vertex labeled covering graph.
-::: {.proof}
+:::
+
+::: pf-step
+Equivalently, each row of step [](#seven-connected-pairs){.pf-ref} can be drawn as a three-vertex labeled covering graph.
+
+::: pf-proof
 For a row $(\sigma_a,\sigma_b)$, take vertices $1,2,3$.
 For each label $x\in\{a,b\}$ and each vertex $i$, draw one oriented $x$-edge
 \[
 i\longrightarrow\sigma_x(i).
 \]
 Thus an identity permutation gives three loops of that label, a transposition gives two oppositely directed edges between the transposed vertices together with a loop at the fixed vertex, and a $3$-cycle gives a directed triangle.
-By <1>1 these seven labeled graphs are exactly the desired connected three-sheeted covering spaces.
+By step [](#monodromy-pair-determines-covering){.pf-ref} these seven labeled graphs are exactly the desired connected three-sheeted covering spaces.
 :::
+
+:::
+
 :::

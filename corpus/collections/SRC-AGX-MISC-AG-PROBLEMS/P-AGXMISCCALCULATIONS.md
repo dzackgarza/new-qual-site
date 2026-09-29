@@ -61,13 +61,17 @@ Part (h) is stated in the source as $\operatorname{CaDiv}(X) \cong H^1(X, \OO_X^
 :::
 
 ::: {.solution}
-<1>1. (a) The degree map gives
+
+::: pf
+
+::: {.pf-step #pic-p1-is-z}
+(a) The degree map gives
 $$
 \boxed{\Pic(\PP^1_{\CC})\cong\ZZ},
 $$
 with $1\in\ZZ$ corresponding to $\OO_{\PP^1}(1)$.
 
-::: {.proof}
+::: pf-proof
 The curve $\PP^1_\CC$ is smooth, so Cartier divisors, Weil divisors, and
 line bundles have the same divisor-class group. Fix the point
 $\infty=[1:0]$ and the affine coordinate $t$ on
@@ -110,7 +114,10 @@ $$
 which gives the claimed identification with $\Pic(\PP^1_\CC)$.
 :::
 
-<1>2. (b) On projective space,
+:::
+
+::: {.pf-step #h0-projective-space}
+(b) On projective space,
 $$
 \boxed{
 H^0(\PP_k^n,\OO(m))
@@ -125,7 +132,7 @@ $$
 \boxed{H^0(\PP_k^n,\Omega^1_{\PP^n/k})=0}.
 $$
 
-::: {.proof}
+::: pf-proof
 The twisting-sheaf calculation is [[T-IJW1K]]:
 $$
 H^0(\PP_k^n,\OO(m))=k[x_0,\ldots,x_n]_m
@@ -161,7 +168,10 @@ $$
 Thus the differential sheaf has no nonzero global sections.
 :::
 
-<1>3. (b) On affine space,
+:::
+
+::: {.pf-step #h0-affine-space}
+(b) On affine space,
 $$
 \boxed{H^0(\AA_k^n,\OO)=k[x_1,\ldots,x_n]}
 $$
@@ -177,7 +187,7 @@ If $\OO(m)$ means the restriction of the projective twisting sheaf to the
 standard affine chart $\AA^n\subseteq\PP^n$, then it is trivial there and
 has the same global sections as $\OO$.
 
-::: {.proof}
+::: pf-proof
 For
 $$
 A=k[x_1,\ldots,x_n],
@@ -199,7 +209,10 @@ standard chart $D_+(x_0)\cong\AA^n$, the projective sheaf $\OO(m)$ is
 trivialized by $x_0^m$, so its restriction has global sections $A$.
 :::
 
-<1>4. (b) For a toric variety $X_\Sigma$ and a torus-invariant divisor
+:::
+
+::: {.pf-step #h0-toric-variety}
+(b) For a toric variety $X_\Sigma$ and a torus-invariant divisor
 $$
 D=\sum_{\rho\in\Sigma(1)}a_\rho D_\rho,
 $$
@@ -222,7 +235,7 @@ m\in M_\RR:
 \right\}.
 $$
 
-::: {.proof}
+::: pf-proof
 The character $\chi^m$ is a section of $\OO(D)$ exactly when
 $$
 \div(\chi^m)+D\ge0.
@@ -237,19 +250,22 @@ decomposes into torus weights. This is the standard toric section formula
 [[D-TORQD]].
 :::
 
-<1>5. (c) Every morphism
+:::
+
+::: {.pf-step #morphisms-pn-to-am}
+(c) Every morphism
 $$
 \PP_k^n\longrightarrow\AA_k^m
 $$
 is constant.
 
-::: {.proof}
+::: pf-proof
 A morphism to
 $$
 \AA^m=\Spec k[t_1,\ldots,t_m]
 $$
 is determined by the pullbacks of the coordinate functions $t_i$, hence
-by $m$ global regular functions on $\PP^n$. Step <1>2 with $m=0$ gives
+by $m$ global regular functions on $\PP^n$. Step [](#h0-projective-space){.pf-ref} with $m=0$ gives
 $$
 \Gamma(\PP^n,\OO)=k.
 $$
@@ -257,12 +273,18 @@ Therefore every coordinate pullback is constant, so the morphism is
 constant.
 :::
 
-<1>6. (d) The requested properties, consequences, examples, and
+:::
+
+::: {.pf-step #properties-of-morphisms}
+(d) The requested properties, consequences, examples, and
 nonexamples are as follows.
 
-<2>1. Separatedness is the closed-diagonal condition.
+::: pf-proof
 
-::: {.proof}
+::: {.pf-step #separatedness-def}
+Separatedness is the closed-diagonal condition.
+
+::: pf-proof
 A morphism $f:X\to Y$ is separated if
 $$
 \Delta_f:X\longrightarrow X\times_YX
@@ -274,9 +296,12 @@ the pair $(0_1,0_2)$ of its two origins lies in the closure of the
 diagonal but not in the diagonal.
 :::
 
-<2>2. Properness is finite type, separatedness, and universal closedness.
+:::
 
-::: {.proof}
+::: {.pf-step #properness-def}
+Properness is finite type, separatedness, and universal closedness.
+
+::: pf-proof
 A proper morphism remains closed after every base change; properness is
 also stable under composition and base change. Every projective morphism
 is proper. The structure morphism
@@ -293,20 +318,26 @@ does not extend to $\Spec k[[t]]$, because $t^{-1}\notin k[[t]]$. This
 violates the valuative criterion for properness.
 :::
 
-<2>3. A complete variety is a variety proper over its base field.
+:::
 
-::: {.proof}
+::: {.pf-step #complete-variety-def}
+A complete variety is a variety proper over its base field.
+
+::: pf-proof
 If $X$ is complete and $Y$ is a separated variety, every morphism
 $f:X\to Y$ is proper: its graph is a closed immersion into $X\times Y$,
 and the projection $X\times Y\to Y$ is the base change of the proper
 structure morphism $X\to\Spec k$. Hence $f$ has closed image. Projective
 varieties are complete; in particular $\PP^n$ is complete. The affine
-line $\AA^1$ is not complete, as in step <2>2.
+line $\AA^1$ is not complete, as in step [](#properness-def){.pf-ref}.
 :::
 
-<2>4. Flatness is flatness of the local rings over the base.
+:::
 
-::: {.proof}
+::: {.pf-step #flatness-def}
+Flatness is flatness of the local rings over the base.
+
+::: pf-proof
 A morphism $f:X\to Y$ is flat at $x$ when
 $$
 \OO_{X,x}
@@ -326,9 +357,12 @@ is not flat: its fibres away from the origin are points while the fibre
 over the origin is $\PP^1$ [[FE-MORNOTFLAT]].
 :::
 
-<2>5. Reducedness means that no local ring has a nonzero nilpotent.
+:::
 
-::: {.proof}
+::: {.pf-step #reducedness-def}
+Reducedness means that no local ring has a nonzero nilpotent.
+
+::: pf-proof
 Equivalently, an affine scheme $\Spec A$ is reduced exactly when the
 nilradical of $A$ is zero. Affine space is reduced because its polynomial
 ring is a domain. The scheme
@@ -340,9 +374,12 @@ Passing from any scheme to its reduced subscheme removes precisely these
 nilpotents without changing the underlying topological space.
 :::
 
-<2>6. Normality means that the local rings are integrally closed domains.
+:::
 
-::: {.proof}
+::: {.pf-step #normality-def}
+Normality means that the local rings are integrally closed domains.
+
+::: pf-proof
 Every local ring of a normal scheme is an integrally closed domain
 [[D-QJ5M9]]. Regular schemes are normal. Thus
 $\AA^n$ is normal. The cuspidal cubic
@@ -354,14 +391,19 @@ belong to it; its normalization is $\Spec k[t]$. In dimension one,
 normality forces the local rings to be DVRs, hence regularity.
 :::
 
-<2>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <2>1--<2>6 give a definition, a standard consequence, an example,
+::: pf-qed
+Steps [](#separatedness-def){.pf-ref}, [](#properness-def){.pf-ref}, [](#complete-variety-def){.pf-ref}, [](#flatness-def){.pf-ref}, [](#reducedness-def){.pf-ref} and [](#normality-def){.pf-ref} give a definition, a standard consequence, an example,
 and a nonexample for each property requested in part (d).
 :::
 
-<1>7. (e) There is an isomorphism over $\AA^{n+1}$
+:::
+
+:::
+
+::: {.pf-step #blowup-tautological-bundle}
+(e) There is an isomorphism over $\AA^{n+1}$
 $$
 \boxed{
 \Bl_0\AA^{n+1}
@@ -370,7 +412,7 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 The blowup of the origin is the incidence variety
 $$
 B
@@ -411,12 +453,15 @@ $\OO(-1)$, so they glue to the asserted isomorphism. Projection to $x$
 is the blowdown map.
 :::
 
-<1>8. (f) The canonical line bundle of the projective line is
+:::
+
+::: {.pf-step #canonical-bundle-p1}
+(f) The canonical line bundle of the projective line is
 $$
 \boxed{\omega_{\PP^1}\cong\OO_{\PP^1}(-2)}.
 $$
 
-::: {.proof}
+::: pf-proof
 The Euler sequence on $\PP^1$ is
 $$
 0
@@ -443,7 +488,10 @@ $$
 This is also the $n=1$ case of [[T-MODEULER]].
 :::
 
-<1>9. (g) The tautological line bundle on $\PP^n$ is $\OO_{\PP^n}(-1)$,
+:::
+
+::: {.pf-step #tautological-bundle-def-degree}
+(g) The tautological line bundle on $\PP^n$ is $\OO_{\PP^n}(-1)$,
 whose fibre at a point $[\ell]\in\PP^n$ is the line
 $$
 \ell\subseteq k^{n+1}.
@@ -453,9 +501,9 @@ $$
 \boxed{\deg\omega_{\PP^1}=-2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The fibre description is the definition of the tautological bundle
-[[D-CB9XS]]. By step <1>8,
+[[D-CB9XS]]. By step [](#canonical-bundle-p1){.pf-ref},
 $$
 \omega_{\PP^1}\cong\OO_{\PP^1}(-2).
 $$
@@ -466,7 +514,10 @@ $$
 its degree is $-2$.
 :::
 
-<1>10. (h) For an integral scheme $X$,
+:::
+
+::: {.pf-step #picard-h1-iso}
+(h) For an integral scheme $X$,
 $$
 \boxed{
 \CaCl(X)
@@ -477,7 +528,7 @@ H^1(X,\OO_X^\times).
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Let $\mck$ be the constant sheaf of the function field $K(X)$. A Cartier
 divisor is represented by local rational functions $f_i\in K(X)^\times$
 whose ratios
@@ -519,10 +570,13 @@ $$
 as proved in [[P-AGH345PICH1]].
 :::
 
-<1>11. (i) The ruling on the quadric cone gives a Weil divisor that is
+:::
+
+::: {.pf-step #weil-not-cartier-example}
+(i) The ruling on the quadric cone gives a Weil divisor that is
 not Cartier.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 A=k[x,y,z]/(xy-z^2),
@@ -560,12 +614,15 @@ principal, so $D$ is not Cartier at the vertex. This is the example in
 [[D-5PQ5W]].
 :::
 
-<1>12. (j) On an integral scheme, Cartier divisors modulo principal
+:::
+
+::: {.pf-step #cartier-line-bundle-correspondence}
+(j) On an integral scheme, Cartier divisors modulo principal
 divisors are exactly line bundles up to isomorphism; more precisely a
 Cartier divisor is equivalent to a line bundle equipped with a nonzero
 rational section.
 
-::: {.proof}
+::: pf-proof
 For a Cartier divisor represented by rational functions $f_i$, the
 transition functions
 $$
@@ -586,11 +643,14 @@ function changes the divisor by a principal divisor. This is precisely
 the correspondence [[PR-DIVLB]].
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>12 answer parts (a)--(j), with part (b) divided into the
+::: pf-qed
+Steps [](#pic-p1-is-z){.pf-ref}, [](#h0-projective-space){.pf-ref}, [](#h0-affine-space){.pf-ref}, [](#h0-toric-variety){.pf-ref}, [](#morphisms-pn-to-am){.pf-ref}, [](#properties-of-morphisms){.pf-ref}, [](#blowup-tautological-bundle){.pf-ref}, [](#canonical-bundle-p1){.pf-ref}, [](#tautological-bundle-def-degree){.pf-ref}, [](#picard-h1-iso){.pf-ref}, [](#weil-not-cartier-example){.pf-ref} and [](#cartier-line-bundle-correspondence){.pf-ref} answer parts (a)--(j), with part (b) divided into the
 projective, affine, and toric cases and part (d) expanded into its six
 requested properties.
 :::
+
+:::
+
 :::

@@ -33,11 +33,15 @@ If the base field is finite, can the second case occur?
 ::: {.solution}
 Let $C$ be a smooth projective geometrically integral curve of genus $0$ over a field $k$.
 
-<1>1. If $C$ has a $k$-rational point $P$, then
+::: pf
+
+::: {.pf-step #rational-point-gives-p1}
+If $C$ has a $k$-rational point $P$, then
 \[
 \boxed{C\cong\mathbb P^1_k.}
 \]
-::: {.proof}
+
+::: pf-proof
 The divisor $P$ has degree $1$.  Since
 \[
 \deg(K_C-P)=-2-1=-3<0,
@@ -67,21 +71,29 @@ Moreover
 whose degree is $1$.  Hence the finite nonconstant map $\phi_{|P|}$ has degree $1$.  A degree-one morphism between smooth projective curves is an isomorphism, proving the claim.
 :::
 
-<1>2. Over an algebraic closure $\bar k$, every genus-zero curve becomes $\mathbb P^1$:
+:::
+
+::: {.pf-step #base-change-p1}
+Over an algebraic closure $\bar k$, every genus-zero curve becomes $\mathbb P^1$:
 \[
 C_{\bar k}\cong\mathbb P^1_{\bar k}.
 \]
-::: {.proof}
-The base-changed curve still has genus $0$, and it has a $\bar k$-rational point because $\bar k$ is algebraically closed.  Apply <1>1 over $\bar k$.
+
+::: pf-proof
+The base-changed curve still has genus $0$, and it has a $\bar k$-rational point because $\bar k$ is algebraically closed.  Apply step [](#rational-point-gives-p1){.pf-ref} over $\bar k$.
 :::
 
-<1>3. The anticanonical line bundle has
+:::
+
+::: {.pf-step #anticanonical-dimension}
+The anticanonical line bundle has
 \[
 \deg\omega_C^{-1}=2,
 \qquad
 h^0(C,\omega_C^{-1})=3.
 \]
-::: {.proof}
+
+::: pf-proof
 For a genus-zero curve,
 \[
 \deg K_C=2g-2=-2,
@@ -99,8 +111,12 @@ Since
 one has $\ell(2K_C)=0$, hence $\ell(-K_C)=3$.
 :::
 
-<1>4. The complete anticanonical system embeds $C$ as a smooth conic in $\mathbb P^2_k$.
-::: {.proof}
+:::
+
+::: {.pf-step #anticanonical-embedding}
+The complete anticanonical system embeds $C$ as a smooth conic in $\mathbb P^2_k$.
+
+::: pf-proof
 The three-dimensional space
 \[
 H^0(C,\omega_C^{-1})
@@ -109,7 +125,7 @@ defines the anticanonical morphism
 \[
 \phi_{|-K_C|}:C\longrightarrow\mathbb P^2_k.
 \]
-After base change to $\bar k$, step <1>2 identifies $C_{\bar k}$ with $\mathbb P^1_{\bar k}$, and
+After base change to $\bar k$, step [](#base-change-p1){.pf-ref} identifies $C_{\bar k}$ with $\mathbb P^1_{\bar k}$, and
 \[
 (\omega_C^{-1})_{\bar k}\cong\mathcal O_{\mathbb P^1}(2).
 \]
@@ -130,7 +146,10 @@ Its image has degree
 Hence the image is a degree-two plane curve, i.e. a conic.  Since it is isomorphic to the smooth curve $C$, it is a smooth conic.
 :::
 
-<1>5. Thus
+:::
+
+::: {.pf-step #genus-zero-classification}
+Thus
 \[
 \boxed{
 \text{every genus-zero curve is a smooth plane conic, and }
@@ -138,17 +157,22 @@ C\cong\mathbb P^1_k
 \iff C(k)\ne\varnothing.
 }
 \]
-::: {.proof}
-Step <1>4 gives the conic model.  Step <1>1 shows that a $k$-point forces $C\cong\mathbb P^1$.  Conversely $\mathbb P^1(k)$ is nonempty, so an isomorphism with $\mathbb P^1$ gives a $k$-point on $C$.
+
+::: pf-proof
+Step [](#anticanonical-embedding){.pf-ref} gives the conic model.  Step [](#rational-point-gives-p1){.pf-ref} shows that a $k$-point forces $C\cong\mathbb P^1$.  Conversely $\mathbb P^1(k)$ is nonempty, so an isomorphism with $\mathbb P^1$ gives a $k$-point on $C$.
 :::
 
-<1>6. If $k$ is finite, the nonsplit conic case cannot occur.
-::: {.proof}
+:::
+
+::: {.pf-step #finite-field-case}
+If $k$ is finite, the nonsplit conic case cannot occur.
+
+::: pf-proof
 Let
 \[
 C=V(Q)\subseteq\mathbb P^2_{\mathbb F_q}
 \]
-be the conic from <1>4, with $Q$ a homogeneous quadratic polynomial in three variables.  By the Chevalley--Warning theorem, because
+be the conic from step [](#anticanonical-embedding){.pf-ref}, with $Q$ a homogeneous quadratic polynomial in three variables.  By the Chevalley--Warning theorem, because
 \[
 \deg Q=2<3,
 \]
@@ -158,14 +182,17 @@ Q(x_0,x_1,x_2)=0
 \]
 in $\mathbb F_q^3$ is divisible by the characteristic $p$ of $\mathbb F_q$.
 
-The zero vector is one solution, so divisibility by $p$ forces at least one further, nonzero solution.  Its projective class is an $\mathbb F_q$-rational point of $C$.  Step <1>5 therefore gives
+The zero vector is one solution, so divisibility by $p$ forces at least one further, nonzero solution.  Its projective class is an $\mathbb F_q$-rational point of $C$.  Step [](#genus-zero-classification){.pf-ref} therefore gives
 \[
 C\cong\mathbb P^1_{\mathbb F_q}.
 \]
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>5 classify genus-zero curves, and step <1>6 answers the finite-field follow-up.
+:::
+
+::: pf-qed
+Steps [](#rational-point-gives-p1){.pf-ref}, [](#base-change-p1){.pf-ref}, [](#anticanonical-dimension){.pf-ref}, [](#anticanonical-embedding){.pf-ref} and [](#genus-zero-classification){.pf-ref} classify genus-zero curves, and step [](#finite-field-case){.pf-ref} answers the finite-field follow-up.
+:::
+
 :::
 :::

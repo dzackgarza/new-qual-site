@@ -32,14 +32,19 @@ Using the parametrization $z=Re^{it}$ for $0\le t\le2\pi$ and the pathwise deter
 :::
 
 ::: {.solution}
-<1>1. If $\alpha:[a,b]\to D$ is piecewise $C^1$, define
+::: pf
+
+::: pf-step
+If $\alpha:[a,b]\to D$ is piecewise $C^1$, define
 \[
 \int_\alpha f(z)\,dz
 :=\int_a^b f(\alpha(t))\alpha'(t)\,dt,
 \]
 where the right-hand side is the usual integral of a complex-valued function of a real variable.
+:::
 
-<1>2. If $|f(\alpha(t))|\le M$ for all $t$, then
+::: {.pf-step #ml-bound}
+If $|f(\alpha(t))|\le M$ for all $t$, then
 \[
 \left|\int_\alpha f(z)\,dz\right|
 \le\int_a^b|f(\alpha(t))|\,|\alpha'(t)|\,dt
@@ -50,8 +55,10 @@ Thus
 \left|\int_\alpha f(z)\,dz\right|
 \le M\,\operatorname{length}(\alpha).
 \]
+:::
 
-<1>3. For part (c), a global continuous branch of $\log z$ does not exist on the circle $C_R$ because it winds once around $0$. Interpret the integral along the standard parametrization
+::: pf-step
+For part (c), a global continuous branch of $\log z$ does not exist on the circle $C_R$ because it winds once around $0$. Interpret the integral along the standard parametrization
 \[
 \alpha(t)=Re^{it},\qquad0\le t\le2\pi,
 \]
@@ -69,10 +76,12 @@ and
 \left|\frac{\log(\alpha(t))}{\alpha(t)^2}\right|
 \le\frac{\log R+2\pi}{R^2}.
 \]
-Since $\operatorname{length}(C_R)=2\pi R$, the estimate from <1>2 gives
+Since $\operatorname{length}(C_R)=2\pi R$, the estimate from step [](#ml-bound){.pf-ref} gives
 \[
 \left|\int_{C_R}\frac{\log z}{z^2}\,dz\right|
 \le\frac{2\pi(\log R+2\pi)}{R}
 \]
 for this specified determination of the logarithm along the path.
+:::
+
 :::

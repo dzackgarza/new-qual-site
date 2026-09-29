@@ -75,7 +75,10 @@ g
 1+\frac{D^2-d}{2}.}
 $$
 
-<1>1. Since $g>0$, the class $D$ is in alternative (c) of V.4.8:
+::: pf
+
+::: {.pf-step #case-c-applies}
+Since $g>0$, the class $D$ is in alternative (c) of V.4.8:
 $$
 \boxed{
 D\cdot L\ge0\text{ for every line }L,
@@ -83,21 +86,24 @@ D\cdot L\ge0\text{ for every line }L,
 D^2>0.}
 $$
 
-::: {.proof}
+::: pf-proof
 By [[P-AGH548IRREDCLASSES]], an irreducible curve on the cubic surface is
 either a line, a square-zero conic, or has the displayed properties. Lines
 and conics are rational, hence have genus zero. Since $g>0$, only case (c)
 can occur.
 :::
 
-<1>2. If a line $E$ satisfies
+:::
+
+::: {.pf-step #contraction-preserves-invariants}
+If a line $E$ satisfies
 $$
 D\cdot E=0,
 $$
 then contracting $E$ preserves the degree, self-intersection, and genus of
 the curve.
 
-::: {.proof}
+::: pf-proof
 Because $C$ and $E$ are distinct irreducible curves with intersection zero,
 they are disjoint. Contract
 $$
@@ -126,7 +132,10 @@ $$
 Thus the anticanonical degree $d$ is unchanged as well.
 :::
 
-<1>3. Repeat step <1>2 while a zero-intersection line exists. The process
+:::
+
+::: {.pf-step #repeat-contraction-until-x2-or-positive}
+Repeat step [](#contraction-preserves-invariants){.pf-ref} while a zero-intersection line exists. The process
 either reaches $X_2$, or stops on some $X_r$ with $r\ge3$ at a class,
 still denoted $D$, satisfying
 $$
@@ -134,7 +143,7 @@ D\cdot E>0
 $$
 for every $(-1)$-curve $E$.
 
-::: {.proof}
+::: pf-proof
 Each contraction lowers the Picard number by one, so after at most four
 contractions either the degree-seven del Pezzo $X_2$ is reached or there is
 no line of intersection zero. The preceding step shows that the numerical
@@ -146,12 +155,15 @@ surface. Hence, if the process stops before $X_2$, all these intersections
 are positive integers.
 :::
 
-<1>4. If the process stops on $X_r$ with $r\ge3$, then
+:::
+
+::: {.pf-step #d-squared-bound-r-geq-3}
+If the process stops on $X_r$ with $r\ge3$, then
 $$
 \boxed{D^2\ge2d-6.}
 $$
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 A=-K_{X_r},
@@ -189,14 +201,17 @@ D^2
 $$
 :::
 
-<1>5. In the situation of step <1>4,
+:::
+
+::: {.pf-step #genus-bound-r-geq-3}
+In the situation of step [](#d-squared-bound-r-geq-3){.pf-ref},
 $$
 g\ge\frac{d-4}{2},
 $$
 which is stronger than either lower bound required in the problem.
 
-::: {.proof}
-Adjunction and step <1>4 give
+::: pf-proof
+Adjunction and step [](#d-squared-bound-r-geq-3){.pf-ref} give
 $$
 g
 =
@@ -210,7 +225,10 @@ For even $d$ this is larger than $(d-6)/2$, and for odd $d$ it is larger
 than $(d-5)/2$.
 :::
 
-<1>6. It remains only to analyze the case in which the contraction process
+:::
+
+::: {.pf-step #x2-degree-and-square-formulas}
+It remains only to analyze the case in which the contraction process
 reaches
 $$
 X_2=\operatorname{Bl}_{P_1,P_2}\PP^2.
@@ -243,7 +261,7 @@ d=3c+2s,
 D^2=c^2+2cs+2p.}
 $$
 
-::: {.proof}
+::: pf-proof
 The anticanonical class of $X_2$ is
 $$
 A_2=3h-e_1-e_2.
@@ -277,7 +295,10 @@ c^2+2cs+2p.
 $$
 :::
 
-<1>7. In the notation of step <1>6, the genus is
+:::
+
+::: {.pf-step #x2-genus-formula}
+In the notation of step [](#x2-degree-and-square-formulas){.pf-ref}, the genus is
 $$
 \boxed{
 g
@@ -285,8 +306,8 @@ g
 1+\frac{c(c-3)}2+(c-1)s+p.}
 $$
 
-::: {.proof}
-Substitute the formulas of step <1>6 into adjunction:
+::: pf-proof
+Substitute the formulas of step [](#x2-degree-and-square-formulas){.pf-ref} into adjunction:
 $$
 \begin{aligned}
 g
@@ -298,9 +319,12 @@ g
 $$
 :::
 
-<1>8. Suppose $d$ is even. Then $c$ is even.
+:::
 
-::: {.proof}
+::: {.pf-step #even-d-even-c}
+Suppose $d$ is even. Then $c$ is even.
+
+::: pf-proof
 The formula
 $$
 d=3c+2s
@@ -312,7 +336,10 @@ $$
 Thus even $d$ forces even $c$.
 :::
 
-<1>9. If $d$ is even and $c=0$, then
+:::
+
+::: {.pf-step #even-c-zero-genus-formula}
+If $d$ is even and $c=0$, then
 $$
 \boxed{
 g=(b_1-1)(b_2-1).}
@@ -322,8 +349,8 @@ $$
 b_1,b_2\ge2.
 $$
 
-::: {.proof}
-For $c=0$, step <1>7 gives
+::: pf-proof
+For $c=0$, step [](#x2-genus-formula){.pf-ref} gives
 $$
 g=1-s+p
 =
@@ -340,17 +367,20 @@ so $b_1,b_2>0$. If either were $1$, the displayed genus would be zero.
 Thus positive genus forces both to be at least $2$.
 :::
 
-<1>10. If $d$ is even, $c=0$, and $g>0$, then
+:::
+
+::: {.pf-step #even-c-zero-bound}
+If $d$ is even, $c=0$, and $g>0$, then
 $$
 \boxed{g\ge\frac{d-6}{2}.}
 $$
 
-::: {.proof}
+::: pf-proof
 Here
 $$
 d=2(b_1+b_2)=2s.
 $$
-By step <1>9, put
+By step [](#even-c-zero-genus-formula){.pf-ref}, put
 $$
 x=b_1-1\ge1,
 \qquad
@@ -376,12 +406,15 @@ g\ge x+y-1=s-3
 $$
 :::
 
-<1>11. If $d$ is even and $c\ge2$, then again
+:::
+
+::: {.pf-step #even-c-geq-two-bound}
+If $d$ is even and $c\ge2$, then again
 $$
 \boxed{g\ge\frac{d-6}{2}.}
 $$
 
-::: {.proof}
+::: pf-proof
 Subtract the desired lower bound from the genus formula. Using
 $$
 d=3c+2s,
@@ -412,7 +445,10 @@ If $c\ge6$, every displayed term is nonnegative and the constant term is
 positive. Thus the difference is always nonnegative.
 :::
 
-<1>12. Therefore, for every even
+:::
+
+::: {.pf-step #even-d-bound-established}
+Therefore, for every even
 $$
 d\ge8,
 $$
@@ -421,23 +457,29 @@ $$
 \boxed{g\ge\frac{d-6}{2}.}
 $$
 
-::: {.proof}
-If the contraction process stops before $X_2$, step <1>5 is stronger. If it
-reaches $X_2$, steps <1>8--<1>11 prove the displayed inequality. This covers
+::: pf-proof
+If the contraction process stops before $X_2$, step [](#genus-bound-r-geq-3){.pf-ref} is stronger. If it
+reaches $X_2$, steps [](#even-d-even-c){.pf-ref}, [](#even-c-zero-genus-formula){.pf-ref}, [](#even-c-zero-bound){.pf-ref} and [](#even-c-geq-two-bound){.pf-ref} prove the displayed inequality. This covers
 every possibility.
 :::
 
-<1>13. Suppose $d$ is odd. Then $c$ is odd.
+:::
 
-::: {.proof}
+::: {.pf-step #odd-d-odd-c}
+Suppose $d$ is odd. Then $c$ is odd.
+
+::: pf-proof
 Again
 $$
 d\equiv c\pmod2
 $$
-by step <1>6, so odd $d$ forces odd $c$.
+by step [](#x2-degree-and-square-formulas){.pf-ref}, so odd $d$ forces odd $c$.
 :::
 
-<1>14. If $d$ is odd and $c=1$, then
+:::
+
+::: {.pf-step #odd-c-one-bound}
+If $d$ is odd and $c=1$, then
 $$
 g=p=b_1b_2.
 $$
@@ -446,8 +488,8 @@ $$
 \boxed{g\ge\frac{d-5}{2}.}
 $$
 
-::: {.proof}
-For $c=1$, step <1>7 gives
+::: pf-proof
+For $c=1$, step [](#x2-genus-formula){.pf-ref} gives
 $$
 g=p.
 $$
@@ -469,7 +511,10 @@ s-1=\frac{d-5}{2}.
 $$
 :::
 
-<1>15. If $d$ is odd and $c\ge3$, then
+:::
+
+::: {.pf-step #odd-c-geq-three-difference}
+If $d$ is odd and $c\ge3$, then
 $$
 g-\frac{d-5}{2}
 =
@@ -481,8 +526,8 @@ g-\frac{d-5}{2}
 p.
 $$
 
-::: {.proof}
-This is a direct subtraction using the formulas of steps <1>6--<1>7:
+::: pf-proof
+This is a direct subtraction using the formulas of steps [](#x2-degree-and-square-formulas){.pf-ref} and [](#x2-genus-formula){.pf-ref}:
 $$
 \frac{d-5}{2}
 =
@@ -495,7 +540,10 @@ $$
 gives the displayed expression.
 :::
 
-<1>16. If $d$ is odd,
+:::
+
+::: {.pf-step #odd-c-geq-three-bound}
+If $d$ is odd,
 $$
 d\ge13,
 $$
@@ -504,8 +552,8 @@ $$
 \boxed{g\ge\frac{d-5}{2}.}
 $$
 
-::: {.proof}
-If $c=3$, then step <1>15 becomes
+::: pf-proof
+If $c=3$, then step [](#odd-c-geq-three-difference){.pf-ref} becomes
 $$
 g-\frac{d-5}{2}
 =
@@ -532,7 +580,10 @@ $$
 so the difference is again positive.
 :::
 
-<1>17. Therefore, for every odd
+:::
+
+::: {.pf-step #odd-d-bound-established}
+Therefore, for every odd
 $$
 d\ge13,
 $$
@@ -541,15 +592,18 @@ $$
 \boxed{g\ge\frac{d-5}{2}.}
 $$
 
-::: {.proof}
+::: pf-proof
 The case in which the contraction process stops before $X_2$ is covered by
-the stronger bound in step <1>5. On $X_2$, step <1>14 treats $c=1$ and step
-<1>16 treats every odd $c\ge3$.
-:::
+the stronger bound in step [](#genus-bound-r-geq-3){.pf-ref}. On $X_2$, step [](#odd-c-one-bound){.pf-ref} treats $c=1$ and step
+[](#odd-c-geq-three-bound){.pf-ref} treats every odd $c\ge3$.
 
 We now construct curves attaining equality.
+:::
 
-<1>18. Contract the four pairwise disjoint exceptional lines
+:::
+
+::: {.pf-step #contraction-pullback-preserves-invariants}
+Contract the four pairwise disjoint exceptional lines
 $$
 E_3,E_4,E_5,E_6\subseteq S.
 $$
@@ -563,7 +617,7 @@ If a divisor $M$ on $X_2$ has a nonsingular irreducible member avoiding the
 four contraction points, its pullback is a nonsingular irreducible curve on
 $S$ with the same degree and genus.
 
-::: {.proof}
+::: pf-proof
 The four exceptional curves are disjoint $(-1)$-curves, so they can be
 contracted successively. If a curve $C_2\in|M|$ avoids the four image points,
 its inverse image is its strict transform and is isomorphic to $C_2$.
@@ -582,7 +636,10 @@ $$
 Hence adjunction gives the same genus on both surfaces.
 :::
 
-<1>19. Let $d=2s$ be even with $d\ge8$, so $s\ge4$. On $X_2$ set
+:::
+
+::: {.pf-step #even-equality-class}
+Let $d=2s$ be even with $d\ge8$, so $s\ge4$. On $X_2$ set
 $$
 \boxed{
 M_{\mathrm{ev}}
@@ -598,8 +655,8 @@ $$
 g(M_{\mathrm{ev}})=\frac{d-6}{2}.
 $$
 
-::: {.proof}
-This is the notation of step <1>6 with
+::: pf-proof
+This is the notation of step [](#x2-degree-and-square-formulas){.pf-ref} with
 $$
 c=0,
 \qquad
@@ -611,7 +668,7 @@ Thus
 $$
 d=2(2+s-2)=2s
 $$
-and, by step <1>9,
+and, by step [](#even-c-zero-genus-formula){.pf-ref},
 $$
 g
 =(2-1)((s-2)-1)
@@ -626,11 +683,14 @@ M_{\mathrm{ev}}^2=4(s-2)>0.
 $$
 :::
 
-<1>20. A general member of $|M_{\mathrm{ev}}|$ is nonsingular and
-irreducible and can be chosen to avoid the four contraction points of
-step <1>18. Its pullback to $S$ attains the even minimum.
+:::
 
-::: {.proof}
+::: {.pf-step #even-equality-realized}
+A general member of $|M_{\mathrm{ev}}|$ is nonsingular and
+irreducible and can be chosen to avoid the four contraction points of
+step [](#contraction-pullback-preserves-invariants){.pf-ref}. Its pullback to $S$ attains the even minimum.
+
+::: pf-proof
 The class $M_{\mathrm{ev}}$ is nonnegative on the three $(-1)$-curves of
 $X_2$ and has positive square. By the lemma of V.4.8, a general member is
 nonsingular and irreducible. The same lemma makes the system globally
@@ -638,14 +698,17 @@ generated, so requiring a member to pass through any one prescribed point is
 a proper hyperplane condition. Hence a general smooth member avoids the four
 contraction points.
 
-Step <1>18 then pulls it back to a nonsingular irreducible curve on the cubic
+Step [](#contraction-pullback-preserves-invariants){.pf-ref} then pulls it back to a nonsingular irreducible curve on the cubic
 surface of degree $d$ and genus
 $$
 \frac{d-6}{2}.
 $$
 :::
 
-<1>21. Let $d=2s+3$ be odd with $d\ge13$, so $s\ge5$. On $X_2$ set
+:::
+
+::: {.pf-step #odd-equality-class}
+Let $d=2s+3$ be odd with $d\ge13$, so $s\ge5$. On $X_2$ set
 $$
 \boxed{
 M_{\mathrm{odd}}
@@ -663,7 +726,7 @@ $$
 g(M_{\mathrm{odd}})=\frac{d-5}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Here
 $$
 c=1,
@@ -672,11 +735,11 @@ b_1=1,
 \qquad
 b_2=s-1.
 $$
-Step <1>6 gives
+Step [](#x2-degree-and-square-formulas){.pf-ref} gives
 $$
 d=3+2(1+s-1)=2s+3.
 $$
-Step <1>14 gives
+Step [](#odd-c-one-bound){.pf-ref} gives
 $$
 g=b_1b_2=s-1
 =
@@ -694,11 +757,14 @@ M_{\mathrm{odd}}^2
 $$
 :::
 
-<1>22. A general member of $|M_{\mathrm{odd}}|$ is nonsingular and
+:::
+
+::: {.pf-step #odd-equality-realized}
+A general member of $|M_{\mathrm{odd}}|$ is nonsingular and
 irreducible and can be chosen away from the four contraction points. Its
 pullback to $S$ attains the odd minimum.
 
-::: {.proof}
+::: pf-proof
 Again the coefficients
 $$
 c=1,
@@ -708,17 +774,19 @@ b_1=1,
 b_2=s-1
 $$
 are nonnegative, so the class is nonnegative on every $(-1)$-curve of
-$X_2$. Its square is positive by step <1>21. V.4.8 therefore gives a general
+$X_2$. Its square is positive by step [](#odd-equality-class){.pf-ref}. V.4.8 therefore gives a general
 nonsingular irreducible member and global generation. Choose such a member
 outside the four hyperplanes corresponding to the contraction points, and
-apply step <1>18.
+apply step [](#contraction-pullback-preserves-invariants){.pf-ref}.
 :::
 
-<1>23. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>17 prove the lower bounds. Steps <1>18--<1>20 construct an
-equality curve for every even $d\ge8$, and steps <1>21--<1>22 construct one
+::: pf-qed
+Steps [](#case-c-applies){.pf-ref}, [](#contraction-preserves-invariants){.pf-ref}, [](#repeat-contraction-until-x2-or-positive){.pf-ref}, [](#d-squared-bound-r-geq-3){.pf-ref}, [](#genus-bound-r-geq-3){.pf-ref}, [](#x2-degree-and-square-formulas){.pf-ref}, [](#x2-genus-formula){.pf-ref}, [](#even-d-even-c){.pf-ref}, [](#even-c-zero-genus-formula){.pf-ref}, [](#even-c-zero-bound){.pf-ref}, [](#even-c-geq-two-bound){.pf-ref}, [](#even-d-bound-established){.pf-ref}, [](#odd-d-odd-c){.pf-ref}, [](#odd-c-one-bound){.pf-ref}, [](#odd-c-geq-three-difference){.pf-ref}, [](#odd-c-geq-three-bound){.pf-ref} and [](#odd-d-bound-established){.pf-ref} prove the lower bounds. Steps [](#contraction-pullback-preserves-invariants){.pf-ref}, [](#even-equality-class){.pf-ref} and [](#even-equality-realized){.pf-ref} construct an
+equality curve for every even $d\ge8$, and steps [](#odd-equality-class){.pf-ref} and [](#odd-equality-realized){.pf-ref} construct one
 for every odd $d\ge13$.
+:::
+
 :::
 :::

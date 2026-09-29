@@ -54,7 +54,10 @@ $$
 A=2\pi^*D-E.
 $$
 
-<1>1. If $C\subseteq X$ is an irreducible curve and
+::: pf
+
+::: {.pf-step #multiplicity-degree-bound}
+If $C\subseteq X$ is an irreducible curve and
 $$
 r=\mu_P(C),
 $$
@@ -63,7 +66,7 @@ $$
 \boxed{r\le D\cdot C.}
 $$
 
-::: {.proof}
+::: pf-proof
 Because $D$ is very ample, its complete linear system embeds
 $$
 \iota_D:X\hookrightarrow\PP^N
@@ -92,12 +95,15 @@ This is the required projective-space generalization of the multiplicity
 bound in [[P-AGH75MULTBOUND]].
 :::
 
-<1>2. The divisor $A$ has positive intersection with the exceptional curve:
+:::
+
+::: {.pf-step #ample-meets-exceptional}
+The divisor $A$ has positive intersection with the exceptional curve:
 $$
 \boxed{A\cdot E=1.}
 $$
 
-::: {.proof}
+::: pf-proof
 The blowup intersection formulas [[FE-SRFBLOW]] give
 $$
 \pi^*D\cdot E=0,
@@ -113,14 +119,17 @@ A\cdot E
 $$
 :::
 
-<1>3. Let $\Gamma\subseteq\widetilde X$ be an irreducible curve with
+:::
+
+::: {.pf-step #curve-is-strict-transform}
+Let $\Gamma\subseteq\widetilde X$ be an irreducible curve with
 $$
 \Gamma\ne E.
 $$
 Then $\Gamma$ is the strict transform of an irreducible curve
 $C\subseteq X$.
 
-::: {.proof}
+::: pf-proof
 The blowup map
 $$
 \pi:\widetilde X\longrightarrow X
@@ -131,12 +140,15 @@ and $\Gamma$ is the closure of the inverse image of
 $C\setminus\{P\}$. This is exactly the strict transform of $C$.
 :::
 
-<1>4. For every irreducible curve $\Gamma\ne E$ on $\widetilde X$,
+:::
+
+::: {.pf-step #positive-on-other-curves}
+For every irreducible curve $\Gamma\ne E$ on $\widetilde X$,
 $$
 \boxed{A\cdot\Gamma>0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Let $C=\pi(\Gamma)$ and put
 $$
 r=\mu_P(C),
@@ -153,7 +165,7 @@ A\cdot\Gamma
 &=2D\cdot C-r.
 \end{aligned}
 $$
-By step <1>1,
+By step [](#multiplicity-degree-bound){.pf-ref},
 $$
 r\le D\cdot C,
 $$
@@ -171,12 +183,15 @@ $$
 and consequently $A\cdot\Gamma>0$.
 :::
 
-<1>5. The self-intersection of $A$ is positive:
+:::
+
+::: {.pf-step #positive-self-intersection}
+The self-intersection of $A$ is positive:
 $$
 \boxed{A^2=4D^2-1>0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Again using
 $$
 \pi^*D\cdot E=0,
@@ -203,16 +218,19 @@ $$
 $$
 :::
 
-<1>6. The divisor
+:::
+
+::: {.pf-step #nakai-moishezon-ample}
+The divisor
 $$
 \boxed{2\pi^*D-E}
 $$
 is ample on $\widetilde X$.
 
-::: {.proof}
-Step <1>2 gives positive intersection with the exceptional curve. Step
-<1>4 gives positive intersection with every other irreducible curve on
-$\widetilde X$, and step <1>5 gives positive self-intersection. Therefore
+::: pf-proof
+Step [](#ample-meets-exceptional){.pf-ref} gives positive intersection with the exceptional curve. Step
+[](#positive-on-other-curves){.pf-ref} gives positive intersection with every other irreducible curve on
+$\widetilde X$, and step [](#positive-self-intersection){.pf-ref} gives positive self-intersection. Therefore
 the Nakai--Moishezon criterion [[T-SRFNAKAI]] applies and shows that
 $$
 2\pi^*D-E
@@ -220,10 +238,12 @@ $$
 is ample.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>5 verify the numerical hypotheses of Nakai--Moishezon, and
-step <1>6 gives the required ampleness.
+::: pf-qed
+Steps [](#multiplicity-degree-bound){.pf-ref}, [](#ample-meets-exceptional){.pf-ref}, [](#curve-is-strict-transform){.pf-ref}, [](#positive-on-other-curves){.pf-ref} and [](#positive-self-intersection){.pf-ref} verify the numerical hypotheses of Nakai--Moishezon, and
+step [](#nakai-moishezon-ample){.pf-ref} gives the required ampleness.
+:::
+
 :::
 :::

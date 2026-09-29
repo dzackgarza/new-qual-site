@@ -27,42 +27,84 @@ Show that $f(z) = e^{i \theta} g(z)$ in $\Omega$ for some $0 \leq \theta < 2 \pi
 ::: {.solution}
 **Goal:** Prove that if $f, g$ are nonzero analytic functions on a region $\Omega$ with $\abs{f(z)} = \abs{g(z)}$ for all $z \in \Omega$, then $f(z) = e^{i\theta} g(z)$ for some $0 \leq \theta < 2\pi$.
 
-<1>1. Define $h := f / g$; then $h$ is analytic and never vanishes on $\Omega$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #define-h}
+Define $h := f / g$; then $h$ is analytic and never vanishes on $\Omega$.
+
+::: pf-proof
 $g \neq 0$ on $\Omega$ by hypothesis, and quotients of analytic functions are analytic.
 :::
 
-<1>2. $\abs{h(z)} = 1$ for all $z \in \Omega$.
-::: {.proof}
+:::
+
+::: {.pf-step #h-modulus-one}
+$\abs{h(z)} = 1$ for all $z \in \Omega$.
+
+::: pf-proof
 $\abs h = \abs f / \abs g = 1$ by hypothesis.
 :::
 
-<1>3. $h$ is constant.
-<2>1. $h(\Omega)$ is contained in the unit circle $S^1$.
-::: {.proof}
-<1>2. <2>2. $h(\Omega)$ is open in $\CC$ if $h$ is nonconstant.
 :::
-::: {.proof}
+
+::: {.pf-step #h-constant}
+$h$ is constant.
+
+::: pf-proof
+
+::: {.pf-step #h-image-in-circle}
+$h(\Omega)$ is contained in the unit circle $S^1$.
+
+::: pf-proof
+Step [](#h-modulus-one){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #image-open-if-nonconstant}
+$h(\Omega)$ is open in $\CC$ if $h$ is nonconstant.
+
+::: pf-proof
 Open mapping theorem: a nonconstant holomorphic map on a region is open.
 :::
-<2>3. $S^1$ has empty interior in $\CC$.
-::: {.proof}
+
+:::
+
+::: {.pf-step #circle-empty-interior}
+$S^1$ has empty interior in $\CC$.
+
+::: pf-proof
 The unit circle contains no open disk.
 :::
-<2>4. Hence $h$ is constant.
-::: {.proof}
-<2>1--<2>3: a nonconstant $h$ would map $\Omega$ onto an open set inside $S^1$, impossible.
+
 :::
 
-<1>4. $h \equiv e^{i\theta}$ for some $0 \leq \theta < 2\pi$.
-::: {.proof}
-<1>3 and $\abs h \equiv 1$ (<1>2): the constant value lies on the unit circle.
+::: pf-step
+Hence $h$ is constant.
+
+::: pf-proof
+Steps [](#h-image-in-circle){.pf-ref}, [](#image-open-if-nonconstant){.pf-ref} and [](#circle-empty-interior){.pf-ref}: a nonconstant $h$ would map $\Omega$ onto an open set inside $S^1$, impossible.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>1 and <1>4 give $f = hg = e^{i\theta} g$ on $\Omega$.
 :::
+
+:::
+
+:::
+
+::: {.pf-step #h-equals-unimodular}
+$h \equiv e^{i\theta}$ for some $0 \leq \theta < 2\pi$.
+
+::: pf-proof
+Step [](#h-constant){.pf-ref} and $\abs h \equiv 1$ (step [](#h-modulus-one){.pf-ref}): the constant value lies on the unit circle.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#define-h){.pf-ref} and [](#h-equals-unimodular){.pf-ref} give $f = hg = e^{i\theta} g$ on $\Omega$.
+:::
+
 :::
 
 ::: {.solution}

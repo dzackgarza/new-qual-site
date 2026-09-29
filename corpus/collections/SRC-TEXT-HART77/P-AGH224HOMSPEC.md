@@ -41,7 +41,10 @@ We use the affine case: for rings $A,B$ there is a natural bijection
 \operatorname{Hom}_{\mathrm{Ring}}(A,B).
 \]
 
-<1>1. Let
+::: pf
+
+::: pf-step
+Let
 \[
 \varphi:A\longrightarrow\Gamma(X,\mathcal O_X)
 \]
@@ -60,7 +63,8 @@ A\xrightarrow{\varphi}
 \Gamma(U_i,\mathcal O_X)
 =B_i.
 \]
-::: {.proof}
+
+::: pf-proof
 The equality
 \[
 \Gamma(U_i,\mathcal O_X)=B_i
@@ -68,22 +72,30 @@ The equality
 is the defining global-section property of the affine chart $U_i\cong\operatorname{Spec}B_i$.  Composition with restriction therefore gives the displayed maps.
 :::
 
-<1>2. Each $\varphi_i$ determines a unique morphism of affine schemes
+:::
+
+::: pf-step
+Each $\varphi_i$ determines a unique morphism of affine schemes
 \[
 f_i:U_i\longrightarrow\operatorname{Spec}A.
 \]
-::: {.proof}
+
+::: pf-proof
 Apply the affine anti-equivalence to the ring map
 \[
 \varphi_i:A\to B_i.
 \]
 :::
 
-<1>3. For every pair $i,j$, the morphisms $f_i$ and $f_j$ agree on the overlap
+:::
+
+::: {.pf-step #fi-agree-on-overlaps}
+For every pair $i,j$, the morphisms $f_i$ and $f_j$ agree on the overlap
 \[
 U_i\cap U_j.
 \]
-::: {.proof}
+
+::: pf-proof
 Cover the open subscheme
 \[
 U_i\cap U_j
@@ -119,14 +131,18 @@ f_i|_{U_i\cap U_j}=f_j|_{U_i\cap U_j}.
 \]
 :::
 
-<1>4. The local morphisms $f_i$ glue uniquely to a morphism
+:::
+
+::: pf-step
+The local morphisms $f_i$ glue uniquely to a morphism
 \[
 \boxed{
 f_\varphi:X\longrightarrow\operatorname{Spec}A.
 }
 \]
-::: {.proof}
-By <1>3 the morphisms $f_i$ agree on every pairwise overlap.  Morphisms of locally ringed spaces glue over an open cover of the source: the underlying continuous maps glue because they agree on overlaps, and for every open subset $W$ of the target the maps
+
+::: pf-proof
+By step [](#fi-agree-on-overlaps){.pf-ref} the morphisms $f_i$ agree on every pairwise overlap.  Morphisms of locally ringed spaces glue over an open cover of the source: the underlying continuous maps glue because they agree on overlaps, and for every open subset $W$ of the target the maps
 \[
 \mathcal O_{\operatorname{Spec}A}(W)
 \longrightarrow
@@ -141,8 +157,12 @@ The induced stalk maps are local because this can be checked on the open cover $
 Hence the $f_i$ glue to a scheme morphism $f_\varphi$.  Uniqueness follows because two morphisms agreeing on every $U_i$ agree globally.
 :::
 
-<1>5. The homomorphism on global sections induced by $f_\varphi$ is exactly the original map $\varphi$.
-::: {.proof}
+:::
+
+::: {.pf-step #alpha-surjective}
+The homomorphism on global sections induced by $f_\varphi$ is exactly the original map $\varphi$.
+
+::: pf-proof
 Let
 \[
 \alpha(f_\varphi):A\to\Gamma(X,\mathcal O_X)
@@ -171,8 +191,12 @@ have equal restrictions to every member of the open cover $\{U_i\}$.  Since $\ma
 Hence $\alpha$ is surjective.
 :::
 
-<1>6. The map $\alpha$ is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #alpha-injective}
+The map $\alpha$ is injective.
+
+::: pf-proof
 Suppose
 \[
 f,g:X\longrightarrow\operatorname{Spec}A
@@ -213,7 +237,10 @@ f=g.
 Thus $\alpha$ is injective.
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #alpha-bijective}
+Therefore
 \[
 \boxed{
 \operatorname{Hom}_{\mathrm{Sch}}(X,\operatorname{Spec}A)
@@ -222,12 +249,17 @@ Thus $\alpha$ is injective.
 \bigl(A,\Gamma(X,\mathcal O_X)\bigr).
 }
 \]
-::: {.proof}
-Step <1>5 proves surjectivity and <1>6 proves injectivity.  The constructions use only restriction and the affine anti-equivalence, so the bijection is natural in both $X$ and $A$.
+
+::: pf-proof
+Step [](#alpha-surjective){.pf-ref} proves surjectivity and step [](#alpha-injective){.pf-ref} proves injectivity.  The constructions use only restriction and the affine anti-equivalence, so the bijection is natural in both $X$ and $A$.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Step <1>7 is exactly the bijectivity of $\alpha$ required by the exercise.
 :::
+
+::: pf-qed
+Step [](#alpha-bijective){.pf-ref} is exactly the bijectivity of $\alpha$ required by the exercise.
+:::
+
+:::
+
 :::

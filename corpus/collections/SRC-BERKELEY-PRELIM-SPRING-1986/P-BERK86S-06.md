@@ -51,14 +51,17 @@ Let $N_A,N_B$ denote their null spaces.
 :::
 
 ::: {.solution}
-<1>1. One has
+::: pf
+
+::: {.pf-step #inclusions}
+One has
 $$
 A(N_B)\subseteq N_A
 \qquad\text{and}\qquad
 B(N_A)\subseteq N_B.
 $$
 
-::: {.proof}
+::: pf-proof
 If $x\in N_B$, then
 $$
 A(Ax)=A^2x=0,
@@ -71,7 +74,10 @@ $$
 so $By\in N_B$.
 :::
 
-<1>2. In fact,
+:::
+
+::: {.pf-step #equalities-boxed}
+In fact,
 $$
 \boxed{
 N_A=A(N_B),
@@ -80,7 +86,7 @@ N_B=B(N_A)
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $x\in N_A$. Then $Ax=0$, so
 $$
 x
@@ -92,7 +98,7 @@ Moreover $Bx\in N_B$ because $B^2x=0$. Hence
 $$
 x=A(Bx)\in A(N_B).
 $$
-Together with step <1>1 this gives $N_A=A(N_B)$.
+Together with step [](#inclusions){.pf-ref} this gives $N_A=A(N_B)$.
 
 Interchanging $A$ and $B$ gives the second equality: if $y\in N_B$, then
 $$
@@ -106,12 +112,15 @@ $$
 and $Ay\in N_A$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #direct-sum-boxed}
+One has
 $$
 \boxed{V=N_A\oplus N_B}.
 $$
 
-::: {.proof}
+::: pf-proof
 For every $v\in V$,
 $$
 v
@@ -119,7 +128,7 @@ v
 =
 A(Bv)+B(Av).
 $$
-Since $Bv\in N_B$ and $Av\in N_A$, step <1>1 gives
+Since $Bv\in N_B$ and $Av\in N_A$, step [](#inclusions){.pf-ref} gives
 $$
 A(Bv)\in N_A,
 \qquad
@@ -136,7 +145,10 @@ $$
 Therefore $N_A\cap N_B=\{0\}$, and the sum is direct.
 :::
 
-<1>4. The restrictions
+:::
+
+::: {.pf-step #restrictions-inverse}
+The restrictions
 $$
 A|_{N_B}:N_B\to N_A
 \qquad\text{and}\qquad
@@ -144,8 +156,8 @@ B|_{N_A}:N_A\to N_B
 $$
 are inverse isomorphisms.
 
-::: {.proof}
-By step <1>1 the restrictions have the displayed codomains. If
+::: pf-proof
+By step [](#inclusions){.pf-ref} the restrictions have the displayed codomains. If
 $x\in N_A$, then
 $$
 A(Bx)
@@ -167,14 +179,17 @@ $$
 because $By=0$. Hence the two restrictions are inverse linear maps.
 :::
 
-<1>5. The dimension of $V$ is even.
+:::
 
-::: {.proof}
-By step <1>4,
+::: {.pf-step #dim-even-boxed}
+The dimension of $V$ is even.
+
+::: pf-proof
+By step [](#restrictions-inverse){.pf-ref},
 $$
 \dim N_A=\dim N_B.
 $$
-Using the direct sum from step <1>3,
+Using the direct sum from step [](#direct-sum-boxed){.pf-ref},
 $$
 \dim V
 =
@@ -188,7 +203,10 @@ $$
 $$
 :::
 
-<1>6. If $\dim V=2$, there is a basis in which
+:::
+
+::: {.pf-step #basis-boxed}
+If $\dim V=2$, there is a basis in which
 $$
 \boxed{
 A=
@@ -205,12 +223,12 @@ B=
 }.
 $$
 
-::: {.proof}
-By steps <1>3--<1>5,
+::: pf-proof
+By steps [](#direct-sum-boxed){.pf-ref}, [](#restrictions-inverse){.pf-ref}, and [](#dim-even-boxed){.pf-ref},
 $$
 \dim N_A=\dim N_B=1.
 $$
-Choose a nonzero vector $v\in N_B$. Step <1>4 implies that
+Choose a nonzero vector $v\in N_B$. Step [](#restrictions-inverse){.pf-ref} implies that
 $$
 Av\neq0,
 $$
@@ -247,10 +265,12 @@ because $Bv=0$. These four formulas give exactly the displayed matrices
 in the ordered basis $(e_1,e_2)$.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 prove part 1, step <1>5 proves part 2, and step
-<1>6 proves part 3.
+::: pf-qed
+Steps [](#equalities-boxed){.pf-ref} and [](#direct-sum-boxed){.pf-ref} prove part 1, step [](#dim-even-boxed){.pf-ref} proves part 2, and step
+[](#basis-boxed){.pf-ref} proves part 3.
+:::
+
 :::
 :::

@@ -38,7 +38,10 @@ e^{-1/x^2},&x\neq0,\\
 \end{cases}
 $$
 
-<1>1. For every polynomial $P\in\RR[t]$,
+::: pf
+
+::: {.pf-step #polynomial-times-exp-limit}
+For every polynomial $P\in\RR[t]$,
 $$
 \lim_{x\to0}
 P(1/x)e^{-1/x^2}
@@ -46,7 +49,7 @@ P(1/x)e^{-1/x^2}
 0.
 $$
 
-::: {.proof}
+::: pf-proof
 It is enough to prove the assertion for a monomial $P(t)=t^d$. Put
 $$
 u\coloneqq\frac1{x^2}.
@@ -75,7 +78,10 @@ $$
 A finite linear combination of such monomials has the same limit.
 :::
 
-<1>2. For every $n\geq0$, there is a polynomial $P_n\in\RR[t]$ such that
+:::
+
+::: {.pf-step #derivative-formula}
+For every $n\geq0$, there is a polynomial $P_n\in\RR[t]$ such that
 for $x\neq0$,
 $$
 f^{(n)}(x)
@@ -83,7 +89,7 @@ f^{(n)}(x)
 P_n(1/x)e^{-1/x^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $n=0$, take
 $$
 P_0(t)=1.
@@ -121,14 +127,17 @@ $$
 which is again a polynomial.
 :::
 
-<1>3. For every $n\geq0$,
+:::
+
+::: {.pf-step #derivatives-vanish-continuous}
+For every $n\geq0$,
 $$
 f^{(n)}(0)=0,
 $$
 and $f^{(n)}$ is continuous at $0$.
 
-::: {.proof}
-Proceed by induction on $n$. For $n=0$, step <1>1 with $P=1$ gives
+::: pf-proof
+Proceed by induction on $n$. For $n=0$, step [](#polynomial-times-exp-limit){.pf-ref} with $P=1$ gives
 $$
 \lim_{x\to0}f(x)=0=f(0),
 $$
@@ -138,7 +147,7 @@ Assume $f^{(n)}$ exists everywhere, satisfies
 $$
 f^{(n)}(0)=0,
 $$
-and has the form from step <1>2 away from $0$. Then
+and has the form from step [](#derivative-formula){.pf-ref} away from $0$. Then
 $$
 \begin{aligned}
 f^{(n+1)}(0)
@@ -153,23 +162,26 @@ f^{(n+1)}(0)
 \end{aligned}
 $$
 The expression in parentheses is again a polynomial in $1/x$, so step
-<1>1 shows that this limit is $0$. Thus $f^{(n+1)}(0)$ exists and equals
+[](#polynomial-times-exp-limit){.pf-ref} shows that this limit is $0$. Thus $f^{(n+1)}(0)$ exists and equals
 $0$.
 
-For $x\neq0$, step <1>2 gives
+For $x\neq0$, step [](#derivative-formula){.pf-ref} gives
 $$
 f^{(n+1)}(x)
 =
 P_{n+1}(1/x)e^{-1/x^2},
 $$
-which tends to $0$ as $x\to0$ by step <1>1. Hence $f^{(n+1)}$ is
+which tends to $0$ as $x\to0$ by step [](#polynomial-times-exp-limit){.pf-ref}. Hence $f^{(n+1)}$ is
 continuous at $0$.
 :::
 
-<1>4. The function $f$ is infinitely differentiable on $\RR$.
+:::
 
-::: {.proof}
-Away from $0$, the function $e^{-1/x^2}$ is smooth. Step <1>3 proves
+::: {.pf-step #f-smooth}
+The function $f$ is infinitely differentiable on $\RR$.
+
+::: pf-proof
+Away from $0$, the function $e^{-1/x^2}$ is smooth. Step [](#derivatives-vanish-continuous){.pf-ref} proves
 inductively that every derivative extends across $0$ and is continuous
 there. Hence
 $$
@@ -177,13 +189,16 @@ f\in C^\infty(\RR).
 $$
 :::
 
-<1>5. The Taylor series of $f$ at $0$ is
+:::
+
+::: {.pf-step #taylor-series-zero}
+The Taylor series of $f$ at $0$ is
 $$
 \boxed{0}.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+By step [](#derivatives-vanish-continuous){.pf-ref},
 $$
 f^{(n)}(0)=0
 $$
@@ -196,10 +211,13 @@ $$
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves infinite differentiability, and step <1>5 gives the Taylor
+::: pf-qed
+Step [](#f-smooth){.pf-ref} proves infinite differentiability, and step [](#taylor-series-zero){.pf-ref} gives the Taylor
 series.
 :::
+
+:::
+
 :::

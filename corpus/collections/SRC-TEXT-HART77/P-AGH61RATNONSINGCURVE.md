@@ -39,9 +39,12 @@ $$
 K\cong k(t)=K(\PP^1).
 $$
 
-<1>1. The curve $Y$ is isomorphic to an open subset of the unique nonsingular projective curve with function field $K$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #y-open-in-projective-model}
+The curve $Y$ is isomorphic to an open subset of the unique nonsingular projective curve with function field $K$.
+
+::: pf-proof
 For a nonsingular curve, each local ring at a closed point is a discrete valuation ring of its function field.
 The construction in Hartshorne I.6 therefore sends a point $P\in Y$ to the corresponding valuation ring $\OO_{Y,P}$ in the abstract nonsingular curve $C_K$.
 The argument preceding Theorem I.6.9 identifies every nonsingular affine curve with the open subset of $C_K$ consisting of its local valuation rings.
@@ -56,10 +59,13 @@ Since $K\cong K(\PP^1)$ and $\PP^1$ is nonsingular and projective, this projecti
 Thus $Y$ is isomorphic to an open subset of $\PP^1$.
 :::
 
-<1>2. After an automorphism of $\PP^1$, the image of $Y$ is contained in $\AA^1$.
+:::
 
-::: {.proof}
-If the open immersion of step <1>1 were surjective, then $Y\cong\PP^1$, contrary to the hypothesis.
+::: {.pf-step #y-contained-in-affine-line}
+After an automorphism of $\PP^1$, the image of $Y$ is contained in $\AA^1$.
+
+::: pf-proof
+If the open immersion of step [](#y-open-in-projective-model){.pf-ref} were surjective, then $Y\cong\PP^1$, contrary to the hypothesis.
 Choose a point $Q\in\PP^1\setminus Y$.
 An automorphism of $\PP^1$ carries $Q$ to the point at infinity $\infty=[1:0]$.
 After composing the open immersion with this automorphism,
@@ -70,9 +76,12 @@ as an open subset.
 This proves part (a).
 :::
 
-<1>3. Every nonempty open subset of $\AA_k^1$ is affine.
+:::
 
-::: {.proof}
+::: {.pf-step #open-subset-of-a1-affine}
+Every nonempty open subset of $\AA_k^1$ is affine.
+
+::: pf-proof
 Because $k$ is algebraically closed, every proper closed subset of $\AA^1$ is finite.
 Thus the complement of the open subset representing $Y$ has the form
 $$
@@ -92,10 +101,13 @@ $$
 Hence $Y$ is affine, proving part (b).
 :::
 
-<1>4. The affine coordinate ring $A(Y)$ is a unique factorization domain.
+:::
 
-::: {.proof}
-By step <1>3,
+::: {.pf-step #ay-is-ufd}
+The affine coordinate ring $A(Y)$ is a unique factorization domain.
+
+::: pf-proof
+By step [](#open-subset-of-a1-affine){.pf-ref},
 $$
 A(Y)\cong k[t,q^{-1}].
 $$
@@ -105,9 +117,11 @@ Therefore $k[t,q^{-1}]$, and hence $A(Y)$, is a unique factorization domain.
 This proves part (c).
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), step <1>3 proves part (b), and step <1>4 proves part (c).
+::: pf-qed
+Steps [](#y-open-in-projective-model){.pf-ref} and [](#y-contained-in-affine-line){.pf-ref} prove part (a), step [](#open-subset-of-a1-affine){.pf-ref} proves part (b), and step [](#ay-is-ufd){.pf-ref} proves part (c).
+:::
+
 :::
 :::

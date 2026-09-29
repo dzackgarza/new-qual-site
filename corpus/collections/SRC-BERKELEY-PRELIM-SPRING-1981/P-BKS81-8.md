@@ -48,20 +48,26 @@ $$
 M\coloneqq\norm{f}_\infty.
 $$
 
-<1>1. If $M=0$, then $P=0$ is a minimizing polynomial.
+::: pf
 
-::: {.proof}
+::: {.pf-step #trivial-case-m-zero}
+If $M=0$, then $P=0$ is a minimizing polynomial.
+
+::: pf-proof
 In this case $f=0$, so the approximation error of $P=0$ is zero, the
 smallest possible value.
 :::
 
-<1>2. Suppose $M>0$. Any polynomial $P\in\mathcal P_k$ satisfying
+:::
+
+::: {.pf-step #outside-ball-not-minimizing}
+Suppose $M>0$. Any polynomial $P\in\mathcal P_k$ satisfying
 $$
 \norm{P}_\infty>2M
 $$
 has larger error than the polynomial $0$.
 
-::: {.proof}
+::: pf-proof
 The reverse triangle inequality gives
 $$
 \norm{f-P}_\infty
@@ -79,21 +85,27 @@ $$
 Thus such a $P$ cannot minimize the error.
 :::
 
-<1>3. The set
+:::
+
+::: {.pf-step #ball-is-compact}
+The set
 $$
 K\coloneqq
 \{P\in\mathcal P_k:\norm{P}_\infty\le2M\}
 $$
 is compact.
 
-::: {.proof}
+::: pf-proof
 The space $\mathcal P_k$ is a real vector space of dimension $k+1$.
 Therefore every closed bounded subset is compact with respect to any norm
 on $\mathcal P_k$. The set $K$ is the closed ball of radius $2M$ in the
 supremum norm, hence is compact.
 :::
 
-<1>4. The error function
+:::
+
+::: {.pf-step #error-continuous}
+The error function
 $$
 E:\mathcal P_k\longrightarrow\RR,
 \qquad
@@ -101,7 +113,7 @@ E(P)\coloneqq\norm{f-P}_\infty,
 $$
 is continuous.
 
-::: {.proof}
+::: pf-proof
 For $P,Q\in\mathcal P_k$, the reverse triangle inequality gives
 $$
 \abs{E(P)-E(Q)}
@@ -111,7 +123,10 @@ $$
 Thus $E$ is in fact $1$-Lipschitz.
 :::
 
-<1>5. There is a polynomial $P_*\in\mathcal P_k$ such that
+:::
+
+::: {.pf-step #minimizer-exists}
+There is a polynomial $P_*\in\mathcal P_k$ such that
 $$
 \boxed{
 \norm{f-P_*}_\infty
@@ -120,17 +135,19 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4, the continuous function $E$ attains a minimum on
-the compact set $K$. Let $P_*$ be a minimizer there. Step <1>2 shows that
+::: pf-proof
+By steps [](#ball-is-compact){.pf-ref} and [](#error-continuous){.pf-ref}, the continuous function $E$ attains a minimum on
+the compact set $K$. Let $P_*$ be a minimizer there. Step [](#outside-ball-not-minimizing){.pf-ref} shows that
 every polynomial outside $K$ has error strictly larger than $E(0)=M$, while
 $0\in K$. Hence no polynomial outside $K$ can improve on $P_*$, so $P_*$
 is a global minimizer on $\mathcal P_k$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 handles $M=0$, and step <1>5 handles $M>0$.
+::: pf-qed
+Step [](#trivial-case-m-zero){.pf-ref} handles $M=0$, and step [](#minimizer-exists){.pf-ref} handles $M>0$.
+:::
+
 :::
 :::

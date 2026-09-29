@@ -40,7 +40,10 @@ Since $C$ is a curve,
 \dim A=1.
 \]
 
-<1>1. The first criterion is intrinsic:
+::: pf
+
+::: {.pf-step #intrinsic-criterion}
+The first criterion is intrinsic:
 \[
 \boxed{
 p\text{ is nonsingular}
@@ -50,7 +53,8 @@ A\text{ is a regular local ring}
 \dim_k\mathfrak m/\mathfrak m^2=1.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 For a Noetherian local ring $(A,\mathfrak m)$, regularity means
 \[
 \dim_{A/\mathfrak m}\mathfrak m/\mathfrak m^2=\dim A.
@@ -63,7 +67,10 @@ Here $A/\mathfrak m=k$ because $k$ is algebraically closed and $p$ is closed, wh
 For a finite-type scheme over a perfect field, in particular over an algebraically closed field, regularity at a point is equivalent to smoothness there.  Thus this is precisely the nonsingularity criterion for the curve.
 :::
 
-<1>2. Equivalently, the Zariski tangent space
+:::
+
+::: {.pf-step #tangent-space-criterion}
+Equivalently, the Zariski tangent space
 \[
 T_pC=(\mathfrak m/\mathfrak m^2)^\vee
 \]
@@ -75,11 +82,15 @@ p\text{ nonsingular}
 \dim_kT_pC=1.
 }
 \]
-::: {.proof}
-Taking duals does not change the dimension of the finite-dimensional $k$-vector space $\mathfrak m/\mathfrak m^2$.  Apply <1>1.
+
+::: pf-proof
+Taking duals does not change the dimension of the finite-dimensional $k$-vector space $\mathfrak m/\mathfrak m^2$.  Apply step [](#intrinsic-criterion){.pf-ref}.
 :::
 
-<1>3. The second criterion is the Jacobian criterion.  Suppose an affine neighborhood of $p$ is presented as
+:::
+
+::: {.pf-step #jacobian-criterion}
+The second criterion is the Jacobian criterion.  Suppose an affine neighborhood of $p$ is presented as
 \[
 C\cap U=V(f_1,\ldots,f_r)\subseteq\mathbb A^n_k.
 \]
@@ -95,7 +106,8 @@ p\text{ nonsingular}
 \operatorname{rank}J(p)=n-1.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 A tangent vector $v=(v_1,\ldots,v_n)\in k^n$ lies in $T_pC$ exactly when every first-order variation of the equations vanishes:
 \[
 \sum_{j=1}^n
@@ -111,26 +123,34 @@ so
 \[
 \dim_kT_pC=n-\operatorname{rank}J(p).
 \]
-By <1>2, nonsingularity is equivalent to this dimension being $1$, which is equivalent to
+By step [](#tangent-space-criterion){.pf-ref}, nonsingularity is equivalent to this dimension being $1$, which is equivalent to
 \[
 \operatorname{rank}J(p)=n-1.
 \]
 :::
 
-<1>4. A domain $R$ is normal if it is integrally closed in its fraction field:
+:::
+
+::: {.pf-step #normal-domain-definition}
+A domain $R$ is normal if it is integrally closed in its fraction field:
 \[
 \boxed{
 x\in\operatorname{Frac}(R),\ x\text{ integral over }R
 \Longrightarrow x\in R.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 This is the definition of a normal integral domain.
 :::
 
-<1>5. Every regular local ring is normal.
-::: {.proof}
-This is the standard regular-local-ring theorem.  In the one-dimensional case needed here it can be seen concretely: if $(A,\mathfrak m)$ is a one-dimensional regular local domain, then <1>1 gives
+:::
+
+::: {.pf-step #regular-implies-normal}
+Every regular local ring is normal.
+
+::: pf-proof
+This is the standard regular-local-ring theorem.  In the one-dimensional case needed here it can be seen concretely: if $(A,\mathfrak m)$ is a one-dimensional regular local domain, then step [](#intrinsic-criterion){.pf-ref} gives
 \[
 \dim_k\mathfrak m/\mathfrak m^2=1.
 \]
@@ -141,7 +161,10 @@ Nakayama's lemma therefore shows that
 is principal.  A one-dimensional Noetherian local domain with principal maximal ideal is a discrete valuation ring.  A DVR is integrally closed, hence normal.
 :::
 
-<1>6. For a one-dimensional Noetherian local domain, the converse also holds:
+:::
+
+::: {.pf-step #dvr-equivalence}
+For a one-dimensional Noetherian local domain, the converse also holds:
 \[
 \boxed{
 A\text{ normal}
@@ -151,7 +174,8 @@ A\text{ is a DVR}
 A\text{ is regular}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 The implication
 \[
 \text{DVR}\Longrightarrow\text{normal}
@@ -163,12 +187,15 @@ The equivalence
 \text{DVR}\Longleftrightarrow
 \text{one-dimensional Noetherian regular local domain}
 \]
-is the characterization used in <1>5.
+is the characterization used in step [](#regular-implies-normal){.pf-ref}.
 
 For the remaining implication, the standard one-dimensional normalization theorem says that a one-dimensional Noetherian local domain is integrally closed exactly when it is a DVR.  Applying it to a normal $A$ gives the result.
 :::
 
-<1>7. Consequently, for an integral curve over an algebraically closed field,
+:::
+
+::: {.pf-step #nonsingular-regular-normal}
+Consequently, for an integral curve over an algebraically closed field,
 \[
 \boxed{
 C\text{ is nonsingular}
@@ -178,12 +205,16 @@ C\text{ is regular}
 C\text{ is normal}.
 }
 \]
-::: {.proof}
-The curve is nonsingular exactly when all local rings at closed points are regular by <1>1.  For a one-dimensional Noetherian integral scheme, <1>6 identifies regularity with normality at every local ring.  Over the algebraically closed field, regularity is equivalent to smoothness, so these are exactly the nonsingular curves.
+
+::: pf-proof
+The curve is nonsingular exactly when all local rings at closed points are regular by step [](#intrinsic-criterion){.pf-ref}.  For a one-dimensional Noetherian integral scheme, step [](#dvr-equivalence){.pf-ref} identifies regularity with normality at every local ring.  Over the algebraically closed field, regularity is equivalent to smoothness, so these are exactly the nonsingular curves.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>3 give the two nonsingularity criteria, and steps <1>4--<1>7 give the requested relation between normality and regular local rings.
+:::
+
+::: pf-qed
+Steps [](#intrinsic-criterion){.pf-ref}, [](#tangent-space-criterion){.pf-ref} and [](#jacobian-criterion){.pf-ref} give the two nonsingularity criteria, and steps [](#normal-domain-definition){.pf-ref}, [](#regular-implies-normal){.pf-ref}, [](#dvr-equivalence){.pf-ref} and [](#nonsingular-regular-normal){.pf-ref} give the requested relation between normality and regular local rings.
+:::
+
 :::
 :::

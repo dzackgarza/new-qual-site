@@ -71,12 +71,15 @@ $$
 \deg L=C^2=A^2=d.
 $$
 
-<1>1. The hyperplane line bundle satisfies
+::: pf
+
+::: {.pf-step #hyperplane-restriction-sections}
+The hyperplane line bundle satisfies
 $$
 \boxed{h^0(C,L)\ge n+1.}
 $$
 
-::: {.proof}
+::: pf-proof
 Since $X$ is not contained in any hyperplane, restriction of ambient
 linear forms gives an injection
 $$
@@ -107,12 +110,15 @@ $$
 Hence $h^0(C,L)\ge n+1$.
 :::
 
-<1>2. If $d<2n$, then $L$ is nonspecial:
+:::
+
+::: {.pf-step #nonspecial-below-2n}
+If $d<2n$, then $L$ is nonspecial:
 $$
 \boxed{H^1(C,L)=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Suppose instead that $L$ is special.
 Since $L$ has positive degree and has nonzero sections, Clifford's theorem
 [[T-CRVCLIFF]] gives
@@ -127,16 +133,19 @@ If $d<2n$, then
 $$
 \frac d2+1<n+1,
 $$
-contradicting step <1>1.
+contradicting step [](#hyperplane-restriction-sections){.pf-ref}.
 Thus $L$ is nonspecial.
 :::
 
-<1>3. Whenever $H^1(C,L)=0$, one has
+:::
+
+::: {.pf-step #nonspecial-implies-pg-zero}
+Whenever $H^1(C,L)=0$, one has
 $$
 \boxed{p_g(X)=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Adjunction gives
 $$
 \omega_C
@@ -207,13 +216,16 @@ p_g(X)=h^0(X,\omega_X)=0.
 $$
 :::
 
-<1>4. If $d=2n$ and $L$ is special, then
+:::
+
+::: {.pf-step #clifford-equality-canonical}
+If $d=2n$ and $L$ is special, then
 $$
 \boxed{L\cong\omega_C.}
 $$
 
-::: {.proof}
-Clifford's theorem and step <1>1 give
+::: pf-proof
+Clifford's theorem and step [](#hyperplane-restriction-sections){.pf-ref} give
 $$
 n+1
 \le
@@ -258,19 +270,22 @@ L\cong\omega_C.
 $$
 :::
 
-<1>5. In the special case of step <1>4,
+:::
+
+::: {.pf-step #canonical-meets-hyperplane-zero}
+In the special case of step [](#clifford-equality-canonical){.pf-ref},
 $$
 \boxed{K_X\cdot A=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Adjunction gives
 $$
 \omega_X|_C
 \cong
 \omega_C\otimes L^{-1}.
 $$
-Step <1>4 identifies the right-hand side with $\OO_C$. Consequently
+Step [](#clifford-equality-canonical){.pf-ref} identifies the right-hand side with $\OO_C$. Consequently
 $$
 \deg(\omega_X|_C)=0.
 $$
@@ -280,7 +295,10 @@ K_X\cdot A.
 $$
 :::
 
-<1>6. If $d=2n$, $L$ is special, and $p_g(X)>0$, then
+:::
+
+::: {.pf-step #trivial-canonical-pg-one}
+If $d=2n$, $L$ is special, and $p_g(X)>0$, then
 $$
 \boxed{\omega_X\cong\OO_X}
 $$
@@ -289,13 +307,13 @@ $$
 \boxed{p_g(X)=1.}
 $$
 
-::: {.proof}
+::: pf-proof
 Choose a nonzero canonical section.
 Its zero divisor $D$ is effective and satisfies
 $$
 D\sim K_X.
 $$
-By step <1>5,
+By step [](#canonical-meets-hyperplane-zero){.pf-ref},
 $$
 A\cdot D
 =
@@ -322,17 +340,20 @@ h^0(X,\omega_X)
 $$
 :::
 
-<1>7. Under the hypotheses of step <1>6,
+:::
+
+::: {.pf-step #irregularity-zero}
+Under the hypotheses of step [](#trivial-canonical-pg-one){.pf-ref},
 $$
 \boxed{q(X)=h^1(X,\OO_X)=0.}
 $$
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 q=h^1(X,\OO_X).
 $$
-Step <1>6 gives $p_g=1$, so
+Step [](#trivial-canonical-pg-one){.pf-ref} gives $p_g=1$, so
 $$
 \chi(\OO_X)
 =
@@ -394,20 +415,23 @@ q=0.
 $$
 :::
 
-<1>8. If $d<2n$, then $p_g(X)=0$. If $d=2n$, then either
+:::
+
+::: {.pf-step #main-dichotomy}
+If $d<2n$, then $p_g(X)=0$. If $d=2n$, then either
 $p_g(X)=0$, or $p_g(X)=1$ and $X$ is a K3 surface.
 
-::: {.proof}
-For $d<2n$, step <1>2 makes $L$ nonspecial, and step <1>3 gives
+::: pf-proof
+For $d<2n$, step [](#nonspecial-below-2n){.pf-ref} makes $L$ nonspecial, and step [](#nonspecial-implies-pg-zero){.pf-ref} gives
 $$
 p_g(X)=0.
 $$
 
 Now assume $d=2n$.
-If $L$ is nonspecial, step <1>3 again gives $p_g(X)=0$.
-If $L$ is special, step <1>4 gives $L\cong\omega_C$.
+If $L$ is nonspecial, step [](#nonspecial-implies-pg-zero){.pf-ref} again gives $p_g(X)=0$.
+If $L$ is special, step [](#clifford-equality-canonical){.pf-ref} gives $L\cong\omega_C$.
 If in addition $p_g(X)=0$, this is the first alternative in the theorem.
-Otherwise steps <1>6--<1>7 give
+Otherwise steps [](#trivial-canonical-pg-one){.pf-ref} and [](#irregularity-zero){.pf-ref} give
 $$
 \omega_X\cong\OO_X,
 \qquad
@@ -420,11 +444,13 @@ $H^1(X,\OO_X)=0$ is a K3 surface. Hence the second alternative is exactly
 that $X$ is K3.
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove the strict inequality case. Steps <1>4--<1>8
+::: pf-qed
+Steps [](#hyperplane-restriction-sections){.pf-ref}, [](#nonspecial-below-2n){.pf-ref} and [](#nonspecial-implies-pg-zero){.pf-ref} prove the strict inequality case. Steps [](#clifford-equality-canonical){.pf-ref}, [](#canonical-meets-hyperplane-zero){.pf-ref}, [](#trivial-canonical-pg-one){.pf-ref}, [](#irregularity-zero){.pf-ref} and [](#main-dichotomy){.pf-ref}
 analyze the equality case and give precisely the two alternatives stated
 in the theorem.
+:::
+
 :::
 :::

@@ -46,8 +46,13 @@ You do not need to give detailed proofs.
 :::
 
 ::: {.solution}
-<1>1. The symbol has $10$ sides, and each of the five letters $x, y, z, w, \nu$ appears once with a positive and once with a negative exponent.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #sides-and-exponents}
+The symbol has $10$ sides, and each of the five letters $x, y, z, w, \nu$ appears once with a positive and once with a negative exponent.
+
+::: pf-proof
 The boundary word is
 \[
 xy^{-1}x^{-1}zwz^{-1}\nu yw^{-1}\nu^{-1}.
@@ -55,20 +60,28 @@ xy^{-1}x^{-1}zwz^{-1}\nu yw^{-1}\nu^{-1}.
 The five labels are $x,y,z,w,\nu$, and inspection shows that each occurs exactly twice, once with exponent $+1$ and once with exponent $-1$.
 :::
 
-<1>2. Hence the surface is orientable.
-::: {.proof}
-For a paired polygon presentation of a surface, an orientation of the polygon interior descends across a paired edge precisely when the two boundary occurrences have opposite directions.
-By <1>1, every pair occurs once positively and once negatively, so all edge gluings preserve a global orientation on the quotient.
 :::
 
-<1>3. After the edge identifications there are exactly two vertex classes:
+::: {.pf-step #orientable}
+Hence the surface is orientable.
+
+::: pf-proof
+For a paired polygon presentation of a surface, an orientation of the polygon interior descends across a paired edge precisely when the two boundary occurrences have opposite directions.
+By step [](#sides-and-exponents){.pf-ref}, every pair occurs once positively and once negatively, so all edge gluings preserve a global orientation on the quotient.
+:::
+
+:::
+
+::: {.pf-step #vertex-classes}
+After the edge identifications there are exactly two vertex classes:
 \[
 \{v_0,v_3,v_6\}
 \qquad\text{and}\qquad
 \{v_1,v_2,v_4,v_5,v_7,v_8,v_9\},
 \]
 where $v_0,\ldots,v_9$ are the polygon vertices in boundary order.
-::: {.proof}
+
+::: pf-proof
 Matching the directed edge pairs gives
 \[
 \begin{array}{c|c}
@@ -92,7 +105,10 @@ v_1\sim v_2\sim v_7\sim v_9\sim v_4\sim v_5\sim v_8.
 No displayed relation joins these two classes, so there are exactly two quotient vertices.
 :::
 
-<1>4. The quotient has
+:::
+
+::: {.pf-step #euler-char-computation}
+The quotient has
 \[
 V=2,
 \qquad
@@ -104,15 +120,19 @@ and hence
 \[
 \chi=V-E+F=-2.
 \]
-::: {.proof}
-The vertex count is <1>3. There is one edge in the quotient for each of the five paired labels, so $E=5$, and the polygon interior gives one $2$-cell, so $F=1$.
+
+::: pf-proof
+The vertex count is step [](#vertex-classes){.pf-ref}. There is one edge in the quotient for each of the five paired labels, so $E=5$, and the polygon interior gives one $2$-cell, so $F=1$.
 Therefore
 \[
 \chi=2-5+1=-2.
 \]
 :::
 
-<1>5. The surface is the orientable surface of genus $2$, namely
+:::
+
+::: pf-step
+The surface is the orientable surface of genus $2$, namely
 \[
 \boxed{(S^1\times S^1)\#(S^1\times S^1)},
 \]
@@ -120,27 +140,35 @@ and its Euler characteristic is
 \[
 \boxed{-2}.
 \]
-::: {.proof}
-By <1>2 the surface is orientable.
+
+::: pf-proof
+By step [](#orientable){.pf-ref} the surface is orientable.
 The classification theorem for compact connected orientable surfaces gives
 \[
 \chi=2-2g.
 \]
-Using <1>4,
+Using step [](#euler-char-computation){.pf-ref},
 \[
 -2=2-2g,
 \]
 so $g=2$.
 :::
 
-<1>6. Every compact connected surface without boundary can be represented by a polygon with an even number of sides, with the sides identified in pairs.
-::: {.proof}
+:::
+
+::: {.pf-step #polygon-presentation-exists}
+Every compact connected surface without boundary can be represented by a polygon with an even number of sides, with the sides identified in pairs.
+
+::: pf-proof
 Take a finite triangulation of the surface and cut along a suitable collection of edges so that the remaining union of triangles is a single polygonal disk.
 Every cut edge appears twice on the boundary of this disk, so the boundary sides occur in pairs and their total number is even.
 Regluing each pair reconstructs the surface.
 :::
 
-<1>7. Cut-and-paste moves reduce every such paired polygon to one of the two normal forms
+:::
+
+::: {.pf-step #normal-forms}
+Cut-and-paste moves reduce every such paired polygon to one of the two normal forms
 \[
 a_1b_1a_1^{-1}b_1^{-1}\cdots a_gb_ga_g^{-1}b_g^{-1}
 \]
@@ -148,13 +176,17 @@ or
 \[
 a_1a_1a_2a_2\cdots a_ka_k.
 \]
-::: {.proof}
+
+::: pf-proof
 These are the polygonal normal forms in the classification theorem for compact connected surfaces.
 The first has every paired edge appearing with opposite orientations and represents the connected sum of $g$ tori.
 The second contains orientation-reversing pairs and represents the connected sum of $k$ projective planes.
 :::
 
-<1>8. The normal form determines the surface: the orientable form has
+:::
+
+::: pf-step
+The normal form determines the surface: the orientable form has
 \[
 \chi=2-2g,
 \]
@@ -162,7 +194,8 @@ and the nonorientable form has
 \[
 \chi=2-k.
 \]
-::: {.proof}
+
+::: pf-proof
 For the orientable normal form, the standard one-vertex CW structure has one face and $2g$ edges, giving
 \[
 \chi=1-2g+1=2-2g.
@@ -174,4 +207,9 @@ For the nonorientable normal form it has one face and $k$ edges, giving
 Orientability distinguishes the two families, and within each family the Euler characteristic determines the genus.
 Thus the paired polygon determines the homeomorphism type after reduction to normal form.
 :::
+
+:::
+
+:::
+
 :::

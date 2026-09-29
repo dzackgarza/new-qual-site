@@ -22,20 +22,35 @@ Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
 :::
 
 ::: {.solution}
-<1>1. Write $\rad{I} = \ts{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \ts{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.
 
-<1>2. $\nilrad{R} \subseteq \rad{(0)}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Write $\rad{I} = \ts{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \ts{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.
+:::
+
+::: {.pf-step #nilrad-subset-rad-zero}
+$\nilrad{R} \subseteq \rad{(0)}$.
+
+::: pf-proof
 If $x^n = 0$ then $x^n \in (0)$, since $(0) = \ts 0$.
 :::
 
-<1>3. $\rad{(0)} \subseteq \nilrad{R}$.
-::: {.proof}
+:::
+
+::: {.pf-step #rad-zero-subset-nilrad}
+$\rad{(0)} \subseteq \nilrad{R}$.
+
+::: pf-proof
 If $x^n \in (0)$ then $x^n = 0$, since $(0)$ has $0$ as its only element.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Steps <1>2 and <1>3 give the two inclusions, so $\nilrad{R} = \rad{(0)}$.
 :::
+
+::: pf-qed
+Steps [](#nilrad-subset-rad-zero){.pf-ref} and [](#rad-zero-subset-nilrad){.pf-ref} give the two inclusions, so $\nilrad{R} = \rad{(0)}$.
+:::
+
+:::
+
 :::

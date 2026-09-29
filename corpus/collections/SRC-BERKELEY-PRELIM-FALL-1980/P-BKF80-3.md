@@ -24,21 +24,28 @@ $$
 :::
 
 ::: {.solution}
-<1>1. A function $f$ satisfying the first interpolation condition exists; one may take
+
+::: pf
+
+::: {.pf-step #f-exists}
+A function $f$ satisfying the first interpolation condition exists; one may take
 $$
 \boxed{f(z)=z^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 The polynomial $f(z)=z^2$ is analytic at $0$, and for every positive integer $n$,
 $$
 f(1/n)=\frac1{n^2}=f(-1/n).
 $$
 :::
 
-<1>2. No function $g$ analytic at $0$ can satisfy the second interpolation condition.
+:::
 
-::: {.proof}
+::: {.pf-step #g-does-not-exist}
+No function $g$ analytic at $0$ can satisfy the second interpolation condition.
+
+::: pf-proof
 Suppose such a function $g$ existed. There is a disk $D$ centered at $0$ on which $g$ is analytic. For every sufficiently large positive integer $n$, the point $1/n$ lies in $D$, and
 $$
 g(1/n)=\frac1{n^3}=\left(\frac1n\right)^3.
@@ -56,9 +63,11 @@ $$
 contradicting the required equality $g(-1/n)=1/n^3$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 settles the existence of $f$, and step <1>2 proves the nonexistence of $g$.
+::: pf-qed
+Step [](#f-exists){.pf-ref} settles the existence of $f$, and step [](#g-does-not-exist){.pf-ref} proves the nonexistence of $g$.
+:::
+
 :::
 :::

@@ -44,7 +44,10 @@ f=f_x=f_y=f_z=0
 $$
 there [@Har10a, Chapter I, §5].
 
-<1>1. For the surface
+::: pf
+
+::: {.pf-step #surface-one-singular-line}
+For the surface
 $$
 S_1=V(xy^2-z^2),
 $$
@@ -53,7 +56,7 @@ $$
 \boxed{\Sing(S_1)=V(y,z)=\{(x,0,0):x\in k\}.}
 $$
 
-::: {.proof}
+::: pf-proof
 Put $f_1=xy^2-z^2$.
 Then
 $$
@@ -82,13 +85,16 @@ the standard pinch-point, or Whitney-umbrella, form after relabelling coordinate
 The two transverse sheets along the punctured singular line coalesce at the origin.
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #surface-two-conical-point}
+For
 $$
 S_2=V(x^2+y^2-z^2),
 $$
 the unique singular point is the origin, and it is a conical double point.
 
-::: {.proof}
+::: pf-proof
 For $f_2=x^2+y^2-z^2$,
 $$
 (f_2)_x=2x,\qquad
@@ -101,7 +107,10 @@ The quadratic form is nondegenerate: its associated diagonal matrix has nonzero 
 Thus the origin is an isolated ordinary quadratic, or conical double, point.
 :::
 
-<1>3. For
+:::
+
+::: {.pf-step #surface-three-double-line}
+For
 $$
 S_3=V(xy+x^3+y^3),
 $$
@@ -110,7 +119,7 @@ $$
 \boxed{\Sing(S_3)=V(x,y)=\{(0,0,z):z\in k\}.}
 $$
 
-::: {.proof}
+::: pf-proof
 Put $g(x,y)=xy+x^3+y^3$, so $S_3=V(g)\times\AA_z^1$.
 The derivatives are
 $$
@@ -138,21 +147,26 @@ Locally its two smooth surface branches meet transversely along the entire $z$-a
 This is the double-line singularity shown in the figure.
 :::
 
-<1>4. The three surfaces in the figure are, respectively,
+:::
+
+::: {.pf-step #match-figure}
+The three surfaces in the figure are, respectively,
 $$
 \boxed{\text{(1) pinch point,\qquad (2) conical double point,\qquad (3) double line}.}
 $$
 
-::: {.proof}
-Step <1>1 identifies the Whitney-umbrella degeneration at the distinguished point of the singular line.
-Step <1>2 gives the isolated quadratic cone.
-Step <1>3 gives two surface branches crossing along a line.
+::: pf-proof
+Step [](#surface-one-singular-line){.pf-ref} identifies the Whitney-umbrella degeneration at the distinguished point of the singular line.
+Step [](#surface-two-conical-point){.pf-ref} gives the isolated quadratic cone.
+Step [](#surface-three-double-line){.pf-ref} gives two surface branches crossing along a line.
 These are exactly the three depicted local models.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 locate and describe all singular points, and step <1>4 matches the equations with the source figure.
+::: pf-qed
+Steps [](#surface-one-singular-line){.pf-ref}, [](#surface-two-conical-point){.pf-ref} and [](#surface-three-double-line){.pf-ref} locate and describe all singular points, and step [](#match-figure){.pf-ref} matches the equations with the source figure.
+:::
+
 :::
 :::

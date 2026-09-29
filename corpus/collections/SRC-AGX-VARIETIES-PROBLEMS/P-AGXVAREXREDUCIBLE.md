@@ -55,12 +55,15 @@ L=V(x),
 H=V(xy-1).
 $$
 
-<1>1. The cubic decomposes as
+::: pf
+
+::: {.pf-step #cubic-decomposition}
+The cubic decomposes as
 $$
 \boxed{X=L\cup H.}
 $$
 
-::: {.proof}
+::: pf-proof
 For any point $(a,b)\in\AA^2_k$,
 $$
 a(ab-1)=0
@@ -81,9 +84,12 @@ L\cup H.
 $$
 :::
 
-<1>2. The closed subset $L$ is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #l-irreducible}
+The closed subset $L$ is irreducible.
+
+::: pf-proof
 Its coordinate ring is
 $$
 k[L]
@@ -95,9 +101,12 @@ $$
 which is an integral domain. Hence $L$ is irreducible.
 :::
 
-<1>3. The closed subset $H$ is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #h-irreducible}
+The closed subset $H$ is irreducible.
+
+::: pf-proof
 Its coordinate ring is
 $$
 k[H]
@@ -109,9 +118,12 @@ $$
 which is an integral domain. Hence $H$ is irreducible.
 :::
 
-<1>4. Neither $L$ nor $H$ contains the other.
+:::
 
-::: {.proof}
+::: {.pf-step #l-h-incomparable}
+Neither $L$ nor $H$ contains the other.
+
+::: pf-proof
 The point
 $$
 (0,0)
@@ -129,7 +141,10 @@ H\nsubseteq L.
 $$
 :::
 
-<1>5. The irreducible components of $X$ are exactly
+:::
+
+::: {.pf-step #irreducible-components}
+The irreducible components of $X$ are exactly
 $$
 \boxed{
 L=V(x)
@@ -138,11 +153,11 @@ H=V(xy-1).
 }
 $$
 
-::: {.proof}
-By steps <1>2--<1>3, both $L$ and $H$ are irreducible closed subsets of $X$.
-Step <1>4 shows that neither is contained in the other.
+::: pf-proof
+By steps [](#l-irreducible){.pf-ref} and [](#h-irreducible){.pf-ref}, both $L$ and $H$ are irreducible closed subsets of $X$.
+Step [](#l-h-incomparable){.pf-ref} shows that neither is contained in the other.
 
-Let $Z\subseteq X$ be irreducible. By step <1>1,
+Let $Z\subseteq X$ be irreducible. By step [](#cubic-decomposition){.pf-ref},
 $$
 Z
 =
@@ -159,17 +174,23 @@ Hence every irreducible closed subset of $X$ lies in one of $L$ or $H$, so
 the maximal irreducible closed subsets are exactly $L$ and $H$.
 :::
 
-<1>6. The variety $X$ is reducible.
+:::
 
-::: {.proof}
-Step <1>1 writes $X$ as the union of the two proper closed subsets $L$ and
+::: {.pf-step #x-reducible}
+The variety $X$ is reducible.
+
+::: pf-proof
+Step [](#cubic-decomposition){.pf-ref} writes $X$ as the union of the two proper closed subsets $L$ and
 $H$. Therefore $X$ is reducible.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 identifies the two irreducible components, and step <1>6 proves
+::: pf-qed
+Step [](#irreducible-components){.pf-ref} identifies the two irreducible components, and step [](#x-reducible){.pf-ref} proves
 reducibility.
 :::
+
+:::
+
 :::

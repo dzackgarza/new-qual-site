@@ -18,7 +18,11 @@ Prove that any continuous map $f : \mathbb{RP}^{2n} \to \mathbb{RP}^{2n}$ has a 
 :::
 
 ::: {.solution}
-<1>1. With rational coefficients,
+
+::: pf
+
+::: {.pf-step #rational-homology}
+With rational coefficients,
 $$
 H_k(\mathbb{RP}^{2n};\mathbb Q)=
 \begin{cases}
@@ -26,24 +30,38 @@ H_k(\mathbb{RP}^{2n};\mathbb Q)=
 0,&k>0.
 \end{cases}
 $$
-::: {.proof}
+
+::: pf-proof
 The positive-dimensional integral homology of even-dimensional real projective space is torsion, so it vanishes after tensoring with $\mathbb Q$; the space is connected, giving $H_0\cong\mathbb Q$.
 :::
 
-<1>2. For any continuous self-map $f:\mathbb{RP}^{2n}\to\mathbb{RP}^{2n}$, the Lefschetz number is
+:::
+
+::: pf-step
+For any continuous self-map $f:\mathbb{RP}^{2n}\to\mathbb{RP}^{2n}$, the Lefschetz number is
 $$
 L(f)=1.
 $$
-::: {.proof}
-By <1>1, the only nonzero rational homology group is $H_0$, and any self-map of a connected space induces the identity on $H_0$. Therefore
+
+::: pf-proof
+By step [](#rational-homology){.pf-ref}, the only nonzero rational homology group is $H_0$, and any self-map of a connected space induces the identity on $H_0$. Therefore
 $$
 L(f)=\sum_k(-1)^k\operatorname{tr}(f_*|H_k(-;\mathbb Q))=1.
 $$
 :::
 
-<1>3. Hence $f$ has a fixed point.
-::: {.proof}
+:::
+
+::: pf-step
+Hence $f$ has a fixed point.
+
+::: pf-proof
 The Lefschetz fixed-point theorem states that a self-map of a finite CW complex with nonzero Lefschetz number has a fixed point. Since $\mathbb{RP}^{2n}$ is a finite CW complex and $L(f)=1\ne0$, the conclusion follows.
 :::
+
+:::
+
+:::
+
 :::
 

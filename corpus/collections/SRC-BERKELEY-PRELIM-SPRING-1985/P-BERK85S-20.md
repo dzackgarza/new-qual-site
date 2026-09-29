@@ -38,7 +38,10 @@ $$
 \DD=\{z\in\CC:\abs z<1\}.
 $$
 
-<1>1. For $a\in\DD$, define
+::: pf
+
+::: {.pf-step #automorphism-properties}
+For $a\in\DD$, define
 $$
 \phi_a(w)
 \coloneqq
@@ -51,7 +54,7 @@ $$
 \phi_a'(a)=\frac{1}{1-\abs a^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $w\in\DD$,
 $$
 \abs{1-\overline a w}^2-\abs{w-a}^2
@@ -76,7 +79,10 @@ $$
 and evaluation at $w=a$ gives the stated derivative.
 :::
 
-<1>2. Fix $z\in\DD$ and set
+:::
+
+::: {.pf-step #g-fixes-origin}
+Fix $z\in\DD$ and set
 $$
 g
 \coloneqq
@@ -87,8 +93,8 @@ $$
 g(0)=0.
 $$
 
-::: {.proof}
-By step <1>1, both disk automorphisms are analytic self-maps of
+::: pf-proof
+By step [](#automorphism-properties){.pf-ref}, both disk automorphisms are analytic self-maps of
 $\DD$, and $f$ maps $\DD$ into itself. Since
 $$
 \phi_z^{-1}(0)=z,
@@ -103,31 +109,37 @@ g(0)
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #schwarz-lemma-bound}
+One has
 $$
 \abs{g'(0)}\leq1.
 $$
 
-::: {.proof}
+::: pf-proof
 This is Schwarz's lemma applied to the analytic self-map $g$ of the
 unit disk with $g(0)=0$.
 :::
 
-<1>4. The derivative in step <1>3 is
+:::
+
+::: {.pf-step #g-prime-formula}
+The derivative in step [](#schwarz-lemma-bound){.pf-ref} is
 $$
 g'(0)
 =
 \frac{1-\abs z^2}{1-\abs{f(z)}^2}\,f'(z).
 $$
 
-::: {.proof}
+::: pf-proof
 By the chain rule,
 $$
 g'(0)
 =
 \phi_{f(z)}'(f(z))\,f'(z)\,(\phi_z^{-1})'(0).
 $$
-Step <1>1 gives
+Step [](#automorphism-properties){.pf-ref} gives
 $$
 \phi_{f(z)}'(f(z))
 =
@@ -146,18 +158,24 @@ $$
 Substitution yields the formula.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #intermediate-bound}
+Therefore
 $$
 \abs{f'(z)}
 \leq
 \frac{1-\abs{f(z)}^2}{1-\abs z^2}.
 $$
 
-::: {.proof}
-Take absolute values in step <1>4 and apply step <1>3.
+::: pf-proof
+Take absolute values in step [](#g-prime-formula){.pf-ref} and apply step [](#schwarz-lemma-bound){.pf-ref}.
 :::
 
-<1>6. Hence, for every $z\in\DD$,
+:::
+
+::: {.pf-step #final-bound-boxed}
+Hence, for every $z\in\DD$,
 $$
 \boxed{
 \abs{f'(z)}
@@ -166,17 +184,19 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 Because $f(z)\in\DD$,
 $$
 0<1-\abs{f(z)}^2\leq1.
 $$
-Apply this inequality to the numerator in step <1>5.
+Apply this inequality to the numerator in step [](#intermediate-bound){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the required estimate.
+::: pf-qed
+Step [](#final-bound-boxed){.pf-ref} is the required estimate.
+:::
+
 :::
 :::

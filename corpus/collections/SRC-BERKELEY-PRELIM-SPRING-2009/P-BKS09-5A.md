@@ -58,13 +58,16 @@ g(\theta)
 +\widetilde h(\theta+\pi)-\widetilde h(\theta+3\pi/2).
 $$
 
-<1>1. The function $g$ is continuous and satisfies
+::: pf
+
+::: {.pf-step #g-antisymmetric}
+The function $g$ is continuous and satisfies
 $$
 g(\theta+\pi/2)=-g(\theta)
 $$
 for every $\theta$.
 
-::: {.proof}
+::: pf-proof
 Continuity follows from continuity of $h$ and the trigonometric
 parametrization of the unit circle. Also $\widetilde h$ is $2\pi$-periodic,
 so
@@ -79,20 +82,26 @@ g(\theta+\pi/2)
 $$
 :::
 
-<1>2. There exists $\theta_0\in\RR$ such that $g(\theta_0)=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #g-has-zero}
+There exists $\theta_0\in\RR$ such that $g(\theta_0)=0$.
+
+::: pf-proof
 Fix any $\theta$. If $g(\theta)=0$, take $\theta_0=\theta$. Otherwise,
-step <1>1 shows that $g(\theta)$ and $g(\theta+\pi/2)$ have opposite
+step [](#g-antisymmetric){.pf-ref} shows that $g(\theta)$ and $g(\theta+\pi/2)$ have opposite
 signs. The intermediate value theorem therefore gives a zero of $g$ on
 the interval between these two angles.
 :::
 
-<1>3. For the angle $\theta_0$ from step <1>2, the line segments
+:::
+
+::: {.pf-step #midpoints-coincide}
+For the angle $\theta_0$ from step [](#g-has-zero){.pf-ref}, the line segments
 $Q_1(\theta_0)Q_3(\theta_0)$ and
 $Q_2(\theta_0)Q_4(\theta_0)$ have a common midpoint.
 
-::: {.proof}
+::: pf-proof
 Write $P_i=P_i(\theta_0)$ and $Q_i=Q_i(\theta_0)$. From the definitions,
 $$
 P_3=-P_1,
@@ -118,18 +127,24 @@ $$
 so these two midpoints coincide.
 :::
 
-<1>4. The four points $Q_1(\theta_0),\ldots,Q_4(\theta_0)$ are coplanar.
+:::
 
-::: {.proof}
-By step <1>3, the line through $Q_1,Q_3$ intersects the line through
+::: {.pf-step #points-coplanar}
+The four points $Q_1(\theta_0),\ldots,Q_4(\theta_0)$ are coplanar.
+
+::: pf-proof
+By step [](#midpoints-coincide){.pf-ref}, the line through $Q_1,Q_3$ intersects the line through
 $Q_2,Q_4$. Two intersecting lines lie in a common plane, and that plane
 contains all four endpoints. If the two lines happen to coincide, the four
 points are collinear and hence are also coplanar.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required angle and coplanarity conclusion.
 :::
+
+::: pf-qed
+Step [](#points-coplanar){.pf-ref} gives the required angle and coplanarity conclusion.
+:::
+
+:::
+
 :::

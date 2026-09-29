@@ -44,8 +44,13 @@ m_{n+1}(\mathcal A)
 :::
 
 ::: {.solution}
-<1>1. If $f$ is measurable, then $\mathcal A$ is measurable.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #f-measurable-implies-a-measurable}
+If $f$ is measurable, then $\mathcal A$ is measurable.
+
+::: pf-proof
 Define
 \[
 H(x,t):=f(x)-t.
@@ -58,8 +63,12 @@ The map $(x,t)\mapsto f(x)$ is measurable, as is $(x,t)\mapsto t$, so $H$ is mea
 is Lebesgue measurable.
 :::
 
-<1>2. If $\mathcal A$ is measurable, then $f$ is measurable.
-::: {.proof}
+:::
+
+::: {.pf-step #a-measurable-implies-f-measurable}
+If $\mathcal A$ is measurable, then $f$ is measurable.
+
+::: pf-proof
 For every fixed $x\in\mathbb R^n$, the vertical section is
 \[
 \mathcal A_x
@@ -78,9 +87,13 @@ x\longmapsto \int_{\mathbb R}\mathbf1_{\mathcal A}(x,t)\,dt
 is measurable. Thus $f$ is measurable.
 :::
 
-<1>3. Compute the measure of the subgraph.
-::: {.proof}
-Assume $f$ is measurable. By Step 1, $\mathcal A$ is measurable, so Tonelli gives
+:::
+
+::: {.pf-step #measure-of-subgraph}
+Compute the measure of the subgraph.
+
+::: pf-proof
+Assume $f$ is measurable. By Step [](#f-measurable-implies-a-measurable){.pf-ref}, $\mathcal A$ is measurable, so Tonelli gives
 \[
 \begin{aligned}
 m_{n+1}(\mathcal A)
@@ -91,8 +104,12 @@ m_{n+1}(\mathcal A)
 \]
 :::
 
-<1>4. Derive the layer-cake formula.
-::: {.proof}
+:::
+
+::: {.pf-step #layer-cake-formula}
+Derive the layer-cake formula.
+
+::: pf-proof
 For $t\ge0$, the horizontal section is
 \[
 \mathcal A^t
@@ -107,7 +124,7 @@ m_{n+1}(\mathcal A)
 &=\int_0^\infty m_n(\{x:f(x)\ge t\})\,dt.
 \end{aligned}
 \]
-Combining with Step 3 yields
+Combining with Step [](#measure-of-subgraph){.pf-ref} yields
 \[
 \boxed{
 m_{n+1}(\mathcal A)
@@ -115,4 +132,13 @@ m_{n+1}(\mathcal A)
 =\int_0^\infty m_n(\{f\ge t\})\,dt.}
 \]
 :::
+
+:::
+
+::: pf-qed
+Steps [](#f-measurable-implies-a-measurable){.pf-ref} and [](#a-measurable-implies-f-measurable){.pf-ref} answer part 1, and steps [](#measure-of-subgraph){.pf-ref} and [](#layer-cake-formula){.pf-ref} answer part 2.
+:::
+
+:::
+
 :::

@@ -35,12 +35,17 @@ Explicitly determine the splitting fields over the rationals of the following tw
 
 
 ::: {.solution}
-<1>1. The splitting field of \(x^6-1\) is
+
+::: pf
+
+::: {.pf-step #splitting-field-x6-minus-1}
+The splitting field of \(x^6-1\) is
 \[
 \mathbb Q(\zeta_6)=\mathbb Q(\sqrt{-3}),
 \]
 and it has degree \(2\) over \(\mathbb Q\).
-::: {.proof}
+
+::: pf-proof
 The roots of \(x^6-1\) are exactly the sixth roots of unity
 \[
 1,\zeta_6,\zeta_6^2,\ldots,\zeta_6^5,
@@ -62,8 +67,12 @@ The element \(\sqrt{-3}\notin\mathbb Q\), so
 Equivalently, this degree is \(\varphi(6)=2\).
 :::
 
-<1>2. The roots of \(x^6+1\) are twelfth roots of unity, and a primitive twelfth root occurs among them.
-::: {.proof}
+:::
+
+::: pf-step
+The roots of \(x^6+1\) are twelfth roots of unity, and a primitive twelfth root occurs among them.
+
+::: pf-proof
 If \(z^6=-1\), then
 \[
 z^{12}=1.
@@ -85,7 +94,10 @@ Therefore the splitting field is
 \]
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #splitting-field-x6-plus-1}
+One has
 \[
 \mathbb Q(\zeta_{12})=\mathbb Q(i,\sqrt3)
 \]
@@ -93,7 +105,8 @@ and
 \[
 [\mathbb Q(\zeta_{12}):\mathbb Q]=4.
 \]
-::: {.proof}
+
+::: pf-proof
 Using
 \[
 \zeta_{12}=e^{\pi i/6}=\frac{\sqrt3+i}{2},
@@ -121,7 +134,10 @@ Thus
 Equivalently, this is \(\varphi(12)=4\).
 :::
 
-<1>4. Therefore the requested splitting fields and degrees are
+:::
+
+::: pf-step
+Therefore the requested splitting fields and degrees are
 \[
 \operatorname{Spl}_{\mathbb Q}(x^6-1)=\mathbb Q(\sqrt{-3}),
 \qquad [\operatorname{Spl}:\mathbb Q]=2,
@@ -131,7 +147,12 @@ and
 \operatorname{Spl}_{\mathbb Q}(x^6+1)=\mathbb Q(i,\sqrt3),
 \qquad [\operatorname{Spl}:\mathbb Q]=4.
 \]
-::: {.proof}
-This is the combination of <1>1 and <1>3.
+
+::: pf-proof
+This is the combination of step [](#splitting-field-x6-minus-1){.pf-ref} and step [](#splitting-field-x6-plus-1){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

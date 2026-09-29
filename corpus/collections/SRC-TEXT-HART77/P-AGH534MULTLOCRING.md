@@ -64,10 +64,13 @@ G=\operatorname{gr}_{\mfm}A
 \bigoplus_{q\ge0}\mfm^q/\mfm^{q+1}.
 $$
 
-<1>1. The graded $k$-algebra $G$ is finitely generated and generated in
+::: pf
+
+::: {.pf-step #assoc-graded-gen-degree-one}
+The graded $k$-algebra $G$ is finitely generated and generated in
 degree one.
 
-::: {.proof}
+::: pf-proof
 Since $A$ is noetherian, the maximal ideal is finitely generated, say
 $$
 \mfm=(x_1,\ldots,x_s).
@@ -84,7 +87,10 @@ $$
 with $X_i\mapsto x_i\bmod\mfm^2$.
 :::
 
-<1>2. For every $l>0$,
+:::
+
+::: {.pf-step #length-partial-sum}
+For every $l>0$,
 $$
 \boxed{
 \psi(l)
@@ -93,7 +99,7 @@ $$
 \dim_k G_q.}
 $$
 
-::: {.proof}
+::: pf-proof
 The quotient $A/\mfm^l$ has the finite filtration
 $$
 A/\mfm^l
@@ -113,7 +119,10 @@ its $A$-module length equals its $k$-dimension. Additivity of length gives
 the formula.
 :::
 
-<1>3. There is a polynomial
+:::
+
+::: {.pf-step #hilbert-samuel-polynomial-exists}
+There is a polynomial
 $$
 P_A(z)\in\QQ[z]
 $$
@@ -123,8 +132,8 @@ P_A(l)=\psi(l)
 $$
 for all sufficiently large $l$.
 
-::: {.proof}
-By step <1>1, $G$ is a finitely generated standard graded $k$-algebra.
+::: pf-proof
+By step [](#assoc-graded-gen-degree-one){.pf-ref}, $G$ is a finitely generated standard graded $k$-algebra.
 Hilbert--Serre, equivalently Hartshorne I.7.5 as suggested in the exercise,
 says that its Hilbert function
 $$
@@ -132,7 +141,7 @@ h_G(q)=\dim_k G_q
 $$
 agrees for $q\gg0$ with a rational polynomial $Q(q)$.
 
-By step <1>2, $\psi(l)$ is the partial sum of this Hilbert function. Finite
+By step [](#length-partial-sum){.pf-ref}, $\psi(l)$ is the partial sum of this Hilbert function. Finite
 sums of the polynomial values $Q(q)$ are polynomial in the upper limit: for
 each monomial $q^j$, the sum
 $$
@@ -147,12 +156,15 @@ $$
 for all $l\gg0$. This proves part (a).
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #dim-graded-equals-dim}
+One has
 $$
 \boxed{\dim G=\dim A.}
 $$
 
-::: {.proof}
+::: pf-proof
 This is the standard dimension theorem for the associated graded ring of a
 noetherian local ring. One way to see it is through the extended Rees ring
 $$
@@ -179,17 +191,20 @@ $$
 $$
 :::
 
-<1>5. The Hilbert--Samuel polynomial has degree
+:::
+
+::: {.pf-step #degree-of-hilbert-samuel}
+The Hilbert--Samuel polynomial has degree
 $$
 \boxed{\deg P_A=\dim A.}
 $$
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 n=\dim A=\dim G
 $$
-by step <1>4.
+by step [](#dim-graded-equals-dim){.pf-ref}.
 
 If $n=0$, then $A$ is artinian, so $\mfm^N=0$ for some $N$ and
 $$
@@ -199,18 +214,21 @@ for $l\ge N$. Thus $P_A$ is constant and has degree $0=n$.
 
 Assume $n>0$. For a finitely generated standard graded $k$-algebra of
 dimension $n$, the Hilbert polynomial of its graded pieces has degree
-$n-1$. Hence the polynomial $Q$ in step <1>3 has degree $n-1$. Taking
+$n-1$. Hence the polynomial $Q$ in step [](#hilbert-samuel-polynomial-exists){.pf-ref} has degree $n-1$. Taking
 partial sums raises the degree by one, so the polynomial $P_A$ has degree
 $n$. This proves part (b).
 :::
 
-<1>6. With $n=\dim A$, the multiplicity is
+:::
+
+::: {.pf-step #multiplicity-definition}
+With $n=\dim A$, the multiplicity is
 $$
 \boxed{
 \mu(A)=n!\,[z^n]P_A(z).}
 $$
 
-::: {.proof}
+::: pf-proof
 This is the definition in part (c). For a point $P$ of a noetherian scheme
 $X$, the local multiplicity is consequently
 $$
@@ -219,7 +237,10 @@ $$
 There is no further assertion to prove in part (c).
 :::
 
-<1>7. Let $P$ lie on a curve $C$ on a nonsingular surface $X$. Put
+:::
+
+::: {.pf-step #curve-graded-ring-quotient}
+Let $P$ lie on a curve $C$ on a nonsingular surface $X$. Put
 $$
 R=\OO_{X,P},
 \qquad
@@ -237,7 +258,7 @@ k[u,v]/(f_r),
 $$
 where $f_r$ is the nonzero degree-$r$ initial form of $f$.
 
-::: {.proof}
+::: pf-proof
 Because $X$ is nonsingular of dimension two at $P$, $R$ is a regular local
 ring of dimension two and
 $$
@@ -260,7 +281,10 @@ k[u,v]/(f_r).
 $$
 :::
 
-<1>8. For all $l\ge r$,
+:::
+
+::: {.pf-step #curve-length-formula}
+For all $l\ge r$,
 $$
 \operatorname{length}
 \left(
@@ -270,7 +294,7 @@ $$
 rl-\frac{r(r-1)}2.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $f_r\ne0$ is homogeneous of degree $r$, multiplication by $f_r$ gives
 an exact sequence of graded $k[u,v]$-modules
 $$
@@ -292,7 +316,7 @@ q+1,&q<r,\\
 r,&q\ge r.
 \end{cases}
 $$
-By step <1>2 applied to the one-dimensional local ring $B$,
+By step [](#length-partial-sum){.pf-ref} applied to the one-dimensional local ring $B$,
 $$
 \operatorname{length}(B/\mfm_C^l)
 =
@@ -306,14 +330,17 @@ rl-\frac{r(r-1)}2.
 $$
 :::
 
-<1>9. The local-ring multiplicity of $C$ at $P$ equals the multiplicity used
+:::
+
+::: {.pf-step #multiplicity-equals-order}
+The local-ring multiplicity of $C$ at $P$ equals the multiplicity used
 before (3.5.2):
 $$
 \boxed{\mu_P(C)=r.}
 $$
 
-::: {.proof}
-The local ring $\OO_{C,P}$ has dimension one. Step <1>8 shows that its
+::: pf-proof
+The local ring $\OO_{C,P}$ has dimension one. Step [](#curve-length-formula){.pf-ref} shows that its
 Hilbert--Samuel polynomial has leading term
 $$
 rz.
@@ -331,7 +358,10 @@ which is the multiplicity definition used in the text before (3.5.2).
 This proves part (d).
 :::
 
-<1>10. Let $Y\subseteq\PP^N$ be a projective variety of dimension $s$ and
+:::
+
+::: {.pf-step #cone-graded-ring-is-coord-ring}
+Let $Y\subseteq\PP^N$ be a projective variety of dimension $s$ and
 degree $d$, with homogeneous coordinate ring
 $$
 S=k[x_0,\ldots,x_N]/I_Y.
@@ -342,7 +372,7 @@ $$
 \cong S.
 $$
 
-::: {.proof}
+::: pf-proof
 Write the projective cone in $\PP^{N+1}$ with coordinates
 $$
 [x_0:\cdots:x_N:z]
@@ -372,12 +402,15 @@ Localizing at $\mfm$ does not change these finite-dimensional residue-field
 vector spaces, so the associated graded ring of the local ring is $S$.
 :::
 
-<1>11. The vertex of the cone over $Y$ has multiplicity
+:::
+
+::: {.pf-step #cone-vertex-multiplicity}
+The vertex of the cone over $Y$ has multiplicity
 $$
 \boxed{d}. 
 $$
 
-::: {.proof}
+::: pf-proof
 For $q\gg0$, the Hilbert function of the homogeneous coordinate ring is the
 Hilbert polynomial of $Y$:
 $$
@@ -385,7 +418,7 @@ $$
 =
 \frac{d}{s!}q^s+\text{lower-degree terms}
 $$
-[[D-L6ERW]]. By steps <1>2 and <1>10, the Hilbert--Samuel function at the
+[[D-L6ERW]]. By steps [](#length-partial-sum){.pf-ref} and [](#cone-graded-ring-is-coord-ring){.pf-ref}, the Hilbert--Samuel function at the
 vertex is the partial sum
 $$
 \sum_{q=0}^{l-1}\dim_kS_q.
@@ -403,11 +436,13 @@ $$
 This proves part (e).
 :::
 
-<1>12. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 prove part (b), step <1>6
-records the definition in part (c), steps <1>7--<1>9 prove part (d), and
-steps <1>10--<1>11 prove part (e).
+::: pf-qed
+Steps [](#assoc-graded-gen-degree-one){.pf-ref}, [](#length-partial-sum){.pf-ref} and [](#hilbert-samuel-polynomial-exists){.pf-ref} prove part (a), steps [](#dim-graded-equals-dim){.pf-ref} and [](#degree-of-hilbert-samuel){.pf-ref} prove part (b), step [](#multiplicity-definition){.pf-ref}
+records the definition in part (c), steps [](#curve-graded-ring-quotient){.pf-ref}, [](#curve-length-formula){.pf-ref} and [](#multiplicity-equals-order){.pf-ref} prove part (d), and
+steps [](#cone-graded-ring-is-coord-ring){.pf-ref} and [](#cone-vertex-multiplicity){.pf-ref} prove part (e).
+:::
+
 :::
 :::

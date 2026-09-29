@@ -41,8 +41,12 @@ q:\mathbb R\longrightarrow X=\mathbb R/\!\sim
 \]
 be the quotient map.
 
-<1>1. Every nonempty open interval in $\mathbb R$ contains a rational number.
-::: {.proof}
+::: pf
+
+::: {.pf-step #rational-in-interval}
+Every nonempty open interval in $\mathbb R$ contains a rational number.
+
+::: pf-proof
 Let $a<b$.
 Choose $n\in\mathbb N$ such that
 \[
@@ -63,12 +67,16 @@ a<\frac mn<b.
 Since $m/n\in\mathbb Q$, the interval $(a,b)$ contains a rational number.
 :::
 
-<1>2. If $W\subseteq X$ is open, then
+:::
+
+::: {.pf-step #preimage-open-saturated}
+If $W\subseteq X$ is open, then
 \[
 U=q^{-1}(W)
 \]
 is an open saturated subset of $\mathbb R$.
-::: {.proof}
+
+::: pf-proof
 By the definition of the quotient topology, $q^{-1}(W)$ is open in $\mathbb R$.
 It is saturated because if $x\in U$ and $y\sim x$, then
 \[
@@ -77,8 +85,12 @@ q(y)=q(x)\in W,
 so $y\in q^{-1}(W)=U$.
 :::
 
-<1>3. Every nonempty open saturated subset $U\subseteq\mathbb R$ is all of $\mathbb R$.
-::: {.proof}
+:::
+
+::: {.pf-step #saturated-is-all}
+Every nonempty open saturated subset $U\subseteq\mathbb R$ is all of $\mathbb R$.
+
+::: pf-proof
 Let $U$ be nonempty, open, and saturated.
 Choose $x\in U$.
 Since $U$ is open, there are real numbers $a<b$ such that
@@ -92,7 +104,7 @@ The interval
 (y-b,y-a)
 \]
 is nonempty because $a<b$.
-By <1>1, choose
+By step [](#rational-in-interval){.pf-ref}, choose
 \[
 r\in\mathbb Q\cap(y-b,y-a).
 \]
@@ -120,8 +132,12 @@ Since $U$ is saturated and $y-r\in U$, it follows that $y\in U$.
 The point $y$ was arbitrary, so $U=\mathbb R$.
 :::
 
-<1>4. The only open subsets of $X$ are $\varnothing$ and $X$.
-::: {.proof}
+:::
+
+::: pf-step
+The only open subsets of $X$ are $\varnothing$ and $X$.
+
+::: pf-proof
 Both $\varnothing$ and $X$ are open in every topology.
 
 Conversely, let $W\subseteq X$ be a nonempty open set.
@@ -130,7 +146,7 @@ By surjectivity of $q$, its inverse image
 U=q^{-1}(W)
 \]
 is nonempty.
-By <1>2 it is open and saturated, so <1>3 gives
+By step [](#preimage-open-saturated){.pf-ref} it is open and saturated, so step [](#saturated-is-all){.pf-ref} gives
 \[
 q^{-1}(W)=\mathbb R.
 \]
@@ -140,4 +156,9 @@ W=q(q^{-1}(W))=q(\mathbb R)=X.
 \]
 Thus every nonempty open subset is all of $X$, so the quotient topology is indiscrete.
 :::
+
+:::
+
+:::
+
 :::

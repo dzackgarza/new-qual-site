@@ -39,8 +39,13 @@ Determine whether (3) implies (1).
 :::
 
 ::: {.solution}
-<1>1. Absolute continuity implies the small-image condition.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #absolute-continuity-implies-small-image}
+Absolute continuity implies the small-image condition.
+
+::: pf-proof
 Assume $f$ is absolutely continuous. Then $f'\in L^1([0,1])$ and
 \[
 f(y)-f(x)=\int_x^y f'(t)\,dt
@@ -71,8 +76,12 @@ m^*(f(E))
 Thus (1) implies (2).
 :::
 
-<1>2. The small-image condition implies Lusin's $N$-property.
-::: {.proof}
+:::
+
+::: {.pf-step #small-image-implies-lusin-n}
+The small-image condition implies Lusin's $N$-property.
+
+::: pf-proof
 Assume (2), and let $E\subseteq[0,1]$ satisfy $m(E)=0$. Given $\varepsilon>0$, let $\delta$ be supplied by (2). Since $m(E)=0<\delta$,
 \[
 m^*(f(E))<\varepsilon.
@@ -84,8 +93,12 @@ m^*(f(E))=0.
 Hence (2) implies (3).
 :::
 
-<1>3. Condition (3) does not imply absolute continuity.
-::: {.proof}
+:::
+
+::: {.pf-step #lusin-n-does-not-imply-absolute-continuity}
+Condition (3) does not imply absolute continuity.
+
+::: pf-proof
 Define
 \[
 f(0)=0,
@@ -130,9 +143,17 @@ Since $t_k\asymp k^{-1/2}$, this tends to $\infty$. Hence $f$ has unbounded vari
 Every absolutely continuous function on a compact interval has bounded variation, so $f$ is not absolutely continuous. Thus (3) does not imply (1).
 :::
 
-<1>4. For continuous $f$ of bounded variation on $[0,1]$, conditions (1), (2), and (3) are equivalent.
-::: {.proof}
-The Banach--Zarecki theorem states that a real-valued function on a compact interval is absolutely continuous if and only if it is continuous, has bounded variation, and has Lusin's $N$-property. For $f$ of bounded variation this gives (3) implies (1), and steps <1>1 and <1>2 give the other implications. The function of step <1>3 has unbounded variation.
+:::
+
+::: pf-step
+For continuous $f$ of bounded variation on $[0,1]$, conditions (1), (2), and (3) are equivalent.
+
+::: pf-proof
+The Banach--Zarecki theorem states that a real-valued function on a compact interval is absolutely continuous if and only if it is continuous, has bounded variation, and has Lusin's $N$-property. For $f$ of bounded variation this gives (3) implies (1), and steps [](#absolute-continuity-implies-small-image){.pf-ref} and [](#small-image-implies-lusin-n){.pf-ref} give the other implications. The function of step [](#lusin-n-does-not-imply-absolute-continuity){.pf-ref} has unbounded variation.
+:::
+
+:::
+
 :::
 :::
 

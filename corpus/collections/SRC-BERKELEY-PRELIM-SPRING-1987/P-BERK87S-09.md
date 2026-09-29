@@ -34,13 +34,16 @@ has a solution $x\in\mathbb C^n$, then it has a solution $x\in\mathbb Q^n$.
 :::
 
 ::: {.solution}
-<1>1. Elementary row reduction of the augmented matrix
+::: pf
+
+::: {.pf-step #reduction-in-q}
+Elementary row reduction of the augmented matrix
 $$
 [A\mid b]
 $$
 can be performed entirely inside $\QQ$.
 
-::: {.proof}
+::: pf-proof
 All entries of $A$ and $b$ lie in $\QQ$. The elementary row operations
 used in Gaussian elimination are:
 
@@ -52,7 +55,10 @@ The field $\QQ$ is closed under these operations. Hence the resulting
 row-echelon matrix still has rational entries.
 :::
 
-<1>2. The row-echelon form of $[A\mid b]$ contains no row of the form
+:::
+
+::: {.pf-step #no-inconsistent-row}
+The row-echelon form of $[A\mid b]$ contains no row of the form
 $$
 \begin{pmatrix}
 0&\cdots&0&\mid&c
@@ -61,7 +67,7 @@ $$
 c\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
 Elementary row operations do not change the solution set of a linear
 system over any field containing $\QQ$, in particular over $\CC$.
 Such a row would represent the impossible equation
@@ -72,10 +78,13 @@ Since the original system has a solution in $\CC^n$ by hypothesis, no
 such row can occur.
 :::
 
-<1>3. The row-echelon system has a solution all of whose coordinates
+:::
+
+::: {.pf-step #rational-solution-of-reduced-system}
+The row-echelon system has a solution all of whose coordinates
 lie in $\QQ$.
 
-::: {.proof}
+::: pf-proof
 Assign the value $0$ to every free variable. Starting from the bottom
 pivot row and proceeding upward, each pivot variable is then determined
 by an equation whose coefficients and right-hand side are rational and
@@ -86,27 +95,35 @@ variable.
 Thus the resulting solution vector belongs to $\QQ^n$.
 :::
 
-<1>4. The original system $Ax=b$ has a rational solution.
+:::
 
-::: {.proof}
-The vector constructed in step <1>3 solves the row-echelon system.
+::: {.pf-step #rational-solution-of-original}
+The original system $Ax=b$ has a rational solution.
+
+::: pf-proof
+The vector constructed in step [](#rational-solution-of-reduced-system){.pf-ref} solves the row-echelon system.
 Because elementary row operations are reversible and preserve the
 solution set, it also solves the original system.
 :::
 
-<1>5. Therefore the assertion in the problem is
+:::
+
+::: {.pf-step #true-boxed}
+Therefore the assertion in the problem is
 $$
 \boxed{\text{true}}.
 $$
 
-::: {.proof}
-Step <1>4 constructs a solution in $\QQ^n$ whenever a solution in
+::: pf-proof
+Step [](#rational-solution-of-original){.pf-ref} constructs a solution in $\QQ^n$ whenever a solution in
 $\CC^n$ exists.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required determination and proof.
+::: pf-qed
+Step [](#true-boxed){.pf-ref} is the required determination and proof.
+:::
+
 :::
 :::

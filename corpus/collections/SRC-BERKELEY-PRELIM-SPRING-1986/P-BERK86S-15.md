@@ -42,12 +42,15 @@ $$
 U(x)\coloneqq T(x)-a.
 $$
 
-<1>1. The map $U:\RR^2\to\RR^2$ is an isometry satisfying
+::: pf
+
+::: {.pf-step #u-is-isometry-fixing-origin}
+The map $U:\RR^2\to\RR^2$ is an isometry satisfying
 $$
 U(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 U(0)=T(0)-a=0.
@@ -63,7 +66,10 @@ $$
 because $T$ is an isometry.
 :::
 
-<1>2. The map $U$ preserves the Euclidean inner product:
+:::
+
+::: {.pf-step #u-preserves-inner-product}
+The map $U$ preserves the Euclidean inner product:
 $$
 \inner{U(x)}{U(y)}
 =
@@ -71,8 +77,8 @@ $$
 $$
 for all $x,y\in\RR^2$.
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+Step [](#u-is-isometry-fixing-origin){.pf-ref} gives
 $$
 \norm{U(x)}=\norm{x},
 \qquad
@@ -100,14 +106,17 @@ $$
 $$
 :::
 
-<1>3. If $e_1,e_2$ are the standard basis vectors and
+:::
+
+::: {.pf-step #orthonormal-images}
+If $e_1,e_2$ are the standard basis vectors and
 $$
 u_j\coloneqq U(e_j),
 $$
 then $(u_1,u_2)$ is an orthonormal basis of $\RR^2$.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#u-preserves-inner-product){.pf-ref},
 $$
 \inner{u_i}{u_j}
 =
@@ -119,7 +128,10 @@ Thus $u_1,u_2$ are orthonormal. Two orthonormal vectors in the
 two-dimensional space $\RR^2$ form a basis.
 :::
 
-<1>4. For every
+:::
+
+::: {.pf-step #u-coordinate-formula}
+For every
 $$
 x=x_1e_1+x_2e_2,
 $$
@@ -128,8 +140,8 @@ $$
 U(x)=x_1u_1+x_2u_2.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#u-preserves-inner-product){.pf-ref},
 $$
 \inner{U(x)}{u_j}
 =
@@ -139,7 +151,7 @@ $$
 =
 x_j
 $$
-for $j=1,2$. Since $(u_1,u_2)$ is an orthonormal basis by step <1>3,
+for $j=1,2$. Since $(u_1,u_2)$ is an orthonormal basis by step [](#orthonormal-images){.pf-ref},
 the coordinates of $U(x)$ in that basis are precisely these inner
 products. Hence
 $$
@@ -147,37 +159,45 @@ U(x)=x_1u_1+x_2u_2.
 $$
 :::
 
-<1>5. The map $U$ is linear and orthogonal.
+:::
 
-::: {.proof}
-Step <1>4 expresses $U$ as the linear map determined by
+::: {.pf-step #u-linear-orthogonal}
+The map $U$ is linear and orthogonal.
+
+::: pf-proof
+Step [](#u-coordinate-formula){.pf-ref} expresses $U$ as the linear map determined by
 $$
 U(e_1)=u_1,
 \qquad
 U(e_2)=u_2.
 $$
 Thus $U$ is linear. Its images of the standard orthonormal basis form the
-orthonormal basis $(u_1,u_2)$ from step <1>3, so $U$ is an orthogonal
+orthonormal basis $(u_1,u_2)$ from step [](#orthonormal-images){.pf-ref}, so $U$ is an orthogonal
 linear transformation.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #representation-boxed}
+Therefore
 $$
 \boxed{T(x)=a+U(x)}
 $$
 with $a\in\RR^2$ and $U$ orthogonal.
 
-::: {.proof}
+::: pf-proof
 The definition of $U$ gives
 $$
 T(x)=a+U(x),
 $$
-and step <1>5 proves the required property of $U$.
+and step [](#u-linear-orthogonal){.pf-ref} proves the required property of $U$.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 is the desired representation.
+::: pf-qed
+Step [](#representation-boxed){.pf-ref} is the desired representation.
+:::
+
 :::
 :::

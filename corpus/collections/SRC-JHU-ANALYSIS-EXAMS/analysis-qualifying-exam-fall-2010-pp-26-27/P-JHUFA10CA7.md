@@ -65,9 +65,12 @@ so this requires checking at most seven real numbers.
 Thus (3) is a necessary and sufficient condition on the
 coefficients $a,b$.
 
-<1>1. Every solution is affine.
+::: pf
 
-::: {.proof}
+::: pf-step
+Every solution is affine.
+
+::: pf-proof
 On $|z|=R>1$ the hypothesis gives
 $|f(z)|\leq R^2+R^{3/2}$. If $c_k$ is the $k$th
 Taylor coefficient of $f$ at zero, Cauchy's estimate gives
@@ -82,9 +85,12 @@ $f(iR)/R^2=-c+ia/R+b/R^2$ tends to $-c$, whereas
 its modulus is at most $R^{-1/2}$. Therefore $c=0$.
 :::
 
-<1>2. For affine functions, (1) is equivalent to the original inequality.
+:::
 
-::: {.proof}
+::: {.pf-step #affine-equiv-condition-1}
+For affine functions, (1) is equivalent to the original inequality.
+
+::: pf-proof
 Necessity follows by setting $z=rw$, $|w|=1$, and letting
 $r\downarrow1$ in the original inequality.
 Conversely assume (1). At $w=i$ and $w=-i$ it gives
@@ -108,9 +114,12 @@ since $r>1$. This last expression is precisely
 $|rw|^{3/2}+|\operatorname{Re}(rw)|^2$, proving sufficiency.
 :::
 
-<1>3. The finite coefficient test (3) is equivalent to (1).
+:::
 
-::: {.proof}
+::: pf-step
+The finite coefficient test (3) is equivalent to (1).
+
+::: pf-proof
 Parametrize the unit circle except $-1$ by
 $$
 w(t)=\frac{1-t^2+2it}{1+t^2},\qquad t\in\mathbb R.
@@ -127,7 +136,7 @@ operations are reversible because both sides of (1)
 are nonnegative. Continuity supplies (1) also at $w=-1$
 by letting $|t|\to\infty$.
 
-Step <1>2 already shows that (1) implies
+Step [](#affine-equiv-condition-1){.pf-ref} already shows that (1) implies
 $|a|^2+|b|^2\leq1$. Under this inequality the leading
 coefficient of $Q_{a,b}$ is
 $$
@@ -141,5 +150,9 @@ nonnegative everywhere exactly when it is nonnegative
 at every real critical point. Its degree-seven derivative
 has at most seven distinct real roots. This proves (3)
 and completes the classification.
+:::
+
+:::
+
 :::
 :::

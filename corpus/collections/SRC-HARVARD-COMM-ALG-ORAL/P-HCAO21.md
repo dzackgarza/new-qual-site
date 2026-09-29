@@ -55,12 +55,15 @@ We use the local injective-dimension definition of Gorenstein:
 the ring is commutative and Noetherian, and each localization
 at a maximal ideal has finite injective dimension over itself.
 
-<1>1. For every $R$-module $M$ there is a natural isomorphism
+::: pf
+
+::: {.pf-step #hom-r-d-iso-hom-k}
+For every $R$-module $M$ there is a natural isomorphism
 $$
 \operatorname{Hom}_R(M,D)\cong\operatorname{Hom}_k(M,k).
 $$
 
-::: {.proof}
+::: pf-proof
 Send an $R$-linear map $u:M\to D$ to
 $\lambda_u(m)=u(m)(1)$. Conversely, for a $k$-linear
 $\lambda:M\to k$, define
@@ -79,13 +82,16 @@ They commute with precomposition of module maps, proving
 naturality.
 :::
 
-<1>2. The module $D$ is injective and separates nonzero elements
+:::
+
+::: {.pf-step #d-injective-cogenerator}
+The module $D$ is injective and separates nonzero elements
 of every $R$-module.
 
-::: {.proof}
+::: pf-proof
 For an inclusion $M\subseteq N$, any $k$-linear functional
 on $M$ extends to $N$ by extending a vector-space basis
-[@DF04]. Through step <1>1, this says exactly that each
+[@DF04]. Through step [](#hom-r-d-iso-hom-k){.pf-ref}, this says exactly that each
 $R$-linear map $M\to D$ extends to $N$. This is injectivity.
 If $0\ne m\in M$, choose a $k$-linear functional with
 $\lambda(m)=1$. The corresponding map satisfies
@@ -94,11 +100,14 @@ This is the asserted cogenerator property. Neither conclusion
 uses the Gorenstein or dimension hypotheses.
 :::
 
-<1>3. The specified augmentation gives
+:::
+
+::: {.pf-step #hom-r-k-d-cong-k}
+The specified augmentation gives
 $\operatorname{Hom}_R(k,D)\cong k$ explicitly.
 
-::: {.proof}
-Apply step <1>1 to the $R$-module $k$ defined by
+::: pf-proof
+Apply step [](#hom-r-d-iso-hom-k){.pf-ref} to the $R$-module $k$ defined by
 $\varepsilon$. Evaluation at $1\in k$ identifies
 $\operatorname{Hom}_k(k,k)$ with $k$. The resulting map
 is $u\mapsto u(1)(1)$. Its inverse sends $a\in k$ to
@@ -112,10 +121,13 @@ Hom space has $k$-dimension one, independently of whether
 $R$ is finite-dimensional or Gorenstein.
 :::
 
-<1>4. If $A$ is a finite-dimensional local Gorenstein
+:::
+
+::: {.pf-step #dual-of-local-gorenstein-is-free-rank-one}
+If $A$ is a finite-dimensional local Gorenstein
 $k$-algebra, then $D_A=\operatorname{Hom}_k(A,k)\cong A$.
 
-::: {.proof}
+::: pf-proof
 Write $\mathfrak n$ for its maximal ideal and
 $\kappa=A/\mathfrak n$. First, $\mathfrak n$ is nilpotent.
 Its powers stabilize by finite $k$-dimension, say
@@ -148,7 +160,7 @@ $$
 \longrightarrow D_A^{b_1}\longrightarrow D_A^{b_2}
 \longrightarrow\cdots .
 $$
-This is an injective resolution by step <1>2, because each
+This is an injective resolution by step [](#d-injective-cogenerator){.pf-ref}, because each
 finite sum of injective modules is injective. Its differentials
 still have entries in $\mathfrak n$. Applying
 $\operatorname{Hom}_A(\kappa,-)$ makes all differentials
@@ -176,10 +188,13 @@ Thus $d=0$ and $D_A$ is free. Finally
 $\dim_kD_A=\dim_kA>0$, so its free rank is exactly one.
 :::
 
-<1>5. The same rank-one assertion holds for finite-dimensional
+:::
+
+::: {.pf-step #dual-finite-dim-non-local-rank-one}
+The same rank-one assertion holds for finite-dimensional
 $R$ without assuming localness.
 
-::: {.proof}
+::: pf-proof
 There are only finitely many maximal ideals
 $\mathfrak m_1,\ldots,\mathfrak m_t$. Indeed, the Chinese
 remainder theorem gives a surjection to the product of
@@ -187,7 +202,7 @@ the residue fields at any finite set of distinct maximal
 ideals [@DF04]. Counting $k$-dimensions bounds the size of
 that set by $\dim_kR$, so the full set is finite.
 Put $J=\bigcap_i\mathfrak m_i$. Its powers stabilize.
-The determinant argument in step <1>4 applies to
+The determinant argument in step [](#dual-of-local-gorenstein-is-free-rank-one){.pf-ref} applies to
 $J^h=J J^h$: a determinant congruent to one modulo $J$
 is a unit, because it belongs to no maximal ideal.
 It follows that $J^h=0$ for some $h\geq1$.
@@ -216,33 +231,39 @@ $$
 D\cong\bigoplus_{i=1}^t\operatorname{Hom}_k(A_i,k)
 \cong\bigoplus_{i=1}^t A_i\cong R,
 $$
-where the middle isomorphism is step <1>4. These
+where the middle isomorphism is step [](#dual-of-local-gorenstein-is-free-rank-one){.pf-ref}. These
 isomorphisms depend on a choice of generator of each
 $A_i$-module $\operatorname{Hom}_k(A_i,k)$.
 :::
 
-<1>6. In the finite-dimensional local case with residue field
+:::
+
+::: pf-step
+In the finite-dimensional local case with residue field
 $k$, $D$ is the injective hull of $k$.
 
-::: {.proof}
+::: pf-proof
 Let $\mathfrak m=\ker\varepsilon$. Embed $k$ in $D$ by
-$a\mapsto a\varepsilon$. Step <1>3 says that the submodule
+$a\mapsto a\varepsilon$. Step [](#hom-r-k-d-cong-k){.pf-ref} says that the submodule
 annihilated by $\mathfrak m$ is exactly $k\varepsilon$:
 such elements are the values at $1$ of maps $k\to D$.
 For any nonzero submodule $N\subseteq D$, choose the largest
 $j$ for which $\mathfrak m^jN\ne0$. It exists because
-$\mathfrak m$ is nilpotent, as proved in step <1>4.
+$\mathfrak m$ is nilpotent, as proved in step [](#dual-of-local-gorenstein-is-free-rank-one){.pf-ref}.
 Then $0\ne\mathfrak m^jN\subseteq N\cap k\varepsilon$.
 Thus the embedding is essential: every nonzero submodule
 of $D$ meets its image. Since $D$ is injective, this is
 an injective hull, by the definition of an injective hull.
 :::
 
-<1>7. For $k=\mathbb F_2$ and $R=k(t)$, the ring $R$ is a
+:::
+
+::: {.pf-step #counterexample-field-extension}
+For $k=\mathbb F_2$ and $R=k(t)$, the ring $R$ is a
 zero-dimensional Gorenstein $k$-algebra with $D\not\cong R$
 and with no $k$-algebra homomorphism $R\to k$.
 
-::: {.proof}
+::: pf-proof
 Take $k=\mathbb F_2$ and $R=k(t)$ with $t$ transcendental.
 This is a field, hence has Krull dimension zero. It is
 Gorenstein: as a module over itself it is injective,
@@ -259,14 +280,18 @@ There is no $k$-algebra map $k(t)\to k$. Such a map would
 send $t$ to some $a\in k$ and send the invertible element
 $t-a$ to zero, impossible for a unital homomorphism.
 :::
+
+:::
+
+:::
 :::
 
 ::: {.remark}
 A $k$-algebra structure on $R$ is a ring map $k\to R$; an
 $R$-module structure on $k$ is the extra datum of the
-augmentation $\varepsilon$, which step <1>7 shows need not
+augmentation $\varepsilon$, which step [](#counterexample-field-extension){.pf-ref} shows need not
 exist. Krull dimension zero does not imply
 $\dim_kR<\infty$. The isomorphism $D\cong R$ of steps
-<1>4 and <1>5 uses $\dim_kR<\infty$; steps <1>1--<1>3 hold
+[](#dual-of-local-gorenstein-is-free-rank-one){.pf-ref} and [](#dual-finite-dim-non-local-rank-one){.pf-ref} uses $\dim_kR<\infty$; steps [](#hom-r-d-iso-hom-k){.pf-ref}, [](#d-injective-cogenerator){.pf-ref} and [](#hom-r-k-d-cong-k){.pf-ref} hold
 for every $k$-algebra $R$.
 :::

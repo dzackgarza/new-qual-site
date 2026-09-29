@@ -35,8 +35,13 @@ Let $A$ be a PID.
 
 
 ::: {.solution}
-<1>1. Every finitely generated projective \(A\)-module is a direct summand of a finite-rank free module.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #projective-is-summand}
+Every finitely generated projective \(A\)-module is a direct summand of a finite-rank free module.
+
+::: pf-proof
 Let \(P\) be finitely generated and projective.
 Choose generators \(p_1,\ldots,p_m\).
 They define a surjection
@@ -58,15 +63,23 @@ A^m=s(P)\oplus\ker\pi,
 so \(P\cong s(P)\) is a submodule, indeed a direct summand, of the finite free module \(A^m\).
 :::
 
-<1>2. Every finitely generated projective \(A\)-module is free.
-::: {.proof}
+:::
+
+::: {.pf-step #part-i-projective-free}
+Every finitely generated projective \(A\)-module is free.
+
+::: pf-proof
 A submodule of a free module over a PID is free.
-By <1>1, a finitely generated projective module \(P\) is isomorphic to a submodule of the free module \(A^m\).
+By step [](#projective-is-summand){.pf-ref}, a finitely generated projective module \(P\) is isomorphic to a submodule of the free module \(A^m\).
 Hence \(P\) is free.
 :::
 
-<1>3. Every flat \(A\)-module is torsion-free.
-::: {.proof}
+:::
+
+::: {.pf-step #flat-torsion-free}
+Every flat \(A\)-module is torsion-free.
+
+::: pf-proof
 Let \(M\) be flat and let \(0\neq a\in A\).
 Because \(A\) is an integral domain, multiplication by \(a\) gives an injective map
 \[
@@ -97,10 +110,14 @@ m=0.
 Since this holds for every nonzero \(a\in A\), the module \(M\) is torsion-free.
 :::
 
-<1>4. Every finitely generated flat \(A\)-module is free.
-::: {.proof}
+:::
+
+::: {.pf-step #part-ii-flat-free}
+Every finitely generated flat \(A\)-module is free.
+
+::: pf-proof
 Let \(M\) be finitely generated and flat.
-By <1>3, \(M\) is torsion-free.
+By step [](#flat-torsion-free){.pf-ref}, \(M\) is torsion-free.
 The structure theorem for finitely generated modules over a PID gives
 \[
 M\cong A^r\oplus T,
@@ -115,5 +132,13 @@ Hence
 M\cong A^r,
 \]
 so \(M\) is free.
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-i-projective-free){.pf-ref} answers part (i), and step [](#part-ii-flat-free){.pf-ref} answers part (ii).
+:::
+
 :::
 :::

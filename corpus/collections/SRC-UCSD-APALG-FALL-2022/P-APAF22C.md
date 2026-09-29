@@ -34,6 +34,7 @@ Prove the following “approximate rank–nullity” statement: there exists a s
 :::
 
 ::: {.solution}
+
 Let
 \[
 U=v_0^\perp\subseteq V
@@ -43,8 +44,12 @@ and define
 W'=\phi(U)\subseteq W.
 \]
 
-<1>1. The subspace $W'$ has dimension at most $n-1$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #wprime-dimension-bound}
+The subspace $W'$ has dimension at most $n-1$.
+
+::: pf-proof
 Since $\|v_0\|=1$, the vector $v_0$ is nonzero. Therefore its orthogonal complement $U=v_0^\perp$ has codimension one in $V$, so
 \[
 \dim U=n-1.
@@ -55,7 +60,10 @@ The image of a linear map has dimension at most the dimension of its domain, hen
 \]
 :::
 
-<1>2. Every $v\in V$ has a unique orthogonal decomposition
+:::
+
+::: {.pf-step #orthogonal-decomposition-bound}
+Every $v\in V$ has a unique orthogonal decomposition
 \[
 v=av_0+u,
 \qquad u\in U,
@@ -64,7 +72,8 @@ where
 \[
 |a|\le\|v\|.
 \]
-::: {.proof}
+
+::: pf-proof
 Because $\|v_0\|=1$, take
 \[
 a=\langle v,v_0\rangle,
@@ -85,16 +94,20 @@ so $u\in U$. By Cauchy--Schwarz,
 \]
 :::
 
-<1>3. If $\|v\|\le1$, there exists $w\in W'$ such that
+:::
+
+::: {.pf-step #approximation-property}
+If $\|v\|\le1$, there exists $w\in W'$ such that
 \[
 \|\phi(v)-w\|\le10^{-10}.
 \]
-::: {.proof}
+
+::: pf-proof
 Write
 \[
 v=av_0+u
 \]
-as in <1>2 and set
+as in step [](#orthogonal-decomposition-bound){.pf-ref} and set
 \[
 w=\phi(u).
 \]
@@ -113,8 +126,17 @@ Therefore
 \]
 :::
 
-<1>4. Thus $W'=\phi(v_0^\perp)$ satisfies the required approximate rank--nullity statement.
-::: {.proof}
-The dimension bound is <1>1 and the approximation property for every vector in the unit ball is <1>3.
 :::
+
+::: pf-step
+Thus $W'=\phi(v_0^\perp)$ satisfies the required approximate rank--nullity statement.
+
+::: pf-proof
+The dimension bound is step [](#wprime-dimension-bound){.pf-ref} and the approximation property for every vector in the unit ball is step [](#approximation-property){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

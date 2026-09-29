@@ -41,11 +41,15 @@ H=V_+(F)
 \]
 for a nonzero homogeneous polynomial $F\in S$ of positive degree.
 
-<1>1. The complement of $H$ is the standard projective open
+::: pf
+
+::: {.pf-step #complement-is-dplus}
+The complement of $H$ is the standard projective open
 \[
 \mathbb P^2\setminus H=D_+(F).
 \]
-::: {.proof}
+
+::: pf-proof
 By definition,
 \[
 V_+(F)
@@ -58,14 +62,18 @@ D_+(F)
 \]
 :::
 
-<1>2. For every homogeneous $F$ of positive degree,
+:::
+
+::: {.pf-step #dplus-affine-chart}
+For every homogeneous $F$ of positive degree,
 \[
 \boxed{
 D_+(F)\cong\operatorname{Spec}(S_F)_0,
 }
 \]
 where $(S_F)_0$ is the degree-zero part of the graded localization $S_F$.
-::: {.proof}
+
+::: pf-proof
 This is the standard affine-chart construction for $\operatorname{Proj}S$.
 
 Explicitly, a homogeneous prime
@@ -77,22 +85,33 @@ extends to a homogeneous prime $\mathfrak pS_F$ of the localization, and taking 
 Conversely, a prime of $(S_F)_0$ determines the corresponding homogeneous prime of $S$ not containing $F$.  These identifications are inverse and identify the structure sheaves, yielding the displayed isomorphism of schemes.
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #complement-affine}
+Hence
 \[
 \boxed{
 \mathbb P^2_k\setminus H\text{ is affine}.
 }
 \]
-::: {.proof}
-By <1>1 the complement is $D_+(F)$, and by <1>2 this is the spectrum of the ring $(S_F)_0$.
+
+::: pf-proof
+By step [](#complement-is-dplus){.pf-ref} the complement is $D_+(F)$, and by step [](#dplus-affine-chart){.pf-ref} this is the spectrum of the ring $(S_F)_0$.
 :::
 
-<1>4. The complement of every hypersurface $V_+(F)$ in $\mathbb P^2_k$ is affine, whether $F$ is irreducible, reducible, or has repeated factors, and whether $V_+(F)$ is smooth or singular.
-::: {.proof}
-Steps <1>1--<1>3 use only that $H$ is cut out scheme-theoretically by one homogeneous equation $F$ of positive degree, so its complement is the standard affine open $D_+(F)$.
 :::
 
-<1>5. For example, if
+::: {.pf-step #general-hypersurface-complement}
+The complement of every hypersurface $V_+(F)$ in $\mathbb P^2_k$ is affine, whether $F$ is irreducible, reducible, or has repeated factors, and whether $V_+(F)$ is smooth or singular.
+
+::: pf-proof
+Steps [](#complement-is-dplus){.pf-ref}, [](#dplus-affine-chart){.pf-ref} and [](#complement-affine){.pf-ref} use only that $H$ is cut out scheme-theoretically by one homogeneous equation $F$ of positive degree, so its complement is the standard affine open $D_+(F)$.
+:::
+
+:::
+
+::: pf-step
+For example, if
 \[
 H=V_+(x_0),
 \]
@@ -101,7 +120,8 @@ then
 D_+(x_0)\cong\operatorname{Spec}k\!\left[\frac{x_1}{x_0},\frac{x_2}{x_0}\right]
 \cong\mathbb A^2_k.
 \]
-::: {.proof}
+
+::: pf-proof
 Here
 \[
 (S_{x_0})_0
@@ -110,8 +130,11 @@ Here
 which is the usual affine chart of projective space.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Step <1>3 answers the question; step <1>4 records the full generality of the argument.
+:::
+
+::: pf-qed
+Step [](#complement-affine){.pf-ref} answers the question; step [](#general-hypersurface-complement){.pf-ref} records the full generality of the argument.
+:::
+
 :::
 :::

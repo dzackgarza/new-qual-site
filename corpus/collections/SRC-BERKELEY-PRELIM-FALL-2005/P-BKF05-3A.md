@@ -33,10 +33,14 @@ Find an explicit conformal equivalence from \(U\) onto the open unit disk.
 :::
 
 ::: {.solution}
+
 Let $\sqrt{\phantom z}$ denote the principal square root on
 $\CC\sm(-\infty,0]$.
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #T1-conformal}
+The map
 $$
 T_1:U\longrightarrow\CC\sm(-\infty,1],
 \qquad
@@ -44,7 +48,7 @@ T_1(z)=z^2,
 $$
 is a conformal equivalence.
 
-::: {.proof}
+::: pf-proof
 On the open right half-plane, every point has argument in
 $(-\pi/2,\pi/2)$, so squaring maps that half-plane bijectively and
 holomorphically onto $\CC\sm(-\infty,0]$. Its derivative $2z$ never
@@ -63,7 +67,10 @@ $$
 Thus $T_1$ is a conformal equivalence onto the stated slit plane.
 :::
 
-<1>2. Translation by $-1$ gives a conformal equivalence
+:::
+
+::: {.pf-step #T2-conformal}
+Translation by $-1$ gives a conformal equivalence
 $$
 T_2:\CC\sm(-\infty,1]
 \longrightarrow
@@ -72,12 +79,15 @@ T_2:\CC\sm(-\infty,1]
 T_2(w)=w-1.
 $$
 
-::: {.proof}
+::: pf-proof
 Translation is biholomorphic on $\CC$, and it sends the deleted ray
 $(-\infty,1]$ exactly onto $(-\infty,0]$.
 :::
 
-<1>3. The principal square root gives a conformal equivalence
+:::
+
+::: {.pf-step #T3-conformal}
+The principal square root gives a conformal equivalence
 $$
 T_3:\CC\sm(-\infty,0]
 \longrightarrow
@@ -86,7 +96,7 @@ T_3:\CC\sm(-\infty,0]
 T_3(\zeta)=\sqrt{\zeta}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $\zeta=re^{i\theta}$ with $r>0$ and
 $-\pi<\theta<\pi$, then
 $$
@@ -98,14 +108,17 @@ biholomorphically onto $\CC\sm(-\infty,0]$, so it is the inverse of
 this branch of the square root.
 :::
 
-<1>4. The Möbius transformation
+:::
+
+::: {.pf-step #T4-conformal}
+The Möbius transformation
 $$
 T_4(w)=\frac{w-1}{w+1}
 $$
 is a conformal equivalence from the open right half-plane onto the open
 unit disk.
 
-::: {.proof}
+::: pf-proof
 For $\operatorname{Re}w>0$,
 $$
 \abs{w+1}^2-\abs{w-1}^2
@@ -128,7 +141,10 @@ $$
 Thus $T_4$ is biholomorphic between the two domains.
 :::
 
-<1>5. The map
+:::
+
+::: {.pf-step #F-conformal-equivalence}
+The map
 $$
 \boxed{
 F(z)=
@@ -140,22 +156,25 @@ $$
 \{\,\zeta\in\CC:\abs{\zeta}<1\,\}.
 $$
 
-::: {.proof}
-By steps <1>1--<1>4,
+::: pf-proof
+By steps [](#T1-conformal){.pf-ref}, [](#T2-conformal){.pf-ref}, [](#T3-conformal){.pf-ref} and [](#T4-conformal){.pf-ref},
 $$
 F=T_4\circ T_3\circ T_2\circ T_1
 $$
-is a composition of conformal equivalences. For $z\in U$, step <1>1
+is a composition of conformal equivalences. For $z\in U$, step [](#T1-conformal){.pf-ref}
 gives $z^2\notin(-\infty,1]$, hence
 $z^2-1\notin(-\infty,0]$, so the principal square root appearing in
 the displayed formula is defined. Therefore the composition is exactly
 the stated explicit conformal equivalence.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the requested map and proves that it is a conformal
+::: pf-qed
+Step [](#F-conformal-equivalence){.pf-ref} gives the requested map and proves that it is a conformal
 equivalence.
 :::
+
+:::
+
 :::

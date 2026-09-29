@@ -47,10 +47,13 @@ The number $\sqrt{2-\sqrt2}$ is another root of $p(x)$.
 ::: {.solution}
 Put $a=\sqrt{2+\sqrt2}>0$ and $b=\sqrt{2-\sqrt2}>0$.
 
-<1>1. The number $a$ has minimal polynomial
+::: pf
+
+::: pf-step
+The number $a$ has minimal polynomial
 $p(x)=x^4-4x^2+2$ over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
 Since $a^2-2=\sqrt2$, squaring gives
 $(a^2-2)^2=2$, or $a^4-4a^2+2=0$.
 The polynomial is Eisenstein at two, so it is
@@ -58,10 +61,13 @@ irreducible over $\mathbb Q$ [@DF04]. Thus it is
 the minimal polynomial and $[\mathbb Q(a):\mathbb Q]=4$.
 :::
 
-<1>2. The extension $\mathbb Q(a)/\mathbb Q$ is
+:::
+
+::: pf-step
+The extension $\mathbb Q(a)/\mathbb Q$ is
 Galois with cyclic group of order four.
 
-::: {.proof}
+::: pf-proof
 The four roots of $p$ are $a,-a,b,-b$: their squares
 are the two roots $2+\sqrt2,2-\sqrt2$ of
 $y^2-4y+2$. These four real roots are distinct.
@@ -89,7 +95,10 @@ the Galois group of order four. The group is $C_4$,
 not the Klein four-group.
 :::
 
-<1>3. For $f(x)=x^3-5$, the splitting field and Galois
+:::
+
+::: pf-step
+For $f(x)=x^3-5$, the splitting field and Galois
 group are
 $$
 K=\mathbb Q(c,\zeta),\qquad
@@ -97,7 +106,7 @@ K=\mathbb Q(c,\zeta),\qquad
 \quad c=\sqrt[3]{5}>0,\quad \zeta=e^{2\pi i/3}.
 $$
 
-::: {.proof}
+::: pf-proof
 The roots are $c,\zeta c,\zeta^2c$. Their field
 contains $c$ and their ratio $\zeta$, so it is
 exactly $K$. Eisenstein at five makes $x^3-5$
@@ -118,16 +127,23 @@ and interchanges the other two roots. These give
 $r^3=s^2=1$ and $srs=r^{-1}$ and generate the group.
 :::
 
-<1>4. A proper Galois subextension in part (3) is
+:::
+
+::: pf-step
+A proper Galois subextension in part (3) is
 $L=\mathbb Q(\zeta)$.
 
-::: {.proof}
+::: pf-proof
 The field $L$ is the splitting field of $x^2+x+1$,
 with two distinct roots $\zeta,\zeta^2$, so it is
 Galois over $\mathbb Q$. Its degree is two because
 its roots are nonreal and hence not rational.
 Since $[K:\mathbb Q]=6$, both inclusions
 $\mathbb Q\subsetneq L\subsetneq K$ are strict.
+:::
+
+:::
+
 :::
 :::
 

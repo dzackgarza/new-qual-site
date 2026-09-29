@@ -36,8 +36,13 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. The quantities $\|f\|_p$ are finite for $0<p\le1$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The quantities $\|f\|_p$ are finite for $0<p\le1$.
+
+::: pf-proof
 For $t\ge0$ and $0<p\le1$,
 \[
 t^p\le 1+t.
@@ -49,8 +54,12 @@ Hence
 Thus $\|f\|_p=(\int|f|^p)^{1/p}$ is well defined and finite for every $0<p\le1$.
 :::
 
-<1>2. The logarithm of the $p$th moment is convex.
-::: {.proof}
+:::
+
+::: pf-step
+The logarithm of the $p$th moment is convex.
+
+::: pf-proof
 Assume first that $f$ is not zero almost everywhere and define
 \[
 A(p)=\int_0^1 |f(x)|^p\,dx,
@@ -74,8 +83,12 @@ F((1-\theta)p+\theta q)
 Thus $F$ is convex on $(0,1]$.
 :::
 
-<1>3. Compute the zeroth-moment limit.
-::: {.proof}
+:::
+
+::: {.pf-step #zeroth-moment-limit}
+Compute the zeroth-moment limit.
+
+::: pf-proof
 Let
 \[
 \alpha=m\{x:f(x)\ne0\}\in(0,1].
@@ -95,9 +108,13 @@ F(p)\longrightarrow\log\alpha.
 \]
 :::
 
-<1>4. If the zero set has positive measure, the limit is zero.
-::: {.proof}
-If $m\{f=0\}>0$, then $\alpha<1$. By step <1>3,
+:::
+
+::: {.pf-step #positive-measure-zero-limit-zero}
+If the zero set has positive measure, the limit is zero.
+
+::: pf-proof
+If $m\{f=0\}>0$, then $\alpha<1$. By step [](#zeroth-moment-limit){.pf-ref},
 \[
 F(p)\longrightarrow\log\alpha<0.
 \]
@@ -112,9 +129,13 @@ and so
 If $f=0$ almost everywhere, this conclusion is immediate because every $\|f\|_p=0$.
 :::
 
-<1>5. If $f\ne0$ almost everywhere, the limit still exists.
-::: {.proof}
-Now suppose $\alpha=1$. Step <1>3 gives $F(p)\to0$, so define $F(0)=0$. The resulting function is convex on $[0,1]$.
+:::
+
+::: {.pf-step #limit-exists-nonzero-ae}
+If $f\ne0$ almost everywhere, the limit still exists.
+
+::: pf-proof
+Now suppose $\alpha=1$. Step [](#zeroth-moment-limit){.pf-ref} gives $F(p)\to0$, so define $F(0)=0$. The resulting function is convex on $[0,1]$.
 
 For $0<p<q\le1$, convexity at
 \[
@@ -139,8 +160,16 @@ is nondecreasing on $(0,1]$. Hence it has a limit as $p\downarrow0$, equal to it
 Exponentiating, $\|f\|_p$ therefore has a limit in $[0,\infty)$.
 :::
 
-<1>6. Conclude both assertions.
-::: {.proof}
-If $f=0$ almost everywhere, the limit is $0$. If the zero set has positive but not full measure, step <1>4 gives limit $0$. If $f\ne0$ almost everywhere, step <1>5 proves existence of the limit. These three cases cover every $f\in L^1([0,1])$, which proves both claims.
+:::
+
+::: pf-step
+Conclude both assertions.
+
+::: pf-proof
+If $f=0$ almost everywhere, the limit is $0$. If the zero set has positive but not full measure, step [](#positive-measure-zero-limit-zero){.pf-ref} gives limit $0$. If $f\ne0$ almost everywhere, step [](#limit-exists-nonzero-ae){.pf-ref} proves existence of the limit. These three cases cover every $f\in L^1([0,1])$, which proves both claims.
+:::
+
+:::
+
 :::
 :::

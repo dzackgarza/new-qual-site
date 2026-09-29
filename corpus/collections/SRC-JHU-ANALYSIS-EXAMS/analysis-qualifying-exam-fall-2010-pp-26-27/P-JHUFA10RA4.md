@@ -40,8 +40,13 @@ Show that if $f \in L^2$ satisfies $Uf = \lambda f$, for some $\lambda \in \math
 :::
 
 ::: {.solution}
-<1>1. A nonzero solution would have $|\lambda|=1$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+A nonzero solution would have $|\lambda|=1$.
+
+::: pf-proof
 Suppose
 \[
 Uf=\lambda f,
@@ -62,8 +67,12 @@ Thus either $f=0$ in $L^2$, in which case there is nothing to prove, or else
 Since $\lambda\in\mathbb R$, a nonzero eigenvector could therefore occur only for $\lambda=1$ or $\lambda=-1$.
 :::
 
-<1>2. Either remaining value forces the squared modulus to have infinite integral unless $f=0$.
-::: {.proof}
+:::
+
+::: pf-step
+Either remaining value forces the squared modulus to have infinite integral unless $f=0$.
+
+::: pf-proof
 In either case,
 \[
 |f(x-1)|=|f(x)|
@@ -90,5 +99,9 @@ Because $f\in L^2(\mathbb R)$, this sum is finite. Therefore $a=0$, and conseque
 \[
 f=0\qquad\text{a.e. on }\mathbb R.
 \]
+:::
+
+:::
+
 :::
 :::

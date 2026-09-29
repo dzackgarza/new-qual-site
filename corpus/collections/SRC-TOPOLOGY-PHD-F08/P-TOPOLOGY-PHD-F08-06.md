@@ -45,13 +45,18 @@ Justify your answers.
 :::
 
 ::: {.solution}
-<1>1. A surjection $q:X\to Y$ is an identification (quotient) map if, for every $U\subseteq Y$,
+
+::: pf
+
+::: {.pf-step #identification-definition}
+A surjection $q:X\to Y$ is an identification (quotient) map if, for every $U\subseteq Y$,
 \[
 U\text{ is open in }Y
 \quad\Longleftrightarrow\quad
 q^{-1}(U)\text{ is open in }X.
 \]
-::: {.proof}
+
+::: pf-proof
 This is the definition.
 Equivalently, by taking complements, a surjective map $q$ is an identification map exactly when
 \[
@@ -62,9 +67,13 @@ q^{-1}(F)\text{ is closed in }X
 for every $F\subseteq Y$.
 :::
 
-<1>2. If $\pi:X\to Y$ is surjective, continuous, and closed, then $\pi$ is an identification map.
-::: {.proof}
-By <1>1 it suffices to characterize closed subsets of $Y$ by their inverse images.
+:::
+
+::: pf-step
+If $\pi:X\to Y$ is surjective, continuous, and closed, then $\pi$ is an identification map.
+
+::: pf-proof
+By step [](#identification-definition){.pf-ref} it suffices to characterize closed subsets of $Y$ by their inverse images.
 
 Let $F\subseteq Y$.
 If $F$ is closed in $Y$, continuity of $\pi$ gives
@@ -93,8 +102,12 @@ F\text{ closed in }Y
 so $\pi$ is an identification map.
 :::
 
-<1>3. Every surjective, continuous, open map is an identification map.
-::: {.proof}
+:::
+
+::: pf-step
+Every surjective, continuous, open map is an identification map.
+
+::: pf-proof
 Let $U\subseteq Y$.
 If $U$ is open in $Y$, continuity gives
 \[
@@ -119,6 +132,11 @@ U\text{ open in }Y
 \quad\Longleftrightarrow\quad
 \pi^{-1}(U)\text{ open in }X,
 \]
-which is the criterion in <1>1.
+which is the criterion in step [](#identification-definition){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

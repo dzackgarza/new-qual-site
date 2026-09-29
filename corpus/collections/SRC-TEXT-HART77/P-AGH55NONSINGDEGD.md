@@ -30,13 +30,16 @@ For every degree $d > 0$, and every $p = 0$ or a prime number, give the equation
 Let $[x:y:z]$ be homogeneous coordinates on $\PP_k^2$.
 We give equations whose Jacobian has no common projective zero even after extending the ground field, so the resulting curves are geometrically nonsingular.
 
-<1>1. If $p=0$ or $p\nmid d$, the Fermat equation
+::: pf
+
+::: {.pf-step #fermat-nonsingular}
+If $p=0$ or $p\nmid d$, the Fermat equation
 $$
 \boxed{x^d+y^d+z^d=0}
 $$
 defines a nonsingular plane curve of degree $d$.
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 F=x^d+y^d+z^d.
@@ -57,13 +60,16 @@ Hence the projective hypersurface has no singular point by the Jacobian criterio
 The same argument works over every extension field of $k$.
 :::
 
-<1>2. If $p>0$ and $p\mid d$, the equation
+:::
+
+::: {.pf-step #characteristic-p-nonsingular}
+If $p>0$ and $p\mid d$, the equation
 $$
 \boxed{x^{d-1}y+y^{d-1}z+z^d=0}
 $$
 defines a nonsingular plane curve of degree $d$.
 
-::: {.proof}
+::: pf-proof
 Now $d=0$ in $k$, while $d-1=-1$ is nonzero.
 For
 $$
@@ -96,9 +102,12 @@ $$
 and give the same conclusion.
 :::
 
-<1>3. In either case the nonsingular hypersurface is a curve, i.e. a geometrically irreducible one-dimensional projective variety.
+:::
 
-::: {.proof}
+::: {.pf-step #geometrically-irreducible}
+In either case the nonsingular hypersurface is a curve, i.e. a geometrically irreducible one-dimensional projective variety.
+
+::: pf-proof
 Each displayed equation is a nonzero homogeneous polynomial of positive degree in $\PP^2$, so every irreducible component has dimension one.
 If the polynomial became reducible over an algebraic closure, write it as $AB$ with $A,B$ nonconstant homogeneous polynomials.
 The positive-degree plane curves $A=0$ and $B=0$ meet by the projective-plane intersection argument in [[P-AGH31CONICS]], step <1>5.
@@ -107,14 +116,16 @@ $$
 \partial(AB)=A\,\partial B+B\,\partial A
 $$
 vanish.
-That would contradict steps <1>1 or <1>2.
+That would contradict steps [](#fermat-nonsingular){.pf-ref} or [](#characteristic-p-nonsingular){.pf-ref}.
 Thus the hypersurface is geometrically irreducible and nonsingular, hence is a plane curve of degree $d$ in the sense of the statement.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 covers all characteristics not dividing $d$, and step <1>2 covers the complementary positive-characteristic case.
-Step <1>3 verifies that the resulting smooth hypersurfaces are curves.
+::: pf-qed
+Step [](#fermat-nonsingular){.pf-ref} covers all characteristics not dividing $d$, and step [](#characteristic-p-nonsingular){.pf-ref} covers the complementary positive-characteristic case.
+Step [](#geometrically-irreducible){.pf-ref} verifies that the resulting smooth hypersurfaces are curves.
+:::
+
 :::
 :::

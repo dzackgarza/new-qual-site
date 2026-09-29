@@ -35,6 +35,7 @@ is not dense in \(\mathbb C\).
 :::
 
 ::: {.solution}
+
 Write
 $$
 z_n\coloneqq f^{\circ n}(a)
@@ -42,9 +43,12 @@ z_n\coloneqq f^{\circ n}(a)
 $$
 and let $S\coloneqq\{z_n:n\ge0\}$.
 
-<1>1. If $S$ is bounded, then $S$ is not dense in $\CC$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #bounded-not-dense}
+If $S$ is bounded, then $S$ is not dense in $\CC$.
+
+::: pf-proof
 Choose $R>0$ with $S\subseteq\{z:\abs{z}\le R\}$. Then the nonempty
 open set
 $$
@@ -53,9 +57,12 @@ $$
 is disjoint from $S$, so $S$ is not dense.
 :::
 
-<1>2. If $f$ is constant, then $S$ is not dense in $\CC$.
+:::
 
-::: {.proof}
+::: {.pf-step #constant-not-dense}
+If $f$ is constant, then $S$ is not dense in $\CC$.
+
+::: pf-proof
 If $f(z)=c$ for every $z$, then
 $$
 S\subseteq\{a,c\},
@@ -63,9 +70,12 @@ $$
 so $S$ is finite and hence is not dense in $\CC$.
 :::
 
-<1>3. If $\deg f=1$, then $S$ is not dense in $\CC$.
+:::
 
-::: {.proof}
+::: {.pf-step #degree-one-not-dense}
+If $\deg f=1$, then $S$ is not dense in $\CC$.
+
+::: pf-proof
 Write $f(z)=sz+t$ with $s\ne0$. If $s=1$, then
 $$
 z_n=a+nt,
@@ -81,7 +91,7 @@ is fixed by $f$, and induction gives
 $$
 z_n-c=s^n(a-c).
 $$
-If $S$ is bounded, step <1>1 applies. If $S$ is unbounded, then
+If $S$ is bounded, step [](#bounded-not-dense){.pf-ref} applies. If $S$ is unbounded, then
 $a\ne c$ and $\abs{s}>1$. Consequently
 $$
 \abs{z_n-c}=\abs{s}^n\abs{a-c}\ge\abs{a-c}
@@ -93,10 +103,13 @@ $$
 is disjoint from $S$, proving that $S$ is not dense.
 :::
 
-<1>4. If $\deg f\ge2$, then $S$ is not dense in $\CC$.
+:::
 
-::: {.proof}
-If $S$ is bounded, step <1>1 applies. Assume therefore that $S$ is
+::: {.pf-step #degree-geq-two-not-dense}
+If $\deg f\ge2$, then $S$ is not dense in $\CC$.
+
+::: pf-proof
+If $S$ is bounded, step [](#bounded-not-dense){.pf-ref} applies. Assume therefore that $S$ is
 unbounded. Since
 $$
 \frac{\abs{f(z)}}{\abs{z}}\longrightarrow\infty
@@ -126,11 +139,14 @@ $z_0,\ldots,z_{n_0-1}$. It also avoids every $z_n$ with $n\ge n_0$.
 Thus this open disk is disjoint from $S$, so $S$ is not dense.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 handles constant polynomials, step <1>3 handles degree $1$,
-and step <1>4 handles degree at least $2$. These cases exhaust all
+::: pf-qed
+Step [](#constant-not-dense){.pf-ref} handles constant polynomials, step [](#degree-one-not-dense){.pf-ref} handles degree $1$,
+and step [](#degree-geq-two-not-dense){.pf-ref} handles degree at least $2$. These cases exhaust all
 polynomials.
 :::
+
+:::
+
 :::

@@ -54,58 +54,103 @@ This exercise is adapted from [M-Z], to which the reader is referred for further
 :::
 
 ::: {.solution}
-<1>1. We must show $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k$ and $n$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+We must show $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k$ and $n$.
+
+::: pf-proof
 the claim to prove.
 :::
 
-<1>2. We prove by induction on $n$. For $n = 0$: $U(0) = \varnothing$ and $U(1) = V_0$, so $V_0 \cdot U(0) = \varnothing \subset U(1)$.
-::: {.proof}
+:::
+
+::: {.pf-step #n-zero-base-case}
+We prove by induction on $n$. For $n = 0$: $U(0) = \varnothing$ and $U(1) = V_0$, so $V_0 \cdot U(0) = \varnothing \subset U(1)$.
+
+::: pf-proof
 base case.
 :::
 
-<1>3. Assume the claim holds for $n$; we prove it for $n+1$.
-::: {.proof}
+:::
+
+::: pf-step
+Assume the claim holds for $n$; we prove it for $n+1$.
+
+::: pf-proof
 induction step.
 :::
 
-<1>4. For $k$ even, $k = 2j$: $U(k/2^{n+1}) = U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$.
-::: {.proof}
+:::
+
+::: {.pf-step #even-k-definitions}
+For $k$ even, $k = 2j$: $U(k/2^{n+1}) = U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$.
+
+::: pf-proof
 the definitions.
 :::
 
-<1>5. Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot U(j/2^n) = U((k+1)/2^{n+1})$.
-::: {.proof}
-<1>4.
 :::
 
-<1>6. For $k$ odd, $k = 2j+1$: $U(k/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+2)/2^{n+1}) = U((j+1)/2^n)$.
-::: {.proof}
+::: {.pf-step #even-k-conclusion}
+Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot U(j/2^n) = U((k+1)/2^{n+1})$.
+
+::: pf-proof
+Step [](#even-k-definitions){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #odd-k-definitions}
+For $k$ odd, $k = 2j+1$: $U(k/2^{n+1}) = U((2j+1)/2^{n+1}) = V_{n+1} \cdot U(j/2^n)$, and $U((k+1)/2^{n+1}) = U((2j+2)/2^{n+1}) = U((j+1)/2^n)$.
+
+::: pf-proof
 the definitions.
 :::
 
-<1>7. Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot V_{n+1} \cdot U(j/2^n) \subset V_n \cdot U(j/2^n) \subset U((j+1)/2^n) = U((k+1)/2^{n+1})$.
-::: {.proof}
-<1>6, using $V_{n+1} \cdot V_{n+1} \subset V_n$ and the induction hypothesis.
 :::
 
-<1>8. Hence $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k, n$.
-::: {.proof}
-<1>2, <1>5, <1>7.
+::: {.pf-step #odd-k-conclusion}
+Then $V_{n+1} \cdot U(k/2^{n+1}) = V_{n+1} \cdot V_{n+1} \cdot U(j/2^n) \subset V_n \cdot U(j/2^n) \subset U((j+1)/2^n) = U((k+1)/2^{n+1})$.
+
+::: pf-proof
+Step [](#odd-k-definitions){.pf-ref}, using $V_{n+1} \cdot V_{n+1} \subset V_n$ and the induction hypothesis.
 :::
 
-<1>9. Proceeding as in the Urysohn lemma, this defines a continuous function $f : G \to [0,1]$ with $f(e) = 0$ and $f = 1$ outside $V_0$, separating $e$ from the closed set $G \setminus V_0$.
-::: {.proof}
+:::
+
+::: {.pf-step #claim-proved-by-induction}
+Hence $V_n \cdot U(k/2^n) \subset U((k+1)/2^n)$ for all $k, n$.
+
+::: pf-proof
+Steps [](#n-zero-base-case){.pf-ref}, [](#even-k-conclusion){.pf-ref}, [](#odd-k-conclusion){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #urysohn-construction}
+Proceeding as in the Urysohn lemma, this defines a continuous function $f : G \to [0,1]$ with $f(e) = 0$ and $f = 1$ outside $V_0$, separating $e$ from the closed set $G \setminus V_0$.
+
+::: pf-proof
 the Urysohn-lemma construction using the nested open sets $U(p)$.
 :::
 
-<1>10. Hence $G$ is completely regular.
-::: {.proof}
-<1>9 (every point can be separated from a closed set by a continuous function, using translation invariance).
 :::
 
-<1>11. Q.E.D.
-::: {.proof}
-<1>8 and <1>10.
+::: {.pf-step #g-completely-regular}
+Hence $G$ is completely regular.
+
+::: pf-proof
+Step [](#urysohn-construction){.pf-ref} (every point can be separated from a closed set by a continuous function, using translation invariance).
 :::
+
+:::
+
+::: pf-qed
+Steps [](#claim-proved-by-induction){.pf-ref} and [](#g-completely-regular){.pf-ref}.
+:::
+
+:::
+
 :::

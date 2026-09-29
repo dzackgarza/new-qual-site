@@ -51,9 +51,12 @@ Index the degree-$d$ monomials by tuples $\alpha=(\alpha_0,\ldots,\alpha_n)$ of 
 Write $x^\alpha=\prod_jx_j^{\alpha_j}$ and denote its target coordinate by $y_\alpha$.
 Let $e_i$ be the $i$th coordinate vector in $\ZZ^{n+1}$, and put $T=k[y_\alpha]$, $S=k[x_0,\ldots,x_n]$ and $V=Z(\mfa)$.
 
-<1>1. The map $\rho_d$ is well-defined, and $\mfa=\ker\theta$ is a homogeneous prime ideal with nonempty projective zero set.
+::: pf
 
-::: {.proof}
+::: {.pf-step #rho-d-well-defined-mfa-prime}
+The map $\rho_d$ is well-defined, and $\mfa=\ker\theta$ is a homogeneous prime ideal with nonempty projective zero set.
+
+::: pf-proof
 For a nonzero source vector $a$, some $a_i\ne0$, so the monomial $a_i^d$ is nonzero and the list of target coordinates is not zero.
 Scaling $a$ by $\lambda\in k^\times$ scales every degree-$d$ monomial by $\lambda^d$.
 Thus the projective image is independent of the representative.
@@ -67,9 +70,12 @@ In particular $V$ is nonempty, and [[P-AGH24CORRESPONDENCE]] makes it an irreduc
 This proves (a).
 :::
 
-<1>2. The opens $V_i=V\cap D_+(y_{de_i})$ cover $V$.
+:::
 
-::: {.proof}
+::: {.pf-step #charts-cover-v}
+The opens $V_i=V\cap D_+(y_{de_i})$ cover $V$.
+
+::: pf-proof
 For every index $\alpha$, the binomial
 $$
 y_\alpha^d-\prod_{i=0}^n y_{de_i}^{\alpha_i}
@@ -80,14 +86,17 @@ Over a field that forces every $y_\alpha=0$, which is not a projective point.
 Thus at least one pure-power coordinate is nonzero.
 :::
 
-<1>3. On $V_i$, the inverse coordinates are
+:::
+
+::: {.pf-step #inverse-coords-give-image-equality}
+On $V_i$, the inverse coordinates are
 $$
 a_i=1,\qquad
 a_j=\frac{y_{(d-1)e_i+e_j}}{y_{de_i}}\quad(j\ne i),
 $$
 and they prove $\rho_d(\PP^n)=V$.
 
-::: {.proof}
+::: pf-proof
 Fix $b\in V_i$ and use the displayed ratios evaluated at $b$ to define $a$; with $a_i=1$ the vector is nonzero.
 For every $\alpha$, the binomial relation
 $$
@@ -101,7 +110,7 @@ $$
 \frac{y_\alpha(b)}{y_{de_i}(b)}=\prod_{j=0}^n a_j^{\alpha_j}=a^\alpha.
 $$
 These are all the normalized coordinates of $b$, so $\rho_d([a])=b$.
-Step <1>2 covers every point of $V$ by such a chart, proving the reverse inclusion in (b); the forward inclusion was proved in step <1>1.
+Step [](#charts-cover-v){.pf-ref} covers every point of $V$ by such a chart, proving the reverse inclusion in (b); the forward inclusion was proved in step [](#rho-d-well-defined-mfa-prime){.pf-ref}.
 
 Conversely, on the source chart $x_i\ne0$ the displayed ratio pulls back to
 $$
@@ -111,41 +120,50 @@ It therefore recovers the source point uniquely.
 This proves injectivity as well as surjectivity, and uses no choice of a $d$th root.
 :::
 
-<1>4. The bijection $\rho_d:\PP^n\to V$ and its inverse are continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #bijection-and-inverse-continuous}
+The bijection $\rho_d:\PP^n\to V$ and its inverse are continuous.
+
+::: pf-proof
 For a homogeneous polynomial $F\in T$ of degree $q$, the polynomial $\theta(F)$ is homogeneous of degree $dq$, or zero.
 Thus the inverse image of its projective zero set is $Z(\theta(F))$, a closed subset of $\PP^n$.
 Intersecting such zero sets proves continuity of $\rho_d$.
 
-On $V_i$, the inverse from step <1>3 maps to the affine source chart $x_i\ne0$ and has coordinate functions $y_{(d-1)e_i+e_j}/y_{de_i}$.
+On $V_i$, the inverse from step [](#inverse-coords-give-image-equality){.pf-ref} maps to the affine source chart $x_i\ne0$ and has coordinate functions $y_{(d-1)e_i+e_j}/y_{de_i}$.
 These are regular functions on that affine target chart.
 A polynomial equation in the source affine coordinates pulls back to a polynomial in these coordinate ratios, so its zero set is closed in $V_i$.
 The inverse is therefore continuous on each $V_i$.
-The $V_i$ form an open cover, and their inverses agree because step <1>3 proves uniqueness of the preimage.
+The $V_i$ form an open cover, and their inverses agree because step [](#inverse-coords-give-image-equality){.pf-ref} proves uniqueness of the preimage.
 They give a continuous global inverse, proving (c).
 The same formulas also show that both directions are morphisms of varieties.
 :::
 
-<1>5. The projective twisted cubic is the image of
+:::
+
+::: {.pf-step #twisted-cubic-is-triple-embedding}
+The projective twisted cubic is the image of
 $$
 \boxed{\rho_3:\PP^1\longrightarrow\PP^3,\qquad
 [u:v]\longmapsto[u^3:u^2v:uv^2:v^3].}
 $$
 
-::: {.proof}
+::: pf-proof
 The four displayed coordinates are precisely the degree-three monomials in $u,v$.
 On $u\ne0$, put $t=v/u$.
 The image is $[1:t:t^2:t^3]$, the affine twisted cubic of [[P-AGH29PROJCLOSURE]] in the chart where the first coordinate is nonzero.
-By steps <1>1--<1>4, the whole image is closed and is homeomorphic to the irreducible projective line.
+By steps [](#rho-d-well-defined-mfa-prime){.pf-ref}, [](#charts-cover-v){.pf-ref}, [](#inverse-coords-give-image-equality){.pf-ref} and [](#bijection-and-inverse-continuous){.pf-ref}, the whole image is closed and is homeomorphic to the irreducible projective line.
 The open subset $u\ne0$ is dense in that line, so its image is dense in the whole image.
 Consequently the whole image is exactly the projective closure of the affine twisted cubic, as required in (d).
 The remaining point $[0:1]$ maps to $[0:0:0:1]$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), steps <1>2--<1>3 prove (b), step <1>4 proves (c), and step <1>5 proves (d).
 :::
+
+::: pf-qed
+Step [](#rho-d-well-defined-mfa-prime){.pf-ref} proves (a), steps [](#charts-cover-v){.pf-ref} and [](#inverse-coords-give-image-equality){.pf-ref} prove (b), step [](#bijection-and-inverse-continuous){.pf-ref} proves (c), and step [](#twisted-cubic-is-triple-embedding){.pf-ref} proves (d).
+:::
+
+:::
+
 :::

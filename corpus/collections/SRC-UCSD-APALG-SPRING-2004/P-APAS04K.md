@@ -31,6 +31,7 @@ Find the Gröbner basis for $I$ relative to lexicographic order where $y>x$.
 :::
 
 ::: {.solution}
+
 Put
 \[
 f_1=x^2+2y^2-2,
@@ -39,7 +40,10 @@ f_2=x^2-xy+y^2-1.
 \]
 We use lexicographic order with $y>x$.
 
-<1>1. A Gröbner basis for $I=(f_1,f_2)$ is
+::: pf
+
+::: {.pf-step #grobner-basis-i}
+A Gröbner basis for $I=(f_1,f_2)$ is
 \[
 \boxed{
 G=\left\{
@@ -48,7 +52,8 @@ G=\left\{
 \ x^3-\frac43x
 \right\}.}
 \]
-::: {.proof}
+
+::: pf-proof
 Set
 \[
 g_1=y^2+\frac12x^2-1=\frac12f_1.
@@ -106,22 +111,30 @@ Reducing first by $g_2$ and then by $g_3$ gives
 Hence $G$ is a Gröbner basis.
 :::
 
-<1>2. A Gröbner basis for the elimination ideal $I\cap\mathbb C[x]$ is
+:::
+
+::: {.pf-step #grobner-basis-elimination}
+A Gröbner basis for the elimination ideal $I\cap\mathbb C[x]$ is
 \[
 \boxed{\left\{x^3-\frac43x\right\}.}
 \]
-::: {.proof}
-For lex order $y>x$, the elimination theorem says that the elements of a Gröbner basis involving only $x$ form a Gröbner basis for $I\cap\mathbb C[x]$. In the basis from <1>1, the only such polynomial is $g_3$.
+
+::: pf-proof
+For lex order $y>x$, the elimination theorem says that the elements of a Gröbner basis involving only $x$ form a Gröbner basis for $I\cap\mathbb C[x]$. In the basis from step [](#grobner-basis-i){.pf-ref}, the only such polynomial is $g_3$.
 :::
 
-<1>3. The solution set in $\mathbb C^2$ is
+:::
+
+::: {.pf-step #solution-set}
+The solution set in $\mathbb C^2$ is
 \[
 \boxed{
 (0,1),\ (0,-1),\
 \left(\frac2{\sqrt3},\frac1{\sqrt3}\right),\
 \left(-\frac2{\sqrt3},-\frac1{\sqrt3}\right).}
 \]
-::: {.proof}
+
+::: pf-proof
 Every solution satisfies
 \[
 x^3-\frac43x=x\left(x^2-\frac43\right)=0.
@@ -141,11 +154,15 @@ y=\pm\frac1{\sqrt3}
 with matching signs. Each listed point satisfies $g_1,g_2,g_3$, hence the original equations.
 :::
 
-<1>4. A vector-space basis of $\mathbb C[x,y]/I$ is
+:::
+
+::: {.pf-step #quotient-basis}
+A vector-space basis of $\mathbb C[x,y]/I$ is
 \[
 \boxed{\{1,x,x^2,y\}.}
 \]
-::: {.proof}
+
+::: pf-proof
 For a Gröbner basis, the residue classes of the standard monomials, namely those not divisible by any leading monomial, form a basis of the quotient. Here the forbidden leading monomials are
 \[
 y^2,\qquad xy,\qquad x^3.
@@ -156,4 +173,13 @@ The monomials not divisible by any of these are exactly
 \]
 Therefore their residue classes form a basis.
 :::
+
+:::
+
+::: pf-qed
+Step [](#grobner-basis-i){.pf-ref} answers part (a); step [](#grobner-basis-elimination){.pf-ref} answers part (b); step [](#solution-set){.pf-ref} answers part (c); step [](#quotient-basis){.pf-ref} answers part (d).
+:::
+
+:::
+
 :::

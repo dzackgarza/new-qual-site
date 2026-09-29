@@ -49,8 +49,13 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. $H=H_1\cap H_2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+$H=H_1\cap H_2$.
+
+::: pf-proof
 An automorphism $\sigma\in G$ lies in $H$ exactly when it fixes the compositum $E_1E_2$ pointwise.
 This certainly implies that it fixes the subfields $E_1$ and $E_2$, so
 \[
@@ -62,8 +67,12 @@ Every element of $E_1E_2$ is obtained from elements of $E_1\cup E_2$ by finitely
 Hence $\sigma$ fixes $E_1E_2$ pointwise, so $\sigma\in H$.
 :::
 
-<1>2. Each $H_i$ is normal in $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #hi-normal-in-g}
+Each $H_i$ is normal in $G$.
+
+::: pf-proof
 Each $E_i$ is a splitting field over $\QQ$.
 Thus $E_i/\QQ$ is normal, and since $\operatorname{char}\QQ=0$, it is separable as well.
 Hence $E_i/\QQ$ is Galois.
@@ -74,10 +83,14 @@ H_i=\Gal(K/E_i)\triangleleft G.
 \]
 :::
 
-<1>3. $H_1H_2$ is a subgroup of $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #h1h2-subgroup}
+$H_1H_2$ is a subgroup of $G$.
+
+::: pf-proof
 Let $h_1,h_1'\in H_1$ and $h_2,h_2'\in H_2$.
-Since $H_1\triangleleft G$ by <1>2,
+Since $H_1\triangleleft G$ by step [](#hi-normal-in-g){.pf-ref},
 \[
 h_2h_1'h_2^{-1}\in H_1.
 \]
@@ -95,8 +108,12 @@ Similarly,
 Thus $H_1H_2\le G$.
 :::
 
-<1>4. The fixed field of $H_1H_2$ is $E_1\cap E_2$.
-::: {.proof}
+:::
+
+::: {.pf-step #fixed-field-h1h2}
+The fixed field of $H_1H_2$ is $E_1\cap E_2$.
+
+::: pf-proof
 Since $H_i\subseteq H_1H_2$,
 \[
 K^{H_1H_2}\subseteq K^{H_1}\cap K^{H_2}=E_1\cap E_2.
@@ -109,10 +126,18 @@ E_1\cap E_2\subseteq K^{H_1H_2}.
 \]
 :::
 
-<1>5. $\Gal(K/(E_1\cap E_2))=H_1H_2$.
-::: {.proof}
-By <1>3, $H_1H_2$ is a subgroup of $G$, and by <1>4 its fixed field is $E_1\cap E_2$.
+:::
+
+::: pf-step
+$\Gal(K/(E_1\cap E_2))=H_1H_2$.
+
+::: pf-proof
+By step [](#h1h2-subgroup){.pf-ref}, $H_1H_2$ is a subgroup of $G$, and by step [](#fixed-field-h1h2){.pf-ref} its fixed field is $E_1\cap E_2$.
 The Galois correspondence gives the claimed identity.
+:::
+
+:::
+
 :::
 
 :::

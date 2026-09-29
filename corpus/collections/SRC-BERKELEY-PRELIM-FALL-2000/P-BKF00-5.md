@@ -30,7 +30,11 @@ exists and is finite. Must $f''(0)$ exist? Give a proof or a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Define $f:(-1,1)\to\RR$ by
+
+::: pf
+
+::: {.pf-step #f-def-and-derivative}
+Define $f:(-1,1)\to\RR$ by
 $$
 f(x)=
 \begin{cases}
@@ -44,7 +48,7 @@ f'(x)=3x^2\sin(1/x)-x\cos(1/x)
 $$
 for $x\neq0$.
 
-::: {.proof}
+::: pf-proof
 For $x\neq0$, the displayed derivative follows from the product and chain
 rules. At $0$,
 $$
@@ -54,12 +58,15 @@ whose absolute value is at most $h^2$ and therefore tends to $0$. Hence
 $f'(0)=0$.
 :::
 
-<1>2. The hypothesis of the problem holds, with
+:::
+
+::: {.pf-step #hypothesis-holds}
+The hypothesis of the problem holds, with
 $$
 \lim_{x\to0}\frac{f(x)}{x^2}=0.
 $$
 
-::: {.proof}
+::: pf-proof
 For $x\neq0$,
 $$
 \frac{f(x)}{x^2}=x\sin(1/x),
@@ -68,13 +75,16 @@ whose absolute value is at most $\abs{x}$. The squeeze theorem gives the
 stated limit.
 :::
 
-<1>3. The second derivative $f''(0)$ does not exist, so the answer is
+:::
+
+::: {.pf-step #f-double-prime-dne}
+The second derivative $f''(0)$ does not exist, so the answer is
 $$
 \boxed{\text{no}}.
 $$
 
-::: {.proof}
-By step <1>1, if $f''(0)$ existed, it would be the limit as $h\to0$ of
+::: pf-proof
+By step [](#f-def-and-derivative){.pf-ref}, if $f''(0)$ existed, it would be the limit as $h\to0$ of
 $$
 \frac{f'(h)-f'(0)}{h}
 =3h\sin(1/h)-\cos(1/h).
@@ -97,10 +107,13 @@ Thus the difference quotient for $f'$ at $0$ has two distinct
 subsequential limits and cannot converge.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 give a differentiable counterexample satisfying the
+::: pf-qed
+Steps [](#f-def-and-derivative){.pf-ref}, [](#hypothesis-holds){.pf-ref} and [](#f-double-prime-dne){.pf-ref} give a differentiable counterexample satisfying the
 hypothesis but not the asserted conclusion.
 :::
+
+:::
+
 :::

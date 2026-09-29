@@ -37,13 +37,17 @@ Show that there is a group isomorphism
 :::
 
 ::: {.solution}
-<1>1. The restriction
+
+::: pf
+
+::: {.pf-step #restriction-is-covering}
+The restriction
 \[
 q=p|_{p^{-1}(A)}:p^{-1}(A)\longrightarrow A
 \]
 is a covering map, with $q(\tilde a)=a$.
 
-::: {.proof}
+::: pf-proof
 Let $a_0\in A$.
 Choose an open neighborhood $U\subseteq X$ of $a_0$ that is evenly covered by $p$, so
 \[
@@ -64,13 +68,16 @@ Each $V_\lambda\cap p^{-1}(A)$ maps homeomorphically onto $U\cap A$ by $q$.
 Thus $q$ is a covering map.
 :::
 
-<1>2. The homomorphism
+:::
+
+::: {.pf-step #qstar-injective}
+The homomorphism
 \[
 q_*:\pi_1(p^{-1}(A),\tilde a)\longrightarrow\pi_1(A,a)
 \]
 is injective.
 
-::: {.proof}
+::: pf-proof
 Let $[\widetilde\alpha]\in\pi_1(p^{-1}(A),\tilde a)$ and suppose
 \[
 q_*[\widetilde\alpha]=1.
@@ -82,7 +89,10 @@ Therefore $\widetilde\alpha$ is nullhomotopic in $p^{-1}(A)$, so $[\widetilde\al
 Thus $q_*$ is injective.
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #im-subset-ker}
+Let
 \[
 i:A\hookrightarrow X
 \]
@@ -92,7 +102,7 @@ Then
 \operatorname{im}(q_*)\subseteq\ker(i_*).
 \]
 
-::: {.proof}
+::: pf-proof
 The composite $i\circ q$ is the restriction of $p$ to $p^{-1}(A)$.
 If $[\widetilde\alpha]\in\pi_1(p^{-1}(A),\tilde a)$, then $\widetilde\alpha$ is also a loop in the simply connected universal cover $\widetilde X$.
 Hence it is nullhomotopic in $\widetilde X$.
@@ -104,12 +114,15 @@ in $\pi_1(X,a)$.
 Therefore every element of $\operatorname{im}(q_*)$ lies in $\ker(i_*)$.
 :::
 
-<1>4. Conversely,
+:::
+
+::: {.pf-step #ker-subset-im}
+Conversely,
 \[
 \ker(i_*)\subseteq\operatorname{im}(q_*).
 \]
 
-::: {.proof}
+::: pf-proof
 Let $[\alpha]\in\pi_1(A,a)$ satisfy
 \[
 i_*[\alpha]=1\in\pi_1(X,a).
@@ -138,19 +151,25 @@ q_*[\widetilde\alpha]=[\alpha].
 Hence $[\alpha]\in\operatorname{im}(q_*)$.
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \pi_1(p^{-1}(A),\tilde a)
 \cong
 \ker\bigl(\pi_1(A,a)\xrightarrow{i_*}\pi_1(X,a)\bigr).
 \]
 
-::: {.proof}
-By <1>2, $q_*$ is injective.
-By <1>3 and <1>4,
+::: pf-proof
+By step [](#qstar-injective){.pf-ref}, $q_*$ is injective.
+By step [](#im-subset-ker){.pf-ref} and step [](#ker-subset-im){.pf-ref},
 \[
 \operatorname{im}(q_*)=\ker(i_*).
 \]
 Thus $q_*$ is an isomorphism from $\pi_1(p^{-1}(A),\tilde a)$ onto the stated kernel.
 :::
+
+:::
+
 :::

@@ -42,15 +42,21 @@ $$
 ::: {.solution}
 If $F\colon X\to Y$ is continuous and $z_n\to z$ in $X$, then $F(z_n)\to F(z)$ in $Y$: a neighborhood $V$ of $F(z)$ has open preimage containing $z$, which contains $z_n$ for all large $n$.
 
-<1>1. $(x_n,y_n)\to(x,y)$ in $\mathbb R\times\mathbb R$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #pair-converges}
+$(x_n,y_n)\to(x,y)$ in $\mathbb R\times\mathbb R$.
+
+::: pf-proof
 A sequence in a product converges if and only if each coordinate sequence converges, by [[E-AH7RC]].
 :::
 
-<1>2. The maps $S(u,v)=u+v$, $D(u,v)=u-v$, and $M(u,v)=uv$ from $\mathbb R\times\mathbb R$ to $\mathbb R$, and $Q(u,v)=u/v$ from $\mathbb R\times(\mathbb R-\{0\})$ to $\mathbb R$, are continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #arithmetic-maps-continuous}
+The maps $S(u,v)=u+v$, $D(u,v)=u-v$, and $M(u,v)=uv$ from $\mathbb R\times\mathbb R$ to $\mathbb R$, and $Q(u,v)=u/v$ from $\mathbb R\times(\mathbb R-\{0\})$ to $\mathbb R$, are continuous.
+
+::: pf-proof
 For $(u,v)$ near $(a,b)$,
 $$
 \abs{(u\pm v)-(a\pm b)}\le\abs{u-a}+\abs{v-b},\qquad \abs{uv-ab}\le\abs u\abs{v-b}+\abs b\abs{u-a},
@@ -63,10 +69,13 @@ $$
 which also tends to $0$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2 and the sequence property of continuous maps, $S(x_n,y_n)\to S(x,y)$, $D(x_n,y_n)\to D(x,y)$, and $M(x_n,y_n)\to M(x,y)$.
+::: pf-qed
+By steps [](#pair-converges){.pf-ref} and [](#arithmetic-maps-continuous){.pf-ref} and the sequence property of continuous maps, $S(x_n,y_n)\to S(x,y)$, $D(x_n,y_n)\to D(x,y)$, and $M(x_n,y_n)\to M(x,y)$.
 When every $y_n\ne0$ and $y\ne0$, the sequence $(x_n,y_n)$ lies in $\mathbb R\times(\mathbb R-\{0\})$ and converges there to $(x,y)$, so $Q(x_n,y_n)\to Q(x,y)$.
 :::
+
+:::
+
 :::

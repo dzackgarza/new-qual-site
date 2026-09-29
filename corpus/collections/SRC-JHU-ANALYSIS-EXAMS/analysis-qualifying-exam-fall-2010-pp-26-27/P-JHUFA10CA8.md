@@ -43,9 +43,13 @@ only ramification point at $w=0$. An example is $g(w)=w^2$.
 :::
 
 ::: {.solution}
-<1>1. Part (a): derivatives determine local multiplicity, while fiber cardinalities specify the two sheets.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+Part (a): derivatives determine local multiplicity, while fiber cardinalities specify the two sheets.
+
+::: pf-proof
 For a holomorphic map $g:D\to D$, the explicit conditions are
 $$
 g(0)=0,\qquad g'(0)=0,\qquad g''(0)\ne0,\qquad
@@ -90,9 +94,12 @@ neighborhood; the fiber count again excludes any others.
 This gives precisely the required single quadratic branch.
 :::
 
-<1>2. Part (b): division by the double zero gives the bound.
+:::
 
-::: {.proof}
+::: pf-step
+Part (b): division by the double zero gives the bound.
+
+::: pf-proof
 Since $g(0)=g'(0)=0$, the function
 $H(w)=g(w)/w^2$ for $w\ne0$ extends holomorphically
 across zero by the Taylor series, with $H(0)=g''(0)/2$.
@@ -109,9 +116,12 @@ This argument uses only the disk bound and the double
 zero, not the stronger global covering hypotheses.
 :::
 
-<1>3. Part (c): the extra value determines the entire map.
+:::
 
-::: {.proof}
+::: pf-step
+Part (c): the extra value determines the entire map.
+
+::: pf-proof
 The assumed value gives $H(1/2)=(i/4)/(1/4)=i$.
 Thus the holomorphic function $H$, bounded by one,
 attains modulus one at an interior point. The maximum
@@ -124,5 +134,9 @@ This function satisfies every hypothesis: it has only
 the double zero at zero, nonzero derivative elsewhere,
 and exactly two distinct disk preimages of each nonzero
 disk value. It also has the prescribed value at $1/2$.
+:::
+
+:::
+
 :::
 :::

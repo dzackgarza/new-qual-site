@@ -58,7 +58,10 @@ We first treat the open configuration in which the six points are distinct
 and all the side intersections in the statement are distinct and
 well-defined.
 
-<1>1. Form the two reducible cubics
+::: pf
+
+::: {.pf-step #nine-intersection-points}
+Form the two reducible cubics
 $$
 X=AB'\cup BC'\cup CA'
 $$
@@ -71,7 +74,7 @@ $$
 A,B,C,A',B',C',P,Q,R.
 $$
 
-::: {.proof}
+::: pf-proof
 Write the three components of $X$ as rows and those of $Y$ as columns. Their
 pairwise intersections are
 $$
@@ -101,7 +104,10 @@ $$
 and the table lists all nine points of their complete intersection.
 :::
 
-<1>2. The reducible cubic
+:::
+
+::: {.pf-step #eight-points-on-conic-union-line}
+The reducible cubic
 $$
 Z=K\cup PQ
 $$
@@ -110,30 +116,36 @@ $$
 A,B,C,A',B',C',P,Q.
 $$
 
-::: {.proof}
+::: pf-proof
 The first six points lie on the conic $K$ by hypothesis, while $P$ and $Q$
 lie on the line $PQ$ by definition. Thus all eight lie on the cubic
 $K\cup PQ$.
 :::
 
-<1>3. The ninth point $R$ lies on $Z$.
+:::
 
-::: {.proof}
+::: {.pf-step #r-lies-on-z}
+The ninth point $R$ lies on $Z$.
+
+::: pf-proof
 Apply the Cayley--Bacharach theorem to the complete intersection of the two
 cubics $X$ and $Y$. Any cubic through eight of the nine intersection points
-passes through the ninth. By step <1>2, $Z$ passes through eight of them.
+passes through the ninth. By step [](#eight-points-on-conic-union-line){.pf-ref}, $Z$ passes through eight of them.
 Therefore
 $$
 R\in Z=K\cup PQ.
 $$
 :::
 
-<1>4. In the nondegenerate configuration,
+:::
+
+::: {.pf-step #r-not-on-conic}
+In the nondegenerate configuration,
 $$
 R\notin K.
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 R\in BC'.
@@ -150,17 +162,20 @@ Bezout. In the present open configuration $R$ is distinct from $B,C'$, so
 indeed $R\notin K$.
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #pqr-collinear-nondegenerate}
+Therefore
 $$
 \boxed{P,Q,R\text{ are collinear}.}
 $$
 
-::: {.proof}
-Step <1>3 gives
+::: pf-proof
+Step [](#r-lies-on-z){.pf-ref} gives
 $$
 R\in K\cup PQ,
 $$
-while step <1>4 excludes the conic component. Hence
+while step [](#r-not-on-conic){.pf-ref} excludes the conic component. Hence
 $$
 R\in PQ.
 $$
@@ -168,10 +183,13 @@ This is precisely Pascal's collinearity assertion for the nondegenerate
 configuration.
 :::
 
-<1>6. The same collinearity holds for every specialization for which the
+:::
+
+::: {.pf-step #extends-to-degenerate-case}
+The same collinearity holds for every specialization for which the
 three points $P,Q,R$ in the statement are defined.
 
-::: {.proof}
+::: pf-proof
 The construction is algebraic in the six points. On any affine coordinate
 chart, the intersection point of two distinct lines is given by their cross
 product, so homogeneous coordinates of $P,Q,R$ are polynomial expressions
@@ -190,7 +208,7 @@ $$
 K^6
 $$
 is irreducible, and the nondegenerate configurations used in steps
-<1>1--<1>5 form a nonempty dense open subset. The determinant vanishes on
+[](#nine-intersection-points){.pf-ref}, [](#eight-points-on-conic-union-line){.pf-ref}, [](#r-lies-on-z){.pf-ref}, [](#r-not-on-conic){.pf-ref} and [](#pqr-collinear-nondegenerate){.pf-ref} form a nonempty dense open subset. The determinant vanishes on
 that dense open subset, hence on all of $K^6$. Therefore every specialization
 on $K$ for which the three line intersections remain defined also satisfies
 $$
@@ -204,11 +222,13 @@ usual limiting formulation replaces their secant by the tangent to the
 conic, and the same specialization gives the degenerate Pascal identity.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>5 prove Pascal's theorem by Cayley--Bacharach on the dense
-nondegenerate locus, and step <1>6 extends the identity to all well-defined
+::: pf-qed
+Steps [](#nine-intersection-points){.pf-ref}, [](#eight-points-on-conic-union-line){.pf-ref}, [](#r-lies-on-z){.pf-ref}, [](#r-not-on-conic){.pf-ref} and [](#pqr-collinear-nondegenerate){.pf-ref} prove Pascal's theorem by Cayley--Bacharach on the dense
+nondegenerate locus, and step [](#extends-to-degenerate-case){.pf-ref} extends the identity to all well-defined
 specializations.
+:::
+
 :::
 :::

@@ -49,9 +49,13 @@ i&1+i
 \end{bmatrix}.
 \]
 
-<1>1. The displayed matrix is a row-reduced echelon matrix row-equivalent to
+::: pf
+
+::: pf-step
+The displayed matrix is a row-reduced echelon matrix row-equivalent to
 $A$.
-::: {.proof}
+
+::: pf-proof
 Subtract $2R_1$ from $R_2$ and $iR_1$ from $R_3$. This gives
 \[
 \begin{bmatrix}
@@ -65,9 +69,18 @@ make the pivot $1$, clearing the second column above and below it, yields the
 displayed RREF.
 :::
 
-<1>2. The only solution of $AX=0$ is $X=0$.
-::: {.proof}
+:::
+
+::: pf-step
+The only solution of $AX=0$ is $X=0$.
+
+::: pf-proof
 Row operations preserve the homogeneous solution set, and the reduced system
 is $x_1=0$, $x_2=0$.
 :::
+
+:::
+
+:::
+
 :::

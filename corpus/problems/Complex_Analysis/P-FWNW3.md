@@ -28,13 +28,18 @@ Show that any holomorphic function $f$ on a simply connected domain (or compact 
 ::: {.solution}
 There are two standard forms of the statement.
 
-<1>1. Let $K\subset\mathbb C$ be compact with connected complement, and suppose $f$ is holomorphic on a neighborhood of $K$. By Runge's theorem, for every $\varepsilon>0$ there exists a polynomial $p$ such that
+::: pf
+
+::: pf-step
+Let $K\subset\mathbb C$ be compact with connected complement, and suppose $f$ is holomorphic on a neighborhood of $K$. By Runge's theorem, for every $\varepsilon>0$ there exists a polynomial $p$ such that
 \[
 \sup_{z\in K}|f(z)-p(z)|<\varepsilon.
 \]
 Indeed, Runge gives approximation by rational functions whose poles may be chosen in the components of $\widehat{\mathbb C}\setminus K$. Since this complement is connected, the only required pole may be placed at $\infty$; rational functions with their only pole at $\infty$ are polynomials.
+:::
 
-<1>2. Now let $\Omega\subset\mathbb C$ be simply connected and let $f\in H(\Omega)$. Fix a compact set $K\Subset\Omega$. Choose a bounded Jordan domain $U$ such that
+::: pf-step
+Now let $\Omega\subset\mathbb C$ be simply connected and let $f\in H(\Omega)$. Fix a compact set $K\Subset\Omega$. Choose a bounded Jordan domain $U$ such that
 \[
 K\subset U,\qquad \overline U\subset\Omega.
 \]
@@ -49,4 +54,6 @@ Since $K\subset L$,
 \sup_{z\in K}|f(z)-p(z)|<\varepsilon.
 \]
 Thus polynomials approximate $f$ uniformly on every compact subset of $\Omega$.
+:::
+
 :::

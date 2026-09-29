@@ -46,12 +46,15 @@ $$
 C\coloneqq\sqrt2\,M.
 $$
 
-<1>1. At every point of the punctured plane,
+::: pf
+
+::: {.pf-step #gradient-bound}
+At every point of the punctured plane,
 $$
 \norm{\nabla f}\leq C.
 $$
 
-::: {.proof}
+::: pf-proof
 The hypotheses give
 $$
 \abs{f_x}\leq M,
@@ -71,7 +74,10 @@ $$
 $$
 :::
 
-<1>2. If $p,q\in\RR^2\setminus\{0\}$ satisfy
+:::
+
+::: {.pf-step #path-exists}
+If $p,q\in\RR^2\setminus\{0\}$ satisfy
 $$
 \norm{p}<r,
 \qquad
@@ -86,7 +92,7 @@ $$
 (2+\pi)r.
 $$
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 R\coloneqq\max\{\norm{p},\norm{q}\}<r.
@@ -106,22 +112,25 @@ Every point on the path has positive norm at most $R$, so the path avoids
 the origin.
 :::
 
-<1>3. For any $p,q$ as in step <1>2,
+:::
+
+::: {.pf-step #oscillation-bound}
+For any $p,q$ as in step [](#path-exists){.pf-ref},
 $$
 \abs{f(p)-f(q)}
 <
 C(2+\pi)r.
 $$
 
-::: {.proof}
-Let $\gamma$ be the path from step <1>2, parametrized piecewise by arc
+::: pf-proof
+Let $\gamma$ be the path from step [](#path-exists){.pf-ref}, parametrized piecewise by arc
 length. Along each smooth piece,
 $$
 \frac{d}{dt}f(\gamma(t))
 =
 \inner{\nabla f(\gamma(t))}{\gamma'(t)}.
 $$
-Hence, by step <1>1,
+Hence, by step [](#gradient-bound){.pf-ref},
 $$
 \abs{\frac{d}{dt}f(\gamma(t))}
 \leq
@@ -137,13 +146,16 @@ C(2+\pi)r.
 $$
 :::
 
-<1>4. The sequence
+:::
+
+::: {.pf-step #sequence-converges}
+The sequence
 $$
 a_n\coloneqq f(1/n,0)
 $$
 is Cauchy and therefore converges to some $L\in\RR$.
 
-::: {.proof}
+::: pf-proof
 Let $\varepsilon>0$. Choose $N$ so large that
 $$
 \frac{C(2+\pi)}{N}<\varepsilon.
@@ -154,26 +166,29 @@ $$
 \qquad
 (1/n,0)
 $$
-have norm less than $1/N$. Step <1>3, with $r=1/N$, gives
+have norm less than $1/N$. Step [](#oscillation-bound){.pf-ref}, with $r=1/N$, gives
 $$
 \abs{a_m-a_n}<\varepsilon.
 $$
 Thus $(a_n)$ is Cauchy. Completeness of $\RR$ gives a limit $L$.
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #limit-boxed}
+One has
 $$
 \boxed{
 \lim_{p\to0}f(p)=L
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $\varepsilon>0$. Choose $r>0$ such that
 $$
 C(2+\pi)r<\frac{\varepsilon}{2}.
 $$
-By step <1>4, choose $n$ large enough that
+By step [](#sequence-converges){.pf-ref}, choose $n$ large enough that
 $$
 \frac1n<r
 $$
@@ -185,7 +200,7 @@ If
 $$
 0<\norm{p}<r,
 $$
-then step <1>3, applied to $p$ and $(1/n,0)$, gives
+then step [](#oscillation-bound){.pf-ref}, applied to $p$ and $(1/n,0)$, gives
 $$
 \abs{f(p)-f(1/n,0)}
 <
@@ -206,9 +221,11 @@ $$
 This is precisely the definition of the limit at the puncture.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 proves that the required finite limit exists.
+::: pf-qed
+Step [](#limit-boxed){.pf-ref} proves that the required finite limit exists.
+:::
+
 :::
 :::

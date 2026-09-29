@@ -37,12 +37,16 @@ f:\operatorname{Spec}B\longrightarrow\operatorname{Spec}A
 \]
 be the induced morphism.
 
-<1>1. For primes
+::: pf
+
+::: {.pf-step #specialization-order}
+For primes
 \[
 \mathfrak p_1\subseteq\mathfrak p_2
 \]
 of $A$, the point $\mathfrak p_2$ is a specialization of $\mathfrak p_1$ in $\operatorname{Spec}A$.
-::: {.proof}
+
+::: pf-proof
 The closure of the point $\mathfrak p_1$ is
 \[
 \overline{\{\mathfrak p_1\}}
@@ -52,7 +56,10 @@ The closure of the point $\mathfrak p_1$ is
 Thus $\mathfrak p_2\in\overline{\{\mathfrak p_1\}}$ exactly when $\mathfrak p_1\subseteq\mathfrak p_2$.
 :::
 
-<1>2. Going up says that specializations lift along an integral morphism.
+:::
+
+::: {.pf-step #going-up-statement}
+Going up says that specializations lift along an integral morphism.
 More precisely, if
 \[
 \mathfrak p_1\subseteq\mathfrak p_2
@@ -65,18 +72,23 @@ lying over $\mathfrak p_2$:
 \[
 \mathfrak q_i\cap A=\mathfrak p_i.
 \]
-::: {.proof}
+
+::: pf-proof
 This is exactly the going-up theorem for the integral extension $A\to B$ applied to the prime chain
 \[
 \mathfrak p_1\subseteq\mathfrak p_2
 \]
 and the already chosen lift $\mathfrak q_1$ of its first term.
 
-By <1>1, the inclusion $\mathfrak q_1\subseteq\mathfrak q_2$ says geometrically that $\mathfrak q_2$ is a specialization of $\mathfrak q_1$.
+By step [](#specialization-order){.pf-ref}, the inclusion $\mathfrak q_1\subseteq\mathfrak q_2$ says geometrically that $\mathfrak q_2$ is a specialization of $\mathfrak q_1$.
 :::
 
-<1>3. Equivalently, integral morphisms are closed maps on underlying topological spaces.
-::: {.proof}
+:::
+
+::: {.pf-step #integral-closed-map}
+Equivalently, integral morphisms are closed maps on underlying topological spaces.
+
+::: pf-proof
 Let
 \[
 Z=V(J)\subseteq\operatorname{Spec}B
@@ -97,22 +109,30 @@ f(V(J))
 \]
 which is closed in $\operatorname{Spec}A$.
 
-Conversely, the specialization-lifting statement in <1>2 explains why an image cannot lose a specialization: once a point lies in the image of a closed subset, every specialization of that point also lies in the image.
+Conversely, the specialization-lifting statement in step [](#going-up-statement){.pf-ref} explains why an image cannot lose a specialization: once a point lies in the image of a closed subset, every specialization of that point also lies in the image.
 :::
 
-<1>4. Thus the geometric reading of going up is
+:::
+
+::: {.pf-step #geometric-reading}
+Thus the geometric reading of going up is
 \[
 \boxed{
 \text{integral morphisms lift specializations and are closed.}
 }
 \]
 For a finite morphism, this is the algebraic-geometric analogue of a finite branched covering being a closed map.
-::: {.proof}
-A finite ring map is integral, so <1>2--<1>3 apply.  Finite morphisms are also affine and of finite type; in particular they are proper, and the closed-map behavior supplied by integrality is the topological part of that picture.
+
+::: pf-proof
+A finite ring map is integral, so steps [](#going-up-statement){.pf-ref} and [](#integral-closed-map){.pf-ref} apply.  Finite morphisms are also affine and of finite type; in particular they are proper, and the closed-map behavior supplied by integrality is the topological part of that picture.
 :::
 
-<1>5. Going up also explains why finite surjective morphisms do not decrease dimension.
-::: {.proof}
+:::
+
+::: {.pf-step #dimension-preservation}
+Going up also explains why finite surjective morphisms do not decrease dimension.
+
+::: pf-proof
 Given a chain
 \[
 \mathfrak p_0\subsetneq\cdots\subsetneq\mathfrak p_r
@@ -124,8 +144,11 @@ in the base, lying over chooses a prime above $\mathfrak p_0$, and repeated goin
 Thus every prime-chain length in the base occurs upstairs.  For an integral extension, incomparability supplies the reverse dimension inequality, yielding equality of dimensions in the usual integral-surjective setting.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Steps <1>2--<1>4 give the requested geometric interpretation; step <1>5 records its standard dimension consequence.
+:::
+
+::: pf-qed
+Steps [](#going-up-statement){.pf-ref}, [](#integral-closed-map){.pf-ref} and [](#geometric-reading){.pf-ref} give the requested geometric interpretation; step [](#dimension-preservation){.pf-ref} records its standard dimension consequence.
+:::
+
 :::
 :::

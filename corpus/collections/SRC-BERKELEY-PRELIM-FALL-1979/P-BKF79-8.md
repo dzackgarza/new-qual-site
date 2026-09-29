@@ -34,7 +34,11 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. For every $n\geq1$,
+
+::: pf
+
+::: {.pf-step #sum-riemann-form}
+For every $n\geq1$,
 $$
 \sum_{k=n+1}^{2n}\frac1k
 =
@@ -43,7 +47,7 @@ $$
 \frac{1}{1+j/n}.
 $$
 
-::: {.proof}
+::: pf-proof
 Put $k=n+j$. Then $k$ runs from $n+1$ through $2n$ exactly when $j$
 runs from $1$ through $n$, and
 $$
@@ -54,12 +58,15 @@ $$
 Summing gives the identity.
 :::
 
-<1>2. The right-hand side in step <1>1 converges to
+:::
+
+::: {.pf-step #riemann-sum-converges}
+The right-hand side in step [](#sum-riemann-form){.pf-ref} converges to
 $$
 \int_0^1\frac{dx}{1+x}.
 $$
 
-::: {.proof}
+::: pf-proof
 The function
 $$
 g(x)=\frac1{1+x}
@@ -74,12 +81,15 @@ $[0,1]$ into $n$ subintervals. Hence it converges to the displayed
 integral.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #integral-value}
+One has
 $$
 \int_0^1\frac{dx}{1+x}=\log2.
 $$
 
-::: {.proof}
+::: pf-proof
 Direct integration gives
 $$
 \int_0^1\frac{dx}{1+x}
@@ -90,7 +100,10 @@ $$
 $$
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #final-limit}
+Therefore
 $$
 \boxed{
 \lim_{n\to\infty}
@@ -102,13 +115,15 @@ $$
 }
 $$
 
-::: {.proof}
-Combine steps <1>1--<1>3.
+::: pf-proof
+Combine steps [](#sum-riemann-form){.pf-ref}, [](#riemann-sum-converges){.pf-ref}, and [](#integral-value){.pf-ref}.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+::: pf-qed
+Step [](#final-limit){.pf-ref} is the required conclusion.
+:::
+
 :::
 :::

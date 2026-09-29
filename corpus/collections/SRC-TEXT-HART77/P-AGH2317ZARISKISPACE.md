@@ -49,8 +49,13 @@ Furthermore, $X$ itself is a Zariski space if and only if the map $\alpha: X \to
 :::
 
 ::: {.solution}
-<1>1. If $X$ is a noetherian scheme, then its underlying topological space is a Zariski space.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #noetherian-scheme-space-is-zariski}
+If $X$ is a noetherian scheme, then its underlying topological space is a Zariski space.
+
+::: pf-proof
 By definition of a noetherian scheme, the underlying space is noetherian.
 
 Let
@@ -60,8 +65,12 @@ Z\subseteq X
 be a nonempty irreducible closed subset.  Hartshorne II.2.9 shows that every nonempty irreducible closed subset of a scheme has a unique generic point.  Therefore $Z$ has a unique generic point.  This is exactly the definition of a Zariski space.
 :::
 
-<1>2. Any minimal nonempty closed subset $Y$ of a Zariski space consists of one point.
-::: {.proof}
+:::
+
+::: {.pf-step #minimal-closed-subset-one-point}
+Any minimal nonempty closed subset $Y$ of a Zariski space consists of one point.
+
+::: pf-proof
 For any $y\in Y$, the closure
 \[
 \overline{\{y\}}
@@ -81,8 +90,12 @@ with $Y_i$ closed in $Y$, then every nonempty $Y_i$ is a nonempty closed subset 
 Since $Y$ is irreducible and the space is Zariski, $Y$ has a unique generic point.  But every point of $Y$ is generic, so $Y$ has exactly one point.
 :::
 
-<1>3. A Zariski space satisfies the $T_0$ axiom.
-::: {.proof}
+:::
+
+::: {.pf-step #zariski-space-t0}
+A Zariski space satisfies the $T_0$ axiom.
+
+::: pf-proof
 Let $x\ne y$.  The closures
 \[
 \overline{\{x\}},\qquad\overline{\{y\}}
@@ -100,8 +113,12 @@ X\setminus\overline{\{x\}}
 is an open set containing $y$ but not $x$.  Hence $X$ is $T_0$.
 :::
 
-<1>4. If $X$ is an irreducible Zariski space with generic point $\eta$, then $\eta$ lies in every nonempty open subset of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #generic-point-in-every-open}
+If $X$ is an irreducible Zariski space with generic point $\eta$, then $\eta$ lies in every nonempty open subset of $X$.
+
+::: pf-proof
 Let $U\subseteq X$ be nonempty.  If $\eta\notin U$, then the closed set
 \[
 X\setminus U
@@ -113,14 +130,18 @@ contains $\eta$, hence contains
 This would force $U=\varnothing$, contradiction.
 :::
 
-<1>5. Under the specialization order
+:::
+
+::: {.pf-step #minimal-points-are-closed-points}
+Under the specialization order
 \[
 x_1>x_0
 \quad\Longleftrightarrow\quad
 x_0\in\overline{\{x_1\}},
 \]
 the minimal points are exactly the closed points.
-::: {.proof}
+
+::: pf-proof
 If $x$ is closed, then
 \[
 \overline{\{x\}}=\{x\},
@@ -138,8 +159,12 @@ is a specialization of $x$.  Minimality therefore forces
 so $x$ is closed.
 :::
 
-<1>6. The maximal points for the specialization order are exactly the generic points of the irreducible components of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #maximal-points-are-component-generic-points}
+The maximal points for the specialization order are exactly the generic points of the irreducible components of $X$.
+
+::: pf-proof
 Let $x$ be maximal.  The irreducible closed subset
 \[
 \overline{\{x\}}
@@ -168,8 +193,12 @@ The right side is irreducible and closed.  Maximality of the irreducible compone
 Thus $y$ and $x$ are both generic points of $C$, and uniqueness gives $y=x$.  Hence $x$ is maximal.
 :::
 
-<1>7. Closed subsets are stable under specialization, and open subsets are stable under generization.
-::: {.proof}
+:::
+
+::: {.pf-step #stable-under-specialization-generization}
+Closed subsets are stable under specialization, and open subsets are stable under generization.
+
+::: pf-proof
 Let $F\subseteq X$ be closed and let $x\in F$.  If $x_0$ is a specialization of $x$, then
 \[
 x_0\in\overline{\{x\}}\subseteq F
@@ -179,12 +208,16 @@ because $F$ is closed.  Thus $F$ is stable under specialization.
 Now let $U$ be open, let $x\in U$, and let $y$ be a generization of $x$.  If $y\notin U$, then the closed complement $X\setminus U$ contains $y$ and therefore all its specializations, including $x$, contradiction.  Hence $y\in U$.
 :::
 
-<1>8. Let $X$ be a noetherian topological space.  Recall that $t(X)$ is the set of nonempty irreducible closed subsets of $X$, with closed subsets
+:::
+
+::: {.pf-step #tx-noetherian}
+Let $X$ be a noetherian topological space.  Recall that $t(X)$ is the set of nonempty irreducible closed subsets of $X$, with closed subsets
 \[
 t(Y)=\{Z\in t(X):Z\subseteq Y\}
 \]
 for closed $Y\subseteq X$.  Then $t(X)$ is noetherian.
-::: {.proof}
+
+::: pf-proof
 The assignment
 \[
 Y\longmapsto t(Y)
@@ -216,8 +249,12 @@ Indeed, if $x\in Y_{n+1}$ then the irreducible closed set $\overline{\{x\}}$ lie
 Since $X$ is noetherian, the chain $Y_n$ stabilizes, hence so does the chain $t(Y_n)$.  Therefore $t(X)$ is noetherian.
 :::
 
-<1>9. Every nonempty irreducible closed subset of $t(X)$ has a unique generic point.
-::: {.proof}
+:::
+
+::: {.pf-step #tx-unique-generic-points}
+Every nonempty irreducible closed subset of $t(X)$ has a unique generic point.
+
+::: pf-proof
 Let
 \[
 t(Y)\subseteq t(X)
@@ -246,12 +283,19 @@ t(Z)=t(Y).
 Since $Z\in t(Z)=t(Y)$, one has $Z\subseteq Y$, and similarly $Y\subseteq Z$.  Thus $Z=Y$.  The generic point is unique.
 :::
 
-<1>10. Hence $t(X)$ is a Zariski space.
-::: {.proof}
-Step <1>8 gives noetherianity and <1>9 gives unique generic points for nonempty irreducible closed subsets.
 :::
 
-<1>11. Define
+::: {.pf-step #tx-is-zariski-space}
+Hence $t(X)$ is a Zariski space.
+
+::: pf-proof
+Step [](#tx-noetherian){.pf-ref} gives noetherianity and step [](#tx-unique-generic-points){.pf-ref} gives unique generic points for nonempty irreducible closed subsets.
+:::
+
+:::
+
+::: {.pf-step #alpha-continuous-formula}
+Define
 \[
 \alpha:X\longrightarrow t(X),
 \qquad
@@ -262,7 +306,8 @@ Then $\alpha$ is continuous and
 \alpha^{-1}(t(Y))=Y
 \]
 for every closed subset $Y\subseteq X$.
-::: {.proof}
+
+::: pf-proof
 For $x\in X$,
 \[
 \alpha(x)\in t(Y)
@@ -272,8 +317,12 @@ For $x\in X$,
 Because $Y$ is closed, this is equivalent to $x\in Y$.  Thus the inverse image of the closed set $t(Y)$ is the closed set $Y$, proving continuity and the formula.
 :::
 
-<1>12. If $X$ is a Zariski space, then $\alpha:X\to t(X)$ is a bijection.
-::: {.proof}
+:::
+
+::: {.pf-step #alpha-bijective}
+If $X$ is a Zariski space, then $\alpha:X\to t(X)$ is a bijection.
+
+::: pf-proof
 Every point of $t(X)$ is an irreducible closed subset $Y\subseteq X$.  Since $X$ is a Zariski space, $Y$ has a generic point $y$, and
 \[
 \alpha(y)=\overline{\{y\}}=Y.
@@ -283,9 +332,13 @@ Thus $\alpha$ is surjective.
 If $\alpha(x)=\alpha(y)$, then $x$ and $y$ are both generic points of the same irreducible closed subset.  Uniqueness gives $x=y$.  Thus $\alpha$ is injective.
 :::
 
-<1>13. If $X$ is a Zariski space, then $\alpha$ is a homeomorphism.
-::: {.proof}
-By <1>12, $\alpha$ is bijective, and by <1>11 it is continuous.
+:::
+
+::: {.pf-step #alpha-homeomorphism}
+If $X$ is a Zariski space, then $\alpha$ is a homeomorphism.
+
+::: pf-proof
+By step [](#alpha-bijective){.pf-ref}, $\alpha$ is bijective, and by step [](#alpha-continuous-formula){.pf-ref} it is continuous.
 
 Let $Y\subseteq X$ be closed.  For every irreducible closed subset $Z\subseteq Y$, the Zariski-space property gives a generic point $z\in Z\subseteq Y$, and
 \[
@@ -298,24 +351,36 @@ Hence
 which is closed in $t(X)$.  Therefore $\alpha$ is a closed continuous bijection and hence a homeomorphism.
 :::
 
-<1>14. Conversely, if $X$ is noetherian and $\alpha:X\to t(X)$ is a homeomorphism, then $X$ is a Zariski space.
-::: {.proof}
-By <1>10, $t(X)$ is a Zariski space.  The property of being noetherian with a unique generic point for every nonempty irreducible closed subset is topological and is preserved by homeomorphism.  Hence $X$ is a Zariski space.
 :::
 
-<1>15. Therefore, for a noetherian space $X$,
+::: {.pf-step #converse-alpha-homeomorphism-implies-zariski}
+Conversely, if $X$ is noetherian and $\alpha:X\to t(X)$ is a homeomorphism, then $X$ is a Zariski space.
+
+::: pf-proof
+By step [](#tx-is-zariski-space){.pf-ref}, $t(X)$ is a Zariski space.  The property of being noetherian with a unique generic point for every nonempty irreducible closed subset is topological and is preserved by homeomorphism.  Hence $X$ is a Zariski space.
+:::
+
+:::
+
+::: {.pf-step #zariski-iff-alpha-homeomorphism}
+Therefore, for a noetherian space $X$,
 \[
 \boxed{
 X\text{ is a Zariski space}
 \iff
 \alpha:X\xrightarrow{\sim}t(X)\text{ is a homeomorphism}.}
 \]
-::: {.proof}
-Steps <1>13 and <1>14 prove the two implications.
+
+::: pf-proof
+Steps [](#alpha-homeomorphism){.pf-ref} and [](#converse-alpha-homeomorphism-implies-zariski){.pf-ref} prove the two implications.
 :::
 
-<1>16. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>7 prove parts (a)--(e), and steps <1>8--<1>15 prove part (f).
 :::
+
+::: pf-qed
+Steps [](#noetherian-scheme-space-is-zariski){.pf-ref}, [](#minimal-closed-subset-one-point){.pf-ref}, [](#zariski-space-t0){.pf-ref}, [](#generic-point-in-every-open){.pf-ref}, [](#minimal-points-are-closed-points){.pf-ref}, [](#maximal-points-are-component-generic-points){.pf-ref} and [](#stable-under-specialization-generization){.pf-ref} prove parts (a)--(e), and steps [](#tx-noetherian){.pf-ref}, [](#tx-unique-generic-points){.pf-ref}, [](#tx-is-zariski-space){.pf-ref}, [](#alpha-continuous-formula){.pf-ref}, [](#alpha-bijective){.pf-ref}, [](#alpha-homeomorphism){.pf-ref}, [](#converse-alpha-homeomorphism-implies-zariski){.pf-ref} and [](#zariski-iff-alpha-homeomorphism){.pf-ref} prove part (f).
+:::
+
+:::
+
 :::

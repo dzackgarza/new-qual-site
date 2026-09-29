@@ -36,12 +36,16 @@ Justify your answer.
 ::: {.solution}
 The statement is true.
 
-<1>1. Let $A$ be an infinite subset of a compact space $X$ and suppose, for contradiction, that $A$ has no limit point.
+::: pf
+
+::: {.pf-step #no-limit-point-neighborhoods}
+Let $A$ be an infinite subset of a compact space $X$ and suppose, for contradiction, that $A$ has no limit point.
 Then for every $x\in X$ there is an open neighborhood $U_x$ of $x$ such that
 \[
 U_x\cap(A\setminus\{x\})=\varnothing.
 \]
-::: {.proof}
+
+::: pf-proof
 A point $x\in X$ is a limit point of $A$ if every open neighborhood of $x$ meets
 \[
 A\setminus\{x\}.
@@ -53,7 +57,10 @@ U_x\cap(A\setminus\{x\})=\varnothing.
 By the assumption that $A$ has no limit point, this holds for every $x\in X$.
 :::
 
-<1>2. The family
+:::
+
+::: pf-step
+The family
 \[
 \{U_x:x\in X\}
 \]
@@ -62,22 +69,27 @@ is an open cover of $X$, so finitely many members
 U_{x_1},\ldots,U_{x_n}
 \]
 cover $X$.
-::: {.proof}
+
+::: pf-proof
 Each $x$ belongs to its own neighborhood $U_x$, so the family covers $X$.
 Compactness gives a finite subcover.
 :::
 
-<1>3. The finite subcover forces
+:::
+
+::: {.pf-step #a-in-finite-set}
+The finite subcover forces
 \[
 A\subseteq\{x_1,\ldots,x_n\}.
 \]
-::: {.proof}
+
+::: pf-proof
 Take $a\in A$.
 Since the chosen neighborhoods cover $X$, there is an $i$ with
 \[
 a\in U_{x_i}.
 \]
-By <1>1,
+By step [](#no-limit-point-neighborhoods){.pf-ref},
 \[
 U_{x_i}\cap(A\setminus\{x_i\})=\varnothing.
 \]
@@ -88,9 +100,18 @@ a=x_i.
 Thus every point of $A$ lies among $x_1,\ldots,x_n$.
 :::
 
-<1>4. Therefore every infinite subset of a compact topological space has a limit point.
-::: {.proof}
-By <1>3, the assumption in <1>1 would make $A$ a subset of a finite set, hence finite, contradicting the hypothesis that $A$ is infinite.
+:::
+
+::: pf-step
+Therefore every infinite subset of a compact topological space has a limit point.
+
+::: pf-proof
+By step [](#a-in-finite-set){.pf-ref}, the assumption in step [](#no-limit-point-neighborhoods){.pf-ref} would make $A$ a subset of a finite set, hence finite, contradicting the hypothesis that $A$ is infinite.
 Therefore $A$ must have a limit point.
 :::
+
+:::
+
+:::
+
 :::

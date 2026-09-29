@@ -19,7 +19,11 @@ We say that $A\in\mathcal{A}$ is normal if $A$ and $A^*$ commute (example: norma
 :::
 
 ::: {.solution}
-<1>1. Every \(A\in\mathcal A\) has a decomposition
+
+::: pf
+
+::: {.pf-step #decomposition-exists}
+Every \(A\in\mathcal A\) has a decomposition
 \[
 A=X+iY
 \]
@@ -30,7 +34,8 @@ X:=\frac{A+A^*}{2},
 Y:=\frac{A-A^*}{2i}.
 \]
 Both \(X\) and \(Y\) are selfadjoint.
-::: {.proof}
+
+::: pf-proof
 Using antilinearity of the involution,
 \[
 X^*=\frac{A^*+A}{2}=X.
@@ -51,7 +56,10 @@ X+iY
 \]
 :::
 
-<1>2. If \(A=X+iY\) with \(X^*=X\) and \(Y^*=Y\), then
+:::
+
+::: {.pf-step #commutator-formula}
+If \(A=X+iY\) with \(X^*=X\) and \(Y^*=Y\), then
 \[
 A^*=X-iY
 \]
@@ -59,7 +67,8 @@ and
 \[
 AA^*-A^*A=2i(YX-XY).
 \]
-::: {.proof}
+
+::: pf-proof
 Antilinearity gives
 \[
 A^*=(X+iY)^*=X-iY.
@@ -77,13 +86,17 @@ AA^*-A^*A=2i(YX-XY).
 \]
 :::
 
-<1>3. If \(A\) is normal, then in the decomposition from <1>1 the selfadjoint elements \(X,Y\) commute.
-::: {.proof}
+:::
+
+::: {.pf-step #normal-implies-xy-commute}
+If \(A\) is normal, then in the decomposition from step [](#decomposition-exists){.pf-ref} the selfadjoint elements \(X,Y\) commute.
+
+::: pf-proof
 Normality means
 \[
 AA^*=A^*A.
 \]
-By <1>2,
+By step [](#commutator-formula){.pf-ref},
 \[
 2i(YX-XY)=0.
 \]
@@ -93,17 +106,30 @@ YX=XY.
 \]
 :::
 
-<1>4. Conversely, if \(A=X+iY\) with \(X,Y\) selfadjoint and commuting, then \(A\) is normal.
-::: {.proof}
-If \(XY=YX\), then <1>2 gives
+:::
+
+::: {.pf-step #commuting-implies-normal}
+Conversely, if \(A=X+iY\) with \(X,Y\) selfadjoint and commuting, then \(A\) is normal.
+
+::: pf-proof
+If \(XY=YX\), then step [](#commutator-formula){.pf-ref} gives
 \[
 AA^*-A^*A=2i(YX-XY)=0.
 \]
 Thus \(AA^*=A^*A\), so \(A\) is normal.
 :::
 
-<1>5. Therefore \(A\) is normal if and only if it can be written as \(A=X+iY\) with \(X,Y\) commuting and selfadjoint.
-::: {.proof}
-The forward implication is <1>1 together with <1>3; the reverse implication is <1>4.
 :::
+
+::: pf-step
+Therefore \(A\) is normal if and only if it can be written as \(A=X+iY\) with \(X,Y\) commuting and selfadjoint.
+
+::: pf-proof
+The forward implication is step [](#decomposition-exists){.pf-ref} together with step [](#normal-implies-xy-commute){.pf-ref}; the reverse implication is step [](#commuting-implies-normal){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

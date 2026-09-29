@@ -38,8 +38,13 @@ Hint: Let $\tilde{C} = \{F(x) := \int_0^x f : f \in C\}$ and use Arzelà-Ascoli.
 :::
 
 ::: {.solution}
-<1>1. Prove that $d$ is a metric.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Prove that $d$ is a metric.
+
+::: pf-proof
 Nonnegativity and symmetry are immediate. For the triangle inequality, if $f,g,h\in L^1([0,1])$, then for every $x\in[0,1]$,
 \[
 \left|\int_0^x(f-h)\right|
@@ -70,8 +75,12 @@ almost everywhere. Thus $f$ and $g$ are the same element of $L^1([0,1])$.
 Therefore $d$ is a metric on $L^1([0,1])$.
 :::
 
-<1>2. Identify the image of $C$ under the primitive map.
-::: {.proof}
+:::
+
+::: {.pf-step #image-of-c-under-t}
+Identify the image of $C$ under the primitive map.
+
+::: pf-proof
 Define
 \[
 T:C\to C([0,1]),
@@ -101,8 +110,12 @@ T(C)
 \]
 :::
 
-<1>3. Observe that $T$ is an isometry.
-::: {.proof}
+:::
+
+::: pf-step
+Observe that $T$ is an isometry.
+
+::: pf-proof
 For $f,g\in C$,
 \[
 \begin{aligned}
@@ -115,8 +128,12 @@ For $f,g\in C$,
 Thus $T$ is an isometry from $(C,d)$ onto $T(C)$ equipped with the uniform norm.
 :::
 
-<1>4. Prove compactness by Arzelà--Ascoli.
-::: {.proof}
+:::
+
+::: pf-step
+Prove compactness by Arzelà--Ascoli.
+
+::: pf-proof
 Every $F\in T(C)$ satisfies
 \[
 |F(x)|=|F(x)-F(0)|\le x\le1,
@@ -133,11 +150,16 @@ and, for every $x,y$,
 =\lim_{n\to\infty}|F_n(x)-F_n(y)|
 \le|x-y|.
 \]
-Hence $F\in T(C)$ by Step 2.
+Hence $F\in T(C)$ by step [](#image-of-c-under-t){.pf-ref}.
 
 Therefore $T(C)$ is compact in $C([0,1])$. Since $T$ is an isometry onto $T(C)$,
 \[
 \boxed{C\text{ is compact in }(L^1([0,1]),d).}
 \]
 :::
+
+:::
+
+:::
+
 :::

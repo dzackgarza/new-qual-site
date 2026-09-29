@@ -46,7 +46,10 @@ $$
 e^{a_n}=iM_n.
 $$
 
-<1>1. For
+::: pf
+
+::: {.pf-step #rn-vanishes}
+For
 $$
 r_n\coloneqq\frac{2\log M_n}{M_n},
 $$
@@ -55,7 +58,7 @@ $$
 r_n\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
 Apply the limit
 $$
 \frac{\log t}{t}\longrightarrow0
@@ -63,7 +66,10 @@ $$
 as $t\to\infty$, applied to $t=M_n$.
 :::
 
-<1>2. If $\abs{w}=r_n$, then
+:::
+
+::: {.pf-step #f-expansion}
+If $\abs{w}=r_n$, then
 $$
 F(a_n+w)
 =
@@ -79,7 +85,7 @@ iM_n(e^w-1-w)
 -w.
 $$
 
-::: {.proof}
+::: pf-proof
 Using
 $$
 e^{a_n}=iM_n
@@ -105,14 +111,17 @@ iM_n(e^w-1-w)
 $$
 :::
 
-<1>3. For every complex number $w$,
+:::
+
+::: {.pf-step #exp-error-bound}
+For every complex number $w$,
 $$
 \abs{e^w-1-w}
 \leq
 \frac12e^{\abs{w}}\abs{w}^2.
 $$
 
-::: {.proof}
+::: pf-proof
 From the exponential series,
 $$
 e^w-1-w
@@ -134,7 +143,10 @@ $$
 $$
 :::
 
-<1>4. For all sufficiently large $n$ and every $w$ with
+:::
+
+::: {.pf-step #hn-bound}
+For all sufficiently large $n$ and every $w$ with
 $\abs{w}=r_n$,
 $$
 \abs{H_n(w)}
@@ -142,8 +154,8 @@ $$
 \abs{iM_nw}.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3,
+::: pf-proof
+By steps [](#f-expansion){.pf-ref} and [](#exp-error-bound){.pf-ref},
 $$
 \abs{H_n(w)}
 \leq
@@ -179,7 +191,7 @@ $$
 \frac{2}{M_n}
 \longrightarrow0
 $$
-by step <1>1. Hence for all sufficiently large $n$,
+by step [](#rn-vanishes){.pf-ref}. Hence for all sufficiently large $n$,
 $$
 \frac12M_ne^{r_n}r_n^2
 +\frac\pi2+r_n
@@ -196,7 +208,10 @@ $$
 $$
 :::
 
-<1>5. For every sufficiently large $n$, the function $F$ has exactly one
+:::
+
+::: {.pf-step #unique-zero-in-disk}
+For every sufficiently large $n$, the function $F$ has exactly one
 zero in the disk
 $$
 D_n
@@ -205,8 +220,8 @@ D_n
 $$
 counted with multiplicity.
 
-::: {.proof}
-On the circle $\abs{w}=r_n$, step <1>4 gives
+::: pf-proof
+On the circle $\abs{w}=r_n$, step [](#hn-bound){.pf-ref} gives
 $$
 \abs{H_n(w)}
 <
@@ -224,10 +239,13 @@ have the same number of zeros in $\abs{w}<r_n$. The latter has exactly
 one zero, at $w=0$, with multiplicity $1$.
 :::
 
-<1>6. The disks $D_n$ are pairwise disjoint for all sufficiently large
+:::
+
+::: {.pf-step #disks-disjoint}
+The disks $D_n$ are pairwise disjoint for all sufficiently large
 $n$.
 
-::: {.proof}
+::: pf-proof
 The imaginary parts of consecutive centers differ by
 $$
 \operatorname{Im}(a_{n+1}-a_n)
@@ -240,7 +258,7 @@ $$
 \geq
 2\pi.
 $$
-By step <1>1, one has $r_n<1$ for all sufficiently large $n$. Thus for
+By step [](#rn-vanishes){.pf-ref}, one has $r_n<1$ for all sufficiently large $n$. Thus for
 large $m\neq n$,
 $$
 r_m+r_n<2<2\pi\leq\abs{a_m-a_n},
@@ -248,22 +266,28 @@ $$
 so the corresponding disks are disjoint.
 :::
 
-<1>7. The equation
+:::
+
+::: {.pf-step #infinitely-many-solutions}
+The equation
 $$
 e^z=z
 $$
 has infinitely many distinct complex solutions.
 
-::: {.proof}
-By step <1>5, every sufficiently large $n$ contributes a zero of $F$ in
-$D_n$. By step <1>6, those disks are pairwise disjoint, so the resulting
+::: pf-proof
+By step [](#unique-zero-in-disk){.pf-ref}, every sufficiently large $n$ contributes a zero of $F$ in
+$D_n$. By step [](#disks-disjoint){.pf-ref}, those disks are pairwise disjoint, so the resulting
 zeros are distinct. Since there are infinitely many such integers $n$,
 $F$ has infinitely many zeros.
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#infinitely-many-solutions){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

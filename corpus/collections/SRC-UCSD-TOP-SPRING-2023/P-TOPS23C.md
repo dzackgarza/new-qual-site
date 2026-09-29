@@ -21,25 +21,47 @@ To which well-known group is $K$ isomorphic?
 :::
 
 ::: {.solution}
-<1>1. The map $F_2\to S_3$ is surjective.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The map $F_2\to S_3$ is surjective.
+
+::: pf-proof
 The transpositions $(12)$ and $(23)$ generate $S_3$.
 :::
 
-<1>2. Therefore its kernel $K$ has index $6$ in the rank-$2$ free group $F_2$.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore its kernel $K$ has index $6$ in the rank-$2$ free group $F_2$.
+
+::: pf-proof
 By the first isomorphism theorem, $F_2/K\cong S_3$, which has six elements.
 :::
 
-<1>3. Nielsen--Schreier gives
+:::
+
+::: {.pf-step #nielsen-schreier-rank}
+Nielsen--Schreier gives
 $$\operatorname{rank}K=1+6(2-1)=7.$$
-::: {.proof}
+
+::: pf-proof
 An index-$d$ subgroup of a free group of rank $r$ is free of rank $1+d(r-1)$.
 :::
 
-<1>4. Hence
-$$\boxed{K\cong F_7.}$$
-::: {.proof}
-Every subgroup of a free group is free, and <1>3 determines its rank.
 :::
+
+::: pf-step
+Hence
+$$\boxed{K\cong F_7.}$$
+
+::: pf-proof
+Every subgroup of a free group is free, and step [](#nielsen-schreier-rank){.pf-ref} determines its rank.
+:::
+
+:::
+
+:::
+
 :::

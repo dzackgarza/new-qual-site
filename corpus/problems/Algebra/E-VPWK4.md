@@ -29,8 +29,12 @@ Let $G$ be a finite group. Show that the size of every conjugacy class in $G$ di
 ::: {.solution}
 Let $x\in G$.
 
-<1>1. Under the conjugation action of $G$ on itself, the orbit of $x$ is its conjugacy class and its stabilizer is the centralizer $C_G(x)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #orbit-stabilizer-conjugation}
+Under the conjugation action of $G$ on itself, the orbit of $x$ is its conjugacy class and its stabilizer is the centralizer $C_G(x)$.
+
+::: pf-proof
 The conjugation orbit is
 \[
 G\cdot x=\{gxg^{-1}:g\in G\}=\operatorname{Cl}_G(x).
@@ -49,23 +53,36 @@ so
 \]
 :::
 
-<1>2. Hence
+:::
+
+::: {.pf-step #class-size-index}
+Hence
 \[
 |\operatorname{Cl}_G(x)|=[G:C_G(x)].
 \]
-::: {.proof}
-This is the orbit-stabilizer theorem applied to the conjugation action, using <1>1.
+
+::: pf-proof
+This is the orbit-stabilizer theorem applied to the conjugation action, using step [](#orbit-stabilizer-conjugation){.pf-ref}.
 :::
 
-<1>3. Therefore the size of the conjugacy class divides $|G|$.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore the size of the conjugacy class divides $|G|$.
+
+::: pf-proof
 Since $C_G(x)\le G$ and $G$ is finite, Lagrange's theorem gives
 \[
 |G|=|C_G(x)|[G:C_G(x)].
 \]
-By <1>2, the second factor is $|\operatorname{Cl}_G(x)|$, so
+By step [](#class-size-index){.pf-ref}, the second factor is $|\operatorname{Cl}_G(x)|$, so
 \[
 |\operatorname{Cl}_G(x)|\mid |G|.
 \]
 :::
+
+:::
+
+:::
+
 :::

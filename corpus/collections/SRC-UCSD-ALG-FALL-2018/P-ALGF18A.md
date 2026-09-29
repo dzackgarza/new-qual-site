@@ -37,11 +37,15 @@ Prove that $G$ has normal subgroups $N_1$ and $N_2$ such that $|N_1| = pq$, $|N_
 ::: {.solution}
 Let $n_q$ denote the number of Sylow $q$-subgroups of $G$.
 
-<1>1. Either the Sylow $q$-subgroup of $G$ is normal, or
+::: pf
+
+::: {.pf-step #nq-cases}
+Either the Sylow $q$-subgroup of $G$ is normal, or
 \[
 n_q=2p.
 \]
-::: {.proof}
+
+::: pf-proof
 Sylow's theorem gives
 \[
 n_q\equiv1\pmod q,
@@ -59,12 +63,16 @@ n_q=2p.
 \]
 :::
 
-<1>2. If $n_q=1$, there are normal subgroups
+:::
+
+::: {.pf-step #case-nq-1}
+If $n_q=1$, there are normal subgroups
 \[
 N_2\triangleleft N_1\triangleleft G
 \]
 with $|N_2|=q$ and $|N_1|=pq$.
-::: {.proof}
+
+::: pf-proof
 Let $N_2$ be the unique Sylow $q$-subgroup. Then
 \[
 N_2\triangleleft G.
@@ -84,8 +92,12 @@ N_2\subseteq N_1,
 \]
 :::
 
-<1>3. Suppose $n_q=2p$. Then the Sylow $p$-subgroup of $G$ is normal.
-::: {.proof}
+:::
+
+::: {.pf-step #case-nq-2p-p-normal}
+Suppose $n_q=2p$. Then the Sylow $p$-subgroup of $G$ is normal.
+
+::: pf-proof
 Distinct Sylow $q$-subgroups intersect trivially, because each has prime order $q$.
 Thus the $2p$ Sylow $q$-subgroups contribute
 \[
@@ -123,13 +135,17 @@ n_p=1.
 Thus the Sylow $p$-subgroup $P$ is normal in $G$.
 :::
 
-<1>4. In the case $n_q=2p$, there are again normal subgroups
+:::
+
+::: {.pf-step #case-nq-2p-subgroups}
+In the case $n_q=2p$, there are again normal subgroups
 \[
 N_2\triangleleft N_1\triangleleft G
 \]
 with $|N_2|=q$ and $|N_1|=pq$.
-::: {.proof}
-By <1>3, let $P\triangleleft G$ be the Sylow $p$-subgroup.
+
+::: pf-proof
+By step [](#case-nq-2p-p-normal){.pf-ref}, let $P\triangleleft G$ be the Sylow $p$-subgroup.
 Then
 \[
 |G/P|=2q.
@@ -159,9 +175,17 @@ N_2\subseteq N_1.
 \]
 :::
 
-<1>5. The required subgroups exist in every case.
-::: {.proof}
-By <1>1, either $n_q=1$ or $n_q=2p$.
-The first case is settled by <1>2 and the second by <1>4.
+:::
+
+::: pf-step
+The required subgroups exist in every case.
+
+::: pf-proof
+By step [](#nq-cases){.pf-ref}, either $n_q=1$ or $n_q=2p$.
+The first case is settled by step [](#case-nq-1){.pf-ref} and the second by step [](#case-nq-2p-subgroups){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

@@ -42,8 +42,12 @@ The truth values are
 \boxed{\text{False},\ \text{False},\ \text{True},\ \text{False}}.
 \]
 
-<1>1. Statement 1 is false.
-::: {.proof}
+::: pf
+
+::: {.pf-step #statement-1-false}
+Statement 1 is false.
+
+::: pf-proof
 If \(f:X\to Y\) is surjective and \(g\in A(Y)\) satisfies \(f^\sharp(g)=g\circ f=0\), then \(g\) vanishes at every point of \(Y\), hence \(g=0\). Thus surjectivity of \(f\) does imply injectivity of \(f^\sharp\).
 
 The converse fails. Take the open immersion
@@ -57,8 +61,12 @@ j^\sharp:k[t]\longrightarrow k[t,t^{-1}]
 is the natural inclusion, so it is injective, but \(j\) is not surjective because \(0\notin\mathbb G_m\).
 :::
 
-<1>2. Statement 2 is false.
-::: {.proof}
+:::
+
+::: {.pf-step #statement-2-false}
+Statement 2 is false.
+
+::: pf-proof
 If \(f^\sharp:A(Y)\to A(X)\) is surjective, then \(f\) is a closed immersion onto the closed subvariety cut out by \(\ker f^\sharp\); in particular, \(f\) is injective.
 
 Again the converse fails for
@@ -72,8 +80,12 @@ j^\sharp:k[t]\longrightarrow k[t,t^{-1}]
 is not surjective because \(t^{-1}\) is not in its image.
 :::
 
-<1>3. Statement 3 is true.
-::: {.proof}
+:::
+
+::: {.pf-step #statement-3-true}
+Statement 3 is true.
+
+::: pf-proof
 An isomorphism \(f:\mathbb A^1\to\mathbb A^1\) induces a \(k\)-algebra automorphism
 \[
 f^\sharp:k[t]\longrightarrow k[t].
@@ -93,8 +105,12 @@ p(t)=at+b
 with \(a\ne0\), and therefore \(f(x)=ax+b\).
 :::
 
-<1>4. Statement 4 is false.
-::: {.proof}
+:::
+
+::: {.pf-step #statement-4-false}
+Statement 4 is false.
+
+::: pf-proof
 Consider
 \[
 F:\mathbb A^2\longrightarrow\mathbb A^2,
@@ -107,4 +123,13 @@ F^{-1}(u,v)=(u,v-u^2),
 \]
 so \(F\) is an isomorphism. But \(F\) is not affine linear because its second coordinate contains the quadratic term \(x^2\).
 :::
+
+:::
+
+::: pf-qed
+Steps [](#statement-1-false){.pf-ref}, [](#statement-2-false){.pf-ref}, [](#statement-3-true){.pf-ref} and [](#statement-4-false){.pf-ref} give the truth values of statements 1 through 4.
+:::
+
+:::
+
 :::

@@ -45,10 +45,13 @@ $$
 \boxed{\frac{\pi}{2\sqrt2}e^{-2\sqrt2}}.
 $$
 
-<1>1. The first contour passes through a double pole,
+::: pf
+
+::: pf-step
+The first contour passes through a double pole,
 and its one-sided integral diverges there.
 
-::: {.proof}
+::: pf-proof
 One has $|1-2|=1$, so the pole at $z=1$ lies on
 the path, not strictly inside it. Set $g(z)=e^z/z$,
 which is holomorphic near $1$. Direct calculation gives
@@ -82,9 +85,12 @@ no value in the ordinary sense. A zero residue
 at a double pole does not remove this obstruction.
 :::
 
-<1>2. The second integral has the displayed value.
+:::
 
-::: {.proof}
+::: pf-step
+The second integral has the displayed value.
+
+::: pf-proof
 Put $F(z)=e^{2iz}/(z^2+2)$. For $R>\sqrt2$,
 integrate over the interval $[-R,R]$ followed by
 the counterclockwise upper semicircle $\Gamma_R$.
@@ -112,5 +118,9 @@ $$
 $$
 The integrand is even, so its half-line integral
 is half that value, as asserted.
+:::
+
+:::
+
 :::
 :::

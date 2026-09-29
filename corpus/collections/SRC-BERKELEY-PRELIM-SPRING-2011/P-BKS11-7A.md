@@ -34,7 +34,11 @@ Your final answer should not involve any complex numbers.
 :::
 
 ::: {.solution}
-<1>1. With
+
+::: pf
+
+::: {.pf-step #geometric-sum}
+With
 $$
 z\coloneqq re^{i\theta},
 $$
@@ -45,7 +49,7 @@ $$
 \frac{1}{1-z}.
 $$
 
-::: {.proof}
+::: pf-proof
 Because
 $$
 \abs{z}=r<1,
@@ -53,7 +57,10 @@ $$
 the geometric series converges absolutely and has the stated sum.
 :::
 
-<1>2. The required real series is the real part of the sum in step <1>1:
+:::
+
+::: {.pf-step #real-part-equals-series}
+The required real series is the real part of the sum in step [](#geometric-sum){.pf-ref}:
 $$
 \sum_{k=0}^{\infty}r^k\cos(k\theta)
 =
@@ -63,7 +70,7 @@ $$
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
 For every $k$,
 $$
 \operatorname{Re}(z^k)
@@ -75,7 +82,10 @@ $$
 Absolute convergence permits taking real parts term by term.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #rationalized-form}
+One has
 $$
 \frac{1}{1-re^{i\theta}}
 =
@@ -83,7 +93,7 @@ $$
 {1-2r\cos\theta+r^2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Multiply numerator and denominator by the complex conjugate
 $$
 1-re^{-i\theta}.
@@ -104,7 +114,10 @@ $$
 $$
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #closed-form}
+Therefore
 $$
 \boxed{
 \sum_{k=0}^{\infty}r^k\cos(k\theta)
@@ -114,14 +127,17 @@ $$
 }.
 $$
 
-::: {.proof}
-Take the real part of the expression in step <1>3 and apply step <1>2.
+::: pf-proof
+Take the real part of the expression in step [](#rationalized-form){.pf-ref} and apply step [](#real-part-equals-series){.pf-ref}.
 The displayed answer contains no complex quantities.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required closed form.
 :::
+
+::: pf-qed
+Step [](#closed-form){.pf-ref} is the required closed form.
+:::
+
+:::
+
 :::

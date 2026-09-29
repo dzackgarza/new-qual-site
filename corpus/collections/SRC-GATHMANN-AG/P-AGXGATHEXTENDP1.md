@@ -52,7 +52,10 @@ $$
 U_n=\AA^n\smz.
 $$
 
-<1>1. Part (a): every nonconstant morphism
+::: pf
+
+::: {.pf-step #rational-function-from-morphism}
+Part (a): every nonconstant morphism
 $$
 f:U_1\longrightarrow\PP^1
 $$
@@ -61,7 +64,7 @@ $$
 r(t)\in k(t).
 $$
 
-::: {.proof}
+::: pf-proof
 Let $t$ be the coordinate on $\AA^1$ and let $\eta$ be the generic point
 of
 $$
@@ -90,7 +93,10 @@ $$
 This is the rational function induced by $f$.
 :::
 
-<1>2. Part (a): write
+:::
+
+::: {.pf-step #morphism-from-coprime-pair}
+Part (a): write
 $$
 r(t)=\frac{p(t)}{q(t)}
 $$
@@ -103,7 +109,7 @@ $$
 \boxed{\hat f:\AA^1\longrightarrow\PP^1}.
 $$
 
-::: {.proof}
+::: pf-proof
 Because $p$ and $q$ are coprime in the PID $k[t]$, there exist
 $a,b\in k[t]$ such that
 $$
@@ -118,10 +124,13 @@ t\longmapsto[p(t):q(t)].
 $$
 :::
 
-<1>3. Part (a): the morphism $\hat f$ of step <1>2 restricts to $f$ on
+:::
+
+::: {.pf-step #extension-restricts-correctly}
+Part (a): the morphism $\hat f$ of step [](#morphism-from-coprime-pair){.pf-ref} restricts to $f$ on
 $U_1$.
 
-::: {.proof}
+::: pf-proof
 On the dense open subset of $U_1$ where $q\ne0$ and where $f$ lands in the
 affine chart $\AA^1\subset\PP^1$, both maps have affine coordinate
 $$
@@ -155,7 +164,10 @@ If $f$ is constant, the corresponding constant map on $\AA^1$ is already
 an extension. This proves part (a).
 :::
 
-<1>4. Part (b): the formula
+:::
+
+::: {.pf-step #diagonal-map-on-punctured-plane}
+Part (b): the formula
 $$
 f(x,y)=[x:y]
 $$
@@ -164,7 +176,7 @@ $$
 f:U_2\longrightarrow\PP^1.
 $$
 
-::: {.proof}
+::: pf-proof
 On
 $$
 U_2=\AA^2\setminus\{(0,0)\},
@@ -176,10 +188,13 @@ $$
 $$
 :::
 
-<1>5. Part (b): the morphism in step <1>4 does not extend to
+:::
+
+::: {.pf-step #no-extension-to-plane}
+Part (b): the morphism in step [](#diagonal-map-on-punctured-plane){.pf-ref} does not extend to
 $\AA^2$.
 
-::: {.proof}
+::: pf-proof
 Suppose that
 $$
 F:\AA^2\longrightarrow\PP^1
@@ -201,7 +216,7 @@ the map $F$ equals
 $$
 [x:0]=[1:0].
 $$
-As in step <1>3, separatedness of $\PP^1$ implies that
+As in step [](#extension-restricts-correctly){.pf-ref}, separatedness of $\PP^1$ implies that
 $$
 F|_{L_x}
 $$
@@ -223,15 +238,18 @@ $$
 F(0,0)=[0:1].
 $$
 These two points of $\PP^1$ are distinct, a contradiction.
-Therefore the morphism in step <1>4 has no extension to $\AA^2$.
+Therefore the morphism in step [](#diagonal-map-on-punctured-plane){.pf-ref} has no extension to $\AA^2$.
 :::
 
-<1>6. Part (c):
+:::
+
+::: {.pf-step #global-sections-are-constants}
+Part (c):
 $$
 \boxed{\Gamma(\PP^1,\OO_{\PP^1})=k.}
 $$
 
-::: {.proof}
+::: pf-proof
 Use the standard affine cover
 $$
 U_0=D(Y)\cong\operatorname{Spec}k[t],
@@ -270,13 +288,16 @@ $$
 and every global regular function on $\PP^1$ is constant.
 :::
 
-<1>7. Part (c): every morphism
+:::
+
+::: {.pf-step #morphisms-to-affine-line-are-constant}
+Part (c): every morphism
 $$
 f:\PP^1\longrightarrow\AA^1
 $$
 is constant.
 
-::: {.proof}
+::: pf-proof
 Let $z$ be the coordinate on
 $$
 \AA^1=\operatorname{Spec}k[z].
@@ -285,7 +306,7 @@ The pullback
 $$
 f^*z
 $$
-is a global regular function on $\PP^1$. By step <1>6,
+is a global regular function on $\PP^1$. By step [](#global-sections-are-constants){.pf-ref},
 $$
 f^*z=\lambda
 $$
@@ -298,12 +319,14 @@ $$
 is the constant morphism with value $\lambda$.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove the extension statement in part (a).
-Steps <1>4--<1>5 give a morphism on the punctured affine plane that cannot
+::: pf-qed
+Steps [](#rational-function-from-morphism){.pf-ref}, [](#morphism-from-coprime-pair){.pf-ref} and [](#extension-restricts-correctly){.pf-ref} prove the extension statement in part (a).
+Steps [](#diagonal-map-on-punctured-plane){.pf-ref} and [](#no-extension-to-plane){.pf-ref} give a morphism on the punctured affine plane that cannot
 extend, proving part (b).
-Steps <1>6--<1>7 prove part (c).
+Steps [](#global-sections-are-constants){.pf-ref} and [](#morphisms-to-affine-line-are-constant){.pf-ref} prove part (c).
+:::
+
 :::
 :::

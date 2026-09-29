@@ -37,24 +37,33 @@ Show that there is no retraction $r : X \to A$.
 Fix a basepoint $x_0\in A$ and let $i\colon A\hookrightarrow S^2$ be the inclusion.
 Suppose $r\colon S^2\to A$ is a retraction.
 
-<1>1. $r_*\circ i_*=\operatorname{id}_{\pi_1(A,x_0)}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #retraction-splits}
+$r_*\circ i_*=\operatorname{id}_{\pi_1(A,x_0)}$.
+
+::: pf-proof
 A retraction onto $A$ restricts to the identity on $A$, so $r\circ i=\operatorname{id}_A$ and $r(x_0)=x_0$.
 By functoriality of $\pi_1$, $r_*\circ i_*=(r\circ i)_*=\operatorname{id}_{\pi_1(A,x_0)}$.
 :::
 
-<1>2. $i_*\colon\pi_1(A,x_0)\to\pi_1(S^2,x_0)$ is the zero homomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #inclusion-is-zero}
+$i_*\colon\pi_1(A,x_0)\to\pi_1(S^2,x_0)$ is the zero homomorphism.
+
+::: pf-proof
 Its codomain $\pi_1(S^2,x_0)$ is trivial.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-By step <1>2, $r_*\circ i_*=0$.
-By step <1>1, the same composite is the identity of $\pi_1(A,x_0)\cong\pi_1(S^1)\cong\ZZ$, which is nontrivial.
+::: pf-qed
+By step [](#inclusion-is-zero){.pf-ref}, $r_*\circ i_*=0$.
+By step [](#retraction-splits){.pf-ref}, the same composite is the identity of $\pi_1(A,x_0)\cong\pi_1(S^1)\cong\ZZ$, which is nontrivial.
 This contradiction shows that no retraction $S^2\to A$ exists.
 :::
+
+:::
+
 :::

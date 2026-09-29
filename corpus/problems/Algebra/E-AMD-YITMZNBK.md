@@ -29,8 +29,12 @@ Let $R$ be a PID and let $0\neq x\in R$. Show that $x$ is irreducible if and onl
 ::: {.solution}
 Let $R$ be a PID and $0\neq x\in R$.
 
-<1>1. If $x$ is irreducible, then $(x)$ is a maximal ideal.
-::: {.proof}
+::: pf
+
+::: {.pf-step #irreducible-implies-maximal}
+If $x$ is irreducible, then $(x)$ is a maximal ideal.
+
+::: pf-proof
 Since $x$ is irreducible, it is a nonunit, so $(x)$ is proper. Let $I$ be an ideal with
 \[
 (x)\subseteq I\subsetneq R.
@@ -42,8 +46,12 @@ Because $R$ is a PID, $I=(a)$ for some $a\in R$. The inclusion $(x)\subseteq(a)$
 Thus there is no proper ideal strictly between $(x)$ and $R$, so $(x)$ is maximal.
 :::
 
-<1>2. If $(x)$ is maximal, then $x$ is irreducible.
-::: {.proof}
+:::
+
+::: {.pf-step #maximal-implies-irreducible}
+If $(x)$ is maximal, then $x$ is irreducible.
+
+::: pf-proof
 Since $(x)$ is proper, $x$ is not a unit. Suppose
 \[
 x=ab.
@@ -59,11 +67,20 @@ x=ab=uxb.
 Because $R$ is a domain and $x\neq0$, cancellation gives $ub=1$, so $b$ is a unit. Thus every factorization of $x$ has a unit factor, and $x$ is irreducible.
 :::
 
-<1>3. Therefore, for every nonzero element $x$ of a PID,
+:::
+
+::: pf-step
+Therefore, for every nonzero element $x$ of a PID,
 \[
 x\text{ is irreducible}\quad\Longleftrightarrow\quad (x)\text{ is maximal}.
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+Combine steps [](#irreducible-implies-maximal){.pf-ref} and [](#maximal-implies-irreducible){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

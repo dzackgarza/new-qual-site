@@ -31,6 +31,7 @@ For positive integers $a,b,c$, prove that
 :::
 
 ::: {.solution}
+
 Fix a prime $p$ and write
 $$
 A=v_p(a),
@@ -40,7 +41,10 @@ B=v_p(b),
 C=v_p(c).
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #lhs-valuation}
+One has
 $$
 v_p\!\left(
 \gcd\bigl(a,\operatorname{lcm}(b,c)\bigr)
@@ -49,7 +53,7 @@ v_p\!\left(
 \min\bigl(A,\max(B,C)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 For positive integers,
 $$
 v_p(\gcd(r,s))
@@ -66,7 +70,10 @@ Apply these formulas first to $\operatorname{lcm}(b,c)$ and then to the
 outer gcd.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #rhs-valuation}
+One has
 $$
 v_p\!\left(
 \operatorname{lcm}\bigl(\gcd(a,b),\gcd(a,c)\bigr)
@@ -75,19 +82,22 @@ v_p\!\left(
 \max\bigl(\min(A,B),\min(A,C)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 Apply the same two valuation formulas, first to the two gcds and then to
 the outer lcm.
 :::
 
-<1>3. For all real numbers $A,B,C$,
+:::
+
+::: {.pf-step #min-max-distributive-identity}
+For all real numbers $A,B,C$,
 $$
 \min\bigl(A,\max(B,C)\bigr)
 =
 \max\bigl(\min(A,B),\min(A,C)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 Interchange $B$ and $C$ if necessary and assume
 $$
 B\leq C.
@@ -112,14 +122,20 @@ $$
 $$
 :::
 
-<1>4. The two integers in the statement have the same $p$-adic valuation
-for every prime $p$.
-
-::: {.proof}
-Combine steps <1>1--<1>3.
 :::
 
-<1>5. Therefore
+::: {.pf-step #equal-valuations-every-prime}
+The two integers in the statement have the same $p$-adic valuation
+for every prime $p$.
+
+::: pf-proof
+Combine steps [](#lhs-valuation){.pf-ref}, [](#rhs-valuation){.pf-ref} and [](#min-max-distributive-identity){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #gcd-lcm-identity}
+Therefore
 $$
 \boxed{
 \gcd\bigl(a,\operatorname{lcm}(b,c)\bigr)
@@ -128,14 +144,17 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 Two positive integers are equal exactly when their $p$-adic valuations
-agree for every prime $p$. Step <1>4 gives that agreement.
+agree for every prime $p$. Step [](#equal-valuations-every-prime){.pf-ref} gives that agreement.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required identity.
 :::
+
+::: pf-qed
+Step [](#gcd-lcm-identity){.pf-ref} is the required identity.
+:::
+
+:::
+
 :::

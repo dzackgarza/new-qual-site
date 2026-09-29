@@ -44,8 +44,12 @@ Justify your answer carefully.
 ::: {.solution}
 The statement defines the countable-closed topology and then asks about the finite-complement topology. The answer is no for each of three readings: the cofinite topology on $X\times X$, the product of cofinite topologies on $X$, and the product of countable-closed topologies on $X$.
 
-<1>1. If "the finite complement topology" means the cofinite topology directly on the set $X\times X$, then $\Delta$ is not closed.
-::: {.proof}
+::: pf
+
+::: {.pf-step #cofinite-on-product}
+If "the finite complement topology" means the cofinite topology directly on the set $X\times X$, then $\Delta$ is not closed.
+
+::: pf-proof
 In the cofinite topology on an infinite set, the proper closed subsets are precisely the finite subsets.
 Since $X$ is uncountable, the diagonal
 \[
@@ -56,8 +60,12 @@ It is also a proper subset of $X\times X$ because $X$ has at least two distinct 
 Thus $\Delta$ is neither finite nor all of $X\times X$, and hence is not closed in the cofinite topology on $X\times X$.
 :::
 
-<1>2. If $X$ carries the cofinite topology and $X\times X$ carries the product topology, then $\Delta$ is not closed.
-::: {.proof}
+:::
+
+::: {.pf-step #cofinite-product-topology}
+If $X$ carries the cofinite topology and $X\times X$ carries the product topology, then $\Delta$ is not closed.
+
+::: pf-proof
 Choose distinct points $a,b\in X$.
 Suppose there were a basic product neighborhood
 \[
@@ -83,8 +91,12 @@ Hence
 so $\Delta$ is not closed.
 :::
 
-<1>3. If the intended topology was instead the countable-closed topology defined in the first sentence, with the product topology on $X\times X$, then $\Delta$ is again not closed.
-::: {.proof}
+:::
+
+::: {.pf-step #countable-closed-product-topology}
+If the intended topology was instead the countable-closed topology defined in the first sentence, with the product topology on $X\times X$, then $\Delta$ is again not closed.
+
+::: pf-proof
 The open nonempty subsets of the countable-closed topology are the complements of countable subsets of $X$.
 If $U,V$ are two such nonempty open sets, then
 \[
@@ -94,13 +106,22 @@ X\setminus(U\cap V)
 is countable.
 Since $X$ is uncountable, $U\cap V$ is nonempty.
 
-Now repeat the argument of <1>2: for any off-diagonal point $(a,b)$ and any basic product neighborhood $U\times V$ of it, choose $z\in U\cap V$.
+Now repeat the argument of step [](#cofinite-product-topology){.pf-ref}: for any off-diagonal point $(a,b)$ and any basic product neighborhood $U\times V$ of it, choose $z\in U\cap V$.
 Then $(z,z)\in(U\times V)\cap\Delta$.
 Thus every off-diagonal point lies in $\overline\Delta$, so in particular $\Delta$ is not closed.
 :::
 
-<1>4. Thus the source ambiguity does not affect the conclusion: the diagonal is not closed.
-::: {.proof}
-The literal cofinite reading is <1>1; the cofinite product reading is <1>2; and the topology actually defined by the source is handled in <1>3. All three yield the same negative answer.
 :::
+
+::: pf-step
+Thus the source ambiguity does not affect the conclusion: the diagonal is not closed.
+
+::: pf-proof
+The literal cofinite reading is step [](#cofinite-on-product){.pf-ref}; the cofinite product reading is step [](#cofinite-product-topology){.pf-ref}; and the topology actually defined by the source is handled in step [](#countable-closed-product-topology){.pf-ref}. All three yield the same negative answer.
+:::
+
+:::
+
+:::
+
 :::

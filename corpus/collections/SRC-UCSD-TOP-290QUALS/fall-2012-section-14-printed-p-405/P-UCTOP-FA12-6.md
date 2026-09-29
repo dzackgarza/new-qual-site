@@ -18,19 +18,28 @@ Show that $H_1(M; \mathbb{Z}) = H_3(M; \mathbb{Z}) = 0$ and that $H_2(M; \mathbb
 :::
 
 ::: {.solution}
-<1>1. Since $M$ is simply connected,
+
+::: pf
+
+::: {.pf-step #h1-zero}
+Since $M$ is simply connected,
 $$
 H_1(M;\mathbb Z)=0.
 $$
-::: {.proof}
+
+::: pf-proof
 The first homology group is the abelianization of the fundamental group.
 :::
 
-<1>2. The manifold is orientable and
+:::
+
+::: {.pf-step #h3-zero}
+The manifold is orientable and
 $$
 H_3(M;\mathbb Z)=0.
 $$
-::: {.proof}
+
+::: pf-proof
 Simple connectivity makes the orientation character trivial, so $M$ is orientable. Poincaré duality gives
 $$
 H_3(M)\cong H^1(M),
@@ -41,25 +50,46 @@ H^1(M)\cong\operatorname{Hom}(H_1(M),\mathbb Z)=0.
 $$
 :::
 
-<1>3. Poincaré duality gives
+:::
+
+::: {.pf-step #h2-cohomology-iso}
+Poincaré duality gives
 $$
 H_2(M;\mathbb Z)\cong H^2(M;\mathbb Z).
 $$
-::: {.proof}
+
+::: pf-proof
 Cap product with the fundamental class is an isomorphism in the closed orientable $4$-manifold.
 :::
 
-<1>4. The group $H^2(M;\mathbb Z)$ is free abelian.
-::: {.proof}
+:::
+
+::: {.pf-step #h2-cohomology-free}
+The group $H^2(M;\mathbb Z)$ is free abelian.
+
+::: pf-proof
 The universal coefficient theorem gives
 $$
 0\to\operatorname{Ext}(H_1(M),\mathbb Z)\to H^2(M)\to\operatorname{Hom}(H_2(M),\mathbb Z)\to0.
 $$
-The first term is zero by <1>1, so $H^2(M)$ is isomorphic to $\operatorname{Hom}(H_2(M),\mathbb Z)$, which is free abelian because $H_2(M)$ is finitely generated.
+The first term is zero by step [](#h1-zero){.pf-ref}, so $H^2(M)$ is isomorphic to $\operatorname{Hom}(H_2(M),\mathbb Z)$, which is free abelian because $H_2(M)$ is finitely generated.
 :::
 
-<1>5. Therefore $H_2(M;\mathbb Z)$ is free abelian.
-::: {.proof}
-Combine the isomorphism in <1>3 with <1>4.
 :::
+
+::: {.pf-step #h2-free}
+Therefore $H_2(M;\mathbb Z)$ is free abelian.
+
+::: pf-proof
+Combine the isomorphism in step [](#h2-cohomology-iso){.pf-ref} with step [](#h2-cohomology-free){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#h1-zero){.pf-ref}, [](#h3-zero){.pf-ref} and [](#h2-free){.pf-ref} give $H_1(M;\mathbb Z)=H_3(M;\mathbb Z)=0$ with $H_2(M;\mathbb Z)$ free abelian.
+:::
+
+:::
+
 :::

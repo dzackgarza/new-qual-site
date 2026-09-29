@@ -28,18 +28,27 @@ We say that $A \in \mathcal{A}$ is normal if $A$ and $A^*$ commute (example: nor
 :::
 
 ::: {.solution}
-<1>1. If $\mathcal A$ is commutative, then every element of $\mathcal A$ is normal.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #commutative-implies-normal}
+If $\mathcal A$ is commutative, then every element of $\mathcal A$ is normal.
+
+::: pf-proof
 For $x\in\mathcal A$, commutativity gives $xx^*=x^*x$.
 :::
 
-<1>2. Conversely, suppose every element of $\mathcal A$ is normal.
+:::
+
+::: {.pf-step #sum-normal-gives-commutator-relation}
+Conversely, suppose every element of $\mathcal A$ is normal.
 Fix $x,y\in\mathcal A$ and write $[a,b]=ab-ba$.
 Normality of $x+y$ implies
 \[
 [x,y^*]+[y,x^*]=0.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $x$ and $y$ are individually normal,
 \[
 0=[x+y,(x+y)^*]
@@ -48,11 +57,15 @@ Since $x$ and $y$ are individually normal,
 \]
 :::
 
-<1>3. Normality of $x+iy$ implies
+:::
+
+::: {.pf-step #i-sum-normal-gives-commutator-relation}
+Normality of $x+iy$ implies
 \[
 -i[x,y^*]+i[y,x^*]=0.
 \]
-::: {.proof}
+
+::: pf-proof
 Antilinearity of the involution gives $(x+iy)^*=x^*-iy^*$.
 Hence, using again the normality of $x$ and $y$,
 \[
@@ -61,18 +74,35 @@ Hence, using again the normality of $x$ and $y$,
 \]
 :::
 
-<1>4. Therefore $[x,y^*]=0$ for all $x,y\in\mathcal A$.
-::: {.proof}
+:::
+
+::: {.pf-step #commutator-vanishes}
+Therefore $[x,y^*]=0$ for all $x,y\in\mathcal A$.
+
+::: pf-proof
 Let $A=[x,y^*]$ and $B=[y,x^*]$.
-By <1>2, $A+B=0$, while by <1>3, $-A+B=0$.
+By step [](#sum-normal-gives-commutator-relation){.pf-ref}, $A+B=0$, while by step [](#i-sum-normal-gives-commutator-relation){.pf-ref}, $-A+B=0$.
 Adding and subtracting gives $A=B=0$.
 :::
 
-<1>5. The algebra $\mathcal A$ is commutative.
-::: {.proof}
+:::
+
+::: {.pf-step #algebra-is-commutative}
+The algebra $\mathcal A$ is commutative.
+
+::: pf-proof
 The involution is bijective because $(z^*)^*=z$.
 Thus every $z\in\mathcal A$ has the form $z=y^*$ for some $y\in\mathcal A$.
-By <1>4, $[x,z]=[x,y^*]=0$ for every $x,z\in\mathcal A$.
+By step [](#commutator-vanishes){.pf-ref}, $[x,z]=[x,y^*]=0$ for every $x,z\in\mathcal A$.
 Hence all elements commute.
 :::
+
+:::
+
+::: pf-qed
+Step [](#commutative-implies-normal){.pf-ref} and step [](#algebra-is-commutative){.pf-ref} give the two directions of the equivalence.
+:::
+
+:::
+
 :::

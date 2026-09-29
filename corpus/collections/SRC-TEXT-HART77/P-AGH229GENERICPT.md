@@ -34,7 +34,10 @@ Z\subseteq X
 \]
 be a nonempty irreducible closed subset.
 
-<1>1. Choose an affine open subset
+::: pf
+
+::: pf-step
+Choose an affine open subset
 \[
 U=\operatorname{Spec}A\subseteq X
 \]
@@ -43,7 +46,8 @@ such that
 Z\cap U\ne\varnothing.
 \]
 Then $Z\cap U$ is a nonempty irreducible closed subset of $U$.
-::: {.proof}
+
+::: pf-proof
 An affine open cover of $X$ covers the nonempty set $Z$, so some affine open $U$ meets it.
 
 Since $Z$ is closed in $X$, the intersection $Z\cap U$ is closed in the subspace $U$.  It is irreducible because every nonempty open subset of an irreducible space is irreducible: if
@@ -53,7 +57,10 @@ Z\cap U=C_1\cup C_2
 with $C_1,C_2$ closed in $Z\cap U$, then taking closures in $Z$ would write the dense open subset $Z\cap U$ as contained in the union of two proper closed subsets unless one $C_i$ were the whole intersection.  Equivalently, the standard topological lemma says a nonempty open subspace of an irreducible space is irreducible.
 :::
 
-<1>2. There is a unique prime ideal
+:::
+
+::: {.pf-step #unique-prime-for-zcapu}
+There is a unique prime ideal
 \[
 \mathfrak p\subseteq A
 \]
@@ -61,7 +68,8 @@ such that
 \[
 \boxed{Z\cap U=V(\mathfrak p).}
 \]
-::: {.proof}
+
+::: pf-proof
 Any closed subset of $\operatorname{Spec}A$ has the form
 \[
 V(I)
@@ -115,7 +123,10 @@ implies
 \]
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #zeta-closure-in-u}
+Let
 \[
 \zeta\in U
 \]
@@ -124,21 +135,26 @@ be the point corresponding to $\mathfrak p$.  Then
 \overline{\{\zeta\}}^{\,U}
 =Z\cap U.
 \]
-::: {.proof}
+
+::: pf-proof
 In an affine spectrum, the closure of the point corresponding to a prime $\mathfrak p$ is
 \[
 V(\mathfrak p).
 \]
-Apply <1>2.
+Apply step [](#unique-prime-for-zcapu){.pf-ref}.
 :::
 
-<1>4. The closure of $\zeta$ in $X$ is exactly $Z$:
+:::
+
+::: {.pf-step #zeta-closure-in-x-is-z}
+The closure of $\zeta$ in $X$ is exactly $Z$:
 \[
 \boxed{
 \overline{\{\zeta\}}^{\,X}=Z.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Since $Z$ is closed in $X$ and contains $\zeta$, one has
 \[
 \overline{\{\zeta\}}^{\,X}
@@ -151,7 +167,7 @@ U\cap\overline{\{\zeta\}}^{\,X}
 =\overline{\{\zeta\}}^{\,U}
 =Z\cap U
 \]
-by <1>3.
+by step [](#zeta-closure-in-u){.pf-ref}.
 
 The subset $Z\cap U$ is a nonempty open subset of the irreducible space $Z$, hence is dense in $Z$.  The closed subset
 \[
@@ -161,13 +177,21 @@ The subset $Z\cap U$ is a nonempty open subset of the irreducible space $Z$, hen
 contains this dense subset, so it contains all of $Z$.  Together with the first inclusion, equality follows.
 :::
 
-<1>5. Thus every nonempty irreducible closed subset of a scheme has a generic point.
-::: {.proof}
-The point $\zeta$ constructed in <1>3 satisfies the defining condition by <1>4.
 :::
 
-<1>6. If $\zeta$ is a generic point of $Z$, then $\zeta$ belongs to every nonempty open subset of $Z$.
-::: {.proof}
+::: {.pf-step #generic-point-exists}
+Thus every nonempty irreducible closed subset of a scheme has a generic point.
+
+::: pf-proof
+The point $\zeta$ constructed in step [](#zeta-closure-in-u){.pf-ref} satisfies the defining condition by step [](#zeta-closure-in-x-is-z){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #generic-point-in-every-open}
+If $\zeta$ is a generic point of $Z$, then $\zeta$ belongs to every nonempty open subset of $Z$.
+
+::: pf-proof
 Let
 \[
 W\subseteq Z
@@ -183,8 +207,12 @@ Z\setminus W
 is a closed subset of $Z$ containing $\zeta$.  Hence it contains the closure of $\zeta$ in $Z$, which is all of $Z$.  This would force $W=\varnothing$, contradiction.
 :::
 
-<1>7. The generic point of $Z$ is unique.
-::: {.proof}
+:::
+
+::: {.pf-step #generic-point-unique}
+The generic point of $Z$ is unique.
+
+::: pf-proof
 Suppose
 \[
 \zeta,\eta\in Z
@@ -197,7 +225,7 @@ Then
 \[
 U\cap Z
 \]
-is a nonempty open subset of $Z$, so <1>6 applied to the generic point $\eta$ gives
+is a nonempty open subset of $Z$, so step [](#generic-point-in-every-open){.pf-ref} applied to the generic point $\eta$ gives
 \[
 \eta\in U.
 \]
@@ -210,7 +238,7 @@ If they correspond to prime ideals $\mathfrak p$ and $\mathfrak q$ of $A$, then
 \[
 V(\mathfrak p)=V(\mathfrak q).
 \]
-As in <1>2, equality of these closed sets for prime ideals implies
+As in step [](#unique-prime-for-zcapu){.pf-ref}, equality of these closed sets for prime ideals implies
 \[
 \mathfrak p=\mathfrak q.
 \]
@@ -220,19 +248,27 @@ Therefore
 \]
 :::
 
-<1>8. Hence every nonempty irreducible closed subset $Z$ of a scheme has a unique generic point:
+:::
+
+::: {.pf-step #unique-generic-point-statement}
+Hence every nonempty irreducible closed subset $Z$ of a scheme has a unique generic point:
 \[
 \boxed{
 Z=\overline{\{\zeta\}}
 \quad\text{for a unique }\zeta\in Z.
 }
 \]
-::: {.proof}
-Existence is <1>5 and uniqueness is <1>7.
+
+::: pf-proof
+Existence is step [](#generic-point-exists){.pf-ref} and uniqueness is step [](#generic-point-unique){.pf-ref}.
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-Step <1>8 is the assertion of the exercise.
 :::
+
+::: pf-qed
+Step [](#unique-generic-point-statement){.pf-ref} is the assertion of the exercise.
+:::
+
+:::
+
 :::

@@ -37,7 +37,10 @@ $$
 F(z)\coloneqq\frac{1}{(e^{2\pi z}+1)^2}.
 $$
 
-<1>1. The poles of $F$ are
+::: pf
+
+::: {.pf-step #poles-are-double}
+The poles of $F$ are
 $$
 z_k=\left(k+\frac12\right)i,
 \qquad
@@ -45,7 +48,7 @@ k\in\ZZ,
 $$
 and every pole has order $2$.
 
-::: {.proof}
+::: pf-proof
 The denominator vanishes exactly when
 $$
 e^{2\pi z}=-1.
@@ -73,15 +76,18 @@ at every such point, so those zeros are simple. Squaring the denominator
 therefore makes them double poles of $F$.
 :::
 
-<1>2. Exactly two poles lie inside the unit circle:
+:::
+
+::: {.pf-step #two-poles-inside}
+Exactly two poles lie inside the unit circle:
 $$
 \frac{i}{2}
 \qquad\text{and}\qquad
 -\frac{i}{2}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#poles-are-double){.pf-ref},
 $$
 \abs{z_k}
 =
@@ -95,14 +101,17 @@ holds exactly for $k=0$ and $k=-1$. No pole lies on
 $\abs{z}=1$.
 :::
 
-<1>3. At either pole $z_0=\pm i/2$,
+:::
+
+::: {.pf-step #residue-at-pole}
+At either pole $z_0=\pm i/2$,
 $$
 \operatorname{Res}_{z=z_0}F(z)
 =
 -\frac{1}{2\pi}.
 $$
 
-::: {.proof}
+::: pf-proof
 Put $w=z-z_0$. Since $e^{2\pi z_0}=-1$,
 $$
 e^{2\pi z}+1
@@ -137,24 +146,30 @@ Thus the coefficient of $(z-z_0)^{-1}=w^{-1}$ is
 $-1/(2\pi)$.
 :::
 
-<1>4. The sum of the residues inside $\abs{z}=1$ is
+:::
+
+::: {.pf-step #residue-sum}
+The sum of the residues inside $\abs{z}=1$ is
 $$
 -\frac{1}{\pi}.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3, there are exactly two enclosed poles and each
+::: pf-proof
+By steps [](#two-poles-inside){.pf-ref} and [](#residue-at-pole){.pf-ref}, there are exactly two enclosed poles and each
 contributes $-1/(2\pi)$.
 :::
 
-<1>5. The contour integral equals
+:::
+
+::: {.pf-step #integral-value-boxed}
+The contour integral equals
 $$
 \boxed{-2i}.
 $$
 
-::: {.proof}
+::: pf-proof
 The contour is counterclockwise and contains no pole on its boundary by
-step <1>2. Hence the residue theorem and step <1>4 give
+step [](#two-poles-inside){.pf-ref}. Hence the residue theorem and step [](#residue-sum){.pf-ref} give
 $$
 \int_{\abs{z}=1}F(z)\,dz
 =
@@ -165,9 +180,11 @@ $$
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the requested value.
+::: pf-qed
+Step [](#integral-value-boxed){.pf-ref} is the requested value.
+:::
+
 :::
 :::

@@ -40,8 +40,12 @@ G_{i+1}/G_i\subseteq Z(G/G_i)
 \]
 for every $i$.
 
-<1>1. Every nontrivial finite $p$-group has nontrivial center.
-::: {.proof}
+::: pf
+
+::: {.pf-step #nontrivial-p-group-has-center}
+Every nontrivial finite $p$-group has nontrivial center.
+
+::: pf-proof
 Let $|G|=p^n$ with $n\ge1$, and let $G$ act on itself by conjugation.
 The class equation is
 \[
@@ -63,8 +67,12 @@ Thus
 \]
 :::
 
-<1>2. Every finite $p$-group is nilpotent.
-::: {.proof}
+:::
+
+::: pf-step
+Every finite $p$-group is nilpotent.
+
+::: pf-proof
 We argue by induction on $|G|$.
 The trivial group is nilpotent.
 Suppose now that $G$ is nontrivial and that every smaller finite $p$-group is nilpotent.
@@ -72,7 +80,7 @@ Set
 \[
 Z:=Z(G).
 \]
-By <1>1, $Z\neq1$, so
+By step [](#nontrivial-p-group-has-center){.pf-ref}, $Z\neq1$, so
 \[
 |G/Z|<|G|.
 \]
@@ -120,5 +128,9 @@ with
 which is central in the corresponding quotient by the central-series property above.
 Thus the lifted chain is a central series for $G$.
 Hence $G$ is nilpotent.
+:::
+
+:::
+
 :::
 :::

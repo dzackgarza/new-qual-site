@@ -36,23 +36,29 @@ N\coloneqq N_G(H)
 $$
 be the normalizer of $H$.
 
-<1>1. The number of distinct conjugates of $H$ in $G$ is
+::: pf
+
+::: {.pf-step #conjugate-count}
+The number of distinct conjugates of $H$ in $G$ is
 $$
 k=[G:N].
 $$
 
-::: {.proof}
+::: pf-proof
 The group $G$ acts by conjugation on the set of subgroups of $G$. The
 stabilizer of $H$ under this action is exactly $N_G(H)=N$. The
 orbit-stabilizer theorem therefore gives the stated number of conjugates.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #k-bound}
+One has
 $$
 k\leq[G:H].
 $$
 
-::: {.proof}
+::: pf-proof
 Every element of $H$ normalizes $H$, so
 $$
 H\subseteq N.
@@ -61,26 +67,32 @@ Hence
 $$
 [G:N]\leq[G:H].
 $$
-Apply step <1>1.
+Apply step [](#conjugate-count){.pf-ref}.
 :::
 
-<1>3. The union of all conjugates of $H$ has cardinality at most
+:::
+
+::: {.pf-step #union-bound}
+The union of all conjugates of $H$ has cardinality at most
 $$
 1+k(\abs{H}-1).
 $$
 
-::: {.proof}
+::: pf-proof
 Every conjugate $gHg^{-1}$ has exactly $\abs{H}$ elements and contains the
 identity element. Count the identity once, and then allow at most
 $\abs{H}-1$ additional elements from each of the $k$ conjugates. Further
 overlaps can only decrease the size of the union.
 :::
 
-<1>4. The union of the conjugates has strictly fewer than $\abs{G}$
+:::
+
+::: {.pf-step #union-strictly-smaller}
+The union of the conjugates has strictly fewer than $\abs{G}$
 elements.
 
-::: {.proof}
-By steps <1>2 and <1>3,
+::: pf-proof
+By steps [](#k-bound){.pf-ref} and [](#union-bound){.pf-ref},
 $$
 \begin{aligned}
 \abs{
@@ -104,21 +116,27 @@ $$
 $$
 :::
 
-<1>5. Consequently,
+:::
+
+::: {.pf-step #conclusion}
+Consequently,
 $$
 \boxed{
 G\neq\bigcup_{g\in G}gHg^{-1}
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 The set on the right has strictly smaller cardinality than $G$ by step
-<1>4.
+[](#union-strictly-smaller){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#conclusion){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

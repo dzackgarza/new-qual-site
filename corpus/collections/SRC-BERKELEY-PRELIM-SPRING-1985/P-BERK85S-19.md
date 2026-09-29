@@ -33,9 +33,12 @@ for some prime $p$ and integer $r\ge1$.
 :::
 
 ::: {.solution}
-<1>1. The characteristic of $F$ is a prime number $p$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #char-is-prime}
+The characteristic of $F$ is a prime number $p$.
+
+::: pf-proof
 Because $F$ is finite, the elements
 $$
 0,\ 1,\ 1+1,\ 1+1+1,\ \ldots
@@ -59,16 +62,19 @@ that a field has no zero divisors. Therefore $m$ is prime; write
 $m=p$.
 :::
 
-<1>2. The prime subfield of $F$ is isomorphic to $\FF_p$.
+:::
 
-::: {.proof}
+::: {.pf-step #prime-subfield}
+The prime subfield of $F$ is isomorphic to $\FF_p$.
+
+::: pf-proof
 The ring homomorphism
 $$
 \ZZ\to F,
 \qquad
 n\longmapsto n\cdot1_F,
 $$
-has kernel $p\ZZ$ by step <1>1. Hence its image is a subfield of $F$
+has kernel $p\ZZ$ by step [](#char-is-prime){.pf-ref}. Hence its image is a subfield of $F$
 isomorphic to
 $$
 \ZZ/p\ZZ=\FF_p.
@@ -76,9 +82,12 @@ $$
 We identify this image with $\FF_p$.
 :::
 
-<1>3. The field $F$ is a finite-dimensional vector space over $\FF_p$.
+:::
 
-::: {.proof}
+::: {.pf-step #finite-dimensional}
+The field $F$ is a finite-dimensional vector space over $\FF_p$.
+
+::: pf-proof
 Since $\FF_p\subset F$, the field $F$ is an $\FF_p$-vector space. Any
 linearly independent subset of $F$ is, in particular, a subset of the
 finite set $F$, so it is finite. Thus a basis of $F$ over $\FF_p$ is
@@ -89,9 +98,12 @@ $$
 Because $1_F\neq0$, this vector space is nonzero, so $r\geq1$.
 :::
 
-<1>4. The field $F$ has exactly $p^r$ elements.
+:::
 
-::: {.proof}
+::: {.pf-step #cardinality-boxed}
+The field $F$ has exactly $p^r$ elements.
+
+::: pf-proof
 Choose a basis $e_1,\ldots,e_r$ of $F$ over $\FF_p$. Every element of
 $F$ has a unique expression
 $$
@@ -106,10 +118,12 @@ $$
 $$
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 gives a prime $p$, step <1>3 gives an integer $r\geq1$, and
-step <1>4 gives the required cardinality.
+::: pf-qed
+Step [](#char-is-prime){.pf-ref} gives a prime $p$, step [](#finite-dimensional){.pf-ref} gives an integer $r\geq1$, and
+step [](#cardinality-boxed){.pf-ref} gives the required cardinality.
+:::
+
 :::
 :::

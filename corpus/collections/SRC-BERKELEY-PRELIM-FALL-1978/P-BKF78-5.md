@@ -40,14 +40,18 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. On the circle $|z|=R$,
+
+::: pf
+
+::: {.pf-step #conjugate-on-circle}
+On the circle $|z|=R$,
 $$
 \overline{f(z)}
 =
 \sum_{k=0}^n \overline{a_k}R^{2k}z^{-k}.
 $$
 
-::: {.proof}
+::: pf-proof
 If $|z|=R$, then
 $$
 z\overline z=R^2,
@@ -66,14 +70,17 @@ $$
 $$
 :::
 
-<1>2. The coefficient of $z^{-1}$ in the Laurent polynomial
+:::
+
+::: {.pf-step #laurent-coefficient}
+The coefficient of $z^{-1}$ in the Laurent polynomial
 $z^{n-1}|f(z)|^2$ is
 $$
 a_0\overline{a_n}R^{2n}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+By step [](#conjugate-on-circle){.pf-ref},
 $$
 z^{n-1}|f(z)|^2
 =
@@ -95,7 +102,10 @@ a_0\overline{a_n}R^{2n}z^{-1}.
 $$
 :::
 
-<1>3. The required integral is
+:::
+
+::: {.pf-step #integral-value}
+The required integral is
 $$
 \boxed{
 \frac1{2\pi i}\int_{|z|=R} z^{n-1}|f(z)|^2\,dz
@@ -104,7 +114,7 @@ a_0\overline{a_n}R^{2n}
 }.
 $$
 
-::: {.proof}
+::: pf-proof
 For every integer $m$,
 $$
 \frac1{2\pi i}\int_{|z|=R} z^m\,dz
@@ -115,13 +125,15 @@ $$
 \end{cases}
 $$
 Thus termwise integration of the finite Laurent expansion in step
-<1>2 extracts exactly its $z^{-1}$ coefficient. Step <1>2 identifies
+[](#laurent-coefficient){.pf-ref} extracts exactly its $z^{-1}$ coefficient. Step [](#laurent-coefficient){.pf-ref} identifies
 that coefficient as $a_0\overline{a_n}R^{2n}$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is the asserted identity.
+::: pf-qed
+Step [](#integral-value){.pf-ref} is the asserted identity.
+:::
+
 :::
 :::

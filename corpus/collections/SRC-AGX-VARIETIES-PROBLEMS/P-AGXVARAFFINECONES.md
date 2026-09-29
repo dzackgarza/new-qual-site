@@ -36,7 +36,11 @@ Do isomorphic varieties have isomorphic affine cones?
 :::
 
 ::: {.solution}
-<1>1. For the standard embedding
+
+::: pf
+
+::: {.pf-step #standard-embedding-cone}
+For the standard embedding
 $$
 \PP^1\subseteq\PP^1,
 $$
@@ -45,7 +49,7 @@ $$
 \widehat{\PP^1}=\AA^2.
 $$
 
-::: {.proof}
+::: pf-proof
 The homogeneous ideal of $\PP^1$ in its own homogeneous coordinate ring
 $$
 \CC[s,t]
@@ -54,7 +58,10 @@ is zero. By definition, the affine cone is the zero locus of the same
 homogeneous ideal in $\AA^2$, hence all of $\AA^2$.
 :::
 
-<1>2. Under the quadratic Veronese embedding
+:::
+
+::: {.pf-step #veronese-image-conic}
+Under the quadratic Veronese embedding
 $$
 \nu_2:\PP^1\longrightarrow\PP^2,
 \qquad
@@ -65,7 +72,7 @@ $$
 C=V(XZ-Y^2).
 $$
 
-::: {.proof}
+::: pf-proof
 Every image point satisfies
 $$
 XZ-Y^2=s^2t^2-(st)^2=0.
@@ -76,7 +83,10 @@ irreducible projective curve contained in the irreducible conic
 $V(XZ-Y^2)$, the two coincide.
 :::
 
-<1>3. The affine cone over the Veronese image is
+:::
+
+::: {.pf-step #veronese-cone}
+The affine cone over the Veronese image is
 $$
 \widehat C
 =
@@ -85,7 +95,7 @@ V(XZ-Y^2)
 \AA^3.
 $$
 
-::: {.proof}
+::: pf-proof
 The conic $C\subseteq\PP^2$ is defined by the homogeneous ideal
 $$
 (XZ-Y^2).
@@ -94,9 +104,12 @@ The affine cone is the zero locus of that same homogeneous ideal in
 $\AA^3$.
 :::
 
-<1>4. The cone $\widehat C$ is singular at the origin.
+:::
 
-::: {.proof}
+::: {.pf-step #cone-singular-at-origin}
+The cone $\widehat C$ is singular at the origin.
+
+::: pf-proof
 Its coordinate ring is
 $$
 A=\CC[X,Y,Z]/(XZ-Y^2).
@@ -121,11 +134,14 @@ Thus the local ring $A_\mfm$ has embedding dimension $3$ and Krull
 dimension $2$, so it is not regular. Therefore the vertex is singular.
 :::
 
-<1>5. The two affine cones are not isomorphic.
+:::
 
-::: {.proof}
+::: {.pf-step #cones-not-isomorphic}
+The two affine cones are not isomorphic.
+
+::: pf-proof
 The affine plane $\AA^2$ is smooth, hence all of its local rings are
-regular. By step <1>4, $\widehat C$ has a nonregular local ring at its
+regular. By step [](#cone-singular-at-origin){.pf-ref}, $\widehat C$ has a nonregular local ring at its
 vertex. An isomorphism of varieties induces isomorphisms of local rings
 and therefore preserves regularity. Consequently
 $$
@@ -137,11 +153,14 @@ copy of $\PP^1$ and the other is its Veronese image. Hence isomorphic
 projective varieties can have non-isomorphic affine cones.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 construct the affine cones of two embeddings of $\PP^1$,
-and steps <1>4--<1>5 show that they are not isomorphic. The answer is
+::: pf-qed
+Steps [](#standard-embedding-cone){.pf-ref}, [](#veronese-image-conic){.pf-ref} and [](#veronese-cone){.pf-ref} construct the affine cones of two embeddings of $\PP^1$,
+and steps [](#cone-singular-at-origin){.pf-ref} and [](#cones-not-isomorphic){.pf-ref} show that they are not isomorphic. The answer is
 $\boxed{\text{no}}$: the affine cone depends on the projective embedding.
 :::
+
+:::
+
 :::

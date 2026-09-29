@@ -34,8 +34,12 @@ audit:
 ::: {.solution}
 Write $\operatorname{adj}(A)=A^a$.
 
-<1>1. It is enough to prove both identities for the generic matrix over $S=\ZZ[x_{ij}]$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #reduce-to-generic-matrix}
+It is enough to prove both identities for the generic matrix over $S=\ZZ[x_{ij}]$.
+
+::: pf-proof
 Each entry of $\operatorname{adj}(A)$ is a polynomial with integer coefficients in the entries of $A$, and determinants are polynomial expressions as well. Thus both desired identities are polynomial identities with integer coefficients in the entries of $A$. If they hold for the generic matrix
 \[
 X=(x_{ij})\in M_n(S),
@@ -43,11 +47,15 @@ X=(x_{ij})\in M_n(S),
 then for any commutative unital ring $R$ and any $A=(a_{ij})\in M_n(R)$, the specialization homomorphism $S\to R$, $x_{ij}\mapsto a_{ij}$, carries those identities to the corresponding identities for $A$.
 :::
 
-<1>2. Over the fraction field $K=\operatorname{Frac}(S)$, the generic matrix $X$ is invertible and
+:::
+
+::: {.pf-step #adj-formula-over-frac-field}
+Over the fraction field $K=\operatorname{Frac}(S)$, the generic matrix $X$ is invertible and
 \[
 \operatorname{adj}(X)=\det(X)X^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
 The polynomial $\det(X)$ is nonzero in the domain $S$, so it is a nonzero element of $K$. Hence $X$ is invertible over $K$. The standard adjugate identity
 \[
 X\operatorname{adj}(X)=\operatorname{adj}(X)X=\det(X)I_n
@@ -55,12 +63,16 @@ X\operatorname{adj}(X)=\operatorname{adj}(X)X=\det(X)I_n
 then gives the displayed formula after multiplying by $X^{-1}$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #det-adj-eq-det-pow}
+One has
 \[
 \det(\operatorname{adj}(X))=\det(X)^{n-1}.
 \]
-::: {.proof}
-Using <1>2 and multiplicativity of the determinant over $K$,
+
+::: pf-proof
+Using step [](#adj-formula-over-frac-field){.pf-ref} and multiplicativity of the determinant over $K$,
 \[
 \det(\operatorname{adj}(X))
 =\det(\det(X)X^{-1})
@@ -70,12 +82,16 @@ Using <1>2 and multiplicativity of the determinant over $K$,
 Both sides lie in $S$, so the equality holds already in $S$.
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #adj-adj-eq-det-pow-x}
+One has
 \[
 \operatorname{adj}(\operatorname{adj}(X))=\det(X)^{n-2}X.
 \]
-::: {.proof}
-By <1>2, $\operatorname{adj}(X)$ is invertible over $K$. Therefore, applying the same adjugate formula to $\operatorname{adj}(X)$ and then using <1>3,
+
+::: pf-proof
+By step [](#adj-formula-over-frac-field){.pf-ref}, $\operatorname{adj}(X)$ is invertible over $K$. Therefore, applying the same adjugate formula to $\operatorname{adj}(X)$ and then using step [](#det-adj-eq-det-pow){.pf-ref},
 \[
 \begin{aligned}
 \operatorname{adj}(\operatorname{adj}(X))
@@ -87,13 +103,22 @@ By <1>2, $\operatorname{adj}(X)$ is invertible over $K$. Therefore, applying the
 Since $n\ge2$, both sides are matrices whose entries lie in $S$. Hence the identity holds in $S$.
 :::
 
-<1>5. Specializing the generic identities gives, for every $A\in M_n(R)$,
+:::
+
+::: pf-step
+Specializing the generic identities gives, for every $A\in M_n(R)$,
 \[
 \det(A^a)=\det(A)^{n-1},
 \qquad
 (A^a)^a=\det(A)^{n-2}A.
 \]
-::: {.proof}
-Apply <1>1 to the identities established in <1>3 and <1>4.
+
+::: pf-proof
+Apply step [](#reduce-to-generic-matrix){.pf-ref} to the identities established in steps [](#det-adj-eq-det-pow){.pf-ref} and [](#adj-adj-eq-det-pow-x){.pf-ref}.
 :::
+
+:::
+
+:::
+
 :::

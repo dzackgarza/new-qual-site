@@ -32,17 +32,24 @@ Let $X$ be a smooth projective connected curve of genus $g$ over an algebraicall
 \ell(D)=h^0(X,\mathcal O_X(D)).
 \]
 
-<1>1. Riemann--Roch states
+::: pf
+
+::: {.pf-step #riemann-roch-statement}
+Riemann--Roch states
 \[
 \boxed{
 \ell(D)-\ell(K-D)=\deg D+1-g.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 This is the Riemann--Roch theorem for divisors on a smooth projective curve [@Har10a, Theorem IV.1.3].
 :::
 
-<1>2. By Serre duality,
+:::
+
+::: {.pf-step #cohomological-form}
+By Serre duality,
 \[
 h^1(X,\mathcal O_X(D))
 =\ell(K-D).
@@ -54,7 +61,8 @@ Hence Riemann--Roch is equivalently
 =\deg D+1-g.
 }
 \]
-::: {.proof}
+
+::: pf-proof
 Serre duality gives
 \[
 H^1(X,\mathcal O_X(D))
@@ -69,7 +77,7 @@ Subtracting this from
 \[
 h^0(X,\mathcal O_X(D))=\ell(D)
 \]
-turns <1>1 into
+turns step [](#riemann-roch-statement){.pf-ref} into
 \[
 \chi(\mathcal O_X(D))
 =h^0-h^1
@@ -77,32 +85,40 @@ turns <1>1 into
 \]
 :::
 
-<1>3. Taking $D=0$ gives
+:::
+
+::: {.pf-step #lk-equals-g}
+Taking $D=0$ gives
 \[
 \boxed{\ell(K)=g.}
 \]
-::: {.proof}
+
+::: pf-proof
 Since $X$ is connected and projective,
 \[
 \ell(0)=h^0(X,\mathcal O_X)=1.
 \]
-Putting $D=0$ into <1>1 gives
+Putting $D=0$ into step [](#riemann-roch-statement){.pf-ref} gives
 \[
 1-\ell(K)=1-g,
 \]
 hence $\ell(K)=g$.
 :::
 
-<1>4. Taking $D=K$ gives
+:::
+
+::: {.pf-step #deg-k-formula}
+Taking $D=K$ gives
 \[
 \boxed{\deg K=2g-2.}
 \]
-::: {.proof}
-With $D=K$, <1>1 gives
+
+::: pf-proof
+With $D=K$, step [](#riemann-roch-statement){.pf-ref} gives
 \[
 \ell(K)-\ell(0)=\deg K+1-g.
 \]
-Using <1>3 and $\ell(0)=1$,
+Using step [](#lk-equals-g){.pf-ref} and $\ell(0)=1$,
 \[
 g-1=\deg K+1-g,
 \]
@@ -112,7 +128,10 @@ so
 \]
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+If
 \[
 \deg D>2g-2,
 \]
@@ -120,8 +139,9 @@ then
 \[
 \ell(D)=\deg D+1-g.
 \]
-::: {.proof}
-By <1>4,
+
+::: pf-proof
+By step [](#deg-k-formula){.pf-ref},
 \[
 \deg(K-D)<0.
 \]
@@ -129,11 +149,14 @@ A divisor of negative degree has no nonzero global section, so
 \[
 \ell(K-D)=0.
 \]
-Apply <1>1.
+Apply step [](#riemann-roch-statement){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Step <1>1 is the requested theorem statement; step <1>2 gives its cohomological form.
+:::
+
+::: pf-qed
+Step [](#riemann-roch-statement){.pf-ref} is the requested theorem statement; step [](#cohomological-form){.pf-ref} gives its cohomological form.
+:::
+
 :::
 :::

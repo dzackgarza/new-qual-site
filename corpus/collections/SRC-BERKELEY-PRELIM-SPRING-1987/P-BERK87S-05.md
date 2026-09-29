@@ -44,13 +44,16 @@ F(x)=\sum_{n=-\infty}^{\infty}f(x+n).
 :::
 
 ::: {.solution}
-<1>1. The series
+::: pf
+
+::: {.pf-step #series-converges-uniformly}
+The series
 $$
 \sum_{n\in\ZZ}f(x+n)
 $$
 converges absolutely and uniformly on every compact interval.
 
-::: {.proof}
+::: pf-proof
 Fix a compact interval $K=[a,b]$ and set
 $$
 R\coloneqq\max\{\abs{a},\abs{b}\}.
@@ -85,26 +88,32 @@ converges. For the finitely many $n$ with $\abs{n}<2R+1$, the term
 $\abs{f(x+n)}$ is bounded by $C$ on $K$, so the Weierstrass M-test gives uniform absolute convergence on $K$.
 :::
 
-<1>2. The function
+:::
+
+::: {.pf-step #f-continuous}
+The function
 $$
 F(x)=\sum_{n\in\ZZ}f(x+n)
 $$
 is continuous on $\RR$.
 
-::: {.proof}
+::: pf-proof
 Each function
 $$
 x\longmapsto f(x+n)
 $$
-is continuous. By step <1>1, their series converges uniformly on every
+is continuous. By step [](#series-converges-uniformly){.pf-ref}, their series converges uniformly on every
 compact interval. Therefore its sum is continuous on every compact
 interval, hence on all of $\RR$.
 :::
 
-<1>3. The function $F$ is $1$-periodic.
+:::
 
-::: {.proof}
-Absolute convergence from step <1>1 permits reindexing:
+::: {.pf-step #f-periodic}
+The function $F$ is $1$-periodic.
+
+::: pf-proof
+Absolute convergence from step [](#series-converges-uniformly){.pf-ref} permits reindexing:
 $$
 \begin{aligned}
 F(x+1)
@@ -119,10 +128,13 @@ $$
 where $m=n+1$.
 :::
 
-<1>4. If $G$ is continuous and $1$-periodic, then $G$ is bounded on
+:::
+
+::: {.pf-step #g-bounded}
+If $G$ is continuous and $1$-periodic, then $G$ is bounded on
 $\RR$.
 
-::: {.proof}
+::: pf-proof
 Continuity on the compact interval $[0,1]$ gives a number $M_G$ such
 that
 $$
@@ -136,7 +148,10 @@ $$
 so the same bound holds on all of $\RR$.
 :::
 
-<1>5. One may integrate the defining series for $F$ term by term against
+:::
+
+::: {.pf-step #termwise-integration-valid}
+One may integrate the defining series for $F$ term by term against
 $G$ on $[0,1]$:
 $$
 \int_0^1F(x)G(x)\,dx
@@ -145,9 +160,9 @@ $$
 \int_0^1 f(x+n)G(x)\,dx.
 $$
 
-::: {.proof}
-By step <1>1, the series defining $F$ converges uniformly on $[0,1]$.
-By step <1>4, $G$ is bounded there. Hence
+::: pf-proof
+By step [](#series-converges-uniformly){.pf-ref}, the series defining $F$ converges uniformly on $[0,1]$.
+By step [](#g-bounded){.pf-ref}, $G$ is bounded there. Hence
 $$
 \sum_{n\in\ZZ}f(x+n)G(x)
 $$
@@ -155,14 +170,17 @@ also converges uniformly on $[0,1]$. Termwise integration of a uniformly
 convergent series of continuous functions is therefore valid.
 :::
 
-<1>6. For each $n\in\ZZ$,
+:::
+
+::: {.pf-step #shift-integral-identity}
+For each $n\in\ZZ$,
 $$
 \int_0^1 f(x+n)G(x)\,dx
 =
 \int_n^{n+1}f(y)G(y)\,dy.
 $$
 
-::: {.proof}
+::: pf-proof
 Use the substitution
 $$
 y=x+n.
@@ -180,10 +198,13 @@ $$
 because $G$ has period $1$ and $n\in\ZZ$.
 :::
 
-<1>7. The function $fG$ is absolutely integrable on $\RR$.
+:::
 
-::: {.proof}
-By step <1>4,
+::: {.pf-step #fg-integrable}
+The function $fG$ is absolutely integrable on $\RR$.
+
+::: pf-proof
+By step [](#g-bounded){.pf-ref},
 $$
 \abs{f(x)G(x)}
 \leq
@@ -195,7 +216,10 @@ $$
 $$
 :::
 
-<1>8. Therefore
+:::
+
+::: {.pf-step #value-boxed}
+Therefore
 $$
 \boxed{
 \int_0^1F(x)G(x)\,dx
@@ -204,22 +228,24 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>5 and <1>6,
+::: pf-proof
+By steps [](#termwise-integration-valid){.pf-ref} and [](#shift-integral-identity){.pf-ref},
 $$
 \int_0^1F(x)G(x)\,dx
 =
 \sum_{n\in\ZZ}
 \int_n^{n+1}f(y)G(y)\,dy.
 $$
-Absolute integrability from step <1>7 allows the unit intervals
+Absolute integrability from step [](#fg-integrable){.pf-ref} allows the unit intervals
 $[n,n+1]$ to be summed over all $n\in\ZZ$, giving exactly the improper
 integral over $\RR$.
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 prove part 1, and step <1>8 proves part 2.
+::: pf-qed
+Steps [](#f-continuous){.pf-ref} and [](#f-periodic){.pf-ref} prove part 1, and step [](#value-boxed){.pf-ref} proves part 2.
+:::
+
 :::
 :::

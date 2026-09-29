@@ -40,12 +40,16 @@ Prove that if $f,g:X\to S^{n-1}$ are continuous and both not surjective then $f$
 ::: {.solution}
 For the intended statement assume $n\ge2$.
 
-<1>1. Every non-surjective continuous map
+::: pf
+
+::: {.pf-step #non-surjective-nullhomotopic}
+Every non-surjective continuous map
 \[
 h:X\to S^{n-1}
 \]
 is null-homotopic.
-::: {.proof}
+
+::: pf-proof
 Because $h$ is not surjective, choose
 \[
 p\in S^{n-1}\setminus h(X).
@@ -79,19 +83,27 @@ independent of $x$.
 Thus $h$ is homotopic to a constant map.
 :::
 
-<1>2. The maps $f$ and $g$ are homotopic to constant maps
+:::
+
+::: {.pf-step #f-g-constant}
+The maps $f$ and $g$ are homotopic to constant maps
 \[
 c_a(x)=a,
 \qquad
 c_b(x)=b
 \]
 for some $a,b\in S^{n-1}$.
-::: {.proof}
-Apply <1>1 separately to the two non-surjective maps $f$ and $g$.
+
+::: pf-proof
+Apply step [](#non-surjective-nullhomotopic){.pf-ref} separately to the two non-surjective maps $f$ and $g$.
 :::
 
-<1>3. For $n\ge2$, any two constant maps $X\to S^{n-1}$ are homotopic.
-::: {.proof}
+:::
+
+::: {.pf-step #constants-homotopic}
+For $n\ge2$, any two constant maps $X\to S^{n-1}$ are homotopic.
+
+::: pf-proof
 Since
 \[
 n-1\ge1,
@@ -111,18 +123,22 @@ K(x,t)=\gamma(t),
 is a homotopy from $c_a$ to $c_b$.
 :::
 
-<1>4. Hence for $n\ge2$,
+:::
+
+::: pf-step
+Hence for $n\ge2$,
 \[
 f\simeq g.
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+By step [](#f-g-constant){.pf-ref},
 \[
 f\simeq c_a
 \qquad\text{and}\qquad
 g\simeq c_b.
 \]
-By <1>3,
+By step [](#constants-homotopic){.pf-ref},
 \[
 c_a\simeq c_b.
 \]
@@ -132,8 +148,12 @@ f\simeq c_a\simeq c_b\simeq g.
 \]
 :::
 
-<1>5. The source statement is false when $n=1$.
-::: {.proof}
+:::
+
+::: pf-step
+The source statement is false when $n=1$.
+
+::: pf-proof
 Let $X=\{*\}$ and identify
 \[
 S^0=\{-1,1\}.
@@ -153,4 +173,9 @@ would give a path in $S^0$ from $1$ to $-1$.
 No such path exists because $S^0$ is discrete.
 Thus the unqualified statement fails for $n=1$.
 :::
+
+:::
+
+:::
+
 :::

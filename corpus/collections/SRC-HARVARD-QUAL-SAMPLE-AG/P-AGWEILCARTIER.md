@@ -34,7 +34,10 @@ Let $C$ be a smooth integral curve with function field
 K=K(C).
 \]
 
-<1>1. A Weil divisor on $C$ is a finite formal sum
+::: pf
+
+::: {.pf-step #weil-divisor-definition}
+A Weil divisor on $C$ is a finite formal sum
 \[
 \boxed{
 D=\sum_{p\in C^{(1)}}n_p[p],
@@ -42,11 +45,15 @@ D=\sum_{p\in C^{(1)}}n_p[p],
 }
 \]
 where $C^{(1)}$ is the set of codimension-one points.
-::: {.proof}
+
+::: pf-proof
 A prime Weil divisor is by definition an integral closed subscheme of codimension one.  Since $C$ has dimension one, its codimension-one points are precisely its closed points, and the corresponding prime divisors are the points $[p]$.  A Weil divisor is a finite integer combination of these prime divisors.
 :::
 
-<1>2. A Cartier divisor on $C$ is represented by an open cover $\{U_i\}$ and rational functions
+:::
+
+::: {.pf-step #cartier-divisor-definition}
+A Cartier divisor on $C$ is represented by an open cover $\{U_i\}$ and rational functions
 \[
 f_i\in K^*
 \]
@@ -55,7 +62,8 @@ such that
 \frac{f_i}{f_j}\in\mathcal O_C^*(U_i\cap U_j)
 \]
 on every overlap.
-::: {.proof}
+
+::: pf-proof
 Equivalently, a Cartier divisor is a global section of the quotient sheaf
 \[
 \mathcal K_C^*/\mathcal O_C^*,
@@ -63,7 +71,10 @@ Equivalently, a Cartier divisor is a global section of the quotient sheaf
 where $\mathcal K_C$ is the sheaf of rational functions.  Choosing representatives of such a section on an open cover gives exactly the displayed local rational equations, and changing a representative by a unit gives the same Cartier divisor.
 :::
 
-<1>3. Because $C$ is smooth, every local ring
+:::
+
+::: {.pf-step #dvr-valuation}
+Because $C$ is smooth, every local ring
 \[
 \mathcal O_{C,p}
 \]
@@ -71,11 +82,15 @@ at a closed point is a discrete valuation ring.  Denote its valuation by
 \[
 \operatorname{ord}_p:K^*\longrightarrow\mathbb Z.
 \]
-::: {.proof}
+
+::: pf-proof
 Smoothness makes $\mathcal O_{C,p}$ a regular local ring of dimension one.  A one-dimensional Noetherian regular local domain is a DVR, whose normalized valuation is the order of vanishing at $p$.
 :::
 
-<1>4. The canonical map from Cartier divisors to Weil divisors is
+:::
+
+::: {.pf-step #cartier-to-weil-map}
+The canonical map from Cartier divisors to Weil divisors is
 \[
 \boxed{
 \{(U_i,f_i)\}
@@ -84,7 +99,8 @@ Smoothness makes $\mathcal O_{C,p}$ a regular local ring of dimension one.  A on
 }
 \]
 where $i$ is any index with $p\in U_i$.
-::: {.proof}
+
+::: pf-proof
 If $p\in U_i\cap U_j$, then
 \[
 f_i/f_j
@@ -99,11 +115,15 @@ Thus the coefficient is independent of the chosen local equation.
 Only finitely many coefficients are nonzero.  The generic point is not in the support of a Cartier divisor, so its support is a proper closed subset of the one-dimensional Noetherian integral scheme $C$.  Every such closed subset is a finite union of closed points.
 :::
 
-<1>5. On a smooth curve, the map in <1>4 is an isomorphism
+:::
+
+::: {.pf-step #cartier-weil-isomorphism}
+On a smooth curve, the map in step [](#cartier-to-weil-map){.pf-ref} is an isomorphism
 \[
 \boxed{\operatorname{CaDiv}(C)\cong\operatorname{Div}(C).}
 \]
-::: {.proof}
+
+::: pf-proof
 To prove injectivity, suppose a Cartier divisor has valuation zero at every closed point.  Every local equation $f_i$ then has zero valuation in every DVR on $U_i$, so it is a unit at every point of $U_i$.  Hence the Cartier divisor is zero.
 
 For surjectivity, let
@@ -121,7 +141,10 @@ C\setminus\{p_1,\ldots,p_r\}.
 On every overlap the ratio of two chosen equations has no zero or pole and is therefore a unit.  These local equations define a Cartier divisor whose valuation at $p_j$ is $n_j$ and whose valuation elsewhere is zero.  It maps to $D$.
 :::
 
-<1>6. For a single rational function
+:::
+
+::: {.pf-step #principal-divisor-formula}
+For a single rational function
 \[
 f\in K^*,
 \]
@@ -132,20 +155,28 @@ the corresponding principal Cartier divisor maps to the principal Weil divisor
 =\sum_{p\in C}\operatorname{ord}_p(f)[p].
 }
 \]
-::: {.proof}
-The principal Cartier divisor is represented on the one-set cover $\{C\}$ by the rational function $f$.  Applying the map in <1>4 gives precisely the displayed sum.  Positive coefficients record zeros and negative coefficients record poles, with their orders.
+
+::: pf-proof
+The principal Cartier divisor is represented on the one-set cover $\{C\}$ by the rational function $f$.  Applying the map in step [](#cartier-to-weil-map){.pf-ref} gives precisely the displayed sum.  Positive coefficients record zeros and negative coefficients record poles, with their orders.
 :::
 
-<1>7. Consequently, on a smooth curve the divisor class group and the Cartier divisor class group agree:
+:::
+
+::: pf-step
+Consequently, on a smooth curve the divisor class group and the Cartier divisor class group agree:
 \[
 \operatorname{Cl}(C)\cong\operatorname{Pic}(C).
 \]
-::: {.proof}
-Step <1>5 identifies Weil and Cartier divisors, and step <1>6 identifies their principal subgroups.  Passing to the quotients gives the stated isomorphism.
+
+::: pf-proof
+Step [](#cartier-weil-isomorphism){.pf-ref} identifies Weil and Cartier divisors, and step [](#principal-divisor-formula){.pf-ref} identifies their principal subgroups.  Passing to the quotients gives the stated isomorphism.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>5 describe the two divisor notions and their canonical identification; step <1>6 answers explicitly how $f\in K^*$ produces its Weil divisor.
+:::
+
+::: pf-qed
+Steps [](#weil-divisor-definition){.pf-ref}, [](#cartier-divisor-definition){.pf-ref}, [](#dvr-valuation){.pf-ref}, [](#cartier-to-weil-map){.pf-ref} and [](#cartier-weil-isomorphism){.pf-ref} describe the two divisor notions and their canonical identification; step [](#principal-divisor-formula){.pf-ref} answers explicitly how $f\in K^*$ produces its Weil divisor.
+:::
+
 :::
 :::

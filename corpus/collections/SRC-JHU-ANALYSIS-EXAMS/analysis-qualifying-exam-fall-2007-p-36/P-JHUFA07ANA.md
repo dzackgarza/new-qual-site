@@ -37,9 +37,12 @@ complex analytic? Prove that your answer is correct.
 ::: {.solution}
 The function is not complex analytic on any nonempty open set.
 
-<1>1. The Cauchy–Riemann equations hold only on two real lines.
+::: pf
 
-::: {.proof}
+::: pf-step
+The Cauchy–Riemann equations hold only on two real lines.
+
+::: pf-proof
 Write $f=u+iv$ with
 $u=x^3+3xy^2-3x^2y-10$ and
 $v=y^3+3x^2y-3xy^2+5$. Then
@@ -61,9 +64,12 @@ therefore also shows complex differentiability at the
 points of these lines [@SS03].
 :::
 
-<1>2. This pointwise differentiability cannot give analyticity on an open set.
+:::
 
-::: {.proof}
+::: pf-step
+This pointwise differentiability cannot give analyticity on an open set.
+
+::: pf-proof
 A holomorphic function must satisfy both Cauchy–Riemann
 equations at every point of its open domain [@SS03].
 The union of two lines contains no nonempty open disk:
@@ -74,4 +80,9 @@ open set is contained in the differentiability locus.
 In particular, at $(1,0)$ one has $u_y=-3$ but $-v_x=0$,
 which alone rules out analyticity on the whole plane.
 :::
+
 :::
+
+:::
+:::
+
