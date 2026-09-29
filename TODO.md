@@ -51,7 +51,7 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
 - **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed).
   Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics.
   This includes the copy `unsolved-contribution` and `slogans` add.
-  A solution still written with typed `<n>m.` steps violates `STYLE-08`; convert it to the Lamport filter's syntax in the same reading of that card, never as a separate structure-only pass over the corpus.
+  A solution still written with typed `<n>m.` steps violates `STYLE-08` and is converted to the Lamport filter's syntax.
   When no card holds a typed-step proof, delete qualc's typed-step renderer (`_lamport_*` in `emit.py`) and `normalize_fenced_divs`, and let `qualc check` reject a fence line Pandoc reads as paragraph text.
   Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence.
   **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
