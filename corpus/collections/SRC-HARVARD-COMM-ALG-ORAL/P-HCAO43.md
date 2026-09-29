@@ -48,8 +48,12 @@ S^{-1}\operatorname{Ann}_A(M)
 but equality can fail for infinitely generated $M$. It holds when $M$ is
 finitely generated.
 
-<1>1. The inclusion always holds.
-::: {.proof}
+::: pf
+
+::: pf-step
+The inclusion always holds.
+
+::: pf-proof
 If $a\in\operatorname{Ann}_A(M)$, then $am=0$ for every $m\in M$. Hence for
 every $s,t\in S$,
 \[
@@ -58,8 +62,12 @@ every $s,t\in S$,
 in $S^{-1}M$.
 :::
 
-<1>2. Equality can fail without finite generation.
-::: {.proof}
+:::
+
+::: pf-step
+Equality can fail without finite generation.
+
+::: pf-proof
 Take
 \[
 A=\mathbb Z,
@@ -77,8 +85,12 @@ $\mathbb Z/2^n\mathbb Z$, so $\operatorname{Ann}_A(M)=0$. Hence its localization
 is zero.
 :::
 
-<1>3. If $M$ is finitely generated, equality holds.
-::: {.proof}
+:::
+
+::: pf-step
+If $M$ is finitely generated, equality holds.
+
+::: pf-proof
 Let $m_1,\ldots,m_r$ generate $M$, and suppose
 $a/s\in S^{-1}A$ annihilates $S^{-1}M$. For each $i$,
 \[
@@ -91,5 +103,9 @@ $M$, so $ta\in\operatorname{Ann}_A(M)$. But
 \frac as=\frac{ta}{ts}
 \]
 lies in $S^{-1}\operatorname{Ann}_A(M)$.
+:::
+
+:::
+
 :::
 :::
