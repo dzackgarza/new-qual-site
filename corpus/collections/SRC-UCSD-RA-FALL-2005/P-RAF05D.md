@@ -30,8 +30,15 @@ Prove that $\ell^\infty$ (the space of all bounded sequences of complex numbers 
 :::
 
 ::: {.solution}
-<1>1. Construct an uncountable separated family.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Construct an uncountable separated family.
+
+::: pf-proof
+
 For each subset $A\subseteq\mathbb N$, let
 \[
 x^A=(x^A_n)_{n\ge1},
@@ -53,10 +60,17 @@ Thus
 \{x^A:A\subseteq\mathbb N\}
 \]
 is an uncountable $1$-separated subset of $\ell^\infty$.
+
 :::
 
-<1>2. A separable metric space cannot contain such a family.
-::: {.proof}
+:::
+
+::: pf-step
+
+A separable metric space cannot contain such a family.
+
+::: pf-proof
+
 Suppose $\ell^\infty$ were separable, and let $D$ be a countable dense subset. The open balls
 \[
 B(x^A,1/3),
@@ -70,5 +84,11 @@ Therefore
 \[
 \boxed{\ell^\infty\text{ is not separable}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

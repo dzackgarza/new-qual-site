@@ -46,10 +46,16 @@ $$
 Then $d\nu = h\,d\mu$ for some $h \in L^1(X, d\mu)$.
 :::
 
-
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 Let $F:[0,1]\to[0,1]$ be the Cantor--Lebesgue function. Then $F$ is continuous, differentiable almost everywhere, and
 \[
 F'(x)=0
@@ -63,10 +69,17 @@ But
 F(1)-F(0)=1.
 \]
 Thus the asserted Fundamental Theorem of Calculus identity need not hold without absolute continuity.
+
 :::
 
-<1>2. Part (b) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is true.
+
+::: pf-proof
+
 Let $a\ne b$. Since a locally compact Hausdorff space is completely regular, there is a continuous function
 \[
 f:X\to[0,1]
@@ -79,10 +92,17 @@ f(b)=0.
 \]
 For completeness, one may choose an open neighborhood $U$ of $a$ with compact closure and $b\notin\overline U$, then use the standard compactly supported Urysohn lemma for locally compact Hausdorff spaces to obtain $f\in C_c(X)$ with $f(a)=1$ and $\operatorname{supp}f\subset U$.
 Hence $f(a)\ne f(b)$.
+
 :::
 
-<1>3. Part (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is true.
+
+::: pf-proof
+
 For each $n$, the kernel
 \[
 K_n:=\ker f_n
@@ -101,10 +121,17 @@ dense in $X$. But this intersection is exactly
 \[
 \{x\in X:f_n(x)\ne0\text{ for every }n\}.
 \]
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 First suppose $E,F$ are measurable with
 \[
 0<\mu(E),\mu(F)<\infty.
@@ -149,5 +176,11 @@ Therefore in all cases
 \[
 \boxed{d\nu=h\,d\mu\text{ for some }h\in L^1(\mu).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

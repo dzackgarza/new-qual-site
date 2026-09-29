@@ -38,25 +38,69 @@ Show that the following limit exists and satisfies the equality
 :::
 
 ::: {.solution}
-<1>1. $f$ is strictly increasing on $[1,\infty)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$f$ is strictly increasing on $[1,\infty)$.
+
+::: pf-proof
+
 $f'(x) = 1/(x^2 + f(x)^2) > 0$ for every $x \ge 1$.
+
 :::
-<1>2. Hence $f(x) \ge f(1) = 1$ for all $x \ge 1$.
-::: {.proof}
-<1>1 and $f(1) = 1$.
+
 :::
-<1>3. $f'(x) \le 1/(x^2+1)$ for all $x \ge 1$.
-::: {.proof}
-$f(x)^2 \ge 1$ by <1>2, so $x^2 + f(x)^2 \ge x^2 + 1$; inverting gives $f'(x) = 1/(x^2+f(x)^2) \le 1/(x^2+1)$.
+
+::: {.pf-step #s2}
+
+Hence $f(x) \ge f(1) = 1$ for all $x \ge 1$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} and $f(1) = 1$.
+
 :::
-<1>4. $f(x) \le 1 + \pi/4$ for all $x \ge 1$.
-::: {.proof}
-integrate <1>3 from $1$ to $x$: \[ f(x) - f(1) = \int_1^x f'(t)\,dt \le \int_1^x \frac{dt}{1+t^2} = \arctan x - \frac{\pi}{4} < \frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}. \] Adding $f(1) = 1$ gives the claim.
+
 :::
-<1>5. $\lim_{x\to\infty} f(x)$ exists and is $\le 1 + \pi/4$.
-::: {.proof}
-$f$ is increasing (<1>1) and bounded above by $1+\pi/4$ (<1>4), so the monotone convergence theorem for functions of a real variable applies: the limit exists and is at most the bound.
+
+::: {.pf-step #s3}
+
+$f'(x) \le 1/(x^2+1)$ for all $x \ge 1$.
+
+::: pf-proof
+
+$f(x)^2 \ge 1$ by step [](#s2){.pf-ref}, so $x^2 + f(x)^2 \ge x^2 + 1$; inverting gives $f'(x) = 1/(x^2+f(x)^2) \le 1/(x^2+1)$.
+
 :::
-<1>6. Q.E.D.
+
+:::
+
+::: {.pf-step #s4}
+
+$f(x) \le 1 + \pi/4$ for all $x \ge 1$.
+
+::: pf-proof
+
+integrate step [](#s3){.pf-ref} from $1$ to $x$: \[ f(x) - f(1) = \int_1^x f'(t)\,dt \le \int_1^x \frac{dt}{1+t^2} = \arctan x - \frac{\pi}{4} < \frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}. \] Adding $f(1) = 1$ gives the claim.
+
+:::
+
+:::
+
+::: pf-step
+
+$\lim_{x\to\infty} f(x)$ exists and is $\le 1 + \pi/4$.
+
+::: pf-proof
+
+$f$ is increasing (step [](#s1){.pf-ref}) and bounded above by $1+\pi/4$ (step [](#s4){.pf-ref}), so the monotone convergence theorem for functions of a real variable applies: the limit exists and is at most the bound.
+
+:::
+
+:::
+
+:::
+
 :::

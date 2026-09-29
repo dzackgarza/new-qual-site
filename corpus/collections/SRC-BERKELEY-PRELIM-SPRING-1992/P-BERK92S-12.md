@@ -30,12 +30,17 @@ $$
 $$
 The maximum exists because the unit sphere is compact.
 
-<1>1. There is a unit vector $u$ with nonnegative entries such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a unit vector $u$ with nonnegative entries such that
 $$
 u^{\mathsf T}Au=\lambda_{\max}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a unit vector $v$ attaining the maximum and put
 $$
 u\coloneqq
@@ -55,12 +60,18 @@ u^{\mathsf T}Au
 $$
 By the definition of $\lambda_{\max}$, equality must hold. Thus $u$
 is a nonnegative maximizing unit vector.
+
 :::
 
-<1>2. Every unit vector attaining $\lambda_{\max}$ is an eigenvector
+:::
+
+::: {.pf-step #s2}
+
+Every unit vector attaining $\lambda_{\max}$ is an eigenvector
 of $A$ with eigenvalue $\lambda_{\max}$.
 
-::: {.proof}
+::: pf-proof
+
 By the spectral theorem, choose an orthonormal eigenbasis
 $e_1,\ldots,e_n$ for $A$, with eigenvalues
 $\lambda_1,\ldots,\lambda_n\le\lambda_{\max}$. If
@@ -75,22 +86,34 @@ $$
 Equality holds only if $c_i=0$ whenever
 $\lambda_i<\lambda_{\max}$. Hence a maximizing vector lies in the
 $\lambda_{\max}$-eigenspace.
+
 :::
 
-<1>3. $A$ has a nonnegative eigenvector.
+:::
 
-::: {.proof}
-The vector $u$ from step <1>1 is nonzero and has nonnegative entries.
-By step <1>2,
+::: {.pf-step #s3}
+
+$A$ has a nonnegative eigenvector.
+
+::: pf-proof
+
+The vector $u$ from step [](#s1){.pf-ref} is nonzero and has nonnegative entries.
+By step [](#s2){.pf-ref},
 $$
 Au=\lambda_{\max}u.
 $$
 Thus $u$ is the required eigenvector.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves the claim.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the claim.
+
+:::
+
+:::
+
 :::

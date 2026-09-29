@@ -30,8 +30,15 @@ Prove that $S(n)$ is not solvable if $n > 4$, assuming $A(5) \cong Icos$ (the ic
 :::
 
 ::: {.solution}
-<1>1. A nonabelian simple group is not solvable.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A nonabelian simple group is not solvable.
+
+::: pf-proof
+
 Let $H$ be nonabelian and simple. Suppose, for contradiction, that $H$ has an
 abelian normal tower
 $$
@@ -51,10 +58,17 @@ $$
 A_5\cong Icos
 $$
 is not solvable.
+
 :::
 
-<1>2. Every subgroup of a solvable group is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every subgroup of a solvable group is solvable.
+
+::: pf-proof
+
 Let
 $$
 G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_m=1
@@ -79,21 +93,34 @@ $$
 $$
 is isomorphic to a subgroup of the abelian group $G_i/G_{i+1}$, and is hence
 abelian. Thus the intersected tower proves that $H$ is solvable.
+
 :::
 
-<1>3. Embed $A_5$ in every $S_n$ for $n\ge5$ and conclude.
-::: {.proof}
+:::
+
+::: pf-step
+
+Embed $A_5$ in every $S_n$ for $n\ge5$ and conclude.
+
+::: pf-proof
+
 For $n\ge5$, let $A_5$ act on the first five letters and fix the remaining
 $n-5$ letters. This gives an injective homomorphism
 $$
 A_5\hookrightarrow S_n.
 $$
-If $S_n$ were solvable, step <1>2 would imply that its subgroup $A_5$ is
-solvable. This contradicts step <1>1. Therefore
+If $S_n$ were solvable, step [](#s2){.pf-ref} would imply that its subgroup $A_5$ is
+solvable. This contradicts step [](#s1){.pf-ref}. Therefore
 $$
 \boxed{S_n\text{ is not solvable for every }n>4.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

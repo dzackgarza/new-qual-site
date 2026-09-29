@@ -36,12 +36,18 @@ Prove that there is a nonzero vector $v$ such that $Av=v$.
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \det A=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 From
 $$
 A^T=A^{-1},
@@ -61,14 +67,20 @@ $$
 (\det A)^2=1.
 $$
 Since $\det A>0$ by hypothesis, $\det A=1$.
+
 :::
 
-<1>2. The determinant of $A-I$ satisfies
+:::
+
+::: {.pf-step #s2}
+
+The determinant of $A-I$ satisfies
 $$
 \det(A-I)=-\det(A-I).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using invariance of the determinant under transpose,
 $$
 \det(A-I)
@@ -85,7 +97,7 @@ Factor
 $$
 A^{-1}-I=A^{-1}(I-A),
 $$
-so step <1>1 gives
+so step [](#s1){.pf-ref} gives
 $$
 \det(A^{-1}-I)
 =
@@ -104,12 +116,18 @@ $$
 -\det(A-I).
 $$
 Combining these equalities proves the claim.
+
 :::
 
-<1>3. The matrix $A-I$ is singular.
+:::
 
-::: {.proof}
-Step <1>2 gives
+::: {.pf-step #s3}
+
+The matrix $A-I$ is singular.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives
 $$
 2\det(A-I)=0.
 $$
@@ -118,27 +136,39 @@ $$
 \det(A-I)=0.
 $$
 Hence $A-I$ is singular.
+
 :::
 
-<1>4. There is a nonzero vector $v\in\RR^3$ such that
+:::
+
+::: {.pf-step #s4}
+
+There is a nonzero vector $v\in\RR^3$ such that
 $$
 \boxed{
 Av=v.
 }
 $$
 
-::: {.proof}
-Since $A-I$ is singular by step <1>3, its kernel contains a nonzero vector
+::: pf-proof
+
+Since $A-I$ is singular by step [](#s3){.pf-ref}, its kernel contains a nonzero vector
 $v$. Then
 $$
 (A-I)v=0,
 $$
 which is equivalent to $Av=v$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required axis direction.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required axis direction.
+
+:::
+
+:::
+
 :::

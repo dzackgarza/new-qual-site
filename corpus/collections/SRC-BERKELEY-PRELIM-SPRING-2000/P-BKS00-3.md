@@ -34,10 +34,15 @@ $$
 G=\QQ/\ZZ.
 $$
 
-<1>1. For every positive integer $m$, multiplication by $m$ on $G$ is
+::: pf
+
+::: {.pf-step #s1}
+
+For every positive integer $m$, multiplication by $m$ on $G$ is
 surjective.
 
-::: {.proof}
+::: pf-proof
+
 Let $x=q+\ZZ\in G$, where $q\in\QQ$. Then
 $$
 y=\frac{q}{m}+\ZZ
@@ -46,22 +51,28 @@ satisfies
 $$
 my=q+\ZZ=x.
 $$
+
 :::
 
-<1>2. If $H\leq G$ has finite index
+:::
+
+::: {.pf-step #s2}
+
+If $H\leq G$ has finite index
 $$
 [G:H]=m,
 $$
 then every coset in $G/H$ is zero.
 
-::: {.proof}
+::: pf-proof
+
 The quotient group $G/H$ has order $m$, so Lagrange's theorem gives
 $$
 m(g+H)=H
 $$
 for every $g\in G$.
 
-Now fix $x\in G$. By step <1>1, there exists $y\in G$ such that
+Now fix $x\in G$. By step [](#s1){.pf-ref}, there exists $y\in G$ such that
 $x=my$. Therefore
 $$
 x+H
@@ -71,18 +82,30 @@ m(y+H)
 H.
 $$
 Thus every coset is the identity coset.
+
 :::
 
-<1>3. The subgroup $H$ equals $G$.
-
-::: {.proof}
-Step <1>2 shows that $x\in H$ for every $x\in G$. Hence $H=G$.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #s3}
 
-::: {.proof}
-Every finite-index subgroup of $G$ is all of $G$ by step <1>3, so
+The subgroup $H$ equals $G$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that $x\in H$ for every $x\in G$. Hence $H=G$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Every finite-index subgroup of $G$ is all of $G$ by step [](#s3){.pf-ref}, so
 $\QQ/\ZZ$ has no proper subgroup of finite index.
+
 :::
+
+:::
+
 :::

@@ -31,8 +31,15 @@ Show that $f_n \to f$ in $L^2(\mathbb{R})$.
 :::
 
 ::: {.solution}
-<1>1. $\|f_n-f\|_2^2=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_n,f\rangle\to0$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$\|f_n-f\|_2^2=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_n,f\rangle\to0$.
+
+::: pf-proof
+
 Since $L^2(\mathbb R)$ is a Hilbert space,
 \[
 \|f_n-f\|_2^2
@@ -60,5 +67,11 @@ Hence
 \[
 \boxed{\|f_n-f\|_2\to0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

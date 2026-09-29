@@ -42,12 +42,17 @@ $$
 U_n=\{x\in[0,1]:f_n(x)<\varepsilon\}.
 $$
 
-<1>1. Each $U_n$ is open in $[0,1]$, and
+::: pf
+
+::: {.pf-step #s1}
+
+Each $U_n$ is open in $[0,1]$, and
 $$
 U_n\subseteq U_{n+1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f_n$ is continuous,
 $$
 U_n=f_n^{-1}((-\infty,\varepsilon))
@@ -59,11 +64,17 @@ $$
 f_{n+1}(x)\leq f_n(x)<\varepsilon,
 $$
 so $x\in U_{n+1}$. Hence the family is increasing.
+
 :::
 
-<1>2. The sets $U_n$ cover $[0,1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The sets $U_n$ cover $[0,1]$.
+
+::: pf-proof
+
 Fix $x\in[0,1]$. Since
 $$
 f_n(x)\longrightarrow0
@@ -76,15 +87,21 @@ Thus $x\in U_n$. Since $x$ was arbitrary,
 $$
 [0,1]=\bigcup_n U_n.
 $$
+
 :::
 
-<1>3. There is an index $N$ such that
+:::
+
+::: {.pf-step #s3}
+
+There is an index $N$ such that
 $$
 U_N=[0,1].
 $$
 
-::: {.proof}
-By steps <1>1--<1>2, the sets $U_n$ form an open cover of the compact
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the sets $U_n$ form an open cover of the compact
 interval $[0,1]$. Choose a finite subcover
 $$
 U_{n_1},\ldots,U_{n_r}.
@@ -93,7 +110,7 @@ Let
 $$
 N=\max\{n_1,\ldots,n_r\}.
 $$
-Since the family is increasing by step <1>1,
+Since the family is increasing by step [](#s1){.pf-ref},
 $$
 U_{n_j}\subseteq U_N
 $$
@@ -108,15 +125,21 @@ U_N
 [0,1],
 $$
 so $U_N=[0,1]$.
+
 :::
 
-<1>4. For every $n\geq N$ and every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s4}
+
+For every $n\geq N$ and every $x\in[0,1]$,
 $$
 \abs{f_n(x)}<\varepsilon.
 $$
 
-::: {.proof}
-Step <1>3 gives
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives
 $$
 f_N(x)<\varepsilon
 $$
@@ -132,12 +155,18 @@ f_n(x)
 <
 \varepsilon.
 $$
+
 :::
 
-<1>5. The sequence $f_n$ converges uniformly to $0$ on $[0,1]$.
+:::
 
-::: {.proof}
-For each $\varepsilon>0$, step <1>4 supplies an index $N$ independent of
+::: {.pf-step #s5}
+
+The sequence $f_n$ converges uniformly to $0$ on $[0,1]$.
+
+::: pf-proof
+
+For each $\varepsilon>0$, step [](#s4){.pf-ref} supplies an index $N$ independent of
 $x$ such that
 $$
 n\geq N
@@ -145,11 +174,17 @@ n\geq N
 \abs{f_n(x)-0}<\varepsilon
 $$
 for every $x\in[0,1]$. This is uniform convergence.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

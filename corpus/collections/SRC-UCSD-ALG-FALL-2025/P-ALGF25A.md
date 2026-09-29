@@ -30,8 +30,15 @@ Prove that, up to isomorphism, there exist exactly two groups of order $3 \cdot 
 :::
 
 ::: {.solution}
-<1>1. Every group $G$ of order $3\cdot5\cdot13$ has a normal cyclic subgroup $N$ of order $65$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every group $G$ of order $3\cdot5\cdot13$ has a normal cyclic subgroup $N$ of order $65$.
+
+::: pf-proof
+
 Let $n_{13}$ and $n_5$ be the numbers of Sylow $13$- and Sylow $5$-subgroups.
 The Sylow congruences and divisibilities give
 \[
@@ -51,10 +58,17 @@ Since $Q\cap R=1$ and both are normal, their commutator subgroup satisfies
 Hence $N=QR=Q\times R$ has order $65$.
 Both $Q$ and $R$ are cyclic of prime order, so $N\cong C_{13}\times C_5\cong C_{65}$.
 It is normal because it is a product of normal subgroups.
+
 :::
 
-<1>2. The group $G$ is a semidirect product $C_{65}\rtimes C_3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The group $G$ is a semidirect product $C_{65}\rtimes C_3$.
+
+::: pf-proof
+
 Let $P$ be a Sylow $3$-subgroup of $G$.
 Then $|P|=3$, $N\cap P=1$, and $N$ is normal.
 Therefore $NP$ is a subgroup and
@@ -70,10 +84,17 @@ The isomorphism type is therefore determined by the conjugation homomorphism
 \varphi:C_3\longrightarrow\operatorname{Aut}(C_{65}),
 \]
 up to changing generators of the two cyclic factors.
+
 :::
 
-<1>3. There are exactly two possible actions up to isomorphism: the trivial action and one nontrivial action.
-::: {.proof}
+:::
+
+::: pf-step
+
+There are exactly two possible actions up to isomorphism: the trivial action and one nontrivial action.
+
+::: pf-proof
+
 By the Chinese remainder theorem,
 \[
 \operatorname{Aut}(C_{65})
@@ -87,10 +108,17 @@ Thus the image of $\varphi$ is either trivial or that unique subgroup of order $
 In the latter case there are two injective homomorphisms $C_3$ onto this subgroup, but they differ by the automorphism of $C_3$ sending a generator to its inverse.
 The resulting semidirect products are therefore isomorphic.
 Hence there are at most two isomorphism classes.
+
 :::
 
-<1>4. Both possibilities occur and they are not isomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+
+Both possibilities occur and they are not isomorphic.
+
+::: pf-proof
+
 For the trivial action, the semidirect product is the direct product
 \[
 C_{65}\times C_3\cong C_{195},
@@ -102,5 +130,11 @@ The action is nontrivial, so the resulting group is nonabelian.
 It therefore cannot be isomorphic to $C_{195}$.
 
 Thus exactly two groups of order $3\cdot5\cdot13$ exist up to isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

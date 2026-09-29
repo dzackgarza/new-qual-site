@@ -47,42 +47,59 @@ Cf. (II, Ex. 8.3).
 In part (a), let $H$ denote the hyperplane class on $X$. In part (b), let
 $p_1:C\times C'\to C$ and $p_2:C\times C'\to C'$ be the projections.
 
-<1>1. If $X\subseteq\PP^3$ is a nonsingular surface of degree $d$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $X\subseteq\PP^3$ is a nonsingular surface of degree $d$, then
 $$
 K_X=(d-4)H
 \qquad\text{and}\qquad
 H^2=d.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Hypersurface adjunction gives
 $$
 K_X=(K_{\PP^3}+X)|_X=(-4H+dH)|_X=(d-4)H.
 $$
 The number $H^2$ is the intersection of $X$ with two general hyperplanes in
 $\PP^3$, hence equals the degree of $X$, namely $d$.
+
 :::
 
-<1>2. For the surface in part (a),
+:::
+
+::: {.pf-step #s2}
+
+For the surface in part (a),
 $$
 \boxed{K_X^2=d(d-4)^2}.
 $$
 
-::: {.proof}
-By bilinearity of the intersection pairing and step <1>1,
+::: pf-proof
+
+By bilinearity of the intersection pairing and step [](#s1){.pf-ref},
 $$
 K_X^2
 =(d-4)^2H^2
 =(d-4)^2d.
 $$
+
 :::
 
-<1>3. On $C\times C'$, one has
+:::
+
+::: {.pf-step #s3}
+
+On $C\times C'$, one has
 $$
 K_{C\times C'}=p_1^*K_C+p_2^*K_{C'}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Hartshorne II.8.3, proved on [[P-AGH283PRODDIFF]], gives
 $$
 \omega_{C\times C'}
@@ -90,9 +107,14 @@ $$
 p_1^*\omega_C\tensor p_2^*\omega_{C'}.
 $$
 Passing to divisor classes gives the displayed equality of canonical classes.
+
 :::
 
-<1>4. For divisors $D,E$ on $C$ and $D',E'$ on $C'$,
+:::
+
+::: {.pf-step #s4}
+
+For divisors $D,E$ on $C$ and $D',E'$ on $C'$,
 $$
 (p_1^*D)\cdot(p_1^*E)=0,
 \qquad
@@ -103,7 +125,8 @@ $$
 (p_1^*D)\cdot(p_2^*D')=(\deg D)(\deg D').
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write divisors as integral linear combinations of closed points. For a point
 $P\in C$, the divisor $p_1^*P=\{P\}\times C'$ is a fibre of $p_1$. Distinct
 fibres of $p_1$ are disjoint, and the normal bundle of each fibre is the
@@ -122,21 +145,27 @@ one. Bilinearity of the intersection pairing then gives
 $$
 (p_1^*D)\cdot(p_2^*D')=(\deg D)(\deg D').
 $$
+
 :::
 
-<1>5. For $X=C\times C'$,
+:::
+
+::: {.pf-step #s5}
+
+For $X=C\times C'$,
 $$
 \boxed{K_X^2=8(g-1)(g'-1)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 A=p_1^*K_C,
 \qquad
 B=p_2^*K_{C'}.
 $$
-By step <1>3, $K_X=A+B$. Step <1>4 gives $A^2=B^2=0$ and
+By step [](#s3){.pf-ref}, $K_X=A+B$. Step [](#s4){.pf-ref} gives $A^2=B^2=0$ and
 $$
 A\cdot B
 =(\deg K_C)(\deg K_{C'})
@@ -152,11 +181,17 @@ K_X^2
 &=8(g-1)(g'-1).
 \end{aligned}
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part (a), and steps <1>3--<1>5 prove part (b).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

@@ -24,28 +24,62 @@ Show that if $X$ is a metric space and $A\subseteq X$ is compact then $A$ is bou
 ::: {.solution}
 **Goal:** Show that if $X$ is a metric space and $A \subseteq X$ is compact, then $A$ is bounded.
 
-<1>1. Fix a point $p \in X$; the open balls $\theset{B(p, n)}_{n \in \NN}$ form an open cover of $X$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Fix a point $p \in X$; the open balls $\theset{B(p, n)}_{n \in \NN}$ form an open cover of $X$.
+
+::: pf-proof
+
 Every point of $X$ is at finite distance from $p$, so it lies in some $B(p, n)$; balls are open in a metric space.
+
 :::
 
-<1>2. The restriction to $A$ is an open cover of $A$, so it has a finite subcover $B(p, n_1), \ldots, B(p, n_k)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The restriction to $A$ is an open cover of $A$, so it has a finite subcover $B(p, n_1), \ldots, B(p, n_k)$.
+
+::: pf-proof
+
 $A$ is compact.
+
 :::
 
-<1>3. Let $N := \max\theset{n_1, \ldots, n_k}$; then $A \subseteq B(p, N)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Let $N := \max\theset{n_1, \ldots, n_k}$; then $A \subseteq B(p, N)$.
+
+::: pf-proof
+
 Each $a \in A$ lies in some $B(p, n_j) \subseteq B(p, N)$ since $n_j \leq N$.
+
 :::
 
-<1>4. $A$ is bounded.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+$A$ is bounded.
+
+::: pf-proof
+
 $A$ is contained in a ball of finite radius $N$ centered at $p$, which is the definition of boundedness in a metric space.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>2--<1>4 establish the claim.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} establish the claim.
+
+:::
+
+:::
+
 :::

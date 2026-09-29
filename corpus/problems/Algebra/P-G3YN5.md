@@ -24,7 +24,6 @@ audit:
 ::: {.problem}
 \envlist
 
-
 1.  State the structure theorem for finitely generated modules over a
     PID.
 
@@ -36,11 +35,16 @@ audit:
         \end{aligned}$$
 :::
 
-
-
 ::: {.solution}
-<1>1. Structure theorem over a PID.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Structure theorem over a PID.
+
+::: pf-proof
+
 If $R$ is a PID and $M$ is finitely generated, then
 \[
 M\cong R^r\oplus R/(d_1)\oplus\cdots\oplus R/(d_t),
@@ -48,9 +52,14 @@ M\cong R^r\oplus R/(d_1)\oplus\cdots\oplus R/(d_t),
 0\ne d_1\mid d_2\mid\cdots\mid d_t,
 \]
 with the free rank and invariant factors unique up to associates.
+
 :::
 
-<1>2. For the given module, use the relation matrix
+:::
+
+::: pf-step
+
+For the given module, use the relation matrix
 \[
 A=
 \begin{pmatrix}
@@ -60,15 +69,24 @@ A=
 \end{pmatrix}
 \]
 with respect to the ordered generators $(w,x,y,z)$.
-::: {.proof}
+
+::: pf-proof
+
 Its rows are exactly the coefficient vectors of the three displayed relations.
+
 :::
 
-<1>3. The Smith normal form of $A$ is
+:::
+
+::: pf-step
+
+The Smith normal form of $A$ is
 \[
 \operatorname{diag}(3,6,6,0).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The determinantal divisors are
 \[
 \Delta_1=3,
@@ -82,13 +100,26 @@ Thus the nonzero invariant factors are
 3,\quad 18/3=6,\quad108/18=6.
 \]
 The matrix has rank $3$, so one free summand remains.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 M\cong\ZZ\oplus\ZZ/3\ZZ\oplus\ZZ/6\ZZ\oplus\ZZ/6\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Passing to Smith normal form preserves the cokernel, and the cokernel of $\operatorname{diag}(3,6,6,0)$ is exactly the displayed direct sum.
+
 :::
+
+:::
+
+:::
+
 :::

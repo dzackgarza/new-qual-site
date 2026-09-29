@@ -36,9 +36,14 @@ $M=|f(z_0)|+|g(z_0)|$. If $M=0$, the inequality
 $0\leq|f(z)|+|g(z)|\leq M$ makes both functions zero.
 Assume henceforth that $M>0$.
 
-<1>1. A suitable holomorphic linear combination is constant.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+A suitable holomorphic linear combination is constant.
+
+::: pf-proof
+
 Choose complex numbers $\alpha,\beta$ of modulus one with
 $\alpha f(z_0)=|f(z_0)|$ and $\beta g(z_0)=|g(z_0)|$.
 For a nonzero value, take its conjugate divided by its
@@ -50,11 +55,17 @@ $$
 $$
 The maximum modulus principle on the connected domain
 $U$ therefore gives $H\equiv M$ [@SS03].
+
 :::
 
-<1>2. Each summand must be constant separately.
+:::
 
-::: {.proof}
+::: pf-step
+
+Each summand must be constant separately.
+
+::: pf-proof
+
 For every $z\in U$,
 $$
 \bigl(|\alpha f(z)|-\operatorname{Re}(\alpha f(z))\bigr)
@@ -69,5 +80,11 @@ function on a domain has open image [@SS03], which
 cannot be contained in this real half-line. Hence both
 $\alpha f$ and $\beta g$ are constant. Since the phases
 are nonzero, $f$ and $g$ are constant as well.
+
 :::
+
+:::
+
+:::
+
 :::

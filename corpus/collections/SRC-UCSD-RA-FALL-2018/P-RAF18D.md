@@ -36,8 +36,15 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. Prove the $4\varepsilon\|f\|_1$ estimate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the $4\varepsilon\|f\|_1$ estimate.
+
+::: pf-proof
+
 Using
 \[
 |f(x)-f(y)|\le |f(x)|+|f(y)|,
@@ -66,10 +73,17 @@ The same estimate holds for the second term by symmetry. Therefore
 \int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy
 \le4\varepsilon\|f\|_1.}
 \]
+
 :::
 
-<1>2. Rewrite the thin-strip integral using translations.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rewrite the thin-strip integral using translations.
+
+::: pf-proof
+
 Extend $f$ by zero outside $[0,1]$, still denoting the extension by $f$. Then $f\in L^1(\mathbb R)$. With $h=y-x$, the original domain is contained in the set $|h|\le\varepsilon$, so
 \[
 \begin{aligned}
@@ -83,10 +97,17 @@ Extend $f$ by zero outside $[0,1]$, still denoting the extension by $f$. Then $f
 \end{aligned}
 \]
 where $(\tau_hf)(x)=f(x+h)$.
+
 :::
 
-<1>3. Use continuity of translations in $L^1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use continuity of translations in $L^1$.
+
+::: pf-proof
+
 It is standard that
 \[
 \|\tau_hf-f\|_1\longrightarrow0
@@ -114,5 +135,11 @@ Since $\eta>0$ is arbitrary,
 \frac1\varepsilon
 \int_{A_\varepsilon}|f(x)-f(y)|\,dx\,dy=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

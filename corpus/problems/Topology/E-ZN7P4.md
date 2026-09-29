@@ -30,20 +30,36 @@ Give $f(X)$ the subspace topology. Suppose $f(X)$ were disconnected. Then there 
 f(X)=U\cup V.
 \]
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 \[
 f:X\longrightarrow f(X)
 \]
 is continuous, so $f^{-1}(U)$ and $f^{-1}(V)$ are open in $X$.
 
-<1>2. They are disjoint and cover $X$:
+:::
+
+::: pf-step
+
+They are disjoint and cover $X$:
 \[
 f^{-1}(U)\cap f^{-1}(V)=\varnothing,
 \qquad
 f^{-1}(U)\cup f^{-1}(V)=X.
 \]
 
-<1>3. Both are nonempty because $U$ and $V$ consist of points in the image of $f$. Thus they form a separation of $X$, contradicting connectedness.
+:::
+
+::: pf-step
+
+Both are nonempty because $U$ and $V$ consist of points in the image of $f$. Thus they form a separation of $X$, contradicting connectedness.
+
+:::
+
+:::
 
 Therefore $f(X)$ is connected.
 :::

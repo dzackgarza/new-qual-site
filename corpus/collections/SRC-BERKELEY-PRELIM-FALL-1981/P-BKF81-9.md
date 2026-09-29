@@ -44,8 +44,14 @@ L_A(X)=AX,
 R_B(X)=XB.
 $$
 
-<1>1. Compute the trace of $L$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Compute the trace of $L$.
+
+::: pf-proof
+
 Let $E_{ij}$ be the standard basis of $M_{2\times2}(\mathbb R)$. For a
 general matrix $X=(x_{ij})$,
 $$
@@ -71,10 +77,17 @@ so
 $$
 \boxed{\operatorname{tr}L=24.}
 $$
+
 :::
 
-<1>2. Compute the determinant of left multiplication by $A$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the determinant of left multiplication by $A$.
+
+::: pf-proof
+
 Left multiplication acts independently on the two columns of $X$, applying
 $A$ to each column. Hence, in a basis grouped by columns, the matrix of
 $L_A$ is block diagonal with two copies of $A$. Thus
@@ -89,10 +102,17 @@ we get
 $$
 \det L_A=25.
 $$
+
 :::
 
-<1>3. Compute the determinant of right multiplication by $B$ and conclude.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the determinant of right multiplication by $B$ and conclude.
+
+::: pf-proof
+
 Right multiplication acts independently on the two rows of $X$. On each row
 it has determinant $\det B$, so
 $$
@@ -118,5 +138,11 @@ Hence
 $$
 \boxed{\det L=1600.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

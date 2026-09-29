@@ -38,8 +38,14 @@ Compute the fundamental group of $X$ by using the Seifert--van Kampen theorem.
 ::: {.solution}
 Let $N$ and $S$ denote the two points of $X$ obtained from the identified north and south poles.
 
-<1>1. Give $X$ a CW decomposition with two vertices, four edges, and four $2$-cells.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Give $X$ a CW decomposition with two vertices, four edges, and four $2$-cells.
+
+::: pf-proof
+
 For each sphere $X_i$, choose a great circle through $N_i$ and $S_i$.
 Its two semicircles give two $1$-cells
 \[
@@ -62,10 +68,17 @@ a_i b_i^{-1}
 \quad\text{and}\quad
 b_i a_i^{-1}.
 \]
+
 :::
 
-<1>2. The fundamental group of the $1$-skeleton is free of rank three.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The fundamental group of the $1$-skeleton is free of rank three.
+
+::: pf-proof
+
 Choose the single edge $a_1$ as a maximal tree in $G$ and use $N$ as basepoint.
 By the standard graph computation from Seifert--van Kampen,
 \[
@@ -80,10 +93,17 @@ y=[a_1a_2^{-1}],
 z=[a_1b_2^{-1}].
 \]
 Indeed, each of the three edges outside the maximal tree gives one free generator.
+
 :::
 
-<1>3. Attaching the two hemispheres of $X_1$ imposes only the relation $x=1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Attaching the two hemispheres of $X_1$ imposes only the relation $x=1$.
+
+::: pf-proof
+
 The attaching loops for the two hemispheres of $X_1$ are
 \[
 a_1b_1^{-1}
@@ -96,15 +116,22 @@ Thus the two hemispheres together impose precisely
 \[
 x=1.
 \]
+
 :::
 
-<1>4. Attaching the two hemispheres of $X_2$ imposes only the relation $y^{-1}z=1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Attaching the two hemispheres of $X_2$ imposes only the relation $y^{-1}z=1$.
+
+::: pf-proof
+
 The relevant attaching loop is
 \[
 a_2b_2^{-1}.
 \]
-Using the generators from <1>2,
+Using the generators from step [](#s2){.pf-ref},
 \[
 y^{-1}z
 =(a_2a_1^{-1})(a_1b_2^{-1})
@@ -115,14 +142,21 @@ Hence one hemisphere of $X_2$ imposes
 y^{-1}z=1.
 \]
 The other hemisphere is attached along the inverse loop and contributes no additional relation.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \pi_1(X,N)\cong\ZZ.
 \]
-::: {.proof}
-By <1>2--<1>4 and Seifert--van Kampen,
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} and Seifert--van Kampen,
 \[
 \pi_1(X,N)
 \cong
@@ -141,5 +175,11 @@ Hence
 \[
 \boxed{\pi_1(X)\cong\ZZ}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

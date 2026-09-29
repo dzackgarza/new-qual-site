@@ -31,8 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The kernels of the iterates form an increasing chain.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The kernels of the iterates form an increasing chain.
+
+::: pf-proof
+
 For every $n\ge1$, if
 $$
 m\in\ker(f^n),
@@ -45,10 +52,17 @@ Hence
 $$
 \ker(f^n)\subseteq\ker(f^{n+1}).
 $$
+
 :::
 
-<1>2. Every inclusion is strict when $f$ is surjective but not injective.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every inclusion is strict when $f$ is surjective but not injective.
+
+::: pf-proof
+
 Because $f$ is not injective, choose
 $$
 0\ne x\in\ker f.
@@ -80,12 +94,19 @@ $$
 \ker f\subsetneq\ker(f^2)\subsetneq\ker(f^3)
 \subsetneq\cdots.}
 $$
+
 :::
 
-<1>3. A surjective endomorphism of a noetherian module is injective.
-::: {.proof}
+:::
+
+::: pf-step
+
+A surjective endomorphism of a noetherian module is injective.
+
+::: pf-proof
+
 If $M$ is noetherian, its submodules satisfy the ascending chain condition.
-The strictly increasing chain in step <1>2 is therefore impossible. Hence a
+The strictly increasing chain in step [](#s2){.pf-ref} is therefore impossible. Hence a
 surjective endomorphism
 $$
 f:M\to M
@@ -96,5 +117,11 @@ $$
 \boxed{f\text{ surjective and }M\text{ noetherian}
 \Longrightarrow f\text{ injective}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

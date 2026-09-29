@@ -35,12 +35,17 @@ $$
 f(z)=\sum_{n=0}^{\infty}a_nz^n.
 $$
 
-<1>1. For every integer $n\geq1$ and every $R>10$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $n\geq1$ and every $R>10$,
 $$
 \abs{a_n}\leq R^{1/2-n}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Cauchy's coefficient formula on the circle $\abs{\zeta}=R$ gives
 $$
 a_n
@@ -65,45 +70,69 @@ $$
 R^{1/2-n}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. Every Taylor coefficient $a_n$ with $n\geq1$ is zero.
+:::
 
-::: {.proof}
-Fix $n\geq1$. The estimate in step <1>1 holds for every $R>10$, and
+::: {.pf-step #s2}
+
+Every Taylor coefficient $a_n$ with $n\geq1$ is zero.
+
+::: pf-proof
+
+Fix $n\geq1$. The estimate in step [](#s1){.pf-ref} holds for every $R>10$, and
 $$
 R^{1/2-n}\longrightarrow0
 $$
 as $R\to\infty$. Hence $\abs{a_n}=0$.
+
 :::
 
-<1>3. Every entire function satisfying the hypothesis is constant.
+:::
 
-::: {.proof}
-By step <1>2,
+::: {.pf-step #s3}
+
+Every entire function satisfying the hypothesis is constant.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 f(z)=a_0
 $$
 for every $z\in\CC$.
+
 :::
 
-<1>4. If $f\equiv c$ satisfies the hypothesis, then
+:::
+
+::: {.pf-step #s4}
+
+If $f\equiv c$ satisfies the hypothesis, then
 $$
 \abs{c}\leq\sqrt{10}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every real $R>10$, choose $z$ with $\abs{z}=R$. The hypothesis gives
 $$
 \abs{c}\leq\sqrt R.
 $$
 Letting $R\downarrow10$ yields $\abs{c}\leq\sqrt{10}$.
+
 :::
 
-<1>5. Conversely, every constant $c\in\CC$ with
+:::
+
+::: {.pf-step #s5}
+
+Conversely, every constant $c\in\CC$ with
 $\abs{c}\leq\sqrt{10}$ satisfies the hypothesis.
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}>10$, then
 $$
 \abs{c}
@@ -113,9 +142,14 @@ $$
 \sqrt{\abs{z}}.
 $$
 Thus $f\equiv c$ satisfies the required inequality.
+
 :::
 
-<1>6. The complete list is
+:::
+
+::: {.pf-step #s6}
+
+The complete list is
 $$
 \boxed{
 f(z)=c,
@@ -126,14 +160,21 @@ c\in\CC,
 }
 $$
 
-::: {.proof}
-Steps <1>3 and <1>4 show that every solution is on the displayed list, and
-step <1>5 shows that every function on the list is a solution.
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that every solution is on the displayed list, and
+step [](#s5){.pf-ref} shows that every function on the list is a solution.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested classification.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested classification.
+
+:::
+
+:::
+
 :::

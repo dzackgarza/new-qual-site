@@ -36,12 +36,18 @@ p:X\longrightarrow S
 \]
 be separated, with $S$ affine, and let $U,V\subseteq X$ be affine open subschemes.
 
-<1>1. The fibre product
+::: pf
+
+::: {.pf-step #s1}
+
+The fibre product
 \[
 U\times_SV
 \]
 is affine.
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 S=\Spec R,
@@ -62,13 +68,20 @@ U\times_SV
 \cong
 \Spec(A\otimes_RB).
 \]
+
 :::
 
-<1>2. The intersection $U\cap V$ is canonically the inverse image of $U\times_SV$ under the diagonal
+:::
+
+::: {.pf-step #s2}
+
+The intersection $U\cap V$ is canonically the inverse image of $U\times_SV$ under the diagonal
 \[
 \Delta_{X/S}:X\longrightarrow X\times_SX.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The open subscheme
 \[
 U\times_SV
@@ -86,35 +99,56 @@ The same statement holds scheme-theoretically by the universal property of the f
 X\times_{X\times_SX}(U\times_SV)
 \]
 is precisely the open subscheme $U\cap V$.
+
 :::
 
-<1>3. The morphism
+:::
+
+::: {.pf-step #s3}
+
+The morphism
 \[
 U\cap V\longrightarrow U\times_SV
 \]
 is a closed immersion.
-::: {.proof}
+
+::: pf-proof
+
 Because $X$ is separated over $S$, the diagonal
 \[
 \Delta_{X/S}:X\longrightarrow X\times_SX
 \]
-is a closed immersion.  By <1>2, the displayed morphism is its base change along the open immersion
+is a closed immersion.  By step [](#s2){.pf-ref}, the displayed morphism is its base change along the open immersion
 \[
 U\times_SV\hookrightarrow X\times_SX.
 \]
 Closed immersions are stable under base change.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 \[
 \boxed{U\cap V\text{ is affine}.}
 \]
-::: {.proof}
-By <1>1, $U\times_SV$ is affine.  By <1>3, $U\cap V$ is a closed subscheme of it.  Hartshorne II.3.11(b) shows that every closed subscheme of an affine scheme is affine.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $U\times_SV$ is affine.  By step [](#s3){.pf-ref}, $U\cap V$ is a closed subscheme of it.  Hartshorne II.3.11(b) shows that every closed subscheme of an affine scheme is affine.
+
 :::
 
-<1>5. The statement can fail if $X$ is not separated.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The statement can fail if $X$ is not separated.
+
+::: pf-proof
+
 Let
 \[
 U_1\cong\mathbb A^2_k,
@@ -159,11 +193,18 @@ would be an isomorphism.  But this canonical morphism is the usual open immersio
 \]
 which misses the origin.  Hence $W$ is not affine.
 
-Thus the two affine opens $U_1,U_2\subseteq X$ have nonaffine intersection, so $X$ cannot be separated by <1>4.
+Thus the two affine opens $U_1,U_2\subseteq X$ have nonaffine intersection, so $X$ cannot be separated by step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-Step <1>4 proves the theorem and <1>5 gives the requested nonseparated example.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the theorem and step [](#s5){.pf-ref} gives the requested nonseparated example.
+
+:::
+
+:::
+
 :::

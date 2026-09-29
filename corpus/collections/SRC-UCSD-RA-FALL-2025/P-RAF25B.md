@@ -45,8 +45,15 @@ where $L^2$ is the Lebesgue measure on $\mathbb{R}^2$, $B_\epsilon(x)$ is the ba
 :::
 
 ::: {.solution}
-<1>1. The distance level set is closed and the distance is attained.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The distance level set is closed and the distance is attained.
+
+::: pf-proof
+
 The distance function
 \[
 d_K(x):=d(x,K)
@@ -69,10 +76,17 @@ is continuous on compact $K$, so it attains its minimum at some $y_x\in K$. Thus
 \[
 |x-y_x|=d(x,K)=\delta.
 \]
+
 :::
 
-<1>2. Find a quarter-area ball inside the complement of $K_\delta$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Find a quarter-area ball inside the complement of $K_\delta$.
+
+::: pf-proof
+
 Fix $x\in K_\delta$ and $0<\varepsilon<\delta$. Let
 \[
 u:=\frac{y_x-x}{|y_x-x|}
@@ -120,10 +134,17 @@ L^2(B_\varepsilon(x)\cap K_\delta^c)
 \ge \pi\left(\frac\varepsilon2\right)^2
 =\frac{\pi\varepsilon^2}{4}.
 \]
+
 :::
 
-<1>3. Apply the Lebesgue differentiation theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Lebesgue differentiation theorem.
+
+::: pf-proof
+
 Suppose $L^2(K_\delta)>0$. Since $K_\delta$ is measurable, the Lebesgue differentiation theorem applied to $\mathbf1_{K_\delta}$ implies that for almost every $x\in K_\delta$,
 \[
 \lim_{\varepsilon\downarrow0}
@@ -143,5 +164,11 @@ Therefore
 \[
 \boxed{L^2(K_\delta)=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

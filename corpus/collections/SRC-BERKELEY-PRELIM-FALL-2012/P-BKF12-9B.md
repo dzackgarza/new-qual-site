@@ -38,7 +38,11 @@ $$
 \chi_M(t)\coloneqq\det(tI-M)\in F[t].
 $$
 
-<1>1. Over $K$, the characteristic polynomial has a factorization
+::: pf
+
+::: {.pf-step #s1}
+
+Over $K$, the characteristic polynomial has a factorization
 $$
 \chi_M(t)
 =t^m\prod_{i=1}^{n-m}(t-\lambda_i),
@@ -47,14 +51,20 @@ where $m$ is the algebraic multiplicity of the eigenvalue $0$ and the
 $\lambda_i$ are exactly the nonzero eigenvalues of $M$, counted with
 algebraic multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 The field $K$ is algebraically closed, so the monic polynomial
 $\chi_M$ splits completely in $K[t]$. Separate the factors whose root
 is $0$ from those whose roots are nonzero. The exponent $m$ is by
 definition the multiplicity of $0$ as a root of $\chi_M$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 \chi_M(t)=c_0+c_1t+\cdots+c_nt^n,
 \qquad
@@ -65,8 +75,9 @@ $$
 c_m=(-1)^{n-m}p.
 $$
 
-::: {.proof}
-By step <1>1, write
+::: pf-proof
+
+By step [](#s1){.pf-ref}, write
 $$
 \chi_M(t)=t^m q(t),
 \qquad
@@ -81,25 +92,37 @@ c_m=q(0)
 $$
 This also covers the case in which there are no nonzero eigenvalues:
 then the product is empty and equals $1$.
+
 :::
 
-<1>3. The product of the nonzero eigenvalues satisfies
+:::
+
+::: {.pf-step #s3}
+
+The product of the nonzero eigenvalues satisfies
 $$
 \boxed{p\in F}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 All coefficients $c_j$ of $\chi_M(t)\in F[t]$ lie in $F$. By step
-<1>2,
+[](#s2){.pf-ref},
 $$
 p=(-1)^{n-m}c_m,
 $$
 and the right-hand side belongs to $F$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

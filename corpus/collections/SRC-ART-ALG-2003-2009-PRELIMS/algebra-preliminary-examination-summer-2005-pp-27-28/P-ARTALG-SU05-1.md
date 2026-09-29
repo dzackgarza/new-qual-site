@@ -33,7 +33,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The Sylow theorems have the following form.
+
+::: pf
+
+::: {.pf-step #s1}
+
+The Sylow theorems have the following form.
 
 Let $G$ be finite, let $p$ be prime, and write $|G|=p^am$ with
 $p\nmid m$. A Sylow $p$-subgroup is a subgroup of order $p^a$.
@@ -46,11 +51,16 @@ $$
 where $N_G(P)=\{g\in G:gPg^{-1}=P\}$.
 In particular, $P$ is normal exactly when $n_p=1$ [@DF04].
 
-<1>2. Every group of order $35$ is cyclic; hence $C_{35}$ is the
+:::
+
+::: pf-step
+
+Every group of order $35$ is cyclic; hence $C_{35}$ is the
 unique isomorphism class.
 
-::: {.proof}
-Since $35=5\cdot7$, step <1>1 gives
+::: pf-proof
+
+Since $35=5\cdot7$, step [](#s1){.pf-ref} gives
 $$
 n_7\mid5,\quad n_7\equiv1\pmod7,
 \qquad n_5\mid7,\quad n_5\equiv1\pmod5.
@@ -72,11 +82,17 @@ an element $(x,y)$ of order $35$, because an integer power is
 the identity exactly when the exponent is divisible by both
 $5$ and $7$. Therefore $G\cong C_{35}$, and $C_{35}$ realizes
 the required order.
+
 :::
 
-<1>3. Every group of order $24$ has a nontrivial proper normal subgroup.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every group of order $24$ has a nontrivial proper normal subgroup.
+
+::: pf-proof
+
 Here $n_3$ divides $8$ and is $1$ modulo $3$. Of the divisors
 $1,2,4,8$, exactly $1$ and $4$ satisfy that congruence.
 If $n_3=1$, the unique subgroup of order $3$ is nontrivial,
@@ -94,5 +110,11 @@ Its kernel $A_4$ is normal of order $12$, and
 $\rho^{-1}(A_4)$ is a nontrivial proper normal subgroup of $G$.
 All possibilities have been covered, so no group of order $24$
 is simple.
+
 :::
+
+:::
+
+:::
+
 :::

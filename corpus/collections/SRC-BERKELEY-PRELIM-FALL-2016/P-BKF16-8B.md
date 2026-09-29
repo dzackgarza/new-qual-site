@@ -46,33 +46,50 @@ $$
 $$
 be injective.
 
-<1>1. The group $G$ is a finitely generated abelian group.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The group $G$ is a finitely generated abelian group.
+
+::: pf-proof
+
 The image of an abelian group under a homomorphism is abelian. Since
 $\varphi$ is surjective, $G$ is therefore abelian. The images under
 $\varphi$ of the $n$ standard generators of $\ZZ^n$ generate $G$, so
 $G$ is finitely generated.
+
 :::
 
-<1>2. There are an integer $r\ge0$ and a finite abelian group $T$ such
+:::
+
+::: {.pf-step #s2}
+
+There are an integer $r\ge0$ and a finite abelian group $T$ such
 that
 $$
 G\cong\ZZ^r\oplus T.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the structure theorem for finitely generated abelian groups,
-applied to step <1>1.
+applied to step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The injection $\psi$ implies
+:::
+
+::: {.pf-step #s3}
+
+The injection $\psi$ implies
 $$
 r\ge n.
 $$
 
-::: {.proof}
-Identify $G$ with $\ZZ^r\oplus T$ as in step <1>2, and let
+::: pf-proof
+
+Identify $G$ with $\ZZ^r\oplus T$ as in step [](#s2){.pf-ref}, and let
 $$
 \pi:\ZZ^r\oplus T\to\ZZ^r
 $$
@@ -84,35 +101,53 @@ $$
 $$
 is injective. Thus $\ZZ^n$ embeds into $\ZZ^r$. Every subgroup of
 $\ZZ^r$ is free abelian of rank at most $r$, so $n\le r$.
+
 :::
 
-<1>4. The surjection $\varphi$ implies
+:::
+
+::: {.pf-step #s4}
+
+The surjection $\varphi$ implies
 $$
 r\le n.
 $$
 
-::: {.proof}
-With the decomposition from step <1>2, the composite
+::: pf-proof
+
+With the decomposition from step [](#s2){.pf-ref}, the composite
 $$
 \pi\circ\varphi:\ZZ^n\to\ZZ^r
 $$
 is surjective because both $\varphi$ and $\pi$ are surjective. A
 surjective homomorphism from $\ZZ^n$ to $\ZZ^r$ requires $r\le n$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: {.pf-step #s5}
+
+Hence
 $$
 r=n.
 $$
 
-::: {.proof}
-Combine steps <1>3 and <1>4.
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. The finite summand $T$ is trivial.
+:::
 
-::: {.proof}
-By step <1>5, identify
+::: {.pf-step #s6}
+
+The finite summand $T$ is trivial.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, identify
 $$
 G\cong\ZZ^n\oplus T.
 $$
@@ -140,23 +175,35 @@ $$
 (0,t)=\varphi(0)=0.
 $$
 Thus $t=0$. Since $t$ was arbitrary, $T=0$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{G\cong\ZZ^n}.
 $$
 
-::: {.proof}
-Steps <1>2, <1>5, and <1>6 give
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} give
 $$
 G\cong\ZZ^n\oplus0\cong\ZZ^n.
 $$
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -43,13 +43,18 @@ $$
 M(R)=\max_{\abs{\zeta}=R}\abs{f(\zeta)}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \frac{M(R)}{R^n}\longrightarrow0
 $$
 as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis means that for every $\varepsilon>0$ there is $R_0>0$ such
 that
 $$
@@ -64,16 +69,22 @@ Taking the maximum over the circle gives
 $$
 \frac{M(R)}{R^n}\leq\varepsilon.
 $$
+
 :::
 
-<1>2. For every integer $m\geq n$ and every $R>0$,
+:::
+
+::: {.pf-step #s2}
+
+For every integer $m\geq n$ and every $R>0$,
 $$
 \abs{a_m}
 \leq
 \frac{M(R)}{R^m}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Cauchy's coefficient formula gives
 $$
 a_m
@@ -92,15 +103,21 @@ $$
 =
 \frac{M(R)}{R^m}.
 $$
+
 :::
 
-<1>3. For every integer $m\geq n$,
+:::
+
+::: {.pf-step #s3}
+
+For every integer $m\geq n$,
 $$
 a_m=0.
 $$
 
-::: {.proof}
-Fix $m\geq n$. For $R\geq1$, step <1>2 gives
+::: pf-proof
+
+Fix $m\geq n$. For $R\geq1$, step [](#s2){.pf-ref} gives
 $$
 \abs{a_m}
 \leq
@@ -108,23 +125,35 @@ $$
 \leq
 \frac{M(R)}{R^n}.
 $$
-By step <1>1, the right-hand side tends to zero as $R\to\infty$. Thus
+By step [](#s1){.pf-ref}, the right-hand side tends to zero as $R\to\infty$. Thus
 $\abs{a_m}=0$.
+
 :::
 
-<1>4. The function $f$ is a polynomial of degree at most $n-1$.
+:::
 
-::: {.proof}
-Step <1>3 shows that every Taylor coefficient of degree at least $n$
+::: {.pf-step #s4}
+
+The function $f$ is a polynomial of degree at most $n-1$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that every Taylor coefficient of degree at least $n$
 vanishes. Therefore
 $$
 f(z)=\sum_{m=0}^{n-1}a_mz^m.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

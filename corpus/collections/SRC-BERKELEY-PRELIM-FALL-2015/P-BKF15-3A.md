@@ -57,12 +57,17 @@ $$
 X=m(D).
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 X\subseteq Y.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take any $s\in X$. Then
 $$
 s=\frac{f(u)-f(v)}{u-v}
@@ -78,14 +83,20 @@ s
 f'(c).
 $$
 Hence $s\in Y$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 Y\subseteq\overline X.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take $y\in Y$. Then
 $$
 y=f'(x)
@@ -110,20 +121,32 @@ f'(x)
 y.
 $$
 Thus $y$ is a limit point of $X$, so $y\in\overline X$.
+
 :::
 
-<1>3. This proves part (a):
+:::
+
+::: {.pf-step #s3}
+
+This proves part (a):
 $$
 \boxed{X\subseteq Y\subseteq\overline X}.
 $$
 
-::: {.proof}
-Combine steps <1>1 and <1>2.
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The set $D$ is connected.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The set $D$ is connected.
+
+::: pf-proof
+
 The set $D$ is convex. Indeed, if
 $$
 (u_1,v_1),(u_2,v_2)\in D
@@ -133,15 +156,21 @@ $$
 a<(1-t)u_1+tu_2<(1-t)v_1+tv_2<b.
 $$
 Every convex subset of $\RR^2$ is path connected, hence connected.
+
 :::
 
-<1>5. The function
+:::
+
+::: {.pf-step #s5}
+
+The function
 $$
 m:D\to\RR
 $$
 is continuous.
 
-::: {.proof}
+::: pf-proof
+
 Differentiability of $f$ implies continuity of $f$. Therefore
 $$
 (u,v)\longmapsto f(u)-f(v)
@@ -152,28 +181,40 @@ $$
 $$
 are continuous on $D$. Since $u-v\ne0$ throughout $D$, their quotient
 $m$ is continuous.
+
 :::
 
-<1>6. The set $X$ is an interval.
+:::
 
-::: {.proof}
-By step <1>4, $D$ is connected, and by step <1>5, $m$ is continuous.
+::: {.pf-step #s6}
+
+The set $X$ is an interval.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $D$ is connected, and by step [](#s5){.pf-ref}, $m$ is continuous.
 Therefore its image
 $$
 X=m(D)
 $$
 is connected. The connected subsets of $\RR$ are exactly the
 intervals.
+
 :::
 
-<1>7. Every subset $Z$ satisfying
+:::
+
+::: {.pf-step #s7}
+
+Every subset $Z$ satisfying
 $$
 X\subseteq Z\subseteq\overline X
 $$
 is an interval.
 
-::: {.proof}
-By step <1>6, $X$ is an interval. Let $p,q\in Z$ with $p<q$, and let
+::: pf-proof
+
+By step [](#s6){.pf-ref}, $X$ is an interval. Let $p,q\in Z$ with $p<q$, and let
 $r$ satisfy
 $$
 p<r<q.
@@ -182,21 +223,33 @@ Since $p,q\in\overline X$, every point strictly between $p$ and $q$
 belongs to $X$: the closure of an interval can add only one or both
 endpoints, not an interior gap. Hence $r\in X\subseteq Z$. Thus $Z$ is
 an interval.
+
 :::
 
-<1>8. The range $Y$ of $f'$ is an interval.
+:::
 
-::: {.proof}
-By step <1>3,
+::: {.pf-step #s8}
+
+The range $Y$ of $f'$ is an interval.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 X\subseteq Y\subseteq\overline X.
 $$
-Apply step <1>7 with $Z=Y$.
+Apply step [](#s7){.pf-ref} with $Z=Y$.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), and step <1>8 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and step [](#s8){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

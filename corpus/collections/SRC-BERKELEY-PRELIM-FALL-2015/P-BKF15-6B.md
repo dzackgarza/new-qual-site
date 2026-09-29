@@ -60,7 +60,11 @@ v_k
 \in\CC^n.
 $$
 
-<1>1. For every $k$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $k$,
 $$
 Cv_k
 =
@@ -69,7 +73,8 @@ Cv_k
 \right)v_k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Number rows and columns by
 $$
 0,1,\ldots,n-1
@@ -102,9 +107,14 @@ $$
 $$
 Thus the vector is multiplied by the displayed scalar. The
 normalizing factor $1/\sqrt n$ does not affect the calculation.
+
 :::
 
-<1>2. The corresponding eigenvalue of $C$ on $v_k$ is
+:::
+
+::: {.pf-step #s2}
+
+The corresponding eigenvalue of $C$ on $v_k$ is
 $$
 \boxed{
 \lambda_k(C)
@@ -114,14 +124,21 @@ $$
 }
 $$
 
-::: {.proof}
-This is the scalar obtained in step <1>1 after substituting the
+::: pf-proof
+
+This is the scalar obtained in step [](#s1){.pf-ref} after substituting the
 definition of $\zeta_k$.
+
 :::
 
-<1>3. Every vector $v_k$ has Hermitian norm $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every vector $v_k$ has Hermitian norm $1$.
+
+::: pf-proof
+
 Since $\abs{\zeta_k}=1$,
 $$
 \begin{aligned}
@@ -135,14 +152,20 @@ $$
 1.
 \end{aligned}
 $$
+
 :::
 
-<1>4. If $k\ne\ell$, then
+:::
+
+::: {.pf-step #s4}
+
+If $k\ne\ell$, then
 $$
 \inner{v_k}{v_\ell}=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using the standard Hermitian inner product,
 $$
 \inner{v_k}{v_\ell}
@@ -169,34 +192,52 @@ $$
 =
 0.
 $$
+
 :::
 
-<1>5. The vectors
+:::
+
+::: {.pf-step #s5}
+
+The vectors
 $$
 \boxed{v_0,v_1,\ldots,v_{n-1}}
 $$
 form a Hermitian-orthonormal basis of $\CC^n$.
 
-::: {.proof}
-By steps <1>3 and <1>4, the $n$ vectors are orthonormal. Any
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the $n$ vectors are orthonormal. Any
 orthonormal family is linearly independent, and an independent family
 of $n$ vectors in the $n$-dimensional space $\CC^n$ is a basis.
+
 :::
 
-<1>6. This basis is a common eigenbasis for every matrix of the form
+:::
+
+::: {.pf-step #s6}
+
+This basis is a common eigenbasis for every matrix of the form
 in the problem.
 
-::: {.proof}
+::: pf-proof
+
 The vectors $v_k$ depend only on $n$, not on the coefficients
-$c_0,\ldots,c_{n-1}$. Step <1>1 shows that each $v_k$ is an
-eigenvector for every such matrix $C$, while step <1>5 shows that the
+$c_0,\ldots,c_{n-1}$. Step [](#s1){.pf-ref} shows that each $v_k$ is an
+eigenvector for every such matrix $C$, while step [](#s5){.pf-ref} shows that the
 vectors form a Hermitian-orthonormal basis.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2, <1>5, and <1>6 give the requested common eigenvectors,
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} give the requested common eigenvectors,
 their eigenvalues, and their Hermitian-orthonormality.
+
 :::
+
+:::
+
 :::

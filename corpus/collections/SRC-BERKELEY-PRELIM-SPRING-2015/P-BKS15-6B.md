@@ -39,7 +39,11 @@ q(x_1,x_2,x_3,x_4)
 x_1x_2-3x_2^2+x_3^2+2x_2x_4+x_4^2.
 $$
 
-<1>1. The quadratic form satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The quadratic form satisfies
 $$
 q
 =
@@ -52,7 +56,8 @@ q
 x_3^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding the right-hand side gives
 $$
 \begin{aligned}
@@ -67,9 +72,14 @@ x_3^2\\
 x_1x_2-3x_2^2+x_3^2+2x_2x_4+x_4^2.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The linear coordinates
+:::
+
+::: pf-step
+
+The linear coordinates
 $$
 y_1=x_3,
 \qquad
@@ -84,8 +94,9 @@ $$
 q=y_1^2+y_2^2-y_3^2+y_4^2.
 $$
 
-::: {.proof}
-Step <1>1 gives the displayed diagonal form. The coordinate change is invertible because the original coordinates can be recovered by
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives the displayed diagonal form. The coordinate change is invertible because the original coordinates can be recovered by
 $$
 x_1=4y_4,
 \qquad
@@ -95,11 +106,17 @@ x_4=y_2-\frac{y_3+y_4}{2},
 \qquad
 x_3=y_1.
 $$
+
 :::
 
-<1>3. There is a $3$-dimensional subspace on which $q$ is positive definite.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+There is a $3$-dimensional subspace on which $q$ is positive definite.
+
+::: pf-proof
+
 In the $y$-coordinates, take
 $$
 W
@@ -111,11 +128,17 @@ $$
 q=y_1^2+y_2^2+y_4^2>0.
 $$
 Thus $q|_W$ is positive definite.
+
 :::
 
-<1>4. No $4$-dimensional subspace of $\RR^4$ can have positive-definite restriction of $q$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+No $4$-dimensional subspace of $\RR^4$ can have positive-definite restriction of $q$.
+
+::: pf-proof
+
 The only $4$-dimensional subspace of $\RR^4$ is $\RR^4$ itself. In the $y$-coordinates, the nonzero vector
 $$
 (0,0,1,0)
@@ -125,20 +148,32 @@ $$
 q(0,0,1,0)=-1<0.
 $$
 Hence $q$ is not positive definite on the whole space.
+
 :::
 
-<1>5. Therefore the maximal dimension is
+:::
+
+::: {.pf-step #s5}
+
+Therefore the maximal dimension is
 $$
 \boxed{3}.
 $$
 
-::: {.proof}
-Step <1>3 gives a positive-definite subspace of dimension $3$, and step <1>4 rules out dimension $4$.
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives a positive-definite subspace of dimension $3$, and step [](#s4){.pf-ref} rules out dimension $4$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested maximal dimension.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested maximal dimension.
+
+:::
+
+:::
+
 :::

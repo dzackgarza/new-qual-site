@@ -31,7 +31,11 @@ $$
 X=S^2_a\vee S^2_b\vee S^4.
 $$
 
-<1>1. The reduced cohomology of a finite wedge is the direct sum of the reduced cohomologies of the summands. Hence
+::: pf
+
+::: pf-step
+
+The reduced cohomology of a finite wedge is the direct sum of the reduced cohomologies of the summands. Hence
 $$
 H^k(X;\mathbb Z)\cong
 \begin{cases}
@@ -41,18 +45,38 @@ H^k(X;\mathbb Z)\cong
 \end{cases}
 $$
 
-<1>2. Let $\alpha,\beta\in H^2(X;\mathbb Z)$ be the classes coming from the two $2$-sphere summands, and let $\gamma\in H^4(X;\mathbb Z)$ be the class coming from the $4$-sphere summand.
+:::
 
-<1>3. Every product of two positive-degree classes is zero.
-::: {.proof}
+::: pf-step
+
+Let $\alpha,\beta\in H^2(X;\mathbb Z)$ be the classes coming from the two $2$-sphere summands, and let $\gamma\in H^4(X;\mathbb Z)$ be the class coming from the $4$-sphere summand.
+
+:::
+
+::: pf-step
+
+Every product of two positive-degree classes is zero.
+
+::: pf-proof
+
 For each wedge summand, the square of its positive-degree generator vanishes for dimensional reasons. Products of classes supported on distinct wedge summands vanish because the reduced diagonal of a wedge has no mixed component between distinct summands. Thus
 $$
 \alpha^2=\beta^2=\alpha\beta=0,
 $$
 and every product involving $\gamma$ also vanishes by degree.
+
 :::
 
-<1>4. Therefore, as a graded ring,
+:::
+
+::: pf-step
+
+Therefore, as a graded ring,
+
+:::
+
+:::
+
 $$
 H^*(X;\mathbb Z)
 \cong

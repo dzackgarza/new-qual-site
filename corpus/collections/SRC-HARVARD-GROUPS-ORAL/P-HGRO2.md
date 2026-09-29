@@ -20,23 +20,51 @@ How many are there of order $27$?
 :::
 
 ::: {.solution}
-<1>1. Order $35 = 5 \cdot 7$: there is exactly $1$ abelian group, namely $\ZZ/35$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Order $35 = 5 \cdot 7$: there is exactly $1$ abelian group, namely $\ZZ/35$.
+
+::: pf-proof
+
 by the fundamental theorem of finite abelian groups, an abelian group of order $35 = 5 \cdot 7$ (a product of distinct primes) is cyclic, so $\ZZ/35$ is the only one.
+
 :::
 
-<1>2. Order $27 = 3^3$: the number of abelian groups is the number of partitions of $3$, which is $3$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Order $27 = 3^3$: the number of abelian groups is the number of partitions of $3$, which is $3$.
+
+::: pf-proof
+
 the fundamental theorem of finite abelian groups says an abelian group of order $p^3$ is a direct product of cyclic $p$-groups whose orders multiply to $p^3$, i.e. correspond to partitions of $3$.
+
 :::
 
-<1>3. The three abelian groups of order $27$ are $\ZZ/27$, $\ZZ/9 \times \ZZ/3$, and $\ZZ/3 \times \ZZ/3 \times \ZZ/3$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The three abelian groups of order $27$ are $\ZZ/27$, $\ZZ/9 \times \ZZ/3$, and $\ZZ/3 \times \ZZ/3 \times \ZZ/3$.
+
+::: pf-proof
+
 the partitions of $3$ are $3$, $2+1$, and $1+1+1$.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-$1$ group of order $35$ (<1>1) and $3$ groups of order $27$ (<1>2, <1>3).
 :::
+
+::: pf-qed
+
+$1$ group of order $35$ (step [](#s1){.pf-ref}) and $3$ groups of order $27$ (steps [](#s2){.pf-ref} and [](#s3){.pf-ref}).
+
+:::
+
+:::
+
 :::

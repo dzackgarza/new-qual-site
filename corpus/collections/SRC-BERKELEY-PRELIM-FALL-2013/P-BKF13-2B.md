@@ -33,9 +33,15 @@ Prove that $X$ has property (A) if and only if it is connected.
 :::
 
 ::: {.solution}
-<1>1. If $X$ is connected, then $X$ has property (A).
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $X$ is connected, then $X$ has property (A).
+
+::: pf-proof
+
 Let
 $$
 f:X\longrightarrow\RR
@@ -44,11 +50,17 @@ be continuous. A continuous image of a connected space is connected,
 so $f(X)$ is a connected subset of $\RR$. The connected subsets of
 $\RR$ are exactly the intervals. Hence $f(X)$ is an interval, and
 $X$ has property (A).
+
 :::
 
-<1>2. If $X$ is disconnected, then $X$ does not have property (A).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $X$ is disconnected, then $X$ does not have property (A).
+
+::: pf-proof
+
 If $X$ is disconnected, there are nonempty disjoint open sets
 $U,V\subseteq X$ with
 $$
@@ -70,9 +82,14 @@ $$
 f(X)=\{0,1\},
 $$
 which is not an interval. Thus property (A) fails.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 X\text{ has property (A)}
@@ -81,14 +98,21 @@ X\text{ is connected}.
 }
 $$
 
-::: {.proof}
-Step <1>1 proves that connectedness implies property (A), while step
-<1>2 proves the contrapositive of the converse.
+::: pf-proof
+
+Step [](#s1){.pf-ref} proves that connectedness implies property (A), while step
+[](#s2){.pf-ref} proves the contrapositive of the converse.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::

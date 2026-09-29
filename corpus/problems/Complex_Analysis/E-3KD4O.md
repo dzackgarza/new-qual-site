@@ -27,7 +27,11 @@ Show that if $f$ is once complex differentiable at each point of $\Omega$, then 
 ::: {.solution}
 It is enough to prove Goursat's theorem: complex differentiability at every point already implies the Cauchy integral theorem, without assuming continuity of $f'$.
 
-<1>1. Let $T\subset\Omega$ be a closed triangle and set
+::: pf
+
+::: pf-step
+
+Let $T\subset\Omega$ be a closed triangle and set
 $$
 I(T)=\int_{\partial T}f(z)\,dz.
 $$
@@ -41,7 +45,11 @@ $$
 $$
 and with diameter and perimeter scaled respectively by $2^{-n}$. Their intersection is a single point $z_0$.
 
-<1>2. Differentiability at $z_0$ gives
+:::
+
+::: pf-step
+
+Differentiability at $z_0$ gives
 $$
 f(z)=f(z_0)+f'(z_0)(z-z_0)+\eta(z)(z-z_0),
 \qquad \eta(z)\to0.
@@ -54,7 +62,16 @@ $$
 $$
 for a constant $C$ independent of $n$. Combining with the lower bound gives $|I(T)|\le C\varepsilon$. Since $\varepsilon$ is arbitrary, $I(T)=0$.
 
-<1>3. Thus the integral of $f$ around every triangle compactly contained in $\Omega$ vanishes. On a disk $D\Subset\Omega$, fix $z_*$ and define
+:::
+
+::: pf-step
+
+Thus the integral of $f$ around every triangle compactly contained in $\Omega$ vanishes. On a disk $D\Subset\Omega$, fix $z_*$ and define
+
+:::
+
+:::
+
 $$
 F(z)=\int_{[z_*,z]}f(w)\,dw.
 $$

@@ -23,7 +23,6 @@ Which extensions are normal, which are not, and why?
 What are the Galois groups (over Q) of all intermediate extensions?
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -67,9 +66,17 @@ Moreover $E/\QQ$ is Galois exactly when $H\normal G$, in which case
 
 The subgroups of $G$ are as follows.
 
-<1>1. $G$ itself fixes $\QQ$.
+::: pf
 
-<1>2. There is a unique subgroup of order $10$,
+::: pf-step
+
+$G$ itself fixes $\QQ$.
+
+:::
+
+::: pf-step
+
+There is a unique subgroup of order $10$,
 \[
 H_{10}=\langle\sigma,\tau^2\rangle\cong D_{10}.
 \]
@@ -79,7 +86,11 @@ L^{H_{10}}=\QQ(\sqrt5).
 \]
 Thus $\Gal(\QQ(\sqrt5)/\QQ)\cong C_2$.
 
-<1>3. The unique Sylow $5$-subgroup
+:::
+
+::: pf-step
+
+The unique Sylow $5$-subgroup
 \[
 H_5=\langle\sigma\rangle\cong C_5
 \]
@@ -92,7 +103,11 @@ so
 \Gal(\QQ(\zeta)/\QQ)\cong C_4.
 \]
 
-<1>4. There are five conjugate subgroups of order $4$,
+:::
+
+::: pf-step
+
+There are five conjugate subgroups of order $4$,
 \[
 H_{4,j}=\sigma^j\langle\tau\rangle\sigma^{-j}
 \qquad(0\le j<5).
@@ -106,7 +121,11 @@ None is normal over $\QQ$. Since each $H_{4,j}$ is self-normalizing,
 \Aut_{\QQ}(E_j)\cong N_G(H_{4,j})/H_{4,j}=1.
 \]
 
-<1>5. There are five conjugate subgroups of order $2$,
+:::
+
+::: pf-step
+
+There are five conjugate subgroups of order $2$,
 \[
 H_{2,j}=\sigma^j\langle\tau^2\rangle\sigma^{-j}.
 \]
@@ -123,7 +142,16 @@ Each has degree $10$ over $\QQ$ and is not normal. The normalizer of $H_{2,j}$ h
 \Aut_{\QQ}(F_j)\cong C_2.
 \]
 
-<1>6. The trivial subgroup fixes $L$ itself, and
+:::
+
+::: pf-step
+
+The trivial subgroup fixes $L$ itself, and
+
+:::
+
+:::
+
 \[
 \Gal(L/\QQ)\cong C_5\rtimes C_4.
 \]

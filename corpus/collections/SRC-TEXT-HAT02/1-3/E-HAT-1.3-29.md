@@ -45,8 +45,14 @@ q_i:Y\to Y/G_i
 \]
 be the quotient maps.
 
-<1>1. The map $h$ sends $G_1$-orbits bijectively to $G_2$-orbits.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The map $h$ sends $G_1$-orbits bijectively to $G_2$-orbits.
+
+::: pf-proof
+
 For $y\in Y$,
 \[
 h(G_1y)=\{hg(y):g\in G_1\}
@@ -54,9 +60,14 @@ h(G_1y)=\{hg(y):g\in G_1\}
 =G_2h(y).
 \]
 Thus points in the same $G_1$-orbit have images in the same $G_2$-orbit, and applying $h^{-1}$ gives the converse.
+
 :::
 
-<1>2. Hence the formula
+:::
+
+::: pf-step
+
+Hence the formula
 \[
 \bar h([y]_{G_1})=[h(y)]_{G_2}
 \]
@@ -64,12 +75,21 @@ defines a bijection
 \[
 \bar h:Y/G_1\to Y/G_2.
 \]
-::: {.proof}
-Well-definedness and injectivity follow from <1>1, and surjectivity follows from surjectivity of $h$.
+
+::: pf-proof
+
+Well-definedness and injectivity follow from step [](#s1){.pf-ref}, and surjectivity follows from surjectivity of $h$.
+
 :::
 
-<1>3. The map $\bar h$ is a homeomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $\bar h$ is a homeomorphism.
+
+::: pf-proof
+
 The relation
 \[
 \bar h\circ q_1=q_2\circ h
@@ -77,5 +97,11 @@ The relation
 shows that $\bar h$ is continuous because $q_1$ is a quotient map.
 Applying the same argument to $h^{-1}$ gives continuity of the inverse map induced on orbit spaces.
 Therefore $\bar h$ is a homeomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

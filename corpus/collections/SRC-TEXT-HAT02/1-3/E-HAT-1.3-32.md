@@ -48,7 +48,11 @@ j_*:\pi_1(X^1,x_0)\twoheadrightarrow\pi_1(X,x_0)
 \]
 is surjective.
 
-<1>1. If a connected cover $p:\widetilde X\to X$ corresponds to the subgroup
+::: pf
+
+::: pf-step
+
+If a connected cover $p:\widetilde X\to X$ corresponds to the subgroup
 \[
 H\le\pi_1(X,x_0),
 \]
@@ -56,12 +60,19 @@ then its restricted $1$-skeleton cover corresponds to
 \[
 j_*^{-1}(H)\le\pi_1(X^1,x_0).
 \]
-::: {.proof}
+
+::: pf-proof
+
 A loop in $X^1$ lifts closed to $\widetilde X^1$ exactly when the same loop, viewed in $X$, lifts closed to $\widetilde X$.
 By the lifting criterion for connected covers, this is exactly the condition that its class lie in $j_*^{-1}(H)$.
+
 :::
 
-<1>2. If the restricted covers
+:::
+
+::: pf-step
+
+If the restricted covers
 \[
 \widetilde X_1^1\to X^1,
 \qquad
@@ -74,7 +85,9 @@ are isomorphic, then the full covers
 \widetilde X_2\to X
 \]
 are isomorphic.
-::: {.proof}
+
+::: pf-proof
+
 Let $H_1,H_2\le\pi_1(X)$ be the subgroups corresponding to the two connected covers.
 Isomorphism of the unpointed restricted covers means that
 \[
@@ -88,10 +101,17 @@ are conjugate in $\pi_1(X^1)$.
 Applying the surjection $j_*$ shows that $H_1$ and $H_2$ are conjugate in $\pi_1(X)$.
 The connected-covering classification therefore gives an isomorphism of the full covers.
 This proves (a).
+
 :::
 
-<1>3. If the restricted cover $\widetilde X^1\to X^1$ is normal, then $\widetilde X\to X$ is normal.
-::: {.proof}
+:::
+
+::: pf-step
+
+If the restricted cover $\widetilde X^1\to X^1$ is normal, then $\widetilde X\to X$ is normal.
+
+::: pf-proof
+
 Normality of the restricted cover means
 \[
 j_*^{-1}(H)\triangleleft\pi_1(X^1).
@@ -118,22 +138,36 @@ ghg^{-1}\in H.
 \]
 Thus $H\triangleleft\pi_1(X)$, so the full cover is normal.
 This proves (b).
+
 :::
 
-<1>4. Restriction gives an injective homomorphism
+:::
+
+::: {.pf-step #s4}
+
+Restriction gives an injective homomorphism
 \[
 \operatorname{Deck}(\widetilde X/X)
 \longrightarrow
 \operatorname{Deck}(\widetilde X^1/X^1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 A deck transformation preserves cells and hence restricts to the $1$-skeleton.
 If its restriction is the identity, then it fixes a point of the connected covering space $\widetilde X$.
 A deck transformation of a connected cover is determined by the image of one point, so it is the identity.
+
 :::
 
-<1>5. The restriction homomorphism in <1>4 is surjective.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The restriction homomorphism in step [](#s4){.pf-ref} is surjective.
+
+::: pf-proof
+
 For the full cover corresponding to $H\le G=\pi_1(X)$,
 \[
 \operatorname{Deck}(\widetilde X/X)\cong N_G(H)/H.
@@ -162,11 +196,24 @@ N_G(H)/H,
 \]
 which is exactly the deck transformation obtained by extending a deck transformation from the $1$-skeleton.
 Thus restriction is surjective.
+
 :::
 
-<1>6. Hence the deck groups of the two covers are naturally isomorphic.
-::: {.proof}
-Combine <1>4 and <1>5.
-This proves (c).
 :::
+
+::: pf-step
+
+Hence the deck groups of the two covers are naturally isomorphic.
+
+::: pf-proof
+
+Combine steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+This proves (c).
+
+:::
+
+:::
+
+:::
+
 :::

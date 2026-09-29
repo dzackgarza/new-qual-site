@@ -24,21 +24,39 @@ Let $\nu, \mu$ be signed measures, and show that
 .\]
 :::
 ::: {.solution}
-<1>1. There is a measurable $A$ with $|\mu|(A) = 0$ and $|\nu|(A^c) = 0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There is a measurable $A$ with $|\mu|(A) = 0$ and $|\nu|(A^c) = 0$.
+
+::: pf-proof
+
 This is the definition of $\nu \perp \mu$: there is a partition $X = A \sqcup A^c$ with $A$ null for $\mu$ and $A^c$ null for $\nu$, and a set is null for a signed measure exactly when it has total variation measure $0$.
+
 :::
 
-<1>2. $|\nu|(A) = 0$.
-
-::: {.proof}
-$\nu \ll |\mu|$ means $|\nu|(E) = 0$ whenever $|\mu|(E) = 0$, equivalently $\nu(E) = 0$ for every measurable $E$ with $|\mu|(E) = 0$. Apply it to $E = A$ from step <1>1.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #s2}
 
-::: {.proof}
-By steps <1>1 and <1>2, $|\nu|(X) = |\nu|(A) + |\nu|(A^c) = 0$. Since $|\nu(E)| \le |\nu|(E)$ for every $E$, $\nu = 0$.
+$|\nu|(A) = 0$.
+
+::: pf-proof
+
+$\nu \ll |\mu|$ means $|\nu|(E) = 0$ whenever $|\mu|(E) = 0$, equivalently $\nu(E) = 0$ for every measurable $E$ with $|\mu|(E) = 0$. Apply it to $E = A$ from step [](#s1){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|\nu|(X) = |\nu|(A) + |\nu|(A^c) = 0$. Since $|\nu(E)| \le |\nu|(E)$ for every $E$, $\nu = 0$.
+
+:::
+
+:::
+
 :::

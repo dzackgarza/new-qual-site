@@ -43,25 +43,36 @@ $$
 \PP^n\setminus(H_i\cap H_j)=U_i\cup U_j.
 $$
 
-<1>1. Every regular function on $U_i$ has the form
+::: pf
+
+::: {.pf-step #s1}
+
+Every regular function on $U_i$ has the form
 $$
 \frac{F}{x_i^a}
 $$
 for some $a\ge0$ and some homogeneous polynomial $F\in k[x_0,\ldots,x_n]$ of degree $a$, and similarly on $U_j$.
 
-::: {.proof}
+::: pf-proof
+
 The standard chart $U_i$ is isomorphic to $\AA^n$ with affine coordinates $x_\ell/x_i$ for $\ell\ne i$.
 A regular function on $U_i$ is therefore a polynomial in these ratios.
 Choose $a$ at least the total degree of that polynomial and put all terms over the common denominator $x_i^a$.
 Multiplying each numerator monomial by the required power of $x_i$ produces a homogeneous polynomial $F$ of degree $a$.
 The same argument applies to $U_j$.
+
 :::
 
-<1>2. A regular function on $U_i\cup U_j$ is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A regular function on $U_i\cup U_j$ is constant.
+
+::: pf-proof
+
 Let $f$ be regular on $U_i\cup U_j$.
-By step <1>1, choose homogeneous polynomials $F,G$ with
+By step [](#s1){.pf-ref}, choose homogeneous polynomials $F,G$ with
 $$
 f|_{U_i}=\frac{F}{x_i^a},
 \qquad
@@ -82,11 +93,17 @@ for some $c\in k$.
 Thus $f=c$ on $U_i$.
 Substituting in the equality on the overlap gives $G=cx_j^b$, so $f=c$ on $U_j$ as well.
 Hence $f$ is constant on their union.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 applies to every regular function on $\PP^n\setminus(H_i\cap H_j)$.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} applies to every regular function on $\PP^n\setminus(H_i\cap H_j)$.
+
+:::
+
+:::
+
 :::

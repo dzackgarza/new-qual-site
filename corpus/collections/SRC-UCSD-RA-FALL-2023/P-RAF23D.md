@@ -35,8 +35,15 @@ Then $\mathcal{H}_a$ is a Hilbert space and $\{\sqrt{2a}\operatorname{sinc}(2ax 
 :::
 
 ::: {.solution}
-<1>1. (i) $\widehat{\chi_{[-a,a]}}=\check\chi_{[-a,a]}=2a\operatorname{sinc}(2ax)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+(i) $\widehat{\chi_{[-a,a]}}=\check\chi_{[-a,a]}=2a\operatorname{sinc}(2ax)$.
+
+::: pf-proof
+
 For $x\ne0$,
 \[
 \widehat{\chi_{[-a,a]}}(x)
@@ -52,10 +59,17 @@ At $x=0$ both sides equal $2a$, so the identity holds everywhere. Since $\chi_{[
 =\check{\chi}_{[-a,a]}
 =2a\operatorname{sinc}(2ax).}
 \]
+
 :::
 
-<1>2. (ii) $\mathcal H_a$ is a closed subspace of $L^2(\mathbb R)$, and $\phi_k(x)\coloneqq\sqrt{2a}\operatorname{sinc}(2ax-k)$, $k\in\mathbb Z$, form an orthonormal basis of it.
-::: {.proof}
+:::
+
+::: pf-step
+
+(ii) $\mathcal H_a$ is a closed subspace of $L^2(\mathbb R)$, and $\phi_k(x)\coloneqq\sqrt{2a}\operatorname{sinc}(2ax-k)$, $k\in\mathbb Z$, form an orthonormal basis of it.
+
+::: pf-proof
+
 By Plancherel, the Fourier transform is unitary on $L^2(\mathbb R)$. Therefore
 \[
 \mathcal H_a
@@ -68,7 +82,7 @@ For $k\in\mathbb Z$, put
 \phi_k(x):=\sqrt{2a}\operatorname{sinc}(2ax-k)
 =\sqrt{2a}\operatorname{sinc}\!\left(2a\left(x-\frac{k}{2a}\right)\right).
 \]
-From step <1>1 and the translation rule,
+From step [](#s1){.pf-ref} and the translation rule,
 \[
 \widehat{\phi_k}(\xi)
 =\frac1{\sqrt{2a}}
@@ -83,10 +97,17 @@ form the standard orthonormal basis of $L^2([-a,a])$. Since the Fourier transfor
 \[
 \boxed{\{\phi_k:k\in\mathbb Z\}\text{ is an orthonormal basis of }\mathcal H_a.}
 \]
+
 :::
 
-<1>3. (iii) Every $f\in\mathcal H_a$ has a representative in $C_0(\mathbb R)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+(iii) Every $f\in\mathcal H_a$ has a representative in $C_0(\mathbb R)$.
+
+::: pf-proof
+
 If $f\in\mathcal H_a$, then $\widehat f\in L^2([-a,a])$. Since the interval has finite measure, Cauchy--Schwarz gives
 \[
 \|\widehat f\|_1
@@ -100,10 +121,17 @@ for a continuous representative of $f$. By the Riemann--Lebesgue lemma this repr
 \[
 f\in C_0(\mathbb R).
 \]
+
 :::
 
-<1>4. (iii) For $f\in\mathcal H_a$, $\langle f,\phi_k\rangle=(2a)^{-1/2}f(k/2a)$, and $f=\sum_k f(k/2a)\operatorname{sinc}(2ax-k)$ in $L^2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+(iii) For $f\in\mathcal H_a$, $\langle f,\phi_k\rangle=(2a)^{-1/2}f(k/2a)$, and $f=\sum_k f(k/2a)\operatorname{sinc}(2ax-k)$ in $L^2$.
+
+::: pf-proof
+
 By Plancherel,
 \[
 \begin{aligned}
@@ -133,5 +161,11 @@ f\!\left(\frac{k}{2a}\right)
 \operatorname{sinc}(2ax-k)
 \quad\text{in }L^2.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

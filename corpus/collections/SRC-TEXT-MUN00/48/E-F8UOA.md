@@ -33,36 +33,67 @@ If $D$ is a countable dense subset of $\mathbb{R}$, there is no function $f: \ma
 ::: {.solution}
 For $n \in \ZZ_+$ let $U_n$ be the union of all open sets $U \subseteq \RR$ with $\operatorname{diam} f(U) < 1/n$. Each $U_n$ is open, as a union of open sets.
 
-<1>1. (a) $C = \bigcap_{n=1}^\infty U_n$, so $C$ is a $G_\delta$ set.
+::: pf
 
-<2>1. $C \subseteq \bigcap_n U_n$.
+::: {.pf-step #s1}
 
-::: {.proof}
+(a) $C = \bigcap_{n=1}^\infty U_n$, so $C$ is a $G_\delta$ set.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+$C \subseteq \bigcap_n U_n$.
+
+::: pf-proof
+
 Let $x_0 \in C$ and $n \in \ZZ_+$. By continuity at $x_0$, there is an open interval $U \ni x_0$ with $f(U) \subseteq (f(x_0) - \frac{1}{3n}, f(x_0) + \frac{1}{3n})$. Then $\operatorname{diam} f(U) \le \frac{2}{3n} < \frac1n$, so $x_0 \in U \subseteq U_n$.
+
 :::
 
-<2>2. $\bigcap_n U_n \subseteq C$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+
+$\bigcap_n U_n \subseteq C$.
+
+::: pf-proof
+
 Let $x_0 \in \bigcap_n U_n$ and $\varepsilon > 0$; choose $n$ with $1/n < \varepsilon$. Since $x_0 \in U_n$, some open $U \ni x_0$ has $\operatorname{diam} f(U) < 1/n$. For $y \in U$, $\abs{f(y) - f(x_0)} \le \operatorname{diam} f(U) < \varepsilon$. So $f$ is continuous at $x_0$.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-Steps <2>1 and <2>2 give $C = \bigcap_n U_n$, a countable intersection of open sets.
 :::
 
-<1>2. (b) $D$ is not a $G_\delta$ set.
+::: pf-qed
 
-::: {.proof}
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give $C = \bigcap_n U_n$, a countable intersection of open sets.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+(b) $D$ is not a $G_\delta$ set.
+
+::: pf-proof
+
 Write $D = \{d_k : k \in \ZZ_+\}$ and suppose $D = \bigcap_n W_n$ with each $W_n$ open. Each $W_n$ contains the dense set $D$, so it is dense. Each $V_k = \RR \setminus \{d_k\}$ is open, and it is dense because $\RR$ has no isolated points. By the Baire category theorem for the complete metric space $\RR$, the intersection of the countable family of dense open sets $W_n$ and $V_k$ is dense, hence nonempty. But
 $$\bigcap_n W_n \cap \bigcap_k V_k = D \cap (\RR \setminus D) = \varnothing.$$
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a) and step <1>2 proves part (b). If $f$ were continuous precisely at the points of $D$, then $D = C$ would be a $G_\delta$ set by step <1>1, contradicting step <1>2.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a) and step [](#s2){.pf-ref} proves part (b). If $f$ were continuous precisely at the points of $D$, then $D = C$ would be a $G_\delta$ set by step [](#s1){.pf-ref}, contradicting step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -40,13 +40,20 @@ Moreover, give an example showing that this conclusion may not hold if $X$ is no
 :::
 
 ::: {.solution}
-<1>1. For every $x\in X$, there are an open neighborhood $U_x\subseteq X$ of $x$ and a number $\varepsilon_x>0$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in X$, there are an open neighborhood $U_x\subseteq X$ of $x$ and a number $\varepsilon_x>0$ such that
 \[
 f(y,t)>0
 \qquad
 \text{for all }y\in U_x\text{ and }|t|<\varepsilon_x.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $f(x,0)>0$ and $(0,\infty)$ is open in $\RR$, continuity gives an open neighborhood
 \[
 W_x\subseteq X\times\RR
@@ -60,11 +67,18 @@ By the definition of the product topology, there are an open neighborhood $U_x$ 
 U_x\times(-\varepsilon_x,\varepsilon_x)\subseteq W_x.
 \]
 The claimed positivity follows.
+
 :::
 
-<1>2. There is one $\varepsilon>0$ that works simultaneously for every $x\in X$.
-::: {.proof}
-The sets $U_x$ from <1>1 form an open cover of the compact space $X$.
+:::
+
+::: pf-step
+
+There is one $\varepsilon>0$ that works simultaneously for every $x\in X$.
+
+::: pf-proof
+
+The sets $U_x$ from step [](#s1){.pf-ref} form an open cover of the compact space $X$.
 Choose a finite subcover
 \[
 X=U_{x_1}\cup\cdots\cup U_{x_m}.
@@ -78,11 +92,18 @@ Then
 \[
 |t|<\varepsilon\le\varepsilon_{x_j},
 \]
-so <1>1 gives $f(x,t)>0$.
+so step [](#s1){.pf-ref} gives $f(x,t)>0$.
+
 :::
 
-<1>3. Compactness cannot be omitted.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compactness cannot be omitted.
+
+::: pf-proof
+
 Take the noncompact space
 \[
 X=\RR
@@ -110,5 +131,11 @@ x^2t^2>1,
 f(x,t)<0.
 \]
 Thus the conclusion can fail when $X$ is noncompact.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -33,7 +33,12 @@ Is there a function f(z) analytic in C \ {0} such that $\begin{array} { r } { | 
 :::
 
 ::: {.solution}
-<1>1. If such a function $f$ existed, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If such a function $f$ existed, then
 $$
 g(z)\coloneqq\frac1{f(z)}
 $$
@@ -44,7 +49,8 @@ $$
 \sqrt{\abs z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The assumed lower bound is strictly positive for every $z\ne0$, so
 $f(z)\ne0$ throughout the punctured plane. Hence $g=1/f$ is
 holomorphic there. Taking reciprocals in
@@ -54,16 +60,22 @@ $$
 \frac1{\sqrt{\abs z}}
 $$
 gives the displayed upper bound.
+
 :::
 
-<1>2. The singularity of $g$ at $0$ is removable, and its holomorphic
+:::
+
+::: {.pf-step #s2}
+
+The singularity of $g$ at $0$ is removable, and its holomorphic
 extension satisfies
 $$
 g(0)=0.
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 \abs{g(z)}
 \le
@@ -75,9 +87,14 @@ as $z\to0$. In particular, $g$ is bounded on a punctured neighborhood
 of $0$. Riemann's removable singularity theorem therefore extends $g$
 holomorphically across $0$, and the displayed limit forces the
 extension to have value $0$ there.
+
 :::
 
-<1>3. For every fixed $z\in\CC$ and every
+:::
+
+::: {.pf-step #s3}
+
+For every fixed $z\in\CC$ and every
 $$
 R>2\abs z,
 $$
@@ -88,12 +105,13 @@ $$
 \frac4{\sqrt R}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the circle
 $$
 C_R=\{s:\abs s=R\},
 $$
-step <1>1 gives
+step [](#s1){.pf-ref} gives
 $$
 \abs{g(s)}\le\sqrt R.
 $$
@@ -125,23 +143,35 @@ $$
 \frac4{\sqrt R}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The function $g$ is constant on $\CC$.
+:::
 
-::: {.proof}
-Fix $z\in\CC$. The estimate in step <1>3 holds for arbitrarily large
+::: {.pf-step #s4}
+
+The function $g$ is constant on $\CC$.
+
+::: pf-proof
+
+Fix $z\in\CC$. The estimate in step [](#s3){.pf-ref} holds for arbitrarily large
 $R$. Letting $R\to\infty$ gives
 $$
 \abs{g'(z)}=0.
 $$
 Thus $g'(z)=0$ for every $z$, so the entire function $g$ is constant.
+
 :::
 
-<1>5. No function satisfying the hypothesis exists.
+:::
 
-::: {.proof}
-By steps <1>2 and <1>4, the constant function $g$ must satisfy
+::: {.pf-step #s5}
+
+No function satisfying the hypothesis exists.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s4){.pf-ref}, the constant function $g$ must satisfy
 $$
 g(z)=g(0)=0
 $$
@@ -150,21 +180,33 @@ $$
 g(z)=\frac1{f(z)},
 $$
 which can never equal $0$. This contradiction proves nonexistence.
+
 :::
 
-<1>6. Therefore the answer is
+:::
+
+::: {.pf-step #s6}
+
+Therefore the answer is
 $$
 \boxed{\text{no}}.
 $$
 
-::: {.proof}
-Step <1>5 excludes every possible holomorphic function with the stated
+::: pf-proof
+
+Step [](#s5){.pf-ref} excludes every possible holomorphic function with the stated
 lower bound.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

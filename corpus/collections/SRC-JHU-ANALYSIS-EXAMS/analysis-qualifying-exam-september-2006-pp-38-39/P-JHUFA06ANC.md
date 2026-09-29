@@ -36,8 +36,14 @@ b) All harmonic functions $h : \mathbb { C } \setminus [ 0 , + \infty ) \to [ 0 
 ::: {.solution}
 Assertion (a) is true; assertion (b) is false.
 
-<1>1. A holomorphic map from the punctured plane into $H$ is constant.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+A holomorphic map from the punctured plane into $H$ is constant.
+
+::: pf-proof
+
 Given such an $f$, define
 $$
 g(z)=\frac{f(z)-i}{f(z)+i}.
@@ -56,10 +62,17 @@ $$
 f(z)=i\frac{1+c}{1-c}\qquad(z\ne0),
 $$
 where $1-c\ne0$. Hence $f$ is constant, proving (a).
+
 :::
 
-<1>2. A branch of the argument supplies a counterexample to (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+A branch of the argument supplies a counterexample to (b).
+
+::: pf-proof
+
 On $\Omega=\mathbb C\setminus[0,\infty)$ choose
 the logarithm branch
 $$
@@ -77,5 +90,11 @@ is harmonic on $\Omega$ and takes values in $(0,1)\subset[0,1]$.
 It is not constant: $h(i)=1/4$ and $h(-i)=3/4$.
 It meets all the hypotheses of (b) and contradicts its
 conclusion, so (b) is false.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -35,9 +35,14 @@ $$
 R=\CC[x,y].
 $$
 
-<1>1. Every simple $R$-module is one-dimensional over $\CC$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every simple $R$-module is one-dimensional over $\CC$.
+
+::: pf-proof
+
 Because $R$ is commutative, every simple $R$-module is of the form
 $$
 R/\mathfrak m
@@ -57,17 +62,23 @@ R/\mathfrak m
 \CC,
 $$
 so its complex dimension is one.
+
 :::
 
-<1>2. If an $R$-module $M$ is semisimple, then its restrictions to
+:::
+
+::: {.pf-step #s2}
+
+If an $R$-module $M$ is semisimple, then its restrictions to
 $\CC[x]$ and $\CC[y]$ are semisimple.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 M=\bigoplus_{\lambda\in\Lambda} S_\lambda
 $$
-with each $S_\lambda$ a simple $R$-module. By step <1>1, every
+with each $S_\lambda$ a simple $R$-module. By step [](#s1){.pf-ref}, every
 $S_\lambda$ is one-dimensional over $\CC$; on it,
 $$
 x
@@ -90,9 +101,14 @@ semisimple.
 
 The identical argument with $y$ shows that the restriction to $\CC[y]$ is
 semisimple.
+
 :::
 
-<1>3. Assume conversely that $M$ is semisimple as a $\CC[x]$-module. Then
+:::
+
+::: {.pf-step #s3}
+
+Assume conversely that $M$ is semisimple as a $\CC[x]$-module. Then
 $$
 \boxed{
 M
@@ -105,7 +121,8 @@ M_a
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every simple $\CC[x]$-module is
 $$
 \CC[x]/(x-a)
@@ -120,11 +137,17 @@ M_a=\{m:xm=am\}.
 $$
 Summands with different eigenvalues have zero intersection, so the resulting
 sum over $a$ is direct.
+
 :::
 
-<1>4. Every $M_a$ is a $\CC[y]$-submodule of $M$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every $M_a$ is a $\CC[y]$-submodule of $M$.
+
+::: pf-proof
+
 Let
 $$
 m\in M_a.
@@ -145,29 +168,41 @@ ym\in M_a.
 $$
 The space $M_a$ is already a complex vector subspace, so it is stable under
 all polynomials in $y$. Hence it is a $\CC[y]$-submodule.
+
 :::
 
-<1>5. If the restriction of $M$ to $\CC[y]$ is semisimple, then every
+:::
+
+::: {.pf-step #s5}
+
+If the restriction of $M$ to $\CC[y]$ is semisimple, then every
 $M_a$ is a semisimple $\CC[y]$-module.
 
-::: {.proof}
+::: pf-proof
+
 A module is semisimple if and only if every submodule is a direct summand.
 Hence every submodule of a semisimple module is semisimple: a submodule $N$ of
 a submodule $L\subseteq M$ has a complement $C$ in $M$, and $L=N\oplus(C\cap L)$.
 
-By step <1>4,
+By step [](#s4){.pf-ref},
 $$
 M_a\subseteq M
 $$
 is a $\CC[y]$-submodule. Since the restriction of $M$ to $\CC[y]$ is
 semisimple by hypothesis, it follows that $M_a$ is semisimple over
 $\CC[y]$.
+
 :::
 
-<1>6. Each $M_a$ is a direct sum of one-dimensional $R$-submodules.
+:::
 
-::: {.proof}
-By step <1>5, decompose
+::: {.pf-step #s6}
+
+Each $M_a$ is a direct sum of one-dimensional $R$-submodules.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, decompose
 $$
 M_a
 =
@@ -195,17 +230,23 @@ p(x,y)
 p(a,b_\mu).
 $$
 Thus $L_\mu$ is a one-dimensional simple $R$-module.
+
 :::
 
-<1>7. If the restrictions of $M$ to both $\CC[x]$ and $\CC[y]$ are
+:::
+
+::: {.pf-step #s7}
+
+If the restrictions of $M$ to both $\CC[x]$ and $\CC[y]$ are
 semisimple, then $M$ is semisimple as an $R$-module.
 
-::: {.proof}
-Step <1>3 gives
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives
 $$
 M=\bigoplus_{a\in\CC}M_a.
 $$
-Step <1>6 decomposes each $M_a$ as a direct sum of simple $R$-modules.
+Step [](#s6){.pf-ref} decomposes each $M_a$ as a direct sum of simple $R$-modules.
 Substituting these decompositions gives
 $$
 M
@@ -215,9 +256,14 @@ M
 L_\mu,
 $$
 a direct sum of simple $R$-modules. Hence $M$ is semisimple.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: {.pf-step #s8}
+
+Therefore
 $$
 \boxed{
 M\text{ is semisimple over }\CC[x,y]
@@ -226,13 +272,20 @@ M|_{\CC[x]}\text{ and }M|_{\CC[y]}\text{ are semisimple}.
 }
 $$
 
-::: {.proof}
-Step <1>2 proves the forward implication. Step <1>7 proves the converse.
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves the forward implication. Step [](#s7){.pf-ref} proves the converse.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 proves that the statement in the problem is true.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} proves that the statement in the problem is true.
+
+:::
+
+:::
+
 :::

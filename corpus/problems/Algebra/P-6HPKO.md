@@ -31,8 +31,14 @@ Write $Z=Z(G)$ and suppose
 G/Z=\langle gZ\rangle.
 \]
 
-<1>1. Every element of $G$ can be written as $g^m z$ for some $m\in\ZZ$ and $z\in Z$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every element of $G$ can be written as $g^m z$ for some $m\in\ZZ$ and $z\in Z$.
+
+::: pf-proof
+
 If $x\in G$, then its coset lies in the cyclic quotient, so
 \[
 xZ=(gZ)^m=g^mZ
@@ -42,25 +48,45 @@ for some $m$. Hence
 g^{-m}x\in Z,
 \]
 so $x=g^m z$ for some $z\in Z$.
+
 :::
 
-<1>2. Any two elements of $G$ commute.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Any two elements of $G$ commute.
+
+::: pf-proof
+
 Take
 \[
 x=g^m z_1,
 \qquad
 y=g^n z_2
 \]
-with $z_1,z_2\in Z$ by <1>1. Since the $z_i$ are central,
+with $z_1,z_2\in Z$ by step [](#s1){.pf-ref}. Since the $z_i$ are central,
 \[
 xy=g^m z_1g^n z_2=g^{m+n}z_1z_2
 =g^{m+n}z_2z_1=g^n z_2g^m z_1=yx.
 \]
+
 :::
 
-<1>3. Therefore $G$ is abelian.
-::: {.proof}
-By <1>2, every pair of elements of $G$ commutes.
 :::
+
+::: pf-step
+
+Therefore $G$ is abelian.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, every pair of elements of $G$ commutes.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -71,8 +71,14 @@ A subset $I\subseteq R$ is a two-sided ideal precisely when the following three 
 
 3. For every $x\in I$ and $r\in R$, one has both $rx\in I$ and $xr\in I$.
 
-<1>1. Conditions 1 and 2 give exactly the required additive structure.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Conditions 1 and 2 give exactly the required additive structure.
+
+::: pf-proof
+
 Choose $a\in I$, possible by condition 1. Then condition 2 gives
 \[
 0=a-a\in I.
@@ -90,10 +96,17 @@ Conversely, any subset with those additive properties is nonempty and is closed 
 \[
 x-y=x+(-y).
 \]
+
 :::
 
-<1>2. Condition 3 is exactly two-sided absorption by ring elements.
-::: {.proof}
+:::
+
+::: pf-step
+
+Condition 3 is exactly two-sided absorption by ring elements.
+
+::: pf-proof
+
 The definition of a two-sided ideal requires that multiplying an element of $I$ by an arbitrary element of $R$ on either side remains in $I$.
 Condition 3 states precisely
 \[
@@ -102,6 +115,11 @@ rI\subseteq I
 Ir\subseteq I
 \]
 for every $r\in R$.
+
+:::
+
+:::
+
 :::
 
 Hence the three displayed conditions are a complete definition of a two-sided ideal and use no further technical term that needs expansion.

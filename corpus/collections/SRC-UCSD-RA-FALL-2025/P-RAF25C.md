@@ -40,8 +40,15 @@ where $W := \{\varphi \in L^1(\Omega) : \varphi f \in L^1(\Omega), \varphi \geq 
 :::
 
 ::: {.solution}
-<1>1. Prove $X\subseteq Y$ for arbitrary measurable $f$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove $X\subseteq Y$ for arbitrary measurable $f$.
+
+::: pf-proof
+
 Let $u\in X$ and let $\varphi\in W$. Then
 \[
 u-f\ge0
@@ -59,10 +66,17 @@ Hence $u\in Y$, so
 \[
 X\subseteq Y.
 \]
+
 :::
 
-<1>2. If $f\in L^\infty$, prove $Y\subseteq X$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $f\in L^\infty$, prove $Y\subseteq X$.
+
+::: pf-proof
+
 Assume $f\in L^\infty$ and let $u\in Y$. Suppose $u\notin X$. Then
 \[
 A:=\{x:u(x)<f(x)\}
@@ -94,10 +108,17 @@ contradicting $u\in Y$. Thus $u\in X$, and therefore
 X=Y
 \]
 when $f\in L^\infty$.
+
 :::
 
-<1>3. Prove $Y\subseteq X$ for arbitrary measurable $f$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove $Y\subseteq X$ for arbitrary measurable $f$.
+
+::: pf-proof
+
 Let $u\in Y$ and suppose again that
 \[
 A:=\{u<f\}
@@ -131,10 +152,17 @@ contradicting $u\in Y$. Thus $u\ge f$ almost everywhere, so
 \boxed{X=Y}
 \]
 for arbitrary measurable $f$.
+
 :::
 
-<1>4. Prove weak* sequential closedness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove weak* sequential closedness.
+
+::: pf-proof
+
 Let $(u_j)\subset X$ and suppose
 \[
 u_j\overset{*}{\rightharpoonup}u
@@ -158,5 +186,11 @@ Passing to the limit yields
 \ge \int_\Omega f\varphi\,dx.
 \]
 Since this holds for every $\varphi\in W$, we have $u\in Y=X$. Hence $X$ is sequentially weak* closed.
+
 :::
+
+:::
+
+:::
+
 :::

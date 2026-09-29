@@ -40,8 +40,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. (1) There are $N\in\mathbb N$ and $C>0$ with $|\langle F,\varphi\rangle|\le C\sum_{|\alpha|\le N}\sup_x|\partial^\alpha\varphi(x)|$ for every $\varphi\in C_c^\infty$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+(1) There are $N\in\mathbb N$ and $C>0$ with $|\langle F,\varphi\rangle|\le C\sum_{|\alpha|\le N}\sup_x|\partial^\alpha\varphi(x)|$ for every $\varphi\in C_c^\infty$.
+
+::: pf-proof
+
 Choose $\chi\in C_c^\infty(\mathbb R^n)$ with $\chi=1$ on a neighborhood of $0$, and let $K=\operatorname{supp}\chi$. Since
 \[
 \operatorname{supp}F=\{0\},
@@ -71,10 +78,17 @@ Applying this to $\psi=\chi\varphi$ and using Leibniz's rule gives, after absorb
 \le C\sum_{|\alpha|\le N}
 \sup_x|\partial^\alpha\varphi(x)|.}
 \]
+
 :::
 
-<1>2. (2) If $\partial^\alpha\varphi(0)=0$ for all $|\alpha|\le N$, then $\langle F,\varphi\rangle=0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+(2) If $\partial^\alpha\varphi(0)=0$ for all $|\alpha|\le N$, then $\langle F,\varphi\rangle=0$.
+
+::: pf-proof
+
 Suppose
 \[
 \partial^\alpha\varphi(0)=0
@@ -107,7 +121,7 @@ Therefore Leibniz's rule gives, for every $|\alpha|\le N$,
 \le C_\alpha\varepsilon^{N+1-|\alpha|}
 \le C_\alpha\varepsilon.
 \]
-Using the estimate of step <1>1,
+Using the estimate of step [](#s1){.pf-ref},
 \[
 |\langle F,\varphi\rangle|
 =|\langle F,\eta_\varepsilon\varphi\rangle|
@@ -117,10 +131,17 @@ Letting $\varepsilon\downarrow0$ yields
 \[
 \boxed{\langle F,\varphi\rangle=0.}
 \]
+
 :::
 
-<1>3. (3) There are constants $c_\alpha$ with $F=\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta$.
-::: {.proof}
+:::
+
+::: pf-step
+
+(3) There are constants $c_\alpha$ with $F=\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta$.
+
+::: pf-proof
+
 Choose $\rho\in C_c^\infty(\mathbb R^n)$ with $\rho=1$ near $0$. For $|\alpha|\le N$, set
 \[
 a_\alpha
@@ -136,7 +157,7 @@ be its Taylor polynomial of degree $N$ at $0$. The function
 \[
 \varphi-\rho P_N\varphi
 \]
-has all derivatives of order at most $N$ equal to zero at $0$. By step <1>2,
+has all derivatives of order at most $N$ equal to zero at $0$. By step [](#s2){.pf-ref},
 \[
 \langle F,\varphi\rangle
 =\langle F,\rho P_N\varphi\rangle
@@ -165,5 +186,11 @@ Hence
 \[
 \boxed{F=\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

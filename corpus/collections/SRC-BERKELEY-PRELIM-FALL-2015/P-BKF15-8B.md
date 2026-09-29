@@ -40,7 +40,11 @@ $$
 and let $I$ be a nonzero two-sided ideal of $A$. For
 $1\le i,j\le n$, let $E_{ij}$ denote the standard matrix unit.
 
-<1>1. There is a matrix
+::: pf
+
+::: pf-step
+
+There is a matrix
 $$
 M=(m_{ab})\in I
 $$
@@ -49,20 +53,27 @@ $$
 m_{ab}\ne0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $I\ne0$, choose a nonzero matrix $M\in I$. A matrix is zero
 exactly when all of its entries are zero, so some entry $m_{ab}$ is
 nonzero.
+
 :::
 
-<1>2. For every $1\le i,j\le n$,
+:::
+
+::: {.pf-step #s2}
+
+For every $1\le i,j\le n$,
 $$
 E_{ia}ME_{bj}
 =
 m_{ab}E_{ij}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Left multiplication by $E_{ia}$ keeps only row $a$ of $M$ and moves it
 to row $i$. Right multiplication by $E_{bj}$ then keeps only column
 $b$ of that result and moves it to column $j$. The only remaining
@@ -88,12 +99,18 @@ E_{ia}ME_{bj}
 m_{ab}E_{ij}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Every matrix unit $E_{ij}$ belongs to $I$.
+:::
 
-::: {.proof}
-Since $I$ is a two-sided ideal and $M\in I$, step <1>2 gives
+::: {.pf-step #s3}
+
+Every matrix unit $E_{ij}$ belongs to $I$.
+
+::: pf-proof
+
+Since $I$ is a two-sided ideal and $M\in I$, step [](#s2){.pf-ref} gives
 $$
 m_{ab}E_{ij}\in I
 $$
@@ -106,36 +123,54 @@ therefore gives
 $$
 E_{ij}\in I.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 I=A.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every matrix $X=(x_{ij})\in A$ has the expansion
 $$
 X=\sum_{i,j}x_{ij}E_{ij}.
 $$
-By step <1>3 every $E_{ij}$ belongs to $I$, and an ideal is closed
+By step [](#s3){.pf-ref} every $E_{ij}$ belongs to $I$, and an ideal is closed
 under multiplication by scalar matrices and under addition. Hence
 every $X\in A$ lies in $I$.
+
 :::
 
-<1>5. Consequently the only two-sided ideals of $A$ are
+:::
+
+::: {.pf-step #s5}
+
+Consequently the only two-sided ideals of $A$ are
 $$
 \boxed{0\ \text{and}\ A}.
 $$
 
-::: {.proof}
-The zero ideal is a two-sided ideal. Step <1>4 shows that every
+::: pf-proof
+
+The zero ideal is a two-sided ideal. Step [](#s4){.pf-ref} shows that every
 nonzero two-sided ideal equals $A$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required classification.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required classification.
+
+:::
+
+:::
+
 :::

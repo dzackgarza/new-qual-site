@@ -56,8 +56,14 @@ Since $H$ is Hall in $G$,
 \gcd(|H|,d)=1.
 \]
 
-<1>1. The index $[N:H\cap N]$ divides $d$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The index $[N:H\cap N]$ divides $d$.
+
+::: pf-proof
+
 Because $N\normal G$, the product $HN$ is a subgroup of $G$.
 For finite subgroups,
 \[
@@ -78,15 +84,22 @@ Hence
 \[
 [N:H\cap N]=[HN:H]\mid d.
 \]
+
 :::
 
-<1>2. The subgroup $H\cap N$ is a Hall subgroup of $N$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The subgroup $H\cap N$ is a Hall subgroup of $N$.
+
+::: pf-proof
+
 Since $H\cap N\le H$, Lagrange's theorem gives
 \[
 |H\cap N|\mid |H|.
 \]
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 [N:H\cap N]\mid d.
 \]
@@ -96,10 +109,17 @@ Since $\gcd(|H|,d)=1$,
 \gcd(|H\cap N|,[N:H\cap N])=1.
 \]
 Thus $H\cap N$ is Hall in $N$.
+
 :::
 
-<1>3. The order of $HN/N$ divides $|H|$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The order of $HN/N$ divides $|H|$.
+
+::: pf-proof
+
 The second isomorphism theorem gives the valid quotient isomorphism
 \[
 HN/N\cong H/(H\cap N).
@@ -109,15 +129,22 @@ Hence
 |HN/N|=[H:H\cap N]=\frac{|H|}{|H\cap N|},
 \]
 which divides $|H|$.
+
 :::
 
-<1>4. The index $[G/N:HN/N]$ divides $d$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The index $[G/N:HN/N]$ divides $d$.
+
+::: pf-proof
+
 The correspondence of cosets under the quotient by $N$ gives
 \[
 [G/N:HN/N]=[G:HN].
 \]
-From the index tower used in <1>1,
+From the index tower used in step [](#s1){.pf-ref},
 \[
 d=[G:HN][HN:H],
 \]
@@ -126,15 +153,28 @@ Therefore
 \[
 [G/N:HN/N]\mid d.
 \]
+
 :::
 
-<1>5. The subgroup $HN/N$ is a Hall subgroup of $G/N$.
-::: {.proof}
-By <1>3, $|HN/N|$ divides $|H|$, and by <1>4 its index in $G/N$ divides $d$.
+:::
+
+::: pf-step
+
+The subgroup $HN/N$ is a Hall subgroup of $G/N$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $|HN/N|$ divides $|H|$, and by step [](#s4){.pf-ref} its index in $G/N$ divides $d$.
 Since $\gcd(|H|,d)=1$, these two divisors are coprime:
 \[
 \gcd\bigl(|HN/N|,[G/N:HN/N]\bigr)=1.
 \]
 Thus $HN/N$ is Hall in $G/N$.
+
 :::
+
+:::
+
+:::
+
 :::

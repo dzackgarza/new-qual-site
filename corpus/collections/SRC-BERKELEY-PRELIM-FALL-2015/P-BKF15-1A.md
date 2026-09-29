@@ -46,13 +46,18 @@ $$
 t\coloneqq\left(\frac{2x}{1+x^2}\right)^2.
 $$
 
-<1>1. For every real $x$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every real $x$,
 $$
 0\le t\le1,
 $$
 with $t=1$ if and only if $x=\pm1$.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 (1+x^2)^2-4x^2=(1-x^2)^2\ge0,
@@ -63,9 +68,14 @@ $$
 $$
 Equality holds exactly when $(1-x^2)^2=0$, namely when $x=\pm1$.
 Squaring gives the claim.
+
 :::
 
-<1>2. For $\abs{t}<1$,
+:::
+
+::: {.pf-step #s2}
+
+For $\abs{t}<1$,
 $$
 \sum_{n=0}^{\infty}
 \frac{(1/2)(3/2)\cdots((2n-1)/2)}{n!}t^n
@@ -73,7 +83,8 @@ $$
 (1-t)^{-1/2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The generalized binomial theorem gives
 $$
 (1-t)^{-1/2}
@@ -91,12 +102,18 @@ $$
 $$
 for $n\ge1$ and $(1/2)_0=1$. These are exactly the coefficients in
 the given series.
+
 :::
 
-<1>3. The series diverges when $x=\pm1$.
+:::
 
-::: {.proof}
-By step <1>1, these are precisely the cases $t=1$. Let
+::: {.pf-step #s3}
+
+The series diverges when $x=\pm1$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, these are precisely the cases $t=1$. Let
 $$
 a_n\coloneqq
 \frac{(1/2)(3/2)\cdots((2n-1)/2)}{n!}.
@@ -123,25 +140,37 @@ a_n\ge\frac1{2n+1}.
 $$
 Thus $\sum_{n\ge0}a_n$ diverges by comparison with the harmonic
 series.
+
 :::
 
-<1>4. The given series converges exactly for
+:::
+
+::: {.pf-step #s4}
+
+The given series converges exactly for
 $$
 \boxed{x\in\RR\setminus\{-1,1\}}.
 $$
 
-::: {.proof}
-If $x\ne\pm1$, step <1>1 gives $0\le t<1$, so convergence follows from
-step <1>2. Step <1>3 excludes the two remaining real values.
+::: pf-proof
+
+If $x\ne\pm1$, step [](#s1){.pf-ref} gives $0\le t<1$, so convergence follows from
+step [](#s2){.pf-ref}. Step [](#s3){.pf-ref} excludes the two remaining real values.
+
 :::
 
-<1>5. For every $x\ne\pm1$, the sum is
+:::
+
+::: {.pf-step #s5}
+
+For every $x\ne\pm1$, the sum is
 $$
 \boxed{\frac{1+x^2}{\abs{1-x^2}}}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 (1-t)^{-1/2}
@@ -160,12 +189,18 @@ $$
 The square root is the nonnegative real square root, so the sum is
 $(1+x^2)/(1-x^2)$ for $\abs{x}<1$ and $(1+x^2)/(x^2-1)$ for
 $\abs{x}>1$; the sum is not given by one rational function of $x$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4 and <1>5 give the complete convergence set and the sum on
+::: pf-qed
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the complete convergence set and the sum on
 that set.
+
 :::
+
+:::
+
 :::

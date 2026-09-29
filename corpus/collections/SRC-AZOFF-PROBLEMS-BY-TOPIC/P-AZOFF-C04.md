@@ -45,9 +45,14 @@ $$
 M(z)=\frac{z}{2i-z}.
 $$
 
-<1>1. The map $M$ sends $D$ into $Q_3$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $M$ sends $D$ into $Q_3$.
+
+::: pf-proof
+
 Write
 $$
 z=x+iy\in D
@@ -73,9 +78,14 @@ $$
 0
 $$
 because $x>0$. Hence $M(z)\in Q_3$.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 M:D\longrightarrow Q_3
 $$
@@ -84,7 +94,8 @@ $$
 M^{-1}(w)=\frac{2iw}{1+w}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Solving
 $$
 w=\frac{z}{2i-z}
@@ -136,9 +147,14 @@ $$
 M'(z)=\frac{2i}{(2i-z)^2}\neq0
 $$
 on $D$, so $M$ is conformal.
+
 :::
 
-<1>3. The squaring map
+:::
+
+::: {.pf-step #s3}
+
+The squaring map
 $$
 S:Q_3\longrightarrow\mathcal H,
 \qquad
@@ -150,7 +166,8 @@ $$
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 w=u+iv\in Q_3,
@@ -183,9 +200,14 @@ $$
 S'(w)=2w\neq0
 $$
 on $Q_3$, the map is conformal.
+
 :::
 
-<1>4. A conformal bijection from $D$ onto the upper half-plane is
+:::
+
+::: {.pf-step #s4}
+
+A conformal bijection from $D$ onto the upper half-plane is
 $$
 \boxed{
 F(z)
@@ -194,8 +216,9 @@ F(z)
 }.
 $$
 
-::: {.proof}
-By steps <1>2--<1>3,
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 F=S\circ M
 $$
@@ -204,11 +227,17 @@ $$
 D\xrightarrow{M}Q_3\xrightarrow{S}\mathcal H.
 $$
 Therefore $F$ is a conformal bijection from $D$ onto $\mathcal H$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested map.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested map.
+
+:::
+
+:::
+
 :::

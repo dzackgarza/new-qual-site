@@ -35,8 +35,14 @@ $$
 ::: {.solution}
 The value is $\boxed{\frac\pi3(e^{-1}-e^{-2})}$.
 
-<1>1. A complex exponential produces the required sine integral as its imaginary part.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A complex exponential produces the required sine integral as its imaginary part.
+
+::: pf-proof
+
 Set $F(z)=ze^{iz}/((z^2+1)(z^2+4))$. For real $x$,
 the imaginary part of $F(x)$ is the integrand in the
 question. The complex integral is absolutely convergent:
@@ -44,10 +50,17 @@ $|F(x)|$ is bounded for $|x|\leq1$, and for $|x|\geq1$
 it is at most $|x|^{-3}$. Thus imaginary parts commute
 with this integral, and the same assertion holds for
 limits of its truncated integrals.
+
 :::
 
-<1>2. The upper-half-plane residues determine the complex integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+The upper-half-plane residues determine the complex integral.
+
+::: pf-proof
+
 The only poles in the upper half-plane are the simple
 poles $i$ and $2i$. Factoring the corresponding quadratic
 terms gives
@@ -73,7 +86,13 @@ $$
 $$
 Letting $R\to\infty$ and taking imaginary parts now
 gives the displayed real value. Absolute convergence
-from step <1>1 ensures an ordinary integral, not just
+from step [](#s1){.pf-ref} ensures an ordinary integral, not just
 a principal value.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -55,26 +55,39 @@ be the projection.  For $s\in\mcf(U)$ write
 P\longmapsto s_P.
 \]
 
-<1>1. A subset $W\subseteq E$ is open in the specified topology if and only if
+::: pf
+
+::: {.pf-step #s1}
+
+A subset $W\subseteq E$ is open in the specified topology if and only if
 \[
 \bar t^{-1}(W)
 \]
 is open for every open $V\subseteq X$ and every $t\in\mcf(V)$.
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of the strongest, or final, topology on $E$ for which every map
 \[
 \bar t:V\to E
 \]
 is continuous.
+
 :::
 
-<1>2. For every $s\in\mcf(U)$, the image
+:::
+
+::: {.pf-step #s2}
+
+For every $s\in\mcf(U)$, the image
 \[
 \bar s(U)\subseteq E
 \]
 is open.
-::: {.proof}
-By <1>1, it is enough to show that for every $t\in\mcf(V)$ the subset
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, it is enough to show that for every $t\in\mcf(V)$ the subset
 \[
 \bar t^{-1}(\bar s(U))
 \]
@@ -105,9 +118,14 @@ so
 W_P\subseteq\bar t^{-1}(\bar s(U)).
 \]
 Thus every point of the inverse image has an open neighborhood contained in it, proving that the inverse image is open.
+
 :::
 
-<1>3. The projection
+:::
+
+::: pf-step
+
+The projection
 \[
 \pi:E\longrightarrow X
 \]
@@ -116,26 +134,33 @@ is continuous, and for every $s\in\mcf(U)$ the map
 \bar s:U\longrightarrow\bar s(U)
 \]
 is a homeomorphism with inverse $\pi|_{\bar s(U)}$.
-::: {.proof}
+
+::: pf-proof
+
 Let $U\subseteq X$ be open.  For every $t\in\mcf(V)$,
 \[
 \bar t^{-1}(\pi^{-1}(U))
 =V\cap U,
 \]
-which is open.  By <1>1, $\pi^{-1}(U)$ is open, so $\pi$ is continuous.
+which is open.  By step [](#s1){.pf-ref}, $\pi^{-1}(U)$ is open, so $\pi$ is continuous.
 
 By construction,
 \[
 \pi\circ\bar s=\operatorname{id}_U.
 \]
-The map $\bar s$ is injective because its values lie in different fibres of $\pi$ at different points.  Its image is open by <1>2.  Hence
+The map $\bar s$ is injective because its values lie in different fibres of $\pi$ at different points.  Its image is open by step [](#s2){.pf-ref}.  Hence
 \[
 \bar s:U\to\bar s(U)
 \]
 is a continuous bijection whose inverse is the continuous restriction of $\pi$.  It is therefore a homeomorphism.
+
 :::
 
-<1>4. Let $\sigma:U\to E$ satisfy
+:::
+
+::: {.pf-step #s4}
+
+Let $\sigma:U\to E$ satisfy
 \[
 \pi\circ\sigma=\operatorname{id}_U.
 \]
@@ -145,7 +170,9 @@ W\subseteq V
 \qquad\text{and}\qquad
 \sigma|_W=\bar s|_W.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Fix $P\in U$.  The point
 \[
 \sigma(P)\in E_P=\mcf_P
@@ -159,7 +186,7 @@ representing that germ.  Thus
 \sigma(P)=s_P\in\bar s(V).
 \]
 
-By <1>2, $\bar s(V)$ is an open neighborhood of $\sigma(P)$ in $E$.  Since $\sigma$ is continuous,
+By step [](#s2){.pf-ref}, $\bar s(V)$ is an open neighborhood of $\sigma(P)$ in $E$.  Since $\sigma$ is continuous,
 \[
 W:=\sigma^{-1}(\bar s(V))
 \]
@@ -177,10 +204,17 @@ In particular $Q\in V$, so $W\subseteq V$, and
 \[
 \sigma|_W=\bar s|_W.
 \]
+
 :::
 
-<1>5. Conversely, any section $\sigma:U\to E$ which is locally of the form $\bar s$ for sections of the presheaf $\mcf$ is continuous.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Conversely, any section $\sigma:U\to E$ which is locally of the form $\bar s$ for sections of the presheaf $\mcf$ is continuous.
+
+::: pf-proof
+
 Suppose $U$ has an open cover $\{U_\alpha\}$ such that
 \[
 \sigma|_{U_\alpha}=\bar s_\alpha|_{U_\alpha}
@@ -198,9 +232,14 @@ Continuity is local on the source: for any open $W\subseteq E$,
 (\sigma|_{U_\alpha})^{-1}(W),
 \]
 which is open in $U$.  Thus $\sigma$ is continuous.
+
 :::
 
-<1>6. Therefore the continuous sections of $\pi$ over $U$ are exactly the functions
+:::
+
+::: {.pf-step #s6}
+
+Therefore the continuous sections of $\pi$ over $U$ are exactly the functions
 \[
 \sigma:U\longrightarrow\coprod_{P\in U}\mcf_P
 \]
@@ -209,17 +248,26 @@ such that
 \sigma(P)\in\mcf_P
 \]
 and $\sigma$ is locally represented by a section of the presheaf $\mcf$.
-::: {.proof}
-The forward implication is <1>4, and the reverse implication is <1>5.
+
+::: pf-proof
+
+The forward implication is step [](#s4){.pf-ref}, and the reverse implication is step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. The assignment
+:::
+
+::: pf-step
+
+The assignment
 \[
 U\longmapsto
 \{\text{continuous sections }U\to E\text{ of }\pi\}
 \]
 is a sheaf.
-::: {.proof}
+
+::: pf-proof
+
 Uniqueness is pointwise: two sections agreeing on an open cover have the same value at every point.
 
 For gluing, let continuous sections
@@ -234,10 +282,15 @@ for any $\alpha$ with $P\in U_\alpha$.  Agreement on overlaps makes this well-de
 \[
 \pi\circ\sigma=\operatorname{id}.
 \]
-The restriction of $\sigma$ to each $U_\alpha$ is the continuous map $\sigma_\alpha$, so <1>5's locality argument shows that $\sigma$ is continuous.
+The restriction of $\sigma$ to each $U_\alpha$ is the continuous map $\sigma_\alpha$, so step [](#s5){.pf-ref}'s locality argument shows that $\sigma$ is continuous.
+
 :::
 
-<1>8. The canonical map
+:::
+
+::: {.pf-step #s8}
+
+The canonical map
 \[
 \mcf(U)\longrightarrow
 \{\text{continuous sections of }E\text{ over }U\},
@@ -245,8 +298,10 @@ The restriction of $\sigma$ to each $U_\alpha$ is the continuous map $\sigma_\al
 s\longmapsto\bar s,
 \]
 is the sheafification map, and the target is naturally $\mcf^+(U)$.
-::: {.proof}
-By <1>6, the target consists exactly of locally representable choices of germs.  This is the standard germ description of the associated sheaf.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, the target consists exactly of locally representable choices of germs.  This is the standard germ description of the associated sheaf.
 
 For completeness, it has the sheafification universal property.  Let
 \[
@@ -268,9 +323,14 @@ On an overlap, the germs of $s_\alpha$ and $s_\beta$ agree at every point.  Henc
 agree locally; since $\mcg$ is a sheaf, they agree on the whole overlap.  They therefore glue uniquely to a section of $\mcg(U)$.
 
 This construction gives a unique sheaf morphism from the continuous-section sheaf to $\mcg$ extending $\phi$.  Thus the continuous-section sheaf satisfies the universal property of $\mcf^+$ and is canonically isomorphic to it.
+
 :::
 
-<1>9. Hence
+:::
+
+::: {.pf-step #s9}
+
+Hence
 \[
 \boxed{
 \mcf^+(U)
@@ -281,24 +341,40 @@ This construction gives a unique sheaf morphism from the continuous-section shea
 \ \sigma\text{ continuous}\}.
 }
 \]
-::: {.proof}
-This is the identification established in <1>8.
+
+::: pf-proof
+
+This is the identification established in step [](#s8){.pf-ref}.
+
 :::
 
-<1>10. In particular, $\mcf$ is already a sheaf if and only if every continuous section of the espace étalé over every open $U$ is of the form $\bar s$ for a unique
+:::
+
+::: {.pf-step #s10}
+
+In particular, $\mcf$ is already a sheaf if and only if every continuous section of the espace étalé over every open $U$ is of the form $\bar s$ for a unique
 \[
 s\in\mcf(U).
 \]
-::: {.proof}
-A presheaf is a sheaf exactly when its canonical map to its sheafification is an isomorphism.  Under <1>9, this canonical map is
+
+::: pf-proof
+
+A presheaf is a sheaf exactly when its canonical map to its sheafification is an isomorphism.  Under step [](#s9){.pf-ref}, this canonical map is
 \[
 s\longmapsto\bar s.
 \]
 Therefore it is an isomorphism on every open set exactly under the stated condition.
+
 :::
 
-<1>11. Q.E.D.
-::: {.proof}
-Steps <1>4--<1>6 identify continuity with local representability by germs, <1>8--<1>9 identify those sections with the associated sheaf, and <1>10 gives the final characterization of when $\mcf$ was already a sheaf.
 :::
+
+::: pf-qed
+
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} identify continuity with local representability by germs, steps [](#s8){.pf-ref} and [](#s9){.pf-ref} identify those sections with the associated sheaf, and step [](#s10){.pf-ref} gives the final characterization of when $\mcf$ was already a sheaf.
+
+:::
+
+:::
+
 :::

@@ -47,8 +47,14 @@ $$
 \psi=\frac{1-\sqrt5}{2}.
 $$
 
-<1>1. Write an explicit formula for $f_n$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Write an explicit formula for $f_n$.
+
+::: pf-proof
+
 The sequence
 $$
 f_n=\frac{\phi^{n+1}-\psi^{n+1}}{\sqrt5}
@@ -64,10 +70,17 @@ f_2=\frac{\phi^3-\psi^3}{\sqrt5}=2.
 $$
 By uniqueness for a second-order recurrence with prescribed first two terms,
 this is the given sequence.
+
 :::
 
-<1>2. Compute the ratio limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the ratio limit.
+
+::: pf-proof
+
 Since
 $$
 |\psi|<1<\phi,
@@ -92,5 +105,11 @@ Hence the limit exists and equals
 $$
 \boxed{\frac{1+\sqrt5}{2}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

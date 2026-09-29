@@ -42,14 +42,19 @@ F(z)
 \frac{z^n}{1-2z\cos\theta+z^2}.
 $$
 
-<1>1. The denominator factors as
+::: pf
+
+::: {.pf-step #s1}
+
+The denominator factors as
 $$
 1-2z\cos\theta+z^2
 =
 (z-e^{i\theta})(z-e^{-i\theta}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 e^{i\theta}+e^{-i\theta}=2\cos\theta
@@ -62,9 +67,14 @@ expanding the right-hand side gives
 $$
 z^2-2z\cos\theta+1.
 $$
+
 :::
 
-<1>2. The only poles of $F$ are the distinct simple poles
+:::
+
+::: {.pf-step #s2}
+
+The only poles of $F$ are the distinct simple poles
 $$
 e^{i\theta}
 \qquad\text{and}\qquad
@@ -72,20 +82,27 @@ e^{-i\theta},
 $$
 and both lie inside the contour $\abs{z}=2$.
 
-::: {.proof}
-By step <1>1 these are the only zeros of the denominator. They are distinct
+::: pf-proof
+
+By step [](#s1){.pf-ref} these are the only zeros of the denominator. They are distinct
 because $0<\theta<\pi$, and both have modulus $1<2$.
+
 :::
 
-<1>3. The residue at $z=e^{i\theta}$ is
+:::
+
+::: {.pf-step #s3}
+
+The residue at $z=e^{i\theta}$ is
 $$
 \Res(F;e^{i\theta})
 =
 \frac{e^{in\theta}}{2i\sin\theta}.
 $$
 
-::: {.proof}
-Using the factorization in step <1>1,
+::: pf-proof
+
+Using the factorization in step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \Res(F;e^{i\theta})
@@ -96,17 +113,23 @@ $$
 \frac{e^{in\theta}}{2i\sin\theta}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The residue at $z=e^{-i\theta}$ is
+:::
+
+::: {.pf-step #s4}
+
+The residue at $z=e^{-i\theta}$ is
 $$
 \Res(F;e^{-i\theta})
 =
 -\frac{e^{-in\theta}}{2i\sin\theta}.
 $$
 
-::: {.proof}
-Again by step <1>1,
+::: pf-proof
+
+Again by step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \Res(F;e^{-i\theta})
@@ -117,15 +140,21 @@ $$
 -\frac{e^{-in\theta}}{2i\sin\theta}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The sum of the residues inside $\abs{z}=2$ is
+:::
+
+::: {.pf-step #s5}
+
+The sum of the residues inside $\abs{z}=2$ is
 $$
 \frac{\sin(n\theta)}{\sin\theta}.
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4,
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 \begin{aligned}
 \Res(F;e^{i\theta})
@@ -137,9 +166,14 @@ $$
 \frac{\sin(n\theta)}{\sin\theta}.
 \end{aligned}
 $$
+
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #s6}
+
+One has
 $$
 \boxed{
 \frac1{2\pi i}
@@ -152,9 +186,10 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>2, the contour encloses exactly the two poles treated in
-steps <1>3 and <1>4. The residue theorem and step <1>5 give
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the contour encloses exactly the two poles treated in
+steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. The residue theorem and step [](#s5){.pf-ref} give
 $$
 \int_{\abs{z}=2}F(z)\,dz
 =
@@ -162,11 +197,17 @@ $$
 \frac{\sin(n\theta)}{\sin\theta}.
 $$
 Divide by $2\pi i$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required identity.
+
+:::
+
+:::
+
 :::

@@ -39,8 +39,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Finite-measure sets.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Finite-measure sets.
+
+::: pf-proof
+
 By the [[PR-JCZKL|Plancherel theorem]],
 $$
 \norm{\widehat f_j-\widehat f}_2=\norm{f_j-f}_2\longrightarrow0.
@@ -51,10 +58,17 @@ $$
 \le \abs{\Omega}^{1/2}\,\norm{\widehat f_j-\widehat f}_2\longrightarrow0.
 $$
 This proves part (a).
+
 :::
 
-<1>2. Infinite-measure sets: the conclusion can fail.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Infinite-measure sets: the conclusion can fail.
+
+::: pf-proof
+
 Assume $\abs{\Omega}=\infty$. Choose measurable sets $E_j\subset\Omega$ with
 $$
 0<\abs{E_j}<\infty,
@@ -81,10 +95,17 @@ $$
 \qquad\text{for every }j,
 $$
 while $\int_\Omega\widehat f=0$. Thus the conclusion in part (a) need not hold when $\abs{\Omega}=\infty$.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>1 proves part (a), and step <1>2 supplies the counterexample required for part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} supplies the counterexample required for part (b).
+
+:::
+
+:::
+
 :::

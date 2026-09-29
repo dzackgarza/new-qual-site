@@ -38,11 +38,17 @@ Let
 \beta=\sqrt{2-\sqrt2}.
 \]
 
-<1>1. The minimal polynomial of $\alpha$ over $\mathbb Q$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The minimal polynomial of $\alpha$ over $\mathbb Q$ is
 \[
 f(x)=x^4-4x^2+2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \alpha^2=2+\sqrt2,
@@ -58,15 +64,22 @@ Therefore $f$ is the minimal polynomial of $\alpha$ and
 \[
 [\mathbb Q(\alpha):\mathbb Q]=4.
 \]
+
 :::
 
-<1>2. The roots of $f$ are
+:::
+
+::: {.pf-step #s2}
+
+The roots of $f$ are
 \[
 \pm\alpha,
 \qquad
 \pm\beta.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The equation $f(x)=0$ is equivalent to
 \[
 (x^2-2)^2=2,
@@ -76,10 +89,17 @@ so
 x^2=2\pm\sqrt2.
 \]
 Taking square roots gives precisely the four displayed roots.
+
 :::
 
-<1>3. The field $\mathbb Q(\alpha)$ already contains $\beta$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The field $\mathbb Q(\alpha)$ already contains $\beta$.
+
+::: pf-proof
+
 We have
 \[
 \sqrt2=\alpha^2-2\in\mathbb Q(\alpha).
@@ -95,28 +115,42 @@ Thus
 \[
 \beta=\frac{\sqrt2}{\alpha}\in\mathbb Q(\alpha).
 \]
+
 :::
 
-<1>4. The splitting field is
+:::
+
+::: {.pf-step #s4}
+
+The splitting field is
 \[
 E=\mathbb Q(\alpha).
 \]
-::: {.proof}
-By <1>2 and <1>3, $\mathbb Q(\alpha)$ contains all four roots $\pm\alpha,\pm\beta$ of $f$.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\mathbb Q(\alpha)$ contains all four roots $\pm\alpha,\pm\beta$ of $f$.
 Hence it is the splitting field of $f$.
 Since $f$ is separable over the characteristic-zero field $\mathbb Q$, the extension $E/\mathbb Q$ is Galois.
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 |\operatorname{Gal}(E/\mathbb Q)|=[E:\mathbb Q]=4.
 \]
+
 :::
 
-<1>5. There is an automorphism $\sigma\in\operatorname{Gal}(E/\mathbb Q)$ satisfying
+:::
+
+::: {.pf-step #s5}
+
+There is an automorphism $\sigma\in\operatorname{Gal}(E/\mathbb Q)$ satisfying
 \[
 \sigma(\alpha)=\beta,
 \]
 and it has order $4$.
-::: {.proof}
+
+::: pf-proof
+
 Because $\beta$ is another root of the irreducible polynomial $f$, the assignment $\alpha\mapsto\beta$ defines a $\mathbb Q$-embedding
 \[
 \mathbb Q(\alpha)\longrightarrow E.
@@ -146,14 +180,27 @@ Therefore
 \xmapsto{\sigma}\alpha.
 \]
 Thus $\sigma$ has order $4$.
+
 :::
 
-<1>6. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \operatorname{Gal}(E/\mathbb Q)\cong C_4.
 \]
-::: {.proof}
-By <1>4 the Galois group has order $4$, and by <1>5 it contains an element of order $4$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref} the Galois group has order $4$, and by step [](#s5){.pf-ref} it contains an element of order $4$.
 Hence the group is cyclic of order $4$.
+
 :::
+
+:::
+
+:::
+
 :::

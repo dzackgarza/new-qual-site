@@ -29,9 +29,14 @@ $$
 p(z)\coloneqq z^4+3z^2+z+1.
 $$
 
-<1>1. The polynomial $p$ has no zero on the imaginary axis.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The polynomial $p$ has no zero on the imaginary axis.
+
+::: pf-proof
+
 For $y\in\RR$,
 $$
 p(iy)
@@ -39,9 +44,14 @@ p(iy)
 y^4-3y^2+1+iy.
 $$
 If this were zero, its imaginary part would give $y=0$, but then its real part would be $1$. Hence $p(iy)\neq0$ for every real $y$.
+
 :::
 
-<1>2. Choose $R>0$ so large that every zero of $p$ lies in $\abs{z}<R$ and
+:::
+
+::: {.pf-step #s2}
+
+Choose $R>0$ so large that every zero of $p$ lies in $\abs{z}<R$ and
 $$
 3R^2+R+1<R^4.
 $$
@@ -58,8 +68,9 @@ $$
 -2\alpha_R.
 $$
 
-::: {.proof}
-The displayed inequality implies $A_R>0$. By step <1>1, the path
+::: pf-proof
+
+The displayed inequality implies $A_R>0$. By step [](#s1){.pf-ref}, the path
 $$
 y\longmapsto p(iy)
 =
@@ -74,9 +85,14 @@ p(iR)=A_R+iR,
 p(-iR)=A_R-iR,
 $$
 whose principal arguments are $\alpha_R$ and $-\alpha_R$, respectively. Thus the change is $-2\alpha_R$.
+
 :::
 
-<1>3. Along the semicircle
+:::
+
+::: {.pf-step #s3}
+
+Along the semicircle
 $$
 z=Re^{i\theta},
 \qquad
@@ -87,7 +103,8 @@ $$
 4\pi+2\alpha_R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=R$, write
 $$
 p(z)
@@ -117,34 +134,52 @@ $$
 for $p(z)$. The first term changes from $-2\pi$ to $2\pi$, contributing $4\pi$.
 
 At $z=-iR$, the second factor is $p(-iR)/R^4$, whose argument is $-\alpha_R$; at $z=iR$ its argument is $\alpha_R$. Hence the second term contributes $2\alpha_R$. The total change is therefore $4\pi+2\alpha_R$.
+
 :::
 
-<1>4. The change in argument of $p$ around the positively oriented boundary of the right half-disk
+:::
+
+::: {.pf-step #s4}
+
+The change in argument of $p$ around the positively oriented boundary of the right half-disk
 $$
 \{z:\operatorname{Re}z>0,\ \abs{z}<R\}
 $$
 is $4\pi$.
 
-::: {.proof}
-The positive orientation traverses the diameter from $iR$ to $-iR$ and then the right semicircle from $-iR$ to $iR$. Adding steps <1>2 and <1>3 gives
+::: pf-proof
+
+The positive orientation traverses the diameter from $iR$ to $-iR$ and then the right semicircle from $-iR$ to $iR$. Adding steps [](#s2){.pf-ref} and [](#s3){.pf-ref} gives
 $$
 -2\alpha_R+(4\pi+2\alpha_R)=4\pi.
 $$
+
 :::
 
-<1>5. The polynomial $p$ has exactly two roots in the right half-plane, counted with multiplicity.
+:::
 
-::: {.proof}
-The boundary used in step <1>4 contains no zero of $p$: step <1>1 handles the diameter, while step <1>3 shows that $p$ is nonzero on the semicircle. By the argument principle, the number of zeros in the right half-disk is
+::: {.pf-step #s5}
+
+The polynomial $p$ has exactly two roots in the right half-plane, counted with multiplicity.
+
+::: pf-proof
+
+The boundary used in step [](#s4){.pf-ref} contains no zero of $p$: step [](#s1){.pf-ref} handles the diameter, while step [](#s3){.pf-ref} shows that $p$ is nonzero on the semicircle. By the argument principle, the number of zeros in the right half-disk is
 $$
 \frac{4\pi}{2\pi}=2.
 $$
 The radius $R$ was chosen larger than the modulus of every zero of $p$, so these are exactly the roots of $p$ in the entire right half-plane.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the required answer: $2$ roots.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the required answer: $2$ roots.
+
+:::
+
+:::
+
 :::

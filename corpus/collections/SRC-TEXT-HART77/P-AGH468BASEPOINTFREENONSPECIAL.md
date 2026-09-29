@@ -59,7 +59,11 @@ $$
 L=\OO_X(D).
 $$
 
-<1>1. If $D$ is nonspecial and $\abs{D}$ is base-point free, then either
+::: pf
+
+::: {.pf-step #s1}
+
+If $D$ is nonspecial and $\abs{D}$ is base-point free, then either
 $$
 (g,d)=(0,0)
 $$
@@ -68,7 +72,8 @@ $$
 d\ge g+1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Nonspeciality means
 $$
 h^1(X,L)=0.
@@ -107,12 +112,18 @@ and therefore
 $$
 d\ge g+1.
 $$
+
 :::
 
-<1>2. If $g=0$ and $d\ge1$, then there is a nonspecial base-point-free
+:::
+
+::: {.pf-step #s2}
+
+If $g=0$ and $d\ge1$, then there is a nonspecial base-point-free
 divisor of degree $d$.
 
-::: {.proof}
+::: pf-proof
+
 For a smooth projective genus-zero curve over the algebraically closed ground
 field,
 $$
@@ -129,15 +140,21 @@ h^1(\PP^1,\OO(d))=0
 $$
 for $d\ge-1$, hence in particular for $d\ge1$.  Any divisor $D$ with
 $\OO_X(D)\cong L$ has the required properties.
+
 :::
 
-<1>3. Assume $g\ge1$ and fix an integer
+:::
+
+::: {.pf-step #s3}
+
+Assume $g\ge1$ and fix an integer
 $$
 d\ge g+1.
 $$
 Then $\Pic^d(X)$ is an irreducible variety of dimension $g$.
 
-::: {.proof}
+::: pf-proof
+
 Fix a point $P_0\in X$.  Tensoring by
 $$
 \OO_X(dP_0)
@@ -154,9 +171,14 @@ $$
 $$
 is an irreducible variety of dimension $g$.  Hence the same is true of
 $\Pic^d(X)$.
+
 :::
 
-<1>4. The locus
+:::
+
+::: {.pf-step #s4}
+
+The locus
 $$
 S_d
 =
@@ -165,7 +187,8 @@ $$
 of special line bundles is contained in a proper closed subset of
 $\Pic^d(X)$.
 
-::: {.proof}
+::: pf-proof
+
 By Serre duality,
 $$
 h^1(X,L)=h^0(X,K\otimes L^{-1}).
@@ -204,12 +227,18 @@ $$
 2g-2-d\le g-3<g.
 $$
 Thus $S_d$ is proper in the $g$-dimensional variety $\Pic^d(X)$.
+
 :::
 
-<1>5. The locus of line bundles in $\Pic^d(X)$ having a base point is
+:::
+
+::: {.pf-step #s5}
+
+The locus of line bundles in $\Pic^d(X)$ having a base point is
 contained in a proper closed subset.
 
-::: {.proof}
+::: pf-proof
+
 Let $L\in\Pic^d(X)$ and suppose that a point $P\in X$ is a base point of
 $\abs{L}$.  Then
 $$
@@ -269,14 +298,19 @@ g-1
 $$
 Thus $B_d$ is a proper closed subset of $\Pic^d(X)$ containing every line
 bundle with a base point.
+
 :::
 
-<1>6. If $g\ge1$ and $d\ge g+1$, there exists a nonspecial line bundle
+:::
+
+::: {.pf-step #s6}
+
+If $g\ge1$ and $d\ge g+1$, there exists a nonspecial line bundle
 $L$ of degree $d$ whose complete linear system has no base points.
 
-::: {.proof}
-By step <1>3, $\Pic^d(X)$ is irreducible of dimension $g$.  Steps <1>4 and
-<1>5 give two proper closed subsets
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $\Pic^d(X)$ is irreducible of dimension $g$.  Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give two proper closed subsets
 $$
 S_d,
 \qquad
@@ -299,36 +333,56 @@ $$
 \deg D=d,
 $$
 and $D$ has the required properties.
+
 :::
 
-<1>7. For positive degree $d$, a nonspecial divisor of degree $d$ with
+:::
+
+::: {.pf-step #s7}
+
+For positive degree $d$, a nonspecial divisor of degree $d$ with
 base-point-free complete linear system exists if and only if
 $$
 \boxed{d\ge g+1}.
 $$
 
-::: {.proof}
-For the forward implication, positive degree rules out the exceptional case
-in step <1>1, so that step gives $d\ge g+1$.
+::: pf-proof
 
-For the reverse implication, step <1>2 proves existence when $g=0$, and
-step <1>6 proves it when $g\ge1$.
+For the forward implication, positive degree rules out the exceptional case
+in step [](#s1){.pf-ref}, so that step gives $d\ge g+1$.
+
+For the reverse implication, step [](#s2){.pf-ref} proves existence when $g=0$, and
+step [](#s6){.pf-ref} proves it when $g\ge1$.
+
 :::
 
-<1>8. Without the positivity assumption, the only additional case is
+:::
+
+::: {.pf-step #s8}
+
+Without the positivity assumption, the only additional case is
 $$
 \boxed{(g,d)=(0,0)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The zero divisor on $\PP^1$ supplies this case, as recorded in the erratum.
-Step <1>1 shows that no other case with $d<g+1$ can occur.
+Step [](#s1){.pf-ref} shows that no other case with $d<g+1$ can occur.
+
 :::
 
-<1>9. Q.E.D. for the corrected statement.
+:::
 
-::: {.proof}
-Steps <1>7--<1>8 give exactly the corrected classification stated in the
+::: pf-qed
+
+for the corrected statement.
+
+Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} give exactly the corrected classification stated in the
 erratum.
+
 :::
+
+:::
+
 :::

@@ -39,8 +39,15 @@ Let $E \subset \mathbb{R}$ be a measurable set, such that $0<m(E)<\infty$. Use p
 \]
 :::
 ::: {.solution}
-<1>1. Approximate a finite-measure measurable set by an elementary set.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Approximate a finite-measure measurable set by an elementary set.
+
+::: pf-proof
+
 Let $E\subset\mathbb R^d$ be measurable with $m(E)<\infty$, and fix $\varepsilon>0$. By outer regularity choose an open set $U\supset E$ such that
 \[
 m(U\setminus E)<\varepsilon/2.
@@ -69,10 +76,17 @@ so
 \[
 m(E\triangle F)<\varepsilon.
 \]
+
 :::
 
-<1>2. Prove the oscillatory integral limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the oscillatory integral limit.
+
+::: pf-proof
+
 Let $E\subset\mathbb R$ be measurable with $0<m(E)<\infty$. Fix $\varepsilon>0$ and choose an elementary set $F$, a finite union of intervals, with
 \[
 m(E\triangle F)<\varepsilon/2.
@@ -96,5 +110,11 @@ Therefore
 \[
 \boxed{\lim_{n\to\infty}\int_E\sin(nt)\,dt=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

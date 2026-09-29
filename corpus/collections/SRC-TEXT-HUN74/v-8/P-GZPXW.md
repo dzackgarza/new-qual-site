@@ -37,20 +37,33 @@ L=\QQ(\zeta),
 L^+=\QQ(\zeta+\zeta^{-1}).
 \]
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 \[
 [L:\QQ]=\phi(n).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The minimal polynomial of a primitive $n$th root of unity over $\QQ$ is the
 $n$th cyclotomic polynomial $\Phi_n(x)$, whose degree is $\phi(n)$. Hence
 \[
 [\QQ(\zeta):\QQ]=\deg\Phi_n=\phi(n).
 \]
+
 :::
 
-<1>2. The element $\zeta$ is algebraic of degree at most $2$ over $L^+$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The element $\zeta$ is algebraic of degree at most $2$ over $L^+$.
+
+::: pf-proof
+
 Let
 \[
 t=\zeta+\zeta^{-1}\in L^+.
@@ -63,10 +76,17 @@ so
 \[
 [L:L^+]\le2.
 \]
+
 :::
 
-<1>3. The field $L^+$ is contained in $\RR$, whereas $\zeta\notin\RR$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The field $L^+$ is contained in $\RR$, whereas $\zeta\notin\RR$.
+
+::: pf-proof
+
 Since
 \[
 \zeta+\zeta^{-1}=2\cos(2\pi/n),
@@ -76,26 +96,46 @@ the generator of $L^+$ is real, so $L^+\subseteq\RR$.
 If a primitive $n$th root of unity is real, it must be $1$ or $-1$, whose
 orders are $1$ and $2$. Since $n>2$, the primitive root $\zeta$ is not real.
 Thus $\zeta\notin L^+$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 \[
 [L:L^+]=2.
 \]
-::: {.proof}
-By <1>2 the degree is at most $2$. By <1>3 the inclusion $L^+\subsetneq L$ is
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} the degree is at most $2$. By step [](#s3){.pf-ref} the inclusion $L^+\subsetneq L$ is
 proper, so the degree is not $1$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 [\QQ(\zeta+\zeta^{-1}):\QQ]=\frac{\phi(n)}2.
 \]
-::: {.proof}
-The tower law and <1>1, <1>4 give
+
+::: pf-proof
+
+The tower law and steps [](#s1){.pf-ref} and [](#s4){.pf-ref} give
 \[
 \phi(n)=[L:\QQ]=[L:L^+][L^+:\QQ]=2[L^+:\QQ].
 \]
 Solving for $[L^+:\QQ]$ gives the asserted degree.
+
 :::
+
+:::
+
+:::
+
 :::

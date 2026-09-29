@@ -40,7 +40,11 @@ In particular, there is an elliptic scroll of degree 5 in $\PP^4$.
 ::: {.solution}
 Fix an elliptic curve $C$.
 
-<1>1. For every integer
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer
 $$
 e\ge-1
 $$
@@ -50,7 +54,8 @@ $$
 $$
 with invariant $e$.
 
-::: {.proof}
+::: pf-proof
+
 For $e=-1$, Hartshorne V.2.5(c), proved on [[P-AGH525INVARIANTE]], gives a
 ruled surface over the genus-one curve $C$ with invariant $-1$.
 
@@ -77,9 +82,14 @@ $$
 \deg\det\mathcal E=-e,
 $$
 the invariant of $\PP(\mathcal E)$ is $e$.
+
 :::
 
-<1>2. Let $C_0$ be the normalized section and $f$ a ruling fibre. Then
+:::
+
+::: {.pf-step #s2}
+
+Let $C_0$ be the normalized section and $f$ a ruling fibre. Then
 $$
 C_0^2=-e,
 \qquad
@@ -88,16 +98,22 @@ C_0\cdot f=1,
 f^2=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 These are the standard intersection formulas for a normalized geometrically
 ruled surface: the invariant is
 $$
 e=-C_0^2,
 $$
 while a section meets every fibre once and distinct fibres are disjoint.
+
 :::
 
-<1>3. Choose a divisor $\mfb$ on $C$ with
+:::
+
+::: {.pf-step #s3}
+
+Choose a divisor $\mfb$ on $C$ with
 $$
 \deg\mfb=n,
 $$
@@ -111,7 +127,8 @@ n\ge e+3,
 $$
 then $D$ is very ample.
 
-::: {.proof}
+::: pf-proof
+
 This is exactly Hartshorne V.2.12(b), proved on
 [[P-AGH5212ELLRULEDAMPLE]]: on a ruled surface over an elliptic curve,
 $$
@@ -121,12 +138,18 @@ is very ample if and only if
 $$
 \deg\mfb\ge e+3.
 $$
+
 :::
 
-<1>4. The embedding defined by $|D|$ makes every ruling fibre a line.
+:::
 
-::: {.proof}
-By step <1>2,
+::: {.pf-step #s4}
+
+The embedding defined by $|D|$ makes every ruling fibre a line.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 D\cdot f
 =
@@ -138,19 +161,25 @@ Hence
 $$
 \OO_X(D)|_f\cong\OO_{\PP^1}(1).
 $$
-Because the complete system $|D|$ is very ample by step <1>3, its
+Because the complete system $|D|$ is very ample by step [](#s3){.pf-ref}, its
 restriction embeds each fibre as a projective line. Thus the image is a
 scroll over the elliptic curve $C$.
+
 :::
 
-<1>5. The degree of this embedded scroll is
+:::
+
+::: {.pf-step #s5}
+
+The degree of this embedded scroll is
 $$
 \boxed{d=2n-e}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a surface embedded by the very ample divisor $D$, its degree is $D^2$.
-Using step <1>2,
+Using step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 D^2
@@ -160,14 +189,20 @@ D^2
 &=2n-e.
 \end{aligned}
 $$
+
 :::
 
-<1>6. The complete linear system $|D|$ has
+:::
+
+::: {.pf-step #s6}
+
+The complete linear system $|D|$ has
 $$
 \boxed{h^0(X,\OO_X(D))=2n-e=d}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $\mfe$ be the divisor on $C$ with
 $$
 \OO_C(\mfe)\cong\det\mathcal E.
@@ -206,27 +241,39 @@ n+(n-e)
 =
 d.
 $$
+
 :::
 
-<1>7. The complete linear system $|D|$ embeds $X$ as an elliptic scroll of
+:::
+
+::: {.pf-step #s7}
+
+The complete linear system $|D|$ embeds $X$ as an elliptic scroll of
 degree $d$ in
 $$
 \boxed{\PP^{d-1}}.
 $$
 
-::: {.proof}
-Step <1>3 gives very ampleness, so the complete system defines a closed
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives very ampleness, so the complete system defines a closed
 immersion
 $$
 X\hookrightarrow\PP\bigl(H^0(X,\OO_X(D))^\vee\bigr).
 $$
-By step <1>6 the target is $\PP^{d-1}$. Step <1>4 identifies the image as a
-scroll over the elliptic curve, and step <1>5 gives degree $d$.
+By step [](#s6){.pf-ref} the target is $\PP^{d-1}$. Step [](#s4){.pf-ref} identifies the image as a
+scroll over the elliptic curve, and step [](#s5){.pf-ref} gives degree $d$.
+
 :::
 
-<1>8. There is an elliptic scroll of degree $5$ in $\PP^4$.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+There is an elliptic scroll of degree $5$ in $\PP^4$.
+
+::: pf-proof
+
 Take
 $$
 e=-1,
@@ -241,16 +288,22 @@ so the construction applies, and
 $$
 d=2n-e=4+1=5.
 $$
-Step <1>7 therefore gives an elliptic scroll of degree $5$ in
+Step [](#s7){.pf-ref} therefore gives an elliptic scroll of degree $5$ in
 $$
 \PP^{5-1}=\PP^4.
 $$
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>7 prove the asserted existence for every $e\ge-1$ and
-$n\ge e+3$, and step <1>8 gives the stated degree-five example.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove the asserted existence for every $e\ge-1$ and
+$n\ge e+3$, and step [](#s8){.pf-ref} gives the stated degree-five example.
+
+:::
+
+:::
+
 :::

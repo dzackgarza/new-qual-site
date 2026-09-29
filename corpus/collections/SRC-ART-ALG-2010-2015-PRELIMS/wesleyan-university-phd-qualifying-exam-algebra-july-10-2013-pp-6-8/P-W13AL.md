@@ -33,9 +33,15 @@ b. Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\mathbb{Q}$.
 :::
 
 ::: {.solution}
-<1>1. The elements algebraic over $F$ form a subfield of $K$.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The elements algebraic over $F$ form a subfield of $K$.
+
+::: pf-proof
+
 Every element of $F$ is algebraic over $F$, being a root of
 a linear polynomial. Suppose $\alpha,\beta\in K$ are
 algebraic over $F$, with monic annihilating polynomials of
@@ -59,12 +65,18 @@ In particular $\alpha-\beta$, $\alpha\beta$, and
 $\alpha^{-1}$ when $\alpha\ne0$ are algebraic. Together
 with containment of $F$, these closure properties prove the
 subfield assertion.
+
 :::
 
-<1>2. The field $E=\mathbb Q(\sqrt2,\sqrt3)$ has degree $4$
+:::
+
+::: {.pf-step #s2}
+
+The field $E=\mathbb Q(\sqrt2,\sqrt3)$ has degree $4$
 over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
+
 A square of a nonzero rational number has an even exponent
 at every prime in its factorization. Hence $2$ is not a
 rational square, and $1,\sqrt2$ are a basis of
@@ -78,14 +90,20 @@ also impossible because the exponent of $3$ is odd.
 Thus $T^2-3$ has no root in $\mathbb Q(\sqrt2)$ and is
 irreducible over that field. Adjoining $\sqrt3$ has degree
 $2$, and the tower law gives $[E:\mathbb Q]=2\cdot2=4$.
+
 :::
 
-<1>3. The minimal polynomial in part (b) is
+:::
+
+::: pf-step
+
+The minimal polynomial in part (b) is
 $$
 \boxed{T^4-22T^2+25}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put $\gamma=2\sqrt2-\sqrt3$. One has
 $\gamma^2=11-4\sqrt6$, so
 $(\gamma^2-11)^2=96$. Expanding gives
@@ -102,8 +120,14 @@ $$
 \sqrt3=\frac{5/\gamma-\gamma}{2}.
 $$
 Both radicals belong to $\mathbb Q(\gamma)$, so this field
-equals $E$. Step <1>2 shows that $\gamma$ has degree $4$.
+equals $E$. Step [](#s2){.pf-ref} shows that $\gamma$ has degree $4$.
 Its minimal polynomial is therefore the monic degree-four
 annihilating polynomial displayed above.
+
 :::
+
+:::
+
+:::
+
 :::

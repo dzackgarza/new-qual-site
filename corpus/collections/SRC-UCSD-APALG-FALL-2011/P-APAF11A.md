@@ -31,7 +31,6 @@ Then $A^\lambda$ denotes the irreducible representation of the symmetric group $
 (Hint: First write out the character table for $S_2\times S_2$.)
 :::
 
-
 ::: {.solution}
 Let the conjugacy classes of $S_4$ be indexed by cycle type in the order
 \[
@@ -42,7 +41,11 @@ Their sizes are respectively
 1,6,3,8,6.
 \]
 
-<1>1. By the Murnaghan--Nakayama rule, the irreducible character table of $S_4$ is
+::: pf
+
+::: {.pf-step #s1}
+
+By the Murnaghan--Nakayama rule, the irreducible character table of $S_4$ is
 \[
 \begin{array}{c|rrrrr}
 \lambda &(1^4)&(2,1^2)&(2^2)&(3,1)&(4)\\ \hline
@@ -53,7 +56,9 @@ Their sizes are respectively
 (1^4)     &1&-1& 1& 1&-1
 \end{array}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 We use the Murnaghan--Nakayama rule in the form
 \[
 \chi^\lambda_{(r,\mu)}
@@ -93,9 +98,14 @@ Finally, $(2,1,1)$ is conjugate to $(3,1)$, and conjugating a partition tensors 
 3,-1,-1,0,1.
 \]
 This yields the displayed table.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 H=S_2\times S_2
 =\{1,(12),(34),(12)(34)\}.
@@ -104,14 +114,21 @@ The restricted character of $A^{(2,2)}$ on these four elements is
 \[
 \chi^{(2,2)}\!\downarrow_H=(2,0,0,2).
 \]
-::: {.proof}
-The identity has cycle type $(1^4)$, each of $(12)$ and $(34)$ has cycle type $(2,1^2)$, and $(12)(34)$ has cycle type $(2^2)$. Reading the $(2,2)$ row of <1>1 gives the values
+
+::: pf-proof
+
+The identity has cycle type $(1^4)$, each of $(12)$ and $(34)$ has cycle type $(2,1^2)$, and $(12)(34)$ has cycle type $(2^2)$. Reading the $(2,2)$ row of step [](#s1){.pf-ref} gives the values
 \[
 2,0,0,2.
 \]
+
 :::
 
-<1>3. The four irreducible characters of $H\cong C_2\times C_2$ are
+:::
+
+::: pf-step
+
+The four irreducible characters of $H\cong C_2\times C_2$ are
 \[
 \begin{array}{c|rrrr}
 &1&(12)&(34)&(12)(34)\\ \hline
@@ -121,11 +138,18 @@ The identity has cycle type $(1^4)$, each of $(12)$ and $(34)$ has cycle type $(
 \operatorname{sgn}\boxtimes\operatorname{sgn}&1&-1&-1&1
 \end{array}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each factor $S_2$ has exactly two irreducible characters, the trivial and sign characters. Since $H$ is a direct product, its irreducible characters are their external tensor products, producing the four rows displayed.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \chi^{A^{(2,2)}}\!\downarrow_{S_2\times S_2}^{S_4}
 =
@@ -133,7 +157,9 @@ Each factor $S_2$ has exactly two irreducible characters, the trivial and sign c
 +
 (\operatorname{sgn}\boxtimes\operatorname{sgn}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 For an irreducible character $\theta$ of $H$, its multiplicity in the restriction is
 \[
 \langle (2,0,0,2),\theta\rangle_H
@@ -153,5 +179,11 @@ For each of the two mixed characters it equals
 \frac14(2-2)=0.
 \]
 Hence the restriction is exactly the sum displayed above. This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

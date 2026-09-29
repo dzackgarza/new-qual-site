@@ -41,7 +41,11 @@ x^2\sin(1/x^2),&x\neq0,\\
 \end{cases}
 $$
 
-<1>1. The function $f$ is differentiable at every $x\neq0$, with
+::: pf
+
+::: {.pf-step #s1}
+
+The function $f$ is differentiable at every $x\neq0$, with
 $$
 f'(x)
 =
@@ -50,7 +54,8 @@ f'(x)
 \frac{2}{x}\cos(1/x^2).
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $\RR\sm\{0\}$, the function is a product and composition of differentiable
 functions. The product and chain rules give
 $$
@@ -66,14 +71,20 @@ x^2\cos(1/x^2)\left(-\frac{2}{x^3}\right)\\
 \frac{2}{x}\cos(1/x^2).
 \end{aligned}
 $$
+
 :::
 
-<1>2. The function $f$ is differentiable at $0$, and
+:::
+
+::: {.pf-step #s2}
+
+The function $f$ is differentiable at $0$, and
 $$
 f'(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of the derivative,
 $$
 \frac{f(h)-f(0)}{h}
@@ -96,11 +107,17 @@ f'(0)
 =
 0.
 $$
+
 :::
 
-<1>3. The derivative $f'$ is not continuous at $0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The derivative $f'$ is not continuous at $0$.
+
+::: pf-proof
+
 For $n\geq1$, put
 $$
 x_n=\frac{1}{\sqrt{2\pi n}}.
@@ -109,7 +126,7 @@ Then $x_n\to0$ and
 $$
 \frac{1}{x_n^2}=2\pi n.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 f'(x_n)
@@ -125,21 +142,33 @@ Thus
 $$
 f'(x_n)\longrightarrow-\infty,
 $$
-whereas step <1>2 gives $f'(0)=0$. Hence $f'(x_n)$ does not converge to
+whereas step [](#s2){.pf-ref} gives $f'(0)=0$. Hence $f'(x_n)$ does not converge to
 $f'(0)$, so $f'$ is not continuous at $0$.
+
 :::
 
-<1>4. The displayed $f$ is an everywhere differentiable function whose
+:::
+
+::: {.pf-step #s4}
+
+The displayed $f$ is an everywhere differentiable function whose
 derivative is discontinuous at $0$.
 
-::: {.proof}
-Steps <1>1--<1>2 prove differentiability on all of $\RR$, and step <1>3 proves
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove differentiability on all of $\RR$, and step [](#s3){.pf-ref} proves
 the required discontinuity.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 supplies the requested example.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} supplies the requested example.
+
+:::
+
+:::
+
 :::

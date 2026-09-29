@@ -41,7 +41,11 @@ $$
 \int_{\Gamma_N}F(z)\,dz\to0.
 $$
 
-<1>1. At an integer $k$,
+::: pf
+
+::: pf-step
+
+At an integer $k$,
 $$
 \operatorname{Res}(F,k)=\frac{(-1)^k}{(k+a)^2}.
 $$
@@ -53,7 +57,16 @@ $$
 =-\pi^2\cos(\pi a)\csc^2(\pi a).
 $$
 
-<1>2. For large $N$, the residue theorem gives
+:::
+
+::: pf-step
+
+For large $N$, the residue theorem gives
+
+:::
+
+:::
+
 $$
 \frac1{2\pi i}\int_{\Gamma_N}F(z)\,dz
 =\sum_{k=-N}^N\frac{(-1)^k}{(k+a)^2}

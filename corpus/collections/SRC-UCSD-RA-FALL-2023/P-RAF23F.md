@@ -33,8 +33,15 @@ Here $C_q$ depends on $q, q_1, q_2$ and $C_1, C_2$.
 :::
 
 ::: {.solution}
-<1>1. Prove the discrete characterization of $L^p$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the discrete characterization of $L^p$.
+
+::: pf-proof
+
 Fix $\beta>1$ and define
 \[
 A_k:=\{x:\beta^k<|f(x)|\le \beta^{k+1}\}.
@@ -67,10 +74,17 @@ Thus
 \sum_{k\in\mathbb Z}\beta^{kp}\lambda_f(\beta^k)<\infty.
 \]
 Since the argument holds for every $\beta>1$, this proves part (i).
+
 :::
 
-<1>2. Normalize the input for part (ii).
-::: {.proof}
+:::
+
+::: pf-step
+
+Normalize the input for part (ii).
+
+::: pf-proof
+
 If $f=0$, the conclusion is trivial. Otherwise set
 \[
 h:=\frac{f}{\|f\|_p}.
@@ -84,10 +98,17 @@ It is therefore enough to prove a bound
 \|Th\|_q\le C_q
 \]
 for all $h$ with $\|h\|_p=1$.
+
 :::
 
-<1>3. Sum the low-frequency distribution levels.
-::: {.proof}
+:::
+
+::: pf-step
+
+Sum the low-frequency distribution levels.
+
+::: pf-proof
+
 For integers $k\le0$, the assumed weak-type estimate gives
 \[
 \lambda_{Th}(2^k)
@@ -100,10 +121,17 @@ Hence
 \sum_{k\le0}2^{k(q-q_1)}.
 \]
 Since $q>q_1$, this geometric series converges.
+
 :::
 
-<1>4. Sum the high-frequency distribution levels.
-::: {.proof}
+:::
+
+::: pf-step
+
+Sum the high-frequency distribution levels.
+
+::: pf-proof
+
 For integers $k\ge0$,
 \[
 \lambda_{Th}(2^k)
@@ -136,5 +164,11 @@ Undoing the normalization,
 \[
 \boxed{\|Tf\|_q\le C_q\|f\|_p.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

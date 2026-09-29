@@ -33,8 +33,15 @@ Show that $f$ has the same number of zeros as poles in $D$, counting multiplicit
 :::
 
 ::: {.solution}
-<1>1. The logarithmic derivative has integral zero around the unit circle.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The logarithmic derivative has integral zero around the unit circle.
+
+::: pf-proof
+
 Since $f$ has no pole on $\partial D$, it is holomorphic
 on a neighborhood of that circle. Put $c(t)=f(e^{it})$
 for $0\leq t\leq2\pi$. This is a continuously differentiable
@@ -50,10 +57,17 @@ $$
 The circle is oriented counterclockwise. This uses only
 a logarithm along the boundary image, not a holomorphic
 logarithm at any interior zero or pole.
+
 :::
 
-<1>2. The argument principle equates the zero and pole counts.
-::: {.proof}
+:::
+
+::: pf-step
+
+The argument principle equates the zero and pole counts.
+
+::: pf-proof
+
 The function is meromorphic on a neighborhood of the
 closed disk and has neither zeros nor poles on its
 boundary. It is not identically zero on the component
@@ -68,5 +82,11 @@ $$
 where $N$ is the sum of the zero orders and $P$ the sum
 of the pole orders in $D$ [@SS03]. Thus $N=P$, exactly
 the requested equality with multiplicities.
+
 :::
+
+:::
+
+:::
+
 :::

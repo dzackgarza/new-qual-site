@@ -32,7 +32,6 @@ Any UFD is normal (integrally closed).
 [Hint: look at the proof of the rational root theorem from precalculus.]
 :::
 
-
 ::: {.solution}
 Let $R$ be a UFD with fraction field $K$, and let
 $$
@@ -40,18 +39,31 @@ x\in K
 $$
 be integral over $R$. We show $x\in R$.
 
-<1>1. Write $x$ in lowest terms.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Write $x$ in lowest terms.
+
+::: pf-proof
+
 Because $R$ is a UFD, write
 $$
 x=\frac ab
 $$
 with $a,b\in R$, $b\ne0$, and with $a$ and $b$ having no common irreducible
 factor. Equivalently, every common divisor of $a$ and $b$ is a unit.
+
 :::
 
-<1>2. Clear denominators in a monic integral equation.
-::: {.proof}
+:::
+
+::: pf-step
+
+Clear denominators in a monic integral equation.
+
+::: pf-proof
+
 Since $x$ is integral, there are
 $$
 r_0,\ldots,r_{n-1}\in R
@@ -73,10 +85,17 @@ Thus
 $$
 b\mid a^n.
 $$
+
 :::
 
-<1>3. The denominator $b$ is a unit.
-::: {.proof}
+:::
+
+::: pf-step
+
+The denominator $b$ is a unit.
+
+::: pf-proof
+
 If $b$ were a nonunit, it would have an irreducible factor $p$. In a UFD,
 every irreducible is prime. Since
 $$
@@ -87,11 +106,18 @@ $$
 p\mid a.
 $$
 Then $p$ would be a common irreducible factor of $a$ and $b$, contradicting
-step <1>1. Therefore $b$ is a unit.
+step [](#s1){.pf-ref}. Therefore $b$ is a unit.
+
 :::
 
-<1>4. Conclude normality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude normality.
+
+::: pf-proof
+
 Since $b$ is a unit,
 $$
 x=a/b\in R.
@@ -101,5 +127,11 @@ $R$. Hence
 $$
 \boxed{R\text{ is integrally closed}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

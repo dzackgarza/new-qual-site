@@ -25,21 +25,40 @@ State and prove the Schur Decomposition Theorem.
 :::
 
 ::: {.solution}
-<1>1. **Schur Decomposition Theorem.** For every matrix $A\in M_n(\mathbb C)$, there exists a unitary matrix $U\in U(n)$ such that
+
+::: pf
+
+::: pf-step
+
+**Schur Decomposition Theorem.** For every matrix $A\in M_n(\mathbb C)$, there exists a unitary matrix $U\in U(n)$ such that
 \[
 U^*AU=T
 \]
 is upper triangular. The diagonal entries of $T$ are the eigenvalues of $A$, counted with algebraic multiplicity.
-::: {.proof}
+
+::: pf-proof
+
 We prove the triangularization statement by induction on $n$.
+
 :::
 
-<1>2. The theorem holds for $n=1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The theorem holds for $n=1$.
+
+::: pf-proof
+
 Every $1\times1$ matrix is already upper triangular, and the identity matrix is unitary.
+
 :::
 
-<1>3. Assume $n>1$. Since the characteristic polynomial of $A$ splits over $\mathbb C$, choose an eigenvalue $\lambda$ and a unit eigenvector $v_1$ such that
+:::
+
+::: pf-step
+
+Assume $n>1$. Since the characteristic polynomial of $A$ splits over $\mathbb C$, choose an eigenvalue $\lambda$ and a unit eigenvector $v_1$ such that
 \[
 Av_1=\lambda v_1.
 \]
@@ -60,25 +79,39 @@ U_1^*AU_1=
 \end{pmatrix}
 \]
 for some $B\in M_{n-1}(\mathbb C)$.
-::: {.proof}
+
+::: pf-proof
+
 The columns of $U_1$ form an orthonormal basis, so $U_1$ is unitary.
 The first column of $U_1^*AU_1$ is the coordinate vector of $Av_1=\lambda v_1$ in this basis, namely
 \[
 (\lambda,0,\ldots,0)^T.
 \]
 Thus every entry below the $(1,1)$ entry in the first column is zero, giving the displayed block form.
+
 :::
 
-<1>4. By the induction hypothesis, there exists a unitary matrix $W\in U(n-1)$ such that
+:::
+
+::: {.pf-step #s4}
+
+By the induction hypothesis, there exists a unitary matrix $W\in U(n-1)$ such that
 \[
 W^*BW=T_0
 \]
 is upper triangular.
-::: {.proof}
+
+::: pf-proof
+
 The matrix $B$ is an arbitrary complex $(n-1)\times(n-1)$ matrix, so the induction hypothesis applies to it.
+
 :::
 
-<1>5. Put
+:::
+
+::: pf-step
+
+Put
 \[
 D=
 \begin{pmatrix}
@@ -98,7 +131,9 @@ U^*AU
 \end{pmatrix},
 \]
 which is upper triangular.
-::: {.proof}
+
+::: pf-proof
+
 Both $U_1$ and $D$ are unitary, hence so is their product $U$. Moreover
 \[
 U^*AU
@@ -122,15 +157,28 @@ U^*AU
 0&W^*BW
 \end{pmatrix}.
 \]
-By <1>4, the lower-right block is upper triangular, so the whole matrix is upper triangular.
+By step [](#s4){.pf-ref}, the lower-right block is upper triangular, so the whole matrix is upper triangular.
+
 :::
 
-<1>6. The diagonal entries of $T=U^*AU$ are the eigenvalues of $A$, counted with algebraic multiplicity.
-::: {.proof}
+:::
+
+::: pf-step
+
+The diagonal entries of $T=U^*AU$ are the eigenvalues of $A$, counted with algebraic multiplicity.
+
+::: pf-proof
+
 Because $T$ is similar to $A$, they have the same characteristic polynomial. Since $T$ is upper triangular,
 \[
 \det(tI-T)=\prod_{j=1}^n(t-t_{jj}).
 \]
 Thus the roots of the characteristic polynomial, with multiplicity, are exactly the diagonal entries $t_{11},\ldots,t_{nn}$.
+
 :::
+
+:::
+
+:::
+
 :::

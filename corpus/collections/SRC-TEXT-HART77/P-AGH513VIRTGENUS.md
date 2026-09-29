@@ -60,14 +60,19 @@ p_a(C+D)=p_a(C)+p_a(D)+C . D-1 .
 ::: {.solution}
 Let $K$ be a canonical divisor on $X$.
 
-<1>1. If $D$ is effective, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $D$ is effective, then
 $$
 \chi(\OO_D)
 =
 -\frac12D\cdot(D+K).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $D$ is an effective Cartier divisor on the nonsingular surface $X$,
 there is an exact sequence
 $$
@@ -100,19 +105,25 @@ $$
 \end{aligned}
 $$
 Substitution yields the stated formula.
+
 :::
 
-<1>2. For an effective divisor $D$,
+:::
+
+::: {.pf-step #s2}
+
+For an effective divisor $D$,
 $$
 \boxed{2p_a(D)-2=D\cdot(D+K)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $D$ has dimension one, its arithmetic genus is
 $$
 p_a(D)=1-\chi(\OO_D)
 $$
-by [[D-COHEULER]].  Step <1>1 therefore gives
+by [[D-COHEULER]].  Step [](#s1){.pf-ref} therefore gives
 $$
 \begin{aligned}
 2p_a(D)-2
@@ -123,12 +134,18 @@ D\cdot(D+K).
 \end{aligned}
 $$
 This proves part (a).
+
 :::
 
-<1>3. For effective divisors, $p_a(D)$ depends only on the linear equivalence
+:::
+
+::: {.pf-step #s3}
+
+For effective divisors, $p_a(D)$ depends only on the linear equivalence
 class of $D$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 D\sim D'.
@@ -144,7 +161,7 @@ Hence
 $$
 D\cdot(D+K)=D'\cdot(D'+K).
 $$
-Applying step <1>2 to $D$ and $D'$ gives
+Applying step [](#s2){.pf-ref} to $D$ and $D'$ gives
 $$
 2p_a(D)-2=2p_a(D')-2,
 $$
@@ -153,31 +170,43 @@ $$
 p_a(D)=p_a(D').
 $$
 This proves part (b).
+
 :::
 
-<1>4. For an arbitrary divisor $D$, the virtual arithmetic genus is
+:::
+
+::: {.pf-step #s4}
+
+For an arbitrary divisor $D$, the virtual arithmetic genus is
 $$
 p_a(D)
 =
 1+\frac12D\cdot(D+K).
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is exactly the definition in part (c), rewritten from
 $$
 2p_a(D)-2=D\cdot(D+K).
 $$
-By step <1>2 it agrees with the ordinary arithmetic genus whenever $D$ is
+By step [](#s2){.pf-ref} it agrees with the ordinary arithmetic genus whenever $D$ is
 effective.
+
 :::
 
-<1>5. For every divisor $D$,
+:::
+
+::: {.pf-step #s5}
+
+For every divisor $D$,
 $$
 \boxed{p_a(-D)=D^2-p_a(D)+2}.
 $$
 
-::: {.proof}
-Using step <1>4,
+::: pf-proof
+
+Using step [](#s4){.pf-ref},
 $$
 \begin{aligned}
 p_a(-D)
@@ -199,9 +228,14 @@ D^2-
 \end{aligned}
 $$
 The two expressions agree.
+
 :::
 
-<1>6. For arbitrary divisors $C,D$,
+:::
+
+::: {.pf-step #s6}
+
+For arbitrary divisors $C,D$,
 $$
 \boxed{
 p_a(C+D)
@@ -210,7 +244,8 @@ p_a(C)+p_a(D)+C\cdot D-1
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By bilinearity and symmetry of the intersection pairing,
 $$
 \begin{aligned}
@@ -224,7 +259,7 @@ p_a(C+D)
 +C\cdot D.
 \end{aligned}
 $$
-Step <1>4 gives
+Step [](#s4){.pf-ref} gives
 $$
 \frac12C\cdot(C+K)=p_a(C)-1
 $$
@@ -238,12 +273,18 @@ p_a(C+D)
 =
 p_a(C)+p_a(D)+C\cdot D-1.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part (a), step <1>3 proves part (b), and steps <1>4--<1>6
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), step [](#s3){.pf-ref} proves part (b), and steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}
 prove both identities in part (c).
+
 :::
+
+:::
+
 :::

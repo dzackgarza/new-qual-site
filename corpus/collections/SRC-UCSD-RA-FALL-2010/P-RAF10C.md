@@ -32,8 +32,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The case $\mu(E)<\infty$ is immediate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The case $\mu(E)<\infty$ is immediate.
+
+::: pf-proof
+
 Let
 \[
 S:=\sup\{\mu(A):A\subseteq E,\ A\in\mathcal M,\ \mu(A)<\infty\}.
@@ -42,10 +49,17 @@ Every admissible $A$ satisfies $\mu(A)\le\mu(E)$, so $S\le\mu(E)$. If $\mu(E)<\i
 \[
 S=\mu(E).
 \]
+
 :::
 
-<1>2. The case $\mu(E)=\infty$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The case $\mu(E)=\infty$.
+
+::: pf-proof
+
 Suppose for contradiction that $S<\infty$. Choose measurable $A_n\subseteq E$ with
 \[
 \mu(A_n)<\infty,
@@ -91,5 +105,11 @@ Therefore $S=\infty=\mu(E)$. Combining the two cases proves
 \boxed{
 \mu(E)=\sup\{\mu(A):A\subseteq E,\ A\in\mathcal M,\ \mu(A)<\infty\}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

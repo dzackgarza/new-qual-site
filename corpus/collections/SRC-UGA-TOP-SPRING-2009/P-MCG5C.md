@@ -33,33 +33,75 @@ Show that if $N$ is even, $\pi$ is a homeomorphism.
 :::
 
 ::: {.solution}
-<1>1. $Y$ is compact iff $X$ is compact and $d<\infty$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$Y$ is compact iff $X$ is compact and $d<\infty$.
+
+::: pf-proof
+
 covering of compact is compact iff finite sheeted; if $X$ compact and $d<\infty$, $Y$ is finite union of compact lifts.
+
 :::
 
-<1>2. If $\deg\pi=d<\infty$ and $X$ is finite CW, $\chi(Y)=d\,\chi(X)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $\deg\pi=d<\infty$ and $X$ is finite CW, $\chi(Y)=d\,\chi(X)$.
+
+::: pf-proof
+
 lift cell structure; $Y$ has $d$ times as many cells in each dimension, so Euler characteristic multiplies by $d$.
+
 :::
 
-<1>3. For $\pi:\RP^N\to X$ with $N$ even, $\chi(\RP^N)=1$ (even $N$).
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+For $\pi:\RP^N\to X$ with $N$ even, $\chi(\RP^N)=1$ (even $N$).
+
+::: pf-proof
+
 $\chi(\RP^{2k})=1$.
+
 :::
 
-<1>4. If $d>1$ then $1=\chi(\RP^N)=d\,\chi(X)$ forces $d=1$.
-::: {.proof}
-<1>2 and <1>3 ($d$ divides $1$).
 :::
 
-<1>5. Hence $\pi$ is a homeomorphism.
-::: {.proof}
-<1>4 (degree $1$ covering of nice spaces is homeomorphism).
+::: {.pf-step #s4}
+
+If $d>1$ then $1=\chi(\RP^N)=d\,\chi(X)$ forces $d=1$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} ($d$ divides $1$).
+
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>1 and <1>5.
 :::
+
+::: {.pf-step #s5}
+
+Hence $\pi$ is a homeomorphism.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} (degree $1$ covering of nice spaces is homeomorphism).
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s5){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -41,8 +41,14 @@ $$
 $$
 By hypothesis the supports of $\sigma$ and $\tau$ are disjoint.
 
-<1>1. The two products agree on the support of $\sigma$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The two products agree on the support of $\sigma$.
+
+::: pf-proof
+
 If $x=a_i$ for some $i$, then $x$ does not lie in the support of $\tau$, so
 $$
 \tau(x)=x.
@@ -57,10 +63,17 @@ $$
 (\tau\sigma)(x)=\tau(\sigma(x))=\sigma(x).
 $$
 Thus the products agree on every $a_i$.
+
 :::
 
-<1>2. The two products agree on the support of $\tau$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The two products agree on the support of $\tau$.
+
+::: pf-proof
+
 If $x=b_j$, then $\sigma(x)=x$, and $\tau(x)$ is another point in the
 support of $\tau$, hence still outside the support of $\sigma$. Consequently
 $$
@@ -70,18 +83,32 @@ and
 $$
 (\tau\sigma)(x)=\tau(x).
 $$
+
 :::
 
-<1>3. The two products agree outside both supports.
-::: {.proof}
+:::
+
+::: pf-step
+
+The two products agree outside both supports.
+
+::: pf-proof
+
 If $x$ lies in neither support, then both cycles fix it. Hence
 $$
 (\sigma\tau)(x)=x=(\tau\sigma)(x).
 $$
+
 :::
 
-<1>4. Conclude that the cycles commute.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude that the cycles commute.
+
+::: pf-proof
+
 Every point belongs to one of the three cases above, so the permutations
 $\sigma\tau$ and $\tau\sigma$ agree everywhere. Thus
 $$
@@ -89,5 +116,11 @@ $$
 (a_1\,\ldots\,a_r)(b_1\,\ldots\,b_s)
 =(b_1\,\ldots\,b_s)(a_1\,\ldots\,a_r).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

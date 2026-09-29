@@ -25,7 +25,6 @@ audit:
 Show that every finite $p$-group has a nontrivial center.
 :::
 
-
 ::: {.solution}
 Let $|G|=p^n$. Under conjugation, the class equation is
 \[
@@ -36,25 +35,51 @@ Let $|G|=p^n$. Under conjugation, the class equation is
 \]
 where the $x_i$ represent the noncentral conjugacy classes.
 
-<1>1. Every noncentral conjugacy-class size is divisible by $p$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every noncentral conjugacy-class size is divisible by $p$.
+
+::: pf-proof
+
 For noncentral $x_i$, the centralizer $C_G(x_i)$ is a proper subgroup of the $p$-group $G$. Thus its index
 \[
 [G:C_G(x_i)]
 \]
 is a positive power of $p$, hence divisible by $p$.
+
 :::
 
-<1>2. Therefore $p\mid |Z(G)|$.
-::: {.proof}
-Reduce the class equation modulo $p$. Since $p\mid|G|$ and every term in the sum is divisible by $p$ by <1>1,
+:::
+
+::: {.pf-step #s2}
+
+Therefore $p\mid |Z(G)|$.
+
+::: pf-proof
+
+Reduce the class equation modulo $p$. Since $p\mid|G|$ and every term in the sum is divisible by $p$ by step [](#s1){.pf-ref},
 \[
 |Z(G)|\equiv0\pmod p.
 \]
+
 :::
 
-<1>3. Hence $Z(G)$ is nontrivial.
-::: {.proof}
-The center contains the identity, so $|Z(G)|\ge1$. By <1>2 its order is divisible by $p$, hence $|Z(G)|\ge p>1$.
 :::
+
+::: pf-step
+
+Hence $Z(G)$ is nontrivial.
+
+::: pf-proof
+
+The center contains the identity, so $|Z(G)|\ge1$. By step [](#s2){.pf-ref} its order is divisible by $p$, hence $|Z(G)|\ge p>1$.
+
+:::
+
+:::
+
+:::
+
 :::

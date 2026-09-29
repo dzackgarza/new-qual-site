@@ -61,7 +61,11 @@ $$
 \pi^{-1}(U)\cong\PP_A^n.
 $$
 
-<1>1. For every $l\in\ZZ$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $l\in\ZZ$,
 $$
 \pi_*\OO_X(l)\cong
 \begin{cases}
@@ -75,7 +79,8 @@ R^i\pi_*\OO_X(l)=0
 $$
 for $0<i<n$ and every $l$, and for $i=n$ whenever $l>-n-1$.
 
-::: {.proof}
+::: pf-proof
+
 The formula for $\pi_*\OO_X(l)$ is Hartshorne II.7.11 with the convention
 $$
 X=\PP(\mce)=\underline{\operatorname{Proj}}_Y(\operatorname{Sym}\mce).
@@ -96,9 +101,14 @@ $$
 for $0<i<n$ and all $l$, and also for $i=n$ when $l>-n-1$.
 Since such trivializing affine opens form a basis of $Y$, the corresponding higher-direct-image sheaves vanish.
 This proves part (a).
+
 :::
 
-<1>2. There is a natural relative Euler sequence
+:::
+
+::: {.pf-step #s2}
+
+There is a natural relative Euler sequence
 $$
 \boxed{
 0\longrightarrow\Omega_{X/Y}
@@ -107,7 +117,8 @@ $$
 \longrightarrow0}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Hartshorne II.7.11 gives the universal quotient
 $$
 \pi^*\mce\twoheadrightarrow\OO_X(1).
@@ -126,17 +137,23 @@ These local identifications are natural under change of trivialization and there
 $$
 \mck\cong\Omega_{X/Y}.
 $$
+
 :::
 
-<1>3. The relative canonical sheaf is
+:::
+
+::: {.pf-step #s3}
+
+The relative canonical sheaf is
 $$
 \boxed{
 \omega_{X/Y}=\bigwedge^n\Omega_{X/Y}
 \cong(\pi^*D)(-n-1)}.
 $$
 
-::: {.proof}
-In step <1>2, the middle term has rank $n+1$ and the quotient has rank one.
+::: pf-proof
+
+In step [](#s2){.pf-ref}, the middle term has rank $n+1$ and the quotient has rank one.
 Taking determinants in the short exact sequence gives
 $$
 \det\Omega_{X/Y}
@@ -153,15 +170,21 @@ Thus
 $$
 \omega_{X/Y}\cong(\pi^*D)(-n-1).
 $$
+
 :::
 
-<1>4. There is a natural trace isomorphism
+:::
+
+::: {.pf-step #s4}
+
+There is a natural trace isomorphism
 $$
 \boxed{R^n\pi_*\omega_{X/Y}\cong\OO_Y}.
 $$
 
-::: {.proof}
-On a trivializing affine open $U=\Spec A$, step <1>3 identifies
+::: pf-proof
+
+On a trivializing affine open $U=\Spec A$, step [](#s3){.pf-ref} identifies
 $$
 \omega_{X/Y}|_{\pi^{-1}(U)}
 \cong
@@ -184,34 +207,45 @@ R^n\pi_*\omega_{X/Y}|_U\cong\OO_U
 $$
 therefore agree on overlaps and glue to a natural global isomorphism.
 This proves the last assertion of part (b).
+
 :::
 
-<1>5. Put $m=-l-n-1$.
-Multiplication of twists and the trace of step <1>4 give a natural pairing
+:::
+
+::: {.pf-step #s5}
+
+Put $m=-l-n-1$.
+Multiplication of twists and the trace of step [](#s4){.pf-ref} give a natural pairing
 $$
 \pi_*\OO_X(m)\otimes R^n\pi_*\OO_X(l)
 \longrightarrow D^\vee.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiplication of sections gives
 $$
 \OO_X(m)\otimes\OO_X(l)\longrightarrow\OO_X(-n-1).
 $$
-Step <1>3 and the projection formula [[P-AGH383PROJFORMULA|from Exercise III.8.3]] yield
+Step [](#s3){.pf-ref} and the projection formula [[P-AGH383PROJFORMULA|from Exercise III.8.3]] yield
 $$
 R^n\pi_*\omega_{X/Y}
 \cong
 R^n\pi_*\OO_X(-n-1)\otimes D.
 $$
-Combining with step <1>4 gives
+Combining with step [](#s4){.pf-ref} gives
 $$
 R^n\pi_*\OO_X(-n-1)\cong D^\vee.
 $$
 Pushing forward the multiplication map and then using this identification produces the displayed pairing.
+
 :::
 
-<1>6. The pairing of step <1>5 is perfect, and therefore for every $l\in\ZZ$,
+:::
+
+::: {.pf-step #s6}
+
+The pairing of step [](#s5){.pf-ref} is perfect, and therefore for every $l\in\ZZ$,
 $$
 \boxed{
 R^n\pi_*\OO_X(l)
@@ -219,7 +253,8 @@ R^n\pi_*\OO_X(l)
 \bigl(\pi_*\OO_X(-l-n-1)\bigr)^\vee\otimes D^\vee}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The assertion is local on $Y$.
 Over a trivializing affine open $U=\Spec A$, it becomes the standard pairing
 $$
@@ -231,24 +266,30 @@ H^n(\PP_A^n,\OO(-n-1))\cong A.
 $$
 Theorem III.5.1 describes these modules by monomials and shows that this pairing is perfect: a degree-$m$ monomial is paired with the unique complementary negative monomial whose product is $(x_0\cdots x_n)^{-1}$.
 
-If $m<0$, the left $H^0$ vanishes and step <1>1 gives the corresponding top-cohomology vanishing, so the statement remains valid.
-The perfect local pairings are exactly the restrictions of the global pairing in step <1>5, hence glue to the asserted sheaf isomorphism.
+If $m<0$, the left $H^0$ vanishes and step [](#s1){.pf-ref} gives the corresponding top-cohomology vanishing, so the statement remains valid.
+The perfect local pairings are exactly the restrictions of the global pairing in step [](#s5){.pf-ref}, hence glue to the asserted sheaf isomorphism.
 This proves part (c).
+
 :::
 
-<1>7. Under the hypotheses of part (d),
+:::
+
+::: {.pf-step #s7}
+
+Under the hypotheses of part (d),
 $$
 \boxed{p_a(X)=(-1)^n p_a(Y)}.
 $$
 
-::: {.proof}
-Step <1>1 with $l=0$ gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} with $l=0$ gives
 $$
 \pi_*\OO_X=\OO_Y,
 \qquad
 R^i\pi_*\OO_X=0\quad(i>0).
 $$
-Indeed the intermediate groups vanish by step <1>1, and the top group vanishes because $0>-n-1$.
+Indeed the intermediate groups vanish by step [](#s1){.pf-ref}, and the top group vanishes because $0>-n-1$.
 Exercise III.8.1 therefore gives natural isomorphisms
 $$
 H^i(X,\OO_X)\cong H^i(Y,\OO_Y)
@@ -273,14 +314,20 @@ p_a(X)
 &=(-1)^n p_a(Y).
 \end{aligned}
 $$
+
 :::
 
-<1>8. Under the hypotheses of part (d),
+:::
+
+::: {.pf-step #s8}
+
+Under the hypotheses of part (d),
 $$
 \boxed{p_g(X)=0}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $Y$ is nonsingular and $\pi$ is a projective-space bundle, $X$ is nonsingular.
 The exact sequence of differentials for the smooth morphism $\pi$ is
 $$
@@ -293,13 +340,13 @@ Taking determinants gives
 $$
 \omega_X\cong\pi^*\omega_Y\otimes\omega_{X/Y}.
 $$
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 \omega_X
 \cong
 \pi^*(\omega_Y\otimes D)\otimes\OO_X(-n-1).
 $$
-The ordinary projection formula and step <1>1 give
+The ordinary projection formula and step [](#s1){.pf-ref} give
 $$
 \pi_*\omega_X
 \cong
@@ -312,14 +359,20 @@ H^0(X,\omega_X)
 =H^0(Y,\pi_*\omega_X)=0,
 $$
 so $p_g(X)=0$.
+
 :::
 
-<1>9. If $Y$ is a nonsingular projective curve of genus $g$ and $\operatorname{rk}\mce=2$, then $X$ is a geometrically ruled surface with
+:::
+
+::: {.pf-step #s9}
+
+If $Y$ is a nonsingular projective curve of genus $g$ and $\operatorname{rk}\mce=2$, then $X$ is a geometrically ruled surface with
 $$
 \boxed{p_a(X)=-g,\qquad p_g(X)=0,\qquad q(X)=g}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Here $n=1$, so $\dim X=2$.
 The morphism $\pi:X\to Y$ is projective, and $Y$ is projective over $k$, hence $X$ is projective.
 It is nonsingular because it is locally $\PP^1$ over the nonsingular curve $Y$.
@@ -328,11 +381,11 @@ For a nonsingular projective curve,
 $$
 p_a(Y)=g.
 $$
-Step <1>7 therefore gives
+Step [](#s7){.pf-ref} therefore gives
 $$
 p_a(X)=-g,
 $$
-while step <1>8 gives $p_g(X)=0$.
+while step [](#s8){.pf-ref} gives $p_g(X)=0$.
 For a nonsingular projective surface, Remark III.7.12.3 gives
 $$
 q=p_g-p_a.
@@ -342,13 +395,19 @@ $$
 q(X)=0-(-g)=g.
 $$
 This is the asserted geometrically ruled surface.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), steps <1>2--<1>4 prove part (b), steps <1>5--<1>6 prove part (c), steps <1>7--<1>8 prove part (d), and step <1>9 proves part (e).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (b), steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (c), steps [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (d), and step [](#s9){.pf-ref} proves part (e).
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Scope of the genus assertions"}

@@ -37,13 +37,18 @@ $$
 $$
 denote the reduction of $\Phi_{255}(x)$ modulo $2$.
 
-<1>1. The polynomial $\overline{\Phi}_{255}(x)$ divides
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomial $\overline{\Phi}_{255}(x)$ divides
 $$
 x^{255}-1
 $$
 in $\FF_2[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Over $\ZZ[x]$, the cyclotomic factorization gives
 $$
 x^{255}-1
@@ -58,9 +63,14 @@ $$
 x^{255}-1
 $$
 in $\FF_2[x]$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 \alpha
 $$
@@ -70,8 +80,9 @@ $$
 \alpha^{256}=\alpha.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \alpha^{255}=1.
 $$
@@ -79,14 +90,20 @@ Multiplying by $\alpha$ gives
 $$
 \alpha^{256}=\alpha.
 $$
+
 :::
 
-<1>3. Every root $\alpha$ of $\overline{\Phi}_{255}$ lies in
+:::
+
+::: {.pf-step #s3}
+
+Every root $\alpha$ of $\overline{\Phi}_{255}$ lies in
 $$
 \FF_{256}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The roots in an algebraic closure of
 $$
 x^{256}-x
@@ -95,16 +112,22 @@ are exactly the elements of the finite field
 $$
 \FF_{256}.
 $$
-Step <1>2 says that $\alpha$ is such a root. Therefore
+Step [](#s2){.pf-ref} says that $\alpha$ is such a root. Therefore
 $$
 \alpha\in\FF_{256}.
 $$
+
 :::
 
-<1>4. The minimal polynomial of any such root $\alpha$ over $\FF_2$ has
+:::
+
+::: {.pf-step #s4}
+
+The minimal polynomial of any such root $\alpha$ over $\FF_2$ has
 degree at most $8$.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 256=2^8,
@@ -113,7 +136,7 @@ one has
 $$
 [\FF_{256}:\FF_2]=8.
 $$
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 \FF_2(\alpha)\subseteq\FF_{256}.
 $$
@@ -125,14 +148,20 @@ $$
 $$
 This degree is exactly the degree of the minimal polynomial of $\alpha$ over
 $\FF_2$.
+
 :::
 
-<1>5. The degree of $\overline{\Phi}_{255}$ is
+:::
+
+::: {.pf-step #s5}
+
+The degree of $\overline{\Phi}_{255}$ is
 $$
 \boxed{128}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Reduction modulo $2$ does not change the leading coefficient of the monic
 cyclotomic polynomial, so
 $$
@@ -161,32 +190,44 @@ $$
 128.
 \end{aligned}
 $$
+
 :::
 
-<1>6. The polynomial $\overline{\Phi}_{255}(x)$ is reducible in
+:::
+
+::: {.pf-step #s6}
+
+The polynomial $\overline{\Phi}_{255}(x)$ is reducible in
 $\FF_2[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose it were irreducible. Let $\alpha$ be one of its roots. Then
 $\overline{\Phi}_{255}$ would be the minimal polynomial of $\alpha$ over
-$\FF_2$, so step <1>5 would give
+$\FF_2$, so step [](#s5){.pf-ref} would give
 $$
 [\FF_2(\alpha):\FF_2]
 =
 128.
 $$
-But step <1>4 gives the upper bound
+But step [](#s4){.pf-ref} gives the upper bound
 $$
 [\FF_2(\alpha):\FF_2]
 \leq
 8.
 $$
 This is impossible. Therefore $\overline{\Phi}_{255}$ is reducible.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 proves that the statement in the problem is false.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} proves that the statement in the problem is false.
+
+:::
+
+:::
+
 :::

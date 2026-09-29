@@ -29,18 +29,30 @@ Show that $\mathbb{Q}(\sqrt{2})$ and $\mathbb{Q}(\sqrt{3})$ are not isomorphic.
 :::
 
 ::: {.solution}
-<1>1. Every field isomorphism between these fields fixes $\mathbb Q$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every field isomorphism between these fields fixes $\mathbb Q$.
+
+::: pf-proof
+
 A field isomorphism sends $1$ to $1$, hence fixes every integer.
 It preserves inverses, so it also fixes every quotient of integers
 with nonzero denominator. Thus it fixes the prime subfield
 $\mathbb Q$ pointwise.
+
 :::
 
-<1>2. The field $\mathbb Q(\sqrt3)$ contains no element whose square is $2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The field $\mathbb Q(\sqrt3)$ contains no element whose square is $2$.
+
+::: pf-proof
+
 For a prime $\ell$ and a nonzero rational number $r$, let
 $v_\ell(r)$ be the exponent of $\ell$ in its numerator minus the
 exponent in its denominator. Unique prime factorization gives
@@ -58,13 +70,25 @@ If $b=0$, then $a^2=2$, contradicting $v_2(2)=1$.
 If $a=0$, then $b^2=2/3$, contradicting $v_2(2/3)=1$.
 The equation $2ab=0$ forces at least one of these cases, so there
 is no such element.
+
 :::
 
-<1>3. The fields are not isomorphic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The fields are not isomorphic.
+
+::: pf-proof
+
 If an isomorphism $\sigma:\mathbb Q(\sqrt2)\to\mathbb Q(\sqrt3)$
-existed, step <1>1 would give
-$\sigma(\sqrt2)^2=\sigma(2)=2$. This contradicts step <1>2.
+existed, step [](#s1){.pf-ref} would give
+$\sigma(\sqrt2)^2=\sigma(2)=2$. This contradicts step [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -41,7 +41,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$
 g(z)
 \coloneqq
@@ -53,19 +58,26 @@ $$
 z=\frac12.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The denominator vanishes only at $z=2$, which lies outside the closed
 unit disk. Thus $g$ is holomorphic on a neighborhood of that disk.
 Its numerator has the unique zero $z=1/2$, and the denominator is
 nonzero there.
+
 :::
 
-<1>2. For every $|z|=1$,
+:::
+
+::: {.pf-step #s2}
+
+For every $|z|=1$,
 $$
 |g(z)|=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $|z|=1$, then $\overline z=z^{-1}$ and
 $$
 \begin{aligned}
@@ -89,10 +101,15 @@ $$
 \end{aligned}
 $$
 The numerator and denominator of $|g(z)|^2$ are therefore equal.
-Together with step <1>1, this proves part (a).
+Together with step [](#s1){.pf-ref}, this proves part (a).
+
 :::
 
-<1>3. For a function $f$ as in part (b), the quotient
+:::
+
+::: {.pf-step #s3}
+
+For a function $f$ as in part (b), the quotient
 $$
 h(z)
 \coloneqq
@@ -101,7 +118,8 @@ $$
 has a removable singularity at $z=1/2$ and extends holomorphically to
 the unit disk.
 
-::: {.proof}
+::: pf-proof
+
 The exponential has no zeros. The function $g$ has a simple zero at
 $1/2$, while $f(1/2)=0$. Hence one may write locally
 $$
@@ -123,15 +141,21 @@ h(z)
 \frac{u(z)(1-z/2)}{e^z},
 $$
 which is holomorphic. This gives the desired extension.
+
 :::
 
-<1>4. On the unit circle,
+:::
+
+::: {.pf-step #s4}
+
+On the unit circle,
 $$
 |h(z)|\le1.
 $$
 
-::: {.proof}
-For $|z|=1$, step <1>2 and the hypothesis on $f$ give
+::: pf-proof
+
+For $|z|=1$, step [](#s2){.pf-ref} and the hypothesis on $f$ give
 $$
 |h(z)|
 =
@@ -141,16 +165,22 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 |f(0)|\le\frac12.
 $$
 
-::: {.proof}
-By step <1>3, $h$ is holomorphic on the unit disk and continuous on its
-boundary. Step <1>4 and the maximum modulus principle imply
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $h$ is holomorphic on the unit disk and continuous on its
+boundary. Step [](#s4){.pf-ref} and the maximum modulus principle imply
 $$
 |h(0)|\le1.
 $$
@@ -172,11 +202,17 @@ Therefore
 $$
 |f(0)|\le\frac12.
 $$
+
 :::
 
-<1>6. The bound in step <1>5 is attained.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The bound in step [](#s5){.pf-ref} is attained.
+
+::: pf-proof
+
 Take
 $$
 f(z)=g(z)e^z.
@@ -185,7 +221,7 @@ Then $f$ is holomorphic on the closed unit disk and
 $$
 f\left(\frac12\right)=0.
 $$
-For $|z|=1$, step <1>2 gives
+For $|z|=1$, step [](#s2){.pf-ref} gives
 $$
 |f(z)|
 =
@@ -201,20 +237,32 @@ $$
 =
 \frac12.
 $$
+
 :::
 
-<1>7. Hence the largest possible value is
+:::
+
+::: {.pf-step #s7}
+
+Hence the largest possible value is
 $$
 \boxed{\frac12}.
 $$
 
-::: {.proof}
-Step <1>5 gives the upper bound and step <1>6 realizes it.
+::: pf-proof
+
+Step [](#s5){.pf-ref} gives the upper bound and step [](#s6){.pf-ref} realizes it.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>7 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

@@ -38,9 +38,14 @@ X^n=A?
 Let $E_{ij}$ denote the matrix unit with a $1$ in position $(i,j)$.
 Then $A=E_{14}$.
 
-<1>1. Solutions exist for $n=1,2,3$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Solutions exist for $n=1,2,3$.
+
+::: pf-proof
+
 For $n=1$, take $X=A$.
 
 For $n=2$, take
@@ -62,45 +67,69 @@ X^2=E_{13}+E_{24},
 \qquad
 X^3=E_{14}=A.
 $$
+
 :::
 
-<1>2. If $X^n=A$ for some positive integer $n$, then $X$ is
+:::
+
+::: {.pf-step #s2}
+
+If $X^n=A$ for some positive integer $n$, then $X$ is
 nilpotent.
 
-::: {.proof}
+::: pf-proof
+
 Since $A^2=0$,
 $$
 X^{2n}=A^2=0.
 $$
 Thus $X$ is nilpotent.
+
 :::
 
-<1>3. No solution exists for $n\ge4$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+No solution exists for $n\ge4$.
+
+::: pf-proof
+
 Every nilpotent endomorphism of a four-dimensional complex vector
 space has characteristic polynomial $t^4$, so the Cayley--Hamilton
-theorem gives $X^4=0$. By step <1>2, any putative solution $X$ is nilpotent. Hence for
+theorem gives $X^4=0$. By step [](#s2){.pf-ref}, any putative solution $X$ is nilpotent. Hence for
 $n\ge4$,
 $$
 X^n=0,
 $$
 contradicting $X^n=A\ne0$.
+
 :::
 
-<1>4. The required positive integers are
+:::
+
+::: {.pf-step #s4}
+
+The required positive integers are
 $$
 \boxed{n=1,2,3}.
 $$
 
-::: {.proof}
-Step <1>1 gives existence for these three integers, and step <1>3
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives existence for these three integers, and step [](#s3){.pf-ref}
 excludes every larger positive integer.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the complete classification.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the complete classification.
+
+:::
+
+:::
+
 :::

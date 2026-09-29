@@ -29,8 +29,14 @@ Prove the claim or give a counterexample.
 ::: {.solution}
 No. Take $G=S_3$ and $H=\langle(12)\rangle$.
 
-<1>1. The normalizer of $H$ is $H$ itself.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The normalizer of $H$ is $H$ itself.
+
+::: pf-proof
+
 For $g\in S_3$,
 \[
 gHg^{-1}=H
@@ -45,19 +51,39 @@ permutations in $S_3$ are $e$ and $(12)$. Thus
 \[
 N_{S_3}(H)=H.
 \]
+
 :::
 
-<1>2. The subgroup $N_{S_3}(H)=H$ is not normal in $S_3$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The subgroup $N_{S_3}(H)=H$ is not normal in $S_3$.
+
+::: pf-proof
+
 For example,
 \[
 (123)(12)(123)^{-1}=(23)\notin H.
 \]
 Hence $(123)H(123)^{-1}\ne H$.
+
 :::
 
-<1>3. Therefore a subgroup normalizer need not be normal in the ambient group.
-::: {.proof}
-This follows from <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Therefore a subgroup normalizer need not be normal in the ambient group.
+
+::: pf-proof
+
+This follows from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

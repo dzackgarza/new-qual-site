@@ -34,8 +34,15 @@ Show that $K$ is an ideal.
 :::
 
 ::: {.solution}
-<1>1. The set $K=I\cap J$ is an ideal of $R$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The set $K=I\cap J$ is an ideal of $R$.
+
+::: pf-proof
+
 Because $I$ and $J$ are ideals, $0\in I$ and $0\in J$, hence $0\in K$.
 If $a,b\in K$, then $a,b\in I$ and $a,b\in J$.
 Therefore
@@ -52,14 +59,21 @@ ra\in I\qquad\text{and}\qquad ra\in J.
 \]
 Hence $ra\in K$.
 Thus $K$ is an ideal.
+
 :::
 
-<1>2. If $R$ is a PID, then
+:::
+
+::: pf-step
+
+If $R$ is a PID, then
 \[
 I\cap J=(\operatorname{lcm}(i,j)),
 \]
 where the least common multiple is defined up to multiplication by a unit.
-::: {.proof}
+
+::: pf-proof
+
 Write $I=(i)$ and $J=(j)$.
 For any $x\in R$,
 \[
@@ -84,5 +98,11 @@ k=\frac{ij}{d}
 \]
 up to a unit.
 The ideal formula $I\cap J=(\operatorname{lcm}(i,j))$ also covers $I=(0)$ or $J=(0)$, in which case the intersection is $(0)$.
+
 :::
+
+:::
+
+:::
+
 :::

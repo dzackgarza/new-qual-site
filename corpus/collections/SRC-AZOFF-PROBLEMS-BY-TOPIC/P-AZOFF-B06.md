@@ -49,7 +49,11 @@ $$
 \alpha<c<1.
 $$
 
-<1>1. There exists $r>0$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There exists $r>0$ such that
 $$
 \norm{\nabla F(z)}<c
 $$
@@ -58,7 +62,8 @@ $$
 \norm z<r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $F$ is continuously differentiable, its gradient is continuous at the
 origin. Because
 $$
@@ -80,14 +85,20 @@ $$
 <
 c.
 $$
+
 :::
 
-<1>2. For every $z=(x,y)\in\RR^2$ with $\norm z<r$,
+:::
+
+::: {.pf-step #s2}
+
+For every $z=(x,y)\in\RR^2$ with $\norm z<r$,
 $$
 \abs{F(z)}\leq c\norm z.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix such a $z$ and define
 $$
 g(t)=F(tz),
@@ -102,7 +113,7 @@ Since
 $$
 \norm{tz}\leq\norm z<r,
 $$
-step <1>1 and Cauchy--Schwarz give
+step [](#s1){.pf-ref} and Cauchy--Schwarz give
 $$
 \abs{g'(t)}
 \leq
@@ -124,15 +135,21 @@ $$
 c\norm z.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Whenever $\norm{(x,y)}<r$,
+:::
+
+::: {.pf-step #s3}
+
+Whenever $\norm{(x,y)}<r$,
 $$
 \boxed{\abs{F(x,y)}<r}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \abs{F(x,y)}
 \leq
@@ -145,11 +162,17 @@ $$
 cr<r.
 $$
 Combining these inequalities gives the claim.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the required radius and estimate.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required radius and estimate.
+
+:::
+
+:::
+
 :::

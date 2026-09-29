@@ -21,17 +21,31 @@ review: draft
 :::
 
 ::: {.solution}
-<1>1. Let $P_1$ and $P_2$ be $p_1$- and $p_2$-subgroups with $p_1\ne p_2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $P_1$ and $P_2$ be $p_1$- and $p_2$-subgroups with $p_1\ne p_2$.
+
+::: pf-proof
+
 The order of $P_1\cap P_2$ divides both $|P_1|$, a power of $p_1$, and $|P_2|$, a power of $p_2$. Hence
 \[
 |P_1\cap P_2|=1,
 \]
 so $P_1\cap P_2=\{e\}$.
+
 :::
 
-<1>2. Let $G$ be a finite $p$-group and let $1\ne N\trianglelefteq G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Let $G$ be a finite $p$-group and let $1\ne N\trianglelefteq G$.
+
+::: pf-proof
+
 Let $G$ act on $N$ by conjugation. Because $N$ is normal, this action is well-defined. Its fixed points are exactly
 \[
 N\cap Z(G).
@@ -49,5 +63,11 @@ Since $N$ is a nontrivial subgroup of a $p$-group, $p\mid |N|$. Hence
 p\mid |N\cap Z(G)|.
 \]
 Thus $N\cap Z(G)$ contains more than the identity.
+
 :::
+
+:::
+
+:::
+
 :::

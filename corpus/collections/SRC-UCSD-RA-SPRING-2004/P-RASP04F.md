@@ -39,8 +39,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Bound the multiplication operator.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Bound the multiplication operator.
+
+::: pf-proof
+
 For $h\in L^2(\mu)$,
 \[
 \begin{aligned}
@@ -53,10 +60,17 @@ Therefore
 \[
 \boxed{\|M_{\varphi\circ f}\|\le \|\varphi\|_u.}
 \]
+
 :::
 
-<1>2. Prove strong convergence under bounded pointwise convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove strong convergence under bounded pointwise convergence.
+
+::: pf-proof
+
 Assume $\varphi_n(t)\to\varphi(t)$ for every $t\in[-1,1]$ and that
 \[
 \sup_n\|\varphi_n\|_u\le C<\infty.
@@ -76,10 +90,17 @@ which is integrable. By the Dominated Convergence Theorem,
 \[
 \boxed{M_{\varphi_n\circ f}h\to M_{\varphi\circ f}h\text{ in }L^2.}
 \]
+
 :::
 
-<1>3. Strong convergence need not imply convergence in operator norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+Strong convergence need not imply convergence in operator norm.
+
+::: pf-proof
+
 Take
 \[
 X=[0,1],\qquad \mu=m,\qquad f(x)=x,
@@ -108,5 +129,11 @@ Thus
 \boxed{\|M_{\varphi_n\circ f}\|=1\quad\text{for every }n,}
 \]
 even though $\varphi_n\to0$ boundedly.
+
 :::
+
+:::
+
+:::
+
 :::

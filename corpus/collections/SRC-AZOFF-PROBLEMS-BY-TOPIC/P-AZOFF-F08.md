@@ -48,10 +48,15 @@ $$
 g(z)=\sum_{n\in\ZZ}\frac1{(z-n)^2}.
 $$
 
-<1>1. The series defining $g$ converges locally uniformly on
+::: pf
+
+::: {.pf-step #s1}
+
+The series defining $g$ converges locally uniformly on
 $\CC\sm\ZZ$ and therefore defines a holomorphic function there.
 
-::: {.proof}
+::: pf-proof
+
 Let $K\subseteq\CC\sm\ZZ$ be compact and put
 $$
 M=\max_{z\in K}\abs{z}.
@@ -77,15 +82,21 @@ $$
 converges. The Weierstrass M-test therefore gives uniform convergence of the
 tail on $K$. Adding the finitely many remaining holomorphic terms proves
 local uniform convergence on $\CC\sm\ZZ$, hence holomorphy there.
+
 :::
 
-<1>2. The singularities of $g$ are exactly the integers, and each integer
+:::
+
+::: {.pf-step #s2}
+
+The singularities of $g$ are exactly the integers, and each integer
 $k$ is a double pole with singular part
 $$
 \frac1{(z-k)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $k\in\ZZ$ and choose $0<r<1/2$. On the disk
 $$
 \abs{z-k}<r,
@@ -100,18 +111,24 @@ g(z)
 \frac1{(z-n)^2}.
 $$
 The second series converges locally uniformly on this disk by the argument
-of step <1>1 and is holomorphic there, since none of its denominators
+of step [](#s1){.pf-ref} and is holomorphic there, since none of its denominators
 vanishes. Thus the first term is the complete principal part at $k$, so $k$
-is a double pole. Step <1>1 shows there are no other singularities.
+is a double pole. Step [](#s1){.pf-ref} shows there are no other singularities.
+
 :::
 
-<1>3. The singularities of $f$ are exactly the integers, and at every
+:::
+
+::: {.pf-step #s3}
+
+The singularities of $f$ are exactly the integers, and at every
 $k\in\ZZ$ its singular part is also
 $$
 \frac1{(z-k)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The zeros of $\sin(\pi z)$ are exactly the integers and are simple, so
 $f$ has no singularities away from $\ZZ$ and has a double pole at each
 integer.
@@ -143,20 +160,32 @@ f(k+w)
 \end{aligned}
 $$
 Thus the entire principal part is $w^{-2}=(z-k)^{-2}$.
+
 :::
 
-<1>4. Parts (a) and (b) hold: $f$ and $g$ have the same singularities and
+:::
+
+::: {.pf-step #s4}
+
+Parts (a) and (b) hold: $f$ and $g$ have the same singularities and
 the same singular parts at each one.
 
-::: {.proof}
-Steps <1>2 and <1>3 show that both functions have exactly the integers as
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that both functions have exactly the integers as
 double poles and that the principal part at every integer $k$ is
 $(z-k)^{-2}$.
+
 :::
 
-<1>5. Both $f$ and $g$ have period $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Both $f$ and $g$ have period $1$.
+
+::: pf-proof
+
 Since
 $$
 \sin(\pi(z+1))=-\sin(\pi z),
@@ -176,15 +205,21 @@ g(z),
 \end{aligned}
 $$
 where $m=n-1$.
+
 :::
 
-<1>6. Uniformly for $0\leq x\leq1$,
+:::
+
+::: {.pf-step #s6}
+
+Uniformly for $0\leq x\leq1$,
 $$
 f(x+iy)\longrightarrow0
 $$
 as $\abs{y}\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For real $x,y$,
 $$
 \abs{\sin(\pi(x+iy))}^2
@@ -199,15 +234,21 @@ $$
 $$
 The right-hand side is independent of $x$ and tends to $0$ as
 $\abs{y}\to\infty$.
+
 :::
 
-<1>7. Uniformly for $0\leq x\leq1$,
+:::
+
+::: {.pf-step #s7}
+
+Uniformly for $0\leq x\leq1$,
 $$
 g(x+iy)\longrightarrow0
 $$
 as $\abs{y}\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z=x+iy$ with $0\leq x\leq1$ and $y\neq0$,
 $$
 \abs{g(z)}
@@ -243,25 +284,37 @@ $$
 $$
 uniformly in $x\in[0,1]$. This bound tends to $0$ as
 $\abs{y}\to\infty$.
+
 :::
 
-<1>8. The difference
+:::
+
+::: {.pf-step #s8}
+
+The difference
 $$
 h=f-g
 $$
 extends to an entire, $1$-periodic function.
 
-::: {.proof}
-By step <1>4, at each integer the principal parts of $f$ and $g$ cancel.
+::: pf-proof
+
+By step [](#s4){.pf-ref}, at each integer the principal parts of $f$ and $g$ cancel.
 Thus every singularity of $h$ at an integer is removable. After filling in
-those removable singularities, $h$ is entire. Step <1>5 gives
+those removable singularities, $h$ is entire. Step [](#s5){.pf-ref} gives
 $h(z+1)=h(z)$.
+
 :::
 
-<1>9. The entire function $h$ is bounded on $\CC$.
+:::
 
-::: {.proof}
-By steps <1>6 and <1>7,
+::: {.pf-step #s9}
+
+The entire function $h$ is bounded on $\CC$.
+
+::: pf-proof
+
+By steps [](#s6){.pf-ref} and [](#s7){.pf-ref},
 $$
 h(x+iy)\longrightarrow0
 $$
@@ -282,9 +335,14 @@ the entire function $h$ is bounded. Hence $h$ is bounded on the whole
 vertical strip $0\leq\operatorname{Re}z\leq1$. By $1$-periodicity, every
 point of $\CC$ translates by an integer into this strip, so the same bound
 holds on all of $\CC$.
+
 :::
 
-<1>10. One has
+:::
+
+::: {.pf-step #s10}
+
+One has
 $$
 \boxed{
 \frac{\pi^2}{\sin^2(\pi z)}
@@ -293,16 +351,23 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>9 and Liouville's theorem, $h$ is constant. Steps <1>6 and <1>7
+::: pf-proof
+
+By step [](#s9){.pf-ref} and Liouville's theorem, $h$ is constant. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref}
 show that $h(z)\to0$ as $\abs{\operatorname{Im}z}\to\infty$ in a
 fundamental strip. A constant function with this limit is zero. Therefore
 $h\equiv0$, which is the displayed identity.
+
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>4--<1>10 establish parts (a)--(d).
 :::
+
+::: pf-qed
+
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} establish parts (a)--(d).
+
+:::
+
+:::
+
 :::

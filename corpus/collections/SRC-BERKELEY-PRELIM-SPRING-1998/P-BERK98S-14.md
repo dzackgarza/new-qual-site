@@ -31,7 +31,12 @@ for every $t\ge0$.
 :::
 
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$
 g(t)\coloneqq e^{-Kt}y(t).
 $$
@@ -41,7 +46,8 @@ g'(t)\leq0
 $$
 for every $t\geq0$.
 
-::: {.proof}
+::: pf-proof
+
 By the product rule,
 $$
 \begin{aligned}
@@ -54,35 +60,53 @@ e^{-Kt}\bigl(y'(t)-Ky(t)\bigr).
 $$
 Since $e^{-Kt}>0$ and $y'(t)\leq Ky(t)$ by hypothesis, the last expression
 is nonpositive.
+
 :::
 
-<1>2. For every $t\geq0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $t\geq0$,
 $$
 g(t)\leq g(0)=y(0).
 $$
 
-::: {.proof}
-Step <1>1 shows that $g$ is nonincreasing on $[0,\infty)$.
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that $g$ is nonincreasing on $[0,\infty)$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{y(t)\leq e^{Kt}y(0)}
 $$
 for every $t\geq0$.
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives
 $$
 e^{-Kt}y(t)\leq y(0).
 $$
 Multiplying by the positive number $e^{Kt}$ yields the displayed
 inequality.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

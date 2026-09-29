@@ -28,9 +28,14 @@ Find all commutative rings $R$ with identity such that $R$ has a unique maximal 
 ::: {.solution}
 Let $\mathfrak m$ be the unique maximal ideal of $R$.
 
-<1>1. For every $x\in\mathfrak m$, the element $1+x$ is a unit.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For every $x\in\mathfrak m$, the element $1+x$ is a unit.
+
+::: pf-proof
+
 In a commutative ring with a unique maximal ideal, every nonunit lies in
 that maximal ideal. If $1+x$ were not a unit, then
 $$
@@ -41,25 +46,37 @@ $$
 1=(1+x)-x\in\mathfrak m,
 $$
 contradicting that a maximal ideal is proper. Hence $1+x$ is a unit.
+
 :::
 
-<1>2. The maximal ideal is zero:
+:::
+
+::: pf-step
+
+The maximal ideal is zero:
 $$
 \mathfrak m=0.
 $$
 
-::: {.proof}
-The unit group is trivial, so its only element is $1$. By step <1>1,
+::: pf-proof
+
+The unit group is trivial, so its only element is $1$. By step [](#s1){.pf-ref},
 for every $x\in\mathfrak m$,
 $$
 1+x=1.
 $$
 Thus $x=0$, proving the claim.
+
 :::
 
-<1>3. The ring $R$ is a field with exactly two elements.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The ring $R$ is a field with exactly two elements.
+
+::: pf-proof
+
 Since the unique maximal ideal is $0$, every nonzero element lies
 outside the maximal ideal and is therefore a unit. Hence $R$ is a
 field. Its group of units is
@@ -71,26 +88,44 @@ $$
 R=\{0,1\},
 $$
 so $R\cong\FF_2$.
+
 :::
 
-<1>4. The ring $\FF_2$ satisfies the hypotheses.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The ring $\FF_2$ satisfies the hypotheses.
+
+::: pf-proof
+
 Its unique maximal ideal is $(0)$, and its only unit is $1$.
+
 :::
 
-<1>5. Therefore the complete answer is
+:::
+
+::: {.pf-step #s5}
+
+Therefore the complete answer is
 $$
 \boxed{R\cong\FF_2}.
 $$
 
-::: {.proof}
-Step <1>3 proves necessity, and step <1>4 proves sufficiency.
+::: pf-proof
+
+Step [](#s3){.pf-ref} proves necessity, and step [](#s4){.pf-ref} proves sufficiency.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required classification.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required classification.
+
+:::
+
+:::
+
 :::

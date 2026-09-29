@@ -33,8 +33,15 @@ is continuous and bounded on $\mathbb{R}$.
 :::
 
 ::: {.solution}
-<1>1. Prove boundedness.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove boundedness.
+
+::: pf-proof
+
 For every $y\in\mathbb R$,
 \[
 |g(y)|
@@ -46,10 +53,17 @@ Hence
 \[
 \boxed{\|g\|_\infty\le\|f\|_1.}
 \]
+
 :::
 
-<1>2. Prove continuity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove continuity.
+
+::: pf-proof
+
 Let $y_k\to y$. For each fixed $x\in\mathbb R$,
 \[
 \sin(y_k^2x)f(x)\longrightarrow \sin(y^2x)f(x).
@@ -63,5 +77,11 @@ and $f\in L^1(\mathbb R)$. By dominated convergence,
 g(y_k)\longrightarrow g(y).
 \]
 Therefore $g$ is continuous on $\mathbb R$.
+
 :::
+
+:::
+
+:::
+
 :::

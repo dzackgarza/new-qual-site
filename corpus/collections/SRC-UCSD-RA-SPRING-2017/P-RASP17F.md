@@ -37,10 +37,16 @@ $$
 show $f$ is absolutely continuous and $f' = g$ $m$-a.e.
 :::
 
-
 ::: {.solution}
-<1>1. Differentiate the mollified indicator.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Differentiate the mollified indicator.
+
+::: pf-proof
+
 For every \(x\in\mathbb R\),
 \[
 h_\varepsilon(x)
@@ -57,10 +63,17 @@ Since \(\delta_\varepsilon\) is smooth, the Fundamental Theorem of Calculus give
 h_\varepsilon'(x)
 =\delta_\varepsilon(x-a)-\delta_\varepsilon(x-b).}
 \]
+
 :::
 
-<1>2. Construct an absolutely continuous primitive of \(g\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Construct an absolutely continuous primitive of \(g\).
+
+::: pf-proof
+
 Define
 \[
 G(x):=\int_0^x g(t)\,dt.
@@ -84,10 +97,17 @@ satisfies
 \qquad\text{for every }h\in C_c^\infty(\mathbb R).
 \]
 Thus the distributional derivative of \(u\) is zero.
+
 :::
 
-<1>3. A continuous function with zero distributional derivative is constant.
-::: {.proof}
+:::
+
+::: pf-step
+
+A continuous function with zero distributional derivative is constant.
+
+::: pf-proof
+
 Let \(\delta_\varepsilon\) be the mollifier above. Since \(u'\) is the zero distribution,
 \[
 (u*\delta_\varepsilon)'=u'*\delta_\varepsilon=0.
@@ -111,5 +131,11 @@ Thus \(f\) is absolutely continuous and, by the Lebesgue Fundamental Theorem of 
 \[
 \boxed{f'(x)=g(x)\text{ for a.e. }x.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

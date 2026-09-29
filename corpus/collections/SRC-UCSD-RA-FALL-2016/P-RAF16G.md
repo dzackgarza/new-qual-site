@@ -30,8 +30,15 @@ Use the Principle of Uniform Boundedness to prove that $\sum_{k=1}^{\infty} |\xi
 :::
 
 ::: {.solution}
-<1>1. Define the partial-sum functionals.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Define the partial-sum functionals.
+
+::: pf-proof
+
 For each $n\ge1$, define
 \[
 T_n:c_0\to\mathbb R,
@@ -47,10 +54,17 @@ Hence
 \[
 \|T_n\|\le\sum_{k=1}^n|\xi_k|.
 \]
+
 :::
 
-<1>2. Compute the norm exactly.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the norm exactly.
+
+::: pf-proof
+
 For fixed $n$, define $a^{(n)}\in c_0$ by
 \[
 a_k^{(n)}=
@@ -71,10 +85,17 @@ Therefore
 \[
 \boxed{\|T_n\|=\sum_{k=1}^n|\xi_k|.}
 \]
+
 :::
 
-<1>3. Apply the Principle of Uniform Boundedness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Principle of Uniform Boundedness.
+
+::: pf-proof
+
 By hypothesis, for every fixed $a\in c_0$, the scalar sequence
 \[
 T_n(a)=\sum_{k=1}^n a_k\xi_k
@@ -97,5 +118,11 @@ The partial sums are increasing, so they converge to a finite limit. Thus
 \[
 \boxed{\sum_{k=1}^\infty|\xi_k|<\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

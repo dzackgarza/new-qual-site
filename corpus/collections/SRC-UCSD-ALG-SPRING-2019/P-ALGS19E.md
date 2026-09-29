@@ -27,19 +27,30 @@ Suppose $A$ is a unital commutative ring, and $P_1$ and $P_2$ are finitely gener
 Prove that $\operatorname{Hom}_A(P_1, P_2)$ is a projective $A$-module.
 :::
 
-
 ::: {.solution}
-<1>1. Since \(P_1\) and \(P_2\) are finitely generated projective, there exist finitely generated modules \(Q_1,Q_2\) and integers \(m,n\ge 0\) such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+Since \(P_1\) and \(P_2\) are finitely generated projective, there exist finitely generated modules \(Q_1,Q_2\) and integers \(m,n\ge 0\) such that
 \[
 P_1\oplus Q_1\cong A^m,
 \qquad
 P_2\oplus Q_2\cong A^n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 A finitely generated projective module is a direct summand of a finite free module. Indeed, choose a surjection \(A^m\twoheadrightarrow P_1\); projectivity splits it, so \(A^m\cong P_1\oplus Q_1\). The same argument applies to \(P_2\).
+
 :::
 
-<1>2. There is a natural direct-sum decomposition
+:::
+
+::: {.pf-step #s2}
+
+There is a natural direct-sum decomposition
 \[
 \operatorname{Hom}_A(P_1\oplus Q_1,P_2\oplus Q_2)
 \cong
@@ -48,22 +59,44 @@ A finitely generated projective module is a direct summand of a finite free modu
 \oplus\operatorname{Hom}_A(Q_1,P_2)
 \oplus\operatorname{Hom}_A(Q_1,Q_2).
 \]
-::: {.proof}
+
+::: pf-proof
+
 A homomorphism from \(P_1\oplus Q_1\) to \(P_2\oplus Q_2\) is uniquely determined by its four component maps obtained by composing the two source inclusions with the two target projections. Conversely, any four such component maps assemble uniquely to a homomorphism of the direct sums.
+
 :::
 
-<1>3. The module in the left-hand side of <1>2 is finite free:
+:::
+
+::: {.pf-step #s3}
+
+The module in the left-hand side of step [](#s2){.pf-ref} is finite free:
 \[
 \operatorname{Hom}_A(P_1\oplus Q_1,P_2\oplus Q_2)
 \cong \operatorname{Hom}_A(A^m,A^n)
 \cong A^{mn}.
 \]
-::: {.proof}
-Use the isomorphisms from <1>1. An \(A\)-linear map \(A^m\to A^n\) is uniquely specified by an \(n\times m\) matrix with entries in \(A\), and the set of such matrices is the free \(A\)-module \(A^{mn}\).
+
+::: pf-proof
+
+Use the isomorphisms from step [](#s1){.pf-ref}. An \(A\)-linear map \(A^m\to A^n\) is uniquely specified by an \(n\times m\) matrix with entries in \(A\), and the set of such matrices is the free \(A\)-module \(A^{mn}\).
+
 :::
 
-<1>4. Therefore \(\operatorname{Hom}_A(P_1,P_2)\) is projective.
-::: {.proof}
-By <1>2 and <1>3, \(\operatorname{Hom}_A(P_1,P_2)\) is a direct summand of the free module \(A^{mn}\). Every direct summand of a free module is projective.
 :::
+
+::: pf-step
+
+Therefore \(\operatorname{Hom}_A(P_1,P_2)\) is projective.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, \(\operatorname{Hom}_A(P_1,P_2)\) is a direct summand of the free module \(A^{mn}\). Every direct summand of a free module is projective.
+
+:::
+
+:::
+
+:::
+
 :::

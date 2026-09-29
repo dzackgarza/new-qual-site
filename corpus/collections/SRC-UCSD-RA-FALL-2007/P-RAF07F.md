@@ -31,43 +31,99 @@ Prove that if $c < m(U)$, then there exist disjoint balls $B_1, \ldots, B_k$ in 
 :::
 
 ::: {.solution}
-<1>1. Since $c < m(U)$ and $U = \bigcup_{B \in \mathcal{C}} B$, there is a compact set $K \subseteq U$ with $m(K) > c$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Since $c < m(U)$ and $U = \bigcup_{B \in \mathcal{C}} B$, there is a compact set $K \subseteq U$ with $m(K) > c$.
+
+::: pf-proof
+
 inner regularity of Lebesgue measure (a measurable set of finite measure is approximated from inside by compact sets).
+
 :::
 
-<1>2. $K$ is covered by the open balls in $\mathcal{C}$, so by compactness there is a finite subcover $B_1', \ldots, B_N'$ of $K$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$K$ is covered by the open balls in $\mathcal{C}$, so by compactness there is a finite subcover $B_1', \ldots, B_N'$ of $K$.
+
+::: pf-proof
+
 compactness.
+
 :::
 
-<1>3. Choose from $B_1', \ldots, B_N'$ a disjoint subcollection $B_1, \ldots, B_k$ greedily: pick the largest remaining ball, discard all balls intersecting it, and repeat.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Choose from $B_1', \ldots, B_N'$ a disjoint subcollection $B_1, \ldots, B_k$ greedily: pick the largest remaining ball, discard all balls intersecting it, and repeat.
+
+::: pf-proof
+
 greedy selection algorithm.
+
 :::
 
-<1>4. Every discarded ball $B_j'$ is contained in a ball $\tilde B_j$ concentric with some selected $B_i$ but with $3$ times the radius.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every discarded ball $B_j'$ is contained in a ball $\tilde B_j$ concentric with some selected $B_i$ but with $3$ times the radius.
+
+::: pf-proof
+
 if $B_j'$ (radius $r_j$) intersects a selected ball $B_i$ (radius $r_i \ge r_j$), then $B_j' \subseteq \tilde B_i$ where $\tilde B_i$ has the same center as $B_i$ and radius $3r_i$.
+
 :::
 
-<1>5. Hence $K \subseteq \bigcup_{i=1}^k \tilde B_i$, where $\tilde B_i$ is the $3$-fold dilation of $B_i$.
-::: {.proof}
-<1>3 and <1>4 (every ball in the cover is either selected or contained in a $3$-fold dilation of a selected ball).
 :::
 
-<1>6. Therefore $c < m(K) \le \sum_{i=1}^k m(\tilde B_i) = 3^n \sum_{i=1}^k m(B_i)$.
-::: {.proof}
-<1>1, <1>5, and $m(\tilde B_i) = 3^n m(B_i)$ (scaling by $3$ multiplies measure by $3^n$).
+::: {.pf-step #s5}
+
+Hence $K \subseteq \bigcup_{i=1}^k \tilde B_i$, where $\tilde B_i$ is the $3$-fold dilation of $B_i$.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} (every ball in the cover is either selected or contained in a $3$-fold dilation of a selected ball).
+
 :::
 
-<1>7. Hence $\sum_{i=1}^k m(B_i) > 3^{-n} c$.
-::: {.proof}
-<1>6, dividing by $3^n$.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
+::: {.pf-step #s6}
+
+Therefore $c < m(K) \le \sum_{i=1}^k m(\tilde B_i) = 3^n \sum_{i=1}^k m(B_i)$.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s5){.pf-ref}, and $m(\tilde B_i) = 3^n m(B_i)$ (scaling by $3$ multiplies measure by $3^n$).
+
 :::
+
+:::
+
+::: {.pf-step #s7}
+
+Hence $\sum_{i=1}^k m(B_i) > 3^{-n} c$.
+
+::: pf-proof
+
+Step [](#s6){.pf-ref}, dividing by $3^n$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref}.
+
+:::
+
+:::
+
 :::

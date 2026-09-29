@@ -33,9 +33,14 @@ Write $D=\{z:|z|<1\}$ and $A=\{w:1<|w|<2\}$.
 Suppose there were a biholomorphism $f:D\setminus\{0\}\to A$
 with holomorphic inverse $g:A\to D\setminus\{0\}$.
 
-<1>1. The map $f$ extends holomorphically to $D$, with its value at zero in $A$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The map $f$ extends holomorphically to $D$, with its value at zero in $A$.
+
+::: pf-proof
+
 The bound $|f|<2$ makes the singularity at zero removable
 [@SS03]. Denote the extension by $F$. Continuity gives
 $1\leq|F(0)|\leq2$. The extension is nonconstant since
@@ -49,11 +54,17 @@ $1/F$ is holomorphic with modulus at most one and with
 modulus one at zero. The same principle makes $1/F$,
 and hence $F$, constant, again a contradiction [@SS03].
 Thus $1<|F(0)|<2$, so $F(0)\in A$.
+
 :::
 
-<1>2. The inverse map gives a contradiction at the added point.
+:::
 
-::: {.proof}
+::: pf-step
+
+The inverse map gives a contradiction at the added point.
+
+::: pf-proof
+
 For every $z\in D\setminus\{0\}$, one has
 $g(F(z))=g(f(z))=z$. Since $F(0)\in A$, the map
 $g$ is continuous at $F(0)$. Letting $z\to0$ therefore gives
@@ -62,5 +73,11 @@ g(F(0))=0.
 $$
 But $g$ takes all its values in $D\setminus\{0\}$.
 This contradiction rules out the biholomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -35,13 +35,18 @@ $$
 B(x,r)\coloneqq\{y\in\RR^n:\norm{y-x}<r\}.
 $$
 
-<1>1. For every $x\in K$, there are an index $j(x)$ and a number
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in K$, there are an index $j(x)$ and a number
 $r_x>0$ such that
 $$
 B(x,2r_x)\subseteq B_{j(x)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because the balls $B_j$ cover $K$, choose $j(x)$ with
 $$
 x\in B_{j(x)}.
@@ -69,22 +74,33 @@ $$
 R_x.
 $$
 Hence $y\in B_{j(x)}$.
+
 :::
 
-<1>2. There are points $x_1,\ldots,x_N\in K$ such that
+:::
+
+::: {.pf-step #s2}
+
+There are points $x_1,\ldots,x_N\in K$ such that
 $$
 K\subseteq\bigcup_{i=1}^N B(x_i,r_{x_i}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The family
 $$
 \{B(x,r_x):x\in K\}
 $$
 is an open cover of $K$. Since $K$ is compact, it has a finite subcover.
+
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #s3}
+
+Define
 $$
 \varepsilon\coloneqq
 \min_{1\leq i\leq N}r_{x_i}.
@@ -94,16 +110,23 @@ $$
 \varepsilon>0.
 $$
 
-::: {.proof}
-Every $r_{x_i}$ is positive by step <1>1, and the minimum is taken over
+::: pf-proof
+
+Every $r_{x_i}$ is positive by step [](#s1){.pf-ref}, and the minimum is taken over
 finitely many such numbers.
+
 :::
 
-<1>4. For every $y\in K$, the ball $B(y,\varepsilon)$ is contained in
+:::
+
+::: {.pf-step #s4}
+
+For every $y\in K$, the ball $B(y,\varepsilon)$ is contained in
 one of the original covering balls $B_j$.
 
-::: {.proof}
-By step <1>2, choose $i$ such that
+::: pf-proof
+
+By step [](#s2){.pf-ref}, choose $i$ such that
 $$
 y\in B(x_i,r_{x_i}).
 $$
@@ -119,11 +142,11 @@ $$
 2r_{x_i},
 \end{aligned}
 $$
-because $\varepsilon\leq r_{x_i}$ by step <1>3. Thus
+because $\varepsilon\leq r_{x_i}$ by step [](#s3){.pf-ref}. Thus
 $$
 z\in B(x_i,2r_{x_i}),
 $$
-and step <1>1 gives
+and step [](#s1){.pf-ref} gives
 $$
 z\in B_{j(x_i)}.
 $$
@@ -131,23 +154,35 @@ Therefore
 $$
 B(y,\varepsilon)\subseteq B_{j(x_i)}.
 $$
+
 :::
 
-<1>5. Hence there exists a uniform radius
+:::
+
+::: {.pf-step #s5}
+
+Hence there exists a uniform radius
 $$
 \boxed{\varepsilon>0}
 $$
 such that every $\varepsilon$-ball centered at a point of $K$ is
 contained in one member of the given cover.
 
-::: {.proof}
-Step <1>3 provides a positive $\varepsilon$, and step <1>4 proves the
+::: pf-proof
+
+Step [](#s3){.pf-ref} provides a positive $\varepsilon$, and step [](#s4){.pf-ref} proves the
 required containment for every center $y\in K$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

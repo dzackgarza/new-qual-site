@@ -46,7 +46,11 @@ t\coloneqq\log x,
 y(x)\coloneqq x^{1/2}u(t).
 $$
 
-<1>1. Under this substitution,
+::: pf
+
+::: {.pf-step #s1}
+
+Under this substitution,
 $$
 y''=\frac{ay}{x^2}
 $$
@@ -55,7 +59,8 @@ $$
 u''=(a+\tfrac14)u.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $dt/dx=1/x$,
 $$
 y'
@@ -86,9 +91,14 @@ $$
 u''-\frac14u=au,
 $$
 which is the stated equation.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 a>-\frac14,
 $$
@@ -107,8 +117,9 @@ x^{1/2-\mu}
 }
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 u''=\mu^2u.
 $$
@@ -140,9 +151,14 @@ x^{1/2-\mu}\\
 $$
 Thus they are linearly independent and form a basis of the
 $2$-dimensional solution space.
+
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #s3}
+
+If
 $$
 a=-\frac14,
 $$
@@ -157,8 +173,9 @@ x^{1/2}\log x
 }
 $$
 
-::: {.proof}
-By step <1>1, the transformed equation is
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the transformed equation is
 $$
 u''=0,
 $$
@@ -177,9 +194,14 @@ x^{1/2}\log x
 1,
 $$
 so the two solutions are linearly independent.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 a<-\frac14,
 $$
@@ -198,8 +220,9 @@ x^{1/2}\sin(\tau\log x)
 }
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 u''=-\tau^2u.
 $$
@@ -215,9 +238,14 @@ $$
 \tau\ne0,
 $$
 so they are linearly independent.
+
 :::
 
-<1>5. When $a=-1/4$, the unique solution satisfying
+:::
+
+::: {.pf-step #s5}
+
+When $a=-1/4$, the unique solution satisfying
 $$
 y(1)=0,
 \qquad
@@ -228,8 +256,9 @@ $$
 \boxed{y(x)=x^{1/2}\log x}.
 $$
 
-::: {.proof}
-By step <1>3, every solution has the form
+::: pf-proof
+
+By step [](#s3){.pf-ref}, every solution has the form
 $$
 y(x)
 =
@@ -257,12 +286,18 @@ x^{-1/2}
 $$
 whose value at $x=1$ is $1$. Therefore the condition $y'(1)=1$
 forces $c_2=1$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>4 give the real solution space for every real $a$, and
-step <1>5 gives the requested solution in the repeated-root case.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the real solution space for every real $a$, and
+step [](#s5){.pf-ref} gives the requested solution in the repeated-root case.
+
+:::
+
+:::
+
 :::

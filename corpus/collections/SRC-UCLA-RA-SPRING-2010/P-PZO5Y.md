@@ -43,11 +43,17 @@ c. Define the Cauchy potential of $\mu$ to be $$S_\mu(z) = \int_\mathbb{C} \frac
 ::: {.solution}
 Let $dA=dx\,dy$ denote planar Lebesgue measure.
 
-<1>1. For every compact $K\subseteq\mathbb C$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every compact $K\subseteq\mathbb C$,
 \[
 \int_K U_\mu(z)\,dA(z)<\infty.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because both $K$ and $\operatorname{supp}\mu$ are compact, choose $R>0$ such that
 \[
 K\cup\operatorname{supp}\mu\subseteq B(0,R).
@@ -82,11 +88,18 @@ The integrand $(z,w)\mapsto |z-w|^{-1}$ is nonnegative and measurable, so Tonell
 &\le 4\pi R\,\mu(\mathbb C)<\infty.
 \end{aligned}
 \]
+
 :::
 
-<1>2. The potential $U_\mu(z)$ is finite for Lebesgue-almost every $z\in\mathbb C$.
-::: {.proof}
-For every $N\ge1$, apply <1>1 to the compact square
+:::
+
+::: pf-step
+
+The potential $U_\mu(z)$ is finite for Lebesgue-almost every $z\in\mathbb C$.
+
+::: pf-proof
+
+For every $N\ge1$, apply step [](#s1){.pf-ref} to the compact square
 \[
 Q_N=[-N,N]+i[-N,N].
 \]
@@ -101,7 +114,6 @@ Because
 \]
 the union of the corresponding exceptional null sets is still null.
 This proves part (a).
-:::
 
 For $y\in\mathbb R$, write
 \[
@@ -112,8 +124,16 @@ and for $x\in\mathbb R$ write
 L_x^v=\{x+iy:y\in\mathbb R\}.
 \]
 
-<1>3. Only countably many horizontal lines have positive $\mu$-measure, and only countably many vertical lines have positive $\mu$-measure.
-::: {.proof}
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Only countably many horizontal lines have positive $\mu$-measure, and only countably many vertical lines have positive $\mu$-measure.
+
+::: pf-proof
+
 For $m\ge1$, let
 \[
 H_m=\left\{y\in\mathbb R:\mu(L_y^h)\ge\frac1m\right\}.
@@ -127,16 +147,23 @@ If $\mu(L_y^h)>0$, then $y\in H_m$ for some $m$, so
 \]
 is countable.
 The same argument applies to vertical lines.
+
 :::
 
-<1>4. For almost every horizontal line $L$, one has $\mu(L)=0$ and
+:::
+
+::: {.pf-step #s4}
+
+For almost every horizontal line $L$, one has $\mu(L)=0$ and
 \[
 \int_K U_\mu\,ds<\infty
 \]
 for every compact $K\subseteq L$.
-::: {.proof}
+
+::: pf-proof
+
 Fix $N\ge1$.
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 \int_{Q_N}U_\mu(x+iy)\,dx\,dy<\infty.
 \]
@@ -160,7 +187,7 @@ E^h=
 \cup
 \{y:\mu(L_y^h)>0\}.
 \]
-By <1>3, $E^h$ has Lebesgue measure zero.
+By step [](#s3){.pf-ref}, $E^h$ has Lebesgue measure zero.
 
 Take $y\notin E^h$ and a compact set $K\subseteq L_y^h$.
 For sufficiently large $N$, one has $|y|\le N$ and
@@ -179,35 +206,54 @@ and, by the definition of $E^h$,
 \mu(L_y^h)=0.
 \]
 Thus every horizontal line outside a null family has both required properties.
+
 :::
 
-<1>5. The analogous conclusion holds for almost every vertical line.
-::: {.proof}
-Repeat <1>4 with the order of the $x$- and $y$-integrations reversed.
+:::
+
+::: pf-step
+
+The analogous conclusion holds for almost every vertical line.
+
+::: pf-proof
+
+Repeat step [](#s4){.pf-ref} with the order of the $x$- and $y$-integrations reversed.
 For each $N$, Tonelli gives a null set $E_N^v$ outside which
 \[
 \int_{-N}^{N}U_\mu(x+iy)\,dy<\infty.
 \]
-Intersecting the resulting countably many full-measure parameter sets and removing the countable family of vertical lines with positive $\mu$-measure from <1>3 proves the claim.
+Intersecting the resulting countably many full-measure parameter sets and removing the countable family of vertical lines with positive $\mu$-measure from step [](#s3){.pf-ref} proves the claim.
 This completes part (b).
-:::
 
 Now let $R$ be a rectangle whose four sides lie on lines having the conclusions of part (b), and orient $\partial R$ positively.
 
-<1>6. One has
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+One has
 \[
 \mu(\partial R)=0
 \qquad\text{and}\qquad
 \int_{\partial R}U_\mu(z)\,ds<\infty.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each side of $R$ is contained in one of the four good horizontal or vertical lines.
 Each such line has $\mu$-measure zero, so the finite union $\partial R$ also has $\mu$-measure zero.
 Each side is compact, and part (b) gives finite line integral of $U_\mu$ over that side.
 Summing over the four sides gives the second assertion.
+
 :::
 
-<1>7. The boundary integral of $S_\mu$ is absolutely convergent, and one may interchange the boundary integral with the $\mu$-integral:
+:::
+
+::: {.pf-step #s7}
+
+The boundary integral of $S_\mu$ is absolutely convergent, and one may interchange the boundary integral with the $\mu$-integral:
 \[
 \int_{\partial R}S_\mu(z)\,dz
 =
@@ -216,8 +262,10 @@ Summing over the four sides gives the second assertion.
 \int_{\partial R}\frac{dz}{z-w}
 \right)d\mu(w).
 \]
-::: {.proof}
-By Tonelli's theorem and <1>6,
+
+::: pf-proof
+
+By Tonelli's theorem and step [](#s6){.pf-ref},
 \[
 \begin{aligned}
 \int_{\mathbb C}
@@ -241,9 +289,14 @@ It also shows that $S_\mu(z)$ exists for arclength-almost every $z\in\partial R$
 |S_\mu(z)|\le U_\mu(z),
 \]
 so its contour integral is absolutely convergent.
+
 :::
 
-<1>8. For every $w\notin\partial R$,
+:::
+
+::: {.pf-step #s8}
+
+For every $w\notin\partial R$,
 \[
 \frac1{2\pi i}
 \int_{\partial R}\frac{dz}{z-w}
@@ -253,16 +306,25 @@ so its contour integral is absolutely convergent.
 0,&w\notin R.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the winding-number form of Cauchy's integral theorem: the positively oriented boundary of a rectangle has winding number $1$ about every point of its interior and $0$ about every point outside the rectangle.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \frac1{2\pi i}\int_{\partial R}S_\mu(z)\,dz=\mu(R).
 \]
-::: {.proof}
-By <1>7 and <1>8, and because <1>6 gives $\mu(\partial R)=0$,
+
+::: pf-proof
+
+By steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, and because step [](#s6){.pf-ref} gives $\mu(\partial R)=0$,
 \[
 \begin{aligned}
 \frac1{2\pi i}\int_{\partial R}S_\mu(z)\,dz
@@ -278,5 +340,11 @@ By <1>7 and <1>8, and because <1>6 gives $\mu(\partial R)=0$,
 \]
 The last equality again uses $\mu(\partial R)=0$.
 This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

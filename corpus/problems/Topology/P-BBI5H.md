@@ -37,26 +37,60 @@ This is well-defined, due to the fact that if $a \homotopic b$, then $p_X \circ 
 :::
 
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$\Phi:\pi_1(X\times Y,(x_0,y_0))\to\pi_1(X,x_0)\times\pi_1(Y,y_0),\quad [\alpha]\mapsto([p_X\alpha],[p_Y\alpha]).$$
-::: {.proof}
+
+::: pf-proof
+
 Projection preserves based homotopies, so the map is well-defined; it is a homomorphism because projections commute with concatenation.
+
 :::
 
-<1>2. Define the inverse by
+:::
+
+::: {.pf-step #s2}
+
+Define the inverse by
 $$\Psi([a],[b])=[t\mapsto(a(t),b(t))].$$
-::: {.proof}
+
+::: pf-proof
+
 Componentwise based homotopies combine to a based homotopy in the product, so this is well-defined and multiplicative.
+
 :::
 
-<1>3. The maps $\Phi$ and $\Psi$ are inverse isomorphisms.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The maps $\Phi$ and $\Psi$ are inverse isomorphisms.
+
+::: pf-proof
+
 A map into a product is exactly the ordered pair of its coordinate maps, so both composites are identities.
+
 :::
 
-<1>4. Hence
-$$\boxed{\pi_1(X\times Y,(x_0,y_0))\cong\pi_1(X,x_0)\times\pi_1(Y,y_0).}$$
-::: {.proof}
-This is <1>1--<1>3.
 :::
+
+::: pf-step
+
+Hence
+$$\boxed{\pi_1(X\times Y,(x_0,y_0))\cong\pi_1(X,x_0)\times\pi_1(Y,y_0).}$$
+
+::: pf-proof
+
+This is steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

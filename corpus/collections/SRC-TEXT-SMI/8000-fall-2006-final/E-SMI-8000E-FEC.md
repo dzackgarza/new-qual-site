@@ -39,8 +39,14 @@ $$
 \qquad p\nmid m.
 $$
 
-<1>1. State the three Sylow assertions.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+State the three Sylow assertions.
+
+::: pf-proof
+
 The **Sylow theorems** state:
 
 1. **Existence.** $G$ has a subgroup of order $p^a$.
@@ -54,10 +60,17 @@ The **Sylow theorems** state:
    $$
    n_p\mid m.
    $$
+
 :::
 
-<1>2. State the Jordan--Hoelder theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+State the Jordan--Hoelder theorem.
+
+::: pf-proof
+
 A **composition series** of a finite group is a subnormal series
 $$
 G=G_0\trianglerighteq G_1\trianglerighteq\cdots
@@ -73,10 +86,17 @@ The **Jordan--Hoelder theorem** says that any two composition series of a
 finite group have the same length, and after a permutation their composition
 factors are pairwise isomorphic. Thus the multiset of simple composition
 factors is an invariant of the group.
+
 :::
 
-<1>3. Prove existence of a subgroup of order $p^a$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Prove existence of a subgroup of order $p^a$.
+
+::: pf-proof
+
 Let $X$ be the set of all subsets of $G$ having exactly $p^a$ elements. The
 group $G$ acts on $X$ by left translation.
 
@@ -123,11 +143,18 @@ $$
 |H|=p^a.
 $$
 Thus $H$ is a Sylow $p$-subgroup.
+
 :::
 
-<1>4. Prove containment of arbitrary $p$-subgroups and conjugacy of Sylow subgroups.
-::: {.proof}
-Fix a Sylow $p$-subgroup $P$ supplied by step <1>3, and let $Q\le G$ be any
+:::
+
+::: pf-step
+
+Prove containment of arbitrary $p$-subgroups and conjugacy of Sylow subgroups.
+
+::: pf-proof
+
+Fix a Sylow $p$-subgroup $P$ supplied by step [](#s3){.pf-ref}, and let $Q\le G$ be any
 $p$-subgroup. Let $Q$ act by left multiplication on the set of left cosets
 $$
 G/P.
@@ -155,10 +182,17 @@ Hence every $p$-subgroup is contained in a Sylow $p$-subgroup.
 
 If $Q$ itself is Sylow, then $Q$ and $gPg^{-1}$ both have order $p^a$, so
 the containment is equality. Hence all Sylow $p$-subgroups are conjugate.
+
 :::
 
-<1>5. Prove the congruence and divisibility conditions on the number of Sylow subgroups.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the congruence and divisibility conditions on the number of Sylow subgroups.
+
+::: pf-proof
+
 Let $\mathcal S$ be the set of Sylow $p$-subgroups and let $P\in\mathcal S$.
 The group $P$ acts on $\mathcal S$ by conjugation.
 
@@ -197,5 +231,11 @@ so
 $$
 \boxed{n_p\mid m.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

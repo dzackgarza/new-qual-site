@@ -35,10 +35,16 @@ if $k=2$, but not necessarily if $k\ge3$.
 :::
 
 ::: {.solution}
-<1>1. If $k=2$, every element of $H_1$ commutes with every element of
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $k=2$, every element of $H_1$ commutes with every element of
 $H_2$.
 
-::: {.proof}
+::: pf-proof
+
 Let $h_1\in H_1$ and $h_2\in H_2$. Since $H_2\triangleleft G$,
 $$
 h_1h_2h_1^{-1}\in H_2,
@@ -55,9 +61,14 @@ $$
 [h_1,h_2]\in H_1\cap H_2=\{1\}.
 $$
 Thus $[h_1,h_2]=1$, so $h_1h_2=h_2h_1$.
+
 :::
 
-<1>2. If $k=2$, the multiplication map
+:::
+
+::: {.pf-step #s2}
+
+If $k=2$, the multiplication map
 $$
 \mu\colon H_1\times H_2\longrightarrow G,
 \qquad
@@ -65,8 +76,9 @@ $$
 $$
 is an injective homomorphism.
 
-::: {.proof}
-By step <1>1, elements of $H_1$ commute with elements of $H_2$. Hence
+::: pf-proof
+
+By step [](#s1){.pf-ref}, elements of $H_1$ commute with elements of $H_2$. Hence
 for $h_i,h_i'\in H_i$,
 $$
 \begin{aligned}
@@ -81,21 +93,33 @@ so $\mu$ is a homomorphism.
 If $\mu(h_1,h_2)=1$, then $h_1=h_2^{-1}$. Thus
 $h_1\in H_1\cap H_2=\{1\}$, and consequently $h_1=h_2=1$. The kernel
 of $\mu$ is therefore trivial, so $\mu$ is injective.
+
 :::
 
-<1>3. Consequently, when $k=2$, the subgroup $H_1H_2\le G$ is
+:::
+
+::: {.pf-step #s3}
+
+Consequently, when $k=2$, the subgroup $H_1H_2\le G$ is
 isomorphic to $H_1\times H_2$.
 
-::: {.proof}
-The image of the homomorphism $\mu$ from step <1>2 is precisely
+::: pf-proof
+
+The image of the homomorphism $\mu$ from step [](#s2){.pf-ref} is precisely
 $H_1H_2$. Since $\mu$ is injective, it identifies $H_1\times H_2$ with
 that subgroup of $G$.
+
 :::
 
-<1>4. For every $k\ge3$, there are normal subgroups satisfying the
+:::
+
+::: {.pf-step #s4}
+
+For every $k\ge3$, there are normal subgroups satisfying the
 hypotheses for which the direct-product conclusion fails.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 G=(\ZZ/2\ZZ)^{k-1}
@@ -119,19 +143,31 @@ $$
 $$
 whereas $\abs{G}=2^{k-1}$. Therefore no subgroup of $G$ can be
 isomorphic to $H_1\times\cdots\times H_k$.
+
 :::
 
-<1>5. Thus the direct-product subgroup always exists for $k=2$, whereas
+:::
+
+::: {.pf-step #s5}
+
+Thus the direct-product subgroup always exists for $k=2$, whereas
 for every $k\ge3$ the conclusion need not hold.
 
-::: {.proof}
-Step <1>3 proves the assertion for $k=2$, and step <1>4 supplies a
+::: pf-proof
+
+Step [](#s3){.pf-ref} proves the assertion for $k=2$, and step [](#s4){.pf-ref} supplies a
 counterexample for every $k\ge3$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives both requested conclusions.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives both requested conclusions.
+
+:::
+
+:::
+
 :::

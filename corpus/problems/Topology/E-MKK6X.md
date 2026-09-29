@@ -19,25 +19,59 @@ Show that the minimal uncountable order with the order topology is not separable
 :::
 
 ::: {.solution}
-<1>1. Let $\omega_1$ denote the set of all countable ordinals with the order topology. Suppose $D\subseteq\omega_1$ is countable.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $\omega_1$ denote the set of all countable ordinals with the order topology. Suppose $D\subseteq\omega_1$ is countable.
+
+::: pf-proof
+
 This is the minimal uncountable ordinal/order.
+
 :::
 
-<1>2. The supremum $\alpha=\sup D$ is still a countable ordinal, hence $\alpha<\omega_1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The supremum $\alpha=\sup D$ is still a countable ordinal, hence $\alpha<\omega_1$.
+
+::: pf-proof
+
 A countable union of countable ordinals is countable, so the supremum of countably many countable ordinals is countable.
+
 :::
 
-<1>3. The open ray
+:::
+
+::: {.pf-step #s3}
+
+The open ray
 $$(\alpha,\omega_1)=\{\beta<\omega_1:\beta>\alpha\}$$
 is nonempty and disjoint from $D$.
-::: {.proof}
+
+::: pf-proof
+
 It is a basic open final interval in the order topology, and every element of $D$ is at most $\alpha$.
+
 :::
 
-<1>4. Therefore no countable subset of $\omega_1$ is dense, so $\omega_1$ is not separable.
-::: {.proof}
-Every countable subset misses the nonempty open set from <1>3.
 :::
+
+::: pf-step
+
+Therefore no countable subset of $\omega_1$ is dense, so $\omega_1$ is not separable.
+
+::: pf-proof
+
+Every countable subset misses the nonempty open set from step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

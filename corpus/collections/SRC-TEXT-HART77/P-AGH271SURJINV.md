@@ -31,21 +31,33 @@ Reduce to a question of modules over a local ring by looking at the stalks.
 :::
 
 ::: {.solution}
-<1>1. For every $x\in X$, the induced homomorphism $f_x:\mcl_x\to\mcm_x$ is an isomorphism of $\OO_{X,x}$-modules.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in X$, the induced homomorphism $f_x:\mcl_x\to\mcm_x$ is an isomorphism of $\OO_{X,x}$-modules.
+
+::: pf-proof
+
 Put $R=\OO_{X,x}$.
 The stalks of both invertible sheaves are free $R$-modules of rank one.
 Choose generators $e$ and $h$, and write $f_x(e)=ah$ with $a\in R$.
 Surjectivity of the sheaf map implies surjectivity on stalks, so there is $b\in R$ with $f_x(be)=h$.
 Consequently $ba=1$.
 The ring is commutative, so $a$ is a unit with inverse $b$, and $ch\mapsto bce$ is the inverse module map.
+
 :::
 
-<1>2. The stalkwise isomorphisms make $f$ an isomorphism of sheaves.
+:::
 
-::: {.proof}
-For an open set $U$, any section of $\mcl(U)$ whose image under $f$ is zero has zero germ at every point by step <1>1, and is therefore zero.
+::: {.pf-step #s2}
+
+The stalkwise isomorphisms make $f$ an isomorphism of sheaves.
+
+::: pf-proof
+
+For an open set $U$, any section of $\mcl(U)$ whose image under $f$ is zero has zero germ at every point by step [](#s1){.pf-ref}, and is therefore zero.
 Thus $f$ is injective on sections over every open set.
 
 Let $s\in\mcm(U)$.
@@ -54,11 +66,17 @@ On overlaps, these local lifts agree by injectivity on sections.
 They therefore glue to a unique section $t\in\mcl(U)$ with $f(t)=s$.
 Uniqueness makes this inverse assignment compatible with restrictions and with the $\OO_X$-module operations.
 It defines the inverse sheaf morphism, as in [[P-AGH215ISOINJSURJ]].
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves invertibility on every stalk, and step <1>2 constructs the inverse morphism of sheaves.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves invertibility on every stalk, and step [](#s2){.pf-ref} constructs the inverse morphism of sheaves.
+
+:::
+
+:::
+
 :::

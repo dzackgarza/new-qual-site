@@ -47,12 +47,17 @@ $$
 P_n(z)\coloneqq\prod_{k=1}^n(1-z^k).
 $$
 
-<1>1. If the infinite product converges in the stated sense, then
+::: pf
+
+::: {.pf-step #s1}
+
+If the infinite product converges in the stated sense, then
 $$
 z^n\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 P_n(z)\longrightarrow P
@@ -72,23 +77,34 @@ $$
 1.
 $$
 Hence $z^n\to0$.
+
 :::
 
-<1>2. The conclusion of step <1>1 implies
+:::
+
+::: {.pf-step #s2}
+
+The conclusion of step [](#s1){.pf-ref} implies
 $$
 |z|<1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $|z|\ge1$, then
 $$
 |z^n|=|z|^n\ge1
 $$
 for every $n$, so $z^n$ cannot tend to $0$. Thus convergence of the
 product requires $|z|<1$.
+
 :::
 
-<1>3. Now suppose $|z|<1$. There is $N$ such that for every $k\ge N$,
+:::
+
+::: {.pf-step #s3}
+
+Now suppose $|z|<1$. There is $N$ such that for every $k\ge N$,
 $$
 |z|^k\le\frac12
 $$
@@ -100,7 +116,8 @@ $$
 $$
 where $\log$ denotes the principal logarithm.
 
-::: {.proof}
+::: pf-proof
+
 Since $|z|^k\to0$, choose $N$ so that $|z|^k\le1/2$ for $k\ge N$.
 For $|w|<1$,
 $$
@@ -123,16 +140,22 @@ $$
 \end{aligned}
 $$
 Apply this with $w=z^k$.
+
 :::
 
-<1>4. If $|z|<1$, then
+:::
+
+::: {.pf-step #s4}
+
+If $|z|<1$, then
 $$
 \sum_{k=N}^{\infty}\log(1-z^k)
 $$
 converges absolutely.
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 \sum_{k=N}^{\infty}
 |\log(1-z^k)|
@@ -140,19 +163,25 @@ $$
 2\sum_{k=N}^{\infty}|z|^k.
 $$
 The series on the right is geometric and converges because $|z|<1$.
+
 :::
 
-<1>5. If $|z|<1$, the partial products $P_n(z)$ converge to a nonzero
+:::
+
+::: {.pf-step #s5}
+
+If $|z|<1$, the partial products $P_n(z)$ converge to a nonzero
 limit.
 
-::: {.proof}
+::: pf-proof
+
 No factor $1-z^k$ vanishes, since $|z^k|<1$. Put
 $$
 L
 \coloneqq
 \sum_{k=N}^{\infty}\log(1-z^k),
 $$
-which exists by step <1>4. For $n\ge N$,
+which exists by step [](#s4){.pf-ref}. For $n\ge N$,
 $$
 \prod_{k=N}^n(1-z^k)
 =
@@ -174,21 +203,33 @@ $$
 $$
 is also nonzero, so multiplying it by $e^L$ gives a nonzero limit for
 $P_n(z)$.
+
 :::
 
-<1>6. Therefore the product converges exactly for
+:::
+
+::: {.pf-step #s6}
+
+Therefore the product converges exactly for
 $$
 \boxed{\{z\in\CC:|z|<1\}}.
 $$
 
-::: {.proof}
-Steps <1>1--<1>2 prove necessity, and steps <1>3--<1>5 prove
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove necessity, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove
 sufficiency.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the requested set.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the requested set.
+
+:::
+
+:::
+
 :::

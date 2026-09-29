@@ -30,8 +30,15 @@ When is $K$ isomorphic to a subfield of $L$?
 :::
 
 ::: {.solution}
-<1>1. If $K$ is isomorphic to a subfield of $L$, then $m\mid n$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $K$ is isomorphic to a subfield of $L$, then $m\mid n$.
+
+::: pf-proof
+
 Suppose $K$ is identified with a subfield of $L$.
 Then $L$ is a finite-dimensional vector space over $K$, so the tower law gives
 \[
@@ -48,10 +55,17 @@ we obtain
 n=[L:K]m.
 \]
 Hence $m\mid n$.
+
 :::
 
-<1>2. If $m\mid n$, then $K$ is isomorphic to a subfield of $L$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $m\mid n$, then $K$ is isomorphic to a subfield of $L$.
+
+::: pf-proof
+
 Write
 \[
 n=rm.
@@ -99,15 +113,28 @@ There is, up to isomorphism, a unique field with $p^m$ elements, so
 F\cong K.
 \]
 Thus $K$ is isomorphic to a subfield of $L$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 K\hookrightarrow L
 \quad\Longleftrightarrow\quad
 m\mid n.
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

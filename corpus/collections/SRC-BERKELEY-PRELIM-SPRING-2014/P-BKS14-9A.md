@@ -28,7 +28,12 @@ Let $A$ be a finite abelian group, written additively, and let $R=\operatorname{
 :::
 
 ::: {.solution}
-<1>1. There are positive integers
+
+::: pf
+
+::: {.pf-step #s1}
+
+There are positive integers
 $$
 m_1,\ldots,m_r
 $$
@@ -43,11 +48,17 @@ $$
 C_m\coloneqq\ZZ/m\ZZ.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the structure theorem for finite abelian groups.
+
 :::
 
-<1>2. For every positive integer $m$,
+:::
+
+::: pf-step
+
+For every positive integer $m$,
 $$
 \operatorname{End}(C_m)
 \cong
@@ -55,7 +66,8 @@ $$
 $$
 as rings.
 
-::: {.proof}
+::: pf-proof
+
 An endomorphism of the cyclic group $C_m$ is determined by the image of
 $1$. For each residue class
 $$
@@ -80,9 +92,14 @@ $$
 r\longmapsto\mu_r
 $$
 is a ring isomorphism.
+
 :::
 
-<1>3. After identifying
+:::
+
+::: {.pf-step #s3}
+
+After identifying
 $$
 A=C_{m_1}\oplus\cdots\oplus C_{m_r},
 $$
@@ -106,7 +123,8 @@ S\subseteq\operatorname{End}(A)
 $$
 is a subring.
 
-::: {.proof}
+::: pf-proof
+
 Each displayed map is an endomorphism of the direct sum. If
 $$
 a=(a_1,\ldots,a_r)
@@ -126,9 +144,14 @@ $$
 where addition and multiplication on the right are componentwise.
 Also the zero endomorphism belongs to $S$, and additive inverses remain
 in $S$. Hence $S$ is a subring.
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 \Phi:
 \prod_{i=1}^r\ZZ/m_i\ZZ
@@ -142,8 +165,9 @@ $$
 is an isomorphism of rings, and in particular an isomorphism of additive
 abelian groups.
 
-::: {.proof}
-Step <1>3 shows that $\Phi$ respects addition and multiplication. It is
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that $\Phi$ respects addition and multiplication. It is
 surjective by the definition of $S$.
 
 If
@@ -156,15 +180,21 @@ $$
 a_i=0
 $$
 in $\ZZ/m_i\ZZ$ for every $i$. Thus $\Phi$ is injective.
+
 :::
 
-<1>5. As additive abelian groups,
+:::
+
+::: {.pf-step #s5}
+
+As additive abelian groups,
 $$
 \boxed{S\cong A}.
 $$
 
-::: {.proof}
-By steps <1>1 and <1>4,
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s4){.pf-ref},
 $$
 S
 \cong
@@ -176,12 +206,18 @@ A.
 $$
 For a finite family, direct product and direct sum are the same underlying
 abelian group.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 constructs the required subring, and step <1>5 proves the
+::: pf-qed
+
+Step [](#s3){.pf-ref} constructs the required subring, and step [](#s5){.pf-ref} proves the
 required additive-group isomorphism.
+
 :::
+
+:::
+
 :::

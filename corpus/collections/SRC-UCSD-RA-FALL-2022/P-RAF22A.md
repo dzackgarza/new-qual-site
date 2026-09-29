@@ -46,8 +46,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Statement (1) is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Statement (1) is true.
+
+::: pf-proof
+
 Because $\mu$ is $\sigma$-finite, choose measurable sets $X_n$ such that
 \[
 X=\bigcup_{n=1}^\infty X_n,
@@ -73,10 +80,17 @@ for every $n$. Since the $X_n$ cover $X$,
 \mu(E)=0.
 \]
 Thus $\mu\ll\nu$ as well.
+
 :::
 
-<1>2. Statement (2) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (2) is false.
+
+::: pf-proof
+
 For $n\ge1$, let
 \[
 I_n=[n,n+n^{-3}]
@@ -105,10 +119,17 @@ However,
 =\infty.
 \]
 Hence $f\notin L^2(\mathbb R)$.
+
 :::
 
-<1>3. Statement (3) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (3) is true.
+
+::: pf-proof
+
 The usual Fourier translation identity holds first for Schwartz functions:
 \[
 \widehat{\tau_y\psi}(\xi)
@@ -138,5 +159,11 @@ Therefore, in $\mathcal S'$,
 \widehat{\tau_y f}
 =e^{-2\pi i\langle\cdot,y\rangle}\widehat f.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

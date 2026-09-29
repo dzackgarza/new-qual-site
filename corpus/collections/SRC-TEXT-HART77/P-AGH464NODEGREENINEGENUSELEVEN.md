@@ -49,9 +49,14 @@ H=\OO_X(1),
 $$
 and let $K$ be a canonical divisor on $X$.
 
-<1>1. The curve $X$ is contained in a quadric surface.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The curve $X$ is contained in a quadric surface.
+
+::: pf-proof
+
 We have
 $$
 \deg(2H)=18,
@@ -116,11 +121,17 @@ H^0(X,2H)
 $$
 has nonzero kernel.  A nonzero element of the kernel is a quadratic equation
 vanishing on $X$.  Hence $X$ lies on a quadric surface $Q$.
+
 :::
 
-<1>2. The quadric $Q$ cannot be a union of planes or a double plane.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The quadric $Q$ cannot be a union of planes or a double plane.
+
+::: pf-proof
+
 First, $X$ is not contained in a plane.  If it were, then it would be a
 nonsingular plane curve of degree $9$, and
 [[P-AGH72ARITHGENUS|the plane-curve genus formula]] would give
@@ -133,11 +144,17 @@ If $Q$ is a union of two planes, the irreducibility of $X$ forces $X$ to lie
 in one of them.  If $Q$ is a double plane, its underlying reduced surface is
 a plane containing $X$.  Both possibilities contradict the preceding
 paragraph.
+
 :::
 
-<1>3. The quadric $Q$ cannot be nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The quadric $Q$ cannot be nonsingular.
+
+::: pf-proof
+
 If $Q$ is nonsingular, then
 $$
 Q\cong\PP^1\times\PP^1,
@@ -170,12 +187,18 @@ $$
 $$
 not a square in $\ZZ$.  No integers $a,b$ satisfy the required equations.
 Therefore $Q$ is not nonsingular.
+
 :::
 
-<1>4. The quadric $Q$ cannot be an irreducible quadric cone.
+:::
 
-::: {.proof}
-By step <1>2, a singular containing quadric that remains is an irreducible
+::: {.pf-step #s4}
+
+The quadric $Q$ cannot be an irreducible quadric cone.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, a singular containing quadric that remains is an irreducible
 quadric cone.  The cone calculation in [[FE-CRVQUAD]] says that an integral
 curve of odd degree
 $$
@@ -198,13 +221,19 @@ $$
 g(X)=12,
 $$
 contrary to $g(X)=11$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 forces $X$ onto a quadric.  Steps <1>2--<1>4 exhaust the possible
+::: pf-qed
+
+Step [](#s1){.pf-ref} forces $X$ onto a quadric.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} exhaust the possible
 quadric surfaces and give a contradiction in every case.  Therefore no curve
 of degree $9$ and genus $11$ exists in $\PP^3$.
+
 :::
+
+:::
+
 :::

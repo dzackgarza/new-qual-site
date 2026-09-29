@@ -51,20 +51,32 @@ See Grothendieck [2].
 :::
 
 ::: {.solution}
-<1>1. If $H$ is ample, then $H^2>0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $H$ is ample, then $H^2>0$.
+
+::: pf-proof
+
 This is one of the two numerical conditions in the Nakai--Moishezon criterion
 [[T-SRFNAKAI]].
+
 :::
 
-<1>2. For any divisor $D$ on $X$, define
+:::
+
+::: {.pf-step #s2}
+
+For any divisor $D$ on $X$, define
 $$
 F=(H^2)D-(D\cdot H)H.
 $$
 Then $F\cdot H=0$ and $F^2\leq0$.
 
-::: {.proof}
+::: pf-proof
+
 Bilinearity gives
 $$
 F\cdot H
@@ -73,15 +85,21 @@ F\cdot H
 $$
 If $F\not\equiv0$, the Hodge index theorem [[T-SRFHODGE]] gives $F^2<0$.
 If $F\equiv0$, then $F^2=0$. Thus in all cases $F^2\leq0$.
+
 :::
 
-<1>3. For every divisor $D$ and ample divisor $H$,
+:::
+
+::: {.pf-step #s3}
+
+For every divisor $D$ and ample divisor $H$,
 $$
 \boxed{(D^2)(H^2)\leq(D\cdot H)^2}.
 $$
 
-::: {.proof}
-Expanding the square in step <1>2 gives
+::: pf-proof
+
+Expanding the square in step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 F^2
@@ -91,11 +109,16 @@ F^2
 &=H^2\qty((H^2)D^2-(D\cdot H)^2).
 \end{aligned}
 $$
-By steps <1>1--<1>2, the left side is nonpositive and $H^2$ is positive.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the left side is nonpositive and $H^2$ is positive.
 Dividing by $H^2$ yields the stated inequality. This proves part (a).
+
 :::
 
-<1>4. On $C\times C'$, the ruling classes satisfy
+:::
+
+::: {.pf-step #s4}
+
+On $C\times C'$, the ruling classes satisfy
 $$
 l^2=m^2=0,
 \qquad
@@ -107,7 +130,8 @@ H=l+m
 $$
 is ample.
 
-::: {.proof}
+::: pf-proof
+
 Distinct fibres of either projection are disjoint and numerically equivalent,
 so each fibre has self-intersection zero. A fibre of the first projection and
 a fibre of the second meet transversally in one point, hence $l\cdot m=1$.
@@ -125,9 +149,14 @@ $$
 H\cdot\Gamma=l\cdot\Gamma+m\cdot\Gamma>0.
 $$
 The Nakai--Moishezon criterion [[T-SRFNAKAI]] now shows that $H$ is ample.
+
 :::
 
-<1>5. If $D$ has type $(a,b)$, put
+:::
+
+::: {.pf-step #s5}
+
+If $D$ has type $(a,b)$, put
 $$
 F=D-bl-am.
 $$
@@ -140,14 +169,15 @@ $$
 F^2=D^2-2ab.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 D\cdot l=a,
 \qquad
 D\cdot m=b.
 $$
-Using step <1>4,
+Using step [](#s4){.pf-ref},
 $$
 \begin{aligned}
 F\cdot l
@@ -165,28 +195,40 @@ F^2
 &=D^2-2ab.
 \end{aligned}
 $$
+
 :::
 
-<1>6. Every divisor $D$ of type $(a,b)$ satisfies
+:::
+
+::: {.pf-step #s6}
+
+Every divisor $D$ of type $(a,b)$ satisfies
 $$
 \boxed{D^2\leq2ab}.
 $$
 
-::: {.proof}
-By steps <1>4--<1>5, $H$ is ample and $F\cdot H=0$. The Hodge index theorem
-therefore gives $F^2\leq0$. Step <1>5 identifies this inequality with
+::: pf-proof
+
+By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, $H$ is ample and $F\cdot H=0$. The Hodge index theorem
+therefore gives $F^2\leq0$. Step [](#s5){.pf-ref} identifies this inequality with
 $$
 D^2-2ab\leq0.
 $$
+
 :::
 
-<1>7. Equality holds precisely when
+:::
+
+::: {.pf-step #s7}
+
+Equality holds precisely when
 $$
 \boxed{D\equiv bl+am}.
 $$
 
-::: {.proof}
-If $D^2=2ab$, then step <1>5 gives $F^2=0$. Since $F\cdot H=0$ and $H$ is
+::: pf-proof
+
+If $D^2=2ab$, then step [](#s5){.pf-ref} gives $F^2=0$. Since $F\cdot H=0$ and $H$ is
 ample, the strict form of the Hodge index theorem [[T-SRFHODGE]] forces
 $F\equiv0$. Thus
 $$
@@ -194,16 +236,22 @@ D\equiv bl+am.
 $$
 
 Conversely, if $D\equiv bl+am$, then numerical equivalence preserves
-self-intersection and step <1>4 gives
+self-intersection and step [](#s4){.pf-ref} gives
 $$
 D^2=(bl+am)^2=2ab.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>7 prove part (b), including
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), and steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (b), including
 the equality criterion.
+
 :::
+
+:::
+
 :::

@@ -33,12 +33,18 @@ audit:
 ::: {.solution}
 **Part (a).**
 
-<1>1. For every $A\in\mathbb C^{n\times n}$ there is a unitary matrix $Q$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+For every $A\in\mathbb C^{n\times n}$ there is a unitary matrix $Q$ such that
 \[
 Q^HAQ=T
 \]
 is upper triangular.
-::: {.proof}
+
+::: pf-proof
+
 We argue by induction on $n$.
 For $n=1$ the assertion is immediate.
 Assume $n>1$.
@@ -76,27 +82,41 @@ Q^HAQ=
 \end{pmatrix}
 \]
 is upper triangular.
+
 :::
 
-<1>2. The diagonal entries of the Schur triangular matrix are the eigenvalues of $A$, counted with algebraic multiplicity.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The diagonal entries of the Schur triangular matrix are the eigenvalues of $A$, counted with algebraic multiplicity.
+
+::: pf-proof
+
 Unitary similarity preserves the characteristic polynomial.
 For an upper-triangular matrix $T$, the characteristic polynomial is
 \[
 \det(tI-T)=\prod_{j=1}^n(t-t_{jj}),
 \]
 so its diagonal entries are precisely its eigenvalues with multiplicity.
-:::
 
-Thus <1>1 and <1>2 are the Schur Decomposition Theorem.
+Thus steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the Schur Decomposition Theorem.
 
 **Part (b).**
 
-<1>3. If $A$ has an orthonormal basis of eigenvectors, then $A$ is normal:
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+If $A$ has an orthonormal basis of eigenvectors, then $A$ is normal:
 \[
 A^HA=AA^H.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $Q$ be the unitary matrix whose columns are an orthonormal eigenbasis.
 Then
 \[
@@ -112,10 +132,17 @@ Because diagonal matrices commute with their adjoints,
 \[
 A^HA=QD^HDQ^H=QDD^HQ^H=AA^H.
 \]
+
 :::
 
-<1>4. Every normal upper-triangular complex matrix is diagonal.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every normal upper-triangular complex matrix is diagonal.
+
+::: pf-proof
+
 Let $T=(t_{ij})$ be upper triangular and normal.
 Comparing the $(1,1)$ entries of $TT^H$ and $T^HT$ gives
 \[
@@ -135,26 +162,46 @@ t_{11}&0\\0&T_1
 \]
 Normality of $T$ implies normality of $T_1$.
 Induction on the size of the matrix now shows that $T_1$ is diagonal, hence so is $T$.
+
 :::
 
-<1>5. If $A$ is normal, then $A$ has an orthonormal basis of eigenvectors.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+If $A$ is normal, then $A$ has an orthonormal basis of eigenvectors.
+
+::: pf-proof
+
 By Schur decomposition, choose a unitary $Q$ such that
 \[
 T=Q^HAQ
 \]
 is upper triangular.
 Normality is preserved by unitary similarity, so $T$ is normal.
-By <1>4, $T$ is diagonal.
+By step [](#s4){.pf-ref}, $T$ is diagonal.
 Therefore
 \[
 A=QTQ^H
 \]
 is unitarily diagonalizable, and the columns of $Q$ form an orthonormal eigenbasis of $A$.
+
 :::
 
-<1>6. Consequently, a complex square matrix has an orthonormal basis of eigenvectors if and only if it is normal.
-::: {.proof}
-Combine <1>3 and <1>5.
 :::
+
+::: pf-step
+
+Consequently, a complex square matrix has an orthonormal basis of eigenvectors if and only if it is normal.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

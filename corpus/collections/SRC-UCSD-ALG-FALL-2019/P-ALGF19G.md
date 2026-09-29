@@ -45,8 +45,14 @@ Let
 K=\mathbb Q(\alpha,\zeta).
 \]
 
-<1>1. The field $K$ is the splitting field of $x^5-5$ over $\mathbb Q$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The field $K$ is the splitting field of $x^5-5$ over $\mathbb Q$.
+
+::: pf-proof
+
 The five roots of $x^5-5$ in $\mathbb C$ are
 \[
 \alpha,
@@ -60,10 +66,17 @@ All of them lie in $K$, so $x^5-5$ splits over $K$. Conversely, a field containi
 \frac{\zeta\alpha}{\alpha}=\zeta.
 \]
 Thus it contains $K$. Hence $K$ is precisely the splitting field. This proves part (a).
+
 :::
 
-<1>2. The degree of $K$ over $\mathbb Q$ is $20$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The degree of $K$ over $\mathbb Q$ is $20$.
+
+::: pf-proof
+
 The polynomial
 \[
 x^5-5
@@ -107,31 +120,45 @@ Consequently
 \qquad
 [K:\mathbb Q(\alpha)]=4.
 \]
+
 :::
 
-<1>3. There is an automorphism $\sigma\in\operatorname{Gal}(K/\mathbb Q)$ such that
+:::
+
+::: {.pf-step #s3}
+
+There is an automorphism $\sigma\in\operatorname{Gal}(K/\mathbb Q)$ such that
 \[
 \sigma(\alpha)=\zeta\alpha,
 \qquad
 \sigma(\zeta)=\zeta.
 \]
-::: {.proof}
-By <1>2, the minimal polynomial of $\alpha$ over $\mathbb Q(\zeta)$ has degree $5$. Since it divides $x^5-5$, it equals $x^5-5$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the minimal polynomial of $\alpha$ over $\mathbb Q(\zeta)$ has degree $5$. Since it divides $x^5-5$, it equals $x^5-5$.
 The element $\zeta\alpha$ is another root of this polynomial in $K$. Hence the $\mathbb Q(\zeta)$-embedding sending
 \[
 \alpha\longmapsto\zeta\alpha
 \]
 is an automorphism of $K$. It fixes $\zeta$ by construction.
+
 :::
 
-<1>4. There is an automorphism $\tau\in\operatorname{Gal}(K/\mathbb Q)$ such that
+:::
+
+::: {.pf-step #s4}
+
+There is an automorphism $\tau\in\operatorname{Gal}(K/\mathbb Q)$ such that
 \[
 \tau(\alpha)=\alpha,
 \qquad
 \tau(\zeta)=\zeta^2.
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 \[
 [K:\mathbb Q(\alpha)]=4.
 \]
@@ -141,13 +168,20 @@ Since $\zeta^2$ is another root of $\Phi_5$ in $K$, the $\mathbb Q(\alpha)$-embe
 \zeta\longmapsto\zeta^2
 \]
 is an automorphism of $K$. It fixes $\alpha$.
+
 :::
 
-<1>5. The Galois group $\operatorname{Gal}(K/\mathbb Q)$ is non-abelian.
-::: {.proof}
-By <1>1, $K$ is a splitting field over the characteristic-zero field $\mathbb Q$, so $K/\mathbb Q$ is Galois.
+:::
 
-Using <1>3 and <1>4,
+::: {.pf-step #s5}
+
+The Galois group $\operatorname{Gal}(K/\mathbb Q)$ is non-abelian.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $K$ is a splitting field over the characteristic-zero field $\mathbb Q$, so $K/\mathbb Q$ is Galois.
+
+Using steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 \[
 (\tau\sigma)(\alpha)
 =
@@ -164,10 +198,17 @@ whereas
 \zeta\alpha.
 \]
 Since $\zeta^2\ne\zeta$, the automorphisms $\sigma$ and $\tau$ do not commute. Thus $\operatorname{Gal}(K/\mathbb Q)$ is non-abelian. This proves part (b).
+
 :::
 
-<1>6. If $x^5-5$ had a zero in $\mathbb Q(\zeta_{25})$, then $K$ would be a subfield of $\mathbb Q(\zeta_{25})$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+If $x^5-5$ had a zero in $\mathbb Q(\zeta_{25})$, then $K$ would be a subfield of $\mathbb Q(\zeta_{25})$.
+
+::: pf-proof
+
 Set
 \[
 L=\mathbb Q(\zeta_{25}).
@@ -194,10 +235,17 @@ Therefore both $\alpha$ and $\zeta$ lie in $L$, so
 \[
 K=\mathbb Q(\alpha,\zeta)\subseteq L.
 \]
+
 :::
 
-<1>7. The polynomial $x^5-5$ has no zero in $\mathbb Q(\zeta_{25})$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The polynomial $x^5-5$ has no zero in $\mathbb Q(\zeta_{25})$.
+
+::: pf-proof
+
 The cyclotomic extension
 \[
 L=\mathbb Q(\zeta_{25})/\mathbb Q
@@ -208,6 +256,12 @@ is Galois with abelian Galois group
 \]
 Every subgroup of an abelian group is normal. Hence every intermediate field of $L/\mathbb Q$ is Galois over $\mathbb Q$, with Galois group a quotient of the abelian group $\operatorname{Gal}(L/\mathbb Q)$; in particular that Galois group is abelian.
 
-If $x^5-5$ had a zero in $L$, then <1>6 would give $K\subseteq L$. This would force $K/\mathbb Q$ to have abelian Galois group, contradicting <1>5. Therefore $x^5-5$ has no zero in $\mathbb Q(\zeta_{25})$. This proves part (c).
+If $x^5-5$ had a zero in $L$, then step [](#s6){.pf-ref} would give $K\subseteq L$. This would force $K/\mathbb Q$ to have abelian Galois group, contradicting step [](#s5){.pf-ref}. Therefore $x^5-5$ has no zero in $\mathbb Q(\zeta_{25})$. This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,7 +39,11 @@ $$
 C_p=\langle g\rangle.
 $$
 
-<1>1. Every automorphism of $C_p$ is uniquely determined by
+::: pf
+
+::: {.pf-step #s1}
+
+Every automorphism of $C_p$ is uniquely determined by
 $$
 g\longmapsto g^a
 $$
@@ -48,7 +52,8 @@ $$
 a\in\{1,\ldots,p-1\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 An automorphism is determined by the image of the generator $g$. Its image
 must again generate $C_p$. Since $p$ is prime, every nonidentity element
 $$
@@ -58,9 +63,14 @@ g^a,
 $$
 has order $p$ and hence is a generator. Conversely, assigning $g$ to any
 such generator extends uniquely to an automorphism.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 \Psi:\operatorname{Aut}(C_p)
 \longrightarrow
@@ -74,8 +84,9 @@ $$
 $$
 is a group isomorphism.
 
-::: {.proof}
-Step <1>1 shows that $\Psi$ is a bijection. If
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that $\Psi$ is a bijection. If
 $$
 \varphi(g)=g^a
 \qquad\text{and}\qquad
@@ -98,9 +109,14 @@ $$
 \Psi(\varphi)\Psi(\psi)
 $$
 in $\FF_p^\times$.
+
 :::
 
-<1>3. Let $H$ be a finite subgroup of the multiplicative group of a field,
+:::
+
+::: {.pf-step #s3}
+
+Let $H$ be a finite subgroup of the multiplicative group of a field,
 and let
 $$
 m
@@ -111,7 +127,8 @@ $$
 \abs{H}\leq m.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $h\in H$, the order of $h$ divides $m$, so
 $$
 h^m=1.
@@ -125,22 +142,34 @@ Hence
 $$
 \abs{H}\leq m.
 $$
+
 :::
 
-<1>4. With $H$ and $m$ as in step <1>3,
+:::
+
+::: {.pf-step #s4}
+
+With $H$ and $m$ as in step [](#s3){.pf-ref},
 $$
 m\mid\abs{H}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By Lagrange's theorem, the order of every element of $H$ divides
 $\abs{H}$. The least common multiple of those orders therefore also
 divides $\abs{H}$.
+
 :::
 
-<1>5. The group $H$ contains an element of order $m$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The group $H$ contains an element of order $m$.
+
+::: pf-proof
+
 Factor
 $$
 m=\prod_{j=1}^r\ell_j^{e_j}
@@ -175,13 +204,19 @@ $$
 =
 m.
 $$
+
 :::
 
-<1>6. Every finite subgroup of the multiplicative group of a field is
+:::
+
+::: {.pf-step #s6}
+
+Every finite subgroup of the multiplicative group of a field is
 cyclic.
 
-::: {.proof}
-Steps <1>3--<1>4 give
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give
 $$
 \abs{H}\leq m\leq\abs{H},
 $$
@@ -189,30 +224,42 @@ so
 $$
 m=\abs{H}.
 $$
-By step <1>5, $H$ contains an element of order $m=\abs{H}$. Such an
+By step [](#s5){.pf-ref}, $H$ contains an element of order $m=\abs{H}$. Such an
 element generates all of $H$.
+
 :::
 
-<1>7. The automorphism group of $C_p$ is cyclic of order
+:::
+
+::: {.pf-step #s7}
+
+The automorphism group of $C_p$ is cyclic of order
 $$
 \boxed{p-1}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \operatorname{Aut}(C_p)
 \cong
 \FF_p^\times.
 $$
 The multiplicative group $\FF_p^\times$ has $p-1$ elements, and step
-<1>6 shows that it is cyclic. Therefore the same is true of
+[](#s6){.pf-ref} shows that it is cyclic. Therefore the same is true of
 $\operatorname{Aut}(C_p)$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 gives both the cyclicity and the order.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} gives both the cyclicity and the order.
+
+:::
+
+:::
+
 :::

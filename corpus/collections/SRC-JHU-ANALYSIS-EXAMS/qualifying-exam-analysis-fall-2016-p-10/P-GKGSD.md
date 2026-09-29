@@ -29,20 +29,32 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. There is a holomorphic nonvanishing function $h$ on $D$ with $f(w)=wh(w)$.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+There is a holomorphic nonvanishing function $h$ on $D$ with $f(w)=wh(w)$.
+
+::: pf-proof
+
 The Taylor series of $f$ at zero has zero constant term,
 so $f(w)/w$ extends holomorphically across zero with value
 $h(0)=f'(0)$. An injective holomorphic function has nonzero
 derivative [@SS03], hence $h(0)\ne0$. For $w\ne0$,
 injectivity and $f(0)=0$ give $f(w)\ne0$, so $h(w)\ne0$.
 Thus $h$ has no zero anywhere in $D$.
+
 :::
 
-<1>2. An explicit odd holomorphic square root exists on the whole disk.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+An explicit odd holomorphic square root exists on the whole disk.
+
+::: pf-proof
+
 Since $h'/h$ is holomorphic on the simply connected disk,
 it has a holomorphic primitive $L_0$ with $L_0(0)=0$
 [@SS03]. Choose $c\in\mathbb C$ with $e^c=h(0)$ and set
@@ -61,17 +73,23 @@ g(z)^2=z^2h(z^2)=f(z^2).
 $$
 It also satisfies $g(-z)=-g(z)$ and has no zero except
 at $z=0$, because the exponential never vanishes.
+
 :::
 
-<1>3. The branch $g$ is injective.
+:::
 
-::: {.proof}
-Suppose $g(z_1)=g(z_2)$. Squaring and using step <1>2
+::: pf-step
+
+The branch $g$ is injective.
+
+::: pf-proof
+
+Suppose $g(z_1)=g(z_2)$. Squaring and using step [](#s2){.pf-ref}
 give $f(z_1^2)=f(z_2^2)$. Injectivity of $f$ yields
 $z_1^2=z_2^2$, so $z_2=z_1$ or $z_2=-z_1$.
 In the second case, oddness gives
 $g(z_1)=g(-z_1)=-g(z_1)$, whence $g(z_1)=0$.
-Step <1>2 then forces $z_1=0=z_2$. Thus in every case
+Step [](#s2){.pf-ref} then forces $z_1=0=z_2$. Thus in every case
 $z_1=z_2$, proving injectivity.
 
 Any other holomorphic square root differs from $g$ by
@@ -80,5 +98,11 @@ quotient by $g$ takes values in $\{1,-1\}$ and is
 continuous, hence constant; continuity extends this
 equality across zero. Therefore either holomorphic branch
 has the asserted injectivity.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -34,7 +34,12 @@ has three complex roots $\alpha_1,\alpha_2,\alpha_3$, counted with multiplicity.
 :::
 
 ::: {.solution}
-<1>1. The roots satisfy
+
+::: pf
+
+::: {.pf-step #s1}
+
+The roots satisfy
 $$
 \alpha_1+\alpha_2+\alpha_3=-2
 $$
@@ -47,45 +52,58 @@ $$
 7.
 $$
 
-::: {.proof}
+::: pf-proof
+
 These are Vieta's formulas for
 $$
 x^3+2x^2+7x+1
 =
 (x-\alpha_1)(x-\alpha_2)(x-\alpha_3).
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \alpha_1^2+\alpha_2^2+\alpha_3^2=-10.
 $$
 
-::: {.proof}
-Squaring the first identity in step <1>1 gives
+::: pf-proof
+
+Squaring the first identity in step [](#s1){.pf-ref} gives
 $$
 (\alpha_1+\alpha_2+\alpha_3)^2
 =
 \alpha_1^2+\alpha_2^2+\alpha_3^2
 +2(\alpha_1\alpha_2+\alpha_1\alpha_3+\alpha_2\alpha_3).
 $$
-Using both identities from step <1>1,
+Using both identities from step [](#s1){.pf-ref},
 $$
 4
 =
 \alpha_1^2+\alpha_2^2+\alpha_3^2+14,
 $$
 which proves the claim.
+
 :::
 
-<1>3. Each root $\alpha_i$ satisfies
+:::
+
+::: {.pf-step #s3}
+
+Each root $\alpha_i$ satisfies
 $$
 \alpha_i^3
 =
 -2\alpha_i^2-7\alpha_i-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\alpha_i$ is a root of
 $$
 x^3+2x^2+7x+1,
@@ -95,17 +113,23 @@ $$
 \alpha_i^3+2\alpha_i^2+7\alpha_i+1=0.
 $$
 Rearranging gives the displayed identity.
+
 :::
 
-<1>4. The required sum is
+:::
+
+::: {.pf-step #s4}
+
+The required sum is
 $$
 \boxed{
 \alpha_1^3+\alpha_2^3+\alpha_3^3=31
 }.
 $$
 
-::: {.proof}
-Summing the identity in step <1>3 over $i=1,2,3$ gives
+::: pf-proof
+
+Summing the identity in step [](#s3){.pf-ref} over $i=1,2,3$ gives
 $$
 \begin{aligned}
 \alpha_1^3+\alpha_2^3+\alpha_3^3
@@ -119,12 +143,18 @@ $$
 31,
 \end{aligned}
 $$
-using steps <1>1 and <1>2.
+using steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

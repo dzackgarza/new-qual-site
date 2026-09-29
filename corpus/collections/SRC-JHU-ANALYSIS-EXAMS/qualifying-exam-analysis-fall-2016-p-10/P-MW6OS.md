@@ -36,8 +36,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 Because $H$ is infinite dimensional, it contains an infinite orthonormal sequence
 \[
 e_1,e_2,\dots.
@@ -51,10 +58,17 @@ Each vector has norm $1$, but for $m\ne n$,
 Thus every two distinct terms are distance $\sqrt2$ apart. No subsequence is Cauchy, hence no subsequence converges in norm.
 
 Therefore part (a) is false.
+
 :::
 
-<1>2. Reduce part (b) to a separable Hilbert space.
-::: {.proof}
+:::
+
+::: pf-step
+
+Reduce part (b) to a separable Hilbert space.
+
+::: pf-proof
+
 Let $(f_n)$ be any sequence with $\|f_n\|=1$ for all $n$, and set
 \[
 H_0:=\overline{\operatorname{span}}\{f_n:n\ge1\}.
@@ -74,10 +88,17 @@ is bounded by $1$. By repeated subsequence extraction and the diagonal argument,
 a_j:=\lim_{k\to\infty}\langle f_{n_k},e_j\rangle
 \]
 exists.
+
 :::
 
-<1>3. Show that the limiting coordinates define a vector of $H_0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the limiting coordinates define a vector of $H_0$.
+
+::: pf-proof
+
 For every $N$, Bessel's inequality gives
 \[
 \sum_{j=1}^N|\langle f_{n_k},e_j\rangle|^2
@@ -96,10 +117,17 @@ Hence the series
 f:=\sum_{j=1}^\infty a_j e_j
 \]
 converges in $H_0$.
+
 :::
 
-<1>4. Prove weak convergence of the selected subsequence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove weak convergence of the selected subsequence.
+
+::: pf-proof
+
 First let
 \[
 g=\sum_{j=1}^N c_j e_j
@@ -133,5 +161,11 @@ f_{n_k}\rightharpoonup f
 \quad\text{in }H.
 \]
 Thus part (b) is true.
+
 :::
+
+:::
+
+:::
+
 :::

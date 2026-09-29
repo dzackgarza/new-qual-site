@@ -61,10 +61,15 @@ Put $K=K(X)=K(\tilde X)$, and write $\operatorname{CaDiv}(X)$ for the group of [
 The [[D-5PQ5W|Cartier class group]] is $\Pic(X)$ because $X$ is integral [@Har10a, Proposition II.6.15].
 In the sequences in part (b), $\GG_a$ and $\GG_m$ denote their groups of $k$-points, $(k,+)$ and $k^\times$.
 
-<1>1. The normalization is a nonsingular projective integral curve, and $\pi$ is an isomorphism outside a finite set $S$ of closed points.
+::: pf
+
+::: {.pf-step #s1}
+
+The normalization is a nonsingular projective integral curve, and $\pi$ is an isomorphism outside a finite set $S$ of closed points.
 For a closed point $P$, the ring $B_P\coloneqq\tilde\OO_P$ is a finite semilocal normal domain over $A_P\coloneqq\OO_P$, with maximal ideals indexed by the points over $P$.
 
-::: {.proof}
+::: pf-proof
+
 The [[D-QJ5M9|normalization]] is finite and birational for varieties and preserves projectivity [@Har10a, Exercise II.3.8].
 A one-dimensional noetherian normal local domain is a DVR, so $\tilde X$ is nonsingular [@Har10a, Theorem I.6.2A].
 On an affine open $\Spec A\subseteq X$, the finite module $\tilde A/A$ is torsion, since both rings have fraction field $K$.
@@ -77,30 +82,42 @@ We may take $S$ to be the singular locus, since a normal local ring of this curv
 Integral closure commutes with localization, so $(\pi_*\OO_{\tilde X})_P=B_P$.
 Finiteness over the local ring $A_P$ makes $B_P$ semilocal, with precisely the points of $\pi^{-1}(P)$ as its maximal ideals.
 Its localizations there are the DVRs $\OO_{\tilde X,Q}$.
+
 :::
 
-<1>2. For any closed point $P$ and any integers $n_Q$, indexed by $Q\in\pi^{-1}(P)$, there is $g\in K^*$ with $v_Q(g)=n_Q$ for every such $Q$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For any closed point $P$ and any integers $n_Q$, indexed by $Q\in\pi^{-1}(P)$, there is $g\in K^*$ with $v_Q(g)=n_Q$ for every such $Q$.
+
+::: pf-proof
+
 Write the maximal ideals of $B_P$ as $\mathfrak n_1,\ldots,\mathfrak n_r$, corresponding to $Q_1,\ldots,Q_r$ over $P$.
 For each $i$, choose a nonzero class in $\mathfrak n_i/\mathfrak n_i^2$.
 This vector space is one-dimensional, since localization identifies it with the corresponding quotient in the DVR at $Q_i$.
 The Chinese remainder theorem gives $b_i\in B_P$ with this prescribed class modulo $\mathfrak n_i^2$ and with $b_i\equiv1\pmod{\mathfrak n_j}$ for $j\ne i$.
 Therefore $v_{Q_i}(b_i)=1$ and $v_{Q_j}(b_i)=0$ for $j\ne i$.
 The rational function $g=\prod_i b_i^{n_{Q_i}}$ has the required valuations, including when some exponents are negative.
+
 :::
 
-<1>3. Pullback of Cartier divisors gives a surjection
+:::
+
+::: {.pf-step #s3}
+
+Pullback of Cartier divisors gives a surjection
 $$
 \operatorname{CaDiv}(X)\longrightarrow\operatorname{Div}(\tilde X).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Rational local equations on $X$ remain nonzero in the common function field $K$ and have unit ratios after pullback.
 They therefore define a Cartier divisor on $\tilde X$, identified with a Weil divisor because $\tilde X$ is nonsingular.
 
 Let $E$ be a divisor on $\tilde X$.
-For each $P\in S$, choose $g_P$ by step <1>2 with the coefficients of $E$ at the points over $P$.
+For each $P\in S$, choose $g_P$ by step [](#s2){.pf-ref} with the coefficients of $E$ at the points over $P$.
 The divisor $\operatorname{div}(g_P)-E$ has finite support disjoint from $\pi^{-1}(P)$.
 Remove its image and the other points of $S$ to obtain an open neighborhood $U_P$ of $P$ on which
 $$
@@ -111,14 +128,20 @@ On $U_P$, use the single rational local equation $g_P$.
 Every overlap of these opens lies in $U_0$, where the corresponding Weil divisors agree.
 On a nonsingular curve equality of Weil divisors is equality of Cartier divisors, so these local divisors glue.
 Their pullback is $E$.
+
 :::
 
-<1>4. The kernel of the map in step <1>3 is canonically
+:::
+
+::: {.pf-step #s4}
+
+The kernel of the map in step [](#s3){.pf-ref} is canonically
 $$
 \bigoplus_{P\in X}B_P^*/A_P^*.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A Cartier divisor $D$ with zero pullback is zero on $U_0$.
 If $g_P$ is a rational local equation at $P\in S$, zero pullback means that $g_P$ has valuation zero at every point over $P$.
 Equivalently, $g_P\in B_P^*$: an element of $K$ lies in $B_P$, respectively $B_P^*$, precisely when it is regular, respectively a unit, at all maximal ideals of this semilocal ring.
@@ -135,12 +158,18 @@ The construction is independent of representatives by the injectivity just prove
 Outside $S$ the rings $A_P$ and $B_P$ agree, and at the generic point both equal $K$, so their summands vanish.
 
 This is the global kernel of the sheaf inclusion in the source hint: the quotient $\pi_*\OO_{\tilde X}^*/\OO_X^*$ has stalks $B_P^*/A_P^*$ and is supported on $S$.
-Step <1>3 establishes the needed surjectivity on global divisors, rather than assuming that global sections preserve a sheaf surjection.
+Step [](#s3){.pf-ref} establishes the needed surjectivity on global divisors, rather than assuming that global sections preserve a sheaf surjection.
+
 :::
 
-<1>5. Passing to Cartier divisor classes gives the exact sequence in part (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Passing to Cartier divisor classes gives the exact sequence in part (a).
+
+::: pf-proof
+
 Both projective integral curves have only constant global regular functions.
 Indeed, such a function defines a morphism to $\PP^1$ whose image is closed by properness and misses $\infty$.
 The image is irreducible and hence a point, so the function belongs to $k$.
@@ -149,11 +178,11 @@ $$
 \Gamma(X,\OO_X^*)=\Gamma(\tilde X,\OO_{\tilde X}^*)=k^*.
 $$
 Principal Cartier divisors on each curve are therefore the image of the same group $K^*/k^*$, and pullback identifies these two principal-divisor subgroups.
-In particular, the kernel in step <1>4 intersects the principal divisors only in zero.
+In particular, the kernel in step [](#s4){.pf-ref} intersects the principal divisors only in zero.
 
 If the pullback of $D$ is principal, say $\pi^*D=\operatorname{div}_{\tilde X}(g)$, then $D-\operatorname{div}_X(g)$ has zero pullback.
-Thus step <1>4 gives exactly the kernel on classes, and step <1>3 gives surjectivity on classes.
-Under $D\mapsto\OO_X(D)$ this map is Picard pullback, since the inverse rational local equations generate the corresponding pulled-back invertible sheaf, as in [[P-AGH268PULLBACKPIC]], step <1>2.
+Thus step [](#s4){.pf-ref} gives exactly the kernel on classes, and step [](#s3){.pf-ref} gives surjectivity on classes.
+Under $D\mapsto\OO_X(D)$ this map is Picard pullback, since the inverse rational local equations generate the corresponding pulled-back invertible sheaf, as in [[P-AGH268PULLBACKPIC]], step [](#s2){.pf-ref}.
 Hence
 $$
 0\longrightarrow\bigoplus_{P\in X}\tilde\OO_P^*/\OO_P^*
@@ -161,16 +190,22 @@ $$
 \longrightarrow0
 $$
 is exact.
+
 :::
 
-<1>6. Let $X$ be an integral singular plane cubic, with singular point $P$.
+:::
+
+::: {.pf-step #s6}
+
+Let $X$ be an integral singular plane cubic, with singular point $P$.
 Its normalization is $\PP^1$, and there is a monic quadratic polynomial $q(t)$ such that, for $A=\OO_{X,P}$ and its integral closure $B$,
 $$
 \boxed{B^*/A^*\cong\bigl(k[t]/(q(t))\bigr)^*/k^*.}
 $$
 The polynomial $q$ has a double root in the cuspidal case and two distinct roots in the nodal case.
 
-::: {.proof}
+::: pf-proof
+
 Choose coordinates with $P=[0:0:1]$.
 The cubic equation has the form $zq_2(x,y)+q_3(x,y)=0$, where the subscripts denote degrees.
 The quadratic term is nonzero: otherwise the equation is a binary cubic and factors over $k$, contrary to integrality.
@@ -227,11 +262,17 @@ Taking the quotient gives the claimed unit-group isomorphism, with $k^*$ embedde
 The tangent cone at $P$ is $q_2$.
 An ordinary cusp has a repeated tangent and a node has two distinct tangents, giving exactly the stated alternatives for $q$.
 There is no other singular point: a line through two singular points would have intersection multiplicity at least four with a cubic, so its restriction polynomial would vanish identically, forcing a line component.
+
 :::
 
-<1>7. For a cuspidal cubic the kernel in part (a) is $(k,+)$, and for a nodal cubic it is $k^\times$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+For a cuspidal cubic the kernel in part (a) is $(k,+)$, and for a nodal cubic it is $k^\times$.
+
+::: pf-proof
+
 In the cuspidal case translate the double root to zero, so that $k[t]/(q)\cong k[\varepsilon]/(\varepsilon^2)$.
 Every unit is uniquely $c(1+u\varepsilon)$ with $c\in k^*$ and $u\in k$.
 Since
@@ -245,14 +286,20 @@ The Chinese remainder theorem identifies $k[t]/(q)$ with $k\times k$ by evaluati
 Its units are $k^*\times k^*$, and the constants form the diagonal subgroup.
 The map $(u,v)\mapsto u/v$ identifies the quotient with $k^*$.
 These calculations use no characteristic restriction; the distinctness of the node's tangent directions is the relevant condition.
+
 :::
 
-<1>8. The exact sequences in part (b) follow, with the right-hand map equal to $\deg\circ\pi^*$.
+:::
 
-::: {.proof}
-By step <1>6, $\tilde X\cong\PP_k^1$, whose Picard group is $\ZZ$ via degree [@Har10a, Proposition II.6.4 and Corollary II.6.16].
-Only the unique singular point contributes to the direct sum in step <1>5.
-Substituting the two groups from step <1>7 gives
+::: {.pf-step #s8}
+
+The exact sequences in part (b) follow, with the right-hand map equal to $\deg\circ\pi^*$.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, $\tilde X\cong\PP_k^1$, whose Picard group is $\ZZ$ via degree [@Har10a, Proposition II.6.4 and Corollary II.6.16].
+Only the unique singular point contributes to the direct sum in step [](#s5){.pf-ref}.
+Substituting the two groups from step [](#s7){.pf-ref} gives
 $$
 0\to(k,+)\to\Pic(X)\xrightarrow{\deg\circ\pi^*}\ZZ\to0
 $$
@@ -261,12 +308,18 @@ $$
 0\to k^*\to\Pic(X)\xrightarrow{\deg\circ\pi^*}\ZZ\to0
 $$
 for the node.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 prove part (a), including the injectivity of the local-unit contribution.
-Steps <1>6--<1>8 compute that contribution and the quotient for both cubics in part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a), including the injectivity of the local-unit contribution.
+Steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} compute that contribution and the quotient for both cubics in part (b).
+
+:::
+
+:::
+
 :::

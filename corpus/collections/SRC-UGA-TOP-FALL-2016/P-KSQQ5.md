@@ -33,8 +33,15 @@ Give an example to show that $\mcs \cup \mct$ need not be a topology.
 :::
 
 ::: {.solution}
-<1>1. The collection $\mcs\cap\mct$ contains $\emptyset$ and $X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The collection $\mcs\cap\mct$ contains $\emptyset$ and $X$.
+
+::: pf-proof
+
 Since $\mcs$ and $\mct$ are topologies on $X$,
 \[
 \emptyset,X\in\mcs
@@ -45,10 +52,17 @@ Hence
 \[
 \emptyset,X\in\mcs\cap\mct.
 \]
+
 :::
 
-<1>2. The collection $\mcs\cap\mct$ is closed under arbitrary unions.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The collection $\mcs\cap\mct$ is closed under arbitrary unions.
+
+::: pf-proof
+
 Let $\{U_i\}_{i\in I}$ be any family of sets in $\mcs\cap\mct$.
 Then every $U_i$ belongs to both $\mcs$ and $\mct$.
 Because each is a topology,
@@ -61,10 +75,17 @@ Therefore
 \[
 \bigcup_{i\in I}U_i\in\mcs\cap\mct.
 \]
+
 :::
 
-<1>3. The collection $\mcs\cap\mct$ is closed under finite intersections.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The collection $\mcs\cap\mct$ is closed under finite intersections.
+
+::: pf-proof
+
 If $U_1,\dots,U_r\in\mcs\cap\mct$, then all of them belong to each of $\mcs$ and $\mct$.
 Thus
 \[
@@ -76,15 +97,29 @@ so
 \[
 U_1\cap\cdots\cap U_r\in\mcs\cap\mct.
 \]
+
 :::
 
-<1>4. Hence $\mcs\cap\mct$ is a topology on $X$.
-::: {.proof}
-Steps <1>1--<1>3 are exactly the topology axioms.
 :::
 
-<1>5. The union of two topologies need not be a topology.
-::: {.proof}
+::: pf-step
+
+Hence $\mcs\cap\mct$ is a topology on $X$.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} are exactly the topology axioms.
+
+:::
+
+:::
+
+::: pf-step
+
+The union of two topologies need not be a topology.
+
+::: pf-proof
+
 Let
 \[
 X=\{a,b,c\},
@@ -106,5 +141,11 @@ while
 \{a\}\cup\{b\}=\{a,b\}\notin\mcs\cup\mct.
 \]
 Thus $\mcs\cup\mct$ is not closed under unions and is not a topology.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -57,8 +57,14 @@ $$
 \Delta(X_1,\ldots,X_n)=\prod_{i<j}(X_i-X_j).
 $$
 
-<1>1. Every transposition sends $\Delta$ to $-\Delta$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every transposition sends $\Delta$ to $-\Delta$.
+
+::: pf-proof
+
 Consider the transposition $\tau=(ab)$ with $a<b$, which interchanges the
 variables $X_a$ and $X_b$. The factor $X_a-X_b$ changes sign:
 $$
@@ -76,16 +82,23 @@ sign:
 $$
 \boxed{\tau(\Delta)=-\Delta.}
 $$
+
 :::
 
-<1>2. Every permutation sends $\Delta$ to either $\Delta$ or $-\Delta$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every permutation sends $\Delta$ to either $\Delta$ or $-\Delta$.
+
+::: pf-proof
+
 Transpositions generate $S_n$ ([[E-SMI-8000E-CY3]]), so every $m\in S_n$
 can be written as a product of transpositions,
 $$
 m=\tau_1\tau_2\cdots\tau_r.
 $$
-Applying step <1>1 repeatedly gives
+Applying step [](#s1){.pf-ref} repeatedly gives
 $$
 m(\Delta)=(-1)^r\Delta.
 $$
@@ -97,10 +110,17 @@ such that
 $$
 m(\Delta)=\operatorname{sgn}(m)\Delta.
 $$
+
 :::
 
-<1>3. The sign function is a homomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+The sign function is a homomorphism.
+
+::: pf-proof
+
 For $m,m'\in S_n$,
 $$
 \begin{aligned}
@@ -115,25 +135,39 @@ $$
 \boxed{\operatorname{sgn}(mm')
 =\operatorname{sgn}(m)\operatorname{sgn}(m').}
 $$
+
 :::
 
-<1>4. The homomorphism is surjective for $n\ge2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The homomorphism is surjective for $n\ge2$.
+
+::: pf-proof
+
 The identity maps to $+1$, while the transposition $(12)$ maps to $-1$ by
-step <1>1. Hence both elements of $\{\pm1\}$ occur, so
+step [](#s1){.pf-ref}. Hence both elements of $\{\pm1\}$ occur, so
 $$
 \operatorname{sgn}:S_n\twoheadrightarrow\{\pm1\}
 $$
 is surjective.
+
 :::
 
-<1>5. Its kernel consists exactly of the permutations expressible as a product of an even number of transpositions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Its kernel consists exactly of the permutations expressible as a product of an even number of transpositions.
+
+::: pf-proof
+
 If
 $$
 m=\tau_1\cdots\tau_r,
 $$
-then step <1>2 gives
+then step [](#s2){.pf-ref} gives
 $$
 \operatorname{sgn}(m)=(-1)^r.
 $$
@@ -151,5 +185,11 @@ $$
 \boxed{A_n=\ker(\operatorname{sgn})}
 $$
 is exactly the subgroup of even permutations.
+
 :::
+
+:::
+
+:::
+
 :::

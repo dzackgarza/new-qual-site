@@ -49,21 +49,48 @@ But $\pi_1(S^1) = \ZZ$ and $\pi_1(S^2) = 0$, so $S^1 \not\simeq S^2$, a contradi
 :::
 
 ::: {.solution}
-<1>1. For $n\ge1$,
+
+::: pf
+
+::: pf-step
+
+For $n\ge1$,
 $$\boxed{\pi_1\left(\bigvee_{i=1}^nS^1\right)\cong F_n.}$$
-::: {.proof}
+
+::: pf-proof
+
 Apply van Kampen inductively: adjoining one circle at the common basepoint takes the free product with $\pi_1(S^1)=\mathbb Z$.
+
 :::
 
-<1>2. If $F_n\cong F_m$, then $n=m$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $F_n\cong F_m$, then $n=m$.
+
+::: pf-proof
+
 Abelianization gives $\mathbb Z^n\cong\mathbb Z^m$, forcing equal ranks.
+
 :::
 
-<1>3. In particular $S^2$ and $S^3$ are not homeomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+
+In particular $S^2$ and $S^3$ are not homeomorphic.
+
+::: pf-proof
+
 Removing two points from a sphere preserves homeomorphism type under any hypothetical homeomorphism. But
 $$S^2\setminus\{p,q\}\simeq S^1,\qquad S^3\setminus\{p',q'\}\simeq S^2.$$
 Their fundamental groups are $\mathbb Z$ and $0$, so the punctured spaces are not homotopy equivalent, hence cannot be homeomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

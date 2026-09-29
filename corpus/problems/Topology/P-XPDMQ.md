@@ -25,24 +25,58 @@ But this would force $(1/2)f(x) = (-1/2)g(x)$ and thus $f(x) = -g(x)$, which we 
 :::
 
 ::: {.solution}
-<1>1. Let $P(v)=v/\|v\|$ for $v\ne0$ and define
+
+::: pf
+
+::: pf-step
+
+Let $P(v)=v/\|v\|$ for $v\ne0$ and define
 $$H(x,t)=P(tf(x)+(1-t)g(x)).$$
-::: {.proof}
+
+::: pf-proof
+
 We need only verify that the vector being normalized is never zero.
+
 :::
 
-<1>2. If $tf(x)+(1-t)g(x)=0$, taking norms gives $t=1-t$, hence $t=1/2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $tf(x)+(1-t)g(x)=0$, taking norms gives $t=1-t$, hence $t=1/2$.
+
+::: pf-proof
+
 Both $f(x)$ and $g(x)$ have norm $1$, so $t\|f(x)\|=(1-t)\|g(x)\|$.
+
 :::
 
-<1>3. At $t=1/2$, the equality would imply $f(x)=-g(x)$, contrary to hypothesis.
-::: {.proof}
+:::
+
+::: pf-step
+
+At $t=1/2$, the equality would imply $f(x)=-g(x)$, contrary to hypothesis.
+
+::: pf-proof
+
 Multiply the zero equation by $2$.
+
 :::
 
-<1>4. Therefore $H$ is well-defined and continuous, with $H(x,0)=g(x)$ and $H(x,1)=f(x)$. Thus $f\simeq g$.
-::: {.proof}
-At the endpoints normalization does nothing because $f(x),g(x)\in S^n$.
 :::
+
+::: pf-step
+
+Therefore $H$ is well-defined and continuous, with $H(x,0)=g(x)$ and $H(x,1)=f(x)$. Thus $f\simeq g$.
+
+::: pf-proof
+
+At the endpoints normalization does nothing because $f(x),g(x)\in S^n$.
+
+:::
+
+:::
+
+:::
+
 :::

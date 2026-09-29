@@ -56,7 +56,11 @@ $$
 $$
 be the blowup of $v$.
 
-<1>1. The resolution $\widetilde X_0$ is the Hirzebruch surface $\FF_2$.
+::: pf
+
+::: {.pf-step #s1}
+
+The resolution $\widetilde X_0$ is the Hirzebruch surface $\FF_2$.
 If $C_0$ is its exceptional section and $f$ a ruling fibre, then
 $$
 C_0^2=-2,
@@ -75,7 +79,8 @@ $$
 \boxed{H\sim C_0+2f}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The ruled-surface model referred to in the hint identifies the blowup of the
 vertex of the quadric cone with $\FF_2$; equivalently, the quadric cone is
 obtained by contracting the negative section of $\FF_2$.  The intersection
@@ -102,9 +107,14 @@ $$
 0=(C_0+sf)\cdot C_0=-2+s,
 $$
 so $s=2$ and $H\sim C_0+2f$.
+
 :::
 
-<1>2. Let $D\subseteq\FF_2$ be the strict transform of $Y$.  Then
+:::
+
+::: {.pf-step #s2}
+
+Let $D\subseteq\FF_2$ be the strict transform of $Y$.  Then
 $$
 D\cong Y,
 $$
@@ -117,7 +127,8 @@ D\cdot C_0=
 \end{cases}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Away from $v$, the morphism $\pi$ is an isomorphism, so if $v\notin Y$ the
 strict transform is isomorphic to $Y$ and is disjoint from $C_0$.
 
@@ -137,9 +148,14 @@ transversely.  Thus
 $$
 D\cdot C_0=1.
 $$
+
 :::
 
-<1>3. Write
+:::
+
+::: {.pf-step #s3}
+
+Write
 $$
 D\sim aC_0+bf.
 $$
@@ -154,7 +170,8 @@ aH+f,&v\in Y,
 $$
 for an integer $a\ge0$; in the first case $a\ge1$.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \Pic(\FF_2)=\ZZ C_0\oplus\ZZ f,
@@ -165,7 +182,7 @@ D\cdot f=a,
 $$
 so $a\ge0$ because $D$ is an effective curve distinct from $C_0$.
 
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 b-2a
 =
@@ -180,12 +197,17 @@ when $Y$ avoids the vertex, and
 $$
 b=2a+1
 $$
-when $Y$ passes through it.  Using $H=C_0+2f$ from step <1>1 gives the two
+when $Y$ passes through it.  Using $H=C_0+2f$ from step [](#s1){.pf-ref} gives the two
 displayed classes.  In the first case $a=0$ would make $D\sim0$, impossible
 for a nonempty effective curve, so $a\ge1$ there.
+
 :::
 
-<1>4. The degree of $Y$ is
+:::
+
+::: {.pf-step #s4}
+
+The degree of $Y$ is
 $$
 \boxed{
 \deg Y=
@@ -195,19 +217,20 @@ $$
 \end{cases}}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The degree is intersection with a hyperplane.  Pulling the hyperplane class
 back to $\FF_2$ therefore gives
 $$
 \deg Y=D\cdot H.
 $$
-From step <1>1,
+From step [](#s1){.pf-ref},
 $$
 H^2=(C_0+2f)^2=-2+4=2,
 \qquad
 H\cdot f=1.
 $$
-Using the two classes from step <1>3 gives
+Using the two classes from step [](#s3){.pf-ref} gives
 $$
 (aH)\cdot H=2a
 $$
@@ -215,9 +238,14 @@ and
 $$
 (aH+f)\cdot H=2a+1.
 $$
+
 :::
 
-<1>5. The genus of $Y$ is
+:::
+
+::: {.pf-step #s5}
+
+The genus of $Y$ is
 $$
 \boxed{
 g(Y)=
@@ -227,9 +255,10 @@ a^2-a,&v\in Y.
 \end{cases}}
 $$
 
-::: {.proof}
-By step <1>2, $D\cong Y$, so it is enough to compute the genus of $D$ on
-the nonsingular surface $\FF_2$.  Step <1>1 gives
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $D\cong Y$, so it is enough to compute the genus of $D$ on
+the nonsingular surface $\FF_2$.  Step [](#s1){.pf-ref} gives
 $$
 K_{\FF_2}=-2C_0-4f=-2H.
 $$
@@ -271,19 +300,25 @@ g(Y)
 =
 a^2-a.
 $$
+
 :::
 
-<1>6. If $v\notin Y$, then $Y$ is the scheme-theoretic complete
+:::
+
+::: {.pf-step #s6}
+
+If $v\notin Y$, then $Y$ is the scheme-theoretic complete
 intersection of $X_0$ with a surface of degree $a$.
 
-::: {.proof}
+::: pf-proof
+
 In this case $Y$ lies in the nonsingular locus of the normal surface $X_0$,
 so it is an effective Cartier divisor on $X_0$.  Since it avoids the center
 of the blowup, its total transform is its strict transform:
 $$
 \pi^*Y=D.
 $$
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 \OO_{\FF_2}(D)
 \cong
@@ -350,12 +385,18 @@ Y=X_0\cap V(F)
 $$
 scheme-theoretically.  Hence $Y$ is a complete intersection of the quadric
 cone with a surface of degree $a$.
+
 :::
 
-<1>7. The two alternatives in the statement are exhaustive.
+:::
 
-::: {.proof}
-If $Y$ avoids the vertex, steps <1>4--<1>6 give
+::: {.pf-step #s7}
+
+The two alternatives in the statement are exhaustive.
+
+::: pf-proof
+
+If $Y$ avoids the vertex, steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} give
 $$
 \deg Y=2a,
 \qquad
@@ -363,18 +404,24 @@ g(Y)=(a-1)^2,
 $$
 with $a\ge1$, and show that $Y$ is the required complete intersection.
 
-If $Y$ passes through the vertex, steps <1>4--<1>5 give
+If $Y$ passes through the vertex, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give
 $$
 \deg Y=2a+1,
 \qquad
 g(Y)=a^2-a.
 $$
 These are exactly the two cases asserted.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 proves the required classification.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} proves the required classification.
+
+:::
+
+:::
+
 :::

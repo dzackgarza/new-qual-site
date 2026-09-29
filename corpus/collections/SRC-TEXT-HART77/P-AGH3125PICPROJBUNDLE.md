@@ -62,14 +62,19 @@ r=\operatorname{rank}\mce\ge2,
 $$
 and write \(\mco_X(1)\) for the tautological twisting sheaf.
 
-<1>1. For any invertible sheaf \(\mcl\) on \(X\), there is a unique integer
+::: pf
+
+::: {.pf-step #s1}
+
+For any invertible sheaf \(\mcl\) on \(X\), there is a unique integer
 \(n\) such that
 $$
 \mcl_y\cong\mco_{\PP^{r-1}_{\kappa(y)}}(n)
 $$
 for every \(y\in Y\).
 
-::: {.proof}
+::: pf-proof
+
 For each \(y\), the fibre is
 $$
 X_y\cong\PP^{r-1}_{\kappa(y)}.
@@ -117,16 +122,22 @@ for example, their coefficients of \(m^{r-2}\) differ when \(r>2\), and
 for \(r=2\) they are the distinct linear polynomials \(m+a+1\) and
 \(m+b+1\). Thus \(n(y)\) is independent of \(y\). Denote its common value
 by \(n\).
+
 :::
 
-<1>2. Every invertible sheaf \(\mcl\) on \(X\) has the form
+:::
+
+::: {.pf-step #s2}
+
+Every invertible sheaf \(\mcl\) on \(X\) has the form
 $$
 \mcl\cong p^*\mcn\tensor\mco_X(n)
 $$
 for some \(\mcn\in\Pic Y\) and \(n\in\ZZ\).
 
-::: {.proof}
-Let \(n\) be the integer from step <1>1 and put
+::: pf-proof
+
+Let \(n\) be the integer from step [](#s1){.pf-ref} and put
 $$
 \mcl_0=\mcl\tensor\mco_X(-n).
 $$
@@ -151,9 +162,14 @@ Tensoring by \(\mco_X(n)\) gives
 $$
 \mcl\cong p^*\mcn\tensor\mco_X(n).
 $$
+
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #s3}
+
+Define
 $$
 \Phi:\Pic Y\times\ZZ\longrightarrow\Pic X
 $$
@@ -165,7 +181,8 @@ $$
 $$
 Then \(\Phi\) is a surjective group homomorphism.
 
-::: {.proof}
+::: pf-proof
+
 Pullback and tensor product give
 $$
 p^*(\mcn_1\tensor\mcn_2)
@@ -178,12 +195,18 @@ $$
 \cong
 \mco_X(n_1+n_2).
 $$
-Hence \(\Phi\) is a homomorphism. Its surjectivity is exactly step <1>2.
+Hence \(\Phi\) is a homomorphism. Its surjectivity is exactly step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The homomorphism \(\Phi\) is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The homomorphism \(\Phi\) is injective.
+
+::: pf-proof
+
 Suppose
 $$
 p^*\mcn\tensor\mco_X(n)\cong\mco_X.
@@ -219,23 +242,37 @@ $$
 \mcn\cong\mco_Y.
 $$
 Hence the kernel of \(\Phi\) is trivial.
+
 :::
 
-<1>5. Consequently
+:::
+
+::: {.pf-step #s5}
+
+Consequently
 $$
 \boxed{\Pic\PP(\mce)\cong\Pic Y\times\ZZ}
 $$
 when \(\operatorname{rank}\mce\ge2\).
 
-::: {.proof}
-Steps <1>3 and <1>4 show that \(\Phi\) is a bijective group homomorphism.
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that \(\Phi\) is a bijective group homomorphism.
+
 :::
 
-<1>6. Q.E.D. for the corrected statement.
+:::
 
-::: {.proof}
-Step <1>5 proves the asserted formula under the necessary rank hypothesis,
+::: pf-qed
+
+for the corrected statement.
+
+Step [](#s5){.pf-ref} proves the asserted formula under the necessary rank hypothesis,
 and the preceding erratum explains why the printed rank-one case cannot
 satisfy it.
+
 :::
+
+:::
+
 :::

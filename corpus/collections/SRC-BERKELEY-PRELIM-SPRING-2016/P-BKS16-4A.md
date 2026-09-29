@@ -28,7 +28,12 @@ Prove that a monic polynomial $p(z)$ with real coefficients is real-rooted if an
 :::
 
 ::: {.solution}
-<1>1. Suppose first that all roots of $p$ are real. If
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose first that all roots of $p$ are real. If
 $$
 p(z)=\prod_{j=1}^d(z-\lambda_j),
 \qquad
@@ -41,17 +46,24 @@ $$
 \sum_{j=1}^d\frac1{z-\lambda_j}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since every root $\lambda_j$ is real, a point $z$ with $\Im z>0$ is not a root of $p$. Taking the logarithmic derivative of the displayed factorization gives the identity.
+
 :::
 
-<1>2. Under the hypothesis of step <1>1,
+:::
+
+::: {.pf-step #s2}
+
+Under the hypothesis of step [](#s1){.pf-ref},
 $$
 \Im\left(\frac{p'(z)}{p(z)}\right)<0
 $$
 whenever $\Im z>0$.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 z=x+iy,
@@ -72,20 +84,31 @@ $$
 <
 0.
 $$
-Summing over $j$ and using step <1>1 gives the claim.
+Summing over $j$ and using step [](#s1){.pf-ref} gives the claim.
+
 :::
 
-<1>3. Conversely, suppose that $p$ is not real-rooted. Then $p$ has a root
+:::
+
+::: {.pf-step #s3}
+
+Conversely, suppose that $p$ is not real-rooted. Then $p$ has a root
 $$
 \lambda=a+ib
 $$
 with $b>0$.
 
-::: {.proof}
+::: pf-proof
+
 Because $p$ has real coefficients, its nonreal roots occur in conjugate pairs. Hence any nonreal root has a conjugate partner, and one of the pair lies in the upper half-plane.
+
 :::
 
-<1>4. Let $m\geq1$ be the multiplicity of $\lambda$, and write
+:::
+
+::: {.pf-step #s4}
+
+Let $m\geq1$ be the multiplicity of $\lambda$, and write
 $$
 p(z)=(z-\lambda)^m q(z),
 \qquad
@@ -100,11 +123,17 @@ $$
 \frac{q'(z)}{q(z)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiate the factorization and divide by $(z-\lambda)^mq(z)$.
+
 :::
 
-<1>5. For all sufficiently small $\epsilon>0$, the point
+:::
+
+::: {.pf-step #s5}
+
+For all sufficiently small $\epsilon>0$, the point
 $$
 z_\epsilon=\lambda-i\epsilon
 $$
@@ -113,7 +142,8 @@ $$
 \Im\left(\frac{p'(z_\epsilon)}{p(z_\epsilon)}\right)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $q(\lambda)\neq0$, there is a neighborhood of $\lambda$ on which $q$ has no zeros. On a sufficiently small closed disk in that neighborhood, the continuous function $q'/q$ is bounded; choose $M>0$ with
 $$
 \left|\frac{q'(z)}{q(z)}\right|\leq M
@@ -124,7 +154,7 @@ Take
 $$
 0<\epsilon<\min\left(b,\frac{m}{M+1}\right)
 $$
-small enough that $z_\epsilon$ lies in this disk. Then $\Im z_\epsilon=b-\epsilon>0$, and by step <1>4,
+small enough that $z_\epsilon$ lies in this disk. Then $\Im z_\epsilon=b-\epsilon>0$, and by step [](#s4){.pf-ref},
 $$
 \frac{p'(z_\epsilon)}{p(z_\epsilon)}
 =
@@ -146,22 +176,34 @@ $$
 >
 0.
 $$
+
 :::
 
-<1>6. Hence the condition
+:::
+
+::: {.pf-step #s6}
+
+Hence the condition
 $$
 \Im\left(\frac{p'(z)}{p(z)}\right)<0
 \quad\text{whenever }\Im z>0
 $$
 holds if and only if $p$ is real-rooted.
 
-::: {.proof}
-Steps <1>1--<1>2 prove the forward implication. If $p$ were not real-rooted, steps <1>3--<1>5 would produce a point in the upper half-plane where the imaginary part is positive, contradicting the stated condition. Thus the condition implies real-rootedness.
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the forward implication. If $p$ were not real-rooted, steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} would produce a point in the upper half-plane where the imaginary part is positive, contradicting the stated condition. Thus the condition implies real-rootedness.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 proves both directions.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} proves both directions.
+
+:::
+
+:::
+
 :::

@@ -52,26 +52,37 @@ z\in\CC
 \abs{z}<R.
 $$
 
-<1>1. Choose a real number $r$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+Choose a real number $r$ such that
 $$
 \abs{z}<r<R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The interval
 $$
 (\abs{z},R)
 $$
 is nonempty because $\abs{z}<R$.
+
 :::
 
-<1>2. The sequence
+:::
+
+::: {.pf-step #s2}
+
+The sequence
 $$
 (a_nr^n)_{n\geq0}
 $$
 is bounded.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 r<R,
@@ -86,9 +97,14 @@ $$
 \abs{a_n}r^n\leq M
 $$
 for every $n\geq0$.
+
 :::
 
-<1>3. For every $n\geq1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n\geq1$,
 $$
 \abs{b_nz^n}
 <
@@ -98,8 +114,9 @@ Mn^2
 \right)^n.
 $$
 
-::: {.proof}
-Using the coefficient hypothesis and step <1>2,
+::: pf-proof
+
+Using the coefficient hypothesis and step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 \abs{b_nz^n}
@@ -117,9 +134,14 @@ Mn^2
 \right)^n.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The numerical series
+:::
+
+::: {.pf-step #s4}
+
+The numerical series
 $$
 \sum_{n=1}^{\infty}
 n^2
@@ -129,12 +151,13 @@ n^2
 $$
 converges.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 q=\frac{\abs{z}}r.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 0\leq q<1.
 $$
@@ -153,17 +176,23 @@ q
 1.
 $$
 The ratio test gives convergence.
+
 :::
 
-<1>5. The series
+:::
+
+::: {.pf-step #s5}
+
+The series
 $$
 \sum_{n=0}^{\infty}b_nz^n
 $$
 converges absolutely.
 
-::: {.proof}
-The term $b_0$ is a single finite complex number. For $n\geq1$, step <1>3
-and convergence in step <1>4 give
+::: pf-proof
+
+The term $b_0$ is a single finite complex number. For $n\geq1$, step [](#s3){.pf-ref}
+and convergence in step [](#s4){.pf-ref} give
 $$
 \sum_{n=1}^{\infty}\abs{b_nz^n}
 <
@@ -177,9 +206,14 @@ n^2
 \infty.
 $$
 Thus the full series converges absolutely.
+
 :::
 
-<1>6. The series
+:::
+
+::: {.pf-step #s6}
+
+The series
 $$
 \boxed{
 \sum_{n=0}^{\infty}b_nz^n
@@ -187,14 +221,21 @@ $$
 $$
 converges for every $\abs{z}<R$.
 
-::: {.proof}
-The point $z$ was arbitrary subject only to $\abs{z}<R$, and step <1>5
+::: pf-proof
+
+The point $z$ was arbitrary subject only to $\abs{z}<R$, and step [](#s5){.pf-ref}
 proves convergence at every such point.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

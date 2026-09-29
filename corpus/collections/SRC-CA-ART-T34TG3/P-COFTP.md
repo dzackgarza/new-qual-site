@@ -37,65 +37,120 @@ g(z) \coloneqq \frac{(\Log z)^2}{z^2 + a^2},
 \qquad
 I \coloneqq \int_0^{\infty} \frac{\log x}{x^2 + a^2}\, dx.$$
 
-<1>1. On the upper edge $\Log z = \log x$, and on the lower edge $\Log z = \log x + 2\pi i$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+On the upper edge $\Log z = \log x$, and on the lower edge $\Log z = \log x + 2\pi i$.
+
+::: pf-proof
+
 Approaching the positive real axis from above, $\arg z\to0$; from below, $\arg z\to2\pi$.
+
 :::
 
-<1>2. For $h\in\{f,g\}$, the integrals of $h$ over $\abs z = R$ and $\abs z = \varepsilon$ tend to $0$ as $R\to\infty$ and $\varepsilon\to0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For $h\in\{f,g\}$, the integrals of $h$ over $\abs z = R$ and $\abs z = \varepsilon$ tend to $0$ as $R\to\infty$ and $\varepsilon\to0$.
+
+::: pf-proof
+
 On $\abs z = r$, $\abs{\Log z} \le \abs{\log r} + 2\pi$ and $\abs{z^2 + a^2} \ge \abs{r^2 - a^2}$. The circle has length $2\pi r$, so the integral of $h$ over it is at most $2\pi r\,(\abs{\log r} + 2\pi)^2/\abs{r^2 - a^2}$ (with exponent $1$ in place of $2$ for $f$). This tends to $0$ as $r\to\infty$ and as $r\to0$.
+
 :::
 
-<1>3. $\displaystyle\int_0^{\infty} \frac{dx}{x^2 + a^2} = \frac{\pi}{2a}$.
+:::
 
-<2>1. The two edges contribute $-2\pi i \int_\varepsilon^R \frac{dx}{x^2 + a^2}$ to $\int_\Gamma f$.
+::: {.pf-step #s3}
 
-::: {.proof}
-By step <1>1, and since the lower edge runs from $R$ to $\varepsilon$, the two edges give
+$\displaystyle\int_0^{\infty} \frac{dx}{x^2 + a^2} = \frac{\pi}{2a}$.
+
+::: pf-proof
+
+::: {.pf-step #s3-1}
+
+The two edges contribute $-2\pi i \int_\varepsilon^R \frac{dx}{x^2 + a^2}$ to $\int_\Gamma f$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, and since the lower edge runs from $R$ to $\varepsilon$, the two edges give
 $$\int_\varepsilon^R \frac{\log x}{x^2 + a^2}\, dx - \int_\varepsilon^R \frac{\log x + 2\pi i}{x^2 + a^2}\, dx.$$
+
 :::
 
-<2>2. $\Res_{z=ia} f + \Res_{z=-ia} f = -\dfrac{\pi}{2a}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3-2}
+
+$\Res_{z=ia} f + \Res_{z=-ia} f = -\dfrac{\pi}{2a}$.
+
+::: pf-proof
+
 The poles $\pm ia$ are simple, $z^2 + a^2 = (z-ia)(z+ia)$, $\Log(ia) = \log a + i\pi/2$, and $\Log(-ia) = \log a + 3i\pi/2$. Hence
 $$\Res_{z=ia} f + \Res_{z=-ia} f = \frac{\log a + i\pi/2}{2ia} + \frac{\log a + 3i\pi/2}{-2ia} = \frac{-i\pi}{2ia}.$$
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-Both poles lie inside $\Gamma$, so the residue theorem and step <2>2 give $\int_\Gamma f = 2\pi i\cdot(-\pi/(2a)) = -i\pi^2/a$. Letting $\varepsilon \to 0$ and $R \to \infty$, steps <1>2 and <2>1 give $-2\pi i \int_0^{\infty} \frac{dx}{x^2 + a^2} = -\frac{i\pi^2}{a}$.
 :::
 
-<1>4. The two edges contribute $\displaystyle\int_\varepsilon^R \frac{-4\pi i \log x + 4\pi^2}{x^2 + a^2}\, dx$ to $\int_\Gamma g$.
+::: pf-qed
 
-::: {.proof}
-By step <1>1, and since the lower edge runs from $R$ to $\varepsilon$, the edges give $\int_\varepsilon^R \frac{(\log x)^2 - (\log x + 2\pi i)^2}{x^2 + a^2}\, dx$. Expand $(\log x + 2\pi i)^2 = (\log x)^2 + 4\pi i \log x - 4\pi^2$.
+Both poles lie inside $\Gamma$, so the residue theorem and step [](#s3-2){.pf-ref} give $\int_\Gamma f = 2\pi i\cdot(-\pi/(2a)) = -i\pi^2/a$. Letting $\varepsilon \to 0$ and $R \to \infty$, steps [](#s2){.pf-ref} and [](#s3-1){.pf-ref} give $-2\pi i \int_0^{\infty} \frac{dx}{x^2 + a^2} = -\frac{i\pi^2}{a}$.
+
 :::
 
-<1>5. $\displaystyle\int_\Gamma g = -\frac{2\pi^2 i}{a}\log a + \frac{2\pi^3}{a}$.
+:::
 
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The two edges contribute $\displaystyle\int_\varepsilon^R \frac{-4\pi i \log x + 4\pi^2}{x^2 + a^2}\, dx$ to $\int_\Gamma g$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, and since the lower edge runs from $R$ to $\varepsilon$, the edges give $\int_\varepsilon^R \frac{(\log x)^2 - (\log x + 2\pi i)^2}{x^2 + a^2}\, dx$. Expand $(\log x + 2\pi i)^2 = (\log x)^2 + 4\pi i \log x - 4\pi^2$.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+$\displaystyle\int_\Gamma g = -\frac{2\pi^2 i}{a}\log a + \frac{2\pi^3}{a}$.
+
+::: pf-proof
+
 The residues are $\Res_{z=ia} g = \frac{(\log a + i\pi/2)^2}{2ia}$ and $\Res_{z=-ia} g = \frac{(\log a + 3i\pi/2)^2}{-2ia}$. By the difference of squares, their sum is
 $$\frac{1}{2ia}(-i\pi)(2\log a + 2i\pi) = -\frac{\pi}{a}(\log a + i\pi).$$
 Multiply by $2\pi i$.
+
 :::
 
-<1>6. $I = \boxed{\dfrac{\pi}{2a}\log a}$.
+:::
 
-::: {.proof}
-Let $\varepsilon \to 0$ and $R \to \infty$ in $\int_\Gamma g$. By steps <1>2, <1>3, <1>4, and <1>5,
+::: {.pf-step #s6}
+
+$I = \boxed{\dfrac{\pi}{2a}\log a}$.
+
+::: pf-proof
+
+Let $\varepsilon \to 0$ and $R \to \infty$ in $\int_\Gamma g$. By steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref},
 $$-4\pi i I + 4\pi^2 \cdot \frac{\pi}{2a} = -\frac{2\pi^2 i}{a}\log a + \frac{2\pi^3}{a}.$$
 The real terms $4\pi^2 \cdot \frac{\pi}{2a}$ and $\frac{2\pi^3}{a}$ are equal, leaving $-4\pi i I = -\frac{2\pi^2 i}{a} \log a$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the claimed identity.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the claimed identity.
+
+:::
+
+:::
+
 :::

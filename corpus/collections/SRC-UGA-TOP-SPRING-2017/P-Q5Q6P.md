@@ -36,8 +36,14 @@ Let
 T^2=S^1\times S^1.
 \]
 
-<1>1. If an embedded closed disk $D\subset T^2$ is given, then $D$ is contained in a contractible open subset of $T^2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If an embedded closed disk $D\subset T^2$ is given, then $D$ is contained in a contractible open subset of $T^2$.
+
+::: pf-proof
+
 The boundary $\partial D$ is an embedded circle in the surface $T^2$.
 By the collar theorem for surfaces, $\partial D$ has a collar
 \[
@@ -53,9 +59,14 @@ The open set
 U=\operatorname{int}(D')
 \]
 is homeomorphic to an open disk and hence is contractible.
+
 :::
 
-<1>2. Suppose, for contradiction, that
+:::
+
+::: {.pf-step #s2}
+
+Suppose, for contradiction, that
 \[
 T^2=A\cup B
 \]
@@ -68,16 +79,25 @@ B\subset V,
 \qquad
 T^2=U\cup V.
 \]
-::: {.proof}
-Apply <1>1 separately to $A$ and $B$.
+
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} separately to $A$ and $B$.
 Since $A\cup B=T^2$, any open neighborhoods $U\supset A$ and $V\supset B$ also satisfy
 \[
 U\cup V=T^2.
 \]
+
 :::
 
-<1>3. If a space $X$ is the union of two contractible open sets $U$ and $V$, then the cup product of any two positive-degree integral cohomology classes on $X$ is zero.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If a space $X$ is the union of two contractible open sets $U$ and $V$, then the cup product of any two positive-degree integral cohomology classes on $X$ is zero.
+
+::: pf-proof
+
 Let
 \[
 \alpha\in H^p(X;\ZZ),
@@ -118,10 +138,17 @@ Therefore
 \alpha\smile\beta=0.
 \]
 No condition on $U\cap V$ was used.
+
 :::
 
-<1>4. The torus has degree-one classes whose cup product is nonzero.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The torus has degree-one classes whose cup product is nonzero.
+
+::: pf-proof
+
 Let
 \[
 p_1,p_2:T^2=S^1\times S^1\longrightarrow S^1
@@ -151,18 +178,31 @@ Thus
 \[
 \alpha\smile\beta\ne0.
 \]
+
 :::
 
-<1>5. Therefore $T^2$ cannot be the union of two disks.
-::: {.proof}
-Under the assumption in <1>2, the contractible open cover $T^2=U\cup V$ would imply by <1>3 that
+:::
+
+::: pf-step
+
+Therefore $T^2$ cannot be the union of two disks.
+
+::: pf-proof
+
+Under the assumption in step [](#s2){.pf-ref}, the contractible open cover $T^2=U\cup V$ would imply by step [](#s3){.pf-ref} that
 \[
 \alpha\smile\beta=0
 \]
-for the classes in <1>4. But <1>4 gives
+for the classes in step [](#s4){.pf-ref}. But step [](#s4){.pf-ref} gives
 \[
 \alpha\smile\beta\ne0.
 \]
 This contradiction proves that no two embedded disks, regardless of how they intersect, can cover $S^1\times S^1$.
+
 :::
+
+:::
+
+:::
+
 :::

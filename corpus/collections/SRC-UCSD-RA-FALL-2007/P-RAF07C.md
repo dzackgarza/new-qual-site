@@ -36,10 +36,16 @@ $$
 (c) Show that the sequence $\{g^{(n)}(\xi)\}$ converges uniformly to $0$ on $\mathbb{R}$, where $g^{(n)}(\xi)$ denotes the $n$th derivative of $g$.
 :::
 
-
 ::: {.solution}
-<1>1. Prove continuity of $g$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove continuity of $g$.
+
+::: pf-proof
+
 Fix $\xi\in\mathbb R$ and let $\xi_k\to\xi$. For every $x$,
 \[
 e^{i\xi_k\cos x}f(x)\longrightarrow e^{i\xi\cos x}f(x),
@@ -53,10 +59,17 @@ Since $f\in L^1(\mathbb R)$, dominated convergence gives
 g(\xi_k)\to g(\xi).
 \]
 Hence $g$ is continuous.
+
 :::
 
-<1>2. Differentiate under the integral sign to all orders.
-::: {.proof}
+:::
+
+::: pf-step
+
+Differentiate under the integral sign to all orders.
+
+::: pf-proof
+
 For each integer $n\ge0$, define
 \[
 G_n(\xi,x):=(i\cos x)^n e^{i\xi\cos x}f(x).
@@ -78,10 +91,17 @@ The same dominated-convergence argument shows each $g^{(n)}$ is continuous. Thus
 \[
 g\in C^\infty(\mathbb R).
 \]
+
 :::
 
-<1>3. Prove that $g^{(n)}\to0$ uniformly in $\xi$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that $g^{(n)}\to0$ uniformly in $\xi$.
+
+::: pf-proof
+
 For every $\xi\in\mathbb R$,
 \[
 |g^{(n)}(\xi)|
@@ -109,5 +129,11 @@ Since the bound is independent of $\xi$,
 \sup_{\xi\in\mathbb R}|g^{(n)}(\xi)|\longrightarrow0.}
 \]
 Thus $g^{(n)}\to0$ uniformly on $\mathbb R$.
+
 :::
+
+:::
+
+:::
+
 :::

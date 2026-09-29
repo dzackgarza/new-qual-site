@@ -47,7 +47,11 @@ f(x)=d(x,K)
 \inf_{y\in K}\norm{x-y}.
 $$
 
-<1>1. For every $x\in\RR^n$, there is a point
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in\RR^n$, there is a point
 $$
 y_x\in K
 $$
@@ -56,24 +60,31 @@ $$
 f(x)=\norm{x-y_x}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For fixed $x$, the function
 $$
 y\longmapsto\norm{x-y}
 $$
 is continuous on the compact set $K$. It therefore attains its
 minimum.
+
 :::
 
-<1>2. For all $x,y\in\RR^n$,
+:::
+
+::: {.pf-step #s2}
+
+For all $x,y\in\RR^n$,
 $$
 \abs{f(x)-f(y)}
 \le
 \norm{x-y}.
 $$
 
-::: {.proof}
-Let $y_0\in K$ realize the distance from $y$ to $K$, as in step <1>1.
+::: pf-proof
+
+Let $y_0\in K$ realize the distance from $y$ to $K$, as in step [](#s1){.pf-ref}.
 Then
 $$
 \begin{aligned}
@@ -92,29 +103,40 @@ f(x)-f(y)\le\norm{x-y}.
 $$
 Interchanging $x$ and $y$ gives the opposite inequality, and the two
 together yield the claim.
+
 :::
 
-<1>3. The function $f$ is continuous and
+:::
+
+::: {.pf-step #s3}
+
+The function $f$ is continuous and
 $$
 \boxed{f(x)=0\iff x\in K}.
 $$
 
-::: {.proof}
-Step <1>2 shows that $f$ is $1$-Lipschitz, hence continuous.
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that $f$ is $1$-Lipschitz, hence continuous.
 
 If $x\in K$, then
 $$
 f(x)\le\norm{x-x}=0,
 $$
-so $f(x)=0$. Conversely, if $f(x)=0$, step <1>1 gives
+so $f(x)=0$. Conversely, if $f(x)=0$, step [](#s1){.pf-ref} gives
 $y_x\in K$ with
 $$
 \norm{x-y_x}=0.
 $$
 Hence $x=y_x\in K$. This proves part (a).
+
 :::
 
-<1>4. The function
+:::
+
+::: {.pf-step #s4}
+
+The function
 $$
 g(x)\coloneqq\max\{1-f(x),0\}
 $$
@@ -123,23 +145,30 @@ $$
 0\le g(x)\le1.
 $$
 
-::: {.proof}
-Continuity follows from step <1>3 and continuity of the maximum of two
+::: pf-proof
+
+Continuity follows from step [](#s3){.pf-ref} and continuity of the maximum of two
 real-valued continuous functions. Since $f\ge0$, one has
 $$
 1-f(x)\le1,
 $$
 and taking the maximum with $0$ gives the displayed bounds.
+
 :::
 
-<1>5. The functions $g^m$ are supported in the bounded set
+:::
+
+::: {.pf-step #s5}
+
+The functions $g^m$ are supported in the bounded set
 $$
 K_1
 \coloneqq
 \{x\in\RR^n:d(x,K)\le1\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $d(x,K)>1$, then
 $$
 1-f(x)<0
@@ -165,9 +194,14 @@ R+1.
 $$
 Thus $K_1$ is bounded. It is also closed by continuity of $f$, hence
 compact.
+
 :::
 
-<1>6. Pointwise on $\RR^n$,
+:::
+
+::: {.pf-step #s6}
+
+Pointwise on $\RR^n$,
 $$
 g(x)^m
 \longrightarrow
@@ -175,14 +209,15 @@ g(x)^m
 $$
 as $m\to\infty$.
 
-::: {.proof}
-If $x\in K$, step <1>3 gives $f(x)=0$, so
+::: pf-proof
+
+If $x\in K$, step [](#s3){.pf-ref} gives $f(x)=0$, so
 $$
 g(x)=1
 $$
 and every power equals $1$.
 
-If $x\notin K$, then step <1>3 gives $f(x)>0$. Hence
+If $x\notin K$, then step [](#s3){.pf-ref} gives $f(x)>0$. Hence
 $$
 0\le g(x)<1,
 $$
@@ -191,20 +226,31 @@ $$
 g(x)^m\to0.
 $$
 These are exactly the two values of $1_K$.
+
 :::
 
-<1>7. For every $m\ge1$,
+:::
+
+::: {.pf-step #s7}
+
+For every $m\ge1$,
 $$
 0\le g(x)^m\le1_{K_1}(x).
 $$
 
-::: {.proof}
-Step <1>4 gives $0\le g^m\le1$. Step <1>5 shows that $g^m$ vanishes
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives $0\le g^m\le1$. Step [](#s5){.pf-ref} shows that $g^m$ vanishes
 outside $K_1$. Combining the two statements gives the displayed
 domination.
+
 :::
 
-<1>8. One has
+:::
+
+::: {.pf-step #s8}
+
+One has
 $$
 \boxed{
 \lim_{m\to\infty}
@@ -214,17 +260,24 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The compact set $K_1$ is bounded and Borel measurable, so
-$1_{K_1}$ is integrable. Steps <1>6--<1>7 therefore satisfy the
+$1_{K_1}$ is integrable. Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} therefore satisfy the
 hypotheses of the dominated convergence theorem, which gives the
 displayed limit. Since compact $K$ is Borel measurable, the right-hand
 side is its $n$-dimensional volume. This proves part (b).
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), and step <1>8 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and step [](#s8){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

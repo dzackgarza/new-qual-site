@@ -41,8 +41,15 @@ and give an example where the inequality is strict.
 :::
 
 ::: {.solution}
-<1>1. The norm is weakly lower semicontinuous.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The norm is weakly lower semicontinuous.
+
+::: pf-proof
+
 If $f=0$, the claimed inequality is immediate. Assume $f\ne0$ and set
 \[
 g=\frac{f}{\|f\|}.
@@ -61,10 +68,17 @@ Therefore
 =\lim_{n\to\infty}|\langle f_n,g\rangle|
 \le\liminf_{n\to\infty}\|f_n\|.
 \]
+
 :::
 
-<1>2. Strict inequality can occur.
-::: {.proof}
+:::
+
+::: pf-step
+
+Strict inequality can occur.
+
+::: pf-proof
+
 Take $X=\ell^2(\mathbb N)$ and let $e_n$ be the standard orthonormal basis. For every $g=(g_k)\in\ell^2$, one has $g_n\to0$, hence
 \[
 \langle e_n,g\rangle=g_n\longrightarrow0.
@@ -78,10 +92,17 @@ so
 \[
 0=\|0\|<1=\liminf_n\|e_n\|.
 \]
+
 :::
 
-<1>3. Weak convergence plus convergence of norms implies norm convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Weak convergence plus convergence of norms implies norm convergence.
+
+::: pf-proof
+
 Since $f_n\rightharpoonup f$, taking the test vector $g=f$ gives
 \[
 \langle f_n,f\rangle\longrightarrow\langle f,f\rangle=\|f\|^2.
@@ -100,5 +121,11 @@ Hence
 \|f_n-f\|\longrightarrow0,
 \]
 which is exactly strong convergence.
+
 :::
+
+:::
+
+:::
+
 :::

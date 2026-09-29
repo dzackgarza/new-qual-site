@@ -36,7 +36,12 @@ b. Show that a non-abelian simple group $G$ has no proper subgroup of index $\le
 :::
 
 ::: {.solution}
-<1>1. For part (a), the Sylow count satisfies
+
+::: pf
+
+::: pf-step
+
+For part (a), the Sylow count satisfies
 $$
 1\leq n_p\leq m,\qquad n_p\mid m,\qquad
 n_p\equiv1\pmod p.
@@ -49,7 +54,8 @@ Moreover, $n_p=1$ if and only if $G$ has a normal Sylow
 $p$-subgroup. In that case this Sylow subgroup is
 characteristic. If $n_p>1$, then $n_p\geq p+1$.
 
-::: {.proof}
+::: pf-proof
+
 Existence, conjugacy, divisibility, and the congruence are
 the Sylow theorems [@DF04]. The bound $n_p\leq m$
 follows from the positive divisibility $n_p\mid m$.
@@ -66,12 +72,18 @@ $p$-subgroups; a unique one is consequently
 characteristic. Finally, a positive integer larger
 than $1$ and congruent to $1$ modulo $p$ is at least
 $p+1$.
+
 :::
 
-<1>2. A nonabelian simple group has no proper subgroup
+:::
+
+::: pf-step
+
+A nonabelian simple group has no proper subgroup
 of index at most $4$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose $H<G$ has finite index $n\leq4$. Properness
 implies $2\leq n\leq4$. The action on the left cosets
 defines a homomorphism
@@ -88,5 +100,11 @@ Thus $G$ embeds in $S_n$, so it is finite and
 $|G|\leq n!\leq24$. Since $A_5$ is the smallest
 nonabelian simple group, $|G|\geq|A_5|=5!/2=60$,
 a contradiction.
+
 :::
+
+:::
+
+:::
+
 :::

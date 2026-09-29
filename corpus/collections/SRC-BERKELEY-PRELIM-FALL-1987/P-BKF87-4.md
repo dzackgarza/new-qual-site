@@ -45,9 +45,15 @@ so linear dependence is necessary.
 :::
 
 ::: {.solution}
-<1>1. There is a $C^1$ local coordinate system near $p_0$ whose first coordinate is $u$.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+There is a $C^1$ local coordinate system near $p_0$ whose first coordinate is $u$.
+
+::: pf-proof
+
 Write
 $$
 p_0=(x_0,y_0).
@@ -87,9 +93,14 @@ $$
 W=I\times J.
 $$
 Its first coordinate is $u$.
+
 :::
 
-<1>2. In the coordinates $(s,t)=\Phi(x,y)$, the function
+:::
+
+::: {.pf-step #s2}
+
+In the coordinates $(s,t)=\Phi(x,y)$, the function
 $$
 \widetilde v(s,t)=v\bigl(\Phi^{-1}(s,t)\bigr)
 $$
@@ -99,7 +110,8 @@ $$
 $$
 throughout $I\times J$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $(s,t)\in I\times J$ and put
 $$
 q=\Phi^{-1}(s,t).
@@ -134,22 +146,28 @@ dv_q(X)
 =
 0.
 $$
+
 :::
 
-<1>3. There is a $C^1$ function $F:I\to\mathbb R$ such that
+:::
+
+::: {.pf-step #s3}
+
+There is a $C^1$ function $F:I\to\mathbb R$ such that
 $$
 \widetilde v(s,t)=F(s)
 $$
 for every $(s,t)\in I\times J$.
 
-::: {.proof}
+::: pf-proof
+
 Choose any $t_0\in J$ and define
 $$
 F(s)=\widetilde v(s,t_0).
 $$
 Since $\widetilde v$ is $C^1$, so is $F$.
 
-For fixed $s\in I$, step <1>2 says that the one-variable function
+For fixed $s\in I$, step [](#s2){.pf-ref} says that the one-variable function
 $$
 t\longmapsto\widetilde v(s,t)
 $$
@@ -158,14 +176,20 @@ $$
 \widetilde v(s,t)=\widetilde v(s,t_0)=F(s)
 $$
 for all $t\in J$.
+
 :::
 
-<1>4. On the neighborhood $U$ of $p_0$,
+:::
+
+::: {.pf-step #s4}
+
+On the neighborhood $U$ of $p_0$,
 $$
 \boxed{v(x,y)=F(u(x,y))}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $(x,y)\in U$, write
 $$
 \Phi(x,y)=(s,t).
@@ -174,7 +198,7 @@ By construction,
 $$
 s=u(x,y).
 $$
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 v(x,y)
 =
@@ -184,11 +208,17 @@ F(s)
 =
 F(u(x,y)).
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 supplies the required $C^1$ function and neighborhood.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} supplies the required $C^1$ function and neighborhood.
+
+:::
+
+:::
+
 :::

@@ -21,7 +21,11 @@ Suppose $F\subset E\subset K$, with $K/F$ Galois, and both $E/F$ and $K/E$ have 
 ::: {.solution}
 No.
 
-<1>1. Number-field counterexample.
+::: pf
+
+::: pf-step
+
+Number-field counterexample.
 
 Let $K$ be the splitting field of
 \[
@@ -49,7 +53,15 @@ and
 \]
 Both successive Galois groups are abelian, but the total group is $S_3$.
 
-<1>2. Function-field counterexample.
+:::
+
+::: pf-step
+
+Function-field counterexample.
+
+:::
+
+:::
 
 Let $\omega$ be a primitive cube root of unity and let
 \[

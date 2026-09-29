@@ -41,8 +41,14 @@ Let
 \]
 Then \(\xi\) is a primitive \(4p\)-th root of unity.
 
-<1>1. The element \(\sin(2\pi/p)\) generates the maximal real subfield of \(\mathbb Q(\xi)\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The element \(\sin(2\pi/p)\) generates the maximal real subfield of \(\mathbb Q(\xi)\).
+
+::: pf-proof
+
 Using \(\sin\theta=\cos(\pi/2-\theta)\),
 \[
 \sin\!\left(\frac{2\pi}{p}\right)
@@ -66,21 +72,33 @@ Now \(\eta\) satisfies
 T^2-(\eta+\eta^{-1})T+1=0,
 \]
 so \([\mathbb Q(\eta):\mathbb Q(\eta+\eta^{-1})]\le2\). Complex conjugation is a nontrivial automorphism of \(\mathbb Q(\eta)\) fixing \(\eta+\eta^{-1}\), so this degree is exactly \(2\). Thus \(\mathbb Q(\eta+\eta^{-1})\) is the maximal real subfield of \(\mathbb Q(\eta)=\mathbb Q(\xi)\).
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \left[\mathbb Q\!\left(\sin\frac{2\pi}{p}\right):\mathbb Q\right]=p-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since \(p\) is odd,
 \[
 [\mathbb Q(\xi):\mathbb Q]=\varphi(4p)=\varphi(4)\varphi(p)=2(p-1).
 \]
-By <1>1 the desired field has index \(2\) in \(\mathbb Q(\xi)\), so its degree over \(\mathbb Q\) is \(p-1\). This also proves algebraicity.
+By step [](#s1){.pf-ref} the desired field has index \(2\) in \(\mathbb Q(\xi)\), so its degree over \(\mathbb Q\) is \(p-1\). This also proves algebraicity.
+
 :::
 
-<1>3. The extension \(\mathbb Q(\sin(2\pi/p))/\mathbb Q\) is Galois, with
+:::
+
+::: {.pf-step #s3}
+
+The extension \(\mathbb Q(\sin(2\pi/p))/\mathbb Q\) is Galois, with
 \[
 \operatorname{Gal}\!\left(\mathbb Q\!\left(\sin\frac{2\pi}{p}\right)/\mathbb Q\right)
 \cong
@@ -89,7 +107,9 @@ By <1>1 the desired field has index \(2\) in \(\mathbb Q(\xi)\), so its degree o
 (\mathbb Z/p\mathbb Z)^\times
 \cong C_{p-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The cyclotomic extension \(\mathbb Q(\xi)/\mathbb Q\) is Galois with abelian group
 \[
 (\mathbb Z/4p\mathbb Z)^\times.
@@ -105,15 +125,22 @@ By the Chinese remainder theorem,
 (\mathbb Z/4\mathbb Z)^\times\times(\mathbb Z/p\mathbb Z)^\times.
 \]
 Each coset modulo \(\{\pm1\}\) has a unique representative congruent to \(1\pmod4\), so restriction to the second factor identifies the quotient with \((\mathbb Z/p\mathbb Z)^\times\). The latter is cyclic of order \(p-1\).
+
 :::
 
-<1>4. There is no odd prime \(p\) such that \(p^{1/3}\in\mathbb Q(\sin(2\pi/p))\).
-::: {.proof}
+:::
+
+::: pf-step
+
+There is no odd prime \(p\) such that \(p^{1/3}\in\mathbb Q(\sin(2\pi/p))\).
+
+::: pf-proof
+
 Set
 \[
 K=\mathbb Q\!\left(\sin\frac{2\pi}{p}\right).
 \]
-By <1>3, \(K/\mathbb Q\) is cyclic Galois. Hence every intermediate field of \(K/\mathbb Q\) is Galois over \(\mathbb Q\), because every subgroup of a cyclic group is normal.
+By step [](#s3){.pf-ref}, \(K/\mathbb Q\) is cyclic Galois. Hence every intermediate field of \(K/\mathbb Q\) is Galois over \(\mathbb Q\), because every subgroup of a cyclic group is normal.
 
 Suppose \(p^{1/3}\in K\). Then \(\mathbb Q(p^{1/3})\) is an intermediate field. The polynomial
 \[
@@ -122,5 +149,11 @@ T^3-p
 is irreducible over \(\mathbb Q\) by Eisenstein's criterion at \(p\), so \([\mathbb Q(p^{1/3}):\mathbb Q]=3\). But \(\mathbb Q(p^{1/3})\subset\mathbb R\), while the other two roots \(\omega p^{1/3}\) and \(\omega^2p^{1/3}\) are nonreal. Therefore \(\mathbb Q(p^{1/3})/\mathbb Q\) is not normal, hence not Galois, a contradiction.
 
 Thus no such prime exists.
+
 :::
+
+:::
+
+:::
+
 :::

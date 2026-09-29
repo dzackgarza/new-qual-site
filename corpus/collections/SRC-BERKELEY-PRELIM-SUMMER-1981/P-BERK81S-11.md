@@ -73,12 +73,17 @@ $$
 F_\varepsilon(x)=1.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \lim_{x\to0^+}F_\varepsilon(x)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 F_\varepsilon(x)
@@ -92,14 +97,20 @@ x\log x\longrightarrow0
 (x\to0^+)
 $$
 gives the same for the second term.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \lim_{x\to\infty}F_\varepsilon(x)=-\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor out $x$:
 $$
 F_\varepsilon(x)
@@ -112,16 +123,22 @@ $$
 The factor in parentheses tends to $-\infty$ as $x\to\infty$, and is
 eventually negative. Multiplication by the positive quantity $x\to\infty$
 therefore sends the product to $-\infty$.
+
 :::
 
-<1>3. The derivative is
+:::
+
+::: {.pf-step #s3}
+
+The derivative is
 $$
 F_\varepsilon'(x)
 =
 L+\frac12-\frac12\log x.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiate
 $$
 x
@@ -138,9 +155,14 @@ F_\varepsilon'(x)
 L+\frac12-\frac12\log x.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The derivative vanishes at exactly one point,
+:::
+
+::: {.pf-step #s4}
+
+The derivative vanishes at exactly one point,
 $$
 \boxed{
 x_*
@@ -151,8 +173,9 @@ e\varepsilon^{-2}.
 }
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 F_\varepsilon'(x)=0
 $$
@@ -169,9 +192,14 @@ $$
 e^L=\varepsilon^{-1},
 $$
 this equals $e\varepsilon^{-2}$.
+
 :::
 
-<1>5. The function $F_\varepsilon$ is strictly increasing on
+:::
+
+::: {.pf-step #s5}
+
+The function $F_\varepsilon$ is strictly increasing on
 $$
 (0,x_*)
 $$
@@ -180,15 +208,21 @@ $$
 (x_*,\infty).
 $$
 
-::: {.proof}
-The expression in step <1>3 is positive exactly when
+::: pf-proof
+
+The expression in step [](#s3){.pf-ref} is positive exactly when
 $$
 \log x<2L+1,
 $$
 equivalently $x<x_*$, and negative exactly when $x>x_*$.
+
 :::
 
-<1>6. The maximum value of $F_\varepsilon$ is
+:::
+
+::: {.pf-step #s6}
+
+The maximum value of $F_\varepsilon$ is
 $$
 \boxed{
 F_\varepsilon(x_*)
@@ -197,8 +231,9 @@ F_\varepsilon(x_*)
 }
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 \log x_*=2L+1.
 $$
@@ -217,30 +252,41 @@ x_*
 \frac{e}{2\varepsilon^2}.
 \end{aligned}
 $$
+
 :::
 
-<1>7. For every sufficiently small $\varepsilon>0$, the equation
+:::
+
+::: {.pf-step #s7}
+
+For every sufficiently small $\varepsilon>0$, the equation
 $$
 F_\varepsilon(x)=1
 $$
 has exactly two positive solutions.
 
-::: {.proof}
+::: pf-proof
+
 Choose $\varepsilon$ so small that
 $$
 \frac{e}{2\varepsilon^2}>1.
 $$
-By steps <1>1, <1>5, and <1>6, the function increases strictly from the
+By steps [](#s1){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}, the function increases strictly from the
 limiting value $0$ at the left endpoint to a value greater than $1$ at
 $x_*$. The intermediate value theorem and strict monotonicity therefore
 give exactly one solution in $(0,x_*)$.
 
-By steps <1>2, <1>5, and <1>6, the function then decreases strictly from a
+By steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}, the function then decreases strictly from a
 value greater than $1$ at $x_*$ to $-\infty$. Hence there is exactly one
 solution in $(x_*,\infty)$. These are the only positive solutions.
+
 :::
 
-<1>8. Let $x(\varepsilon)$ denote the smaller solution. For every fixed
+:::
+
+::: {.pf-step #s8}
+
+Let $x(\varepsilon)$ denote the smaller solution. For every fixed
 $\delta>0$,
 $$
 F_\varepsilon(\delta)\longrightarrow\infty
@@ -248,7 +294,8 @@ F_\varepsilon(\delta)\longrightarrow\infty
 (\varepsilon\to0^+).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For fixed $\delta>0$,
 $$
 F_\varepsilon(\delta)
@@ -264,9 +311,14 @@ $$
 \delta\log\frac1\varepsilon,
 $$
 which tends to $+\infty$.
+
 :::
 
-<1>9. The smaller solution satisfies
+:::
+
+::: {.pf-step #s9}
+
+The smaller solution satisfies
 $$
 \boxed{
 x(\varepsilon)\longrightarrow0
@@ -274,19 +326,20 @@ x(\varepsilon)\longrightarrow0
 $$
 as $\varepsilon\to0^+$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $\delta>0$. Since
 $$
 x_*=e\varepsilon^{-2}\longrightarrow\infty,
 $$
 one has $\delta<x_*$ for all sufficiently small $\varepsilon$. By step
-<1>8, also
+[](#s8){.pf-ref}, also
 $$
 F_\varepsilon(\delta)>1
 $$
 for all sufficiently small $\varepsilon$.
 
-On $(0,x_*)$, the function is strictly increasing by step <1>5, and the
+On $(0,x_*)$, the function is strictly increasing by step [](#s5){.pf-ref}, and the
 smaller root is the unique point there at which
 $$
 F_\varepsilon(x)=1.
@@ -297,9 +350,14 @@ $$
 $$
 for all sufficiently small $\varepsilon$. Since $\delta>0$ was arbitrary,
 the claimed limit follows.
+
 :::
 
-<1>10. Fix
+:::
+
+::: {.pf-step #s10}
+
+Fix
 $$
 s>0
 \qquad\text{and}\qquad
@@ -313,7 +371,8 @@ F_\varepsilon(M\varepsilon^s)
 (\varepsilon\to0^+).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \log(M\varepsilon^s)
@@ -345,16 +404,22 @@ $$
 \varepsilon^s\log\frac1\varepsilon\longrightarrow0
 $$
 shows that the right-hand side tends to zero.
+
 :::
 
-<1>11. For every fixed $s>0$ and $M>0$, one has
+:::
+
+::: {.pf-step #s11}
+
+For every fixed $s>0$ and $M>0$, one has
 $$
 x(\varepsilon)>M\varepsilon^s
 $$
 for all sufficiently small $\varepsilon>0$.
 
-::: {.proof}
-By step <1>10,
+::: pf-proof
+
+By step [](#s10){.pf-ref},
 $$
 F_\varepsilon(M\varepsilon^s)<1
 $$
@@ -365,7 +430,7 @@ M\varepsilon^s<x_*=e\varepsilon^{-2}
 $$
 for all sufficiently small $\varepsilon$. Thus both
 $M\varepsilon^s$ and the smaller solution lie on the strictly increasing
-branch from step <1>5. Since
+branch from step [](#s5){.pf-ref}. Since
 $$
 F_\varepsilon(M\varepsilon^s)<1
 =
@@ -375,9 +440,14 @@ strict monotonicity gives
 $$
 M\varepsilon^s<x(\varepsilon).
 $$
+
 :::
 
-<1>12. For every $s>0$,
+:::
+
+::: {.pf-step #s12}
+
+For every $s>0$,
 $$
 \boxed{
 \varepsilon^{-s}x(\varepsilon)
@@ -387,19 +457,26 @@ $$
 $$
 as $\varepsilon\to0^+$.
 
-::: {.proof}
-Fix $s>0$. Step <1>11 says that for every $M>0$,
+::: pf-proof
+
+Fix $s>0$. Step [](#s11){.pf-ref} says that for every $M>0$,
 $$
 \frac{x(\varepsilon)}{\varepsilon^s}>M
 $$
 for all sufficiently small $\varepsilon$. This is exactly divergence of
 the ratio to $+\infty$.
+
 :::
 
-<1>13. Q.E.D.
-
-::: {.proof}
-Step <1>7 proves the two-solution assertion, step <1>9 proves the first
-limit, and step <1>12 proves the second limit.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} proves the two-solution assertion, step [](#s9){.pf-ref} proves the first
+limit, and step [](#s12){.pf-ref} proves the second limit.
+
+:::
+
+:::
+
 :::

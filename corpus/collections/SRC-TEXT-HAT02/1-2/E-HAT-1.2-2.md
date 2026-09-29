@@ -37,8 +37,14 @@ For $1\le r\le n$, set
 U_r=X_1\cup\cdots\cup X_r.
 \]
 
-<1>1. Each $X_i$ is path connected and simply connected.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Each $X_i$ is path connected and simply connected.
+
+::: pf-proof
+
 Each $X_i$ is convex.
 For any two points $x,y\in X_i$, the straight segment
 \[
@@ -47,16 +53,23 @@ For any two points $x,y\in X_i$, the straight segment
 \]
 lies in $X_i$, so $X_i$ is path connected.
 The same straight-line homotopy contracts $X_i$ to any chosen point of $X_i$, so $X_i$ is contractible and hence simply connected.
+
 :::
 
-<1>2. For every $r\ge2$, the intersection
+:::
+
+::: {.pf-step #s2}
+
+For every $r\ge2$, the intersection
 \[
 U_{r-1}\cap X_r
 =
 \bigcup_{i<r}(X_i\cap X_r)
 \]
 is path connected.
-::: {.proof}
+
+::: pf-proof
+
 Each set $X_i\cap X_r$ is convex, hence path connected.
 If $i,j<r$, then
 \[
@@ -71,20 +84,27 @@ Thus the family
 \]
 consists of path-connected sets with pairwise nonempty intersections.
 Their union is therefore path connected.
+
 :::
 
-<1>3. If $U_{r-1}$ is simply connected, then $U_r$ is simply connected.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If $U_{r-1}$ is simply connected, then $U_r$ is simply connected.
+
+::: pf-proof
+
 The sets $U_{r-1}$ and $X_r$ are open in $X$.
 By induction hypothesis,
 \[
 \pi_1(U_{r-1})=0,
 \]
-and by <1>1,
+and by step [](#s1){.pf-ref},
 \[
 \pi_1(X_r)=0.
 \]
-Their intersection is path connected by <1>2.
+Their intersection is path connected by step [](#s2){.pf-ref}.
 
 The Seifert--van Kampen theorem therefore gives
 \[
@@ -98,14 +118,27 @@ Since both free-product factors are trivial, the quotient is trivial.
 
 The union $U_r$ is path connected because it is the union of the path-connected sets $U_{r-1}$ and $X_r$ with nonempty intersection.
 Hence $U_r$ is simply connected.
+
 :::
 
-<1>4. The space $X=U_n$ is simply connected.
-::: {.proof}
-The base case $U_1=X_1$ is simply connected by <1>1.
-Repeated application of <1>3 gives simple connectivity of
+:::
+
+::: pf-step
+
+The space $X=U_n$ is simply connected.
+
+::: pf-proof
+
+The base case $U_1=X_1$ is simply connected by step [](#s1){.pf-ref}.
+Repeated application of step [](#s3){.pf-ref} gives simple connectivity of
 \[
 U_2,U_3,\dots,U_n=X.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

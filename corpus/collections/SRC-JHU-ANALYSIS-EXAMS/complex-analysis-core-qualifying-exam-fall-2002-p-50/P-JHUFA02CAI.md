@@ -41,8 +41,14 @@ $$
 {\displaystyle1-\frac1\pi\frac{z-1/2}{1-z/2}}.}
 $$
 
-<1>1. The two factors used in the formula are disk automorphisms.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The two factors used in the formula are disk automorphisms.
+
+::: pf-proof
+
 For real $a\in(-1,1)$, the Möbius map
 $$
 \phi_a(z)=\frac{z-a}{1-az}
@@ -66,10 +72,17 @@ $$
 $$
 is also a disk automorphism. Its denominator cannot vanish for $|w|<1$ because
 $|bw|<1$.
+
 :::
 
-<1>2. Their composition has the required value and is onto.
-::: {.proof}
+:::
+
+::: pf-step
+
+Their composition has the required value and is onto.
+
+::: pf-proof
+
 The displayed function is precisely
 $$
 f=\psi_b^{-1}\circ\phi.
@@ -79,5 +92,11 @@ $$
 f(1/2)=\psi_b^{-1}(\phi(1/2))=\psi_b^{-1}(0)=b=-\frac1\pi.
 $$
 Thus it satisfies every condition in the problem.
+
 :::
+
+:::
+
+:::
+
 :::

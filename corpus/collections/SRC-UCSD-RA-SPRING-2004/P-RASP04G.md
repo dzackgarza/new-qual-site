@@ -45,8 +45,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Polynomials belong to $\mathcal H$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Polynomials belong to $\mathcal H$.
+
+::: pf-proof
+
 For every integer $n\ge0$,
 \[
 M_f^n=M_{f^n}.
@@ -70,10 +77,17 @@ UM_{p\circ f}U^{-1}
 \end{aligned}
 \]
 Thus every real polynomial lies in $\mathcal H$.
+
 :::
 
-<1>2. Every continuous function belongs to $\mathcal H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every continuous function belongs to $\mathcal H$.
+
+::: pf-proof
+
 Let $\varphi\in C([-1,1])$. By the Weierstrass approximation theorem there are real polynomials $p_n$ such that
 \[
 \|p_n-\varphi\|_\infty\longrightarrow0.
@@ -95,10 +109,17 @@ Therefore
 \[
 C([-1,1],\mathbb R)\subseteq\mathcal H.
 \]
+
 :::
 
-<1>3. $\mathcal H$ is closed under bounded pointwise convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\mathcal H$ is closed under bounded pointwise convergence.
+
+::: pf-proof
+
 Suppose $\varphi_n\in\mathcal H$, $\varphi_n(t)\to\varphi(t)$ for every $t\in[-1,1]$, and
 \[
 \sup_n\|\varphi_n\|_\infty<\infty.
@@ -125,10 +146,17 @@ UM_{\varphi\circ f}U^{-1}h
 \end{aligned}
 \]
 Thus $\varphi\in\mathcal H$.
+
 :::
 
-<1>4. Indicators of all Borel sets belong to $\mathcal H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Indicators of all Borel sets belong to $\mathcal H$.
+
+::: pf-proof
+
 First let $O\subseteq[-1,1]$ be open. Define
 \[
 \varphi_n(t)=\min\{1,n\,d(t,O^c)\}.
@@ -157,13 +185,26 @@ Finite unions belong to $\mathcal A$, and
 \mathbf1_{F_n}\longrightarrow\mathbf1_{\cup_{k\ge1}E_k}
 \]
 pointwise with uniform bound $1$. Step 3 therefore shows that the countable union also belongs to $\mathcal A$. Thus $\mathcal A$ is a sigma-algebra containing every open set, so it contains every Borel subset of $[-1,1]$.
+
 :::
 
-<1>5. Pass from indicators to bounded Borel functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass from indicators to bounded Borel functions.
+
+::: pf-proof
+
 Every bounded real Borel function is a bounded pointwise limit of Borel simple functions. Each such simple function is a finite linear combination of Borel indicators, hence belongs to $\mathcal H$ by Step 4. Applying Step 3 once more gives
 \[
 \boxed{\mathcal H\text{ contains every bounded real Borel measurable function}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -32,10 +32,16 @@ Find $n\in\mathbb Z$ such that $0\le n\le13$ and
 :::
 
 ::: {.solution}
-<1>1. For $f\in\ZZ[x]$ and $m\in\ZZ$, one has $f-m\in J$ if and only if
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $f\in\ZZ[x]$ and $m\in\ZZ$, one has $f-m\in J$ if and only if
 $f(5)\equiv m\pmod{14}$.
 
-::: {.proof}
+::: pf-proof
+
 Because $J=(x-5,14)$, the quotient satisfies
 $$
 \ZZ[x]/J
@@ -44,14 +50,20 @@ $$
 $$
 and under this isomorphism the class of $f$ is the residue class of
 $f(5)$ modulo $14$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 136^{50}\equiv2\pmod{14}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 136\equiv10\pmod{14},
@@ -70,25 +82,37 @@ $$
 $$
 By the Chinese remainder theorem, the unique residue modulo $14$ that is
 $0$ modulo $2$ and $2$ modulo $7$ is $2$.
+
 :::
 
-<1>3. The required integer is
+:::
+
+::: {.pf-step #s3}
+
+The required integer is
 $$
 \boxed{n=2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 With $f=x^3+2x+1$, one has $f(5)=136$, so $f(5)^{50}=136^{50}\equiv2\pmod{14}$
-by step <1>2. Step <1>1 gives
+by step [](#s2){.pf-ref}. Step [](#s1){.pf-ref} gives
 $$
 (x^3+2x+1)^{50}-2\in J,
 $$
 and $0\le2\le13$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested $n$.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested $n$.
+
+:::
+
+:::
+
 :::

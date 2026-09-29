@@ -43,10 +43,15 @@ a&0\\
 $$
 Then $P_i=LQ_i$.
 
-<1>1. The area of $\triangle P_1P_2P_3$ is $\abs{ab}$ times the area of
+::: pf
+
+::: {.pf-step #s1}
+
+The area of $\triangle P_1P_2P_3$ is $\abs{ab}$ times the area of
 $\triangle Q_1Q_2Q_3$.
 
-::: {.proof}
+::: pf-proof
+
 Using the determinant formula for the area of a triangle,
 $$
 \begin{aligned}
@@ -60,15 +65,21 @@ $$
 2\abs{ab}\operatorname{Area}(Q_1Q_2Q_3).
 \end{aligned}
 $$
+
 :::
 
-<1>2. If a nondegenerate triangle is inscribed in the unit circle and its
+:::
+
+::: {.pf-step #s2}
+
+If a nondegenerate triangle is inscribed in the unit circle and its
 interior angles are $A,B,C$, then its area is
 $$
 2\sin A\sin B\sin C.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The circumradius is $1$. By the extended law of sines, the side lengths
 opposite $A,B,C$ are respectively
 $$
@@ -86,15 +97,21 @@ $$
 =
 2\sin A\sin B\sin C.
 $$
+
 :::
 
-<1>3. Every triangle inscribed in the unit circle has area at most
+:::
+
+::: {.pf-step #s3}
+
+Every triangle inscribed in the unit circle has area at most
 $$
 \frac{3\sqrt3}{4},
 $$
 with equality exactly for equilateral triangles.
 
-::: {.proof}
+::: pf-proof
+
 Degenerate triangles have area zero, so suppose the triangle is
 nondegenerate. Then $A,B,C\in(0,\pi)$ and
 $$
@@ -120,7 +137,7 @@ $$
 \leq
 \frac{\sqrt3}{2}.
 $$
-Combining this with step <1>2,
+Combining this with step [](#s2){.pf-ref},
 $$
 \operatorname{Area}
 \leq
@@ -130,21 +147,32 @@ $$
 $$
 Equality in the area bound forces equality in Jensen's inequality, hence
 $A=B=C=\pi/3$; conversely an equilateral triangle attains the bound.
+
 :::
 
-<1>4. The maximal area on the ellipse is
+:::
+
+::: {.pf-step #s4}
+
+The maximal area on the ellipse is
 $$
 \boxed{\frac{3\sqrt3}{4}\abs{ab}}.
 $$
 
-::: {.proof}
-By step <1>1, every area on the ellipse is $\abs{ab}$ times the
-corresponding area on the unit circle. Step <1>3 gives the maximum.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, every area on the ellipse is $\abs{ab}$ times the
+corresponding area on the unit circle. Step [](#s3){.pf-ref} gives the maximum.
 For the usual convention $a,b>0$ for the semiaxes, this is
 $3\sqrt3\,ab/4$.
+
 :::
 
-<1>5. Equality holds exactly for the triangles whose parameters, up to
+:::
+
+::: {.pf-step #s5}
+
+Equality holds exactly for the triangles whose parameters, up to
 permutation, are
 $$
 \boxed{
@@ -158,18 +186,25 @@ $$
 $$
 for some $\theta_0\in\RR$.
 
-::: {.proof}
-By steps <1>1 and <1>3, equality holds exactly when the three points
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s3){.pf-ref}, equality holds exactly when the three points
 $Q_i$ form an equilateral triangle on the unit circle. The vertices of
 such a triangle are exactly three points separated successively by central
 angles $2\pi/3$. Applying $L$ gives precisely the displayed family of
 maximal-area triangles on the ellipse.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4 and <1>5 give the maximal area and characterize every equality
+::: pf-qed
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the maximal area and characterize every equality
 case.
+
 :::
+
+:::
+
 :::

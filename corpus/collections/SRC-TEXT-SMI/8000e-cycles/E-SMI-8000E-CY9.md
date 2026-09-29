@@ -38,8 +38,14 @@ G'=\langle [x,y]:x,y\in G\rangle,
 [x,y]=xyx^{-1}y^{-1}.
 $$
 
-<1>1. The commutator subgroup is characteristic.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The commutator subgroup is characteristic.
+
+::: pf-proof
+
 Let
 $$
 \varphi:G\longrightarrow G
@@ -68,10 +74,17 @@ is normal. Hence
 $$
 G'\trianglelefteq G.
 $$
+
 :::
 
-<1>2. The quotient $G/G'$ is abelian.
-::: {.proof}
+:::
+
+::: pf-step
+
+The quotient $G/G'$ is abelian.
+
+::: pf-proof
+
 For arbitrary $x,y\in G$, the commutator
 $$
 [x,y]=xyx^{-1}y^{-1}
@@ -88,10 +101,17 @@ Since this holds for every pair of cosets,
 $$
 \boxed{G/G'\text{ is abelian}.}
 $$
+
 :::
 
-<1>3. Every homomorphism from $G$ to an abelian group kills $G'$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every homomorphism from $G$ to an abelian group kills $G'$.
+
+::: pf-proof
+
 Let
 $$
 f:G\longrightarrow K
@@ -110,5 +130,11 @@ by all commutators. Hence
 $$
 \boxed{G'\le\ker f.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

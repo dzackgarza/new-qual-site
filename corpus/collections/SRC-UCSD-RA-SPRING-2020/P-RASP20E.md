@@ -32,10 +32,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Control the zero Fourier mode.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Control the zero Fourier mode.
+
+::: pf-proof
+
 With
 \[
 \widehat f(k)=\int_0^1 f(x)e^{-2\pi ikx}\,dx,
@@ -46,10 +52,17 @@ we have
 =\left|\int_0^1f(x)\,dx\right|
 \le \|f\|_{L^1(\mathbb T)}.
 \]
+
 :::
 
-<1>2. Express the nonzero Fourier coefficients through \(f'\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Express the nonzero Fourier coefficients through \(f'\).
+
+::: pf-proof
+
 For \(k\ne0\), periodicity of \(f\) and integration by parts give
 \[
 \widehat{f'}(k)
@@ -84,10 +97,17 @@ Thus
 \frac1{\sqrt2\,\pi}\|f'\|_2
 \sqrt{\sum_{k=1}^\infty\frac1{k^2}}.
 \]
+
 :::
 
-<1>3. Combine the estimates.
-::: {.proof}
+:::
+
+::: pf-step
+
+Combine the estimates.
+
+::: pf-proof
+
 Adding the zero mode from Step 1 yields
 \[
 \boxed{
@@ -97,5 +117,11 @@ Adding the zero mode from Step 1 yields
 \sqrt{\sum_{k=1}^\infty\frac1{k^2}}.}
 \]
 In particular the Fourier series is absolutely convergent.
+
 :::
+
+:::
+
+:::
+
 :::

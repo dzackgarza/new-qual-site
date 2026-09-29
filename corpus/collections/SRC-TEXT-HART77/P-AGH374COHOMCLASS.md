@@ -72,12 +72,17 @@ $$
 \eta(Y)=j_*(1).
 $$
 
-<1>1. For a closed point $P\in X$,
+::: pf
+
+::: {.pf-step #s1}
+
+For a closed point $P\in X$,
 $$
 \boxed{t_X(\eta(P))=1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Here $p=n$, so the functional defining $\eta(P)$ is the composite
 $$
 H^0(X,\OO_X)\xrightarrow{j^*}H^0(P,\OO_P)
@@ -97,15 +102,21 @@ $$
 =t_X(\eta(P)).
 $$
 This proves part (a).
+
 :::
 
-<1>2. Cohomology classes are compatible with transverse intersection by a nonsingular hyperplane: if $H\subseteq X$ is nonsingular and meets $Y$ transversely, then
+:::
+
+::: {.pf-step #s2}
+
+Cohomology classes are compatible with transverse intersection by a nonsingular hyperplane: if $H\subseteq X$ is nonsingular and meets $Y$ transversely, then
 $$
 i^*\eta_X(Y)=\eta_H(Y\cap H),
 $$
 where $i:H\hookrightarrow X$.
 
-::: {.proof}
+::: pf-proof
+
 Let $Z=Y\cap H$ and write the transverse Cartesian square
 $$
 \begin{array}{ccc}
@@ -126,14 +137,20 @@ i^*\eta_X(Y)
 =\eta_H(Z).
 $$
 This is exactly the asserted compatibility.
+
 :::
 
-<1>3. If $X=\PP^n$ and $Y$ has codimension $p$, then
+:::
+
+::: {.pf-step #s3}
+
+If $X=\PP^n$ and $Y$ has codimension $p$, then
 $$
 \boxed{\eta(Y)=(\deg Y)\cdot1\in H^p(\PP^n,\Omega_{\PP^n}^p)\cong k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By Exercise III.7.3,
 $$
 H^p(\PP^n,\Omega^p)\cong k.
@@ -148,7 +165,7 @@ $$
 Z=Y\cap L=\{P_1,\ldots,P_d\},
 \qquad d=\deg Y.
 $$
-Repeated application of step <1>2 gives
+Repeated application of step [](#s2){.pf-ref} gives
 $$
 \eta_L(Z)=i^*\eta_{\PP^n}(Y).
 $$
@@ -157,7 +174,7 @@ The Gysin map is additive on a disjoint union of points, so
 $$
 \eta_L(Z)=\sum_{a=1}^d\eta_L(P_a).
 $$
-By step <1>1 each point class has trace one. Since
+By step [](#s1){.pf-ref} each point class has trace one. Since
 $$
 H^p(L,\Omega_L^p)\cong k
 $$
@@ -173,9 +190,14 @@ $$
 \eta(Y)=(\deg Y)\cdot1,
 $$
 proving part (b).
+
 :::
 
-<1>4. The rule
+:::
+
+::: {.pf-step #s4}
+
+The rule
 $$
 d\log(f)=f^{-1}df
 $$
@@ -184,7 +206,8 @@ $$
 d\log:\OO_X^*\longrightarrow\Omega_X.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For local units $f,g$,
 $$
 \begin{aligned}
@@ -206,14 +229,20 @@ $$
 c:\Pic X\longrightarrow H^1(X,\Omega_X)
 $$
 required in part (c).
+
 :::
 
-<1>5. If $Y\subseteq X$ is a nonsingular divisor with local equations $f_i=0$ on an open cover $(U_i)$, then $c(\mcl(Y))$ is represented by the Čech cocycle
+:::
+
+::: {.pf-step #s5}
+
+If $Y\subseteq X$ is a nonsingular divisor with local equations $f_i=0$ on an open cover $(U_i)$, then $c(\mcl(Y))$ is represented by the Čech cocycle
 $$
 \left\{\frac{df_i}{f_i}-\frac{df_j}{f_j}\right\}_{ij}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The invertible sheaf $\mcl(Y)=\OO_X(Y)$ has local generator $e_i=f_i^{-1}$ on $U_i$.
 Use the Čech convention in which the transition function $g_{ij}$ is defined by
 $$
@@ -229,14 +258,20 @@ d\log\!\left(\frac{f_i}{f_j}\right)
 =\frac{df_i}{f_i}-\frac{df_j}{f_j}.
 $$
 This is the displayed cocycle.
+
 :::
 
-<1>6. For a nonsingular divisor $Y\subseteq X$,
+:::
+
+::: {.pf-step #s6}
+
+For a nonsingular divisor $Y\subseteq X$,
 $$
 \boxed{\eta(Y)=c(\mcl(Y))\in H^1(X,\Omega_X)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \alpha\in H^{n-1}(X,\Omega_X^{n-1}).
@@ -274,13 +309,19 @@ $$
 c(\mcl(Y))=\eta(Y).
 $$
 This proves part (d).
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), steps <1>2--<1>3 prove part (b), step <1>4 proves part (c), and steps <1>5--<1>6 prove part (d).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b), step [](#s4){.pf-ref} proves part (c), and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (d).
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Trace normalization"}

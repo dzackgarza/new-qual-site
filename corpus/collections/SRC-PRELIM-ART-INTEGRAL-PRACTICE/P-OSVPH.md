@@ -25,26 +25,44 @@ $$
 :::
 
 ::: {.solution}
-<1>1. On the domain $\{x \in \mathbb{R} : \sin(x) \neq 0, \cos(x) \neq 0\}$ of the integrand, $\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \tan(x)$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+On the domain $\{x \in \mathbb{R} : \sin(x) \neq 0, \cos(x) \neq 0\}$ of the integrand, $\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \tan(x)$.
+
+::: pf-proof
+
 Factoring and the Pythagorean identity $1 - \cos^2(x) = \sin^2(x)$ give
 $$\cos(x) - \cos^3(x) = \cos(x)(1 - \cos^2(x)) = \cos(x) \sin^2(x),$$
 so
 $$\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \frac{\sin^3(x)}{\cos(x) \sin^2(x)} = \frac{\sin(x)}{\cos(x)} = \tan(x).$$
+
 :::
 
-<1>2. $\int \tan(x) \, dx = -\ln|\cos(x)| + C$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\int \tan(x) \, dx = -\ln|\cos(x)| + C$.
+
+::: pf-proof
+
 Substitute $u = \cos(x)$, so $du = -\sin(x) \, dx$:
 $$\int \frac{\sin(x)}{\cos(x)} \, dx = -\int \frac{du}{u} = -\ln|u| + C = -\ln|\cos(x)| + C.$$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2,
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx = \boxed{-\ln|\cos(x)| + C} = \ln|\sec(x)| + C.$$
+
 :::
+
+:::
+
 :::

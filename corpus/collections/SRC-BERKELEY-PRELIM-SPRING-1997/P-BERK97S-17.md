@@ -39,9 +39,14 @@ $$
 $$
 be reduction modulo $p$.
 
-<1>1. The reduction map $\rho$ is surjective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The reduction map $\rho$ is surjective.
+
+::: pf-proof
+
 Let $A\in GL_2(k)$ and lift its four entries arbitrarily to a matrix
 $\widetilde A\in M_2(R_n)$. Since
 $$
@@ -50,14 +55,20 @@ $$
 the element $\det(\widetilde A)\in R_n$ is not divisible by $p$, hence is a
 unit of $R_n$. The adjugate formula then shows that $\widetilde A$ is
 invertible over $R_n$. Thus $\rho(\widetilde A)=A$.
+
 :::
 
-<1>2. The kernel of $\rho$ has order
+:::
+
+::: {.pf-step #s2}
+
+The kernel of $\rho$ has order
 $$
 \lvert\ker\rho\rvert=p^{4(n-1)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 An element of $\ker\rho$ is exactly a matrix of the form
 $$
 I+X,
@@ -83,22 +94,33 @@ $$
 =\lvert pR_n\rvert^4
 =p^{4(n-1)}.
 $$
+
 :::
 
-<1>3. The group $GL_2(k)$ has order
+:::
+
+::: {.pf-step #s3}
+
+The group $GL_2(k)$ has order
 $$
 \lvert GL_2(k)\rvert=(p^2-1)(p^2-p).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first column of an invertible $2\times2$ matrix over $k$ can be any
 nonzero vector in $k^2$, giving $p^2-1$ choices. Once the first column is
 chosen, the second column can be any vector outside its one-dimensional
 span, giving $p^2-p$ choices. These choices are exactly the ordered bases of
 $k^2$.
+
 :::
 
-<1>4. For every prime $p$ and positive integer $n$,
+:::
+
+::: {.pf-step #s4}
+
+For every prime $p$ and positive integer $n$,
 $$
 \boxed{
 \lvert GL_2(\ZZ/p^n\ZZ)\rvert
@@ -106,20 +128,27 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2, reduction modulo $p$ gives a short exact sequence
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, reduction modulo $p$ gives a short exact sequence
 $$
 1\longrightarrow\ker\rho
 \longrightarrow GL_2(R_n)
 \overset{\rho}{\longrightarrow}GL_2(k)
 \longrightarrow1.
 $$
-Taking orders and applying steps <1>2 and <1>3 gives the displayed formula.
+Taking orders and applying steps [](#s2){.pf-ref} and [](#s3){.pf-ref} gives the displayed formula.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required order.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required order.
+
+:::
+
+:::
+
 :::

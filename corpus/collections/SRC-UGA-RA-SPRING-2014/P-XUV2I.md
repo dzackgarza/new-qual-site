@@ -37,8 +37,15 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. Define the partial-sum functionals.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Define the partial-sum functionals.
+
+::: pf-proof
+
 For each $N\ge1$, define
 \[
 T_N:\ell^2(\mathbb N)\to\mathbb R,
@@ -53,10 +60,17 @@ Hence
 \[
 \|T_N\|=\left(\sum_{n=1}^N a_n^2\right)^{1/2}.
 \]
+
 :::
 
-<1>2. Prove pointwise boundedness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove pointwise boundedness.
+
+::: pf-proof
+
 Fix $b\in\ell^2(\mathbb N)$. By replacing $b$ with $|b|$, it is enough to consider nonnegative sequences. The hypothesis says
 \[
 \sum_{n=1}^\infty a_n|b_n|<\infty.
@@ -72,10 +86,17 @@ so
 \sup_N|T_N(b)|<\infty
 \]
 for every $b\in\ell^2$.
+
 :::
 
-<1>3. Apply the Uniform Boundedness Principle.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Uniform Boundedness Principle.
+
+::: pf-proof
+
 Since $\ell^2$ is Banach and the family $(T_N)$ is pointwise bounded, the Uniform Boundedness Principle gives
 \[
 \sup_N\|T_N\|<\infty.
@@ -88,5 +109,11 @@ The partial sums are increasing, so they converge to a finite limit. Hence
 \[
 \boxed{\sum_{n=1}^\infty a_n^2<\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

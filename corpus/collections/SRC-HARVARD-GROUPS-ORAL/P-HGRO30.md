@@ -33,8 +33,14 @@ Q_8=\{\pm1,\pm i,\pm j,\pm k\}
 \]
 is nonabelian, but every subgroup of $Q_8$ is normal.
 
-<1>1. The group $Q_8$ is nonabelian.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The group $Q_8$ is nonabelian.
+
+::: pf-proof
+
 Its defining multiplication gives
 \[
 ij=k,
@@ -42,10 +48,17 @@ ij=k,
 ji=-k,
 \]
 so $ij\ne ji$.
+
 :::
 
-<1>2. Every subgroup of $Q_8$ is normal.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every subgroup of $Q_8$ is normal.
+
+::: pf-proof
+
 The subgroups are
 \[
 \{1\},\quad \{\pm1\},\quad
@@ -54,10 +67,23 @@ The subgroups are
 The three subgroups of order $4$ have index $2$, hence are normal. The subgroup
 $\{\pm1\}$ lies in the center, and the trivial subgroup and whole group are
 normal.
+
 :::
 
-<1>3. Hence normality of every subgroup does not imply commutativity.
-::: {.proof}
-Combine <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Hence normality of every subgroup does not imply commutativity.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

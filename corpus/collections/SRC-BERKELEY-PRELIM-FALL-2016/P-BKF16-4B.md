@@ -35,7 +35,12 @@ Put $f ( z ) = z ( e ^ { z } - 1 )$ . Prove there exists an analytic function h(
 :::
 
 ::: {.solution}
-<1>1. The function
+
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 g(z)
 \coloneqq
@@ -53,7 +58,8 @@ $$
 f(z)=z^2g(z).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponential series gives
 $$
 \frac{e^z-1}{z}
@@ -67,9 +73,14 @@ $$
 z(e^z-1)=z^2\frac{e^z-1}{z}
 $$
 holds away from $0$ and hence everywhere.
+
 :::
 
-<1>2. There is a disk $U$ about $0$ on which $g$ has no zeros and a
+:::
+
+::: {.pf-step #s2}
+
+There is a disk $U$ about $0$ on which $g$ has no zeros and a
 holomorphic function
 $$
 L:U\to\CC
@@ -79,14 +90,20 @@ $$
 e^{L(z)}=g(z).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $g(0)=1\ne0$ and $g$ is continuous, it is nonzero on some disk
 about $0$. Shrink that disk if necessary so that it is simply
 connected. A nonvanishing holomorphic function on a simply connected
 domain admits a holomorphic logarithm, giving $L$.
+
 :::
 
-<1>3. On $U$, the function
+:::
+
+::: {.pf-step #s3}
+
+On $U$, the function
 $$
 h(z)
 \coloneqq
@@ -97,9 +114,10 @@ $$
 \boxed{h(z)^2=f(z)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function is a product of holomorphic functions. By steps
-<1>1--<1>2,
+[](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 \begin{aligned}
 h(z)^2
@@ -112,9 +130,14 @@ f(z).
 \end{aligned}
 $$
 Thus a local analytic square root exists.
+
 :::
 
-<1>4. Choose the sign of $h$ so that
+:::
+
+::: {.pf-step #s4}
+
+Choose the sign of $h$ so that
 $$
 h'(0)=1.
 $$
@@ -125,7 +148,8 @@ h(z)
 z+az^2+bz^3+O(z^4).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 h(z)^2=f(z)=z^2+O(z^3),
@@ -133,16 +157,22 @@ $$
 the zero of $h$ at $0$ is simple and its linear coefficient squares
 to $1$. Replacing $h$ by $-h$ if necessary makes that coefficient
 $1$, giving the displayed form.
+
 :::
 
-<1>5. The coefficients in step <1>4 are
+:::
+
+::: {.pf-step #s5}
+
+The coefficients in step [](#s4){.pf-ref} are
 $$
 a=\frac14,
 \qquad
 b=\frac5{96}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponential series gives
 $$
 f(z)
@@ -179,9 +209,14 @@ and hence
 $$
 b=\frac5{96}.
 $$
+
 :::
 
-<1>6. Thus the first three nonzero terms of the branch with
+:::
+
+::: {.pf-step #s6}
+
+Thus the first three nonzero terms of the branch with
 $h'(0)=1$ are
 $$
 \boxed{
@@ -191,17 +226,24 @@ z+\frac14z^2+\frac5{96}z^3+O(z^4).
 }
 $$
 
-::: {.proof}
-This is step <1>4 with the coefficients from step <1>5. The other
+::: pf-proof
+
+This is step [](#s4){.pf-ref} with the coefficients from step [](#s5){.pf-ref}. The other
 local square root is its negative.
+
 :::
 
-<1>7. The function $f$ has a simple zero at
+:::
+
+::: {.pf-step #s7}
+
+The function $f$ has a simple zero at
 $$
 z_0=2\pi i.
 $$
 
-::: {.proof}
+::: pf-proof
+
 At $z_0$,
 $$
 e^{z_0}-1=0
@@ -216,17 +258,23 @@ e^{z_0}
 $$
 Hence $e^z-1$ has a simple zero at $z_0$, and multiplication by the
 nonzero factor $z$ does not change its multiplicity there.
+
 :::
 
-<1>8. The local function $h$ cannot extend to an entire function on
+:::
+
+::: {.pf-step #s8}
+
+The local function $h$ cannot extend to an entire function on
 $\CC$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose an entire function $H$ agrees with $h$ near $0$. Then
 $$
 H^2
 $$
-and $f$ are entire and agree on a neighborhood of $0$ by step <1>3.
+and $f$ are entire and agree on a neighborhood of $0$ by step [](#s3){.pf-ref}.
 The identity theorem therefore gives
 $$
 H^2=f
@@ -234,14 +282,20 @@ $$
 on all of $\CC$.
 
 Every zero of a square of a holomorphic function has even
-multiplicity. This contradicts step <1>7, where $f$ has a simple zero
+multiplicity. This contradicts step [](#s7){.pf-ref}, where $f$ has a simple zero
 at $2\pi i$.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves local existence, step <1>6 gives the requested series
-terms, and step <1>8 proves that no entire extension exists.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves local existence, step [](#s6){.pf-ref} gives the requested series
+terms, and step [](#s8){.pf-ref} proves that no entire extension exists.
+
+:::
+
+:::
+
 :::

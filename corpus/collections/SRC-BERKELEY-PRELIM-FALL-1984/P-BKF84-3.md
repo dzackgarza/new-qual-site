@@ -31,10 +31,16 @@ for every $x\in[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. The set of discontinuities of $f$ in $(0,1)$ is at most
+
+::: pf
+
+::: {.pf-step #s1}
+
+The set of discontinuities of $f$ in $(0,1)$ is at most
 countable.
 
-::: {.proof}
+::: pf-proof
+
 For $x\in(0,1)$, monotonicity gives the one-sided limits
 $$
 f(x-)
@@ -70,9 +76,14 @@ $$
 $$
 are disjoint. Hence $q_x\neq q_y$. The map $x\mapsto q_x$ injects the
 set of discontinuities into $\QQ$, proving countability.
+
 :::
 
-<1>2. Enumerate the interior discontinuities as
+:::
+
+::: {.pf-step #s2}
+
+Enumerate the interior discontinuities as
 $$
 D=\{d_1,d_2,\ldots\},
 $$
@@ -85,16 +96,23 @@ $$
 \right\}.
 $$
 
-::: {.proof}
-Step <1>1 makes such an enumeration possible. The union defining $P_n$
+::: pf-proof
+
+Step [](#s1){.pf-ref} makes such an enumeration possible. The union defining $P_n$
 is finite, contains $0$ and $1$, and can therefore be listed in strictly
 increasing order.
+
 :::
 
-<1>3. Define $f_n$ to be the continuous piecewise-linear function that
+:::
+
+::: {.pf-step #s3}
+
+Define $f_n$ to be the continuous piecewise-linear function that
 agrees with $f$ at every point of $P_n$.
 
-::: {.proof}
+::: pf-proof
+
 On every pair of consecutive points
 $$
 a<b
@@ -111,14 +129,20 @@ so $f_n$ is continuous on $[0,1]$.
 Since $f$ is nondecreasing, $f(a)\leq f(b)$ whenever $a<b$. Hence
 $f_n$ is itself nondecreasing on every partition interval and therefore
 on all of $[0,1]$.
+
 :::
 
-<1>4. If $x$ is a discontinuity of $f$, then
+:::
+
+::: {.pf-step #s4}
+
+If $x$ is a discontinuity of $f$, then
 $$
 f_n(x)\longrightarrow f(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $x\in(0,1)$, then $x=d_m$ for some $m$. For every $n\geq m$, the
 point $x$ belongs to $P_n$, so
 $$
@@ -126,14 +150,20 @@ f_n(x)=f(x).
 $$
 At the endpoints $0$ and $1$, the same equality holds for every $n$
 because both endpoints belong to every uniform mesh.
+
 :::
 
-<1>5. If $f$ is continuous at $x$, then
+:::
+
+::: {.pf-step #s5}
+
+If $f$ is continuous at $x$, then
 $$
 f_n(x)\longrightarrow f(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $n$, let $a_n\leq x\leq b_n$ be consecutive points of $P_n$
 whose interval contains $x$. Because $P_n$ contains the uniform mesh,
 $$
@@ -148,7 +178,7 @@ a_n\longrightarrow x,
 b_n\longrightarrow x.
 $$
 
-By step <1>3 and monotonicity,
+By step [](#s3){.pf-ref} and monotonicity,
 $$
 f(a_n)
 \leq
@@ -163,9 +193,14 @@ f(a_n)\longrightarrow f(x),
 f(b_n)\longrightarrow f(x).
 $$
 The squeeze theorem therefore yields $f_n(x)\to f(x)$.
+
 :::
 
-<1>6. Consequently, the statement is true:
+:::
+
+::: {.pf-step #s6}
+
+Consequently, the statement is true:
 $$
 \boxed{
 f_n(x)\longrightarrow f(x)
@@ -173,15 +208,22 @@ f_n(x)\longrightarrow f(x)
 }
 $$
 
-::: {.proof}
-Every point is either a discontinuity, covered by step <1>4, or a
-continuity point, covered by step <1>5.
+::: pf-proof
+
+Every point is either a discontinuity, covered by step [](#s4){.pf-ref}, or a
+continuity point, covered by step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2--<1>6 construct the required sequence of continuous
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} construct the required sequence of continuous
 functions.
+
 :::
+
+:::
+
 :::

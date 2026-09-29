@@ -36,8 +36,15 @@ Prove that $H\normal G$.
 :::
 
 ::: {.solution}
-<1>1. For each $g\in G$, conjugation by $g$ is an automorphism of $G$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+For each $g\in G$, conjugation by $g$ is an automorphism of $G$.
+
+::: pf-proof
+
 Define
 \[
 c_g:G\longrightarrow G,
@@ -49,25 +56,45 @@ Hence
 \[
 c_g\in\operatorname{Aut}(G).
 \]
+
 :::
 
-<1>2. Every conjugation automorphism preserves $H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every conjugation automorphism preserves $H$.
+
+::: pf-proof
+
 Since $H$ is characteristic in $G$, every automorphism of $G$ carries $H$ to itself.
-Applying this to the automorphism $c_g$ from <1>1 gives
+Applying this to the automorphism $c_g$ from step [](#s1){.pf-ref} gives
 \[
 c_g(H)=H
 \]
 for every $g\in G$.
+
 :::
 
-<1>3. Therefore $H\normal G$.
-::: {.proof}
-By <1>2,
+:::
+
+::: pf-step
+
+Therefore $H\normal G$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 \[
 gHg^{-1}=H
 \]
 for every $g\in G$.
 This is exactly the definition of normality.
+
 :::
+
+:::
+
+:::
+
 :::

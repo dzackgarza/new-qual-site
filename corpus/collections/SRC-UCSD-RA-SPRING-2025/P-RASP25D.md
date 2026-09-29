@@ -40,10 +40,16 @@ Hint: try piecewise constant functions.
 (3) There is no $u \in C$ such that $\|u\| = d(0, C) = 1$.
 :::
 
-
 ::: {.solution}
-<1>1. Prove that $C$ is nonempty, closed, and convex.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that $C$ is nonempty, closed, and convex.
+
+::: pf-proof
+
 The constant function $u\equiv2$ lies in $C$ because
 \[
 \int_0^1 2x\,dx=1.
@@ -72,10 +78,17 @@ Thus
 \int_0^1xu\,dx=\lim_n\int_0^1xu_n\,dx\ge1,
 \]
 and $u\in C$. Therefore $C$ is closed.
+
 :::
 
-<1>2. Compute the distance from $0$ to $C$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the distance from $0$ to $C$.
+
+::: pf-proof
+
 If $u\in C$, then $u\ge0$ a.e. and $0\le x\le1$, so
 \[
 \|u\|_1=\int_0^1u\,dx\ge\int_0^1xu\,dx\ge1.
@@ -99,10 +112,17 @@ Thus $d(0,C)\le1$, and therefore
 \[
 \boxed{d(0,C)=1.}
 \]
+
 :::
 
-<1>3. Show that the distance is not attained.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the distance is not attained.
+
+::: pf-proof
+
 Suppose $u\in C$ and $\|u\|_1=1$. Since $u\ge0$ a.e.,
 \[
 1=\int_0^1u\,dx\ge\int_0^1xu\,dx\ge1.
@@ -120,5 +140,11 @@ a.e., which implies $u=0$ a.e. on $[0,1)$. Since the point $1$ has measure zero,
 \int_0^1xu\,dx\ge1.
 \]
 Thus no element of $C$ attains the distance $1$ from the origin.
+
 :::
+
+:::
+
+:::
+
 :::

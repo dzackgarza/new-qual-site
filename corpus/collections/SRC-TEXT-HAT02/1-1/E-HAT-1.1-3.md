@@ -37,9 +37,15 @@ Recall that
 \]
 for $[f]\in\pi_1(X,x_1)$.
 
-<1>1. Suppose $\pi_1(X)$ is abelian.
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose $\pi_1(X)$ is abelian.
 Then $\beta_h=\beta_k$ whenever $h$ and $k$ have the same endpoints.
-::: {.proof}
+
+::: pf-proof
+
 Since $X$ is path connected, all fundamental groups at different basepoints are isomorphic, so it is enough that $\pi_1(X,x_0)$ is abelian.
 
 For $[f]\in\pi_1(X,x_1)$, set
@@ -70,11 +76,18 @@ Therefore
 \beta_h([f])=\beta_k([f])
 \]
 for every $[f]$, so $\beta_h=\beta_k$.
+
 :::
 
-<1>2. Conversely, suppose every basepoint-change homomorphism depends only on the endpoints of its path.
+:::
+
+::: {.pf-step #s2}
+
+Conversely, suppose every basepoint-change homomorphism depends only on the endpoints of its path.
 Then $\pi_1(X,x_0)$ is abelian for every $x_0\in X$.
-::: {.proof}
+
+::: pf-proof
+
 Fix $x_0\in X$ and let $h$ be any loop based at $x_0$.
 Let $c$ be the constant path at $x_0$.
 The paths $h$ and $c$ have the same endpoints, so by hypothesis
@@ -99,10 +112,23 @@ Multiplying on the right by $[h]$ gives
 [h]\,[f]=[f]\,[h].
 \]
 Both $[h]$ and $[f]$ were arbitrary, so $\pi_1(X,x_0)$ is abelian.
+
 :::
 
-<1>3. Therefore $\pi_1(X)$ is abelian if and only if the maps $\beta_h$ depend only on the endpoints of $h$.
-::: {.proof}
-The forward implication is <1>1 and the reverse implication is <1>2.
 :::
+
+::: pf-step
+
+Therefore $\pi_1(X)$ is abelian if and only if the maps $\beta_h$ depend only on the endpoints of $h$.
+
+::: pf-proof
+
+The forward implication is step [](#s1){.pf-ref} and the reverse implication is step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

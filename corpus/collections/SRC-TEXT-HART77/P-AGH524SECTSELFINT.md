@@ -54,12 +54,17 @@ p_1:C\times\PP^1\longrightarrow C
 $$
 be the first projection.
 
-<1>1. Every section $D$ of $p_1$ is the graph $\Gamma_u$ of a unique morphism
+::: pf
+
+::: {.pf-step #s1}
+
+Every section $D$ of $p_1$ is the graph $\Gamma_u$ of a unique morphism
 $$
 u:C\longrightarrow\PP^1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 \sigma:C\longrightarrow C\times\PP^1
@@ -78,14 +83,20 @@ $$
 $$
 so the image of $\sigma$ is the graph of $u$. Conversely every graph gives a
 section. Uniqueness is immediate from the second projection.
+
 :::
 
-<1>2. For $D=\Gamma_u$,
+:::
+
+::: {.pf-step #s2}
+
+For $D=\Gamma_u$,
 $$
 \mcn_{D/(C\times\PP^1)}\cong u^*T_{\PP^1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Restrict the tangent bundle of the product to the graph. Under the
 identification $D\cong C$ this gives
 $$
@@ -107,16 +118,22 @@ T_C\oplus u^*T_{\PP^1}\longrightarrow u^*T_{\PP^1},
 $$
 is surjective and has exactly this graph as its kernel. Hence the quotient in
 the normal sequence is $u^*T_{\PP^1}$.
+
 :::
 
-<1>3. Every section has even, nonnegative self-intersection, namely
+:::
+
+::: {.pf-step #s3}
+
+Every section has even, nonnegative self-intersection, namely
 $$
 \boxed{D^2=2\deg u}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a smooth curve on a smooth surface, self-intersection is the degree of the
-normal bundle. By step <1>2,
+normal bundle. By step [](#s2){.pf-ref},
 $$
 D^2
 =
@@ -133,25 +150,37 @@ $$
 For a constant map set $\deg u=0$; for a nonconstant map the degree is a
 positive integer. Thus every possible self-intersection is of the form
 $s=2r$ with $r\ge0$.
+
 :::
 
-<1>4. The value $r=0$ always occurs.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The value $r=0$ always occurs.
+
+::: pf-proof
+
 Take $u:C\to\PP^1$ to be constant. Its graph is the horizontal section
 $$
 C\times\{Q\},
 $$
-and step <1>3 gives self-intersection zero.
+and step [](#s3){.pf-ref} gives self-intersection zero.
+
 :::
 
-<1>5. For every integer
+:::
+
+::: {.pf-step #s5}
+
+For every integer
 $$
 r\ge g+1
 $$
 there is a morphism $u:C\to\PP^1$ of degree $r$.
 
-::: {.proof}
+::: pf-proof
+
 Exercise IV.6.8, proved on [[P-AGH468BASEPOINTFREENONSPECIAL]], gives a
 nonspecial line bundle $L$ of degree $r$ whose complete linear system is
 base-point free. Riemann--Roch gives
@@ -179,23 +208,35 @@ of degree
 $$
 \deg L=r.
 $$
+
 :::
 
-<1>6. The values
+:::
+
+::: {.pf-step #s6}
+
+The values
 $$
 \boxed{r=0\quad\text{and every }r\ge g+1}
 $$
 always occur.
 
-::: {.proof}
-Combine steps <1>4--<1>5 with the graph construction in step <1>1 and the
-self-intersection formula in step <1>3. This proves part (a).
+::: pf-proof
+
+Combine steps [](#s4){.pf-ref} and [](#s5){.pf-ref} with the graph construction in step [](#s1){.pf-ref} and the
+self-intersection formula in step [](#s3){.pf-ref}. This proves part (a).
+
 :::
 
-<1>7. Assume now $g=3$. The value $r=1$ is impossible.
+:::
 
-::: {.proof}
-If $r=1$ occurred, step <1>3 would give a degree-one morphism
+::: {.pf-step #s7}
+
+Assume now $g=3$. The value $r=1$ is impossible.
+
+::: pf-proof
+
+If $r=1$ occurred, step [](#s3){.pf-ref} would give a degree-one morphism
 $$
 u:C\longrightarrow\PP^1.
 $$
@@ -205,22 +246,34 @@ $$
 C\cong\PP^1,
 $$
 contradicting $g(C)=3$.
+
 :::
 
-<1>8. If $C$ is hyperelliptic of genus three, then $r=2$ occurs.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+If $C$ is hyperelliptic of genus three, then $r=2$ occurs.
+
+::: pf-proof
+
 By definition, a hyperelliptic curve has a degree-two morphism
 $$
 h:C\longrightarrow\PP^1
 $$
-[[D-CRVHYP]]. Its graph therefore has self-intersection four by step <1>3, so
+[[D-CRVHYP]]. Its graph therefore has self-intersection four by step [](#s3){.pf-ref}, so
 $r=2$ occurs.
+
 :::
 
-<1>9. If $C$ is hyperelliptic of genus three, then $r=3$ does not occur.
+:::
 
-::: {.proof}
+::: {.pf-step #s9}
+
+If $C$ is hyperelliptic of genus three, then $r=3$ does not occur.
+
+::: pf-proof
+
 Let $A$ denote the unique hyperelliptic $g^1_2$. Suppose for contradiction
 that there were a degree-three morphism $u:C\to\PP^1$. Then
 $$
@@ -270,18 +323,30 @@ is therefore an isomorphism. Every section of $L$ consequently vanishes at
 the added point $Q'$, so $Q'$ is a base point of $|L|$. This contradicts the
 fact that the two pulled-back sections from $\PP^1$ generate $L$. Thus no
 degree-three morphism exists.
+
 :::
 
-<1>10. If $C$ is nonhyperelliptic of genus three, then $r=2$ does not occur.
+:::
 
-::: {.proof}
+::: {.pf-step #s10}
+
+If $C$ is nonhyperelliptic of genus three, then $r=2$ does not occur.
+
+::: pf-proof
+
 A degree-two morphism to $\PP^1$ is exactly a $g^1_2$, hence would make $C$
 hyperelliptic by [[D-CRVHYP]]. Thus no such morphism exists.
+
 :::
 
-<1>11. If $C$ is nonhyperelliptic of genus three, then $r=3$ occurs.
+:::
 
-::: {.proof}
+::: {.pf-step #s11}
+
+If $C$ is nonhyperelliptic of genus three, then $r=3$ occurs.
+
+::: pf-proof
+
 By the genus-three canonical model [[FE-CRVLOWG]], the canonical linear system
 embeds $C$ as a smooth plane quartic
 $$
@@ -300,10 +365,15 @@ degree-three morphism
 $$
 C\longrightarrow\PP^1.
 $$
-Step <1>3 then gives a section of self-intersection six, so $r=3$ occurs.
+Step [](#s3){.pf-ref} then gives a section of self-intersection six, so $r=3$ occurs.
+
 :::
 
-<1>12. For genus three, exactly one of $r=2,3$ occurs:
+:::
+
+::: {.pf-step #s12}
+
+For genus three, exactly one of $r=2,3$ occurs:
 $$
 \boxed{
 \begin{array}{c|cc}
@@ -313,16 +383,23 @@ C\text{ nonhyperelliptic}&\text{no}&\text{yes}
 \end{array}}
 $$
 
-::: {.proof}
-This is exactly the combination of steps <1>8--<1>11. Together with step
-<1>7, it proves part (b).
+::: pf-proof
+
+This is exactly the combination of steps [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref}. Together with step
+[](#s7){.pf-ref}, it proves part (b).
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 identify possible self-intersections with twice the degrees of
-maps to $\PP^1$; steps <1>4--<1>6 prove part (a), and steps <1>7--<1>12 prove
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} identify possible self-intersections with twice the degrees of
+maps to $\PP^1$; steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} prove
 part (b).
+
 :::
+
+:::
+
 :::

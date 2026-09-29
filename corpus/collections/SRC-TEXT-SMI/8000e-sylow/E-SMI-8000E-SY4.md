@@ -40,8 +40,14 @@ $$
 N=N_G(P).
 $$
 
-<1>1. The subgroup $P$ is the unique Sylow $p$-subgroup of $N$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup $P$ is the unique Sylow $p$-subgroup of $N$.
+
+::: pf-proof
+
 Because every element of $P$ normalizes $P$, one has
 $$
 P\le N.
@@ -57,10 +63,17 @@ P\trianglelefteq N.
 $$
 A normal Sylow subgroup is the unique Sylow subgroup of that prime-power
 order. Therefore $P$ is the unique Sylow $p$-subgroup of $N$.
+
 :::
 
-<1>2. Every element normalizing $N$ also normalizes $P$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every element normalizing $N$ also normalizes $P$.
+
+::: pf-proof
+
 Let
 $$
 g\in N_G(N).
@@ -74,7 +87,7 @@ $$
 gPg^{-1}\le N.
 $$
 Conjugation preserves order, so $gPg^{-1}$ has the same order as $P$ and is
-therefore a Sylow $p$-subgroup of $N$. By uniqueness from step <1>1,
+therefore a Sylow $p$-subgroup of $N$. By uniqueness from step [](#s1){.pf-ref},
 $$
 gPg^{-1}=P.
 $$
@@ -86,17 +99,30 @@ Hence
 $$
 N_G(N)\subseteq N.
 $$
+
 :::
 
-<1>3. Conclude equality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude equality.
+
+::: pf-proof
+
 Every subgroup normalizes itself, so
 $$
 N\subseteq N_G(N).
 $$
-Combining this with step <1>2 gives
+Combining this with step [](#s2){.pf-ref} gives
 $$
 \boxed{N_G(N_G(P))=N_G(P).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

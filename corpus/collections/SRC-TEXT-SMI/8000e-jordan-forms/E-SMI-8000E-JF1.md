@@ -34,12 +34,17 @@ audit:
 (iv) Find the Jordan form of $T$, if the $k[X]$ module $(M, T)$ has invariant factors $(X-1)(X-2)$, $(X-1)^3(X-2)$, $(X-1)^3(X-2)^2(X-5)^3$.
 :::
 
-
 ::: {.solution}
 Write $J_r(a)$ for a Jordan block of size $r$ with eigenvalue $a$.
 
-<1>1. Solve part (i).
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Solve part (i).
+
+::: pf-proof
+
 If the minimal polynomial is
 $$
 (X-5)^2,
@@ -63,10 +68,17 @@ J_2(5)\oplus J_2(5)\oplus J_1(5),
 \qquad
 J_2(5)\oplus J_1(5)^{\oplus3}.}
 $$
+
 :::
 
-<1>2. Solve part (ii).
-::: {.proof}
+:::
+
+::: pf-step
+
+Solve part (ii).
+
+::: pf-proof
+
 The minimal polynomial
 $$
 (X-1)(X-3)(X+6)
@@ -93,10 +105,17 @@ I_a\oplus 3I_b\oplus(-6)I_c,
 \{(1,1,3),(1,2,2),(1,3,1),(2,1,2),(2,2,1),(3,1,1)\}.}
 $$
 There are six Jordan forms.
+
 :::
 
-<1>3. Solve part (iii).
-::: {.proof}
+:::
+
+::: pf-step
+
+Solve part (iii).
+
+::: pf-proof
+
 The minimal polynomial
 $$
 (X-1)^2(X-2)^2
@@ -130,10 +149,17 @@ $$
 $$
 Each has largest block size $2$ at both eigenvalues, and every allowed
 partition pair occurs exactly once.
+
 :::
 
-<1>4. Convert the invariant factors in part (iv) to elementary divisors.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Convert the invariant factors in part (iv) to elementary divisors.
+
+::: pf-proof
+
 The invariant factors are
 $$
 f_1=(X-1)(X-2),
@@ -166,11 +192,18 @@ $$
 1,1,2.
 $$
 For $X-5$, only the exponent $3$ occurs, giving one size-$3$ block.
+
 :::
 
-<1>5. State the Jordan form in part (iv).
-::: {.proof}
-Combining the elementary divisors from step <1>4 gives
+:::
+
+::: pf-step
+
+State the Jordan form in part (iv).
+
+::: pf-proof
+
+Combining the elementary divisors from step [](#s4){.pf-ref} gives
 $$
 \boxed{
 J_3(1)\oplus J_3(1)\oplus J_1(1)
@@ -178,5 +211,11 @@ J_3(1)\oplus J_3(1)\oplus J_1(1)
 \oplus J_3(5).}
 $$
 The order of the Jordan blocks is immaterial.
+
 :::
+
+:::
+
+:::
+
 :::

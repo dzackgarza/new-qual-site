@@ -56,8 +56,14 @@ S([v_0,\dots,v_n])
 \]
 Extend this linearly to $C_n(X)$.
 
-<1>1. The summands are exactly the $n$-simplices of the barycentric subdivision.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The summands are exactly the $n$-simplices of the barycentric subdivision.
+
+::: pf-proof
+
 An $n$-simplex of the barycentric subdivision corresponds to a maximal strict chain of nonempty faces
 \[
 F_0<F_1<\cdots<F_n=\sigma.
@@ -67,19 +73,39 @@ Such a chain is uniquely obtained by choosing an ordering $i_0,\dots,i_n$ of the
 F_k=[v_{i_0},\dots,v_{i_k}].
 \]
 Thus maximal chains are in bijection with permutations of the vertices, and the associated barycentric vertices are exactly those displayed in $\Delta_\pi$.
+
 :::
 
-<1>2. The coefficient $\operatorname{sgn}(\pi)$ gives each subdivided simplex the orientation induced from $\sigma$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The coefficient $\operatorname{sgn}(\pi)$ gives each subdivided simplex the orientation induced from $\sigma$.
+
+::: pf-proof
+
 For the identity permutation, the ordered barycentric vertices
 \[
 v_0,\ b_{01},\ b_{012},\dots,b_{0\cdots n}
 \]
 have the orientation of $[v_0,\dots,v_n]$. Permuting the original vertices by $\pi$ changes orientation by $\operatorname{sgn}(\pi)$, and the corresponding maximal face chain changes in exactly the same way. Hence the displayed coefficient is the induced orientation sign.
+
 :::
 
-<1>3. Therefore the formula agrees with the barycentric subdivision operator.
-::: {.proof}
-By definition, barycentric subdivision replaces an oriented simplex by the sum of all its oriented barycentric subsimplices. By <1>1 these are precisely the $\Delta_\pi$, and by <1>2 their orientation coefficients are $\operatorname{sgn}(\pi)$. Hence the displayed sum is exactly $S(\sigma)$.
 :::
+
+::: pf-step
+
+Therefore the formula agrees with the barycentric subdivision operator.
+
+::: pf-proof
+
+By definition, barycentric subdivision replaces an oriented simplex by the sum of all its oriented barycentric subsimplices. By step [](#s1){.pf-ref} these are precisely the $\Delta_\pi$, and by step [](#s2){.pf-ref} their orientation coefficients are $\operatorname{sgn}(\pi)$. Hence the displayed sum is exactly $S(\sigma)$.
+
+:::
+
+:::
+
+:::
+
 :::

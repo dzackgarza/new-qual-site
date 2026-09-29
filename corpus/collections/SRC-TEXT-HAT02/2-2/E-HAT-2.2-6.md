@@ -37,34 +37,59 @@ f:S^n\to S^n,
 \]
 Choose a point $x_0\in S^n$.
 
-<1>1. There exists a rotation $R\in SO(n+1)$ such that
+::: pf
+
+::: pf-step
+
+There exists a rotation $R\in SO(n+1)$ such that
 \[
 R(f(x_0))=x_0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The group $SO(n+1)$ acts transitively on $S^n$ for $n>0$, so some orientation-preserving orthogonal transformation carries $f(x_0)$ to $x_0$.
+
 :::
 
-<1>2. The rotation $R$ is joined to the identity by a path in $SO(n+1)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The rotation $R$ is joined to the identity by a path in $SO(n+1)$.
+
+::: pf-proof
+
 The group $SO(m)$ is path connected for every $m\ge2$. Here $m=n+1\ge2$, so there is a continuous path
 \[
 R_t\in SO(n+1),
 \qquad R_0=I,\quad R_1=R.
 \]
+
 :::
 
-<1>3. The maps
+:::
+
+::: pf-step
+
+The maps
 \[
 f_t=R_t\circ f
 \]
 form a homotopy from $f$ to a map having a fixed point.
-::: {.proof}
+
+::: pf-proof
+
 Clearly $f_0=f$. At the other endpoint,
 \[
 f_1(x_0)=R(f(x_0))=x_0,
 \]
 so $x_0$ is a fixed point of $f_1$.
+
+:::
+
+:::
+
 :::
 
 Therefore every map $S^n\to S^n$ with $n>0$ is homotopic to a map with a fixed point.

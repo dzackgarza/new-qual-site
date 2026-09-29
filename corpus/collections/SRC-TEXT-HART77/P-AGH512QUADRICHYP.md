@@ -47,13 +47,18 @@ B(u,v)=\frac12\bigl(f(u+v)-f(u)-f(v)\bigr)
 $$
 with $f(v)=B(v,v)$.
 
-<1>1. There is a basis of $V$ in which
+::: pf
+
+::: {.pf-step #s1}
+
+There is a basis of $V$ in which
 $$
 \boxed{f=x_0^2+\cdots+x_r^2}
 $$
 for some $0\le r\le n$.
 
-::: {.proof}
+::: pf-proof
+
 Since $f\ne0$, there is a vector $v$ with $f(v)\ne0$.
 Indeed, if $f(v)=0$ for every $v$, then polarization would give
 $$
@@ -80,14 +85,20 @@ Since $k$ is algebraically closed, choose square roots $b_i^2=a_i$ and rescale $
 The resulting form is the displayed sum of squares.
 The number $r+1$ is the rank of the symmetric matrix of $B$, so it is independent of the choices.
 This proves part (1).
+
 :::
 
-<1>2. The polynomial $f=x_0^2+\cdots+x_r^2$ is irreducible exactly when
+:::
+
+::: {.pf-step #s2}
+
+The polynomial $f=x_0^2+\cdots+x_r^2$ is irreducible exactly when
 $$
 \boxed{r\ge2.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $r=0$, then $f=x_0^2$ is reducible.
 If $r=1$, algebraic closedness gives an element $i\in k$ with $i^2=-1$, and
 $$
@@ -112,9 +123,14 @@ x_0^2+\cdots+x_r^2
 $$
 has rank $r+1\ge3$.
 This contradiction proves irreducibility for $r\ge2$, establishing part (2).
+
 :::
 
-<1>3. Assume $r\ge2$ and put
+:::
+
+::: {.pf-step #s3}
+
+Assume $r\ge2$ and put
 $$
 Q=V_+(x_0^2+\cdots+x_r^2)\subseteq\PP^n.
 $$
@@ -123,7 +139,8 @@ $$
 \boxed{\Sing Q=V_+(x_0,\ldots,x_r).}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The partial derivatives of the defining quadratic are
 $$
 2x_0,\ldots,2x_r,0,\ldots,0.
@@ -150,9 +167,14 @@ $$
 \boxed{Q\text{ is nonsingular }\Longleftrightarrow r=n.}
 $$
 This proves part (3), with the usual convention that the empty singular locus corresponds to dimension $-1$ in the formula.
+
 :::
 
-<1>4. If $r<n$, let
+:::
+
+::: {.pf-step #s4}
+
+If $r<n$, let
 $$
 Q'=V_+(x_0^2+\cdots+x_r^2)\subseteq\PP^r
 $$
@@ -162,14 +184,15 @@ Z=V_+(x_0,\ldots,x_r)\subseteq\PP^n.
 $$
 Then $Q$ is exactly the cone over $Q'$ with axis $Z$.
 
-::: {.proof}
+::: pf-proof
+
 Embed
 $$
 \PP^r=V_+(x_{r+1},\ldots,x_n)
 $$
 in $\PP^n$.
 It is disjoint from $Z$.
-The quadratic $Q'$ has full rank $r+1$ on this $\PP^r$, so step <1>3 applied there shows that $Q'$ is nonsingular.
+The quadratic $Q'$ has full rank $r+1$ on this $\PP^r$, so step [](#s3){.pf-ref} applied there shows that $Q'$ is nonsingular.
 
 Take a point
 $$
@@ -209,13 +232,19 @@ $$
 The point $p$ lies on the line joining $q$ and $z$.
 Hence every point of $Q$ lies in the cone.
 The two sets are equal, proving part (4).
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves the normal form, step <1>2 proves irreducibility, step <1>3 computes the singular locus, and step <1>4 proves the cone description.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the normal form, step [](#s2){.pf-ref} proves irreducibility, step [](#s3){.pf-ref} computes the singular locus, and step [](#s4){.pf-ref} proves the cone description.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="The zero quadratic"}

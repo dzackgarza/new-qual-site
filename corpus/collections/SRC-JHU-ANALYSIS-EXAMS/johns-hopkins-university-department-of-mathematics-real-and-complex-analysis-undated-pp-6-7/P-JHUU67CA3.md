@@ -32,9 +32,14 @@ Show that $f$ can be extended to the disc $\{|z| < R\}$ as a holomorphic functio
 ::: {.solution}
 Let $D_R=\{z:|z|<R\}$ and $A=\{z:r<|z|<R\}$.
 
-<1>1. The sequence $(p_n)$ is uniformly Cauchy on each compact subset of $D_R$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The sequence $(p_n)$ is uniformly Cauchy on each compact subset of $D_R$.
+
+::: pf-proof
+
 Fix a nonempty compact set $K\subset D_R$. Choose a radius
 $\rho$ satisfying
 $$
@@ -52,12 +57,18 @@ $$
 $$
 as $n,m\to\infty$ [@SS03]. The assertion for the empty
 compact set requires no estimate.
+
 :::
 
-<1>2. The limit on the disk is a holomorphic extension of $f$.
+:::
 
-::: {.proof}
-By completeness of $\mathbb C$, step <1>1 first gives
+::: pf-step
+
+The limit on the disk is a holomorphic extension of $f$.
+
+::: pf-proof
+
+By completeness of $\mathbb C$, step [](#s1){.pf-ref} first gives
 the pointwise limit $F(z)=\lim_n p_n(z)$ at each $z\in D_R$.
 For a compact $K\subset D_R$, let $m\to\infty$ in the
 uniform Cauchy estimate. It follows that $p_n\to F$
@@ -69,5 +80,11 @@ For every $z\in A$, the hypothesis already gives
 $p_n(z)\to f(z)$. Uniqueness of limits in $\mathbb C$
 therefore gives $F(z)=f(z)$ on $A$. Hence $F$ is the
 required extension to all of $D_R$.
+
 :::
+
+:::
+
+:::
+
 :::

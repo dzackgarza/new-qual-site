@@ -29,49 +29,104 @@ Show that, if $H$ is a proper subgroup of $G$, then $H$ is a proper subgroup of 
 :::
 
 ::: {.solution}
-<1>1. We argue by induction on \,\(|G|\). The result is trivial for \(|G|=p\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+We argue by induction on \,\(|G|\). The result is trivial for \(|G|=p\).
+
+::: pf-proof
+
 The only proper subgroup is the trivial subgroup, whose normalizer is all of \(G\).
+
 :::
 
-<1>2. Let \(Z=Z(G)\). Since \(G\) is a nontrivial finite \(p\)-group, \(Z\neq 1\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Let \(Z=Z(G)\). Since \(G\) is a nontrivial finite \(p\)-group, \(Z\neq 1\).
+
+::: pf-proof
+
 The center of every nontrivial finite \(p\)-group is nontrivial.
+
 :::
 
-<1>3. If \(Z\nsubseteq H\), then \(H<N_G(H)\).
-::: {.proof}
+:::
+
+::: pf-step
+
+If \(Z\nsubseteq H\), then \(H<N_G(H)\).
+
+::: pf-proof
+
 Choose \(z\in Z\setminus H\). Because \(z\) is central, \(zHz^{-1}=H\), so \(z\in N_G(H)\setminus H\). Hence the inclusion \(H\le N_G(H)\) is proper.
+
 :::
 
-<1>4. Suppose \(Z\le H\). Then \(H/Z\) is a proper subgroup of the finite \(p\)-group \(G/Z\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Suppose \(Z\le H\). Then \(H/Z\) is a proper subgroup of the finite \(p\)-group \(G/Z\).
+
+::: pf-proof
+
 Since \(H<G\) and \(Z\le H\), equality \(H/Z=G/Z\) would imply \(H=G\), impossible.
 Also \(G/Z\) is again a finite \(p\)-group and has smaller order than \(G\).
+
 :::
 
-<1>5. By induction,
+:::
+
+::: {.pf-step #s5}
+
+By induction,
 \[
 H/Z<N_{G/Z}(H/Z).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Apply the induction hypothesis to the proper subgroup \(H/Z<G/Z\).
+
 :::
 
-<1>6. We have
+:::
+
+::: {.pf-step #s6}
+
+We have
 \[
 N_{G/Z}(H/Z)=N_G(H)/Z.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For \(g\in G\), the coset \(gZ\) normalizes \(H/Z\) iff
 \[
 (gZ)(H/Z)(gZ)^{-1}=H/Z,
 \]
 which is equivalent to \(gHg^{-1}Z=H\). Because \(Z\le H\), this is equivalent to \(gHg^{-1}=H\), i.e. \(g\in N_G(H)\).
+
 :::
 
-<1>7. Therefore \(H<N_G(H)\).
-::: {.proof}
-By <1>5 and <1>6, \(H/Z\) is properly contained in \(N_G(H)/Z\). Hence \(H\) is properly contained in \(N_G(H)\).
 :::
+
+::: pf-step
+
+Therefore \(H<N_G(H)\).
+
+::: pf-proof
+
+By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, \(H/Z\) is properly contained in \(N_G(H)/Z\). Hence \(H\) is properly contained in \(N_G(H)\).
+
+:::
+
+:::
+
+:::
+
 :::

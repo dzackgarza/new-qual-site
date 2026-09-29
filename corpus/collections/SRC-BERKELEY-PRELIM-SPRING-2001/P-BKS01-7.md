@@ -31,14 +31,20 @@ Prove that $(f_n)$ has a uniformly convergent subsequence.
 :::
 
 ::: {.solution}
-<1>1. For every $n\geq3$ and all $x,y\in[0,1]$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\geq3$ and all $x,y\in[0,1]$,
 $$
 \abs{f_n(x)-f_n(y)}
 \leq
 \abs{x-y}+\frac2n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 It is enough to assume $x\leq y$. If
 $$
 y-x\geq\frac1n,
@@ -98,15 +104,21 @@ $$
 \leq
 y-x+\frac2n.
 $$
+
 :::
 
-<1>2. There is a subsequence
+:::
+
+::: {.pf-step #s2}
+
+There is a subsequence
 $$
 (f_{n_k})_{k\geq1}
 $$
 that converges at every rational point of $[0,1]$.
 
-::: {.proof}
+::: pf-proof
+
 Enumerate
 $$
 \QQ\cap[0,1]
@@ -117,11 +129,17 @@ The sequence $(f_n(q_1))_n$ lies in the compact interval $[0,1]$, so
 it has a convergent subsequence. From that subsequence choose one on
 which the values at $q_2$ converge, and continue inductively. The
 diagonal subsequence converges at every $q_j$.
+
 :::
 
-<1>3. The subsequence from step <1>2 is uniformly Cauchy on $[0,1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The subsequence from step [](#s2){.pf-ref} is uniformly Cauchy on $[0,1]$.
+
+::: pf-proof
+
 Let $\varepsilon>0$. Choose finitely many rational points
 $$
 q_1',\ldots,q_m'\in\QQ\cap[0,1]
@@ -148,7 +166,7 @@ $$
 $$
 
 Let $k,\ell\geq\max\{K_1,K_2\}$ and $x\in[0,1]$. Choose $q_j'$
-within $\varepsilon/6$ of $x$. Step <1>1 gives
+within $\varepsilon/6$ of $x$. Step [](#s1){.pf-ref} gives
 $$
 \abs{f_{n_k}(x)-f_{n_k}(q_j')}
 <
@@ -176,14 +194,20 @@ $$
 $$
 The bound is independent of $x$, so the subsequence is uniformly
 Cauchy.
+
 :::
 
-<1>4. The subsequence $(f_{n_k})$ converges uniformly on $[0,1]$.
+:::
 
-::: {.proof}
-For each $x\in[0,1]$, step <1>3 makes the real sequence
+::: {.pf-step #s4}
+
+The subsequence $(f_{n_k})$ converges uniformly on $[0,1]$.
+
+::: pf-proof
+
+For each $x\in[0,1]$, step [](#s3){.pf-ref} makes the real sequence
 $(f_{n_k}(x))_k$ Cauchy, hence convergent; denote its limit by $f(x)$.
-The uniform Cauchy estimate in step <1>3 remains valid after letting
+The uniform Cauchy estimate in step [](#s3){.pf-ref} remains valid after letting
 $\ell\to\infty$, so for every $\varepsilon>0$ and all sufficiently
 large $k$,
 $$
@@ -193,11 +217,17 @@ $$
 \varepsilon.
 $$
 Thus $f_{n_k}\to f$ uniformly.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required uniformly convergent subsequence.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required uniformly convergent subsequence.
+
+:::
+
+:::
+
 :::

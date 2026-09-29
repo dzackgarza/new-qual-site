@@ -36,8 +36,15 @@ Let $f: \RR \to \CC$ be continuous with period 1. Prove that
 :::
 
 ::: {.solution}
-<1>1. Prove the limit for the exponential basis functions.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the limit for the exponential basis functions.
+
+::: pf-proof
+
 For $k\in\mathbb Z$, let
 \[
 e_k(t)=e^{2\pi i kt}.
@@ -65,10 +72,17 @@ Also
 \int_0^1e^{2\pi i kt}\,dt=0.
 \]
 Thus the desired limit holds for every exponential $e_k$, and therefore for every trigonometric polynomial by linearity.
+
 :::
 
-<1>2. Pass from trigonometric polynomials to continuous periodic functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass from trigonometric polynomials to continuous periodic functions.
+
+::: pf-proof
+
 Trigonometric polynomials are uniformly dense in the continuous $1$-periodic functions. Fix $\varepsilon>0$ and choose a trigonometric polynomial $P$ with
 \[
 \|f-P\|_\infty<\varepsilon.
@@ -102,5 +116,11 @@ Since $\varepsilon$ is arbitrary,
 \frac1N\sum_{n=1}^Nf(n\alpha)
 \longrightarrow\int_0^1f(t)\,dt.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

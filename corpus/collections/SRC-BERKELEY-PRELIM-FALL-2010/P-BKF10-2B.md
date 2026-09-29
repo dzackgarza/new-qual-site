@@ -45,17 +45,28 @@ $$
 G\coloneqq\operatorname{Gal}(L/\QQ).
 $$
 
-<1>1. The polynomial $p$ is irreducible over $\QQ$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The polynomial $p$ is irreducible over $\QQ$.
+
+::: pf-proof
+
 Eisenstein's criterion applies at the prime $5$: every nonleading
 coefficient is divisible by $5$, while the constant term $5$ is not
 divisible by $25$. Hence $p$ is irreducible in $\QQ[x]$.
+
 :::
 
-<1>2. The group $G\le S_5$ contains a $5$-cycle.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The group $G\le S_5$ contains a $5$-cycle.
+
+::: pf-proof
+
 Because $p$ is irreducible of degree $5$, $G$ acts transitively on its
 five roots. If $\alpha$ is one root, orbit--stabilizer gives
 $$
@@ -64,11 +75,17 @@ $$
 so $5\mid\abs{G}$. By Cauchy's theorem, $G$ contains an element of order
 $5$. Viewed as a permutation of five roots, any permutation of order
 $5$ is a $5$-cycle.
+
 :::
 
-<1>3. The polynomial $p$ has at least three distinct real roots.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The polynomial $p$ has at least three distinct real roots.
+
+::: pf-proof
+
 One has
 $$
 \lim_{x\to-\infty}p(x)=-\infty,
@@ -87,11 +104,17 @@ p(1)=-4<0,
 $$
 so there is a real root greater than $1$. These three intervals are
 disjoint, so the roots are distinct.
+
 :::
 
-<1>4. The polynomial $p$ has at most three distinct real roots.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The polynomial $p$ has at most three distinct real roots.
+
+::: pf-proof
+
 Its derivative is
 $$
 p'(x)=5x^4-10=5(x^4-2),
@@ -99,44 +122,68 @@ $$
 which has exactly two real zeros, namely
 $\pm2^{1/4}$. If $p$ had four distinct real roots, Rolle's theorem would
 produce at least three distinct real zeros of $p'$, a contradiction.
+
 :::
 
-<1>5. Exactly three roots of $p$ are real, and the other two form one
+:::
+
+::: {.pf-step #s5}
+
+Exactly three roots of $p$ are real, and the other two form one
 nonreal complex-conjugate pair.
 
-::: {.proof}
-Steps <1>3 and <1>4 give exactly three distinct real roots. Since the
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give exactly three distinct real roots. Since the
 base field has characteristic $0$, the irreducible polynomial $p$ is
 separable, so all five roots are distinct. The remaining two roots are
 nonreal. Because $p$ has real coefficients, nonreal roots occur in
 complex-conjugate pairs, so those two roots are conjugate to each other.
+
 :::
 
-<1>6. The group $G$ contains a transposition.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The group $G$ contains a transposition.
+
+::: pf-proof
+
 Complex conjugation preserves $L$, because it permutes the roots of the
 real polynomial $p$, and it fixes $\QQ$. Hence its restriction to $L$
-is an element of $G$. By step <1>5, it fixes the three real roots and
+is an element of $G$. By step [](#s5){.pf-ref}, it fixes the three real roots and
 interchanges the two nonreal roots. Thus its permutation on the five
 roots is a transposition.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{G\cong S_5}.
 $$
 
-::: {.proof}
-Step <1>2 gives a $5$-cycle in $G$, and step <1>6 gives a $2$-cycle.
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives a $5$-cycle in $G$, and step [](#s6){.pf-ref} gives a $2$-cycle.
 By the group-theoretic fact allowed in the problem, any subgroup of
 $S_5$ containing both is all of $S_5$. Hence $G=S_5$ in its action on
 the five roots.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 proves the required Galois-group identification.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} proves the required Galois-group identification.
+
+:::
+
+:::
+
 :::

@@ -40,16 +40,29 @@ Then
 \]
 is a composition series.
 
-<1>1. Each term is normal in the next.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Each term is normal in the next.
+
+::: pf-proof
+
 The subgroup $C_2$ is normal in the abelian group $V_4$. The Klein four group
 $V_4$ is normal in $A_4$ because it is the union of the identity and the three
 double transpositions, a conjugacy-stable set. Finally $A_4$ has index $2$ in
 $S_4$, hence is normal.
+
 :::
 
-<1>2. Each factor is simple.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Each factor is simple.
+
+::: pf-proof
+
 The factor orders are
 \[
 |C_2|=2,
@@ -61,11 +74,24 @@ The factor orders are
 |S_4/A_4|=2.
 \]
 Every group of prime order is simple.
+
 :::
 
-<1>3. Hence the displayed chain is a composition series for $S_4$.
-::: {.proof}
-By <1>1 it is a subnormal series, and by <1>2 all composition factors are
-simple.
 :::
+
+::: pf-step
+
+Hence the displayed chain is a composition series for $S_4$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} it is a subnormal series, and by step [](#s2){.pf-ref} all composition factors are
+simple.
+
+:::
+
+:::
+
+:::
+
 :::

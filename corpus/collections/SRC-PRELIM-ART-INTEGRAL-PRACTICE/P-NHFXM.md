@@ -33,8 +33,15 @@ Also deduce antiderivatives of \(1/(1+\sin x)\) and \(\tan x/(\tan x+\sec x)\).
 :::
 
 ::: {.solution}
-<1>1. Integrate \(1/(\sin x+\cos x)\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Integrate \(1/(\sin x+\cos x)\).
+
+::: pf-proof
+
 Since
 \[
 \sin x+\cos x=\sqrt2\sin\left(x+\frac\pi4\right),
@@ -54,10 +61,17 @@ Equivalently this is
 \[
 -\frac1{\sqrt2}\log\left|\csc\left(x+\frac\pi4\right)+\cot\left(x+\frac\pi4\right)\right|+C.
 \]
+
 :::
 
-<1>2. Integrate \(\sin x/(1+\sin x)\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Integrate \(\sin x/(1+\sin x)\).
+
+::: pf-proof
+
 Write
 \[
 \frac{\sin x}{1+\sin x}=1-\frac1{1+\sin x}.
@@ -83,10 +97,17 @@ Since
 \frac{\tan x}{\tan x+\sec x}=\frac{\sin x}{1+\sin x},
 \]
 the same antiderivative applies to that quotient.
+
 :::
 
-<1>3. Integrate \(\sin x/(1-\sin x)\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Integrate \(\sin x/(1-\sin x)\).
+
+::: pf-proof
+
 Now
 \[
 \frac{\sin x}{1-\sin x}=-1+\frac1{1-\sin x},
@@ -103,5 +124,11 @@ Thus
 \int\frac{\sin x}{1-\sin x}\,dx
 =-x+\tan x+\sec x+C.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

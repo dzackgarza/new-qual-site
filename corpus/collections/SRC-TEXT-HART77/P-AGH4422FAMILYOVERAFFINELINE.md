@@ -54,13 +54,18 @@ O:S\longrightarrow E
 $$
 be the given section.
 
-<1>1. The section $O$ makes $E/S$ an elliptic scheme, and its $2$-torsion
+::: pf
+
+::: {.pf-step #s1}
+
+The section $O$ makes $E/S$ an elliptic scheme, and its $2$-torsion
 $$
 E[2]=\ker[2]
 $$
 is a finite etale cover of $S$ of degree $4$.
 
-::: {.proof}
+::: pf-proof
+
 The section chooses an origin on every fibre, so the fibrewise elliptic-curve
 group laws assemble to the group law on the elliptic scheme $E/S$.
 
@@ -75,26 +80,37 @@ $$
 E[2]\longrightarrow S,
 $$
 which is therefore finite etale of degree $4$.
+
 :::
 
-<1>2. There are four pairwise disjoint sections
+:::
+
+::: {.pf-step #s2}
+
+There are four pairwise disjoint sections
 $$
 O,T_0,T_1,T_\lambda:S\longrightarrow E
 $$
 whose images are exactly $E[2]$.
 
-::: {.proof}
+::: pf-proof
+
 The affine line over $\CC$ has no nontrivial connected finite etale covers.
 Hence every finite etale cover of $S$ is a disjoint union of copies of $S$.
-Applying this to the degree-$4$ cover in step <1>1 gives four sections.
+Applying this to the degree-$4$ cover in step [](#s1){.pf-ref} gives four sections.
 One is the zero section $O$; label the other three
 $$
 T_0,T_1,T_\lambda.
 $$
 Because $E[2]\to S$ is etale, these components are disjoint.
+
 :::
 
-<1>3. The complete linear system
+:::
+
+::: {.pf-step #s3}
+
+The complete linear system
 $$
 \abs{2O}
 $$
@@ -111,7 +127,8 @@ $$
 \infty,\qquad 0,\qquad 1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On every elliptic fibre $E_s$, the line bundle
 $$
 \OO_{E_s}(2O_s)
@@ -139,7 +156,7 @@ S=\Spec\CC[t]
 $$
 is free, so the target is isomorphic to $\PP^1_S$.  The fixed points of
 $[-1]$ are precisely the points killed by $2$; hence the ramification
-sections of $q$ are the four sections in step <1>2, and their images are the
+sections of $q$ are the four sections in step [](#s2){.pf-ref}, and their images are the
 four branch sections.
 
 It remains to normalize three branch sections globally.  Since
@@ -170,17 +187,23 @@ $$
 1=[1:1].
 $$
 This gives the required global normalization.
+
 :::
 
-<1>4. The fourth branch section defines a morphism
+:::
+
+::: {.pf-step #s4}
+
+The fourth branch section defines a morphism
 $$
 \boxed{
 \lambda:S\longrightarrow\AA^1_{\CC}\setminus\{0,1\}.
 }
 $$
 
-::: {.proof}
-In the coordinate fixed in step <1>3, write the fourth branch section as
+::: pf-proof
+
+In the coordinate fixed in step [](#s3){.pf-ref}, write the fourth branch section as
 $$
 x=\lambda.
 $$
@@ -192,12 +215,18 @@ $$
 $$
 such that neither $\lambda$ nor $\lambda-1$ vanishes anywhere on $S$.
 Equivalently, it is the displayed morphism.
+
 :::
 
-<1>5. The function $\lambda$ is constant.
+:::
 
-::: {.proof}
-Since the map in step <1>4 avoids $0$ and $1$, both
+::: {.pf-step #s5}
+
+The function $\lambda$ is constant.
+
+::: pf-proof
+
+Since the map in step [](#s4){.pf-ref} avoids $0$ and $1$, both
 $$
 \lambda
 \qquad\text{and}\qquad
@@ -208,9 +237,14 @@ $$
 \CC[t]^*=\CC^*.
 $$
 Hence $\lambda\in\CC\setminus\{0,1\}$ is constant.
+
 :::
 
-<1>6. The double cover $q$ is the product over $S$ of the Legendre double
+:::
+
+::: {.pf-step #s6}
+
+The double cover $q$ is the product over $S$ of the Legendre double
 cover
 $$
 E_\lambda:
@@ -219,8 +253,9 @@ y^2=x(x-1)(x-\lambda)
 \PP^1_{\CC}.
 $$
 
-::: {.proof}
-By step <1>5 the branch divisor on $\PP^1_S$ is the constant divisor
+::: pf-proof
+
+By step [](#s5){.pf-ref} the branch divisor on $\PP^1_S$ is the constant divisor
 $$
 B
 =
@@ -281,25 +316,37 @@ E\cong E_\lambda\times_{\Spec\CC}S
 $$
 over $S$, with the given zero section corresponding to the point at
 infinity.
+
 :::
 
-<1>7. The family $E\to\AA^1_{\CC}$ is trivial.
+:::
 
-::: {.proof}
-Step <1>6 gives an isomorphism of elliptic schemes
+::: {.pf-step #s7}
+
+The family $E\to\AA^1_{\CC}$ is trivial.
+
+::: pf-proof
+
+Step [](#s6){.pf-ref} gives an isomorphism of elliptic schemes
 $$
 \boxed{
 E\cong E_\lambda\times\AA^1_{\CC}
 }
 $$
 over the base.  This is precisely the required trivialization.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 trivialize the relative $2$-torsion, steps <1>3--<1>5
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} trivialize the relative $2$-torsion, steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}
 produce Hartshorne's Legendre parameter and show it is constant, and steps
-<1>6--<1>7 show that no residual quadratic twist remains.
+[](#s6){.pf-ref} and [](#s7){.pf-ref} show that no residual quadratic twist remains.
+
 :::
+
+:::
+
 :::

@@ -39,7 +39,11 @@ I_\varepsilon
 f(t)\frac{\varepsilon}{\varepsilon^2+t^2}\,dt.
 $$
 
-<1>1. The substitution
+::: pf
+
+::: {.pf-step #s1}
+
+The substitution
 $$
 t=\varepsilon u
 $$
@@ -51,7 +55,8 @@ I_\varepsilon
 \frac{f(\varepsilon u)}{1+u^2}\,du.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 dt=\varepsilon\,du,
@@ -65,14 +70,20 @@ $$
 =
 \frac{du}{1+u^2}.
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \int_{-\infty}^{\infty}\frac{du}{1+u^2}=\pi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \frac{d}{du}\arctan u
@@ -88,9 +99,14 @@ $$
 =
 \pi.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 I_\varepsilon-\pi f(0)
 =
@@ -98,8 +114,9 @@ I_\varepsilon-\pi f(0)
 \frac{f(\varepsilon u)-f(0)}{1+u^2}\,du.
 $$
 
-::: {.proof}
-Combine step <1>1 with step <1>2:
+::: pf-proof
+
+Combine step [](#s1){.pf-ref} with step [](#s2){.pf-ref}:
 $$
 \pi f(0)
 =
@@ -107,9 +124,14 @@ $$
 \frac{f(0)}{1+u^2}\,du,
 $$
 and subtract the two integrals.
+
 :::
 
-<1>4. For every $\eta>0$, there is $A>0$ such that for every
+:::
+
+::: {.pf-step #s4}
+
+For every $\eta>0$, there is $A>0$ such that for every
 $\varepsilon>0$,
 $$
 \int_{\abs{u}>A}
@@ -118,7 +140,8 @@ $$
 \frac{\eta}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $f$ is bounded, choose $M\geq1$ such that
 $$
 \abs{f(x)}\leq M
@@ -140,9 +163,14 @@ $$
 \frac{\eta}{4M}.
 $$
 Multiplying by $2M$ gives the required estimate.
+
 :::
 
-<1>5. For the $A$ chosen in step <1>4, all sufficiently small
+:::
+
+::: {.pf-step #s5}
+
+For the $A$ chosen in step [](#s4){.pf-ref}, all sufficiently small
 $\varepsilon>0$ satisfy
 $$
 \int_{\abs{u}\leq A}
@@ -151,7 +179,8 @@ $$
 \frac{\eta}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By continuity of $f$ at $0$, there is $\delta>0$ such that
 $$
 \abs{s}<\delta
@@ -165,7 +194,7 @@ $$
 0<\varepsilon<\frac{\delta}{A},
 $$
 then $\abs{\varepsilon u}<\delta$ for $\abs{u}\leq A$. Therefore, using
-step <1>2,
+step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 \int_{\abs{u}\leq A}
@@ -177,9 +206,14 @@ $$
 \frac{\eta}{2}.
 \end{aligned}
 $$
+
 :::
 
-<1>6. The required limit is
+:::
+
+::: {.pf-step #s6}
+
+The required limit is
 $$
 \boxed{
 \lim_{\varepsilon\to0^+}I_\varepsilon
@@ -188,8 +222,9 @@ $$
 }.
 $$
 
-::: {.proof}
-Let $\eta>0$. Steps <1>3--<1>5 show that for all sufficiently small
+::: pf-proof
+
+Let $\eta>0$. Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} show that for all sufficiently small
 $\varepsilon>0$,
 $$
 \abs{I_\varepsilon-\pi f(0)}
@@ -201,11 +236,17 @@ $$
 \eta.
 $$
 This is exactly the stated limit.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

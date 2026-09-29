@@ -33,8 +33,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Decompose $x_0$ orthogonally relative to $M$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Decompose $x_0$ orthogonally relative to $M$.
+
+::: pf-proof
+
 Since $M$ is a closed subspace of the Hilbert space $H$, the projection theorem gives unique vectors
 \[
 m_0\in M,
@@ -46,10 +53,17 @@ such that
 x_0=m_0+z.
 \]
 Because $x_0\notin M$, we have $z\ne0$.
+
 :::
 
-<1>2. Compute the minimum distance to $M$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the minimum distance to $M$.
+
+::: pf-proof
+
 For any $x\in M$,
 \[
 x_0-x=(m_0-x)+z,
@@ -64,10 +78,17 @@ Equality holds at $x=m_0$. Therefore
 \[
 \min_{x\in M}\|x-x_0\|=\|z\|.
 \]
+
 :::
 
-<1>3. Compute the maximum over the unit sphere of $M^\perp$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the maximum over the unit sphere of $M^\perp$.
+
+::: pf-proof
+
 If $y\in M^\perp$ and $\|y\|=1$, then
 \[
 \langle x_0,y\rangle
@@ -89,5 +110,11 @@ Thus
 =\|z\|
 =\min_{x\in M}\|x-x_0\|.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

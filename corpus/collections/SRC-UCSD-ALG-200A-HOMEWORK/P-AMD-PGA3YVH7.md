@@ -55,24 +55,38 @@ Then use the second relation to deduce $y^9=e$.
 :::
 
 ::: {.solution}
-<1>1. The first defining relation is equivalent to
+
+::: pf
+
+::: {.pf-step #s1}
+
+The first defining relation is equivalent to
 \[
 xy^2x^{-1}=y^3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Starting from
 \[
 xy^2=y^3x,
 \]
 multiply on the right by $x^{-1}$.
+
 :::
 
-<1>2. We have
+:::
+
+::: {.pf-step #s2}
+
+We have
 \[
 x^2y^8x^{-2}=y^{18}.
 \]
-::: {.proof}
-By <1>1,
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 \[
 xy^8x^{-1}
 =x(y^2)^4x^{-1}
@@ -89,40 +103,61 @@ x^2y^8x^{-2}
 &=y^{18}.
 \end{aligned}
 \]
+
 :::
 
-<1>3. We have
+:::
+
+::: {.pf-step #s3}
+
+We have
 \[
 x^3y^8x^{-3}=y^{27}.
 \]
-::: {.proof}
-Conjugate the identity in <1>2 by $x$:
+
+::: pf-proof
+
+Conjugate the identity in step [](#s2){.pf-ref} by $x$:
 \[
 x^3y^8x^{-3}=xy^{18}x^{-1}.
 \]
-Since $y^{18}=(y^2)^9$, <1>1 gives
+Since $y^{18}=(y^2)^9$, step [](#s1){.pf-ref} gives
 \[
 xy^{18}x^{-1}
 =(xy^2x^{-1})^9
 =y^{27}.
 \]
+
 :::
 
-<1>4. The second defining relation gives
+:::
+
+::: {.pf-step #s4}
+
+The second defining relation gives
 \[
 x^3=yx^2y^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 From
 \[
 yx^2=x^3y,
 \]
 multiply on the right by $y^{-1}$.
+
 :::
 
-<1>5. We have $y^9=e$.
-::: {.proof}
-By <1>4,
+:::
+
+::: {.pf-step #s5}
+
+We have $y^9=e$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 \[
 x^{-3}=yx^{-2}y^{-1}.
 \]
@@ -134,11 +169,11 @@ x^3y^8x^{-3}
 &=y(x^2y^8x^{-2})y^{-1}.
 \end{aligned}
 \]
-Using <1>2, the right-hand side is
+Using step [](#s2){.pf-ref}, the right-hand side is
 \[
 y y^{18} y^{-1}=y^{18}.
 \]
-But <1>3 says that the same left-hand side is $y^{27}$.
+But step [](#s3){.pf-ref} says that the same left-hand side is $y^{27}$.
 Hence
 \[
 y^{27}=y^{18},
@@ -147,16 +182,23 @@ and multiplying by $y^{-18}$ gives
 \[
 y^9=e.
 \]
+
 :::
 
-<1>6. We have $y=e$.
-::: {.proof}
-Raise the conjugation identity in <1>1 to the third power:
+:::
+
+::: {.pf-step #s6}
+
+We have $y=e$.
+
+::: pf-proof
+
+Raise the conjugation identity in step [](#s1){.pf-ref} to the third power:
 \[
 xy^6x^{-1}=y^9=e.
 \]
 Conjugation is injective, so $y^6=e$.
-Together with <1>5,
+Together with step [](#s5){.pf-ref},
 \[
 y^3=y^9(y^6)^{-1}=e.
 \]
@@ -170,11 +212,18 @@ Since also $y^3=e$,
 \[
 y=y^3(y^2)^{-1}=e.
 \]
+
 :::
 
-<1>7. We have $x=e$, and therefore $G$ is trivial.
-::: {.proof}
-Substitute $y=e$ from <1>6 into the second defining relation:
+:::
+
+::: pf-step
+
+We have $x=e$, and therefore $G$ is trivial.
+
+::: pf-proof
+
+Substitute $y=e$ from step [](#s6){.pf-ref} into the second defining relation:
 \[
 x^2=x^3.
 \]
@@ -183,5 +232,11 @@ Thus both generators are the identity, so
 \[
 G=\{e\}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

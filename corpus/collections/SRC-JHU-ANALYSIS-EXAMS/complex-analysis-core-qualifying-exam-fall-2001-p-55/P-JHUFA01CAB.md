@@ -29,8 +29,15 @@ Problem 2. Fix a real number $\alpha > 1$ . Show that the equation $z - \alpha =
 :::
 
 ::: {.solution}
-<1>1. Every right-half-plane solution lies in the disk $|z-\alpha|<1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every right-half-plane solution lies in the disk $|z-\alpha|<1$.
+
+::: pf-proof
+
 If $z$ satisfies
 $$
 z-\alpha=e^{-z}
@@ -49,10 +56,17 @@ $$
 \operatorname{Re}z\ge\alpha-1>0.
 $$
 Hence every zero found in $B$ is automatically in the required half-plane.
+
 :::
 
-<1>2. Rouché's theorem gives exactly one solution in $B$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Rouché's theorem gives exactly one solution in $B$.
+
+::: pf-proof
+
 Let
 $$
 F(z)=z-\alpha-e^{-z}.
@@ -66,21 +80,34 @@ $$
 Thus Rouché's theorem shows that $F$ and $z-\alpha$ have the same number of
 zeros in $B$, counted with multiplicity. The latter has exactly one simple
 zero. Therefore $F$ has exactly one zero in $B$, counted with multiplicity.
-Together with step <1>1, this is precisely one solution in the right half-plane.
+Together with step [](#s1){.pf-ref}, this is precisely one solution in the right half-plane.
+
 :::
 
-<1>3. The unique solution is real.
-::: {.proof}
+:::
+
+::: pf-step
+
+The unique solution is real.
+
+::: pf-proof
+
 The equation has real coefficients in the sense that
 $$
 \overline{F(z)}=F(\overline z).
 $$
 Hence if $z_0$ is a solution, then $\overline{z_0}$ is also a solution. The
 right half-plane is invariant under complex conjugation, so both would lie in
-the region counted in step <1>2. Uniqueness therefore gives
+the region counted in step [](#s2){.pf-ref}. Uniqueness therefore gives
 $$
 z_0=\overline{z_0},
 $$
 which means $z_0$ is real.
+
 :::
+
+:::
+
+:::
+
 :::

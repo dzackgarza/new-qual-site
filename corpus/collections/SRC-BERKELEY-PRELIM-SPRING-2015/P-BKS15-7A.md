@@ -40,7 +40,11 @@ A_n
 $$
 so that $\Delta_n=\det A_n$.
 
-<1>1. Starting with $A_n$, for $j=n-1,n-2,\ldots,1$ replace column $j$ by
+::: pf
+
+::: {.pf-step #s1}
+
+Starting with $A_n$, for $j=n-1,n-2,\ldots,1$ replace column $j$ by
 $$
 C_j-C_{j-1}.
 $$
@@ -56,7 +60,8 @@ b_{ij}=\binom{i+j-1}{i-1}
 \quad(i\geq1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each column replacement preserves the determinant. The columns are changed in descending order, so when column $j$ is replaced, column $j-1$ still has its original entries. Thus, for $j\geq1$ and $i\geq1$,
 $$
 \begin{aligned}
@@ -74,9 +79,14 @@ $$
 1-1=0.
 $$
 Column $0$ is unchanged and consists entirely of $1$'s.
+
 :::
 
-<1>2. Starting with $B_n$, for $i=n-1,n-2,\ldots,1$ replace row $i$ by
+:::
+
+::: {.pf-step #s2}
+
+Starting with $B_n$, for $i=n-1,n-2,\ldots,1$ replace row $i$ by
 $$
 R_i-R_{i-1}.
 $$
@@ -88,10 +98,11 @@ $$
 \end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Again, each row replacement preserves the determinant, and descending order ensures that row $i-1$ is still unchanged when it is subtracted from row $i$.
 
-By step <1>1, the first row of $B_n$ is $(1,0,\ldots,0)$ and the first column consists of $1$'s. Hence after the row differences, the first column becomes $(1,0,\ldots,0)^T$ while the first row stays fixed.
+By step [](#s1){.pf-ref}, the first row of $B_n$ is $(1,0,\ldots,0)$ and the first column consists of $1$'s. Hence after the row differences, the first column becomes $(1,0,\ldots,0)^T$ while the first row stays fixed.
 
 For $i\geq2$ and $j\geq1$, the new $(i,j)$ entry is
 $$
@@ -122,15 +133,21 @@ $$
 \binom{i'+j'}{i'},
 $$
 which is exactly $A_{n-1}$.
+
 :::
 
-<1>3. For every $n\geq2$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n\geq2$,
 $$
 \Delta_n=\Delta_{n-1}.
 $$
 
-::: {.proof}
-The column and row operations in steps <1>1 and <1>2 preserve determinant. Therefore
+::: pf-proof
+
+The column and row operations in steps [](#s1){.pf-ref} and [](#s2){.pf-ref} preserve determinant. Therefore
 $$
 \Delta_n
 =
@@ -144,32 +161,50 @@ $$
 =
 \Delta_{n-1}.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \Delta_1=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A_1$ is the $1\times1$ matrix
 $$
 \left[\binom{0}{0}\right]=[1].
 $$
+
 :::
 
-<1>5. Therefore, for every $n\geq1$,
+:::
+
+::: {.pf-step #s5}
+
+Therefore, for every $n\geq1$,
 $$
 \boxed{\Delta_n=1}.
 $$
 
-::: {.proof}
-Apply step <1>3 repeatedly until reaching the base case in step <1>4.
+::: pf-proof
+
+Apply step [](#s3){.pf-ref} repeatedly until reaching the base case in step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested determinant.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested determinant.
+
+:::
+
+:::
+
 :::

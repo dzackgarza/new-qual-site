@@ -40,10 +40,15 @@ $$
 F=\{a\in K:\sigma_h(a)=a\text{ for every }h\in G\}.
 $$
 
-<1>1. These maps give an injective homomorphism
+::: pf
+
+::: {.pf-step #s1}
+
+These maps give an injective homomorphism
 $G\longrightarrow\operatorname{Aut}_F(K)$.
 
-::: {.proof}
+::: pf-proof
+
 A permutation of algebraically independent indeterminates extends
 to an automorphism of the polynomial ring and its fraction field.
 On the generators, $\sigma_h\sigma_k(x_g)=x_{hkg}$, so
@@ -53,11 +58,17 @@ $\sigma_h(x_1)=x_h$, and different variables are different elements.
 The fixed elements are closed under addition, subtraction,
 multiplication, and inversion of nonzero elements; hence $F$ is a
 field. Every $\sigma_h$ fixes it by definition.
+
 :::
 
-<1>2. The extension degree satisfies $[K:F]\leq m$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The extension degree satisfies $[K:F]\leq m$.
+
+::: pf-proof
+
 Take any $a_1,\ldots,a_{m+1}\in K$. The homogeneous system
 $$
 \sum_{j=1}^{m+1}\sigma_h(a_j)c_j=0\qquad(h\in G)
@@ -79,12 +90,18 @@ The equation for $h=1$ is now the nontrivial $F$-linear relation
 $\sum_j a_jc_j=0$. Every $m+1$ elements of $K$ are therefore
 linearly dependent over $F$, proving the dimension bound and
 finiteness of the extension.
+
 :::
 
-<1>3. The extension is Galois and its full Galois group is the
+:::
+
+::: pf-step
+
+The extension is Galois and its full Galois group is the
 displayed copy of $G$.
 
-::: {.proof}
+::: pf-proof
+
 For any $a\in K$, let $O_a=\{\sigma_h(a):h\in G\}$, as a set
 without repetitions. The polynomial
 $$
@@ -104,14 +121,20 @@ of simple adjunctions. At an adjunction of degree $e$, an embedding
 of the preceding field has at most $e$ extensions, because the
 new generator must map to a root of the corresponding minimal
 polynomial. Multiplying these bounds along the tower gives $d$.
-Apply this with $d=[K:F]$. Step <1>1 supplies $m$ distinct
-automorphisms and step <1>2 gives
+Apply this with $d=[K:F]$. Step [](#s1){.pf-ref} supplies $m$ distinct
+automorphisms and step [](#s2){.pf-ref} gives
 $$
 m\leq |\operatorname{Aut}_F(K)|\leq [K:F]\leq m.
 $$
 Equality holds throughout. Hence the injective homomorphism of
-step <1>1 is onto, proving $\operatorname{Gal}(K/F)\cong G$.
+step [](#s1){.pf-ref} is onto, proving $\operatorname{Gal}(K/F)\cong G$.
 For the trivial group the construction has $F=K$, so that case
 is included as well.
+
 :::
+
+:::
+
+:::
+
 :::

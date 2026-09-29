@@ -39,8 +39,15 @@ If $f_n \to f$ and $g_n \to g$ in measure, then $f_n g_n \to fg$ in measure.
 :::
 
 ::: {.solution}
-<1>1. Part (a) is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is true.
+
+::: pf-proof
+
 Fix $a<b$. Since $f$ is absolutely continuous, the fundamental theorem of calculus gives
 \[
 f(b)-f(a)=\int_a^b f'(x)\,dx.
@@ -50,10 +57,17 @@ Because $f'=0$ almost everywhere,
 f(b)-f(a)=0.
 \]
 Thus $f(a)=f(b)$ for all $a,b\in\mathbb R$, so $f$ is constant.
+
 :::
 
-<1>2. Part (b) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is true.
+
+::: pf-proof
+
 For a Borel set $E\subseteq X$,
 \[
 \delta_x(E)=
@@ -63,10 +77,17 @@ For a Borel set $E\subseteq X$,
 \end{cases}
 \]
 The measure is finite, hence finite on every compact set. It is inner regular: if $x\in E$, then the compact set $\{x\}\subseteq E$ has measure $1=\delta_x(E)$; if $x\notin E$, then both $E$ and every compact subset of it have measure $0$. Thus $\delta_x$ is a Radon measure.
+
 :::
 
-<1>3. Part (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is true.
+
+::: pf-proof
+
 Weak convergence gives
 \[
 \langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\|x\|^2.
@@ -80,10 +101,17 @@ Therefore
 \end{aligned}
 \]
 using the assumed convergence $\|x_n\|\to\|x\|$. Hence $x_n\to x$ strongly in $H$.
+
 :::
 
-<1>4. Part (d) is false on the infinite-measure space $\mathbb R$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is false on the infinite-measure space $\mathbb R$.
+
+::: pf-proof
+
 Let
 \[
 f_n(x)=f(x)=x,
@@ -105,5 +133,11 @@ m\left(\left\{x:\left|\frac xn\right|>1\right\}\right)
 =\infty.
 \]
 Thus $f_ng_n$ does not converge to $0=fg$ in measure. Hence the statement is false.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -38,24 +38,35 @@ Q(z)\coloneqq
 1+z^2+z^4+z^6+z^8+z^{10}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 (z^2-1)Q(z)=z^{12}-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the finite geometric-series identity
 $$
 (w-1)(1+w+w^2+w^3+w^4+w^5)=w^6-1
 $$
 with $w=z^2$.
+
 :::
 
-<1>2. The zeros of $Q$ are exactly the twelfth roots of unity other than
+:::
+
+::: {.pf-step #s2}
+
+The zeros of $Q$ are exactly the twelfth roots of unity other than
 $1$ and $-1$.
 
-::: {.proof}
-If $Q(z)=0$, step <1>1 gives
+::: pf-proof
+
+If $Q(z)=0$, step [](#s1){.pf-ref} gives
 $$
 z^{12}=1.
 $$
@@ -71,13 +82,18 @@ z^{12}=1
 \qquad\text{and}\qquad
 z\neq\pm1,
 $$
-then $z^2-1\neq0$, and step <1>1 gives
+then $z^2-1\neq0$, and step [](#s1){.pf-ref} gives
 $$
 Q(z)=0.
 $$
+
 :::
 
-<1>3. The poles of
+:::
+
+::: {.pf-step #s3}
+
+The poles of
 $$
 f(z)=\frac1{Q(z)}
 $$
@@ -88,8 +104,9 @@ e^{i\pi/6}
 e^{-i\pi/6}.
 $$
 
-::: {.proof}
-By step <1>2, the poles are
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the poles are
 $$
 e^{ik\pi/6},
 \qquad
@@ -105,19 +122,25 @@ Among the allowed nonzero angles modulo $2\pi$, the smallest absolute angle
 from $0$ is $\pi/6$, attained exactly at $\theta=\pm\pi/6$. Since
 $2-2\cos\theta$ increases with $\abs{\theta}$ on $[0,\pi]$, these are the
 nearest poles to $1$.
+
 :::
 
-<1>4. Their distance from $1$ is
+:::
+
+::: {.pf-step #s4}
+
+Their distance from $1$ is
 $$
 \sqrt{2-\sqrt3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 \cos\frac{\pi}{6}=\frac{\sqrt3}{2},
 $$
-step <1>3 gives
+step [](#s3){.pf-ref} gives
 $$
 \begin{aligned}
 \abs{1-e^{i\pi/6}}^2
@@ -128,24 +151,36 @@ $$
 \end{aligned}
 $$
 Taking the positive square root gives the stated distance.
+
 :::
 
-<1>5. The radius of convergence of the Taylor series of $f$ about $z=1$
+:::
+
+::: {.pf-step #s5}
+
+The radius of convergence of the Taylor series of $f$ about $z=1$
 is
 $$
 \boxed{\sqrt{2-\sqrt3}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A Taylor series of a rational function about a point where it is analytic
 has radius equal to the distance from the center to the nearest pole. Step
-<1>4 computes that distance.
+[](#s4){.pf-ref} computes that distance.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the requested radius in terms of real numbers and square
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested radius in terms of real numbers and square
 roots only.
+
 :::
+
+:::
+
 :::

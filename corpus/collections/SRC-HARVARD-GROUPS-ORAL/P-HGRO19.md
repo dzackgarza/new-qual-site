@@ -35,13 +35,26 @@ n_3\mid4.
 \]
 Thus $n_3=1$ or $4$.
 
-<1>1. If $n_3=1$, then $G$ has a normal subgroup of order $9$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $n_3=1$, then $G$ has a normal subgroup of order $9$.
+
+::: pf-proof
+
 The unique Sylow $3$-subgroup has order $9$ and is normal.
+
 :::
 
-<1>2. If $n_3=4$, then $G$ has a normal subgroup of order $3$ or $9$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $n_3=4$, then $G$ has a normal subgroup of order $3$ or $9$.
+
+::: pf-proof
+
 Let $G$ act by conjugation on its four Sylow $3$-subgroups. This gives a
 homomorphism
 \[
@@ -60,11 +73,24 @@ is $4$ or $12$. Therefore
 |\ker\varphi|=\frac{36}{|\operatorname{im}\varphi|}
 \]
 is respectively $9$ or $3$. The kernel is normal in $G$.
+
 :::
 
-<1>3. Hence every group of order $36$ has a nontrivial normal subgroup of order
-$3$ or $9$.
-::: {.proof}
-Combine <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Hence every group of order $36$ has a nontrivial normal subgroup of order
+$3$ or $9$.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

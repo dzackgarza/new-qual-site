@@ -31,8 +31,15 @@ Hint: You may use induction on $n$ to prove the general formula which you may gu
 :::
 
 ::: {.solution}
-<1>1. Record the jump formula for a piecewise smooth function.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Record the jump formula for a piecewise smooth function.
+
+::: pf-proof
+
 If $h$ is $C^1$ away from $0$ and has one-sided limits at $0$, then its distributional derivative is
 \[
 Dh=h'_{\mathrm{reg}}+[h]_0\,\delta_0,
@@ -48,10 +55,17 @@ Indeed, integrating by parts separately on the two half-lines against a test fun
 -\int h\varphi'
 =\int h'_{\mathrm{reg}}\varphi+[h]_0\varphi(0).
 \]
+
 :::
 
-<1>2. Compute the ordinary derivatives away from the origin and their jumps.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the ordinary derivatives away from the origin and their jumps.
+
+::: pf-proof
+
 For $x>0$,
 \[
 g(x)=f(x),
@@ -87,10 +101,17 @@ Thus the jump is zero for even $m$ and equals
 2f^{(m)}(0)
 \]
 for odd $m$.
+
 :::
 
-<1>3. Iterate the jump formula.
-::: {.proof}
+:::
+
+::: pf-step
+
+Iterate the jump formula.
+
+::: pf-proof
+
 For a piecewise $C^n$ function, repeated use of Step 1 gives
 \[
 D^n g
@@ -129,5 +150,11 @@ and
 \[
 D^3g=\operatorname{sgn}(x)f^{(3)}(|x|)+2f'(0)\delta_0'.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

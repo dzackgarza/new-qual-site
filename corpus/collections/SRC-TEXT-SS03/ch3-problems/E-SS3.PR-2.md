@@ -45,54 +45,124 @@ Then apply the mean value theorem to $u _ { 0 }$ , and make a change of variable
 :::
 
 ::: {.solution}
-<1>1. Let $T(z) = \frac{z_0 - z}{1 - \overline{z_0} z}$ and define $u_0(z) = u(T(z))$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $T(z) = \frac{z_0 - z}{1 - \overline{z_0} z}$ and define $u_0(z) = u(T(z))$.
+
+::: pf-proof
+
 the hint.
+
 :::
 
-<1>2. $T$ is a holomorphic automorphism of the disk with $T(0) = z_0$ and $T(z_0) = 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$T$ is a holomorphic automorphism of the disk with $T(0) = z_0$ and $T(z_0) = 0$.
+
+::: pf-proof
+
 $T$ is a Blaschke factor (an involution of $\mathbb{D}$).
+
 :::
 
-<1>3. $u_0$ is harmonic.
-::: {.proof}
+:::
+
+::: pf-step
+
+$u_0$ is harmonic.
+
+::: pf-proof
+
 $u_0 = u \circ T$ is the composition of a harmonic function with a holomorphic map, which is harmonic.
+
 :::
 
-<1>4. By the mean value theorem (the special case $z_0 = 0$), $u_0(0) = \frac{1}{2\pi}\int_0^{2\pi} u_0(e^{i\theta})\,d\theta$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+By the mean value theorem (the special case $z_0 = 0$), $u_0(0) = \frac{1}{2\pi}\int_0^{2\pi} u_0(e^{i\theta})\,d\theta$.
+
+::: pf-proof
+
 the mean value property of harmonic functions at the origin.
+
 :::
 
-<1>5. $u_0(0) = u(T(0)) = u(z_0)$.
-::: {.proof}
-<1>2.
 :::
 
-<1>6. Hence $u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} u(T(e^{i\theta}))\,d\theta$.
-::: {.proof}
-<1>4 and <1>5.
+::: {.pf-step #s5}
+
+$u_0(0) = u(T(0)) = u(z_0)$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref}.
+
 :::
 
-<1>7. Make the change of variables $e^{i\varphi} = T(e^{i\theta})$; then $d\theta = \frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}\,d\varphi$ (the Jacobian of the Blaschke factor on the circle).
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+Hence $u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} u(T(e^{i\theta}))\,d\theta$.
+
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s7}
+
+Make the change of variables $e^{i\varphi} = T(e^{i\theta})$; then $d\theta = \frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}\,d\varphi$ (the Jacobian of the Blaschke factor on the circle).
+
+::: pf-proof
+
 the derivative of $T$ on the unit circle has modulus $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2}$.
+
 :::
 
-<1>8. Hence
+:::
+
+::: {.pf-step #s8}
+
+Hence
 $$u(z_0) = \frac{1}{2\pi}\int_0^{2\pi} \frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2} u(e^{i\theta})\,d\theta.$$
-::: {.proof}
-<1>6 and <1>7.
+
+::: pf-proof
+
+Steps [](#s6){.pf-ref} and [](#s7){.pf-ref}.
+
 :::
 
-<1>9. For $z_0 = re^{i\varphi}$, $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s9}
+
+For $z_0 = re^{i\varphi}$, $\frac{1 - |z_0|^2}{|e^{i\theta} - z_0|^2} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
+
+::: pf-proof
+
 $|e^{i\theta} - re^{i\varphi}|^2 = 1 - 2r\cos(\theta - \varphi) + r^2$.
+
 :::
 
-<1>10. Q.E.D.
-::: {.proof}
-<1>8 and <1>9.
 :::
+
+::: pf-qed
+
+Steps [](#s8){.pf-ref} and [](#s9){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -41,8 +41,15 @@ b. If $\{O_n\}_{n=1}^\infty$ is a sequence of nonempty open subsets of $X$ such 
 :::
 
 ::: {.solution}
-<1>1. Part (a) is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is true.
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 \[
 \bigcap_{n=1}^\infty F_n=\emptyset.
@@ -70,10 +77,17 @@ Therefore
 \[
 \boxed{\bigcap_{n=1}^\infty F_n\ne\emptyset}.
 \]
+
 :::
 
-<1>2. Part (b) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is false.
+
+::: pf-proof
+
 Take
 \[
 X=[0,1]
@@ -97,5 +111,11 @@ Thus
 \boxed{\bigcap_{n=1}^\infty O_n=\emptyset}.
 \]
 So compactness does not imply the asserted conclusion for decreasing nonempty open sets.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -34,8 +34,15 @@ Prove the following for real $n\times n$ matrices.
 :::
 
 ::: {.solution}
-<1>1. Prove part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a).
+
+::: pf-proof
+
 Assume $A$ is orthogonal and has no eigenvalue $-1$. Then
 $$
 \ker(I+A)=\{0\},
@@ -73,10 +80,17 @@ $$
 S^t=-(I-A)(I+A)^{-1}=-S.
 $$
 Thus $S$ is skew-symmetric.
+
 :::
 
-<1>2. For skew-symmetric $S$, both $I+S$ and $I-S$ are nonsingular.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+For skew-symmetric $S$, both $I+S$ and $I-S$ are nonsingular.
+
+::: pf-proof
+
 Suppose
 $$
 (I+S)x=0.
@@ -97,15 +111,22 @@ $$
 $$
 hence $x=0$. Thus $I+S$ is nonsingular. The same argument with $Sx=x$
 shows that $I-S$ is nonsingular.
+
 :::
 
-<1>3. Prove that $A=(I-S)(I+S)^{-1}$ is orthogonal and has no eigenvalue $-1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that $A=(I-S)(I+S)^{-1}$ is orthogonal and has no eigenvalue $-1$.
+
+::: pf-proof
+
 Let $S^t=-S$ and define
 $$
 A=(I-S)(I+S)^{-1}.
 $$
-By step <1>2 this is well-defined. Taking transposes,
+By step [](#s2){.pf-ref} this is well-defined. Taking transposes,
 $$
 \begin{aligned}
 A^t
@@ -126,10 +147,17 @@ I+A
 =2(I+S)^{-1},
 $$
 which is nonsingular. Therefore $-1$ is not an eigenvalue of $A$.
+
 :::
 
-<1>4. The two formulas are mutual inverses.
-::: {.proof}
+:::
+
+::: pf-step
+
+The two formulas are mutual inverses.
+
+::: pf-proof
+
 Starting from
 $$
 S=(I-A)(I+A)^{-1},
@@ -164,5 +192,11 @@ $$
 Thus the two constructions undo each other. In particular the correspondence
 between orthogonal matrices without eigenvalue $-1$ and skew-symmetric
 matrices is one-to-one.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -42,11 +42,17 @@ P\cong\prod_{i=1}^r W_i^{\,a_i},
 \]
 acting independently on $a_i$ disjoint blocks of size $3^i$.
 
-<1>1. The group $W_i$ is a $3$-subgroup of $S_{3^i}$ of order
+::: pf
+
+::: {.pf-step #s1}
+
+The group $W_i$ is a $3$-subgroup of $S_{3^i}$ of order
 \[
 |W_i|=3^{(3^i-1)/2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Set $W_1=C_3$. Recursively,
 \[
 W_i=W_{i-1}^3\rtimes C_3,
@@ -61,19 +67,33 @@ Solving this recursion gives
 \[
 e_i=1+3+\cdots+3^{i-1}=\frac{3^i-1}{2}.
 \]
+
 :::
 
-<1>2. The displayed product $P$ has order
+:::
+
+::: {.pf-step #s2}
+
+The displayed product $P$ has order
 \[
 3^{\sum_i a_i(3^i-1)/2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The factors act on disjoint blocks, so their product is direct and their orders
-multiply. Apply <1>1 to each of the $a_i$ copies of $W_i$.
+multiply. Apply step [](#s1){.pf-ref} to each of the $a_i$ copies of $W_i$.
+
 :::
 
-<1>3. This exponent equals $v_3(n!)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+This exponent equals $v_3(n!)$.
+
+::: pf-proof
+
 Legendre's formula in digit-sum form gives
 \[
 v_3(n!)=\frac{n-s_3(n)}{3-1},
@@ -87,13 +107,26 @@ Therefore
 v_3(n!)
 =\frac12\sum_i a_i(3^i-1).
 \]
-This is exactly the exponent in <1>2.
+This is exactly the exponent in step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Hence $P$ is a Sylow $3$-subgroup of $S_n$.
-::: {.proof}
-By <1>2--<1>3, $P$ has order equal to the full $3$-part of $|S_n|=n!$.
+:::
+
+::: pf-step
+
+Hence $P$ is a Sylow $3$-subgroup of $S_n$.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $P$ has order equal to the full $3$-part of $|S_n|=n!$.
 Thus it is Sylow. Every Sylow $3$-subgroup is conjugate to such a block-wreath
 product.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,11 +39,17 @@ The splitting field is
 L=\QQ(a,\zeta,b).
 \]
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 \[
 \operatorname{Gal}(L/\QQ)\cong S_3\times C_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 M=\QQ(a,\zeta),
@@ -68,7 +74,6 @@ Both extensions are Galois, so their compositum satisfies
 \cong\operatorname{Gal}(M/\QQ)\times\operatorname{Gal}(N/\QQ)
 \cong S_3\times C_2.
 \]
-:::
 
 Choose generators $\rho,\tau,\epsilon$ by
 \[
@@ -104,7 +109,13 @@ Also put
 i=\frac{\sqrt{-3}}{\sqrt3}\in L.
 \]
 
-<1>2. The complete subgroup list of $G=S_3\times C_2$ is
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The complete subgroup list of $G=S_3\times C_2$ is
 \[
 \begin{array}{c|c|c}
 |H|&H&L^H\\
@@ -121,7 +132,9 @@ i=\frac{\sqrt{-3}}{\sqrt3}\in L.
 12&G&\QQ.
 \end{array}
 \]
-::: {.proof}
+
+::: pf-proof
+
 We first verify that no subgroups are missing.
 
 The involutions of $G$ are
@@ -190,13 +203,26 @@ characters of $S_3\times C_2$. Their fixed fields are respectively
 the last because $\tau\epsilon$ fixes the quotient
 $\sqrt{-3}/\sqrt3=i$. The degree of each field equals the subgroup index, so
 each displayed inclusion is the full fixed field.
+
 :::
 
-<1>3. The table in <1>2 gives all intermediate fields of $L/\QQ$.
-::: {.proof}
-The extension $L/\QQ$ is finite Galois by <1>1. The fundamental theorem of
-Galois theory gives a bijection between its subgroups and its intermediate
-fields via $H\mapsto L^H$. Since <1>2 lists every subgroup and identifies its
-fixed field, it lists every intermediate field exactly once.
 :::
+
+::: pf-step
+
+The table in step [](#s2){.pf-ref} gives all intermediate fields of $L/\QQ$.
+
+::: pf-proof
+
+The extension $L/\QQ$ is finite Galois by step [](#s1){.pf-ref}. The fundamental theorem of
+Galois theory gives a bijection between its subgroups and its intermediate
+fields via $H\mapsto L^H$. Since step [](#s2){.pf-ref} lists every subgroup and identifies its
+fixed field, it lists every intermediate field exactly once.
+
+:::
+
+:::
+
+:::
+
 :::

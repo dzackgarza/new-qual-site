@@ -28,8 +28,15 @@ If $X$ is a path connected space, then $X$ is connected.
 :::
 
 ::: {.solution}
-<1>1. The interval $[0,1]$ is connected.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The interval $[0,1]$ is connected.
+
+::: pf-proof
+
 Suppose instead that
 \[
 [0,1]=U\cup V
@@ -47,28 +54,49 @@ Thus $s\notin U$, so $s\in V$.
 Openness of $V$ gives an interval around $s$ contained in $V$ relative to $[0,1]$.
 By the definition of supremum, there is a point of $U\cap[u,v]$ arbitrarily close to $s$ from below, hence inside that interval, contradicting $U\cap V=\varnothing$.
 Therefore no such separation exists.
+
 :::
 
-<1>2. Suppose for contradiction that the path-connected space $X$ is disconnected.
+:::
+
+::: pf-step
+
+Suppose for contradiction that the path-connected space $X$ is disconnected.
 Then there are disjoint nonempty open sets $U,V\subseteq X$ with
 \[
 X=U\cup V.
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of disconnectedness.
+
 :::
 
-<1>3. Choose $x\in U$ and $y\in V$, and let
+:::
+
+::: pf-step
+
+Choose $x\in U$ and $y\in V$, and let
 \[
 \gamma:[0,1]\to X
 \]
 be a path from $x$ to $y$.
-::: {.proof}
+
+::: pf-proof
+
 The sets $U$ and $V$ are nonempty, and path connectedness supplies a path between any two points of $X$.
+
 :::
 
-<1>4. The sets $\gamma^{-1}(U)$ and $\gamma^{-1}(V)$ form a separation of $[0,1]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The sets $\gamma^{-1}(U)$ and $\gamma^{-1}(V)$ form a separation of $[0,1]$.
+
+::: pf-proof
+
 They are open because $\gamma$ is continuous.
 They are disjoint because $U$ and $V$ are disjoint, and together they cover $[0,1]$ because $U\cup V=X$.
 They are both nonempty since
@@ -77,10 +105,23 @@ They are both nonempty since
 \qquad
 1\in\gamma^{-1}(V).
 \]
+
 :::
 
-<1>5. This contradicts <1>1, so $X$ is connected.
-::: {.proof}
-The separation in <1>4 cannot exist because $[0,1]$ is connected.
 :::
+
+::: pf-step
+
+This contradicts step [](#s1){.pf-ref}, so $X$ is connected.
+
+::: pf-proof
+
+The separation in step [](#s4){.pf-ref} cannot exist because $[0,1]$ is connected.
+
+:::
+
+:::
+
+:::
+
 :::

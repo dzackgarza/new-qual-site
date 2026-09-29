@@ -58,8 +58,14 @@ corresponding to the cyclic subgroup
 \]
 Choose the base vertex $\widetilde r_0$ corresponding to this subgroup.
 
-<1>1. The loop representing $y$ lifts to a closed reduced edge path in $R_y$ whose image is an embedded circle $C\subseteq R_y$ through $\widetilde r_0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The loop representing $y$ lifts to a closed reduced edge path in $R_y$ whose image is an embedded circle $C\subseteq R_y$ through $\widetilde r_0$.
+
+::: pf-proof
+
 Let $T\to R$ be the universal covering tree.
 Because $y$ is cyclically reduced, the geodesic from the identity vertex to $y$ lies on the invariant axis $A$ of the deck transformation $y$.
 The cover $R_y$ is the quotient
@@ -72,19 +78,31 @@ C=A/\langle y\rangle
 \]
 is a circle embedded in $R_y$: if two points of the axis have the same image in the quotient, they differ by a power of $y$, so the only identifications on $A$ are precisely those defining the circle quotient.
 Since the identity vertex lies on $A$, its image $\widetilde r_0$ lies on $C$, and traversing $C$ once represents $y$.
+
 :::
 
-<1>2. Choose a finite connected subgraph
+:::
+
+::: pf-step
+
+Choose a finite connected subgraph
 \[
 Y\subseteq R_y
 \]
 containing $C$.
-::: {.proof}
+
+::: pf-proof
+
 The embedded circle $C$ is a finite edge circuit because it is the quotient of one finite translation segment of the axis.
 Thus we may take $Y=C$, or enlarge it by finitely many edges if desired.
+
 :::
 
-<1>3. By Exercise 10, $Y$ is contained in a finite-sheeted covering
+:::
+
+::: pf-step
+
+By Exercise 10, $Y$ is contained in a finite-sheeted covering
 \[
 q:Z\to R
 \]
@@ -94,14 +112,23 @@ Let
 H'=q_*\pi_1(Z,\widetilde r_0).
 \]
 Then $H'$ has finite index in $F$ and $y\in H'$.
-::: {.proof}
+
+::: pf-proof
+
 Exercise 10 gives a finite covering extending the labeled graph $Y$.
 Since the circle $C\subseteq Y\subseteq Z$ is a closed lift of the loop $y$ at $\widetilde r_0$, the class $y$ belongs to the subgroup corresponding to the cover.
 Finite-sheetedness gives $[F:H']<\infty$.
+
 :::
 
-<1>4. The element $y$ is primitive in $H'$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The element $y$ is primitive in $H'$.
+
+::: pf-proof
+
 The finite covering graph $Z$ contains the subgraph
 \[
 C\cong S^1
@@ -109,14 +136,27 @@ C\cong S^1
 through the basepoint, and the loop $C$ represents $y$.
 By Exercise 4, the fundamental group $\pi_1(Z,\widetilde r_0)=H'$ has a free basis containing the element represented by $C$.
 Thus $y$ is one member of a basis of $H'$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{H=uH'u^{-1}\le F}
 \]
 has finite index and has $x=uyu^{-1}$ as a basis element.
-::: {.proof}
+
+::: pf-proof
+
 Conjugation by $u$ is an isomorphism $H'\to H$ carrying any free basis of $H'$ containing $y$ to a free basis of $H$ containing $uyu^{-1}=x$.
+
 :::
+
+:::
+
+:::
+
 :::

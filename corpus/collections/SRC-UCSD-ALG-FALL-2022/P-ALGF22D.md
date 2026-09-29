@@ -35,8 +35,14 @@ Let
 G=\operatorname{Gal}(K/\mathbb Q).
 \]
 
-<1>1. The group $G$ acts transitively on the three roots of $f$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The group $G$ acts transitively on the three roots of $f$.
+
+::: pf-proof
+
 Because $f$ is irreducible over $\mathbb Q$ and $K$ is its splitting field, any two roots of $f$ are conjugate over $\mathbb Q$.
 Equivalently, for any two roots $\alpha$ and $\beta$, there is a $\mathbb Q$-embedding
 \[
@@ -45,21 +51,35 @@ Equivalently, for any two roots $\alpha$ and $\beta$, there is a $\mathbb Q$-emb
 sending $\alpha$ to $\beta$.
 Since $K/\mathbb Q$ is normal, this embedding extends to an automorphism of $K$.
 Thus $G$ acts transitively on the roots.
+
 :::
 
-<1>2. Via its action on the roots, $G$ embeds as a transitive subgroup of $S_3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Via its action on the roots, $G$ embeds as a transitive subgroup of $S_3$.
+
+::: pf-proof
+
 An automorphism of the splitting field is determined by its action on the roots of $f$, since those roots generate $K$.
 Hence the permutation representation
 \[
 G\longrightarrow S_3
 \]
 is injective.
-By <1>1, its image is transitive.
+By step [](#s1){.pf-ref}, its image is transitive.
+
 :::
 
-<1>3. Complex conjugation restricts to an element of $G$ acting as a transposition on the roots.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Complex conjugation restricts to an element of $G$ acting as a transposition on the roots.
+
+::: pf-proof
+
 The coefficients of $f$ are rational, hence real.
 Therefore complex conjugation preserves the set of roots and preserves the splitting field $K$.
 It fixes $\mathbb Q$, so its restriction to $K$ lies in $G$.
@@ -68,16 +88,29 @@ By hypothesis, $f$ has exactly one real root.
 The other two roots are nonreal and, because the coefficients are real, are complex conjugates of one another.
 Thus complex conjugation fixes the unique real root and swaps the two nonreal roots.
 Its permutation on the three roots is therefore a transposition.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 G\cong S_3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The transitive subgroups of $S_3$ are $A_3\cong C_3$ and $S_3$ itself.
-By <1>3, the image of $G$ contains a transposition, which does not lie in $A_3$.
+By step [](#s3){.pf-ref}, the image of $G$ contains a transposition, which does not lie in $A_3$.
 Hence the image cannot be $A_3$.
 Therefore it is all of $S_3$.
+
 :::
+
+:::
+
+:::
+
 :::

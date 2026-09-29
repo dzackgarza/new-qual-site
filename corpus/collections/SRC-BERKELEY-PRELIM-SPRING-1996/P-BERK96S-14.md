@@ -39,7 +39,11 @@ $$
 M\coloneqq\max_{0\leq t\leq1}\abs{f(t)}.
 $$
 
-<1>1. For every $R>0$, the series
+::: pf
+
+::: {.pf-step #s1}
+
+For every $R>0$, the series
 $$
 e^{tz^2}
 =
@@ -52,7 +56,8 @@ $$
 \abs{z}\leq R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For such $t$ and $z$,
 $$
 \abs{\frac{t^n z^{2n}}{n!}}
@@ -66,9 +71,14 @@ $$
 e^{R^2},
 $$
 the Weierstrass $M$-test gives uniform convergence.
+
 :::
 
-<1>2. For every $z\in\CC$,
+:::
+
+::: {.pf-step #s2}
+
+For every $z\in\CC$,
 $$
 g(z)
 =
@@ -77,8 +87,9 @@ g(z)
 c_n\coloneqq\frac1{n!}\int_0^1 f(t)t^n\,dt.
 $$
 
-::: {.proof}
-Fix $R>\abs{z}$. By step <1>1, the exponential series converges uniformly
+::: pf-proof
+
+Fix $R>\abs{z}$. By step [](#s1){.pf-ref}, the exponential series converges uniformly
 in $t\in[0,1]$ for this $z$. Multiplication by the bounded function $f$
 preserves uniform convergence, so termwise integration gives
 $$
@@ -96,11 +107,17 @@ f(t)
 \right)z^{2n}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The power series in step <1>2 has infinite radius of convergence.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The power series in step [](#s2){.pf-ref} has infinite radius of convergence.
+
+::: pf-proof
+
 For every $n\geq0$,
 $$
 \abs{c_n}
@@ -122,18 +139,30 @@ Me^{\abs{z}^2}<\infty.
 $$
 Hence the series converges everywhere in $\CC$ and defines an entire
 function.
+
 :::
 
-<1>4. The function $g$ is entire on $\CC$.
-
-::: {.proof}
-Step <1>2 identifies $g$ at every complex number with the everywhere
-convergent power series from step <1>3. Thus $g$ is entire.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Step <1>4 is the required conclusion.
+The function $g$ is entire on $\CC$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} identifies $g$ at every complex number with the everywhere
+convergent power series from step [](#s3){.pf-ref}. Thus $g$ is entire.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

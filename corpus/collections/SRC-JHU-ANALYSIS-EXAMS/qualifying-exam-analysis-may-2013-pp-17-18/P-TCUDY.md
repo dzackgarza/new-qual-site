@@ -40,8 +40,15 @@ $$(f_{n_j}, g) \to (f, g) \quad \text{for all } g \in L^2(\mathbb{R}^d).$$
 :::
 
 ::: {.solution}
-<1>1. Prove part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a).
+
+::: pf-proof
+
 The space $L^2(\mathbb R^d)$ is a Hilbert space, hence reflexive. Therefore its closed unit ball is weakly compact. By the Eberlein--Smulian theorem, weak compactness in a Banach space is equivalent to weak sequential compactness.
 
 Since every $f_n$ lies in the unit sphere, in particular in the closed unit ball, there is a subsequence $(f_{n_j})$ and some $f\in L^2(\mathbb R^d)$ such that
@@ -53,10 +60,17 @@ Equivalently,
 (f_{n_j},g)\longrightarrow(f,g)
 \qquad\text{for every }g\in L^2(\mathbb R^d).
 \]
+
 :::
 
-<1>2. Prove part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove part (b).
+
+::: pf-proof
+
 Weak convergence gives
 \[
 (f_n,f)\longrightarrow(f,f)=\|f\|_2^2.
@@ -81,5 +95,11 @@ Therefore
 \[
 \boxed{\|f_n-f\|_2\to0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

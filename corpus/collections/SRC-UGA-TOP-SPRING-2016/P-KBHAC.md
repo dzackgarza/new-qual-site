@@ -36,12 +36,18 @@ Explain why there are no repetitions on your list.
 Use the standard convention that a surface is connected.
 Write $\Sigma_{g,b}$ for the compact orientable surface of genus $g$ with $b$ boundary components, and $N_{k,b}$ for the compact nonorientable surface of nonorientable genus $k$ with $b$ boundary components.
 
-<1>1. The orientable surfaces with Euler characteristic $-1$ are exactly
+::: pf
+
+::: {.pf-step #s1}
+
+The orientable surfaces with Euler characteristic $-1$ are exactly
 \[
 \boxed{\Sigma_{0,3},\qquad \Sigma_{1,1}}.
 \]
 Thus they are a pair of pants and a torus with one open disk removed.
-::: {.proof}
+
+::: pf-proof
+
 The classification theorem for compact connected orientable surfaces gives
 \[
 \chi(\Sigma_{g,b})=2-2g-b,
@@ -55,14 +61,21 @@ Its only solutions in nonnegative integers are
 \[
 (g,b)=(0,3),\ (1,1).
 \]
+
 :::
 
-<1>2. The nonorientable surfaces with Euler characteristic $-1$ are exactly
+:::
+
+::: {.pf-step #s2}
+
+The nonorientable surfaces with Euler characteristic $-1$ are exactly
 \[
 \boxed{N_{1,2},\qquad N_{2,1},\qquad N_{3,0}}.
 \]
 Equivalently, these are a projective plane with two open disks removed, a Klein bottle with one open disk removed, and the closed connected sum of three projective planes.
-::: {.proof}
+
+::: pf-proof
+
 The classification theorem for compact connected nonorientable surfaces gives
 \[
 \chi(N_{k,b})=2-k-b,
@@ -77,15 +90,28 @@ The only solutions are
 (k,b)=(1,2),\ (2,1),\ (3,0).
 \]
 Since $N_{2,0}$ is the Klein bottle, $N_{2,1}$ is a Klein bottle with one open disk removed.
+
 :::
 
-<1>3. The five surfaces in <1>1 and <1>2 form the complete list without repetitions.
-::: {.proof}
+:::
+
+::: pf-step
+
+The five surfaces in steps [](#s1){.pf-ref} and [](#s2){.pf-ref} form the complete list without repetitions.
+
+::: pf-proof
+
 Every compact connected surface is either orientable or nonorientable, and the classification theorem places it in exactly one of the forms $\Sigma_{g,b}$ or $N_{k,b}$ used above.
-Steps <1>1 and <1>2 exhaust every integer solution of $\chi=-1$ in the two cases.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} exhaust every integer solution of $\chi=-1$ in the two cases.
 
 There can be no repetition between the two lists because orientability is a homeomorphism invariant.
 Within either list, the ordered data consisting of genus and number of boundary components are classification invariants, and the displayed parameter pairs are distinct.
 Hence no two listed surfaces are homeomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

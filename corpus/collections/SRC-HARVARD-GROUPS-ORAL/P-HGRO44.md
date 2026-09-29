@@ -40,9 +40,14 @@ the identity can fix two distinct points, and the action
 is faithful. A fixed-point-free element is also called a
 derangement. We use the axiom of choice for infinite cardinalities.
 
-<1>1. If $X$ is finite of size $n\geq2$, then $|K|=n$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $X$ is finite of size $n\geq2$, then $|K|=n$.
+
+::: pf-proof
+
 Fix distinct $x,y\in X$. Sharp double transitivity makes
 $$
 G\longrightarrow\{(a,b)\in X^2:a\ne b\},
@@ -62,12 +67,18 @@ $$
 |K|=n(n-1)-n(n-2)=n.
 $$
 This includes $n=2$, when every point stabilizer is trivial.
+
 :::
 
-<1>2. Each pair of distinct points has a unique swapping
+:::
+
+::: {.pf-step #s2}
+
+Each pair of distinct points has a unique swapping
 involution, and each point stabilizer contains at most one involution.
 
-::: {.proof}
+::: pf-proof
+
 For distinct $x,y$, the unique element swapping $x,y$
 has square fixing both and is not the identity. It is
 therefore an involution, uniquely determined by that pair.
@@ -81,23 +92,35 @@ swaps $y,jy$. By uniqueness of that swap it equals $j$.
 Since $j$ fixes $x$, the involution $i$ fixes $gx$.
 It already fixes $x$, so $gx=x$; otherwise it would fix
 two points. Now $g$ fixes both $x,y$, so $g=1$ and $i=j$.
+
 :::
 
-<1>3. A product of two distinct involutions is fixed-point-free.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+A product of two distinct involutions is fixed-point-free.
+
+::: pf-proof
+
 Let $i,j$ be involutions, and suppose $ij$ fixes $x$.
 Then $jx=ix$. If this common point is $x$, both involutions
-belong to $G_x$ and are equal by step <1>2. Otherwise
+belong to $G_x$ and are equal by step [](#s2){.pf-ref}. Otherwise
 both swap $x$ with the same distinct point, and uniqueness
 of the swap again gives $i=j$. Thus for $i\ne j$ their
 product fixes no point. In particular, if $J$ is the
 set of involutions and $i\in J$, then $iJ\subseteq K$.
+
 :::
 
-<1>4. If $X$ is infinite, then $|K|=|X|$ as well.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+If $X$ is infinite, then $|K|=|X|$ as well.
+
+::: pf-proof
+
 Deleting one point from an infinite set does not change
 its cardinality: choose a sequence of distinct points
 starting at that point, shift along the sequence, and
@@ -105,21 +128,27 @@ fix every point outside it. By Hessenberg's theorem, an
 infinite set $X$ satisfies $|X\times X|=|X|$.
 
 Now fix $x\in X$ and an involution $i$, which exists by
-step <1>2. The swaps of $x$ with each $y\ne x$ give an
+step [](#s2){.pf-ref}. The swaps of $x$ with each $y\ne x$ give an
 injection $X\setminus\{x\}\to J$. Multiplication by $i$
-is injective on $J$ and takes it into $K$ by step <1>3.
-The ordered-pair map in step <1>1 is a bijection even
+is injective on $J$ and takes it into $K$ by step [](#s3){.pf-ref}.
+The ordered-pair map in step [](#s1){.pf-ref} is a bijection even
 when $X$ is infinite. We therefore have
 $$
 |X|=|X\setminus\{x\}|\leq |J|=|iJ|
 \leq |K|\leq |G|\leq |X^2|=|X|.
 $$
 Hence $|K|=|X|$.
+
 :::
 
-<1>5. When $X$ is finite, the set $K$ is a normal subgroup.
+:::
 
-::: {.proof}
+::: pf-step
+
+When $X$ is finite, the set $K$ is a normal subgroup.
+
+::: pf-proof
+
 The set is closed under inverses, because an element
 and its inverse have the same fixed points. It is
 preserved by conjugation, because conjugation carries
@@ -132,36 +161,42 @@ Its number of fixed points has the same parity as $n$
 and is at most one, so it has none. For any $x$, the
 map $J\to X\setminus\{x\}$, $j\mapsto jx$, is bijective:
 its inverse sends $y$ to the unique swap of $x,y$.
-Hence $|J|=n-1$. Step <1>1 says that there are exactly
+Hence $|J|=n-1$. Step [](#s1){.pf-ref} says that there are exactly
 $n-1$ derangements, so $K=\{1\}\cup J$. A product
-of distinct involutions belongs to $K$ by step <1>3,
+of distinct involutions belongs to $K$ by step [](#s3){.pf-ref},
 and a square of an involution is one. Thus $K$ is closed.
 
 Suppose instead that $n$ is odd. Every involution has
 exactly one fixed point by the same parity argument.
 There is an involution fixing each point: conjugate
 any involution by an element taking its fixed point
-to the desired point. Step <1>2 gives uniqueness.
+to the desired point. Step [](#s2){.pf-ref} gives uniqueness.
 Consequently $|J|=n$. For a fixed $i\in J$, the subset
 $iJ\subseteq K$ has $n$ elements and hence equals $K$
-by step <1>1. If $a=ij$ and $b=ik$ belong to $K$,
+by step [](#s1){.pf-ref}. If $a=ij$ and $b=ik$ belong to $K$,
 with $j,k\in J$, then
 $$
 ab=ijik=(iji)k.
 $$
 The element $iji$ is an involution, so this product
-is either one or a derangement by step <1>3. Therefore
+is either one or a derangement by step [](#s3){.pf-ref}. Therefore
 $ab\in K$. Closure follows in both parity cases.
 
 Thus $K$ is a subgroup, and its conjugation invariance
 makes it normal.
+
 :::
 
-<1>6. Whenever $K$ is a subgroup, it acts regularly on $X$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Whenever $K$ is a subgroup, it acts regularly on $X$.
+
+::: pf-proof
+
 The set $K$ is conjugation invariant as above, so such
-a subgroup is normal. Steps <1>1 and <1>4 imply
+a subgroup is normal. Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} imply
 $|K|=|X|\geq2$, hence $K$ contains a nonidentity element.
 For fixed $x$, the orbit $Kx$ contains a point other
 than $x$, since every nonidentity element of $K$ is
@@ -175,5 +210,11 @@ If $kx=k'x$ for $k,k'\in K$, then $(k')^{-1}k\in K$
 fixes $x$, forcing $(k')^{-1}k=1$. Thus the orbit map
 $K\to X$ is both surjective and injective, which is
 regularity and gives the stated bijection.
+
 :::
+
+:::
+
+:::
+
 :::

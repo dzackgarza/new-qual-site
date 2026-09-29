@@ -37,15 +37,29 @@ Show that a group $G$ is abelian if and only if, in every triplet of elements of
 :::
 
 ::: {.solution}
-<1>1. If $G$ is abelian, then every triplet in $G$ contains two commuting elements.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $G$ is abelian, then every triplet in $G$ contains two commuting elements.
+
+::: pf-proof
+
 If $G$ is abelian, every two elements of $G$ commute.
 Hence every triplet has, in particular, a commuting pair.
+
 :::
 
-<1>2. Conversely, suppose every triplet in $G$ contains two commuting elements.
+:::
+
+::: {.pf-step #s2}
+
+Conversely, suppose every triplet in $G$ contains two commuting elements.
 Then $G$ is abelian.
-::: {.proof}
+
+::: pf-proof
+
 Let $x,y\in G$ be arbitrary and consider the triplet
 \[
 x,\qquad y,\qquad xy.
@@ -68,10 +82,23 @@ Thus $yxy=xy^2$, and right cancellation by $y$ gives $yx=xy$.
 
 In every case, $x$ and $y$ commute.
 Since $x$ and $y$ were arbitrary, $G$ is abelian.
+
 :::
 
-<1>3. Therefore the two conditions are equivalent.
-::: {.proof}
-This follows from <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Therefore the two conditions are equivalent.
+
+::: pf-proof
+
+This follows from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

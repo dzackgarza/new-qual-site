@@ -35,14 +35,19 @@ $$
 p(z)=z^7-4z^3-1.
 $$
 
-<1>1. On the unit circle,
+::: pf
+
+::: {.pf-step #s1}
+
+On the unit circle,
 $$
 \abs{z^7-1}
 <
 \abs{-4z^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}=1$, then
 $$
 \abs{z^7-1}
@@ -60,34 +65,52 @@ $$
 4.
 $$
 Hence the strict inequality holds.
+
 :::
 
-<1>2. The polynomial $p$ has exactly three zeros in the open unit disk,
+:::
+
+::: {.pf-step #s2}
+
+The polynomial $p$ has exactly three zeros in the open unit disk,
 counting multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 p(z)=-4z^3+(z^7-1).
 $$
-By step <1>1, Rouché's theorem implies that $p$ and $-4z^3$ have the same
+By step [](#s1){.pf-ref}, Rouché's theorem implies that $p$ and $-4z^3$ have the same
 number of zeros in $\abs{z}<1$, counting multiplicity. The polynomial
 $-4z^3$ has exactly three zeros there, all at $z=0$ counted with
 multiplicity.
+
 :::
 
-<1>3. The answer is
+:::
+
+::: {.pf-step #s3}
+
+The answer is
 $$
 \boxed{3}.
 $$
 
-::: {.proof}
-This is step <1>2.
+::: pf-proof
+
+This is step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested number of roots.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested number of roots.
+
+:::
+
+:::
+
 :::

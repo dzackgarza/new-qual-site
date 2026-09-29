@@ -31,10 +31,16 @@ Prove that $(\QQ,+)$ is not a free abelian group, i.e. is not isomorphic to a co
 [Hint: show that $\Hom(\QQ,\ZZ) = \{0\}$, but that $\Hom(G,\ZZ)$ is not zero if $G$ is free abelian.]
 :::
 
-
 ::: {.solution}
-<1>1. Every group homomorphism $\mathbb Q\to\mathbb Z$ is zero.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every group homomorphism $\mathbb Q\to\mathbb Z$ is zero.
+
+::: pf-proof
+
 Let
 $$
 f:\mathbb Q\longrightarrow\mathbb Z
@@ -70,10 +76,17 @@ Therefore
 $$
 \boxed{\operatorname{Hom}(\mathbb Q,\mathbb Z)=0.}
 $$
+
 :::
 
-<1>2. Every nonzero free abelian group admits a nonzero homomorphism to $\mathbb Z$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every nonzero free abelian group admits a nonzero homomorphism to $\mathbb Z$.
+
+::: pf-proof
+
 Let
 $$
 G=\bigoplus_{i\in I}\mathbb Z e_i
@@ -98,18 +111,31 @@ G\ne0\text{ free abelian}
 \operatorname{Hom}(G,\mathbb Z)\ne0.
 $$
 This works for finite or infinite bases alike.
+
 :::
 
-<1>3. Conclude that $(\mathbb Q,+)$ is not free abelian.
-::: {.proof}
-The group $\mathbb Q$ is nonzero. If it were free abelian, step <1>2 would
+:::
+
+::: pf-step
+
+Conclude that $(\mathbb Q,+)$ is not free abelian.
+
+::: pf-proof
+
+The group $\mathbb Q$ is nonzero. If it were free abelian, step [](#s2){.pf-ref} would
 give a nonzero homomorphism
 $$
 \mathbb Q\longrightarrow\mathbb Z,
 $$
-contradicting step <1>1. Therefore
+contradicting step [](#s1){.pf-ref}. Therefore
 $$
 \boxed{(\mathbb Q,+)\text{ is not a free abelian group}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

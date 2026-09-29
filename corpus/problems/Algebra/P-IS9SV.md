@@ -32,37 +32,69 @@ makes $A$ into a left module over the endomorphism ring $\Endo_R(A)$.
 ::: {.solution}
 Write $f\cdot a=f(a)$.
 
-<1>1. The action is additive in the $A$-variable.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The action is additive in the $A$-variable.
+
+::: pf-proof
+
 For $a,b\in A$,
 \[
 f\cdot(a+b)=f(a+b)=f(a)+f(b)=f\cdot a+f\cdot b,
 \]
 because $f$ is $R$-linear.
+
 :::
 
-<1>2. The action is additive in the scalar variable.
-::: {.proof}
+:::
+
+::: pf-step
+
+The action is additive in the scalar variable.
+
+::: pf-proof
+
 For $f,g\in\Endo_R(A)$,
 \[
 (f+g)\cdot a=(f+g)(a)=f(a)+g(a)=f\cdot a+g\cdot a.
 \]
+
 :::
 
-<1>3. Multiplication in $\Endo_R(A)$ is compatible with the action.
-::: {.proof}
+:::
+
+::: pf-step
+
+Multiplication in $\Endo_R(A)$ is compatible with the action.
+
+::: pf-proof
+
 The ring multiplication is composition, so
 \[
 (fg)\cdot a=(f\circ g)(a)=f(g(a))=f\cdot(g\cdot a).
 \]
+
 :::
 
-<1>4. The identity endomorphism acts as the identity.
-::: {.proof}
+:::
+
+::: pf-step
+
+The identity endomorphism acts as the identity.
+
+::: pf-proof
+
 The multiplicative identity of $\Endo_R(A)$ is $\id_A$, and
 \[
 \id_A\cdot a=\id_A(a)=a.
 \]
+
+:::
+
+:::
+
 :::
 
 Therefore $A$ is a left $\Endo_R(A)$-module under evaluation.

@@ -49,29 +49,59 @@ where the integral denotes the usual integral of functions of two variables, wit
 :::
 
 ::: {.solution}
-<1>1. If $f$ is $C^2$ and $\int_C f\,dz=0$ for every circle $C$, then $f$ is holomorphic.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $f$ is $C^2$ and $\int_C f\,dz=0$ for every circle $C$, then $f$ is holomorphic.
+
+::: pf-proof
+
 Near $z_0$ write $f(z)=f(z_0)+a(z-z_0)+b\,\overline{(z-z_0)}+O(|z-z_0|^2)$ with $b=\partial f/\partial\overline z(z_0)$. On $\abs{z-z_0}=r$ the constant and $a(z-z_0)$ integrate to $0$, the error term integrates to $O(r^3)$, and $\int_{|z-z_0|=r}\overline{(z-z_0)}\,dz=2\pi i r^2$. Hence $0=2\pi i b r^2+O(r^3)$, so $b=0$. As $z_0$ is arbitrary, $\partial f/\partial\overline z=0$ and $f$ is holomorphic.
+
 :::
 
-<1>2. (a) If $f$ is continuous and $\int_C f\,dz=0$ for every circle $C$, then $f$ is holomorphic.
-
-::: {.proof}
-With $\varphi_\epsilon$ as in the hint, $f_\epsilon(z)=\int_{\mathbb R^2}f(z-w)\varphi_\epsilon(w)\,dV(w)$ is smooth, and $f_\epsilon\to f$ uniformly on compact sets. For a circle $C$, Fubini's theorem gives $\int_C f_\epsilon\,dz=\int_{\mathbb R^2}\bigl(\int_{C-w}f\,dz\bigr)\varphi_\epsilon(w)\,dV(w)=0$, since $C-w$ is again a circle. By step <1>1 each $f_\epsilon$ is holomorphic, and a locally uniform limit of holomorphic functions is holomorphic.
 :::
 
-<1>3. (b) If $\int_\gamma f\,dz=0$ for all translates and dilates $\gamma$ of a toy contour $\Gamma$, then $f$ is holomorphic.
+::: {.pf-step #s2}
 
-::: {.proof}
-Since $\mathcal F$ is closed under translation, the Fubini argument of step <1>2 shows that each $f_\epsilon$ also satisfies $\int_\gamma f_\epsilon\,dz=0$ for all $\gamma\in\mathcal F$; so, as in step <1>2, it suffices to treat smooth $f$. For smooth $f$, Green's theorem on the interior $U$ of $\Gamma$, which has positive area $\abs U$, gives for $\gamma=z_0+\delta\Gamma$
+(a) If $f$ is continuous and $\int_C f\,dz=0$ for every circle $C$, then $f$ is holomorphic.
+
+::: pf-proof
+
+With $\varphi_\epsilon$ as in the hint, $f_\epsilon(z)=\int_{\mathbb R^2}f(z-w)\varphi_\epsilon(w)\,dV(w)$ is smooth, and $f_\epsilon\to f$ uniformly on compact sets. For a circle $C$, Fubini's theorem gives $\int_C f_\epsilon\,dz=\int_{\mathbb R^2}\bigl(\int_{C-w}f\,dz\bigr)\varphi_\epsilon(w)\,dV(w)=0$, since $C-w$ is again a circle. By step [](#s1){.pf-ref} each $f_\epsilon$ is holomorphic, and a locally uniform limit of holomorphic functions is holomorphic.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+(b) If $\int_\gamma f\,dz=0$ for all translates and dilates $\gamma$ of a toy contour $\Gamma$, then $f$ is holomorphic.
+
+::: pf-proof
+
+Since $\mathcal F$ is closed under translation, the Fubini argument of step [](#s2){.pf-ref} shows that each $f_\epsilon$ also satisfies $\int_\gamma f_\epsilon\,dz=0$ for all $\gamma\in\mathcal F$; so, as in step [](#s2){.pf-ref}, it suffices to treat smooth $f$. For smooth $f$, Green's theorem on the interior $U$ of $\Gamma$, which has positive area $\abs U$, gives for $\gamma=z_0+\delta\Gamma$
 $$0=\int_\gamma f\,dz=\pm2i\iint_{z_0+\delta U}\frac{\partial f}{\partial\overline z}\,dA=\pm2i\,\delta^2\iint_U\frac{\partial f}{\partial\overline z}(z_0+\delta w)\,dA(w),$$
 the sign depending on the orientation of $\Gamma$. Dividing by $\delta^2$ and letting $\delta\to0$ gives $\abs U\,\frac{\partial f}{\partial\overline z}(z_0)=0$. Hence $\partial f/\partial\overline z=0$ everywhere and $f$ is holomorphic.
+
 :::
 
-<1>4. Morera's theorem holds when $\int_T f\,dz=0$ is assumed only for equilateral triangles $T$.
-
-::: {.proof}
-Take $\Gamma$ to be an equilateral triangle; then $\mathcal F$ consists of the equilateral triangles with the orientation of $\Gamma$, and step <1>3 applies.
 :::
+
+::: pf-step
+
+Morera's theorem holds when $\int_T f\,dz=0$ is assumed only for equilateral triangles $T$.
+
+::: pf-proof
+
+Take $\Gamma$ to be an equilateral triangle; then $\mathcal F$ consists of the equilateral triangles with the orientation of $\Gamma$, and step [](#s3){.pf-ref} applies.
+
+:::
+
+:::
+
+:::
+
 :::

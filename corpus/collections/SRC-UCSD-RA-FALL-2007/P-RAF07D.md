@@ -31,10 +31,16 @@ Let $X$ be a normed space and $X^*$ its dual space.
 (b) State and prove Alaoglu's Theorem.
 :::
 
-
 ::: {.solution}
-<1>1. Define the weak and weak* topologies on $X^*$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Define the weak and weak* topologies on $X^*$.
+
+::: pf-proof
+
 The weak topology on $X^*$ is
 \[
 \sigma(X^*,X^{**}),
@@ -65,10 +71,17 @@ is continuous. Thus
 \quad\text{for every }x\in X.
 \]
 Because the canonical embedding $X\hookrightarrow X^{**}$ supplies only some of the weak test functionals, the weak* topology is no stronger than the weak topology.
+
 :::
 
-<1>2. State Banach--Alaoglu.
-::: {.proof}
+:::
+
+::: pf-step
+
+State Banach--Alaoglu.
+
+::: pf-proof
+
 **Banach--Alaoglu theorem.** The closed unit ball
 \[
 B_{X^*}:=\{\phi\in X^*: \|\phi\|\le1\}
@@ -76,10 +89,17 @@ B_{X^*}:=\{\phi\in X^*: \|\phi\|\le1\}
 is compact in the weak* topology $\sigma(X^*,X)$.
 
 More generally, every norm-closed ball in $X^*$ is weak* compact.
+
 :::
 
-<1>3. Embed the dual unit ball into a compact product.
-::: {.proof}
+:::
+
+::: pf-step
+
+Embed the dual unit ball into a compact product.
+
+::: pf-proof
+
 Let $\mathbb K$ denote the scalar field. For each $x\in X$, set
 \[
 D_x:=\{z\in\mathbb K:|z|\le\|x\|\}.
@@ -99,10 +119,17 @@ J(\phi)=(\phi(x))_{x\in X}.
 Since $|\phi(x)|\le\|\phi\|\|x\|\le\|x\|$, this is well defined. It is injective because a linear functional is determined by all its values on $X$.
 
 The product topology restricted to $J(B_{X^*})$ is exactly the weak* topology: the coordinate maps are precisely the evaluations $\phi\mapsto\phi(x)$.
+
 :::
 
-<1>4. Show that the image is closed in the product.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the image is closed in the product.
+
+::: pf-proof
+
 A point $a=(a_x)_{x\in X}\in K$ lies in $J(B_{X^*})$ exactly when the assignment
 \[
 x\longmapsto a_x
@@ -124,14 +151,27 @@ For fixed $x,y,\lambda$, each identity defines a closed subset of $K$, because c
 J(B_{X^*})
 \]
 is an intersection of closed subsets of $K$, hence is closed.
+
 :::
 
-<1>5. Conclude compactness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude compactness.
+
+::: pf-proof
+
 Since $K$ is compact and $J(B_{X^*})$ is closed in $K$, the image $J(B_{X^*})$ is compact. Because $J$ is a homeomorphism from $B_{X^*}$ with its weak* topology onto this image,
 \[
 \boxed{B_{X^*}\text{ is weak* compact}.}
 \]
 This is Banach--Alaoglu.
+
 :::
+
+:::
+
+:::
+
 :::

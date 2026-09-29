@@ -44,11 +44,17 @@ The groups $\pi_1(X)$ and $\pi_1(Y)$ are not isomorphic, but this is not easy to
 We use the orientation convention giving $\varepsilon=-1$.
 Reversing the orientation of the corresponding identified boundary circle gives the convention $\varepsilon=+1$ without changing the underlying space.
 
-<1>1. The punctured bottle $Y$ has a CW structure with one $0$-cell, three $1$-cells $a,b,c$, and one $2$-cell attached along
+::: pf
+
+::: {.pf-step #s1}
+
+The punctured bottle $Y$ has a CW structure with one $0$-cell, three $1$-cells $a,b,c$, and one $2$-cell attached along
 \[
 r=aba^{-1}b^{-1}cb^{-1}c^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Cut the surface in the source figure along arcs from the boundary of the deleted disk to the self-identification curves, so that the remaining $2$-cell is a disk.
 After the cuts, all vertices are identified to one vertex and the three surviving edge classes are $a,b,c$.
 Traversing the boundary of the cut-open disk once gives, in order,
@@ -57,9 +63,14 @@ a,\ b,\ a^{-1},\ b^{-1},\ c,\ b^{-1},\ c^{-1}.
 \]
 Thus the attaching word is exactly $r$.
 This is the standard one-disk fundamental polygon obtained by opening the bottle picture along the deleted self-intersection disk.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: {.pf-step #s2}
+
+Therefore
 \[
 \boxed{
 \pi_1(Y)
@@ -69,17 +80,24 @@ aba^{-1}b^{-1}cb^{-1}c^{-1}=1
 \right\rangle .
 }
 \]
-::: {.proof}
-The $1$-skeleton in <1>1 is
+
+::: pf-proof
+
+The $1$-skeleton in step [](#s1){.pf-ref} is
 \[
 S^1\vee S^1\vee S^1,
 \]
 so its fundamental group is the free group $F(a,b,c)$.
 Attaching the single $2$-cell quotients by the normal closure of its attaching word $r$.
 This is precisely the displayed presentation by van Kampen.
+
 :::
 
-<1>3. With the opposite orientation convention on the indicated boundary identification, the same computation gives
+:::
+
+::: {.pf-step #s3}
+
+With the opposite orientation convention on the indicated boundary identification, the same computation gives
 \[
 \pi_1(Y)
 \cong
@@ -87,7 +105,9 @@ This is precisely the displayed presentation by van Kampen.
 aba^{-1}b^{-1}cb c^{-1}=1
 \right\rangle .
 \]
-::: {.proof}
+
+::: pf-proof
+
 Only the orientation in which that copy of the $b$-edge is traversed changes.
 Since this is merely a change of orientation in the same CW decomposition of the same space $Y$, the two presentations present isomorphic groups.
 Thus the answer can be written uniformly as
@@ -97,23 +117,37 @@ aba^{-1}b^{-1}cb^{\varepsilon}c^{-1}=1
 \right\rangle,
 \qquad \varepsilon=\pm1.
 \]
+
 :::
 
-<1>4. Reattaching the deleted disk to $Y$ to recover the immersed Klein-bottle model $X$ kills the generator $b$ in the presentation of <1>2.
-::: {.proof}
-In the cut-open model of <1>1, the boundary of the disk deleted at the circle of self-intersection is represented by the $b$-loop.
+:::
+
+::: {.pf-step #s4}
+
+Reattaching the deleted disk to $Y$ to recover the immersed Klein-bottle model $X$ kills the generator $b$ in the presentation of step [](#s2){.pf-ref}.
+
+::: pf-proof
+
+In the cut-open model of step [](#s1){.pf-ref}, the boundary of the disk deleted at the circle of self-intersection is represented by the $b$-loop.
 Passing from $Y$ back to $X$ attaches a $2$-cell along this boundary loop, so van Kampen adds the relation
 \[
 b=1.
 \]
+
 :::
 
-<1>5. Hence
+:::
+
+::: {.pf-step #s5}
+
+Hence
 \[
 \boxed{\pi_1(X)\cong\mathbb Z*\mathbb Z.}
 \]
-::: {.proof}
-Adding $b=1$ to the presentation in <1>2 makes the original relator trivial:
+
+::: pf-proof
+
+Adding $b=1$ to the presentation in step [](#s2){.pf-ref} makes the original relator trivial:
 \[
 aba^{-1}b^{-1}cb^{-1}c^{-1}
 \longmapsto
@@ -127,10 +161,17 @@ Therefore
 \cong F(a,c)
 \cong\mathbb Z*\mathbb Z.
 \]
+
 :::
 
-<1>6. The graph complement $\mathbb R^3\setminus Z$ has the same fundamental group as $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The graph complement $\mathbb R^3\setminus Z$ has the same fundamental group as $Y$.
+
+::: pf-proof
+
 Use the graph $Z$ exactly as embedded in the rightmost source figure.
 Take a sufficiently small regular neighborhood of the pictured graph and use the transverse cross-sections indicated by the drawing.
 In every cross-section, the complement of the central graph point radially retracts onto the corresponding arc of the bottle surface $Y$.
@@ -149,9 +190,14 @@ Since $S^2$ is simply connected, van Kampen gives
 \cong
 \pi_1(Y).
 \]
+
 :::
 
-<1>7. Thus all requested groups are
+:::
+
+::: pf-step
+
+Thus all requested groups are
 \[
 \pi_1(X)\cong\mathbb Z*\mathbb Z,
 \qquad
@@ -161,7 +207,15 @@ Since $S^2$ is simply connected, van Kampen gives
 \cong
 \left\langle a,b,c\mid aba^{-1}b^{-1}cb^{\varepsilon}c^{-1}\right\rangle .
 \]
-::: {.proof}
-Combine <1>2--<1>6.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

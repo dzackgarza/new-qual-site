@@ -33,10 +33,15 @@ $$
 F_m\coloneqq\{z\in K:f^{(m)}(z)=0\}.
 $$
 
-<1>1. There is a positive integer $N$ such that $f^{(N)}$ vanishes on
+::: pf
+
+::: {.pf-step #s1}
+
+There is a positive integer $N$ such that $f^{(N)}$ vanishes on
 a nonempty open subset of $G$.
 
-::: {.proof}
+::: pf-proof
+
 Each $F_m$ is closed in $K$, because $f^{(m)}$ is continuous. The
 hypothesis gives
 $$
@@ -47,39 +52,57 @@ theorem implies that some $F_N$ has nonempty interior relative to
 $K$. Any nonempty relatively open subset of a closed disk contains a
 nonempty open disk lying in its interior. Hence $f^{(N)}$ vanishes on
 a nonempty open subset of $G$.
+
 :::
 
-<1>2. $f^{(N)}$ vanishes identically on $G$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$f^{(N)}$ vanishes identically on $G$.
+
+::: pf-proof
+
 The function $f^{(N)}$ is analytic on the connected open set $G$ and,
-by step <1>1, vanishes on a nonempty open subset. The identity theorem
+by step [](#s1){.pf-ref}, vanishes on a nonempty open subset. The identity theorem
 therefore gives
 $$
 f^{(N)}\equiv0
 \qquad\text{on }G.
 $$
+
 :::
 
-<1>3. $f$ is the restriction to $G$ of a polynomial of degree at most
+:::
+
+::: {.pf-step #s3}
+
+$f$ is the restriction to $G$ of a polynomial of degree at most
 $N-1$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $w\in G$ and define
 $$
 p(z)\coloneqq
 \sum_{k=0}^{N-1}\frac{f^{(k)}(w)}{k!}(z-w)^k.
 $$
-By step <1>2, the Taylor series of $f$ at $w$ has no terms of degree
+By step [](#s2){.pf-ref}, the Taylor series of $f$ at $w$ has no terms of degree
 $N$ or higher. Thus $f=p$ on a neighborhood of $w$. The analytic
 function $f-p$ therefore vanishes on a nonempty open subset of the
 connected set $G$, so the identity theorem gives $f=p$ throughout
 $G$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves that $f$ is a polynomial.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves that $f$ is a polynomial.
+
+:::
+
+:::
+
 :::

@@ -53,7 +53,11 @@ H_i(T)\cong
 \end{cases}
 \]
 
-<1>1. The inclusion
+::: pf
+
+::: {.pf-step #s1}
+
+The inclusion
 \[
 j:B\hookrightarrow T
 \]
@@ -61,7 +65,9 @@ induces the zero map
 \[
 j_*:H_1(B)\longrightarrow H_1(T).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The circle $B$ is the boundary of the embedded disk $D\subset T$.
 Hence the inclusion $j:B\hookrightarrow T$ extends over the disk:
 \[
@@ -73,13 +79,20 @@ B&\hookrightarrow&D\\
 \]
 Since $D$ is contractible, the inclusion $B\to T$ is nullhomotopic.
 Therefore it induces the zero homomorphism on positive-dimensional homology, in particular on $H_1$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 H_2(T,B)\cong\ZZ^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The degree-$2$ portion of the long exact sequence of the pair $(T,B)$ is
 \[
 H_2(B)
@@ -92,7 +105,7 @@ H_1(B)
 \xrightarrow{j_*}
 H_1(T).
 \]
-Using $H_2(B)=0$, $H_2(T)\cong\ZZ$, $H_1(B)\cong\ZZ$, and <1>1 gives a short exact sequence
+Using $H_2(B)=0$, $H_2(T)\cong\ZZ$, $H_1(B)\cong\ZZ$, and step [](#s1){.pf-ref} gives a short exact sequence
 \[
 0\longrightarrow\ZZ
 \longrightarrow H_2(T,B)
@@ -104,15 +117,22 @@ Thus
 \[
 H_2(T,B)\cong\ZZ\oplus\ZZ.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 H_1(T,B)\cong\ZZ^2
 \qquad\text{and}\qquad
 H_0(T,B)=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The next part of the long exact sequence is
 \[
 H_1(B)
@@ -132,7 +152,7 @@ Both $B$ and $T$ are path-connected, so the inclusion induces an isomorphism
 \[
 H_0(B)\xrightarrow{\cong}H_0(T).
 \]
-By <1>1, the preceding map $j_*:H_1(B)\to H_1(T)$ is zero.
+By step [](#s1){.pf-ref}, the preceding map $j_*:H_1(B)\to H_1(T)$ is zero.
 Exactness therefore forces
 \[
 H_1(T)\xrightarrow{\cong}H_1(T,B),
@@ -145,18 +165,30 @@ Exactness at $H_0(T)$ and the fact that $H_0(B)\to H_0(T)$ is surjective give
 \[
 H_0(T,B)=0.
 \]
+
 :::
 
-<1>4. For every $i\ge3$,
+:::
+
+::: {.pf-step #s4}
+
+For every $i\ge3$,
 \[
 H_i(T,B)=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $i\ge3$, both $H_i(T)$ and $H_{i-1}(B)$ vanish.
 The long exact sequence of the pair therefore forces $H_i(T,B)=0$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{
 H_i(T,B)\cong
@@ -165,7 +197,15 @@ H_i(T,B)\cong
 0,&\text{otherwise}.
 \end{cases}}
 \]
-::: {.proof}
-Combine <1>2, <1>3, and <1>4.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

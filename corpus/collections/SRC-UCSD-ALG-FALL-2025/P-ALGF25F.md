@@ -38,8 +38,15 @@ Prove that an element $e \in E$ lies in $F^{\mathrm{ab}}$ if and only if the fie
 :::
 
 ::: {.solution}
-<1>1. The extension $F^{\mathrm{ab}}/F$ is Galois and abelian.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The extension $F^{\mathrm{ab}}/F$ is Galois and abelian.
+
+::: pf-proof
+
 The commutator subgroup $[G,G]$ is characteristic in $G$, hence normal.
 By the fundamental theorem of Galois theory, its fixed field
 \[
@@ -50,10 +57,17 @@ is Galois over $F$, with
 \operatorname{Gal}(F^{\mathrm{ab}}/F)\cong G/[G,G].
 \]
 The quotient $G/[G,G]$ is abelian, so $F^{\mathrm{ab}}/F$ is an abelian Galois extension.
+
 :::
 
-<1>2. If $F[e]/F$ is Galois with abelian Galois group, then $e\in F^{\mathrm{ab}}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $F[e]/F$ is Galois with abelian Galois group, then $e\in F^{\mathrm{ab}}$.
+
+::: pf-proof
+
 Let
 \[
 H=\operatorname{Gal}(E/F[e]).
@@ -71,11 +85,18 @@ Taking fixed fields reverses inclusion and gives
 F[e]=E^H\subseteq E^{[G,G]}=F^{\mathrm{ab}}.
 \]
 In particular, $e\in F^{\mathrm{ab}}$.
+
 :::
 
-<1>3. If $e\in F^{\mathrm{ab}}$, then $F[e]/F$ is Galois and abelian.
-::: {.proof}
-By <1>1, the extension $F^{\mathrm{ab}}/F$ is finite Galois with abelian Galois group
+:::
+
+::: pf-step
+
+If $e\in F^{\mathrm{ab}}$, then $F[e]/F$ is Galois and abelian.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the extension $F^{\mathrm{ab}}/F$ is finite Galois with abelian Galois group
 \[
 A=\operatorname{Gal}(F^{\mathrm{ab}}/F).
 \]
@@ -93,5 +114,11 @@ The Galois correspondence therefore shows that $F[e]/F$ is Galois and that
 \operatorname{Gal}(F[e]/F)\cong A/K.
 \]
 This quotient is abelian, proving the converse and hence the equivalence.
+
 :::
+
+:::
+
+:::
+
 :::

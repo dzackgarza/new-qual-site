@@ -39,23 +39,34 @@ $$
 where $A$ is a finitely generated $k$-domain with fraction field $K$.
 Let $\overline A$ denote the integral closure of $A$ in $K$.
 
-<1>1. The $A$-module
+::: pf
+
+::: {.pf-step #s1}
+
+The $A$-module
 $$
 M=\overline A/A
 $$
 is finite.
 
-::: {.proof}
+::: pf-proof
+
 The finiteness theorem for normalization says that the integral closure of a finitely generated domain over a field in its finite fraction-field extension is finite as a module over the original ring [@Har10a, Theorem I.3.9A]. Here the extension of fraction fields is the identity $K/K$, so $\overline A$ is a finite $A$-module.
 Its quotient $M$ is therefore finite as well.
+
 :::
 
-<1>2. For a prime $\mathfrak p\in\Spec A$, the local ring $A_{\mathfrak p}$ is normal if and only if
+:::
+
+::: {.pf-step #s2}
+
+For a prime $\mathfrak p\in\Spec A$, the local ring $A_{\mathfrak p}$ is normal if and only if
 $$
 M_{\mathfrak p}=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Integral closure commutes with localization:
 $$
 \overline{A_{\mathfrak p}}
@@ -87,9 +98,14 @@ $$
 $$
 shows that this equality is equivalent to $M_{\mathfrak p}=0$.
 Since $A_{\mathfrak p}$ is already a domain, integrally closed is exactly normality here.
+
 :::
 
-<1>3. The nonnormal locus in $U$ is the closed subset
+:::
+
+::: {.pf-step #s3}
+
+The nonnormal locus in $U$ is the closed subset
 $$
 \boxed{\operatorname{NNor}(U)
 =
@@ -98,8 +114,9 @@ $$
 V(\Ann_A M).}
 $$
 
-::: {.proof}
-By step <1>2, a prime $\mathfrak p$ is nonnormal exactly when the localization $M_{\mathfrak p}$ is nonzero.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, a prime $\mathfrak p$ is nonnormal exactly when the localization $M_{\mathfrak p}$ is nonzero.
 This is the definition of the support of the finite module $M$.
 For a finite module over a ring,
 $$
@@ -108,29 +125,41 @@ $$
 Indeed, if generators $m_1,\ldots,m_s$ all vanish after localization at $\mathfrak p$, choose denominators outside $\mathfrak p$ killing them and multiply those denominators to obtain an element of $\Ann_A M$ outside $\mathfrak p$.
 The converse is immediate.
 Thus the nonnormal locus on $U$ is closed.
+
 :::
 
-<1>4. This closed subset is proper.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+This closed subset is proper.
+
+::: pf-proof
+
 Let $\eta$ be the generic point of $U$, corresponding to the zero prime.
 Its local ring is the fraction field
 $$
 A_{(0)}=K,
 $$
 which is integrally closed in itself.
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 M_{(0)}=0.
 $$
 Thus $\eta\notin\operatorname{Supp} M$.
 Since the support is closed and omits the generic point of the irreducible space $U$, it is a proper closed subset.
 Equivalently, $\Ann_A M$ contains a nonzero element, and the principal open defined by that element consists entirely of normal points.
+
 :::
 
-<1>5. The nonnormal locus of $X$ is a proper closed subset of $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The nonnormal locus of $X$ is a proper closed subset of $X$.
+
+::: pf-proof
+
 Choose a finite affine open cover
 $$
 X=U_1\cup\cdots\cup U_N.
@@ -139,18 +168,24 @@ Normality of a local ring is unchanged when computed in an open neighborhood, so
 $$
 N\cap U_i=\operatorname{NNor}(U_i).
 $$
-Step <1>3 makes each intersection closed in $U_i$.
+Step [](#s3){.pf-ref} makes each intersection closed in $U_i$.
 Closedness is local on an open cover, hence $N$ is closed in $X$.
 
 The generic point of the irreducible variety $X$ has local ring $K$, a field, and is therefore normal.
 Thus it does not lie in $N$.
 Hence $N$ is proper.
 Its complement is the nonempty open normal locus.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 give the finite-module description and proper closedness on every affine chart, and step <1>5 glues those descriptions on the variety.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the finite-module description and proper closedness on every affine chart, and step [](#s5){.pf-ref} glues those descriptions on the variety.
+
+:::
+
+:::
+
 :::

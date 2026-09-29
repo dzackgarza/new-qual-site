@@ -44,13 +44,19 @@ d(x,y)=\sum_v|x_v-y_v|.
 \]
 A simplicial automorphism permutes vertices, hence preserves this metric.
 
-<1>1. For every $x\in X$ there is a number $\delta_x>0$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in X$ there is a number $\delta_x>0$ such that
 \[
 d(x,gx)\ge\delta_x
 \qquad
 \text{for all }g\ne1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $S$ be the finite support of $x$ and put
 \[
 m=\min_{v\in S}\lambda_v>0.
@@ -70,9 +76,14 @@ The finite set of positive distances
 \]
 therefore has a positive minimum when nonempty.
 Taking the minimum of this number and $m$ gives the required $\delta_x$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 \[
 U=B(x,\delta_x/3),
 \]
@@ -82,7 +93,9 @@ gU\cap U=\varnothing
 \qquad
 (g\ne1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Suppose $y\in U\cap gU$.
 Then $y=gz$ for some $z\in U$.
 Since $g$ is an isometry,
@@ -95,20 +108,27 @@ d(x,gx)
 \le d(x,y)+d(y,gx)
 <2\delta_x/3,
 \]
-contradicting <1>1.
+contradicting step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The quotient map
+:::
+
+::: {.pf-step #s3}
+
+The quotient map
 \[
 q:X\to X/G
 \]
 is evenly covered over $q(U)$.
-::: {.proof}
+
+::: pf-proof
+
 The saturation of $U$ is the disjoint union
 \[
 q^{-1}(q(U))=\coprod_{g\in G}gU
 \]
-by <1>2.
+by step [](#s2){.pf-ref}.
 For each $g$, the restriction
 \[
 q:gU\to q(U)
@@ -116,10 +136,23 @@ q:gU\to q(U)
 is bijective, since two points of one translate cannot lie in the same orbit unless some nontrivial translate of $U$ meets $U$.
 The quotient map is open, so each restriction is a homeomorphism.
 Hence $q(U)$ is evenly covered.
+
 :::
 
-<1>4. Therefore a free simplicial action is a covering space action.
-::: {.proof}
-Every point $x$ has a neighborhood $U$ satisfying <1>2, and <1>3 gives the covering-space condition for the orbit map.
 :::
+
+::: pf-step
+
+Therefore a free simplicial action is a covering space action.
+
+::: pf-proof
+
+Every point $x$ has a neighborhood $U$ satisfying steps [](#s2){.pf-ref} and [](#s3){.pf-ref} gives the covering-space condition for the orbit map.
+
+:::
+
+:::
+
+:::
+
 :::

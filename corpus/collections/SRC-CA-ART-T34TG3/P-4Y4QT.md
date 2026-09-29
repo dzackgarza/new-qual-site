@@ -24,29 +24,46 @@ Let $0<a<4$ and evaluate
 ::: {.solution}
 Read the exponent as $\alpha=a$.
 
-<1>1. The integral $\int_0^\infty x^{a-1}/(1+x^3)\,dx$ converges if and only if $0<a<3$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The integral $\int_0^\infty x^{a-1}/(1+x^3)\,dx$ converges if and only if $0<a<3$.
+
+::: pf-proof
+
 Near $0$ the integrand is asymptotic to $x^{a-1}$, which is integrable on $(0,1)$ if and only if $a>0$. Near $\infty$ it is asymptotic to $x^{a-4}$, which is integrable on $(1,\infty)$ if and only if $a<3$.
+
 :::
 
-<1>2. For $0<a<3$,
+:::
+
+::: {.pf-step #s2}
+
+For $0<a<3$,
 $$\int_0^\infty {x^{a-1}\over1+x^3}\,dx = \boxed{{\pi\over3}\csc{\pi a\over3}}.$$
 
-::: {.proof}
+::: pf-proof
+
 With $t=x^3$,
 $$\int_0^\infty {x^{a-1}\over1+x^3}\,dx
 ={1\over3}\int_0^\infty {t^{a/3-1}\over1+t}\,dt
 ={1\over3}B\!\left(\frac a3,1-\frac a3\right)
 ={1\over3}\Gamma\!\left(\frac a3\right)\Gamma\!\left(1-\frac a3\right),$$
 and Euler's reflection formula $\Gamma(s)\Gamma(1-s)=\pi/\sin(\pi s)$ gives the value.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 evaluates the integral on its range of convergence from step <1>1; for $3\le a<4$ it diverges.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} evaluates the integral on its range of convergence from step [](#s1){.pf-ref}; for $3\le a<4$ it diverges.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

@@ -36,8 +36,15 @@ Prove that:
 :::
 
 ::: {.solution}
-<1>1. The set $A+I$ is a subring of $R$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The set $A+I$ is a subring of $R$.
+
+::: pf-proof
+
 It is nonempty because $0=0+0\in A+I$. If $a+i,b+j\in A+I$, then
 $$
 (a+i)-(b+j)=(a-b)+(i-j)\in A+I
@@ -47,19 +54,33 @@ $$
 (a+i)(b+j)=ab+(aj+ib+ij).
 $$
 Here $ab\in A$, while $aj,ib,ij\in I$ because $I$ is a two-sided ideal of $R$. Hence the product lies in $A+I$. Thus $A+I$ is a subring.
+
 :::
 
-<1>2. The intersection $A\cap I$ is an ideal of $A$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The intersection $A\cap I$ is an ideal of $A$.
+
+::: pf-proof
+
 The intersection is an additive subgroup of $A$. If $a\in A$ and $x\in A\cap I$, then $ax,xa\in A$ because $A$ is a subring, and $ax,xa\in I$ because $I$ is an ideal of $R$. Therefore
 $$
 ax,xa\in A\cap I,
 $$
 so $A\cap I$ is an ideal of $A$.
+
 :::
 
-<1>3. The set $I$ is an ideal of $A+I$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The set $I$ is an ideal of $A+I$.
+
+::: pf-proof
+
 Certainly $I\subset A+I$, since $i=0+i$. It is already an additive subgroup. If $r=a+j\in A+I$ and $i\in I$, then
 $$
 ri=ai+ji\in I,
@@ -67,10 +88,17 @@ ri=ai+ji\in I,
 ir=ia+ij\in I,
 $$
 again because $I$ is a two-sided ideal of $R$. Hence $I\triangleleft A+I$.
+
 :::
 
-<1>4. The canonical map gives the quotient isomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+The canonical map gives the quotient isomorphism.
+
+::: pf-proof
+
 Define
 $$
 \Phi:A\to(A+I)/I,
@@ -90,5 +118,11 @@ $$
 A/(A\cap I)\cong(A+I)/I.
 $$
 Reversing the displayed sides gives the required form.
+
 :::
+
+:::
+
+:::
+
 :::

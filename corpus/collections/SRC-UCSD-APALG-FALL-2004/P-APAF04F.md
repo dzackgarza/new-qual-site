@@ -32,7 +32,12 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. For a class function $\chi$ of $S_n$, its Frobenius characteristic is
+
+::: pf
+
+::: {.pf-step #s1}
+
+For a class function $\chi$ of $S_n$, its Frobenius characteristic is
 \[
 \operatorname{ch}(\chi)
 =\sum_{\mu\vdash n}\frac{\chi_\mu}{z_\mu}p_\mu,
@@ -47,11 +52,18 @@ In particular,
 s_\lambda
 =\sum_{\mu\vdash n}\frac{\chi^\lambda_\mu}{z_\mu}p_\mu.
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the defining power-sum expansion of the Frobenius characteristic map. By the convention in the problem, the irreducible character $\chi^\lambda$ has Frobenius image $s_\lambda$.
+
 :::
 
-<1>2. Let $\omega$ be the standard involution of the ring of symmetric functions determined by
+:::
+
+::: {.pf-step #s2}
+
+Let $\omega$ be the standard involution of the ring of symmetric functions determined by
 \[
 \omega(h_r)=e_r.
 \]
@@ -59,7 +71,9 @@ Then
 \[
 \omega(s_\lambda)=s_{\lambda'}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The Jacobi--Trudi identity gives
 \[
 s_\lambda=\det(h_{\lambda_i-i+j}),
@@ -69,13 +83,20 @@ while the dual Jacobi--Trudi identity gives
 s_{\lambda'}=\det(e_{\lambda_i-i+j}).
 \]
 Applying $\omega$ entrywise to the first determinant therefore gives the second. Hence $\omega(s_\lambda)=s_{\lambda'}$.
+
 :::
 
-<1>3. For every $r\ge1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $r\ge1$,
 \[
 \omega(p_r)=(-1)^{r-1}p_r.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 H(t)=\sum_{m\ge0}h_mt^m,
@@ -97,14 +118,21 @@ Since $\omega(H(t))=E(t)$, comparison of the logarithms gives
 \sum_{r\ge1}(-1)^{r-1}\frac{p_r}r t^r.
 \]
 Comparing coefficients of $t^r$ yields the formula.
+
 :::
 
-<1>4. If $\mu=(\mu_1,\ldots,\mu_{l(\mu)})\vdash n$, then
+:::
+
+::: {.pf-step #s4}
+
+If $\mu=(\mu_1,\ldots,\mu_{l(\mu)})\vdash n$, then
 \[
 \omega(p_\mu)=(-1)^{n-l(\mu)}p_\mu.
 \]
-::: {.proof}
-Using multiplicativity of $\omega$ and <1>3,
+
+::: pf-proof
+
+Using multiplicativity of $\omega$ and step [](#s3){.pf-ref},
 \[
 \omega(p_\mu)
 =\prod_{j=1}^{l(\mu)}(-1)^{\mu_j-1}p_{\mu_j}
@@ -114,39 +142,59 @@ Because $\sum_j\mu_j=n$,
 \[
 \sum_j(\mu_j-1)=n-l(\mu).
 \]
+
 :::
 
-<1>5. Applying $\omega$ to the Frobenius expansion of $s_\lambda$ gives
+:::
+
+::: {.pf-step #s5}
+
+Applying $\omega$ to the Frobenius expansion of $s_\lambda$ gives
 \[
 s_{\lambda'}
 =\sum_{\mu\vdash n}
 \frac{(-1)^{n-l(\mu)}\chi^\lambda_\mu}{z_\mu}p_\mu.
 \]
-::: {.proof}
-By <1>1,
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 \[
 s_\lambda
 =\sum_{\mu\vdash n}\frac{\chi^\lambda_\mu}{z_\mu}p_\mu.
 \]
-Apply $\omega$ to both sides. By <1>2 the left side becomes $s_{\lambda'}$, and by <1>4 each $p_\mu$ is multiplied by $(-1)^{n-l(\mu)}$.
+Apply $\omega$ to both sides. By step [](#s2){.pf-ref} the left side becomes $s_{\lambda'}$, and by step [](#s4){.pf-ref} each $p_\mu$ is multiplied by $(-1)^{n-l(\mu)}$.
+
 :::
 
-<1>6. Therefore, for every partition $\mu\vdash n$,
+:::
+
+::: pf-step
+
+Therefore, for every partition $\mu\vdash n$,
 \[
 \boxed{\chi^{\lambda'}_\mu=(-1)^{n-l(\mu)}\chi^\lambda_\mu}.
 \]
-::: {.proof}
-Applying <1>1 to the conjugate partition $\lambda'$ also gives
+
+::: pf-proof
+
+Applying step [](#s1){.pf-ref} to the conjugate partition $\lambda'$ also gives
 \[
 s_{\lambda'}
 =\sum_{\mu\vdash n}\frac{\chi^{\lambda'}_\mu}{z_\mu}p_\mu.
 \]
-The power sums $p_\mu$ for $\mu\vdash n$ form a basis of the degree-$n$ symmetric functions over $\mathbb Q$. Comparing the coefficient of $p_\mu$ with <1>5 yields
+The power sums $p_\mu$ for $\mu\vdash n$ form a basis of the degree-$n$ symmetric functions over $\mathbb Q$. Comparing the coefficient of $p_\mu$ with step [](#s5){.pf-ref} yields
 \[
 \frac{\chi^{\lambda'}_\mu}{z_\mu}
 =
 \frac{(-1)^{n-l(\mu)}\chi^\lambda_\mu}{z_\mu}.
 \]
 Since $z_\mu\ne0$, the desired identity follows.
+
 :::
+
+:::
+
+:::
+
 :::

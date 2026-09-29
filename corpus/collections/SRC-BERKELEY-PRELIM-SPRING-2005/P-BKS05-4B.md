@@ -44,24 +44,35 @@ $$
 $$
 be the coordinate projections.
 
-<1>1. For every closed set $C\subseteq\RR$, the set
+::: pf
+
+::: {.pf-step #s1}
+
+For every closed set $C\subseteq\RR$, the set
 $$
 G_C\coloneqq G\cap\pi_2^{-1}(C)
 $$
 is compact.
 
-::: {.proof}
+::: pf-proof
+
 The projection $\pi_2$ is continuous, so $\pi_2^{-1}(C)$ is closed
 in $\RR^2$. Hence $G_C$ is closed in the compact set $G$, and is
 therefore compact.
+
 :::
 
-<1>2. For every closed set $C\subseteq\RR$,
+:::
+
+::: {.pf-step #s2}
+
+For every closed set $C\subseteq\RR$,
 $$
 f^{-1}(C)=\pi_1(G_C).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $x\in D$,
 $$
 x\in f^{-1}(C)
@@ -71,29 +82,47 @@ $$
 (x,f(x))\in G\cap\pi_2^{-1}(C)=G_C.
 $$
 This is exactly the condition $x\in\pi_1(G_C)$.
+
 :::
 
-<1>3. For every closed set $C\subseteq\RR$, the inverse image
+:::
+
+::: {.pf-step #s3}
+
+For every closed set $C\subseteq\RR$, the inverse image
 $f^{-1}(C)$ is closed in $D$.
 
-::: {.proof}
-By step <1>1, $G_C$ is compact. Since $\pi_1$ is continuous,
-step <1>2 shows that $f^{-1}(C)=\pi_1(G_C)$ is compact in $\RR$.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $G_C$ is compact. Since $\pi_1$ is continuous,
+step [](#s2){.pf-ref} shows that $f^{-1}(C)=\pi_1(G_C)$ is compact in $\RR$.
 Every compact subset of $\RR$ is closed in $\RR$, hence in the
 subspace $D$.
+
 :::
 
-<1>4. The function $f:D\to\RR$ is continuous.
+:::
 
-::: {.proof}
-Step <1>3 shows that the inverse image under $f$ of every closed subset
+::: {.pf-step #s4}
+
+The function $f:D\to\RR$ is continuous.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that the inverse image under $f$ of every closed subset
 of $\RR$ is closed in $D$. This is the closed-set characterization of
 continuity.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

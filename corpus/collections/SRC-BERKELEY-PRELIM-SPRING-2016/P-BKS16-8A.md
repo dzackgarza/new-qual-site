@@ -29,7 +29,12 @@ ring of integers modulo 2016.
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 2016=2^5\cdot3^2\cdot7=32\cdot9\cdot7.
 $$
@@ -44,7 +49,8 @@ $$
 (\ZZ/7\ZZ)^\times.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The integers $32,9,7$ are pairwise coprime, so the Chinese remainder theorem gives a ring isomorphism
 $$
 \ZZ/2016\ZZ
@@ -52,16 +58,22 @@ $$
 \ZZ/32\ZZ\times\ZZ/9\ZZ\times\ZZ/7\ZZ.
 $$
 Taking unit groups gives the displayed group isomorphism.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 (\ZZ/32\ZZ)^\times
 \cong
 \ZZ_2\times\ZZ_8.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The unit group modulo $32$ has
 $$
 \varphi(32)=16
@@ -90,9 +102,14 @@ $$
 2\cdot8=16,
 $$
 so it is the whole unit group and is isomorphic to $\ZZ_2\times\ZZ_8$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 (\ZZ/9\ZZ)^\times
 \cong
@@ -101,7 +118,8 @@ $$
 \ZZ_2\times\ZZ_3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The group has $\varphi(9)=6$ elements. The class of $2$ has order $6$: indeed,
 $$
 2^2=4\not\equiv1
@@ -113,9 +131,14 @@ $$
 2^6\equiv1\pmod9.
 $$
 Thus it generates the group. Since $2$ and $3$ are coprime, the cyclic group of order $6$ is isomorphic to $\ZZ_2\times\ZZ_3$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 (\ZZ/7\ZZ)^\times
 \cong
@@ -124,15 +147,21 @@ $$
 \ZZ_2\times\ZZ_3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The group has $6$ elements. The class of $3$ has order $6$, since
 $$
 3^3=27\equiv-1\pmod7
 $$
 and hence $3^6\equiv1\pmod7$, while the order cannot be $1,2,$ or $3$. Thus the group is cyclic of order $6$, and the final decomposition follows from coprimality of $2$ and $3$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 (\ZZ/2016\ZZ)^\times
@@ -145,8 +174,9 @@ $$
 }.
 $$
 
-::: {.proof}
-Combine steps <1>1--<1>4:
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}:
 $$
 (\ZZ/2016\ZZ)^\times
 \cong
@@ -157,11 +187,17 @@ $$
 (\ZZ_2\times\ZZ_3).
 $$
 Reorder the direct factors. Every displayed cyclic factor has prime-power order.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested product of cyclic groups of prime-power order.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested product of cyclic groups of prime-power order.
+
+:::
+
+:::
+
 :::

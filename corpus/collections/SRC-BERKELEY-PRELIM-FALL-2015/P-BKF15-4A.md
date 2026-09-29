@@ -45,13 +45,19 @@ Let $\phi \colon \mathbb{C}^2 \setminus \{(0,0)\} \to S$ be the map defined by $
 :::
 
 ::: {.solution}
-<1>1. For every nonzero vector $(w,z)\in\CC^2$, its orthogonal
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every nonzero vector $(w,z)\in\CC^2$, its orthogonal
 complement is the one-dimensional subspace
 $$
 \CC\cdot(-\overline z,\overline w).
 $$
 
-::: {.proof}
+::: pf-proof
+
 With the standard Hermitian inner product,
 $$
 \inner{(w,z)}{(-\overline z,\overline w)}
@@ -63,9 +69,14 @@ $$
 The vector $(-\overline z,\overline w)$ is nonzero whenever
 $(w,z)\ne(0,0)$. Since the orthogonal complement of a nonzero vector in
 $\CC^2$ has complex dimension $1$, it is exactly the displayed line.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 \tau(\phi(w,z))
 \coloneqq
@@ -74,7 +85,8 @@ $$
 This definition is independent of the choice of representative
 $(w,z)$.
 
-::: {.proof}
+::: pf-proof
+
 If $(w,z)$ is replaced by
 $$
 (\lambda w,\lambda z),
@@ -89,12 +101,18 @@ $$
 $$
 The two vectors span the same one-dimensional subspace and therefore
 have the same image under $\phi$. Thus $\tau$ is well-defined.
+
 :::
 
-<1>3. The map in step <1>2 is the unique map satisfying part (a).
+:::
 
-::: {.proof}
-By step <1>1, for every line
+::: {.pf-step #s3}
+
+The map in step [](#s2){.pf-ref} is the unique map satisfying part (a).
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, for every line
 $$
 L=\CC\cdot(w,z)
 $$
@@ -109,10 +127,15 @@ forced to be
 $$
 \phi(-\overline z,\overline w).
 $$
-Step <1>2 shows that these forced values define a map.
+Step [](#s2){.pf-ref} shows that these forced values define a map.
+
 :::
 
-<1>4. Explicitly,
+:::
+
+::: {.pf-step #s4}
+
+Explicitly,
 $$
 \boxed{
 \tau(\zeta)
@@ -129,7 +152,8 @@ $$
 \tau(\infty)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\zeta=\phi(w,z)=w/z$ with $w,z\ne0$, then
 $$
 \begin{aligned}
@@ -148,15 +172,21 @@ If $\zeta=0$, one may take $(w,z)=(0,1)$, whose orthogonal complement
 is spanned by $(-1,0)$ and hence maps to $\infty$. If
 $\zeta=\infty$, take $(w,z)=(1,0)$; its orthogonal complement is
 spanned by $(0,1)$ and maps to $0$.
+
 :::
 
-<1>5. The map $\tau$ is an involution:
+:::
+
+::: {.pf-step #s5}
+
+The map $\tau$ is an involution:
 $$
 \tau^2=\operatorname{Id}_S.
 $$
 
-::: {.proof}
-For $\zeta\in\CC^\times$, step <1>4 gives
+::: pf-proof
+
+For $\zeta\in\CC^\times$, step [](#s4){.pf-ref} gives
 $$
 \tau(\tau(\zeta))
 =
@@ -166,14 +196,20 @@ $$
 =
 \zeta.
 $$
-Step <1>4 also shows that $0$ and $\infty$ are exchanged, so the same
+Step [](#s4){.pf-ref} also shows that $0$ and $\infty$ are exchanged, so the same
 identity holds at those two points.
+
 :::
 
-<1>6. The map $\tau$ is continuous on the Riemann sphere.
+:::
 
-::: {.proof}
-On $\CC^\times$, the formula in step <1>4 is a composition of
+::: {.pf-step #s6}
+
+The map $\tau$ is continuous on the Riemann sphere.
+
+::: pf-proof
+
+On $\CC^\times$, the formula in step [](#s4){.pf-ref} is a composition of
 continuous maps.
 
 If $\zeta\to0$ in $\CC$, then
@@ -193,20 +229,32 @@ $$
 \longrightarrow0.
 $$
 Thus $\tau$ is continuous at $0$ and at $\infty$ as well.
+
 :::
 
-<1>7. The map $\tau$ is bijective.
-
-::: {.proof}
-By step <1>5, $\tau$ is its own inverse. Hence it is bijective.
 :::
 
-<1>8. The map $\tau$ is not holomorphic.
+::: {.pf-step #s7}
 
-::: {.proof}
+The map $\tau$ is bijective.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, $\tau$ is its own inverse. Hence it is bijective.
+
+:::
+
+:::
+
+::: {.pf-step #s8}
+
+The map $\tau$ is not holomorphic.
+
+::: pf-proof
+
 If $\tau$ were holomorphic on the Riemann sphere, then its restriction
 to a neighborhood of $1\in\CC^\times$ would be complex
-differentiable. By step <1>4,
+differentiable. By step [](#s4){.pf-ref},
 $$
 \tau(\zeta)=-\frac1{\overline\zeta}.
 $$
@@ -226,12 +274,18 @@ $$
 $$
 The two directional difference quotients have different limits, so
 $\tau$ is not complex differentiable at $1$.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>4 prove part (a), steps <1>6--<1>7 prove part (b), and
-step <1>8 proves part (c).
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), steps [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (b), and
+step [](#s8){.pf-ref} proves part (c).
+
+:::
+
+:::
+
 :::

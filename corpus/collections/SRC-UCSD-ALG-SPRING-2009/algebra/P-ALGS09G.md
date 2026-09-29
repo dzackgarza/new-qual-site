@@ -33,8 +33,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Every nonzero nonunit in a Noetherian domain is a finite product of irreducibles.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every nonzero nonunit in a Noetherian domain is a finite product of irreducibles.
+
+::: pf-proof
+
 Assume, for contradiction, that some nonzero nonunit $x_0\in R$ is not a finite product of irreducibles.
 Then $x_0$ is not irreducible, so
 \[
@@ -62,10 +69,17 @@ Repeating the construction gives an infinite strictly ascending chain
 \]
 But a Noetherian ring satisfies the ascending chain condition on ideals.
 This contradiction proves that every nonzero nonunit factors into finitely many irreducibles.
+
 :::
 
-<1>2. Every UFD is integrally closed in its field of fractions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every UFD is integrally closed in its field of fractions.
+
+::: pf-proof
+
 Let $R$ be a UFD with fraction field $K$, and suppose
 \[
 \alpha=\frac ab\in K
@@ -91,14 +105,21 @@ Therefore $b$ is a unit, and
 \alpha\in R.
 \]
 Thus $R$ is integrally closed in $K$.
+
 :::
 
-<1>3. The domain
+:::
+
+::: {.pf-step #s3}
+
+The domain
 \[
 R=\mathbb Z[\sqrt{-5}]
 \]
 is Noetherian.
-::: {.proof}
+
+::: pf-proof
+
 As a $\mathbb Z$-module,
 \[
 R=\mathbb Z\oplus\mathbb Z\sqrt{-5},
@@ -108,10 +129,17 @@ Hence $R$ is a Noetherian $\mathbb Z$-module.
 Every ideal of $R$ is, in particular, a $\mathbb Z$-submodule of $R$.
 Therefore every ascending chain of ideals of $R$ stabilizes, so $R$ is a Noetherian ring.
 It is a domain because it is a subring of $\mathbb C$.
+
 :::
 
-<1>4. The ring $\mathbb Z[\sqrt{-5}]$ is not a UFD.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The ring $\mathbb Z[\sqrt{-5}]$ is not a UFD.
+
+::: pf-proof
+
 For
 \[
 z=a+b\sqrt{-5}\in R,
@@ -156,10 +184,23 @@ N(1\pm\sqrt{-5})=6.
 \]
 Hence neither $2$ nor $3$ is associate to either $1+\sqrt{-5}$ or $1-\sqrt{-5}$.
 Therefore $R$ does not have unique factorization.
+
 :::
 
-<1>5. Consequently $\mathbb Z[\sqrt{-5}]$ is a Noetherian domain that is not a UFD.
-::: {.proof}
-Combine <1>3 and <1>4.
 :::
+
+::: pf-step
+
+Consequently $\mathbb Z[\sqrt{-5}]$ is a Noetherian domain that is not a UFD.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

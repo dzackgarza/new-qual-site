@@ -40,7 +40,11 @@ R=[a,b]\times[c,d]\subseteq\RR^2
 $$
 and orient $\partial R$ counterclockwise.
 
-<1>1. Green's theorem for a rectangle states that if $P,Q$ have continuous
+::: pf
+
+::: {.pf-step #s1}
+
+Green's theorem for a rectangle states that if $P,Q$ have continuous
 first partial derivatives on a neighborhood of $R$, then
 $$
 \boxed{
@@ -55,12 +59,17 @@ $$
 }
 $$
 
-<1>2. The contribution of the two horizontal sides of $\partial R$ is
+:::
+
+::: {.pf-step #s2}
+
+The contribution of the two horizontal sides of $\partial R$ is
 $$
 -\iint_R P_y\,dA.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The bottom side is traversed from $(a,c)$ to $(b,c)$ and the top side from
 $(b,d)$ to $(a,d)$. Since $dy=0$ on both sides, their total contribution is
 $$
@@ -79,14 +88,20 @@ $y$-variable. This is
 $$
 -\iint_RP_y\,dA.
 $$
+
 :::
 
-<1>3. The contribution of the two vertical sides of $\partial R$ is
+:::
+
+::: {.pf-step #s3}
+
+The contribution of the two vertical sides of $\partial R$ is
 $$
 \iint_R Q_x\,dA.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The right side is traversed from $(b,c)$ to $(b,d)$ and the left side from
 $(a,d)$ to $(a,c)$. Since $dx=0$ on both sides, their total contribution is
 $$
@@ -104,22 +119,33 @@ by the fundamental theorem of calculus in the $x$-variable. This is
 $$
 \iint_RQ_x\,dA.
 $$
+
 :::
 
-<1>4. Green's theorem in step <1>1 holds.
+:::
 
-::: {.proof}
-Adding the horizontal contribution from step <1>2 and the vertical
-contribution from step <1>3 gives
+::: {.pf-step #s4}
+
+Green's theorem in step [](#s1){.pf-ref} holds.
+
+::: pf-proof
+
+Adding the horizontal contribution from step [](#s2){.pf-ref} and the vertical
+contribution from step [](#s3){.pf-ref} gives
 $$
 \int_{\partial R}P\,dx+Q\,dy
 =
 \iint_R(Q_x-P_y)\,dA.
 $$
 This is the asserted formula.
+
 :::
 
-<1>5. Let
+:::
+
+::: {.pf-step #s5}
+
+Let
 $$
 f=u+iv
 $$
@@ -131,19 +157,26 @@ u_y=-v_x
 $$
 on $R$.
 
-::: {.proof}
+::: pf-proof
+
 The real and imaginary parts of an analytic function satisfy the
 Cauchy--Riemann equations. In particular, the first partial derivatives used
 below are continuous on the rectangle, so Green's theorem applies.
+
 :::
 
-<1>6. The real part of
+:::
+
+::: {.pf-step #s6}
+
+The real part of
 $$
 \int_{\partial R}f(z)\,dz
 $$
 is zero.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 dz=dx+i\,dy,
@@ -174,23 +207,29 @@ Q_x-P_y
 =
 0
 $$
-by step <1>5. Therefore
+by step [](#s5){.pf-ref}. Therefore
 $$
 \operatorname{Re}
 \int_{\partial R}f(z)\,dz
 =
 0.
 $$
+
 :::
 
-<1>7. The imaginary part of
+:::
+
+::: {.pf-step #s7}
+
+The imaginary part of
 $$
 \int_{\partial R}f(z)\,dz
 $$
 is zero.
 
-::: {.proof}
-From the expansion in step <1>6, the imaginary part is
+::: pf-proof
+
+From the expansion in step [](#s6){.pf-ref}, the imaginary part is
 $$
 \int_{\partial R}v\,dx+u\,dy.
 $$
@@ -208,31 +247,43 @@ u_x-v_y
 =
 0
 $$
-by step <1>5. Hence
+by step [](#s5){.pf-ref}. Hence
 $$
 \operatorname{Im}
 \int_{\partial R}f(z)\,dz
 =
 0.
 $$
+
 :::
 
-<1>8. Cauchy's theorem for a rectangle holds:
+:::
+
+::: {.pf-step #s8}
+
+Cauchy's theorem for a rectangle holds:
 $$
 \boxed{
 \int_{\partial R}f(z)\,dz=0.
 }
 $$
 
-::: {.proof}
-Steps <1>6--<1>7 show that both the real and imaginary parts of the complex
+::: pf-proof
+
+Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} show that both the real and imaginary parts of the complex
 integral vanish.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 state and prove Green's theorem for rectangles, and steps
-<1>5--<1>8 use it to prove Cauchy's theorem on a rectangle.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} state and prove Green's theorem for rectangles, and steps
+[](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} use it to prove Cauchy's theorem on a rectangle.
+
+:::
+
+:::
+
 :::

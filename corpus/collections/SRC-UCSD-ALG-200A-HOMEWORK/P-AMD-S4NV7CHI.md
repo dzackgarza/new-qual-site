@@ -44,11 +44,17 @@ Let
 P=\langle a,b\mid a^2=b^2,\ a^{-1}ba=b^{-1}\rangle.
 \]
 
-<1>1. In $P$,
+::: pf
+
+::: {.pf-step #s1}
+
+In $P$,
 \[
 a^4=b^4=e.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Conjugating $b^2$ by $a$ and using $a^{-1}ba=b^{-1}$ gives
 \[
 a^{-1}b^2a=b^{-2}.
@@ -66,15 +72,22 @@ Consequently
 \[
 a^4=(a^2)^2=(b^2)^2=b^4=e.
 \]
+
 :::
 
-<1>2. The defining conjugation relation gives
+:::
+
+::: {.pf-step #s2}
+
+The defining conjugation relation gives
 \[
 ba=ab^{-1}
 \qquad\text{and}\qquad
 b^{-1}a=ab.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Multiplying
 \[
 a^{-1}ba=b^{-1}
@@ -91,9 +104,14 @@ and multiplying on the left by $a$ gives
 \[
 b^{-1}a=ab.
 \]
+
 :::
 
-<1>3. Every element of $P$ is represented by one of the eight words
+:::
+
+::: {.pf-step #s3}
+
+Every element of $P$ is represented by one of the eight words
 \[
 b^r
 \qquad\text{or}\qquad
@@ -101,20 +119,22 @@ ab^r,
 \qquad
 r=0,1,2,3.
 \]
-::: {.proof}
-By <1>1, inverses may be replaced by positive powers:
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, inverses may be replaced by positive powers:
 \[
 a^{-1}=a^3,
 \qquad
 b^{-1}=b^3.
 \]
-Using <1>2 repeatedly, move every occurrence of $a$ to the left of every occurrence of $b$.
+Using step [](#s2){.pf-ref} repeatedly, move every occurrence of $a$ to the left of every occurrence of $b$.
 Thus every word is equal in $P$ to
 \[
 a^m b^n
 \]
 for some integers $m,n$.
-By <1>1, reduce both exponents modulo $4$.
+By step [](#s1){.pf-ref}, reduce both exponents modulo $4$.
 
 Finally, use $a^2=b^2$.
 If $m=2$, then
@@ -131,16 +151,23 @@ Therefore
 \[
 |P|\le8.
 \]
+
 :::
 
-<1>4. The assignments
+:::
+
+::: {.pf-step #s4}
+
+The assignments
 \[
 a\longmapsto i,
 \qquad
 b\longmapsto j
 \]
 define a surjective homomorphism $\Phi:P\to Q_8$.
-::: {.proof}
+
+::: pf-proof
+
 Recall
 \[
 Q_8=\{\pm1,\pm i,\pm j,\pm k\},
@@ -165,17 +192,30 @@ with $\Phi(a)=i$ and $\Phi(b)=j$.
 
 The elements $i$ and $j$ generate $Q_8$: their product is $k$, and $i^2=-1$ supplies all negatives.
 Hence $\Phi$ is surjective.
+
 :::
 
-<1>5. The homomorphism $\Phi$ is an isomorphism.
-::: {.proof}
-By <1>3, the group $P$ has at most eight elements.
-By <1>4, it surjects onto $Q_8$, which has exactly eight elements.
+:::
+
+::: pf-step
+
+The homomorphism $\Phi$ is an isomorphism.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the group $P$ has at most eight elements.
+By step [](#s4){.pf-ref}, it surjects onto $Q_8$, which has exactly eight elements.
 Therefore $|P|\ge8$, so in fact
 \[
 |P|=8.
 \]
 A surjection between two finite sets of the same cardinality is bijective.
 Thus $\Phi$ is an isomorphism, proving the stated presentation of $Q_8$.
+
 :::
+
+:::
+
+:::
+
 :::

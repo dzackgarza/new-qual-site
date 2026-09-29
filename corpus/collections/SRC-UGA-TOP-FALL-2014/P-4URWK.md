@@ -32,18 +32,30 @@ If no, give a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Yes.
+
+::: pf
+
+::: pf-step
+
+Yes.
 Let
 \[
 X=\prod_{i\in I}X_i
 \]
 with the product topology, where every $X_i$ is Hausdorff.
-::: {.proof}
+
+::: pf-proof
+
 We will verify the Hausdorff separation condition directly.
 The argument does not require the index set $I$ to be finite.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 \[
 x=(x_i)_{i\in I},
 \qquad
@@ -54,29 +66,45 @@ Then there is an index $j\in I$ such that
 \[
 x_j\ne y_j.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Two elements of a Cartesian product are equal exactly when all of their coordinates are equal.
 Since $x\ne y$, at least one coordinate differs.
+
 :::
 
-<1>3. There are disjoint open sets $U_j,V_j\subseteq X_j$ with
+:::
+
+::: pf-step
+
+There are disjoint open sets $U_j,V_j\subseteq X_j$ with
 \[
 x_j\in U_j,
 \qquad
 y_j\in V_j.
 \]
-::: {.proof}
-The factor $X_j$ is Hausdorff and $x_j\ne y_j$ by <1>2. Hence the Hausdorff condition in $X_j$ supplies disjoint open neighborhoods $U_j$ and $V_j$.
+
+::: pf-proof
+
+The factor $X_j$ is Hausdorff and $x_j\ne y_j$ by step [](#s2){.pf-ref}. Hence the Hausdorff condition in $X_j$ supplies disjoint open neighborhoods $U_j$ and $V_j$.
+
 :::
 
-<1>4. The sets
+:::
+
+::: {.pf-step #s4}
+
+The sets
 \[
 U=\pi_j^{-1}(U_j),
 \qquad
 V=\pi_j^{-1}(V_j)
 \]
 are disjoint open neighborhoods of $x$ and $y$ in $X$.
-::: {.proof}
+
+::: pf-proof
+
 The coordinate projection
 \[
 \pi_j:X\to X_j
@@ -99,13 +127,26 @@ U\cap V
 =
 \varnothing.
 \]
+
 :::
 
-<1>5. Therefore every product of Hausdorff spaces is Hausdorff.
-::: {.proof}
-By <1>4, every pair of distinct points of $X$ has disjoint open neighborhoods.
+:::
+
+::: pf-step
+
+Therefore every product of Hausdorff spaces is Hausdorff.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, every pair of distinct points of $X$ has disjoint open neighborhoods.
 This is precisely the Hausdorff property.
 The proof uses only one coordinate, so it applies unchanged to arbitrary infinite products.
 For the empty product, the product space is a singleton and hence Hausdorff as well.
+
 :::
+
+:::
+
+:::
+
 :::

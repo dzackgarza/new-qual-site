@@ -39,12 +39,17 @@ $$
 S_N\coloneqq\sum_{k=1}^N\frac{(-1)^{k+1}}{k}.
 $$
 
-<1>1. The alternating harmonic series has sum
+::: pf
+
+::: {.pf-step #s1}
+
+The alternating harmonic series has sum
 $$
 \boxed{\log 2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $0\le x\le1$,
 $$
 1-x+x^2-\cdots+(-x)^{N-1}
@@ -64,15 +69,21 @@ $$
 =\frac1{N+1},
 $$
 so $S_N\to\log2$.
+
 :::
 
-<1>2. If $T_{3N}$ denotes the partial sum of the series in part (b)
+:::
+
+::: {.pf-step #s2}
+
+If $T_{3N}$ denotes the partial sum of the series in part (b)
 through its first $N$ three-term blocks, then
 $$
 T_{3N}=\frac12S_{2N}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $k$th three-term block is
 $$
 \frac1{2k-1}-\frac1{4k-2}-\frac1{4k}
@@ -94,15 +105,21 @@ T_{3N}
 &=\frac12S_{2N}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The series in part (b) converges to
+:::
+
+::: {.pf-step #s3}
+
+The series in part (b) converges to
 $$
 \boxed{\frac12\log2}.
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2,
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 T_{3N}\longrightarrow\frac12\log2.
 $$
@@ -111,11 +128,17 @@ absolute values tending to $0$ as $N\to\infty$. Hence the partial
 sums with indices $3N+1$ and $3N+2$ have the same limit as
 $T_{3N}$, so the full sequence of partial sums converges to
 $\frac12\log2$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 answers part (a), and step <1>3 answers part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s3){.pf-ref} answers part (b).
+
+:::
+
+:::
+
 :::

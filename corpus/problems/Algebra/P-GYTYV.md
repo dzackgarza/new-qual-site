@@ -24,7 +24,6 @@ audit:
 - Show that $C_G(H) \subseteq N_G(H) \leq G$.
 :::
 
-
 ::: {.solution}
 Recall
 \[
@@ -35,23 +34,36 @@ and
 N_G(H)=\{g\in G:gHg^{-1}=H\}.
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 C_G(H)\subseteq N_G(H).
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $g\in C_G(H)$, then for every $h\in H$,
 \[
 ghg^{-1}=h.
 \]
 Thus conjugation by $g$ fixes every element of $H$, so $gHg^{-1}=H$ and $g\in N_G(H)$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 N_G(H)\le G.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The identity normalizes $H$. If $g_1,g_2\in N_G(H)$, then
 \[
 (g_1g_2)H(g_1g_2)^{-1}
@@ -60,6 +72,11 @@ The identity normalizes $H$. If $g_1,g_2\in N_G(H)$, then
 =H,
 \]
 so $g_1g_2\in N_G(H)$. If $g\in N_G(H)$, then $gHg^{-1}=H$, and conjugating this equality by $g^{-1}$ gives $g^{-1}Hg=H$, so $g^{-1}\in N_G(H)$.
+
+:::
+
+:::
+
 :::
 
 Therefore

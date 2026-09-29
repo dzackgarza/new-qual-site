@@ -51,11 +51,17 @@ For $g\in G$, write
 \operatorname{Fix}(g)=\{x\in X:gx=x\}.
 \]
 
-<1>1. If both $G$ and $X$ are finite, some $g\in G$ has
+::: pf
+
+::: {.pf-step #s1}
+
+If both $G$ and $X$ are finite, some $g\in G$ has
 \[
 \operatorname{Fix}(g)=\varnothing.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since the action is transitive, it has exactly one orbit.
 Burnside's counting lemma therefore gives
 \[
@@ -79,10 +85,17 @@ If every $g\in G$ fixed at least one point, then
 \]
 contradicting the Burnside count.
 Thus some $g\in G$ fixes no point.
+
 :::
 
-<1>2. The same conclusion holds if $G$ is infinite and $X$ is finite.
-::: {.proof}
+:::
+
+::: pf-step
+
+The same conclusion holds if $G$ is infinite and $X$ is finite.
+
+::: pf-proof
+
 Let
 \[
 \rho:G\longrightarrow \operatorname{Sym}(X)
@@ -94,16 +107,23 @@ Q=\rho(G).
 Because $X$ is finite, $\operatorname{Sym}(X)$ is finite, so $Q$ is finite.
 The $Q$-action on $X$ is transitive because it has exactly the same point orbits as the original $G$-action.
 
-By <1>1, there exists $q\in Q$ with no fixed point on $X$.
+By step [](#s1){.pf-ref}, there exists $q\in Q$ with no fixed point on $X$.
 Choose $g\in G$ with
 \[
 \rho(g)=q.
 \]
 Then $g$ acts on $X$ exactly as $q$ does, so $g$ also has no fixed point.
+
 :::
 
-<1>3. The conclusion can fail when both the group and the set are infinite.
-::: {.proof}
+:::
+
+::: pf-step
+
+The conclusion can fail when both the group and the set are infinite.
+
+::: pf-proof
+
 Let $X$ be any infinite set and let
 \[
 G=\operatorname{FSym}(X)
@@ -120,5 +140,11 @@ X\setminus\operatorname{supp}(g)\ne\varnothing.
 \]
 Thus every $g\in G$ has a fixed point.
 Hence this transitive action has no fixed-point-free element.
+
 :::
+
+:::
+
+:::
+
 :::

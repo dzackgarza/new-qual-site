@@ -39,22 +39,33 @@ $$
 for the natural affine-morphism cohomology comparison of [[P-AGH341AFFINEMORPH]].
 Let $\varepsilon:f_*f^!\omega_Y^\circ\to\omega_Y^\circ$ be evaluation at $1$, as constructed in [[P-AGH3610FINITEFLATDUAL]].
 
-<1>1. The coherent sheaf $H=f^!\omega_Y^\circ$ has a trace
+::: pf
+
+::: {.pf-step #s1}
+
+The coherent sheaf $H=f^!\omega_Y^\circ$ has a trace
 $$
 t_H=t_Y\circ H^n(\varepsilon)\circ a_H:H^n(X,H)\longrightarrow k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The sheaves $f_*\OO_X$ and $\omega_Y^\circ$ are coherent, so their sheaf Hom is coherent by [[P-AGH363EXTCOHERENT]], in degree zero.
 Under the affine equivalence defining $f^!$, it corresponds to a coherent sheaf on $X$.
 Indeed, on $Y=\Spec A$, the module $\Hom_A(B,N)$ is finite over $A$ when $B,N$ are finite over the noetherian ring $A$, and its finite $A$-generators also generate it as a $B$-module.
 Thus $H$ is coherent.
 The displayed composition uses natural maps on cohomology and is a well-defined $k$-linear trace.
+
 :::
 
-<1>2. The pair $(H,t_H)$ is a dualizing sheaf for $X$, proving (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The pair $(H,t_H)$ is a dualizing sheaf for $X$, proving (a).
+
+::: pf-proof
+
 For every coherent sheaf $F$ on $X$, finite pushforward makes $f_*F$ coherent.
 The Hom adjunction of [[P-AGH3610FINITEFLATDUAL]], part (b), and duality on $Y$ give natural isomorphisms
 $$
@@ -72,47 +83,65 @@ $$
 t_Y\bigl(H^n(\varepsilon\circ f_*h)(a_F(z))\bigr)
 =t_H\bigl(H^n(h)(z)\bigr),
 $$
-by naturality of $a_F$ and the definition in step <1>1.
+by naturality of $a_F$ and the definition in step [](#s1){.pf-ref}.
 Thus the isomorphism is precisely the pairing required in the definition of a dualizing sheaf, not just an abstract vector-space isomorphism.
 This proves (a) without flatness or smoothness assumptions on $f$.
+
 :::
 
-<1>3. If $X$ and $Y$ are nonsingular and pure-dimensional of the same dimension over algebraically closed $k$, the trace in (b) is
+:::
+
+::: {.pf-step #s3}
+
+If $X$ and $Y$ are nonsingular and pure-dimensional of the same dimension over algebraically closed $k$, the trace in (b) is
 $$
 \boxed{t:f_*\omega_X\xrightarrow{f_*\theta}
 f_*f^!\omega_Y\xrightarrow{\varepsilon}\omega_Y,}
 $$
 where $\theta:\omega_X\xrightarrow{\cong}f^!\omega_Y$ is the trace-compatible dualizing-sheaf isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 The canonical sheaves $\omega_X=\Omega_{X/k}^n$ and $\omega_Y=\Omega_{Y/k}^n$, with their Serre traces, are dualizing [@Har10a, Theorem III.7.12].
 For several components of the same dimension, this follows by taking the direct sum of the dualities on those open-and-closed components.
-Step <1>2, with $\omega_Y^\circ=\omega_Y$, makes $f^!\omega_Y$ a dualizing sheaf with the trace of step <1>1.
+Step [](#s2){.pf-ref}, with $\omega_Y^\circ=\omega_Y$, makes $f^!\omega_Y$ a dualizing sheaf with the trace of step [](#s1){.pf-ref}.
 Uniqueness of a dualizing sheaf with its trace [@Har10a, Proposition III.7.2] supplies the unique trace-compatible isomorphism $\theta$.
 Evaluation at $1$ is intrinsic to the finite algebra $f_*\OO_X$, so the displayed morphism is natural and involves no choice of local coordinates or bases.
 By its construction, $t_Y\circ H^n(t)\circ a_{\omega_X}$ is the canonical trace on $X$.
+
 :::
 
-<1>4. The same assertion holds for nonsingular schemes with components of different dimensions, with canonical sheaves understood componentwise.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The same assertion holds for nonsingular schemes with components of different dimensions, with canonical sheaves understood componentwise.
+
+::: pf-proof
+
 A noetherian nonsingular scheme is a finite disjoint union of nonsingular integral open-and-closed components: its local rings are domains, so distinct irreducible components cannot meet.
 Write these components as $X_a$ and $Y_b$, and on a component $Z$ of dimension $d$ use $\omega_Z=\Omega_{Z/k}^d$.
 Every $X_a$ maps to a single $Y_b$.
 Its closed image has dimension $\dim X_a$, since the morphism onto its image is finite; affinely this is equality of dimensions for an integral ring extension.
 Thus $\dim X_a\le\dim Y_b$.
 
-For equal dimensions, step <1>3 applied to $X_a\to Y_b$ gives its canonical trace.
+For equal dimensions, step [](#s3){.pf-ref} applied to $X_a\to Y_b$ gives its canonical trace.
 For strictly smaller dimension, the image is a proper closed subset of the integral $Y_b$.
 Every morphism from the coherent sheaf $f_*\omega_{X_a}$ to the invertible sheaf $\omega_{Y_b}$ is zero: the source has zero generic stalk and its local sections are torsion, whereas the target is torsion-free.
 Use this uniquely possible zero map on that component.
 Summing these finitely many component maps constructs the natural trace on all of $Y$.
 This also covers the statement when nonsingular projective schemes are not assumed equidimensional.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 construct and verify the dualizing sheaf in (a), and steps <1>3--<1>4 construct the canonical trace in (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct and verify the dualizing sheaf in (a), and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} construct the canonical trace in (b).
+
+:::
+
+:::
+
 :::

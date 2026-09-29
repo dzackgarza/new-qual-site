@@ -27,17 +27,28 @@ then $f(x)=0$ for every $x\in[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that there is a point $x_0\in[0,1]$
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that there is a point $x_0\in[0,1]$
 with
 $$
 f(x_0)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the negation of the desired conclusion because $f$ is nonnegative.
+
 :::
 
-<1>2. There are numbers $a,b$ with
+:::
+
+::: {.pf-step #s2}
+
+There are numbers $a,b$ with
 $$
 0\leq a<b\leq1
 $$
@@ -47,7 +58,8 @@ f(x)\geq\frac{f(x_0)}2
 \qquad(a\leq x\leq b).
 $$
 
-::: {.proof}
+::: pf-proof
+
 By continuity of $f$ at $x_0$, there is $\delta>0$ such that
 $$
 \abs{x-x_0}<\delta
@@ -68,12 +80,18 @@ f(x)
 =\frac{f(x_0)}2,
 $$
 which gives the claimed weak inequality.
+
 :::
 
-<1>3. The integral of $f$ over $[0,1]$ is strictly positive.
+:::
 
-::: {.proof}
-Since $f\geq0$ on $[0,1]$, step <1>2 and monotonicity of the Riemann
+::: {.pf-step #s3}
+
+The integral of $f$ over $[0,1]$ is strictly positive.
+
+::: pf-proof
+
+Since $f\geq0$ on $[0,1]$, step [](#s2){.pf-ref} and monotonicity of the Riemann
 integral give
 $$
 \begin{aligned}
@@ -84,27 +102,45 @@ $$
 &>0.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The assumption in step <1>1 is impossible.
+:::
 
-::: {.proof}
-Step <1>3 contradicts the hypothesis
+::: {.pf-step #s4}
+
+The assumption in step [](#s1){.pf-ref} is impossible.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} contradicts the hypothesis
 $$
 \int_0^1 f(x)\,dx=0.
 $$
+
 :::
 
-<1>5. Therefore $f(x)=0$ for every $x\in[0,1]$.
+:::
 
-::: {.proof}
-The function is nonnegative by hypothesis, and step <1>4 shows that it is
+::: {.pf-step #s5}
+
+Therefore $f(x)=0$ for every $x\in[0,1]$.
+
+::: pf-proof
+
+The function is nonnegative by hypothesis, and step [](#s4){.pf-ref} shows that it is
 never positive. Hence it vanishes identically.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

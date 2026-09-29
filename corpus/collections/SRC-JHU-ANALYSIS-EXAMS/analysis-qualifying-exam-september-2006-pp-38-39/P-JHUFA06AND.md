@@ -34,8 +34,14 @@ Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\left| f ^ { 
 ::: {.solution}
 The maximum is $\boxed{6}$.
 
-<1>1. Schwarz's lemma gives $|f'(0)|\leq6$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Schwarz's lemma gives $|f'(0)|\leq6$.
+
+::: pf-proof
+
 Define
 $$
 g(z)=\frac{f(z)-3i}{f(z)+3i}.
@@ -53,10 +59,17 @@ g'(0)=\frac{6i}{(f(0)+3i)^2}f'(0)=\frac{f'(0)}{6i}.
 $$
 Schwarz's lemma gives $|g'(0)|\leq1$, hence the asserted
 bound [@SS03].
+
 :::
 
-<1>2. Explicit maps attain the bound.
-::: {.proof}
+:::
+
+::: pf-step
+
+Explicit maps attain the bound.
+
+::: pf-proof
+
 For $|\lambda|=1$, set
 $$
 f_\lambda(z)=3i\frac{1+\lambda z}{1-\lambda z}.
@@ -69,8 +82,14 @@ $$
 Hence $f_\lambda:D\to H$ is holomorphic, with
 $f_\lambda(0)=3i$ and $f_\lambda'(0)=6i\lambda$.
 Its derivative has modulus six, so the upper bound is a
-maximum. Moreover, equality in step <1>1 forces
+maximum. Moreover, equality in step [](#s1){.pf-ref} forces
 $g(z)=\lambda z$ by the equality case of Schwarz's lemma
 [@SS03]; inversion gives precisely the displayed maps.
+
 :::
+
+:::
+
+:::
+
 :::

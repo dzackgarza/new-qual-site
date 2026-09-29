@@ -43,13 +43,18 @@ For $n\ge1$, let $g_n=f^{\circ n}$. Choose $R>0$ such that
 $|w|\le R$ for every $w\in U$, and choose $r>0$ such that
 $\{z:|z|\le r\}\subset U$.
 
-<1>1. For every $n\ge1$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\ge1$,
 $$
 g_n(z)=z+na_2z^2+O(z^3)
 $$
 as $z\to0$.
 
-::: {.proof}
+::: pf-proof
+
 For $n=1$ this is the given Taylor expansion of $f$. Suppose
 $$
 g_n(z)=z+na_2z^2+O(z^3).
@@ -74,26 +79,38 @@ g_{n+1}(z)
 \end{aligned}
 $$
 The claim follows by induction.
+
 :::
 
-<1>2. For every $n\ge1$ and every $z$ with $|z|=r$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n\ge1$ and every $z$ with $|z|=r$,
 $$
 |g_n(z)|\le R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each iterate $g_n$ maps $U$ into $U$ because $f(U)\subset U$. Since the
 circle $|z|=r$ lies in $U$, one has $g_n(z)\in U$, and the choice of $R$
 gives the estimate.
+
 :::
 
-<1>3. For every $n\ge1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n\ge1$,
 $$
 n|a_2|\le\frac{R}{r^2}.
 $$
 
-::: {.proof}
-By step <1>1, the coefficient of $z^2$ in the Taylor expansion of $g_n$
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the coefficient of $z^2$ in the Taylor expansion of $g_n$
 at $0$ is $na_2$. Cauchy's coefficient formula therefore gives
 $$
 na_2
@@ -101,7 +118,7 @@ na_2
 \frac{1}{2\pi i}
 \int_{|z|=r}\frac{g_n(z)}{z^3}\,dz.
 $$
-Using step <1>2 and the fact that the circle has length $2\pi r$,
+Using step [](#s2){.pf-ref} and the fact that the circle has length $2\pi r$,
 $$
 \begin{aligned}
 n|a_2|
@@ -111,24 +128,36 @@ n|a_2|
 \frac{R}{r^2}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \boxed{a_2=0}.
 $$
 
-::: {.proof}
-Step <1>3 yields
+::: pf-proof
+
+Step [](#s3){.pf-ref} yields
 $$
 |a_2|\le\frac{R}{nr^2}
 $$
 for every $n\ge1$. Letting $n\to\infty$ gives $|a_2|=0$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

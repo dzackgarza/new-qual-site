@@ -36,7 +36,11 @@ Set
 We prove that $\tau\sigma\tau^{-1}$ and $\rho$ agree on every element of
 $\{1,\ldots,n\}$.
 
-<1>1. For $1\le j<r$,
+::: pf
+
+::: {.pf-step #s1}
+
+For $1\le j<r$,
 \[
 (\tau\sigma\tau^{-1})(\tau(i_j))=\tau(i_{j+1}),
 \]
@@ -44,7 +48,9 @@ and
 \[
 (\tau\sigma\tau^{-1})(\tau(i_r))=\tau(i_1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $j<r$,
 \[
 (\tau\sigma\tau^{-1})(\tau(i_j))
@@ -58,11 +64,18 @@ while
 =\tau(i_1).
 \]
 These are exactly the values of $\rho$ on its support.
+
 :::
 
-<1>2. Every point outside $\{\tau(i_1),\ldots,\tau(i_r)\}$ is fixed by
+:::
+
+::: {.pf-step #s2}
+
+Every point outside $\{\tau(i_1),\ldots,\tau(i_r)\}$ is fixed by
 $\tau\sigma\tau^{-1}$.
-::: {.proof}
+
+::: pf-proof
+
 Let $x\notin\{\tau(i_1),\ldots,\tau(i_r)\}$. Since $\tau$ is bijective,
 $\tau^{-1}(x)\notin\{i_1,\ldots,i_r\}$, so $\sigma$ fixes
 $\tau^{-1}(x)$. Therefore
@@ -72,14 +85,27 @@ $\tau^{-1}(x)$. Therefore
 =x.
 \]
 The cycle $\rho$ fixes the same points.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \tau\sigma\tau^{-1}
 =(\tau(i_1)\ \tau(i_2)\ \cdots\ \tau(i_r)).
 \]
-::: {.proof}
-By <1>1 and <1>2 the two permutations agree on every point.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} the two permutations agree on every point.
+
 :::
+
+:::
+
+:::
+
 :::

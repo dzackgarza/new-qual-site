@@ -32,12 +32,18 @@ Suppose that $f$ is a twice-differentiable real-valued function on the real line
 :::
 
 ::: {.solution}
-<1>1. For all $x,y\in\RR$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For all $x,y\in\RR$,
 $$
 |f'(x)-f'(y)|\le|x-y|.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $x\ne y$, the mean value theorem applied to $f'$ gives a point
 $c$ between $x$ and $y$ such that
 $$
@@ -45,9 +51,14 @@ f'(x)-f'(y)=f''(c)(x-y).
 $$
 Since $|f''(c)|\le1$, the claimed estimate follows. The case $x=y$ is
 immediate.
+
 :::
 
-<1>2. Fix $x_0\in\RR$ and put $M\coloneqq|f'(x_0)|$. After replacing
+:::
+
+::: {.pf-step #s2}
+
+Fix $x_0\in\RR$ and put $M\coloneqq|f'(x_0)|$. After replacing
 $f$ by $-f$ if necessary, one may assume $f'(x_0)=M\ge0$, and then
 $$
 f'(x_0+t)\ge M-|t|
@@ -55,9 +66,10 @@ f'(x_0+t)\ge M-|t|
 (-M\le t\le M).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Replacing $f$ by $-f$ preserves the hypotheses and the value of
-$|f'(x_0)|$. Under the resulting assumption $f'(x_0)=M$, step <1>1
+$|f'(x_0)|$. Under the resulting assumption $f'(x_0)=M$, step [](#s1){.pf-ref}
 gives
 $$
 f'(x_0+t)
@@ -66,16 +78,22 @@ f'(x_0)-|t|
 =
 M-|t|.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 M^2\le2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f'$ is continuous, the fundamental theorem of calculus and step
-<1>2 give
+[](#s2){.pf-ref} give
 $$
 \begin{aligned}
 f(x_0+M)-f(x_0-M)
@@ -92,15 +110,21 @@ $$
 f(x_0+M)-f(x_0-M)\le2.
 $$
 Combining the inequalities yields $M^2\le2$.
+
 :::
 
-<1>4. In fact,
+:::
+
+::: {.pf-step #s4}
+
+In fact,
 $$
 M^2<2.
 $$
 
-::: {.proof}
-Suppose instead that $M^2=2$. Then every inequality in step <1>3 must
+::: pf-proof
+
+Suppose instead that $M^2=2$. Then every inequality in step [](#s3){.pf-ref} must
 be an equality. In particular, the continuous nonnegative function
 $$
 q(t)\coloneqq
@@ -118,25 +142,37 @@ $$
 The left derivative of $f'$ at $x_0$ would then be $1$, while its right
 derivative would be $-1$. This contradicts the existence of
 $f''(x_0)$. Thus equality is impossible.
+
 :::
 
-<1>5. The choice
+:::
+
+::: {.pf-step #s5}
+
+The choice
 $$
 \boxed{b=\sqrt2}
 $$
 works.
 
-::: {.proof}
-The point $x_0$ was arbitrary. By step <1>4,
+::: pf-proof
+
+The point $x_0$ was arbitrary. By step [](#s4){.pf-ref},
 $$
 |f'(x_0)|^2=M^2<2,
 $$
 and therefore $|f'(x_0)|<\sqrt2$ for every $x_0\in\RR$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 supplies the required constant and bound.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} supplies the required constant and bound.
+
+:::
+
+:::
+
 :::

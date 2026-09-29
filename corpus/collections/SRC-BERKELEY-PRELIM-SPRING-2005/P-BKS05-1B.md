@@ -32,13 +32,19 @@ Prove that G is abelian.
 :::
 
 ::: {.solution}
-<1>1. Every element $x\in G$ can be written as a product
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every element $x\in G$ can be written as a product
 $$
 x=x_1\cdots x_s
 $$
 in which each nonidentity factor $x_i$ has prime-power order.
 
-::: {.proof}
+::: pf-proof
+
 If $x=1$, there is nothing to prove. Suppose $x$ has order
 $$
 n=\prod_{i=1}^s p_i^{e_i},
@@ -74,12 +80,18 @@ Moreover, for $j\neq i$ the integer $a_i$ is divisible by $n_j$, so
 the order of $x_i$ divides $n_i=p_i^{e_i}$. Since
 $a_i\equiv1\pmod{n_i}$, its order is in fact $n_i$, hence a prime
 power.
+
 :::
 
-<1>2. Any two elements $x,y\in G$ commute.
+:::
 
-::: {.proof}
-Apply step <1>1 to write
+::: {.pf-step #s2}
+
+Any two elements $x,y\in G$ commute.
+
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} to write
 $$
 x=x_1\cdots x_s,
 \qquad
@@ -97,18 +109,30 @@ xy
 =(y_1\cdots y_t)(x_1\cdots x_s)
 =yx.
 $$
+
 :::
 
-<1>3. The group $G$ is abelian.
+:::
 
-::: {.proof}
-The elements $x,y$ in step <1>2 were arbitrary, so every pair of
+::: {.pf-step #s3}
+
+The group $G$ is abelian.
+
+::: pf-proof
+
+The elements $x,y$ in step [](#s2){.pf-ref} were arbitrary, so every pair of
 elements of $G$ commutes.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

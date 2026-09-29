@@ -36,37 +36,57 @@ h_n(X;G)=H_n\bigl(\operatorname{Hom}(G,C_\bullet(X))\bigr)
 \]
 for the three specified groups $G$.
 
-<1>1. If $G=\mathbb Z$, then
+::: pf
+
+::: pf-step
+
+If $G=\mathbb Z$, then
 \[
 \boxed{h_n(X;\mathbb Z)\cong H_n(X;\mathbb Z).}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Evaluation at $1$ gives a natural isomorphism
 \[
 \operatorname{Hom}(\mathbb Z,C_n(X))\cong C_n(X)
 \]
 for every $n$, and under this identification the induced differential is the ordinary singular boundary. Thus the two chain complexes are naturally isomorphic.
+
 :::
 
-<1>2. If $G=\mathbb Z_m$, then
+:::
+
+::: pf-step
+
+If $G=\mathbb Z_m$, then
 \[
 \boxed{h_n(X;\mathbb Z_m)=0}
 \]
 for every $n$.
-::: {.proof}
+
+::: pf-proof
+
 A homomorphism $\mathbb Z_m\to C_n(X)$ must send $1$ to an element annihilated by $m$. Since $C_n(X)$ is free abelian and therefore torsion-free, the only such element is $0$. Hence
 \[
 \operatorname{Hom}(\mathbb Z_m,C_n(X))=0
 \]
 in every degree.
+
 :::
 
-<1>3. If $G=\mathbb Q$, then
+:::
+
+::: pf-step
+
+If $G=\mathbb Q$, then
 \[
 \boxed{h_n(X;\mathbb Q)=0}
 \]
 for every $n$.
-::: {.proof}
+
+::: pf-proof
+
 Let $\varphi:\mathbb Q\to C_n(X)$ be a homomorphism and put $c=\varphi(1)$. For every positive integer $r$,
 \[
 c=r\,\varphi(1/r),
@@ -76,6 +96,11 @@ so $c$ is divisible by every $r$. A free abelian group has no nonzero element di
 b\varphi(a/b)=a\varphi(1)=0,
 \]
 and torsion-freeness gives $\varphi(a/b)=0$. Thus every such homomorphism is zero.
+
+:::
+
+:::
+
 :::
 
 So this construction behaves very differently from ordinary homology: for torsion or divisible coefficient groups it can vanish identically.

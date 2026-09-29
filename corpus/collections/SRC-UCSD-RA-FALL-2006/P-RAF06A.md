@@ -54,8 +54,15 @@ Then there is a subsequence $\{f_{n_k}\}$ such that $\lim_{k \to \infty} \int_X 
 :::
 
 ::: {.solution}
-<1>1. Part (a) is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is true.
+
+::: pf-proof
+
 The assumption that $\mu(B)<\infty$ for every bounded Borel set makes $\mu$ locally finite. A locally finite Borel measure on $\mathbb R$ is a Radon measure, hence is inner regular on Borel sets. Therefore
 \[
 \mu(E)=\sup\{\mu(K):K\subseteq E,\ K\text{ compact}\}.
@@ -64,10 +71,17 @@ Every compact $K\subseteq E$ has $\mu(K)=0$ by hypothesis, so
 \[
 \boxed{\mu(E)=0.}
 \]
+
 :::
 
-<1>2. Part (b) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is true.
+
+::: pf-proof
+
 Define
 \[
 \eta(x):=|f(x)|+|x|.
@@ -90,10 +104,17 @@ so $u_1$ also vanishes only at $0$. Thus the required approximation holds exactl
 \[
 \sup_{[-1,1]}|f-u_1-u_2|=0<\varepsilon.
 \]
+
 :::
 
-<1>3. Part (c) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is false.
+
+::: pf-proof
+
 Let
 \[
 X=\{1,2,3\},\qquad
@@ -125,10 +146,17 @@ If there were a measurable $g:X\to\mathbb C$ with $\nu=g\,d\mu$, then
 \nu(\{1\})=\int_{\{1\}}g\,d\mu=0,
 \]
 contradicting $\nu(\{1\})=1$. Hence the assertion is false. The missing condition is domination on all measurable subsets of $A$, equivalently $|\nu|(A)=0$, not merely $\nu(A)=0$.
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 For each $n$, define
 \[
 T_n:L^{4/3}(X,\mu)\to\mathbb C,
@@ -160,10 +188,17 @@ Therefore
 \[
 \boxed{\sup_n\|f_n\|_4<\infty.}
 \]
+
 :::
 
-<1>5. Part (e) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (e) is true.
+
+::: pf-proof
+
 For $1<p<\infty$, the Banach space $L^p(X,\mu)$ is reflexive. Hence the closed ball
 \[
 \{f\in L^4:\|f\|_4\le M\}
@@ -177,5 +212,11 @@ Thus there exists $f\in L^4(X,\mu)$ such that for every $g\in L^{4/3}(X,\mu)$,
 \int_X fg\,d\mu.
 \]
 In particular, the required scalar limit exists for every $g\in L^{4/3}$.
+
 :::
+
+:::
+
+:::
+
 :::

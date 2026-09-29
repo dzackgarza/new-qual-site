@@ -20,15 +20,27 @@ Find the values of $p$ for which $M(p)$ is homotopy equivalent to a compact boun
 :::
 
 ::: {.solution}
-<1>1. The space $M(p)$ has a CW structure with one cell in dimensions $0,1,2$ and cellular boundary
+
+::: pf
+
+::: pf-step
+
+The space $M(p)$ has a CW structure with one cell in dimensions $0,1,2$ and cellular boundary
 $$
 \partial_2:\mathbb Z\xrightarrow{\ p\ }\mathbb Z.
 $$
-::: {.proof}
+
+::: pf-proof
+
 The boundary circle of the $2$-disk is identified by the degree-$p$ map onto the resulting $1$-cell. This is the standard Moore space $M(\mathbb Z/p,1)$.
+
 :::
 
-<1>2. Thus
+:::
+
+::: pf-step
+
+Thus
 $$
 H_i(M(p);\mathbb Z)\cong
 \begin{cases}
@@ -37,30 +49,66 @@ H_i(M(p);\mathbb Z)\cong
 0,&i\ge2.
 \end{cases}
 $$
-::: {.proof}
+
+::: pf-proof
+
 This is the homology of the cellular complex $0\to\mathbb Z\xrightarrow p\mathbb Z\to\mathbb Z\to0$.
+
 :::
 
-<1>3. If $p$ is odd, then $M(p)$ has trivial reduced homology with $\mathbb F_2$ coefficients.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If $p$ is odd, then $M(p)$ has trivial reduced homology with $\mathbb F_2$ coefficients.
+
+::: pf-proof
+
 Modulo $2$, multiplication by the odd integer $p$ is an isomorphism, so the cellular chain complex is exact in positive degrees.
+
 :::
 
-<1>4. Hence for odd $p$, $M(p)$ cannot be homotopy equivalent to a compact connected boundaryless manifold of positive dimension.
-::: {.proof}
-Every closed connected $d$-manifold has $H_d(-;\mathbb F_2)\cong\mathbb F_2$ by mod-$2$ Poincaré duality, whereas <1>3 gives zero reduced mod-$2$ homology in every positive degree.
 :::
 
-<1>5. For $p=2$, $M(2)$ is homeomorphic to $\mathbb{RP}^2$.
-::: {.proof}
+::: {.pf-step #s4}
+
+Hence for odd $p$, $M(p)$ cannot be homotopy equivalent to a compact connected boundaryless manifold of positive dimension.
+
+::: pf-proof
+
+Every closed connected $d$-manifold has $H_d(-;\mathbb F_2)\cong\mathbb F_2$ by mod-$2$ Poincaré duality, whereas step [](#s3){.pf-ref} gives zero reduced mod-$2$ homology in every positive degree.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+For $p=2$, $M(2)$ is homeomorphic to $\mathbb{RP}^2$.
+
+::: pf-proof
+
 The standard disk model of $\mathbb{RP}^2$ identifies antipodal points of the boundary circle, equivalently attaches a $2$-cell to $S^1$ by the degree-$2$ map. This is precisely $M(2)$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{p=2\text{ is the unique prime for which }M(p)\text{ has the homotopy type of a closed manifold}.}
 $$
-::: {.proof}
-Combine <1>4 and <1>5.
+
+::: pf-proof
+
+Combine steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

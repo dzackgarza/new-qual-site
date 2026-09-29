@@ -28,21 +28,42 @@ Use the Wirtinger-operator identity for the Laplacian to prove that if $f$ is ho
 :::
 
 ::: {.solution}
-<1>1. Write $f=u+iv$, where $u,v:\Omega\to\mathbb R$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Write $f=u+iv$, where $u,v:\Omega\to\mathbb R$.
+
+::: pf-proof
+
 Every complex-valued function has uniquely determined real and imaginary parts.
+
 :::
 
-<1>2. Since $f$ is holomorphic,
+:::
+
+::: pf-step
+
+Since $f$ is holomorphic,
 \[
 \frac{\partial f}{\partial\overline z}=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a holomorphic function, the Cauchy-Riemann equations are equivalent to vanishing of the $\overline z$-Wirtinger derivative.
+
 :::
 
-<1>3. Hence $\Delta f=0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Hence $\Delta f=0$.
+
+::: pf-proof
+
 Holomorphic functions are smooth, so the identity $4\partial_z\partial_{\overline z}=\Delta$ of [[E-SS1.EX-10]] applies. Thus
 \[
 \Delta f
@@ -50,22 +71,42 @@ Holomorphic functions are smooth, so the identity $4\partial_z\partial_{\overlin
 =4\frac{\partial}{\partial z}(0)
 =0.
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 \[
 \Delta f=\Delta u+i\Delta v.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The Laplacian is real-linear and acts componentwise on $f=u+iv$.
+
 :::
 
-<1>5. Therefore $\Delta u=0$ and $\Delta v=0$ on $\Omega$.
-::: {.proof}
-By <1>3 and <1>4,
+:::
+
+::: pf-step
+
+Therefore $\Delta u=0$ and $\Delta v=0$ on $\Omega$.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 \[
 \Delta u+i\Delta v=0.
 \]
 Both $\Delta u$ and $\Delta v$ are real-valued, so the real and imaginary parts vanish separately. Thus $u$ and $v$ are harmonic.
+
 :::
+
+:::
+
+:::
+
 :::

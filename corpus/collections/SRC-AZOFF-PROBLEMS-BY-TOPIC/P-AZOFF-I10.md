@@ -46,7 +46,11 @@ $$
 \phi_c(z)=\frac{z-c}{1-\bar c z}.
 $$
 
-<1>1. The map $\phi_c$ is an automorphism of $\DD$ satisfying
+::: pf
+
+::: {.pf-step #s1}
+
+The map $\phi_c$ is an automorphism of $\DD$ satisfying
 $$
 \phi_c(c)=0
 $$
@@ -55,7 +59,8 @@ $$
 \phi_c'(c)=\frac1{1-\abs{c}^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The standard disk automorphism formula shows that $\phi_c$ maps $\DD$
 biholomorphically onto itself and sends $c$ to $0$. Differentiating gives
 $$
@@ -71,9 +76,14 @@ $$
 =
 \frac1{1-\abs{c}^2}.
 $$
+
 :::
 
-<1>2. Fix $a\in\DD$, put
+:::
+
+::: {.pf-step #s2}
+
+Fix $a\in\DD$, put
 $$
 b=f(a),
 $$
@@ -83,8 +93,9 @@ F=\phi_b\circ f\circ\phi_a^{-1}.
 $$
 Then $F:\DD\to\DD$ is analytic and $F(0)=0$.
 
-::: {.proof}
-By step <1>1, both $\phi_a^{-1}$ and $\phi_b$ are disk automorphisms.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, both $\phi_a^{-1}$ and $\phi_b$ are disk automorphisms.
 Since $f$ is an analytic self-map of $\DD$, their composition $F$ is also
 an analytic self-map of $\DD$. Moreover,
 $$
@@ -98,18 +109,29 @@ F(0)
 =
 0.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \abs{F'(0)}\leq1.
 $$
 
-::: {.proof}
-This is Schwarz's lemma applied to the function in step <1>2.
+::: pf-proof
+
+This is Schwarz's lemma applied to the function in step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The derivative of $F$ at the origin is
+:::
+
+::: {.pf-step #s4}
+
+The derivative of $F$ at the origin is
 $$
 F'(0)
 =
@@ -118,7 +140,8 @@ F'(0)
 f'(a).
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the chain rule,
 $$
 F'(0)
@@ -127,7 +150,7 @@ F'(0)
 f'(a)\,
 (\phi_a^{-1})'(0).
 $$
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 \phi_b'(b)
 =
@@ -142,9 +165,14 @@ $$
 1-\abs{a}^2.
 $$
 Substituting $b=f(a)$ gives the displayed formula.
+
 :::
 
-<1>5. For every $a\in\DD$,
+:::
+
+::: {.pf-step #s5}
+
+For every $a\in\DD$,
 $$
 \boxed{
 \frac{\abs{f'(a)}}{1-\abs{f(a)}^2}
@@ -153,8 +181,9 @@ $$
 }
 $$
 
-::: {.proof}
-Taking absolute values in step <1>4 and using step <1>3 gives
+::: pf-proof
+
+Taking absolute values in step [](#s4){.pf-ref} and using step [](#s3){.pf-ref} gives
 $$
 \frac{1-\abs{a}^2}
 {1-\abs{f(a)}^2}
@@ -163,11 +192,17 @@ $$
 $$
 Both denominators are positive because $a,f(a)\in\DD$. Dividing by
 $1-\abs{a}^2$ yields the required inequality.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the claimed Schwarz--Pick derivative inequality.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the claimed Schwarz--Pick derivative inequality.
+
+:::
+
+:::
+
 :::

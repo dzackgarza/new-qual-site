@@ -28,15 +28,21 @@ audit:
 2. Prove that $O(2)$ is a semidirect product of $SO(2)$ and a group of order $2$.
 :::
 
-
 ::: {.remark}
 The restriction $n\ge2$ is necessary: $S_1=A_1$ is trivial and has no subgroup
 of order two.
 :::
 
 ::: {.solution}
-<1>1. For $n\ge2$, $S_n=A_n\rtimes\langle(12)\rangle$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+For $n\ge2$, $S_n=A_n\rtimes\langle(12)\rangle$.
+
+::: pf-proof
+
 The sign map
 $$
 \operatorname{sgn}:S_n\to\{\pm1\}
@@ -62,10 +68,17 @@ S_n=A_n\rtimes H.
 $$
 The corresponding action of $H$ on $A_n$ is conjugation by the transposition
 $\tau$.
+
 :::
 
-<1>2. $O(2)=SO(2)\rtimes\langle R\rangle$ for a reflection $R$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$O(2)=SO(2)\rtimes\langle R\rangle$ for a reflection $R$.
+
+::: pf-proof
+
 The determinant map
 $$
 \det:O(2)\to\{\pm1\}
@@ -94,5 +107,11 @@ O(2)=SO(2)\rtimes K.
 $$
 Conjugation by $R$ sends a rotation through angle $\theta$ to the rotation
 through angle $-\theta$, giving the usual semidirect-product action.
+
 :::
+
+:::
+
+:::
+
 :::

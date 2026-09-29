@@ -37,14 +37,19 @@ $$
 For $R>1$, integrate $F$ over the positively oriented upper semicircle with
 diameter $[-R,R]$.
 
-<1>1. The poles of $F$ in the upper half-plane are
+::: pf
+
+::: {.pf-step #s1}
+
+The poles of $F$ in the upper half-plane are
 $$
 \zeta_1=e^{i\pi/4}
 \qquad\text{and}\qquad
 \zeta_2=e^{3i\pi/4}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The poles are the roots of
 $$
 z^4=-1=e^{i(\pi+2\pi k)}.
@@ -56,9 +61,14 @@ z=e^{i(\pi/4+k\pi/2)},
 k=0,1,2,3.
 $$
 Exactly the roots with $k=0,1$ lie in the upper half-plane.
+
 :::
 
-<1>2. The residues at the two upper-half-plane poles are
+:::
+
+::: {.pf-step #s2}
+
+The residues at the two upper-half-plane poles are
 $$
 \Res(F;\zeta_1)
 =
@@ -69,7 +79,8 @@ $$
 -\frac{i}{2\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each pole is simple, so for a root $\zeta$ of $1+z^4$,
 $$
 \Res(F;\zeta)
@@ -114,12 +125,18 @@ $$
 -\frac{i}{2\sqrt2}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The integral over the upper semicircular arc tends to zero as
+:::
+
+::: {.pf-step #s3}
+
+The integral over the upper semicircular arc tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=R$,
 $$
 \abs{1+z^2}\leq1+R^2
@@ -143,9 +160,14 @@ $$
 \frac{\pi R(1+R^2)}{R^4-1}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. The requested integral is
+:::
+
+::: {.pf-step #s4}
+
+The requested integral is
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -155,8 +177,9 @@ $$
 }
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2, the sum of the enclosed residues is
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the sum of the enclosed residues is
 $$
 -\frac{i}{\sqrt2}.
 $$
@@ -170,12 +193,18 @@ $$
 \sqrt2\,\pi.
 $$
 Split the contour into the real segment and the upper arc. Let
-$R\to\infty$ and use step <1>3 to obtain the displayed improper integral.
+$R\to\infty$ and use step [](#s3){.pf-ref} to obtain the displayed improper integral.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

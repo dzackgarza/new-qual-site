@@ -31,8 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The ring $\mathbb Z\times\mathbb Z$ has maximal ideals.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The ring $\mathbb Z\times\mathbb Z$ has maximal ideals.
+
+::: pf-proof
+
 For example, let
 $$
 M=2\mathbb Z\times\mathbb Z.
@@ -48,10 +55,17 @@ $$
 (\mathbb Z\times\mathbb Z)/M\cong\mathbb Z/2\mathbb Z,
 $$
 which is a field. Therefore $M$ is maximal.
+
 :::
 
-<1>2. The ring has nonzero zero divisors.
-::: {.proof}
+:::
+
+::: pf-step
+
+The ring has nonzero zero divisors.
+
+::: pf-proof
+
 The two elements
 $$
 (1,0),\qquad(0,1)
@@ -61,5 +75,11 @@ $$
 (1,0)(0,1)=(0,0).
 $$
 Thus each is a nonzero zero divisor, and their product is zero as required.
+
 :::
+
+:::
+
+:::
+
 :::

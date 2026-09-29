@@ -31,9 +31,14 @@ Choose a family $(s_\lambda)_{\lambda\in\Lambda}$ of global sections generating 
 We will find a finite subfamily which still generates it.
 The [[D-SCHFORMAL|noetherian hypothesis]] includes quasi-compactness of the underlying space.
 
-<1>1. For each $x\in\mathfrak X$, finitely many of the $s_\lambda$ generate $\mcf$ on an open neighborhood of $x$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For each $x\in\mathfrak X$, finitely many of the $s_\lambda$ generate $\mcf$ on an open neighborhood of $x$.
+
+::: pf-proof
+
 The coherent sheaf $\mcf$ is locally of finite type, so $\mcf_x$ is a finite $\OO_{\mathfrak X,x}$-module [@Har10a, Chapter II, §9].
 Express a finite generating set of this module as finite linear combinations of the germs $(s_\lambda)_x$.
 Only finitely many indices occur; let $\Lambda_x\subseteq\Lambda$ be their union.
@@ -49,12 +54,18 @@ Their germs at $x$ are all zero, since $(Q_x)_x=0$.
 Each section therefore vanishes on a neighborhood of $x$; intersect these finitely many neighborhoods to obtain an open $U_x\subseteq V$ on which all the generators vanish.
 It follows that $Q_x|_{U_x}=0$.
 The sections indexed by $\Lambda_x$ thus generate $\mcf$ throughout $U_x$.
+
 :::
 
-<1>2. A finite subfamily generates $\mcf$ on all of $\mathfrak X$.
+:::
 
-::: {.proof}
-The open sets $U_x$ of step <1>1 cover $\mathfrak X$.
+::: {.pf-step #s2}
+
+A finite subfamily generates $\mcf$ on all of $\mathfrak X$.
+
+::: pf-proof
+
+The open sets $U_x$ of step [](#s1){.pf-ref} cover $\mathfrak X$.
 By quasi-compactness, choose a finite subcover $U_{x_1},\ldots,U_{x_t}$.
 The set
 $$
@@ -67,13 +78,19 @@ $$
 \boxed{\OO_{\mathfrak X}^{\oplus N}\twoheadrightarrow\mcf.}
 $$
 For the empty formal scheme or the zero sheaf, an empty generating family suffices.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 gives finite generating subfamilies on neighborhoods, and step <1>2 selects finitely many of those neighborhoods to give the required global finite family.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives finite generating subfamilies on neighborhoods, and step [](#s2){.pf-ref} selects finitely many of those neighborhoods to give the required global finite family.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Quasi-compactness cannot simply be omitted"}

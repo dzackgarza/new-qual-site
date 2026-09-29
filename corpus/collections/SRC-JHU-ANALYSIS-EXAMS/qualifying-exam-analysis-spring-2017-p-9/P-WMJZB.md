@@ -41,8 +41,15 @@ converges to $f .$ (You may use the fact that a weakly convergent sequence is a 
 :::
 
 ::: {.solution}
-<1>1. Prove part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a).
+
+::: pf-proof
+
 If $f_k\to f$ in norm, then continuity of the norm gives
 \[
 \|f_k\|\to\|f\|,
@@ -75,10 +82,17 @@ and the norm hypothesis gives $\|f_k\|^2\to\|f\|^2$. Hence
 \|f_k-f\|\to0.
 \]
 This proves the equivalence.
+
 :::
 
-<1>2. Prove part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove part (b).
+
+::: pf-proof
+
 Suppose first that $H$ is finite dimensional, and let
 \[
 e_1,\dots,e_N
@@ -108,10 +122,17 @@ hence
 \langle e_n,g\rangle\to0.
 \]
 Thus $e_n\rightharpoonup0$ but not strongly.
+
 :::
 
-<1>3. Reduce part (c) to a weakly null bounded sequence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Reduce part (c) to a weakly null bounded sequence.
+
+::: pf-proof
+
 Set
 \[
 u_k:=f_k-f.
@@ -136,10 +157,17 @@ for each $j<n$. Hence we can choose $k_n>k_{n-1}$ so large that
 |\langle u_{k_n},u_{k_j}\rangle|\le\frac1n
 \qquad(1\le j<n).
 \]
+
 :::
 
-<1>4. Show that the Cesàro means of the selected subsequence converge in norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the Cesàro means of the selected subsequence converge in norm.
+
+::: pf-proof
+
 Let
 \[
 A_n:=\frac1n\sum_{j=1}^n u_{k_j}.
@@ -167,5 +195,11 @@ in norm. Therefore
 \boxed{
 \frac{f_{k_1}+\cdots+f_{k_n}}n\longrightarrow f.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

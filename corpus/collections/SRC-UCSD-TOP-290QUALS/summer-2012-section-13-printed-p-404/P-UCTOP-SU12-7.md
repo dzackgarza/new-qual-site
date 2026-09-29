@@ -17,25 +17,46 @@ Show that the second homology group $H_2(X; \mathbb{Z})$ of a closed, path-conne
 :::
 
 ::: {.solution}
-<1>1. The manifold $X$ is orientable.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The manifold $X$ is orientable.
+
+::: pf-proof
+
 A connected manifold is orientable iff its orientation character $\pi_1(X)\to\{\pm1\}$ is trivial. Since $X$ is simply connected, this character is trivial.
+
 :::
 
-<1>2. We have
+:::
+
+::: {.pf-step #s2}
+
+We have
 $$
 H_1(X;\mathbb Z)=H_3(X;\mathbb Z)=0.
 $$
-::: {.proof}
+
+::: pf-proof
+
 Simple connectivity gives $H_1=0$. Poincaré duality gives
 $$
 H_3(X)\cong H^1(X),
 $$
 and the universal coefficient theorem gives $H^1(X)=\operatorname{Hom}(H_1(X),\mathbb Z)=0$.
+
 :::
 
-<1>3. The group $H_2(X;\mathbb Z)$ is free abelian.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The group $H_2(X;\mathbb Z)$ is free abelian.
+
+::: pf-proof
+
 Poincaré duality gives $H_2(X)\cong H^2(X)$. The cohomological universal coefficient theorem gives
 $$
 0\to\operatorname{Ext}(H_1(X),\mathbb Z)\to H^2(X)\to\operatorname{Hom}(H_2(X),\mathbb Z)\to0.
@@ -45,28 +66,48 @@ $$
 H^2(X)\cong\operatorname{Hom}(H_2(X),\mathbb Z),
 $$
 which is free abelian. Therefore the isomorphic group $H_2(X)$ is free abelian as well.
+
 :::
 
-<1>4. If $b_2=\operatorname{rank}H_2(X)$, then
+:::
+
+::: {.pf-step #s4}
+
+If $b_2=\operatorname{rank}H_2(X)$, then
 $$
 \chi(X)=2+b_2.
 $$
-::: {.proof}
+
+::: pf-proof
+
 For a closed connected oriented $4$-manifold,
 $$
 H_0(X)\cong H_4(X)\cong\mathbb Z.
 $$
-By <1>2, $H_1$ and $H_3$ vanish. Thus
+By step [](#s2){.pf-ref}, $H_1$ and $H_3$ vanish. Thus
 $$
 \chi(X)=1+b_2+1=2+b_2.
 $$
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{H_2(X;\mathbb Z)\cong\mathbb Z^{\chi(X)-2}}.
 $$
-::: {.proof}
-Combine <1>3 and <1>4.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

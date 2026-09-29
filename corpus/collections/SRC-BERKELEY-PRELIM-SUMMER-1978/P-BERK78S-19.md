@@ -40,27 +40,38 @@ $$
 F(t)=\int_0^t f(x)\,dx.
 $$
 
-<1>1. The function $F$ is continuously differentiable on $\RR$ and
+::: pf
+
+::: {.pf-step #s1}
+
+The function $F$ is continuously differentiable on $\RR$ and
 $$
 F'(t)=f(t)
 $$
 for every $t\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 The function $f$ is continuous on $\RR$. The fundamental theorem of
 calculus therefore applies to the displayed integral and gives
 $$
 F'=f.
 $$
 In particular, $F$ is continuous.
+
 :::
 
-<1>2. The function $F$ is constant on
+:::
+
+::: {.pf-step #s2}
+
+The function $F$ is constant on
 $$
 \RR\sm S.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 p,q\in\RR\sm S.
@@ -84,15 +95,21 @@ $$
 F(p)=F(q)
 $$
 for every pair $p,q\notin S$.
+
 :::
 
-<1>3. The complement
+:::
+
+::: {.pf-step #s3}
+
+The complement
 $$
 \RR\sm S
 $$
 is dense in $\RR$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 (a,b)
@@ -104,18 +121,24 @@ $$
 $$
 Thus every nonempty open interval contains a point of $\RR\sm S$, which
 is exactly density of the complement.
+
 :::
 
-<1>4. The function $F$ is constant on all of $\RR$.
+:::
 
-::: {.proof}
-By step <1>2, there is a real number $c$ such that
+::: {.pf-step #s4}
+
+The function $F$ is constant on all of $\RR$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, there is a real number $c$ such that
 $$
 F(t)=c
 $$
 for every $t\in\RR\sm S$.
 
-Fix arbitrary $t\in\RR$. By step <1>3, choose a sequence
+Fix arbitrary $t\in\RR$. By step [](#s3){.pf-ref}, choose a sequence
 $$
 t_n\in\RR\sm S
 $$
@@ -123,7 +146,7 @@ with
 $$
 t_n\longrightarrow t.
 $$
-Continuity of $F$ from step <1>1 gives
+Continuity of $F$ from step [](#s1){.pf-ref} gives
 $$
 F(t)
 =
@@ -134,9 +157,14 @@ F(t)
 c.
 $$
 Thus $F\equiv c$ on $\RR$.
+
 :::
 
-<1>5. The function $f$ is identically zero:
+:::
+
+::: {.pf-step #s5}
+
+The function $f$ is identically zero:
 $$
 \boxed{
 f(t)=0
@@ -145,17 +173,24 @@ f(t)=0
 }
 $$
 
-::: {.proof}
-By step <1>4, the derivative of $F$ is identically zero. Step <1>1 gives
+::: pf-proof
+
+By step [](#s4){.pf-ref}, the derivative of $F$ is identically zero. Step [](#s1){.pf-ref} gives
 $$
 f=F',
 $$
 so $f\equiv0$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -42,8 +42,14 @@ $$
 \boxed{\frac32+i\quad\text{and}\quad\frac32-i}.
 $$
 
-<1>1. The two contour integrals are the first two power sums of the zeros.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The two contour integrals are the first two power sums of the zeros.
+
+::: pf-proof
+
 Let the zeros of $f$ in $\Omega$, repeated according to multiplicity, be
 $\zeta_1,\dots,\zeta_N$. There are finitely many because $f$ is holomorphic on
 a neighborhood of $\overline\Omega$, has no zero on $C$, and is not identically
@@ -61,10 +67,17 @@ $$
 \qquad
 \sum_{j=1}^N\zeta_j^2=\frac52.
 $$
+
 :::
 
-<1>2. The geometry of $\Omega$ forces $N=2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The geometry of $\Omega$ forces $N=2$.
+
+::: pf-proof
+
 The contour consists of the right semicircle centered at $1$ of radius $3$
 and the vertical segment from $1+3i$ to $1-3i$. Thus every point of the
 interior $\Omega$ satisfies
@@ -77,10 +90,17 @@ $$
 $$
 Hence $N\le2$. If $N=1$, the first identity would give $\zeta_1=3$, but then
 the second would give $\zeta_1^2=9$, contradicting $5/2$. Thus $N=2$.
+
 :::
 
-<1>3. The two power sums determine the two zeros uniquely.
-::: {.proof}
+:::
+
+::: pf-step
+
+The two power sums determine the two zeros uniquely.
+
+::: pf-proof
+
 Let the two zeros be $\zeta_1,\zeta_2$. Then
 $$
 \zeta_1+\zeta_2=3,
@@ -107,5 +127,11 @@ $$
 =\frac14+1=\frac54<9.
 $$
 Thus these are exactly all the zeros requested.
+
 :::
+
+:::
+
+:::
+
 :::

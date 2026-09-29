@@ -50,9 +50,9 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
 
 - **`lamport-conversion`**. **Needs:** none.
   A proof written with typed step numbers (`<1>2.`) violates `STYLE-08`. Convert every such proof to the syntax of pandoc-config's `lamport_proof.lua` filter. This is a syntax conversion: no mathematics and no prose changes.
-  On 2026-09-29 the conversion stood at 1,808 cards converted and committed; 5,140 cards remain.
+  On 2026-09-29 agents converted 1,808 cards and a one-time script converted 4,579 more. The script refused a card whose structure it could not read unambiguously, and it wrote a card only when every source word survived and the filter accepted the result. 449 refused cards and 96 cards an agent skipped remain.
 
-  **Batches.** The remaining cards are listed in 20 batch files, `queues/lamport-conversion/batch-00.tsv` through `batch-19.tsv`, 257 cards each, in path order.
+  **Batches.** The batch files `queues/lamport-conversion/batch-00.tsv` through `batch-19.tsv` list every card in path order. A `pending` row's note gives the script's refusal reason; read the card with that reason in mind.
   Each row is `path<TAB>status<TAB>note`. The status is one of:
 
   | Status | Meaning | Action |
@@ -75,7 +75,7 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
   - The step's proof block becomes `::: pf-proof` inside the step, after the claim. Substeps go inside that pf-proof, after any proof prose, as nested pf-step blocks. A step with substeps but no proof block gets a pf-proof that holds only the substeps. A step with neither stays a bare pf-step.
   - A `Q.E.D.` step becomes `::: pf-qed`. Its proof prose goes directly inside it, with no pf-proof, unless it has substeps; then it holds a pf-proof with them. Delete the words "Q.E.D.". A Q.E.D. step with no proof prose and no substeps is deleted: the filter labels the last step of each level QED.
   - Never add a pf-qed or any sentence to close a level.
-  - A step that another step cites gets an identifier, `::: {.pf-step #kebab-name}`. The name says what the step claims and is unique in the card. Replace each typed citation with `[](#kebab-name){.pf-ref}`, keeping or adding the word "step"/"steps" before it once. A range becomes the individual citations joined by commas and "and", or "… through …" if the source said "through". Resolve a hierarchical citation such as `<2>3` by reading which step it means. A step nobody cites gets no identifier.
+  - A step that another step cites gets an identifier, `::: {.pf-step #s1-2}`: the step's original typed path, unique in the card. The script used this form; a card with several typed proofs prefixes each proof's identifiers with `p1-`, `p2-`, and so on. Replace each typed citation with `[](#s1-2){.pf-ref}`, keeping or adding the word "step"/"steps" before it once. A range becomes the individual citations joined by commas and "and", or "… through …" if the source said "through". Resolve a hierarchical citation such as `<2>3` by reading which step it means. A step nobody cites gets no identifier.
   - The only fence lines are `::: pf`, `::: pf-step`, `::: pf-proof`, `::: pf-qed`, `::: {.pf-step #name}` and the bare closer `:::`. Put a blank line before and after every fence line, openers and closers alike.
   - Remove the hand indentation of step lines and proof bodies. Keep indentation inside display math, lists and code.
   - A `::: pf` block holds only steps. A pf-proof that holds substeps holds only steps, except that it may open with proof prose before its first substep. Anything else between two sibling steps is not allowed there:

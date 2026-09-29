@@ -68,7 +68,11 @@ s_N^n
 \end{pmatrix}.
 $$
 
-<1>1. If $\abs z\le1$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $\abs z\le1$, then
 $$
 \left|
 e^z-\sum_{n=0}^{m-1}\frac{z^n}{n!}
@@ -77,7 +81,8 @@ e^z-\sum_{n=0}^{m-1}\frac{z^n}{n!}
 \frac2{m!}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponential series gives
 $$
 \left|
@@ -109,9 +114,14 @@ $$
 \end{aligned}
 $$
 since $m\ge1$.
+
 :::
 
-<1>2. Define the matrix $B$ by
+:::
+
+::: {.pf-step #s2}
+
+Define the matrix $B$ by
 $$
 B_{ij}
 \coloneqq
@@ -126,7 +136,8 @@ $$
 $$
 for every $i,j$.
 
-::: {.proof}
+::: pf-proof
+
 The hypotheses give
 $$
 \abs{t_i s_j}
@@ -135,7 +146,7 @@ $$
 \le
 1.
 $$
-Apply step <1>1 to
+Apply step [](#s1){.pf-ref} to
 $$
 z=t_i s_j.
 $$
@@ -144,9 +155,14 @@ $$
 A_{ij}=e^{t_i s_j},
 $$
 the displayed estimate follows.
+
 :::
 
-<1>3. The matrix $B$ has the decomposition
+:::
+
+::: {.pf-step #s3}
+
+The matrix $B$ has the decomposition
 $$
 B
 =
@@ -154,7 +170,8 @@ B
 \frac1{n!}u_nv_n^T.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $(i,j)$ entry of the right-hand side is
 $$
 \sum_{n=0}^{m-1}
@@ -167,19 +184,25 @@ $$
 B_{ij}.
 $$
 Thus the matrices are equal.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \operatorname{rank}B\le m.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each outer product
 $$
 u_nv_n^T
 $$
-has rank at most $1$. By subadditivity of matrix rank and step <1>3,
+has rank at most $1$. By subadditivity of matrix rank and step [](#s3){.pf-ref},
 $$
 \operatorname{rank}B
 \le
@@ -188,9 +211,14 @@ $$
 \le
 m.
 $$
+
 :::
 
-<1>5. Thus for every $m\ge1$ there is a matrix $B$ satisfying
+:::
+
+::: {.pf-step #s5}
+
+Thus for every $m\ge1$ there is a matrix $B$ satisfying
 $$
 \boxed{
 \operatorname{rank}B\le m
@@ -200,14 +228,21 @@ $$
 $$
 for all $i,j$.
 
-::: {.proof}
-Take the matrix $B$ from step <1>2. The entrywise estimate is step
-<1>2, and the rank estimate is step <1>4.
+::: pf-proof
+
+Take the matrix $B$ from step [](#s2){.pf-ref}. The entrywise estimate is step
+[](#s2){.pf-ref}, and the rank estimate is step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required construction.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required construction.
+
+:::
+
+:::
+
 :::

@@ -44,12 +44,17 @@ $$
 $$
 with $1,\omega$ a $\ZZ$-basis.
 
-<1>1. There is a unique integer $f\ge1$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a unique integer $f\ge1$ such that
 $$
 \{b\in\ZZ:b\omega\in R\}=f\ZZ.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $R$ is a subring with identity, $\ZZ\subseteq R$.  Since
 $R\ne\ZZ$, choose
 $$
@@ -67,14 +72,20 @@ I=\{b\in\ZZ:b\omega\in R\}
 $$
 is a nonzero additive subgroup of $\ZZ$.  Every nonzero subgroup of
 $\ZZ$ has the form $f\ZZ$ for a unique positive integer $f$.
+
 :::
 
-<1>2. For the integer $f$ of step <1>1,
+:::
+
+::: {.pf-step #s2}
+
+For the integer $f$ of step [](#s1){.pf-ref},
 $$
 \boxed{R=\ZZ+f\OO.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \OO=\ZZ\oplus\ZZ\omega,
@@ -87,7 +98,7 @@ $$
 =
 \ZZ\oplus f\ZZ\omega.
 $$
-Step <1>1 gives $f\omega\in R$, while $\ZZ\subseteq R$.  Hence
+Step [](#s1){.pf-ref} gives $f\omega\in R$, while $\ZZ\subseteq R$.  Hence
 $$
 \ZZ\oplus f\ZZ\omega\subseteq R.
 $$
@@ -100,20 +111,26 @@ Since $a\in\ZZ\subseteq R$, we have
 $$
 b\omega=\alpha-a\in R.
 $$
-By the definition of $f$ in step <1>1, this means $b\in f\ZZ$.  Therefore
+By the definition of $f$ in step [](#s1){.pf-ref}, this means $b\in f\ZZ$.  Therefore
 $$
 \alpha\in\ZZ\oplus f\ZZ\omega.
 $$
 Thus the reverse inclusion also holds.
+
 :::
 
-<1>3. The integer $f$ is uniquely determined by $R$; indeed
+:::
+
+::: {.pf-step #s3}
+
+The integer $f$ is uniquely determined by $R$; indeed
 $$
 \boxed{f=[\OO:R].}
 $$
 
-::: {.proof}
-With respect to the basis $1,\omega$ of $\OO$, step <1>2 gives the basis
+::: pf-proof
+
+With respect to the basis $1,\omega$ of $\OO$, step [](#s2){.pf-ref} gives the basis
 $$
 1,f\omega
 $$
@@ -132,12 +149,18 @@ $$
 $$
 The index depends only on $R$, so no other positive integer can give the
 same subring.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove existence of the required representation, and step
-<1>3 proves uniqueness of its conductor.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove existence of the required representation, and step
+[](#s3){.pf-ref} proves uniqueness of its conductor.
+
+:::
+
+:::
+
 :::

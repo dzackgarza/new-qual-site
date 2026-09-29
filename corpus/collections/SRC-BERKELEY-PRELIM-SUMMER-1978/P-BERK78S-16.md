@@ -40,7 +40,12 @@ Let $T:\mathbb C^n\to\mathbb C^n$ be linear.
 :::
 
 ::: {.solution}
-<1>1. Put $T$ into Jordan canonical form over $\CC$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Put $T$ into Jordan canonical form over $\CC$.
 For a Jordan block
 $$
 J_s(\lambda)
@@ -52,7 +57,8 @@ $$
 \ker(J_s(\lambda)-\lambda I_s)^n=\CC^s.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The nilpotent Jordan matrix $N_s$ satisfies
 $$
 N_s^s=0.
@@ -70,36 +76,48 @@ N_s^n
 0,
 $$
 so its kernel is the whole block space.
+
 :::
 
-<1>2. For the same block,
+:::
+
+::: {.pf-step #s2}
+
+For the same block,
 $$
 \dim\ker(J_s(\lambda)-\lambda I_s)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The matrix
 $$
 J_s(\lambda)-\lambda I_s=N_s
 $$
 is the standard nilpotent Jordan block. Its kernel is spanned by the first
 basis vector of the block and therefore has dimension $1$.
+
 :::
 
-<1>3. Under the hypothesis
+:::
+
+::: {.pf-step #s3}
+
+Under the hypothesis
 $$
 \ker(T-\lambda I)^n=\ker(T-\lambda I)
 $$
 for every $\lambda\in\CC$, every Jordan block of $T$ has size $1$.
 
-::: {.proof}
+::: pf-proof
+
 Fix an eigenvalue $\lambda$. On the direct sum of the Jordan blocks with
-eigenvalue $\lambda$, step <1>1 shows that
+eigenvalue $\lambda$, step [](#s1){.pf-ref} shows that
 $$
 \ker(T-\lambda I)^n
 $$
 contains the whole generalized $\lambda$-eigenspace. On a block of size
-$s$, step <1>2 shows that
+$s$, step [](#s2){.pf-ref} shows that
 $$
 \ker(T-\lambda I)
 $$
@@ -115,21 +133,32 @@ $$
 \ker(T-\lambda I),
 $$
 contradicting the assumed equality. Hence every block has size $1$.
+
 :::
 
-<1>4. Under the hypothesis of part (1),
+:::
+
+::: {.pf-step #s4}
+
+Under the hypothesis of part (1),
 $$
 \boxed{
 T\text{ is diagonalizable}.
 }
 $$
 
-::: {.proof}
-By step <1>3, the Jordan canonical form of $T$ consists entirely of
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the Jordan canonical form of $T$ consists entirely of
 $1\times1$ blocks. Hence it is diagonal.
+
 :::
 
-<1>5. For part (2), suppose
+:::
+
+::: {.pf-step #s5}
+
+For part (2), suppose
 $$
 TT^*=T^*T.
 $$
@@ -142,7 +171,8 @@ $$
 NN^*=N^*N.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 N^*=T^*-\bar\lambda I.
@@ -161,14 +191,20 @@ T^*T-\bar\lambda T-\lambda T^*
 \end{aligned}
 $$
 These are equal because $TT^*=T^*T$.
+
 :::
 
-<1>6. If $N$ is normal, then
+:::
+
+::: {.pf-step #s6}
+
+If $N$ is normal, then
 $$
 \ker N=\ker N^*.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every vector $v$,
 $$
 \begin{aligned}
@@ -187,9 +223,14 @@ Nv=0
 \iff
 N^*v=0.
 $$
+
 :::
 
-<1>7. If
+:::
+
+::: {.pf-step #s7}
+
+If
 $$
 Tv=\lambda v,
 $$
@@ -198,12 +239,13 @@ $$
 T^*v=\bar\lambda v.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 N=T-\lambda I.
 $$
-Then $Nv=0$. By steps <1>5--<1>6,
+Then $Nv=0$. By steps [](#s5){.pf-ref} and [](#s6){.pf-ref},
 $$
 N^*v=0.
 $$
@@ -215,17 +257,23 @@ this says exactly that
 $$
 T^*v=\bar\lambda v.
 $$
+
 :::
 
-<1>8. If $v$ is an eigenvector of the normal operator $T$, then its
+:::
+
+::: {.pf-step #s8}
+
+If $v$ is an eigenvector of the normal operator $T$, then its
 orthogonal complement
 $$
 v^\perp
 $$
 is invariant under both $T$ and $T^*$.
 
-::: {.proof}
-Let $w\in v^\perp$. By step <1>7,
+::: pf-proof
+
+Let $w\in v^\perp$. By step [](#s7){.pf-ref},
 $$
 T^*v=\bar\lambda v.
 $$
@@ -250,16 +298,22 @@ the same argument with $T$ and $T^*$ interchanged gives
 $$
 T^*w\in v^\perp.
 $$
+
 :::
 
-<1>9. The restriction
+:::
+
+::: {.pf-step #s9}
+
+The restriction
 $$
 T|_{v^\perp}
 $$
 is normal.
 
-::: {.proof}
-By step <1>8, both $T$ and $T^*$ preserve $v^\perp$. Hence the adjoint of
+::: pf-proof
+
+By step [](#s8){.pf-ref}, both $T$ and $T^*$ preserve $v^\perp$. Hence the adjoint of
 the restriction is
 $$
 (T|_{v^\perp})^*
@@ -271,44 +325,62 @@ $$
 TT^*=T^*T
 $$
 to $v^\perp$ gives normality of $T|_{v^\perp}$.
+
 :::
 
-<1>10. Every normal operator on $\CC^n$ has an orthonormal basis of
+:::
+
+::: {.pf-step #s10}
+
+Every normal operator on $\CC^n$ has an orthonormal basis of
 eigenvectors.
 
-::: {.proof}
+::: pf-proof
+
 Proceed by induction on $n$. The assertion is immediate for $n=0$ and
 $n=1$. Suppose $n>1$.
 
 The characteristic polynomial of $T$ has a complex root, so $T$ has a
-unit eigenvector $v$. By step <1>8,
+unit eigenvector $v$. By step [](#s8){.pf-ref},
 $$
 \CC^n
 =
 \CC v\oplus v^\perp
 $$
-is an orthogonal decomposition into invariant subspaces. By step <1>9,
+is an orthogonal decomposition into invariant subspaces. By step [](#s9){.pf-ref},
 the restriction of $T$ to $v^\perp$ is normal. Its dimension is $n-1$, so
 the induction hypothesis gives an orthonormal eigenbasis of $v^\perp$.
 Adjoining $v$ produces an orthonormal eigenbasis of $\CC^n$.
+
 :::
 
-<1>11. If $T$ commutes with $T^*$, then
+:::
+
+::: {.pf-step #s11}
+
+If $T$ commutes with $T^*$, then
 $$
 \boxed{
 T\text{ is diagonalizable}.
 }
 $$
 
-::: {.proof}
-The commutation hypothesis says that $T$ is normal. Step <1>10 gives an
+::: pf-proof
+
+The commutation hypothesis says that $T$ is normal. Step [](#s10){.pf-ref} gives an
 orthonormal basis of eigenvectors, so the matrix of $T$ in that basis is
 diagonal.
+
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves part (1), and step <1>11 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (1), and step [](#s11){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

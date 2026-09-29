@@ -30,26 +30,52 @@ Prove or disprove that $\mathbb{Q}^*$ under multiplication is isomorphic to $\ma
 ::: {.solution}
 The two groups are not isomorphic.
 
-<1>1. The multiplicative group $\mathbb Q^*$ is countable.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The multiplicative group $\mathbb Q^*$ is countable.
+
+::: pf-proof
+
 $\mathbb Q$ is countable, and removing the single element $0$ preserves
 countability. Hence $\mathbb Q^*=\mathbb Q\setminus\{0\}$ is countable.
+
 :::
 
-<1>2. The multiplicative group $\mathbb R^*$ is uncountable.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The multiplicative group $\mathbb R^*$ is uncountable.
+
+::: pf-proof
+
 $\mathbb R$ is uncountable. If $\mathbb R^*=\mathbb R\setminus\{0\}$ were
 countable, then adjoining the one-element set $\{0\}$ would make $\mathbb R$
 countable, a contradiction. Thus $\mathbb R^*$ is uncountable.
+
 :::
 
-<1>3. Therefore no group isomorphism can exist.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore no group isomorphism can exist.
+
+::: pf-proof
+
 A group isomorphism is, in particular, a bijection of the underlying sets.
-Steps <1>1 and <1>2 show that the two underlying sets have different
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that the two underlying sets have different
 cardinalities. Hence
 $$
 \boxed{\mathbb Q^*\not\cong\mathbb R^*.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

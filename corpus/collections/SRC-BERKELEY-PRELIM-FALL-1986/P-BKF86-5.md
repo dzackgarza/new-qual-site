@@ -25,7 +25,11 @@ Find the Jordan canonical form for $T$.
 ::: {.solution}
 Let $E_{ij}$ denote the standard matrix units in $M_{2\times2}$.
 
-<1>1. The action of $T$ on the standard basis is
+::: pf
+
+::: {.pf-step #s1}
+
+The action of $T$ on the standard basis is
 $$
 \begin{aligned}
 T(E_{11})&=E_{12},&
@@ -35,7 +39,8 @@ T(E_{22})&=-E_{12}.
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication by
 $$
 A=\begin{pmatrix}0&1\\0&0\end{pmatrix}
@@ -50,9 +55,14 @@ E_{22}A&=0,& AE_{22}&=E_{12}.
 \end{aligned}
 $$
 Subtracting the right products from the left products gives the four displayed formulas.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 v_1=-2E_{12},\qquad
 v_2=E_{22}-E_{11},\qquad
@@ -67,8 +77,9 @@ T(v_3)=v_2,\qquad
 T(v_4)=0.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 T(v_1)&=-2T(E_{12})=0,\\
@@ -77,11 +88,17 @@ T(v_3)&=T(E_{21})=E_{22}-E_{11}=v_2,\\
 T(v_4)&=T(E_{11})+T(E_{22})=0.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The ordered family $(v_1,v_2,v_3,v_4)$ is a basis of $M_{2\times2}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The ordered family $(v_1,v_2,v_3,v_4)$ is a basis of $M_{2\times2}$.
+
+::: pf-proof
+
 Suppose
 $$
 a v_1+b v_2+c v_3+d v_4=0.
@@ -95,9 +112,14 @@ $$
 -b+d=0,\qquad -2a=0,\qquad c=0,\qquad b+d=0.
 $$
 Thus $a=b=c=d=0$, so the four vectors are linearly independent. Since $M_{2\times2}$ has dimension $4$, they form a basis.
+
 :::
 
-<1>4. The Jordan canonical form of $T$ is
+:::
+
+::: {.pf-step #s4}
+
+The Jordan canonical form of $T$ is
 $$
 \boxed{
 J_3(0)\oplus J_1(0)
@@ -111,13 +133,20 @@ J_3(0)\oplus J_1(0)
 }.
 $$
 
-::: {.proof}
-By step <1>3, $(v_1,v_2,v_3,v_4)$ is a basis. Step <1>2 shows that, in this basis, $v_3\mapsto v_2\mapsto v_1\mapsto0$ is one Jordan chain of length $3$, while $v_4\mapsto0$ is a Jordan chain of length $1$. Therefore the matrix of $T$ in this basis is exactly the displayed block diagonal Jordan matrix.
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $(v_1,v_2,v_3,v_4)$ is a basis. Step [](#s2){.pf-ref} shows that, in this basis, $v_3\mapsto v_2\mapsto v_1\mapsto0$ is one Jordan chain of length $3$, while $v_4\mapsto0$ is a Jordan chain of length $1$. Therefore the matrix of $T$ in this basis is exactly the displayed block diagonal Jordan matrix.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required Jordan canonical form.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required Jordan canonical form.
+
+:::
+
+:::
+
 :::

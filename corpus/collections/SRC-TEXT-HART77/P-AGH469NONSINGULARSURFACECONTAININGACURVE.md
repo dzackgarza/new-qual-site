@@ -52,7 +52,11 @@ E=\pi^{-1}(X)
 $$
 for its exceptional divisor.
 
-<1>1. The threefold $\widetilde{\PP^3}$ is nonsingular, and
+::: pf
+
+::: {.pf-step #s1}
+
+The threefold $\widetilde{\PP^3}$ is nonsingular, and
 $$
 E\cong\PP_X(\mci_X/\mci_X^2).
 $$
@@ -65,7 +69,8 @@ $$
 \OO_{\widetilde{\PP^3}}(-E)|_{E_P}\cong\OO_{\PP^1}(1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The center $X$ is nonsingular of codimension $2$ in the nonsingular threefold $\PP^3$.
 The blowup theorem for a nonsingular center, used in [[P-AGH285BLOWUPCANON|Exercise II.8.5]], gives
 $$
@@ -78,9 +83,14 @@ $$
 \OO_{\widetilde{\PP^3}}(-E)|_E\cong\OO_E(1).
 $$
 Since the conormal bundle $\mci_X/\mci_X^2$ has rank $2$, every fibre of $E\to X$ is $\PP^1$, and restriction of the last identity gives the claimed $\OO_{\PP^1}(1)$.
+
 :::
 
-<1>2. For every sufficiently large integer $m$, the invertible sheaf
+:::
+
+::: {.pf-step #s2}
+
+For every sufficiently large integer $m$, the invertible sheaf
 $$
 L_m
 =
@@ -90,7 +100,8 @@ L_m
 $$
 is very ample.
 
-::: {.proof}
+::: pf-proof
+
 By the Rees-algebra construction,
 $$
 \widetilde{\PP^3}
@@ -114,22 +125,28 @@ $$
 $$
 is very ample for every $m\gg0$.
 This is exactly $L_m$.
+
 :::
 
-<1>3. Fix such an $m$ and let
+:::
+
+::: {.pf-step #s3}
+
+Fix such an $m$ and let
 $$
 \iota_m:\widetilde{\PP^3}\hookrightarrow\PP^N
 $$
 be the embedding defined by $L_m$.
 Each exceptional fibre $E_P$ is mapped isomorphically to a line in $\PP^N$.
 
-::: {.proof}
+::: pf-proof
+
 On the fibre $E_P$, the pullback
 $$
 \pi^*\OO_{\PP^3}(m)|_{E_P}
 $$
 is trivial.
-Step <1>1 therefore gives
+Step [](#s1){.pf-ref} therefore gives
 $$
 L_m|_{E_P}\cong\OO_{\PP^1}(1).
 $$
@@ -139,11 +156,17 @@ $$
 \deg L_m|_{E_P}=1,
 $$
 so it is a line in $\PP^N$.
+
 :::
 
-<1>4. The hyperplanes in $\PP^N$ containing at least one exceptional fibre form a proper closed subset of $\dualof{(\PP^N)}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The hyperplanes in $\PP^N$ containing at least one exceptional fibre form a proper closed subset of $\dualof{(\PP^N)}$.
+
+::: pf-proof
+
 Consider the incidence variety
 $$
 \mathcal B
@@ -151,7 +174,7 @@ $$
 \{(P,H)\in X\dualof{\times(\PP^N)}:
 \iota_m(E_P)\subseteq H\}.
 $$
-By step <1>3, $\iota_m(E_P)$ is a line.
+By step [](#s3){.pf-ref}, $\iota_m(E_P)$ is a line.
 Hyperplanes containing a fixed line form a projective subspace of codimension $2$ in $\dualof{(\PP^N)}$.
 Consequently
 $$
@@ -168,9 +191,14 @@ $$
 is proper because $X$ is projective, so its image is closed.
 Its dimension is at most $N-1$, strictly smaller than the dimension $N$ of the dual projective space.
 Hence the image is proper.
+
 :::
 
-<1>5. There is a hyperplane $H\subseteq\PP^N$ such that
+:::
+
+::: {.pf-step #s5}
+
+There is a hyperplane $H\subseteq\PP^N$ such that
 $$
 \widetilde F
 =
@@ -178,23 +206,30 @@ $$
 $$
 is nonsingular and $H$ contains no exceptional fibre.
 
-::: {.proof}
-By step <1>1, $\widetilde{\PP^3}$ is nonsingular.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $\widetilde{\PP^3}$ is nonsingular.
 Bertini's hyperplane theorem [[T-BERTINI]] says that the hyperplanes whose inverse image under $\iota_m$ is nonsingular form a dense open subset of $\dualof{(\PP^N)}$.
 
-Step <1>4 says that the hyperplanes containing an exceptional fibre form a proper closed subset.
+Step [](#s4){.pf-ref} says that the hyperplanes containing an exceptional fibre form a proper closed subset.
 The complement of that subset is therefore another nonempty open subset.
 Since $\dualof{(\PP^N)}$ is irreducible, the two open sets meet.
 Choose $H$ in their intersection.
+
 :::
 
-<1>6. The divisor $\widetilde F$ of step <1>5 is the strict transform of a degree-$m$ surface
+:::
+
+::: {.pf-step #s6}
+
+The divisor $\widetilde F$ of step [](#s5){.pf-ref} is the strict transform of a degree-$m$ surface
 $$
 F\subseteq\PP^3
 $$
 containing $X$.
 
-::: {.proof}
+::: pf-proof
+
 The line bundle of $\widetilde F$ is
 $$
 L_m
@@ -220,17 +255,23 @@ $$
 X\subseteq F,
 $$
 and away from $E$ the blowup is an isomorphism.
-Step <1>5 says that $\widetilde F$ contains no exceptional fibre, so in particular it has no component contained in $E$.
+Step [](#s5){.pf-ref} says that $\widetilde F$ contains no exceptional fibre, so in particular it has no component contained in $E$.
 It is therefore the closure of
 $$
 \pi^{-1}(F\setminus X).
 $$
 Hence it is the strict transform of $F$.
+
 :::
 
-<1>7. The surface $F$ is nonsingular away from $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The surface $F$ is nonsingular away from $X$.
+
+::: pf-proof
+
 The morphism
 $$
 \pi:\widetilde{\PP^3}\setminus E
@@ -238,7 +279,7 @@ $$
 \PP^3\setminus X
 $$
 is an isomorphism.
-By step <1>6 it identifies
+By step [](#s6){.pf-ref} it identifies
 $$
 \widetilde F\setminus E
 $$
@@ -246,12 +287,18 @@ with
 $$
 F\setminus X.
 $$
-Step <1>5 says that $\widetilde F$ is nonsingular, so the open subset $F\setminus X$ is nonsingular.
+Step [](#s5){.pf-ref} says that $\widetilde F$ is nonsingular, so the open subset $F\setminus X$ is nonsingular.
+
 :::
 
-<1>8. The surface $F$ is nonsingular at every point of $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+The surface $F$ is nonsingular at every point of $X$.
+
+::: pf-proof
+
 Fix a point $P\in X$.
 Because $X$ is a nonsingular codimension-two subvariety of the nonsingular threefold $\PP^3$, choose regular local parameters
 $$
@@ -281,7 +328,7 @@ $$
 a(P)=b(P)=0,
 $$
 that linear form vanishes identically, so the whole exceptional fibre $E_P$ is contained in $\widetilde F$.
-Step <1>5 excludes this.
+Step [](#s5){.pf-ref} excludes this.
 Therefore
 $$
 (a(P),b(P))\ne(0,0).
@@ -297,14 +344,20 @@ df(P)=a(P)\,dx+b(P)\,dy\ne0.
 $$
 By the Jacobian criterion, the hypersurface $F$ is nonsingular at $P$.
 Since $P$ was arbitrary, $F$ is nonsingular along all of $X$.
+
 :::
 
-<1>9. For every sufficiently large $m$, there is a nonsingular degree-$m$ surface containing $X$.
+:::
 
-::: {.proof}
-Step <1>2 gives one threshold beyond which $L_m$ is very ample for every $m$.
-For each such $m$, steps <1>3--<1>6 construct a degree-$m$ surface $F$ containing $X$.
-Steps <1>7--<1>8 prove that $F$ is nonsingular both away from and along $X$.
+::: {.pf-step #s9}
+
+For every sufficiently large $m$, there is a nonsingular degree-$m$ surface containing $X$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives one threshold beyond which $L_m$ is very ample for every $m$.
+For each such $m$, steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} construct a degree-$m$ surface $F$ containing $X$.
+Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} prove that $F$ is nonsingular both away from and along $X$.
 Therefore
 $$
 \boxed{
@@ -312,11 +365,17 @@ $$
 \text{ surface }F\supseteq X.
 }
 $$
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>9 is exactly the required assertion.
 :::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref} is exactly the required assertion.
+
+:::
+
+:::
+
 :::

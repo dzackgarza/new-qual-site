@@ -35,8 +35,14 @@ S=K+xL[x]
 =\{a_0+a_1x+\cdots+a_nx^n: a_0\in K,\ a_i\in L\text{ for }i\ge1\}.
 \]
 
-<1>1. If $[L:K]<\infty$, then $S$ is Noetherian.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $[L:K]<\infty$, then $S$ is Noetherian.
+
+::: pf-proof
+
 Choose a $K$-basis
 \[
 1=b_1,b_2,\ldots,b_r
@@ -58,10 +64,17 @@ a_dx^d
 \]
 Thus $S$ is a finitely generated $K$-algebra.
 Since $K$ is Noetherian, Hilbert's basis theorem implies that $S$ is Noetherian.
+
 :::
 
-<1>2. If $S$ is Noetherian, then $[L:K]<\infty$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $S$ is Noetherian, then $[L:K]<\infty$.
+
+::: pf-proof
+
 Consider the ideal
 \[
 I=xL[x]\subseteq S.
@@ -90,10 +103,23 @@ Since $a\in L$ was arbitrary,
 L=Kc_1+\cdots+Kc_r.
 \]
 Therefore $L$ is finite-dimensional over $K$.
+
 :::
 
-<1>3. Hence $S$ is Noetherian if and only if $L/K$ is finite.
-::: {.proof}
-Combine <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Hence $S$ is Noetherian if and only if $L/K$ is finite.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

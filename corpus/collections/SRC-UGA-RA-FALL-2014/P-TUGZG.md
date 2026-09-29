@@ -31,8 +31,15 @@ Prove that $\sum_{n=1}^\infty f_n$ is continuous.
 :::
 
 ::: {.solution}
-<1>1. Apply the uniform-limit theorem to the partial sums.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Apply the uniform-limit theorem to the partial sums.
+
+::: pf-proof
+
 Let
 \[
 F_N(x):=\sum_{n=1}^N f_n(x),
@@ -65,5 +72,11 @@ Thus $F$ is continuous at $x_0$. Since $x_0$ was arbitrary,
 \[
 \boxed{\sum_{n=1}^\infty f_n\text{ is continuous}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

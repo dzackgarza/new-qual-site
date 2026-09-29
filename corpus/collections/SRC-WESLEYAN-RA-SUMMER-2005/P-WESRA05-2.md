@@ -34,8 +34,15 @@ Let $X=[0,1]$, let $\mathcal A$ be the Borel sigma-algebra, and let $\lambda$ be
 :::
 
 ::: {.solution}
-<1>1. Compute the elementary measures.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Compute the elementary measures.
+
+::: pf-proof
+
 The interval has length
 \[
 \lambda([1/3,2/5])=\frac25-\frac13=\boxed{\frac1{15}}.
@@ -51,19 +58,33 @@ Since $[0,1]$ has measure $1$ and the rationals have measure zero,
 \[
 \lambda((\mathbb R\setminus\mathbb Q)\cap[0,1])=1.
 \]
+
 :::
 
-<1>2. State monotone convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+State monotone convergence.
+
+::: pf-proof
+
 If $0\le g_1\le g_2\le\cdots$ are measurable on $[0,1]$ and $g_n(x)\to g(x)$ pointwise, then
 \[
 \boxed{\int_0^1 g\,d\lambda=\lim_{n\to\infty}\int_0^1g_n\,d\lambda,}
 \]
 with the value $+\infty$ allowed.
+
 :::
 
-<1>3. Prove measurability of the Cantor-stage function.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove measurability of the Cantor-stage function.
+
+::: pf-proof
+
 Let $R_n$ be the union of the open intervals removed at stage $n$.
 Each $R_n$ is a finite union of open intervals, hence Borel, and $C$ is closed.
 The sets
@@ -72,10 +93,17 @@ C,R_0,R_1,R_2,\ldots
 \]
 form a Borel partition of $[0,1]$.
 Since $f$ is constant on each member of this countable Borel partition, $f$ is Borel measurable.
+
 :::
 
-<1>4. Compute its integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute its integral.
+
+::: pf-proof
+
 At stage $n$ there are $2^n$ removed intervals, each of length $3^{-(n+1)}$.
 Hence
 \[
@@ -92,5 +120,11 @@ Therefore
 =\boxed{\frac12}.
 \end{aligned}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

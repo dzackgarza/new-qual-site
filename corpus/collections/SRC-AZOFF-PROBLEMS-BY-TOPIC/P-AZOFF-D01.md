@@ -37,9 +37,15 @@ Prove that $g$ is also Riemann integrable.
 :::
 
 ::: {.solution}
-<1>1. The function $g$ is bounded on $[0,1]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The function $g$ is bounded on $[0,1]$.
+
+::: pf-proof
+
 Since $f$ is Riemann integrable, it is bounded. Thus there is $M\geq0$ such
 that
 $$
@@ -64,9 +70,14 @@ $$
 \end{aligned}
 $$
 Hence $g$ is bounded.
+
 :::
 
-<1>2. For every nonempty interval $I\subseteq[0,1]$, the oscillations satisfy
+:::
+
+::: {.pf-step #s2}
+
+For every nonempty interval $I\subseteq[0,1]$, the oscillations satisfy
 $$
 \operatorname{osc}_I(g)
 \leq
@@ -79,7 +90,8 @@ $$
 \sup_I h-\inf_I h.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For all $x,y\in I$, the hypothesis gives
 $$
 \abs{g(x)-g(y)}
@@ -94,9 +106,14 @@ $$
 \leq
 \sup_I f-\inf_I f.
 $$
+
 :::
 
-<1>3. For every partition
+:::
+
+::: {.pf-step #s3}
+
+For every partition
 $$
 P:\quad
 0=x_0<x_1<\cdots<x_n=1,
@@ -108,7 +125,8 @@ U(g,P)-L(g,P)
 U(f,P)-L(f,P).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 I_j=[x_{j-1},x_j].
@@ -120,22 +138,28 @@ U(h,P)-L(h,P)
 \sum_{j=1}^n
 \operatorname{osc}_{I_j}(h)(x_j-x_{j-1})
 $$
-for any bounded real-valued function $h$. Applying step <1>2 to each
+for any bounded real-valued function $h$. Applying step [](#s2){.pf-ref} to each
 $I_j$ gives the displayed inequality.
+
 :::
 
-<1>4. For every $\varepsilon>0$, there is a partition $P$ such that
+:::
+
+::: {.pf-step #s4}
+
+For every $\varepsilon>0$, there is a partition $P$ such that
 $$
 U(g,P)-L(g,P)<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is Riemann integrable, the Darboux criterion gives a partition $P$
 with
 $$
 U(f,P)-L(f,P)<\varepsilon.
 $$
-Step <1>3 then gives
+Step [](#s3){.pf-ref} then gives
 $$
 U(g,P)-L(g,P)
 \leq
@@ -143,18 +167,30 @@ U(f,P)-L(f,P)
 <
 \varepsilon.
 $$
+
 :::
 
-<1>5. The function $g$ is Riemann integrable on $[0,1]$.
+:::
 
-::: {.proof}
-Step <1>1 gives boundedness, and step <1>4 verifies the Darboux criterion for
+::: {.pf-step #s5}
+
+The function $g$ is Riemann integrable on $[0,1]$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives boundedness, and step [](#s4){.pf-ref} verifies the Darboux criterion for
 Riemann integrability.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

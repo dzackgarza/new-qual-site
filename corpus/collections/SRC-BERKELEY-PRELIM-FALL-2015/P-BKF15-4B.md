@@ -45,10 +45,15 @@ $$
 \DD\coloneqq\{z\in\CC:\abs{z}<1\}.
 $$
 
-<1>1. The printed assertion is false with the printed definition of a
+::: pf
+
+::: {.pf-step #s1}
+
+The printed assertion is false with the printed definition of a
 Schur function.
 
-::: {.proof}
+::: pf-proof
+
 Take
 $$
 f(z)=z.
@@ -64,9 +69,14 @@ for $z\ne0$, and its removable extension at $0$ is also $-1$.
 Thus the transform is constant. Under the printed definition, which
 requires a Schur function to be nonconstant, the transform is not a
 Schur function.
+
 :::
 
-<1>2. Call a holomorphic map
+:::
+
+::: {.pf-step #s2}
+
+Call a holomorphic map
 $$
 \DD\to\overline{\DD}
 $$
@@ -74,13 +84,19 @@ a Schur function in the wide sense, constants allowed. If $f$ is a
 nonconstant Schur function, then its displayed transform is a Schur
 function in the wide sense.
 
-::: {.proof}
-Steps <1>3--<1>8 prove this assertion. It differs from the printed
+::: pf-proof
+
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove this assertion. It differs from the printed
 assertion only in allowing the transform to be constant; the input $f$
 remains nonconstant.
+
 :::
 
-<1>3. For a nonconstant holomorphic function
+:::
+
+::: {.pf-step #s3}
+
+For a nonconstant holomorphic function
 $$
 f:\DD\to\overline{\DD},
 $$
@@ -94,13 +110,19 @@ a\coloneqq f(0),
 $$
 then $\abs{a}<1$.
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{f(z_0)}=1$ at an interior point, then $\abs{f}$ attains its maximum
 there. The maximum modulus principle would force $f$ to be constant,
 contrary to the hypothesis.
+
 :::
 
-<1>4. For $\abs{a}<1$, define
+:::
+
+::: {.pf-step #s4}
+
+For $\abs{a}<1$, define
 $$
 \varphi_a(w)
 \coloneqq
@@ -111,7 +133,8 @@ $$
 \varphi_a:\DD\to\DD.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{w}<1$,
 $$
 \begin{aligned}
@@ -133,9 +156,14 @@ $$
 \end{aligned}
 $$
 Thus $\abs{\varphi_a(w)}<1$.
+
 :::
 
-<1>5. The function
+:::
+
+::: {.pf-step #s5}
+
+The function
 $$
 h(z)\coloneqq\varphi_a(f(z))
 $$
@@ -145,8 +173,9 @@ $$
 h(0)=0.
 $$
 
-::: {.proof}
-By step <1>3, $\abs{a}<1$ and $f(\DD)\subset\DD$. The
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $\abs{a}<1$ and $f(\DD)\subset\DD$. The
 denominator
 $$
 1-\overline a\,f(z)
@@ -155,7 +184,7 @@ cannot vanish because
 $$
 \abs{\overline a\,f(z)}<1.
 $$
-Hence $h$ is holomorphic. Step <1>4 shows that its values lie in
+Hence $h$ is holomorphic. Step [](#s4){.pf-ref} shows that its values lie in
 $\DD$, and
 $$
 h(0)
@@ -164,19 +193,30 @@ h(0)
 =
 0.
 $$
+
 :::
 
-<1>6. For every $z\in\DD$,
+:::
+
+::: {.pf-step #s6}
+
+For every $z\in\DD$,
 $$
 \abs{h(z)}\le\abs{z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is Schwarz's lemma applied to the holomorphic self-map $h$ of
-$\DD$ from step <1>5, which fixes the origin.
+$\DD$ from step [](#s5){.pf-ref}, which fixes the origin.
+
 :::
 
-<1>7. The function
+:::
+
+::: {.pf-step #s7}
+
+The function
 $$
 g(z)
 \coloneqq
@@ -188,7 +228,8 @@ $$
 $$
 throughout the disk.
 
-::: {.proof}
+::: pf-proof
+
 Since $h$ is holomorphic and $h(0)=0$, its Taylor expansion has the
 form
 $$
@@ -200,7 +241,7 @@ $$
 g(0)=q(0)=h'(0).
 $$
 
-For $z\ne0$, step <1>6 gives
+For $z\ne0$, step [](#s6){.pf-ref} gives
 $$
 \abs{g(z)}
 =
@@ -208,15 +249,21 @@ $$
 \le1.
 $$
 Continuity of the extension gives the same inequality at $z=0$.
+
 :::
 
-<1>8. For $z\ne0$, the function in step <1>7 is exactly
+:::
+
+::: {.pf-step #s8}
+
+For $z\ne0$, the function in step [](#s7){.pf-ref} is exactly
 $$
 \frac{f(0)-f(z)}
 {(1-\overline{f(0)}f(z))z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 h(z)
@@ -227,22 +274,34 @@ h(z)
 {1-\overline{f(0)}f(z)}.
 $$
 Dividing by $z$ gives the displayed expression.
+
 :::
 
-<1>9. Hence the printed assertion is false, while the assertion of
-step <1>2 is true.
+:::
 
-::: {.proof}
-Step <1>1 disproves the printed assertion. Steps <1>7--<1>8 show that
+::: {.pf-step #s9}
+
+Hence the printed assertion is false, while the assertion of
+step [](#s2){.pf-ref} is true.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} disproves the printed assertion. Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} show that
 the transform extends holomorphically to the disk and has absolute
 value at most $1$, which is the wide-sense Schur condition of step
-<1>2.
+[](#s2){.pf-ref}.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>9 gives both the counterexample to the printed assertion and
-the proof of the assertion of step <1>2.
 :::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref} gives both the counterexample to the printed assertion and
+the proof of the assertion of step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
 :::

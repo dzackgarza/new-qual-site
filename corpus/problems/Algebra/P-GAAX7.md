@@ -28,48 +28,88 @@ G'=Z(G).
 \]
 :::
 
-
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 \[
 |Z(G)|=p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every finite $p$-group has nontrivial center, so $|Z(G)|$ is $p$, $p^2$, or $p^3$. Since $G$ is nonabelian, $|Z(G)|\ne p^3$.
 
 If $|Z(G)|=p^2$, then $G/Z(G)$ has order $p$ and is therefore cyclic. A group with cyclic central quotient is abelian, contradiction. Hence $|Z(G)|=p$.
+
 :::
 
-<1>2. The quotient $G/Z(G)$ is abelian.
-::: {.proof}
-By <1>1 it has order
+:::
+
+::: {.pf-step #s2}
+
+The quotient $G/Z(G)$ is abelian.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} it has order
 \[
 |G/Z(G)|=p^2,
 \]
 and every group of order $p^2$ is abelian.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 \[
 G'\le Z(G).
 \]
-::: {.proof}
-The derived subgroup $G'=[G,G]$ is the smallest normal subgroup $N$ such that $G/N$ is abelian. Since $G/Z(G)$ is abelian by <1>2, this universal property gives
+
+::: pf-proof
+
+The derived subgroup $G'=[G,G]$ is the smallest normal subgroup $N$ such that $G/N$ is abelian. Since $G/Z(G)$ is abelian by step [](#s2){.pf-ref}, this universal property gives
 \[
 G'\le Z(G).
 \]
+
 :::
 
-<1>4. The subgroup $G'$ is nontrivial.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The subgroup $G'$ is nontrivial.
+
+::: pf-proof
+
 If $G'=1$, then $G$ itself is abelian, contrary to hypothesis.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 G'=Z(G).
 \]
-::: {.proof}
-By <1>1, the center has prime order $p$. By <1>3 and <1>4, $G'$ is a nontrivial subgroup of $Z(G)$. The only nontrivial subgroup of a group of prime order is the whole group.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the center has prime order $p$. By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $G'$ is a nontrivial subgroup of $Z(G)$. The only nontrivial subgroup of a group of prime order is the whole group.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -38,8 +38,14 @@ Give an example which shows that the converse need not hold.
 ::: {.solution}
 **Part (a).**
 
-<1>1. For every ideal $J\subseteq S^{-1}R$, one has $(J^c)^e=J$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+For every ideal $J\subseteq S^{-1}R$, one has $(J^c)^e=J$.
+
+::: pf-proof
+
 By definition, $J^c=\{r\in R:r/1\in J\}$.
 Since $J$ is an ideal, every generator $r/1$ with $r\in J^c$ lies in $J$, so $(J^c)^e\subseteq J$.
 
@@ -51,13 +57,20 @@ Since $s/1$ is a unit in $S^{-1}R$, multiplication by $s/1$ gives
 Thus $a\in J^c$, so $a/1\in (J^c)^e$.
 Multiplying by the unit $1/s$ shows $a/s\in (J^c)^e$.
 Hence $J\subseteq(J^c)^e$.
+
 :::
 
-<1>2. For every ideal $I\subseteq R$,
+:::
+
+::: pf-step
+
+For every ideal $I\subseteq R$,
 \[
 (I^e)^c=\{x\in R: sx\in I\text{ for some }s\in S\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 An element $x\in R$ lies in $(I^e)^c$ exactly when $x/1\in I^e=S^{-1}I$.
 This means that in $S^{-1}R$ one has
 \[
@@ -75,14 +88,21 @@ Conversely, if $sx\in I$ for some $s\in S$, then
 \frac x1=\frac{sx}{s}\in S^{-1}I=I^e,
 \]
 so $x\in(I^e)^c$.
-:::
 
 **Part (b).**
 
-<1>3. If $R$ is Noetherian, then $S^{-1}R$ is Noetherian.
-::: {.proof}
+:::
+
+:::
+
+::: pf-step
+
+If $R$ is Noetherian, then $S^{-1}R$ is Noetherian.
+
+::: pf-proof
+
 Let $J\subseteq S^{-1}R$ be an ideal.
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 J=(J^c)^e.
 \]
@@ -93,10 +113,17 @@ J=(a_1/1,\dots,a_n/1),
 \]
 so every ideal of $S^{-1}R$ is finitely generated.
 Hence $S^{-1}R$ is Noetherian.
+
 :::
 
-<1>4. The converse need not hold.
-::: {.proof}
+:::
+
+::: pf-step
+
+The converse need not hold.
+
+::: pf-proof
+
 Let
 \[
 R=k[x_1,x_2,x_3,\dots]
@@ -113,5 +140,11 @@ S^{-1}R=\operatorname{Frac}(R),
 \]
 which is a field and therefore Noetherian.
 Thus Noetherianity of $S^{-1}R$ does not imply Noetherianity of $R$.
+
 :::
+
+:::
+
+:::
+
 :::

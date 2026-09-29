@@ -33,34 +33,67 @@ origin. Define
 \]
 by letting $\Phi(t+\mathbb Z)$ be rotation through angle $2\pi t$.
 
-<1>1. The map $\Phi$ is well-defined.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The map $\Phi$ is well-defined.
+
+::: pf-proof
+
 If $t-s\in\mathbb Z$, then $2\pi(t-s)$ is an integral multiple of $2\pi$, so
 rotation through angle $2\pi t$ equals rotation through angle $2\pi s$.
+
 :::
 
-<1>2. The map $\Phi$ is a homomorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The map $\Phi$ is a homomorphism.
+
+::: pf-proof
+
 Composition of rotations adds angles. Hence
 \[
 \Phi((s+\mathbb Z)+(t+\mathbb Z))
 =\Phi(s+t+\mathbb Z)
 =\Phi(s+\mathbb Z)\Phi(t+\mathbb Z).
 \]
+
 :::
 
-<1>3. The map $\Phi$ is bijective.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The map $\Phi$ is bijective.
+
+::: pf-proof
+
 Every rotation about the origin has some angle $\theta$, hence equals
 $\Phi(\theta/(2\pi)+\mathbb Z)$, so $\Phi$ is surjective.
 
 If $\Phi(t+\mathbb Z)$ is the identity rotation, then
 $2\pi t\in2\pi\mathbb Z$, so $t\in\mathbb Z$ and therefore
 $t+\mathbb Z=\mathbb Z$. Thus the kernel is trivial, and $\Phi$ is injective.
+
 :::
 
-<1>4. Therefore $\mathbb R/\mathbb Z\cong\operatorname{Rot}(\mathbb C)$.
-::: {.proof}
-By <1>1--<1>3, $\Phi$ is a bijective homomorphism.
 :::
+
+::: pf-step
+
+Therefore $\mathbb R/\mathbb Z\cong\operatorname{Rot}(\mathbb C)$.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\Phi$ is a bijective homomorphism.
+
+:::
+
+:::
+
+:::
+
 :::

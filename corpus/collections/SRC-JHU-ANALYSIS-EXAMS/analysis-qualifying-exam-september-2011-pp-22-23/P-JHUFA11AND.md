@@ -32,9 +32,15 @@ such that $f(P)=P$ and $f'(P)=e^{it}$.
 :::
 
 ::: {.solution}
-<1>1. A normalized Riemann map constructs the required function.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A normalized Riemann map constructs the required function.
+
+::: pf-proof
+
 The domain $U$ is nonempty since it contains $P$, and
 is a proper subset of $\CC$ since it is bounded.
 By the [[T-55MPA|Riemann mapping theorem]], there is a biholomorphism
@@ -55,11 +61,17 @@ $$
 f_t'(P)=(\phi^{-1})'(0)\lambda\phi'(P)=\lambda=e^{it}.
 $$
 This proves existence.
+
 :::
 
-<1>2. Every holomorphic self-map with the prescribed data equals $f_t$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every holomorphic self-map with the prescribed data equals $f_t$.
+
+::: pf-proof
+
 Let $f:U\to U$ be any holomorphic map satisfying those
 data. Set $G=\phi\circ f\circ\phi^{-1}:D\to D$.
 Then $G(0)=0$, and the chain rule gives
@@ -73,10 +85,17 @@ It attains modulus one at zero, so the
 [[T-BYNL5|maximum modulus principle]] makes $H$ the constant $e^{it}$.
 Hence $G(w)=e^{it}w$. Undoing the conjugation gives
 $f(z)=\phi^{-1}(e^{it}\phi(z))=f_t(z)$, proving uniqueness.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>1 proves existence, and step <1>2 proves uniqueness.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves existence, and step [](#s2){.pf-ref} proves uniqueness.
+
+:::
+
+:::
+
 :::

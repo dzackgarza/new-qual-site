@@ -37,8 +37,14 @@ or
 ::: {.solution}
 We prove option (i).
 
-<1>1. Every group of order $9$ is abelian.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every group of order $9$ is abelian.
+
+::: pf-proof
+
 Let $G$ have order
 $$
 |G|=9=3^2.
@@ -59,10 +65,17 @@ $g^a z$ with $z\in Z(G)$, and any two such elements commute. Hence $G$ is
 again abelian.
 
 Thus there are no nonabelian groups of order $9$.
+
 :::
 
-<1>2. Every group of order $10$ is a semidirect product $C_5\rtimes C_2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every group of order $10$ is a semidirect product $C_5\rtimes C_2$.
+
+::: pf-proof
+
 Let $|G|=10$. Sylow gives
 $$
 n_5\mid2,
@@ -92,10 +105,17 @@ we have $G=PQ$. Thus
 $$
 G\cong C_5\rtimes C_2.
 $$
+
 :::
 
-<1>3. There are exactly two possible actions, and only one gives a nonabelian group.
-::: {.proof}
+:::
+
+::: pf-step
+
+There are exactly two possible actions, and only one gives a nonabelian group.
+
+::: pf-proof
+
 Conjugation by the generator of $C_2$ defines a homomorphism
 $$
 C_2\longrightarrow\operatorname{Aut}(C_5).
@@ -129,5 +149,11 @@ Therefore
 $$
 \boxed{\text{up to isomorphism, }D_{10}\text{ is the unique nonabelian group of order }10.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

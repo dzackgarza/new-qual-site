@@ -33,9 +33,14 @@ N=\{e,z\}
 $$
 be the given normal subgroup of order $2$.
 
-<1>1. The element $z$ is central in $G$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The element $z$ is central in $G$.
+
+::: pf-proof
+
 For every $g\in G$, normality gives
 $$
 gzg^{-1}\in N.
@@ -45,18 +50,30 @@ $$
 gzg^{-1}=z,
 $$
 which is equivalent to $gz=zg$.
+
 :::
 
-<1>2. There exists an element $x\in G$ of order $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+There exists an element $x\in G$ of order $p$.
+
+::: pf-proof
+
 By Cauchy's theorem, since $p$ divides $\abs G=2p$, the group $G$ contains an element of order $p$.
+
 :::
 
-<1>3. The element $xz$ has order $2p$.
+:::
 
-::: {.proof}
-By step <1>1, $x$ and $z$ commute. Hence
+::: {.pf-step #s3}
+
+The element $xz$ has order $2p$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $x$ and $z$ commute. Hence
 $$
 (xz)^{2p}=x^{2p}z^{2p}=e.
 $$
@@ -77,20 +94,32 @@ p\mid m
 2\mid m.
 $$
 Because $p$ is odd, $2p\mid m$. Therefore the order of $xz$ is exactly $2p$.
+
 :::
 
-<1>4. The group $G$ is cyclic.
+:::
 
-::: {.proof}
-By step <1>3, the cyclic subgroup $\langle xz\rangle$ has order $2p=\abs G$. Hence
+::: {.pf-step #s4}
+
+The group $G$ is cyclic.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the cyclic subgroup $\langle xz\rangle$ has order $2p=\abs G$. Hence
 $$
 \langle xz\rangle=G.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the assertion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the assertion.
+
+:::
+
+:::
+
 :::

@@ -39,7 +39,11 @@ Using Proposition 1B.9, show that if $X$ is a connected CW complex and $G$ is an
 ::: {.solution}
 Let $Y=K(G,1)$ and fix basepoints throughout.
 
-<1>1. Proposition 1B.9 gives a bijection
+::: pf
+
+::: {.pf-step #s1}
+
+Proposition 1B.9 gives a bijection
 \[
 \langle X,K(G,1)\rangle
 \xrightarrow{\cong}
@@ -47,11 +51,18 @@ Let $Y=K(G,1)$ and fix basepoints throughout.
 \qquad
 [f]\longmapsto f_*.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a connected CW complex $X$, Proposition 1B.9 classifies based homotopy classes of based maps into a $K(G,1)$ by the induced homomorphism on fundamental groups. Because maps and homotopies are based, there is no quotient by conjugation.
+
 :::
 
-<1>2. Since $G$ is abelian, every homomorphism
+:::
+
+::: {.pf-step #s2}
+
+Since $G$ is abelian, every homomorphism
 \[
 \pi_1(X)\to G
 \]
@@ -65,15 +76,24 @@ Hence
 \cong
 \operatorname{Hom}(H_1(X),G).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The commutator subgroup lies in the kernel of every homomorphism to an abelian group. The universal property of abelianization gives the unique factorization. The Hurewicz theorem in degree one identifies the abelianization with $H_1(X)$.
+
 :::
 
-<1>3. The universal coefficient theorem gives
+:::
+
+::: {.pf-step #s3}
+
+The universal coefficient theorem gives
 \[
 H^1(X;G)\cong\operatorname{Hom}(H_1(X),G).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The cohomological universal coefficient sequence is
 \[
 0\to\operatorname{Ext}(H_0(X),G)
@@ -81,14 +101,26 @@ The cohomological universal coefficient sequence is
 \to\operatorname{Hom}(H_1(X),G)\to0.
 \]
 Since $X$ is connected, $H_0(X)\cong\mathbb Z$ is free, so the Ext term vanishes.
+
 :::
 
-<1>4. Under the identifications in <1>1--<1>3, the bijection is exactly
+:::
+
+::: pf-step
+
+Under the identifications in steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the bijection is exactly
 \[
 [f]\longmapsto f_*:H_1(X)\to H_1(K(G,1))\cong G.
 \]
-::: {.proof}
-The induced homomorphism on $H_1$ is the abelianization of the induced homomorphism on $\pi_1$. Thus the composite of the first two identifications sends $f$ to precisely $f_*:H_1(X)\to G$, and <1>3 identifies this homomorphism with the corresponding cohomology class.
+
+::: pf-proof
+
+The induced homomorphism on $H_1$ is the abelianization of the induced homomorphism on $\pi_1$. Thus the composite of the first two identifications sends $f$ to precisely $f_*:H_1(X)\to G$, and step [](#s3){.pf-ref} identifies this homomorphism with the corresponding cohomology class.
+
+:::
+
+:::
+
 :::
 
 Therefore the map stated in the problem is a bijection.

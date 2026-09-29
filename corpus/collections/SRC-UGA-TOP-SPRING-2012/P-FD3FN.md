@@ -36,14 +36,21 @@ Exhibit a continuous map $f : S^3 \to S^3$ such that for every $x \in S^3$, $f (
 :::
 
 ::: {.solution}
-<1>1. Let \(f:S^n\to S^n\) be continuous.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let \(f:S^n\to S^n\) be continuous.
 If
 \[
 f(x)\ne -x
 \qquad\text{for every }x\in S^n,
 \]
 then \(f\) is homotopic to the identity map of \(S^n\).
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 H_+(x,t)
@@ -78,9 +85,14 @@ H_+(x,0)=f(x),
 H_+(x,1)=x.
 \]
 Thus \(f\simeq\operatorname{id}_{S^n}\).
+
 :::
 
-<1>2. If instead
+:::
+
+::: {.pf-step #s2}
+
+If instead
 \[
 f(x)\ne x
 \qquad\text{for every }x\in S^n,
@@ -89,7 +101,9 @@ then \(f\) is homotopic to the antipodal map
 \[
 A(x)=-x.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 H_-(x,t)
@@ -108,13 +122,20 @@ H_-(x,0)=f(x),
 \qquad
 H_-(x,1)=-x=A(x).
 \]
+
 :::
 
-<1>3. The antipodal map on \(S^2\) has degree
+:::
+
+::: {.pf-step #s3}
+
+The antipodal map on \(S^2\) has degree
 \[
 \deg A=-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 More generally, the antipodal map on \(S^n\) is the restriction of the linear automorphism
 \[
 -I:\mathbb R^{n+1}\to\mathbb R^{n+1}.
@@ -127,22 +148,29 @@ Hence
 \[
 \deg(A:S^2\to S^2)=(-1)^3=-1.
 \]
+
 :::
 
-<1>4. For every continuous map \(f:S^2\to S^2\), there exists \(x\in S^2\) such that
+:::
+
+::: pf-step
+
+For every continuous map \(f:S^2\to S^2\), there exists \(x\in S^2\) such that
 \[
 f(x)=x
 \qquad\text{or}\qquad
 f(x)=-x.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 \[
 f(x)\ne x
 \qquad\text{and}\qquad
 f(x)\ne -x
 \]
-for every \(x\in S^2\). By <1>1,
+for every \(x\in S^2\). By step [](#s1){.pf-ref},
 \[
 f\simeq\operatorname{id}_{S^2},
 \]
@@ -150,19 +178,24 @@ so homotopy invariance of degree gives
 \[
 \deg f=1.
 \]
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 f\simeq A,
 \]
-so <1>3 gives
+so step [](#s3){.pf-ref} gives
 \[
 \deg f=-1.
 \]
 This is impossible.
 Therefore at least one of the two equalities must hold at some point.
+
 :::
 
-<1>5. For part (ii), identify
+:::
+
+::: {.pf-step #s5}
+
+For part (ii), identify
 \[
 S^3
 =
@@ -175,7 +208,9 @@ f:S^3\to S^3,
 \qquad
 f(z_1,z_2)=(iz_1,iz_2).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Multiplication by \(i\) preserves complex absolute value, so
 \[
 |iz_1|^2+|iz_2|^2
@@ -185,16 +220,23 @@ Multiplication by \(i\) preserves complex absolute value, so
 \]
 Thus the formula maps \(S^3\) to itself.
 It is the restriction of a linear map on \(\mathbb R^4\), hence is continuous.
+
 :::
 
-<1>6. The map in <1>5 satisfies
+:::
+
+::: pf-step
+
+The map in step [](#s5){.pf-ref} satisfies
 \[
 f(x)\ne x
 \qquad\text{and}\qquad
 f(x)\ne -x
 \]
 for every \(x\in S^3\).
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 (iz_1,iz_2)=(z_1,z_2),
@@ -213,5 +255,11 @@ then
 \]
 and \(i+1\ne0\) again forces \(z_1=z_2=0\), impossible.
 Therefore this \(f\) avoids both \(x\) and \(-x\) at every point.
+
 :::
+
+:::
+
+:::
+
 :::

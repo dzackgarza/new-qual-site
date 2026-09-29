@@ -51,7 +51,11 @@ a_3=1,
 a_4=-1.
 $$
 
-<1>1. If $Q=(a,b)$ and $a\ne0$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $Q=(a,b)$ and $a\ne0$, then
 $$
 \boxed{
 P+Q=
@@ -62,7 +66,8 @@ P+Q=
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The line through $P=(0,0)$ and $Q=(a,b)$ is
 $y=\lambda x$ with $\lambda=b/a$.  Substitution gives
 $$
@@ -79,24 +84,35 @@ $$
 -(x,y)=(x,-y-1).
 $$
 Since $P+Q=-R$, the displayed formula follows.
+
 :::
 
-<1>2. The points with first coordinate $0$ are $P=(0,0)$ and
+:::
+
+::: {.pf-step #s2}
+
+The points with first coordinate $0$ are $P=(0,0)$ and
 $-P=(0,-1)$, and
 $$
 \boxed{2P=(1,0)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 At $x=0$ the equation is $y(y+1)=0$.  For the tangent computation, put
 $$
 G(x,y)=y^2+y-x^3+x.
 $$
 Since $G_x(P)=G_y(P)=1$, the tangent at $P$ is $y=-x$.  Its third
 intersection with $X$ is $(1,-1)$, whose inverse is $(1,0)$.
+
 :::
 
-<1>3. The first ten multiples of $P$ are
+:::
+
+::: {.pf-step #s3}
+
+The first ten multiples of $P$ are
 $$
 \boxed{
 \begin{array}{c|c}
@@ -115,8 +131,9 @@ n & nP\\ \hline
 }
 $$
 
-::: {.proof}
-Step <1>2 gives the first two entries.  Applying step <1>1 successively
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives the first two entries.  Applying step [](#s1){.pf-ref} successively
 gives
 $$
 \begin{aligned}
@@ -134,14 +151,20 @@ P+\left(-\frac{20}{49},-\frac{435}{343}\right)
 \end{aligned}
 $$
 In particular $6P=(6,14)$, as required.
+
 :::
 
-<1>4. The discriminant of the generalized Weierstrass equation is
+:::
+
+::: {.pf-step #s4}
+
+The discriminant of the generalized Weierstrass equation is
 $$
 \boxed{\Delta=37.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 For the coefficients
 $$
 a_1=a_2=a_6=0,
@@ -169,24 +192,36 @@ $$
 &=37.
 \end{aligned}
 $$
+
 :::
 
-<1>5. For every prime $p\ne37$, the reduction of
+:::
+
+::: {.pf-step #s5}
+
+For every prime $p\ne37$, the reduction of
 $$
 y^2+y=x^3-x
 $$
 over $\FF_p$ is nonsingular.
 
-::: {.proof}
+::: pf-proof
+
 A generalized Weierstrass cubic is nonsingular over a field exactly when
-its discriminant is nonzero in that field. By step <1>4, the discriminant
+its discriminant is nonzero in that field. By step [](#s4){.pf-ref}, the discriminant
 of this integral model reduces to the class of $37$ in $\FF_p$. Thus it is
 nonzero for every $p\ne37$, proving part (b).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>5 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

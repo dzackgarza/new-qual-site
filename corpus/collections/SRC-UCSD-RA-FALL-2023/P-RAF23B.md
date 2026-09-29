@@ -29,8 +29,15 @@ Then for any $f \in L^1(\mathbb{R}, m)$, $S_a f \to f$ in $L^1$ as $a \to 1$.
 :::
 
 ::: {.solution}
-<1>1. $\|S_af\|_1=a\|f\|_1$ for $a>0$ and $f\in L^1(\mathbb R)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$\|S_af\|_1=a\|f\|_1$ for $a>0$ and $f\in L^1(\mathbb R)$.
+
+::: pf-proof
+
 For $a>0$, the change of variables $y=x/a$ gives
 \[
 \|S_af\|_1
@@ -43,10 +50,17 @@ Hence
 \|S_a\|_{L^1\to L^1}=a.
 \]
 In particular, the operators $S_a$ are uniformly bounded for $a$ in any fixed neighborhood of $1$.
+
 :::
 
-<1>2. $\|S_ag-g\|_1\to0$ as $a\to1$ for every $g\in C_c(\mathbb R)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$\|S_ag-g\|_1\to0$ as $a\to1$ for every $g\in C_c(\mathbb R)$.
+
+::: pf-proof
+
 Let $g\in C_c(\mathbb R)$ and choose $M>0$ with
 \[
 \operatorname{supp}g\subset[-M,M].
@@ -68,15 +82,22 @@ Both functions vanish outside a fixed compact interval, so
 \[
 \|S_ag-g\|_1\longrightarrow0.
 \]
+
 :::
 
-<1>3. $\|S_af-f\|_1\to0$ as $a\to1$ for every $f\in L^1(\mathbb R)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\|S_af-f\|_1\to0$ as $a\to1$ for every $f\in L^1(\mathbb R)$.
+
+::: pf-proof
+
 Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Choose $g\in C_c(\mathbb R)$ such that
 \[
 \|f-g\|_1<\varepsilon.
 \]
-For $a$ sufficiently close to $1$, say $a\in[1/2,2]$, step <1>1 gives
+For $a$ sufficiently close to $1$, say $a\in[1/2,2]$, step [](#s1){.pf-ref} gives
 \[
 \|S_a(f-g)\|_1\le2\|f-g\|_1<2\varepsilon.
 \]
@@ -88,7 +109,7 @@ Therefore
 &<3\varepsilon+\|S_ag-g\|_1.
 \end{aligned}
 \]
-By step <1>2, the final term tends to $0$ as $a\to1$. Hence
+By step [](#s2){.pf-ref}, the final term tends to $0$ as $a\to1$. Hence
 \[
 \limsup_{a\to1}\|S_af-f\|_1\le3\varepsilon.
 \]
@@ -96,5 +117,11 @@ Since $\varepsilon$ is arbitrary,
 \[
 \boxed{\|S_af-f\|_1\longrightarrow0\quad(a\to1).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

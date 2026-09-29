@@ -52,7 +52,11 @@ u(x,y)=e^x s(y),
 v(x,y)=e^x t(y).
 $$
 
-<1>1. The Cauchy--Riemann equations imply
+::: pf
+
+::: {.pf-step #s1}
+
+The Cauchy--Riemann equations imply
 $$
 s'(y)=-t(y),
 \qquad
@@ -60,7 +64,8 @@ t'(y)=s(y)
 $$
 for every $y\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is holomorphic,
 $$
 u_x=v_y,
@@ -81,9 +86,14 @@ v_y=e^x t'(y).
 $$
 Because $e^x>0$, the first Cauchy--Riemann equation gives
 $s=t'$, while the second gives $s'=-t$.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 g(y)=s(y)+it(y).
 $$
@@ -96,8 +106,9 @@ $$
 g(0)=1.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 g'(y)
@@ -111,20 +122,26 @@ The initial conditions give
 $$
 g(0)=s(0)+it(0)=1.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 g(y)=e^{iy}
 $$
 for every $y\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 h(y)=e^{-iy}g(y).
 $$
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 h'(y)
@@ -138,17 +155,23 @@ $$
 h(0)=g(0)=1,
 $$
 we have $h(y)=1$, and therefore $g(y)=e^{iy}$.
+
 :::
 
-<1>4. The required functions are
+:::
+
+::: {.pf-step #s4}
+
+The required functions are
 $$
 \boxed{s(y)=\cos y},
 \qquad
 \boxed{t(y)=\sin y}.
 $$
 
-::: {.proof}
-By step <1>3 and Euler's formula,
+::: pf-proof
+
+By step [](#s3){.pf-ref} and Euler's formula,
 $$
 s(y)+it(y)
 =
@@ -159,11 +182,17 @@ e^{iy}
 \cos y+i\sin y.
 $$
 Equality of real and imaginary parts gives the result.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 determines both functions.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} determines both functions.
+
+:::
+
+:::
+
 :::

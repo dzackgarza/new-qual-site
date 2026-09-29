@@ -30,8 +30,15 @@ Justify your answers.
 :::
 
 ::: {.solution}
-<1>1. Every discrete space is totally disconnected.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every discrete space is totally disconnected.
+
+::: pf-proof
+
 Let $C\subseteq X$ contain at least two points and choose $x\in C$.
 Since $X$ is discrete, both
 \[
@@ -42,15 +49,29 @@ C\setminus\{x\}
 are open in the subspace $C$.
 They are disjoint, nonempty, and cover $C$, so $C$ is disconnected.
 Hence every nonempty connected subset of $X$ is a singleton.
+
 :::
 
-<1>2. The space $\QQ$ with its usual subspace topology is not discrete.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The space $\QQ$ with its usual subspace topology is not discrete.
+
+::: pf-proof
+
 Every open interval about a rational $q$ contains rational points other than $q$, so no singleton $\{q\}$ is open in $\QQ$.
+
 :::
 
-<1>3. The space $\QQ$ is totally disconnected.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The space $\QQ$ is totally disconnected.
+
+::: pf-proof
+
 Let $C\subseteq\QQ$ contain distinct points $a<b$.
 Choose an irrational number $r$ with
 \[
@@ -65,10 +86,23 @@ C_+=C\cap(r,\infty)
 are disjoint nonempty sets open in the subspace $C$.
 Because $r\notin\QQ$, they cover $C$.
 Thus every subset of $\QQ$ containing at least two points is disconnected.
+
 :::
 
-<1>4. The converse is false.
-::: {.proof}
-By <1>2, $\QQ$ is not discrete, while by <1>3 it is totally disconnected.
 :::
+
+::: pf-step
+
+The converse is false.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $\QQ$ is not discrete, while by step [](#s3){.pf-ref} it is totally disconnected.
+
+:::
+
+:::
+
+:::
+
 :::

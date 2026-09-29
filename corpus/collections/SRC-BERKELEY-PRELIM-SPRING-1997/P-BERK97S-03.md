@@ -38,20 +38,30 @@ $$
 I_n\coloneqq\int_0^n\frac{x}{n}f(x)\,dx.
 $$
 
-<1>1. For every $\varepsilon>0$, there exists $A>0$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+For every $\varepsilon>0$, there exists $A>0$ such that
 $$
 \int_A^\infty f(x)\,dx<\frac{\varepsilon}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $f$ is nonnegative and
 $$
 \int_0^\infty f(x)\,dx<\infty.
 $$
 Therefore the tails of this improper integral tend to zero.
+
 :::
 
-<1>2. For $n>A$,
+:::
+
+::: {.pf-step #s2}
+
+For $n>A$,
 $$
 0\leq I_n
 \leq
@@ -60,7 +70,8 @@ $$
 \int_A^\infty f(x)\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Split the integral at $A$:
 $$
 I_n
@@ -79,15 +90,21 @@ I_n
 \int_A^nf(x)\,dx,
 $$
 and the last integral is at most the tail integral in the claim.
+
 :::
 
-<1>3. For all sufficiently large $n$,
+:::
+
+::: {.pf-step #s3}
+
+For all sufficiently large $n$,
 $$
 0\leq I_n<\varepsilon.
 $$
 
-::: {.proof}
-Choose $A$ as in step <1>1. The finite number
+::: pf-proof
+
+Choose $A$ as in step [](#s1){.pf-ref}. The finite number
 $$
 C_A\coloneqq A\int_0^A f(x)\,dx
 $$
@@ -95,7 +112,7 @@ is independent of $n$. Choose $n>A$ sufficiently large that
 $$
 \frac{C_A}{n}<\frac{\varepsilon}{2}.
 $$
-Then step <1>2 and step <1>1 give
+Then step [](#s2){.pf-ref} and step [](#s1){.pf-ref} give
 $$
 0\leq I_n
 <
@@ -105,9 +122,14 @@ $$
 =
 \varepsilon.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \lim_{n\to\infty}
@@ -116,13 +138,20 @@ $$
 }.
 $$
 
-::: {.proof}
-Step <1>3 is precisely the $\varepsilon$-definition of $I_n\to0$.
+::: pf-proof
+
+Step [](#s3){.pf-ref} is precisely the $\varepsilon$-definition of $I_n\to0$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required limit.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required limit.
+
+:::
+
+:::
+
 :::

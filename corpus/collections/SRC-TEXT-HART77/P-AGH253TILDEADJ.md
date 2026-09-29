@@ -34,9 +34,14 @@ $$
 Use the canonical identifications $\widetilde M(D(f))\cong M_f$ and $\Gamma(X,\widetilde M)\cong M$ [@Har10a, Proposition II.5.1].
 For $f\in A$, write $r_f:\mcf(X)\to\mcf(D(f))$ for restriction.
 
-<1>1. Every $A$-linear map $u:M\to\Gamma(X,\mcf)$ determines an $\OO_X$-linear morphism $\Phi(u):\widetilde M\to\mcf$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every $A$-linear map $u:M\to\Gamma(X,\mcf)$ determines an $\OO_X$-linear morphism $\Phi(u):\widetilde M\to\mcf$.
+
+::: pf-proof
+
 The module $\mcf(D(f))$ is an $A_f$-module, so multiplication by $f$ is invertible on it.
 The universal property of localization therefore extends $r_f\circ u$ uniquely to an $A_f$-linear map
 $$
@@ -52,13 +57,19 @@ The uniqueness in localization makes these composites equal.
 Thus the maps $u_f$ commute with all restrictions between distinguished opens.
 Distinguished opens form a basis, so the sheaf gluing axiom extends them uniquely to a morphism $\Phi(u):\widetilde M\to\mcf$.
 Its linearity follows on this basis, hence on every open set.
+
 :::
 
-<1>2. Taking global sections defines a map $\Psi:\Hom_{\OO_X}(\widetilde M,\mcf)\to\Hom_A(M,\Gamma(X,\mcf))$ inverse to $\Phi$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Taking global sections defines a map $\Psi:\Hom_{\OO_X}(\widetilde M,\mcf)\to\Hom_A(M,\Gamma(X,\mcf))$ inverse to $\Phi$.
+
+::: pf-proof
+
 For $v:\widetilde M\to\mcf$, let $\Psi(v)=v_X$ under $\Gamma(X,\widetilde M)\cong M$.
-Taking $f=1$ in step <1>1 gives $\Psi(\Phi(u))=u$.
+Taking $f=1$ in step [](#s1){.pf-ref} gives $\Psi(\Phi(u))=u$.
 
 Conversely, compatibility of $v$ with restriction and its $A_f$-linearity give
 $$
@@ -67,13 +78,19 @@ $$
 This is precisely the formula for $\Phi(\Psi(v))$ on $D(f)$.
 The morphisms agree on a basis, so $\Phi(\Psi(v))=v$.
 Both constructions preserve addition and multiplication by elements of $A$, giving an isomorphism of $A$-modules.
+
 :::
 
-<1>3. The isomorphism is natural in $M$ and $\mcf$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The isomorphism is natural in $M$ and $\mcf$.
+
+::: pf-proof
+
 Let $a:M'\to M$ be $A$-linear and let $b:\mcf\to\mcg$ be an $\OO_X$-linear morphism.
-The formula of step <1>1 gives
+The formula of step [](#s1){.pf-ref} gives
 $$
 \Phi(u\circ a)=\Phi(u)\circ\widetilde a,
 \qquad
@@ -82,12 +99,18 @@ $$
 Indeed, on each $D(f)$ both sides of the first equality send $m'/f^n$ to $f^{-n}u(a(m'))|_{D(f)}$.
 Both sides of the second send $m/f^n$ to $f^{-n}b_{D(f)}(u(m)|_{D(f)})$.
 These are the naturality identities in the two variables.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 construct the inverse isomorphisms, and step <1>3 proves naturality.
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct the inverse isomorphisms, and step [](#s3){.pf-ref} proves naturality.
 Thus $M\mapsto\widetilde M$ is [[D-DEFADJ|left adjoint]] to $\mcf\mapsto\Gamma(X,\mcf)$.
+
 :::
+
+:::
+
 :::

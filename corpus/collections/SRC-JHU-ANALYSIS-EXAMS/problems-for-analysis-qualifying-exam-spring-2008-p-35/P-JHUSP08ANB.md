@@ -33,8 +33,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The limit on $[0,1]$ equals the essential supremum.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The limit on $[0,1]$ equals the essential supremum.
+
+::: pf-proof
+
 Let
 \[
 M=\|f\|_\infty.
@@ -75,10 +82,17 @@ Combining the two bounds yields
 \[
 \lim_{p\to\infty}\|f\|_p=M=\|f\|_\infty.
 \]
+
 :::
 
-<1>2. The statement fails on $\mathbb R$ for arbitrary $L^\infty$ functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+The statement fails on $\mathbb R$ for arbitrary $L^\infty$ functions.
+
+::: pf-proof
+
 Take
 \[
 f(x)\equiv1.
@@ -92,5 +106,11 @@ but for every finite $p$,
 \int_{\mathbb R}|f(x)|^p\,dx=\infty.
 \]
 Thus the finite-$p$ norms are infinite, so they do not converge to $\|f\|_\infty=1$.
+
 :::
+
+:::
+
+:::
+
 :::

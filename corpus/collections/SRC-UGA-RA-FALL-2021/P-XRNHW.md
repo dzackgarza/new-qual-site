@@ -47,8 +47,15 @@ Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost ever
 :::
 
 ::: {.solution}
-<1>1. Prove the bound in part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the bound in part (a).
+
+::: pf-proof
+
 Fix $y\notin F$ and put
 \[
 d:=\delta_F(y)>0.
@@ -72,10 +79,17 @@ Therefore
 \boxed{
 \int_F|x-y|^{-2}\,dx\le\frac{2}{\delta_F(y)}.}
 \]
+
 :::
 
-<1>2. Show that $I(x)=\infty$ for every $x\notin F$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $I(x)=\infty$ for every $x\notin F$.
+
+::: pf-proof
+
 Fix $x\notin F$ and set
 \[
 d:=\delta_F(x)>0,
@@ -98,10 +112,17 @@ because $t^{-2}$ is not locally integrable at $0$. Thus
 \[
 \boxed{I(x)=\infty\quad(x\notin F).}
 \]
+
 :::
 
-<1>3. Show that $I$ is integrable over $F$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $I$ is integrable over $F$.
+
+::: pf-proof
+
 The integrand is nonnegative, so Tonelli's theorem gives
 \[
 \begin{aligned}
@@ -123,10 +144,17 @@ Hence
 \int_F I(x)\,dx
 \le2m(\mathbb R\setminus F)<\infty.
 \]
+
 :::
 
-<1>4. Deduce finiteness almost everywhere on $F$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Deduce finiteness almost everywhere on $F$.
+
+::: pf-proof
+
 The function $I$ is nonnegative. If the set
 \[
 E:=\{x\in F:I(x)=\infty\}
@@ -139,6 +167,11 @@ contradicting Step 3. Therefore $m(E)=0$, and
 \[
 \boxed{I(x)<\infty\text{ for almost every }x\in F.}
 \]
-:::
+
 :::
 
+:::
+
+:::
+
+:::

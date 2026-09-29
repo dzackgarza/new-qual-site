@@ -38,7 +38,11 @@ I
 \int_{-1/2}^{1/2}\frac{e^x-1}{x}\,dx.
 $$
 
-<1>1. On $[-1/2,1/2]$,
+::: pf
+
+::: {.pf-step #s1}
+
+On $[-1/2,1/2]$,
 $$
 \frac{e^x-1}{x}
 =
@@ -47,7 +51,8 @@ $$
 with the value at $x=0$ understood by continuity, and the series may be
 integrated term by term.
 
-::: {.proof}
+::: pf-proof
+
 The exponential series gives
 $$
 e^x-1
@@ -66,9 +71,14 @@ $$
 \frac{2^{-m}}{(m+1)!}.
 $$
 Therefore termwise integration is valid.
+
 :::
 
-<1>2. The integral is
+:::
+
+::: {.pf-step #s2}
+
+The integral is
 $$
 I
 =
@@ -76,8 +86,9 @@ I
 \frac{1}{2^{2j}(2j+1)(2j+1)!}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 I
 =
@@ -97,9 +108,14 @@ $$
 \end{aligned}
 $$
 Substitution gives the formula.
+
 :::
 
-<1>3. The first two terms of the series in step <1>2 sum to
+:::
+
+::: pf-step
+
+The first two terms of the series in step [](#s2){.pf-ref} sum to
 $$
 \boxed{
 c
@@ -110,7 +126,8 @@ c
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $j=0$ term is
 $$
 1.
@@ -121,9 +138,14 @@ $$
 =
 \frac1{72}.
 $$
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 T_j
 \coloneqq
@@ -134,7 +156,8 @@ $$
 0<T_{j+1}<\frac14T_j.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Directly,
 $$
 \frac{T_{j+1}}{T_j}
@@ -144,9 +167,14 @@ $$
 <
 \frac14.
 $$
+
 :::
 
-<1>5. The error made by choosing $c=73/72$ satisfies
+:::
+
+::: {.pf-step #s5}
+
+The error made by choosing $c=73/72$ satisfies
 $$
 \abs{I-c}
 <
@@ -155,8 +183,9 @@ $$
 0.01.
 $$
 
-::: {.proof}
-All terms in step <1>2 are positive, so
+::: pf-proof
+
+All terms in step [](#s2){.pf-ref} are positive, so
 $$
 I-c
 =
@@ -170,7 +199,7 @@ T_2
 =
 \frac1{9600}.
 $$
-By step <1>4,
+By step [](#s4){.pf-ref},
 $$
 \sum_{j=2}^{\infty}T_j
 <
@@ -180,21 +209,33 @@ $$
 =
 \frac1{7200}.
 $$
+
 :::
 
-<1>6. Therefore the real number
+:::
+
+::: {.pf-step #s6}
+
+Therefore the real number
 $$
 \boxed{\frac{73}{72}}
 $$
 satisfies the required inequality.
 
-::: {.proof}
-This is exactly the estimate in step <1>5.
+::: pf-proof
+
+This is exactly the estimate in step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 supplies an admissible value of $c$.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} supplies an admissible value of $c$.
+
+:::
+
+:::
+
 :::

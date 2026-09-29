@@ -56,13 +56,18 @@ An infinitesimal deformation is understood together with an identification
 $A'/\epsilon A'\cong A$, and two deformations are identified when there is a
 $D$-algebra isomorphism inducing the identity on $A$.
 
-<1>1. Every infinitesimal deformation $A'$ of $A$ admits a surjective $D$-algebra map
+::: pf
+
+::: {.pf-step #s1}
+
+Every infinitesimal deformation $A'$ of $A$ admits a surjective $D$-algebra map
 $$
 q':P_D\surjects A'
 $$
 whose reduction modulo $\epsilon$ is the fixed quotient $q:P\surjects A$.
 
-::: {.proof}
+::: pf-proof
+
 By the infinitesimal lifting property of Exercise II.8.6, the map
 $$
 q:P\longrightarrow A=A'/\epsilon A'
@@ -91,14 +96,20 @@ Hence
 $$
 a'=q'(p+\epsilon r).
 $$
+
 :::
 
-<1>2. If $J'=\ker q'$, then $J'$ is an embedded first-order deformation of the ideal $J\subseteq P$, and therefore determines an element
+:::
+
+::: {.pf-step #s2}
+
+If $J'=\ker q'$, then $J'$ is an embedded first-order deformation of the ideal $J\subseteq P$, and therefore determines an element
 $$
 \phi_{q'}\in\Hom_A(J/J^2,A).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Reduction of $q'$ modulo $\epsilon$ is $q$, so
 $$
 (J'+(\epsilon))/(\epsilon)=J.
@@ -121,9 +132,14 @@ $$
 \Spec A\subseteq\Spec P.
 $$
 It yields $\phi_{q'}\in\Hom_A(J/J^2,A)$.
+
 :::
 
-<1>3. Conversely, every
+:::
+
+::: {.pf-step #s3}
+
+Conversely, every
 $$
 \phi\in\Hom_A(J/J^2,A)
 $$
@@ -137,7 +153,8 @@ J_\phi
 =\{j+\epsilon p:j\in J,\ p\bmod J=\phi(j\bmod J^2)\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Exercise III.9.7 shows that $J_\phi$ is an ideal of $P_D$, that
 $$
 (J_\phi+(\epsilon))/(\epsilon)=J,
@@ -151,9 +168,14 @@ $$
 A_\phi\tensor_Dk\cong P/J=A.
 $$
 Hence $A_\phi$ is an infinitesimal deformation of $A$.
+
 :::
 
-<1>4. If $q'_1,q'_2:P_D\surjects A'$ are two lifts of the same quotient map $q:P\surjects A$ to one deformation $A'$, then
+:::
+
+::: {.pf-step #s4}
+
+If $q'_1,q'_2:P_D\surjects A'$ are two lifts of the same quotient map $q:P\surjects A$ to one deformation $A'$, then
 $$
 \phi_{q'_2}-\phi_{q'_1}
 $$
@@ -164,7 +186,8 @@ $$
 \Hom_A(J/J^2,A).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $p\in P$, the two lifts have the same reduction modulo $\epsilon$, so there
 is a unique element $\delta(p)\in A$ such that
 $$
@@ -203,16 +226,22 @@ $$
 \Hom_A(J/J^2,A).
 $$
 In particular, the two homomorphisms have the same class in the cokernel.
+
 :::
 
-<1>5. Conversely, if two elements
+:::
+
+::: {.pf-step #s5}
+
+Conversely, if two elements
 $$
 \phi_1,\phi_2\in\Hom_A(J/J^2,A)
 $$
 differ by the restriction of a derivation $\delta:P\to A$, then the deformations
 $A_{\phi_1}$ and $A_{\phi_2}$ are isomorphic over $D$ by an isomorphism inducing the identity on $A$.
 
-::: {.proof}
+::: pf-proof
+
 Choose polynomial generators $x_1,\ldots,x_m$ of $P$ and choose lifts
 $h_i\in P$ of the elements $\delta(x_i)\in A$.
 Define a $D$-algebra automorphism
@@ -231,7 +260,7 @@ $$
 \alpha(j)\equiv j+\epsilon\delta(j)\pmod{\epsilon J}.
 $$
 Hence, if $\phi_2-\phi_1$ is the restriction of $\delta$, the defining formula
-for the ideals in step <1>3 gives
+for the ideals in step [](#s3){.pf-ref} gives
 $$
 \alpha(J_{\phi_1})=J_{\phi_2}
 $$
@@ -241,12 +270,18 @@ $$
 A_{\phi_1}\iso A_{\phi_2}
 $$
 which induces the identity on the special fibre $A$.
+
 :::
 
-<1>6. Two elements of $\Hom_A(J/J^2,A)$ determine isomorphic infinitesimal deformations if and only if they have the same image in $T^1(A)$.
+:::
 
-::: {.proof}
-Steps <1>4 and <1>5 show that changing a polynomial lift, or equivalently
+::: {.pf-step #s6}
+
+Two elements of $\Hom_A(J/J^2,A)$ determine isomorphic infinitesimal deformations if and only if they have the same image in $T^1(A)$.
+
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} show that changing a polynomial lift, or equivalently
 changing the presentation of the same deformation inside $\Spec P_D$, changes
 the embedded-deformation class precisely by an element in the image of
 $$
@@ -262,7 +297,7 @@ Compose the quotient map $P_D\to A_{\phi_1}$ with $\Psi$.
 This gives a second lift of $P\to A$ to $A_{\phi_2}$.
 Its kernel is $J_{\phi_1}$, while the standard quotient
 map has kernel $J_{\phi_2}$.
-Step <1>4 therefore shows that $\phi_1$ and $\phi_2$ differ by the image of a
+Step [](#s4){.pf-ref} therefore shows that $\phi_1$ and $\phi_2$ differ by the image of a
 derivation of $P$.
 
 Thus the set of isomorphism classes is exactly the cokernel
@@ -273,37 +308,55 @@ $$
 \Hom_A(J/J^2,A)
 \right).
 $$
+
 :::
 
-<1>7. The infinitesimal deformations of $A$ are classified by
+:::
+
+::: {.pf-step #s7}
+
+The infinitesimal deformations of $A$ are classified by
 $$
 \boxed{T^1(A)}.
 $$
 
-::: {.proof}
-By definition, the cokernel displayed in step <1>6 is $T^1(A)$.
-Steps <1>1--<1>3 associate an element of that cokernel to every deformation and
-construct a deformation from every representative, while steps <1>4--<1>6 show
+::: pf-proof
+
+By definition, the cokernel displayed in step [](#s6){.pf-ref} is $T^1(A)$.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} associate an element of that cokernel to every deformation and
+construct a deformation from every representative, while steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} show
 that precisely the representatives in one cokernel class give isomorphic
 deformations.
+
 :::
 
-<1>8. The module $T^1(A)$ is independent of the chosen polynomial presentation of $A$.
+:::
 
-::: {.proof}
-Step <1>7 identifies $T^1(A)$ intrinsically with the set of first-order
+::: {.pf-step #s8}
+
+The module $T^1(A)$ is independent of the chosen polynomial presentation of $A$.
+
+::: pf-proof
+
+Step [](#s7){.pf-ref} identifies $T^1(A)$ intrinsically with the set of first-order
 deformations of the $k$-algebra $A$ up to isomorphism fixing the special fibre.
 This classification depends only on $A$, not on a presentation
 $P\surjects A$.
 Hence the classifying module denoted $T^1(A)$ is independent, up to the
 canonical identification supplied by deformation classes, of the chosen
 polynomial presentation.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>7 prove the classification, and step <1>8 gives the stated
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove the classification, and step [](#s8){.pf-ref} gives the stated
 independence of the polynomial presentation.
+
 :::
+
+:::
+
 :::

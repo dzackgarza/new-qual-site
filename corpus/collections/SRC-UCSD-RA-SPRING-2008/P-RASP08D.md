@@ -39,10 +39,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Prove shift invariance of the Cesaro-limit subspace.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove shift invariance of the Cesaro-limit subspace.
+
+::: pf-proof
+
 For $x\in\ell^\infty$,
 \[
 \begin{aligned}
@@ -59,10 +65,17 @@ and
 \[
 \boxed{f(\tau x)=f(x)\qquad(x\in M).}
 \]
+
 :::
 
-<1>2. Define the sublinear dominating functional.
-::: {.proof}
+:::
+
+::: pf-step
+
+Define the sublinear dominating functional.
+
+::: pf-proof
+
 For $x\in\ell^\infty$, set
 \[
 p(x):=\limsup_{n\to\infty}x(n).
@@ -92,10 +105,17 @@ and the finitely many earlier terms contribute $o(1)$ to the Cesaro averages; he
 f(x)\le p(x)
 \qquad(x\in M).
 \]
+
 :::
 
-<1>3. Apply the Hahn--Banach theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Hahn--Banach theorem.
+
+::: pf-proof
+
 By the real Hahn--Banach theorem in dominated form, there exists a linear functional
 \[
 F:\ell^\infty\to\mathbb R
@@ -127,5 +147,11 @@ F|_M=f,
 }
 \]
 for every bounded real sequence $x$.
+
 :::
+
+:::
+
+:::
+
 :::

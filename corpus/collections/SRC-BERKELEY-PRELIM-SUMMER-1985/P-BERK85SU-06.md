@@ -39,12 +39,17 @@ I(a)=\int_0^\infty\frac{x^{a-1}}{1+x}\,dx,
 \sigma=\operatorname{Re}a.
 $$
 
-<1>1. The improper integral $I(a)$ converges exactly when
+::: pf
+
+::: {.pf-step #s1}
+
+The improper integral $I(a)$ converges exactly when
 $$
 0<\sigma<1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Near $0$,
 $$
 \frac{\abs{x^{a-1}}}{1+x}
@@ -104,9 +109,14 @@ so the partial integrals cannot converge. If $\sigma=1$ and
 $a\neq1$, the error term converges while $R^{a-1}$ has no limit; for
 $a=1$ the leading integral is logarithmic. Thus convergence at
 infinity requires $\sigma<1$.
+
 :::
 
-<1>2. Assume henceforth that $0<\sigma<1$, and define
+:::
+
+::: {.pf-step #s2}
+
+Assume henceforth that $0<\sigma<1$, and define
 $$
 F(z)=\frac{z^{a-1}}{1+z}
 $$
@@ -122,7 +132,8 @@ On a keyhole contour about the positive real axis, the circular arc
 integrals tend to $0$ as the outer radius tends to infinity and the
 inner radius tends to $0$.
 
-::: {.proof}
+::: pf-proof
+
 On the outer circle $\abs{z}=R$, the factor coming from
 $e^{-\operatorname{Im}(a)\arg z}$ is bounded uniformly for
 $0\le\arg z\le2\pi$. Thus, for a constant $C_a$ independent of
@@ -143,16 +154,22 @@ C_a\frac{r^{\sigma-1}}{1-r}.
 $$
 Multiplication by the arc length $2\pi r$ gives a bound of order
 $r^\sigma$, which tends to $0$ because $\sigma>0$.
+
 :::
 
-<1>3. The limiting contour integral satisfies
+:::
+
+::: {.pf-step #s3}
+
+The limiting contour integral satisfies
 $$
 (1-e^{2\pi ia})I(a)
 =
 -2\pi i e^{\pi ia}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the upper side of the positive real axis, $\arg z=0$, so the
 contribution tends to $I(a)$. On the lower side,
 $\arg z=2\pi$ and the contour runs from infinity back to $0$, so
@@ -162,7 +179,7 @@ $$
 =
 -e^{2\pi ia}I(a).
 $$
-By step <1>2, the circular contributions vanish in the limit.
+By step [](#s2){.pf-ref}, the circular contributions vanish in the limit.
 
 The only pole inside the keyhole contour is $z=-1$. Since
 $\arg(-1)=\pi$ on the chosen branch,
@@ -176,9 +193,14 @@ e^{\pi i(a-1)}
 -e^{\pi ia}.
 $$
 The residue theorem therefore gives the displayed identity.
+
 :::
 
-<1>4. For $0<\operatorname{Re}a<1$,
+:::
+
+::: {.pf-step #s4}
+
+For $0<\operatorname{Re}a<1$,
 $$
 \boxed{
 I(a)
@@ -187,14 +209,15 @@ I(a)
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 1-e^{2\pi ia}
 =
 -2i e^{\pi ia}\sin(\pi a),
 $$
-step <1>3 gives
+step [](#s3){.pf-ref} gives
 $$
 I(a)
 =
@@ -203,12 +226,18 @@ I(a)
 =
 \frac{\pi}{\sin(\pi a)}.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 gives the exact restriction on $a$, and step <1>4 evaluates
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the exact restriction on $a$, and step [](#s4){.pf-ref} evaluates
 the integral throughout that domain.
+
 :::
+
+:::
+
 :::

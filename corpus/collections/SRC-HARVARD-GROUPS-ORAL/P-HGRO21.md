@@ -34,14 +34,27 @@ n_3\mid4,
 \]
 so $n_3=1$ or $4$.
 
-<1>1. If $n_3=1$, the unique Sylow $3$-subgroup is a nontrivial proper normal
+::: pf
+
+::: {.pf-step #s1}
+
+If $n_3=1$, the unique Sylow $3$-subgroup is a nontrivial proper normal
 subgroup.
-::: {.proof}
+
+::: pf-proof
+
 It has order $3$, and uniqueness makes it normal.
+
 :::
 
-<1>2. If $n_3=4$, then the Sylow $2$-subgroup is unique and hence normal.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $n_3=4$, then the Sylow $2$-subgroup is unique and hence normal.
+
+::: pf-proof
+
 Four distinct subgroups of order $3$ intersect pairwise only in the identity,
 so their nonidentity elements account for
 \[
@@ -55,10 +68,23 @@ orders powers of $2$ and therefore lie among those same three remaining
 elements. Hence every Sylow $2$-subgroup consists of the identity together with
 those three elements. There is therefore only one Sylow $2$-subgroup, and it is
 normal.
+
 :::
 
-<1>3. Hence $G$ always has a nontrivial proper normal subgroup.
-::: {.proof}
-This follows from <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Hence $G$ always has a nontrivial proper normal subgroup.
+
+::: pf-proof
+
+This follows from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

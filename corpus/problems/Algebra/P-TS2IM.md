@@ -40,12 +40,20 @@ View $\QQ^3$ as a $\QQ[x]$-module via $x\cdot v=Av$. The possible elementary div
 
 There are exactly three possibilities:
 
-<1>1. Three size-$1$ $(x-1)$ blocks:
+::: pf
+
+::: pf-step
+
+Three size-$1$ $(x-1)$ blocks:
 \[
 A\sim I_3.
 \]
 
-<1>2. One size-$2$ $(x-1)$ block and one size-$1$ block:
+:::
+
+::: pf-step
+
+One size-$2$ $(x-1)$ block and one size-$1$ block:
 \[
 A\sim
 \begin{pmatrix}
@@ -55,7 +63,16 @@ A\sim
 \end{pmatrix}.
 \]
 
-<1>3. One $(x-1)$ block and one block for $x^2+x+1$:
+:::
+
+::: pf-step
+
+One $(x-1)$ block and one block for $x^2+x+1$:
+
+:::
+
+:::
+
 \[
 A\sim
 \begin{pmatrix}

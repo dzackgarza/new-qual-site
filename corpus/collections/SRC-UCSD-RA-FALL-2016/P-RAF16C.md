@@ -42,8 +42,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Verify absolute integrability of the double integral.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Verify absolute integrability of the double integral.
+
+::: pf-proof
+
 Using
 \[
 \frac1x=\int_0^\infty e^{-tx}\,dt,
@@ -67,10 +74,17 @@ e^{-\alpha x}\frac{|\sin(\beta x)|}{x}
 \le e^{-\alpha x},
 \]
 which is integrable. Hence the double integral is absolutely integrable, and Fubini's theorem applies.
+
 :::
 
-<1>2. Interchange the integrals and compute the inner integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Interchange the integrals and compute the inner integral.
+
+::: pf-proof
+
 By Fubini,
 \[
 \begin{aligned}
@@ -89,10 +103,17 @@ Taking $u=\alpha+t$,
 \[
 I=\int_0^\infty\frac{\beta}{(\alpha+t)^2+\beta^2}\,dt.
 \]
+
 :::
 
-<1>3. Evaluate the remaining elementary integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Evaluate the remaining elementary integral.
+
+::: pf-proof
+
 With $u=\alpha+t$,
 \[
 I=\int_\alpha^\infty\frac{\beta}{u^2+\beta^2}\,du
@@ -104,5 +125,11 @@ I=\frac\pi2-\arctan\frac\alpha\beta
 =\boxed{\arctan\frac\beta\alpha},
 \]
 because $\alpha,\beta>0$.
+
 :::
+
+:::
+
+:::
+
 :::

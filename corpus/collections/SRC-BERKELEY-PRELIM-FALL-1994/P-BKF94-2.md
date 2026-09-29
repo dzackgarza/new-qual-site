@@ -49,19 +49,30 @@ A\coloneqq
 \end{pmatrix}.
 $$
 
-<1>1. The matrix $A$ has rank at most $2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The matrix $A$ has rank at most $2$.
+
+::: pf-proof
+
 Its first and third rows are equal. Therefore the three rows are linearly
 dependent, so
 $$
 \operatorname{rank}A\leq2.
 $$
+
 :::
 
-<1>2. The quadratic form of $A$ takes a positive value.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The quadratic form of $A$ takes a positive value.
+
+::: pf-proof
+
 For
 $$
 u=
@@ -75,11 +86,17 @@ one has
 $$
 u^tAu=1>0.
 $$
+
 :::
 
-<1>3. The quadratic form of $A$ takes a negative value.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The quadratic form of $A$ takes a negative value.
+
+::: pf-proof
+
 Take
 $$
 v=
@@ -109,12 +126,18 @@ v^tAv
 -0.00008
 <0.
 $$
+
 :::
 
-<1>4. The matrix $A$ has at least one positive eigenvalue and at least one
+:::
+
+::: {.pf-step #s4}
+
+The matrix $A$ has at least one positive eigenvalue and at least one
 negative eigenvalue.
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A$ is real symmetric, so the spectral theorem gives an
 orthonormal eigenbasis and expresses its quadratic form as
 $$
@@ -123,24 +146,36 @@ x^tAx
 \sum_j\lambda_jc_j^2
 $$
 in eigenbasis coordinates. If every eigenvalue were nonnegative, the
-quadratic form could not take the negative value in step <1>3. Hence some
+quadratic form could not take the negative value in step [](#s3){.pf-ref}. Hence some
 eigenvalue is negative. If every eigenvalue were nonpositive, the quadratic
-form could not take the positive value in step <1>2. Hence some eigenvalue
+form could not take the positive value in step [](#s2){.pf-ref}. Hence some eigenvalue
 is positive.
+
 :::
 
-<1>5. The matrix $A$ has exactly one positive and exactly one negative
+:::
+
+::: {.pf-step #s5}
+
+The matrix $A$ has exactly one positive and exactly one negative
 eigenvalue.
 
-::: {.proof}
-By step <1>1, at most two eigenvalues are nonzero, counted with
-multiplicity. Step <1>4 already supplies one positive and one negative
+::: pf-proof
+
+By step [](#s1){.pf-ref}, at most two eigenvalues are nonzero, counted with
+multiplicity. Step [](#s4){.pf-ref} already supplies one positive and one negative
 eigenvalue, so these are exactly the two nonzero eigenvalues.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

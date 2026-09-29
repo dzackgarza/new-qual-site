@@ -38,16 +38,27 @@ U=X\cap\{y<3/4\},
 V=X\cap\{y>1/4\}.
 \]
 
-<1>1. Both $U$ and $V$ are contractible.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Both $U$ and $V$ are contractible.
+
+::: pf-proof
+
 The vertical homotopy
 \[
 (x,y)\longmapsto(x,(1-t)y)
 \]
 deformation retracts $U$ onto the bottom edge. It stays in $X$ because an interior point of $X$ either has rational first coordinate or lies on a vertical boundary edge, and the homotopy preserves the first coordinate. Similarly $V$ deformation retracts onto the top edge.
+
 :::
 
-<1>2. The intersection $U\cap V$ deformation retracts onto
+:::
+
+::: {.pf-step #s2}
+
+The intersection $U\cap V$ deformation retracts onto
 \[
 Q=(\mathbb Q\cap I)\times\{1/2\},
 \]
@@ -61,17 +72,26 @@ and
 \[
 H_k(U\cap V)=0\quad(k>0).
 \]
-::: {.proof}
+
+::: pf-proof
+
 On $U\cap V$ the vertical contraction to height $1/2$ is well-defined and stays in $X$. At heights strictly between $1/4$ and $3/4$, points of $X$ have rational first coordinate, except that the side edges have first coordinates $0,1$, which are rational anyway. Hence the retract is precisely the copy of $\mathbb Q\cap I$ displayed above.
 
 Every path-component of $\mathbb Q\cap I$ is a single point, so its $H_0$ is free on the rational points and the reduced group is the augmentation kernel, with basis $[q]-[0]$ for $q\ne0$. Any singular simplex of positive dimension in $\mathbb Q\cap I$ has connected image and is therefore constant, so the positive-dimensional homology vanishes.
+
 :::
 
-<1>3. The space $X$ is path connected, and
+:::
+
+::: {.pf-step #s3}
+
+The space $X$ is path connected, and
 \[
 H_1(X)\cong\widetilde H_0(U\cap V).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every point can be joined vertically to the top or bottom boundary and then along the boundary to any other point, so $X$ is path connected.
 
 The reduced Mayer--Vietoris sequence for $X=U\cup V$ contains
@@ -82,18 +102,30 @@ The reduced Mayer--Vietoris sequence for $X=U\cup V$ contains
 \to\widetilde H_0(U)\oplus\widetilde H_0(V)=0.
 \]
 Thus the middle arrow is an isomorphism.
+
 :::
 
-<1>4. All homology in dimensions at least two vanishes.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+All homology in dimensions at least two vanishes.
+
+::: pf-proof
+
 For $k\ge2$, Mayer--Vietoris gives
 \[
 \widetilde H_k(X)\cong\widetilde H_{k-1}(U\cap V)=0
 \]
-by <1>2.
+by step [](#s2){.pf-ref}.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 H_0(X)\cong\mathbb Z,
@@ -104,7 +136,15 @@ H_1(X)\cong
 H_k(X)=0\ (k\ge2).
 }
 \]
-::: {.proof}
-Combine <1>2--<1>4.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

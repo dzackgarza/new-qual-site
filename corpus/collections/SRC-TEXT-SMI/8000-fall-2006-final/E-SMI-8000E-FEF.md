@@ -37,8 +37,14 @@ or
 ::: {.solution}
 We prove option (ii).
 
-<1>1. Partially order all partial $k$-embeddings of subfields of $E$ into $F$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Partially order all partial $k$-embeddings of subfields of $E$ into $F$.
+
+::: pf-proof
+
 Let $\mathcal P$ be the set of pairs $(L,\varphi)$ such that
 $$
 k\subseteq L\subseteq E
@@ -55,10 +61,17 @@ $$
 (L,\varphi)\le (L',\varphi')
 $$
 if $L\subseteq L'$ and $\varphi'|_L=\varphi$.
+
 :::
 
-<1>2. Every chain has an upper bound.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every chain has an upper bound.
+
+::: pf-proof
+
 Let
 $$
 \{(L_i,\varphi_i)\}_{i\in I}
@@ -84,10 +97,17 @@ By Zorn's lemma, $\mathcal P$ has a maximal element, say
 $$
 (L,\varphi).
 $$
+
 :::
 
-<1>3. A maximal partial embedding must already be defined on all of $E$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+A maximal partial embedding must already be defined on all of $E$.
+
+::: pf-proof
+
 Suppose instead that $L\ne E$, and choose
 $$
 \alpha\in E\setminus L.
@@ -130,15 +150,28 @@ $$
 contradicting maximality.
 
 Therefore $L=E$.
+
 :::
 
-<1>4. Conclude the required embedding exists.
-::: {.proof}
-By steps <1>2 and <1>3, the maximal element $(L,\varphi)$ has $L=E$, so
+:::
+
+::: pf-step
+
+Conclude the required embedding exists.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the maximal element $(L,\varphi)$ has $L=E$, so
 $\varphi$ is a field homomorphism
 $$
 \boxed{\varphi:E\longrightarrow F}
 $$
 whose restriction to $k$ is the identity.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -46,20 +46,31 @@ F\subset L=F(\alpha),\qquad
 \operatorname{Gal}(L/F)\cong C_5,\qquad [L:\mathbb Q]=20.
 $$
 
-<1>1. The splitting field contains $\zeta$ and equals
+::: pf
+
+::: pf-step
+
+The splitting field contains $\zeta$ and equals
 $\mathbb Q(\alpha,\zeta)$.
 
-::: {.proof}
+::: pf-proof
+
 The five roots are $\alpha\zeta^j$ for $0\leq j<5$.
 The field $L$ contains both $\alpha$ and $\alpha\zeta$, so it
 contains their ratio $\zeta$; here $\alpha\ne0$.
 Conversely, $\mathbb Q(\alpha,\zeta)$ contains every root.
 These two containments prove the assertion.
+
 :::
 
-<1>2. The degrees are $[L:F]=5$ and $[L:\mathbb Q]=20$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The degrees are $[L:F]=5$ and $[L:\mathbb Q]=20$.
+
+::: pf-proof
+
 Eisenstein's criterion at $3$ makes $x^5-3$ irreducible over
 $\mathbb Q$ [@DF04], so $[\mathbb Q(\alpha):\mathbb Q]=5$.
 Also $\zeta$ is a root of
@@ -80,11 +91,17 @@ The tower law gives $[L:\mathbb Q]=4d$. The subfield
 $\mathbb Q(\alpha)\subseteq L$ has degree $5$, so the same law
 implies $5\mid4d$. As $\gcd(4,5)=1$, we obtain $5\mid d$,
 hence $d=5$ and $[L:\mathbb Q]=20$.
+
 :::
 
-<1>3. The Galois group over $F$ is cyclic of order $5$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Galois group over $F$ is cyclic of order $5$.
+
+::: pf-proof
+
 The extension $L/F$ is a splitting field of $x^5-3$ in characteristic
 zero, so it is finite Galois. Its automorphism group has order
 $[L:F]=5$ [@DF04]. An $F$-automorphism must send $\alpha$ to a root
@@ -100,5 +117,11 @@ $\zeta$, so composition adds the exponents modulo $5$.
 Both groups have five elements, making the map an isomorphism.
 In particular the automorphism fixing $F$ and sending
 $\alpha$ to $\zeta\alpha$ generates the group.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -22,48 +22,131 @@ Show that $\mathcal{F}$ is a complete metric space with $d(f, g) = \|f - g\|$.
 :::
 
 ::: {.solution}
-<1>1. $\|\cdot\|$ is a norm on $\mathcal F$.
-<2>1. $\|f\| \ge 0$ and $\|f\| = 0$ iff $f = 0$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$\|\cdot\|$ is a norm on $\mathcal F$.
+
+::: pf-proof
+
+::: pf-step
+
+$\|f\| \ge 0$ and $\|f\| = 0$ iff $f = 0$.
+
+::: pf-proof
+
 if $\|f\| = 0$, then $f = 0$ on $\partial G$; by the maximum modulus principle, $f = 0$ on all of $\overline G$.
+
 :::
-<2>2. $\|cf\| = |c|\|f\|$ and $\|f + g\| \le \|f\| + \|g\|$.
-::: {.proof}
+
+:::
+
+::: pf-step
+
+$\|cf\| = |c|\|f\|$ and $\|f + g\| \le \|f\| + \|g\|$.
+
+::: pf-proof
+
 the sup norm satisfies these.
+
 :::
 
-<1>2. Let $\{f_n\}$ be a Cauchy sequence in $\mathcal F$.
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Let $\{f_n\}$ be a Cauchy sequence in $\mathcal F$.
+
+::: pf-proof
+
 take an arbitrary Cauchy sequence.
+
 :::
 
-<1>3. $\{f_n\}$ converges uniformly on $\partial G$ to a continuous function $f_0$ on $\partial G$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$\{f_n\}$ converges uniformly on $\partial G$ to a continuous function $f_0$ on $\partial G$.
+
+::: pf-proof
+
 $\partial G$ is compact, and a Cauchy sequence in the sup norm converges uniformly.
+
 :::
 
-<1>4. $f_0$ extends to a function $f \in \mathcal F$ (continuous on $\overline G$, analytic in $G$).
-<2>1. $f_0$ is the boundary value of a function analytic in $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+$f_0$ extends to a function $f \in \mathcal F$ (continuous on $\overline G$, analytic in $G$).
+
+::: pf-proof
+
+::: {.pf-step #s4-1}
+
+$f_0$ is the boundary value of a function analytic in $G$.
+
+::: pf-proof
+
 the $f_n$ are analytic in $G$ and converge uniformly on $\partial G$; by the maximum modulus principle, they converge uniformly on all of $\overline G$, and the uniform limit of analytic functions is analytic in $G$.
-:::
-<2>2. Hence $f \in \mathcal F$.
-::: {.proof}
-<2>1.
+
 :::
 
-<1>5. $\|f_n - f\| \to 0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Hence $f \in \mathcal F$.
+
+::: pf-proof
+
+Step [](#s4-1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+$\|f_n - f\| \to 0$.
+
+::: pf-proof
+
 uniform convergence on $\overline G$ (hence on $\partial G$).
+
 :::
 
-<1>6. Hence every Cauchy sequence converges, so $\mathcal F$ is complete.
-::: {.proof}
-<1>2–<1>5.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+::: {.pf-step #s6}
+
+Hence every Cauchy sequence converges, so $\mathcal F$ is complete.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

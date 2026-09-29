@@ -32,9 +32,15 @@ Prove or disprove:
 :::
 
 ::: {.solution}
-<1>1. Statement (1) is false in general.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Statement (1) is false in general.
+
+::: pf-proof
+
 Take
 $$
 G=S_3
@@ -59,11 +65,17 @@ a^3=a=(13)\notin H.
 $$
 Thus an index-$n$ subgroup need not contain the $n$-th power of every
 element when the subgroup is not normal.
+
 :::
 
-<1>2. Statement (2) is true.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Statement (2) is true.
+
+::: pf-proof
+
 Consider the $n+1$ left cosets
 $$
 H,
@@ -102,9 +114,14 @@ $$
 1\leq k\leq n,
 $$
 as required.
+
 :::
 
-<1>3. Therefore the answers are
+:::
+
+::: {.pf-step #s3}
+
+Therefore the answers are
 $$
 \boxed{
 \text{(1) false,}
@@ -113,14 +130,21 @@ $$
 }
 $$
 
-::: {.proof}
-Step <1>1 gives the counterexample to Part (1), and step <1>2 proves
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives the counterexample to Part (1), and step [](#s2){.pf-ref} proves
 Part (2).
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 settles both statements.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} settles both statements.
+
+:::
+
+:::
+
 :::

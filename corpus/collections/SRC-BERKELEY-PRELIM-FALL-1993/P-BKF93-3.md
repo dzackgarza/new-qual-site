@@ -36,12 +36,17 @@ $$
 w\coloneqq\frac{z}{z-2}.
 $$
 
-<1>1. The series converges if and only if
+::: pf
+
+::: {.pf-step #s1}
+
+The series converges if and only if
 $$
 \Re w\leq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Its $n$th term has absolute value
 $$
 \frac1{n^2}\abs{e^{nw}}
@@ -56,9 +61,14 @@ $$
 \frac{e^{n\Re w}}{n^2}\longrightarrow\infty,
 $$
 so the terms do not tend to zero and the series diverges.
+
 :::
 
-<1>2. If $z=x+iy\neq2$, then
+:::
+
+::: {.pf-step #s2}
+
+If $z=x+iy\neq2$, then
 $$
 \Re\left(\frac{z}{z-2}\right)
 =
@@ -67,7 +77,8 @@ $$
 \frac{\abs{z-1}^2-1}{\abs{z-2}^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiplying numerator and denominator by $\overline z-2$ gives
 $$
 \frac{z}{z-2}
@@ -83,26 +94,38 @@ x^2+y^2-2x
 (x-1)^2+y^2-1.
 $$
 Since $z\neq2$, the denominator is positive.
+
 :::
 
-<1>3. The region of convergence is
+:::
+
+::: {.pf-step #s3}
+
+The region of convergence is
 $$
 \boxed{\{z\in\CC:\abs{z-1}\leq1\}\setminus\{2\}}.
 $$
 
-::: {.proof}
-By step <1>2, the inequality in step <1>1 is equivalent to
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the inequality in step [](#s1){.pf-ref} is equivalent to
 $$
 \abs{z-1}^2-1\leq0,
 $$
 hence to $\abs{z-1}\leq1$. The point $z=2$ must be removed because the
 summand is not defined there. Thus the sketch is the closed disk of radius
 $1$ centered at $1$ on the real axis, with the boundary point $2$ deleted.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 determine and describe the complete convergence region.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} determine and describe the complete convergence region.
+
+:::
+
+:::
+
 :::

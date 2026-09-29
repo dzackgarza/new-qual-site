@@ -45,7 +45,11 @@ $$
 T(z)=\frac{z-i}{z+i}.
 $$
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 T:\mathcal H\longrightarrow\DD
 $$
@@ -54,7 +58,8 @@ $$
 T^{-1}(w)=i\frac{1+w}{1-w}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 z=x+iy,
@@ -88,9 +93,14 @@ $$
 T'(z)=\frac{2i}{(z+i)^2}\neq0
 $$
 on $\mathcal H$. Thus $T$ is conformal.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 Q=\{z\in\CC:\abs z<1,\ \operatorname{Re}z>0,\ \operatorname{Im}z>0\},
 $$
@@ -100,7 +110,8 @@ T(Q)\subseteq
 \{w\in\CC:\abs w<1,\ \operatorname{Re}w<0,\ \operatorname{Im}w<0\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 z=x+iy\in Q,
@@ -129,10 +140,15 @@ $$
 <
 0
 $$
-because $x>0$. Since $y>0$, step <1>1 also gives $\abs{T(z)}<1$.
+because $x>0$. Since $y>0$, step [](#s1){.pf-ref} also gives $\abs{T(z)}<1$.
+
 :::
 
-<1>3. Conversely, if
+:::
+
+::: {.pf-step #s3}
+
+Conversely, if
 $$
 w\in\DD,
 \qquad
@@ -145,7 +161,8 @@ $$
 T^{-1}(w)\in Q.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 w=u+iv
@@ -187,9 +204,14 @@ $$
 \abs{1-w}^2-\abs{1+w}^2=-4u>0,
 $$
 we have $\abs z<1$. Hence $z\in Q$.
+
 :::
 
-<1>4. Therefore the image of the open first-quadrant sector of the unit disk
+:::
+
+::: {.pf-step #s4}
+
+Therefore the image of the open first-quadrant sector of the unit disk
 is
 $$
 \boxed{
@@ -200,11 +222,17 @@ T(Q)
 $$
 the open third-quadrant sector of the unit disk.
 
-::: {.proof}
-Step <1>2 gives one inclusion, and step <1>3 gives the reverse inclusion.
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives one inclusion, and step [](#s3){.pf-ref} gives the reverse inclusion.
+
 :::
 
-<1>5. The three boundary pieces are sent as follows:
+:::
+
+::: {.pf-step #s5}
+
+The three boundary pieces are sent as follows:
 $$
 \begin{aligned}
 [0,1]&\longmapsto
@@ -215,7 +243,8 @@ $$
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The endpoint values are
 $$
 T(0)=-1,
@@ -232,13 +261,19 @@ $$
 and the circle $\abs z=1$, which passes through the pole $-i$, maps under a
 Möbius transformation to a line. Since the relevant arc has endpoint images
 $-i$ and $0$, it maps to the segment $[-i,0]$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 supplies the required linear fractional transformation, and step
-<1>4 explicitly describes the requested image; step <1>5 records its boundary
+::: pf-qed
+
+Step [](#s1){.pf-ref} supplies the required linear fractional transformation, and step
+[](#s4){.pf-ref} explicitly describes the requested image; step [](#s5){.pf-ref} records its boundary
 correspondence.
+
 :::
+
+:::
+
 :::

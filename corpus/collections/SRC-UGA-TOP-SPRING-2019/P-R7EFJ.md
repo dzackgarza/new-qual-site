@@ -58,7 +58,11 @@ R=S^1\vee S^1
 \]
 as a graph with one vertex $*$ and two oriented loop-edges $a$ and $b$.
 
-<1>1. Regard $X_3$ as a graph with vertices $v_0,v_1$ and four edges:
+::: pf
+
+::: pf-step
+
+Regard $X_3$ as a graph with vertices $v_0,v_1$ and four edges:
 
 - the left circle, a loop $L$ based at $v_0$;
 
@@ -68,31 +72,53 @@ as a graph with one vertex $*$ and two oriented loop-edges $a$ and $b$.
 
 - the lower semicircle $D$ of the middle circle, joining $v_1$ to $v_0$.
 
-::: {.proof}
+::: pf-proof
+
 The left and middle circles meet only at $v_0$, the middle and right circles meet only at $v_1$, and the two outer circles are disjoint.
 Removing $v_0$ and $v_1$ therefore leaves exactly the four open edge pieces listed above.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 p:X_3\longrightarrow R
 \]
 by sending both $v_0$ and $v_1$ to $*$, mapping each of the loops $L$ and $R'$ homeomorphically onto the $a$-petal, and mapping each of $U$ and $D$ homeomorphically and orientation-preservingly onto the $b$-petal.
-::: {.proof}
+
+::: pf-proof
+
 Choose the orientation of $U$ from $v_0$ to $v_1$ and the orientation of $D$ from $v_1$ to $v_0$.
 Then the endpoint identifications agree with the common vertex $*$ of the target loops, so the four edge maps fit together to a continuous graph map $p$.
 Restricted to the middle circle, this map is the standard two-sheeted covering of the $b$-circle: going once around the middle circle traverses the $b$-petal twice.
+
 :::
 
-<1>3. Every point in the interior of either target petal has exactly two evenly covered preimages.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every point in the interior of either target petal has exactly two evenly covered preimages.
+
+::: pf-proof
+
 An interior point of the $a$-petal has one preimage on $L$ and one on $R'$, and both edge restrictions are homeomorphisms.
 An interior point of the $b$-petal has one preimage on $U$ and one on $D$, again with both restrictions homeomorphisms.
 Small interval neighborhoods are therefore evenly covered.
+
 :::
 
-<1>4. A sufficiently small neighborhood of the wedge point $*$ is evenly covered by neighborhoods of $v_0$ and $v_1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+A sufficiently small neighborhood of the wedge point $*$ is evenly covered by neighborhoods of $v_0$ and $v_1$.
+
+::: pf-proof
+
 Choose a small graph neighborhood $W$ of $*$ consisting of short initial and terminal arcs of each oriented petal $a$ and $b$.
 At each $v_i$, exactly four half-edges meet.
 Under $p$, these four half-edges map bijectively to the four arms of $W$:
@@ -110,12 +136,25 @@ and
 p|_{W_i}:W_i\longrightarrow W
 \]
 is a homeomorphism for $i=0,1$.
+
 :::
 
-<1>5. Therefore $p:X_3\to S^1\vee S^1$ is a two-sheeted covering map.
-::: {.proof}
-By <1>3 every nonvertex point has an evenly covered neighborhood, and by <1>4 the wedge point does as well.
+:::
+
+::: pf-step
+
+Therefore $p:X_3\to S^1\vee S^1$ is a two-sheeted covering map.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref} every nonvertex point has an evenly covered neighborhood, and by step [](#s4){.pf-ref} the wedge point does as well.
 Thus $p$ is a covering map.
 Every point of the target has exactly two preimages, so it is two-sheeted.
+
 :::
+
+:::
+
+:::
+
 :::

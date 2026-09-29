@@ -34,12 +34,18 @@ Determine the Jordan canonical form of $A$.
 :::
 
 ::: {.solution}
-<1>1. The minimal polynomial is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The minimal polynomial is
 $$
 \mu(x)=(x-i)^2(x+i).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Substitute
 $$
 \chi(x)=\mu(x)(x-i)
@@ -65,15 +71,21 @@ we obtain
 $$
 \mu(x)=(x-i)^2(x+i).
 $$
+
 :::
 
-<1>2. The characteristic polynomial is
+:::
+
+::: {.pf-step #s2}
+
+The characteristic polynomial is
 $$
 \chi(x)=(x-i)^3(x+i).
 $$
 
-::: {.proof}
-Using the first hypothesis and step <1>1,
+::: pf-proof
+
+Using the first hypothesis and step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \chi(x)
@@ -83,32 +95,49 @@ $$
 (x-i)^3(x+i).
 \end{aligned}
 $$
+
 :::
 
-<1>3. The Jordan blocks for the eigenvalue $i$ have sizes $2$ and $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The Jordan blocks for the eigenvalue $i$ have sizes $2$ and $1$.
+
+::: pf-proof
+
 For an eigenvalue $\lambda$, its exponent in the characteristic
 polynomial is the sum of the sizes of its Jordan blocks, while its
 exponent in the minimal polynomial is the size of its largest Jordan
-block. By step <1>2, the total size of the $i$-blocks is $3$. By
-step <1>1, their largest size is $2$. The only partition of $3$ with
+block. By step [](#s2){.pf-ref}, the total size of the $i$-blocks is $3$. By
+step [](#s1){.pf-ref}, their largest size is $2$. The only partition of $3$ with
 largest part exactly $2$ is
 $$
 3=2+1.
 $$
 Thus the $i$-blocks have sizes $2$ and $1$.
+
 :::
 
-<1>4. The eigenvalue $-i$ has one Jordan block of size $1$.
+:::
 
-::: {.proof}
-Step <1>2 shows that $-i$ has algebraic multiplicity $1$. Hence its
+::: {.pf-step #s4}
+
+The eigenvalue $-i$ has one Jordan block of size $1$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that $-i$ has algebraic multiplicity $1$. Hence its
 Jordan blocks have total size $1$, so there is exactly one such block
 and it has size $1$.
+
 :::
 
-<1>5. Therefore the Jordan canonical form is
+:::
+
+::: {.pf-step #s5}
+
+Therefore the Jordan canonical form is
 $$
 \boxed{
 \begin{pmatrix}
@@ -120,8 +149,9 @@ i&1&0&0\\
 }.
 $$
 
-::: {.proof}
-Step <1>3 gives one block
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives one block
 $$
 J_2(i)=
 \begin{pmatrix}
@@ -129,14 +159,20 @@ i&1\\
 0&i
 \end{pmatrix}
 $$
-and one $1\times1$ block $(i)$. Step <1>4 gives one $1\times1$
+and one $1\times1$ block $(i)$. Step [](#s4){.pf-ref} gives one $1\times1$
 block $(-i)$. Their direct sum is the displayed matrix, up to
 permutation of Jordan blocks.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested Jordan canonical form.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested Jordan canonical form.
+
+:::
+
+:::
+
 :::

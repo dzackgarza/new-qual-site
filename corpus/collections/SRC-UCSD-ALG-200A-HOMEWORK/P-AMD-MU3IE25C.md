@@ -41,8 +41,15 @@ Show that $G=H_1$ or $G=H_2$.
 :::
 
 ::: {.solution}
-<1>1. If both $H_1$ and $H_2$ were proper, there would exist $x\in H_1\setminus H_2$ and $y\in H_2\setminus H_1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If both $H_1$ and $H_2$ were proper, there would exist $x\in H_1\setminus H_2$ and $y\in H_2\setminus H_1$.
+
+::: pf-proof
+
 Assume for contradiction that $H_1\ne G$ and $H_2\ne G$.
 Choose $y\in G\setminus H_1$.
 Since $G=H_1\cup H_2$, necessarily $y\in H_2$, so
@@ -54,30 +61,50 @@ Then $x\in H_1$, hence
 \[
 x\in H_1\setminus H_2.
 \]
+
 :::
 
-<1>2. The element $xy$ lies in neither $H_1$ nor $H_2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The element $xy$ lies in neither $H_1$ nor $H_2$.
+
+::: pf-proof
+
 If $xy\in H_1$, then $x\in H_1$ and closure under inverses and products gives
 \[
 y=x^{-1}(xy)\in H_1,
 \]
-contrary to <1>1.
+contrary to step [](#s1){.pf-ref}.
 
 If $xy\in H_2$, then $y\in H_2$ and
 \[
 x=(xy)y^{-1}\in H_2,
 \]
-again contrary to <1>1. Thus $xy\notin H_1\cup H_2$.
+again contrary to step [](#s1){.pf-ref}. Thus $xy\notin H_1\cup H_2$.
+
 :::
 
-<1>3. Therefore one of the two subgroups is all of $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore one of the two subgroups is all of $G$.
+
+::: pf-proof
+
 By hypothesis every element of $G$, including $xy$, belongs to $H_1\cup H_2$.
-This contradicts <1>2, so the assumption in <1>1 that both subgroups are proper is impossible.
+This contradicts step [](#s2){.pf-ref}, so the assumption in step [](#s1){.pf-ref} that both subgroups are proper is impossible.
 Hence
 \[
 G=H_1\qquad\text{or}\qquad G=H_2.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

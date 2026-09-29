@@ -32,8 +32,15 @@ Show that $E$ is perfect.
 :::
 
 ::: {.solution}
-<1>1. It is enough to prove that every $\alpha\in E$ has a $p$th root in $E$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+It is enough to prove that every $\alpha\in E$ has a $p$th root in $E$.
+
+::: pf-proof
+
 By the definition recalled in the problem, a field of characteristic $p$ is perfect exactly when its Frobenius map
 \[
 \operatorname{Fr}_E:E\longrightarrow E,
@@ -41,20 +48,34 @@ By the definition recalled in the problem, a field of characteristic $p$ is perf
 x\longmapsto x^p,
 \]
 is surjective.
+
 :::
 
-<1>2. Fix $\alpha\in E$ and put $K=F(\alpha)$.
+:::
+
+::: pf-step
+
+Fix $\alpha\in E$ and put $K=F(\alpha)$.
 Then $K/F$ is finite.
-::: {.proof}
+
+::: pf-proof
+
 The extension $E/F$ is algebraic, so $\alpha$ is algebraic over $F$.
 Hence
 \[
 [K:F]=[F(\alpha):F]<\infty.
 \]
+
 :::
 
-<1>3. If $e_1,\ldots,e_n$ is an $F$-basis of $K$, then $e_1^p,\ldots,e_n^p$ is also an $F$-basis of $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If $e_1,\ldots,e_n$ is an $F$-basis of $K$, then $e_1^p,\ldots,e_n^p$ is also an $F$-basis of $K$.
+
+::: pf-proof
+
 It suffices to prove linear independence, because there are exactly $n=[K:F]$ elements.
 Suppose
 \[
@@ -78,12 +99,19 @@ A field has no nonzero nilpotents, so
 \]
 Because the $e_i$ are $F$-linearly independent, every $d_i=0$, hence every $c_i=0$.
 Thus $e_1^p,\ldots,e_n^p$ is an $F$-basis of $K$.
+
 :::
 
-<1>4. Frobenius on $K$ is surjective.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Frobenius on $K$ is surjective.
+
+::: pf-proof
+
 Let $y\in K$.
-By <1>3, write
+By step [](#s3){.pf-ref}, write
 \[
 y=\sum_{i=1}^n c_i e_i^p,
 \qquad c_i\in F.
@@ -96,16 +124,29 @@ y
 =\left(\sum_{i=1}^n d_i e_i\right)^p.
 \]
 Thus $y$ is a $p$th power of an element of $K$.
+
 :::
 
-<1>5. Therefore Frobenius on $E$ is surjective, so $E$ is perfect.
-::: {.proof}
-Apply <1>4 to $y=\alpha$.
+:::
+
+::: pf-step
+
+Therefore Frobenius on $E$ is surjective, so $E$ is perfect.
+
+::: pf-proof
+
+Apply step [](#s4){.pf-ref} to $y=\alpha$.
 There is $\beta\in K\subseteq E$ such that
 \[
 \beta^p=\alpha.
 \]
 Since $\alpha\in E$ was arbitrary, every element of $E$ has a $p$th root in $E$.
 Hence Frobenius on $E$ is surjective, and $E$ is perfect.
+
 :::
+
+:::
+
+:::
+
 :::

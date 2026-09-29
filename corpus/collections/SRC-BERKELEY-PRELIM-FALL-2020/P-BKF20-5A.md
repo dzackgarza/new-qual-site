@@ -41,7 +41,12 @@ Let $f(z)=1/(z(1+z^2))$.
 :::
 
 ::: {.solution}
-<1>1. On
+
+::: pf
+
+::: {.pf-step #s1}
+
+On
 $$
 0<|z|<1,
 $$
@@ -52,7 +57,8 @@ $$
 \sum_{n=0}^{\infty}(-1)^n z^{2n}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $|z|<1$, one has $|z^2|<1$, so the geometric-series identity
 $$
 \frac1{1-w}
@@ -68,9 +74,14 @@ $$
 \sum_{n=0}^{\infty}(-1)^n z^{2n}.
 $$
 The puncture at $z=0$ is required because $f$ itself has a pole there.
+
 :::
 
-<1>2. Therefore, for
+:::
+
+::: {.pf-step #s2}
+
+Therefore, for
 $$
 0<|z|<1,
 $$
@@ -83,8 +94,9 @@ f(z)
 }
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 f(z)
@@ -99,9 +111,14 @@ f(z)
 \sum_{n=0}^{\infty}(-1)^n z^{2n-1}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. On
+:::
+
+::: {.pf-step #s3}
+
+On
 $$
 |z|>1,
 $$
@@ -112,16 +129,22 @@ $$
 \sum_{n=0}^{\infty}(-1)^n z^{-2n}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $|z|>1$, then
 $$
 |z^{-2}|<1.
 $$
 Applying the geometric series to $w=-z^{-2}$ gives the displayed
 identity.
+
 :::
 
-<1>4. Therefore, for
+:::
+
+::: {.pf-step #s4}
+
+Therefore, for
 $$
 |z|>1,
 $$
@@ -134,7 +157,8 @@ f(z)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Rewrite
 $$
 f(z)
@@ -143,7 +167,7 @@ f(z)
 =
 \frac1{z^3}\frac1{1+z^{-2}}.
 $$
-Using step <1>3,
+Using step [](#s3){.pf-ref},
 $$
 \begin{aligned}
 f(z)
@@ -156,12 +180,18 @@ f(z)
 \sum_{n=0}^{\infty}(-1)^n z^{-2n-3}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>4 give the two requested Laurent expansions and
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s4){.pf-ref} give the two requested Laurent expansions and
 their domains.
+
 :::
+
+:::
+
 :::

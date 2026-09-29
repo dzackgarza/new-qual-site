@@ -41,8 +41,15 @@ Hint: For part (a), observe that $1 = (1 + |x|)^M / (1 + |x|)^M$.
 :::
 
 ::: {.solution}
-<1>1. Apply Hölder with the weight split dictated by $N_t$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Apply Hölder with the weight split dictated by $N_t$.
+
+::: pf-proof
+
 Fix $1\le r<p<\infty$ and set
 \[
 q=\frac p r,
@@ -91,10 +98,17 @@ Taking $r$th roots gives
 \qquad
 C_{t,r,p}:=I_t^{1/r-1/p}.}
 \]
+
 :::
 
-<1>2. Show that the constant tends to zero for fixed $r<p$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the constant tends to zero for fixed $r<p$.
+
+::: pf-proof
+
 For $t\ge1$,
 \[
 0\le(1+|x|)^{-n-t}\le(1+|x|)^{-n-1},
@@ -115,10 +129,17 @@ it follows that
 \[
 \boxed{C_{t,r,p}=I_t^{1/r-1/p}\longrightarrow0.}
 \]
+
 :::
 
-<1>3. Explain why the source's uniform quantifier cannot hold.
-::: {.proof}
+:::
+
+::: pf-step
+
+Explain why the source's uniform quantifier cannot hold.
+
+::: pf-proof
+
 The source asks for a single $C_t$ valid for every $1\le r<p<\infty$ and also satisfying $C_t\to0$. This cannot hold.
 
 Indeed, fix $t>0$ and a bounded measurable set $E$ of positive finite measure. For fixed $r$ and $p\downarrow r$, one has
@@ -130,5 +151,11 @@ and therefore, for $f=\mathbf1_E$,
 \frac{\|f\|_{r,N}}{\|f\|_{p,N_t}}\longrightarrow1.
 \]
 Thus any constant valid uniformly for all $r<p$ must satisfy $C_t\ge1$. Such constants cannot converge to $0$ as $t\to\infty$. The fixed-$(r,p)$ formulation proved above is therefore the valid statement.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -31,16 +31,29 @@ Show that any group of order $p^2q$ (for primes $p,q$) is solvable.
 ::: {.solution}
 Let $|G|=p^2q$ with $p,q$ prime.
 
-<1>1. If $p=q$, then $G$ is solvable.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+If $p=q$, then $G$ is solvable.
+
+::: pf-proof
+
 In this case $|G|=p^3$, so $G$ is a finite $p$-group. Every finite $p$-group
 is nilpotent, hence solvable.
-:::
 
 Assume henceforth that $p\ne q$.
 
-<1>2. At least one Sylow subgroup of $G$ is normal.
-::: {.proof}
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+At least one Sylow subgroup of $G$ is normal.
+
+::: pf-proof
+
 Let $n_p$ and $n_q$ denote the numbers of Sylow $p$- and $q$-subgroups.
 Sylow's theorems give
 \[
@@ -74,22 +87,42 @@ $2$-subgroup has order $4$ and hence already contains three nonidentity
 elements, so every Sylow $2$-subgroup must consist of the identity together with
 those same three remaining elements. Therefore the Sylow $2$-subgroup is unique
 and normal. Thus in all cases at least one Sylow subgroup is normal.
+
 :::
 
-<1>3. A normal Sylow subgroup $N$ of $G$ is solvable, and so is $G/N$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+A normal Sylow subgroup $N$ of $G$ is solvable, and so is $G/N$.
+
+::: pf-proof
+
 The possible orders of $N$ are $p^2$ or $q$. A group of prime order is cyclic,
 and every group of order $p^2$ is abelian. Hence $N$ is abelian and therefore
 solvable.
 
 The quotient has the complementary order: if $|N|=p^2$, then $|G/N|=q$; if
 $|N|=q$, then $|G/N|=p^2$. Thus $G/N$ is likewise abelian and solvable.
+
 :::
 
-<1>4. Therefore $G$ is solvable.
-::: {.proof}
-A group with a solvable normal subgroup and solvable quotient is solvable.
-Apply this extension criterion to the normal Sylow subgroup supplied by <1>2
-and use <1>3.
 :::
+
+::: pf-step
+
+Therefore $G$ is solvable.
+
+::: pf-proof
+
+A group with a solvable normal subgroup and solvable quotient is solvable.
+Apply this extension criterion to the normal Sylow subgroup supplied by step [](#s2){.pf-ref}
+and use step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -36,8 +36,14 @@ $$
 |G|=45=3^2\cdot5.
 $$
 
-<1>1. The Sylow $5$-subgroup is unique and normal.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The Sylow $5$-subgroup is unique and normal.
+
+::: pf-proof
+
 Let $n_5$ be the number of Sylow $5$-subgroups. Sylow's theorem gives
 $$
 n_5\mid9,
@@ -53,10 +59,17 @@ Thus the Sylow $5$-subgroup $K$ is unique, hence normal. Since $|K|=5$,
 $$
 K\cong C_5.
 $$
+
 :::
 
-<1>2. The Sylow $3$-subgroup is unique and normal.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Sylow $3$-subgroup is unique and normal.
+
+::: pf-proof
+
 Let $n_3$ be the number of Sylow $3$-subgroups. Again Sylow's theorem gives
 $$
 n_3\mid5,
@@ -72,10 +85,17 @@ Thus the Sylow $3$-subgroup $H$ is unique and normal, with
 $$
 |H|=9.
 $$
+
 :::
 
-<1>3. The group is the internal direct product of its two Sylow subgroups.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The group is the internal direct product of its two Sylow subgroups.
+
+::: pf-proof
+
 Because $|H|=9$ and $|K|=5$ are coprime,
 $$
 H\cap K=1.
@@ -104,10 +124,17 @@ is an isomorphism, so
 $$
 \boxed{G\cong H\times K.}
 $$
+
 :::
 
-<1>4. Classify all possibilities.
-::: {.proof}
+:::
+
+::: pf-step
+
+Classify all possibilities.
+
+::: pf-proof
+
 Every group of order $p^2$ is abelian. Hence a group of order $9$ is
 isomorphic to exactly one of
 $$
@@ -115,7 +142,7 @@ C_9,
 \qquad
 C_3\times C_3.
 $$
-Since $K\cong C_5$, step <1>3 gives the two possibilities
+Since $K\cong C_5$, step [](#s3){.pf-ref} gives the two possibilities
 $$
 G\cong C_9\times C_5\cong C_{45}
 $$
@@ -128,5 +155,11 @@ up to isomorphism, the complete list is
 $$
 \boxed{C_{45},\qquad C_3\times C_3\times C_5.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

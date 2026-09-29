@@ -42,14 +42,20 @@ Let $G$ be a finite multiplicative group of $2\times2$ integer matrices.
 :::
 
 ::: {.solution}
-<1>1. Every element $A\in G$ has
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every element $A\in G$ has
 $$
 \boxed{
 \det A=\pm1.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $G$ is a group of integer matrices, $A^{-1}$ also has integer
 entries. Hence
 $$
@@ -62,12 +68,18 @@ $$
 \det A\det A^{-1}=1.
 $$
 The only integer units are $\pm1$.
+
 :::
 
-<1>2. Every $A\in G$ is diagonalizable over $\CC$, and every eigenvalue of
+:::
+
+::: {.pf-step #s2}
+
+Every $A\in G$ is diagonalizable over $\CC$, and every eigenvalue of
 $A$ is a root of unity.
 
-::: {.proof}
+::: pf-proof
+
 Since $G$ is finite, $A$ has finite order: for some $m\geq1$,
 $$
 A^m=I.
@@ -87,9 +99,14 @@ then
 $$
 \lambda^m=1.
 $$
+
 :::
 
-<1>3. If $\det A=1$, then the possible eigenvalue multisets are
+:::
+
+::: {.pf-step #s3}
+
+If $\det A=1$, then the possible eigenvalue multisets are
 $$
 \{1,1\},
 \quad
@@ -103,7 +120,8 @@ $$
 $$
 where $\zeta_m$ denotes a primitive $m$th root of unity.
 
-::: {.proof}
+::: pf-proof
+
 The characteristic polynomial is
 $$
 \chi_A(x)
@@ -112,7 +130,7 @@ x^2-tx+1,
 \qquad
 t=\operatorname{tr}A\in\ZZ.
 $$
-By step <1>2, its two roots are roots of unity, so each has absolute value
+By step [](#s2){.pf-ref}, its two roots are roots of unity, so each has absolute value
 $1$. Since their product is $1$, they are inverse to one another, and
 $$
 t=\lambda+\lambda^{-1}=2\operatorname{Re}\lambda.
@@ -134,15 +152,21 @@ x^2-x+1,\quad
 (x-1)^2,
 $$
 which give exactly the displayed eigenvalues.
+
 :::
 
-<1>4. If $\det A=-1$, then the eigenvalues are
+:::
+
+::: {.pf-step #s4}
+
+If $\det A=-1$, then the eigenvalues are
 $$
 \boxed{1\text{ and }-1}.
 $$
 
-::: {.proof}
-By step <1>2, both eigenvalues have absolute value $1$. Their product is
+::: pf-proof
+
+By step [](#s2){.pf-ref}, both eigenvalues have absolute value $1$. Their product is
 $-1$. If one eigenvalue were nonreal, its complex conjugate would also be
 an eigenvalue because the characteristic polynomial has real
 coefficients, and their product would be
@@ -152,9 +176,14 @@ $$
 contrary to $\det A=-1$. Thus both eigenvalues are real roots of unity,
 and the only real roots of unity are $\pm1$. Their product being $-1$,
 they are $1$ and $-1$.
+
 :::
 
-<1>5. Up to rational canonical form, every element of $G$ is represented
+:::
+
+::: {.pf-step #s5}
+
+Up to rational canonical form, every element of $G$ is represented
 by one of
 $$
 \boxed{
@@ -167,9 +196,10 @@ I,\quad
 }
 $$
 
-::: {.proof}
-By step <1>2, the complex Jordan form is diagonal, with the eigenvalues
-listed in steps <1>3--<1>4.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the complex Jordan form is diagonal, with the eigenvalues
+listed in steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
 
 For the scalar cases the rational canonical forms are $I$ and $-I$.
 For eigenvalues $1,-1$, the minimal and characteristic polynomial is
@@ -198,29 +228,41 @@ $$
 \begin{pmatrix}0&-1\\1&1\end{pmatrix},
 $$
 respectively.
+
 :::
 
-<1>6. The possible orders of an element $A\in G$ are exactly
+:::
+
+::: {.pf-step #s6}
+
+The possible orders of an element $A\in G$ are exactly
 $$
 \boxed{
 1,\ 2,\ 3,\ 4,\ 6.
 }
 $$
 
-::: {.proof}
-The diagonalizable eigenvalue lists in steps <1>3--<1>4 show that the
+::: pf-proof
+
+The diagonalizable eigenvalue lists in steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that the
 orders are respectively
 $$
 1,\ 2,\ 3,\ 4,\ 6,
 $$
 with the determinant-$-1$ case having order $2$. Each of these orders is
-realized by one of the matrices in step <1>5.
+realized by one of the matrices in step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. There is a positive-definite inner product on $\RR^2$ which is
+:::
+
+::: {.pf-step #s7}
+
+There is a positive-definite inner product on $\RR^2$ which is
 preserved by every element of $G$.
 
-::: {.proof}
+::: pf-proof
+
 Starting from the standard Euclidean inner product
 $\langle\ ,\ \rangle_0$, define
 $$
@@ -249,22 +291,34 @@ $$
 \end{aligned}
 $$
 because right multiplication by $B$ permutes the elements of $G$.
+
 :::
 
-<1>8. After conjugating by a real invertible matrix, $G$ is a finite
+:::
+
+::: {.pf-step #s8}
+
+After conjugating by a real invertible matrix, $G$ is a finite
 subgroup of $O(2)$.
 
-::: {.proof}
-Choose a basis of $\RR^2$ orthonormal for the inner product in step <1>7.
+::: pf-proof
+
+Choose a basis of $\RR^2$ orthonormal for the inner product in step [](#s7){.pf-ref}.
 In that basis, every element of $G$ preserves the standard Euclidean inner
 product, hence is orthogonal. Changing basis conjugates the original group
 inside $\operatorname{GL}_2(\RR)$ and does not change its abstract
 isomorphism type.
+
 :::
 
-<1>9. Every finite subgroup of $O(2)$ is either cyclic or dihedral.
+:::
 
-::: {.proof}
+::: {.pf-step #s9}
+
+Every finite subgroup of $O(2)$ is either cyclic or dihedral.
+
+::: pf-proof
+
 Let
 $$
 H=G\cap SO(2).
@@ -300,20 +354,31 @@ G
 R^m=S^2=1,\ SRS=R^{-1}\rangle,
 $$
 the dihedral group of order $2m$.
+
 :::
 
-<1>10. The order $m$ of the rotation subgroup $H$ can only be
+:::
+
+::: {.pf-step #s10}
+
+The order $m$ of the rotation subgroup $H$ can only be
 $$
 m\in\{1,2,3,4,6\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The generator of $H$ is an element of the original group $G$ up to real
-conjugacy, so its order is unchanged by conjugation. Step <1>6 lists all
+conjugacy, so its order is unchanged by conjugation. Step [](#s6){.pf-ref} lists all
 possible element orders.
+
 :::
 
-<1>11. Up to isomorphism, every finite multiplicative group of
+:::
+
+::: {.pf-step #s11}
+
+Up to isomorphism, every finite multiplicative group of
 $2\times2$ integer matrices is one of
 $$
 \boxed{
@@ -330,8 +395,9 @@ D_{12},
 $$
 where $D_{2m}$ denotes the dihedral group of order $2m$.
 
-::: {.proof}
-If the group is orientation preserving, steps <1>9--<1>10 give
+::: pf-proof
+
+If the group is orientation preserving, steps [](#s9){.pf-ref} and [](#s10){.pf-ref} give
 $$
 C_m,
 \qquad
@@ -343,7 +409,7 @@ $$
 $$
 
 If the group contains an orientation-reversing element, steps
-<1>9--<1>10 give the dihedral group of order $2m$ for the same possible
+[](#s9){.pf-ref} and [](#s10){.pf-ref} give the dihedral group of order $2m$ for the same possible
 values of $m$. For $m=1$ this is $C_2$, already listed. For $m=2$ it is
 the Klein four group
 $$
@@ -354,12 +420,18 @@ $$
 D_6,\quad D_8,\quad D_{12}.
 $$
 No other isomorphism types can occur.
+
 :::
 
-<1>12. Every group listed in step <1>11 occurs as a subgroup of
+:::
+
+::: {.pf-step #s12}
+
+Every group listed in step [](#s11){.pf-ref} occurs as a subgroup of
 $\operatorname{GL}_2(\ZZ)$.
 
-::: {.proof}
+::: pf-proof
+
 For the cyclic groups use the matrices
 $$
 R_2=-I,
@@ -424,12 +496,18 @@ $$
 \langle R_6,S_1\rangle\cong D_{12}.
 $$
 All matrices displayed have integer entries and determinant $\pm1$.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>6 answer part (1), and steps <1>7--<1>12 give the complete
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} answer part (1), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} give the complete
 classification required in part (2).
+
 :::
+
+:::
+
 :::

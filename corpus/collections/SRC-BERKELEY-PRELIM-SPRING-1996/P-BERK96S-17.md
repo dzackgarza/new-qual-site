@@ -38,13 +38,18 @@ e_2=(0,1)^T
 $$
 be the standard basis of $\FF_4^2$.
 
-<1>1. If $T\in G$ fixes every line in $S$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $T\in G$ fixes every line in $S$, then
 $$
 T=\lambda I
 $$
 for some $\lambda\in\FF_4^\times$.
 
-::: {.proof}
+::: pf-proof
+
 Since $T$ fixes the lines $\FF_4e_1$ and $\FF_4e_2$, there are
 $a,b\in\FF_4^\times$ such that
 $$
@@ -69,11 +74,17 @@ $$
 a=b=c.
 $$
 Thus $T=aI$.
+
 :::
 
-<1>2. The only scalar matrix in $G$ is the identity.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The only scalar matrix in $G$ is the identity.
+
+::: pf-proof
+
 Let $\lambda I\in G$. Since its determinant is $1$,
 $$
 \lambda^2=1.
@@ -91,25 +102,43 @@ $$
 \lambda-1=0.
 $$
 Therefore $\lambda=1$ and $\lambda I=I$.
+
 :::
 
-<1>3. The kernel of the action of $G$ on $S$ is trivial.
-
-::: {.proof}
-An element of the kernel fixes every line in $S$. By step <1>1 it is scalar,
-and by step <1>2 it is the identity. Hence the kernel consists only of $I$.
 :::
 
-<1>4. The natural action of $G$ on $S$ is faithful.
+::: {.pf-step #s3}
 
-::: {.proof}
+The kernel of the action of $G$ on $S$ is trivial.
+
+::: pf-proof
+
+An element of the kernel fixes every line in $S$. By step [](#s1){.pf-ref} it is scalar,
+and by step [](#s2){.pf-ref} it is the identity. Hence the kernel consists only of $I$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The natural action of $G$ on $S$ is faithful.
+
+::: pf-proof
+
 An action is faithful exactly when its kernel is trivial. This is step
-<1>3.
+[](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

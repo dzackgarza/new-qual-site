@@ -35,9 +35,15 @@ M=\sup_{0\le x\le1}f(x).
 :::
 
 ::: {.solution}
-<1>1. There exists $t\in[0,1]$ such that $f(t)=M$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There exists $t\in[0,1]$ such that $f(t)=M$.
+
+::: pf-proof
+
 For each positive integer $k$, choose $x_k\in[0,1]$ such that
 $$
 f(x_k)>M-\frac1k.
@@ -62,9 +68,14 @@ f(t)
 $$
 By the definition of $M$ as the supremum of $f$, also $f(t)\le M$.
 Hence $f(t)=M$.
+
 :::
 
-<1>2. For part 2, define
+:::
+
+::: {.pf-step #s2}
+
+For part 2, define
 $$
 f_n(x)\coloneqq
 x\min\{1,n(1-x)\},
@@ -73,16 +84,23 @@ x\min\{1,n(1-x)\},
 $$
 Then each $f_n$ is continuous and nonnegative.
 
-::: {.proof}
+::: pf-proof
+
 Both functions $1$ and $n(1-x)$ are continuous, so their pointwise
 minimum is continuous. Multiplication by $x\ge0$ preserves
 continuity and nonnegativity.
+
 :::
 
-<1>3. The sequence from step <1>2 is eventually nonincreasing at
+:::
+
+::: {.pf-step #s3}
+
+The sequence from step [](#s2){.pf-ref} is eventually nonincreasing at
 every point.
 
-::: {.proof}
+::: pf-proof
+
 Fix $x<1$. For every integer
 $$
 n\ge\frac1{1-x},
@@ -97,13 +115,19 @@ $$
 f_n(1)=0
 $$
 for every $n$, so the same is true there.
+
 :::
 
-<1>4. The limiting function in this example does not attain its
+:::
+
+::: {.pf-step #s4}
+
+The limiting function in this example does not attain its
 supremum.
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 f(x)\coloneqq\lim_{n\to\infty}f_n(x)
 =
@@ -118,12 +142,18 @@ $$
 $$
 but $f(x)<1$ for every $x\in[0,1]$. Hence the supremum is not
 attained.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part 1, and steps <1>2--<1>4 provide the required
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part 1, and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} provide the required
 counterexample for part 2.
+
 :::
+
+:::
+
 :::

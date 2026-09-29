@@ -41,13 +41,18 @@ $$
 $$
 and write $\beta=\alpha^{-1}$.
 
-<1>1. After replacing $X$ and $Y$ by affine open neighborhoods of $P$ and $Q$, the map $\alpha$ is induced by a morphism
+::: pf
+
+::: {.pf-step #s1}
+
+After replacing $X$ and $Y$ by affine open neighborhoods of $P$ and $Q$, the map $\alpha$ is induced by a morphism
 $$
 f:V_0\to X
 $$
 from an open neighborhood $V_0\subseteq Y$ of $Q$.
 
-::: {.proof}
+::: pf-proof
+
 Choose affine embeddings
 $$
 X\subseteq\AA^r,
@@ -85,11 +90,17 @@ $$
 f:V_0\to X.
 $$
 For every global coordinate function $x_i$ on $X$, the germ at $Q$ of $x_i\circ f$ is $\alpha(x_i)$ by construction.
+
 :::
 
-<1>2. The morphism $f$ sends $Q$ to $P$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The morphism $f$ sends $Q$ to $P$.
+
+::: pf-proof
+
 An isomorphism of local rings sends the unique maximal ideal to the unique maximal ideal, so
 $$
 \alpha(\mathfrak m_{P,X})=\mathfrak m_{Q,Y}.
@@ -120,9 +131,14 @@ Hence
 $$
 f_Q^*=\alpha.
 $$
+
 :::
 
-<1>3. Applying the same construction to $\beta$ gives an open neighborhood $U_0\subseteq X$ of $P$ and a morphism
+:::
+
+::: {.pf-step #s3}
+
+Applying the same construction to $\beta$ gives an open neighborhood $U_0\subseteq X$ of $P$ and a morphism
 $$
 g:U_0\to Y
 $$
@@ -133,13 +149,20 @@ g(P)=Q,
 g_P^*=\beta.
 $$
 
-::: {.proof}
-Repeat steps <1>1--<1>2 with $X,P,\alpha$ and $Y,Q,\beta$ interchanged.
+::: pf-proof
+
+Repeat steps [](#s1){.pf-ref} and [](#s2){.pf-ref} with $X,P,\alpha$ and $Y,Q,\beta$ interchanged.
+
 :::
 
-<1>4. After shrinking around $P$ and $Q$, the compositions $f\circ g$ and $g\circ f$ are identity morphisms.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+After shrinking around $P$ and $Q$, the compositions $f\circ g$ and $g\circ f$ are identity morphisms.
+
+::: pf-proof
+
 The composition $f\circ g$ is defined on the open neighborhood
 $$
 U_c=U_0\cap g^{-1}(V_0)
@@ -182,15 +205,21 @@ gives an open neighborhood $V_1\subseteq V_c$ of $Q$ on which
 $$
 g\circ f=\operatorname{id}_{V_1}.
 $$
+
 :::
 
-<1>5. There are open neighborhoods $P\in U\subseteq X$ and $Q\in V\subseteq Y$ such that
+:::
+
+::: {.pf-step #s5}
+
+There are open neighborhoods $P\in U\subseteq X$ and $Q\in V\subseteq Y$ such that
 $$
 g:U\xrightarrow{\sim}V
 $$
 is an isomorphism carrying $P$ to $Q$.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 U=U_1\cap g^{-1}(V_1)
@@ -215,19 +244,25 @@ $$
 Hence $y\in g(U)$.
 Therefore $g(U)=V$.
 
-On $U$ and $V$, the identities from step <1>4 show
+On $U$ and $V$, the identities from step [](#s4){.pf-ref} show
 $$
 f\circ g=\operatorname{id}_U,
 \qquad
 g\circ f=\operatorname{id}_V.
 $$
 So $g:U\to V$ is an isomorphism with inverse $f|_V$.
-Step <1>3 gives $g(P)=Q$.
+Step [](#s3){.pf-ref} gives $g(P)=Q$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is precisely the required neighborhood isomorphism.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is precisely the required neighborhood isomorphism.
+
+:::
+
+:::
+
 :::

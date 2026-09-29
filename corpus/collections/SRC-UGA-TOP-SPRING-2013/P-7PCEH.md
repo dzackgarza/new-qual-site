@@ -37,7 +37,12 @@ c. Prove that the fundamental group of $X_2$ is a free group on two generators.
 :::
 
 ::: {.solution}
-<1>1. A subspace \(A\subseteq X\) is a deformation retract of \(X\) if there is a continuous map
+
+::: pf
+
+::: pf-step
+
+A subspace \(A\subseteq X\) is a deformation retract of \(X\) if there is a continuous map
 \[
 H:X\times[0,1]\to X
 \]
@@ -55,15 +60,22 @@ and
 H(a,t)=a
 \qquad(a\in A,\ 0\le t\le1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 At time \(1\), the map
 \[
 r(x)=H(x,1)
 \]
 has image in \(A\) and satisfies \(r(a)=a\) for \(a\in A\), so it is a retraction onto \(A\). The last displayed condition says that the homotopy from \(\operatorname{id}_X\) to \(r\) is relative to \(A\); this is the standard deformation-retraction condition.
+
 :::
 
-<1>2. Regard
+:::
+
+::: {.pf-step #s2}
+
+Regard
 \[
 X_2=S^1\cup(\{0\}\times[-1,1])
 \]
@@ -81,43 +93,66 @@ Then
 \[
 X_2/T\cong S^1\vee S^1=X_1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The subgraph \(T\) is a single edge joining the two vertices, hence is a maximal tree in \(X_2\). Collapsing \(T\) identifies \(v_+\) and \(v_-\) to one point.
 Each of the two semicircular edges then becomes a loop based at this point, so the quotient is a wedge of two circles, i.e. the planar figure eight \(X_1\).
+
 :::
 
-<1>3. The quotient map
+:::
+
+::: {.pf-step #s3}
+
+The quotient map
 \[
 q:X_2\to X_2/T
 \]
 is a homotopy equivalence.
-::: {.proof}
+
+::: pf-proof
+
 The pair \((X_2,T)\) is a CW pair and \(T\) is contractible.
 For a CW pair, collapsing a contractible subcomplex to a point yields a homotopy-equivalent quotient (Hatcher, *Algebraic Topology*, Proposition 0.17). Therefore \(q\) is a homotopy equivalence.
+
 :::
 
-<1>4. Consequently,
+:::
+
+::: {.pf-step #s4}
+
+Consequently,
 \[
 \boxed{\pi_1(X_1)\cong\pi_1(X_2)}.
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 \[
 X_2/T\cong X_1.
 \]
-By <1>3, \(q\) is a homotopy equivalence, so it induces an isomorphism on fundamental groups.
+By step [](#s3){.pf-ref}, \(q\) is a homotopy equivalence, so it induces an isomorphism on fundamental groups.
 Hence
 \[
 \pi_1(X_2)\cong\pi_1(X_2/T)\cong\pi_1(X_1).
 \]
+
 :::
 
-<1>5. The fundamental group of \(X_2\) is the free group on two generators:
+:::
+
+::: pf-step
+
+The fundamental group of \(X_2\) is the free group on two generators:
 \[
 \boxed{\pi_1(X_2)\cong F_2}.
 \]
-::: {.proof}
-By <1>2--<1>4,
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref},
 \[
 \pi_1(X_2)
 \cong
@@ -132,5 +167,11 @@ Applying Seifert--van Kampen to the wedge of two circles gives
 \mathbb Z*\mathbb Z
 =F_2.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

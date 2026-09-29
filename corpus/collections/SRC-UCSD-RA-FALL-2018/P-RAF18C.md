@@ -29,8 +29,15 @@ Prove that $\lim_{n \to \infty} f(n^2 x) = 0$ for almost every $x \in \mathbb{R}
 :::
 
 ::: {.solution}
-<1>1. Estimate the exceptional sets at a fixed threshold.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Estimate the exceptional sets at a fixed threshold.
+
+::: pf-proof
+
 Fix $\varepsilon>0$ and define
 \[
 E_n(\varepsilon):=\{x\in\mathbb R:|f(n^2x)|>\varepsilon\}.
@@ -53,10 +60,17 @@ m\bigl(\{|f|>\varepsilon\}\bigr)
 \sum_{n=1}^\infty\frac1{n^2}
 <\infty.
 \]
+
 :::
 
-<1>2. Apply Borel--Cantelli at a countable family of thresholds.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Borel--Cantelli at a countable family of thresholds.
+
+::: pf-proof
+
 By the Borel--Cantelli lemma, for each positive integer $j$, almost every $x$ belongs to only finitely many sets
 \[
 E_n(1/j).
@@ -71,5 +85,11 @@ Hence, for almost every $x$,
 \[
 \boxed{f(n^2x)\longrightarrow0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

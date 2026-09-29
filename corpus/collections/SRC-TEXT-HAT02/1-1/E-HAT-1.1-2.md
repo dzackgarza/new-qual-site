@@ -41,7 +41,11 @@ H(s,0)=h(s),\qquad H(s,1)=k(s),\qquad
 H(0,t)=x_0,\qquad H(1,t)=x_1.
 \]
 
-<1>1. Fix a loop $f:I\to X$ based at $x_1$.
+::: pf
+
+::: {.pf-step #s1}
+
+Fix a loop $f:I\to X$ based at $x_1$.
 For each $t\in I$, define a loop $F_t$ based at $x_0$ by
 \[
 F_t(s)=
@@ -51,7 +55,9 @@ f(3s-1),&\frac13\le s\le \frac23,\\
 H(3-3s,t),&\frac23\le s\le1.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 At $s=1/3$, the first and second formulas both equal $x_1$, since
 \[
 H(1,t)=x_1=f(0).
@@ -66,9 +72,14 @@ Moreover,
 F_t(0)=H(0,t)=x_0=H(0,t)=F_t(1),
 \]
 so $F_t$ is a loop based at $x_0$ for every $t$.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 \[
 F:I\times I\to X,\qquad F(s,t)=F_t(s),
 \]
@@ -78,28 +89,50 @@ h\cdot f\cdot\bar h
 \quad\text{to}\quad
 k\cdot f\cdot\bar k.
 \]
-::: {.proof}
-On each of the three closed vertical strips in $I\times I$, the formula in <1>1 is continuous, and the formulas agree on the common boundaries; the pasting lemma gives continuity of $F$.
+
+::: pf-proof
+
+On each of the three closed vertical strips in $I\times I$, the formula in step [](#s1){.pf-ref} is continuous, and the formulas agree on the common boundaries; the pasting lemma gives continuity of $F$.
 At $t=0$, the first and third pieces are $h$ and $\bar h$, while at $t=1$ they are $k$ and $\bar k$.
-The endpoint computation in <1>1 shows that the basepoint $x_0$ is fixed throughout the homotopy.
+The endpoint computation in step [](#s1){.pf-ref} shows that the basepoint $x_0$ is fixed throughout the homotopy.
+
 :::
 
-<1>3. For every $[f]\in\pi_1(X,x_1)$,
+:::
+
+::: {.pf-step #s3}
+
+For every $[f]\in\pi_1(X,x_1)$,
 \[
 \beta_h([f])=\beta_k([f]).
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \beta_h([f])=[h\cdot f\cdot\bar h],
 \qquad
 \beta_k([f])=[k\cdot f\cdot\bar k].
 \]
-These based loops are homotopic relative to the basepoint by <1>2, so they determine the same element of $\pi_1(X,x_0)$.
+These based loops are homotopic relative to the basepoint by step [](#s2){.pf-ref}, so they determine the same element of $\pi_1(X,x_0)$.
+
 :::
 
-<1>4. Therefore $\beta_h=\beta_k$, so the change-of-basepoint homomorphism depends only on the homotopy class of $h$.
-::: {.proof}
-The equality in <1>3 holds for every element of $\pi_1(X,x_1)$.
 :::
+
+::: pf-step
+
+Therefore $\beta_h=\beta_k$, so the change-of-basepoint homomorphism depends only on the homotopy class of $h$.
+
+::: pf-proof
+
+The equality in step [](#s3){.pf-ref} holds for every element of $\pi_1(X,x_1)$.
+
+:::
+
+:::
+
+:::
+
 :::

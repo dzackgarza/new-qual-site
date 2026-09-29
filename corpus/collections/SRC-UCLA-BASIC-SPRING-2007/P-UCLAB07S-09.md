@@ -17,7 +17,21 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. Define what it means for a function $f$ to be Riemann integrable on $[0,1]$.
 
-<1>2. Prove that every continuous function on $[0,1]$ is Riemann integrable.
+::: pf
+
+::: pf-step
+
+Define what it means for a function $f$ to be Riemann integrable on $[0,1]$.
+
+:::
+
+::: pf-step
+
+Prove that every continuous function on $[0,1]$ is Riemann integrable.
+
+:::
+
+:::
+
 :::

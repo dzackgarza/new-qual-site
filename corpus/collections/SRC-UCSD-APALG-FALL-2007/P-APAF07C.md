@@ -27,8 +27,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Every complex square matrix is arbitrarily close, in Frobenius norm, to a diagonalizable matrix.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every complex square matrix is arbitrarily close, in Frobenius norm, to a diagonalizable matrix.
+
+::: pf-proof
+
 Let $A\in M_n(\mathbb C)$ and let $\varepsilon>0$. By Schur's theorem there is a unitary matrix $U$ such that
 \[
 T=U^*AU
@@ -70,13 +77,20 @@ Finally, the Frobenius norm is unitarily invariant, so
 <\varepsilon.
 \]
 Thus diagonalizable matrices are dense in $M_n(\mathbb C)$. This proves part (a).
+
 :::
 
-<1>2. If $A$ has an orthonormal basis of eigenvectors, then
+:::
+
+::: {.pf-step #s2}
+
+If $A$ has an orthonormal basis of eigenvectors, then
 \[
 A^*A=AA^*.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $u_1,\ldots,u_n$ be an orthonormal eigenbasis, with
 \[
 Au_j=\lambda_j u_j.
@@ -104,10 +118,17 @@ Since diagonal matrices commute with their adjoints,
 D^*D=DD^*,
 \]
 so $A^*A=AA^*$.
+
 :::
 
-<1>3. Every upper-triangular normal matrix is diagonal.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every upper-triangular normal matrix is diagonal.
+
+::: pf-proof
+
 We argue by induction on the size $n$. The statement is trivial for $n=1$.
 
 Let $T=(t_{ij})\in M_n(\mathbb C)$ be upper triangular and normal. Comparing the $(1,1)$ entries of
@@ -145,10 +166,17 @@ with $B$ upper triangular. Normality of $T$ implies
 BB^*=B^*B,
 \]
 so $B$ is normal. By the induction hypothesis, $B$ is diagonal. Hence $T$ is diagonal.
+
 :::
 
-<1>4. If $A^*A=AA^*$, then $A$ has an orthonormal basis of eigenvectors.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $A^*A=AA^*$, then $A$ has an orthonormal basis of eigenvectors.
+
+::: pf-proof
+
 Assume $A$ is normal. By Schur's theorem there is a unitary $U$ such that
 \[
 T=U^*AU
@@ -161,19 +189,32 @@ T^*T
 TT^*
 =U^*AA^*U.
 \]
-Thus $T$ is upper triangular and normal. By <1>3, $T$ is diagonal.
+Thus $T$ is upper triangular and normal. By step [](#s3){.pf-ref}, $T$ is diagonal.
 Therefore
 \[
 A=UTU^*
 \]
 is unitarily diagonalizable, and the columns of $U$ form an orthonormal basis of eigenvectors of $A$.
+
 :::
 
-<1>5. Hence a complex square matrix has an orthonormal basis of eigenvectors if and only if it is normal, equivalently
+:::
+
+::: pf-step
+
+Hence a complex square matrix has an orthonormal basis of eigenvectors if and only if it is normal, equivalently
 \[
 A^*A=AA^*.
 \]
-::: {.proof}
-The forward implication is <1>2 and the reverse implication is <1>4. This proves part (b).
+
+::: pf-proof
+
+The forward implication is step [](#s2){.pf-ref} and the reverse implication is step [](#s4){.pf-ref}. This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

@@ -48,8 +48,15 @@ Show that
 \]
 :::
 ::: {.solution}
-<1>1. Express the overlap as a convolution and prove integrability.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Express the overlap as a convolution and prove integrability.
+
+::: pf-proof
+
 Let $\widetilde\chi_E(u):=\chi_E(-u)$. The hint gives
 \[
 f(x)=\int_{\mathbb R}\chi_E(y)\chi_E(y-x)\,dy
@@ -65,10 +72,17 @@ Since $m(E)<\infty$, both factors lie in $L^1(\mathbb R)$. Tonelli gives
 \end{aligned}
 \]
 Thus $f\in L^1(\mathbb R)$.
+
 :::
 
-<1>2. Prove uniform continuity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove uniform continuity.
+
+::: pf-proof
+
 For $h\in\mathbb R$,
 \[
 \begin{aligned}
@@ -79,10 +93,17 @@ For $h\in\mathbb R$,
 \end{aligned}
 \]
 Translations are continuous in $L^1$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Hence $f$ is uniformly continuous.
+
 :::
 
-<1>3. Prove that $f(x)\to0$ as $|x|\to\infty$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that $f(x)\to0$ as $|x|\to\infty$.
+
+::: pf-proof
+
 Let $\varepsilon>0$. Choose $R>0$ such that
 \[
 m(E\setminus[-R,R])<\varepsilon.
@@ -108,5 +129,11 @@ Hence
 \[
 \boxed{\lim_{|x|\to\infty}f(x)=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,8 +39,15 @@ Define what is meant by:
 :::
 
 ::: {.solution}
-<1>1. Normal subgroup.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Normal subgroup.
+
+::: pf-proof
+
 A subgroup $N\le G$ is **normal**, written
 $$
 N\trianglelefteq G,
@@ -54,10 +61,17 @@ $$
 gN=Ng
 $$
 for every $g\in G$.
+
 :::
 
-<1>2. Sylow subgroup.
-::: {.proof}
+:::
+
+::: pf-step
+
+Sylow subgroup.
+
+::: pf-proof
+
 Let $G$ be finite and let $p$ be a prime. If
 $$
 |G|=p^a m,
@@ -69,10 +83,17 @@ $$
 $$
 Thus it is a $p$-subgroup whose order is the largest power of $p$ dividing
 $|G|$.
+
 :::
 
-<1>3. Simple group.
-::: {.proof}
+:::
+
+::: pf-step
+
+Simple group.
+
+::: pf-proof
+
 A group $G$ is **simple** if
 $$
 G\ne1
@@ -81,10 +102,17 @@ and its only normal subgroups are
 $$
 1\quad\text{and}\quad G.
 $$
+
 :::
 
-<1>4. Left group action.
-::: {.proof}
+:::
+
+::: pf-step
+
+Left group action.
+
+::: pf-proof
+
 A **left action** of a group $G$ on a set $S$ is a map
 $$
 G\times S\longrightarrow S,
@@ -103,10 +131,17 @@ Equivalently, it is a homomorphism
 $$
 G\longrightarrow\operatorname{Sym}(S).
 $$
+
 :::
 
-<1>5. Semidirect product determined by $c:H\to\operatorname{Aut}(K)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Semidirect product determined by $c:H\to\operatorname{Aut}(K)$.
+
+::: pf-proof
+
 Given a homomorphism
 $$
 c:H\longrightarrow\operatorname{Aut}(K),
@@ -138,5 +173,11 @@ H\hookrightarrow K\rtimes_cH,
 $$
 the subgroup $K$ is normal and conjugation by $h$ acts on it by the
 automorphism $c(h)$.
+
 :::
+
+:::
+
+:::
+
 :::

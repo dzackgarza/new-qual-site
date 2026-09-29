@@ -59,45 +59,97 @@ satisfies the following conditions:
 :::
 
 ::: {.solution}
-<1>1. (a) If $\abs z<1$ and $\abs w<1$, then $\abs{\frac{w - z}{1 - \bar w z}} < 1$; if $\abs z=1$ or $\abs w=1$, then $\abs{\frac{w - z}{1 - \bar w z}} = 1$.
 
-<2>1. It suffices to treat $z = r\ge0$ real.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+(a) If $\abs z<1$ and $\abs w<1$, then $\abs{\frac{w - z}{1 - \bar w z}} < 1$; if $\abs z=1$ or $\abs w=1$, then $\abs{\frac{w - z}{1 - \bar w z}} = 1$.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+It suffices to treat $z = r\ge0$ real.
+
+::: pf-proof
+
 Replacing $(z,w)$ by $(e^{i\theta}z,e^{i\theta}w)$ multiplies $w-z$ by $e^{i\theta}$ and leaves $\bar wz$ unchanged, so it preserves $\abs{\frac{w - z}{1 - \bar w z}}$ and the hypotheses. Choose $\theta$ with $e^{i\theta}z=\abs z$.
+
 :::
 
-<2>2. For $r\ge0$, $\abs{1-\bar w r}^2-\abs{w-r}^2=(1 - r^2)(1 - |w|^2)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+
+For $r\ge0$, $\abs{1-\bar w r}^2-\abs{w-r}^2=(1 - r^2)(1 - |w|^2)$.
+
+::: pf-proof
+
 Expanding, $\abs{w-r}^2=(r - w)(r - \bar w)=r^2 - r(w + \bar w) + |w|^2$ and $\abs{1-\bar wr}^2=(1 - rw)(1 - r\bar w)=1 - r(w + \bar w) + r^2|w|^2$; subtract.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-By step <2>1 take $z=r=\abs z$. If $r<1$ and $\abs w<1$, the right side of step <2>2 is positive, so $\abs{w-r}<\abs{1-\bar wr}$. If $r=1$ or $\abs w=1$, it is zero, so $\abs{w-r}=\abs{1-\bar wr}$, and this common value is nonzero because $\bar wz\ne1$.
 :::
 
-<1>2. (b) For fixed $w\in\mathbb D$, the map $F(z) = \frac{w - z}{1 - \bar w z}$ satisfies (i)--(iv).
+::: pf-qed
 
-<2>1. (i) $F$ is holomorphic on $\mathbb D$ and $F(\mathbb D)\subseteq\mathbb D$.
+By step [](#s1-1){.pf-ref} take $z=r=\abs z$. If $r<1$ and $\abs w<1$, the right side of step [](#s1-2){.pf-ref} is positive, so $\abs{w-r}<\abs{1-\bar wr}$. If $r=1$ or $\abs w=1$, it is zero, so $\abs{w-r}=\abs{1-\bar wr}$, and this common value is nonzero because $\bar wz\ne1$.
 
-::: {.proof}
-For $\abs z<1$, $\abs{\bar wz}<1$, so the denominator does not vanish and $F$ is a rational function without poles in $\mathbb D$. Step <1>1 gives $\abs{F(z)}<1$.
 :::
 
-<2>2. (ii) $F(0) = w$ and $F(w) = 0$; (iii) $\abs{F(z)} = 1$ if $\abs z = 1$.
-
-::: {.proof}
-Substitution gives (ii), and step <1>1 gives (iii).
 :::
 
-<2>3. (iv) $F\circ F = \operatorname{id}_{\mathbb D}$, so $F\colon\mathbb D\to\mathbb D$ is bijective.
+:::
 
-::: {.proof}
+::: pf-step
+
+(b) For fixed $w\in\mathbb D$, the map $F(z) = \frac{w - z}{1 - \bar w z}$ satisfies (i)--(iv).
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+(i) $F$ is holomorphic on $\mathbb D$ and $F(\mathbb D)\subseteq\mathbb D$.
+
+::: pf-proof
+
+For $\abs z<1$, $\abs{\bar wz}<1$, so the denominator does not vanish and $F$ is a rational function without poles in $\mathbb D$. Step [](#s1){.pf-ref} gives $\abs{F(z)}<1$.
+
+:::
+
+:::
+
+::: pf-step
+
+(ii) $F(0) = w$ and $F(w) = 0$; (iii) $\abs{F(z)} = 1$ if $\abs z = 1$.
+
+::: pf-proof
+
+Substitution gives (ii), and step [](#s1){.pf-ref} gives (iii).
+
+:::
+
+:::
+
+::: pf-step
+
+(iv) $F\circ F = \operatorname{id}_{\mathbb D}$, so $F\colon\mathbb D\to\mathbb D$ is bijective.
+
+::: pf-proof
+
 For $z\in\mathbb D$,
 $$F(F(z)) = \frac{w - \frac{w - z}{1 - \bar w z}}{1 - \bar w \frac{w - z}{1 - \bar w z}} = \frac{w(1 - \bar w z) - (w - z)}{(1 - \bar w z) - \bar w(w - z)} = \frac{z(1 - |w|^2)}{1 - |w|^2} = z.$$
-By step <2>1, $F$ maps $\mathbb D$ into itself, so $F$ is its own inverse on $\mathbb D$.
+By step [](#s2-1){.pf-ref}, $F$ maps $\mathbb D$ into itself, so $F$ is its own inverse on $\mathbb D$.
+
 :::
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::

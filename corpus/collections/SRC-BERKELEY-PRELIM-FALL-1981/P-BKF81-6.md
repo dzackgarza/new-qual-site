@@ -38,8 +38,14 @@ $$
 \qquad j=0,\ldots,n-1.
 $$
 
-<1>1. Rewrite the integral using periodicity of $g$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Rewrite the integral using periodicity of $g$.
+
+::: pf-proof
+
 On the $j$th interval set
 $$
 x=\frac{j+t}{n},
@@ -63,10 +69,17 @@ $$
 A_n(t)=\frac1n\sum_{j=0}^{n-1}
 f\left(\frac{j+t}{n}\right).
 $$
+
 :::
 
-<1>2. The shifted Riemann sums $A_n(t)$ converge uniformly in $t$ to $\int_0^1f$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The shifted Riemann sums $A_n(t)$ converge uniformly in $t$ to $\int_0^1f$.
+
+::: pf-proof
+
 Because $f$ is continuous and $1$-periodic, it is uniformly continuous on
 $\mathbb R$. Let
 $$
@@ -98,12 +111,19 @@ $$
 A_n(t)\longrightarrow\int_0^1f(x)\,dx
 $$
 uniformly for $t\in[0,1]$.
+
 :::
 
-<1>3. Pass to the limit in the integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass to the limit in the integral.
+
+::: pf-proof
+
 Since $g$ is continuous on $[0,1]$, it is bounded. Uniform convergence from
-step <1>2 gives
+step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 \lim_{n\to\infty}\int_0^1 f(x)g(nx)\,dx
@@ -114,5 +134,11 @@ $$
 \end{aligned}
 $$
 This is the desired formula.
+
 :::
+
+:::
+
+:::
+
 :::

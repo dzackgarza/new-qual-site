@@ -36,8 +36,15 @@ Then $m(E) = 0$.
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 Let
 \[
 X=c_{00}
@@ -65,10 +72,17 @@ while
 F(e_1)=1\ne0.
 \]
 Thus $e_1$ lies in the closure of $\ker F$ but not in $\ker F$, so $F^{-1}(0)$ need not be closed.
+
 :::
 
-<1>2. Part (b) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is true.
+
+::: pf-proof
+
 Weak convergence gives
 \[
 \langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\|x\|^2.
@@ -82,10 +96,17 @@ Hence
 \end{aligned}
 \]
 Therefore $x_n\to x$ strongly.
+
 :::
 
-<1>3. Part (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is true.
+
+::: pf-proof
+
 Suppose $m(E)>0$. By the Lebesgue density theorem, almost every $x\in E$ is a density point of $E$. Choose such an $x$. Then
 \[
 \frac{m(E\cap(x-r,x+r))}{2r}\longrightarrow1
@@ -99,5 +120,11 @@ contradicting the assumed bound for every open interval. Hence
 \[
 \boxed{m(E)=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

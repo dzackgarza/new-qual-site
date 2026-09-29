@@ -33,8 +33,15 @@ Show that for any $p > 1$, there is a constant $C_p < \infty$ such that
 :::
 
 ::: {.solution}
-<1>1. Separate the zero Fourier mode.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Separate the zero Fourier mode.
+
+::: pf-proof
+
 For $k=0$,
 \[
 |\widehat f(0)|
@@ -42,10 +49,17 @@ For $k=0$,
 \le \|f\|_{L^1}.
 \]
 Thus it remains to control the sum over $k\ne0$.
+
 :::
 
-<1>2. Integrate by parts for the nonzero modes.
-::: {.proof}
+:::
+
+::: pf-step
+
+Integrate by parts for the nonzero modes.
+
+::: pf-proof
+
 Because $f\in C^1(\mathbb T)$ is periodic, integration by parts gives, for every $k\ne0$,
 \[
 \widehat{f'}(k)
@@ -62,10 +76,17 @@ Therefore
 \le \frac1{2\pi}
 \sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}.
 \]
+
 :::
 
-<1>3. Treat the range $1<p\le2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Treat the range $1<p\le2$.
+
+::: pf-proof
+
 Let $p'=p/(p-1)$. By Hölder's inequality for sequences,
 \[
 \sum_{k\ne0}\frac{|\widehat{f'}(k)|}{|k|}
@@ -83,10 +104,17 @@ Thus
 \sum_{k\ne0}|\widehat f(k)|
 \le C_p\|f'\|_{L^p}.
 \]
+
 :::
 
-<1>4. Treat the range $p\ge2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Treat the range $p\ge2$.
+
+::: pf-proof
+
 Since $\mathbb T$ has finite measure,
 \[
 \|f'\|_{L^2}\le \|f'\|_{L^p}.
@@ -103,10 +131,17 @@ By Cauchy--Schwarz and Plancherel,
 \end{aligned}
 \]
 Hence the same estimate holds for every $p\ge2$.
+
 :::
 
-<1>5. Combine the estimates.
-::: {.proof}
+:::
+
+::: pf-step
+
+Combine the estimates.
+
+::: pf-proof
+
 Steps 1--4 give, for every $p>1$,
 \[
 \boxed{
@@ -114,5 +149,11 @@ Steps 1--4 give, for every $p>1$,
 \le \|f\|_{L^1}+C_p\|f'\|_{L^p}.}
 \]
 The constant $C_p$ depends only on $p$ and the Fourier normalization.
+
 :::
+
+:::
+
+:::
+
 :::

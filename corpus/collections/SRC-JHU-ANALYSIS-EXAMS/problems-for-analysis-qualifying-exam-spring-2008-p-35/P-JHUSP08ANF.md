@@ -30,9 +30,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The comparison map is conjugate to a disk map fixing zero and another point.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The comparison map is conjugate to a disk map fixing zero and another point.
+
+::: pf-proof
+
 Since $g$ is biholomorphic, $h=g^{-1}\circ f$ is a
 holomorphic disk self-map. The two assumed equalities
 give $h(P)=P$ and $h(Q)=Q$. Set
@@ -50,11 +56,17 @@ The corresponding identity for $\phi^{-1}$ shows that
 both maps preserve $D$. Thus $H=\phi\circ h\circ\phi^{-1}$
 is a holomorphic disk self-map fixing zero and
 $q=\phi(Q)\ne0$.
+
 :::
 
-<1>2. The normalized map is the identity.
+:::
 
-::: {.proof}
+::: pf-step
+
+The normalized map is the identity.
+
+::: pf-proof
+
 Schwarz's lemma gives $|H(w)|\leq|w|$ [@SS03]. The
 quotient $H(w)/w$ extends holomorphically at zero by
 the Taylor expansion and is bounded by one. Its value
@@ -63,5 +75,11 @@ therefore makes the quotient identically one [@SS03].
 Hence $H(w)=w$ on $D$, and undoing the conjugation
 gives $h=\operatorname{id}_D$. Since $h=g^{-1}\circ f$,
 this is exactly $f=g$ on the whole disk.
+
 :::
+
+:::
+
+:::
+
 :::

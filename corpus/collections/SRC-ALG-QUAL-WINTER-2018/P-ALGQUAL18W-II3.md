@@ -51,14 +51,19 @@ p:\RR\longrightarrow\ZZ,
 p(x)=\lfloor x\rfloor.
 $$
 
-<1>1. For every $x\in\RR$ and $n\in\ZZ$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in\RR$ and $n\in\ZZ$,
 $$
 \lceil x\rceil\leq n
 \quad\Longleftrightarrow\quad
 x\leq n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\lceil x\rceil\leq n$, then
 $$
 x\leq\lceil x\rceil\leq n.
@@ -68,12 +73,18 @@ least integer greater than or equal to $x$, satisfies
 $$
 \lceil x\rceil\leq n.
 $$
+
 :::
 
-<1>2. The functor $F_c:\mathcal C_{\RR}\to\mathcal C_{\ZZ}$ is left
+:::
+
+::: {.pf-step #s2}
+
+The functor $F_c:\mathcal C_{\RR}\to\mathcal C_{\ZZ}$ is left
 adjoint to $F_i$.
 
-::: {.proof}
+::: pf-proof
+
 For $x\in\RR$ and $n\in\ZZ$,
 $$
 \Hom_{\mathcal C_{\ZZ}}(F_c x,n)\neq\varnothing
@@ -86,7 +97,7 @@ $$
 \quad\Longleftrightarrow\quad
 x\leq n.
 $$
-These conditions are equivalent by step <1>1. Each Hom-set in a poset
+These conditions are equivalent by step [](#s1){.pf-ref}. Each Hom-set in a poset
 category is either empty or a singleton, so there is a unique bijection
 $$
 \Hom_{\mathcal C_{\ZZ}}(F_c x,n)
@@ -99,16 +110,22 @@ square commutes. Hence
 $$
 F_c\dashv F_i.
 $$
+
 :::
 
-<1>3. For every $x\in\RR$ and $n\in\ZZ$,
+:::
+
+::: {.pf-step #s3}
+
+For every $x\in\RR$ and $n\in\ZZ$,
 $$
 n\leq\lfloor x\rfloor
 \quad\Longleftrightarrow\quad
 n\leq x.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $n\leq\lfloor x\rfloor$, then
 $$
 n\leq\lfloor x\rfloor\leq x.
@@ -118,12 +135,18 @@ the greatest integer less than or equal to $x$, satisfies
 $$
 n\leq\lfloor x\rfloor.
 $$
+
 :::
 
-<1>4. The functor $F_p:\mathcal C_{\RR}\to\mathcal C_{\ZZ}$ is right
+:::
+
+::: {.pf-step #s4}
+
+The functor $F_p:\mathcal C_{\RR}\to\mathcal C_{\ZZ}$ is right
 adjoint to $F_i$.
 
-::: {.proof}
+::: pf-proof
+
 For $n\in\ZZ$ and $x\in\RR$,
 $$
 \Hom_{\mathcal C_{\RR}}(F_i n,x)\neq\varnothing
@@ -136,7 +159,7 @@ $$
 \quad\Longleftrightarrow\quad
 n\leq\lfloor x\rfloor.
 $$
-Step <1>3 makes these conditions equivalent. As in step <1>2, the resulting
+Step [](#s3){.pf-ref} makes these conditions equivalent. As in step [](#s2){.pf-ref}, the resulting
 unique bijections
 $$
 \Hom_{\mathcal C_{\RR}}(F_i n,x)
@@ -147,9 +170,14 @@ are automatically natural. Hence
 $$
 F_i\dashv F_p.
 $$
+
 :::
 
-<1>5. The two adjoints are therefore
+:::
+
+::: {.pf-step #s5}
+
+The two adjoints are therefore
 $$
 \boxed{
 F_{\lceil\,\cdot\,\rceil}
@@ -160,13 +188,20 @@ F_{\lfloor\,\cdot\,\rfloor}
 }.
 $$
 
-::: {.proof}
-This is exactly the combination of steps <1>2 and <1>4.
+::: pf-proof
+
+This is exactly the combination of steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 identifies and justifies both requested adjoints.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} identifies and justifies both requested adjoints.
+
+:::
+
+:::
+
 :::

@@ -35,12 +35,17 @@ $$
 in $\PP^3$, and projection from $[0:0:1:0]$ forgets the third coordinate.
 On the affine chart $u=1$ around the point mapping to the cusp, write the ambient coordinates as $(x,y,z)$.
 
-<1>1. The projected plane curve is the cuspidal cubic
+::: pf
+
+::: {.pf-step #s1}
+
+The projected plane curve is the cuspidal cubic
 $$
 \boxed{x^2=y^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $u=1$ the twisted cubic has parametrization
 $$
 x=t^3,\qquad y=t^2,\qquad z=t.
@@ -55,26 +60,38 @@ $$
 C=V(x^2-y^3),
 $$
 with cusp at the origin.
+
 :::
 
-<1>2. For $a\ne0$, scale the omitted coordinate as in III.9.8.3. The resulting affine curve $X_a\subseteq\AA^3$ is parametrized by
+:::
+
+::: {.pf-step #s2}
+
+For $a\ne0$, scale the omitted coordinate as in III.9.8.3. The resulting affine curve $X_a\subseteq\AA^3$ is parametrized by
 $$
 x=t^3,\qquad y=t^2,\qquad z=at.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The automorphism used in III.9.8.3 multiplies the coordinate in the projection direction by $a$ and fixes the other coordinates.
 Hence the affine parametrization of the twisted cubic becomes exactly the displayed one.
 For $a\ne0$ this is isomorphic to the original twisted cubic by rescaling $z$.
+
 :::
 
-<1>3. The flat closure of these curves over $\AA_a^1$ is cut out in $\AA^1_a\times\AA^3_{x,y,z}$ by
+:::
+
+::: {.pf-step #s3}
+
+The flat closure of these curves over $\AA_a^1$ is cut out in $\AA^1_a\times\AA^3_{x,y,z}$ by
 $$
 \boxed{
 J=(x^2-y^3,\ z^2-a^2y,\ yz-ax,\ xz-ay^2)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Consider the $k$-algebra homomorphism
 $$
 \Phi:k[a,x,y,z]\longrightarrow k[a,t]
@@ -121,43 +138,61 @@ $$
 B=k[a,t^2,t^3,at]\subseteq k[a,t].
 $$
 
-For $a\ne0$, adjoining $a^{-1}$ makes $t=z/a$ available, so the fibre is exactly the scaled twisted cubic of step <1>2.
+For $a\ne0$, adjoining $a^{-1}$ makes $t=z/a$ available, so the fibre is exactly the scaled twisted cubic of step [](#s2){.pf-ref}.
 Hence $J$ is the scheme-theoretic closure of the family over $a\ne0$.
+
 :::
 
-<1>4. The family
+:::
+
+::: {.pf-step #s4}
+
+The family
 $$
 \mathcal X=\Spec B\longrightarrow\AA_a^1
 $$
 is flat.
 
-::: {.proof}
+::: pf-proof
+
 The ring $B$ is a subring of the domain $k[a,t]$ containing $k[a]$.
 Hence $B$ is torsion-free as a $k[a]$-module.
 The ring $k[a]$ is a principal ideal domain, and every torsion-free module over a principal ideal domain is flat.
 Therefore $B$ is flat over $k[a]$.
 
 Thus the closed family defined by $J$ is the flat extension prescribed in III.9.8.3--9.8.4.
+
 :::
 
-<1>5. The special fibre at $a=0$ has ideal
+:::
+
+::: {.pf-step #s5}
+
+The special fibre at $a=0$ has ideal
 $$
 \boxed{
 J_0=(x^2-y^3,\ z^2,\ yz,\ xz)\subseteq k[x,y,z]}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The special fibre is obtained by tensoring with $k[a]/(a)$, equivalently by adding $a$ to the total ideal and then setting $a=0$.
 The four generators of $J$ become
 $$
 x^2-y^3,\qquad z^2,\qquad yz,\qquad xz,
 $$
 which gives the displayed ideal.
+
 :::
 
-<1>6. The support of the special fibre is the cuspidal cubic in the plane $z=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The support of the special fibre is the cuspidal cubic in the plane $z=0$.
+
+::: pf-proof
+
 The radical of $J_0$ is
 $$
 \sqrt{J_0}=(z,x^2-y^3).
@@ -167,19 +202,25 @@ Therefore
 $$
 |X_0|=V(z,x^2-y^3),
 $$
-which is exactly the projected cuspidal cubic of step <1>1.
+which is exactly the projected cuspidal cubic of step [](#s1){.pf-ref}.
+
 :::
 
-<1>7. The special fibre has an embedded associated point at the cusp $(0,0,0)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The special fibre has an embedded associated point at the cusp $(0,0,0)$.
+
+::: pf-proof
+
 Let
 $$
 A_0=k[x,y,z]/J_0
 $$
 and denote residue classes by the same letters.
 The element $z\in A_0$ is nonzero.
-Indeed, the normal form of step <1>3 makes the class of $z$ a $k[a]$-basis element independent from the classes $y^j,xy^j$.
+Indeed, the normal form of step [](#s3){.pf-ref} makes the class of $z$ a $k[a]$-basis element independent from the classes $y^j,xy^j$.
 If $z$ belonged to $aB$, comparison of the coefficient of that basis element would give $1\in a,k[a]$, which is impossible.
 Thus its image in $B/aB=A_0$ is nonzero.
 The special-fibre relations give
@@ -210,11 +251,17 @@ $$
 Therefore $\mathfrak m$ is an embedded associated prime.
 Its closed point is precisely the cusp at the origin.
 So the special fibre is the cuspidal cubic together with an embedded point at its cusp.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 construct the flat degeneration, steps <1>5--<1>6 identify its special-fibre support with the cuspidal cubic, and step <1>7 proves that the cusp is an embedded associated point.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} construct the flat degeneration, steps [](#s5){.pf-ref} and [](#s6){.pf-ref} identify its special-fibre support with the cuspidal cubic, and step [](#s7){.pf-ref} proves that the cusp is an embedded associated point.
+
+:::
+
+:::
+
 :::

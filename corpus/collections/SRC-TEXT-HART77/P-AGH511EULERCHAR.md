@@ -57,13 +57,18 @@ $$
 \Phi(C,D)=C\cdot D.
 $$
 
-<1>1. Let $E\subseteq X$ be a nonsingular irreducible curve.  For arbitrary
+::: pf
+
+::: {.pf-step #s1}
+
+Let $E\subseteq X$ be a nonsingular irreducible curve.  For arbitrary
 divisors $A,D$ on $X$,
 $$
 \Phi(A+E,D)-\Phi(A,D)=E\cdot D.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $E$ is an effective Cartier divisor on the nonsingular surface $X$,
 there are exact sequences
 $$
@@ -122,15 +127,21 @@ $$
 \deg_E\OO_E(D)=E\cdot D.
 $$
 This proves the claim.
+
 :::
 
-<1>2. Every divisor $C$ is linearly equivalent to
+:::
+
+::: {.pf-step #s2}
+
+Every divisor $C$ is linearly equivalent to
 $$
 P-Q
 $$
 for nonsingular irreducible effective divisors $P,Q$.
 
-::: {.proof}
+::: pf-proof
+
 Choose a very ample divisor $H$ on $X$.  By the ample/very-ample properties
 of [[P-AGH275AMPLEPROPS|Exercise II.7.5]], the sheaf
 $$
@@ -170,15 +181,21 @@ Thus $P$ and $Q$ are nonsingular irreducible effective divisors, and
 $$
 P-Q\sim C.
 $$
+
 :::
 
-<1>3. For the divisor $Q$ of step <1>2,
+:::
+
+::: {.pf-step #s3}
+
+For the divisor $Q$ of step [](#s2){.pf-ref},
 $$
 \Phi(-Q,D)=-Q\cdot D.
 $$
 
-::: {.proof}
-Apply step <1>1 with
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} with
 $$
 A=-Q,
 \qquad
@@ -196,15 +213,21 @@ Hence
 $$
 \Phi(-Q,D)=-Q\cdot D.
 $$
+
 :::
 
-<1>4. For arbitrary divisors $C,D$,
+:::
+
+::: {.pf-step #s4}
+
+For arbitrary divisors $C,D$,
 $$
 \Phi(C,D)=C\cdot D.
 $$
 
-::: {.proof}
-Choose $P,Q$ as in step <1>2, so
+::: pf-proof
+
+Choose $P,Q$ as in step [](#s2){.pf-ref}, so
 $$
 C\sim P-Q.
 $$
@@ -212,7 +235,7 @@ The expression $\Phi(C,D)$ depends only on the invertible sheaves associated
 to the divisor classes, and the intersection pairing depends only on linear
 equivalence.  Thus it is enough to compute with $P-Q$.
 
-Apply step <1>1 with
+Apply step [](#s1){.pf-ref} with
 $$
 A=-Q,
 \qquad
@@ -222,7 +245,7 @@ Then
 $$
 \Phi(P-Q,D)-\Phi(-Q,D)=P\cdot D.
 $$
-Using step <1>3,
+Using step [](#s3){.pf-ref},
 $$
 \Phi(P-Q,D)
 =
@@ -232,18 +255,20 @@ P\cdot D-Q\cdot D
 =
 C\cdot D.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 For the line bundles
 $$
 \mathcal L=\OO_X(C),
 \qquad
 \mathcal M=\OO_X(D),
 $$
-step <1>4 reads
+step [](#s4){.pf-ref} reads
 $$
 C\cdot D
 =
@@ -253,5 +278,9 @@ C\cdot D
 +\chi(\mathcal L^{-1}\tensor\mathcal M^{-1}),
 $$
 which is exactly the desired formula.
+
 :::
+
+:::
+
 :::

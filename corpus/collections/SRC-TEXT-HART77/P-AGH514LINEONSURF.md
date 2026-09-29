@@ -44,13 +44,18 @@ $$
 L=V(x,y)\subseteq\PP^3.
 $$
 
-<1>1. The canonical class of $X$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The canonical class of $X$ is
 $$
 K_X=(d-4)H,
 $$
 and $H\cdot C=1$.
 
-::: {.proof}
+::: pf-proof
+
 Since $X\subseteq\PP^3$ is a nonsingular hypersurface of degree $d$, hypersurface
 adjunction gives
 $$
@@ -61,14 +66,20 @@ class is one. Hence
 $$
 H\cdot C=1.
 $$
+
 :::
 
-<1>2. The self-intersection of $C$ is
+:::
+
+::: {.pf-step #s2}
+
+The self-intersection of $C$ is
 $$
 \boxed{C^2=2-d}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The curve $C\cong\PP^1$ has genus zero. The surface adjunction formula
 [[T-SRFADJ]] therefore gives
 $$
@@ -78,7 +89,7 @@ $$
 =
 C\cdot(C+K_X).
 $$
-Using step <1>1,
+Using step [](#s1){.pf-ref},
 $$
 -2
 =
@@ -91,9 +102,14 @@ $$
 C^2=2-d.
 $$
 This proves part (a).
+
 :::
 
-<1>3. For every $d\geq1$, define
+:::
+
+::: {.pf-step #s3}
+
+For every $d\geq1$, define
 $$
 \boxed{
 X_d=
@@ -104,7 +120,8 @@ V\!\left(xz^{d-1}+yw^{d-1}+x^d+y^d\right), & d\geq2.
 $$
 Then $X_d$ is a degree-$d$ surface containing $L$.
 
-::: {.proof}
+::: pf-proof
+
 For $d=1$, $X_1=V(x)$ is a plane, hence has degree one, and it contains
 $L=V(x,y)$.
 
@@ -117,11 +134,17 @@ hypersurface. On $L$ one has $x=y=0$, hence $F_d=0$. Thus
 $$
 L\subseteq X_d.
 $$
+
 :::
 
-<1>4. For every $d\geq1$, the surface $X_d$ in step <1>3 is nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+For every $d\geq1$, the surface $X_d$ in step [](#s3){.pf-ref} is nonsingular.
+
+::: pf-proof
+
 The case $d=1$ is immediate because $X_1$ is a plane.
 
 Let $d\geq2$. The first partial derivatives of $F_d$ are
@@ -160,12 +183,18 @@ $$
 This is impossible for a point of $\PP^3$. Hence the gradient of $F_d$ never
 vanishes at a projective point, so the projective Jacobian criterion
 [[P-AGH58JACOBIANRANK]] shows that $X_d$ is nonsingular.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part (a). Steps <1>3--<1>4 construct, for every $d\geq1$, a
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a). Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} construct, for every $d\geq1$, a
 nonsingular degree-$d$ surface containing the line $x=y=0$, proving part (b).
+
 :::
+
+:::
+
 :::

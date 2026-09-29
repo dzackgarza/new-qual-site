@@ -31,29 +31,53 @@ $$
 :::
 
 ::: {.solution}
-<1>1. For $x \in (-1, 1)$, $f_n(x) \to f(x) = \dfrac{x}{(1-x)^2}$.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+For $x \in (-1, 1)$, $f_n(x) \to f(x) = \dfrac{x}{(1-x)^2}$.
+
+::: pf-proof
+
 For $\abs{x} < 1$, differentiating the geometric series $\sum_{k \ge 0} x^k = \frac{1}{1-x}$ term by term gives $\sum_{k \ge 1} k x^{k-1} = \frac{1}{(1-x)^2}$; multiply by $x$.
+
 :::
 
-<1>2. (a) $f_n \to f$ uniformly on every compact $K \subseteq (-1, 1)$, and $f$ is continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+(a) $f_n \to f$ uniformly on every compact $K \subseteq (-1, 1)$, and $f$ is continuous.
+
+::: pf-proof
+
 Since $K$ is compact and $\abs{x} < 1$ on $K$, $r = \max_{x \in K} \abs{x} < 1$. For $x \in K$,
 $$\abs{f(x) - f_n(x)} = \abs{\sum_{k=n+1}^\infty k x^k} \le \sum_{k=n+1}^\infty k r^k.$$
 The series $\sum_k k r^k$ converges by the ratio test, since $\frac{(k+1) r^{k+1}}{k r^k} \to r < 1$. So its tails tend to $0$, and $\sup_{x \in K} \abs{f(x) - f_n(x)} \to 0$. Each $f_n$ is a polynomial, hence continuous, and $f$ is continuous on each compact $K$ as a uniform limit of continuous functions. Every point of $(-1, 1)$ has a compact neighborhood $[-r, r]$ in $(-1, 1)$, so $f$ is continuous.
+
 :::
 
-<1>3. (b) $(f_n)$ does not converge in the uniform topology.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+(b) $(f_n)$ does not converge in the uniform topology.
+
+::: pf-proof
+
 Convergence in the uniform topology implies pointwise convergence, so a uniform limit would equal $f$. For fixed $n$, as $x \to 1^-$, $f_n(x) \to n(n+1)/2$ while $f(x) \to +\infty$. Hence $\sup_{x \in (-1, 1)} \abs{f(x) - f_n(x)} = \infty$, and the uniform distance $\bar{\rho}(f_n, f) = 1$ for every $n$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3 prove parts (a) and (b).
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a) and (b).
+
+:::
+
+:::
+
 :::

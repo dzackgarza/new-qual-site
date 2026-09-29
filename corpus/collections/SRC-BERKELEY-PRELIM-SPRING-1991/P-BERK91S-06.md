@@ -43,9 +43,14 @@ G(s)\coloneqq\int_1^s t g(t)\,dt,
 \Phi(r)\coloneqq G(\norm{r}).
 $$
 
-<1>1. The function $\Phi$ is smooth on $U$ and $\nabla\Phi=F$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The function $\Phi$ is smooth on $U$ and $\nabla\Phi=F$.
+
+::: pf-proof
+
 The fundamental theorem of calculus gives $G'(s)=s g(s)$ for $s>0$.
 Since $g$ is smooth, so is $G$. The Euclidean norm is smooth on $U$,
 so $\Phi$ is smooth there. For $r=(r_1,r_2,r_3)\in U$ and $1\le j\le3$,
@@ -57,13 +62,19 @@ $$
 =g(\norm{r})r_j.
 $$
 These are the components of $F(r)$, proving $\nabla\Phi(r)=F(r)$.
+
 :::
 
-<1>2. For every smooth closed path $C$ in $U$, $\int_C F\cdot ds=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For every smooth closed path $C$ in $U$, $\int_C F\cdot ds=0$.
+
+::: pf-proof
+
 Let $\gamma:[a,b]\to U$ parametrize $C$, with $\gamma(a)=\gamma(b)$.
-By step <1>1 and the chain rule,
+By step [](#s1){.pf-ref} and the chain rule,
 $$
 \begin{aligned}
 \int_C F\cdot ds
@@ -73,12 +84,18 @@ $$
 &=0.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves the required vanishing for every smooth closed path
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the required vanishing for every smooth closed path
 avoiding the origin.
+
 :::
+
+:::
+
 :::

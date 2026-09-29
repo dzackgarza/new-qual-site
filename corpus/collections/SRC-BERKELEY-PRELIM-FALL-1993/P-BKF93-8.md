@@ -32,27 +32,38 @@ for some positive integer $k$, then $A$ is diagonalizable.
 ::: {.solution}
 Let $m_A(t)$ denote the minimal polynomial of $A$.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 m_A(t)\mid t^k-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis $A^k=I$ says
 $$
 (A^k-I)=0,
 $$
 so the polynomial $t^k-1$ annihilates $A$. By the defining property of the
 minimal polynomial, $m_A(t)$ divides every polynomial that annihilates $A$.
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: {.pf-step #s2}
+
+The polynomial
 $$
 t^k-1
 $$
 has no repeated roots in $\CC$.
 
-::: {.proof}
+::: pf-proof
+
 Its derivative is
 $$
 kt^{k-1}.
@@ -60,28 +71,46 @@ $$
 A repeated root would be a common root of $t^k-1$ and $kt^{k-1}$. Since the
 base field has characteristic zero, the only root of $kt^{k-1}$ is $0$, while
 $0$ is not a root of $t^k-1$. Hence no repeated root exists.
+
 :::
 
-<1>3. The minimal polynomial $m_A(t)$ splits over $\CC$ into distinct linear
+:::
+
+::: {.pf-step #s3}
+
+The minimal polynomial $m_A(t)$ splits over $\CC$ into distinct linear
 factors.
 
-::: {.proof}
-The polynomial $t^k-1$ splits completely over $\CC$, and by step <1>2 its
-linear factors are distinct. Step <1>1 shows that $m_A(t)$ is a divisor of
+::: pf-proof
+
+The polynomial $t^k-1$ splits completely over $\CC$, and by step [](#s2){.pf-ref} its
+linear factors are distinct. Step [](#s1){.pf-ref} shows that $m_A(t)$ is a divisor of
 that polynomial, so $m_A(t)$ also splits and has no repeated root.
+
 :::
 
-<1>4. The matrix $A$ is diagonalizable over $\CC$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The matrix $A$ is diagonalizable over $\CC$.
+
+::: pf-proof
+
 A complex matrix is diagonalizable if and only if its minimal polynomial
-splits into distinct linear factors. Step <1>3 verifies this criterion for
+splits into distinct linear factors. Step [](#s3){.pf-ref} verifies this criterion for
 $A$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

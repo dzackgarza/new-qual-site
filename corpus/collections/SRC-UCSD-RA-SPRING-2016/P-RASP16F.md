@@ -32,10 +32,16 @@ Suppose $f_k \in L^p(\mu)$ ($k = 1, 2, \ldots$) are such that $\sup_{k \geq 1} \
 Prove that $f \in L^p(\mu)$ and $f_k \to f$ in $L^q(\mu)$ for any $q \in (1, p)$.
 :::
 
-
 ::: {.solution}
-<1>1. Show that the limit belongs to \(L^p\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that the limit belongs to \(L^p\).
+
+::: pf-proof
+
 Let
 \[
 M:=\sup_k\|f_k\|_p<\infty.
@@ -54,10 +60,17 @@ Hence
 \[
 \boxed{f\in L^p(\mu),\qquad \|f\|_p\le M.}
 \]
+
 :::
 
-<1>2. Obtain a uniform \(L^p\) bound for the differences.
-::: {.proof}
+:::
+
+::: pf-step
+
+Obtain a uniform \(L^p\) bound for the differences.
+
+::: pf-proof
+
 Set
 \[
 h_k:=f_k-f.
@@ -72,10 +85,17 @@ and, by the triangle inequality,
 \le \|f_k\|_p+\|f\|_p
 \le 2M.
 \]
+
 :::
 
-<1>3. Interpolate between \(L^1\) and \(L^p\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Interpolate between \(L^1\) and \(L^p\).
+
+::: pf-proof
+
 Fix \(q\in(1,p)\). Choose \(\theta\in(0,1)\) so that
 \[
 \frac1q=\frac\theta1+\frac{1-\theta}{p}.
@@ -108,5 +128,11 @@ Therefore
 \[
 \boxed{f_k\to f\text{ in }L^q(\mu)\text{ for every }1<q<p.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

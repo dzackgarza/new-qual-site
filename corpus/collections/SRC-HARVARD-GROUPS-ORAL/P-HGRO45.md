@@ -43,8 +43,14 @@ M_{12} & 5\quad(n=12).
 \end{array}
 \]
 
-<1>1. The symmetric and alternating examples are sharp in the stated degrees.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The symmetric and alternating examples are sharp in the stated degrees.
+
+::: pf-proof
+
 An element of $S_n$ is uniquely determined by the images of $n-1$ distinct
 points, since the last image is forced. Hence the natural action of $S_n$ is
 sharply $(n-1)$-transitive, and therefore also sharply $n$-transitive.
@@ -53,10 +59,17 @@ The group $A_n$ is $(n-2)$-transitive. Once the images of $n-2$ points are
 specified, there are two permutations in $S_n$ extending that partial map, and
 exactly one is even. Hence the extension in $A_n$ is unique, so the action is
 sharply $(n-2)$-transitive.
+
 :::
 
-<1>2. The exceptional Mathieu actions are sharply $4$- and $5$-transitive.
-::: {.proof}
+:::
+
+::: pf-step
+
+The exceptional Mathieu actions are sharply $4$- and $5$-transitive.
+
+::: pf-proof
+
 The natural action of $M_{11}$ has degree $11$ and
 \[
 |M_{11}|=11\cdot10\cdot9\cdot8,
@@ -70,13 +83,26 @@ Likewise the natural action of $M_{12}$ has degree $12$ and
 \]
 the number of ordered $5$-tuples of distinct points. Its $5$-transitivity is
 therefore sharp.
+
 :::
 
-<1>3. There are no further finite examples for $k\ge4$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There are no further finite examples for $k\ge4$.
+
+::: pf-proof
+
 This is the classical Jordan classification of sharply multiply transitive
 finite permutation groups: outside the symmetric and alternating families, the
 only possibilities are $M_{11}$ in degree $11$ with $k=4$ and $M_{12}$ in
 degree $12$ with $k=5$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,10 +39,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Determine the $2$-primary part in part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Determine the $2$-primary part in part (a).
+
+::: pf-proof
+
 Let $G_{(2)}$ be the $2$-primary component. Since its order is $2^3$, its
 cyclic decomposition corresponds to a partition of $3$.
 
@@ -71,10 +77,17 @@ Hence
 $$
 \boxed{G_{(2)}\cong\mathbb Z/4\oplus\mathbb Z/2.}
 $$
+
 :::
 
-<1>2. Determine the $3$-primary part in part (a).
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the $3$-primary part in part (a).
+
+::: pf-proof
+
 Let $G_{(3)}$ be the $3$-primary component. Its order is $3^4$. As above,
 $$
 \dim_{\mathbb F_3}\ker(3)
@@ -95,10 +108,17 @@ Therefore
 $$
 \boxed{G_{(3)}\cong\mathbb Z/9\oplus\mathbb Z/9.}
 $$
+
 :::
 
-<1>3. Conclude part (a).
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude part (a).
+
+::: pf-proof
+
 Primary decomposition gives the unique group
 $$
 \boxed{
@@ -108,10 +128,17 @@ G\cong
 $$
 It has the required order and the kernel conditions are immediate on each
 cyclic factor.
+
 :::
 
-<1>4. Determine the Jordan blocks at eigenvalue $2$ in part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the Jordan blocks at eigenvalue $2$ in part (b).
+
+::: pf-proof
+
 Put
 $$
 N_2=A-2I
@@ -141,10 +168,17 @@ Hence the $2$-primary Jordan part is
 $$
 J_2(2)\oplus J_1(2).
 $$
+
 :::
 
-<1>5. Determine the Jordan blocks at eigenvalue $3$ in part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the Jordan blocks at eigenvalue $3$ in part (b).
+
+::: pf-proof
+
 On the generalized $3$-eigenspace, the total dimension is $4$. The hypotheses
 say there are two Jordan blocks and
 $$
@@ -155,19 +189,33 @@ size $2$. Thus the $3$-primary Jordan part is
 $$
 J_2(3)\oplus J_2(3).
 $$
+
 :::
 
-<1>6. Conclude part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude part (b).
+
+::: pf-proof
+
 The unique Jordan matrix is
 $$
 \boxed{
 J_2(2)\oplus J_1(2)\oplus J_2(3)\oplus J_2(3).}
 $$
+
 :::
 
-<1>7. Classify the groups in part (c).
-::: {.proof}
+:::
+
+::: pf-step
+
+Classify the groups in part (c).
+
+::: pf-proof
+
 For a finite abelian group, the positive generator of its annihilator ideal is
 its exponent. Thus the hypothesis says that $G$ has order and exponent both
 $$
@@ -192,10 +240,17 @@ Therefore the unique group is
 $$
 \boxed{G\cong\mathbb Z/648.}
 $$
+
 :::
 
-<1>8. Classify the matrices in part (d).
-::: {.proof}
+:::
+
+::: pf-step
+
+Classify the matrices in part (d).
+
+::: pf-proof
+
 The minimal polynomial
 $$
 (t-2)^3(t-3)^4
@@ -210,5 +265,11 @@ Thus the unique Jordan matrix is
 $$
 \boxed{J_3(2)\oplus J_4(3).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

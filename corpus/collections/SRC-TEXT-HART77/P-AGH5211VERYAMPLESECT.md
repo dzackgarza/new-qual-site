@@ -52,7 +52,11 @@ L=\OO_X(C_0+\mfb f).
 $$
 For a divisor $A$ on $C$, write $Af=\pi^*A$.
 
-<1>1. If $\mfb-A$ is nonspecial, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $\mfb-A$ is nonspecial, then
 $$
 h^0\bigl(X,L(-Af)\bigr)
 =
@@ -61,7 +65,8 @@ h^0\bigl(C,\OO_C(\mfb-A)\bigr)
 h^0\bigl(C,\OO_C(\mfb+\mfe-A)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The normalized section $C_0$ gives the exact sequence
 $$
 0
@@ -93,14 +98,20 @@ $$
 because $\pi_*\OO_X=\OO_C$ and $R^1\pi_*\OO_X=0$.
 The nonspeciality hypothesis says that the $H^1$ group on the left term
 vanishes. Taking cohomology therefore gives the displayed sum of dimensions.
+
 :::
 
-<1>2. Under the hypotheses of part (a), for every point $P\in C$,
+:::
+
+::: {.pf-step #s2}
+
+Under the hypotheses of part (a), for every point $P\in C$,
 $$
 h^0\bigl(X,L(-Pf)\bigr)=h^0(X,L)-2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $|\mfb|$ is base-point free,
 $$
 h^0(\mfb-P)=h^0(\mfb)-1.
@@ -114,23 +125,29 @@ nonspecial, its long exact sequence gives
 $$
 H^1(C,\OO_C(\mfb-P))=0.
 $$
-Thus step <1>1 applies both to $A=0$ and to $A=P$.
+Thus step [](#s1){.pf-ref} applies both to $A=0$ and to $A=P$.
 
 Because $|\mfb+\mfe|$ is also base-point free,
 $$
 h^0(\mfb+\mfe-P)=h^0(\mfb+\mfe)-1.
 $$
-Subtracting the two formulas from step <1>1 therefore gives
+Subtracting the two formulas from step [](#s1){.pf-ref} therefore gives
 $$
 h^0(X,L)-h^0\bigl(X,L(-Pf)\bigr)=2.
 $$
+
 :::
 
-<1>3. The complete linear system $|L|$ restricts to the complete system
+:::
+
+::: {.pf-step #s3}
+
+The complete linear system $|L|$ restricts to the complete system
 $|\OO_{\PP^1}(1)|$ on every fibre of $\pi$. In particular, $|L|$ has no
 base points.
 
-::: {.proof}
+::: pf-proof
+
 For the fibre
 $$
 F_P=\pi^{-1}(P)\cong\PP^1,
@@ -144,7 +161,7 @@ $$
 0\to L(-Pf)\to L\to L|_{F_P}\to0
 $$
 shows that the kernel of the restriction map on global sections is
-$H^0(X,L(-Pf))$. By step <1>2 the image has dimension $2$, which equals
+$H^0(X,L(-Pf))$. By step [](#s2){.pf-ref} the image has dimension $2$, which equals
 $$
 h^0(\PP^1,\OO(1)).
 $$
@@ -156,20 +173,26 @@ for every $P$.
 
 The system $|\OO_{F_P}(1)|$ has no base point. Since every point of $X$ lies
 on some fibre, $|L|$ has no base points on $X$.
+
 :::
 
-<1>4. Under the hypotheses of part (a), there is a member
+:::
+
+::: {.pf-step #s4}
+
+Under the hypotheses of part (a), there is a member
 $$
 D\in|C_0+\mfb f|
 $$
 which is a section of $\pi$.
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 V=H^0(X,L).
 $$
-By step <1>3, for each $P\in C$ the kernel of
+By step [](#s3){.pf-ref}, for each $P\in C$ the kernel of
 $$
 V\longrightarrow H^0(F_P,\OO_{F_P}(1))
 $$
@@ -201,14 +224,20 @@ $$
 $$
 is therefore finite of degree one and birational. Since $C$ is nonsingular,
 hence normal, a finite birational map to $C$ is an isomorphism. Thus $D$ is
-a section of the ruling. Together with step <1>3 this proves part (a).
+a section of the ruling. Together with step [](#s3){.pf-ref} this proves part (a).
+
 :::
 
-<1>5. Assume the hypotheses of part (b). Then $\mfb$ is nonspecial, and
+:::
+
+::: {.pf-step #s5}
+
+Assume the hypotheses of part (b). Then $\mfb$ is nonspecial, and
 part (a) applies; in particular $L$ is base-point free and restricts
 surjectively to $\OO_{\PP^1}(1)$ on every fibre.
 
-::: {.proof}
+::: pf-proof
+
 Fix any point $P\in C$. By hypothesis
 $$
 H^1(C,\OO_C(\mfb-P))=0.
@@ -223,10 +252,15 @@ H^1(C,\OO_C(\mfb))=0.
 $$
 Thus $\mfb$ is nonspecial. The divisors $\mfb$ and $\mfb+\mfe$ are very
 ample, hence base-point free, so all hypotheses of part (a) hold. Steps
-<1>2--<1>4 therefore apply.
+[](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} therefore apply.
+
 :::
 
-<1>6. Let $A$ be any effective divisor of degree $2$ on $C$, including a
+:::
+
+::: {.pf-step #s6}
+
+Let $A$ be any effective divisor of degree $2$ on $C$, including a
 double point $2P$. Then both
 $$
 \mfb-A
@@ -235,7 +269,8 @@ $$
 $$
 are nonspecial.
 
-::: {.proof}
+::: pf-proof
+
 Choose a point $P$ contained in $A$, and write
 $$
 A=P+Q,
@@ -269,9 +304,14 @@ assumed nonspeciality of $\mfb+\mfe-P$, gives
 $$
 H^1(C,\OO_C(\mfb+\mfe-A))=0.
 $$
+
 :::
 
-<1>7. For every effective degree-two divisor $A$ on $C$, restriction is
+:::
+
+::: {.pf-step #s7}
+
+For every effective degree-two divisor $A$ on $C$, restriction is
 surjective:
 $$
 H^0(X,L)
@@ -279,12 +319,13 @@ H^0(X,L)
 H^0\bigl(\pi^{-1}(A),L|_{\pi^{-1}(A)}\bigr).
 $$
 
-::: {.proof}
-Apply the normalized-section exact sequence from step <1>1 to
+::: pf-proof
+
+Apply the normalized-section exact sequence from step [](#s1){.pf-ref} to
 $$
 L(-Af)=\OO_X(C_0+(\mfb-A)f).
 $$
-Step <1>6 makes the $H^1$ groups of both the left term
+Step [](#s6){.pf-ref} makes the $H^1$ groups of both the left term
 $$
 \OO_X((\mfb-A)f)
 $$
@@ -305,15 +346,21 @@ $$
 \to0.
 $$
 The vanishing just proved makes the restriction map on $H^0$ surjective.
+
 :::
 
-<1>8. The line bundle $L$ separates every zero-dimensional subscheme of
+:::
+
+::: {.pf-step #s8}
+
+The line bundle $L$ separates every zero-dimensional subscheme of
 $X$ of length $2$.
 
-::: {.proof}
+::: pf-proof
+
 Let $Z\subset X$ have length $2$.
 
-If $Z$ is contained in one fibre $F_P$, step <1>5 gives a surjection
+If $Z$ is contained in one fibre $F_P$, step [](#s5){.pf-ref} gives a surjection
 $$
 H^0(X,L)\twoheadrightarrow H^0(F_P,\OO_{F_P}(1)).
 $$
@@ -331,7 +378,7 @@ $$
 injective. Both sides have length $2$, so this map is an isomorphism and
 $Z\cong A$.
 
-Step <1>7 gives
+Step [](#s7){.pf-ref} gives
 $$
 H^0(X,L)\twoheadrightarrow
 H^0\bigl(\pi^{-1}(A),L|_{\pi^{-1}(A)}\bigr).
@@ -343,24 +390,36 @@ to a quotient of the rank-two bundle on $A$ by an invertible sheaf. Since
 $A$ is affine, taking global sections of that quotient is surjective. Thus
 the restriction map from $H^0(\pi^{-1}(A),L)$ to $H^0(Z,L|_Z)$ is
 surjective, and so is the composite from $H^0(X,L)$.
+
 :::
 
-<1>9. Under the hypotheses of part (b),
+:::
+
+::: {.pf-step #s9}
+
+Under the hypotheses of part (b),
 $$
 \boxed{C_0+\mfb f\text{ is very ample}.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 A line bundle on a projective scheme is very ample exactly when its complete
 linear system separates every zero-dimensional subscheme of length $2$;
 equivalently, it separates distinct points and tangent vectors, as in
-[[T-DIVMAPPN]]. Step <1>8 proves this criterion for $L$. Hence $L$ is very
+[[T-DIVMAPPN]]. Step [](#s8){.pf-ref} proves this criterion for $L$. Hence $L$ is very
 ample, proving part (b).
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), and steps <1>5--<1>9 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), and steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

@@ -49,7 +49,11 @@ Indeed, on $U_i\cap U_j$ one has
 =\phi_{ji}\circ\phi_{ij}.
 \]
 
-<1>1. For every open set $V\subseteq X$, define
+::: pf
+
+::: {.pf-step #s1}
+
+For every open set $V\subseteq X$, define
 \[
 \mathcal F(V)
 \]
@@ -68,12 +72,21 @@ such that for every pair $i,j$,
 s_j|_{V\cap U_i\cap U_j}.
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the natural compatibility condition saying that the local sections $s_i$ describe the same putative global section after the prescribed identifications of the sheaves on overlaps.
+
 :::
 
-<1>2. Componentwise restriction makes $\mathcal F$ a presheaf on $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Componentwise restriction makes $\mathcal F$ a presheaf on $X$.
+
+::: pf-proof
+
 Let $W\subseteq V$ and let
 \[
 s=(s_i)_i\in\mathcal F(V).
@@ -85,7 +98,7 @@ s|_W
 \bigl(s_i|_{W\cap U_i}\bigr)_i.
 \]
 
-For every $i,j$, restriction of the compatibility equation from <1>1 gives
+For every $i,j$, restriction of the compatibility equation from step [](#s1){.pf-ref} gives
 \[
 \phi_{ij}
 \bigl(s_i|_{W\cap U_i\cap U_j}\bigr)
@@ -95,10 +108,17 @@ s_j|_{W\cap U_i\cap U_j},
 because $\phi_{ij}$ is a morphism of sheaves and hence commutes with restrictions.  Thus the restricted tuple lies in $\mathcal F(W)$.
 
 Identity and composition laws hold componentwise, so these maps define a presheaf.
+
 :::
 
-<1>3. The presheaf $\mathcal F$ satisfies the sheaf uniqueness axiom.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The presheaf $\mathcal F$ satisfies the sheaf uniqueness axiom.
+
+::: pf-proof
+
 Let
 \[
 V=\bigcup_\alpha V_\alpha
@@ -122,10 +142,17 @@ for every $\alpha$.  The opens $V_\alpha\cap U_i$ cover $V\cap U_i$, and $\mathc
 s_i=t_i.
 \]
 This holds for every $i$, hence $s=t$.
+
 :::
 
-<1>4. The presheaf $\mathcal F$ satisfies the sheaf gluing axiom.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The presheaf $\mathcal F$ satisfies the sheaf gluing axiom.
+
+::: pf-proof
+
 Let
 \[
 V=\bigcup_\alpha V_\alpha
@@ -154,7 +181,7 @@ We must check that the tuple
 \[
 s=(s_i)_i
 \]
-satisfies the compatibility condition of <1>1.  Fix $i,j$.  On every open
+satisfies the compatibility condition of step [](#s1){.pf-ref}.  Fix $i,j$.  On every open
 \[
 V_\alpha\cap U_i\cap U_j,
 \]
@@ -181,22 +208,36 @@ on the whole overlap.  Thus
 s\in\mathcal F(V).
 \]
 
-By construction it restricts to every $s^{(\alpha)}$, and uniqueness follows from <1>3.
+By construction it restricts to every $s^{(\alpha)}$, and uniqueness follows from step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Hence $\mathcal F$ is a sheaf on $X$.
-::: {.proof}
-Steps <1>2--<1>4 give the presheaf structure and both sheaf axioms.
 :::
 
-<1>6. For every $i$, projection to the $i$th component defines a morphism of sheaves on $U_i$,
+::: {.pf-step #s5}
+
+Hence $\mathcal F$ is a sheaf on $X$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the presheaf structure and both sheaf axioms.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+For every $i$, projection to the $i$th component defines a morphism of sheaves on $U_i$,
 \[
 \psi_i:
 \mathcal F|_{U_i}
 \longrightarrow
 \mathcal F_i.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If
 \[
 V\subseteq U_i
@@ -210,10 +251,17 @@ define
 (\psi_i)_V(s)=s_i.
 \]
 These projections commute with restriction because restrictions in $\mathcal F$ are componentwise.
+
 :::
 
-<1>7. Each $\psi_i$ is an isomorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+Each $\psi_i$ is an isomorphism.
+
+::: pf-proof
+
 Fix
 \[
 V\subseteq U_i.
@@ -266,9 +314,14 @@ s_j
 \phi_{ij}(s_i)
 \]
 on $V\cap U_j$.  Thus the whole tuple is uniquely reconstructed from $s_i$, and the same construction is a left inverse.  Hence $(\psi_i)_V$ is bijective for every $V\subseteq U_i$, naturally in $V$, so $\psi_i$ is an isomorphism of sheaves.
+
 :::
 
-<1>8. On every overlap $U_i\cap U_j$, the local identifications satisfy
+:::
+
+::: {.pf-step #s8}
+
+On every overlap $U_i\cap U_j$, the local identifications satisfy
 \[
 \boxed{
 \psi_j
@@ -276,20 +329,29 @@ on $V\cap U_j$.  Thus the whole tuple is uniquely reconstructed from $s_i$, and 
 \phi_{ij}\circ\psi_i.
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a compatible tuple $s=(s_k)_k$, the defining condition of $\mathcal F$ gives
 \[
 s_j=\phi_{ij}(s_i)
 \]
 on the overlap.  Since $\psi_i$ and $\psi_j$ are the corresponding component projections, this is exactly the displayed identity.
+
 :::
 
-<1>9. The pair
+:::
+
+::: {.pf-step #s9}
+
+The pair
 \[
 (\mathcal F,\{\psi_i\})
 \]
 is unique up to a unique isomorphism compatible with all the $\psi_i$.
-::: {.proof}
+
+::: pf-proof
+
 Suppose $\mathcal G$ is another sheaf on $X$ with isomorphisms
 \[
 \chi_i:\mathcal G|_{U_i}\xrightarrow{\sim}\mathcal F_i
@@ -312,7 +374,7 @@ define
 \chi_i(t|_{V\cap U_i})
 \right)_i.
 \]
-The overlap condition on the $\chi_i$ says exactly that this tuple is compatible in the sense of <1>1.  Hence
+The overlap condition on the $\chi_i$ says exactly that this tuple is compatible in the sense of step [](#s1){.pf-ref}.  Hence
 \[
 \Theta_V(t)\in\mathcal F(V).
 \]
@@ -339,9 +401,14 @@ is another morphism compatible with all local identifications, then
 =\Theta|_{U_i}
 \]
 for every $i$.  Since the $U_i$ cover $X$, the two sheaf morphisms are equal.  Thus the compatible isomorphism is unique.
+
 :::
 
-<1>10. Therefore the sheaves $\mathcal F_i$ glue along the cocycle $\phi_{ij}$ to a sheaf $\mathcal F$ on $X$, uniquely up to the unique compatible isomorphism:
+:::
+
+::: {.pf-step #s10}
+
+Therefore the sheaves $\mathcal F_i$ glue along the cocycle $\phi_{ij}$ to a sheaf $\mathcal F$ on $X$, uniquely up to the unique compatible isomorphism:
 \[
 \boxed{
 \mathcal F|_{U_i}\cong\mathcal F_i,
@@ -349,12 +416,21 @@ for every $i$.  Since the $U_i$ cover $X$, the two sheaf morphisms are equal.  T
 \psi_j=\phi_{ij}\psi_i.
 }
 \]
-::: {.proof}
-Existence is <1>5--<1>8 and uniqueness is <1>9.
+
+::: pf-proof
+
+Existence is steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} and uniqueness is step [](#s9){.pf-ref}.
+
 :::
 
-<1>11. Q.E.D.
-::: {.proof}
-Step <1>10 is precisely the sheaf-gluing assertion of the exercise.
 :::
+
+::: pf-qed
+
+Step [](#s10){.pf-ref} is precisely the sheaf-gluing assertion of the exercise.
+
+:::
+
+:::
+
 :::

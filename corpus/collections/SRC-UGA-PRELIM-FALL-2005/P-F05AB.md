@@ -21,33 +21,75 @@ Find an invertible matrix $A$ and a diagonal matrix $B$ such that $\begin{pmatri
 :::
 
 ::: {.solution}
-<1>1. Let $M = \begin{pmatrix} 8 & 9 \\ -6 & -7 \end{pmatrix}$; its eigenvalues are $-1$ and $2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $M = \begin{pmatrix} 8 & 9 \\ -6 & -7 \end{pmatrix}$; its eigenvalues are $-1$ and $2$.
+
+::: pf-proof
+
 $\det(M - \lambda I) = (8-\lambda)(-7-\lambda) + 54 = \lambda^2 - \lambda - 2 = (\lambda + 1)(\lambda - 2)$.
+
 :::
 
-<1>2. An eigenvector for $\lambda = -1$ is $\begin{pmatrix} -1 \\ 1 \end{pmatrix}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+An eigenvector for $\lambda = -1$ is $\begin{pmatrix} -1 \\ 1 \end{pmatrix}$.
+
+::: pf-proof
+
 $M\begin{pmatrix} -1 \\ 1 \end{pmatrix} = \begin{pmatrix} -8 + 9 \\ 6 - 7 \end{pmatrix} = \begin{pmatrix} 1 \\ -1 \end{pmatrix} = -\begin{pmatrix} -1 \\ 1 \end{pmatrix}$.
+
 :::
 
-<1>3. An eigenvector for $\lambda = 2$ is $\begin{pmatrix} -3 \\ 2 \end{pmatrix}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+An eigenvector for $\lambda = 2$ is $\begin{pmatrix} -3 \\ 2 \end{pmatrix}$.
+
+::: pf-proof
+
 $M\begin{pmatrix} -3 \\ 2 \end{pmatrix} = \begin{pmatrix} -24 + 18 \\ 18 - 14 \end{pmatrix} = \begin{pmatrix} -6 \\ 4 \end{pmatrix} = 2\begin{pmatrix} -3 \\ 2 \end{pmatrix}$.
+
 :::
 
-<1>4. Let $A = \begin{pmatrix} -1 & -3 \\ 1 & 2 \end{pmatrix}$ (columns are the eigenvectors) and $B = \begin{pmatrix} -1 & 0 \\ 0 & 2 \end{pmatrix}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Let $A = \begin{pmatrix} -1 & -3 \\ 1 & 2 \end{pmatrix}$ (columns are the eigenvectors) and $B = \begin{pmatrix} -1 & 0 \\ 0 & 2 \end{pmatrix}$.
+
+::: pf-proof
+
 definition.
+
 :::
 
-<1>5. Then $M = A B A^{-1}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Then $M = A B A^{-1}$.
+
+::: pf-proof
+
 $A$ has the eigenvectors as columns, so $A^{-1} M A = B$, equivalently $M = A B A^{-1}$.
+
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
 :::

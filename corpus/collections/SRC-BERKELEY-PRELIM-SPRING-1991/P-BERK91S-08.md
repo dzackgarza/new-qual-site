@@ -43,9 +43,14 @@ Prove that
 Let $I_n$ be the identity matrix. For $\lambda\in\RR$, let
 $E_\lambda\coloneqq\ker(T-\lambda I_n)\subseteq\RR^n$.
 
-<1>1. For every $\lambda\in\RR$, $\dim E_\lambda\le1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For every $\lambda\in\RR$, $\dim E_\lambda\le1$.
+
+::: pf-proof
+
 Let $v=(v_1,\ldots,v_n)\in E_\lambda$. For $n=1$, the coordinate
 $v_1$ determines $v$. For $n\ge2$, the first row of $Tv=\lambda v$
 gives
@@ -65,21 +70,33 @@ E_\lambda\longrightarrow\RR,
 \qquad v\longmapsto v_1,
 $$
 is injective, and $\dim E_\lambda\le1$.
+
 :::
 
-<1>2. Part (a) holds: $\operatorname{rank}T\ge n-1$.
+:::
 
-::: {.proof}
-Taking $\lambda=0$ in step <1>1 gives $\dim\ker T\le1$.
+::: {.pf-step #s2}
+
+Part (a) holds: $\operatorname{rank}T\ge n-1$.
+
+::: pf-proof
+
+Taking $\lambda=0$ in step [](#s1){.pf-ref} gives $\dim\ker T\le1$.
 The rank-nullity theorem therefore yields
 $$
 \operatorname{rank}T=n-\dim\ker T\ge n-1.
 $$
+
 :::
 
-<1>3. Part (b) holds: $T$ has $n$ distinct eigenvalues.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Part (b) holds: $T$ has $n$ distinct eigenvalues.
+
+::: pf-proof
+
 Since $T$ is real and symmetric, the [[T-WQHMA|spectral theorem]]
 gives a basis of $\RR^n$ consisting of eigenvectors with real
 eigenvalues. Let $\lambda_1,\ldots,\lambda_m$ be its distinct
@@ -88,16 +105,22 @@ $$
 \RR^n=E_{\lambda_1}\oplus\cdots\oplus E_{\lambda_m}.
 $$
 Each $E_{\lambda_j}$ is nonzero and has dimension at most $1$ by
-step <1>1, so each has dimension $1$. Taking dimensions gives
+step [](#s1){.pf-ref}, so each has dimension $1$. Taking dimensions gives
 $$
 n=\sum_{j=1}^m\dim E_{\lambda_j}=m.
 $$
 Hence the number of distinct eigenvalues is $n$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3 prove parts (a) and (b), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a) and (b), respectively.
+
+:::
+
+:::
+
 :::

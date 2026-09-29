@@ -53,9 +53,14 @@ The matrix $J$ is not diagonalizable: its only eigenvalue is $0$, so a
 diagonalizable matrix similar to it would have to be the zero matrix,
 whereas $J\ne0$.
 
-<1>1. Statement 1 is false.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Statement 1 is false.
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -82,11 +87,17 @@ A+B
 =J,
 $$
 which is not diagonalizable.
+
 :::
 
-<1>2. Statement 2 is false.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Statement 2 is false.
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -117,11 +128,17 @@ AB
 =J,
 $$
 which is not diagonalizable.
+
 :::
 
-<1>3. Statement 3 is true.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Statement 3 is true.
+
+::: pf-proof
+
 If $A^2=A$, then
 $$
 A(A-I)=0.
@@ -133,30 +150,48 @@ $$
 This polynomial splits over $\CC$ and has no repeated root. Therefore
 the minimal polynomial of $A$ also splits with no repeated root, which
 is equivalent to diagonalizability.
+
 :::
 
-<1>4. Statement 4 is false.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Statement 4 is false.
+
+::: pf-proof
+
 Take $A=J$. Then
 $$
 A^2=0,
 $$
 which is diagonalizable, while $A=J$ itself is not diagonalizable.
+
 :::
 
-<1>5. Thus the answers are
+:::
+
+::: {.pf-step #s5}
+
+Thus the answers are
 $$
 \boxed{\text{false},\ \text{false},\ \text{true},\ \text{false}}.
 $$
 
-::: {.proof}
-This is exactly the content of steps <1>1--<1>4.
+::: pf-proof
+
+This is exactly the content of steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers all four parts.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} answers all four parts.
+
+:::
+
+:::
+
 :::

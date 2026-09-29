@@ -40,7 +40,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Every solution of
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every solution of
 $$
 g'=2g
 $$
@@ -49,7 +54,8 @@ $$
 \frac{d}{dx}\left(e^{-2x}g(x)\right)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the product rule,
 $$
 \begin{aligned}
@@ -64,9 +70,14 @@ e^{-2x}(g'(x)-2g(x))\\
 0.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The unique solution of
+:::
+
+::: {.pf-step #s2}
+
+The unique solution of
 $$
 g'=2g,
 \qquad
@@ -79,8 +90,9 @@ g(x)=ae^{2x}.
 }
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 e^{-2x}g(x)
 $$
@@ -94,15 +106,21 @@ g(x)=ae^{2x}.
 $$
 Conversely, direct differentiation verifies that this function satisfies
 both the differential equation and the initial condition.
+
 :::
 
-<1>3. Under the hypotheses of part (2),
+:::
+
+::: {.pf-step #s3}
+
+Under the hypotheses of part (2),
 $$
 f(x)\geq0
 $$
 for every $x\in[0,1]$.
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 0<x<1,
@@ -120,9 +138,14 @@ $$
 f(x)\geq0
 $$
 for every $x\in[0,1]$.
+
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #s4}
+
+Define
 $$
 h(x)=e^{-2x}f(x).
 $$
@@ -135,7 +158,8 @@ $$
 0<x<1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the product rule,
 $$
 \begin{aligned}
@@ -156,15 +180,21 @@ and positivity of $e^{-2x}$ give
 $$
 h'(x)\leq0.
 $$
+
 :::
 
-<1>5. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s5}
+
+For every $x\in[0,1]$,
 $$
 h(x)\leq0.
 $$
 
-::: {.proof}
-Step <1>4 shows that $h$ is nonincreasing. Also
+::: pf-proof
+
+Step [](#s4){.pf-ref} shows that $h$ is nonincreasing. Also
 $$
 h(0)
 =
@@ -177,28 +207,40 @@ $$
 h(x)\leq h(0)=0
 $$
 for every $x\in[0,1]$.
+
 :::
 
-<1>6. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s6}
+
+For every $x\in[0,1]$,
 $$
 f(x)\leq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 f(x)=e^{2x}h(x)
 $$
-and $e^{2x}>0$, step <1>5 gives
+and $e^{2x}>0$, step [](#s5){.pf-ref} gives
 $$
 f(x)\leq0.
 $$
+
 :::
 
-<1>7. The function $f$ is identically zero on $[0,1]$.
+:::
 
-::: {.proof}
-Steps <1>3 and <1>6 give
+::: {.pf-step #s7}
+
+The function $f$ is identically zero on $[0,1]$.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s6){.pf-ref} give
 $$
 0\leq f(x)\leq0
 $$
@@ -209,11 +251,17 @@ f(x)=0
 }
 $$
 for every $x\in[0,1]$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>2 solves part (1), and step <1>7 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} solves part (1), and step [](#s7){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

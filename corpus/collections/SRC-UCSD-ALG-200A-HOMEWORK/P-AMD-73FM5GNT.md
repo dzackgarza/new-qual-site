@@ -52,37 +52,65 @@ The handout states the hypothesis as ``all groups of order less than $60$ are no
 :::
 
 ::: {.solution}
-<1>1. We prove by strong induction on $|G|$ that every finite group $G$ of order less than $60$ is solvable.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+We prove by strong induction on $|G|$ that every finite group $G$ of order less than $60$ is solvable.
+
+::: pf-proof
+
 For $|G|=1$, the group is trivial and hence solvable.
 
 Assume now that $1<|G|<60$ and that every group of smaller order is solvable.
+
 :::
 
-<1>2. If $G$ is abelian, then $G$ is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $G$ is abelian, then $G$ is solvable.
+
+::: pf-proof
+
 Indeed,
 \[
 G^{(1)}=[G,G]=1.
 \]
+
 :::
 
-<1>3. Suppose that $G$ is nonabelian.
+:::
+
+::: {.pf-step #s3}
+
+Suppose that $G$ is nonabelian.
 Then $G$ has a nontrivial proper normal subgroup
 \[
 1<N<G.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis, every nonabelian group of order less than $60$ is not simple.
 Since $G$ is nonabelian and $|G|<60$, the group $G$ is not simple.
 Therefore it has a normal subgroup $N$ satisfying
 \[
 1<N<G.
 \]
+
 :::
 
-<1>4. Both $N$ and $G/N$ are solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Both $N$ and $G/N$ are solvable.
+
+::: pf-proof
+
 Because $N$ is nontrivial and proper,
 \[
 |N|<|G|
@@ -90,10 +118,17 @@ Because $N$ is nontrivial and proper,
 |G/N|<|G|.
 \]
 The induction hypothesis therefore applies to both $N$ and $G/N$.
+
 :::
 
-<1>5. If $N\trianglelefteq G$, and both $N$ and $G/N$ are solvable, then $G$ is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+If $N\trianglelefteq G$, and both $N$ and $G/N$ are solvable, then $G$ is solvable.
+
+::: pf-proof
+
 Choose integers $r,s\ge 0$ such that
 \[
 (G/N)^{(r)}=1
@@ -113,15 +148,29 @@ Taking $s$ further derived subgroups gives
 G^{(r+s)}=(G^{(r)})^{(s)}\le N^{(s)}=1.
 \]
 Thus $G$ is solvable.
+
 :::
 
-<1>6. Hence every finite group of order less than $60$ is solvable.
-::: {.proof}
-If $G$ is abelian, use <1>2. If $G$ is nonabelian, combine <1>3, <1>4, and <1>5. This completes the induction.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+::: {.pf-step #s6}
+
+Hence every finite group of order less than $60$ is solvable.
+
+::: pf-proof
+
+If $G$ is abelian, use step [](#s2){.pf-ref}. If $G$ is nonabelian, combine steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}. This completes the induction.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

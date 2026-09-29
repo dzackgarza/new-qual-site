@@ -18,26 +18,60 @@ Compute $\operatorname{Ext}(\mathbb{Z} \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_3, 
 :::
 
 ::: {.solution}
-<1>1. Ext is additive in each variable over finite direct sums, and $\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z,B)=0$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Ext is additive in each variable over finite direct sums, and $\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z,B)=0$.
+
+::: pf-proof
+
 The module $\mathbb Z$ is free, hence projective.
+
 :::
 
-<1>2. For every abelian group $B$,
+:::
+
+::: {.pf-step #s2}
+
+For every abelian group $B$,
 $$\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z/n,B)\cong B/nB.$$
-::: {.proof}
+
+::: pf-proof
+
 Apply $\operatorname{Hom}(-,B)$ to the free resolution $0\to\mathbb Z\xrightarrow n\mathbb Z\to\mathbb Z/n\to0$.
+
 :::
 
-<1>3. For $B=\mathbb Z\oplus\mathbb Z_4\oplus\mathbb Z_6$,
+:::
+
+::: {.pf-step #s3}
+
+For $B=\mathbb Z\oplus\mathbb Z_4\oplus\mathbb Z_6$,
 $$B/2B\cong(\mathbb Z/2)^3,\qquad B/3B\cong(\mathbb Z/3)^2.$$
-::: {.proof}
+
+::: pf-proof
+
 Modulo $2$, the three summands contribute respectively $\mathbb Z/2$, $\mathbb Z/2$, $\mathbb Z/2$. Modulo $3$, they contribute $\mathbb Z/3$, $0$, $\mathbb Z/3$.
+
 :::
 
-<1>4. Therefore
-$$\boxed{\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z\oplus\mathbb Z_2\oplus\mathbb Z_3,\mathbb Z\oplus\mathbb Z_4\oplus\mathbb Z_6)\cong(\mathbb Z/2)^3\oplus(\mathbb Z/3)^2.}$$
-::: {.proof}
-Combine <1>1--<1>3.
 :::
+
+::: pf-step
+
+Therefore
+$$\boxed{\operatorname{Ext}^1_{\mathbb Z}(\mathbb Z\oplus\mathbb Z_2\oplus\mathbb Z_3,\mathbb Z\oplus\mathbb Z_4\oplus\mathbb Z_6)\cong(\mathbb Z/2)^3\oplus(\mathbb Z/3)^2.}$$
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -54,12 +54,17 @@ $$
 2g-2=4.
 $$
 
-<1>1. The canonical sheaf of $X$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The canonical sheaf of $X$ is
 $$
 \boxed{\omega_X\cong\OO_X(1)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Adjunction for a nonsingular plane curve of degree $d$ gives
 $$
 \omega_X
@@ -74,17 +79,23 @@ and $d=4$, so
 $$
 \omega_X\cong\OO_X(4-3)=\OO_X(1).
 $$
+
 :::
 
-<1>2. Restriction of linear forms gives an isomorphism
+:::
+
+::: {.pf-step #s2}
+
+Restriction of linear forms gives an isomorphism
 $$
 H^0(\PP^2,\OO_{\PP^2}(1))
 \xrightarrow{\sim}
 H^0(X,\omega_X).
 $$
 
-::: {.proof}
-By step <1>1 the target is $H^0(X,\OO_X(1))$.
+::: pf-proof
+
+By step [](#s1){.pf-ref} the target is $H^0(X,\OO_X(1))$.
 No nonzero linear form vanishes identically on the quartic $X$, so the
 restriction map
 $$
@@ -100,17 +111,23 @@ $$
 h^0(X,\omega_X)=g(X)=3.
 $$
 Thus the restriction map is an isomorphism.
+
 :::
 
-<1>3. The effective canonical divisors on $X$ are exactly the divisors
+:::
+
+::: {.pf-step #s3}
+
+The effective canonical divisors on $X$ are exactly the divisors
 $$
 \boxed{X.L}
 $$
 where $L\subseteq\PP^2$ is a line.
 
-::: {.proof}
+::: pf-proof
+
 An effective canonical divisor is the zero divisor of a nonzero section of
-$\omega_X$.  By step <1>2, every such section is the restriction of a nonzero
+$\omega_X$.  By step [](#s2){.pf-ref}, every such section is the restriction of a nonzero
 linear form on $\PP^2$, whose zero locus is a line $L$.
 Its zero divisor on $X$ is precisely the scheme-theoretic intersection
 $X.L$.
@@ -118,15 +135,21 @@ $X.L$.
 Conversely, restricting the defining linear form of any line $L$ gives a
 nonzero section of $\OO_X(1)\cong\omega_X$, so $X.L$ is an effective
 canonical divisor.  This proves part (a).
+
 :::
 
-<1>4. Let $D$ be an effective divisor of degree $2$.  Then
+:::
+
+::: {.pf-step #s4}
+
+Let $D$ be an effective divisor of degree $2$.  Then
 $$
 \ell(D)=\ell(K-D)
 $$
 for any canonical divisor $K$.
 
-::: {.proof}
+::: pf-proof
+
 Riemann-Roch gives
 $$
 \ell(D)-\ell(K-D)
@@ -135,11 +158,17 @@ $$
 =0.
 $$
 Hence $\ell(D)=\ell(K-D)$.
+
 :::
 
-<1>5. At most one effective canonical divisor contains $D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+At most one effective canonical divisor contains $D$.
+
+::: pf-proof
+
 Because the ground field is algebraically closed and $\deg D=2$, either
 $$
 D=P+Q
@@ -149,7 +178,7 @@ $$
 D=2P.
 $$
 
-Suppose an effective canonical divisor contains $D$.  By step <1>3 it has the
+Suppose an effective canonical divisor contains $D$.  By step [](#s3){.pf-ref} it has the
 form $X.L$ for a line $L$.
 
 If $D=P+Q$ with $P\ne Q$, then $L$ must contain both $P$ and $Q$, so it is
@@ -161,39 +190,51 @@ the tangent line $T_PX$, which is unique.
 
 Thus in either case there is at most one effective canonical divisor containing
 $D$.
+
 :::
 
-<1>6. Every effective divisor $D$ of degree $2$ satisfies
+:::
+
+::: {.pf-step #s6}
+
+Every effective divisor $D$ of degree $2$ satisfies
 $$
 \boxed{\dim|D|=0}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $D$ is effective,
 $$
 \ell(D)\geq1.
 $$
-By step <1>4, the same is true of $\ell(K-D)$, so there exists at least one
+By step [](#s4){.pf-ref}, the same is true of $\ell(K-D)$, so there exists at least one
 effective canonical divisor containing $D$.
 
 If $\ell(K-D)\geq2$, two linearly independent sections of
 $\mcl(K-D)$ would give two distinct effective divisors in $|K-D|$, and after
 adding $D$ they would give two distinct effective canonical divisors containing
-$D$.  This contradicts step <1>5.
+$D$.  This contradicts step [](#s5){.pf-ref}.
 Hence
 $$
 \ell(K-D)=1.
 $$
-Step <1>4 gives $\ell(D)=1$, and therefore
+Step [](#s4){.pf-ref} gives $\ell(D)=1$, and therefore
 $$
 \dim|D|=\ell(D)-1=0.
 $$
 This proves part (b).
+
 :::
 
-<1>7. The plane quartic $X$ is not hyperelliptic.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The plane quartic $X$ is not hyperelliptic.
+
+::: pf-proof
+
 If $X$ were hyperelliptic, [[P-AGH417HYPERELLIPTIC|Exercise IV.1.7]] would
 give a finite morphism
 $$
@@ -205,13 +246,19 @@ $1$ on $X$.  In particular, some effective degree-$2$ divisor $D$ would satisfy
 $$
 \dim|D|\geq1,
 $$
-contradicting step <1>6.  Thus $X$ is not hyperelliptic, proving part (c).
+contradicting step [](#s6){.pf-ref}.  Thus $X$ is not hyperelliptic, proving part (c).
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>7 proves
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), step [](#s6){.pf-ref} proves part (b), and step [](#s7){.pf-ref} proves
 part (c).
+
 :::
+
+:::
+
 :::

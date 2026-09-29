@@ -35,13 +35,19 @@ for every $x\ne0$ and every $i$.
 :::
 
 ::: {.solution}
-<1>1. The gradient is uniformly bounded by
+
+::: pf
+
+::: {.pf-step #s1}
+
+The gradient is uniformly bounded by
 $$
 \norm{\nabla f(x)}\le M\sqrt n
 $$
 for every $x\ne0$.
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis gives
 $$
 \norm{\nabla f(x)}^2
@@ -54,16 +60,22 @@ $$
 nM^2.
 $$
 Taking square roots gives the claim.
+
 :::
 
-<1>2. Along the positive first coordinate axis, the limit
+:::
+
+::: {.pf-step #s2}
+
+Along the positive first coordinate axis, the limit
 $$
 L\coloneqq
 \lim_{r\downarrow0}f(re_1)
 $$
 exists.
 
-::: {.proof}
+::: pf-proof
+
 Define
 $$
 g(r)\coloneqq f(re_1),
@@ -84,16 +96,22 @@ M\abs{r-s}.
 $$
 Thus $g(r)$ is Cauchy as $r\downarrow0$, and completeness of $\mathbb R$
 gives a finite limit $L$.
+
 :::
 
-<1>3. Assume $n\ge2$. If $x\ne0$ and $r=\norm{x}$, then
+:::
+
+::: {.pf-step #s3}
+
+Assume $n\ge2$. If $x\ne0$ and $r=\norm{x}$, then
 $$
 \abs{f(x)-f(re_1)}
 \le
 \pi M\sqrt n\,r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $n\ge2$, the sphere
 $$
 \{y\in\mathbb R^n:\norm y=r\}
@@ -104,7 +122,7 @@ directions are not antipodal, and any $2$-plane containing $e_1$ in the
 antipodal case.
 
 Parametrize such an arc by a piecewise $C^1$ curve $\gamma$. Then
-step <1>1 and the chain rule give
+step [](#s1){.pf-ref} and the chain rule give
 $$
 \left|
 \frac{d}{dt}f(\gamma(t))
@@ -120,9 +138,14 @@ M\sqrt n\,\operatorname{length}(\gamma)
 \le
 \pi M\sqrt n\,r.
 $$
+
 :::
 
-<1>4. If $n\ge2$, defining
+:::
+
+::: {.pf-step #s4}
+
+If $n\ge2$, defining
 $$
 \widetilde f(0)\coloneqq L,
 \qquad
@@ -134,9 +157,10 @@ $$
 \widetilde f:\mathbb R^n\longrightarrow\mathbb R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Continuity away from $0$ is inherited from $f$. Let $x\to0$, $x\ne0$,
-and put $r=\norm{x}$. By steps <1>2 and <1>3,
+and put $r=\norm{x}$. By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \begin{aligned}
 \abs{f(x)-L}
@@ -150,11 +174,17 @@ $$
 \end{aligned}
 $$
 Thus $\widetilde f$ is continuous at $0$.
+
 :::
 
-<1>5. For $n=1$, the assertion is false.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+For $n=1$, the assertion is false.
+
+::: pf-proof
+
 Define
 $$
 f(x)
@@ -179,12 +209,18 @@ $$
 \lim_{x\downarrow0}f(x)=1,
 $$
 so no continuous extension to $0$ exists.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the extension statement for $n\ge2$, and step <1>5 gives
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the extension statement for $n\ge2$, and step [](#s5){.pf-ref} gives
 the required one-dimensional counterexample.
+
 :::
+
+:::
+
 :::

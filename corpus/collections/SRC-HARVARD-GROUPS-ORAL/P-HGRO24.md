@@ -20,33 +20,75 @@ Prove that $G$ is solvable.
 :::
 
 ::: {.solution}
-<1>1. $G$ has a nontrivial center $Z(G) \neq 1$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$G$ has a nontrivial center $Z(G) \neq 1$.
+
+::: pf-proof
+
 the class equation $|G| = |Z(G)| + \sum [G : C_G(g_i)]$; each $[G : C_G(g_i)]$ is divisible by $p$, and $|G| = p^r$ is divisible by $p$, so $p \mid |Z(G)|$, hence $Z(G) \neq 1$.
+
 :::
 
-<1>2. $Z(G)$ is abelian and normal in $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$Z(G)$ is abelian and normal in $G$.
+
+::: pf-proof
+
 the center is always abelian and normal.
+
 :::
 
-<1>3. $G/Z(G)$ has order $p^{r'}$ with $r' < r$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$G/Z(G)$ has order $p^{r'}$ with $r' < r$.
+
+::: pf-proof
+
 $|Z(G)| > 1$ divides $p^r$, so $|G/Z(G)| = p^{r'}$ with $r' < r$.
+
 :::
 
-<1>4. By induction on $r$, $G/Z(G)$ is solvable.
-::: {.proof}
-the base case $r = 0$ (trivial group) is solvable; <1>3 reduces the exponent.
 :::
 
-<1>5. Hence $G$ is solvable.
-::: {.proof}
-$1 \trianglelefteq Z(G) \trianglelefteq G$ with $Z(G)$ abelian and $G/Z(G)$ solvable (<1>4); an extension of a solvable group by an abelian group is solvable.
+::: {.pf-step #s4}
+
+By induction on $r$, $G/Z(G)$ is solvable.
+
+::: pf-proof
+
+the base case $r = 0$ (trivial group) is solvable; step [](#s3){.pf-ref} reduces the exponent.
+
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
 :::
+
+::: {.pf-step #s5}
+
+Hence $G$ is solvable.
+
+::: pf-proof
+
+$1 \trianglelefteq Z(G) \trianglelefteq G$ with $Z(G)$ abelian and $G/Z(G)$ solvable (step [](#s4){.pf-ref}); an extension of a solvable group by an abelian group is solvable.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -68,14 +68,19 @@ Use the [[D-DEFTALG|tensor-algebra quotient constructions]] in the statement.
 Taking a stalk commutes with tensor powers and their symmetric and exterior quotients: every tensor and every defining relation uses finitely many sections, which can be represented on one common neighborhood.
 Thus the stalks of these sheaf operations are the corresponding operations on the stalk module over its stalk ring.
 
-<1>1. The local ranks in part (a) are
+::: pf
+
+::: {.pf-step #s1}
+
+The local ranks in part (a) are
 $$
 \boxed{\operatorname{rank}T^r(\mcf)=n^r,\quad
 \operatorname{rank}S^r(\mcf)=\binom{n+r-1}{n-1},\quad
 \operatorname{rank}\bigwedge^r\mcf=\binom nr}\qquad(n\ge1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 On an open set with frame $e_1,\ldots,e_n$ for $\mcf$, the tensor power has the frame of all words $e_{i_1}\otimes\cdots\otimes e_{i_r}$.
 There are $n^r$ such words.
 The symmetric quotient identifies words differing by a permutation; its frame is therefore the monomials $e_1^{a_1}\cdots e_n^{a_n}$ with $a_i\ge0$ and $\sum_i a_i=r$.
@@ -89,11 +94,17 @@ There are $\binom nr$ increasing tuples, and none when $r>n$.
 These constructions commute with restriction, so they give local frames of the sheaves.
 In degree zero the empty word is the frame of $\OO_X$.
 For $n=0$, the sheaf itself is zero, so every positive tensor power and its quotients are zero.
+
 :::
 
-<1>2. The multiplication pairing in part (b) is perfect.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The multiplication pairing in part (b) is perfect.
+
+::: pf-proof
+
 Put $\mathcal E=\bigwedge^r\mcf$, $\mathcal G=\bigwedge^{n-r}\mcf$, and $\mathcal L=\bigwedge^n\mcf$.
 Exterior multiplication defines
 $$
@@ -108,16 +119,22 @@ By [[P-AGH251DUALSHEAF]], $\sheafhom(\mathcal G,\mathcal L)\cong\dualof{\mathcal
 It is canonical because exterior multiplication was defined before choosing the frames.
 Taking $n=2$ and $r=1$ gives the stated rank-two identity.
 For $n=r=0$, the pairing is multiplication $\OO_X\otimes\OO_X\to\OO_X$ and is again perfect.
+
 :::
 
-<1>3. For part (c), define
+:::
+
+::: {.pf-step #s3}
+
+For part (c), define
 $$
 F^p=\im\bigl(S^p(\mcf')\otimes S^{r-p}(\mcf)\longrightarrow S^r(\mcf)\bigr)
 \quad(0\le p\le r),\qquad F^{r+1}=0.
 $$
 Then $F^p/F^{p+1}\cong S^p(\mcf')\otimes S^{r-p}(\mcf'')$ canonically.
 
-::: {.proof}
+::: pf-proof
+
 The morphism is induced by inclusion of $\mcf'$ followed by multiplication.
 Products with at least $p+1$ factors from $\mcf'$ also have at least $p$ such factors, so $F^{p+1}\subseteq F^p$, and $F^0=S^r(\mcf)$.
 
@@ -142,9 +159,14 @@ $$
 The comparison morphism on the quotient is the identity on the summand $q=p$.
 Thus it is an isomorphism at every stalk, hence an isomorphism of sheaves.
 These splittings only verify the globally defined morphism; no splitting on $X$ is asserted or used.
+
 :::
 
-<1>4. For part (d), the exterior filtration is
+:::
+
+::: {.pf-step #s4}
+
+For part (d), the exterior filtration is
 $$
 G^p=\im\bigl(\bigwedge^p\mcf'\otimes\bigwedge^{r-p}\mcf
 \longrightarrow\bigwedge^r\mcf\bigr)
@@ -152,12 +174,13 @@ G^p=\im\bigl(\bigwedge^p\mcf'\otimes\bigwedge^{r-p}\mcf
 $$
 with $G^p/G^{p+1}\cong\bigwedge^p\mcf'\otimes\bigwedge^{r-p}\mcf''$ canonically.
 
-::: {.proof}
+::: pf-proof
+
 Exterior multiplication gives the indicated subsheaves and their inclusions $G^{p+1}\subseteq G^p$.
 Multiplying $p$ local sections from $\mcf'$ with local lifts of $r-p$ sections from $\mcf''$ defines a class modulo $G^{p+1}$.
-It is independent of the lifts by the same extra-factor argument as in step <1>3 and is alternating in each group, so it defines the comparison morphism on exterior powers.
+It is independent of the lifts by the same extra-factor argument as in step [](#s3){.pf-ref} and is alternating in each group, so it defines the comparison morphism on exterior powers.
 
-At each stalk, split $M\cong M'\oplus M''$ as in step <1>3. The increasing wedge basis, ordered with the basis of $M'$ before that of $M''$, decomposes $\bigwedge^r_B M$ by the number $q$ of factors from $M'$.
+At each stalk, split $M\cong M'\oplus M''$ as in step [](#s3){.pf-ref}. The increasing wedge basis, ordered with the basis of $M'$ before that of $M''$, decomposes $\bigwedge^r_B M$ by the number $q$ of factors from $M'$.
 The subsheaf $G^p$ has the summands $q\ge p$, and its quotient by $G^{p+1}$ has precisely the summand $q=p$.
 The comparison morphism identifies this summand with $\bigwedge^p_BM'\otimes_B\bigwedge^{r-p}_BM''$.
 It is therefore an isomorphism on every stalk.
@@ -170,11 +193,17 @@ $$
 $$
 Explicitly, it wedges a top wedge from $\mcf'$ with any lifts of a top wedge from $\mcf''$.
 Lift-independence and the fixed order of the factors determine its sign and make it canonical.
+
 :::
 
-<1>5. Pullback commutes naturally with every tensor, symmetric, and exterior power, proving part (e).
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Pullback commutes naturally with every tensor, symmetric, and exterior power, proving part (e).
+
+::: pf-proof
+
 The universal properties of the sheaf tensor algebra and its defining quotients give comparison morphisms from each pullback to the corresponding operation on $f^*\mcf$.
 At $x\in X$, put $y=f(x)$, $A=\OO_{Y,y}$, $B=\OO_{X,x}$, and $M=\mcf_y$.
 Then $(f^*\mcf)_x\cong B\otimes_A M$.
@@ -194,11 +223,17 @@ Equivalently, scalar extension is right exact, so these quotient presentations a
 In degree zero the comparison is $B\otimes_A A\cong B$.
 These formulas are natural in the ring map and in $M$ and preserve multiplication of homogeneous elements.
 Hence the sheaf comparison morphisms are isomorphisms on all stalks and give the claimed graded-algebra isomorphisms as well.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, <1>3, <1>4, and <1>5 prove parts (a), (b), (c), (d), and (e), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove parts (a), (b), (c), (d), and (e), respectively.
+
+:::
+
+:::
+
 :::

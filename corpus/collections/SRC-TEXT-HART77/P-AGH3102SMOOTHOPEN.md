@@ -37,9 +37,14 @@ $$
 V=\{x\in X:f\text{ is smooth at }x\}.
 $$
 
-<1>1. Every point of the fibre $X_y$ lies in $V$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every point of the fibre $X_y$ lies in $V$.
+
+::: pf-proof
+
 Because $X$ and $Y$ are varieties, $f$ is locally of finite presentation.
 It is flat everywhere by hypothesis.
 
@@ -54,11 +59,17 @@ Therefore
 $$
 X_y\subseteq V.
 $$
+
 :::
 
-<1>2. The subset $V$ is open in $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The subset $V$ is open in $X$.
+
+::: pf-proof
+
 For a morphism locally of finite presentation, the locus where the morphism is
 smooth is open [@Har10a, Chapter III, §10]. Hence $V\subseteq X$ is open.
 Equivalently,
@@ -66,11 +77,17 @@ $$
 Z=X\setminus V
 $$
 is closed.
+
 :::
 
-<1>3. The image $f(Z)$ is closed in $Y$ and does not contain $y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The image $f(Z)$ is closed in $Y$ and does not contain $y$.
+
+::: pf-proof
+
 The morphism $f$ is proper, so it is closed. Since $Z$ is closed in $X$,
 $$
 f(Z)\subseteq Y
@@ -78,19 +95,25 @@ $$
 is closed.
 
 If $y\in f(Z)$, then some point of the fibre $X_y$ would lie in $Z$,
-contradicting step <1>1. Therefore
+contradicting step [](#s1){.pf-ref}. Therefore
 $$
 y\notin f(Z).
 $$
+
 :::
 
-<1>4. The required neighborhood is
+:::
+
+::: {.pf-step #s4}
+
+The required neighborhood is
 $$
 U=Y\setminus f(Z).
 $$
 
-::: {.proof}
-By step <1>3, $U$ is an open neighborhood of $y$.
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $U$ is an open neighborhood of $y$.
 Moreover, by definition of $U$,
 $$
 f^{-1}(U)\cap Z=\varnothing,
@@ -105,13 +128,19 @@ $$
 f:f^{-1}(U)\longrightarrow U
 $$
 is smooth.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 show that the smooth locus contains the whole fibre over
-$y$, and steps <1>3--<1>4 use properness to remove the image of its complement
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that the smooth locus contains the whole fibre over
+$y$, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} use properness to remove the image of its complement
 from the base.
+
 :::
+
+:::
+
 :::

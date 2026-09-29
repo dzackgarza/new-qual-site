@@ -32,27 +32,50 @@ f \in L^p, g\in L^q \implies f \convolve g \in L^r \text{ and } \norm{f \convolv
 ::: {.solution}
 Work on $\RR^n$, fix $f \in L^p$, let $p'$ be the conjugate exponent of $p$, and let $Tg = f \ast g$.
 
-<1>1. $\|f \ast g\|_p \le \|f\|_p\|g\|_1$ for $g \in L^1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\|f \ast g\|_p \le \|f\|_p\|g\|_1$ for $g \in L^1$.
+
+::: pf-proof
+
 Write $f \ast g(x) = \int f(x-y)g(y)\,dy$. By Minkowski's inequality for integrals and translation invariance of the $L^p$ norm, $\|f\ast g\|_p \le \int \|f(\cdot - y)\|_p\,|g(y)|\,dy = \|f\|_p\|g\|_1$.
+
 :::
 
-<1>2. $\|f \ast g\|_\infty \le \|f\|_p\|g\|_{p'}$ for $g \in L^{p'}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\|f \ast g\|_\infty \le \|f\|_p\|g\|_{p'}$ for $g \in L^{p'}$.
+
+::: pf-proof
+
 By Hölder's inequality, $|(f\ast g)(x)| \le \int |f(x-y)||g(y)|\,dy \le \|f\|_p\|g\|_{p'}$ for every $x$.
+
 :::
 
-<1>3. With $\theta = 1 - p/r \in [0,1]$, $\frac1q = \frac{1-\theta}{1} + \frac{\theta}{p'}$ and $\frac1r = \frac{1-\theta}{p} + \frac{\theta}{\infty}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+With $\theta = 1 - p/r \in [0,1]$, $\frac1q = \frac{1-\theta}{1} + \frac{\theta}{p'}$ and $\frac1r = \frac{1-\theta}{p} + \frac{\theta}{\infty}$.
+
+::: pf-proof
+
 $\frac{1-\theta}{p} = \frac{p/r}{p} = \frac1r$. Also $1 - \theta + \theta\left(1 - \frac1p\right) = 1 - \frac\theta p = 1 - \frac1p + \frac1r = \frac1q$ by the hypothesis. Since $\frac1q \le 1$, $\frac1p \ge \frac1r$, so $p \le r$ and $\theta \in [0,1]$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-By steps <1>1 and <1>2, $T$ is bounded $L^1 \to L^p$ and $L^{p'} \to L^\infty$, both with norm at most $\|f\|_p$. By step <1>3 and the Riesz--Thorin interpolation theorem, $T$ is bounded $L^q \to L^r$ with norm at most $\|f\|_p^{1-\theta}\|f\|_p^{\theta} = \|f\|_p$.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $T$ is bounded $L^1 \to L^p$ and $L^{p'} \to L^\infty$, both with norm at most $\|f\|_p$. By step [](#s3){.pf-ref} and the Riesz--Thorin interpolation theorem, $T$ is bounded $L^q \to L^r$ with norm at most $\|f\|_p^{1-\theta}\|f\|_p^{\theta} = \|f\|_p$.
+
+:::
+
+:::
+
 :::

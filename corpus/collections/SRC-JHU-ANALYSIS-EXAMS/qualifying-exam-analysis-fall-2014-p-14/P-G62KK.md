@@ -47,8 +47,15 @@ $f_k\to f$ uniformly on $A_\varepsilon$.
 :::
 
 ::: {.solution}
-<1>1. Control the tail suprema in $L^1$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Control the tail suprema in $L^1$.
+
+::: pf-proof
+
 Choose a measurable null set $Z\subset E$ outside which
 the given convergence holds and $g$ is finite. On
 $E_0=E\setminus Z$, passage to the limit gives $|f|\leq g$.
@@ -70,10 +77,17 @@ Since $g\in L^1(E)$, dominated convergence gives [@Fol13]
 \[
 \int_E h_N\,dm\longrightarrow0.
 \]
+
 :::
 
-<1>2. Remove a set of arbitrarily small measure on which the tail bounds are bad.
-::: {.proof}
+:::
+
+::: pf-step
+
+Remove a set of arbitrarily small measure on which the tail bounds are bad.
+
+::: pf-proof
+
 Fix $\varepsilon>0$. For each $j\ge1$, choose $N_j$ increasing so that
 \[
 \int_E h_{N_j}\,dm<\frac{\varepsilon}{2^{j+2}j}.
@@ -101,10 +115,17 @@ On $E\setminus B$, for every $j$ and every $k\ge N_j$,
 |f_k(x)-f(x)|\le h_{N_j}(x)\le\frac1j.
 \]
 Thus $f_k\to f$ uniformly on $E\setminus B$.
+
 :::
 
-<1>3. Replace the measurable good set by a closed good set.
-::: {.proof}
+:::
+
+::: pf-step
+
+Replace the measurable good set by a closed good set.
+
+::: pf-proof
+
 Put $F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
 For each positive integer $j$, the measurable set
 $H_j=H\cap[-j,j]^d$ has finite measure. Outer regularity
@@ -132,13 +153,25 @@ Hence there is a closed set $A_\varepsilon\subset E$ with
 m(E\setminus A_\varepsilon)<\varepsilon
 \]
 such that $f_k\to f$ uniformly on $A_\varepsilon$, as required.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution}
-<1>1. At each accuracy level, the bad tail sets have finite measure decreasing to zero.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+At each accuracy level, the bad tail sets have finite measure decreasing to zero.
+
+::: pf-proof
+
 Choose a measurable null set $Z\subset E$ outside which
 $f_k(x)\to f(x)$ and $g$ is finite. Put $E_0=E\setminus Z$.
 On $E_0$, the bound on $f_k$ implies $|f|\leq g$.
@@ -167,11 +200,17 @@ Hence continuity from above of measure yields [@Fol13]
 m(B_{N,j})\longrightarrow0
 \qquad(N\to\infty).
 \]
+
 :::
 
-<1>2. Removing a set of small measure gives uniform convergence.
+:::
 
-::: {.proof}
+::: pf-step
+
+Removing a set of small measure gives uniform convergence.
+
+::: pf-proof
+
 Choose $N_j$ so that
 \[
 m(B_{N_j,j})<\frac{\epsilon}{2^{j+2}}.
@@ -189,11 +228,17 @@ On $E\setminus B$, convergence is uniform. Indeed, given $\eta>0$, choose $j$ wi
 \[
 |f_k(x)-f(x)|<\frac1j<\eta.
 \]
+
 :::
 
-<1>3. The good set contains a closed subset with arbitrarily small measure loss.
+:::
 
-::: {.proof}
+::: pf-step
+
+The good set contains a closed subset with arbitrarily small measure loss.
+
+::: pf-proof
+
 Let $\mathbb R^d$ be the ambient Euclidean space, and put
 $F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
 For each positive integer $j$, use finite-measure outer
@@ -216,5 +261,11 @@ m(E\setminus A_\epsilon)
 <\epsilon,
 \]
 and uniform convergence on $E\setminus B$ implies uniform convergence on $A_\epsilon$.
+
 :::
+
+:::
+
+:::
+
 :::

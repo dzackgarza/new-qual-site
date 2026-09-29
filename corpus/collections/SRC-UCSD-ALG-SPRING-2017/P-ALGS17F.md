@@ -28,38 +28,87 @@ Show that the algebraic closure of $F$ is infinite-dimensional over $F$.
 :::
 
 ::: {.solution}
-<1>1. Let $\overline{F}$ be the algebraic closure of $F$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $\overline{F}$ be the algebraic closure of $F$.
+
+::: pf-proof
+
 setup.
+
 :::
 
-<1>2. For each positive integer $n$, there is an irreducible polynomial of degree $n$ over $F$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+For each positive integer $n$, there is an irreducible polynomial of degree $n$ over $F$.
+
+::: pf-proof
+
 for $F = \mathbb{Q}$, $x^n - 2$ is irreducible (Eisenstein at $2$); for $F = \mathbb{F}_p$, there is an irreducible polynomial of every degree $n$ (the field $\mathbb{F}_{p^n}$ exists, and its generator over $\mathbb{F}_p$ has degree $n$).
+
 :::
 
-<1>3. Hence for each $n$, there is an element $\alpha_n \in \overline{F}$ with $[F(\alpha_n) : F] = n$.
-::: {.proof}
-<1>2 (a root of an irreducible degree-$n$ polynomial).
 :::
 
-<1>4. If $\overline{F}$ were finite-dimensional over $F$, say $[\overline{F} : F] = N < \infty$, then every element of $\overline{F}$ would have degree $\le N$ over $F$.
-::: {.proof}
+::: {.pf-step #s3}
+
+Hence for each $n$, there is an element $\alpha_n \in \overline{F}$ with $[F(\alpha_n) : F] = n$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} (a root of an irreducible degree-$n$ polynomial).
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+If $\overline{F}$ were finite-dimensional over $F$, say $[\overline{F} : F] = N < \infty$, then every element of $\overline{F}$ would have degree $\le N$ over $F$.
+
+::: pf-proof
+
 the degree of any element is at most the degree of the field extension.
+
 :::
 
-<1>5. But <1>3 gives elements of arbitrarily large degree, contradicting <1>4.
-::: {.proof}
-<1>3 and <1>4.
 :::
 
-<1>6. Hence $\overline{F}$ is infinite-dimensional over $F$.
-::: {.proof}
-<1>5.
+::: {.pf-step #s5}
+
+But step [](#s3){.pf-ref} gives elements of arbitrarily large degree, contradicting step [](#s4){.pf-ref}.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
 :::
+
+::: {.pf-step #s6}
+
+Hence $\overline{F}$ is infinite-dimensional over $F$.
+
+::: pf-proof
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -22,9 +22,15 @@ Let $G,H$ be finite groups of relatively prime orders. Prove that
 :::
 
 ::: {.solution}
-<1>1. The subgroup $G\times\{1\}$ is characteristic in $G\times H$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup $G\times\{1\}$ is characteristic in $G\times H$.
+
+::: pf-proof
+
 An element $(g,h)\in G\times H$ belongs to $G\times\{1\}$ if and only if its order divides $\abs G$.
 
 Indeed, if $h=1$, then
@@ -44,19 +50,30 @@ $$
 one has $\operatorname{ord}(h)=1$, hence $h=1$.
 
 Thus $G\times\{1\}$ is characterized purely by element orders. Every automorphism preserves element orders, so every automorphism of $G\times H$ preserves $G\times\{1\}$.
+
 :::
 
-<1>2. The subgroup $\{1\}\times H$ is characteristic in $G\times H$.
+:::
 
-::: {.proof}
-Interchanging the roles of $G$ and $H$ in step <1>1 shows that
+::: {.pf-step #s2}
+
+The subgroup $\{1\}\times H$ is characteristic in $G\times H$.
+
+::: pf-proof
+
+Interchanging the roles of $G$ and $H$ in step [](#s1){.pf-ref} shows that
 $$
 \{1\}\times H
 $$
 is exactly the set of elements whose orders divide $\abs H$. Hence it too is preserved by every automorphism.
+
 :::
 
-<1>3. Every automorphism $\varphi$ of $G\times H$ has the form
+:::
+
+::: {.pf-step #s3}
+
+Every automorphism $\varphi$ of $G\times H$ has the form
 $$
 \varphi(g,h)=\bigl(\alpha(g),\beta(h)\bigr)
 $$
@@ -67,8 +84,9 @@ $$
 \beta\in\operatorname{Aut}(H).
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2, $\varphi$ restricts to automorphisms of the two factors. Thus there are uniquely determined automorphisms $\alpha$ and $\beta$ such that
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\varphi$ restricts to automorphisms of the two factors. Thus there are uniquely determined automorphisms $\alpha$ and $\beta$ such that
 $$
 \varphi(g,1)=(\alpha(g),1)
 $$
@@ -92,9 +110,14 @@ $$
 (\alpha(g),\beta(h)).
 \end{aligned}
 $$
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 \Psi:\operatorname{Aut}(G\times H)
 \longrightarrow
@@ -102,8 +125,9 @@ $$
 $$
 that sends $\varphi$ to its two restrictions is a group isomorphism.
 
-::: {.proof}
-Step <1>3 shows that $\Psi$ is injective.
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that $\Psi$ is injective.
 
 Given
 $$
@@ -121,11 +145,17 @@ $$
 Hence $\Psi$ is surjective.
 
 Finally, restriction commutes with composition, so $\Psi$ is a homomorphism. Therefore it is an isomorphism.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required isomorphism.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required isomorphism.
+
+:::
+
+:::
+
 :::

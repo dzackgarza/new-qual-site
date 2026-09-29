@@ -29,12 +29,18 @@ Let
 :::
 
 ::: {.solution}
-<1>1. The number $\alpha$ is a root of
+
+::: pf
+
+::: {.pf-step #s1}
+
+The number $\alpha$ is a root of
 $$
 f(x)\coloneqq x^4-24x^2+4\in\QQ[x].
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \alpha^2
@@ -49,14 +55,19 @@ $$
 \alpha^4-24\alpha^2+4=0,
 $$
 so $f(\alpha)=0$.
+
 :::
 
-<1>2.
+:::
+
+::: {.pf-step #s2}
+
 $$
 \QQ(\alpha)=\QQ(\sqrt5,\sqrt7).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The inclusion
 $\QQ(\alpha)\subseteq\QQ(\sqrt5,\sqrt7)$ is immediate. Conversely,
 $$
@@ -73,14 +84,19 @@ $$
 =\frac12\left(\alpha-\frac2\alpha\right),
 $$
 so both radicals lie in $\QQ(\alpha)$.
+
 :::
 
-<1>3.
+:::
+
+::: {.pf-step #s3}
+
 $$
 [\QQ(\sqrt5,\sqrt7):\QQ]=4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $5$ is not a square in $\QQ$,
 $$
 [\QQ(\sqrt5):\QQ]=2.
@@ -107,24 +123,36 @@ $$
 [\QQ(\sqrt5,\sqrt7):\QQ(\sqrt5)]=2.
 $$
 The tower law gives the claimed degree $4$.
+
 :::
 
-<1>4. The polynomial $f(x)=x^4-24x^2+4$ is irreducible over $\QQ$.
+:::
 
-::: {.proof}
-By steps <1>2 and <1>3,
+::: {.pf-step #s4}
+
+The polynomial $f(x)=x^4-24x^2+4$ is irreducible over $\QQ$.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 [\QQ(\alpha):\QQ]=4.
 $$
 Hence the minimal polynomial of $\alpha$ over $\QQ$ has degree $4$.
-Step <1>1 gives a monic degree-four polynomial $f\in\QQ[x]$ having
+Step [](#s1){.pf-ref} gives a monic degree-four polynomial $f\in\QQ[x]$ having
 $\alpha$ as a root. Therefore $f$ is the minimal polynomial of
 $\alpha$, and in particular is irreducible over $\QQ$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 answers part 1, and step <1>4 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part 1, and step [](#s4){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

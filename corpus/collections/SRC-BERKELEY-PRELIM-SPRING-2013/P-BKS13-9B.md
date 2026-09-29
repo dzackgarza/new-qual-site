@@ -38,12 +38,17 @@ S\coloneqq\{x^2:x\in F\}
 $$
 be the set of squares in $F$.
 
-<1>1. If $\operatorname{char}F=2$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $\operatorname{char}F=2$, then
 $$
 S=F.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The squaring map
 $$
 \varphi:F\longrightarrow F,
@@ -60,16 +65,22 @@ $$
 $$
 so $x=y$ because a field has no nonzero nilpotents. Since $F$ is finite,
 injectivity implies surjectivity. Thus every element is a square.
+
 :::
 
-<1>2. If $\operatorname{char}F\neq2$, then
+:::
+
+::: {.pf-step #s2}
+
+If $\operatorname{char}F\neq2$, then
 $$
 \abs{S}
 =
 \frac{q+1}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $F^\times$, the map
 $$
 x\longmapsto x^2
@@ -97,9 +108,14 @@ $$
 =
 \frac{q+1}{2}.
 $$
+
 :::
 
-<1>3. In every finite field,
+:::
+
+::: {.pf-step #s3}
+
+In every finite field,
 $$
 \boxed{
 \abs{S}
@@ -108,12 +124,13 @@ $$
 }.
 $$
 
-::: {.proof}
-If the characteristic is $2$, step <1>1 gives
+::: pf-proof
+
+If the characteristic is $2$, step [](#s1){.pf-ref} gives
 $$
 \abs{S}=q.
 $$
-Otherwise step <1>2 gives
+Otherwise step [](#s2){.pf-ref} gives
 $$
 \abs{S}
 =
@@ -122,9 +139,14 @@ $$
 \frac q2.
 $$
 This proves the first assertion.
+
 :::
 
-<1>4. For every
+:::
+
+::: {.pf-step #s4}
+
+For every
 $$
 b\in F,
 $$
@@ -141,7 +163,8 @@ $$
 \abs{S}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The map
 $$
 S\longrightarrow b-S,
@@ -149,15 +172,21 @@ S\longrightarrow b-S,
 s\longmapsto b-s,
 $$
 is a bijection.
+
 :::
 
-<1>5. For every $b\in F$,
+:::
+
+::: {.pf-step #s5}
+
+For every $b\in F$,
 $$
 S\cap(b-S)\neq\varnothing.
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4,
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 \abs{S}
 >
@@ -171,9 +200,14 @@ $$
 $$
 If the two subsets were disjoint, their union would have more than $q$
 elements, impossible in the $q$-element set $F$.
+
 :::
 
-<1>6. Every element of $F$ is a sum of two squares:
+:::
+
+::: {.pf-step #s6}
+
+Every element of $F$ is a sum of two squares:
 $$
 \boxed{
 \forall b\in F,\quad
@@ -182,12 +216,13 @@ b=x^2+y^2
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose
 $$
 s\in S\cap(b-S)
 $$
-using step <1>5. Since $s\in S$, write
+using step [](#s5){.pf-ref}. Since $s\in S$, write
 $$
 s=x^2.
 $$
@@ -203,12 +238,18 @@ Therefore
 $$
 b=x^2+y^2.
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves that more than half the field elements are squares, and
-step <1>6 proves that every field element is a sum of two squares.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves that more than half the field elements are squares, and
+step [](#s6){.pf-ref} proves that every field element is a sum of two squares.
+
+:::
+
+:::
+
 :::

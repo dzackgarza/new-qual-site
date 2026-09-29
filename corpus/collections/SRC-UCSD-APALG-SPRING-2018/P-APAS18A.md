@@ -30,37 +30,97 @@ If yes, explain why; if no, give a counterexample.
 :::
 
 ::: {.solution}
-<1>1. $A^4 = 0$ and $B^4 = 0$, so both $A$ and $B$ are nilpotent.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$A^4 = 0$ and $B^4 = 0$, so both $A$ and $B$ are nilpotent.
+
+::: pf-proof
+
 $\operatorname{rank} A^4 = 0$ means $A^4 = 0$.
+
 :::
 
-<1>2. The ranks of the powers of a nilpotent matrix determine its Jordan form.
-<2>1. For a nilpotent matrix $N$, the number of Jordan blocks of size $\ge k$ is $\operatorname{rank} N^{k-1} - \operatorname{rank} N^k$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The ranks of the powers of a nilpotent matrix determine its Jordan form.
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+For a nilpotent matrix $N$, the number of Jordan blocks of size $\ge k$ is $\operatorname{rank} N^{k-1} - \operatorname{rank} N^k$.
+
+::: pf-proof
+
 standard fact about nilpotent Jordan forms.
-:::
-<2>2. For $A$: number of blocks of size $\ge 1$ is $8 - 6 = 2$; size $\ge 2$ is $6 - 4 = 2$; size $\ge 3$ is $4 - 2 = 2$; size $\ge 4$ is $2 - 0 = 2$.
-::: {.proof}
-<2>1 applied to the given ranks.
-:::
-<2>3. Hence $A$ has $2$ Jordan blocks, each of size $4$.
-::: {.proof}
-<2>2 (two blocks of size $\ge 4$, and total size $8$, so two blocks of size exactly $4$).
+
 :::
 
-<1>3. The same computation applies to $B$, so $B$ also has $2$ Jordan blocks of size $4$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2-2}
+
+For $A$: number of blocks of size $\ge 1$ is $8 - 6 = 2$; size $\ge 2$ is $6 - 4 = 2$; size $\ge 3$ is $4 - 2 = 2$; size $\ge 4$ is $2 - 0 = 2$.
+
+::: pf-proof
+
+Step [](#s2-1){.pf-ref} applied to the given ranks.
+
+:::
+
+:::
+
+::: pf-step
+
+Hence $A$ has $2$ Jordan blocks, each of size $4$.
+
+::: pf-proof
+
+Step [](#s2-2){.pf-ref} (two blocks of size $\ge 4$, and total size $8$, so two blocks of size exactly $4$).
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The same computation applies to $B$, so $B$ also has $2$ Jordan blocks of size $4$.
+
+::: pf-proof
+
 $B$ has the same ranks of powers.
+
 :::
 
-<1>4. Hence $A$ and $B$ have the same Jordan form (two nilpotent blocks of size $4$), so they are similar.
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
+::: {.pf-step #s4}
+
+Hence $A$ and $B$ have the same Jordan form (two nilpotent blocks of size $4$), so they are similar.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

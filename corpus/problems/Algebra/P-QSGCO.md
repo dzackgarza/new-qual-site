@@ -29,8 +29,14 @@ Let
 \]
 be the quotient map.
 
-<1>1. The common kernel is $H$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The common kernel is $H$.
+
+::: pf-proof
+
 Every lifted representation has the form
 \[
 \rho\circ\pi
@@ -42,10 +48,17 @@ Conversely, use the regular representation of $G/H$. It is faithful: distinct el
 \ker\pi=H.
 \]
 Therefore the intersection of the kernels of all lifted representations is exactly $H$.
+
 :::
 
-<1>2. Take $H=[G,G]$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Take $H=[G,G]$.
+
+::: pf-proof
+
 Then
 \[
 G/H=G^{\mathrm{ab}}
@@ -61,5 +74,11 @@ Over $\CC$, since a finite abelian group has only one-dimensional irreducible re
 \bigcap_{\chi:G\to\CC^\times}\ker\chi,
 \]
 where the intersection runs over all complex linear characters of $G$.
+
 :::
+
+:::
+
+:::
+
 :::

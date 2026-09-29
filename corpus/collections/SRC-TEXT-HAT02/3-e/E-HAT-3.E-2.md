@@ -49,12 +49,18 @@ Let $x\in H^1(L;\mathbb Z_m)$ be a generator, put $y=\beta(x)$, and let $z\in H^
 xy^{n-1}=tz.
 \]
 
-<1>1. The class
+::: pf
+
+::: pf-step
+
+The class
 \[
 \tau(L)=[t]\in\mathbb Z_m^*/\bigl(\pm(\mathbb Z_m^*)^n\bigr)
 \]
 depends only on the homotopy type of $L$.
-::: {.proof}
+
+::: pf-proof
+
 Let $h:L\to L'$ be a homotopy equivalence. For suitable units $a\in\mathbb Z_m^*$ and a sign $\varepsilon=\pm1$,
 \[
 h^*(x')=a x,
@@ -78,15 +84,22 @@ so
 a^nt=\varepsilon t'.
 \]
 Thus $t$ and $t'$ differ by a sign and an $n$th power of a unit, exactly the ambiguity quotiented out in $\tau$.
+
 :::
 
-<1>2. For nonzero integers $k_1,\dots,k_n$, the map
+:::
+
+::: pf-step
+
+For nonzero integers $k_1,\dots,k_n$, the map
 \[
 \widetilde f(r_1e^{i\theta_1},\dots,r_ne^{i\theta_n})
 =(r_1e^{ik_1\theta_1},\dots,r_ne^{ik_n\theta_n})
 \]
 has the stated properties.
-::: {.proof}
+
+::: pf-proof
+
 For a regular value with every coordinate nonzero, the $j$th angular coordinate has $|k_j|$ inverse choices, and each local sign contributes $\operatorname{sgn}(k_j)$. Hence the sum of local degrees is
 \[
 \deg\widetilde f=k_1\cdots k_n.
@@ -118,13 +131,20 @@ so
 \[
 \deg f=k_1\cdots k_n.
 \]
+
 :::
 
-<1>3. For the map in part 2,
+:::
+
+::: pf-step
+
+For the map in part 2,
 \[
 \tau(L)=k_1\cdots k_n\,\tau(L').
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $f_*$ is the identity on $\pi_1$, choose generators with
 \[
 f^*(x')=x,
@@ -142,10 +162,17 @@ so
 \[
 t=(k_1\cdots k_n)t'.
 \]
+
 :::
 
-<1>4. The stated necessary condition for homotopy equivalence follows.
-::: {.proof}
+:::
+
+::: pf-step
+
+The stated necessary condition for homotopy equivalence follows.
+
+::: pf-proof
+
 Let
 \[
 L_0=L_m(1,\dots,1).
@@ -168,5 +195,11 @@ If $L\simeq L'$, part 1 says these two classes differ by a sign and an $n$th pow
 \equiv\pm\ell_1'\cdots\ell_n' k^n\pmod m}
 \]
 for some unit $k$ modulo $m$, represented by an integer $k$.
+
 :::
+
+:::
+
+:::
+
 :::

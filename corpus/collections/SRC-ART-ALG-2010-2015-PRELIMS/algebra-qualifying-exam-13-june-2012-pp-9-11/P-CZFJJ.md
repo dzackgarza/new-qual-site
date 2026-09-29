@@ -37,14 +37,19 @@ Do the same for the quotient ring $\mathbb{Z}[x]/J$ where $J = (2, x^3 + 3x^2 - 
 The two rings are respectively $\mathbb F_4$ and
 $\mathbb F_2\times\mathbb F_4$.
 
-<1>1. Reduction modulo $2$ gives
+::: pf
+
+::: pf-step
+
+Reduction modulo $2$ gives
 $$
 \mathbb Z[x]/I\cong\mathbb F_2[x]/(q),\qquad
 \mathbb Z[x]/J\cong\mathbb F_2[x]/(xq),
 \qquad q=x^2+x+1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Coefficient reduction $\mathbb Z[x]\to\mathbb F_2[x]$ is
 surjective and has kernel $(2)$. For any $f\in\mathbb Z[x]$,
 the inverse image of $(\overline f)$ is $(2,f)$: if
@@ -54,16 +59,22 @@ The reverse inclusion follows immediately by reduction.
 Thus the induced quotient maps are isomorphisms.
 The polynomials in the problem reduce to $q$ and
 $x^3+x^2+x=xq$, respectively.
+
 :::
 
-<1>2. The first ring is the field
+:::
+
+::: pf-step
+
+The first ring is the field
 $$
 E=\mathbb F_2[\alpha],\qquad
 \alpha^2=\alpha+1,
 \qquad E=\{0,1,\alpha,1+\alpha\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $q$ has neither $0$ nor $1$ as a root. A
 reducible quadratic over a field has a linear factor and hence
 a root, so $q$ is irreducible. Polynomial division gives
@@ -81,12 +92,18 @@ Its only ideals are $(0)$ and $E$, since a nonzero ideal
 contains a unit. In particular $I$ is maximal and prime.
 The only idempotents of $E$ are $0,1$, as $e^2=e$ implies
 $e(e-1)=0$ in a field; it has no nonzero zero divisors or nilpotents.
+
 :::
 
-<1>3. The second ring $B=\mathbb F_2[x]/(xq)$ is explicitly
+:::
+
+::: pf-step
+
+The second ring $B=\mathbb F_2[x]/(xq)$ is explicitly
 isomorphic to $\mathbb F_2\times E$.
 
-::: {.proof}
+::: pf-proof
+
 Define
 $$
 \Theta:B\longrightarrow\mathbb F_2\times E,
@@ -112,11 +129,17 @@ $$
 maps to $(a,b+c\alpha)$. This proves surjectivity and
 gives the inverse on every element of the product.
 Consequently $B\cong\mathbb F_2\times E$ as rings.
+
 :::
 
-<1>4. The ring $B$ has eight elements, unit group $C_3$, four nonzero zero divisors, exactly the ideals $(0),(e_0),(e_1),B$, and no nonzero nilpotents.
+:::
 
-::: {.proof}
+::: pf-step
+
+The ring $B$ has eight elements, unit group $C_3$, four nonzero zero divisors, exactly the ideals $(0),(e_0),(e_1),B$, and no nonzero nilpotents.
+
+::: pf-proof
+
 The ring $B$ has eight elements, characteristic $2$, and
 additive group $C_2^3$. Equivalently, polynomial division
 gives the basis $1,[x],[x^2]$ over $\mathbb F_2$.
@@ -146,5 +169,11 @@ The only idempotents are $0,e_0,e_1,1$, because each coordinate
 of an idempotent in a field is $0$ or $1$. Finally, a nilpotent
 pair has nilpotent coordinates, which must both be zero.
 Thus $B$ is reduced despite having nonzero zero divisors.
+
 :::
+
+:::
+
+:::
+
 :::

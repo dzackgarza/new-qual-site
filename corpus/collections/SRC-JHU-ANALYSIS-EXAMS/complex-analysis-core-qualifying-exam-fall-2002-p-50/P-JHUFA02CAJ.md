@@ -34,8 +34,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a): $P$ and $P'$ have no common zero.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a): $P$ and $P'$ have no common zero.
+
+::: pf-proof
+
 Let
 $$
 P(z)=z^7+z^3+\frac1{16}.
@@ -67,10 +74,17 @@ $$
 z^{12}=(z^3)^4=\left(\frac7{64}\right)^4>0,
 $$
 a contradiction. Thus $P$ has no multiple zeros.
+
 :::
 
-<1>2. Part (b): Rouché's theorem gives exactly three zeros in the closed disk.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b): Rouché's theorem gives exactly three zeros in the closed disk.
+
+::: pf-proof
+
 On $|z|=1/2$,
 $$
 |z^7|=\frac1{128},
@@ -101,5 +115,11 @@ $$
 \boxed{3}
 $$
 zeros.
+
 :::
+
+:::
+
+:::
+
 :::

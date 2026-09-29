@@ -70,9 +70,14 @@ J(\infty)=\infty.
 $$
 The fixed-point set of $J$ is exactly $\widehat{\RR}$.
 
-<1>1. Condition (b) implies condition (c).
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Condition (b) implies condition (c).
+
+::: pf-proof
+
 Choose a representative
 $$
 T(z)=\frac{az+b}{cz+d}
@@ -98,11 +103,17 @@ $$
 J\circ T=T\circ J
 $$
 on all of $\widehat{\CC}$, which is condition (c).
+
 :::
 
-<1>2. Condition (c) implies condition (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Condition (c) implies condition (a).
+
+::: pf-proof
+
 Assume
 $$
 J\circ T=T\circ J.
@@ -147,11 +158,17 @@ $$
 T(\widehat{\RR})=\widehat{\RR},
 $$
 which is condition (a).
+
 :::
 
-<1>3. Condition (a) implies condition (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Condition (a) implies condition (b).
+
+::: pf-proof
+
 Assume
 $$
 T(\widehat{\RR})=\widehat{\RR}.
@@ -206,12 +223,18 @@ T=B^{-1}\circ A.
 $$
 Both $A$ and $B^{-1}$ have real coefficients, so their composition admits
 real coefficients. This is condition (b).
+
 :::
 
-<1>4. Conditions (a), (b), and (c) are equivalent.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 give the cycle
+::: {.pf-step #s4}
+
+Conditions (a), (b), and (c) are equivalent.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the cycle
 $$
 \text{(b)}
 \Longrightarrow
@@ -221,11 +244,17 @@ $$
 \Longrightarrow
 \text{(b)}.
 $$
+
 :::
 
-<1>5. Condition (d) implies condition (c).
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Condition (d) implies condition (c).
+
+::: pf-proof
+
 Assume condition (d). Thus there are
 $$
 \alpha\in\RR,
@@ -295,17 +324,29 @@ $$
 J\circ T=T\circ J.
 $$
 This is condition (c).
+
 :::
 
-<1>6. Condition (d) therefore implies each of (a), (b), and (c).
-
-::: {.proof}
-Step <1>5 gives (c), and step <1>4 gives the equivalence of (a)--(c).
 :::
 
-<1>7. The converse implication from (a)--(c) to (d) is false.
+::: {.pf-step #s6}
 
-::: {.proof}
+Condition (d) therefore implies each of (a), (b), and (c).
+
+::: pf-proof
+
+Step [](#s5){.pf-ref} gives (c), and step [](#s4){.pf-ref} gives the equivalence of (a)--(c).
+
+:::
+
+:::
+
+::: {.pf-step #s7}
+
+The converse implication from (a)--(c) to (d) is false.
+
+::: pf-proof
+
 Consider
 $$
 T(z)=-\frac1z.
@@ -318,7 +359,7 @@ $$
 \end{pmatrix},
 $$
 so it satisfies condition (b), and hence conditions (a) and (c) by step
-<1>4.
+[](#s4){.pf-ref}.
 
 Its fixed points satisfy
 $$
@@ -338,9 +379,14 @@ $$
 \alpha\in\RR
 $$
 with $T(\alpha)=\alpha$, so condition (d) fails.
+
 :::
 
-<1>8. The true implication pattern for the four printed conditions is
+:::
+
+::: {.pf-step #s8}
+
+The true implication pattern for the four printed conditions is
 $$
 \boxed{
 \text{(d)}
@@ -354,16 +400,23 @@ $$
 $$
 and the implication from (a)--(c) back to (d) need not hold.
 
-::: {.proof}
-Step <1>4 proves the three-way equivalence, step <1>6 proves the implication
-from (d), and step <1>7 disproves the converse.
+::: pf-proof
+
+Step [](#s4){.pf-ref} proves the three-way equivalence, step [](#s6){.pf-ref} proves the implication
+from (d), and step [](#s7){.pf-ref} disproves the converse.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 proves the equivalence of (a)--(c), the implication from (d), and the failure of the converse.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} proves the equivalence of (a)--(c), the implication from (d), and the failure of the converse.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

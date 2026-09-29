@@ -47,9 +47,14 @@ $$
 g=1+r+s.
 $$
 
-<1>1. Both $r$ and $s$ are proper divisors of $g$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Both $r$ and $s$ are proper divisors of $g$.
+
+::: pf-proof
+
 For any $x\in G$, the size of its conjugacy class is
 $$
 |G:C_G(x)|,
@@ -57,16 +62,22 @@ $$
 so it divides $g$. A conjugacy class of a nonidentity element cannot
 have size $g$, since its centralizer contains at least the identity and
 the element itself. Hence $r,s<g$.
+
 :::
 
-<1>2. If $g$ is odd, then
+:::
+
+::: {.pf-step #s2}
+
+If $g$ is odd, then
 $$
 g=3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 When $g$ is odd, every proper divisor of $g$ is at most $g/3$.
-Therefore step <1>1 gives
+Therefore step [](#s1){.pf-ref} gives
 $$
 r,s\le\frac g3.
 $$
@@ -78,23 +89,35 @@ g
 $$
 so $g\le3$. A group with three nonempty conjugacy classes has at least
 three elements, hence $g=3$.
+
 :::
 
-<1>3. The unique odd-order possibility is
+:::
+
+::: {.pf-step #s3}
+
+The unique odd-order possibility is
 $$
 C_3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every group of prime order $3$ is cyclic. The group $C_3$ is abelian,
 so each element is its own conjugacy class and it has exactly three
 conjugacy classes.
+
 :::
 
-<1>4. Suppose $g$ is even. Then one of $r,s$ equals $g/2$.
+:::
 
-::: {.proof}
-By step <1>1, $r$ and $s$ are proper divisors of the even integer $g$,
+::: {.pf-step #s4}
+
+Suppose $g$ is even. Then one of $r,s$ equals $g/2$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $r$ and $s$ are proper divisors of the even integer $g$,
 so
 $$
 r,s\le\frac g2.
@@ -108,14 +131,20 @@ $$
 g=1+r+s\le g-1,
 $$
 a contradiction. Thus one class has size $g/2$.
+
 :::
 
-<1>5. In the even-order case,
+:::
+
+::: {.pf-step #s5}
+
+In the even-order case,
 $$
 g\in\{4,6\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Relabel if necessary so that
 $$
 s=\frac g2.
@@ -128,27 +157,39 @@ hence
 $$
 g=2r+2.
 $$
-Since $r$ is a conjugacy-class size, step <1>1 gives $r\mid g$. Thus
+Since $r$ is a conjugacy-class size, step [](#s1){.pf-ref} gives $r\mid g$. Thus
 $$
 r\mid(g-2r)=2,
 $$
 so $r=1$ or $r=2$. These give $g=4$ and $g=6$, respectively.
+
 :::
 
-<1>6. The case $g=4$ is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The case $g=4$ is impossible.
+
+::: pf-proof
+
 Every group of order $p^2$ is abelian; in particular every group of
 order $4$ is abelian. An abelian group of order $4$ has four singleton
 conjugacy classes, not three.
+
 :::
 
-<1>7. If $g=6$, then
+:::
+
+::: {.pf-step #s7}
+
+If $g=6$, then
 $$
 G\cong S_3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A group of order $6$ with only three conjugacy classes cannot be
 abelian, since an abelian group has one conjugacy class per element.
 
@@ -174,11 +215,17 @@ G
 \cong
 S_3.
 $$
+
 :::
 
-<1>8. The group $S_3$ has exactly three conjugacy classes.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+The group $S_3$ has exactly three conjugacy classes.
+
+::: pf-proof
+
 Its conjugacy classes are
 $$
 \{1\},
@@ -188,21 +235,32 @@ $$
 \{\text{two }3\text{-cycles}\}.
 $$
 Thus their sizes are $1,3,2$.
+
 :::
 
-<1>9. Therefore the complete list is
+:::
+
+::: {.pf-step #s9}
+
+Therefore the complete list is
 $$
 \boxed{C_3\ \text{and}\ S_3}.
 $$
 
-::: {.proof}
-Steps <1>2--<1>6 exhaust all possible group orders, while steps <1>3,
-<1>7, and <1>8 identify and verify the two surviving groups.
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} exhaust all possible group orders, while steps [](#s3){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} identify and verify the two surviving groups.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>9 is the required classification.
 :::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref} is the required classification.
+
+:::
+
+:::
+
 :::

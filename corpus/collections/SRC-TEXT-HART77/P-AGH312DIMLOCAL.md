@@ -36,20 +36,31 @@ Reduce to the affine case and use (3.2c).
 ::: {.solution}
 Choose an affine open neighborhood $U\subseteq X$ of $P$.
 
-<1>1. The local rings of $X$ and $U$ at $P$ are canonically isomorphic:
+::: pf
+
+::: {.pf-step #s1}
+
+The local rings of $X$ and $U$ at $P$ are canonically isomorphic:
 $$
 \mco_{P,X}\cong\mco_{P,U}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A germ of a regular function at $P$ is represented by a regular function on some open neighborhood of $P$.
 Intersecting that neighborhood with $U$ does not change the germ, and every open neighborhood of $P$ inside $U$ is also open in $X$ because $U$ is open.
 Thus the two germ constructions have the same representatives and the same equivalence relation.
+
 :::
 
-<1>2. The affine open subset $U$ has the same dimension as $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The affine open subset $U$ has the same dimension as $X$.
+
+::: pf-proof
+
 The variety $X$ is irreducible, and $U$ is a nonempty open subset.
 The function fields are therefore the same:
 $$
@@ -61,24 +72,36 @@ $$
 \dim U=\operatorname{trdeg}_k K(U)
 =\operatorname{trdeg}_k K(X)=\dim X.
 $$
+
 :::
 
-<1>3. The local ring at $P$ has dimension $\dim X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The local ring at $P$ has dimension $\dim X$.
+
+::: pf-proof
+
 Since $U$ is affine, Hartshorne's Theorem I.3.2(c) gives
 $$
 \dim\mco_{P,U}=\dim U.
 $$
-Combining steps <1>1--<1>2 yields
+Combining steps [](#s1){.pf-ref} and [](#s2){.pf-ref} yields
 $$
 \dim\mco_{P,X}=\dim\mco_{P,U}=\dim U=\boxed{\dim X}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required equality.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required equality.
+
+:::
+
+:::
+
 :::

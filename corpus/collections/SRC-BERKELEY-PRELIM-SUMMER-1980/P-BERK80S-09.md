@@ -45,10 +45,15 @@ $$
 u_n=\frac{a^n}{n^b(\log n)^c}.
 $$
 
-<1>1. If $\abs{a}<1$, the series converges absolutely; if $\abs{a}>1$, it
+::: pf
+
+::: {.pf-step #s1}
+
+If $\abs{a}<1$, the series converges absolutely; if $\abs{a}>1$, it
 diverges.
 
-::: {.proof}
+::: pf-proof
+
 The $n$th root of $\abs{u_n}$ satisfies
 $$
 \abs{u_n}^{1/n}
@@ -57,15 +62,21 @@ $$
 $$
 The root test gives absolute convergence when $\abs{a}<1$ and divergence
 when $\abs{a}>1$.
+
 :::
 
-<1>2. For $\abs{a}=1$, the series
+:::
+
+::: {.pf-step #s2}
+
+For $\abs{a}=1$, the series
 $$
 \sum_{n=3}^\infty \abs{u_n}=\sum_{n=3}^\infty \frac1{n^b(\log n)^c}
 $$
 converges exactly when $b>1$, or when $b=1$ and $c>1$.
 
-::: {.proof}
+::: pf-proof
+
 If $b=1$, the integral test compares the series with
 $$
 \int_3^\infty \frac{dx}{x(\log x)^c}.
@@ -89,23 +100,35 @@ $$
 $$
 and $b+\varepsilon<1$, so the series diverges. When $c\le0$, the summand
 is at least $n^{-b}$ for $n\ge3$, and the series diverges because $b<1$.
+
 :::
 
-<1>3. For $a=1$, the series converges exactly when it converges
+:::
+
+::: {.pf-step #s3}
+
+For $a=1$, the series converges exactly when it converges
 absolutely.
 
-::: {.proof}
+::: pf-proof
+
 For $a=1$ every term is positive, so $u_n=\abs{u_n}$.
+
 :::
 
-<1>4. For $a=-1$, the series converges exactly when
+:::
+
+::: {.pf-step #s4}
+
+For $a=-1$, the series converges exactly when
 $$
 b>0
 \qquad\text{or}\qquad
 b=0,\ c>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 d_n=\frac1{n^b(\log n)^c}>0,
@@ -119,9 +142,14 @@ $$
 $$
 for large $x$, so $d_n$ is eventually decreasing, and the alternating
 series test gives convergence.
+
 :::
 
-<1>5. The series
+:::
+
+::: {.pf-step #s5}
+
+The series
 $$
 \boxed{
 \begin{aligned}
@@ -132,17 +160,24 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>1 and <1>2 give the absolute-convergence region. Conditional
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the absolute-convergence region. Conditional
 convergence requires convergence without absolute convergence; by step
-<1>1 this forces $\abs{a}=1$, by step <1>3 it forces $a=-1$, and step <1>4
-together with step <1>2 gives the listed parameters. Every other
-parameter value gives a divergent series by steps <1>1--<1>4.
+[](#s1){.pf-ref} this forces $\abs{a}=1$, by step [](#s3){.pf-ref} it forces $a=-1$, and step [](#s4){.pf-ref}
+together with step [](#s2){.pf-ref} gives the listed parameters. Every other
+parameter value gives a divergent series by steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers all three parts.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} answers all three parts.
+
+:::
+
+:::
+
 :::

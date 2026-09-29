@@ -41,8 +41,14 @@ by
 \Psi([f])=([p_1\circ f],[p_2\circ f]).
 \]
 
-<1>1. The map $\Psi$ is a homomorphism.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The map $\Psi$ is a homomorphism.
+
+::: pf-proof
+
 For based loops $f,g$ in $X\times Y$,
 \[
 p_i\circ(f\cdot g)=(p_i\circ f)\cdot(p_i\circ g)
@@ -57,9 +63,14 @@ Hence
 \Psi([f])\Psi([g]).
 \]
 The definition depends only on the based homotopy class because composing a based homotopy with either projection gives a based homotopy in the corresponding factor.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 \Theta:\pi_1(X,x_0)\times\pi_1(Y,y_0)
 \longrightarrow
@@ -70,7 +81,9 @@ by
 \Theta([a],[b])=[t\mapsto(a(t),b(t))].
 \]
 Then $\Theta$ is well defined.
-::: {.proof}
+
+::: pf-proof
+
 If $a\simeq a'$ and $b\simeq b'$ relative to endpoints, let
 \[
 A:I\times I\to X,
@@ -84,13 +97,20 @@ H(s,t)=(A(s,t),B(s,t))
 \]
 is a based homotopy in $X\times Y$ from $(a,b)$ to $(a',b')$.
 Thus the class defining $\Theta$ depends only on $[a]$ and $[b]$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 \Psi\circ\Theta=\operatorname{id}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $([a],[b])$,
 \[
 \Psi\Theta([a],[b])
@@ -100,13 +120,20 @@ For $([a],[b])$,
 ([a],[b]),
 \]
 since the two projections recover $a$ and $b$ exactly.
+
 :::
 
-<1>4. One also has
+:::
+
+::: {.pf-step #s4}
+
+One also has
 \[
 \Theta\circ\Psi=\operatorname{id}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $f:I\to X\times Y$ is a based loop, then for every $t$
 \[
 f(t)=\bigl(p_1(f(t)),p_2(f(t))\bigr).
@@ -119,14 +146,27 @@ is literally $f$, so
 \[
 \Theta\Psi([f])=[f].
 \]
+
 :::
 
-<1>5. Thus $\Psi$ is the product isomorphism, and it is exactly
+:::
+
+::: pf-step
+
+Thus $\Psi$ is the product isomorphism, and it is exactly
 \[
 [f]\longmapsto\bigl(p_{1*}([f]),p_{2*}([f])\bigr).
 \]
-::: {.proof}
-By <1>3--<1>4, $\Theta$ is a two-sided inverse of $\Psi$.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $\Theta$ is a two-sided inverse of $\Psi$.
 The displayed formula is the definition of the two induced projection maps.
+
 :::
+
+:::
+
+:::
+
 :::

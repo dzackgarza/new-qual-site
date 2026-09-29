@@ -48,9 +48,14 @@ $$
 G=\bigoplus_{a=1}^r j_{a*}\widetilde{J_a}.
 $$
 
-<1>1. Each $j_{a*}\widetilde{J_a}$ is a quasi-coherent sheaf injective in $\QCoh(X)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Each $j_{a*}\widetilde{J_a}$ is a quasi-coherent sheaf injective in $\QCoh(X)$.
+
+::: pf-proof
+
 An open immersion into a noetherian scheme is quasi-compact and separated.
 Its direct image preserves quasi-coherence [@Har10a, Proposition II.5.8(c)], as used in [[P-AGH2515EXTCOH]].
 Thus $j_{a*}\widetilde{J_a}$ is quasi-coherent.
@@ -65,13 +70,19 @@ Given a monomorphism $E\hookrightarrow E'$ in $\QCoh(X)$, restriction is exact a
 A morphism from $E|_{U_a}$ to $\widetilde{J_a}$ therefore extends to $E'|_{U_a}$ by injectivity on that affine open.
 Adjunction turns this extension into an extension from $E'$ to $j_{a*}\widetilde{J_a}$.
 This is injectivity in $\QCoh(X)$.
+
 :::
 
-<1>2. The sheaf $G$ is injective in $\QCoh(X)$, and the construction gives a monomorphism $F\hookrightarrow G$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The sheaf $G$ is injective in $\QCoh(X)$, and the construction gives a monomorphism $F\hookrightarrow G$.
+
+::: pf-proof
+
 A finite direct sum is also a finite product.
-To extend a map into $G$ across a monomorphism, extend each of its finitely many components using step <1>1 and assemble them.
+To extend a map into $G$ across a monomorphism, extend each of its finitely many components using step [](#s1){.pf-ref} and assemble them.
 Hence $G$ is injective.
 
 The local embeddings $F|_{U_a}\hookrightarrow\widetilde{J_a}$ induce maps $F\to j_{a*}\widetilde{J_a}$ by adjunction.
@@ -80,11 +91,17 @@ At any point $x\in X$, choose $a$ with $x\in U_a$.
 The $a$th component on that stalk is the injective map $F_x\to(\widetilde{J_a})_x$, because restriction of $j_{a*}$ back to $U_a$ is the identity.
 Thus the combined map is injective at every stalk and is a monomorphism.
 Every quasi-coherent sheaf therefore embeds into an injective object of $\QCoh(X)$, proving (a).
+
 :::
 
-<1>3. The sheaf $G$ is flasque, and every injective object of $\QCoh(X)$ is flasque.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The sheaf $G$ is flasque, and every injective object of $\QCoh(X)$ is flasque.
+
+::: pf-proof
+
 Since $A_a$ is noetherian and $J_a$ is an injective module, $\widetilde{J_a}$ is flasque on $U_a$ [@Har10a, Proposition III.3.4].
 For open sets $W\subseteq V\subseteq X$, the restriction map of its direct image is
 $$
@@ -94,31 +111,43 @@ which is surjective by flasqueness on $U_a$.
 Thus each summand of $G$ is flasque, and so is the finite direct sum.
 
 Now let $I$ be injective in $\QCoh(X)$.
-Step <1>2, applied to $F=I$, gives a monomorphism $e:I\hookrightarrow G$ with $G$ flasque and quasi-coherent.
+Step [](#s2){.pf-ref}, applied to $F=I$, gives a monomorphism $e:I\hookrightarrow G$ with $G$ flasque and quasi-coherent.
 Injectivity of $I$ extends $\id_I$ along $e$ to a morphism $p:G\to I$ satisfying $pe=\id_I$.
 For any $W\subseteq V$ and $s\in I(W)$, extend $e(s)$ to $t\in G(V)$ by flasqueness, then apply $p$.
 The section $p(t)$ restricts to $pe(s)=s$.
 Hence every restriction map on $I$ is surjective, proving (b).
+
 :::
 
-<1>4. For every $F\in\QCoh(X)$ and $i\ge0$, the derived functor computed in $\QCoh(X)$ agrees naturally with sheaf cohomology:
+:::
+
+::: {.pf-step #s4}
+
+For every $F\in\QCoh(X)$ and $i\ge0$, the derived functor computed in $\QCoh(X)$ agrees naturally with sheaf cohomology:
 $$
 R^i\bigl(\Gamma(X,-)|_{\QCoh(X)}\bigr)(F)\cong H^i(X,F).
 $$
 
-::: {.proof}
-By step <1>2, choose an injective resolution $F\to I^\bullet$ in $\QCoh(X)$.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, choose an injective resolution $F\to I^\bullet$ in $\QCoh(X)$.
 The exact inclusion of $\QCoh(X)$ into all module sheaves makes this an exact resolution of the underlying abelian sheaf.
-Step <1>3 makes its terms flasque.
+Step [](#s3){.pf-ref} makes its terms flasque.
 They are consequently acyclic for ordinary global sections, so this same resolution computes ordinary sheaf cohomology [@Har10a, Proposition III.2.5 and Remark III.2.5.1].
 On the other hand, its global-section complex defines the derived functor in $\QCoh(X)$.
 The two computations are the identical complex $\Gamma(X,I^\bullet)$, giving the asserted isomorphism in all degrees.
 Comparison of resolutions gives naturality in $F$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove (a), step <1>3 proves (b), and step <1>4 proves (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), step [](#s3){.pf-ref} proves (b), and step [](#s4){.pf-ref} proves (c).
+
+:::
+
+:::
+
 :::

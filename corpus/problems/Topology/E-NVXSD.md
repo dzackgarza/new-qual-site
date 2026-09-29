@@ -20,18 +20,45 @@ Show that if $f:X\to Y$ is continuous and $X$ is compact then $f(X)$ is compact.
 :::
 
 ::: {.solution}
-<1>1. Let $\mathcal U$ be an open cover of $f(X)$. Then $\{f^{-1}(U):U\in\mathcal U\}$ is an open cover of $X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $\mathcal U$ be an open cover of $f(X)$. Then $\{f^{-1}(U):U\in\mathcal U\}$ is an open cover of $X$.
+
+::: pf-proof
+
 Continuity makes each preimage open, and every $x\in X$ maps into some member of $\mathcal U$.
+
 :::
 
-<1>2. Compactness of $X$ gives finitely many $U_1,\dots,U_r\in\mathcal U$ whose preimages cover $X$.
-::: {.proof}
-Apply the definition of compactness to the cover in <1>1.
 :::
 
-<1>3. Then $U_1,\dots,U_r$ cover $f(X)$, so $f(X)$ is compact.
-::: {.proof}
+::: pf-step
+
+Compactness of $X$ gives finitely many $U_1,\dots,U_r\in\mathcal U$ whose preimages cover $X$.
+
+::: pf-proof
+
+Apply the definition of compactness to the cover in step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+Then $U_1,\dots,U_r$ cover $f(X)$, so $f(X)$ is compact.
+
+::: pf-proof
+
 For $y=f(x)$, some $f^{-1}(U_i)$ contains $x$, hence $y\in U_i$.
+
 :::
+
+:::
+
+:::
+
 :::

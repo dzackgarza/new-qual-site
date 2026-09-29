@@ -37,7 +37,12 @@ Prove or give a counterexample: must $b=0$?
 :::
 
 ::: {.solution}
-<1>1. For every $x\in\RR$, there is a point
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in\RR$, there is a point
 $$
 \xi_x\in(x,x+1)
 $$
@@ -46,16 +51,23 @@ $$
 \varphi(x+1)-\varphi(x)=\varphi'(\xi_x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply the mean value theorem to $\varphi$ on the interval $[x,x+1]$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 b=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 As $x\to\infty$,
 $$
 \varphi(x+1)-\varphi(x)\longrightarrow a-a=0.
@@ -68,21 +80,33 @@ The hypothesis $\varphi'(y)\to b$ as $y\to\infty$ therefore gives
 $$
 \varphi'(\xi_x)\longrightarrow b.
 $$
-Taking limits in the identity from step <1>1 yields $0=b$.
+Taking limits in the identity from step [](#s1){.pf-ref} yields $0=b$.
+
 :::
 
-<1>3. Thus the answer is
+:::
+
+::: {.pf-step #s3}
+
+Thus the answer is
 $$
 \boxed{\text{yes: }b=0}.
 $$
 
-::: {.proof}
-This is exactly step <1>2.
+::: pf-proof
+
+This is exactly step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

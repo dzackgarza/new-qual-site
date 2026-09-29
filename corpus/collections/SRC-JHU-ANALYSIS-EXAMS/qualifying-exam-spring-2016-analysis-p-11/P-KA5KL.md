@@ -39,9 +39,14 @@ Prove that $A^2(U)$ is a Hilbert space when equipped with this inner product.
 ::: {.solution}
 Write $dA=dx\,dy$ and $\|f\|_2^2=\int_U|f|^2\,dA$.
 
-<1>1. The formula defines an inner product on the vector space $A^2(U)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The formula defines an inner product on the vector space $A^2(U)$.
+
+::: pf-proof
+
 Linear combinations of holomorphic functions are holomorphic,
 and
 $|af+bg|^2\leq2|a|^2|f|^2+2|b|^2|g|^2$
@@ -55,11 +60,17 @@ If a holomorphic $f$ is nonzero at $a\in U$, continuity
 gives a disk of positive area on which $|f|\geq|f(a)|/2$.
 Then $\|f\|_2>0$. Hence $\|f\|_2=0$ implies $f(a)=0$ at
 every $a\in U$, which is positive definiteness.
+
 :::
 
-<1>2. Every compact subset has an $L^2$ point-evaluation bound.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every compact subset has an $L^2$ point-evaluation bound.
+
+::: pf-proof
+
 For $\overline{D(a,r)}\subset U$, Cauchy's circle formula
 and Cauchy–Schwarz imply, for $0<\rho<r$,
 $$
@@ -75,15 +86,21 @@ $$
 \sup_{a\in K}|f(a)|\leq\frac1{\sqrt\pi r}\|f\|_2.
 $$
 The same estimate holds for differences of functions in $A^2(U)$.
+
 :::
 
-<1>3. The inner-product space is complete.
+:::
 
-::: {.proof}
+::: pf-step
+
+The inner-product space is complete.
+
+::: pf-proof
+
 Let $(f_n)$ be Cauchy in this norm. Completeness of
 $L^2(U)$ gives an $L^2$ limit $F$, regarded as a measurable
 representative of its almost-everywhere class [@Fol13].
-Step <1>2 makes $(f_n)$ uniformly Cauchy on every compact
+Step [](#s2){.pf-ref} makes $(f_n)$ uniformly Cauchy on every compact
 subset of $U$. Pointwise completeness of $\mathbb C$ and
 that same estimate give a locally uniform limit $f$.
 This limit is holomorphic by the local uniform limit
@@ -99,5 +116,11 @@ $$
 $f\in A^2(U)$ and $\|f_n-f\|_2=\|f_n-F\|_2\to0$.
 Thus every Cauchy sequence converges in $A^2(U)$, proving
 that it is a Hilbert space.
+
 :::
+
+:::
+
+:::
+
 :::

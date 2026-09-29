@@ -66,13 +66,18 @@ $$
 a\tensor c\longmapsto f^\sharp(a)c.
 $$
 
-<1>1. If $f$ is étale, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $f$ is étale, then
 $$
 \mathfrak m=\mathfrak nB
 $$
 and $k_x/k_y$ is finite separable.
 
-::: {.proof}
+::: pf-proof
+
 By [[P-AGH3103ETALECHAR|Exercise III.10.3]], an étale morphism is flat and
 unramified. Hartshorne's definition of unramifiedness gives
 $$
@@ -82,17 +87,23 @@ and says that $k_x/k_y$ is separable algebraic.
 Because $B$ is essentially of finite type over $A$, the residue-field
 extension is finitely generated. A finitely generated algebraic field
 extension is finite. Thus $k_x/k_y$ is finite separable.
+
 :::
 
-<1>2. If $f$ is étale, then for every $r\ge0$ there is a natural isomorphism
+:::
+
+::: {.pf-step #s2}
+
+If $f$ is étale, then for every $r\ge0$ there is a natural isomorphism
 $$
 \mathfrak m^r/\mathfrak m^{r+1}
 \cong
 (\mathfrak n^r/\mathfrak n^{r+1})\tensor_{k_y}k_x.
 $$
 
-::: {.proof}
-The local map $A\to B$ is flat by step <1>1. Tensor the exact sequence
+::: pf-proof
+
+The local map $A\to B$ is flat by step [](#s1){.pf-ref}. Tensor the exact sequence
 $$
 0\longrightarrow\mathfrak n^{r+1}
 \longrightarrow\mathfrak n^r
@@ -105,7 +116,7 @@ $$
 \cong
 \mathfrak n^rB/\mathfrak n^{r+1}B.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \mathfrak n^rB=\mathfrak m^r.
 $$
@@ -121,15 +132,21 @@ $$
 (\mathfrak n^r/\mathfrak n^{r+1})\tensor_{k_y}k_x,
 $$
 which proves the assertion.
+
 :::
 
-<1>3. If $f$ is étale, the map
+:::
+
+::: {.pf-step #s3}
+
+If $f$ is étale, the map
 $$
 \Phi:\widehat A\tensor_{k_y}k_x\longrightarrow\widehat B
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 Because $k_x/k_y$ is finite, the source is a finite free $\widehat A$-module.
 It is therefore complete and separated for the
 $\mathfrak n\widehat A$-adic filtration.
@@ -143,7 +160,7 @@ $$
 $$
 and similarly for $B$.
 Thus the map induced by $\Phi$ on the $r$th associated graded piece is exactly
-the isomorphism of step <1>2.
+the isomorphism of step [](#s2){.pf-ref}.
 
 It follows inductively that for every $N\ge1$, $\Phi$ induces an isomorphism
 $$
@@ -161,14 +178,20 @@ $$
 $$
 This proves the required completed-local-ring condition in the forward
 direction.
+
 :::
 
-<1>4. Conversely, assume that $k_x/k_y$ is separable algebraic and that $\Phi$ is an isomorphism. Then
+:::
+
+::: {.pf-step #s4}
+
+Conversely, assume that $k_x/k_y$ is separable algebraic and that $\Phi$ is an isomorphism. Then
 $$
 \mathfrak m\widehat B=\mathfrak n\widehat B.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Again $k_x/k_y$ is finite because it is algebraic and finitely generated.
 Modulo $\mathfrak n\widehat A$, the source of $\Phi$ is
 $$
@@ -187,14 +210,20 @@ maps to the maximal ideal $\mathfrak m\widehat B$ of $\widehat B$. Hence
 $$
 \boxed{\mathfrak n\widehat B=\mathfrak m\widehat B}.
 $$
+
 :::
 
-<1>5. Under the hypotheses of step <1>4, the local map $A\to B$ is flat and satisfies
+:::
+
+::: {.pf-step #s5}
+
+Under the hypotheses of step [](#s4){.pf-ref}, the local map $A\to B$ is flat and satisfies
 $$
 \mathfrak nB=\mathfrak m.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The completion $\widehat A$ is flat over the noetherian local ring $A$.
 Since $k_x$ is a vector space over $k_y$,
 $$
@@ -213,7 +242,7 @@ $\widehat B$. The result is exact because $\widehat B$ is $A$-flat; faithful
 flatness then shows that the sequence after tensoring with $B$ was already
 exact. Thus $B$ is flat over $A$.
 
-Now step <1>4 gives
+Now step [](#s4){.pf-ref} gives
 $$
 (\mathfrak m/\mathfrak nB)\tensor_B\widehat B=0.
 $$
@@ -225,12 +254,18 @@ Hence
 $$
 \boxed{\mathfrak nB=\mathfrak m}.
 $$
+
 :::
 
-<1>6. The completed-local-ring condition implies that $f$ is étale at $x$.
+:::
 
-::: {.proof}
-Step <1>5 proves that $A\to B$ is flat and that
+::: {.pf-step #s6}
+
+The completed-local-ring condition implies that $f$ is étale at $x$.
+
+::: pf-proof
+
+Step [](#s5){.pf-ref} proves that $A\to B$ is flat and that
 $$
 \mathfrak m_y\OO_{X,x}=\mathfrak m_x.
 $$
@@ -238,22 +273,34 @@ By hypothesis $k_x/k_y$ is separable algebraic. Thus $f$ is unramified at
 $x$ in Hartshorne's sense.
 Exercise [[P-AGH3103ETALECHAR|III.10.3]] says that flat plus unramified is
 equivalent to étale. Therefore $f$ is étale at $x$.
+
 :::
 
-<1>7. The two conditions are equivalent globally.
+:::
 
-::: {.proof}
-If $f$ is étale, steps <1>1--<1>3 establish the stated completed-local-ring
+::: {.pf-step #s7}
+
+The two conditions are equivalent globally.
+
+::: pf-proof
+
+If $f$ is étale, steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} establish the stated completed-local-ring
 condition for every $x\in X$.
-Conversely, if that condition holds for every $x$, steps <1>4--<1>6 show that
+Conversely, if that condition holds for every $x$, steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} show that
 $f$ is étale at every point of $X$. Hence $f$ is étale.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove the forward implication by comparing associated graded
-rings, and steps <1>4--<1>7 recover flatness and unramifiedness from the
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the forward implication by comparing associated graded
+rings, and steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} recover flatness and unramifiedness from the
 completed isomorphism and descend them to the original local rings.
+
 :::
+
+:::
+
 :::

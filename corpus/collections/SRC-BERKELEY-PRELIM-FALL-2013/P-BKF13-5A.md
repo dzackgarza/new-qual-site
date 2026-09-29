@@ -42,29 +42,40 @@ I\coloneqq
 \int_0^{2\pi}\frac{\cos x}{2+\cos x}\,dx.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 I
 =2\pi
 -2\int_0^{2\pi}\frac{dx}{2+\cos x}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \frac{\cos x}{2+\cos x}
 =1-\frac2{2+\cos x},
 $$
 integration over $[0,2\pi]$ gives the formula.
+
 :::
 
-<1>2. The auxiliary integral satisfies
+:::
+
+::: {.pf-step #s2}
+
+The auxiliary integral satisfies
 $$
 \int_0^{2\pi}\frac{dx}{2+\cos x}
 =\frac{2\pi}{\sqrt3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $\cos(2\pi-x)=\cos x$,
 $$
 \int_0^{2\pi}\frac{dx}{2+\cos x}
@@ -97,9 +108,14 @@ $$
 \end{aligned}
 $$
 Doubling gives the stated value.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 I
@@ -108,13 +124,20 @@ I
 }.
 $$
 
-::: {.proof}
-Substitute step <1>2 into step <1>1.
+::: pf-proof
+
+Substitute step [](#s2){.pf-ref} into step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

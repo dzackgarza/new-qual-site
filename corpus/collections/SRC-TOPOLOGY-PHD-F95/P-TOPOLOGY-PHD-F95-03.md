@@ -46,8 +46,14 @@ A=\prod_{\alpha\in I}A_\alpha,
 \]
 and let $\pi_\alpha:X\to X_\alpha$ denote the coordinate projection.
 
-<1>1. If every $A_\alpha$ is closed in $X_\alpha$, then $A$ is closed in $X$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If every $A_\alpha$ is closed in $X_\alpha$, then $A$ is closed in $X$.
+
+::: pf-proof
+
 For every $\alpha\in I$, the coordinate projection $\pi_\alpha$ is continuous in the product topology.
 Hence
 \[
@@ -61,13 +67,20 @@ A
 =\bigcap_{\alpha\in I}\pi_\alpha^{-1}(A_\alpha).
 \]
 An arbitrary intersection of closed sets is closed, so $A$ is closed in $X$.
+
 :::
 
-<1>2. One always has
+:::
+
+::: {.pf-step #s2}
+
+One always has
 \[
 \overline{A}\subseteq\prod_{\alpha\in I}\overline{A_\alpha}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For each $\alpha$,
 \[
 A_\alpha\subseteq\overline{A_\alpha},
@@ -76,15 +89,22 @@ so
 \[
 A\subseteq\prod_{\alpha\in I}\overline{A_\alpha}.
 \]
-By <1>1, the product on the right is closed in $X$ because every $\overline{A_\alpha}$ is closed.
+By step [](#s1){.pf-ref}, the product on the right is closed in $X$ because every $\overline{A_\alpha}$ is closed.
 Since $\overline A$ is the smallest closed subset of $X$ containing $A$, the claimed inclusion follows.
+
 :::
 
-<1>3. Conversely,
+:::
+
+::: {.pf-step #s3}
+
+Conversely,
 \[
 \prod_{\alpha\in I}\overline{A_\alpha}\subseteq\overline A.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If the product on the left is empty, there is nothing to prove.
 Otherwise let
 \[
@@ -120,19 +140,33 @@ a_\alpha,&\alpha\in F,\\b_\alpha,&\alpha\notin F.\end{cases}
 \]
 Then $y\in A$ and $y\in V\subseteq U$.
 Thus every neighborhood of $x$ meets $A$, so $x\in\overline A$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\overline{\prod_{\alpha\in I}A_\alpha}
 =\prod_{\alpha\in I}\overline{A_\alpha}}.
 \]
-::: {.proof}
-Combine <1>2 and <1>3.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
 
-<1>5. The assertion in part (c) is false for an infinite index set.
-::: {.proof}
+:::
+
+::: pf-step
+
+The assertion in part (c) is false for an infinite index set.
+
+::: pf-proof
+
 Take
 \[
 I=\NN,
@@ -167,5 +201,11 @@ This contradicts $V\subseteq A$.
 Hence $A$ is not open.
 
 For comparison, if $I$ is finite, then a product of open subsets is open; more generally, a product $\prod A_\alpha$ with all $A_\alpha$ open is a basic open set whenever $A_\alpha=X_\alpha$ for all but finitely many $\alpha$.
+
 :::
+
+:::
+
+:::
+
 :::

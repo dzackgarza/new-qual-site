@@ -31,7 +31,12 @@ Prove or disprove: the set $\mathbb Q$ of rational numbers is the intersection o
 :::
 
 ::: {.solution}
-<1>1. Suppose, toward a contradiction, that there are open sets
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, toward a contradiction, that there are open sets
 $$
 U_1,U_2,\ldots\subseteq\RR
 $$
@@ -40,22 +45,34 @@ $$
 \QQ=\bigcap_{n=1}^{\infty}U_n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the negation of the conclusion to be proved.
+
 :::
 
-<1>2. Every $U_n$ is dense in $\RR$.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #s2}
+
+Every $U_n$ is dense in $\RR$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \QQ\subseteq U_n
 $$
 for every $n$. The rational numbers are dense in $\RR$, so every set
 containing $\QQ$ is dense.
+
 :::
 
-<1>3. Enumerate the rationals as
+:::
+
+::: {.pf-step #s3}
+
+Enumerate the rationals as
 $$
 \QQ=\{q_1,q_2,\ldots\}
 $$
@@ -65,7 +82,8 @@ V_n=U_n\sm\{q_n\}.
 $$
 Then every $V_n$ is open and dense in $\RR$.
 
-::: {.proof}
+::: pf-proof
+
 The set
 $$
 \RR\sm\{q_n\}
@@ -78,20 +96,26 @@ U_n\cap(\RR\sm\{q_n\})
 $$
 is open.
 
-By step <1>2, $U_n$ is open and dense, and
+By step [](#s2){.pf-ref}, $U_n$ is open and dense, and
 $\RR\sm\{q_n\}$ is also open and dense. The intersection of two open dense
 subsets of $\RR$ is dense, so $V_n$ is dense.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \bigcap_{n=1}^{\infty}V_n=\varnothing.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $x\in\RR$.
 
-If $x$ is irrational, then by step <1>1,
+If $x$ is irrational, then by step [](#s1){.pf-ref},
 $$
 x\notin\bigcap_{n=1}^{\infty}U_n,
 $$
@@ -103,31 +127,49 @@ q_k\notin V_k.
 $$
 
 Thus no real number belongs to every $V_n$.
+
 :::
 
-<1>5. Step <1>4 contradicts the Baire category theorem.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Step [](#s4){.pf-ref} contradicts the Baire category theorem.
+
+::: pf-proof
+
 The real line $\RR$ is a complete metric space. By the Baire category
 theorem, a countable intersection of open dense subsets of $\RR$ is dense,
-and in particular nonempty. Step <1>3 says that every $V_n$ is open and
-dense, while step <1>4 says their intersection is empty. This is impossible.
+and in particular nonempty. Step [](#s3){.pf-ref} says that every $V_n$ is open and
+dense, while step [](#s4){.pf-ref} says their intersection is empty. This is impossible.
+
 :::
 
-<1>6. Therefore the statement is false:
+:::
+
+::: {.pf-step #s6}
+
+Therefore the statement is false:
 $$
 \boxed{
 \QQ\text{ is not a countable intersection of open subsets of }\RR.
 }
 $$
 
-::: {.proof}
-The assumption in step <1>1 led to the contradiction in step <1>5.
+::: pf-proof
+
+The assumption in step [](#s1){.pf-ref} led to the contradiction in step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the required disproof.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the required disproof.
+
+:::
+
+:::
+
 :::

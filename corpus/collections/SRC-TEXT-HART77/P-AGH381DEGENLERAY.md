@@ -32,9 +32,15 @@ This is a degenerate case of the Leray spectral sequence; see Godement [1, II, 4
 :::
 
 ::: {.solution}
-<1>1. The direct-image functor $f_*$ sends injective sheaves on $X$ to injective sheaves on $Y$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The direct-image functor $f_*$ sends injective sheaves on $X$ to injective sheaves on $Y$.
+
+::: pf-proof
+
 The inverse-image functor
 $$
 f^{-1}:\operatorname{Ab}(Y)\longrightarrow\operatorname{Ab}(X)
@@ -65,9 +71,14 @@ $$
 \operatorname{Hom}_Y(\mcg',f_*\mci),
 $$
 so $f_*\mci$ is injective.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 0\longrightarrow\mcf\longrightarrow\mci^0\longrightarrow\mci^1\longrightarrow\cdots
 $$
@@ -77,8 +88,9 @@ $$
 $$
 is an injective resolution on $Y$.
 
-::: {.proof}
-By step <1>1 every $f_*\mci^q$ is injective.
+::: pf-proof
+
+By step [](#s1){.pf-ref} every $f_*\mci^q$ is injective.
 By definition, the cohomology sheaves of the complex
 $$
 f_*\mci^0\longrightarrow f_*\mci^1\longrightarrow\cdots
@@ -90,11 +102,17 @@ $$
 The degree-zero cohomology is $f_*\mcf$, because $f_*$ is left exact, and all positive-degree cohomology sheaves vanish by hypothesis.
 Thus adjoining $f_*\mcf$ in degree zero makes the displayed complex exact.
 It is therefore an injective resolution of $f_*\mcf$.
+
 :::
 
-<1>3. Applying global sections to the two resolutions gives the same cochain complex.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Applying global sections to the two resolutions gives the same cochain complex.
+
+::: pf-proof
+
 For every sheaf $\mci$ on $X$, the definition of direct image gives
 $$
 \Gamma(Y,f_*\mci)
@@ -109,31 +127,43 @@ $$
 $$
 and these equalities commute with the differentials.
 So the global-section complexes calculating the two cohomologies are identical.
+
 :::
 
-<1>4. For every $i\ge0$ there is a natural isomorphism
+:::
+
+::: {.pf-step #s4}
+
+For every $i\ge0$ there is a natural isomorphism
 $$
 \boxed{H^i(X,\mcf)\cong H^i(Y,f_*\mcf)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The injective resolution $\mci^\bullet$ computes
 $$
 H^i(X,\mcf)
 =H^i\bigl(\Gamma(X,\mci^\bullet)\bigr).
 $$
-By step <1>2, $f_*\mci^\bullet$ is an injective resolution of $f_*\mcf$, so it computes
+By step [](#s2){.pf-ref}, $f_*\mci^\bullet$ is an injective resolution of $f_*\mcf$, so it computes
 $$
 H^i(Y,f_*\mcf)
 =H^i\bigl(\Gamma(Y,f_*\mci^\bullet)\bigr).
 $$
-Step <1>3 identifies these cochain complexes canonically, hence identifies their cohomology groups.
+Step [](#s3){.pf-ref} identifies these cochain complexes canonically, hence identifies their cohomology groups.
 The construction is natural in $\mcf$ because comparison morphisms between injective resolutions are unique up to homotopy and the identification $\Gamma(Y,f_*(-))=\Gamma(X,-)$ is functorial.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required natural isomorphisms in every degree.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required natural isomorphisms in every degree.
+
+:::
+
+:::
+
 :::

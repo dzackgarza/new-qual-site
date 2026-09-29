@@ -28,16 +28,36 @@ Show that an injective continuous map from a compact space to a Hausdorff space 
 ::: {.solution}
 Let $f:X\to Y$ be continuous and injective, with $X$ compact and $Y$ Hausdorff.
 
-<1>1. The corestriction
+::: pf
+
+::: pf-step
+
+The corestriction
 $$
 f:X\longrightarrow f(X)
 $$
 is a continuous bijection.
 
-<1>2. It is a closed map.
-::: {.proof}
-If $C\subseteq X$ is closed, then $C$ is compact. Hence $f(C)$ is compact in $Y$, and compact subsets of a Hausdorff space are closed. Therefore $f(C)$ is closed in the subspace $f(X)$.
 :::
 
-<1>3. A bijective closed map has continuous inverse. Hence $f:X\to f(X)$ is a homeomorphism, so $f:X\to Y$ is an embedding.
+::: pf-step
+
+It is a closed map.
+
+::: pf-proof
+
+If $C\subseteq X$ is closed, then $C$ is compact. Hence $f(C)$ is compact in $Y$, and compact subsets of a Hausdorff space are closed. Therefore $f(C)$ is closed in the subspace $f(X)$.
+
+:::
+
+:::
+
+::: pf-step
+
+A bijective closed map has continuous inverse. Hence $f:X\to f(X)$ is a homeomorphism, so $f:X\to Y$ is an embedding.
+
+:::
+
+:::
+
 :::

@@ -35,10 +35,15 @@ Prove that $H$ is also a proper subgroup of $N_P(H)$, the normalizer of $H$ in $
 Let $X$ be the set of left cosets $P/H$. The subgroup $H$ acts
 on $X$ by left multiplication, $h\cdot(aH)=haH$.
 
-<1>1. The fixed cosets are exactly the cosets represented by
+::: pf
+
+::: {.pf-step #s1}
+
+The fixed cosets are exactly the cosets represented by
 elements of $N_P(H)$.
 
-::: {.proof}
+::: pf-proof
+
 A coset $aH$ is fixed by every $h\in H$ exactly when
 $$
 haH=aH\quad\text{for every }h\in H,
@@ -50,11 +55,17 @@ set $X^H$ is the coset set $N_P(H)/H$, and
 $$
 |X^H|=[N_P(H):H].
 $$
+
 :::
 
-<1>2. The number of fixed cosets is a positive multiple of $p$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The number of fixed cosets is a positive multiple of $p$.
+
+::: pf-proof
+
 Every orbit of the $H$-action has size the index of its stabilizer
 in $H$, by orbit-stabilizer [@DF04]. Since $H$ is a subgroup
 of a finite $p$-group, its order is a power of $p$. Thus every
@@ -69,12 +80,24 @@ $p$ greater than one, hence divisible by $p$. Thus $p\mid|X^H|$.
 The coset $H$ itself is fixed, so $|X^H|>0$ and $|X^H|\geq p$.
 The argument also covers $H=1$: then every orbit is a singleton,
 and the same count applies.
+
 :::
 
-<1>3. The containment $H\subseteq N_P(H)$ is strict.
+:::
 
-::: {.proof}
-Every subgroup normalizes itself. Steps <1>1 and <1>2 give
+::: pf-step
+
+The containment $H\subseteq N_P(H)$ is strict.
+
+::: pf-proof
+
+Every subgroup normalizes itself. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $[N_P(H):H]=|X^H|\geq p>1$, so $H\ne N_P(H)$.
+
 :::
+
+:::
+
+:::
+
 :::

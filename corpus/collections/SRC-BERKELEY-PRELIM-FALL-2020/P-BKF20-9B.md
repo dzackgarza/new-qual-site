@@ -43,13 +43,19 @@ reducible in $\mathbb Z[x]$?
 :::
 
 ::: {.solution}
-<1>1. If
+
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 n=-m^2
 $$
 for some $m\in\ZZ$, then $x^4+n$ is reducible in $\ZZ[x]$.
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 x^4-m^2
@@ -57,15 +63,21 @@ x^4-m^2
 (x^2-m)(x^2+m).
 $$
 Both factors have positive degree, so the polynomial is reducible.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 n=4m^4
 $$
 for some $m\in\ZZ$, then $x^4+n$ is reducible in $\ZZ[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 \begin{aligned}
@@ -77,25 +89,37 @@ x^4+4m^4.
 \end{aligned}
 $$
 Thus $x^4+n$ factors nontrivially over $\ZZ$.
+
 :::
 
-<1>3. Conversely, suppose $x^4+n$ is reducible in $\ZZ[x]$. Its
+:::
+
+::: {.pf-step #s3}
+
+Conversely, suppose $x^4+n$ is reducible in $\ZZ[x]$. Its
 factors may be chosen monic.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $x^4+n$ is monic. In any factorization into
 positive-degree integer polynomials, the product of the leading
 coefficients is $1$. Hence both leading coefficients are units
 $\pm1$; changing both signs if necessary gives monic factors.
+
 :::
 
-<1>4. If $x^4+n$ has a linear factor, then
+:::
+
+::: {.pf-step #s4}
+
+If $x^4+n$ has a linear factor, then
 $$
 n=-m^2
 $$
 for some $m\in\ZZ$.
 
-::: {.proof}
+::: pf-proof
+
 A monic linear factor has the form $x-r$ with $r\in\ZZ$, so
 $$
 r^4+n=0.
@@ -105,9 +129,14 @@ $$
 n=-r^4=-(r^2)^2.
 $$
 Taking $m=r^2$ gives the stated form.
+
 :::
 
-<1>5. If $x^4+n$ is reducible and has no linear factor, then it factors
+:::
+
+::: {.pf-step #s5}
+
+If $x^4+n$ is reducible and has no linear factor, then it factors
 as two monic quadratics
 $$
 x^4+n
@@ -116,13 +145,19 @@ x^4+n
 $$
 with $a,b,c,d\in\ZZ$.
 
-::: {.proof}
-By step <1>3 the factors may be chosen monic. Their positive degrees
+::: pf-proof
+
+By step [](#s3){.pf-ref} the factors may be chosen monic. Their positive degrees
 sum to $4$. Since there is no factor of degree $1$, the only possible
 degree split is $2+2$, giving the displayed form.
+
 :::
 
-<1>6. In the factorization of step <1>5,
+:::
+
+::: {.pf-step #s6}
+
+In the factorization of step [](#s5){.pf-ref},
 $$
 c=-a
 $$
@@ -135,7 +170,8 @@ b+d-a^2=0,
 bd=n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding after comparing the coefficient of $x^3$ gives
 $$
 c=-a
@@ -157,15 +193,21 @@ bd.
 $$
 The coefficients of $x^2$ and $x$ in $x^4+n$ are zero, and its
 constant term is $n$, yielding the three equations.
+
 :::
 
-<1>7. If $a=0$ in step <1>6, then
+:::
+
+::: {.pf-step #s7}
+
+If $a=0$ in step [](#s6){.pf-ref}, then
 $$
 n=-m^2
 $$
 for some $m\in\ZZ$.
 
-::: {.proof}
+::: pf-proof
+
 When $a=0$, the equation
 $$
 b+d-a^2=0
@@ -179,15 +221,21 @@ $$
 n=bd=-b^2.
 $$
 Taking $m=b$ gives the required form.
+
 :::
 
-<1>8. If $a\ne0$ in step <1>6, then
+:::
+
+::: {.pf-step #s8}
+
+If $a\ne0$ in step [](#s6){.pf-ref}, then
 $$
 n=4m^4
 $$
 for some $m\in\ZZ$.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 a(d-b)=0
@@ -216,9 +264,14 @@ and hence
 $$
 n=bd=b^2=4m^4.
 $$
+
 :::
 
-<1>9. Therefore
+:::
+
+::: {.pf-step #s9}
+
+Therefore
 $$
 \boxed{
 x^4+n\text{ is reducible in }\ZZ[x]
@@ -228,16 +281,23 @@ n=-m^2\text{ or }n=4m^4
 }
 $$
 
-::: {.proof}
-Steps <1>1--<1>2 prove that every integer in either displayed family
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove that every integer in either displayed family
 gives a reducible polynomial. Conversely, if the polynomial is
-reducible, step <1>4 handles the linear-factor case, while steps
-<1>5--<1>8 handle the only remaining factorization type.
+reducible, step [](#s4){.pf-ref} handles the linear-factor case, while steps
+[](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} handle the only remaining factorization type.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>9 is the complete classification.
 :::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref} is the complete classification.
+
+:::
+
+:::
+
 :::

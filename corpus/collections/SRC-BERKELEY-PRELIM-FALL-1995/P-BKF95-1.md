@@ -38,7 +38,11 @@ g_1,\ldots,g_n
 $$
 of $G$.
 
-<1>1. The number of homomorphisms
+::: pf
+
+::: {.pf-step #s1}
+
+The number of homomorphisms
 $$
 \rho:G\longrightarrow S_k
 $$
@@ -47,7 +51,8 @@ $$
 (k!)^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A homomorphism is uniquely determined by the images of the generating set
 $$
 g_1,\ldots,g_n.
@@ -57,9 +62,14 @@ $$
 \abs{S_k}=k!
 $$
 possible images. Thus there are at most $(k!)^n$ homomorphisms.
+
 :::
 
-<1>2. Let $H\leq G$ have index $k$. Every bijection
+:::
+
+::: {.pf-step #s2}
+
+Let $H\leq G$ have index $k$. Every bijection
 $$
 \beta:G/H\longrightarrow\{1,\ldots,k\}
 $$
@@ -73,7 +83,8 @@ $$
 $$
 whose stabilizer of $1$ is exactly $H$.
 
-::: {.proof}
+::: pf-proof
+
 The group $G$ acts on its left cosets by
 $$
 g\cdot xH=(gx)H.
@@ -87,16 +98,22 @@ which is equivalent to $g\in H$. Hence
 $$
 \operatorname{Stab}_{\rho_{H,\beta}}(1)=H.
 $$
+
 :::
 
-<1>3. For a fixed index-$k$ subgroup $H$, the
+:::
+
+::: {.pf-step #s3}
+
+For a fixed index-$k$ subgroup $H$, the
 $$
 (k-1)!
 $$
 bijections $\beta$ satisfying $\beta(H)=1$ give distinct homomorphisms
 $\rho_{H,\beta}$.
 
-::: {.proof}
+::: pf-proof
+
 There are $(k-1)!$ such bijections because the remaining $k-1$ cosets may
 be labeled arbitrarily by $2,\ldots,k$.
 
@@ -122,29 +139,46 @@ $$
 =j.
 $$
 Thus $\sigma$ is the identity, so $\beta=\beta'$.
+
 :::
 
-<1>4. Homomorphisms arising from two distinct index-$k$ subgroups are
+:::
+
+::: {.pf-step #s4}
+
+Homomorphisms arising from two distinct index-$k$ subgroups are
 distinct.
 
-::: {.proof}
-By step <1>2, the subgroup can be recovered from the homomorphism as the
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the subgroup can be recovered from the homomorphism as the
 stabilizer of $1$. Therefore one homomorphism cannot arise from two
 different subgroups.
+
 :::
 
-<1>5. If $M(n,k)$ denotes the number of index-$k$ subgroups of $G$, then
+:::
+
+::: {.pf-step #s5}
+
+If $M(n,k)$ denotes the number of index-$k$ subgroups of $G$, then
 $$
 M(n,k)(k-1)!\leq(k!)^n.
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4, every index-$k$ subgroup contributes $(k-1)!$
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, every index-$k$ subgroup contributes $(k-1)!$
 distinct homomorphisms $G\to S_k$, and the contributions from different
-subgroups are disjoint. Step <1>1 bounds the total number of homomorphisms.
+subgroups are disjoint. Step [](#s1){.pf-ref} bounds the total number of homomorphisms.
+
 :::
 
-<1>6. One may take
+:::
+
+::: {.pf-step #s6}
+
+One may take
 $$
 \boxed{
 N(n,k)
@@ -155,13 +189,20 @@ k(k!)^{n-1}
 }.
 $$
 
-::: {.proof}
-Divide the inequality in step <1>5 by $(k-1)!$.
+::: pf-proof
+
+Divide the inequality in step [](#s5){.pf-ref} by $(k-1)!$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives an upper bound depending only on $n$ and $k$.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives an upper bound depending only on $n$ and $k$.
+
+:::
+
+:::
+
 :::

@@ -36,21 +36,32 @@ Prove or disprove: A square complex matrix, $A$, is similar to its transpose, $A
 ::: {.solution}
 The assertion is true.
 
-<1>1. Every complex square matrix $A$ is similar to a Jordan matrix
+::: pf
+
+::: {.pf-step #s1}
+
+Every complex square matrix $A$ is similar to a Jordan matrix
 $$
 J=\bigoplus_\alpha J_{m_\alpha}(\lambda_\alpha).
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the Jordan normal form theorem over $\CC$.
+
 :::
 
-<1>2. For every Jordan block $J_m(\lambda)$,
+:::
+
+::: {.pf-step #s2}
+
+For every Jordan block $J_m(\lambda)$,
 $$
 J_m(\lambda)\sim J_m(\lambda)^t.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $R_m$ be the permutation matrix that reverses the standard basis:
 $$
 R_me_j=e_{m+1-j}.
@@ -67,16 +78,22 @@ R_mJ_m(\lambda)R_m^{-1}
 =
 J_m(\lambda)^t.
 $$
+
 :::
 
-<1>3. The Jordan matrix $J$ is similar to $J^t$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The Jordan matrix $J$ is similar to $J^t$.
+
+::: pf-proof
+
 Let
 $$
 R\coloneqq\bigoplus_\alpha R_{m_\alpha}.
 $$
-Applying step <1>2 block by block gives
+Applying step [](#s2){.pf-ref} block by block gives
 $$
 RJR^{-1}
 =
@@ -84,12 +101,18 @@ RJR^{-1}
 =
 J^t.
 $$
+
 :::
 
-<1>4. The matrices $A$ and $A^t$ are similar.
+:::
 
-::: {.proof}
-By step <1>1, write
+::: {.pf-step #s4}
+
+The matrices $A$ and $A^t$ are similar.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, write
 $$
 A=PJP^{-1}.
 $$
@@ -98,16 +121,22 @@ $$
 A^t
 =(P^{-1})^tJ^tP^t,
 $$
-so $A^t$ is similar to $J^t$. Step <1>3 gives $J^t\sim J$, while step
-<1>1 gives $J\sim A$. By transitivity of similarity,
+so $A^t$ is similar to $J^t$. Step [](#s3){.pf-ref} gives $J^t\sim J$, while step
+[](#s1){.pf-ref} gives $J\sim A$. By transitivity of similarity,
 $$
 A^t\sim A.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the assertion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the assertion.
+
+:::
+
+:::
+
 :::

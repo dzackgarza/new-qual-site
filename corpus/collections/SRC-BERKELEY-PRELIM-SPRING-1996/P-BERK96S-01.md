@@ -31,14 +31,19 @@ $$
 a_n\coloneqq\left(\frac{n^n}{n!}\right)^{1/n}.
 $$
 
-<1>1. For every $n\ge2$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\ge2$,
 $$
 \int_1^n\log x\,dx
 \le \log(n!)
 \le \int_1^n\log x\,dx+\log n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\log x$ is increasing, for $2\le k\le n$,
 $$
 \int_{k-1}^k\log x\,dx\le\log k.
@@ -57,17 +62,23 @@ $$
 \log((n-1)!)\le\int_1^n\log x\,dx,
 $$
 and adding $\log n$ gives the upper bound.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 1-\frac{1+\log n}{n}
 \le \log a_n
 \le 1-\frac1n.
 $$
 
-::: {.proof}
-The integral in step <1>1 is
+::: pf-proof
+
+The integral in step [](#s1){.pf-ref} is
 $$
 \int_1^n\log x\,dx
 =n\log n-n+1.
@@ -78,16 +89,22 @@ $$
 =\frac{n\log n-\log(n!)}{n}.
 $$
 Substituting the upper and lower bounds for $\log(n!)$ from step
-<1>1 yields exactly the stated inequalities.
+[](#s1){.pf-ref} yields exactly the stated inequalities.
+
 :::
 
-<1>3. The requested limit is
+:::
+
+::: {.pf-step #s3}
+
+The requested limit is
 $$
 \boxed{e}.
 $$
 
-::: {.proof}
-Both bounds in step <1>2 tend to $1$, so the squeeze theorem gives
+::: pf-proof
+
+Both bounds in step [](#s2){.pf-ref} tend to $1$, so the squeeze theorem gives
 $$
 \lim_{n\to\infty}\log a_n=1.
 $$
@@ -95,11 +112,17 @@ Continuity of the exponential function therefore gives
 $$
 \lim_{n\to\infty}a_n=e.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 computes the required limit.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} computes the required limit.
+
+:::
+
+:::
+
 :::

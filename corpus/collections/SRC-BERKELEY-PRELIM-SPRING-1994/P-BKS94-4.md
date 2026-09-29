@@ -35,12 +35,17 @@ $$
 m\coloneqq[G:A]<\infty.
 $$
 
-<1>1. Left multiplication defines a homomorphism
+::: pf
+
+::: pf-step
+
+Left multiplication defines a homomorphism
 $$
 \varphi:G\longrightarrow\operatorname{Sym}(G/A).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $g\in G$, define
 $$
 \varphi(g)(xA)=gxA.
@@ -51,15 +56,21 @@ $$
 \varphi(gh)=\varphi(g)\varphi(h).
 $$
 Thus $\varphi$ is a group homomorphism.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 N\coloneqq\ker\varphi.
 $$
 Then $N$ is normal in $G$ and has finite index.
 
-::: {.proof}
+::: pf-proof
+
 Every kernel is normal. Moreover,
 $$
 G/N\cong\varphi(G),
@@ -67,26 +78,38 @@ $$
 and $\varphi(G)$ is a subgroup of the finite group
 $\operatorname{Sym}(G/A)\cong S_m$. Hence $G/N$ is finite, so
 $[G:N]<\infty$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 N\subseteq A.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $g\in N$, then $\varphi(g)$ fixes every left coset, in particular the
 coset $A$. Thus
 $$
 gA=A,
 $$
 which is equivalent to $g\in A$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 show that $N$ is normal in $G$, contained in $A$, and
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that $N$ is normal in $G$, contained in $A$, and
 of finite index in $G$.
+
 :::
+
+:::
+
 :::

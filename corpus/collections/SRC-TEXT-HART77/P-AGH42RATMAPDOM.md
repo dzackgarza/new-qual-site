@@ -35,9 +35,14 @@ One says that the rational map is defined at the points of that open set.
 ::: {.solution}
 Let $\varphi:X\dashrightarrow Y$ be the given rational map.
 
-<1>1. Any two representatives of $\varphi$ glue on the union of their domains.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Any two representatives of $\varphi$ glue on the union of their domains.
+
+::: pf-proof
+
 Let
 $$
 \varphi_U:U\to Y,
@@ -74,9 +79,14 @@ $$
 the pullback $h\circ\psi$ equals the regular function $h\circ\varphi_U$, and similarly on the open subset $\psi^{-1}(W)\cap V$.
 These opens cover $\psi^{-1}(W)$, so regularity being local shows that $h\circ\psi$ is regular.
 Thus $\psi$ is a morphism.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 D(\varphi)
 =\bigcup\{U\subseteq X:U\text{ is open and }\varphi\text{ is represented by a morphism }U\to Y\}.
@@ -86,30 +96,43 @@ $$
 \varphi_D:D(\varphi)\to Y.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The set $D(\varphi)$ is open as a union of opens.
 On pairwise overlaps all representatives agree by the equivalence relation defining the rational map.
 Therefore they define a single set map $\varphi_D$ on the union.
 
 Every point of $D(\varphi)$ lies in one representative domain $U$, and on that open neighborhood $\varphi_D$ equals the morphism $\varphi_U$.
 The morphism condition is local on the source, so $\varphi_D$ is a morphism.
+
 :::
 
-<1>3. The open set $D(\varphi)$ is the unique largest open subset on which $\varphi$ is represented by a morphism.
+:::
 
-::: {.proof}
-Step <1>2 shows that $\varphi$ is represented on $D(\varphi)$.
+::: {.pf-step #s3}
+
+The open set $D(\varphi)$ is the unique largest open subset on which $\varphi$ is represented by a morphism.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that $\varphi$ is represented on $D(\varphi)$.
 If $W\subseteq X$ is any other open subset on which $\varphi$ is represented by a morphism, then $W$ is one of the opens in the union defining $D(\varphi)$.
 Hence
 $$
 W\subseteq D(\varphi).
 $$
 Thus $D(\varphi)$ is the largest such open set.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 construct the maximal domain of definition and its representing morphism.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct the maximal domain of definition and its representing morphism.
+
+:::
+
+:::
+
 :::

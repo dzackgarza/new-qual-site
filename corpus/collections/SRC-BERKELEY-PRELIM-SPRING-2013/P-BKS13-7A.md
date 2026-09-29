@@ -28,12 +28,18 @@ Let A be a matrix over the field of complex numbers. Suppose A has finite order,
 :::
 
 ::: {.solution}
-<1>1. The minimal polynomial $\mu_A(x)$ of $A$ divides
+
+::: pf
+
+::: {.pf-step #s1}
+
+The minimal polynomial $\mu_A(x)$ of $A$ divides
 $$
 x^m-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The relation
 $$
 A^m=I
@@ -45,15 +51,21 @@ $$
 Thus the polynomial $x^m-1$ annihilates $A$. By the defining property of
 the minimal polynomial, $\mu_A$ divides every polynomial that annihilates
 $A$.
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: pf-step
+
+The polynomial
 $$
 x^m-1
 $$
 has no repeated roots over $\CC$.
 
-::: {.proof}
+::: pf-proof
+
 Its derivative is
 $$
 mx^{m-1}.
@@ -62,19 +74,30 @@ A repeated root would be a common root of $x^m-1$ and $mx^{m-1}$. But a
 root of $x^m-1$ is nonzero, whereas the only root of $mx^{m-1}$ is $0$
 because the characteristic is $0$. Thus the two polynomials have no common
 root.
+
 :::
 
-<1>3. The matrix $A$ is diagonalizable over $\CC$.
+:::
 
-::: {.proof}
-By step <1>1, the minimal polynomial $\mu_A$ divides the squarefree
+::: {.pf-step #s3}
+
+The matrix $A$ is diagonalizable over $\CC$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the minimal polynomial $\mu_A$ divides the squarefree
 polynomial $x^m-1$. Hence $\mu_A$ also has no repeated root. Since
 $x^m-1$ splits completely over $\CC$, so does $\mu_A$. A linear operator
 is diagonalizable exactly when its minimal polynomial splits into distinct
 linear factors. Therefore $A$ is diagonalizable.
+
 :::
 
-<1>4. Let $K=\overline{\FF_p}$ for a prime $p$, and let
+:::
+
+::: {.pf-step #s4}
+
+Let $K=\overline{\FF_p}$ for a prime $p$, and let
 $$
 B
 \coloneqq
@@ -85,7 +108,8 @@ B
 $$
 Then $B$ has finite order.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 B=I+N,
@@ -112,11 +136,17 @@ I
 $$
 in characteristic $p$. Since $B\neq I$, it is a nontrivial matrix of
 finite order.
+
 :::
 
-<1>5. The matrix $B$ from step <1>4 is not diagonalizable.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The matrix $B$ from step [](#s4){.pf-ref} is not diagonalizable.
+
+::: pf-proof
+
 The characteristic polynomial of $B$ is
 $$
 (x-1)^2,
@@ -132,20 +162,32 @@ $$
 I,
 $$
 and hence would itself equal $I$. But $B\neq I$.
+
 :::
 
-<1>6. Thus an algebraically closed field of positive characteristic admits
+:::
+
+::: {.pf-step #s6}
+
+Thus an algebraically closed field of positive characteristic admits
 a finite-order matrix that is not diagonalizable.
 
-::: {.proof}
-Steps <1>4 and <1>5 give the explicit example over
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the explicit example over
 $\overline{\FF_p}$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the complex statement, and step <1>6 supplies the
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the complex statement, and step [](#s6){.pf-ref} supplies the
 requested counterexample.
+
 :::
+
+:::
+
 :::

@@ -36,9 +36,14 @@ Coherence on a noetherian formal scheme is local, so work on an arbitrary affine
 For coherent formal sheaves, finite direct sums, kernels and cokernels of morphisms are coherent [@Har10a, Theorem II.9.7 and Corollary II.9.9].
 These closure properties concern morphisms whose source and target are already coherent; no such assumption is made about $\mcf$.
 
-<1>1. There is a surjection $q:\OO_{\mathfrak U}^{\oplus s}\twoheadrightarrow\mcf''$ and a lift $\widetilde q:\OO_{\mathfrak U}^{\oplus s}\to\mcf$ with $b\widetilde q=q$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+There is a surjection $q:\OO_{\mathfrak U}^{\oplus s}\twoheadrightarrow\mcf''$ and a lift $\widetilde q:\OO_{\mathfrak U}^{\oplus s}\to\mcf$ with $b\widetilde q=q$.
+
+::: pf-proof
+
 Write $\mathfrak U=\operatorname{Spf}A$ with $A$ noetherian and complete for its defining ideal.
 The affine formal module correspondence identifies $\mcf''$ with the sheaf associated to the finite $A$-module $\Gamma(\mathfrak U,\mcf'')$ [@Har10a, Theorem II.9.7].
 A finite set of module generators therefore gives global sections generating the sheaf and a surjection $q$ as asserted.
@@ -49,9 +54,14 @@ $$
 is surjective.
 Lift each of the $s$ chosen sections through this map.
 Their images define $\widetilde q$, and $b\widetilde q=q$ because the maps agree on the standard generators of the free sheaf.
+
 :::
 
-<1>2. Put $R=\ker q$.
+:::
+
+::: {.pf-step #s2}
+
+Put $R=\ker q$.
 There is an exact sequence
 $$
 0\longrightarrow R\xrightarrow{\gamma}
@@ -60,8 +70,9 @@ $$
 $$
 in which the first two sheaves are coherent.
 
-::: {.proof}
-Since $q$ is a morphism between coherent sheaves, $R$ is coherent by the closure property stated before step <1>1.
+::: pf-proof
+
+Since $q$ is a morphism between coherent sheaves, $R$ is coherent by the closure property stated before step [](#s1){.pf-ref}.
 The restriction of $\widetilde q$ to $R$ has zero composite with $b$, so it factors uniquely through $a$ as a map $\lambda:R\to\mcf'$.
 Define
 $$
@@ -78,14 +89,20 @@ If $a(u)+\widetilde q(v)=0$, applying $b$ gives $q(v)=0$, so $v\in R$.
 Then injectivity of $a$ gives $u=-\lambda(v)$, which says $(u,v)=\gamma(v)$.
 This proves exactness.
 Both $R$ and $\mcf'\oplus\OO_{\mathfrak U}^{\oplus s}$ are coherent, as required.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 identifies $\mcf|_{\mathfrak U}$ with the cokernel of a morphism between coherent formal sheaves.
+::: pf-qed
+
+Step [](#s2){.pf-ref} identifies $\mcf|_{\mathfrak U}$ with the cokernel of a morphism between coherent formal sheaves.
 It is therefore coherent by [@Har10a, Corollary II.9.9].
 The construction applies on every affine formal open, and these opens cover $\mathfrak X$.
 Locality of coherence proves that $\mcf$ is coherent on $\mathfrak X$.
+
 :::
+
+:::
+
 :::

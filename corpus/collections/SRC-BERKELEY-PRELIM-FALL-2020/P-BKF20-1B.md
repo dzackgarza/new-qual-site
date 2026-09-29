@@ -46,7 +46,12 @@ b(x)<d(x)<a(x)<c(x)\quad(-1<x<0).
 :::
 
 ::: {.solution}
-<1>1. Subtracting $a$ from all four polynomials, it is enough to rule
+
+::: pf
+
+::: {.pf-step #s1}
+
+Subtracting $a$ from all four polynomials, it is enough to rule
 out polynomials $B,C,D$ satisfying
 $$
 0<B(x)<C(x)<D(x)
@@ -57,7 +62,8 @@ B(x)<D(x)<0<C(x)
 $$
 for $-1<x<0$.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 B=b-a,
@@ -69,14 +75,20 @@ $$
 Subtracting the same real number $a(x)$ from every entry in each
 ordering preserves all strict inequalities and replaces $a$ by the
 zero polynomial.
+
 :::
 
-<1>2. The three normalized polynomials satisfy
+:::
+
+::: {.pf-step #s2}
+
+The three normalized polynomials satisfy
 $$
 B(0)=C(0)=D(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Letting $x\to0^+$ in
 $$
 0<B(x)<C(x)<D(x)
@@ -98,9 +110,14 @@ $$
 0\le B(0)\le D(0)\le0,
 $$
 so $B(0)=D(0)=0$. The first chain then forces $C(0)=0$ as well.
+
 :::
 
-<1>3. Write the lowest nonzero terms as
+:::
+
+::: {.pf-step #s3}
+
+Write the lowest nonzero terms as
 $$
 B(x)=\beta x^i+O(x^{i+1}),
 \qquad
@@ -113,25 +130,32 @@ $$
 \beta,\gamma,\delta>0.
 $$
 
-::: {.proof}
-The strict inequalities in step <1>1 show that none of $B,C,D$ is the
-zero polynomial. Step <1>2 shows that each has positive vanishing
+::: pf-proof
+
+The strict inequalities in step [](#s1){.pf-ref} show that none of $B,C,D$ is the
+zero polynomial. Step [](#s2){.pf-ref} shows that each has positive vanishing
 order at $0$, so the displayed lowest terms exist.
 
 For sufficiently small positive $x$, all three polynomials are positive
-by step <1>1. Since $x^i,x^j,x^k$ are then positive, their first
+by step [](#s1){.pf-ref}. Since $x^i,x^j,x^k$ are then positive, their first
 nonzero coefficients must satisfy
 $$
 \beta>0,\qquad\gamma>0,\qquad\delta>0.
 $$
+
 :::
 
-<1>4. The positive-side ordering implies
+:::
+
+::: {.pf-step #s4}
+
+The positive-side ordering implies
 $$
 i\ge j\ge k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $i<j$, then as $x\to0^+$,
 $$
 \frac{B(x)}{C(x)}
@@ -149,45 +173,63 @@ $$
 \infty
 $$
 as $x\to0^+$, contradicting $C(x)<D(x)$. Thus $j\ge k$.
+
 :::
 
-<1>5. The negative-side signs imply that $i$ and $k$ are odd while
+:::
+
+::: {.pf-step #s5}
+
+The negative-side signs imply that $i$ and $k$ are odd while
 $j$ is even.
 
-::: {.proof}
-For sufficiently small negative $x$, step <1>1 gives
+::: pf-proof
+
+For sufficiently small negative $x$, step [](#s1){.pf-ref} gives
 $$
 B(x)<0,\qquad D(x)<0,\qquad C(x)>0.
 $$
-The leading coefficients in step <1>3 are all positive. Therefore the
+The leading coefficients in step [](#s3){.pf-ref} are all positive. Therefore the
 sign of each polynomial near $0$ on the negative side is the sign of
 $x$ raised to its vanishing order. Hence $i$ and $k$ must be odd and
 $j$ must be even.
+
 :::
 
-<1>6. Consequently,
+:::
+
+::: {.pf-step #s6}
+
+Consequently,
 $$
 i>j>k.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 i\ge j\ge k.
 $$
-By step <1>5, $i$ and $j$ have opposite parity, so they cannot be
+By step [](#s5){.pf-ref}, $i$ and $j$ have opposite parity, so they cannot be
 equal; hence $i>j$. Similarly $j$ and $k$ have opposite parity, so
 $j>k$.
+
 :::
 
-<1>7. For all sufficiently small negative $x$,
+:::
+
+::: {.pf-step #s7}
+
+For all sufficiently small negative $x$,
 $$
 B(x)>D(x),
 $$
 contradicting the required ordering.
 
-::: {.proof}
-By steps <1>3 and <1>6,
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s6){.pf-ref},
 $$
 \frac{B(x)}{D(x)}
 \sim
@@ -202,24 +244,36 @@ Thus for all sufficiently small negative $x$,
 $$
 0<\frac{B(x)}{D(x)}<1.
 $$
-Step <1>1 also gives $D(x)<0$. Multiplying the last inequality by the
+Step [](#s1){.pf-ref} also gives $D(x)<0$. Multiplying the last inequality by the
 negative number $D(x)$ reverses the order and yields
 $$
 B(x)>D(x).
 $$
 This contradicts the required inequality $B(x)<D(x)$.
+
 :::
 
-<1>8. Therefore no such four polynomials exist.
-
-::: {.proof}
-If the original polynomials existed, step <1>1 would produce normalized
-polynomials $B,C,D$, but step <1>7 shows those cannot exist.
 :::
 
-<1>9. Q.E.D.
+::: {.pf-step #s8}
 
-::: {.proof}
-Step <1>8 is the required conclusion.
+Therefore no such four polynomials exist.
+
+::: pf-proof
+
+If the original polynomials existed, step [](#s1){.pf-ref} would produce normalized
+polynomials $B,C,D$, but step [](#s7){.pf-ref} shows those cannot exist.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -21,8 +21,15 @@ by complex-analytic methods.
 :::
 
 ::: {.solution}
-<1>1. A keyhole contour converts the contour integral into twice the real integral.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A keyhole contour converts the contour integral into twice the real integral.
+
+::: pf-proof
+
 Use the branch
 $$
 z^{1/2}=e^{\frac12(\log|z|+i\arg z)},
@@ -40,10 +47,17 @@ $$
 \longrightarrow
 2\int_0^\infty\frac{x^{1/2}}{1+x^2}\,dx.
 $$
+
 :::
 
-<1>2. The sum of the residues inside the keyhole contour is $-i/\sqrt2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The sum of the residues inside the keyhole contour is $-i/\sqrt2$.
+
+::: pf-proof
+
 The poles are $i$ and $-i$. With the chosen branch,
 $$
 i^{1/2}=e^{i\pi/4},
@@ -67,11 +81,18 @@ $$
 \operatorname{Res}(F,i)+\operatorname{Res}(F,-i)
 =-\frac{i}{\sqrt2}.
 $$
+
 :::
 
-<1>3. The integral is $\boxed{\pi/\sqrt2}$.
-::: {.proof}
-By the [[T-HRPNO|residue theorem]] and steps <1>1--<1>2,
+:::
+
+::: {.pf-step #s3}
+
+The integral is $\boxed{\pi/\sqrt2}$.
+
+::: pf-proof
+
+By the [[T-HRPNO|residue theorem]] and steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 2\int_0^\infty\frac{x^{1/2}}{1+x^2}\,dx
 =2\pi i\left(-\frac{i}{\sqrt2}\right)
@@ -82,10 +103,17 @@ $$
 \int_0^\infty\frac{x^{1/2}}{1+x^2}\,dx
 =\frac{\pi}{\sqrt2}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

@@ -42,9 +42,14 @@ $$
 \bar f(x)=x^4+x^3+x^2+1\in\FF_3[x].
 $$
 
-<1>1. The polynomial $\bar f$ has no linear factor in $\FF_3[x]$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The polynomial $\bar f$ has no linear factor in $\FF_3[x]$.
+
+::: pf-proof
+
 Direct evaluation gives
 $$
 \bar f(0)=1,
@@ -55,12 +60,18 @@ $$
 $$
 in $\FF_3$. Thus $\bar f$ has no root in $\FF_3$, hence no linear
 factor.
+
 :::
 
-<1>2. The polynomial $\bar f$ has no factorization into two monic
+:::
+
+::: {.pf-step #s2}
+
+The polynomial $\bar f$ has no factorization into two monic
 quadratic polynomials over $\FF_3$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 \bar f(x)
@@ -90,30 +101,48 @@ $$
 ad+bc=b(a+c)=0.
 $$
 Since $b\neq0$, this forces $a+c=0$, contradicting $a+c=1$.
+
 :::
 
-<1>3. The reduction $\bar f$ is irreducible in $\FF_3[x]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The reduction $\bar f$ is irreducible in $\FF_3[x]$.
+
+::: pf-proof
+
 A reducible polynomial of degree $4$ over a field has a factor of degree
-$1$ or $2$. Step <1>1 excludes degree-$1$ factors, and step <1>2 excludes
+$1$ or $2$. Step [](#s1){.pf-ref} excludes degree-$1$ factors, and step [](#s2){.pf-ref} excludes
 a factorization into two degree-$2$ factors. Hence $\bar f$ is
 irreducible.
+
 :::
 
-<1>4. The polynomial $f$ is irreducible over $\QQ$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The polynomial $f$ is irreducible over $\QQ$.
+
+::: pf-proof
+
 The polynomial $f$ is monic and lies in $\ZZ[x]$. If it were reducible over
 $\QQ$, Gauss's lemma would give a factorization into two nonconstant monic
 polynomials in $\ZZ[x]$. Reducing that factorization modulo $3$ would give
 a nontrivial factorization of $\bar f$ in $\FF_3[x]$, contradicting
-step <1>3.
+step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required irreducibility statement.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required irreducibility statement.
+
+:::
+
+:::
+
 :::

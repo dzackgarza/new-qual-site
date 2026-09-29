@@ -47,8 +47,15 @@ Then $Y$ is compact.
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 In the Banach space $\ell^2$, let $e_n$ be the standard basis vectors. Then
 \[
 \|e_n\|_2=1
@@ -58,10 +65,17 @@ for every $n$, so $(e_n)$ is bounded. But for $m\ne n$,
 \|e_n-e_m\|_2=\sqrt2.
 \]
 Hence no subsequence is Cauchy, and therefore no subsequence converges in norm.
+
 :::
 
-<1>2. Part (b) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is false.
+
+::: pf-proof
+
 Suppose $f_n\to0$ in $L^1([0,1])$. Choose a subsequence $(f_{n_k})$ such that
 \[
 \|f_{n_k}\|_1<2^{-2k}.
@@ -83,10 +97,17 @@ By the Borel--Cantelli lemma, almost every $x$ belongs to only finitely many $E_
 |f_{n_k}(x)|\le2^{-k}
 \]
 for all sufficiently large $k$, so $f_{n_k}(x)\to0$. Therefore every $L^1$-null sequence has a subsequence converging pointwise to $0$ almost everywhere, contradicting the asserted existence.
+
 :::
 
-<1>3. Part (c) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is false.
+
+::: pf-proof
+
 Let
 \[
 h=\mathbf1_{[0,1/2]}.
@@ -112,10 +133,17 @@ g(1/2)\ge\frac12+\delta
 g(1/2)\le\frac12-\delta,
 \]
 a contradiction. Thus $C([0,1])$ is not dense in $L^\infty([0,1])$.
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 The functions
 \[
 e_n(x)=e^{2\pi i n x}
@@ -129,10 +157,17 @@ Hence
 \langle g,e_n\rangle\to0.
 \]
 Therefore $e_n\rightharpoonup0$ weakly in $L^2([0,1])$.
+
 :::
 
-<1>5. Part (e) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (e) is true.
+
+::: pf-proof
+
 By Hölder's inequality applied to $(a_j)_{j=1}^n$ and $(1)_{j=1}^n$ with exponents $q$ and $p$,
 \[
 \sum_{j=1}^n a_j
@@ -147,10 +182,17 @@ Since the second factor is $n^{1/p}$,
 \sum_{j=1}^n a_j
 \le n^{1/p}\left(\sum_{j=1}^n|a_j|^q\right)^{1/q}.}
 \]
+
 :::
 
-<1>6. Part (f) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (f) is true.
+
+::: pf-proof
+
 The specified topology is exactly the product topology on
 \[
 Y=[-\pi,\pi]^{\mathbb R},
@@ -160,5 +202,11 @@ because it is the weakest topology making every coordinate projection
 p_r(f)=f(r)
 \]
 continuous. Each factor $[-\pi,\pi]$ is compact. By Tychonoff's theorem, their arbitrary product is compact. Hence $Y$ is compact.
+
 :::
+
+:::
+
+:::
+
 :::

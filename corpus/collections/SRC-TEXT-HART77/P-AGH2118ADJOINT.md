@@ -42,7 +42,11 @@ Recall that for a sheaf $\mathcal G$ on $Y$, the inverse-image sheaf $f^{-1}\mat
 \]
 where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 
-<1>1. For every sheaf $\mathcal F$ on $X$ there is a natural morphism
+::: pf
+
+::: {.pf-step #s1}
+
+For every sheaf $\mathcal F$ on $X$ there is a natural morphism
 \[
 \boxed{
 \varepsilon_{\mathcal F}:
@@ -50,7 +54,8 @@ f^{-1}f_*\mathcal F\longrightarrow\mathcal F.
 }
 \]
 
-::: {.proof}
+::: pf-proof
+
 Before sheafification, for an open $U\subseteq X$ one has
 \[
 \mathcal P_{f_*\mathcal F}(U)
@@ -85,9 +90,14 @@ Since $\mathcal F$ is already a sheaf, the universal property of sheafification 
 f^{-1}f_*\mathcal F
 \longrightarrow\mathcal F.
 \]
+
 :::
 
-<1>2. For every sheaf $\mathcal G$ on $Y$ there is a natural morphism
+:::
+
+::: {.pf-step #s2}
+
+For every sheaf $\mathcal G$ on $Y$ there is a natural morphism
 \[
 \boxed{
 \eta_{\mathcal G}:
@@ -95,7 +105,8 @@ f^{-1}f_*\mathcal F
 }
 \]
 
-::: {.proof}
+::: pf-proof
+
 Let $V\subseteq Y$ be open and take
 \[
 s\in\mathcal G(V).
@@ -119,17 +130,23 @@ Passing to the associated sheaf gives a section
 (f_*f^{-1}\mathcal G)(V).
 \]
 These maps commute with restriction in $V$, hence define the desired sheaf morphism.
+
 :::
 
-<1>3. The maps $\varepsilon$ are natural in $\mathcal F$, and the maps $\eta$ are natural in $\mathcal G$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The maps $\varepsilon$ are natural in $\mathcal F$, and the maps $\eta$ are natural in $\mathcal G$.
+
+::: pf-proof
+
 Let
 \[
 \alpha:\mathcal F\to\mathcal F'
 \]
 be a sheaf morphism on $X$.
-In the construction of <1>1, applying $\alpha$ before or after restricting
+In the construction of step [](#s1){.pf-ref}, applying $\alpha$ before or after restricting
 \[
 \mathcal F(f^{-1}V)\to\mathcal F(U)
 \]
@@ -145,15 +162,20 @@ Similarly, for
 \[
 \beta:\mathcal G\to\mathcal G'
 \]
-on $Y$, applying $\beta$ to a representative section before or after the construction in <1>2 gives
+on $Y$, applying $\beta$ to a representative section before or after the construction in step [](#s2){.pf-ref} gives
 \[
 f_*f^{-1}\beta\circ\eta_{\mathcal G}
 =
 \eta_{\mathcal G'}\circ\beta.
 \]
+
 :::
 
-<1>4. The first triangle identity holds:
+:::
+
+::: {.pf-step #s4}
+
+The first triangle identity holds:
 \[
 \boxed{
 \varepsilon_{f^{-1}\mathcal G}
@@ -164,7 +186,8 @@ f^{-1}\eta_{\mathcal G}
 }
 \]
 
-::: {.proof}
+::: pf-proof
+
 A section of $f^{-1}\mathcal G$ is locally represented by a section
 \[
 s\in\mathcal G(V)
@@ -186,9 +209,14 @@ The counit $\varepsilon_{f^{-1}\mathcal G}$ then restricts that section back to 
 By construction this returns exactly the original local section.
 
 Since the equality holds locally on a cover, the two sheaf morphisms are equal globally.
+
 :::
 
-<1>5. The second triangle identity holds:
+:::
+
+::: {.pf-step #s5}
+
+The second triangle identity holds:
 \[
 \boxed{
 f_*\varepsilon_{\mathcal F}
@@ -199,7 +227,8 @@ f_*\varepsilon_{\mathcal F}
 }
 \]
 
-::: {.proof}
+::: pf-proof
+
 Let $V\subseteq Y$ and
 \[
 s\in(f_*\mathcal F)(V)
@@ -220,9 +249,14 @@ The counit $\varepsilon_{\mathcal F}$ is defined by restricting such a represent
 f^{-1}V
 \]
 to the open under consideration.  Here that open is already $f^{-1}V$, so it returns $s$.  Thus the composite is the identity on every open $V$.
+
 :::
 
-<1>6. Given
+:::
+
+::: {.pf-step #s6}
+
+Given
 \[
 \alpha:f^{-1}\mathcal G\longrightarrow\mathcal F,
 \]
@@ -244,11 +278,17 @@ Thus
 \operatorname{Hom}_Y(\mathcal G,f_*\mathcal F).
 \]
 
-::: {.proof}
+::: pf-proof
+
 Both arrows in the displayed composite are sheaf morphisms on $Y$, so their composite is one.  This defines $\Phi$.
+
 :::
 
-<1>7. Given
+:::
+
+::: {.pf-step #s7}
+
+Given
 \[
 \beta:\mathcal G\longrightarrow f_*\mathcal F,
 \]
@@ -270,16 +310,23 @@ Thus
 \operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F).
 \]
 
-::: {.proof}
+::: pf-proof
+
 Again this is a composite of sheaf morphisms, now on $X$.
+
 :::
 
-<1>8. For every $\alpha:f^{-1}\mathcal G\to\mathcal F$,
+:::
+
+::: {.pf-step #s8}
+
+For every $\alpha:f^{-1}\mathcal G\to\mathcal F$,
 \[
 \Psi(\Phi(\alpha))=\alpha.
 \]
 
-::: {.proof}
+::: pf-proof
+
 Expand the definitions:
 \[
 \Psi(\Phi(\alpha))
@@ -290,7 +337,7 @@ f^{-1}(f_*\alpha)
 \circ
 f^{-1}\eta_{\mathcal G}.
 \]
-By naturality of the counit from <1>3,
+By naturality of the counit from step [](#s3){.pf-ref},
 \[
 \varepsilon_{\mathcal F}
 \circ
@@ -310,15 +357,21 @@ Hence
 \circ
 f^{-1}\eta_{\mathcal G}.
 \]
-The last two factors compose to the identity by <1>4, so the result is $\alpha$.
+The last two factors compose to the identity by step [](#s4){.pf-ref}, so the result is $\alpha$.
+
 :::
 
-<1>9. For every $\beta:\mathcal G\to f_*\mathcal F$,
+:::
+
+::: {.pf-step #s9}
+
+For every $\beta:\mathcal G\to f_*\mathcal F$,
 \[
 \Phi(\Psi(\beta))=\beta.
 \]
 
-::: {.proof}
+::: pf-proof
+
 Expanding gives
 \[
 \Phi(\Psi(\beta))
@@ -329,7 +382,7 @@ f_*f^{-1}\beta
 \circ
 \eta_{\mathcal G}.
 \]
-By naturality of the unit from <1>3,
+By naturality of the unit from step [](#s3){.pf-ref},
 \[
 f_*f^{-1}\beta
 \circ
@@ -349,10 +402,15 @@ f_*\varepsilon_{\mathcal F}
 \circ
 \beta.
 \]
-The first two factors compose to the identity by <1>5, leaving $\beta$.
+The first two factors compose to the identity by step [](#s5){.pf-ref}, leaving $\beta$.
+
 :::
 
-<1>10. Thus there is a natural bijection
+:::
+
+::: {.pf-step #s10}
+
+Thus there is a natural bijection
 \[
 \boxed{
 \operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F)
@@ -365,13 +423,20 @@ Hence
 \boxed{f^{-1}\dashv f_*.}
 \]
 
-::: {.proof}
-Steps <1>8 and <1>9 show that $\Phi$ and $\Psi$ are inverse bijections.  Their formulas are built functorially from $f^{-1}$, $f_*$, the unit, and the counit, so the bijection is natural in both $\mathcal F$ and $\mathcal G$.  This is exactly the definition that $f^{-1}$ is left adjoint to $f_*$.
+::: pf-proof
+
+Steps [](#s8){.pf-ref} and [](#s9){.pf-ref} show that $\Phi$ and $\Psi$ are inverse bijections.  Their formulas are built functorially from $f^{-1}$, $f_*$, the unit, and the counit, so the bijection is natural in both $\mathcal F$ and $\mathcal G$.  This is exactly the definition that $f^{-1}$ is left adjoint to $f_*$.
+
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 construct the natural maps requested, and <1>6--<1>10 prove the adjunction.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} construct the natural maps requested, and steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove the adjunction.
+
+:::
+
+:::
+
 :::

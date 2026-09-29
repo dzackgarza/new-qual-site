@@ -44,70 +44,149 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Evaluation of the base integral $\int \ln(ax + b) \, dx$:
-<2>1. Substitute $u = ax + b$, so $du = a \, dx \implies dx = \frac{1}{a} \, du$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Evaluation of the base integral $\int \ln(ax + b) \, dx$:
+
+::: pf-proof
+
+::: pf-step
+
+Substitute $u = ax + b$, so $du = a \, dx \implies dx = \frac{1}{a} \, du$.
 The integral becomes:
 \[
 \int \ln(ax + b) \, dx = \frac{1}{a} \int \ln(u) \, du.
 \]
-::: {.proof}
+
+::: pf-proof
+
 substitution method.
+
 :::
-<2>2. Integrating by parts with $U = \ln u, \, dV = du \implies dU = \frac{1}{u} du, \, V = u$:
+
+:::
+
+::: pf-step
+
+Integrating by parts with $U = \ln u, \, dV = du \implies dU = \frac{1}{u} du, \, V = u$:
 \[
 \int \ln u \, du = u \ln u - \int 1 \, du = u \ln u - u + C.
 \]
-::: {.proof}
+
+::: pf-proof
+
 integration by parts.
+
 :::
-<2>3. Substituting back $u = ax + b$:
+
+:::
+
+::: pf-step
+
+Substituting back $u = ax + b$:
 \[
 \int \ln(ax + b) \, dx = \frac{ax + b}{a} \ln(ax + b) - \frac{ax + b}{a} + C = \frac{ax + b}{a} \ln(ax + b) - x + C.
 \]
-::: {.proof}
+
+::: pf-proof
+
 absorbing the constant $-\frac{b}{a}$ into $C$.
+
 :::
 
-<1>2. Evaluation of sub-problems (1) through (4):
-<2>1. **Sub-problem 1: $\int \log_3(x) \, dx$**
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Evaluation of sub-problems (1) through (4):
+
+::: pf-proof
+
+::: pf-step
+
+**Sub-problem 1: $\int \log_3(x) \, dx$**
 Using the change of base formula $\log_3(x) = \frac{\ln x}{\ln 3}$:
 \[
 \int \log_3(x) \, dx = \frac{1}{\ln 3} \int \ln x \, dx = \frac{x \ln x - x}{\ln 3} + C.
 \]
-::: {.proof}
-linearity of integration and <1>1 (<2>2).
+
+::: pf-proof
+
+linearity of integration and step [](#s1){.pf-ref} (step [](#s2-2){.pf-ref}).
+
 :::
-<2>2. **Sub-problem 2: $\int_1^e \ln(\sqrt{x}) \, dx$**
+
+:::
+
+::: {.pf-step #s2-2}
+
+**Sub-problem 2: $\int_1^e \ln(\sqrt{x}) \, dx$**
 Using the logarithm power rule $\ln(\sqrt{x}) = \frac{1}{2} \ln x$:
 \[
 \int_1^e \ln(\sqrt{x}) \, dx = \frac{1}{2} \int_1^e \ln x \, dx = \frac{1}{2} \Big[ x \ln x - x \Big]_1^e = \frac{1}{2} \Big( (e - e) - (0 - 1) \Big) = \frac{1}{2}(1) = \frac{1}{2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Fundamental Theorem of Calculus.
+
 :::
-<2>3. **Sub-problem 3: $\int \ln(x^2 + 6x + 5) \, dx$**
+
+:::
+
+::: pf-step
+
+**Sub-problem 3: $\int \ln(x^2 + 6x + 5) \, dx$**
 Factoring $x^2 + 6x + 5 = (x + 1)(x + 5)$:
 \[
 \int \ln(x^2 + 6x + 5) \, dx = \int \ln(x + 1) \, dx + \int \ln(x + 5) \, dx.
 \]
-Applying <1>1 to each term gives:
+Applying step [](#s1){.pf-ref} to each term gives:
 \[
 \big((x + 1)\ln(x + 1) - x\big) + \big((x + 5)\ln(x + 5) - x\big) + C = (x + 1)\ln(x + 1) + (x + 5)\ln(x + 5) - 2x + C.
 \]
-::: {.proof}
-logarithm product rule and <1>1.
+
+::: pf-proof
+
+logarithm product rule and step [](#s1){.pf-ref}.
+
 :::
-<2>4. **Sub-problem 4: $\int \ln(x^2 - 1) \, dx$**
+
+:::
+
+::: pf-step
+
+**Sub-problem 4: $\int \ln(x^2 - 1) \, dx$**
 Factoring $x^2 - 1 = (x - 1)(x + 1)$:
 \[
 \int \ln(x^2 - 1) \, dx = \int \ln(x - 1) \, dx + \int \ln(x + 1) \, dx = (x - 1)\ln(x - 1) + (x + 1)\ln(x + 1) - 2x + C.
 \]
-::: {.proof}
-logarithm product rule and <1>1.
+
+::: pf-proof
+
+logarithm product rule and step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>1 evaluates $\int\ln(ax+b)\,dx$, and step <1>2 evaluates the four special cases.
 :::
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} evaluates $\int\ln(ax+b)\,dx$, and step [](#s2){.pf-ref} evaluates the four special cases.
+
+:::
+
+:::
+
 :::

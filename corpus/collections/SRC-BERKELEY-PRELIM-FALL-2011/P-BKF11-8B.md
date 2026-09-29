@@ -35,7 +35,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 A=I+N,
 \qquad
@@ -47,7 +52,8 @@ N=
 $$
 and $N^2=0$.
 
-::: {.proof}
+::: pf-proof
+
 Subtracting the identity matrix from $A$ gives the displayed $N$.
 Direct multiplication gives
 $$
@@ -58,26 +64,37 @@ N^2=
 \end{pmatrix}
 =0.
 $$
+
 :::
 
-<1>2. For every integer $m\ge0$,
+:::
+
+::: {.pf-step #s2}
+
+For every integer $m\ge0$,
 $$
 A^m=I+mN.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $I$ and $N$ commute, the binomial theorem gives
 $$
 (I+N)^m
 =\sum_{k=0}^m\binom{m}{k}N^k.
 $$
-By step <1>1, every term with $k\ge2$ vanishes. Hence
+By step [](#s1){.pf-ref}, every term with $k\ge2$ vanishes. Hence
 $$
 A^m=(I+N)^m=I+mN.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 A^{100}
@@ -89,8 +106,9 @@ A^{100}
 }.
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives
 $$
 A^{100}
 =I+100N
@@ -106,11 +124,17 @@ A^{100}
 \end{pmatrix},
 $$
 which is the displayed matrix.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested power.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested power.
+
+:::
+
+:::
+
 :::

@@ -32,12 +32,18 @@ is the thirteenth power of a positive integer. Determine that integer.
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 89^{13}=21982145917308330487013369.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Repeated squaring gives
 $$
 89^2=7921,
@@ -59,16 +65,22 @@ $$
 21982145917308330487013369.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The positive integer in the problem is
+:::
+
+::: {.pf-step #s2}
+
+The positive integer in the problem is
 $$
 \boxed{89}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By hypothesis, the displayed number is $m^{13}$ for some positive
-integer $m$. Step <1>1 shows that it is also $89^{13}$. The function
+integer $m$. Step [](#s1){.pf-ref} shows that it is also $89^{13}$. The function
 $$
 x\longmapsto x^{13}
 $$
@@ -77,11 +89,17 @@ $$
 m^{13}=89^{13}
 $$
 implies $m=89$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 gives the requested integer.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the requested integer.
+
+:::
+
+:::
+
 :::

@@ -25,10 +25,16 @@ audit:
 (b) Prove that there is no simple group of order $56$.
 :::
 
-
 ::: {.solution}
-<1>1. A nonabelian group of order \(21\) has one Sylow \(7\)-subgroup and seven Sylow \(3\)-subgroups; a nonabelian group of order \(39\) has one Sylow \(13\)-subgroup and thirteen Sylow \(3\)-subgroups.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+A nonabelian group of order \(21\) has one Sylow \(7\)-subgroup and seven Sylow \(3\)-subgroups; a nonabelian group of order \(39\) has one Sylow \(13\)-subgroup and thirteen Sylow \(3\)-subgroups.
+
+::: pf-proof
+
 First let \(|G|=21=3\cdot7\). If \(n_7\) is the number of Sylow \(7\)-subgroups, Sylow's theorems give
 \[
 n_7\equiv1\pmod7,
@@ -81,10 +87,17 @@ As above, \(n_3=1\) would make both Sylow subgroups normal and force \(G\cong C_
 \[
 \boxed{n_3=13,\qquad n_{13}=1}.
 \]
+
 :::
 
-<1>2. No group of order \(56\) is simple.
-::: {.proof}
+:::
+
+::: pf-step
+
+No group of order \(56\) is simple.
+
+::: pf-proof
+
 Let \(|G|=56=2^3\cdot7\). Suppose for contradiction that \(G\) is simple.
 
 The number \(n_7\) of Sylow \(7\)-subgroups satisfies
@@ -121,5 +134,11 @@ Therefore
 \[
 \boxed{\text{there is no simple group of order }56}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

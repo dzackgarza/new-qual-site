@@ -46,8 +46,15 @@ then there exists a subsequence $\{f_{n_j}\}$ that converges uniformly on $[0,1]
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 For each integer $n\ge1$, let $\phi_n$ be the triangular function supported on
 \[
 [n-2^{-n-2},\,n+2^{-n-2}]
@@ -67,10 +74,17 @@ Thus $f\in L^1(\mathbb R)$, but
 f(n)=1
 \]
 for every $n$, so $f(x)$ does not tend to $0$ as $x\to\infty$.
+
 :::
 
-<1>2. Part (b) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is true.
+
+::: pf-proof
+
 For $y>x$,
 \[
 |f(y)-f(x)|
@@ -90,10 +104,17 @@ Since $f\in L^1$, necessarily
 \[
 \boxed{\lim_{x\to\infty}f(x)=0.}
 \]
+
 :::
 
-<1>3. Part (c) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is false.
+
+::: pf-proof
+
 Enumerate the dyadic intervals level by level. For each $k\ge1$ and $0\le j<2^k$, let
 \[
 I_{k,j}=[j2^{-k},(j+1)2^{-k})
@@ -109,10 +130,17 @@ At level $k$, every such interval has length $2^{-k}$, so
 Thus $f_n\to0$ in $L^1([0,1])$.
 
 However, every $x\in[0,1]$ belongs to exactly one dyadic interval at each level. Hence $f_n(x)=1$ for infinitely many $n$. It is also $0$ for infinitely many $n$, because each level has more than one interval. Therefore $f_n(x)$ fails to converge to $0$ for every $x\in[0,1]$. In particular there is no positive-measure set on which the full sequence converges pointwise to $0$.
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 We show that the graph of $T$ is closed. Suppose
 \[
 x_n\to x\quad\text{in }X,
@@ -134,10 +162,17 @@ f(y)=f(Tx)
 for every $f\in Y^*$. By Hahn--Banach, continuous linear functionals separate points of $Y$, so $y=Tx$. Therefore the graph of $T$ is closed.
 
 Since $X$ and $Y$ are Banach spaces, the Closed Graph Theorem implies that $T$ is bounded.
+
 :::
 
-<1>5. Part (e) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (e) is true.
+
+::: pf-proof
+
 Taking $y=0$ gives
 \[
 |f_n(x)|=|f_n(x)-f_n(0)|\le |x|^\alpha\le1,
@@ -149,5 +184,11 @@ so the family is uniformly bounded. The common Hölder estimate
 makes it equicontinuous on the compact interval $[0,1]$.
 
 By the Arzelà--Ascoli theorem, $(f_n)$ has a uniformly convergent subsequence.
+
 :::
+
+:::
+
+:::
+
 :::

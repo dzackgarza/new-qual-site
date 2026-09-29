@@ -37,11 +37,17 @@ Let
 I=(x^2-y^3,\ x-y^2)\subseteq\mathbb C[x,y].
 \]
 
-<1>1. There is an isomorphism
+::: pf
+
+::: {.pf-step #s1}
+
+There is an isomorphism
 \[
 \mathbb C[x,y]/I\cong \mathbb C[y]/(y^3(y-1)).
 \]
-::: {.proof}
+
+::: pf-proof
+
 First quotient by the relation $x-y^2$.
 The substitution homomorphism
 \[
@@ -60,13 +66,20 @@ Under this isomorphism the other generator becomes
 x^2-y^3\longmapsto y^4-y^3=y^3(y-1).
 \]
 The claimed quotient follows.
+
 :::
 
-<1>2. The affine variety of $I$ is
+:::
+
+::: {.pf-step #s2}
+
+The affine variety of $I$ is
 \[
 V(I)=\{(0,0),(1,1)\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every point of $V(I)$ satisfies
 \[
 x=y^2.
@@ -77,33 +90,47 @@ y^4-y^3=y^3(y-1)=0.
 \]
 Hence $y=0$ or $y=1$, and then $x=y^2$ gives respectively $x=0$ or $x=1$.
 Both points satisfy the two generators of $I$.
+
 :::
 
-<1>3. The radical of $I$ is
+:::
+
+::: pf-step
+
+The radical of $I$ is
 \[
 \sqrt I=(x,y)\cap(x-1,y-1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 By Hilbert's Nullstellensatz over the algebraically closed field $\mathbb C$,
 \[
 \sqrt I=I(V(I)).
 \]
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 I(V(I))
 =I(\{(0,0)\})\cap I(\{(1,1)\})
 =(x,y)\cap(x-1,y-1).
 \]
 Each factor is maximal, hence prime, as requested.
+
 :::
 
-<1>4. The ideal $I$ is not radical.
-::: {.proof}
+:::
+
+::: pf-step
+
+The ideal $I$ is not radical.
+
+::: pf-proof
+
 Set
 \[
 h=y(y-1).
 \]
-Under the quotient description of <1>1, membership in $I$ is equivalent to divisibility by $y^3(y-1)$ in $\mathbb C[y]$.
+Under the quotient description of step [](#s1){.pf-ref}, membership in $I$ is equivalent to divisibility by $y^3(y-1)$ in $\mathbb C[y]$.
 The polynomial
 \[
 y(y-1)
@@ -119,5 +146,11 @@ Therefore
 h\in\sqrt I\setminus I,
 \]
 so $I\ne\sqrt I$ and $I$ is not radical.
+
 :::
+
+:::
+
+:::
+
 :::

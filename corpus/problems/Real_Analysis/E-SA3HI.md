@@ -24,29 +24,52 @@ audit:
 ::: {.solution}
 Work in a metric space $(X,d)$ with $K$ and $F$ nonempty; if either is empty, $\dist(K,F) = \infty$.
 
-<1>1. The function $x \mapsto \dist(x, F)$ is $1$-Lipschitz, hence continuous.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The function $x \mapsto \dist(x, F)$ is $1$-Lipschitz, hence continuous.
+
+::: pf-proof
+
 For $z \in F$, $\dist(x,F) \leq d(x,z) \leq d(x,y) + d(y,z)$. Taking the infimum over $z$ gives $\dist(x,F) \leq d(x,y) + \dist(y,F)$, and the same holds with $x$ and $y$ exchanged.
+
 :::
 
-<1>2. There is $k_0 \in K$ with $\dist(k_0, F) = \dist(K, F)$.
-
-::: {.proof}
-$\dist(K,F) = \inf_{k \in K}\dist(k,F)$, and a continuous function on a nonempty compact set attains its infimum; step <1>1 gives continuity.
 :::
 
-<1>3. $\dist(k_0, F) > 0$.
+::: {.pf-step #s2}
 
-::: {.proof}
+There is $k_0 \in K$ with $\dist(k_0, F) = \dist(K, F)$.
+
+::: pf-proof
+
+$\dist(K,F) = \inf_{k \in K}\dist(k,F)$, and a continuous function on a nonempty compact set attains its infimum; step [](#s1){.pf-ref} gives continuity.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+$\dist(k_0, F) > 0$.
+
+::: pf-proof
+
 If $\dist(k_0, F) = 0$, then $k_0$ is a limit of points of $F$; since $F$ is closed, $k_0 \in F$, contradicting $K \cap F = \emptyset$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

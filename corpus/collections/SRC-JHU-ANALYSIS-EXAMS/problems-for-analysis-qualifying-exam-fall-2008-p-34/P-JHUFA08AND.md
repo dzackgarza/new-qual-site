@@ -34,19 +34,31 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The real integral is absolutely convergent.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The real integral is absolutely convergent.
+
+::: pf-proof
+
 For $0<x\leq1$, its absolute integrand is at most
 $|\log x|/16$, whose integral is finite. For $x\geq1$,
 the inequalities $\log x\leq x$ and $(x^2+4)^2\geq x^4$
 bound it by $x^{-3}$. Both endpoint integrals therefore
 converge absolutely. Denote the requested integral by $I$.
+
 :::
 
-<1>2. An indented upper semicircle determines $2I$ by a double-pole residue.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+An indented upper semicircle determines $2I$ by a double-pole residue.
+
+::: pf-proof
+
 Choose the logarithm with $-\pi/2<\arg z<3\pi/2$ and set
 $$
 F(z)=\frac{\operatorname{Log}z}{(z^2+4)^2}.
@@ -75,11 +87,17 @@ $$
 \int_\varepsilon^R\frac{2\log x+i\pi}{(x^2+4)^2}\,dx.
 $$
 Its real part is twice the corresponding truncated integral.
+
 :::
 
-<1>3. Both arcs vanish and yield the asserted value.
+:::
 
-::: {.proof}
+::: pf-step
+
+Both arcs vanish and yield the asserted value.
+
+::: pf-proof
+
 On the outer semicircle the integral has modulus at most
 $$
 \frac{\pi R(\log R+\pi)}{(R^2-4)^2}\longrightarrow0.
@@ -91,7 +109,7 @@ $$
 $$
 These follow from the arc lengths, $|\arg z|\leq\pi$
 on the upper half-plane, and the reverse triangle
-inequality for $z^2+4$. Taking real parts in step <1>2
+inequality for $z^2+4$. Taking real parts in step [](#s2){.pf-ref}
 and then letting $\varepsilon\downarrow0$, $R\to\infty$
 is justified by these estimates and absolute convergence.
 It gives
@@ -100,5 +118,11 @@ $$
 \qquad
 \boxed{I=\frac{\pi}{32}(\log2-1)}.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

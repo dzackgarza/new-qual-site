@@ -30,7 +30,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. **Seifert--van Kampen.** If $X=U\cup V$, where $U,V,U\cap V$ are path-connected open sets containing a common basepoint $x_0$, then
+
+::: pf
+
+::: pf-step
+
+**Seifert--van Kampen.** If $X=U\cup V$, where $U,V,U\cap V$ are path-connected open sets containing a common basepoint $x_0$, then
 $$
 \pi_1(X,x_0)
 \cong
@@ -38,7 +43,11 @@ $$
 $$
 where the amalgamation uses the two inclusion-induced homomorphisms.
 
-<1>2. For two tori glued along a circle representing one standard generator in each torus,
+:::
+
+::: pf-step
+
+For two tori glued along a circle representing one standard generator in each torus,
 $$
 \pi_1
 \cong
@@ -49,7 +58,11 @@ $$
 \mathbb Z\times F_2.
 $$
 
-<1>3. The Klein bottle has the standard presentation
+:::
+
+::: pf-step
+
+The Klein bottle has the standard presentation
 $$
 \pi_1(K)
 \cong
@@ -58,7 +71,11 @@ $$
 $$
 where the generator represented by $a$ acts on $\langle b\rangle\cong\mathbb Z$ by inversion.
 
-<1>4. For a wedge of connected CW complexes, van Kampen gives a free product. Hence
+:::
+
+::: pf-step
+
+For a wedge of connected CW complexes, van Kampen gives a free product. Hence
 $$
 \pi_1(T^2\vee S^1)
 \cong
@@ -67,7 +84,16 @@ $$
 \langle a,b,c\mid[a,b]=1\rangle.
 $$
 
-<1>5. Likewise,
+:::
+
+::: pf-step
+
+Likewise,
+
+:::
+
+:::
+
 $$
 \pi_1(T^2\vee\mathbb{RP}^2)
 \cong

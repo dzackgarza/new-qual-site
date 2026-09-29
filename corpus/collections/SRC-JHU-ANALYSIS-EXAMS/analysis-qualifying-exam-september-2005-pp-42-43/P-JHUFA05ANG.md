@@ -38,9 +38,14 @@ have between the circles $\{ | z | = 1 \}$ and $\{ | z | = 2 \}$ . Justify your 
 There are $\boxed{6}$ zeros between the circles, counted
 with multiplicity. Let $p(z)=z^9+z^5-8z^3-z+2$.
 
-<1>1. The unit disk contains three zeros.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The unit disk contains three zeros.
+
+::: pf-proof
+
 On $|z|=1$,
 $$
 |z^9+z^5-z+2|\leq1+1+1+2=5<8=|-8z^3|.
@@ -50,11 +55,17 @@ $p$ and $-8z^3$ in this disk, namely three counted
 with multiplicity [@SS03]. The strict inequality also
 gives $|p(z)|\geq3$ on the circle, so there are no
 boundary zeros.
+
 :::
 
-<1>2. The radius-two disk contains nine zeros, leaving six in the annulus.
+:::
 
-::: {.proof}
+::: pf-step
+
+The radius-two disk contains nine zeros, leaving six in the annulus.
+
+::: pf-proof
+
 On $|z|=2$,
 $$
 |z^5-8z^3-z+2|\leq32+64+2+2=100<512=|z^9|.
@@ -66,5 +77,11 @@ boundary. Subtracting the three inside $|z|<1$ gives
 $9-3=6$ in $1<|z|<2$. Since neither circle contains
 a zero, including the boundary circles would not
 change this answer.
+
 :::
+
+:::
+
+:::
+
 :::

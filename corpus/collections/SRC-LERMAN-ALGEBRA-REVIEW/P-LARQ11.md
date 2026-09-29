@@ -31,8 +31,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The subset $I/K$ is an ideal of $R/K$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The subset $I/K$ is an ideal of $R/K$.
+
+::: pf-proof
+
 Because $K\subseteq I$, the set
 $$
 I/K=\{i+K:i\in I\}
@@ -46,10 +53,17 @@ $$
 (r+K)(i+K)=ri+K\in I/K,
 $$
 and similarly $(i+K)(r+K)=ir+K\in I/K$, because $I$ is a two-sided ideal of $R$. Thus $I/K\triangleleft R/K$.
+
 :::
 
-<1>2. The quotient by $I/K$ is naturally isomorphic to $R/I$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The quotient by $I/K$ is naturally isomorphic to $R/I$.
+
+::: pf-proof
+
 Define
 $$
 \Phi:R/K\to R/I,
@@ -69,5 +83,11 @@ $$
 (R/K)/(I/K)\cong R/I,
 $$
 as required.
+
 :::
+
+:::
+
+:::
+
 :::

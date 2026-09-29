@@ -25,18 +25,36 @@ Prove that $A$ is compact in the subspace topology.
 :::
 
 ::: {.solution}
-<1>1. Let $\{V_i\}_{i\in I}$ be an open cover of $A$ in the subspace topology. For each $i$, choose an open set $U_i\subseteq X$ with
+
+::: pf
+
+::: pf-step
+
+Let $\{V_i\}_{i\in I}$ be an open cover of $A$ in the subspace topology. For each $i$, choose an open set $U_i\subseteq X$ with
 \[
 V_i=U_i\cap A.
 \]
 
-<1>2. Since $A$ is closed, $X\setminus A$ is open. Hence
+:::
+
+::: pf-step
+
+Since $A$ is closed, $X\setminus A$ is open. Hence
 \[
 \{U_i:i\in I\}\cup\{X\setminus A\}
 \]
 is an open cover of $X$.
 
-<1>3. Compactness of $X$ gives finitely many indices $i_1,\dots,i_m$ such that
+:::
+
+::: pf-step
+
+Compactness of $X$ gives finitely many indices $i_1,\dots,i_m$ such that
+
+:::
+
+:::
+
 \[
 X\subseteq U_{i_1}\cup\cdots\cup U_{i_m}\cup(X\setminus A).
 \]

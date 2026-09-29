@@ -25,7 +25,12 @@ Compute the fundamental group $\pi_1(S^n, x_0)$ for $n \ge 2$ using the **Seifer
 :::
 
 ::: {.solution}
-<1>1. Let $N,S\in S^n$ be the north and south poles and set
+
+::: pf
+
+::: pf-step
+
+Let $N,S\in S^n$ be the north and south poles and set
 \[
 U=S^n\setminus\{S\},\qquad V=S^n\setminus\{N\}.
 \]
@@ -34,13 +39,26 @@ By stereographic projection, both $U$ and $V$ are homeomorphic to $\mathbb R^n$,
 \pi_1(U)=\pi_1(V)=1.
 \]
 
-<1>2. Their intersection is
+:::
+
+::: pf-step
+
+Their intersection is
 \[
 U\cap V=S^n\setminus\{N,S\}\cong\mathbb R^n\setminus\{0\}.
 \]
 This deformation retracts onto $S^{n-1}$, which is path-connected for $n\ge2$. Thus $U\cap V$ is path-connected.
 
-<1>3. Choose $x_0\in U\cap V$. Seifert--van Kampen identifies $\pi_1(S^n,x_0)$ with the pushout
+:::
+
+::: pf-step
+
+Choose $x_0\in U\cap V$. Seifert--van Kampen identifies $\pi_1(S^n,x_0)$ with the pushout
+
+:::
+
+:::
+
 \[
 \pi_1(U,x_0)*_{\pi_1(U\cap V,x_0)}\pi_1(V,x_0).
 \]

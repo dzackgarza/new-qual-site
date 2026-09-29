@@ -48,7 +48,12 @@ Prove that $f$ must be constant.
 :::
 
 ::: {.solution}
-<1>1. Part (a), the Schwarz reflection principle across the real axis:
+
+::: pf
+
+::: {.pf-step #s1}
+
+Part (a), the Schwarz reflection principle across the real axis:
 let $U\subseteq\CC$ be a domain symmetric under conjugation, and write
 $$
 U_+=\{z\in U:\operatorname{Im}z>0\}.
@@ -68,7 +73,11 @@ F(z),&\operatorname{Im}z\geq0,\\
 $$
 defines a holomorphic function on all of $U$.
 
-<1>2. Part (b): the linear fractional transformation
+:::
+
+::: {.pf-step #s2}
+
+Part (b): the linear fractional transformation
 $$
 \boxed{
 T(z)=i\frac{1+z}{1-z}
@@ -76,7 +85,8 @@ T(z)=i\frac{1+z}{1-z}
 $$
 maps $\DD$ biholomorphically onto the upper half-plane $H$.
 
-::: {.proof}
+::: pf-proof
+
 For $z\in\DD$,
 $$
 \begin{aligned}
@@ -99,16 +109,22 @@ T^{-1}(w)=\frac{w-i}{w+i},
 $$
 which maps $H$ back into $\DD$. Hence $T$ is a biholomorphism from $\DD$
 onto $H$.
+
 :::
 
-<1>3. With $g(w)=\bar w$, one has on the Riemann sphere
+:::
+
+::: {.pf-step #s3}
+
+With $g(w)=\bar w$, one has on the Riemann sphere
 $$
 \boxed{
 T^{-1}\circ g\circ T(z)=\frac1{\bar z}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For finite $z\neq0,1$,
 $$
 \overline{T(z)}
@@ -132,11 +148,17 @@ $$
 Both sides are the same anti-Möbius transformation of the Riemann sphere,
 so the identity extends to the exceptional points as well, with
 $0$ and $\infty$ interchanged.
+
 :::
 
-<1>4. Part (c): the function $f$ is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Part (c): the function $f$ is constant.
+
+::: pf-proof
+
 Write
 $$
 f=u+iv
@@ -165,12 +187,18 @@ $$
 If $f$ were nonconstant, the open mapping theorem would make $f(\DD)$ open
 in $\CC$, which is impossible for a subset of $\RR$. Therefore $f$ is
 constant.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 answers part (a), steps <1>2--<1>3 answer part (b), and step <1>4
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} answer part (b), and step [](#s4){.pf-ref}
 proves part (c).
+
 :::
+
+:::
+
 :::

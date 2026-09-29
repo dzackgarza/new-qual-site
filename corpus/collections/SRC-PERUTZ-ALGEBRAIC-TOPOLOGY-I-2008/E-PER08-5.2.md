@@ -31,19 +31,39 @@ Then $p$ is a (finite-sheeted) covering map.
 ::: {.solution}
 The map is a proper local diffeomorphism, hence a finite-sheeted covering.
 
-<1>1. Every point of $Y$ has a neighbourhood on which $p$ is a diffeomorphism.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every point of $Y$ has a neighbourhood on which $p$ is a diffeomorphism.
+
+::: pf-proof
+
 Since $Dp_y:T_yY\to T_{p(y)}X$ is an isomorphism, the inverse function theorem gives open neighbourhoods $V_y\ni y$ and $U_y\ni p(y)$ such that $p|_{V_y}:V_y\to U_y$ is a diffeomorphism.
+
 :::
 
-<1>2. Every fibre $p^{-1}(x)$ is finite.
-::: {.proof}
-It is discrete by <1>1. It is also compact because $p$ is proper and $\{x\}$ is compact.
+:::
+
+::: pf-step
+
+Every fibre $p^{-1}(x)$ is finite.
+
+::: pf-proof
+
+It is discrete by step [](#s1){.pf-ref}. It is also compact because $p$ is proper and $\{x\}$ is compact.
 A compact discrete space is finite.
+
 :::
 
-<1>3. A sufficiently small neighbourhood of $x$ is evenly covered.
-::: {.proof}
+:::
+
+::: pf-step
+
+A sufficiently small neighbourhood of $x$ is evenly covered.
+
+::: pf-proof
+
 Write $p^{-1}(x)=\{y_1,\dots,y_r\}$.
 Choose pairwise disjoint inverse-function neighbourhoods $V_i$ of the $y_i$, with $p(V_i)$ containing an open neighbourhood of $x$.
 After shrinking, choose an open $U\ni x$ with $U\subseteq\bigcap_i p(V_i)$.
@@ -58,5 +78,11 @@ p^{-1}(U)=\coprod_{i=1}^r(V_i\cap p^{-1}(U)),
 \]
 and each summand maps diffeomorphically onto $U$.
 Hence $p$ is a covering with $r<\infty$ sheets.
+
 :::
+
+:::
+
+:::
+
 :::

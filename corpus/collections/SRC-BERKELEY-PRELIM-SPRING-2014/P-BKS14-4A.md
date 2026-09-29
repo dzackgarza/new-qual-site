@@ -42,13 +42,18 @@ g(z)
 f(z).
 $$
 
-<1>1. The apparent singularity of $g$ at
+::: pf
+
+::: {.pf-step #s1}
+
+The apparent singularity of $g$ at
 $$
 z=\frac12
 $$
 is removable.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 f\left(\frac12\right)=0,
@@ -68,15 +73,21 @@ $$
 $$
 the zero of $f$ cancels the denominator factor $2z-1$. The remaining
 factors are holomorphic near $1/2$.
+
 :::
 
-<1>2. The apparent singularity of $g$ at
+:::
+
+::: {.pf-step #s2}
+
+The apparent singularity of $g$ at
 $$
 z=\frac i2
 $$
 is removable.
 
-::: {.proof}
+::: pf-proof
+
 Similarly,
 $$
 f\left(\frac i2\right)=0
@@ -94,19 +105,30 @@ $$
 2\left(z-\frac i2\right),
 $$
 the singularity cancels.
+
 :::
 
-<1>3. After filling in the removable singularities, $g$ is holomorphic on
+:::
+
+::: {.pf-step #s3}
+
+After filling in the removable singularities, $g$ is holomorphic on
 the unit disk and continuous on its boundary.
 
-::: {.proof}
+::: pf-proof
+
 The only possible singularities introduced by the displayed formula are
-$1/2$ and $i/2$, which are removable by steps <1>1 and <1>2. All other
+$1/2$ and $i/2$, which are removable by steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. All other
 factors are rational functions with no further poles in the closed unit
 disk, while $f$ is analytic there.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 \abs{z}=1,
 $$
@@ -123,7 +145,8 @@ $$
 \abs{2z-i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}=1$,
 $$
 \begin{aligned}
@@ -154,9 +177,14 @@ $$
 =
 \abs{2z-i}^2.
 $$
+
 :::
 
-<1>5. On the unit circle,
+:::
+
+::: {.pf-step #s5}
+
+On the unit circle,
 $$
 \abs{g(z)}
 =
@@ -165,31 +193,44 @@ $$
 1.
 $$
 
-::: {.proof}
-By step <1>4, each of the two rational factors defining $g$ has modulus
+::: pf-proof
+
+By step [](#s4){.pf-ref}, each of the two rational factors defining $g$ has modulus
 $1$ when $\abs{z}=1$. Multiplying their moduli with $\abs{f(z)}$ gives
 the claim.
+
 :::
 
-<1>6. Throughout the unit disk,
+:::
+
+::: {.pf-step #s6}
+
+Throughout the unit disk,
 $$
 \abs{g(z)}
 \leq
 1.
 $$
 
-::: {.proof}
-By step <1>3, $g$ is holomorphic in the disk and continuous on its
-boundary. Step <1>5 bounds its boundary modulus by $1$. The maximum
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $g$ is holomorphic in the disk and continuous on its
+boundary. Step [](#s5){.pf-ref} bounds its boundary modulus by $1$. The maximum
 modulus principle gives the same bound inside.
+
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #s7}
+
+One has
 $$
 g(0)=4f(0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Substitution into the defining formula gives
 $$
 \begin{aligned}
@@ -202,9 +243,14 @@ f(0)\\
 4f(0).
 \end{aligned}
 $$
+
 :::
 
-<1>8. Therefore
+:::
+
+::: {.pf-step #s8}
+
+Therefore
 $$
 \boxed{
 \abs{f(0)}
@@ -213,8 +259,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>6 and <1>7,
+::: pf-proof
+
+By steps [](#s6){.pf-ref} and [](#s7){.pf-ref},
 $$
 4\abs{f(0)}
 =
@@ -223,11 +270,17 @@ $$
 1.
 $$
 Divide by $4$.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 is the required bound.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} is the required bound.
+
+:::
+
+:::
+
 :::

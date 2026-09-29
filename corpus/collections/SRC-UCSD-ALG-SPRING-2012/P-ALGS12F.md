@@ -42,8 +42,14 @@ The splitting field of $x^3-2$ is
 E=\mathbb Q(\alpha,\omega).
 \]
 
-<1>1. We have $[K:\mathbb Q]=12$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+We have $[K:\mathbb Q]=12$.
+
+::: pf-proof
+
 The polynomial $x^3-2$ is Eisenstein at $2$, hence irreducible over $\mathbb Q$.
 Its discriminant is
 \[
@@ -68,10 +74,17 @@ Since $K$ is the compositum of $E$ with the splitting field $\mathbb Q(\sqrt3)$ 
 \[
 [K:\mathbb Q]=[K:E][E:\mathbb Q]=2\cdot6=12.
 \]
+
 :::
 
-<1>2. The Sylow-$2$ subgroups of the three listed nonabelian groups of order $12$ are as follows.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The Sylow-$2$ subgroups of the three listed nonabelian groups of order $12$ are as follows.
+
+::: pf-proof
+
 For $A_4$, the Klein four subgroup
 \[
 V_4=\{e,(12)(34),(13)(24),(14)(23)\}
@@ -86,13 +99,20 @@ There are three such subgroups, so it is not normal.
 
 For $C_3\rtimes C_4$ with the generator of $C_4$ acting on $C_3$ by inversion, the displayed $C_4$ is a Sylow-$2$ subgroup.
 It is not normal: if $a$ generates $C_3$ and $b$ generates $C_4$, with $bab^{-1}=a^{-1}$, then conjugating $b$ by $a$ does not remain in $\langle b\rangle$.
+
 :::
 
-<1>3. We have
+:::
+
+::: pf-step
+
+We have
 \[
 \operatorname{Gal}(K/\mathbb Q)\cong D_{12}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Both $E/\mathbb Q$ and $\mathbb Q(\sqrt3)/\mathbb Q$ are Galois, and their intersection is $\mathbb Q$ because $\sqrt3\notin E$.
 Hence restriction gives
 \[
@@ -102,7 +122,13 @@ Hence restriction gives
  \cong S_3\times C_2.
 \]
 This group has a Sylow-$2$ subgroup isomorphic to $C_2\times C_2$, and it is not normal.
-By <1>2 it is therefore neither $A_4$ nor $C_3\rtimes C_4$, so among the three listed nonabelian groups it is $D_{12}$.
+By step [](#s2){.pf-ref} it is therefore neither $A_4$ nor $C_3\rtimes C_4$, so among the three listed nonabelian groups it is $D_{12}$.
 Equivalently, $S_3\times C_2\cong D_{12}$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -32,7 +32,12 @@ Find all entire functions which have poles at $\infty$
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 $$
 f(z)=\sum_{n=0}^{\infty}a_nz^n
 $$
@@ -48,21 +53,28 @@ f(1/w)
 $$
 for every $w\neq0$.
 
-::: {.proof}
+::: pf-proof
+
 Because $f$ is entire, its Taylor series at $0$ has infinite radius of
 convergence. Substituting $z=1/w$ for $w\neq0$ gives the displayed Laurent
 series about $w=0$.
+
 :::
 
-<1>2. If $f$ has a pole at $\infty$, then $f$ is a nonconstant polynomial.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $f$ has a pole at $\infty$, then $f$ is a nonconstant polynomial.
+
+::: pf-proof
+
 By definition, $f$ has a pole at $\infty$ exactly when
 $$
 w\longmapsto f(1/w)
 $$
 has a pole at $w=0$. A Laurent series at a pole has only finitely many
-negative-power terms. By step <1>1, the coefficient of $w^{-n}$ is $a_n$.
+negative-power terms. By step [](#s1){.pf-ref}, the coefficient of $w^{-n}$ is $a_n$.
 Hence there is an integer $d\geq0$ such that
 $$
 a_n=0
@@ -76,11 +88,17 @@ is a polynomial.
 Since the singularity at infinity is a pole rather than removable, the
 principal part of $f(1/w)$ is nonzero. Therefore some $a_n$ with $n\geq1$
 is nonzero, so the polynomial is nonconstant.
+
 :::
 
-<1>3. Every nonconstant polynomial has a pole at $\infty$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every nonconstant polynomial has a pole at $\infty$.
+
+::: pf-proof
+
 Let
 $$
 p(z)=a_0+a_1z+\cdots+a_dz^d,
@@ -98,19 +116,31 @@ $$
 Its Laurent series at $w=0$ has highest negative power $w^{-d}$ with
 nonzero coefficient $a_d$. Hence $w=0$ is a pole of order $d$ for
 $p(1/w)$, so $p$ has a pole of order $d$ at $\infty$.
+
 :::
 
-<1>4. The complete list is the set of all nonconstant polynomials.
+:::
 
-::: {.proof}
-Step <1>2 shows that every entire function with a pole at infinity is a
-nonconstant polynomial, and step <1>3 shows that every nonconstant
+::: {.pf-step #s4}
+
+The complete list is the set of all nonconstant polynomials.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that every entire function with a pole at infinity is a
+nonconstant polynomial, and step [](#s3){.pf-ref} shows that every nonconstant
 polynomial has such a pole.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested classification.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested classification.
+
+:::
+
+:::
+
 :::

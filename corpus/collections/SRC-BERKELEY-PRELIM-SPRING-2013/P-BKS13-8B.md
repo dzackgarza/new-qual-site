@@ -34,23 +34,34 @@ Calculate $E _ { n } .$
 :::
 
 ::: {.solution}
-<1>1. For a permutation
+
+::: pf
+
+::: {.pf-step #s1}
+
+For a permutation
 $$
 \sigma\in\Sigma_n,
 $$
 the trace of its permutation matrix equals the number of fixed points of
 $\sigma$.
 
-::: {.proof}
+::: pf-proof
+
 The $i$th diagonal entry of the permutation matrix is $1$ exactly when
 $$
 \sigma(i)=i,
 $$
 and is $0$ otherwise. Summing the diagonal entries therefore counts fixed
 points.
+
 :::
 
-<1>2. For each
+:::
+
+::: {.pf-step #s2}
+
+For each
 $$
 i\in\{1,\ldots,n\},
 $$
@@ -60,20 +71,27 @@ $$
 $$
 permutations in $\Sigma_n$ fix $i$.
 
-::: {.proof}
+::: pf-proof
+
 Once $i$ is fixed, the remaining $n-1$ elements may be permuted
 arbitrarily. There are $(n-1)!$ such permutations.
+
 :::
 
-<1>3. The sum of the traces over all permutation matrices is
+:::
+
+::: {.pf-step #s3}
+
+The sum of the traces over all permutation matrices is
 $$
 \sum_{\sigma\in\Sigma_n}\operatorname{Trace}(\sigma)
 =
 n!.
 $$
 
-::: {.proof}
-Using step <1>1 and counting fixed points by their position,
+::: pf-proof
+
+Using step [](#s1){.pf-ref} and counting fixed points by their position,
 $$
 \begin{aligned}
 \sum_{\sigma\in\Sigma_n}\operatorname{Trace}(\sigma)
@@ -86,16 +104,22 @@ n(n-1)!\\
 n!,
 \end{aligned}
 $$
-by step <1>2.
+by step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{E_n=1}.
 $$
 
-::: {.proof}
-By the definition of $E_n$ and step <1>3,
+::: pf-proof
+
+By the definition of $E_n$ and step [](#s3){.pf-ref},
 $$
 E_n
 =
@@ -106,11 +130,17 @@ E_n
 =
 1.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

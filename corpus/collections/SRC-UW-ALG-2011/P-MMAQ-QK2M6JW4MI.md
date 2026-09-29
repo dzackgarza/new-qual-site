@@ -30,10 +30,16 @@ Given a finite group $G$, recall that its *regular representation* is the repres
 - Let $H$ be a group of order 12. Show that its adjoint representation is reducible; that is, there is an $H$-invariant subspace of $\mathbb C[H]$ besides 0 and $\mathbb C[H]$.
 :::
 
-
 ::: {.solution}
-<1>1. The group $\operatorname{GL}_2(\mathbb F_2)$ is isomorphic to $S_3$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The group $\operatorname{GL}_2(\mathbb F_2)$ is isomorphic to $S_3$.
+
+::: pf-proof
+
 There are exactly three nonzero vectors in $\mathbb F_2^2$. Every invertible linear map permutes them, giving a homomorphism
 \[
 \operatorname{GL}_2(\mathbb F_2)\longrightarrow S_3.
@@ -43,14 +49,21 @@ If an invertible linear map fixes all three nonzero vectors, then in particular 
 |\operatorname{GL}_2(\mathbb F_2)|=(2^2-1)(2^2-2)=3\cdot2=6=|S_3|,
 \]
 so it is an isomorphism.
+
 :::
 
-<1>2. Up to isomorphism, $G=\operatorname{GL}_2(\mathbb F_2)$ has exactly three irreducible complex representations, of dimensions
+:::
+
+::: {.pf-step #s2}
+
+Up to isomorphism, $G=\operatorname{GL}_2(\mathbb F_2)$ has exactly three irreducible complex representations, of dimensions
 \[
 1,\quad1,\quad2.
 \]
-::: {.proof}
-By <1>1 it is enough to work with $S_3$. The trivial representation and the sign representation are distinct irreducible representations of dimension $1$. The permutation representation of $S_3$ on $\mathbb C^3$ has the invariant decomposition
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} it is enough to work with $S_3$. The trivial representation and the sign representation are distinct irreducible representations of dimension $1$. The permutation representation of $S_3$ on $\mathbb C^3$ has the invariant decomposition
 \[
 \mathbb C^3
 =\mathbb C(1,1,1)\oplus
@@ -61,23 +74,37 @@ V=\{(z_1,z_2,z_3):z_1+z_2+z_3=0\}.
 The $2$-dimensional summand $V$ is irreducible: a proper nonzero invariant subspace would be one-dimensional, hence would give a common eigenline for a transposition and a $3$-cycle; direct inspection of their actions on $V$ shows no such common eigenline exists.
 
 The number of irreducible complex representations of a finite group equals its number of conjugacy classes. The group $S_3$ has three conjugacy classes: the identity, the transpositions, and the $3$-cycles. Hence these three irreducibles are all of them.
+
 :::
 
-<1>3. The regular representation decomposes as
+:::
+
+::: pf-step
+
+The regular representation decomposes as
 \[
 \mathbb C[G]
 \cong \mathbf 1\oplus\operatorname{sgn}\oplus V\oplus V.
 \]
-::: {.proof}
-For a finite group over $\mathbb C$, each irreducible representation occurs in the regular representation with multiplicity equal to its dimension. Applying this to the irreducible dimensions $1,1,2$ from <1>2 gives multiplicities $1,1,2$. The total dimension is
+
+::: pf-proof
+
+For a finite group over $\mathbb C$, each irreducible representation occurs in the regular representation with multiplicity equal to its dimension. Applying this to the irreducible dimensions $1,1,2$ from step [](#s2){.pf-ref} gives multiplicities $1,1,2$. The total dimension is
 \[
 1^2+1^2+2^2=6=|G|,
 \]
 as required.
+
 :::
 
-<1>4. If $H$ is any group of order $12$, its adjoint representation on $\mathbb C[H]$ is reducible.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $H$ is any group of order $12$, its adjoint representation on $\mathbb C[H]$ is reducible.
+
+::: pf-proof
+
 Let
 \[
 u=\sum_{h\in H}h\in\mathbb C[H].
@@ -94,5 +121,11 @@ Thus the one-dimensional subspace $\mathbb C u$ is invariant under the adjoint a
 1=\dim_\mathbb C(\mathbb C u)<12=\dim_\mathbb C\mathbb C[H].
 \]
 Hence the adjoint representation is reducible.
+
 :::
+
+:::
+
+:::
+
 :::

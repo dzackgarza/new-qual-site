@@ -39,12 +39,17 @@ $$
 $$
 be the evaluation functional.
 
-<1>1. The evaluation functionals span $V^*$:
+::: pf
+
+::: {.pf-step #s1}
+
+The evaluation functionals span $V^*$:
 $$
 \spanof\{\operatorname{ev}_x:x\in X\}=V^*.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 W\coloneqq\spanof\{\operatorname{ev}_x:x\in X\}\subseteq V^*.
@@ -65,25 +70,37 @@ $$
 because $\operatorname{ev}_x\in W$.
 Hence $f$ is the zero function, a contradiction.
 Thus $W=V^*$.
+
 :::
 
-<1>2. There are points $x_1,\ldots,x_n\in X$ such that
+:::
+
+::: {.pf-step #s2}
+
+There are points $x_1,\ldots,x_n\in X$ such that
 $$
 \operatorname{ev}_{x_1},\ldots,\operatorname{ev}_{x_n}
 $$
 is a basis of $V^*$.
 
-::: {.proof}
-By step <1>1, the family of all evaluation functionals spans the $n$-dimensional vector space $V^*$.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the family of all evaluation functionals spans the $n$-dimensional vector space $V^*$.
 A spanning family in a finite-dimensional vector space contains a basis, so choose $n$ evaluations forming one.
+
 :::
 
-<1>3. There is a basis $f_1,\ldots,f_n$ of $V$ satisfying
+:::
+
+::: {.pf-step #s3}
+
+There is a basis $f_1,\ldots,f_n$ of $V$ satisfying
 $$
 f_i(x_j)=\delta_{ij}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Define
 $$
 T:V\longrightarrow\RR^n,
@@ -95,7 +112,7 @@ $$
 \operatorname{ev}_{x_j}(f)=0
 $$
 for every $j$.
-Since the functionals in step <1>2 form a basis of $V^*$, every element of $V^*$ vanishes on $f$, hence $f=0$.
+Since the functionals in step [](#s2){.pf-ref} form a basis of $V^*$, every element of $V^*$ vanishes on $f$, hence $f=0$.
 Thus $T$ is injective.
 Both $V$ and $\RR^n$ have dimension $n$, so $T$ is an isomorphism.
 
@@ -107,11 +124,17 @@ Then $f_1,\ldots,f_n$ is a basis of $V$, and the $j$-th coordinate of $T(f_i)=e_
 $$
 f_i(x_j)=\delta_{ij}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 constructs the required basis and points.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} constructs the required basis and points.
+
+:::
+
+:::
+
 :::

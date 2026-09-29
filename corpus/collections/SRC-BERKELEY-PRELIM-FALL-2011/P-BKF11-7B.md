@@ -34,12 +34,17 @@ $$
 ::: {.solution}
 Let $C$ be the positively oriented unit circle.
 
-<1>1. Under the substitution $z=e^{i\theta}$, the integral becomes
+::: pf
+
+::: {.pf-step #s1}
+
+Under the substitution $z=e^{i\theta}$, the integral becomes
 $$
 \int_C\frac{4}{z^2+4iz-1}\,dz.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $C$,
 $$
 d\theta=\frac{dz}{iz},
@@ -59,9 +64,14 @@ $$
 \end{aligned}
 $$
 Traversing $0\le\theta\le2\pi$ traces $C$ once counterclockwise.
+
 :::
 
-<1>2. The poles of the integrand in step <1>1 are
+:::
+
+::: {.pf-step #s2}
+
+The poles of the integrand in step [](#s1){.pf-ref} are
 $$
 z_\pm=(-2\pm\sqrt3)i,
 $$
@@ -71,7 +81,8 @@ z_+=(-2+\sqrt3)i
 $$
 lies inside $C$.
 
-::: {.proof}
+::: pf-proof
+
 The quadratic formula applied to
 $$
 z^2+4iz-1=0
@@ -83,16 +94,22 @@ $$
 \abs{z_-}=2+\sqrt3>1.
 $$
 Thus only $z_+$ is enclosed by $C$.
+
 :::
 
-<1>3. The residue at the interior pole is
+:::
+
+::: {.pf-step #s3}
+
+The residue at the interior pole is
 $$
 \operatorname*{Res}_{z=z_+}
 \frac{4}{z^2+4iz-1}
 =\frac{2}{\sqrt3\,i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The pole $z_+$ is simple, so
 $$
 \operatorname*{Res}_{z=z_+}
@@ -104,27 +121,39 @@ $$
 2z_++4i=2\sqrt3\,i,
 $$
 which gives the stated residue.
+
 :::
 
-<1>4. The value of the integral is
+:::
+
+::: {.pf-step #s4}
+
+The value of the integral is
 $$
 \boxed{\frac{4\pi}{\sqrt3}}.
 $$
 
-::: {.proof}
-By the residue theorem and steps <1>2 and <1>3,
+::: pf-proof
+
+By the residue theorem and steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \int_C\frac{4}{z^2+4iz-1}\,dz
 =2\pi i\frac{2}{\sqrt3\,i}
 =\frac{4\pi}{\sqrt3}.
 $$
-Step <1>1 identifies this contour integral with the integral in the
+Step [](#s1){.pf-ref} identifies this contour integral with the integral in the
 problem.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

@@ -34,7 +34,11 @@ Prove that $M \cong N$.
 ::: {.solution}
 Write $C_m=\mathbb Z/m\mathbb Z$ as an additive group.
 
-<1>1. A finitely generated abelian group $A$ has a decomposition
+::: pf
+
+::: {.pf-step #s1}
+
+A finitely generated abelian group $A$ has a decomposition
 $$
 A\cong\mathbb Z^{r_A}\oplus
 \bigoplus_{p\ \mathrm{prime}}\ \bigoplus_{e\geq1}
@@ -47,10 +51,15 @@ of the structure theorem for finitely generated abelian groups
 [@DF04]. In particular, equality of all these invariants is
 equivalent to isomorphism.
 
-<1>2. There are exactly $10$ abelian groups of order $720$, up to
+:::
+
+::: pf-step
+
+There are exactly $10$ abelian groups of order $720$, up to
 isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 Since $720=2^4\cdot3^2\cdot5$, finiteness forces $r_A=0$,
 and the exponents of the cyclic factors for each prime must sum
 to that prime's exponent in $720$.
@@ -74,16 +83,22 @@ The $5$-primary group must be $C_5$.
 Taking one of the five groups in the first list, one of the two
 in the second, and their direct sum with $C_5$ gives
 $5\cdot2=10$ groups, each of order $16\cdot9\cdot5=720$.
-Step <1>1 proves that this list is exhaustive and that distinct
+Step [](#s1){.pf-ref} proves that this list is exhaustive and that distinct
 choices are nonisomorphic, since they give different prime-power
 multiplicities.
+
 :::
 
-<1>3. Finitely generated $\mathbb Z$-modules admit cancellation
+:::
+
+::: pf-step
+
+Finitely generated $\mathbb Z$-modules admit cancellation
 of a common direct summand.
 
-::: {.proof}
-Apply step <1>1 to $L,M,N$. Combining their decompositions shows
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} to $L,M,N$. Combining their decompositions shows
 that direct sums add the free ranks and every prime-power
 multiplicity. Thus the isomorphism $L\oplus M\cong L\oplus N$
 and uniqueness give
@@ -101,5 +116,11 @@ the two decompositions now gives $M\cong N$.
 An additive-group isomorphism is $\mathbb Z$-linear because it
 preserves integer multiples, so this is the required module
 isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

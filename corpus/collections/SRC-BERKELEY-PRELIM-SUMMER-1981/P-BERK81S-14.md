@@ -44,10 +44,16 @@ Evaluate this limit.
 :::
 
 ::: {.solution}
-<1>1. There is a number $\delta_0>0$ such that $f'$ is bounded on
+
+::: pf
+
+::: {.pf-step #s1}
+
+There is a number $\delta_0>0$ such that $f'$ is bounded on
 $(0,\delta_0]$.
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis
 $$
 f'(t)\longrightarrow C
@@ -65,9 +71,14 @@ $$
 \abs{C}+1
 $$
 on this interval.
+
 :::
 
-<1>2. For every $0<t\leq\delta_0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $0<t\leq\delta_0$,
 $$
 f(t)
 =
@@ -75,7 +86,8 @@ f(t)
 $$
 where the integral is taken componentwise in $\CC\cong\RR^2$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $t\leq\delta_0$. For $0<a<t$, the fundamental theorem of calculus gives
 $$
 f(t)-f(a)
@@ -86,15 +98,20 @@ By hypothesis,
 $$
 f(a)\longrightarrow0
 $$
-as $a\to0^+$. By step <1>1, the derivative is bounded near $0$, so the
+as $a\to0^+$. By step [](#s1){.pf-ref}, the derivative is bounded near $0$, so the
 improper integral
 $$
 \int_0^t f'(s)\,ds
 $$
 exists. Letting $a\to0^+$ in the displayed identity gives the formula.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \boxed{
 \frac{f(t)}{t}\longrightarrow C
@@ -102,8 +119,9 @@ $$
 $$
 as $t\to0^+$.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \frac{f(t)}t-C
 =
@@ -120,16 +138,22 @@ $$
 \sup_{0<s\leq t}\abs{f'(s)-C}.
 $$
 The right-hand side tends to zero because $f'(s)\to C$ as $s\to0^+$.
+
 :::
 
-<1>4. There is $\delta\in(0,\delta_0]$ such that
+:::
+
+::: {.pf-step #s4}
+
+There is $\delta\in(0,\delta_0]$ such that
 $$
 f(t)\neq0
 $$
 for every $0<t<\delta$.
 
-::: {.proof}
-Since $C\neq0$, step <1>3 gives a $\delta\in(0,\delta_0]$ such that
+::: pf-proof
+
+Since $C\neq0$, step [](#s3){.pf-ref} gives a $\delta\in(0,\delta_0]$ such that
 $$
 \abs{
 \frac{f(t)}t-C
@@ -154,9 +178,14 @@ $$
 0.
 $$
 Thus $f(t)\neq0$ on that interval.
+
 :::
 
-<1>5. The function
+:::
+
+::: {.pf-step #s5}
+
+The function
 $$
 g(t)=\abs{f(t)}
 $$
@@ -171,14 +200,15 @@ f'(t)
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The modulus map
 $$
 \CC\sm\{0\}\longrightarrow\RR,
 \qquad
 z\longmapsto\abs{z},
 $$
-is $C^1$. By step <1>4, the image of $(0,\delta)$ under $f$ avoids $0$,
+is $C^1$. By step [](#s4){.pf-ref}, the image of $(0,\delta)$ under $f$ avoids $0$,
 so the composition $g=\abs{\cdot}\circ f$ is $C^1$.
 
 Writing $f=u+iv$ with real-valued $C^1$ functions $u,v$,
@@ -202,9 +232,14 @@ g'(t)
 \end{aligned}
 $$
 which is the displayed formula.
+
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #s6}
+
+One has
 $$
 \frac{f(t)}{\abs{f(t)}}
 \longrightarrow
@@ -212,14 +247,15 @@ $$
 $$
 as $t\to0^+$.
 
-::: {.proof}
+::: pf-proof
+
 Because $t>0$,
 $$
 \frac{f(t)}{\abs{f(t)}}
 =
 \frac{f(t)/t}{\abs{f(t)/t}}.
 $$
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 \frac{f(t)}t\longrightarrow C\neq0.
 $$
@@ -228,17 +264,23 @@ $$
 z\longmapsto\frac z{\abs{z}}
 $$
 is continuous on $\CC\sm\{0\}$, so the stated limit follows.
+
 :::
 
-<1>7. The derivative of $g$ has the limit
+:::
+
+::: {.pf-step #s7}
+
+The derivative of $g$ has the limit
 $$
 \boxed{
 \lim_{t\to0^+}g'(t)=\abs{C}.
 }
 $$
 
-::: {.proof}
-By step <1>5,
+::: pf-proof
+
+By step [](#s5){.pf-ref},
 $$
 g'(t)
 =
@@ -252,7 +294,7 @@ The hypotheses give
 $$
 f'(t)\longrightarrow C,
 $$
-while step <1>6 gives
+while step [](#s6){.pf-ref} gives
 $$
 \frac{\overline{f(t)}}{\abs{f(t)}}
 \longrightarrow
@@ -273,12 +315,18 @@ C\frac{\overline C}{\abs{C}}
 \abs{C}.
 \end{aligned}
 $$
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves that $g$ is $C^1$ for all sufficiently small positive
-$t$, and step <1>7 evaluates the required derivative limit.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves that $g$ is $C^1$ for all sufficiently small positive
+$t$, and step [](#s7){.pf-ref} evaluates the required derivative limit.
+
+:::
+
+:::
+
 :::

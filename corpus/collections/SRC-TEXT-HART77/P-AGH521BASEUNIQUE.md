@@ -50,14 +50,19 @@ p':C'\times\PP^1\to C'
 $$
 be the projections.
 
-<1>1. If $B$ is a nonsingular projective curve not isomorphic to $\PP^1$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $B$ is a nonsingular projective curve not isomorphic to $\PP^1$, then
 every rational map
 $$
 \PP^1\dashrightarrow B
 $$
 is constant.
 
-::: {.proof}
+::: pf-proof
+
 A rational map from the nonsingular curve $\PP^1$ to the projective curve $B$
 extends to a morphism. If it were nonconstant, it would be dominant and would
 give an inclusion of function fields
@@ -72,9 +77,14 @@ $$
 B\cong\PP^1,
 $$
 contrary to the hypothesis. Hence the map is constant.
+
 :::
 
-<1>2. If $C'\not\cong\PP^1$, then the rational map
+:::
+
+::: {.pf-step #s2}
+
+If $C'\not\cong\PP^1$, then the rational map
 $$
 p'\circ\Phi:C\times\PP^1\dashrightarrow C'
 $$
@@ -88,7 +98,8 @@ p'\circ\Phi=f\circ p
 $$
 for a dominant rational map $f:C\dashrightarrow C'$.
 
-::: {.proof}
+::: pf-proof
+
 Restrict $p'\circ\Phi$ to the generic fibre of $p$. After extending the
 ground field from $k$ to $k(C)$, this is a rational map
 $$
@@ -96,7 +107,7 @@ $$
 $$
 If it were nonconstant, after passage to an algebraic closure of $k(C)$ it
 would give a nonconstant rational map from $\PP^1$ to the base change of
-$C'$. Step <1>1 would force that base-changed curve, and hence $C'$, to have
+$C'$. Step [](#s1){.pf-ref} would force that base-changed curve, and hence $C'$, to have
 genus zero, so $C'\cong\PP^1$. This contradicts the hypothesis. Thus the map
 is constant on the generic $p$-fibre.
 
@@ -110,13 +121,19 @@ f:C\dashrightarrow C'
 $$
 with $p'\circ\Phi=f\circ p$. Since both $\Phi$ and $p'$ are dominant, so is
 $f$.
+
 :::
 
-<1>3. If neither $C$ nor $C'$ is isomorphic to $\PP^1$, then $C$ and $C'$ are
+:::
+
+::: {.pf-step #s3}
+
+If neither $C$ nor $C'$ is isomorphic to $\PP^1$, then $C$ and $C'$ are
 birational.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 p'\circ\Phi=f\circ p
 $$
@@ -144,13 +161,19 @@ $$
 f\circ g=\id_{C'}.
 $$
 Thus $f$ and $g$ are inverse birational maps.
+
 :::
 
-<1>4. If one of $C,C'$ is isomorphic to $\PP^1$, then so is the other.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+If one of $C,C'$ is isomorphic to $\PP^1$, then so is the other.
+
+::: pf-proof
+
 Suppose, for example, that $C'\cong\PP^1$ and assume for contradiction that
-$C\not\cong\PP^1$. Apply the argument of step <1>2 to the composite
+$C\not\cong\PP^1$. Apply the argument of step [](#s2){.pf-ref} to the composite
 $$
 p\circ\Psi:C'\times\PP^1\dashrightarrow C.
 $$
@@ -159,26 +182,38 @@ first projection and produces a dominant rational map
 $$
 C'\dashrightarrow C.
 $$
-But $C'\cong\PP^1$, contradicting step <1>1. Hence $C\cong\PP^1$. The other
+But $C'\cong\PP^1$, contradicting step [](#s1){.pf-ref}. Hence $C\cong\PP^1$. The other
 direction is symmetric.
+
 :::
 
-<1>5. The base curve of a birationally ruled surface is unique up to
+:::
+
+::: {.pf-step #s5}
+
+The base curve of a birationally ruled surface is unique up to
 isomorphism:
 $$
 \boxed{C\cong C'.}
 $$
 
-::: {.proof}
-If one curve is rational, step <1>4 shows both are $\PP^1$. Otherwise step
-<1>3 shows that $C$ and $C'$ are birational. Nonsingular projective curves have
+::: pf-proof
+
+If one curve is rational, step [](#s4){.pf-ref} shows both are $\PP^1$. Otherwise step
+[](#s3){.pf-ref} shows that $C$ and $C'$ are birational. Nonsingular projective curves have
 unique smooth projective models by [[T-CRVMINMOD]], so birationality implies
 isomorphism.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 prove the required uniqueness of the base curve.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove the required uniqueness of the base curve.
+
+:::
+
+:::
+
 :::

@@ -34,20 +34,31 @@ Put $P=\PP_X^n$, let $p:P\to X$ be the projection, and let $H\subseteq P$ be the
 Its complement is $U=D_+(x_0)\cong\AA_X^n$.
 The [[D-5PQ5W|class groups]] are Weil-divisor class groups.
 
-<1>1. The scheme $P$ is noetherian, integral, separated, and regular in codimension one.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The scheme $P$ is noetherian, integral, separated, and regular in codimension one.
+
+::: pf-proof
+
 Projective space over a noetherian scheme is noetherian, and $P\to X$ is separated; composing with the separated structure morphism of $X$ makes $P$ separated.
 Its standard open cover consists of $n+1$ copies of $\AA_X^n$.
 Iterating [@Har10a, Proposition II.6.6] shows that each such chart is integral and regular in codimension one.
 Their pairwise intersections are nonempty opens in integral schemes, since they contain the corresponding nonempty opens of the generic fiber over $X$.
 Thus their union is irreducible and reduced, hence integral.
 Regularity in codimension one is local on open subsets and therefore holds on $P$.
+
 :::
 
-<1>2. Pullback of prime divisors along $p$ gives a homomorphism $p^*:\Cl(X)\to\Cl(P)$, and its composite with restriction to $U$ is an isomorphism $\Cl(X)\to\Cl(U)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Pullback of prime divisors along $p$ gives a homomorphism $p^*:\Cl(X)\to\Cl(P)$, and its composite with restriction to $U$ is an isomorphism $\Cl(X)\to\Cl(U)$.
+
+::: pf-proof
+
 For a prime divisor $D\subseteq X$, the closed subscheme $p^{-1}(D)=\PP_D^n$ is integral and has codimension one in $P$.
 Define $p^*D=\PP_D^n$ and extend linearly to divisors.
 At its generic point, the local ring is a localization of
@@ -64,26 +75,38 @@ $$
 $$
 Thus the construction descends to class groups.
 Its restriction to $U=\AA_X^n$ is precisely the iterated pullback isomorphism of Proposition II.6.6, proving the last assertion.
+
 :::
 
-<1>3. Every class in $\Cl(P)$ is of the form $p^*\alpha+m[H]$, with $\alpha\in\Cl(X)$ and $m\in\ZZ$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every class in $\Cl(P)$ is of the form $p^*\alpha+m[H]$, with $\alpha\in\Cl(X)$ and $m\in\ZZ$.
+
+::: pf-proof
+
 The hyperplane $H\cong\PP_X^{n-1}$ is an irreducible codimension-one closed subset.
 The divisor restriction sequence is therefore exact:
 $$
 \ZZ\xrightarrow{m\mapsto m[H]}\Cl(P)\xrightarrow{j^*}\Cl(U)\longrightarrow0,
 $$
 where $j:U\hookrightarrow P$ is the open inclusion [@Har10a, Proposition II.6.5(c)].
-Given $\beta\in\Cl(P)$, step <1>2 gives an $\alpha\in\Cl(X)$ with $j^*p^*\alpha=j^*\beta$.
+Given $\beta\in\Cl(P)$, step [](#s2){.pf-ref} gives an $\alpha\in\Cl(X)$ with $j^*p^*\alpha=j^*\beta$.
 The difference $\beta-p^*\alpha$ is in the displayed kernel and is therefore an integer multiple of $[H]$.
+
 :::
 
-<1>4. If $p^*\alpha+m[H]=0$, then $\alpha=0$ and $m=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+If $p^*\alpha+m[H]=0$, then $\alpha=0$ and $m=0$.
+
+::: pf-proof
+
 Restrict to $U$.
-The class $[H]$ restricts to zero, and step <1>2 makes $j^*p^*$ injective, so $\alpha=0$.
+The class $[H]$ restricts to zero, and step [](#s2){.pf-ref} makes $j^*p^*$ injective, so $\alpha=0$.
 Thus $mH$ is a principal divisor on $P$.
 
 Let $K=K(X)$.
@@ -95,19 +118,25 @@ Thus $mH_K$ is principal on $\PP_K^n$.
 A rational function on $\PP_K^n$ is the quotient of two homogeneous polynomials of the same degree.
 Its divisor has degree zero, whereas $\deg(mH_K)=m$ [@Har10a, Proposition II.6.4].
 It follows that $m=0$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves the scheme-theoretic assertions.
-Steps <1>3 and <1>4 show that
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the scheme-theoretic assertions.
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that
 $$
 \boxed{\Cl(X)\oplus\ZZ\xrightarrow{\cong}\Cl(\PP_X^n),\qquad
 (\alpha,m)\longmapsto p^*\alpha+m[H]}
 $$
 is a bijective group homomorphism.
+
 :::
+
+:::
+
 :::
 
 ::: {.remark title="Dimension zero"}

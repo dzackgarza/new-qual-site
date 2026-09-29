@@ -43,9 +43,15 @@ Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \inte
 :::
 
 ::: {.solution}
-<1>1. Every coset in $\mathbb Q/\mathbb Z$ has a representative in $[0,1)\cap\mathbb Q$.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every coset in $\mathbb Q/\mathbb Z$ has a representative in $[0,1)\cap\mathbb Q$.
+
+::: pf-proof
+
 Let
 \[
 q=\frac mn\in\mathbb Q,
@@ -72,11 +78,17 @@ and
 0\le\frac rn<1.
 \]
 Thus the coset has a representative in $[0,1)\cap\mathbb Q$.
+
 :::
 
-<1>2. That representative is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+That representative is unique.
+
+::: pf-proof
+
 Suppose $r,s\in[0,1)\cap\mathbb Q$ represent the same coset.
 Then
 \[
@@ -90,11 +102,17 @@ The only integer in $(-1,1)$ is $0$, hence
 \[
 r=s.
 \]
+
 :::
 
-<1>3. Every element of $\mathbb Q/\mathbb Z$ has finite order.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every element of $\mathbb Q/\mathbb Z$ has finite order.
+
+::: pf-proof
+
 Let
 \[
 q=\frac mn\in\mathbb Q,
@@ -109,16 +127,22 @@ n(q+\mathbb Z)
 \]
 the identity coset.
 Thus $q+\mathbb Z$ has finite order dividing $n$.
+
 :::
 
-<1>4. For each integer $n\ge1$, the element
+:::
+
+::: pf-step
+
+For each integer $n\ge1$, the element
 \[
 \frac1n+\mathbb Z
 \]
 has order exactly $n$.
 
-::: {.proof}
-By <1>3 its order divides $n$.
+::: pf-proof
+
+By step [](#s3){.pf-ref} its order divides $n$.
 If a positive integer $k$ satisfies
 \[
 k\left(\frac1n+\mathbb Z\right)=\mathbb Z,
@@ -130,15 +154,21 @@ then
 so $n\mid k$.
 Therefore no positive $k<n$ annihilates the coset, and its order is exactly $n$.
 Since $n$ is arbitrary, $\mathbb Q/\mathbb Z$ has elements of arbitrarily large finite order.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 T(\mathbb R/\mathbb Z)=\mathbb Q/\mathbb Z.
 \]
 
-::: {.proof}
-By <1>3, every element of $\mathbb Q/\mathbb Z$ has finite order, so
+::: pf-proof
+
+By step [](#s3){.pf-ref}, every element of $\mathbb Q/\mathbb Z$ has finite order, so
 \[
 \mathbb Q/\mathbb Z\subseteq T(\mathbb R/\mathbb Z).
 \]
@@ -164,7 +194,6 @@ Hence
 r+\mathbb Z\in\mathbb Q/\mathbb Z.
 \]
 The two inclusions prove the equality.
-:::
 
 Let
 \[
@@ -173,7 +202,13 @@ Let
 \]
 be the multiplicative group of all roots of unity.
 
-<1>6. The map
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+The map
 \[
 \Phi:\mathbb Q/\mathbb Z\longrightarrow\mu_\infty,
 \qquad
@@ -181,7 +216,8 @@ be the multiplicative group of all roots of unity.
 \]
 is a well-defined homomorphism.
 
-::: {.proof}
+::: pf-proof
+
 If
 \[
 q+\mathbb Z=q'+\mathbb Z,
@@ -206,11 +242,17 @@ Finally, if $q=m/n$, then
 \Phi(q+\mathbb Z)^n=e^{2\pi im}=1,
 \]
 so its image lies in $\mu_\infty$.
+
 :::
 
-<1>7. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The map $\Phi$ is injective.
+
+::: pf-proof
+
 Its kernel consists of those $q+\mathbb Z$ for which
 \[
 e^{2\pi iq}=1.
@@ -222,11 +264,17 @@ Thus
 \]
 meaning that the only kernel coset in $\mathbb Q/\mathbb Z$ is the identity coset.
 Hence $\Phi$ is injective.
+
 :::
 
-<1>8. The map $\Phi$ is surjective onto $\mu_\infty$.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+The map $\Phi$ is surjective onto $\mu_\infty$.
+
+::: pf-proof
+
 Let $\zeta\in\mu_\infty$.
 Choose $n\ge1$ such that
 \[
@@ -252,15 +300,27 @@ Hence
 =\Phi\left(\frac kn+\mathbb Z\right).
 \]
 Thus every root of unity is in the image.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \mathbb Q/\mathbb Z\cong T(\mathbb C^\times).
 \]
 
-::: {.proof}
-By <1>6--<1>8, $\Phi$ is a bijective homomorphism from $\mathbb Q/\mathbb Z$ onto the roots-of-unity subgroup $\mu_\infty=T(\mathbb C^\times)$.
+::: pf-proof
+
+By steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref}, $\Phi$ is a bijective homomorphism from $\mathbb Q/\mathbb Z$ onto the roots-of-unity subgroup $\mu_\infty=T(\mathbb C^\times)$.
 Hence it is an isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

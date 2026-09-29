@@ -37,13 +37,26 @@ C_2\cong\mathbb Z^4,\qquad C_1\cong\mathbb Z^6,\qquad C_0\cong\mathbb Z^4,
 \]
 and there are no higher chains.
 
-<1>1. $H_0\cong\mathbb Z$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$H_0\cong\mathbb Z$.
+
+::: pf-proof
+
 The $1$-skeleton is connected, so $\operatorname{coker}\partial_1\cong\mathbb Z$.
+
 :::
 
-<1>2. $H_2\cong\mathbb Z$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$H_2\cong\mathbb Z$.
+
+::: pf-proof
+
 The oriented sum of the four faces with boundary orientations,
 \[
 F_{123}-F_{023}+F_{013}-F_{012},
@@ -52,15 +65,27 @@ has zero boundary.
 Conversely, if $\sum a_{ijk}F_{ijk}$ has zero boundary, comparing the coefficient of each edge forces all four coefficients to be determined by one integer with exactly these signs.
 Thus $\ker\partial_2\cong\mathbb Z$.
 Since $C_3=0$, this is $H_2$.
+
 :::
 
-<1>3. $H_1=0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$H_1=0$.
+
+::: pf-proof
+
 $\operatorname{rank}\partial_1=3$ because the connected graph has four vertices.
 Hence $\operatorname{rank}\ker\partial_1=6-3=3$.
-From <1>2, $\operatorname{rank}\partial_2=4-1=3$.
+From step [](#s2){.pf-ref}, $\operatorname{rank}\partial_2=4-1=3$.
 Each triangular $1$-cycle is visibly the boundary of its face, and such triangle cycles generate the cycle group of the complete graph on four vertices.
 Thus $\ker\partial_1=\operatorname{im}\partial_2$.
+
+:::
+
+:::
+
 :::
 
 Therefore

@@ -32,18 +32,31 @@ Do the same for the 'mod torsion' functor $MT_n(X, A) = H_n(X, A; \mathbb{Z}) / 
 ::: {.solution}
 The exactness axiom fails for both constructions.
 
-<1>1. For the pair $(D^2,S^1)$ the integral long exact sequence contains
+::: pf
+
+::: {.pf-step #s1}
+
+For the pair $(D^2,S^1)$ the integral long exact sequence contains
 \[
 0=H_2(D^2)\longrightarrow H_2(D^2,S^1)\xrightarrow{\partial}H_1(S^1)\longrightarrow H_1(D^2)=0,
 \]
 so $\partial:\mathbb Z\to\mathbb Z$ is an isomorphism.
-::: {.proof}
+
+::: pf-proof
+
 This is the long exact sequence of the pair, together with contractibility of $D^2$.
+
 :::
 
-<1>2. The torsion functors are not exact on this pair.
-::: {.proof}
-All four groups in <1>1 are torsion-free, hence
+:::
+
+::: pf-step
+
+The torsion functors are not exact on this pair.
+
+::: pf-proof
+
+All four groups in step [](#s1){.pf-ref} are torsion-free, hence
 \[
 T_2(D^2,S^1)=T_1(S^1)=0.
 \]
@@ -57,15 +70,27 @@ Passing to torsion gives
 0\longrightarrow0\longrightarrow\mathbb Z_m\longrightarrow0,
 \]
 which is not exact at $T_1(X)=\mathbb Z_m$: the incoming image is $0$ while the outgoing kernel is all of $\mathbb Z_m$.
+
 :::
 
-<1>3. The mod-torsion functors are not exact on the same pair.
-::: {.proof}
+:::
+
+::: pf-step
+
+The mod-torsion functors are not exact on the same pair.
+
+::: pf-proof
+
 Passing the displayed integral sequence to quotients by torsion gives
 \[
 \mathbb Z\xrightarrow{m}\mathbb Z\longrightarrow0.
 \]
 Exactness at the second $\mathbb Z$ would require $m\mathbb Z=\mathbb Z$, false for $m>1$.
+
+:::
+
+:::
+
 :::
 
 Thus neither $T_*$ nor $MT_*$ satisfies the exactness axiom, so neither defines a homology theory.

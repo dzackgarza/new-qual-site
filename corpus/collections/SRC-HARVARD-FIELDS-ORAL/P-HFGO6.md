@@ -44,8 +44,14 @@ and set
 K=k(x_g:g\in Q_8).
 \]
 
-<1>1. The group $Q_8$ acts faithfully on $K$ by $k$-automorphisms.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The group $Q_8$ acts faithfully on $K$ by $k$-automorphisms.
+
+::: pf-proof
+
 For $h\in Q_8$, define
 \[
 h(x_g)=x_{hg}
@@ -57,9 +63,14 @@ if $h\ne1$, then
 h(x_1)=x_h\ne x_1,
 \]
 so the action is faithful.
+
 :::
 
-<1>2. If
+:::
+
+::: pf-step
+
+If
 \[
 F=K^{Q_8}
 \]
@@ -67,14 +78,16 @@ is the fixed field, then $K/F$ is a finite Galois extension and
 \[
 \operatorname{Gal}(K/F)=Q_8.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Artin's fixed-field theorem says that if a finite group $G$ acts faithfully by
 automorphisms on a field $K$, then
 \[
 [K:K^G]=|G|
 \]
 and $K/K^G$ is Galois with Galois group exactly $G$.
-Applying this to the action in <1>1 gives
+Applying this to the action in step [](#s1){.pf-ref} gives
 \[
 [K:F]=8
 \]
@@ -82,6 +95,11 @@ and
 \[
 \operatorname{Gal}(K/F)\cong Q_8.
 \]
+
+:::
+
+:::
+
 :::
 
 Thus a Galois extension with quaternion Galois group does exist.

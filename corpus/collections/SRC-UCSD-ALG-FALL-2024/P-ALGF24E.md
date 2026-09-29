@@ -47,16 +47,29 @@ The defining equality relation in $M_{\mathfrak p}=S^{-1}M$ gives
 sx=0\text{ for some }s\in S.
 \]
 
-<1>1. If $\operatorname{ann}(M)\nsubseteq\mathfrak p$, then $M_{\mathfrak p}=0$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $\operatorname{ann}(M)\nsubseteq\mathfrak p$, then $M_{\mathfrak p}=0$.
+
+::: pf-proof
+
 Choose $a\in\operatorname{ann}(M)\setminus\mathfrak p$.
 Then $ax=0$ for every $x\in M$, and $a\in S$.
 The localization criterion implies $x/1=0$ for every $x\in M$.
 Every fraction $x/s$ is obtained from $x/1$ by multiplication by the unit $1/s\in A_{\mathfrak p}$, so every element of $M_{\mathfrak p}$ is zero.
+
 :::
 
-<1>2. If $M$ is finitely generated and $M_{\mathfrak p}=0$, then $\operatorname{ann}(M)\nsubseteq\mathfrak p$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $M$ is finitely generated and $M_{\mathfrak p}=0$, then $\operatorname{ann}(M)\nsubseteq\mathfrak p$.
+
+::: pf-proof
+
 Choose generators $x_1,\ldots,x_r$ of $M$.
 For each $i$, the equality $x_i/1=0$ gives $s_i\in S$ with $s_ix_i=0$.
 Set
@@ -71,11 +84,18 @@ sx_i=\left(\prod_{j\ne i}s_j\right)s_ix_i=0.
 \]
 Hence $s$ annihilates every $A$-linear combination of the generators and belongs to $\operatorname{ann}(M)$.
 This produces an element of $\operatorname{ann}(M)$ outside $\mathfrak p$.
+
 :::
 
-<1>3. The support is $V(\operatorname{ann}(M))$.
-::: {.proof}
-Steps <1>1 and <1>2 prove, for each prime $\mathfrak p$,
+:::
+
+::: pf-step
+
+The support is $V(\operatorname{ann}(M))$.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove, for each prime $\mathfrak p$,
 \[
 M_{\mathfrak p}=0
 \quad\Longleftrightarrow\quad
@@ -87,5 +107,11 @@ Negating both conditions and using the definition of support gives
 =\{\mathfrak p\in\operatorname{Spec}(A):\operatorname{ann}(M)\subseteq\mathfrak p\}
 =V(\operatorname{ann}(M)).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

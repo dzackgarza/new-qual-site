@@ -33,10 +33,16 @@ Prove that $A$ is nilpotent if and only if
 \]
 :::
 
-
 ::: {.solution}
-<1>1. If \(A\) is nilpotent, then \(A^n=0\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If \(A\) is nilpotent, then \(A^n=0\).
+
+::: pf-proof
+
 Let \(r>0\) be the least integer such that
 \[
 A^r=0.
@@ -69,10 +75,17 @@ Since \(A^r=0\), it follows that
 \[
 \boxed{A^n=0}.
 \]
+
 :::
 
-<1>2. A nilpotent \(n\times n\) matrix has characteristic polynomial \(\lambda^n\).
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A nilpotent \(n\times n\) matrix has characteristic polynomial \(\lambda^n\).
+
+::: pf-proof
+
 Let \(\mu\) be any eigenvalue of \(A\), with eigenvector \(w\ne0\). Since \(A\) is nilpotent, \(A^m=0\) for some \(m>0\). Therefore
 \[
 0=A^mw=\mu^m w.
@@ -85,11 +98,18 @@ Thus every eigenvalue of \(A\) is \(0\). Over \(\mathbb C\), the characteristic 
 \[
 \boxed{\chi_A(\lambda)=\lambda^n}.
 \]
+
 :::
 
-<1>3. \(A\) is nilpotent if and only if \(\operatorname{tr}(A^p)=0\) for \(1\le p\le n\).
-::: {.proof}
-If \(A\) is nilpotent, then by <1>2 all eigenvalues are zero. Hence every \(A^p\) has all eigenvalues zero, and therefore
+:::
+
+::: pf-step
+
+\(A\) is nilpotent if and only if \(\operatorname{tr}(A^p)=0\) for \(1\le p\le n\).
+
+::: pf-proof
+
+If \(A\) is nilpotent, then by step [](#s2){.pf-ref} all eigenvalues are zero. Hence every \(A^p\) has all eigenvalues zero, and therefore
 \[
 \operatorname{tr}(A^p)=0
 \]
@@ -135,5 +155,11 @@ Thus
 \[
 \boxed{A\text{ is nilpotent}\iff \operatorname{tr}(A^p)=0\text{ for }p=1,\dots,n}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

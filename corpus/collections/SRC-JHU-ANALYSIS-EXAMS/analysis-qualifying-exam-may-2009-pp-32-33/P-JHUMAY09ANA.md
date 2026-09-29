@@ -43,8 +43,14 @@ $$
 viewed as meromorphic functions; $a=0$ gives the identically
 zero function.
 
-<1>1. The function $g(z)=zf(z)$ extends to an entire function.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The function $g(z)=zf(z)$ extends to an entire function.
+
+::: pf-proof
+
 At any nonzero point the given upper bound is locally
 finite. A pole there would make $|f|$ unbounded in every
 punctured neighborhood, contradicting the bound. Thus $f$
@@ -55,10 +61,17 @@ $$
 This bounds $g$ near zero, so the removable-singularity
 theorem gives an entire extension, still denoted $g$
 [@SS03]. Continuity preserves the bound at zero as well.
+
 :::
 
-<1>2. The entire extension is constant.
-::: {.proof}
+:::
+
+::: pf-step
+
+The entire extension is constant.
+
+::: pf-proof
+
 Write $g(z)=\sum_{n\geq0}b_nz^n$. For every $R>0$,
 Cauchy's coefficient estimate gives
 $$
@@ -70,10 +83,17 @@ is at most $\log3+2\log R$, and $(\log R)/R^n\to0$.
 Hence $b_n=0$ for every $n\geq1$. Thus $g=a$ is constant,
 and $f(z)=a/z$ on the punctured plane, determining $f$
 as a meromorphic function.
+
 :::
 
-<1>3. The coefficient restriction is necessary and sufficient.
-::: {.proof}
+:::
+
+::: pf-step
+
+The coefficient restriction is necessary and sufficient.
+
+::: pf-proof
+
 The original inequality for $f=a/z$ is equivalent, after
 multiplication by $|z|>0$, to
 $$
@@ -85,5 +105,11 @@ for every nonzero $z$, since the logarithm is increasing.
 Every such $a/z$ is meromorphic on the plane, with at
 most a simple pole at zero. Therefore every stated
 coefficient is allowed, and no other function is allowed.
+
 :::
+
+:::
+
+:::
+
 :::

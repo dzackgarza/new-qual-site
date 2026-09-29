@@ -35,7 +35,11 @@ $$
 $$
 using their entries.
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 \Phi:M_n(\RR)\longrightarrow M_n(\RR),
 \qquad
@@ -43,14 +47,21 @@ $$
 $$
 is continuous.
 
-::: {.proof}
+::: pf-proof
+
 Every entry of $A^TA$ is a polynomial in the entries of $A$. Polynomial
 maps between finite-dimensional Euclidean spaces are continuous.
+
 :::
 
-<1>2. The orthogonal group is closed in $\RR^{n^2}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The orthogonal group is closed in $\RR^{n^2}$.
+
+::: pf-proof
+
 By definition,
 $$
 O(n)
@@ -59,18 +70,24 @@ O(n)
 =
 \Phi^{-1}(\{I\}).
 $$
-The singleton $\{I\}$ is closed, and $\Phi$ is continuous by step <1>1.
+The singleton $\{I\}$ is closed, and $\Phi$ is continuous by step [](#s1){.pf-ref}.
 Therefore $O(n)$ is closed.
+
 :::
 
-<1>3. Every matrix $A\in O(n)$ has Frobenius norm
+:::
+
+::: {.pf-step #s3}
+
+Every matrix $A\in O(n)$ has Frobenius norm
 $$
 \norm{A}_{F}
 =
 \sqrt n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The squared Frobenius norm is
 $$
 \norm{A}_{F}^2
@@ -89,29 +106,47 @@ $$
 =
 n.
 $$
+
 :::
 
-<1>4. The set $O(n)$ is bounded in $\RR^{n^2}$.
+:::
 
-::: {.proof}
-Step <1>3 shows that every element lies on the Euclidean sphere of radius
+::: {.pf-step #s4}
+
+The set $O(n)$ is bounded in $\RR^{n^2}$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that every element lies on the Euclidean sphere of radius
 $\sqrt n$ in matrix-entry coordinates.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{O(n)\text{ is compact}}.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>4, $O(n)$ is closed and bounded in the
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s4){.pf-ref}, $O(n)$ is closed and bounded in the
 finite-dimensional Euclidean space $\RR^{n^2}$. The Heine--Borel theorem
 therefore gives compactness.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

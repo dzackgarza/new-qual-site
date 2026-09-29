@@ -37,10 +37,16 @@ Hint: Combine (Ex.
 :::
 
 ::: {.solution}
-<1>1. It is enough to prove that every irreducible component of
+
+::: pf
+
+::: pf-step
+
+It is enough to prove that every irreducible component of
 \(X_{\mathrm{red}}\), with its reduced induced structure, is affine.
 
-::: {.proof}
+::: pf-proof
+
 The scheme \(X\) is noetherian because it is of finite type over a field.
 By
 [[P-AGH331REDAFFINE|Exercise III.3.1]],
@@ -54,12 +60,18 @@ component
 $$
 C\subseteq X_{\mathrm{red}}.
 $$
+
 :::
 
-<1>2. The component \(C\) is an integral, separated, one-dimensional
+:::
+
+::: {.pf-step #s2}
+
+The component \(C\) is an integral, separated, one-dimensional
 scheme of finite type over \(k\), and it is not proper over \(k\).
 
-::: {.proof}
+::: pf-proof
+
 By construction \(C\) is reduced and irreducible, hence integral. It is a
 closed subscheme of the separated finite-type \(k\)-scheme \(X\), so it is
 separated and of finite type over \(k\). The hypothesis says precisely
@@ -75,9 +87,14 @@ is finite and therefore proper, a contradiction. Thus
 $$
 \dim C=1.
 $$
+
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #s3}
+
+Let
 $$
 \nu:\widetilde C\longrightarrow C
 $$
@@ -85,7 +102,8 @@ be the normalization. Then \(\nu\) is finite and surjective, and
 \(\widetilde C\) is an integral, separated, regular, one-dimensional
 scheme of finite type over \(k\).
 
-::: {.proof}
+::: pf-proof
+
 Because \(C\) is an integral finite-type \(k\)-scheme, its normalization
 is finite and birational. In particular \(\nu\) is finite and dominant;
 since a finite morphism is closed and its image contains the generic
@@ -98,63 +116,93 @@ over the finite-type \(k\)-scheme \(C\), hence itself of finite type over
 valuation ring. Therefore every local ring of the one-dimensional
 normal scheme \(\widetilde C\) is regular, so \(\widetilde C\) is
 regular.
+
 :::
 
-<1>4. The normalization \(\widetilde C\) is not proper over \(k\).
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The normalization \(\widetilde C\) is not proper over \(k\).
+
+::: pf-proof
+
 Suppose instead that \(\widetilde C\) were proper over \(k\). The map
 $$
 \nu:\widetilde C\longrightarrow C
 $$
-is surjective by step <1>3. A surjective image of a universally closed
+is surjective by step [](#s3){.pf-ref}. A surjective image of a universally closed
 \(k\)-scheme is universally closed over \(k\): after arbitrary base
 change, the image of a closed subset of \(C\) equals the image of its
 closed inverse image in \(\widetilde C\).
 
-Thus \(C\to\Spec k\) would be universally closed. Step <1>2 already shows
+Thus \(C\to\Spec k\) would be universally closed. Step [](#s2){.pf-ref} already shows
 that \(C\) is separated and of finite type over \(k\). Hence \(C\) would
 be proper over \(k\), contradicting the hypothesis. Therefore
 \(\widetilde C\) is not proper.
+
 :::
 
-<1>5. The normalization \(\widetilde C\) is affine.
+:::
 
-::: {.proof}
-By steps <1>3 and <1>4, \(\widetilde C\) is integral, separated, regular,
+::: {.pf-step #s5}
+
+The normalization \(\widetilde C\) is affine.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, \(\widetilde C\) is integral, separated, regular,
 one-dimensional, of finite type over \(k\), and not proper. Therefore
 [[P-AGH413NONPROPERISAFFINE|Exercise IV.1.3]]
 applies and gives
 $$
 \widetilde C\ \text{affine}.
 $$
+
 :::
 
-<1>6. The component \(C\) is affine.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The component \(C\) is affine.
+
+::: pf-proof
+
 The normalization map
 $$
 \nu:\widetilde C\longrightarrow C
 $$
-is finite and surjective by step <1>3, and \(\widetilde C\) is affine by
-step <1>5. Chevalley's theorem
+is finite and surjective by step [](#s3){.pf-ref}, and \(\widetilde C\) is affine by
+step [](#s5){.pf-ref}. Chevalley's theorem
 [[P-AGH342CHEVALLEY|Exercise III.4.2]]
 therefore implies that \(C\) is affine.
+
 :::
 
-<1>7. The original scheme \(X\) is affine.
+:::
 
-::: {.proof}
-Step <1>6 proves that every irreducible component of
+::: {.pf-step #s7}
+
+The original scheme \(X\) is affine.
+
+::: pf-proof
+
+Step [](#s6){.pf-ref} proves that every irreducible component of
 \(X_{\mathrm{red}}\) is affine. Exercise III.3.2 then gives that
 \(X_{\mathrm{red}}\) is affine. Finally Exercise III.3.1 gives that
 \(X\) itself is affine.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -50,9 +50,14 @@ $\operatorname{Gal}(K/\mathbb Q)\cong S_3$ and the following six fields:
 | $\mathbb Q(\zeta^2\alpha)$ | $3$ | No |
 | $K=\mathbb Q(\alpha,\zeta)$ | $6$ | Yes |
 
-<1>1. The splitting field has degree $6$, with Galois group $S_3$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The splitting field has degree $6$, with Galois group $S_3$.
+
+::: pf-proof
+
 The three roots are $\alpha,\zeta\alpha,\zeta^2\alpha$. Their
 generated field contains $\zeta=(\zeta\alpha)/\alpha$, and
 $\mathbb Q(\alpha,\zeta)$ contains all of them. Thus this is $K$.
@@ -70,11 +75,17 @@ Each automorphism permutes the three roots, and one fixing all of
 them fixes their generated field $K$. Hence this permutation action
 embeds the group into $S_3$. Both groups have order $6$, so the
 embedding is an isomorphism.
+
 :::
 
-<1>2. The table lists every subfield, without repetition.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The table lists every subfield, without repetition.
+
+::: pf-proof
+
 Every subfield of the characteristic-zero field $K$ contains its
 prime field $\mathbb Q$. The Galois correspondence therefore gives
 a bijection between these subfields and the subgroups of $S_3$
@@ -97,21 +108,33 @@ The tower law would then force $2\mid3$, a contradiction.
 Consequently the table contains six different intermediate fields:
 one of degree $1$, one of degree $2$, three of degree $3$, and one
 of degree $6$. The subgroup count proves exhaustiveness.
+
 :::
 
-<1>3. Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$ are Galois
+:::
+
+::: pf-step
+
+Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$ are Galois
 over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
+
 The identity extension is Galois. Both roots $\zeta,\zeta^2$ of
 $x^2+x+1$ lie in $\mathbb Q(\zeta)$, so that field is a splitting
 field of a separable polynomial and is Galois. The same property
-for $K$ was proved in step <1>1.
+for $K$ was proved in step [](#s1){.pf-ref}.
 
 For any of the cubic fields in the table, the ratio argument in
-step <1>2 shows that it cannot contain two distinct roots of
+step [](#s2){.pf-ref} shows that it cannot contain two distinct roots of
 $x^3-7$. It contains one root of that irreducible polynomial, but
 the polynomial does not split there. Thus the extension is not
 normal and cannot be Galois. This covers all the remaining fields.
+
 :::
+
+:::
+
+:::
+
 :::

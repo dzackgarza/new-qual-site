@@ -42,10 +42,15 @@ $$
 g\coloneqq(a-ib)f.
 $$
 
-<1>1. The function $g$ is analytic on $D$ and has constant real part equal
+::: pf
+
+::: {.pf-step #s1}
+
+The function $g$ is analytic on $D$ and has constant real part equal
 to $c$.
 
-::: {.proof}
+::: pf-proof
+
 Since $a-ib$ is constant and $f$ is analytic, $g$ is analytic. Also
 $$
 \begin{aligned}
@@ -60,16 +65,22 @@ By hypothesis,
 $$
 \Re g=au+bv=c.
 $$
+
 :::
 
-<1>2. The function $g$ is constant on $D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $g$ is constant on $D$.
+
+::: pf-proof
+
 Write
 $$
 g=P+iQ.
 $$
-By step <1>1, $P=c$, so
+By step [](#s1){.pf-ref}, $P=c$, so
 $$
 P_x=P_y=0.
 $$
@@ -81,11 +92,17 @@ Q_x=-P_y=0.
 $$
 Thus $Q$ is locally constant. Since $D$ is connected, $Q$ is constant on
 $D$. Therefore $g=P+iQ$ is constant on $D$.
+
 :::
 
-<1>3. The function $f$ is constant on $D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The function $f$ is constant on $D$.
+
+::: pf-proof
+
 The condition
 $$
 a^2+b^2\neq0
@@ -98,12 +115,18 @@ Hence
 $$
 f=\frac{g}{a-ib}.
 $$
-Step <1>2 therefore implies that $f$ is constant.
+Step [](#s2){.pf-ref} therefore implies that $f$ is constant.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -40,10 +40,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Determine the Jordan form of $A$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Determine the Jordan form of $A$.
+
+::: pf-proof
+
 A direct determinant computation gives
 $$
 \operatorname{ch}_A(X)=(X-1)(X+1)^2.
@@ -67,10 +73,17 @@ $$
 \boxed{J(A)=J_1(1)\oplus J_1(-1)\oplus J_1(-1).}
 $$
 In particular $A$ is diagonalizable.
+
 :::
 
-<1>2. Determine the Jordan form of $B$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the Jordan form of $B$.
+
+::: pf-proof
+
 The characteristic polynomial is
 $$
 \operatorname{ch}_B(X)=(X-2)(X-1)^3.
@@ -103,10 +116,17 @@ size-$1$ block. Thus
 $$
 \boxed{J(B)=J_2(1)\oplus J_1(1)\oplus J_1(2).}
 $$
+
 :::
 
-<1>3. Determine the Jordan form of $C$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the Jordan form of $C$.
+
+::: pf-proof
+
 A determinant computation gives
 $$
 \operatorname{ch}_C(X)=(X-2)^5.
@@ -148,5 +168,11 @@ Hence
 $$
 \boxed{J(C)=J_3(2)\oplus J_2(2).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

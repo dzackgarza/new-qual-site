@@ -36,8 +36,14 @@ Consider an exact sequence
 A\xrightarrow{\alpha}B\xrightarrow{\beta}C\xrightarrow{\gamma}D\xrightarrow{\delta}E.
 \]
 
-<1>1. If $C=0$, then $\alpha$ is surjective and $\delta$ is injective.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $C=0$, then $\alpha$ is surjective and $\delta$ is injective.
+
+::: pf-proof
+
 Exactness at $B$ gives
 \[
 \operatorname{im}\alpha=\ker\beta.
@@ -49,10 +55,17 @@ Exactness at $D$ gives
 \ker\delta=\operatorname{im}\gamma.
 \]
 Since $\gamma:0\to D$ has zero image, $\ker\delta=0$, so $\delta$ is injective.
+
 :::
 
-<1>2. Conversely, if $\alpha$ is surjective and $\delta$ is injective, then $C=0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Conversely, if $\alpha$ is surjective and $\delta$ is injective, then $C=0$.
+
+::: pf-proof
+
 Surjectivity of $\alpha$ and exactness at $B$ imply
 \[
 \ker\beta=B,
@@ -68,9 +81,14 @@ Injectivity of $\delta$ gives $\ker\delta=0$. Exactness at $D$ gives
 \operatorname{im}\gamma=0.
 \]
 Thus $\gamma$ is both injective and zero, forcing $C=0$.
+
 :::
 
-<1>3. For a pair $(X,A)$, the segment
+:::
+
+::: {.pf-step #s3}
+
+For a pair $(X,A)$, the segment
 \[
 H_n(A)\xrightarrow{i_*}H_n(X)\to H_n(X,A)
 \to H_{n-1}(A)\xrightarrow{i_*}H_{n-1}(X)
@@ -80,16 +98,31 @@ is exact. Hence
 H_n(X,A)=0
 \]
 if and only if the first $i_*$ is surjective and the second $i_*$ is injective.
-::: {.proof}
-Apply <1>1--<1>2 to this five-term exact segment.
+
+::: pf-proof
+
+Apply steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to this five-term exact segment.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{H_n(X,A)=0\text{ for all }n
 \iff i_*:H_n(A)\to H_n(X)\text{ is an isomorphism for all }n.}
 \]
-::: {.proof}
-If all relative groups vanish, <1>3 gives surjectivity of $i_*$ in degree $n$ and injectivity in degree $n-1$ for every $n$, hence both properties in every degree. Conversely, if every $i_*$ is an isomorphism, the two conditions in <1>3 hold in every degree, so every relative group vanishes.
+
+::: pf-proof
+
+If all relative groups vanish, step [](#s3){.pf-ref} gives surjectivity of $i_*$ in degree $n$ and injectivity in degree $n-1$ for every $n$, hence both properties in every degree. Conversely, if every $i_*$ is an isomorphism, the two conditions in step [](#s3){.pf-ref} hold in every degree, so every relative group vanishes.
+
 :::
+
+:::
+
+:::
+
 :::

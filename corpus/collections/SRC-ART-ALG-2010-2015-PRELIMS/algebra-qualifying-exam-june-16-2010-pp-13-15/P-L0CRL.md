@@ -26,16 +26,27 @@ Prove that, in a local ring $R$, any $r \in R$ is either a unit or an element of
 ::: {.solution}
 Let $r\in R$ with $r\notin M$.
 
-<1>1. The ideal $(r)$ equals $R$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The ideal $(r)$ equals $R$.
+
+::: pf-proof
+
 Every proper ideal of a commutative ring with $1$ is contained in a maximal ideal, by Zorn's lemma [@DF04], and $M$ is the only maximal ideal of $R$.
 Since $r\in(r)$ and $r\notin M$, the ideal $(r)$ is not contained in $M$, so it is not proper.
+
 :::
 
-<1>2. Q.E.D.
-
-::: {.proof}
-By step <1>1, $1=sr$ for some $s\in R$, so $r$ is a unit. Hence every element of $R$ is a unit or lies in $M$.
 :::
+
+::: pf-qed
+
+By step [](#s1){.pf-ref}, $1=sr$ for some $s\in R$, so $r$ is a unit. Hence every element of $R$ is a unit or lies in $M$.
+
+:::
+
+:::
+
 :::

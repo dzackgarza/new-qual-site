@@ -29,15 +29,27 @@ Prove that there exists a subsequence $\{ f _ { n _ { k } } \}$ such that $f _ {
 :::
 
 ::: {.solution}
-<1>1. There is a subsequence with $\sum_k\int\abs{f_{n_k}}^2<\infty$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There is a subsequence with $\sum_k\int\abs{f_{n_k}}^2<\infty$.
+
+::: pf-proof
+
 Since $\norm{f_n}_2\to0$, choose $n_1<n_2<\cdots$ with $\norm{f_{n_k}}_2\le2^{-k}$; then $\sum_k\norm{f_{n_k}}_2^2\le\sum_k4^{-k}<\infty$.
+
 :::
 
-<1>2. Q.E.D.
-
-::: {.proof}
-By the monotone convergence theorem and step <1>1, $\int\sum_k\abs{f_{n_k}}^2=\sum_k\int\abs{f_{n_k}}^2<\infty$, so $\sum_k\abs{f_{n_k}(x)}^2<\infty$ for almost every $x$. For such $x$ the terms tend to $0$, so $f_{n_k}(x)\to0$.
 :::
+
+::: pf-qed
+
+By the monotone convergence theorem and step [](#s1){.pf-ref}, $\int\sum_k\abs{f_{n_k}}^2=\sum_k\int\abs{f_{n_k}}^2<\infty$, so $\sum_k\abs{f_{n_k}(x)}^2<\infty$ for almost every $x$. For such $x$ the terms tend to $0$, so $f_{n_k}(x)\to0$.
+
+:::
+
+:::
+
 :::

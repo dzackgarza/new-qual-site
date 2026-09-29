@@ -31,8 +31,15 @@ Let $X$ be an LCH space.
 :::
 
 ::: {.solution}
-<1>1. Construct a nonnegative $C_0$ function with infinite integral when $\mu(X)=\infty$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Construct a nonnegative $C_0$ function with infinite integral when $\mu(X)=\infty$.
+
+::: pf-proof
+
 Because $\mu$ is Radon and $\mu(X)=\infty$, inner regularity implies that for every $n\ge1$ there is a compact set $K_n\subset X$ such that
 \[
 \mu(K_n)\ge 4^n.
@@ -72,10 +79,17 @@ By Tonelli's theorem,
 \end{aligned}
 \]
 Thus the required function exists.
+
 :::
 
-<1>2. Reduce unboundedness of a positive functional to positive test functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Reduce unboundedness of a positive functional to positive test functions.
+
+::: pf-proof
+
 Let $L:C_0(X)\to\mathbb C$ be positive. On real-valued functions, positivity implies monotonicity:
 \[
 g\le h\quad\Longrightarrow\quad L(g)\le L(h).
@@ -99,10 +113,17 @@ such that
 L(g_n)\ge2^n.
 \]
 For a complex-valued $C_0(X)$, apply the same argument to real and imaginary parts; unboundedness would again force unboundedness on positive real-valued functions.
+
 :::
 
-<1>3. Derive a contradiction from a uniformly convergent positive series.
-::: {.proof}
+:::
+
+::: pf-step
+
+Derive a contradiction from a uniformly convergent positive series.
+
+::: pf-proof
+
 Set
 \[
 h_n:=2^{-n}g_n.
@@ -132,5 +153,11 @@ L(h)
 Since $L(h)$ is a finite scalar, this is impossible as $N\to\infty$.
 
 Therefore $L$ must be bounded.
+
 :::
+
+:::
+
+:::
+
 :::

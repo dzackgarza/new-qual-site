@@ -36,8 +36,14 @@ X=\RP^2\vee\RP^3,
 \]
 and write $x_0$ for the wedge point.
 
-<1>1. There is a connected double cover $p_2:Y_2\to X$ whose restriction over the $\RP^2$ summand is the universal double cover $S^2\to\RP^2$ and whose restriction over the $\RP^3$ summand is the trivial double cover.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There is a connected double cover $p_2:Y_2\to X$ whose restriction over the $\RP^2$ summand is the universal double cover $S^2\to\RP^2$ and whose restriction over the $\RP^3$ summand is the trivial double cover.
+
+::: pf-proof
+
 Let
 \[
 q_2:S^2\longrightarrow\RP^2
@@ -61,10 +67,17 @@ U=U_2\vee U_3
 of $x_0$, where each $U_j$ is evenly covered in its summand, the inverse image $p_2^{-1}(U)$ is the disjoint union of two neighborhoods of $u_0,u_1$, each mapped homeomorphically onto $U$.
 Hence $p_2$ is a two-sheeted covering map.
 The space $Y_2$ is connected because the sphere $S^2$ contains both $u_0$ and $u_1$ and each $R_i$ is attached to it.
+
 :::
 
-<1>2. There is a connected double cover $p_3:Y_3\to X$ whose restriction over the $\RP^3$ summand is the universal double cover $S^3\to\RP^3$ and whose restriction over the $\RP^2$ summand is the trivial double cover.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is a connected double cover $p_3:Y_3\to X$ whose restriction over the $\RP^3$ summand is the universal double cover $S^3\to\RP^3$ and whose restriction over the $\RP^2$ summand is the trivial double cover.
+
+::: pf-proof
+
 Let
 \[
 q_3:S^3\longrightarrow\RP^3
@@ -79,11 +92,18 @@ Set
 Y_3=S^3\cup_{v_0}P_0\cup_{v_1}P_1.
 \]
 Define $p_3$ to be $q_3$ on $S^3$ and the identity map onto the $\RP^2$ summand on each $P_i$.
-The same evenly-covered-neighborhood argument as in <1>1 shows that $p_3$ is a two-sheeted covering map, and $Y_3$ is connected because $S^3$ contains both attachment points.
+The same evenly-covered-neighborhood argument as in step [](#s1){.pf-ref} shows that $p_3$ is a two-sheeted covering map, and $Y_3$ is connected because $S^3$ contains both attachment points.
+
 :::
 
-<1>3. The covering spaces $Y_2$ and $Y_3$ are not homeomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+
+The covering spaces $Y_2$ and $Y_3$ are not homeomorphic.
+
+::: pf-proof
+
 Attaching a path-connected space to another path-connected space at one point gives, in every positive degree, the direct sum of their reduced homology groups by the reduced Mayer--Vietoris sequence.
 Applying this twice gives
 \[
@@ -105,5 +125,11 @@ H_2(S^3;\ZZ)
 \]
 Therefore $H_2(Y_2;\ZZ)$ and $H_2(Y_3;\ZZ)$ are not isomorphic.
 Since homeomorphic spaces have isomorphic homology groups, $Y_2$ and $Y_3$ are not homeomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

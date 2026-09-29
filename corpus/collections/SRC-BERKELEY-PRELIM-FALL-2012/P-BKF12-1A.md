@@ -35,12 +35,18 @@ $$
 :::
 
 ::: {.solution}
-<1>1. A polar curve $r=r(\theta)$ has arc-length element
+
+::: pf
+
+::: {.pf-step #s1}
+
+A polar curve $r=r(\theta)$ has arc-length element
 $$
 ds=\sqrt{r(\theta)^2+r'(\theta)^2}\,d\theta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The Cartesian parametrization is
 $$
 x(\theta)=r(\theta)\cos\theta,
@@ -57,33 +63,45 @@ x'(\theta)^2+y'(\theta)^2
 \end{aligned}
 $$
 Taking the square root gives the stated arc-length element.
+
 :::
 
-<1>2. For $r=e^\theta$,
+:::
+
+::: {.pf-step #s2}
+
+For $r=e^\theta$,
 $$
 ds=\sqrt2 e^\theta\,d\theta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Here
 $$
 r'(\theta)=e^\theta=r(\theta).
 $$
-Substitution into step <1>1 gives
+Substitution into step [](#s1){.pf-ref} gives
 $$
 ds
 =\sqrt{e^{2\theta}+e^{2\theta}}\,d\theta
 =\sqrt2 e^\theta\,d\theta.
 $$
+
 :::
 
-<1>3. The length of the spiral is
+:::
+
+::: {.pf-step #s3}
+
+The length of the spiral is
 $$
 \boxed{\sqrt2}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 L
@@ -94,11 +112,17 @@ L
 $$
 The improper integral converges because $e^\theta\to0$ as
 $\theta\to-\infty$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested length.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested length.
+
+:::
+
+:::
+
 :::

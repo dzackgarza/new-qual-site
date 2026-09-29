@@ -29,10 +29,16 @@ Assume that $L^q(X, \mu) \subseteq L^p(X, \mu)$ and let $T : L^q(X, \mu) \to L^p
 Prove that $T$ is bounded and that $\mu(X) < \infty$.
 :::
 
-
 ::: {.solution}
-<1>1. Prove that the inclusion map has closed graph.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that the inclusion map has closed graph.
+
+::: pf-proof
+
 Let $f_n\in L^q(X)$ satisfy
 \[
 f_n\to f\quad\text{in }L^q(X)
@@ -52,10 +58,17 @@ Both spaces are Banach, so the Closed Graph Theorem gives a constant $C<\infty$ 
 \boxed{\|f\|_p\le C\|f\|_q\qquad(f\in L^q(X)).}
 \]
 Thus $T$ is bounded.
+
 :::
 
-<1>2. Apply the bound to characteristic functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the bound to characteristic functions.
+
+::: pf-proof
+
 Let $E\subseteq X$ be measurable with $0<\mu(E)<\infty$. Then $\mathbf1_E\in L^q(X)$, so
 \[
 \mu(E)^{1/p}
@@ -75,10 +88,17 @@ we obtain the uniform bound
 \[
 \mu(E)\le C^{pq/(q-p)}.
 \]
+
 :::
 
-<1>3. Exhaust $X$ by finite-measure sets.
-::: {.proof}
+:::
+
+::: pf-step
+
+Exhaust $X$ by finite-measure sets.
+
+::: pf-proof
+
 Set
 \[
 E_n:=X\cap[-n,n].
@@ -97,5 +117,11 @@ Hence
 \[
 \boxed{\mu(X)<\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

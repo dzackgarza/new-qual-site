@@ -40,13 +40,17 @@ $$
 L\coloneqq Df(x_0).
 $$
 
-<1>1.
+::: pf
+
+::: {.pf-step #s1}
+
 $$
 \lim_{r\to0}r^{-3}\operatorname{vol}(f(Q_r(x_0)))
 =\abs{\det L}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $f$ is one-to-one and $C^1$, the area formula in equal
 dimensions gives
 $$
@@ -67,16 +71,21 @@ its value at $x_0$, namely
 $$
 \abs{\det Df(x_0)}=\abs{J(x_0)}.
 $$
+
 :::
 
-<1>2.
+:::
+
+::: {.pf-step #s2}
+
 $$
 \limsup_{x\to x_0}
 \frac{\norm{f(x)-f(x_0)}}{\norm{x-x_0}}
 =\norm{L}_{\mathrm{op}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiability at $x_0$ gives, for $h\to0$,
 $$
 f(x_0+h)-f(x_0)=Lh+o(\norm h).
@@ -98,14 +107,19 @@ $$
 =\norm{L}_{\mathrm{op}}.
 $$
 Thus the limsup is exactly the operator norm.
+
 :::
 
-<1>3.
+:::
+
+::: {.pf-step #s3}
+
 $$
 \abs{\det L}\le\norm{L}_{\mathrm{op}}^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $e_1,e_2,e_3$ be the standard orthonormal basis. By Hadamard's
 determinant inequality,
 $$
@@ -115,9 +129,13 @@ $$
 \le
 \norm{L}_{\mathrm{op}}^3.
 $$
+
 :::
 
-<1>4.
+:::
+
+::: {.pf-step #s4}
+
 $$
 \abs{J(x_0)}
 \le
@@ -125,22 +143,29 @@ $$
 \frac{\norm{f(x)-f(x_0)}^3}{\norm{x-x_0}^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The quotient inside the limsup is nonnegative and is the cube of the
-quotient in step <1>2. Hence step <1>2 gives
+quotient in step [](#s2){.pf-ref}. Hence step [](#s2){.pf-ref} gives
 $$
 \limsup_{x\to x_0}
 \frac{\norm{f(x)-f(x_0)}^3}{\norm{x-x_0}^3}
 =\norm{L}_{\mathrm{op}}^3.
 $$
-Combine this with step <1>3 and
+Combine this with step [](#s3){.pf-ref} and
 $\abs{J(x_0)}=\abs{\det L}$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 gives the asserted volume limit, and step <1>4 gives the
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the asserted volume limit, and step [](#s4){.pf-ref} gives the
 asserted inequality.
+
 :::
+
+:::
+
 :::

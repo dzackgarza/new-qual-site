@@ -32,8 +32,15 @@ Suppose $(f_n)$ is a sequence in $L^2(\mathbb R)$ that converges weakly to $f\in
 :::
 
 ::: {.solution}
-<1>1. The associated functionals have uniformly bounded operator norms.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The associated functionals have uniformly bounded operator norms.
+
+::: pf-proof
+
 For each $n$, define the bounded linear functional
 $$
 T_n(g)=\langle f_n,g\rangle_{L^2},
@@ -47,10 +54,17 @@ Hence for every $g$ the scalar sequence $(T_n(g))$ is bounded. By the [[T-F2THV|
 $$
 \sup_n\|T_n\|<\infty.
 $$
+
 :::
 
-<1>2. The functional norms are the $L^2$ norms of the representing functions.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The functional norms are the $L^2$ norms of the representing functions.
+
+::: pf-proof
+
 By the [[T-LDCZB|Riesz representation theorem for Hilbert spaces]],
 $$
 \|T_n\|=\|f_n\|_2.
@@ -59,10 +73,17 @@ Therefore
 $$
 \sup_n\|f_n\|_2<\infty.
 $$
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-By step <1>1, the norms $\|T_n\|$ are uniformly bounded; step <1>2 therefore shows that $\|f_n\|_2$ cannot tend to infinity.
 :::
+
+::: pf-qed
+
+By step [](#s1){.pf-ref}, the norms $\|T_n\|$ are uniformly bounded; step [](#s2){.pf-ref} therefore shows that $\|f_n\|_2$ cannot tend to infinity.
+
+:::
+
+:::
+
 :::

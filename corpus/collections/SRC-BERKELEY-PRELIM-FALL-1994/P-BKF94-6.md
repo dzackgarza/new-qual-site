@@ -53,12 +53,17 @@ a_{ij},&i\neq j,\\
 \end{cases}
 $$
 
-<1>1. For every $x\in\RR^n$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in\RR^n$,
 $$
 \norm{Dx}\geq\norm{x}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $a_{ii}\geq1$,
 $$
 \norm{Dx}^2
@@ -70,9 +75,14 @@ $$
 \norm{x}^2.
 $$
 Taking square roots gives the claim.
+
 :::
 
-<1>2. For every $x\in\RR^n$,
+:::
+
+::: {.pf-step #s2}
+
+For every $x\in\RR^n$,
 $$
 \norm{Ex}^2
 \leq
@@ -82,7 +92,8 @@ $$
 \norm{x}^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each row $i$, Cauchy--Schwarz gives
 $$
 \left(
@@ -102,24 +113,36 @@ $$
 \norm{x}^2.
 $$
 Summing over $i$ yields the displayed inequality.
+
 :::
 
-<1>3. If $x\neq0$, then
+:::
+
+::: {.pf-step #s3}
+
+If $x\neq0$, then
 $$
 \norm{Ex}<\norm{x}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis says
 $$
 \sum_{i\neq j}a_{ij}^2<1.
 $$
-Combine this with step <1>2 and take square roots.
+Combine this with step [](#s2){.pf-ref} and take square roots.
+
 :::
 
-<1>4. The kernel of $A$ is trivial.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The kernel of $A$ is trivial.
+
+::: pf-proof
+
 Suppose
 $$
 Ax=0.
@@ -128,7 +151,7 @@ Then
 $$
 Dx=-Ex.
 $$
-If $x\neq0$, steps <1>1 and <1>3 give
+If $x\neq0$, steps [](#s1){.pf-ref} and [](#s3){.pf-ref} give
 $$
 \norm{x}
 \leq
@@ -139,22 +162,34 @@ $$
 \norm{x},
 $$
 a contradiction. Hence $x=0$.
+
 :::
 
-<1>5. The matrix $A$ is invertible.
+:::
 
-::: {.proof}
-Step <1>4 shows that the linear map
+::: {.pf-step #s5}
+
+The matrix $A$ is invertible.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} shows that the linear map
 $$
 A:\RR^n\longrightarrow\RR^n
 $$
 is injective. An injective linear endomorphism of a finite-dimensional
 vector space is bijective, hence $A$ is invertible.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

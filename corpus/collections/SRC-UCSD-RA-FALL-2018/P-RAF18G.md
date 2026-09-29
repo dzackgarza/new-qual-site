@@ -36,8 +36,15 @@ Show $f'(x) = \int_x^1 g(y)\,dy$ for all $x \in (0,1)$.
 :::
 
 ::: {.solution}
-<1>1. Upgrade the a.e. derivative identity to an everywhere identity.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Upgrade the a.e. derivative identity to an everywhere identity.
+
+::: pf-proof
+
 Since $f$ is absolutely continuous,
 \[
 f(x)=f(0)+\int_0^x f'(t)\,dt
@@ -54,10 +61,17 @@ for every $x\in(0,1)$. Hence
 \[
 \boxed{f'(x)=h(x)\quad\text{for every }x\in(0,1).}
 \]
+
 :::
 
-<1>2. Rewrite the integral involving $\min(x,y)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rewrite the integral involving $\min(x,y)$.
+
+::: pf-proof
+
 For $x\in[0,1]$,
 \[
 \min(x,y)=
@@ -79,10 +93,17 @@ f'(x)
 \end{aligned}
 \]
 for almost every $x$.
+
 :::
 
-<1>3. Upgrade the formula to every interior point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Upgrade the formula to every interior point.
+
+::: pf-proof
+
 Define
 \[
 h(x):=\int_x^1g(y)\,dy.
@@ -91,5 +112,11 @@ Since $g\in L^1([0,1])$, the function $h$ is absolutely continuous, hence contin
 \[
 \boxed{f'(x)=\int_x^1g(y)\,dy\quad\text{for every }x\in(0,1).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

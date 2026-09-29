@@ -31,7 +31,11 @@ D_-=\{(x,y):(x+1)^2+y^2\leq9\},
 D_+=\{(x,y):(x-1)^2+y^2\leq1\}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 D_+\subseteq D_-,
 $$
@@ -40,15 +44,21 @@ $$
 \mathcal R=D_-\setminus D_+.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The centers of $D_-$ and $D_+$ are $(-1,0)$ and $(1,0)$, whose distance is $2$. Since
 $$
 2+1=3,
 $$
 the disk of radius $1$ centered at $(1,0)$ lies inside the disk of radius $3$ centered at $(-1,0)$; the two boundary circles are internally tangent at $(2,0)$. The description of $\mathcal R$ is then immediate from its two defining inequalities.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 D(c,R)=\{(x,y):(x-c)^2+y^2\leq R^2\},
 $$
@@ -59,7 +69,8 @@ $$
 \pi R^2c^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Make the translation
 $$
 x=c+u.
@@ -87,9 +98,14 @@ c^3\operatorname{area}(D(c,R))
 =
 \pi R^2c^3.
 $$
+
 :::
 
-<1>3. The integral over $D_-$ is
+:::
+
+::: pf-step
+
+The integral over $D_-$ is
 $$
 -9\pi,
 $$
@@ -98,8 +114,9 @@ $$
 \pi.
 $$
 
-::: {.proof}
-Apply step <1>2 with $(c,R)=(-1,3)$ and $(c,R)=(1,1)$:
+::: pf-proof
+
+Apply step [](#s2){.pf-ref} with $(c,R)=(-1,3)$ and $(c,R)=(1,1)$:
 $$
 \iint_{D_-}(x^3-3xy^2)\,dx\,dy
 =
@@ -115,17 +132,23 @@ $$
 =
 \pi.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \iint_{\mathcal R}(x^3-3xy^2)\,dx\,dy=-10\pi
 }.
 $$
 
-::: {.proof}
-By step <1>1 and additivity of the integral,
+::: pf-proof
+
+By step [](#s1){.pf-ref} and additivity of the integral,
 $$
 \begin{aligned}
 \iint_{\mathcal R}(x^3-3xy^2)\,dx\,dy
@@ -138,11 +161,17 @@ $$
 -10\pi.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required evaluation.
+
+:::
+
+:::
+
 :::

@@ -33,8 +33,14 @@ U(R_1\oplus\cdots\oplus R_n)=U(R_1)\oplus\cdots\oplus U(R_n).
 ::: {.solution}
 The assertion is true.
 
-<1>1. A unit in the product has unit coordinates.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A unit in the product has unit coordinates.
+
+::: pf-proof
+
 Suppose
 $$
 (r_1,\ldots,r_n)\in R_1\oplus\cdots\oplus R_n
@@ -48,20 +54,34 @@ $$
 r_is_i=1
 $$
 for every $i$. Thus each $r_i\in U(R_i)$.
+
 :::
 
-<1>2. A tuple of units is a unit in the product.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A tuple of units is a unit in the product.
+
+::: pf-proof
+
 Conversely, if every $r_i\in U(R_i)$, then
 $$
 (r_1^{-1},\ldots,r_n^{-1})
 $$
 is the inverse of $(r_1,\ldots,r_n)$. Therefore the tuple is a unit.
+
 :::
 
-<1>3. Hence the unit group is the product of the unit groups.
-::: {.proof}
-Steps <1>1 and <1>2 give equality of the underlying sets, and the group law
+:::
+
+::: pf-step
+
+Hence the unit group is the product of the unit groups.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give equality of the underlying sets, and the group law
 on both sides is coordinatewise multiplication. Therefore
 $$
 \boxed{
@@ -70,5 +90,11 @@ U(R_1\oplus\cdots\oplus R_n)
 $$
 For finitely many rings, the direct sum and direct product are the same
 underlying ring.
+
 :::
+
+:::
+
+:::
+
 :::

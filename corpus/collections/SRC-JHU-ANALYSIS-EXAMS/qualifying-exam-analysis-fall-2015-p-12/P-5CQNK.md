@@ -35,8 +35,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 Take $f$ to be the Cantor--Lebesgue function. Then $f:[0,1]\to[0,1]$ is continuous and increasing, with
 \[
 f(0)=0,
@@ -52,10 +59,17 @@ for almost every $x\in[0,1]$. Hence
 m\{x:f'(x)>0\}=0.
 \]
 So there need not exist a positive-measure set on which $f'>0$.
+
 :::
 
-<1>2. Reduce part (b) to the preimage of a null set.
-::: {.proof}
+:::
+
+::: pf-step
+
+Reduce part (b) to the preimage of a null set.
+
+::: pf-proof
+
 Now assume $f$ is strictly increasing and absolutely continuous, with $f(0)=0$ and $f(1)=1$. Then $f$ is a homeomorphism of $[0,1]$ onto itself.
 
 Let
@@ -76,10 +90,17 @@ f^{-1}(E)\cap D
 \bigl(f^{-1}(N)\cap D\bigr).
 \]
 The first set is measurable because $f$ is continuous. It remains to control the second.
+
 :::
 
-<1>3. Show that the null part has null preimage on $D$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the null part has null preimage on $D$.
+
+::: pf-proof
+
 Set
 \[
 A:=f^{-1}(N)\cap D.
@@ -103,5 +124,11 @@ Thus $f^{-1}(N)\cap D$ is measurable, and therefore so is
 \boxed{f^{-1}(E)\cap\{f'>0\}.}
 \]
 So part (b) is true.
+
 :::
+
+:::
+
+:::
+
 :::

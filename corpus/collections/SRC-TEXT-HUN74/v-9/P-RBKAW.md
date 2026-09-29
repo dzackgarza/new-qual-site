@@ -25,21 +25,38 @@ If $F$ is a radical extension field of $K$ and $E$ is an intermediate field, the
 ::: {.solution}
 Since $F/K$ is radical, $F=K(\alpha_1,\ldots,\alpha_n)$, where for each $i$ there is $n_i>0$ with $\alpha_i^{n_i}\in K(\alpha_1,\ldots,\alpha_{i-1})$.
 
-<1>1. $F=E(\alpha_1,\ldots,\alpha_n)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$F=E(\alpha_1,\ldots,\alpha_n)$.
+
+::: pf-proof
+
 Since $K\subseteq E\subseteq F$, we have $F=K(\alpha_1,\ldots,\alpha_n)\subseteq E(\alpha_1,\ldots,\alpha_n)\subseteq F$.
+
 :::
 
-<1>2. For each $i$, $\alpha_i^{n_i}\in E(\alpha_1,\ldots,\alpha_{i-1})$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For each $i$, $\alpha_i^{n_i}\in E(\alpha_1,\ldots,\alpha_{i-1})$.
+
+::: pf-proof
+
 $\alpha_i^{n_i}\in K(\alpha_1,\ldots,\alpha_{i-1})\subseteq E(\alpha_1,\ldots,\alpha_{i-1})$ because $K\subseteq E$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 exhibit $F$ as $E(\alpha_1,\ldots,\alpha_n)$ with $\alpha_i^{n_i}\in E(\alpha_1,\ldots,\alpha_{i-1})$ for every $i$, which is the definition of a radical extension of $E$.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} exhibit $F$ as $E(\alpha_1,\ldots,\alpha_n)$ with $\alpha_i^{n_i}\in E(\alpha_1,\ldots,\alpha_{i-1})$ for every $i$, which is the definition of a radical extension of $E$.
+
+:::
+
+:::
+
 :::

@@ -23,8 +23,15 @@ Let $R$ be an integral domain.
 :::
 
 ::: {.solution}
-<1>1. Free modules over a domain are torsion-free.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Free modules over a domain are torsion-free.
+
+::: pf-proof
+
 Let $F$ be free with basis $\{e_i\}_{i\in I}$, and let
 \[
 0\ne x=\sum_{i\in I} r_i e_i
@@ -35,10 +42,17 @@ If $0\ne a\in R$ satisfied $ax=0$, then
 0=ax=\sum_i ar_i e_i.
 \]
 Linear independence gives $ar_i=0$ for every $i$, in particular $ar_j=0$. Since $R$ is a domain and both $a,r_j$ are nonzero, this is impossible. Hence no nonzero element is torsion.
+
 :::
 
-<1>2. $\QQ$ is torsion-free but not free over $\ZZ$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\QQ$ is torsion-free but not free over $\ZZ$.
+
+::: pf-proof
+
 If $0\ne n\in\ZZ$ and $q\in\QQ$ satisfy $nq=0$, then $q=0$, so $\QQ$ is torsion-free.
 
 Suppose $\QQ$ were free over $\ZZ$ with basis $\mathcal B$. Choose $0\ne b\in\mathcal B$. Since $\QQ$ is divisible, there exists $x\in\QQ$ with
@@ -59,5 +73,11 @@ Uniqueness of basis coordinates forces the coefficient of $b$ to satisfy
 1=2n_b,
 \]
 impossible in $\ZZ$. Therefore $\QQ$ is not a free $\ZZ$-module.
+
 :::
+
+:::
+
+:::
+
 :::

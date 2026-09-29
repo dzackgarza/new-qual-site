@@ -53,14 +53,20 @@ $$
 :::
 
 ::: {.solution}
-<1>1. If $P\in X_{\reg}$ and $D$ is supported in $X_{\reg}$, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $P\in X_{\reg}$ and $D$ is supported in $X_{\reg}$, then
 $$
 \chi(\mcl(D+P))
 =
 \chi(\mcl(D))+1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $P$ is regular on the one-dimensional scheme $X$, it is an
 effective Cartier divisor. Tensoring
 $$
@@ -92,9 +98,14 @@ $$
 $$
 Additivity of Euler characteristic in a short exact sequence therefore
 gives the formula.
+
 :::
 
-<1>2. For every divisor
+:::
+
+::: {.pf-step #s2}
+
+For every divisor
 $$
 D=\sum_i n_iP_i
 $$
@@ -107,8 +118,9 @@ $$
 }
 $$
 
-::: {.proof}
-Starting from $D=0$, repeatedly apply step <1>1 when increasing one
+::: pf-proof
+
+Starting from $D=0$, repeatedly apply step [](#s1){.pf-ref} when increasing one
 coefficient by $1$. The same formula read backwards applies when
 decreasing a coefficient by $1$. Hence
 $$
@@ -125,15 +137,21 @@ $$
 \sum_i n_i=\deg D.
 $$
 This proves part (a).
+
 :::
 
-<1>3. Let $C$ be any Cartier divisor on $X$. Then
+:::
+
+::: {.pf-step #s3}
+
+Let $C$ be any Cartier divisor on $X$. Then
 $$
 C=A-B
 $$
 for two very ample Cartier divisors $A$ and $B$.
 
-::: {.proof}
+::: pf-proof
+
 Choose a very ample Cartier divisor $H$ on the projective curve $X$.
 The invertible sheaf
 $$
@@ -173,18 +191,24 @@ $$
 C=A-B.
 $$
 This proves part (b).
+
 :::
 
-<1>4. Every invertible sheaf on $X$ is isomorphic to $\mcl(D)$ for a
+:::
+
+::: {.pf-step #s4}
+
+Every invertible sheaf on $X$ is isomorphic to $\mcl(D)$ for a
 divisor $D$ supported in $X_{\reg}$.
 
-::: {.proof}
+::: pf-proof
+
 Let $\mcl$ be invertible. Since $X$ is integral, a nonzero rational
 trivialization of $\mcl$ gives a Cartier divisor $C$ with
 $$
 \mcl\cong\mcl(C).
 $$
-By step <1>3, write
+By step [](#s3){.pf-ref}, write
 $$
 C=A-B
 $$
@@ -217,39 +241,51 @@ $$
 \mcl.
 $$
 This proves part (c).
+
 :::
 
-<1>5. Assume $X$ is a locally complete intersection in projective space.
+:::
+
+::: {.pf-step #s5}
+
+Assume $X$ is a locally complete intersection in projective space.
 Then there is a divisor $K$ supported in $X_{\reg}$ such that
 $$
 \mcl(K)\cong\omega_X.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a projective locally complete intersection curve, the dualizing sheaf
-$\omega_X$ is invertible. Apply part (c), proved in step <1>4, to this
+$\omega_X$ is invertible. Apply part (c), proved in step [](#s4){.pf-ref}, to this
 invertible sheaf. It gives a divisor $K$ supported in $X_{\reg}$ with
 $$
 \mcl(K)\cong\omega_X.
 $$
 This is the canonical divisor specified in the statement.
+
 :::
 
-<1>6. For every divisor $D$ supported in $X_{\reg}$,
+:::
+
+::: {.pf-step #s6}
+
+For every divisor $D$ supported in $X_{\reg}$,
 $$
 H^1(X,\mcl(D))^\vee
 \cong
 H^0(X,\mcl(K-D)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Serre duality for the projective Cohen--Macaulay curve $X$ gives
 $$
 H^1(X,\mcl(D))^\vee
 \cong
 \Hom_X(\mcl(D),\omega_X).
 $$
-Since $\mcl(D)$ is invertible and step <1>5 identifies
+Since $\mcl(D)$ is invertible and step [](#s5){.pf-ref} identifies
 $\omega_X\cong\mcl(K)$,
 $$
 \Hom_X(\mcl(D),\omega_X)
@@ -258,9 +294,14 @@ H^0\bigl(X,\omega_X\tensor\mcl(-D)\bigr)
 \cong
 H^0(X,\mcl(K-D)).
 $$
+
 :::
 
-<1>7. The singular-curve Riemann--Roch formula is
+:::
+
+::: {.pf-step #s7}
+
+The singular-curve Riemann--Roch formula is
 $$
 \boxed{
 \ell(D)-\ell(K-D)
@@ -269,8 +310,9 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>6,
+::: pf-proof
+
+By step [](#s6){.pf-ref},
 $$
 h^1(X,\mcl(D))
 =
@@ -282,19 +324,25 @@ $$
 =
 \ell(D)-\ell(K-D).
 $$
-Substitute the Euler-characteristic formula from step <1>2:
+Substitute the Euler-characteristic formula from step [](#s2){.pf-ref}:
 $$
 \chi(\mcl(D))
 =
 \deg D+1-p_a(X).
 $$
 This is exactly the displayed formula in part (d).
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part (a), step <1>3 proves part (b), step <1>4 proves
-part (c), and steps <1>5--<1>7 prove part (d).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), step [](#s3){.pf-ref} proves part (b), step [](#s4){.pf-ref} proves
+part (c), and steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (d).
+
+:::
+
+:::
+
 :::

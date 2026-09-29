@@ -51,9 +51,14 @@ $$
 h_t(d)=\dim_{k(t)}(S_t/I_t)_d.
 $$
 
-<1>1. There is a flat family of three reduced points in $\PP^2$ whose general fibre is noncollinear and whose special fibre is collinear.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+There is a flat family of three reduced points in $\PP^2$ whose general fibre is noncollinear and whose special fibre is collinear.
+
+::: pf-proof
+
 Take $T=\AA^1$ with coordinate $t$ and define three sections of
 $$
 \PP^2\times T\longrightarrow T
@@ -74,9 +79,14 @@ over $T$, so $\mathcal X\to T$ is flat.
 
 For $t\ne0$, the point $P_3(t)$ does not lie on the line $z=0$ through $P_1,P_2$, so the three points are noncollinear.
 For $t=0$, all three distinct points lie on $z=0$.
+
 :::
 
-<1>2. The Hilbert functions of the fibres in step <1>1 are
+:::
+
+::: {.pf-step #s2}
+
+The Hilbert functions of the fibres in step [](#s1){.pf-ref} are
 $$
 h_t(d)=
 \begin{cases}
@@ -95,7 +105,8 @@ h_0(d)=
 \end{cases}
 $$
 
-::: {.proof}
+::: pf-proof
+
 For three noncollinear points, linear forms already give arbitrary values at the three points, so the degree-one coordinate quotient has dimension three.
 Multiplying separating linear forms by powers of a linear form nonvanishing at all three points shows that the restriction map remains surjective in every degree $d\ge1$.
 Thus the first formula holds.
@@ -104,11 +115,17 @@ For the special fibre, all points lie on the line $z=0$.
 The restrictions of linear forms therefore have dimension two.
 Quadratic polynomials on that line interpolate arbitrary values at three distinct points, so the degree-two quotient has dimension three; multiplying by a nonvanishing linear form gives dimension three in every higher degree.
 This gives the second formula.
+
 :::
 
-<1>3. The cones over the flat family of step <1>1 do not form a flat family.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The cones over the flat family of step [](#s1){.pf-ref} do not form a flat family.
+
+::: pf-proof
+
 If $R_t=S_t/I_t$ is the homogeneous coordinate ring of $X_t$, then the homogeneous coordinate ring of the projective cone is
 $$
 R_t[u],
@@ -118,7 +135,7 @@ Hence its degree-$d$ Hilbert function is
 $$
 H_{C(X_t)}(d)=\sum_{j=0}^d h_t(j).
 $$
-By step <1>2, for $t\ne0$ and $d\ge1$ this equals
+By step [](#s2){.pf-ref}, for $t\ne0$ and $d\ge1$ this equals
 $$
 1+3d,
 $$
@@ -132,11 +149,17 @@ The Hilbert polynomials are different.
 By Theorem III.9.9, fibres of a flat projective family over an integral base have constant Hilbert polynomial.
 Therefore the cones cannot form a flat family.
 This proves part (a).
+
 :::
 
-<1>4. Every very flat family is flat.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every very flat family is flat.
+
+::: pf-proof
+
 Very flatness says that for every $d\ge0$ the integer
 $$
 h_t(d)=\dim_{k(t)}(S_t/I_t)_d
@@ -149,11 +172,17 @@ $$
 X\subseteq\PP_T^n
 $$
 is flat over the integral noetherian base $T$.
+
 :::
 
-<1>5. If $\{X_t\}$ is very flat, then the family of cones $\{C(X_t)\}$ is very flat.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+If $\{X_t\}$ is very flat, then the family of cones $\{C(X_t)\}$ is very flat.
+
+::: pf-proof
+
 For each fibre, the cone coordinate ring is
 $$
 (S_t/I_t)[u].
@@ -166,13 +195,19 @@ $$
 Every summand on the right is independent of $t$ by very flatness.
 Hence the degree-$d$ dimension of the cone coordinate ring is independent of $t$ for every $d\ge0$.
 Thus the cone family is very flat.
-By step <1>4 it is therefore flat as well.
+By step [](#s4){.pf-ref} it is therefore flat as well.
 This proves part (c).
+
 :::
 
-<1>6. Let $\eta$ be the generic point of the nonsingular parameter curve $T$ in part (d), and let $t\in T$ be closed. The algebraic family is a flat family of schemes near $t$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Let $\eta$ be the generic point of the nonsingular parameter curve $T$ in part (d), and let $t\in T$ be closed. The algebraic family is a flat family of schemes near $t$.
+
+::: pf-proof
+
 Every fibre $X_{(s)}$ is projectively normal, hence normal.
 Theorem III.9.11 says that an algebraic family of normal varieties parametrized by a nonsingular curve is flat as a family of schemes.
 Thus, after replacing $T$ by an affine neighborhood of $t$, we have a flat closed family
@@ -185,14 +220,20 @@ $$
 \qquad R=\OO_{T,t},
 $$
 a discrete valuation ring with fraction field $K=k(\eta)$ and residue field $k(t)$.
+
 :::
 
-<1>7. For each $d\ge0$, one has
+:::
+
+::: {.pf-step #s7}
+
+For each $d\ge0$, one has
 $$
 h_t(d)\le h_\eta(d).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $\mathcal I$ be the ideal sheaf of
 $$
 \mathcal X\subseteq\PP_R^n
@@ -243,14 +284,20 @@ Subtracting from $N_d$ gives
 $$
 h_t(d)\le h_\eta(d).
 $$
+
 :::
 
-<1>8. Projective normality and upper semicontinuity give the reverse inequality
+:::
+
+::: {.pf-step #s8}
+
+Projective normality and upper semicontinuity give the reverse inequality
 $$
 h_t(d)\ge h_\eta(d).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a projectively normal variety $X_s\subseteq\PP_{k(s)}^n$, the restriction map
 $$
 H^0(\PP_{k(s)}^n,\OO(d))
@@ -273,23 +320,35 @@ Using projective normality on both fibres gives
 $$
 h_t(d)\ge h_\eta(d).
 $$
+
 :::
 
-<1>9. The algebraic family of projectively normal varieties in part (d) is very flat.
+:::
 
-::: {.proof}
-Steps <1>7--<1>8 give
+::: {.pf-step #s9}
+
+The algebraic family of projectively normal varieties in part (d) is very flat.
+
+::: pf-proof
+
+Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} give
 $$
 h_t(d)=h_\eta(d)
 $$
 for every closed point $t\in T$ and every $d\ge0$.
 Thus, for each fixed degree $d$, $h_t(d)$ is independent of $t$.
 This is exactly very flatness.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 prove part (c), and steps <1>6--<1>9 prove part (d). Part (b) is the definition used in those arguments.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (c), and steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (d). Part (b) is the definition used in those arguments.
+
+:::
+
+:::
+
 :::

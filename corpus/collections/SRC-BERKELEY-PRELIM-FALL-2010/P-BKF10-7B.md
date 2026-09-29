@@ -38,7 +38,11 @@ $$
 D\coloneqq\{z\in\CC:\abs{z}<1\}.
 $$
 
-<1>1. The function
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 g(z)\coloneqq
 \begin{cases}
@@ -48,7 +52,8 @@ f'(0),&z=0
 $$
 is analytic on $D$.
 
-::: {.proof}
+::: pf-proof
+
 Since $f(0)=0$ and $f$ is analytic,
 $$
 \lim_{z\to0}\frac{f(z)}z
@@ -57,14 +62,20 @@ $$
 $$
 Thus $f(z)/z$ has a removable singularity at $0$, and the displayed
 value $g(0)=f'(0)$ gives its analytic extension to all of $D$.
+
 :::
 
-<1>2. For every $0<r<1$,
+:::
+
+::: {.pf-step #s2}
+
+For every $0<r<1$,
 $$
 \abs{g(0)}\le\frac1r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the circle $\abs{z}=r$, the hypothesis that $f(D)\subseteq D$ gives
 $$
 \abs{f(z)}<1.
@@ -73,35 +84,47 @@ Therefore
 $$
 \abs{g(z)}=\frac{\abs{f(z)}}r\le\frac1r.
 $$
-By step <1>1, $g$ is analytic on a neighborhood of the closed disk
+By step [](#s1){.pf-ref}, $g$ is analytic on a neighborhood of the closed disk
 $\abs{z}\le r$. The maximum modulus principle therefore gives
 $$
 \abs{g(0)}
 \le\max_{\abs{z}=r}\abs{g(z)}
 \le\frac1r.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \abs{f'(0)}\le1.
 $$
 
-::: {.proof}
-By definition in step <1>1,
+::: pf-proof
+
+By definition in step [](#s1){.pf-ref},
 $$
 \abs{f'(0)}=\abs{g(0)}.
 $$
-Step <1>2 gives $\abs{g(0)}\le1/r$ for every $0<r<1$. Letting
+Step [](#s2){.pf-ref} gives $\abs{g(0)}\le1/r$ for every $0<r<1$. Letting
 $r\to1^-$ yields
 $$
 \abs{f'(0)}\le1.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required derivative bound.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required derivative bound.
+
+:::
+
+:::
+
 :::

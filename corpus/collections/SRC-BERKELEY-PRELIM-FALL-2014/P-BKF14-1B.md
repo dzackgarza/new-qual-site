@@ -37,12 +37,17 @@ $$
 P_n(x)\coloneqq\sum_{k=0}^n\frac{x^k}{k!}.
 $$
 
-<1>1. For every $n\ge1$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\ge1$,
 $$
 P_n'(x)=P_{n-1}(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Termwise differentiation gives
 $$
 P_n'(x)
@@ -53,24 +58,36 @@ P_n'(x)
 =
 P_{n-1}(x).
 $$
+
 :::
 
-<1>2. The assertion holds for $n=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The assertion holds for $n=0$.
+
+::: pf-proof
+
 One has $P_0(x)=1$, which has no real zero, as required for even $n$.
+
 :::
 
-<1>3. Assume the assertion holds for $P_{n-1}$ and suppose $n$ is odd.
+:::
+
+::: {.pf-step #s3}
+
+Assume the assertion holds for $P_{n-1}$ and suppose $n$ is odd.
 Then $P_n$ has exactly one real zero.
 
-::: {.proof}
+::: pf-proof
+
 Now $n-1$ is even, so the induction hypothesis says that
 $P_{n-1}$ has no real zero. Since
 $$
 P_{n-1}(0)=1>0,
 $$
-continuity implies $P_{n-1}(x)>0$ for every real $x$. By step <1>1,
+continuity implies $P_{n-1}(x)>0$ for every real $x$. By step [](#s1){.pf-ref},
 $P_n'(x)>0$ everywhere, so $P_n$ is strictly increasing.
 
 Because $P_n$ has odd degree and positive leading coefficient,
@@ -81,12 +98,18 @@ $$
 $$
 The intermediate value theorem gives a real zero, and strict
 monotonicity makes it unique.
+
 :::
 
-<1>4. Assume the assertion holds for $P_{n-1}$ and suppose $n$ is
+:::
+
+::: {.pf-step #s4}
+
+Assume the assertion holds for $P_{n-1}$ and suppose $n$ is
 even and positive. Then $P_n$ has no real zero.
 
-::: {.proof}
+::: pf-proof
+
 Now $n-1$ is odd, so the induction hypothesis gives a unique real zero
 $\alpha$ of $P_{n-1}$. Since
 $$
@@ -97,7 +120,7 @@ one has $\alpha\ne0$.
 The polynomial $P_{n-1}$ has odd degree with positive leading
 coefficient. Since it has only the one zero $\alpha$, its sign is
 negative on $(-\infty,\alpha)$ and positive on $(\alpha,\infty)$.
-By step <1>1, $P_n$ therefore decreases up to $\alpha$ and increases
+By step [](#s1){.pf-ref}, $P_n$ therefore decreases up to $\alpha$ and increases
 after $\alpha$, so $\alpha$ is its unique global minimum.
 
 At that point,
@@ -112,19 +135,31 @@ P_{n-1}(\alpha)+\frac{\alpha^n}{n!}
 $$
 because $n$ is even and $\alpha\ne0$. Hence $P_n(x)>0$ for every real
 $x$, so $P_n$ has no real zero.
+
 :::
 
-<1>5. Therefore $P_n$ has exactly one real zero for odd $n$ and none
+:::
+
+::: {.pf-step #s5}
+
+Therefore $P_n$ has exactly one real zero for odd $n$ and none
 for even $n$.
 
-::: {.proof}
-Step <1>2 is the base case, and steps <1>3--<1>4 prove the induction
+::: pf-proof
+
+Step [](#s2){.pf-ref} is the base case, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the induction
 step according to the parity of $n$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

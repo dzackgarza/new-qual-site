@@ -38,21 +38,31 @@ $$
 f(z)\coloneqq\frac{e^{\pi/z}}{z^2+4}.
 $$
 
-<1>1. In the annulus
+::: pf
+
+::: {.pf-step #s1}
+
+In the annulus
 $$
 1<\abs{z}<3,
 $$
 the only singularities of $f$ are the simple poles $z=2i$ and $z=-2i$.
 
-::: {.proof}
+::: pf-proof
+
 The factor $e^{\pi/z}$ is holomorphic away from $z=0$, which lies inside the inner circle and hence outside the annulus. Also
 $$
 z^2+4=(z-2i)(z+2i),
 $$
 so the only zeros of the denominator are $\pm2i$, both of modulus $2$ and both simple.
+
 :::
 
-<1>2. The required difference equals
+:::
+
+::: {.pf-step #s2}
+
+The required difference equals
 $$
 2\pi i\left(
 \operatorname{Res}_{z=2i}f
@@ -61,16 +71,23 @@ $$
 \right).
 $$
 
-::: {.proof}
-Apply the residue theorem to the annulus $1<\abs{z}<3$. Its positively oriented boundary consists of the outer circle $\abs{z}=3$ counterclockwise and the inner circle $\abs{z}=1$ clockwise. Thus the boundary integral is exactly the stated outer counterclockwise integral minus the stated inner counterclockwise integral. Step <1>1 identifies the poles in the annulus.
+::: pf-proof
+
+Apply the residue theorem to the annulus $1<\abs{z}<3$. Its positively oriented boundary consists of the outer circle $\abs{z}=3$ counterclockwise and the inner circle $\abs{z}=1$ clockwise. Thus the boundary integral is exactly the stated outer counterclockwise integral minus the stated inner counterclockwise integral. Step [](#s1){.pf-ref} identifies the poles in the annulus.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \operatorname{Res}_{z=2i}f=-\frac14.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $2i$ is a simple zero of $z^2+4$,
 $$
 \begin{aligned}
@@ -85,14 +102,20 @@ $$
 -\frac14.
 \end{aligned}
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \operatorname{Res}_{z=-2i}f=-\frac14.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Similarly,
 $$
 \begin{aligned}
@@ -107,25 +130,37 @@ $$
 -\frac14.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Therefore the required difference is
+:::
+
+::: {.pf-step #s5}
+
+Therefore the required difference is
 $$
 \boxed{-\pi i}.
 $$
 
-::: {.proof}
-Substitute steps <1>3 and <1>4 into step <1>2:
+::: pf-proof
+
+Substitute steps [](#s3){.pf-ref} and [](#s4){.pf-ref} into step [](#s2){.pf-ref}:
 $$
 2\pi i\left(-\frac14-\frac14\right)
 =
 -\pi i.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

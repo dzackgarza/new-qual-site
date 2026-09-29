@@ -31,52 +31,92 @@ Suppose $A$ is a unital commutative ring, and $\langle a_1, \ldots, a_m \rangle 
 Prove that $$\theta: A \to S_1^{-1}A \times \cdots \times S_m^{-1}A, \quad \theta(x) := \left(\frac{x}{1}, \ldots, \frac{x}{1}\right)$$ is injective.
 :::
 
-
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 \[
 J=\langle a_1^{k_1},\ldots,a_m^{k_m}\rangle.
 \]
 Then every \(a_i\) belongs to \(\sqrt J\).
-::: {.proof}
+
+::: pf-proof
+
 By definition, \(a_i^{k_i}\in J\), so \(a_i\in\sqrt J\).
+
 :::
 
-<1>2. The ideal \(J\) is all of \(A\).
-::: {.proof}
-By <1>1,
+:::
+
+::: pf-step
+
+The ideal \(J\) is all of \(A\).
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 \[
 \langle a_1,\ldots,a_m\rangle\subseteq\sqrt J.
 \]
 The left side is \(A\) by hypothesis, hence \(\sqrt J=A\). Thus \(1\in\sqrt J\), so \(1^r=1\in J\) for some \(r>0\). Therefore \(J=A\). This proves part (a).
+
 :::
 
-<1>3. Suppose \(x\in A\) satisfies \(\theta(x)=0\). For every \(i\), there exists \(r_i\ge0\) such that
+:::
+
+::: {.pf-step #s3}
+
+Suppose \(x\in A\) satisfies \(\theta(x)=0\). For every \(i\), there exists \(r_i\ge0\) such that
 \[
 a_i^{r_i}x=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The \(i\)-th component of \(\theta(x)\) is \(x/1\in S_i^{-1}A\). The equality \(x/1=0\) in the localization means that some element of \(S_i\), necessarily a power \(a_i^{r_i}\), annihilates \(x\).
+
 :::
 
-<1>4. If some \(r_i=0\), then \(x=0\). Otherwise all \(r_i>0\), and there exist \(b_1,\ldots,b_m\in A\) such that
+:::
+
+::: {.pf-step #s4}
+
+If some \(r_i=0\), then \(x=0\). Otherwise all \(r_i>0\), and there exist \(b_1,\ldots,b_m\in A\) such that
 \[
 1=\sum_{i=1}^m b_i a_i^{r_i}.
 \]
-::: {.proof}
-If \(r_i=0\), then <1>3 gives \(x=0\). If every \(r_i\) is positive, part (a), applied with \(k_i=r_i\), gives
+
+::: pf-proof
+
+If \(r_i=0\), then step [](#s3){.pf-ref} gives \(x=0\). If every \(r_i\) is positive, part (a), applied with \(k_i=r_i\), gives
 \[
 \langle a_1^{r_1},\ldots,a_m^{r_m}\rangle=A,
 \]
 which is exactly the asserted linear combination.
+
 :::
 
-<1>5. In all cases, \(x=0\). Hence \(\theta\) is injective.
-::: {.proof}
-Only the case \(r_i>0\) for all \(i\) remains. Multiply the identity from <1>4 by \(x\):
+:::
+
+::: pf-step
+
+In all cases, \(x=0\). Hence \(\theta\) is injective.
+
+::: pf-proof
+
+Only the case \(r_i>0\) for all \(i\) remains. Multiply the identity from step [](#s4){.pf-ref} by \(x\):
 \[
 x=\sum_{i=1}^m b_i a_i^{r_i}x=0
 \]
-by <1>3. Therefore \(\ker\theta=0\).
+by step [](#s3){.pf-ref}. Therefore \(\ker\theta=0\).
+
 :::
+
+:::
+
+:::
+
 :::

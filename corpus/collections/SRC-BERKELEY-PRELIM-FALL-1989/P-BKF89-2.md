@@ -22,9 +22,15 @@ Prove that $f(x)=0$ for all $x\in[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. The function $f$ is nonnegative on $[0,1]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The function $f$ is nonnegative on $[0,1]$.
+
+::: pf-proof
+
 The inequality
 $$
 f'(x)\geq0
@@ -34,15 +40,21 @@ $$
 f(x)\geq0
 $$
 for every $x\in[0,1]$.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 h(x)=e^{-Mx}f(x).
 $$
 Then $h$ is nonincreasing on $[0,1]$.
 
-::: {.proof}
+::: pf-proof
+
 Differentiating gives
 $$
 h'(x)
@@ -53,20 +65,26 @@ The hypothesis $f'(x)\leq Mf(x)$ therefore gives
 $$
 h'(x)\leq0.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 h(x)=0
 $$
 for every $x\in[0,1]$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 h(x)=e^{-Mx}f(x)\geq0.
 $$
-By step <1>2 and
+By step [](#s2){.pf-ref} and
 $$
 h(0)=f(0)=0,
 $$
@@ -75,23 +93,35 @@ $$
 h(x)\leq h(0)=0
 $$
 for $x\geq0$. Thus $h(x)=0$ everywhere.
+
 :::
 
-<1>4. Consequently,
+:::
+
+::: {.pf-step #s4}
+
+Consequently,
 $$
 \boxed{f(x)=0\quad\text{for all }x\in[0,1]}.
 $$
 
-::: {.proof}
-Since $e^{-Mx}>0$, step <1>3 implies
+::: pf-proof
+
+Since $e^{-Mx}>0$, step [](#s3){.pf-ref} implies
 $$
 f(x)=e^{Mx}h(x)=0.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

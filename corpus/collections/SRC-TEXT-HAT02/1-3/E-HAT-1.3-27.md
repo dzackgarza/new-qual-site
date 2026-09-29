@@ -43,37 +43,57 @@ p^{-1}(x_0)\cong G
 \]
 by sending $h\in G$ to the endpoint of the lift of a representative loop for $h$ starting at $\tilde x_0$.
 
-<1>1. Under this identification, the usual endpoint monodromy for $g\in G$ is right multiplication by $g$:
+::: pf
+
+::: {.pf-step #s1}
+
+Under this identification, the usual endpoint monodromy for $g\in G$ is right multiplication by $g$:
 \[
 R_g(h)=hg.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Start at the fiber point represented by $h$.
 A path from $\tilde x_0$ to this point projects to a loop representing $h$.
 Lifting a loop representing $g$ from this point concatenates the projected paths, so the endpoint is represented by
 \[
 hg.
 \]
+
 :::
 
-<1>2. Hatcher's first action in the exercise is the inverse of endpoint monodromy, hence
+:::
+
+::: {.pf-step #s2}
+
+Hatcher's first action in the exercise is the inverse of endpoint monodromy, hence
 \[
 A_g(h)=hg^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The action on page 69 is defined so that the element represented by $g$ sends the endpoint of each lift of $g$ to its starting point.
-This is precisely the inverse permutation of the endpoint-monodromy bijection $R_g$ from <1>1.
+This is precisely the inverse permutation of the endpoint-monodromy bijection $R_g$ from step [](#s1){.pf-ref}.
 Therefore
 \[
 A_g=R_g^{-1}=R_{g^{-1}}.
 \]
+
 :::
 
-<1>3. Under the same identification, the deck-transformation action is left multiplication:
+:::
+
+::: {.pf-step #s3}
+
+Under the same identification, the deck-transformation action is left multiplication:
 \[
 D_g(h)=gh.
 \]
-::: {.proof}
+
+::: pf-proof
+
 In the path-class model of the universal cover, a point is represented by a path $h$ beginning at $x_0$.
 For a loop $g$ at $x_0$, define
 \[
@@ -89,24 +109,38 @@ Restricting to the fiber gives
 \[
 D_g(h)=gh.
 \]
+
 :::
 
-<1>4. The two actions agree if and only if
+:::
+
+::: {.pf-step #s4}
+
+The two actions agree if and only if
 \[
 gh=hg^{-1}
 \qquad\text{for all }g,h\in G.
 \]
-::: {.proof}
-By <1>2 and <1>3, equality of the two actions means
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, equality of the two actions means
 \[
 D_g(h)=A_g(h)
 \]
 for all $g,h$, which is exactly the displayed identity.
+
 :::
 
-<1>5. If the two actions agree, every element of $G$ has order at most $2$ and $G$ is abelian.
-::: {.proof}
-Set $h=e$ in <1>4.
+:::
+
+::: {.pf-step #s5}
+
+If the two actions agree, every element of $G$ has order at most $2$ and $G$ is abelian.
+
+::: pf-proof
+
+Set $h=e$ in step [](#s4){.pf-ref}.
 Then
 \[
 g=g^{-1},
@@ -116,54 +150,82 @@ so
 g^2=e
 \]
 for every $g\in G$.
-Substituting $g^{-1}=g$ back into <1>4 gives
+Substituting $g^{-1}=g$ back into step [](#s4){.pf-ref} gives
 \[
 gh=hg
 \]
 for all $g,h$.
 Thus $G$ is abelian and every element is self-inverse.
+
 :::
 
-<1>6. Conversely, if $G$ is abelian and every element satisfies $g^2=e$, then the two actions agree.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+Conversely, if $G$ is abelian and every element satisfies $g^2=e$, then the two actions agree.
+
+::: pf-proof
+
 For all $g,h$,
 \[
 A_g(h)=hg^{-1}=hg=gh=D_g(h).
 \]
+
 :::
 
-<1>7. Therefore the two actions are the same exactly when
+:::
+
+::: {.pf-step #s7}
+
+Therefore the two actions are the same exactly when
 \[
 \boxed{\pi_1(X,x_0)\text{ is an elementary abelian }2\text{-group}.}
 \]
-::: {.proof}
-This is the equivalence of <1>5 and <1>6.
+
+::: pf-proof
+
+This is the equivalence of steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
 :::
 
-<1>8. For
+:::
+
+::: pf-step
+
+For
 \[
 X=S^1\vee S^1,
 \]
 the actions are different.
-::: {.proof}
+
+::: pf-proof
+
 Here
 \[
 G\cong F(a,b),
 \]
 which is nonabelian and contains elements of infinite order.
-Hence it does not satisfy the criterion in <1>7.
+Hence it does not satisfy the criterion in step [](#s7){.pf-ref}.
 For example, at the identity fiber point,
 \[
 A_a(e)=a^{-1}\ne a=D_a(e).
 \]
+
 :::
 
-<1>9. For
+:::
+
+::: pf-step
+
+For
 \[
 X=S^1\times S^1,
 \]
 the actions are also different.
-::: {.proof}
+
+::: pf-proof
+
 Here
 \[
 G\cong\mathbb Z^2.
@@ -174,5 +236,11 @@ For a standard generator $a$,
 A_a(e)=a^{-1}\ne a=D_a(e).
 \]
 Thus abelianness alone does not make the actions agree.
+
 :::
+
+:::
+
+:::
+
 :::

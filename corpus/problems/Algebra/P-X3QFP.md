@@ -27,7 +27,11 @@ n_3\mid4,
 \]
 so $n_3=1$ or $4$.
 
-<1>1. Suppose $n_3=4$.
+::: pf
+
+::: pf-step
+
+Suppose $n_3=4$.
 
 Conjugation on the four Sylow $3$-subgroups gives a homomorphism
 \[
@@ -38,7 +42,15 @@ Its kernel is normal. If the kernel were nontrivial, its order would divide the 
 G\cong A_4.
 \]
 
-<1>2. Suppose $n_3=1$.
+:::
+
+::: pf-step
+
+Suppose $n_3=1$.
+
+:::
+
+:::
 
 Let $N\cong C_3$ be the normal Sylow $3$-subgroup and let $H$ be a Sylow $2$-subgroup. Since $|N|$ and $|H|$ are coprime,
 \[

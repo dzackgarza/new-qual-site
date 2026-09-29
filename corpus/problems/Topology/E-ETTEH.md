@@ -30,19 +30,83 @@ Let $X$ be a locally path-connected topological space. Prove that:
 :::
 
 ::: {.solution}
-<1>1. Let $U\subseteq X$ be open. If $x\in U$ and $V$ is a neighborhood of $x$ in $U$, then $V$ contains an open neighborhood $V'$ of $x$ in $X$ with $V'\subseteq U$. Since $X$ is locally path-connected, $V'$ contains a path-connected open neighborhood $W$ of $x$. Thus $U$ is locally path-connected.
 
-<1>2. Every path component $P$ of $X$ is open.
-<2>1. If $x\in P$, choose a path-connected open neighborhood $W$ of $x$.
-<2>2. Every point of $W$ can be joined to $x$ by a path, so $W\subseteq P$.
-<2>3. Hence $P$ is a union of open sets and is open.
+::: pf
 
-<1>3. Path components coincide with connected components.
-<2>1. Every path-connected set is connected, so each path component $P$ lies in a connected component $C$.
-<2>2. The path components partition $C$, and each is open in $C$ by <1>2.
-<2>3. If $C$ contained two or more path components, one path component and the union of the others would form a separation of $C$. This contradicts connectedness. Hence $C=P$.
+::: pf-step
 
-<1>4. Therefore every connected component is also a path component and is open. Components are always closed, so in a locally path-connected space every component is clopen.
+Let $U\subseteq X$ be open. If $x\in U$ and $V$ is a neighborhood of $x$ in $U$, then $V$ contains an open neighborhood $V'$ of $x$ in $X$ with $V'\subseteq U$. Since $X$ is locally path-connected, $V'$ contains a path-connected open neighborhood $W$ of $x$. Thus $U$ is locally path-connected.
 
-<1>5. Finally, path-connectedness always implies connectedness. Conversely, if $X$ is connected, it has only one connected component; by <1>3 that component is a path component. Hence $X$ is path-connected.
+:::
+
+::: {.pf-step #s2}
+
+Every path component $P$ of $X$ is open.
+
+::: pf-proof
+
+::: pf-step
+
+If $x\in P$, choose a path-connected open neighborhood $W$ of $x$.
+
+:::
+
+::: pf-step
+
+Every point of $W$ can be joined to $x$ by a path, so $W\subseteq P$.
+
+:::
+
+::: pf-step
+
+Hence $P$ is a union of open sets and is open.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Path components coincide with connected components.
+
+::: pf-proof
+
+::: pf-step
+
+Every path-connected set is connected, so each path component $P$ lies in a connected component $C$.
+
+:::
+
+::: pf-step
+
+The path components partition $C$, and each is open in $C$ by step [](#s2){.pf-ref}.
+
+:::
+
+::: pf-step
+
+If $C$ contained two or more path components, one path component and the union of the others would form a separation of $C$. This contradicts connectedness. Hence $C=P$.
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+Therefore every connected component is also a path component and is open. Components are always closed, so in a locally path-connected space every component is clopen.
+
+:::
+
+::: pf-step
+
+Finally, path-connectedness always implies connectedness. Conversely, if $X$ is connected, it has only one connected component; by step [](#s3){.pf-ref} that component is a path component. Hence $X$ is path-connected.
+
+:::
+
+:::
+
 :::

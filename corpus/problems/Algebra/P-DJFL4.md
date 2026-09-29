@@ -26,13 +26,27 @@ Let $L:\RR^5\to\RR^5$ be linear. Show that if $0$ is an eigenvalue of $L$, then 
 :::
 
 ::: {.solution}
-<1>1. The map $L$ is not injective.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The map $L$ is not injective.
+
+::: pf-proof
+
 Since $0$ is an eigenvalue, there is a nonzero vector $v$ such that $L(v)=0$. Thus $0\ne v\in\ker L$.
+
 :::
 
-<1>2. The map $L$ is not surjective.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $L$ is not surjective.
+
+::: pf-proof
+
 By rank-nullity,
 \[
 5=\dim\ker L+\dim\operatorname{im}L.
@@ -42,5 +56,11 @@ Since $\dim\ker L\ge1$,
 \dim\operatorname{im}L\le4<5=\dim\RR^5.
 \]
 Hence $\operatorname{im}L\ne\RR^5$.
+
 :::
+
+:::
+
+:::
+
 :::

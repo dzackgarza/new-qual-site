@@ -26,8 +26,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Regard $X=\RR^3\setminus A$ as a complement in $S^3$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Regard $X=\RR^3\setminus A$ as a complement in $S^3$.
+
+::: pf-proof
+
 Let $\infty$ denote the point at infinity in the one-point compactification $S^3=\RR^3\cup\{\infty\}$ and put
 \[
 K=A\sqcup\{\infty\}.
@@ -43,9 +50,14 @@ The set $K$ is compact and locally contractible, so Alexander duality gives
 \widetilde H^{\,2-k}(K;\ZZ)
 \]
 for every $k$.
+
 :::
 
-<1>2. The reduced cohomology of $K=S^1\sqcup S^1\sqcup\{\infty\}$ is
+:::
+
+::: {.pf-step #s2}
+
+The reduced cohomology of $K=S^1\sqcup S^1\sqcup\{\infty\}$ is
 \[
 \widetilde H^j(K;\ZZ)
 \cong
@@ -55,13 +67,20 @@ for every $k$.
 0,&j\ge2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The space $K$ has three connected components, so $\widetilde H^0(K;\ZZ)\cong\ZZ^{3-1}=\ZZ^2$.
 Each circle contributes one copy of $\ZZ$ in degree $1$, while the isolated point contributes none, hence $H^1(K;\ZZ)\cong\ZZ^2$.
 There is no cohomology in higher degrees.
+
 :::
 
-<1>3. Alexander duality therefore gives
+:::
+
+::: {.pf-step #s3}
+
+Alexander duality therefore gives
 \[
 \widetilde H_0(X;\ZZ)=0,
 \qquad
@@ -69,12 +88,19 @@ H_1(X;\ZZ)\cong\ZZ^2,
 \qquad
 H_2(X;\ZZ)\cong\ZZ^2,
 \]
-::: {.proof}
-Apply <1>1 to the groups in <1>2: $\widetilde H_0(X)\cong\widetilde H^2(K)=0$, $H_1(X)=\widetilde H_1(X)\cong\widetilde H^1(K)=\ZZ^2$, and $H_2(X)=\widetilde H_2(X)\cong\widetilde H^0(K)=\ZZ^2$.
+
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} to the groups in step [](#s2){.pf-ref}: $\widetilde H_0(X)\cong\widetilde H^2(K)=0$, $H_1(X)=\widetilde H_1(X)\cong\widetilde H^1(K)=\ZZ^2$, and $H_2(X)=\widetilde H_2(X)\cong\widetilde H^0(K)=\ZZ^2$.
 For $k\ge3$, the corresponding cohomological degree is negative, so the homology group is zero.
+
 :::
 
-<1>4. Thus the singular homology groups of $X=\RR^3\setminus(S^1\sqcup S^1)$ are
+:::
+
+::: pf-step
+
+Thus the singular homology groups of $X=\RR^3\setminus(S^1\sqcup S^1)$ are
 \[
 H_k(X;\ZZ)
 \cong
@@ -85,7 +111,15 @@ H_k(X;\ZZ)
 0,&k\ge3.
 \end{cases}
 \]
-::: {.proof}
-Since $\widetilde H_0(X)=0$, one has $H_0(X)\cong\ZZ$; the remaining groups are exactly those computed in <1>3.
+
+::: pf-proof
+
+Since $\widetilde H_0(X)=0$, one has $H_0(X)\cong\ZZ$; the remaining groups are exactly those computed in step [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

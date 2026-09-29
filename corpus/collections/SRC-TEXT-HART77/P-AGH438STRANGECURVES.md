@@ -39,7 +39,12 @@ b. Show, however, that if $\characteristic k=0$, there aren't even any singular 
 :::
 
 ::: {.solution}
-<1>1. In characteristic $p>0$, the projective closure of the parametrized
+
+::: pf
+
+::: {.pf-step #s1}
+
+In characteristic $p>0$, the projective closure of the parametrized
 curve is the image of
 $$
 \nu:\PP^1\longrightarrow\PP^3,
@@ -55,7 +60,8 @@ v^{2p}
 \bigr].
 $$
 
-::: {.proof}
+::: pf-proof
+
 The four displayed forms are homogeneous of degree $2p$ and have no common
 zero, so they define a morphism on all of $\PP^1$.
 On the chart $v\ne0$, putting
@@ -73,15 +79,21 @@ $$
 and, being projective, is its projective closure.
 The first affine coordinate recovers $t$, so the map is birational onto its
 integral image.
+
 :::
 
-<1>2. The affine part of this curve is nonsingular, and its unique point at
+:::
+
+::: {.pf-step #s2}
+
+The affine part of this curve is nonsingular, and its unique point at
 infinity is
 $$
 Q=[0:0:1:0].
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the affine chart $w=1$, the image is the graph
 $$
 y=x^p,
@@ -96,22 +108,28 @@ k[x].
 $$
 Hence the affine part is isomorphic to $\AA^1$ and is nonsingular.
 
-The complement corresponds to $v=0$ in step <1>1. At the unique point
+The complement corresponds to $v=0$ in step [](#s1){.pf-ref}. At the unique point
 $[u:v]=[1:0]$, the image is
 $$
 Q=[0:0:1:0].
 $$
 Thus $Q$ is the only point at infinity.
+
 :::
 
-<1>3. The point $Q$ is singular.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The point $Q$ is singular.
+
+::: pf-proof
+
 Work on the chart $z\ne0$ around $Q$. Put
 $$
 s=\frac vu.
 $$
-Dividing the parametrization in step <1>1 by $u^{2p}$ gives
+Dividing the parametrization in step [](#s1){.pf-ref} by $u^{2p}$ gives
 $$
 \frac{x}{z}=s^{2p-1},
 \qquad
@@ -144,16 +162,22 @@ $$
 $$
 The local ring has dimension $1$, so it is not regular. Hence $Q$ is
 singular.
+
 :::
 
-<1>4. Every tangent line at a nonsingular point of the curve passes through
+:::
+
+::: {.pf-step #s4}
+
+Every tangent line at a nonsingular point of the curve passes through
 the fixed point
 $$
 A=[1:0:0:0].
 $$
 
-::: {.proof}
-By step <1>2, every nonsingular point lies on the affine chart $w=1$ and has
+::: pf-proof
+
+By step [](#s2){.pf-ref}, every nonsingular point lies on the affine chart $w=1$ and has
 the form
 $$
 P_t=(t,t^p,t^{2p}).
@@ -179,10 +203,15 @@ $$
 A=[1:0:0:0],
 $$
 independently of $t$. Therefore the curve is strange. Together with
-step <1>3, this proves (a).
+step [](#s3){.pf-ref}, this proves (a).
+
 :::
 
-<1>5. Now assume $\operatorname{char}k=0$. Let
+:::
+
+::: {.pf-step #s5}
+
+Now assume $\operatorname{char}k=0$. Let
 $$
 C\subseteq\PP^n
 $$
@@ -193,7 +222,8 @@ $$
 lie on every tangent line at a nonsingular point of $C$. Projection from
 $A$ has zero differential at every nonsingular point where it is defined.
 
-::: {.proof}
+::: pf-proof
+
 Choose projective coordinates with
 $$
 A=[1:0:\cdots:0].
@@ -219,12 +249,18 @@ Since $T_PC$ is one-dimensional,
 $$
 d\pi_A|_{T_PC}=0.
 $$
+
 :::
 
-<1>6. If the projection of $C$ from $A$ were nonconstant, step <1>5 would
+:::
+
+::: {.pf-step #s6}
+
+If the projection of $C$ from $A$ were nonconstant, step [](#s5){.pf-ref} would
 contradict characteristic zero.
 
-::: {.proof}
+::: pf-proof
+
 Suppose the rational projection is nonconstant, and let
 $$
 Y
@@ -263,7 +299,7 @@ for a finite separable extension, while both remaining vector spaces have
 dimension $1$ over $k(C)$.
 
 Hence the differential of $\pi$ at the generic point is nonzero.
-On the other hand, step <1>5 says that the differential vanishes at every
+On the other hand, step [](#s5){.pf-ref} says that the differential vanishes at every
 nonsingular closed point of $U$. The induced morphism of line bundles
 $$
 \pi^*\Omega_{V/k}
@@ -273,12 +309,18 @@ $$
 therefore vanishes identically, and in particular vanishes at the generic
 point. This is a contradiction.
 Thus projection from $A$ cannot have one-dimensional image.
+
 :::
 
-<1>7. The curve $C$ is a line.
+:::
 
-::: {.proof}
-By step <1>6, projection from $A$ is constant on the dense open where it is
+::: {.pf-step #s7}
+
+The curve $C$ is a line.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, projection from $A$ is constant on the dense open where it is
 defined. A fibre of linear projection from $A$ is a line through $A$.
 Therefore a dense open subset of $C$ lies on one fixed line
 $$
@@ -294,13 +336,19 @@ C=L\cong\PP^1.
 $$
 Thus in characteristic zero the only strange integral curve is a line, and
 in particular there are no singular strange curves. This proves (b).
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove the positive-characteristic example in (a).
-Steps <1>5--<1>7 prove that in characteristic zero every strange integral
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the positive-characteristic example in (a).
+Steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove that in characteristic zero every strange integral
 curve is a line, proving (b).
+
 :::
+
+:::
+
 :::

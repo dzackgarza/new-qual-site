@@ -31,10 +31,16 @@ For $a \in \mathbb{R}$, let $f_a$ be the function on $\mathbb{R}$ defined by $f_
 (b) Find the Fourier transform of $f_a$.
 :::
 
-
 ::: {.solution}
-<1>1. Show that $f_a$ defines a tempered distribution.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that $f_a$ defines a tempered distribution.
+
+::: pf-proof
+
 For $\varphi\in\mathcal S(\mathbb R)$ define
 \[
 \langle T_a,\varphi\rangle
@@ -53,10 +59,17 @@ For example,
 \sup_{x\in\mathbb R}(1+x^2)|\varphi(x)|.
 \]
 Thus $T_a$ is a continuous linear functional on the Schwartz space. Therefore $f_a=e^{iax}$ defines a tempered distribution.
+
 :::
 
-<1>2. Compute its Fourier transform.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute its Fourier transform.
+
+::: pf-proof
+
 Use Folland's convention, as authorized by the exam instructions:
 \[
 \widehat\varphi(\xi)
@@ -95,5 +108,11 @@ Therefore
 \boxed{
 \widehat{e^{iax}}=\delta_{a/(2\pi)}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -34,21 +34,33 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (1) holds when there are no equations.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Part (1) holds when there are no equations.
+
+::: pf-proof
+
 If $m=0$, there are no constraints on the $n>0$ unknowns. For example,
 $$
 (1,0,\ldots,0)
 $$
 is a nonzero solution.
+
 :::
 
-<1>2. Assume part (1) holds for every homogeneous system with
+:::
+
+::: {.pf-step #s2}
+
+Assume part (1) holds for every homogeneous system with
 $m-1$ equations and more than $m-1$ unknowns. Then it holds for a system
 of $m$ equations in $n$ unknowns with $m<n$.
 
-::: {.proof}
+::: pf-proof
+
 Write the system as
 $$
 \sum_{j=1}^n a_{ij}x_j=0,
@@ -92,20 +104,32 @@ $$
 Define $x_n$ by the displayed formula. Then all $m$ original equations
 hold. The full vector is nonzero because its first $n-1$ coordinates are
 not all zero.
+
 :::
 
-<1>3. Every system of $m$ homogeneous linear equations in $n$ unknowns
+:::
+
+::: {.pf-step #s3}
+
+Every system of $m$ homogeneous linear equations in $n$ unknowns
 over $F$ with $m<n$ has a nonzero solution.
 
-::: {.proof}
-Step <1>1 is the base case for induction on $m$, and step <1>2 is the
+::: pf-proof
+
+Step [](#s1){.pf-ref} is the base case for induction on $m$, and step [](#s2){.pf-ref} is the
 inductive step.
+
 :::
 
-<1>4. If a vector space is spanned by $s$ vectors, then every linearly
+:::
+
+::: {.pf-step #s4}
+
+If a vector space is spanned by $s$ vectors, then every linearly
 independent subset has at most $s$ elements.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 V=\operatorname{span}\{v_1,\ldots,v_s\}
@@ -130,7 +154,7 @@ $$
 1\leq i\leq s.
 $$
 This is a system of $s$ homogeneous equations in $r>s$ unknowns.
-By step <1>3 it has a nonzero solution
+By step [](#s3){.pf-ref} it has a nonzero solution
 $$
 (c_1,\ldots,c_r).
 $$
@@ -147,20 +171,32 @@ $$
 $$
 which is a nontrivial linear relation among the $w_j$. This contradicts
 their linear independence.
+
 :::
 
-<1>5. Every maximal linearly independent subset of a finitely spanned
+:::
+
+::: {.pf-step #s5}
+
+Every maximal linearly independent subset of a finitely spanned
 vector space is finite.
 
-::: {.proof}
-Suppose $V$ is spanned by $s$ vectors. By step <1>4, no linearly
+::: pf-proof
+
+Suppose $V$ is spanned by $s$ vectors. By step [](#s4){.pf-ref}, no linearly
 independent subset can contain more than $s$ elements. Hence every maximal
 linearly independent subset is finite.
+
 :::
 
-<1>6. Every maximal linearly independent subset of $V$ spans $V$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Every maximal linearly independent subset of $V$ spans $V$.
+
+::: pf-proof
+
 Let $B$ be maximal linearly independent. If
 $$
 \operatorname{span}B\neq V,
@@ -179,22 +215,28 @@ This contradicts maximality of $B$. Therefore
 $$
 \operatorname{span}B=V.
 $$
+
 :::
 
-<1>7. Any two maximal linearly independent subsets of $V$ have the same
+:::
+
+::: {.pf-step #s7}
+
+Any two maximal linearly independent subsets of $V$ have the same
 number of elements.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 B=\{b_1,\ldots,b_r\},
 \qquad
 C=\{c_1,\ldots,c_s\}
 $$
-be maximal linearly independent subsets. They are finite by step <1>5 and
-span $V$ by step <1>6.
+be maximal linearly independent subsets. They are finite by step [](#s5){.pf-ref} and
+span $V$ by step [](#s6){.pf-ref}.
 
-Since $C$ spans $V$ and $B$ is linearly independent, step <1>4 gives
+Since $C$ spans $V$ and $B$ is linearly independent, step [](#s4){.pf-ref} gives
 $$
 r\leq s.
 $$
@@ -206,11 +248,17 @@ Hence
 $$
 r=s.
 $$
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (1), and step <1>7 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

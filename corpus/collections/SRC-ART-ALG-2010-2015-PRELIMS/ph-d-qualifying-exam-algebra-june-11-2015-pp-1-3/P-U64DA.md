@@ -36,10 +36,15 @@ Choose a root $\alpha\in\mathbb C$ of $X^p-a$ and a primitive
 $p$th root of unity $\zeta$. Irreducibility implies $a\ne0$,
 since $X^p$ is reducible for $p\geq2$.
 
-<1>1. The splitting field is $K=\mathbb Q(\alpha,\zeta)$ and
+::: pf
+
+::: {.pf-step #s1}
+
+The splitting field is $K=\mathbb Q(\alpha,\zeta)$ and
 $[K:\mathbb Q]=p(p-1)$.
 
-::: {.proof}
+::: pf-proof
+
 The roots are the $p$ distinct numbers $\alpha\zeta^j$ for
 $j\in\mathbb Z/p\mathbb Z$. They lie in $K$, and the field
 they generate contains $\alpha$ and
@@ -72,11 +77,17 @@ As $p$ is relatively prime to $p-1$, it divides $d$. The bounds
 on $d$ force $d=p$, giving the asserted total degree.
 For $p=2$ the cyclotomic field is $\mathbb Q$ and the same
 argument applies.
+
 :::
 
-<1>2. Every Galois automorphism acts affinely on the root labels.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every Galois automorphism acts affinely on the root labels.
+
+::: pf-proof
+
 Let $\sigma\in\operatorname{Gal}(K/\mathbb Q)$. It preserves
 the multiplicative order of $\zeta$, so
 $\sigma(\zeta)=\zeta^k$ for a unique
@@ -89,11 +100,17 @@ $$
 Thus the permutation of the labels is $j\mapsto kj+l$.
 The root action is a homomorphism into the permutation group,
 and is faithful because the roots generate $K$.
+
 :::
 
-<1>3. Every affine permutation occurs, proving the isomorphism.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every affine permutation occurs, proving the isomorphism.
+
+::: pf-proof
+
 The affine maps form a group: composition and inversion are
 $$
 f_{k,l}\circ f_{u,v}=f_{ku,kv+l},\qquad
@@ -105,8 +122,14 @@ $l$ and $p-1$ nonzero choices for $k$.
 
 The splitting field $K/\mathbb Q$ is Galois in characteristic
 zero, so its automorphism group has order $[K:\mathbb Q]$
-[@DF04], which is $p(p-1)$ by step <1>1.
-The injective homomorphism in step <1>2 is therefore a bijection
+[@DF04], which is $p(p-1)$ by step [](#s1){.pf-ref}.
+The injective homomorphism in step [](#s2){.pf-ref} is therefore a bijection
 onto this affine group, as required.
+
 :::
+
+:::
+
+:::
+
 :::

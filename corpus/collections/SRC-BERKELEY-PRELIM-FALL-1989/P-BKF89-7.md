@@ -17,9 +17,15 @@ Let $A$ and $B$ be diagonalizable linear transformations of $\mathbb R^n$ satisf
 :::
 
 ::: {.solution}
-<1>1. The eigenspace $E$ is invariant under $B$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The eigenspace $E$ is invariant under $B$.
+
+::: pf-proof
+
 Let $\lambda$ be the eigenvalue of $A$ corresponding to $E$, and let $v\in E$. Then
 $$
 Av=\lambda v.
@@ -33,16 +39,22 @@ B(Av)
 \lambda Bv.
 $$
 Thus $Bv\in E$, so $B(E)\subseteq E$.
+
 :::
 
-<1>2. The minimal polynomial of $B|_E$ divides the minimal polynomial of $B$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The minimal polynomial of $B|_E$ divides the minimal polynomial of $B$.
+
+::: pf-proof
+
 Let $m_B(t)$ be the minimal polynomial of $B$. Since
 $$
 m_B(B)=0
 $$
-on $\RR^n$, its restriction to the $B$-invariant subspace $E$ from step <1>1 is also zero:
+on $\RR^n$, its restriction to the $B$-invariant subspace $E$ from step [](#s1){.pf-ref} is also zero:
 $$
 m_B(B|_E)=0.
 $$
@@ -50,32 +62,50 @@ By the defining divisibility property of the minimal polynomial,
 $$
 m_{B|_E}(t)\mid m_B(t).
 $$
+
 :::
 
-<1>3. The polynomial $m_{B|_E}$ splits over $\RR$ into distinct linear factors.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The polynomial $m_{B|_E}$ splits over $\RR$ into distinct linear factors.
+
+::: pf-proof
+
 Because $B$ is diagonalizable over $\RR$, its minimal polynomial splits into distinct linear factors:
 $$
 m_B(t)
 =
 \prod_{j=1}^s(t-\mu_j)
 $$
-with the $\mu_j$ distinct. By step <1>2, $m_{B|_E}$ divides this polynomial, so it too is a product of distinct linear factors over $\RR$.
+with the $\mu_j$ distinct. By step [](#s2){.pf-ref}, $m_{B|_E}$ divides this polynomial, so it too is a product of distinct linear factors over $\RR$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{B|_E\text{ is diagonalizable}}.
 $$
 
-::: {.proof}
-A linear transformation over $\RR$ is diagonalizable exactly when its minimal polynomial splits into distinct linear factors. Step <1>3 verifies this criterion for $B|_E$.
+::: pf-proof
+
+A linear transformation over $\RR$ is diagonalizable exactly when its minimal polynomial splits into distinct linear factors. Step [](#s3){.pf-ref} verifies this criterion for $B|_E$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -17,11 +17,18 @@ Define the modular group and describe its action on the upper half-plane.
 :::
 
 ::: {.solution}
-<1>1. The modular group is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The modular group is
 $$
 \boxed{PSL_2(\mathbb Z)=SL_2(\mathbb Z)/\{\pm I\}}.
 $$
-::: {.proof}
+
+::: pf-proof
+
 Thus an element is represented by a matrix
 $$
 \gamma=
@@ -30,10 +37,17 @@ $$
 \quad ad-bc=1,
 $$
 with a matrix identified with its negative.
+
 :::
 
-<1>2. The modular group acts on $\mathbb H$ by Möbius transformations.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The modular group acts on $\mathbb H$ by Möbius transformations.
+
+::: pf-proof
+
 For
 $$
 \mathbb H=\{z\in\mathbb C:\operatorname{Im}z>0\},
@@ -48,10 +62,17 @@ $$
 =\frac{\operatorname{Im}z}{|cz+d|^2}>0,
 $$
 so every group element preserves $\mathbb H$. Matrix multiplication corresponds to composition of the associated Möbius transformations, hence this is a group action.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>2 give the requested definition and action.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the requested definition and action.
+
+:::
+
+:::
+
 :::

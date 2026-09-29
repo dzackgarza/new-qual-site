@@ -27,8 +27,14 @@ where each $D_i$ is a finite-dimensional division algebra over the base field.
 
 Since $\QQ$ has characteristic $0$, Maschke's theorem makes $\QQ[G]$ semisimple for every finite group $G$.
 
-<1>1. $G=C_5$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$G=C_5$.
+
+::: pf-proof
+
 Using
 \[
 \QQ[C_5]\cong \QQ[x]/(x^5-1)
@@ -41,18 +47,32 @@ with $\Phi_5$ irreducible over $\QQ$, the Chinese remainder theorem gives
 \[
 \QQ[C_5]\cong \QQ\times\QQ(\zeta_5).
 \]
+
 :::
 
-<1>2. $G=C_2\times C_2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$G=C_2\times C_2$.
+
+::: pf-proof
+
 All four irreducible characters are one-dimensional and rational-valued. Hence
 \[
 \QQ[C_2\times C_2]\cong \QQ^4.
 \]
+
 :::
 
-<1>3. $G=Q_8$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$G=Q_8$.
+
+::: pf-proof
+
 The quaternion group has four one-dimensional rational representations and one quaternionic irreducible component. Accordingly,
 \[
 \QQ[Q_8]
@@ -64,5 +84,11 @@ where $(-1,-1)_{\QQ}$ is the rational Hamilton quaternion division algebra
 \QQ\langle i,j\mid i^2=j^2=-1,\ ij=-ji\rangle.
 \]
 The dimensions are $4+4=8$, as required.
+
 :::
+
+:::
+
+:::
+
 :::

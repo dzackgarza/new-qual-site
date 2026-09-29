@@ -29,7 +29,11 @@ x^2-tx+1.
 \]
 The conjugacy classification is determined by the sign of $t^2-4$, with an additional orientation sign in the elliptic and nontrivial parabolic cases.
 
-<1>1. Hyperbolic classes: $|t|>2$.
+::: pf
+
+::: pf-step
+
+Hyperbolic classes: $|t|>2$.
 
 The eigenvalues are distinct real numbers $\lambda,\lambda^{-1}$. Thus $A$ is $\SL_2(\RR)$-conjugate to
 \[
@@ -43,7 +47,11 @@ Swapping the two eigenvalues is achieved by
 \]
 so there is one conjugacy class for each trace $|t|>2$.
 
-<1>2. Elliptic classes: $|t|<2$.
+:::
+
+::: pf-step
+
+Elliptic classes: $|t|<2$.
 
 Write
 \[
@@ -69,7 +77,11 @@ J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
 \]
 Every real matrix satisfying $PJ=-JP$ has negative determinant unless it is singular, so no such $P$ lies in $\SL_2(\RR)$.
 
-<1>3. Parabolic classes: $t=2$.
+:::
+
+::: pf-step
+
+Parabolic classes: $t=2$.
 
 Either $A=I$, or $A$ is nontrivial unipotent. Every nontrivial unipotent is $\SL_2(\RR)$-conjugate to exactly one of
 \[
@@ -83,7 +95,15 @@ They are not $\SL_2(\RR)$-conjugate: a $\GL_2(\RR)$-conjugator between them has 
 \]
 with determinant $a^2>0$. Hence the sign cannot be changed by a determinant-$1$ conjugator.
 
-<1>4. Parabolic classes: $t=-2$.
+:::
+
+::: pf-step
+
+Parabolic classes: $t=-2$.
+
+:::
+
+:::
 
 Likewise there are exactly three classes:
 \[

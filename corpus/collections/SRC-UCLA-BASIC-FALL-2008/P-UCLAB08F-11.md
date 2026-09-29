@@ -37,7 +37,20 @@ A=\begin{pmatrix}
 \end{pmatrix}.
 \]
 
-<1>1. Show that $A$ is singular.
+::: pf
 
-<1>2. Determine the condition on $\mathbf f$ necessary and sufficient for a solution to exist.
+::: pf-step
+
+Show that $A$ is singular.
+
+:::
+
+::: pf-step
+
+Determine the condition on $\mathbf f$ necessary and sufficient for a solution to exist.
+
+:::
+
+:::
+
 :::

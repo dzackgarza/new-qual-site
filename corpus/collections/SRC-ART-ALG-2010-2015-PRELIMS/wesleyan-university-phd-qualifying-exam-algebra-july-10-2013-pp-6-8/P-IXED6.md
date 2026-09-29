@@ -40,12 +40,18 @@ just in case $$c \equiv d \bmod (a) \vee (b).$$
 :::
 
 ::: {.solution}
-<1>1. The join is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The join is
 $$
 (a)\vee(b)=(a)+(b)=\{ua+vb:u,v\in R\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The displayed set contains zero, is closed under subtraction,
 and is closed under multiplication by any $r\in R$:
 $r(ua+vb)=(ru)a+(rv)b$. It is therefore an ideal.
@@ -53,13 +59,19 @@ It contains both $(a)$ and $(b)$. Any ideal containing these
 two ideals contains every sum $ua+vb$, so it contains the
 displayed ideal. This proves the least-ideal property and
 hence the asserted identification with the join.
+
 :::
 
-<1>2. A greatest common divisor $g$ of $a$ and $b$ generates
+:::
+
+::: {.pf-step #s2}
+
+A greatest common divisor $g$ of $a$ and $b$ generates
 this ideal; in particular, $g=ra+sb$ for suitable $r,s\in R$.
 
-::: {.proof}
-Because $R$ is a PID, step <1>1 gives $(a)+(b)=(g)$ for
+::: pf-proof
+
+Because $R$ is a PID, step [](#s1){.pf-ref} gives $(a)+(b)=(g)$ for
 some $g\in R$. This generator is nonzero because the ideal
 contains $a\ne0$. Membership of $a,b$ in $(g)$ says that
 $g$ divides both $a$ and $b$. Membership of $g$ in the sum
@@ -71,12 +83,18 @@ Thus $g$ is a greatest common divisor in the divisibility
 sense. Conversely, any other greatest common divisor $g'$
 divides $g$ and is divisible by $g$, so $(g')=(g)$.
 Hence any choice of gcd is a generator of the join.
+
 :::
 
-<1>3. The simultaneous congruences are solvable exactly when
+:::
+
+::: pf-step
+
+The simultaneous congruences are solvable exactly when
 $c-d\in(a)\vee(b)$.
 
-::: {.proof}
+::: pf-proof
+
 If $x$ satisfies the congruences, then
 $c-x\in(a)$ and $x-d\in(b)$. Adding gives
 $c-d\in(a)+(b)$, which is the required compatibility.
@@ -87,8 +105,14 @@ $$
 x=c-ua=d+vb.
 $$
 Then $x-c=-ua\in(a)$ and $x-d=vb\in(b)$, proving both
-congruences. In terms of step <1>2, write $c-d=kg$ and
+congruences. In terms of step [](#s2){.pf-ref}, write $c-d=kg$ and
 $g=ra+sb$; the explicit solution becomes
 $x=c-kra=d+ksb$.
+
 :::
+
+:::
+
+:::
+
 :::

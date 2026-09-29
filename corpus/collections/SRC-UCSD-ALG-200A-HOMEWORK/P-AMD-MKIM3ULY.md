@@ -41,12 +41,18 @@ G/Z(G)=\langle xZ(G)\rangle
 \]
 for some $x\in G$.
 
-<1>1. Every element $g\in G$ can be written
+::: pf
+
+::: {.pf-step #s1}
+
+Every element $g\in G$ can be written
 \[
 g=x^a z
 \]
 for some $a\in\mathbb Z$ and $z\in Z(G)$.
-::: {.proof}
+
+::: pf-proof
+
 Since $gZ(G)$ belongs to the cyclic quotient, there is $a\in\mathbb Z$ such that
 \[
 gZ(G)=(xZ(G))^a=x^aZ(G).
@@ -63,12 +69,19 @@ Then $z\in Z(G)$ and
 \[
 g=x^az.
 \]
+
 :::
 
-<1>2. Any two elements of $G$ commute.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Any two elements of $G$ commute.
+
+::: pf-proof
+
 Let $g,h\in G$.
-By <1>1, write
+By step [](#s1){.pf-ref}, write
 \[
 g=x^az,
 \qquad
@@ -87,10 +100,23 @@ gh
 \end{aligned}
 \]
 Thus every pair of elements commutes.
+
 :::
 
-<1>3. Therefore $G$ is abelian.
-::: {.proof}
-This is exactly the conclusion of <1>2.
 :::
+
+::: pf-step
+
+Therefore $G$ is abelian.
+
+::: pf-proof
+
+This is exactly the conclusion of step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

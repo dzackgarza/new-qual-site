@@ -38,8 +38,14 @@ F(t)=1+2\int_0^t f(s)\,ds.
 $$
 Because $f\ge0$, we have $F(t)\ge1$.
 
-<1>1. Bound the derivative of $\sqrt{F}$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Bound the derivative of $\sqrt{F}$.
+
+::: pf-proof
+
 By the fundamental theorem of calculus,
 $$
 F'(t)=2f(t).
@@ -59,11 +65,18 @@ $$
 =\frac{f(t)}{\sqrt{F(t)}}
 \le1.
 $$
+
 :::
 
-<1>2. Integrate the differential inequality.
-::: {.proof}
-Since $F(0)=1$, step <1>1 gives
+:::
+
+::: pf-step
+
+Integrate the differential inequality.
+
+::: pf-proof
+
+Since $F(0)=1$, step [](#s1){.pf-ref} gives
 $$
 \sqrt{F(t)}-1
 \le t
@@ -77,5 +90,11 @@ $$
 \boxed{f(t)\le1+t}
 $$
 for every $t\in[0,1]$.
+
 :::
+
+:::
+
+:::
+
 :::

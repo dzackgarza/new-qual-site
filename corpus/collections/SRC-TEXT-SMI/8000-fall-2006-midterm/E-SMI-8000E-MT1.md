@@ -31,8 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. State Zorn's lemma.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+State Zorn's lemma.
+
+::: pf-proof
+
 Zorn's lemma says:
 
 > If a nonempty partially ordered set has the property that every chain has
@@ -41,10 +48,17 @@ Zorn's lemma says:
 
 Here a chain means a totally ordered subset, and a maximal element means an
 element which is not strictly below any other element of the poset.
+
 :::
 
-<1>2. The principal ideal $(x)$ is proper.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The principal ideal $(x)$ is proper.
+
+::: pf-proof
+
 If
 $$
 (x)=R,
@@ -58,24 +72,38 @@ Hence
 $$
 (x)\ne R.
 $$
+
 :::
 
-<1>3. Set up the Zorn poset.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Set up the Zorn poset.
+
+::: pf-proof
+
 Let
 $$
 \mathcal P
 =\{I\trianglelefteq R:(x)\subseteq I\subsetneq R\},
 $$
-ordered by inclusion. By step <1>2,
+ordered by inclusion. By step [](#s2){.pf-ref},
 $$
 (x)\in\mathcal P,
 $$
 so $\mathcal P$ is nonempty.
+
 :::
 
-<1>4. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+
+::: pf-proof
+
 Let
 $$
 \mathcal C\subseteq\mathcal P
@@ -101,11 +129,18 @@ $$
 J\in\mathcal P
 $$
 and $J$ is an upper bound for the chain.
+
 :::
 
-<1>5. Apply Zorn's lemma and prove the maximal element is a maximal ideal of $R$.
-::: {.proof}
-By steps <1>3--<1>4 and Zorn's lemma, $\mathcal P$ has a maximal element
+:::
+
+::: pf-step
+
+Apply Zorn's lemma and prove the maximal element is a maximal ideal of $R$.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref} and Zorn's lemma, $\mathcal P$ has a maximal element
 $M$. Then
 $$
 (x)\subseteq M\subsetneq R,
@@ -128,5 +163,11 @@ of $R$. Hence
 $$
 \boxed{\text{every nonunit }x\in R\text{ lies in a proper maximal ideal}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

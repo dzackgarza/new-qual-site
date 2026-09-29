@@ -35,16 +35,27 @@ Let $a_1,a_2,\ldots$ be positive real numbers.
 :::
 
 ::: {.solution}
-<1>1. For every $n\ge1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\ge1$,
 $$
 \sqrt{a_na_{n+1}}\le\frac{a_n+a_{n+1}}2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the arithmetic-geometric mean inequality for the positive numbers $a_n$ and $a_{n+1}$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 \sum_{n=1}^\infty a_n<\infty,
 $$
@@ -53,8 +64,9 @@ $$
 \sum_{n=1}^\infty\sqrt{a_na_{n+1}}<\infty.
 $$
 
-::: {.proof}
-By step <1>1, for every $N$,
+::: pf-proof
+
+By step [](#s1){.pf-ref}, for every $N$,
 $$
 \begin{aligned}
 \sum_{n=1}^N\sqrt{a_na_{n+1}}
@@ -63,9 +75,14 @@ $$
 \end{aligned}
 $$
 The right-hand side is bounded uniformly in $N$ by the convergent series $\sum a_n$. Since the partial sums on the left are increasing, they converge.
+
 :::
 
-<1>3. Define a positive sequence by
+:::
+
+::: {.pf-step #s3}
+
+Define a positive sequence by
 $$
 a_{2k-1}=\frac1{k^3},
 \qquad
@@ -77,7 +94,8 @@ $$
 \sum_{n=1}^\infty a_n=\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The even-indexed subseries is
 $$
 \sum_{k=1}^\infty a_{2k}
@@ -85,14 +103,20 @@ $$
 \sum_{k=1}^\infty\frac1k,
 $$
 which diverges.
+
 :::
 
-<1>4. For the sequence in step <1>3,
+:::
+
+::: {.pf-step #s4}
+
+For the sequence in step [](#s3){.pf-ref},
 $$
 \sum_{n=1}^\infty\sqrt{a_na_{n+1}}<\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $k\ge1$,
 $$
 \sqrt{a_{2k-1}a_{2k}}
@@ -114,17 +138,29 @@ $$
 2\sum_{k=1}^\infty\frac1{k^2}
 <\infty.
 $$
+
 :::
 
-<1>5. Thus the converse is false.
-
-::: {.proof}
-Steps <1>3 and <1>4 give a positive sequence for which the geometric-mean series converges while $\sum a_n$ diverges.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>2 proves part 1, and step <1>5 proves part 2.
+Thus the converse is false.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give a positive sequence for which the geometric-mean series converges while $\sum a_n$ diverges.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part 1, and step [](#s5){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

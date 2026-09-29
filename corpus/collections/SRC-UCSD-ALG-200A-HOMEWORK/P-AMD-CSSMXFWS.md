@@ -42,8 +42,15 @@ Prove that every Sylow subgroup of $G$ is normal.
 :::
 
 ::: {.solution}
-<1>1. The Sylow $5$-subgroup of $G$ is unique and hence normal.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The Sylow $5$-subgroup of $G$ is unique and hence normal.
+
+::: pf-proof
+
 Let $n_5$ be the number of Sylow $5$-subgroups of $G$.
 Sylow's theorem gives
 \[
@@ -69,15 +76,22 @@ Then
 \[
 P_5\normal G.
 \]
+
 :::
 
-<1>2. The quotient
+:::
+
+::: {.pf-step #s2}
+
+The quotient
 \[
 \overline G=G/P_5
 \]
 has order $119=7\cdot17$, and both of its Sylow subgroups are unique.
-::: {.proof}
-By <1>1,
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 \[
 |\overline G|=|G|/|P_5|=595/5=119.
 \]
@@ -103,16 +117,23 @@ Thus $\overline n_7\in\{1,17\}$, and $17\equiv3\pmod7$, so
 \overline n_7=1.
 \]
 Hence the Sylow $7$- and Sylow $17$-subgroups of $\overline G$ are both unique and normal.
+
 :::
 
-<1>3. There is a normal subgroup $K\normal G$ of order $85=5\cdot17$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+There is a normal subgroup $K\normal G$ of order $85=5\cdot17$.
+
+::: pf-proof
+
 Let
 \[
 \pi:G\longrightarrow\overline G
 \]
 be the quotient map, and let $\overline R$ be the unique Sylow $17$-subgroup of $\overline G$.
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 \overline R\normal\overline G.
 \]
@@ -132,10 +153,17 @@ so
 \[
 |K|=|P_5|\,|\overline R|=5\cdot17=85.
 \]
+
 :::
 
-<1>4. The Sylow $17$-subgroup of $K$ is unique and characteristic in $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The Sylow $17$-subgroup of $K$ is unique and characteristic in $K$.
+
+::: pf-proof
+
 Let $m_{17}$ be the number of Sylow $17$-subgroups of $K$.
 Since $|K|=5\cdot17$, Sylow's theorem gives
 \[
@@ -152,15 +180,22 @@ Every automorphism of $K$ sends a Sylow $17$-subgroup to a Sylow $17$-subgroup, 
 \[
 P_{17}\operatorname{char}K.
 \]
+
 :::
 
-<1>5. The Sylow $17$-subgroup $P_{17}$ is normal in $G$.
-::: {.proof}
-By <1>3,
+:::
+
+::: {.pf-step #s5}
+
+The Sylow $17$-subgroup $P_{17}$ is normal in $G$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 \[
 K\normal G,
 \]
-and by <1>4,
+and by step [](#s4){.pf-ref},
 \[
 P_{17}\operatorname{char}K.
 \]
@@ -170,12 +205,19 @@ Hence
 P_{17}\normal G.
 \]
 Since $|P_{17}|=17$, it is a Sylow $17$-subgroup of $G$.
+
 :::
 
-<1>6. There is a normal subgroup $L\normal G$ of order $35=5\cdot7$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+There is a normal subgroup $L\normal G$ of order $35=5\cdot7$.
+
+::: pf-proof
+
 Let $\overline Q$ be the unique Sylow $7$-subgroup of $\overline G$.
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 \overline Q\normal\overline G.
 \]
@@ -195,10 +237,17 @@ Therefore
 \[
 |L|=|P_5|\,|\overline Q|=5\cdot7=35.
 \]
+
 :::
 
-<1>7. The Sylow $7$-subgroup of $L$ is unique and characteristic in $L$.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+The Sylow $7$-subgroup of $L$ is unique and characteristic in $L$.
+
+::: pf-proof
+
 Let $m_7$ be the number of Sylow $7$-subgroups of $L$.
 Since $|L|=5\cdot7$, Sylow's theorem gives
 \[
@@ -215,15 +264,22 @@ Every automorphism of $L$ preserves the unique Sylow $7$-subgroup, so
 \[
 P_7\operatorname{char}L.
 \]
+
 :::
 
-<1>8. The Sylow $7$-subgroup $P_7$ is normal in $G$.
-::: {.proof}
-By <1>6,
+:::
+
+::: {.pf-step #s8}
+
+The Sylow $7$-subgroup $P_7$ is normal in $G$.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref},
 \[
 L\normal G,
 \]
-and by <1>7,
+and by step [](#s7){.pf-ref},
 \[
 P_7\operatorname{char}L.
 \]
@@ -232,10 +288,23 @@ Therefore
 P_7\normal G.
 \]
 Since $|P_7|=7$, it is a Sylow $7$-subgroup of $G$.
+
 :::
 
-<1>9. Every Sylow subgroup of $G$ is normal.
-::: {.proof}
-The Sylow $5$-subgroup is normal by <1>1, the Sylow $17$-subgroup is normal by <1>5, and the Sylow $7$-subgroup is normal by <1>8. Hence all Sylow subgroups of $G$ are normal.
 :::
+
+::: pf-step
+
+Every Sylow subgroup of $G$ is normal.
+
+::: pf-proof
+
+The Sylow $5$-subgroup is normal by step [](#s1){.pf-ref}, the Sylow $17$-subgroup is normal by step [](#s5){.pf-ref}, and the Sylow $7$-subgroup is normal by step [](#s8){.pf-ref}. Hence all Sylow subgroups of $G$ are normal.
+
+:::
+
+:::
+
+:::
+
 :::

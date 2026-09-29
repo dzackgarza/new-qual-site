@@ -44,9 +44,14 @@ $$
 be the matrix of the bilinear form in this basis, and for $x\in E$ let
 $[x]$ be its coordinate column vector.
 
-<1>1. $\dim E_1=\nullity(M^T)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\dim E_1=\nullity(M^T)$.
+
+::: pf-proof
+
 Write $x=\sum_i x_i e_i$. For each basis vector $e_j$,
 $$
 B(x,e_j)=\sum_i x_i B(e_i,e_j).
@@ -58,11 +63,17 @@ x\in E_1
 \iff B(x,e_j)=0\text{ for every }j
 \iff M^T[x]=0.
 $$
+
 :::
 
-<1>2. $\dim E_2=\nullity(M)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\dim E_2=\nullity(M)$.
+
+::: pf-proof
+
 For $y=\sum_j y_j e_j$, the column whose $i$th entry is $B(e_i,y)$ is
 $M[y]$. By linearity of $B$ in the first variable,
 $$
@@ -70,26 +81,38 @@ y\in E_2
 \iff B(e_i,y)=0\text{ for every }i
 \iff M[y]=0.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \boxed{\dim E_1=\dim E_2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A matrix and its transpose have the same rank, so rank-nullity gives
 $$
 \nullity(M)=n-\operatorname{rank}(M)
 =n-\operatorname{rank}(M^T)
 =\nullity(M^T).
 $$
-Steps <1>1 and <1>2 give the claim.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the claim.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required equality.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required equality.
+
+:::
+
+:::
+
 :::

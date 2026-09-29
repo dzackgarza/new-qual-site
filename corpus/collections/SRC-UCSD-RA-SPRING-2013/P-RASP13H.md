@@ -35,8 +35,15 @@ In doing so, you need to state the theorem clearly and verify the assumptions ca
 :::
 
 ::: {.solution}
-<1>1. The distributional derivative of $f$ is positive.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The distributional derivative of $f$ is positive.
+
+::: pf-proof
+
 A monotone real-valued function is bounded on compact intervals, hence belongs to $L^1_{\mathrm{loc}}(\mathbb R)$ and defines a distribution. Its distributional derivative is
 \[
 T(\varphi):=-\int_{\mathbb R}f(x)\varphi'(x)\,dx,
@@ -66,10 +73,17 @@ T(\varphi)
 \end{aligned}
 \]
 Thus $T$ is a positive distribution.
+
 :::
 
-<1>2. Positivity gives the local sup-norm bounds needed for Riesz--Markov.
-::: {.proof}
+:::
+
+::: pf-step
+
+Positivity gives the local sup-norm bounds needed for Riesz--Markov.
+
+::: pf-proof
+
 Fix a compact set $K\subset\mathbb R$. Choose
 \[
 \chi\in C_c^\infty(\mathbb R),
@@ -97,10 +111,17 @@ Smooth compactly supported functions are uniformly dense in $C_c(\mathbb R)$ aft
 \[
 L:C_c(\mathbb R)\to\mathbb R.
 \]
+
 :::
 
-<1>3. Apply the Riesz--Markov representation theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Riesz--Markov representation theorem.
+
+::: pf-proof
+
 The Riesz--Markov theorem states that every positive linear functional on $C_c(X)$, for a locally compact Hausdorff space $X$, is integration against a unique positive Radon measure.
 
 Applying it to the positive functional $L$ on $C_c(\mathbb R)$ gives a unique positive Radon measure $\nu$ such that
@@ -119,5 +140,11 @@ Thus the distributional derivative of $f$ is exactly the Borel (indeed Radon) me
 \[
 \boxed{Df=\nu.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

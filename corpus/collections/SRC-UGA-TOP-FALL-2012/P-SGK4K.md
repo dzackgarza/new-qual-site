@@ -36,10 +36,17 @@ Show that $Q$ is homeomorphic to a familiar topological space and identify that 
 :::
 
 ::: {.solution}
-<1>1. Regard the standard capital letter $A$ as a finite graph embedded in $S^2$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Regard the standard capital letter $A$ as a finite graph embedded in $S^2$.
 Its complement has exactly two components, and each component is an open $2$-cell.
 Thus $S^2$ has a CW decomposition whose $1$-skeleton is $A$ and whose remaining cells are two $2$-cells.
-::: {.proof}
+
+::: pf-proof
+
 The graph $A$ consists of one simple closed cycle—the triangular loop formed by the two sloping sides and the crossbar—together with two pendant edges extending below the crossbar.
 The simple closed cycle separates $S^2$ into two disks.
 One of these disks is the region inside the triangular loop.
@@ -47,11 +54,18 @@ The two pendant edges lie in the other disk and form disjoint embedded slits fro
 Hence the two components of $S^2\setminus A$ are open disks.
 
 Taking the vertices and edges of the graph as the $0$- and $1$-cells and these two complementary disks as the open $2$-cells gives the asserted CW decomposition.
+
 :::
 
-<1>2. After collapsing $A$ to one point, $Q=S^2/A$ has a CW structure with one $0$-cell, no $1$-cells, and two $2$-cells, each attached by the constant map.
-::: {.proof}
-The subspace $A$ is the $1$-skeleton in <1>1, hence is a subcomplex.
+:::
+
+::: {.pf-step #s2}
+
+After collapsing $A$ to one point, $Q=S^2/A$ has a CW structure with one $0$-cell, no $1$-cells, and two $2$-cells, each attached by the constant map.
+
+::: pf-proof
+
+The subspace $A$ is the $1$-skeleton in step [](#s1){.pf-ref}, hence is a subcomplex.
 For a CW pair $(X,A)$, the quotient $X/A$ inherits the cells of $X\setminus A$ together with one new $0$-cell representing the collapsed subcomplex.
 
 Here the only cells outside $A$ are the two $2$-cells.
@@ -60,18 +74,31 @@ Their attaching maps originally have image in $A$; after $A$ is collapsed, both 
 S^1\longrightarrow A\longrightarrow A/A
 \]
 are constant.
+
 :::
 
-<1>3. A CW complex with one $0$-cell and two $2$-cells attached constantly is homeomorphic to
+:::
+
+::: pf-step
+
+A CW complex with one $0$-cell and two $2$-cells attached constantly is homeomorphic to
 \[
 \boxed{S^2\vee S^2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Attaching a $2$-disk to a point by collapsing its entire boundary produces
 \[
 D^2/\partial D^2\cong S^2.
 \]
 Doing this for two disks with the same attaching point gives two copies of $S^2$ meeting exactly in that point, which is the wedge $S^2\vee S^2$.
-By <1>2 this is precisely the quotient topology on $Q$.
+By step [](#s2){.pf-ref} this is precisely the quotient topology on $Q$.
+
 :::
+
+:::
+
+:::
+
 :::

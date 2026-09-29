@@ -30,21 +30,34 @@ Let `\begin{align*} R=\mathbb Z[x]/(x^2+x+1). \end{align*}`{=tex}
 - Prove that $R$ is an integrally closed domain.
 :::
 
-
 ::: {.solution}
-<1>1. The ring
+
+::: pf
+
+::: {.pf-step #s1}
+
+The ring
 \[
 R=\mathbb Z[x]/(x^2+x+1)
 \]
 is a Noetherian integral domain.
-::: {.proof}
+
+::: pf-proof
+
 The ring $\mathbb Z$ is Noetherian, so by the Hilbert basis theorem $\mathbb Z[x]$ is Noetherian. Every quotient of a Noetherian ring is Noetherian, hence $R$ is Noetherian.
 
 Also $x^2+x+1$ is irreducible over $\mathbb Q$, since its discriminant is $-3$, not a square in $\mathbb Q$. Being primitive, it is irreducible in $\mathbb Z[x]$ by Gauss's lemma. Since $\mathbb Z[x]$ is a UFD, irreducible elements are prime, so $(x^2+x+1)$ is prime and the quotient $R$ is a domain.
+
 :::
 
-<1>2. The ring $R$ is not Artinian.
-::: {.proof}
+:::
+
+::: pf-step
+
+The ring $R$ is not Artinian.
+
+::: pf-proof
+
 The image of $2$ in $R$ is not a unit: indeed,
 \[
 R/(2)\cong \mathbb F_2[x]/(x^2+x+1)
@@ -57,10 +70,15 @@ Each inclusion is strict. If $(2^n)=(2^{n+1})$, then
 \[
 2^n=2^{n+1}r
 \]
-for some $r\in R$. Since $R$ is a domain by <1>1, cancellation gives $1=2r$, contradicting that $2$ is not a unit. Thus the descending chain condition fails, so $R$ is not Artinian.
+for some $r\in R$. Since $R$ is a domain by step [](#s1){.pf-ref}, cancellation gives $1=2r$, contradicting that $2$ is not a unit. Thus the descending chain condition fails, so $R$ is not Artinian.
+
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #s3}
+
+Let
 \[
 \omega=\frac{-1+\sqrt{-3}}2.
 \]
@@ -70,7 +88,9 @@ R\cong\mathbb Z[\omega],
 \qquad
 \operatorname{Frac}(R)=\mathbb Q(\sqrt{-3}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The element $\omega$ satisfies
 \[
 \omega^2+\omega+1=0.
@@ -83,10 +103,17 @@ with image $\mathbb Z[\omega]$. Its fraction field is
 \[
 \mathbb Q(\omega)=\mathbb Q(\sqrt{-3}).
 \]
+
 :::
 
-<1>4. Every element of $\mathbb Q(\sqrt{-3})$ that is integral over $\mathbb Z$ lies in $\mathbb Z[\omega]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every element of $\mathbb Q(\sqrt{-3})$ that is integral over $\mathbb Z$ lies in $\mathbb Z[\omega]$.
+
+::: pf-proof
+
 Let $\alpha\in\mathbb Q(\sqrt{-3})$ be integral over $\mathbb Z$. Its conjugate $\bar\alpha$ is also integral, so its trace and norm
 \[
 T=\alpha+\bar\alpha,
@@ -115,14 +142,27 @@ Modulo $4$, this forces $T$ and $q$ to have the same parity: if exactly one were
 =\frac{T+q\sqrt{-3}}2
 =\frac{T+q}{2}+q\omega\in\mathbb Z[\omega].
 \]
+
 :::
 
-<1>5. The domain $R$ is integrally closed.
-::: {.proof}
-Let $\alpha\in\operatorname{Frac}(R)$ be integral over $R$. By <1>3,
+:::
+
+::: pf-step
+
+The domain $R$ is integrally closed.
+
+::: pf-proof
+
+Let $\alpha\in\operatorname{Frac}(R)$ be integral over $R$. By step [](#s3){.pf-ref},
 \[
 \operatorname{Frac}(R)=\mathbb Q(\sqrt{-3}).
 \]
-The ring $R=\mathbb Z[\omega]$ is integral over $\mathbb Z$ because $\omega$ satisfies the monic polynomial $x^2+x+1$. Since $\alpha$ is integral over $R$, transitivity of integrality implies that $\alpha$ is integral over $\mathbb Z$. By <1>4, $\alpha\in\mathbb Z[\omega]=R$. Therefore $R$ is integrally closed.
+The ring $R=\mathbb Z[\omega]$ is integral over $\mathbb Z$ because $\omega$ satisfies the monic polynomial $x^2+x+1$. Since $\alpha$ is integral over $R$, transitivity of integrality implies that $\alpha$ is integral over $\mathbb Z$. By step [](#s4){.pf-ref}, $\alpha\in\mathbb Z[\omega]=R$. Therefore $R$ is integrally closed.
+
 :::
+
+:::
+
+:::
+
 :::

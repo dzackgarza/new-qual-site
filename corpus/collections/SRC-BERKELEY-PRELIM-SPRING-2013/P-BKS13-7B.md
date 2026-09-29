@@ -40,9 +40,15 @@ is an orthogonal matrix with no eigenvalue equal to $-1$.
 :::
 
 ::: {.solution}
-<1>1. Under the hypotheses of part 1, the matrix $I+A$ is nonsingular.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Under the hypotheses of part 1, the matrix $I+A$ is nonsingular.
+
+::: pf-proof
+
 If $I+A$ were singular, there would be a nonzero vector $v$ with
 $$
 (I+A)v=0.
@@ -52,9 +58,14 @@ $$
 Av=-v,
 $$
 so $-1$ would be an eigenvalue of $A$, contrary to the hypothesis.
+
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #s2}
+
+For
 $$
 S=(I-A)(I+A)^{-1},
 $$
@@ -63,7 +74,8 @@ $$
 S^T=-S.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $A$ is orthogonal,
 $$
 A^T=A^{-1}.
@@ -116,11 +128,17 @@ S^T
 -S.
 $$
 This proves part 1.
+
 :::
 
-<1>3. If $S$ is skew-symmetric, then $I+S$ is nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $S$ is skew-symmetric, then $I+S$ is nonsingular.
+
+::: pf-proof
+
 Suppose
 $$
 (I+S)v=0.
@@ -153,9 +171,14 @@ v^Tv=0,
 $$
 which over $\RR$ implies $v=0$. Therefore the kernel of $I+S$ is
 trivial.
+
 :::
 
-<1>4. For
+:::
+
+::: {.pf-step #s4}
+
+For
 $$
 A=(I-S)(I+S)^{-1},
 $$
@@ -164,7 +187,8 @@ $$
 A^TA=I.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using $S^T=-S$,
 $$
 \begin{aligned}
@@ -186,11 +210,17 @@ I,
 \end{aligned}
 $$
 because $I+S$ and $I-S$ commute. Thus $A$ is orthogonal.
+
 :::
 
-<1>5. The matrix $A$ from step <1>4 has no eigenvalue equal to $-1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The matrix $A$ from step [](#s4){.pf-ref} has no eigenvalue equal to $-1$.
+
+::: pf-proof
+
 Compute
 $$
 \begin{aligned}
@@ -203,14 +233,20 @@ I+(I-S)(I+S)^{-1}\\
 2(I+S)^{-1}.
 \end{aligned}
 $$
-Step <1>3 shows that $I+S$ is invertible, so $I+A$ is invertible.
+Step [](#s3){.pf-ref} shows that $I+S$ is invertible, so $I+A$ is invertible.
 Therefore $-1$ is not an eigenvalue of $A$. This completes part 2.
+
 :::
 
-<1>6. Starting from an orthogonal $A$ as in part 1, applying the second
+:::
+
+::: {.pf-step #s6}
+
+Starting from an orthogonal $A$ as in part 1, applying the second
 formula to its Cayley transform recovers $A$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 S=(I-A)(I+A)^{-1}.
@@ -241,12 +277,18 @@ $$
 =
 A.
 $$
+
 :::
 
-<1>7. Starting from a skew-symmetric $S$, applying the first formula to
+:::
+
+::: {.pf-step #s7}
+
+Starting from a skew-symmetric $S$, applying the first formula to
 the matrix $A$ from part 2 recovers $S$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 A=(I-S)(I+S)^{-1}.
@@ -269,21 +311,33 @@ $$
 =
 S.
 $$
+
 :::
 
-<1>8. The two Cayley-transform formulas define inverse bijections between
+:::
+
+::: {.pf-step #s8}
+
+The two Cayley-transform formulas define inverse bijections between
 the matrices in parts 1 and 2.
 
-::: {.proof}
-Steps <1>6 and <1>7 show that each transformation undoes the other.
+::: pf-proof
+
+Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} show that each transformation undoes the other.
 Hence the correspondence is one-to-one, and indeed bijective between the
 two stated classes of matrices.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part 1, steps <1>3--<1>5 prove part 2, and step
-<1>8 proves part 3.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part 1, steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part 2, and step
+[](#s8){.pf-ref} proves part 3.
+
+:::
+
+:::
+
 :::

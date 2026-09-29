@@ -37,8 +37,14 @@ $$
 \boxed{\widehat{\mathbb C},\qquad \mathbb C,\qquad \Delta.}
 $$
 
-<1>1. Every simply connected region in $\widehat{\mathbb C}$ is equivalent to one of these three.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every simply connected region in $\widehat{\mathbb C}$ is equivalent to one of these three.
+
+::: pf-proof
+
 Let $U\subset\widehat{\mathbb C}$ be a nonempty simply connected region.
 
 If $U=\widehat{\mathbb C}$, it is already the first model.
@@ -59,10 +65,17 @@ theorem, every nonempty proper simply connected plane domain is biholomorphic
 to the unit disk $\Delta$. Hence $U$ is biholomorphic to $\Delta$.
 
 These three cases exhaust the possible complements.
+
 :::
 
-<1>2. No two models in the list are biholomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+
+No two models in the list are biholomorphic.
+
+::: pf-proof
+
 The Riemann sphere is compact. A biholomorphism is in particular a
 homeomorphism, so it preserves compactness. Neither $\mathbb C$ nor $\Delta$
 is compact; therefore the sphere is biholomorphic to neither of them.
@@ -74,5 +87,11 @@ bijectivity. Thus $\mathbb C$ and $\Delta$ are not biholomorphic.
 
 Consequently the three displayed regions form a complete and irredundant
 classification.
+
 :::
+
+:::
+
+:::
+
 :::

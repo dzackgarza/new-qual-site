@@ -46,9 +46,14 @@ Fix the identification $\OO_{X'}/\mathcal I\cong\OO_X$ and an $\OO_X$-linear ide
 Since $\mathcal I$ is nilpotent, every prime ideal contains it, so the closed immersion $X\hookrightarrow X'$ is a homeomorphism on underlying spaces.
 We therefore regard all the sheaves as sheaves on the same topological space $X$.
 
-<1>1. The ringed space with structure sheaf $\OO_X\oplus\mcf$ and the given multiplication is a scheme and an infinitesimal extension of $X$ by $\mcf$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The ringed space with structure sheaf $\OO_X\oplus\mcf$ and the given multiplication is a scheme and an infinitesimal extension of $X$ by $\mcf$.
+
+::: pf-proof
+
 On an affine open $U=\Spec A\subseteq X$, write $\mcf|_U=\widetilde M$ for a finite $A$-module $M$.
 Define the ring $A\oplus M$ with unit $(1,0)$ and multiplication
 $$
@@ -65,11 +70,17 @@ with the same multiplication; the inverse of $(a,0)$ is $(a^{-1},0)$ in the righ
 Thus the structure sheaf on this spectrum is exactly $\OO_U\oplus\widetilde M$.
 These descriptions agree on open overlaps, since their multiplication is defined by the global $\OO_X$-module structure on $\mcf$.
 They prove that the stated ringed space is a scheme, with the required ideal, quotient and module identification.
+
 :::
 
-<1>2. If $X=\Spec A$ is affine and nonsingular, the quotient map on global sections admits a $k$-algebra section.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $X=\Spec A$ is affine and nonsingular, the quotient map on global sections admits a $k$-algebra section.
+
+::: pf-proof
+
 The extension gives an exact sequence of sheaves of abelian groups
 $$
 0\longrightarrow\mcf\longrightarrow\OO_{X'}\xrightarrow{\rho}\OO_X\longrightarrow0.
@@ -87,11 +98,17 @@ It gives a $k$-algebra map $s:A\to B'$ with $\rho s=\id_A$.
 The proof of that lifting result also covers a nonsingular affine scheme with several components: its conormal sequence is exact and its differential module is finite projective, which are the only smoothness properties used there.
 Thus the argument does not require $X$ to be irreducible.
 For $X=\varnothing$, the underlying space of $X'$ is empty and the conclusion is immediate.
+
 :::
 
-<1>3. The section $s$ extends to a splitting $\sigma:\OO_X\to\OO_{X'}$ of sheaves of $k$-algebras.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The section $s$ extends to a splitting $\sigma:\OO_X\to\OO_{X'}$ of sheaves of $k$-algebras.
+
+::: pf-proof
+
 For $a\in A$, the restriction of $s(a)$ to $D(a)$ is a unit in $\OO_{X'}$.
 Indeed, at each point its image in the quotient local ring $\OO_X$ is a unit.
 A unit lifts across a square-zero ideal: if a local lift of the inverse has product $1+e$ with $e^2=0$, multiplying it by $1-e$ gives an actual inverse.
@@ -105,16 +122,22 @@ $$
 The universal property of localization gives well-definedness and compatibility with restrictions to smaller distinguished opens.
 Since these opens form a basis and $\OO_X(D(a))=A_a$, the maps glue to a sheaf homomorphism $\sigma$.
 Its reduction is the identity on every distinguished open, so $\rho\sigma=\id_{\OO_X}$.
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 \Phi:\OO_X\oplus\mcf\longrightarrow\OO_{X'},\qquad
 (a,m)\longmapsto\sigma(a)+m
 $$
 is an isomorphism of sheaves of $k$-algebras inducing the specified identifications on the quotient and ideal.
 
-::: {.proof}
+::: pf-proof
+
 Use the fixed identification of $\mcf$ with $\mathcal I$ in the formula.
 Multiplication by $\sigma(a)$ on $\mathcal I$ is exactly multiplication by $a$ in its quotient-module structure, independently of the lift of $a$.
 Together with $\mathcal I^2=0$, this proves
@@ -128,14 +151,20 @@ $$
 $$
 The second component belongs to $\mathcal I$, and these formulas commute with restrictions and are mutual inverses.
 Thus $\Phi$ is an isomorphism of sheaves of rings.
-On the common topological space it is an isomorphism of locally ringed spaces, hence of schemes, with the trivial extension constructed in step <1>1.
+On the common topological space it is an isomorphism of locally ringed spaces, hence of schemes, with the trivial extension constructed in step [](#s1){.pf-ref}.
 It preserves the quotient $X$ and the identified ideal $\mcf$.
 The choice of $s$ need not be unique, so the resulting isomorphism is not asserted to be canonical.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 verifies the trivial extension, and steps <1>2--<1>4 show that every extension in the affine nonsingular case is isomorphic to it.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} verifies the trivial extension, and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} show that every extension in the affine nonsingular case is isomorphic to it.
+
+:::
+
+:::
+
 :::

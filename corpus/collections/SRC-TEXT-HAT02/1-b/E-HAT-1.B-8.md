@@ -31,8 +31,14 @@ Show that a finite graph product of finitely generated groups is finitely genera
 ::: {.solution}
 Let $\Gamma$ be a finite connected graph of groups and choose a maximal tree $T$ in its underlying graph.
 
-<1>1. If all vertex groups are finitely generated, then the graph product $\pi_1(K\Gamma)$ is finitely generated.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If all vertex groups are finitely generated, then the graph product $\pi_1(K\Gamma)$ is finitely generated.
+
+::: pf-proof
+
 For each vertex $v$, choose a finite generating set $S_v$ for the vertex group $G_v$.
 The standard graph-of-groups presentation has generators
 \[
@@ -41,17 +47,24 @@ The standard graph-of-groups presentation has generators
 together with one stable letter $t_e$ for each unoriented edge $e$ not in the maximal tree $T$.
 There are finitely many vertices and finitely many such edges because $\Gamma$ is finite.
 Thus this is a finite generating set for $\pi_1(K\Gamma)$.
+
 :::
 
-<1>2. Suppose now that every vertex group is finitely presented and every edge group is finitely generated.
+:::
+
+::: {.pf-step #s2}
+
+Suppose now that every vertex group is finitely presented and every edge group is finitely generated.
 Then the graph product is finitely presented.
-::: {.proof}
+
+::: pf-proof
+
 Choose for each vertex group a finite presentation
 \[
 G_v=\langle S_v\mid R_v\rangle
 \]
 and for each edge group $G_e$ a finite generating set $C_e$.
-Start with the finitely many vertex generators and stable letters from <1>1.
+Start with the finitely many vertex generators and stable letters from step [](#s1){.pf-ref}.
 Impose:
 
 1. the finitely many vertex relators $R_v$;
@@ -64,10 +77,23 @@ Impose:
 These relations suffice for every element of an edge group because they hold on a generating set and both endpoint maps are homomorphisms.
 Since the graph is finite, only finitely many relations occur.
 Thus the graph product is finitely presented.
+
 :::
 
-<1>3. In particular, a finite graph product of finitely presented groups is finitely presented.
-::: {.proof}
-A finitely presented edge group is finitely generated, so the hypotheses of <1>2 are satisfied when all groups in the finite graph of groups are finitely presented.
 :::
+
+::: pf-step
+
+In particular, a finite graph product of finitely presented groups is finitely presented.
+
+::: pf-proof
+
+A finitely presented edge group is finitely generated, so the hypotheses of step [](#s2){.pf-ref} are satisfied when all groups in the finite graph of groups are finitely presented.
+
+:::
+
+:::
+
+:::
+
 :::

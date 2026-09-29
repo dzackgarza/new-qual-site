@@ -32,8 +32,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Let $M$ be the closed span of the orthonormal system.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $M$ be the closed span of the orthonormal system.
+
+::: pf-proof
+
 Set
 \[
 M:=\overline{\operatorname{span}}\{u_n:n\ge1\}.
@@ -47,10 +54,17 @@ with convergence in $H$. Hence Parseval's identity inside the Hilbert space $M$ 
 \|P_Mf\|_H^2
 =\sum_{n=1}^\infty |\langle f,u_n\rangle|^2.
 \]
+
 :::
 
-<1>2. Use the assumed identity on the dense set.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use the assumed identity on the dense set.
+
+::: pf-proof
+
 For every $f\in S$, the hypothesis and Step 1 give
 \[
 \|f\|_H^2=\|P_Mf\|_H^2.
@@ -73,5 +87,11 @@ so $M=H$. Thus the closed linear span of $(u_n)$ is all of $H$, i.e.
 \[
 \boxed{\{u_n\}_{n=1}^\infty\text{ is an orthonormal basis of }H.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

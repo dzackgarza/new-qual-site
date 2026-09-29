@@ -33,9 +33,14 @@ Hint: show that $f(U)$ is constructible and stable under generization, using (II
 ::: {.solution}
 Fix an open subset $U\subseteq X$.
 
-<1>1. The subset $f(U)\subseteq Y$ is constructible.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The subset $f(U)\subseteq Y$ is constructible.
+
+::: pf-proof
+
 The open subscheme $U$ is noetherian because $X$ is noetherian, and the restricted morphism
 $$
 f|_U:U\longrightarrow Y
@@ -48,11 +53,17 @@ $$
 f(U)=(f|_U)(U)
 $$
 is constructible in $Y$.
+
 :::
 
-<1>2. A flat local homomorphism of local rings is faithfully flat.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A flat local homomorphism of local rings is faithfully flat.
+
+::: pf-proof
+
 Let
 $$
 (A,\mathfrak m)\longrightarrow(B,\mathfrak n)
@@ -82,20 +93,26 @@ IB\subseteq\mathfrak mB\subseteq\mathfrak n,
 $$
 so $B/IB\ne0$, contradicting $M\otimes_A B=0$.
 Thus tensoring with $B$ detects the zero module, and a flat module with this property is faithfully flat.
+
 :::
 
-<1>3. If $x\in X$, $y=f(x)$, and $y'$ is a generization of $y$, then there is a generization $x'$ of $x$ with
+:::
+
+::: {.pf-step #s3}
+
+If $x\in X$, $y=f(x)$, and $y'$ is a generization of $y$, then there is a generization $x'$ of $x$ with
 $$
 f(x')=y'.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The morphism on local rings
 $$
 \OO_{Y,y}\longrightarrow\OO_{X,x}
 $$
 is flat because $f$ is flat, and it is a local homomorphism.
-By step <1>2 it is faithfully flat.
+By step [](#s2){.pf-ref} it is faithfully flat.
 Hence the induced map on spectra
 $$
 \Spec\OO_{X,x}\longrightarrow\Spec\OO_{Y,y}
@@ -109,14 +126,20 @@ Any nonzero ring has a prime ideal, and a prime of this fibre corresponds to a p
 
 Points of $\Spec\OO_{Y,y}$ correspond exactly to generizations of $y$ in $Y$, while points of $\Spec\OO_{X,x}$ correspond to generizations of $x$ in $X$.
 The point $y'$ therefore has a preimage $x'$ in $\Spec\OO_{X,x}$, and this $x'$ is a generization of $x$ satisfying $f(x')=y'$.
+
 :::
 
-<1>4. The constructible subset $f(U)$ is stable under generization.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The constructible subset $f(U)$ is stable under generization.
+
+::: pf-proof
+
 Let $y\in f(U)$ and let $y'$ be a generization of $y$.
 Choose $x\in U$ with $f(x)=y$.
-By step <1>3 there is a generization $x'$ of $x$ with $f(x')=y'$.
+By step [](#s3){.pf-ref} there is a generization $x'$ of $x$ with $f(x')=y'$.
 
 Open subsets are stable under generization, so $x\in U$ implies $x'\in U$.
 Therefore
@@ -124,24 +147,36 @@ $$
 y'=f(x')\in f(U).
 $$
 Thus $f(U)$ is stable under generization.
+
 :::
 
-<1>5. The subset $f(U)$ is open in $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The subset $f(U)$ is open in $Y$.
+
+::: pf-proof
+
 Noetherian schemes are Zariski spaces in the sense used in Hartshorne II.3.
 Exercise II.3.18(c) says that a subset of a Zariski space is open if and only if it is constructible and stable under generization.
-Step <1>1 proves constructibility of $f(U)$, and step <1>4 proves generization stability.
+Step [](#s1){.pf-ref} proves constructibility of $f(U)$, and step [](#s4){.pf-ref} proves generization stability.
 Hence
 $$
 \boxed{f(U)\text{ is open in }Y}.
 $$
 Since $U\subseteq X$ was arbitrary, $f$ is an open map.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the required openness for every open subset of $X$.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the required openness for every open subset of $X$.
+
+:::
+
+:::
+
 :::

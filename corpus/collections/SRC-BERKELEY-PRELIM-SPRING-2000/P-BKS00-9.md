@@ -38,12 +38,17 @@ $$
 h(z)=\cos^3 z.
 $$
 
-<1>1. The second derivative of $h$ at the origin is
+::: pf
+
+::: {.pf-step #s1}
+
+The second derivative of $h$ at the origin is
 $$
 h''(0)=-3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The triple-angle identity gives
 $$
 \cos^3 z
@@ -64,14 +69,20 @@ h''(0)
 =
 -3.
 $$
+
 :::
 
-<1>2. The integral is
+:::
+
+::: {.pf-step #s2}
+
+The integral is
 $$
 \boxed{-3\pi i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $h$ is entire. Cauchy's differentiation formula on the
 counterclockwise unit circle gives
 $$
@@ -81,7 +92,7 @@ h''(0)
 \int_{\abs{z}=1}
 \frac{h(z)}{z^3}\,dz.
 $$
-Hence, using step <1>1,
+Hence, using step [](#s1){.pf-ref},
 $$
 \int_{\abs{z}=1}
 \frac{\cos^3 z}{z^3}\,dz
@@ -90,11 +101,17 @@ $$
 =
 -3\pi i.
 $$
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

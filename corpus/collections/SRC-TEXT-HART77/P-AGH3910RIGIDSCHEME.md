@@ -46,9 +46,14 @@ Then there exists a nonsingular curve $T'$, and a flat morphism $g: T' \to T$ wh
 ::: {.solution}
 Write $o=(0,0)\in\AA_k^2$.
 
-<1>1. The projective line $\PP_k^1$ is rigid.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The projective line $\PP_k^1$ is rigid.
+
+::: pf-proof
+
 For a smooth scheme, first-order deformations are classified by
 $$
 H^1(X,\mct_X)
@@ -66,11 +71,17 @@ $$
 [@Har10a, Theorem III.5.1], the set of first-order deformation classes has one
 element, namely the trivial deformation.
 Thus $\PP_k^1$ is rigid.
+
 :::
 
-<1>2. There is a proper flat family of conics over $\AA_k^2$ whose fibre over $o$ is $\PP_k^1$ but whose generic fibre has no rational point.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+There is a proper flat family of conics over $\AA_k^2$ whose fibre over $o$ is $\PP_k^1$ but whose generic fibre has no rational point.
+
+::: pf-proof
+
 Put
 $$
 S=\Spec k[a,b].
@@ -166,11 +177,17 @@ $w^2+w=a$ can have no finite pole, hence is a polynomial, and then a
 nonconstant $w^2+w$ has even degree whereas $a$ has degree one.
 This contradiction proves that the generic conic has no rational point also
 in characteristic two.
+
 :::
 
-<1>3. The family in step <1>2 is not trivial over any Zariski neighborhood of $o$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The family in step [](#s2){.pf-ref} is not trivial over any Zariski neighborhood of $o$.
+
+::: pf-proof
+
 The base $S=\AA_k^2$ is integral, so every nonempty open neighborhood
 $U\subseteq S$ of $o$ contains the generic point $\eta$.
 If
@@ -182,13 +199,19 @@ $$
 X_\eta\cong\PP^1_{k(a,b)}.
 $$
 In particular it would have a $k(a,b)$-rational point, contradicting step
-<1>2. Thus no such neighborhood $U$ exists.
+[](#s2){.pf-ref}. Thus no such neighborhood $U$ exists.
 This proves part (b).
+
 :::
 
-<1>4. In part (c), after replacing $T$ by an open neighborhood of $t$, the morphism $f$ is smooth and every geometric fibre is a projective line.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+In part (c), after replacing $T$ by an open neighborhood of $t$, the morphism $f$ is smooth and every geometric fibre is a projective line.
+
+::: pf-proof
+
 Because $f$ is flat and of finite presentation and the fibre $X_t\cong\PP_k^1$
 is smooth, $f$ is smooth at every point of $X_t$. The smooth locus is open in
 $X$. Its complement is closed, and because $f$ is projective its image in $T$
@@ -210,11 +233,17 @@ its formation commute with residue-field extension. Hence every geometric
 fibre has only constant global functions and is connected. The smooth proper
 fibres have genus zero, and over an algebraically closed residue field they are
 therefore isomorphic to $\PP^1$.
+
 :::
 
-<1>5. After a finite flat base change by a nonsingular curve, the family acquires a section.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+After a finite flat base change by a nonsingular curve, the family acquires a section.
+
+::: pf-proof
+
 Let $K=k(T)$ and let $X_\eta$ be the generic fibre. It is a nonempty projective
 curve over $K$, so choose a closed point $p\in X_\eta$ and put
 $$
@@ -247,11 +276,17 @@ glue, giving a global section
 $$
 \sigma:\overline T\longrightarrow\overline X.
 $$
+
 :::
 
-<1>6. On a suitable open neighborhood $T'$ of $\bar t$ in $\overline T$, the section identifies the pulled-back family with $\PP^1_{T'}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+On a suitable open neighborhood $T'$ of $\bar t$ in $\overline T$, the section identifies the pulled-back family with $\PP^1_{T'}$.
+
+::: pf-proof
+
 Let $\bar f:\overline X\to\overline T$ be the projection.
 The section $D=\sigma(\overline T)$ is an effective Cartier divisor because
 $\bar f$ is a smooth relative curve. Put
@@ -309,11 +344,17 @@ normal scheme is an isomorphism. Therefore
 $$
 X'\cong\PP(\mce|_{T'})\cong\PP^1_{T'}.
 $$
+
 :::
 
-<1>7. The resulting map to the original curve has all the required properties.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The resulting map to the original curve has all the required properties.
+
+::: pf-proof
+
 The curve $T'$ is an open subscheme of the nonsingular curve $\overline T$,
 so it is nonsingular. The composite
 $$
@@ -321,19 +362,25 @@ g:T'\hookrightarrow\overline T\xrightarrow{\nu}T
 $$
 is flat: the first map is an open immersion and $\nu$ is finite flat.
 Its image contains $t$ because $\bar t\in T'$ lies over $t$.
-Step <1>6 gives
+Step [](#s6){.pf-ref} gives
 $$
 X\times_TT'\cong\PP^1_{T'}
 $$
 over $T'$.
 This proves part (c).
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves (a), steps <1>2--<1>3 give the nontrivial global deformation
-required in (b), and steps <1>4--<1>7 construct the flat base extension and
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the nontrivial global deformation
+required in (b), and steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} construct the flat base extension and
 trivialization required in (c).
+
 :::
+
+:::
+
 :::

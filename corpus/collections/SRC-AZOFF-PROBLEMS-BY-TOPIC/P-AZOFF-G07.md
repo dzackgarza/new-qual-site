@@ -40,12 +40,17 @@ $[-R,-\varepsilon]$, a clockwise upper semicircle of radius
 $\varepsilon$ about $0$, $[\varepsilon,R]$, and the large upper
 semicircle of radius $R$.
 
-<1>1. The only pole inside the indented contour is $z=i$, and
+::: pf
+
+::: {.pf-step #s1}
+
+The only pole inside the indented contour is $z=i$, and
 $$
 \Res(F;i)=-\frac{e^{-1}}2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The poles of $F$ are $0$ and $\pm i$. The indentation excludes $0$, and
 only $i$ lies in the upper half-plane. Since the pole at $i$ is simple,
 $$
@@ -59,15 +64,21 @@ $$
 -\frac{e^{-1}}2.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The small indented semicircle contributes
+:::
+
+::: {.pf-step #s2}
+
+The small indented semicircle contributes
 $$
 -\pi i
 $$
 in the limit $\varepsilon\to0$.
 
-::: {.proof}
+::: pf-proof
+
 Near $0$,
 $$
 F(z)
@@ -91,12 +102,18 @@ $$
 -\pi i.
 $$
 The integral of the bounded remainder tends to zero with the arc length.
+
 :::
 
-<1>3. The integral over the large upper semicircle tends to zero as
+:::
+
+::: {.pf-step #s3}
+
+The integral over the large upper semicircle tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z$ in the upper half-plane,
 $$
 \abs{e^{iz}}\leq1.
@@ -120,9 +137,14 @@ $$
 \frac{\pi}{R^2-1}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. The symmetric indented real-axis integrals satisfy
+:::
+
+::: {.pf-step #s4}
+
+The symmetric indented real-axis integrals satisfy
 $$
 \lim_{\substack{R\to\infty\\ \varepsilon\to0^+}}
 \left(
@@ -134,24 +156,30 @@ $$
 \pi i(1-e^{-1}).
 $$
 
-::: {.proof}
-By the residue theorem and step <1>1, the full contour integral is
+::: pf-proof
+
+By the residue theorem and step [](#s1){.pf-ref}, the full contour integral is
 $$
 2\pi i\Res(F;i)
 =
 -\pi i e^{-1}.
 $$
 Thus the two real-axis segments equal this residue contribution minus the
-small and large arc integrals. By steps <1>2 and <1>3, their limit is
+small and large arc integrals. By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, their limit is
 $$
 -\pi i e^{-1}
 -(-\pi i)
 =
 \pi i(1-e^{-1}).
 $$
+
 :::
 
-<1>5. The whole-line sine integral is
+:::
+
+::: {.pf-step #s5}
+
+The whole-line sine integral is
 $$
 \int_{-\infty}^{\infty}
 \frac{\sin x}{x(x^2+1)}\,dx
@@ -159,7 +187,8 @@ $$
 \pi(1-e^{-1}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The imaginary part of $F(x)$ is
 $$
 \frac{\sin x}{x(x^2+1)}.
@@ -168,11 +197,16 @@ This function extends continuously across $x=0$, since
 $$
 \frac{\sin x}{x}\longrightarrow1.
 $$
-Taking imaginary parts in step <1>4 therefore gives the value
+Taking imaginary parts in step [](#s4){.pf-ref} therefore gives the value
 $\pi(1-e^{-1})$ for the ordinary improper whole-line integral.
+
 :::
 
-<1>6. The requested value is
+:::
+
+::: {.pf-step #s6}
+
+The requested value is
 $$
 \boxed{
 \int_0^{\infty}
@@ -182,14 +216,21 @@ $$
 }
 $$
 
-::: {.proof}
-The integrand in step <1>5 is even, so its whole-line integral is twice the
+::: pf-proof
+
+The integrand in step [](#s5){.pf-ref} is even, so its whole-line integral is twice the
 half-line integral.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

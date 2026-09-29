@@ -42,14 +42,20 @@ Draw a picture.
 :::
 
 ::: {.solution}
-<1>1. For every $c>0$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $c>0$,
 $$
 \int_0^c f(x)\,dx
 +\int_0^{f(c)} f^{-1}(y)\,dy
 =c f(c).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Consider the rectangle
 $$
 R=[0,c]\times[0,f(c)].
@@ -66,15 +72,21 @@ $$
 $$
 The graph itself has area zero, so the two areas add to
 $\operatorname{area}(R)=cf(c)$.
+
 :::
 
-<1>2. If $b\ge f(a)$, then
+:::
+
+::: {.pf-step #s2}
+
+If $b\ge f(a)$, then
 $$
 \int_0^a f(x)\,dx+\int_0^b f^{-1}(y)\,dy-ab\ge0.
 $$
 
-::: {.proof}
-By step <1>1 with $c=a$,
+::: pf-proof
+
+By step [](#s1){.pf-ref} with $c=a$,
 $$
 \int_0^a f(x)\,dx
 +\int_0^{f(a)}f^{-1}(y)\,dy
@@ -89,15 +101,21 @@ $$
 $$
 For $y\ge f(a)$, monotonicity of $f^{-1}$ gives
 $f^{-1}(y)\ge a$, so the last integral is nonnegative.
+
 :::
 
-<1>3. If $0<b\le f(a)$, then
+:::
+
+::: {.pf-step #s3}
+
+If $0<b\le f(a)$, then
 $$
 \int_0^a f(x)\,dx+\int_0^b f^{-1}(y)\,dy-ab\ge0.
 $$
 
-::: {.proof}
-Again using step <1>1 with $c=a$,
+::: pf-proof
+
+Again using step [](#s1){.pf-ref} with $c=a$,
 $$
 \begin{aligned}
 &\int_0^a f(x)\,dx+\int_0^b f^{-1}(y)\,dy-ab\\
@@ -106,23 +124,35 @@ $$
 $$
 For $y\le f(a)$, monotonicity of $f^{-1}$ gives
 $f^{-1}(y)\le a$, so this integral is nonnegative.
+
 :::
 
-<1>4. Therefore, for all $a,b>0$,
+:::
+
+::: {.pf-step #s4}
+
+Therefore, for all $a,b>0$,
 $$
 \int_0^a f(x)\,dx+\int_0^b f^{-1}(x)\,dx\ge ab.
 $$
 
-::: {.proof}
-At least one of the two cases in steps <1>2 and <1>3 applies.
+::: pf-proof
+
+At least one of the two cases in steps [](#s2){.pf-ref} and [](#s3){.pf-ref} applies.
+
 :::
 
-<1>5. If $p,q>0$ and $1/p+1/q=1$, then $p,q>1$ and
+:::
+
+::: {.pf-step #s5}
+
+If $p,q>0$ and $1/p+1/q=1$, then $p,q>1$ and
 $$
 q-1=\frac1{p-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $1/q>0$, one has $1/p<1$, hence $p>1$; similarly $q>1$.
 Solving
 $$
@@ -130,36 +160,48 @@ $$
 $$
 for $q$ gives $q=p/(p-1)$, and therefore
 $q-1=1/(p-1)$.
+
 :::
 
-<1>6. Taking $f(x)=x^{p-1}$ in step <1>4 gives
+:::
+
+::: {.pf-step #s6}
+
+Taking $f(x)=x^{p-1}$ in step [](#s4){.pf-ref} gives
 $$
 \boxed{
 \frac{a^p}{p}+\frac{b^q}{q}\ge ab
 }.
 $$
 
-::: {.proof}
-By step <1>5, the function $f(x)=x^{p-1}$ is continuous and strictly
+::: pf-proof
+
+By step [](#s5){.pf-ref}, the function $f(x)=x^{p-1}$ is continuous and strictly
 increasing on $[0,\infty)$, with
 $$
 f^{-1}(y)=y^{1/(p-1)}=y^{q-1}.
 $$
-Thus step <1>4 becomes
+Thus step [](#s4){.pf-ref} becomes
 $$
 \int_0^a x^{p-1}\,dx
 +\int_0^b y^{q-1}\,dy
 \ge ab.
 $$
 Evaluating the two integrals gives the displayed Young inequality.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the first requested inequality, and step <1>6 proves
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the first requested inequality, and step [](#s6){.pf-ref} proves
 Young's inequality.
+
 :::
+
+:::
+
 :::
 
 ::: {.remark}

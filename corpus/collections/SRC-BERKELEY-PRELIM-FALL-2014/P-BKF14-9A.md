@@ -35,7 +35,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 $$
 \Omega\coloneqq\{(g,x)\in G\times X:g(x)=x\}.
 $$
@@ -46,21 +51,28 @@ $$
 \sum_{g\in G}|\operatorname{Fix}(g)|.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a fixed $g\in G$, the pairs in $\Omega$ whose first coordinate is
 $g$ are exactly
 $$
 \{g\}\times\operatorname{Fix}(g).
 $$
 Summing their cardinalities over $g$ gives the displayed identity.
+
 :::
 
-<1>2. If $X/G$ denotes the set of orbits, then
+:::
+
+::: {.pf-step #s2}
+
+If $X/G$ denotes the set of orbits, then
 $$
 |\Omega|=|G|\,|X/G|.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Count instead by the second coordinate:
 $$
 |\Omega|
@@ -81,9 +93,14 @@ $$
 |G|.
 $$
 Summing once over all orbits proves the claim.
+
 :::
 
-<1>3. Therefore the number of orbits is
+:::
+
+::: {.pf-step #s3}
+
+Therefore the number of orbits is
 $$
 \boxed{
 |X/G|
@@ -93,27 +110,40 @@ $$
 }
 $$
 
-::: {.proof}
-Equate the two expressions for $|\Omega|$ from steps <1>1 and <1>2
+::: pf-proof
+
+Equate the two expressions for $|\Omega|$ from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}
 and divide by $|G|$. This proves part (a).
+
 :::
 
-<1>4. For the hexagon, the identity fixes
+:::
+
+::: {.pf-step #s4}
+
+For the hexagon, the identity fixes
 $$
 4^6
 $$
 colorings.
 
-::: {.proof}
+::: pf-proof
+
 The identity imposes no equality among the six vertex colors, so each
 vertex may be colored independently in $4$ ways.
+
 :::
 
-<1>5. The two rotations through $\pm60^\circ$ each fix $4$ colorings,
+:::
+
+::: {.pf-step #s5}
+
+The two rotations through $\pm60^\circ$ each fix $4$ colorings,
 the two rotations through $\pm120^\circ$ each fix $4^2$ colorings, and
 the rotation through $180^\circ$ fixes $4^3$ colorings.
 
-::: {.proof}
+::: pf-proof
+
 A coloring fixed by a permutation of the vertices must be constant on
 each cycle of that permutation.
 
@@ -121,13 +151,19 @@ A rotation through $\pm60^\circ$ is one $6$-cycle, so it has $4$
 fixed colorings. A rotation through $\pm120^\circ$ has two
 $3$-cycles, so it has $4^2$ fixed colorings. The rotation through
 $180^\circ$ has three $2$-cycles, so it has $4^3$ fixed colorings.
+
 :::
 
-<1>6. Each of the three reflections through midpoints of opposite
+:::
+
+::: {.pf-step #s6}
+
+Each of the three reflections through midpoints of opposite
 sides fixes $4^3$ colorings, while each of the three reflections
 through opposite vertices fixes $4^4$ colorings.
 
-::: {.proof}
+::: pf-proof
+
 A reflection through midpoints of opposite sides pairs the six
 vertices into three transposed pairs, giving three cycles and hence
 $4^3$ fixed colorings.
@@ -135,17 +171,23 @@ $4^3$ fixed colorings.
 A reflection through opposite vertices fixes those two vertices and
 interchanges the remaining four vertices in two pairs. It therefore
 has four cycles and fixes $4^4$ colorings.
+
 :::
 
-<1>7. The number of colorings up to symmetry is
+:::
+
+::: {.pf-step #s7}
+
+The number of colorings up to symmetry is
 $$
 \boxed{430}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The symmetry group of the regular hexagon is the dihedral group of
-order $12$. Applying step <1>3 and the fixed-point counts from steps
-<1>4--<1>6 gives
+order $12$. Applying step [](#s3){.pf-ref} and the fixed-point counts from steps
+[](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} gives
 $$
 \begin{aligned}
 \frac1{12}
@@ -167,11 +209,17 @@ $$
 430.
 \end{aligned}
 $$
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), and step <1>7 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

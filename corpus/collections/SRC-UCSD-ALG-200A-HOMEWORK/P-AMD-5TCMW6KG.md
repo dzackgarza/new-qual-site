@@ -65,12 +65,19 @@ is a maximal ideal of $R[[x]]$ and is its unique maximal ideal.
 :::
 
 ::: {.solution}
-<1>1. If a formal power series
+
+::: pf
+
+::: {.pf-step #s1}
+
+If a formal power series
 \[
 f=\sum_{n=0}^{\infty}a_nx^n
 \]
 is a unit in $R[[x]]$, then $a_0$ is a unit in $R$.
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 g=\sum_{n=0}^{\infty}b_nx^n
@@ -81,10 +88,17 @@ The constant coefficient of $fg=1$ is
 a_0b_0=1.
 \]
 Hence $a_0\in R^\times$.
+
 :::
 
-<1>2. If $a_0\in R^\times$, then $f$ has an inverse in $R[[x]]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $a_0\in R^\times$, then $f$ has an inverse in $R[[x]]$.
+
+::: pf-proof
+
 We construct coefficients $b_n\in R$ recursively so that
 \[
 g=\sum_{n=0}^{\infty}b_nx^n
@@ -113,15 +127,29 @@ Therefore
 fg=1.
 \]
 Since $R[[x]]$ is commutative, $g$ is the inverse of $f$.
+
 :::
 
-<1>3. A formal power series is a unit exactly when its constant coefficient is a unit.
-::: {.proof}
-Combine <1>1 and <1>2. This proves part (a).
 :::
 
-<1>4. If $R$ is a domain and $f,g\in R[[x]]$ are nonzero, then $fg\ne0$.
-::: {.proof}
+::: {.pf-step #s3}
+
+A formal power series is a unit exactly when its constant coefficient is a unit.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. This proves part (a).
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+If $R$ is a domain and $f,g\in R[[x]]$ are nonzero, then $fg\ne0$.
+
+::: pf-proof
+
 Write
 \[
 f=\sum_{i=0}^{\infty}a_ix^i,
@@ -154,17 +182,31 @@ Because $R$ is a domain and both factors are nonzero,
 a_mb_n\ne0.
 \]
 Hence $fg\ne0$.
+
 :::
 
-<1>5. If $R$ is a domain, then $R[[x]]$ is a domain.
-::: {.proof}
-By <1>4, the product of two nonzero elements of $R[[x]]$ is nonzero.
+:::
+
+::: {.pf-step #s5}
+
+If $R$ is a domain, then $R[[x]]$ is a domain.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, the product of two nonzero elements of $R[[x]]$ is nonzero.
 Thus $R[[x]]$ has no zero divisors.
 This proves part (b).
+
 :::
 
-<1>6. If $R$ is a field, the set $I$ of series with zero constant coefficient is a maximal ideal of $R[[x]]$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $R$ is a field, the set $I$ of series with zero constant coefficient is a maximal ideal of $R[[x]]$.
+
+::: pf-proof
+
 Define the constant-coefficient map
 \[
 \varepsilon:R[[x]]\longrightarrow R,
@@ -180,10 +222,17 @@ The first isomorphism theorem gives
 R[[x]]/I\cong R.
 \]
 Since $R$ is a field, $I$ is maximal.
+
 :::
 
-<1>7. Every element of $R[[x]]\setminus I$ is a unit.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+Every element of $R[[x]]\setminus I$ is a unit.
+
+::: pf-proof
+
 If
 \[
 f=\sum_{n=0}^{\infty}a_nx^n\notin I,
@@ -193,14 +242,21 @@ Since $R$ is a field,
 \[
 a_0\in R^\times.
 \]
-By <1>3, $f$ is a unit in $R[[x]]$.
+By step [](#s3){.pf-ref}, $f$ is a unit in $R[[x]]$.
+
 :::
 
-<1>8. The ideal $I$ is the unique maximal ideal of $R[[x]]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+The ideal $I$ is the unique maximal ideal of $R[[x]]$.
+
+::: pf-proof
+
 Let $M$ be any maximal ideal of $R[[x]]$.
 A proper ideal cannot contain a unit.
-By <1>7, every element outside $I$ is a unit.
+By step [](#s7){.pf-ref}, every element outside $I$ is a unit.
 Hence every element of $M$ lies in $I$, so
 \[
 M\le I.
@@ -210,10 +266,17 @@ Since $M$ is maximal and $I$ is a proper ideal, it follows that
 M=I.
 \]
 Thus $I$ is the unique maximal ideal, proving part (c).
+
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-Parts (a), (b), and (c) are <1>3, <1>5, and <1>8.
 :::
+
+::: pf-qed
+
+Parts (a), (b), and (c) are steps [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s8){.pf-ref}.
+
+:::
+
+:::
+
 :::

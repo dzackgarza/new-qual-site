@@ -62,7 +62,11 @@ X=R_1\cup_{M_g}R_2
 \]
 be the double.
 
-<1>1. The homology of $X$ is
+::: pf
+
+::: pf-step
+
+The homology of $X$ is
 \[
 H_i(X)\cong
 \begin{cases}
@@ -71,7 +75,9 @@ H_i(X)\cong
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Mayer--Vietoris gives in high degrees
 \[
 0\to H_3(X)\to H_2(M_g)=\mathbb Z
@@ -93,9 +99,14 @@ Since $i_*$ is onto, the image of $(i_*,-i_*)$ is the anti-diagonal copy of $\ma
 H_1(X)\cong\mathbb Z^g.
 \]
 Finally $X$ is connected, giving $H_0(X)=\mathbb Z$.
+
 :::
 
-<1>2. The relative homology of the handlebody pair is
+:::
+
+::: pf-step
+
+The relative homology of the handlebody pair is
 \[
 H_i(R,M_g)\cong
 \begin{cases}
@@ -104,7 +115,9 @@ H_i(R,M_g)\cong
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The long exact sequence of the pair begins
 \[
 0=H_3(R)\to H_3(R,M_g)\to H_2(M_g)=\mathbb Z\to H_2(R)=0,
@@ -124,5 +137,11 @@ H_1(R,M_g)=0,
 \qquad
 H_0(R,M_g)=0.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

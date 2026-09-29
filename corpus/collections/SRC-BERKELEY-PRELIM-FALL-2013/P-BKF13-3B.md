@@ -42,10 +42,16 @@ Show that $\int_0^1 |g(x)| \, dx < \infty$.
 :::
 
 ::: {.solution}
-<1>1. For every $x\in(0,1)$, the defining integral for $g(x)$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in(0,1)$, the defining integral for $g(x)$ is
 absolutely convergent.
 
-::: {.proof}
+::: pf-proof
+
 On the interval $[x,1]$ one has $1/t\le1/x$. Therefore
 $$
 \int_x^1\left|\frac{f(t)}t\right|\,dt
@@ -56,29 +62,41 @@ $$
 <\infty.
 $$
 Thus $g(x)$ is well-defined.
+
 :::
 
-<1>2. For every $x\in(0,1)$,
+:::
+
+::: {.pf-step #s2}
+
+For every $x\in(0,1)$,
 $$
 |g(x)|
 \le
 \int_x^1\frac{|f(t)|}{t}\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the triangle inequality for the absolutely convergent integral
-from step <1>1.
+from step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. One has the estimate
+:::
+
+::: {.pf-step #s3}
+
+One has the estimate
 $$
 \int_0^1 |g(x)|\,dx
 \le
 \int_0^1 |f(t)|\,dt.
 $$
 
-::: {.proof}
-By step <1>2 and Tonelli's theorem for the nonnegative integrand,
+::: pf-proof
+
+By step [](#s2){.pf-ref} and Tonelli's theorem for the nonnegative integrand,
 $$
 \begin{aligned}
 \int_0^1|g(x)|\,dx
@@ -94,23 +112,35 @@ $$
 \end{aligned}
 $$
 The right-hand side is finite by hypothesis.
+
 :::
 
-<1>4. Consequently,
+:::
+
+::: {.pf-step #s4}
+
+Consequently,
 $$
 \boxed{
 \int_0^1|g(x)|\,dx<\infty.
 }
 $$
 
-::: {.proof}
-This follows immediately from step <1>3 and the assumed integrability
+::: pf-proof
+
+This follows immediately from step [](#s3){.pf-ref} and the assumed integrability
 of $f$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

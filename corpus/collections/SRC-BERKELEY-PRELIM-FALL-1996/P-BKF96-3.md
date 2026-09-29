@@ -44,7 +44,11 @@ z^{1/2}
 $$
 Thus the branch cut is the positive real axis.
 
-<1>1. On the upper bank of the positive real axis,
+::: pf
+
+::: {.pf-step #s1}
+
+On the upper bank of the positive real axis,
 $$
 F(x)=\frac{\sqrt{x}}{1+x^2},
 $$
@@ -53,7 +57,8 @@ $$
 F(x)=-\frac{\sqrt{x}}{1+x^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the upper bank, $\arg x=0$, so
 $$
 x^{1/2}=\sqrt x.
@@ -66,9 +71,14 @@ x^{1/2}
 =
 -\sqrt x.
 $$
+
 :::
 
-<1>2. On a keyhole contour with outer radius $R$ and inner radius
+:::
+
+::: {.pf-step #s2}
+
+On a keyhole contour with outer radius $R$ and inner radius
 $\varepsilon$, the two circular-arc integrals tend to zero as
 $$
 R\to\infty
@@ -76,7 +86,8 @@ R\to\infty
 \varepsilon\to0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $\abs z=R$ with $R>2$,
 $$
 \abs{F(z)}
@@ -102,9 +113,14 @@ $$
 O(\varepsilon^{3/2})
 \longrightarrow0.
 $$
+
 :::
 
-<1>3. The poles inside the keyhole contour are $i$ and $-i$, with
+:::
+
+::: pf-step
+
+The poles inside the keyhole contour are $i$ and $-i$, with
 $$
 \Res_{z=i}F
 =
@@ -117,7 +133,8 @@ $$
 -\frac{e^{3i\pi/4}}{2i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Both poles are simple. At $i$, the chosen branch has
 $$
 i^{1/2}=e^{i\pi/4},
@@ -140,16 +157,22 @@ $$
 =
 \frac{e^{3i\pi/4}}{-2i}.
 $$
+
 :::
 
-<1>4. The sum of the residues is
+:::
+
+::: {.pf-step #s4}
+
+The sum of the residues is
 $$
 \Res_{z=i}F+\Res_{z=-i}F
 =
 -\frac{i}{\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 e^{i\pi/4}
@@ -174,9 +197,14 @@ e^{i\pi/4}-e^{3i\pi/4}
 -\frac{i}{\sqrt2}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 I\coloneqq
 \int_0^\infty\frac{\sqrt{x}}{1+x^2}\,dx,
@@ -186,17 +214,18 @@ $$
 2I=\sqrt2\,\pi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The upper bank is traversed from $\varepsilon$ to $R$ and contributes
 $$
 \int_\varepsilon^R
 \frac{\sqrt{x}}{1+x^2}\,dx.
 $$
-By step <1>1, the lower-bank integrand has the opposite sign, but that bank
+By step [](#s1){.pf-ref}, the lower-bank integrand has the opposite sign, but that bank
 is traversed from $R$ back to $\varepsilon$. It therefore contributes the
-same quantity. By step <1>2, the circular arcs vanish in the limit.
+same quantity. By step [](#s2){.pf-ref}, the circular arcs vanish in the limit.
 
-The residue theorem and step <1>4 consequently give
+The residue theorem and step [](#s4){.pf-ref} consequently give
 $$
 2I
 =
@@ -207,9 +236,14 @@ $$
 =
 \sqrt2\,\pi.
 $$
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{
 \int_0^\infty\frac{\sqrt{x}}{1+x^2}\,dx
@@ -218,13 +252,20 @@ $$
 }.
 $$
 
-::: {.proof}
-Divide the identity in step <1>5 by $2$.
+::: pf-proof
+
+Divide the identity in step [](#s5){.pf-ref} by $2$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

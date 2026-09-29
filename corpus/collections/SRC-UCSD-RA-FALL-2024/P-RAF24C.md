@@ -31,8 +31,15 @@ Prove that if $X$ is first countable and every Cauchy sequence in $X$ converges,
 :::
 
 ::: {.solution}
-<1>1. Choose a nested local base at the origin.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Choose a nested local base at the origin.
+
+::: pf-proof
+
 Because $X$ is first countable, there is a countable local base at $0$. Using continuity of addition and negation, refine it to a decreasing sequence of symmetric neighborhoods
 \[
 V_1\supset V_2\supset\cdots
@@ -43,10 +50,17 @@ V_{n+1}+V_{n+1}\subset V_n
 \qquad(n\ge1).
 \]
 This is still a local base at $0$.
+
 :::
 
-<1>2. Extract a Cauchy sequence from the Cauchy net.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extract a Cauchy sequence from the Cauchy net.
+
+::: pf-proof
+
 Let $(x_\alpha)_{\alpha\in A}$ be a Cauchy net. For each $n$, there exists $\gamma_n\in A$ such that
 \[
 \alpha,\beta\succeq\gamma_n
@@ -72,10 +86,17 @@ By hypothesis, every Cauchy sequence converges; hence there exists $x\in X$ such
 \[
 x_{\alpha_n}\to x.
 \]
+
 :::
 
-<1>3. Show that the original net converges to the same limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the original net converges to the same limit.
+
+::: pf-proof
+
 Let $U$ be any neighborhood of $0$. Choose $N$ so large that
 \[
 V_N+V_N\subset U.
@@ -103,5 +124,11 @@ x_\alpha-x
 Thus $x_\alpha\to x$.
 
 Hence every Cauchy net in $X$ converges.
+
 :::
+
+:::
+
+:::
+
 :::

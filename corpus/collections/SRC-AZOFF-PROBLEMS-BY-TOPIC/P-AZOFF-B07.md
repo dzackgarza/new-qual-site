@@ -51,7 +51,11 @@ $$
 c=F(a,b).
 $$
 
-<1>1. If the partial derivative
+::: pf
+
+::: {.pf-step #s1}
+
+If the partial derivative
 $$
 D_yF(a,b):\RR^m\longrightarrow\RR^m
 $$
@@ -82,7 +86,11 @@ D_xF(x,\phi(x))
 $$
 after the neighborhoods are chosen sufficiently small.
 
-<2>1. Define
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+Define
 $$
 H:U\longrightarrow\RR^n\times\RR^m,
 \qquad
@@ -99,13 +107,19 @@ D_xF(a,b)&D_yF(a,b)
 $$
 is invertible.
 
-::: {.proof}
+::: pf-proof
+
 The displayed derivative follows directly from the two components of $H$.
 It is block lower triangular. Its diagonal blocks are $I_n$ and
 $D_yF(a,b)$, both invertible, so $DH(a,b)$ is invertible.
+
 :::
 
-<2>2. The inverse function theorem gives neighborhoods
+:::
+
+::: {.pf-step #s1-2}
+
+The inverse function theorem gives neighborhoods
 $$
 (a,b)\in W\subseteq U,
 \qquad
@@ -117,19 +131,26 @@ H|_W:W\longrightarrow Z
 $$
 is a $C^r$ diffeomorphism.
 
-::: {.proof}
-Step <2>1 is exactly the invertibility hypothesis of the inverse function
+::: pf-proof
+
+Step [](#s1-1){.pf-ref} is exactly the invertibility hypothesis of the inverse function
 theorem at $(a,b)$.
+
 :::
 
-<2>3. After shrinking $Z$ to a product neighborhood if necessary, the local
+:::
+
+::: {.pf-step #s1-3}
+
+After shrinking $Z$ to a product neighborhood if necessary, the local
 inverse has the form
 $$
 H^{-1}(x,z)=(x,G(x,z))
 $$
 for a $C^r$ map $G$.
 
-::: {.proof}
+::: pf-proof
+
 Because $Z$ is open and contains $(a,c)$, it contains a product
 $$
 A_0\times C
@@ -143,9 +164,14 @@ $$
 then the first component of the definition of $H$ gives $u=x$. Therefore
 the first component of $H^{-1}(x,z)$ is always $x$, so the inverse has the
 displayed form. Since $H^{-1}$ is $C^r$, so is $G$.
+
 :::
 
-<2>4. Define
+:::
+
+::: {.pf-step #s1-4}
+
+Define
 $$
 \phi(x)=G(x,c).
 $$
@@ -161,7 +187,8 @@ F(x,y)=c
 y=\phi(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 H^{-1}(a,c)=(a,b),
@@ -199,9 +226,14 @@ $$
 H(x,\phi(x))=(x,c),
 $$
 we get $y=\phi(x)$. This proves the local graph description and uniqueness.
+
 :::
 
-<2>5. The derivative of the implicit function is
+:::
+
+::: {.pf-step #s1-5}
+
+The derivative of the implicit function is
 $$
 D\phi(x)
 =
@@ -209,7 +241,8 @@ D\phi(x)
 D_xF(x,\phi(x)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 By continuity of $D_yF$ and invertibility at $(a,b)$, the neighborhoods may
 be shrunk so that
 $$
@@ -228,18 +261,28 @@ D_yF(x,\phi(x))D\phi(x)
 0.
 $$
 Multiplying by the inverse of $D_yF(x,\phi(x))$ gives the formula.
+
 :::
 
-<2>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <2>1--<2>5 derive every assertion of step <1>1 from the inverse
+::: pf-qed
+
+Steps [](#s1-1){.pf-ref}, [](#s1-2){.pf-ref}, [](#s1-3){.pf-ref}, [](#s1-4){.pf-ref} and [](#s1-5){.pf-ref} derive every assertion of step [](#s1){.pf-ref} from the inverse
 function theorem.
+
 :::
 
-<1>2. Q.E.D.
-
-::: {.proof}
-Step <1>1 states the theorem for all finite $n,m$ and every order $1\leq r\leq\infty$, and its substeps derive it from the inverse function theorem.
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} states the theorem for all finite $n,m$ and every order $1\leq r\leq\infty$, and its substeps derive it from the inverse function theorem.
+
+:::
+
+:::
+
 :::

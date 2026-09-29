@@ -44,9 +44,14 @@ $$
 uv=1.
 $$
 
-<1>1. If $wu=0$, then $w=0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $wu=0$, then $w=0$.
+
+::: pf-proof
+
 Using $uv=1$,
 $$
 w=w(uv)=(wu)v=0.
@@ -55,11 +60,17 @@ Thus $u$ has no nonzero left annihilator. In particular, under either
 standard convention for zero divisors in a noncommutative ring,
 condition 2 here is equivalent to the existence of some nonzero $w$
 with $uw=0$.
+
 :::
 
-<1>2. Condition 1 implies condition 2.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Condition 1 implies condition 2.
+
+::: pf-proof
+
 Suppose $v'$ is a second right inverse, with $v'\ne v$. Then
 $$
 u(v-v')
@@ -68,20 +79,32 @@ u(v-v')
 =0,
 $$
 while $v-v'\ne0$. Hence $u$ is a zero divisor.
+
 :::
 
-<1>3. Condition 2 implies condition 3.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Condition 2 implies condition 3.
+
+::: pf-proof
+
 If $u$ were a unit and $uw=0$, then multiplying on the left by
-$u^{-1}$ would give $w=0$. Together with step <1>1, this shows that a
+$u^{-1}$ would give $w=0$. Together with step [](#s1){.pf-ref}, this shows that a
 unit cannot be a zero divisor. Therefore condition 2 forces $u$ not to
 be a unit.
+
 :::
 
-<1>4. Condition 3 implies condition 1.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Condition 3 implies condition 1.
+
+::: pf-proof
+
 Assume $u$ is not a unit. Since $uv=1$, one must have
 $$
 vu\ne1;
@@ -108,20 +131,32 @@ uv'
 =1.
 $$
 Thus $u$ has more than one right inverse.
+
 :::
 
-<1>5. The three conditions are equivalent.
+:::
 
-::: {.proof}
-Steps <1>2, <1>3, and <1>4 give the cycle
+::: {.pf-step #s5}
+
+The three conditions are equivalent.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give the cycle
 $$
 (1)\Longrightarrow(2)\Longrightarrow(3)\Longrightarrow(1).
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::

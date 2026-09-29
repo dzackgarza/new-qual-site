@@ -65,13 +65,18 @@ q=\frac{e^c}{2}.
 $$
 Then $0<q<1$.
 
-<1>1. If $\abs{\operatorname{Im}z}\leq c$, then for every integer
+::: pf
+
+::: {.pf-step #s1}
+
+If $\abs{\operatorname{Im}z}\leq c$, then for every integer
 $n\geq1$,
 $$
 \abs{\sin(nz)}\leq e^{nc}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write $z=x+iy$. Using
 $$
 \sin(nz)
@@ -98,15 +103,21 @@ e^{n\abs{y}}\\
 e^{nc}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The series converges uniformly on
+:::
+
+::: {.pf-step #s2}
+
+The series converges uniformly on
 $$
 \{z:\abs{\operatorname{Im}z}\leq c\}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \abs{\frac{\sin(nz)}{2^n}}
 \leq
@@ -120,14 +131,20 @@ $$
 $$
 converges. The Weierstrass M-test therefore gives uniform convergence on the
 closed strip.
+
 :::
 
-<1>3. The series converges locally uniformly on
+:::
+
+::: {.pf-step #s3}
+
+The series converges locally uniformly on
 $$
 S=\{z:\abs{\operatorname{Im}z}<\ln2\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $K\subseteq S$ be compact. The continuous function
 $z\mapsto\abs{\operatorname{Im}z}$ attains a maximum $c_K$ on $K$.
 Because $K\subseteq S$,
@@ -146,16 +163,22 @@ and
 $$
 K\subseteq\{z:\abs{\operatorname{Im}z}\leq c\},
 $$
-so step <1>2 gives uniform convergence on the larger closed strip, hence on
+so step [](#s2){.pf-ref} gives uniform convergence on the larger closed strip, hence on
 $K$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves the corrected uniform-convergence statement for every
-closed substrip, and step <1>3 gives the stated local uniform convergence.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the corrected uniform-convergence statement for every
+closed substrip, and step [](#s3){.pf-ref} gives the stated local uniform convergence.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

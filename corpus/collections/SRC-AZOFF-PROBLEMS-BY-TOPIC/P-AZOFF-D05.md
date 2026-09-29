@@ -38,18 +38,28 @@ $$
 $$
 with counterclockwise orientation.
 
-<1>1. For every polynomial $p$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every polynomial $p$,
 $$
 \int_\Gamma p(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every polynomial has a polynomial antiderivative on all of $\CC$. The
 integral of a derivative over a closed curve is zero, so the displayed
 integral vanishes.
+
 :::
 
-<1>2. If a sequence of polynomials $p_n$ converged uniformly to $1/z$ on
+:::
+
+::: {.pf-step #s2}
+
+If a sequence of polynomials $p_n$ converged uniformly to $1/z$ on
 $\Gamma$, then
 $$
 \int_\Gamma p_n(z)\,dz
@@ -57,7 +67,8 @@ $$
 \int_\Gamma \frac{dz}{z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Uniform convergence gives
 $$
 \sup_{z\in\Gamma}
@@ -83,14 +94,20 @@ $$
 \end{aligned}
 $$
 This is exactly convergence of the contour integrals.
+
 :::
 
-<1>3. The contour integral of $1/z$ around $\Gamma$ is
+:::
+
+::: {.pf-step #s3}
+
+The contour integral of $1/z$ around $\Gamma$ is
 $$
 \int_\Gamma\frac{dz}{z}=2\pi i.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Parametrize
 $$
 z=e^{it},
@@ -109,26 +126,38 @@ $$
 =
 2\pi i.
 $$
+
 :::
 
-<1>4. No sequence of polynomials can converge uniformly to $1/z$ on the
+:::
+
+::: {.pf-step #s4}
+
+No sequence of polynomials can converge uniformly to $1/z$ on the
 unit circle.
 
-::: {.proof}
-If such a sequence existed, step <1>1 would give
+::: pf-proof
+
+If such a sequence existed, step [](#s1){.pf-ref} would give
 $$
 \int_\Gamma p_n(z)\,dz=0
 $$
-for every $n$. By step <1>2, these zero integrals would converge to
+for every $n$. By step [](#s2){.pf-ref}, these zero integrals would converge to
 $$
 \int_\Gamma\frac{dz}{z}.
 $$
-Step <1>3 says that limit is $2\pi i\neq0$, a contradiction.
+Step [](#s3){.pf-ref} says that limit is $2\pi i\neq0$, a contradiction.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required nonexistence statement.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required nonexistence statement.
+
+:::
+
+:::
+
 :::

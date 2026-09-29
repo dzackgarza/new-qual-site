@@ -43,9 +43,14 @@ $$
 \mco_P\cong A_{\mathfrak m}.
 $$
 
-<1>1. Closed subvarieties of $X$ containing $P$ correspond bijectively to closed subvarieties of $U$ containing $P$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Closed subvarieties of $X$ containing $P$ correspond bijectively to closed subvarieties of $U$ containing $P$.
+
+::: pf-proof
+
 If $Z\subseteq X$ is a closed subvariety containing $P$, then $Z\cap U$ is a nonempty open subset of the irreducible space $Z$, hence is irreducible; it is also closed in $U$ and contains $P$.
 
 Conversely, let $W\subseteq U$ be a closed subvariety containing $P$.
@@ -60,11 +65,17 @@ $$
 \overline{Z\cap U}^{X}=Z.
 $$
 Thus intersection with $U$ and closure in $X$ are inverse operations.
+
 :::
 
-<1>2. Closed subvarieties of $U$ containing $P$ correspond bijectively to prime ideals $\mathfrak p\subseteq A$ contained in $\mathfrak m$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Closed subvarieties of $U$ containing $P$ correspond bijectively to prime ideals $\mathfrak p\subseteq A$ contained in $\mathfrak m$.
+
+::: pf-proof
+
 Since $U$ is affine, irreducible closed subsets of $U$ are exactly the sets
 $$
 Z_U(\mathfrak p)
@@ -75,11 +86,17 @@ $$
 \mathfrak p\subseteq\mathfrak m.
 $$
 This gives the claimed restricted correspondence.
+
 :::
 
-<1>3. Prime ideals of $A$ contained in $\mathfrak m$ correspond bijectively to prime ideals of $A_{\mathfrak m}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Prime ideals of $A$ contained in $\mathfrak m$ correspond bijectively to prime ideals of $A_{\mathfrak m}$.
+
+::: pf-proof
+
 This is the prime correspondence for localization.
 Explicitly,
 $$
@@ -91,16 +108,22 @@ $$
 $$
 sends a prime $\mathfrak q\subseteq A_{\mathfrak m}$ to a prime ideal of $A$ disjoint from $A\setminus\mathfrak m$, hence contained in $\mathfrak m$.
 Extension and contraction are inverse under these conditions.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Using $\mco_P\cong A_{\mathfrak m}$, compose the bijections of steps <1>1--<1>3.
+::: pf-qed
+
+Using $\mco_P\cong A_{\mathfrak m}$, compose the bijections of steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 Thus a prime $\mathfrak q\subseteq\mco_P$ corresponds to the closure in $X$ of
 $$
 Z_U(\mathfrak q\cap A),
 $$
 and every closed subvariety of $X$ through $P$ arises uniquely in this way.
+
 :::
+
+:::
+
 :::

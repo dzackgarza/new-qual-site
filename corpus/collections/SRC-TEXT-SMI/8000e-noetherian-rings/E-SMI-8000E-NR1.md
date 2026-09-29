@@ -24,13 +24,26 @@ If $R$ is a Noetherian ring, prove every ideal $I$ of $R$ is contained in a maxi
 ::: {.solution}
 The ideal $I=R$ lies in no maximal ideal, so we assume $I$ is proper.
 
-<1>1. If $I$ lies in no maximal ideal, there is a strictly increasing chain of proper ideals $I = I_0 \subsetneq I_1 \subsetneq I_2 \subsetneq \cdots$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $I$ lies in no maximal ideal, there is a strictly increasing chain of proper ideals $I = I_0 \subsetneq I_1 \subsetneq I_2 \subsetneq \cdots$.
+
+::: pf-proof
+
 Put $I_0 = I$. Given a proper ideal $I_n \supseteq I$, the ideal $I_n$ is not maximal, since otherwise $I$ would lie in the maximal ideal $I_n$. Hence there is a proper ideal $I_{n+1} \supsetneq I_n$, and $I_{n+1} \supseteq I$.
+
 :::
 
-<1>2. Q.E.D.
-::: {.proof}
-A Noetherian ring satisfies the ascending chain condition on ideals, so no chain as in step <1>1 exists. Hence $I$ lies in a maximal ideal.
 :::
+
+::: pf-qed
+
+A Noetherian ring satisfies the ascending chain condition on ideals, so no chain as in step [](#s1){.pf-ref} exists. Hence $I$ lies in a maximal ideal.
+
+:::
+
+:::
+
 :::

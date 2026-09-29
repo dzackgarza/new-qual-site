@@ -17,9 +17,15 @@ Let $f_n:[0,1]\to[0,1]$ be nondecreasing functions. Suppose $f_n(x)\to f(x)$ poi
 :::
 
 ::: {.solution}
-<1>1. The limit function $f$ is nondecreasing.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The limit function $f$ is nondecreasing.
+
+::: pf-proof
+
 If $0\leq x\leq y\leq1$, then
 $$
 f_n(x)\leq f_n(y)
@@ -28,9 +34,14 @@ for every $n$. Passing to the pointwise limit gives
 $$
 f(x)\leq f(y).
 $$
+
 :::
 
-<1>2. Given $\varepsilon>0$, there is a partition
+:::
+
+::: {.pf-step #s2}
+
+Given $\varepsilon>0$, there is a partition
 $$
 0=x_0<x_1<\cdots<x_m=1
 $$
@@ -40,36 +51,49 @@ $$
 $$
 for every $1\leq i\leq m$.
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is continuous on the compact interval $[0,1]$, it is uniformly continuous. Choose $\delta>0$ such that
 $$
 \abs{x-y}<\delta
 \quad\Longrightarrow\quad
 \abs{f(x)-f(y)}<\frac{\varepsilon}{2}.
 $$
-Choose a finite partition with mesh smaller than $\delta$. Step <1>1 shows that the endpoint differences are nonnegative, and uniform continuity bounds them above by $\varepsilon/2$.
+Choose a finite partition with mesh smaller than $\delta$. Step [](#s1){.pf-ref} shows that the endpoint differences are nonnegative, and uniform continuity bounds them above by $\varepsilon/2$.
+
 :::
 
-<1>3. There is an integer $N$ such that, for every $n\geq N$ and every partition point $x_i$,
+:::
+
+::: {.pf-step #s3}
+
+There is an integer $N$ such that, for every $n\geq N$ and every partition point $x_i$,
 $$
 \abs{f_n(x_i)-f(x_i)}<\frac{\varepsilon}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each of the finitely many points $x_0,\ldots,x_m$, pointwise convergence gives an integer after which the displayed inequality holds at that point. Take $N$ to be the maximum of those finitely many integers.
+
 :::
 
-<1>4. If $n\geq N$ and $x\in[0,1]$, then
+:::
+
+::: {.pf-step #s4}
+
+If $n\geq N$ and $x\in[0,1]$, then
 $$
 \abs{f_n(x)-f(x)}<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose $i$ such that
 $$
 x_{i-1}\leq x\leq x_i.
 $$
-By monotonicity of $f_n$ and step <1>1,
+By monotonicity of $f_n$ and step [](#s1){.pf-ref},
 $$
 f_n(x_{i-1})\leq f_n(x)\leq f_n(x_i)
 $$
@@ -77,7 +101,7 @@ and
 $$
 f(x_{i-1})\leq f(x)\leq f(x_i).
 $$
-Therefore, using steps <1>2 and <1>3,
+Therefore, using steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \begin{aligned}
 f_n(x)-f(x)
@@ -110,17 +134,29 @@ f(x_i)-f_n(x_{i-1})\\
 \end{aligned}
 $$
 Thus $\abs{f_n(x)-f(x)}<\varepsilon$.
+
 :::
 
-<1>5. The convergence $f_n\to f$ is uniform on $[0,1]$.
-
-::: {.proof}
-For every $\varepsilon>0$, step <1>3 gives an $N$ such that step <1>4 holds simultaneously for every $x\in[0,1]$ whenever $n\geq N$. This is the definition of uniform convergence.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+The convergence $f_n\to f$ is uniform on $[0,1]$.
+
+::: pf-proof
+
+For every $\varepsilon>0$, step [](#s3){.pf-ref} gives an $N$ such that step [](#s4){.pf-ref} holds simultaneously for every $x\in[0,1]$ whenever $n\geq N$. This is the definition of uniform convergence.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -42,13 +42,19 @@ Thus projective normality depends on the embedding.
 :::
 
 ::: {.solution}
-<1>1. If a positively graded domain $S$ is integrally closed, then for every homogeneous element $f\in S$ of positive degree, the degree-zero subring
+
+::: pf
+
+::: {.pf-step #s1}
+
+If a positively graded domain $S$ is integrally closed, then for every homogeneous element $f\in S$ of positive degree, the degree-zero subring
 $$
 (S_f)_0
 $$
 of the graded localization is integrally closed.
 
-::: {.proof}
+::: pf-proof
+
 The localization $S_f$ is integrally closed by the localization result in [[P-AGH317NORMAL]].
 Let
 $$
@@ -64,11 +70,17 @@ Every element of $(S_f)_0$ is homogeneous of degree zero in the $\ZZ$-grading on
 Hence $\alpha$ is homogeneous of degree zero.
 Since it already lies in $S_f$, it belongs to $(S_f)_0$.
 Thus $(S_f)_0$ is integrally closed.
+
 :::
 
-<1>2. A projectively normal variety $Y\subseteq\PP^n$ is normal, proving (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A projectively normal variety $Y\subseteq\PP^n$ is normal, proving (a).
+
+::: pf-proof
+
 Let $S=S(Y)$ be the homogeneous coordinate ring and assume that it is integrally closed.
 For each standard projective chart $D_+(x_i)$, the affine open subset
 $$
@@ -79,12 +91,17 @@ $$
 A(Y_i)=(S_{x_i})_0
 $$
 [@Har10a, Theorem I.3.4(b)].
-By step <1>1 this ring is integrally closed.
+By step [](#s1){.pf-ref} this ring is integrally closed.
 The affine normality criterion from [[P-AGH317NORMAL]] therefore makes every $Y_i$ normal.
 These standard opens cover $Y$, so every local ring of $Y$ is integrally closed and $Y$ is normal.
+
 :::
 
-<1>3. The parametrization
+:::
+
+::: {.pf-step #s3}
+
+The parametrization
 $$
 \nu:\PP^1\longrightarrow\PP^3,
 \qquad
@@ -92,7 +109,8 @@ $$
 $$
 is an isomorphism onto the twisted quartic $Y$.
 
-::: {.proof}
+::: pf-proof
+
 The four homogeneous coordinate polynomials have the same degree and no common zero on $\PP^1$, so they define a morphism.
 By definition their image is $Y$.
 
@@ -125,22 +143,34 @@ $$
 $$
 inverse to $\nu$.
 Hence $Y\cong\PP^1$.
+
 :::
 
-<1>4. The twisted quartic $Y$ is normal.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The twisted quartic $Y$ is normal.
+
+::: pf-proof
+
 The projective line is normal: its two standard affine charts have coordinate ring $k[s]$, a UFD and hence an integrally closed domain, so [[P-AGH317NORMAL]] applies.
-By step <1>3, $Y\cong\PP^1$.
+By step [](#s3){.pf-ref}, $Y\cong\PP^1$.
 Normality is invariant under isomorphism, so $Y$ is normal.
+
 :::
 
-<1>5. The homogeneous coordinate ring of $Y$ is
+:::
+
+::: {.pf-step #s5}
+
+The homogeneous coordinate ring of $Y$ is
 $$
 S(Y)\cong k[t^4,t^3u,tu^3,u^4]\subseteq k[t,u].
 $$
 
-::: {.proof}
+::: pf-proof
+
 The parametrization induces a homomorphism
 $$
 k[x,y,z,w]\longrightarrow k[t,u],
@@ -155,11 +185,17 @@ z\longmapsto tu^3,
 w\longmapsto u^4.
 $$
 A homogeneous source polynomial of degree $d$ maps to a homogeneous polynomial of degree $4d$, so the kernel is homogeneous. For a homogeneous polynomial $F$, membership in the kernel is equivalent to vanishing on every parameter point $[t:u]$: the substituted homogeneous polynomial vanishes on all nonzero pairs in $k^2$, hence is zero. Thus the kernel is exactly $I(Y)$, and the first isomorphism theorem identifies the homogeneous coordinate ring with the displayed image subring.
+
 :::
 
-<1>6. The ring $S(Y)$ is not integrally closed, so $Y$ is not projectively normal.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The ring $S(Y)$ is not integrally closed, so $Y$ is not projectively normal.
+
+::: pf-proof
+
 Put
 $$
 q=t^2u^2.
@@ -189,24 +225,36 @@ Terms of higher polynomial degree in the four generators have total degree at le
 Thus $q\notin S(Y)$.
 
 This integral element of the fraction field proves that $S(Y)$ is not integrally closed.
-Together with step <1>4, this proves (b).
+Together with step [](#s4){.pf-ref}, this proves (b).
+
 :::
 
-<1>7. The standard projective line is projectively normal.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The standard projective line is projectively normal.
+
+::: pf-proof
+
 Its homogeneous coordinate ring is
 $$
 S(\PP^1)=k[t,u],
 $$
 a UFD and hence an integrally closed domain.
 Therefore $\PP^1$ is projectively normal.
-Combined with the isomorphism of step <1>3 and the failure in step <1>6, this proves (c): projective normality depends on the chosen embedding.
+Combined with the isomorphism of step [](#s3){.pf-ref} and the failure in step [](#s6){.pf-ref}, this proves (c): projective normality depends on the chosen embedding.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves (a), steps <1>3--<1>6 prove (b), and steps <1>3 and <1>7 prove (c).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove (b), and steps [](#s3){.pf-ref} and [](#s7){.pf-ref} prove (c).
+
+:::
+
+:::
+
 :::

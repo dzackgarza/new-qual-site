@@ -31,8 +31,15 @@ Prove that there exists a constant $\gamma \geq 0$ such that $\sum_{k=1}^\infty 
 :::
 
 ::: {.solution}
-<1>1. For each $N\ge1$, the map $T_N\colon X^*\to(\mathbb R^N,\|\cdot\|_1)$, $T_N(f)=(f(x_1),\ldots,f(x_N))$, is a bounded linear operator.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+For each $N\ge1$, the map $T_N\colon X^*\to(\mathbb R^N,\|\cdot\|_1)$, $T_N(f)=(f(x_1),\ldots,f(x_N))$, is a bounded linear operator.
+
+::: pf-proof
+
 For $N\ge1$, define
 \[
 T_N:X^*\to\mathbb R^N,
@@ -46,10 +53,17 @@ where $\mathbb R^N$ is equipped with the $\ell^1$ norm. Then
 \le \left(\sum_{k=1}^N\|x_k\|\right)\|f\|,
 \]
 so each $T_N$ is a bounded linear operator.
+
 :::
 
-<1>2. $\gamma\coloneqq\sup_N\|T_N\|$ is finite, and $\sum_{k=1}^\infty|f(x_k)|\le\gamma\|f\|$ for every $f\in X^*$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\gamma\coloneqq\sup_N\|T_N\|$ is finite, and $\sum_{k=1}^\infty|f(x_k)|\le\gamma\|f\|$ for every $f\in X^*$.
+
+::: pf-proof
+
 For every fixed $f\in X^*$, the hypothesis gives
 \[
 \sup_N\|T_N(f)\|_1
@@ -72,5 +86,11 @@ Letting $N\to\infty$ gives
 \boxed{\sum_{k=1}^\infty|f(x_k)|\le\gamma\|f\|}
 \]
 for every $f\in X^*$.
+
 :::
+
+:::
+
+:::
+
 :::

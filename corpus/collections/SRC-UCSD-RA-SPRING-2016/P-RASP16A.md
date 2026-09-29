@@ -52,8 +52,15 @@ Then the second-order distributional derivative $f''$ is the zero distribution o
 :::
 
 ::: {.solution}
-<1>1. Statement (1) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Statement (1) is false.
+
+::: pf-proof
+
 Take $X=[0,1]$ with Lebesgue measure and set
 \[
 E_j=[0,1]
@@ -67,10 +74,17 @@ Hence
 \mu(E)=1\ne0.
 \]
 The missing hypothesis in the first Borel--Cantelli lemma is the summability of $\sum_j\mu(E_j)$, not merely finiteness of each term.
+
 :::
 
-<1>2. Statement (2) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (2) is true.
+
+::: pf-proof
+
 Continuity of $f$ at $z_0$ means that for every $\varepsilon>0$ there is $r_0>0$ such that
 \[
 |f(y)-f(z_0)|<\varepsilon
@@ -84,10 +98,17 @@ Letting $r\downarrow0$ gives the Lebesgue-point condition. Thus
 \[
 z_0\in L_f.
 \]
+
 :::
 
-<1>3. Statement (3) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (3) is true.
+
+::: pf-proof
+
 Weak convergence gives
 \[
 \langle z_k,z\rangle\to\|z\|^2.
@@ -101,10 +122,17 @@ Since $\|z_k\|=\|z\|$ for every $k$,
 \end{aligned}
 \]
 Hence $z_k\to z$ in norm.
+
 :::
 
-<1>4. Statement (4) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (4) is false.
+
+::: pf-proof
+
 Choose nonzero functions
 \[
 \phi,\psi\in C_c^\infty(\mathbb R^n)
@@ -126,10 +154,17 @@ Fourier-transform injectivity gives
 f*g=0,
 \]
 although neither factor is zero.
+
 :::
 
-<1>5. Statement (5) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (5) is false.
+
+::: pf-proof
+
 For $f(x)=|x|$, the first distributional derivative is
 \[
 Df=\operatorname{sgn}(x).
@@ -149,5 +184,11 @@ Thus
 \boxed{D^2|x|=2\delta_0,}
 \]
 not the zero distribution.
+
 :::
+
+:::
+
+:::
+
 :::

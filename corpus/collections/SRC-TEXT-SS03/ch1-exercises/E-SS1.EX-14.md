@@ -37,8 +37,15 @@ a_NB_N-a_MB_{M-1}-\sum_{n=M}^{N-1}(a_{n+1}-a_n)B_n.
 :::
 
 ::: {.solution}
-<1>1. For every $n$, one has $b_n=B_n-B_{n-1}$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n$, one has $b_n=B_n-B_{n-1}$.
+
+::: pf-proof
+
 By definition,
 \[
 B_n=\sum_{k=1}^n b_k
@@ -46,52 +53,86 @@ B_n=\sum_{k=1}^n b_k
 B_{n-1}=\sum_{k=1}^{n-1}b_k,
 \]
 so subtraction gives $B_n-B_{n-1}=b_n$.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: {.pf-step #s2}
+
+Therefore
 \[
 \sum_{n=M}^N a_nb_n
 =
 \sum_{n=M}^N a_nB_n-
 \sum_{n=M}^N a_nB_{n-1}.
 \]
-::: {.proof}
-Substitute the identity from <1>1 into each term of the finite sum and distribute.
+
+::: pf-proof
+
+Substitute the identity from step [](#s1){.pf-ref} into each term of the finite sum and distribute.
+
 :::
 
-<1>3. The second sum may be separated and reindexed as
+:::
+
+::: {.pf-step #s3}
+
+The second sum may be separated and reindexed as
 \[
 \sum_{n=M}^N a_nB_{n-1}
 =
 a_MB_{M-1}+\sum_{n=M}^{N-1}a_{n+1}B_n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Separate the term with $n=M$, and in the remaining sum replace the index $n$ by $n+1$.
+
 :::
 
-<1>4. Likewise,
+:::
+
+::: {.pf-step #s4}
+
+Likewise,
 \[
 \sum_{n=M}^N a_nB_n
 =
 a_NB_N+\sum_{n=M}^{N-1}a_nB_n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Separate the terminal term $n=N$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \sum_{n=M}^N a_nb_n
 =
 a_NB_N-a_MB_{M-1}
 -\sum_{n=M}^{N-1}(a_{n+1}-a_n)B_n.
 \]
-::: {.proof}
-Insert <1>3 and <1>4 into <1>2. The remaining interior contribution is
+
+::: pf-proof
+
+Insert steps [](#s3){.pf-ref} and [](#s4){.pf-ref} into step [](#s2){.pf-ref}. The remaining interior contribution is
 \[
 \sum_{n=M}^{N-1}(a_n-a_{n+1})B_n
 =-\sum_{n=M}^{N-1}(a_{n+1}-a_n)B_n,
 \]
 which gives the claimed identity.
+
 :::
+
+:::
+
+:::
+
 :::

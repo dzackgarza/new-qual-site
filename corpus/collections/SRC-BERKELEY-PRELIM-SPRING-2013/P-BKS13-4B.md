@@ -40,12 +40,18 @@ Justify your answer.
 :::
 
 ::: {.solution}
-<1>1. If $U\neq\CC$, then
+
+::: pf
+
+::: pf-step
+
+If $U\neq\CC$, then
 $$
 D>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The set $K$ is closed and bounded in $\CC$, hence compact. The complement
 $$
 \CC\setminus U
@@ -53,9 +59,14 @@ $$
 is closed and disjoint from $K$. A compact set and a disjoint closed set
 in a metric space have positive distance. Thus the stated distance $D$ is
 positive.
+
 :::
 
-<1>2. Fix
+:::
+
+::: {.pf-step #s2}
+
+Fix
 $$
 z_0\in K
 $$
@@ -69,7 +80,8 @@ $$
 $$
 is contained in $U$.
 
-::: {.proof}
+::: pf-proof
+
 If some point $w$ of the closed disk lay outside $U$, then
 $$
 \abs{z_0-w}
@@ -80,16 +92,22 @@ D,
 $$
 contradicting the definition of $D$ as the distance from $K$ to
 $\CC\setminus U$.
+
 :::
 
-<1>3. Under the hypotheses of step <1>2,
+:::
+
+::: {.pf-step #s3}
+
+Under the hypotheses of step [](#s2){.pf-ref},
 $$
 \abs{f'(z_0)}
 \leq
 \frac{M}{r}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By Cauchy's integral formula for derivatives,
 $$
 f'(z_0)
@@ -114,35 +132,52 @@ $$
 =
 \frac{M}{r}.
 $$
+
 :::
 
-<1>4. If $U\neq\CC$, then for every $z_0\in K$,
+:::
+
+::: {.pf-step #s4}
+
+If $U\neq\CC$, then for every $z_0\in K$,
 $$
 \abs{f'(z_0)}
 \leq
 \frac{M}{D}.
 $$
 
-::: {.proof}
-Step <1>3 holds for every
+::: pf-proof
+
+Step [](#s3){.pf-ref} holds for every
 $$
 0<r<D.
 $$
 Letting $r\to D^-$ gives the claimed bound.
+
 :::
 
-<1>5. If $U=\CC$, then
+:::
+
+::: {.pf-step #s5}
+
+If $U=\CC$, then
 $$
 f'(z)=0
 $$
 for every $z\in\CC$.
 
-::: {.proof}
+::: pf-proof
+
 The function $f$ is a bounded entire function. Liouville's theorem implies
 that $f$ is constant, hence its derivative vanishes identically.
+
 :::
 
-<1>6. An explicit valid choice is
+:::
+
+::: {.pf-step #s6}
+
+An explicit valid choice is
 $$
 \boxed{
 C=
@@ -153,15 +188,22 @@ M/D,&D<\infty,\\
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $D<\infty$, the definition of the problem gives $U\neq\CC$, and step
-<1>4 applies. If $D=\infty$, then $U=\CC$ by the stated convention, and
-step <1>5 applies.
+[](#s4){.pf-ref} applies. If $D=\infty$, then $U=\CC$ by the stated convention, and
+step [](#s5){.pf-ref} applies.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 supplies the required uniform derivative bound.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} supplies the required uniform derivative bound.
+
+:::
+
+:::
+
 :::

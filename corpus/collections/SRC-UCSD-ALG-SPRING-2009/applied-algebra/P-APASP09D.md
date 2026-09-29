@@ -50,11 +50,18 @@ Calculate the coefficient of $s_{[6,3,1]}$.
 :::
 
 ::: {.solution}
-<1>1. The trace in part (a) is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The trace in part (a) is
 \[
 h_n(x_1,\ldots,x_N)=s_{(n)}(x_1,\ldots,x_N).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The operator $p_n$ is the averaging idempotent for the $S_n$-action, so its image is
 \[
 \operatorname{Sym}^n(V)\subseteq V^{\otimes n}.
@@ -75,13 +82,20 @@ and the corresponding basis vector has $d$-eigenvalue
 x_1^{a_1}\cdots x_N^{a_N}.
 \]
 Summing these eigenvalues gives the complete homogeneous symmetric function $h_n=s_{(n)}$.
+
 :::
 
-<1>2. The trace in part (b) is the symmetric function
+:::
+
+::: pf-step
+
+The trace in part (b) is the symmetric function
 \[
 s_{(4)}s_{(3)}s_{(3)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The operator $p_4\otimes p_3\otimes p_3$ projects
 \[
 V^{\otimes10}=V^{\otimes4}\otimes V^{\otimes3}\otimes V^{\otimes3}
@@ -90,11 +104,18 @@ onto
 \[
 \operatorname{Sym}^4(V)\otimes\operatorname{Sym}^3(V)\otimes\operatorname{Sym}^3(V).
 \]
-By <1>1, the characters of the three factors are $s_{(4)},s_{(3)},s_{(3)}$, so the character of their tensor product is their product.
+By step [](#s1){.pf-ref}, the characters of the three factors are $s_{(4)},s_{(3)},s_{(3)}$, so the character of their tensor product is their product.
+
 :::
 
-<1>3. The coefficient of $s_{(6,3,1)}$ in $s_{(4)}s_{(3)}s_{(3)}$ is $3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The coefficient of $s_{(6,3,1)}$ in $s_{(4)}s_{(3)}s_{(3)}$ is $3$.
+
+::: pf-proof
+
 By the Pieri rule,
 \[
 s_{(4)}s_{(3)}
@@ -114,15 +135,22 @@ Hence
 \[
 [s_{(6,3,1)}]\,s_{(4)}s_{(3)}s_{(3)}=3.
 \]
+
 :::
 
-<1>4. The multiplicity of $S^{(3,3,3,1)}$ in $V^{\otimes10}$ is
+:::
+
+::: pf-step
+
+The multiplicity of $S^{(3,3,3,1)}$ in $V^{\otimes10}$ is
 \[
 175\quad\text{when }N=5,
 \qquad
 0\quad\text{when }N=3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Schur-Weyl duality gives
 \[
 V^{\otimes10}
@@ -156,5 +184,11 @@ Therefore
 {6\cdot4\cdot3\cdot5\cdot3\cdot2\cdot4\cdot2\cdot1\cdot1}
 =175.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

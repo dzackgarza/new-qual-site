@@ -20,8 +20,15 @@ If instead we assume $A \neq B , A ^ { 3 } = B ^ { 3 }$ and $A ^ { 2 } B = B ^ {
 :::
 
 ::: {.solution}
-<1>1. If $AB-BA=A$, then $A$ is not invertible.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $AB-BA=A$, then $A$ is not invertible.
+
+::: pf-proof
+
 Suppose instead that $A$ were invertible. Right-multiplying the relation by $A^{-1}$ gives
 $$
 ABA^{-1}-B=I,
@@ -37,10 +44,17 @@ $$
 \ne\operatorname{tr}(B).
 $$
 This contradiction shows that $A$ is not invertible.
+
 :::
 
-<1>2. If $A\ne B$, $A^3=B^3$, and $A^2B=B^2A$, then $A^2+B^2$ is not invertible.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $A\ne B$, $A^3=B^3$, and $A^2B=B^2A$, then $A^2+B^2$ is not invertible.
+
+::: pf-proof
+
 Using the two hypotheses,
 $$
 \begin{aligned}
@@ -55,10 +69,17 @@ $$
 (A^2+B^2)(A-B)=0.
 $$
 If $A^2+B^2$ were invertible, multiplying by its inverse would give $A-B=0$, contrary to $A\ne B$. Therefore $A^2+B^2$ is not invertible.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>2 prove the two requested noninvertibility statements.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the two requested noninvertibility statements.
+
+:::
+
+:::
+
 :::

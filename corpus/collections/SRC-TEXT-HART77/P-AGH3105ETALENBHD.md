@@ -52,12 +52,17 @@ B=\OO_{U,x'},
 M=\mcf_x.
 $$
 
-<1>1. The local homomorphism $A\to B$ is faithfully flat and
+::: pf
+
+::: {.pf-step #s1}
+
+The local homomorphism $A\to B$ is faithfully flat and
 $$
 \mathfrak m_A B=\mathfrak m_B.
 $$
 
-::: {.proof}
+::: pf-proof
+
 An étale morphism is flat and unramified by
 [[P-AGH3103ETALECHAR|Exercise III.10.3]]. Hence $A\to B$ is flat and
 Hartshorne's unramified condition gives
@@ -74,11 +79,17 @@ $$
 $$
 because $I\subseteq\mathfrak m_A$ and hence $IB\subseteq\mathfrak m_B$.
 Thus $N\tensor_A B\ne0$, so tensoring with $B$ detects nonzero modules.
+
 :::
 
-<1>2. The stalk $M=\mcf_x$ is a free $A$-module.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The stalk $M=\mcf_x$ is a free $A$-module.
+
+::: pf-proof
+
 Since pullback commutes with stalks,
 $$
 (f^*\mcf)_{x'}\cong M\tensor_A B.
@@ -91,7 +102,7 @@ k=A/\mathfrak m_A,
 \qquad
 k'=B/\mathfrak m_B.
 $$
-Using step <1>1,
+Using step [](#s1){.pf-ref},
 $$
 (M/\mathfrak m_A M)\tensor_k k'
 \cong
@@ -125,16 +136,22 @@ Let $K=\ker\varphi$. Flatness of $B/A$ gives
 $$
 K\tensor_A B=\ker\varphi_B=0.
 $$
-Faithful flatness from step <1>1 therefore gives $K=0$. Hence
+Faithful flatness from step [](#s1){.pf-ref} therefore gives $K=0$. Hence
 $$
 \boxed{M\cong A^{\oplus r}}.
 $$
+
 :::
 
-<1>3. The sheaf $\mcf$ is free on a Zariski neighborhood of $x$.
+:::
 
-::: {.proof}
-Choose the basis $m_1,\ldots,m_r$ of $\mcf_x$ from step <1>2. After shrinking
+::: {.pf-step #s3}
+
+The sheaf $\mcf$ is free on a Zariski neighborhood of $x$.
+
+::: pf-proof
+
+Choose the basis $m_1,\ldots,m_r$ of $\mcf_x$ from step [](#s2){.pf-ref}. After shrinking
 to an open neighborhood $V$ of $x$, each $m_i$ is represented by a section of
 $\mcf|_V$. These sections define a morphism
 $$
@@ -149,20 +166,32 @@ $$
 \psi:\OO_V^{\oplus r}\xrightarrow{\sim}\mcf|_V.
 $$
 Hence $\mcf$ is free on a Zariski neighborhood of $x$.
+
 :::
 
-<1>4. The sheaf $\mcf$ is locally free on $X$.
+:::
 
-::: {.proof}
-The point $x\in X$ was arbitrary. Step <1>3 produces a Zariski neighborhood
+::: {.pf-step #s4}
+
+The sheaf $\mcf$ is locally free on $X$.
+
+::: pf-proof
+
+The point $x\in X$ was arbitrary. Step [](#s3){.pf-ref} produces a Zariski neighborhood
 of every point on which $\mcf$ is free. Therefore $\mcf$ is locally free.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 descend freeness from an étale stalk, and steps <1>3--<1>4
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} descend freeness from an étale stalk, and steps [](#s3){.pf-ref} and [](#s4){.pf-ref}
 spread the resulting free stalk to ordinary Zariski neighborhoods across all
 of $X$.
+
 :::
+
+:::
+
 :::

@@ -34,7 +34,12 @@ Hint: Embed $X$ in a (proper) curve $\bar{X}$ over $k$, and use (Ex.
 :::
 
 ::: {.solution}
-<1>1. There is an open immersion
+
+::: pf
+
+::: pf-step
+
+There is an open immersion
 $$
 j:X\hookrightarrow\bar X
 $$
@@ -44,7 +49,8 @@ $$
 $$
 is a finite nonempty set of closed points.
 
-::: {.proof}
+::: pf-proof
+
 A regular separated curve of finite type over a field has a regular
 projective compactification. Equivalently, one may take a projective
 completion and then normalize it; regularity of \(X\) identifies \(X\)
@@ -59,15 +65,21 @@ $$
 X=\bar X
 $$
 would be projective, hence proper over \(k\), contrary to the hypothesis.
+
 :::
 
-<1>2. There exists a nonconstant rational function
+:::
+
+::: {.pf-step #s2}
+
+There exists a nonconstant rational function
 $$
 f\in K(\bar X)
 $$
 whose poles occur precisely at \(P_1,\ldots,P_r\).
 
-::: {.proof}
+::: pf-proof
+
 Apply
 [[P-AGH412POLESATFINITESET|Exercise IV.1.2]]
 on the proper regular curve \(\bar X\) to the finite set
@@ -80,9 +92,14 @@ $$
 \bar X\setminus\{P_1,\ldots,P_r\}=X.
 $$
 Since \(f\) has at least one pole, it is not constant.
+
 :::
 
-<1>3. The rational function \(f\) determines a morphism
+:::
+
+::: {.pf-step #s3}
+
+The rational function \(f\) determines a morphism
 $$
 \bar f:\bar X\longrightarrow\PP^1
 $$
@@ -91,7 +108,8 @@ $$
 \bar f^{-1}(\infty)=\{P_1,\ldots,P_r\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A nonzero rational function on a regular complete curve defines the
 usual morphism to \(\PP^1\): where \(f\) is regular use the affine
 coordinate \(z=f\), and near a pole use the affine coordinate
@@ -102,7 +120,7 @@ around \(\infty\). Regularity of the local rings of \(\bar X\) makes
 these two descriptions glue.
 
 A point maps to \(\infty\) exactly when \(f\) has a pole there. By step
-<1>2, these are precisely the points \(P_1,\ldots,P_r\). Hence
+[](#s2){.pf-ref}, these are precisely the points \(P_1,\ldots,P_r\). Hence
 $$
 \bar f^{-1}(\AA^1)
 =
@@ -110,16 +128,22 @@ $$
 =
 X.
 $$
+
 :::
 
-<1>4. The morphism
+:::
+
+::: pf-step
+
+The morphism
 $$
 \bar f:\bar X\longrightarrow\PP^1
 $$
 is finite.
 
-::: {.proof}
-The morphism is nonconstant by step <1>2. Both source and target are
+::: pf-proof
+
+The morphism is nonconstant by step [](#s2){.pf-ref}. Both source and target are
 proper integral curves, and \(\bar X\) is regular. Therefore the standard
 finiteness theorem for maps of proper curves
 [[D-MORFIN|finite morphisms between proper curves]]
@@ -128,12 +152,18 @@ $$
 \bar X\longrightarrow\PP^1
 $$
 is finite.
+
 :::
 
-<1>5. The scheme \(X\) is affine.
+:::
 
-::: {.proof}
-By step <1>3,
+::: {.pf-step #s5}
+
+The scheme \(X\) is affine.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 X=\bar f^{-1}(\AA^1).
 $$
@@ -148,11 +178,17 @@ $$
 $$
 is affine, its inverse image under the finite morphism \(f\) is affine.
 Thus \(X\) is affine.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

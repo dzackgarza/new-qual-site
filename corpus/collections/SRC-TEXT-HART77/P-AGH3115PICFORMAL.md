@@ -64,12 +64,17 @@ $$
 Thus $X_1=Y$, and the formal completion $\hat X$ is the inverse system of the
 infinitesimal neighbourhoods $X_n$.
 
-<1>1. The formal Picard group is the inverse limit
+::: pf
+
+::: {.pf-step #s1}
+
+The formal Picard group is the inverse limit
 $$
 \Pic\hat X\cong\varprojlim_n\Pic X_n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each $X_n$ is the closed subscheme of the projective scheme $X=\PP_k^N$
 defined by $\mci^n$, hence is projective over the common field $k$.
 Therefore the Mittag--Leffler hypothesis in
@@ -83,9 +88,14 @@ $$
 $$
 Under this isomorphism, restriction to $Y=X_1$ is the projection to the first
 factor.
+
 :::
 
-<1>2. For every $n\ge1$, the closed immersion
+:::
+
+::: {.pf-step #s2}
+
+For every $n\ge1$, the closed immersion
 $$
 X_n\hookrightarrow X_{n+1}
 $$
@@ -94,7 +104,8 @@ $$
 \mci^n/\mci^{n+1}\cong\mco_Y(-nd).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Its ideal in
 $$
 \mco_{X_{n+1}}=\mco_X/\mci^{n+1}
@@ -125,9 +136,14 @@ and restricting to $Y$ gives
 $$
 \boxed{\mci^n/\mci^{n+1}\cong\mco_Y(-nd)}.
 $$
+
 :::
 
-<1>3. For every $n\ge1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n\ge1$,
 $$
 H^1\bigl(Y,\mco_Y(-nd)\bigr)
 =
@@ -135,7 +151,8 @@ H^2\bigl(Y,\mco_Y(-nd)\bigr)
 =0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypersurface $Y\subseteq\PP_k^N$ is a complete intersection of dimension
 $$
 \dim Y=N-1\ge3.
@@ -150,17 +167,23 @@ $$
 $$
 Taking $m=-nd$, the values $i=1,2$ both lie in this range because
 $\dim Y\ge3$. This proves the two vanishings.
+
 :::
 
-<1>4. For every $n\ge1$, restriction induces an isomorphism
+:::
+
+::: {.pf-step #s4}
+
+For every $n\ge1$, restriction induces an isomorphism
 $$
 \Pic X_{n+1}\xrightarrow{\sim}\Pic X_n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply
 [[P-AGH346SQUAREZEROPIC|Exercise III.4.6]]
-to the square-zero thickening of step <1>2. The relevant part of its exact
+to the square-zero thickening of step [](#s2){.pf-ref}. The relevant part of its exact
 sequence is
 $$
 H^1\bigl(Y,\mci^n/\mci^{n+1}\bigr)
@@ -171,22 +194,28 @@ H^1\bigl(Y,\mci^n/\mci^{n+1}\bigr)
 \longrightarrow
 H^2\bigl(Y,\mci^n/\mci^{n+1}\bigr).
 $$
-By steps <1>2--<1>3, both outer groups are zero. Hence the middle restriction
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, both outer groups are zero. Hence the middle restriction
 map is both injective and surjective:
 $$
 \boxed{\Pic X_{n+1}\xrightarrow{\sim}\Pic X_n}.
 $$
 Equivalently, every line bundle on $X_n$ has a unique isomorphism class of
 lift to $X_{n+1}$.
+
 :::
 
-<1>5. Projection to the first term induces an isomorphism
+:::
+
+::: {.pf-step #s5}
+
+Projection to the first term induces an isomorphism
 $$
 \varprojlim_n\Pic X_n\xrightarrow{\sim}\Pic Y.
 $$
 
-::: {.proof}
-By step <1>4 every transition map in the inverse system
+::: pf-proof
+
+By step [](#s4){.pf-ref} every transition map in the inverse system
 $$
 \cdots\longrightarrow\Pic X_3
 \longrightarrow\Pic X_2
@@ -199,12 +228,14 @@ $$
 $$
 extends uniquely through all the inverse transitions. Hence the first
 projection is an isomorphism.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Combining steps <1>1 and <1>5 gives
+::: pf-qed
+
+Combining steps [](#s1){.pf-ref} and [](#s5){.pf-ref} gives
 $$
 \Pic\hat X
 \xrightarrow{\sim}
@@ -219,5 +250,9 @@ Thus
 $$
 \boxed{\Pic\hat X\xrightarrow{\sim}\Pic Y}.
 $$
+
 :::
+
+:::
+
 :::

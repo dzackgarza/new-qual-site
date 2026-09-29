@@ -31,8 +31,15 @@ Prove that a finite CW complex must be Hausdorff.
 :::
 
 ::: {.solution}
-<1>1. If $K$ is compact Hausdorff and $R\subseteq K\times K$ is a closed equivalence relation, then the quotient $K/R$ is compact Hausdorff.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $K$ is compact Hausdorff and $R\subseteq K\times K$ is a closed equivalence relation, then the quotient $K/R$ is compact Hausdorff.
+
+::: pf-proof
+
 Let
 \[
 q:K\longrightarrow K/R
@@ -93,9 +100,14 @@ B\subseteq V'\subseteq V.
 They are disjoint: if one equivalence class met both, there would be $u\in U'$ and $v\in V'$ with $(u,v)\in R$, contradicting $(U\times V)\cap R=\varnothing$.
 Since $U'$ and $V'$ are saturated, $q(U')$ and $q(V')$ are disjoint open neighborhoods of the two quotient points.
 Thus $K/R$ is Hausdorff.
+
 :::
 
-<1>2. If $Y$ is compact Hausdorff and
+:::
+
+::: {.pf-step #s2}
+
+If $Y$ is compact Hausdorff and
 \[
 f:S^{m-1}\longrightarrow Y
 \]
@@ -104,7 +116,9 @@ is continuous, then the adjunction space
 Y\cup_fD^m
 \]
 is compact Hausdorff.
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 K=Y\amalg D^m.
@@ -133,11 +147,18 @@ Indeed, $S^{m-1}$ is closed in $D^m$; the graph of $f$ is closed because its dom
 \]
 is closed because the diagonal $\Delta_Y$ is closed in $Y\times Y$.
 Hence the whole equivalence relation is closed in $K\times K$.
-By <1>1, the quotient $Y\cup_fD^m$ is compact Hausdorff.
+By step [](#s1){.pf-ref}, the quotient $Y\cup_fD^m$ is compact Hausdorff.
+
 :::
 
-<1>3. Every finite CW complex is compact Hausdorff, and hence Hausdorff.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every finite CW complex is compact Hausdorff, and hence Hausdorff.
+
+::: pf-proof
+
 A finite CW complex has finitely many cells, so order its cells compatibly with dimension and attach them one at a time.
 The union of the $0$-cells is a finite discrete space, hence compact Hausdorff.
 
@@ -147,8 +168,14 @@ The next cell is attached by a continuous map
 f:S^{m-1}\longrightarrow Y
 \]
 into that space $Y$.
-By <1>2, attaching the cell produces another compact Hausdorff space.
+By step [](#s2){.pf-ref}, attaching the cell produces another compact Hausdorff space.
 Induction over the finite list of cells therefore shows that the whole CW complex is compact Hausdorff.
 In particular, it is Hausdorff.
+
 :::
+
+:::
+
+:::
+
 :::

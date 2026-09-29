@@ -25,17 +25,44 @@ audit:
 ::: {.solution}
 **Goal.** Find a connected but not locally connected space, and answer the converse question.
 
-<1>1. A connected but not locally connected space: the topologist's sine curve.
-<2>1. $X = \theset{(x, \sin(1/x)) : x > 0} \cup \theset{(0, y) : -1 \le y \le 1}$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A connected but not locally connected space: the topologist's sine curve.
+
+::: pf-proof
+
+::: pf-step
+
+$X = \theset{(x, \sin(1/x)) : x > 0} \cup \theset{(0, y) : -1 \le y \le 1}$.
+
+::: pf-proof
+
 the topologist's sine curve.
+
 :::
-<2>2. $X$ is connected.
-::: {.proof}
+
+:::
+
+::: pf-step
+
+$X$ is connected.
+
+::: pf-proof
+
 the graph $\theset{(x, \sin(1/x)) : x > 0}$ is connected (continuous image of $(0,\infty)$), and its closure is $X$, so $X$ is connected.
+
 :::
-<2>3. $X$ is not locally connected at $p=(0,0)$.
-::: {.proof}
+
+:::
+
+::: pf-step
+
+$X$ is not locally connected at $p=(0,0)$.
+
+::: pf-proof
+
 Let
 $$
 U=X\cap\bigl(\mathbb R\times(-1/2,1/2)\bigr),
@@ -65,24 +92,67 @@ $$
 p\in W\subseteq U,
 $$
 because any such $W$ would have to lie in the component $C$ but $C$ contains no neighborhood of $p$. Therefore $X$ is not locally connected at $p$.
+
 :::
 
-<1>2. A locally connected but not connected space exists.
-<2>1. Example: the disjoint union of two intervals, $X = (0,1) \cup (2,3)$.
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+A locally connected but not connected space exists.
+
+::: pf-proof
+
+::: pf-step
+
+Example: the disjoint union of two intervals, $X = (0,1) \cup (2,3)$.
+
+::: pf-proof
+
 a disjoint union of two open intervals.
-:::
-<2>2. $X$ is locally connected.
-::: {.proof}
-each point has a connected neighborhood (a small interval around it).
-:::
-<2>3. $X$ is not connected.
-::: {.proof}
-it is a disjoint union of two nonempty open sets.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>1 gives a connected but not locally connected space; <1>2 gives a locally connected but not connected space (yes, such spaces exist).
 :::
+
+::: pf-step
+
+$X$ is locally connected.
+
+::: pf-proof
+
+each point has a connected neighborhood (a small interval around it).
+
+:::
+
+:::
+
+::: pf-step
+
+$X$ is not connected.
+
+::: pf-proof
+
+it is a disjoint union of two nonempty open sets.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives a connected but not locally connected space; step [](#s2){.pf-ref} gives a locally connected but not connected space (yes, such spaces exist).
+
+:::
+
+:::
+
 :::

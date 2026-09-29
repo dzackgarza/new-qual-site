@@ -38,8 +38,14 @@ The estimate holds exactly when
 \boxed{\sigma<-1}.
 \]
 
-<1>1. Sufficiency for $\sigma<-1$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Sufficiency for $\sigma<-1$.
+
+::: pf-proof
+
 Set
 \[
 K_{jk}=(1+|j-k|)^\sigma.
@@ -62,10 +68,17 @@ is bounded on $\ell^2$ with $\|T\|\le M$. Therefore
 =|\langle a,Tb\rangle|
 \le M\|a\|_2\|b\|_2.
 \]
+
 :::
 
-<1>2. Necessity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Necessity.
+
+::: pf-proof
+
 For $N\ge1$, let
 \[
 a_j=b_j=\begin{cases}N^{-1/2},&1\le j\le N,\\0,&j>N.\end{cases}
@@ -82,5 +95,11 @@ S_N\ge \sum_{m=1}^{\lfloor N/2\rfloor}(1+m)^\sigma.
 If $\sigma=-1$, the right-hand side grows like $\log N$. If $\sigma>-1$, it grows on the order of $N^{\sigma+1}$. Thus $S_N\to\infty$ whenever $\sigma\ge-1$. No uniform constant $C_\sigma$ can then exist.
 
 Hence the estimate holds exactly for $\sigma<-1$.
+
 :::
+
+:::
+
+:::
+
 :::

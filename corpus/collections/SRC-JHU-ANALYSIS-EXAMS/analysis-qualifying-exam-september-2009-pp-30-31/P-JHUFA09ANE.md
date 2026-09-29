@@ -41,9 +41,14 @@ b) f is holomorphic in a neighborhood of 0.
 ::: {.solution}
 Part (a) is true, with $f'(0)=0$. Part (b) is false.
 
-<1>1. The difference quotient tends to zero at the origin.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The difference quotient tends to zero at the origin.
+
+::: pf-proof
+
 For $z=x+iy$, one has $f(0)=0$ and $|x|,|y|\leq|z|$.
 The triangle inequality gives
 $$
@@ -55,11 +60,17 @@ $$
 $$
 This limit is independent of the direction of approach,
 so the complex derivative exists and equals zero.
+
 :::
 
-<1>2. Every neighborhood contains a point where the complex derivative fails to exist.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every neighborhood contains a point where the complex derivative fails to exist.
+
+::: pf-proof
+
 Writing $f=u+iv$, its real partial derivatives are
 $$
 u_x=3x^2-3y^2,\qquad u_y=-6xy,\qquad
@@ -71,5 +82,11 @@ At a point $(x,0)$ with $x\ne0$, the first equation
 would read $3x^2=0$, which is false. Every neighborhood
 of zero contains such a point. Therefore no neighborhood
 of zero is a domain on which $f$ is holomorphic, proving (b).
+
 :::
+
+:::
+
+:::
+
 :::

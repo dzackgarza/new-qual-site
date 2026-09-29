@@ -42,7 +42,11 @@ $$
 V=\RR^n.
 $$
 
-<1>1. The map
+::: pf
+
+::: pf-step
+
+The map
 $$
 \Phi:\bigwedge^2V\longrightarrow S
 $$
@@ -54,7 +58,8 @@ uv^T-vu^T
 $$
 is a linear isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 For the standard basis $e_1,\ldots,e_n$ of $V$,
 $$
 \Phi(e_i\wedge e_j)
@@ -74,15 +79,21 @@ E_{ij}-E_{ji},
 i<j,
 $$
 form a basis of $S$. Thus $\Phi$ sends a basis to a basis.
+
 :::
 
-<1>2. Under the isomorphism $\Phi$, the map $T_A$ corresponds to the
+:::
+
+::: {.pf-step #s2}
+
+Under the isomorphism $\Phi$, the map $T_A$ corresponds to the
 exterior-square operator
 $$
 \bigwedge^2A:\bigwedge^2V\longrightarrow\bigwedge^2V.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $u,v\in V$,
 $$
 \begin{aligned}
@@ -99,26 +110,37 @@ A(uv^T-vu^T)A^T\\
 $$
 Since decomposable wedges span $\bigwedge^2V$, the intertwining identity
 holds on the whole space.
+
 :::
 
-<1>3. Consequently,
+:::
+
+::: {.pf-step #s3}
+
+Consequently,
 $$
 \det T_A
 =
 \det(\bigwedge^2A).
 $$
 
-::: {.proof}
-Step <1>2 says that
+::: pf-proof
+
+Step [](#s2){.pf-ref} says that
 $$
 T_A
 =
 \Phi\circ(\bigwedge^2A)\circ\Phi^{-1}.
 $$
 Similar linear transformations have the same determinant.
+
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #s4}
+
+Let
 $$
 \lambda_1,\ldots,\lambda_n
 $$
@@ -130,7 +152,8 @@ $$
 \prod_{1\leq i<j\leq n}\lambda_i\lambda_j.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Complexify the real vector space and the operator. The matrix of the
 complexified operator is still $A$, so its determinant is unchanged.
 
@@ -152,9 +175,14 @@ $$
 $$
 The determinant of a triangular matrix is the product of its diagonal
 entries, giving the displayed formula.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \prod_{1\leq i<j\leq n}\lambda_i\lambda_j
 =
@@ -163,7 +191,8 @@ $$
 \right)^{n-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $i$. The eigenvalue $\lambda_i$ appears once in the factor
 $\lambda_i\lambda_j$ for every $j\neq i$, hence exactly $n-1$ times in the
 full product. Therefore the total product is
@@ -174,9 +203,14 @@ $$
 \prod_{i=1}^n\lambda_i
 \right)^{n-1}.
 $$
+
 :::
 
-<1>6. Since
+:::
+
+::: {.pf-step #s6}
+
+Since
 $$
 \prod_{i=1}^n\lambda_i=\det A,
 $$
@@ -187,15 +221,22 @@ $$
 }
 $$
 
-::: {.proof}
-Combine steps <1>3--<1>5 and the standard identity that the product of the
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} and the standard identity that the product of the
 eigenvalues of a matrix, counted with algebraic multiplicity, equals its
 determinant.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested determinant.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested determinant.
+
+:::
+
+:::
+
 :::

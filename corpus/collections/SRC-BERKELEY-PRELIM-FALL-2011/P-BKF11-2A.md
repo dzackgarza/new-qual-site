@@ -31,9 +31,15 @@ Prove that for some $n$, the polynomial $f(x)$ divides $x^n-1$.
 :::
 
 ::: {.solution}
-<1>1. The polynomial $f(x)$ divides $f(x^2)$ in $\QQ[x]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomial $f(x)$ divides $f(x^2)$ in $\QQ[x]$.
+
+::: pf-proof
+
 Let $m_a(x)$ be the minimal polynomial of $a$ over $\QQ$. Since
 $f(a)=0$, the polynomial $m_a$ divides $f$. Both are nonconstant and
 $f$ is irreducible, so $f$ and $m_a$ differ by a nonzero rational
@@ -50,17 +56,23 @@ m_a(x)\mid f(x^2).
 $$
 Since $f$ is a nonzero scalar multiple of $m_a$, it follows that
 $f(x)\mid f(x^2)$.
+
 :::
 
-<1>2. If $b\in\CC$ is any root of $f$, then $b^2$ is also a root of
+:::
+
+::: {.pf-step #s2}
+
+If $b\in\CC$ is any root of $f$, then $b^2$ is also a root of
 $f$. Consequently,
 $$
 a,a^2,a^{2^2},a^{2^3},\ldots
 $$
 are all roots of $f$.
 
-::: {.proof}
-By step <1>1, there is $q(x)\in\QQ[x]$ such that
+::: pf-proof
+
+By step [](#s1){.pf-ref}, there is $q(x)\in\QQ[x]$ such that
 $$
 f(x^2)=f(x)q(x).
 $$
@@ -70,13 +82,19 @@ f(b^2)=f(b)q(b)=0.
 $$
 Starting with the root $a$ and applying this implication repeatedly
 proves the final assertion.
+
 :::
 
-<1>3. There is a positive integer $N$ such that $a^N=1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+There is a positive integer $N$ such that $a^N=1$.
+
+::: pf-proof
+
 The polynomial $f$ has only finitely many complex roots, whereas
-step <1>2 gives the infinite sequence of roots
+step [](#s2){.pf-ref} gives the infinite sequence of roots
 $a^{2^r}$ for $r\ge0$. Hence there exist integers $0\le r<s$ such
 that
 $$
@@ -91,25 +109,37 @@ $$
 N\coloneqq2^s-2^r>0
 $$
 has the required property.
+
 :::
 
-<1>4. For the integer $N$ from step <1>3,
+:::
+
+::: {.pf-step #s4}
+
+For the integer $N$ from step [](#s3){.pf-ref},
 $$
 \boxed{f(x)\mid x^N-1}.
 $$
 
-::: {.proof}
-Step <1>3 says that $a$ is a root of $x^N-1$. Hence its minimal
-polynomial $m_a$ divides $x^N-1$. As in step <1>1, irreducibility of
+::: pf-proof
+
+Step [](#s3){.pf-ref} says that $a$ is a root of $x^N-1$. Hence its minimal
+polynomial $m_a$ divides $x^N-1$. As in step [](#s1){.pf-ref}, irreducibility of
 $f$ and the equality $f(a)=0$ imply that $f$ is a nonzero rational
 scalar multiple of $m_a$. Therefore $f$ also divides $x^N-1$ in
 $\QQ[x]$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 establishes the required divisibility for the positive
+::: pf-qed
+
+Step [](#s4){.pf-ref} establishes the required divisibility for the positive
 integer $N$.
+
 :::
+
+:::
+
 :::

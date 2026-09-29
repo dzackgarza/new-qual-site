@@ -34,9 +34,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The ring of integers is $O=\mathbb Z[\sqrt2]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The ring of integers is $O=\mathbb Z[\sqrt2]$.
+
+::: pf-proof
+
 For $a,b\in\mathbb Z$, the element $a+b\sqrt2$ satisfies the monic
 polynomial
 $$
@@ -67,12 +73,18 @@ If $k$ were odd, this would give $m^2\equiv2\pmod4$, impossible
 because squares modulo $4$ are $0$ and $1$. Hence $k$ is even;
 then the same equality makes $m$ even. Consequently $a=m/2$ and
 $b=k/2$ are both integers. This proves the asserted equality of rings.
+
 :::
 
-<1>2. The absolute norm is multiplicative and is a positive integer
+:::
+
+::: {.pf-step #s2}
+
+The absolute norm is multiplicative and is a positive integer
 on every nonzero element of $O$.
 
-::: {.proof}
+::: pf-proof
+
 Conjugation $\tau(a+b\sqrt2)=a-b\sqrt2$ is an automorphism of the
 field. Thus
 $$
@@ -80,21 +92,27 @@ N(\alpha)=\alpha\tau(\alpha),\qquad
 N(\alpha\beta)=N(\alpha)N(\beta),
 $$
 and absolute values give multiplicativity of $\delta=|N|$.
-Step <1>1 makes $N$ integer-valued on $O$. If $\alpha\ne0$, then
+Step [](#s1){.pf-ref} makes $N$ integer-valued on $O$. If $\alpha\ne0$, then
 both $\alpha$ and $\tau(\alpha)$ are nonzero field elements, so
 $\delta(\alpha)$ is a positive integer.
+
 :::
 
-<1>3. Euclidean division holds for $\delta$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Euclidean division holds for $\delta$.
+
+::: pf-proof
+
 Let $\alpha,\beta\in O$ with $\beta\ne0$, and write
 $$
 \frac{\alpha}{\beta}=u+v\sqrt2,\qquad u,v\in\mathbb Q.
 $$
 Choose integers $m,n$ such that $|u-m|\leq1/2$ and $|v-n|\leq1/2$,
 and put $q=m+n\sqrt2\in O$ and $r=\alpha-\beta q\in O$.
-If $r=0$, the division has zero remainder. Otherwise step <1>2 gives
+If $r=0$, the division has zero remainder. Otherwise step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 \delta(r)
@@ -109,5 +127,11 @@ integral domain, and this proves that it is Euclidean. Under the
 definition also requiring $\delta(\alpha)\leq\delta(\alpha\beta)$
 for nonzero $\alpha,\beta$, that condition follows from
 multiplicativity and $\delta(\beta)\geq1$.
+
 :::
+
+:::
+
+:::
+
 :::

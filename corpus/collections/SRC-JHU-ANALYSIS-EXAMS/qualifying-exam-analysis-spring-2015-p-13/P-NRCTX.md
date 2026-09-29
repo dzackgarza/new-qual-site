@@ -31,17 +31,31 @@ $$f(1) - f(0) = \int_0^1 f'(x) \, dx.$$
 :::
 
 ::: {.solution}
-<1>1. Prove differentiability almost everywhere.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove differentiability almost everywhere.
+
+::: pf-proof
+
 Since $f$ is increasing on $[0,1]$, Lebesgue's theorem on monotone functions implies that $f$ is differentiable almost everywhere on $(0,1)$. Moreover,
 \[
 f'(x)\ge0
 \]
 at every point where the derivative exists.
+
 :::
 
-<1>2. Use convexity to obtain absolute continuity on interior compact intervals.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use convexity to obtain absolute continuity on interior compact intervals.
+
+::: pf-proof
+
 Fix
 \[
 0<a<b<1.
@@ -64,10 +78,17 @@ The Fundamental Theorem of Calculus for absolutely continuous functions gives
 \[
 f(b)-f(a)=\int_a^b f'(x)\,dx.
 \]
+
 :::
 
-<1>3. Let the interior interval expand to $[0,1]$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Let the interior interval expand to $[0,1]$.
+
+::: pf-proof
+
 Take
 \[
 a_n=1/n,
@@ -94,5 +115,11 @@ Therefore
 \boxed{
 f(1)-f(0)=\int_0^1 f'(x)\,dx.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

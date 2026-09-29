@@ -61,17 +61,30 @@ The fourth exact triangle is the octahedral one
 \longrightarrow\operatorname{cone}(a)[-1].
 \]
 
-<1>1. Define the first map by
+::: pf
+
+::: pf-step
+
+Define the first map by
 \[
 f_n(x,y)=(x,b(y)),
 \qquad (x,y)\in A_{n-1}\oplus B_n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 A direct substitution in the cone differential, using $bd_B=d_Cb$, shows that $f$ is a chain map.
+
 :::
 
-<1>2. $\operatorname{cone}(f)$ is chain-homotopy equivalent to $\operatorname{cone}(b)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$\operatorname{cone}(f)$ is chain-homotopy equivalent to $\operatorname{cone}(b)$.
+
+::: pf-proof
+
 One has
 \[
 \operatorname{cone}(f)_n
@@ -85,11 +98,18 @@ i:\operatorname{cone}(b)_n=B_{n-1}\oplus C_n\hookrightarrow\operatorname{cone}(f
 is a chain map.
 The two $A$-summands form a contractible mapping-cone pair for the identity of $A$; projecting away that contractible pair gives a chain map $r:\operatorname{cone}(f)\to\operatorname{cone}(b)$ with $ri=\mathrm{id}$, and the standard contraction of the identity cone gives $ir\simeq\mathrm{id}$.
 Hence $i$ is a chain-homotopy equivalence.
+
 :::
 
-<1>3. The fourth triangle is exact on homology.
-::: {.proof}
-Apply the mapping-cone long exact sequence to $f$ and identify $H_*(\operatorname{cone}(f))$ with $H_*(\operatorname{cone}(b))$ using <1>2. We obtain
+:::
+
+::: pf-step
+
+The fourth triangle is exact on homology.
+
+::: pf-proof
+
+Apply the mapping-cone long exact sequence to $f$ and identify $H_*(\operatorname{cone}(f))$ with $H_*(\operatorname{cone}(b))$ using step [](#s2){.pf-ref}. We obtain
 \[
 \cdots\to H_n(\operatorname{cone}(a))\to H_n(\operatorname{cone}(ba))
 \to H_n(\operatorname{cone}(b))\to H_{n-1}(\operatorname{cone}(a))\to\cdots.
@@ -100,5 +120,11 @@ A,B,C,\operatorname{cone}(a),\operatorname{cone}(b),\operatorname{cone}(ba)
 \]
 as the vertices of the usual octahedron.
 This is the octahedral diagram for the composable maps $a,b$.
+
 :::
+
+:::
+
+:::
+
 :::

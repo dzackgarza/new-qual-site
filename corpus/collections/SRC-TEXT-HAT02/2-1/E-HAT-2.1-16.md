@@ -34,12 +34,18 @@ audit:
 ::: {.solution}
 Use the long exact sequence of the pair $(X,A)$.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \boxed{H_0(X,A)=0
 \iff A\text{ meets every path-component of }X.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The tail of the long exact sequence is
 \[
 H_0(A)\xrightarrow{i_*}H_0(X)\to H_0(X,A)\to0.
@@ -51,9 +57,14 @@ i_*:H_0(A)\to H_0(X)
 is surjective.
 
 The group $H_0(X)$ is free on the path-components of $X$, and a component of $A$ maps to the generator of the component of $X$ containing it. Hence $i_*$ is surjective exactly when every component of $X$ contains a point, equivalently a component, of $A$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 H_1(X,A)=0
 \]
@@ -66,30 +77,52 @@ is surjective and
 H_0(A)\to H_0(X)
 \]
 is injective.
-::: {.proof}
+
+::: pf-proof
+
 Use the exact segment
 \[
 H_1(A)\to H_1(X)\to H_1(X,A)
 \to H_0(A)\to H_0(X)
 \]
 and apply the five-term criterion proved in Exercise 15.
+
 :::
 
-<1>3. The map
+:::
+
+::: {.pf-step #s3}
+
+The map
 \[
 H_0(A)\to H_0(X)
 \]
 is injective if and only if each path-component of $X$ contains at most one path-component of $A$.
-::: {.proof}
+
+::: pf-proof
+
 Again use the component bases. Two distinct component generators of $H_0(A)$ have the same image exactly when their components lie in the same component of $X$. Thus injectivity is equivalent to the stated condition.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{H_1(X,A)=0}
 \]
 if and only if $H_1(A)\to H_1(X)$ is surjective and every path-component of $X$ contains at most one path-component of $A$.
-::: {.proof}
-Combine <1>2 and <1>3.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

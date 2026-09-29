@@ -34,9 +34,15 @@ f(z)=z+\frac{z^2}{2}.
 :::
 
 ::: {.solution}
-<1>1. The map $f$ is injective on $\DD$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The map $f$ is injective on $\DD$.
+
+::: pf-proof
+
 For $z,w\in\DD$,
 $$
 f(z)-f(w)
@@ -52,14 +58,20 @@ $$
 2,
 $$
 which is impossible when $z+w=-2$. Hence $z=w$.
+
 :::
 
-<1>2. The real Jacobian determinant of $f$ at $z\in\DD$ is
+:::
+
+::: {.pf-step #s2}
+
+The real Jacobian determinant of $f$ at $z\in\DD$ is
 $$
 J_f(z)=\abs{1+z}^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a holomorphic map, the real Jacobian determinant is
 $\abs{f'(z)}^2$. Here
 $$
@@ -70,15 +82,21 @@ $$
 J_f(z)=\abs{f'(z)}^2=\abs{1+z}^2.
 $$
 Since $-1\notin\DD$, this Jacobian is positive throughout $\DD$.
+
 :::
 
-<1>3. The area of $f(\DD)$ is
+:::
+
+::: {.pf-step #s3}
+
+The area of $f(\DD)$ is
 $$
 \int_{\DD}\abs{1+z}^2\,dA(z).
 $$
 
-::: {.proof}
-By step <1>1, $f$ is injective on $\DD$, and by step <1>2 its
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $f$ is injective on $\DD$, and by step [](#s2){.pf-ref} its
 Jacobian is positive there. The change-of-variables formula therefore
 gives
 $$
@@ -88,21 +106,27 @@ $$
 =
 \int_{\DD}\abs{1+z}^2\,dA(z).
 $$
+
 :::
 
-<1>4. The required area is
+:::
+
+::: {.pf-step #s4}
+
+The required area is
 $$
 \boxed{\frac{3\pi}{2}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Writing $z=re^{i\theta}$,
 $$
 \abs{1+re^{i\theta}}^2
 =
 1+2r\cos\theta+r^2.
 $$
-Hence step <1>3 gives
+Hence step [](#s3){.pf-ref} gives
 $$
 \begin{aligned}
 \operatorname{Area}(f(\DD))
@@ -117,11 +141,17 @@ $$
 \frac{3\pi}{2}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested area.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested area.
+
+:::
+
+:::
+
 :::

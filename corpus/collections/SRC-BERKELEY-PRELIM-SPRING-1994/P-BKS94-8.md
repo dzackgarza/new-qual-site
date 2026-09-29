@@ -31,13 +31,19 @@ Find all automorphisms of $\mathbb { Z } [ x ]$ , the ring of polynomials over $
 :::
 
 ::: {.solution}
-<1>1. Every ring automorphism
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every ring automorphism
 $$
 \varphi:\ZZ[x]\longrightarrow\ZZ[x]
 $$
 fixes every integer.
 
-::: {.proof}
+::: pf-proof
+
 An automorphism sends the multiplicative identity to the multiplicative
 identity, so
 $$
@@ -48,20 +54,26 @@ $$
 \varphi(n)=n
 $$
 for every $n\in\ZZ$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 p(x)\coloneqq\varphi(x),
 $$
 then $p$ has degree $1$.
 
-::: {.proof}
+::: pf-proof
+
 Let $\psi=\varphi^{-1}$ and put
 $$
 q(x)\coloneqq\psi(x).
 $$
-By step <1>1, both automorphisms fix the coefficients in $\ZZ$. Therefore
+By step [](#s1){.pf-ref}, both automorphisms fix the coefficients in $\ZZ$. Therefore
 $$
 x
 =
@@ -85,15 +97,21 @@ Thus
 $$
 \deg p=\deg q=1.
 $$
+
 :::
 
-<1>3. There are $\varepsilon\in\{1,-1\}$ and $b\in\ZZ$ such that
+:::
+
+::: {.pf-step #s3}
+
+There are $\varepsilon\in\{1,-1\}$ and $b\in\ZZ$ such that
 $$
 \varphi(x)=\varepsilon x+b.
 $$
 
-::: {.proof}
-By step <1>2, write
+::: pf-proof
+
+By step [](#s2){.pf-ref}, write
 $$
 p(x)=ax+b,
 \qquad
@@ -114,16 +132,22 @@ a=c=1
 a=c=-1.
 $$
 Thus $a=\varepsilon\in\{1,-1\}$.
+
 :::
 
-<1>4. Conversely, for every $b\in\ZZ$ and
+:::
+
+::: {.pf-step #s4}
+
+Conversely, for every $b\in\ZZ$ and
 $\varepsilon\in\{1,-1\}$, the assignment
 $$
 x\longmapsto\varepsilon x+b
 $$
 extends to an automorphism of $\ZZ[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Substitution gives a ring endomorphism
 $$
 \varphi_{\varepsilon,b}(f)(x)
@@ -139,9 +163,14 @@ $$
 x\longmapsto -x+b
 $$
 is its own inverse. Hence each displayed substitution is an automorphism.
+
 :::
 
-<1>5. The complete list is
+:::
+
+::: {.pf-step #s5}
+
+The complete list is
 $$
 \boxed{
 \varphi_{\varepsilon,b}(f)(x)
@@ -154,14 +183,21 @@ b\in\ZZ
 }.
 $$
 
-::: {.proof}
-Step <1>3 shows that every automorphism is on the list, and step <1>4 shows
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that every automorphism is on the list, and step [](#s4){.pf-ref} shows
 that every map on the list is an automorphism.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives all automorphisms of $\ZZ[x]$.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives all automorphisms of $\ZZ[x]$.
+
+:::
+
+:::
+
 :::

@@ -36,24 +36,44 @@ $F_4=\{a+b\sqrt[4]2:a,b\in\mathbb Q\}$.
 ::: {.solution}
 Only $F_3$ is a subfield of $\mathbb R$.
 
-<1>1. $F_1$ is not a field.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$F_1$ is not a field.
+
+::: pf-proof
+
 The element $2=2/1$ belongs to $F_1$, but its inverse $1/2$ cannot be written with odd denominator after reduction.
 Thus $F_1$ is not closed under inverses of nonzero elements.
+
 :::
 
-<1>2. $F_2$ is not a field.
-::: {.proof}
+:::
+
+::: pf-step
+
+$F_2$ is not a field.
+
+::: pf-proof
+
 The integer $2$ belongs to $F_2$, whereas $1/2$ does not, since an equality
 \[
 \frac12=a+b\sqrt2,
 \qquad a,b\in\mathbb Z,
 \]
 would force $b=0$ and then $a=1/2\notin\mathbb Z$.
+
 :::
 
-<1>3. $F_3$ is a field.
-::: {.proof}
+:::
+
+::: pf-step
+
+$F_3$ is a field.
+
+::: pf-proof
+
 It is $\mathbb Q(\sqrt2)$.
 Addition and multiplication preserve the form $a+b\sqrt2$.
 If $a+b\sqrt2\ne0$, then
@@ -61,10 +81,17 @@ If $a+b\sqrt2\ne0$, then
 (a+b\sqrt2)^{-1}=\frac{a-b\sqrt2}{a^2-2b^2}.
 \]
 The denominator is nonzero (otherwise $a/b=\pm\sqrt2$ when $b\ne0$), and the coefficients of the displayed inverse are rational.
+
 :::
 
-<1>4. $F_4$ is not a field.
-::: {.proof}
+:::
+
+::: pf-step
+
+$F_4$ is not a field.
+
+::: pf-proof
+
 It contains $\alpha=\sqrt[4]{2}$, but closure under multiplication would require
 \[
 \alpha^2=\sqrt2=a+b\alpha
@@ -73,6 +100,11 @@ for some $a,b\in\mathbb Q$.
 This would give the nontrivial $\mathbb Q$-linear relation $\alpha^2-a-b\alpha=0$ among $1,\alpha,\alpha^2$.
 But $T^4-2$ is irreducible over $\mathbb Q$ by Eisenstein at $2$, so $1,\alpha,\alpha^2,\alpha^3$ are linearly independent over $\mathbb Q$.
 Hence $\sqrt2\notin\operatorname{span}_{\mathbb Q}\{1,\alpha\}$.
+
+:::
+
+:::
+
 :::
 
 Therefore the answer is $\boxed{F_3\text{ only}}$.

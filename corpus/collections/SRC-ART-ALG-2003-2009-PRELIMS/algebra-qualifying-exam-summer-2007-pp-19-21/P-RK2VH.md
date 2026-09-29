@@ -38,7 +38,12 @@ d. Show that in a group of order 105, both the 5-Sylow and the 7-Sylow subgroups
 :::
 
 ::: {.solution}
-<1>1. The Sylow theorems have the following form.
+
+::: pf
+
+::: {.pf-step #s1}
+
+The Sylow theorems have the following form.
 
 For a finite group $H$ of order $p^a m$, with $p$ prime and $p\nmid m$,
 there is a subgroup of order $p^a$, called a Sylow $p$-subgroup.
@@ -51,10 +56,15 @@ preserves subgroup order for the other.
 
 For the remaining parts, let $|G|=105=3\cdot5\cdot7$.
 
-<1>2. At least one of the Sylow $5$- and $7$-subgroups is normal.
+:::
 
-::: {.proof}
-The divisibility and congruence conditions in step <1>1 give
+::: {.pf-step #s2}
+
+At least one of the Sylow $5$- and $7$-subgroups is normal.
+
+::: pf-proof
+
+The divisibility and congruence conditions in step [](#s1){.pf-ref} give
 $$
 n_5\in\{1,21\},\qquad n_7\in\{1,15\}.
 $$
@@ -72,12 +82,18 @@ $$
 $$
 distinct nonidentity elements in a group having only $104$ of them.
 This is impossible. Hence $n_5=1$ or $n_7=1$.
+
 :::
 
-<1>3. There is a normal subgroup $N\lhd G$ of order $35$.
+:::
 
-::: {.proof}
-Choose a normal Sylow subgroup $P$ supplied by step <1>2, and write
+::: pf-step
+
+There is a normal subgroup $N\lhd G$ of order $35$.
+
+::: pf-proof
+
+Choose a normal Sylow subgroup $P$ supplied by step [](#s2){.pf-ref}, and write
 $|P|=p$ and $\{p,q\}=\{5,7\}$. Then $|G/P|=3q$. The number of
 Sylow $q$-subgroups of $G/P$ divides $3$ and is $1$ modulo $q$.
 Since $q\geq5$, this number is $1$. Let $\overline Q$ be that unique,
@@ -89,11 +105,17 @@ of $\overline Q$ gives
 $\rho(gng^{-1})\in\overline Q$, so $N\lhd G$.
 The restriction $N\to\overline Q$ is surjective with kernel $P$;
 its fibers are the cosets of $P$. Hence $|N|=pq=35$.
+
 :::
 
-<1>4. Both Sylow subgroups are normal in $G$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Both Sylow subgroups are normal in $G$.
+
+::: pf-proof
+
 Inside $N$, the number of Sylow $5$-subgroups divides $7$ and is
 $1$ modulo $5$, so it is $1$. The number of Sylow $7$-subgroups
 divides $5$ and is $1$ modulo $7$, so it too is $1$.
@@ -105,5 +127,11 @@ $N$ gives $gP_pg^{-1}=P_p$. Therefore $P_5$ and $P_7$ are normal
 in $G$. They are Sylow subgroups of $G$ because $105$ contains each
 of $5$ and $7$ to the first power. By conjugacy, they are also the
 unique Sylow subgroups of $G$ for their respective primes.
+
 :::
+
+:::
+
+:::
+
 :::

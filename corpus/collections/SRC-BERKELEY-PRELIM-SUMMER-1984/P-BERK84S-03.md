@@ -35,7 +35,6 @@ $$
 $$
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -43,8 +42,14 @@ L=\operatorname{im}f\subseteq\mathbb R^n.
 \]
 Since $\operatorname{rank}f=n-1$, the subspace $L$ is a hyperplane.
 
-<1>1. A nonzero linear relation among $f_1,\ldots,f_n$ is the same thing as a nonzero vector orthogonal to $L$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A nonzero linear relation among $f_1,\ldots,f_n$ is the same thing as a nonzero vector orthogonal to $L$.
+
+::: pf-proof
+
 For $\lambda=(\lambda_1,\ldots,\lambda_n)\in\mathbb R^n$,
 \[
 \sum_{i=1}^n\lambda_i f_i=0
@@ -56,10 +61,17 @@ means that for every $v\in\mathbb R^m$,
 \]
 Thus the relation holds exactly when $\lambda\in L^\perp$.
 Because $\dim L=n-1$, the space $L^\perp$ is one-dimensional and contains a nonzero vector.
+
 :::
 
-<1>2. If there is a relation with $\lambda_i\ge0$ and not all $\lambda_i=0$, then the strict inequalities have no solution.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If there is a relation with $\lambda_i\ge0$ and not all $\lambda_i=0$, then the strict inequalities have no solution.
+
+::: pf-proof
+
 Suppose, toward a contradiction, that some $v$ satisfies
 \[
 f_i(v)>0\qquad(i=1,\ldots,n).
@@ -73,10 +85,17 @@ because every summand is nonnegative and at least one coefficient $\lambda_i$ is
 \sum_{i=1}^n\lambda_i f_i(v)=0,
 \]
 a contradiction.
+
 :::
 
-<1>3. If the strict inequalities have no solution, then some nonzero vector in $L^\perp$ has all coordinates of one sign.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If the strict inequalities have no solution, then some nonzero vector in $L^\perp$ has all coordinates of one sign.
+
+::: pf-proof
+
 Choose $0\ne\lambda=(\lambda_1,\ldots,\lambda_n)\in L^\perp$.
 Suppose that $\lambda$ has at least one positive coordinate and at least one negative coordinate. Put
 \[
@@ -114,14 +133,27 @@ Thus $\lambda$ cannot have both positive and negative coordinates. Multiplying $
 \lambda_i\ge0\qquad(i=1,\ldots,n).
 \]
 Since $\lambda\ne0$, the coefficients are not all zero.
+
 :::
 
-<1>4. The two conditions are equivalent.
-::: {.proof}
-By <1>1 and <1>3, infeasibility produces real numbers $\lambda_i\ge0$, not all zero, with
+:::
+
+::: pf-step
+
+The two conditions are equivalent.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s3){.pf-ref}, infeasibility produces real numbers $\lambda_i\ge0$, not all zero, with
 \[
 \sum_{i=1}^n\lambda_i f_i=0.
 \]
-By <1>2, any such relation makes the strict system infeasible. Hence the stated condition is both necessary and sufficient.
+By step [](#s2){.pf-ref}, any such relation makes the strict system infeasible. Hence the stated condition is both necessary and sufficient.
+
 :::
+
+:::
+
+:::
+
 :::

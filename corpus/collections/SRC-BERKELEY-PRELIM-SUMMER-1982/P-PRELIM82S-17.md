@@ -43,10 +43,15 @@ $$
 Z=f^{-1}(0).
 $$
 
-<1>1. The set $Z$ is a closed smooth embedded submanifold of $\RR^3$
+::: pf
+
+::: {.pf-step #s1}
+
+The set $Z$ is a closed smooth embedded submanifold of $\RR^3$
 of dimension $1$.
 
-::: {.proof}
+::: pf-proof
+
 The set $Z$ is closed because $f$ is continuous and $\{0\}$ is closed.
 Since $0$ is a regular value and
 $$
@@ -57,9 +62,14 @@ $$
 \dim Z=3-2=1.
 $$
 If $Z$ is empty, its complement is $\RR^3$, which is arcwise connected.
+
 :::
 
-<1>2. Let $a,b\in\RR^3\setminus Z$ be distinct, and define the
+:::
+
+::: {.pf-step #s2}
+
+Let $a,b\in\RR^3\setminus Z$ be distinct, and define the
 straight arc
 $$
 \gamma_0(t)=(1-t)a+tb,
@@ -69,13 +79,19 @@ $$
 There are neighborhoods of $0$ and $1$ in $[0,1]$ whose images under
 $\gamma_0$ are disjoint from $Z$.
 
-::: {.proof}
+::: pf-proof
+
 Since $Z$ is closed and $a,b\notin Z$, there are open balls about
 $a$ and $b$ disjoint from $Z$. Continuity of $\gamma_0$ gives
 intervals near $0$ and $1$ mapped into those balls.
+
 :::
 
-<1>3. There exists a smooth embedded arc
+:::
+
+::: {.pf-step #s3}
+
+There exists a smooth embedded arc
 $$
 \gamma:[0,1]\longrightarrow\RR^3
 $$
@@ -88,20 +104,27 @@ $$
 which agrees with $\gamma_0$ near the endpoints and is transverse to
 $Z$.
 
-::: {.proof}
+::: pf-proof
+
 Apply the relative transversality theorem to $\gamma_0$ and the
 submanifold $Z$, keeping the map fixed on the endpoint neighborhoods
-from step <1>2. It gives an arbitrarily small smooth perturbation
+from step [](#s2){.pf-ref}. It gives an arbitrarily small smooth perturbation
 $\gamma$ that is transverse to $Z$ and agrees with $\gamma_0$ there.
 The original map $\gamma_0$ is an embedding because $a\neq b$.
 Embeddings of the compact interval into $\RR^3$ are open in the
 $C^1$ topology, so the perturbation may be chosen small enough that
 $\gamma$ is still an embedding.
+
 :::
 
-<1>4. The arc $\gamma$ does not meet $Z$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The arc $\gamma$ does not meet $Z$.
+
+::: pf-proof
+
 Suppose instead that
 $$
 z=\gamma(t)\in Z
@@ -110,7 +133,7 @@ for some $t\in[0,1]$. Transversality would require
 $$
 D\gamma_t(T_t[0,1])+T_zZ=T_z\RR^3.
 $$
-The first summand has dimension at most $1$, and step <1>1 gives
+The first summand has dimension at most $1$, and step [](#s1){.pf-ref} gives
 $$
 \dim T_zZ=1.
 $$
@@ -122,29 +145,47 @@ This is impossible. Therefore
 $$
 \gamma([0,1])\cap Z=\varnothing.
 $$
+
 :::
 
-<1>5. Any two distinct points of $\RR^3\setminus Z$ are joined by an
+:::
+
+::: {.pf-step #s5}
+
+Any two distinct points of $\RR^3\setminus Z$ are joined by an
 arc contained in $\RR^3\setminus Z$.
 
-::: {.proof}
-For arbitrary distinct $a,b\in\RR^3\setminus Z$, step <1>3 gives an
-embedded arc from $a$ to $b$, and step <1>4 shows that its image lies
+::: pf-proof
+
+For arbitrary distinct $a,b\in\RR^3\setminus Z$, step [](#s3){.pf-ref} gives an
+embedded arc from $a$ to $b$, and step [](#s4){.pf-ref} shows that its image lies
 entirely in the complement.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{\RR^3\setminus f^{-1}(0)\text{ is arcwise connected}}.
 $$
 
-::: {.proof}
-Step <1>5 is exactly the defining property of arcwise connectedness.
+::: pf-proof
+
+Step [](#s5){.pf-ref} is exactly the defining property of arcwise connectedness.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

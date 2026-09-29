@@ -35,13 +35,19 @@ Show that $f$ is homotopic to the identity by a homotopy $f_t$ that is stationar
 ::: {.solution}
 Write points of $S^1$ by angles modulo $2\pi$.
 
-<1>1. The maps
+::: pf
+
+::: {.pf-step #s1}
+
+The maps
 \[
 f_t(\theta,s)=(\theta+2\pi ts,s),
 \qquad 0\le t\le1,
 \]
 give a homotopy from the identity to $f$ that is stationary on the boundary circle $S^1\times\{0\}$.
-::: {.proof}
+
+::: pf-proof
+
 At $t=0$,
 \[
 f_0(\theta,s)=(\theta,s),
@@ -52,9 +58,14 @@ For every $t$ and every $\theta$,
 f_t(\theta,0)=(\theta,0),
 \]
 so the lower boundary circle is fixed pointwise throughout the homotopy.
+
 :::
 
-<1>2. Fix $\theta_0\in S^1$ and let
+:::
+
+::: pf-step
+
+Fix $\theta_0\in S^1$ and let
 \[
 \alpha(s)=(\theta_0,s),
 \qquad 0\le s\le1.
@@ -63,13 +74,22 @@ Then
 \[
 (f\circ\alpha)(s)=(\theta_0+2\pi s,s).
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from the definition of $f$.
 Both paths run from $(\theta_0,0)$ to $(\theta_0,1)$ because adding $2\pi$ does not change the point of $S^1$.
+
 :::
 
-<1>3. The paths $\alpha$ and $f\circ\alpha$ are not homotopic relative to their endpoints in $S^1\times I$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The paths $\alpha$ and $f\circ\alpha$ are not homotopic relative to their endpoints in $S^1\times I$.
+
+::: pf-proof
+
 Let
 \[
 r:S^1\times I\to S^1,
@@ -88,10 +108,17 @@ But the first loop represents $0$ and the second represents $1$ in
 \pi_1(S^1,\theta_0)\cong\mathbb Z.
 \]
 They therefore cannot be based-homotopic.
+
 :::
 
-<1>4. There is no homotopy from the identity to $f$ that is stationary on both boundary circles.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+There is no homotopy from the identity to $f$ that is stationary on both boundary circles.
+
+::: pf-proof
+
 Suppose
 \[
 F_t:S^1\times I\to S^1\times I
@@ -114,17 +141,30 @@ H(0,t)=\alpha(0),
 H(1,t)=\alpha(1)
 \]
 for all $t$.
-Thus $H$ would be a homotopy relative to endpoints between $\alpha$ and $f\circ\alpha$, contradicting <1>3.
+Thus $H$ would be a homotopy relative to endpoints between $\alpha$ and $f\circ\alpha$, contradicting step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Hence $f$ is homotopic to the identity relative to either chosen single boundary circle, but not relative to both boundary circles simultaneously.
-::: {.proof}
-The lower-boundary statement is <1>1.
+:::
+
+::: pf-step
+
+Hence $f$ is homotopic to the identity relative to either chosen single boundary circle, but not relative to both boundary circles simultaneously.
+
+::: pf-proof
+
+The lower-boundary statement is step [](#s1){.pf-ref}.
 For the upper boundary circle one can instead use
 \[
 g_t(\theta,s)=(\theta+2\pi t(s-1),s).
 \]
 At $t=0$ this is the identity, at $t=1$ it agrees with $f$ because angles differing by $2\pi$ define the same point of $S^1$, and at $s=1$ it fixes $(\theta,1)$ for every $t$.
-The impossibility of fixing both is <1>4.
+The impossibility of fixing both is step [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

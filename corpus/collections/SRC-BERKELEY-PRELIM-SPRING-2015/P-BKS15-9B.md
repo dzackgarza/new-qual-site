@@ -42,7 +42,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The exponent $a(n)$ satisfies
+
+::: pf
+
+::: {.pf-step #s1}
+
+The exponent $a(n)$ satisfies
 $$
 a(n)
 =
@@ -50,15 +55,21 @@ a(n)
 $$
 where $v_p(r)$ is the exponent of $p$ in the prime factorization of $r$.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 n!=\prod_{r=1}^n r,
 $$
 the exponent of $p$ in $n!$ is the sum of the exponents of $p$ in its factors.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 a(n)
 =
@@ -66,14 +77,15 @@ a(n)
 \left\lfloor\frac{n}{p^k}\right\rfloor.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each positive integer $r$,
 $$
 v_p(r)
 =
 \sum_{k\geq1}\mathbf 1_{p^k\mid r}.
 $$
-Therefore step <1>1 gives
+Therefore step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 a(n)
@@ -88,9 +100,14 @@ a(n)
 \end{aligned}
 $$
 Only finitely many terms are nonzero. This proves part (a).
+
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #s3}
+
+If
 $$
 n=\sum_{j\geq0}d_jp^j,
 \qquad
@@ -103,7 +120,8 @@ $$
 \sum_{j\geq k}d_jp^{j-k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Divide the base-$p$ expansion by $p^k$:
 $$
 \frac{n}{p^k}
@@ -121,9 +139,14 @@ $$
 p^k.
 $$
 Taking the floor gives the displayed formula.
+
 :::
 
-<1>4. In terms of the base-$p$ digits,
+:::
+
+::: {.pf-step #s4}
+
+In terms of the base-$p$ digits,
 $$
 \boxed{
 a(n)
@@ -132,8 +155,9 @@ a(n)
 }.
 $$
 
-::: {.proof}
-Substitute step <1>3 into step <1>2 and interchange the finite sums:
+::: pf-proof
+
+Substitute step [](#s3){.pf-ref} into step [](#s2){.pf-ref} and interchange the finite sums:
 $$
 \begin{aligned}
 a(n)
@@ -146,15 +170,21 @@ a(n)
 \end{aligned}
 $$
 This proves part (b).
+
 :::
 
-<1>5. The quantities $n$, $a(n)$, and $b(n)$ satisfy
+:::
+
+::: {.pf-step #s5}
+
+The quantities $n$, $a(n)$, and $b(n)$ satisfy
 $$
 \boxed{n=(p-1)a(n)+b(n)}.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 \begin{aligned}
 (p-1)a(n)
@@ -179,11 +209,17 @@ $$
 (p-1)a(n)+b(n)=n.
 $$
 This proves part (c).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part (a), step <1>4 proves part (b), and step <1>5 proves part (c).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), step [](#s4){.pf-ref} proves part (b), and step [](#s5){.pf-ref} proves part (c).
+
+:::
+
+:::
+
 :::

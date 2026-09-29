@@ -60,11 +60,16 @@ $$
 L=\OO_X(C_0+\mfb f).
 $$
 
-<1>1. On the elliptic curve $C$, every line bundle of positive degree is
+::: pf
+
+::: {.pf-step #s1}
+
+On the elliptic curve $C$, every line bundle of positive degree is
 nonspecial; degree at least $2$ is base-point free, and degree at least $3$
 is very ample.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 K_C\cong\OO_C,
@@ -79,15 +84,21 @@ $M$ is nonspecial.
 The base-point-free and very-ample degree bounds are the genus-one cases of
 the standard curve criteria [[T-D8TUX]]: degree at least $2g=2$ is
 base-point free, and degree at least $2g+1=3$ is very ample.
+
 :::
 
-<1>2. If $e\ge0$ and
+:::
+
+::: {.pf-step #s2}
+
+If $e\ge0$ and
 $$
 m\ge e+2,
 $$
 then part (a) holds.
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 \deg\mfb=m\ge2
@@ -96,16 +107,21 @@ and
 $$
 \deg(\mfb+\mfe)=m-e\ge2.
 $$
-By step <1>1, both complete linear systems are base-point free, and $\mfb$
+By step [](#s1){.pf-ref}, both complete linear systems are base-point free, and $\mfb$
 is nonspecial. Hartshorne V.2.11, proved on
 [[P-AGH5211VERYAMPLESECT]], therefore gives a section
 $$
 D\sim C_0+\mfb f
 $$
 and says that $|L|$ has no base points.
+
 :::
 
-<1>3. Suppose $e=-1$. Then $\deg\mathcal E=1$, the normalized bundle
+:::
+
+::: {.pf-step #s3}
+
+Suppose $e=-1$. Then $\deg\mathcal E=1$, the normalized bundle
 $\mathcal E$ is stable, and
 $$
 L\cong\OO_X(1)\tensor\pi^*\OO_C(\mfb),
@@ -113,7 +129,8 @@ L\cong\OO_X(1)\tensor\pi^*\OO_C(\mfb),
 \pi_*L\cong\mathcal E\tensor\OO_C(\mfb).
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition of the invariant of a normalized ruled surface,
 $$
 e=-\deg\det\mathcal E.
@@ -150,15 +167,21 @@ $$
 \pi_*\OO_X(1)\cong\mathcal E,
 $$
 so the projection formula gives the displayed formula for $\pi_*L$.
+
 :::
 
-<1>4. Let $F$ be a stable vector bundle of positive degree on the elliptic
+:::
+
+::: {.pf-step #s4}
+
+Let $F$ be a stable vector bundle of positive degree on the elliptic
 curve $C$. Then
 $$
 H^1(C,F)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Serre duality and $K_C\cong\OO_C$ give
 $$
 H^1(C,F)^\vee\cong H^0(C,F^\vee).
@@ -170,12 +193,18 @@ $$
 0>\mu(F^\vee).
 $$
 Thus $H^0(C,F^\vee)=0$ and hence $H^1(C,F)=0$.
+
 :::
 
-<1>5. If $e=-1$ and $m\ge1$, then $|L|$ has no base points and contains a
+:::
+
+::: {.pf-step #s5}
+
+If $e=-1$ and $m\ge1$, then $|L|$ has no base points and contains a
 section of $\pi$.
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 F=\mathcal E\tensor\OO_C(\mfb).
@@ -196,7 +225,7 @@ has degree
 $$
 1+2m-2=2m-1>0.
 $$
-Step <1>4 therefore gives
+Step [](#s4){.pf-ref} therefore gives
 $$
 H^1(C,F(-P))=0.
 $$
@@ -210,7 +239,7 @@ H^0(C,F)\twoheadrightarrow F|_P
 $$
 for every $P$.
 
-By step <1>3 and cohomology and base change,
+By step [](#s3){.pf-ref} and cohomology and base change,
 $$
 F|_P
 \cong
@@ -222,7 +251,7 @@ Thus the complete system $|L|$ restricts to the complete
 $|\OO_{\PP^1}(1)|$ on every ruling fibre. In particular $|L|$ has no base
 points.
 
-The incidence argument of [[P-AGH5211VERYAMPLESECT]], step <1>4, now applies
+The incidence argument of [[P-AGH5211VERYAMPLESECT]], step [](#s4){.pf-ref}, now applies
 verbatim: the sections vanishing identically on a fixed fibre form a
 codimension-two subspace of $H^0(X,L)$, so a general divisor in $|L|$
 contains no fibre. Since
@@ -231,40 +260,52 @@ L\cdot f=1,
 $$
 such a divisor is a section of $\pi$. This proves part (a) in the exceptional
 $e=-1$ case.
+
 :::
 
-<1>6. Part (a) holds for every ruled surface over $C$ satisfying
+:::
+
+::: {.pf-step #s6}
+
+Part (a) holds for every ruled surface over $C$ satisfying
 $$
 \deg\mfb\ge e+2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The standard invariant bound quoted in [[P-AGH525INVARIANTE]] for a ruled
 surface over a genus-one curve is
 $$
 e\ge-1.
 $$
-If $e\ge0$, apply step <1>2. If $e=-1$, the hypothesis is exactly
+If $e\ge0$, apply step [](#s2){.pf-ref}. If $e=-1$, the hypothesis is exactly
 $$
 m\ge1,
 $$
-so step <1>5 applies.
+so step [](#s5){.pf-ref} applies.
+
 :::
 
-<1>7. If $e\ge0$ and
+:::
+
+::: {.pf-step #s7}
+
+If $e\ge0$ and
 $$
 m\ge e+3,
 $$
 then $L$ is very ample.
 
-::: {.proof}
+::: pf-proof
+
 The two line bundles on the base have degrees
 $$
 \deg\mfb=m\ge3,
 \qquad
 \deg(\mfb+\mfe)=m-e\ge3.
 $$
-Hence both are very ample by step <1>1.
+Hence both are very ample by step [](#s1){.pf-ref}.
 
 For every point $P\in C$,
 $$
@@ -274,32 +315,38 @@ and
 $$
 \deg(\mfb+\mfe-P)=m-e-1>0.
 $$
-Step <1>1 makes both line bundles nonspecial. Hartshorne V.2.11(b), proved
+Step [](#s1){.pf-ref} makes both line bundles nonspecial. Hartshorne V.2.11(b), proved
 on [[P-AGH5211VERYAMPLESECT]], therefore says that
 $$
 C_0+\mfb f
 $$
 is very ample.
+
 :::
 
-<1>8. If $e=-1$ and
+:::
+
+::: {.pf-step #s8}
+
+If $e=-1$ and
 $$
 m\ge2,
 $$
 then $L$ separates every zero-dimensional subscheme of $X$ of length $2$.
 
-::: {.proof}
+::: pf-proof
+
 Keep
 $$
 F=\mathcal E\tensor\OO_C(\mfb)
 $$
-from step <1>5. It is stable of degree
+from step [](#s5){.pf-ref}. It is stable of degree
 $$
 1+2m.
 $$
 
 First let $Z$ be a length-two subscheme contained in one fibre $F_P$.
-The bundle $F(-P)$ has positive degree $2m-1$, so step <1>4 gives
+The bundle $F(-P)$ has positive degree $2m-1$, so step [](#s4){.pf-ref} gives
 $$
 H^1(C,F(-P))=0.
 $$
@@ -311,7 +358,7 @@ and $\OO_{\PP^1}(1)$ separates $Z$.
 
 Now suppose $Z$ is not contained in a fibre. Its scheme-theoretic image is a
 degree-two effective divisor $A$ on $C$, and $Z\to A$ is an isomorphism, as
-in [[P-AGH5211VERYAMPLESECT]], step <1>8. The twist
+in [[P-AGH5211VERYAMPLESECT]], step [](#s8){.pf-ref}. The twist
 $$
 F(-A)
 $$
@@ -319,7 +366,7 @@ is stable of degree
 $$
 1+2m-4=2m-3>0.
 $$
-Step <1>4 gives
+Step [](#s4){.pf-ref} gives
 $$
 H^1(C,F(-A))=0,
 $$
@@ -342,22 +389,34 @@ $$
 H^0(X,L)\longrightarrow H^0(Z,L|_Z)
 $$
 is surjective. Thus every length-two subscheme is separated.
+
 :::
 
-<1>9. If $e=-1$ and $m\ge2$, then $L$ is very ample.
+:::
 
-::: {.proof}
-By step <1>8, the complete linear system of $L$ separates every
+::: {.pf-step #s9}
+
+If $e=-1$ and $m\ge2$, then $L$ is very ample.
+
+::: pf-proof
+
+By step [](#s8){.pf-ref}, the complete linear system of $L$ separates every
 zero-dimensional subscheme of length $2$. The closed-immersion criterion
 [[T-DIVMAPPN]] therefore makes $L$ very ample.
+
 :::
 
-<1>10. If $L$ is very ample, then
+:::
+
+::: {.pf-step #s10}
+
+If $L$ is very ample, then
 $$
 \boxed{m\ge e+3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The restriction of a very ample line bundle to a closed subscheme is very
 ample. In particular,
 $$
@@ -382,9 +441,14 @@ or equivalently
 $$
 m\ge e+3.
 $$
+
 :::
 
-<1>11. Therefore
+:::
+
+::: {.pf-step #s11}
+
+Therefore
 $$
 \boxed{
 |C_0+\mfb f|\text{ is very ample}
@@ -392,15 +456,22 @@ $$
 \deg\mfb\ge e+3.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 For sufficiency, the invariant bound gives either $e\ge0$, handled by step
-<1>7, or $e=-1$, where $m\ge e+3=2$ and step <1>9 applies. Necessity is step
-<1>10. This proves part (b).
+[](#s7){.pf-ref}, or $e=-1$, where $m\ge e+3=2$ and step [](#s9){.pf-ref} applies. Necessity is step
+[](#s10){.pf-ref}. This proves part (b).
+
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Step <1>6 proves part (a), and steps <1>7--<1>11 prove part (b).
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} proves part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

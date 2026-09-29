@@ -30,8 +30,15 @@ What can we say about $\operatorname{Gal}(F/E)$?
 :::
 
 ::: {.solution}
-<1>1. The subgroup corresponding to $L$ has index $2$ in $\operatorname{Gal}(F/E)$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The subgroup corresponding to $L$ has index $2$ in $\operatorname{Gal}(F/E)$.
+
+::: pf-proof
+
 Set
 \[
 G=\operatorname{Gal}(F/E)
@@ -43,10 +50,17 @@ By the fundamental theorem of Galois theory,
 [G:H]=[L:E]=2.
 \]
 Thus $G$ contains a subgroup of index $2$.
+
 :::
 
-<1>2. Consequently $H$ is normal and $G$ has a quotient isomorphic to $C_2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Consequently $H$ is normal and $G$ has a quotient isomorphic to $C_2$.
+
+::: pf-proof
+
 Every subgroup of index $2$ is normal: the two left cosets and the two right cosets both consist of $H$ and its complement, so they coincide.
 Hence
 \[
@@ -64,5 +78,11 @@ Equivalently, $G$ admits a surjective homomorphism onto $C_2$.
 In particular $|G|$ is even.
 
 This is the general structural conclusion: $\operatorname{Gal}(F/E)$ has a normal subgroup of index $2$.
+
 :::
+
+:::
+
+:::
+
 :::

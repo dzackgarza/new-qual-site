@@ -35,17 +35,27 @@ f(t)-f(a)
 $$
 Set $\varepsilon(a)\coloneqq0$.
 
-<1>1. For every $n$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n$,
 $$
 x_n\le a\le y_n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $m\ge n$, monotonicity gives $x_n\le x_m$ and $y_m\le y_n$.
 Letting $m\to\infty$ gives $x_n\le a$ and $a\le y_n$.
+
 :::
 
-<1>2. For every $n$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n$,
 $$
 \abs{
 \frac{f(y_n)-f(x_n)}{y_n-x_n}-f'(a)
@@ -54,7 +64,8 @@ $$
 \max\{\abs{\varepsilon(x_n)},\abs{\varepsilon(y_n)}\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using the expansion above at $x_n$ and $y_n$ gives
 $$
 f(y_n)-f(x_n)
@@ -62,7 +73,7 @@ f(y_n)-f(x_n)
 +\varepsilon(y_n)(y_n-a)
 +\varepsilon(x_n)(a-x_n).
 $$
-The quotient in the problem is defined, so $y_n\ne x_n$. By step <1>1,
+The quotient in the problem is defined, so $y_n\ne x_n$. By step [](#s1){.pf-ref},
 $$
 y_n-x_n=(y_n-a)+(a-x_n)>0,
 $$
@@ -82,28 +93,40 @@ $$
 \max\{\abs{\varepsilon(x_n)},\abs{\varepsilon(y_n)}\}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The secant quotients converge to $f'(a)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The secant quotients converge to $f'(a)$.
+
+::: pf-proof
+
 Since $x_n\to a$ and $y_n\to a$,
 $$
 \varepsilon(x_n)\to0,
 \qquad
 \varepsilon(y_n)\to0.
 $$
-The bound in step <1>2 therefore tends to zero, so
+The bound in step [](#s2){.pf-ref} therefore tends to zero, so
 $$
 \lim_{n\to\infty}
 \frac{f(y_n)-f(x_n)}{y_n-x_n}
 =f'(a).
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required limit.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required limit.
+
+:::
+
+:::
+
 :::

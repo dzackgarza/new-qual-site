@@ -23,7 +23,6 @@ audit:
 - Show that disjoint cycles commute.
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -31,11 +30,17 @@ Let
 \]
 be disjoint cycles.
 
-<1>1. For every point $x$, one has
+::: pf
+
+::: {.pf-step #s1}
+
+For every point $x$, one has
 \[
 \sigma\tau(x)=\tau\sigma(x).
 \]
-::: {.proof}
+
+::: pf-proof
+
 There are three cases.
 
 If $x$ lies in the support of $\sigma$, then $x$ is fixed by $\tau$ because the supports are disjoint. Also $\sigma(x)$ still lies in the support of $\sigma$, so it is fixed by $\tau$. Hence
@@ -49,10 +54,23 @@ If $x$ lies in the support of $\tau$, the same argument with the roles reversed 
 \]
 
 If $x$ lies in neither support, both cycles fix $x$, so both composites fix $x$.
+
 :::
 
-<1>2. Therefore $\sigma\tau=\tau\sigma$.
-::: {.proof}
-Two permutations are equal when they agree on every point, and <1>1 shows exactly that.
 :::
+
+::: pf-step
+
+Therefore $\sigma\tau=\tau\sigma$.
+
+::: pf-proof
+
+Two permutations are equal when they agree on every point, and step [](#s1){.pf-ref} shows exactly that.
+
+:::
+
+:::
+
+:::
+
 :::

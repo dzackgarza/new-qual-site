@@ -38,9 +38,16 @@ Calculate the homology groups of $X$.
 :::
 
 ::: {.solution}
-<1>1. Give $T^2$ its standard CW structure with one $0$-cell, two oriented $1$-cells $a,b$, and one $2$-cell $c$ attached along the commutator $aba^{-1}b^{-1}$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Give $T^2$ its standard CW structure with one $0$-cell, two oriented $1$-cells $a,b$, and one $2$-cell $c$ attached along the commutator $aba^{-1}b^{-1}$.
 Then $X$ is obtained by adjoining two more $2$-cells $d,e$, each attached along a loop representing $a$.
-::: {.proof}
+
+::: pf-proof
+
 Filling a circle with a disk is precisely attachment of a $2$-cell along that circle.
 Both displayed circles are $S^1\times\{p_i\}$, so they are freely homotopic through
 \[
@@ -48,9 +55,14 @@ Both displayed circles are $S^1\times\{p_i\}$, so they are freely homotopic thro
 \]
 where $\gamma$ is a path in the second $S^1$ joining $p_1$ to $p_2$.
 After choosing orientations and paths to the common $0$-cell, both attaching maps therefore represent $a$ (reversing one orientation would only replace $a$ by $a^{-1}$).
+
 :::
 
-<1>2. With the CW structure from <1>1, the cellular chain complex in positive degrees is
+:::
+
+::: {.pf-step #s2}
+
+With the CW structure from step [](#s1){.pf-ref}, the cellular chain complex in positive degrees is
 \[
 0\longrightarrow
 \ZZ\langle c,d,e\rangle
@@ -70,7 +82,9 @@ where
 \qquad
 \partial_2(e)=a.
 \]
-::: {.proof}
+
+::: pf-proof
+
 There is only one $0$-cell, so each $1$-cell has zero cellular boundary and hence $\partial_1=0$.
 
 For a $2$-cell attached to a wedge of circles, the coefficient of a $1$-cell in its cellular boundary is the degree with which the attaching loop traverses that circle, equivalently its signed exponent sum in the attaching word.
@@ -79,9 +93,14 @@ Each of $d,e$ is attached once around the $a$-circle, so after orienting the cel
 \[
 \partial_2(d)=\partial_2(e)=a.
 \]
+
 :::
 
-<1>3. The homology groups are
+:::
+
+::: {.pf-step #s3}
+
+The homology groups are
 \[
 H_n(X;\ZZ)\cong
 \begin{cases}
@@ -91,10 +110,12 @@ H_n(X;\ZZ)\cong
 0,&n\ge3.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The space is path-connected, so $H_0(X;\ZZ)\cong\ZZ$.
 
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 \operatorname{im}\partial_2=\ZZ\langle a\rangle,
 \]
@@ -121,16 +142,29 @@ There are no $3$-cells, so $\operatorname{im}\partial_3=0$ and hence
 H_2(X;\ZZ)=\ker\partial_2\cong\ZZ^2.
 \]
 Finally there are no cells in dimensions at least $3$, so $H_n(X;\ZZ)=0$ for $n\ge3$.
+
 :::
 
-<1>4. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \boxed{H_0(X)\cong\ZZ,\qquad H_1(X)\cong\ZZ,\qquad H_2(X)\cong\ZZ^2,}
 \]
 and $H_n(X)=0$ for $n\ge3$.
-::: {.proof}
-This is <1>3.
+
+::: pf-proof
+
+This is step [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

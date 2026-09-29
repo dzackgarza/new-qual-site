@@ -32,28 +32,40 @@ Is $I$ a prime ideal?
 :::
 
 ::: {.solution}
-<1>1. There is an isomorphism
+
+::: pf
+
+::: {.pf-step #s1}
+
+There is an isomorphism
 $$
 \ZZ[x]/I
 \cong
 \FF_5[x]/(x^3+x+1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Quotienting first by $(5)$ gives
 $$
 \ZZ[x]/(5)\cong\FF_5[x].
 $$
 Under this isomorphism, the image of the second generator of $I$ is still $x^3+x+1$. The third isomorphism theorem gives the displayed quotient.
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: {.pf-step #s2}
+
+The polynomial
 $$
 q(x)=x^3+x+1
 $$
 has no root in $\FF_5$.
 
-::: {.proof}
+::: pf-proof
+
 Evaluating at the five elements of $\FF_5$ gives
 $$
 \begin{aligned}
@@ -66,36 +78,60 @@ q(4)&=64+4+1\equiv4
 \pmod5.
 $$
 None is zero.
+
 :::
 
-<1>3. The polynomial $q$ is irreducible over $\FF_5$.
-
-::: {.proof}
-A reducible cubic over a field has a linear factor, hence a root in that field. Step <1>2 shows that $q$ has no root in $\FF_5$.
 :::
 
-<1>4. The quotient
+::: {.pf-step #s3}
+
+The polynomial $q$ is irreducible over $\FF_5$.
+
+::: pf-proof
+
+A reducible cubic over a field has a linear factor, hence a root in that field. Step [](#s2){.pf-ref} shows that $q$ has no root in $\FF_5$.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+The quotient
 $$
 \FF_5[x]/(q)
 $$
 is a field.
 
-::: {.proof}
-By step <1>3, $q$ is irreducible in the polynomial ring over the field $\FF_5$. Therefore the principal ideal $(q)$ is maximal, so the quotient is a field.
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $q$ is irreducible in the polynomial ring over the field $\FF_5$. Therefore the principal ideal $(q)$ is maximal, so the quotient is a field.
+
 :::
 
-<1>5. The ideal $I$ is prime.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>4, the quotient $\ZZ[x]/I$ is a field, hence in particular an integral domain. Therefore
+::: {.pf-step #s5}
+
+The ideal $I$ is prime.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s4){.pf-ref}, the quotient $\ZZ[x]/I$ is a field, hence in particular an integral domain. Therefore
 $$
 \boxed{I\text{ is a prime ideal of }\ZZ[x]}.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

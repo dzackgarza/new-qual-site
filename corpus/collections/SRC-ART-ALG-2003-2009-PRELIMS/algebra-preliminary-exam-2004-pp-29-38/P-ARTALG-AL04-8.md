@@ -58,9 +58,14 @@ The subgroups of $G$ and their fixed fields are:
 | $\langle r^3s\rangle$ | $2$ | $\mathbb Q((1-i)a)$ | $4$ | No |
 | $\{1\}$ | $1$ | $K$ | $8$ | Yes |
 
-<1>1. The field degree and group presentation are as stated.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The field degree and group presentation are as stated.
+
+::: pf-proof
+
 The four roots are $a,ia,-a,-ia$. They generate $\mathbb Q(a,i)$,
 since their ratio $(ia)/a$ is $i$. Eisenstein's criterion at $5$
 makes $x^4-5$ irreducible over $\mathbb Q$, so $\mathbb Q(a)$
@@ -87,11 +92,17 @@ $$
 $$
 reducing exponents modulo $4$ and $2$. Thus they present the
 dihedral group of order $8$.
+
 :::
 
-<1>2. The table contains every subgroup, exactly once.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The table contains every subgroup, exactly once.
+
+::: pf-proof
+
 Let $R=\langle r\rangle$, a normal subgroup of index $2$.
 For $H\leq G$, the quotient map to $G/R$ has kernel $H\cap R$
 on $H$, so $[H:H\cap R]\leq2$.
@@ -109,11 +120,17 @@ $j$ give $\langle r^2,rs\rangle$.
 
 If $H\cap R=R$, then $H=R$ or $G$. These three disjoint cases
 give precisely the ten subgroups in the table.
+
 :::
 
-<1>3. Every field in the table is the indicated fixed field.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every field in the table is the indicated fixed field.
+
+::: pf-proof
+
 The Galois correspondence gives $[K^H:\mathbb Q]=8/|H|$ [@DF04].
 It suffices to show that the proposed generators are fixed by $H$
 and generate a field of this degree.
@@ -142,14 +159,20 @@ $\mathbb Q(b)$ lies in the fixed field of the indicated subgroup
 of order $2$, which has degree $4$. Equality follows, proving
 every remaining quartic row.
 
-Finally $K^G=\mathbb Q$ and $K^{\{1\}}=K$. By step <1>2 and the Galois
+Finally $K^G=\mathbb Q$ and $K^{\{1\}}=K$. By step [](#s2){.pf-ref} and the Galois
 correspondence, the table lists every intermediate field of $K/\mathbb Q$;
 inclusions between fields reverse the inclusions of their subgroups.
+
 :::
 
-<1>4. Exactly the six fields marked Yes are Galois over $\mathbb Q$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Exactly the six fields marked Yes are Galois over $\mathbb Q$.
+
+::: pf-proof
+
 An intermediate field $K^H$ is Galois over $\mathbb Q$ exactly
 when $H\lhd G$ [@DF04]. The trivial and whole subgroups are
 normal, as are all three subgroups of order $4$, since they
@@ -166,5 +189,11 @@ $$
 \mathbb Q,\quad \mathbb Q(i),\quad \mathbb Q(\sqrt5),\quad
 \mathbb Q(\sqrt{-5}),\quad \mathbb Q(\sqrt5,i),\quad K.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

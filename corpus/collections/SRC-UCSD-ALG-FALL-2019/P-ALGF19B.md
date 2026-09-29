@@ -38,8 +38,15 @@ Argue why $H$ is a subgroup and prove that either $Q \trianglelefteq H$ or $|\ma
 :::
 
 ::: {.solution}
-<1>1. A Sylow $q$-subgroup of $G$ normalizes $P$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A Sylow $q$-subgroup of $G$ normalizes $P$.
+
+::: pf-proof
+
 Let $Q\in\operatorname{Syl}_q(G)$ and let $Q$ act by conjugation on the set
 \[
 \operatorname{Syl}_p(G).
@@ -54,11 +61,18 @@ In particular $Q$ fixes the given $P$, which means
 Q\subseteq N_G(P).
 \]
 This proves part (a).
+
 :::
 
-<1>2. The set $H=PQ$ is a subgroup, and $P\trianglelefteq H$.
-::: {.proof}
-By <1>1, every element of $Q$ normalizes $P$. Thus $Q\subseteq N_G(P)$, so $PQ$ is a subgroup of $G$ and $P$ is normal in $H=PQ$.
+:::
+
+::: {.pf-step #s2}
+
+The set $H=PQ$ is a subgroup, and $P\trianglelefteq H$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, every element of $Q$ normalizes $P$. Thus $Q\subseteq N_G(P)$, so $PQ$ is a subgroup of $G$ and $P$ is normal in $H=PQ$.
 
 Because $P$ is a $p$-group and $Q$ is a $q$-group with $p\ne q$,
 \[
@@ -68,13 +82,20 @@ Consequently
 \[
 |H|=|P|\,|Q|.
 \]
+
 :::
 
-<1>3. Either $Q\trianglelefteq H$ or
+:::
+
+::: {.pf-step #s3}
+
+Either $Q\trianglelefteq H$ or
 \[
 |\operatorname{Syl}_q(H)|=q+1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $Q$ is a Sylow $q$-subgroup of $G$, it is also a Sylow $q$-subgroup of $H$.
 Moreover, every Sylow $q$-subgroup of $H$ has order $|Q|$, hence is also a Sylow $q$-subgroup of $G$. Therefore
 \[
@@ -91,31 +112,45 @@ Sylow's theorem gives
 The only positive integers at most $q+1$ with this congruence are $1$ and $q+1$.
 If the number is $1$, then $Q$ is normal in $H$; otherwise it equals $q+1$.
 This proves part (b).
+
 :::
 
-<1>4. In fact $Q\trianglelefteq H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+In fact $Q\trianglelefteq H$.
+
+::: pf-proof
+
 Again by Sylow's theorem,
 \[
 |\operatorname{Syl}_q(H)|\mid[H:Q].
 \]
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 [H:Q]=|P|,
 \]
 which is a power of the odd prime $p$ and is therefore odd.
 
-The alternative $|\operatorname{Syl}_q(H)|=q+1$ from <1>3 is impossible because $q$ is odd, so $q+1$ is even and cannot divide the odd integer $|P|$.
+The alternative $|\operatorname{Syl}_q(H)|=q+1$ from step [](#s3){.pf-ref} is impossible because $q$ is odd, so $q+1$ is even and cannot divide the odd integer $|P|$.
 Hence
 \[
 |\operatorname{Syl}_q(H)|=1,
 \]
 and therefore $Q\trianglelefteq H$.
+
 :::
 
-<1>5. The multiplication map $P\times Q\to H$ is an isomorphism.
-::: {.proof}
-By <1>2 and <1>4, both $P$ and $Q$ are normal in $H$. For $x\in P$ and $y\in Q$, the commutator
+:::
+
+::: pf-step
+
+The multiplication map $P\times Q\to H$ is an isomorphism.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s4){.pf-ref}, both $P$ and $Q$ are normal in $H$. For $x\in P$ and $y\in Q$, the commutator
 \[
 [x,y]=xyx^{-1}y^{-1}
 \]
@@ -137,5 +172,11 @@ is a homomorphism. It is surjective because $H=PQ$, and its kernel is trivial be
 H\cong P\times Q.
 \]
 This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

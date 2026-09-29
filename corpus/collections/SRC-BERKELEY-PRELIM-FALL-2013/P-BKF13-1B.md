@@ -32,12 +32,18 @@ For which pairs of real numbers $(a,b)$ does the series $\sum_{n=3}^{\infty}n^a(
 :::
 
 ::: {.solution}
-<1>1. For every $c>0$ and $\varepsilon>0$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $c>0$ and $\varepsilon>0$,
 $$
 (\log n)^c=o(n^\varepsilon).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Taking logarithms, it is enough to show
 $$
 c\log\log n-\varepsilon\log n\longrightarrow-\infty.
@@ -49,11 +55,17 @@ $$
 since with $u=\log n$ this is $\log u/u\to0$, for example by
 l'Hospital's rule. Hence the negative term
 $-\varepsilon\log n$ dominates.
+
 :::
 
-<1>2. If $a<-1$, then the series converges for every real $b$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $a<-1$, then the series converges for every real $b$.
+
+::: pf-proof
+
 If $b\le0$, then $(\log n)^b\le1$ for $n\ge3$, so
 $$
 n^a(\log n)^b\le n^a,
@@ -64,7 +76,7 @@ If $b>0$, choose $\varepsilon>0$ with
 $$
 a+\varepsilon<-1.
 $$
-By step <1>1, for all sufficiently large $n$,
+By step [](#s1){.pf-ref}, for all sufficiently large $n$,
 $$
 (\log n)^b\le n^\varepsilon.
 $$
@@ -74,11 +86,17 @@ n^a(\log n)^b
 \le n^{a+\varepsilon},
 $$
 and the comparison series converges.
+
 :::
 
-<1>3. If $a>-1$, then the series diverges for every real $b$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $a>-1$, then the series diverges for every real $b$.
+
+::: pf-proof
+
 If $b\ge0$, then $(\log n)^b\ge1$ for $n\ge3$, so
 $$
 n^a(\log n)^b\ge n^a.
@@ -89,7 +107,7 @@ If $b<0$, choose $\varepsilon>0$ with
 $$
 a-\varepsilon>-1.
 $$
-Applying step <1>1 with $c=-b>0$ gives, for all sufficiently large
+Applying step [](#s1){.pf-ref} with $c=-b>0$ gives, for all sufficiently large
 $n$,
 $$
 (\log n)^{-b}\le n^\varepsilon.
@@ -104,11 +122,17 @@ n^a(\log n)^b
 \ge n^{a-\varepsilon}.
 $$
 The series on the right diverges.
+
 :::
 
-<1>4. If $a=-1$, then the series converges exactly when $b<-1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+If $a=-1$, then the series converges exactly when $b<-1$.
+
+::: pf-proof
+
 Consider
 $$
 f(x)=\frac{(\log x)^b}{x}.
@@ -127,9 +151,14 @@ $$
 \int_{\log3}^\infty u^b\,du,
 $$
 which converges exactly when $b<-1$.
+
 :::
 
-<1>5. Therefore the convergence region is
+:::
+
+::: {.pf-step #s5}
+
+Therefore the convergence region is
 $$
 \boxed{
 \{(a,b)\in\RR^2:a<-1\}
@@ -138,14 +167,21 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>2--<1>4 cover the three mutually exclusive cases
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} cover the three mutually exclusive cases
 $a<-1$, $a=-1$, and $a>-1$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the complete classification.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the complete classification.
+
+:::
+
+:::
+
 :::

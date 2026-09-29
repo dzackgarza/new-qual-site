@@ -30,12 +30,19 @@ Prove directly from the definition that the 0th singular homology of a nonempty 
 :::
 
 ::: {.solution}
-<1>1. Since $\partial_0=0$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+Since $\partial_0=0$,
 \[
 H_0(X)
 =C_0(X)/\operatorname{im}\partial_1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 H_0(X)=\ker\partial_0/\operatorname{im}\partial_1.
@@ -48,9 +55,14 @@ is the zero map and hence
 \[
 \ker\partial_0=C_0(X).
 \]
+
 :::
 
-<1>2. Define the augmentation homomorphism
+:::
+
+::: {.pf-step #s2}
+
+Define the augmentation homomorphism
 \[
 \varepsilon:C_0(X)\longrightarrow\ZZ
 \]
@@ -60,7 +72,9 @@ by
 =\sum_{i=1}^r n_i.
 \]
 It is surjective.
-::: {.proof}
+
+::: pf-proof
+
 A singular $0$-simplex is just a point of $X$, so $C_0(X)$ is the free abelian group on the points of $X$.
 Since $X$ is nonempty, choose $x_0\in X$.
 Then
@@ -68,10 +82,17 @@ Then
 \varepsilon([x_0])=1,
 \]
 so $\varepsilon$ is surjective.
+
 :::
 
-<1>3. Every singular $0$-boundary lies in $\ker\varepsilon$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every singular $0$-boundary lies in $\ker\varepsilon$.
+
+::: pf-proof
+
 For a singular $1$-simplex
 \[
 \sigma:\Delta^1\longrightarrow X,
@@ -88,11 +109,18 @@ By linearity,
 \[
 \operatorname{im}\partial_1\subseteq\ker\varepsilon.
 \]
+
 :::
 
-<1>4. If $X$ is path connected, then every element of $\ker\varepsilon$ is a singular $0$-boundary.
-::: {.proof}
-Fix the point $x_0$ from <1>2.
+:::
+
+::: {.pf-step #s4}
+
+If $X$ is path connected, then every element of $\ker\varepsilon$ is a singular $0$-boundary.
+
+::: pf-proof
+
+Fix the point $x_0$ from step [](#s2){.pf-ref}.
 For every $x\in X$, path connectedness gives a path
 \[
 \sigma_x:[0,1]\longrightarrow X
@@ -126,29 +154,42 @@ Thus
 \[
 \ker\varepsilon\subseteq\operatorname{im}\partial_1.
 \]
-Together with <1>3,
+Together with step [](#s3){.pf-ref},
 \[
 \ker\varepsilon=\operatorname{im}\partial_1.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 H_0(X)\cong\ZZ.
 \]
-::: {.proof}
-By <1>1 and <1>4,
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s4){.pf-ref},
 \[
 H_0(X)
 =C_0(X)/\operatorname{im}\partial_1
 =C_0(X)/\ker\varepsilon.
 \]
-Since $\varepsilon$ is surjective by <1>2, the first isomorphism theorem gives
+Since $\varepsilon$ is surjective by step [](#s2){.pf-ref}, the first isomorphism theorem gives
 \[
 C_0(X)/\ker\varepsilon
 \cong
 \operatorname{im}\varepsilon
 =\ZZ.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

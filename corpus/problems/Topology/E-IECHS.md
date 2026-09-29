@@ -19,18 +19,45 @@ Show that a closed subset of a Hausdorff space need not be compact.
 :::
 
 ::: {.solution}
-<1>1. Take $X=\mathbb R$ with its usual topology and $A=\mathbb R$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Take $X=\mathbb R$ with its usual topology and $A=\mathbb R$.
+
+::: pf-proof
+
 The real line is Hausdorff, and $A=X$ is closed in $X$.
+
 :::
 
-<1>2. The set $A$ is not compact.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The set $A$ is not compact.
+
+::: pf-proof
+
 The open cover $\{(-n,n):n\ge1\}$ has no finite subcover, since every finite subfamily is contained in $(-N,N)$ for some $N$.
+
 :::
 
-<1>3. Thus a closed subset of a Hausdorff space need not be compact.
-::: {.proof}
-The example in <1>1--<1>2 has all the required properties.
 :::
+
+::: pf-step
+
+Thus a closed subset of a Hausdorff space need not be compact.
+
+::: pf-proof
+
+The example in steps [](#s1){.pf-ref} and [](#s2){.pf-ref} has all the required properties.
+
+:::
+
+:::
+
+:::
+
 :::

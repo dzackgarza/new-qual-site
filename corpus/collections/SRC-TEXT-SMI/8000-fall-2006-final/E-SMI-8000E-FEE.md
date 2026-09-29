@@ -37,8 +37,14 @@ or
 ::: {.solution}
 We prove option (i).
 
-<1>1. Every element of $E$ satisfies a nonzero polynomial over $k$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every element of $E$ satisfies a nonzero polynomial over $k$.
+
+::: pf-proof
+
 Let
 $$
 n=\dim_k E<\infty
@@ -66,14 +72,27 @@ $$
 p(\alpha)=0.
 $$
 Therefore $\alpha$ is algebraic over $k$.
+
 :::
 
-<1>2. Conclude that the extension is algebraic.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude that the extension is algebraic.
+
+::: pf-proof
+
 The element $\alpha\in E$ was arbitrary. Thus every element of $E$ is
 algebraic over $k$, which is exactly the statement that
 $$
 \boxed{E/k\text{ is algebraic}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

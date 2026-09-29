@@ -23,28 +23,63 @@ Show that a simplicial map $f: K \to L$ is a homotopy equivalence if $f^{-1}(x)$
 :::
 
 ::: {.solution}
-<1>1. For each simplex $\sigma$ of $L$, the preimage $f^{-1}(\sigma)$ is contractible.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+For each simplex $\sigma$ of $L$, the preimage $f^{-1}(\sigma)$ is contractible.
+
+::: pf-proof
+
 $f^{-1}(\sigma)$ is the union of the contractible fibers $f^{-1}(x)$ over $x \in \sigma$, and it deformation retracts onto any single fiber (the fibers are contractible and the preimage of a simplex is a product-like structure).
+
 :::
 
-<1>2. More precisely, $f^{-1}(\sigma)$ is homotopy equivalent to $f^{-1}(x_0)$ for any $x_0 \in \sigma$, hence contractible.
-::: {.proof}
-<1>1 (the preimage of a simplex deformation retracts onto the preimage of a point).
 :::
 
-<1>3. By the Vietoris–Begle theorem (or the fact that a map with contractible fibers is a homotopy equivalence for CW complexes), $f$ induces an isomorphism on all homotopy groups.
-::: {.proof}
+::: pf-step
+
+More precisely, $f^{-1}(\sigma)$ is homotopy equivalent to $f^{-1}(x_0)$ for any $x_0 \in \sigma$, hence contractible.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} (the preimage of a simplex deformation retracts onto the preimage of a point).
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+By the Vietoris–Begle theorem (or the fact that a map with contractible fibers is a homotopy equivalence for CW complexes), $f$ induces an isomorphism on all homotopy groups.
+
+::: pf-proof
+
 the Vietoris–Begle mapping theorem (a map with contractible fibers induces isomorphisms on homology, and for simply connected spaces, on homotopy).
+
 :::
 
-<1>4. Since $K$ and $L$ are CW complexes (simplicial complexes), and $f$ induces isomorphisms on all homotopy groups, $f$ is a homotopy equivalence (Whitehead's theorem).
-::: {.proof}
-<1>3 and Whitehead's theorem.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
+::: {.pf-step #s4}
+
+Since $K$ and $L$ are CW complexes (simplicial complexes), and $f$ induces isomorphisms on all homotopy groups, $f$ is a homotopy equivalence (Whitehead's theorem).
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} and Whitehead's theorem.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

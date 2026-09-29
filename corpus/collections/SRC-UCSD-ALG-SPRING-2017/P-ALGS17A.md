@@ -38,30 +38,56 @@ Find a presentation of $G = H \rtimes_\phi \mathbb{Z}_2$ with a brief justificat
 ::: {.solution}
 **(a).**
 
-<1>1. Let \(x,y\) generate the two factors of \(H=C_3\times C_3\). Then
+::: pf
+
+::: pf-step
+
+Let \(x,y\) generate the two factors of \(H=C_3\times C_3\). Then
 \[
 G\cong\left\langle x,y,a\;\middle|\;x^3=y^3=a^2=1,\ [x,y]=1,\ axa=x^{-1},\ aya=y^{-1}\right\rangle.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The relations \(x^3=y^3=1\) and \([x,y]=1\) present \(H\cong C_3\times C_3\). The relation \(a^2=1\) presents \(C_2\), and the conjugation relations specify exactly the semidirect-product action \(h\mapsto h^{-1}\) on both generators of \(H\). Hence the presented group is \(H\rtimes_\phi C_2\).
-:::
 
 **(b).**
 
-<1>2. The generalized dihedral group \(G=H\rtimes_\phi C_2\) is abelian if and only if every element of \(H\) has order dividing \(2\).
-::: {.proof}
+:::
+
+:::
+
+::: pf-step
+
+The generalized dihedral group \(G=H\rtimes_\phi C_2\) is abelian if and only if every element of \(H\) has order dividing \(2\).
+
+::: pf-proof
+
 Since \(H\) is already abelian, the only possible obstruction is commutation with \(a\). For \(h\in H\),
 \[
 aha^{-1}=h^{-1}.
 \]
 Thus \(a\) commutes with \(h\) iff \(h=h^{-1}\), equivalently \(h^2=e\). Therefore \(G\) is abelian exactly when \(h^2=e\) for all \(h\in H\), i.e. when \(H\) has exponent at most \(2\). For finite abelian \(H\), this means \(H\cong (C_2)^r\) for some \(r\ge0\).
-:::
 
 **(c).**
 
-<1>3. The group \(G\) is always solvable.
-::: {.proof}
+:::
+
+:::
+
+::: pf-step
+
+The group \(G\) is always solvable.
+
+::: pf-proof
+
 The subgroup \(H\trianglelefteq G\) is abelian, and the quotient \(G/H\cong C_2\) is abelian.
 Hence the commutator subgroup \(G'\) lies in \(H\), so \(G''=1\). Thus \(G\) is solvable of derived length at most \(2\).
+
 :::
+
+:::
+
+:::
+
 :::

@@ -37,8 +37,15 @@ is continuous.
 :::
 
 ::: {.solution}
-<1>1. Continuity when $E$ has finite measure.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Continuity when $E$ has finite measure.
+
+::: pf-proof
+
 Since $|E|<\infty$, one has $\chi_E\in L^2(\mathbb R)$. For $h\in\mathbb R$,
 $$
 \begin{aligned}
@@ -48,10 +55,17 @@ $$
 \end{aligned}
 $$
 The inequality is [[FF-4XBYG|Cauchy--Schwarz in $L^2$]]. The right-hand side is independent of $x$ and tends to $0$ as $h\to0$ by [[PR-JX4YU|continuity of translation in $L^p$]]. Thus $F$ is uniformly continuous.
+
 :::
 
-<1>2. Positive-measure sets have a neighborhood of zero in the difference set.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Positive-measure sets have a neighborhood of zero in the difference set.
+
+::: pf-proof
+
 Assume $|E|>0$. Because Lebesgue measure is sigma-finite, there exists $R>0$ such that
 $$
 A=E\cap[-R,R]
@@ -83,10 +97,17 @@ Hence
 $$
 (-\varepsilon,\varepsilon)\subset E-E.
 $$
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>1 proves part (a), and step <1>2 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

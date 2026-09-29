@@ -34,8 +34,15 @@ For $N=\{1\}$, one has $N\cap Z(G)=\{1\}$, so the conclusion in the unqualified 
 :::
 
 ::: {.solution}
-<1>1. Conjugation by $G$ defines an action on $N$, whose fixed points are exactly $N\cap Z(G)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Conjugation by $G$ defines an action on $N$, whose fixed points are exactly $N\cap Z(G)$.
+
+::: pf-proof
+
 Normality of $N$ ensures that
 \[
 gng^{-1}\in N
@@ -49,22 +56,36 @@ gng^{-1}=n
 \]
 which is equivalent to $n\in Z(G)$.
 Thus the fixed-point set is $N\cap Z(G)$.
+
 :::
 
-<1>2. Every nontrivial orbit in this action has cardinality divisible by $p$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every nontrivial orbit in this action has cardinality divisible by $p$.
+
+::: pf-proof
+
 For $n\in N$, orbit-stabilizer gives
 \[
 |G\cdot n|=[G:C_G(n)].
 \]
 Since $|G|=p^n$, every subgroup index in $G$ is a power of $p$.
 If the orbit is not a singleton, its size is therefore a positive power of $p$, hence is divisible by $p$.
+
 :::
 
-<1>3. The fixed-point set contains a nonidentity element.
-::: {.proof}
+:::
+
+::: pf-step
+
+The fixed-point set contains a nonidentity element.
+
+::: pf-proof
+
 Partition $N$ into conjugation orbits.
-Using <1>1 and <1>2 gives a class equation of the form
+Using steps [](#s1){.pf-ref} and [](#s2){.pf-ref} gives a class equation of the form
 \[
 |N|=|N\cap Z(G)|+\sum_i p^{a_i},
 \qquad a_i\ge1,
@@ -82,5 +103,11 @@ The latter subgroup contains the identity, so its order is positive; divisibilit
 |N\cap Z(G)|\ge p>1.
 \]
 Thus $N\cap Z(G)$ is nontrivial.
+
 :::
+
+:::
+
+:::
+
 :::

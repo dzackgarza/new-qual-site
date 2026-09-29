@@ -36,14 +36,19 @@ g(w)=\sum_{n=0}^{\infty}b_nw^n
 $$
 for the Taylor expansions at the origin.
 
-<1>1. If $\abs{z}<r<1$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $\abs{z}<r<1$, then
 $$
 \frac1{2\pi i}\int_{C_r}\frac1w f(w)g\!\left(\frac zw\right)\,dw
 =
 \sum_{n=0}^{\infty}a_nb_nz^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $C_r$, the series for $f(w)$ converges absolutely and uniformly. Since
 $$
 \abs{z/w}=\frac{\abs{z}}{r}<1,
@@ -67,15 +72,21 @@ a_nb_mz^m
 \end{aligned}
 $$
 because the contour integral is $1$ when $n=m$ and $0$ otherwise.
+
 :::
 
-<1>2. The series
+:::
+
+::: {.pf-step #s2}
+
+The series
 $$
 \sum_{n=0}^{\infty}a_nb_nz^n
 $$
 converges locally uniformly on the open unit disk and therefore defines an analytic function there.
 
-::: {.proof}
+::: pf-proof
+
 Fix $0<\rho<1$. Choose $s$ with
 $$
 \sqrt{\rho}<s<1.
@@ -99,20 +110,32 @@ $$
 M_fM_g\left(\frac{\rho}{s^2}\right)^n.
 $$
 Since $\rho/s^2<1$, the Weierstrass $M$-test gives uniform convergence on $\abs{z}\leq\rho$. As $\rho<1$ was arbitrary, the series converges locally uniformly on the unit disk, hence its sum is analytic.
+
 :::
 
-<1>3. The integral in part 1 is independent of $r$ whenever $\abs{z}<r<1$, and it defines the analytic function
+:::
+
+::: {.pf-step #s3}
+
+The integral in part 1 is independent of $r$ whenever $\abs{z}<r<1$, and it defines the analytic function
 $$
 h(z)=\sum_{n=0}^{\infty}a_nb_nz^n.
 $$
 
-::: {.proof}
-For every admissible $r$, step <1>1 identifies the integral with the same power series, which contains no occurrence of $r$. Step <1>2 shows that this common value is analytic for $\abs{z}<1$.
+::: pf-proof
+
+For every admissible $r$, step [](#s1){.pf-ref} identifies the integral with the same power series, which contains no occurrence of $r$. Step [](#s2){.pf-ref} shows that this common value is analytic for $\abs{z}<1$.
+
 :::
 
-<1>4. The assertion in part 2 is false.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The assertion in part 2 is false.
+
+::: pf-proof
+
 Take
 $$
 f(z)=1,
@@ -129,15 +152,21 @@ b_1=1,
 \quad
 b_n=0\ \text{for }n\neq1.
 $$
-Hence $a_nb_n=0$ for every $n$, so step <1>3 gives
+Hence $a_nb_n=0$ for every $n$, so step [](#s3){.pf-ref} gives
 $$
 h(z)\equiv0.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part 1, and step <1>4 supplies the required counterexample for part 2.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part 1, and step [](#s4){.pf-ref} supplies the required counterexample for part 2.
+
+:::
+
+:::
+
 :::

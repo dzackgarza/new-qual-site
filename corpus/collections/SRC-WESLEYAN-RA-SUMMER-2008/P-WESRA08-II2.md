@@ -30,8 +30,15 @@ Give examples showing that neither of the following implications holds in genera
 :::
 
 ::: {.solution}
-<1>1. Almost-everywhere convergence need not imply $L^1$ convergence.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Almost-everywhere convergence need not imply $L^1$ convergence.
+
+::: pf-proof
+
 Let
 \[
 f_n(x):=n\mathbf1_{(0,1/n)}(x).
@@ -47,10 +54,17 @@ However,
 \]
 for every $n$.
 Hence $f_n$ does not converge to $0$ in $L^1$.
+
 :::
 
-<1>2. $L^1$ convergence need not imply almost-everywhere convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+$L^1$ convergence need not imply almost-everywhere convergence.
+
+::: pf-proof
+
 Use the typewriter sequence.
 For $m\ge0$ and $0\le k<2^m$, define
 \[
@@ -70,5 +84,11 @@ On the other hand, for every $x\in[0,1)$ and every level $m$, exactly one of the
 Hence $h_n(x)=1$ infinitely often.
 It also equals $0$ infinitely often, so $h_n(x)$ does not converge at any $x\in[0,1)$.
 In particular it does not converge almost everywhere to $0$.
+
 :::
+
+:::
+
+:::
+
 :::

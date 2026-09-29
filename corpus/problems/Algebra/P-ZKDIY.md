@@ -31,8 +31,6 @@ $$M =
 3.  Find all values of $x$ and $y$ for which $M$ is diagonalizable.
 :::
 
-
-
 ::: {.solution}
 Let $e_2=(0,1,0)^t$. Then
 \[
@@ -46,7 +44,11 @@ B=\begin{pmatrix}1&x\\ y&1\end{pmatrix}.
 \]
 Thus $M\sim [1]\oplus B$.
 
-<1>1. Rank.
+::: pf
+
+::: pf-step
+
+Rank.
 Since
 \[
 \det B=1-xy,
@@ -61,7 +63,16 @@ we have
 \]
 Indeed, when $xy=1$, the nonzero matrix $B$ has determinant $0$ and hence rank $1$, while the $e_2$ summand contributes one more dimension.
 
-<1>2. Diagonalizability.
+:::
+
+::: pf-step
+
+Diagonalizability.
+
+:::
+
+:::
+
 The characteristic polynomial of $B$ is
 \[
 (t-1)^2-xy.

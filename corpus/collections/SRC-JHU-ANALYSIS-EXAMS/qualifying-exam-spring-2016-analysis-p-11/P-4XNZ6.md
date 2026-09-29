@@ -39,17 +39,31 @@ State it clearly if you use it.
 :::
 
 ::: {.solution}
-<1>1. State the covering lemma.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+State the covering lemma.
+
+::: pf-proof
+
 Vitali $3$-times covering lemma: every finite collection of
 balls in $\mathbb R^d$ has a pairwise disjoint subcollection
 $B_1,\dots,B_N$ such that the union of the whole collection
 is contained in $\bigcup_{j=1}^N3B_j$, where $3B_j$ is the
 concentric ball with three times the radius.
+
 :::
 
-<1>2. The superlevel set is open and is a union of balls with large averages.
-::: {.proof}
+:::
+
+::: pf-step
+
+The superlevel set is open and is a union of balls with large averages.
+
+::: pf-proof
+
 Take the balls in the definition of $f^*$ to be open.
 A closed ball containing $x$ lies in a slightly larger
 concentric open ball, whose average of $|f|$ is arbitrarily
@@ -65,12 +79,19 @@ For each $x\in E_\alpha$, choose an open ball $B_x\ni x$ such that
 \]
 Every point of $B_x$ then lies in $E_\alpha$, so
 $E_\alpha=\bigcup_{x\in E_\alpha}B_x$ is open, hence measurable.
+
 :::
 
-<1>3. Every compact subset of $E_\alpha$ satisfies the bound.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every compact subset of $E_\alpha$ satisfies the bound.
+
+::: pf-proof
+
 Let $K\subset E_\alpha$ be compact. Finitely many of the
-balls $B_x$ cover $K$. Step <1>1 gives pairwise disjoint
+balls $B_x$ cover $K$. Step [](#s1){.pf-ref} gives pairwise disjoint
 balls $B_1,\dots,B_N$ among them with
 \[
 K\subseteq\bigcup_{j=1}^N3B_j.
@@ -84,17 +105,30 @@ m(K)
 <\frac{3^d}{\alpha}\sum_{j=1}^N\int_{B_j}|f|
 \le\frac{3^d}{\alpha}\|f\|_1.
 \]
+
 :::
 
-<1>4. Inner regularity gives the bound for $E_\alpha$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Inner regularity gives the bound for $E_\alpha$.
+
+::: pf-proof
+
 Lebesgue measure is inner regular on measurable sets, so
 $m(E_\alpha)=\sup\{m(K):K\subset E_\alpha\text{ compact}\}$
-[@Fol13]. Step <1>3 then gives
+[@Fol13]. Step [](#s3){.pf-ref} then gives
 \[
 \boxed{
 m(\{x:f^*(x)>\alpha\})
 \le\frac{3^d}{\alpha}\|f\|_{L^1(\mathbb R^d)}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

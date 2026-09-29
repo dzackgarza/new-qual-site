@@ -28,21 +28,33 @@ Prove that there are positive integers $m$ and $n$ with $m>n$ such that every $x
 :::
 
 ::: {.solution}
-<1>1. For each positive integer $k$, define a function
+
+::: pf
+
+::: pf-step
+
+For each positive integer $k$, define a function
 $$
 f_k\colon R\longrightarrow R,
 \qquad
 f_k(x)=x^k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Positive powers are defined using the multiplication in $R$, so each
 $f_k$ is a well-defined function from the finite set $R$ to itself.
+
 :::
 
-<1>2. There exist positive integers $m>n$ such that $f_m=f_n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+There exist positive integers $m>n$ such that $f_m=f_n$.
+
+::: pf-proof
+
 If $\abs{R}=q$, then there are only $q^q$ functions from $R$ to $R$.
 The infinite sequence
 $$
@@ -51,22 +63,34 @@ $$
 therefore contains two equal functions by the pigeonhole principle.
 Choose distinct positive indices $m,n$ with $f_m=f_n$, and relabel them
 so that $m>n$.
+
 :::
 
-<1>3. For these $m>n$, every $x\in R$ satisfies
+:::
+
+::: {.pf-step #s3}
+
+For these $m>n$, every $x\in R$ satisfies
 $$
 \boxed{x^m=x^n}.
 $$
 
-::: {.proof}
-The equality $f_m=f_n$ from step <1>2 is equality as functions on all of
+::: pf-proof
+
+The equality $f_m=f_n$ from step [](#s2){.pf-ref} is equality as functions on all of
 $R$. Evaluating it at an arbitrary $x\in R$ gives
 $x^m=f_m(x)=f_n(x)=x^n$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is exactly the required common power identity.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is exactly the required common power identity.
+
+:::
+
+:::
+
 :::

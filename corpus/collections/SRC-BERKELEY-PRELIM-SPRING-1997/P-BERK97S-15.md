@@ -38,12 +38,17 @@ $$
 A\coloneqq I-(P+Q).
 $$
 
-<1>1. The matrices $A,P,Q$ satisfy
+::: pf
+
+::: {.pf-step #s1}
+
+The matrices $A,P,Q$ satisfy
 $$
 AP=QA.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using $P^2=P$ gives
 $$
 AP
@@ -59,35 +64,53 @@ QA
 =-QP.
 $$
 Hence $AP=QA$.
+
 :::
 
-<1>2. The matrices $P$ and $Q$ are similar:
+:::
+
+::: {.pf-step #s2}
+
+The matrices $P$ and $Q$ are similar:
 $$
 Q=APA^{-1}.
 $$
 
-::: {.proof}
-By hypothesis, $A$ is invertible. Multiplying the identity in step <1>1
+::: pf-proof
+
+By hypothesis, $A$ is invertible. Multiplying the identity in step [](#s1){.pf-ref}
 on the right by $A^{-1}$ gives the displayed equality.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{\operatorname{rank}P=\operatorname{rank}Q}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 Q=APA^{-1}.
 $$
 Left and right multiplication by invertible matrices preserve rank, so
 $P$ and $Q$ have the same rank.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

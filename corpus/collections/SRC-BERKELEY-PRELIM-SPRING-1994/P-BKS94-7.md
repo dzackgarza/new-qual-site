@@ -40,12 +40,17 @@ F(x)\coloneqq
 1-\sum_{k=1}^n a_ke^{2\pi ikx}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \int_0^1F(x)\,dx=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every positive integer $k$,
 $$
 \int_0^1e^{2\pi ikx}\,dx
@@ -61,21 +66,27 @@ $$
 a_k\int_0^1e^{2\pi ikx}\,dx
 =1.
 $$
+
 :::
 
-<1>2. It is impossible that
+:::
+
+::: {.pf-step #s2}
+
+It is impossible that
 $$
 \abs{F(x)}<1
 $$
 for every $x\in[0,1]$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose the strict inequality held everywhere. Since $\abs F$ is continuous
 on the compact interval $[0,1]$, it attains a maximum
 $$
 m<1.
 $$
-Then step <1>1 and the triangle inequality for integrals give
+Then step [](#s1){.pf-ref} and the triangle inequality for integrals give
 $$
 1
 =
@@ -87,9 +98,14 @@ m
 <1,
 $$
 a contradiction.
+
 :::
 
-<1>3. There exists $x\in[0,1]$ such that
+:::
+
+::: {.pf-step #s3}
+
+There exists $x\in[0,1]$ such that
 $$
 \abs{
 1-\sum_{k=1}^n a_ke^{2\pi ikx}
@@ -97,13 +113,20 @@ $$
 \geq1.
 $$
 
-::: {.proof}
-This is the negation of the impossible assertion in step <1>2.
+::: pf-proof
+
+This is the negation of the impossible assertion in step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -35,17 +35,30 @@ Give each of the following examples:
 ::: {.solution}
 Let $k$ be any field.
 
-<1>1. The ideal $(6)\subset\mathbb Z$ is principal but not prime.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The ideal $(6)\subset\mathbb Z$ is principal but not prime.
+
+::: pf-proof
+
 It is principal by definition. Moreover
 $$
 2\cdot3=6\in(6),
 $$
 while neither $2$ nor $3$ belongs to $(6)$. Hence $(6)$ fails the defining property of a prime ideal.
+
 :::
 
-<1>2. The ideal $(x,y)\subset k[x,y]$ is prime but not principal.
-::: {.proof}
+:::
+
+::: pf-step
+
+The ideal $(x,y)\subset k[x,y]$ is prime but not principal.
+
+::: pf-proof
+
 Evaluation at $(0,0)$ gives a surjective homomorphism
 $$
 k[x,y]\to k
@@ -57,14 +70,27 @@ $$
 so $(x,y)$ is maximal and therefore prime.
 
 Suppose $(x,y)=(f)$ were principal. Since $x,y\in(f)$, the polynomial $f$ divides both $x$ and $y$. In the UFD $k[x,y]$, any common divisor of the relatively prime irreducibles $x$ and $y$ is a unit. Thus $f$ would be a unit, so $(f)=k[x,y]$, contradicting $(x,y)\ne k[x,y]$. Therefore $(x,y)$ is not principal.
+
 :::
 
-<1>3. The ideal $(x)\subset k[x,y]$ is prime but not maximal.
-::: {.proof}
+:::
+
+::: pf-step
+
+The ideal $(x)\subset k[x,y]$ is prime but not maximal.
+
+::: pf-proof
+
 The evaluation homomorphism at $x=0$ identifies
 $$
 k[x,y]/(x)\cong k[y].
 $$
 The quotient $k[y]$ is an integral domain, so $(x)$ is prime. It is not a field, since $y$ is not invertible. Therefore $(x)$ is not maximal.
+
 :::
+
+:::
+
+:::
+
 :::

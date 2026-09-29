@@ -34,8 +34,14 @@ Z(R)=\{z\in R:zr=rz\text{ for every }r\in R\}
 $$
 be the center of the ring $R$.
 
-<1>1. The center is nonempty and closed under subtraction.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The center is nonempty and closed under subtraction.
+
+::: pf-proof
+
 The element $0$ commutes with every $r\in R$, so $0\in Z(R)$.
 
 If $a,b\in Z(R)$ and $r\in R$, then
@@ -48,10 +54,17 @@ $$
 \end{aligned}
 $$
 Thus $a-b\in Z(R)$.
+
 :::
 
-<1>2. The center is closed under multiplication.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The center is closed under multiplication.
+
+::: pf-proof
+
 If $a,b\in Z(R)$ and $r\in R$, then
 $$
 \begin{aligned}
@@ -64,16 +77,29 @@ $$
 \end{aligned}
 $$
 Hence $ab\in Z(R)$.
+
 :::
 
-<1>3. Therefore $Z(R)$ is a subring of $R$.
-::: {.proof}
-By step <1>1, $Z(R)$ is an additive subgroup of $R$, and by step <1>2 it
+:::
+
+::: pf-step
+
+Therefore $Z(R)$ is a subring of $R$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $Z(R)$ is an additive subgroup of $R$, and by step [](#s2){.pf-ref} it
 is closed under multiplication. Therefore
 $$
 \boxed{Z(R)\le R\text{ as a subring}.}
 $$
 If $R$ has an identity and subrings are required to share it, then
 $1r=r=r1$ for every $r$, so $1\in Z(R)$ as well.
+
 :::
+
+:::
+
+:::
+
 :::

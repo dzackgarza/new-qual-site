@@ -54,14 +54,19 @@ $$
 (\lambda_1,\lambda_2,\lambda_3)=(1,2,1).
 $$
 
-<1>1. For every $1\leq i,j\leq3$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $1\leq i,j\leq3$,
 $$
 T(E_{ij})
 =
 \frac{\lambda_i+\lambda_j}{2}E_{ij}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Left multiplication by the diagonal matrix $A$ scales the $i$th row of
 $E_{ij}$ by $\lambda_i$, so
 $$
@@ -79,9 +84,14 @@ T(E_{ij})
 =
 \frac{\lambda_i+\lambda_j}{2}E_{ij}.
 $$
+
 :::
 
-<1>2. Relative to the basis
+:::
+
+::: {.pf-step #s2}
+
+Relative to the basis
 $$
 \{E_{ij}:1\leq i,j\leq3\},
 $$
@@ -92,8 +102,9 @@ $$
 1,\frac32,1.
 $$
 
-::: {.proof}
-Step <1>1 shows that every basis vector $E_{ij}$ is an eigenvector with
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that every basis vector $E_{ij}$ is an eigenvector with
 eigenvalue
 $$
 \frac{\lambda_i+\lambda_j}{2}.
@@ -103,15 +114,21 @@ $$
 (\lambda_1,\lambda_2,\lambda_3)=(1,2,1)
 $$
 for the nine ordered pairs $(i,j)$ gives the displayed list.
+
 :::
 
-<1>3. The determinant is
+:::
+
+::: {.pf-step #s3}
+
+The determinant is
 $$
 \boxed{\det T=\frac{81}{8}}.
 $$
 
-::: {.proof}
-Since the matrix of $T$ in the basis of step <1>2 is diagonal,
+::: pf-proof
+
+Since the matrix of $T$ in the basis of step [](#s2){.pf-ref} is diagonal,
 its determinant is the product of its nine diagonal entries. Hence
 $$
 \begin{aligned}
@@ -124,11 +141,17 @@ $$
 \frac{81}{8}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested determinant.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested determinant.
+
+:::
+
+:::
+
 :::

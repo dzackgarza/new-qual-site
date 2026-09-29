@@ -37,9 +37,14 @@ $$
 p(z)\coloneqq z^5-6z+3.
 $$
 
-<1>1. The polynomials $p$ and $p'$ have no common root.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The polynomials $p$ and $p'$ have no common root.
+
+::: pf-proof
+
 One has
 $$
 p'(z)=5z^4-6.
@@ -57,20 +62,32 @@ p'\left(\frac58\right)
 \ne0.
 $$
 Thus no common root exists.
+
 :::
 
-<1>2. The polynomial $p$ has five distinct complex roots.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The polynomial $p$ has five distinct complex roots.
+
+::: pf-proof
+
 By the fundamental theorem of algebra, the degree-$5$ polynomial $p$
 has five complex roots counted with multiplicity. A multiple root would
-be a common root of $p$ and $p'$, contradicting step <1>1. Hence all
+be a common root of $p$ and $p'$, contradicting step [](#s1){.pf-ref}. Hence all
 five roots are distinct.
+
 :::
 
-<1>3. The polynomial $p$ has at least three distinct real roots.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The polynomial $p$ has at least three distinct real roots.
+
+::: pf-proof
+
 Direct evaluation gives
 $$
 p(-2)=-17<0,
@@ -92,11 +109,17 @@ $$
 (1,2).
 $$
 Thus there are at least three distinct real roots.
+
 :::
 
-<1>4. The polynomial $p$ has at most three distinct real roots.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The polynomial $p$ has at most three distinct real roots.
+
+::: pf-proof
+
 The real zeros of
 $$
 p'(x)=5x^4-6
@@ -109,19 +132,31 @@ so $p'$ has only two real zeros. If $p$ had four distinct real roots,
 Rolle's theorem applied between consecutive roots would give at least
 three distinct real zeros of $p'$, a contradiction. Hence $p$ has at
 most three real roots.
+
 :::
 
-<1>5. Exactly three of the five distinct roots of $p$ are real.
+:::
 
-::: {.proof}
-Step <1>3 gives at least three real roots, while step <1>4 gives at
+::: {.pf-step #s5}
+
+Exactly three of the five distinct roots of $p$ are real.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives at least three real roots, while step [](#s4){.pf-ref} gives at
 most three. Therefore the number is exactly three. Together with step
-<1>2, this proves that the remaining two roots are nonreal.
+[](#s2){.pf-ref}, this proves that the remaining two roots are nonreal.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>5 prove both requested assertions.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s5){.pf-ref} prove both requested assertions.
+
+:::
+
+:::
+
 :::

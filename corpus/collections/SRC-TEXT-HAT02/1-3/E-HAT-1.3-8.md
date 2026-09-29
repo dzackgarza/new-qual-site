@@ -51,7 +51,11 @@ g f\simeq\operatorname{id}_X,
 f g\simeq\operatorname{id}_Y.
 \]
 
-<1>1. The composite
+::: pf
+
+::: pf-step
+
+The composite
 \[
 f\circ p_X:\widetilde X\to Y
 \]
@@ -59,7 +63,9 @@ lifts to a map
 \[
 \widetilde f:\widetilde X\to\widetilde Y.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $\widetilde X$ is simply connected,
 \[
 (f p_X)_*\pi_1(\widetilde X)=0.
@@ -69,18 +75,32 @@ This subgroup is contained in
 (p_Y)_*\pi_1(\widetilde Y)=0.
 \]
 The covering-space lifting criterion therefore gives a lift after choosing compatible basepoints.
+
 :::
 
-<1>2. Similarly, $g\circ p_Y$ lifts to a map
+:::
+
+::: pf-step
+
+Similarly, $g\circ p_Y$ lifts to a map
 \[
 \widetilde g:\widetilde Y\to\widetilde X.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The same lifting criterion applies because $\widetilde Y$ is simply connected.
+
 :::
 
-<1>3. The composite $\widetilde g\widetilde f$ is homotopic to $\operatorname{id}_{\widetilde X}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The composite $\widetilde g\widetilde f$ is homotopic to $\operatorname{id}_{\widetilde X}$.
+
+::: pf-proof
+
 Let
 \[
 H:X\times I\to X
@@ -111,25 +131,45 @@ Hence
 \[
 \widetilde g\widetilde f\simeq\operatorname{id}_{\widetilde X}.
 \]
+
 :::
 
-<1>4. Likewise,
+:::
+
+::: {.pf-step #s4}
+
+Likewise,
 \[
 \widetilde f\widetilde g\simeq\operatorname{id}_{\widetilde Y}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Apply the same argument to a homotopy
 \[
 f g\simeq\operatorname{id}_Y
 \]
 and the covering $p_Y$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\widetilde X\simeq\widetilde Y.}
 \]
-::: {.proof}
-The maps $\widetilde f$ and $\widetilde g$ are homotopy inverses by <1>3--<1>4.
+
+::: pf-proof
+
+The maps $\widetilde f$ and $\widetilde g$ are homotopy inverses by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

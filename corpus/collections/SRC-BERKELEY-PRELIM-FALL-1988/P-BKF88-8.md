@@ -27,7 +27,12 @@ have the same number of zeros in the strip
 :::
 
 ::: {.solution}
-<1>1. The function
+
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 f(z)=e^z+z
 $$
@@ -36,7 +41,8 @@ $$
 -\frac{\pi}{2}<\operatorname{Im}z<\frac{\pi}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write a zero as $z=x+iy$. The equation $f(z)=0$ gives
 $$
 e^x\cos y=-x,
@@ -60,15 +66,21 @@ $$
 h(0)=1.
 $$
 The intermediate value theorem therefore gives exactly one real zero.
+
 :::
 
-<1>2. The function
+:::
+
+::: {.pf-step #s2}
+
+The function
 $$
 g(z)=ze^z+1
 $$
 has no real zero.
 
-::: {.proof}
+::: pf-proof
+
 For real $x$, the equation $g(x)=0$ would be
 $$
 xe^x=-1.
@@ -78,9 +90,14 @@ $$
 q'(x)=e^x(1+x),
 $$
 so its minimum occurs at $x=-1$ and equals $-e^{-1}>-1$. Hence the displayed equation has no real solution.
+
 :::
 
-<1>3. Zeros of $g$ with
+:::
+
+::: {.pf-step #s3}
+
+Zeros of $g$ with
 $$
 0<\operatorname{Im}z<\frac{\pi}{2}
 $$
@@ -89,7 +106,8 @@ $$
 F(y)=\log\left(\frac{y}{\sin y}\right)-y\cot y.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write $z=x+iy$ with $0<y<\pi/2$. The equation $g(z)=0$ is equivalent to
 $$
 e^x(x\cos y-y\sin y)=-1,
@@ -109,11 +127,17 @@ $$
 \log\left(\frac{y}{\sin y}\right)-y\cot y=0.
 $$
 Every step is reversible, proving the correspondence.
+
 :::
 
-<1>4. The function $F$ from step <1>3 has exactly one zero in $(0,\pi/2)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The function $F$ from step [](#s3){.pf-ref} has exactly one zero in $(0,\pi/2)$.
+
+::: pf-proof
+
 Its endpoint limits are
 $$
 \lim_{y\to0^+}F(y)=-1
@@ -143,21 +167,33 @@ y\sin^2y\,F'(y)
 \end{aligned}
 $$
 Thus $F$ is strictly increasing. The intermediate value theorem and the endpoint signs show that it has exactly one zero.
+
 :::
 
-<1>5. The function $g$ has exactly two zeros in the strip.
+:::
 
-::: {.proof}
-By steps <1>3 and <1>4, $g$ has exactly one zero in the upper half of the strip. Since
+::: {.pf-step #s5}
+
+The function $g$ has exactly two zeros in the strip.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $g$ has exactly one zero in the upper half of the strip. Since
 $$
 g(\overline z)=\overline{g(z)},
 $$
-complex conjugation gives exactly one zero in the lower half. Step <1>2 shows that there is no additional real zero. Hence the strip contains exactly two zeros of $g$.
+complex conjugation gives exactly one zero in the lower half. Step [](#s2){.pf-ref} shows that there is no additional real zero. Hence the strip contains exactly two zeros of $g$.
+
 :::
 
-<1>6. Every zero of either function in the strip is simple.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Every zero of either function in the strip is simple.
+
+::: pf-proof
+
 If $f(z)=f'(z)=0$, then $f'(z)=e^z+1=0$ gives $e^z=-1$, while $f(z)=0$ then gives $z=1$, a contradiction. Thus every zero of $f$ is simple.
 
 Similarly,
@@ -169,20 +205,32 @@ $$
 g(-1)=1-e^{-1}\neq0.
 $$
 Thus every zero of $g$ is simple.
+
 :::
 
-<1>7. The two functions do not have the same number of zeros in the strip:
+:::
+
+::: {.pf-step #s7}
+
+The two functions do not have the same number of zeros in the strip:
 $$
 \boxed{f\text{ has one zero, whereas }g\text{ has two}.}
 $$
 
-::: {.proof}
-This follows from steps <1>1 and <1>5. Step <1>6 shows that the same counts hold when zeros are counted with multiplicity.
+::: pf-proof
+
+This follows from steps [](#s1){.pf-ref} and [](#s5){.pf-ref}. Step [](#s6){.pf-ref} shows that the same counts hold when zeros are counted with multiplicity.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

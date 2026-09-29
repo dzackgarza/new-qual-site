@@ -36,9 +36,14 @@ $$
 ::: {.solution}
 The value is $\boxed{\pi/8}$.
 
-<1>1. The two upper-half-plane residues have sum $-i/8$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The two upper-half-plane residues have sum $-i/8$.
+
+::: pf-proof
+
 The four roots of $z^4+4$ are $1+i$, $-1+i$, $-1-i$
 and $1-i$. Each is simple since $4z^3\ne0$ there.
 For $F(z)=1/(z^4+4)$, the upper-half-plane residues are
@@ -49,11 +54,17 @@ $$
 =\frac{1-i}{16}.
 $$
 Their sum is $-i/8$.
+
 :::
 
-<1>2. The upper semicircle evaluates the integral.
+:::
 
-::: {.proof}
+::: pf-step
+
+The upper semicircle evaluates the integral.
+
+::: pf-proof
+
 For $R>2$, integrate along $[-R,R]$ and the
 counterclockwise upper semicircle $\Gamma_R$. The residue
 theorem gives the contour integral
@@ -71,5 +82,11 @@ $$
 $$
 Evenness of the integrand makes the required half-line
 integral equal to half this value, namely $\pi/8$.
+
 :::
+
+:::
+
+:::
+
 :::

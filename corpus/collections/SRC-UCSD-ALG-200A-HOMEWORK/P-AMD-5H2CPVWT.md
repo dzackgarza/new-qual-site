@@ -40,8 +40,14 @@ Let $h\in H$ and $k\in K$ be arbitrary, and set
 c=hkh^{-1}k^{-1}.
 \]
 
-<1>1. The element $c$ belongs to $K$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The element $c$ belongs to $K$.
+
+::: pf-proof
+
 Since $K\trianglelefteq G$ and $k\in K$,
 \[
 hkh^{-1}\in K.
@@ -51,10 +57,17 @@ Therefore
 \[
 c=(hkh^{-1})k^{-1}\in K.
 \]
+
 :::
 
-<1>2. The element $c$ belongs to $H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The element $c$ belongs to $H$.
+
+::: pf-proof
+
 Since $H\trianglelefteq G$ and $h^{-1}\in H$,
 \[
 kh^{-1}k^{-1}\in H.
@@ -64,11 +77,18 @@ Therefore
 \[
 c=h(kh^{-1}k^{-1})\in H.
 \]
+
 :::
 
-<1>3. One has $c=e$.
-::: {.proof}
-By <1>1 and <1>2,
+:::
+
+::: {.pf-step #s3}
+
+One has $c=e$.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 \[
 c\in H\cap K.
 \]
@@ -80,11 +100,18 @@ Hence
 \[
 c=e.
 \]
+
 :::
 
-<1>4. The elements $h$ and $k$ commute.
-::: {.proof}
-From <1>3,
+:::
+
+::: pf-step
+
+The elements $h$ and $k$ commute.
+
+::: pf-proof
+
+From step [](#s3){.pf-ref},
 \[
 hkh^{-1}k^{-1}=e.
 \]
@@ -93,5 +120,11 @@ Multiplying on the right by $k$ and then by $h$ gives
 hk=kh.
 \]
 Since $h\in H$ and $k\in K$ were arbitrary, the two normal subgroups commute elementwise.
+
 :::
+
+:::
+
+:::
+
 :::

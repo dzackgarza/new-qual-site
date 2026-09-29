@@ -36,43 +36,64 @@ $$\begin{array}{rcl}
 :::
 
 ::: {.solution}
-<1>1. Let $[\gamma]\in\pi_1(X,x_1)$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $[\gamma]\in\pi_1(X,x_1)$.
 Then
 \[
 (f_*\beta_h)([\gamma])
 =
 [f\circ(h\cdot\gamma\cdot\bar h)].
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \beta_h([\gamma])=[h\cdot\gamma\cdot\bar h]
 \]
 as a loop based at $x_0$, and $f_*$ is induced by postcomposition with $f$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 f\circ(h\cdot\gamma\cdot\bar h)
 =
 (f\circ h)\cdot(f\circ\gamma)\cdot\overline{f\circ h}
 \]
 up to the standard concatenation parametrization.
-::: {.proof}
+
+::: pf-proof
+
 Postcomposition with $f$ preserves each of the three pieces of the concatenation, and
 \[
 f\circ\bar h=\overline{f\circ h}.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 (f_*\beta_h)([\gamma])
 =
 (\beta_{fh}f_*)([\gamma]).
 \]
-::: {.proof}
-Using <1>1--<1>2,
+
+::: pf-proof
+
+Using steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 \[
 \begin{aligned}
 (f_*\beta_h)([\gamma])
@@ -81,13 +102,26 @@ Using <1>1--<1>2,
 &=(\beta_{fh}f_*)([\gamma]).
 \end{aligned}
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 f_*\beta_h=\beta_{fh}f_*.
 \]
-::: {.proof}
-The element $[\gamma]$ in <1>1 was arbitrary.
+
+::: pf-proof
+
+The element $[\gamma]$ in step [](#s1){.pf-ref} was arbitrary.
+
 :::
+
+:::
+
+:::
+
 :::

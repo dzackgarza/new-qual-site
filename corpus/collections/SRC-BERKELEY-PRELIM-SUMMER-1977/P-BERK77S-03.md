@@ -34,12 +34,18 @@ is algebraic over $\mathbb Q$ by explicitly finding a polynomial in $\mathbb Q[x
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \alpha^2=8+2\sqrt{15}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of $\alpha$,
 $$
 \begin{aligned}
@@ -52,15 +58,21 @@ $$
 8+2\sqrt{15}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The number $\alpha$ satisfies
+:::
+
+::: {.pf-step #s2}
+
+The number $\alpha$ satisfies
 $$
 \alpha^4-16\alpha^2+4=0.
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 \alpha^2-8=2\sqrt{15}.
 $$
@@ -76,9 +88,14 @@ hence
 $$
 \alpha^4-16\alpha^2+4=0.
 $$
+
 :::
 
-<1>3. An explicit polynomial with rational coefficients having $\alpha$ as
+:::
+
+::: {.pf-step #s3}
+
+An explicit polynomial with rational coefficients having $\alpha$ as
 a root is
 $$
 \boxed{
@@ -86,15 +103,22 @@ p(x)=x^4-16x^2+4.
 }
 $$
 
-::: {.proof}
-The polynomial $p$ lies in $\QQ[x]$ and is nonzero. Step <1>2 says exactly
+::: pf-proof
+
+The polynomial $p$ lies in $\QQ[x]$ and is nonzero. Step [](#s2){.pf-ref} says exactly
 that $p(\alpha)=0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves that $\alpha$ is algebraic over $\QQ$ and supplies the
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves that $\alpha$ is algebraic over $\QQ$ and supplies the
 requested polynomial.
+
 :::
+
+:::
+
 :::

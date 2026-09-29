@@ -37,27 +37,54 @@ Q(X)=\prod_{i\in\mathbb Z}\widetilde H_i(X)\big/\bigoplus_{i\in\mathbb Z}\wideti
 \qquad \widetilde h_n(X)=Q(X).
 \]
 
-<1>1. Homotopy invariance holds.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Homotopy invariance holds.
+
+::: pf-proof
+
 A homotopy equivalence induces isomorphisms on every reduced homology group, hence on their product, their direct sum, and therefore on the quotient $Q(X)$.
+
 :::
 
-<1>2. Exactness holds, with all connecting maps induced coordinatewise from ordinary homology.
-::: {.proof}
+:::
+
+::: pf-step
+
+Exactness holds, with all connecting maps induced coordinatewise from ordinary homology.
+
+::: pf-proof
+
 For a cofibration sequence $A\to X\to X/A$, ordinary reduced homology gives a long exact sequence. Reindexing turns the connecting map into a degree-preserving map between the products defining $Q$. Products of exact sequences of abelian groups are exact. Direct sums are exact as well. Applying the snake lemma to
 \[
 0\to\bigoplus_i\widetilde H_i(-)\to\prod_i\widetilde H_i(-)\to Q(-)\to0
 \]
 for the three terms of the cofibration sequence gives exactness for $Q$.
+
 :::
 
-<1>3. The dimension axiom holds.
-::: {.proof}
+:::
+
+::: pf-step
+
+The dimension axiom holds.
+
+::: pf-proof
+
 For $S^0$ only one reduced homology group is nonzero. Hence product and direct sum coincide, so $Q(S^0)=0$ in every degree.
+
 :::
 
-<1>4. The wedge axiom fails.
-::: {.proof}
+:::
+
+::: pf-step
+
+The wedge axiom fails.
+
+::: pf-proof
+
 Let
 \[
 X=\bigvee_{j\ge1}S^j.
@@ -71,6 +98,11 @@ But each individual sphere $S^j$ is finite-dimensional, hence $Q(S^j)=0$. Theref
 \bigoplus_j\widetilde h_n(S^j)=0
 \]
 while $\widetilde h_n(\bigvee_jS^j)\ne0$.
+
+:::
+
+:::
+
 :::
 
 Thus the candidate satisfies the reduced homology axioms except the infinite wedge axiom.

@@ -42,15 +42,25 @@ $$
 T(e)=10e,\qquad T(u)=v,\qquad T(v)=-u.
 $$
 
-<1>1. The line $L$ and the plane $L^\perp$ are $T$-invariant.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The line $L$ and the plane $L^\perp$ are $T$-invariant.
+
+::: pf-proof
+
 Because $T(e)=10e$, the line $L=\operatorname{span}(e)$ is invariant.
 Also $T(u)=v$ and $T(v)=-u$, so $T$ maps the spanning set $\{u,v\}$ of
 $L^\perp$ into $L^\perp$. Hence $L^\perp$ is invariant.
+
 :::
 
-<1>2. In the standard basis, $T$ has matrix
+:::
+
+::: {.pf-step #s2}
+
+In the standard basis, $T$ has matrix
 $$
 \boxed{
 A=\frac13
@@ -61,7 +71,8 @@ A=\frac13
 \end{pmatrix}.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every $x=(x_1,x_2,x_3)$ has the unique decomposition
 $$
 x=a e+b u+c v,
@@ -77,11 +88,17 @@ $$
 T(x)=10a e+bv-cu.
 $$
 Substituting the expressions for $a,b,c$ gives $T(x)=Ax$.
+
 :::
 
-<1>3. The minimal polynomial of $A$ is $(t^2+1)(t-10)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The minimal polynomial of $A$ is $(t^2+1)(t-10)$.
+
+::: pf-proof
+
 On $L$, the restriction of $T$ is multiplication by $10$, so its minimal
 polynomial is $t-10$. On $L^\perp$, relative to the basis $(u,v)$, the
 restriction has matrix
@@ -95,18 +112,24 @@ Since
 $$
 \RR^3=L\oplus L^\perp
 $$
-and both summands are invariant by step <1>1, the minimal polynomial of $T$
+and both summands are invariant by step [](#s1){.pf-ref}, the minimal polynomial of $T$
 is the least common multiple of the minimal polynomials of the two
 restrictions. The polynomials $t-10$ and $t^2+1$ are coprime over $\RR$, so
 $$
 \mu_A(t)=\operatorname{lcm}(t-10,t^2+1)=(t-10)(t^2+1).
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>2 exhibits the matrix $A$, step <1>1 shows that it leaves $L$ and
-$L^\perp$ invariant, and step <1>3 gives its minimal polynomial.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} exhibits the matrix $A$, step [](#s1){.pf-ref} shows that it leaves $L$ and
+$L^\perp$ invariant, and step [](#s3){.pf-ref} gives its minimal polynomial.
+
+:::
+
+:::
+
 :::

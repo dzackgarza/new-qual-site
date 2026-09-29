@@ -44,7 +44,12 @@ Show that every zero of $p'(z)$ lies in the convex hull of the zeroes of $p(z)$.
 :::
 
 ::: {.solution}
-<1>1. Suppose the point $z$ does not lie in the convex hull of
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose the point $z$ does not lie in the convex hull of
 $$
 c_1,\ldots,c_n.
 $$
@@ -57,7 +62,8 @@ z=0
 $$
 for every $i$.
 
-::: {.proof}
+::: pf-proof
+
 The convex hull
 $$
 K=\operatorname{conv}\{c_1,\ldots,c_n\}
@@ -67,15 +73,21 @@ $\RR^2\cong\CC$ gives a line separating $z$ from $K$. Translating by
 $-z$ moves $z$ to $0$, and multiplying by a complex number of modulus
 $1$ rotates the separating line to the imaginary axis, with the image
 of $K$ in the open right half-plane.
+
 :::
 
-<1>2. Under the normalization in step <1>1,
+:::
+
+::: {.pf-step #s2}
+
+Under the normalization in step [](#s1){.pf-ref},
 $$
 \Re\!\left(\frac1{z-c_i}\right)<0
 $$
 for every $i$.
 
-::: {.proof}
+::: pf-proof
+
 Now $z=0$, so
 $$
 \frac1{z-c_i}=-\frac1{c_i}.
@@ -89,9 +101,14 @@ $$
 0.
 $$
 Multiplying by $-1$ gives the claimed strict negativity.
+
 :::
 
-<1>3. Part (a) holds:
+:::
+
+::: {.pf-step #s3}
+
+Part (a) holds:
 $$
 \boxed{
 \sum_{i=1}^n\frac1{z-c_i}=0
@@ -100,19 +117,25 @@ z\in\operatorname{conv}\{c_1,\ldots,c_n\}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose instead that $z$ lay outside the convex hull. Apply the affine
-normalization from step <1>1. Translation and multiplication by a
+normalization from step [](#s1){.pf-ref}. Translation and multiplication by a
 nonzero complex scalar preserve the equation up to multiplication of
 its left-hand side by a nonzero scalar, so it remains an equation with
 sum $0$.
 
-But by step <1>2 every summand has strictly negative real part.
+But by step [](#s2){.pf-ref} every summand has strictly negative real part.
 Therefore their sum also has strictly negative real part and cannot be
 $0$. This contradiction proves the claim.
+
 :::
 
-<1>4. Let the zeros of the nonconstant polynomial $p$ be
+:::
+
+::: {.pf-step #s4}
+
+Let the zeros of the nonconstant polynomial $p$ be
 $$
 c_1,\ldots,c_n,
 $$
@@ -120,17 +143,24 @@ listed with multiplicity. If $\zeta$ is a zero of $p'$ and
 $p(\zeta)=0$, then $\zeta$ lies in the convex hull of the zeros of
 $p$.
 
-::: {.proof}
+::: pf-proof
+
 In this case $\zeta$ itself is one of the zeros $c_i$. Every point in
 the defining set of a convex hull belongs to that convex hull.
+
 :::
 
-<1>5. If $p'(\zeta)=0$ and $p(\zeta)\ne0$, then
+:::
+
+::: {.pf-step #s5}
+
+If $p'(\zeta)=0$ and $p(\zeta)\ne0$, then
 $$
 \sum_{i=1}^n\frac1{\zeta-c_i}=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 p(w)=a\prod_{i=1}^n(w-c_i),
@@ -145,23 +175,35 @@ $$
 \sum_{i=1}^n\frac1{\zeta-c_i}.
 $$
 The left-hand side is $0$ because $p'(\zeta)=0$.
+
 :::
 
-<1>6. Every zero of $p'$ lies in the convex hull of the zeros of $p$.
+:::
 
-::: {.proof}
-Let $\zeta$ be a zero of $p'$. If $p(\zeta)=0$, apply step <1>4. If
-$p(\zeta)\ne0$, step <1>5 gives the hypothesis of part (a), and step
-<1>3 implies
+::: {.pf-step #s6}
+
+Every zero of $p'$ lies in the convex hull of the zeros of $p$.
+
+::: pf-proof
+
+Let $\zeta$ be a zero of $p'$. If $p(\zeta)=0$, apply step [](#s4){.pf-ref}. If
+$p(\zeta)\ne0$, step [](#s5){.pf-ref} gives the hypothesis of part (a), and step
+[](#s3){.pf-ref} implies
 $$
 \zeta\in\operatorname{conv}\{c_1,\ldots,c_n\}.
 $$
 Thus the conclusion holds in both cases.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), and step <1>6 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

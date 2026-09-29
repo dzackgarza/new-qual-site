@@ -44,8 +44,14 @@ Write
 f(x)=a_0+a_1x+\cdots+a_nx^n\in A[x].
 \]
 
-<1>1. If $f(x)$ is a unit, then $a_0\in A^\times$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $f(x)$ is a unit, then $a_0\in A^\times$.
+
+::: pf-proof
+
 Suppose
 \[
 f(x)g(x)=1
@@ -55,10 +61,17 @@ for some $g(x)\in A[x]$. Evaluating at $x=0$ gives
 a_0g(0)=1.
 \]
 Hence $a_0$ is a unit of $A$.
+
 :::
 
-<1>2. If $f(x)$ is a unit, then every $a_i$ with $i\ge1$ lies in every prime ideal of $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $f(x)$ is a unit, then every $a_i$ with $i\ge1$ lies in every prime ideal of $A$.
+
+::: pf-proof
+
 Let $\mathfrak p$ be a prime ideal of $A$. Reduction modulo $\mathfrak p$ sends $f$ to a unit
 \[
 \overline f(x)
@@ -78,10 +91,17 @@ a_i\in\mathfrak p
 \qquad(i\ge1).
 \]
 Since $\mathfrak p$ was arbitrary, each $a_i$ with $i\ge1$ lies in every prime ideal of $A$.
+
 :::
 
-<1>3. An element of $A$ that lies in every prime ideal is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+An element of $A$ that lies in every prime ideal is nilpotent.
+
+::: pf-proof
+
 It is enough to prove the contrapositive. Let $r\in A$ be non-nilpotent and set
 \[
 S=\{1,r,r^2,\ldots\}.
@@ -91,24 +111,38 @@ Then $0\notin S$, so $S^{-1}A$ is a nonzero ring. Choose a maximal ideal $\mathf
 r\notin\mathfrak p.
 \]
 Thus a non-nilpotent element cannot lie in every prime ideal.
+
 :::
 
-<1>4. If $f(x)$ is a unit, then
+:::
+
+::: {.pf-step #s4}
+
+If $f(x)$ is a unit, then
 \[
 a_0\in A^\times,
 \qquad
 a_1,\ldots,a_n\in\operatorname{Nil}(A).
 \]
-::: {.proof}
-The assertion about $a_0$ is <1>1. By <1>2, each positive-degree coefficient lies in every prime ideal, and by <1>3 each such coefficient is nilpotent.
+
+::: pf-proof
+
+The assertion about $a_0$ is step [](#s1){.pf-ref}. By step [](#s2){.pf-ref}, each positive-degree coefficient lies in every prime ideal, and by step [](#s3){.pf-ref} each such coefficient is nilpotent.
+
 :::
 
-<1>5. If $a_1,\ldots,a_n$ are nilpotent, then
+:::
+
+::: {.pf-step #s5}
+
+If $a_1,\ldots,a_n$ are nilpotent, then
 \[
 h(x):=a_1x+\cdots+a_nx^n
 \]
 is nilpotent in $A[x]$.
-::: {.proof}
+
+::: pf-proof
+
 For each $i\ge1$, choose $e_i\ge1$ with
 \[
 a_i^{e_i}=0.
@@ -125,11 +159,18 @@ That product is therefore zero. Hence
 \[
 h(x)^N=0.
 \]
+
 :::
 
-<1>6. If $a_0\in A^\times$ and $a_1,\ldots,a_n\in\operatorname{Nil}(A)$, then $f(x)$ is a unit.
-::: {.proof}
-By <1>5, $h=f-a_0$ is nilpotent. Therefore
+:::
+
+::: {.pf-step #s6}
+
+If $a_0\in A^\times$ and $a_1,\ldots,a_n\in\operatorname{Nil}(A)$, then $f(x)$ is a unit.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, $h=f-a_0$ is nilpotent. Therefore
 \[
 u:=a_0^{-1}h
 \]
@@ -142,10 +183,23 @@ and
 (1+u)(1-u+u^2-\cdots+(-u)^{N-1})=1,
 \]
 both factors on the right are units. Hence $f$ is a unit of $A[x]$.
+
 :::
 
-<1>7. The stated description of $A[x]^\times$ follows.
-::: {.proof}
-Necessity is <1>4 and sufficiency is <1>6. Thus a polynomial is a unit exactly when its constant coefficient is a unit and every positive-degree coefficient is nilpotent.
 :::
+
+::: pf-step
+
+The stated description of $A[x]^\times$ follows.
+
+::: pf-proof
+
+Necessity is step [](#s4){.pf-ref} and sufficiency is step [](#s6){.pf-ref}. Thus a polynomial is a unit exactly when its constant coefficient is a unit and every positive-degree coefficient is nilpotent.
+
+:::
+
+:::
+
+:::
+
 :::

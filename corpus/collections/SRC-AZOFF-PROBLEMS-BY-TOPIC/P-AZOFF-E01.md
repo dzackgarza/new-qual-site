@@ -39,14 +39,20 @@ c) Prove that $f$ cannot be analytic at each point of $\mathbb{T}$.
 :::
 
 ::: {.solution}
-<1>1. For part (a), one example is
+
+::: pf
+
+::: {.pf-step #s1}
+
+For part (a), one example is
 $$
 \boxed{
 f_a(z)=\sum_{n=0}^{\infty}\frac{z^n}{(n+1)^2}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}<1$, the series converges absolutely by comparison with the
 geometric series $\sum \abs{z}^n$. If $\abs{z}>1$, then
 $$
@@ -70,16 +76,22 @@ $$
 <\infty.
 $$
 Hence the power series converges at every point of the unit circle.
+
 :::
 
-<1>2. For part (b), one example is
+:::
+
+::: {.pf-step #s2}
+
+For part (b), one example is
 $$
 \boxed{
 f_b(z)=\frac1{1+z}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $f_b$ is analytic on
 $$
 \CC\sm\{-1\},
@@ -100,11 +112,17 @@ $$
 $$
 whose partial sums alternate between $1$ and $0$. Thus the coefficient sum
 diverges even though $f_b$ is analytic at $1$.
+
 :::
 
-<1>3. For part (c), $f$ cannot be analytic at every point of the unit circle.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+For part (c), $f$ cannot be analytic at every point of the unit circle.
+
+::: pf-proof
+
 Suppose instead that $f$ were analytic at every point of the unit circle.
 Together with the given analyticity on a region containing the open unit
 disk, this gives an open set $U$ on which $f$ is analytic and which contains
@@ -125,12 +143,18 @@ $\abs{z}<1+\varepsilon$ converges there to the function. Hence the Taylor
 series of $f$ at the origin has radius of convergence at least
 $1+\varepsilon$, contradicting the hypothesis that its radius is exactly
 $1$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 give the requested examples, and step <1>3 proves the
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give the requested examples, and step [](#s3){.pf-ref} proves the
 impossibility in part (c).
+
 :::
+
+:::
+
 :::

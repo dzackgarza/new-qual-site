@@ -33,8 +33,15 @@ Show that if $X$ is a path connected space, then $Y$ is path connected.
 :::
 
 ::: {.solution}
-<1>1. Fix a deformation retraction of $Y$ onto $X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix a deformation retraction of $Y$ onto $X$.
+
+::: pf-proof
+
 Since $X$ is a deformation retract of $Y$, there are a retraction
 \[
 r:Y\to X
@@ -54,10 +61,17 @@ for every $y\in Y$, and
 H(x,t)=x
 \]
 for every $x\in X$ and $t\in[0,1]$.
+
 :::
 
-<1>2. Every point of $Y$ can be joined by a path in $Y$ to a point of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every point of $Y$ can be joined by a path in $Y$ to a point of $X$.
+
+::: pf-proof
+
 Let $y\in Y$.
 Define
 \[
@@ -65,19 +79,26 @@ Define
 \qquad
 \alpha_y(t)=H(y,t).
 \]
-Continuity of $H$ implies that $\alpha_y$ is continuous, and <1>1 gives
+Continuity of $H$ implies that $\alpha_y$ is continuous, and step [](#s1){.pf-ref} gives
 \[
 \alpha_y(0)=y,
 \qquad
 \alpha_y(1)=r(y)\in X.
 \]
 Thus $\alpha_y$ is a path from $y$ to a point of $X$.
+
 :::
 
-<1>3. Any two points of $Y$ can be joined by a path in $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Any two points of $Y$ can be joined by a path in $Y$.
+
+::: pf-proof
+
 Let $y_0,y_1\in Y$.
-By <1>2 there are paths
+By step [](#s2){.pf-ref} there are paths
 \[
 \alpha_0:y_0\leadsto r(y_0),
 \qquad
@@ -96,10 +117,23 @@ Then the concatenation
 \alpha_0*\beta*\overline{\alpha_1}
 \]
 is a path in $Y$ from $y_0$ to $y_1$.
+
 :::
 
-<1>4. Therefore $Y$ is path connected.
-::: {.proof}
-By <1>3, every pair of points of $Y$ is joined by a path in $Y$, which is the definition of path connectedness.
 :::
+
+::: pf-step
+
+Therefore $Y$ is path connected.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, every pair of points of $Y$ is joined by a path in $Y$, which is the definition of path connectedness.
+
+:::
+
+:::
+
+:::
+
 :::

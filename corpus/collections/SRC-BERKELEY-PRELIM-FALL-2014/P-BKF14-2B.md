@@ -41,17 +41,28 @@ $$
 f(x,y)\coloneqq x\,\phi(y-x^2).
 $$
 
-<1>1. The function $f:\RR^2\to\RR$ is continuous.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $f:\RR^2\to\RR$ is continuous.
+
+::: pf-proof
+
 The functions $(x,y)\mapsto y-x^2$, $\phi$, and $(x,u)\mapsto xu$ are
 continuous. Their composition and product therefore give a continuous
 function $f$.
+
 :::
 
-<1>2. The function $f$ is unbounded on $\RR^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $f$ is unbounded on $\RR^2$.
+
+::: pf-proof
+
 Along the parabola $y=x^2$,
 $$
 f(x,x^2)
@@ -61,11 +72,17 @@ x\,\phi(0)
 x.
 $$
 Hence, for example, $f(n,n^2)=n\to\infty$.
+
 :::
 
-<1>3. The restriction of $f$ to every vertical line is bounded.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The restriction of $f$ to every vertical line is bounded.
+
+::: pf-proof
+
 On the line $x=c$,
 $$
 |f(c,y)|
@@ -75,11 +92,17 @@ $$
 |c|,
 $$
 because $0\le\phi\le1$.
+
 :::
 
-<1>4. The restriction of $f$ to every nonvertical line is bounded.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The restriction of $f$ to every nonvertical line is bounded.
+
+::: pf-proof
+
 Let the line be
 $$
 y=mx+b.
@@ -111,19 +134,31 @@ $$
 \frac{|m|+\sqrt{m^2+4(|b|+1)}}2.
 $$
 Thus the restriction to the line is bounded.
+
 :::
 
-<1>5. The proposed statement is false.
+:::
 
-::: {.proof}
-Steps <1>3--<1>4 show that the continuous function $f$ is bounded on
-every straight line, whereas step <1>2 shows that $f$ is unbounded on
+::: {.pf-step #s5}
+
+The proposed statement is false.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that the continuous function $f$ is bounded on
+every straight line, whereas step [](#s2){.pf-ref} shows that $f$ is unbounded on
 the plane.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 supplies the required counterexample.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} supplies the required counterexample.
+
+:::
+
+:::
+
 :::

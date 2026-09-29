@@ -41,9 +41,14 @@ $$
 $$
 We give $\sin x/x$ its continuous value one at zero.
 
-<1>1. The basic half-line integral is $\int_0^\infty\sin x/x\,dx=\pi/2$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The basic half-line integral is $\int_0^\infty\sin x/x\,dx=\pi/2$.
+
+::: pf-proof
+
 For $B>A>0$, integration by parts gives
 $$
 \int_A^B\frac{\sin x}{x}\,dx
@@ -73,11 +78,17 @@ The middle inequality uses symmetry and concavity of sine:
 $\sin\theta\geq2\theta/\pi$ on $[0,\pi/2]$.
 Passing to the limits yields $2i\int_0^\infty\sin x/x\,dx-i\pi=0$,
 which gives the stated value.
+
 :::
 
-<1>2. A real frequency contributes its sign, with frequency zero treated separately.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A real frequency contributes its sign, with frequency zero treated separately.
+
+::: pf-proof
+
 For $s>0$, substituting $u=sx$ gives
 $$
 \lim_{A\to\infty}\int_0^A\frac{\sin(sx)}x\,dx
@@ -87,11 +98,17 @@ For $s<0$, oddness of sine makes the value $-\pi/2$.
 For $s=0$, the integrand vanishes identically, so the
 value is zero. Thus the value is $(\pi/2)\operatorname{sgn}(s)$,
 where $\operatorname{sgn}(0)=0$.
+
 :::
 
-<1>3. The symmetric transform reduces to the two frequencies $1+t$ and $1-t$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The symmetric transform reduces to the two frequencies $1+t$ and $1-t$.
+
+::: pf-proof
+
 At each finite $A$, the imaginary part of the integrand
 is odd, so its integral over $[-A,A]$ is zero. Evenness
 of the real part and the product-to-sum identity give
@@ -99,7 +116,7 @@ $$
 \int_{-A}^A\frac{\sin x}{x}e^{ixt}\,dx
 =\int_0^A\frac{\sin((1+t)x)+\sin((1-t)x)}x\,dx.
 $$
-By step <1>2 the limit is
+By step [](#s2){.pf-ref} the limit is
 $$
 \frac\pi2\bigl(\operatorname{sgn}(1+t)
 +\operatorname{sgn}(1-t)\bigr).
@@ -109,5 +126,11 @@ at $t=\pm1$, and the signs cancel for $|t|>1$.
 These are the three displayed values. All cancellations
 were made at the finite symmetric endpoints before the
 limit was taken.
+
 :::
+
+:::
+
+:::
+
 :::

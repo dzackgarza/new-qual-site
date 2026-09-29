@@ -37,50 +37,74 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If the analytic function $f:U\to\CC$ in part (1) were
+
+::: pf
+
+::: {.pf-step #s1}
+
+If the analytic function $f:U\to\CC$ in part (1) were
 nonconstant, then $f(U)$ would be open in $\CC$.
 
-::: {.proof}
+::: pf-proof
+
 The set $U$ is connected and open. By the open mapping theorem, every
 nonconstant analytic function on a domain maps open sets to open sets. Thus
 a nonconstant $f$ would have open image $f(U)$ in $\CC$.
+
 :::
 
-<1>2. The function $f$ in part (1) is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $f$ in part (1) is constant.
+
+::: pf-proof
+
 By hypothesis,
 $$
 f(U)\subseteq\RR.
 $$
 No nonempty subset of $\RR$ is open in $\CC$: every complex disk around a
-real point contains nonreal points. Thus the conclusion of step <1>1 is
+real point contains nonreal points. Thus the conclusion of step [](#s1){.pf-ref} is
 impossible unless $f$ is constant. Hence
 $$
 \boxed{f\text{ is constant}.}
 $$
+
 :::
 
-<1>3. For every connected component $C$ of $W$, the restriction
+:::
+
+::: {.pf-step #s3}
+
+For every connected component $C$ of $W$, the restriction
 $$
 g|_C
 $$
 is nonconstant.
 
-::: {.proof}
+::: pf-proof
+
 If $g|_C$ were constant, its derivative would vanish everywhere on $C$.
 This contradicts the hypothesis
 $$
 g'(z)\neq0
 $$
 for every $z\in W$.
+
 :::
 
-<1>4. The set $g(W)$ is open in $\CC$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The set $g(W)$ is open in $\CC$.
+
+::: pf-proof
+
 Every connected component $C$ of the open set $W$ is itself open. By step
-<1>3, the restriction $g|_C$ is nonconstant and analytic, so the open
+[](#s3){.pf-ref}, the restriction $g|_C$ is nonconstant and analytic, so the open
 mapping theorem gives that $g(C)$ is open in $\CC$. Since
 $$
 g(W)
@@ -88,9 +112,14 @@ g(W)
 \bigcup_C g(C),
 $$
 the image $g(W)$ is a union of open sets and hence open.
+
 :::
 
-<1>5. Define
+:::
+
+::: {.pf-step #s5}
+
+Define
 $$
 L:\CC\longrightarrow\RR,
 \qquad
@@ -98,7 +127,8 @@ L(w)=\operatorname{Re}w+\operatorname{Im}w.
 $$
 The map $L$ sends open subsets of $\CC$ to open subsets of $\RR$.
 
-::: {.proof}
+::: pf-proof
+
 Let $O\subseteq\CC$ be open and let
 $$
 t_0\in L(O).
@@ -127,9 +157,14 @@ $$
 L(O).
 $$
 Every point of $L(O)$ is thus interior, so $L(O)$ is open in $\RR$.
+
 :::
 
-<1>6. The set
+:::
+
+::: {.pf-step #s6}
+
+The set
 $$
 \boxed{
 \{
@@ -140,19 +175,26 @@ z\in W
 $$
 is open in $\RR$.
 
-::: {.proof}
+::: pf-proof
+
 The displayed set is exactly
 $$
 L(g(W)).
 $$
-Step <1>4 shows that $g(W)$ is open in $\CC$, and step <1>5 shows that
+Step [](#s4){.pf-ref} shows that $g(W)$ is open in $\CC$, and step [](#s5){.pf-ref} shows that
 $L$ maps open subsets of $\CC$ to open subsets of $\RR$. Hence
 $L(g(W))$ is open.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part (1), and step <1>6 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (1), and step [](#s6){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

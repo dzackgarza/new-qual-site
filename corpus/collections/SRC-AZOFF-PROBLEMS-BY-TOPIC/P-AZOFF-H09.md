@@ -47,7 +47,11 @@ p(z)
 a_0+a_1z+\cdots+a_{n-1}z^{n-1}+z^n.
 $$
 
-<1>1. Suppose, for contradiction, that
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that
 $$
 \max_{\abs{z}=1}\abs{p(z)}<1.
 $$
@@ -56,16 +60,22 @@ $$
 \abs{p(z)}<\abs{z^n}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}=1$, then
 $$
 \abs{z^n}=1.
 $$
 The assumed strict upper bound on $\abs{p(z)}$ therefore gives the
 displayed inequality.
+
 :::
 
-<1>2. Under the assumption of step <1>1, the polynomial
+:::
+
+::: {.pf-step #s2}
+
+Under the assumption of step [](#s1){.pf-ref}, the polynomial
 $$
 q(z)
 =
@@ -75,7 +85,8 @@ z^n-p(z)
 $$
 has exactly $n$ zeros in the open unit disk, counting multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=1$,
 $$
 \abs{q(z)-z^n}
@@ -86,27 +97,38 @@ $$
 <
 \abs{z^n}
 $$
-by step <1>1. Rouché's theorem implies that $q$ and $z^n$ have the same
+by step [](#s1){.pf-ref}. Rouché's theorem implies that $q$ and $z^n$ have the same
 number of zeros in the unit disk. The polynomial $z^n$ has exactly $n$,
 counting multiplicity.
+
 :::
 
-<1>3. The conclusion of step <1>2 is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The conclusion of step [](#s2){.pf-ref} is impossible.
+
+::: pf-proof
+
 The polynomial $q$ has degree at most $n-1$. It is not identically zero:
 if $q\equiv0$, then $p(z)=z^n$, which has
 $$
 \abs{p(z)}=1
 $$
-on the unit circle, contradicting step <1>1.
+on the unit circle, contradicting step [](#s1){.pf-ref}.
 
 A nonzero polynomial of degree at most $n-1$ has at most $n-1$ zeros in
 $\CC$, counting multiplicity. It therefore cannot have the $n$ zeros in
-the unit disk asserted by step <1>2.
+the unit disk asserted by step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \max_{\abs{z}=1}
@@ -117,17 +139,24 @@ a_0+a_1z+\cdots+a_{n-1}z^{n-1}+z^n
 }
 $$
 
-::: {.proof}
-Steps <1>1--<1>3 show that the strict inequality
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} show that the strict inequality
 $$
 \max_{\abs{z}=1}\abs{p(z)}<1
 $$
 leads to a contradiction. Hence the maximum is at least $1$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required inequality.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required inequality.
+
+:::
+
+:::
+
 :::

@@ -42,10 +42,15 @@ $$
 \delta_d=\frac{(d-1)(d-2)}2.
 $$
 
-<1>1. For every $d\geq3$ there is an integral plane curve $C_0$ of degree
+::: pf
+
+::: {.pf-step #s1}
+
+For every $d\geq3$ there is an integral plane curve $C_0$ of degree
 $d$ having exactly $\delta_d$ nodes and no other singularities.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 R_d\subseteq\PP^d
@@ -77,9 +82,14 @@ Hence
 $$
 s=\delta_d.
 $$
+
 :::
 
-<1>2. Let $C\subseteq\PP^2$ be any integral degree-$d$ curve having exactly
+:::
+
+::: {.pf-step #s2}
+
+Let $C\subseteq\PP^2$ be any integral degree-$d$ curve having exactly
 $\delta$ nodes and no other singularities, and let
 $$
 N=\{P_1,\ldots,P_\delta\}
@@ -89,7 +99,8 @@ $$
 H^1\bigl(\PP^2,\mathcal I_N(d)\bigr)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \nu:\widetilde C\longrightarrow C
@@ -166,13 +177,19 @@ $$
 \frac{d(d+3)}2-\delta.
 $$
 Hence $\sigma=0$, as claimed.
+
 :::
 
-<1>3. The nodes of $C$ can be smoothed independently inside the complete
+:::
+
+::: {.pf-step #s3}
+
+The nodes of $C$ can be smoothed independently inside the complete
 linear system of plane curves of degree $d$.
 
-::: {.proof}
-The vanishing in step <1>2 makes the evaluation map
+::: pf-proof
+
+The vanishing in step [](#s2){.pf-ref} makes the evaluation map
 $$
 H^0(\PP^2,\mco(d))
 \longrightarrow
@@ -227,42 +244,60 @@ singularities elsewhere.  Finally, geometric integrality is open in this
 flat projective family, and $C$ itself is integral.  Hence the deformation
 may be chosen integral while smoothing exactly any prescribed subset of the
 nodes and retaining all the others as nodes.
+
 :::
 
-<1>4. For every $d\geq3$ and every integer
+:::
+
+::: {.pf-step #s4}
+
+For every $d\geq3$ and every integer
 $$
 0\le r\le\delta_d,
 $$
 there is an integral plane curve of degree $d$ with exactly $r$ nodes and no
 other singularities.
 
-::: {.proof}
-Start with the curve $C_0$ from step <1>1, whose node set has cardinality
-$\delta_d$.  Choose any subset of $r$ nodes to retain.  By step <1>3 there
+::: pf-proof
+
+Start with the curve $C_0$ from step [](#s1){.pf-ref}, whose node set has cardinality
+$\delta_d$.  Choose any subset of $r$ nodes to retain.  By step [](#s3){.pf-ref} there
 is an integral degree-$d$ deformation in which precisely those $r$ local
 smoothing parameters remain zero and every other one is nonzero.  The
 resulting curve has exactly the chosen $r$ nodes and no other
 singularities.
+
 :::
 
-<1>5. The assertion also holds for $d=2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The assertion also holds for $d=2$.
+
+::: pf-proof
+
 Here
 $$
 \delta_2=0.
 $$
 A nonsingular plane conic is irreducible and has no singularities, so it is
 the required curve for the only possible value $r=0$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-For $d=3,4,5$, step <1>4 supplies the required curve for every
+::: pf-qed
+
+For $d=3,4,5$, step [](#s4){.pf-ref} supplies the required curve for every
 $$
 0\le r\le\frac{(d-1)(d-2)}2.
 $$
-Step <1>5 handles $d=2$.
+Step [](#s5){.pf-ref} handles $d=2$.
+
 :::
+
+:::
+
 :::

@@ -38,7 +38,11 @@ T=S^1\times S^1,
 Y=S^1\vee S^1\vee S^2.
 \]
 
-<1>1. The spaces $T$ and $Y$ have isomorphic homology groups in every degree:
+::: pf
+
+::: pf-step
+
+The spaces $T$ and $Y$ have isomorphic homology groups in every degree:
 \[
 H_n(T)\cong H_n(Y)\cong
 \begin{cases}
@@ -48,7 +52,9 @@ H_n(T)\cong H_n(Y)\cong
 0,&n>2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 For the torus this is the standard cellular chain computation with one $0$-cell, two $1$-cells, and one $2$-cell, all cellular boundary maps zero. For the wedge, reduced homology splits over a finite wedge:
 \[
 \widetilde H_n(Y)
@@ -56,19 +62,33 @@ For the torus this is the standard cellular chain computation with one $0$-cell,
 \widetilde H_n(S^1)\oplus\widetilde H_n(S^1)\oplus\widetilde H_n(S^2),
 \]
 which gives the same groups.
+
 :::
 
-<1>2. The universal cover of $T$ is $\mathbb R^2$, hence is contractible.
-::: {.proof}
+:::
+
+::: pf-step
+
+The universal cover of $T$ is $\mathbb R^2$, hence is contractible.
+
+::: pf-proof
+
 The quotient map
 \[
 \mathbb R^2\longrightarrow\mathbb R^2/\mathbb Z^2\cong S^1\times S^1
 \]
 is the universal covering map. Therefore its universal cover has trivial reduced homology.
+
 :::
 
-<1>3. The universal cover of $Y$ has nonzero $H_2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The universal cover of $Y$ has nonzero $H_2$.
+
+::: pf-proof
+
 The fundamental group of $Y$ is the free group $F_2$ coming from the two circle summands. The universal cover of the $1$-skeleton $S^1\vee S^1$ is the Cayley tree of $F_2$. At every lift of the wedge point, a copy of the simply connected summand $S^2$ lifts and is attached at that vertex. Hence the universal cover of $Y$ is a tree with one $2$-sphere attached at each vertex.
 
 Collapsing the tree to a point gives a homotopy equivalence to a wedge of one $S^2$ for each vertex, so
@@ -78,10 +98,23 @@ H_2(\widetilde Y)
 \bigoplus_{F_2}\mathbb Z,
 \]
 which is nonzero.
+
 :::
 
-<1>4. Therefore the universal covering spaces are not homeomorphic, and indeed not homotopy equivalent.
-::: {.proof}
-The universal cover of $T$ has $H_2=0$, whereas the universal cover of $Y$ has nonzero $H_2$ by <1>3. Homology is a homotopy invariant, so the universal covers cannot be homotopy equivalent or homeomorphic.
 :::
+
+::: pf-step
+
+Therefore the universal covering spaces are not homeomorphic, and indeed not homotopy equivalent.
+
+::: pf-proof
+
+The universal cover of $T$ has $H_2=0$, whereas the universal cover of $Y$ has nonzero $H_2$ by step [](#s3){.pf-ref}. Homology is a homotopy invariant, so the universal covers cannot be homotopy equivalent or homeomorphic.
+
+:::
+
+:::
+
+:::
+
 :::

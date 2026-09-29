@@ -26,32 +26,60 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Suppose \(A,B\in M_n(k)\) are invertible.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose \(A,B\in M_n(k)\) are invertible.
 For \(\lambda\in k\),
 \[
 A+\lambda B=B\bigl(B^{-1}A+\lambda I_n\bigr).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Expanding the right-hand side gives \(BB^{-1}A+\lambda BI_n=A+\lambda B\).
+
 :::
 
-<1>2. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \det(A+\lambda B)=\det(B)\,p(\lambda),
 \qquad
 p(t):=\det(B^{-1}A+tI_n)\in k[t].
 \]
-::: {.proof}
-Apply multiplicativity of the determinant to <1>1.
+
+::: pf-proof
+
+Apply multiplicativity of the determinant to step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The polynomial \(p(t)\) is nonzero and has degree \(n\).
-::: {.proof}
+:::
+
+::: pf-step
+
+The polynomial \(p(t)\) is nonzero and has degree \(n\).
+
+::: pf-proof
+
 In the determinant expansion of \(B^{-1}A+tI_n\), the product of the \(t\)-terms on the diagonal contributes \(t^n\), and no other term has degree \(n\). Thus \(p(t)\) is monic of degree \(n\).
+
 :::
 
-<1>4. Therefore \(A+\lambda B\) is singular for at most \(n\) values of \(\lambda\in k\).
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Therefore \(A+\lambda B\) is singular for at most \(n\) values of \(\lambda\in k\).
+
+::: pf-proof
+
 Because \(B\) is invertible, \(\det(B)\neq0\). Thus
 \[
 \det(A+\lambda B)=0
@@ -59,10 +87,23 @@ Because \(B\) is invertible, \(\det(B)\neq0\). Thus
 p(\lambda)=0.
 \]
 A nonzero polynomial of degree \(n\) over a field has at most \(n\) roots.
+
 :::
 
-<1>5. Hence \(A+\lambda B\) is invertible for all but finitely many \(\lambda\in k\).
-::: {.proof}
-A square matrix over a field is invertible exactly when its determinant is nonzero, so the conclusion follows from <1>4.
 :::
+
+::: pf-step
+
+Hence \(A+\lambda B\) is invertible for all but finitely many \(\lambda\in k\).
+
+::: pf-proof
+
+A square matrix over a field is invertible exactly when its determinant is nonzero, so the conclusion follows from step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

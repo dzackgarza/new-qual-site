@@ -28,33 +28,63 @@ Show that for all $x\in H$,
 .\]
 :::
 ::: {.solution}
-<1>1. $M = \ker(U - I)$ is a closed subspace, and $M^\perp = \overline{\operatorname{ran}(U - I)}$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$M = \ker(U - I)$ is a closed subspace, and $M^\perp = \overline{\operatorname{ran}(U - I)}$.
+
+::: pf-proof
+
 $M$ is the kernel of the bounded operator $U - I$, hence a closed subspace. For a bounded operator $T$, $(\operatorname{ran} T^*)^\perp = \ker T$, so $(\ker T)^\perp = \overline{\operatorname{ran} T^*}$. Take $T = U - I$. Then $T^* = U^{-1} - I = -U^{-1}(U - I)$, so $\operatorname{ran}T^* = U^{-1}\operatorname{ran}(U - I)$. Since $U^{-1}(Uy - y) = Uz - z$ with $z = U^{-1}y$, and $Uy - y = U^{-1}(Uw - w)$ with $w = Uy$, $U^{-1}\operatorname{ran}(U - I) = \operatorname{ran}(U - I)$.
+
 :::
 
-<1>2. $S_N x = x$ for $x \in M$ and every $N$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$S_N x = x$ for $x \in M$ and every $N$.
+
+::: pf-proof
+
 $U^n x = x$ for all $n$.
+
 :::
 
-<1>3. $\|S_N\| \le 1$, and $\|S_N x\| \to 0$ for $x \in \operatorname{ran}(U - I)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+$\|S_N\| \le 1$, and $\|S_N x\| \to 0$ for $x \in \operatorname{ran}(U - I)$.
+
+::: pf-proof
+
 $\|U^n\| = 1$, so $\|S_N\| \le \frac1N\sum_{n<N}\|U^n\| = 1$. For $x = Uy - y$, the sum telescopes: $S_N x = \frac{1}{N}\sum_{n=0}^{N-1}(U^{n+1}y - U^ny) = \frac{1}{N}(U^N y - y)$, so $\|S_N x\| \le \frac{2\|y\|}{N}$.
+
 :::
 
-<1>4. $\|S_N x\| \to 0$ for $x \in M^\perp$.
-
-::: {.proof}
-Given $\eps > 0$, step <1>1 gives $z \in \operatorname{ran}(U - I)$ with $\|x - z\| < \eps/2$. By step <1>3, $\|S_N x\| \le \|S_N (x - z)\| + \|S_N z\| < \eps/2 + \|S_N z\| < \eps$ for $N$ large.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Write $x = Px + (x - Px)$ with $Px \in M$ and $x - Px \in M^\perp$. By step <1>2, $S_N x - Px = S_N(x - Px)$, which tends to $0$ by step <1>4.
+$\|S_N x\| \to 0$ for $x \in M^\perp$.
+
+::: pf-proof
+
+Given $\eps > 0$, step [](#s1){.pf-ref} gives $z \in \operatorname{ran}(U - I)$ with $\|x - z\| < \eps/2$. By step [](#s3){.pf-ref}, $\|S_N x\| \le \|S_N (x - z)\| + \|S_N z\| < \eps/2 + \|S_N z\| < \eps$ for $N$ large.
+
 :::
+
+:::
+
+::: pf-qed
+
+Write $x = Px + (x - Px)$ with $Px \in M$ and $x - Px \in M^\perp$. By step [](#s2){.pf-ref}, $S_N x - Px = S_N(x - Px)$, which tends to $0$ by step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

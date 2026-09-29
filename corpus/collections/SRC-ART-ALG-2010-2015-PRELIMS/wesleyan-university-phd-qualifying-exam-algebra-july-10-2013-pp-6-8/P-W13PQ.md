@@ -32,7 +32,12 @@ b. Show that if $0 < p < q$ are primes and $p \nmid q - 1$, then any group of or
 :::
 
 ::: {.solution}
-<1>1. Sylow's theorems have the following form.
+
+::: pf
+
+::: pf-step
+
+Sylow's theorems have the following form.
 
 Let $H$ be a finite group and let $\ell$ be prime. Write
 $|H|=\ell^am$ with $\ell\nmid m$. A Sylow $\ell$-subgroup
@@ -46,10 +51,15 @@ n_\ell=[H:N_H(S)],\qquad n_\ell\mid m,
 $$
 In particular, $S$ is normal exactly when $n_\ell=1$ [@DF04].
 
-<1>2. Under the hypotheses of part (b), both Sylow subgroups
+:::
+
+::: pf-step
+
+Under the hypotheses of part (b), both Sylow subgroups
 of $G$ are normal.
 
-::: {.proof}
+::: pf-proof
+
 For the Sylow $q$-subgroups, one has $n_q\mid p$ and
 $n_q\equiv1\pmod q$. Thus $n_q=1$ or $p$. Since $p<q$,
 the latter is impossible. The Sylow $q$-subgroup $Q$ is unique.
@@ -57,11 +67,17 @@ Similarly $n_p=1$ or $q$ and $n_p\equiv1\pmod p$.
 The hypothesis $p\nmid q-1$ rules out $n_p=q$, so the
 Sylow $p$-subgroup $P$ is also unique. Uniqueness implies
 normality because conjugation preserves subgroup orders.
+
 :::
 
-<1>3. The group $G$ is cyclic of order $pq$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The group $G$ is cyclic of order $pq$.
+
+::: pf-proof
+
 Lagrange's theorem gives $P\cap Q=\{1\}$, since its order
 divides both distinct primes. For $x\in P$ and $y\in Q$,
 normality of both subgroups puts the commutator
@@ -75,5 +91,11 @@ Each of $P,Q$ has prime order and is cyclic. If $x,y$ are
 generators, then $(x,y)^d=1$ exactly when both $p$ and $q$
 divide $d$, that is, exactly when $pq\mid d$. Hence $(x,y)$
 has order $pq$, and its image generates $G$.
+
 :::
+
+:::
+
+:::
+
 :::

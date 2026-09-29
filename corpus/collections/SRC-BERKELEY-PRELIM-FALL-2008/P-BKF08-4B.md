@@ -38,10 +38,15 @@ $$
 P(z)\coloneqq z^{11}-3z^3+1.
 $$
 
-<1>1. The polynomial $P$ has exactly $11$ zeros in
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomial $P$ has exactly $11$ zeros in
 $\abs{z}<2$, counted with multiplicity, and no zero on $\abs{z}=2$.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=2$,
 $$
 \abs{-3z^3+1}
@@ -53,12 +58,18 @@ $$
 By Rouché's theorem, $P(z)=z^{11}+(-3z^3+1)$ and $z^{11}$ have the
 same number of zeros in $\abs{z}<2$, namely $11$. The strict inequality
 also implies $P(z)\ne0$ on the boundary circle.
+
 :::
 
-<1>2. The polynomial $P$ has exactly $3$ zeros in
+:::
+
+::: {.pf-step #s2}
+
+The polynomial $P$ has exactly $3$ zeros in
 $\abs{z}<1$, counted with multiplicity, and no zero on $\abs{z}=1$.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=1$,
 $$
 \abs{z^{11}+1}
@@ -71,28 +82,40 @@ Rouché's theorem therefore shows that
 $P(z)=-3z^3+(z^{11}+1)$ and $-3z^3$ have the same number of zeros in
 $\abs{z}<1$, namely $3$. Again the strict inequality excludes zeros on
 the boundary circle.
+
 :::
 
-<1>3. The annulus
+:::
+
+::: {.pf-step #s3}
+
+The annulus
 $$
 1\le\abs{z}\le2
 $$
 contains exactly $8$ zeros of $P$, counted with multiplicity.
 
-::: {.proof}
-By step <1>1 there are $11$ zeros inside the circle of radius $2$, and
-by step <1>2 exactly $3$ of them lie inside the unit circle. Neither
+::: pf-proof
+
+By step [](#s1){.pf-ref} there are $11$ zeros inside the circle of radius $2$, and
+by step [](#s2){.pf-ref} exactly $3$ of them lie inside the unit circle. Neither
 boundary circle contains a zero. Hence the annulus contains
 $$
 11-3=8
 $$
 zeros counted with multiplicity.
+
 :::
 
-<1>4. Exactly two of the zeros in the annulus are real, one in
+:::
+
+::: {.pf-step #s4}
+
+Exactly two of the zeros in the annulus are real, one in
 $(1,2)$ and one in $(-2,-1)$, and both are simple.
 
-::: {.proof}
+::: pf-proof
+
 For real $x$,
 $$
 P'(x)=11x^{10}-9x^2=x^2(11x^8-9).
@@ -110,22 +133,34 @@ $$
 The intermediate value theorem and strict monotonicity give exactly one
 real zero in each interval. Since $P'$ is positive there, both zeros are
 simple.
+
 :::
 
-<1>5. The number of nonreal zeros in the annulus is
+:::
+
+::: {.pf-step #s5}
+
+The number of nonreal zeros in the annulus is
 $$
 \boxed{6}.
 $$
 
-::: {.proof}
-Step <1>3 gives $8$ annular zeros counted with multiplicity. Step <1>4
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives $8$ annular zeros counted with multiplicity. Step [](#s4){.pf-ref}
 shows that exactly two of those zeros are real and each has multiplicity
 $1$. Therefore the remaining $8-2=6$ zeros are nonreal.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested number.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested number.
+
+:::
+
+:::
+
 :::

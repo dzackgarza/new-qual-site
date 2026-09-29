@@ -39,12 +39,17 @@ f(x)
 11x^5-11x^4+14x^2-21x+7.
 $$
 
-<1>1. The polynomial $x-1$ divides $f(x)$, and
+::: pf
+
+::: pf-step
+
+The polynomial $x-1$ divides $f(x)$, and
 $$
 f(x)=(x-1)(11x^4+14x-7).
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 f(1)
@@ -63,23 +68,34 @@ $$
 f(x).
 \end{aligned}
 $$
+
 :::
 
-<1>2. The quartic
+:::
+
+::: {.pf-step #s2}
+
+The quartic
 $$
 11x^4+14x-7
 $$
 is irreducible in $\QQ[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Apply Eisenstein's criterion with the prime $7$. The prime $7$ does not divide the leading coefficient $11$; it divides each remaining coefficient
 $$
 0,\qquad 0,\qquad 14,\qquad -7;
 $$
 and $7^2$ does not divide the constant coefficient $-7$. Hence the quartic is irreducible over $\QQ$.
+
 :::
 
-<1>3. Therefore the factorization into irreducibles in $\QQ[x]$ is
+:::
+
+::: {.pf-step #s3}
+
+Therefore the factorization into irreducibles in $\QQ[x]$ is
 $$
 \boxed{
 11x^5-11x^4+14x^2-21x+7
@@ -88,13 +104,20 @@ $$
 }.
 $$
 
-::: {.proof}
-The factor $x-1$ is irreducible because it has degree $1$, and step <1>2 proves that the quartic factor is irreducible.
+::: pf-proof
+
+The factor $x-1$ is irreducible because it has degree $1$, and step [](#s2){.pf-ref} proves that the quartic factor is irreducible.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the requested factorization.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested factorization.
+
+:::
+
+:::
+
 :::

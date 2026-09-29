@@ -23,21 +23,41 @@ Suppose $f : M \to N$ is a map between two closed connected oriented $n$-manifol
 ::: {.solution}
 **Goal.** Let $f:M\to N$ have degree $\pm1$, where $M,N$ are closed connected oriented $n$-manifolds. Prove that $f_*:\pi_1(M)\to\pi_1(N)$ is surjective.
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 $$H=f_*(\pi_1(M))\le \pi_1(N),$$
 and let $p:\widehat N\to N$ be the connected covering corresponding to $H$.
-::: {.proof}
+
+::: pf-proof
+
 Closed manifolds are locally path connected and semilocally simply connected, so the subgroup-covering correspondence applies after choosing compatible basepoints.
+
 :::
 
-<1>2. The map $f$ lifts to a map $\widehat f:M\to\widehat N$ satisfying $f=p\circ\widehat f$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $f$ lifts to a map $\widehat f:M\to\widehat N$ satisfying $f=p\circ\widehat f$.
+
+::: pf-proof
+
 The covering-space lifting criterion applies because
 $$f_*(\pi_1(M))=H=p_*(\pi_1(\widehat N)).$$
+
 :::
 
-<1>3. The covering $p$ cannot have infinitely many sheets.
-::: {.proof}
+:::
+
+::: pf-step
+
+The covering $p$ cannot have infinitely many sheets.
+
+::: pf-proof
+
 If it had infinitely many sheets, then $\widehat N$ would be a connected noncompact $n$-manifold: an infinite-sheeted cover of the compact manifold $N$ cannot itself be compact. A connected noncompact $n$-manifold has $H_n(\widehat N;\mathbb Z)=0$. Hence
 $$
 \widehat f_*[M]=0,
@@ -47,25 +67,52 @@ $$
 f_*[M]=p_*\widehat f_*[M]=0,
 $$
 which says $\deg f=0$, contradicting $\deg f=\pm1$.
+
 :::
 
-<1>4. Let $d=[\pi_1(N):H]$ be the finite number of sheets of $p$. Then
+:::
+
+::: {.pf-step #s4}
+
+Let $d=[\pi_1(N):H]$ be the finite number of sheets of $p$. Then
 $$\deg f=d\,\deg\widehat f.$$
-::: {.proof}
+
+::: pf-proof
+
 The orientation of $N$ lifts to $\widehat N$, and a connected $d$-sheeted covering of oriented closed manifolds has degree $d$. Since $f=p\circ\widehat f$, multiplicativity of degree gives
 $$
 \deg f=(\deg p)(\deg\widehat f)=d\,\deg\widehat f.
 $$
+
 :::
 
-<1>5. Since $|\deg f|=1$, one has $d=1$.
-::: {.proof}
-The integer $d\ge1$ divides $\deg f=\pm1$ by <1>4, hence $d=1$.
 :::
 
-<1>6. Therefore $H=\pi_1(N)$, so
+::: pf-step
+
+Since $|\deg f|=1$, one has $d=1$.
+
+::: pf-proof
+
+The integer $d\ge1$ divides $\deg f=\pm1$ by step [](#s4){.pf-ref}, hence $d=1$.
+
+:::
+
+:::
+
+::: pf-step
+
+Therefore $H=\pi_1(N)$, so
 $$\boxed{f_*:\pi_1(M)\twoheadrightarrow\pi_1(N).}$$
-::: {.proof}
+
+::: pf-proof
+
 A subgroup has index $1$ exactly when it is the whole group. By definition $H=f_*(\pi_1(M))$.
+
 :::
+
+:::
+
+:::
+
 :::

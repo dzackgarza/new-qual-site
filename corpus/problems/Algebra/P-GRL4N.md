@@ -33,45 +33,79 @@ m_A(x)=(x-1)(x+1)^2.
 Determine the Jordan canonical form and rational canonical form of $A$.
 :::
 
-
 ::: {.solution}
-<1>1. The Jordan blocks for the eigenvalue $1$ are two $1\times1$ blocks.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The Jordan blocks for the eigenvalue $1$ are two $1\times1$ blocks.
+
+::: pf-proof
+
 The algebraic multiplicity of $1$ is $2$. The exponent of $x-1$ in the minimal polynomial is $1$, so the largest Jordan block for $1$ has size $1$. Therefore both units of algebraic multiplicity occur as separate $1\times1$ blocks.
+
 :::
 
-<1>2. The Jordan blocks for the eigenvalue $-1$ consist of one $2\times2$ block.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The Jordan blocks for the eigenvalue $-1$ consist of one $2\times2$ block.
+
+::: pf-proof
+
 The algebraic multiplicity of $-1$ is $2$, while the exponent of $x+1$ in the minimal polynomial is $2$. Hence there must be a block of size $2$, which exhausts the full algebraic multiplicity.
+
 :::
 
-<1>3. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 J(A)=J_2(-1)\oplus[1]\oplus[1].
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The invariant factors are
+:::
+
+::: pf-step
+
+The invariant factors are
 \[
 d_1=x-1,
 \qquad
 d_2=(x-1)(x+1)^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The largest invariant factor is the minimal polynomial. Their product is the characteristic polynomial, so
 \[
 d_1=\frac{\chi_A}{d_2}=x-1.
 \]
 The divisibility condition $d_1\mid d_2$ holds.
+
 :::
 
-<1>5. Therefore the rational canonical form is
+:::
+
+::: pf-step
+
+Therefore the rational canonical form is
 \[
 C(x-1)\oplus C((x-1)(x+1)^2).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Rational canonical form is the direct sum of the companion matrices of the invariant factors. Since
 \[
 (x-1)(x+1)^2=x^3+x^2-x-1,
@@ -85,5 +119,11 @@ one standard companion-matrix convention gives
 \end{pmatrix}
 \]
 for the cubic factor, together with the $1\times1$ block $[1]$.
+
 :::
+
+:::
+
+:::
+
 :::

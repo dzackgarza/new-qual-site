@@ -38,8 +38,15 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. Compute the first distributional derivative.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Compute the first distributional derivative.
+
+::: pf-proof
+
 By definition of the derivative of a distribution,
 \[
 \Lambda'(\phi)=-\Lambda(\phi')
@@ -69,10 +76,17 @@ Hence
 \Lambda'(\phi)
 =\operatorname{PV}\int_{\mathbb R}\frac{\phi(x)}x\,dx.}
 \]
+
 :::
 
-<1>2. Differentiate once more.
-::: {.proof}
+:::
+
+::: pf-step
+
+Differentiate once more.
+
+::: pf-proof
+
 Using part (a),
 \[
 \Lambda''(\phi)
@@ -119,5 +133,11 @@ Substituting into the distributional derivative formula yields
 =-\operatorname{PV}\int_{\mathbb R}
 \frac{\phi(x)-\phi(0)}{x^2}\,dx.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

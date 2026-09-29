@@ -32,21 +32,38 @@ Show that any sequence in $\mathcal{F}$ has a subsequence that converges uniform
 ::: {.solution}
 The functions in $\mathcal F$ are taken absolutely continuous, so that $f(x)=\int_0^xf'(t)\,dt$ for $f\in\mathcal F$.
 
-<1>1. (i) A family $\mathcal F\subseteq C([0,1])$ is equicontinuous if for every $\eps>0$ there is $\delta>0$ with $\abs{f(x)-f(y)}<\eps$ whenever $\abs{x-y}<\delta$ and $f\in\mathcal F$. The Arzelà--Ascoli theorem: for a compact metric space $K$, a family in $C(K)$ that is pointwise bounded and equicontinuous has the property that every sequence in it has a uniformly convergent subsequence.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+(i) A family $\mathcal F\subseteq C([0,1])$ is equicontinuous if for every $\eps>0$ there is $\delta>0$ with $\abs{f(x)-f(y)}<\eps$ whenever $\abs{x-y}<\delta$ and $f\in\mathcal F$. The Arzelà--Ascoli theorem: for a compact metric space $K$, a family in $C(K)$ that is pointwise bounded and equicontinuous has the property that every sequence in it has a uniformly convergent subsequence.
+
+::: pf-proof
+
 These are the requested definition and statement; on the compact interval $[0,1]$ equicontinuity at every point is equivalent to the uniform version stated.
+
 :::
 
-<1>2. $\abs{f(x)-f(y)}\le\sqrt{\abs{x-y}}$ for $f\in\mathcal F$ and $x,y\in[0,1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\abs{f(x)-f(y)}\le\sqrt{\abs{x-y}}$ for $f\in\mathcal F$ and $x,y\in[0,1]$.
+
+::: pf-proof
+
 For $y\le x$, the Cauchy--Schwarz inequality gives $\abs{\int_y^xf'}\le(x-y)^{1/2}\bigl(\int_0^1f'^2\bigr)^{1/2}\le\sqrt{x-y}$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By step <1>2 with $y=0$, $\abs f\le1$ on $[0,1]$ for all $f\in\mathcal F$, and with $\delta=\eps^2$ the family is equicontinuous. By the Arzelà--Ascoli theorem of step <1>1, every sequence in $\mathcal F$ has a uniformly convergent subsequence.
 :::
+
+::: pf-qed
+
+By step [](#s2){.pf-ref} with $y=0$, $\abs f\le1$ on $[0,1]$ for all $f\in\mathcal F$, and with $\delta=\eps^2$ the family is equicontinuous. By the Arzelà--Ascoli theorem of step [](#s1){.pf-ref}, every sequence in $\mathcal F$ has a uniformly convergent subsequence.
+
+:::
+
+:::
+
 :::

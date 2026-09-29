@@ -35,22 +35,33 @@ Hint: the problem is not affected by changing a finite number of terms of each g
 :::
 
 ::: {.solution}
-<1>1. For each $m\geq1$, choose an integer $N_m$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+For each $m\geq1$, choose an integer $N_m$ such that
 $$
 \sum_{n=N_m}^{\infty}a_{m,n}
 \leq
 2^{-m}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The series
 $$
 \sum_{n=1}^{\infty}a_{m,n}
 $$
 converges and has nonnegative terms, so its tails tend to $0$. Hence a tail with sum at most $2^{-m}$ exists.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 b_{m,n}
 \coloneqq
@@ -67,11 +78,17 @@ $$
 $$
 and $b_{m,n}=a_{m,n}$ for all sufficiently large $n$.
 
-::: {.proof}
-This follows directly from the definition and step <1>1. Only the finitely many terms with $n<N_m$ have been changed.
+::: pf-proof
+
+This follows directly from the definition and step [](#s1){.pf-ref}. Only the finitely many terms with $n<N_m$ have been changed.
+
 :::
 
-<1>3. For every $n\geq1$, the series
+:::
+
+::: {.pf-step #s3}
+
+For every $n\geq1$, the series
 $$
 x_n
 \coloneqq
@@ -79,7 +96,8 @@ x_n
 $$
 converges to a finite nonnegative real number.
 
-::: {.proof}
+::: pf-proof
+
 For every $m,n$,
 $$
 0
@@ -90,7 +108,7 @@ b_{m,n}
 \leq
 2^{-m}
 $$
-by step <1>2. Therefore
+by step [](#s2){.pf-ref}. Therefore
 $$
 0
 \leq
@@ -101,16 +119,22 @@ $$
 1
 $$
 for every $M$. The increasing partial sums are bounded, so they converge.
+
 :::
 
-<1>4. The series
+:::
+
+::: {.pf-step #s4}
+
+The series
 $$
 \sum_{n=1}^{\infty}x_n
 $$
 converges.
 
-::: {.proof}
-Fix $N\geq1$. By step <1>3 and nonnegativity,
+::: pf-proof
+
+Fix $N\geq1$. By step [](#s3){.pf-ref} and nonnegativity,
 $$
 \begin{aligned}
 \sum_{n=1}^{N}x_n
@@ -128,16 +152,22 @@ $$
 \end{aligned}
 $$
 Thus the partial sums of the nonnegative series $\sum_nx_n$ are bounded above by $1$, so the series converges.
+
 :::
 
-<1>5. For every fixed $m\geq1$,
+:::
+
+::: {.pf-step #s5}
+
+For every fixed $m\geq1$,
 $$
 x_n\geq a_{m,n}
 $$
 for all $n\geq N_m$.
 
-::: {.proof}
-If $n\geq N_m$, then step <1>2 gives
+::: pf-proof
+
+If $n\geq N_m$, then step [](#s2){.pf-ref} gives
 $$
 b_{m,n}=a_{m,n}.
 $$
@@ -151,21 +181,33 @@ b_{m,n}
 =
 a_{m,n}.
 $$
+
 :::
 
-<1>6. Therefore the convergent series
+:::
+
+::: {.pf-step #s6}
+
+Therefore the convergent series
 $$
 \boxed{x_1+x_2+\cdots}
 $$
 converges more slowly than every given series in the required sense.
 
-::: {.proof}
-Convergence is step <1>4. For each $m$, step <1>5 supplies the threshold $N_m$ beyond which $x_n\geq a_{m,n}$.
+::: pf-proof
+
+Convergence is step [](#s4){.pf-ref}. For each $m$, step [](#s5){.pf-ref} supplies the threshold $N_m$ beyond which $x_n\geq a_{m,n}$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

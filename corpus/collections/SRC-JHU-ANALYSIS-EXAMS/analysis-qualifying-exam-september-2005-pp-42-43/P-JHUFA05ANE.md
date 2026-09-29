@@ -41,18 +41,29 @@ inner radius $\varepsilon$ and outer radius $R$.
 ::: {.solution}
 The value is $\boxed{2\pi/\sqrt3}$.
 
-<1>1. The integral converges absolutely at both endpoints.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The integral converges absolutely at both endpoints.
+
+::: pf-proof
+
 For $0<x\leq1$, the positive integrand is at most
 $x^{-1/3}$, whose integral at zero is finite. For $x\geq1$,
 it is at most $x^{-4/3}$, integrable at infinity. Write
 $I=\int_0^\infty x^{-1/3}/(1+x)\,dx$.
+
 :::
 
-<1>2. The logarithm branch gives a keyhole residue identity.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The logarithm branch gives a keyhole residue identity.
+
+::: pf-proof
+
 Use $0<\arg z<2\pi$ and set
 $$
 F(z)=\frac{\exp(-\operatorname{Log}z/3)}{1+z}.
@@ -80,11 +91,17 @@ $$
 +\text{outer arc integral}+\text{inner arc integral}
 =2\pi i e^{-i\pi/3}.
 $$
+
 :::
 
-<1>3. The arcs disappear and the phase factors determine $I$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The arcs disappear and the phase factors determine $I$.
+
+::: pf-proof
+
 The respective arc integrals have moduli bounded by
 $$
 \frac{2\pi R^{2/3}}{R-1}\longrightarrow0,
@@ -94,11 +111,17 @@ $$
 These follow from $|z^{-1/3}|=|z|^{-1/3}$, the arc
 lengths, and $|1+z|\geq\bigl||z|-1\bigr|$.
 Letting $R\to\infty$ and $\varepsilon\downarrow0$ in
-step <1>2 therefore yields
+step [](#s2){.pf-ref} therefore yields
 $$
 (1-e^{-2\pi i/3})I=2\pi i e^{-i\pi/3}.
 $$
 Since $1-e^{-2\pi i/3}=2i e^{-i\pi/3}\sin(\pi/3)$,
 division gives $I=\pi/\sin(\pi/3)=2\pi/\sqrt3$.
+
 :::
+
+:::
+
+:::
+
 :::

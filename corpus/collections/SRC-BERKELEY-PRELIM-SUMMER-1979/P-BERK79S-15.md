@@ -38,21 +38,32 @@ converges for every complex number $z$ exterior to the lemniscate
 :::
 
 ::: {.solution}
-<1>1. If $z$ is exterior to the lemniscate, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $z$ is exterior to the lemniscate, then
 $$
 \abs{1+z^2}>1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The lemniscate is the level set
 $$
 \abs{1+z^2}=1.
 $$
 Its exterior is the region where the defining modulus is greater than
 $1$.
+
 :::
 
-<1>2. For such a point $z$,
+:::
+
+::: {.pf-step #s2}
+
+For such a point $z$,
 $$
 \abs{
 \frac1{1+z^2}
@@ -61,8 +72,9 @@ $$
 1.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \abs{1+z^2}>1.
 $$
@@ -79,9 +91,14 @@ $$
 \frac1{\abs{1+z^2}},
 $$
 the result follows.
+
 :::
 
-<1>3. The series can be written as
+:::
+
+::: {.pf-step #s3}
+
+The series can be written as
 $$
 z
 \sum_{n=0}^{\infty}
@@ -90,7 +107,8 @@ z
 \right)^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $n$,
 $$
 \frac{z}{(1+z^2)^n}
@@ -101,13 +119,19 @@ z
 \right)^n.
 $$
 Factoring the constant $z$ from the sum gives the displayed expression.
+
 :::
 
-<1>4. The series converges absolutely for every point exterior to the
+:::
+
+::: {.pf-step #s4}
+
+The series converges absolutely for every point exterior to the
 lemniscate.
 
-::: {.proof}
-By step <1>2, the ratio
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the ratio
 $$
 q=\frac1{1+z^2}
 $$
@@ -128,9 +152,14 @@ $$
 \text{ converges absolutely.}
 }
 $$
+
 :::
 
-<1>5. In fact, at every such point,
+:::
+
+::: pf-step
+
+In fact, at every such point,
 $$
 \sum_{n=0}^{\infty}
 \frac{z}{(1+z^2)^n}
@@ -138,13 +167,14 @@ $$
 \frac{1+z^2}{z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exterior region does not contain $z=0$, because
 $$
 \abs{1+0^2}=1.
 $$
 Thus division by $z$ is valid. Using the geometric-series sum and step
-<1>3,
+[](#s3){.pf-ref},
 $$
 \begin{aligned}
 z
@@ -164,11 +194,17 @@ z
 \frac{1+z^2}{z}.
 \end{aligned}
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the required convergence.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the required convergence.
+
+:::
+
+:::
+
 :::

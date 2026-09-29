@@ -34,14 +34,20 @@ Every continuous map from $S^2$ to $S^2$ has a fixed point.
 ::: {.solution}
 The statement is false.
 
-<1>1. Define the antipodal map
+::: pf
+
+::: {.pf-step #s1}
+
+Define the antipodal map
 \[
 a:S^2\longrightarrow S^2,
 \qquad
 a(x)=-x.
 \]
 Then $a$ is continuous.
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 \RR^3\longrightarrow\RR^3,
@@ -49,10 +55,17 @@ The map
 \]
 is linear and hence continuous, and it preserves the unit sphere $S^2$.
 Its restriction to $S^2$ is therefore continuous.
+
 :::
 
-<1>2. The map $a$ has no fixed point.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The map $a$ has no fixed point.
+
+::: pf-proof
+
 If $x\in S^2$ were fixed, then
 \[
 x=a(x)=-x,
@@ -60,10 +73,23 @@ x=a(x)=-x,
 so $2x=0$ and hence $x=0$.
 But $0\notin S^2$.
 Thus no point of $S^2$ is fixed by $a$.
+
 :::
 
-<1>3. Therefore not every continuous self-map of $S^2$ has a fixed point.
-::: {.proof}
-The antipodal map from <1>1 is a continuous self-map of $S^2$ and, by <1>2, is fixed-point-free.
 :::
+
+::: pf-step
+
+Therefore not every continuous self-map of $S^2$ has a fixed point.
+
+::: pf-proof
+
+The antipodal map from step [](#s1){.pf-ref} is a continuous self-map of $S^2$ and, by step [](#s2){.pf-ref}, is fixed-point-free.
+
+:::
+
+:::
+
+:::
+
 :::

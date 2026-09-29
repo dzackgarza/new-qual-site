@@ -37,8 +37,15 @@ For each $n$ below, calculate the number of subgroups of order $n$ inside $G$.
 :::
 
 ::: {.solution}
-<1>1. The number of subgroups of order $7$ is $8$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The number of subgroups of order $7$ is $8$.
+
+::: pf-proof
+
 Such subgroups are exactly the Sylow $7$-subgroups of $G$.
 If $n_7$ denotes their number, Sylow's theorem gives
 \[
@@ -53,11 +60,18 @@ Hence
 n_7=8.
 \]
 This proves part (a).
+
 :::
 
-<1>2. For every Sylow $7$-subgroup $P\le G$, its normalizer has order $21$.
-::: {.proof}
-Conjugation by $G$ acts transitively on the eight Sylow $7$-subgroups from <1>1.
+:::
+
+::: {.pf-step #s2}
+
+For every Sylow $7$-subgroup $P\le G$, its normalizer has order $21$.
+
+::: pf-proof
+
+Conjugation by $G$ acts transitively on the eight Sylow $7$-subgroups from step [](#s1){.pf-ref}.
 The stabilizer of $P$ is $N_G(P)$, so orbit-stabilizer gives
 \[
 [G:N_G(P)]=8.
@@ -66,10 +80,17 @@ Therefore
 \[
 |N_G(P)|=\frac{168}{8}=21.
 \]
+
 :::
 
-<1>3. Every subgroup $H\le G$ of order $21$ is the normalizer of its unique Sylow $7$-subgroup.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every subgroup $H\le G$ of order $21$ is the normalizer of its unique Sylow $7$-subgroup.
+
+::: pf-proof
+
 Let $P$ be a Sylow $7$-subgroup of $H$.
 Inside $H$, Sylow's theorem gives
 \[
@@ -82,23 +103,37 @@ Hence
 \[
 H\le N_G(P).
 \]
-By <1>2, both groups have order $21$, so
+By step [](#s2){.pf-ref}, both groups have order $21$, so
 \[
 H=N_G(P).
 \]
+
 :::
 
-<1>4. The number of subgroups of order $21$ is $8$.
-::: {.proof}
-By <1>2, each of the eight Sylow $7$-subgroups $P$ gives an order-$21$ subgroup $N_G(P)$.
-By <1>3, every order-$21$ subgroup arises this way.
+:::
+
+::: pf-step
+
+The number of subgroups of order $21$ is $8$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, each of the eight Sylow $7$-subgroups $P$ gives an order-$21$ subgroup $N_G(P)$.
+By step [](#s3){.pf-ref}, every order-$21$ subgroup arises this way.
 Moreover, $N_G(P)$ has a unique Sylow $7$-subgroup, namely $P$, so distinct Sylow $7$-subgroups have distinct normalizers.
 Thus there are exactly eight subgroups of order $21$.
 This proves part (b).
+
 :::
 
-<1>5. There is no subgroup of order $42$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is no subgroup of order $42$.
+
+::: pf-proof
+
 Suppose $H\le G$ has order $42$.
 Then
 \[
@@ -127,5 +162,11 @@ would imply
 a contradiction.
 Therefore no subgroup of order $42$ exists.
 This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

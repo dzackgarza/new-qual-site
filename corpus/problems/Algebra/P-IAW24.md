@@ -26,7 +26,6 @@ Which numbers are constructible?
 Give an example of a non-constructible number whose degree is nevertheless a power of 2.
 :::
 
-
 ::: {.solution}
 A real algebraic number $\alpha$ is **constructible** by straightedge and compass iff there is a tower of fields
 \[
@@ -40,17 +39,30 @@ for every $i$, such that $\alpha\in K_r\subseteq\RR$.
 
 Equivalently, $\alpha$ lies in the smallest subfield of $\RR$ obtained from $\QQ$ by repeatedly adjoining square roots of positive elements.
 
-<1>1. Every constructible algebraic number has degree a power of $2$ over $\QQ$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every constructible algebraic number has degree a power of $2$ over $\QQ$.
+
+::: pf-proof
+
 If $\alpha\in K_r$, then
 \[
 [\QQ(\alpha):\QQ]\mid[K_r:\QQ]=2^r
 \]
 by the tower law. Hence its degree is a power of $2$.
+
 :::
 
-<1>2. The converse is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+The converse is false.
+
+::: pf-proof
+
 Let $\alpha$ be a real root of
 \[
 f(x)=x^4-x-1.
@@ -76,6 +88,11 @@ y^3+4y-1,
 which is irreducible over $\QQ$ by the rational-root test. For an irreducible quartic, irreducibility of the cubic resolvent implies that the Galois group is $A_4$ or $S_4$; the nonsquare discriminant excludes $A_4$. Hence the Galois closure has Galois group $S_4$.
 
 If $\alpha$ were constructible, it would lie in an iterated quadratic extension; the normal closure of such an extension has degree a power of $2$, so the Galois group of the normal closure of $\QQ(\alpha)$ would be a $2$-group. But $S_4$ has order $24$, not a power of $2$. Contradiction.
+
+:::
+
+:::
+
 :::
 
 Thus degree a power of $2$ is necessary, but not sufficient, for constructibility.

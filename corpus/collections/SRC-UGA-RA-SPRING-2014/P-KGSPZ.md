@@ -38,9 +38,15 @@ and characterize the collection of functions of each type.
 :::
 
 ::: {.solution}
-<1>1. If $\mu\{f>1\}>0$, the integrals diverge to infinity.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+If $\mu\{f>1\}>0$, the integrals diverge to infinity.
+
+::: pf-proof
+
 Let
 \[
 B:=\{x\in X:f(x)>1\}.
@@ -60,11 +66,17 @@ Then
 \ge \int_C f^n\,d\mu
 \ge (1+1/k)^n\mu(C)\longrightarrow\infty.
 \]
+
 :::
 
-<1>2. If $f\le1$ almost everywhere, identify the finite limit.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $f\le1$ almost everywhere, identify the finite limit.
+
+::: pf-proof
+
 Assume
 \[
 \mu\{f>1\}=0.
@@ -83,11 +95,17 @@ and the constant function $1$ is integrable because $\mu(X)<\infty$. By the Domi
 =\int_X\mathbf1_{\{f=1\}}\,d\mu
 =\mu(f^{-1}(1)).
 \]
+
 :::
 
-<1>3. State the exact dichotomy.
+:::
 
-::: {.proof}
+::: pf-step
+
+State the exact dichotomy.
+
+::: pf-proof
+
 Combining the two cases,
 \[
 \boxed{
@@ -98,5 +116,11 @@ Combining the two cases,
 \end{cases}}
 \]
 Thus the first type consists exactly of the nonnegative measurable functions exceeding $1$ on a set of positive measure; the second type consists exactly of those satisfying $f\le1$ almost everywhere.
+
 :::
+
+:::
+
+:::
+
 :::

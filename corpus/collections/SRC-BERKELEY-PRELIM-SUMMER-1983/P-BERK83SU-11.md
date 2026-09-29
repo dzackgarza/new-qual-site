@@ -47,31 +47,42 @@ N=A-I
 \end{pmatrix}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 N^2=0
 $$
 in $M_3(\FF_3)$.
 
-::: {.proof}
+::: pf-proof
+
 Every entry of $N^2$ is
 $$
 1+1+1=3=0
 $$
 in $\FF_3$. Hence $N^2$ is the zero matrix.
+
 :::
 
-<1>2. The only eigenvalue of $A$ is
+:::
+
+::: {.pf-step #s2}
+
+The only eigenvalue of $A$ is
 $$
 \boxed{1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose $Av=\lambda v$ for a nonzero $v$. Since $A=I+N$,
 $$
 Nv=(\lambda-1)v.
 $$
-Applying $N$ and using step <1>1 gives
+Applying $N$ and using step [](#s1){.pf-ref} gives
 $$
 0
 =
@@ -86,9 +97,14 @@ $$
 (\lambda-1)^2=0,
 $$
 so $\lambda=1$.
+
 :::
 
-<1>3. The eigenspace for the eigenvalue $1$ is
+:::
+
+::: {.pf-step #s3}
+
+The eigenspace for the eigenvalue $1$ is
 $$
 \boxed{
 E_1
@@ -101,7 +117,8 @@ x+y+z=0
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The equation $Av=v$ is equivalent to $Nv=0$. For
 $$
 v=
@@ -119,29 +136,46 @@ x+y+z
 $$
 Thus $Nv=0$ exactly when $x+y+z=0$. This is one nontrivial linear
 equation in three variables, so $E_1$ has dimension $2$.
+
 :::
 
-<1>4. The nilpotent matrix $N=A-I$ has rank $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The nilpotent matrix $N=A-I$ has rank $1$.
+
+::: pf-proof
+
 All three rows of $N$ are equal and nonzero, so its row space is
 one-dimensional.
+
 :::
 
-<1>5. The Jordan canonical form of $A$ consists of one block of size
+:::
+
+::: pf-step
+
+The Jordan canonical form of $A$ consists of one block of size
 $2$ and one block of size $1$, both for eigenvalue $1$.
 
-::: {.proof}
-Step <1>1 shows that every Jordan block of $A$ for eigenvalue $1$ has
-size at most $2$. Step <1>4 shows that $N=A-I$ is nonzero, so $A$ is
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that every Jordan block of $A$ for eigenvalue $1$ has
+size at most $2$. Step [](#s4){.pf-ref} shows that $N=A-I$ is nonzero, so $A$ is
 not diagonalizable and at least one block has size $2$. Since the total
 dimension is $3$, the only possibility is the partition
 $$
 3=2+1.
 $$
+
 :::
 
-<1>6. A Jordan basis is given by
+:::
+
+::: {.pf-step #s6}
+
+A Jordan basis is given by
 $$
 w=
 \begin{pmatrix}1\\1\\1\end{pmatrix},
@@ -153,7 +187,8 @@ u=
 \begin{pmatrix}1\\2\\0\end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 Nw=0,
@@ -181,9 +216,14 @@ $$
 =2\neq0
 $$
 in $\FF_3$, so $(w,v,u)$ is a basis.
+
 :::
 
-<1>7. Relative to the basis in step <1>6, the Jordan form is
+:::
+
+::: {.pf-step #s7}
+
+Relative to the basis in step [](#s6){.pf-ref}, the Jordan form is
 $$
 \boxed{
 \begin{pmatrix}
@@ -194,15 +234,22 @@ $$
 }.
 $$
 
-::: {.proof}
-The coordinate identities in step <1>6 give the three columns of the
+::: pf-proof
+
+The coordinate identities in step [](#s6){.pf-ref} give the three columns of the
 displayed matrix.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2, <1>3, and <1>7 give respectively the eigenvalue,
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s7){.pf-ref} give respectively the eigenvalue,
 eigenvectors, and Jordan canonical form requested.
+
 :::
+
+:::
+
 :::

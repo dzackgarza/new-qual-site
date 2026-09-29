@@ -48,8 +48,14 @@ injective: a continuous function nonzero at a point is
 bounded away from zero on a small disk of positive area,
 so cannot be zero almost everywhere.
 
-<1>1. A disk contained in $D$ gives an $L^2$ point-evaluation estimate.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A disk contained in $D$ gives an $L^2$ point-evaluation estimate.
+
+::: pf-proof
+
 For $\overline{D(a,r)}\subset D$ and $0<\rho<r$,
 Cauchy's formula at the center and Cauchy–Schwarz give
 $$
@@ -70,13 +76,20 @@ $$
 $$
 For the empty compact set the bound has no points to
 check, and any positive $C_K$ suffices. This proves (a).
+
 :::
 
-<1>2. An $L^2$ limit of elements of $\mathcal H$ has a holomorphic representative.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+An $L^2$ limit of elements of $\mathcal H$ has a holomorphic representative.
+
+::: pf-proof
+
 Suppose $f_n\in\mathcal H$ and $f_n\to F$ in $L^2(D)$.
 Choose a measurable representative of $F$. The sequence
-is Cauchy in $L^2$, so step <1>1 applied to $f_n-f_m$
+is Cauchy in $L^2$, so step [](#s1){.pf-ref} applied to $f_n-f_m$
 makes it uniformly Cauchy on each compact subset of $D$.
 Completeness of $\mathbb C$ gives a pointwise limit $f$,
 and the same estimates give uniform convergence on every
@@ -90,17 +103,30 @@ $$
 $$
 [@Fol13]. Thus $f=F$ almost everywhere, so $f$ belongs
 to $\mathcal H$ and represents the given $L^2$ limit.
+
 :::
 
-<1>3. The space $\mathcal H$ is a closed linear subspace and is complete.
-::: {.proof}
+:::
+
+::: pf-step
+
+The space $\mathcal H$ is a closed linear subspace and is complete.
+
+::: pf-proof
+
 Linear combinations of its functions are holomorphic
 and square integrable, so it is a linear subspace of
-$L^2(D)$. Step <1>2 proves that this subspace is closed.
+$L^2(D)$. Step [](#s2){.pf-ref} proves that this subspace is closed.
 The space $L^2(D)$ is Hilbert [@Fol13]; a Cauchy sequence
 in a closed subspace converges in the ambient Hilbert
 space and has its limit in that subspace. Therefore
 $\mathcal H$, with the inherited inner product, is a
 Hilbert space. This proves (b).
+
 :::
+
+:::
+
+:::
+
 :::

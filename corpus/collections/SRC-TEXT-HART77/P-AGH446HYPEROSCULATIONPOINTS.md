@@ -53,7 +53,11 @@ We count inflection and hyperosculation points with their natural
 ramification weights.  The characteristic-zero hypothesis is used in the
 Wronskian calculation below.
 
-<1>1. Let $L$ be a line bundle of degree $d$ on a smooth curve $X$ of genus
+::: pf
+
+::: {.pf-step #s1}
+
+Let $L$ be a line bundle of degree $d$ on a smooth curve $X$ of genus
 $g$, and let
 $$
 V\subseteq H^0(X,L),
@@ -67,7 +71,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix a point $P\in X$, a local parameter $t$, and a local frame of $L$.
 Write a basis of $V$ locally as functions
 $$
@@ -132,12 +137,18 @@ L\otimes\omega_X^{\otimes n},
 $$
 whose degree is $d+n(2g-2)$; thus the displayed formula is also exactly the
 induction on $n$ requested in the exercise.
+
 :::
 
-<1>2. For a nondegenerate map to $\PP^n$, a point is a
-hyperosculation point exactly when the Wronskian of step <1>1 vanishes there.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For a nondegenerate map to $\PP^n$, a point is a
+hyperosculation point exactly when the Wronskian of step [](#s1){.pf-ref} vanishes there.
+
+::: pf-proof
+
 The hyperplanes in $\PP^n$ correspond to the sections in $V$.
 At $P$, the largest possible order of contact of a hyperplane section is
 $$
@@ -152,7 +163,7 @@ hyperosculation occurs exactly when
 $$
 a_n(P)\geq n+1.
 $$
-This happens if and only if some $a_i(P)>i$, which by step <1>1 is equivalent
+This happens if and only if some $a_i(P)>i$, which by step [](#s1){.pf-ref} is equivalent
 to
 $$
 \operatorname{ord}_P(W)>0.
@@ -162,16 +173,22 @@ weight
 $$
 \sum_i(a_i(P)-i).
 $$
+
 :::
 
-<1>3. In part (a), the total inflection weight is
+:::
+
+::: {.pf-step #s3}
+
+In part (a), the total inflection weight is
 $$
 \boxed{
 6(g-1)+3d.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \nu:X\longrightarrow C\subseteq\PP^2
@@ -185,7 +202,7 @@ $$
 \deg L=d,
 $$
 and the three coordinate linear forms give a base-point-free
-$g^2_d$ on $X$.  Apply step <1>1 with $n=2$:
+$g^2_d$ on $X$.  Apply step [](#s1){.pf-ref} with $n=2$:
 $$
 \deg R_V
 =
@@ -219,16 +236,22 @@ the same number is
 $$
 3d(d-2)-6r.
 $$
+
 :::
 
-<1>4. In part (b), the total hyperosculation weight is
+:::
+
+::: {.pf-step #s4}
+
+In part (b), the total hyperosculation weight is
 $$
 \boxed{
 n(n+1)(g-1)+(n+1)d.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take
 $$
 L=\OO_X(1),
@@ -237,21 +260,27 @@ so $\deg L=d$, and let $V$ be the $(n+1)$-dimensional space obtained by
 restricting hyperplanes of $\PP^n$ to $X$.  Nondegeneracy means this series
 has projective dimension $n$.
 
-By step <1>2 its ramification divisor is exactly the hyperosculation divisor,
-with the proper weights.  Step <1>1 gives its degree as
+By step [](#s2){.pf-ref} its ramification divisor is exactly the hyperosculation divisor,
+with the proper weights.  Step [](#s1){.pf-ref} gives its degree as
 $$
 (n+1)d+n(n+1)(g-1),
 $$
 which is the required formula.
+
 :::
 
-<1>5. For the elliptic curve in part (c), the complete linear system
+:::
+
+::: {.pf-step #s5}
+
+For the elliptic curve in part (c), the complete linear system
 $$
 \abs{dP_0}
 $$
 embeds $X$ in $\PP^{d-1}$ as a curve of degree $d$.
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 L=\OO_X(dP_0).
@@ -279,16 +308,22 @@ The pullback of a hyperplane is $L$, hence the embedded curve has degree
 $$
 \deg L=d.
 $$
+
 :::
 
-<1>6. A point $P\in X$ is a hyperosculation point for the embedding of step
-<1>5 if and only if
+:::
+
+::: {.pf-step #s6}
+
+A point $P\in X$ is a hyperosculation point for the embedding of step
+[](#s5){.pf-ref} if and only if
 $$
 \boxed{d(P-P_0)=0}
 $$
 in the elliptic-curve group law.
 
-::: {.proof}
+::: pf-proof
+
 Here
 $$
 n=d-1.
@@ -316,12 +351,18 @@ this is equivalent to
 $$
 d(P-P_0)=0.
 $$
+
 :::
 
-<1>7. Every point satisfying $d(P-P_0)=0$ has hyperosculation weight exactly
+:::
+
+::: {.pf-step #s7}
+
+Every point satisfying $d(P-P_0)=0$ has hyperosculation weight exactly
 $1$.
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 0\leq m\leq d-1,
@@ -360,17 +401,23 @@ $$
 0,1,\ldots,d-1,
 $$
 and the weight is $0$.
+
 :::
 
-<1>8. In characteristic zero, the subgroup of points killed by $d$ has
+:::
+
+::: {.pf-step #s8}
+
+In characteristic zero, the subgroup of points killed by $d$ has
 exactly
 $$
 \boxed{d^2}
 $$
 elements.
 
-::: {.proof}
-Apply step <1>4 with
+::: pf-proof
+
+Apply step [](#s4){.pf-ref} with
 $$
 g=1,
 \qquad
@@ -386,7 +433,7 @@ n(n+1)(g-1)+(n+1)d
 =
 d^2.
 $$
-By steps <1>6--<1>7 the hyperosculation divisor is reduced and its support is
+By steps [](#s6){.pf-ref} and [](#s7){.pf-ref} the hyperosculation divisor is reduced and its support is
 exactly
 $$
 X[d](k)
@@ -394,14 +441,20 @@ X[d](k)
 \{P\in X(k):d(P-P_0)=0\}.
 $$
 Hence this set has exactly $d^2$ points.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), step <1>4 proves part (b), and steps
-<1>5--<1>8 prove part (c).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), step [](#s4){.pf-ref} proves part (b), and steps
+[](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Meaning of points of order d"}

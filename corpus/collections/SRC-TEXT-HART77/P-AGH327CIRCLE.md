@@ -37,9 +37,14 @@ The sections of $\mcr$ on an open set $U$ are the continuous functions $U\to\RR$
 Let $\mathcal T$ be the sheaf of continuous functions $U\to\RR/\ZZ$, with pointwise addition.
 The notation $\ZZ$ denotes the sheaf of locally constant integer-valued functions, not the constant presheaf.
 
-<1>1. If $0\to\mcr\to I\to Q\to0$ is a short exact sequence of abelian sheaves on $X$, then $\Gamma(X,I)\to\Gamma(X,Q)$ is surjective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $0\to\mcr\to I\to Q\to0$ is a short exact sequence of abelian sheaves on $X$, then $\Gamma(X,I)\to\Gamma(X,Q)$ is surjective.
+
+::: pf-proof
+
 Take $q\in\Gamma(X,Q)$ and choose local lifts $t_i\in I(U_i)$.
 Compactness gives finitely many such opens covering $X$.
 After refining and allowing repetitions of the $U_i$, choose open sets $V_i$ still covering $X$ with $\overline{V_i}\subseteq U_i$.
@@ -59,16 +64,22 @@ This extension is continuous, since $\operatorname{supp}\rho_j$ is a closed subs
 On $U_i\cap U_h$, the cocycle identity and $\sum_j\rho_j=1$ give $b_i-b_h=c_{ih}$.
 Thus $t_i-b_i$ agree and glue to a global section of $I$ lifting $q$.
 Only the differences in $\mcr$ have been multiplied by continuous functions; the sheaf $I$ need not be a sheaf of $\mcr$-modules.
+
 :::
 
-<1>2. There is an exact sequence of sheaves
+:::
+
+::: {.pf-step #s2}
+
+There is an exact sequence of sheaves
 $$
 0\longrightarrow\ZZ\longrightarrow\mcr
 \xrightarrow{a\mapsto a\bmod\ZZ}\mathcal T\longrightarrow0,
 $$
 and the connecting map identifies $H^1(X,\ZZ)$ with the cokernel of $\Gamma(X,\mcr)\to\Gamma(X,\mathcal T)$.
 
-::: {.proof}
+::: pf-proof
+
 The kernel consists of continuous integer-valued functions, which are locally constant.
 Every continuous map into $\RR/\ZZ$ has a local real lift, since the covering $\RR\to\RR/\ZZ$ restricts to a homeomorphism on a sufficiently small interval around any chosen lift of a point.
 Thus the last map is surjective on stalks and the sequence is exact.
@@ -79,7 +90,7 @@ $$
 \Gamma(X,I)\longrightarrow\Gamma(X,Q)\longrightarrow H^1(X,\mcr)\longrightarrow0,
 $$
 because an injective sheaf has zero higher derived functors.
-Step <1>1 makes the first arrow surjective.
+Step [](#s1){.pf-ref} makes the first arrow surjective.
 Therefore $H^1(X,\mcr)=0$.
 The long exact sequence of the displayed lifting sequence now gives
 $$
@@ -88,11 +99,17 @@ $$
 $$
 [@Har10a, Chapter III, §§1 and 2].
 This proves the asserted cokernel description using the derived-functor definition.
+
 :::
 
-<1>3. The cokernel in step <1>2 is $\ZZ$, proving $\boxed{H^1(S^1,\ZZ)\cong\ZZ}$ in (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The cokernel in step [](#s2){.pf-ref} is $\ZZ$, proving $\boxed{H^1(S^1,\ZZ)\cong\ZZ}$ in (a).
+
+::: pf-proof
+
 Let $f:X\to\RR/\ZZ$ be continuous, and let $p:[0,1]\to X$ be $p(t)=t\bmod\ZZ$.
 The composite $f\circ p$ has a continuous lift $a:[0,1]\to\RR$.
 Indeed, its local lifts cover the compact interval; subdivide the interval into finitely many subintervals on each of which one lift is defined, and adjust consecutive lifts by integers to agree at their shared endpoints.
@@ -110,20 +127,32 @@ If $f$ is the reduction of a continuous real-valued function on $X$, its lift al
 Conversely, when $\deg(f)=0$, the lift $a$ has equal endpoint values and descends to a continuous function $X=[0,1]/(0\sim1)\to\RR$.
 Its reduction is $f$.
 Thus the kernel of degree is exactly the image of $\Gamma(X,\mcr)$.
-The first isomorphism theorem and step <1>2 give the claimed group.
+The first isomorphism theorem and step [](#s2){.pf-ref} give the claimed group.
 With the chosen orientation, the connecting class of $f_1$ is a generator.
+
 :::
 
-<1>4. In (b), $\boxed{H^1(S^1,\mcr)=0}$.
-
-::: {.proof}
-In step <1>2, the degree-one derived functor was identified with the cokernel of $\Gamma(X,I)\to\Gamma(X,I/\mcr)$ for an injective embedding $\mcr\hookrightarrow I$.
-The explicit partition-of-unity correction in step <1>1 makes this cokernel zero, proving (b).
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Steps <1>2--<1>3 compute the group in (a), using the lifting lemma of step <1>1; step <1>4 gives (b).
+In (b), $\boxed{H^1(S^1,\mcr)=0}$.
+
+::: pf-proof
+
+In step [](#s2){.pf-ref}, the degree-one derived functor was identified with the cokernel of $\Gamma(X,I)\to\Gamma(X,I/\mcr)$ for an injective embedding $\mcr\hookrightarrow I$.
+The explicit partition-of-unity correction in step [](#s1){.pf-ref} makes this cokernel zero, proving (b).
+
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} compute the group in (a), using the lifting lemma of step [](#s1){.pf-ref}; step [](#s4){.pf-ref} gives (b).
+
+:::
+
+:::
+
 :::

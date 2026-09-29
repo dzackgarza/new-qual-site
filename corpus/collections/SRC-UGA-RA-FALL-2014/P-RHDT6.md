@@ -44,8 +44,15 @@ Show that $f$ is continuous at $x$ if and only if $x\notin\mathbb Q$.
 :::
 
 ::: {.solution}
-<1>1. Prove that the index set in part (a) is countable.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that the index set in part (a) is countable.
+
+::: pf-proof
+
 Put
 \[
 S:=\sum_{i\in I}a(i)<\infty
@@ -67,10 +74,17 @@ Since every $a(i)>0$, for each $i\in I$ there is some $n$ with $a(i)\ge1/n$. Hen
 I=\bigcup_{n=1}^\infty I_n.
 \]
 This is a countable union of finite sets, so $I$ is countable.
+
 :::
 
-<1>2. Show that $f$ is discontinuous at every rational point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $f$ is discontinuous at every rational point.
+
+::: pf-proof
+
 Fix $r\in\mathbb Q$. Since $a(r)>0$, for every $y<r$,
 \[
 f(r)-f(y)
@@ -78,10 +92,17 @@ f(r)-f(y)
 \ge a(r).
 \]
 Therefore values approaching $r$ from the left remain at least $a(r)$ below $f(r)$. Hence $f$ is not continuous at $r$.
+
 :::
 
-<1>3. Show that $f$ is continuous at every irrational point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $f$ is continuous at every irrational point.
+
+::: pf-proof
+
 Fix $x\notin\mathbb Q$ and $\varepsilon>0$. Since the nonnegative family $(a(q))_{q\in\mathbb Q}$ is summable, there is a finite set $F\subset\mathbb Q$ such that
 \[
 \sum_{q\in\mathbb Q\setminus F}a(q)<\varepsilon.
@@ -102,5 +123,11 @@ Combining Steps 2 and 3,
 \[
 \boxed{f\text{ is continuous at }x\iff x\notin\mathbb Q.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

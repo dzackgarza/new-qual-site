@@ -58,7 +58,11 @@ $srs^{-1}=r^{-1}$. Let $C_m$ be the cyclic group of order $m$ for
 $m\geq1$, and let $S_m$ be the [[D-6BTFJ|symmetric group]] on
 $m$ letters for $m\geq3$. Write $Z(G)$ for the center of a group $G$.
 
-<1>1. For $m\geq3$, the group $D_m$ is nonabelian and
+::: pf
+
+::: {.pf-step #s1}
+
+For $m\geq3$, the group $D_m$ is nonabelian and
 $$
 Z(D_m)=
 \begin{cases}
@@ -67,7 +71,8 @@ Z(D_m)=
 \end{cases}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $r$ has order $m\geq3$, the elements $r$ and $r^{-1}$ are
 distinct. Thus $srs^{-1}=r^{-1}\neq r$, so $r$ and $s$ do not
 commute.
@@ -80,15 +85,21 @@ $r^{-k}=r^k$, or $m\mid2k$. Since $r$ and $s$ generate $D_m$,
 this condition is also sufficient for $r^k$ to be central.
 For odd $m$, it forces $k=0$. For even $m$, it gives exactly
 $k=0$ and $k=m/2$. This proves the stated formula.
+
 :::
 
-<1>2. For $m\geq3$, the group $S_m$ is nonabelian and
+:::
+
+::: {.pf-step #s2}
+
+For $m\geq3$, the group $S_m$ is nonabelian and
 $Z(S_m)=\{1\}$. For any groups $G$ and $H$,
 $$
 Z(G\times H)=Z(G)\times Z(H).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The transpositions $(1\,2)$ and $(2\,3)$ do not commute, so $S_m$
 is nonabelian. Suppose $\sigma\in Z(S_m)$. For distinct letters
 $i,j$, conjugating $(i\,j)$ by $\sigma$ gives
@@ -108,53 +119,77 @@ An isomorphism of groups restricts to an isomorphism of their
 centers, since it preserves commutation and is surjective.
 Consequently groups with centers of different orders are
 nonisomorphic.
+
 :::
 
-<1>3. A pair of nonisomorphic nonabelian groups of order $24$ is
+:::
+
+::: {.pf-step #s3}
+
+A pair of nonisomorphic nonabelian groups of order $24$ is
 $\boxed{D_{12},\ S_4}$.
 
-::: {.proof}
+::: pf-proof
+
 Their orders are $2\cdot12=24$ and $4!=24$, and both are
-nonabelian by steps <1>1 and <1>2. The same steps give
+nonabelian by steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. The same steps give
 $\abs{Z(D_{12})}=2$ and $\abs{Z(S_4)}=1$, so the groups
 are nonisomorphic.
+
 :::
 
-<1>4. A pair of nonisomorphic nonabelian groups of order $30$ is
+:::
+
+::: {.pf-step #s4}
+
+A pair of nonisomorphic nonabelian groups of order $30$ is
 $\boxed{D_{15},\ S_3\times C_5}$.
 
-::: {.proof}
+::: pf-proof
+
 Their orders are $2\cdot15=30$ and $3!\cdot5=30$. The group
-$D_{15}$ is nonabelian by step <1>1, and $S_3\times C_5$ contains
-the nonabelian subgroup $S_3\times\{1\}$ by step <1>2.
-Since $C_5$ is abelian, steps <1>1 and <1>2 give
+$D_{15}$ is nonabelian by step [](#s1){.pf-ref}, and $S_3\times C_5$ contains
+the nonabelian subgroup $S_3\times\{1\}$ by step [](#s2){.pf-ref}.
+Since $C_5$ is abelian, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 \abs{Z(D_{15})}=1,\qquad
 Z(S_3\times C_5)=\{1\}\times C_5.
 $$
 Their centers have orders $1$ and $5$, so the groups are
 nonisomorphic.
+
 :::
 
-<1>5. A pair of nonisomorphic nonabelian groups of order $40$ is
+:::
+
+::: {.pf-step #s5}
+
+A pair of nonisomorphic nonabelian groups of order $40$ is
 $\boxed{D_{20},\ D_{10}\times C_2}$.
 
-::: {.proof}
+::: pf-proof
+
 Their orders are $2\cdot20=40$ and $(2\cdot10)\cdot2=40$.
-The first group is nonabelian by step <1>1, and the second
+The first group is nonabelian by step [](#s1){.pf-ref}, and the second
 contains the nonabelian subgroup $D_{10}\times\{1\}$.
-Since $C_2$ is abelian, steps <1>1 and <1>2 give
+Since $C_2$ is abelian, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 \abs{Z(D_{20})}=2,\qquad
 \abs{Z(D_{10}\times C_2)}=2\cdot2=4.
 $$
 Thus the groups are nonisomorphic.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>3, <1>4, and <1>5 exhibit two nonisomorphic nonabelian
+::: pf-qed
+
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} exhibit two nonisomorphic nonabelian
 groups for each of the requested orders $24$, $30$, and $40$.
+
 :::
+
+:::
+
 :::

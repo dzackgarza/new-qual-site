@@ -41,7 +41,11 @@ $$
 z_0\in\DD.
 $$
 
-<1>1. Choose $R>0$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+Choose $R>0$ such that
 $$
 \overline{B(z_0,R)}\subseteq\DD.
 $$
@@ -54,13 +58,19 @@ $$
 \Gamma=\{\zeta\in\CC:\abs{\zeta-z_0}=R\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $\DD$ is open, there is $R>0$ with the closed disk contained in
 $\DD$. The circle $\Gamma$ is compact, so the hypothesis of uniform
 convergence on every compact subset applies to $\Gamma$.
+
 :::
 
-<1>2. For every $z$ with
+:::
+
+::: {.pf-step #s2}
+
+For every $z$ with
 $$
 \abs{z-z_0}<R,
 $$
@@ -73,7 +83,8 @@ g(z)
 \frac{g(\zeta)}{\zeta-z}\,d\zeta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix such a $z$. Cauchy's integral formula gives, for every $n$,
 $$
 f_n(z)
@@ -82,7 +93,7 @@ f_n(z)
 \int_\Gamma
 \frac{f_n(\zeta)}{\zeta-z}\,d\zeta.
 $$
-Since $f_n(z)\to g(z)$ pointwise and step <1>1 gives uniform convergence on
+Since $f_n(z)\to g(z)$ pointwise and step [](#s1){.pf-ref} gives uniform convergence on
 $\Gamma$, we have
 $$
 \begin{aligned}
@@ -98,9 +109,14 @@ $$
 \end{aligned}
 $$
 Passing to the limit in Cauchy's formula gives the displayed identity.
+
 :::
 
-<1>3. The function
+:::
+
+::: {.pf-step #s3}
+
+The function
 $$
 G(z)
 =
@@ -113,7 +129,8 @@ $$
 B(z_0,R).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix
 $$
 z\in B(z_0,R).
@@ -144,12 +161,18 @@ G'(z)
 $$
 Thus the complex derivative exists at every point of the disk, so $G$ is
 holomorphic there.
+
 :::
 
-<1>4. The function $g$ is holomorphic on a neighborhood of $z_0$.
+:::
 
-::: {.proof}
-Step <1>2 says exactly that
+::: {.pf-step #s4}
+
+The function $g$ is holomorphic on a neighborhood of $z_0$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} says exactly that
 $$
 g(z)=G(z)
 $$
@@ -157,21 +180,33 @@ for every
 $$
 z\in B(z_0,R).
 $$
-Step <1>3 shows that $G$ is holomorphic on this disk. Hence $g$ is
+Step [](#s3){.pf-ref} shows that $G$ is holomorphic on this disk. Hence $g$ is
 holomorphic there.
+
 :::
 
-<1>5. The function $g$ is analytic on all of $\DD$.
+:::
 
-::: {.proof}
-The point $z_0\in\DD$ was arbitrary. By step <1>4, every point of $\DD$ has
+::: {.pf-step #s5}
+
+The function $g$ is analytic on all of $\DD$.
+
+::: pf-proof
+
+The point $z_0\in\DD$ was arbitrary. By step [](#s4){.pf-ref}, every point of $\DD$ has
 a neighborhood on which $g$ is holomorphic. Therefore $g$ is holomorphic,
 hence analytic, on $\DD$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

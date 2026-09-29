@@ -46,7 +46,11 @@ Show also that if $C$ is any curve in $X$, then the degree of $C$ in $\PP^N$ is 
 ::: {.solution}
 Let $K_X$ be a canonical divisor on $X$.
 
-<1>1. For every integer $n$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $n$,
 $$
 P(n)
 =
@@ -57,7 +61,8 @@ P(n)
 -\frac12 n(H\cdot K_X).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because the embedding is defined by the very ample divisor $H$, its twisting
 sheaf is
 $$
@@ -82,9 +87,14 @@ $$
 -\frac12 n(H\cdot K_X).
 \end{aligned}
 $$
+
 :::
 
-<1>2. Comparing coefficients with
+:::
+
+::: {.pf-step #s2}
+
+Comparing coefficients with
 $$
 P(z)=\frac12az^2+bz+c
 $$
@@ -97,8 +107,9 @@ b=-\frac12H\cdot K_X,
 c=\chi(\OO_X)=1+p_a(X).
 $$
 
-::: {.proof}
-Step <1>1 is a polynomial identity in $n$, so comparison of its quadratic,
+::: pf-proof
+
+Step [](#s1){.pf-ref} is a polynomial identity in $n$, so comparison of its quadratic,
 linear, and constant coefficients gives the first two formulas and
 $$
 c=\chi(\OO_X).
@@ -117,14 +128,20 @@ Thus
 $$
 c=1+p_a(X).
 $$
+
 :::
 
-<1>3. If $H_0\in\abs{H}$ is a nonsingular curve of genus $\pi$, then
+:::
+
+::: {.pf-step #s3}
+
+If $H_0\in\abs{H}$ is a nonsingular curve of genus $\pi$, then
 $$
 H\cdot K_X=2\pi-2-H^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $H$ is very ample, Bertini's theorem [[T-BERTINI]] gives a
 nonsingular member
 $$
@@ -139,17 +156,23 @@ H_0\cdot(H_0+K_X)
 H^2+H\cdot K_X.
 $$
 Rearranging proves the formula.
+
 :::
 
-<1>4. The linear coefficient is
+:::
+
+::: {.pf-step #s4}
+
+The linear coefficient is
 $$
 \boxed{
 b=\frac12H^2+1-\pi
 }.
 $$
 
-::: {.proof}
-Substitute step <1>3 into the expression for $b$ from step <1>2:
+::: pf-proof
+
+Substitute step [](#s3){.pf-ref} into the expression for $b$ from step [](#s2){.pf-ref}:
 $$
 \begin{aligned}
 b
@@ -157,20 +180,26 @@ b
 &=\frac12H^2+1-\pi.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The degree of the embedded surface is
+:::
+
+::: {.pf-step #s5}
+
+The degree of the embedded surface is
 $$
 \boxed{\deg X=H^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a projective scheme of dimension $2$, the leading coefficient of its
 Hilbert polynomial is
 $$
 \frac{\deg X}{2!}
 $$
-by [[D-L6ERW]].  Step <1>2 says that the leading coefficient here is
+by [[D-L6ERW]].  Step [](#s2){.pf-ref} says that the leading coefficient here is
 $$
 \frac12H^2.
 $$
@@ -178,14 +207,20 @@ Therefore
 $$
 \deg X=H^2.
 $$
+
 :::
 
-<1>6. If $C\subseteq X$ is any curve, then
+:::
+
+::: {.pf-step #s6}
+
+If $C\subseteq X$ is any curve, then
 $$
 \boxed{\deg_{\PP^N}C=C\cdot H}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hyperplane bundle of the given embedding restricts to
 $$
 \OO_C(1)
@@ -202,13 +237,19 @@ Hence
 $$
 \deg_{\PP^N}C=C\cdot H.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>4 give the three coefficients of the Hilbert polynomial,
-step <1>5 identifies the degree of $X$, and step <1>6 proves the degree
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s4){.pf-ref} give the three coefficients of the Hilbert polynomial,
+step [](#s5){.pf-ref} identifies the degree of $X$, and step [](#s6){.pf-ref} proves the degree
 formula for every curve $C\subseteq X$.
+
 :::
+
+:::
+
 :::

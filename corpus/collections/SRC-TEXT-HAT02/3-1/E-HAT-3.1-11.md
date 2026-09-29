@@ -55,45 +55,85 @@ while the cellular cochain complex gives
 \widetilde H^i(X;\mathbb Z)=0\quad(i\ne n+1).
 \]
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 q:X\to X/S^n\cong S^{n+1}
 \]
 be the quotient map. Then $q_*$ is zero on all reduced integral homology groups.
-::: {.proof}
+
+::: pf-proof
+
 The sphere has reduced homology only in degree $n+1$, but $\widetilde H_{n+1}(X)=0$. In degree $n$, the target sphere has zero homology. All other reduced groups on both sides vanish.
+
 :::
 
-<1>2. Nevertheless
+:::
+
+::: {.pf-step #s2}
+
+Nevertheless
 \[
 q^*:H^{n+1}(S^{n+1};\mathbb Z)=\mathbb Z
 \longrightarrow H^{n+1}(X;\mathbb Z)=\mathbb Z_m
 \]
 is reduction modulo $m$, hence is nonzero.
-::: {.proof}
+
+::: pf-proof
+
 On cellular cochains, the quotient identifies the unique $(n+1)$-cell of $X$ with the top cell of $S^{n+1}$. Thus the cochain map in degree $n+1$ is the identity $\mathbb Z\to\mathbb Z$ before passing to cohomology. The target cohomology is the cokernel of multiplication by $m$, so the induced map is the quotient $\mathbb Z\to\mathbb Z_m$.
+
 :::
 
-<1>3. Therefore the splitting in the cohomological universal coefficient theorem cannot be natural.
-::: {.proof}
-A natural splitting would express $H^{n+1}$ functorially as the direct sum of the Hom and Ext terms. Since $q_*$ is zero on all homology groups, naturality would force both induced Hom and Ext maps, and hence $q^*$, to be zero. This contradicts <1>2.
 :::
 
-<1>4. For the inclusion
+::: pf-step
+
+Therefore the splitting in the cohomological universal coefficient theorem cannot be natural.
+
+::: pf-proof
+
+A natural splitting would express $H^{n+1}$ functorially as the direct sum of the Hom and Ext terms. Since $q_*$ is zero on all homology groups, naturality would force both induced Hom and Ext maps, and hence $q^*$, to be zero. This contradicts step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+For the inclusion
 \[
 i:S^n\hookrightarrow X,
 \]
 the induced map on reduced integral cohomology is zero in every degree.
-::: {.proof}
+
+::: pf-proof
+
 The only nonzero reduced cohomology of $X$ is in degree $n+1$, while the sphere has nonzero reduced cohomology only in degree $n$. Thus there is no degree in which both source and target of $i^*$ are nonzero.
+
 :::
 
-<1>5. But
+:::
+
+::: pf-step
+
+But
 \[
 i_*:H_n(S^n;\mathbb Z)=\mathbb Z\to H_n(X;\mathbb Z)=\mathbb Z_m
 \]
 is reduction modulo $m$, hence nonzero.
-::: {.proof}
+
+::: pf-proof
+
 The $n$-cell of the sphere is the $n$-cell of $X$. Passing from the cellular chain group to $H_n(X)$ quotients by the image $m\mathbb Z$ of the $(n+1)$-cell boundary. Thus $i_*$ is the quotient map $\mathbb Z\to\mathbb Z_m$.
+
 :::
+
+:::
+
+:::
+
 :::

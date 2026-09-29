@@ -24,14 +24,20 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. For every $0<r<1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $0<r<1$,
 $$
 |f'(0)|
 \leq
 \frac{1}{r(1-r)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the circle $|z|=r$, the hypothesis gives
 $$
 |f(z)|
@@ -46,15 +52,21 @@ $$
 \leq
 \frac{1}{r(1-r)}.
 $$
+
 :::
 
-<1>2. The quantity $r(1-r)$ is maximized on $(0,1)$ at
+:::
+
+::: pf-step
+
+The quantity $r(1-r)$ is maximized on $(0,1)$ at
 $$
 r=\frac12,
 $$
 with maximum value $1/4$.
 
-::: {.proof}
+::: pf-proof
+
 Completing the square gives
 $$
 r(1-r)
@@ -64,15 +76,21 @@ r(1-r)
 \frac14.
 $$
 Equality holds at $r=1/2$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{|f'(0)|\leq4}.
 $$
 
-::: {.proof}
-Substitute $r=1/2$ into step <1>1:
+::: pf-proof
+
+Substitute $r=1/2$ into step [](#s1){.pf-ref}:
 $$
 |f'(0)|
 \leq
@@ -80,11 +98,17 @@ $$
 =
 4.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required bound.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required bound.
+
+:::
+
+:::
+
 :::

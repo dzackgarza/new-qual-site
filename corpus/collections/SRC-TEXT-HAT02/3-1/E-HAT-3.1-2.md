@@ -38,8 +38,14 @@ Then
 \operatorname{Ext}(H,G)=H^1(\operatorname{Hom}(F_\bullet,G)).
 \]
 
-<1>1. Multiplication by $n$ on $G$ induces multiplication by $n$ on $\operatorname{Ext}(H,G)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Multiplication by $n$ on $G$ induces multiplication by $n$ on $\operatorname{Ext}(H,G)$.
+
+::: pf-proof
+
 The map
 \[
 [n]_G:G\to G,\qquad g\mapsto ng
@@ -50,15 +56,27 @@ induces on every cochain group the map
 \qquad \varphi\mapsto [n]_G\circ\varphi=n\varphi.
 \]
 Thus the induced cochain map is literally multiplication by $n$ in every degree. Its map on cohomology, in particular on $H^1=\operatorname{Ext}(H,G)$, is therefore multiplication by $n$.
+
 :::
 
-<1>2. Multiplication by $n$ on $H$ also induces multiplication by $n$ on $\operatorname{Ext}(H,G)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Multiplication by $n$ on $H$ also induces multiplication by $n$ on $\operatorname{Ext}(H,G)$.
+
+::: pf-proof
+
 The endomorphism $[n]_H:H\to H$ lifts to the chain endomorphism $[n]_{F_i}:F_i\to F_i$ given by multiplication by $n$ in each degree, since all differentials are homomorphisms and hence commute with multiplication by $n$. Because $\operatorname{Ext}$ is contravariant in its first variable, the resulting cochain map is precomposition:
 \[
 \varphi\longmapsto \varphi\circ[n]_{F_i}=n\varphi.
 \]
 Again this is multiplication by $n$ on every cochain group, so it induces multiplication by $n$ on cohomology.
+
+:::
+
+:::
+
 :::
 
 Hence both endomorphisms specified in the problem induce

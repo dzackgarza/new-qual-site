@@ -49,13 +49,18 @@ $$
 \max_{0\leq x\leq1}\abs{u(x)}.
 $$
 
-<1>1. The family $E$ is uniformly bounded:
+::: pf
+
+::: {.pf-step #s1}
+
+The family $E$ is uniformly bounded:
 $$
 \norm{u}_\infty\leq1
 $$
 for every $u\in E$.
 
-::: {.proof}
+::: pf-proof
+
 For $u\in E$ and $x\in[0,1]$,
 $$
 \abs{u(x)}
@@ -66,11 +71,17 @@ $$
 \leq1.
 $$
 Taking the maximum over $x$ gives the claim.
+
 :::
 
-<1>2. The family $E$ is equicontinuous.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The family $E$ is equicontinuous.
+
+::: pf-proof
+
 Every $u\in E$ satisfies
 $$
 \abs{u(x)-u(y)}\leq\abs{x-y}
@@ -83,11 +94,17 @@ $$
 \abs{u(x)-u(y)}<\varepsilon
 $$
 simultaneously for all $u\in E$.
+
 :::
 
-<1>3. The set $E$ is closed in the supremum norm.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The set $E$ is closed in the supremum norm.
+
+::: pf-proof
+
 Suppose $u_j\in E$ and
 $$
 \norm{u_j-u}_\infty\longrightarrow0
@@ -111,26 +128,38 @@ $$
 \end{aligned}
 $$
 Hence $u\in E$.
+
 :::
 
-<1>4. The set $E$ is compact in the supremum norm.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2, $E$ is uniformly bounded and equicontinuous.
+::: {.pf-step #s4}
+
+The set $E$ is compact in the supremum norm.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $E$ is uniformly bounded and equicontinuous.
 The Arzelà--Ascoli theorem therefore says that the closure of $E$ in
-$C([0,1],\RR)$ is compact. Step <1>3 says that $E$ is already closed,
+$C([0,1],\RR)$ is compact. Step [](#s3){.pf-ref} says that $E$ is already closed,
 so $E$ itself is compact.
+
 :::
 
-<1>5. For all $u,v\in E$,
+:::
+
+::: {.pf-step #s5}
+
+For all $u,v\in E$,
 $$
 \abs{\varphi(u)-\varphi(v)}
 \leq
 3\norm{u-v}_\infty.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \abs{u(x)}\leq1,
 \qquad
@@ -155,19 +184,30 @@ u(x)^2-v(x)^2-u(x)+v(x)
 3\norm{u-v}_\infty.
 \end{aligned}
 $$
+
 :::
 
-<1>6. The functional
+:::
+
+::: {.pf-step #s6}
+
+The functional
 $$
 \varphi:E\longrightarrow\RR
 $$
 is continuous.
 
-::: {.proof}
-Step <1>5 shows that $\varphi$ is Lipschitz with constant $3$.
+::: pf-proof
+
+Step [](#s5){.pf-ref} shows that $\varphi$ is Lipschitz with constant $3$.
+
 :::
 
-<1>7. There is $u_*\in E$ such that
+:::
+
+::: {.pf-step #s7}
+
+There is $u_*\in E$ such that
 $$
 \boxed{
 \varphi(u_*)
@@ -176,16 +216,23 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The set $E$ is nonempty because the zero function belongs to it.
-By step <1>4, $E$ is compact, and by step <1>6, $\varphi$ is
+By step [](#s4){.pf-ref}, $E$ is compact, and by step [](#s6){.pf-ref}, $\varphi$ is
 continuous. The extreme value theorem therefore gives a point
 $u_*\in E$ at which $\varphi$ attains its maximum.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

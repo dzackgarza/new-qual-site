@@ -40,36 +40,53 @@ $$
 S=\bigcup_\alpha S_\alpha.
 $$
 
-<1>1. Suppose, toward a contradiction, that $S$ is disconnected.
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, toward a contradiction, that $S$ is disconnected.
 Then there are disjoint nonempty sets $U,V$ open in the subspace topology
 on $S$ such that
 $$
 S=U\cup V.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the definition of disconnectedness.
+
 :::
 
-<1>2. After interchanging $U$ and $V$ if necessary, the origin lies in
+:::
+
+::: {.pf-step #s2}
+
+After interchanging $U$ and $V$ if necessary, the origin lies in
 $U$.
 
-::: {.proof}
+::: pf-proof
+
 Every set $S_\alpha$ contains the origin, so
 $$
 0\in S.
 $$
 Since $S=U\cup V$ and $U,V$ are disjoint, the origin lies in exactly one of
 them.
+
 :::
 
-<1>3. For every index $\alpha$,
+:::
+
+::: {.pf-step #s3}
+
+For every index $\alpha$,
 $$
 S_\alpha\subseteq U.
 $$
 
-::: {.proof}
-Fix $\alpha$. By step <1>2 and the common-point hypothesis,
+::: pf-proof
+
+Fix $\alpha$. By step [](#s2){.pf-ref} and the common-point hypothesis,
 $$
 0\in S_\alpha\cap U,
 $$
@@ -88,15 +105,21 @@ $$
 S_\alpha\cap V=\varnothing,
 $$
 and hence $S_\alpha\subseteq U$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 V=\varnothing.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 S
 =
@@ -110,9 +133,14 @@ S=U\cup V
 $$
 with $U$ and $V$ disjoint. Therefore $V$ contains no point of $S$, so
 $V=\varnothing$.
+
 :::
 
-<1>5. The set
+:::
+
+::: {.pf-step #s5}
+
+The set
 $$
 \boxed{
 \bigcup_\alpha S_\alpha
@@ -120,14 +148,21 @@ $$
 $$
 is connected.
 
-::: {.proof}
-Step <1>4 contradicts the nonemptiness of $V$ in step <1>1. Hence $S$
+::: pf-proof
+
+Step [](#s4){.pf-ref} contradicts the nonemptiness of $V$ in step [](#s1){.pf-ref}. Hence $S$
 cannot be disconnected.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

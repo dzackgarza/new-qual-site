@@ -33,12 +33,17 @@ Find the cardinality of the set of all subrings of the field $\mathbb Q$.
 Let $\mathcal R$ denote the set of subrings of $\QQ$, and let
 $\mathcal S$ denote the set of prime numbers.
 
-<1>1. The cardinality of $\mathcal R$ is at most
+::: pf
+
+::: {.pf-step #s1}
+
+The cardinality of $\mathcal R$ is at most
 $$
 2^{\aleph_0}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every subring of $\QQ$ is a subset of $\QQ$. Since $\QQ$ is
 countably infinite,
 $$
@@ -48,9 +53,14 @@ $$
 =
 2^{\aleph_0}.
 $$
+
 :::
 
-<1>2. For each subset $S\subseteq\mathcal S$, define
+:::
+
+::: {.pf-step #s2}
+
+For each subset $S\subseteq\mathcal S$, define
 $$
 R_S
 =
@@ -60,7 +70,8 @@ R_S
 $$
 Then $R_S$ is a subring of $\QQ$.
 
-::: {.proof}
+::: pf-proof
+
 By definition, $R_S$ is the smallest subring of $\QQ$ containing
 $\ZZ$ and the elements $1/p$ for $p\in S$. Equivalently, its elements
 are the fractions
@@ -71,14 +82,20 @@ a\in\ZZ,
 $$
 whose denominator $b>0$ has no prime divisor outside $S$. This set is
 closed under addition, subtraction, and multiplication.
+
 :::
 
-<1>3. If $S,T\subseteq\mathcal S$ and $S\ne T$, then
+:::
+
+::: {.pf-step #s3}
+
+If $S,T\subseteq\mathcal S$ and $S\ne T$, then
 $$
 R_S\ne R_T.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a prime $p$ in the symmetric difference of $S$ and $T$. After
 interchanging $S$ and $T$ if necessary, assume
 $$
@@ -91,15 +108,21 @@ $$
 \frac1p\notin R_T.
 $$
 Hence $R_S\ne R_T$.
+
 :::
 
-<1>4. The cardinality of $\mathcal R$ is at least
+:::
+
+::: {.pf-step #s4}
+
+The cardinality of $\mathcal R$ is at least
 $$
 2^{\aleph_0}.
 $$
 
-::: {.proof}
-Steps <1>2 and <1>3 give an injection
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give an injection
 $$
 \mathcal P(\mathcal S)
 \longrightarrow
@@ -113,21 +136,33 @@ $$
 =
 2^{\aleph_0}.
 $$
+
 :::
 
-<1>5. The set of all subrings of $\QQ$ has cardinality
+:::
+
+::: {.pf-step #s5}
+
+The set of all subrings of $\QQ$ has cardinality
 $$
 \boxed{2^{\aleph_0}}.
 $$
 
-::: {.proof}
-Step <1>1 gives the upper bound, and step <1>4 gives the matching lower
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives the upper bound, and step [](#s4){.pf-ref} gives the matching lower
 bound.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested cardinality.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested cardinality.
+
+:::
+
+:::
+
 :::

@@ -29,13 +29,26 @@ What can you say about $\OO_K/\mathfrak p$ when $\mathfrak p\subset \OO_K$ is a 
 ::: {.solution}
 The quotient $\OO_K/\mathfrak p$ is a finite field.
 
-<1>1. Every nonzero prime ideal of $\OO_K$ is maximal.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every nonzero prime ideal of $\OO_K$ is maximal.
+
+::: pf-proof
+
 The ring $\OO_K$ is a Dedekind domain. In a Dedekind domain every nonzero prime ideal is maximal. Hence $\OO_K/\mathfrak p$ is a field.
+
 :::
 
-<1>2. The field $\OO_K/\mathfrak p$ is finite.
-::: {.proof}
+:::
+
+::: pf-step
+
+The field $\OO_K/\mathfrak p$ is finite.
+
+::: pf-proof
+
 Because $\mathfrak p$ is nonzero, choose $0\ne\alpha\in\mathfrak p$. Since $\alpha$ is an algebraic integer, its norm
 \[
 N_{K/\QQ}(\alpha)\in\ZZ\setminus\{0\}.
@@ -49,6 +62,11 @@ Since $(\alpha)\subseteq\mathfrak p$, the quotient map
 \OO_K/(\alpha)\twoheadrightarrow\OO_K/\mathfrak p
 \]
 is surjective. Therefore $\OO_K/\mathfrak p$ is finite.
+
+:::
+
+:::
+
 :::
 
 Thus every nonzero prime ideal of a quadratic integer ring has a finite residue field.

@@ -45,13 +45,18 @@ $$
 $$
 for every $n\geq0$.
 
-<1>1. If $\abs{z}<\abs{z_0}$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $\abs{z}<\abs{z_0}$, then
 $$
 \sum_{n=0}^{\infty}a_nz^n
 $$
 converges absolutely.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 q=\frac{\abs{z}}{\abs{z_0}}.
@@ -75,14 +80,20 @@ converges, so comparison proves
 $$
 \sum_{n=0}^{\infty}\abs{a_nz^n}<\infty.
 $$
+
 :::
 
-<1>2. If $0<r<\abs{z_0}$, then the series converges uniformly on
+:::
+
+::: {.pf-step #s2}
+
+If $0<r<\abs{z_0}$, then the series converges uniformly on
 $$
 \abs{z}\leq r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 q_r=\frac{r}{\abs{z_0}},
@@ -104,11 +115,17 @@ $$
 $$
 converges. Hence the Weierstrass M-test gives uniform convergence on
 $\abs{z}\leq r$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), and step <1>2 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

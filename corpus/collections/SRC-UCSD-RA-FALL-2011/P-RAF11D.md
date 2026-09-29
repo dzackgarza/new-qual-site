@@ -38,8 +38,15 @@ strongly in $L^2(\mathbb{R}^d)$.
 :::
 
 ::: {.solution}
-<1>1. The weak limit is also supported in the unit ball.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The weak limit is also supported in the unit ball.
+
+::: pf-proof
+
 Let
 \[
 B:=\{x\in\mathbb R^d:|x|\le1\}.
@@ -57,10 +64,17 @@ Taking $h=\psi\mathbf1_{B^c}$ shows
 \psi=0
 \]
 almost everywhere on $B^c$. Thus both $\psi_n$ and $\psi$ may be regarded as elements of $L^2(B)$, extended by zero outside $B$.
+
 :::
 
-<1>2. Define the restricted convolution operator and prove it is bounded.
-::: {.proof}
+:::
+
+::: pf-step
+
+Define the restricted convolution operator and prove it is bounded.
+
+::: pf-proof
+
 For $u\in L^2(B)$, extend $u$ by zero to $\mathbb R^d$ and set
 \[
 T_Ku:=K*u.
@@ -75,10 +89,17 @@ Hence
 T_K:L^2(B)\to L^2(\mathbb R^d)
 \]
 is bounded.
+
 :::
 
-<1>3. Approximate $T_K$ in operator norm by Hilbert--Schmidt operators.
-::: {.proof}
+:::
+
+::: pf-step
+
+Approximate $T_K$ in operator norm by Hilbert--Schmidt operators.
+
+::: pf-proof
+
 Choose $K_m\in C_c(\mathbb R^d)$ such that
 \[
 \|K_m-K\|_1\longrightarrow0.
@@ -109,10 +130,17 @@ Since $K_m\in L^2(\mathbb R^d)$,
 \end{aligned}
 \]
 Thus $T_{K_m}$ is Hilbert--Schmidt, hence compact. Since compact operators are closed in the operator norm, $T_K$ is compact.
+
 :::
 
-<1>4. Compact operators send weakly convergent sequences to norm-convergent sequences.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compact operators send weakly convergent sequences to norm-convergent sequences.
+
+::: pf-proof
+
 We have
 \[
 \psi_n\rightharpoonup\psi
@@ -141,5 +169,11 @@ Since $f_n=T_K\psi_n$ and $f=T_K\psi$, this is exactly
 \[
 \boxed{f_n\to f\text{ strongly in }L^2(\mathbb R^d).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

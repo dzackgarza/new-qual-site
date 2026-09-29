@@ -42,8 +42,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Assume (a) and approximate $L(B)$ by a finite-dimensional subspace.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Assume (a) and approximate $L(B)$ by a finite-dimensional subspace.
+
+::: pf-proof
+
 Let $B$ be the closed unit ball of $X$, and assume
 \[
 K:=\overline{L(B)}
@@ -67,10 +74,17 @@ This is finite dimensional, hence closed. Let $P_n:Y\to Y_n$ be the orthogonal p
 L_n:=P_nL.
 \]
 Then $L_n$ is bounded and $L_n(X)\subseteq Y_n$, so $L_n$ has finite-dimensional range.
+
 :::
 
-<1>2. Prove $L_n\to L$ in operator norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove $L_n\to L$ in operator norm.
+
+::: pf-proof
+
 If $\|x\|\le1$, then $Lx\in K$, so there is some $j$ with
 \[
 \|Lx-y_j\|<1/n.
@@ -87,10 +101,17 @@ Hence
 \le\frac1n.
 \]
 Thus $\|L-L_n\|\to0$, proving (b).
+
 :::
 
-<1>3. Assume (b) and prove that $L(B)$ is relatively compact.
-::: {.proof}
+:::
+
+::: pf-step
+
+Assume (b) and prove that $L(B)$ is relatively compact.
+
+::: pf-proof
+
 Suppose $L_n$ has finite-dimensional range and
 \[
 \|L_n-L\|\longrightarrow0.
@@ -123,5 +144,11 @@ Thus $L(B)$ is totally bounded. Its closure is also totally bounded; since $Y$ i
 \overline{L(B)}
 \]
 is compact, proving (a).
+
 :::
+
+:::
+
+:::
+
 :::

@@ -26,38 +26,67 @@ $(y_1,\ldots,y_k)$ of distinct elements of $X$ there is $g\in G$ with
 $gx_i=y_i$ for all $i$. It is \dfn{sharply $k$-transitive} if moreover this
 $g$ is unique.
 
-<1>1. For $n\ge2$, $S_n$ acts sharply $n$-transitively on $\{1,\ldots,n\}$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+For $n\ge2$, $S_n$ acts sharply $n$-transitively on $\{1,\ldots,n\}$.
+
+::: pf-proof
+
 A bijection between two orderings of $\{1,\ldots,n\}$ is exactly one
 permutation.
+
 :::
 
-<1>2. For $n\ge3$, $A_n$ acts $(n-2)$-transitively on $\{1,\ldots,n\}$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For $n\ge3$, $A_n$ acts $(n-2)$-transitively on $\{1,\ldots,n\}$.
+
+::: pf-proof
+
 Given two ordered $(n-2)$-tuples of distinct points, there are two
 permutations sending one to the other; they differ by the transposition of the
 two remaining target points, so exactly one of them is even.
+
 :::
 
-<1>3. For a field $k$, $\operatorname{PGL}_2(k)$ acts sharply $3$-transitively
+:::
+
+::: pf-step
+
+For a field $k$, $\operatorname{PGL}_2(k)$ acts sharply $3$-transitively
 on $\PP^1(k)$.
 
-::: {.proof}
+::: pf-proof
+
 For distinct $z_1,z_2,z_3\in\PP^1(k)$ there is exactly one Möbius
 transformation sending them to $\infty,0,1$, namely
 $z\mapsto\frac{(z-z_2)(z_3-z_1)}{(z-z_1)(z_3-z_2)}$, with the usual
 interpretation when some $z_i=\infty$. Composing one such map with the inverse
 of another sends any triple of distinct points to any other, uniquely.
+
 :::
 
-<1>4. For a field $k$, the affine group
+:::
+
+::: pf-step
+
+For a field $k$, the affine group
 $\operatorname{AGL}_1(k)=\{x\mapsto ax+b:a\in k^\times,\ b\in k\}$ acts sharply
 $2$-transitively on $k$.
 
-::: {.proof}
+::: pf-proof
+
 For $x_1\ne x_2$ and $y_1\ne y_2$, the conditions $ax_i+b=y_i$ have the unique
 solution $a=(y_1-y_2)/(x_1-x_2)\ne0$, $b=y_1-ax_1$.
+
 :::
+
+:::
+
+:::
+
 :::

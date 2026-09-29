@@ -38,8 +38,14 @@ G^{(0)}=G,
 G^{(k+1)}=(G^{(k)})'.
 $$
 
-<1>1. If the derived series reaches the identity, then $G$ is solvable.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+If the derived series reaches the identity, then $G$ is solvable.
+
+::: pf-proof
+
 Assume
 $$
 G^{(n)}=1
@@ -59,10 +65,17 @@ G=G^{(0)}\trianglerighteq G^{(1)}\trianglerighteq\cdots
 \trianglerighteq G^{(n)}=1
 $$
 is an abelian subnormal tower. Hence $G$ is solvable.
+
 :::
 
-<1>2. If $G$ is solvable, then its derived series reaches the identity.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $G$ is solvable, then its derived series reaches the identity.
+
+::: pf-proof
+
 Suppose $G$ is solvable. Then there is an abelian subnormal tower
 $$
 G=H_0\trianglerighteq H_1\trianglerighteq\cdots
@@ -98,6 +111,11 @@ so
 $$
 \boxed{G^{(r)}=1.}
 $$
+
+:::
+
+:::
+
 :::
 
 Combining the two directions,

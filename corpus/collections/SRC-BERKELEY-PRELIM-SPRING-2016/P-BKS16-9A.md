@@ -39,12 +39,17 @@ $$
 K=\QQ(\alpha).
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \sqrt{15}\in K.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Squaring $\alpha$ gives
 $$
 \alpha^2
@@ -61,12 +66,18 @@ $$
 \in
 K.
 $$
+
 :::
 
-<1>2. Both $\sqrt3$ and $\sqrt5$ lie in $K$.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #s2}
+
+Both $\sqrt3$ and $\sqrt5$ lie in $K$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \beta
 \coloneqq
@@ -100,15 +111,21 @@ $$
 \frac{5\alpha-\beta}{2}
 \in K.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 K=\QQ(\sqrt3,\sqrt5).
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives
 $$
 \QQ(\sqrt3,\sqrt5)\subseteq K.
 $$
@@ -118,15 +135,21 @@ $$
 \in
 \QQ(\sqrt3,\sqrt5).
 $$
+
 :::
 
-<1>4. The extension
+:::
+
+::: {.pf-step #s4}
+
+The extension
 $$
 \QQ(\sqrt3,\sqrt5)/\QQ
 $$
 has degree $4$.
 
-::: {.proof}
+::: pf-proof
+
 Certainly
 $$
 [\QQ(\sqrt3):\QQ]=2.
@@ -144,12 +167,18 @@ $$
 5=a^2+3b^2+2ab\sqrt3.
 $$
 Since $\sqrt3\notin\QQ$, one must have $ab=0$. If $b=0$, then $a^2=5$, impossible for $a\in\QQ$. If $a=0$, then $b^2=5/3$, also impossible for $b\in\QQ$. Indeed, a square in $\QQ^\times$ has even exponent at every prime in its reduced numerator and denominator, whereas both $5$ and $5/3$ have odd exponent at the prime $5$. Hence adjoining $\sqrt5$ to $\QQ(\sqrt3)$ has degree $2$, so the total degree is $4$.
+
 :::
 
-<1>5. The field $K$ is already normal over $\QQ$.
+:::
 
-::: {.proof}
-By step <1>3,
+::: {.pf-step #s5}
+
+The field $K$ is already normal over $\QQ$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 K=\QQ(\sqrt3,\sqrt5),
 $$
@@ -158,11 +187,17 @@ $$
 (x^2-3)(x^2-5).
 $$
 In characteristic $0$ this polynomial is separable. Thus $K/\QQ$ is Galois, in particular normal, so the normal closure of the original field is $K$ itself.
+
 :::
 
-<1>6. There are four $\QQ$-automorphisms of $K$, obtained by independently choosing the signs of $\sqrt3$ and $\sqrt5$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+There are four $\QQ$-automorphisms of $K$, obtained by independently choosing the signs of $\sqrt3$ and $\sqrt5$.
+
+::: pf-proof
+
 Every $\QQ$-automorphism must send
 $$
 \sqrt3\longmapsto\pm\sqrt3
@@ -171,10 +206,15 @@ and
 $$
 \sqrt5\longmapsto\pm\sqrt5.
 $$
-Conversely, each independent choice of these two signs preserves all algebraic relations and defines an automorphism of $\QQ(\sqrt3,\sqrt5)$. Thus there are four automorphisms, consistent with the degree computation in step <1>4.
+Conversely, each independent choice of these two signs preserves all algebraic relations and defines an automorphism of $\QQ(\sqrt3,\sqrt5)$. Thus there are four automorphisms, consistent with the degree computation in step [](#s4){.pf-ref}.
+
 :::
 
-<1>7. Hence the Galois group of the normal closure is
+:::
+
+::: {.pf-step #s7}
+
+Hence the Galois group of the normal closure is
 $$
 \boxed{
 \Gal(K/\QQ)
@@ -183,7 +223,8 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The two sign changes
 $$
 \sqrt3\mapsto-\sqrt3,
@@ -196,12 +237,18 @@ $$
 \qquad
 \sqrt5\mapsto-\sqrt5
 $$
-are commuting involutions and generate all four automorphisms from step <1>6. Therefore the group is the Klein four group.
+are commuting involutions and generate all four automorphisms from step [](#s6){.pf-ref}. Therefore the group is the Klein four group.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>5 and <1>7 identify the normal closure and its Galois group.
 :::
+
+::: pf-qed
+
+Steps [](#s5){.pf-ref} and [](#s7){.pf-ref} identify the normal closure and its Galois group.
+
+:::
+
+:::
+
 :::

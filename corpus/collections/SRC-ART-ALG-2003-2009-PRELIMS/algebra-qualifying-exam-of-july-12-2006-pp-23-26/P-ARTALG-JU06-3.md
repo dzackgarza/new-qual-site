@@ -32,22 +32,33 @@ Show that any subgroup of $G$ of index $p$ is normal in $G$.
 ::: {.solution}
 Let $H\leq G$ have index $p$.
 
-<1>1. Left multiplication on the $p$ left cosets of $H$ gives a
+::: pf
+
+::: {.pf-step #s1}
+
+Left multiplication on the $p$ left cosets of $H$ gives a
 homomorphism $\rho:G\to S_p$, and the stabilizer of the coset $H$
 is exactly $H$.
 
-::: {.proof}
+::: pf-proof
+
 For $g\in G$, define $\rho(g)(aH)=gaH$. Equality of left cosets
 is preserved by left multiplication, so the map is well-defined.
 It is a permutation with inverse $\rho(g^{-1})$, and associativity
 gives $\rho(gk)=\rho(g)\rho(k)$. Finally,
 $\rho(g)(H)=H$ if and only if $gH=H$, which is equivalent to
 $g\in H$. In particular, $\ker\rho\subseteq H$.
+
 :::
 
-<1>2. The subgroup $H$ is the kernel of $\rho$, and is therefore normal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subgroup $H$ is the kernel of $\rho$, and is therefore normal.
+
+::: pf-proof
+
 Every permutation in $\rho(H)$ fixes the coset $H$, so it acts as
 a permutation of the other $p-1$ cosets. Thus $\rho(H)$ is a
 subgroup of $S_{p-1}$, and its order divides $(p-1)!$.
@@ -58,7 +69,13 @@ Every prime dividing $|H|$ divides $|G|=n$, so is at least $p$.
 Every prime dividing $(p-1)!$ is less than $p$. Hence these two
 integers are relatively prime. This includes $p=2$, when
 $(p-1)!=1$. The two divisibilities imply $|\rho(H)|=1$.
-Consequently $H\subseteq\ker\rho$, and step <1>1 gives the reverse
+Consequently $H\subseteq\ker\rho$, and step [](#s1){.pf-ref} gives the reverse
 containment. Therefore $H=\ker\rho\lhd G$.
+
 :::
+
+:::
+
+:::
+
 :::

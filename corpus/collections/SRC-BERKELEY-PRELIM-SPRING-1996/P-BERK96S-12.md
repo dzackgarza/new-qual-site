@@ -37,10 +37,15 @@ Prove that the range of $F$ contains a neighborhood of the zero matrix.
 ::: {.solution}
 Regard $M_{2\times2}(\RR)$ as the real vector space $\RR^4$.
 
-<1>1. The derivative of $F$ at the zero matrix is the identity map on
+::: pf
+
+::: {.pf-step #s1}
+
+The derivative of $F$ at the zero matrix is the identity map on
 $M_{2\times2}(\RR)$.
 
-::: {.proof}
+::: pf-proof
+
 For $H\in M_{2\times2}(\RR)$,
 $$
 \begin{aligned}
@@ -62,28 +67,40 @@ $$
 DF_0(H)=H.
 $$
 Thus $DF_0$ is the identity and in particular is invertible.
+
 :::
 
-<1>2. There are neighborhoods $U$ and $V$ of the zero matrix such that
+:::
+
+::: {.pf-step #s2}
+
+There are neighborhoods $U$ and $V$ of the zero matrix such that
 $$
 F:U\longrightarrow V
 $$
 is a diffeomorphism.
 
-::: {.proof}
-The map $F$ is polynomial, hence continuously differentiable. By step <1>1,
+::: pf-proof
+
+The map $F$ is polynomial, hence continuously differentiable. By step [](#s1){.pf-ref},
 its derivative at $0$ is invertible. The inverse function theorem therefore
 gives neighborhoods $U$ of $0$ and $V$ of
 $$
 F(0)=0
 $$
 for which the displayed restriction is a diffeomorphism.
+
 :::
 
-<1>3. The range of $F$ contains a neighborhood of the zero matrix.
+:::
 
-::: {.proof}
-By step <1>2,
+::: {.pf-step #s3}
+
+The range of $F$ contains a neighborhood of the zero matrix.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 V=F(U).
 $$
@@ -92,11 +109,17 @@ $$
 V\subseteq F\bigl(M_{2\times2}(\RR)\bigr),
 $$
 and $V$ is a neighborhood of $0$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

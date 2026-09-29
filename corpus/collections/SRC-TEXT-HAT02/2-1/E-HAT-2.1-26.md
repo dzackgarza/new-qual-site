@@ -37,8 +37,14 @@ X=[0,1],
 A=\{0,1,1/2,1/3,\dots\}.
 \]
 
-<1>1. The group $H_1(X,A)$ is a countably generated free abelian group.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The group $H_1(X,A)$ is a countably generated free abelian group.
+
+::: pf-proof
+
 Since $X$ is contractible and $A$ is totally disconnected, the long exact sequence of the pair contains
 \[
 0=H_1(X)\longrightarrow H_1(X,A)
@@ -58,19 +64,33 @@ Taking $0$ as a distinguished point gives the free basis
 [a]-[0],\qquad a\in A-\{0\}.
 \]
 Thus $H_1(X,A)$ is free abelian of countable rank, in particular it is countable as a set.
+
 :::
 
-<1>2. The quotient $X/A$ is the shrinking wedge of countably many circles (the Hawaiian earring).
-::: {.proof}
+:::
+
+::: pf-step
+
+The quotient $X/A$ is the shrinking wedge of countably many circles (the Hawaiian earring).
+
+::: pf-proof
+
 For each $n\ge1$, the interval
 \[
 I_n=[1/(n+1),1/n]
 \]
 has both endpoints in $A$. After all of $A$ is collapsed to one point, $I_n/\partial I_n$ becomes a circle. The diameters of these intervals tend to zero at the collapsed limit point, so the quotient topology is exactly the standard shrinking-wedge topology of the Hawaiian earring.
+
 :::
 
-<1>3. The group $H_1(X/A)$ is uncountable.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The group $H_1(X/A)$ is uncountable.
+
+::: pf-proof
+
 Let $C_n$ denote the $n$th circle of the shrinking wedge. For each binary sequence
 \[
 \varepsilon=(\varepsilon_1,\varepsilon_2,\dots)\in\{0,1\}^{\mathbb N},
@@ -86,13 +106,26 @@ that collapses all other circles to the wedge point. Hence the induced homomorph
 (r_n)_*:H_1(X/A)\longrightarrow H_1(C_n)\cong\mathbb Z
 \]
 sends $[\gamma_\varepsilon]$ to $\varepsilon_n$. Therefore distinct binary sequences give distinct homology classes. Since $\{0,1\}^{\mathbb N}$ is uncountable, so is $H_1(X/A)$.
+
 :::
 
-<1>4. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{H_1(X,A)\not\cong\widetilde H_1(X/A).}
 \]
-::: {.proof}
-The quotient is path connected, so $\widetilde H_1(X/A)=H_1(X/A)$. By <1>1 the relative group is countable, while by <1>3 the quotient-space homology group is uncountable. Hence they cannot be isomorphic.
+
+::: pf-proof
+
+The quotient is path connected, so $\widetilde H_1(X/A)=H_1(X/A)$. By step [](#s1){.pf-ref} the relative group is countable, while by step [](#s3){.pf-ref} the quotient-space homology group is uncountable. Hence they cannot be isomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

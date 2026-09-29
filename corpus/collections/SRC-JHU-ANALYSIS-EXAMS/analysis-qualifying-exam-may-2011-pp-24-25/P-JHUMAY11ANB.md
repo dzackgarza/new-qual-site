@@ -41,9 +41,14 @@ $$
 \boxed{-2\pi i\left(\frac89e^{1/3}+\frac{17}{16}e^{i/4}\right).}
 $$
 
-<1>1. Each simple zero contributes the value of the holomorphic weight as a residue.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Each simple zero contributes the value of the holomorphic weight as a residue.
+
+::: pf-proof
+
 Set $W(z)=(z^2-1)e^z$. At a simple zero $a$ of $f$,
 the Taylor expansion gives $f(z)=(z-a)h(z)$ with $h$
 holomorphic and $h(a)\ne0$. In a sufficiently small disk,
@@ -57,16 +62,22 @@ $$
 Away from the prescribed zeros, the same integrand is
 holomorphic. These facts determine all its possible poles
 on the unit disk.
+
 :::
 
-<1>2. The two enclosed zeros give the stated sum.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two enclosed zeros give the stated sum.
+
+::: pf-proof
+
 The zeros $1/3$ and $i/4$ lie inside $|z|=1/2$, while
 $2/3$ lies outside. None lies on the contour. The closed
 radius-one-half disk has a neighborhood contained in $D$,
 so the residue theorem applies to this counterclockwise
-circle [@SS03]. Using step <1>1, it gives
+circle [@SS03]. Using step [](#s1){.pf-ref}, it gives
 $$
 \int_{|z|=1/2}W(z)\frac{f'(z)}{f(z)}\,dz
 =2\pi i\bigl(W(1/3)+W(i/4)\bigr).
@@ -78,5 +89,11 @@ W(i/4)=\left(-\frac1{16}-1\right)e^{i/4}
 =-\frac{17}{16}e^{i/4}.
 $$
 Substitution yields the displayed answer.
+
 :::
+
+:::
+
+:::
+
 :::

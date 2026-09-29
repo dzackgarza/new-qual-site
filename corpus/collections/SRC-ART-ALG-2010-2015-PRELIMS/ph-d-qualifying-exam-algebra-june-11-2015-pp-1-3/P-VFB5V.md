@@ -41,10 +41,15 @@ d. Show that if $f(X)$ is irreducible in $\mathbb{F}_p[X]$, then $n = 1$ or $n =
 We will prove that the two cases in part (d) are exactly the
 irreducible cases.
 
-<1>1. For each positive integer $m$, the roots in $K$ of
+::: pf
+
+::: {.pf-step #s1}
+
+For each positive integer $m$, the roots in $K$ of
 $X^{p^m}-X$ form a field with $p^m$ elements.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial splits in the algebraically closed field $K$,
 and its derivative is $-1$, so its $p^m$ roots are distinct.
 In characteristic $p$, the binomial theorem and iteration give
@@ -55,13 +60,19 @@ They contain $0,1$, so they form a field with exactly $p^m$
 elements. We denote this subfield of $K$ by $\mathbb F_{p^m}$.
 Its degree over $\mathbb F_p$ is $m$, by counting elements in
 a finite-dimensional vector space over $\mathbb F_p$.
+
 :::
 
-<1>2. The two assertions in part (a) hold.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two assertions in part (a) hold.
+
+::: pf-proof
+
 Write $q=p^n$. Since $f(\alpha)=0$, we have
-$\alpha^q=\alpha-1$. For $a\in\mathbb F_q$, step <1>1 gives
+$\alpha^q=\alpha-1$. For $a\in\mathbb F_q$, step [](#s1){.pf-ref} gives
 $a^q=a$. Therefore
 $$
 f(\alpha+a)=\alpha^q+a^q-\alpha-a+1=0.
@@ -75,12 +86,18 @@ $$
 &=\alpha^p-\alpha+1=\beta.
 \end{aligned}
 $$
-Hence $\beta\in\mathbb F_q$, again by step <1>1.
+Hence $\beta\in\mathbb F_q$, again by step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Every root of $f$ lies in $\mathbb F_{p^{np}}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every root of $f$ lies in $\mathbb F_{p^{np}}$.
+
+::: pf-proof
+
 Starting with $\alpha^{p^n}=\alpha-1$, induction on $j\geq1$
 gives
 $$
@@ -90,25 +107,37 @@ where the integer $j$ is viewed in the prime field. Indeed,
 raising the equality to the $p^n$th power subtracts one more,
 because every element of the prime field is fixed by Frobenius.
 At $j=p$ we obtain $\alpha^{p^{np}}=\alpha$, proving the claim.
+
 :::
 
-<1>4. The polynomial $X^p-X+1$ is irreducible over $\mathbb F_p$,
+:::
+
+::: {.pf-step #s4}
+
+The polynomial $X^p-X+1$ is irreducible over $\mathbb F_p$,
 proving part (b).
 
-::: {.proof}
-Let $\alpha$ be any root. With $n=1$, step <1>3 puts
+::: pf-proof
+
+Let $\alpha$ be any root. With $n=1$, step [](#s3){.pf-ref} puts
 $\mathbb F_p(\alpha)$ inside $\mathbb F_{p^p}$.
 Its degree $d$ over $\mathbb F_p$ divides $p$ by the tower law,
 so $d=1$ or $p$. But $a^p-a+1=1$ for every $a\in\mathbb F_p$,
 so $\alpha\notin\mathbb F_p$ and $d\ne1$.
 Thus $d=p$. The monic minimal polynomial of $\alpha$ divides
 $X^p-X+1$ and has the same degree, so it equals that polynomial.
+
 :::
 
-<1>5. The polynomial $X^4+X+1$ is irreducible over $\mathbb F_2$,
+:::
+
+::: {.pf-step #s5}
+
+The polynomial $X^4+X+1$ is irreducible over $\mathbb F_2$,
 proving part (c).
 
-::: {.proof}
+::: pf-proof
+
 It takes value $1$ at both $0$ and $1$, so it has no linear factor.
 The only monic irreducible quadratic over $\mathbb F_2$ is
 $q(X)=X^2+X+1$: a monic quadratic $X^2+aX+b$ without a root
@@ -121,14 +150,20 @@ $q$ does not divide the polynomial. Any reducible quartic
 without a linear factor is a product of two irreducible
 quadratics. The only possible quadratic factor has just been
 excluded, so the quartic is irreducible.
+
 :::
 
-<1>6. No other cases are irreducible, proving part (d).
+:::
 
-::: {.proof}
+::: pf-step
+
+No other cases are irreducible, proving part (d).
+
+::: pf-proof
+
 If $f$ is irreducible and $\alpha$ is a root, then
 $[\mathbb F_p(\alpha):\mathbb F_p]=\deg f=p^n$.
-Step <1>3 and the tower law imply
+Step [](#s3){.pf-ref} and the tower law imply
 $$
 p^n\mid np,\qquad\text{hence }p^{n-1}\mid n.
 $$
@@ -138,7 +173,13 @@ at the next integer since $2n\geq n+1$.
 Then $p^{n-1}\geq2^{n-1}>n$, contradicting the divisibility.
 Thus $n=1$ or $2$. In the latter case the divisibility gives
 $p\mid2$, hence $p=2$.
-Steps <1>4 and <1>5 establish irreducibility in both surviving
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} establish irreducibility in both surviving
 cases, completing every part.
+
 :::
+
+:::
+
+:::
+
 :::

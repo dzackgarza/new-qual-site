@@ -32,8 +32,15 @@ Show that $Tx := \lim_{n \to \infty} T_n x$ defines a bounded linear operator fr
 :::
 
 ::: {.solution}
-<1>1. The pointwise limit is linear.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The pointwise limit is linear.
+
+::: pf-proof
+
 For $x,y\in X$ and scalars $a,b$,
 \[
 \begin{aligned}
@@ -44,10 +51,17 @@ T(ax+by)
 \end{aligned}
 \]
 Thus $T:X\to Y$ is linear.
+
 :::
 
-<1>2. The family $(T_n)$ is uniformly bounded in operator norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+The family $(T_n)$ is uniformly bounded in operator norm.
+
+::: pf-proof
+
 For every fixed $x\in X$, the sequence $(T_nx)$ converges in $Y$, hence is bounded. Therefore
 \[
 \sup_n\|T_nx\|_Y<\infty
@@ -57,10 +71,17 @@ Since $X$ is Banach, the Uniform Boundedness Principle applies and gives a const
 \[
 \sup_n\|T_n\|_{X\to Y}\le C.
 \]
+
 :::
 
-<1>3. The pointwise limit is bounded.
-::: {.proof}
+:::
+
+::: pf-step
+
+The pointwise limit is bounded.
+
+::: pf-proof
+
 For every $x\in X$,
 \[
 \|Tx\|_Y
@@ -73,5 +94,11 @@ Hence $T$ is bounded and
 \|T\|_{X\to Y}\le C.
 \]
 Thus $T$ is a bounded linear operator from $X$ to $Y$.
+
 :::
+
+:::
+
+:::
+
 :::

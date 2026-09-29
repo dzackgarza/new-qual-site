@@ -31,16 +31,40 @@ review: draft
 :::
 
 ::: {.solution}
-<1>1. No operation or property to determine is specified for the first five displayed subsets.
 
-<1>2. For every $n\ge2$, $\mathbb R^n$ is not homeomorphic to $\mathbb R$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+No operation or property to determine is specified for the first five displayed subsets.
+
+:::
+
+::: pf-step
+
+For every $n\ge2$, $\mathbb R^n$ is not homeomorphic to $\mathbb R$.
+
+::: pf-proof
+
 If $h:\mathbb R^n\to\mathbb R$ were a homeomorphism, then deleting any point $x$ would give a homeomorphism $\mathbb R^n\setminus\{x\}\cong\mathbb R\setminus\{h(x)\}$. For $n\ge2$, $\mathbb R^n\setminus\{x\}$ is path-connected, while $\mathbb R\setminus\{h(x)\}$ has two connected components, a contradiction.
+
 :::
 
-<1>3. For arbitrary subsets $A\subseteq X$ and $B\subseteq Y$,
-$$\boxed{\overline{A\times B}^{\,X\times Y}=\overline A^{\,X}\times\overline B^{\,Y}.}$$
-::: {.proof}
-If $(x,y)$ lies in the left closure, continuity of the projections gives $x\in\overline A$ and $y\in\overline B$. Conversely, if $x\in\overline A$ and $y\in\overline B$, every basic neighborhood $U\times V$ of $(x,y)$ meets $A\times B$ because $U\cap A\ne\varnothing$ and $V\cap B\ne\varnothing$.
 :::
+
+::: pf-step
+
+For arbitrary subsets $A\subseteq X$ and $B\subseteq Y$,
+$$\boxed{\overline{A\times B}^{\,X\times Y}=\overline A^{\,X}\times\overline B^{\,Y}.}$$
+
+::: pf-proof
+
+If $(x,y)$ lies in the left closure, continuity of the projections gives $x\in\overline A$ and $y\in\overline B$. Conversely, if $x\in\overline A$ and $y\in\overline B$, every basic neighborhood $U\times V$ of $(x,y)$ meets $A\times B$ because $U\cap A\ne\varnothing$ and $V\cap B\ne\varnothing$.
+
+:::
+
+:::
+
+:::
+
 :::

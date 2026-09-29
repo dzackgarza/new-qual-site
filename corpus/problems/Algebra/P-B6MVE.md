@@ -21,7 +21,6 @@ audit:
   date: 2026-09-09
 ---
 
-
 ::: {.problem}
 Let $R$ be a unital ring, viewed as a left $R$-module over itself. Prove that
 \[
@@ -38,8 +37,14 @@ Define
 \Phi(f)=f(1).
 \]
 
-<1>1. Every left $R$-linear endomorphism is right multiplication by $f(1)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every left $R$-linear endomorphism is right multiplication by $f(1)$.
+
+::: pf-proof
+
 For $r\in R$,
 \[
 f(r)=f(r\cdot1)=r f(1)
@@ -49,19 +54,33 @@ by left $R$-linearity. Thus $f$ is uniquely determined by $f(1)$ and has the for
 r\longmapsto r x
 \]
 for $x=f(1)$.
+
 :::
 
-<1>2. The map $\Phi$ is bijective.
-::: {.proof}
-Injectivity follows from <1>1. For surjectivity, given $x\in R$, the map
+:::
+
+::: pf-step
+
+The map $\Phi$ is bijective.
+
+::: pf-proof
+
+Injectivity follows from step [](#s1){.pf-ref}. For surjectivity, given $x\in R$, the map
 \[
 \rho_x:R\to R,\qquad r\mapsto rx
 \]
 is left $R$-linear and satisfies $\Phi(\rho_x)=x$.
+
 :::
 
-<1>3. The map $\Phi$ respects addition and multiplication into the opposite ring.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $\Phi$ respects addition and multiplication into the opposite ring.
+
+::: pf-proof
+
 Addition is immediate. For composition,
 \[
 (g\circ f)(1)=g(f(1))=g(x_f)=x_f x_g.
@@ -75,6 +94,11 @@ But multiplication in $R^{\mathrm{op}}$ is reversed, so
 \Phi(g)\cdot_{R^{\mathrm{op}}}\Phi(f)=x_g\cdot_{R^{\mathrm{op}}}x_f=x_f x_g.
 \]
 Hence $\Phi(g\circ f)=\Phi(g)\cdot_{R^{\mathrm{op}}}\Phi(f)$, as required.
+
+:::
+
+:::
+
 :::
 
 Therefore

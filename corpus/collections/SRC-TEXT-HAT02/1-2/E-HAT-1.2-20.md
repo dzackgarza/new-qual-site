@@ -39,18 +39,29 @@ W=\bigvee_{n=1}^{\infty}S^1_n
 \]
 with the usual CW wedge topology.
 
-<1>1. There is a continuous map
+::: pf
+
+::: pf-step
+
+There is a continuous map
 \[
 f:W\to X
 \]
 whose restriction to $S^1_n$ is a homeomorphism onto $C_n$ taking the wedge point to $o$.
-::: {.proof}
+
+::: pf-proof
+
 Choose such a based homeomorphism separately on each circle.
 The CW wedge $W$ has the weak topology with respect to its circles, so a map out of $W$ is continuous when its restriction to every circle is continuous.
 Thus the circlewise maps assemble to a continuous $f$.
+
 :::
 
-<1>2. There is a continuous map
+:::
+
+::: pf-step
+
+There is a continuous map
 \[
 g:X\to W
 \]
@@ -59,7 +70,9 @@ such that each restriction
 g|_{C_n}:C_n\to S^1_n
 \]
 has degree one.
-::: {.proof}
+
+::: pf-proof
+
 Fix a small radius $\varepsilon>0$.
 On each $C_n$, collapse the connected arc
 \[
@@ -78,26 +91,40 @@ Hence $g$ is continuous at $o$, regardless of how small the prescribed neighborh
 
 If $x\in X\setminus\{o\}$, then $x$ lies on a unique circle $C_n$ and has a sufficiently small Euclidean neighborhood in $X$ meeting no other $C_m$.
 Thus continuity at such $x$ reduces to continuity of $g|_{C_n}$.
+
 :::
 
-<1>3. The composite
+:::
+
+::: {.pf-step #s3}
+
+The composite
 \[
 g f:W\to W
 \]
 is homotopic to the identity on $W$.
-::: {.proof}
+
+::: pf-proof
+
 On each circle $S^1_n$, the restriction $gf|_{S^1_n}$ is a based map of degree one.
 Every based degree-one self-map of $S^1$ is based-homotopic to the identity.
 Choose such a homotopy on each $S^1_n$, fixing the wedge point throughout.
 Because $W$ has the CW weak topology, these circlewise homotopies assemble to a continuous homotopy on $W$.
+
 :::
 
-<1>4. The composite
+:::
+
+::: {.pf-step #s4}
+
+The composite
 \[
 fg:X\to X
 \]
 is homotopic to the identity on $X$.
-::: {.proof}
+
+::: pf-proof
+
 On each $C_n$, the map $fg$ is obtained by collapsing the short arc near $o$ and reparametrizing the remaining arc once around $C_n$.
 Homotope this reparametrization linearly in arc-length coordinates back to the identity, fixing $o$.
 
@@ -106,17 +133,29 @@ This is possible by performing the reparametrization only along the two short en
 The resulting circlewise homotopies agree at $o$, and the displayed uniform estimate gives continuity at $o$ for the assembled homotopy.
 Away from $o$, only one circle is locally present, so continuity is again circlewise.
 Hence $fg\simeq\operatorname{id}_X$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 X\simeq W.
 \]
-::: {.proof}
-The maps $f$ and $g$ are homotopy inverses by <1>3--<1>4.
+
+::: pf-proof
+
+The maps $f$ and $g$ are homotopy inverses by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 \pi_1(X,o)
@@ -126,7 +165,9 @@ The maps $f$ and $g$ are homotopy inverses by <1>3--<1>4.
 *_{n=1}^{\infty}\mathbb Z.
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 Homotopy equivalence gives
 \[
 \pi_1(X,o)\cong\pi_1(W,*).
@@ -136,20 +177,34 @@ The wedge-point neighborhoods in each circle deformation retract to the wedge po
 \pi_1(W,*)\cong *_{n\ge1}\pi_1(S^1_n,*).
 \]
 Each factor is infinite cyclic.
+
 :::
 
-<1>7. The space $X$ is first countable at $o$.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+The space $X$ is first countable at $o$.
+
+::: pf-proof
+
 It is a subspace of the metric space $\mathbb R^2$.
 Thus the sets
 \[
 X\cap B_{1/m}(o),\qquad m=1,2,\dots,
 \]
 form a countable neighborhood base at $o$.
+
 :::
 
-<1>8. The infinite CW wedge $W$ is not first countable at its wedge point.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+The infinite CW wedge $W$ is not first countable at its wedge point.
+
+::: pf-proof
+
 Suppose $U_1,U_2,\dots$ were a countable neighborhood base at the wedge point $*$.
 For each $n$, because $U_n\cap S^1_n$ is a neighborhood of $*$ in the $n$th circle, choose a point
 \[
@@ -167,11 +222,24 @@ p_n\in U_n\setminus V,
 \]
 so $U_n\nsubseteq V$.
 This contradicts the assumption that the $U_n$ form a neighborhood base.
+
 :::
 
-<1>9. Hence $X$ and $W$ are not homeomorphic.
-::: {.proof}
-First countability is invariant under homeomorphism.
-By <1>7, $X$ is first countable at the common point, while by <1>8 the wedge point of $W$ is not.
 :::
+
+::: pf-step
+
+Hence $X$ and $W$ are not homeomorphic.
+
+::: pf-proof
+
+First countability is invariant under homeomorphism.
+By step [](#s7){.pf-ref}, $X$ is first countable at the common point, while by step [](#s8){.pf-ref} the wedge point of $W$ is not.
+
+:::
+
+:::
+
+:::
+
 :::

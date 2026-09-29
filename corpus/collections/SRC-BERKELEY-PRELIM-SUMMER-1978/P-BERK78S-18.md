@@ -51,7 +51,11 @@ $$
 $$
 denote the Euclidean norm.
 
-<1>1. If
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 x=\sum_{j=1}^n x_je_j,
 $$
@@ -63,7 +67,8 @@ N(x)
 \abs{x_j}N(e_j).
 $$
 
-::: {.proof}
+::: pf-proof
+
 By repeated use of the triangle inequality and absolute homogeneity of
 $N$,
 $$
@@ -80,20 +85,26 @@ N\left(
 \abs{x_j}N(e_j).
 \end{aligned}
 $$
+
 :::
 
-<1>2. There is a constant $C>0$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is a constant $C>0$ such that
 $$
 N(x)\leq C\norm{x}
 $$
 for every $x\in\RR^n$.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 M=\max_{1\leq j\leq n}N(e_j).
 $$
-Every $e_j$ is nonzero, so $M>0$. By step <1>1,
+Every $e_j$ is nonzero, so $M>0$. By step [](#s1){.pf-ref},
 $$
 N(x)
 \leq
@@ -118,31 +129,43 @@ Take
 $$
 C=M\sqrt n.
 $$
+
 :::
 
-<1>3. The norm $N$ is bounded on the Euclidean unit sphere.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The norm $N$ is bounded on the Euclidean unit sphere.
+
+::: pf-proof
+
 If
 $$
 \norm{x}=1,
 $$
-then step <1>2 gives
+then step [](#s2){.pf-ref} gives
 $$
 N(x)\leq C.
 $$
 Thus $N$ is bounded above on the unit sphere. Since every norm is
 nonnegative, it is bounded there.
+
 :::
 
-<1>4. For every $x,y\in\RR^n$,
+:::
+
+::: {.pf-step #s4}
+
+For every $x,y\in\RR^n$,
 $$
 \abs{N(x)-N(y)}
 \leq
 N(x-y).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The triangle inequality gives
 $$
 N(x)
@@ -160,9 +183,14 @@ $$
 N(y)-N(x)\leq N(y-x)=N(x-y).
 $$
 Combining the two inequalities proves the claim.
+
 :::
 
-<1>5. The norm $N$ is Lipschitz continuous with respect to the Euclidean
+:::
+
+::: {.pf-step #s5}
+
+The norm $N$ is Lipschitz continuous with respect to the Euclidean
 norm:
 $$
 \abs{N(x)-N(y)}
@@ -170,24 +198,36 @@ $$
 C\norm{x-y}.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 \abs{N(x)-N(y)}
 \leq
 N(x-y).
 $$
-Apply step <1>2 to $x-y$.
+Apply step [](#s2){.pf-ref} to $x-y$.
+
 :::
 
-<1>6. The norm $N$ is continuous on $\RR^n$.
+:::
 
-::: {.proof}
-Every Lipschitz function is continuous, and step <1>5 gives a global
+::: {.pf-step #s6}
+
+The norm $N$ is continuous on $\RR^n$.
+
+::: pf-proof
+
+Every Lipschitz function is continuous, and step [](#s5){.pf-ref} gives a global
 Lipschitz estimate.
+
 :::
 
-<1>7. On the Euclidean unit sphere
+:::
+
+::: {.pf-step #s7}
+
+On the Euclidean unit sphere
 $$
 S^{n-1}
 =
@@ -195,8 +235,9 @@ S^{n-1}
 $$
 the function $N$ attains a positive minimum and a finite maximum.
 
-::: {.proof}
-The Euclidean unit sphere is compact. By step <1>6, $N$ is continuous, so
+::: pf-proof
+
+The Euclidean unit sphere is compact. By step [](#s6){.pf-ref}, $N$ is continuous, so
 there are points $u,v\in S^{n-1}$ such that
 $$
 N(u)
@@ -221,9 +262,14 @@ $$
 A>0.
 $$
 Also $B<\infty$ because it is an attained real value.
+
 :::
 
-<1>8. For every $x\in\RR^n$,
+:::
+
+::: {.pf-step #s8}
+
+For every $x\in\RR^n$,
 $$
 \boxed{
 A\norm{x}
@@ -234,7 +280,8 @@ B\norm{x}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $x=0$, all three quantities are zero and the inequalities hold.
 Suppose $x\neq0$ and set
 $$
@@ -244,7 +291,7 @@ Then
 $$
 \norm{y}=1.
 $$
-By the definitions of $A$ and $B$ in step <1>7,
+By the definitions of $A$ and $B$ in step [](#s7){.pf-ref},
 $$
 A\leq N(y)\leq B.
 $$
@@ -258,12 +305,18 @@ N(\norm{x}y)
 $$
 Multiplying the preceding inequalities by the positive number
 $\norm{x}$ gives the desired bounds.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves part (1), step <1>6 proves part (2), and step <1>8 proves
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), step [](#s6){.pf-ref} proves part (2), and step [](#s8){.pf-ref} proves
 part (3).
+
 :::
+
+:::
+
 :::

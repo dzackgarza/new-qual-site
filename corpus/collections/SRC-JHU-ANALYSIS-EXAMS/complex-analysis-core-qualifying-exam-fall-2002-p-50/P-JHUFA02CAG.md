@@ -32,8 +32,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a): a biholomorphism would give a bounded inverse on the punctured disk.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a): a biholomorphism would give a bounded inverse on the punctured disk.
+
+::: pf-proof
+
 Suppose, for contradiction, that
 $$
 f:A=\{1<|z|<2\}\longrightarrow D^*=\{0<|w|<1\}
@@ -64,10 +71,17 @@ contradicting that $g$ is the inverse of a bijection. If $|G(0)|=1$, then
 $G$ is nowhere zero and $|1/G|\le1$ on $D$, with equality at $0$; the same
 principle applied to $1/G$ again makes $G$ constant. All cases are impossible.
 Thus no such holomorphic bijection exists.
+
 :::
 
-<1>2. Part (b): a radial rescaling is a smooth bijection.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b): a radial rescaling is a smooth bijection.
+
+::: pf-proof
+
 Define
 $$
 F(z)=\left(1-\frac1{|z|}\right)z,
@@ -86,5 +100,11 @@ $$
 Both formulas are $C^\infty$ on their respective domains because the modulus
 function is smooth away from zero. Thus $F$ is a one-to-one $C^\infty$ mapping
 of the annulus onto the punctured unit disk, as required.
+
 :::
+
+:::
+
+:::
+
 :::

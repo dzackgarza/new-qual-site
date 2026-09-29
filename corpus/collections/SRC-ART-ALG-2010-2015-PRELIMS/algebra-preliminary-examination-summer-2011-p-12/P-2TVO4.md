@@ -48,9 +48,14 @@ $pa+qb=1$.
 Put $\alpha=\sqrt[n]{2}>0$, $\zeta=\zeta_n$, and
 $L=\mathbb Q(\zeta)$. Write $m=(p-1)(q-1)$.
 
-<1>1. The splitting field is $E=\mathbb Q(\zeta,\alpha)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The splitting field is $E=\mathbb Q(\zeta,\alpha)$.
+
+::: pf-proof
+
 The roots of $x^p-2$ are
 $\alpha^q(\zeta^q)^j$, $0\leq j<p$; the roots of
 $x^q-2$ are $\alpha^p(\zeta^p)^k$, $0\leq k<q$.
@@ -66,14 +71,20 @@ $$
 also belong to the splitting field. Negative exponents
 are allowed because all four elements are nonzero.
 This proves equality of the two fields.
+
 :::
 
-<1>2. The degree is
+:::
+
+::: pf-step
+
+The degree is
 $$
 \boxed{[E:\mathbb Q]=pq(p-1)(q-1)=nm}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $x^n-2$ is Eisenstein at two, so
 $[\mathbb Q(\alpha):\mathbb Q]=n$ [@DF04].
 The cyclotomic degree formula gives
@@ -89,9 +100,14 @@ $E=L(\alpha)$ and $\alpha$ satisfies $x^n-2$ over $L$,
 so $[E:L]\leq n$ and $[E:\mathbb Q]\leq nm$.
 Both bounds force equality. In particular $x^n-2$ remains
 irreducible over $L$, and $[E:L]=n$.
+
 :::
 
-<1>3. The Galois group has the explicit form
+:::
+
+::: {.pf-step #s3}
+
+The Galois group has the explicit form
 $$
 G=\{\tau^a\sigma_b:a\in\mathbb Z/n\mathbb Z,
 \ b\in(\mathbb Z/n\mathbb Z)^\times\},
@@ -103,7 +119,8 @@ $$
 $$
 They satisfy $\sigma_b\tau\sigma_b^{-1}=\tau^b$.
 
-::: {.proof}
+::: pf-proof
+
 Since $x^n-2$ is irreducible over $L$, sending $\alpha$
 to its root $\zeta\alpha$ defines an $L$-embedding of $E$
 into itself. Its image contains $\alpha=\zeta^{-1}(\zeta\alpha)$,
@@ -127,9 +144,14 @@ on $\zeta$ determine $b$, and their values on $\alpha$
 then determine $a$. The splitting field is Galois in
 characteristic zero and has degree $nm$, so these $nm$
 automorphisms exhaust its Galois group [@DF04].
+
 :::
 
-<1>4. Two distinct subgroups of order $m$ are
+:::
+
+::: pf-step
+
+Two distinct subgroups of order $m$ are
 $$
 H_0=\{\sigma_b:b\in(\mathbb Z/n\mathbb Z)^\times\},
 \qquad
@@ -137,8 +159,9 @@ H_1=\tau H_0\tau^{-1}
 =\{\tau^{1-b}\sigma_b:b\in(\mathbb Z/n\mathbb Z)^\times\}.
 $$
 
-::: {.proof}
-The composition rule in step <1>3 makes $H_0$ a subgroup
+::: pf-proof
+
+The composition rule in step [](#s3){.pf-ref} makes $H_0$ a subgroup
 isomorphic to $(\mathbb Z/n\mathbb Z)^\times$, of order
 $m$. Its conjugate $H_1$ is a subgroup of the same order.
 The displayed description of $H_1$ follows from
@@ -149,16 +172,22 @@ But $\sigma_{-1}\in H_0$ sends $\zeta\alpha$ to
 $\zeta^{-1}\alpha\ne\zeta\alpha$, since $\zeta$ has
 odd order $n>2$. Hence $\sigma_{-1}\notin H_1$,
 proving that these two subgroups are distinct.
+
 :::
 
-<1>5. The unique Sylow $p$-subgroup and its fixed field are
+:::
+
+::: pf-step
+
+The unique Sylow $p$-subgroup and its fixed field are
 $$
 P=\langle\tau^q\rangle,
 \qquad
 \boxed{E^P=\mathbb Q(\zeta_n,\sqrt[q]{2})}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $|G|=pqm$ and $p\nmid qm$, a Sylow $p$-subgroup
 has order $p$. The element $\tau^q$ has order $p$, so
 its subgroup $P$ is Sylow. Conjugation by $\tau$ fixes
@@ -185,5 +214,11 @@ p\leq[E:E^P]\leq[E:M]\leq p,
 $$
 so equality holds throughout and $[E^P:M]=1$.
 Therefore $E^P=M$, as claimed.
+
 :::
+
+:::
+
+:::
+
 :::

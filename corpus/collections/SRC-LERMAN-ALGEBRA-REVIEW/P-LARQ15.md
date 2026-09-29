@@ -32,8 +32,15 @@ Let $N$ be another $R$-module, and let $0\neq v\in N$.
 :::
 
 ::: {.solution}
-<1>1. Over a field, the generator may be sent to any prescribed element.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Over a field, the generator may be sent to any prescribed element.
+
+::: pf-proof
+
 Assume $R$ is a field. Since $M=Rx$ and $x\ne0$, define
 $$
 \varphi(rx)=rv
@@ -54,10 +61,17 @@ $$
 \varphi(a(rx))=\varphi((ar)x)=arv=a\varphi(rx).
 $$
 Thus $\varphi$ is $R$-linear, and $\varphi(x)=v$.
+
 :::
 
-<1>2. The statement fails over $\mathbb Z$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The statement fails over $\mathbb Z$.
+
+::: pf-proof
+
 Take
 $$
 M=\mathbb Z/n\mathbb Z,
@@ -72,5 +86,11 @@ $$
 0=\varphi(nx)=n\varphi(x)=n,
 $$
 which is impossible in $\mathbb Z$. Hence no such homomorphism exists.
+
 :::
+
+:::
+
+:::
+
 :::

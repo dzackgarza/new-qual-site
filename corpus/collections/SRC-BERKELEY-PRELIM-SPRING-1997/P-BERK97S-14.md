@@ -27,23 +27,35 @@ for every complex $n\times n$ matrix $M$.
 :::
 
 ::: {.solution}
-<1>1. There is an invertible matrix $S$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+There is an invertible matrix $S$ such that
 $$
 T\coloneqq S^{-1}MS
 $$
 is upper triangular.
 
-::: {.proof}
+::: pf-proof
+
 Over $\CC$, the characteristic polynomial of $M$ splits completely.
 Hence the standard triangularization theorem gives a basis in which $M$ is upper triangular.
+
 :::
 
-<1>2. If the diagonal entries of $T$ are $\lambda_1,\ldots,\lambda_n$, then $\exp T$ is upper triangular with diagonal entries
+:::
+
+::: pf-step
+
+If the diagonal entries of $T$ are $\lambda_1,\ldots,\lambda_n$, then $\exp T$ is upper triangular with diagonal entries
 $$
 e^{\lambda_1},\ldots,e^{\lambda_n}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every power $T^k$ is upper triangular, and its $i$th diagonal entry is $\lambda_i^k$.
 Therefore the power series
 $$
@@ -57,15 +69,21 @@ $$
 =
 e^{\lambda_i}.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \boxed{\det(\exp M)=e^{\operatorname{tr}M}}.
 $$
 
-::: {.proof}
-The exponential power series commutes with similarity, so step <1>1 gives
+::: pf-proof
+
+The exponential power series commutes with similarity, so step [](#s1){.pf-ref} gives
 $$
 \exp T=S^{-1}(\exp M)S.
 $$
@@ -89,11 +107,17 @@ $$
 $$
 where the last equality uses invariance of trace under similarity.
 This gives the displayed identity.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required formula.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required formula.
+
+:::
+
+:::
+
 :::

@@ -60,7 +60,12 @@ d(X,Y)=\inf\{d(x,y):x\in X,\ y\in Y\}.
 :::
 
 ::: {.solution}
-<1>1. Suppose
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose
 $$
 X=\{x\}
 $$
@@ -73,7 +78,8 @@ $$
 d(x,y_n)\longrightarrow\delta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of an infimum, for each $n\geq1$ there is
 $$
 y_n\in Y
@@ -87,12 +93,18 @@ d(x,y_n)
 \delta+\frac1n.
 $$
 Hence the displayed convergence holds.
+
 :::
 
-<1>2. The sequence in step <1>1 has a subsequence converging to a point
+:::
+
+::: {.pf-step #s2}
+
+The sequence in step [](#s1){.pf-ref} has a subsequence converging to a point
 $y\in Y$.
 
-::: {.proof}
+::: pf-proof
+
 For all sufficiently large $n$,
 $$
 d(x,y_n)\leq\delta+1.
@@ -112,27 +124,38 @@ $$
 y\in\overline B(x,\delta+1).
 $$
 Since $Y$ is closed and every $y_{n_k}$ lies in $Y$, one has $y\in Y$.
+
 :::
 
-<1>3. Under the hypotheses of part (1), the distance is attained:
+:::
+
+::: {.pf-step #s3}
+
+Under the hypotheses of part (1), the distance is attained:
 $$
 \boxed{
 d(X,Y)=d(x,y)
 }
 $$
-for the point $y$ from step <1>2.
+for the point $y$ from step [](#s2){.pf-ref}.
 
-::: {.proof}
-The metric is continuous, so step <1>2 gives
+::: pf-proof
+
+The metric is continuous, so step [](#s2){.pf-ref} gives
 $$
 d(x,y)
 =
 \lim_{k\to\infty}d(x,y_{n_k}).
 $$
-By step <1>1, the limit on the right is $\delta=d(X,Y)$.
+By step [](#s1){.pf-ref}, the limit on the right is $\delta=d(X,Y)$.
+
 :::
 
-<1>4. For a nonempty closed set $Y$, define
+:::
+
+::: {.pf-step #s4}
+
+For a nonempty closed set $Y$, define
 $$
 \rho_Y(x)=d(\{x\},Y).
 $$
@@ -144,7 +167,8 @@ d(x,x')
 $$
 for all $x,x'\in M$.
 
-::: {.proof}
+::: pf-proof
+
 For every $y\in Y$, the triangle inequality gives
 $$
 d(x,y)
@@ -164,9 +188,14 @@ $$
 d(x,x')+\rho_Y(x).
 $$
 Together these inequalities give the claim.
+
 :::
 
-<1>5. If $X$ is compact and $Y$ is closed, there is a point
+:::
+
+::: {.pf-step #s5}
+
+If $X$ is compact and $Y$ is closed, there is a point
 $$
 x_0\in X
 $$
@@ -177,12 +206,18 @@ $$
 \min_{x\in X}\rho_Y(x).
 $$
 
-::: {.proof}
-Step <1>4 shows that $\rho_Y$ is continuous. A continuous real-valued
+::: pf-proof
+
+Step [](#s4){.pf-ref} shows that $\rho_Y$ is continuous. A continuous real-valued
 function on the compact set $X$ attains its minimum.
+
 :::
 
-<1>6. Under the hypotheses of part (2), there are
+:::
+
+::: {.pf-step #s6}
+
+Under the hypotheses of part (2), there are
 $$
 x_0\in X
 \qquad\text{and}\qquad
@@ -195,9 +230,10 @@ d(X,Y)=d(x_0,y_0).
 }
 $$
 
-::: {.proof}
-By step <1>5, choose $x_0\in X$ minimizing $\rho_Y$. By part (1), proved in
-step <1>3, there is $y_0\in Y$ such that
+::: pf-proof
+
+By step [](#s5){.pf-ref}, choose $x_0\in X$ minimizing $\rho_Y$. By part (1), proved in
+step [](#s3){.pf-ref}, there is $y_0\in Y$ such that
 $$
 \rho_Y(x_0)=d(x_0,y_0).
 $$
@@ -214,9 +250,14 @@ d(X,Y)
 \end{aligned}
 $$
 Combining the two equalities gives the result.
+
 :::
 
-<1>7. For part (3), in the proper metric space $\RR^2$ take
+:::
+
+::: {.pf-step #s7}
+
+For part (3), in the proper metric space $\RR^2$ take
 $$
 X=\{(t,0):t\geq0\}
 $$
@@ -226,7 +267,8 @@ Y=\{(t,e^{-t}):t\geq0\}.
 $$
 Both sets are closed and noncompact.
 
-::: {.proof}
+::: pf-proof
+
 The set $X=[0,\infty)\times\{0\}$ is closed and unbounded.
 
 To see that $Y$ is closed, suppose
@@ -240,15 +282,21 @@ u=e^{-s}.
 $$
 Thus $(s,u)\in Y$. The set $Y$ is unbounded in its first coordinate, so it
 is noncompact.
+
 :::
 
-<1>8. The sets in step <1>7 satisfy
+:::
+
+::: {.pf-step #s8}
+
+The sets in step [](#s7){.pf-ref} satisfy
 $$
 d(X,Y)=0,
 $$
 but no pair $(x,y)\in X\times Y$ realizes this distance.
 
-::: {.proof}
+::: pf-proof
+
 For every $t\geq0$, the points
 $$
 (t,0)\in X
@@ -271,14 +319,20 @@ $$
 d(x,y)>0
 $$
 for every $x\in X$ and $y\in Y$, so the infimum is not attained.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (1), step <1>6 proves part (2), and steps
-<1>7--<1>8 give the counterexample requested in part (3).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), step [](#s6){.pf-ref} proves part (2), and steps
+[](#s7){.pf-ref} and [](#s8){.pf-ref} give the counterexample requested in part (3).
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

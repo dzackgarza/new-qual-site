@@ -37,8 +37,15 @@ Hint: Prove first that the range of $T$ is a closed subspace of $\mathcal{H}$.
 :::
 
 ::: {.solution}
-<1>1. Prove that the range of $T$ is closed.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that the range of $T$ is closed.
+
+::: pf-proof
+
 Suppose
 \[
 Tx_n\to y
@@ -58,10 +65,17 @@ Thus $(x_n)$ is Cauchy. Since $\mathcal H$ is complete, $x_n\to x$ for some $x\i
 Tx_n\to Tx.
 \]
 Hence $y=Tx$, so $\operatorname{Ran}T$ is closed.
+
 :::
 
-<1>2. Show that the range is dense and conclude surjectivity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the range is dense and conclude surjectivity.
+
+::: pf-proof
+
 The lower bound implies
 \[
 Tv=0\quad\Longrightarrow\quad v=0,
@@ -90,10 +104,17 @@ Thus for every $y\in\mathcal H$ there exists $x\in\mathcal H$ with
 \[
 Tx=y.
 \]
+
 :::
 
-<1>3. Give an injective self-adjoint operator that is not onto.
-::: {.proof}
+:::
+
+::: pf-step
+
+Give an injective self-adjoint operator that is not onto.
+
+::: pf-proof
+
 Take
 \[
 \mathcal H=L^2([0,1])
@@ -123,15 +144,28 @@ almost everywhere on $(0,1]$. But
 \int_0^1\frac{dx}{x^2}=\infty,
 \]
 so $1/x\notin L^2([0,1])$. Thus $1\notin\operatorname{Ran}T$.
+
 :::
 
-<1>4. Explain why no finite-dimensional example exists.
-::: {.proof}
+:::
+
+::: pf-step
+
+Explain why no finite-dimensional example exists.
+
+::: pf-proof
+
 On a finite-dimensional vector space, every injective linear map from the space to itself is automatically surjective. Therefore an injective bounded self-adjoint operator on a finite-dimensional Hilbert space cannot fail to be onto.
 
 Hence the answer to part (c) is
 \[
 \boxed{\text{No}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

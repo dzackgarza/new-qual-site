@@ -60,12 +60,17 @@ Conclude for $p \geq 5$ that $X$ has Hasse invariant 0 if and only if $N=p+1$.
 ::: {.solution}
 Let $\pi=F'$ denote the $q$-power Frobenius after the identification in part (a), and write $O$ for the given $\FF_q$-rational origin.
 
-<1>1. The Frobenius twist $X_q$ is isomorphic to $X$ over $k$, and under this identification
+::: pf
+
+::: {.pf-step #s1}
+
+The Frobenius twist $X_q$ is isomorphic to $X$ over $k$, and under this identification
 $$
 \boxed{\pi(x:y:z)=(x^q:y^q:z^q).}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a homogeneous equation
 $$
 G(x,y,z)=0
@@ -82,15 +87,21 @@ G(x^q,y^q,z^q)=G(x,y,z)^q,
 $$
 it preserves $X$ and has the displayed form.
 This proves part (a).
+
 :::
 
-<1>2. The endomorphism
+:::
+
+::: {.pf-step #s2}
+
+The endomorphism
 $$
 1_X-\pi:X\longrightarrow X
 $$
 is separable.
 
-::: {.proof}
+::: pf-proof
+
 The differential of the $q$-power Frobenius is zero.
 Hence
 $$
@@ -102,33 +113,50 @@ d(1_X)_O-d\pi_O
 $$
 which is nonzero.
 A homomorphism of elliptic curves is separable exactly when its differential at the origin is nonzero, so $1_X-\pi$ is separable.
+
 :::
 
-<1>3. Its kernel is exactly
+:::
+
+::: {.pf-step #s3}
+
+Its kernel is exactly
 $$
 \boxed{\ker(1_X-\pi)=X(\FF_q).}
 $$
 
-::: {.proof}
+::: pf-proof
+
 A geometric point $P=(x:y:z)$ lies in the kernel exactly when
 $$
 \pi(P)=P.
 $$
-By step <1>1 this is equivalent to $P$ being fixed by the $q$-power Frobenius, hence to $P$ being defined over $\FF_q$.
+By step [](#s1){.pf-ref} this is equivalent to $P$ being fixed by the $q$-power Frobenius, hence to $P$ being defined over $\FF_q$.
 This proves part (b).
+
 :::
 
-<1>4. If $N=\#X(\FF_q)$, then
+:::
+
+::: {.pf-step #s4}
+
+If $N=\#X(\FF_q)$, then
 $$
 \deg(1_X-\pi)=N.
 $$
 
-::: {.proof}
-By step <1>2 the endomorphism is separable, so its degree equals the number of geometric kernel points.
-Step <1>3 identifies these with $X(\FF_q)$.
+::: pf-proof
+
+By step [](#s2){.pf-ref} the endomorphism is separable, so its degree equals the number of geometric kernel points.
+Step [](#s3){.pf-ref} identifies these with $X(\FF_q)$.
+
 :::
 
-<1>5. There is an integer
+:::
+
+::: {.pf-step #s5}
+
+There is an integer
 $$
 a=q+1-N
 $$
@@ -137,7 +165,8 @@ $$
 \boxed{\pi+\widehat\pi=[a]_X.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 By additivity of dualization from [[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(d),(e)]],
 $$
 \widehat{(1_X-\pi)}=1_X-\widehat\pi.
@@ -163,9 +192,14 @@ $$
 \pi+\widehat\pi=[q+1-N]_X.
 $$
 Taking $a=q+1-N$ proves part (c), including $N=q-a+1$.
+
 :::
 
-<1>6. For all $m,n\in\ZZ$,
+:::
+
+::: {.pf-step #s6}
+
+For all $m,n\in\ZZ$,
 $$
 \boxed{
 \deg([m]_X+[n]_X\circ\pi)
@@ -174,7 +208,8 @@ m^2+amn+qn^2.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 \phi=[m]_X+[n]_X\circ\pi.
@@ -183,7 +218,7 @@ By Exercise IV.4.7(d),(e),
 $$
 \widehat\phi=[m]_X+[n]_X\circ\widehat\pi.
 $$
-Using step <1>5 and $\widehat\pi\circ\pi=[q]_X$, we obtain
+Using step [](#s5){.pf-ref} and $\widehat\pi\circ\pi=[q]_X$, we obtain
 $$
 \begin{aligned}
 \widehat\phi\circ\phi
@@ -197,15 +232,21 @@ $$
 \widehat\phi\circ\phi=[\deg\phi]_X.
 $$
 Since $\ZZ\to\Endo(X,O)$ is injective, the two integers are equal.
+
 :::
 
-<1>7. One has Hasse's bound
+:::
+
+::: {.pf-step #s7}
+
+One has Hasse's bound
 $$
 \boxed{\abs a\le2\sqrt q.}
 $$
 
-::: {.proof}
-Step <1>6 gives
+::: pf-proof
+
+Step [](#s6){.pf-ref} gives
 $$
 Q(m,n)=m^2+amn+qn^2\ge0
 $$
@@ -226,20 +267,26 @@ $$
 a^2-4q\le0.
 $$
 Thus $\abs a\le2\sqrt q$, proving part (d).
+
 :::
 
-<1>8. Now assume $q=p$.
+:::
+
+::: {.pf-step #s8}
+
+Now assume $q=p$.
 The Hasse invariant of $X$ is zero if and only if
 $$
 \boxed{a\equiv0\pmod p.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 V=\widehat\pi.
 $$
-Step <1>5 gives
+Step [](#s5){.pf-ref} gives
 $$
 V=[a]_X-\pi.
 $$
@@ -258,15 +305,21 @@ dV_O=0
 \iff
 a\equiv0\pmod p.
 $$
+
 :::
 
-<1>9. If $p\ge5$, then the Hasse invariant of $X$ is zero if and only if
+:::
+
+::: {.pf-step #s9}
+
+If $p\ge5$, then the Hasse invariant of $X$ is zero if and only if
 $$
 \boxed{N=p+1.}
 $$
 
-::: {.proof}
-When $q=p$, step <1>7 gives
+::: pf-proof
+
+When $q=p$, step [](#s7){.pf-ref} gives
 $$
 \abs a\le2\sqrt p.
 $$
@@ -275,23 +328,29 @@ $$
 2\sqrt p<p.
 $$
 Thus an integer $a$ in this range is divisible by $p$ exactly when $a=0$.
-By step <1>8,
+By step [](#s8){.pf-ref},
 $$
 \operatorname{Hasse}(X)=0
 \iff
 a=0.
 $$
-Finally step <1>5 gives
+Finally step [](#s5){.pf-ref} gives
 $$
 N=p-a+1,
 $$
 so $a=0$ is equivalent to $N=p+1$.
 This proves part (e).
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), steps <1>2--<1>3 prove part (b), steps <1>4--<1>5 prove part (c), steps <1>6--<1>7 prove part (d), and steps <1>8--<1>9 prove part (e).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (c), steps [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (d), and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (e).
+
+:::
+
+:::
+
 :::

@@ -45,12 +45,17 @@ $$
 h(x)=\abs{f(x)}+\abs{f(-x)}.
 $$
 
-<1>1. The function $h$ is integrable on $[0,\infty)$:
+::: pf
+
+::: {.pf-step #s1}
+
+The function $h$ is integrable on $[0,\infty)$:
 $$
 \int_0^\infty h(x)\,dx<\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 \begin{aligned}
@@ -69,14 +74,20 @@ $$
 $$
 where the second integral uses the substitution $u=-x$. The final
 quantity is finite by hypothesis.
+
 :::
 
-<1>2. For every integer $n\geq1$, there exists $x_n\geq n$ such that
+:::
+
+::: {.pf-step #s2}
+
+For every integer $n\geq1$, there exists $x_n\geq n$ such that
 $$
 x_nh(x_n)<\frac1n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose no such $x_n$ existed for some fixed $n$. Then
 $$
 x h(x)\geq\frac1n
@@ -94,36 +105,48 @@ $$
 =
 \infty,
 $$
-contradicting step <1>1. Therefore such an $x_n$ exists.
+contradicting step [](#s1){.pf-ref}. Therefore such an $x_n$ exists.
+
 :::
 
-<1>3. The sequence from step <1>2 satisfies
+:::
+
+::: {.pf-step #s3}
+
+The sequence from step [](#s2){.pf-ref} satisfies
 $$
 x_n\longrightarrow\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By construction,
 $$
 x_n\geq n.
 $$
 Since $n\to\infty$, the same is true of $x_n$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 x_n\abs{f(x_n)}
 \longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of $h$,
 $$
 \abs{f(x_n)}
 \leq
 h(x_n).
 $$
-Therefore step <1>2 gives
+Therefore step [](#s2){.pf-ref} gives
 $$
 0
 \leq
@@ -134,15 +157,21 @@ x_nh(x_n)
 \frac1n.
 $$
 The squeeze theorem gives the limit.
+
 :::
 
-<1>5. One also has
+:::
+
+::: {.pf-step #s5}
+
+One also has
 $$
 x_n\abs{f(-x_n)}
 \longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Again,
 $$
 \abs{f(-x_n)}
@@ -160,9 +189,14 @@ x_nh(x_n)
 \frac1n,
 $$
 and the squeeze theorem applies.
+
 :::
 
-<1>6. Consequently,
+:::
+
+::: {.pf-step #s6}
+
+Consequently,
 $$
 \boxed{
 x_nf(x_n)\to0
@@ -171,15 +205,22 @@ x_nf(-x_n)\to0.
 }
 $$
 
-::: {.proof}
-Steps <1>4--<1>5 show convergence of the absolute values of the two
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} show convergence of the absolute values of the two
 displayed expressions to zero, which implies convergence of the
 expressions themselves to zero.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>6 give all required properties of the sequence.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s6){.pf-ref} give all required properties of the sequence.
+
+:::
+
+:::
+
 :::

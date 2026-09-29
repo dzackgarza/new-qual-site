@@ -34,9 +34,15 @@ Prove that $(x_n)$ converges, and find its limit.
 :::
 
 ::: {.solution}
-<1>1. Every term $x_n$ is positive.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every term $x_n$ is positive.
+
+::: pf-proof
+
 The initial value $x_0$ is positive. If $x_{n-1}>0$, then
 $$
 x_n
@@ -45,15 +51,21 @@ x_n
 >0,
 $$
 because $a>0$. Induction gives $x_n>0$ for every $n\geq0$.
+
 :::
 
-<1>2. For every $n\geq1$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n\geq1$,
 $$
 x_n\geq\sqrt a.
 $$
 
-::: {.proof}
-By step <1>1, $x_{n-1}>0$. The arithmetic-geometric mean inequality
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $x_{n-1}>0$. The arithmetic-geometric mean inequality
 therefore gives
 $$
 x_n
@@ -64,13 +76,19 @@ x_n
 =
 \sqrt a.
 $$
+
 :::
 
-<1>3. The tail $(x_n)_{n\geq1}$ is nonincreasing and bounded below,
+:::
+
+::: {.pf-step #s3}
+
+The tail $(x_n)_{n\geq1}$ is nonincreasing and bounded below,
 so $(x_n)$ converges.
 
-::: {.proof}
-For $n\geq1$, step <1>2 gives $x_n^2\geq a$. Hence
+::: pf-proof
+
+For $n\geq1$, step [](#s2){.pf-ref} gives $x_n^2\geq a$. Hence
 $$
 \begin{aligned}
 x_{n+1}-x_n
@@ -82,23 +100,29 @@ x_{n+1}-x_n
 0,
 \end{aligned}
 $$
-where the denominator is positive by step <1>1. Thus the tail is
-nonincreasing. Step <1>2 bounds it below by $\sqrt a$, so the monotone
+where the denominator is positive by step [](#s1){.pf-ref}. Thus the tail is
+nonincreasing. Step [](#s2){.pf-ref} bounds it below by $\sqrt a$, so the monotone
 convergence theorem for real sequences gives a limit
 $$
 L=\lim_{n\to\infty}x_n
 $$
 with $L\geq\sqrt a>0$.
+
 :::
 
-<1>4. The limit is
+:::
+
+::: {.pf-step #s4}
+
+The limit is
 $$
 \boxed{L=\sqrt a}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Letting $n\to\infty$ in the defining recurrence, with $x_n\to L$ by
-step <1>3, gives
+step [](#s3){.pf-ref}, gives
 $$
 L
 =
@@ -109,11 +133,17 @@ $$
 2L^2=L^2+a,
 $$
 so $L^2=a$. Since $L>0$, it follows that $L=\sqrt a$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves convergence, and step <1>4 gives the requested limit.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves convergence, and step [](#s4){.pf-ref} gives the requested limit.
+
+:::
+
+:::
+
 :::

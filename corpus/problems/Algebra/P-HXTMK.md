@@ -41,7 +41,11 @@ m_A=d_t.
 \]
 Equivalently, one may list the elementary divisors and align the powers of each irreducible factor from the right.
 
-<1>1. The $6\times6$ case is unique.
+::: pf
+
+::: pf-step
+
+The $6\times6$ case is unique.
 Write
 \[
 a=x-1,
@@ -68,7 +72,11 @@ Hence there is exactly one rational canonical form:
 \boxed{C(x-1)\oplus C\bigl((x-1)(x^2+1)^2\bigr)}.
 \]
 
-<1>2. The $10\times10$ case has three possibilities.
+:::
+
+::: pf-step
+
+The $10\times10$ case has three possibilities.
 Factor
 \[
 x^3+1=(x+1)(x^2-x+1).
@@ -86,7 +94,11 @@ m_B=b^2cd
 has degree $4+1+2=7$. We must add elementary divisors of total degree $3$, without introducing any new irreducible factor or increasing an exponent beyond those in the minimal polynomial.
 The only possibilities are:
 
-<2>1. Add $c$ and $d$.
+::: pf-proof
+
+::: pf-step
+
+Add $c$ and $d$.
 The elementary divisors are
 \[
 b^2,\ c,\ c,\ d,\ d.
@@ -102,7 +114,11 @@ and
 \boxed{C(x^3+1)\oplus C(m_B)}.
 \]
 
-<2>2. Add $c$ and $b$.
+:::
+
+::: pf-step
+
+Add $c$ and $b$.
 The elementary divisors are
 \[
 b,\ b^2,\ c,\ c,\ d.
@@ -118,7 +134,20 @@ and
 \boxed{C\bigl((x^2+1)(x+1)\bigr)\oplus C(m_B)}.
 \]
 
-<2>3. Add three further copies of $c$.
+:::
+
+::: pf-step
+
+Add three further copies of $c$.
+
+:::
+
+:::
+
+:::
+
+:::
+
 The elementary divisors are
 \[
 b^2,\ c,\ c,\ c,\ c,\ d.

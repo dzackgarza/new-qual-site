@@ -30,8 +30,14 @@ Classify the following assertion as true, sometimes true, or false: in an integr
 ::: {.solution}
 The assertion is sometimes true.
 
-<1>1. If $\gcd(m,n)=1$, the two power equalities force $a=b$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $\gcd(m,n)=1$, the two power equalities force $a=b$.
+
+::: pf-proof
+
 If one of $a,b$ is zero, then the equality of any positive power forces the
 other to be zero as well, because an integral domain has no nonzero
 nilpotents. Hence assume $a,b\ne0$.
@@ -55,10 +61,17 @@ $$
 r=r^{um+vn}=(r^m)^u(r^n)^v=1.
 $$
 Thus $a=b$.
+
 :::
 
-<1>2. For distinct exponents that are not coprime, the assertion can fail.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+For distinct exponents that are not coprime, the assertion can fail.
+
+::: pf-proof
+
 Take the integral domain $\mathbb Z$, let
 $$
 m=2,
@@ -76,15 +89,22 @@ a^2=b^2=1,
 a^4=b^4=1,
 $$
 but $a\ne b$.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>1 gives cases in which the implication holds, and step <1>2 gives a
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives cases in which the implication holds, and step [](#s2){.pf-ref} gives a
 case in which it fails.
 Hence
 $$
 \boxed{\text{sometimes true}.}
 $$
+
 :::
+
+:::
+
 :::

@@ -38,8 +38,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Prove the $L^1$ contraction estimate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the $L^1$ contraction estimate.
+
+::: pf-proof
+
 On each dyadic interval $\Delta_k(j)$, the function $A_kf$ is constant with value
 \[
 a_k(j)=2^k\int_{\Delta_k(j)}f(y)\,dy.
@@ -58,10 +65,17 @@ Hence
 \[
 \boxed{\|A_kf\|_1\le\|f\|_1.}
 \]
+
 :::
 
-<1>2. Prove convergence for continuous compactly supported functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove convergence for continuous compactly supported functions.
+
+::: pf-proof
+
 Let $g\in C_c(\mathbb R)$. Since $g$ is uniformly continuous, let
 \[
 \omega_g(\delta)
@@ -82,10 +96,17 @@ Moreover, if $\operatorname{supp}g\subset[-R,R]$, then both $g$ and $A_kg$ vanis
 \|A_kg-g\|_1
 \le (2R+2)\,\omega_g(2^{-k})\longrightarrow0.
 \]
+
 :::
 
-<1>3. Pass to arbitrary $L^1$ functions by density.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass to arbitrary $L^1$ functions by density.
+
+::: pf-proof
+
 Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$, choose $g\in C_c(\mathbb R)$ such that
 \[
 \|f-g\|_1<\varepsilon.
@@ -110,5 +131,11 @@ Since $\varepsilon$ is arbitrary,
 \[
 \boxed{A_kf\to f\text{ in }L^1(\mathbb R).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

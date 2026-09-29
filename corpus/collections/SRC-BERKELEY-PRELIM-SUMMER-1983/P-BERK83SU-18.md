@@ -30,53 +30,77 @@ x\frac{dy}{dx}+y=x.
 :::
 
 ::: {.solution}
-<1>1. Every $C^1$ solution satisfies
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every $C^1$ solution satisfies
 $$
 (xy)'=x
 $$
 on $(-1,1)$.
 
-::: {.proof}
+::: pf-proof
+
 By the product rule,
 $$
 (xy)'=xy'+y.
 $$
 The differential equation therefore gives $(xy)'=x$ at every point
 of the interval, including $x=0$.
+
 :::
 
-<1>2. There is a constant $C\in\RR$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is a constant $C\in\RR$ such that
 $$
 xy(x)=\frac{x^2}{2}+C
 $$
 for every $x\in(-1,1)$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \left(xy(x)-\frac{x^2}{2}\right)'=0
 $$
 on the connected interval $(-1,1)$. Hence the expression in
 parentheses is constant.
+
 :::
 
-<1>3. The constant in step <1>2 is $C=0$.
+:::
 
-::: {.proof}
-Substituting $x=0$ into the identity from step <1>2 gives
+::: {.pf-step #s3}
+
+The constant in step [](#s2){.pf-ref} is $C=0$.
+
+::: pf-proof
+
+Substituting $x=0$ into the identity from step [](#s2){.pf-ref} gives
 $$
 0=C.
 $$
+
 :::
 
-<1>4. Every solution is
+:::
+
+::: {.pf-step #s4}
+
+Every solution is
 $$
 \boxed{y(x)=\frac{x}{2}}
 $$
 on $(-1,1)$.
 
-::: {.proof}
-For $x\neq0$, steps <1>2 and <1>3 give
+::: pf-proof
+
+For $x\neq0$, steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give
 $$
 xy(x)=\frac{x^2}{2},
 $$
@@ -89,21 +113,33 @@ y(0)
 0,
 $$
 which is also the value of $x/2$ at $0$.
+
 :::
 
-<1>5. The function $y(x)=x/2$ is indeed a $C^1$ solution.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The function $y(x)=x/2$ is indeed a $C^1$ solution.
+
+::: pf-proof
+
 It is $C^1$ on $(-1,1)$, and
 $$
 x\left(\frac12\right)+\frac{x}{2}=x.
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4 and <1>5 show that the displayed function is the unique
+::: pf-qed
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} show that the displayed function is the unique
 $C^1$ solution.
+
 :::
+
+:::
+
 :::

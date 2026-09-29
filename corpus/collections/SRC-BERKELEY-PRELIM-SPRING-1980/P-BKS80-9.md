@@ -45,7 +45,12 @@ for some $s,t\in\RR$.
 :::
 
 ::: {.solution}
-<1>1. Write
+
+::: pf
+
+::: {.pf-step #s1}
+
+Write
 $$
 B=
 \begin{pmatrix}
@@ -60,7 +65,8 @@ $$
 2(u-p)=3q.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 AB
@@ -93,16 +99,22 @@ $$
 $$
 Thus the two displayed equations are equivalent to all four entrywise
 conditions.
+
 :::
 
-<1>2. Every matrix $B$ commuting with $A$ has the form
+:::
+
+::: {.pf-step #s2}
+
+Every matrix $B$ commuting with $A$ has the form
 $$
 B=sI+tA
 $$
 for real $s,t$.
 
-::: {.proof}
-By step <1>1, put
+::: pf-proof
+
+By step [](#s1){.pf-ref}, put
 $$
 t\coloneqq\frac q2.
 $$
@@ -133,30 +145,48 @@ sI+t
 =
 sI+tA.
 $$
+
 :::
 
-<1>3. Conversely, every matrix $sI+tA$ commutes with $A$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Conversely, every matrix $sI+tA$ commutes with $A$.
+
+::: pf-proof
+
 For $s,t\in\RR$,
 $$
 A(sI+tA)=sA+tA^2=(sI+tA)A.
 $$
+
 :::
 
-<1>4. Hence the full real centralizer of $A$ is
+:::
+
+::: {.pf-step #s4}
+
+Hence the full real centralizer of $A$ is
 $$
 \boxed{\{sI+tA:s,t\in\RR\}.}
 $$
 
-::: {.proof}
-Step <1>2 proves containment of the centralizer in the displayed set, and
-step <1>3 proves the reverse containment.
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves containment of the centralizer in the displayed set, and
+step [](#s3){.pf-ref} proves the reverse containment.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 contains the required assertion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} contains the required assertion.
+
+:::
+
+:::
+
 :::

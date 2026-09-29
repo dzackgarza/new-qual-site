@@ -56,12 +56,17 @@ $$
 \varphi^*\mco_Y(1)\cong\mco_X(1).
 $$
 
-<1>1. Since $X\subseteq\PP^3$ is not contained in a plane,
+::: pf
+
+::: {.pf-step #s1}
+
+Since $X\subseteq\PP^3$ is not contained in a plane,
 $$
 h^0(X,\mco_X(1))\ge4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Restriction gives a linear map
 $$
 H^0(\PP^3,\mco_{\PP^3}(1))
@@ -71,14 +76,20 @@ $$
 Its kernel consists of linear forms vanishing identically on $X$, equivalently
 planes containing $X$. By hypothesis there is no such plane, so the map is
 injective. The source has dimension $4$, proving the claim.
+
 :::
 
-<1>2. If $Y$ were nonsingular, then
+:::
+
+::: {.pf-step #s2}
+
+If $Y$ were nonsingular, then
 $$
 h^0(X,\mco_X(1))=3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The morphism
 $$
 \varphi:X\longrightarrow Y
@@ -126,12 +137,18 @@ H^0(\PP^2,\mco(1))
 H^0(Y,\mco_Y(1)).
 $$
 The left side has dimension $3$, proving the claim.
+
 :::
 
-<1>3. The plane image $Y$ is singular.
+:::
 
-::: {.proof}
-If $Y$ were nonsingular, steps <1>1 and <1>2 would give simultaneously
+::: {.pf-step #s3}
+
+The plane image $Y$ is singular.
+
+::: pf-proof
+
+If $Y$ were nonsingular, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} would give simultaneously
 $$
 h^0(X,\mco_X(1))\ge4
 $$
@@ -144,14 +161,20 @@ $$
 \boxed{Y\text{ is singular}.}
 $$
 This proves (a).
+
 :::
 
-<1>4. If $\deg X=d$, then
+:::
+
+::: pf-step
+
+If $\deg X=d$, then
 $$
 \deg Y=d.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because
 $$
 \varphi^*\mco_Y(1)\cong\mco_X(1)
@@ -167,14 +190,20 @@ $$
 \deg\mco_Y(1).
 $$
 The two sides are respectively $\deg X$ and $\deg Y$, so both equal $d$.
+
 :::
 
-<1>5. The arithmetic genus of the singular plane image is
+:::
+
+::: {.pf-step #s5}
+
+The arithmetic genus of the singular plane image is
 $$
 p_a(Y)=\frac12(d-1)(d-2)>g(X).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The plane-curve genus formula gives
 $$
 p_a(Y)
@@ -192,7 +221,7 @@ g(X)
 +
 \sum_{P\in Y}\delta_P.
 $$
-Step <1>3 says that $Y$ is singular, so at least one local ring is not
+Step [](#s3){.pf-ref} says that $Y$ is singular, so at least one local ring is not
 normal and the corresponding normalization quotient has positive length.
 Hence
 $$
@@ -207,14 +236,20 @@ g(X)
 }.
 $$
 This proves (b).
+
 :::
 
-<1>6. In the flat projection family, the special fibre satisfies
+:::
+
+::: {.pf-step #s6}
+
+In the flat projection family, the special fibre satisfies
 $$
 p_a(X_0)=g(X).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The family in Hartshorne III.9.8.3 is flat and projective over the parameter
 curve. Flatness preserves the Hilbert polynomial, hence the arithmetic genus
 of the one-dimensional fibres. Since the fibre at $t=1$ is the nonsingular
@@ -222,43 +257,61 @@ curve $X$,
 $$
 p_a(X_0)=p_a(X)=g(X).
 $$
+
 :::
 
-<1>7. The special fibre $X_0$ is not reduced.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The special fibre $X_0$ is not reduced.
+
+::: pf-proof
+
 By construction the support of $X_0$ is the plane curve $Y$.
 Suppose $X_0$ were reduced. Since $Y$ is integral,
 $$
 X_0=Y
 $$
-as schemes. Step <1>6 would then give
+as schemes. Step [](#s6){.pf-ref} would then give
 $$
 p_a(Y)=g(X).
 $$
-But step <1>5 gives the strict inequality
+But step [](#s5){.pf-ref} gives the strict inequality
 $$
 p_a(Y)>g(X),
 $$
 a contradiction.
 Thus $X_0$ is nonreduced.
+
 :::
 
-<1>8. The structure sheaf of $X_0$ has nonzero nilpotent elements.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+The structure sheaf of $X_0$ has nonzero nilpotent elements.
+
+::: pf-proof
+
 A scheme is reduced exactly when its structure sheaf has zero nilradical.
-By step <1>7, $X_0$ is not reduced, so its nilradical is nonzero. Hence
+By step [](#s7){.pf-ref}, $X_0$ is not reduced, so its nilradical is nonzero. Hence
 $$
 \boxed{X_0\text{ has nilpotent elements}.}
 $$
 This proves (c).
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves (a), step <1>5 proves (b), and steps <1>6--<1>8 prove
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves (a), step [](#s5){.pf-ref} proves (b), and steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove
 (c).
+
 :::
+
+:::
+
 :::

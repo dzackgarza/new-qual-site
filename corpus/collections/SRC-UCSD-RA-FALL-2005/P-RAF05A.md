@@ -43,8 +43,15 @@ Then there exists $\varepsilon > 0$, $j_0 \in \mathbb{N}$, and $f_0 \in F_{j_0}$
 :::
 
 ::: {.solution}
-<1>1. Prove part (a) by monotone convergence.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a) by monotone convergence.
+
+::: pf-proof
+
 Since
 \[
 f_1\ge f_2\ge\cdots\ge0,
@@ -79,10 +86,17 @@ Thus
 \[
 \boxed{\lim_j\int f_j\,d\mu=\int\lim_j f_j\,d\mu.}
 \]
+
 :::
 
-<1>2. Prove part (b) by Stone--Weierstrass.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove part (b) by Stone--Weierstrass.
+
+::: pf-proof
+
 Let
 \[
 K=[a,b]\times[c,d]
@@ -109,10 +123,17 @@ such that
 \left|f(x,y)-\sum_{j=1}^N g_j(x)h_j(y)\right|<\varepsilon.
 \]
 This is the required approximation.
+
 :::
 
-<1>3. Prove part (c) by Baire category.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove part (c) by Baire category.
+
+::: pf-proof
+
 The normed space $C([0,1],\mathbb R)$ with the uniform norm is Banach. By hypothesis,
 \[
 C([0,1],\mathbb R)=\bigcup_{j=1}^\infty F_j
@@ -131,5 +152,11 @@ is contained in $F_{j_0}$. Therefore
 f\in F_{j_0},
 \]
 as required.
+
 :::
+
+:::
+
+:::
+
 :::

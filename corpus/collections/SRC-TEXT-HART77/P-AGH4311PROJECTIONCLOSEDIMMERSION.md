@@ -44,7 +44,12 @@ Usually one obtains a finite number of double points with transversal tangent pl
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 $$
 \Sigma_{\mathrm{sec}}
 $$
@@ -59,7 +64,8 @@ $$
 2r+1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Over
 $$
 (X\times X)\setminus\Delta
@@ -84,9 +90,14 @@ $$
 \le
 2r+1.
 $$
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 \Sigma_{\mathrm{tan}}
 =
@@ -97,7 +108,8 @@ $$
 \dim\overline{\Sigma_{\mathrm{tan}}}\le2r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $X$ is nonsingular of dimension $r$, each embedded tangent space
 $$
 T_PX
@@ -117,9 +129,14 @@ $$
 r+r=2r.
 $$
 Its image is $\Sigma_{\mathrm{tan}}$, giving the stated bound.
+
 :::
 
-<1>3. There is a point
+:::
+
+::: {.pf-step #s3}
+
+There is a point
 $$
 O\in\PP^n
 \setminus
@@ -132,23 +149,30 @@ X
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 By hypothesis
 $$
 n>2r+1.
 $$
-Steps <1>1--<1>2 show that the two closed secant and tangent loci have
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that the two closed secant and tangent loci have
 dimension strictly smaller than $n$, and
 $$
 \dim X=r<n.
 $$
 Their finite union is therefore a proper closed subset of the irreducible
 space $\PP^n$. Choose $O$ in its complement.
+
 :::
 
-<1>4. Projection from the point $O$ in step <1>3 separates points of $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Projection from the point $O$ in step [](#s3){.pf-ref} separates points of $X$.
+
+::: pf-proof
+
 Let
 $$
 \pi_O:X\longrightarrow\PP^{n-1}
@@ -163,14 +187,20 @@ had the same image, then $O,P,Q$ would lie on one line, so
 $$
 O\in\overline{PQ}\subseteq\Sigma_{\mathrm{sec}},
 $$
-contrary to step <1>3. Hence $\pi_O$ is injective on closed points, which is
+contrary to step [](#s3){.pf-ref}. Hence $\pi_O$ is injective on closed points, which is
 the point-separation condition for the corresponding subsystem of
 $H^0(X,\mco_X(1))$.
+
 :::
 
-<1>5. Projection from $O$ separates tangent vectors of $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Projection from $O$ separates tangent vectors of $X$.
+
+::: pf-proof
+
 Fix
 $$
 P\in X.
@@ -188,41 +218,53 @@ $$
 Indeed, the kernel direction is the infinitesimal direction of the line from
 $P$ toward the center of projection.
 
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 O\notin T_PX
 $$
 for every $P$. Thus every tangent map is injective, so the projected linear
 system separates tangent vectors.
+
 :::
 
-<1>6. The projection
+:::
+
+::: {.pf-step #s6}
+
+The projection
 $$
 \pi_O:X\longrightarrow\PP^{n-1}
 $$
 is a closed immersion.
 
-::: {.proof}
+::: pf-proof
+
 Projection from $O$ is the morphism defined by the base-point-free
 codimension-one subsystem of hyperplane sections consisting of hyperplanes
 through $O$.
-Steps <1>4--<1>5 show that this system separates points and tangent vectors.
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} show that this system separates points and tangent vectors.
 The [[T-DIVMAPPN|closed-immersion criterion for a linear system]]
 therefore gives
 $$
 \boxed{\pi_O\text{ is a closed immersion}.}
 $$
 This proves (a).
+
 :::
 
-<1>7. Now let
+:::
+
+::: {.pf-step #s7}
+
+Now let
 $$
 \nu_2:\PP^2\longrightarrow X\subseteq\PP^5
 $$
 be the quadratic Veronese embedding. Every secant line to $X$ is contained
 in the plane of a Veronese conic.
 
-::: {.proof}
+::: pf-proof
+
 Let a secant line join the two distinct points
 $$
 \nu_2(P),\nu_2(Q),
@@ -248,17 +290,23 @@ $$
 $$
 Both endpoints of the secant lie on $C$, so their joining line lies in
 $\Pi$.
+
 :::
 
-<1>8. Every point of every secant line of $X$ lies on infinitely many
+:::
+
+::: {.pf-step #s8}
+
+Every point of every secant line of $X$ lies on infinitely many
 secant lines of $X$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 O
 $$
-be a point of the secant line in step <1>7. Then
+be a point of the secant line in step [](#s7){.pf-ref}. Then
 $$
 O\in\Pi.
 $$
@@ -272,7 +320,7 @@ $$
 C\longrightarrow\PP^1
 $$
 of degree $2$, where the target is the pencil of lines through $O$.
-The original secant line from step <1>7 is one fibre containing two distinct
+The original secant line from step [](#s7){.pf-ref} is one fibre containing two distinct
 points. Hence this degree-two morphism is generically separable: a purely
 inseparable degree-two map would be radicial and could not have such a
 fibre. Therefore the geometric generic fibre consists of two distinct
@@ -284,11 +332,17 @@ $$
 C\subseteq X,
 $$
 they are also secant lines of the Veronese surface $X$.
+
 :::
 
-<1>9. The secant variety of the Veronese surface has dimension at most $4$.
+:::
 
-::: {.proof}
+::: {.pf-step #s9}
+
+The secant variety of the Veronese surface has dimension at most $4$.
+
+::: pf-proof
+
 Let
 $$
 \mathcal J
@@ -309,7 +363,7 @@ $$
 \operatorname{Sec}(X).
 $$
 
-By step <1>8, every point of this image lies on infinitely many secant lines.
+By step [](#s8){.pf-ref}, every point of this image lies on infinitely many secant lines.
 Thus every fibre of
 $$
 \mathcal J\longrightarrow\operatorname{Sec}(X)
@@ -325,11 +379,17 @@ $$
 5-1
 =4.
 $$
+
 :::
 
-<1>10. The secant variety has dimension at least $4$.
+:::
 
-::: {.proof}
+::: {.pf-step #s10}
+
+The secant variety has dimension at least $4$.
+
+::: pf-proof
+
 Use the standard coordinates
 $$
 \nu_2([x:y:z])
@@ -385,31 +445,43 @@ Since that image is contained in the secant variety,
 $$
 \dim\operatorname{Sec}(X)\ge4.
 $$
+
 :::
 
-<1>11. The secant variety of the Veronese surface has dimension exactly
+:::
+
+::: {.pf-step #s11}
+
+The secant variety of the Veronese surface has dimension exactly
 $$
 \boxed{4}.
 $$
 
-::: {.proof}
-Steps <1>9--<1>10 give the opposite inequalities
+::: pf-proof
+
+Steps [](#s9){.pf-ref} and [](#s10){.pf-ref} give the opposite inequalities
 $$
 \dim\operatorname{Sec}(X)\le4
 \qquad\text{and}\qquad
 \dim\operatorname{Sec}(X)\ge4.
 $$
 Therefore equality holds.
+
 :::
 
-<1>12. There is a projection
+:::
+
+::: {.pf-step #s12}
+
+There is a projection
 $$
 X\hookrightarrow\PP^4
 $$
 which is a closed immersion.
 
-::: {.proof}
-By step <1>11,
+::: pf-proof
+
+By step [](#s11){.pf-ref},
 $$
 \operatorname{Sec}(X)
 \subsetneq
@@ -425,20 +497,26 @@ directions, and the projective tangent plane is the union of its tangent
 lines through the point.
 Thus $O$ lies on neither a secant line nor an embedded tangent plane of $X$.
 
-The point- and tangent-separation argument of steps <1>4--<1>6 therefore
+The point- and tangent-separation argument of steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} therefore
 applies to projection from $O$ and gives a closed immersion
 $$
 \boxed{X\hookrightarrow\PP^4}.
 $$
 This is the projection asserted in (b).
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>6 prove (a). Steps <1>7--<1>8 prove that each point on every
-secant line lies on infinitely many secants; steps <1>9--<1>11 compute the
-secant-variety dimension; and step <1>12 gives the closed immersion into
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove (a). Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} prove that each point on every
+secant line lies on infinitely many secants; steps [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} compute the
+secant-variety dimension; and step [](#s12){.pf-ref} gives the closed immersion into
 $\PP^4$ required in (b).
+
 :::
+
+:::
+
 :::

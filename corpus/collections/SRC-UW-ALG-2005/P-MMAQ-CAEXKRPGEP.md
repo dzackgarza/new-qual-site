@@ -34,11 +34,18 @@ with the usual operations of addition and multiplication of functions.
 :::
 
 ::: {.solution}
-<1>1. A function $f\in S$ is invertible if and only if
+
+::: pf
+
+::: {.pf-step #s1}
+
+A function $f\in S$ is invertible if and only if
 \[
 f(x)\ne0\qquad\text{for every }x\in[0,1].
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $f$ is invertible, choose $g\in S$ with $fg=1$. Then for every $x$,
 \[
 f(x)g(x)=1,
@@ -50,10 +57,17 @@ Conversely, suppose $f$ is nowhere zero. Then
 g(x)=\frac1{f(x)}
 \]
 is continuous on $[0,1]$, because reciprocal is continuous on $\mathbb R\setminus\{0\}$ and $f([0,1])\subseteq\mathbb R\setminus\{0\}$. Hence $g\in S$ and $fg=1$.
+
 :::
 
-<1>2. For each $a\in[0,1]$, the set $I_a$ is a maximal ideal of $S$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+For each $a\in[0,1]$, the set $I_a$ is a maximal ideal of $S$.
+
+::: pf-proof
+
 Consider evaluation at $a$,
 \[
 \operatorname{ev}_a:S\longrightarrow\mathbb R,
@@ -69,10 +83,17 @@ Therefore the first isomorphism theorem gives
 S/I_a\cong\mathbb R.
 \]
 Because $\mathbb R$ is a field, $I_a$ is maximal.
+
 :::
 
-<1>3. Let $I\subsetneq S$ be a proper ideal. Then the elements of $I$ have a common zero.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Let $I\subsetneq S$ be a proper ideal. Then the elements of $I$ have a common zero.
+
+::: pf-proof
+
 Suppose not. Then for every $x\in[0,1]$ there exists $f_x\in I$ such that
 \[
 f_x(x)\ne0.
@@ -91,21 +112,34 @@ For every $y\in[0,1]$, some $U_{x_i}$ contains $y$, so $f_{x_i}(y)\ne0$. Hence
 \[
 h(y)=\sum_{i=1}^n f_{x_i}(y)^2>0.
 \]
-Thus $h$ is nowhere zero, so by <1>1 it is a unit of $S$. Since $h\in I$, the ideal $I$ contains a unit, hence $I=S$, contradicting that $I$ is proper. Therefore there exists $a\in[0,1]$ with
+Thus $h$ is nowhere zero, so by step [](#s1){.pf-ref} it is a unit of $S$. Since $h\in I$, the ideal $I$ contains a unit, hence $I=S$, contradicting that $I$ is proper. Therefore there exists $a\in[0,1]$ with
 \[
 f(a)=0\qquad\text{for every }f\in I.
 \]
+
 :::
 
-<1>4. Every maximal ideal of $S$ is $I_a$ for some $a\in[0,1]$.
-::: {.proof}
-Let $M$ be maximal. By <1>3, there exists $a\in[0,1]$ such that every $f\in M$ vanishes at $a$. Hence
+:::
+
+::: pf-step
+
+Every maximal ideal of $S$ is $I_a$ for some $a\in[0,1]$.
+
+::: pf-proof
+
+Let $M$ be maximal. By step [](#s3){.pf-ref}, there exists $a\in[0,1]$ such that every $f\in M$ vanishes at $a$. Hence
 \[
 M\subseteq I_a.
 \]
-By <1>2, $I_a$ is a proper maximal ideal. Since $M$ is maximal and is contained in the proper ideal $I_a$, we must have
+By step [](#s2){.pf-ref}, $I_a$ is a proper maximal ideal. Since $M$ is maximal and is contained in the proper ideal $I_a$, we must have
 \[
 M=I_a.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

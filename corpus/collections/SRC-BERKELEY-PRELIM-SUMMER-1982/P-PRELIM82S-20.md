@@ -63,12 +63,17 @@ J=
 \end{pmatrix}.
 $$
 
-<1>1. For every $X,H\in M_2(\RR)$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $X,H\in M_2(\RR)$,
 $$
 Df_X(H)=XH+HX.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 \begin{aligned}
@@ -89,12 +94,18 @@ o(\norm{H})
 $$
 for some constant $C$. Hence the linear part of the increment is
 $H\mapsto XH+HX$.
+
 :::
 
-<1>2. Item 1: the derivative of $f$ at $I_2$ is invertible.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #s2}
+
+Item 1: the derivative of $f$ at $I_2$ is invertible.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 Df_{I_2}(H)
 =
@@ -104,13 +115,19 @@ I_2H+HI_2
 $$
 Thus $Df_{I_2}$ is scalar multiplication by $2$ on the four-dimensional
 real vector space $M_2(\RR)$, with inverse $K\mapsto K/2$.
+
 :::
 
-<1>3. Item 1: the map $f$ has a local inverse near $I_2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Item 1: the map $f$ has a local inverse near $I_2$.
+
+::: pf-proof
+
 The map $f$ is polynomial and hence continuously differentiable.
-Step <1>2 shows that its derivative at $I_2$ is an isomorphism.
+Step [](#s2){.pf-ref} shows that its derivative at $I_2$ is an isomorphism.
 The inverse function theorem therefore gives neighborhoods $U$ of
 $I_2$ and $V$ of
 $$
@@ -122,9 +139,14 @@ f|_U:U\longrightarrow V
 $$
 is a diffeomorphism. In particular, $f$ has a local inverse near
 $I_2$.
+
 :::
 
-<1>4. For every $t\in\RR$, define
+:::
+
+::: {.pf-step #s4}
+
+For every $t\in\RR$, define
 $$
 X_t=
 \begin{pmatrix}
@@ -137,7 +159,8 @@ $$
 X_t^2=I_2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 X_t^2
@@ -158,11 +181,17 @@ X_t^2
 =
 I_2.
 $$
+
 :::
 
-<1>5. Item 2: the map $f$ is not injective on any neighborhood of $J$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Item 2: the map $f$ is not injective on any neighborhood of $J$.
+
+::: pf-proof
+
 One has
 $$
 X_0=J
@@ -176,21 +205,32 @@ $X_t$ with $t\neq0$. For such $t$,
 $$
 X_t\neq J,
 $$
-but step <1>4 gives
+but step [](#s4){.pf-ref} gives
 $$
 f(X_t)=I_2=f(J).
 $$
 Hence $f|_U$ is not injective.
+
 :::
 
-<1>6. Item 2: the map $f$ does not have a local inverse near $J$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Item 2: the map $f$ does not have a local inverse near $J$.
+
+::: pf-proof
+
 If a local inverse existed near $J$, then $f$ would be injective on
-some neighborhood of $J$. Step <1>5 shows that this is impossible.
+some neighborhood of $J$. Step [](#s5){.pf-ref} shows that this is impossible.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{
 f\text{ is locally invertible at }I_2
@@ -198,13 +238,20 @@ f\text{ is locally invertible at }I_2
 }.
 $$
 
-::: {.proof}
-The first assertion is step <1>3 and the second is step <1>6.
+::: pf-proof
+
+The first assertion is step [](#s3){.pf-ref} and the second is step [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 answers both items.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} answers both items.
+
+:::
+
+:::
+
 :::

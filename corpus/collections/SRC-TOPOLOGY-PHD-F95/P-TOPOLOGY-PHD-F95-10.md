@@ -39,7 +39,11 @@ i:S^1\hookrightarrow\mathbb R^2
 \]
 denote inclusion.
 
-<1>1. If a retraction
+::: pf
+
+::: {.pf-step #s1}
+
+If a retraction
 \[
 r:\mathbb R^2\longrightarrow S^1
 \]
@@ -47,53 +51,82 @@ existed, then
 \[
 r\circ i=\id_{S^1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition, a retraction onto the subspace $S^1$ restricts to the identity on $S^1$.
 Thus for every $z\in S^1$,
 \[
 (r\circ i)(z)=r(z)=z.
 \]
 Since $r(x_0)=x_0$, both $i$ and $r$ are based maps at $x_0$.
+
 :::
 
-<1>2. Functoriality would therefore give
+:::
+
+::: {.pf-step #s2}
+
+Functoriality would therefore give
 \[
 r_*\circ i_*=\id_{\pi_1(S^1,x_0)}.
 \]
-::: {.proof}
-Applying the fundamental-group functor to the identity in <1>1 gives
+
+::: pf-proof
+
+Applying the fundamental-group functor to the identity in step [](#s1){.pf-ref} gives
 \[
 r_*\circ i_*
 =(r\circ i)_*
 =(\id_{S^1})_*
 =\id_{\pi_1(S^1,x_0)}.
 \]
+
 :::
 
-<1>3. On the other hand, the homomorphism
+:::
+
+::: {.pf-step #s3}
+
+On the other hand, the homomorphism
 \[
 i_*:\pi_1(S^1,x_0)\longrightarrow\pi_1(\mathbb R^2,x_0)
 \]
 is the zero homomorphism.
-::: {.proof}
+
+::: pf-proof
+
 The plane is contractible, hence simply connected, so
 \[
 \pi_1(\mathbb R^2,x_0)=0.
 \]
 Therefore every homomorphism into this group, in particular $i_*$, is zero.
+
 :::
 
-<1>4. This contradicts <1>2, so no retraction $\mathbb R^2\to S^1$ exists.
-::: {.proof}
-By <1>3,
+:::
+
+::: pf-step
+
+This contradicts step [](#s2){.pf-ref}, so no retraction $\mathbb R^2\to S^1$ exists.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 \[
 r_*\circ i_*=0.
 \]
-But <1>2 says the same composite is the identity on
+But step [](#s2){.pf-ref} says the same composite is the identity on
 \[
 \pi_1(S^1,x_0)\cong\mathbb Z,
 \]
 which is nontrivial.
 Hence the assumed retraction cannot exist.
+
 :::
+
+:::
+
+:::
+
 :::

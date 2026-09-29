@@ -35,9 +35,15 @@ Prove that every linear transformation $T:\mathbb R^3\to\mathbb R^3$ has
 :::
 
 ::: {.solution}
-<1>1. The characteristic polynomial of $T$ has a real root.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The characteristic polynomial of $T$ has a real root.
+
+::: pf-proof
+
 The characteristic polynomial
 $$
 p(\lambda)=\det(\lambda I-T)
@@ -52,16 +58,22 @@ p(\lambda)\longrightarrow-\infty
 $$
 as $\lambda\to-\infty$.
 By the intermediate value theorem, $p$ has a real zero.
+
 :::
 
-<1>2. There is a nonzero vector $v\in\RR^3$ and a real number $\lambda$
+:::
+
+::: {.pf-step #s2}
+
+There is a nonzero vector $v\in\RR^3$ and a real number $\lambda$
 such that
 $$
 Tv=\lambda v.
 $$
 
-::: {.proof}
-Let $\lambda$ be a real root from step <1>1. Then
+::: pf-proof
+
+Let $\lambda$ be a real root from step [](#s1){.pf-ref}. Then
 $$
 \det(\lambda I-T)=0,
 $$
@@ -71,9 +83,14 @@ $$
 (\lambda I-T)v=0
 $$
 is equivalent to the displayed eigenvector equation.
+
 :::
 
-<1>3. The line
+:::
+
+::: {.pf-step #s3}
+
+The line
 $$
 \boxed{
 \RR v
@@ -81,7 +98,8 @@ $$
 $$
 is a one-dimensional $T$-invariant subspace.
 
-::: {.proof}
+::: pf-proof
+
 For every scalar $a\in\RR$,
 $$
 T(av)
@@ -93,9 +111,14 @@ a\lambda v
 \RR v.
 $$
 Thus $\RR v$ is invariant, and it is one-dimensional because $v\neq0$.
+
 :::
 
-<1>4. The transpose $T^T$ has a real eigenvector: there are
+:::
+
+::: {.pf-step #s4}
+
+The transpose $T^T$ has a real eigenvector: there are
 $$
 0\neq w\in\RR^3
 $$
@@ -104,13 +127,19 @@ $$
 T^Tw=\mu w.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The operator $T^T$ is again a real linear transformation of $\RR^3$.
-Applying steps <1>1--<1>2 to $T^T$ gives the stated eigenvector and
+Applying steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to $T^T$ gives the stated eigenvector and
 eigenvalue.
+
 :::
 
-<1>5. The plane
+:::
+
+::: {.pf-step #s5}
+
+The plane
 $$
 w^\perp
 =
@@ -118,12 +147,13 @@ w^\perp
 $$
 is $T$-invariant.
 
-::: {.proof}
+::: pf-proof
+
 Let $x\in w^\perp$. Then
 $$
 \langle x,w\rangle=0.
 $$
-Using step <1>4,
+Using step [](#s4){.pf-ref},
 $$
 \begin{aligned}
 \langle Tx,w\rangle
@@ -138,9 +168,14 @@ $$
 \end{aligned}
 $$
 Hence $Tx\in w^\perp$.
+
 :::
 
-<1>6. The subspace
+:::
+
+::: {.pf-step #s6}
+
+The subspace
 $$
 \boxed{
 w^\perp
@@ -148,18 +183,25 @@ w^\perp
 $$
 is two-dimensional.
 
-::: {.proof}
+::: pf-proof
+
 The vector $w$ is nonzero, so its orthogonal complement in the
 three-dimensional Euclidean space $\RR^3$ has codimension $1$. Therefore
 $$
 \dim w^\perp=2.
 $$
-Step <1>5 shows that it is $T$-invariant.
+Step [](#s5){.pf-ref} shows that it is $T$-invariant.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (1), and steps <1>5--<1>6 prove part (2).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (2).
+
+:::
+
+:::
+
 :::

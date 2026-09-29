@@ -33,9 +33,14 @@ for every real $x$.
 ::: {.solution}
 Fix $x_0\in\RR$.
 
-<1>1. Every Taylor coefficient of $f$ at $x_0$ is real.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every Taylor coefficient of $f$ at $x_0$ is real.
+
+::: pf-proof
+
 For each $m\ge0$, the complex derivative $f^{(m)}(x_0)$ can be
 computed by taking difference quotients along the real axis. Since
 $f$ is real-valued there, induction on $m$ gives
@@ -44,28 +49,40 @@ f^{(m)}(x_0)\in\RR.
 $$
 Equivalently, the Taylor expansion of $f$ about $x_0$ has real
 coefficients.
+
 :::
 
-<1>2. $f'(x_0)\ge0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$f'(x_0)\ge0$.
+
+::: pf-proof
+
 For $y>0$,
 $$
 f(x_0+iy)
 =f(x_0)+iyf'(x_0)+O(y^2).
 $$
-By step <1>1, both $f(x_0)$ and $f'(x_0)$ are real, so
+By step [](#s1){.pf-ref}, both $f(x_0)$ and $f'(x_0)$ are real, so
 $$
 \operatorname{Im}f(x_0+iy)
 =y f'(x_0)+O(y^2).
 $$
 The left-hand side is positive for every $y>0$. Dividing by $y$ and
 letting $y\downarrow0$ gives $f'(x_0)\ge0$.
+
 :::
 
-<1>3. $f'(x_0)\ne0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+$f'(x_0)\ne0$.
+
+::: pf-proof
+
 The function $f$ is not constant: a constant entire function that is
 real on $\RR$ has imaginary part zero everywhere, contrary to the
 hypothesis in the upper half-plane.
@@ -99,18 +116,30 @@ $$
 $$
 although $\operatorname{Im}w>0$. This contradicts the hypothesis.
 Hence $f'(x_0)\ne0$.
+
 :::
 
-<1>4. $f'(x_0)>0$.
-
-::: {.proof}
-Combine steps <1>2 and <1>3.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-The real point $x_0$ was arbitrary, so step <1>4 holds for every
+$f'(x_0)>0$.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+The real point $x_0$ was arbitrary, so step [](#s4){.pf-ref} holds for every
 $x_0\in\RR$.
+
 :::
+
+:::
+
 :::

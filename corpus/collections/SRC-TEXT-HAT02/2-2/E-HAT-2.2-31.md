@@ -45,7 +45,11 @@ B=U\cup Y,
 \]
 slightly thickened if necessary so that they form an excisive cover for Mayer--Vietoris.
 
-<1>1. The inclusions induce homotopy equivalences
+::: pf
+
+::: {.pf-step #s1}
+
+The inclusions induce homotopy equivalences
 \[
 A\simeq X,
 \qquad
@@ -53,16 +57,25 @@ B\simeq Y,
 \qquad
 A\cap B=U\cup V\simeq *.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Retract $V$ to the wedge point while fixing $X$, and similarly retract $U$ while fixing $Y$. Since both $U$ and $V$ retract to the common basepoint, their wedge $U\cup V$ is contractible.
+
 :::
 
-<1>2. The reduced Mayer--Vietoris sequence gives
+:::
+
+::: pf-step
+
+The reduced Mayer--Vietoris sequence gives
 \[
 \widetilde H_n(W)\cong\widetilde H_n(A)\oplus\widetilde H_n(B)
 \]
 for every $n$.
-::: {.proof}
+
+::: pf-proof
+
 The reduced Mayer--Vietoris sequence contains
 \[
 \widetilde H_n(A\cap B)
@@ -73,11 +86,17 @@ The reduced Mayer--Vietoris sequence contains
 \longrightarrow
 \widetilde H_{n-1}(A\cap B).
 \]
-By <1>1 both outer groups vanish, so the middle arrow is an isomorphism. Replacing $A$ and $B$ by their deformation retracts yields
+By step [](#s1){.pf-ref} both outer groups vanish, so the middle arrow is an isomorphism. Replacing $A$ and $B$ by their deformation retracts yields
 \[
 \boxed{
 \widetilde H_n(X\vee Y)\cong
 \widetilde H_n(X)\oplus\widetilde H_n(Y).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

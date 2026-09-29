@@ -33,13 +33,19 @@ Show that $I \cap J = IJ$ for all ideals $J$ of $R$.
 ::: {.solution}
 Fix an ideal $J\trianglelefteq R$.
 
-<1>1. Tensoring the inclusion $J\hookrightarrow R$ with the flat module $R/I$ gives an injection
+::: pf
+
+::: {.pf-step #s1}
+
+Tensoring the inclusion $J\hookrightarrow R$ with the flat module $R/I$ gives an injection
 \[
 J\otimes_R R/I
 \longrightarrow
 R\otimes_R R/I.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The sequence
 \[
 0\longrightarrow J\longrightarrow R
@@ -50,9 +56,14 @@ Since $R/I$ is flat, the functor
 -\otimes_R R/I
 \]
 preserves this injection.
+
 :::
 
-<1>2. Under the canonical identifications
+:::
+
+::: pf-step
+
+Under the canonical identifications
 \[
 J\otimes_R R/I\cong J/IJ
 \]
@@ -60,13 +71,15 @@ and
 \[
 R\otimes_R R/I\cong R/I,
 \]
-the map in <1>1 is
+the map in step [](#s1){.pf-ref} is
 \[
 \psi:J/IJ\longrightarrow R/I,
 \qquad
 x+IJ\longmapsto x+I.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For any $R$-module $M$, the map
 \[
 M\otimes_R R/I\longrightarrow M/IM,
@@ -75,13 +88,20 @@ m\otimes(r+I)\longmapsto rm+IM
 \]
 is the standard natural isomorphism.
 Applying it to $M=J$ and $M=R$ identifies the tensor of the inclusion $J\hookrightarrow R$ with the displayed quotient map.
+
 :::
 
-<1>3. The kernel of $\psi$ is
+:::
+
+::: {.pf-step #s3}
+
+The kernel of $\psi$ is
 \[
 \ker\psi=(I\cap J)/IJ.
 \]
-::: {.proof}
+
+::: pf-proof
+
 An element $x+IJ\in J/IJ$ lies in the kernel exactly when
 \[
 x\in I.
@@ -95,19 +115,32 @@ Also
 IJ\subseteq I\cap J,
 \]
 so the kernel is precisely the indicated quotient.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 I\cap J=IJ.
 \]
-::: {.proof}
-By <1>1, the map $\psi$ is injective.
-Hence <1>3 gives
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the map $\psi$ is injective.
+Hence step [](#s3){.pf-ref} gives
 \[
 (I\cap J)/IJ=0.
 \]
 Therefore $I\cap J=IJ$.
 Since $J$ was arbitrary, the equality holds for every ideal $J$ of $R$.
+
 :::
+
+:::
+
+:::
+
 :::

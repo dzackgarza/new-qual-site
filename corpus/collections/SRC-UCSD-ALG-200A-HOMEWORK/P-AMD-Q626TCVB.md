@@ -34,8 +34,15 @@ Show: $G \in \mathbf{Ab}$
 :::
 
 ::: {.solution}
-<1>1. Every element of $G$ is its own inverse.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every element of $G$ is its own inverse.
+
+::: pf-proof
+
 Let $x\in G$.
 By hypothesis,
 \[
@@ -49,16 +56,23 @@ so uniqueness of inverses gives
 \[
 x^{-1}=x.
 \]
+
 :::
 
-<1>2. Any two elements of $G$ commute.
-::: {.proof}
+:::
+
+::: pf-step
+
+Any two elements of $G$ commute.
+
+::: pf-proof
+
 Let $x,y\in G$.
-By <1>1, applied to the element $xy$, one has
+By step [](#s1){.pf-ref}, applied to the element $xy$, one has
 \[
 (xy)^{-1}=xy.
 \]
-On the other hand, the inverse-of-a-product formula and <1>1 give
+On the other hand, the inverse-of-a-product formula and step [](#s1){.pf-ref} give
 \[
 (xy)^{-1}=y^{-1}x^{-1}=yx.
 \]
@@ -67,5 +81,11 @@ Therefore
 xy=yx.
 \]
 Since $x$ and $y$ were arbitrary, $G$ is abelian.
+
 :::
+
+:::
+
+:::
+
 :::

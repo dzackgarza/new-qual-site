@@ -38,30 +38,63 @@ Y\simeq L,
 \]
 where $K$ is a finite simplicial complex and $L$ is finite or countable.
 
-<1>1. For each $r\ge0$, there are only countably many simplicial maps
+::: pf
+
+::: pf-step
+
+For each $r\ge0$, there are only countably many simplicial maps
 \[
 \operatorname{sd}^rK\to L.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The complex $\operatorname{sd}^rK$ has finitely many vertices, while $L$ has at most countably many vertices. A simplicial map is determined by its map on vertices. There are only countably many maps from a finite set to a countable set, hence only countably many simplicial maps.
+
 :::
 
-<1>2. The union, over all $r\ge0$, of the sets of such simplicial maps is countable.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The union, over all $r\ge0$, of the sets of such simplicial maps is countable.
+
+::: pf-proof
+
 It is a countable union of countable sets.
+
 :::
 
-<1>3. Every homotopy class of maps $K\to L$ is represented by one of these simplicial maps.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every homotopy class of maps $K\to L$ is represented by one of these simplicial maps.
+
+::: pf-proof
+
 By the simplicial approximation theorem, every continuous map $K\to L$ is homotopic to a simplicial map after some iterated barycentric subdivision of the finite domain $K$.
+
 :::
 
-<1>4. Therefore there are at most countably many homotopy classes of maps $X\to Y$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore there are at most countably many homotopy classes of maps $X\to Y$.
+
+::: pf-proof
+
 Composition with fixed homotopy equivalences and their homotopy inverses gives a bijection
 \[
 [X,Y]\cong[K,L].
 \]
-By <1>2--<1>3 the latter set is at most countable.
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref} the latter set is at most countable.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -35,9 +35,14 @@ $$
 K_p\coloneqq\QQ(\sqrt p).
 $$
 
-<1>1. Each $K_p$ is a quadratic extension of $\QQ$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Each $K_p$ is a quadratic extension of $\QQ$.
+
+::: pf-proof
+
 A prime number $p$ is not a square in $\QQ$. Hence
 $$
 x^2-p
@@ -46,24 +51,36 @@ is irreducible over $\QQ$, so
 $$
 [K_p:\QQ]=2.
 $$
+
 :::
 
-<1>2. Every field isomorphism between two fields $K_p$ and $K_q$ fixes
+:::
+
+::: {.pf-step #s2}
+
+Every field isomorphism between two fields $K_p$ and $K_q$ fixes
 $\QQ$ pointwise.
 
-::: {.proof}
+::: pf-proof
+
 A field isomorphism sends $1$ to $1$, hence fixes the prime field $\QQ$.
+
 :::
 
-<1>3. If $p$ and $q$ are distinct primes, then $K_p$ and $K_q$ are not
+:::
+
+::: {.pf-step #s3}
+
+If $p$ and $q$ are distinct primes, then $K_p$ and $K_q$ are not
 isomorphic.
 
-::: {.proof}
+::: pf-proof
+
 Suppose that
 $$
 \varphi:K_p\longrightarrow K_q
 $$
-is a field isomorphism. By step <1>2, it fixes $\QQ$. Write
+is a field isomorphism. By step [](#s2){.pf-ref}, it fixes $\QQ$. Write
 $$
 \varphi(\sqrt p)=a+b\sqrt q,
 \qquad
@@ -79,27 +96,39 @@ Since $1$ and $\sqrt q$ are linearly independent over $\QQ$,
 $$
 2ab=0.
 $$
-If $b=0$, then $p=a^2$, contradicting step <1>1. Thus $a=0$, and therefore
+If $b=0$, then $p=a^2$, contradicting step [](#s1){.pf-ref}. Thus $a=0$, and therefore
 $$
 \frac pq=b^2.
 $$
 But the prime factorization of $p/q$ has exponent $1$ at $p$ and exponent
 $-1$ at $q$, whereas every rational square has even exponent at every
 prime. This is impossible.
+
 :::
 
-<1>4. There are infinitely many pairwise nonisomorphic quadratic extensions
+:::
+
+::: {.pf-step #s4}
+
+There are infinitely many pairwise nonisomorphic quadratic extensions
 of $\QQ$.
 
-::: {.proof}
-There are infinitely many prime numbers. By step <1>1 each prime $p$
-produces a quadratic extension $K_p$, and step <1>3 shows that extensions
+::: pf-proof
+
+There are infinitely many prime numbers. By step [](#s1){.pf-ref} each prime $p$
+produces a quadratic extension $K_p$, and step [](#s3){.pf-ref} shows that extensions
 coming from distinct primes are nonisomorphic.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required infinite family.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required infinite family.
+
+:::
+
+:::
+
 :::

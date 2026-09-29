@@ -48,14 +48,19 @@ L_j(z)
 \frac{z-s_k}{s_j-s_k}.
 $$
 
-<1>1. For every $1\leq i,j\leq N$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $1\leq i,j\leq N$,
 $$
 \bigl(P(\mathbf t,\mathbf s)C(\mathbf t,\mathbf s)Q(\mathbf s)\bigr)_{ij}
 =
 L_j(t_i).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $P$ and $Q$ are diagonal,
 $$
 \begin{aligned}
@@ -73,9 +78,14 @@ L_j(t_i).
 \end{aligned}
 $$
 All denominators are nonzero because the $2N$ numbers $s_1,\ldots,s_N,t_1,\ldots,t_N$ are distinct.
+
 :::
 
-<1>2. The Lagrange basis satisfies
+:::
+
+::: {.pf-step #s2}
+
+The Lagrange basis satisfies
 $$
 L_j(s_m)=
 \begin{cases}
@@ -84,23 +94,30 @@ L_j(s_m)=
 \end{cases}
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $m=j$, every factor in $L_j(s_j)$ equals $1$. If $m\neq j$, the factor with $k=m$ has numerator $s_m-s_m=0$.
+
 :::
 
-<1>3. Every polynomial $p$ of degree less than $N$ satisfies
+:::
+
+::: {.pf-step #s3}
+
+Every polynomial $p$ of degree less than $N$ satisfies
 $$
 p(z)=\sum_{j=1}^N p(s_j)L_j(z).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 q(z)
 \coloneqq
 \sum_{j=1}^N p(s_j)L_j(z).
 $$
-Both $p$ and $q$ have degree less than $N$. By step <1>2, for every $1\leq m\leq N$,
+Both $p$ and $q$ have degree less than $N$. By step [](#s2){.pf-ref}, for every $1\leq m\leq N$,
 $$
 q(s_m)
 =
@@ -109,23 +126,34 @@ q(s_m)
 p(s_m).
 $$
 Thus $p-q$ has degree less than $N$ and has the $N$ distinct roots $s_1,\ldots,s_N$. Hence $p-q=0$.
+
 :::
 
-<1>4. For every $1\leq i\leq N$, the $i$th coordinate of
+:::
+
+::: {.pf-step #s4}
+
+For every $1\leq i\leq N$, the $i$th coordinate of
 $$
 P(\mathbf t,\mathbf s)C(\mathbf t,\mathbf s)Q(\mathbf s)p(\mathbf s)
 $$
 equals $p(t_i)$.
 
-::: {.proof}
-By step <1>1, the $i$th coordinate is
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the $i$th coordinate is
 $$
 \sum_{j=1}^N L_j(t_i)p(s_j).
 $$
-Applying step <1>3 with $z=t_i$ gives exactly $p(t_i)$.
+Applying step [](#s3){.pf-ref} with $z=t_i$ gives exactly $p(t_i)$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 p(\mathbf t)
@@ -134,13 +162,20 @@ P(\mathbf t,\mathbf s)C(\mathbf t,\mathbf s)Q(\mathbf s)p(\mathbf s)
 }.
 $$
 
-::: {.proof}
-Step <1>4 proves equality of all $N$ coordinates.
+::: pf-proof
+
+Step [](#s4){.pf-ref} proves equality of all $N$ coordinates.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required identity.
+
+:::
+
+:::
+
 :::

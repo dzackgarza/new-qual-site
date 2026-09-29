@@ -39,12 +39,18 @@ For $(n,m)\in\mathbb Z^2$, set
 \lambda_{n,m}=1+4\pi^2(n^2+m^2).
 \]
 
-<1>1. The Fourier expansion of $u=v-\Delta v$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The Fourier expansion of $u=v-\Delta v$ is
 \[
 u(x,y)
 =\sum_{n,m\in\mathbb Z}\lambda_{n,m}a_{n,m}e^{2\pi i(nx+my)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For each Fourier mode,
 \[
 \begin{aligned}
@@ -59,29 +65,43 @@ Therefore the coefficient of the $(n,m)$ mode in $v-\Delta v$ is
 \bigl(1+4\pi^2(n^2+m^2)\bigr)a_{n,m}
 =\lambda_{n,m}a_{n,m}.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 \|u\|_{L^2([0,1]^2)}^2
 =\sum_{n,m\in\mathbb Z}\lambda_{n,m}^2|a_{n,m}|^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The functions
 \[
 e^{2\pi i(nx+my)},
 \qquad (n,m)\in\mathbb Z^2,
 \]
 are orthonormal in $L^2([0,1]^2)$.
-Applying the Pythagorean identity to the finite expansion in <1>1 gives the displayed equality.
+Applying the Pythagorean identity to the finite expansion in step [](#s1){.pf-ref} gives the displayed equality.
+
 :::
 
-<1>3. The numerical series
+:::
+
+::: {.pf-step #s3}
+
+The numerical series
 \[
 S=\sum_{n,m\in\mathbb Z}\frac1{\lambda_{n,m}^2}
 \]
 converges.
-::: {.proof}
+
+::: pf-proof
+
 Because $4\pi^2>1$,
 \[
 \lambda_{n,m}
@@ -106,14 +126,21 @@ S
 <\infty,
 \]
 since the one-dimensional series is dominated in its tails by a constant multiple of $\sum_{n\ge1}n^{-2}$.
+
 :::
 
-<1>4. For every $(x,y)\in[0,1]^2$,
+:::
+
+::: {.pf-step #s4}
+
+For every $(x,y)\in[0,1]^2$,
 \[
 |v(x,y)|
 \le \sqrt S\,\|u\|_{L^2([0,1]^2)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since the Fourier sum for $v$ is finite,
 \[
 |v(x,y)|
@@ -129,13 +156,18 @@ Insert the weights $\lambda_{n,m}$ and apply Cauchy--Schwarz:
 \left(\sum_{n,m}\frac1{\lambda_{n,m}^2}\right)^{1/2}.
 \end{aligned}
 \]
-By <1>2--<1>3, this is
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, this is
 \[
 \sqrt S\,\|u\|_2.
 \]
+
 :::
 
-<1>5. Consequently
+:::
+
+::: pf-step
+
+Consequently
 \[
 \boxed{
 \|v\|_{L^\infty([0,1]^2)}
@@ -147,8 +179,16 @@ with the constant
 C=\sqrt S
 \]
 independent of $v$.
-::: {.proof}
-Take the supremum of the pointwise estimate in <1>4 over $(x,y)\in[0,1]^2$.
-The number $S$ in <1>3 is a fixed numerical constant and does not depend on the coefficients of $v$.
+
+::: pf-proof
+
+Take the supremum of the pointwise estimate in step [](#s4){.pf-ref} over $(x,y)\in[0,1]^2$.
+The number $S$ in step [](#s3){.pf-ref} is a fixed numerical constant and does not depend on the coefficients of $v$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -25,8 +25,14 @@ C_4,\qquad C_2\times C_2.
 \]
 Both occur over $\QQ$.
 
-<1>1. The cyclic group $C_4$ occurs.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The cyclic group $C_4$ occurs.
+
+::: pf-proof
+
 The cyclotomic extension
 \[
 \QQ(\zeta_5)/\QQ
@@ -37,10 +43,17 @@ is Galois, and
 \cong (\ZZ/5\ZZ)^\times
 \cong C_4.
 \]
+
 :::
 
-<1>2. The Klein four group occurs.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Klein four group occurs.
+
+::: pf-proof
+
 The biquadratic extension
 \[
 \QQ(\sqrt2,\sqrt3)/\QQ
@@ -50,6 +63,11 @@ is Galois. Independently changing the signs of $\sqrt2$ and $\sqrt3$ gives four 
 \operatorname{Gal}(\QQ(\sqrt2,\sqrt3)/\QQ)
 \cong C_2\times C_2.
 \]
+
+:::
+
+:::
+
 :::
 
 Thus every group of order $4$ is realizable as a Galois group over $\QQ$.

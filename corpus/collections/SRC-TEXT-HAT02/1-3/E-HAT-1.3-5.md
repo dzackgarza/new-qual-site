@@ -38,11 +38,17 @@ L=\{0\}\times[0,1]
 \]
 be the left edge.
 
-<1>1. We first prove a compact local-injectivity lemma.
+::: pf
+
+::: {.pf-step #s1}
+
+We first prove a compact local-injectivity lemma.
 Let $f:E\to M$ be continuous, where $M$ is metric.
 Suppose $K\subseteq E$ is compact, $f|_K$ is injective, and every $k\in K$ has a neighborhood on which $f$ is injective.
 Then there is an open neighborhood $N$ of $K$ on which $f$ is injective.
-::: {.proof}
+
+::: pf-proof
+
 Let $d$ be a metric on $M$ and define
 \[
 g:E\times E\to\mathbb R,
@@ -96,9 +102,14 @@ If $e,e'\in N$ and $f(e)=f(e')$, then
 \]
 Hence $e,e'$ lie together in some $V_k$, where $f$ is injective, so $e=e'$.
 Thus $f|_N$ is injective.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 \[
 p:\widetilde X\to X
 \]
@@ -110,25 +121,34 @@ Then
 p|_{\widetilde L}:\widetilde L\to L
 \]
 is a homeomorphism.
-::: {.proof}
+
+::: pf-proof
+
 The lifted path is injective.
 If two distinct parameters had the same lifted point, their images under $p$ would be the same point of the injectively parametrized left edge $L$.
 Thus the lifted path is a continuous bijection from the compact interval $I$ onto $\widetilde L$.
 Since $\widetilde X$ is Hausdorff locally over the metric space $X$ along each covering sheet, this map is a homeomorphism onto its image.
 Equivalently, its inverse is simply the restriction of $p$ followed by the inverse parametrization of $L$.
+
 :::
 
-<1>3. There is an open neighborhood $N$ of $\widetilde L$ such that
+:::
+
+::: {.pf-step #s3}
+
+There is an open neighborhood $N$ of $\widetilde L$ such that
 \[
 p|_N:N\longrightarrow p(N)
 \]
 is a homeomorphism, and $p(N)$ is an open neighborhood of $L$ in $X$.
-::: {.proof}
-The set $\widetilde L$ is compact by <1>2.
-A covering map is locally a homeomorphism, hence locally injective near every point of $\widetilde L$.
-Also $p$ is injective on $\widetilde L$ by <1>2.
 
-Apply <1>1 with
+::: pf-proof
+
+The set $\widetilde L$ is compact by step [](#s2){.pf-ref}.
+A covering map is locally a homeomorphism, hence locally injective near every point of $\widetilde L$.
+Also $p$ is injective on $\widetilde L$ by step [](#s2){.pf-ref}.
+
+Apply step [](#s1){.pf-ref} with
 \[
 E=\widetilde X,
 \qquad
@@ -146,15 +166,22 @@ p|_N:N\to p(N)
 \]
 is open, hence is a homeomorphism.
 Since $p(\widetilde L)=L$, the set $p(N)$ contains $L$.
+
 :::
 
-<1>4. Every open neighborhood $U$ of $L$ in $X$ contains, for all sufficiently large $n$, the entire rectangular loop
+:::
+
+::: {.pf-step #s4}
+
+Every open neighborhood $U$ of $L$ in $X$ contains, for all sufficiently large $n$, the entire rectangular loop
 \[
 R_n
 =
 \partial\bigl([0,1/n]\times[0,1]\bigr).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The complement
 \[
 F=X\setminus U
@@ -174,10 +201,17 @@ Thus
 \[
 R_n\subseteq U.
 \]
+
 :::
 
-<1>5. The loop $R_n$ is nontrivial in $\pi_1(X)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The loop $R_n$ is nontrivial in $\pi_1(X)$.
+
+::: pf-proof
+
 Define
 \[
 \varphi_n:X\to S^1
@@ -200,13 +234,20 @@ Hence
 (\varphi_n)_*([R_n])=1\in\pi_1(S^1)\cong\mathbb Z.
 \]
 Therefore $[R_n]\ne1$ in $\pi_1(X)$.
+
 :::
 
-<1>6. The space $X$ has no simply connected covering space.
-::: {.proof}
+:::
+
+::: pf-step
+
+The space $X$ has no simply connected covering space.
+
+::: pf-proof
+
 Suppose $p:\widetilde X\to X$ were a simply connected covering.
-By <1>3, choose an open neighborhood $U=p(N)$ of $L$ that lifts homeomorphically to $N$.
-By <1>4, choose $n$ with
+By step [](#s3){.pf-ref}, choose an open neighborhood $U=p(N)$ of $L$ that lifts homeomorphically to $N$.
+By step [](#s4){.pf-ref}, choose $n$ with
 \[
 R_n\subseteq U.
 \]
@@ -218,8 +259,14 @@ The loop $R_n$ therefore has the closed lift
 in $\widetilde X$.
 Since $\widetilde X$ is simply connected, $\widetilde R_n$ is nullhomotopic.
 Composing a nullhomotopy with $p$ shows that $R_n$ is nullhomotopic in $X$.
-This contradicts <1>5.
+This contradicts step [](#s5){.pf-ref}.
 
 Hence no simply connected covering of $X$ exists.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -45,7 +45,11 @@ $$
 F(t,z)\coloneqq f_t(z).
 $$
 
-<1>1. For every fixed $t\in\Delta$, the zeros of $f_t$ in the unit
+::: pf
+
+::: {.pf-step #s1}
+
+For every fixed $t\in\Delta$, the zeros of $f_t$ in the unit
 disk are finite in number, counted without multiplicity, and
 $$
 N_k(t)
@@ -55,7 +59,8 @@ N_k(t)
 z^k\frac{\partial_zF(t,z)}{F(t,z)}\,dz.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $f_t$ is not identically zero because it is nonvanishing on
 $|z|=1$. Hence its zeros are isolated. Since it has no zero on the unit
 circle, its zeros in the closed unit disk form a finite set.
@@ -93,16 +98,22 @@ z^k\frac{f_t'(z)}{f_t(z)}\,dz
 =
 N_k(t).
 $$
+
 :::
 
-<1>2. Fix $t_0\in\Delta$. There is an open disk $U$ about $t_0$ and
+:::
+
+::: {.pf-step #s2}
+
+Fix $t_0\in\Delta$. There is an open disk $U$ about $t_0$ and
 a number $c>0$ such that
 $$
 |F(t,z)|\ge c
 $$
 for every $t\in U$ and every $|z|=1$.
 
-::: {.proof}
+::: pf-proof
+
 By hypothesis,
 $$
 F(t_0,z)\ne0
@@ -130,9 +141,14 @@ $$
 \frac m2.
 $$
 Taking $c=m/2$ proves the claim.
+
 :::
 
-<1>3. On $U$, the function
+:::
+
+::: {.pf-step #s3}
+
+On $U$, the function
 $$
 H(t)
 \coloneqq
@@ -142,8 +158,9 @@ z^k\frac{\partial_zF(t,z)}{F(t,z)}\,dz
 $$
 is holomorphic.
 
-::: {.proof}
-By step <1>2, the denominator does not vanish on
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the denominator does not vanish on
 $$
 U\times\{|z|=1\}.
 $$
@@ -178,23 +195,35 @@ $$
 The inner integral is zero by Cauchy's theorem because
 $t\mapsto G(t,z)$ is holomorphic on $U$. Morera's theorem therefore
 implies that $H$ is holomorphic on $U$.
+
 :::
 
-<1>4. The function $N_k$ is analytic on $\Delta$.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #s4}
+
+The function $N_k$ is analytic on $\Delta$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 N_k(t)=H(t)
 $$
-for every $t$. Step <1>3 shows that this function is holomorphic on a
+for every $t$. Step [](#s3){.pf-ref} shows that this function is holomorphic on a
 neighborhood of the arbitrary point $t_0\in\Delta$. Since $t_0$ was
 arbitrary, $N_k$ is holomorphic on all of $\Delta$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the required conclusion for every $k\ge0$.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is exactly the required conclusion for every $k\ge0$.
+
+:::
+
+:::
+
 :::

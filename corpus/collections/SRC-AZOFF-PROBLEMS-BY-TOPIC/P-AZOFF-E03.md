@@ -31,17 +31,29 @@ Suppose $D$ is a domain and $f$ and $g$ are analytic functions on $D$. Prove tha
 :::
 
 ::: {.solution}
-<1>1. If $f$ vanishes identically on $D$, then the required conclusion
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $f$ vanishes identically on $D$, then the required conclusion
 holds.
 
-::: {.proof}
+::: pf-proof
+
 This is one of the two alternatives in the conclusion.
+
 :::
 
-<1>2. Suppose $f$ does not vanish identically on $D$. Then there is a
+:::
+
+::: {.pf-step #s2}
+
+Suppose $f$ does not vanish identically on $D$. Then there is a
 nonempty open set $U\subseteq D$ on which $g$ vanishes.
 
-::: {.proof}
+::: pf-proof
+
 Choose $z_0\in D$ with $f(z_0)\neq0$. Since $f$ is continuous, there is an
 open neighborhood $U\subseteq D$ of $z_0$ such that
 $$
@@ -56,26 +68,44 @@ $$
 g(z)=0
 $$
 for every $z\in U$.
+
 :::
 
-<1>3. Under the hypothesis of step <1>2, $g$ vanishes identically on $D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Under the hypothesis of step [](#s2){.pf-ref}, $g$ vanishes identically on $D$.
+
+::: pf-proof
+
 The analytic function $g$ vanishes on the nonempty open subset $U$ of the
 domain $D$. Since a domain is connected, the identity theorem implies that
 $g$ vanishes identically on $D$.
+
 :::
 
-<1>4. Either $f$ or $g$ vanishes identically on $D$.
+:::
 
-::: {.proof}
-If $f$ vanishes identically, step <1>1 applies. Otherwise step <1>3 shows
+::: {.pf-step #s4}
+
+Either $f$ or $g$ vanishes identically on $D$.
+
+::: pf-proof
+
+If $f$ vanishes identically, step [](#s1){.pf-ref} applies. Otherwise step [](#s3){.pf-ref} shows
 that $g$ vanishes identically.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

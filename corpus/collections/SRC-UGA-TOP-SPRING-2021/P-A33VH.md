@@ -49,8 +49,15 @@ Give an example in which $A$ is closed, $B$ is compact, and $d(a, b) > d(A, B)$ 
 :::
 
 ::: {.solution}
-<1>1. If $A$ and $B$ are compact, then the setwise distance $d(A,B)$ is attained.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $A$ and $B$ are compact, then the setwise distance $d(A,B)$ is attained.
+
+::: pf-proof
+
 The product $A\times B$ is compact.
 By the allowed continuity of the metric map,
 \[
@@ -71,10 +78,17 @@ d(a_0,b_0)
 =d(A,B).
 \]
 This proves part (a).
+
 :::
 
-<1>2. Suppose $A$ is closed, $B$ is compact, and $d(A,B)=0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Suppose $A$ is closed, $B$ is compact, and $d(A,B)=0$.
+
+::: pf-proof
+
 For each positive integer $n$, the definition of infimum gives points
 \[
 a_n\in A,
@@ -106,10 +120,17 @@ Since also $b\in B$,
 b\in A\cap B.
 \]
 Therefore $A\cap B\ne\emptyset$, proving part (b).
+
 :::
 
-<1>3. The conclusion of part (a) can fail when only $B$ is compact.
-::: {.proof}
+:::
+
+::: pf-step
+
+The conclusion of part (a) can fail when only $B$ is compact.
+
+::: pf-proof
+
 Use the suggested metric subspace
 \[
 X=\{0\}\cup(1,2]\subset\RR
@@ -141,5 +162,11 @@ d(a,b)>d(A,B)
 \]
 for every $a\in A$ and $b\in B$.
 This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

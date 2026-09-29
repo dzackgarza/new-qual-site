@@ -72,8 +72,15 @@ then
 :::
 
 ::: {.solution}
-<1>1. $C(I)$ is not complete in the $L^p$ norm for finite $p$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$C(I)$ is not complete in the $L^p$ norm for finite $p$.
+
+::: pf-proof
+
 Let
 \[
 f=\mathbf1_{[0,1/2]}.
@@ -83,10 +90,17 @@ Choose continuous functions $f_n$ which equal $1$ on $[0,1/2-1/n]$, equal $0$ on
 \|f_n-f\|_p^p\le \frac{2}{n}\longrightarrow0.
 \]
 Thus $(f_n)$ is Cauchy in $C(I)$ with the $L^p$ norm. If it converged in that norm to some $g\in C(I)$, uniqueness of $L^p$ limits would give $g=f$ almost everywhere. Continuity would then force $g=1$ on $[0,1/2)$ and $g=0$ on $(1/2,1]$, impossible at $1/2$. Hence $C(I)$ is not complete.
+
 :::
 
-<1>2. $L^p(I)$ is complete.
-::: {.proof}
+:::
+
+::: pf-step
+
+$L^p(I)$ is complete.
+
+::: pf-proof
+
 First let $1\le p<\infty$ and let $(f_n)$ be Cauchy in $L^p$. Choose a subsequence $(f_{n_k})$ such that
 \[
 \|f_{n_{k+1}}-f_{n_k}\|_p\le2^{-k}.
@@ -118,10 +132,17 @@ and Minkowski gives
 Since the original sequence is Cauchy, it follows that $f_n\to f$ in $L^p$.
 
 For $p=\infty$, if $(f_n)$ is Cauchy in essential-supremum norm, choose representatives after discarding the countable union of null exceptional sets in the Cauchy estimates. Off that null set, $(f_n(x))$ is uniformly Cauchy, hence converges uniformly to a bounded measurable $f$, and $\|f_n-f\|_\infty\to0$. Thus $L^\infty(I)$ is complete as well.
+
 :::
 
-<1>3. There is no smooth convolution identity on $L^1([0,1])$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is no smooth convolution identity on $L^1([0,1])$.
+
+::: pf-proof
+
 Suppose $h\in C^\infty(\mathbb R)$ satisfied the stated identity for every $f\in L^1([0,1])$. Fix such an $f$. The displayed convolution is finite for every $x\in[0,1]$, since $h$ is bounded on $[-1,1]$, and is unchanged by replacing $f$ on a null set. Define
 $$
 \omega_h(\delta)=\sup\{|h(s)-h(t)|:s,t\in[-1,1],\ |s-t|\leq\delta\}.
@@ -146,10 +167,17 @@ f(x)=(f*h)(x)
 \qquad\text{for almost every }x\in[0,1],
 \]
 while the right-hand side is continuous. Any continuous function equal to this indicator almost everywhere must equal one throughout $(0,1/2)$ and zero throughout $(1/2,1)$: a different value would persist on an interval of positive measure. These two values contradict continuity at $1/2$. Hence no smooth $h$ can act as the identity convolution kernel on all of $L^1([0,1])$, even with equality required only almost everywhere.
+
 :::
 
-<1>4. Hölder's inequality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Hölder's inequality.
+
+::: pf-proof
+
 The endpoint cases $p=1,q=\infty$ and $p=\infty,q=1$ are immediate. Assume $1<p,q<\infty$ and $1/p+1/q=1$. If either norm vanishes there is nothing to prove, so normalize
 \[
 F=\frac{|f|}{\|f\|_p},
@@ -170,10 +198,17 @@ Multiplying back by the norms yields
 \[
 \int_I|fg|\le\|f\|_p\|g\|_q.
 \]
+
 :::
 
-<1>5. Young's convolution inequality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Young's convolution inequality.
+
+::: pf-proof
+
 If $r=\infty$, then $1/p+1/q=1$, so Hölder gives directly
 \[
 |(f*g)(x)|\le\|f\|_p\|g\|_q.
@@ -218,5 +253,11 @@ Taking $r$th roots proves
 \[
 \|f*g\|_r\le\|f\|_p\|g\|_q.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

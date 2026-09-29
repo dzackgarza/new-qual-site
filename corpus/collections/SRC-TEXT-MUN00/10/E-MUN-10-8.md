@@ -33,9 +33,14 @@ $$
 The generalization asked for in (b) is: $(A,<)$ is well-ordered.
 Part (a) is the case $J=\{1,2\}$ with $1<_J2$, where the relation above is the order defined in (a).
 
-<1>1. The relation $<$ is a simple order on $A$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The relation $<$ is a simple order on $A$.
+
+::: pf-proof
+
 Let $a,b\in A$ with $\alpha=\iota(a)$ and $\beta=\iota(b)$.
 If $\alpha\ne\beta$, exactly one of $\alpha<_J\beta$ and $\beta<_J\alpha$ holds, so exactly one of $a<b$ and $b<a$ holds, and $a\ne b$.
 If $\alpha=\beta$, exactly one of $a<_\alpha b$, $b<_\alpha a$, $a=b$ holds, and these are exactly $a<b$, $b<a$, $a=b$.
@@ -45,11 +50,17 @@ For transitivity let $a<b$ and $b<c$ with $\gamma=\iota(c)$.
 Then $\alpha\le_J\beta\le_J\gamma$.
 If $\alpha<_J\gamma$, then $a<c$.
 Otherwise $\alpha=\beta=\gamma$, so $a<_\alpha b<_\alpha c$, hence $a<_\alpha c$ and $a<c$.
+
 :::
 
-<1>2. Every nonempty subset $S\subseteq A$ has a smallest element.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every nonempty subset $S\subseteq A$ has a smallest element.
+
+::: pf-proof
+
 The set $J_0=\{\alpha\in J : S\cap A_\alpha\ne\varnothing\}$ is nonempty because $S$ is, so it has a least element $\alpha_0$.
 The nonempty subset $S\cap A_{\alpha_0}$ of the well-ordered set $A_{\alpha_0}$ has a least element $m_0$.
 Let $s\in S$ and $\beta=\iota(s)$.
@@ -57,11 +68,17 @@ Then $\beta\in J_0$, so $\alpha_0\le_J\beta$.
 If $\alpha_0<_J\beta$, then $m_0<s$.
 If $\alpha_0=\beta$, then $s\in S\cap A_{\alpha_0}$, so $m_0\le_{\alpha_0}s$ and $m_0\le s$.
 Hence $m_0$ is the smallest element of $S$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 show that $(A,<)$ is well-ordered, which is (b); taking $J=\{1,2\}$ gives (a).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that $(A,<)$ is well-ordered, which is (b); taking $J=\{1,2\}$ gives (a).
+
+:::
+
+:::
+
 :::

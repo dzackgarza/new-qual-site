@@ -47,12 +47,17 @@ $$
 p(t)=t^3-t-1\in\QQ[t].
 $$
 
-<1>1. The vector $x$ satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The vector $x$ satisfies
 $$
 p(T)x=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using the given relations,
 $$
 \begin{aligned}
@@ -72,15 +77,21 @@ $$
 (T^3-T-I)x=0,
 $$
 which is exactly $p(T)x=0$.
+
 :::
 
-<1>2. The polynomial
+:::
+
+::: {.pf-step #s2}
+
+The polynomial
 $$
 p(t)=t^3-t-1
 $$
 is irreducible over $\QQ$.
 
-::: {.proof}
+::: pf-proof
+
 A reducible cubic over a field has a linear factor and therefore a root in
 that field. By the rational root theorem, any rational root of the monic
 integer polynomial $p$ must be an integer divisor of $1$, hence must be
@@ -91,9 +102,14 @@ p(1)=-1
 p(-1)=-1.
 $$
 Thus $p$ has no rational root and is irreducible over $\QQ$.
+
 :::
 
-<1>3. Suppose, toward a contradiction, that $x,y,z$ are linearly
+:::
+
+::: {.pf-step #s3}
+
+Suppose, toward a contradiction, that $x,y,z$ are linearly
 dependent. Then there is a nonzero polynomial
 $$
 q(t)=a+bt+ct^2\in\QQ[t]
@@ -103,7 +119,8 @@ $$
 q(T)x=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Linear dependence gives rational numbers $a,b,c$, not all zero, with
 $$
 ax+by+cz=0.
@@ -119,36 +136,54 @@ $$
 (aI+bT+cT^2)x=0.
 $$
 This is $q(T)x=0$ for the displayed nonzero polynomial $q$.
+
 :::
 
-<1>4. The polynomials $p$ and $q$ from steps <1>2--<1>3 are relatively
+:::
+
+::: {.pf-step #s4}
+
+The polynomials $p$ and $q$ from steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are relatively
 prime in $\QQ[t]$.
 
-::: {.proof}
-The polynomial $p$ is irreducible of degree $3$ by step <1>2, while
+::: pf-proof
+
+The polynomial $p$ is irreducible of degree $3$ by step [](#s2){.pf-ref}, while
 $q\neq0$ has degree at most $2$. Thus $p$ cannot divide $q$. Since every
 nonunit divisor of the irreducible polynomial $p$ is associated to $p$
 itself, the greatest common divisor of $p$ and $q$ is $1$ up to a unit.
+
 :::
 
-<1>5. There are polynomials $r,s\in\QQ[t]$ such that
+:::
+
+::: {.pf-step #s5}
+
+There are polynomials $r,s\in\QQ[t]$ such that
 $$
 r(t)p(t)+s(t)q(t)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomial ring $\QQ[t]$ is a Euclidean domain. By Bezout's identity
-and step <1>4, relatively prime polynomials $p$ and $q$ admit the displayed
+and step [](#s4){.pf-ref}, relatively prime polynomials $p$ and $q$ admit the displayed
 linear combination.
+
 :::
 
-<1>6. The dependence assumption in step <1>3 forces
+:::
+
+::: {.pf-step #s6}
+
+The dependence assumption in step [](#s3){.pf-ref} forces
 $$
 x=0.
 $$
 
-::: {.proof}
-Substitute the operator $T$ into the identity from step <1>5 and apply it
+::: pf-proof
+
+Substitute the operator $T$ into the identity from step [](#s5){.pf-ref} and apply it
 to $x$:
 $$
 \begin{aligned}
@@ -159,25 +194,37 @@ x
 r(T)p(T)x+s(T)q(T)x.
 \end{aligned}
 $$
-Step <1>1 gives $p(T)x=0$, and step <1>3 gives $q(T)x=0$. Therefore the
+Step [](#s1){.pf-ref} gives $p(T)x=0$, and step [](#s3){.pf-ref} gives $q(T)x=0$. Therefore the
 right-hand side is zero, so $x=0$.
+
 :::
 
-<1>7. The vectors $x,y,z$ are linearly independent:
+:::
+
+::: {.pf-step #s7}
+
+The vectors $x,y,z$ are linearly independent:
 $$
 \boxed{
 x,\ y,\ z\text{ are linearly independent over }\QQ.
 }
 $$
 
-::: {.proof}
-Step <1>6 contradicts the hypothesis $x\neq0$. Hence the dependence
-assumption in step <1>3 is false.
+::: pf-proof
+
+Step [](#s6){.pf-ref} contradicts the hypothesis $x\neq0$. Hence the dependence
+assumption in step [](#s3){.pf-ref} is false.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

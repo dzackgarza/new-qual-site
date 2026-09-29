@@ -34,7 +34,6 @@ Let $P$ be a nonconstant complex polynomial. Show that every zero of $P'$ lies
 in the convex hull of the zeros of $P$.
 :::
 
-
 ::: {.remark}
 The nonconstant hypothesis is necessary. For $P=1$, the
 derivative is identically zero and vanishes at every
@@ -53,15 +52,28 @@ It is nonempty and compact: it is the continuous image
 of the nonempty closed, bounded simplex of the coefficient
 vectors $(t_1,\ldots,t_n)$ in $\mathbb R^n$.
 
-<1>1. A critical point that is itself a zero of $P$ already lies in $K$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A critical point that is itself a zero of $P$ already lies in $K$.
+
+::: pf-proof
+
 If $w$ satisfies $P'(w)=0$ and also $P(w)=0$, then $w$ is one of the zeros used
 to form the convex hull $K$. Hence $w\in K$. It remains only to consider a
 critical point $w$ with $P(w)\ne0$.
+
 :::
 
-<1>2. A point outside $K$ admits a direction in which every vector from a root to that point has positive real projection.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A point outside $K$ admits a direction in which every vector from a root to that point has positive real projection.
+
+::: pf-proof
+
 Suppose $w\notin K$. The set $K$ is compact and convex, so there is a point
 $q\in K$ minimizing $|w-q|$. Put $v=w-q\ne0$.
 
@@ -81,10 +93,17 @@ $$
 \ge |v|^2>0.
 $$
 In particular this holds for every zero $\zeta$ of $P$.
+
 :::
 
-<1>3. The logarithmic derivative rules out a critical point outside $K$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The logarithmic derivative rules out a critical point outside $K$.
+
+::: pf-proof
+
 Factor
 $$
 P(z)=c\prod_{j=1}^n(z-\zeta_j),
@@ -94,7 +113,7 @@ $w$ with $P(w)\ne0$,
 $$
 \frac{P'(w)}{P(w)}=\sum_{j=1}^n\frac1{w-\zeta_j}.
 $$
-If in addition $w\notin K$, step <1>2 gives for every $j$
+If in addition $w\notin K$, step [](#s2){.pf-ref} gives for every $j$
 $$
 \operatorname{Re}\left(\frac{v}{w-\zeta_j}\right)
 =\frac{\operatorname{Re}\bigl(v\overline{(w-\zeta_j)}\bigr)}{|w-\zeta_j|^2}>0.
@@ -107,7 +126,13 @@ v\frac{P'(w)}{P(w)}\right)
 \operatorname{Re}\left(\frac{v}{w-\zeta_j}\right)>0.
 $$
 This is impossible if $P'(w)=0$. Thus no zero of $P'$ lying outside the root
-set of $P$ can be outside $K$. Together with step <1>1, every zero of $P'$ lies
+set of $P$ can be outside $K$. Together with step [](#s1){.pf-ref}, every zero of $P'$ lies
 in the convex hull of the zeros of $P$.
+
 :::
+
+:::
+
+:::
+
 :::

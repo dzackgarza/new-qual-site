@@ -49,8 +49,15 @@ Here $B_r(x)$ is the ball of radius $r$ at $x$.
 :::
 
 ::: {.solution}
-<1>1. Part (a) is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is true.
+
+::: pf-proof
+
 For each fixed $x\in X$, the sequence $(T_nx)$ converges in $Y$, hence is bounded. Therefore
 \[
 \sup_n\|T_nx\|_Y<\infty
@@ -67,10 +74,17 @@ The pointwise limit $T$ is linear, and for every $x\in X$,
 \le M\|x\|_X.
 \]
 Hence $T\in L(X,Y)$.
+
 :::
 
-<1>2. Part (b) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is false.
+
+::: pf-proof
+
 Take $X=[0,1]$ with Lebesgue measure, $f\equiv0$, and for $n\ge2$ define
 \[
 f_n(x)
@@ -88,10 +102,17 @@ However,
 =2
 \]
 for every $n$. Hence $f_n$ does not converge to $f$ in $L^1$.
+
 :::
 
-<1>3. Part (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is true.
+
+::: pf-proof
+
 By Tychonoff's theorem,
 \[
 K:=\prod_{\alpha\in A}X_\alpha
@@ -102,10 +123,17 @@ If $E\subset K$ is closed, then $E$ is compact as a closed subset of the compact
 \[
 \boxed{E\text{ is compact }\Longleftrightarrow E\text{ is closed}.}
 \]
+
 :::
 
-<1>4. Part (d) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is false.
+
+::: pf-proof
+
 Let $(r_n)$ be the Rademacher functions on $[0,1]$, for example
 \[
 r_n(x)=\operatorname{sgn}(\sin(2^n\pi x))
@@ -123,10 +151,17 @@ r_{n_k}(x)=1\qquad\text{for all }k\ge N
 has measure $0$: for every $m\ge N$, the set where the first $m-N+1$ of these signs are all $1$ has measure $2^{-(m-N+1)}$, and these sets decrease as $m\to\infty$. The same is true with $-1$ in place of $1$.
 
 Since a sequence taking only the values $\pm1$ can converge only if it is eventually constant, the set on which $(r_{n_k}(x))$ converges has measure $0$. Thus no subsequence converges pointwise almost everywhere to $0$.
+
 :::
 
-<1>5. Part (e) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (e) is true.
+
+::: pf-proof
+
 Because $\mu\ll m$, the Radon--Nikodym theorem gives a nonnegative
 \[
 h\in L^1(\mathbb R^n)
@@ -147,5 +182,11 @@ By hypothesis this limit is $0$ almost everywhere, so $h=0$ almost everywhere. H
 \mu(E)=\int_Eh\,dm=0
 \]
 for every Borel set $E$, and therefore $\mu\equiv0$.
+
 :::
+
+:::
+
+:::
+
 :::

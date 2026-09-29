@@ -60,7 +60,11 @@ $$
 \widehat a=(\widehat a_0,\ldots,\widehat a_n).
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 F(\widehat a,\widehat z)=0
 $$
@@ -69,7 +73,8 @@ $$
 \frac{\partial F}{\partial z}(\widehat a,\widehat z)\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first equality says exactly that $\widehat z$ is a root of the
 reference polynomial. Since that root is simple, the derivative of the
 reference polynomial does not vanish there:
@@ -81,9 +86,14 @@ j\widehat a_j\widehat z^{\,j-1}
 $$
 This sum is $\partial F/\partial z$ at
 $(\widehat a,\widehat z)$.
+
 :::
 
-<1>2. Regard
+:::
+
+::: {.pf-step #s2}
+
+Regard
 $$
 F:\CC^{n+1}\times\CC\longrightarrow\CC
 $$
@@ -94,12 +104,13 @@ $$
 Its real derivative with respect to the final $\RR^2$ variable is
 invertible at $(\widehat a,\widehat z)$.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 c=\frac{\partial F}{\partial z}(\widehat a,\widehat z).
 $$
-By step <1>1, $c\neq0$. Because $F$ is holomorphic in $z$, its real
+By step [](#s1){.pf-ref}, $c\neq0$. Because $F$ is holomorphic in $z$, its real
 differential in the $z$ variable is multiplication by the complex number
 $c$. If
 $$
@@ -121,9 +132,14 @@ u^2+v^2
 0.
 $$
 Hence this real derivative is invertible.
+
 :::
 
-<1>3. There are neighborhoods
+:::
+
+::: {.pf-step #s3}
+
+There are neighborhoods
 $$
 U\subset\CC^{n+1}
 \quad\text{of }\widehat a
@@ -146,18 +162,24 @@ $$
 r(\widehat a)=\widehat z.
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 F(\widehat a,\widehat z)=0,
 $$
-and step <1>2 gives invertibility of the derivative in the $z$ variable.
+and step [](#s2){.pf-ref} gives invertibility of the derivative in the $z$ variable.
 The real implicit function theorem therefore applies to $F$ at
 $(\widehat a,\widehat z)$ and gives the stated neighborhoods and function
 $r$.
+
 :::
 
-<1>4. For every
+:::
+
+::: {.pf-step #s4}
+
+For every
 $$
 a=(a_0,\ldots,a_n)\in U,
 $$
@@ -166,8 +188,9 @@ $$
 a_0+a_1z+\cdots+a_nz^n.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 0
 =
@@ -177,9 +200,14 @@ F(a,r(a))
 $$
 This is precisely the assertion that $r(a)$ is a root of the polynomial
 with coefficient vector $a$.
+
 :::
 
-<1>5. The function
+:::
+
+::: {.pf-step #s5}
+
+The function
 $$
 \boxed{
 r:U\longrightarrow\CC
@@ -187,18 +215,25 @@ r:U\longrightarrow\CC
 $$
 has all the required properties.
 
-::: {.proof}
-Step <1>3 says that $r$ is $C^1$, hence continuous, and that
+::: pf-proof
+
+Step [](#s3){.pf-ref} says that $r$ is $C^1$, hence continuous, and that
 $$
 r(\widehat a)=\widehat z.
 $$
-Step <1>4 says that $r(a)$ is always a root of the polynomial with
+Step [](#s4){.pf-ref} says that $r(a)$ is always a root of the polynomial with
 coefficients $a$. These are exactly the requested properties.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the statement.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the statement.
+
+:::
+
+:::
+
 :::

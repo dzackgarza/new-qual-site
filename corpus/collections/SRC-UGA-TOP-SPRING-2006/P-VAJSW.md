@@ -36,21 +36,34 @@ Prove that every compact, Hausdorff topological space is normal.
 ::: {.solution}
 Let $F,G\subseteq X$ be disjoint closed subsets of a compact Hausdorff space $X$.
 
-<1>1. It suffices to consider the case in which both $F$ and $G$ are nonempty, and in that case both are compact.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+It suffices to consider the case in which both $F$ and $G$ are nonempty, and in that case both are compact.
+
+::: pf-proof
+
 If one of $F,G$ is empty, then $\varnothing$ and $X$ are disjoint open neighborhoods of the two sets in the appropriate order.
 
 Now assume $F,G\ne\varnothing$.
 Since $F$ and $G$ are closed subsets of the compact space $X$, each is compact.
+
 :::
 
-<1>2. For every $x\in F$ there are disjoint open sets $U_x,V_x\subseteq X$ such that
+:::
+
+::: {.pf-step #s2}
+
+For every $x\in F$ there are disjoint open sets $U_x,V_x\subseteq X$ such that
 \[
 x\in U_x
 \qquad\text{and}\qquad
 G\subseteq V_x.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Fix $x\in F$.
 For each $y\in G$, Hausdorffness gives disjoint open neighborhoods
 \[
@@ -77,16 +90,23 @@ This contradicts
 U_{x,y_i}\cap V_{x,y_i}=\varnothing.
 \]
 Thus $U_x\cap V_x=\varnothing$.
+
 :::
 
-<1>3. There are disjoint open sets $U,V\subseteq X$ with
+:::
+
+::: {.pf-step #s3}
+
+There are disjoint open sets $U,V\subseteq X$ with
 \[
 F\subseteq U,
 \qquad
 G\subseteq V.
 \]
-::: {.proof}
-The sets $\{U_x:x\in F\}$ from <1>2 form an open cover of the compact set $F$.
+
+::: pf-proof
+
+The sets $\{U_x:x\in F\}$ from step [](#s2){.pf-ref} form an open cover of the compact set $F$.
 Choose $x_1,\ldots,x_m\in F$ such that
 \[
 F\subseteq\bigcup_{j=1}^m U_{x_j}.
@@ -102,11 +122,24 @@ Both are open; $F\subseteq U$; and, since $G\subseteq V_{x_j}$ for every $j$, on
 If $z\in U\cap V$, then $z\in U_{x_j}$ for some $j$, while $z\in V\subseteq V_{x_j}$.
 This contradicts $U_{x_j}\cap V_{x_j}=\varnothing$.
 Hence $U\cap V=\varnothing$.
+
 :::
 
-<1>4. Therefore $X$ is normal.
-::: {.proof}
-The disjoint closed subsets $F,G$ were arbitrary, and <1>3 gives disjoint open neighborhoods of them.
-This is the normality condition.
 :::
+
+::: pf-step
+
+Therefore $X$ is normal.
+
+::: pf-proof
+
+The disjoint closed subsets $F,G$ were arbitrary, and step [](#s3){.pf-ref} gives disjoint open neighborhoods of them.
+This is the normality condition.
+
+:::
+
+:::
+
+:::
+
 :::

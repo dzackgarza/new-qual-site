@@ -28,8 +28,15 @@ Prove that $M\cong R/(a)$ as an $R$-module for some $a\in R$.
 :::
 
 ::: {.solution}
-<1>1. A chosen cyclic generator gives a surjective homomorphism from $R$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+A chosen cyclic generator gives a surjective homomorphism from $R$.
+
+::: pf-proof
+
 Since $M$ is cyclic, choose $m\in M$ with
 $$
 M=Rm.
@@ -41,10 +48,17 @@ $$
 \Phi(r)=rm.
 $$
 This is an $R$-module homomorphism. It is surjective because every element of $M$ has the form $rm$.
+
 :::
 
-<1>2. The kernel is principal, so the first isomorphism theorem gives the result.
-::: {.proof}
+:::
+
+::: pf-step
+
+The kernel is principal, so the first isomorphism theorem gives the result.
+
+::: pf-proof
+
 The kernel
 $$
 \ker\Phi=\{r\in R:rm=0\}
@@ -58,5 +72,11 @@ $$
 R/(a)=R/\ker\Phi\cong\operatorname{im}\Phi=M.
 $$
 This also covers the zero module: then one may take $a=1$.
+
 :::
+
+:::
+
+:::
+
 :::

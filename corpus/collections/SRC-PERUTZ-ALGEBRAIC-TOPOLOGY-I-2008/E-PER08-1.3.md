@@ -29,13 +29,19 @@ Show that any convex subset of $\mathbb R^n$ is contractible.
 ::: {.solution}
 Let $C\subseteq\mathbb R^n$ be convex. If $C=\varnothing$, there is nothing to prove under the usual convention that contractibility is defined for nonempty spaces. Assume therefore that $C\neq\varnothing$, and choose $x_0\in C$.
 
-<1>1. Define the straight-line homotopy
+::: pf
+
+::: pf-step
+
+Define the straight-line homotopy
 \[
 H:[0,1]\times C\to C,
 \qquad
 H(t,x)=(1-t)x_0+tx.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For every $t\in[0,1]$ and $x\in C$, the point $(1-t)x_0+tx$ is a convex combination of $x_0$ and $x$. Since $C$ is convex,
 \[
 (1-t)x_0+tx\in C.
@@ -46,10 +52,17 @@ Thus $H$ is well defined. It is continuous because it is the restriction of the 
 \qquad
 (t,x)\mapsto(1-t)x_0+tx.
 \]
+
 :::
 
-<1>2. The homotopy $H$ joins the constant map at $x_0$ to the identity.
-::: {.proof}
+:::
+
+::: pf-step
+
+The homotopy $H$ joins the constant map at $x_0$ to the identity.
+
+::: pf-proof
+
 For every $x\in C$,
 \[
 H(0,x)=x_0=c_{x_0}(x)
@@ -62,6 +75,11 @@ Hence
 \[
 c_{x_0}\simeq\operatorname{id}_C.
 \]
+
+:::
+
+:::
+
 :::
 
 A nonempty space whose identity map is homotopic to a constant map is contractible ([[E-PER08-1.2]]), so $C$ is contractible.

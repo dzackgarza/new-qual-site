@@ -41,8 +41,15 @@ Decide which is which, prove the true statement, and provide a counterexample to
 :::
 
 ::: {.solution}
-<1>1. The statement “if $A$ is compact, then $f(A)$ is compact” is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The statement “if $A$ is compact, then $f(A)$ is compact” is true.
+
+::: pf-proof
+
 Let
 \[
 f(A)\subseteq\bigcup_{\lambda\in\Lambda}U_\lambda
@@ -70,10 +77,17 @@ f(A)\subseteq
 U_{\lambda_1}\cup\cdots\cup U_{\lambda_m}.
 \]
 Thus every open cover of $f(A)$ has a finite subcover, so $f(A)$ is compact.
+
 :::
 
-<1>2. The statement “if $A$ is closed, then $f(A)$ is closed” is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+The statement “if $A$ is closed, then $f(A)$ is closed” is false.
+
+::: pf-proof
+
 Take
 \[
 X=Y=\RR,
@@ -93,5 +107,11 @@ x=\sqrt{\frac1y-1}.
 \]
 But $(0,1]$ is not closed in $\RR$, since $0$ belongs to its closure but not to the set itself.
 Hence a continuous map need not send closed sets to closed sets.
+
 :::
+
+:::
+
+:::
+
 :::

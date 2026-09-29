@@ -29,8 +29,15 @@ Prove that the strict inequality $|\hat{f}(\xi)| < \hat{f}(0)$ holds for any $\x
 :::
 
 ::: {.solution}
-<1>1. $|\widehat f(\xi)|\le\widehat f(0)$ for every $\xi\in\mathbb R^n$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$|\widehat f(\xi)|\le\widehat f(0)$ for every $\xi\in\mathbb R^n$.
+
+::: pf-proof
+
 Since $f>0$ and $f\in L^1(\mathbb R^n)$,
 \[
 \widehat f(0)=\int_{\mathbb R^n}f(x)\,dx>0.
@@ -43,10 +50,17 @@ For any $\xi$,
 =\widehat f(0).
 \]
 The normalization $e^{-2\pi i x\cdot\xi}$ changes only the phase factor, and the same estimate holds.
+
 :::
 
-<1>2. If $\xi\ne0$ and $|\widehat f(\xi)|=\widehat f(0)$, then there is $c\in\mathbb C$ with $|c|=1$ and $e^{-ix\cdot\xi}=c$ for almost every $x$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $\xi\ne0$ and $|\widehat f(\xi)|=\widehat f(0)$, then there is $c\in\mathbb C$ with $|c|=1$ and $e^{-ix\cdot\xi}=c$ for almost every $x$.
+
+::: pf-proof
+
 Suppose for contradiction that $\xi\ne0$ and
 \[
 |\widehat f(\xi)|=\widehat f(0).
@@ -77,19 +91,32 @@ for almost every $x$. Hence
 e^{-ix\cdot\xi}=c
 \]
 for almost every $x$.
+
 :::
 
-<1>3. For $\xi\ne0$ and $|c|=1$, the function $x\mapsto e^{-ix\cdot\xi}$ is not equal to $c$ almost everywhere; hence $|\widehat f(\xi)|<\widehat f(0)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+For $\xi\ne0$ and $|c|=1$, the function $x\mapsto e^{-ix\cdot\xi}$ is not equal to $c$ almost everywhere; hence $|\widehat f(\xi)|<\widehat f(0)$.
+
+::: pf-proof
+
 For fixed $\xi\ne0$ and fixed $c\in\mathbb C$ with $|c|=1$, the set
 \[
 \{x\in\mathbb R^n:e^{-ix\cdot\xi}=c\}
 \]
 is a countable union of affine hyperplanes perpendicular to $\xi$. It therefore has Lebesgue measure zero.
 
-Thus the phase cannot equal the constant $c$ almost everywhere. By step <1>2, equality $|\widehat f(\xi)|=\widehat f(0)$ is therefore impossible for $\xi\ne0$, and step <1>1 gives
+Thus the phase cannot equal the constant $c$ almost everywhere. By step [](#s2){.pf-ref}, equality $|\widehat f(\xi)|=\widehat f(0)$ is therefore impossible for $\xi\ne0$, and step [](#s1){.pf-ref} gives
 \[
 \boxed{|\widehat f(\xi)|<\widehat f(0)\quad\text{for every }\xi\ne0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

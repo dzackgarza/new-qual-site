@@ -50,7 +50,11 @@ $z^\alpha\coloneqq\exp(\alpha\log z)$ there. In particular, this
 definition is holomorphic on a neighborhood of the closed sector between
 the rays of arguments $0$ and $\theta$, away from the origin.
 
-<1>1. The function
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 F(z)\coloneqq\frac1{1+z^\alpha}
 $$
@@ -63,7 +67,8 @@ $$
 \operatorname{Res}_{z=z_0}F(z)=-\frac{e^{\pi i/\alpha}}{\alpha}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $z=re^{i\varphi}$ with $0<\varphi<\theta=2\pi/\alpha$, the equation
 $z^\alpha=-1$ forces
 $$
@@ -85,9 +90,14 @@ $$
 =-\frac{e^{\pi i/\alpha}}{\alpha}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. Let $C_{\varepsilon,R}$ be the positively oriented boundary of
+:::
+
+::: {.pf-step #s2}
+
+Let $C_{\varepsilon,R}$ be the positively oriented boundary of
 $$
 \{re^{i\varphi}:\varepsilon<r<R,\ 0<\varphi<\theta\},
 $$
@@ -97,23 +107,30 @@ $$
 =-\frac{2\pi i}{\alpha}e^{\pi i/\alpha}.
 $$
 
-::: {.proof}
-By step <1>1, $z_0$ is the unique pole enclosed by the contour. The
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $z_0$ is the unique pole enclosed by the contour. The
 residue theorem gives
 $$
 \int_{C_{\varepsilon,R}}F(z)\,dz
 =2\pi i\operatorname{Res}_{z=z_0}F(z)
 =-\frac{2\pi i}{\alpha}e^{\pi i/\alpha}.
 $$
+
 :::
 
-<1>3. The two radial sides of $C_{\varepsilon,R}$ contribute
+:::
+
+::: {.pf-step #s3}
+
+The two radial sides of $C_{\varepsilon,R}$ contribute
 $$
 \left(1-e^{2\pi i/\alpha}\right)
 \int_{\varepsilon}^{R}\frac{dr}{1+r^\alpha}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the lower ray $z=r$, so its contribution is
 $$
 \int_{\varepsilon}^{R}\frac{dr}{1+r^\alpha}.
@@ -129,12 +146,18 @@ $$
 $$
 Since $\theta=2\pi/\alpha$, adding the two contributions proves the
 claim.
+
 :::
 
-<1>4. The circular-arc contributions tend to $0$ as
+:::
+
+::: {.pf-step #s4}
+
+The circular-arc contributions tend to $0$ as
 $\varepsilon\to0$ and $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 On the inner arc, for sufficiently small $\varepsilon$,
 $$
 \abs{1+z^\alpha}\ge1-\varepsilon^\alpha,
@@ -155,9 +178,14 @@ $$
 \frac{\theta R}{R^\alpha-1}\longrightarrow0,
 $$
 because $\alpha>1$.
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 I\coloneqq\int_0^\infty\frac{dx}{1+x^\alpha},
 $$
@@ -167,14 +195,20 @@ $$
 =-\frac{2\pi i}{\alpha}e^{\pi i/\alpha}.
 $$
 
-::: {.proof}
-Combine steps <1>2 and <1>3, then let
-$\varepsilon\to0$ and $R\to\infty$. Step <1>4 removes the two arc
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, then let
+$\varepsilon\to0$ and $R\to\infty$. Step [](#s4){.pf-ref} removes the two arc
 integrals. The improper integral $I$ converges because the integrand is
 bounded near $0$ and is $O(x^{-\alpha})$ at infinity with $\alpha>1$.
+
 :::
 
-<1>6. The value of the integral is
+:::
+
+::: {.pf-step #s6}
+
+The value of the integral is
 $$
 \boxed{
 \int_0^\infty\frac{dx}{1+x^\alpha}
@@ -182,23 +216,30 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 1-e^{2\pi i/\alpha}
 =-2i e^{\pi i/\alpha}\sin\left(\frac{\pi}{\alpha}\right),
 $$
-step <1>5 becomes
+step [](#s5){.pf-ref} becomes
 $$
 -2i e^{\pi i/\alpha}\sin\left(\frac{\pi}{\alpha}\right)I
 =-\frac{2\pi i}{\alpha}e^{\pi i/\alpha}.
 $$
 Canceling the nonzero common factors yields the displayed formula.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the requested evaluation.
+
+:::
+
+:::
+
 :::

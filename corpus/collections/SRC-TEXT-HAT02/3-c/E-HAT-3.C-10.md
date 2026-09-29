@@ -47,11 +47,17 @@ Let $\mu:X\times X\to X$ be the H-space multiplication and let
 \]
 Then $fg=\mu\circ\delta_{f,g}$.
 
-<1>1. If $\alpha$ is primitive, then
+::: pf
+
+::: pf-step
+
+If $\alpha$ is primitive, then
 \[
 (fg)^*(\alpha)=f^*(\alpha)+g^*(\alpha).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Primitivity means
 \[
 \mu^*(\alpha)=\alpha\times1+1\times\alpha.
@@ -62,24 +68,38 @@ Therefore
 =\delta_{f,g}^*\mu^*(\alpha)
 =f^*(\alpha)+g^*(\alpha).
 \]
+
 :::
 
-<1>2. The $k$th-power map sends every primitive class $\alpha$ to $k\alpha$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The $k$th-power map sends every primitive class $\alpha$ to $k\alpha$.
+
+::: pf-proof
+
 Induct on $k$ using part 1. For the identity map $P_1$, $P_1^*(\alpha)=\alpha$. Since $P_{k+1}=P_k\cdot\operatorname{id}$,
 \[
 P_{k+1}^*(\alpha)=P_k^*(\alpha)+\alpha=(k+1)\alpha.
 \]
 On $S^3$, a generator of $H^3(S^3;\mathbb Z)$ is primitive for dimensional reasons. Hence the quaternionic power map $q\mapsto q^k$ has degree $k$.
+
 :::
 
-<1>3. Every quaternionic polynomial
+:::
+
+::: pf-step
+
+Every quaternionic polynomial
 \[
 P(x)=a_nx^nb_n+\cdots+a_1xb_1+a_0,
 \qquad a_n,b_n\ne0,
 \]
 has a root.
-::: {.proof}
+
+::: pf-proof
+
 View $\mathbb H$ as $\mathbb R^4$. Since the leading term dominates as $|x|\to\infty$, $P$ is proper and extends to a map of one-point compactifications
 \[
 \widehat P:S^4\to S^4.
@@ -96,5 +116,11 @@ Left and right multiplication by a nonzero quaternion are orientation-preserving
 \deg\widehat P=n\ne0.
 \]
 If $P$ had no root, then $0\notin P(\mathbb H)$; a proper map missing a point has degree $0$, contradiction. Thus $P(x)=0$ for some $x\in\mathbb H$.
+
 :::
+
+:::
+
+:::
+
 :::

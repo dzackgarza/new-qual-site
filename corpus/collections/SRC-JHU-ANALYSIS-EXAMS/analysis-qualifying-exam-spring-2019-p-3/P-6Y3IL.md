@@ -46,8 +46,15 @@ If not, give a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Construct a sequence satisfying the weighted pointwise bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Construct a sequence satisfying the weighted pointwise bound.
+
+::: pf-proof
+
 Let
 \[
 Q=[0,1]^d,
@@ -64,10 +71,17 @@ Outside $Q$, $f_j=0$. Hence condition (A) holds with
 \[
 M=(1+\sqrt d)^d.
 \]
+
 :::
 
-<1>2. Prove weak convergence to zero.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove weak convergence to zero.
+
+::: pf-proof
+
 Fix $g\in L^2(\mathbb R^d)$. Since $Q$ has finite measure,
 \[
 g\mathbf1_Q\in L^1(Q)
@@ -86,10 +100,17 @@ By the Riemann--Lebesgue lemma, the right-hand side tends to $0$. Thus
 f_j\rightharpoonup0
 \quad\text{in }L^2(\mathbb R^d).
 \]
+
 :::
 
-<1>3. Show that strong convergence fails.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that strong convergence fails.
+
+::: pf-proof
+
 For every positive integer $j$,
 \[
 \begin{aligned}
@@ -114,5 +135,11 @@ nor
 holds.
 
 Thus condition (A) together with weak convergence does not imply strong convergence: the sequence $f_j$ satisfies the weighted pointwise bound (A) and oscillates at frequency $j$ on $Q$.
+
 :::
+
+:::
+
+:::
+
 :::

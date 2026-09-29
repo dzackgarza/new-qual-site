@@ -31,9 +31,16 @@ Use cellular homology to calculate the homology groups of $S^n \times S^m$.
 :::
 
 ::: {.solution}
-<1>1. Assume first that $n,m\ge1$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Assume first that $n,m\ge1$.
 Give each sphere its standard CW structure with one $0$-cell and one top-dimensional cell.
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 S^n=e^0\cup e^n,
@@ -58,9 +65,14 @@ C_k(S^m)
 \]
 All cellular boundary maps are zero.
 For dimensions greater than $1$ this follows because there are no cells in the preceding dimension; for $S^1$, the unique $1$-cell has both endpoints attached to the same $0$-cell, so its cellular boundary is also zero.
+
 :::
 
-<1>2. The product CW structure on $S^n\times S^m$ has exactly the four product cells
+:::
+
+::: {.pf-step #s2}
+
+The product CW structure on $S^n\times S^m$ has exactly the four product cells
 \[
 e^0\times e^0,
 \qquad
@@ -80,16 +92,25 @@ m,
 \qquad
 n+m.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The product of CW complexes carries the product CW structure whose cells are products of cells, with
 \[
 \dim(e^p\times e^q)=p+q.
 \]
-Applying this to the two-cell structures in <1>1 yields precisely the displayed cells.
+Applying this to the two-cell structures in step [](#s1){.pf-ref} yields precisely the displayed cells.
+
 :::
 
-<1>3. Every cellular differential of $S^n\times S^m$ is zero.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every cellular differential of $S^n\times S^m$ is zero.
+
+::: pf-proof
+
 For product CW structures, cellular chains identify with the graded tensor product
 \[
 C_*(S^n\times S^m)
@@ -104,15 +125,20 @@ and the differential on a homogeneous tensor satisfies
 +
 (-1)^{\deg a}a\otimes(\partial b).
 \]
-By <1>1 both factor differentials vanish.
+By step [](#s1){.pf-ref} both factor differentials vanish.
 Hence the right-hand side is zero for every product cell, so
 \[
 \partial=0
 \]
 on the entire cellular chain complex of $S^n\times S^m$.
+
 :::
 
-<1>4. If $n\ne m$, then
+:::
+
+::: {.pf-step #s4}
+
+If $n\ne m$, then
 \[
 H_k(S^n\times S^m;\mathbb Z)
 \cong
@@ -121,16 +147,23 @@ H_k(S^n\times S^m;\mathbb Z)
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
-By <1>2 there is one cell in each of the four distinct dimensions
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} there is one cell in each of the four distinct dimensions
 \[
 0,n,m,n+m.
 \]
-By <1>3 every differential is zero.
+By step [](#s3){.pf-ref} every differential is zero.
 Therefore cellular homology equals the cellular chain group in each degree, giving the displayed formula.
+
 :::
 
-<1>5. If $n=m\ge1$, then
+:::
+
+::: {.pf-step #s5}
+
+If $n=m\ge1$, then
 \[
 H_k(S^n\times S^n;\mathbb Z)
 \cong
@@ -140,7 +173,9 @@ H_k(S^n\times S^n;\mathbb Z)
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 When $n=m$, the two middle product cells
 \[
 e^n\times e^0
@@ -153,22 +188,36 @@ Thus
 C_n(S^n\times S^n)\cong\mathbb Z^2,
 \]
 while $C_0$ and $C_{2n}$ are each $\mathbb Z$.
-Again <1>3 makes all differentials zero.
+Again step [](#s3){.pf-ref} makes all differentials zero.
+
 :::
 
-<1>6. Equivalently, for $n,m\ge1$ the answer can be written uniformly as
+:::
+
+::: pf-step
+
+Equivalently, for $n,m\ge1$ the answer can be written uniformly as
 \[
 H_k(S^n\times S^m;\mathbb Z)
 \cong
 \bigoplus_{j\in\{0,n,m,n+m\}\,:\,j=k}\mathbb Z,
 \]
 where repeated dimensions contribute separate summands.
-::: {.proof}
-This is exactly <1>4 and <1>5 written without separating the case $n=m$.
+
+::: pf-proof
+
+This is exactly steps [](#s4){.pf-ref} and [](#s5){.pf-ref} written without separating the case $n=m$.
+
 :::
 
-<1>7. If the notation is allowed to include $S^0$, the corresponding edge cases are obtained directly from the fact that $S^0$ has two points.
-::: {.proof}
+:::
+
+::: pf-step
+
+If the notation is allowed to include $S^0$, the corresponding edge cases are obtained directly from the fact that $S^0$ has two points.
+
+::: pf-proof
+
 For $m\ge1$,
 \[
 S^0\times S^m\cong S^m\amalg S^m,
@@ -191,5 +240,11 @@ is a four-point discrete space, so its only nonzero homology group is
 \[
 H_0(S^0\times S^0;\mathbb Z)\cong\mathbb Z^4.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

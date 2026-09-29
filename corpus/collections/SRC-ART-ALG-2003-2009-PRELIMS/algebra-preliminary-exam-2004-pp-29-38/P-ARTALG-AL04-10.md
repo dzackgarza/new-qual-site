@@ -36,10 +36,16 @@ Show that $L$ is Galois over $\mathbb{Q}$.
 :::
 
 ::: {.solution}
-<1>1. For part (a), $\mathbb Q(\sqrt[3]{2})$ is a non-Galois
+
+::: pf
+
+::: pf-step
+
+For part (a), $\mathbb Q(\sqrt[3]{2})$ is a non-Galois
 extension of degree $3$.
 
-::: {.proof}
+::: pf-proof
+
 Let $a=\sqrt[3]{2}>0$. Eisenstein's criterion at $2$ makes
 $x^3-2$ irreducible over $\mathbb Q$, so
 $[\mathbb Q(a):\mathbb Q]=3$ [@DF04]. The other two roots
@@ -48,12 +54,18 @@ unity $\omega$. They are nonreal, whereas $\mathbb Q(a)$ is
 contained in $\mathbb R$. Thus an irreducible polynomial over
 the base field has a root in the extension but does not split
 there. The extension is not normal and hence not Galois.
+
 :::
 
-<1>2. For part (b), $H=\operatorname{Gal}(K/L)$ is a normal
+:::
+
+::: {.pf-step #s2}
+
+For part (b), $H=\operatorname{Gal}(K/L)$ is a normal
 subgroup of $G=\operatorname{Gal}(K/\mathbb Q)$.
 
-::: {.proof}
+::: pf-proof
+
 The finite Galois correspondence gives $|G|=105$ and
 $[G:H]=[L:\mathbb Q]=3$, hence $|H|=35$ [@DF04].
 Let $G$ act by left multiplication on the three left cosets
@@ -67,13 +79,25 @@ excludes order $1$, so $|\rho(G)|=3$ and $|\ker\rho|=35$.
 Every element of the kernel fixes the coset $H$, so belongs to
 $H$. Since both subgroups have order $35$, $H=\ker\rho$.
 Kernels are normal, so $H\lhd G$.
+
 :::
 
-<1>3. The field $L$ in part (b) is Galois over $\mathbb Q$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The field $L$ in part (b) is Galois over $\mathbb Q$.
+
+::: pf-proof
+
 An intermediate field of a finite Galois extension is Galois
 over the base exactly when its corresponding subgroup is normal
-[@DF04]. Apply this criterion to the subgroup in step <1>2.
+[@DF04]. Apply this criterion to the subgroup in step [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

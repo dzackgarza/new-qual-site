@@ -49,9 +49,14 @@ $$
 E(t)=\frac12(x'(t))^2+U(x(t)).
 $$
 
-<1>1. One has $x(t)>0$ and $y(t)>0$ for every $t\ge0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+One has $x(t)>0$ and $y(t)>0$ for every $t\ge0$.
+
+::: pf-proof
+
 Variation of constants gives
 $$
 x(t)=e^{-t}\left(x(0)+\int_0^t e^s y(s)\,ds\right)
@@ -64,15 +69,21 @@ Suppose some variable vanishes at a positive time, and let $t_*$ be the
 first such time. On $[0,t_*)$ both variables are positive, and $x(s)>0$
 gives $\log(20+x(s))>0$. The two displayed formulas at $t=t_*$ then give
 $x(t_*)>0$ and $y(t_*)>0$, a contradiction.
+
 :::
 
-<1>2. The function $x$ satisfies
+:::
+
+::: {.pf-step #s2}
+
+The function $x$ satisfies
 $$
 x''+2x'+U'(x)=0,
 $$
 and $E(t)\le E(0)$ for every $t\ge0$.
 
-::: {.proof}
+::: pf-proof
+
 From
 $$
 x'=-x+y
@@ -94,11 +105,17 @@ which is the displayed equation. Multiplying it by $x'$ yields
 $$
 E'(t)=\frac{d}{dt}\left(\frac12(x')^2+U(x)\right)=-2(x')^2\le0.
 $$
+
 :::
 
-<1>3. The function $x$ is bounded on $[0,\infty)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The function $x$ is bounded on $[0,\infty)$.
+
+::: pf-proof
+
 As $x\to\infty$,
 $$
 U(x)=\frac{x^2}{2}-(x+20)\log(x+20)+(x+20)
@@ -108,19 +125,25 @@ because $(x+20)\log(x+20)=o(x^2)$. Thus the sublevel set
 $$
 \{x\ge0:U(x)\le E(0)\}
 $$
-is bounded. Since $x(t)>0$ by step <1>1 and $U(x(t))\le E(t)\le E(0)$ by
-step <1>2, the function $x$ takes values in this set.
+is bounded. Since $x(t)>0$ by step [](#s1){.pf-ref} and $U(x(t))\le E(t)\le E(0)$ by
+step [](#s2){.pf-ref}, the function $x$ takes values in this set.
+
 :::
 
-<1>4. The functions $x'$ and $y$ are bounded on $[0,\infty)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The functions $x'$ and $y$ are bounded on $[0,\infty)$.
+
+::: pf-proof
+
 Let
 $$
 m=\min_{x\ge0}U(x),
 $$
 which exists because $U$ is continuous on $[0,\infty)$ and tends to
-$+\infty$ as $x\to\infty$. By step <1>2,
+$+\infty$ as $x\to\infty$. By step [](#s2){.pf-ref},
 $$
 \frac12(x'(t))^2
 =E(t)-U(x(t))
@@ -130,12 +153,18 @@ so $x'$ is bounded. Finally,
 $$
 y(t)=x'(t)+x(t),
 $$
-which is bounded by step <1>3.
+which is bounded by step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>4 show that $x(t)$ and $y(t)$ are bounded for $t\ge0$.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that $x(t)$ and $y(t)$ are bounded for $t\ge0$.
+
+:::
+
+:::
+
 :::

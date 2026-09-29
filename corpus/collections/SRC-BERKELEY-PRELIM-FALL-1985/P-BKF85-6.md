@@ -34,7 +34,12 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. For every nonzero vector $v\in\RR^n$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every nonzero vector $v\in\RR^n$,
 $$
 \lambda_{\min}
 \leq
@@ -43,7 +48,8 @@ $$
 \lambda_{\max}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A$ is real symmetric, so by the spectral theorem it has an orthonormal eigenbasis
 $$
 u_1,\ldots,u_n
@@ -63,14 +69,20 @@ $$
 \frac{\sum_j\lambda_j c_j^2}{\sum_jc_j^2},
 $$
 which is a weighted average of the eigenvalues. Hence it lies between their minimum and maximum.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \lambda_{\min}\leq k-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take
 $$
 v=e_1-e_2.
@@ -89,15 +101,21 @@ Since $v^Tv=2$,
 $$
 \frac{v^TAv}{v^Tv}=k-1.
 $$
-Step <1>1 therefore gives $\lambda_{\min}\leq k-1$.
+Step [](#s1){.pf-ref} therefore gives $\lambda_{\min}\leq k-1$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \lambda_{\max}\geq k+1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take
 $$
 w=e_1+e_2.
@@ -116,12 +134,18 @@ Since $w^Tw=2$,
 $$
 \frac{w^TAw}{w^Tw}=k+1.
 $$
-Step <1>1 therefore gives $\lambda_{\max}\geq k+1$.
+Step [](#s1){.pf-ref} therefore gives $\lambda_{\max}\geq k+1$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>3 are the required inequalities.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are the required inequalities.
+
+:::
+
+:::
+
 :::

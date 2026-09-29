@@ -41,8 +41,14 @@ X=S^1_a\vee S^1_b
 \]
 with wedge point $v$.
 
-<1>1. Every self-map of $X$ homotopic to the identity has a fixed point.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every self-map of $X$ homotopic to the identity has a fixed point.
+
+::: pf-proof
+
 The graph $X$ has one $0$-cell and two $1$-cells, so
 \[
 H_0(X;\QQ)\cong\QQ,
@@ -74,10 +80,17 @@ L(g)\ne0.
 \]
 By the Lefschetz fixed-point theorem, $g$ has a fixed point.
 Thus the homotopy class of the identity is an example in which every representative has a fixed point.
+
 :::
 
-<1>2. There is a fixed-point-free self-map of $X$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is a fixed-point-free self-map of $X$.
+
+::: pf-proof
+
 Identify the first circle $S^1_a$ with the unit circle in $\CC$ so that its wedge point is
 \[
 v=1.
@@ -113,6 +126,11 @@ S^1_a\cap S^1_b=\{v\}.
 Hence $f(x)\ne x$ for every $x\in S^1_b$, including $x=v$.
 
 Thus $f$ has no fixed points.
+
+:::
+
+:::
+
 :::
 
 Therefore the identity homotopy class supplies the first requested example, while the explicit map

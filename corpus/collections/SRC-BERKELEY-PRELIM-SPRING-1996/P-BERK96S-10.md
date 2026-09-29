@@ -42,10 +42,15 @@ $$
 h(x)\coloneqq\frac{x}{\log x}.
 $$
 
-<1>1. The function $h$ has minimum value $e$ on $(1,\infty)$, attained at
+::: pf
+
+::: {.pf-step #s1}
+
+The function $h$ has minimum value $e$ on $(1,\infty)$, attained at
 $x=e$.
 
-::: {.proof}
+::: pf-proof
+
 Differentiation gives
 $$
 h'(x)
@@ -58,20 +63,26 @@ $$
 h(x)\geq h(e)=e
 $$
 for every $x>1$.
+
 :::
 
-<1>2. If $0<t<e$, then
+:::
+
+::: {.pf-step #s2}
+
+If $0<t<e$, then
 $$
 e^x>x^t
 $$
 for every $x>0$.
 
-::: {.proof}
+::: pf-proof
+
 If $0<x\leq1$, then
 $$
 x^t\leq1<e^x.
 $$
-If $x>1$, then step <1>1 gives
+If $x>1$, then step [](#s1){.pf-ref} gives
 $$
 t<e\leq\frac{x}{\log x}.
 $$
@@ -83,31 +94,49 @@ Exponentiating gives
 $$
 x^t<e^x.
 $$
+
 :::
 
-<1>3. If $t\geq e$, then the inequality fails for $x=e$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $t\geq e$, then the inequality fails for $x=e$.
+
+::: pf-proof
+
 At $x=e$,
 $$
 x^t=e^t\geq e^e=e^x.
 $$
 Thus the required strict inequality does not hold for every positive $x$.
+
 :::
 
-<1>4. A positive constant $t$ satisfies the required inequality for every
+:::
+
+::: {.pf-step #s4}
+
+A positive constant $t$ satisfies the required inequality for every
 $x>0$ if and only if
 $$
 \boxed{t<e}.
 $$
 
-::: {.proof}
-Step <1>2 proves sufficiency, and step <1>3 proves necessity.
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves sufficiency, and step [](#s3){.pf-ref} proves necessity.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the desired equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is exactly the desired equivalence.
+
+:::
+
+:::
+
 :::

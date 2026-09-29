@@ -39,7 +39,11 @@ two and five of degree four over $F$. All three quadratic
 fields and exactly one of the five quartic fields are
 Galois over $F$.
 
-<1>1. We may write
+::: pf
+
+::: {.pf-step #s1}
+
+We may write
 $$
 G=\operatorname{Gal}(K/F)
 =\{1,r,r^2,r^3,s,rs,r^2s,r^3s\},
@@ -49,7 +53,8 @@ The subgroup-to-field correspondence has
 $[K^H:F]=8/|H|$, and $K^H/F$ is Galois exactly when
 $H\lhd G$.
 
-::: {.proof}
+::: pf-proof
+
 Choose an isomorphism with the symmetries of a square,
 taking $r$ to a quarter-turn and $s$ to a reflection.
 The displayed elements and relations describe these eight
@@ -58,9 +63,14 @@ is $F$. The fixed-field theorem for a finite group of
 field automorphisms gives $[K:F]=|G|=8$, so the finite
 Galois correspondence applies with the asserted degree
 and normality properties [@DF04].
+
 :::
 
-<1>2. The nontrivial proper subgroups of $G$ are exactly
+:::
+
+::: {.pf-step #s2}
+
+The nontrivial proper subgroups of $G$ are exactly
 $$
 \langle r^2\rangle,\quad
 \langle r^j s\rangle\ (j=0,1,2,3),\quad
@@ -70,7 +80,8 @@ $$
 $$
 The first five have order two and the last three order four.
 
-::: {.proof}
+::: pf-proof
+
 Let $R=\langle r\rangle$, a cyclic subgroup of order four.
 Its only subgroups are $\{1\}$, $\langle r^2\rangle$, and
 $R$: containing $r$ or $r^3$ forces all of $R$, and any
@@ -99,18 +110,24 @@ $T=R$ gives $H=G$.
 Together with the subgroups contained in $R$, these cases
 exhaust every $H\leq G$. Removing $\{1\}$ and $G$ leaves
 exactly the eight subgroups stated above, without repetitions.
+
 :::
 
-<1>3. The strict intermediate fields and Galois counts are
+:::
+
+::: pf-step
+
+The strict intermediate fields and Galois counts are
 
 | Degree over $F$ | Fixed fields | Number | Number Galois over $F$ |
 | --- | --- | --- | --- |
 | $2$ | $K^{\langle r\rangle}$, $K^{\langle r^2,s\rangle}$, $K^{\langle r^2,rs\rangle}$ | $3$ | $3$ |
 | $4$ | $K^{\langle r^2\rangle}$ and $K^{\langle r^j s\rangle}$ for $j=0,1,2,3$ | $5$ | $1$ |
 
-::: {.proof}
-The subgroup orders in step <1>2 and the degree formula
-in step <1>1 give exactly the stated fields and degrees.
+::: pf-proof
+
+The subgroup orders in step [](#s2){.pf-ref} and the degree formula
+in step [](#s1){.pf-ref} give exactly the stated fields and degrees.
 Different subgroups have different fixed fields, so none
 of these entries is duplicated. The subgroup $G$
 corresponds to $F$ and the subgroup $\{1\}$ to $K$.
@@ -126,7 +143,13 @@ $$
 r(r^j s)r^{-1}=r^{j+2}s\ne r^j s.
 $$
 Conjugation takes its unique nonidentity element outside
-that subgroup. The normality criterion in step <1>1
+that subgroup. The normality criterion in step [](#s1){.pf-ref}
 therefore gives precisely the last column of the table.
+
 :::
+
+:::
+
+:::
+
 :::

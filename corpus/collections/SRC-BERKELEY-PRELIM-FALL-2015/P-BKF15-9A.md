@@ -38,7 +38,11 @@ $$
 F(x)\coloneqq x^3-2x.
 $$
 
-<1>1. If
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 F(x)=F(y),
 $$
@@ -47,7 +51,8 @@ $$
 x^2+xy+y^2=2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 \begin{aligned}
@@ -61,15 +66,21 @@ x^3-y^3-2(x-y)\\
 \end{aligned}
 $$
 Thus one of the two factors must vanish.
+
 :::
 
-<1>2. The equation
+:::
+
+::: {.pf-step #s2}
+
+The equation
 $$
 x^2+xy+y^2=2
 $$
 has no solution $(x,y)\in\QQ^2$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose such a rational solution exists. Choose integers $a,b,c$ with
 $c>0$ such that
 $$
@@ -102,9 +113,14 @@ x=\frac{a/2}{c/2},
 y=\frac{b/2}{c/2},
 $$
 contradicting the minimality of the positive denominator $c$.
+
 :::
 
-<1>3. If $x,y\in\QQ$ satisfy
+:::
+
+::: {.pf-step #s3}
+
+If $x,y\in\QQ$ satisfy
 $$
 F(x)=F(y),
 $$
@@ -113,27 +129,40 @@ $$
 x=y.
 $$
 
-::: {.proof}
-By step <1>1, either $x=y$ or the pair $(x,y)$ solves
+::: pf-proof
+
+By step [](#s1){.pf-ref}, either $x=y$ or the pair $(x,y)$ solves
 $$
 x^2+xy+y^2=2.
 $$
-Step <1>2 excludes the second possibility over $\QQ$.
+Step [](#s2){.pf-ref} excludes the second possibility over $\QQ$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{F:\QQ\to\QQ,\qquad F(x)=x^3-2x}
 $$
 is injective.
 
-::: {.proof}
-Step <1>3 is exactly the definition of injectivity.
+::: pf-proof
+
+Step [](#s3){.pf-ref} is exactly the definition of injectivity.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

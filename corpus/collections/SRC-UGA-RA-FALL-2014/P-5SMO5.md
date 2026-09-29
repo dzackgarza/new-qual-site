@@ -44,8 +44,15 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. Use density of continuous functions in $L^1([0,1])$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Use density of continuous functions in $L^1([0,1])$.
+
+::: pf-proof
+
 Because $g\in L^\infty([0,1])$, it also belongs to $L^1([0,1])$. Define
 \[
 \sigma(x)=
@@ -58,10 +65,17 @@ Then $\sigma\in L^1([0,1])$. Since $C([0,1])$ is dense in $L^1([0,1])$, there ar
 \[
 \|f_k-\sigma\|_1\longrightarrow0.
 \]
+
 :::
 
-<1>2. Pass the orthogonality identity to the $L^1$ limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass the orthogonality identity to the $L^1$ limit.
+
+::: pf-proof
+
 By the hypothesis,
 \[
 \int_0^1 f_k(x)g(x)\,dx=0
@@ -83,5 +97,11 @@ Therefore $|g|=0$ almost everywhere, so
 \[
 \boxed{g=0\quad\text{a.e. on }[0,1].}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

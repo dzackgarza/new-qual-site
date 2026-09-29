@@ -48,13 +48,18 @@ $$
 f(z)=\prod_{k=1}^{n}\phi_k(z).
 $$
 
-<1>1. Every denominator
+::: pf
+
+::: {.pf-step #s1}
+
+Every denominator
 $$
 1-\overline{a_k}z
 $$
 is nonzero on the closed unit disk.
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}\leq1$, then
 $$
 \abs{\overline{a_k}z}
@@ -64,15 +69,21 @@ $$
 1.
 $$
 Hence $\overline{a_k}z\neq1$, so the denominator cannot vanish.
+
 :::
 
-<1>2. If $\abs{z}=1$, then
+:::
+
+::: {.pf-step #s2}
+
+If $\abs{z}=1$, then
 $$
 \abs{\phi_k(z)}=1
 $$
 for every $k$.
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}=1$,
 $$
 z-a_k
@@ -94,15 +105,21 @@ $$
 \abs{1-\overline{a_k}z}.
 $$
 Therefore the numerator and denominator of $\phi_k$ have equal modulus.
+
 :::
 
-<1>3. On the unit circle,
+:::
+
+::: {.pf-step #s3}
+
+On the unit circle,
 $$
 \abs{f(z)}=1.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \abs{f(z)}
 =
@@ -110,40 +127,58 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>4. The function $f$ has exactly $n$ zeros in the open unit disk,
+:::
+
+::: {.pf-step #s4}
+
+The function $f$ has exactly $n$ zeros in the open unit disk,
 counting multiplicity.
 
-::: {.proof}
-By step <1>1, none of the denominators vanishes in the closed unit disk.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, none of the denominators vanishes in the closed unit disk.
 Thus the zeros of $f$ there come exactly from the numerator factors
 $$
 z-a_1,\ldots,z-a_n.
 $$
 Each $a_k$ lies in the open unit disk by hypothesis. Counting repeated
 values among the $a_k$ with their multiplicities gives exactly $n$ zeros.
+
 :::
 
-<1>5. On the unit circle,
+:::
+
+::: {.pf-step #s5}
+
+On the unit circle,
 $$
 \abs{b}<\abs{f(z)}.
 $$
 
-::: {.proof}
-The hypothesis gives $\abs{b}<1$, while step <1>3 gives
+::: pf-proof
+
+The hypothesis gives $\abs{b}<1$, while step [](#s3){.pf-ref} gives
 $\abs{f(z)}=1$.
+
 :::
 
-<1>6. The equation
+:::
+
+::: {.pf-step #s6}
+
+The equation
 $$
 f(z)=b
 $$
 has exactly $n$ solutions in the open unit disk, counting multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 The functions $f$ and $f-b$ are holomorphic on a neighborhood of the closed
-unit disk by step <1>1. Step <1>5 is the strict Rouché inequality
+unit disk by step [](#s1){.pf-ref}. Step [](#s5){.pf-ref} is the strict Rouché inequality
 $$
 \abs{(f-b)-f}
 =
@@ -152,13 +187,19 @@ $$
 \abs{f}
 $$
 on the unit circle. Hence $f-b$ and $f$ have the same number of zeros in
-the unit disk, counting multiplicity. Step <1>4 says that this number is
+the unit disk, counting multiplicity. Step [](#s4){.pf-ref} says that this number is
 $n$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

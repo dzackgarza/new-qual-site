@@ -40,9 +40,14 @@ b) What is the radius of convergence of the power series for f centered at 0? Ju
 ::: {.solution}
 The extension has value $f(0)=1$.
 
-<1>1. The quotient extends holomorphically throughout $|z|<\pi$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The quotient extends holomorphically throughout $|z|<\pi$.
+
+::: pf-proof
+
 Where the original quotient is defined,
 $$
 f(z)=\frac{z\cos z}{\sin z}.
@@ -66,11 +71,17 @@ with $f$ near zero, and has $F(0)=1$. This proves (a).
 By [[T-SRY2V|holomorphic implies analytic]], the Taylor
 series of $F$ at zero converges throughout every closed
 subdisc of $|z|<\pi$, so its radius is at least $\pi$.
+
 :::
 
-<1>2. The Taylor radius at zero is $\boxed{\pi}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The Taylor radius at zero is $\boxed{\pi}$.
+
+::: pf-proof
+
 At $z=\pi$, the denominator $\sin z$ has a simple zero,
 since $\cos\pi=-1\ne0$, whereas $z\cos z=-\pi\ne0$.
 In particular,
@@ -89,10 +100,17 @@ this Taylor series: the expression $z\cos z/\sin z$
 is holomorphic and zero at those points. They are only
 missing points of the unsimplified quotient, not poles
 of the holomorphic germ's continuation.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>1 proves removability at zero, and step <1>2 proves that the Taylor radius is $\pi$.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves removability at zero, and step [](#s2){.pf-ref} proves that the Taylor radius is $\pi$.
+
+:::
+
+:::
+
 :::

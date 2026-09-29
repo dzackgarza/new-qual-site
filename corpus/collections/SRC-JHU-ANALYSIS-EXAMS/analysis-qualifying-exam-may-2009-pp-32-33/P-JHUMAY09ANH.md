@@ -42,8 +42,14 @@ $$
 M=\|f\|_\infty>0.
 $$
 
-<1>1. The ratios are nondecreasing and bounded above by $M$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The ratios are nondecreasing and bounded above by $M$.
+
+::: pf-proof
+
 By the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]],
 $$
 a_{n+1}^2
@@ -64,10 +70,17 @@ $$
 \frac{a_{n+1}}{a_n}\le M.
 $$
 Therefore the ratios converge to some $L\le M$.
+
 :::
 
-<1>2. The limit cannot be smaller than $M$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The limit cannot be smaller than $M$.
+
+::: pf-proof
+
 Fix $0<\varepsilon<M$.
 By the definition of essential supremum, the set
 $$
@@ -96,20 +109,34 @@ Together with $L\le M$, this gives
 $$
 L=M=\|f\|_\infty.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 \lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\|f\|_\infty.
 }
 $$
-::: {.proof}
-Step <1>1 gives existence of the ratio limit $L$, and step <1>2 proves $L=\|f\|_\infty$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives existence of the ratio limit $L$, and step [](#s2){.pf-ref} proves $L=\|f\|_\infty$.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is the required limit.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required limit.
+
+:::
+
+:::
+
 :::

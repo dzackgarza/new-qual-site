@@ -46,9 +46,14 @@ n=\dim Y,
 d=m-n.
 $$
 
-<1>1. It is enough to prove that $f$ is flat at every closed point of $X$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+It is enough to prove that $f$ is flat at every closed point of $X$.
+
+::: pf-proof
+
 Let $\xi\in X$ be arbitrary. Choose a closed point
 $$
 x\in\overline{\{\xi\}}.
@@ -66,9 +71,14 @@ $$
 \OO_{Y,f(\xi)}\longrightarrow\OO_{X,\xi}.
 $$
 Hence flatness at all closed points implies flatness everywhere.
+
 :::
 
-<1>2. Fix a closed point $x\in X$, put $y=f(x)$, and write
+:::
+
+::: {.pf-step #s2}
+
+Fix a closed point $x\in X$, put $y=f(x)$, and write
 $$
 A=\OO_{Y,y},
 \qquad
@@ -76,7 +86,8 @@ B=\OO_{X,x}.
 $$
 Then $A$ is a regular local ring of dimension $n$, while $B$ is a Cohen--Macaulay local ring of dimension $m$.
 
-::: {.proof}
+::: pf-proof
+
 Because $x$ and $y$ are closed points of the varieties $X$ and $Y$,
 $$
 \dim B=\dim X=m,
@@ -92,9 +103,14 @@ t_1,\ldots,t_n
 $$
 for $A$. Since $A$ is regular, these elements generate its maximal ideal
 $\mathfrak m_A$ and form an $A$-regular sequence.
+
 :::
 
-<1>3. The local ring of the fibre at $x$ has dimension exactly $d$:
+:::
+
+::: {.pf-step #s3}
+
+The local ring of the fibre at $x$ has dimension exactly $d$:
 $$
 \dim B/\mathfrak m_A B
 =
@@ -102,7 +118,8 @@ $$
 =d.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The quotient
 $$
 B/\mathfrak m_A B
@@ -128,12 +145,18 @@ $$
 =d.
 $$
 The two inequalities give equality.
+
 :::
 
-<1>4. The images of $t_1,\ldots,t_n$ in $B$ form a $B$-regular sequence.
+:::
 
-::: {.proof}
-By step <1>2, $B$ is Cohen--Macaulay of dimension $m$. Step <1>3 gives
+::: {.pf-step #s4}
+
+The images of $t_1,\ldots,t_n$ in $B$ form a $B$-regular sequence.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $B$ is Cohen--Macaulay of dimension $m$. Step [](#s3){.pf-ref} gives
 $$
 \dim B/(t_1,\ldots,t_n)B
 =m-n.
@@ -144,14 +167,20 @@ $$
 t_1,\ldots,t_n
 $$
 is a $B$-regular sequence.
+
 :::
 
-<1>5. We have
+:::
+
+::: {.pf-step #s5}
+
+We have
 $$
 \Tor_1^A\bigl(\kappa(y),B\bigr)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $t_1,\ldots,t_n$ is an $A$-regular sequence generating
 $\mathfrak m_A$, the Koszul complex
 $$
@@ -167,18 +196,24 @@ K_A(t_1,\ldots,t_n)\tensor_A B
 \cong
 K_B(t_1,\ldots,t_n).
 $$
-By step <1>4 the same sequence is $B$-regular, so the latter Koszul complex
+By step [](#s4){.pf-ref} the same sequence is $B$-regular, so the latter Koszul complex
 is exact in every positive degree. Its first homology is therefore zero,
 which is precisely the displayed $\Tor_1$ group.
+
 :::
 
-<1>6. The local map
+:::
+
+::: {.pf-step #s6}
+
+The local map
 $$
 A\longrightarrow B
 $$
 is flat.
 
-::: {.proof}
+::: pf-proof
+
 Modulo the maximal ideal of $A$,
 $$
 B/\mathfrak m_A B
@@ -187,21 +222,27 @@ is a module over the field
 $$
 A/\mathfrak m_A=\kappa(y),
 $$
-and hence is flat over that field. Step <1>5 gives
+and hence is flat over that field. Step [](#s5){.pf-ref} gives
 $$
 \Tor_1^A\bigl(A/\mathfrak m_A,B\bigr)=0.
 $$
 The [[T-FLATCRIT|local criterion for flatness]] now implies that $B$ is
 flat over $A$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 proves flatness at every closed point $x\in X$. Step <1>1
+::: pf-qed
+
+Step [](#s6){.pf-ref} proves flatness at every closed point $x\in X$. Step [](#s1){.pf-ref}
 localizes these flat local maps to every point of $X$. Therefore
 $$
 \boxed{f:X\to Y\text{ is flat}.}
 $$
+
 :::
+
+:::
+
 :::

@@ -49,14 +49,19 @@ A=A(X),
 $$
 Since $Y$ is irreducible, $\mfp$ is prime.
 
-<1>1. For $g\in A$,
+::: pf
+
+::: {.pf-step #s1}
+
+For $g\in A$,
 $$
 D(g)\cap Y\ne\emptyset
 \quad\Longleftrightarrow\quad
 g\notin\mfp.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 g\in I(Y)
@@ -66,9 +71,14 @@ $$
 Y\cap\{x\in X:g(x)\ne0\}=\emptyset.
 $$
 The set in braces is $D(g)$, proving the equivalence.
+
 :::
 
-<1>2. There is a canonical $k$-algebra homomorphism
+:::
+
+::: {.pf-step #s2}
+
+There is a canonical $k$-algebra homomorphism
 $$
 \Phi:A_{\mfp}\longrightarrow\OO_{X,Y}
 $$
@@ -80,8 +90,9 @@ $$
 $$
 for $g\notin\mfp$.
 
-::: {.proof}
-If $g\notin\mfp$, step <1>1 shows that $D(g)$ meets $Y$, so the regular
+::: pf-proof
+
+If $g\notin\mfp$, step [](#s1){.pf-ref} shows that $D(g)$ meets $Y$, so the regular
 function $f/g\in\OO_X(D(g))=A_g$ represents a germ along $Y$.
 
 Suppose
@@ -100,7 +111,7 @@ in $A$. Since $\mfp$ is prime,
 $$
 gg'h\notin\mfp,
 $$
-so $D(gg'h)$ meets $Y$ by step <1>1. On this open set, $g,g'$, and $h$
+so $D(gg'h)$ meets $Y$ by step [](#s1){.pf-ref}. On this open set, $g,g'$, and $h$
 are invertible, and the displayed equality implies
 $$
 \frac fg=\frac{f'}{g'}.
@@ -109,11 +120,17 @@ Thus the two representatives define the same germ along $Y$, so $\Phi$ is
 well defined. Addition, multiplication, and scalar multiplication are all
 computed by the same fraction operations on a common principal open, so
 $\Phi$ is a $k$-algebra homomorphism.
+
 :::
 
-<1>3. The homomorphism $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The homomorphism $\Phi$ is surjective.
+
+::: pf-proof
+
 Let a germ in $\OO_{X,Y}$ be represented by
 $$
 (U,\phi),
@@ -133,16 +150,22 @@ there are $f,g\in A$ such that
 $$
 \ro{\phi}{D(g)}=\frac fg.
 $$
-Since $y\in D(g)\cap Y$, step <1>1 gives $g\notin\mfp$. Hence
+Since $y\in D(g)\cap Y$, step [](#s1){.pf-ref} gives $g\notin\mfp$. Hence
 $$
 \frac fg\in A_{\mfp},
 $$
 and its image under $\Phi$ is the original germ.
+
 :::
 
-<1>4. The homomorphism $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The homomorphism $\Phi$ is injective.
+
+::: pf-proof
+
 Suppose
 $$
 \Phi\left(\frac fg\right)=0,
@@ -161,7 +184,7 @@ Choose $y\in W\cap Y$ and then a principal open neighborhood
 $$
 y\in D(h)\subseteq W.
 $$
-By step <1>1, $h\notin\mfp$. The restriction of $f/g$ to $D(h)$ is zero.
+By step [](#s1){.pf-ref}, $h\notin\mfp$. The restriction of $f/g$ to $D(h)$ is zero.
 Since $D(h)\subseteq D(g)$, the element $g$ is invertible in $A_h$, so
 the image of $f$ in $A_h$ is zero. Therefore
 $$
@@ -175,23 +198,35 @@ $$
 \frac fg=0.
 $$
 Thus $\ker\Phi=0$.
+
 :::
 
-<1>5. Consequently,
+:::
+
+::: {.pf-step #s5}
+
+Consequently,
 $$
 \boxed{\OO_{X,Y}\cong A(X)_{I(Y)}}
 $$
 as $k$-algebras.
 
-::: {.proof}
-Step <1>2 constructs the canonical $k$-algebra homomorphism, and steps
-<1>3--<1>4 prove that it is bijective.
+::: pf-proof
+
+Step [](#s2){.pf-ref} constructs the canonical $k$-algebra homomorphism, and steps
+[](#s3){.pf-ref} and [](#s4){.pf-ref} prove that it is bijective.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required localization description of the stalk along
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required localization description of the stalk along
 $Y$.
+
 :::
+
+:::
+
 :::

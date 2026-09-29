@@ -33,7 +33,11 @@ For $n = 3, 4$, and 5, determine the number of similarity classes of matrices $A
 The numbers of similarity classes for $n=3,4,5$ are
 respectively $0,1,2$.
 
-<1>1. The condition $A^8=I$ gives a unique multiplicity
+::: pf
+
+::: {.pf-step #s1}
+
+The condition $A^8=I$ gives a unique multiplicity
 description
 $$
 \mathbb Q^n\cong E_1^{\oplus a}\oplus E_2^{\oplus b}
@@ -47,7 +51,8 @@ E_1=\mathbb Q[x]/(x-1),\quad E_2=\mathbb Q[x]/(x+1),
 E_8=\mathbb Q[x]/(x^4+1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 x^8-1=(x-1)(x+1)(x^2+1)(x^4+1).
@@ -74,22 +79,34 @@ An invertible rational linear map intertwines the two matrix
 actions exactly when it is a $\mathbb Q[x]$-module
 isomorphism. Thus uniqueness of the multiplicities is
 exactly uniqueness of the similarity class.
+
 :::
 
-<1>2. The condition $A^4\ne I$ is equivalent to $d\geq1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The condition $A^4\ne I$ is equivalent to $d\geq1$.
+
+::: pf-proof
+
 On $E_1,E_2,E_4$, the polynomial $x^4-1$ acts by zero,
 since their defining polynomials divide it. On $E_8$ one
 has $x^4=-1$, so $x^4-1$ acts as multiplication by $-2$.
 This is nonzero on every nonzero copy of $E_8$ over
 $\mathbb Q$. Therefore $A^4-I$ is nonzero exactly when
 at least one such summand occurs.
+
 :::
 
-<1>3. The dimensions $3,4,5$ yield exactly the stated counts.
+:::
 
-::: {.proof}
+::: pf-step
+
+The dimensions $3,4,5$ yield exactly the stated counts.
+
+::: pf-proof
+
 For $n=3$, the inequalities $d\geq1$ and $4d\leq n$
 are incompatible, so there are no such matrices.
 For $n=4$, the only possibility is $(a,b,c,d)=(0,0,0,1)$.
@@ -114,7 +131,13 @@ $\operatorname{diag}(C,-1)$. Both have eighth power the
 identity and fourth power different from the identity.
 They are not similar, since their characteristic
 polynomials are respectively $(x^4+1)(x-1)$ and
-$(x^4+1)(x+1)$. Step <1>1 proves that there are no
+$(x^4+1)(x+1)$. Step [](#s1){.pf-ref} proves that there are no
 additional classes.
+
 :::
+
+:::
+
+:::
+
 :::

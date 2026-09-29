@@ -41,8 +41,14 @@ Then
 \|f\|=|f(0)|+[f]_{1/5}.
 \]
 
-<1>1. $X$ is a vector space and $\|\cdot\|$ is a norm.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$X$ is a vector space and $\|\cdot\|$ is a norm.
+
+::: pf-proof
+
 If $f,g\in X$ and $a,b\in\mathbb R$, then
 \[
 [af+bg]_{1/5}\le |a|[f]_{1/5}+|b|[g]_{1/5}<\infty,
@@ -50,10 +56,17 @@ If $f,g\in X$ and $a,b\in\mathbb R$, then
 so $af+bg\in X$. The seminorm $[\cdot]_{1/5}$ is homogeneous and subadditive, hence so is $\|\cdot\|$.
 
 If $\|f\|=0$, then $f(0)=0$ and $[f]_{1/5}=0$, so $f(x)=f(y)$ for all $x,y$. Thus $f$ is constant, and since $f(0)=0$, one has $f\equiv0$. Therefore $\|\cdot\|$ is a norm.
+
 :::
 
-<1>2. The norm controls uniform convergence.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The norm controls uniform convergence.
+
+::: pf-proof
+
 For every $f\in X$ and $x\in[0,1]$,
 \[
 |f(x)|\le |f(0)|+|f(x)-f(0)|
@@ -64,11 +77,18 @@ Hence
 \[
 \|f\|_\infty\le\|f\|.
 \]
+
 :::
 
-<1>3. $X$ is complete.
-::: {.proof}
-Let $(f_n)$ be Cauchy in $\|\cdot\|$. By <1>2, it is uniformly Cauchy, so there is a function $f:[0,1]\to\mathbb R$ such that
+:::
+
+::: pf-step
+
+$X$ is complete.
+
+::: pf-proof
+
+Let $(f_n)$ be Cauchy in $\|\cdot\|$. By step [](#s2){.pf-ref}, it is uniformly Cauchy, so there is a function $f:[0,1]\to\mathbb R$ such that
 \[
 f_n\to f
 \]
@@ -97,5 +117,11 @@ so
 \|f_n-f\|\le2\varepsilon.
 \]
 In particular $f_n\to f$ in $\|\cdot\|$. Since $f=f_n-(f_n-f)$ and both terms have finite Hölder seminorm, $f\in X$. Thus every Cauchy sequence converges in $X$, and $X$ is Banach.
+
 :::
+
+:::
+
+:::
+
 :::

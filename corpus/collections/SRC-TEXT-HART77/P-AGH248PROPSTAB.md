@@ -45,7 +45,11 @@ f. if $f: X \to Y$ has $\mathscr{P}$, then $f_{\text{red}}: X_{\text{red}} \to Y
 ::: {.solution}
 Assume throughout that the property $\mathscr P$ satisfies (a), (b), and (c).
 
-<1>1. Let
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 \[
 f:X\to Y,
 \qquad
@@ -57,7 +61,9 @@ Then the morphism
 f\times\id_{X'}:X\times X'\longrightarrow Y\times X'
 \]
 has $\mathscr P$.
-::: {.proof}
+
+::: pf-proof
+
 The displayed morphism is the base change of
 \[
 f:X\to Y
@@ -67,14 +73,21 @@ along the projection
 Y\times X'\longrightarrow Y.
 \]
 Property (c) says that $\mathscr P$ is stable under arbitrary base extension, so the base-changed morphism has $\mathscr P$.
+
 :::
 
-<1>2. The morphism
+:::
+
+::: {.pf-step #s2}
+
+The morphism
 \[
 \id_Y\times f':Y\times X'\longrightarrow Y\times Y'
 \]
 has $\mathscr P$.
-::: {.proof}
+
+::: pf-proof
+
 This is the base change of
 \[
 f':X'\to Y'
@@ -84,16 +97,23 @@ along the projection
 Y\times Y'\longrightarrow Y'.
 \]
 Apply property (c).
+
 :::
 
-<1>3. The product morphism
+:::
+
+::: {.pf-step #s3}
+
+The product morphism
 \[
 \boxed{
 f\times f':X\times X'\longrightarrow Y\times Y'
 }
 \]
 has $\mathscr P$.
-::: {.proof}
+
+::: pf-proof
+
 It factors as
 \[
 X\times X'
@@ -102,11 +122,16 @@ Y\times X'
 \xrightarrow{\id_Y\times f'}
 Y\times Y'.
 \]
-Both factors have $\mathscr P$ by <1>1--<1>2, so their composition has $\mathscr P$ by property (b).
+Both factors have $\mathscr P$ by steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, so their composition has $\mathscr P$ by property (b).
 This proves part (d).
+
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #s4}
+
+Let
 \[
 X\xrightarrow{f}Y\xrightarrow{g}Z
 \]
@@ -118,7 +143,9 @@ The graph
 x\longmapsto(x,f(x)),
 \]
 is a closed immersion.
-::: {.proof}
+
+::: pf-proof
+
 Consider the Cartesian square
 \[
 \begin{array}{ccc}
@@ -133,19 +160,33 @@ The graph is the base change of the diagonal
 \]
 
 Since $g$ is separated, $\Delta_g$ is a closed immersion.  Closed immersions are stable under base change, so $\Gamma_f$ is a closed immersion.
+
 :::
 
-<1>5. The graph morphism $\Gamma_f$ has $\mathscr P$.
-::: {.proof}
-By <1>4 it is a closed immersion.  Property (a) says every closed immersion has $\mathscr P$.
 :::
 
-<1>6. The projection
+::: {.pf-step #s5}
+
+The graph morphism $\Gamma_f$ has $\mathscr P$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref} it is a closed immersion.  Property (a) says every closed immersion has $\mathscr P$.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+The projection
 \[
 p_2:X\times_ZY\longrightarrow Y
 \]
 has $\mathscr P$.
-::: {.proof}
+
+::: pf-proof
+
 The projection $p_2$ is the base change of
 \[
 g\circ f:X\longrightarrow Z
@@ -155,23 +196,35 @@ along
 g:Y\longrightarrow Z.
 \]
 Since $g\circ f$ has $\mathscr P$, property (c) gives $\mathscr P$ for $p_2$.
+
 :::
 
-<1>7. The morphism
+:::
+
+::: {.pf-step #s7}
+
+The morphism
 \[
 \boxed{f:X\to Y}
 \]
 has $\mathscr P$.
-::: {.proof}
+
+::: pf-proof
+
 The factorization
 \[
 f=p_2\circ\Gamma_f
 \]
-has both factors satisfying $\mathscr P$ by <1>5--<1>6.  Property (b) gives $\mathscr P$ for their composition.
+has both factors satisfying $\mathscr P$ by steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.  Property (b) gives $\mathscr P$ for their composition.
 This proves part (e).
+
 :::
 
-<1>8. Let
+:::
+
+::: {.pf-step #s8}
+
+Let
 \[
 f:X\longrightarrow Y
 \]
@@ -183,7 +236,9 @@ X_{\mathrm{red}}
 Y
 \]
 has $\mathscr P$.
-::: {.proof}
+
+::: pf-proof
+
 The reduction morphism
 \[
 i_X:X_{\mathrm{red}}\hookrightarrow X
@@ -195,9 +250,14 @@ Therefore the composite
 f\circ i_X:X_{\mathrm{red}}\to Y
 \]
 has $\mathscr P$ by (b).
+
 :::
 
-<1>9. The composite in <1>8 factors uniquely as
+:::
+
+::: {.pf-step #s9}
+
+The composite in step [](#s8){.pf-ref} factors uniquely as
 \[
 X_{\mathrm{red}}
 \xrightarrow{f_{\mathrm{red}}}
@@ -205,37 +265,53 @@ Y_{\mathrm{red}}
 \xrightarrow{i_Y}
 Y.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The scheme $X_{\mathrm{red}}$ is reduced.  By the universal property of the reduction of $Y$, every morphism from a reduced scheme to $Y$ factors uniquely through
 \[
 i_Y:Y_{\mathrm{red}}\hookrightarrow Y.
 \]
 The resulting morphism is exactly $f_{\mathrm{red}}$.
+
 :::
 
-<1>10. The morphism
+:::
+
+::: {.pf-step #s10}
+
+The morphism
 \[
 i_Y:Y_{\mathrm{red}}\hookrightarrow Y
 \]
 is separated.
-::: {.proof}
+
+::: pf-proof
+
 It is a closed immersion.  Every closed immersion is separated.
+
 :::
 
-<1>11. The reduced morphism
+:::
+
+::: {.pf-step #s11}
+
+The reduced morphism
 \[
 \boxed{
 f_{\mathrm{red}}:X_{\mathrm{red}}\longrightarrow Y_{\mathrm{red}}
 }
 \]
 has $\mathscr P$.
-::: {.proof}
-By <1>8--<1>9, the composite
+
+::: pf-proof
+
+By steps [](#s8){.pf-ref} and [](#s9){.pf-ref}, the composite
 \[
 i_Y\circ f_{\mathrm{red}}
 \]
-has $\mathscr P$.  By <1>10, $i_Y$ is separated.
-Applying part (e), proved in <1>4--<1>7, to
+has $\mathscr P$.  By step [](#s10){.pf-ref}, $i_Y$ is separated.
+Applying part (e), proved in steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref}, to
 \[
 X_{\mathrm{red}}
 \xrightarrow{f_{\mathrm{red}}}
@@ -245,10 +321,17 @@ Y
 \]
 shows that $f_{\mathrm{red}}$ has $\mathscr P$.
 This proves part (f).
+
 :::
 
-<1>12. Q.E.D.
-::: {.proof}
-Step <1>3 proves part (d), <1>7 proves part (e), and <1>11 proves part (f).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (d), step [](#s7){.pf-ref} proves part (e), and step [](#s11){.pf-ref} proves part (f).
+
+:::
+
+:::
+
 :::

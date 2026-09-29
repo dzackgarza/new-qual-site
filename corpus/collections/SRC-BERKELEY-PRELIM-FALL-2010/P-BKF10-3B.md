@@ -39,13 +39,18 @@ $$
 On $H$, let $\operatorname{Log}$ denote the holomorphic logarithm with
 $0<\operatorname{Im}\operatorname{Log}w<\pi$.
 
-<1>1. The Möbius transformation
+::: pf
+
+::: {.pf-step #s1}
+
+The Möbius transformation
 $$
 C(z)\coloneqq i\frac{1+z}{1-z}
 $$
 is a conformal bijection from $D$ onto $H$.
 
-::: {.proof}
+::: pf-proof
+
 For $z\in D$,
 $$
 \operatorname{Im}C(z)
@@ -66,9 +71,14 @@ $$
 C'(z)=\frac{2i}{(1-z)^2}\ne0
 $$
 on $D$, so the bijection is conformal.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 R(w)\coloneqq\exp\left(\frac14\operatorname{Log}w\right)
 $$
@@ -77,7 +87,8 @@ $$
 S\coloneqq\{\zeta\in\CC:0<\arg\zeta<\pi/4\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write $w=re^{i\theta}$ with $r>0$ and $0<\theta<\pi$. Then
 $$
 R(w)=r^{1/4}e^{i\theta/4},
@@ -95,9 +106,14 @@ $$
 R'(w)=\frac14\exp\left(-\frac34\operatorname{Log}w\right)\ne0,
 $$
 so $R$ is conformal.
+
 :::
 
-<1>3. The map
+:::
+
+::: {.pf-step #s3}
+
+The map
 $$
 \boxed{
 \Phi(z)
@@ -108,16 +124,23 @@ $$
 $$
 is a conformal bijection from the unit disk onto the required sector.
 
-::: {.proof}
-By step <1>1, $C$ is a conformal bijection from $D$ onto $H$.
-By step <1>2, $R$ is a conformal bijection from $H$ onto $S$.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $C$ is a conformal bijection from $D$ onto $H$.
+By step [](#s2){.pf-ref}, $R$ is a conformal bijection from $H$ onto $S$.
 Therefore their composition $\Phi=R\circ C$ is a conformal bijection
 from $D$ onto $S$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested example.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested example.
+
+:::
+
+:::
+
 :::

@@ -51,7 +51,11 @@ By the classification theorem for compact connected surfaces without boundary, e
   \]
   where $k\ge1$.
 
-<1>1. The orientable possibilities are
+::: pf
+
+::: {.pf-step #s1}
+
+The orientable possibilities are
 \[
 M_0=S^2,
 \qquad
@@ -59,16 +63,23 @@ M_1=T^2,
 \qquad
 M_2=T^2\#T^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The inequality
 \[
 2-2g\ge-2
 \]
 is equivalent to $g\le2$.
 Since $g\ge0$, one has $g=0,1,2$.
+
 :::
 
-<1>2. The nonorientable possibilities are
+:::
+
+::: {.pf-step #s2}
+
+The nonorientable possibilities are
 \[
 N_1=\RP^2,
 \qquad
@@ -79,18 +90,33 @@ N_3=\#^3\RP^2,
 N_4=\#^4\RP^2,
 \]
 where $K$ is the Klein bottle.
-::: {.proof}
+
+::: pf-proof
+
 The inequality
 \[
 2-k\ge-2
 \]
 is equivalent to $k\le4$.
 Since $k\ge1$, one has $k=1,2,3,4$.
+
 :::
 
-<1>3. These seven surfaces are exactly the required classification.
-::: {.proof}
-<1>1 and <1>2 exhaust the two alternatives in the classification theorem.
-Orientability distinguishes the two families, and within each family the genus is a complete invariant.
 :::
+
+::: pf-step
+
+These seven surfaces are exactly the required classification.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} exhaust the two alternatives in the classification theorem.
+Orientability distinguishes the two families, and within each family the genus is a complete invariant.
+
+:::
+
+:::
+
+:::
+
 :::

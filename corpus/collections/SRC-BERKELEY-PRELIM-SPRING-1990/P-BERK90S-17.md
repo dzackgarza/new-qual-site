@@ -52,12 +52,17 @@ Fix a positive integer $n$, and put $x_j\coloneqq j/n$ for
 $0\leq j\leq n$. The function $f$ is continuous on $[0,1]$,
 so all integrals of $f$ over closed subintervals exist.
 
-<1>1. For $0\leq j<n$ and $x\in[x_j,x_{j+1}]$,
+::: pf
+
+::: {.pf-step #s1}
+
+For $0\leq j<n$ and $x\in[x_j,x_{j+1}]$,
 $$
 \abs{f(x)-f(x_j)}\leq M(x-x_j).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $x=x_j$, both sides are zero. For $x>x_j$, apply the
 [[T-RA-WORKSHOP-D5-4-2|mean value theorem]] to $f$ on
 $[x_j,x]$. There is $\xi\in(x_j,x)\subset(0,1)$ such that
@@ -66,18 +71,24 @@ f(x)-f(x_j)=f'(\xi)(x-x_j).
 $$
 The definition of $M$ gives $\abs{f'(\xi)}\leq M$, which
 proves the estimate.
+
 :::
 
-<1>2. For $0\leq j<n$,
+:::
+
+::: {.pf-step #s2}
+
+For $0\leq j<n$,
 $$
 \abs{\frac{f(x_j)}n-\int_{x_j}^{x_{j+1}}f(x)\,dx}
 \leq\frac{M}{2n^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $x_{j+1}-x_j=1/n$, the difference inside the absolute
 value is the integral of $f(x_j)-f(x)$ over $[x_j,x_{j+1}]$.
-The integral triangle inequality and step <1>1 give
+The integral triangle inequality and step [](#s1){.pf-ref} give
 $$
 \begin{aligned}
 \abs{\frac{f(x_j)}n-\int_{x_j}^{x_{j+1}}f(x)\,dx}
@@ -87,27 +98,39 @@ $$
 =\frac{M}{2n^2}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The error of the left Riemann sum is at most $M/(2n)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The error of the left Riemann sum is at most $M/(2n)$.
+
+::: pf-proof
+
 Additivity of the integral over the subdivision gives
 $$
 \frac1n\sum_{j=0}^{n-1}f(x_j)-\int_0^1f(x)\,dx
 =\sum_{j=0}^{n-1}
 \left(\frac{f(x_j)}n-\int_{x_j}^{x_{j+1}}f(x)\,dx\right).
 $$
-By the triangle inequality and step <1>2, the absolute value
+By the triangle inequality and step [](#s2){.pf-ref}, the absolute value
 of this sum is at most
 $$
 \sum_{j=0}^{n-1}\frac{M}{2n^2}=\frac{M}{2n}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the asserted estimate, and $n$ was arbitrary.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the asserted estimate, and $n$ was arbitrary.
+
+:::
+
+:::
+
 :::

@@ -37,8 +37,15 @@ Hint: Consider the function $d(x,y) = \sum_n 2^{-n} \frac{|L_n(x-y)|}{1 + |L_n(x
 :::
 
 ::: {.solution}
-<1>1. Norm-bounded sets have empty weak interior in infinite dimension.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Norm-bounded sets have empty weak interior in infinite dimension.
+
+::: pf-proof
+
 Let $B\subset X$ be norm bounded. Suppose a weakly open neighborhood of some $x_0\in B$ were contained in $B$. Then there would exist $f_1,\dots,f_N\in X^*$ and $\varepsilon>0$ such that
 \[
 U:=\{x\in X:|f_j(x-x_0)|<\varepsilon\text{ for }1\le j\le N\}
@@ -57,10 +64,17 @@ while
 \|x_0+tv\|\to\infty
 \]
 as $|t|\to\infty$. This contradicts norm boundedness of $B$. Hence every norm-bounded set has empty weak interior.
+
 :::
 
-<1>2. Prove part (a) by Baire category.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove part (a) by Baire category.
+
+::: pf-proof
+
 For each integer $n\ge1$, the closed norm ball
 \[
 B_n:=\{x\in X:\|x\|\le n\}
@@ -76,10 +90,17 @@ By Step 1, $B_n$ has empty weak interior, hence is nowhere dense in the weak top
 X=\bigcup_{n=1}^\infty B_n.
 \]
 If the weak topology were induced by a complete metric, the Baire Category Theorem would forbid a complete metric space from being a countable union of closed nowhere dense sets. Therefore, for infinite-dimensional $X$, the weak topology is not a complete metric topology.
+
 :::
 
-<1>3. The function in the hint is a metric whose convergent sequences are exactly the weakly convergent sequences.
-::: {.proof}
+:::
+
+::: pf-step
+
+The function in the hint is a metric whose convergent sequences are exactly the weakly convergent sequences.
+
+::: pf-proof
+
 Define
 \[
 d(x,y)=\sum_{n=1}^\infty2^{-n}
@@ -121,10 +142,17 @@ if and only if
 L_n(x_j)\to L_n(x)
 \]
 for every $n$: one direction follows termwise, and the other by dominated convergence for the summable series. By hypothesis, this is equivalent to weak convergence.
+
 :::
 
-<1>4. Show that $d$ metrizes the weak topology.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $d$ metrizes the weak topology.
+
+::: pf-proof
+
 Each function
 \[
 x\longmapsto d(x,x_0)
@@ -138,10 +166,17 @@ x_j\notin U,
 d(x_j,x)<\frac1j.
 \]
 Then $x_j\to x$ in $d$, hence by Step 3 $x_j\rightharpoonup x$. Since $U$ is weakly open and contains $x$, eventually $x_j\in U$, a contradiction. Thus the two topologies coincide.
+
 :::
 
-<1>5. A normed space with metrizable weak topology is finite dimensional.
-::: {.proof}
+:::
+
+::: pf-step
+
+A normed space with metrizable weak topology is finite dimensional.
+
+::: pf-proof
+
 Since the weak topology is metrizable, it has a countable neighborhood base $(U_m)$ at $0$. For each $m$, choose a basic weak neighborhood
 \[
 V_m
@@ -175,5 +210,11 @@ Finally, Hahn--Banach implies that any finite linearly independent family in $X$
 \dim X\le\dim X^*<\infty.
 \]
 Therefore $X$ is finite dimensional.
+
 :::
+
+:::
+
+:::
+
 :::

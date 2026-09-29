@@ -38,22 +38,35 @@ q:X\to X/G
 \]
 be the orbit map.
 
-<1>1. Fix $x\in X$.
+::: pf
+
+::: pf-step
+
+Fix $x\in X$.
 By proper discontinuity there is an open neighborhood $U$ of $x$ such that
 \[
 F=\{g\in G:U\cap gU\ne\varnothing\}
 \]
 is finite.
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the stated proper-discontinuity hypothesis.
+
 :::
 
-<1>2. There is an open neighborhood $V\subseteq U$ of $x$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is an open neighborhood $V\subseteq U$ of $x$ such that
 \[
 V\cap gV=\varnothing
 \qquad\text{for every }g\ne e.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For each nonidentity $g\in F$, freeness gives
 \[
 gx\ne x.
@@ -94,10 +107,17 @@ If $g\notin F$, then already $U\cap gU=\varnothing$, and since $V\subseteq U$ we
 V\cap gV=\varnothing.
 \]
 Thus the asserted disjointness holds for every nonidentity $g$.
+
 :::
 
-<1>3. The translates $gV$ are pairwise disjoint.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The translates $gV$ are pairwise disjoint.
+
+::: pf-proof
+
 If
 \[
 gV\cap hV\ne\varnothing,
@@ -106,10 +126,15 @@ then applying $g^{-1}$ gives
 \[
 V\cap g^{-1}hV\ne\varnothing.
 \]
-By <1>2 this forces $g^{-1}h=e$, hence $g=h$.
+By step [](#s2){.pf-ref} this forces $g^{-1}h=e$, hence $g=h$.
+
 :::
 
-<1>4. The orbit map restricts to a homeomorphism
+:::
+
+::: pf-step
+
+The orbit map restricts to a homeomorphism
 \[
 q|_V:V\longrightarrow q(V).
 \]
@@ -117,9 +142,11 @@ Moreover,
 \[
 q^{-1}(q(V))=\coprod_{g\in G}gV.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The second equality follows from the definition of an orbit.
-By <1>3 the union is disjoint.
+By step [](#s3){.pf-ref} the union is disjoint.
 The map $q|_V$ is injective because two points of $V$ in the same orbit would lie in $V\cap gV$ for some $g$, forcing $g=e$.
 It is surjective onto $q(V)$ by definition.
 The quotient map $q$ is open because
@@ -128,21 +155,41 @@ q^{-1}(q(W))=\bigcup_{g\in G}gW
 \]
 is open for every open $W\subseteq X$.
 Hence $q|_V$ is an open continuous bijection, thus a homeomorphism.
+
 :::
 
-<1>5. Therefore $q:X\to X/G$ is a covering map, so the action is a covering space action.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Therefore $q:X\to X/G$ is a covering map, so the action is a covering space action.
+
+::: pf-proof
+
 The neighborhood $q(V)$ of $q(x)$ is evenly covered by the pairwise disjoint sheets $gV$, each mapped homeomorphically onto $q(V)$ by $q$.
 Since $x$ was arbitrary, this holds at every orbit.
+
 :::
 
-<1>6. If $G$ is finite and acts freely on a Hausdorff space $X$, then the action is a covering space action.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $G$ is finite and acts freely on a Hausdorff space $X$, then the action is a covering space action.
+
+::: pf-proof
+
 For every neighborhood $U$ of any point,
 \[
 \{g\in G:U\cap gU\ne\varnothing\}\subseteq G
 \]
 is finite because $G$ itself is finite.
-Thus the action is properly discontinuous in the stated sense, and <1>5 applies.
+Thus the action is properly discontinuous in the stated sense, and step [](#s5){.pf-ref} applies.
+
 :::
+
+:::
+
+:::
+
 :::

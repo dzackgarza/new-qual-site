@@ -47,9 +47,14 @@ K\coloneqq\{x\in\RR^n:\norm{x}\le r_0\}.
 $$
 Since $r_0<1$, the closed ball $K$ is contained in $B_n$.
 
-<1>1. The origin is fixed by $f$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The origin is fixed by $f$.
+
+::: pf-proof
+
 For $0<t\le1$, the point $t x_0$ is nonzero and lies in $B_n$.
 The hypothesis gives
 $$
@@ -57,13 +62,19 @@ $$
 $$
 Letting $t\to0$ and using continuity of $f$ at $0$ yields
 $\norm{f(0)}=0$, so $f(0)=0$.
+
 :::
 
-<1>2. The sequence $(r_k)$ converges to a number $L\ge0$, and
+:::
+
+::: {.pf-step #s2}
+
+The sequence $(r_k)$ converges to a number $L\ge0$, and
 $x_k\in K$ for every $k\ge0$.
 
-::: {.proof}
-The norm-decrease hypothesis and step <1>1 give
+::: pf-proof
+
+The norm-decrease hypothesis and step [](#s1){.pf-ref} give
 $$
 0\le r_{k+1}=\norm{f(x_k)}\le\norm{x_k}=r_k
 \qquad(k\ge0),
@@ -71,14 +82,20 @@ $$
 including at any index with $x_k=0$. Thus $(r_k)$ is nonincreasing
 and bounded below, so it converges to some $L\ge0$. Since
 $r_k\le r_0$, all iterates lie in $K$.
+
 :::
 
-<1>3. The limit $L$ is zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The limit $L$ is zero.
+
+::: pf-proof
+
 The set $K$ is closed and bounded in $\RR^n$. By the
 [[T-YKVFQ|Bolzano--Weierstrass theorem]], there is a subsequence
-$(x_{k_j})$ converging to a point $p\in K$. By step <1>2 and
+$(x_{k_j})$ converging to a point $p\in K$. By step [](#s2){.pf-ref} and
 continuity of the norm,
 $$
 \norm{p}=\lim_{j\to\infty}r_{k_j}=L.
@@ -93,12 +110,18 @@ $$
 If $L>0$, then $p\ne0$ and the strict norm-decrease hypothesis
 requires $\norm{f(p)}<\norm{p}$, contradicting these equalities.
 Therefore $L=0$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 give $\norm{x_k}\to0$, which is exactly
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give $\norm{x_k}\to0$, which is exactly
 $x_k\to0$ in $\RR^n$.
+
 :::
+
+:::
+
 :::

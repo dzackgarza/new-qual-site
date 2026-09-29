@@ -32,12 +32,18 @@ Give an example such that $W\ne (W^\perp)^\perp$.
 :::
 
 ::: {.solution}
-<1>1. For every linear subspace $X\subseteq V$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every linear subspace $X\subseteq V$,
 $$
 X\subseteq(X^\perp)^\perp.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 x\in X.
@@ -55,9 +61,14 @@ $X^\perp$, so
 $$
 x\in(X^\perp)^\perp.
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 X\subseteq Y,
 $$
@@ -66,41 +77,59 @@ $$
 Y^\perp\subseteq X^\perp.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Any vector orthogonal to every element of $Y$ is, in particular,
 orthogonal to every element of the smaller set $X$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 W^\perp
 \subseteq
 ((W^\perp)^\perp)^\perp.
 $$
 
-::: {.proof}
-Apply step <1>1 to the subspace
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} to the subspace
 $$
 X=W^\perp.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 ((W^\perp)^\perp)^\perp
 \subseteq
 W^\perp.
 $$
 
-::: {.proof}
-Step <1>1 applied to $W$ gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} applied to $W$ gives
 $$
 W\subseteq(W^\perp)^\perp.
 $$
-Apply the inclusion-reversing property in step <1>2 to this inclusion.
+Apply the inclusion-reversing property in step [](#s2){.pf-ref} to this inclusion.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 W^\perp
@@ -109,11 +138,17 @@ W^\perp
 }.
 $$
 
-::: {.proof}
-Combine steps <1>3 and <1>4.
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Let
+:::
+
+::: {.pf-step #s6}
+
+Let
 $$
 V=\ell^2(\NN)
 $$
@@ -126,7 +161,8 @@ $$
 W^\perp=\{0\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $j\geq1$, the standard basis vector $e_j$ lies in $W$. If
 $$
 v=(v_1,v_2,\ldots)\in W^\perp,
@@ -140,14 +176,20 @@ $$
 v_j
 $$
 for every $j$. Hence $v=0$.
+
 :::
 
-<1>7. In the example of step <1>6,
+:::
+
+::: {.pf-step #s7}
+
+In the example of step [](#s6){.pf-ref},
 $$
 W\neq(W^\perp)^\perp.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 W^\perp=\{0\},
@@ -172,13 +214,19 @@ $$
 $$
 while this sequence is not finitely supported and hence does not belong
 to $W$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 proves the triple-orthogonal-complement identity, and step
-<1>7 gives the requested example where the double orthogonal complement
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the triple-orthogonal-complement identity, and step
+[](#s7){.pf-ref} gives the requested example where the double orthogonal complement
 is strictly larger than the original subspace.
+
 :::
+
+:::
+
 :::

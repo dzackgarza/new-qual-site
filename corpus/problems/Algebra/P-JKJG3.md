@@ -42,8 +42,14 @@ Set
 \overline{\mathfrak p}_3=(3,1-\sqrt{-5}).
 \]
 
-<1>1. These are prime ideals of norms $2,3,3$, respectively.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+These are prime ideals of norms $2,3,3$, respectively.
+
+::: pf-proof
+
 The quotient maps
 \[
 R\to\FF_2,
@@ -57,15 +63,22 @@ R\to\FF_3,
  a+b\sqrt{-5}\mapsto a-b\pmod3
 \]
 (or $a+b$ for the conjugate ideal) have kernels $\mathfrak p_2$, $\mathfrak p_3$, and $\overline{\mathfrak p}_3$. Hence the quotients are fields, so the ideals are maximal and prime. Their norms are the corresponding quotient sizes.
+
 :::
 
-<1>2. The rational primes factor as
+:::
+
+::: pf-step
+
+The rational primes factor as
 \[
 (2)=\mathfrak p_2^2,
 \qquad
 (3)=\mathfrak p_3\overline{\mathfrak p}_3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Modulo $2$, the polynomial $x^2+5$ becomes
 \[
 x^2+1=(x+1)^2,
@@ -75,18 +88,32 @@ so $2$ ramifies. Modulo $3$,
 x^2+5=x^2-1=(x-1)(x+1),
 \]
 so $3$ splits. The displayed prime ideals are exactly the ideals corresponding to these linear factors.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 (6)=\mathfrak p_2^2\mathfrak p_3\overline{\mathfrak p}_3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Simply multiply the factorizations of $(2)$ and $(3)$.
+
 :::
 
-<1>4. The second element factorization produces the same prime-ideal factorization.
-::: {.proof}
+:::
+
+::: pf-step
+
+The second element factorization produces the same prime-ideal factorization.
+
+::: pf-proof
+
 Since $1+\sqrt{-5}$ lies in both $\mathfrak p_2$ and $\mathfrak p_3$, we have
 \[
 (1+\sqrt{-5})\subseteq\mathfrak p_2\mathfrak p_3.
@@ -109,6 +136,11 @@ Multiplying gives again
 \[
 (6)=\mathfrak p_2^2\mathfrak p_3\overline{\mathfrak p}_3.
 \]
+
+:::
+
+:::
+
 :::
 
 Thus nonunique factorization of elements is reconciled by unique factorization of nonzero ideals in this Dedekind domain.

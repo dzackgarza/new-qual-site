@@ -30,8 +30,15 @@ Namely you need to construct an inner product $(\cdot, \cdot)$ on $X$ such that 
 :::
 
 ::: {.solution}
-<1>1. Construct the underlying real bilinear form.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Construct the underlying real bilinear form.
+
+::: pf-proof
+
 Write
 \[
 q(x):=\|x\|^2
@@ -85,10 +92,17 @@ and the defining expression is continuous—rational homogeneity extends to real
 B(x,x)=\|x\|^2.
 \]
 In particular $B$ is a real inner product on the underlying real vector space.
+
 :::
 
-<1>2. Record how multiplication by $i$ interacts with $B$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Record how multiplication by $i$ interacts with $B$.
+
+::: pf-proof
+
 Because the norm is a complex norm,
 \[
 q(ix)=\|ix\|^2=\|x\|^2=q(x).
@@ -109,10 +123,17 @@ B(ix,y)
 =B(x,-iy)
 =-B(x,iy).
 \]
+
 :::
 
-<1>3. Build the complex inner product.
-::: {.proof}
+:::
+
+::: pf-step
+
+Build the complex inner product.
+
+::: pf-proof
+
 Define
 \[
 \langle x,y\rangle
@@ -155,13 +176,26 @@ so $B(ix,x)=0$. Hence
 \langle x,x\rangle=B(x,x)=\|x\|^2.
 \]
 Therefore $\langle\cdot,\cdot\rangle$ is an inner product whose induced norm is exactly the given norm.
+
 :::
 
-<1>4. Conclude completeness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude completeness.
+
+::: pf-proof
+
 The original normed space $X$ is Banach by hypothesis, and the norm induced by the constructed inner product is the original norm. Hence $X$ is complete for the inner-product norm. Therefore
 \[
 \boxed{X\text{ is a Hilbert space}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

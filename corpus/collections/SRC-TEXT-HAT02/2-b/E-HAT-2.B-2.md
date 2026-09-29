@@ -39,28 +39,46 @@ and hence, noncanonically but naturally in rank,
 \widetilde H^j(X;\mathbb Z)\cong \widetilde H_j(X;\mathbb Z).
 \]
 
-<1>1. If $X$ is a tree, then
+::: pf
+
+::: pf-step
+
+If $X$ is a tree, then
 \[
 \widetilde H_i(S^n-X)=0
 \qquad\text{for all }i.
 \]
-::: {.proof}
+
+::: pf-proof
+
 A finite tree is contractible, so its reduced cohomology vanishes. Alexander duality gives
 \[
 \widetilde H_i(S^n-X)\cong \widetilde H^{\,n-i-1}(X)=0.
 \]
+
 :::
 
-<1>2. For an arbitrary finite connected graph,
+:::
+
+::: pf-step
+
+For an arbitrary finite connected graph,
 \[
 \boxed{\widetilde H_i(S^n-X)\cong \widetilde H_{\,n-i-1}(X).}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Alexander duality gives
 \[
 \widetilde H_i(S^n-X)\cong \widetilde H^{\,n-i-1}(X).
 \]
 The homology of a connected graph is free: $H_0(X)=\mathbb Z$, $H_1(X)$ is a free abelian group, and $H_j(X)=0$ for $j>1$. Therefore the universal coefficient theorem has no $\operatorname{Ext}$ term, and $\widetilde H^{j}(X)$ is a free abelian group of the same rank as $\widetilde H_j(X)$. Choosing the basis of $H_1(X)$ obtained by collapsing a maximal tree identifies these groups, yielding the displayed isomorphism.
+
+:::
+
+:::
+
 :::
 
 In particular, if $r=\operatorname{rank}H_1(X)$, then the only possible nonzero reduced homology group of the complement is

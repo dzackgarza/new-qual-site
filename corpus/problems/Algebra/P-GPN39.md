@@ -23,16 +23,34 @@ Suppose that $1$ is not an eigenvalue of $L$ (that is, $1 \notin \operatorname{s
 :::
 
 ::: {.solution}
-<1>1. $\ker(I-L)=0$; that is, $0$ is the only fixed point of $L$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$\ker(I-L)=0$; that is, $0$ is the only fixed point of $L$.
+
+::: pf-proof
+
 If $L(x)=x$, then $(I-L)x=0$.
 A nonzero such $x$ would be an eigenvector of $L$ with eigenvalue $1$, contrary to hypothesis.
+
 :::
 
-<1>2. If $\dim V<\infty$, then $I-L$ is invertible.
-
-::: {.proof}
-By step <1>1, $I-L$ is injective, and rank-nullity gives $\dim\operatorname{im}(I-L)=\dim V$, so $I-L$ is also surjective.
 :::
+
+::: pf-step
+
+If $\dim V<\infty$, then $I-L$ is invertible.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $I-L$ is injective, and rank-nullity gives $\dim\operatorname{im}(I-L)=\dim V$, so $I-L$ is also surjective.
+
+:::
+
+:::
+
+:::
+
 :::

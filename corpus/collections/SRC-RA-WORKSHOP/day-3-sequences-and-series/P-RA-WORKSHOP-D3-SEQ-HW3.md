@@ -25,10 +25,35 @@ Compare this to June 2009 #3a and January 2005 #1b.)
 :::
 
 :::: {.solution}
-<1>1. Suppose, toward a contradiction, that $\sum |a_k|$ converges.
-<1>2. Then $|a_k| \le 1$ eventually.
+
+::: pf
+
+::: pf-step
+
+Suppose, toward a contradiction, that $\sum |a_k|$ converges.
+
+:::
+
+::: pf-step
+
+Then $|a_k| \le 1$ eventually.
 Proof: convergence of $\sum |a_k|$ forces $|a_k| \to 0$, so for all large $k$, $|a_k| \le 1$, hence $a_k^2 \le |a_k|$.
-<1>3. $\sum a_k^2$ converges, contradiction.
+
+:::
+
+::: pf-step
+
+$\sum a_k^2$ converges, contradiction.
 Proof: for all large $k$, $0 \le a_k^2 \le |a_k|$; by comparison with the convergent series $\sum |a_k|$, the series $\sum a_k^2$ converges — contradicting the hypothesis that it diverges.
-<1>4. Q.E.D. Proof: hence $\sum a_k$ does not converge absolutely.
+
+:::
+
+::: pf-qed
+
+Proof: hence $\sum a_k$ does not converge absolutely.
+
+:::
+
+:::
+
 :::

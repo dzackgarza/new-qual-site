@@ -24,12 +24,17 @@ audit:
 Every $a\in R$ for a finite ring is either a unit or a zero divisor.
 :::
 
-
 ::: {.solution}
 Let $R$ be a finite commutative ring with identity, and let $a\in R$.
 
-<1>1. If multiplication by $a$ is injective, then $a$ is a unit.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If multiplication by $a$ is injective, then $a$ is a unit.
+
+::: pf-proof
+
 Consider
 \[
 \mu_a:R\to R,\qquad x\mapsto ax.
@@ -39,11 +44,18 @@ Since $R$ is finite, an injective self-map is surjective. Thus $1\in\operatornam
 ab=1.
 \]
 Hence $a$ is a unit.
+
 :::
 
-<1>2. If $a$ is not a unit, then $a$ is a zero-divisor.
-::: {.proof}
-By contraposition of <1>1, if $a$ is not a unit then $\mu_a$ is not injective. Hence there exist $x\ne y$ with
+:::
+
+::: pf-step
+
+If $a$ is not a unit, then $a$ is a zero-divisor.
+
+::: pf-proof
+
+By contraposition of step [](#s1){.pf-ref}, if $a$ is not a unit then $\mu_a$ is not injective. Hence there exist $x\ne y$ with
 \[
 ax=ay.
 \]
@@ -52,6 +64,11 @@ Then $0\ne x-y$ and
 a(x-y)=0,
 \]
 so $a$ is a zero-divisor.
+
+:::
+
+:::
+
 :::
 
 Therefore every element of a finite commutative ring with identity is either a unit or a zero-divisor.

@@ -40,7 +40,12 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. On the circle
+
+::: pf
+
+::: {.pf-step #s1}
+
+On the circle
 $$
 \abs{z}=R,
 $$
@@ -49,16 +54,22 @@ $$
 \bar z=\frac{R^2}{z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On this circle,
 $$
 z\bar z=\abs{z}^2=R^2.
 $$
 Since $R>0$ on a nondegenerate contour, $z\neq0$, so division by $z$
 gives the formula.
+
 :::
 
-<1>2. On $\abs{z}=R$,
+:::
+
+::: {.pf-step #s2}
+
+On $\abs{z}=R$,
 $$
 \overline{f(z)}
 =
@@ -66,7 +77,8 @@ $$
 \overline{a_k}R^{2k}z^{-k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Conjugating the polynomial gives
 $$
 \overline{f(z)}
@@ -74,7 +86,7 @@ $$
 \sum_{k=0}^n
 \overline{a_k}\,\bar z^{\,k}.
 $$
-Substitute the identity from step <1>1:
+Substitute the identity from step [](#s1){.pf-ref}:
 $$
 \bar z^{\,k}
 =
@@ -82,9 +94,14 @@ $$
 =
 R^{2k}z^{-k}.
 $$
+
 :::
 
-<1>3. On $\abs{z}=R$,
+:::
+
+::: {.pf-step #s3}
+
+On $\abs{z}=R$,
 $$
 z^{n-1}\abs{f(z)}^2
 =
@@ -94,7 +111,8 @@ a_j\overline{a_k}R^{2k}
 z^{n-1+j-k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \abs{f(z)}^2
@@ -105,10 +123,15 @@ multiply
 $$
 f(z)=\sum_{j=0}^n a_jz^j
 $$
-by the expression from step <1>2 and then by $z^{n-1}$.
+by the expression from step [](#s2){.pf-ref} and then by $z^{n-1}$.
+
 :::
 
-<1>4. Among the monomials in step <1>3, the exponent of $z$ equals
+:::
+
+::: {.pf-step #s4}
+
+Among the monomials in step [](#s3){.pf-ref}, the exponent of $z$ equals
 $-1$ if and only if
 $$
 j=0
@@ -116,7 +139,8 @@ j=0
 k=n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponent is
 $$
 n-1+j-k.
@@ -132,21 +156,32 @@ $$
 0\leq k\leq n.
 $$
 Thus $k=n+j\leq n$ forces $j=0$, and then $k=n$.
+
 :::
 
-<1>5. The coefficient of $z^{-1}$ in the Laurent expression from step
-<1>3 is
+:::
+
+::: {.pf-step #s5}
+
+The coefficient of $z^{-1}$ in the Laurent expression from step
+[](#s3){.pf-ref} is
 $$
 a_0\overline{a_n}R^{2n}.
 $$
 
-::: {.proof}
-By step <1>4, only the term with $(j,k)=(0,n)$ contributes to the
+::: pf-proof
+
+By step [](#s4){.pf-ref}, only the term with $(j,k)=(0,n)$ contributes to the
 $z^{-1}$ coefficient. Substituting these indices into its coefficient
 gives the displayed value.
+
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #s6}
+
+One has
 $$
 \boxed{
 \frac1{2\pi i}
@@ -157,7 +192,8 @@ a_0\overline{a_n}R^{2n}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every integer $m$,
 $$
 \frac1{2\pi i}
@@ -168,13 +204,19 @@ $$
 0,&m\neq-1.
 \end{cases}
 $$
-Therefore integrating the finite Laurent sum in step <1>3 term by term
-extracts precisely its $z^{-1}$ coefficient, which step <1>5 computes.
+Therefore integrating the finite Laurent sum in step [](#s3){.pf-ref} term by term
+extracts precisely its $z^{-1}$ coefficient, which step [](#s5){.pf-ref} computes.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required identity.
+
+:::
+
+:::
+
 :::

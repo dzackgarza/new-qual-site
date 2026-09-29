@@ -40,9 +40,14 @@ For (b), use Exercise I.2.6 to reduce to Proposition I.1.10.
 Use [[D-5LJUX|dimension]] defined by lengths of strict chains of nonempty irreducible closed subsets.
 Let $U_i=D_+(x_i)\subseteq\PP_k^n$ be the standard affine opens.
 
-<1>1. If $(V_i)$ is an open cover of a topological space $T$, then $\dim T=\sup_i\dim V_i$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $(V_i)$ is an open cover of a topological space $T$, then $\dim T=\sup_i\dim V_i$.
+
+::: pf-proof
+
 A strict chain of irreducible closed subsets of $V_i$ gives such a chain in $T$ by taking closures.
 The closures remain distinct, since their intersections with $V_i$ recover the original subsets.
 This proves $\dim V_i\le\dim T$.
@@ -55,19 +60,31 @@ It is dense in $Z_j$, because it is a nonempty open subset of an irreducible spa
 Thus these intersections are distinct: equality of two would give equality of their closures in $T$.
 They form a chain of the same length in $V_i$.
 Taking the supremum over chains proves the reverse inequality.
+
 :::
 
-<1>2. One has $\boxed{\dim\PP_k^n=n}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+One has $\boxed{\dim\PP_k^n=n}$.
+
+::: pf-proof
+
 The ratios $x_j/x_i$, with $j\ne i$, identify $U_i$ with $\AA_k^n$.
 The dimension of affine space is $n$, since its coordinate ring is a polynomial ring in $n$ algebraically independent variables [@Har10a, Proposition I.1.9].
-The $U_i$ cover $\PP^n$, so step <1>1 gives the claimed dimension, including $n=0$.
+The $U_i$ cover $\PP^n$, so step [](#s1){.pf-ref} gives the claimed dimension, including $n=0$.
+
 :::
 
-<1>3. For a quasi-projective variety $Y$, one has $\boxed{\dim Y=\dim\overline Y}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+For a quasi-projective variety $Y$, one has $\boxed{\dim Y=\dim\overline Y}$.
+
+::: pf-proof
+
 Put $W=\overline Y\subseteq\PP^n$.
 By the definition of a quasi-projective variety, $Y$ is a nonempty open subset of its irreducible projective closure $W$.
 For every $i$ with $W_i=W\cap U_i\ne\varnothing$, the set $W_i$ is an affine variety in $U_i\cong\AA^n$.
@@ -81,16 +98,22 @@ $$
 This applies the affine closure theorem only to an affine ambient space.
 
 The $Y_i$ and $W_i$ are open covers of $Y$ and $W$, respectively.
-Step <1>1 consequently yields
+Step [](#s1){.pf-ref} consequently yields
 $$
 \dim Y=\sup_i\dim Y_i=\sup_i\dim W_i=\dim W.
 $$
 Equivalently, every nonempty $W_i$ has the function field $k(W)$ and dimension $\operatorname{trdeg}_k k(W)$ by the affine dimension theorem; the same is then true of its dense open $Y_i$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves (a), and step <1>3 proves (b).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves (a), and step [](#s3){.pf-ref} proves (b).
+
+:::
+
+:::
+
 :::

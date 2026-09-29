@@ -36,16 +36,27 @@ Prove that $f_n$ has no roots in the open unit disk.
 :::
 
 ::: {.solution}
-<1>1. The case $n=0$ has no roots.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The case $n=0$ has no roots.
+
+::: pf-proof
+
 Here
 $$
 f_0(z)=1.
 $$
+
 :::
 
-<1>2. For every integer $n\geq1$,
+:::
+
+::: {.pf-step #s2}
+
+For every integer $n\geq1$,
 $$
 (1-z)f_n(z)
 =
@@ -61,7 +72,8 @@ H_n(z)
 \frac{z^{n+1}}{n!}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Starting from
 $$
 f_n(z)=\sum_{k=0}^n\frac{z^k}{k!},
@@ -89,9 +101,14 @@ $$
 -\frac{k-1}{k!}.
 $$
 This is the stated identity.
+
 :::
 
-<1>3. The coefficients occurring in $H_n$ satisfy
+:::
+
+::: {.pf-step #s3}
+
+The coefficients occurring in $H_n$ satisfy
 $$
 \sum_{k=2}^{n}\frac{k-1}{k!}
 +\frac1{n!}
@@ -99,7 +116,8 @@ $$
 1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $k\geq2$,
 $$
 \frac{k-1}{k!}
@@ -123,15 +141,21 @@ $$
 $$
 For $n=1$, the sum from $k=2$ to $1$ is empty and the same identity reads
 $1/1!=1$.
+
 :::
 
-<1>4. Fix $0<r<1$. On the circle $\abs{z}=r$,
+:::
+
+::: {.pf-step #s4}
+
+Fix $0<r<1$. On the circle $\abs{z}=r$,
 $$
 \abs{H_n(z)}<1.
 $$
 
-::: {.proof}
-By step <1>3 and the positivity of the coefficients,
+::: pf-proof
+
+By step [](#s3){.pf-ref} and the positivity of the coefficients,
 $$
 \begin{aligned}
 \abs{H_n(z)}
@@ -150,28 +174,40 @@ $$
 \end{aligned}
 $$
 The inequality is strict because $0<r<1$.
+
 :::
 
-<1>5. For every $0<r<1$, the polynomial $(1-z)f_n(z)$ has no zeros in
+:::
+
+::: {.pf-step #s5}
+
+For every $0<r<1$, the polynomial $(1-z)f_n(z)$ has no zeros in
 $\abs{z}<r$.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 (1-z)f_n(z)=1-H_n(z).
 $$
-On $\abs{z}=r$, step <1>4 gives
+On $\abs{z}=r$, step [](#s4){.pf-ref} gives
 $$
 \abs{-H_n(z)}<\abs{1}.
 $$
 Rouché's theorem therefore implies that $1-H_n(z)$ and the constant
 function $1$ have the same number of zeros in $\abs{z}<r$, namely zero.
+
 :::
 
-<1>6. For every $n\geq1$, the polynomial $f_n$ has no roots in the open
+:::
+
+::: {.pf-step #s6}
+
+For every $n\geq1$, the polynomial $f_n$ has no roots in the open
 unit disk.
 
-::: {.proof}
+::: pf-proof
+
 Suppose $f_n(z_0)=0$ with $\abs{z_0}<1$. Choose $r$ such that
 $$
 \abs{z_0}<r<1.
@@ -180,19 +216,31 @@ Then
 $$
 (1-z_0)f_n(z_0)=0,
 $$
-contradicting step <1>5.
+contradicting step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. For every nonnegative integer $n$, the polynomial $f_n$ has no roots
+:::
+
+::: {.pf-step #s7}
+
+For every nonnegative integer $n$, the polynomial $f_n$ has no roots
 in the open unit disk.
 
-::: {.proof}
-Step <1>1 handles $n=0$, and step <1>6 handles every $n\geq1$.
+::: pf-proof
+
+Step [](#s1){.pf-ref} handles $n=0$, and step [](#s6){.pf-ref} handles every $n\geq1$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

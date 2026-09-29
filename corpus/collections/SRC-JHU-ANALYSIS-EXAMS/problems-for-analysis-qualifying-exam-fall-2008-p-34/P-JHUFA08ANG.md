@@ -36,9 +36,14 @@ $$
 $$
 Moreover $\lambda=f_2'(0)/f_1'(0)$.
 
-<1>1. Their composition is an automorphism of the disk fixing zero.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Their composition is an automorphism of the disk fixing zero.
+
+::: pf-proof
+
 An injective holomorphic function has nonzero derivative;
 the holomorphic inverse function theorem consequently makes
 the inverse of each $f_j$ holomorphic on $\Omega$ [@SS03].
@@ -50,11 +55,17 @@ $$
 |H(z)|\leq|z|=|H^{-1}(H(z))|\leq|H(z)|.
 $$
 Hence $|H(z)|=|z|$ throughout $D$ [@SS03].
+
 :::
 
-<1>2. The equality forces precisely the stated rotation freedom.
+:::
 
-::: {.proof}
+::: pf-step
+
+The equality forces precisely the stated rotation freedom.
+
+::: pf-proof
+
 The quotient $Q(z)=H(z)/z$ extends holomorphically to
 zero with value $H'(0)$, by the Taylor expansion of $H$.
 It has modulus one at each nonzero point and modulus
@@ -71,5 +82,11 @@ $f_1$ with $z\mapsto\lambda z$ is a holomorphic bijection
 onto the same domain and has the same value at zero.
 Thus every stated rotation is possible, and there is
 no further freedom.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -42,11 +42,18 @@ Show that there is an exact sequence of sheaves on $X$,
 :::
 
 ::: {.solution}
-<1>1. If $\mathcal F$ is a sheaf on the closed subspace $Z$, then for every $P\in Z$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $\mathcal F$ is a sheaf on the closed subspace $Z$, then for every $P\in Z$,
 \[
 \boxed{(i_*\mathcal F)_P\cong\mathcal F_P.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 For an open set $V\subseteq X$,
 \[
 (i_*\mathcal F)(V)=\mathcal F(V\cap Z).
@@ -64,13 +71,20 @@ The sets $V\cap Z$, as $V$ ranges over the open neighborhoods of $P$ in $X$, are
 =
 \varinjlim_{P\in W\subseteq Z}\mathcal F(W).
 \]
+
 :::
 
-<1>2. If $P\notin Z$, then
+:::
+
+::: {.pf-step #s2}
+
+If $P\notin Z$, then
 \[
 \boxed{(i_*\mathcal F)_P=0.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because $Z$ is closed, its complement
 \[
 U=X\setminus Z
@@ -88,9 +102,14 @@ so
 (i_*\mathcal F)(V)=\mathcal F(\varnothing)=0.
 \]
 These neighborhoods are cofinal among all neighborhoods of $P$, hence the stalk is zero.
+
 :::
 
-<1>3. Thus $i_*\mathcal F$ is extension by zero outside $Z$:
+:::
+
+::: {.pf-step #s3}
+
+Thus $i_*\mathcal F$ is extension by zero outside $Z$:
 \[
 \boxed{
 (i_*\mathcal F)_P
@@ -101,11 +120,18 @@ These neighborhoods are cofinal among all neighborhoods of $P$, hence the stalk 
 \end{cases}
 }
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Now let $\mathcal F$ be a sheaf on the open subspace $U$.  Define the presheaf $\mathcal P$ on $X$ by
+:::
+
+::: {.pf-step #s4}
+
+Now let $\mathcal F$ be a sheaf on the open subspace $U$.  Define the presheaf $\mathcal P$ on $X$ by
 \[
 \mathcal P(V)=
 \begin{cases}
@@ -121,7 +147,9 @@ be its associated sheaf.  If $P\in U$, then
 \[
 \boxed{(j_!\mathcal F)_P\cong\mathcal F_P.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Sheafification does not change stalks, so
 \[
 (j_!\mathcal F)_P\cong\mathcal P_P.
@@ -140,13 +168,20 @@ Therefore
 =\varinjlim_{P\in V\subseteq U}\mathcal F(V)
 =\mathcal F_P.
 \]
+
 :::
 
-<1>5. If $P\notin U$, then
+:::
+
+::: {.pf-step #s5}
+
+If $P\notin U$, then
 \[
 \boxed{(j_!\mathcal F)_P=0.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every neighborhood $V$ of $P$ contains $P$, so no such $V$ can be contained in $U$.  Hence
 \[
 \mathcal P(V)=0
@@ -156,10 +191,17 @@ for every neighborhood of $P$.  Thus
 \mathcal P_P=0,
 \]
 and sheafification preserves this stalk.
+
 :::
 
-<1>6. The restriction of $j_!\mathcal F$ to $U$ is naturally isomorphic to $\mathcal F$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The restriction of $j_!\mathcal F$ to $U$ is naturally isomorphic to $\mathcal F$.
+
+::: pf-proof
+
 On the open subspace $U$, the presheaf $\mathcal P$ restricts to the sheaf $\mathcal F$ itself: for every open
 \[
 V\subseteq U,
@@ -172,15 +214,22 @@ with the same restriction maps.  Therefore sheafification does nothing after res
 \[
 (j_!\mathcal F)|_U\cong\mathcal F.
 \]
+
 :::
 
-<1>7. The sheaf $j_!\mathcal F$ is unique, up to unique isomorphism compatible with the given identification on $U$, among sheaves $\mathcal G$ on $X$ such that
+:::
+
+::: {.pf-step #s7}
+
+The sheaf $j_!\mathcal F$ is unique, up to unique isomorphism compatible with the given identification on $U$, among sheaves $\mathcal G$ on $X$ such that
 \[
 \mathcal G|_U\cong\mathcal F
 \qquad\text{and}\qquad
 \mathcal G_P=0\quad(P\notin U).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Fix an identification
 \[
 \theta_U:\mathcal F\xrightarrow{\sim}\mathcal G|_U.
@@ -218,12 +267,17 @@ For $P\in U$, the map on stalks is the isomorphism
 \[
 \mathcal F_P\xrightarrow{\sim}\mathcal G_P
 \]
-induced by $\theta_U$.  For $P\notin U$, both stalks are zero by <1>5 and the hypothesis on $\mathcal G$.  Hence $\theta$ is an isomorphism on every stalk, and therefore an isomorphism of sheaves.
+induced by $\theta_U$.  For $P\notin U$, both stalks are zero by step [](#s5){.pf-ref} and the hypothesis on $\mathcal G$.  Hence $\theta$ is an isomorphism on every stalk, and therefore an isomorphism of sheaves.
 
 Any isomorphism compatible with the fixed identification on $U$ must induce the same stalk maps at every point: those in $U$ are prescribed, and those outside $U$ are maps $0\to0$.  A morphism of sheaves is determined by its stalk maps, so this isomorphism is unique.
+
 :::
 
-<1>8. Let $\mathcal F$ now be a sheaf on all of $X$.  There is a natural morphism
+:::
+
+::: {.pf-step #s8}
+
+Let $\mathcal F$ now be a sheaf on all of $X$.  There is a natural morphism
 \[
 \alpha:
 j_!(\mathcal F|_U)
@@ -231,7 +285,9 @@ j_!(\mathcal F|_U)
 \mathcal F
 \]
 which is the identity on stalks over $U$ and the zero map on stalks over $Z$.
-::: {.proof}
+
+::: pf-proof
+
 Let $\mathcal P$ be the presheaf defining
 \[
 j_!(\mathcal F|_U).
@@ -247,10 +303,15 @@ to be the identity.  If $V\not\subseteq U$, the source is zero, so use the zero 
 \]
 which sheafifies to $\alpha$.
 
-The stalk description follows from <1>4--<1>5 and the construction.
+The stalk description follows from steps [](#s4){.pf-ref} and [](#s5){.pf-ref} and the construction.
+
 :::
 
-<1>9. There is a natural morphism
+:::
+
+::: {.pf-step #s9}
+
+There is a natural morphism
 \[
 \beta:
 \mathcal F
@@ -258,7 +319,9 @@ The stalk description follows from <1>4--<1>5 and the construction.
 i_*(\mathcal F|_Z)
 \]
 which is the identity on stalks over $Z$ and has zero target on stalks over $U$.
-::: {.proof}
+
+::: pf-proof
+
 For the closed inclusion
 \[
 i:Z\hookrightarrow X,
@@ -273,13 +336,18 @@ gives
 =i_*(\mathcal F|_Z).
 \]
 
-By <1>1--<1>2, the target stalk is $\mathcal F_P$ at $P\in Z$ and zero at $P\in U$.  At a point of $Z$, the adjunction unit is induced by restricting a local section to smaller neighborhoods in the subspace $Z$, so the induced map on the stalk is the identity under the natural identification
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the target stalk is $\mathcal F_P$ at $P\in Z$ and zero at $P\in U$.  At a point of $Z$, the adjunction unit is induced by restricting a local section to smaller neighborhoods in the subspace $Z$, so the induced map on the stalk is the identity under the natural identification
 \[
 (i_*i^{-1}\mathcal F)_P\cong\mathcal F_P.
 \]
+
 :::
 
-<1>10. The sequence
+:::
+
+::: {.pf-step #s10}
+
+The sequence
 \[
 \boxed{
 0
@@ -293,10 +361,12 @@ i_*(\mathcal F|_Z)
 }
 \]
 is exact.
-::: {.proof}
+
+::: pf-proof
+
 Exactness of sheaves of abelian groups may be checked on stalks.
 
-If $P\in U$, then <1>4--<1>5 and <1>3 identify the stalk sequence with
+If $P\in U$, then steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s3){.pf-ref} identify the stalk sequence with
 \[
 0\longrightarrow
 \mathcal F_P
@@ -319,10 +389,17 @@ If $P\in Z$, the stalk sequence is
 which is also exact.
 
 Thus the original sequence is exact at every stalk and hence exact as a sequence of sheaves.
+
 :::
 
-<1>11. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), <1>4--<1>7 prove part (b), and <1>8--<1>10 prove part (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (b), and steps [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (c).
+
+:::
+
+:::
+
 :::

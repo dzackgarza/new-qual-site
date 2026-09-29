@@ -48,21 +48,34 @@ and define the fixed field
 F=E^{A_5}.
 \]
 
-<1>1. The extension $E/F$ is finite Galois with
+::: pf
+
+::: pf-step
+
+The extension $E/F$ is finite Galois with
 \[
 \operatorname{Gal}(E/F)\cong A_5.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The action is faithful because a nonidentity $h$ sends $x_1$ to the distinct
 variable $x_h$. Artin's fixed-field theorem therefore gives
 \[
 [E:F]=|A_5|=60
 \]
 and identifies the full Galois group with the acting group $A_5$.
+
 :::
 
-<1>2. There is a polynomial $p(x)\in F[x]$ whose splitting field is $E$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is a polynomial $p(x)\in F[x]$ whose splitting field is $E$.
+
+::: pf-proof
+
 The extension $E/F$ is finite separable, so by the primitive element theorem
 there exists $\alpha\in E$ such that
 \[
@@ -72,14 +85,21 @@ Let $p(x)$ be the minimal polynomial of $\alpha$ over $F$. Since $E/F$ is
 normal, every $F$-conjugate of $\alpha$ lies in $E$, so $p$ splits in $E$.
 Conversely, its roots generate the normal closure of $F(\alpha)=E$, hence its
 splitting field is exactly $E$.
+
 :::
 
-<1>3. No proper nontrivial intermediate field $L$ with
+:::
+
+::: pf-step
+
+No proper nontrivial intermediate field $L$ with
 \[
 F\subsetneq L\subsetneq E
 \]
 is normal over $F$.
-::: {.proof}
+
+::: pf-proof
+
 By the Galois correspondence, $L$ corresponds to
 \[
 H=\operatorname{Gal}(E/L)<A_5.
@@ -88,5 +108,11 @@ Because $E/F$ is Galois, the extension $L/F$ is normal if and only if $H$ is
 normal in $A_5$. The group $A_5$ is simple, so its only normal subgroups are
 $1$ and $A_5$, corresponding respectively to $E$ and $F$.
 Therefore no proper nontrivial intermediate field is normal over $F$.
+
 :::
+
+:::
+
+:::
+
 :::

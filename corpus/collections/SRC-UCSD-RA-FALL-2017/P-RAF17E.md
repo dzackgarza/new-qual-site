@@ -43,8 +43,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Prove existence and the uniform bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove existence and the uniform bound.
+
+::: pf-proof
+
 For every $x\in\mathbb R^d$,
 \[
 \int_{\mathbb R^d}|f(x-y)g(y)|\,dy
@@ -55,10 +62,17 @@ Thus $(f*g)(x)$ is well defined for every $x$, and
 \[
 \boxed{|(f*g)(x)|\le M\|f\|_1.}
 \]
+
 :::
 
-<1>2. Rewrite the convolution by a change of variables.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rewrite the convolution by a change of variables.
+
+::: pf-proof
+
 In
 \[
 (f*g)(x)=\int f(x-y)g(y)\,dy,
@@ -69,10 +83,17 @@ make the change of variables $z=x-y$. Since Lebesgue measure is translation inva
 =\int_{\mathbb R^d} f(z)g(x-z)\,dz.
 \]
 Renaming $z$ as $y$ gives the desired formula.
+
 :::
 
-<1>3. Prove continuity for $f_n\in C_c(\mathbb R^d)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove continuity for $f_n\in C_c(\mathbb R^d)$.
+
+::: pf-proof
+
 For $h\in\mathbb R^d$,
 \[
 \begin{aligned}
@@ -87,10 +108,17 @@ where $(\tau_hf_n)(z)=f_n(z+h)$. Since $f_n\in L^1$, translations are continuous
 \qquad(h\to0).
 \]
 The bound is independent of $x$, so $f_n*g$ is in fact uniformly continuous.
+
 :::
 
-<1>4. Approximate a general $f\in L^1$ by compactly supported continuous functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Approximate a general $f\in L^1$ by compactly supported continuous functions.
+
+::: pf-proof
+
 Choose $f_n\in C_c(\mathbb R^d)$ such that
 \[
 \|f_n-f\|_1\longrightarrow0.
@@ -105,5 +133,11 @@ Thus $f_n*g\to f*g$ uniformly. Each $f_n*g$ is continuous by Step 3, so the unif
 \[
 \boxed{f*g\in C(\mathbb R^d).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

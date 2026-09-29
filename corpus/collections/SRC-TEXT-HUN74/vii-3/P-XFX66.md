@@ -30,14 +30,19 @@ Let $B$ be an $R$-module.
 Show that if $r+r\neq 0$ for all $r\neq 0 \in R$, then an $n$-linear form $B^n\to R$ is alternating $\iff$ it is skew-symmetric.
 :::
 
-
 ::: {.solution}
 Let \(f:B^n\to R\) be \(n\)-linear. Here “skew-symmetric” means that
 interchanging two arguments multiplies the value by \(-1\), and “alternating”
 means that \(f\) vanishes whenever two arguments are equal.
 
-<1>1. Every alternating \(n\)-linear form is skew-symmetric.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every alternating \(n\)-linear form is skew-symmetric.
+
+::: pf-proof
+
 Fix all arguments except positions \(i<j\), and write \(x,y\in B\) in those
 positions. Alternation gives
 \[
@@ -49,11 +54,18 @@ f(\ldots,x,\ldots,y,\ldots)
 +f(\ldots,y,\ldots,x,\ldots)=0.
 \]
 Thus interchanging the two arguments changes the sign.
+
 :::
 
-<1>2. Under the hypothesis \(r+r\ne0\) for every \(0\ne r\in R\), every
+:::
+
+::: {.pf-step #s2}
+
+Under the hypothesis \(r+r\ne0\) for every \(0\ne r\in R\), every
 skew-symmetric \(n\)-linear form is alternating.
-::: {.proof}
+
+::: pf-proof
+
 Suppose two arguments, say positions \(i<j\), are equal to \(x\). Skew-symmetry
 under their transposition gives
 \[
@@ -66,10 +78,23 @@ r+r=0.
 \]
 By the stated hypothesis this forces \(r=0\). Therefore \(f\) vanishes whenever
 two arguments coincide, so \(f\) is alternating.
+
 :::
 
-<1>3. Therefore the two notions are equivalent under the stated hypothesis.
-::: {.proof}
-Combine <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Therefore the two notions are equivalent under the stated hypothesis.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

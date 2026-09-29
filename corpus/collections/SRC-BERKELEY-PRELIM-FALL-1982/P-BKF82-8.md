@@ -41,8 +41,14 @@ $$
 g(a,b)=\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}.
 $$
 
-<1>1. Construct a quotient map onto the additive group $\mathbb R$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Construct a quotient map onto the additive group $\mathbb R$.
+
+::: pf-proof
+
 Define
 $$
 \Phi:G\longrightarrow(\mathbb R,+),
@@ -61,10 +67,17 @@ $t\in\mathbb R$,
 $$
 \Phi(g(e^t,0))=t.
 $$
+
 :::
 
-<1>2. Identify the kernel and prove part (a).
-::: {.proof}
+:::
+
+::: pf-step
+
+Identify the kernel and prove part (a).
+
+::: pf-proof
+
 We have
 $$
 \Phi(g(a,b))=0
@@ -80,10 +93,17 @@ Thus $N\trianglelefteq G$. By the first isomorphism theorem,
 $$
 \boxed{G/N\cong(\mathbb R,+).}
 $$
+
 :::
 
-<1>3. Pull back a proper nontrivial subgroup of the quotient.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pull back a proper nontrivial subgroup of the quotient.
+
+::: pf-proof
+
 Take the subgroup $\mathbb Z<\mathbb R$. Since $\mathbb R$ is abelian,
 $\mathbb Z$ is normal. Put
 $$
@@ -106,5 +126,11 @@ $$
 \boxed{N\subsetneq N'\subsetneq G,
 \qquad N'\trianglelefteq G.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

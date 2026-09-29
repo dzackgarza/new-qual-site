@@ -30,8 +30,14 @@ Prove that $\psi\circ\phi:G\to K$ is a ring homomorphism.
 ::: {.solution}
 Let $x,y\in G$.
 
-<1>1. The composite preserves addition and multiplication.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The composite preserves addition and multiplication.
+
+::: pf-proof
+
 Using first that $\phi$ and then that $\psi$ is a ring homomorphism,
 $$
 (\psi\circ\phi)(x+y)
@@ -47,10 +53,17 @@ $$
 =(\psi\circ\phi)(x)(\psi\circ\phi)(y).
 $$
 Thus the composite preserves the two ring operations.
+
 :::
 
-<1>2. The remaining ring-homomorphism axioms are also preserved.
-::: {.proof}
+:::
+
+::: pf-step
+
+The remaining ring-homomorphism axioms are also preserved.
+
+::: pf-proof
+
 Additive preservation gives
 $$
 (\psi\circ\phi)(0_G)=\psi(0_H)=0_K
@@ -64,5 +77,11 @@ $$
 (\psi\circ\phi)(1_G)=\psi(\phi(1_G))=\psi(1_H)=1_K.
 $$
 Hence under either the unital or nonunital convention, $\psi\circ\phi$ satisfies exactly the corresponding ring-homomorphism axioms.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -47,7 +47,11 @@ $$
 be the projections.
 We regard $R=\Endo(X,O)$ as an additive group.
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 \Pic X\oplus\Pic X
 \longrightarrow
@@ -57,7 +61,8 @@ $$
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 p_1^*\mca\tensor p_2^*\mcb\cong\OO_{X\times X}.
@@ -65,11 +70,17 @@ $$
 Restricting to $X\times\{O\}$ gives $\mca\cong\OO_X$, because the second factor restricts to a constant one-dimensional vector space tensored with $\OO_X$.
 Restricting to $\{O\}\times X$ then gives $\mcb\cong\OO_X$.
 Thus the kernel is zero.
+
 :::
 
-<1>2. Every line bundle $\mcl$ on $X\times X$ canonically determines an endomorphism $q(\mcl)\in\Endo(X,O)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every line bundle $\mcl$ on $X\times X$ canonically determines an endomorphism $q(\mcl)\in\Endo(X,O)$.
+
+::: pf-proof
+
 Let
 $$
 i_2:X\longrightarrow X\times X,
@@ -113,9 +124,14 @@ $$
 q(\mcl)=\alpha_X^{-1}\circ\phi_{\mcl}:X\longrightarrow X.
 $$
 This morphism sends $O$ to $O$, hence is an endomorphism of the elliptic curve.
+
 :::
 
-<1>3. The assignment
+:::
+
+::: {.pf-step #s3}
+
+The assignment
 $$
 q:\Pic(X\times X)\longrightarrow R
 $$
@@ -125,7 +141,8 @@ p_1^*\mca\tensor p_2^*\mcb
 $$
 lies in its kernel.
 
-::: {.proof}
+::: pf-proof
+
 For line bundles $\mcl,\mcn$, normalization commutes with tensor product, and on every fibre of $p_1$,
 $$
 (\mcl\tensor\mcn)^0_x
@@ -141,17 +158,23 @@ $$
 If $\mcl=p_1^*\mca\tensor p_2^*\mcb$, then normalization by the fibre over $O$ removes the $p_2^*\mcb$ factor, up to a trivial constant factor.
 The restriction of $p_1^*\mca$ to every fibre $\{x\}\times X$ is trivial.
 Therefore $q(\mcl)=0$.
+
 :::
 
-<1>4. Conversely,
+:::
+
+::: {.pf-step #s4}
+
+Conversely,
 $$
 \ker q
 =
 p_1^*\Pic X\oplus p_2^*\Pic X.
 $$
 
-::: {.proof}
-Let $q(\mcl)=0$, and use the notation $\mcm$ and $\mcl^0$ from step <1>2. Then
+::: pf-proof
+
+Let $q(\mcl)=0$, and use the notation $\mcm$ and $\mcl^0$ from step [](#s2){.pf-ref}. Then
 $$
 \left[\mcl^0|_{\{x\}\times X}\right]=0
 \qquad
@@ -171,12 +194,18 @@ $$
 \cong
 p_1^*\mcn\tensor p_2^*\mcm.
 $$
-Step <1>3 gives the reverse inclusion, proving the equality.
+Step [](#s3){.pf-ref} gives the reverse inclusion, proving the equality.
+
 :::
 
-<1>5. The homomorphism $q$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The homomorphism $q$ is surjective.
+
+::: pf-proof
+
 Let $f\in\Endo(X,O)$.
 In the proof of [[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(d)]], the normalized relative Picard bundle
 $$
@@ -195,17 +224,19 @@ Therefore the morphism to $\Pic^0(X)$ associated to $\mcm_f$ is precisely
 $$
 x\longmapsto\OO_X(f(x)-O)=\alpha_X(f(x)).
 $$
-By the definition of $q$ in step <1>2,
+By the definition of $q$ in step [](#s2){.pf-ref},
 $$
 q(\mcm_f)=f.
 $$
 Thus every element of $R$ is in the image.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 gives injectivity on the left, steps <1>3--<1>4 identify the kernel of $q$ with the two pullback Picard groups, and step <1>5 proves surjectivity.
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives injectivity on the left, steps [](#s3){.pf-ref} and [](#s4){.pf-ref} identify the kernel of $q$ with the two pullback Picard groups, and step [](#s5){.pf-ref} proves surjectivity.
 Hence
 $$
 0
@@ -221,5 +252,9 @@ $$
 is exact.
 Since $R$ contains the nonzero identity endomorphism, the quotient of $\Pic(X\times X)$ by the two pullback Picard groups is nonzero.
 Thus the pullback subgroup is proper, which is the stated final consequence.
+
 :::
+
+:::
+
 :::

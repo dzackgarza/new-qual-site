@@ -57,14 +57,21 @@ Part (e) is an analogue of the first Cousin problem in several complex variables
 :::
 
 ::: {.solution}
-<1>1. For a closed subset $Y\subseteq X$, the assignment
+
+::: pf
+
+::: {.pf-step #s1}
+
+For a closed subset $Y\subseteq X$, the assignment
 \[
 \mathcal I_Y(U)
 =
 \{f\in\mathcal O_X(U):f|_{Y\cap U}=0\text{ pointwise}\}
 \]
 is a subpresheaf of rings of $\mathcal O_X$.
-::: {.proof}
+
+::: pf-proof
+
 If $V\subseteq U$ and
 \[
 f\in\mathcal I_Y(U),
@@ -84,10 +91,17 @@ Thus
 f|_V\in\mathcal I_Y(V).
 \]
 The set $\mathcal I_Y(U)$ is clearly an ideal of $\mathcal O_X(U)$, since sums of functions vanishing on $Y\cap U$ vanish there and multiplying by an arbitrary regular function preserves vanishing.
+
 :::
 
-<1>2. The presheaf $\mathcal I_Y$ is a sheaf, hence a sheaf of ideals in $\mathcal O_X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The presheaf $\mathcal I_Y$ is a sheaf, hence a sheaf of ideals in $\mathcal O_X$.
+
+::: pf-proof
+
 Let
 \[
 U=\bigcup_iU_i
@@ -117,9 +131,14 @@ f\in\mathcal I_Y(U).
 \]
 Uniqueness is inherited from $\mathcal O_X$.
 Hence $\mathcal I_Y$ is a sheaf.
+
 :::
 
-<1>3. If $Y$ is a subvariety and
+:::
+
+::: {.pf-step #s3}
+
+If $Y$ is a subvariety and
 \[
 i:Y\hookrightarrow X
 \]
@@ -128,7 +147,9 @@ is the inclusion, restriction of regular functions gives a sheaf morphism
 \rho:\mathcal O_X\longrightarrow i_*\mathcal O_Y
 \]
 whose kernel is $\mathcal I_Y$.
-::: {.proof}
+
+::: pf-proof
+
 For every open $U\subseteq X$, restriction gives
 \[
 \rho_U:\mathcal O_X(U)
@@ -150,10 +171,17 @@ Thus
 \[
 \ker\rho=\mathcal I_Y.
 \]
+
 :::
 
-<1>4. The morphism $\rho$ is surjective as a morphism of sheaves.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The morphism $\rho$ is surjective as a morphism of sheaves.
+
+::: pf-proof
+
 It suffices to check surjectivity on stalks.
 
 If $P\notin Y$, then
@@ -180,9 +208,14 @@ A_{\mathfrak p}
 \]
 which is surjective.
 Hence $\rho$ is surjective at every stalk.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 \[
 \boxed{
 \mathcal O_X/\mathcal I_Y
@@ -190,8 +223,10 @@ Hence $\rho$ is surjective at every stalk.
 i_*\mathcal O_Y.
 }
 \]
-::: {.proof}
-Steps <1>3 and <1>4 give an exact sequence
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give an exact sequence
 \[
 0\longrightarrow\mathcal I_Y
 \longrightarrow\mathcal O_X
@@ -199,9 +234,14 @@ Steps <1>3 and <1>4 give an exact sequence
 \longrightarrow0.
 \]
 The sheaf first-isomorphism theorem gives the displayed quotient isomorphism.
+
 :::
 
-<1>6. Let now
+:::
+
+::: {.pf-step #s6}
+
+Let now
 \[
 X=\mathbb P^1_k,
 \qquad
@@ -219,7 +259,9 @@ Then
 \longrightarrow0
 \]
 is exact.
-::: {.proof}
+
+::: pf-proof
+
 The reduced subvariety $Y$ is the disjoint union of the two points $P$ and $Q$, so
 \[
 \mathcal O_Y
@@ -234,17 +276,24 @@ i_*\mathcal O_Y
 i_{P*}\mathcal O_P\oplus i_{Q*}\mathcal O_Q
 =\mathcal F.
 \]
-Apply the exact sequence from <1>5.
+Apply the exact sequence from step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. The induced map on global sections
+:::
+
+::: {.pf-step #s7}
+
+The induced map on global sections
 \[
 \Gamma(X,\mathcal O_X)
 \longrightarrow
 \Gamma(X,\mathcal F)
 \]
 is not surjective.
-::: {.proof}
+
+::: pf-proof
+
 Every global regular function on the projective integral curve $\mathbb P^1_k$ is constant, so
 \[
 \Gamma(X,\mathcal O_X)=k.
@@ -264,11 +313,18 @@ Its image is the diagonal subspace of $k\oplus k$, which does not contain, for e
 (1,0).
 \]
 Hence the map is not surjective.
+
 :::
 
-<1>8. Thus the global-section functor is left exact but not exact.
-::: {.proof}
-Applying global sections to the short exact sequence of <1>6 gives
+:::
+
+::: {.pf-step #s8}
+
+Thus the global-section functor is left exact but not exact.
+
+::: pf-proof
+
+Applying global sections to the short exact sequence of step [](#s6){.pf-ref} gives
 \[
 0\to
 \Gamma(X,\mathcal I_Y)
@@ -278,10 +334,15 @@ Applying global sections to the short exact sequence of <1>6 gives
 \Gamma(X,\mathcal F),
 \]
 which is exact at the first two terms because $\Gamma$ is left exact.
-Step <1>7 shows that the last map need not be surjective, so $\Gamma$ is not right exact and hence not exact.
+Step [](#s7){.pf-ref} shows that the last map need not be surjective, so $\Gamma$ is not right exact and hence not exact.
+
 :::
 
-<1>9. Continue with $X=\mathbb P^1_k$.
+:::
+
+::: {.pf-step #s9}
+
+Continue with $X=\mathbb P^1_k$.
 Let
 \[
 K=k(X)
@@ -291,7 +352,9 @@ There is a natural injection
 \[
 \boxed{\mathcal O_X\hookrightarrow\mathcal K.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every nonempty open subset of the irreducible variety $X$ is irreducible, so the constant sheaf $\mathcal K$ has
 \[
 \mathcal K(U)=K
@@ -305,9 +368,14 @@ Thus there is a natural injective map
 \]
 These inclusions commute with restriction, giving the sheaf morphism.
 It is injective on every open set, hence a monomorphism.
+
 :::
 
-<1>10. For every point $P\in X$, the stalk of the quotient sheaf is
+:::
+
+::: {.pf-step #s10}
+
+For every point $P\in X$, the stalk of the quotient sheaf is
 \[
 \boxed{
 (\mathcal K/\mathcal O_X)_P
@@ -316,7 +384,9 @@ K/\mathcal O_{X,P}
 =:I_P.
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 Sheaf stalks are exact.
 Taking the stalk at $P$ of
 \[
@@ -338,10 +408,17 @@ Since $X$ is irreducible,
 \mathcal K_P=K,
 \]
 so the quotient stalk is $K/\mathcal O_{X,P}$.
+
 :::
 
-<1>11. A section of $\mathcal K/\mathcal O_X$ over an open set $U$ has nonzero germ at only finitely many points of $U$.
-::: {.proof}
+:::
+
+::: {.pf-step #s11}
+
+A section of $\mathcal K/\mathcal O_X$ over an open set $U$ has nonzero germ at only finitely many points of $U$.
+
+::: pf-proof
+
 The support of any section of a sheaf is closed in $U$.
 We show more directly that it is finite.
 
@@ -353,16 +430,23 @@ On a neighborhood where the quotient section is represented by a rational functi
 Thus the support on that neighborhood is contained in the finite pole set of $f$.
 
 Taking the finite union over a finite cover shows that the support of the original section is finite.
+
 :::
 
-<1>12. Sending a section to its germs defines a sheaf morphism
+:::
+
+::: {.pf-step #s12}
+
+Sending a section to its germs defines a sheaf morphism
 \[
 \Phi:
 \mathcal K/\mathcal O_X
 \longrightarrow
 \bigoplus_{P\in X}i_P(I_P).
 \]
-::: {.proof}
+
+::: pf-proof
+
 By Hartshorne II.1.11, direct sums of sheaves on the noetherian space $X$ are computed sectionwise as filtered direct limits of finite direct sums.
 Hence
 \[
@@ -380,11 +464,16 @@ define
 \[
 \Phi_U(s)=(s_P)_{P\in U}.
 \]
-By <1>11 this tuple has finite support, so it belongs to the direct sum.
+By step [](#s11){.pf-ref} this tuple has finite support, so it belongs to the direct sum.
 Taking germs is compatible with restriction, so the maps $\Phi_U$ form a sheaf morphism.
+
 :::
 
-<1>13. The morphism $\Phi$ is an isomorphism:
+:::
+
+::: {.pf-step #s13}
+
+The morphism $\Phi$ is an isomorphism:
 \[
 \boxed{
 \mathcal K/\mathcal O_X
@@ -392,10 +481,12 @@ Taking germs is compatible with restriction, so the maps $\Phi_U$ form a sheaf m
 \bigoplus_{P\in X}i_P(I_P).
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 It suffices to check the map on stalks.
 
-At a point $Q\in X$, <1>10 gives
+At a point $Q\in X$, step [](#s10){.pf-ref} gives
 \[
 (\mathcal K/\mathcal O_X)_Q=I_Q.
 \]
@@ -407,20 +498,34 @@ Thus
 \]
 Under these identifications, $\Phi_Q$ is the identity map on $I_Q$.
 Therefore $\Phi$ is an isomorphism at every stalk, hence an isomorphism of sheaves.
+
 :::
 
-<1>14. Consequently,
+:::
+
+::: {.pf-step #s14}
+
+Consequently,
 \[
 \Gamma(X,\mathcal K/\mathcal O_X)
 \cong
 \bigoplus_{P\in X}K/\mathcal O_{X,P}.
 \]
-::: {.proof}
-Take global sections of the isomorphism in <1>13. As noted in <1>12, the direct sum is computed sectionwise on the noetherian space $X$, so its global sections are the direct sum of the skyscraper groups.
+
+::: pf-proof
+
+Take global sections of the isomorphism in step [](#s13){.pf-ref}. As noted in step [](#s12){.pf-ref}, the direct sum is computed sectionwise on the noetherian space $X$, so its global sections are the direct sum of the skyscraper groups.
+
 :::
 
-<1>15. Every finite collection of principal parts on $\mathbb P^1$ is the collection of principal parts of a single rational function.
-::: {.proof}
+:::
+
+::: {.pf-step #s15}
+
+Every finite collection of principal parts on $\mathbb P^1$ is the collection of principal parts of a single rational function.
+
+::: pf-proof
+
 Choose the affine coordinate
 \[
 x
@@ -493,30 +598,42 @@ At infinity, every term
 \]
 tends to zero in the parameter $t=1/x$ and is regular there, while the polynomial part has precisely the prescribed principal part $p_\infty$.
 Hence $f$ realizes every prescribed component $\xi_P$.
+
 :::
 
-<1>16. The map on global sections
+:::
+
+::: {.pf-step #s16}
+
+The map on global sections
 \[
 \Gamma(X,\mathcal K)
 \longrightarrow
 \Gamma(X,\mathcal K/\mathcal O_X)
 \]
 is surjective.
-::: {.proof}
+
+::: pf-proof
+
 Since $X$ is irreducible,
 \[
 \Gamma(X,\mathcal K)=K.
 \]
-By <1>14, a section of the quotient is a finite collection of principal parts.
-Step <1>15 constructs a rational function whose image in every
+By step [](#s14){.pf-ref}, a section of the quotient is a finite collection of principal parts.
+Step [](#s15){.pf-ref} constructs a rational function whose image in every
 \[
 K/\mathcal O_{X,P}
 \]
 is that prescribed principal part.
 Hence every global section of the quotient is in the image of $K$.
+
 :::
 
-<1>17. Therefore
+:::
+
+::: {.pf-step #s17}
+
+Therefore
 \[
 \boxed{
 0
@@ -530,19 +647,28 @@ Hence every global section of the quotient is in the image of $K$.
 }
 \]
 is exact.
-::: {.proof}
+
+::: pf-proof
+
 Left exactness of global sections applied to
 \[
 0\to\mathcal O_X\to\mathcal K\to\mathcal K/\mathcal O_X\to0
 \]
 gives exactness at the first two terms.
-Step <1>16 gives surjectivity of the final map.
+Step [](#s16){.pf-ref} gives surjectivity of the final map.
 
 Equivalently, the kernel consists of rational functions with no pole anywhere on $\mathbb P^1$, hence the global regular functions, which are the constants $k$.
+
 :::
 
-<1>18. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>2 prove (a), <1>3--<1>5 prove (b), <1>6--<1>8 prove (c), <1>9--<1>13 prove (d), and <1>14--<1>17 prove (e).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (b), steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove (c), steps [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref} prove (d), and steps [](#s14){.pf-ref}, [](#s15){.pf-ref}, [](#s16){.pf-ref} and [](#s17){.pf-ref} prove (e).
+
+:::
+
+:::
+
 :::

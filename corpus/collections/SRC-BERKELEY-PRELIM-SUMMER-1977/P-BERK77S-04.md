@@ -40,14 +40,19 @@ M=\max_{1\leq i,j\leq r}\abs{a_{ij}},
 $$
 where $A=(a_{ij})$.
 
-<1>1. For every integer $n\geq1$ and every pair $i,j$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $n\geq1$ and every pair $i,j$,
 $$
 \abs{(A^n)_{ij}}
 \leq
 r^{n-1}M^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $(i,j)$ entry of $A^n$ is
 $$
 (A^n)_{ij}
@@ -58,16 +63,22 @@ $$
 There are $r^{n-1}$ summands, and each is a product of $n$ entries of $A$,
 so each has absolute value at most $M^n$. The triangle inequality gives the
 stated bound.
+
 :::
 
-<1>2. For each fixed pair $i,j$, the scalar series
+:::
+
+::: {.pf-step #s2}
+
+For each fixed pair $i,j$, the scalar series
 $$
 \sum_{n=0}^{\infty}\frac{(A^n)_{ij}}{n!}
 $$
 converges absolutely.
 
-::: {.proof}
-The $n=0$ term is the finite number $(I)_{ij}$. For $n\geq1$, step <1>1
+::: pf-proof
+
+The $n=0$ term is the finite number $(I)_{ij}$. For $n\geq1$, step [](#s1){.pf-ref}
 gives
 $$
 \frac{\abs{(A^n)_{ij}}}{n!}
@@ -85,20 +96,31 @@ $$
 \frac{e^{rM}-1}{r}.
 $$
 Comparison therefore proves absolute convergence of the entry series.
+
 :::
 
-<1>3. The matrix series
+:::
+
+::: {.pf-step #s3}
+
+The matrix series
 $$
 I+A+\frac{A^2}{2!}+\cdots
 $$
 converges entrywise.
 
-::: {.proof}
-There are only $r^2$ matrix entries. Step <1>2 proves convergence of the
+::: pf-proof
+
+There are only $r^2$ matrix entries. Step [](#s2){.pf-ref} proves convergence of the
 series defining each one, which is exactly entrywise convergence.
+
 :::
 
-<1>4. The matrix
+:::
+
+::: {.pf-step #s4}
+
+The matrix
 $$
 \boxed{
 e^A
@@ -110,15 +132,22 @@ e^A
 $$
 is well defined.
 
-::: {.proof}
-Every scalar entry in the displayed matrix exists by step <1>2, so the
-$r\times r$ matrix is well defined. Step <1>3 shows that it is the
+::: pf-proof
+
+Every scalar entry in the displayed matrix exists by step [](#s2){.pf-ref}, so the
+$r\times r$ matrix is well defined. Step [](#s3){.pf-ref} shows that it is the
 entrywise sum of the stated matrix series.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>3--<1>4 give the required convergence and definition of $e^A$.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the required convergence and definition of $e^A$.
+
+:::
+
+:::
+
 :::

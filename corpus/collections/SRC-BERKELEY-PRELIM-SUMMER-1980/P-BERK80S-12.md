@@ -48,10 +48,15 @@ $$
 and for a point $r$ of a surface $\Sigma$ write $\operatorname{Tan}_r\Sigma$
 for the tangent plane of $\Sigma$ at $r$.
 
-<1>1. The function $D$ attains its minimum on $S\times T$ at some pair
+::: pf
+
+::: {.pf-step #s1}
+
+The function $D$ attains its minimum on $S\times T$ at some pair
 $(p,q)$.
 
-::: {.proof}
+::: pf-proof
+
 The ellipsoid $S$ is compact, so there is $R>0$ such that
 $$
 S\subset B_R(0).
@@ -73,11 +78,17 @@ S\times\bigl(T\cap \overline B_{R+M+1}(0)\bigr),
 $$
 which is compact. By continuity, $D$ attains its minimum there, at a pair
 $(p,q)$, and this pair minimizes $D$ on $S\times T$.
+
 :::
 
-<1>2. The points $p$ and $q$ are distinct.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The points $p$ and $q$ are distinct.
+
+::: pf-proof
+
 Every point $(x,y,z)\in S$ satisfies
 $$
 (z-10)^2\le1,
@@ -91,11 +102,17 @@ $$
 0<z=\frac1{x^2+y^2+1}\le1.
 $$
 Thus $S\cap T=\varnothing$, so $p\ne q$ and the line $pq$ is defined.
+
 :::
 
-<1>3. The line $pq$ is perpendicular to $S$ at $p$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The line $pq$ is perpendicular to $S$ at $p$.
+
+::: pf-proof
+
 Let $v\in\operatorname{Tan}_pS$. Choose a smooth curve
 $\gamma:(-\varepsilon,\varepsilon)\to S$ with
 $$
@@ -113,11 +130,17 @@ $$
 $$
 Since this holds for every $v\in\operatorname{Tan}_pS$, the vector $q-p$ is
 orthogonal to $\operatorname{Tan}_pS$.
+
 :::
 
-<1>4. The line $pq$ is perpendicular to $T$ at $q$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The line $pq$ is perpendicular to $T$ at $q$.
+
+::: pf-proof
+
 Let $w\in\operatorname{Tan}_qT$ and choose a smooth curve
 $\eta:(-\varepsilon,\varepsilon)\to T$ with
 $$
@@ -134,13 +157,19 @@ $$
 0=\psi'(0)=2(q-p)\cdot w.
 $$
 Hence $q-p$ is orthogonal to $\operatorname{Tan}_qT$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 give distinct points $p\in S$ and $q\in T$, and steps
-<1>3 and <1>4 show that the line $pq$ is perpendicular to $S$ at $p$ and to
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give distinct points $p\in S$ and $q\in T$, and steps
+[](#s3){.pf-ref} and [](#s4){.pf-ref} show that the line $pq$ is perpendicular to $S$ at $p$ and to
 $T$ at $q$.
+
 :::
+
+:::
+
 :::

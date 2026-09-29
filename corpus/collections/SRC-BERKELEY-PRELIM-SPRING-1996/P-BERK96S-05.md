@@ -42,23 +42,34 @@ N\coloneqq
 \end{pmatrix}.
 $$
 
-<1>1. The matrix $N$ is nonzero and satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The matrix $N$ is nonzero and satisfies
 $$
 N^2=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $(1,2)$-entry of $N$ is $1$, so $N\neq0$. Direct multiplication gives
 $N^2=0$.
+
 :::
 
-<1>2. There is no $2\times2$ complex matrix $B$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is no $2\times2$ complex matrix $B$ such that
 $$
 B^2=N.
 $$
 
-::: {.proof}
-Suppose that such a matrix $B$ exists. By step <1>1,
+::: pf-proof
+
+Suppose that such a matrix $B$ exists. By step [](#s1){.pf-ref},
 $$
 B^4=N^2=0,
 $$
@@ -71,22 +82,34 @@ The Cayley--Hamilton theorem therefore gives
 $$
 B^2=0.
 $$
-But $B^2=N$ and $N\neq0$ by step <1>1, a contradiction.
+But $B^2=N$ and $N\neq0$ by step [](#s1){.pf-ref}, a contradiction.
+
 :::
 
-<1>3. The proposed statement is
+:::
+
+::: {.pf-step #s3}
+
+The proposed statement is
 $$
 \boxed{\text{false}}.
 $$
 
-::: {.proof}
-Step <1>2 shows that the explicit complex matrix $N$ has no square root in
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that the explicit complex matrix $N$ has no square root in
 $M_2(\CC)$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the required disproof.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required disproof.
+
+:::
+
+:::
+
 :::

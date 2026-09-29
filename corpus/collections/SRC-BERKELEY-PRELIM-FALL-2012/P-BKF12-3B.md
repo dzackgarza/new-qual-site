@@ -49,9 +49,14 @@ B_X(x,r)
 $$
 and similarly for $Y$.
 
-<1>1. (a) If $X$ is nonempty, then $\pi$ is surjective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+(a) If $X$ is nonempty, then $\pi$ is surjective.
+
+::: pf-proof
+
 Choose $x_0\in X$, and let $y\in Y$. If
 $y=\pi(x_0)$, then $y$ is already in the image. Otherwise set
 $$
@@ -63,11 +68,17 @@ y\in\overline B_Y(\pi(x_0),r)
 =\pi\bigl(\overline B_X(x_0,r)\bigr)
 $$
 by the submetry property. Hence $y$ has a preimage under $\pi$.
+
 :::
 
-<1>2. (b) The map $\pi$ is $1$-Lipschitz, and therefore continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+(b) The map $\pi$ is $1$-Lipschitz, and therefore continuous.
+
+::: pf-proof
+
 Let $x,x'\in X$. If $x=x'$, the required inequality is immediate.
 Otherwise put
 $$
@@ -87,19 +98,25 @@ d_Y(\pi(x),\pi(x'))
 =d_X(x,x').
 $$
 Hence $\pi$ is $1$-Lipschitz.
+
 :::
 
-<1>3. For every $x\in X$ and $r>0$,
+:::
+
+::: {.pf-step #s3}
+
+For every $x\in X$ and $r>0$,
 $$
 \pi(B_X(x,r))=B_Y(\pi(x),r).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The inclusion
 $$
 \pi(B_X(x,r))\subseteq B_Y(\pi(x),r)
 $$
-follows from the $1$-Lipschitz estimate in step <1>2.
+follows from the $1$-Lipschitz estimate in step [](#s2){.pf-ref}.
 
 Conversely, let $y\in B_Y(\pi(x),r)$. If $y=\pi(x)$, then
 $y\in\pi(B_X(x,r))$. Otherwise
@@ -117,29 +134,41 @@ y\in\overline B_Y(\pi(x),s)
 $$
 Thus $y=\pi(x')$ for some $x'$ satisfying
 $d_X(x,x')\le s<r$, so $x'\in B_X(x,r)$.
+
 :::
 
-<1>4. (c) The map $\pi$ is open.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+(c) The map $\pi$ is open.
+
+::: pf-proof
+
 Let $U\subseteq X$ be open, and let $y\in\pi(U)$. Choose
 $x\in U$ with $\pi(x)=y$. Since $U$ is open, there is $r>0$ such that
 $$
 B_X(x,r)\subseteq U.
 $$
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 B_Y(y,r)
 =\pi(B_X(x,r))
 \subseteq\pi(U).
 $$
 Hence every point of $\pi(U)$ is interior, so $\pi(U)$ is open.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1, <1>2, and <1>4 prove parts (a), (b), and (c),
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s4){.pf-ref} prove parts (a), (b), and (c),
 respectively.
+
 :::
+
+:::
+
 :::

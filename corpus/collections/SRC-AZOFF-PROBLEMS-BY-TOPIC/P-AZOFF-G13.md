@@ -44,7 +44,11 @@ J(a)
 \frac{d\theta}{a+b\cos\theta}.
 $$
 
-<1>1. Under the substitution $z=e^{i\theta}$,
+::: pf
+
+::: {.pf-step #s1}
+
+Under the substitution $z=e^{i\theta}$,
 $$
 J(a)
 =
@@ -53,7 +57,8 @@ J(a)
 \frac{dz}{bz^2+2az+b}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the unit circle,
 $$
 d\theta=\frac{dz}{iz}
@@ -75,9 +80,14 @@ $$
 \end{aligned}
 $$
 Integrating once counterclockwise around the unit circle gives the claim.
+
 :::
 
-<1>2. The roots of
+:::
+
+::: {.pf-step #s2}
+
+The roots of
 $$
 bz^2+2az+b
 $$
@@ -92,7 +102,8 @@ $$
 \abs{\alpha}<1<\abs{\beta}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The quadratic formula gives the two roots. Their product is
 $$
 \alpha\beta=1.
@@ -110,17 +121,23 @@ because $a+d>b$. Therefore
 $$
 \abs{\beta}=\frac1{\abs{\alpha}}>1.
 $$
+
 :::
 
-<1>3. The auxiliary integral is
+:::
+
+::: {.pf-step #s3}
+
+The auxiliary integral is
 $$
 J(a)
 =
 \frac{2\pi}{\sqrt{a^2-b^2}}.
 $$
 
-::: {.proof}
-By step <1>2, only the simple pole $z=\alpha$ lies inside the unit circle.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, only the simple pole $z=\alpha$ lies inside the unit circle.
 For
 $$
 G(z)
@@ -149,7 +166,7 @@ $$
 =
 -\frac{i}{d}.
 $$
-The residue theorem and step <1>1 therefore give
+The residue theorem and step [](#s1){.pf-ref} therefore give
 $$
 J(a)
 =
@@ -159,9 +176,14 @@ J(a)
 \frac{2\pi}{d}.
 $$
 Substitute $d=\sqrt{a^2-b^2}$.
+
 :::
 
-<1>4. Differentiation with respect to $a$ may be passed through the
+:::
+
+::: {.pf-step #s4}
+
+Differentiation with respect to $a$ may be passed through the
 integral defining $J(a)$, and
 $$
 J'(a)
@@ -170,7 +192,8 @@ J'(a)
 \frac{d\theta}{(a+b\cos\theta)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $a>b$, choose
 $$
 0<\delta<a-b.
@@ -209,9 +232,14 @@ d\theta\\
 \frac{d\theta}{(a+b\cos\theta)^2}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The requested integral is
+:::
+
+::: {.pf-step #s5}
+
+The requested integral is
 $$
 \boxed{
 \int_0^{2\pi}
@@ -221,19 +249,26 @@ $$
 }
 $$
 
-::: {.proof}
-Differentiate the formula in step <1>3:
+::: pf-proof
+
+Differentiate the formula in step [](#s3){.pf-ref}:
 $$
 J'(a)
 =
 -\frac{2\pi a}{(a^2-b^2)^{3/2}}.
 $$
-Combine this with step <1>4 and multiply by $-1$.
+Combine this with step [](#s4){.pf-ref} and multiply by $-1$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

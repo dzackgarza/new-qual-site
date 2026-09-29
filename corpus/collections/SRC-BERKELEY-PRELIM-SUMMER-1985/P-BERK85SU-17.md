@@ -41,20 +41,30 @@ $$
 D(c,r)=\{z\in\CC:\abs{z-c}<r\}.
 $$
 
-<1>1. There is a number $\rho>0$ and a function $F$ analytic on
+::: pf
+
+::: pf-step
+
+There is a number $\rho>0$ and a function $F$ analytic on
 $$
 D(0,1)\cup D(1,\rho)
 $$
 such that $F=f$ on $D(0,1)$.
 
-::: {.proof}
+::: pf-proof
+
 By assumption, there is a function analytic on some disk
 $D(1,\rho)$ that agrees with $f$ on the nonempty overlap with the
 unit disk. The two analytic functions therefore glue to an analytic
 function $F$ on the displayed union.
+
 :::
 
-<1>2. Choose
+:::
+
+::: {.pf-step #s2}
+
+Choose
 $$
 0<\delta<\min\left\{\frac12,\frac\rho4\right\},
 \qquad
@@ -67,7 +77,8 @@ D(t,2\delta)
 D(0,1)\cup D(1,\rho).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $z\in D(t,2\delta)$. If $\abs{z}<1$, then
 $z\in D(0,1)$. If $\abs{z}\ge1$, then
 $$
@@ -80,9 +91,14 @@ $$
 \rho.
 $$
 Thus $z\in D(1,\rho)$. This proves the inclusion.
+
 :::
 
-<1>3. For every integer $k\ge0$,
+:::
+
+::: {.pf-step #s3}
+
+For every integer $k\ge0$,
 $$
 \frac{F^{(k)}(t)}{k!}
 =
@@ -91,7 +107,8 @@ a_n\binom{n}{k}t^{n-k},
 $$
 and this number is nonnegative.
 
-::: {.proof}
+::: pf-proof
+
 Since $0<t<1$, the original power series converges in a neighborhood
 of $t$ and may be differentiated term by term. Hence
 $$
@@ -102,9 +119,14 @@ a_n\frac{n!}{(n-k)!}t^{n-k}.
 $$
 Dividing by $k!$ gives the displayed formula. Every term is
 nonnegative because $a_n\ge0$ and $t>0$.
+
 :::
 
-<1>4. Set
+:::
+
+::: {.pf-step #s4}
+
+Set
 $$
 h=\frac{3\delta}{2}.
 $$
@@ -114,26 +136,33 @@ t+h=1+\frac\delta2>1,
 $$
 and the Taylor series of $F$ about $t$ converges at $t+h$.
 
-::: {.proof}
-By step <1>2, $F$ is analytic on the disk $D(t,2\delta)$, so its
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $F$ is analytic on the disk $D(t,2\delta)$, so its
 Taylor series about $t$ converges for $\abs{z-t}<2\delta$. Since
 $h=3\delta/2<2\delta$, it converges at $z=t+h$.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \sum_{n=0}^\infty a_n(t+h)^n<\infty.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 F(t+h)
 =
 \sum_{k=0}^\infty
 \frac{F^{(k)}(t)}{k!}h^k.
 $$
-Substituting step <1>3 gives
+Substituting step [](#s3){.pf-ref} gives
 $$
 F(t+h)
 =
@@ -157,32 +186,50 @@ a_n(t+h)^n.
 \end{aligned}
 $$
 The left-hand side is finite, so the displayed series converges.
+
 :::
 
-<1>6. The convergence in step <1>5 contradicts the assumption that
+:::
+
+::: {.pf-step #s6}
+
+The convergence in step [](#s5){.pf-ref} contradicts the assumption that
 the radius of convergence of
 $$
 \sum_{n=0}^\infty a_nz^n
 $$
 is $1$.
 
-::: {.proof}
-Step <1>4 gives $t+h>1$. A power series that converges at the point
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives $t+h>1$. A power series that converges at the point
 $z=t+h$ has radius of convergence at least $t+h>1$, contradicting
 the stated radius $1$.
+
 :::
 
-<1>7. Therefore $f$ cannot be analytically continued to a function
+:::
+
+::: {.pf-step #s7}
+
+Therefore $f$ cannot be analytically continued to a function
 analytic in a neighborhood of $1$.
 
-::: {.proof}
+::: pf-proof
+
 The assumption of such a continuation led to the contradiction in
-step <1>6.
+step [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

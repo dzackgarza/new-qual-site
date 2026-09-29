@@ -43,12 +43,17 @@ $$
 F(z)\coloneqq\frac{ze^{iz}}{z^2+1}.
 $$
 
-<1>1. The only pole of $F$ in the upper half-plane is $z=i$, and
+::: pf
+
+::: {.pf-step #s1}
+
+The only pole of $F$ in the upper half-plane is $z=i$, and
 $$
 \Res_{z=i}F(z)=\frac1{2e}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $z^2+1=(z-i)(z+i)$, the poles are $i$ and $-i$. Hence
 $$
 \Res_{z=i}F(z)
@@ -59,9 +64,14 @@ $$
 =
 \frac1{2e}.
 $$
+
 :::
 
-<1>2. For every $N>1$,
+:::
+
+::: {.pf-step #s2}
+
+For every $N>1$,
 $$
 \int_{-N}^{N}\frac{xe^{ix}}{x^2+1}\,dx
 +
@@ -70,9 +80,10 @@ $$
 \frac{\pi i}{e}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The contour consisting of the interval $[-N,N]$ followed by $C_N$
-encloses only the pole $i$. By the residue theorem and step <1>1,
+encloses only the pole $i$. By the residue theorem and step [](#s1){.pf-ref},
 $$
 \int_{-N}^{N}\frac{xe^{ix}}{x^2+1}\,dx
 +
@@ -82,14 +93,20 @@ $$
 =
 \frac{\pi i}{e}.
 $$
+
 :::
 
-<1>3. The semicircular contribution tends to zero:
+:::
+
+::: {.pf-step #s3}
+
+The semicircular contribution tends to zero:
 $$
 \lim_{N\to\infty}\int_{C_N}F(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Parametrize $C_N$ by $z=Ne^{i\theta}$ for $0\le\theta\le\pi$. Since
 $|e^{iz}|=e^{-N\sin\theta}$ and
 $|z^2+1|\ge N^2-1$, we obtain
@@ -120,9 +137,14 @@ $$
 \le
 \frac{\pi N}{N^2-1}\longrightarrow0.
 $$
+
 :::
 
-<1>4. Consequently,
+:::
+
+::: {.pf-step #s4}
+
+Consequently,
 $$
 \lim_{N\to\infty}
 \int_{-N}^{N}\frac{xe^{ix}}{x^2+1}\,dx
@@ -130,16 +152,23 @@ $$
 \frac{\pi i}{e}.
 $$
 
-::: {.proof}
-Let $N\to\infty$ in the identity from step <1>2 and use step <1>3.
+::: pf-proof
+
+Let $N\to\infty$ in the identity from step [](#s2){.pf-ref} and use step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. The requested limit is
+:::
+
+::: {.pf-step #s5}
+
+The requested limit is
 $$
 \boxed{\frac{\pi}{e}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For real $x$,
 $$
 \frac{xe^{ix}}{x^2+1}
@@ -148,18 +177,24 @@ $$
 +
 i\frac{x\sin x}{x^2+1}.
 $$
-Taking imaginary parts in step <1>4 therefore gives
+Taking imaginary parts in step [](#s4){.pf-ref} therefore gives
 $$
 \lim_{N\to\infty}
 \int_{-N}^{N}\frac{x\sin x}{x^2+1}\,dx
 =
 \frac{\pi}{e}.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the required value.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the required value.
+
+:::
+
+:::
+
 :::

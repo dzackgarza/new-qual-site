@@ -48,9 +48,14 @@ The map $\varepsilon$ sends $[E]_v$ to $[E]$.
 For a bounded complex of locally free coherent sheaves, put $\chi_v(E_\bullet)=\sum_i(-1)^i[E_i]_v$.
 Complexes in this proof are homologically indexed.
 
-<1>1. Every coherent sheaf has a finite locally free resolution. More precisely, every resolution by locally free coherent sheaves has a locally free kernel in every sufficiently large degree.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every coherent sheaf has a finite locally free resolution. More precisely, every resolution by locally free coherent sheaves has a locally free kernel in every sufficiently large degree.
+
+::: pf-proof
+
 Regular local rings are factorial [@Har10a, Remark II.6.11.1A], so [[P-AGH368KLEIMAN]] applies to $X$.
 Successively resolving coherent kernels gives
 $$
@@ -75,11 +80,17 @@ $$
 The same argument applies to any such resolution.
 It uses the finite local dimension at each point, not a uniform bound on $\dim X$.
 This proves (a).
+
 :::
 
-<1>2. A bounded exact complex $V_\bullet$ of locally free coherent sheaves has $\chi_v(V_\bullet)=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A bounded exact complex $V_\bullet$ of locally free coherent sheaves has $\chi_v(V_\bullet)=0$.
+
+::: pf-proof
+
 Shift the indices so that the nonzero terms lie in degrees $0,\ldots,t$.
 Put $Z_0=V_0$ and $Z_i=\ker(V_i\to V_{i-1})$ for $i\ge1$.
 Exactness gives short exact sequences
@@ -90,11 +101,17 @@ $$
 Starting with $Z_0$, every $Z_i$ is locally free: locally the surjection onto the locally free $Z_{i-1}$ splits, so its kernel is locally a direct summand of a finite free module.
 The defining relations of $K_1(X)$ give $[V_i]_v=[Z_i]_v+[Z_{i-1}]_v$.
 Alternating these identities cancels every $Z_i$, proving the assertion.
+
 :::
 
-<1>3. Any two finite locally free resolutions $E_\bullet\to F$ and $D_\bullet\to F$ admit a finite locally free resolution $R_\bullet\to F$ with chain maps to both inducing $\id_F$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Any two finite locally free resolutions $E_\bullet\to F$ and $D_\bullet\to F$ admit a finite locally free resolution $R_\bullet\to F$ with chain maps to both inducing $\id_F$.
+
+::: pf-proof
+
 Set $Z_0^R=Z_0^E=Z_0^D=F$.
 Suppose $R_i$ and the comparison maps have been constructed through degree $j-1$, exactly resolving $F$ up to that degree.
 Let $Z_j^R$ be the kernel at $R_{j-1}$, and define $Z_j^E,Z_j^D$ in the same way using the augmented target resolutions.
@@ -109,31 +126,43 @@ Choose a locally free coherent sheaf $R_j$ surjecting onto $T_j$, using [[P-AGH3
 Its projection to $Z_j^R$ defines the next resolution differential, while its projections to $E_j,D_j$ extend the chain maps.
 This constructs a locally free resolution $R_\bullet\to F$ and comparison maps in all degrees.
 
-By step <1>1, choose $N$ larger than the lengths of both target resolutions such that $Z_N^R$ is locally free.
+By step [](#s1){.pf-ref}, choose $N$ larger than the lengths of both target resolutions such that $Z_N^R$ is locally free.
 Truncate $R$ by placing $Z_N^R$ in degree $N$ and zero in higher degrees.
 The maps to the targets still define chain maps: the image of $Z_N^R$ in either target's degree $N-1$ lies in its kernel there, which is the image of its zero degree-$N$ term.
 Thus those images are zero.
 The resulting finite resolution has the required comparisons.
+
 :::
 
-<1>4. The value $\chi_v(E_\bullet)$ for a finite locally free resolution of $F$ is independent of the chosen resolution.
+:::
 
-::: {.proof}
-Take $R$ and its comparison $\alpha:R_\bullet\to E_\bullet$ from step <1>3, omitting the augmentations when taking their homology and mapping cone.
+::: {.pf-step #s4}
+
+The value $\chi_v(E_\bullet)$ for a finite locally free resolution of $F$ is independent of the chosen resolution.
+
+::: pf-proof
+
+Take $R$ and its comparison $\alpha:R_\bullet\to E_\bullet$ from step [](#s3){.pf-ref}, omitting the augmentations when taking their homology and mapping cone.
 Both complexes have homology only in degree zero, where $\alpha$ induces $\id_F$; their negative-degree terms are zero.
 The mapping cone is therefore a bounded exact complex, by the long exact homology sequence of a mapping cone.
-Its degree-$i$ term is $E_i\oplus R_{i-1}$, so step <1>2 gives
+Its degree-$i$ term is $E_i\oplus R_{i-1}$, so step [](#s2){.pf-ref} gives
 $$
 0=\chi_v(\operatorname{Cone}\alpha)=\chi_v(E_\bullet)-\chi_v(R_\bullet).
 $$
 Applying the same argument to the comparison with $D_\bullet$ gives $\chi_v(D_\bullet)=\chi_v(R_\bullet)$.
 Thus the two values agree, as required.
 Define $\delta(F)$ to be this common value.
+
 :::
 
-<1>5. For every short exact sequence $0\to F'\to F\to F''\to0$ of coherent sheaves, one has $\delta(F)=\delta(F')+\delta(F'')$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+For every short exact sequence $0\to F'\to F\to F''\to0$ of coherent sheaves, one has $\delta(F)=\delta(F')+\delta(F'')$.
+
+::: pf-proof
+
 First construct a degreewise exact triple of locally free resolutions.
 For any short exact sequence $0\to A\xrightarrow{a}B\xrightarrow{b}C\to0$ of coherent sheaves, choose epimorphisms $u:W\twoheadrightarrow A$ and $v:V\twoheadrightarrow B$ with $W,V$ locally free of finite rank.
 The split exact sequence
@@ -145,17 +174,23 @@ All three vertical maps are epimorphisms, and their kernels form a short exact s
 Apply this construction repeatedly to the kernel sequences, starting from the given sequence of $F',F,F''$.
 It produces locally free resolutions $E'_\bullet,E_\bullet,E''_\bullet$ and a degreewise split exact sequence of these complexes, with their augmentations to $F',F,F''$.
 
-Step <1>1 allows one common degree $N$ in which the three resolution kernels are locally free.
+Step [](#s1){.pf-ref} allows one common degree $N$ in which the three resolution kernels are locally free.
 Their kernel sequence is still short exact.
 Truncation in that degree therefore gives a short exact sequence of finite locally free resolutions; at the terminal degree it need not split globally, but its terms are locally free.
 The defining relations of $K_1(X)$ give $[E_i]_v=[E'_i]_v+[E''_i]_v$ in every degree.
-Alternating and using step <1>4 proves the desired additivity.
+Alternating and using step [](#s4){.pf-ref} proves the desired additivity.
 Hence $\delta$ descends to a homomorphism $K(X)\to K_1(X)$.
+
 :::
 
-<1>6. The homomorphism $\delta$ is inverse to $\varepsilon$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The homomorphism $\delta$ is inverse to $\varepsilon$.
+
+::: pf-proof
+
 For a locally free coherent sheaf $E$, its length-zero resolution gives $\delta(E)=[E]_v$.
 Thus $\delta\varepsilon$ fixes every generator of $K_1(X)$.
 For any coherent $F$, break a finite locally free resolution into its coherent kernel short exact sequences.
@@ -169,12 +204,18 @@ $$
 \boxed{K_1(X)\xrightarrow[\varepsilon]{\cong}K(X),
 \qquad \varepsilon^{-1}([F])=\sum_i(-1)^i[E_i]_v.}
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a).
-Steps <1>2--<1>4 prove resolution independence, step <1>5 proves additivity, and step <1>6 proves the inverse identities, completing (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a).
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove resolution independence, step [](#s5){.pf-ref} proves additivity, and step [](#s6){.pf-ref} proves the inverse identities, completing (b).
+
+:::
+
+:::
+
 :::

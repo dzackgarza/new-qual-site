@@ -21,7 +21,12 @@ Show that $Y$ is closed.
 :::
 
 ::: {.solution}
-<1>1. Let $(y_k)$ be a sequence in $Y$ converging to
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $(y_k)$ be a sequence in $Y$ converging to
 $$
 y\in\RR^n.
 $$
@@ -30,13 +35,20 @@ $$
 |x_k-y_k|=r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is possible by the definition of $Y$.
+
 :::
 
-<1>2. The sequence $(x_k)$ is bounded.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The sequence $(x_k)$ is bounded.
+
+::: pf-proof
+
 Since $y_k\to y$, the sequence $(y_k)$ is bounded. Hence there is $M>0$ such that
 $$
 |y_k|\leq M
@@ -50,21 +62,33 @@ $$
 r+M.
 $$
 Thus $(x_k)$ is bounded.
+
 :::
 
-<1>3. Some subsequence $(x_{k_j})$ converges to a point $x\in X$.
+:::
 
-::: {.proof}
-By step <1>2 and the Bolzano--Weierstrass theorem in $\RR^n$, $(x_k)$ has a convergent subsequence
+::: {.pf-step #s3}
+
+Some subsequence $(x_{k_j})$ converges to a point $x\in X$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} and the Bolzano--Weierstrass theorem in $\RR^n$, $(x_k)$ has a convergent subsequence
 $$
 x_{k_j}\longrightarrow x.
 $$
 Every $x_{k_j}$ lies in the closed set $X$, so its limit $x$ also lies in $X$.
+
 :::
 
-<1>4. The limit point $y$ belongs to $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The limit point $y$ belongs to $Y$.
+
+::: pf-proof
+
 Along the same subsequence,
 $$
 y_{k_j}\longrightarrow y.
@@ -77,21 +101,33 @@ $$
 =
 r.
 $$
-Since $x\in X$ by step <1>3, the definition of $Y$ gives $y\in Y$.
+Since $x\in X$ by step [](#s3){.pf-ref}, the definition of $Y$ gives $y\in Y$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{Y\text{ is closed}}.
 $$
 
-::: {.proof}
-Steps <1>1--<1>4 show that every convergent sequence in $Y$ has its limit in $Y$. In the metric space $\RR^n$, this is equivalent to closedness.
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} show that every convergent sequence in $Y$ has its limit in $Y$. In the metric space $\RR^n$, this is equivalent to closedness.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

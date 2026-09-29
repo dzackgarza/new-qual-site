@@ -42,8 +42,15 @@ Show that $f$ must be a rational function.
 :::
 
 ::: {.solution}
-<1>1. A meromorphic function on the sphere is rational; in particular, part (a) holds.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A meromorphic function on the sphere is rational; in particular, part (a) holds.
+
+::: pf-proof
+
 Suppose $f$ is meromorphic on $\mathbb C$ and has either
 a pole or a removable singularity at infinity. Then it
 has no finite pole for $|z|>R$, for some $R>0$. Its
@@ -78,10 +85,17 @@ f(z)=b_0+P_\infty(z)+\sum_{j=1}^{m}\sum_{\ell=1}^{d_j}
 $$
 which is rational. This proves (a), and also the removable
 case at infinity that will be needed in (b).
+
 :::
 
-<1>2. The boundary condition in part (b) produces a meromorphic function on the sphere.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The boundary condition in part (b) produces a meromorphic function on the sphere.
+
+::: pf-proof
+
 Let $f$ be as in part (b). Define for $|z|>1$
 $$
 F(z)=\frac{1}{\overline{f(1/\overline z)}}.
@@ -155,12 +169,25 @@ F(z)=\frac{z^k}{h^*(1/z)},
 $$
 so infinity is removable when $k=0$ and is a pole when $k>0$. Hence $F$ is
 meromorphic on the Riemann sphere.
+
 :::
 
-<1>3. The reflected extension is rational, proving part (b).
-::: {.proof}
-By step <1>1, the meromorphic sphere function $F$ from step <1>2 is rational.
+:::
+
+::: pf-step
+
+The reflected extension is rational, proving part (b).
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the meromorphic sphere function $F$ from step [](#s2){.pf-ref} is rational.
 On the unit disk its definition is exactly the original $f$. Therefore $f$ is
 the restriction to $\Delta$ of a rational function, as required.
+
 :::
+
+:::
+
+:::
+
 :::

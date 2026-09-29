@@ -37,8 +37,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Show that the moment ratios are increasing and bounded above.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that the moment ratios are increasing and bounded above.
+
+::: pf-proof
+
 Put
 \[
 M:=\|f\|_\infty>0,
@@ -70,10 +77,17 @@ Thus $(r_k)$ is increasing and bounded, so
 r_k\longrightarrow L
 \]
 for some $L\le M$.
+
 :::
 
-<1>2. Recall the finite-measure $L^k$-norm limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Recall the finite-measure $L^k$-norm limit.
+
+::: pf-proof
+
 We claim
 \[
 \alpha_k^{1/k}=\|f\|_k\longrightarrow M.
@@ -104,10 +118,17 @@ Letting $a\uparrow M$ proves
 \[
 \boxed{\alpha_k^{1/k}\to M.}
 \]
+
 :::
 
-<1>3. Identify the ratio limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Identify the ratio limit.
+
+::: pf-proof
+
 Since
 \[
 \alpha_k=\alpha_1\prod_{j=1}^{k-1}r_j,
@@ -130,5 +151,11 @@ and consequently
 \[
 \boxed{\lim_{k\to\infty}\frac{\alpha_{k+1}}{\alpha_k}=\|f\|_\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

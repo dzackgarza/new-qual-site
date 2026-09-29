@@ -35,7 +35,12 @@ for every $x>0$.
 :::
 
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$
 g:\RR\longrightarrow\RR,
 \qquad
@@ -47,7 +52,8 @@ g'(x)>0
 $$
 for every $x\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 By the product rule,
 $$
 \begin{aligned}
@@ -58,21 +64,33 @@ g'(x)
 $$
 The factor $e^{-x}$ is positive, and the hypothesis gives
 $f'(x)-f(x)>0$. Thus $g'(x)>0$.
+
 :::
 
-<1>2. The function $g$ is strictly increasing on $\RR$.
-
-::: {.proof}
-This follows from step <1>1 and the mean value theorem.
 :::
 
-<1>3. For every $x>0$,
+::: {.pf-step #s2}
+
+The function $g$ is strictly increasing on $\RR$.
+
+::: pf-proof
+
+This follows from step [](#s1){.pf-ref} and the mean value theorem.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+For every $x>0$,
 $$
 g(x)>0.
 $$
 
-::: {.proof}
-By step <1>2, if $x>0$ then
+::: pf-proof
+
+By step [](#s2){.pf-ref}, if $x>0$ then
 $$
 g(x)>g(0).
 $$
@@ -80,24 +98,36 @@ Since $f(0)=0$,
 $$
 g(0)=e^0f(0)=0.
 $$
+
 :::
 
-<1>4. For every $x>0$,
+:::
+
+::: {.pf-step #s4}
+
+For every $x>0$,
 $$
 \boxed{f(x)>0}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 From the definition of $g$,
 $$
 f(x)=e^x g(x).
 $$
-For $x>0$, step <1>3 gives $g(x)>0$, and $e^x>0$. Hence $f(x)>0$.
+For $x>0$, step [](#s3){.pf-ref} gives $g(x)>0$, and $e^x>0$. Hence $f(x)>0$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -31,23 +31,34 @@ If the complex conjugate of a complex matrix is equal to its transpose, prove th
 ::: {.solution}
 Let $A$ be the matrix in the problem.
 
-<1>1. The hypothesis implies that $A$ is Hermitian:
+::: pf
+
+::: {.pf-step #s1}
+
+The hypothesis implies that $A$ is Hermitian:
 $$
 A^*=A.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The conjugate transpose is $A^*=(\overline A)^T$. The hypothesis
 $\overline A=A^T$ therefore gives
 $$
 A^*=(\overline A)^T=(A^T)^T=A.
 $$
+
 :::
 
-<1>2. For every vector $v$, the scalar $v^*Av$ is real.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #s2}
+
+For every vector $v$, the scalar $v^*Av$ is real.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \overline{v^*Av}
 =(v^*Av)^*
@@ -55,17 +66,23 @@ $$
 =v^*Av.
 $$
 A complex number equal to its conjugate is real.
+
 :::
 
-<1>3. Every eigenvalue $\lambda$ of $A$ is real.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every eigenvalue $\lambda$ of $A$ is real.
+
+::: pf-proof
+
 Let $v\ne0$ satisfy $Av=\lambda v$. Multiplying on the left by $v^*$
 gives
 $$
 v^*Av=\lambda v^*v.
 $$
-By step <1>2, the left-hand side is real, while
+By step [](#s2){.pf-ref}, the left-hand side is real, while
 $$
 v^*v=\sum_j\abs{v_j}^2>0
 $$
@@ -73,11 +90,17 @@ is a positive real number. Hence
 $$
 \lambda=\frac{v^*Av}{v^*v}\in\RR.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves that all eigenvalues of $A$ are real.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves that all eigenvalues of $A$ are real.
+
+:::
+
+:::
+
 :::

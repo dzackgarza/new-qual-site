@@ -42,13 +42,18 @@ C_n\coloneqq\{z\in\CC:|z-2\pi n|=\rho\},
 D_n\coloneqq\{z\in\CC:|z-2\pi n|<\rho\}.
 $$
 
-<1>1. There is a constant $m_\rho>0$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a constant $m_\rho>0$ such that
 $$
 |\sin z|\geq m_\rho
 $$
 for every $z\in C_n$ and every $n$.
 
-::: {.proof}
+::: pf-proof
+
 The circle $|w|=\rho$ contains no zero of $\sin w$, because the zeros
 of sine are the integer multiples of $\pi$ and $0<\rho<\pi$.
 Hence compactness gives
@@ -66,16 +71,22 @@ $$
 \geq m_\rho
 $$
 on $C_n$.
+
 :::
 
-<1>2. For all sufficiently large $n$,
+:::
+
+::: {.pf-step #s2}
+
+For all sufficiently large $n$,
 $$
 \left|\frac1{z+i}\right|<m_\rho
 $$
 for every $z\in C_n$, and the closed disk bounded by $C_n$ does not
 contain the pole $-i$.
 
-::: {.proof}
+::: pf-proof
+
 For $z\in C_n$,
 $$
 |z+i|
@@ -93,17 +104,23 @@ $$
 >\rho,
 $$
 so the pole $-i$ lies outside $\overline{D_n}$.
+
 :::
 
-<1>3. For every sufficiently large $n$, the function
+:::
+
+::: {.pf-step #s3}
+
+For every sufficiently large $n$, the function
 $$
 f(z)=\sin z+\frac1{z+i}
 $$
 has exactly one zero in $D_n$, counted with multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 For such $n$, both $\sin z$ and $1/(z+i)$ are holomorphic on a
-neighborhood of $\overline{D_n}$. Steps <1>1 and <1>2 give
+neighborhood of $\overline{D_n}$. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 \left|\frac1{z+i}\right|
 <
@@ -114,15 +131,21 @@ of zeros in $D_n$.
 
 Since $\rho<\pi$, the only zero of sine in $D_n$ is the simple zero
 $2\pi n$. Hence $f$ has exactly one zero there.
+
 :::
 
-<1>4. These zeros give infinitely many distinct zeros of $f$ in the
+:::
+
+::: {.pf-step #s4}
+
+These zeros give infinitely many distinct zeros of $f$ in the
 strip
 $$
 |\operatorname{Im}z|<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $z\in D_n$, then
 $$
 |\operatorname{Im}z|
@@ -130,15 +153,21 @@ $$
 <\rho
 <\varepsilon,
 $$
-so every zero from step <1>3 lies in the required strip. Moreover,
+so every zero from step [](#s3){.pf-ref} lies in the required strip. Moreover,
 the disks $D_n$ are pairwise disjoint because their centers are
 $2\pi$ apart and $\rho<\pi$. Thus the zeros obtained for distinct
 large $n$ are distinct. There are infinitely many such $n$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the required assertion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the required assertion.
+
+:::
+
+:::
+
 :::

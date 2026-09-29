@@ -87,11 +87,16 @@ hypothesis in (b) is $\characteristic k\neq3,7$.
 For part (a), let $X$ be nonhyperelliptic.  For part (c) we work over
 $\CC$, as in the note following the exercise.
 
-<1>1. Every automorphism $\sigma$ of a nonhyperelliptic genus-$3$ curve
+::: pf
+
+::: {.pf-step #s1}
+
+Every automorphism $\sigma$ of a nonhyperelliptic genus-$3$ curve
 $X$ is induced by a unique element of $\PGL_3$ on its canonical plane
 quartic.
 
-::: {.proof}
+::: pf-proof
+
 Pullback of differentials gives an invertible linear map
 $$
 \sigma^*:H^0(X,K_X)\longrightarrow H^0(X,K_X).
@@ -110,12 +115,18 @@ restriction of the displayed projective transformation.  Uniqueness follows
 because a projective transformation of $\PP^2$ fixing the plane quartic
 pointwise fixes more than four points in general position and is therefore
 the identity.
+
 :::
 
-<1>2. If $\characteristic k=7$, the equation in part (b) does not define a
+:::
+
+::: {.pf-step #s2}
+
+If $\characteristic k=7$, the equation in part (b) does not define a
 nonsingular genus-$3$ curve.
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 F=x^3y+y^3z+z^3x
@@ -137,16 +148,22 @@ F_z(P)=8+48=56=0.
 $$
 Thus $P$ is singular.  This proves the characteristic-$7$ correction stated
 in the erratum.
+
 :::
 
-<1>3. Assume $\characteristic k\neq2,3,7$.  The Klein quartic
+:::
+
+::: {.pf-step #s3}
+
+Assume $\characteristic k\neq2,3,7$.  The Klein quartic
 $$
 X=V(x^3y+y^3z+z^3x)
 $$
 has a subgroup of automorphisms isomorphic to $\PSL_2(\FF_7)$ and therefore
 of order $168$.
 
-::: {.proof}
+::: pf-proof
+
 Let $\zeta$ be a primitive seventh root of unity and put
 $$
 S=\begin{pmatrix}
@@ -179,16 +196,22 @@ $$
 =168.
 $$
 Thus $\PSL_2(\FF_7)\subseteq\Aut X$.
+
 :::
 
-<1>4. If $\characteristic k=0$, or if $\characteristic k=p>4$ with
+:::
+
+::: {.pf-step #s4}
+
+If $\characteristic k=0$, or if $\characteristic k=p>4$ with
 $p\neq7$, then
 $$
 \Aut X\cong\PSL_2(\FF_7)
 $$
 and $\abs{\Aut X}=168$.
 
-::: {.proof}
+::: pf-proof
+
 The quartic is nonsingular in these characteristics.  Indeed, a common zero
 of the three partial derivatives has no zero coordinate, and multiplying
 $$
@@ -201,7 +224,7 @@ $$
 which is impossible unless the characteristic is $2$ or $7$.  Thus $X$ has
 genus $3$.
 
-By step <1>3 its automorphism group contains $168$ elements.  In
+By step [](#s3){.pf-ref} its automorphism group contains $168$ elements.  In
 characteristic $0$, Hurwitz's theorem from
 [[P-AGH425HURWITZAUTOMORPHISMBOUND|Exercise IV.2.5]] gives
 $$
@@ -209,15 +232,21 @@ $$
 $$
 For $p>4$, the positive-characteristic extension stated in the same exercise
 gives the identical bound, with its sole exceptional genus-$3$ characteristic
-being $p=7$; that characteristic has already been excluded in step <1>2.
+being $p=7$; that characteristic has already been excluded in step [](#s2){.pf-ref}.
 Consequently equality holds in every case covered by this step, and the
-subgroup in step <1>3 is the full automorphism group.
+subgroup in step [](#s3){.pf-ref} is the full automorphism group.
+
 :::
 
-<1>5. The conclusion of part (b) also holds in characteristic $2$; the
-Hurwitz-bound argument in step <1>4 is not the proof in this characteristic.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The conclusion of part (b) also holds in characteristic $2$; the
+Hurwitz-bound argument in step [](#s4){.pf-ref} is not the proof in this characteristic.
+
+::: pf-proof
+
 In characteristic $2$ the curve is nonsingular: the equations
 $$
 x^2y+z^3=x^3+y^2z=y^3+z^2x=0
@@ -245,19 +274,25 @@ $$
 and $\GL_3(\FF_2)$ is the simple group of order $168$.  This is a wild
 automorphism case, so the characteristic-zero Hurwitz bound is not being
 invoked.
+
 :::
 
-<1>6. Over $\CC$, the locus of smooth plane quartics with a nontrivial
+:::
+
+::: {.pf-step #s6}
+
+Over $\CC$, the locus of smooth plane quartics with a nontrivial
 automorphism is a proper subset of the $14$-dimensional parameter space of
 plane quartics.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 V=H^0(\PP^2,\OO_{\PP^2}(4)),\qquad \PP(V)\cong\PP^{14},
 $$
 and let $U\subseteq\PP(V)$ be the nonempty open subset parametrizing smooth
-quartics.  By step <1>1, automorphisms of the corresponding curves are
+quartics.  By step [](#s1){.pf-ref}, automorphisms of the corresponding curves are
 exactly their projective stabilizers.
 
 Every nontrivial automorphism has finite order, bounded by $168$ by
@@ -321,12 +356,18 @@ $$
 There are only finitely many conjugacy types under consideration, so their
 union has dimension at most $12$.  Its intersection with $U$ is therefore a
 proper subset of $U$.
+
 :::
 
-<1>7. A sufficiently general genus-$3$ curve over $\CC$ has no
+:::
+
+::: {.pf-step #s7}
+
+A sufficiently general genus-$3$ curve over $\CC$ has no
 automorphisms except the identity.
 
-::: {.proof}
+::: pf-proof
+
 The smooth plane quartics form a $14$-dimensional open subset of
 $\PP(V)$.  Their stabilizers in $\PGL_3$ are finite by
 [[P-AGH452AUTOMORPHISMGROUPFINITE|Exercise IV.5.2]], so the family of
@@ -340,16 +381,22 @@ The hyperelliptic locus has dimension $2g-1=5$: such a curve is determined
 by its unordered set of $2g+2=8$ branch points on $\PP^1$, a family of
 dimension $8-\dim\PGL_2=5$.  Hence it is proper.  Every nonhyperelliptic
 genus-$3$ curve is a smooth plane quartic by its canonical embedding, and
-step <1>6 shows that the nontrivial-stabilizer locus among those plane
+step [](#s6){.pf-ref} shows that the nontrivial-stabilizer locus among those plane
 quartics is also proper.  Therefore outside these proper loci the
 automorphism group is trivial.  This is the assertion of part (c).
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves the corrected part (a).  Steps <1>2--<1>5 prove part (b)
-with the necessary characteristic-$7$ correction.  Steps <1>6--<1>7 prove
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the corrected part (a).  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b)
+with the necessary characteristic-$7$ correction.  Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} prove
 part (c) over $\CC$.
+
 :::
+
+:::
+
 :::

@@ -50,9 +50,14 @@ M=
 $$
 Then the system is $Y'=MY$.
 
-<1>1. The eigenvalues of $M$ are $2$ and $3$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The eigenvalues of $M$ are $2$ and $3$.
+
+::: pf-proof
+
 The characteristic polynomial is
 $$
 \begin{aligned}
@@ -71,9 +76,14 @@ $$
 (\lambda-2)(\lambda-3).
 \end{aligned}
 $$
+
 :::
 
-<1>2. Eigenvectors for the eigenvalues $2$ and $3$ are respectively
+:::
+
+::: {.pf-step #s2}
+
+Eigenvectors for the eigenvalues $2$ and $3$ are respectively
 $$
 v_2=
 \begin{pmatrix}
@@ -88,7 +98,8 @@ v_3=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 Mv_2
@@ -111,11 +122,17 @@ Mv_3
 =
 3v_3.
 $$
+
 :::
 
-<1>3. The vectors $v_2,v_3$ form a basis of $\RR^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The vectors $v_2,v_3$ form a basis of $\RR^2$.
+
+::: pf-proof
+
 Their determinant is
 $$
 \det
@@ -127,9 +144,14 @@ $$
 1\neq0.
 $$
 Hence they are linearly independent and therefore form a basis.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 Y(x)=c_1(x)v_2+c_2(x)v_3,
 $$
@@ -140,14 +162,15 @@ c_1'=2c_1,
 c_2'=3c_2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiating the basis expansion gives
 $$
 Y'
 =
 c_1'v_2+c_2'v_3.
 $$
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 MY
 =
@@ -155,11 +178,16 @@ c_1Mv_2+c_2Mv_3
 =
 2c_1v_2+3c_2v_3.
 $$
-Since $v_2,v_3$ are a basis by step <1>3, equality $Y'=MY$ holds
+Since $v_2,v_3$ are a basis by step [](#s3){.pf-ref}, equality $Y'=MY$ holds
 exactly when the corresponding coefficients agree.
+
 :::
 
-<1>5. The general solution is
+:::
+
+::: {.pf-step #s5}
+
+The general solution is
 $$
 \boxed{
 Y(x)
@@ -180,8 +208,9 @@ C_2e^{3x}
 C_1,C_2\in\RR.
 $$
 
-::: {.proof}
-The scalar equations in step <1>4 have the general solutions
+::: pf-proof
+
+The scalar equations in step [](#s4){.pf-ref} have the general solutions
 $$
 c_1(x)=C_1e^{2x},
 \qquad
@@ -189,10 +218,15 @@ c_2(x)=C_2e^{3x}.
 $$
 Substituting these into the basis expansion gives the displayed
 formula. Conversely, every displayed function satisfies the two
-scalar equations and hence, by step <1>4, the original system.
+scalar equations and hence, by step [](#s4){.pf-ref}, the original system.
+
 :::
 
-<1>6. Equivalently,
+:::
+
+::: {.pf-step #s6}
+
+Equivalently,
 $$
 \boxed{
 \begin{aligned}
@@ -202,13 +236,20 @@ y_2(x)&=C_1e^{2x}+3C_2e^{3x}.
 }
 $$
 
-::: {.proof}
-This is the coordinate form of the vector solution in step <1>5.
+::: pf-proof
+
+This is the coordinate form of the vector solution in step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>5 and <1>6 give all solutions of the system.
 :::
+
+::: pf-qed
+
+Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} give all solutions of the system.
+
+:::
+
+:::
+
 :::

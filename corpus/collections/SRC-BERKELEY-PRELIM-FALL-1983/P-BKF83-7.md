@@ -24,7 +24,12 @@ Let $G$ be a finite group. Suppose $G\times G$ has exactly four normal subgroups
 :::
 
 ::: {.solution}
-<1>1. The group $G$ is nontrivial, and the following four normal
+
+::: pf
+
+::: {.pf-step #s1}
+
+The group $G$ is nontrivial, and the following four normal
 subgroups of $G\times G$ are distinct:
 $$
 \{1\}\times\{1\},
@@ -36,18 +41,25 @@ G\times\{1\},
 G\times G.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $G$ were trivial, then $G\times G$ would be trivial and would have only
 one normal subgroup, contrary to the hypothesis.
 
 For nontrivial $G$, the four displayed subgroups are pairwise distinct.
 Each is normal because each is a direct product of normal subgroups of the
 two factors.
+
 :::
 
-<1>2. The group $G$ is simple.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The group $G$ is simple.
+
+::: pf-proof
+
 Let
 $$
 N\trianglelefteq G.
@@ -56,11 +68,11 @@ Then
 $$
 N\times\{1\}\trianglelefteq G\times G.
 $$
-By step <1>1, the four displayed subgroups already account for all normal
+By step [](#s1){.pf-ref}, the four displayed subgroups already account for all normal
 subgroups of $G\times G$. Hence $N\times\{1\}$ must be one of them.
 
 Because its second coordinate is always $1$, it cannot equal
-$\{1\}\times G$ or $G\times G$ unless $G$ is trivial, which step <1>1
+$\{1\}\times G$ or $G\times G$ unless $G$ is trivial, which step [](#s1){.pf-ref}
 excludes. Therefore
 $$
 N\times\{1\}
@@ -78,11 +90,17 @@ N=\{1\}
 N=G.
 $$
 So $G$ has no proper nontrivial normal subgroup and is simple.
+
 :::
 
-<1>3. The group $G$ is nonabelian.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The group $G$ is nonabelian.
+
+::: pf-proof
+
 Suppose instead that $G$ were abelian. Then $G\times G$ would be abelian,
 so every subgroup would be normal. In particular, the diagonal subgroup
 $$
@@ -102,12 +120,18 @@ has both coordinates nontrivial, whereas elements of
 $G\times\{1\}$ or $\{1\}\times G$ have one coordinate equal to $1$.
 Thus $\Delta$ would be a fifth normal subgroup of $G\times G$, a
 contradiction.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves that $G$ is simple, and step <1>3 proves that it is
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves that $G$ is simple, and step [](#s3){.pf-ref} proves that it is
 nonabelian.
+
 :::
+
+:::
+
 :::

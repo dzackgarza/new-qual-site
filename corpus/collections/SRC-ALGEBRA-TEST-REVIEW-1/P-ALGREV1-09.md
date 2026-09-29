@@ -30,17 +30,30 @@ Classify the following assertion as true, sometimes true, or false: if $H\cong K
 ::: {.solution}
 The assertion is sometimes true.
 
-<1>1. If $H=K$, then $G/H\cong G/K$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $H=K$, then $G/H\cong G/K$.
+
+::: pf-proof
+
 If $H=K$, then $H\cong K$ and
 $$
 G/H=G/K.
 $$
 Thus the assertion can hold.
+
 :::
 
-<1>2. Isomorphic normal subgroups can give nonisomorphic quotients.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Isomorphic normal subgroups can give nonisomorphic quotients.
+
+::: pf-proof
+
 Let
 $$
 G=\mathbb Z_4\times\mathbb Z_2,
@@ -64,13 +77,20 @@ G/K\cong\mathbb Z_4.
 $$
 The first quotient has no element of order $4$, while the second does, so
 they are not isomorphic.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-The assertion holds in step <1>1 and fails in step <1>2. Hence
+:::
+
+::: pf-qed
+
+The assertion holds in step [](#s1){.pf-ref} and fails in step [](#s2){.pf-ref}. Hence
 $$
 \boxed{\text{sometimes true}.}
 $$
+
 :::
+
+:::
+
 :::

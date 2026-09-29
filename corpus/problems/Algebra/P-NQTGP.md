@@ -22,8 +22,15 @@ Let $\Phi_m(x)$ be the $m$th cyclotomic polynomial, with $m>1$.
 :::
 
 ::: {.solution}
-<1>1. A prime divisor of $\Phi_m(a)$ has $a$ of order $m$ modulo $p$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A prime divisor of $\Phi_m(a)$ has $a$ of order $m$ modulo $p$.
+
+::: pf-proof
+
 Since $p\mid\Phi_m(a)$ and $p\nmid m$, the reduction of $x^m-1$ modulo $p$ is separable: its derivative is $mx^{m-1}$, which has no common root with $x^m-1$.
 
 The factorization
@@ -37,10 +44,17 @@ By Lagrange's theorem, this order divides
 |\FF_p^\times|=p-1,
 \]
 so $m\mid p-1$.
+
 :::
 
-<1>2. There are infinitely many primes $p\equiv1\pmod m$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There are infinitely many primes $p\equiv1\pmod m$.
+
+::: pf-proof
+
 Suppose instead that the complete list is $p_1,\ldots,p_r$. Put
 \[
 N=mp_1\cdots p_r.
@@ -51,10 +65,16 @@ Since $m>1$, the constant term of $\Phi_m$ is $1$, so
 \]
 Choose a prime $q$ dividing the integer $\Phi_m(N)$. Then $q\nmid N$, so in particular $q\nmid m$ and $q\ne p_i$ for every $i$.
 
-By <1>1 applied to $a=N$, we have
+By step [](#s1){.pf-ref} applied to $a=N$, we have
 \[
 m\mid q-1,
 \]
 so $q\equiv1\pmod m$. This gives a new prime of the required congruence class, contradicting completeness of the list.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -46,21 +46,32 @@ $$
 This is the group of upper-unitriangular $3\times3$ matrices over
 $\FF_3$.
 
-<1>1. If every element of a group $G$ has order $1$ or $2$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If every element of a group $G$ has order $1$ or $2$, then
 $G$ is abelian.
 
-::: {.proof}
+::: pf-proof
+
 For every $x\in G$, one has $x^2=e$, hence $x^{-1}=x$. Therefore,
 for arbitrary $a,b\in G$,
 $$
 ab=(ab)^{-1}=b^{-1}a^{-1}=ba.
 $$
 Thus every pair of elements commutes.
+
 :::
 
-<1>2. The set $H$ is a group under matrix multiplication.
+:::
 
-::: {.proof}
+::: pf-step
+
+The set $H$ is a group under matrix multiplication.
+
+::: pf-proof
+
 Write
 $$
 M(a,b,c)\coloneqq
@@ -82,11 +93,17 @@ M(a,b,c)^{-1}=M(-a,-b,ab-c),
 $$
 as the multiplication formula verifies. Hence every element has its
 inverse in $H$.
+
 :::
 
-<1>3. The group $H$ is nonabelian.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The group $H$ is nonabelian.
+
+::: pf-proof
+
 Consider
 $$
 X=
@@ -120,11 +137,17 @@ YX=
 \end{pmatrix}.
 $$
 Hence $XY\ne YX$.
+
 :::
 
-<1>4. Every element of $H$ has order $1$ or $3$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every element of $H$ has order $1$ or $3$.
+
+::: pf-proof
+
 Every $A\in H$ has the form
 $$
 A=I+N
@@ -142,23 +165,35 @@ A^3=(I+N)^3
 $$
 Thus the order of every $A\in H$ divides $3$. The identity has order
 $1$, and every nonidentity element therefore has order $3$.
+
 :::
 
-<1>5. Consequently,
+:::
+
+::: {.pf-step #s5}
+
+Consequently,
 $$
 \boxed{H\text{ is nonabelian and every element of }H
 \text{ has order }1\text{ or }3}.
 $$
 
-::: {.proof}
-Step <1>3 proves that $H$ is nonabelian, and step <1>4 gives the
+::: pf-proof
+
+Step [](#s3){.pf-ref} proves that $H$ is nonabelian, and step [](#s4){.pf-ref} gives the
 required orders.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part (a), and step <1>5 supplies the example required
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s5){.pf-ref} supplies the example required
 for part (b).
+
 :::
+
+:::
+
 :::

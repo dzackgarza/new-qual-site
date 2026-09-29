@@ -35,9 +35,15 @@ Show that $f$ is a polynomial.
 :::
 
 ::: {.solution}
-<1>1. One fixed derivative of $f$ vanishes identically.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+One fixed derivative of $f$ vanishes identically.
+
+::: pf-proof
+
 For each integer $n\geq0$, set
 $$
 Z_n=\{z\in\mathbb C:f^{(n)}(z)=0\},
@@ -54,12 +60,18 @@ of closed sets with empty interior [@Fol13]. Hence
 some $Z_m$ has nonempty interior. The entire function
 $f^{(m)}$ vanishes on this open set. The identity theorem
 on the connected plane gives $f^{(m)}\equiv0$ [@SS03].
+
 :::
 
-<1>2. The entire Taylor series terminates.
+:::
 
-::: {.proof}
-If $m=0$, step <1>1 already says $f=0$, a polynomial.
+::: pf-step
+
+The entire Taylor series terminates.
+
+::: pf-proof
+
+If $m=0$, step [](#s1){.pf-ref} already says $f=0$, a polynomial.
 If $m\geq1$, every derivative of order $n\geq m$
 vanishes identically by differentiating $f^{(m)}=0$.
 The Taylor series at zero, which represents the entire
@@ -68,5 +80,11 @@ $$
 f(z)=\sum_{n=0}^{m-1}\frac{f^{(n)}(0)}{n!}z^n.
 $$
 This is a polynomial of degree at most $m-1$.
+
 :::
+
+:::
+
+:::
+
 :::

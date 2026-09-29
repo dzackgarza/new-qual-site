@@ -39,11 +39,18 @@ Suppose $\overline{F}$ is an algebraic closure of $F$.
 :::
 
 ::: {.solution}
-<1>1. There is an $F$-algebra isomorphism
+
+::: pf
+
+::: {.pf-step #s1}
+
+There is an $F$-algebra isomorphism
 \[
 F[a]\cong F[t]/(t^3-1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 a^3=I_3.
@@ -62,17 +69,24 @@ On the other hand $a^3=I_3$ shows that $F[a]$ is spanned by $I_3,a,a^2$, so
 \dim_F F[a]=3.
 \]
 The source $F[t]/(t^3-1)$ also has $F$-basis $1,t,t^2$. Therefore the surjective map $\varphi$ is an isomorphism.
+
 :::
 
-<1>2. After extending scalars to $\overline F$,
+:::
+
+::: {.pf-step #s2}
+
+After extending scalars to $\overline F$,
 \[
 F[a]\otimes_F\overline F
 \cong
 \overline F[t]/(t^3-1)
 \]
 as $\overline F$-algebras.
-::: {.proof}
-By <1>1 and the standard base-change identification for a polynomial quotient,
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} and the standard base-change identification for a polynomial quotient,
 \[
 \bigl(F[t]/(t^3-1)\bigr)\otimes_F\overline F
 \cong
@@ -85,15 +99,22 @@ Concretely, this sends
 c f(t)+(t^3-1),
 \]
 and is an isomorphism because both sides are free $\overline F$-modules with basis $1,t,t^2$ and the displayed map carries one basis to the other.
+
 :::
 
-<1>3. If $\operatorname{char}F\ne3$, then
+:::
+
+::: pf-step
+
+If $\operatorname{char}F\ne3$, then
 \[
 \overline F[t]/(t^3-1)
 \cong
 \overline F\oplus\overline F\oplus\overline F.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $\overline F$ is algebraically closed, $t^3-1$ splits completely over $\overline F$. Its derivative is
 \[
 3t^2.
@@ -111,16 +132,23 @@ with the three linear factors pairwise comaximal. The Chinese remainder theorem 
 \cong
 \overline F^{\oplus3}.
 \]
-Together with <1>2, this proves part (a).
+Together with step [](#s2){.pf-ref}, this proves part (a).
+
 :::
 
-<1>4. If $\operatorname{char}F=3$, then
+:::
+
+::: pf-step
+
+If $\operatorname{char}F=3$, then
 \[
 \overline F[t]/(t^3-1)
 \cong
 \overline F[x]/(x^3).
 \]
-::: {.proof}
+
+::: pf-proof
+
 In characteristic $3$,
 \[
 t^3-1=(t-1)^3.
@@ -141,6 +169,12 @@ induces an $\overline F$-algebra isomorphism
 \cong
 \overline F[x]/(x^3).
 \]
-Combining this with <1>2 proves part (b).
+Combining this with step [](#s2){.pf-ref} proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

@@ -31,7 +31,12 @@ e^{-(x^2+(y-x)^2+y^2)}\,dx\,dy.
 :::
 
 ::: {.solution}
-<1>1. Make the orthogonal change of variables
+
+::: pf
+
+::: {.pf-step #s1}
+
+Make the orthogonal change of variables
 $$
 u=\frac{x+y}{\sqrt2},
 \qquad
@@ -39,7 +44,8 @@ v=\frac{x-y}{\sqrt2}.
 $$
 Its Jacobian has absolute value $1$.
 
-::: {.proof}
+::: pf-proof
+
 The inverse transformation is
 $$
 x=\frac{u+v}{\sqrt2},
@@ -51,14 +57,20 @@ Hence
 $$
 dx\,dy=du\,dv.
 $$
+
 :::
 
-<1>2. Under this change of variables,
+:::
+
+::: {.pf-step #s2}
+
+Under this change of variables,
 $$
 x^2+(y-x)^2+y^2=u^2+3v^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since the transformation is orthogonal,
 $$
 x^2+y^2=u^2+v^2.
@@ -78,9 +90,14 @@ x^2+(y-x)^2+y^2
 =u^2+v^2+2v^2
 =u^2+3v^2.
 $$
+
 :::
 
-<1>3. The integral factors as
+:::
+
+::: {.pf-step #s3}
+
+The integral factors as
 $$
 I
 =
@@ -88,8 +105,9 @@ I
 \left(\int_{-\infty}^{\infty}e^{-3v^2}\,dv\right).
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2,
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 I
 =
@@ -97,16 +115,22 @@ I
 $$
 The integrand is nonnegative, so Tonelli's theorem permits separation into
 the product of the two one-dimensional integrals.
+
 :::
 
-<1>4. The second factor is
+:::
+
+::: {.pf-step #s4}
+
+The second factor is
 $$
 \int_{-\infty}^{\infty}e^{-3v^2}\,dv
 =
 \sqrt{\frac\pi3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set $w=\sqrt3\,v$. Then
 $$
 dv=\frac{dw}{\sqrt3},
@@ -120,16 +144,22 @@ $$
 =
 \frac{\sqrt\pi}{\sqrt3}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{I=\frac{\pi}{\sqrt3}}.
 $$
 
-::: {.proof}
-By the given formula, the first factor in step <1>3 is $\sqrt\pi$.
-Multiplying it by the value from step <1>4 gives
+::: pf-proof
+
+By the given formula, the first factor in step [](#s3){.pf-ref} is $\sqrt\pi$.
+Multiplying it by the value from step [](#s4){.pf-ref} gives
 $$
 I
 =
@@ -138,11 +168,17 @@ I
 =
 \frac\pi{\sqrt3}.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required evaluation.
+
+:::
+
+:::
+
 :::

@@ -18,7 +18,12 @@ Prove that $a$, $b$, and $c$ form the vertices of an equilateral triangle.
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \operatorname{Re}(a\overline b)
 =
@@ -29,7 +34,8 @@ $$
 -\frac12.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $a+b=-c$ and $\abs{a}=\abs{b}=\abs{c}=1$,
 $$
 1
@@ -45,9 +51,14 @@ $$
 \operatorname{Re}(a\overline b)=-\frac12.
 $$
 The same argument applied to $b+c=-a$ and $c+a=-b$ gives the other two identities.
+
 :::
 
-<1>2. The three pairwise distances are equal:
+:::
+
+::: {.pf-step #s2}
+
+The three pairwise distances are equal:
 $$
 \abs{a-b}
 =
@@ -58,8 +69,9 @@ $$
 \sqrt3.
 $$
 
-::: {.proof}
-Using step <1>1,
+::: pf-proof
+
+Using step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \abs{a-b}^2
@@ -72,17 +84,29 @@ $$
 \end{aligned}
 $$
 The identical calculation for the pairs $(b,c)$ and $(c,a)$ gives squared distance $3$ in each case.
+
 :::
 
-<1>3. The points $a,b,c$ are the vertices of an equilateral triangle.
-
-::: {.proof}
-By step <1>2 all three side lengths are equal to $\sqrt3>0$. In particular the points are distinct, and the triangle they determine is equilateral.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #s3}
 
-::: {.proof}
-Step <1>3 is the required conclusion.
+The points $a,b,c$ are the vertices of an equilateral triangle.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} all three side lengths are equal to $\sqrt3>0$. In particular the points are distinct, and the triangle they determine is equilateral.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

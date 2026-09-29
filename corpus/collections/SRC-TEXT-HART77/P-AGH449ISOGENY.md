@@ -38,19 +38,31 @@ Hint: $X'$ is uniquely determined by $X$ and $\ker f$.
 :::
 
 ::: {.solution}
-<1>1. Isogeny is reflexive.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Isogeny is reflexive.
+
+::: pf-proof
+
 For every elliptic curve $X$, the identity
 $$
 \id_X:X\longrightarrow X
 $$
 is finite. Hence $X$ is isogenous to itself.
+
 :::
 
-<1>2. Isogeny is symmetric.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Isogeny is symmetric.
+
+::: pf-proof
+
 Suppose that
 $$
 f:X\longrightarrow X'
@@ -66,24 +78,36 @@ $$
 $$
 A nonconstant morphism of projective nonsingular curves is finite. Thus
 $\hat f$ is a finite morphism from $X'$ to $X$.
+
 :::
 
-<1>3. Isogeny is transitive.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Isogeny is transitive.
+
+::: pf-proof
+
 If
 $$
 X\xrightarrow{f}X'\xrightarrow{g}X''
 $$
 are finite morphisms, then $g\circ f$ is finite. Hence an elliptic curve
 isogenous to one isogenous to $X$ is itself isogenous to $X$. Together with
-steps <1>1--<1>2, this proves part (a).
+steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, this proves part (a).
+
 :::
 
-<1>4. For counting targets, every finite morphism $f:X\to X'$ may be
+:::
+
+::: {.pf-step #s4}
+
+For counting targets, every finite morphism $f:X\to X'$ may be
 replaced by an isogeny preserving the origins without changing $X'$.
 
-::: {.proof}
+::: pf-proof
+
 Let $O\in X$ and $O'\in X'$ be the chosen origins. Translation on $X'$ is
 an automorphism. Therefore
 $$
@@ -91,9 +115,14 @@ g(P)=f(P)-f(O)
 $$
 is again finite and has the same target curve. It sends $O$ to $O'$, hence
 is a homomorphism of elliptic curves.
+
 :::
 
-<1>5. A separable isogeny
+:::
+
+::: {.pf-step #s5}
+
+A separable isogeny
 $$
 h:E\longrightarrow E'
 $$
@@ -102,7 +131,8 @@ $$
 G=\ker h\subseteq E(k).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $T\in G$, translation $\tau_T$ is an automorphism of $E$ over
 $E'$. Since $h$ is separable,
 $$
@@ -116,13 +146,19 @@ $$
 The right-hand side depends only on $E$ and $G$. A nonsingular projective
 curve is determined up to isomorphism by its function field, so the target
 $E'$ is determined up to isomorphism by $E$ and $G$.
+
 :::
 
-<1>6. For a fixed elliptic curve $E$, there are only countably many pairs
+:::
+
+::: {.pf-step #s6}
+
+For a fixed elliptic curve $E$, there are only countably many pairs
 $(r,G)$ in which $r\ge0$ and $G$ is a finite subgroup of
 $E^{(p^r)}(k)$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $r$. Every finite subgroup $G\subseteq E^{(p^r)}(k)$ has finite
 exponent, say $n$, and therefore
 $$
@@ -134,15 +170,21 @@ many finite subgroups. Taking the further union over $r\ge0$ remains
 countable.
 
 In characteristic zero, only the case $r=0$ is needed.
+
 :::
 
-<1>7. Up to isomorphism, only countably many elliptic curves are isogenous
+:::
+
+::: {.pf-step #s7}
+
+Up to isomorphism, only countably many elliptic curves are isogenous
 to $X$.
 
-::: {.proof}
-By step <1>4, consider only isogenies $g:X\to X'$ preserving origins.
-In characteristic zero, $g$ is separable, so step <1>5 says that $X'$ is
-determined by the finite subgroup $\ker g\subseteq X(k)$. Step <1>6 gives
+::: pf-proof
+
+By step [](#s4){.pf-ref}, consider only isogenies $g:X\to X'$ preserving origins.
+In characteristic zero, $g$ is separable, so step [](#s5){.pf-ref} says that $X'$ is
+determined by the finite subgroup $\ker g\subseteq X(k)$. Step [](#s6){.pf-ref} gives
 only countably many possibilities.
 
 Now suppose $\characteristic k=p>0$. The separable--inseparable
@@ -155,20 +197,26 @@ X^{(p^r)}
 X',
 $$
 where $r\ge0$, $F_X^{(r)}$ is the $r$-fold relative Frobenius, and $h$ is
-separable. By step <1>5, for fixed $r$ the target $X'$ is determined up to
+separable. By step [](#s5){.pf-ref}, for fixed $r$ the target $X'$ is determined up to
 isomorphism by
 $$
 G=\ker h\subseteq X^{(p^r)}(k).
 $$
 Thus every possible $X'$ is determined by one of the countably many pairs
-$(r,G)$ from step <1>6. This proves part (b).
+$(r,G)$ from step [](#s6){.pf-ref}. This proves part (b).
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove that isogeny is an equivalence relation, and steps
-<1>4--<1>7 prove that each isogeny class contains only countably many
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that isogeny is an equivalence relation, and steps
+[](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove that each isogeny class contains only countably many
 isomorphism classes of elliptic curves.
+
 :::
+
+:::
+
 :::

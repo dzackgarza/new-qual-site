@@ -47,14 +47,19 @@ D=f^*(Q)
 $$
 for some point $Q\in\PP^1$.
 
-<1>1. The divisor $D$ satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The divisor $D$ satisfies
 $$
 \deg D=2,
 \qquad
 \ell(D)\ge2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ has degree $2$,
 $$
 \deg f^*(Q)=2.
@@ -71,14 +76,20 @@ injects into $H^0(X,\OO_X(D))$, because $f$ is surjective.  Hence
 $$
 \ell(D)\ge2.
 $$
+
 :::
 
-<1>2. For every canonical divisor $K$ on $X$,
+:::
+
+::: {.pf-step #s2}
+
+For every canonical divisor $K$ on $X$,
 $$
 \boxed{\ell(K-D)\ge g-1.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Riemann--Roch applied to $D$ gives
 $$
 \ell(D)-\ell(K-D)
@@ -97,11 +108,17 @@ $$
 =
 g-1.
 $$
+
 :::
 
-<1>3. The canonical divisor of a hyperelliptic curve is not very ample.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The canonical divisor of a hyperelliptic curve is not very ample.
+
+::: pf-proof
+
 Suppose $K$ were very ample.  Then the embedding defined by the complete
 linear system $|K|$ separates every subscheme of length $2$.  In particular,
 the restriction map
@@ -127,31 +144,43 @@ would therefore give
 $$
 \ell(K-D)=g-2.
 $$
-This contradicts step <1>2, which gives
+This contradicts step [](#s2){.pf-ref}, which gives
 $$
 \ell(K-D)\ge g-1.
 $$
 Hence $K$ is not very ample.
+
 :::
 
-<1>4. The curve $X$ cannot be a complete intersection in any projective
+:::
+
+::: {.pf-step #s4}
+
+The curve $X$ cannot be a complete intersection in any projective
 space.
 
-::: {.proof}
+::: pf-proof
+
 Suppose, to the contrary, that
 $$
 X\subseteq\PP^n
 $$
 were a complete-intersection curve.  Since $g\ge2$,
 [[P-AGH433COMPLETEINTERSECTIONCANONICAL|Exercise IV.3.3]] says that its
-canonical divisor is very ample.  This contradicts step <1>3.
+canonical divisor is very ample.  This contradicts step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 show that a hyperelliptic curve has non-very-ample
-canonical divisor, while step <1>4 contradicts the complete-intersection
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} show that a hyperelliptic curve has non-very-ample
+canonical divisor, while step [](#s4){.pf-ref} contradicts the complete-intersection
 very-ampleness theorem.
+
 :::
+
+:::
+
 :::

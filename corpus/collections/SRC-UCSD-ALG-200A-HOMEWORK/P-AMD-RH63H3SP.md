@@ -58,20 +58,33 @@ Let
 \]
 be the permutation representation afforded by left multiplication on the set of left cosets of $H$.
 
-<1>1. The set $G/H$ has cardinality $n$, so
+::: pf
+
+::: {.pf-step #s1}
+
+The set $G/H$ has cardinality $n$, so
 \[
 \operatorname{Sym}(G/H)\cong S_n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By hypothesis,
 \[
 [G:H]=n.
 \]
 Thus there are exactly $n$ left cosets of $H$ in $G$, and the symmetric group on that set is isomorphic to $S_n$.
+
 :::
 
-<1>2. The kernel of $\rho$ is $\operatorname{core}(H)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The kernel of $\rho$ is $\operatorname{core}(H)$.
+
+::: pf-proof
+
 This is the kernel characterization of the normal core: an element $x\in G$ acts trivially on every left coset exactly when
 \[
 x\in\bigcap_{g\in G}gHg^{-1}
@@ -81,18 +94,25 @@ Hence
 \[
 \ker\rho=\operatorname{core}(H).
 \]
+
 :::
 
-<1>3. We have
+:::
+
+::: {.pf-step #s3}
+
+We have
 \[
 [G:\operatorname{core}(H)]\mid n!.
 \]
-::: {.proof}
-By the first isomorphism theorem and <1>2,
+
+::: pf-proof
+
+By the first isomorphism theorem and step [](#s2){.pf-ref},
 \[
 G/\operatorname{core}(H)\cong\rho(G).
 \]
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 \rho(G)\le S_n.
 \]
@@ -107,10 +127,17 @@ Since
 =[G:\operatorname{core}(H)],
 \]
 the desired divisibility follows.
+
 :::
 
-<1>4. If $G$ is simple, then $\operatorname{core}(H)=\{e\}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $G$ is simple, then $\operatorname{core}(H)=\{e\}$.
+
+::: pf-proof
+
 The subgroup $\operatorname{core}(H)$ is normal in $G$ and satisfies
 \[
 \operatorname{core}(H)\le H<G.
@@ -120,20 +147,33 @@ Since $G$ is simple, it must be trivial:
 \[
 \operatorname{core}(H)=\{e\}.
 \]
+
 :::
 
-<1>5. If $G$ is simple, then $|G|\mid n!$ and $G$ is finite.
-::: {.proof}
-By <1>4,
+:::
+
+::: pf-step
+
+If $G$ is simple, then $|G|\mid n!$ and $G$ is finite.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 \[
 [G:\operatorname{core}(H)]
 =[G:\{e\}]
 =|G|.
 \]
-Applying <1>3 gives
+Applying step [](#s3){.pf-ref} gives
 \[
 |G|\mid n!.
 \]
 In particular, $|G|\le n!<\infty$, so $G$ is finite.
+
 :::
+
+:::
+
+:::
+
 :::

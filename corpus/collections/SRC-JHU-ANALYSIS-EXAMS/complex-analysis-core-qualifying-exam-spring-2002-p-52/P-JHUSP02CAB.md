@@ -41,8 +41,14 @@ $$
 \boxed{\frac{2\pi}{a\sqrt{a^2+1}}}.
 $$
 
-<1>1. Reduce the problem to the standard integral $\int_0^{2\pi}(c+\cos t)^{-1}dt$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Reduce the problem to the standard integral $\int_0^{2\pi}(c+\cos t)^{-1}dt$.
+
+::: pf-proof
+
 Using $\cos^2x=(1+\cos2x)/2$ and setting
 $$
 c=2a^2+1>1,
@@ -58,11 +64,18 @@ $$
 =2\int_0^{2\pi}\frac{dt}{c+\cos t},
 $$
 because the last integrand is $2\pi$-periodic.
+
 :::
 
-<1>2. The unit-circle contour gives
+:::
+
+::: {.pf-step #s2}
+
+The unit-circle contour gives
 $\int_0^{2\pi}(c+\cos t)^{-1}dt=2\pi/\sqrt{c^2-1}$.
-::: {.proof}
+
+::: pf-proof
+
 Put $z=e^{it}$. Then $dt=dz/(iz)$ and
 $\cos t=(z+z^{-1})/2$, so
 $$
@@ -90,11 +103,18 @@ $$
 =2\pi i\frac1{i\sqrt{c^2-1}}
 =\frac{2\pi}{\sqrt{c^2-1}}.
 $$
+
 :::
 
-<1>3. Substitute $c=2a^2+1$.
-::: {.proof}
-By steps <1>1 and <1>2,
+:::
+
+::: pf-step
+
+Substitute $c=2a^2+1$.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 \int_0^{2\pi}\frac{dx}{a^2+\cos^2x}
 =\frac{4\pi}{\sqrt{(2a^2+1)^2-1}}
@@ -104,5 +124,11 @@ Since $a>1$, the square root is $2a\sqrt{a^2+1}$, giving
 $$
 \frac{2\pi}{a\sqrt{a^2+1}}.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

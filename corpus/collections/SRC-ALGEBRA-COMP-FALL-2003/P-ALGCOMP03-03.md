@@ -32,7 +32,6 @@ Prove that the following conditions are equivalent.
 Give an example of a ring satisfying the above conditions and describe its unique maximal ideal.
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -43,8 +42,14 @@ We prove
 (a)\Longrightarrow(b)\Longrightarrow(c)\Longrightarrow(a).
 \]
 
-<1>1. \((a)\Rightarrow(b)\): the nonunits form a proper ideal.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+\((a)\Rightarrow(b)\): the nonunits form a proper ideal.
+
+::: pf-proof
+
 Since \(0\cdot c=0\ne1\) for every \(c\), \(0\in N\). If \(a\in N\), then \(-a\in N\), because if \(-a\) were invertible then so would \(a=-(-a)\). By hypothesis (a), if \(a,b\in N\), then
 \[
 a+b\in N.
@@ -62,10 +67,17 @@ a(rc)=1,
 so \(a\) would be a unit, contradiction. Hence \(ra\in N\). Therefore \(N\) is an ideal.
 
 Finally, \(1\notin N\), so \(N\ne A\). Hence \(N\) is a proper ideal.
+
 :::
 
-<1>2. \((b)\Rightarrow(c)\): \(A\) has a unique maximal ideal.
-::: {.proof}
+:::
+
+::: pf-step
+
+\((b)\Rightarrow(c)\): \(A\) has a unique maximal ideal.
+
+::: pf-proof
+
 Assume \(N\) is a proper ideal. We first show that \(N\) is maximal. If \(I\) is an ideal properly containing \(N\), choose
 \[
 a\in I\setminus N.
@@ -85,10 +97,17 @@ Since both \(M\) and \(N\) are maximal ideals, it follows that
 M=N.
 \]
 Therefore \(N\) is the unique maximal ideal of \(A\).
+
 :::
 
-<1>3. \((c)\Rightarrow(a)\): sums of nonunits are nonunits.
-::: {.proof}
+:::
+
+::: pf-step
+
+\((c)\Rightarrow(a)\): sums of nonunits are nonunits.
+
+::: pf-proof
+
 Let \(M\) be the unique maximal ideal, and let \(x,y\in A\) be nonunits.
 
 Because \(x\) is not a unit, the principal ideal \((x)\) is proper. Every proper ideal of a commutative ring with identity is contained in a maximal ideal, so
@@ -104,10 +123,17 @@ Hence
 x+y\in M.
 \]
 Every element of a proper ideal is a nonunit, so \(x+y\) is noninvertible. This proves (a).
+
 :::
 
-<1>4. Example: the formal power-series ring \(k[[t]]\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Example: the formal power-series ring \(k[[t]]\).
+
+::: pf-proof
+
 In \(k[[t]]\), a series
 \[
 f(t)=a_0+a_1t+a_2t^2+\cdots
@@ -121,5 +147,11 @@ Thus \(k[[t]]\) has the unique maximal ideal
 \boxed{(t)}.
 \]
 Since \((t)\ne0\), the ring is not a field, and it satisfies the three equivalent conditions.
+
 :::
+
+:::
+
+:::
+
 :::

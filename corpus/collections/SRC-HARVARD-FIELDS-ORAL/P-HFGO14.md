@@ -31,29 +31,46 @@ Justify your answer.
 Yes: there is an $F$-isomorphism $\sigma\colon F(\alpha)\to F(\beta)$ with
 $\sigma(\alpha)=\beta$.
 
-<1>1. For $\gamma\in\{\alpha,\beta\}$, evaluation at $\gamma$ induces an
+::: pf
+
+::: {.pf-step #s1}
+
+For $\gamma\in\{\alpha,\beta\}$, evaluation at $\gamma$ induces an
 $F$-algebra isomorphism
 $$
 \Phi_\gamma\colon F[x]/(p(x))\xrightarrow{\ \sim\ }F(\gamma),\qquad
 x+(p(x))\longmapsto\gamma.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The evaluation homomorphism $\operatorname{ev}_\gamma\colon F[x]\to F(\gamma)$,
 $f\mapsto f(\gamma)$, fixes $F$. Its kernel contains $p$, and since $p$ is
 irreducible and $F[x]$ is a principal ideal domain, $(p)$ is maximal, so the
 kernel is $(p)$. The image $F[\gamma]\cong F[x]/(p)$ is therefore a field
 containing $F$ and $\gamma$, so $F[\gamma]=F(\gamma)$ and $\operatorname{ev}_\gamma$
 is surjective. The first isomorphism theorem gives $\Phi_\gamma$.
+
 :::
 
-<1>2. $\sigma=\Phi_\beta\circ\Phi_\alpha^{-1}\colon F(\alpha)\to F(\beta)$ is
+:::
+
+::: pf-step
+
+$\sigma=\Phi_\beta\circ\Phi_\alpha^{-1}\colon F(\alpha)\to F(\beta)$ is
 an $F$-isomorphism with $\sigma(\alpha)=\beta$.
 
-::: {.proof}
-It is a composite of $F$-algebra isomorphisms from step <1>1. With
+::: pf-proof
+
+It is a composite of $F$-algebra isomorphisms from step [](#s1){.pf-ref}. With
 $d=\deg p$, it sends $\sum_{i=0}^{d-1}c_i\alpha^i$ to
 $\sum_{i=0}^{d-1}c_i\beta^i$ for $c_i\in F$; in particular it fixes $F$ and
 sends $\alpha$ to $\beta$.
+
 :::
+
+:::
+
+:::
+
 :::

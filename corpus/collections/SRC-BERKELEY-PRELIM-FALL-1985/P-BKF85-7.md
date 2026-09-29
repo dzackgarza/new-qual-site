@@ -37,13 +37,18 @@ $$
 F(y)\coloneqq e^{-y}-e^{-3y}+e^{-5y}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 F(y)>0
 $$
 for every $y\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 u=e^{-2y}>0.
@@ -62,26 +67,38 @@ $$
 >0.
 $$
 Since $e^{-y}>0$, it follows that $F(y)>0$.
+
 :::
 
-<1>2. The solution $y(t)$ is strictly increasing on $(0,\infty)$.
+:::
 
-::: {.proof}
-The differential equation and step <1>1 give
+::: {.pf-step #s2}
+
+The solution $y(t)$ is strictly increasing on $(0,\infty)$.
+
+::: pf-proof
+
+The differential equation and step [](#s1){.pf-ref} give
 $$
 y'(t)=F(y(t))>0
 $$
 for every $t>0$.
+
 :::
 
-<1>3. The function $y$ cannot be bounded above.
+:::
 
-::: {.proof}
-Suppose instead that $y$ were bounded above. By step <1>2, $y$ is increasing, so there would be a finite limit
+::: {.pf-step #s3}
+
+The function $y$ cannot be bounded above.
+
+::: pf-proof
+
+Suppose instead that $y$ were bounded above. By step [](#s2){.pf-ref}, $y$ is increasing, so there would be a finite limit
 $$
 L\coloneqq\lim_{t\to\infty}y(t)\in\RR.
 $$
-By continuity of $F$ and step <1>1,
+By continuity of $F$ and step [](#s1){.pf-ref},
 $$
 F(L)>0.
 $$
@@ -98,20 +115,32 @@ $$
 y(t)\geq y(T)+c(t-T).
 $$
 The right-hand side tends to $+\infty$, contradicting the assumed boundedness of $y$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \lim_{t\to\infty}y(t)=+\infty.
 $$
 
-::: {.proof}
-By step <1>2, $y$ is increasing. By step <1>3, it is not bounded above. An increasing real-valued function that is unbounded above tends to $+\infty$.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $y$ is increasing. By step [](#s3){.pf-ref}, it is not bounded above. An increasing real-valued function that is unbounded above tends to $+\infty$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

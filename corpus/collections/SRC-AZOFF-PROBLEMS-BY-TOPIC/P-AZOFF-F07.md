@@ -48,10 +48,15 @@ F(w)=f(1/w)
 $$
 near $w=0$.
 
-<1>1. The singularity of an entire function $f$ at $\infty$ is removable
+::: pf
+
+::: {.pf-step #s1}
+
+The singularity of an entire function $f$ at $\infty$ is removable
 if and only if $f$ is constant.
 
-::: {.proof}
+::: pf-proof
+
 Suppose first that the singularity at $\infty$ is removable. Then
 $F(w)=f(1/w)$ is bounded for sufficiently small nonzero $w$. Equivalently,
 there are $R,M>0$ such that
@@ -65,12 +70,18 @@ of $\CC$, and Liouville's theorem implies that $f$ is constant.
 Conversely, if $f$ is constant, then $F(w)$ is constant on the punctured
 neighborhood of $0$ and extends holomorphically across $0$. Hence the
 singularity at $\infty$ is removable.
+
 :::
 
-<1>2. The singularity of $f$ at $\infty$ is a pole if and only if $f$ is
+:::
+
+::: {.pf-step #s2}
+
+The singularity of $f$ at $\infty$ is a pole if and only if $f$ is
 a nonconstant polynomial.
 
-::: {.proof}
+::: pf-proof
+
 Write the Taylor expansion
 $$
 f(z)=\sum_{n=0}^{\infty}a_nz^n.
@@ -103,72 +114,102 @@ F(w)
 a_0+a_1w^{-1}+\cdots+a_dw^{-d},
 $$
 so $F$ has a pole of order $d$ at $0$.
+
 :::
 
-<1>3. The singularity of $f$ at $\infty$ is essential if and only if $f$
+:::
+
+::: {.pf-step #s3}
+
+The singularity of $f$ at $\infty$ is essential if and only if $f$
 is a nonpolynomial entire function.
 
-::: {.proof}
+::: pf-proof
+
 The function $F(w)=f(1/w)$ is holomorphic on a punctured neighborhood of
 $0$, so its isolated singularity there is removable, a pole, or essential.
-By steps <1>1 and <1>2, the first two possibilities are exactly constant
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the first two possibilities are exactly constant
 functions and nonconstant polynomials. Therefore the remaining entire
 functions, precisely the nonpolynomial entire functions, have an essential
 singularity at $\infty$.
+
 :::
 
-<1>4. In part (a), where $f$ has at most finitely many zeros, all three
+:::
+
+::: {.pf-step #s4}
+
+In part (a), where $f$ has at most finitely many zeros, all three
 types of singularity at $\infty$ can occur.
 
-::: {.proof}
+::: pf-proof
+
 A removable singularity occurs for
 $$
 f(z)=1,
 $$
-which has no zeros, by step <1>1.
+which has no zeros, by step [](#s1){.pf-ref}.
 
 A pole occurs for
 $$
 f(z)=z,
 $$
-which has one zero, by step <1>2.
+which has one zero, by step [](#s2){.pf-ref}.
 
 An essential singularity occurs for
 $$
 f(z)=e^z,
 $$
-which has no zeros and is not a polynomial, by step <1>3.
+which has no zeros and is not a polynomial, by step [](#s3){.pf-ref}.
 Thus the assumption of finitely many zeros excludes none of the three
 singularity types.
+
 :::
 
-<1>5. In part (b), a pole at $\infty$ is impossible.
+:::
 
-::: {.proof}
-If $f$ had a pole at $\infty$, step <1>2 would make $f$ a nonconstant
+::: {.pf-step #s5}
+
+In part (b), a pole at $\infty$ is impossible.
+
+::: pf-proof
+
+If $f$ had a pole at $\infty$, step [](#s2){.pf-ref} would make $f$ a nonconstant
 polynomial. A nonzero polynomial has only finitely many zeros, contradicting
 the hypothesis that $f$ has infinitely many zeros.
+
 :::
 
-<1>6. In part (b), a removable singularity occurs only for the zero
+:::
+
+::: {.pf-step #s6}
+
+In part (b), a removable singularity occurs only for the zero
 function.
 
-::: {.proof}
-If the singularity at $\infty$ is removable, step <1>1 says that $f$ is
+::: pf-proof
+
+If the singularity at $\infty$ is removable, step [](#s1){.pf-ref} says that $f$ is
 constant. The only constant function with infinitely many zeros is
 $$
 f\equiv0.
 $$
 Conversely, the zero function has every point as a zero and has a removable
 singularity at $\infty$.
+
 :::
 
-<1>7. Every nonzero entire function with infinitely many zeros has an
+:::
+
+::: {.pf-step #s7}
+
+Every nonzero entire function with infinitely many zeros has an
 essential singularity at $\infty$, and this case occurs.
 
-::: {.proof}
-Let $f$ be nonzero entire with infinitely many zeros. By step <1>6 its
-singularity at $\infty$ is not removable, and by step <1>5 it is not a
+::: pf-proof
+
+Let $f$ be nonzero entire with infinitely many zeros. By step [](#s6){.pf-ref} its
+singularity at $\infty$ is not removable, and by step [](#s5){.pf-ref} it is not a
 pole. Therefore it is essential.
 
 For example,
@@ -176,10 +217,15 @@ $$
 f(z)=\sin z
 $$
 has the infinitely many zeros $n\pi$, $n\in\ZZ$, and is not a polynomial.
-Hence step <1>3 shows that its singularity at $\infty$ is essential.
+Hence step [](#s3){.pf-ref} shows that its singularity at $\infty$ is essential.
+
 :::
 
-<1>8. The classification is therefore:
+:::
+
+::: {.pf-step #s8}
+
+The classification is therefore:
 
 (a) with at most finitely many zeros, removable, pole, and essential are all
 possible;
@@ -188,13 +234,20 @@ possible;
 exactly $f\equiv0$, and every nonzero such function has an essential
 singularity at $\infty$.
 
-::: {.proof}
-Part (a) is step <1>4. Part (b) follows from steps <1>5--<1>7.
+::: pf-proof
+
+Part (a) is step [](#s4){.pf-ref}. Part (b) follows from steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref}.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 gives the requested discussion, proofs, and examples.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} gives the requested discussion, proofs, and examples.
+
+:::
+
+:::
+
 :::

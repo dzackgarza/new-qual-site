@@ -40,13 +40,19 @@ Find the set of points where $\varphi$ is defined, and describe the correspondin
 :::
 
 ::: {.solution}
-<1>1. On the standard affine chart
+
+::: pf
+
+::: {.pf-step #s1}
+
+On the standard affine chart
 $$
 D_+(x_0)=\{[x_0:x_1:x_2]:x_0\ne0\},
 $$
 the rational function $f=x_1/x_0$ is regular.
 
-::: {.proof}
+::: pf-proof
+
 The chart $D_+(x_0)$ is isomorphic to $\AA^2$ with affine coordinates
 $$
 u_1=\frac{x_1}{x_0},
@@ -54,11 +60,17 @@ u_1=\frac{x_1}{x_0},
 u_2=\frac{x_2}{x_0}.
 $$
 Under this identification, $f$ is exactly the coordinate function $u_1$.
+
 :::
 
-<1>2. The rational function $f$ is not regular at any point of the hyperplane $H_0=Z(x_0)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The rational function $f$ is not regular at any point of the hyperplane $H_0=Z(x_0)$.
+
+::: pf-proof
+
 First let
 $$
 Q\in H_0\cap D_+(x_1).
@@ -96,21 +108,32 @@ v s=u a.
 $$
 Since $k[u,v]$ is a UFD and $u$ does not divide $v$, it must divide $s$, contradicting $s\notin(u,v)$.
 Thus $f$ is not regular at $P$ either.
+
 :::
 
-<1>3. The maximal domain of definition of $f$ is
+:::
+
+::: {.pf-step #s3}
+
+The maximal domain of definition of $f$ is
 $$
 \boxed{D(f)=D_+(x_0)\cong\AA^2},
 $$
 and the corresponding regular function is the affine coordinate $x_1/x_0$.
 
-::: {.proof}
-Step <1>1 gives regularity on $D_+(x_0)$, while step <1>2 excludes every point of its complement.
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives regularity on $D_+(x_0)$, while step [](#s2){.pf-ref} excludes every point of its complement.
 Maximality now follows from [[P-AGH41RATFNDOM]].
 This proves (a).
+
 :::
 
-<1>4. After the standard embedding
+:::
+
+::: {.pf-step #s4}
+
+After the standard embedding
 $$
 \AA^1\hookrightarrow\PP^1,
 \qquad
@@ -121,7 +144,8 @@ $$
 \varphi([x_0:x_1:x_2])=[x_0:x_1].
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $D_+(x_0)$,
 $$
 [1:f]=\left[1:\frac{x_1}{x_0}\right]=[x_0:x_1].
@@ -135,11 +159,17 @@ so they define a morphism
 $$
 \PP^2\setminus\{P\}\longrightarrow\PP^1.
 $$
+
 :::
 
-<1>5. The rational map $\varphi$ is not defined at $P=[0:0:1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The rational map $\varphi$ is not defined at $P=[0:0:1]$.
+
+::: pf-proof
+
 Suppose that $\varphi$ extended to a morphism on a neighborhood $W$ of $P$.
 Write
 $$
@@ -153,7 +183,7 @@ On the dense open subset where $x_0\ne0$, that pullback is
 $$
 \frac{x_1}{x_0},
 $$
-contradicting step <1>2.
+contradicting step [](#s2){.pf-ref}.
 
 If $b\ne0$, use instead the target chart $D_+(y_1)$.
 Then $y_0/y_1$ would pull back to the rational function
@@ -162,9 +192,14 @@ $$
 $$
 which is likewise not regular at $P$ by the same local-ring argument with $u$ and $v$ interchanged.
 Both possibilities are impossible, so no extension exists at $P$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{D(\varphi)=\PP^2\setminus\{[0:0:1]\}},
 $$
@@ -173,15 +208,22 @@ $$
 \boxed{\varphi([x_0:x_1:x_2])=[x_0:x_1]}.
 $$
 
-::: {.proof}
-Step <1>4 gives the morphism on the displayed open set, and step <1>5 proves that the only missing point cannot be added.
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives the morphism on the displayed open set, and step [](#s5){.pf-ref} proves that the only missing point cannot be added.
 By [[P-AGH42RATMAPDOM]], this is the maximal domain of definition.
 This proves (b).
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove (a), and steps <1>4--<1>6 prove (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (a), and steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove (b).
+
+:::
+
+:::
+
 :::

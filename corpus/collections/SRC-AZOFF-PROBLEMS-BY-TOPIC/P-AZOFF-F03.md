@@ -42,7 +42,11 @@ $$
 F(z)=\frac{z+1}{z(z-1)^2}.
 $$
 
-<1>1. One has the partial-fraction decomposition
+::: pf
+
+::: {.pf-step #s1}
+
+One has the partial-fraction decomposition
 $$
 F(z)
 =
@@ -51,7 +55,8 @@ F(z)
 +\frac2{(z-1)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiplying the proposed identity by $z(z-1)^2$ gives
 $$
 (z-1)^2-z(z-1)+2z
@@ -59,9 +64,14 @@ $$
 z+1.
 $$
 Thus the two rational functions agree.
+
 :::
 
-<1>2. About $z=0$, on $0<\abs{z}<1$,
+:::
+
+::: {.pf-step #s2}
+
+About $z=0$, on $0<\abs{z}<1$,
 $$
 \boxed{
 F(z)
@@ -71,7 +81,8 @@ F(z)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}<1$,
 $$
 \frac1{1-z}
@@ -90,7 +101,7 @@ $$
 \qquad
 \frac2{(z-1)^2}=\frac2{(1-z)^2},
 $$
-step <1>1 becomes
+step [](#s1){.pf-ref} becomes
 $$
 \begin{aligned}
 F(z)
@@ -105,9 +116,14 @@ F(z)
 $$
 The pole at the center excludes $z=0$, so this is valid on
 $0<\abs{z}<1$.
+
 :::
 
-<1>3. About $z=0$, on $\abs{z}>1$,
+:::
+
+::: {.pf-step #s3}
+
+About $z=0$, on $\abs{z}>1$,
 $$
 \boxed{
 F(z)
@@ -116,7 +132,8 @@ F(z)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}>1$,
 $$
 -\frac1{z-1}
@@ -133,15 +150,20 @@ $$
 =
 2\sum_{n=0}^{\infty}(n+1)z^{-n-2}.
 $$
-Adding these to $1/z$ as in step <1>1, the $z^{-1}$ terms cancel. For
+Adding these to $1/z$ as in step [](#s1){.pf-ref}, the $z^{-1}$ terms cancel. For
 $k\geq2$, the coefficient of $z^{-k}$ is
 $$
 -1+2(k-1)=2k-3.
 $$
 This yields the displayed Laurent series.
+
 :::
 
-<1>4. About $z=1$, write
+:::
+
+::: {.pf-step #s4}
+
+About $z=1$, write
 $$
 w=z-1.
 $$
@@ -156,8 +178,9 @@ F(1+w)
 }
 $$
 
-::: {.proof}
-Substituting $z=1+w$ into step <1>1 gives
+::: pf-proof
+
+Substituting $z=1+w$ into step [](#s1){.pf-ref} gives
 $$
 F(1+w)
 =
@@ -172,9 +195,14 @@ $$
 \sum_{n=0}^{\infty}(-1)^n w^n.
 $$
 Substitution proves the formula.
+
 :::
 
-<1>5. About $z=1$, on $\abs{w}>1$,
+:::
+
+::: {.pf-step #s5}
+
+About $z=1$, on $\abs{w}>1$,
 $$
 \boxed{
 F(1+w)
@@ -185,7 +213,8 @@ F(1+w)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{w}>1$,
 $$
 \frac1{1+w}
@@ -194,13 +223,19 @@ $$
 =
 \sum_{n=0}^{\infty}(-1)^n w^{-n-1}.
 $$
-Insert this into the recentered expression from step <1>4.
+Insert this into the recentered expression from step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Steps <1>2--<1>5 give all Laurent expansions on the maximal annuli
+:::
+
+::: {.pf-step #s6}
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} give all Laurent expansions on the maximal annuli
 about $0$ and $1$.
 
-::: {.proof}
+::: pf-proof
+
 The only singularities of $F$ are $0$ and $1$. Their mutual distance is
 $1$. Hence the maximal annuli centered at $0$ are
 $$
@@ -215,11 +250,17 @@ $$
 1<\abs{z-1}<\infty.
 $$
 The preceding four steps supply one Laurent series on each such annulus.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the complete collection of requested expansions.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the complete collection of requested expansions.
+
+:::
+
+:::
+
 :::

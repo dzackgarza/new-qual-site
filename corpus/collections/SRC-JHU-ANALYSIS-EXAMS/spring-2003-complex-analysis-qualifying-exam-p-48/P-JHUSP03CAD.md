@@ -56,8 +56,15 @@ Show that $f(z)$ is a 1-1 holomorphic function on $\Delta$.
 :::
 
 ::: {.solution}
-<1>1. Part (a): Rouché's theorem.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a): Rouché's theorem.
+
+::: pf-proof
+
 Let $C$ be a positively oriented, piecewise smooth simple closed contour and suppose $F,G$ are
 holomorphic on an open set containing $C$ and its interior. If
 $$
@@ -73,10 +80,17 @@ $$
 $$
 is constant in $t$ by continuity and the argument principle [@SS03]. Its values at
 $t=0$ and $t=1$ are the zero counts of $F$ and $F+G$.
+
 :::
 
-<1>2. Part (b): integrate $\varphi'$ along the line segment.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b): integrate $\varphi'$ along the line segment.
+
+::: pf-proof
+
 Because $\Omega$ is convex, the segment
 $$
 L=\{w+t(z-w):0\le t\le1\}
@@ -94,10 +108,17 @@ $$
 \le |z-w|\max_{\xi\in L}|\varphi'(\xi)|.
 $$
 The maximum exists because $L$ is compact and $\varphi'$ is continuous.
+
 :::
 
-<1>3. Part (c): the nonlinear tail is a strict contraction on every segment in $\Delta$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c): the nonlinear tail is a strict contraction on every segment in $\Delta$.
+
+::: pf-proof
+
 Write
 $$
 h(z)=f(z)-z=\sum_{n=2}^\infty a_nz^n.
@@ -137,5 +158,11 @@ $$
 \ge |z-w|-|h(z)-h(w)|>0.
 $$
 Hence $f(z)\ne f(w)$ whenever $z\ne w$, so $f$ is one-to-one on $\Delta$.
+
 :::
+
+:::
+
+:::
+
 :::

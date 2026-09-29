@@ -55,16 +55,26 @@ $$
 a_0=\frac1\pi\int_0^{2\pi}f(x)\,dx.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 a_0=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is exactly the zero-mean hypothesis.
+
 :::
 
-<1>2. For every $n\geq1$, the cosine and sine Fourier coefficients of
+:::
+
+::: {.pf-step #s2}
+
+For every $n\geq1$, the cosine and sine Fourier coefficients of
 $f'$ are respectively
 $$
 n b_n
@@ -72,9 +82,14 @@ n b_n
 -n a_n.
 $$
 
-<2>1. The cosine coefficient of $f'$ is $n b_n$.
+::: pf-proof
 
-::: {.proof}
+::: {.pf-step #s2-1}
+
+The cosine coefficient of $f'$ is $n b_n$.
+
+::: pf-proof
+
 Integration by parts and $f(2\pi)=f(0)$ give
 $$
 \begin{aligned}
@@ -90,11 +105,17 @@ $$
 n b_n.
 \end{aligned}
 $$
+
 :::
 
-<2>2. The sine coefficient of $f'$ is $-n a_n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2-2}
+
+The sine coefficient of $f'$ is $-n a_n$.
+
+::: pf-proof
+
 Again by integration by parts,
 $$
 \begin{aligned}
@@ -111,22 +132,32 @@ $$
 \end{aligned}
 $$
 because the boundary term vanishes.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-Steps <2>1 and <2>2 prove step <1>2.
 :::
 
-<1>3. Parseval's identity gives
+::: pf-qed
+
+Steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref} prove step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Parseval's identity gives
 $$
 \int_0^{2\pi}f(x)^2\,dx
 =
 \pi\sum_{n=1}^{\infty}(a_n^2+b_n^2).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For the real Fourier coefficients of $f$, Parseval's identity is
 $$
 \int_0^{2\pi}f(x)^2\,dx
@@ -138,17 +169,23 @@ $$
 \sum_{n=1}^{\infty}(a_n^2+b_n^2)
 \right).
 $$
-Step <1>1 gives $a_0=0$.
+Step [](#s1){.pf-ref} gives $a_0=0$.
+
 :::
 
-<1>4. Parseval's identity also gives
+:::
+
+::: {.pf-step #s4}
+
+Parseval's identity also gives
 $$
 \int_0^{2\pi}f'(x)^2\,dx
 =
 \pi\sum_{n=1}^{\infty}n^2(a_n^2+b_n^2).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The constant Fourier coefficient of $f'$ is
 $$
 \frac1\pi\int_0^{2\pi}f'(x)\,dx
@@ -156,7 +193,7 @@ $$
 \frac{f(2\pi)-f(0)}{\pi}
 =0.
 $$
-By step <1>2, its $n$th cosine and sine coefficients are $n b_n$ and
+By step [](#s2){.pf-ref}, its $n$th cosine and sine coefficients are $n b_n$ and
 $-n a_n$. Parseval's identity for $f'$ therefore gives
 $$
 \begin{aligned}
@@ -168,9 +205,14 @@ $$
 \pi\sum_{n=1}^{\infty}n^2(a_n^2+b_n^2).
 \end{aligned}
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 \int_0^{2\pi}f(x)^2\,dx
@@ -179,20 +221,27 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $n\geq1$,
 $$
 n^2(a_n^2+b_n^2)
 \geq
 a_n^2+b_n^2.
 $$
-Summing this inequality and applying steps <1>3 and <1>4 gives the
+Summing this inequality and applying steps [](#s3){.pf-ref} and [](#s4){.pf-ref} gives the
 result.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required inequality.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required inequality.
+
+:::
+
+:::
+
 :::

@@ -67,7 +67,11 @@ H^1(X,\Omega_X)\times H^1(X,\Omega_X)
 \longrightarrow H^2(X,\omega_X)\xrightarrow{\operatorname{tr}_X}k.
 $$
 
-<1>1. If $j:D\hookrightarrow X$ is a nonsingular curve, then for every
+::: pf
+
+::: {.pf-step #s1}
+
+If $j:D\hookrightarrow X$ is a nonsingular curve, then for every
 $\alpha\in V$,
 $$
 \langle c(D),\alpha\rangle
@@ -75,7 +79,8 @@ $$
 \operatorname{tr}_D(j^*\alpha).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Exercise III.7.4 identifies the logarithmic class $c(D)$ of the divisor with
 its normalized codimension-one cohomology class; this identification is proved
 on [[P-AGH374COHOMCLASS]], part (d). For that Gysin class, compatibility of
@@ -88,14 +93,20 @@ $$
 \operatorname{tr}_D(j^*\alpha).
 $$
 This is the claimed identity.
+
 :::
 
-<1>2. If $D,E$ are nonsingular curves meeting transversally, then
+:::
+
+::: {.pf-step #s2}
+
+If $D,E$ are nonsingular curves meeting transversally, then
 $$
 \boxed{\langle c(D),c(E)\rangle=(D\cdot E)\cdot1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Naturality of $d\log$ under restriction gives
 $$
 j^*c(E)=c\qty(\OO_X(E)|_D).
@@ -116,14 +127,20 @@ $$
 =
 (D\cdot E)\cdot1.
 $$
-Step <1>1 now gives the displayed equality.
+Step [](#s1){.pf-ref} now gives the displayed equality.
+
 :::
 
-<1>3. Every divisor class on $X$ is a difference of classes of nonsingular
+:::
+
+::: {.pf-step #s3}
+
+Every divisor class on $X$ is a difference of classes of nonsingular
 very ample curves, and two such representatives can be chosen to meet
 transversally.
 
-::: {.proof}
+::: pf-proof
+
 Fix a very ample divisor $H$. For an arbitrary divisor $A$, ampleness implies
 that for $n\gg0$ the sheaf
 $$
@@ -146,15 +163,21 @@ makes them nonsingular. Given finitely many such curves, choosing them
 successively and generally also makes every pair needed below meet
 transversally. Replacing a divisor by a linearly equivalent one changes
 neither its logarithmic class nor its intersection numbers.
+
 :::
 
-<1>4. For arbitrary divisors $D,E$ on $X$,
+:::
+
+::: {.pf-step #s4}
+
+For arbitrary divisors $D,E$ on $X$,
 $$
 \boxed{\langle c(D),c(E)\rangle=(D\cdot E)\cdot1}.
 $$
 
-::: {.proof}
-By step <1>3, write, up to linear equivalence,
+::: pf-proof
+
+By step [](#s3){.pf-ref}, write, up to linear equivalence,
 $$
 D=D_1-D_2,
 \qquad
@@ -162,7 +185,7 @@ E=E_1-E_2,
 $$
 where the four curves are nonsingular and the required pairs meet
 transversally. Both $c$ and the intersection pairing are additive in each
-divisor. Bilinearity of the Serre pairing and step <1>2 therefore give
+divisor. Bilinearity of the Serre pairing and step [](#s2){.pf-ref} therefore give
 $$
 \begin{aligned}
 \langle c(D),c(E)\rangle
@@ -173,16 +196,22 @@ $$
 \end{aligned}
 $$
 This proves part (a).
+
 :::
 
-<1>5. Assume $\operatorname{char}k=0$. There exist divisors
+:::
+
+::: {.pf-step #s5}
+
+Assume $\operatorname{char}k=0$. There exist divisors
 $E_1,\ldots,E_r$ such that
 $$
 c(E_1),\ldots,c(E_r)
 $$
 form a $k$-basis of the vector subspace of $V$ spanned by $c(\Pic X)$.
 
-::: {.proof}
+::: pf-proof
+
 The vector space $V$ is finite-dimensional. Hence the subspace
 $$
 W=\operatorname{span}_k c(\Pic X)\subseteq V
@@ -190,9 +219,14 @@ $$
 has finite dimension, say $r$. Since $W$ is spanned by elements of the image
 of $c$, a basis can be extracted from that spanning set. Choose divisors
 $E_1,\ldots,E_r$ representing the corresponding line bundles.
+
 :::
 
-<1>6. The homomorphism
+:::
+
+::: {.pf-step #s6}
+
+The homomorphism
 $$
 \Phi:\Num X\longrightarrow\ZZ^r,
 \qquad
@@ -201,21 +235,22 @@ $$
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
+
 Intersection numbers depend only on numerical equivalence, so $\Phi$ is
 well-defined and additive.
 
-Suppose $\Phi([D])=0$. Step <1>4 gives
+Suppose $\Phi([D])=0$. Step [](#s4){.pf-ref} gives
 $$
 \langle c(D),c(E_i)\rangle=0
 \qquad(1\le i\le r).
 $$
-By step <1>5, the classes $c(E_i)$ span every class $c(E)$ with
+By step [](#s5){.pf-ref}, the classes $c(E_i)$ span every class $c(E)$ with
 $E\in\Div X$. Hence
 $$
 \langle c(D),c(E)\rangle=0
 $$
-for every divisor $E$. Applying step <1>4 again yields
+for every divisor $E$. Applying step [](#s4){.pf-ref} again yields
 $$
 (D\cdot E)\cdot1=0\in k
 $$
@@ -226,23 +261,35 @@ D\cdot E=0
 $$
 as an integer for every divisor $E$. Thus $D$ is numerically equivalent to
 zero, and $[D]=0$ in $\Num X$. Therefore $\Phi$ is injective.
+
 :::
 
-<1>7. The group $\Num X$ is finitely generated and free abelian.
+:::
 
-::: {.proof}
-By step <1>6, $\Num X$ is isomorphic to a subgroup of the finitely generated
+::: {.pf-step #s7}
+
+The group $\Num X$ is finitely generated and free abelian.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, $\Num X$ is isomorphic to a subgroup of the finitely generated
 free abelian group $\ZZ^r$. Every subgroup of a finitely generated free
 abelian group is itself finitely generated free abelian. Hence
 $$
 \boxed{\Num X\text{ is a finitely generated free abelian group}.}
 $$
 This proves part (b).
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), and steps <1>5--<1>7 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), and steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

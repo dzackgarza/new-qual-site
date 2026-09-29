@@ -31,12 +31,17 @@ Assume that $f$ is nonconstant and $|f|=5$ on both boundary circles.
 Show that $f$ has at least two zeros in $A$, counted with multiplicity.
 :::
 
-
 ::: {.solution}
 Set $F=f/5$.
 
-<1>1. The normalized map sends the annulus properly into the unit disk.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The normalized map sends the annulus properly into the unit disk.
+
+::: pf-proof
+
 The function $F$ is holomorphic on $A$, continuous on $\overline A$, and has
 $|F|=1$ on both boundary circles. By the maximum modulus principle,
 $|F|\le1$ on $A$. Since $F$ is nonconstant, it cannot attain modulus one at an
@@ -51,12 +56,19 @@ a collar of each boundary circle on which $|F|>\rho$. Hence the inverse image
 under $F$ of the compact disk $\{|w|\le\rho\}$ lies in a compact subannulus.
 It is closed there, so it is compact. Therefore $F:A\to\Delta$ is proper.
 In particular its zeros form a finite set; let $N$ be their total multiplicity.
+
 :::
 
-<1>2. Every value $w\in\Delta$ has exactly $N$ preimages counted with multiplicity.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every value $w\in\Delta$ has exactly $N$ preimages counted with multiplicity.
+
+::: pf-proof
+
 Fix $w\in\Delta$. Choose $\rho$ with $|w|<\rho<1$. By the boundary continuity
-from step <1>1, choose radii $1<r_1<r_2<2$ so that every zero of $F$ lies in
+from step [](#s1){.pf-ref}, choose radii $1<r_1<r_2<2$ so that every zero of $F$ lies in
 $r_1<|z|<r_2$ and
 $$
 |F(z)|>\rho>|w|
@@ -74,15 +86,22 @@ depends continuously on $t$ and takes integer values. At $t=0$ it equals $N$;
 at $t=1$ it counts the solutions of $F(z)=w$, with multiplicity. No solution
 lies in the omitted boundary collars because there $|F|>\rho>|w|$. Hence every
 $w\in\Delta$ has exactly $N$ preimages counted with multiplicity.
+
 :::
 
-<1>3. The degree $N$ cannot be zero or one.
-::: {.proof}
-Choose any $z_0\in A$ and put $w_0=F(z_0)\in\Delta$. Step <1>2 shows that
+:::
+
+::: pf-step
+
+The degree $N$ cannot be zero or one.
+
+::: pf-proof
+
+Choose any $z_0\in A$ and put $w_0=F(z_0)\in\Delta$. Step [](#s2){.pf-ref} shows that
 $w_0$ has exactly $N$ preimages counted with multiplicity, and it has at least
 the preimage $z_0$. Thus $N\ge1$.
 
-Suppose $N=1$. Then step <1>2 says every $w\in\Delta$ has exactly one preimage,
+Suppose $N=1$. Then step [](#s2){.pf-ref} says every $w\in\Delta$ has exactly one preimage,
 and that preimage has multiplicity one. Consequently $F$ is bijective and has
 nonzero derivative everywhere. The holomorphic inverse function theorem gives
 a holomorphic local inverse at every point, so the set-theoretic inverse
@@ -94,5 +113,11 @@ the loop $t\mapsto(3/2)e^{2\pi it}$ has winding number one about zero and cannot
 be contracted inside $A$. This contradiction rules out $N=1$.
 Therefore $N\ge2$, so $f$ has at least two zeros in the annulus, counted with
 multiplicity.
+
 :::
+
+:::
+
+:::
+
 :::

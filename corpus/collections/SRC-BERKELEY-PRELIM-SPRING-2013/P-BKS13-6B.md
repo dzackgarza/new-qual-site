@@ -48,10 +48,15 @@ Q(x,y)
 D(x,y).
 $$
 
-<1>1. The expression $Q(x,y)$ is a polynomial in the $2n$ variables
+::: pf
+
+::: {.pf-step #s1}
+
+The expression $Q(x,y)$ is a polynomial in the $2n$ variables
 $x_1,\ldots,x_n,y_1,\ldots,y_n$.
 
-::: {.proof}
+::: pf-proof
+
 Expanding the determinant,
 $$
 D(x,y)
@@ -72,13 +77,19 @@ Q(x,y)
 (x_i-y_j),
 $$
 which is visibly a polynomial.
+
 :::
 
-<1>2. The polynomial $Q$ is alternating in the variables
+:::
+
+::: pf-step
+
+The polynomial $Q$ is alternating in the variables
 $x_1,\ldots,x_n$ and also alternating in the variables
 $y_1,\ldots,y_n$.
 
-::: {.proof}
+::: pf-proof
+
 Interchanging two $x$-variables interchanges the corresponding two rows
 of the determinant $D$, so it changes the sign of $D$. The factor
 $$
@@ -89,9 +100,14 @@ is symmetric under permutations of the $x_i$. Hence $Q$ changes sign.
 Similarly, interchanging two $y$-variables interchanges two columns of
 $D$, while the full denominator product is symmetric in the $y_j$.
 Thus $Q$ is alternating in the $y$-variables as well.
+
 :::
 
-<1>3. The polynomial $Q$ is divisible by
+:::
+
+::: {.pf-step #s3}
+
+The polynomial $Q$ is divisible by
 $$
 \Delta_x
 \coloneqq
@@ -104,7 +120,8 @@ $$
 \prod_{1\leq j<i\leq n}(y_j-y_i).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $Q$ is alternating in the $x$-variables, setting
 $$
 x_i=x_j
@@ -119,28 +136,39 @@ so their product $\Delta_x$ divides $Q$.
 
 The same argument in the $y$-variables shows divisibility by every
 $y_j-y_i$, and hence by $\Delta_y$.
+
 :::
 
-<1>4. The polynomial $Q$ has total degree
+:::
+
+::: {.pf-step #s4}
+
+The polynomial $Q$ has total degree
 $$
 n(n-1),
 $$
 which is also the total degree of $\Delta_x\Delta_y$.
 
-::: {.proof}
-In the explicit expansion from step <1>1, each summand is a product of
+::: pf-proof
+
+In the explicit expansion from step [](#s1){.pf-ref}, each summand is a product of
 $n(n-1)$ linear factors, so it is homogeneous of that degree. Hence $Q$
 is homogeneous of degree at most $n(n-1)$. The evaluation at $x=y$ in
-step <1>5 shows that $Q\neq0$, so this is its degree.
+step [](#s5){.pf-ref} shows that $Q\neq0$, so this is its degree.
 
 Each Vandermonde factor has degree
 $$
 \frac{n(n-1)}2.
 $$
 Thus their product has degree $n(n-1)$.
+
 :::
 
-<1>5. There is a constant $c$ such that
+:::
+
+::: {.pf-step #s5}
+
+There is a constant $c$ such that
 $$
 Q=c\,\Delta_x\Delta_y,
 $$
@@ -149,8 +177,9 @@ $$
 c=1.
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4, the quotient of $Q$ by
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the quotient of $Q$ by
 $\Delta_x\Delta_y$ has degree $0$, so it is a constant $c$.
 
 To determine $c$, evaluate the polynomial identity at
@@ -158,7 +187,7 @@ $$
 x_i=y_i
 $$
 for pairwise distinct values $y_1,\ldots,y_n$. In the polynomial expansion
-of step <1>1, every term corresponding to a nonidentity permutation
+of step [](#s1){.pf-ref}, every term corresponding to a nonidentity permutation
 $\sigma$ contains a factor
 $$
 x_i-y_i
@@ -187,9 +216,14 @@ Q(y,y)
 $$
 Because the $y_i$ are pairwise distinct, this quantity is nonzero.
 Therefore $c=1$.
+
 :::
 
-<1>6. Whenever all denominators $x_i-y_j$ are nonzero,
+:::
+
+::: {.pf-step #s6}
+
+Whenever all denominators $x_i-y_j$ are nonzero,
 $$
 \boxed{
 \det\left(\frac{1}{x_i-y_j}\right)
@@ -204,8 +238,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>5,
+::: pf-proof
+
+By step [](#s5){.pf-ref},
 $$
 \left(
 \prod_{i,j}(x_i-y_j)
@@ -214,11 +249,17 @@ $$
 \Delta_x\Delta_y.
 $$
 Divide by the nonzero denominator product.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is exactly the Cauchy determinant formula in the problem.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is exactly the Cauchy determinant formula in the problem.
+
+:::
+
+:::
+
 :::

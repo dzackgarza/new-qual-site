@@ -35,33 +35,54 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. One has $[F:K]=1$ if and only if $F=K$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has $[F:K]=1$ if and only if $F=K$.
+
+::: pf-proof
+
 If $F=K$, then $\{1\}$ is a $K$-basis of $F$, so $[F:K]=1$.
 
 Conversely, suppose $[F:K]=1$. Since $1\ne0$, the singleton $\{1\}$ is a
 linearly independent subset of the one-dimensional $K$-vector space $F$, hence
 is a basis. Therefore every $x\in F$ has the form $x=a\cdot1$ for some $a\in K$,
 so $F\subseteq K$. Since $K\subseteq F$ by hypothesis, $F=K$.
+
 :::
 
-<1>2. If $[F:K]$ is prime, there is no proper intermediate field
+:::
+
+::: pf-step
+
+If $[F:K]$ is prime, there is no proper intermediate field
 $K\subsetneq L\subsetneq F$.
-::: {.proof}
+
+::: pf-proof
+
 Let $K\subseteq L\subseteq F$. The tower law gives
 \[
 [F:K]=[F:L][L:K].
 \]
 If $[F:K]=p$ is prime, then one of the positive integer factors on the right is
-$1$. If $[F:L]=1$, then $F=L$ by <1>1; if $[L:K]=1$, then $L=K$. Thus no
+$1$. If $[F:L]=1$, then $F=L$ by step [](#s1){.pf-ref}; if $[L:K]=1$, then $L=K$. Thus no
 proper intermediate field exists.
+
 :::
 
-<1>3. If $u\in F$ has degree $n$ over $K$, then
+:::
+
+::: pf-step
+
+If $u\in F$ has degree $n$ over $K$, then
 \[
 [F:K]=[F:K(u)]\,n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition of the degree of an algebraic element,
 \[
 [K(u):K]=n.
@@ -76,5 +97,11 @@ gives
 \]
 When $[F:K]$ is finite, $[F:K(u)]$ is a positive integer, so $n$ divides
 $[F:K]$.
+
 :::
+
+:::
+
+:::
+
 :::

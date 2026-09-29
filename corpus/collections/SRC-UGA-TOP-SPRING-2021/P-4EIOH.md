@@ -37,8 +37,15 @@ b. The 2-dimensional cell complex $\Theta_2$ consisting of a closed circle and t
 :::
 
 ::: {.solution}
-<1>1. The theta graph $\Theta$ is homotopy equivalent to $S^1\vee S^1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The theta graph $\Theta$ is homotopy equivalent to $S^1\vee S^1$.
+
+::: pf-proof
+
 Choose one of the three edges of $\Theta$.
 Together with the two vertices, this edge is a maximal tree $T\subseteq\Theta$.
 Collapsing a maximal tree in a connected graph is a homotopy equivalence, and the quotient collapses the two vertices to one while the two remaining edges become loops.
@@ -46,24 +53,36 @@ Hence
 \[
 \Theta\simeq \Theta/T\cong S^1\vee S^1.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \pi_1(\Theta)\cong F_2,
 \]
 the free group on two generators.
-::: {.proof}
-By <1>1 and homotopy invariance of the fundamental group,
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} and homotopy invariance of the fundamental group,
 \[
 \pi_1(\Theta)
 \cong
 \pi_1(S^1\vee S^1)
 \cong F_2.
 \]
+
 :::
 
-<1>3. The homology of $\Theta$ is
+:::
+
+::: pf-step
+
+The homology of $\Theta$ is
 \[
 H_k(\Theta;\ZZ)
 \cong
@@ -73,7 +92,9 @@ H_k(\Theta;\ZZ)
 0,&k\ge2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Give $S^1\vee S^1$ its CW structure with one $0$-cell and two $1$-cells.
 Its cellular chain complex is
 \[
@@ -82,11 +103,18 @@ Its cellular chain complex is
 \ZZ
 \longrightarrow0.
 \]
-Taking homology and using <1>1 gives the displayed groups.
+Taking homology and using step [](#s1){.pf-ref} gives the displayed groups.
+
 :::
 
-<1>4. Give $\Theta_2$ a CW structure with one $0$-cell, one $1$-cell, and three $2$-cells.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Give $\Theta_2$ a CW structure with one $0$-cell, one $1$-cell, and three $2$-cells.
+
+::: pf-proof
+
 Use the given circle as the $1$-skeleton, with one vertex and one open edge.
 Each of the three disks is a $2$-cell whose attaching map
 \[
@@ -102,9 +130,14 @@ C_1\cong\ZZ,
 \qquad
 C_0\cong\ZZ.
 \]
+
 :::
 
-<1>5. In these orientations the cellular boundary maps are
+:::
+
+::: {.pf-step #s5}
+
+In these orientations the cellular boundary maps are
 \[
 d_2:\ZZ^3\longrightarrow\ZZ,
 \qquad
@@ -114,13 +147,20 @@ and
 \[
 d_1=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a $2$-cell attached to a single $1$-cell, the cellular boundary coefficient is the degree of its attaching map.
-By <1>4 all three degrees are $+1$, giving the formula for $d_2$.
+By step [](#s4){.pf-ref} all three degrees are $+1$, giving the formula for $d_2$.
 Since the unique $1$-cell begins and ends at the unique $0$-cell, its cellular boundary is zero, so $d_1=0$.
+
 :::
 
-<1>6. The homology of $\Theta_2$ is
+:::
+
+::: pf-step
+
+The homology of $\Theta_2$ is
 \[
 H_k(\Theta_2;\ZZ)
 \cong
@@ -131,8 +171,10 @@ H_k(\Theta_2;\ZZ)
 0,&k\ge3.
 \end{cases}
 \]
-::: {.proof}
-The map $d_2$ in <1>5 is surjective, so
+
+::: pf-proof
+
+The map $d_2$ in step [](#s5){.pf-ref} is surjective, so
 \[
 H_1(\Theta_2)
 =\ker d_1/\operatorname{im}d_2
@@ -153,10 +195,17 @@ for example with basis
 (1,0,-1).
 \]
 The space is connected, so $H_0\cong\ZZ$, and there are no cells above dimension $2$.
+
 :::
 
-<1>7. The fundamental group of $\Theta_2$ is trivial.
-::: {.proof}
+:::
+
+::: pf-step
+
+The fundamental group of $\Theta_2$ is trivial.
+
+::: pf-proof
+
 The $1$-skeleton has fundamental group
 \[
 \pi_1(S^1)=\langle a\rangle.
@@ -172,6 +221,12 @@ By Seifert--van Kampen, after all three attachments
 \langle a\mid a,a,a\rangle
 =\{e\},
 \]
-after choosing the orientations from <1>4.
+after choosing the orientations from step [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

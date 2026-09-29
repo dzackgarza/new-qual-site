@@ -27,11 +27,18 @@ Prove that the groups in your classification are pairwise nonisomorphic.
 :::
 
 ::: {.solution}
-<1>1. Every abelian group of order $27=3^3$ is isomorphic to exactly one of
+
+::: pf
+
+::: pf-step
+
+Every abelian group of order $27=3^3$ is isomorphic to exactly one of
 \[
 C_{27},\qquad C_9\times C_3,\qquad C_3\times C_3\times C_3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By the structure theorem for finite abelian groups, an abelian group of order
 $3^3$ is a direct sum of cyclic $3$-power groups whose exponents correspond to
 a partition of $3$. The partitions
@@ -39,15 +46,28 @@ a partition of $3$. The partitions
 3,\qquad 2+1,\qquad 1+1+1
 \]
 give exactly the three displayed groups.
+
 :::
 
-<1>2. The three displayed groups are pairwise nonisomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+
+The three displayed groups are pairwise nonisomorphic.
+
+::: pf-proof
+
 Their exponents are respectively
 \[
 27,\qquad 9,\qquad 3.
 \]
 The exponent of a finite group is preserved by isomorphism. Since these three
 values are distinct, no two of the displayed groups are isomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

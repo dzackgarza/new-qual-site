@@ -37,10 +37,16 @@ $$
    Justify your answer.
 :::
 
-
 ::: {.solution}
-<1>1. Prove the conclusion when \(h(0)>0\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the conclusion when \(h(0)>0\).
+
+::: pf-proof
+
 Because \(h\) is continuous and strictly increasing on \([0,1]\), it is a homeomorphism onto the compact interval
 \[
 K=[h(0),h(1)].
@@ -69,10 +75,17 @@ for every \(\phi\in C([0,1])\). Since continuous functions separate \(L^1\) func
 \[
 \boxed{g=0\text{ a.e.}}
 \]
+
 :::
 
-<1>2. The conclusion remains true when \(h(1/2)=0\).
-::: {.proof}
+:::
+
+::: pf-step
+
+The conclusion remains true when \(h(1/2)=0\).
+
+::: pf-proof
+
 Again let \(K=h([0,1])\). Now \(0\in K\). Define a finite signed Borel measure \(\nu\) on \(K\) by pushforward:
 \[
 \nu(E):=\int_{h^{-1}(E)} g(x)\,dx.
@@ -112,5 +125,11 @@ for every \(\phi\in C([0,1])\), and therefore
 \boxed{g=0\text{ a.e.}}
 \]
 So the answer to part (2) is yes.
+
 :::
+
+:::
+
+:::
+
 :::

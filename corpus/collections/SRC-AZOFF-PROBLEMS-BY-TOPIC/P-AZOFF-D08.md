@@ -57,14 +57,19 @@ $$
 \Gamma=\gamma([0,1]).
 $$
 
-<1>1. The set $\Gamma$ is compact, and for every $z\in\CC\sm\Gamma$ the
+::: pf
+
+::: pf-step
+
+The set $\Gamma$ is compact, and for every $z\in\CC\sm\Gamma$ the
 integral
 $$
 f(z)=\int_\gamma\frac{g(w)}{w-z}\,dw
 $$
 is well defined.
 
-::: {.proof}
+::: pf-proof
+
 The interval $[0,1]$ is compact and $\gamma$ is continuous, so $\Gamma$ is
 compact. Fix $z\notin\Gamma$. Then $w-z$ never vanishes on $\Gamma$, so
 $$
@@ -72,9 +77,14 @@ w\longmapsto\frac{g(w)}{w-z}
 $$
 is continuous on $\Gamma$. Hence its line integral along the smooth curve
 $\gamma$ exists.
+
 :::
 
-<1>2. Fix $z_0\in\CC\sm\Gamma$ and set
+:::
+
+::: {.pf-step #s2}
+
+Fix $z_0\in\CC\sm\Gamma$ and set
 $$
 \delta=\operatorname{dist}(z_0,\Gamma)>0.
 $$
@@ -84,7 +94,8 @@ $$
 $$
 for every $w\in\Gamma$.
 
-::: {.proof}
+::: pf-proof
+
 Since $\Gamma$ is compact and $z_0\notin\Gamma$, the continuous function
 $w\mapsto\abs{w-z_0}$ attains a strictly positive minimum $\delta$ on
 $\Gamma$. For $w\in\Gamma$ and $\abs{\eta}<\delta/2$, the reverse
@@ -97,9 +108,14 @@ $$
 \delta/2.
 $$
 In particular, $z_0+\eta$ does not lie in $\Gamma$.
+
 :::
 
-<1>3. For $0<\abs{\eta}<\delta/2$,
+:::
+
+::: {.pf-step #s3}
+
+For $0<\abs{\eta}<\delta/2$,
 $$
 \frac{f(z_0+\eta)-f(z_0)}{\eta}
 =
@@ -109,8 +125,9 @@ $$
 \,dw.
 $$
 
-::: {.proof}
-By step <1>2, both integrals are defined. Linearity of the line integral and
+::: pf-proof
+
+By step [](#s2){.pf-ref}, both integrals are defined. Linearity of the line integral and
 the identity
 $$
 \frac1\eta
@@ -123,20 +140,26 @@ $$
 \frac1{(w-z_0-\eta)(w-z_0)}
 $$
 give the formula.
+
 :::
 
-<1>4. As $\eta\to0$, the integrands in step <1>3 converge uniformly along
+:::
+
+::: {.pf-step #s4}
+
+As $\eta\to0$, the integrands in step [](#s3){.pf-ref} converge uniformly along
 $\Gamma$ to
 $$
 \frac{g(w)}{(w-z_0)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $g$ is continuous on the compact set $\Gamma$, there is
 $$
 M=\max_{w\in\Gamma}\abs{g(w)}<\infty.
 $$
-For $0<\abs{\eta}<\delta/2$, step <1>2 gives
+For $0<\abs{\eta}<\delta/2$, step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 &\abs{
@@ -154,22 +177,28 @@ $$
 $$
 for every $w\in\Gamma$. The right-hand side is independent of $w$ and
 tends to zero with $\eta$, proving uniform convergence.
+
 :::
 
-<1>5. The complex derivative of $f$ exists at $z_0$ and satisfies
+:::
+
+::: {.pf-step #s5}
+
+The complex derivative of $f$ exists at $z_0$ and satisfies
 $$
 f'(z_0)
 =
 \int_\gamma\frac{g(w)}{(w-z_0)^2}\,dw.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 L=\int_0^1\abs{\gamma'(t)}\,dt,
 $$
-the finite length of the smooth curve. By step <1>4, the difference between
-the line integral in step <1>3 and the proposed derivative is bounded by
+the finite length of the smooth curve. By step [](#s4){.pf-ref}, the difference between
+the line integral in step [](#s3){.pf-ref} and the proposed derivative is bounded by
 $$
 L\,
 \sup_{w\in\Gamma}
@@ -181,23 +210,35 @@ L\,
 },
 $$
 which tends to zero as $\eta\to0$. Therefore the difference quotient in
-step <1>3 converges to the displayed line integral.
+step [](#s3){.pf-ref} converges to the displayed line integral.
+
 :::
 
-<1>6. The function $f$ is analytic on $\CC\sm\Gamma$.
+:::
 
-::: {.proof}
-The point $z_0\in\CC\sm\Gamma$ was arbitrary. Step <1>5 shows that $f$
+::: {.pf-step #s6}
+
+The function $f$ is analytic on $\CC\sm\Gamma$.
+
+::: pf-proof
+
+The point $z_0\in\CC\sm\Gamma$ was arbitrary. Step [](#s5){.pf-ref} shows that $f$
 has a complex derivative at every point of $\CC\sm\Gamma$. Since $\Gamma$
 is compact, its complement is open. Hence $f$ is analytic off the range of
 $\gamma$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

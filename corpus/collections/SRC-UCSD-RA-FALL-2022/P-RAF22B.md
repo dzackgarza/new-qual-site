@@ -34,8 +34,15 @@ Prove that $\|f_n - f\|_p \to 0$ if and only if $\|f_n\|_p \to \|f\|_p$.
 :::
 
 ::: {.solution}
-<1>1. If $\|f_n-f\|_p\to0$, then $\|f_n\|_p\to\|f\|_p$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $\|f_n-f\|_p\to0$, then $\|f_n\|_p\to\|f\|_p$.
+
+::: pf-proof
+
 If
 \[
 \|f_n-f\|_p\to0,
@@ -49,10 +56,17 @@ Hence
 \[
 \|f_n\|_p\to\|f\|_p.
 \]
+
 :::
 
-<1>2. If $\|f_n\|_p\to\|f\|_p$, then $|f_n|^p\to|f|^p$ in $L^1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $\|f_n\|_p\to\|f\|_p$, then $|f_n|^p\to|f|^p$ in $L^1$.
+
+::: pf-proof
+
 Assume now that
 \[
 \|f_n\|_p\to\|f\|_p.
@@ -86,10 +100,17 @@ we obtain
 \[
 \boxed{\|g_n-g\|_1\to0.}
 \]
+
 :::
 
-<1>3. Under the hypothesis of step <1>2, the functions $h_n\coloneqq|f_n-f|^p$ are uniformly integrable.
-::: {.proof}
+:::
+
+::: pf-step
+
+Under the hypothesis of step [](#s2){.pf-ref}, the functions $h_n\coloneqq|f_n-f|^p$ are uniformly integrable.
+
+::: pf-proof
+
 Convergence $g_n\to g$ in $L^1$ implies that the family $\{g_n:n\ge1\}$ is uniformly integrable. Indeed, given $\varepsilon>0$, first choose $N$ so that
 \[
 \|g_n-g\|_1<\varepsilon/4
@@ -119,10 +140,17 @@ The elementary inequality
 h_n\le2^{p-1}(g_n+g)
 \]
 shows that $(h_n)$ is uniformly integrable as well.
+
 :::
 
-<1>4. Under the hypothesis of step <1>2, $\|f_n-f\|_p\to0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Under the hypothesis of step [](#s2){.pf-ref}, $\|f_n-f\|_p\to0$.
+
+::: pf-proof
+
 We have $h_n\to0$ almost everywhere. Fix $\varepsilon>0$. By uniform integrability, choose $\delta>0$ such that
 \[
 \mu(E)<\delta
@@ -145,5 +173,11 @@ for all sufficiently large $n$. Thus
 \[
 \boxed{\|f_n-f\|_p\to0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

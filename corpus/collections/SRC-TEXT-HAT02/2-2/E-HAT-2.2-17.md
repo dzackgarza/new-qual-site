@@ -37,23 +37,36 @@ C_n^{CW}(X)=H_n(X^n,X^{n-1}).
 \]
 Let $f:X\to Y$ be cellular, so $f(X^n)\subseteq Y^n$ for every $n$.
 
-<1>1. For each $n$, $f$ induces a homomorphism
+::: pf
+
+::: pf-step
+
+For each $n$, $f$ induces a homomorphism
 \[
 f_n:H_n(X^n,X^{n-1})\longrightarrow H_n(Y^n,Y^{n-1}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Cellularity says precisely that
 \[
 f:(X^n,X^{n-1})\longrightarrow(Y^n,Y^{n-1})
 \]
 is a map of pairs. Relative homology is functorial, so the displayed map is defined.
+
 :::
 
-<1>2. The maps $f_n$ commute with the cellular boundary operators, hence form a chain map
+:::
+
+::: pf-step
+
+The maps $f_n$ commute with the cellular boundary operators, hence form a chain map
 \[
 f_\#:C_*^{CW}(X)\to C_*^{CW}(Y).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The cellular boundary is the composite
 \[
 H_n(X^n,X^{n-1})
@@ -71,16 +84,23 @@ C_n^{CW}(Y)&\xrightarrow{d_n}&C_{n-1}^{CW}(Y)
 \end{array}
 \]
 commutes.
+
 :::
 
-<1>3. Under the canonical isomorphisms
+:::
+
+::: pf-step
+
+Under the canonical isomorphisms
 \[
 H_n^{CW}(X)\cong H_n(X),
 \qquad
 H_n^{CW}(Y)\cong H_n(Y),
 \]
 the homomorphism induced by the cellular chain map is the ordinary singular-homology map $f_*$.
-::: {.proof}
+
+::: pf-proof
+
 The cellular-homology isomorphism is constructed from the long exact sequences of the skeletal pairs and triples
 \[
 (X^n,X^{n-1},X^{n-2}).
@@ -98,6 +118,11 @@ H_n(X)&\xrightarrow{f_*}&H_n(Y)
 \end{array}
 \]
 commutes.
+
+:::
+
+:::
+
 :::
 
 Thus cellular homology is natural for cellular maps.

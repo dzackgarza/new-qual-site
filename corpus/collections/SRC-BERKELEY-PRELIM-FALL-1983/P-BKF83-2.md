@@ -36,9 +36,14 @@ Give a proof of your answer.
 For matrix units, write $E_{ij}$ for the matrix having a single $1$
 in position $(i,j)$ and zeros elsewhere.
 
-<1>1. For every $m\ge1$, the ring $M_m(F)$ is simple.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For every $m\ge1$, the ring $M_m(F)$ is simple.
+
+::: pf-proof
+
 Let $I$ be a nonzero two-sided ideal of $M_m(F)$. Choose a nonzero
 matrix $A=(a_{ij})\in I$, and choose indices $i,j$ with
 $a_{ij}\neq0$.
@@ -53,22 +58,33 @@ $$
 E_{rs}\in I.
 $$
 Thus every matrix unit lies in $I$, and therefore $I=M_m(F)$.
+
 :::
 
-<1>2. If a surjective ring homomorphism
+:::
+
+::: {.pf-step #s2}
+
+If a surjective ring homomorphism
 $$
 \varphi:M_{n+1}(F)\longrightarrow M_n(F)
 $$
 existed, then $\varphi$ would be injective.
 
-::: {.proof}
+::: pf-proof
+
 The kernel of $\varphi$ is a two-sided ideal of $M_{n+1}(F)$.
 Because the target ring is nonzero and $\varphi$ is surjective,
-$\ker\varphi$ is a proper ideal. By step <1>1, the only proper
+$\ker\varphi$ is a proper ideal. By step [](#s1){.pf-ref}, the only proper
 ideal is $0$. Hence $\ker\varphi=0$.
+
 :::
 
-<1>3. Under the assumption of step <1>2, the matrices
+:::
+
+::: {.pf-step #s3}
+
+Under the assumption of step [](#s2){.pf-ref}, the matrices
 $$
 P_i=\varphi(E_{ii}),
 \qquad
@@ -76,12 +92,13 @@ P_i=\varphi(E_{ii}),
 $$
 are nonzero pairwise orthogonal idempotents in $M_n(F)$.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 E_{ii}^2=E_{ii},
 $$
-each $P_i$ is idempotent. Step <1>2 shows that $\varphi$ is
+each $P_i$ is idempotent. Step [](#s2){.pf-ref} shows that $\varphi$ is
 injective, so $P_i\neq0$. For $i\neq j$,
 $$
 E_{ii}E_{jj}=0=E_{jj}E_{ii},
@@ -90,12 +107,18 @@ and therefore
 $$
 P_iP_j=0=P_jP_i.
 $$
+
 :::
 
-<1>4. The vector space $F^n$ cannot admit $n+1$ nonzero pairwise
+:::
+
+::: {.pf-step #s4}
+
+The vector space $F^n$ cannot admit $n+1$ nonzero pairwise
 orthogonal idempotent endomorphisms.
 
-::: {.proof}
+::: pf-proof
+
 Suppose $P_1,\ldots,P_{n+1}$ were such idempotents. Each
 $\operatorname{im}P_i$ is nonzero because $P_i\neq0$.
 
@@ -119,22 +142,34 @@ $$
 $$
 is a direct sum of $n+1$ nonzero subspaces of the $n$-dimensional
 space $F^n$, which is impossible.
+
 :::
 
-<1>5. Therefore the answer is
+:::
+
+::: {.pf-step #s5}
+
+Therefore the answer is
 $$
 \boxed{\text{No}.}
 $$
 
-::: {.proof}
-If a surjective ring homomorphism existed, step <1>3 would produce
-the idempotents forbidden by step <1>4. Thus no such homomorphism
+::: pf-proof
+
+If a surjective ring homomorphism existed, step [](#s3){.pf-ref} would produce
+the idempotents forbidden by step [](#s4){.pf-ref}. Thus no such homomorphism
 exists.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the required answer and proof.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the required answer and proof.
+
+:::
+
+:::
+
 :::

@@ -50,9 +50,14 @@ $$
 W\coloneqq\operatorname{span}_{\RR}\{u,v\}.
 $$
 
-<1>1. The subspace $W$ has dimension $2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The subspace $W$ has dimension $2$.
+
+::: pf-proof
+
 Suppose
 $$
 au+bv=0
@@ -66,9 +71,14 @@ $$
 b=0.
 $$
 Thus $u$ and $v$ are linearly independent.
+
 :::
 
-<1>2. For every $a,b\in\RR$,
+:::
+
+::: {.pf-step #s2}
+
+For every $a,b\in\RR$,
 $$
 \left\|
 a\cos(2\pi t)+b\sin(2\pi t)
@@ -77,7 +87,8 @@ a\cos(2\pi t)+b\sin(2\pi t)
 \sqrt{a^2+b^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 R\coloneqq\sqrt{a^2+b^2}.
@@ -102,9 +113,14 @@ $$
 \cos(2\pi t-\phi)=\pm1.
 $$
 Hence the supremum of the absolute value is exactly $R$.
+
 :::
 
-<1>3. The intersection of $W$ with the unit cube is
+:::
+
+::: {.pf-step #s3}
+
+The intersection of $W$ with the unit cube is
 $$
 \left\{
 au+bv:
@@ -112,8 +128,9 @@ a^2+b^2\le1
 \right\}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \|au+bv\|_\infty\le1
 \iff
@@ -121,36 +138,54 @@ $$
 \iff
 a^2+b^2\le1.
 $$
+
 :::
 
-<1>4. Under the linear coordinates
+:::
+
+::: {.pf-step #s4}
+
+Under the linear coordinates
 $$
 \RR^2\longrightarrow W,
 \qquad
 (a,b)\longmapsto au+bv,
 $$
-the section in step <1>3 is the closed Euclidean unit disk.
+the section in step [](#s3){.pf-ref} is the closed Euclidean unit disk.
 
-::: {.proof}
-Step <1>1 makes the displayed map a linear isomorphism, and step <1>3
+::: pf-proof
+
+Step [](#s1){.pf-ref} makes the displayed map a linear isomorphism, and step [](#s3){.pf-ref}
 identifies the section with
 $$
 \{(a,b)\in\RR^2:a^2+b^2\le1\},
 $$
 which is the closed circular unit disk.
+
 :::
 
-<1>5. Therefore there exists a $2$-dimensional linear subspace of
+:::
+
+::: {.pf-step #s5}
+
+Therefore there exists a $2$-dimensional linear subspace of
 $C[0,1]$ whose intersection with the unit cube is a circular disk.
 
-::: {.proof}
-The subspace $W$ has dimension $2$ by step <1>1 and
-has the required section by step <1>4.
+::: pf-proof
+
+The subspace $W$ has dimension $2$ by step [](#s1){.pf-ref} and
+has the required section by step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required existence statement.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required existence statement.
+
+:::
+
+:::
+
 :::

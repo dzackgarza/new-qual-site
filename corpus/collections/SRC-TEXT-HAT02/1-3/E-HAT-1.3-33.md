@@ -51,8 +51,14 @@ with
 m=dm',\qquad n=dn',\qquad \gcd(m',n')=1.
 \]
 
-<1>1. The quotient graph $T_{m,n}/K$ has $m'$ vertices of the type labeled $a$ and $n'$ vertices of the type labeled $b$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The quotient graph $T_{m,n}/K$ has $m'$ vertices of the type labeled $a$ and $n'$ vertices of the type labeled $b$.
+
+::: pf-proof
+
 In the Bass--Serre tree, the vertices labeled $a$ are the cosets of the subgroup $\langle b\rangle$, while the vertices labeled $b$ are the cosets of $\langle a\rangle$.
 Passing to $K$-orbits and using
 \[
@@ -74,14 +80,21 @@ K\backslash G_{m,n}/\langle a\rangle
 \mathbb Z/n'\mathbb Z,
 \]
 so there are $n'$ $b$-vertices.
+
 :::
 
-<1>2. The quotient graph has
+:::
+
+::: {.pf-step #s2}
+
+The quotient graph has
 \[
 dm'n'
 \]
 edges.
-::: {.proof}
+
+::: pf-proof
+
 The stabilizer of an edge in $T_{m,n}$ is the central subgroup
 \[
 Z=\langle a^m\rangle=\langle b^n\rangle.
@@ -101,29 +114,43 @@ K\backslash G_{m,n}/Z
 \mathbb Z/(dm'n')\mathbb Z,
 \]
 so there are $dm'n'$ edge orbits.
+
 :::
 
-<1>3. Each $a$-vertex is joined to each $b$-vertex by exactly $d$ edges.
-::: {.proof}
+:::
+
+::: pf-step
+
+Each $a$-vertex is joined to each $b$-vertex by exactly $d$ edges.
+
+::: pf-proof
+
 The quotient action of $G_{m,n}/K\cong\mathbb Z$ is transitive on the vertices of each fixed type modulo the respective stabilizers, so the number of edges joining a given pair of vertex orbits is constant.
 There are
 \[
 m'n'
 \]
-pairs consisting of one $a$-vertex and one $b$-vertex, while <1>2 gives $dm'n'$ edges total.
+pairs consisting of one $a$-vertex and one $b$-vertex, while step [](#s2){.pf-ref} gives $dm'n'$ edges total.
 Hence each pair is joined by exactly
 \[
 \frac{dm'n'}{m'n'}=d
 \]
 edges.
 Thus $T_{m,n}/K$ has exactly the asserted form.
+
 :::
 
-<1>4. The action of $K$ on $T_{m,n}$ is free, so
+:::
+
+::: {.pf-step #s4}
+
+The action of $K$ on $T_{m,n}$ is free, so
 \[
 K\cong\pi_1(T_{m,n}/K).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The kernel of the $G_{m,n}$-action on the tree is the central subgroup
 \[
 Z=\langle a^m\rangle.
@@ -136,13 +163,20 @@ because $\chi(a^m)=dm'n'\ne0$.
 Vertex stabilizers are conjugates of the cyclic vertex groups, and their intersection with $K$ is likewise trivial since $\chi(a)$ and $\chi(b)$ are nonzero.
 Hence $K$ acts freely on the tree.
 A group acting freely on a tree is naturally the fundamental group of its quotient graph.
+
 :::
 
-<1>5. Therefore $K$ is free of rank
+:::
+
+::: pf-step
+
+Therefore $K$ is free of rank
 \[
 \boxed{dm'n'-m'-n'+1.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The quotient graph is connected and finite, with
 \[
 E=dm'n',
@@ -153,10 +187,16 @@ The fundamental group of a connected finite graph is free of rank
 \[
 E-V+1.
 \]
-Using <1>4 gives
+Using step [](#s4){.pf-ref} gives
 \[
 \operatorname{rank}K
 =dm'n'-m'-n'+1.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

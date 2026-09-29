@@ -35,8 +35,15 @@ Here $\hat{f}$ is the Fourier transform of $f$ and $dx, d\xi$ represent the Lebe
 :::
 
 ::: {.solution}
-<1>1. We may assume $f\ne0$ and $\int x^2|f|^2,\int\xi^2|\widehat f|^2<\infty$; then $\|f'\|_2=2\pi\|\xi\widehat f\|_2$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+We may assume $f\ne0$ and $\int x^2|f|^2,\int\xi^2|\widehat f|^2<\infty$; then $\|f'\|_2=2\pi\|\xi\widehat f\|_2$.
+
+::: pf-proof
+
 If $f=0$ almost everywhere, both sides are $0$. For nonzero $f$, both second moments are positive; if either
 \[
 \int_{\mathbb R}x^2|f(x)|^2\,dx
@@ -55,10 +62,17 @@ in the distributional sense. Plancherel therefore gives
 \[
 \|f'\|_2=2\pi\|\xi\widehat f\|_2<\infty.
 \]
+
 :::
 
-<1>2. $\|f\|_2^2\le2\|xf\|_2\|f'\|_2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$\|f\|_2^2\le2\|xf\|_2\|f'\|_2$.
+
+::: pf-proof
+
 Choose $\chi\in C_c^\infty(\mathbb R)$ with $0\le\chi\le1$, $\chi=1$ on $[-1,1]$, and $\operatorname{supp}\chi\subset[-2,2]$. Put
 \[
 \chi_R(x)=\chi(x/R).
@@ -104,11 +118,14 @@ Taking absolute values and applying Cauchy--Schwarz yields
 \|f\|_2^2
 \le 2\|xf\|_2\|f'\|_2.
 \]
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Substituting $\|f'\|_2=2\pi\|\xi\widehat f\|_2$ from step <1>1 into step <1>2 gives
+:::
+
+::: pf-qed
+
+Substituting $\|f'\|_2=2\pi\|\xi\widehat f\|_2$ from step [](#s1){.pf-ref} into step [](#s2){.pf-ref} gives
 \[
 \|xf\|_2\,\|\xi\widehat f\|_2
 \ge \frac1{4\pi}\|f\|_2^2.
@@ -122,5 +139,9 @@ Squaring both sides,
 \frac1{16\pi^2}
 \left(\int |f(x)|^2\,dx\right)^2.}
 \]
+
 :::
+
+:::
+
 :::

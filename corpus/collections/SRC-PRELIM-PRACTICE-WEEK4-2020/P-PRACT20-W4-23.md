@@ -24,8 +24,15 @@ If $\alpha=1$, find $A\in\mathbb R^{2\times2}$ satisfying the equation.
 :::
 
 ::: {.solution}
-<1>1. If $\alpha>1$, any solution $A$ would have to be diagonal.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $\alpha>1$, any solution $A$ would have to be diagonal.
+
+::: pf-proof
+
 Set
 $$
 D=\begin{pmatrix}-1&0\\0&-\alpha\end{pmatrix}.
@@ -45,11 +52,18 @@ $$
 (\alpha-1)c=0.
 $$
 Since $\alpha>1$, we obtain $b=c=0$. Thus $A$ is diagonal.
+
 :::
 
-<1>2. No real diagonal matrix has the required hundredth power when $\alpha>1$.
-::: {.proof}
-By step <1>1, write
+:::
+
+::: {.pf-step #s2}
+
+No real diagonal matrix has the required hundredth power when $\alpha>1$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, write
 $$
 A=\begin{pmatrix}a&0\\0&d\end{pmatrix}.
 $$
@@ -58,10 +72,17 @@ $$
 A^{100}=\begin{pmatrix}a^{100}&0\\0&d^{100}\end{pmatrix}.
 $$
 For real $a$ and $d$, both $a^{100}$ and $d^{100}$ are nonnegative, so they cannot equal $-1$ and $-\alpha$. Therefore no such real matrix exists.
+
 :::
 
-<1>3. When $\alpha=1$, rotation through angle $\pi/100$ is a solution.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+When $\alpha=1$, rotation through angle $\pi/100$ is a solution.
+
+::: pf-proof
+
 Let
 $$
 A=
@@ -80,10 +101,17 @@ A^{100}=R_\pi
 =\begin{pmatrix}-1&0\\0&-1\end{pmatrix}.
 $$
 Thus $A^{100}=\operatorname{diag}(-1,-\alpha)$ when $\alpha=1$.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>2 prove nonexistence for $\alpha>1$, and step <1>3 gives the requested example for $\alpha=1$.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove nonexistence for $\alpha>1$, and step [](#s3){.pf-ref} gives the requested example for $\alpha=1$.
+
+:::
+
+:::
+
 :::

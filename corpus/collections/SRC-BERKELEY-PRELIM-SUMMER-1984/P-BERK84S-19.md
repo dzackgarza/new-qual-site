@@ -38,11 +38,18 @@ $$
 :::
 
 ::: {.solution}
-<1>1. A particular solution is
+
+::: pf
+
+::: pf-step
+
+A particular solution is
 \[
 x_p(t)=\frac{3}{40}\cos t+\frac1{40}\sin t.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Seek a particular solution of the form
 \[
 x_p(t)=A\cos t+B\sin t.
@@ -68,10 +75,17 @@ Hence
 24B-8A=0.
 \]
 The second equation gives $B=A/3$; substituting into the first yields $A=3/40$, hence $B=1/40$.
+
 :::
 
-<1>2. Every solution differs from $x_p$ by an exponentially decaying function.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every solution differs from $x_p$ by an exponentially decaying function.
+
+::: pf-proof
+
 The characteristic equation of the homogeneous equation is
 \[
 r^2+8r+25=0,
@@ -94,10 +108,17 @@ Therefore
 \[
 \lim_{t\to\infty}\bigl(x(t)-x_p(t)\bigr)=0.
 \]
+
 :::
 
-<1>3. With $\alpha=\sqrt{10}/40$ and $\delta=\arctan(1/3)$, one has $x_p(t)=\alpha\cos(t-\delta)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+With $\alpha=\sqrt{10}/40$ and $\delta=\arctan(1/3)$, one has $x_p(t)=\alpha\cos(t-\delta)$.
+
+::: pf-proof
+
 Choose
 \[
 \alpha=\sqrt{\left(\frac3{40}\right)^2+\left(\frac1{40}\right)^2}
@@ -117,9 +138,15 @@ Then
 =\frac3{40}\cos t+\frac1{40}\sin t
 =x_p(t).
 \]
-Combining this with <1>2 gives
+Combining this with step [](#s2){.pf-ref} gives
 \[
 \boxed{\lim_{t\to\infty}\left(x(t)-\alpha\cos(t-\delta)\right)=0}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -43,12 +43,17 @@ d=\deg X.
 $$
 The curve is nondegenerate by hypothesis.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 d\ge n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $d\le n$, then
 [[P-AGH434RATIONALNORMALCURVE|Exercise IV.3.4(b)]]
 applied to the nondegenerate curve $X\subseteq\PP^n$ gives
@@ -56,9 +61,14 @@ $$
 d=n.
 $$
 Thus in all cases $d\ge n$.
+
 :::
 
-<1>2. Choose a general hyperplane
+:::
+
+::: {.pf-step #s2}
+
+Choose a general hyperplane
 $$
 H\subseteq\PP^n.
 $$
@@ -71,7 +81,8 @@ $$
 H\cong\PP^{n-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 In characteristic zero, the Uniform Position Lemma says that a general
 hyperplane section of an integral nondegenerate projective curve is reduced
 and in uniform position: any two subsets of the same cardinality have the
@@ -82,11 +93,17 @@ see also the
 [curve-notes exposition, §16.1](https://people.math.harvard.edu/~landesman/assets/curves-notes.pdf).
 The characteristic-zero hypothesis in the exercise is exactly the hypothesis
 under which this monodromy statement is used.
+
 :::
 
-<1>3. The $d$ points of $\Gamma$ span the whole hyperplane $H$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The $d$ points of $\Gamma$ span the whole hyperplane $H$.
+
+::: pf-proof
+
 Suppose instead that
 $$
 \Gamma\subseteq L
@@ -136,12 +153,18 @@ $$
 on $X$. But $s'-cs$ is a nonzero linear form because $H'\ne H$, so this
 would place $X$ in a hyperplane, a contradiction.
 Hence $\Gamma$ spans $H$.
+
 :::
 
-<1>4. Every set of $n$ distinct points of $\Gamma$ spans $H$.
+:::
 
-::: {.proof}
-By step <1>3, the finite set $\Gamma$ spans the $(n-1)$-dimensional
+::: {.pf-step #s4}
+
+Every set of $n$ distinct points of $\Gamma$ spans $H$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the finite set $\Gamma$ spans the $(n-1)$-dimensional
 projective space $H$. Hence some $n$ points of $\Gamma$ form a projective
 basis of $H$.
 
@@ -159,12 +182,17 @@ $$
 For $n$ points this rank is $n$ exactly when no hyperplane of $H$ contains
 all of them, equivalently exactly when they span $H$.
 
-Step <1>2 says that all $n$-point subsets of $\Gamma$ have the same Hilbert
+Step [](#s2){.pf-ref} says that all $n$-point subsets of $\Gamma$ have the same Hilbert
 function. Since one such subset spans $H$, every such subset has degree-one
 Hilbert function equal to $n$ and therefore spans $H$.
+
 :::
 
-<1>5. Every set of $n-1$ distinct points
+:::
+
+::: {.pf-step #s5}
+
+Every set of $n-1$ distinct points
 $$
 P_1,\ldots,P_{n-1}\in\Gamma
 $$
@@ -173,18 +201,24 @@ $$
 L=\langle P_1,\ldots,P_{n-1}\rangle.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If the $n-1$ points were linearly dependent, adjoining any further point
 $$
 Q\in\Gamma\setminus\{P_1,\ldots,P_{n-1}\}
 $$
 would give $n$ points spanning a projective space of dimension at most
-$n-2$. This would contradict step <1>4, since $d\ge n$ by step <1>1.
+$n-2$. This would contradict step [](#s4){.pf-ref}, since $d\ge n$ by step [](#s1){.pf-ref}.
 Therefore the $n-1$ points are linearly independent and their span has
 dimension $n-2$.
+
 :::
 
-<1>6. For the points in step <1>5,
+:::
+
+::: {.pf-step #s6}
+
+For the points in step [](#s5){.pf-ref},
 $$
 L\cap X
 =
@@ -192,7 +226,8 @@ L\cap X
 $$
 scheme-theoretically.
 
-::: {.proof}
+::: pf-proof
+
 Because
 $$
 L\subseteq H,
@@ -209,10 +244,10 @@ If $Q$ were distinct from the chosen $P_i$, then the $n$ points
 $$
 P_1,\ldots,P_{n-1},Q
 $$
-would all lie in the $(n-2)$-plane $L$, contradicting step <1>4.
+would all lie in the $(n-2)$-plane $L$, contradicting step [](#s4){.pf-ref}.
 Thus there is no additional set-theoretic intersection point.
 
-Moreover the hyperplane section $\Gamma=X\cap H$ is reduced by step <1>2.
+Moreover the hyperplane section $\Gamma=X\cap H$ is reduced by step [](#s2){.pf-ref}.
 At each $P_i$, a local equation of $H$ is therefore a uniformizer in the
 regular local ring $\mco_{X,P_i}$. Since the ideal of
 $$
@@ -223,9 +258,14 @@ most $1$, and it is nonzero because $P_i\in L$. Hence that length is exactly
 $1$.
 Therefore the scheme-theoretic intersection consists exactly of the
 $n-1$ reduced chosen points.
+
 :::
 
-<1>7. Let
+:::
+
+::: {.pf-step #s7}
+
+Let
 $$
 U\subseteq X^{n-1}
 $$
@@ -243,10 +283,11 @@ $$
 X\cap\langle P_1,\ldots,P_{n-1}\rangle.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Linear independence is an open rank condition, and pairwise distinctness is
 the complement of the diagonals, so $U$ is open. It is nonempty by step
-<1>5.
+[](#s5){.pf-ref}.
 
 On $U$, taking the linear span defines a morphism
 $$
@@ -275,9 +316,14 @@ $$
 is projective. Every fibre is finite: if an $(n-2)$-plane contained the
 integral curve $X$, then $X$ would lie in a hyperplane, contrary to
 nondegeneracy. Hence $q$ is projective and quasi-finite, therefore finite.
+
 :::
 
-<1>8. The locus
+:::
+
+::: {.pf-step #s8}
+
+The locus
 $$
 B
 =
@@ -292,7 +338,8 @@ X\cap\langle P_1,\ldots,P_{n-1}\rangle
 $$
 is a proper closed subset of $U$.
 
-::: {.proof}
+::: pf-proof
+
 Since $q$ is finite, the coherent sheaf
 $$
 q_*\mco_{\mathcal Z}
@@ -309,12 +356,17 @@ $$
 Upper semicontinuity of fibre dimension for a coherent sheaf makes the
 locus where this number is at least $n$ closed.
 
-Step <1>6 gives a tuple for which the fibre consists of exactly
+Step [](#s6){.pf-ref} gives a tuple for which the fibre consists of exactly
 $n-1$ reduced points, hence has length $n-1$. Therefore that tuple is not in
 $B$, so $B$ is proper.
+
 :::
 
-<1>9. For every tuple
+:::
+
+::: {.pf-step #s9}
+
+For every tuple
 $$
 \mathbf P\in U\setminus B,
 $$
@@ -324,29 +376,36 @@ $$
 $$
 contains no further point of $X$.
 
-::: {.proof}
-The fibre in step <1>7 always contains the $n-1$ distinct chosen points, so
+::: pf-proof
+
+The fibre in step [](#s7){.pf-ref} always contains the $n-1$ distinct chosen points, so
 its length is at least $n-1$.
 For
 $$
 \mathbf P\notin B,
 $$
-step <1>8 gives length at most $n-1$. Hence the length is exactly $n-1$.
+step [](#s8){.pf-ref} gives length at most $n-1$. Hence the length is exactly $n-1$.
 There can therefore be no additional point of $X$ in the span.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-The variety $X^{n-1}$ is irreducible. The set $U$ in step <1>7 is nonempty
-open, and $U\setminus B$ is nonempty open in $U$ by step <1>8. Hence it is a
+::: pf-qed
+
+The variety $X^{n-1}$ is irreducible. The set $U$ in step [](#s7){.pf-ref} is nonempty
+open, and $U\setminus B$ is nonempty open in $U$ by step [](#s8){.pf-ref}. Hence it is a
 dense open subset of $X^{n-1}$.
 
-By step <1>9, every tuple in this dense open set has the required property.
+By step [](#s9){.pf-ref}, every tuple in this dense open set has the required property.
 Thus for almost all choices of
 $$
 P_1,\ldots,P_{n-1}\in X,
 $$
 their $(n-2)$-plane contains no further point of $X$.
+
 :::
+
+:::
+
 :::

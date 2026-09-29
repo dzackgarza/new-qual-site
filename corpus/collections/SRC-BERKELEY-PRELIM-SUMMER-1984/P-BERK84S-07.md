@@ -37,7 +37,6 @@ $$
 $$
 :::
 
-
 ::: {.solution}
 Define
 \[
@@ -48,8 +47,14 @@ Let
 (u_0,v_0)=F(x_0,y_0).
 \]
 
-<1>1. The map $F$ is locally invertible at $(x_0,y_0)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The map $F$ is locally invertible at $(x_0,y_0)$.
+
+::: pf-proof
+
 Its derivative is
 \[
 DF(x,y)=
@@ -63,10 +68,17 @@ Hence
 \det DF(x_0,y_0)=-f'(x_0)\ne0.
 \]
 By the inverse function theorem, $F$ is a $C^1$ diffeomorphism between neighborhoods of $(x_0,y_0)$ and $(u_0,v_0)$.
+
 :::
 
-<1>2. The local inverse has the required form.
-::: {.proof}
+:::
+
+::: pf-step
+
+The local inverse has the required form.
+
+::: pf-proof
+
 Since $f'(x_0)\ne0$, the one-variable inverse function theorem gives neighborhoods of $x_0$ and $u_0=f(x_0)$ on which $f$ has a $C^1$ inverse $g$. Thus from
 \[
 u=f(x)
@@ -89,5 +101,11 @@ Hence the local inverse is
 F^{-1}(u,v)=\bigl(g(u),-v+u\,g(u)\bigr).
 }
 \]
+
 :::
+
+:::
+
+:::
+
 :::

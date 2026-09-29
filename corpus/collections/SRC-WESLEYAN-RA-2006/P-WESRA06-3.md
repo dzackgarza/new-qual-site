@@ -43,8 +43,15 @@ Let
 :::
 
 ::: {.solution}
-<1>1. Express the infinitely-often set by countable unions and intersections.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Express the infinitely-often set by countable unions and intersections.
+
+::: pf-proof
+
 A point belongs to infinitely many $A_n$ exactly when, for every $N$, it belongs to at least one $A_n$ with $n\ge N$.
 Hence
 \[
@@ -55,10 +62,17 @@ Since $\mathcal A$ is closed under countable unions and intersections,
 \[
 \boxed{\overline A\in\mathcal A.}
 \]
+
 :::
 
-<1>2. Apply the first Borel--Cantelli lemma.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the first Borel--Cantelli lemma.
+
+::: pf-proof
+
 The hypothesis
 \[
 \sum_{n=1}^\infty\mu(A_n)=55<\infty
@@ -71,10 +85,17 @@ Since $\overline A=\limsup A_n$,
 \[
 \boxed{\mu(\overline A)=0.}
 \]
+
 :::
 
-<1>3. Identify the counting function as a monotone sum.
-::: {.proof}
+:::
+
+::: pf-step
+
+Identify the counting function as a monotone sum.
+
+::: pf-proof
+
 For each $N$, define
 \[
 f_N=\sum_{n=1}^N\mathbf1_{A_n}.
@@ -97,10 +118,17 @@ Hence
 \[
 \boxed{f\in L^1(\mu),\qquad \int f\,d\mu=55.}
 \]
+
 :::
 
-<1>4. Compute the decimal-digit event.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the decimal-digit event.
+
+::: pf-proof
+
 Ignore the countable set of numbers having two decimal expansions; it has Lebesgue measure zero.
 For the remaining numbers, the decimal digits are independent and each digit $0,1,\ldots,9$ has probability $1/10$ under normalized Lebesgue measure.
 
@@ -124,5 +152,11 @@ The exceptional event that every digit is odd has measure
 \lim_{N\to\infty}\left(\frac12\right)^N=0,
 \]
 so no further case contributes.
+
 :::
+
+:::
+
+:::
+
 :::

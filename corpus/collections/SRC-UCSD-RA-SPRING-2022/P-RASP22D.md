@@ -33,10 +33,16 @@ Let $H$ be a Hilbert space and let $U \in L(H, H)$ be unitary, meaning $U$ is in
    Prove that $S_n \to P$ in the strong operator topology.
 :::
 
-
 ::: {.solution}
-<1>1. Identify the orthogonal complement of the range.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Identify the orthogonal complement of the range.
+
+::: pf-proof
+
 Let
 \[
 M:=\ker(I-U)=\{x:Ux=x\}.
@@ -64,10 +70,17 @@ Taking orthogonal complements once more gives
 \[
 \overline{\operatorname{Ran}(I-U)}=M^\perp.
 \]
+
 :::
 
-<1>2. Compute the averages on the fixed-point space and on the range of $I-U$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the averages on the fixed-point space and on the range of $I-U$.
+
+::: pf-proof
+
 If $x\in M$, then $U^jx=x$ for every $j$, so
 \[
 S_nx=x=Px.
@@ -89,10 +102,17 @@ Since $U$ is unitary,
 =\frac{2\|y\|}{n}\to0.
 \]
 Thus $S_nx\to0=Px$ for every $x\in\operatorname{Ran}(I-U)$.
+
 :::
 
-<1>3. Extend the convergence to all of $M^\perp$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extend the convergence to all of $M^\perp$.
+
+::: pf-proof
+
 Each $S_n$ is a contraction:
 \[
 \|S_n\|
@@ -120,5 +140,11 @@ Therefore
 \[
 \boxed{S_n\to P\text{ in the strong operator topology}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

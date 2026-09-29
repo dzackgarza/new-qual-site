@@ -43,10 +43,16 @@ If yes, prove it.
 If no, find a Borel set which is not inner regular.
 :::
 
-
 ::: {.solution}
-<1>1. Verify the metric axioms.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Verify the metric axioms.
+
+::: pf-proof
+
 Write a point as $(x,y)$. Then the proposed distance is
 \[
 d((x_1,y_1),(x_2,y_2))
@@ -61,10 +67,17 @@ d_{\mathrm{disc}}(x_1,x_2)=
 \end{cases}
 \]
 The discrete distance and the Euclidean distance are metrics, and the sum of two metrics is a metric. Thus positivity, symmetry, definiteness, and the triangle inequality all hold.
+
 :::
 
-<1>2. Prove local compactness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove local compactness.
+
+::: pf-proof
+
 Fix $(x_0,y_0)\in X$ and choose $0<r<1$. If
 \[
 d((x,y),(x_0,y_0))\le r,
@@ -75,10 +88,17 @@ then necessarily $x=x_0$, because distinct $x$-coordinates already contribute $1
 =\{x_0\}\times[y_0-r,y_0+r].
 \]
 With the induced metric this is isometric to the compact interval $[y_0-r,y_0+r]$. Thus every point has a neighborhood with compact closure, so $X$ is locally compact.
+
 :::
 
-<1>3. Show that a compactly supported continuous function uses only finitely many vertical lines.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that a compactly supported continuous function uses only finitely many vertical lines.
+
+::: pf-proof
+
 Let $K=\operatorname{supp}f$, which is compact. The balls
 \[
 B((x,y),1/3),\qquad (x,y)\in K,
@@ -91,10 +111,17 @@ meets only finitely many vertical lines. Thus
 \[
 F=\{x_1,\dots,x_n\}.
 \]
+
 :::
 
-<1>4. Identify the measure induced by $I$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Identify the measure induced by $I$.
+
+::: pf-proof
+
 For each $x\in\mathbb R$, let $\lambda_x$ be one-dimensional Lebesgue measure on the open-and-closed vertical line $\{x\}\times\mathbb R$. Define, for Borel $E\subseteq X$,
 \[
 \nu(E):=\sum_{x\in\mathbb R}m(E_x),
@@ -110,10 +137,17 @@ This is a Borel measure: it is the sum of the family $(\lambda_x)_{x\in\mathbb R
 =I(f).
 \]
 Hence the Radon measure induced by the positive functional $I$ is precisely $\mu=\nu$.
+
 :::
 
-<1>5. Prove inner regularity on every Borel set.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove inner regularity on every Borel set.
+
+::: pf-proof
+
 Let $E\subseteq X$ be Borel. We show
 \[
 \mu(E)=\sup\{\mu(K):K\subseteq E,\ K\text{ compact}\}.
@@ -152,5 +186,11 @@ If $\mu(E)=\infty$, then for every $M>0$ the definition of the uncountable sum p
 Approximating those finitely many sections from inside by compact sets as above produces a compact $K\subseteq E$ with $\mu(K)>M$. Hence the supremum over compact subsets is infinite.
 
 Thus $\mu$ is inner regular on every Borel set. In particular, the answer to the final question is **yes**.
+
 :::
+
+:::
+
+:::
+
 :::

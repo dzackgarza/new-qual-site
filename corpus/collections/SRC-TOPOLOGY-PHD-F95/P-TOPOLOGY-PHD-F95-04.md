@@ -43,8 +43,14 @@ q:D\longrightarrow D/{\sim}
 be the quotient map.
 The quotient is not Hausdorff.
 
-<1>1. Distinct points of the boundary circle determine distinct points of the quotient.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Distinct points of the boundary circle determine distinct points of the quotient.
+
+::: pf-proof
+
 Choose distinct points
 \[
 u,v\in S^1=\{z\in\mathbb C:|z|=1\}.
@@ -61,10 +67,17 @@ Thus
 \[
 q(u)\ne q(v).
 \]
+
 :::
 
-<1>2. Every open neighborhood of $q(u)$ has preimage containing an entire circle of some radius arbitrarily close to $1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every open neighborhood of $q(u)$ has preimage containing an entire circle of some radius arbitrarily close to $1$.
+
+::: pf-proof
+
 Let $O\subseteq D/{\sim}$ be open and suppose $q(u)\in O$.
 Then
 \[
@@ -95,10 +108,17 @@ Therefore every point $z\in D$ satisfying
 |z|=1-t
 \]
 is equivalent to $(1-t)u$ and, by saturation, also belongs to $U$.
+
 :::
 
-<1>3. The two quotient points $q(u)$ and $q(v)$ cannot have disjoint open neighborhoods.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The two quotient points $q(u)$ and $q(v)$ cannot have disjoint open neighborhoods.
+
+::: pf-proof
+
 Suppose, for contradiction, that there are disjoint open sets $O_u,O_v\subseteq D/{\sim}$ such that
 \[
 q(u)\in O_u,
@@ -113,7 +133,7 @@ V=q^{-1}(O_v).
 \]
 Then $U$ and $V$ are disjoint open saturated subsets of $D$, with $u\in U$ and $v\in V$.
 
-By <1>2 applied to $U$, there is $\varepsilon_u>0$ such that
+By step [](#s2){.pf-ref} applied to $U$, there is $\varepsilon_u>0$ such that
 \[
 (1-t)u\in U
 \qquad(0<t<\varepsilon_u).
@@ -142,16 +162,29 @@ Thus
 U\cap V\ne\varnothing,
 \]
 contradicting the disjointness of $O_u$ and $O_v$.
+
 :::
 
-<1>4. Therefore $D/{\sim}$ is not Hausdorff.
-::: {.proof}
-By <1>1, $q(u)$ and $q(v)$ are distinct points of the quotient.
-By <1>3, they cannot be separated by disjoint open neighborhoods.
+:::
+
+::: pf-step
+
+Therefore $D/{\sim}$ is not Hausdorff.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $q(u)$ and $q(v)$ are distinct points of the quotient.
+By step [](#s3){.pf-ref}, they cannot be separated by disjoint open neighborhoods.
 This violates the Hausdorff separation axiom.
 Hence
 \[
 \boxed{D/{\sim}\text{ is not Hausdorff}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

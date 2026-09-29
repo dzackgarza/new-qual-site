@@ -39,12 +39,17 @@ $$
 F(z)=\frac{z+1}{z(z-1)}.
 $$
 
-<1>1. The partial-fraction decomposition is
+::: pf
+
+::: {.pf-step #s1}
+
+The partial-fraction decomposition is
 $$
 F(z)=-\frac1z+\frac2{z-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 -\frac1z+\frac2{z-1}
@@ -53,9 +58,14 @@ $$
 =
 \frac{z+1}{z(z-1)}.
 $$
+
 :::
 
-<1>2. About $z=0$, on the annulus $0<\abs{z}<1$,
+:::
+
+::: {.pf-step #s2}
+
+About $z=0$, on the annulus $0<\abs{z}<1$,
 $$
 \boxed{
 F(z)
@@ -65,7 +75,8 @@ F(z)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}<1$,
 $$
 \frac2{z-1}
@@ -74,11 +85,16 @@ $$
 =
 -2\sum_{n=0}^{\infty}z^n.
 $$
-Substitute this into step <1>1. The factor $1/z$ requires $z\neq0$, so the
+Substitute this into step [](#s1){.pf-ref}. The factor $1/z$ requires $z\neq0$, so the
 resulting Laurent expansion is valid on $0<\abs{z}<1$.
+
 :::
 
-<1>3. About $z=0$, on the annulus $\abs{z}>1$,
+:::
+
+::: {.pf-step #s3}
+
+About $z=0$, on the annulus $\abs{z}>1$,
 $$
 \boxed{
 F(z)
@@ -88,7 +104,8 @@ F(z)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}>1$,
 $$
 \frac2{z-1}
@@ -97,10 +114,15 @@ $$
 =
 2\sum_{n=0}^{\infty}z^{-n-1}.
 $$
-Substitution into step <1>1 gives the displayed expansion.
+Substitution into step [](#s1){.pf-ref} gives the displayed expansion.
+
 :::
 
-<1>4. About $z=1$, write
+:::
+
+::: {.pf-step #s4}
+
+About $z=1$, write
 $$
 w=z-1.
 $$
@@ -114,8 +136,9 @@ F(1+w)
 }
 $$
 
-::: {.proof}
-Step <1>1 becomes
+::: pf-proof
+
+Step [](#s1){.pf-ref} becomes
 $$
 F(1+w)
 =
@@ -130,9 +153,14 @@ $$
 $$
 Substitution yields the displayed Laurent series, valid away from the center
 $w=0$.
+
 :::
 
-<1>5. About $z=1$, on the annulus $\abs{w}>1$,
+:::
+
+::: {.pf-step #s5}
+
+About $z=1$, on the annulus $\abs{w}>1$,
 $$
 \boxed{
 F(1+w)
@@ -142,7 +170,8 @@ F(1+w)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{w}>1$,
 $$
 \frac1{1+w}
@@ -156,12 +185,18 @@ $$
 F(1+w)=-\frac1{1+w}+\frac2w
 $$
 gives the displayed series.
+
 :::
 
-<1>6. The expansions in steps <1>2--<1>5 exhaust the Laurent expansions on
+:::
+
+::: {.pf-step #s6}
+
+The expansions in steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} exhaust the Laurent expansions on
 the maximal annuli centered at $0$ and $1$.
 
-::: {.proof}
+::: pf-proof
+
 The only singularities of $F$ are at $0$ and $1$. About the center $0$, the
 other singularity lies at radius $1$, producing the maximal annuli
 $$
@@ -176,12 +211,18 @@ $$
 \qquad\text{and}\qquad
 1<\abs{z-1}<\infty.
 $$
-Steps <1>2--<1>5 give one Laurent series on each of these maximal annuli.
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} give one Laurent series on each of these maximal annuli.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>6 give all requested Laurent expansions about both centers.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} give all requested Laurent expansions about both centers.
+
+:::
+
+:::
+
 :::

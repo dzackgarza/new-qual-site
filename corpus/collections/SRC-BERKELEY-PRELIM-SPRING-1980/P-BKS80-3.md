@@ -41,7 +41,11 @@ $$
 $$
 Then $J(f)=\langle f,f\rangle$.
 
-<1>1. For
+::: pf
+
+::: {.pf-step #s1}
+
+For
 $$
 k(x)\coloneqq3-24x+30x^2,
 $$
@@ -51,7 +55,8 @@ $$
 $$
 for every $q\in P_2$.
 
-::: {.proof}
+::: pf-proof
+
 It is enough to check the basis $1,x,x^2$. Directly,
 $$
 \int_0^1k(x)\,dx
@@ -82,33 +87,45 @@ q\longmapsto\langle q,k\rangle
 q\longmapsto q(1)
 $$
 agree on a basis of $P_2$, hence agree everywhere.
+
 :::
 
-<1>2. The squared norm of $k$ is
+:::
+
+::: {.pf-step #s2}
+
+The squared norm of $k$ is
 $$
 \langle k,k\rangle=9.
 $$
 
-::: {.proof}
-Apply step <1>1 with $q=k$. Then
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} with $q=k$. Then
 $$
 \langle k,k\rangle=k(1)=3-24+30=9.
 $$
+
 :::
 
-<1>3. Every $f\in Q$ satisfies
+:::
+
+::: {.pf-step #s3}
+
+Every $f\in Q$ satisfies
 $$
 J(f)\ge\frac19.
 $$
 
-::: {.proof}
-If $f\in Q$, then $f(1)=1$. By step <1>1,
+::: pf-proof
+
+If $f\in Q$, then $f(1)=1$. By step [](#s1){.pf-ref},
 $$
 1
 =
 \langle f,k\rangle.
 $$
-Cauchy--Schwarz and step <1>2 give
+Cauchy--Schwarz and step [](#s2){.pf-ref} give
 $$
 1
 \le
@@ -117,9 +134,14 @@ $$
 3J(f)^{1/2}.
 $$
 Squaring yields $J(f)\ge1/9$.
+
 :::
 
-<1>4. Equality in step <1>3 occurs for exactly one polynomial, namely
+:::
+
+::: {.pf-step #s4}
+
+Equality in step [](#s3){.pf-ref} occurs for exactly one polynomial, namely
 $$
 f_0(x)
 \coloneqq
@@ -128,7 +150,8 @@ f_0(x)
 \boxed{\frac{10x^2-8x+1}{3}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Equality in Cauchy--Schwarz holds exactly when $f$ and $k$ are linearly
 dependent. Thus an equality case in $Q$ must have $f=ck$. The constraint
 $f(1)=1$ and $k(1)=9$ force $c=1/9$, giving the displayed polynomial.
@@ -136,7 +159,7 @@ Conversely,
 $$
 f_0(1)=\frac{10-8+1}{3}=1,
 $$
-so $f_0\in Q$, and step <1>2 gives
+so $f_0\in Q$, and step [](#s2){.pf-ref} gives
 $$
 J(f_0)
 =
@@ -144,9 +167,14 @@ J(f_0)
 =
 \frac19.
 $$
+
 :::
 
-<1>5. Therefore $J$ attains its minimum on $Q$, with
+:::
+
+::: {.pf-step #s5}
+
+Therefore $J$ attains its minimum on $Q$, with
 $$
 \boxed{
 \min_{f\in Q}J(f)=\frac19,
@@ -155,14 +183,21 @@ f_{\min}(x)=\frac{10x^2-8x+1}{3}.
 }
 $$
 
-::: {.proof}
-Step <1>3 gives the universal lower bound, and step <1>4 gives the unique
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives the universal lower bound, and step [](#s4){.pf-ref} gives the unique
 element of $Q$ attaining it.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives both the existence and the location of the minimum.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives both the existence and the location of the minimum.
+
+:::
+
+:::
+
 :::

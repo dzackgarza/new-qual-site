@@ -42,8 +42,14 @@ The group of symmetries of the regular pentagram shown above is isomorphic to th
 ::: {.solution}
 The symmetry group is the dihedral group of order $10$, so the answer is $\boxed{\text{(E)}}$.
 
-<1>1. The symmetry group of the regular pentagram is the dihedral group $D_5$ of order $10$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The symmetry group of the regular pentagram is the dihedral group $D_5$ of order $10$.
+
+::: pf-proof
+
 There are five rotations of the regular pentagram, through multiples of $2\pi/5$, and five reflections through axes passing through a vertex and the center.
 These ten symmetries preserve adjacency in the star and exhaust the Euclidean symmetries of its five vertices.
 
@@ -53,5 +59,11 @@ r^5=s^2=e,
 \qquad srs=r^{-1}.
 \]
 Thus the group has the presentation of $D_5$ and has order $10$.
+
 :::
+
+:::
+
+:::
+
 :::

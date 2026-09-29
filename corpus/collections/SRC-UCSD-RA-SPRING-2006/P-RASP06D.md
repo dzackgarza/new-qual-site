@@ -33,8 +33,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Pass the pointwise domination to the limit.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Pass the pointwise domination to the limit.
+
+::: pf-proof
+
 Outside a null set, we have simultaneously
 \[
 f_j(x)\to f(x),
@@ -48,10 +55,17 @@ Taking limits gives
 |f(x)|\le g(x)
 \]
 almost everywhere. In particular $g\ge0$ almost everywhere.
+
 :::
 
-<1>2. Use Fatou's lemma to prove $L^1$ convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use Fatou's lemma to prove $L^1$ convergence.
+
+::: pf-proof
+
 Define
 \[
 h_j:=g_j+g-|f_j-f|.
@@ -95,10 +109,17 @@ and consequently
 \[
 \boxed{\|f_j-f\|_1\to0.}
 \]
+
 :::
 
-<1>3. Conclude convergence of the integrals.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude convergence of the integrals.
+
+::: pf-proof
+
 Finally,
 \[
 \left|\int_X f_j\,d\mu-\int_X f\,d\mu\right|
@@ -108,5 +129,11 @@ Therefore
 \[
 \boxed{\int_X f\,d\mu=\lim_{j\to\infty}\int_X f_j\,d\mu.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

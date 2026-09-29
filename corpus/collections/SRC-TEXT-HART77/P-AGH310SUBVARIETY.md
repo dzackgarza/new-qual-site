@@ -42,9 +42,14 @@ $$
 \phi'=\ro{\phi}{X'}:X'\longrightarrow Y'.
 $$
 
-<1>1. The map $\phi'$ is continuous for the induced topologies on $X'$ and $Y'$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The map $\phi'$ is continuous for the induced topologies on $X'$ and $Y'$.
+
+::: pf-proof
+
 Let $C\subseteq Y'$ be closed.
 Because $Y'$ has the subspace topology from $Y$, there is a closed subset $D\subseteq Y$ with
 $$
@@ -56,11 +61,17 @@ $$
 $$
 The set $\phi^{-1}(D)$ is closed in $X$ because $\phi$ is continuous, so its intersection with $X'$ is closed in $X'$.
 Thus $\phi'$ is continuous.
+
 :::
 
-<1>2. A regular function on an open subset of $Y'$ is, near each point, the restriction of a regular function on an open subset of $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A regular function on an open subset of $Y'$ is, near each point, the restriction of a regular function on an open subset of $Y$.
+
+::: pf-proof
+
 Fix an open subset $V'\subseteq Y'$, a regular function $f$ on $V'$, and a point $Q\in V'$.
 By the definition of a regular function on the induced quasi-affine or quasi-projective structure, after shrinking around $Q$ in $V'$, the function $f$ is represented by a quotient
 $$
@@ -69,17 +80,23 @@ $$
 of ambient polynomial functions, with $h$ nonzero there; in the projective case $g$ and $h$ are homogeneous of the same degree.
 The same quotient is regular on the ambient open subset of $Y$ where $h\ne0$.
 Intersecting that open subset with a sufficiently small ambient open neighborhood whose intersection with $Y'$ lies in $V'$ gives an open neighborhood $V\subseteq Y$ of $Q$ and a regular function $\widetilde f$ on $V$ whose restriction to a neighborhood of $Q$ in $Y'$ equals $f$.
+
 :::
 
-<1>3. The pullback of every regular function by $\phi'$ is regular.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The pullback of every regular function by $\phi'$ is regular.
+
+::: pf-proof
+
 Let $V'\subseteq Y'$ be open, let $f\in\mco(V')$, and fix
 $$
 P\in(\phi')^{-1}(V').
 $$
 Put $Q=\phi'(P)$.
-By step <1>2, after shrinking around $Q$, choose an open neighborhood $V\subseteq Y$ and a regular function $\widetilde f$ on $V$ whose restriction to $Y'$ agrees with $f$ near $Q$.
+By step [](#s2){.pf-ref}, after shrinking around $Q$, choose an open neighborhood $V\subseteq Y$ and a regular function $\widetilde f$ on $V$ whose restriction to $Y'$ agrees with $f$ near $Q$.
 
 Because $\phi$ is a morphism,
 $$
@@ -92,12 +109,18 @@ f\circ\phi'.
 $$
 Thus $f\circ\phi'$ is regular in a neighborhood of every point of $(\phi')^{-1}(V')$.
 Regularity is local, so it is regular on all of $(\phi')^{-1}(V')$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves continuity, and step <1>3 proves the regular-function pullback condition.
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves continuity, and step [](#s3){.pf-ref} proves the regular-function pullback condition.
 These are precisely the defining conditions for $\phi':X'\to Y'$ to be a morphism.
+
 :::
+
+:::
+
 :::

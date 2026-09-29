@@ -31,8 +31,15 @@ Show $Z$ is a dense subspace of $L^1([-1, 1], \mathcal{B}_{[-1,1]}, m)$.
 :::
 
 ::: {.solution}
-<1>1. Transfer the problem to the compact range of $h$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Transfer the problem to the compact range of $h$.
+
+::: pf-proof
+
 Because $h$ is continuous and injective on the compact interval $[-1,1]$, it is a homeomorphism from $[-1,1]$ onto the compact interval
 \[
 K:=h([-1,1]).
@@ -53,10 +60,17 @@ If $0\in K$, then $h^{-1}(\{0\})$ is a singleton because $h$ is injective. Hence
 \nu(\{0\})=m(h^{-1}(\{0\}))=0.
 \]
 If $0\notin K$, the same conclusion is vacuous.
+
 :::
 
-<1>2. Approximate continuous functions by zero-constant polynomials in $L^1(K,\nu)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Approximate continuous functions by zero-constant polynomials in $L^1(K,\nu)$.
+
+::: pf-proof
+
 Fix $\varphi\in C(K)$ and $\varepsilon>0$. Since $\nu(\{0\})=0$, choose an open neighborhood $U$ of $0$ in $K$ so small that
 \[
 \int_U |\varphi|\,d\nu<\frac\varepsilon2.
@@ -92,13 +106,26 @@ Therefore
 \|p-\varphi\|_{L^1(\nu)}<\varepsilon.
 \]
 So zero-constant polynomials are dense in $C(K)$ with respect to the $L^1(\nu)$ norm.
+
 :::
 
-<1>3. Pass from continuous functions to all of $L^1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass from continuous functions to all of $L^1$.
+
+::: pf-proof
+
 Continuous functions are dense in $L^1(K,\nu)$ because $\nu$ is a finite Borel measure on the compact metric space $K$. Step 2 therefore shows that zero-constant polynomials are dense in $L^1(K,\nu)$. Pulling them back by $h$ gives precisely the functions in $Z$. Hence
 \[
 \boxed{\overline Z^{\,L^1([-1,1])}=L^1([-1,1]).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

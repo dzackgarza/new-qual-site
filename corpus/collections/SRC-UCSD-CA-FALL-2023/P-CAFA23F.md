@@ -69,5 +69,14 @@ $$
 $$
 Hence $|R_N(z)|<|e^z|$. If $P_N(z)=0$, then $e^z=R_N(z)$, a contradiction. Thus $P_N$ has no zero in $|z|<cN$.
 
-<1>1. To prove discreteness, let $K\subset\mathbb C$ be compact and choose $R$ with $K\subset\overline{D_R}$. If $N>R/c$, then every zero of $P_N$ has modulus at least $cN>R$, so $P_N$ has no zero in $K$. Only finitely many $N$ can therefore contribute zeros to $K$, and each such polynomial has finitely many zeros. Hence $Z\cap K$ is finite for every compact $K$, so $Z$ has no accumulation point in $\mathbb C$.
+::: pf
+
+::: pf-step
+
+To prove discreteness, let $K\subset\mathbb C$ be compact and choose $R$ with $K\subset\overline{D_R}$. If $N>R/c$, then every zero of $P_N$ has modulus at least $cN>R$, so $P_N$ has no zero in $K$. Only finitely many $N$ can therefore contribute zeros to $K$, and each such polynomial has finitely many zeros. Hence $Z\cap K$ is finite for every compact $K$, so $Z$ has no accumulation point in $\mathbb C$.
+
+:::
+
+:::
+
 :::

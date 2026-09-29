@@ -32,13 +32,19 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If $f$ is entire and
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $f$ is entire and
 $$
 \operatorname{Re}f(z)>0
 $$
 for every $z\in\CC$, then $f$ is constant.
 
-::: {.proof}
+::: pf-proof
+
 Define
 $$
 g(z)=e^{-f(z)}.
@@ -61,15 +67,21 @@ g'(z)
 -f'(z)e^{-f(z)}
 $$
 implies $f'(z)=0$ for every $z$. Hence $f$ is constant.
+
 :::
 
-<1>2. For each fixed nonzero vector $v\in\CC^2$, the scalar function
+:::
+
+::: {.pf-step #s2}
+
+For each fixed nonzero vector $v\in\CC^2$, the scalar function
 $$
 \phi_v(z)=v^*F(z)v
 $$
 is entire and has positive real part.
 
-::: {.proof}
+::: pf-proof
+
 Because the entries of $F$ are entire and the coordinates of $v$ are
 constant, $\phi_v$ is entire. Moreover,
 $$
@@ -85,16 +97,27 @@ v^*\bigl(F(z)+F(z)^*\bigr)v.
 $$
 The last quantity is strictly positive because
 $F(z)+F(z)^*$ is positive definite and $v\ne0$.
+
 :::
 
-<1>3. For every $v\in\CC^2$, the function $\phi_v$ is constant.
+:::
 
-::: {.proof}
-For $v\ne0$, apply step <1>1 to $\phi_v$ using step <1>2. For
+::: {.pf-step #s3}
+
+For every $v\in\CC^2$, the function $\phi_v$ is constant.
+
+::: pf-proof
+
+For $v\ne0$, apply step [](#s1){.pf-ref} to $\phi_v$ using step [](#s2){.pf-ref}. For
 $v=0$, the function is identically zero.
+
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #s4}
+
+Let
 $$
 D(z)=F(z)-F(0).
 $$
@@ -103,17 +126,23 @@ $$
 v^*D(z)v=0.
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 v^*F(z)v
 =
 v^*F(0)v
 $$
 for every $v$ and $z$. Subtracting gives the claim.
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 D(z)
 =
@@ -124,9 +153,10 @@ d_{21}&d_{22}
 $$
 then all four entries vanish.
 
-::: {.proof}
+::: pf-proof
+
 Fix $z$ and suppress it from the notation. Taking
-$v=e_1$ and $v=e_2$ in step <1>4 gives
+$v=e_1$ and $v=e_2$ in step [](#s4){.pf-ref} gives
 $$
 d_{11}=d_{22}=0.
 $$
@@ -151,21 +181,33 @@ $$
 d_{12}=d_{21}=0.
 $$
 Hence $D(z)=0$.
+
 :::
 
-<1>6. The matrix function $F$ is constant.
+:::
 
-::: {.proof}
-Step <1>5 holds for every $z\in\CC$, so
+::: {.pf-step #s6}
+
+The matrix function $F$ is constant.
+
+::: pf-proof
+
+Step [](#s5){.pf-ref} holds for every $z\in\CC$, so
 $$
 F(z)=F(0)
 $$
 for all $z$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part 1, and step <1>6 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part 1, and step [](#s6){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

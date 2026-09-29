@@ -42,7 +42,12 @@ c. For a fixed vector $v$ in the Hilbert space and all $|\lambda|<1$, define $$h
 :::
 
 ::: {.solution}
-<1>1. A bounded linear operator $S:H\to H$ on a complex Hilbert space is unitary if it is surjective and
+
+::: pf
+
+::: pf-step
+
+A bounded linear operator $S:H\to H$ on a complex Hilbert space is unitary if it is surjective and
 \[
 \langle Sx,Sy\rangle=\langle x,y\rangle
 \]
@@ -51,7 +56,9 @@ Equivalently,
 \[
 S^*S=SS^*=I.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The first condition is a standard definition.
 It implies
 \[
@@ -64,9 +71,14 @@ S^{-1}=S^*.
 \]
 Thus $S^*S=SS^*=I$.
 Conversely, those two identities imply both inner-product preservation and invertibility.
+
 :::
 
-<1>2. If $|\lambda|<1$, then
+:::
+
+::: {.pf-step #s2}
+
+If $|\lambda|<1$, then
 \[
 I-\lambda S^{-1}
 \]
@@ -76,7 +88,9 @@ is invertible, with
 =\sum_{n=0}^\infty\lambda^nS^{-n}
 \]
 where the series converges in operator norm.
-::: {.proof}
+
+::: pf-proof
+
 Since $S$ is unitary,
 \[
 \|S^{-1}\|=1.
@@ -91,31 +105,45 @@ The Neumann series theorem therefore gives
 =\sum_{n=0}^\infty(\lambda S^{-1})^n
 =\sum_{n=0}^\infty\lambda^nS^{-n}.
 \]
+
 :::
 
-<1>3. For every $|\lambda|<1$, the operator $S-\lambda I$ is invertible.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+For every $|\lambda|<1$, the operator $S-\lambda I$ is invertible.
+
+::: pf-proof
+
 Factor
 \[
 S-\lambda I
 =S(I-\lambda S^{-1}).
 \]
-Both factors are invertible: $S$ by unitarity and the second factor by <1>2. Thus
+Both factors are invertible: $S$ by unitarity and the second factor by step [](#s2){.pf-ref}. Thus
 \[
 (S-\lambda I)^{-1}
 =(I-\lambda S^{-1})^{-1}S^{-1}.
 \]
 This proves part (b).
+
 :::
 
-<1>4. The scalar-valued function
+:::
+
+::: {.pf-step #s4}
+
+The scalar-valued function
 \[
 h(\lambda)
 =\langle(S+\lambda I)(S-\lambda I)^{-1}v,v\rangle
 \]
 is holomorphic on the unit disk.
-::: {.proof}
-By <1>2--<1>3,
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 \[
 (S-\lambda I)^{-1}
 =\left(\sum_{n=0}^\infty\lambda^nS^{-n}\right)S^{-1}
@@ -132,9 +160,14 @@ Thus
 is an operator-valued holomorphic function on $|\lambda|<1$.
 Multiplication by $S+\lambda I$, application to the fixed vector $v$, and pairing with $v$ preserve holomorphy.
 Hence $h$ is holomorphic.
+
 :::
 
-<1>5. For $|\lambda|<1$, let
+:::
+
+::: {.pf-step #s5}
+
+For $|\lambda|<1$, let
 \[
 w=(S-\lambda I)^{-1}v.
 \]
@@ -143,7 +176,9 @@ Then
 \operatorname{Re}h(\lambda)
 =(1-|\lambda|^2)\|w\|^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 v=(S-\lambda I)w,
@@ -182,18 +217,25 @@ so
 \operatorname{Re}h(\lambda)
 =(1-|\lambda|^2)\|w\|^2.
 \]
+
 :::
 
-<1>6. The function $\operatorname{Re}h$ is harmonic and nonnegative on the unit disk; if $v\ne0$, it is strictly positive.
-::: {.proof}
-By <1>4, $h$ is holomorphic.
+:::
+
+::: pf-step
+
+The function $\operatorname{Re}h$ is harmonic and nonnegative on the unit disk; if $v\ne0$, it is strictly positive.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $h$ is holomorphic.
 The real part of a holomorphic function is harmonic, so
 \[
 \operatorname{Re}h
 \]
 is harmonic.
 
-By <1>5 and $|\lambda|<1$,
+By step [](#s5){.pf-ref} and $|\lambda|<1$,
 \[
 \operatorname{Re}h(\lambda)
 =(1-|\lambda|^2)\|(S-\lambda I)^{-1}v\|^2
@@ -206,5 +248,11 @@ If $v\ne0$, invertibility of $S-\lambda I$ implies
 so the right side is strictly positive.
 If $v=0$, then $h\equiv0$, giving the nonnegative degenerate case.
 This proves part (c) without the spectral theorem.
+
 :::
+
+:::
+
+:::
+
 :::

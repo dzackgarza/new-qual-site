@@ -47,7 +47,11 @@ $$
 $$
 and the upper semicircle of radius $R$ traversed counterclockwise.
 
-<1>1. Near $z=0$,
+::: pf
+
+::: {.pf-step #s1}
+
+Near $z=0$,
 $$
 F(z)
 =
@@ -56,7 +60,8 @@ F(z)
 +O(z).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponential expansions give
 $$
 e^{iz}
@@ -78,20 +83,26 @@ e^{iz}-e^{4iz}
 +O(z^3).
 $$
 Divide by $z^2$.
+
 :::
 
-<1>2. The integral over the small indented semicircle tends to
+:::
+
+::: {.pf-step #s2}
+
+The integral over the small indented semicircle tends to
 $$
 -3\pi
 $$
 as $\varepsilon\to0$.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 F(z)=-\frac{3i}{z}+H(z),
 $$
-where step <1>1 shows that $H$ is bounded near $0$. On the small
+where step [](#s1){.pf-ref} shows that $H$ is bounded near $0$. On the small
 semicircle, parametrize
 $$
 z=\varepsilon e^{i\theta},
@@ -110,12 +121,18 @@ $$
 $$
 The integral of $H$ tends to zero because $H$ is bounded while the arc
 length is $\pi\varepsilon$.
+
 :::
 
-<1>3. The integral over the large upper semicircle tends to zero as
+:::
+
+::: {.pf-step #s3}
+
+The integral over the large upper semicircle tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z$ in the upper half-plane,
 $$
 \abs{e^{iz}}\leq1
@@ -137,9 +154,14 @@ $$
 \frac{2\pi}{R}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. The symmetric indented real-axis integrals satisfy
+:::
+
+::: {.pf-step #s4}
+
+The symmetric indented real-axis integrals satisfy
 $$
 \lim_{\substack{R\to\infty\\ \varepsilon\to0^+}}
 \left(
@@ -153,7 +175,8 @@ $$
 3\pi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The indented contour contains no singularities of $F$, so Cauchy's theorem
 gives total contour integral zero. Therefore
 $$
@@ -165,7 +188,7 @@ $$
 -\int_{\text{large arc}}F(z)\,dz.
 \end{aligned}
 $$
-Let $R\to\infty$ and $\varepsilon\to0^+$. Steps <1>2 and <1>3 give the
+Let $R\to\infty$ and $\varepsilon\to0^+$. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the
 displayed limit $3\pi$.
 
 The real part of the integrand extends continuously across $x=0$, because
@@ -174,9 +197,14 @@ $$
 $$
 Hence $\int_{-\infty}^{\infty}(\cos x-\cos4x)x^{-2}\,dx$ converges as an
 ordinary improper integral and equals the real part of the limit $3\pi$.
+
 :::
 
-<1>5. The whole-line real integral is
+:::
+
+::: {.pf-step #s5}
+
+The whole-line real integral is
 $$
 \int_{-\infty}^{\infty}
 \frac{\cos x-\cos4x}{x^2}\,dx
@@ -184,11 +212,17 @@ $$
 3\pi.
 $$
 
-::: {.proof}
-Take real parts in step <1>4.
+::: pf-proof
+
+Take real parts in step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. The requested value is
+:::
+
+::: {.pf-step #s6}
+
+The requested value is
 $$
 \boxed{
 \int_0^{\infty}
@@ -198,14 +232,21 @@ $$
 }
 $$
 
-::: {.proof}
-The integrand in step <1>5 is even, so its whole-line integral is twice the
+::: pf-proof
+
+The integrand in step [](#s5){.pf-ref} is even, so its whole-line integral is twice the
 integral over $[0,\infty)$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

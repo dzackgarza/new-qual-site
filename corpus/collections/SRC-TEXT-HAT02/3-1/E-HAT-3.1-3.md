@@ -37,21 +37,34 @@ Regard $\mathbb Z_2$ as the quotient $\mathbb Z_4/(2)$. Consider the periodic fr
 \longrightarrow\mathbb Z_2\longrightarrow0.
 \]
 
-<1>1. This sequence is exact.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+This sequence is exact.
+
+::: pf-proof
+
 For multiplication by $2$ on $\mathbb Z_4$,
 \[
 \ker(\times2)=\{0,2\}=\operatorname{im}(\times2).
 \]
 At the right end, the quotient map $\mathbb Z_4\to\mathbb Z_2$ has kernel $\{0,2\}$, again the image of multiplication by $2$. Every term before $\mathbb Z_2$ is free over $\mathbb Z_4$, so this is a free resolution.
+
 :::
 
-<1>2. Applying $\operatorname{Hom}_{\mathbb Z_4}(-,\mathbb Z_2)$ gives the cochain complex
+:::
+
+::: {.pf-step #s2}
+
+Applying $\operatorname{Hom}_{\mathbb Z_4}(-,\mathbb Z_2)$ gives the cochain complex
 \[
 0\longrightarrow\mathbb Z_2\xrightarrow{0}\mathbb Z_2
 \xrightarrow{0}\mathbb Z_2\xrightarrow{0}\cdots .
 \]
-::: {.proof}
+
+::: pf-proof
+
 For every degree,
 \[
 \operatorname{Hom}_{\mathbb Z_4}(\mathbb Z_4,\mathbb Z_2)\cong\mathbb Z_2
@@ -61,15 +74,27 @@ by evaluation at $1$. The coboundary is precomposition with multiplication by $2
 (\varphi\circ\times2)(1)=\varphi(2)=2\varphi(1)=0
 \]
 in the $\mathbb Z_4$-module $\mathbb Z_2$. Hence every coboundary is zero.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\operatorname{Ext}_{\mathbb Z_4}^{\,n}(\mathbb Z_2,\mathbb Z_2)\cong\mathbb Z_2}
 \]
 for every $n\ge0$.
-::: {.proof}
-The cohomology of the zero-differential cochain complex in <1>2 is one copy of $\mathbb Z_2$ in each degree.
+
+::: pf-proof
+
+The cohomology of the zero-differential cochain complex in step [](#s2){.pf-ref} is one copy of $\mathbb Z_2$ in each degree.
+
+:::
+
+:::
+
 :::
 
 In particular these Ext groups are nonzero in every degree.

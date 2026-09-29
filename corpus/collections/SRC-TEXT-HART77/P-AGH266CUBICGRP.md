@@ -53,9 +53,14 @@ X(k)\longrightarrow\Cl^0(X),\qquad P\longmapsto\operatorname{cl}([P]-[O]).
 $$
 Here $\Cl^0(X)$ is the kernel of the [[P-AGH262DEGDIV|degree map]] on the [[D-5PQ5W|divisor class group]].
 
-<1>1. The tangent at $O$ cuts out $3[O]$, and every line section is linearly equivalent to $3[O]$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The tangent at $O$ cuts out $3[O]$, and every line section is linearly equivalent to $3[O]$.
+
+::: pf-proof
+
 For $F=y^2z-x^3+xz^2$, the partial derivatives at $O$ satisfy $F_x(O)=F_y(O)=0$ and $F_z(O)=1$.
 Thus the tangent line is $z=0$.
 Restricting the equation to this line gives $x^3=0$, so its intersection divisor is $3[O]$.
@@ -64,12 +69,18 @@ If $L$ has linear equation $\ell=0$, the ratio $\ell/z$ is a rational function o
 The equality follows by taking valuations of these local equations, as in [[P-AGH262DEGDIV|hyperplane restriction]].
 Hence $L.X\sim3[O]$.
 Every line has an effective intersection divisor of degree three, since it is not a component of the integral cubic [@Har10a, Theorem I.7.7].
+
 :::
 
-<1>2. A line cuts out $[P]+[Q]+[R]$ if and only if $P+Q+R=O$.
+:::
 
-::: {.proof}
-If $L.X=[P]+[Q]+[R]$, step <1>1 gives
+::: {.pf-step #s2}
+
+A line cuts out $[P]+[Q]+[R]$ if and only if $P+Q+R=O$.
+
+::: pf-proof
+
+If $L.X=[P]+[Q]+[R]$, step [](#s1){.pf-ref} gives
 $$
 \operatorname{cl}([P]-[O])+\operatorname{cl}([Q]-[O])+\operatorname{cl}([R]-[O])=0,
 $$
@@ -81,30 +92,42 @@ Its intersection divisor has the form $[P]+[Q]+[T]$ for a point $T$, because its
 The forward implication gives $P+Q+T=O$.
 Cancellation in the group yields $T=R$, so the line cuts out exactly the required divisor, including repeated points.
 This proves part (a).
+
 :::
 
-<1>3. Tangency through $O$ detects $2P=O$, and inflection detects $3P=O$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Tangency through $O$ detects $2P=O$, and inflection detects $3P=O$.
+
+::: pf-proof
+
 Let $T_P$ be the tangent at $P$ and write
 $$
 T_P.X=2[P]+[R].
 $$
-Step <1>2 says $2P+R=O$.
+Step [](#s2){.pf-ref} says $2P+R=O$.
 For $P\ne O$, the tangent contains $O$ exactly when its remaining intersection point $R$ is $O$; this is equivalent to $2P=O$.
-For $P=O$, both conditions hold by step <1>1.
+For $P=O$, both conditions hold by step [](#s1){.pf-ref}.
 
 The tangent has intersection multiplicity at least three at $P$ exactly when $R=P$.
 By the same group equation, this is equivalent to $3P=O$.
 For $P\ne O$, the equations $2P=O$ and $3P=O$ mean exact orders two and three, respectively, since these integers are prime.
 This proves parts (b)--(c).
+
 :::
 
-<1>4. The inverse of an affine point $(a,b)$ is $(a,-b)$, and $X(\QQ)$ is a subgroup of $X(\CC)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The inverse of an affine point $(a,b)$ is $(a,-b)$, and $X(\QQ)$ is a subgroup of $X(\CC)$.
+
+::: pf-proof
+
 The vertical line $x=az$ cuts out $[(a,b)]+[(a,-b)]+[O]$, with multiplicity two at $(a,0)$ when $b=0$.
-Thus step <1>2 identifies these affine points as inverses.
+Thus step [](#s2){.pf-ref} identifies these affine points as inverses.
 The point $O$ is its own inverse.
 
 For two rational points, their joining line, or the tangent when they coincide, has rational coefficients.
@@ -112,13 +135,19 @@ The tangent has rational coefficients because it is given by the partial derivat
 On this line, choose projective coordinates over $\QQ$.
 The restricted cubic has two rational linear factors, counting the prescribed intersection multiplicities, so the remaining linear factor is rational too.
 Its third intersection point is therefore rational.
-By step <1>2, the sum of the original points is the inverse of this third point, which is rational by the inversion formula.
+By step [](#s2){.pf-ref}, the sum of the original points is the inverse of this third point, which is rational by the inversion formula.
 Since $O$ is rational as well, this proves subgroup closure and inverses.
+
 :::
 
-<1>5. No right triangle with positive integer side lengths has square area.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+No right triangle with positive integer side lengths has square area.
+
+::: pf-proof
+
 Suppose there is such a triangle, and choose one with least hypotenuse $c$, writing
 $$
 a^2+b^2=c^2,\qquad ab/2=d^2>0.
@@ -159,14 +188,20 @@ $$
 uv/2=(f/2)^2>0.
 $$
 Its hypotenuse satisfies $e\le m<m^2+n^2=c$, contradicting the choice of $c$.
+
 :::
 
-<1>6. The rational-point subgroup is
+:::
+
+::: {.pf-step #s6}
+
+The rational-point subgroup is
 $$
 \boxed{X(\QQ)=\{O,(-1,0),(0,0),(1,0)\}\cong(\ZZ/2\ZZ)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The only point at infinity is $O$, since setting $z=0$ forces $x=0$.
 For an affine rational point $(x,y)$ with $y\ne0$, define positive rational numbers
 $$
@@ -179,21 +214,27 @@ Direct calculation gives $A^2+B^2=C^2$ and
 $$
 \frac{AB}{2}=\left|\frac{x(x^2-1)}{y^2}\right|=1.
 $$
-Multiplying by a common positive denominator $N$ gives an integer right triangle of area $N^2$, contradicting step <1>5.
+Multiplying by a common positive denominator $N$ gives an integer right triangle of area $N^2$, contradicting step [](#s5){.pf-ref}.
 Thus every affine rational point has $y=0$, and then $x(x-1)(x+1)=0$.
 This gives exactly the three displayed affine points, each of which lies on $X$.
 
-By step <1>4 these three points are their own inverses, and none is $O$.
+By step [](#s4){.pf-ref} these three points are their own inverses, and none is $O$.
 The subgroup therefore has four elements, all three nonidentity elements having order two.
 Choosing any two distinct nonidentity elements gives an isomorphism from $(\ZZ/2\ZZ)^2$: their four sums are distinct and exhaust the subgroup.
 This proves part (d).
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves the collinearity criterion, step <1>3 proves the tangent and inflection criteria with the exact-order qualifications, and steps <1>4--<1>6 prove subgroup closure and determine every rational point.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the collinearity criterion, step [](#s3){.pf-ref} proves the tangent and inflection criteria with the exact-order qualifications, and steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove subgroup closure and determine every rational point.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="The identity and repeated intersections"}

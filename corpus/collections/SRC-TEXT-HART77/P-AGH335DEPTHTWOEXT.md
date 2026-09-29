@@ -37,9 +37,14 @@ This generalizes (I, Ex. 3.20), in view of (II, 8.22A).
 Put $R=\OO_{X,P}$, let $\mathfrak m$ be its maximal ideal, and let $S=X_P$ be the local space of [[P-AGH325LOCALSPACE]].
 Write $H_P^i$ for cohomology with supports in the closed singleton $\{P\}$.
 
-<1>1. The space $S$, equipped with the inverse image of $\OO_X$, is the scheme $\Spec R$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The space $S$, equipped with the inverse image of $\OO_X$, is the scheme $\Spec R$.
+
+::: pf-proof
+
 Choose an affine neighborhood $V=\Spec A$ of $P$ and let $\mathfrak p\subseteq A$ correspond to $P$.
 Every generization of $P$ lies in every open neighborhood of $P$, hence lies in $V$.
 Inside $V$, these generizations are exactly the prime ideals $\mathfrak q\subseteq\mathfrak p$.
@@ -52,34 +57,46 @@ $$
 Thus the natural map from the inverse-image structure sheaf to the structure sheaf of $\Spec A_{\mathfrak p}$ is an isomorphism on every stalk and hence an isomorphism.
 Since $A_{\mathfrak p}=R$, this proves the assertion.
 The point $P$ corresponds to $\mathfrak m$.
+
 :::
 
-<1>2. For every open neighborhood $U$ of $P$ and every $i\ge0$, there is a natural isomorphism
+:::
+
+::: {.pf-step #s2}
+
+For every open neighborhood $U$ of $P$ and every $i\ge0$, there is a natural isomorphism
 $$
 H_P^i(U,\OO_U)\cong H_{\mathfrak m}^i(R).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The scheme $U$ is noetherian, so its underlying space is a Zariski space by [[P-AGH2317ZARISKISPACE]], part (a).
 Its local space at $P$ is the same $S$, since all the generizations of $P$ lie in $U$.
 Apply [[P-AGH325LOCALSPACE]] to $U$ and its structure sheaf.
-By step <1>1, the result is
+By step [](#s1){.pf-ref}, the result is
 $$
 H_P^i(U,\OO_U)\cong H_{\{\mathfrak m\}}^i(\Spec R,\OO_{\Spec R}).
 $$
 The comparison in [[P-AGH333LOCALCOH]], part (b), identifies the right side with $H_{\mathfrak m}^i(R)$, since $V(\mathfrak m)=\{\mathfrak m\}$.
 This proves the stated comparison for arbitrary $U$, not only for affine neighborhoods.
+
 :::
 
-<1>3. Condition (i) implies condition (ii).
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Condition (i) implies condition (ii).
+
+::: pf-proof
+
 The ring $R$ is a nonzero noetherian local ring and a finite module over itself.
 By [[P-AGH334DEPTHCOH]], part (b), the inequality $\depth R\ge2$ gives
 $$
 H_{\mathfrak m}^0(R)=H_{\mathfrak m}^1(R)=0.
 $$
-For any neighborhood $U$ of $P$, step <1>2 therefore makes both $H_P^0(U,\OO_U)$ and $H_P^1(U,\OO_U)$ zero.
+For any neighborhood $U$ of $P$, step [](#s2){.pf-ref} therefore makes both $H_P^0(U,\OO_U)$ and $H_P^1(U,\OO_U)$ zero.
 The supported-cohomology long exact sequence from [[P-AGH323SUPPORTS]], part (e), begins
 $$
 0\to H_P^0(U,\OO_U)\to\Gamma(U,\OO_U)
@@ -88,14 +105,20 @@ $$
 $$
 The two outer groups vanish, so the restriction map is an isomorphism.
 Surjectivity gives existence of every extension and injectivity gives its uniqueness, as required in (ii).
+
 :::
 
-<1>4. Condition (ii) implies condition (i).
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Condition (ii) implies condition (i).
+
+::: pf-proof
+
 Take an affine neighborhood $V$ of $P$.
 Condition (ii) makes $\Gamma(V,\OO_V)\to\Gamma(V\setminus\{P\},\OO_V)$ an isomorphism.
-The exact sequence used in step <1>3 first gives $H_P^0(V,\OO_V)=0$.
+The exact sequence used in step [](#s3){.pf-ref} first gives $H_P^0(V,\OO_V)=0$.
 Its continuation has the exact segment
 $$
 \Gamma(V,\OO_V)\to\Gamma(V\setminus\{P\},\OO_V)
@@ -103,13 +126,19 @@ $$
 $$
 The first arrow is surjective, and the last term is zero by [[T-COHAFF|affine vanishing]] [@Har10a, Theorem III.3.5].
 Hence $H_P^1(V,\OO_V)=0$ as well.
-Step <1>2 gives $H_{\mathfrak m}^0(R)=H_{\mathfrak m}^1(R)=0$.
+Step [](#s2){.pf-ref} gives $H_{\mathfrak m}^0(R)=H_{\mathfrak m}^1(R)=0$.
 The converse in [[P-AGH334DEPTHCOH]], part (b), now yields $\depth R\ge2$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>4 prove the two implications, using the local-ring comparison in steps <1>1--<1>2.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the two implications, using the local-ring comparison in steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
 :::

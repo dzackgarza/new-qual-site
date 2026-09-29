@@ -36,43 +36,89 @@ For instance, we may take all curves to be continuous, or simply polygonal lines
 :::
 
 ::: {.solution}
-<1>1. (a) An open pathwise connected set $\Omega$ is connected.
 
-<2>1. With $\Omega=\Omega_1\sqcup\Omega_2$, $w_1,w_2$, $z$, and $t^*$ as in the statement, $z(t^*) \notin \Omega_1$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+(a) An open pathwise connected set $\Omega$ is connected.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+With $\Omega=\Omega_1\sqcup\Omega_2$, $w_1,w_2$, $z$, and $t^*$ as in the statement, $z(t^*) \notin \Omega_1$.
+
+::: pf-proof
+
 Suppose $z(t^*) \in \Omega_1$. Since $z(1)=w_2\in\Omega_2$ and $\Omega_1\cap\Omega_2=\varnothing$, $t^*<1$. By continuity of $z$ and openness of $\Omega_1$ there is $\varepsilon > 0$ with $z(t) \in \Omega_1$ for all $t \in (t^* - \varepsilon, t^* + \varepsilon)\cap[0,1]$. Together with the definition of $t^*$, this gives $z(s)\in\Omega_1$ for all $0\le s<\min(t^*+\varepsilon,1)$, so $t^*$ is not the supremum.
+
 :::
 
-<2>2. $z(t^*) \notin \Omega_2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+
+$z(t^*) \notin \Omega_2$.
+
+::: pf-proof
+
 Since $z(0)=w_1\in\Omega_1$ and $\Omega_1$ is open, $t^*>0$, and by definition of $t^*$ there are $s<t^*$ arbitrarily close to $t^*$ with $z(s) \in \Omega_1$. If $z(t^*) \in \Omega_2$, then openness of $\Omega_2$ and continuity give $\varepsilon>0$ with $z(s)\in\Omega_2$ for $\abs{s-t^*}<\varepsilon$, contradicting $\Omega_1 \cap \Omega_2 = \varnothing$.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-By steps <2>1 and <2>2, $z(t^*)\in\Omega$ lies in neither $\Omega_1$ nor $\Omega_2$, which contradicts $\Omega=\Omega_1\cup\Omega_2$. Hence $\Omega$ is not a disjoint union of two nonempty open sets, so $\Omega$ is connected.
 :::
 
-<1>2. (b) An open connected set $\Omega$ is pathwise connected.
+::: pf-qed
 
-<2>1. With $w$, $\Omega_1$, $\Omega_2$ as in the statement, $\Omega_1$ is open.
+By steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref}, $z(t^*)\in\Omega$ lies in neither $\Omega_1$ nor $\Omega_2$, which contradicts $\Omega=\Omega_1\cup\Omega_2$. Hence $\Omega$ is not a disjoint union of two nonempty open sets, so $\Omega$ is connected.
 
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+(b) An open connected set $\Omega$ is pathwise connected.
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+With $w$, $\Omega_1$, $\Omega_2$ as in the statement, $\Omega_1$ is open.
+
+::: pf-proof
+
 Let $p \in \Omega_1$ be joined to $w$ by a curve $\gamma$ in $\Omega$, and let $D \subset \Omega$ be a disc centered at $p$. Every $q \in D$ is joined to $w$ by $\gamma$ followed by the segment from $p$ to $q$, which lies in $D$. Hence $D \subset \Omega_1$.
+
 :::
 
-<2>2. $\Omega_2$ is open.
+:::
 
-::: {.proof}
+::: {.pf-step #s2-2}
+
+$\Omega_2$ is open.
+
+::: pf-proof
+
 Let $p \in \Omega_2$ and let $D \subset \Omega$ be a disc centered at $p$. If some $q \in D$ lay in $\Omega_1$, then the segment from $p$ to $q$ followed by a curve from $q$ to $w$ would join $p$ to $w$ in $\Omega$, contradicting $p\in\Omega_2$. Hence $D \subset \Omega_2$.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-By definition $\Omega_1$ and $\Omega_2$ are disjoint with union $\Omega$, and $w \in \Omega_1$ via the constant curve. By steps <2>1 and <2>2 both sets are open. Since $\Omega$ is connected and $\Omega_1\ne\varnothing$, $\Omega_2 = \varnothing$, so $\Omega = \Omega_1$: every point of $\Omega$ is joined to $w$, and any two points are joined through $w$.
 :::
+
+::: pf-qed
+
+By definition $\Omega_1$ and $\Omega_2$ are disjoint with union $\Omega$, and $w \in \Omega_1$ via the constant curve. By steps [](#s2-1){.pf-ref} and [](#s2-2){.pf-ref} both sets are open. Since $\Omega$ is connected and $\Omega_1\ne\varnothing$, $\Omega_2 = \varnothing$, so $\Omega = \Omega_1$: every point of $\Omega$ is joined to $w$, and any two points are joined through $w$.
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::

@@ -38,14 +38,27 @@ Show $H^k(X, X^n; G) = 0$ if $X$ is a CW complex and $k \leq n$, by using the co
 We follow the second proof of Lemma 2.34(c), replacing homology by cohomology.
 Cohomology with coefficients in $G$ is suppressed from the notation.
 
-<1>1. It suffices to show that $\widetilde H^k(Y)=0$ for $k\le n$ whenever $Y$ is a CW complex whose $n$-skeleton is a point.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+It suffices to show that $\widetilde H^k(Y)=0$ for $k\le n$ whenever $Y$ is a CW complex whose $n$-skeleton is a point.
+
+::: pf-proof
+
 $(X,X^n)$ is a good pair, so $H^k(X,X^n)\cong\widetilde H^k(X/X^n)$ [@Hat02, §3.1].
 The quotient $X/X^n$ is a CW complex whose $n$-skeleton is a point.
+
 :::
 
-<1>2. The claim holds when $Y$ is finite-dimensional.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The claim holds when $Y$ is finite-dimensional.
+
+::: pf-proof
+
 $H^k(Y^m,Y^{m-1})\cong\widetilde H^k(Y^m/Y^{m-1})$ vanishes for $k\ne m$, since $Y^m/Y^{m-1}$ is a wedge of $m$-spheres and the reduced cohomology of a wedge is the product of the reduced cohomologies of the summands [@Hat02, §3.1].
 For $m>n$ and $k\le n$, the exact sequence
 \[
@@ -53,27 +66,54 @@ H^k(Y^m,Y^{m-1})\to\widetilde H^k(Y^m)\to\widetilde H^k(Y^{m-1})
 \]
 has first term $0$, so restriction $\widetilde H^k(Y^m)\to\widetilde H^k(Y^{m-1})$ is injective.
 Since $\widetilde H^k(Y^n)=0$ for all $k$, induction on $m$ gives $\widetilde H^k(Y^m)=0$ for all $m$ and $k\le n$, and $Y=Y^m$ for $m$ large.
+
 :::
 
-<1>3. $\widetilde H^k(Z)=0$ for $k\le n$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$\widetilde H^k(Z)=0$ for $k\le n$.
+
+::: pf-proof
+
 $R=Y^0\times[0,\infty)$ is contractible because $Y^0$ is a point, so $\widetilde H^k(Z)\cong H^k(Z,R)\cong\widetilde H^k(Z/R)$ by the long exact sequence of the good pair $(Z,R)$.
-The quotient $Z/R$ is a wedge of finite-dimensional complexes with $n$-skeleton a point, so its reduced cohomology in degrees $k\le n$ is a product of groups that vanish by <1>2.
+The quotient $Z/R$ is a wedge of finite-dimensional complexes with $n$-skeleton a point, so its reduced cohomology in degrees $k\le n$ is a product of groups that vanish by step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. $\widetilde H^k(T)=0$ for $k\le n$.
-::: {.proof}
-The quotient $T/Z$ is a wedge of finite-dimensional complexes with $(n+1)$-skeleton a point, so $H^k(T,Z)\cong\widetilde H^k(T/Z)=0$ for $k\le n+1$ by <1>2 applied with $n+1$.
+:::
+
+::: {.pf-step #s4}
+
+$\widetilde H^k(T)=0$ for $k\le n$.
+
+::: pf-proof
+
+The quotient $T/Z$ is a wedge of finite-dimensional complexes with $(n+1)$-skeleton a point, so $H^k(T,Z)\cong\widetilde H^k(T/Z)=0$ for $k\le n+1$ by step [](#s2){.pf-ref} applied with $n+1$.
 In the exact sequence
 \[
 H^k(T,Z)\to\widetilde H^k(T)\to\widetilde H^k(Z)
 \]
-both outer terms vanish for $k\le n$, by this and <1>3.
+both outer terms vanish for $k\le n$, by this and step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. $H^k(X,X^n;G)=0$ for $k\le n$.
-::: {.proof}
-Apply the construction to $Y=X/X^n$.
-$T\simeq Y$, so $\widetilde H^k(Y)\cong\widetilde H^k(T)=0$ for $k\le n$ by <1>4 and homotopy invariance, and <1>1 concludes.
 :::
+
+::: pf-step
+
+$H^k(X,X^n;G)=0$ for $k\le n$.
+
+::: pf-proof
+
+Apply the construction to $Y=X/X^n$.
+$T\simeq Y$, so $\widetilde H^k(Y)\cong\widetilde H^k(T)=0$ for $k\le n$ by step [](#s4){.pf-ref} and homotopy invariance, and step [](#s1){.pf-ref} concludes.
+
+:::
+
+:::
+
+:::
+
 :::

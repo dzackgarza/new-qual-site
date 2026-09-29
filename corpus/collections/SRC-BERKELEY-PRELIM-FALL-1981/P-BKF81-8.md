@@ -32,8 +32,15 @@ Let $f(z)=3z^{100}-e^z$.
 :::
 
 ::: {.solution}
-<1>1. Count the zeros in the unit disk.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Count the zeros in the unit disk.
+
+::: pf-proof
+
 On $|z|=1$,
 $$
 |3z^{100}|=3,
@@ -55,10 +62,17 @@ multiplicity. The latter has a zero of multiplicity $100$ at $0$. Hence
 $$
 \boxed{f\text{ has }100\text{ zeros in the unit disk, counted with multiplicity}.}
 $$
+
 :::
 
-<1>2. Every zero of $f$ in the unit disk is simple.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every zero of $f$ in the unit disk is simple.
+
+::: pf-proof
+
 Suppose $z$ were a multiple zero. Then
 $$
 f(z)=0
@@ -84,9 +98,15 @@ $$
 Thus a multiple zero would have to satisfy $z=100$, because $z\ne0$. But
 $100$ is not in the unit disk. Therefore every zero in $|z|<1$ is simple.
 
-Consequently the $100$ zeros counted in step <1>1 are
+Consequently the $100$ zeros counted in step [](#s1){.pf-ref} are
 $$
 \boxed{100\text{ distinct zeros}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

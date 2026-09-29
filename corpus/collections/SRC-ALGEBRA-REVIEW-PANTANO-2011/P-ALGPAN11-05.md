@@ -26,14 +26,27 @@ audit:
 ::: {.solution}
 The answer is $\boxed{\text{(E)}\;p,\ pq,\ p^q}$.
 
-<1>1. $J=p\mathbb Z$ is a proper subgroup of $\mathbb Z$ that contains $p$, $pq$, and $p^q$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$J=p\mathbb Z$ is a proper subgroup of $\mathbb Z$ that contains $p$, $pq$, and $p^q$.
+
+::: pf-proof
+
 It is proper because $p>1$.
 It contains $p$, $pq$, and $p^q$.
+
 :::
 
-<1>2. The other two listed elements are not in $J$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The other two listed elements are not in $J$.
+
+::: pf-proof
+
 Because $p$ and $q$ are distinct primes, $p\nmid q$, hence $p\nmid q^p$.
 Also
 \[
@@ -45,5 +58,11 @@ Therefore among
 \{p,p+q,pq,p^q,q^p\}
 \]
 exactly $p,pq,p^q$ lie in $J$.
+
 :::
+
+:::
+
+:::
+
 :::

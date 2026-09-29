@@ -23,43 +23,99 @@ Compute the homology $H_*(X; \mathbb{Z})$.
 :::
 
 ::: {.solution}
-<1>1. $X$ has one $0$-cell, three $1$-cells, three $2$-cells, one $3$-cell.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$X$ has one $0$-cell, three $1$-cells, three $2$-cells, one $3$-cell.
+
+::: pf-proof
+
 the cube has 8 vertices identified to one, 12 edges identified into 3 classes of 4 parallel edges, 6 faces identified into 3 pairs.
+
 :::
 
-<1>2. Cellular chain complex: $0 \to \mathbb{Z} \xrightarrow{\partial_3} \mathbb{Z}^3 \xrightarrow{\partial_2} \mathbb{Z}^3 \xrightarrow{\partial_1} \mathbb{Z} \to 0$.
-::: {.proof}
-<1>1.
 :::
 
-<1>3. $\partial_1 =0$ (single $0$-cell).
-::: {.proof}
+::: {.pf-step #s2}
+
+Cellular chain complex: $0 \to \mathbb{Z} \xrightarrow{\partial_3} \mathbb{Z}^3 \xrightarrow{\partial_2} \mathbb{Z}^3 \xrightarrow{\partial_1} \mathbb{Z} \to 0$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+$\partial_1 =0$ (single $0$-cell).
+
+::: pf-proof
+
 each $1$-cell is a loop.
+
 :::
 
-<1>4. Each $2$-cell is attached with degree $2$ (the $180^\circ$ rotation identifies opposite edges with a twist, giving boundary $2\cdot$generator).
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Each $2$-cell is attached with degree $2$ (the $180^\circ$ rotation identifies opposite edges with a twist, giving boundary $2\cdot$generator).
+
+::: pf-proof
+
 the gluing map has degree $2$ on the $1$-skeleton.
+
 :::
 
-<1>5. Hence $\partial_2$ is multiplication by $2$ on each $2$-cell.
-::: {.proof}
-<1>4.
 :::
 
-<1>6. $\partial_3 =0$ (the $3$-cell is attached by a map of degree $0$ for this orientable gluing).
-::: {.proof}
+::: {.pf-step #s5}
+
+Hence $\partial_2$ is multiplication by $2$ on each $2$-cell.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+$\partial_3 =0$ (the $3$-cell is attached by a map of degree $0$ for this orientable gluing).
+
+::: pf-proof
+
 orientability.
+
 :::
 
-<1>7. Therefore $H_0(X)=\mathbb{Z}$, $H_1(X)=\mathbb{Z}^3/2\mathbb{Z}^3 \cong (\mathbb{Z}/2)^3$, $H_2(X)=0$, $H_3(X)=\mathbb{Z}$.
-::: {.proof}
-<1>2, <1>5, <1>6; $H_1 = \ker\partial_1/\operatorname{im}\partial_2 = \mathbb{Z}^3/2\mathbb{Z}^3$, $H_2 = \ker\partial_2/\operatorname{im}\partial_3 =0$.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
+::: {.pf-step #s7}
+
+Therefore $H_0(X)=\mathbb{Z}$, $H_1(X)=\mathbb{Z}^3/2\mathbb{Z}^3 \cong (\mathbb{Z}/2)^3$, $H_2(X)=0$, $H_3(X)=\mathbb{Z}$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}; $H_1 = \ker\partial_1/\operatorname{im}\partial_2 = \mathbb{Z}^3/2\mathbb{Z}^3$, $H_2 = \ker\partial_2/\operatorname{im}\partial_3 =0$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref}.
+
+:::
+
+:::
+
 :::

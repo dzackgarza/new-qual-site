@@ -41,7 +41,12 @@ as a $\mathbb C[x]$-module.
 :::
 
 ::: {.solution}
-<1>1. For part (a), take
+
+::: pf
+
+::: pf-step
+
+For part (a), take
 \[
 M=\mathbb Z,
 \qquad
@@ -55,7 +60,9 @@ Then $M\not\cong N$ as $\mathbb Z$-modules, but
 \cong
 \mathbb Q\otimes_{\mathbb Z}N.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The module $N$ has nonzero torsion while $M$ is torsionfree, so they are not isomorphic.
 Also
 \[
@@ -68,20 +75,32 @@ because $2$ is invertible in $\mathbb Q$. Hence
 \mathbb Q\oplus0
 \cong\mathbb Q.
 \]
+
 :::
 
-<1>2. Write the elementary-divisor decomposition of the finitely generated $\mathbb R[x]$-module $M$ as
+:::
+
+::: pf-step
+
+Write the elementary-divisor decomposition of the finitely generated $\mathbb R[x]$-module $M$ as
 \[
 M\cong \mathbb R[x]^r
 \oplus
 \bigoplus_{i=1}^s \mathbb R[x]/(p_i(x)^{e_i}),
 \]
 where each $p_i$ is monic irreducible in $\mathbb R[x]$ and $e_i\ge1$.
-::: {.proof}
+
+::: pf-proof
+
 The ring $\mathbb R[x]$ is a PID, so this is the elementary-divisor form of the structure theorem for finitely generated modules over a PID.
+
 :::
 
-<1>3. Extension of scalars gives
+:::
+
+::: {.pf-step #s3}
+
+Extension of scalars gives
 \[
 \mathbb C[x]\otimes_{\mathbb R[x]}M
 \cong
@@ -89,7 +108,9 @@ The ring $\mathbb R[x]$ is a PID, so this is the elementary-divisor form of the 
 \oplus
 \bigoplus_{i=1}^s \mathbb C[x]/(p_i(x)^{e_i}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Tensor product commutes with finite direct sums, and
 \[
 \mathbb C[x]\otimes_{\mathbb R[x]}\mathbb R[x]\cong\mathbb C[x].
@@ -105,17 +126,29 @@ gives
 \mathbb C[x]/(a)\mathbb C[x].
 \]
 Apply this with $a=p_i^{e_i}$.
+
 :::
 
-<1>4. If $p_i(x)=x-a$ with $a\in\mathbb R$, then the corresponding summand remains
+:::
+
+::: {.pf-step #s4}
+
+If $p_i(x)=x-a$ with $a\in\mathbb R$, then the corresponding summand remains
 \[
 \mathbb C[x]/((x-a)^{e_i}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 A real linear irreducible remains linear over $\mathbb C$.
+
 :::
 
-<1>5. If $p_i$ is an irreducible quadratic over $\mathbb R$, write
+:::
+
+::: {.pf-step #s5}
+
+If $p_i$ is an irreducible quadratic over $\mathbb R$, write
 \[
 p_i(x)=(x-z_i)(x-\overline z_i),
 \qquad z_i\in\mathbb C\setminus\mathbb R.
@@ -128,7 +161,9 @@ Then
 \oplus
 \mathbb C[x]/((x-\overline z_i)^{e_i}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The two linear factors are distinct, so their powers are coprime. The Chinese remainder theorem gives
 \[
 \mathbb C[x]/\big((x-z_i)^{e_i}(x-\overline z_i)^{e_i}\big)
@@ -137,10 +172,23 @@ The two linear factors are distinct, so their powers are coprime. The Chinese re
 \oplus
 \mathbb C[x]/((x-\overline z_i)^{e_i}).
 \]
+
 :::
 
-<1>6. Thus scalar extension preserves the free rank, preserves each real-linear primary summand, and splits every real-quadratic primary summand into the two conjugate complex primary summands described in <1>5.
-::: {.proof}
-Combine <1>3, <1>4, and <1>5. Every monic irreducible polynomial over $\mathbb R$ has degree $1$ or $2$.
 :::
+
+::: pf-step
+
+Thus scalar extension preserves the free rank, preserves each real-linear primary summand, and splits every real-quadratic primary summand into the two conjugate complex primary summands described in step [](#s5){.pf-ref}.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}. Every monic irreducible polynomial over $\mathbb R$ has degree $1$ or $2$.
+
+:::
+
+:::
+
+:::
+
 :::

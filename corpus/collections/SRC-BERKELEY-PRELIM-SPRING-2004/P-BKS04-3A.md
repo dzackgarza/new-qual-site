@@ -54,7 +54,11 @@ $$
 Q(z)\coloneqq\prod_{i=1}^n(z-a_i)^{r_i}.
 $$
 
-<1>1. There is a polynomial $G\in\CC[z]$ with
+::: pf
+
+::: {.pf-step #s1}
+
+There is a polynomial $G\in\CC[z]$ with
 $$
 \deg G\leq m-1\leq R
 $$
@@ -64,7 +68,8 @@ G(b_j)=c_jQ(b_j)
 $$
 for every $j=1,\ldots,m$.
 
-::: {.proof}
+::: pf-proof
+
 The points $b_1,\ldots,b_m$ are pairwise distinct, so Lagrange
 interpolation gives a polynomial of degree at most $m-1$ taking the
 prescribed values
@@ -76,9 +81,14 @@ $$
 m\leq R+1
 $$
 gives $m-1\leq R$.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 F(z)\coloneqq\frac{G(z)}{Q(z)}.
 $$
@@ -88,7 +98,8 @@ $$
 $$
 and at $\infty$.
 
-::: {.proof}
+::: pf-proof
+
 The only zeros of $Q$ are among $a_1,\ldots,a_n$, so the quotient is
 holomorphic away from those points.
 
@@ -104,14 +115,20 @@ $$
 extends holomorphically to $w=0$ because multiplying numerator and
 denominator by $w^R$ produces a quotient of polynomials in $w$ whose
 denominator is nonzero at $w=0$.
+
 :::
 
-<1>3. For every $i=1,\ldots,n$,
+:::
+
+::: {.pf-step #s3}
+
+For every $i=1,\ldots,n$,
 $$
 \operatorname{ord}_{z=a_i}F(z)\geq-r_i.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because the $a_i$ are distinct, write
 $$
 Q(z)=(z-a_i)^{r_i}Q_i(z),
@@ -124,16 +141,22 @@ $$
 $$
 is holomorphic at $a_i$. This is exactly the assertion that
 $\operatorname{ord}_{z=a_i}F\geq-r_i$.
+
 :::
 
-<1>4. For every $j=1,\ldots,m$,
+:::
+
+::: {.pf-step #s4}
+
+For every $j=1,\ldots,m$,
 $$
 F(b_j)=c_j.
 $$
 
-::: {.proof}
+::: pf-proof
+
 All of the $a_i$ and $b_j$ are distinct, so $Q(b_j)\neq0$. By step
-<1>1,
+[](#s1){.pf-ref},
 $$
 F(b_j)
 =
@@ -143,12 +166,18 @@ F(b_j)
 =
 c_j.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2, <1>3, and <1>4 verify the three required properties of the
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} verify the three required properties of the
 rational function $F$.
+
 :::
+
+:::
+
 :::

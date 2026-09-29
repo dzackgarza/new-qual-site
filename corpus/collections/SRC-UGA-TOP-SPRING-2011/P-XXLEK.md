@@ -36,7 +36,12 @@ b. Show that there is a continuous function $f : X \to [0,1]$ such that $f (x) >
 :::
 
 ::: {.solution}
-<1>1. Fix a countable basis
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix a countable basis
 \[
 \mathcal B=\{B_1,B_2,\dots\}
 \]
@@ -52,7 +57,9 @@ Then every $F_n$ is closed and
 \[
 U=\bigcup_{n=1}^{\infty}F_n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each $F_n$ is closed by definition, and every nonempty $F_n$ is contained in $U$, so
 \[
 \bigcup_{n=1}^{\infty}F_n\subseteq U.
@@ -87,10 +94,17 @@ x\in\overline{B_n}
 so $F_n=\overline{B_n}$ and $x\in F_n$.
 Thus $U\subseteq\bigcup_nF_n$.
 This proves part (a).
+
 :::
 
-<1>2. Every second-countable space is Lindelöf, and every subspace of a second-countable space is second-countable and hence Lindelöf.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every second-countable space is Lindelöf, and every subspace of a second-countable space is second-countable and hence Lindelöf.
+
+::: pf-proof
+
 Let $Y$ be second-countable with basis $\{C_1,C_2,\dots\}$, and let $\mathcal U$ be an open cover of $Y$.
 For each basis element $C_n$ for which there exists $O\in\mathcal U$ satisfying
 \[
@@ -114,10 +128,17 @@ If $Z\subseteq Y$, then
 \]
 is a countable basis for the subspace topology on $Z$.
 Therefore every subspace is also second-countable and hence Lindelöf.
+
 :::
 
-<1>3. The space $X$ is normal: any two disjoint closed sets in $X$ have disjoint open neighborhoods.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The space $X$ is normal: any two disjoint closed sets in $X$ have disjoint open neighborhoods.
+
+::: pf-proof
+
 Let $A,B\subseteq X$ be disjoint closed sets.
 If either set is empty, they are separated by the disjoint open sets $X$ and $\varnothing$.
 Assume henceforth that both are nonempty.
@@ -129,7 +150,7 @@ Indeed, separate $a$ and the closed set $B$ by disjoint open sets $P_a,Q_a$ with
 \[
 \overline{P_a}\subseteq X\setminus Q_a.
 \]
-By <1>2, the subspace $A$ is Lindelöf, so choose a countable subcover
+By step [](#s2){.pf-ref}, the subspace $A$ is Lindelöf, so choose a countable subcover
 \[
 A\subseteq\bigcup_{n\ge1}P_n
 \]
@@ -176,13 +197,20 @@ If $n\le m$, the $m$th summand of $Q$ omits $\overline{P_n}$ and therefore omits
 If $m\le n$, the $n$th summand of $P$ omits $\overline{Q_m}$ and therefore omits $Q_m$.
 Both cases are impossible.
 Hence $X$ is normal.
+
 :::
 
-<1>4. In a normal space, if $C$ is closed and $G$ is open with $C\subseteq G$, then there is an open set $V$ such that
+:::
+
+::: {.pf-step #s4}
+
+In a normal space, if $C$ is closed and $G$ is open with $C\subseteq G$, then there is an open set $V$ such that
 \[
 C\subseteq V\subseteq\overline V\subseteq G.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The closed sets $C$ and $X\setminus G$ are disjoint.
 By normality choose disjoint open sets $V,W$ with
 \[
@@ -194,9 +222,14 @@ Then
 \[
 \overline V\subseteq X\setminus W\subseteq G.
 \]
+
 :::
 
-<1>5. Urysohn separation holds in $X$: if $A,B\subseteq X$ are disjoint closed sets, then there is a continuous map
+:::
+
+::: {.pf-step #s5}
+
+Urysohn separation holds in $X$: if $A,B\subseteq X$ are disjoint closed sets, then there is a continuous map
 \[
 h:X\to[0,1]
 \]
@@ -206,8 +239,10 @@ h|_A=0,
 \qquad
 h|_B=1.
 \]
-::: {.proof}
-By <1>3, $X$ is normal.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $X$ is normal.
 For $m\ge0$, let
 \[
 D_m=\left\{\frac{k}{2^m}:0\le k\le2^m\right\},
@@ -225,7 +260,7 @@ V_1=X\setminus B,
 \quad\text{whenever }r<s.
 \]
 
-First apply <1>4 to
+First apply step [](#s4){.pf-ref} to
 \[
 A\subseteq X\setminus B
 \]
@@ -234,7 +269,7 @@ to choose $V_0$ with
 A\subseteq V_0\subseteq\overline{V_0}\subseteq X\setminus B=V_1.
 \]
 Suppose the sets $V_r$ have been defined for every $r\in D_m$ and satisfy the required nesting there.
-For each adjacent pair $r<s$ in $D_m$, apply <1>4 to the closed set $\overline{V_r}$ inside the open set $V_s$ to define the new midpoint set $V_{(r+s)/2}$, where $(r+s)/2\in D_{m+1}\setminus D_m$, so that
+For each adjacent pair $r<s$ in $D_m$, apply step [](#s4){.pf-ref} to the closed set $\overline{V_r}$ inside the open set $V_s$ to define the new midpoint set $V_{(r+s)/2}$, where $(r+s)/2\in D_{m+1}\setminus D_m$, so that
 \[
 \overline{V_r}
 \subseteq
@@ -298,9 +333,14 @@ Hence $h(x)\ge r>\alpha$.
 
 Thus the inverse images of all open rays in $[0,1]$ are open, so $h$ is continuous.
 This proves the stated separation result.
+
 :::
 
-<1>6. For every $n\ge1$, there is a continuous function
+:::
+
+::: {.pf-step #s6}
+
+For every $n\ge1$, there is a continuous function
 \[
 g_n:X\to[0,1]
 \]
@@ -310,23 +350,32 @@ g_n=1\text{ on }F_n,
 \qquad
 g_n=0\text{ on }X\setminus U.
 \]
-::: {.proof}
-The sets $F_n$ and $X\setminus U$ are disjoint closed subsets of $X$, because <1>1 gives $F_n\subseteq U$.
-Apply <1>5 with
+
+::: pf-proof
+
+The sets $F_n$ and $X\setminus U$ are disjoint closed subsets of $X$, because step [](#s1){.pf-ref} gives $F_n\subseteq U$.
+Apply step [](#s5){.pf-ref} with
 \[
 A=X\setminus U,
 \qquad
 B=F_n.
 \]
 The resulting function has the required values.
+
 :::
 
-<1>7. Define
+:::
+
+::: {.pf-step #s7}
+
+Define
 \[
 f(x)=\sum_{n=1}^{\infty}2^{-n}g_n(x).
 \]
 Then $f:X\to[0,1]$ is continuous.
-::: {.proof}
+
+::: pf-proof
+
 Because $0\le g_n(x)\le1$,
 \[
 0\le f(x)\le\sum_{n=1}^{\infty}2^{-n}=1.
@@ -359,26 +408,39 @@ For $y\in O$,
 <\varepsilon.
 \]
 Thus $f$ is continuous.
+
 :::
 
-<1>8. The function $f$ satisfies
+:::
+
+::: pf-step
+
+The function $f$ satisfies
 \[
 f(x)>0\quad(x\in U),
 \qquad
 f(x)=0\quad(x\notin U).
 \]
-::: {.proof}
-If $x\notin U$, then <1>6 gives $g_n(x)=0$ for every $n$, so $f(x)=0$.
 
-If $x\in U$, then <1>1 gives some $n$ with $x\in F_n$.
-By <1>6,
+::: pf-proof
+
+If $x\notin U$, then step [](#s6){.pf-ref} gives $g_n(x)=0$ for every $n$, so $f(x)=0$.
+
+If $x\in U$, then step [](#s1){.pf-ref} gives some $n$ with $x\in F_n$.
+By step [](#s6){.pf-ref},
 \[
 g_n(x)=1.
 \]
-All summands in <1>7 are nonnegative, so
+All summands in step [](#s7){.pf-ref} are nonnegative, so
 \[
 f(x)\ge2^{-n}>0.
 \]
 This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

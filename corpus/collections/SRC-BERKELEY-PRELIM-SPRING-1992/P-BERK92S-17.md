@@ -29,13 +29,18 @@ have a positive solution $x$?
 ::: {.solution}
 Since $a>1$, we have $\log a>0$.
 
-<1>1. Any solution must satisfy $x>1$, and the equation is equivalent
+::: pf
+
+::: {.pf-step #s1}
+
+Any solution must satisfy $x>1$, and the equation is equivalent
 to
 $$
 \frac{\log x}{x^b}=\log a.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The right-hand side $x^b$ is positive, so
 $\log_a x>0$. Because $a>1$, this implies $x>1$. Using
 $$
@@ -43,9 +48,14 @@ $$
 $$
 and multiplying by the positive number $\log a/x^b$ gives the stated
 equation.
+
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #s2}
+
+For
 $$
 h(x)\coloneqq\frac{\log x}{x^b}
 \qquad(x>1),
@@ -55,7 +65,8 @@ $$
 \max_{x>1}h(x)=\frac1{be}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiate:
 $$
 h'(x)
@@ -74,26 +85,38 @@ h(e^{1/b})
 =\frac{1/b}{e}
 =\frac1{be}.
 $$
+
 :::
 
-<1>3. The equation has a positive solution exactly when
+:::
+
+::: {.pf-step #s3}
+
+The equation has a positive solution exactly when
 $$
 \boxed{b\log a\le\frac1e}.
 $$
 
-::: {.proof}
-By step <1>1, solutions are exactly the points $x>1$ for which
-$h(x)=\log a$. Since $\log a>0$, step <1>2 and continuity of $h$ show
+::: pf-proof
+
+By step [](#s1){.pf-ref}, solutions are exactly the points $x>1$ for which
+$h(x)=\log a$. Since $\log a>0$, step [](#s2){.pf-ref} and continuity of $h$ show
 that such a point exists if and only if
 $$
 \log a\le\frac1{be},
 $$
 which is equivalent to the displayed condition.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the complete parameter range.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the complete parameter range.
+
+:::
+
+:::
+
 :::

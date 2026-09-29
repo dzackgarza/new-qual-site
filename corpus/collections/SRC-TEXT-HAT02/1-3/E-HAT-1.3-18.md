@@ -37,11 +37,17 @@ Let
 G=\pi_1(X,x_0).
 \]
 
-<1>1. A connected normal covering corresponding to a normal subgroup $H\triangleleft G$ is abelian exactly when
+::: pf
+
+::: {.pf-step #s1}
+
+A connected normal covering corresponding to a normal subgroup $H\triangleleft G$ is abelian exactly when
 \[
 [G,G]\subseteq H.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a connected normal covering with subgroup $H$, the deck transformation group is
 \[
 G/H.
@@ -50,9 +56,14 @@ This quotient is abelian exactly when every commutator maps to the identity, equ
 \[
 [G,G]\subseteq H.
 \]
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 \[
 p_{\mathrm{ab}}:X_{\mathrm{ab}}\to X
 \]
@@ -64,19 +75,28 @@ Then $p_{\mathrm{ab}}$ is an abelian covering with deck group
 \[
 G/[G,G]=G_{\mathrm{ab}}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The commutator subgroup is normal.
-By <1>1 its associated connected normal cover is abelian, and the standard normal-cover deck-group theorem identifies its deck group with the displayed quotient.
+By step [](#s1){.pf-ref} its associated connected normal cover is abelian, and the standard normal-cover deck-group theorem identifies its deck group with the displayed quotient.
+
 :::
 
-<1>3. The cover $X_{\mathrm{ab}}$ covers every other connected abelian covering of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The cover $X_{\mathrm{ab}}$ covers every other connected abelian covering of $X$.
+
+::: pf-proof
+
 Let
 \[
 q:Y\to X
 \]
 be any connected abelian covering, corresponding to a subgroup $H\triangleleft G$.
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 [G,G]\subseteq H.
 \]
@@ -89,16 +109,23 @@ Taking $K=[G,G]$ gives a covering map
 X_{\mathrm{ab}}\to Y
 \]
 over $X$.
+
 :::
 
-<1>4. Any universal abelian covering is isomorphic to $X_{\mathrm{ab}}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Any universal abelian covering is isomorphic to $X_{\mathrm{ab}}$.
+
+::: pf-proof
+
 Suppose
 \[
 q:U\to X
 \]
 is an abelian cover that covers every other abelian cover, and let its subgroup be $K$.
-Since $U$ is abelian, <1>1 gives
+Since $U$ is abelian, step [](#s1){.pf-ref} gives
 \[
 [G,G]\subseteq K.
 \]
@@ -111,16 +138,23 @@ Thus
 K=[G,G].
 \]
 Connected coverings with the same subgroup are isomorphic over $X$ after basepoint choice, hence unbased as well.
+
 :::
 
-<1>5. For
+:::
+
+::: {.pf-step #s5}
+
+For
 \[
 X=S^1\vee S^1,
 \qquad
 G=F(a,b),
 \]
 the universal abelian cover is the square lattice graph in $\mathbb R^2$.
-::: {.proof}
+
+::: pf-proof
+
 The abelianization is
 \[
 F(a,b)_{\mathrm{ab}}\cong\mathbb Z^2.
@@ -150,16 +184,23 @@ so the deck group is $\mathbb Z^2$, and its subgroup is the kernel of
 F(a,b)\to\mathbb Z^2,
 \]
 namely $[F,F]$.
+
 :::
 
-<1>6. For
+:::
+
+::: {.pf-step #s6}
+
+For
 \[
 X=S^1\vee S^1\vee S^1,
 \qquad
 G=F(a,b,c),
 \]
 the universal abelian cover is the cubic lattice graph in $\mathbb R^3$.
-::: {.proof}
+
+::: pf-proof
+
 Now
 \[
 G_{\mathrm{ab}}\cong\mathbb Z^3.
@@ -171,10 +212,23 @@ Put a vertex at every lattice point
 and join it by oriented $a$-, $b$-, and $c$-edges to the points obtained by adding the three standard basis vectors.
 Map these edge families to the three wedge circles.
 The deck group is the translation group $\mathbb Z^3$, and the corresponding subgroup is the commutator subgroup of $F(a,b,c)$.
+
 :::
 
-<1>7. Therefore the commutator-subgroup cover is the unique universal abelian covering, with the stated lattice models for the two examples.
-::: {.proof}
-Existence and universality are <1>2--<1>3, uniqueness is <1>4, and the explicit models are <1>5--<1>6.
 :::
+
+::: pf-step
+
+Therefore the commutator-subgroup cover is the unique universal abelian covering, with the stated lattice models for the two examples.
+
+::: pf-proof
+
+Existence and universality are steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, uniqueness is step [](#s4){.pf-ref}, and the explicit models are steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

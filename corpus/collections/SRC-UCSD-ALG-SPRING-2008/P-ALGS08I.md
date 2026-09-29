@@ -31,7 +31,12 @@ Why?
 :::
 
 ::: {.solution}
-<1>1. Let $K\subset L$ be a field extension with $[L:K]=\infty$, and set
+
+::: pf
+
+::: pf-step
+
+Let $K\subset L$ be a field extension with $[L:K]=\infty$, and set
 \[
 R=
 \begin{pmatrix}
@@ -40,7 +45,9 @@ K & L\\
 \end{pmatrix}.
 \]
 Then $R$ satisfies the minimum condition on right ideals.
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 e_1=
@@ -88,10 +95,17 @@ as a right module through the upper-left copy of $K$, hence is simple.
 Thus $e_1R$ has composition length $2$, while $e_2R$ has composition length $1$.
 Therefore $R_R$ has finite length, so it is Artinian.
 Equivalently, $R$ satisfies the minimum condition on right ideals.
+
 :::
 
-<1>2. The ring $R$ does not satisfy the minimum condition on left ideals.
-::: {.proof}
+:::
+
+::: pf-step
+
+The ring $R$ does not satisfy the minimum condition on left ideals.
+
+::: pf-proof
+
 For every $K$-subspace $U\subseteq L$, define
 \[
 I_U=
@@ -136,10 +150,17 @@ I_{U_1}\supsetneq I_{U_2}\supsetneq I_{U_3}\supsetneq\cdots
 \]
 is an infinite strictly descending chain of left ideals.
 Thus $R$ is not left Artinian.
+
 :::
 
-<1>3. This example necessarily has a nonzero nilpotent ideal.
-::: {.proof}
+:::
+
+::: pf-step
+
+This example necessarily has a nonzero nilpotent ideal.
+
+::: pf-proof
+
 The ideal
 \[
 N=
@@ -154,10 +175,17 @@ is nonzero and satisfies
 \[
 N^2=0.
 \]
+
 :::
 
-<1>4. There is no example with the right minimum condition, not the left minimum condition, and no nonzero nilpotent ideals.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is no example with the right minimum condition, not the left minimum condition, and no nonzero nilpotent ideals.
+
+::: pf-proof
+
 Suppose $A$ is right Artinian and has no nonzero nilpotent ideals.
 For every right-Artinian ring, the Jacobson radical $J(A)$ is nilpotent.
 Hence the hypothesis forces
@@ -172,5 +200,11 @@ A=A/J(A)
 is semisimple Artinian.
 By the Wedderburn--Artin theorem, a semisimple Artinian ring is a finite product of full matrix rings over division rings, and in particular is Artinian on both the right and the left.
 Thus a right-Artinian ring with no nonzero nilpotent ideals must also be left Artinian, so the requested stronger example cannot exist.
+
 :::
+
+:::
+
+:::
+
 :::

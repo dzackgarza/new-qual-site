@@ -35,7 +35,11 @@ $$
 \ZZ\alpha+\ZZ\beta.
 $$
 
-<1>1. Let $H\leq(\RR,+)$ be a nonzero closed subgroup, and set
+::: pf
+
+::: {.pf-step #s1}
+
+Let $H\leq(\RR,+)$ be a nonzero closed subgroup, and set
 $$
 d
 =
@@ -46,7 +50,8 @@ $$
 H=\RR.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Assume $d=0$. Given $x\in\RR$ and $\varepsilon>0$, choose
 $$
 0<h\in H
@@ -61,14 +66,20 @@ $$
 $$
 Thus $H$ is dense in $\RR$. Since $H$ is closed, it follows that
 $H=\RR$.
+
 :::
 
-<1>2. In the setting of step <1>1, if $d>0$, then
+:::
+
+::: {.pf-step #s2}
+
+In the setting of step [](#s1){.pf-ref}, if $d>0$, then
 $$
 H=d\ZZ.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a sequence
 $$
 h_n\in H\cap(0,\infty)
@@ -89,9 +100,14 @@ r\in H\cap(0,\infty)
 $$
 and $r<d$, contradicting the definition of $d$. Hence $r=0$, so
 $h\in d\ZZ$. The reverse inclusion follows from $d\in H$.
+
 :::
 
-<1>3. Every closed subgroup of $\RR$ is one of
+:::
+
+::: {.pf-step #s3}
+
+Every closed subgroup of $\RR$ is one of
 $$
 \{0\},
 \qquad
@@ -100,14 +116,21 @@ d\ZZ\quad(d>0),
 \RR.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The zero subgroup is one case. For a nonzero closed subgroup, steps
-<1>1 and <1>2 give the remaining two possibilities.
+[](#s1){.pf-ref} and [](#s2){.pf-ref} give the remaining two possibilities.
+
 :::
 
-<1>4. The subgroup $\Gamma$ cannot equal $\RR$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The subgroup $\Gamma$ cannot equal $\RR$.
+
+::: pf-proof
+
 Every element of $\Gamma$ has the form
 $$
 m\alpha+n\beta,
@@ -115,16 +138,22 @@ m\alpha+n\beta,
 (m,n)\in\ZZ^2.
 $$
 Thus $\Gamma$ is countable, whereas $\RR$ is uncountable.
+
 :::
 
-<1>5. The numbers $\alpha$ and $\beta$ are linearly dependent over
+:::
+
+::: {.pf-step #s5}
+
+The numbers $\alpha$ and $\beta$ are linearly dependent over
 $\QQ$.
 
-::: {.proof}
+::: pf-proof
+
 If $\Gamma=\{0\}$, then $\alpha=\beta=0$, and the conclusion is
 immediate.
 
-Otherwise, steps <1>3 and <1>4 give
+Otherwise, steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give
 $$
 \Gamma=d\ZZ
 $$
@@ -139,11 +168,17 @@ $$
 n\alpha-m\beta=0
 $$
 is a nontrivial rational linear relation.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -61,9 +61,14 @@ f(x)
 \bigl(A_n\cos nx+B_n\sin nx\bigr).
 $$
 
-<1>1. The constant Fourier coefficient of $f''$ is zero.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The constant Fourier coefficient of $f''$ is zero.
+
+::: pf-proof
+
 Since $f$ is $2\pi$-periodic and satisfies a classical second-order
 differential equation with continuous right-hand side, $f'$ is also
 $2\pi$-periodic. Hence
@@ -74,9 +79,14 @@ f'(\pi)-f'(-\pi)
 =
 0.
 $$
+
 :::
 
-<1>2. For every $n\geq1$, the cosine and sine Fourier coefficients of
+:::
+
+::: {.pf-step #s2}
+
+For every $n\geq1$, the cosine and sine Fourier coefficients of
 $f''$ are respectively
 $$
 -n^2A_n
@@ -84,7 +94,8 @@ $$
 -n^2B_n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Integrate by parts twice. Periodicity of $f$ and $f'$ makes all boundary
 terms vanish. Thus
 $$
@@ -102,9 +113,14 @@ f''(x)\sin(nx)\,dx
 =
 -n^2B_n.
 $$
+
 :::
 
-<1>3. For every $n\geq1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n\geq1$,
 $$
 \boxed{
 A_n=\frac{a_n}{k-n^2},
@@ -113,12 +129,13 @@ B_n=\frac{b_n}{k-n^2}
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take the $n$th cosine and sine Fourier coefficients of
 $$
 f''+kf=g.
 $$
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 (k-n^2)A_n=a_n
 $$
@@ -128,32 +145,44 @@ $$
 $$
 The hypothesis excludes $k=n^2$ for every $n\geq1$, so division is
 legitimate.
+
 :::
 
-<1>4. If $k\neq0$, then
+:::
+
+::: {.pf-step #s4}
+
+If $k\neq0$, then
 $$
 A_0=\frac{a_0}{k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Taking constant Fourier coefficients in the differential equation and
-using step <1>1 gives
+using step [](#s1){.pf-ref} gives
 $$
 k\frac{A_0}{2}
 =
 \frac{a_0}{2}.
 $$
 Divide by $k$.
+
 :::
 
-<1>5. If $k=0$, then necessarily
+:::
+
+::: {.pf-step #s5}
+
+If $k=0$, then necessarily
 $$
 a_0=0,
 $$
 while $A_0$ is not determined by the equation.
 
-::: {.proof}
-For $k=0$, the constant-coefficient identity from step <1>4 before
+::: pf-proof
+
+For $k=0$, the constant-coefficient identity from step [](#s4){.pf-ref} before
 division becomes
 $$
 0=\frac{a_0}{2},
@@ -163,12 +192,18 @@ $$
 f''=g
 $$
 produces another solution, so the constant Fourier coefficient is free.
+
 :::
 
-<1>6. The Fourier coefficients $a_n,b_n$ of the continuous function $g$
+:::
+
+::: {.pf-step #s6}
+
+The Fourier coefficients $a_n,b_n$ of the continuous function $g$
 are uniformly bounded in $n$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 M_g
@@ -184,9 +219,14 @@ $$
 2M_g,
 $$
 and the same estimate holds for $b_n$.
+
 :::
 
-<1>7. The series of nonconstant terms
+:::
+
+::: {.pf-step #s7}
+
+The series of nonconstant terms
 $$
 \sum_{n=1}^{\infty}
 \left(
@@ -197,14 +237,15 @@ $$
 $$
 converges absolutely and uniformly in $x$.
 
-::: {.proof}
+::: pf-proof
+
 Because $k$ is fixed, there is $N$ such that for all $n\geq N$,
 $$
 \abs{k-n^2}
 \geq
 \frac{n^2}{2}.
 $$
-By step <1>6, for such $n$ the absolute value of the $n$th summand is at
+By step [](#s6){.pf-ref}, for such $n$ the absolute value of the $n$th summand is at
 most
 $$
 \frac{4M_g}{n^2}
@@ -219,9 +260,14 @@ $$
 $$
 converges, so the Weierstrass M-test gives absolute uniform convergence.
 The finitely many initial terms do not affect convergence.
+
 :::
 
-<1>8. If $k\neq0$, the Fourier series of $f$ is
+:::
+
+::: {.pf-step #s8}
+
+If $k\neq0$, the Fourier series of $f$ is
 $$
 \boxed{
 \frac{a_0}{2k}
@@ -235,11 +281,17 @@ $$
 }.
 $$
 
-::: {.proof}
-Combine steps <1>3 and <1>4.
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>9. If $k=0$, then $a_0=0$ and the Fourier series of $f$ is
+:::
+
+::: {.pf-step #s9}
+
+If $k=0$, then $a_0=0$ and the Fourier series of $f$ is
 $$
 \boxed{
 \frac{A_0}{2}
@@ -255,25 +307,38 @@ $$
 where $A_0$ is the constant Fourier coefficient of the particular
 solution $f$.
 
-::: {.proof}
-Combine steps <1>3 and <1>5.
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
 
-<1>10. In both cases the displayed Fourier series converges everywhere
+:::
+
+::: {.pf-step #s10}
+
+In both cases the displayed Fourier series converges everywhere
 to $f$.
 
-::: {.proof}
-Step <1>7 gives uniform absolute convergence of the nonconstant part.
+::: pf-proof
+
+Step [](#s7){.pf-ref} gives uniform absolute convergence of the nonconstant part.
 Moreover $f$ is $C^2$ and $2\pi$-periodic, so by Dirichlet's theorem
 for piecewise $C^1$ periodic functions its Fourier series converges at
-every point to $f(x)$. Hence the series identified in steps <1>8 and <1>9 converge
+every point to $f(x)$. Hence the series identified in steps [](#s8){.pf-ref} and [](#s9){.pf-ref} converge
 everywhere to the given solution.
+
 :::
 
-<1>11. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>8--<1>10 give the Fourier series and its everywhere convergence
+::: pf-qed
+
+Steps [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} give the Fourier series and its everywhere convergence
 for every value of $k$ allowed by the stated hypotheses.
+
 :::
+
+:::
+
 :::

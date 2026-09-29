@@ -43,10 +43,15 @@ $$
 \downarrow x\coloneqq\{y\in X:y\le x\}.
 $$
 
-<1>1. For every countably infinite totally ordered set $X$, the set
+::: pf
+
+::: {.pf-step #s1}
+
+For every countably infinite totally ordered set $X$, the set
 $L(X)$ is infinite.
 
-::: {.proof}
+::: pf-proof
+
 For every $x\in X$, the principal down-set $\downarrow x$ belongs to
 $L(X)$. If $x<y$, then $y\in\downarrow y$ but
 $y\notin\downarrow x$, so $\downarrow x\ne\downarrow y$. Thus
@@ -55,9 +60,14 @@ x\longmapsto\downarrow x
 $$
 is an injection from $X$ into $L(X)$. Since $X$ is countably infinite,
 $L(X)$ has cardinality at least $\aleph_0$.
+
 :::
 
-<1>2. For $X=\ZZ$ with its usual order, every down-set is either
+:::
+
+::: {.pf-step #s2}
+
+For $X=\ZZ$ with its usual order, every down-set is either
 $$
 \varnothing,\qquad
 \ZZ,\qquad\text{or}\qquad
@@ -65,7 +75,8 @@ $$
 $$
 for a unique $k\in\ZZ$.
 
-::: {.proof}
+::: pf-proof
+
 Let $S\in L(\ZZ)$ be nonempty and proper. Choose $s\in S$ and
 $t\notin S$. The down-set property forces $s<t$: if $t<s$, then
 $s\in S$ would imply $t\in S$.
@@ -81,26 +92,38 @@ $$
 S=\{j\in\ZZ:j\le m-1\}.
 $$
 Uniqueness of $m-1$ is immediate.
+
 :::
 
-<1>3. The smallest possible cardinality of $L(X)$ is
+:::
+
+::: {.pf-step #s3}
+
+The smallest possible cardinality of $L(X)$ is
 $$
 \boxed{\aleph_0},
 $$
 attained by $X=\ZZ$.
 
-::: {.proof}
-Step <1>2 gives only countably many down-sets of $\ZZ$, while step
-<1>1 shows that no countably infinite total order can have fewer than
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives only countably many down-sets of $\ZZ$, while step
+[](#s1){.pf-ref} shows that no countably infinite total order can have fewer than
 countably many. Thus $\aleph_0$ is the minimum.
+
 :::
 
-<1>4. For $X=\QQ$ with its usual order, there is an injection
+:::
+
+::: {.pf-step #s4}
+
+For $X=\QQ$ with its usual order, there is an injection
 $$
 \RR\hookrightarrow L(\QQ).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $r\in\RR$, define
 $$
 S_r\coloneqq\{q\in\QQ:q<r\}.
@@ -112,15 +135,21 @@ r<q<s.
 $$
 Then $q\in S_s$ but $q\notin S_r$, so $S_r\ne S_s$. Therefore
 $r\mapsto S_r$ is injective.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 |L(\QQ)|=2^{\aleph_0}=|\RR|.
 $$
 
-::: {.proof}
-Step <1>4 gives
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives
 $$
 |\RR|\le|L(\QQ)|.
 $$
@@ -133,15 +162,21 @@ $$
 |\mathcal P(\QQ)|=2^{\aleph_0}=|\RR|.
 $$
 Hence equality holds.
+
 :::
 
-<1>6. The largest possible cardinality of $L(X)$ is
+:::
+
+::: {.pf-step #s6}
+
+The largest possible cardinality of $L(X)$ is
 $$
 \boxed{2^{\aleph_0}},
 $$
 attained by $X=\QQ$.
 
-::: {.proof}
+::: pf-proof
+
 For every countably infinite $X$,
 $$
 L(X)\subseteq\mathcal P(X),
@@ -150,12 +185,18 @@ so
 $$
 |L(X)|\le2^{\aleph_0}.
 $$
-Step <1>5 shows that equality is attained for $\QQ$.
+Step [](#s5){.pf-ref} shows that equality is attained for $\QQ$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>6 answer parts (a) and (b), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s6){.pf-ref} answer parts (a) and (b), respectively.
+
+:::
+
+:::
+
 :::

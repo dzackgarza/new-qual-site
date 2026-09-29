@@ -44,9 +44,14 @@ f(x)\coloneqq
 \end{cases}
 $$
 
-<1>1. The function $f$ is not continuous at $0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The function $f$ is not continuous at $0$.
+
+::: pf-proof
+
 Set
 $$
 x_n\coloneqq\frac{1}{\frac\pi2+2\pi n},
@@ -61,23 +66,35 @@ f(y_n)=-1
 $$
 for every $n$. Hence $\lim_{x\to0}f(x)$ does not exist, so $f$ is
 discontinuous at $0$.
+
 :::
 
-<1>2. If $0\notin[a,b]$, then $f([a,b])$ is a bounded closed interval.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $0\notin[a,b]$, then $f([a,b])$ is a bounded closed interval.
+
+::: pf-proof
+
 On $\RR\setminus\{0\}$ the function $f$ is continuous. Thus its
 restriction to $[a,b]$ is continuous. The interval $[a,b]$ is compact
 and connected, so its continuous image is compact and connected.
 Compact subsets of $\RR$ are closed and bounded, and connected
 subsets of $\RR$ are intervals. Therefore $f([a,b])$ is a bounded
 closed interval.
+
 :::
 
-<1>3. If $0\in[a,b]$, then $f([a,b])$ is again a bounded closed
+:::
+
+::: {.pf-step #s3}
+
+If $0\in[a,b]$, then $f([a,b])$ is again a bounded closed
 interval.
 
-::: {.proof}
+::: pf-proof
+
 If $a=b=0$, then
 $$
 f([a,b])=\{0\}=[0,0].
@@ -104,22 +121,34 @@ $\abs{f(x)}\le1$ everywhere,
 $$
 f([a,b])=[-1,1].
 $$
+
 :::
 
-<1>4. The assertion in the problem is false.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 show that $f$ maps every closed
-interval to a bounded closed interval, while step <1>1 shows that it
+::: {.pf-step #s4}
+
+The assertion in the problem is false.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that $f$ maps every closed
+interval to a bounded closed interval, while step [](#s1){.pf-ref} shows that it
 is not continuous. Therefore
 $$
 \boxed{\text{the stated assertion is false}}.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 supplies the required counterexample.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} supplies the required counterexample.
+
+:::
+
+:::
+
 :::

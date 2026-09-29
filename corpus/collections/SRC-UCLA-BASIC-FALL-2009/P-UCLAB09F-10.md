@@ -19,13 +19,26 @@ audit:
 ::: {.problem}
 Let $I=[0,2]$.
 
-<1>1. If $f\colon I\to\mathbb R$ is continuous and
+::: pf
+
+::: pf-step
+
+If $f\colon I\to\mathbb R$ is continuous and
 \[
 \int_I f(x)\,dx=36,
 \]
 prove that there exists $x\in I$ such that $f(x)=18$.
 
-<1>2. If $g\colon I^2\to\mathbb R$ is continuous and
+:::
+
+::: pf-step
+
+If $g\colon I^2\to\mathbb R$ is continuous and
+
+:::
+
+:::
+
 \[
 \int_{I^2}g(x,y)\,dx\,dy=36,
 \]

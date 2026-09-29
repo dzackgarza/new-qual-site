@@ -46,14 +46,19 @@ $$
 \beta\coloneqq\arctan\frac1{239}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \tan(2\alpha)=\frac5{12},
 \qquad
 \tan(4\alpha)=\frac{120}{119}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The double-angle identity gives
 $$
 \tan(2\alpha)
@@ -66,27 +71,39 @@ $$
 =\frac{2(5/12)}{1-(5/12)^2}
 =\frac{120}{119}.
 $$
+
 :::
 
-<1>2. The angle $4\alpha-\beta$ lies in $(0,\pi/2)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The angle $4\alpha-\beta$ lies in $(0,\pi/2)$.
+
+::: pf-proof
+
 Since $0<1/239<1/5$, monotonicity of $\arctan$ gives
 $0<\beta<\alpha$, and hence $4\alpha-\beta>0$.
 
-Also $0<\alpha<\pi/4$, so $0<4\alpha<\pi$. By step <1>1,
+Also $0<\alpha<\pi/4$, so $0<4\alpha<\pi$. By step [](#s1){.pf-ref},
 $\tan(4\alpha)=120/119>0$. On the interval $(0,\pi)$ the tangent is
 positive only on $(0,\pi/2)$, so $4\alpha<\pi/2$. Therefore
 $4\alpha-\beta<\pi/2$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \tan(4\alpha-\beta)=1.
 $$
 
-::: {.proof}
-By step <1>1 and the subtraction formula for tangent,
+::: pf-proof
+
+By step [](#s1){.pf-ref} and the subtraction formula for tangent,
 $$
 \begin{aligned}
 \tan(4\alpha-\beta)
@@ -100,9 +117,14 @@ $$
 =1.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Machin's identity is
+:::
+
+::: {.pf-step #s4}
+
+Machin's identity is
 $$
 \boxed{
 \frac\pi4
@@ -110,18 +132,25 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>2, the angle $4\alpha-\beta$ belongs to $(0,\pi/2)$.
-Step <1>3 says that its tangent is $1$. The unique angle in
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the angle $4\alpha-\beta$ belongs to $(0,\pi/2)$.
+Step [](#s3){.pf-ref} says that its tangent is $1$. The unique angle in
 $(0,\pi/2)$ with tangent $1$ is $\pi/4$. Substituting the definitions
 of $\alpha$ and $\beta$ gives the displayed identity.
+
 :::
 
-<1>5. The Taylor series for $\arctan\frac15$ and $\arctan\frac1{239}$
+:::
+
+::: {.pf-step #s5}
+
+The Taylor series for $\arctan\frac15$ and $\arctan\frac1{239}$
 converge geometrically, whereas the truncation error of the Taylor
 series for $\arctan1$ after $N$ terms is of order $1/N$.
 
-::: {.proof}
+::: pf-proof
+
 For $0<x\le1$,
 $$
 \arctan x
@@ -132,15 +161,21 @@ At $x=1$, the alternating-series error after truncation is controlled
 only by the next reciprocal odd integer, so the error decreases on the
 order of $1/N$ after $N$ terms. For $x=1/5$, the term magnitudes acquire
 the factor $5^{-(2k+1)}$, and for $x=1/239$ they acquire
-$239^{-(2k+1)}$. Thus the two arctangent series in step <1>4 converge
+$239^{-(2k+1)}$. Thus the two arctangent series in step [](#s4){.pf-ref} converge
 geometrically fast, whereas the series for $\arctan 1$ converges only
 at reciprocal speed.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the identity, and step <1>5 gives the requested reason
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the identity, and step [](#s5){.pf-ref} gives the requested reason
 for Machin's computational choice.
+
 :::
+
+:::
+
 :::

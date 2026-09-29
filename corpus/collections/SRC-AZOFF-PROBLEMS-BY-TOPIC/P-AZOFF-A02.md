@@ -36,7 +36,12 @@ Prove that $f$ is uniformly continuous.
 :::
 
 ::: {.solution}
-<1>1. For every $\varepsilon>0$ there is $R>0$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $\varepsilon>0$ there is $R>0$ such that
 $$
 \abs{f(x)}<\frac{\varepsilon}{2}
 $$
@@ -45,7 +50,8 @@ $$
 \abs{x}>R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypotheses
 $$
 \lim_{x\to+\infty}f(x)=0
@@ -58,9 +64,14 @@ $$
 R=\max\{R_+,R_-\}
 $$
 gives the claim.
+
 :::
 
-<1>2. For the $R$ from step <1>1, there is $\delta_0>0$ such that
+:::
+
+::: {.pf-step #s2}
+
+For the $R$ from step [](#s1){.pf-ref}, there is $\delta_0>0$ such that
 $$
 \abs{x-y}<\delta_0,
 \qquad
@@ -71,7 +82,8 @@ $$
 \abs{f(x)-f(y)}<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The interval
 $$
 [-R-1,R+1]
@@ -79,9 +91,14 @@ $$
 is compact, and $f$ is continuous on it. By the Heine--Cantor theorem, the
 restriction of $f$ to this interval is uniformly continuous. Applying that
 uniform continuity with the given $\varepsilon$ gives $\delta_0$.
+
 :::
 
-<1>3. With
+:::
+
+::: {.pf-step #s3}
+
+With
 $$
 \delta=\min\{1,\delta_0\},
 $$
@@ -90,7 +107,8 @@ $$
 \abs{f(x)-f(y)}<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose first that
 $$
 \abs{x}\leq R
@@ -101,7 +119,7 @@ Since $\abs{x-y}<1$, both points then belong to
 $$
 [-R-1,R+1].
 $$
-The desired estimate follows from step <1>2 because
+The desired estimate follows from step [](#s2){.pf-ref} because
 $$
 \abs{x-y}<\delta\leq\delta_0.
 $$
@@ -112,7 +130,7 @@ $$
 \qquad\text{and}\qquad
 \abs{y}>R.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \abs{f(x)}<\frac{\varepsilon}{2},
 \qquad
@@ -127,12 +145,18 @@ $$
 \varepsilon.
 $$
 Thus the same $\delta$ works in every case.
+
 :::
 
-<1>4. The function $f$ is uniformly continuous on $\RR$.
+:::
 
-::: {.proof}
-Step <1>3 shows that for every $\varepsilon>0$ there is a single
+::: {.pf-step #s4}
+
+The function $f$ is uniformly continuous on $\RR$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that for every $\varepsilon>0$ there is a single
 $\delta>0$, independent of $x$ and $y$, such that
 $$
 \abs{x-y}<\delta
@@ -140,11 +164,17 @@ $$
 \abs{f(x)-f(y)}<\varepsilon.
 $$
 This is the definition of uniform continuity.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

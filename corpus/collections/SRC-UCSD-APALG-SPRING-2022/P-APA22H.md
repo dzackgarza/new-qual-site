@@ -22,28 +22,63 @@ Prove that the tensor $\omega = v_1 \wedge v_2 + v_3 \wedge v_4$ cannot be repre
 :::
 
 ::: {.solution}
-<1>1. Suppose $\omega = u \wedge w$ for some $u, w \in V$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Suppose $\omega = u \wedge w$ for some $u, w \in V$.
+
+::: pf-proof
+
 assume for contradiction.
+
 :::
 
-<1>2. Then $\omega \wedge \omega = (u \wedge w) \wedge (u \wedge w) = 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Then $\omega \wedge \omega = (u \wedge w) \wedge (u \wedge w) = 0$.
+
+::: pf-proof
+
 $u \wedge w \wedge u \wedge w = 0$ (repeated factor).
+
 :::
 
-<1>3. But $\omega \wedge \omega = (v_1 \wedge v_2 + v_3 \wedge v_4) \wedge (v_1 \wedge v_2 + v_3 \wedge v_4) = 2 v_1 \wedge v_2 \wedge v_3 \wedge v_4 \neq 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+But $\omega \wedge \omega = (v_1 \wedge v_2 + v_3 \wedge v_4) \wedge (v_1 \wedge v_2 + v_3 \wedge v_4) = 2 v_1 \wedge v_2 \wedge v_3 \wedge v_4 \neq 0$.
+
+::: pf-proof
+
 expand; the cross terms vanish ($v_1 \wedge v_2 \wedge v_1 \wedge v_2 = 0$ and $v_3 \wedge v_4 \wedge v_3 \wedge v_4 = 0$), leaving $v_1 \wedge v_2 \wedge v_3 \wedge v_4 + v_3 \wedge v_4 \wedge v_1 \wedge v_2 = 2 v_1 \wedge v_2 \wedge v_3 \wedge v_4$, which is nonzero since $\{v_1, v_2, v_3, v_4\}$ is linearly independent.
+
 :::
 
-<1>4. Contradiction, so $\omega$ is not a single exterior product.
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
+::: {.pf-step #s4}
+
+Contradiction, so $\omega$ is not a single exterior product.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

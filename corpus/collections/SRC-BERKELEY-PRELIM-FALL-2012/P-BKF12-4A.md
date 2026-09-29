@@ -55,12 +55,17 @@ $$
                  \abs{\Im z}\le\pi N\}.
 $$
 
-<1>1. The function $F$ has a pole of order $3$ at $0$, with
+::: pf
+
+::: {.pf-step #s1}
+
+The function $F$ has a pole of order $3$ at $0$, with
 $$
 \operatorname*{Res}_{z=0}F=\frac12.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Near $0$,
 $$
 \cos z=1-\frac{z^2}{2}+O(z^4),
@@ -75,9 +80,14 @@ F(z)
 =\frac1{z^3}+\frac1{2z}+O(z),
 $$
 which proves both the pole order and the residue.
+
 :::
 
-<1>2. For every $n\in\ZZ$, the point
+:::
+
+::: {.pf-step #s2}
+
+For every $n\in\ZZ$, the point
 $$
 z_n\coloneqq\left(n+\frac12\right)\pi
 $$
@@ -88,7 +98,8 @@ $$
 $$
 These, together with $0$, are all the poles of $F$.
 
-::: {.proof}
+::: pf-proof
+
 The zeros of $\cos z$ are exactly the points $z_n$, and they are
 simple because
 $$
@@ -102,9 +113,14 @@ $$
 $$
 The factor $z^3$ contributes only the pole at $0$, so the list is
 complete.
+
 :::
 
-<1>3. On $C_N$,
+:::
+
+::: {.pf-step #s3}
+
+On $C_N$,
 $$
 \frac1{\abs{\cos z}}\le1
 $$
@@ -113,7 +129,8 @@ $$
 \abs z\ge\pi N.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write $z=x+iy$. The identity
 $$
 \abs{\cos(x+iy)}^2
@@ -136,15 +153,21 @@ $$
 Thus the first bound holds on every edge. Every point of $C_N$ has
 either $\abs x=\pi N$ or $\abs y=\pi N$, which gives
 $\abs z\ge\pi N$.
+
 :::
 
-<1>4. The contour integrals satisfy
+:::
+
+::: {.pf-step #s4}
+
+The contour integrals satisfy
 $$
 \lim_{N\to\infty}\int_{C_N}F(z)\,dz=0.
 $$
 
-::: {.proof}
-The length of $C_N$ is $8\pi N$. By step <1>3,
+::: pf-proof
+
+The length of $C_N$ is $8\pi N$. By step [](#s3){.pf-ref},
 $$
 \abs{F(z)}
 \le\frac1{(\pi N)^3}
@@ -157,9 +180,14 @@ $$
 =\frac{8}{\pi^2N^2},
 $$
 which tends to $0$.
+
 :::
 
-<1>5. The poles of $F$ inside $C_N$ are $0$ and
+:::
+
+::: {.pf-step #s5}
+
+The poles of $F$ inside $C_N$ are $0$ and
 $$
 z_n=\left(n+\frac12\right)\pi,
 \qquad
@@ -172,7 +200,8 @@ $$
 \sum_{k=0}^{N-1}\frac{(-1)^k}{(2k+1)^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The real pole $z_n$ lies inside the square exactly when
 $$
 \abs{n+\tfrac12}<N,
@@ -180,7 +209,7 @@ $$
 which is equivalent to $-N\le n\le N-1$.
 
 For $k=0,\ldots,N-1$, the poles with indices $k$ and $-k-1$ are
-opposites, and step <1>2 gives the same residue at both:
+opposites, and step [](#s2){.pf-ref} gives the same residue at both:
 $$
 \operatorname*{Res}_{z=z_k}F
 =\operatorname*{Res}_{z=z_{-k-1}}F
@@ -193,10 +222,15 @@ $$
 =-\frac{16}{\pi^3}
 \sum_{k=0}^{N-1}\frac{(-1)^k}{(2k+1)^3}.
 $$
-Adding the residue $1/2$ from step <1>1 gives the claim.
+Adding the residue $1/2$ from step [](#s1){.pf-ref} gives the claim.
+
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #s6}
+
+One has
 $$
 \boxed{
 1-\frac1{3^3}+\frac1{5^3}-\frac1{7^3}+\cdots
@@ -204,27 +238,34 @@ $$
 }.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>5,
+::: pf-proof
+
+By the residue theorem and step [](#s5){.pf-ref},
 $$
 \frac{1}{2\pi i}\int_{C_N}F(z)\,dz
 =\frac12
 -\frac{16}{\pi^3}
 \sum_{k=0}^{N-1}\frac{(-1)^k}{(2k+1)^3}.
 $$
-Step <1>4 shows that the left side tends to $0$. Therefore
+Step [](#s4){.pf-ref} shows that the left side tends to $0$. Therefore
 $$
 \lim_{N\to\infty}
 \sum_{k=0}^{N-1}\frac{(-1)^k}{(2k+1)^3}
 =\frac{\pi^3}{32},
 $$
 which is the displayed series.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 answer part (a), step <1>4 answers part (b), and
-step <1>6 answers part (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} answer part (a), step [](#s4){.pf-ref} answers part (b), and
+step [](#s6){.pf-ref} answers part (c).
+
+:::
+
+:::
+
 :::

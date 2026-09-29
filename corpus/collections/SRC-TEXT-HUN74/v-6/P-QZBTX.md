@@ -32,16 +32,29 @@ If $\mathrm{char} K = p \neq 0$ and $[F: K]$ is finite and not divisible by $p$,
 ::: {.solution}
 Suppose, toward a contradiction, that $F/K$ is not separable.
 
-<1>1. There exists $u\in F$ whose minimal polynomial over $K$ is inseparable.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There exists $u\in F$ whose minimal polynomial over $K$ is inseparable.
+
+::: pf-proof
+
 By definition, an algebraic extension is separable if every element is separable.
 Since $F/K$ is finite, it is algebraic. Thus failure of separability provides
 such an element $u$.
+
 :::
 
-<1>2. If an irreducible polynomial $m(x)\in K[x]$ is inseparable in
+:::
+
+::: {.pf-step #s2}
+
+If an irreducible polynomial $m(x)\in K[x]$ is inseparable in
 characteristic $p$, then $p$ divides $\deg m$.
-::: {.proof}
+
+::: pf-proof
+
 An irreducible polynomial is inseparable exactly when its formal derivative is
 zero. Write
 \[
@@ -54,19 +67,33 @@ $m$ are multiples of $p$, so
 m(x)=g(x^p)
 \]
 for some $g\in K[x]$. In particular $p\mid\deg m$.
+
 :::
 
-<1>3. The degree $[K(u):K]$ is divisible by $p$.
-::: {.proof}
-Let $m_u$ be the minimal polynomial of $u$ over $K$. By <1>1 it is inseparable,
-so <1>2 gives
+:::
+
+::: {.pf-step #s3}
+
+The degree $[K(u):K]$ is divisible by $p$.
+
+::: pf-proof
+
+Let $m_u$ be the minimal polynomial of $u$ over $K$. By step [](#s1){.pf-ref} it is inseparable,
+so step [](#s2){.pf-ref} gives
 \[
 p\mid\deg m_u=[K(u):K].
 \]
+
 :::
 
-<1>4. This contradicts the hypothesis that $p\nmid[F:K]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+This contradicts the hypothesis that $p\nmid[F:K]$.
+
+::: pf-proof
+
 The tower law for
 \[
 K\subseteq K(u)\subseteq F
@@ -75,12 +102,25 @@ gives
 \[
 [F:K]=[F:K(u)][K(u):K].
 \]
-By <1>3 the second factor is divisible by $p$, so $p\mid[F:K]$, contrary to
+By step [](#s3){.pf-ref} the second factor is divisible by $p$, so $p\mid[F:K]$, contrary to
 hypothesis.
+
 :::
 
-<1>5. Therefore $F/K$ is separable.
-::: {.proof}
-The assumption of inseparability led to the contradiction in <1>4.
 :::
+
+::: pf-step
+
+Therefore $F/K$ is separable.
+
+::: pf-proof
+
+The assumption of inseparability led to the contradiction in step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

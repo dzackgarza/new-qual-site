@@ -41,8 +41,14 @@ p:\widetilde X_H\to X
 be the connected covering corresponding to $H$.
 Its fiber over the basepoint has $n$ points and can be identified with the coset set $G/H$.
 
-<1>1. The conjugates of $H$ are precisely the stabilizers of points of the transitive $G$-set $G/H$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The conjugates of $H$ are precisely the stabilizers of points of the transitive $G$-set $G/H$.
+
+::: pf-proof
+
 For the left action of $G$ on $G/H$, the stabilizer of the coset $gH$ is
 \[
 \operatorname{Stab}(gH)
@@ -50,19 +56,33 @@ For the left action of $G$ on $G/H$, the stabilizer of the coset $gH$ is
 =gHg^{-1}.
 \]
 In covering-space language, changing the chosen lift of the basepoint from the point corresponding to $H$ to the point corresponding to $gH$ changes the associated subgroup by conjugation to $gHg^{-1}$.
+
 :::
 
-<1>2. Hence $H$ has at most $n$ distinct conjugate subgroups.
-::: {.proof}
-There are exactly $n$ points in $G/H$ and therefore at most $n$ distinct point stabilizers. By <1>1 these are the conjugates of $H$.
 :::
 
-<1>3. Let
+::: {.pf-step #s2}
+
+Hence $H$ has at most $n$ distinct conjugate subgroups.
+
+::: pf-proof
+
+There are exactly $n$ points in $G/H$ and therefore at most $n$ distinct point stabilizers. By step [](#s1){.pf-ref} these are the conjugates of $H$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Let
 \[
 K=\bigcap_{g\in G}gHg^{-1}.
 \]
 Then $K$ is normal in $G$ and $K\subseteq H$.
-::: {.proof}
+
+::: pf-proof
+
 Containment in $H$ follows from the term $g=1$.
 For $a\in G$,
 \[
@@ -73,11 +93,18 @@ aKa^{-1}
 \]
 where $u=ag$ ranges over all of $G$.
 Thus $K\trianglelefteq G$.
+
 :::
 
-<1>4. The subgroup $K$ has finite index in $G$.
-::: {.proof}
-By <1>2 only finitely many distinct conjugates of $H$ occur, say
+:::
+
+::: {.pf-step #s4}
+
+The subgroup $K$ has finite index in $G$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} only finitely many distinct conjugates of $H$ occur, say
 \[
 H_1,\dots,H_r,
 \qquad r\le n.
@@ -101,13 +128,26 @@ Equivalently, $K$ is the kernel of the monodromy homomorphism
 G\longrightarrow\operatorname{Sym}(G/H)\cong S_n,
 \]
 so in fact $[G:K]\le n!$.
+
 :::
 
-<1>5. Thus there is a finite-index normal subgroup
+:::
+
+::: pf-step
+
+Thus there is a finite-index normal subgroup
 \[
 \boxed{K\trianglelefteq G,\qquad K\subseteq H.}
 \]
-::: {.proof}
-Combine <1>3 and <1>4.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

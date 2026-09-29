@@ -42,8 +42,14 @@ Define
 d(x,y)=\min\{\rho(x,y),1\}.
 \]
 
-<1>1. The function $d$ is a metric on $X$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The function $d$ is a metric on $X$.
+
+::: pf-proof
+
 Symmetry and positive definiteness are immediate from the edge-length construction.
 For the triangle inequality, the extended path metric $\rho$ satisfies
 \[
@@ -55,18 +61,32 @@ For nonnegative extended real numbers,
 \]
 so truncating at $1$ preserves the triangle inequality.
 Distinct points on the same finite edge have positive path distance, and points in different components have distance $1$.
+
 :::
 
-<1>2. The metric topology is contained in the weak topology.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The metric topology is contained in the weak topology.
+
+::: pf-proof
+
 On the closure of each edge, the restriction of $d$ gives the usual interval topology locally, since for distances less than $1$ the metric is just edgewise path length.
 Therefore every metric-open set has open intersection with every closed edge.
 It also has open intersection with the $0$-skeleton.
 By the definition of the weak topology on a graph, it is weakly open.
+
 :::
 
-<1>3. If $U$ is weakly open and $x$ lies in the interior of an edge, then some $d$-ball about $x$ lies in $U$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If $U$ is weakly open and $x$ lies in the interior of an edge, then some $d$-ball about $x$ lies in $U$.
+
+::: pf-proof
+
 The intersection of $U$ with that closed edge is open in the interval topology.
 Choose $\epsilon>0$ smaller than both the distance from $x$ to the two endpoints and the interval radius contained in $U$.
 Then
@@ -74,10 +94,17 @@ Then
 B_d(x,\epsilon)
 \]
 stays inside that edge and lies in $U$.
+
 :::
 
-<1>4. If $U$ is weakly open and $v$ is a vertex of $X$ lying in $U$, then some $d$-ball about $v$ lies in $U$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $U$ is weakly open and $v$ is a vertex of $X$ lying in $U$, then some $d$-ball about $v$ lies in $U$.
+
+::: pf-proof
+
 Only finitely many edges
 \[
 e_1,\dots,e_r
@@ -94,11 +121,24 @@ If $v$ is isolated, then
 B_d(v,1/2)=\{v\}\subseteq U.
 \]
 Thus $B_d(v,\epsilon)\subseteq U$ in all cases.
+
 :::
 
-<1>5. Hence the weak topology equals the topology induced by $d$.
-::: {.proof}
-By <1>3--<1>4 every weakly open set is metric open, while <1>2 gives the reverse inclusion.
-Therefore the weak topology is metrizable.
 :::
+
+::: pf-step
+
+Hence the weak topology equals the topology induced by $d$.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref} every weakly open set is metric open, while step [](#s2){.pf-ref} gives the reverse inclusion.
+Therefore the weak topology is metrizable.
+
+:::
+
+:::
+
+:::
+
 :::

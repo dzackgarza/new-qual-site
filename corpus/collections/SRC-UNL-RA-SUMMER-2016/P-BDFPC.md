@@ -49,8 +49,15 @@ Prove that $g\equiv0$.
 :::
 
 ::: {.solution}
-<1>1. Prove the Riemann--Stieltjes assertion.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the Riemann--Stieltjes assertion.
+
+::: pf-proof
+
 The integrator $\alpha$ is nondecreasing and has a single jump of size $2$ immediately to the right of $0$.
 
 Fix $\varepsilon>0$. By continuity of $f$ at $0$, choose $r\in(0,1)$ such that
@@ -88,10 +95,17 @@ and both $m$ and $M$ can be made arbitrarily close to $f(0)$ by shrinking $r$. T
 \[
 \boxed{\int_{-1}^1f\,d\alpha=2f(0)}.
 \]
+
 :::
 
-<1>2. Extend the moment identities from monomials to polynomials in $x^3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extend the moment identities from monomials to polynomials in $x^3$.
+
+::: pf-proof
+
 For every polynomial $p$,
 \[
 x^2p(x^3)
@@ -100,10 +114,17 @@ is a finite linear combination of the functions $x^{3k+2}$. Hence the hypothesis
 \[
 \int_0^1 g(x)x^2p(x^3)\,dx=0.
 \]
+
 :::
 
-<1>3. Approximate $g$ by polynomials in $x^3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Approximate $g$ by polynomials in $x^3$.
+
+::: pf-proof
+
 Define
 \[
 h(t):=g(t^{1/3}),\qquad t\in[0,1].
@@ -128,5 +149,11 @@ The integrand is continuous and nonnegative, so it vanishes identically. Thus $g
 \[
 \boxed{g\equiv0}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

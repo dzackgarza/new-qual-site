@@ -32,10 +32,16 @@ $$
 Show that $f_n \in C([0,1])$, and there are $f \in C([0,1])$ and a subsequence $f_{n_k}$ such that $f_{n_k} \to f$ in $C([0,1])$.
 :::
 
-
 ::: {.solution}
-<1>1. Show inductively that every $f_n$ is well defined and continuous.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show inductively that every $f_n$ is well defined and continuous.
+
+::: pf-proof
+
 Let
 \[
 M:=\sup_{z\in\mathbb C}|F(z)|<\infty.
@@ -50,10 +56,17 @@ is well defined for every $x\in[0,1]$. In fact $f_{n+1}$ is absolutely continuou
 \[
 \boxed{f_n\in C([0,1])\text{ for every }n.}
 \]
+
 :::
 
-<1>2. Establish uniform boundedness and equicontinuity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Establish uniform boundedness and equicontinuity.
+
+::: pf-proof
+
 For $n\ge0$ and $x\in[0,1]$,
 \[
 |f_{n+1}(x)|
@@ -71,10 +84,17 @@ Also, for $x,y\in[0,1]$,
 \end{aligned}
 \]
 Hence the family is equi-Lipschitz, and therefore equicontinuous.
+
 :::
 
-<1>3. Apply Arzelà--Ascoli.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Arzelà--Ascoli.
+
+::: pf-proof
+
 The interval $[0,1]$ is compact. By Step 2, the sequence $(f_n)_{n\ge1}$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore gives a subsequence $(f_{n_k})$ and a continuous function $f\in C([0,1])$ such that
 \[
 \|f_{n_k}-f\|_\infty\longrightarrow0.
@@ -83,5 +103,11 @@ Equivalently,
 \[
 \boxed{f_{n_k}\to f\text{ in }C([0,1]).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

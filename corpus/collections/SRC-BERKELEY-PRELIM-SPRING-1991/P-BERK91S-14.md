@@ -58,9 +58,14 @@ S\coloneqq\frac{A+A^{\mathsf T}}2
 \end{pmatrix}.
 $$
 
-<1>1. The quadratic form defined by $S$ is positive definite.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The quadratic form defined by $S$ is positive definite.
+
+::: pf-proof
+
 For $v=(v_1,v_2,v_3)^{\mathsf T}\in\RR^3$,
 $$
 \begin{aligned}
@@ -70,17 +75,29 @@ v^{\mathsf T}Sv
 \end{aligned}
 $$
 This is nonnegative. If it is zero, then the last two terms give $v_2=v_3=0$, and the first square then gives $v_1=0$. Hence $v^{\mathsf T}Sv>0$ for every nonzero $v$.
+
 :::
 
-<1>2. $x(t)\neq0$ for every $t$ in the interval of definition of the solution.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$x(t)\neq0$ for every $t$ in the interval of definition of the solution.
+
+::: pf-proof
+
 If $x(t_0)=0$ for some $t_0$, then the zero solution and the given solution have the same initial value at $t_0$. Uniqueness for the linear system $x'=Ax$ therefore forces $x(t)\equiv0$, contrary to the hypothesis that the solution is nontrivial.
+
 :::
 
-<1>3. $\dfrac{d}{dt}\norm{x(t)}^2>0$ for every $t$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+$\dfrac{d}{dt}\norm{x(t)}^2>0$ for every $t$.
+
+::: pf-proof
+
 Since $x'=Ax$,
 $$
 \begin{aligned}
@@ -90,18 +107,30 @@ $$
 &=2x(t)^{\mathsf T}Sx(t).
 \end{aligned}
 $$
-By step <1>2, $x(t)$ is nonzero, so step <1>1 makes the final expression strictly positive.
+By step [](#s2){.pf-ref}, $x(t)$ is nonzero, so step [](#s1){.pf-ref} makes the final expression strictly positive.
+
 :::
 
-<1>4. $\norm{x(t)}$ is strictly increasing in $t$.
-
-::: {.proof}
-Step <1>3 shows that $t\mapsto\norm{x(t)}^2$ is strictly increasing. The square-root function is strictly increasing on $[0,\infty)$, so $t\mapsto\norm{x(t)}$ is strictly increasing as well.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Step <1>4 proves the required monotonicity.
+$\norm{x(t)}$ is strictly increasing in $t$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that $t\mapsto\norm{x(t)}^2$ is strictly increasing. The square-root function is strictly increasing on $[0,\infty)$, so $t\mapsto\norm{x(t)}$ is strictly increasing as well.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the required monotonicity.
+
+:::
+
+:::
+
 :::

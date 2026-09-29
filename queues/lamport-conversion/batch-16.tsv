@@ -44,214 +44,214 @@ corpus/collections/SRC-UGA-ALG-SPRING-2019/P-UKZE6.md	skipped	<2>n substep marke
 corpus/collections/SRC-UGA-ALG-SPRING-2020/P-J5GIE.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence for parts (c),(d); same broken pattern as P-65GIR; tree structure not certain
 corpus/collections/SRC-UGA-ALG-SPRING-2020/P-KOSSD.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
 corpus/collections/SRC-UGA-ALG-SPRING-2021/P-JZSN3.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-CA-COMPILATION/P-TIE-F09-04.md	verify	converted, never read back
-corpus/collections/SRC-UGA-CA-COMPILATION/P-TIE-F09-12.md	pending	partly converted; finish it
-corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA39.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA40.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2009/P-MMAQ-FLFHFN7LEF.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2011/P-5R3FT.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2011/P-AMD-INYGESUE.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2011/P-TA3FG.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2011/P-ZS4IH.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2015/P-4ZZYV.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2015/P-AMD-YDNWHPDM.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2015/P-IZW2T.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2015/P-YVNUD.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2016/P-3AEDF.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2016/P-57CAX.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2016/P-AEWN6.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2017/P-8CA05.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2018/P-8CA31.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2019/P-4KVTJ.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2019/P-PMH4D.md	pending	
-corpus/collections/SRC-UGA-CA-FALL-2020/P-P47SB.md	pending	
-corpus/collections/SRC-UGA-CA-SPRING-2009/P-8CA26.md	pending	
-corpus/collections/SRC-UGA-CA-SPRING-2011/P-34ALC.md	pending	
-corpus/collections/SRC-UGA-CA-SPRING-2014/P-8CA34.md	pending	
-corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-JWY5GWNO.md	pending	
-corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-NFZKF2XH.md	pending	
-corpus/collections/SRC-UGA-CA-SPRING-2017/P-Q7NED.md	pending	
-corpus/collections/SRC-UGA-CA-SPRING-2021/P-3WZXM.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-A12ND.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-KU6C3.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-S10CN.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03D3.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03P2.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03VW.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-NVWMC.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-F05AB.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-F05PR.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-HOBOM.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-LHC3M.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06PD.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-MW5EM.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-4PCPV.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-5YTY5.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2010/P-F10CR.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2012/P-UU43Q.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2014/P-34W2F.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-3CU65.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-5RZWO.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-KOTV2.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-MOL6S.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-R7TCU.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-SLNSQ.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-TAPVD.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-TOIEK.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-2QLBW.md	pending	
-corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-CWELY.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-GB7EM.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-MFVEZ.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3A3.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3DS.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3LC.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3LN.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SP.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SQ.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-4STQR.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-FPWV6.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04DG.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04FG.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04KT.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04LM.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04SQ.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-UE5L6.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-5XCMC.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-6POHT.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-OQW4B.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05A6.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05C4.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05T5.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05X3.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-VA72Z.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-I3UPP.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-JLPVR.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06CA.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06EZ.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06F8.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06FN.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06G6.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06N3.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06Q5.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CEU5R.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CQNPO.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-OK5P3.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07IN.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07KR.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07LM.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07SP.md	pending	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07TY.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2014/P-5QNZJ.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2014/P-5SMO5.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2014/P-AKPMF.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2014/P-KH5ZV.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2014/P-RHDT6.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2014/P-TUGZG.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2015/P-COY2N.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2015/P-P5TFA.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2015/P-RDMYM.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2015/P-RJV7Q.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2015/P-XHEB6.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2017/P-7UIFE.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2017/P-CKY3L.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2017/P-DEFYR.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2017/P-STYWD.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2017/P-UCPPT.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2018/P-3AREP.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2018/P-5YLZS.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2018/P-6HV66.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2018/P-CN673.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2018/P-DWFMA.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2019/P-7QVGF.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2019/P-B6S3M.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2019/P-KBH2K.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2019/P-S2SVK.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2019/P-X3MW2.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2020/P-B2CWE.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2020/P-I3DSE.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2020/P-ZWJ7K.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2021/P-4E64D.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2021/P-P2UWB.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2021/P-XRNHW.md	pending	
-corpus/collections/SRC-UGA-RA-FALL-2021/P-Y34JB.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA39.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA42.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA01.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA02.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA03.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA04.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA05.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA06.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA08.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA09.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA10.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA11.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA12.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA13.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA14.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA15.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA16.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA18.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA19.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA20.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA21.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2009/P-OW5VL.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA24.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA26.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA27.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA28.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA29.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA30.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA31.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA32.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA33.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA34.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA35.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA36.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA37.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2014/P-2HIC2.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2014/P-CWRU6.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2014/P-KGSPZ.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2014/P-UMAQ5.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2014/P-XUV2I.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2015/P-BH66D.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2015/P-BH7BM.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2015/P-GXAKN.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2015/P-JP74P.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2015/P-Q7WNK.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2015/P-ZOTXG.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2016/P-7UD7E.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2016/P-J25XX.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2016/P-J745K.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2016/P-O5S6X.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2016/P-VXO5U.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2016/P-WWNJC.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2017/P-25AFH.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2017/P-4RXD2.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2017/P-BXD6O.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2017/P-TPZF3.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2018/P-6FHOE.md	pending	
-corpus/collections/SRC-UGA-RA-SPRING-2018/P-OFICU.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2011/P-8TF22.md	verify	converted, never read back
-corpus/collections/SRC-UGA-TOP-FALL-2011/P-8TF23.md	verify	converted, never read back
-corpus/collections/SRC-UGA-TOP-FALL-2011/P-ETP6C.md	verify	converted, never read back
-corpus/collections/SRC-UGA-TOP-FALL-2011/P-HZBSC.md	pending	partly converted; finish it
-corpus/collections/SRC-UGA-TOP-FALL-2011/P-UG5YN.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2011/P-W3HQL.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2012/P-8TF24.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2012/P-8TF25.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2012/P-8TF26.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2012/P-LWGC4.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2012/P-QB5KF.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2012/P-SGK4K.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2012/P-Y7C7Z.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-4DIFI.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF27.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF28.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF29.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF30.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF31.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF32.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF33.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF34.md	pending	
-corpus/collections/SRC-UGA-TOP-FALL-2014/P-23S3Z.md	pending	
+corpus/collections/SRC-UGA-CA-COMPILATION/P-TIE-F09-04.md	converted	
+corpus/collections/SRC-UGA-CA-COMPILATION/P-TIE-F09-12.md	pending	script refused: step number 3 where 1 was expected; partly converted; finish it
+corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA39.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA40.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2009/P-MMAQ-FLFHFN7LEF.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-FALL-2011/P-5R3FT.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-CA-FALL-2011/P-AMD-INYGESUE.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-FALL-2011/P-TA3FG.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-CA-FALL-2011/P-ZS4IH.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UGA-CA-FALL-2015/P-4ZZYV.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2015/P-AMD-YDNWHPDM.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-FALL-2015/P-IZW2T.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-CA-FALL-2015/P-YVNUD.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UGA-CA-FALL-2016/P-3AEDF.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-FALL-2016/P-57CAX.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2016/P-AEWN6.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-FALL-2017/P-8CA05.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2018/P-8CA31.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2019/P-4KVTJ.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-CA-FALL-2019/P-PMH4D.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2020/P-P47SB.md	converted	
+corpus/collections/SRC-UGA-CA-SPRING-2009/P-8CA26.md	pending	script refused: step number 1 where 6 was expected
+corpus/collections/SRC-UGA-CA-SPRING-2011/P-34ALC.md	converted	
+corpus/collections/SRC-UGA-CA-SPRING-2014/P-8CA34.md	converted	
+corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-JWY5GWNO.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-NFZKF2XH.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-SPRING-2017/P-Q7NED.md	converted	
+corpus/collections/SRC-UGA-CA-SPRING-2021/P-3WZXM.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-A12ND.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-KU6C3.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-S10CN.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03D3.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03P2.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03VW.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-NVWMC.md	pending	script refused: step number 1 where 2 was expected
+corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-F05AB.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-F05PR.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-HOBOM.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-LHC3M.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06PD.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-MW5EM.md	pending	script refused: step number 1 where 7 was expected
+corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-4PCPV.md	pending	script refused: step number 1 where 5 was expected
+corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-5YTY5.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2010/P-F10CR.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2012/P-UU43Q.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2014/P-34W2F.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-3CU65.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-5RZWO.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-KOTV2.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-MOL6S.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-R7TCU.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-SLNSQ.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-TAPVD.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-TOIEK.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-2QLBW.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-CWELY.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-GB7EM.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-MFVEZ.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3A3.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3DS.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3LC.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3LN.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SP.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SQ.md	pending	script refused: citation <2>1 names no step
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-4STQR.md	pending	script refused: step number 1 where 2 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-FPWV6.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04DG.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04FG.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04KT.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04LM.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04SQ.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-UE5L6.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-5XCMC.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-6POHT.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-OQW4B.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05A6.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05C4.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05T5.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05X3.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-VA72Z.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-I3UPP.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-JLPVR.md	pending	script refused: step number 4 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06CA.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06EZ.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06F8.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06FN.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06G6.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06N3.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06Q5.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CEU5R.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CQNPO.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-OK5P3.md	pending	script refused: step number 3 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07IN.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07KR.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07LM.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07SP.md	pending	script refused: step number 1 where 2 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07TY.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2014/P-5QNZJ.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2014/P-5SMO5.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2014/P-AKPMF.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2014/P-KH5ZV.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2014/P-RHDT6.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2014/P-TUGZG.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2015/P-COY2N.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2015/P-P5TFA.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2015/P-RDMYM.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2015/P-RJV7Q.md	pending	script refused: step number 3 where 1 was expected
+corpus/collections/SRC-UGA-RA-FALL-2015/P-XHEB6.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2017/P-7UIFE.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2017/P-CKY3L.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2017/P-DEFYR.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2017/P-STYWD.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2017/P-UCPPT.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2018/P-3AREP.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2018/P-5YLZS.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2018/P-6HV66.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2018/P-CN673.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2018/P-DWFMA.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2019/P-7QVGF.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2019/P-B6S3M.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2019/P-KBH2K.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2019/P-S2SVK.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2019/P-X3MW2.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2020/P-B2CWE.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2020/P-I3DSE.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2020/P-ZWJ7K.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2021/P-4E64D.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2021/P-P2UWB.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2021/P-XRNHW.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2021/P-Y34JB.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA39.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2005/P-8RA42.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA01.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA02.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA03.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA04.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA05.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2006/P-8RA06.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA08.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA09.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA10.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA11.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2007/P-8RA12.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA13.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA14.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA15.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2008/P-8RA16.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA18.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA19.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA20.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA21.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2009/P-OW5VL.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA24.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA26.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA27.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA28.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA29.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA30.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2011/P-8RA31.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA32.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA33.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA34.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA35.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA36.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA37.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2014/P-2HIC2.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-SPRING-2014/P-CWRU6.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2014/P-KGSPZ.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2014/P-UMAQ5.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-SPRING-2014/P-XUV2I.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2015/P-BH66D.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2015/P-BH7BM.md	pending	script refused: Q.E.D. step is not last
+corpus/collections/SRC-UGA-RA-SPRING-2015/P-GXAKN.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2015/P-JP74P.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2015/P-Q7WNK.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2015/P-ZOTXG.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2016/P-7UD7E.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2016/P-J25XX.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2016/P-J745K.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2016/P-O5S6X.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2016/P-VXO5U.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2016/P-WWNJC.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2017/P-25AFH.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2017/P-4RXD2.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-SPRING-2017/P-BXD6O.md	pending	script refused: citation <2>3 names no step
+corpus/collections/SRC-UGA-RA-SPRING-2017/P-TPZF3.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2018/P-6FHOE.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-SPRING-2018/P-OFICU.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2011/P-8TF22.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2011/P-8TF23.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2011/P-ETP6C.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2011/P-HZBSC.md	pending	script refused: step number 3 where 1 was expected; partly converted; finish it
+corpus/collections/SRC-UGA-TOP-FALL-2011/P-UG5YN.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2011/P-W3HQL.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2012/P-8TF24.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2012/P-8TF25.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2012/P-8TF26.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2012/P-LWGC4.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2012/P-QB5KF.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2012/P-SGK4K.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2012/P-Y7C7Z.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-4DIFI.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF27.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF28.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF29.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF30.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF31.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF32.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF33.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF34.md	converted	
+corpus/collections/SRC-UGA-TOP-FALL-2014/P-23S3Z.md	converted	

@@ -42,8 +42,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Define the exceptional set by failure of the desired ball estimate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Define the exceptional set by failure of the desired ball estimate.
+
+::: pf-proof
+
 Set
 \[
 E_\varepsilon
@@ -58,10 +65,17 @@ Then by definition, if $x\notin E_\varepsilon$, we have
 \mu(B_r(x))\le \frac{Cr}{\varepsilon}
 \]
 for every $r>0$.
+
 :::
 
-<1>2. Observe that every bad witnessing ball has small radius.
-::: {.proof}
+:::
+
+::: pf-step
+
+Observe that every bad witnessing ball has small radius.
+
+::: pf-proof
+
 If $x\in E_\varepsilon$ and $B_r(x)$ witnesses membership, then
 \[
 \frac{Cr}{\varepsilon}<\mu(B_r(x))\le\mu(\mathbb R^n)=C.
@@ -72,10 +86,17 @@ r<\varepsilon.
 \]
 If $C=0$, the conclusion is trivial with $E_\varepsilon=\varnothing$.
 Thus all witnessing radii are uniformly bounded.
+
 :::
 
-<1>3. Apply the Vitali $5r$ covering lemma.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Vitali $5r$ covering lemma.
+
+::: pf-proof
+
 Consider the family of all witnessing balls
 \[
 \mathcal B
@@ -106,10 +127,17 @@ Therefore
 \sum_i\mu(B_{r_i}(x_i))
 \le\varepsilon.
 \]
+
 :::
 
-<1>4. Estimate the Hausdorff $1$-content.
-::: {.proof}
+:::
+
+::: pf-step
+
+Estimate the Hausdorff $1$-content.
+
+::: pf-proof
+
 The balls $B_{5r_i}(x_i)$ cover $E_\varepsilon$, and
 \[
 \operatorname{diam}(B_{5r_i}(x_i))=10r_i.
@@ -121,5 +149,11 @@ Hence
 <10\varepsilon.
 \]
 Together with Step 1, this gives the required exceptional set and ball estimate.
+
 :::
+
+:::
+
+:::
+
 :::

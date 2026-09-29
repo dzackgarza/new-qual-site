@@ -28,7 +28,12 @@ Let m and n be integers greater than 1. Prove that $\log _ { m } ( n )$ is ratio
 :::
 
 ::: {.solution}
-<1>1. If
+
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 m=l^r
 \qquad\text{and}\qquad
@@ -43,7 +48,8 @@ $$
 \QQ.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $m>1$, one has $l>1$. Then
 $$
 m^{s/r}
@@ -58,9 +64,14 @@ By the definition of logarithm,
 $$
 \log_m n=\frac{s}{r}.
 $$
+
 :::
 
-<1>2. Conversely, suppose
+:::
+
+::: {.pf-step #s2}
+
+Conversely, suppose
 $$
 \log_m n
 =
@@ -71,7 +82,8 @@ $$
 m^s=n^r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Exponentiating the defining identity gives
 $$
 n
@@ -82,9 +94,14 @@ Raising both sides to the $r$th power yields
 $$
 n^r=m^s.
 $$
+
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #s3}
+
+Let
 $$
 m=\prod_{j=1}^k p_j^{e_j}
 \qquad\text{and}\qquad
@@ -97,24 +114,31 @@ se_j=rf_j
 $$
 for every $j$.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 m^s=n^r.
 $$
 The exponent of $p_j$ on the left is $se_j$, and on the right it is
 $rf_j$. Uniqueness of prime factorization forces equality of these
 exponents.
+
 :::
 
-<1>4. For every $j$, there is a nonnegative integer $h_j$ such that
+:::
+
+::: {.pf-step #s4}
+
+For every $j$, there is a nonnegative integer $h_j$ such that
 $$
 e_j=rh_j
 \qquad\text{and}\qquad
 f_j=sh_j.
 $$
 
-::: {.proof}
+::: pf-proof
+
 From
 $$
 se_j=rf_j
@@ -139,9 +163,14 @@ so
 $$
 f_j=sh_j.
 $$
+
 :::
 
-<1>5. Define
+:::
+
+::: {.pf-step #s5}
+
+Define
 $$
 l
 \coloneqq
@@ -156,8 +185,9 @@ n=l^s
 }.
 $$
 
-::: {.proof}
-Using step <1>4,
+::: pf-proof
+
+Using step [](#s4){.pf-ref},
 $$
 m
 =
@@ -172,11 +202,17 @@ $$
 n=l^s.
 $$
 Because $m>1$, at least one $h_j$ is positive, so $l>1$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves one implication, and steps <1>2--<1>5 prove the converse.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves one implication, and steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove the converse.
+
+:::
+
+:::
+
 :::

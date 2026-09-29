@@ -35,9 +35,15 @@ Show that $N_G(Q) = Z_G(Q) = Q$.
 :::
 
 ::: {.solution}
-<1>1. There is exactly one Sylow $7$-subgroup.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+There is exactly one Sylow $7$-subgroup.
+
+::: pf-proof
+
 Since $84=2^2\cdot3\cdot7$, Sylow's theorems give
 $$
 n_7\mid12,\qquad n_7\equiv1\pmod7
@@ -45,11 +51,17 @@ $$
 for the number $n_7$ of Sylow $7$-subgroups [@DF04]. The positive
 divisors of $12$ are $1,2,3,4,6,12$, and only $1$ is congruent
 to $1$ modulo $7$. Thus $n_7=1$.
+
 :::
 
-<1>2. The normalizer of $Q$ has order $3$, and equals $Q$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The normalizer of $Q$ has order $3$, and equals $Q$.
+
+::: pf-proof
+
 Conjugation acts transitively on the Sylow $3$-subgroups, by
 Sylow conjugacy [@DF04]. The stabilizer of $Q$ is
 $$
@@ -65,20 +77,32 @@ $$
 Every subgroup normalizes itself, so $Q\subseteq N_G(Q)$.
 As a Sylow $3$-subgroup, $Q$ also has order $3$. The containment
 is therefore equality.
+
 :::
 
-<1>3. The centralizer is also $Q$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The centralizer is also $Q$.
+
+::: pf-proof
+
 Here $Z_G(Q)$ denotes the set of elements commuting with every
 element of $Q$. The group
 $Q$ has prime order $3$ and is cyclic, hence abelian. Thus
 $Q\subseteq Z_G(Q)$. Every element centralizing $Q$ fixes each
 of its elements under conjugation and therefore normalizes $Q$.
-Combining this with step <1>2 gives
+Combining this with step [](#s2){.pf-ref} gives
 $$
 Q\subseteq Z_G(Q)\subseteq N_G(Q)=Q.
 $$
 All three subgroups coincide, as required.
+
 :::
+
+:::
+
+:::
+
 :::

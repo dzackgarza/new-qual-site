@@ -22,13 +22,27 @@ If $K$ is the Klein bottle, calculate $H_1(K)$ directly.
 :::
 
 ::: {.solution}
-<1>1. $A$ sine curve separates.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$A$ sine curve separates.
+
+::: pf-proof
+
 Jordan.
+
 :::
 
-<1>2. Q.E.D.
-::: {.proof}
-<1>1.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
 :::

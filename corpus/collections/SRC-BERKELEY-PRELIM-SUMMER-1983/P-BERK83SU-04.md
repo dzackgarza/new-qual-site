@@ -38,10 +38,18 @@ Then $f(b)=f(a)$.
 We use the least-upper-bound property of $\RR$ as the basic
 completeness property.
 
-<1>1. Every sequence in a closed bounded interval $[a,b]$ has a
+::: pf
+
+::: {.pf-step #s1}
+
+Every sequence in a closed bounded interval $[a,b]$ has a
 convergent subsequence with limit in $[a,b]$.
 
-<2>1. From any infinite sequence $(x_n)$ in $[a,b]$, one can construct
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+From any infinite sequence $(x_n)$ in $[a,b]$, one can construct
 nested closed intervals
 $$
 I_1\supseteq I_2\supseteq\cdots
@@ -51,16 +59,23 @@ $$
 \operatorname{length}(I_k)=\frac{b-a}{2^k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Bisect $[a,b]$. At least one half contains infinitely many terms of the
 sequence; call such a half $I_1$. Bisect $I_1$ and choose a half
 containing infinitely many terms; call it $I_2$. Continue inductively.
+
 :::
 
-<2>2. The nested intervals of step <2>1 have exactly one common point
+:::
+
+::: pf-step
+
+The nested intervals of step [](#s1-1){.pf-ref} have exactly one common point
 $c\in[a,b]$.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 I_k=[\alpha_k,\beta_k].
@@ -84,11 +99,17 @@ $$
 \longrightarrow0,
 $$
 so $c'=c$.
+
 :::
 
-<2>3. The original sequence has a subsequence converging to $c$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-3}
+
+The original sequence has a subsequence converging to $c$.
+
+::: pf-proof
+
 Choose inductively indices
 $$
 n_1<n_2<\cdots
@@ -102,27 +123,37 @@ $$
 \longrightarrow0.
 $$
 Thus $x_{n_k}\to c$.
+
 :::
 
-<2>4. Q.E.D.
-
-::: {.proof}
-Step <2>3 proves step <1>1.
 :::
 
-<1>2. Every continuous function
+::: pf-qed
+
+Step [](#s1-3){.pf-ref} proves step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Every continuous function
 $$
 g:[a,b]\longrightarrow\RR
 $$
 is bounded.
 
-::: {.proof}
+::: pf-proof
+
 Suppose $g$ were unbounded. Then for every positive integer $n$ one
 could choose $x_n\in[a,b]$ with
 $$
 \abs{g(x_n)}>n.
 $$
-By step <1>1, some subsequence satisfies
+By step [](#s1){.pf-ref}, some subsequence satisfies
 $$
 x_{n_k}\longrightarrow c\in[a,b].
 $$
@@ -134,18 +165,28 @@ so the subsequence $(g(x_{n_k}))$ is bounded, contradicting
 $$
 \abs{g(x_{n_k})}>n_k\longrightarrow\infty.
 $$
+
 :::
 
-<1>3. Every continuous function
+:::
+
+::: {.pf-step #s3}
+
+Every continuous function
 $$
 g:[a,b]\longrightarrow\RR
 $$
 attains both its maximum and its minimum.
 
-<2>1. The function $g$ attains its maximum.
+::: pf-proof
 
-::: {.proof}
-By step <1>2, the set
+::: {.pf-step #s3-1}
+
+The function $g$ attains its maximum.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the set
 $$
 g([a,b])
 $$
@@ -157,7 +198,7 @@ For every positive integer $n$, choose $x_n\in[a,b]$ such that
 $$
 M-\frac1n<g(x_n)\leq M.
 $$
-By step <1>1, a subsequence satisfies
+By step [](#s1){.pf-ref}, a subsequence satisfies
 $$
 x_{n_k}\longrightarrow c\in[a,b].
 $$
@@ -170,27 +211,43 @@ $$
 g(x_{n_k})\longrightarrow M.
 $$
 Therefore $g(c)=M$.
+
 :::
 
-<2>2. The function $g$ attains its minimum.
-
-::: {.proof}
-Apply step <2>1 to the continuous function $-g$.
 :::
 
-<2>3. Q.E.D.
+::: {.pf-step #s3-2}
 
-::: {.proof}
-Steps <2>1 and <2>2 prove step <1>3.
+The function $g$ attains its minimum.
+
+::: pf-proof
+
+Apply step [](#s3-1){.pf-ref} to the continuous function $-g$.
+
 :::
 
-<1>4. If $g$ is differentiable at an interior point $c$ and has a
+:::
+
+::: pf-qed
+
+Steps [](#s3-1){.pf-ref} and [](#s3-2){.pf-ref} prove step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+If $g$ is differentiable at an interior point $c$ and has a
 local maximum or local minimum at $c$, then
 $$
 g'(c)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose first that $c$ is a local maximum. For all sufficiently small
 $h>0$,
 $$
@@ -207,9 +264,14 @@ g'(c)\leq0
 g'(c)\geq0.
 $$
 Hence $g'(c)=0$. For a local minimum, apply the same argument to $-g$.
+
 :::
 
-<1>5. Rolle's theorem follows: if $g$ is continuous on $[a,b]$,
+:::
+
+::: {.pf-step #s5}
+
+Rolle's theorem follows: if $g$ is continuous on $[a,b]$,
 differentiable on $(a,b)$, and
 $$
 g(a)=g(b),
@@ -219,21 +281,28 @@ $$
 g'(c)=0.
 $$
 
-::: {.proof}
-By step <1>3, $g$ attains a maximum and a minimum on $[a,b]$. If these
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $g$ attains a maximum and a minimum on $[a,b]$. If these
 values are equal, then $g$ is constant and every $c\in(a,b)$ satisfies
 $g'(c)=0$. Otherwise, because $g(a)=g(b)$, at least one of the maximum
-or minimum is attained at an interior point $c\in(a,b)$. Step <1>4
+or minimum is attained at an interior point $c\in(a,b)$. Step [](#s4){.pf-ref}
 then gives $g'(c)=0$.
+
 :::
 
-<1>6. The mean value theorem follows: if $g$ is continuous on $[a,b]$
+:::
+
+::: {.pf-step #s6}
+
+The mean value theorem follows: if $g$ is continuous on $[a,b]$
 and differentiable on $(a,b)$, then for some $c\in(a,b)$,
 $$
 g(b)-g(a)=g'(c)(b-a).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Define
 $$
 h(x)
@@ -246,7 +315,7 @@ Then $h$ is continuous on $[a,b]$, differentiable on $(a,b)$, and
 $$
 h(a)=g(a)=h(b).
 $$
-By step <1>5, there is $c\in(a,b)$ with $h'(c)=0$. Thus
+By step [](#s5){.pf-ref}, there is $c\in(a,b)$ with $h'(c)=0$. Thus
 $$
 0
 =
@@ -255,15 +324,21 @@ g'(c)
 \frac{g(b)-g(a)}{b-a},
 $$
 which rearranges to the stated identity.
+
 :::
 
-<1>7. For the function in the problem,
+:::
+
+::: {.pf-step #s7}
+
+For the function in the problem,
 $$
 \boxed{f(b)=f(a)}.
 $$
 
-::: {.proof}
-Apply step <1>6 to $f$. There is $c\in(a,b)$ such that
+::: pf-proof
+
+Apply step [](#s6){.pf-ref} to $f$. There is $c\in(a,b)$ such that
 $$
 f(b)-f(a)
 =
@@ -273,11 +348,17 @@ The hypothesis gives $f'(c)=0$, hence
 $$
 f(b)-f(a)=0.
 $$
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

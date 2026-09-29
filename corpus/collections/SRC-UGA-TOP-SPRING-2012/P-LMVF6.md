@@ -29,8 +29,15 @@ Prove that any finite tree is contractible, where a **tree** is a connected grap
 :::
 
 ::: {.solution}
-<1>1. If a finite tree \(T\) has at least one edge, then \(T\) has a vertex of degree \(1\).
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If a finite tree \(T\) has at least one edge, then \(T\) has a vertex of degree \(1\).
+
+::: pf-proof
+
 Choose a simple edge path
 \[
 v_0,e_1,v_1,\dots,e_m,v_m
@@ -48,13 +55,20 @@ Thus the only edge incident to \(v_m\) is \(e_m\), so
 \[
 \deg(v_m)=1.
 \]
+
 :::
 
-<1>2. Let \(v\) be a degree-\(1\) vertex of \(T\), let \(e\) be its unique incident edge, and let \(w\) be the other endpoint of \(e\). Removing \(v\) and the open edge \(e\) leaves a finite tree
+:::
+
+::: {.pf-step #s2}
+
+Let \(v\) be a degree-\(1\) vertex of \(T\), let \(e\) be its unique incident edge, and let \(w\) be the other endpoint of \(e\). Removing \(v\) and the open edge \(e\) leaves a finite tree
 \[
 T'=T\setminus(\{v\}\cup e^\circ).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The graph \(T'\) is finite.
 It contains no closed edge cycle, since any such cycle would already be a cycle in \(T\).
 
@@ -62,10 +76,17 @@ It remains to prove connectedness.
 Let \(x,y\) be vertices of \(T'\). Since \(T\) is connected, there is an edge path from \(x\) to \(y\). Delete loops from this path until it is simple.
 A simple path joining two vertices different from \(v\) cannot pass through \(v\): if it did, the degree-\(1\) vertex \(v\) would have to be an interior vertex of the path and hence would need two distinct incident path edges.
 Therefore the simple path lies entirely in \(T'\). Thus \(T'\) is connected and hence is again a tree.
+
 :::
 
-<1>3. The tree \(T\) strongly deformation retracts onto \(T'\).
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The tree \(T\) strongly deformation retracts onto \(T'\).
+
+::: pf-proof
+
 Identify the closed edge \(e\) with the interval \([0,1]\) so that
 \[
 w\leftrightarrow0,
@@ -84,17 +105,30 @@ On the common point \(w\), both formulas give \(w\), so the two definitions past
 At \(t=0\), \(H\) is the identity.
 At \(t=1\), the entire edge \(e\) has collapsed to \(w\), and every point of \(T'\) has remained fixed throughout.
 Hence \(H\) is a strong deformation retraction of \(T\) onto \(T'\).
+
 :::
 
-<1>4. Every finite tree is contractible.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every finite tree is contractible.
+
+::: pf-proof
+
 Induct on the number \(m\) of edges.
 
 If \(m=0\), connectedness implies that the graph consists of a single vertex, so it is a point and is contractible.
 
 Assume every finite tree with fewer than \(m\) edges is contractible, and let \(T\) have \(m\ge1\) edges.
-By <1>1 choose a leaf \(v\), and form \(T'\) as in <1>2. Then \(T'\) is a finite tree with \(m-1\) edges, so by the induction hypothesis \(T'\) is contractible.
-By <1>3, \(T\) deformation retracts onto \(T'\). A space that deformation retracts onto a contractible subspace is contractible: compose the deformation retraction with a contraction of \(T'\) to a point.
+By step [](#s1){.pf-ref} choose a leaf \(v\), and form \(T'\) as in step [](#s2){.pf-ref}. Then \(T'\) is a finite tree with \(m-1\) edges, so by the induction hypothesis \(T'\) is contractible.
+By step [](#s3){.pf-ref}, \(T\) deformation retracts onto \(T'\). A space that deformation retracts onto a contractible subspace is contractible: compose the deformation retraction with a contraction of \(T'\) to a point.
 Therefore \(T\) is contractible.
+
 :::
+
+:::
+
+:::
+
 :::

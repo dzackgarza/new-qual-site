@@ -43,19 +43,36 @@ extends continuously to the unit circle, but cannot be analytically continued pa
 ::: {.solution}
 Throughout, a dyadic point is $e^{i\theta}$ with $\theta = 2\pi p / 2^k$, $p,k$ positive integers; dyadic points are dense in $C$. The set of regular points of a function on $\mathbb D$ is open in $C$, so if it contains no dyadic point, it is empty.
 
-<1>1. (1a) $f(z)=\sum_{n\ge0} z^{2^n}$ cannot be continued analytically past $C$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+(1a) $f(z)=\sum_{n\ge0} z^{2^n}$ cannot be continued analytically past $C$.
+
+::: pf-proof
+
 Let $\theta = 2\pi p / 2^k$. For $n \ge k$, $2^n\theta$ is a multiple of $2\pi$, so $(re^{i\theta})^{2^n} = r^{2^n}$ and
 $$f(re^{i\theta}) = \sum_{n=0}^{k-1} (re^{i\theta})^{2^n} + \sum_{n=k}^{\infty} r^{2^n}.$$
 Each term of the second sum tends to $1$ as $r\to1^-$, and the terms are nonnegative, so the second sum tends to $\infty$; hence $\abs{f(re^{i\theta})}\to\infty$. A function regular at a boundary point is bounded near it, so no dyadic point is regular, and no point of $C$ is regular.
+
 :::
 
-<1>2. (1b) $f(z)=\sum_{n\ge0} 2^{-n\alpha} z^{2^n}$ extends continuously to $\overline{\mathbb D}$ and cannot be continued analytically past $C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+(1b) $f(z)=\sum_{n\ge0} 2^{-n\alpha} z^{2^n}$ extends continuously to $\overline{\mathbb D}$ and cannot be continued analytically past $C$.
+
+::: pf-proof
+
 Since $\sum 2^{-n\alpha} < \infty$, the Weierstrass $M$-test shows that the series converges uniformly on $\overline{\mathbb D}$, so $f$ extends continuously. Suppose a dyadic point $e^{i\theta}$, $\theta = 2\pi p/2^k$, were regular. Then $f$ agrees near $e^{i\theta}$ with a function analytic on a neighborhood of $e^{i\theta}$, so for every $m$ the derivative $\frac{d^m}{dr^m}f(re^{i\theta})=e^{im\theta}f^{(m)}(re^{i\theta})$ stays bounded as $r\to1^-$. But $f(re^{i\theta})=P(r)+\sum_{n\ge k}2^{-n\alpha}r^{2^n}$ with $P$ a polynomial, and for an integer $m\ge\alpha$,
 $$\frac{d^m}{dr^m}\sum_{n\ge k}2^{-n\alpha}r^{2^n}\ge\sum_{n\ge n_0}2^{-n\alpha}\bigl(2^{n-1}\bigr)^m r^{2^n-m},$$
 where $n_0\ge k$ is chosen with $2^{n_0}\ge2m$, so that $2^n(2^n-1)\cdots(2^n-m+1)\ge(2^{n-1})^m$. As $r\to1^-$ the right side tends to $2^{-m}\sum_{n\ge n_0}2^{n(m-\alpha)}=\infty$. Hence no dyadic point is regular, and no point of $C$ is regular.
+
 :::
+
+:::
+
+:::
+
 :::

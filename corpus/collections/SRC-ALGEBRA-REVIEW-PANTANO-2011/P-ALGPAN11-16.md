@@ -39,27 +39,47 @@ III. For every such homomorphism, there is an integer $k$ such that the homomorp
 ::: {.solution}
 All three assertions are true, so the answer is $\boxed{\text{(E)}}$.
 
-<1>1. Complex conjugation is an endomorphism of $G$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Complex conjugation is an endomorphism of $G$.
+
+::: pf-proof
+
 For $z,w\in G$,
 \[
 \overline{zw}=\bar z\,\bar w,
 \]
 and conjugation preserves $G$.
 Thus $z\mapsto\bar z$ is a homomorphism; on this group it is also $z\mapsto z^{-1}=z^3$.
+
 :::
 
-<1>2. Squaring is an endomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+Squaring is an endomorphism.
+
+::: pf-proof
+
 The group $G$ is abelian, so
 \[
 (zw)^2=z^2w^2.
 \]
 Hence $z\mapsto z^2$ is a homomorphism $G\to G$.
+
 :::
 
-<1>3. Every endomorphism has the form $z\mapsto z^k$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every endomorphism has the form $z\mapsto z^k$.
+
+::: pf-proof
+
 $G=\langle i\rangle\cong C_4$.
 An endomorphism is determined by the image of $i$, and that image may be any element $i^k$ of $G$.
 The resulting homomorphism satisfies
@@ -67,5 +87,11 @@ The resulting homomorphism satisfies
 \varphi(i^m)=i^{km}=(i^m)^k,
 \]
 so $\varphi(z)=z^k$ for all $z\in G$.
+
 :::
+
+:::
+
+:::
+
 :::

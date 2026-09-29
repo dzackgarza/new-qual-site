@@ -34,37 +34,63 @@ $T(X) = \frac{1}{2}(X - X^T)$.
 :::
 
 ::: {.solution}
-<1>1. The map \(T\) is linear.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The map \(T\) is linear.
+
+::: pf-proof
+
 For \(X,Y\in M_n(\mathbb R)\) and \(a,b\in\mathbb R\),
 \[
 T(aX+bY)
 =\frac12\bigl(aX+bY-(aX+bY)^T\bigr)
 =aT(X)+bT(Y).
 \]
+
 :::
 
-<1>2. The null space of \(T\) is the space of symmetric matrices:
+:::
+
+::: pf-step
+
+The null space of \(T\) is the space of symmetric matrices:
 \[
 \ker T=\{X\in M_n(\mathbb R):X^T=X\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 One has \(T(X)=0\) iff \(X-X^T=0\), equivalently \(X=X^T\).
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \dim\ker T=\frac{n(n+1)}2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 A symmetric \(n\times n\) matrix is determined by its \(n\) diagonal entries and its
 \(\binom n2\) entries above the diagonal. Thus
 \[
 \dim\ker T=n+\binom n2=\frac{n(n+1)}2.
 \]
+
 :::
 
-<1>4. For \(M_3(\mathbb R)\), order the standard basis as
+:::
+
+::: {.pf-step #s4}
+
+For \(M_3(\mathbb R)\), order the standard basis as
 \[
 \mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
 \]
@@ -74,11 +100,18 @@ T(E_{ii})=0,
 \qquad
 T(E_{ij})=\frac12(E_{ij}-E_{ji})\quad(i\ne j).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since \(E_{ij}^T=E_{ji}\), the formula follows directly from the definition of \(T\).
+
 :::
 
-<1>5. Hence the matrix of \(T\) with respect to \(\mathcal B\) is
+:::
+
+::: pf-step
+
+Hence the matrix of \(T\) with respect to \(\mathcal B\) is
 \[
 [T]_{\mathcal B}=
 \frac12
@@ -94,8 +127,16 @@ Since \(E_{ij}^T=E_{ji}\), the formula follows directly from the definition of \
 0&0&0&0&0&0&0&0&0
 \end{pmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The \(j\)-th column is the coordinate vector of \(T\) applied to the \(j\)-th basis
-element. Using <1>4 gives the displayed columns immediately.
+element. Using step [](#s4){.pf-ref} gives the displayed columns immediately.
+
 :::
+
+:::
+
+:::
+
 :::

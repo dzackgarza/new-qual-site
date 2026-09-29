@@ -35,30 +35,47 @@ Prove that
 :::
 
 ::: {.solution}
-<1>1. For every $\varepsilon>0$, there exists $A>0$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $\varepsilon>0$, there exists $A>0$ such that
 $$
 \int_A^\infty f(x)\,dx<\frac{\varepsilon}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $f\ge0$ and
 $$
 \int_0^\infty f(x)\,dx<\infty,
 $$
 the tails of this improper integral tend to $0$.
+
 :::
 
-<1>2. For the number $A$ from step <1>1, put
+:::
+
+::: pf-step
+
+For the number $A$ from step [](#s1){.pf-ref}, put
 $$
 C\coloneqq\int_0^A x f(x)\,dx.
 $$
 Then $C$ is finite.
 
-::: {.proof}
+::: pf-proof
+
 The function $x\mapsto xf(x)$ is continuous on the compact interval $[0,A]$, so its integral there is finite.
+
 :::
 
-<1>3. If $n\ge A$, then
+:::
+
+::: {.pf-step #s3}
+
+If $n\ge A$, then
 $$
 0\le
 \frac1n\int_0^n xf(x)\,dx
@@ -66,7 +83,8 @@ $$
 \frac Cn+\int_A^\infty f(x)\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f\ge0$,
 $$
 \begin{aligned}
@@ -84,21 +102,27 @@ $$
 \le
 \int_A^\infty f(x)\,dx.
 $$
+
 :::
 
-<1>4. For all sufficiently large $n$,
+:::
+
+::: {.pf-step #s4}
+
+For all sufficiently large $n$,
 $$
 0\le
 \frac1n\int_0^n xf(x)\,dx
 <\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose $n\ge A$ so large that
 $$
 \frac Cn<\frac{\varepsilon}{2}.
 $$
-Then steps <1>1 and <1>3 give
+Then steps [](#s1){.pf-ref} and [](#s3){.pf-ref} give
 $$
 0\le
 \frac1n\int_0^n xf(x)\,dx
@@ -106,20 +130,32 @@ $$
 \frac{\varepsilon}{2}+\frac{\varepsilon}{2}
 =\varepsilon.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{\lim_{n\to\infty}\frac1n\int_0^n xf(x)\,dx=0}.
 $$
 
-::: {.proof}
-Step <1>4 is the $\varepsilon$-criterion for convergence to $0$.
+::: pf-proof
+
+Step [](#s4){.pf-ref} is the $\varepsilon$-criterion for convergence to $0$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

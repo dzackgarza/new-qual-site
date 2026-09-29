@@ -31,14 +31,20 @@ Prove or disprove the statement: Every function $f \colon  { \mathbb { R } } \to
 :::
 
 ::: {.solution}
-<1>1. There exists an additive function $f:\RR\to\RR$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+There exists an additive function $f:\RR\to\RR$ such that
 $$
 f(1)=1
 \qquad\text{and}\qquad
 f(\pi)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\pi$ is irrational, the set $\{1,\pi\}$ is linearly
 independent over $\QQ$. Extend it to a basis $B$ of $\RR$ as a
 $\QQ$-vector space. Define a function on the basis by
@@ -56,11 +62,17 @@ $$
 f(x+y)=f(x)+f(y)
 $$
 for all $x,y\in\RR$.
+
 :::
 
-<1>2. The function $f$ from step <1>1 is not continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $f$ from step [](#s1){.pf-ref} is not continuous.
+
+::: pf-proof
+
 For every $q\in\QQ$,
 $$
 f(q)=qf(1)=q.
@@ -78,19 +90,31 @@ x.
 $$
 Thus continuity would force $f(x)=x$ for every $x\in\RR$. In
 particular it would give $f(\pi)=\pi$, contradicting
-$f(\pi)=0$ from step <1>1.
+$f(\pi)=0$ from step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The statement in the problem is false.
-
-::: {.proof}
-Step <1>1 constructs an additive function $\RR\to\RR$, and step
-<1>2 shows that it is discontinuous.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #s3}
 
-::: {.proof}
-Step <1>3 gives the required counterexample.
+The statement in the problem is false.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} constructs an additive function $\RR\to\RR$, and step
+[](#s2){.pf-ref} shows that it is discontinuous.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required counterexample.
+
+:::
+
+:::
+
 :::

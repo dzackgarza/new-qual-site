@@ -31,8 +31,15 @@ Show that the restriction $p: \tilde{A} \to A$ is a covering space.
 :::
 
 ::: {.solution}
-<1>1. Fix $a\in A$ and choose an evenly covered open neighborhood $U\subseteq X$ of $a$ for the covering $p:\widetilde X\to X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix $a\in A$ and choose an evenly covered open neighborhood $U\subseteq X$ of $a$ for the covering $p:\widetilde X\to X$.
+
+::: pf-proof
+
 Since $p$ is a covering map, there is an open set $U\ni a$ and pairwise disjoint open subsets $V_\lambda\subseteq\widetilde X$ such that
 \[
 p^{-1}(U)=\coprod_{\lambda\in\Lambda}V_\lambda
@@ -42,24 +49,38 @@ and each restriction
 p|_{V_\lambda}:V_\lambda\longrightarrow U
 \]
 is a homeomorphism.
+
 :::
 
-<1>2. The set
+:::
+
+::: {.pf-step #s2}
+
+The set
 \[
 U_A=U\cap A
 \]
 is an open neighborhood of $a$ in the subspace $A$.
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of the subspace topology.
+
 :::
 
-<1>3. Its inverse image under the restricted map is
+:::
+
+::: {.pf-step #s3}
+
+Its inverse image under the restricted map is
 \[
 p^{-1}(U_A)\cap\widetilde A
 =
 \coprod_{\lambda\in\Lambda}(V_\lambda\cap\widetilde A).
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \widetilde A=p^{-1}(A).
@@ -73,14 +94,21 @@ p^{-1}(U_A)
 \]
 Intersecting preserves the disjointness of the sheets, giving the displayed decomposition.
 Each $V_\lambda\cap\widetilde A$ is open in the subspace $\widetilde A$.
+
 :::
 
-<1>4. For every $\lambda$, the restriction
+:::
+
+::: {.pf-step #s4}
+
+For every $\lambda$, the restriction
 \[
 p:V_\lambda\cap\widetilde A\longrightarrow U_A
 \]
 is a homeomorphism.
-::: {.proof}
+
+::: pf-proof
+
 The homeomorphism
 \[
 p|_{V_\lambda}:V_\lambda\to U
@@ -90,14 +118,27 @@ But that inverse image is exactly
 \[
 V_\lambda\cap p^{-1}(A)=V_\lambda\cap\widetilde A.
 \]
+
 :::
 
-<1>5. Therefore every point of $A$ has an evenly covered neighborhood for
+:::
+
+::: pf-step
+
+Therefore every point of $A$ has an evenly covered neighborhood for
 \[
 p|_{\widetilde A}:\widetilde A\to A,
 \]
 so this restriction is a covering map.
-::: {.proof}
-The point $a$ in <1>1 was arbitrary, and <1>2--<1>4 verify the covering-space definition over $U_A$.
+
+::: pf-proof
+
+The point $a$ in step [](#s1){.pf-ref} was arbitrary, and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} verify the covering-space definition over $U_A$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -53,9 +53,15 @@ allows both needed normalizations.
 :::
 
 ::: {.solution}
-<1>1. The derivative supremum is a finite nonnegative real number.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The derivative supremum is a finite nonnegative real number.
+
+::: pf-proof
+
 The zero function belongs to $\mathcal F$. Choose $r>0$
 with $\overline{D(P,r)}\subset U$. Cauchy's derivative
 formula and $|f|\leq1$ on that circle give
@@ -64,11 +70,17 @@ $$
 $$
 [@SS03]. Thus $0\leq S\leq1/r<\infty$. This bound
 also applies to every nonempty subfamily, proving (a).
+
 :::
 
-<1>2. A maximizing sequence can have real nonnegative derivatives and vanish off the component of $P$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A maximizing sequence can have real nonnegative derivatives and vanish off the component of $P$.
+
+::: pf-proof
+
 Let $V$ be the connected component of $U$ containing $P$.
 It is open, and $U\setminus V$ is open as a union of
 the other components. For each $n\geq1$, choose
@@ -83,11 +95,17 @@ $$
 h_n'(P)=|g_n'(P)|\longrightarrow S.
 $$
 This construction also covers $S=0$.
+
 :::
 
-<1>3. A subsequence has the required limit on all of $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+A subsequence has the required limit on all of $U$.
+
+::: pf-proof
+
 The restrictions $h_n|_V$ are uniformly bounded by one.
 Montel's theorem gives a subsequence $h_{n_j}$ converging
 uniformly on compact subsets of $V$ to a holomorphic $h$
@@ -108,7 +126,13 @@ $$
 |h_{n_j}'(P)-f_0'(P)|
 \leq\frac1r\sup_{|z-P|=r}|h_{n_j}(z)-f_0(z)|\longrightarrow0.
 $$
-Step <1>2 now yields $f_0'(P)=S$. Relabeling this
+Step [](#s2){.pf-ref} now yields $f_0'(P)=S$. Relabeling this
 subsequence as $(f_j)$ proves (b).
+
 :::
+
+:::
+
+:::
+
 :::

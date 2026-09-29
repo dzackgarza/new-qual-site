@@ -28,10 +28,16 @@ What is its centre?
 Identify $\PSL_2(\FF_3)$ as a permutation group.
 :::
 
-
 ::: {.solution}
-<1>1. The group $\operatorname{SL}_2(\FF_3)$ has order $24$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The group $\operatorname{SL}_2(\FF_3)$ has order $24$.
+
+::: pf-proof
+
 First
 \[
 |\operatorname{GL}_2(\FF_3)|=(3^2-1)(3^2-3)=8\cdot6=48.
@@ -44,13 +50,20 @@ is surjective, and $|\FF_3^\times|=2$. Its kernel is $\operatorname{SL}_2(\FF_3)
 \[
 |\operatorname{SL}_2(\FF_3)|=48/2=24.
 \]
+
 :::
 
-<1>2. The center of $\operatorname{SL}_2(\FF_3)$ is
+:::
+
+::: {.pf-step #s2}
+
+The center of $\operatorname{SL}_2(\FF_3)$ is
 \[
 Z(\operatorname{SL}_2(\FF_3))=\{I,-I\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 A=\begin{pmatrix}a&b\\c&d\end{pmatrix}
@@ -66,37 +79,64 @@ in $\operatorname{SL}_2(\FF_3)$. From $AU=UA$ one gets $c=0$ and $a=d$; from $AL
 a^2=1
 \]
 in $\FF_3$, so $a=\pm1$. Hence the center is exactly $\{\pm I\}$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 \[
 |\operatorname{PSL}_2(\FF_3)|=12.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 \operatorname{PSL}_2(\FF_3)=\operatorname{SL}_2(\FF_3)/\{\pm I\}.
 \]
-Use <1>1 and <1>2.
+Use steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The natural action on the projective line $\PP^1(\FF_3)$ gives an embedding
+:::
+
+::: {.pf-step #s4}
+
+The natural action on the projective line $\PP^1(\FF_3)$ gives an embedding
 \[
 \operatorname{PSL}_2(\FF_3)\hookrightarrow S_4.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The projective line has
 \[
 |\PP^1(\FF_3)|=3+1=4
 \]
-points. The group $\operatorname{SL}_2(\FF_3)$ acts on one-dimensional subspaces of $\FF_3^2$. The kernel consists exactly of scalar matrices, hence of $\{\pm I\}$ by <1>2. Thus the induced action of $\operatorname{PSL}_2(\FF_3)$ is faithful.
+points. The group $\operatorname{SL}_2(\FF_3)$ acts on one-dimensional subspaces of $\FF_3^2$. The kernel consists exactly of scalar matrices, hence of $\{\pm I\}$ by step [](#s2){.pf-ref}. Thus the induced action of $\operatorname{PSL}_2(\FF_3)$ is faithful.
+
 :::
 
-<1>5. Under this action,
+:::
+
+::: pf-step
+
+Under this action,
 \[
 \operatorname{PSL}_2(\FF_3)\cong A_4.
 \]
-::: {.proof}
-By <1>3--<1>4, the image is a subgroup of $S_4$ of order $12$, hence of index $2$. Any index-$2$ subgroup is the kernel of a surjective homomorphism $S_4\to C_2$; the unique such subgroup is $A_4$. Therefore the image is $A_4$.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the image is a subgroup of $S_4$ of order $12$, hence of index $2$. Any index-$2$ subgroup is the kernel of a surjective homomorphism $S_4\to C_2$; the unique such subgroup is $A_4$. Therefore the image is $A_4$.
+
 :::
+
+:::
+
+:::
+
 :::

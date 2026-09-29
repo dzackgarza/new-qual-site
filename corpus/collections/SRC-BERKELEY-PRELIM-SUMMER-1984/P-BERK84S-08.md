@@ -31,15 +31,20 @@ $$
 $$
 :::
 
-
 ::: {.solution}
 Set
 \[
 I_\lambda=\int_1^2 e^{i\lambda x}\varphi(x)\,dx.
 \]
 
-<1>1. Integrating by parts once removes one power of $\lambda$ without a boundary term.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Integrating by parts once removes one power of $\lambda$ without a boundary term.
+
+::: pf-proof
+
 Since
 \[
 \frac{d}{dx}e^{i\lambda x}=i\lambda e^{i\lambda x},
@@ -55,10 +60,17 @@ Because $\varphi(1)=\varphi(2)=0$, the boundary term vanishes, so
 I_\lambda
 =-\frac1{i\lambda}\int_1^2 e^{i\lambda x}\varphi'(x)\,dx.
 \]
+
 :::
 
-<1>2. A second integration by parts gives a factor $\lambda^{-2}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+A second integration by parts gives a factor $\lambda^{-2}$.
+
+::: pf-proof
+
 Using also $\varphi'(1)=\varphi'(2)=0$,
 \[
 \int_1^2 e^{i\lambda x}\varphi'(x)\,dx
@@ -70,10 +82,17 @@ I_\lambda
 =\frac1{(i\lambda)^2}\int_1^2 e^{i\lambda x}\varphi''(x)\,dx
 =-\frac1{\lambda^2}\int_1^2 e^{i\lambda x}\varphi''(x)\,dx.
 \]
+
 :::
 
-<1>3. The desired estimate follows with a constant independent of $\lambda$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The desired estimate follows with a constant independent of $\lambda$.
+
+::: pf-proof
+
 Taking absolute values and using $|e^{i\lambda x}|=1$ gives
 \[
 |I_\lambda|
@@ -90,5 +109,11 @@ we obtain for every $\lambda>1$
 \le \frac{C}{\lambda^2}.
 }
 \]
+
 :::
+
+:::
+
+:::
+
 :::

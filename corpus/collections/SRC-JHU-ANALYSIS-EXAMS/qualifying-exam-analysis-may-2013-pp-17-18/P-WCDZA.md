@@ -38,8 +38,15 @@ $$(f * h)(x) = \int_{\mathbb{R}^d} f(x - y) h(y) \, dy.$$
 :::
 
 ::: {.solution}
-<1>1. Prove the Riemann--Lebesgue lemma for $C_c^1$ functions.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the Riemann--Lebesgue lemma for $C_c^1$ functions.
+
+::: pf-proof
+
 Let $\varphi\in C_c^1(\mathbb R^d)$. For $\xi\ne0$, choose an index $j$ such that
 \[
 |\xi_j|\ge \frac{|\xi|}{\sqrt d}.
@@ -62,10 +69,17 @@ Hence
 \widehat\varphi(\xi)\to0
 \qquad(|\xi|\to\infty).
 \]
+
 :::
 
-<1>2. Extend the result to every $f\in L^1(\mathbb R^d)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extend the result to every $f\in L^1(\mathbb R^d)$.
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Since $C_c^1(\mathbb R^d)$ is dense in $L^1(\mathbb R^d)$, choose $\varphi\in C_c^1$ such that
 \[
 \|f-\varphi\|_1<\varepsilon.
@@ -83,10 +97,17 @@ for all sufficiently large $|\xi|$. Since $\varepsilon$ is arbitrary,
 \[
 \boxed{\widehat f(\xi)\to0\quad\text{as }|\xi|\to\infty.}
 \]
+
 :::
 
-<1>3. Show that no $L^1$ convolution identity exists.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that no $L^1$ convolution identity exists.
+
+::: pf-proof
+
 Suppose $h\in L^1(\mathbb R^d)$ satisfied
 \[
 f*h=f
@@ -113,5 +134,11 @@ But Step 2 applied to $h\in L^1$ gives
 \qquad(|\xi|\to\infty),
 \]
 a contradiction. Therefore no such $h\in L^1(\mathbb R^d)$ exists.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -59,8 +59,14 @@ p|_{V_\alpha}:V_\alpha\to U
 \]
 is a homeomorphism.
 
-<1>1. The quotient map $q:\mathbb R\to\mathbb R/\mathbb Z$ is a covering map.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The quotient map $q:\mathbb R\to\mathbb R/\mathbb Z$ is a covering map.
+
+::: pf-proof
+
 Fix $[x]\in\mathbb R/\mathbb Z$ and set
 \[
 I=(x-1/4,x+1/4),
@@ -84,10 +90,17 @@ q|_{I+k}:I+k\to U
 \]
 is a homeomorphism for every $k$.
 Hence $U$ is evenly covered.
+
 :::
 
-<1>2. The map $p_n:S^1\to S^1$, $p_n(z)=z^n$, is a covering map.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $p_n:S^1\to S^1$, $p_n(z)=z^n$, is a covering map.
+
+::: pf-proof
+
 Fix $e^{i\theta}\in S^1$.
 Choose $0<\varepsilon<\pi$ and let
 \[
@@ -118,10 +131,17 @@ p_n|_{V_j}:V_j\to U
 \]
 is a homeomorphism.
 Thus $p_n$ is an $n$-sheeted covering.
+
 :::
 
-<1>3. A finite product of covering maps is a covering map.
-::: {.proof}
+:::
+
+::: pf-step
+
+A finite product of covering maps is a covering map.
+
+::: pf-proof
+
 It suffices to prove the assertion for two factors; induction then gives every finite product.
 
 Let
@@ -154,14 +174,21 @@ and on each component
 \]
 which is a homeomorphism onto $U_1\times U_2$.
 
-Taking the $n$-fold product of the covering $\mathbb R\to\mathbb R/\mathbb Z$ from <1>1 gives
+Taking the $n$-fold product of the covering $\mathbb R\to\mathbb R/\mathbb Z$ from step [](#s1){.pf-ref} gives
 \[
 \mathbb R^n\to(\mathbb R/\mathbb Z)^n.
 \]
+
 :::
 
-<1>4. The antipodal quotient $q:S^n\to\mathbb{RP}^n$ is a covering map.
-::: {.proof}
+:::
+
+::: pf-step
+
+The antipodal quotient $q:S^n\to\mathbb{RP}^n$ is a covering map.
+
+::: pf-proof
+
 Fix a point $[x]\in\mathbb{RP}^n$, represented by a unit vector $x\in S^n$.
 Define
 \[
@@ -194,5 +221,11 @@ Thus $U$ is evenly covered and
 S^n\to\mathbb{RP}^n
 \]
 is a two-sheeted covering.
+
 :::
+
+:::
+
+:::
+
 :::

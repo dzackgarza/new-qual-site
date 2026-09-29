@@ -59,7 +59,11 @@ $$
 Since $N$ is finitely generated and numerical equivalence has no torsion,
 $N$ is a lattice in the finite-dimensional real vector space $N_\RR$.
 
-<1>1. The intersection form is negative definite on
+::: pf
+
+::: {.pf-step #s1}
+
+The intersection form is negative definite on
 $$
 H^\perp=\{v\in N_\RR:v\cdot H=0\},
 $$
@@ -68,7 +72,8 @@ $$
 N_\RR=\RR H\oplus H^\perp.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The Hodge index theorem [[T-SRFHODGE]] says that every nonzero class in
 $H^\perp$ has negative square. Thus the restriction of the intersection form
 to $H^\perp$ is negative definite. Since $H^2>0$ by the Nakai--Moishezon
@@ -79,9 +84,14 @@ v=\frac{v\cdot H}{H^2}H+
 \left(v-\frac{v\cdot H}{H^2}H\right).
 $$
 The second summand is orthogonal to $H$.
+
 :::
 
-<1>2. Put
+:::
+
+::: {.pf-step #s2}
+
+Put
 $$
 K_X=\frac{K_X\cdot H}{H^2}H+z,
 \qquad z\in H^\perp,
@@ -102,7 +112,8 @@ $$
 2+\frac{h^2+h(K_X\cdot H)}{H^2}+\|z\|\,\|y\|.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Adjunction gives
 $$
 2p_a(C)-2=C^2+K_X\cdot C.
@@ -111,7 +122,7 @@ Since $C$ is an integral projective curve, $p_a(C)\geq0$, hence
 $$
 C^2+K_X\cdot C\geq-2.
 $$
-Using the orthogonal decompositions in step <1>2,
+Using the orthogonal decompositions in step [](#s2){.pf-ref},
 $$
 C^2=\frac{h^2}{H^2}-\|y\|^2
 $$
@@ -136,26 +147,32 @@ $$
 z\cdot y\leq|z\cdot y|\leq\|z\|\,\|y\|.
 $$
 Substitution proves the displayed estimate.
+
 :::
 
-<1>3. For each integer $d\geq1$, the numerical classes of irreducible curves
+:::
+
+::: {.pf-step #s3}
+
+For each integer $d\geq1$, the numerical classes of irreducible curves
 $C$ satisfying
 $$
 1\leq C\cdot H\leq d
 $$
 form a finite set.
 
-::: {.proof}
+::: pf-proof
+
 For such a curve, the integer
 $$
 h=C\cdot H
 $$
-belongs to the finite set $\{1,\ldots,d\}$. In step <1>2 the quantity
+belongs to the finite set $\{1,\ldots,d\}$. In step [](#s2){.pf-ref} the quantity
 $$
 A_h=2+\frac{h^2+h(K_X\cdot H)}{H^2}
 $$
 therefore ranges over a finite set of real numbers. If $t=\|y\|$, the estimate
-of step <1>2 is
+of step [](#s2){.pf-ref} is
 $$
 t^2-\|z\|t\leq A_h.
 $$
@@ -168,12 +185,18 @@ Its coefficient $h/H^2$ in the $H$-direction is also bounded because
 $1\leq h\leq d$. Thus all these classes lie in a bounded subset of $N_\RR$.
 The lattice $N\subseteq N_\RR$ is discrete, so a bounded subset contains only
 finitely many lattice points. This proves the claim.
+
 :::
 
-<1>4. If $d<0$, there is no effective divisor $D$ with $D\cdot H=d$; if
+:::
+
+::: {.pf-step #s4}
+
+If $d<0$, there is no effective divisor $D$ with $D\cdot H=d$; if
 $d=0$, the only such effective divisor is $D=0$.
 
-::: {.proof}
+::: pf-proof
+
 Write a nonzero effective divisor as
 $$
 D=\sum_i n_iC_i,
@@ -189,17 +212,23 @@ $$
 D\cdot H=\sum_i n_i(H\cdot C_i)>0.
 $$
 The assertions follow.
+
 :::
 
-<1>5. For every integer $d>0$, only finitely many numerical classes of
+:::
+
+::: {.pf-step #s5}
+
+For every integer $d>0$, only finitely many numerical classes of
 effective divisors satisfy $D\cdot H=d$.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 D=\sum_i n_iC_i
 $$
-as in step <1>4. Then
+as in step [](#s4){.pf-ref}. Then
 $$
 d=D\cdot H=\sum_i n_i(C_i\cdot H).
 $$
@@ -207,24 +236,30 @@ Consequently every component satisfies
 $$
 1\leq C_i\cdot H\leq d,
 $$
-so by step <1>3 its numerical class belongs to a fixed finite set $S_d$.
+so by step [](#s3){.pf-ref} its numerical class belongs to a fixed finite set $S_d$.
 Moreover,
 $$
 \sum_i n_i\leq d
 $$
 because every $C_i\cdot H$ is at least one. Hence $[D]$ is a sum of at most
 $d$ elements of the finite set $S_d$, counted with repetition. There are only
-finitely many such sums in the abelian group $N$. Together with step <1>4,
+finitely many such sums in the abelian group $N$. Together with step [](#s4){.pf-ref},
 this proves part (a) for every integer $d$.
+
 :::
 
-<1>6. Let $C$ have genus $g\geq2$, let $X=C\times C$, and let
+:::
+
+::: {.pf-step #s6}
+
+Let $C$ have genus $g\geq2$, let $X=C\times C$, and let
 $\Gamma_\sigma$ be the graph of an automorphism $\sigma$ of $C$. Then
 $$
 \Gamma_\sigma^2=\Delta^2=2-2g<0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The graph embedding has normal bundle $\sigma^*T_C$: for a graph of a morphism
 $u:C\to C$, the normal sequence identifies the quotient of
 $T_C\oplus u^*T_C$ by the graph of $du$ with $u^*T_C$. Since $\sigma$ is an
@@ -235,9 +270,14 @@ $$
 The self-intersection of a smooth curve on a smooth surface is the degree of
 its normal bundle. Thus $\Gamma_\sigma^2=2-2g$. The equality
 $\Delta^2=2-2g$ is Exercise V.1.6, [[P-AGH516DIAGONAL]].
+
 :::
 
-<1>7. If
+:::
+
+::: {.pf-step #s7}
+
+If
 $$
 \Gamma_\sigma\equiv\Delta,
 $$
@@ -247,7 +287,8 @@ $$
 $$
 and therefore $\sigma=\id_C$.
 
-::: {.proof}
+::: pf-proof
+
 Numerical equivalence would give
 $$
 \Gamma_\sigma\cdot\Delta=\Delta^2=2-2g<0.
@@ -260,11 +301,17 @@ $$
 $$
 Equality of the two graphs means $\sigma(P)=P$ for every $P$, so
 $\sigma=\id_C$.
+
 :::
 
-<1>8. Distinct automorphisms of $C$ have numerically inequivalent graphs.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+Distinct automorphisms of $C$ have numerically inequivalent graphs.
+
+::: pf-proof
+
 Suppose
 $$
 \Gamma_\sigma\equiv\Gamma_\tau.
@@ -279,10 +326,15 @@ $\Gamma_{\tau^{-1}\circ\sigma}$. Hence
 $$
 \Gamma_{\tau^{-1}\circ\sigma}\equiv\Delta.
 $$
-Step <1>7 gives $\tau^{-1}\circ\sigma=\id_C$, so $\sigma=\tau$.
+Step [](#s7){.pf-ref} gives $\tau^{-1}\circ\sigma=\id_C$, so $\sigma=\tau$.
+
 :::
 
-<1>9. Every graph $\Gamma_\sigma$ has
+:::
+
+::: {.pf-step #s9}
+
+Every graph $\Gamma_\sigma$ has
 $$
 \Gamma_\sigma\cdot(l+m)=2,
 $$
@@ -293,7 +345,8 @@ l=C\times\{P\},
 m=\{P\}\times C.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The graph of an automorphism meets $m$ once because fixing its first coordinate
 determines a unique point of the graph. It meets $l$ once because
 $\sigma^{-1}(P)$ is a single point and an automorphism has degree one. Thus
@@ -305,29 +358,41 @@ $$
 $$
 Exercise V.1.9, [[P-AGH519HODGEINDEX]], proves that $l+m$ is ample. The
 displayed equality follows.
+
 :::
 
-<1>10. The automorphism group of $C$ is finite:
+:::
+
+::: {.pf-step #s10}
+
+The automorphism group of $C$ is finite:
 $$
 \boxed{|\Aut C|<\infty}.
 $$
 
-::: {.proof}
-By step <1>9, all graph divisors are effective and have fixed intersection
+::: pf-proof
+
+By step [](#s9){.pf-ref}, all graph divisors are effective and have fixed intersection
 degree two with the ample divisor $l+m$. Part (a), proved in steps
-<1>1--<1>5, says that only finitely many numerical equivalence classes of such
-effective divisors exist. Step <1>8 says the map
+[](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}, says that only finitely many numerical equivalence classes of such
+effective divisors exist. Step [](#s8){.pf-ref} says the map
 $$
 \Aut C\longrightarrow\Num(C\times C),
 \qquad
 \sigma\longmapsto[\Gamma_\sigma]
 $$
 is injective. Hence $\Aut C$ is finite, proving part (b).
+
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 prove part (a), and steps <1>6--<1>10 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a), and steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

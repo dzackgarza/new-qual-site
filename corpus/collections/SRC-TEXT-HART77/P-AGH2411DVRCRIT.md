@@ -45,8 +45,14 @@ Let
 \]
 be a noetherian local domain with fraction field $K$, and let $L/K$ be finitely generated.
 
-<1>1. In the exceptional case $\mathfrak m=0$ and $L/K$ finite algebraic, no DVR of $L$ dominates $\OO=K$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+In the exceptional case $\mathfrak m=0$ and $L/K$ finite algebraic, no DVR of $L$ dominates $\OO=K$.
+
+::: pf-proof
+
 Suppose $R\subseteq L$ is a valuation ring containing $K$ and with
 \[
 \mathfrak m_R\cap K=(0).
@@ -63,10 +69,17 @@ If $v(\alpha)>0$, the term $c_0$ has strictly smaller value than every other ter
 v(\alpha)=0.
 \]
 Thus the valuation is trivial on all of $L$, so $R=L$ is a field rather than a DVR.
+
 :::
 
-<1>2. Apart from the exceptional case of <1>1, it is enough to prove part (a) when $L/K$ is finite and $\mathfrak m\ne0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Apart from the exceptional case of step [](#s1){.pf-ref}, it is enough to prove part (a) when $L/K$ is finite and $\mathfrak m\ne0$.
+
+::: pf-proof
+
 Choose a transcendence basis
 \[
 t_1,\ldots,t_r
@@ -77,7 +90,7 @@ L/K(t_1,\ldots,t_r)
 \]
 is finite.
 
-If $r=0$, then $L/K$ is already finite.  Since we have excluded <1>1, $\mathfrak m\ne0$.
+If $r=0$, then $L/K$ is already finite.  Since we have excluded step [](#s1){.pf-ref}, $\mathfrak m\ne0$.
 
 If $r>0$, put
 \[
@@ -99,14 +112,21 @@ and its maximal ideal $\mathfrak n\OO_1$ is nonzero.  Moreover $\OO_1$ dominates
 \]
 
 If a DVR of $L$ dominates $\OO_1$, it also dominates $\OO$.  Thus replacing $(\OO,K)$ by $(\OO_1,K(t_1,\ldots,t_r))$ reduces to a finite extension and a nonzero maximal ideal.
+
 :::
 
-<1>3. Assume now that $L/K$ is finite and $\mathfrak m\ne0$.  Choose generators
+:::
+
+::: {.pf-step #s3}
+
+Assume now that $L/K$ is finite and $\mathfrak m\ne0$.  Choose generators
 \[
 \mathfrak m=(x_1,\ldots,x_n)
 \]
 and reorder them so that for some valuation ring $V$ of $K$ dominating $\OO$, the value of $x_1$ is minimal among the values of the $x_i$.
-::: {.proof}
+
+::: pf-proof
+
 The maximal ideal is finitely generated because $\OO$ is noetherian.
 
 Hartshorne I.6.1A says that every local subring of a field is dominated by a valuation ring of that field.  Hence there is a valuation ring
@@ -116,9 +136,14 @@ V\subseteq K
 dominating $\OO$.
 
 All $x_i$ lie in the maximal ideal of $V$, so their values are positive.  Among the finite set of values choose a minimum and relabel the corresponding generator as $x_1$.
+
 :::
 
-<1>4. Put
+:::
+
+::: {.pf-step #s4}
+
+Put
 \[
 \OO'
 =
@@ -130,7 +155,9 @@ Then the ideal
 \mathfrak a=(x_1)\subseteq\OO'
 \]
 is proper.
-::: {.proof}
+
+::: pf-proof
+
 By minimality of $v(x_1)$,
 \[
 v(x_i/x_1)\ge0
@@ -145,14 +172,21 @@ Because $V$ dominates $\OO$ and $x_1\in\mathfrak m$, one has
 x_1\in\mathfrak m_V.
 \]
 If $(x_1)=\OO'$, then $x_1$ would be a unit of $\OO'$, hence a unit of $V$, contradiction.  Thus $(x_1)$ is not the unit ideal.
+
 :::
 
-<1>5. Let $\mathfrak p$ be a prime ideal minimal over $(x_1)$ in $\OO'$.  Then
+:::
+
+::: {.pf-step #s5}
+
+Let $\mathfrak p$ be a prime ideal minimal over $(x_1)$ in $\OO'$.  Then
 \[
 \OO'_{\mathfrak p}
 \]
 is a one-dimensional noetherian local domain which dominates $\OO$ and has fraction field $K$.
-::: {.proof}
+
+::: pf-proof
+
 The ring $\OO'$ is a finitely generated $\OO$-algebra, hence noetherian, and it is a subring of the field $K$, hence a domain.
 
 Krull's principal ideal theorem gives
@@ -189,24 +223,38 @@ Hence the local inclusion
 is a domination.
 
 Finally $\OO'$ lies between $\OO$ and its fraction field $K$, so its fraction field, and that of its localization, is $K$.
+
 :::
 
-<1>6. Let
+:::
+
+::: {.pf-step #s6}
+
+Let
 \[
 C
 \]
 be the integral closure of $\OO'_{\mathfrak p}$ in the finite extension field $L/K$.  Then $C$ is a noetherian one-dimensional domain.
-::: {.proof}
+
+::: pf-proof
+
 The ring $\OO'_{\mathfrak p}$ is a one-dimensional noetherian domain.  The Krull--Akizuki theorem says that its integral closure in any finite extension of its fraction field is a noetherian domain of dimension one.
 Thus $C$ has the asserted properties.
+
 :::
 
-<1>7. Choose a maximal ideal $\mathfrak q\subseteq C$ lying over the maximal ideal of $\OO'_{\mathfrak p}$ and put
+:::
+
+::: {.pf-step #s7}
+
+Choose a maximal ideal $\mathfrak q\subseteq C$ lying over the maximal ideal of $\OO'_{\mathfrak p}$ and put
 \[
 R=C_{\mathfrak q}.
 \]
 Then $R$ is a DVR of $L$ dominating $\OO$.
-::: {.proof}
+
+::: pf-proof
+
 The extension
 \[
 \OO'_{\mathfrak p}\subseteq C
@@ -215,25 +263,46 @@ is integral, so lying over provides a prime $\mathfrak q$ over the maximal ideal
 
 The localization $R=C_{\mathfrak q}$ is a noetherian local domain of dimension one.  It is integrally closed because $C$ is integrally closed and localization preserves integral closedness.  Hence Hartshorne I.6.2A implies that $R$ is a discrete valuation ring.
 
-Its fraction field is $L$, and the contraction of its maximal ideal to $\OO'_{\mathfrak p}$ is the maximal ideal there.  Thus $R$ dominates $\OO'_{\mathfrak p}$, which by <1>5 dominates $\OO$.  Therefore $R$ dominates $\OO$.
+Its fraction field is $L$, and the contraction of its maximal ideal to $\OO'_{\mathfrak p}$ is the maximal ideal there.  Thus $R$ dominates $\OO'_{\mathfrak p}$, which by step [](#s5){.pf-ref} dominates $\OO$.  Therefore $R$ dominates $\OO$.
+
 :::
 
-<1>8. This proves the corrected statement of part (a).
-::: {.proof}
-Step <1>2 reduces to the finite-extension, nonfield case; steps <1>3--<1>7 construct the required DVR.  Step <1>1 records the unique excluded case in the source statement.
 :::
 
-<1>9. Now let
+::: {.pf-step #s8}
+
+This proves the corrected statement of part (a).
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} reduces to the finite-extension, nonfield case; steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} construct the required DVR.  Step [](#s1){.pf-ref} records the unique excluded case in the source statement.
+
+:::
+
+:::
+
+::: {.pf-step #s9}
+
+Now let
 \[
 f:X\longrightarrow Y
 \]
 be of finite type with $X$ and $Y$ noetherian.  If $f$ is separated, then every DVR-valuative diagram has at most one lift; if $f$ is proper, every such diagram has exactly one lift.
-::: {.proof}
+
+::: pf-proof
+
 These are immediate special cases of Hartshorne II.4.3 and II.4.7, whose valuative criteria are stated for arbitrary valuation rings.
+
 :::
 
-<1>10. Conversely, suppose every DVR-valuative diagram for $f$ has at most one lift.  Then $f$ is separated.
-::: {.proof}
+:::
+
+::: {.pf-step #s10}
+
+Conversely, suppose every DVR-valuative diagram for $f$ has at most one lift.  Then $f$ is separated.
+
+::: pf-proof
+
 Consider the diagonal
 \[
 \Delta_f:X\longrightarrow X\times_YX.
@@ -277,15 +346,29 @@ At the generic point these agree because $\xi$ lies on the diagonal.  They are m
 If $u_1=u_2$, the whole morphism $\Spec R\to X\times_YX$ would factor through the diagonal, so its closed point $z$ would lie in $\Delta_f(X)$, contradiction.  Thus the same DVR-valuative diagram has two distinct lifts, contrary to hypothesis.
 
 Hence the image of the diagonal is closed.  An immersion with closed image is a closed immersion, so $f$ is separated.
+
 :::
 
-<1>11. Suppose every DVR-valuative diagram for $f$ has a unique lift.  Then $f$ is separated.
-::: {.proof}
-Uniqueness in particular gives the ``at most one'' condition.  Apply <1>10.
 :::
 
-<1>12. Under the hypothesis of <1>11, the morphism $f$ is universally closed.
-::: {.proof}
+::: {.pf-step #s11}
+
+Suppose every DVR-valuative diagram for $f$ has a unique lift.  Then $f$ is separated.
+
+::: pf-proof
+
+Uniqueness in particular gives the ``at most one'' condition.  Apply step [](#s10){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s12}
+
+Under the hypothesis of step [](#s11){.pf-ref}, the morphism $f$ is universally closed.
+
+::: pf-proof
+
 Because $Y$ is noetherian and $f$ is of finite type, $f$ is of finite presentation.  In checking universal closedness, the standard noetherian-approximation step in the proof of the valuative criterion reduces arbitrary base changes to base changes
 \[
 Y'\longrightarrow Y
@@ -360,14 +443,26 @@ y\notin p(Z).
 \]
 
 Thus every such base change is closed, and the noetherian-approximation reduction gives universal closedness.
+
 :::
 
-<1>13. Under the hypothesis of <1>11, the morphism $f$ is proper.
-::: {.proof}
-The morphism is of finite type by assumption, separated by <1>11, and universally closed by <1>12.  These are exactly the defining conditions for properness.
 :::
 
-<1>14. Hence for finite-type morphisms of noetherian schemes,
+::: {.pf-step #s13}
+
+Under the hypothesis of step [](#s11){.pf-ref}, the morphism $f$ is proper.
+
+::: pf-proof
+
+The morphism is of finite type by assumption, separated by step [](#s11){.pf-ref}, and universally closed by step [](#s12){.pf-ref}.  These are exactly the defining conditions for properness.
+
+:::
+
+:::
+
+::: {.pf-step #s14}
+
+Hence for finite-type morphisms of noetherian schemes,
 \[
 \boxed{
 f\text{ separated}
@@ -383,14 +478,23 @@ f\text{ proper}
 \text{the valuative criterion has exactly one lift for every DVR}.
 }
 \]
-::: {.proof}
-The forward implications are <1>9.  The converse separatedness implication is <1>10, and the converse properness implication is <1>11--<1>13.
+
+::: pf-proof
+
+The forward implications are step [](#s9){.pf-ref}.  The converse separatedness implication is step [](#s10){.pf-ref}, and the converse properness implication is steps [](#s11){.pf-ref}, [](#s12){.pf-ref} and [](#s13){.pf-ref}.
+
 :::
 
-<1>15. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>8 prove the corrected form of part (a), and steps <1>9--<1>14 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove the corrected form of part (a), and steps [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Erratum"}

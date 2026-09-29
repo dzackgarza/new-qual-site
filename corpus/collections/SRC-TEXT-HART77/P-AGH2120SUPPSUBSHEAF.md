@@ -47,8 +47,14 @@ For every open $V\subseteq X$, put
 \{s\in\mathcal F(V):\operatorname{supp}s\subseteq Z\cap V\}.
 \]
 
-<1>1. Restriction of sections makes $\mathcal H$ a subpresheaf of $\mathcal F$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Restriction of sections makes $\mathcal H$ a subpresheaf of $\mathcal F$.
+
+::: pf-proof
+
 Let $W\subseteq V$ and let
 \[
 s\in\mathcal H(V).
@@ -66,10 +72,17 @@ so
 s|_W\in\mathcal H(W).
 \]
 Thus the restriction maps of $\mathcal F$ restrict to maps for $\mathcal H$.
+
 :::
 
-<1>2. The presheaf $\mathcal H$ satisfies the sheaf uniqueness axiom.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The presheaf $\mathcal H$ satisfies the sheaf uniqueness axiom.
+
+::: pf-proof
+
 Let
 \[
 V=\bigcup_iV_i
@@ -82,10 +95,17 @@ have equal restrictions to every $V_i$.  They are also sections of the sheaf $\m
 \[
 s=t.
 \]
+
 :::
 
-<1>3. The presheaf $\mathcal H$ satisfies the sheaf gluing axiom.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The presheaf $\mathcal H$ satisfies the sheaf gluing axiom.
+
+::: pf-proof
+
 Let
 \[
 V=\bigcup_iV_i
@@ -124,17 +144,29 @@ so
 s_P=(s_i)_P=0.
 \]
 Thus no point of $V\setminus Z$ belongs to the support of $s$, proving the required containment.
+
 :::
 
-<1>4. Hence $\mathcal H$ is a sheaf, denoted
+:::
+
+::: {.pf-step #s4}
+
+Hence $\mathcal H$ is a sheaf, denoted
 \[
 \boxed{\mathcal H_Z^0(\mathcal F).}
 \]
-::: {.proof}
-Step <1>1 gives the presheaf structure, and <1>2--<1>3 give the two sheaf axioms.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives the presheaf structure, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the two sheaf axioms.
+
 :::
 
-<1>5. Let
+:::
+
+::: {.pf-step #s5}
+
+Let
 \[
 U=X\setminus Z,
 \qquad
@@ -152,7 +184,9 @@ On an open set $V\subseteq X$, it is
 \qquad
 s\longmapsto s|_{V\cap U}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $U$ is open,
 \[
 (j_*(\mathcal F|_U))(V)
@@ -160,13 +194,20 @@ Since $U$ is open,
 =\mathcal F(V\cap U).
 \]
 The ordinary restriction maps of $\mathcal F$ therefore define the displayed morphism, and compatibility with further restrictions is automatic.
+
 :::
 
-<1>6. For every open $V\subseteq X$,
+:::
+
+::: {.pf-step #s6}
+
+For every open $V\subseteq X$,
 \[
 \boxed{\ker\rho_V=\mathcal H_Z^0(\mathcal F)(V).}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Suppose first that
 \[
 s\in\ker\rho_V.
@@ -201,9 +242,14 @@ is zero.  A section of a sheaf whose germs are all zero is itself zero: each poi
 s|_{V\cap U}=0,
 \]
 so $s\in\ker\rho_V$.
+
 :::
 
-<1>7. Therefore there is an exact sequence of sheaves
+:::
+
+::: {.pf-step #s7}
+
+Therefore there is an exact sequence of sheaves
 \[
 \boxed{
 0
@@ -215,17 +261,26 @@ so $s\in\ker\rho_V$.
 j_*(\mathcal F|_U).
 }
 \]
-::: {.proof}
-The first map is the inclusion of the subsheaf from <1>4.  Step <1>6 identifies its image on every open set with the kernel of $\rho$.  Hence the sequence is exact at the first two nonzero terms; equivalently, it is exact as a sequence of sheaves.
+
+::: pf-proof
+
+The first map is the inclusion of the subsheaf from step [](#s4){.pf-ref}.  Step [](#s6){.pf-ref} identifies its image on every open set with the kernel of $\rho$.  Hence the sequence is exact at the first two nonzero terms; equivalently, it is exact as a sequence of sheaves.
+
 :::
 
-<1>8. If $\mathcal F$ is flasque, then
+:::
+
+::: {.pf-step #s8}
+
+If $\mathcal F$ is flasque, then
 \[
 \rho:\mathcal F\longrightarrow j_*(\mathcal F|_U)
 \]
 is surjective.
-::: {.proof}
-Let $V\subseteq X$ be open.  The restriction map occurring in <1>5 is
+
+::: pf-proof
+
+Let $V\subseteq X$ be open.  The restriction map occurring in step [](#s5){.pf-ref} is
 \[
 \mathcal F(V)
 \longrightarrow
@@ -238,9 +293,14 @@ V\cap U\subseteq V
 and $\mathcal F$ is flasque, this map is surjective.
 
 Thus $\rho$ is in fact surjective on sections over every open $V$, and therefore certainly surjective as a morphism of sheaves.
+
 :::
 
-<1>9. In the flasque case the sequence of <1>7 extends to a short exact sequence
+:::
+
+::: {.pf-step #s9}
+
+In the flasque case the sequence of step [](#s7){.pf-ref} extends to a short exact sequence
 \[
 \boxed{
 0
@@ -253,12 +313,21 @@ j_*(\mathcal F|_U)
 \longrightarrow0.
 }
 \]
-::: {.proof}
-Combine exactness from <1>7 with the surjectivity in <1>8.
+
+::: pf-proof
+
+Combine exactness from step [](#s7){.pf-ref} with the surjectivity in step [](#s8){.pf-ref}.
+
 :::
 
-<1>10. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), <1>5--<1>7 prove the exact sequence in part (b), and <1>8--<1>9 prove its surjectivity assertion for flasque $\mathcal F$.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove the exact sequence in part (b), and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} prove its surjectivity assertion for flasque $\mathcal F$.
+
+:::
+
+:::
+
 :::

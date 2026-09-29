@@ -40,18 +40,32 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Differentiate the convolution in $x$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Differentiate the convolution in $x$.
+
+::: pf-proof
+
 Because $f$ has compact support and $\varphi'\in C_c(\mathbb R)$, differentiation under the integral is justified by dominated convergence. Thus for every $x$,
 \[
 \frac d{dx}(\varphi*f)(x)
 =\int_{\mathbb R}\varphi'(x-y)f(y)\,dy
 =(\varphi'*f)(x).
 \]
+
 :::
 
-<1>2. Move the derivative from $\varphi$ to $f$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Move the derivative from $\varphi$ to $f$.
+
+::: pf-proof
+
 Since
 \[
 \frac d{dy}\varphi(x-y)=-\varphi'(x-y),
@@ -68,10 +82,17 @@ There is no boundary term because both factors have compact support. Hence
 \[
 \boxed{\varphi'*f=\varphi*f'.}
 \]
+
 :::
 
-<1>3. Approximate $f$ by smooth compactly supported functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Approximate $f$ by smooth compactly supported functions.
+
+::: pf-proof
+
 Let $\rho\in C_c^\infty(\mathbb R)$ be nonnegative with
 \[
 \int_{\mathbb R}\rho=1,
@@ -114,5 +135,11 @@ Choosing any sequence $\varepsilon_n\downarrow0$ and setting $f_n=f_{\varepsilon
 \qquad
 \|f_n'-f'\|_1\to0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

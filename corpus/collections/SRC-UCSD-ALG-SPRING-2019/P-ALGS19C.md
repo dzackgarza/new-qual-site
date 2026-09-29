@@ -35,65 +35,146 @@ Prove that $N^n = 0$.
 Hint: Prove that $N^n \equiv 0 \pmod{\mathfrak{p}}$ for any $\mathfrak{p} \in \operatorname{Spec}(A)$.
 :::
 
-
 ::: {.solution}
-<1>1. For each prime ideal \(\mathfrak p\subseteq A\), let \(\overline N\) be the image of \(N\) in \(M_n(A/\mathfrak p)\). Then \(\overline N\) is nilpotent.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+For each prime ideal \(\mathfrak p\subseteq A\), let \(\overline N\) be the image of \(N\) in \(M_n(A/\mathfrak p)\). Then \(\overline N\) is nilpotent.
+
+::: pf-proof
+
 If \(N^r=0\), reducing the entries modulo \(\mathfrak p\) gives \(\overline N^{\,r}=0\).
+
 :::
 
-<1>2. For every prime ideal \(\mathfrak p\), one has \(\overline N^{\,n}=0\).
-::: {.proof}
+:::
+
+::: {.pf-step #p1-s2}
+
+For every prime ideal \(\mathfrak p\), one has \(\overline N^{\,n}=0\).
+
+::: pf-proof
+
 Because \(\mathfrak p\) is prime, \(A/\mathfrak p\) is an integral domain. Let \(K=\operatorname{Frac}(A/\mathfrak p)\). Viewing \(\overline N\) as a matrix in \(M_n(K)\), its minimal polynomial divides \(t^r\) for some \(r\), so every invariant factor is a power of \(t\); hence its characteristic polynomial is \(t^n\). By the Cayley--Hamilton theorem, \(\overline N^{\,n}=0\) in \(M_n(K)\). Since \(A/\mathfrak p\hookrightarrow K\) is injective, the same equality holds already in \(M_n(A/\mathfrak p)\).
+
 :::
 
-<1>3. Every entry of \(N^n\) lies in every prime ideal of \(A\).
-::: {.proof}
-By <1>2, the reduction of \(N^n\) modulo each \(\mathfrak p\in\operatorname{Spec}(A)\) is the zero matrix. Therefore each entry of \(N^n\) belongs to \(\mathfrak p\) for every prime ideal \(\mathfrak p\).
 :::
 
-<1>4. The intersection of all prime ideals of \(A\) is the nilradical of \(A\).
-::: {.proof}
+::: {.pf-step #p1-s3}
+
+Every entry of \(N^n\) lies in every prime ideal of \(A\).
+
+::: pf-proof
+
+By step [](#p1-s2){.pf-ref}, the reduction of \(N^n\) modulo each \(\mathfrak p\in\operatorname{Spec}(A)\) is the zero matrix. Therefore each entry of \(N^n\) belongs to \(\mathfrak p\) for every prime ideal \(\mathfrak p\).
+
+:::
+
+:::
+
+::: {.pf-step #p1-s4}
+
+The intersection of all prime ideals of \(A\) is the nilradical of \(A\).
+
+::: pf-proof
+
 Every nilpotent element belongs to every prime ideal. Conversely, suppose \(a\in A\) is not nilpotent. Then the multiplicative set \(S=\{1,a,a^2,\ldots\}\) does not contain \(0\). By Zorn's lemma, there is an ideal maximal among ideals disjoint from \(S\); the usual maximal-disjointness argument shows that this ideal is prime. It is disjoint from \(S\), so in particular it does not contain \(a\). Thus an element lying in every prime ideal must be nilpotent.
+
 :::
 
-<1>5. Since \(A\) has no nonzero nilpotent elements, \(N^n=0\).
-::: {.proof}
-By hypothesis \(A\) is reduced, so its nilradical is \(0\). By <1>3 and <1>4, every entry of \(N^n\) is therefore zero. Hence \(N^n\) is the zero matrix.
 :::
+
+::: pf-step
+
+Since \(A\) has no nonzero nilpotent elements, \(N^n=0\).
+
+::: pf-proof
+
+By hypothesis \(A\) is reduced, so its nilradical is \(0\). By steps [](#p1-s3){.pf-ref} and [](#p1-s4){.pf-ref}, every entry of \(N^n\) is therefore zero. Hence \(N^n\) is the zero matrix.
+
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution}
-<1>1. Fix a prime ideal \(\mathfrak p\subseteq A\), and let \(\overline N\) be the image of \(N\) in \(M_n(A/\mathfrak p)\). Then \(\overline N\) is nilpotent.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Fix a prime ideal \(\mathfrak p\subseteq A\), and let \(\overline N\) be the image of \(N\) in \(M_n(A/\mathfrak p)\). Then \(\overline N\) is nilpotent.
+
+::: pf-proof
+
 If \(N^m=0\), then reducing entries modulo \(\mathfrak p\) gives \(\overline N^{\,m}=0\).
+
 :::
 
-<1>2. Let \(K=\operatorname{Frac}(A/\mathfrak p)\). Viewed as an endomorphism of the \(n\)-dimensional \(K\)-vector space \(K^n\), the matrix \(\overline N\) satisfies \(\overline N^{\,n}=0\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Let \(K=\operatorname{Frac}(A/\mathfrak p)\). Viewed as an endomorphism of the \(n\)-dimensional \(K\)-vector space \(K^n\), the matrix \(\overline N\) satisfies \(\overline N^{\,n}=0\).
+
+::: pf-proof
+
 Because \(A/\mathfrak p\) is a domain, it embeds in its fraction field \(K\). Suppose a nilpotent endomorphism \(T\) of an \(n\)-dimensional vector space has nilpotency index \(m\), so \(T^m=0\) but \(T^{m-1}\ne0\). Choose \(v\) with \(T^{m-1}v\ne0\). Then
 \[
 v,Tv,\ldots,T^{m-1}v
 \]
 are linearly independent: if \(\sum_{i=0}^{m-1}a_iT^iv=0\) and \(j\) is the least index with \(a_j\ne0\), applying \(T^{m-1-j}\) leaves \(a_jT^{m-1}v=0\), contradiction. Thus \(m\le n\), and therefore \(T^n=0\). Apply this to \(T=\overline N\).
+
 :::
 
-<1>3. Hence every entry of \(N^n\) lies in \(\mathfrak p\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Hence every entry of \(N^n\) lies in \(\mathfrak p\).
+
+::: pf-proof
+
 The equality \(\overline N^{\,n}=0\) says exactly that the image modulo \(\mathfrak p\) of every entry of \(N^n\) is zero. Thus each entry belongs to \(\mathfrak p\).
+
 :::
 
-<1>4. Since \(\mathfrak p\) was arbitrary, every entry of \(N^n\) belongs to
+:::
+
+::: {.pf-step #p2-s4}
+
+Since \(\mathfrak p\) was arbitrary, every entry of \(N^n\) belongs to
 \[
 \bigcap_{\mathfrak p\in\operatorname{Spec}(A)}\mathfrak p.
 \]
 This intersection is the nilradical of \(A\), which is zero because \(A\) has no nonzero nilpotents.
-::: {.proof}
+
+::: pf-proof
+
 The nilradical of a commutative ring is the intersection of all prime ideals. By hypothesis \(A\) is reduced, so its nilradical is \(0\).
+
 :::
 
-<1>5. Therefore \(N^n=0\).
-::: {.proof}
-By <1>4 every entry of \(N^n\) is zero.
 :::
+
+::: pf-step
+
+Therefore \(N^n=0\).
+
+::: pf-proof
+
+By step [](#p2-s4){.pf-ref} every entry of \(N^n\) is zero.
+
+:::
+
+:::
+
+:::
+
 :::

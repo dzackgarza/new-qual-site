@@ -28,27 +28,93 @@ Show that $X$ is locally compact and locally metrizable.
 :::
 
 ::: {.solution}
-<1>1. Let $x\in X$. Since $X$ is locally $m$-euclidean, choose an open neighborhood $U$ of $x$ and a homeomorphism
+
+::: pf
+
+::: pf-step
+
+Let $x\in X$. Since $X$ is locally $m$-euclidean, choose an open neighborhood $U$ of $x$ and a homeomorphism
     $$\phi:U\to V,$$
     with $V\subset\mathbb R^m$ open.
 
-<1>2. Local compactness at $x$.
-    <2>1. In $\mathbb R^m$ there is $r>0$ with
+:::
+
+::: pf-step
+
+Local compactness at $x$.
+
+::: pf-proof
+
+::: pf-step
+
+In $\mathbb R^m$ there is $r>0$ with
     $$\overline{B_{V}( \phi(x),r)}\subset V,$$
     where $\overline{B_V}$ is closure in $\mathbb R^m$.
-    <2>2. Put
+
+:::
+
+::: pf-step
+
+Put
     $$K:=\phi^{-1}\!\left(\overline{B_{V}(\phi(x),r)}\right).$$
     Then $K\subset U$ and $K$ is compact because $\phi^{-1}$ is a homeomorphism $V\to U$ and closed balls in $\mathbb R^m$ are compact.
-    <2>3. Let
+
+:::
+
+::: pf-step
+
+Let
     $$W:=\phi^{-1}\!\left(B_V(\phi(x),r/2)\right).$$
     Since $B_V(\phi(x),r/2)$ is open in $V$, $W$ is open in $U$, hence open in $X$, and $x\in W\subset K$.
-    <2>4. $K$ is a compact neighborhood of $x$ in $X$, so $X$ is locally compact at $x$.
 
-<1>3. Local metrizability at $x$.
-    <2>1. Let $d_V$ be the Euclidean metric restricted to $V$.
-    <2>2. Define for $a,b\in U$
+:::
+
+::: pf-step
+
+$K$ is a compact neighborhood of $x$ in $X$, so $X$ is locally compact at $x$.
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+Local metrizability at $x$.
+
+::: pf-proof
+
+::: pf-step
+
+Let $d_V$ be the Euclidean metric restricted to $V$.
+
+:::
+
+::: pf-step
+
+Define for $a,b\in U$
     $$d_U(a,b):=d_V(\phi(a),\phi(b)).$$
     This is a metric on $U$ and generates the subspace topology because $\phi$ is a homeomorphism.
-    <2>3. Since $x\in U$, there is a metrizable neighborhood $U$ of $x$ in $X$.
-    <2>4. Therefore $X$ is locally metrizable.
+
+:::
+
+::: pf-step
+
+Since $x\in U$, there is a metrizable neighborhood $U$ of $x$ in $X$.
+
+:::
+
+::: pf-step
+
+Therefore $X$ is locally metrizable.
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::

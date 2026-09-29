@@ -29,17 +29,31 @@ Show that the center of a simple ring with identity element is a field.
 :::
 
 ::: {.solution}
-<1>1. The center $Z(R)$ is a commutative subring of $R$ containing $1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The center $Z(R)$ is a commutative subring of $R$ containing $1$.
+
+::: pf-proof
+
 By definition,
 \[
 Z(R)=\{z\in R:zr=rz\text{ for every }r\in R\}.
 \]
 It is closed under addition, subtraction, and multiplication, every two of its elements commute, and $1\in Z(R)$.
+
 :::
 
-<1>2. Every nonzero $z\in Z(R)$ is invertible in $R$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every nonzero $z\in Z(R)$ is invertible in $R$.
+
+::: pf-proof
+
 Because $z$ is central,
 \[
 RzR=zR=Rz
@@ -59,22 +73,42 @@ Centrality of $z$ gives
 wz=zw=1,
 \]
 so $w=z^{-1}$ in $R$.
+
 :::
 
-<1>3. The inverse $z^{-1}$ is again central.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The inverse $z^{-1}$ is again central.
+
+::: pf-proof
+
 Let $w=z^{-1}$ and let $r\in R$.
 Using $zw=wz=1$ and $zr=rz$,
 \[
 rw=(wz)rw=w(zr)w=w(rz)w=wr(zw)=wr.
 \]
 Thus $rw=wr$ for every $r\in R$, so $w\in Z(R)$.
+
 :::
 
-<1>4. Therefore $Z(R)$ is a field.
-::: {.proof}
-By <1>1, $Z(R)$ is a commutative ring with identity.
-By <1>2 and <1>3, every nonzero element of $Z(R)$ has its multiplicative inverse in $Z(R)$.
-Hence $Z(R)$ is a field.
 :::
+
+::: pf-step
+
+Therefore $Z(R)$ is a field.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $Z(R)$ is a commutative ring with identity.
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, every nonzero element of $Z(R)$ has its multiplicative inverse in $Z(R)$.
+Hence $Z(R)$ is a field.
+
+:::
+
+:::
+
+:::
+
 :::

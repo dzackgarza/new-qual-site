@@ -70,12 +70,17 @@ F'\circ V=[p]_X,
 \deg F'=\deg V=p.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \boxed{j(X_p)=j(X)^{1/p}.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a Weierstrass equation for $X$.  The twist $X_p$ of IV.2.4.1 is
 obtained by applying the inverse Frobenius automorphism of the algebraically
 closed field $k$ to its coefficients, that is, by replacing each coefficient
@@ -87,16 +92,22 @@ coefficients therefore applies inverse Frobenius to $j$ itself.  Hence
 $$
 j(X_p)=j(X)^{1/p}.
 $$
+
 :::
 
-<1>2. The curves $X$ and $X_p$ are isomorphic over $k$ if and only if
+:::
+
+::: {.pf-step #s2}
+
+The curves $X$ and $X_p$ are isomorphic over $k$ if and only if
 $$
 \boxed{j(X)\in\FF_p.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Over the algebraically closed field $k$, elliptic curves are isomorphic if
-and only if they have the same $j$-invariant.  By step <1>1,
+and only if they have the same $j$-invariant.  By step [](#s1){.pf-ref},
 $$
 X\cong X_p
 \iff
@@ -106,9 +117,14 @@ j(X)^p=j(X).
 $$
 The roots in $k$ of $t^p-t$ are exactly the elements of $\FF_p$.  This
 proves part (a).
+
 :::
 
-<1>3. If $X\cong X_p$, then $[p]_X$ factors in $R$ as
+:::
+
+::: {.pf-step #s3}
+
+If $X\cong X_p$, then $[p]_X$ factors in $R$ as
 $$
 \boxed{[p]_X=\pi\circ\widehat\pi}
 $$
@@ -117,7 +133,8 @@ $$
 \deg\pi=\deg\widehat\pi=p.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose an origin-preserving isomorphism
 $$
 \alpha:X\overset\sim\longrightarrow X_p
@@ -153,9 +170,14 @@ Exercise IV.4.7(f) gives
 $$
 \deg\widehat\pi=\deg\pi=p.
 $$
+
 :::
 
-<1>4. Conversely, if
+:::
+
+::: {.pf-step #s4}
+
+Conversely, if
 $$
 [p]_X=\pi\circ\widehat\pi
 $$
@@ -164,7 +186,8 @@ $$
 \boxed{X\cong X_p.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The differential of $[p]_X$ is multiplication by $p$, hence is zero in
 characteristic $p$.  Thus $[p]_X$ is inseparable.  If both $\pi$ and
 $\widehat\pi$ were separable, their composition would be separable.
@@ -180,10 +203,15 @@ $$
 X_p\longrightarrow X
 $$
 after an isomorphism of its source with $X_p$.  Hence $X\cong X_p$.
-Together with step <1>3 this proves the first assertion of part (b).
+Together with step [](#s3){.pf-ref} this proves the first assertion of part (b).
+
 :::
 
-<1>5. Assume $X\cong X_p$ and choose $\pi$ as in step <1>3.  Then
+:::
+
+::: {.pf-step #s5}
+
+Assume $X\cong X_p$ and choose $\pi$ as in step [](#s3){.pf-ref}.  Then
 $$
 \boxed{
 \Hasse(X)=0
@@ -192,12 +220,13 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The morphism
 $$
 \pi=F'\circ\alpha
 $$
-is purely inseparable of degree $p$.  Moreover step <1>3 gives
+is purely inseparable of degree $p$.  Moreover step [](#s3){.pf-ref} gives
 $$
 \widehat\pi=\alpha^{-1}\circ V.
 $$
@@ -243,14 +272,20 @@ V=\alpha\circ\widehat\pi
 $$
 is inseparable, and Exercise IV.4.15 gives $\Hasse(X)=0$.  This completes
 part (b).
+
 :::
 
-<1>6. If $\Hasse(X)=0$, then
+:::
+
+::: {.pf-step #s6}
+
+If $\Hasse(X)=0$, then
 $$
 \boxed{j(X)\in\FF_{p^2}.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 By Exercise IV.4.15, $\Hasse(X)=0$ means that
 $$
 V:X\longrightarrow X_p
@@ -261,7 +296,7 @@ isomorphic to the Frobenius twist of $X_p$:
 $$
 X\cong (X_p)_p=X_{p^2}.
 $$
-Applying step <1>1 twice gives
+Applying step [](#s1){.pf-ref} twice gives
 $$
 j(X_{p^2})=j(X)^{1/p^2}.
 $$
@@ -274,14 +309,20 @@ $$
 j(X)^{p^2}=j(X),
 $$
 whose solutions in $k$ are exactly $\FF_{p^2}$.  This proves part (c).
+
 :::
 
-<1>7. Every $f\in R$ commutes with the nonlinear Frobenius
+:::
+
+::: {.pf-step #s7}
+
+Every $f\in R$ commutes with the nonlinear Frobenius
 $$
 F:X\longrightarrow X.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The nonlinear Frobenius here is the absolute Frobenius: on the structure
 sheaf it sends a local function $a$ to $a^p$.  For every morphism of schemes
 $f:X\to X$ in characteristic $p$,
@@ -300,9 +341,14 @@ commutes, so
 $$
 f\circ F=F\circ f.
 $$
+
 :::
 
-<1>8. If $\Hasse(X)\ne0$, then for every $f\in R$ the scalar
+:::
+
+::: {.pf-step #s8}
+
+If $\Hasse(X)\ne0$, then for every $f\in R$ the scalar
 $\lambda_f$ defined by
 $$
 f^*:H^1(X,\OO_X)\longrightarrow H^1(X,\OO_X)
@@ -312,7 +358,8 @@ $$
 \boxed{\lambda_f\in\FF_p.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The vector space $H^1(X,\OO_X)$ is one-dimensional over $k$, while the
 absolute Frobenius induces a $p$-semilinear map
 $$
@@ -326,7 +373,7 @@ $$
 F^*(\xi)\ne0.
 $$
 
-Step <1>7 and contravariance of pullback give
+Step [](#s7){.pf-ref} and contravariance of pullback give
 $$
 F^*\circ f^*=f^*\circ F^*.
 $$
@@ -348,9 +395,14 @@ $$
 $$
 Thus $\lambda_f$ is a root of $t^p-t$, so
 $\lambda_f\in\FF_p$.
+
 :::
 
-<1>9. If $\Hasse(X)\ne0$, the image of
+:::
+
+::: {.pf-step #s9}
+
+If $\Hasse(X)\ne0$, the image of
 $$
 \varphi:R\longrightarrow k,
 \qquad
@@ -361,8 +413,9 @@ $$
 \boxed{\operatorname{im}\varphi=\FF_p.}
 $$
 
-::: {.proof}
-Step <1>8 gives
+::: pf-proof
+
+Step [](#s8){.pf-ref} gives
 $$
 \operatorname{im}\varphi\subseteq\FF_p.
 $$
@@ -382,9 +435,14 @@ $$
 $$
 As $m$ varies, these elements exhaust $\FF_p$.  Hence the inclusion is an
 equality.
+
 :::
 
-<1>10. If $\Hasse(X)\ne0$, the ideal
+:::
+
+::: {.pf-step #s10}
+
+If $\Hasse(X)\ne0$, the ideal
 $$
 \mfp=\ker\varphi
 $$
@@ -393,8 +451,9 @@ $$
 \boxed{R/\mfp\cong\FF_p.}
 $$
 
-::: {.proof}
-By step <1>9, $\varphi$ is a surjective ring homomorphism onto the field
+::: pf-proof
+
+By step [](#s9){.pf-ref}, $\varphi$ is a surjective ring homomorphism onto the field
 $\FF_p$.  The first isomorphism theorem gives
 $$
 R/\ker\varphi\cong\FF_p.
@@ -405,12 +464,18 @@ $$
 $$
 in the field $\FF_p$, so $\varphi(a)=0$ or $\varphi(b)=0$.  Hence
 $\ker\varphi$ is prime.  This proves part (d).
+
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), steps <1>3--<1>5 prove part (b), step
-<1>6 proves part (c), and steps <1>7--<1>10 prove part (d).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), step
+[](#s6){.pf-ref} proves part (c), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (d).
+
+:::
+
+:::
+
 :::

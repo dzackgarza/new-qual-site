@@ -34,10 +34,16 @@ Prove that
 (ii) $\phi$ is an element of $(\ell^\infty)^*$ which does not arise from an element of $\ell^1$.
 :::
 
-
 ::: {.solution}
-<1>1. Show that the Cesàro functionals lie in the dual unit ball.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that the Cesàro functionals lie in the dual unit ball.
+
+::: pf-proof
+
 For $x\in\ell^\infty$,
 \[
 |\phi_n(x)|
@@ -53,10 +59,17 @@ we have $\phi_n(\mathbf1)=1$, so in fact
 \[
 \|\phi_n\|=1.
 \]
+
 :::
 
-<1>2. Obtain a weak* cluster point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Obtain a weak* cluster point.
+
+::: pf-proof
+
 The sequence $(\phi_n)$ lies in the closed unit ball of $(\ell^\infty)^*$. By the Banach--Alaoglu theorem, this ball is compact in the weak* topology
 \[
 \sigma((\ell^\infty)^*,\ell^\infty).
@@ -74,10 +87,17 @@ Moreover,
 =1,
 \]
 so $\|\phi\|=1$.
+
 :::
 
-<1>3. Show that $\phi$ vanishes on $c_0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $\phi$ vanishes on $c_0$.
+
+::: pf-proof
+
 If $x=(x_k)\in c_0$, then $x_k\to0$. Cesàro convergence gives
 \[
 \phi_n(x)=\frac1n\sum_{k=1}^nx_k\longrightarrow0.
@@ -92,10 +112,17 @@ In particular, for the standard basis vector $e_j$,
 \phi(e_j)=0
 \qquad(j\ge1).
 \]
+
 :::
 
-<1>4. Rule out representation by an element of $\ell^1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rule out representation by an element of $\ell^1$.
+
+::: pf-proof
+
 Suppose that there were $a=(a_j)\in\ell^1$ such that
 \[
 \phi(x)=\sum_{j=1}^\infty a_jx_j
@@ -113,5 +140,11 @@ This contradiction shows that
 \[
 \boxed{\phi\text{ is not induced by any element of }\ell^1.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

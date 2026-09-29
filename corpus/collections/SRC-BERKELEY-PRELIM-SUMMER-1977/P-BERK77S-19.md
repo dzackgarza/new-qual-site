@@ -37,23 +37,35 @@ p\equiv1\pmod4.
 :::
 
 ::: {.solution}
-<1>1. A solution $x$ of
+
+::: pf
+
+::: pf-step
+
+A solution $x$ of
 $$
 x^2\equiv-1\pmod p
 $$
 represents a nonzero element of $\FF_p$.
 
-::: {.proof}
+::: pf-proof
+
 If $x\equiv0\pmod p$, then $x^2\equiv0\pmod p$, which cannot equal
 $-1$ modulo the prime $p$. Hence
 $$
 x\in\FF_p^\times.
 $$
+
 :::
 
-<1>2. The multiplicative order of $x$ in $\FF_p^\times$ is exactly $4$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The multiplicative order of $x$ in $\FF_p^\times$ is exactly $4$.
+
+::: pf-proof
+
 Squaring the congruence gives
 $$
 x^4\equiv1\pmod p,
@@ -64,37 +76,55 @@ $$
 x^2\equiv-1\not\equiv1\pmod p,
 $$
 where the inequality uses that $p$ is odd. Therefore the order is $4$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 4\mid(p-1).
 $$
 
-::: {.proof}
-The group $\FF_p^\times$ has order $p-1$. By step <1>2, it contains an
+::: pf-proof
+
+The group $\FF_p^\times$ has order $p-1$. By step [](#s2){.pf-ref}, it contains an
 element of order $4$. Lagrange's theorem implies that the order of an
 element divides the order of the finite group, so
 $$
 4\mid(p-1).
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 p\equiv1\pmod4.
 }
 $$
 
-::: {.proof}
-The divisibility statement in step <1>3 is equivalent to the displayed
+::: pf-proof
+
+The divisibility statement in step [](#s3){.pf-ref} is equivalent to the displayed
 congruence.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

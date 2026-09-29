@@ -30,9 +30,14 @@ G(z)\coloneqq z-e^{z-\lambda}.
 $$
 The equation in the problem is equivalent to $G(z)=0$.
 
-<1>1. The function $G$ has exactly one zero in the disk $\abs{z}<1$, counted with multiplicity.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The function $G$ has exactly one zero in the disk $\abs{z}<1$, counted with multiplicity.
+
+::: pf-proof
+
 On the circle $\abs{z}=1$,
 $$
 \abs{e^{z-\lambda}}
@@ -51,11 +56,17 @@ z
 z-e^{z-\lambda}=G(z)
 $$
 have the same number of zeros in $\abs{z}<1$, counted with multiplicity. The function $z$ has exactly one such zero, namely $0$ with multiplicity one. Therefore $G$ also has exactly one zero in the disk.
+
 :::
 
-<1>2. The equation $G(x)=0$ has a real solution $x\in(0,1)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The equation $G(x)=0$ has a real solution $x\in(0,1)$.
+
+::: pf-proof
+
 For real $x$,
 $$
 G(x)=x-e^{x-\lambda}
@@ -69,15 +80,21 @@ $$
 G(1)=1-e^{1-\lambda}>0,
 $$
 since $\lambda>1$. The intermediate value theorem therefore gives some $x\in(0,1)$ with $G(x)=0$.
+
 :::
 
-<1>3. The equation
+:::
+
+::: {.pf-step #s3}
+
+The equation
 $$
 ze^{\lambda-z}=1
 $$
 has exactly one root in $\abs{z}<1$, and that root is real.
 
-::: {.proof}
+::: pf-proof
+
 The equations
 $$
 ze^{\lambda-z}=1
@@ -86,12 +103,18 @@ z=e^{z-\lambda}
 \qquad\Longleftrightarrow\qquad
 G(z)=0
 $$
-are equivalent. Step <1>1 gives exactly one zero of $G$ in the disk, while step <1>2 exhibits a real zero there. Hence the unique root is real.
+are equivalent. Step [](#s1){.pf-ref} gives exactly one zero of $G$ in the disk, while step [](#s2){.pf-ref} exhibits a real zero there. Hence the unique root is real.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

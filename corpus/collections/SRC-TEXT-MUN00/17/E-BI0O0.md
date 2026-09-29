@@ -39,44 +39,73 @@ Justify your answer.
 ::: {.solution}
 Throughout, $\overline{X-A}=X-\operatorname{Int}A$, since $\operatorname{Int}A$ is the largest open set contained in $A$ and $\overline{X-A}$ is the smallest closed set containing $X-A$.
 
-<1>1. (a) $\operatorname{Int}A\cap\operatorname{Bd}A=\varnothing$ and $\overline A=\operatorname{Int}A\cup\operatorname{Bd}A$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+(a) $\operatorname{Int}A\cap\operatorname{Bd}A=\varnothing$ and $\overline A=\operatorname{Int}A\cup\operatorname{Bd}A$.
+
+::: pf-proof
+
 $\operatorname{Bd}A\subseteq\overline{X-A}=X-\operatorname{Int}A$, so $\operatorname{Bd}A$ misses $\operatorname{Int}A$.
 Since $\operatorname{Int}A\subseteq\overline A$,
 $$
 \overline A=\operatorname{Int}A\cup\bigl(\overline A\cap(X-\operatorname{Int}A)\bigr)=\operatorname{Int}A\cup\bigl(\overline A\cap\overline{X-A}\bigr)=\operatorname{Int}A\cup\operatorname{Bd}A.
 $$
+
 :::
 
-<1>2. (b) $\operatorname{Bd}A=\varnothing$ if and only if $A$ is both open and closed.
+:::
 
-::: {.proof}
-If $\operatorname{Bd}A=\varnothing$, step <1>1 gives $\overline A=\operatorname{Int}A$, so $A\subseteq\overline A=\operatorname{Int}A\subseteq A$.
+::: {.pf-step #s2}
+
+(b) $\operatorname{Bd}A=\varnothing$ if and only if $A$ is both open and closed.
+
+::: pf-proof
+
+If $\operatorname{Bd}A=\varnothing$, step [](#s1){.pf-ref} gives $\overline A=\operatorname{Int}A$, so $A\subseteq\overline A=\operatorname{Int}A\subseteq A$.
 Hence $A=\operatorname{Int}A$ is open and $A=\overline A$ is closed.
 Conversely, if $A$ is open and closed, then $\overline A=A$ and $\overline{X-A}=X-A$, so $\operatorname{Bd}A=A\cap(X-A)=\varnothing$.
+
 :::
 
-<1>3. (c) $U$ is open if and only if $\operatorname{Bd}U=\overline U-U$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+(c) $U$ is open if and only if $\operatorname{Bd}U=\overline U-U$.
+
+::: pf-proof
+
 Since $\overline{X-U}\supseteq X-U$ and $\overline U\cap(X-U)=\overline U-U$,
 $$
 \operatorname{Bd}U=(\overline U-U)\cup\bigl(\overline U\cap(\overline{X-U}-(X-U))\bigr).
 $$
 The set $\overline{X-U}-(X-U)$ is contained in $U\subseteq\overline U$, so the second term equals $\overline{X-U}-(X-U)$, which is disjoint from $\overline U-U$.
 Hence $\operatorname{Bd}U=\overline U-U$ if and only if $\overline{X-U}=X-U$, that is, if and only if $X-U$ is closed, that is, if and only if $U$ is open.
+
 :::
 
-<1>4. (d) An open set $U$ need not equal $\operatorname{Int}(\overline U)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+(d) An open set $U$ need not equal $\operatorname{Int}(\overline U)$.
+
+::: pf-proof
+
 In $\RR$, the open set $U=\RR-\{0\}$ has $\overline U=\RR$, so $\operatorname{Int}(\overline U)=\RR\ne U$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, <1>3, and <1>4 answer (a), (b), (c), and (d).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} answer (a), (b), (c), and (d).
+
+:::
+
+:::
+
 :::

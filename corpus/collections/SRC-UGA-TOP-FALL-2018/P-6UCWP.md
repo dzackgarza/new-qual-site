@@ -39,11 +39,17 @@ Can all surfaces with nonempty boundary and with this Euler characteristic be ob
 ::: {.solution}
 Assume that the identification $I\to J$ is by a homeomorphism, as usual in this construction.
 
-<1>1. The quotient surface has
+::: pf
+
+::: {.pf-step #s1}
+
+The quotient surface has
 \[
 \chi(S)=-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The cylinder has
 \[
 \chi(C)=0.
@@ -58,9 +64,14 @@ Therefore
 \[
 \chi(S)=\chi(C)-\chi(I)=0-1=-1.
 \]
+
 :::
 
-<1>2. Up to homeomorphism, the connected compact surfaces with nonempty boundary and Euler characteristic $-1$ are exactly
+:::
+
+::: {.pf-step #s2}
+
+Up to homeomorphism, the connected compact surfaces with nonempty boundary and Euler characteristic $-1$ are exactly
 \[
 \Sigma_{0,3},
 \qquad
@@ -71,7 +82,9 @@ N_{1,2},
 N_{2,1},
 \]
 where $\Sigma_{g,b}$ is orientable of genus $g$ with $b$ boundary components and $N_{k,b}$ is nonorientable of genus $k$ with $b$ boundary components.
-::: {.proof}
+
+::: pf-proof
+
 For an orientable connected compact surface,
 \[
 \chi(\Sigma_{g,b})=2-2g-b.
@@ -99,10 +112,17 @@ is equivalent to $k+b=3$, whose solutions are
 (k,b)=(1,2),(2,1).
 \]
 The classification theorem for compact connected surfaces gives the stated list.
+
 :::
 
-<1>3. All four connected surfaces in <1>2 occur by identifying two boundary intervals of a cylinder.
-::: {.proof}
+:::
+
+::: pf-step
+
+All four connected surfaces in step [](#s2){.pf-ref} occur by identifying two boundary intervals of a cylinder.
+
+::: pf-proof
+
 The cylinder has two boundary circles.
 There are two placement choices for the intervals and, for each placement, two inequivalent ways to glue the interval ends, corresponding to an untwisted or twisted seam.
 Tracing the boundary arcs after the identification gives the following possibilities:
@@ -123,7 +143,7 @@ The other boundary circle is unchanged.
 If the intervals lie on different boundary circles, the identification joins those two boundary circles into one, regardless of the twist.
 The untwisted seam preserves an orientation of the cylinder, while the twisted seam reverses it along the glued band and produces a one-sided closed curve, so the latter quotient is nonorientable.
 
-Together with <1>1 and the classification in <1>2, the four cases are therefore
+Together with step [](#s1){.pf-ref} and the classification in step [](#s2){.pf-ref}, the four cases are therefore
 \[
 \Sigma_{0,3},
 \qquad
@@ -135,10 +155,17 @@ N_{2,1},
 \]
 respectively.
 Thus every connected compact surface with nonempty boundary and Euler characteristic $-1$ occurs.
+
 :::
 
-<1>4. If the word ``surface'' is allowed to include disconnected surfaces, then not every such surface arises from the construction.
-::: {.proof}
+:::
+
+::: pf-step
+
+If the word ``surface'' is allowed to include disconnected surfaces, then not every such surface arises from the construction.
+
+::: pf-proof
+
 The cylinder $C$ is connected, and every quotient of a connected space is connected.
 Hence every surface obtained by identifying $I$ and $J$ is connected.
 On the other hand,
@@ -154,5 +181,11 @@ is a disconnected compact surface with nonempty boundary and
 \]
 It cannot be obtained as such a quotient.
 Therefore, under the standard convention that a surface is connected, the answer to the second question is yes; if disconnected surfaces are admitted, the answer is no.
+
 :::
+
+:::
+
+:::
+
 :::

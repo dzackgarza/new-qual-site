@@ -48,13 +48,18 @@ $$
 L(f)=f'''+f''-2f.
 $$
 
-<1>1. The set
+::: pf
+
+::: pf-step
+
+The set
 $$
 E=\ker L
 $$
 is a real vector space.
 
-::: {.proof}
+::: pf-proof
+
 The operator $L$ is linear. Thus if
 $$
 f,g\in E
@@ -68,9 +73,14 @@ aL(f)+bL(g)
 0.
 $$
 Hence $af+bg\in E$.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 \Phi:E\longrightarrow\RR^3,
 \qquad
@@ -78,7 +88,8 @@ $$
 $$
 is a linear isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 Linearity is immediate.
 
 For injectivity, if
@@ -109,21 +120,32 @@ f(0)=a,\qquad f'(0)=b,\qquad f''(0)=c.
 $$
 The coefficients of the equation are constant, so the solution is defined
 for every $t\in\RR$. Thus every element of $\RR^3$ lies in the image.
+
 :::
 
-<1>3. The vector space $E$ has dimension
+:::
+
+::: {.pf-step #s3}
+
+The vector space $E$ has dimension
 $$
 \boxed{3}.
 $$
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives
 $$
 E\cong\RR^3.
 $$
+
 :::
 
-<1>4. The characteristic polynomial of the differential equation factors
+:::
+
+::: {.pf-step #s4}
+
+The characteristic polynomial of the differential equation factors
 as
 $$
 r^3+r^2-2
@@ -133,7 +155,8 @@ r^3+r^2-2
 (r-1)\bigl((r+1)^2+1\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 (r-1)(r^2+2r+2)
@@ -141,9 +164,14 @@ $$
 r^3+r^2-2.
 $$
 Completing the square gives the second factorization.
+
 :::
 
-<1>5. The three functions
+:::
+
+::: {.pf-step #s5}
+
+The three functions
 $$
 u_1(t)=e^t,
 \qquad
@@ -153,8 +181,9 @@ u_3(t)=e^{-t}\sin t
 $$
 belong to $E$.
 
-::: {.proof}
-Step <1>4 gives the characteristic roots
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives the characteristic roots
 $$
 1,\qquad -1+i,\qquad -1-i.
 $$
@@ -164,11 +193,17 @@ $$
 L(u_j)=0
 $$
 for each $j$.
+
 :::
 
-<1>6. The functions $u_1,u_2,u_3$ are linearly independent.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The functions $u_1,u_2,u_3$ are linearly independent.
+
+::: pf-proof
+
 Suppose
 $$
 A e^t
@@ -195,9 +230,14 @@ B\cos t+C\sin t=0
 $$
 for every $t$. Evaluating at $t=0$ gives $B=0$, and evaluating at
 $t=\pi/2$ gives $C=0$.
+
 :::
 
-<1>7. Every element of $E$ has a unique expression
+:::
+
+::: pf-step
+
+Every element of $E$ has a unique expression
 $$
 f(t)
 =
@@ -206,13 +246,19 @@ A e^t
 e^{-t}(B\cos t+C\sin t).
 $$
 
-::: {.proof}
-Steps <1>3, <1>5, and <1>6 show that $u_1,u_2,u_3$ are three linearly
+::: pf-proof
+
+Steps [](#s3){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} show that $u_1,u_2,u_3$ are three linearly
 independent vectors in the three-dimensional space $E$. Hence they form a
 basis.
+
 :::
 
-<1>8. A solution
+:::
+
+::: {.pf-step #s8}
+
+A solution
 $$
 f(t)
 =
@@ -225,7 +271,8 @@ $$
 A=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $A=0$, then
 $$
 \abs{f(t)}
@@ -247,9 +294,14 @@ e^{-2t}(B\cos t+C\sin t)
 A\neq0.
 $$
 Thus $f(t)$ grows on the scale of $e^t$ and cannot tend to zero.
+
 :::
 
-<1>9. The unique element $g\in E_0$ satisfying
+:::
+
+::: {.pf-step #s9}
+
+The unique element $g\in E_0$ satisfying
 $$
 g(0)=0,
 \qquad
@@ -262,8 +314,9 @@ g(t)=2e^{-t}\sin t.
 }
 $$
 
-::: {.proof}
-By step <1>8, write
+::: pf-proof
+
+By step [](#s8){.pf-ref}, write
 $$
 g(t)=e^{-t}(B\cos t+C\sin t).
 $$
@@ -290,11 +343,17 @@ $$
 g'(0)=C.
 $$
 The condition $g'(0)=2$ gives $C=2$, proving the formula.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>3 answers part (1), and step <1>9 answers part (2).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} answers part (1), and step [](#s9){.pf-ref} answers part (2).
+
+:::
+
+:::
+
 :::

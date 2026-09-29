@@ -41,9 +41,14 @@ All Ext groups and projective dimensions are over $A$.
 The regular local ring $A$ is noetherian and has finite dimension $d$.
 The regular-local global-dimension theorem gives $\operatorname{pd}_A L\le d$ for every $A$-module $L$ [@Har10a, Proposition III.6.11A].
 
-<1>1. If $\Ext_A^i(M,A)=0$ for every $i>0$, then $\Ext_A^i(M,N)=0$ for every finite $A$-module $N$ and every $i>0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $\Ext_A^i(M,A)=0$ for every $i>0$, then $\Ext_A^i(M,N)=0$ for every finite $A$-module $N$ and every $i>0$.
+
+::: pf-proof
+
 The bound $\operatorname{pd}_A M\le d$ gives the assertion for all $i>d$, even for arbitrary $N$.
 Proceed downwards from $i=d$ to $i=1$.
 Suppose the assertion has been proved in degree $i+1$ for all finite modules, and let $N$ be finite.
@@ -60,11 +65,17 @@ $$
 The first term is $\Ext_A^i(M,A)^{\oplus r}=0$; the last is zero by the induction hypothesis.
 Thus the middle group is zero.
 This completes the descending induction; when $d=0$, the initial bound already gives every required vanishing.
+
 :::
 
-<1>2. The equivalence in (a) holds.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The equivalence in (a) holds.
+
+::: pf-proof
+
 If $M$ is projective, its length-zero projective resolution gives $\Ext_A^i(M,A)=0$ for all $i>0$.
 
 Conversely, assume these groups vanish and choose a finite free presentation
@@ -72,7 +83,7 @@ $$
 0\longrightarrow K\longrightarrow A^{\oplus r}\xrightarrow{p}M\longrightarrow0.
 $$
 Again $K$ is finite.
-Step <1>1 gives $\Ext_A^1(M,K)=0$.
+Step [](#s1){.pf-ref} gives $\Ext_A^1(M,K)=0$.
 The corresponding long exact sequence therefore makes
 $$
 \Hom_A(M,A^{\oplus r})\longrightarrow\Hom_A(M,M)
@@ -80,11 +91,17 @@ $$
 surjective.
 A preimage of $\id_M$ is a section of $p$, so $M$ is a direct summand of a finite free module.
 It is therefore [[D-DEFPROJO|projective]], proving (a).
+
 :::
 
-<1>3. The equivalence in (b) holds for every $n\ge0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The equivalence in (b) holds for every $n\ge0$.
+
+::: pf-proof
+
 A projective resolution of length at most $n$ makes $\Ext_A^i(M,A)=0$ for $i>n$.
 
 For the converse, construct a finite-free resolution of $M$ successively and denote its kernels by
@@ -98,7 +115,7 @@ $$
 \Ext_A^i(K_n,A)\cong\Ext_A^{i+n}(M,A)
 \qquad(i>0).
 $$
-If the groups on the right vanish for all $i>0$, part (a), proved in step <1>2, implies that $K_n$ is projective.
+If the groups on the right vanish for all $i>0$, part (a), proved in step [](#s2){.pf-ref}, implies that $K_n$ is projective.
 For $n\ge1$, truncation then gives a projective resolution
 $$
 0\longrightarrow K_n\longrightarrow P_{n-1}\longrightarrow\cdots
@@ -107,11 +124,17 @@ $$
 of length $n$.
 For $n=0$, the same argument says directly that $M=K_0$ is projective.
 Hence $\operatorname{pd}_A M\le n$ in every case.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove (a), and step <1>3 proves (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), and step [](#s3){.pf-ref} proves (b).
+
+:::
+
+:::
+
 :::

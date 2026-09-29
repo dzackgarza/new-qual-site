@@ -35,14 +35,26 @@ Justify.
 :::
 
 ::: {.solution}
-<1>1. The hypothesis $\gcd(f,f')=1$ implies that $f$ is primitive and squarefree over $\mathbb Q$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The hypothesis $\gcd(f,f')=1$ implies that $f$ is primitive and squarefree over $\mathbb Q$.
+
+::: pf-proof
+
 If the content of $f$ had a nonunit divisor $d\in\mathbb Z$, then $d$ would divide every coefficient of both $f$ and $f'$, contradicting $\gcd(f,f')=1$. Thus $f$ is primitive.
 
 A polynomial over a field has a repeated irreducible factor exactly when it has a nonconstant common divisor with its derivative. Hence the image of $f$ in $\mathbb Q[X]$ is squarefree.
+
 :::
 
-<1>2. Write the factorization over $\mathbb Q$ as
+:::
+
+::: {.pf-step #s2}
+
+Write the factorization over $\mathbb Q$ as
 \[
 f=c f_1\cdots f_r,
 \]
@@ -52,7 +64,9 @@ where $c\in\mathbb Q^\times$ and the $f_i\in\mathbb Q[X]$ are distinct monic irr
 \qquad
 K_i:=\mathbb Q[X]/(f_i).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The ideals $(f_i)$ are pairwise comaximal in the PID $\mathbb Q[X]$. The Chinese remainder theorem therefore gives
 \[
 \mathbb Q[X]/(f)
@@ -60,35 +74,56 @@ The ideals $(f_i)$ are pairwise comaximal in the PID $\mathbb Q[X]$. The Chinese
 \prod_{i=1}^r\mathbb Q[X]/(f_i).
 \]
 Each quotient is a field because $f_i$ is irreducible.
+
 :::
 
-<1>3. Every nonzero integer is a non-zero divisor in
+:::
+
+::: {.pf-step #s3}
+
+Every nonzero integer is a non-zero divisor in
 \[
 R:=\mathbb Z[X]/(f).
 \]
-::: {.proof}
-Suppose $0\ne n\in\mathbb Z$ and $ng\in(f)$ in $\mathbb Z[X]$. Then $f$ divides $ng$ in $\mathbb Q[X]$, hence divides $g$ there because $n$ is a unit in $\mathbb Q[X]$. Since $f$ is primitive by <1>1, Gauss's lemma implies that $f$ divides $g$ in $\mathbb Z[X]$. Thus the class of $g$ in $R$ is zero.
+
+::: pf-proof
+
+Suppose $0\ne n\in\mathbb Z$ and $ng\in(f)$ in $\mathbb Z[X]$. Then $f$ divides $ng$ in $\mathbb Q[X]$, hence divides $g$ there because $n$ is a unit in $\mathbb Q[X]$. Since $f$ is primitive by step [](#s1){.pf-ref}, Gauss's lemma implies that $f$ divides $g$ in $\mathbb Z[X]$. Thus the class of $g$ in $R$ is zero.
+
 :::
 
-<1>4. Localizing $R$ at the nonzero integers gives
+:::
+
+::: {.pf-step #s4}
+
+Localizing $R$ at the nonzero integers gives
 \[
 (\mathbb Z\setminus\{0\})^{-1}R
 \cong
 \mathbb Q[X]/(f).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Localization commutes with quotient, so
 \[
 (\mathbb Z\setminus\{0\})^{-1}(\mathbb Z[X]/(f))
 \cong
 \mathbb Q[X]/(f).
 \]
-By <1>3, this localization inverts only non-zero divisors.
+By step [](#s3){.pf-ref}, this localization inverts only non-zero divisors.
+
 :::
 
-<1>5. The total quotient ring $S^{-1}R$ is isomorphic to the product of fields in <1>2.
-::: {.proof}
-Because the nonzero integers lie in $S$, the map $R\to S^{-1}R$ factors through the ring in <1>4. Under the decomposition
+:::
+
+::: pf-step
+
+The total quotient ring $S^{-1}R$ is isomorphic to the product of fields in step [](#s2){.pf-ref}.
+
+::: pf-proof
+
+Because the nonzero integers lie in $S$, the map $R\to S^{-1}R$ factors through the ring in step [](#s4){.pf-ref}. Under the decomposition
 \[
 \mathbb Q[X]/(f)\cong\prod_i K_i,
 \]
@@ -101,22 +136,29 @@ S^{-1}R
 \prod_{i=1}^rK_i.
 \]
 This proves part (a).
+
 :::
 
-<1>6. If $f=X^5-1$, then
+:::
+
+::: pf-step
+
+If $f=X^5-1$, then
 \[
 S^{-1}(\mathbb Z[X]/(X^5-1))
 \cong
 \mathbb Q\times\mathbb Q(\zeta_5).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Over $\mathbb Q$,
 \[
 X^5-1=(X-1)\Phi_5(X),
 \qquad
 \Phi_5(X)=X^4+X^3+X^2+X+1.
 \]
-The fifth cyclotomic polynomial $\Phi_5$ is irreducible over $\mathbb Q$. Therefore <1>2 gives
+The fifth cyclotomic polynomial $\Phi_5$ is irreducible over $\mathbb Q$. Therefore step [](#s2){.pf-ref} gives
 \[
 \mathbb Q[X]/(X^5-1)
 \cong
@@ -125,10 +167,17 @@ The fifth cyclotomic polynomial $\Phi_5$ is irreducible over $\mathbb Q$. Theref
 \mathbb Q\times\mathbb Q(\zeta_5).
 \]
 This proves part (b).
+
 :::
 
-<1>7. The hypothesis $\gcd(f,f')=1$ is not necessary for the conclusion in part (a).
-::: {.proof}
+:::
+
+::: pf-step
+
+The hypothesis $\gcd(f,f')=1$ is not necessary for the conclusion in part (a).
+
+::: pf-proof
+
 Take
 \[
 f=2X.
@@ -150,5 +199,11 @@ S^{-1}R
 \mathbb F_2(X)\times\mathbb Q,
 \]
 a product of fields. Thus the stated gcd hypothesis is sufficient but not necessary.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -36,8 +36,15 @@ What is the closure of each of $\Gamma \subset L^1(\mathbb{R}, m)$ in the Banach
 :::
 
 ::: {.solution}
-<1>1. For \(\Gamma=C_c(\mathbb R)\), the closure is all of \(L^1(\mathbb R)\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+For \(\Gamma=C_c(\mathbb R)\), the closure is all of \(L^1(\mathbb R)\).
+
+::: pf-proof
+
 The standard density theorem for Lebesgue spaces states that
 \[
 C_c(\mathbb R)\text{ is dense in }L^1(\mathbb R).
@@ -46,10 +53,17 @@ Hence
 \[
 \boxed{\overline\Gamma^{\,L^1}=L^1(\mathbb R).}
 \]
+
 :::
 
-<1>2. Imposing the point condition \(f(0)=0\) does not change the closure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Imposing the point condition \(f(0)=0\) does not change the closure.
+
+::: pf-proof
+
 Let \(u\in C_c(\mathbb R)\). Choose continuous cutoffs \(\chi_n:\mathbb R\to[0,1]\) such that
 \[
 \chi_n(0)=0,
@@ -75,10 +89,17 @@ Thus every compactly supported continuous function lies in the \(L^1\)-closure o
 \boxed{
 \overline{\{u\in C_c:u(0)=0\}}^{\,L^1}=L^1(\mathbb R).}
 \]
+
 :::
 
-<1>3. Identify the closure of the zero-integral class.
-::: {.proof}
+:::
+
+::: pf-step
+
+Identify the closure of the zero-integral class.
+
+::: pf-proof
+
 Define
 \[
 L:L^1(\mathbb R)\to\mathbb R,
@@ -124,5 +145,11 @@ Thus
 \overline\Gamma^{\,L^1}
 =\left\{f\in L^1(\mathbb R):\int_{[-1,1]}f\,dm=0\right\}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

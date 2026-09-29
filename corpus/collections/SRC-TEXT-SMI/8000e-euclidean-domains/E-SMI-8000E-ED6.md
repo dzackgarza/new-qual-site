@@ -29,15 +29,20 @@ audit:
 Prove that if $f: M \to N$ is any $R$ module map, and $g: M \to M$ and $h: N \to N$ are isomorphisms, then $h \circ f \circ g: M \to N$ has kernel and cokernel isomorphic to those of $f$.
 :::
 
-
 ::: {.solution}
 Put
 $$
 F=h\circ f\circ g:M\longrightarrow N.
 $$
 
-<1>1. The kernels of $F$ and $f$ are isomorphic.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The kernels of $F$ and $f$ are isomorphic.
+
+::: pf-proof
+
 Because $h$ is injective,
 $$
 F(x)=0
@@ -61,10 +66,17 @@ and $g(x)=y$. Therefore
 $$
 \boxed{\ker(hfg)\cong\ker f.}
 $$
+
 :::
 
-<1>2. The image of $F$ is $h(\operatorname{im}f)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The image of $F$ is $h(\operatorname{im}f)$.
+
+::: pf-proof
+
 Since $g$ is surjective,
 $$
 f(g(M))=f(M)=\operatorname{im}f.
@@ -73,11 +85,18 @@ Applying $h$ gives
 $$
 \operatorname{im}F=h(\operatorname{im}f).
 $$
+
 :::
 
-<1>3. The cokernels of $F$ and $f$ are isomorphic.
-::: {.proof}
-By step <1>2,
+:::
+
+::: pf-step
+
+The cokernels of $F$ and $f$ are isomorphic.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \operatorname{coker}F
 =N/h(\operatorname{im}f).
@@ -99,5 +118,11 @@ $\overline h$ is an isomorphism, with inverse induced by $h^{-1}$. Hence
 $$
 \boxed{\operatorname{coker}(hfg)\cong\operatorname{coker}f.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

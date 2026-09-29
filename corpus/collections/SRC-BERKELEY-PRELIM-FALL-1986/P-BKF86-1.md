@@ -27,9 +27,15 @@ Sketch the graph of a typical member of the sequence in each case.
 :::
 
 ::: {.solution}
-<1>1. Conditions (i) and (ii) can hold while (iii) fails, without precompactness.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Conditions (i) and (ii) can hold while (iii) fails, without precompactness.
+
+::: pf-proof
+
 Take
 $$
 \Omega=[0,1],
@@ -65,11 +71,17 @@ $$
 This limit is discontinuous. A uniformly convergent subsequence of continuous functions would have a continuous pointwise limit, so no such subsequence exists.
 
 The graph of $f_n$ runs from $(0,0)$ to $(1,1)$ and, as $n$ grows, stays increasingly close to the $x$-axis until very near $x=1$.
+
 :::
 
-<1>2. Conditions (i) and (iii) can hold while (ii) fails, without precompactness.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Conditions (i) and (iii) can hold while (ii) fails, without precompactness.
+
+::: pf-proof
+
 Again take
 $$
 \Omega=[0,1],
@@ -99,11 +111,17 @@ $$
 Hence no subsequence is uniformly Cauchy.
 
 The graph of $f_n$ is the horizontal line of height $n$.
+
 :::
 
-<1>3. Conditions (ii) and (iii) can hold while (i) fails, without precompactness.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Conditions (ii) and (iii) can hold while (i) fails, without precompactness.
+
+::: pf-proof
+
 Take
 $$
 \Omega=\RR
@@ -149,11 +167,17 @@ $$
 \left[n-\frac12,n+\frac12\right],
 $$
 and zero elsewhere.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 give the three requested examples and describe their typical graphs.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the three requested examples and describe their typical graphs.
+
+:::
+
+:::
+
 :::

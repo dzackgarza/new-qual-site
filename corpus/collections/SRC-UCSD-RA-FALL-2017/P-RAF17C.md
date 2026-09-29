@@ -33,8 +33,15 @@ Show:
 :::
 
 ::: {.solution}
-<1>1. Expand both sums in the two orthonormal bases.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Expand both sums in the two orthonormal bases.
+
+::: pf-proof
+
 For each fixed $j$, Parseval's identity in $K$ gives
 \[
 \|Tu_j\|_K^2
@@ -60,10 +67,17 @@ Therefore
 =\sum_{k=1}^\infty\|T^*v_k\|_H^2,}
 \]
 with equality in $[0,\infty]$.
+
 :::
 
-<1>2. Bound $T$ on finite linear combinations of the basis vectors.
-::: {.proof}
+:::
+
+::: pf-step
+
+Bound $T$ on finite linear combinations of the basis vectors.
+
+::: pf-proof
+
 Let
 \[
 x=\sum_{j=1}^N a_j u_j.
@@ -84,10 +98,17 @@ so by the triangle inequality and Cauchy--Schwarz,
 \left(\sum_{j=1}^\infty\|Tu_j\|_K^2\right)^{1/2}.
 \end{aligned}
 \]
+
 :::
 
-<1>3. Pass to all of $H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass to all of $H$.
+
+::: pf-proof
+
 If
 \[
 \sum_{j=1}^\infty\|Tu_j\|_K^2=\infty,
@@ -104,5 +125,11 @@ Taking the supremum over $\|x\|_H=1$ and squaring gives
 \|T\|_{op}^2
 \le\sum_{j=1}^\infty\|Tu_j\|_K^2.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

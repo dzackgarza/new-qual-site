@@ -38,8 +38,15 @@ For $A \subset X$, $A \neq \emptyset, X$, consider the collection $\mathcal{M}_A
 :::
 
 ::: {.solution}
-<1>1. The trace on $A$ is a $\sigma$-algebra.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The trace on $A$ is a $\sigma$-algebra.
+
+::: pf-proof
+
 We have $A=X\cap A\in\mathcal M_A$. If $C=B\cap A\in\mathcal M_A$, then its complement relative to $A$ is
 \[
 A\setminus C=A\cap B^c\in\mathcal M_A.
@@ -51,10 +58,17 @@ If $C_j=B_j\cap A\in\mathcal M_A$, then
 \in\mathcal M_A.
 \]
 Thus $\mathcal M_A$ is a $\sigma$-algebra on $A$.
+
 :::
 
-<1>2. At least one trace $\sigma$-algebra is infinite.
-::: {.proof}
+:::
+
+::: pf-step
+
+At least one trace $\sigma$-algebra is infinite.
+
+::: pf-proof
+
 Consider
 \[
 \Phi:\mathcal M\to\mathcal M_A\times\mathcal M_{A^c},
@@ -66,10 +80,17 @@ The map is injective because
 B=(B\cap A)\cup(B\cap A^c).
 \]
 If both $\mathcal M_A$ and $\mathcal M_{A^c}$ were finite, their product would be finite, forcing $\mathcal M$ to be finite, contrary to hypothesis. Hence at least one of the two trace $\sigma$-algebras is infinite.
+
 :::
 
-<1>3. Construct infinitely many pairwise disjoint measurable sets.
-::: {.proof}
+:::
+
+::: pf-step
+
+Construct infinitely many pairwise disjoint measurable sets.
+
+::: pf-proof
+
 Set $R_0=X$. Since $\mathcal M_{R_0}=\mathcal M$ is infinite, choose a measurable subset
 \[
 \varnothing\ne A_1\subsetneq R_0.
@@ -92,10 +113,17 @@ R_n\subset R_{n-1},
 D_n\cap R_n=\varnothing.
 \]
 Since $R_{n-1}$ is contained in all earlier retained sets, the sets $D_1,D_2,\dots$ are pairwise disjoint and nonempty. Thus $\mathcal M$ contains infinitely many pairwise disjoint sets.
+
 :::
 
-<1>4. Use arbitrary subunions to prove uncountability.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use arbitrary subunions to prove uncountability.
+
+::: pf-proof
+
 For every subset $I\subseteq\mathbb N$, define
 \[
 E_I:=\bigcup_{n\in I}D_n.
@@ -112,5 +140,11 @@ is an injection from $\mathcal P(\mathbb N)$ into $\mathcal M$. Since $\mathcal 
 \[
 \boxed{\mathcal M\text{ is uncountable}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

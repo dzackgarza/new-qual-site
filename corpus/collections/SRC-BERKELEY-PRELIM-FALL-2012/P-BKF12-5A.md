@@ -45,7 +45,11 @@ $$
 \DD\coloneqq\{w\in\CC:\abs w<1\}.
 $$
 
-<1>1. For every $a\in\DD$, the function
+::: pf
+
+::: {.pf-step #s1}
+
+For every $a\in\DD$, the function
 $$
 \boxed{
 B_a(w)\coloneqq\frac{w-a}{1-\overline{a}w}
@@ -58,7 +62,8 @@ $$
 \qquad(\abs w=1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $a=0$, then $B_a(w)=w$, so all assertions are immediate. Suppose
 $a\ne0$. The only zero of the denominator is
 $$
@@ -80,19 +85,30 @@ $$
 \end{aligned}
 $$
 Thus $\abs{B_a(w)}=1$ on the unit circle.
+
 :::
 
-<1>2. A nonzero entire function $f$ has only finitely many zeros in
+:::
+
+::: {.pf-step #s2}
+
+A nonzero entire function $f$ has only finitely many zeros in
 the closed unit disk.
 
-::: {.proof}
+::: pf-proof
+
 The zeros of a nonzero holomorphic function are isolated. If $f$ had
 infinitely many zeros in the compact closed unit disk, those zeros
 would have an accumulation point in that disk. The identity theorem
 would then imply $f\equiv0$, contrary to the hypothesis.
+
 :::
 
-<1>3. List the zeros of $f$ in $\DD$, repeated according to
+:::
+
+::: {.pf-step #s3}
+
+List the zeros of $f$ in $\DD$, repeated according to
 multiplicity, as
 $$
 a_1,\ldots,a_m.
@@ -103,16 +119,22 @@ $$
 f(w)=\prod_{j=1}^m(w-a_j)h(w).
 $$
 
-::: {.proof}
-Step <1>2 shows that the list is finite. At a zero of multiplicity
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that the list is finite. At a zero of multiplicity
 $r$, the local factorization theorem for holomorphic functions writes
 $f(w)=(w-a)^r q(w)$ with $q(a)\ne0$. Dividing successively by the
 finite collection of linear factors therefore produces an entire
 function $h$. All zeros of $f$ in $\DD$ have been removed with their
 full multiplicities, so $h$ has no zeros there.
+
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #s4}
+
+Define
 $$
 \boxed{
 g(w)\coloneqq
@@ -125,20 +147,21 @@ $$
 \qquad(\abs w=1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The displayed expression is a finite product of entire functions, so
 $g$ is entire. For $w\in\DD$ and each $j$,
 $$
 \abs{\overline{a_j}w}<1,
 $$
-so $1-\overline{a_j}w\ne0$. Step <1>3 says that $h$ is also
+so $1-\overline{a_j}w\ne0$. Step [](#s3){.pf-ref} says that $h$ is also
 nonzero in $\DD$, hence $g$ has no zeros there.
 
-For $\abs w=1$, step <1>1 gives
+For $\abs w=1$, step [](#s1){.pf-ref} gives
 $$
 \abs{w-a_j}=\abs{1-\overline{a_j}w}
 $$
-for every $j$. Using the product formulas from step <1>3 and the
+for every $j$. Using the product formulas from step [](#s3){.pf-ref} and the
 definition of $g$,
 $$
 \begin{aligned}
@@ -151,12 +174,18 @@ $$
 \end{aligned}
 $$
 This also covers points where $f(w)=g(w)=0$ on the unit circle.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part (a), and step <1>4 constructs the function
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s4){.pf-ref} constructs the function
 required in part (b).
+
 :::
+
+:::
+
 :::

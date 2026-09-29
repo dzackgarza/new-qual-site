@@ -35,9 +35,14 @@ b&a
 \end{pmatrix}.
 $$
 
-<1>1. The set $R$ is closed under addition, additive inverses, and multiplication, and contains the identity matrix.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The set $R$ is closed under addition, additive inverses, and multiplication, and contains the identity matrix.
+
+::: pf-proof
+
 For $a,b,c,d\in F$,
 $$
 M(a,b)+M(c,d)=M(a+c,b+d),
@@ -56,12 +61,18 @@ $$
 I=M(1,0).
 $$
 Thus $R$ is a subring of $M_2(F)$ containing the identity.
+
 :::
 
-<1>2. The ring $R$ is commutative.
+:::
 
-::: {.proof}
-The multiplication formula from step <1>1 gives
+::: {.pf-step #s2}
+
+The ring $R$ is commutative.
+
+::: pf-proof
+
+The multiplication formula from step [](#s1){.pf-ref} gives
 $$
 M(a,b)M(c,d)
 =
@@ -79,14 +90,20 @@ Hence
 $$
 M(a,b)M(c,d)=M(c,d)M(a,b).
 $$
+
 :::
 
-<1>3. A nonzero element $M(a,b)$ of $R$ is invertible in $R$ if and only if
+:::
+
+::: {.pf-step #s3}
+
+A nonzero element $M(a,b)$ of $R$ is invertible in $R$ if and only if
 $$
 a^2+b^2\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The determinant is
 $$
 \det M(a,b)=a^2+b^2.
@@ -111,12 +128,18 @@ M\left(
 \right),
 $$
 which belongs to $R$.
+
 :::
 
-<1>4. The ring $R$ is a field if and only if $-1$ is not a square in $F$.
+:::
 
-::: {.proof}
-By step <1>3, $R$ fails to be a field exactly when there is a nonzero pair $(a,b)$ such that
+::: {.pf-step #s4}
+
+The ring $R$ is a field if and only if $-1$ is not a square in $F$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $R$ fails to be a field exactly when there is a nonzero pair $(a,b)$ such that
 $$
 a^2+b^2=0.
 $$
@@ -135,37 +158,61 @@ $$
 \det M(c,1)=c^2+1=0.
 $$
 Hence $R$ has a nonzero noninvertible element and is not a field.
+
 :::
 
-<1>5. For $F=\QQ$, the ring $R$ is a field.
-
-::: {.proof}
-No rational square equals $-1$, since every rational square is nonnegative as a real number. Apply step <1>4.
 :::
 
-<1>6. For $F=\CC$, the ring $R$ is not a field.
+::: {.pf-step #s5}
 
-::: {.proof}
+For $F=\QQ$, the ring $R$ is a field.
+
+::: pf-proof
+
+No rational square equals $-1$, since every rational square is nonnegative as a real number. Apply step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+For $F=\CC$, the ring $R$ is not a field.
+
+::: pf-proof
+
 In $\CC$,
 $$
 i^2=-1.
 $$
-Apply step <1>4.
+Apply step [](#s4){.pf-ref}.
+
 :::
 
-<1>7. For $F=\ZZ_5$, the ring $R$ is not a field.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+For $F=\ZZ_5$, the ring $R$ is not a field.
+
+::: pf-proof
+
 Modulo $5$,
 $$
 2^2=4=-1.
 $$
-Apply step <1>4.
+Apply step [](#s4){.pf-ref}.
+
 :::
 
-<1>8. For $F=\ZZ_7$, the ring $R$ is a field.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+For $F=\ZZ_7$, the ring $R$ is a field.
+
+::: pf-proof
+
 The nonzero squares modulo $7$ are
 $$
 1^2=6^2=1,
@@ -182,23 +229,35 @@ which does not contain
 $$
 -1=6.
 $$
-Apply step <1>4.
+Apply step [](#s4){.pf-ref}.
+
 :::
 
-<1>9. Therefore
+:::
+
+::: {.pf-step #s9}
+
+Therefore
 $$
 \boxed{
 R\text{ is a field precisely for }F=\QQ\text{ and }F=\ZZ_7.
 }
 $$
 
-::: {.proof}
-This follows from steps <1>5--<1>8.
+::: pf-proof
+
+This follows from steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref}.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 prove that $R$ is a commutative ring with identity, and step <1>9 gives the requested field classification.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove that $R$ is a commutative ring with identity, and step [](#s9){.pf-ref} gives the requested field classification.
+
+:::
+
+:::
+
 :::

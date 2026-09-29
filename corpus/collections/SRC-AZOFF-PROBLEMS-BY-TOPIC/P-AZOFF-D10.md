@@ -38,7 +38,11 @@ $$
 $$
 for every $z\in\CC$.
 
-<1>1. Fix $z_0\in\CC$. For every $R>0$,
+::: pf
+
+::: {.pf-step #s1}
+
+Fix $z_0\in\CC$. For every $R>0$,
 $$
 f'(z_0)
 =
@@ -48,19 +52,26 @@ f'(z_0)
 \,d\zeta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $f$ is entire, it is analytic on and inside every circle centered at
 $z_0$. Cauchy's formula for the first derivative gives the identity.
+
 :::
 
-<1>2. For every $R>0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $R>0$,
 $$
 \abs{f'(z_0)}\leq\frac{M}{R}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{\zeta-z_0}=R$, one has $\abs{f(\zeta)}\leq M$. The circle has
-length $2\pi R$, so step <1>1 gives
+length $2\pi R$, so step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 \abs{f'(z_0)}
@@ -70,30 +81,48 @@ $$
 \frac{M}{R}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. One has $f'(z_0)=0$.
+:::
 
-::: {.proof}
-Step <1>2 holds for every $R>0$. Letting $R\to\infty$ gives
+::: {.pf-step #s3}
+
+One has $f'(z_0)=0$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} holds for every $R>0$. Letting $R\to\infty$ gives
 $\abs{f'(z_0)}=0$.
+
 :::
 
-<1>4. The derivative $f'$ is identically zero on $\CC$.
-
-::: {.proof}
-The point $z_0\in\CC$ was arbitrary, so step <1>3 applies at every point.
 :::
 
-<1>5. The function $f$ is constant.
+::: {.pf-step #s4}
 
-::: {.proof}
+The derivative $f'$ is identically zero on $\CC$.
+
+::: pf-proof
+
+The point $z_0\in\CC$ was arbitrary, so step [](#s3){.pf-ref} applies at every point.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+The function $f$ is constant.
+
+::: pf-proof
+
 Let $z_1,z_2\in\CC$ and define
 $$
 h(t)=f\bigl(z_1+t(z_2-z_1)\bigr),
 \qquad 0\leq t\leq1.
 $$
-By the chain rule and step <1>4,
+By the chain rule and step [](#s4){.pf-ref},
 $$
 h'(t)
 =
@@ -106,11 +135,17 @@ $$
 f(z_2)=h(1)=h(0)=f(z_1).
 $$
 Since $z_1$ and $z_2$ were arbitrary, $f$ is constant.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>4 and <1>5 give the two requested conclusions.
 :::
+
+::: pf-qed
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the two requested conclusions.
+
+:::
+
+:::
+
 :::

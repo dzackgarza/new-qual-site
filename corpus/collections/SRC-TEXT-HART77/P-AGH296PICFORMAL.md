@@ -50,12 +50,17 @@ The latter is also $\Gamma(Y_n,\OO_{Y_n}^*)$: the local inverses of an everywher
 For an inverse system, the Mittag--Leffler condition means that the images in each fixed term stabilize [@Har10a, Chapter II, §9].
 All the sheaves on the thickenings are regarded as sheaves on their common underlying space $|\mathfrak X|$.
 
-<1>1. For $m\ge n$, the kernel of $A_m\to A_n$ is nilpotent, and
+::: pf
+
+::: {.pf-step #s1}
+
+For $m\ge n$, the kernel of $A_m\to A_n$ is nilpotent, and
 $$
 \im(G_m\to G_n)=\bigl(\im(A_m\to A_n)\bigr)^\times.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A section in the kernel belongs to the ideal sheaf $\mci^n/\mci^m$ on $Y_m$.
 A product of $q$ such sections vanishes whenever $nq\ge m$.
 Thus the ring kernel is nilpotent.
@@ -67,11 +72,17 @@ Hence $a$ is a unit with inverse $b(1+c)^{-1}$.
 Apply this to the surjection from $A_m$ onto its image in $A_n$.
 It gives the displayed equality, with the units on the right taken in that image subring.
 It does not assume that $A_m\to A_n$ is surjective or that an arbitrary subring contains inverses of all its elements which are units in the ambient ring.
+
 :::
 
-<1>2. The inverse system $(G_n)$ satisfies the Mittag--Leffler condition, proving (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The inverse system $(G_n)$ satisfies the Mittag--Leffler condition, proving (a).
+
+::: pf-proof
+
 Fix $n$.
 The assumed Mittag--Leffler condition on $(A_n)$ gives $N\ge n$ such that
 $$
@@ -79,12 +90,18 @@ $$
 $$
 Equality of these additive-group images is equality of their image subrings, with the same identity and multiplication.
 Their unit groups are consequently equal.
-Step <1>1 identifies these groups with the images of $G_m$ in $G_n$, so those images stabilize as well.
+Step [](#s1){.pf-ref} identifies these groups with the images of $G_m$ in $G_n$, so those images stabilize as well.
+
 :::
 
-<1>3. In (b), the isomorphisms $\mcf/\mci^n\mcf\cong\OO_{Y_n}$ can be chosen compatibly for all $n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+In (b), the isomorphisms $\mcf/\mci^n\mcf\cong\OO_{Y_n}$ can be chosen compatibly for all $n$.
+
+::: pf-proof
+
 Write $F_n=\mcf/\mci^n\mcf$ and let
 $$
 T_n=\operatorname{Isom}_{\OO_{Y_n}}(F_n,\OO_{Y_n}).
@@ -95,7 +112,7 @@ Reduction gives maps $T_m\to T_n$ compatible with $G_m\to G_n$ because $F_m\otim
 
 For fixed $n$, the image of $T_m$ in $T_n$ is one orbit of the subgroup $\im(G_m\to G_n)$.
 These images are nonempty and form a decreasing family.
-By step <1>2 their acting subgroups stabilize.
+By step [](#s2){.pf-ref} their acting subgroups stabilize.
 Once the subgroups agree, two nested nonempty orbits must coincide: if they share a point, both are the orbit of that point under the same subgroup.
 Thus the images of $T_m$ in $T_n$ stabilize.
 Denote the stable image by $T_n^\infty$.
@@ -105,20 +122,26 @@ To see this, choose $m$ so large that the images from $T_m$ have stabilized at b
 Any element of $T_n^\infty$ lifts from $T_m$, and the image of that lift at $n+1$ lies in $T_{n+1}^\infty$.
 Choose an element in $T_1^\infty$ and recursively lift it through these surjections.
 The resulting sequence $(\psi_n)$ is a compatible family of trivializations, rather than the initially unrelated family $(\varphi_n)$.
+
 :::
 
-<1>4. The sheaf in (b) is trivial, and the restriction homomorphism
+:::
+
+::: {.pf-step #s4}
+
+The sheaf in (b) is trivial, and the restriction homomorphism
 $$
 \Phi:\Pic(\mathfrak X)\longrightarrow\varprojlim_n\Pic(Y_n)
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
+
 Coherent formal sheaves are recovered from their compatible reductions [@Har10a, Proposition II.9.6], so
 $$
 \mcf\cong\varprojlim_n F_n.
 $$
-The compatible isomorphisms $\psi_n$ from step <1>3, together with their compatible inverses, give
+The compatible isomorphisms $\psi_n$ from step [](#s3){.pf-ref}, together with their compatible inverses, give
 $$
 \mcf\cong\varprojlim_n\OO_{Y_n}=\OO_{\mathfrak X}.
 $$
@@ -129,11 +152,17 @@ These restrictions preserve tensor products, so the assignment $[L]\mapsto([L_n]
 Invertible sheaves on a noetherian formal scheme are coherent.
 If $[L]$ belongs to its kernel, every $L_n$ is trivial, so the preceding argument with $\mcf=L$ gives $L\cong\OO_{\mathfrak X}$.
 Thus $\Phi$ has zero kernel.
+
 :::
 
-<1>5. The data in (c) give a coherent sheaf $L=\varprojlim_n L_n$ with $L/\mci^nL\cong L_n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The data in (c) give a coherent sheaf $L=\varprojlim_n L_n$ with $L/\mci^nL\cong L_n$.
+
+::: pf-proof
+
 Let $\alpha_n:L_{n+1}\otimes\OO_{Y_n}\xrightarrow{\cong}L_n$ be the given isomorphism.
 Define $t_{n+1,n}$ as the quotient map $L_{n+1}\to L_{n+1}\otimes\OO_{Y_n}$ followed by $\alpha_n$.
 Define every longer transition as the composite of these adjacent transitions and $t_{n,n}=\id$.
@@ -144,11 +173,17 @@ More generally, repeated reduction gives $L_m\otimes\OO_{Y_n}\cong L_n$ for ever
 Each $L_n$ is coherent on the noetherian scheme $Y_n$.
 These are precisely the compatibility conditions of [@Har10a, Proposition II.9.6].
 That proposition gives coherence of $L$ and the asserted identifications of all its reductions.
+
 :::
 
-<1>6. The sheaf $L$ in step <1>5 is locally free of rank one, and $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The sheaf $L$ in step [](#s5){.pf-ref} is locally free of rank one, and $\Phi$ is surjective.
+
+::: pf-proof
+
 Fix a point of $\mathfrak X$ and choose an affine formal neighborhood $\mathfrak U$ on which $L_1$ is trivial.
 This is possible because the affine formal opens form a basis and $L_1$ is invertible.
 Write $U_n$ for the corresponding affine open of $Y_n$, and choose a frame $s_1\in\Gamma(U_1,L_1)$.
@@ -158,7 +193,7 @@ The surjection $L_{n+1}|_{U_{n+1}}\to L_n|_{U_n}$ is a surjection of quasi-coher
 Exactness of affine sections therefore lifts $s_n$ to a section $s_{n+1}$ of $L_{n+1}$ on that same open [@Har10a, Proposition II.5.6].
 At every stalk, express $s_{n+1}$ in a local frame of $L_{n+1}$.
 Its coefficient becomes a unit after reduction to $U_n$, since $s_n$ is a frame.
-The kernel of this local ring quotient is nilpotent, so the coefficient itself is a unit by the calculation in step <1>1.
+The kernel of this local ring quotient is nilpotent, so the coefficient itself is a unit by the calculation in step [](#s1){.pf-ref}.
 Hence $s_{n+1}$ is a frame on all of $U_{n+1}$.
 
 Induction gives compatible frames on the fixed neighborhood $\mathfrak U$, without shrinking it as $n$ increases.
@@ -169,14 +204,20 @@ $$
 $$
 Thus $L$ is invertible.
 
-An element of $\varprojlim_n\Pic(Y_n)$ gives representatives $L_n$ and choices of adjacent isomorphisms $\alpha_n$ as in step <1>5.
+An element of $\varprojlim_n\Pic(Y_n)$ gives representatives $L_n$ and choices of adjacent isomorphisms $\alpha_n$ as in step [](#s5){.pf-ref}.
 The invertible $L$ just constructed restricts to every prescribed class, so it maps to that element under $\Phi$.
-This proves surjectivity; the uniqueness of its class follows from step <1>4.
+This proves surjectivity; the uniqueness of its class follows from step [](#s4){.pf-ref}.
+
 :::
 
-<1>7. Both sufficient hypotheses in (d) imply the required Mittag--Leffler condition.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+Both sufficient hypotheses in (d) imply the required Mittag--Leffler condition.
+
+::: pf-proof
+
 If $\mathfrak X$ is affine, every $Y_n$ is affine.
 The sequence
 $$
@@ -192,16 +233,22 @@ The transition maps are $k$-linear.
 For fixed $n$, the images of $A_m$ in $A_n$ form a descending sequence of vector subspaces of a finite-dimensional space.
 Their dimensions eventually stop decreasing, after which nested subspaces of equal dimension are equal.
 Thus these images stabilize, proving the Mittag--Leffler condition.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove (a), steps <1>3--<1>4 prove (b), steps <1>5--<1>6 prove (c), and step <1>7 proves (d).
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (b), steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove (c), and step [](#s7){.pf-ref} proves (d).
 Since restriction is a homomorphism and is both injective and surjective, the requested canonical isomorphism is
 $$
 \boxed{\Pic(\mathfrak X)\xrightarrow{\cong}\varprojlim_n\Pic(Y_n),
 \qquad [L]\longmapsto([L\otimes\OO_{Y_n}])_{n\ge1}.}
 $$
+
 :::
+
+:::
+
 :::

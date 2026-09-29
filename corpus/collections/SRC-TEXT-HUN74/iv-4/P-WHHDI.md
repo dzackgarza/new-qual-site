@@ -40,22 +40,39 @@ where $\theta_A, \theta_B$ are as in Theorem 4.12 and $f^*$ is the map induced o
 ::: {.solution}
 For a left $R$-module $M$ write $M^*=\operatorname{Hom}_R(M,R)$, and let $\theta_M\colon M \to M^{**}$ be the canonical map, $\theta_M(m)(g) = g(m)$ for $m \in M$ and $g \in M^*$. Let $\overline f\colon B^* \to A^*$ be $\overline f(g) = g \circ f$, and let $f^{**}\colon A^{**} \to B^{**}$ be $f^{**}(\varphi) = \varphi \circ \overline f$; this is the map the problem calls $f^*$. The diagram asserts $f^{**} \circ \theta_A = \theta_B \circ f$.
 
-<1>1. For $a \in A$ and $g \in B^*$, $(f^{**} \circ \theta_A)(a)(g) = g(f(a))$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For $a \in A$ and $g \in B^*$, $(f^{**} \circ \theta_A)(a)(g) = g(f(a))$.
+
+::: pf-proof
+
 By the definitions of $f^{**}$, $\overline f$, and $\theta_A$,
 $$(f^{**} \circ \theta_A)(a)(g) = \theta_A(a)(\overline f(g)) = \theta_A(a)(g \circ f) = g(f(a)).$$
+
 :::
 
-<1>2. For $a \in A$ and $g \in B^*$, $(\theta_B \circ f)(a)(g) = g(f(a))$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For $a \in A$ and $g \in B^*$, $(\theta_B \circ f)(a)(g) = g(f(a))$.
+
+::: pf-proof
+
 This is the definition of $\theta_B$ evaluated at $f(a)$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By steps <1>1 and <1>2, the maps $f^{**} \circ \theta_A$ and $\theta_B \circ f$ agree on every $a\in A$ and every $g\in B^*$, so $f^{**} \circ \theta_A = \theta_B \circ f$.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the maps $f^{**} \circ \theta_A$ and $\theta_B \circ f$ agree on every $a\in A$ and every $g\in B^*$, so $f^{**} \circ \theta_A = \theta_B \circ f$.
+
+:::
+
+:::
+
 :::

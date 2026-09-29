@@ -36,8 +36,15 @@ Hint: First prove the result holds if $g \in L^2(\mathbb{R}, m)$ is further assu
 :::
 
 ::: {.solution}
-<1>1. First assume that $g$ has compact support.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+First assume that $g$ has compact support.
+
+::: pf-proof
+
 Choose $M>0$ so that $g=0$ almost everywhere outside $[-M,M]$. Then
 \[
 \int_{\mathbb R}f(x)g(x-n)\,dx
@@ -55,10 +62,17 @@ Since $f\in L^2(\mathbb R)$,
 \le \int_{n-M}^{\infty}|f(x)|^2\,dx\longrightarrow0.
 \]
 Hence the desired limit is $0$ whenever $g$ has compact support.
+
 :::
 
-<1>2. Approximate an arbitrary $g\in L^2$ by compactly supported functions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Approximate an arbitrary $g\in L^2$ by compactly supported functions.
+
+::: pf-proof
+
 Let
 \[
 g_R=g\,\mathbf1_{[-R,R]}.
@@ -86,5 +100,11 @@ Thus the limsup of the original correlations is at most $\varepsilon$. Since $\v
 \boxed{
 \lim_{n\to\infty}\int_{\mathbb R}f(x)g(x-n)\,dx=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

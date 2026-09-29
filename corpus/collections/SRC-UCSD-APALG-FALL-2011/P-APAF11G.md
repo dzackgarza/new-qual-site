@@ -46,7 +46,11 @@ f_2=2xy-y^2+2y.
 \]
 We use lexicographic order with $x>y$.
 
-<1>1. The ideal $I=(f_1,f_2)$ has Gröbner basis
+::: pf
+
+::: {.pf-step #s1}
+
+The ideal $I=(f_1,f_2)$ has Gröbner basis
 \[
 G=\left\{
  g_1=x^2+y+2,
@@ -56,7 +60,9 @@ G=\left\{
  g_3=y^3+12y
 \right\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 First $g_1=f_1$ and $g_2=f_2/2$, so $g_1,g_2\in I$.
 The $S$-polynomial of $g_1$ and $g_2$ is
 \[
@@ -102,43 +108,64 @@ Reducing $y^4$ and $y^3$ by $g_3$ and $xy$ by $g_2$ gives
 6y^2-12y-12\left(\frac12y^2-y\right)=0.
 \]
 Thus every $S$-pair reduces to zero, so $G$ is a Gröbner basis. This proves part (a).
+
 :::
 
-<1>2. A Gröbner basis for the elimination ideal $I\cap\mathbb C[y]$ is
+:::
+
+::: pf-step
+
+A Gröbner basis for the elimination ideal $I\cap\mathbb C[y]$ is
 \[
 \boxed{\{y^3+12y\}}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For lex order $x>y$, the elimination theorem says that if $G$ is a Gröbner basis of $I$, then
 \[
 G\cap\mathbb C[y]
 \]
-is a Gröbner basis of $I\cap\mathbb C[y]$. From <1>1,
+is a Gröbner basis of $I\cap\mathbb C[y]$. From step [](#s1){.pf-ref},
 \[
 G\cap\mathbb C[y]=\{g_3\}.
 \]
 This proves part (b).
+
 :::
 
-<1>3. The possible $y$-coordinates of solutions are
+:::
+
+::: pf-step
+
+The possible $y$-coordinates of solutions are
 \[
 y=0,\qquad y=2\sqrt3\,i,\qquad y=-2\sqrt3\,i.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every common zero of $I$ must vanish on the elimination polynomial
 \[
 g_3=y^3+12y=y(y^2+12).
 \]
 Its roots over $\mathbb C$ are exactly the three displayed values.
+
 :::
 
-<1>4. The complete solution set in $\mathbb C^2$ is
+:::
+
+::: pf-step
+
+The complete solution set in $\mathbb C^2$ is
 \[
 \boxed{
 (i\sqrt2,0),\ (-i\sqrt2,0),\ (-1+i\sqrt3,2i\sqrt3),\ (-1-i\sqrt3,-2i\sqrt3).
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $y=0$, then $g_1=0$ gives
 \[
 x^2+2=0,
@@ -154,14 +181,21 @@ For $y=\pm2i\sqrt3$, this gives
 x=-1\pm i\sqrt3.
 \]
 Conversely, substituting these four pairs into $g_1,g_2,g_3$ gives zero, so they are all the common zeros. This proves part (c).
+
 :::
 
-<1>5. A vector-space basis of $\mathbb C[x,y]/I$ is
+:::
+
+::: pf-step
+
+A vector-space basis of $\mathbb C[x,y]/I$ is
 \[
 \boxed{\{1,x,y,y^2\}}.
 \]
-::: {.proof}
-For a Gröbner basis, the residue classes of monomials not divisible by any leading monomial form a basis of the quotient. By <1>1 the initial ideal is
+
+::: pf-proof
+
+For a Gröbner basis, the residue classes of monomials not divisible by any leading monomial form a basis of the quotient. By step [](#s1){.pf-ref} the initial ideal is
 \[
 \operatorname{in}(I)=(x^2,xy,y^3).
 \]
@@ -170,5 +204,11 @@ The monomials not divisible by $x^2$, $xy$, or $y^3$ are exactly
 1,\ x,\ y,\ y^2.
 \]
 Therefore their residue classes form a $\mathbb C$-basis of $\mathbb C[x,y]/I$. This proves part (d).
+
 :::
+
+:::
+
+:::
+
 :::

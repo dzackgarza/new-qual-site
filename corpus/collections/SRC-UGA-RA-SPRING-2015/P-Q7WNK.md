@@ -40,8 +40,15 @@ H \subseteq E \subseteq V \quad \text{and}\quad \mu(V\setminus H) = 0.
 $$
 :::
 ::: {.solution}
-<1>1. Prove (1) implies (2).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove (1) implies (2).
+
+::: pf-proof
+
 For each $k\ge1$, apply (1) with $\varepsilon=2^{-k}$ to obtain a closed set $F_k$ and an open set $G_k$ such that
 \[
 F_k\subseteq E\subseteq G_k,
@@ -70,10 +77,17 @@ Letting $k\to\infty$ gives
 \[
 \mu(V\setminus H)=0.
 \]
+
 :::
 
-<1>2. Prove (2) implies (1).
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove (2) implies (1).
+
+::: pf-proof
+
 Write
 \[
 V=\bigcap_{k=1}^\infty V_k,
@@ -123,5 +137,11 @@ so
 <\varepsilon.
 \]
 This is (1).
+
 :::
+
+:::
+
+:::
+
 :::

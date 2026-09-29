@@ -30,7 +30,12 @@ Find the Laurent expansions of $\exp ( \textstyle { \frac { 1 } { z } } )$ and $
 :::
 
 ::: {.solution}
-<1>1. The Laurent expansion of $e^{1/z}$ about the origin is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The Laurent expansion of $e^{1/z}$ about the origin is
 $$
 \boxed{
 e^{1/z}
@@ -43,7 +48,8 @@ $$
 0<\abs{z}<\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponential Taylor series
 $$
 e^w
@@ -63,9 +69,14 @@ $$
 Since the Taylor series converges for every finite value of $w=1/z$, the
 Laurent series converges for every $z\neq0$. Thus its annulus of convergence
 about the origin is $0<\abs{z}<\infty$.
+
 :::
 
-<1>2. The Laurent expansion of $\cos(1/z)$ about the origin is
+:::
+
+::: {.pf-step #s2}
+
+The Laurent expansion of $\cos(1/z)$ about the origin is
 $$
 \boxed{
 \cos(1/z)
@@ -79,7 +90,8 @@ $$
 0<\abs{z}<\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The cosine Taylor series
 $$
 \cos w
@@ -97,12 +109,18 @@ $$
 Again, global convergence in the variable $w$ shows that this Laurent series
 converges for every $z\neq0$, hence on the maximal annulus
 $0<\abs{z}<\infty$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 give both requested Laurent expansions and their maximal
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give both requested Laurent expansions and their maximal
 annuli of convergence.
+
 :::
+
+:::
+
 :::

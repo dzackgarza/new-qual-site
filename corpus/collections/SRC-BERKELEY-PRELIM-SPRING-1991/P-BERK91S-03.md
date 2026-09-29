@@ -47,10 +47,15 @@ D_n\coloneqq\{a\in\ZZ:a>0\text{ and }a\mid n\},
 \quad a\longmapsto n/a.
 $$
 
-<1>1. The map $\iota$ partitions $D_n$ into singleton sets
+::: pf
+
+::: {.pf-step #s1}
+
+The map $\iota$ partitions $D_n$ into singleton sets
 at its fixed points and pairs of distinct divisors elsewhere.
 
-::: {.proof}
+::: pf-proof
+
 For $a\in D_n$, the quotient $n/a$ is a positive integer and
 divides $n$, since $n=a(n/a)$. Thus $\iota$ is well defined,
 and
@@ -62,12 +67,18 @@ $\iota(a)=a$ and two elements otherwise. Any two such sets
 that intersect coincide, by the displayed identity, so they
 partition $D_n$. Every member of $D_n$ lies between $1$ and
 $n$, so this is a finite partition.
+
 :::
 
-<1>2. There is exactly one fixed point of $\iota$ when $n$
+:::
+
+::: {.pf-step #s2}
+
+There is exactly one fixed point of $\iota$ when $n$
 is a perfect square, and there are no fixed points otherwise.
 
-::: {.proof}
+::: pf-proof
+
 For $a\in D_n$, the equality $\iota(a)=a$ is equivalent to
 $a^2=n$. There is at most one positive integer with square
 $n$: if $a,b>0$ and $a^2=b^2$, then
@@ -75,16 +86,22 @@ $(a-b)(a+b)=0$ and $a+b>0$, hence $a=b$.
 If $n=b^2$ for a positive integer $b$, then $b\mid n$ and
 $\iota(b)=b$, so that fixed point exists. If $n$ is not a
 perfect square, no positive integer satisfies $a^2=n$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-By step <1>1, every part of the partition away from the fixed
-points contributes $2$ to $d(n)=\abs{D_n}$. Step <1>2 shows
+::: pf-qed
+
+By step [](#s1){.pf-ref}, every part of the partition away from the fixed
+points contributes $2$ to $d(n)=\abs{D_n}$. Step [](#s2){.pf-ref} shows
 that the fixed points contribute $1$ precisely when $n$ is
 a perfect square, and contribute $0$ otherwise. Thus $d(n)$
 is odd if and only if $n$ is a perfect square. This includes
 $n=1$, for which $D_1=\{1\}$.
+
 :::
+
+:::
+
 :::

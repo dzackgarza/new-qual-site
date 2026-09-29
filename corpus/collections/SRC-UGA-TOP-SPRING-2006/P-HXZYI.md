@@ -57,12 +57,18 @@ X=S^2/A,
 \]
 where all of $A$ is collapsed to one point.
 
-<1>1. There is a homotopy equivalence
+::: pf
+
+::: {.pf-step #s1}
+
+There is a homotopy equivalence
 \[
 X\simeq S^2\vee SA,
 \]
 where $SA$ denotes the suspension of the $k$-point space $A$.
-::: {.proof}
+
+::: pf-proof
+
 Choose a CW structure on $S^2$ in which the finitely many points $p_1,\ldots,p_k$ are $0$-cells, so $(S^2,A)$ is a CW pair.
 
 The inclusion
@@ -78,10 +84,17 @@ For a CW pair $(Y,B)$ whose inclusion $B\hookrightarrow Y$ is nullhomotopic, the
 Y\vee SB.
 \]
 Applying this with $(Y,B)=(S^2,A)$ gives the claim.
+
 :::
 
-<1>2. The suspension $SA$ is homotopy equivalent to a wedge of $k-1$ circles.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The suspension $SA$ is homotopy equivalent to a wedge of $k-1$ circles.
+
+::: pf-proof
+
 Because $A$ consists of $k$ points, $SA$ is the graph having two suspension vertices and one edge between them for each point of $A$.
 Thus it has two vertices and $k$ parallel edges.
 
@@ -91,23 +104,37 @@ Hence
 \[
 SA\simeq\bigvee^{k-1}S^1.
 \]
+
 :::
 
-<1>3. Consequently
+:::
+
+::: {.pf-step #s3}
+
+Consequently
 \[
 X\simeq S^2\vee\bigvee^{k-1}S^1.
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The fundamental group is
+:::
+
+::: pf-step
+
+The fundamental group is
 \[
 \boxed{\pi_1(X)\cong F_{k-1}},
 \]
 the free group on $k-1$ generators.
-::: {.proof}
-By <1>3 and homotopy invariance of the fundamental group,
+
+::: pf-proof
+
+By step [](#s3){.pf-ref} and homotopy invariance of the fundamental group,
 \[
 \pi_1(X)
 \cong
@@ -121,14 +148,21 @@ Therefore
 \underbrace{\ZZ*\cdots*\ZZ}_{k-1\text{ factors}}
 \cong F_{k-1}.
 \]
+
 :::
 
-<1>5. The Euler characteristic is
+:::
+
+::: {.pf-step #s5}
+
+The Euler characteristic is
 \[
 \boxed{\chi(X)=3-k}.
 \]
-::: {.proof}
-The wedge in <1>3 has a CW structure with one $0$-cell, $k-1$ $1$-cells, and one $2$-cell.
+
+::: pf-proof
+
+The wedge in step [](#s3){.pf-ref} has a CW structure with one $0$-cell, $k-1$ $1$-cells, and one $2$-cell.
 Hence
 \[
 \chi(X)
@@ -136,9 +170,14 @@ Hence
 =3-k.
 \]
 Euler characteristic is invariant under homotopy equivalence for finite CW complexes.
+
 :::
 
-<1>6. The integral homology groups are
+:::
+
+::: pf-step
+
+The integral homology groups are
 \[
 \boxed{
 H_n(X;\ZZ)\cong
@@ -149,8 +188,10 @@ H_n(X;\ZZ)\cong
 0,&n\ge3.
 \end{cases}}
 \]
-::: {.proof}
-Use the CW structure from <1>5. Its cellular chain complex is
+
+::: pf-proof
+
+Use the CW structure from step [](#s5){.pf-ref}. Its cellular chain complex is
 \[
 0\longrightarrow\ZZ
 \xrightarrow{0}
@@ -162,5 +203,11 @@ Use the CW structure from <1>5. Its cellular chain complex is
 The $1$-cells are loops at the unique $0$-cell, so the degree-$1$ cellular boundary is zero.
 The $2$-cell is the $2$-cell of the $S^2$ summand and is attached at the wedge point, so its cellular boundary is also zero.
 Taking homology gives the displayed groups.
+
 :::
+
+:::
+
+:::
+
 :::

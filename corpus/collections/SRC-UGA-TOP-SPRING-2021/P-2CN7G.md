@@ -48,8 +48,15 @@ U_x\cap U_y=\emptyset.
 :::
 
 ::: {.solution}
-<1>1. If $x,y\in X$ are distinct, then they differ in some coordinate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $x,y\in X$ are distinct, then they differ in some coordinate.
+
+::: pf-proof
+
 Write
 \[
 x=(x_1,x_2,\ldots),
@@ -65,10 +72,17 @@ Because both entries lie in $\{0,1\}$, this means
 \[
 \{x_m,y_m\}=\{0,1\}.
 \]
+
 :::
 
-<1>2. The $m$th coordinate gives the required disjoint open cover in part (a).
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The $m$th coordinate gives the required disjoint open cover in part (a).
+
+::: pf-proof
+
 Let
 \[
 \pi_m:X\longrightarrow\{0,1\}
@@ -101,13 +115,20 @@ Thus
 U_x\cup U_y=X.
 \]
 This proves part (a).
+
 :::
 
-<1>3. Every nonempty connected subset of $X$ is a singleton.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every nonempty connected subset of $X$ is a singleton.
+
+::: pf-proof
+
 Let $C\subseteq X$ be nonempty and connected, and choose $x\in C$.
 Suppose for contradiction that there is a point $y\in C$ with $y\ne x$.
-By <1>2 there are disjoint open sets $U_x,U_y\subseteq X$ such that
+By step [](#s2){.pf-ref} there are disjoint open sets $U_x,U_y\subseteq X$ such that
 \[
 x\in U_x,
 \qquad
@@ -126,5 +147,11 @@ Hence no such $y$ exists, and
 C=\{x\}.
 \]
 Thus $X$ is totally disconnected.
+
 :::
+
+:::
+
+:::
+
 :::

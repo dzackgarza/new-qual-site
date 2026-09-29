@@ -25,23 +25,50 @@ Prove that $\Hom(\ZZ^s, \QQ)$ is isomorphic as a $\QQ$-vector space to $\QQ^s$, 
 ::: {.solution}
 Let $e_1, \ldots, e_s$ be the standard basis of $\ZZ^s$, and define $\Phi\colon \Hom(\ZZ^s, \QQ) \to \QQ^s$ by $\Phi(f) = (f(e_1), \ldots, f(e_s))$.
 
-<1>1. $\Phi$ is $\QQ$-linear.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$\Phi$ is $\QQ$-linear.
+
+::: pf-proof
+
 Addition and rational scalar multiplication of homomorphisms are pointwise, so $\Phi(f + g) = (f(e_1) + g(e_1), \ldots, f(e_s) + g(e_s)) = \Phi(f) + \Phi(g)$ and $\Phi(qf) = (qf(e_1), \ldots, qf(e_s)) = q\Phi(f)$ for $q \in \QQ$.
+
 :::
 
-<1>2. $\Phi$ is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$\Phi$ is injective.
+
+::: pf-proof
+
 If $\Phi(f) = 0$, then $f(e_i) = 0$ for all $i$; since $e_1, \ldots, e_s$ generate $\ZZ^s$, $f = 0$.
+
 :::
 
-<1>3. $\Phi$ is surjective.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$\Phi$ is surjective.
+
+::: pf-proof
+
 Given $(q_1, \ldots, q_s) \in \QQ^s$, define $f\colon \ZZ^s \to \QQ$ by $f(\sum_i n_i e_i) = \sum_i n_i q_i$. Since $e_1, \ldots, e_s$ is a basis, $f$ is a well-defined homomorphism, and $\Phi(f) = (q_1, \ldots, q_s)$.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-By steps <1>1--<1>3, $\Phi$ is a $\QQ$-linear isomorphism $\Hom(\ZZ^s, \QQ) \cong \QQ^s$.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\Phi$ is a $\QQ$-linear isomorphism $\Hom(\ZZ^s, \QQ) \cong \QQ^s$.
+
+:::
+
+:::
+
 :::

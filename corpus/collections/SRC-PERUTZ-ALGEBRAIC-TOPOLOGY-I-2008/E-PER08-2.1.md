@@ -48,8 +48,14 @@ A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in\operatorname{SL}_2(\mathbb R),
 ad-bc=1.
 \]
 
-<1>1. Every $A$ has the required factorization.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every $A$ has the required factorization.
+
+::: pf-proof
+
 The second column $(b,d)^T$ is nonzero, so set
 \[
 r=\sqrt{b^2+d^2}>0
@@ -93,10 +99,17 @@ Thus $L$ is lower triangular and both diagonal entries are positive. Since $L=K^
 \[
 A=KL.
 \]
+
 :::
 
-<1>2. The factorization is unique.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The factorization is unique.
+
+::: pf-proof
+
 Suppose
 \[
 A=KL,
@@ -123,20 +136,27 @@ There is exactly one positively oriented orthonormal first column compatible wit
 \[
 k_1=\frac1r\binom d{-b}.
 \]
-Hence $K$ is forced to be the matrix in <1>1, and then
+Hence $K$ is forced to be the matrix in step [](#s1){.pf-ref}, and then
 \[
 L=K^{-1}A
 \]
 is forced as well. Therefore the factorization is unique.
+
 :::
 
-<1>3. The factorization gives a homeomorphism
+:::
+
+::: {.pf-step #s3}
+
+The factorization gives a homeomorphism
 \[
 \operatorname{SO}(2)\times(0,\infty)\times\mathbb R
 \xrightarrow{\cong}
 \operatorname{SL}_2(\mathbb R).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every lower-triangular matrix in $\operatorname{SL}_2(\mathbb R)$ with positive diagonal has a unique form
 \[
 L(r,s)=
@@ -151,7 +171,7 @@ Define
 \[
 \Phi(K,r,s)=K L(r,s).
 \]
-By <1>1 and <1>2, $\Phi$ is bijective.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\Phi$ is bijective.
 
 It is continuous because matrix multiplication is continuous. Its inverse is also continuous: for
 \[
@@ -180,10 +200,17 @@ S^1\times(0,\infty)\times\mathbb R
 \xrightarrow{\cong}
 \operatorname{SL}_2(\mathbb R).
 \]
+
 :::
 
-<1>4. There is a strong deformation retraction onto $\operatorname{SO}(2)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+There is a strong deformation retraction onto $\operatorname{SO}(2)$.
+
+::: pf-proof
+
 For $A=K L(r,s)$ in the unique coordinates above and $u\in[0,1]$, set
 \[
 r_u=(1-u)r+u>0,
@@ -194,7 +221,7 @@ and define
 \[
 H(u,A)=K L(r_u,s_u).
 \]
-The coordinate homeomorphism in <1>3 shows that $H$ is continuous. At $u=0$,
+The coordinate homeomorphism in step [](#s3){.pf-ref} shows that $H$ is continuous. At $u=0$,
 \[
 H(0,A)=A,
 \]
@@ -207,21 +234,28 @@ If $A\in\operatorname{SO}(2)$, uniqueness of the factorization gives $L=I$, so $
 H(u,A)=A
 \]
 for every $u$. Hence $H$ is a strong deformation retraction of $\operatorname{SL}_2(\mathbb R)$ onto $\operatorname{SO}(2)$.
+
 :::
 
-<1>5. The topological conclusions follow.
-::: {.proof}
+:::
+
+::: pf-step
+
+The topological conclusions follow.
+
+::: pf-proof
+
 The factors
 \[
 S^1,\qquad(0,\infty),\qquad\mathbb R
 \]
-are path connected, so their product is path connected. By <1>3,
+are path connected, so their product is path connected. By step [](#s3){.pf-ref},
 \[
 \operatorname{SL}_2(\mathbb R)
 \]
 is path connected.
 
-By <1>4, inclusion of $\operatorname{SO}(2)$ is a homotopy equivalence, hence
+By step [](#s4){.pf-ref}, inclusion of $\operatorname{SO}(2)$ is a homotopy equivalence, hence
 \[
 \pi_1(\operatorname{SL}_2(\mathbb R))
 \cong
@@ -235,5 +269,11 @@ we obtain
 \[
 \boxed{\pi_1(\operatorname{SL}_2(\mathbb R))\cong\mathbb Z}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

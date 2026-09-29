@@ -57,21 +57,32 @@ $$
 w=(1\,8)(2\,7)(3\,6)(4\,5).
 $$
 
-<1>1. The identity symmetry fixes
+::: pf
+
+::: {.pf-step #s1}
+
+The identity symmetry fixes
 $$
 8!=40320
 $$
 placements.
 
-::: {.proof}
+::: pf-proof
+
 Every one of the $8!$ permutations of the columns determines a
 nonattacking rook placement, and the identity fixes all of them.
+
 :::
 
-<1>2. Neither the horizontal nor the vertical reflection fixes any
+:::
+
+::: {.pf-step #s2}
+
+Neither the horizontal nor the vertical reflection fixes any
 placement.
 
-::: {.proof}
+::: pf-proof
+
 Under vertical reflection, a rook in
 $$
 (i,j)
@@ -90,15 +101,21 @@ $$
 $$
 Again no row is fixed, so a fixed placement would contain two distinct
 rooks in the same column. Hence both fixed-point counts are $0$.
+
 :::
 
-<1>3. A placement is fixed by reflection in the main diagonal if and
+:::
+
+::: {.pf-step #s3}
+
+A placement is fixed by reflection in the main diagonal if and
 only if
 $$
 \sigma^2=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Reflection in the main diagonal sends the graph of $\sigma$ to
 $$
 \{(\sigma(i),i):1\le i\le8\},
@@ -109,16 +126,22 @@ $$
 \sigma=\sigma^{-1},
 $$
 equivalently $\sigma^2=1$.
+
 :::
 
-<1>4. Each diagonal reflection fixes exactly
+:::
+
+::: {.pf-step #s4}
+
+Each diagonal reflection fixes exactly
 $$
 764
 $$
 placements.
 
-::: {.proof}
-By step <1>3, the fixed placements for one diagonal are the
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the fixed placements for one diagonal are the
 involutions in $S_8$. An involution with exactly $k$ transpositions,
 where $0\le k\le4$, is obtained by choosing and pairing $2k$ of the
 $8$ symbols. Its number is
@@ -138,15 +161,21 @@ $$
 $$
 The two diagonal reflections are conjugate in the symmetry group of
 the square, so they have the same number of fixed placements.
+
 :::
 
-<1>5. A placement fixed by a rotation through $90^\circ$ corresponds
+:::
+
+::: {.pf-step #s5}
+
+A placement fixed by a rotation through $90^\circ$ corresponds
 to a permutation satisfying
 $$
 \sigma^2=w.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose the quarter-turn
 $$
 (i,j)\longmapsto(j,w(i)).
@@ -161,15 +190,21 @@ $$
 \sigma(\sigma(i))=w(i).
 $$
 This is exactly $\sigma^2=w$.
+
 :::
 
-<1>6. Each of the two quarter-turns fixes exactly
+:::
+
+::: {.pf-step #s6}
+
+Each of the two quarter-turns fixes exactly
 $$
 12
 $$
 placements.
 
-::: {.proof}
+::: pf-proof
+
 The permutation $w$ is a product of four disjoint transpositions. A
 cycle whose square is a product of two transpositions must be a
 $4$-cycle, and the square of a $4$-cycle is precisely a pair of
@@ -199,14 +234,20 @@ $$
 $$
 square roots occur. The two quarter-turns are conjugate as board
 symmetries and therefore have the same fixed-point count.
+
 :::
 
-<1>7. A placement is fixed by the $180^\circ$ rotation if and only if
+:::
+
+::: {.pf-step #s7}
+
+A placement is fixed by the $180^\circ$ rotation if and only if
 $$
 \sigma w=w\sigma.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The half-turn sends
 $$
 (i,\sigma(i))
@@ -220,15 +261,21 @@ $w(i)$ has column $w(\sigma(i))$ for every $i$, namely
 $$
 \sigma(w(i))=w(\sigma(i)).
 $$
+
 :::
 
-<1>8. The half-turn fixes exactly
+:::
+
+::: {.pf-step #s8}
+
+The half-turn fixes exactly
 $$
 384
 $$
 placements.
 
-::: {.proof}
+::: pf-proof
+
 The four orbits of $w$ are the pairs
 $$
 \{1,8\},\{2,7\},\{3,6\},\{4,5\}.
@@ -245,17 +292,23 @@ $$
 =
 384.
 $$
-By step <1>7 this is the fixed-point count.
+By step [](#s7){.pf-ref} this is the fixed-point count.
+
 :::
 
-<1>9. The number of rook placements up to the eight symmetries of the
+:::
+
+::: {.pf-step #s9}
+
+The number of rook placements up to the eight symmetries of the
 board is
 $$
 \boxed{5282}.
 $$
 
-::: {.proof}
-By the Polya--Burnside theorem and steps <1>1--<1>8, the number of
+::: pf-proof
+
+By the Polya--Burnside theorem and steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref}, the number of
 orbits is
 $$
 \begin{aligned}
@@ -273,11 +326,17 @@ $$
 5282.
 \end{aligned}
 $$
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>9 is the required number of equivalence classes.
 :::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref} is the required number of equivalence classes.
+
+:::
+
+:::
+
 :::

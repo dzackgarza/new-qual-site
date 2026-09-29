@@ -33,10 +33,15 @@ A\coloneqq S/R
 $$
 be the finite additive quotient group. Then $\abs A=n$.
 
-<1>1. Multiplication by $m$ is an automorphism of the additive group
+::: pf
+
+::: {.pf-step #s1}
+
+Multiplication by $m$ is an automorphism of the additive group
 $A$.
 
-::: {.proof}
+::: pf-proof
+
 Since $\gcd(m,n)=1$, choose integers $u,v$ with
 $$
 um+vn=1.
@@ -47,16 +52,22 @@ u(ma)=uma=(1-vn)a=a.
 $$
 Thus multiplication by $u$ is an inverse to multiplication by $m$ on
 $A$.
+
 :::
 
-<1>2. The natural map
+:::
+
+::: {.pf-step #s2}
+
+The natural map
 $$
 \phi:R/mR\longrightarrow S/mS
 $$
 is surjective.
 
-::: {.proof}
-Let $s\in S$. By step <1>1, multiplication by $m$ is surjective on
+::: pf-proof
+
+Let $s\in S$. By step [](#s1){.pf-ref}, multiplication by $m$ is surjective on
 $A$, so there is $t\in S$ such that
 $$
 m(t+R)=s+R.
@@ -67,11 +78,17 @@ r\coloneqq s-mt\in R.
 $$
 Then $s-r=mt\in mS$, so $s+mS=r+mS$. Thus every class in $S/mS$ is
 the image of a class from $R/mR$.
+
 :::
 
-<1>3. The map $\phi$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The map $\phi$ is injective.
+
+::: pf-proof
+
 Suppose $r\in R$ maps to zero in $S/mS$. Then
 $$
 r=ms
@@ -80,24 +97,36 @@ for some $s\in S$. In $A=S/R$ this says
 $$
 m(s+R)=r+R=0.
 $$
-Multiplication by $m$ is injective on $A$ by step <1>1, so
+Multiplication by $m$ is injective on $A$ by step [](#s1){.pf-ref}, so
 $s+R=0$, hence $s\in R$. Therefore
 $$
 r=ms\in mR,
 $$
 and the class of $r$ in $R/mR$ is zero.
+
 :::
 
-<1>4. The natural map is a ring isomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The natural map is a ring isomorphism.
+
+::: pf-proof
+
 The map is induced by the inclusion $R\hookrightarrow S$, so it is a
-ring homomorphism. Steps <1>2 and <1>3 show that it is bijective.
+ring homomorphism. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that it is bijective.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the assertion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the assertion.
+
+:::
+
+:::
+
 :::

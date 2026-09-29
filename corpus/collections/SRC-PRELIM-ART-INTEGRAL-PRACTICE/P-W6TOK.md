@@ -31,8 +31,15 @@ Compute, on each interval where the integrand is defined,
 :::
 
 ::: {.solution}
-<1>1. Integrate \(x/(x^4-16)\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Integrate \(x/(x^4-16)\).
+
+::: pf-proof
+
 Let \(u=x^2\), so \(du=2x\,dx\). Then
 \[
 \int\frac{x}{x^4-16}\,dx
@@ -48,10 +55,17 @@ we get
 \int\frac{x}{x^4-16}\,dx
 =\frac1{16}\log\left|\frac{x^2-4}{x^2+4}\right|+C.}
 \]
+
 :::
 
-<1>2. Integrate \(x\arctan x/(1+x^2)^2\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Integrate \(x\arctan x/(1+x^2)^2\).
+
+::: pf-proof
+
 Integrate by parts with
 \[
 u=\arctan x,
@@ -88,5 +102,11 @@ Therefore
 +\frac{x}{4(1+x^2)}
 +\frac14\arctan x+C.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

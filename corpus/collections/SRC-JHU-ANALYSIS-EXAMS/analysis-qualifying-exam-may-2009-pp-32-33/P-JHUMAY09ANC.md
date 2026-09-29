@@ -43,8 +43,14 @@ that $(c_n)$ eventually leaves every compact subset of $U$,
 equivalently that it has no subsequence converging to a point
 of $U$.
 
-<1>1. The limit has at most one zero.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The limit has at most one zero.
+
+::: pf-proof
+
 Uniform convergence implies compact-uniform convergence,
 so $f_0$ is holomorphic [@SS03]. Since it is nonconstant
 on connected $U$, its zeros are isolated. If it had
@@ -58,22 +64,36 @@ Rouché's theorem then gives at least one zero of $f_n$
 in each disk, since $f_0$ has one in each [@SS03]. The
 disjoint disks make these distinct, contradicting the
 single-point fiber $f_n^{-1}(0)=\{c_n\}$. This proves (a).
+
 :::
 
-<1>2. A zero of the limit forces $c_n$ to converge to it.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A zero of the limit forces $c_n$ to converge to it.
+
+::: pf-proof
+
 Suppose $f_0(a)=0$. For every sufficiently small $r>0$,
 the closed disk $\overline{D(a,r)}$ lies in $U$ and
-$f_0$ has no zero on its boundary. As in step <1>1,
+$f_0$ has no zero on its boundary. As in step [](#s1){.pf-ref},
 Rouché's theorem shows that $f_n$ has a zero inside
 this disk for all sufficiently large $n$. Its only
 zero is $c_n$, so $|c_n-a|<r$ eventually. Such radii
 can be chosen arbitrarily small; hence the entire
 sequence $c_n$ converges to $a$.
+
 :::
 
-<1>3. An interior subsequential limit of the zeros is a zero of $f_0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+An interior subsequential limit of the zeros is a zero of $f_0$.
+
+::: pf-proof
+
 Suppose $c_{n_k}\to a\in U$. Choose a fixed compact
 disk $K\subset U$ about $a$; it contains $c_{n_k}$
 for all sufficiently large $k$. Since $f_{n_k}(c_{n_k})=0$,
@@ -83,7 +103,7 @@ $$
 $$
 The first term tends to zero by continuity of the fixed
 function $f_0$, and the second by compact-uniform convergence.
-Thus $f_0(a)=0$. Together with step <1>2, this proves
+Thus $f_0(a)=0$. Together with step [](#s2){.pf-ref}, this proves
 that $f_0$ is zero-free exactly when $(c_n)$ has no
 subsequence converging inside $U$.
 
@@ -93,10 +113,17 @@ compactness yields an interior convergent subsequence.
 Conversely, an interior convergent subsequence eventually
 lies in a compact disk contained in $U$. This proves
 the equivalent compact-escape formulation.
+
 :::
 
-<1>4. A nonconstant zero-free limit is possible under the stated uniform convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+A nonconstant zero-free limit is possible under the stated uniform convergence.
+
+::: pf-proof
+
 Take $U=D=\{|z|<1\}$ and
 $$
 c_n=1-\frac1{n+1},\qquad f_n(z)=z-c_n,
@@ -107,5 +134,11 @@ $\sup_{z\in D}|f_n(z)-f_0(z)|=1/(n+1)\to0$.
 The limit $f_0$ is nonconstant and has no zero in $D$;
 its only zero is the boundary point one. This supplies
 the example required in (b) and verifies the criterion.
+
 :::
+
+:::
+
+:::
+
 :::

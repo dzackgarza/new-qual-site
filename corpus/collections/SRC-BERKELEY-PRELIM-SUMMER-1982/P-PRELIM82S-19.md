@@ -48,13 +48,18 @@ $$
 $$
 is divisible by $p-1$. Assume henceforth that $V\neq0$.
 
-<1>1. The linear map
+::: pf
+
+::: {.pf-step #s1}
+
+The linear map
 $$
 M-I:V\longrightarrow V
 $$
 is invertible.
 
-::: {.proof}
+::: pf-proof
+
 Its kernel is
 $$
 \ker(M-I)
@@ -64,9 +69,14 @@ $$
 By hypothesis, $M$ fixes no nonzero vector, so this kernel is $\{0\}$.
 Thus $M-I$ is injective. Since $V$ is finite-dimensional, every injective
 endomorphism of $V$ is surjective and hence invertible.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 \Phi_p(x)
 =
@@ -79,7 +89,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomial identity
 $$
 x^p-1
@@ -96,15 +107,21 @@ By hypothesis, $M^p=I$, so
 $$
 (M-I)\Phi_p(M)=0.
 $$
-Step <1>1 says that $M-I$ is invertible. Multiplying by its inverse gives
+Step [](#s1){.pf-ref} says that $M-I$ is invertible. Multiplying by its inverse gives
 $$
 \Phi_p(M)=0.
 $$
+
 :::
 
-<1>3. The polynomial $\Phi_p(x)$ is irreducible over $\QQ$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The polynomial $\Phi_p(x)$ is irreducible over $\QQ$.
+
+::: pf-proof
+
 The substitution
 $$
 x\longmapsto x+1
@@ -137,9 +154,14 @@ $$
 which is not divisible by $p^2$. Eisenstein's criterion with the prime
 $p$ therefore shows that $\Phi_p(x+1)$ is irreducible over $\QQ$.
 Consequently $\Phi_p(x)$ is irreducible over $\QQ$.
+
 :::
 
-<1>4. The quotient
+:::
+
+::: pf-step
+
+The quotient
 $$
 K
 =
@@ -152,8 +174,9 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>3, the polynomial $\Phi_p$ is irreducible over the field
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the polynomial $\Phi_p$ is irreducible over the field
 $\QQ$, so its principal ideal is maximal and the quotient is a field.
 Moreover,
 $$
@@ -164,12 +187,18 @@ $$
 1,x,\ldots,x^{p-2}
 $$
 form a $\QQ$-basis of the quotient, so its degree over $\QQ$ is $p-1$.
+
 :::
 
-<1>5. The vector space $V$ has a natural structure of vector space over
+:::
+
+::: pf-step
+
+The vector space $V$ has a natural structure of vector space over
 $K$.
 
-::: {.proof}
+::: pf-proof
+
 For a residue class
 $$
 [q(x)]\in K
@@ -192,7 +221,7 @@ q(x)-r(x)
 =
 s(x)\Phi_p(x)
 $$
-for some $s(x)\in\QQ[x]$, and step <1>2 gives
+for some $s(x)\in\QQ[x]$, and step [](#s2){.pf-ref} gives
 $$
 \bigl(q(M)-r(M)\bigr)v
 =
@@ -202,16 +231,22 @@ s(M)\Phi_p(M)v
 $$
 The field and vector-space axioms follow from the corresponding polynomial
 identities under evaluation at $M$.
+
 :::
 
-<1>6. The dimension of $V$ over $\QQ$ satisfies
+:::
+
+::: {.pf-step #s6}
+
+The dimension of $V$ over $\QQ$ satisfies
 $$
 \dim_{\QQ}V
 =
 (p-1)\dim_KV.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 m=\dim_KV.
@@ -242,22 +277,34 @@ $$
 =
 m(p-1).
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{
 p-1\mid\dim_{\QQ}V.
 }
 $$
 
-::: {.proof}
-Step <1>6 expresses $\dim_{\QQ}V$ as an integer multiple of $p-1$.
+::: pf-proof
+
+Step [](#s6){.pf-ref} expresses $\dim_{\QQ}V$ as an integer multiple of $p-1$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required divisibility statement.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required divisibility statement.
+
+:::
+
+:::
+
 :::

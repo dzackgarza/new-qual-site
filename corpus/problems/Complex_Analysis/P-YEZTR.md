@@ -36,7 +36,11 @@ Q(z)=\sum_{j=1}^m\frac{c_j}{(z_0-z)^j},
 $$
 After subtracting $Q$, the function $g=f-Q$ is holomorphic on a neighborhood of the closed unit disk. Hence there is some $R>1$ such that $g$ is holomorphic on $D_R(0)$.
 
-<1>1. For $|z|<1$,
+::: pf
+
+::: pf-step
+
+For $|z|<1$,
 $$
 \frac1{(z_0-z)^j}
 =\sum_{n=0}^\infty
@@ -54,7 +58,16 @@ q_n=
 \left(1+O(n^{-1})\right).
 $$
 
-<1>2. Write $g(z)=\sum b_nz^n$. Cauchy's estimates on any circle of radius $r$ with $1<r<R$ give $b_n=O(r^{-n})$. Hence the Taylor coefficients $a_n=q_n+b_n$ of $f$ satisfy
+:::
+
+::: pf-step
+
+Write $g(z)=\sum b_nz^n$. Cauchy's estimates on any circle of radius $r$ with $1<r<R$ give $b_n=O(r^{-n})$. Hence the Taylor coefficients $a_n=q_n+b_n$ of $f$ satisfy
+
+:::
+
+:::
+
 $$
 a_n=
 \frac{c_m}{(m-1)!}n^{m-1}z_0^{-(n+m)}

@@ -38,7 +38,12 @@ Prove that every closed subset $C\subseteq\mathbb R$ is the closure of a finite 
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: pf-step
+
+Let
 $$
 \mathcal I
 \coloneqq
@@ -46,16 +51,22 @@ $$
 $$
 Then $\mathcal I$ is countable.
 
-::: {.proof}
+::: pf-proof
+
 The set $\QQ$ is countable, so $\QQ\times\QQ$ is countable.
 The family $\mathcal I$ is indexed by the subset
 $$
 \{(p,q)\in\QQ^2:p<q\},
 $$
 and is therefore countable.
+
 :::
 
-<1>2. For every $I\in\mathcal I$ with
+:::
+
+::: {.pf-step #s2}
+
+For every $I\in\mathcal I$ with
 $$
 C\cap I\ne\varnothing,
 $$
@@ -74,19 +85,26 @@ $$
 D\subseteq C.
 $$
 
-::: {.proof}
+::: pf-proof
+
 There is at most one chosen point for each interval in the countable
 family $\mathcal I$, so $D$ is at most countable. Every chosen point
 belongs to $C$ by construction.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \overline D\subseteq C.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 D\subseteq C.
 $$
@@ -95,11 +113,17 @@ Hence
 $$
 \overline D\subseteq C.
 $$
+
 :::
 
-<1>4. Every point of $C$ lies in $\overline D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every point of $C$ lies in $\overline D$.
+
+::: pf-proof
+
 Fix $x\in C$ and let $\varepsilon>0$. By density of $\QQ$ in $\RR$,
 choose rational numbers $p,q$ such that
 $$
@@ -111,7 +135,7 @@ I=[p,q]\in\mathcal I,
 \qquad
 x\in C\cap I,
 $$
-so $C\cap I$ is nonempty and the construction in step <1>2 supplies
+so $C\cap I$ is nonempty and the construction in step [](#s2){.pf-ref} supplies
 $$
 x_I\in D\cap[p,q].
 $$
@@ -124,29 +148,41 @@ $\varepsilon>0$ was arbitrary,
 $$
 x\in\overline D.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{\overline D=C}.
 $$
 
-::: {.proof}
-Step <1>3 gives
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives
 $$
 \overline D\subseteq C,
 $$
-while step <1>4 gives
+while step [](#s4){.pf-ref} gives
 $$
 C\subseteq\overline D.
 $$
 Thus equality holds.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 shows that $D$ is finite or countable, and step <1>5 shows
+::: pf-qed
+
+Step [](#s2){.pf-ref} shows that $D$ is finite or countable, and step [](#s5){.pf-ref} shows
 that its closure is $C$.
+
 :::
+
+:::
+
 :::

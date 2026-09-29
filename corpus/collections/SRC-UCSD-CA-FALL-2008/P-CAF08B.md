@@ -40,17 +40,43 @@ Then there is a function $F \in H(B(0; 1) \setminus \{0\})$ such that $F|_{B(1/2
 :::
 
 ::: {.solution}
-<1>1. (a) **True.** Put $g(z)=(z-1)f(z)$. Then $|g(z)|\le1$ on the punctured disk, so $g$ has a removable singularity at $1$. Hence $f(z)=\widetilde g(z)/(z-1)$ has at worst a simple pole at $1$ and extends meromorphically.
 
-<1>2. (b) **True.** On the left half-disk define
+::: pf
+
+::: pf-step
+
+(a) **True.** Put $g(z)=(z-1)f(z)$. Then $|g(z)|\le1$ on the punctured disk, so $g$ has a removable singularity at $1$. Hence $f(z)=\widetilde g(z)/(z-1)$ has at worst a simple pole at $1$ and extends meromorphically.
+
+:::
+
+::: pf-step
+
+(b) **True.** On the left half-disk define
 $$
 F(z)=-\overline{f(-\bar z)}.
 $$
 For $z=it\in I$, one has $-\bar z=z$, and $f(it)\in i\mathbb R$ implies $-\overline{f(it)}=f(it)$. Thus the reflected function matches continuously across $I$. Schwarz reflection, equivalently Morera's theorem across the diameter, yields a holomorphic extension to $B(0;1)$.
 
-<1>3. (c) **False.** Take $G=\mathbb C$ and $f(z)=e^z$. Then $f'(z)\ne0$ everywhere, but $f(G)=\mathbb C^*$ is not simply connected.
+:::
 
-<1>4. (d) **True.** Since $f$ has no zero, $1/f$ is holomorphic. An interior minimum of $|f|$ would give an interior maximum of $|1/f|$, forcing $f$ to be constant by the maximum-modulus principle.
+::: pf-step
 
-<1>5. (e) **False.** Take a branch of $\log z$ on $B(1/2;1/4)$. It analytically continues along every path in $B(0;1)\setminus\{0\}$, but continuation once around $0$ changes its value by $2\pi i$. Hence there is no single-valued holomorphic extension to the punctured disk.
+(c) **False.** Take $G=\mathbb C$ and $f(z)=e^z$. Then $f'(z)\ne0$ everywhere, but $f(G)=\mathbb C^*$ is not simply connected.
+
+:::
+
+::: pf-step
+
+(d) **True.** Since $f$ has no zero, $1/f$ is holomorphic. An interior minimum of $|f|$ would give an interior maximum of $|1/f|$, forcing $f$ to be constant by the maximum-modulus principle.
+
+:::
+
+::: pf-step
+
+(e) **False.** Take a branch of $\log z$ on $B(1/2;1/4)$. It analytically continues along every path in $B(0;1)\setminus\{0\}$, but continuation once around $0$ changes its value by $2\pi i$. Hence there is no single-valued holomorphic extension to the punctured disk.
+
+:::
+
+:::
+
 :::

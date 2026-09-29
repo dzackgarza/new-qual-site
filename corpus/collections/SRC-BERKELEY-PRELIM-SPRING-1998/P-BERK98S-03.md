@@ -32,21 +32,32 @@ $$
 S\coloneqq T^2.
 $$
 
-<1>1. The map $S$ has a unique fixed point $x_0\in M$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The map $S$ has a unique fixed point $x_0\in M$.
+
+::: pf-proof
+
 By hypothesis, $S=T^2$ is a strict contraction of the nonempty complete
 metric space $M$ into itself. The contraction mapping theorem therefore
 gives a unique point $x_0\in M$ such that
 $$
 S(x_0)=x_0.
 $$
+
 :::
 
-<1>2. The point $T(x_0)$ is also fixed by $S$.
+:::
 
-::: {.proof}
-Using $S=T^2$ and step <1>1,
+::: {.pf-step #s2}
+
+The point $T(x_0)$ is also fixed by $S$.
+
+::: pf-proof
+
+Using $S=T^2$ and step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 S(T(x_0))
@@ -57,32 +68,50 @@ S(T(x_0))
 \end{aligned}
 $$
 Thus $T(x_0)$ is a fixed point of $S$.
+
 :::
 
-<1>3. The point $x_0$ is fixed by $T$.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2, both $x_0$ and $T(x_0)$ are fixed points of $S$.
-The fixed point of $S$ is unique by step <1>1, so
+::: {.pf-step #s3}
+
+The point $x_0$ is fixed by $T$.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, both $x_0$ and $T(x_0)$ are fixed points of $S$.
+The fixed point of $S$ is unique by step [](#s1){.pf-ref}, so
 $$
 T(x_0)=x_0.
 $$
+
 :::
 
-<1>4. The point $x_0$ is the unique fixed point of $T$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The point $x_0$ is the unique fixed point of $T$.
+
+::: pf-proof
+
 Let $y\in M$ satisfy $T(y)=y$. Then
 $$
 S(y)=T^2(y)=T(y)=y,
 $$
-so $y$ is a fixed point of $S$. By the uniqueness in step <1>1,
-$y=x_0$. Together with step <1>3, this proves both existence and uniqueness.
+so $y$ is a fixed point of $S$. By the uniqueness in step [](#s1){.pf-ref},
+$y=x_0$. Together with step [](#s3){.pf-ref}, this proves both existence and uniqueness.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

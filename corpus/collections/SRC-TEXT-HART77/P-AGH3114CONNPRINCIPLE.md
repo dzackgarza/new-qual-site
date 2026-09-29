@@ -48,7 +48,11 @@ Because $\mathcal X$ is a closed subscheme of $\PP_k^n\times T$, the
 morphism $\pi$ is projective. It is flat by hypothesis and of finite
 presentation because all schemes involved are of finite type over $k$.
 
-<1>1. For $t\in T$, let
+::: pf
+
+::: {.pf-step #s1}
+
+For $t\in T$, let
 $$
 c(t)
 $$
@@ -58,7 +62,8 @@ $$
 $$
 Then $c:T\to\ZZ_{\ge0}$ is lower semicontinuous.
 
-::: {.proof}
+::: pf-proof
+
 We give the Stein-factor argument in the form needed here.
 Fix $t\in T$ and put
 $$
@@ -113,30 +118,42 @@ c(u)\ge r=c(t)
 $$
 for all $u$ in an open neighbourhood of $t$. This is precisely lower
 semicontinuity.
+
 :::
 
-<1>2. For every closed point $u\in U$,
+:::
+
+::: {.pf-step #s2}
+
+For every closed point $u\in U$,
 $$
 c(u)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $T$ is a finite-type curve over the algebraically closed field $k$,
 every closed point has residue field $k$. Thus
 $$
 \mathcal X_{\overline u}=X_u.
 $$
 By hypothesis $X_u$ is connected, so it has exactly one connected component.
+
 :::
 
-<1>3. No point $t\in T$ can satisfy
+:::
+
+::: {.pf-step #s3}
+
+No point $t\in T$ can satisfy
 $$
 c(t)\ge2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose that $c(t)\ge2$ for some $t\in T$. By lower semicontinuity from
-step <1>1, there is a nonempty open neighbourhood
+step [](#s1){.pf-ref}, there is a nonempty open neighbourhood
 $$
 W\subseteq T
 $$
@@ -156,7 +173,7 @@ a closed point
 $$
 u\in W\cap U.
 $$
-Then step <1>2 gives
+Then step [](#s2){.pf-ref} gives
 $$
 c(u)=1,
 $$
@@ -165,12 +182,18 @@ $$
 c(u)\ge2,
 $$
 a contradiction.
+
 :::
 
-<1>4. Every fibre $X_t$ is connected.
+:::
 
-::: {.proof}
-Step <1>3 gives
+::: {.pf-step #s4}
+
+Every fibre $X_t$ is connected.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives
 $$
 c(t)\le1
 $$
@@ -190,13 +213,19 @@ for all $t$.
 
 A scheme whose geometric fibre is connected has connected ordinary fibre.
 Hence every $X_t$ is connected.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 rule out the appearance of a second connected component
-under specialization, and step <1>4 supplies nonemptiness and concludes that
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} rule out the appearance of a second connected component
+under specialization, and step [](#s4){.pf-ref} supplies nonemptiness and concludes that
 every fibre has exactly one connected component.
+
 :::
+
+:::
+
 :::

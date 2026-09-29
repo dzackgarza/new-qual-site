@@ -35,7 +35,11 @@ w:\pi_1(M)\longrightarrow\{\pm1\}\cong\mathbb Z/2
 $$
 be the orientation character. Since $M$ is connected, it is orientable exactly when $w$ is trivial.
 
-<1>1. Suppose $M$ is non-orientable and $p:\widetilde M\to M$ is a connected covering with $\widetilde M$ orientable. Put
+::: pf
+
+::: pf-step
+
+Suppose $M$ is non-orientable and $p:\widetilde M\to M$ is a connected covering with $\widetilde M$ orientable. Put
 $$
 H=p_*\pi_1(\widetilde M)\le\pi_1(M).
 $$
@@ -43,11 +47,18 @@ Then
 $$
 H\subseteq\ker w.
 $$
-::: {.proof}
+
+::: pf-proof
+
 A loop in $\widetilde M$ preserves the orientation of $\widetilde M$. Its projection therefore has trivial orientation monodromy in $M$, so its class lies in $\ker w$.
+
 :::
 
-<1>2. Since $M$ is non-orientable, $w$ is surjective, so
+:::
+
+::: pf-step
+
+Since $M$ is non-orientable, $w$ is surjective, so
 $$
 [\pi_1(M):\ker w]=2.
 $$
@@ -59,8 +70,20 @@ k=[\pi_1(M):H]
 $$
 so $k$ is even. If $[\ker w:H]$ is infinite, then the covering has infinitely many sheets.
 
-<1>3. If $\pi_1(M)$ has no subgroup of index $2$, then $M$ is orientable.
-::: {.proof}
-If $M$ were non-orientable, the surjective orientation character would have kernel of index $2$, contradicting the hypothesis.
 :::
+
+::: pf-step
+
+If $\pi_1(M)$ has no subgroup of index $2$, then $M$ is orientable.
+
+::: pf-proof
+
+If $M$ were non-orientable, the surjective orientation character would have kernel of index $2$, contradicting the hypothesis.
+
+:::
+
+:::
+
+:::
+
 :::

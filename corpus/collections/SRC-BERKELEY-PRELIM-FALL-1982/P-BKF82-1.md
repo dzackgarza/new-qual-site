@@ -35,8 +35,14 @@ Let $f:\mathbb R\to\mathbb R$ be continuous and nowhere zero, and consider $y'=f
 Because $f$ is continuous and nowhere zero on the connected set $\mathbb R$,
 it has constant sign.
 
-<1>1. Construct a local solution through an arbitrary initial value $c$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Construct a local solution through an arbitrary initial value $c$.
+
+::: pf-proof
+
 Fix $c\in\mathbb R$ and define
 $$
 H_c(y)=\int_c^y\frac{ds}{f(s)}.
@@ -66,10 +72,17 @@ $$
 y'(x)=f(y(x)).
 $$
 So a local $C^1$ solution exists.
+
 :::
 
-<1>2. The local solution is unique.
-::: {.proof}
+:::
+
+::: pf-step
+
+The local solution is unique.
+
+::: pf-proof
+
 Let $z(x)$ be any $C^1$ solution with $z(0)=c$. Then
 $$
 \frac d{dx}H_c(z(x))
@@ -86,10 +99,17 @@ $$
 z(x)=H_c^{-1}(x)=y(x).
 $$
 Hence the local solution through $c$ is unique.
+
 :::
 
-<1>3. Describe the maximal interval of existence.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Describe the maximal interval of existence.
+
+::: pf-proof
+
 The same formula shows that the maximal solution is the inverse of $H_c$ on
 the full interval
 $$
@@ -106,11 +126,18 @@ Thus the solution through $c$ exists for all $x\in\mathbb R$ exactly when
 $$
 H_c(\mathbb R)=\mathbb R.
 $$
+
 :::
 
-<1>4. Express the global-existence condition directly in terms of $f$.
-::: {.proof}
-Since $f$ has constant sign, the condition in step <1>3 is equivalent to
+:::
+
+::: pf-step
+
+Express the global-existence condition directly in terms of $f$.
+
+::: pf-proof
+
+Since $f$ has constant sign, the condition in step [](#s3){.pf-ref} is equivalent to
 $$
 \boxed{
 \int_0^{\infty}\frac{ds}{|f(s)|}=\infty
@@ -126,5 +153,11 @@ every initial-value solution is global. If either integral is finite, the
 corresponding endpoint of $H_c(\mathbb R)$ is finite, so the inverse solution
 reaches infinity in finite $x$-time and cannot be defined on all of
 $\mathbb R$.
+
 :::
+
+:::
+
+:::
+
 :::

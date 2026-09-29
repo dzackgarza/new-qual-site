@@ -46,8 +46,15 @@ Then every nonempty weak*-open set in $X^*$ is unbounded with respect to the ind
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 Take $X=\mathbb R$ with Lebesgue measure and let
 \[
 g_n=f_n=\mathbf1_{[n,n+1]}.
@@ -65,10 +72,17 @@ so $f=g=0$ almost everywhere. However
 \int f_n\,dx=1\not\longrightarrow0=\int f\,dx.
 \]
 Thus the assertion is false.
+
 :::
 
-<1>2. Part (b) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is false.
+
+::: pf-proof
+
 Let
 \[
 F(x,y)=\frac{xy}{(x^2+y^2)^2}
@@ -92,20 +106,34 @@ Thus on any angular sector on which $|\cos\theta\sin\theta|$ is bounded below by
 =\infty.
 \]
 So equality of the two iterated integrals does not justify an application of Fubini--Tonelli here.
+
 :::
 
-<1>3. Part (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is true.
+
+::: pf-proof
+
 The function $f$ is continuous, hence Lebesgue measurable. Since $g$ is measurable, $f-g$ is measurable. Therefore
 \[
 \{x:f(x)>g(x)\}
 =\{x:(f-g)(x)>0\}
 \]
 is Lebesgue measurable.
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 Let $U\subset X^*$ be a nonempty weak*-open set and choose $\phi_0\in U$. There exist $x_1,\dots,x_N\in X$ and $\varepsilon>0$ such that
 \[
 V:=\{\phi\in X^*:|\phi(x_j)-\phi_0(x_j)|<\varepsilon\text{ for }1\le j\le N\}
@@ -128,10 +156,23 @@ so $\phi_0+t\psi\in V\subset U$. But
 \|\phi_0+t\psi\|\ge |t|\,\|\psi\|-\|\phi_0\|\longrightarrow\infty
 \]
 as $|t|\to\infty$. Thus every nonempty weak*-open subset of $X^*$ is norm-unbounded.
+
 :::
 
-<1>5. Part (e) is true.
-::: {.proof}
-Hilbert spaces are reflexive. Hence every closed bounded ball is weakly compact. By the Eberlein--Smulian theorem, weak compactness in a Banach space is equivalent to weak sequential compactness. Therefore every bounded sequence in a Hilbert space has a weakly convergent subsequence.
 :::
+
+::: pf-step
+
+Part (e) is true.
+
+::: pf-proof
+
+Hilbert spaces are reflexive. Hence every closed bounded ball is weakly compact. By the Eberlein--Smulian theorem, weak compactness in a Banach space is equivalent to weak sequential compactness. Therefore every bounded sequence in a Hilbert space has a weakly convergent subsequence.
+
+:::
+
+:::
+
+:::
+
 :::

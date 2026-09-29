@@ -37,23 +37,33 @@ $$
 q\coloneqq\abs F=p^n.
 $$
 
-<1>1.
+::: pf
+
+::: {.pf-step #s1}
+
 $$
 \abs{G}=(q^2-1)(q^2-q).
 $$
 
-::: {.proof}
+::: pf-proof
+
 An invertible $2\times2$ matrix is the same as an ordered basis of
 $F^2$. Its first column can be any nonzero vector, giving
 $q^2-1$ choices. Once the first column is fixed, its span contains
 exactly $q$ vectors, so the second column has $q^2-q$ choices outside
 that span. Multiplying gives the formula.
+
 :::
 
-<1>2. The largest power of $p$ dividing $\abs G$ is $p^n=q$.
+:::
 
-::: {.proof}
-Step <1>1 gives
+::: {.pf-step #s2}
+
+The largest power of $p$ dividing $\abs G$ is $p^n=q$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 \abs G
 =(q^2-1)(q^2-q)
@@ -67,9 +77,14 @@ q+1\equiv1\pmod p,
 $$
 so neither $q-1$ nor $q+1$ is divisible by $p$. Thus the full
 $p$-part of $\abs G$ is $q=p^n$.
+
 :::
 
-<1>3. The subgroup
+:::
+
+::: {.pf-step #s3}
+
+The subgroup
 $$
 U\coloneqq
 \left\{
@@ -82,7 +97,8 @@ U\coloneqq
 $$
 is a Sylow-$p$ subgroup of $G$ and is isomorphic to $(F,+)$.
 
-::: {.proof}
+::: pf-proof
+
 Matrix multiplication gives
 $$
 \begin{pmatrix}
@@ -111,20 +127,32 @@ a\longmapsto
 $$
 is a group isomorphism. In particular,
 $\abs U=\abs F=q=p^n$, which is the full $p$-part of $\abs G$ by step
-<1>2. Thus $U$ is Sylow-$p$.
+[](#s2){.pf-ref}. Thus $U$ is Sylow-$p$.
+
 :::
 
-<1>4. Every Sylow-$p$ subgroup of $G$ is isomorphic to $(F,+)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every Sylow-$p$ subgroup of $G$ is isomorphic to $(F,+)$.
+
+::: pf-proof
+
 By the Sylow conjugacy theorem, every Sylow-$p$ subgroup of $G$ is
-conjugate to $U$. Conjugate subgroups are isomorphic, and step <1>3
+conjugate to $U$. Conjugate subgroups are isomorphic, and step [](#s3){.pf-ref}
 identifies $U$ with $(F,+)$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part 1, and step <1>4 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part 1, and step [](#s4){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

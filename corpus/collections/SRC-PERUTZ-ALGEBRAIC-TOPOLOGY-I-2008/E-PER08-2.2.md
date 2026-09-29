@@ -34,8 +34,14 @@ S^3\times(0,\infty)\times\mathbb C\longrightarrow \operatorname{SL}_2(\mathbb C)
 ::: {.solution}
 We identify separately the unitary factor and the positive-Hermitian factor.
 
-<1>1. There is a homeomorphism $S^3\cong\operatorname{SU}(2)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There is a homeomorphism $S^3\cong\operatorname{SU}(2)$.
+
+::: pf-proof
+
 Regard
 \[
 S^3=\{(\alpha,\beta)\in\mathbb C^2:|\alpha|^2+|\beta|^2=1\}.
@@ -67,10 +73,17 @@ Thus $U=\Theta(u_{11},u_{12})$, with
 |u_{11}|^2+|u_{12}|^2=1.
 \]
 Hence $\Theta$ is bijective. Both $\Theta$ and its inverse, obtained by taking the first row, are continuous, so $\Theta$ is a homeomorphism.
+
 :::
 
-<1>2. The positive-definite Hermitian matrices of determinant one are homeomorphic to $(0,\infty)\times\mathbb C$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The positive-definite Hermitian matrices of determinant one are homeomorphic to $(0,\infty)\times\mathbb C$.
+
+::: pf-proof
+
 A Hermitian matrix has the form
 \[
 P=\begin{pmatrix}r&z\\\overline z&s\end{pmatrix},
@@ -106,15 +119,22 @@ where $\mathcal P$ denotes the positive-definite Hermitian determinant-one matri
 P\longmapsto(P_{11},P_{12}),
 \]
 which is continuous. Hence $\Psi$ is a homeomorphism.
+
 :::
 
-<1>3. Polar multiplication is a homeomorphism
+:::
+
+::: {.pf-step #s3}
+
+Polar multiplication is a homeomorphism
 \[
 \operatorname{SU}(2)\times\mathcal P
 \xrightarrow{\cong}
 \operatorname{SL}_2(\mathbb C).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 \Phi(U,P)=UP.
@@ -155,11 +175,18 @@ Thus
 A\longmapsto(U,P)
 \]
 is continuous, so $\Phi$ is a homeomorphism.
+
 :::
 
-<1>4. Compose the three homeomorphisms.
-::: {.proof}
-By <1>1, <1>2, and <1>3, the map
+:::
+
+::: pf-step
+
+Compose the three homeomorphisms.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the map
 \[
 S^3\times(0,\infty)\times\mathbb C
 \longrightarrow
@@ -172,5 +199,11 @@ defined by
 \Theta(\alpha,\beta)P(r,z)
 \]
 is a composition of homeomorphisms. Therefore it is a homeomorphism, as required.
+
 :::
+
+:::
+
+:::
+
 :::

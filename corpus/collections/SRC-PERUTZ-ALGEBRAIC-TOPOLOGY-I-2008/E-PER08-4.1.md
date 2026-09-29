@@ -50,8 +50,14 @@ For the last part, the source suggests starting with the case of no relations an
 ::: {.solution}
 We use van Kampen throughout, replacing closed pieces by small open collars when needed.
 
-<1>1. Removing the interior of the summing ball does not change the fundamental group when $n>2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Removing the interior of the summing ball does not change the fundamental group when $n>2$.
+
+::: pf-proof
+
 For $j=1,2$, set
 \[
 Y_j=X_j\setminus i_j(\operatorname{int}D').
@@ -66,10 +72,17 @@ The $n$-ball is also simply connected. Van Kampen therefore gives
 \[
 \pi_1(X_j)\cong\pi_1(Y_j).
 \]
+
 :::
 
-<1>2. The connected-sum gluing gives a free product.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The connected-sum gluing gives a free product.
+
+::: pf-proof
+
 The connected sum is
 \[
 X_1\#X_2=Y_1\cup_{S^{n-1}}Y_2.
@@ -82,7 +95,7 @@ Since
 \[
 \pi_1(S^{n-1})=1,
 \]
-this pushout is the ordinary free product. Using <1>1,
+this pushout is the ordinary free product. Using step [](#s1){.pf-ref},
 \[
 \boxed{
 \pi_1(X_1\#X_2)
@@ -90,10 +103,17 @@ this pushout is the ordinary free product. Using <1>1,
 \pi_1(X_1)*\pi_1(X_2)
 }.
 \]
+
 :::
 
-<1>3. An iterated connected sum of $r$ copies of $S^1\times S^{n-1}$ has free fundamental group $F_r$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+An iterated connected sum of $r$ copies of $S^1\times S^{n-1}$ has free fundamental group $F_r$.
+
+::: pf-proof
+
 A loop in a product is a pair of loops, and homotopies are coordinatewise, so
 \[
 \pi_1(A\times B,(a,b))
@@ -112,22 +132,29 @@ hence
 \cong
 \mathbb Z.
 \]
-Applying <1>2 repeatedly gives
+Applying step [](#s2){.pf-ref} repeatedly gives
 \[
 \pi_1\left(\#^r(S^1\times S^{n-1})\right)
 \cong
 \underbrace{\mathbb Z*\cdots*\mathbb Z}_{r\text{ factors}}
 =F_r.
 \]
+
 :::
 
-<1>4. Realize the generators by a closed compact $4$-manifold with free fundamental group.
-::: {.proof}
+:::
+
+::: pf-step
+
+Realize the generators by a closed compact $4$-manifold with free fundamental group.
+
+::: pf-proof
+
 Start with
 \[
 M_0=\#^k(S^1\times S^3).
 \]
-This is a connected compact smooth $4$-manifold. By <1>3,
+This is a connected compact smooth $4$-manifold. By step [](#s3){.pf-ref},
 \[
 \pi_1(M_0)\cong F_k,
 \]
@@ -135,10 +162,17 @@ and we choose the isomorphism so that the $k$ standard circle factors represent 
 \[
 g_1,\dots,g_k.
 \]
+
 :::
 
-<1>5. Represent the relators by disjoint embedded circles with product tubular neighborhoods.
-::: {.proof}
+:::
+
+::: pf-step
+
+Represent the relators by disjoint embedded circles with product tubular neighborhoods.
+
+::: pf-proof
+
 For each relator $r_j\in F_k=\pi_1(M_0)$, choose a smooth loop representing its conjugacy class. Because the ambient dimension is $4$, general position allows the finitely many loops to be perturbed to pairwise disjoint embedded circles: one-dimensional submanifolds generically have neither self-intersections nor mutual intersections in dimension $4$.
 
 The manifold $M_0$ is orientable. The normal bundle of an oriented embedded circle in an oriented $4$-manifold is an oriented real rank-$3$ bundle over $S^1$. Such a bundle is trivial, since oriented rank-$3$ bundles over $S^1$ are classified by
@@ -150,10 +184,17 @@ Thus each relator circle has a tubular neighborhood
 N_j\cong S^1\times D^3,
 \]
 and the neighborhoods may be chosen pairwise disjoint.
+
 :::
 
-<1>6. Surgery on one relator quotients the fundamental group by its normal closure.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+Surgery on one relator quotients the fundamental group by its normal closure.
+
+::: pf-proof
+
 Let $M$ be the current $4$-manifold, let $C\subset M$ be one chosen relator circle, and let
 \[
 N\cong S^1\times D^3
@@ -194,13 +235,20 @@ van Kampen gives the pushout
 \pi_1(M)/\!\langle\!\langle[C]\rangle\!\rangle,
 \]
 where $\langle\!\langle[C]\rangle\!\rangle$ is the normal closure of the relator represented by $C$.
+
 :::
 
-<1>7. Perform the surgeries for all relators.
-::: {.proof}
-Because the tubular neighborhoods $N_1,\dots,N_\ell$ are disjoint, perform the surgery of <1>6 on each relator circle. The resulting space $M$ is again a connected compact smooth $4$-manifold: each step removes $S^1\times\operatorname{int}D^3$ and glues in the compact manifold $D^2\times S^2$ along their common boundary $S^1\times S^2$.
+:::
 
-Successively applying <1>6 gives
+::: pf-step
+
+Perform the surgeries for all relators.
+
+::: pf-proof
+
+Because the tubular neighborhoods $N_1,\dots,N_\ell$ are disjoint, perform the surgery of step [](#s6){.pf-ref} on each relator circle. The resulting space $M$ is again a connected compact smooth $4$-manifold: each step removes $S^1\times\operatorname{int}D^3$ and glues in the compact manifold $D^2\times S^2$ along their common boundary $S^1\times S^2$.
+
+Successively applying step [](#s6){.pf-ref} gives
 \[
 \pi_1(M)
 \cong
@@ -210,5 +258,11 @@ By the given presentation, the right-hand side is $G$. Hence
 \[
 \boxed{\pi_1(M)\cong G}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

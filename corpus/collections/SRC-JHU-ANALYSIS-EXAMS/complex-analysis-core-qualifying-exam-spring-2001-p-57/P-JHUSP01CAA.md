@@ -30,14 +30,28 @@ Question 1. Suppose that $f , g$ are entire holomorphic functions with $| f ( z 
 :::
 
 ::: {.solution}
-<1>1. If $g\equiv0$, the conclusion is immediate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $g\equiv0$, the conclusion is immediate.
+
+::: pf-proof
+
 The inequality gives $|f(z)|\le0$ for every $z$, so $f\equiv0$. Then
 $f=cg$ for any constant $c$, for example $c=0$.
+
 :::
 
-<1>2. Otherwise, $f/g$ extends holomorphically across every zero of $g$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Otherwise, $f/g$ extends holomorphically across every zero of $g$.
+
+::: pf-proof
+
 Assume $g$ is not identically zero. Let $a$ be a zero of $g$ of order $m$.
 Write
 $$
@@ -56,10 +70,17 @@ $|v(a)|\le0$, a contradiction. Hence $k\ge m$.
 Therefore the quotient $h=f/g$, initially holomorphic away from the discrete
 zero set of $g$, has a removable singularity at every zero of $g$. Filling in
 those values gives an entire function $h$.
+
 :::
 
-<1>3. The extended quotient is bounded and hence constant.
-::: {.proof}
+:::
+
+::: pf-step
+
+The extended quotient is bounded and hence constant.
+
+::: pf-proof
+
 Where $g(z)\ne0$, the original inequality gives
 $$
 |h(z)|=\left|\frac{f(z)}{g(z)}\right|\le1.
@@ -71,5 +92,11 @@ $$
 f=cg
 $$
 on the whole plane, as required.
+
 :::
+
+:::
+
+:::
+
 :::

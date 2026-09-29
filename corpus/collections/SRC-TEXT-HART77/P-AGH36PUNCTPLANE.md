@@ -43,12 +43,17 @@ $$
 be the inclusion.
 The principal opens $D(x)$ and $D(y)$ cover $X$.
 
-<1>1. Every regular function on $X$ is the restriction of a unique polynomial in $R$; hence
+::: pf
+
+::: {.pf-step #s1}
+
+Every regular function on $X$ is the restriction of a unique polynomial in $R$; hence
 $$
 \mco(X)=k[x,y].
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $f\in\mco(X)$.
 On the principal affine opens $D(x)$ and $D(y)$, write
 $$
@@ -69,13 +74,19 @@ Therefore $f$ equals the polynomial $c$ on both members of the cover, hence on a
 Conversely every polynomial restricts to a regular function on $X$.
 The restriction map $R\to\mco(X)$ is injective because a polynomial vanishing on the nonempty open subset $X$ of the irreducible variety $\AA^2$ vanishes identically.
 Hence it is an isomorphism.
+
 :::
 
-<1>2. The variety $X$ is not affine.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The variety $X$ is not affine.
+
+::: pf-proof
+
 Suppose that $X$ were affine.
-By step <1>1, the pullback on coordinate rings induced by the inclusion $j$ is the isomorphism
+By step [](#s1){.pf-ref}, the pullback on coordinate rings induced by the inclusion $j$ is the isomorphism
 $$
 j^*:k[x,y]=A(\AA^2)\longrightarrow A(X)=\mco(X)=k[x,y]
 $$
@@ -84,11 +95,17 @@ For affine varieties, a morphism is an isomorphism exactly when its induced homo
 Thus $j$ would be an isomorphism $X\cong\AA^2$.
 But $j$ is not surjective on points: its image omits $(0,0)$.
 This contradiction proves that $X$ is not affine.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves the required nonaffineness; step <1>1 supplies the global-function computation from the hint.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the required nonaffineness; step [](#s1){.pf-ref} supplies the global-function computation from the hint.
+
+:::
+
+:::
+
 :::

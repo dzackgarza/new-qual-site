@@ -32,28 +32,54 @@ One has
 |\operatorname{Gal}(F/k)|=n.
 \]
 
-<1>1. A finite separable extension of degree $n$ has exactly $n$ distinct
+::: pf
+
+::: {.pf-step #s1}
+
+A finite separable extension of degree $n$ has exactly $n$ distinct
 $k$-embeddings into an algebraic closure of $k$.
-::: {.proof}
+
+::: pf-proof
+
 This is the standard embedding theorem for finite separable extensions. Since
 $F/k$ is Galois, it is separable.
+
 :::
 
-<1>2. Every $k$-embedding $F\hookrightarrow\overline{k}$ has image equal to
+:::
+
+::: {.pf-step #s2}
+
+Every $k$-embedding $F\hookrightarrow\overline{k}$ has image equal to
 $F$.
-::: {.proof}
+
+::: pf-proof
+
 Because $F/k$ is Galois, it is normal. Normality means that every irreducible
 polynomial over $k$ having one root in $F$ splits completely in $F$; equivalently,
 every $k$-embedding of $F$ into an algebraic closure maps $F$ onto itself.
+
 :::
 
-<1>3. Hence the $n$ embeddings in <1>1 are exactly the $k$-automorphisms of
+:::
+
+::: pf-step
+
+Hence the $n$ embeddings in step [](#s1){.pf-ref} are exactly the $k$-automorphisms of
 $F$.
-::: {.proof}
-By <1>2 each embedding is an automorphism of $F$ over $k$, and every element of
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} each embedding is an automorphism of $F$ over $k$, and every element of
 $\operatorname{Gal}(F/k)$ is such an embedding. Therefore
 \[
 |\operatorname{Gal}(F/k)|=[F:k]=n.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

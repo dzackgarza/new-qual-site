@@ -34,8 +34,15 @@ Let $B$ be a real vector space.
 :::
 
 ::: {.solution}
-<1>1. Define a norm.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Define a norm.
+
+::: pf-proof
+
 A norm is a map $\|\cdot\|:B\to[0,\infty)$ such that for all $x,y\in B$ and $a\in\mathbb R$,
 \[
 \|x\|=0\iff x=0,
@@ -44,10 +51,17 @@ A norm is a map $\|\cdot\|:B\to[0,\infty)$ such that for all $x,y\in B$ and $a\i
 \qquad
 \|x+y\|\le\|x\|+\|y\|.
 \]
+
 :::
 
-<1>2. Construct the induced metric.
-::: {.proof}
+:::
+
+::: pf-step
+
+Construct the induced metric.
+
+::: pf-proof
+
 Define
 \[
 d(x,y)=\|x-y\|.
@@ -67,15 +81,29 @@ d(x,z)=\|x-z\|
 =d(x,y)+d(y,z).
 \]
 Thus $d$ is a metric.
+
 :::
 
-<1>3. Define a Banach space.
-::: {.proof}
+:::
+
+::: pf-step
+
+Define a Banach space.
+
+::: pf-proof
+
 A normed vector space is a Banach space if it is complete for the metric induced by its norm; equivalently, every norm-Cauchy sequence converges in norm to an element of the space.
+
 :::
 
-<1>4. State Uniform Boundedness.
-::: {.proof}
+:::
+
+::: pf-step
+
+State Uniform Boundedness.
+
+::: pf-proof
+
 Let $B$ be Banach, let $N$ be normed, and let $\mathcal T$ be a family of bounded linear operators $T:B\to N$.
 If for every $x\in B$,
 \[
@@ -86,10 +114,17 @@ then
 \boxed{\sup_{T\in\mathcal T}\|T\|<\infty.}
 \]
 This is the Uniform Boundedness Principle, or Banach--Steinhaus theorem.
+
 :::
 
-<1>5. Explain the Baire-category argument.
-::: {.proof}
+:::
+
+::: pf-step
+
+Explain the Baire-category argument.
+
+::: pf-proof
+
 For $m\in\mathbb N$, set
 \[
 E_m=\left\{x\in B:\sup_{T\in\mathcal T}\|Tx\|\le m\right\}.
@@ -117,5 +152,11 @@ Hence
 \[
 \sup_{T\in\mathcal T}\|T\|\le\frac{2m}{r}<\infty.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

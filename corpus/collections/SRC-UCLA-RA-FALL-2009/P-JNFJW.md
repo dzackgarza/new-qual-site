@@ -43,13 +43,20 @@ b. Show by example that the word "convex" cannot be replaced by "connected and s
 :::
 
 ::: {.solution}
-<1>1. Let $z_1,z_2\in\Omega$ with $z_1\ne z_2$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $z_1,z_2\in\Omega$ with $z_1\ne z_2$.
 Then
 \[
 \frac{f(z_2)-f(z_1)}{z_2-z_1}
 =\int_0^1f'((1-t)z_1+tz_2)\,dt.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Convexity gives
 \[
 \gamma(t)=(1-t)z_1+tz_2\in\Omega
@@ -66,11 +73,18 @@ f(z_2)-f(z_1)
 =(z_2-z_1)\int_0^1f'(\gamma(t))\,dt,
 \]
 and division by $z_2-z_1$ gives the claim.
+
 :::
 
-<1>2. The map $f$ is one-to-one on $\Omega$.
-::: {.proof}
-Taking real parts in <1>1 gives
+:::
+
+::: pf-step
+
+The map $f$ is one-to-one on $\Omega$.
+
+::: pf-proof
+
+Taking real parts in step [](#s1){.pf-ref} gives
 \[
 \operatorname{Re}\frac{f(z_2)-f(z_1)}{z_2-z_1}
 =\int_0^1\operatorname{Re}f'(\gamma(t))\,dt.
@@ -85,7 +99,6 @@ which implies
 f(z_2)\ne f(z_1).
 \]
 This proves part (a).
-:::
 
 For part (b), consider
 \[
@@ -93,12 +106,20 @@ F(z)=z+\frac1z,
 \qquad z\ne0.
 \]
 
-<1>3. The derivative of $F$ satisfies
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The derivative of $F$ satisfies
 \[
 \operatorname{Re}F'(re^{i\theta})
 =1-\frac{\cos(2\theta)}{r^2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 We have
 \[
 F'(z)=1-\frac1{z^2}.
@@ -108,9 +129,14 @@ Substituting $z=re^{i\theta}$ gives
 \frac1{z^2}=r^{-2}e^{-2i\theta},
 \]
 whose real part is $r^{-2}\cos(2\theta)$.
+
 :::
 
-<1>4. Let $\Gamma$ be the simple polygonal arc with successive vertices
+:::
+
+::: {.pf-step #s4}
+
+Let $\Gamma$ be the simple polygonal arc with successive vertices
 \[
 z_+=e^{i\pi/3},
 \quad
@@ -127,9 +153,11 @@ Then
 \operatorname{Re}F'(z)>0
 \]
 for every $z\in\Gamma$.
-::: {.proof}
+
+::: pf-proof
+
 On the radial segments $[z_+,a]$ and $[c,z_-]$, the argument is respectively $\pi/3$ and $-\pi/3$.
-Thus <1>3 gives
+Thus step [](#s3){.pf-ref} gives
 \[
 \operatorname{Re}F'(re^{\pm i\pi/3})
 =1-\frac{\cos(2\pi/3)}{r^2}
@@ -138,25 +166,32 @@ Thus <1>3 gives
 
 Every point of the two middle line segments $[a,b]$ and $[b,c]$ has modulus at least $\sqrt3>1$.
 Indeed, the line through $a=(1,\sqrt3)$ and $b=(2,0)$ has distance $\sqrt3$ from the origin, and the lower segment is its reflection.
-For $|z|>1$, <1>3 gives
+For $|z|>1$, step [](#s3){.pf-ref} gives
 \[
 \operatorname{Re}F'(z)
 \ge1-\frac1{|z|^2}>0.
 \]
 Hence the real part of the derivative is positive on every segment of $\Gamma$.
+
 :::
 
-<1>5. There is a connected simply connected open set $\Omega$ containing $\Gamma$ such that
+:::
+
+::: {.pf-step #s5}
+
+There is a connected simply connected open set $\Omega$ containing $\Gamma$ such that
 \[
 \operatorname{Re}F'(z)>0
 \]
 for all $z\in\Omega$.
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 U=\{z\in\mathbb C\setminus\{0\}:\operatorname{Re}F'(z)>0\}.
 \]
-This is open by continuity of $F'$, and <1>4 gives
+This is open by continuity of $F'$, and step [](#s4){.pf-ref} gives
 \[
 \Gamma\subseteq U.
 \]
@@ -173,10 +208,17 @@ Then $\Omega$ is connected and simply connected, and by construction
 \operatorname{Re}F'(z)>0
 \]
 throughout $\Omega$.
+
 :::
 
-<1>6. The function $F$ is not one-to-one on $\Omega$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The function $F$ is not one-to-one on $\Omega$.
+
+::: pf-proof
+
 Both endpoints $z_+,z_-$ of $\Gamma$ lie in $\Omega$, and they are distinct.
 But
 \[
@@ -192,10 +234,16 @@ Thus
 F(z_+)=F(z_-)
 \]
 with $z_+\ne z_-$.
-By <1>5, $\Omega$ is connected and simply connected and satisfies
+By step [](#s5){.pf-ref}, $\Omega$ is connected and simply connected and satisfies
 \[
 \operatorname{Re}F'>0.
 \]
 Therefore convexity in part (a) cannot be replaced merely by connectedness and simple connectedness.
+
 :::
+
+:::
+
+:::
+
 :::

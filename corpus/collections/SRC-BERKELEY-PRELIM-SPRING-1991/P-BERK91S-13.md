@@ -45,9 +45,14 @@ $$
 and let $C_R$ be the upper semicircle parametrized by
 $z=Re^{i\theta}$ for $0\le\theta\le\pi$, oriented from $R$ to $-R$.
 
-<1>1. For every $R>3$, $I_R=\operatorname{Im}J_R$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For every $R>3$, $I_R=\operatorname{Im}J_R$.
+
+::: pf-proof
+
 Rationalizing the denominator gives
 $$
 \frac{\sin x}{x-3i}
@@ -59,11 +64,17 @@ $$
 I_R=\int_{-R}^{R}\frac{x\sin x}{x^2+9}\,dx
 =\operatorname{Im}J_R.
 $$
+
 :::
 
-<1>2. The integral of $f$ over $C_R$ tends to zero as $R\to\infty$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The integral of $f$ over $C_R$ tends to zero as $R\to\infty$.
+
+::: pf-proof
+
 For $z\in C_R$, the reverse triangle inequality gives
 $$
 \abs{g(z)}\le\frac{R}{R^2-9}.
@@ -73,11 +84,17 @@ $$
 \abs{\int_{C_R}f(z)\,dz}
 \le\frac{\pi R}{R^2-9}\longrightarrow0.
 $$
+
 :::
 
-<1>3. The limit of $J_R$ is $\pi i e^{-3}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The limit of $J_R$ is $\pi i e^{-3}$.
+
+::: pf-proof
+
 The real segment from $-R$ to $R$, followed by $C_R$, is the
 positively oriented boundary of the upper half-disk. The only
 [[D-AUD6K|pole]] of $f$ inside it is the
@@ -91,24 +108,36 @@ The [[T-HRPNO|residue theorem]] therefore gives
 $$
 J_R+\int_{C_R}f(z)\,dz=\pi i e^{-3}.
 $$
-Step <1>2 proves the claimed limit.
+Step [](#s2){.pf-ref} proves the claimed limit.
+
 :::
 
-<1>4. The requested limit is $\boxed{\pi e^{-3}}$.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>3 and continuity of the imaginary-part map,
+::: {.pf-step #s4}
+
+The requested limit is $\boxed{\pi e^{-3}}$.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s3){.pf-ref} and continuity of the imaginary-part map,
 $$
 \lim_{R\to\infty}I_R
 =\operatorname{Im}\left(\lim_{R\to\infty}J_R\right)
 =\operatorname{Im}(\pi i e^{-3})
 =\pi e^{-3}.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves existence and evaluates the symmetric improper integral.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves existence and evaluates the symmetric improper integral.
+
+:::
+
+:::
+
 :::

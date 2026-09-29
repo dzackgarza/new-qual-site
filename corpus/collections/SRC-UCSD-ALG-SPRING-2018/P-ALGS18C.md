@@ -33,25 +33,50 @@ Suppose $p$ is a prime number and the minimal polynomial of $g \in \operatorname
 ::: {.solution}
 **(a). Case $F = \mathbb{C}$:**
 
-<1>1. Factor the minimal polynomial over $\mathbb{C}$:
+::: pf
+
+::: pf-step
+
+Factor the minimal polynomial over $\mathbb{C}$:
 \[
 t^p - 1 = \prod_{k=0}^{p-1} (t - \zeta^k), \quad \text{where } \zeta = e^{2\pi i/p}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 over $\mathbb{C}$, the $p$-th roots of unity are distinct.
+
 :::
 
-<1>2. The minimal polynomial $m_g(t) = t^p - 1$ has $p$ distinct roots over $\mathbb{C}$, so $g$ is diagonalizable.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The minimal polynomial $m_g(t) = t^p - 1$ has $p$ distinct roots over $\mathbb{C}$, so $g$ is diagonalizable.
+
+::: pf-proof
+
 a matrix is diagonalizable over an algebraically closed field if and only if its minimal polynomial has no repeated roots.
+
 :::
 
-<1>3. Since $g \in \operatorname{GL}_p(\mathbb{C})$ is a $p \times p$ matrix and has $p$ distinct eigenvalues $\{1, \zeta, \zeta^2, \dots, \zeta^{p-1}\}$, each eigenvalue has algebraic and geometric multiplicity 1.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Since $g \in \operatorname{GL}_p(\mathbb{C})$ is a $p \times p$ matrix and has $p$ distinct eigenvalues $\{1, \zeta, \zeta^2, \dots, \zeta^{p-1}\}$, each eigenvalue has algebraic and geometric multiplicity 1.
+
+::: pf-proof
+
 the sum of the multiplicities is $\deg(\operatorname{char}_g(t)) = p$, and each of the $p$ roots of $m_g(t)$ must be an eigenvalue.
+
 :::
 
-<1>4. Therefore the Jordan canonical form of $g$ is the diagonal matrix:
+:::
+
+::: {.pf-step #s4}
+
+Therefore the Jordan canonical form of $g$ is the diagonal matrix:
 \[
 J = \begin{pmatrix}
 1 & 0 & 0 & \cdots & 0 \\
@@ -61,31 +86,59 @@ J = \begin{pmatrix}
 0 & 0 & 0 & \cdots & \zeta^{p-1}
 \end{pmatrix}.
 \]
-::: {.proof}
-<1>2 and <1>3.
-:::
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 
 **(b). Case $F = \overline{\mathbb{F}}_p$:**
 
-<1>5. Factor the minimal polynomial in characteristic $p$:
+:::
+
+:::
+
+::: pf-step
+
+Factor the minimal polynomial in characteristic $p$:
 \[
 t^p - 1 = (t - 1)^p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 in characteristic $p$, the Frobenius identity $(a - b)^p = a^p - b^p$ gives $(t - 1)^p = t^p - 1^p = t^p - 1$.
+
 :::
 
-<1>6. The only eigenvalue of $g$ is $\lambda = 1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The only eigenvalue of $g$ is $\lambda = 1$.
+
+::: pf-proof
+
 the roots of the minimal polynomial are the eigenvalues of $g$.
+
 :::
 
-<1>7. The size of the largest Jordan block for eigenvalue $1$ is the power of $(t - 1)$ in the minimal polynomial, which is $p$.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+The size of the largest Jordan block for eigenvalue $1$ is the power of $(t - 1)$ in the minimal polynomial, which is $p$.
+
+::: pf-proof
+
 for any eigenvalue $\lambda$, the degree of $(t - \lambda)$ in the minimal polynomial equals the size of the largest Jordan block associated with $\lambda$.
+
 :::
 
-<1>8. Since $g$ is a $p \times p$ matrix, there is a single Jordan block of size $p$:
+:::
+
+::: {.pf-step #s8}
+
+Since $g$ is a $p \times p$ matrix, there is a single Jordan block of size $p$:
 \[
 J = J_p(1) = \begin{pmatrix}
 1 & 1 & 0 & \cdots & 0 \\
@@ -95,12 +148,21 @@ J = J_p(1) = \begin{pmatrix}
 0 & 0 & \cdots & 0 & 1
 \end{pmatrix}.
 \]
-::: {.proof}
-<1>7 and the matrix dimension is $p$.
+
+::: pf-proof
+
+Step [](#s7){.pf-ref} and the matrix dimension is $p$.
+
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-<1>4 (a) and <1>8 (b).
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} (a) and step [](#s8){.pf-ref} (b).
+
+:::
+
+:::
+
 :::

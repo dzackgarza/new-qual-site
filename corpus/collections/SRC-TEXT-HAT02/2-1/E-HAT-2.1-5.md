@@ -40,7 +40,11 @@ Let $U,L$ denote the two oriented $2$-simplices, with orientations chosen so tha
 \partial L=a-b-c.
 \]
 
-<1>1. The simplicial chain complex is
+::: pf
+
+::: pf-step
+
+The simplicial chain complex is
 \[
 0\longrightarrow
 \mathbb Z^2
@@ -60,24 +64,38 @@ where, in the ordered bases $(U,L)$ and $(a,b,c)$,
 -1&-1
 \end{pmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 There are two triangles, three edge classes, and one vertex.
 Thus $C_2=\mathbb Z^2$, $C_1=\mathbb Z^3$, and $C_0=\mathbb Z$.
 All edge endpoints are the unique vertex, so $\partial_1=0$.
 Tracing the three oriented sides of the two triangles in the square model gives the displayed formulas for $\partial U$ and $\partial L$.
+
 :::
 
-<1>2. The map $\partial_2$ is injective.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $\partial_2$ is injective.
+
+::: pf-proof
+
 If
 \[
 x(a+b-c)+y(a-b-c)=0,
 \]
 then the $b$-coordinate gives $x-y=0$, while the $a$-coordinate gives $x+y=0$.
 Hence $x=y=0$.
+
 :::
 
-<1>3. The quotient
+:::
+
+::: {.pf-step #s3}
+
+The quotient
 \[
 C_1/\operatorname{im}\partial_2
 \]
@@ -85,7 +103,9 @@ is isomorphic to
 \[
 \mathbb Z\oplus\mathbb Z/2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The two boundary relations are
 \[
 a+b-c=0,
@@ -108,9 +128,14 @@ C_1/\operatorname{im}\partial_2
 \cong
 \mathbb Z\oplus\mathbb Z/2.
 \]
+
 :::
 
-<1>4. Hence the simplicial homology groups of the Klein bottle are
+:::
+
+::: pf-step
+
+Hence the simplicial homology groups of the Klein bottle are
 \[
 \boxed{
 H_0\cong\mathbb Z,
@@ -120,12 +145,20 @@ H_1\cong\mathbb Z\oplus\mathbb Z/2,
 H_k=0\quad(k\ge2).
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $\partial_1=0$, connectedness gives $H_0\cong\mathbb Z$ and
 \[
 H_1=C_1/\operatorname{im}\partial_2,
 \]
-which is <1>3.
+which is step [](#s3){.pf-ref}.
 Injectivity of $\partial_2$ gives $H_2=0$, and there are no higher simplices.
+
 :::
+
+:::
+
+:::
+
 :::

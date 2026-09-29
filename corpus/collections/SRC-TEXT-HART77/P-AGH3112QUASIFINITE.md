@@ -37,9 +37,14 @@ Show that a projective morphism with finite fibres, that is, a quasi-finite proj
 ::: {.solution}
 We use the standing Noetherian hypotheses of Chapter III.
 
-<1>1. It is enough to prove the assertion after replacing the target by an arbitrary affine open subset.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+It is enough to prove the assertion after replacing the target by an arbitrary affine open subset.
+
+::: pf-proof
+
 Finiteness of a morphism is local on the target. If $V\subseteq Y$ is open,
 then the base change
 $$
@@ -47,15 +52,21 @@ f_V:f^{-1}(V)\longrightarrow V
 $$
 is again projective and has finite fibres. Thus it suffices to prove that
 $f_V$ is finite for every affine open $V\subseteq Y$.
+
 :::
 
-<1>2. Assume henceforth that $Y$ is affine. For every coherent ideal sheaf
+:::
+
+::: {.pf-step #s2}
+
+Assume henceforth that $Y$ is affine. For every coherent ideal sheaf
 $\mci\subseteq\mco_X$,
 $$
 R^1f_*\mci=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every fibre of $f$ is finite, hence has dimension $0$ when nonempty. Therefore
 the maximum fibre dimension in [@Har10a, Corollary III.11.2] is
 $$
@@ -69,14 +80,20 @@ R^if_*\mcf=0
 (i>r).
 $$
 Applying it to $\mcf=\mci$ and $i=1$ gives the claim.
+
 :::
 
-<1>3. For every coherent ideal sheaf $\mci\subseteq\mco_X$,
+:::
+
+::: {.pf-step #s3}
+
+For every coherent ideal sheaf $\mci\subseteq\mco_X$,
 $$
 H^1(X,\mci)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The low-degree part of the [[T-COHLERAY|Leray spectral sequence]] gives
 $$
 0
@@ -90,26 +107,37 @@ Since $Y$ is affine,
 $$
 H^1(Y,f_*\mci)=0
 $$
-by [[T-COHAFF|affine vanishing]]. Step <1>2 gives
+by [[T-COHAFF|affine vanishing]]. Step [](#s2){.pf-ref} gives
 $$
 H^0(Y,R^1f_*\mci)=0.
 $$
 Hence the middle group is zero.
+
 :::
 
-<1>4. The scheme $X$ is affine.
+:::
 
-::: {.proof}
-Step <1>3 proves
+::: {.pf-step #s4}
+
+The scheme $X$ is affine.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} proves
 $$
 H^1(X,\mci)=0
 $$
 for every coherent ideal sheaf $\mci$ on the Noetherian scheme $X$.
 Therefore [[T-5IOUR|Serre's cohomological criterion for affineness]] gives
 that $X$ is affine.
+
 :::
 
-<1>5. Writing
+:::
+
+::: {.pf-step #s5}
+
+Writing
 $$
 Y=\Spec A,
 \qquad
@@ -117,7 +145,8 @@ X=\Spec B,
 $$
 the $A$-module $B$ is finite.
 
-::: {.proof}
+::: pf-proof
+
 The structure sheaf $\mco_X$ is coherent. Since $f$ is projective, the
 coherence theorem for projective direct images gives that
 $$
@@ -134,17 +163,23 @@ $$
 =B.
 $$
 Thus $B$ is finite as an $A$-module.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-By steps <1>4 and <1>5, over every affine open $V=\Spec A\subseteq Y$ the
+::: pf-qed
+
+By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, over every affine open $V=\Spec A\subseteq Y$ the
 inverse image is affine,
 $$
 f^{-1}(V)=\Spec B,
 $$
 with $B$ a finite $A$-module. This is exactly the definition of a finite
 morphism. Hence $f$ is finite.
+
 :::
+
+:::
+
 :::

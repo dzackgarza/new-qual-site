@@ -28,28 +28,52 @@ is not surjective, and conclude that the functor $\operatorname{Hom}_\mathbb{Z}(
 :::
 
 ::: {.solution}
-<1>1. $\Hom_{\ZZ}(\ZZ/2\ZZ,\ZZ)=0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$\Hom_{\ZZ}(\ZZ/2\ZZ,\ZZ)=0$.
+
+::: pf-proof
+
 For $f\colon\ZZ/2\ZZ\to\ZZ$, $2f([1])=f([2])=f([0])=0$, and $\ZZ$ has no nonzero element $y$ with $2y=0$, so $f([1])=0$.
 Since $[1]$ generates $\ZZ/2\ZZ$, $f=0$.
+
 :::
 
-<1>2. $\Hom_{\ZZ}(\ZZ/2\ZZ,\ZZ/2\ZZ)\neq0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\Hom_{\ZZ}(\ZZ/2\ZZ,\ZZ/2\ZZ)\neq0$.
+
+::: pf-proof
+
 It contains $\operatorname{id}_{\ZZ/2\ZZ}$, which sends $[1]$ to $[1]\neq[0]$.
+
 :::
 
-<1>3. $\pi_*$ is not surjective.
-
-::: {.proof}
-By step <1>1, the image of $\pi_*$ is $\{0\}$, and by step <1>2 the target is nonzero.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #s3}
 
-::: {.proof}
-$\pi$ is surjective, but by step <1>3 the induced map $\pi_*$ is not, so $\Hom_{\ZZ}(\ZZ/2\ZZ,-)$ does not preserve the exactness of $\ZZ\xrightarrow{\pi}\ZZ/2\ZZ\to0$.
+$\pi_*$ is not surjective.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the image of $\pi_*$ is $\{0\}$, and by step [](#s2){.pf-ref} the target is nonzero.
+
 :::
+
+:::
+
+::: pf-qed
+
+$\pi$ is surjective, but by step [](#s3){.pf-ref} the induced map $\pi_*$ is not, so $\Hom_{\ZZ}(\ZZ/2\ZZ,-)$ does not preserve the exactness of $\ZZ\xrightarrow{\pi}\ZZ/2\ZZ\to0$.
+
+:::
+
+:::
+
 :::

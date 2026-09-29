@@ -53,7 +53,11 @@ X_1=X_y,
 \mcf_1=\mcf_y.
 $$
 
-<1>1. For every $n\ge1$ there is a short exact sequence
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\ge1$ there is a short exact sequence
 $$
 0
 \longrightarrow
@@ -67,7 +71,8 @@ $$
 where the first term is regarded as a sheaf on $X_{n+1}$ supported on
 $X_y$.
 
-::: {.proof}
+::: pf-proof
+
 Base-change first to $X_A=X\times_Y\Spec A$ and write $\mcf_A$ for the
 pullback of $\mcf$. Flatness of $\mcf$ over $Y$ says that $\mcf_A$ is
 flat over $A$. Hence tensoring the exact sequence
@@ -87,14 +92,20 @@ $\mfm^n/\mfm^{n+1}$, the left term is
 $$
 \mcf_y\otimes_k \mfm^n/\mfm^{n+1}.
 $$
+
 :::
 
-<1>2. For every $n\ge1$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n\ge1$,
 $$
 H^i(X_n,\mcf_n)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The case $n=1$ is the hypothesis
 $$
 H^i(X_y,\mcf_y)=0.
@@ -108,7 +119,7 @@ is the pushforward from the closed fibre of a finite direct sum of copies
 of $\mcf_y$. A closed immersion has exact pushforward, so its $i$-th
 cohomology is the corresponding finite direct sum of
 $H^i(X_y,\mcf_y)$ and is therefore zero. The long exact cohomology
-sequence of step <1>1 consequently contains
+sequence of step [](#s1){.pf-ref} consequently contains
 an injection
 $$
 H^i(X_{n+1},\mcf_{n+1})
@@ -116,14 +127,20 @@ H^i(X_{n+1},\mcf_{n+1})
 H^i(X_n,\mcf_n)=0.
 $$
 Thus $H^i(X_{n+1},\mcf_{n+1})=0$, and induction proves the claim.
+
 :::
 
-<1>3. The completed stalk of $R^if_*\mcf$ at $y$ is zero:
+:::
+
+::: {.pf-step #s3}
+
+The completed stalk of $R^if_*\mcf$ at $y$ is zero:
 $$
 \widehat{(R^if_*\mcf)_y}=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is projective, it is proper. By
 [[T-COHFF|the theorem on formal functions]],
 $$
@@ -131,19 +148,25 @@ $$
 \cong
 \varprojlim_n H^i(X_n,\mcf_n).
 $$
-Every term of this inverse system is zero by step <1>2, so the inverse
+Every term of this inverse system is zero by step [](#s2){.pf-ref}, so the inverse
 limit is zero.
+
 :::
 
-<1>4. The stalk $(R^if_*\mcf)_y$ is zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The stalk $(R^if_*\mcf)_y$ is zero.
+
+::: pf-proof
+
 For a projective morphism of Noetherian schemes, the higher direct image of
 a coherent sheaf is coherent. Hence
 $$
 M=(R^if_*\mcf)_y
 $$
-is a finite $A$-module. Its $\mfm$-adic completion is zero by step <1>3.
+is a finite $A$-module. Its $\mfm$-adic completion is zero by step [](#s3){.pf-ref}.
 Since
 $$
 \widehat M=\varprojlim_n M/\mfm^nM
@@ -153,24 +176,36 @@ $$
 M/\mfm M=0.
 $$
 By [[T-DEFNAKA|Nakayama's lemma]], $M=0$.
+
 :::
 
-<1>5. There is an open neighborhood $U$ of $y$ such that
+:::
+
+::: {.pf-step #s5}
+
+There is an open neighborhood $U$ of $y$ such that
 $$
 R^if_*\mcf|_U=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The sheaf $R^if_*\mcf$ is coherent. Its support is therefore closed. By
-step <1>4, the point $y$ does not belong to this support, so the complement
+step [](#s4){.pf-ref}, the point $y$ does not belong to this support, so the complement
 of the support is an open neighborhood $U$ of $y$ on which the sheaf
 vanishes.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is exactly the required neighborhood vanishing of
+::: pf-qed
+
+Step [](#s5){.pf-ref} is exactly the required neighborhood vanishing of
 $R^if_*\mcf$.
+
 :::
+
+:::
+
 :::

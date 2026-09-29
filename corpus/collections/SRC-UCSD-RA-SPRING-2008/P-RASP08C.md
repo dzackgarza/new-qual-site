@@ -31,10 +31,16 @@ $$
 where $dx$ denotes the Lebesgue measure on $[1, \infty)$ and $dx\,dy$ denotes the Lebesgue measure on $[1, \infty)^2 = [1, \infty) \times [1, \infty)$.
 :::
 
-
 ::: {.solution}
-<1>1. Factor the kernel by a pointwise estimate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Factor the kernel by a pointwise estimate.
+
+::: pf-proof
+
 For $x,y\ge1$,
 \[
 (x-1)(y-1)\ge0,
@@ -56,10 +62,17 @@ Since $f,g\ge0$,
 \left(\int_1^\infty e^{-y}g(y)\,dy\right).
 \end{aligned}
 \]
+
 :::
 
-<1>2. Apply Cauchy--Schwarz in each variable.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Cauchy--Schwarz in each variable.
+
+::: pf-proof
+
 Cauchy--Schwarz gives
 \[
 \int_1^\infty e^{-x}f(x)\,dx
@@ -81,5 +94,11 @@ Combining these estimates yields
 \end{aligned}
 \]
 This is the required inequality.
+
 :::
+
+:::
+
+:::
+
 :::

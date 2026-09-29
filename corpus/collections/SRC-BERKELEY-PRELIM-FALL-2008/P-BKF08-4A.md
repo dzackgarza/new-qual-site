@@ -39,13 +39,18 @@ $$
 f_n(z)\coloneqq\frac{z^n}{1+z^2}.
 $$
 
-<1>1. On $\Omega$ one has the Laurent expansion
+::: pf
+
+::: {.pf-step #s1}
+
+On $\Omega$ one has the Laurent expansion
 $$
 f_n(z)
 =\sum_{m=0}^{\infty}(-1)^m z^{n-2-2m}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}>1$, one has $\abs{z^{-2}}<1$, so the geometric series gives
 $$
 \frac1{1+z^{-2}}
@@ -57,13 +62,19 @@ f_n(z)=\frac{z^{n-2}}{1+z^{-2}},
 $$
 multiplication by $z^{n-2}$ gives the claimed Laurent expansion. The
 geometric series converges uniformly on compact subsets of $\Omega$.
+
 :::
 
-<1>2. A holomorphic function on $\Omega$ has a holomorphic primitive on
+:::
+
+::: {.pf-step #s2}
+
+A holomorphic function on $\Omega$ has a holomorphic primitive on
 $\Omega$ if and only if the coefficient of $z^{-1}$ in its Laurent series
 is zero.
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 F(z)=\sum_{j\in\ZZ}a_jz^j
@@ -85,34 +96,52 @@ G(z)=\sum_{j\ne-1}\frac{c_j}{j+1}z^{j+1}
 $$
 converges locally uniformly on the same annulus and may be differentiated
 termwise there. Hence $G$ is holomorphic on $\Omega$ and $G'=g$.
+
 :::
 
-<1>3. The Laurent expansion in step <1>1 has a $z^{-1}$ term if and only
+:::
+
+::: {.pf-step #s3}
+
+The Laurent expansion in step [](#s1){.pf-ref} has a $z^{-1}$ term if and only
 if $n$ is a positive odd integer.
 
-::: {.proof}
+::: pf-proof
+
 The exponent of the $m$-th term is $n-2-2m$. It equals $-1$ exactly when
 $$
 m=\frac{n-1}{2}.
 $$
 Such an integer $m\ge0$ exists exactly when $n$ is odd and $n\ge1$.
+
 :::
 
-<1>4. The required integer values are
+:::
+
+::: {.pf-step #s4}
+
+The required integer values are
 $$
 \boxed{n<0\quad\text{or}\quad n\text{ is even}}.
 $$
 
-::: {.proof}
-By step <1>2, $f_n$ has a holomorphic primitive on $\Omega$ exactly when
-its $z^{-1}$ Laurent coefficient vanishes. Step <1>3 says that the
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $f_n$ has a holomorphic primitive on $\Omega$ exactly when
+its $z^{-1}$ Laurent coefficient vanishes. Step [](#s3){.pf-ref} says that the
 coefficient is nonzero exactly for the positive odd integers. The
 complement of those integers is precisely the set displayed above.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives exactly the requested values of $n$.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives exactly the requested values of $n$.
+
+:::
+
+:::
+
 :::

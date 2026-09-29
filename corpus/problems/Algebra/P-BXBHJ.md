@@ -25,26 +25,46 @@ audit:
   Or $\phi(n)$ for $n$ composite?
 :::
 
-
 ::: {.solution}
-<1>1. If $p$ is prime, then
+
+::: pf
+
+::: pf-step
+
+If $p$ is prime, then
 \[
 \varphi(p)=p-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every nonzero residue modulo $p$ is relatively prime to $p$, so the invertible residue classes are exactly $1,2,\ldots,p-1$.
+
 :::
 
-<1>2. For a prime power $p^a$ with $a\ge1$,
+:::
+
+::: {.pf-step #s2}
+
+For a prime power $p^a$ with $a\ge1$,
 \[
 \varphi(p^a)=p^a-p^{a-1}=p^{a-1}(p-1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Among the $p^a$ residue classes modulo $p^a$, exactly the $p^{a-1}$ multiples of $p$ fail to be relatively prime to $p^a$.
+
 :::
 
-<1>3. Euler's totient is multiplicative on coprime integers.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Euler's totient is multiplicative on coprime integers.
+
+::: pf-proof
+
 If $\gcd(m,n)=1$, the Chinese remainder theorem gives
 \[
 \ZZ/mn\ZZ\cong \ZZ/m\ZZ\times\ZZ/n\ZZ.
@@ -57,9 +77,14 @@ so
 \[
 \varphi(mn)=\varphi(m)\varphi(n).
 \]
+
 :::
 
-<1>4. Therefore, if
+:::
+
+::: pf-step
+
+Therefore, if
 \[
 n=\prod_{i=1}^r p_i^{a_i}
 \]
@@ -68,7 +93,15 @@ is the prime factorization, then
 \varphi(n)=\prod_{i=1}^r p_i^{a_i-1}(p_i-1)
 =n\prod_{p\mid n}\left(1-\frac1p\right).
 \]
-::: {.proof}
-Apply <1>2 to each prime-power factor and then <1>3.
+
+::: pf-proof
+
+Apply step [](#s2){.pf-ref} to each prime-power factor and then step [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

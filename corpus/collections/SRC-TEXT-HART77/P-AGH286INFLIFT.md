@@ -67,9 +67,14 @@ Two lifts differ by an element of $I$, whose product with $i$ is zero, so this g
 Restriction of scalars along $f$ and $f\circ\alpha$ gives its $A$- and $P$-module structures.
 For a homomorphism out of a module of differentials, its associated derivation always means its composite with the universal differential.
 
-<1>1. The difference of two lifts of $f$ is a $k$-derivation $A\to I$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The difference of two lifts of $f$ is a $k$-derivation $A\to I$.
+
+::: pf-proof
+
 Let $g,g':A\to B'$ have $\rho g=\rho g'=f$, and put $D=g-g'$.
 Its values lie in $I$, it is additive, and it annihilates $k$ because the two maps are $k$-algebra homomorphisms.
 For $a,b\in A$,
@@ -85,11 +90,17 @@ The last equality uses exactly the module action defined before the first step.
 Thus $D$ is a $k$-derivation for the specified $A$-module structure.
 The [[D-4GCH6|universal property of differentials]] identifies it with a unique member of $\Hom_A(\Omega_{A/k},I)$.
 No regularity assumption on $A$ was used.
+
 :::
 
-<1>2. If $g$ is one lift and $D:A\to I$ is any $k$-derivation, then $g+D$ is another lift.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $g$ is one lift and $D:A\to I$ is any $k$-derivation, then $g+D$ is another lift.
+
+::: pf-proof
+
 The map $g+D$ is additive and agrees with $g$ on $k$.
 The derivation rule gives $D(1)=D(1)+D(1)$, so $D(1)=0$ and the map preserves $1$.
 Since $I^2=0$,
@@ -102,13 +113,19 @@ $$
 $$
 It is therefore multiplicative.
 Its reduction is $f$ because $D$ takes values in $I$.
-Together with step <1>1, this proves both directions of (a): once a lift is chosen, all lifts are obtained uniquely by adding a derivation.
+Together with step [](#s1){.pf-ref}, this proves both directions of (a): once a lift is chosen, all lifts are obtained uniquely by adding a derivation.
 The same calculation applies to any $k$-algebra in place of $A$, in particular to $P$.
+
 :::
 
-<1>3. There is a polynomial lift $h:P\to B'$, and its restriction to $J$ induces an $A$-linear map $\bar h:J/J^2\to I$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+There is a polynomial lift $h:P\to B'$, and its restriction to $J$ induces an $A$-linear map $\bar h:J/J^2\to I$.
+
+::: pf-proof
+
 For each $x_i$, choose $b_i'\in B'$ with $\rho(b_i')=f(\alpha(x_i))$.
 The universal property of the polynomial ring gives a $k$-algebra homomorphism $h$ with $h(x_i)=b_i'$.
 The two maps $\rho h$ and $f\alpha$ agree on $k$ and all the variables, so they agree everywhere.
@@ -127,11 +144,17 @@ $$
 $$
 Changing the lift $p$ changes $pj$ by an element of $J^2$, so the expression is independent of that choice.
 Thus $\bar h$ is $A$-linear, proving (b).
+
 :::
 
-<1>4. The conormal sequence in (c) is split exact, and applying $\Hom_A(-,I)$ gives the stated short exact sequence.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The conormal sequence in (c) is split exact, and applying $\Hom_A(-,I)$ gives the stated short exact sequence.
+
+::: pf-proof
+
 The quotient $P\to A$ gives a closed immersion of the nonsingular affine variety $\Spec A$ into the nonsingular affine space $\Spec P$.
 The exact conormal sequence of [@Har10a, Theorem II.8.17] is
 $$
@@ -154,15 +177,21 @@ $$
 Under this identification, the last map in the dual sequence sends $\theta$ to $[j]\mapsto\theta(dj)$.
 Hence the short exact sequence is exactly the one requested in (c).
 This is the [split conormal criterion](https://stacks.math.columbia.edu/tag/00TH) in the present affine setting; local freeness is not being treated as projectivity in a nonaffine sheaf category.
+
 :::
 
-<1>5. Subtracting an extending derivation gives the required lift $g:A\to B'$.
+:::
 
-::: {.proof}
-By step <1>4, choose $\theta\in\Hom_P(\Omega_{P/k},I)$ whose restriction to $J/J^2$ is $\bar h$ from step <1>3.
+::: {.pf-step #s5}
+
+Subtracting an extending derivation gives the required lift $g:A\to B'$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, choose $\theta\in\Hom_P(\Omega_{P/k},I)$ whose restriction to $J/J^2$ is $\bar h$ from step [](#s3){.pf-ref}.
 Let $D=\theta\circ d:P\to I$ be its associated derivation.
 Viewed in $B'$, this is a derivation relative to the homomorphism $h$, since multiplication by $h(p)$ on $I$ is the prescribed action through $f\alpha(p)$.
-Step <1>2, with $P$ in place of $A$ and $-D$ in place of $D$, shows that
+Step [](#s2){.pf-ref}, with $P$ in place of $A$ and $-D$ in place of $D$, shows that
 $$
 h'=h-D:P\longrightarrow B'
 $$
@@ -175,11 +204,17 @@ so $h'(j)=0$.
 Thus $h'$ factors through $P/J=A$, giving a $k$-algebra homomorphism $g$ with $g\alpha=h'$.
 Reducing and using surjectivity of $\alpha$ gives $\rho g=f$.
 This completes the construction without imposing any finiteness or smoothness assumption on $B'$ or $B$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove (a), step <1>3 proves (b), and steps <1>4--<1>5 establish both exact sequences and the lift required in (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), step [](#s3){.pf-ref} proves (b), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} establish both exact sequences and the lift required in (c).
+
+:::
+
+:::
+
 :::

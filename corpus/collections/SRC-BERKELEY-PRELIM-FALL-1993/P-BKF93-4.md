@@ -36,9 +36,14 @@ Prove that if $m\ne n$, then $T$ is not invertible.
 Regard a matrix in $M_{a\times b}(F)$ as a linear map
 $F^b\to F^a$.
 
-<1>1. If $m<n$, then $T$ is not injective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $m<n$, then $T$ is not injective.
+
+::: pf-proof
+
 Since
 $$
 \operatorname{rank}A\leq m<n,
@@ -58,11 +63,17 @@ $$
 T(X)=AXB=0.
 $$
 Thus $X\neq0$ lies in $\ker T$, and $T$ is not injective.
+
 :::
 
-<1>2. If $m>n$, then $T$ is not surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $m>n$, then $T$ is not surjective.
+
+::: pf-proof
+
 Let
 $$
 W\coloneqq\im A\subseteq F^m.
@@ -84,19 +95,31 @@ $$
 \im Y\nsubseteq W,
 $$
 so $Y\neq T(X)$ for every $X$. Hence $T$ is not surjective.
+
 :::
 
-<1>3. If $m\neq n$, then $T$ is not invertible.
+:::
 
-::: {.proof}
-If $m<n$, step <1>1 shows that $T$ is not injective. If $m>n$, step <1>2
+::: {.pf-step #s3}
+
+If $m\neq n$, then $T$ is not invertible.
+
+::: pf-proof
+
+If $m<n$, step [](#s1){.pf-ref} shows that $T$ is not injective. If $m>n$, step [](#s2){.pf-ref}
 shows that $T$ is not surjective. Since $m\neq n$, one of these two cases
 holds, so $T$ cannot be invertible.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the desired conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the desired conclusion.
+
+:::
+
+:::
+
 :::

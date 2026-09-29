@@ -57,14 +57,19 @@ d(f,g)
 \sum_{j=1}^{\infty}2^{-j}M_j(f,g).
 $$
 
-<1>1. For every $f,g\in\operatorname{Lip}_K$ and every $j\ge1$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $f,g\in\operatorname{Lip}_K$ and every $j\ge1$,
 $$
 M_j(f,g)
 \le
 \abs{f(0)-g(0)}+2Kj.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $z\in[-j,j]$, then
 $$
 \begin{aligned}
@@ -86,13 +91,19 @@ K\abs z\\
 \end{aligned}
 $$
 Taking the supremum over $[-j,j]$ proves the claim.
+
 :::
 
-<1>2. The series defining $d(f,g)$ converges for every
+:::
+
+::: {.pf-step #s2}
+
+The series defining $d(f,g)$ converges for every
 $f,g\in\operatorname{Lip}_K$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 0
 \le
@@ -110,16 +121,22 @@ $$
 $$
 converge. The comparison test therefore gives convergence of the
 series defining $d(f,g)$.
+
 :::
 
-<1>3. The function $d$ is nonnegative and symmetric, and
+:::
+
+::: {.pf-step #s3}
+
+The function $d$ is nonnegative and symmetric, and
 $$
 d(f,g)=0
 \quad\Longleftrightarrow\quad
 f=g.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each summand is nonnegative and symmetric in $f,g$, so the same is
 true of $d$.
 
@@ -138,16 +155,22 @@ M_j(f,g)
 0.
 $$
 Thus $f=g$ on $\RR$.
+
 :::
 
-<1>4. The triangle inequality holds:
+:::
+
+::: {.pf-step #s4}
+
+The triangle inequality holds:
 $$
 d(f,h)
 \le
 d(f,g)+d(g,h).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $z\in[-j,j]$,
 $$
 \abs{f(z)-h(z)}
@@ -163,20 +186,32 @@ M_j(f,h)
 M_j(f,g)+M_j(g,h).
 $$
 Multiply by $2^{-j}$ and sum over $j\ge1$.
+
 :::
 
-<1>5. Therefore the formula in the problem defines a metric on
+:::
+
+::: {.pf-step #s5}
+
+Therefore the formula in the problem defines a metric on
 $\operatorname{Lip}_K$.
 
-::: {.proof}
-Step <1>2 proves finiteness, while steps <1>3 and <1>4 prove the metric
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves finiteness, while steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the metric
 axioms. This completes part (a).
+
 :::
 
-<1>6. Let $(f_m)$ be a $d$-Cauchy sequence. For every fixed $j\ge1$,
+:::
+
+::: {.pf-step #s6}
+
+Let $(f_m)$ be a $d$-Cauchy sequence. For every fixed $j\ge1$,
 the sequence $(f_m)$ is uniformly Cauchy on $[-j,j]$.
 
-::: {.proof}
+::: pf-proof
+
 For all $m,n$,
 $$
 d(f_m,f_n)
@@ -191,9 +226,14 @@ M_j(f_m,f_n)
 $$
 Since the right-hand side tends uniformly to $0$ as $m,n\to\infty$,
 the restrictions to $[-j,j]$ form a uniformly Cauchy sequence.
+
 :::
 
-<1>7. There is a function
+:::
+
+::: {.pf-step #s7}
+
+There is a function
 $$
 g:\RR\to\RR
 $$
@@ -203,8 +243,9 @@ f_m\longrightarrow g
 $$
 uniformly on every interval $[-j,j]$.
 
-::: {.proof}
-For each fixed $j$, step <1>6 and completeness of $\RR$ imply that
+::: pf-proof
+
+For each fixed $j$, step [](#s6){.pf-ref} and completeness of $\RR$ imply that
 the uniformly Cauchy sequence of real-valued functions on $[-j,j]$
 has a uniform limit, call it $g_j$.
 
@@ -213,19 +254,25 @@ pointwise limits of the same sequence $(f_m)$, so they agree. The
 compatible functions $g_j$ therefore define one function
 $g:\RR\to\RR$, and the convergence to $g$ is uniform on every
 $[-j,j]$.
+
 :::
 
-<1>8. The limit function $g$ belongs to
+:::
+
+::: {.pf-step #s8}
+
+The limit function $g$ belongs to
 $$
 \operatorname{Lip}_K.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take $x,y\in\RR$ and choose $j$ with
 $$
 x,y\in[-j,j].
 $$
-By step <1>7,
+By step [](#s7){.pf-ref},
 $$
 f_m(x)\to g(x),
 \qquad
@@ -243,9 +290,14 @@ $$
 \le
 K\abs{x-y}.
 $$
+
 :::
 
-<1>9. For each fixed $n$ and $j$,
+:::
+
+::: {.pf-step #s9}
+
+For each fixed $n$ and $j$,
 $$
 M_j(f_n,f_m)
 \longrightarrow
@@ -253,7 +305,8 @@ M_j(f_n,g)
 $$
 as $m\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For any functions $u,v,w$ on a set,
 $$
 \left|
@@ -269,15 +322,21 @@ $$
 u=f_n,\qquad v=f_m,\qquad w=g.
 $$
 The right-hand side tends to $0$ by the uniform convergence in step
-<1>7.
+[](#s7){.pf-ref}.
+
 :::
 
-<1>10. One has
+:::
+
+::: {.pf-step #s10}
+
+One has
 $$
 d(f_n,g)\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $\varepsilon>0$. Since $(f_m)$ is $d$-Cauchy, choose $N$ such
 that
 $$
@@ -285,7 +344,7 @@ d(f_n,f_m)<\varepsilon
 $$
 whenever $m,n\ge N$.
 
-Fix $n\ge N$. By step <1>9 and Fatou's lemma for the nonnegative
+Fix $n\ge N$. By step [](#s9){.pf-ref} and Fatou's lemma for the nonnegative
 series,
 $$
 \begin{aligned}
@@ -305,23 +364,35 @@ d(f_n,g)
 \end{aligned}
 $$
 Thus $d(f_n,g)\to0$.
+
 :::
 
-<1>11. The metric space
+:::
+
+::: {.pf-step #s11}
+
+The metric space
 $$
 \boxed{(\operatorname{Lip}_K,d)}
 $$
 is complete.
 
-::: {.proof}
-Every $d$-Cauchy sequence has, by steps <1>7--<1>8, a limit
-$g\in\operatorname{Lip}_K$, and step <1>10 shows convergence to that
+::: pf-proof
+
+Every $d$-Cauchy sequence has, by steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, a limit
+$g\in\operatorname{Lip}_K$, and step [](#s10){.pf-ref} shows convergence to that
 limit in the metric $d$. This proves part (b).
+
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves part (a), and step <1>11 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves part (a), and step [](#s11){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

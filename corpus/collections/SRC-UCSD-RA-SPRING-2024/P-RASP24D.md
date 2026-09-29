@@ -31,8 +31,14 @@ Prove that a sequence $f_n \in \ell^p(A)$ converges weakly to $f \in \ell^p(A)$ 
 ::: {.solution}
 Let $q=p/(p-1)$.
 
-<1>1. Weak convergence implies pointwise convergence.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Weak convergence implies pointwise convergence.
+
+::: pf-proof
+
 For each $a\in A$, define
 \[
 \delta_a(h):=h(a).
@@ -46,10 +52,17 @@ so $\delta_a\in(\ell^p(A))^*$. If $f_n\rightharpoonup f$, then
 f_n(a)=\delta_a(f_n)\longrightarrow\delta_a(f)=f(a)
 \]
 for every $a\in A$.
+
 :::
 
-<1>2. Weak convergence implies norm boundedness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Weak convergence implies norm boundedness.
+
+::: pf-proof
+
 For each $n$, define
 \[
 T_n:(\ell^p(A))^*\to\mathbb C,
@@ -68,10 +81,17 @@ Therefore
 \[
 \sup_n\|f_n\|_p<\infty.
 \]
+
 :::
 
-<1>3. Assume pointwise convergence and uniform boundedness, and prove weak convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Assume pointwise convergence and uniform boundedness, and prove weak convergence.
+
+::: pf-proof
+
 Assume
 \[
 f_n(a)\to f(a)
@@ -129,5 +149,11 @@ this is exactly
 \[
 \boxed{f_n\rightharpoonup f\text{ in }\ell^p(A).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

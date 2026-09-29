@@ -41,9 +41,14 @@ The exponential maps $L$ onto $U$, and two points of
 $L$ have the same exponential exactly when their difference
 is $2\pi i k$ for an integer $k$.
 
-<1>1. The lifted harmonic function is the real part of a holomorphic function on $L$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The lifted harmonic function is the real part of a holomorphic function on $L$.
+
+::: pf-proof
+
 Define $\widetilde h(w)=h(e^w)$. Composition with the
 holomorphic map $w\mapsto e^w$ preserves harmonicity:
 the chain rule gives
@@ -58,11 +63,17 @@ the Cauchy–Riemann equations show that
 $\widetilde h_s-i\widetilde h_t$ is holomorphic for
 $w=s+it$. Its primitive on $L$, after addition of a
 real constant, has real part $\widetilde h$.
+
 :::
 
-<1>2. A real linear term removes the period of this conjugate.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A real linear term removes the period of this conjugate.
+
+::: pf-proof
+
 The function $A(w)=H(w+2\pi i)-H(w)$ is holomorphic on $L$.
 Since $e^{w+2\pi i}=e^w$, it has real part zero. The
 Cauchy–Riemann equations then force its imaginary part
@@ -74,14 +85,20 @@ G(w+2\pi i)-G(w)=i\beta+2\pi ic=0.
 $$
 Iteration in both directions makes $G$ invariant under
 every translation by $2\pi ik$, $k\in\mathbb Z$.
+
 :::
 
-<1>3. The periodic holomorphic function descends to the desired function on $U$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The periodic holomorphic function descends to the desired function on $U$.
+
+::: pf-proof
+
 For $z\in U$, choose any $w\in L$ with $e^w=z$ and
 define $f(z)=G(w)$. Any two choices differ by $2\pi ik$,
-so step <1>2 makes this definition independent of the choice.
+so step [](#s2){.pf-ref} makes this definition independent of the choice.
 Near each $z\ne0$ there is a holomorphic logarithm branch
 $\ell$, obtained for example from the local inverse
 function theorem applied to the exponential [@SS03].
@@ -96,5 +113,11 @@ $$
 $$
 The constant $c$ is real by construction, which establishes
 the required representation.
+
 :::
+
+:::
+
+:::
+
 :::

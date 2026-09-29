@@ -32,9 +32,15 @@ Prove that an upper-semicontinuous function on $[0,1]$ is bounded above and atta
 :::
 
 ::: {.solution}
-<1>1. The function $f$ is bounded above on $[0,1]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The function $f$ is bounded above on $[0,1]$.
+
+::: pf-proof
+
 For each $x\in[0,1]$, apply upper semicontinuity with
 $\varepsilon=1$. There is an open neighborhood $U_x$ of $x$ in
 $[0,1]$ such that
@@ -57,9 +63,14 @@ $$
 f(y)<f(x_j)+1\le B.
 $$
 Thus $f$ is bounded above.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 M=\sup_{x\in[0,1]}f(x).
 $$
@@ -69,26 +80,39 @@ f(x_n)>M-\frac1n
 $$
 for every $n\ge1$.
 
-::: {.proof}
-Step <1>1 shows that $M$ is finite. By the definition of supremum,
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that $M$ is finite. By the definition of supremum,
 for each $n$ there is some $x_n\in[0,1]$ with
 $f(x_n)>M-1/n$.
+
 :::
 
-<1>3. Some subsequence $(x_{n_k})$ converges to a point
+:::
+
+::: pf-step
+
+Some subsequence $(x_{n_k})$ converges to a point
 $p\in[0,1]$.
 
-::: {.proof}
+::: pf-proof
+
 The interval $[0,1]$ is compact, so every sequence in it has a
 convergent subsequence whose limit remains in $[0,1]$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 M\le f(p).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $\varepsilon>0$. By upper semicontinuity at $p$, there is
 $\delta>0$ such that
 $$
@@ -100,7 +124,7 @@ Since $x_{n_k}\to p$, for all sufficiently large $k$,
 $$
 f(x_{n_k})<f(p)+\varepsilon.
 $$
-On the other hand, step <1>2 gives
+On the other hand, step [](#s2){.pf-ref} gives
 $$
 f(x_{n_k})>M-\frac1{n_k}.
 $$
@@ -109,22 +133,34 @@ $$
 M\le f(p)+\varepsilon.
 $$
 Since $\varepsilon>0$ was arbitrary, $M\le f(p)$.
+
 :::
 
-<1>5. The function $f$ attains its maximum at $p$:
+:::
+
+::: {.pf-step #s5}
+
+The function $f$ attains its maximum at $p$:
 $$
 \boxed{f(p)=M}.
 $$
 
-::: {.proof}
-By definition of $M$ as a supremum, $f(p)\le M$. Step <1>4 gives
+::: pf-proof
+
+By definition of $M$ as a supremum, $f(p)\le M$. Step [](#s4){.pf-ref} gives
 the reverse inequality, so equality holds.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves boundedness above, and step <1>5 proves attainment
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves boundedness above, and step [](#s5){.pf-ref} proves attainment
 of the maximum.
+
 :::
+
+:::
+
 :::

@@ -46,8 +46,14 @@ t(x)=x+1.
 \]
 Thus $D_\infty=\langle r,t\rangle$.
 
-<1>1. Replace the translation generator by a second involution.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Replace the translation generator by a second involution.
+
+::: pf-proof
+
 Define
 \[
 s=t\circ r.
@@ -70,13 +76,20 @@ D_\infty=\langle r,s\rangle,
 \qquad
 r^2=s^2=1.
 \]
+
 :::
 
-<1>2. The relations $r^2=s^2=1$ give a surjective homomorphism
+:::
+
+::: {.pf-step #s2}
+
+The relations $r^2=s^2=1$ give a surjective homomorphism
 \[
 \varphi:(\mathbb Z/2)*(\mathbb Z/2)\twoheadrightarrow D_\infty.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $\bar r$ and $\bar s$ denote the nonidentity elements of the two factors $\mathbb Z/2$. Since $r^2=s^2=1$, the universal property of the free product gives a homomorphism
 \[
 \varphi:(\mathbb Z/2)*(\mathbb Z/2)\to D_\infty
@@ -87,11 +100,18 @@ with
 \qquad
 \varphi(\bar s)=s.
 \]
-By <1>1, $r$ and $s$ generate $D_\infty$, so $\varphi$ is surjective.
+By step [](#s1){.pf-ref}, $r$ and $s$ generate $D_\infty$, so $\varphi$ is surjective.
+
 :::
 
-<1>3. No nonempty reduced word lies in the kernel of $\varphi$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+No nonempty reduced word lies in the kernel of $\varphi$.
+
+::: pf-proof
+
 A reduced word in the free product alternates $\bar r$ and $\bar s$, since each factor has only one nonidentity element.
 
 First compute
@@ -119,17 +139,30 @@ x\longmapsto m-x
 for some $m\in\mathbb Z$. Such an affine map has slope $-1$, whereas the identity has slope $1$, so it is not the identity.
 
 Thus every nonempty reduced word has nontrivial image under $\varphi$.
+
 :::
 
-<1>4. The map $\varphi$ is an isomorphism.
-::: {.proof}
-Every element of $(\mathbb Z/2)*(\mathbb Z/2)$ is represented by a reduced alternating word. By <1>3, the only reduced word in $\ker\varphi$ is the empty word. Hence
+:::
+
+::: pf-step
+
+The map $\varphi$ is an isomorphism.
+
+::: pf-proof
+
+Every element of $(\mathbb Z/2)*(\mathbb Z/2)$ is represented by a reduced alternating word. By step [](#s3){.pf-ref}, the only reduced word in $\ker\varphi$ is the empty word. Hence
 \[
 \ker\varphi=\{1\}.
 \]
-Together with surjectivity from <1>2, this proves
+Together with surjectivity from step [](#s2){.pf-ref}, this proves
 \[
 \boxed{D_\infty\cong(\mathbb Z/2)*(\mathbb Z/2)}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

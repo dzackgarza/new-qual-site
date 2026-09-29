@@ -41,9 +41,15 @@ Prove or give a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Statement (a) is true.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Statement (a) is true.
+
+::: pf-proof
+
 Let
 $$
 A_N\coloneqq\sum_{n=1}^N a_n,
@@ -67,9 +73,14 @@ $$
 A_N+B_N\longrightarrow A+B,
 $$
 so $\sum(a_n+b_n)$ converges.
+
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #s2}
+
+For
 $$
 a_n=b_n=\frac{(-1)^n}{\sqrt n}
 \qquad(n\ge1),
@@ -82,7 +93,8 @@ $$
 $$
 converge.
 
-::: {.proof}
+::: pf-proof
+
 The positive sequence
 $$
 \frac1{\sqrt n}
@@ -93,12 +105,18 @@ $$
 $$
 converges by the alternating-series test. Since $a_n=b_n$, both stated
 series converge.
+
 :::
 
-<1>3. For the sequences in step <1>2, the termwise-product series
+:::
+
+::: {.pf-step #s3}
+
+For the sequences in step [](#s2){.pf-ref}, the termwise-product series
 $\sum_n a_nb_n$ diverges.
 
-::: {.proof}
+::: pf-proof
+
 For every $n$,
 $$
 a_nb_n
@@ -115,12 +133,18 @@ $$
 $$
 which is the divergent harmonic series. Therefore statement (b) is
 false.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves (a), while steps <1>2--<1>3 give a counterexample to
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), while steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give a counterexample to
 (b).
+
 :::
+
+:::
+
 :::

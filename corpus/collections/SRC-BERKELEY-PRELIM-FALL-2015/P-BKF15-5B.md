@@ -33,14 +33,20 @@ Find all entire functions $f(z)$ such that $\operatorname{Re}(f(x+iy))=x^3y-xy^3
 :::
 
 ::: {.solution}
-<1>1. For $z=x+iy$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $z=x+iy$,
 $$
 \operatorname{Re}\left(-\frac{i}{4}z^4\right)
 =
 x^3y-xy^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding,
 $$
 \begin{aligned}
@@ -69,9 +75,14 @@ $$
 =
 x^3y-xy^3.
 $$
+
 :::
 
-<1>2. For every real constant $C$, the entire function
+:::
+
+::: {.pf-step #s2}
+
+For every real constant $C$, the entire function
 $$
 f_C(z)
 \coloneqq
@@ -79,9 +90,10 @@ f_C(z)
 $$
 satisfies the required real-part condition.
 
-::: {.proof}
+::: pf-proof
+
 The function is a polynomial plus a constant, hence entire. By step
-<1>1,
+[](#s1){.pf-ref},
 $$
 \operatorname{Re}\left(-\frac{i}{4}z^4\right)
 =
@@ -92,9 +104,14 @@ $$
 \operatorname{Re}(iC)=0
 $$
 for $C\in\RR$.
+
 :::
 
-<1>3. Let $f$ be any entire function satisfying the required
+:::
+
+::: {.pf-step #s3}
+
+Let $f$ be any entire function satisfying the required
 condition, and define
 $$
 h(z)
@@ -107,14 +124,15 @@ $$
 $$
 for every $z\in\CC$.
 
-::: {.proof}
+::: pf-proof
+
 By hypothesis,
 $$
 \operatorname{Re}f(x+iy)
 =
 x^3y-xy^3.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \operatorname{Re}\left(-\frac{i}{4}z^4\right)
 =
@@ -130,11 +148,17 @@ f(z)-\left(-\frac{i}{4}z^4\right)
 0,
 $$
 which is exactly the claim.
+
 :::
 
-<1>4. The entire function $h$ from step <1>3 is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The entire function $h$ from step [](#s3){.pf-ref} is constant.
+
+::: pf-proof
+
 Its image is contained in the imaginary axis
 $$
 i\RR,
@@ -142,20 +166,31 @@ $$
 which is not an open subset of $\CC$. If $h$ were nonconstant, the
 open mapping theorem would make $h(\CC)$ open in $\CC$, a
 contradiction. Hence $h$ is constant.
+
 :::
 
-<1>5. The constant value of $h$ is of the form
+:::
+
+::: {.pf-step #s5}
+
+The constant value of $h$ is of the form
 $$
 iC
 $$
 for some $C\in\RR$.
 
-::: {.proof}
-By step <1>3, every value of $h$ has real part $0$. In particular its
+::: pf-proof
+
+By step [](#s3){.pf-ref}, every value of $h$ has real part $0$. In particular its
 constant value lies on the imaginary axis.
+
 :::
 
-<1>6. The complete family of solutions is
+:::
+
+::: {.pf-step #s6}
+
+The complete family of solutions is
 $$
 \boxed{
 f(z)
@@ -166,15 +201,22 @@ C\in\RR.
 }
 $$
 
-::: {.proof}
-Steps <1>3--<1>5 show that every solution has this form, and step
-<1>2 shows that every function of this form is a solution.
+::: pf-proof
+
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} show that every solution has this form, and step
+[](#s2){.pf-ref} shows that every function of this form is a solution.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>6 gives all entire functions satisfying the required
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives all entire functions satisfying the required
 condition.
+
 :::
+
+:::
+
 :::

@@ -26,13 +26,22 @@ Show that if $f: A\to B$ is a continuous map between metric spaces and $K\subset
 :::
 
 ::: {.solution}
-<1>1. Fix $\varepsilon>0$. For each $x\in K$, continuity of $f$ at $x$ gives $r_x>0$ such that
+
+::: pf
+
+::: pf-step
+
+Fix $\varepsilon>0$. For each $x\in K$, continuity of $f$ at $x$ gives $r_x>0$ such that
 \[
 d_A(z,x)<r_x\implies d_B(f(z),f(x))<\varepsilon/2.
 \]
 The balls $B_A(x,r_x/2)$ cover $K$.
 
-<1>2. By compactness, choose $x_1,\dots,x_m\in K$ such that
+:::
+
+::: pf-step
+
+By compactness, choose $x_1,\dots,x_m\in K$ such that
 \[
 K\subseteq\bigcup_{i=1}^m B_A(x_i,r_{x_i}/2).
 \]
@@ -41,7 +50,16 @@ Set
 \delta=\min_{1\le i\le m}r_{x_i}/2>0.
 \]
 
-<1>3. Let $x,y\in K$ with $d_A(x,y)<\delta$. Choose $i$ with $x\in B_A(x_i,r_{x_i}/2)$. Then
+:::
+
+::: pf-step
+
+Let $x,y\in K$ with $d_A(x,y)<\delta$. Choose $i$ with $x\in B_A(x_i,r_{x_i}/2)$. Then
+
+:::
+
+:::
+
 \[
 d_A(x,x_i)<r_{x_i}/2<r_{x_i}
 \]

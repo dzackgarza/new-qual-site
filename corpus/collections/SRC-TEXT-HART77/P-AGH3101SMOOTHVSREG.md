@@ -41,13 +41,18 @@ A=k[x,y]/(y^2-x^p+t),
 X=\Spec A.
 $$
 
-<1>1. The element
+::: pf
+
+::: {.pf-step #s1}
+
+The element
 $$
 u=x^p-y^2\in k_0[x,y]
 $$
 is transcendental over $k_0$.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial ring $k_0[x,y]$ is a domain and $u$ is nonconstant.
 If a nonzero polynomial
 $$
@@ -60,11 +65,17 @@ c_mx^{pm},
 $$
 which cannot cancel with any lower power of $u$.
 Thus $F(u)\ne0$.
+
 :::
 
-<1>2. The coordinate ring $A$ is a localization of the polynomial ring $k_0[x,y]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The coordinate ring $A$ is a localization of the polynomial ring $k_0[x,y]$.
+
+::: pf-proof
+
 Write
 $$
 S=k_0[t]\setminus\{0\}.
@@ -83,20 +94,26 @@ under this identification an element $q(t)\in S$ becomes
 $$
 q(x^p-y^2).
 $$
-Step <1>1 shows that none of these elements is zero. Hence
+Step [](#s1){.pf-ref} shows that none of these elements is zero. Hence
 $$
 \boxed{
 A\cong
 \bigl\{q(x^p-y^2):0\ne q\in k_0[t]\bigr\}^{-1}k_0[x,y].
 }
 $$
+
 :::
 
-<1>3. Every local ring of $X$ is regular.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every local ring of $X$ is regular.
+
+::: pf-proof
+
 The polynomial ring $k_0[x,y]$ is regular. Every localization of a regular
-ring is regular, and step <1>2 expresses $A$ as such a localization.
+ring is regular, and step [](#s2){.pf-ref} expresses $A$ as such a localization.
 Therefore $A$ is a regular ring.
 
 For every point $P\in X$, the local ring
@@ -104,11 +121,17 @@ $$
 \OO_{X,P}=A_{\mathfrak p}
 $$
 is a further localization of $A$, hence is a regular local ring.
+
 :::
 
-<1>4. After a purely inseparable field extension, $X$ acquires a nonregular point.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+After a purely inseparable field extension, $X$ acquires a nonregular point.
+
+::: pf-proof
+
 Let
 $$
 k'=k(\alpha),
@@ -148,11 +171,17 @@ so $B$ is not regular.
 
 This argument includes $p=2$: then $y^2-v^2=(y-v)^2$, making the failure of
 geometric regularity especially visible through nonreducedness.
+
 :::
 
-<1>5. The curve $X$ is not smooth over $k$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The curve $X$ is not smooth over $k$.
+
+::: pf-proof
+
 Smoothness is preserved by arbitrary base change. If
 $$
 X\longrightarrow\Spec k
@@ -163,14 +192,20 @@ X_{k'}\longrightarrow\Spec k'
 $$
 would be smooth as well. A scheme smooth over a field is regular
 [[T-MORSMREG|by the smoothness--regularity theorem]].
-But step <1>4 exhibits a nonregular local ring on $X_{k'}$.
+But step [](#s4){.pf-ref} exhibits a nonregular local ring on $X_{k'}$.
 This contradiction proves that $X$ is not smooth over $k$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove that every local ring of $X$ is regular, while steps
-<1>4--<1>5 prove that $X$ fails to be smooth over the imperfect field $k$.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that every local ring of $X$ is regular, while steps
+[](#s4){.pf-ref} and [](#s5){.pf-ref} prove that $X$ fails to be smooth over the imperfect field $k$.
+
+:::
+
+:::
+
 :::

@@ -27,21 +27,38 @@ Notation: $\mathcal{C}_c^{\infty}(\mathbb{R})$ denotes the compactly supported f
 ::: {.solution}
 No such function exists. Let $f\in\mathcal C_c^\infty(\RR)$ with $\operatorname{supp}f\subseteq[-M,M]$, and put $F(z)\da\int_{-M}^Mf(x)e^{-ixz}\,dx$ for $z\in\CC$, so that $F=\widehat f$ on $\RR$.
 
-<1>1. $F$ is entire.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$F$ is entire.
+
+::: pf-proof
+
 The integrand is continuous on $[-M,M]\times\CC$ and holomorphic in $z$, and its $z$-derivative $-ixf(x)e^{-ixz}$ is bounded by $M\norm f_\infty e^{M\sup_K\abs{\Im z}}$ on $[-M,M]\times K$ for each compact $K\subset\CC$. Differentiation under the integral sign makes $F$ complex differentiable everywhere.
+
 :::
 
-<1>2. If $\widehat f$ has compact support, then $F\equiv0$.
-
-::: {.proof}
-$F$ vanishes on $(R,\infty)$ for some $R$, a set with accumulation points, so $F\equiv0$ by the identity theorem and step <1>1.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #s2}
 
-::: {.proof}
-By step <1>2, $\widehat f\equiv0$. Since $f$ and $\widehat f$ are integrable, the Fourier inversion theorem gives $f(x)=\frac1{2\pi}\int\widehat f(\xi)e^{ix\xi}\,d\xi=0$ for all $x$.
+If $\widehat f$ has compact support, then $F\equiv0$.
+
+::: pf-proof
+
+$F$ vanishes on $(R,\infty)$ for some $R$, a set with accumulation points, so $F\equiv0$ by the identity theorem and step [](#s1){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+By step [](#s2){.pf-ref}, $\widehat f\equiv0$. Since $f$ and $\widehat f$ are integrable, the Fourier inversion theorem gives $f(x)=\frac1{2\pi}\int\widehat f(\xi)e^{ix\xi}\,d\xi=0$ for all $x$.
+
+:::
+
+:::
+
 :::

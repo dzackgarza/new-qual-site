@@ -42,12 +42,18 @@ What is the radius of convergence of
 :::
 
 ::: {.solution}
-<1>1. For $\abs{z}<1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $\abs{z}<1$,
 $$
 f(z)=\frac1{(1-z)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The geometric series gives
 $$
 \frac1{1-z}
@@ -66,9 +72,14 @@ This is exactly the series
 $$
 1+2z+3z^2+\cdots.
 $$
+
 :::
 
-<1>2. Writing
+:::
+
+::: pf-step
+
+Writing
 $$
 w=z+2,
 $$
@@ -79,7 +90,8 @@ f(z)
 \frac1{(3-w)^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $z=w-2$,
 $$
 1-z
@@ -88,12 +100,17 @@ $$
 =
 3-w.
 $$
-Substitute this into the expression from step <1>1. By uniqueness of
+Substitute this into the expression from step [](#s1){.pf-ref}. By uniqueness of
 analytic continuation, this rational expression is the analytic function
 whose Taylor expansion at $z=-2$ defines the coefficients $a_n$.
+
 :::
 
-<1>3. For $\abs{w}<3$,
+:::
+
+::: {.pf-step #s3}
+
+For $\abs{w}<3$,
 $$
 \frac1{(3-w)^2}
 =
@@ -101,7 +118,8 @@ $$
 \frac{n+1}{3^{n+2}}w^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 \frac1{(3-w)^2}
@@ -109,7 +127,7 @@ $$
 \frac1{9}
 \frac1{(1-w/3)^2}.
 $$
-Using the differentiated geometric-series identity from step <1>1 with
+Using the differentiated geometric-series identity from step [](#s1){.pf-ref} with
 $w/3$ in place of $z$ gives
 $$
 \frac1{(1-w/3)^2}
@@ -117,14 +135,20 @@ $$
 \sum_{n=0}^{\infty}(n+1)\left(\frac w3\right)^n
 $$
 for $\abs{w}<3$. Multiplying by $1/9$ gives the displayed expansion.
+
 :::
 
-<1>4. The coefficients in the expansion about $-2$ are
+:::
+
+::: pf-step
+
+The coefficients in the expansion about $-2$ are
 $$
 a_n=\frac{n+1}{3^{n+2}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of the $a_n$,
 $$
 f(z)
@@ -133,10 +157,15 @@ f(z)
 =
 \sum_{n=0}^{\infty}a_nw^n.
 $$
-Uniqueness of power-series coefficients and step <1>3 give the formula.
+Uniqueness of power-series coefficients and step [](#s3){.pf-ref} give the formula.
+
 :::
 
-<1>5. The series
+:::
+
+::: {.pf-step #s5}
+
+The series
 $$
 \sum_{n=0}^{\infty}a_nz^n
 $$
@@ -145,7 +174,8 @@ $$
 \boxed{3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $a_n=(n+1)/3^{n+2}$,
 $$
 \abs{\frac{a_{n+1}}{a_n}}
@@ -158,11 +188,17 @@ The ratio test therefore gives radius of convergence
 $$
 R=\frac1{1/3}=3.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested radius.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested radius.
+
+:::
+
+:::
+
 :::

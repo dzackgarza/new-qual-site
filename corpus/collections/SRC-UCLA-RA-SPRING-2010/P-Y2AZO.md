@@ -46,8 +46,14 @@ and, for $\lambda>0$, set
 E_\lambda=\{x\in\mathbb R:Mf(x)>\lambda\}.
 \]
 
-<1>1. The set $E_\lambda$ is open.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The set $E_\lambda$ is open.
+
+::: pf-proof
+
 Fix $x\in E_\lambda$.
 Choose $r>0$ such that
 \[
@@ -70,16 +76,23 @@ For such $y$,
 Mf(y)\ge\frac1{2r}\int_{y-r}^{y+r}|f(t)|\,dt>\lambda.
 \]
 Thus a neighborhood of $x$ lies in $E_\lambda$.
+
 :::
 
-<1>2. Finite interval covering lemma: if $\mathcal F$ is a finite family of bounded intervals, then there are pairwise disjoint intervals $I_1,\ldots,I_N\in\mathcal F$ such that
+:::
+
+::: {.pf-step #s2}
+
+Finite interval covering lemma: if $\mathcal F$ is a finite family of bounded intervals, then there are pairwise disjoint intervals $I_1,\ldots,I_N\in\mathcal F$ such that
 \[
 \bigcup_{I\in\mathcal F}I
 \subseteq
 \bigcup_{j=1}^N 3I_j,
 \]
 where $3I_j$ denotes the interval with the same center as $I_j$ and three times its length.
-::: {.proof}
+
+::: pf-proof
+
 Choose from $\mathcal F$ an interval $I_1$ of maximal length.
 Delete $I_1$ and every interval of $\mathcal F$ that meets $I_1$.
 If any intervals remain, choose among them one of maximal length, call it $I_2$, and again delete it together with every remaining interval that meets it.
@@ -107,13 +120,20 @@ For every $y\in J$,
 \]
 Thus $J\subseteq3I_j$.
 This holds for every $J\in\mathcal F$, proving the lemma.
+
 :::
 
-<1>3. Every compact set $K\subseteq E_\lambda$ satisfies
+:::
+
+::: {.pf-step #s3}
+
+Every compact set $K\subseteq E_\lambda$ satisfies
 \[
 m(K)\le\frac{3}{\lambda}\|f\|_{L^1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For every $x\in K$, choose $r_x>0$ such that the centered interval
 \[
 I_x=(x-r_x,x+r_x)
@@ -127,7 +147,7 @@ The intervals $I_x$ form an open cover of the compact set $K$, so finitely many 
 J_1,\ldots,J_M,
 \]
 still cover $K$.
-Apply <1>2 to this finite family.
+Apply step [](#s2){.pf-ref} to this finite family.
 We obtain pairwise disjoint intervals
 \[
 I_1,\ldots,I_N
@@ -147,14 +167,21 @@ m(K)
 \end{aligned}
 \]
 The last inequality uses the pairwise disjointness of the selected intervals.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 m(E_\lambda)\le\frac{3}{\lambda}\|f\|_{L^1}.
 \]
-::: {.proof}
-Since $E_\lambda$ is open by <1>1, define
+
+::: pf-proof
+
+Since $E_\lambda$ is open by step [](#s1){.pf-ref}, define
 \[
 K_n=\left\{x\in E_\lambda:
 |x|\le n,
@@ -167,7 +194,7 @@ The sets are increasing and
 \bigcup_{n=1}^{\infty}K_n=E_\lambda:
 \]
 indeed, every point of the open set $E_\lambda$ has positive distance from its complement and finite absolute value.
-By continuity of Lebesgue measure from below and <1>3,
+By continuity of Lebesgue measure from below and step [](#s3){.pf-ref},
 \[
 \begin{aligned}
 m(E_\lambda)
@@ -176,5 +203,11 @@ m(E_\lambda)
 \end{aligned}
 \]
 Thus the desired weak-type $(1,1)$ estimate holds with $A=3$.
+
 :::
+
+:::
+
+:::
+
 :::

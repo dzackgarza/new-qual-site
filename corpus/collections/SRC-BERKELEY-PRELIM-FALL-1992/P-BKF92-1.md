@@ -39,12 +39,18 @@ similar?
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \operatorname{rank}(A-I)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Subtracting the identity gives
 $$
 A-I=
@@ -55,14 +61,20 @@ A-I=
 \end{pmatrix}.
 $$
 The two nonzero rows are equal, so the row space is one-dimensional.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \operatorname{rank}(B-I)=2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Here
 $$
 B-I=
@@ -73,14 +85,20 @@ B-I=
 \end{pmatrix}.
 $$
 Its first and third rows are nonzero and linearly independent, so its rank is $2$.
+
 :::
 
-<1>3. If two matrices $M,N$ are similar, then
+:::
+
+::: {.pf-step #s3}
+
+If two matrices $M,N$ are similar, then
 $$
 \operatorname{rank}(M-I)=\operatorname{rank}(N-I).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 M=PNP^{-1}
@@ -90,24 +108,36 @@ $$
 M-I=P(N-I)P^{-1}.
 $$
 Multiplication on either side by an invertible matrix does not change rank.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{A\text{ and }B\text{ are not similar}}.
 $$
 
-::: {.proof}
-If $A$ and $B$ were similar, step <1>3 would force
+::: pf-proof
+
+If $A$ and $B$ were similar, step [](#s3){.pf-ref} would force
 $$
 \operatorname{rank}(A-I)=\operatorname{rank}(B-I),
 $$
-contradicting steps <1>1 and <1>2.
+contradicting steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

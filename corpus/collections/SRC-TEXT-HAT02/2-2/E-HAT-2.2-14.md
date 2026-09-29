@@ -38,8 +38,14 @@ Let $f:S^n\to S^n$ be even, so $f(x)=f(-x)$. Then $f$ factors through the antipo
 S^n\xrightarrow{q}\mathbb{RP}^n\xrightarrow{g}S^n.
 \]
 
-<1>1. If $n$ is even, then $\deg f=0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+If $n$ is even, then $\deg f=0$.
+
+::: pf-proof
+
 For even $n$,
 \[
 H_n(\mathbb{RP}^n;\mathbb Z)=0.
@@ -53,10 +59,17 @@ is zero, and therefore
 f_*=g_*q_*=0.
 \]
 Thus $\deg f=0$.
+
 :::
 
-<1>2. If $n$ is odd, every even map has even degree.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $n$ is odd, every even map has even degree.
+
+::: pf-proof
+
 For odd $n$, $\mathbb{RP}^n$ is orientable and
 \[
 H_n(\mathbb{RP}^n)\cong\mathbb Z.
@@ -70,10 +83,17 @@ If $g_*$ is multiplication by $k$, then
 f_*[S^n]=g_*q_*[S^n]=2k[S^n].
 \]
 Hence $\deg f=2k$ is even.
+
 :::
 
-<1>3. When $n$ is odd, every even integer occurs as the degree of an even map.
-::: {.proof}
+:::
+
+::: pf-step
+
+When $n$ is odd, every even integer occurs as the degree of an even map.
+
+::: pf-proof
+
 Collapse the $(n-1)$-skeleton of $\mathbb{RP}^n$:
 \[
 c:\mathbb{RP}^n\to\mathbb{RP}^n/\mathbb{RP}^{n-1}\cong S^n.
@@ -95,5 +115,11 @@ is even because it factors through $q$, and
 \deg f_k=k\cdot1\cdot2=2k.
 \]
 Thus every prescribed even degree occurs.
+
 :::
+
+:::
+
+:::
+
 :::

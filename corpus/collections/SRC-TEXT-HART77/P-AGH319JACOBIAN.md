@@ -35,9 +35,15 @@ Let $\phi: \AA^n \to \AA^n$ be a morphism given by $n$ polynomials $f_1,\ldots,f
 :::
 
 ::: {.solution}
-<1>1. If $\phi:\AA^n\to\AA^n$ is a polynomial automorphism, then its Jacobian determinant is a unit of $k[x_1,\ldots,x_n]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $\phi:\AA^n\to\AA^n$ is a polynomial automorphism, then its Jacobian determinant is a unit of $k[x_1,\ldots,x_n]$.
+
+::: pf-proof
+
 Let
 $$
 \psi:\AA^n\longrightarrow\AA^n
@@ -57,28 +63,40 @@ $$
 J_\psi(\phi(x))\,J_\phi(x)=1.
 $$
 Thus $J_\phi$ has a multiplicative inverse in $k[x_1,\ldots,x_n]$.
+
 :::
 
-<1>2. Therefore $J$ is a nonzero constant, proving (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Therefore $J$ is a nonzero constant, proving (a).
+
+::: pf-proof
+
 The only units of a polynomial ring over a field are the nonzero constants: if nonzero polynomials $a,b$ satisfy $ab=1$, total degree gives
 $$
 0=\deg(ab)=\deg a+\deg b,
 $$
 so both degrees are zero.
-Applying this to step <1>1 gives
+Applying this to step [](#s1){.pf-ref} gives
 $$
 J=J_\phi\in k^\times.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove the mathematical assertion in part (a).
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the mathematical assertion in part (a).
 Part (b) is a status statement rather than an additional proof obligation; the qualification below records its present scope.
+
 :::
+
+:::
+
 :::
 
 ::: {.remark title="Characteristic and current status of the converse"}

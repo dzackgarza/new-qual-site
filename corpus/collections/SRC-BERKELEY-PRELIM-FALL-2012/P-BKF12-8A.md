@@ -34,77 +34,111 @@ Let $G$ be a finite Abelian group of order $n$. Suppose $m$ is a square-free (no
 ::: {.solution}
 Let $e$ denote the identity element of $G$.
 
-<1>1. If $m=1$, then $G$ contains an element of order $m$; hence it
+::: pf
+
+::: {.pf-step #s1}
+
+If $m=1$, then $G$ contains an element of order $m$; hence it
 suffices to treat $m>1$, in which case
 $$
 m=p_1p_2\cdots p_k
 $$
 for distinct primes $p_1,\ldots,p_k$.
 
-::: {.proof}
+::: pf-proof
+
 The identity $e$ has order $1$. If $m>1$, squarefreeness gives the
 displayed factorization into distinct primes.
+
 :::
 
-<1>2. For each $i\in\{1,\ldots,k\}$, there is an element
+:::
+
+::: {.pf-step #s2}
+
+For each $i\in\{1,\ldots,k\}$, there is an element
 $a_i\in G$ of order $p_i$.
 
-::: {.proof}
+::: pf-proof
+
 Since $p_i\mid m$ and $m\mid\lvert G\rvert$, one has
 $p_i\mid\lvert G\rvert$. Cauchy's theorem therefore gives an element
 $a_i\in G$ of order $p_i$.
+
 :::
 
-<1>3. For
+:::
+
+::: {.pf-step #s3}
+
+For
 $$
 g\coloneqq a_1a_2\cdots a_k,
 $$
 one has $g^m=e$.
 
-::: {.proof}
+::: pf-proof
+
 The group $G$ is abelian, so
 $$
 g^m=a_1^m a_2^m\cdots a_k^m.
 $$
-For every $i$, step <1>1 gives $p_i\mid m$, while step <1>2 gives
+For every $i$, step [](#s1){.pf-ref} gives $p_i\mid m$, while step [](#s2){.pf-ref} gives
 $a_i^{p_i}=e$. Hence $a_i^m=e$ for every $i$, and therefore $g^m=e$.
+
 :::
 
-<1>4. For every $i\in\{1,\ldots,k\}$,
+:::
+
+::: {.pf-step #s4}
+
+For every $i\in\{1,\ldots,k\}$,
 $$
 g^{m/p_i}\ne e.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $i$. Since $G$ is abelian,
 $$
 g^{m/p_i}
 =\prod_{j=1}^k a_j^{m/p_i}.
 $$
-If $j\ne i$, then $p_j\mid m/p_i$, so step <1>2 gives
+If $j\ne i$, then $p_j\mid m/p_i$, so step [](#s2){.pf-ref} gives
 $a_j^{m/p_i}=e$. Thus
 $$
 g^{m/p_i}=a_i^{m/p_i}.
 $$
-The primes in step <1>1 are distinct, so
-$p_i\nmid m/p_i$. Since $a_i$ has order $p_i$ by step <1>2,
+The primes in step [](#s1){.pf-ref} are distinct, so
+$p_i\nmid m/p_i$. Since $a_i$ has order $p_i$ by step [](#s2){.pf-ref},
 $a_i^{m/p_i}\ne e$.
+
 :::
 
-<1>5. The element $g$ has order
+:::
+
+::: {.pf-step #s5}
+
+The element $g$ has order
 $$
 \boxed{m}.
 $$
 
-::: {.proof}
-Let $r$ be the order of $g$. By step <1>3, $g^m=e$, so $r\mid m$.
+::: pf-proof
+
+Let $r$ be the order of $g$. By step [](#s3){.pf-ref}, $g^m=e$, so $r\mid m$.
 Suppose $r<m$. Since $m$ is squarefree and $r$ is a proper divisor of
-$m$, some prime $p_i$ appearing in step <1>1 does not divide $r$.
+$m$, some prime $p_i$ appearing in step [](#s1){.pf-ref} does not divide $r$.
 Because $r\mid m$, it follows that $r\mid m/p_i$. Hence
-$g^{m/p_i}=e$, contradicting step <1>4. Therefore $r=m$.
+$g^{m/p_i}=e$, contradicting step [](#s4){.pf-ref}. Therefore $r=m$.
+
 :::
 
-<1>6. The squarefree hypothesis cannot be omitted: for
+:::
+
+::: {.pf-step #s6}
+
+The squarefree hypothesis cannot be omitted: for
 $$
 G=C_2\times C_2
 \qquad\text{and}\qquad
@@ -112,17 +146,24 @@ m=4,
 $$
 one has $m\mid\lvert G\rvert$, but $G$ has no element of order $m$.
 
-::: {.proof}
+::: pf-proof
+
 The group $C_2\times C_2$ has order $4$, while every nonidentity
 element has order $2$. Thus $4$ divides the group order, but no element
 has order $4$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 handles $m=1$. For $m>1$, step <1>5 constructs an element of
-order $m$, and step <1>6 gives the required counterexample when $m$ is
+::: pf-qed
+
+Step [](#s1){.pf-ref} handles $m=1$. For $m>1$, step [](#s5){.pf-ref} constructs an element of
+order $m$, and step [](#s6){.pf-ref} gives the required counterexample when $m$ is
 not squarefree.
+
 :::
+
+:::
+
 :::

@@ -38,10 +38,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Each partial map has closed graph.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Each partial map has closed graph.
+
+::: pf-proof
+
 Fix $x\in X$ and consider
 \[
 \Phi_x:Y\to Z,
@@ -85,10 +91,17 @@ The same argument, with the roles of $X$ and $Y$ reversed, shows that for every 
 \Phi_y(x)=\Phi(x,y),
 \]
 is bounded.
+
 :::
 
-<1>2. Apply Uniform Boundedness to obtain a joint estimate.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Uniform Boundedness to obtain a joint estimate.
+
+::: pf-proof
+
 Consider the family
 \[
 \mathcal F:=\{\Phi_x:\|x\|_X\le1\}\subset\mathcal B(Y,Z).
@@ -115,5 +128,11 @@ The same inequality is trivial when $x=0$. Hence
 \[
 \boxed{\|\Phi(x,y)\|_Z\le M\|x\|_X\|y\|_Y.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

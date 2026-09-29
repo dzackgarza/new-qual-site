@@ -39,9 +39,15 @@ for every integer $n$.
 :::
 
 ::: {.solution}
-<1>1. If $x'(0)=0$, then $x$ is identically zero.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $x'(0)=0$, then $x$ is identically zero.
+
+::: pf-proof
+
 The function $x$ satisfies the second-order linear initial-value problem
 $$
 x''-2bx'+cx=0,
@@ -52,17 +58,23 @@ x'(0)=0.
 $$
 The zero function satisfies the same initial-value problem. Uniqueness for
 linear ordinary differential equations therefore gives $x\equiv0$.
+
 :::
 
-<1>2. Suppose $x$ is not identically zero. Then there is a nonzero scalar
+:::
+
+::: {.pf-step #s2}
+
+Suppose $x$ is not identically zero. Then there is a nonzero scalar
 $\lambda\in\RR$ such that
 $$
 x(t+1)=\lambda x(t)
 \qquad\text{for every }t\in\RR.
 $$
 
-::: {.proof}
-By step <1>1, $x'(0)\neq0$. Define
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $x'(0)\neq0$. Define
 $$
 y(t)\coloneqq x(t+1).
 $$
@@ -95,16 +107,22 @@ for every real $t$.
 
 If $\lambda=0$, then $x(t+1)=0$ for every $t$, hence $x\equiv0$, contrary
 to the present assumption. Therefore $\lambda\neq0$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 x(n)=0
 $$
 for every integer $n$.
 
-::: {.proof}
-If $x\equiv0$, the conclusion follows from step <1>1. Otherwise, step <1>2
+::: pf-proof
+
+If $x\equiv0$, the conclusion follows from step [](#s1){.pf-ref}. Otherwise, step [](#s2){.pf-ref}
 gives
 $$
 x(t+1)=\lambda x(t)
@@ -116,11 +134,17 @@ x(t)=\lambda^{-1}x(t+1),
 $$
 iterating backward from $x(0)=0$ gives $x(n)=0$ for every negative integer
 $n$ as well.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

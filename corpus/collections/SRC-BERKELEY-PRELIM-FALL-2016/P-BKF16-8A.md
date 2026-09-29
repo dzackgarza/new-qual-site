@@ -35,7 +35,12 @@ Let $M _ { 2 } ( \mathbb { Q } )$ be the ring of all $2 \times 2$ matrices with 
 :::
 
 ::: {.solution}
-<1>1. Any unital ring homomorphism
+
+::: pf
+
+::: {.pf-step #s1}
+
+Any unital ring homomorphism
 $$
 \iota:K\to M_2(\QQ)
 $$
@@ -44,7 +49,8 @@ $$
 \iota(q)=qI_2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\iota(1)=I_2$, additivity gives
 $$
 \iota(n)=nI_2
@@ -62,15 +68,21 @@ $$
 \iota(q)=qI_2
 $$
 for every rational $q$.
+
 :::
 
-<1>2. If an injective unital homomorphism
+:::
+
+::: {.pf-step #s2}
+
+If an injective unital homomorphism
 $$
 \iota:K\hookrightarrow M_2(\QQ)
 $$
 exists, then $\QQ^2$ becomes a nonzero vector space over $K$.
 
-::: {.proof}
+::: pf-proof
+
 Define scalar multiplication by
 $$
 a\cdot v\coloneqq\iota(a)v,
@@ -82,16 +94,22 @@ $\iota(1)=I_2$ gives
 $$
 1\cdot v=v.
 $$
-Step <1>1 shows that the resulting action of the subfield $\QQ$ is the
+Step [](#s1){.pf-ref} shows that the resulting action of the subfield $\QQ$ is the
 ordinary rational scalar multiplication.
+
 :::
 
-<1>3. Under the hypothesis of step <1>2,
+:::
+
+::: {.pf-step #s3}
+
+Under the hypothesis of step [](#s2){.pf-ref},
 $$
 [K:\QQ]\le2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a nonzero vector
 $$
 v\in\QQ^2.
@@ -102,7 +120,7 @@ $$
 \qquad
 a\longmapsto a\cdot v
 $$
-is $\QQ$-linear by step <1>1. It is injective: if
+is $\QQ$-linear by step [](#s1){.pf-ref}. It is injective: if
 $$
 \Phi(a)=a\cdot v=0
 $$
@@ -113,37 +131,55 @@ Therefore
 $$
 [K:\QQ]\le2.
 $$
+
 :::
 
-<1>4. Consequently, an embeddable field $K$ is either
+:::
+
+::: {.pf-step #s4}
+
+Consequently, an embeddable field $K$ is either
 $$
 K=\QQ
 $$
 or a quadratic extension of $\QQ$.
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 [K:\QQ]\in\{1,2\}.
 $$
 Degree $1$ means $K=\QQ$, while degree $2$ means exactly that $K/\QQ$
 is quadratic.
+
 :::
 
-<1>5. The field $\QQ$ embeds unitally in $M_2(\QQ)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The field $\QQ$ embeds unitally in $M_2(\QQ)$.
+
+::: pf-proof
+
 The map
 $$
 q\longmapsto qI_2
 $$
 is an injective unital ring homomorphism.
+
 :::
 
-<1>6. Every quadratic extension $K/\QQ$ embeds unitally in
+:::
+
+::: {.pf-step #s6}
+
+Every quadratic extension $K/\QQ$ embeds unitally in
 $M_2(\QQ)$.
 
-::: {.proof}
+::: pf-proof
+
 View $K$ as a $2$-dimensional vector space over $\QQ$. For
 $a\in K$, let
 $$
@@ -178,9 +214,14 @@ $$
 \operatorname{End}_{\QQ}(K)\cong M_2(\QQ),
 $$
 which gives the required embedding.
+
 :::
 
-<1>7. Therefore the complete list is
+:::
+
+::: {.pf-step #s7}
+
+Therefore the complete list is
 $$
 \boxed{
 K=\QQ
@@ -189,13 +230,20 @@ K=\QQ
 }
 $$
 
-::: {.proof}
-Step <1>4 proves necessity, while steps <1>5--<1>6 prove sufficiency.
+::: pf-proof
+
+Step [](#s4){.pf-ref} proves necessity, while steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove sufficiency.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the requested classification.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the requested classification.
+
+:::
+
+:::
+
 :::

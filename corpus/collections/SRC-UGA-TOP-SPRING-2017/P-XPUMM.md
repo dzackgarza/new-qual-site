@@ -45,8 +45,14 @@ C=\partial M_1=\partial M_2\cong S^1
 \]
 is the connected-sum circle.
 
-<1>1. Mayer-Vietoris may be applied with pieces homotopy equivalent to $M_1$, $M_2$, and $C$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Mayer-Vietoris may be applied with pieces homotopy equivalent to $M_1$, $M_2$, and $C$.
+
+::: pf-proof
+
 Choose a collar
 \[
 C\times(-\varepsilon,\varepsilon)\subset X
@@ -63,9 +69,14 @@ V\simeq M_2,
 U\cap V\simeq C.
 \]
 Hence the Mayer-Vietoris sequence for $U\cup V$ can be identified with the one obtained from $M_1,M_2,C$.
+
 :::
 
-<1>2. For a Mobius band $M$ with boundary circle $C$, the inclusion
+:::
+
+::: {.pf-step #s2}
+
+For a Mobius band $M$ with boundary circle $C$, the inclusion
 \[
 i:C\hookrightarrow M
 \]
@@ -75,7 +86,9 @@ i_*:H_1(C;\ZZ)\longrightarrow H_1(M;\ZZ),
 \qquad
 i_*(1)=2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Use the standard model
 \[
 M=[0,1]\times[-1,1]/(0,t)\sim(1,-t).
@@ -91,9 +104,14 @@ H_1(M;\ZZ)\cong\ZZ.
 The boundary of the rectangle becomes a single circle in $M$.
 Traversing this boundary circle once passes once along each of the two horizontal boundary edges; under the deformation retraction to the core, these two passages concatenate with the same orientation.
 Thus the boundary circle winds twice around the core, so its homology class is twice the core generator.
+
 :::
 
-<1>3. The relevant part of the Mayer-Vietoris sequence is
+:::
+
+::: pf-step
+
+The relevant part of the Mayer-Vietoris sequence is
 \[
 0\longrightarrow H_2(X;\ZZ)
 \longrightarrow \ZZ
@@ -112,7 +130,9 @@ and
 \[
 \psi(n)=(n,-n).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each Mobius band deformation retracts to a circle, so
 \[
 H_2(M_i;\ZZ)=0,
@@ -128,7 +148,7 @@ H_1(C;\ZZ)\cong\ZZ,
 H_0(C;\ZZ)\cong\ZZ.
 \]
 The Mayer-Vietoris map on $H_1(C)$ is the difference of the two inclusion maps.
-By <1>2, each inclusion has degree $2$ on first homology, so signs may be chosen to give
+By step [](#s2){.pf-ref}, each inclusion has degree $2$ on first homology, so signs may be chosen to give
 \[
 \phi(n)=(2n,-2n).
 \]
@@ -137,13 +157,20 @@ Since $C,M_1,M_2$ are connected, the map on $H_0$ induced by the two inclusions 
 \[
 \psi(n)=(n,-n).
 \]
+
 :::
 
-<1>4. The second homology vanishes:
+:::
+
+::: {.pf-step #s4}
+
+The second homology vanishes:
 \[
 H_2(X;\ZZ)=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 \phi:\ZZ\longrightarrow\ZZ^2,
@@ -155,13 +182,20 @@ Exactness at $H_1(C;\ZZ)$ therefore gives
 \[
 H_2(X;\ZZ)=\ker\phi=0.
 \]
+
 :::
 
-<1>5. The first homology is
+:::
+
+::: {.pf-step #s5}
+
+The first homology is
 \[
 H_1(X;\ZZ)\cong\ZZ\oplus\ZZ/2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 \psi:\ZZ\longrightarrow\ZZ^2,
@@ -186,9 +220,14 @@ The vector $(1,-1)$ is primitive in $\ZZ^2$, so extending it to a basis gives
 \cong
 \ZZ\oplus\ZZ/2.
 \]
+
 :::
 
-<1>6. Thus the integral homology of $\RP^2\#\RP^2$ is
+:::
+
+::: pf-step
+
+Thus the integral homology of $\RP^2\#\RP^2$ is
 \[
 \boxed{
 H_n(X;\ZZ)\cong
@@ -198,8 +237,16 @@ H_n(X;\ZZ)\cong
 0, & n\ge2.
 \end{cases}}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The space $X$ is connected, so $H_0(X;\ZZ)\cong\ZZ$.
-The groups in degrees $1$ and $2$ were computed in <1>4 and <1>5. Since $X$ is a closed surface, it has the homotopy type of a $2$-dimensional CW complex, so its homology vanishes in degrees greater than $2$.
+The groups in degrees $1$ and $2$ were computed in steps [](#s4){.pf-ref} and [](#s5){.pf-ref}. Since $X$ is a closed surface, it has the homotopy type of a $2$-dimensional CW complex, so its homology vanishes in degrees greater than $2$.
+
 :::
+
+:::
+
+:::
+
 :::

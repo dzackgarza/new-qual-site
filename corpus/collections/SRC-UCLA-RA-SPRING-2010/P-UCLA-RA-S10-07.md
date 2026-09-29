@@ -45,11 +45,17 @@ d=\inf_{y\in E}\|y\|.
 \]
 Because $E$ is nonempty, $d<\infty$.
 
-<1>1. There is a sequence $\{x_n\}\subseteq E$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a sequence $\{x_n\}\subseteq E$ such that
 \[
 \|x_n\|^2\longrightarrow d^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For every $n\ge1$, by the definition of the infimum choose $x_n\in E$ with
 \[
 d\le \|x_n\|<d+\frac1n.
@@ -58,10 +64,17 @@ Then $\|x_n\|\to d$, hence
 \[
 \|x_n\|^2\to d^2.
 \]
+
 :::
 
-<1>2. The sequence $\{x_n\}$ is Cauchy in $H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The sequence $\{x_n\}$ is Cauchy in $H$.
+
+::: pf-proof
+
 For every $m,n$, convexity of $E$ gives
 \[
 \frac{x_n+x_m}{2}\in E.
@@ -87,27 +100,41 @@ we obtain
 \le
 2\|x_n\|^2+2\|x_m\|^2-4d^2.
 \]
-By <1>1, the right-hand side tends to $0$ as $m,n\to\infty$.
+By step [](#s1){.pf-ref}, the right-hand side tends to $0$ as $m,n\to\infty$.
 Hence $\{x_n\}$ is Cauchy.
+
 :::
 
-<1>3. There exists $x\in E$ with $\|x\|=d$.
-::: {.proof}
-Since $H$ is complete, <1>2 gives an element $x\in H$ such that
+:::
+
+::: pf-step
+
+There exists $x\in E$ with $\|x\|=d$.
+
+::: pf-proof
+
+Since $H$ is complete, step [](#s2){.pf-ref} gives an element $x\in H$ such that
 \[
 x_n\longrightarrow x
 \]
 in norm.
 The set $E$ is closed and every $x_n$ lies in $E$, so $x\in E$.
-Norm is continuous, hence by <1>1,
+Norm is continuous, hence by step [](#s1){.pf-ref},
 \[
 \|x\|=\lim_{n\to\infty}\|x_n\|=d.
 \]
 Thus the minimum norm is attained.
+
 :::
 
-<1>4. The minimum-norm element is unique.
-::: {.proof}
+:::
+
+::: pf-step
+
+The minimum-norm element is unique.
+
+::: pf-proof
+
 Suppose $x,y\in E$ both satisfy
 \[
 \|x\|=\|y\|=d.
@@ -134,5 +161,11 @@ Since a squared norm is nonnegative,
 \|x-y\|^2=0,
 \]
 so $x=y$.
+
 :::
+
+:::
+
+:::
+
 :::

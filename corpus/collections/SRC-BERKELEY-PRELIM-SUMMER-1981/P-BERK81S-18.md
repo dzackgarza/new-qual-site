@@ -53,10 +53,15 @@ W_{\RR}
 \{X\in M_n(\RR):XA=BX\}.
 $$
 
-<1>1. The space $W_{\RR}$ has a basis consisting of matrices in
+::: pf
+
+::: {.pf-step #s1}
+
+The space $W_{\RR}$ has a basis consisting of matrices in
 $W_{\QQ}$.
 
-::: {.proof}
+::: pf-proof
+
 The equation
 $$
 XA=BX
@@ -73,9 +78,14 @@ $$
 X_1,\ldots,X_d\in W_{\QQ}
 $$
 which form a $\QQ$-basis of $W_{\QQ}$ and an $\RR$-basis of $W_{\RR}$.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 C_0\in GL_n(\RR)
 $$
@@ -91,7 +101,8 @@ C_0
 t_j^{(0)}X_j.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The relation
 $$
 C_0AC_0^{-1}=B
@@ -100,12 +111,17 @@ from the hypothesis is equivalent to
 $$
 C_0A=BC_0.
 $$
-Thus $C_0\in W_{\RR}$. Step <1>1 says that
+Thus $C_0\in W_{\RR}$. Step [](#s1){.pf-ref} says that
 $X_1,\ldots,X_d$ is a basis of $W_{\RR}$, so $C_0$ has the displayed
 coordinates.
+
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #s3}
+
+Define
 $$
 P(t_1,\ldots,t_d)
 =
@@ -120,12 +136,13 @@ P\in\QQ[t_1,\ldots,t_d]
 $$
 and $P$ is not the zero polynomial.
 
-::: {.proof}
+::: pf-proof
+
 Every entry of every $X_j$ is rational. The determinant is a polynomial
 with integer coefficients in the matrix entries, so $P$ has rational
 coefficients.
 
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 P(t_1^{(0)},\ldots,t_d^{(0)})
 =
@@ -134,9 +151,14 @@ P(t_1^{(0)},\ldots,t_d^{(0)})
 0.
 $$
 Therefore $P$ is not identically zero.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 Q\in\QQ[x_1,\ldots,x_d]
 $$
@@ -149,7 +171,8 @@ $$
 Q(q)\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Proceed by induction on $d$.
 
 For $d=1$, a nonzero polynomial has only finitely many roots, while
@@ -175,9 +198,14 @@ Q(q_1,\ldots,q_{d-1},x_d)
 $$
 is a nonzero one-variable polynomial. It has only finitely many roots, so
 some $q_d\in\QQ$ is not a root.
+
 :::
 
-<1>5. There are rational numbers $q_1,\ldots,q_d$ such that the matrix
+:::
+
+::: {.pf-step #s5}
+
+There are rational numbers $q_1,\ldots,q_d$ such that the matrix
 $$
 C
 =
@@ -185,8 +213,9 @@ C
 $$
 is invertible.
 
-::: {.proof}
-Apply step <1>4 to the nonzero polynomial $P$ from step <1>3. Choose
+::: pf-proof
+
+Apply step [](#s4){.pf-ref} to the nonzero polynomial $P$ from step [](#s3){.pf-ref}. Choose
 $$
 (q_1,\ldots,q_d)\in\QQ^d
 $$
@@ -204,31 +233,43 @@ P(q_1,\ldots,q_d)
 $$
 Thus $C$ is invertible. Since the $X_j$ and the coefficients $q_j$ are
 rational, every entry of $C$ is rational.
+
 :::
 
-<1>6. The rational matrix $C$ from step <1>5 satisfies
+:::
+
+::: {.pf-step #s6}
+
+The rational matrix $C$ from step [](#s5){.pf-ref} satisfies
 $$
 \boxed{
 CAC^{-1}=B.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each $X_j$ lies in $W_{\QQ}$, so every rational linear combination of the
 $X_j$ also lies in $W_{\QQ}$. Hence
 $$
 CA=BC.
 $$
-Step <1>5 says that $C$ is invertible. Multiplying the last equality on
+Step [](#s5){.pf-ref} says that $C$ is invertible. Multiplying the last equality on
 the right by $C^{-1}$ gives
 $$
 CAC^{-1}=B.
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives an invertible conjugating matrix with rational entries.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives an invertible conjugating matrix with rational entries.
+
+:::
+
+:::
+
 :::

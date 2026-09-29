@@ -35,8 +35,15 @@ Further let $|\nu_n|$ denote the total variation measure associated to $\nu_n$.
 :::
 
 ::: {.solution}
-<1>1. Prove part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a).
+
+::: pf-proof
+
 For every $A\in\mathcal M$,
 \[
 |\nu_n(A)|\le |\nu_n|(A)\le |\nu_n|(X).
@@ -71,10 +78,17 @@ Thus the double series is absolutely convergent, so its order may be interchange
 \end{aligned}
 \]
 Hence $\nu$ is a complex measure.
+
 :::
 
-<1>2. Prove finite additivity and domination in part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove finite additivity and domination in part (b).
+
+::: pf-proof
+
 Since $|\nu_n(A)|\le\mu(A)$ for every $n$,
 \[
 |\nu(A)|\le\mu(A)
@@ -91,10 +105,17 @@ If $A,B\in\mathcal M$ are disjoint, then
 \end{aligned}
 \]
 Thus $\nu$ is finitely additive.
+
 :::
 
-<1>3. Upgrade finite additivity to countable additivity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Upgrade finite additivity to countable additivity.
+
+::: pf-proof
+
 Let $(A_k)_{k\ge1}$ be pairwise disjoint, let
 \[
 A=\bigcup_{k=1}^\infty A_k,
@@ -120,5 +141,11 @@ Hence
 \nu(A)=\sum_{k=1}^\infty\nu(A_k).
 \]
 Thus $\nu$ is countably additive and therefore a complex measure.
+
 :::
+
+:::
+
+:::
+
 :::

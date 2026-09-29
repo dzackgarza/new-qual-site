@@ -46,14 +46,19 @@ S
 \{(x,g)\in X\times G:g x=x\}.
 $$
 
-<1>1. Counting $S$ first by the coordinate $x$ gives
+::: pf
+
+::: {.pf-step #s1}
+
+Counting $S$ first by the coordinate $x$ gives
 $$
 \abs{S}
 =
 \sum_{x\in X}\abs{\operatorname{Stab}_G(x)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a fixed $x\in X$, the elements $g\in G$ for which
 $$
 (x,g)\in S
@@ -65,16 +70,22 @@ $$
 \{g\in G:gx=x\}.
 $$
 Summing these fiber cardinalities over $x$ gives the formula.
+
 :::
 
-<1>2. Since the action is transitive, for every $x\in X$,
+:::
+
+::: {.pf-step #s2}
+
+Since the action is transitive, for every $x\in X$,
 $$
 \abs{\operatorname{Stab}_G(x)}
 =
 \frac{\abs{G}}{\abs{X}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The orbit of $x$ is all of $X$ by transitivity. The orbit-stabilizer
 theorem gives
 $$
@@ -87,17 +98,23 @@ $$
 \abs{\operatorname{Stab}_G(x)}.
 $$
 Rearrange.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \abs{S}
 =
 \abs{G}.
 $$
 
-::: {.proof}
-Combine steps <1>1 and <1>2:
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}:
 $$
 \abs{S}
 =
@@ -106,9 +123,14 @@ $$
 =
 \abs{G}.
 $$
+
 :::
 
-<1>4. Counting $S$ first by the coordinate $g$ gives
+:::
+
+::: {.pf-step #s4}
+
+Counting $S$ first by the coordinate $g$ gives
 $$
 \abs{S}
 =
@@ -116,16 +138,22 @@ $$
 \abs{\operatorname{Fix}_g(X)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a fixed $g\in G$, the elements $x\in X$ for which
 $$
 (x,g)\in S
 $$
 are exactly the fixed points of $g$. Summing these fiber sizes over $g$
 gives the formula.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \boxed{
 \abs{G}
@@ -135,11 +163,17 @@ $$
 }.
 $$
 
-::: {.proof}
-Both sides equal $\abs{S}$ by steps <1>3 and <1>4. This proves part (a).
+::: pf-proof
+
+Both sides equal $\abs{S}$ by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. This proves part (a).
+
 :::
 
-<1>6. Suppose
+:::
+
+::: {.pf-step #s6}
+
+Suppose
 $$
 \abs{X}>1.
 $$
@@ -151,7 +185,8 @@ $$
 \abs{G}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The identity element $e$ fixes every point of $X$, so
 $$
 \abs{\operatorname{Fix}_e(X)}
@@ -172,9 +207,14 @@ $$
 \abs{G}.
 \end{aligned}
 $$
+
 :::
 
-<1>7. If $\abs{X}>1$, there exists
+:::
+
+::: {.pf-step #s7}
+
+If $\abs{X}>1$, there exists
 $$
 \boxed{g\in G}
 $$
@@ -183,14 +223,21 @@ $$
 \operatorname{Fix}_g(X)=\varnothing.
 $$
 
-::: {.proof}
-If no such element existed, step <1>6 would contradict the equality in
-step <1>5. This proves part (b).
+::: pf-proof
+
+If no such element existed, step [](#s6){.pf-ref} would contradict the equality in
+step [](#s5){.pf-ref}. This proves part (b).
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves part (a), and step <1>7 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

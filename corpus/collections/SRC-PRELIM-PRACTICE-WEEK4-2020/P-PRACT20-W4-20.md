@@ -19,12 +19,19 @@ Assume that V is a finite dimensional vector space and $T : V \to V$ is a linear
 :::
 
 ::: {.solution}
-<1>1. Every $v\in V$ has a decomposition
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every $v\in V$ has a decomposition
 $$
 v=T(v)+(v-T(v))
 $$
 with the first summand fixed by $T$ and the second in $\ker T$.
-::: {.proof}
+
+::: pf-proof
+
 Set
 $$
 v_1=T(v),
@@ -40,10 +47,17 @@ $$
 T(v_2)=T(v)-T^2(v)=0.
 $$
 Thus $v=v_1+v_2$ has the required form.
+
 :::
 
-<1>2. The decomposition is unique.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The decomposition is unique.
+
+::: pf-proof
+
 Suppose also
 $$
 v=u_1+u_2,
@@ -60,10 +74,17 @@ Hence $u_1=T(v)=v_1$, and then
 $$
 u_2=v-u_1=v-v_1=v_2.
 $$
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>2 prove existence and uniqueness of the required decomposition.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove existence and uniqueness of the required decomposition.
+
+:::
+
+:::
+
 :::

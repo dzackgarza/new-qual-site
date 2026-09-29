@@ -40,8 +40,14 @@ L=\{0\}\times[-1,1]
 be the vertical segment and let $G$ be the oscillating graph portion of $y=\sin(1/x)$ used in the quasi-circle.
 Before the extra connecting arc is added, $L$ and $G$ are the two path components of the topologist sine curve.
 
-<1>1. The image of every path in $Y$ meets only a finite truncation of the oscillating graph $G$ near the $y$-axis.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The image of every path in $Y$ meets only a finite truncation of the oscillating graph $G$ near the $y$-axis.
+
+::: pf-proof
+
 Let
 \[
 \alpha:I\to Y
@@ -73,12 +79,19 @@ Taking the minimum of these finitely many positive lower bounds and $x_b/2$ give
 \[
 x\ge\varepsilon.
 \]
+
 :::
 
-<1>2. Every loop in $Y$ is contained in a contractible subspace of $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every loop in $Y$ is contained in a contractible subspace of $Y$.
+
+::: pf-proof
+
 Let $\gamma:S^1\to Y$ be a loop.
-By <1>1, choose $\varepsilon>0$ so that the part of its image in $G$ lies in the compact graph segment
+By step [](#s1){.pf-ref}, choose $\varepsilon>0$ so that the part of its image in $G$ lies in the compact graph segment
 \[
 G_\varepsilon=G\cap\{x\ge\varepsilon\}.
 \]
@@ -92,17 +105,29 @@ The union of
 is a finite tree: these three arc pieces are attached without forming a cycle.
 It contains the whole image of $\gamma$ and is contractible.
 Therefore $\gamma$ is nullhomotopic in $Y$.
+
 :::
 
-<1>3. Consequently
+:::
+
+::: {.pf-step #s3}
+
+Consequently
 \[
 \boxed{\pi_1(Y)=0.}
 \]
-::: {.proof}
-Every loop is nullhomotopic by <1>2.
+
+::: pf-proof
+
+Every loop is nullhomotopic by step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #s4}
+
+Let
 \[
 p:\mathbb R\to S^1,
 \qquad
@@ -121,12 +146,21 @@ with
 \[
 p\widetilde f=f.
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the negation of the desired nonlifting statement.
+
 :::
 
-<1>5. The map $\widetilde f$ is constant on the collapsed segment $L$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The map $\widetilde f$ is constant on the collapsed segment $L$.
+
+::: pf-proof
+
 The quotient map $f$ sends all of $L$ to one point $z_0\in S^1$.
 Therefore
 \[
@@ -135,9 +169,14 @@ Therefore
 The fiber $p^{-1}(z_0)$ is a discrete subset of $\mathbb R$, while $L$ is connected.
 The continuous image of a connected space in a discrete space is a single point.
 Hence $\widetilde f|_L$ is constant.
+
 :::
 
-<1>6. The lift $\widetilde f$ factors through the quotient $f:Y\to S^1$:
+:::
+
+::: {.pf-step #s6}
+
+The lift $\widetilde f$ factors through the quotient $f:Y\to S^1$:
 there is a continuous map
 \[
 s:S^1\to\mathbb R
@@ -146,21 +185,30 @@ such that
 \[
 \widetilde f=s\circ f.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The map $f$ is precisely the quotient obtained by collapsing $L$ to one point, and it is one-to-one on the remaining quotient classes.
-By <1>5, $\widetilde f$ is constant on every fiber of this quotient map.
+By step [](#s5){.pf-ref}, $\widetilde f$ is constant on every fiber of this quotient map.
 The universal property of quotient maps therefore gives a unique continuous factor $s$ with
 \[
 \widetilde f=s f.
 \]
+
 :::
 
-<1>7. The map $s$ would be a section of $p$:
+:::
+
+::: {.pf-step #s7}
+
+The map $s$ would be a section of $p$:
 \[
 p\circ s=\operatorname{id}_{S^1}.
 \]
-::: {.proof}
-Using <1>4 and <1>6,
+
+::: pf-proof
+
+Using steps [](#s4){.pf-ref} and [](#s6){.pf-ref},
 \[
 f=p\widetilde f=p s f.
 \]
@@ -168,10 +216,17 @@ Since $f:Y\to S^1$ is surjective, equality after composition with $f$ implies
 \[
 p s=\operatorname{id}_{S^1}.
 \]
+
 :::
 
-<1>8. No such section $s$ exists.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+No such section $s$ exists.
+
+::: pf-proof
+
 On fundamental groups, the identity
 \[
 p s=\operatorname{id}_{S^1}
@@ -193,14 +248,27 @@ is the zero map, making $p_*s_*$ zero rather than the identity on
 \pi_1(S^1)\cong\mathbb Z.
 \]
 Contradiction.
+
 :::
 
-<1>9. Therefore $f$ has no lift to $\mathbb R\to S^1$, despite satisfying
+:::
+
+::: pf-step
+
+Therefore $f$ has no lift to $\mathbb R\to S^1$, despite satisfying
 \[
 f_*(\pi_1(Y))=0.
 \]
-::: {.proof}
-Nonexistence of the lift follows from <1>4--<1>8, while <1>3 gives the trivial subgroup condition.
+
+::: pf-proof
+
+Nonexistence of the lift follows from steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref}, while step [](#s3){.pf-ref} gives the trivial subgroup condition.
 Thus the local path-connectedness hypothesis in the usual lifting criterion cannot simply be omitted.
+
 :::
+
+:::
+
+:::
+
 :::

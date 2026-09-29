@@ -35,7 +35,12 @@ Let $A$ be a real $n\times n$ matrix.
 :::
 
 ::: {.solution}
-<1>1. Under the hypothesis of part (1), if
+
+::: pf
+
+::: {.pf-step #s1}
+
+Under the hypothesis of part (1), if
 $$
 \mathbf 1
 =
@@ -50,16 +55,23 @@ $$
 A^T\mathbf 1=\mathbf 1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $j$th entry of $A^T\mathbf 1$ is the sum of the entries in the $j$th
 column of $A$. By hypothesis, every such sum is $1$. Hence every entry of
 $A^T\mathbf1$ is $1$.
+
 :::
 
-<1>2. The matrix $A-I$ is singular.
+:::
 
-::: {.proof}
-Step <1>1 gives
+::: {.pf-step #s2}
+
+The matrix $A-I$ is singular.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 (A^T-I)\mathbf1=0.
 $$
@@ -74,17 +86,23 @@ $$
 \det(A-I),
 $$
 so $A-I$ is singular.
+
 :::
 
-<1>3. There is a nonzero column vector $x$ such that
+:::
+
+::: {.pf-step #s3}
+
+There is a nonzero column vector $x$ such that
 $$
 \boxed{
 Ax=x.
 }
 $$
 
-::: {.proof}
-By step <1>2, the kernel of $A-I$ is nonzero. Choose
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the kernel of $A-I$ is nonzero. Choose
 $$
 0\neq x\in\ker(A-I).
 $$
@@ -93,9 +111,14 @@ $$
 (A-I)x=0,
 $$
 which is equivalent to $Ax=x$.
+
 :::
 
-<1>4. For part (2), write
+:::
+
+::: {.pf-step #s4}
+
+For part (2), write
 $$
 A
 =
@@ -115,7 +138,8 @@ p(\lambda)
 \lambda^2-(a+d)\lambda+(ad-bc).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Directly,
 $$
 \begin{aligned}
@@ -126,9 +150,14 @@ $$
 \lambda^2-(a+d)\lambda+(ad-bc).
 \end{aligned}
 $$
+
 :::
 
-<1>5. The characteristic polynomial has two distinct real roots
+:::
+
+::: pf-step
+
+The characteristic polynomial has two distinct real roots
 $$
 \lambda_\pm
 =
@@ -137,8 +166,9 @@ a+d\pm\sqrt{(a-d)^2+4bc}
 }{2}.
 $$
 
-::: {.proof}
-The discriminant of the polynomial in step <1>4 is
+::: pf-proof
+
+The discriminant of the polynomial in step [](#s4){.pf-ref} is
 $$
 \begin{aligned}
 (a+d)^2-4(ad-bc)
@@ -150,9 +180,14 @@ a^2-2ad+d^2+4bc\\
 $$
 Since $b,c>0$, this discriminant is strictly positive. The quadratic
 formula gives the displayed roots.
+
 :::
 
-<1>6. The larger root
+:::
+
+::: {.pf-step #s6}
+
+The larger root
 $$
 \lambda_+
 =
@@ -162,11 +197,17 @@ a+d+\sqrt{(a-d)^2+4bc}
 $$
 is strictly positive.
 
-::: {.proof}
+::: pf-proof
+
 Both $a+d$ and the square root are positive, so their sum is positive.
+
 :::
 
-<1>7. There is a nonzero column vector $y$ such that
+:::
+
+::: {.pf-step #s7}
+
+There is a nonzero column vector $y$ such that
 $$
 \boxed{
 Ay=\lambda_+y
@@ -174,7 +215,8 @@ Ay=\lambda_+y
 $$
 with $\lambda_+>0$.
 
-::: {.proof}
+::: pf-proof
+
 Since $\lambda_+$ is a root of the characteristic polynomial,
 $$
 \det(A-\lambda_+I)=0.
@@ -184,12 +226,18 @@ For such a vector,
 $$
 (A-\lambda_+I)y=0,
 $$
-so $Ay=\lambda_+y$. Positivity of $\lambda_+$ is step <1>6.
+so $Ay=\lambda_+y$. Positivity of $\lambda_+$ is step [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (1), and step <1>7 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

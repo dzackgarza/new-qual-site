@@ -31,14 +31,20 @@ Show that there is an analytic function $g:U\to\CC$ such that $f=e^g$.
 :::
 
 ::: {.solution}
-<1>1. The function
+
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 h\coloneqq\frac{f'}{f}
 $$
 is holomorphic on $U$ and has a holomorphic primitive
 $k:U\to\CC$.
 
-::: {.proof}
+::: pf-proof
+
 The function $f$ has no zeros, so $1/f$ is holomorphic on $U$.
 Hence $h=f'/f$ is holomorphic. Since $U$ is simply connected, every
 holomorphic function on $U$ has a holomorphic primitive. Therefore
@@ -46,15 +52,21 @@ there is a holomorphic $k$ with
 $$
 k'=h=\frac{f'}{f}.
 $$
+
 :::
 
-<1>2. There is a constant $c\in\CC^\times$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is a constant $c\in\CC^\times$ such that
 $$
 f=ce^k
 $$
 on $U$.
 
-::: {.proof}
+::: pf-proof
+
 Differentiate $fe^{-k}$:
 $$
 \begin{aligned}
@@ -64,34 +76,46 @@ $$
 &=0,
 \end{aligned}
 $$
-where step <1>1 gives $k'=f'/f$. Because a region is connected,
+where step [](#s1){.pf-ref} gives $k'=f'/f$. Because a region is connected,
 $fe^{-k}$ is constant on $U$; write this constant as $c$. Since $f$
 never vanishes and $e^{-k}$ never vanishes, $c\ne0$. Thus
 $c\in\CC^\times$ and $f=ce^k$.
+
 :::
 
-<1>3. Choose $d\in\CC$ with $e^d=c$ and define
+:::
+
+::: {.pf-step #s3}
+
+Choose $d\in\CC$ with $e^d=c$ and define
 $$
 \boxed{g\coloneqq k+d}.
 $$
 Then $g$ is holomorphic on $U$ and $f=e^g$.
 
-::: {.proof}
+::: pf-proof
+
 Every nonzero complex number has a complex logarithm: writing
 $c=re^{i\theta}$ with $r>0$, one may take
 $$
 d=\log r+i\theta.
 $$
 The function $g=k+d$ is holomorphic because $k$ is holomorphic and
-$d$ is constant. By step <1>2,
+$d$ is constant. By step [](#s2){.pf-ref},
 $$
 e^g=e^{k+d}=e^de^k=ce^k=f.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 constructs the required analytic function $g$.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} constructs the required analytic function $g$.
+
+:::
+
+:::
+
 :::

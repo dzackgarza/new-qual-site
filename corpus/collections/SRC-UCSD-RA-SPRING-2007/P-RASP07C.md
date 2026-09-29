@@ -49,18 +49,32 @@ If $\|\cdot\|_1 \leq \|\cdot\|_2$, then there exists $C > 0$ such that $\|\cdot\
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 Take $X=\ell^2$ and let $x_n=e_n$, the standard unit vectors. Then $(e_n)$ is bounded, but
 \[
 \|e_n-e_m\|_2=\sqrt2
 \qquad(n\ne m),
 \]
 so it has no Cauchy, hence no convergent, subsequence. Completeness does not imply sequential compactness of bounded sets.
+
 :::
 
-<1>2. Part (b) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is true.
+
+::: pf-proof
+
 If
 \[
 \frac d{d\xi}\widehat f=0,
@@ -73,10 +87,17 @@ Injectivity of the Fourier transform on $\mathcal S$ gives
 \[
 \boxed{f=0.}
 \]
+
 :::
 
-<1>3. Part (c) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is false.
+
+::: pf-proof
+
 Let
 \[
 T=\delta_0.
@@ -86,10 +107,17 @@ Its Fourier transform is a nonzero constant tempered distribution (the precise c
 \frac d{d\xi}\widehat T=0,
 \]
 but $T\ne0$.
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 The identity map
 \[
 I:(X,\|\cdot\|_2)\longrightarrow(X,\|\cdot\|_1)
@@ -98,10 +126,17 @@ is bounded because $\|x\|_1\le\|x\|_2$. It is also a bijection between Banach sp
 \[
 \boxed{\|x\|_2\le C\|x\|_1\qquad\forall x\in X.}
 \]
+
 :::
 
-<1>5. Part (e) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (e) is false.
+
+::: pf-proof
+
 Take
 \[
 X=C^1([0,1]),
@@ -127,10 +162,17 @@ we have
 \|f_n\|_2\ge\|f_n'\|_\infty=1.
 \]
 Thus completeness of only one norm is insufficient.
+
 :::
 
-<1>6. Part (f) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (f) is false.
+
+::: pf-proof
+
 On $X=(0,1)$ with Lebesgue measure, let
 \[
 f(x)=x^{-1/2}.
@@ -145,10 +187,17 @@ but
 =\int_0^1\frac{dx}{x}=\infty.
 \]
 Thus $f\in L^1\setminus L^2$ even though $\mu(X)<\infty$.
+
 :::
 
-<1>7. Part (g) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (g) is true.
+
+::: pf-proof
+
 If $a=(a_n)\in\ell^1$, then
 \[
 \sup_n|a_n|\le\sum_n|a_n|=\|a\|_1.
@@ -163,10 +212,17 @@ Therefore
 \[
 \boxed{\|a\|_2\le\|a\|_1,\qquad \ell^1\subseteq\ell^2.}
 \]
+
 :::
 
-<1>8. Part (h) is false without additional hypotheses.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (h) is false without additional hypotheses.
+
+::: pf-proof
+
 Let
 \[
 X=\{x\},\qquad \mathcal M=\{\varnothing,X\},
@@ -193,5 +249,11 @@ while if $f(x)>0$, then
 Neither value equals $\mu_1(X)=1$. Thus no such density exists.
 
 The usual Radon--Nikodym theorem requires suitable sigma-finiteness (or a comparable semifiniteness/localizability hypothesis) on the measures.
+
 :::
+
+:::
+
+:::
+
 :::

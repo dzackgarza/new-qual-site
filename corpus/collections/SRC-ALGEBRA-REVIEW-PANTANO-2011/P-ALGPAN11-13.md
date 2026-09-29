@@ -33,18 +33,31 @@ Which of the following intersections is nonempty?
 ::: {.solution}
 The nonempty intersection is $\boxed{\text{(C)}\;P_{12}\cap P_{20}}$.
 
-<1>1. $60\in P_{12}\cap P_{20}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$60\in P_{12}\cap P_{20}$.
+
+::: pf-proof
+
 By definition $P_n=\{pn:p\text{ prime}\}$.
 Since
 \[
 60=5\cdot12=3\cdot20,
 \]
 we have $60\in P_{12}\cap P_{20}$.
+
 :::
 
-<1>2. The other intersections are empty.
-::: {.proof}
+:::
+
+::: pf-step
+
+The other intersections are empty.
+
+::: pf-proof
+
 In each case, $p$ and $q$ denote primes.
 
 - $p=23q$ cannot hold with both $p,q$ prime, so $P_1\cap P_{23}=\varnothing$.
@@ -56,5 +69,11 @@ In each case, $p$ and $q$ denote primes.
 - $5p=25q$ gives $p=5q$, impossible for primes.
 
 Thus only (C) is nonempty.
+
 :::
+
+:::
+
+:::
+
 :::

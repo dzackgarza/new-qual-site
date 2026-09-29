@@ -44,12 +44,18 @@ is its associated sheaf.  Write
 \]
 for the sheafification map.
 
-<1>1. For every $i$ there is a canonical sheaf morphism
+::: pf
+
+::: {.pf-step #s1}
+
+For every $i$ there is a canonical sheaf morphism
 \[
 \lambda_i:\mcf_i\longrightarrow\mcf.
 \]
 These morphisms are compatible with the transition maps of the direct system.
-::: {.proof}
+
+::: pf-proof
+
 For every open $U\subseteq X$, the direct-limit maps give
 \[
 \mcf_i(U)\longrightarrow\varinjlim_j\mcf_j(U)=\mcp(U).
@@ -63,9 +69,14 @@ Composing with
 \eta:\mcp\longrightarrow\mcp^+=\mcf
 \]
 gives $\lambda_i$.  Compatibility follows sectionwise from compatibility of the canonical maps into a direct limit.
+
 :::
 
-<1>2. Let $\mcg$ be a sheaf and suppose we are given compatible morphisms
+:::
+
+::: {.pf-step #s2}
+
+Let $\mcg$ be a sheaf and suppose we are given compatible morphisms
 \[
 \phi_i:\mcf_i\longrightarrow\mcg.
 \]
@@ -74,7 +85,9 @@ There is a unique presheaf morphism
 \phi:\mcp\longrightarrow\mcg
 \]
 whose composite with $\mcf_i\to\mcp$ is $\phi_i$ for every $i$.
-::: {.proof}
+
+::: pf-proof
+
 Fix an open set $U\subseteq X$.  The maps on sections
 \[
 \phi_i(U):\mcf_i(U)\longrightarrow\mcg(U)
@@ -92,9 +105,14 @@ For an inclusion $V\subseteq U$, both composites
 obtained by restricting before or after $\phi$ agree on the image of every $\mcf_i(U)$, because each $\phi_i$ is a morphism of sheaves.  The direct-limit universal property therefore makes the two composites equal.  Hence the maps $\phi(U)$ assemble to a presheaf morphism $\phi:\mcp\to\mcg$.
 
 Uniqueness also holds open set by open set by the same direct-limit universal property.
+
 :::
 
-<1>3. The presheaf morphism $\phi$ factors uniquely through the sheafification:
+:::
+
+::: {.pf-step #s3}
+
+The presheaf morphism $\phi$ factors uniquely through the sheafification:
 \[
 \boxed{
 \begin{array}{ccc}
@@ -108,28 +126,37 @@ for a unique sheaf morphism
 \[
 \Phi:\mcf\longrightarrow\mcg.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Sheafification is left adjoint to the inclusion of sheaves into presheaves.  Equivalently, for every presheaf $\mcp$ and every sheaf $\mcg$, composition with the sheafification map induces a bijection
 \[
 \operatorname{Hom}_{\mathrm{Sh}(X)}(\mcp^+,\mcg)
 \xrightarrow{\sim}
 \operatorname{Hom}_{\mathrm{PSh}(X)}(\mcp,\mcg).
 \]
-Apply this universal property to the presheaf morphism $\phi$ from <1>2.
+Apply this universal property to the presheaf morphism $\phi$ from step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The morphism $\Phi$ satisfies
+:::
+
+::: {.pf-step #s4}
+
+The morphism $\Phi$ satisfies
 \[
 \Phi\circ\lambda_i=\phi_i
 \qquad
 \text{for every }i.
 \]
-::: {.proof}
-By <1>1, $\lambda_i$ is the composite
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $\lambda_i$ is the composite
 \[
 \mcf_i\longrightarrow\mcp\xrightarrow{\eta}\mcf.
 \]
-By <1>3,
+By step [](#s3){.pf-ref},
 \[
 \Phi\circ\eta=\phi.
 \]
@@ -139,11 +166,18 @@ Therefore
 =\phi\circ(\mcf_i\to\mcp)
 =\phi_i
 \]
-by the defining property of $\phi$ in <1>2.
+by the defining property of $\phi$ in step [](#s2){.pf-ref}.
+
 :::
 
-<1>5. The morphism $\Phi$ is the unique sheaf morphism with the property in <1>4.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The morphism $\Phi$ is the unique sheaf morphism with the property in step [](#s4){.pf-ref}.
+
+::: pf-proof
+
 Suppose
 \[
 \Psi:\mcf\longrightarrow\mcg
@@ -158,29 +192,43 @@ Precompose with the sheafification map:
 \[
 \Psi\circ\eta:\mcp\longrightarrow\mcg.
 \]
-For every $i$, its composite with $\mcf_i\to\mcp$ is $\phi_i$.  By uniqueness in <1>2,
+For every $i$, its composite with $\mcf_i\to\mcp$ is $\phi_i$.  By uniqueness in step [](#s2){.pf-ref},
 \[
 \Psi\circ\eta=\phi=\Phi\circ\eta.
 \]
-The sheafification universal property in <1>3 then implies
+The sheafification universal property in step [](#s3){.pf-ref} then implies
 \[
 \Psi=\Phi.
 \]
+
 :::
 
-<1>6. Hence
+:::
+
+::: {.pf-step #s6}
+
+Hence
 \[
 \boxed{
 \mcf=\left(U\longmapsto\varinjlim_i\mcf_i(U)\right)^+
 }
 \]
 with the maps $\lambda_i$ is the direct limit of the system $\{\mcf_i\}$ in the category of sheaves on $X$.
-::: {.proof}
-Steps <1>4 and <1>5 establish exactly the existence and uniqueness demanded by the categorical universal property of the colimit.
+
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} establish exactly the existence and uniqueness demanded by the categorical universal property of the colimit.
+
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>6 is the assertion of the exercise.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the assertion of the exercise.
+
+:::
+
+:::
+
 :::

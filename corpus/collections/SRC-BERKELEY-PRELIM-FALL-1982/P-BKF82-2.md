@@ -39,8 +39,14 @@ $$
 \varphi(r)=r(3)\pmod7.
 $$
 
-<1>1. The kernel of $\varphi$ is $I=(7,x-3)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The kernel of $\varphi$ is $I=(7,x-3)$.
+
+::: pf-proof
+
 Certainly
 $$
 7\in\ker\varphi
@@ -72,10 +78,17 @@ Thus
 $$
 \boxed{\ker\varphi=I.}
 $$
+
 :::
 
-<1>2. Every polynomial has a unique residue representative among $0,1,\ldots,6$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every polynomial has a unique residue representative among $0,1,\ldots,6$.
+
+::: pf-proof
+
 For $r\in\mathbb Z[x]$, choose the unique integer
 $$
 0\le\alpha\le6
@@ -88,15 +101,22 @@ Then
 $$
 \varphi(r-\alpha)=0,
 $$
-so by step <1>1,
+so by step [](#s1){.pf-ref},
 $$
 r-\alpha\in I.
 $$
 This proves part (a).
+
 :::
 
-<1>3. Compute the residue for the given polynomial.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the residue for the given polynomial.
+
+::: pf-proof
+
 For
 $$
 r=x^{250}+15x^{14}+x^2+5,
@@ -138,5 +158,11 @@ Hence
 $$
 \boxed{\alpha=6.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

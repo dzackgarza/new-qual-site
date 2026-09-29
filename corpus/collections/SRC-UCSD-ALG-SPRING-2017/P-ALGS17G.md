@@ -29,7 +29,12 @@ For each intermediate field $M$ find an element $\alpha \in M$ such that $M = \m
 :::
 
 ::: {.solution}
-<1>1. Let \(\zeta=\zeta_{11}\) be a primitive eleventh root of unity.
+
+::: pf
+
+::: pf-step
+
+Let \(\zeta=\zeta_{11}\) be a primitive eleventh root of unity.
 Then
 \[
 L=\QQ(\zeta),\qquad [L:\QQ]=\varphi(11)=10,
@@ -38,30 +43,53 @@ and
 \[
 G:=\operatorname{Gal}(L/\QQ)\cong (\ZZ/11\ZZ)^\times\cong C_{10}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The roots of \(x^{11}-1\) are \(1,\zeta,\dots,\zeta^{10}\), so its splitting field is \(\QQ(\zeta)\). For prime \(11\), the cyclotomic polynomial \(\Phi_{11}\) has degree \(10\), and the automorphisms are \(\sigma_a(\zeta)=\zeta^a\) for \(a\in(\ZZ/11\ZZ)^\times\). The latter group is cyclic of order \(10\).
+
 :::
 
-<1>2. Since \(G\cong C_{10}\), it has exactly one subgroup of each order \(1,2,5,10\), and no others.
+:::
+
+::: {.pf-step #s2}
+
+Since \(G\cong C_{10}\), it has exactly one subgroup of each order \(1,2,5,10\), and no others.
 Hence \(L/\QQ\) has exactly four intermediate fields, of degrees \(10,5,2,1\) over \(\QQ\), respectively.
-::: {.proof}
+
+::: pf-proof
+
 A cyclic group has a unique subgroup for each divisor of its order.
 Apply the Galois correspondence.
+
 :::
 
-<1>3. The fields of degrees \(1\) and \(10\) are
+:::
+
+::: {.pf-step #s3}
+
+The fields of degrees \(1\) and \(10\) are
 \[
 \QQ=\QQ(0),\qquad L=\QQ(\zeta).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Immediate.
+
 :::
 
-<1>4. The unique degree-\(5\) intermediate field is
+:::
+
+::: {.pf-step #s4}
+
+The unique degree-\(5\) intermediate field is
 \[
 M_5=\QQ(\zeta+\zeta^{-1}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Complex conjugation is the unique element of order \(2\) in \(G\), and its fixed field is the maximal real subfield.
 The element \(t=\zeta+\zeta^{-1}\) is fixed by conjugation.
 Moreover \(\zeta\) satisfies
@@ -69,9 +97,14 @@ Moreover \(\zeta\) satisfies
 X^2-tX+1=0
 \]
 over \(\QQ(t)\), while \(\zeta\notin\RR\); hence \([L:\QQ(t)]=2\). Therefore \([\QQ(t):\QQ]=5\), so \(\QQ(t)\) is exactly the fixed field of complex conjugation.
+
 :::
 
-<1>5. Let
+:::
+
+::: {.pf-step #s5}
+
+Let
 \[
 R=\{1,3,4,5,9\}\subset (\ZZ/11\ZZ)^\times
 \]
@@ -81,15 +114,22 @@ be the subgroup of quadratic residues, and put
 =\zeta+\zeta^3+\zeta^4+\zeta^5+\zeta^9.
 \]
 Then \(\eta\) is fixed by the order-\(5\) subgroup \(R\le G\).
-::: {.proof}
+
+::: pf-proof
+
 For \(a\in R\), multiplication by \(a\) permutes \(R\), so
 \[
 \sigma_a(\eta)=\sum_{r\in R}\zeta^{ar}=\eta.
 \]
 Thus \(\eta\in L^R\), the unique quadratic intermediate field.
+
 :::
 
-<1>6. If
+:::
+
+::: {.pf-step #s6}
+
+If
 \[
 \eta'=\zeta^2+\zeta^6+\zeta^7+\zeta^8+\zeta^{10}
 \]
@@ -99,7 +139,9 @@ is the corresponding sum over the nonresidues, then
 \qquad
 \eta\eta'=3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The first identity follows from
 \[
 1+\zeta+\cdots+\zeta^{10}=0.
@@ -108,9 +150,14 @@ For the product, the coefficient of \(\zeta^k\) in \( \eta\eta'=\sum_{r\in R,\,n
 \[
 \eta\eta'=5+2\sum_{k=1}^{10}\zeta^k=5-2=3.
 \]
+
 :::
 
-<1>7. Therefore \(\eta\) satisfies
+:::
+
+::: {.pf-step #s7}
+
+Therefore \(\eta\) satisfies
 \[
 X^2+X+3=0,
 \]
@@ -118,11 +165,18 @@ so
 \[
 \QQ(\eta)=\QQ(\sqrt{-11}).
 \]
-::: {.proof}
-By <1>6, \(\eta\) and \(\eta'\) have sum \(-1\) and product \(3\), hence are the roots of \(X^2+X+3\), whose discriminant is \(-11\). Since \(-11\) is not a square in \(\QQ\), the polynomial is irreducible, so \([\QQ(\eta):\QQ]=2\). Thus \(\QQ(\eta)=L^R\), the unique quadratic intermediate field.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, \(\eta\) and \(\eta'\) have sum \(-1\) and product \(3\), hence are the roots of \(X^2+X+3\), whose discriminant is \(-11\). Since \(-11\) is not a square in \(\QQ\), the polynomial is irreducible, so \([\QQ(\eta):\QQ]=2\). Thus \(\QQ(\eta)=L^R\), the unique quadratic intermediate field.
+
 :::
 
-<1>8. Consequently the complete list of intermediate fields, with primitive elements, is
+:::
+
+::: pf-step
+
+Consequently the complete list of intermediate fields, with primitive elements, is
 \[
 \begin{array}{c|c}
 M & \alpha\text{ with }M=\QQ(\alpha)\\ \hline
@@ -133,7 +187,15 @@ L & \zeta
 \end{array}
 \]
 and there are no other intermediate fields.
-::: {.proof}
-Combine <1>2--<1>7.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

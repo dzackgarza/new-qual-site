@@ -44,9 +44,16 @@ Prove the following:
 :::
 
 ::: {.solution}
-<1>1. If $\alpha_1$ is surjective and $\alpha_2,\alpha_4$ are injective, then
+
+::: pf
+
+::: pf-step
+
+If $\alpha_1$ is surjective and $\alpha_2,\alpha_4$ are injective, then
 $\alpha_3$ is injective.
-::: {.proof}
+
+::: pf-proof
+
 Let $x\in A_3$ satisfy $\alpha_3(x)=0$. Commutativity gives
 \[
 \alpha_4(f_3(x))=g_3(\alpha_3(x))=0.
@@ -81,11 +88,18 @@ Injectivity of $\alpha_2$ gives $f_1(a_1)=y$. Hence
 x=f_2(y)=f_2(f_1(a_1))=0
 \]
 by exactness of the top row. Thus $\ker\alpha_3=0$ and $\alpha_3$ is injective.
+
 :::
 
-<1>2. If $\alpha_5$ is injective and $\alpha_2,\alpha_4$ are surjective, then
+:::
+
+::: pf-step
+
+If $\alpha_5$ is injective and $\alpha_2,\alpha_4$ are surjective, then
 $\alpha_3$ is surjective.
-::: {.proof}
+
+::: pf-proof
+
 Let $b_3\in B_3$. Since $\alpha_4$ is surjective, choose $a_4\in A_4$ such
 that
 \[
@@ -129,5 +143,11 @@ $\alpha_2(a_2)=b_2$. Therefore
 \]
 Thus every $b_3\in B_3$ lies in the image of $\alpha_3$, so $\alpha_3$ is
 surjective.
+
 :::
+
+:::
+
+:::
+
 :::

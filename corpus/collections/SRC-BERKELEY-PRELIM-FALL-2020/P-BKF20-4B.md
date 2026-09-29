@@ -58,10 +58,15 @@ F_n(z)
 \frac{\pi\cot(\pi z)}{z^n}.
 $$
 
-<1>1. The poles of $F_n$ are exactly the integers. Every nonzero
+::: pf
+
+::: {.pf-step #s1}
+
+The poles of $F_n$ are exactly the integers. Every nonzero
 integer is a simple pole, while $0$ is a pole of order $n+1$.
 
-::: {.proof}
+::: pf-proof
+
 The function $\cot(\pi z)$ has simple poles exactly at the integers and
 zeros at the half-integers. Near an integer $m$,
 $$
@@ -91,17 +96,23 @@ $$
 $$
 and division by $z^n$ gives a pole of order $n+1$.
 There are no other poles.
+
 :::
 
-<1>2. For every nonzero integer $m$,
+:::
+
+::: {.pf-step #s2}
+
+For every nonzero integer $m$,
 $$
 \boxed{
 \operatorname{Res}_{z=m}F_n(z)=\frac1{m^n}.
 }
 $$
 
-::: {.proof}
-By the expansion in step <1>1,
+::: pf-proof
+
+By the expansion in step [](#s1){.pf-ref},
 $$
 F_n(z)
 =
@@ -113,9 +124,14 @@ $$
 Since $z^{-n}$ is holomorphic at $m$, the coefficient of
 $(z-m)^{-1}$ is its value at $m$, namely $m^{-n}$.
 This completes part (a).
+
 :::
 
-<1>3. Assume from now on that $n$ is positive and even. For
+:::
+
+::: {.pf-step #s3}
+
+Assume from now on that $n$ is positive and even. For
 $N\ge1$, put
 $$
 R_N\coloneqq N+\frac12
@@ -130,7 +146,8 @@ $$
 $$
 for every $z\in\Gamma_N$.
 
-::: {.proof}
+::: pf-proof
+
 On a vertical side,
 $$
 \operatorname{Re}z=\pm\left(N+\frac12\right).
@@ -163,21 +180,27 @@ Thus one may take
 $$
 C=\max\left\{1,\coth\left(\frac\pi2\right)\right\}.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \int_{\Gamma_N}F_n(z)\,dz
 \longrightarrow
 0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every point of $\Gamma_N$ satisfies
 $$
 |z|\ge R_N.
 $$
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 |F_n(z)|
 \le
@@ -193,9 +216,14 @@ $$
 8\pi C R_N^{1-n}.
 $$
 Because $n\ge2$, the right-hand side tends to $0$.
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 r_n\coloneqq\operatorname{Res}_{z=0}F_n(z),
 $$
@@ -204,12 +232,13 @@ $$
 r_n+2\sum_{m=1}^{\infty}\frac1{m^n}=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The poles inside $\Gamma_N$ are precisely
 $$
 -N,-N+1,\ldots,-1,0,1,\ldots,N.
 $$
-The residue theorem and step <1>2 give
+The residue theorem and step [](#s2){.pf-ref} give
 $$
 \frac1{2\pi i}
 \int_{\Gamma_N}F_n(z)\,dz
@@ -232,13 +261,19 @@ r_n
 +
 2\sum_{m=1}^{N}\frac1{m^n}.
 $$
-Now let $N\to\infty$. Step <1>4 sends the left-hand side to $0$, and
+Now let $N\to\infty$. Step [](#s4){.pf-ref} sends the left-hand side to $0$, and
 the series converges because $n\ge2$. This proves the identity.
+
 :::
 
-<1>6. The residue $r_n$ is a rational multiple of $\pi^n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The residue $r_n$ is a rational multiple of $\pi^n$.
+
+::: pf-proof
+
 Define
 $$
 h(w)\coloneqq w\cot w.
@@ -292,23 +327,29 @@ r_n
 c_{n/2}\pi^n
 $$
 with $c_{n/2}\in\QQ$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{
 \frac{\sum_{m=1}^{\infty}m^{-n}}{\pi^n}\in\QQ.
 }
 $$
 
-::: {.proof}
-By step <1>5,
+::: pf-proof
+
+By step [](#s5){.pf-ref},
 $$
 \sum_{m=1}^{\infty}\frac1{m^n}
 =
 -\frac{r_n}{2}.
 $$
-By step <1>6,
+By step [](#s6){.pf-ref},
 $$
 r_n=c_{n/2}\pi^n
 $$
@@ -321,11 +362,17 @@ $$
 \QQ.
 $$
 This proves part (b).
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>7 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

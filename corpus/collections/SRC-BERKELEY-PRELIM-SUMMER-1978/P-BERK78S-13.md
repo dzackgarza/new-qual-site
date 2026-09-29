@@ -51,7 +51,11 @@ if and only if there is an $n\times n$ matrix over $R$ with determinant $1$ whos
 ::: {.solution}
 All greatest common divisors below are chosen monic.
 
-<1>1. Let $a,b\in R$ be not both zero, and let
+::: pf
+
+::: {.pf-step #s1}
+
+Let $a,b\in R$ be not both zero, and let
 $$
 d=\gcd(a,b).
 $$
@@ -64,7 +68,8 @@ $$
 (a,b)Q(a,b)=(d,0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $R=F[x]$ is a Euclidean domain, Bezout's identity gives
 $u,v\in R$ such that
 $$
@@ -104,9 +109,14 @@ ua'+vb'
 1.
 $$
 Thus $Q(a,b)\in\operatorname{SL}_2(R)$.
+
 :::
 
-<1>2. For distinct indices $r,s$, the matrix which acts on coordinates
+:::
+
+::: {.pf-step #s2}
+
+For distinct indices $r,s$, the matrix which acts on coordinates
 $r,s$ by
 $$
 \begin{pmatrix}
@@ -116,13 +126,19 @@ $$
 $$
 and fixes all other coordinates lies in $\operatorname{SL}_n(R)$.
 
-::: {.proof}
+::: pf-proof
+
 The displayed $2\times2$ block has determinant $1$. The full matrix is
 block diagonal after a simultaneous reordering of rows and columns, with
 this block and identity blocks, so its determinant is $1$.
+
 :::
 
-<1>3. Suppose
+:::
+
+::: {.pf-step #s3}
+
+Suppose
 $$
 \gcd(p_1,\ldots,p_n)=1.
 $$
@@ -135,10 +151,11 @@ $$
 (p_1,\ldots,p_n)U=(1,0,\ldots,0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because the gcd is $1$, the row is not the zero row. If $p_1=0$, choose
 $k\geq2$ with $p_k\neq0$ and apply the determinant-one coordinate
-transformation from step <1>2 to coordinates $1$ and $k$. After this
+transformation from step [](#s2){.pf-ref} to coordinates $1$ and $k$. After this
 operation the first coordinate is nonzero.
 
 Now process coordinates
@@ -150,7 +167,7 @@ $$
 a,\ b.
 $$
 The first entry is nonzero, so the pair is not $(0,0)$. Embed the matrix
-$Q(a,b)$ from step <1>1 into coordinates $1$ and $j$, fixing all other
+$Q(a,b)$ from step [](#s1){.pf-ref} into coordinates $1$ and $j$, fixing all other
 coordinates. Right multiplication by this embedded matrix replaces the
 pair $(a,b)$ by
 $$
@@ -171,17 +188,23 @@ $$
 $$
 The product $U$ of all the determinant-one transformations lies in
 $\operatorname{SL}_n(R)$.
+
 :::
 
-<1>4. Under the hypothesis
+:::
+
+::: {.pf-step #s4}
+
+Under the hypothesis
 $$
 \gcd(p_1,\ldots,p_n)=1,
 $$
 there is an $n\times n$ matrix over $R$ with determinant $1$ and first row
 $(p_1,\ldots,p_n)$.
 
-::: {.proof}
-Let $U$ be the matrix from step <1>3 and set
+::: pf-proof
+
+Let $U$ be the matrix from step [](#s3){.pf-ref} and set
 $$
 A=U^{-1}.
 $$
@@ -189,7 +212,7 @@ Since $\det U=1$,
 $$
 \det A=1.
 $$
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 (p_1,\ldots,p_n)U=e_1^T.
 $$
@@ -203,9 +226,14 @@ e_1^TA.
 $$
 But $e_1^TA$ is the first row of $A$. Hence $A$ is the required
 completion.
+
 :::
 
-<1>5. Conversely, suppose there is a matrix
+:::
+
+::: {.pf-step #s5}
+
+Conversely, suppose there is a matrix
 $$
 A\in M_n(R)
 $$
@@ -218,7 +246,8 @@ $$
 \sum_{j=1}^n p_jc_j=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expand $\det A$ along the first row:
 $$
 \det A
@@ -233,28 +262,39 @@ take
 $$
 c_j=C_{1j}.
 $$
+
 :::
 
-<1>6. Under the hypothesis of step <1>5,
+:::
+
+::: {.pf-step #s6}
+
+Under the hypothesis of step [](#s5){.pf-ref},
 $$
 \gcd(p_1,\ldots,p_n)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 d=\gcd(p_1,\ldots,p_n).
 $$
 Then $d$ divides every $p_j$, so it divides every $R$-linear combination
-of the $p_j$. By step <1>5 it therefore divides $1$. Thus $d$ is a unit in
+of the $p_j$. By step [](#s5){.pf-ref} it therefore divides $1$. Thus $d$ is a unit in
 $F[x]$. Since the gcd is chosen monic, the only monic unit is $1$, and
 hence
 $$
 d=1.
 $$
+
 :::
 
-<1>7. The equivalence holds:
+:::
+
+::: {.pf-step #s7}
+
+The equivalence holds:
 $$
 \boxed{
 \gcd(p_1,\ldots,p_n)=1
@@ -264,16 +304,23 @@ $$
 }
 $$
 
-::: {.proof}
-Step <1>4 proves the forward implication, and step <1>6 proves the reverse
+::: pf-proof
+
+Step [](#s4){.pf-ref} proves the forward implication, and step [](#s6){.pf-ref} proves the reverse
 implication.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

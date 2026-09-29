@@ -36,8 +36,15 @@ converges in $X$.
 :::
 
 ::: {.solution}
-<1>1. If $X$ is Banach, every absolutely convergent series converges.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $X$ is Banach, every absolutely convergent series converges.
+
+::: pf-proof
+
 Suppose
 \[
 \sum_{n=1}^\infty\|x_n\|<\infty
@@ -53,10 +60,17 @@ If $M>N$, then
 \le\sum_{n=N+1}^M\|x_n\|.
 \]
 Because the scalar series of norms converges, the right-hand side tends to $0$ uniformly in $M>N$ as $N\to\infty$. Thus $(s_N)$ is Cauchy. Since $X$ is complete, $(s_N)$ converges in $X$.
+
 :::
 
-<1>2. If every absolutely convergent series converges, then $X$ is Banach.
-::: {.proof}
+:::
+
+::: pf-step
+
+If every absolutely convergent series converges, then $X$ is Banach.
+
+::: pf-proof
+
 Let $(y_n)$ be a Cauchy sequence in $X$. Choose a subsequence $(y_{n_k})$ such that
 \[
 \|y_{n_{k+1}}-y_{n_k}\|<2^{-k}
@@ -92,5 +106,11 @@ For every $n\ge N$,
 \le\|y_n-y_{n_k}\|+\|y_{n_k}-y\|<\varepsilon.
 \]
 Thus every Cauchy sequence in $X$ converges, so $X$ is Banach.
+
 :::
+
+:::
+
+:::
+
 :::

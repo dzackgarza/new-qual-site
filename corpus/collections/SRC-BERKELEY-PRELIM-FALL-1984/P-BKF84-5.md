@@ -45,7 +45,11 @@ F(x,y)
 3xy+\frac{y}{1+y^2}.
 $$
 
-<1>1. On the strip
+::: pf
+
+::: {.pf-step #s1}
+
+On the strip
 $$
 0\leq x\leq1,
 \qquad
@@ -54,7 +58,8 @@ $$
 the function $F$ is globally Lipschitz in $y$, with Lipschitz constant
 $4$.
 
-::: {.proof}
+::: pf-proof
+
 Differentiate with respect to $y$:
 $$
 \frac{\partial F}{\partial y}(x,y)
@@ -83,9 +88,14 @@ $$
 \leq
 4\abs{y_1-y_2}.
 $$
+
 :::
 
-<1>2. For every positive integer $n$, there is a unique solution
+:::
+
+::: {.pf-step #s2}
+
+For every positive integer $n$, there is a unique solution
 $$
 f_n:[0,1]\longrightarrow\RR
 $$
@@ -96,26 +106,33 @@ f_n'(x)=F(x,f_n(x)),
 f_n(0)=\frac1n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $F$ is continuous on $[0,1]\times\RR$ and globally
-Lipschitz in $y$ by step <1>1. The global Picard--Lindelöf theorem
+Lipschitz in $y$ by step [](#s1){.pf-ref}. The global Picard--Lindelöf theorem
 therefore gives a unique solution throughout the whole interval
 $[0,1]$ for every initial value.
+
 :::
 
-<1>3. For every $n$ and every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n$ and every $x\in[0,1]$,
 $$
 \abs{f_n(x)}
 \leq
 \frac{e^{4x}}n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The identically zero function is also a solution because
 $$
 F(x,0)=0.
 $$
-Using the integral equation for $f_n$ and step <1>1,
+Using the integral equation for $f_n$ and step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \abs{f_n(x)}
@@ -139,28 +156,40 @@ $$
 \leq
 \frac1n e^{4x}.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \boxed{
 \lim_{n\to\infty}f_n(1)=0
 }.
 $$
 
-::: {.proof}
-Step <1>3 gives
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives
 $$
 \abs{f_n(1)}
 \leq
 \frac{e^4}{n},
 $$
 and the right-hand side tends to $0$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves Part (1), and step <1>4 proves Part (2).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves Part (1), and step [](#s4){.pf-ref} proves Part (2).
+
+:::
+
+:::
+
 :::

@@ -39,9 +39,14 @@ Show that Picard pullback agrees, under the same isomorphisms, with the class-gr
 The [[D-5PQ5W|Cartier-divisor/Picard comparison]] sends a Cartier divisor class represented by $D$ to $[\OO(D)]$.
 For the nonsingular curves in part (b), and for the locally factorial schemes in part (c), it identifies the Weil class group with the Picard group [@Har10a, Corollary II.6.16].
 
-<1>1. Pullback of invertible sheaves induces a group homomorphism $f^*:\Pic(Y)\to\Pic(X)$ for every morphism of schemes.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Pullback of invertible sheaves induces a group homomorphism $f^*:\Pic(Y)\to\Pic(X)$ for every morphism of schemes.
+
+::: pf-proof
+
 By definition,
 $$
 f^*\mathcal L=f^{-1}\mathcal L\otimes_{f^{-1}\OO_Y}\OO_X.
@@ -59,14 +64,20 @@ For example, the first isomorphism sends $(\ell\otimes m)\otimes a$ to $(\ell\ot
 These local tensor maps are compatible with restrictions and therefore define the stated sheaf isomorphism.
 They show that pullback preserves the group operation and identity, proving part (a).
 No flatness assumption on $f$ is needed.
+
 :::
 
-<1>2. For a finite morphism of nonsingular curves and every divisor $D$ on $Y$, there is a canonical isomorphism
+:::
+
+::: {.pf-step #s2}
+
+For a finite morphism of nonsingular curves and every divisor $D$ on $Y$, there is a canonical isomorphism
 $$
 f^*\OO_Y(D)\cong\OO_X(f^*D).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The finite morphism $f$ is dominant: its image is closed, and its zero-dimensional fibers exclude the possibility that the whole curve maps to a point.
 It therefore gives an inclusion $K(Y)\hookrightarrow K(X)$.
 For a closed point $Q\in Y$, choose a uniformizer $t_Q$ of the DVR $\OO_{Y,Q}$.
@@ -91,11 +102,17 @@ since units pull back to units.
 Thus these pulled-back local equations define exactly the divisor $f^*D$ specified above.
 Their inverse local generators and transition functions are those of $\OO_X(f^*D)$, proving the canonical isomorphism.
 Passing to classes proves part (b), including negative divisor coefficients.
+
 :::
 
-<1>3. For the inclusion in part (c), Picard pullback agrees with hypersurface-intersection pullback on class groups.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+For the inclusion in part (c), Picard pullback agrees with hypersurface-intersection pullback on class groups.
+
+::: pf-proof
+
 If $\dim X=0$, then $X$ is the spectrum of a field: an integral zero-dimensional scheme has one point, and its local ring is a field.
 Hence $\Cl(X)=\Pic(X)=0$, so both homomorphisms are zero.
 This also handles the case $n=0$.
@@ -120,11 +137,17 @@ $$
 Under Corollary II.6.16, Picard pullback therefore sends $[H]$ to $[X.H]$, exactly as the homomorphism of Exercise II.6.2 does.
 Both are homomorphisms and $[H]$ generates the source, so they agree everywhere.
 The argument uses a representative not containing $X$; it does not assume that every ambient Cartier divisor can be pulled back as a Cartier divisor along the inclusion.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 constructs Picard pullback for arbitrary morphisms, step <1>2 proves compatibility with finite-curve divisor pullback, and step <1>3 proves compatibility with hypersurface intersection for closed inclusions.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} constructs Picard pullback for arbitrary morphisms, step [](#s2){.pf-ref} proves compatibility with finite-curve divisor pullback, and step [](#s3){.pf-ref} proves compatibility with hypersurface intersection for closed inclusions.
+
+:::
+
+:::
+
 :::

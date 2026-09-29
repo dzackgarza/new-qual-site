@@ -38,7 +38,11 @@ F(z)\coloneqq\frac{e^{iz}}{z^2+4z+5}
 =\frac{e^{iz}}{(z+2-i)(z+2+i)}.
 $$
 
-<1>1. The only pole of $F$ in the upper half-plane is
+::: pf
+
+::: {.pf-step #s1}
+
+The only pole of $F$ in the upper half-plane is
 $$
 z_0=-2+i,
 $$
@@ -48,7 +52,8 @@ $$
 =\frac{e^{-1-2i}}{2i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The denominator factors as
 $$
 (z+2-i)(z+2+i),
@@ -62,15 +67,21 @@ $$
 &=\frac{e^{-1-2i}}{2i}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. Let $\Gamma_R$ be the upper semicircle $\abs{z}=R$. Then
+:::
+
+::: {.pf-step #s2}
+
+Let $\Gamma_R$ be the upper semicircle $\abs{z}=R$. Then
 $$
 \int_{\Gamma_R}F(z)\,dz\longrightarrow0
 $$
 as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z$ in the upper half-plane,
 $$
 \abs{e^{iz}}=e^{-\operatorname{Im}z}\le1.
@@ -90,18 +101,24 @@ $$
 \le\frac{\pi R}{(R-\sqrt5)^2}
 \longrightarrow0.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_{-\infty}^{\infty}
 \frac{e^{ix}}{x^2+4x+5}\,dx
 =\frac{\pi}{e}e^{-2i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $R>\sqrt5$, integrate $F$ around the positively oriented contour
-consisting of $[-R,R]$ and $\Gamma_R$. By step <1>1 and the residue
+consisting of $[-R,R]$ and $\Gamma_R$. By step [](#s1){.pf-ref} and the residue
 theorem,
 $$
 \int_{-R}^R F(x)\,dx
@@ -110,10 +127,15 @@ $$
 =\frac{\pi}{e}e^{-2i}.
 $$
 The real-line integral converges absolutely because its integrand is
-$O(x^{-2})$. Letting $R\to\infty$ and using step <1>2 gives the claim.
+$O(x^{-2})$. Letting $R\to\infty$ and using step [](#s2){.pf-ref} gives the claim.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -122,18 +144,25 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For real $x$, the denominator is real, so the desired integral is the
-imaginary part of the complex integral in step <1>3. Since
+imaginary part of the complex integral in step [](#s3){.pf-ref}. Since
 $$
 e^{-2i}=\cos2-i\sin2,
 $$
 its imaginary part is $-(\pi/e)\sin2$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested residue evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested residue evaluation.
+
+:::
+
+:::
+
 :::

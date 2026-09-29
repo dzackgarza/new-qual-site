@@ -31,7 +31,12 @@ Prove that the Euler characteristic of a compact surface with boundary which has
 :::
 
 ::: {.solution}
-<1>1. Use the compact-surface convention that a surface is connected, and let $S$ be the given compact surface with boundary components
+
+::: pf
+
+::: pf-step
+
+Use the compact-surface convention that a surface is connected, and let $S$ be the given compact surface with boundary components
 \[
 C_1,\dots,C_k.
 \]
@@ -41,18 +46,27 @@ Cap each boundary component by a disk to obtain a closed connected surface
 =
 S\cup_{C_1}D_1^2\cup\cdots\cup_{C_k}D_k^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each boundary component of a compact surface is a circle.
 Gluing a copy of $D^2$ to each boundary circle removes all boundary components and does not disconnect the surface, so $\widehat S$ is a closed connected compact surface.
 
 The connectedness convention matters here: if disconnected $2$-manifolds were allowed under the word ``surface,'' the stated inequality would not hold in general; for example, the disjoint union of two disks has $k=2$ and Euler characteristic $2$.
+
 :::
 
-<1>2. Capping the $k$ boundary circles increases Euler characteristic by $k$:
+:::
+
+::: {.pf-step #s2}
+
+Capping the $k$ boundary circles increases Euler characteristic by $k$:
 \[
 \chi(\widehat S)=\chi(S)+k.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Compact surfaces admit finite CW structures for which the boundary circles are subcomplexes.
 For finite CW complexes, Euler characteristic satisfies
 \[
@@ -76,10 +90,17 @@ Applying this successively to the $k$ boundary components yields
 \[
 \chi(\widehat S)=\chi(S)+k.
 \]
+
 :::
 
-<1>3. Every closed connected compact surface has Euler characteristic at most $2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every closed connected compact surface has Euler characteristic at most $2$.
+
+::: pf-proof
+
 By the classification theorem for compact surfaces, a closed connected surface is either
 
 - orientable of genus $g\ge0$, with
@@ -97,23 +118,36 @@ Therefore
 \[
 \chi(\widehat S)\le2.
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{\chi(S)\le2-k}.
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 \[
 \chi(S)=\chi(\widehat S)-k.
 \]
-Using <1>3 gives
+Using step [](#s3){.pf-ref} gives
 \[
 \chi(S)
 \le
 2-k,
 \]
 as required.
+
 :::
+
+:::
+
+:::
+
 :::

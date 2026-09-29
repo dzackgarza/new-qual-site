@@ -34,8 +34,14 @@ Prove that $(f_n)$ has a subsequence converging pointwise to a continuous functi
 ::: {.solution}
 We split into two cases.
 
-<1>1. The sequence $(c_n)$ has a bounded subsequence.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The sequence $(c_n)$ has a bounded subsequence.
+
+::: pf-proof
+
 By Bolzano--Weierstrass, after passing to a subsequence we may assume
 \[
 c_n\to c\ge0.
@@ -68,10 +74,17 @@ for every $x$, with the value at $x=0$ understood by continuity. Hence
 f_n(x)\to\sin x+x,
 \]
 again continuously.
+
 :::
 
-<1>2. The sequence $(c_n)$ has no bounded subsequence.
-::: {.proof}
+:::
+
+::: pf-step
+
+The sequence $(c_n)$ has no bounded subsequence.
+
+::: pf-proof
+
 Then we can choose a subsequence, still denoted $(c_n)$, such that
 \[
 c_n\to\infty.
@@ -93,6 +106,11 @@ uniformly in $x$. Hence
 f_n(x)\to\sin(x+\theta),
 \]
 which is continuous.
+
+:::
+
+:::
+
 :::
 
 In either case, the original sequence has a subsequence converging pointwise to a continuous function.

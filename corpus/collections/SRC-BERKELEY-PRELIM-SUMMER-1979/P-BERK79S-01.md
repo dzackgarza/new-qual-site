@@ -50,23 +50,34 @@ A=
 \end{pmatrix}.
 $$
 
-<1>1. All four eigenvalues of $A$ are real.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+All four eigenvalues of $A$ are real.
+
+::: pf-proof
+
 The matrix $A$ is real and symmetric:
 $$
 A^T=A.
 $$
 By the spectral theorem for real symmetric matrices, $A$ is orthogonally
 diagonalizable over $\RR$. Hence all its eigenvalues are real.
+
 :::
 
-<1>2. The determinant of $A$ is
+:::
+
+::: pf-step
+
+The determinant of $A$ is
 $$
 \det A=625>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expand along the fourth row. The only nonzero entry is the $5$ in column
 $3$, so
 $$
@@ -102,12 +113,18 @@ Therefore
 $$
 \det A=(-5)(-125)=625.
 $$
+
 :::
 
-<1>3. None of the eigenvalues is zero, and the number of negative
+:::
+
+::: {.pf-step #s3}
+
+None of the eigenvalues is zero, and the number of negative
 eigenvalues is even.
 
-::: {.proof}
+::: pf-proof
+
 Let the four real eigenvalues, counted with multiplicity, be
 $$
 \lambda_1,\lambda_2,\lambda_3,\lambda_4.
@@ -125,11 +142,17 @@ $$
 Thus none is zero. A product of nonzero real numbers is positive exactly
 when an even number of its factors are negative, so the number of negative
 eigenvalues is $0$, $2$, or $4$.
+
 :::
 
-<1>4. The eigenvalues cannot all be positive and cannot all be negative.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The eigenvalues cannot all be positive and cannot all be negative.
+
+::: pf-proof
+
 The trace of $A$ is zero because every diagonal entry is zero:
 $$
 \operatorname{tr}A=0.
@@ -140,9 +163,14 @@ $$
 $$
 Four positive real numbers cannot have sum zero, and neither can four
 negative real numbers.
+
 :::
 
-<1>5. The matrix $A$ has
+:::
+
+::: {.pf-step #s5}
+
+The matrix $A$ has
 $$
 \boxed{
 \text{two positive and two negative eigenvalues}
@@ -150,19 +178,26 @@ $$
 $$
 counted with multiplicity.
 
-::: {.proof}
-By step <1>3, the number of negative eigenvalues is one of
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the number of negative eigenvalues is one of
 $$
 0,\ 2,\ 4.
 $$
-Step <1>4 rules out $0$ and $4$. Hence exactly two eigenvalues are
+Step [](#s4){.pf-ref} rules out $0$ and $4$. Hence exactly two eigenvalues are
 negative. Since none is zero and there are four eigenvalues in total, the
 remaining two are positive.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required inertia statement.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required inertia statement.
+
+:::
+
+:::
+
 :::

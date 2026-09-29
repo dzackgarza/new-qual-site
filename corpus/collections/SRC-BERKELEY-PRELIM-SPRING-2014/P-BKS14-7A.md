@@ -41,7 +41,11 @@ $$
 V^0=\{0\}.
 $$
 
-<1>1. Suppose
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose
 $$
 V^0\subset V^1\subset\cdots\subset V^k
 $$
@@ -55,7 +59,8 @@ $$
 F^n/V^k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A subspace $V^{k+1}$ containing $V^k$ corresponds under the quotient map
 to the subspace
 $$
@@ -71,9 +76,14 @@ $$
 $$
 Conversely, the inverse image of a one-dimensional subspace of the
 quotient is a $(k+1)$-dimensional subspace containing $V^k$.
+
 :::
 
-<1>2. A $d$-dimensional vector space over $F$ has
+:::
+
+::: {.pf-step #s2}
+
+A $d$-dimensional vector space over $F$ has
 $$
 \frac{q^d-1}{q-1}
 =
@@ -81,7 +91,8 @@ $$
 $$
 one-dimensional subspaces.
 
-::: {.proof}
+::: pf-proof
+
 There are
 $$
 q^d-1
@@ -92,22 +103,33 @@ q-1
 $$
 nonzero vectors, and distinct one-dimensional subspaces have disjoint
 sets of nonzero vectors. Dividing gives the count.
+
 :::
 
-<1>3. Once $V^k$ is fixed, the number of choices for $V^{k+1}$ is
+:::
+
+::: {.pf-step #s3}
+
+Once $V^k$ is fixed, the number of choices for $V^{k+1}$ is
 $$
 \frac{q^{n-k}-1}{q-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The quotient
 $$
 F^n/V^k
 $$
-has dimension $n-k$. Apply steps <1>1 and <1>2.
+has dimension $n-k$. Apply steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The number of complete flags is
+:::
+
+::: {.pf-step #s4}
+
+The number of complete flags is
 $$
 f_n(q)
 =
@@ -120,17 +142,23 @@ f_n(q)
 \right).
 $$
 
-::: {.proof}
-Choose $V^1,V^2,\ldots,V^{n-1}$ successively. By step <1>3, the number
+::: pf-proof
+
+Choose $V^1,V^2,\ldots,V^{n-1}$ successively. By step [](#s3){.pf-ref}, the number
 of choices at stage $k$ is the displayed factor. Multiplying independent
 successive choice counts gives the first product. Reindex with
 $$
 d=n-k
 $$
 and use the geometric-sum identity for the second formula.
+
 :::
 
-<1>5. For every integer $d\geq2$,
+:::
+
+::: {.pf-step #s5}
+
+For every integer $d\geq2$,
 $$
 \lim_{q\to1}
 \left(
@@ -140,12 +168,18 @@ $$
 d.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The expression is a polynomial in $q$, hence continuous at $q=1$. Its
 value there is the sum of $d$ copies of $1$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{
 \lim_{q\to1}f_n(q)
@@ -154,8 +188,9 @@ n!
 }.
 $$
 
-::: {.proof}
-The product in step <1>4 is finite, so step <1>5 gives
+::: pf-proof
+
+The product in step [](#s4){.pf-ref} is finite, so step [](#s5){.pf-ref} gives
 $$
 \lim_{q\to1}f_n(q)
 =
@@ -163,11 +198,17 @@ $$
 =
 n!.
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested limit.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested limit.
+
+:::
+
+:::
+
 :::

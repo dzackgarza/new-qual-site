@@ -38,19 +38,31 @@ for every $x,t$.
 :::
 
 ::: {.solution}
-<1>1. Fix arbitrary $x,t\in\RR$ and define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix arbitrary $x,t\in\RR$ and define
 $$
 \phi(s)=f(x+t-s,s).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is $C^1$, the function $\phi$ is differentiable for all
 $s\in\RR$.
+
 :::
 
-<1>2. The function $\phi$ is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $\phi$ is constant.
+
+::: pf-proof
+
 By the chain rule,
 $$
 \begin{aligned}
@@ -64,19 +76,25 @@ f_t(x+t-s,s)\\
 \end{aligned}
 $$
 because $f_x=f_t$ everywhere. Hence $\phi$ is constant.
+
 :::
 
-<1>3. For every $x,t\in\RR$,
+:::
+
+::: {.pf-step #s3}
+
+For every $x,t\in\RR$,
 $$
 f(x,t)=f(x+t,0).
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \phi(t)=\phi(0).
 $$
-The definition in step <1>1 gives
+The definition in step [](#s1){.pf-ref} gives
 $$
 \phi(t)=f(x,t)
 $$
@@ -84,27 +102,39 @@ and
 $$
 \phi(0)=f(x+t,0).
 $$
+
 :::
 
-<1>4. For every $x,t\in\RR$,
+:::
+
+::: {.pf-step #s4}
+
+For every $x,t\in\RR$,
 $$
 \boxed{
 f(x,t)>0.
 }
 $$
 
-::: {.proof}
-Step <1>3 gives
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives
 $$
 f(x,t)=f(x+t,0).
 $$
 The hypothesis says that $f(y,0)>0$ for every real $y$. Applying it to
 $y=x+t$ proves the claim.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required positivity conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required positivity conclusion.
+
+:::
+
+:::
+
 :::

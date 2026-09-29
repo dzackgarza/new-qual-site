@@ -43,9 +43,14 @@ S(w)=w^2,
 C(\zeta)=\frac{\zeta-i}{\zeta+i}.
 $$
 
-<1>1. $M$ maps $H$ conformally onto the open third quadrant $Q$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$M$ maps $H$ conformally onto the open third quadrant $Q$.
+
+::: pf-proof
+
 The boundary of $H$ consists of the diameter
 $$
 \{iy:-1<y<1\}
@@ -75,11 +80,17 @@ which lies in $Q$. The Möbius transformation $M$ is a homeomorphism of the
 Riemann sphere carrying $\partial H$ onto $\partial Q$, and it carries the
 point $\tfrac12\in H$ into $Q$, so it maps $H$ bijectively and
 conformally onto $Q$.
+
 :::
 
-<1>2. $S$ maps $Q$ conformally onto the upper half-plane.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$S$ maps $Q$ conformally onto the upper half-plane.
+
+::: pf-proof
+
 Every $w\in Q$ has a unique argument
 $$
 \pi<\arg w<\frac{3\pi}{2}.
@@ -93,11 +104,17 @@ upper half-plane. Conversely, every point of the upper half-plane has
 exactly one square root whose argument lies in $(\pi,3\pi/2)$, so $S$ is
 bijective from $Q$ onto the upper half-plane. Its derivative $2w$ never
 vanishes on $Q$, so it is conformal there.
+
 :::
 
-<1>3. $C$ maps the upper half-plane conformally onto $\DD$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+$C$ maps the upper half-plane conformally onto $\DD$.
+
+::: pf-proof
+
 For $\Im\zeta>0$,
 $$
 \abs{\zeta-i}<\abs{\zeta+i},
@@ -112,9 +129,14 @@ $$
 $$
 for $\abs{u}<1$, so $C$ is a bijection from the upper half-plane onto
 $\DD$. Möbius transformations are conformal off their pole.
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 \boxed{
 F(z)=C(S(M(z)))
@@ -123,15 +145,22 @@ F(z)=C(S(M(z)))
 $$
 is a conformal bijection from $H$ onto $\DD$.
 
-::: {.proof}
-Steps <1>1--<1>3 show that $M$, $S$, and $C$ are conformal bijections
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} show that $M$, $S$, and $C$ are conformal bijections
 $H\to Q$, $Q\to\{\Im\zeta>0\}$, and $\{\Im\zeta>0\}\to\DD$. Their
 composite $F$ is therefore a conformal bijection $H\to\DD$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 exhibits the required conformal map.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} exhibits the required conformal map.
+
+:::
+
+:::
+
 :::

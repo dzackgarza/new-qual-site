@@ -38,8 +38,14 @@ An element $x \in \mathrm{GL}_n(\mathbb{F}_p)$ is called a $p$-element if its or
 ::: {.solution}
 Write $I$ for the identity matrix and $N=x-I$.
 
-<1>1. The matrix $x$ has $p$-power order if and only if $N$ is nilpotent.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The matrix $x$ has $p$-power order if and only if $N$ is nilpotent.
+
+::: pf-proof
+
 In characteristic $p$, commuting matrices $A,B$ satisfy
 \[
 (A+B)^{p^r}=A^{p^r}+B^{p^r}\qquad(r\ge0).
@@ -57,25 +63,39 @@ x^{p^r}=(I+N)^{p^r}=I+N^{p^r}=I,
 \]
 so the order of $x$ divides $p^r$ and is a power of $p$.
 This includes the identity, whose order is $1=p^0$, and proves part (a).
+
 :::
 
-<1>2. The correspondence $N\mapsto I+N$ induces a bijection from similarity classes of nilpotent matrices to conjugacy classes of $p$-elements in $\mathrm{GL}_n(\mathbb{F}_p)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The correspondence $N\mapsto I+N$ induces a bijection from similarity classes of nilpotent matrices to conjugacy classes of $p$-elements in $\mathrm{GL}_n(\mathbb{F}_p)$.
+
+::: pf-proof
+
 For nilpotent $N$ with $N^s=0$, the finite sum
 \[
 I-N+N^2-\cdots+(-1)^{s-1}N^{s-1}
 \]
 is an inverse of $I+N$.
-Thus <1>1 applies and identifies exactly the $p$-elements.
+Thus step [](#s1){.pf-ref} applies and identifies exactly the $p$-elements.
 For every invertible matrix $S$,
 \[
 S(I+N)S^{-1}=I+SNS^{-1}.
 \]
 Consequently $I+N$ and $I+N'$ are conjugate if and only if $N$ and $N'$ are similar.
+
 :::
 
-<1>3. Similarity classes of nilpotent $n\times n$ matrices over $\mathbb{F}_p$ are indexed by partitions of $n$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Similarity classes of nilpotent $n\times n$ matrices over $\mathbb{F}_p$ are indexed by partitions of $n$.
+
+::: pf-proof
+
 The minimal polynomial of a nilpotent matrix is a power of $t$, which splits over $\mathbb{F}_p$.
 Its Jordan form therefore exists over $\mathbb{F}_p$, not merely over an extension field, and consists of blocks
 \[
@@ -93,15 +113,28 @@ d_j-d_{j-1}=\#\{i:\lambda_i\ge j\}.
 \]
 The similarity-invariant numbers $d_j$ recover the number of blocks of each size, hence the partition.
 Matrices with the same partition have the same Jordan form and are similar.
+
 :::
 
-<1>4. Conjugacy classes in $S_n$ are also indexed by partitions of $n$, proving part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Conjugacy classes in $S_n$ are also indexed by partitions of $n$, proving part (b).
+
+::: pf-proof
+
 The lengths of the disjoint cycles of a permutation, including its fixed points as cycles of length one, form a partition of $n$.
 Conjugation relabels each cycle and preserves these lengths.
 Conversely, for two permutations with the same cycle lengths, choose a bijection of their letters that matches cycles of equal length in cyclic order.
 This bijection conjugates one permutation to the other.
 Every partition occurs by arranging the $n$ letters into disjoint cycles of its prescribed lengths.
-Thus <1>2 and <1>3 identify the conjugacy classes of $p$-elements, and the cycle decomposition identifies the conjugacy classes of $S_n$, with the same set of partitions.
+Thus steps [](#s2){.pf-ref} and [](#s3){.pf-ref} identify the conjugacy classes of $p$-elements, and the cycle decomposition identifies the conjugacy classes of $S_n$, with the same set of partitions.
+
 :::
+
+:::
+
+:::
+
 :::

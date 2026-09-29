@@ -30,8 +30,15 @@ Prove that there exists $\alpha > 0$ such that $\|x\|_1 \leq \alpha \|x\|_2$ for
 :::
 
 ::: {.solution}
-<1>1. Compare the two continuous duals.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Compare the two continuous duals.
+
+::: pf-proof
+
 Write
 \[
 X_1^*:=(X,\|\cdot\|_1)^*,
@@ -49,10 +56,17 @@ J:X_1^*\to X_2^*,
 J(f)=f.
 \]
 Both dual spaces are Banach spaces with their operator norms.
+
 :::
 
-<1>2. Show that $J$ has closed graph.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $J$ has closed graph.
+
+::: pf-proof
+
 Suppose
 \[
 f_n\to f\quad\text{in }X_1^*
@@ -78,10 +92,17 @@ By the Closed Graph Theorem, there exists $C>0$ such that
 \|f\|_{2,*}\le C\|f\|_{1,*}
 \qquad(f\in X_1^*).
 \]
+
 :::
 
-<1>3. Recover the norm $\|\cdot\|_1$ from the dual unit ball.
-::: {.proof}
+:::
+
+::: pf-step
+
+Recover the norm $\|\cdot\|_1$ from the dual unit ball.
+
+::: pf-proof
+
 By the Hahn--Banach theorem, for every $x\in X$,
 \[
 \|x\|_1
@@ -100,5 +121,11 @@ Taking the supremum over the $\|\cdot\|_{1,*}$-unit ball yields
 \boxed{\|x\|_1\le C\|x\|_2\qquad(x\in X).}
 \]
 Thus the conclusion holds with $\alpha=C$.
+
 :::
+
+:::
+
+:::
+
 :::

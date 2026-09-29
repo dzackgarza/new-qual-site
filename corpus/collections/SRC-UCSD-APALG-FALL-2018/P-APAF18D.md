@@ -34,21 +34,34 @@ Write
 D_6=\langle r,s\mid r^6=s^2=1,\ srs=r^{-1}\rangle.
 \]
 
-<1>1. The element $r^3$ is central of order $2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The element $r^3$ is central of order $2$.
+
+::: pf-proof
+
 Clearly $(r^3)^2=r^6=1$ and $r^3\ne1$. It commutes with $r$. Also
 \[
 sr^3s=(srs)^3=r^{-3}=r^3,
 \]
 so it commutes with $s$. Since $r,s$ generate $D_6$, one has $r^3\in Z(D_6)$.
+
 :::
 
-<1>2. The subgroup
+:::
+
+::: pf-step
+
+The subgroup
 \[
 K=\langle r^2,s\rangle
 \]
 is isomorphic to $D_3$ and has order $6$.
-::: {.proof}
+
+::: pf-proof
+
 The element $r^2$ has order $3$, while $s$ has order $2$, and
 \[
 sr^2s=r^{-2}.
@@ -61,14 +74,21 @@ which is the dihedral group $D_3$. Its six elements are
 \[
 1,r^2,r^4,s,r^2s,r^4s.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 D_6=K\times\langle r^3\rangle\cong D_3\times C_2.
 \]
-::: {.proof}
-By <1>1, $\langle r^3\rangle$ is central, hence it commutes with $K$. Also
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $\langle r^3\rangle$ is central, hence it commutes with $K$. Also
 \[
 K\cap\langle r^3\rangle=1,
 \]
@@ -78,9 +98,14 @@ Finally, $K\langle r^3\rangle$ contains $s$ and both $r^2$ and $r^3$; since
 r=(r^2)^2r^3=r^7=r,
 \]
 it contains $r$ as well. Hence it contains the generators $r,s$ of $D_6$, so it is all of $D_6$. Therefore the product is direct.
+
 :::
 
-<1>4. The conjugacy classes of $D_6$ are
+:::
+
+::: pf-step
+
+The conjugacy classes of $D_6$ are
 \[
 \begin{array}{c|c}
 \text{class}&\text{size}\\ \hline
@@ -92,11 +117,18 @@ C_5=\{s,r^2s,r^4s\}&3\\
 C_6=\{rs,r^3s,r^5s\}&3
 \end{array}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Conjugation by $s$ sends $r^j$ to $r^{-j}$, giving the four rotation classes displayed. Conjugating a reflection $r^js$ by $r$ changes the exponent by $2$, so the even-exponent reflections form one class and the odd-exponent reflections form the other. Their sizes are $3$ each.
+
 :::
 
-<1>5. The complete character table of $D_6$ is
+:::
+
+::: pf-step
+
+The complete character table of $D_6$ is
 \[
 \begin{array}{c|rrrrrr}
 & C_1&C_2&C_3&C_4&C_5&C_6\\
@@ -109,8 +141,10 @@ Conjugation by $s$ sends $r^j$ to $r^{-j}$, giving the four rotation classes dis
 \rho_2&2&2&-1&-1&0&0
 \end{array}.
 \]
-::: {.proof}
-By <1>3,
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 \[
 D_6\cong D_3\times C_2.
 \]
@@ -133,5 +167,11 @@ Under the direct-product decomposition, the classes $C_1,C_4,C_5$ have trivial $
 4\cdot1^2+2\cdot2^2=12=|D_6|,
 \]
 so these are all irreducible characters.
+
 :::
+
+:::
+
+:::
+
 :::

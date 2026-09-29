@@ -25,33 +25,68 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $H^*(S^2;\ZZ) = \ZZ$ in degree $0$, $\ZZ$ in degree $2$, and $0$ otherwise.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$H^*(S^2;\ZZ) = \ZZ$ in degree $0$, $\ZZ$ in degree $2$, and $0$ otherwise.
+
+::: pf-proof
+
 standard computation of the cohomology of $S^2$.
+
 :::
 
-<1>2. By the Künneth formula (with $\ZZ$ coefficients, and all the relevant groups free so the Tor terms vanish),
+:::
+
+::: {.pf-step #s2}
+
+By the Künneth formula (with $\ZZ$ coefficients, and all the relevant groups free so the Tor terms vanish),
 $$H^n(S^2 \times S^2;\ZZ) \cong \bigoplus_{i+j=n} H^i(S^2;\ZZ) \otimes H^j(S^2;\ZZ).$$
-::: {.proof}
+
+::: pf-proof
+
 Künneth theorem; since $H^*(S^2;\ZZ)$ is free, $\operatorname{Tor}$ vanishes.
+
 :::
 
-<1>3. The nonzero tensor products are:
+:::
+
+::: {.pf-step #s3}
+
+The nonzero tensor products are:
 - $n=0$: $H^0 \otimes H^0 = \ZZ$;
 - $n=2$: $H^2 \otimes H^0 \oplus H^0 \otimes H^2 = \ZZ \oplus \ZZ = \ZZ^2$;
 - $n=4$: $H^2 \otimes H^2 = \ZZ$.
-::: {.proof}
-<1>1 and <1>2.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #s4}
+
+Hence
 $$H^n(S^2 \times S^2;\ZZ) = \begin{cases} \ZZ & n = 0, 4 \\ \ZZ^2 & n = 2 \\ 0 & \text{otherwise}. \end{cases}$$
-::: {.proof}
-<1>3.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4, matching the known answer $[\ZZ, 0, \ZZ^2, 0, \ZZ, 0, \ldots]$.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref}, matching the known answer $[\ZZ, 0, \ZZ^2, 0, \ZZ, 0, \ldots]$.
+
+:::
+
+:::
+
 :::

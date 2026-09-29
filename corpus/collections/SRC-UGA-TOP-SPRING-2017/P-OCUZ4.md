@@ -38,7 +38,11 @@ X=\RP^2\vee\RP^2
 \]
 and let $f:X\to X$ be continuous.
 
-<1>1. The rational homology of $X$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The rational homology of $X$ is
 \[
 H_i(X;\QQ)\cong
 \begin{cases}
@@ -46,7 +50,9 @@ H_i(X;\QQ)\cong
 0, & i>0.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The integral homology of the real projective plane is
 \[
 H_i(\RP^2;\ZZ)\cong
@@ -71,13 +77,20 @@ Reduced homology takes a wedge of based CW complexes to the direct sum in positi
 =0.
 \]
 Since $X$ is connected, $H_0(X;\QQ)\cong\QQ$.
+
 :::
 
-<1>2. Every self-map $f:X\to X$ has Lefschetz number
+:::
+
+::: {.pf-step #s2}
+
+Every self-map $f:X\to X$ has Lefschetz number
 \[
 L(f)=1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By definition,
 \[
 L(f)=\sum_{i\ge0}(-1)^i
@@ -85,7 +98,7 @@ L(f)=\sum_{i\ge0}(-1)^i
 f_*:H_i(X;\QQ)\longrightarrow H_i(X;\QQ)
 \right).
 \]
-By <1>1, all positive-degree rational homology groups vanish.
+By step [](#s1){.pf-ref}, all positive-degree rational homology groups vanish.
 On
 \[
 H_0(X;\QQ)\cong\QQ,
@@ -95,17 +108,30 @@ Therefore
 \[
 L(f)=\operatorname{tr}(\operatorname{id}_{\QQ})=1.
 \]
+
 :::
 
-<1>3. Every self-map of $\RP^2\vee\RP^2$ has a fixed point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every self-map of $\RP^2\vee\RP^2$ has a fixed point.
+
+::: pf-proof
+
 The space $X$ is a finite CW complex, hence a compact polyhedron.
 By the Lefschetz fixed point theorem, a self-map of $X$ with nonzero Lefschetz number has a fixed point.
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 L(f)=1\ne0.
 \]
 Thus $f$ has a fixed point.
 The proposed statement is true.
+
 :::
+
+:::
+
+:::
+
 :::

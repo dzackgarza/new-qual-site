@@ -48,9 +48,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Equation (1) has no real matrix solution.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Equation (1) has no real matrix solution.
+
+::: pf-proof
+
 Let
 $$
 N=\begin{pmatrix}
@@ -67,11 +73,17 @@ $$
 X^3=0,
 $$
 contrary to $N\ne0$. Thus no such $X$ exists.
+
 :::
 
-<1>2. Equation (2) has a real matrix solution.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Equation (2) has a real matrix solution.
+
+::: pf-proof
+
 Let
 $$
 B=\begin{pmatrix}
@@ -103,11 +115,17 @@ is real and satisfies
 $$
 2X^5+X=B.
 $$
+
 :::
 
-<1>3. Equation (3) has a real matrix solution.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Equation (3) has a real matrix solution.
+
+::: pf-proof
+
 Identify $\RR^2$ with $\CC$, so that the matrix
 $$
 J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}
@@ -131,11 +149,17 @@ $p(z_0)=i$. Therefore
 $$
 X^6+2X^4+10X=J.
 $$
+
 :::
 
-<1>4. Equation (4) has no real matrix solution.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Equation (4) has no real matrix solution.
+
+::: pf-proof
+
 Let
 $$
 C=\begin{pmatrix}
@@ -160,21 +184,32 @@ $$
 r^4=-3,
 $$
 which is impossible over $\RR$.
+
 :::
 
-<1>5. The equations with a real matrix solution are exactly
+:::
+
+::: {.pf-step #s5}
+
+The equations with a real matrix solution are exactly
 $$
 \boxed{\text{equations (2) and (3).}}
 $$
 
-::: {.proof}
-Steps <1>2 and <1>3 give solutions of equations (2) and (3), and steps <1>1
-and <1>4 rule out equations (1) and (4).
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give solutions of equations (2) and (3), and steps [](#s1){.pf-ref} and [](#s4){.pf-ref} rule out equations (1) and (4).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

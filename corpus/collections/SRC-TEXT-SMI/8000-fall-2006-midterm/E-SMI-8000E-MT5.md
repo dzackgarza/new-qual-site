@@ -29,8 +29,15 @@ State and prove the Cayley-Hamilton theorem.
 :::
 
 ::: {.solution}
-<1>1. State the theorem.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+State the theorem.
+
+::: pf-proof
+
 Let $V$ be a finite-dimensional vector space over a field $F$, and let
 $T\in\operatorname{End}_F(V)$. Its characteristic polynomial is
 $$
@@ -49,10 +56,17 @@ then
 $$
 \chi_A(A)=0.
 $$
+
 :::
 
-<1>2. Apply the adjugate identity to the polynomial matrix $xI-A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Apply the adjugate identity to the polynomial matrix $xI-A$.
+
+::: pf-proof
+
 Work in the matrix ring $M_n(F[x])$. The adjugate identity gives
 $$
 (xI-A)\operatorname{adj}(xI-A)
@@ -70,11 +84,18 @@ $$
 =C_0+C_1x+\cdots+C_{n-1}x^{n-1},
 $$
 where $C_i\in M_n(F)$.
+
 :::
 
-<1>3. Compare coefficients of powers of $x$.
-::: {.proof}
-Expanding the identity in step <1>2 gives
+:::
+
+::: pf-step
+
+Compare coefficients of powers of $x$.
+
+::: pf-proof
+
+Expanding the identity in step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 -AC_0&=a_0I,\\
@@ -86,10 +107,17 @@ C_{n-1}&=a_nI=I.
 \end{aligned}
 $$
 These are ordinary matrix identities over $F$.
+
 :::
 
-<1>4. Multiply by successive powers of $A$ and telescope.
-::: {.proof}
+:::
+
+::: pf-step
+
+Multiply by successive powers of $A$ and telescope.
+
+::: pf-proof
+
 Multiply the first identity by $I$, the second by $A$, the third by $A^2$,
 and so on, always on the left. This yields
 $$
@@ -111,5 +139,11 @@ The left side is precisely $\chi_A(A)$, so
 $$
 \boxed{\chi_A(A)=0.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

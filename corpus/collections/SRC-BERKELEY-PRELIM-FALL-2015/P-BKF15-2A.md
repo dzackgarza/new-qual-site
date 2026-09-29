@@ -42,24 +42,35 @@ f(x,y)\coloneqq
 \end{cases}
 $$
 
-<1>1. The function $f$ is continuous at every point of
+::: pf
+
+::: {.pf-step #s1}
+
+The function $f$ is continuous at every point of
 $$
 \RR^2\setminus\{(0,0)\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $(x,y)\ne(0,0)$ one has
 $$
 x^4+y^2>0.
 $$
 Thus, away from the origin, $f$ is a quotient of polynomials with
 nonzero denominator and is therefore continuous.
+
 :::
 
-<1>2. The restriction of $f$ to every line through the origin is
+:::
+
+::: {.pf-step #s2}
+
+The restriction of $f$ to every line through the origin is
 continuous at the origin.
 
-::: {.proof}
+::: pf-proof
+
 The vertical line $x=0$ satisfies
 $$
 f(0,y)=0
@@ -87,22 +98,34 @@ $$
 $$
 Thus the restriction is continuous at the origin on every line through
 the origin.
+
 :::
 
-<1>3. The restriction of $f$ to every straight line in $\RR^2$ is
+:::
+
+::: {.pf-step #s3}
+
+The restriction of $f$ to every straight line in $\RR^2$ is
 continuous.
 
-::: {.proof}
-If a line does not pass through the origin, step <1>1 shows that $f$ is
+::: pf-proof
+
+If a line does not pass through the origin, step [](#s1){.pf-ref} shows that $f$ is
 continuous at every point of the line, so its restriction is
-continuous. If the line passes through the origin, step <1>1 gives
-continuity away from the origin and step <1>2 gives continuity at the
+continuous. If the line passes through the origin, step [](#s1){.pf-ref} gives
+continuity away from the origin and step [](#s2){.pf-ref} gives continuity at the
 origin.
+
 :::
 
-<1>4. The function $f$ is not continuous at the origin.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The function $f$ is not continuous at the origin.
+
+::: pf-proof
+
 Along the parabola
 $$
 y=x^2,
@@ -120,19 +143,31 @@ $$
 \lim_{x\to0}f(x,x^2)=\frac12\ne0=f(0,0).
 $$
 Thus $f$ is not continuous at $(0,0)$.
+
 :::
 
-<1>5. Hence there exists a real-valued function on the plane that is
+:::
+
+::: {.pf-step #s5}
+
+Hence there exists a real-valued function on the plane that is
 continuous on every straight line but not continuous on the plane.
 
-::: {.proof}
-The displayed function has linewise continuity by step <1>3 and is not
-continuous by step <1>4.
+::: pf-proof
+
+The displayed function has linewise continuity by step [](#s3){.pf-ref} and is not
+continuous by step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required example.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required example.
+
+:::
+
+:::
+
 :::

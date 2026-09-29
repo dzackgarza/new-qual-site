@@ -56,7 +56,11 @@ $$
 Thus $n=2$ is the twisted cubic of part (a), and $n=3$ is the quartic of
 part (b).
 
-<1>1. The image $C_n$ lies on the smooth quadric
+::: pf
+
+::: pf-step
+
+The image $C_n$ lies on the smooth quadric
 $$
 Q=V(x_0x_3-x_1x_2)\subseteq\PP^3,
 $$
@@ -69,7 +73,8 @@ $$
 [t:u]\longmapsto[t^n:u^n].
 $$
 
-::: {.proof}
+::: pf-proof
+
 The parametrization satisfies
 $$
 x_0x_3-x_1x_2
@@ -98,9 +103,14 @@ $$
 $$
 The second projection therefore identifies $C_n$ with $\PP^1$, even when
 the first power map is inseparable.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 E_n=\varphi_n^*(\mathcal I_{C_n}/\mathcal I_{C_n}^2).
 $$
@@ -113,7 +123,8 @@ $$
 \longrightarrow0.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 For the regular immersions
 $$
 C_n\subset Q\subset\PP^3,
@@ -160,9 +171,14 @@ $$
 $$
 Pulling the conormal sequence back along the isomorphism
 $\varphi_n:\PP^1\xrightarrow{\sim}C_n$ gives the displayed sequence.
+
 :::
 
-<1>3. The extension class of step <1>2 is
+:::
+
+::: {.pf-step #s3}
+
+The extension class of step [](#s2){.pf-ref} is
 $$
 \boxed{(n-1)\eta}
 $$
@@ -172,7 +188,8 @@ $$
 $$
 is a generator.
 
-::: {.proof}
+::: pf-proof
+
 Use the affine chart $x_0\ne0$ with coordinates
 $$
 a=\frac{x_1}{x_0},
@@ -266,7 +283,7 @@ s^{-2n-2},
 s^{-2n}
 $$
 are precisely the transition functions of the two line bundles in step
-<1>2. After factoring them out, the off-diagonal term is represented by
+[](#s2){.pf-ref}. After factoring them out, the off-diagonal term is represented by
 $$
 (n-1)s^{-1}.
 $$
@@ -276,9 +293,14 @@ $$
 H^1(\PP^1,\OO(-2)).
 $$
 Hence the extension class is $(n-1)\eta$.
+
 :::
 
-<1>4. If the extension class in step <1>3 is zero, then
+:::
+
+::: {.pf-step #s4}
+
+If the extension class in step [](#s3){.pf-ref} is zero, then
 $$
 E_n
 \cong
@@ -289,10 +311,11 @@ $$
 \boxed{E_n\cong\OO(-2n-1)\oplus\OO(-2n-1).}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The zero-class assertion is exactly the definition of a split extension.
 
-Assume the class is nonzero and twist the exact sequence of step <1>2 by
+Assume the class is nonzero and twist the exact sequence of step [](#s2){.pf-ref} by
 $\OO(2n)$:
 $$
 0
@@ -320,7 +343,7 @@ E_n\cong\OO(l)\oplus\OO(m),
 \qquad
 l\ge m.
 $$
-Step <1>2 gives
+Step [](#s2){.pf-ref} gives
 $$
 l+m=-4n-2.
 $$
@@ -336,26 +359,37 @@ But $l$ is at least the average $(l+m)/2=-2n-1$. Hence
 $$
 l=m=-2n-1.
 $$
+
 :::
 
-<1>5. For the twisted cubic,
+:::
+
+::: {.pf-step #s5}
+
+For the twisted cubic,
 $$
 \boxed{l=m=-5.}
 $$
 
-::: {.proof}
-Here $n=2$. By step <1>3 the extension class is
+::: pf-proof
+
+Here $n=2$. By step [](#s3){.pf-ref} the extension class is
 $$
 (2-1)\eta=\eta\ne0
 $$
-over every field. Step <1>4 therefore gives
+over every field. Step [](#s4){.pf-ref} therefore gives
 $$
 E_2\cong\OO(-5)\oplus\OO(-5).
 $$
 This proves part (a).
+
 :::
 
-<1>6. For the rational quartic,
+:::
+
+::: {.pf-step #s6}
+
+For the rational quartic,
 $$
 \boxed{
 E_3\cong
@@ -365,12 +399,13 @@ E_3\cong
 \end{cases}}
 $$
 
-::: {.proof}
-Here $n=3$. Step <1>3 gives extension class
+::: pf-proof
+
+Here $n=3$. Step [](#s3){.pf-ref} gives extension class
 $$
 2\eta.
 $$
-If $\operatorname{char}k\ne2$, this is nonzero, and step <1>4 gives
+If $\operatorname{char}k\ne2$, this is nonzero, and step [](#s4){.pf-ref} gives
 $$
 E_3\cong\OO(-7)\oplus\OO(-7).
 $$
@@ -381,11 +416,17 @@ E_3
 \OO(-6)\oplus\OO(-8).
 $$
 This is exactly the answer stated in part (b).
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves part (a), and step <1>6 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

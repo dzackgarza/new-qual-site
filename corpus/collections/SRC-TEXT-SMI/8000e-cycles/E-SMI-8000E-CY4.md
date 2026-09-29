@@ -36,8 +36,14 @@ $$
 H=\langle(12),(13),\ldots,(1n)\rangle\le S_n.
 $$
 
-<1>1. Every transposition belongs to $H$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every transposition belongs to $H$.
+
+::: pf-proof
+
 If one of the two entries is $1$, then the transposition is one of the given
 generators. Now let
 $$
@@ -53,20 +59,33 @@ $$
 (ij)\in H.
 $$
 Thus $H$ contains every transposition in $S_n$.
+
 :::
 
-<1>2. Conclude that $H=S_n$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude that $H=S_n$.
+
+::: pf-proof
+
 Every permutation is a product of disjoint cycles, and every cycle can be
 written as a product of transpositions. For example,
 $$
 (a_1\,a_2\,\ldots\,a_k)
 =(a_1a_k)(a_1a_{k-1})\cdots(a_1a_2).
 $$
-Hence transpositions generate $S_n$. By step <1>1 every transposition already
+Hence transpositions generate $S_n$. By step [](#s1){.pf-ref} every transposition already
 lies in $H$, so every permutation lies in $H$. Therefore
 $$
 \boxed{S_n=\langle(12),(13),\ldots,(1n)\rangle.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

@@ -20,13 +20,33 @@ Show that a quotient of a compact space is again compact.
 :::
 
 ::: {.solution}
-<1>1. Let $q:X\to X/{\sim}$ be the quotient map. It is continuous and surjective.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $q:X\to X/{\sim}$ be the quotient map. It is continuous and surjective.
+
+::: pf-proof
+
 Continuity is part of the definition of the quotient topology.
+
 :::
 
-<1>2. If $X$ is compact, then $X/{\sim}=q(X)$ is compact.
-::: {.proof}
-The continuous image of a compact space is compact.
 :::
+
+::: pf-step
+
+If $X$ is compact, then $X/{\sim}=q(X)$ is compact.
+
+::: pf-proof
+
+The continuous image of a compact space is compact.
+
+:::
+
+:::
+
+:::
+
 :::

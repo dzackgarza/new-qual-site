@@ -40,8 +40,14 @@ Choose a generator $a\in A$ with annihilator
 \]
 Thus $A\cong R/(r)$ and $ra=0$.
 
-<1>1. If $(s,r)=1$, then $sA=A$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $(s,r)=1$, then $sA=A$.
+
+::: pf-proof
+
 By Bézout's identity there are $u,v\in R$ such that
 \[
 us+vr=1.
@@ -51,24 +57,38 @@ For any $x\in A$, one has $rx=0$ because $A=Ra$ and $ra=0$. Hence
 x=(us+vr)x=s(ux)+v(rx)=s(ux)\in sA.
 \]
 Thus $A\subseteq sA$, while $sA\subseteq A$ is immediate. Therefore $sA=A$.
+
 :::
 
-<1>2. If $(s,r)=1$, then $A[s]=0$.
-::: {.proof}
-Let $x\in A[s]$, so $sx=0$. With $u,v$ as in <1>1,
+:::
+
+::: pf-step
+
+If $(s,r)=1$, then $A[s]=0$.
+
+::: pf-proof
+
+Let $x\in A[s]$, so $sx=0$. With $u,v$ as in step [](#s1){.pf-ref},
 \[
 x=(us+vr)x=u(sx)+v(rx)=0.
 \]
 Thus the only element annihilated by $s$ is $0$.
-:::
 
 Now suppose $s\mid r$, say $r=sk$.
 
-<1>3. There is an isomorphism
+:::
+
+:::
+
+::: pf-step
+
+There is an isomorphism
 \[
 sA\cong R/(k).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 \phi:R\longrightarrow sA,
@@ -88,13 +108,20 @@ $t\in\ker\phi$. Hence $\ker\phi=(k)$, and the first isomorphism theorem gives
 \[
 sA\cong R/(k).
 \]
+
 :::
 
-<1>4. There is an isomorphism
+:::
+
+::: pf-step
+
+There is an isomorphism
 \[
 A[s]\cong R/(s).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 \psi:R\longrightarrow A[s],
@@ -124,5 +151,11 @@ Therefore $\ker\psi=(s)$, and the first isomorphism theorem yields
 \[
 A[s]\cong R/(s).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

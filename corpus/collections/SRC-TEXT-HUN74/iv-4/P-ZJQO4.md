@@ -27,25 +27,48 @@ Conclude that $\overline{\pi}$ is not an epimorphism.
 ::: {.solution}
 The induced map is post-composition, $\overline{\pi}(\varphi) = \pi \circ \varphi$.
 
-<1>1. $\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ) = 0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ) = 0$.
+
+::: pf-proof
+
 Let $\varphi \in \operatorname{Hom}_\ZZ(\ZZ_2, \ZZ)$. Since $2 \cdot 1 = 0$ in $\ZZ_2$,
 $$2 \varphi(1) = \varphi(2 \cdot 1) = \varphi(0) = 0 \quad \text{in } \ZZ.$$
 As $\ZZ$ is torsion-free, $\varphi(1) = 0$, and since $1$ generates $\ZZ_2$, $\varphi = 0$.
+
 :::
 
-<1>2. $\overline{\pi}$ is the zero map.
-
-::: {.proof}
-By step <1>1 the domain of $\overline\pi$ is $\{0\}$, and $\overline{\pi}(0) = \pi \circ 0 = 0$.
 :::
 
-<1>3. $\overline{\pi}$ is not an epimorphism.
+::: {.pf-step #s2}
 
-::: {.proof}
-The identity $\operatorname{id}_{\ZZ_2}$ is a nonzero element of $\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ_2)$, since $\operatorname{id}_{\ZZ_2}(1) = 1 \neq 0$. By step <1>2 the image of $\overline{\pi}$ is $\{0\}$, so $\overline\pi$ is not surjective.
+$\overline{\pi}$ is the zero map.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} the domain of $\overline\pi$ is $\{0\}$, and $\overline{\pi}(0) = \pi \circ 0 = 0$.
+
 :::
+
+:::
+
+::: pf-step
+
+$\overline{\pi}$ is not an epimorphism.
+
+::: pf-proof
+
+The identity $\operatorname{id}_{\ZZ_2}$ is a nonzero element of $\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ_2)$, since $\operatorname{id}_{\ZZ_2}(1) = 1 \neq 0$. By step [](#s2){.pf-ref} the image of $\overline{\pi}$ is $\{0\}$, so $\overline\pi$ is not surjective.
+
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

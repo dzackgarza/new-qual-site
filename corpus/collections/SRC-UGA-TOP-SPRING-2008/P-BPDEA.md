@@ -47,17 +47,30 @@ q:\RR\longrightarrow\RR/{\sim}
 \]
 be the quotient map.
 
-<1>1. The domain $\RR$ is Hausdorff.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The domain $\RR$ is Hausdorff.
+
+::: pf-proof
+
 The usual topology on $\RR$ is induced by the metric
 \[
 d(x,y)=|x-y|,
 \]
 and every metric space is Hausdorff.
+
 :::
 
-<1>2. Every nonempty open subset of $\RR/{\sim}$ is the whole quotient.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every nonempty open subset of $\RR/{\sim}$ is the whole quotient.
+
+::: pf-proof
+
 Let
 \[
 V\subseteq\RR/{\sim}
@@ -98,21 +111,40 @@ As $y$ was arbitrary and $q$ is surjective,
 V=\RR/{\sim}.
 \]
 Thus the quotient topology is indiscrete.
+
 :::
 
-<1>3. The quotient $\RR/{\sim}$ has at least two points.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The quotient $\RR/{\sim}$ has at least two points.
+
+::: pf-proof
+
 The classes of $0$ and $\sqrt2$ are distinct because
 \[
 \sqrt2-0\notin\QQ.
 \]
+
 :::
 
-<1>4. The quotient $\RR/{\sim}$ is not Hausdorff.
-::: {.proof}
-By <1>2, the only nonempty open subset is the whole space.
-By <1>3 there are distinct points in the quotient.
+:::
+
+::: pf-step
+
+The quotient $\RR/{\sim}$ is not Hausdorff.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the only nonempty open subset is the whole space.
+By step [](#s3){.pf-ref} there are distinct points in the quotient.
 Any neighborhoods of two such points are therefore both the whole quotient and cannot be disjoint.
+
+:::
+
+:::
+
 :::
 
 Hence

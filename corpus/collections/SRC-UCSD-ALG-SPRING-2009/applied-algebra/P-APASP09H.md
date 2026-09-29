@@ -40,7 +40,11 @@ Assume the coefficient field has characteristic $0$.
 
 **Part (a).**
 
-<1>1. The restriction of the $S_4$-module $S^{(2,1,1)}$ to
+::: pf
+
+::: {.pf-step #s1}
+
+The restriction of the $S_4$-module $S^{(2,1,1)}$ to
 \[
 G=\langle(12),(34)\rangle\cong C_2\times C_2
 \]
@@ -50,7 +54,9 @@ has character values
 \qquad
 \chi(g)=-1\quad(g\ne e).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The representation $S^{(2,1,1)}$ is the sign twist of the standard representation $S^{(3,1)}$.
 For the standard representation of $S_4$,
 \[
@@ -62,19 +68,31 @@ The element $(12)(34)$ has no fixed points and sign $+1$, so its value is also
 0-1=-1.
 \]
 The identity has value $3$.
+
 :::
 
-<1>2. Every nonidentity element of $G$ acts on $V$ with eigenvalues
+:::
+
+::: {.pf-step #s2}
+
+Every nonidentity element of $G$ acts on $V$ with eigenvalues
 \[
 1,-1,-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each nonidentity element has order $2$, so its eigenvalues are $\pm1$.
-Their sum is the character value $-1$ from <1>1, in dimension $3$.
+Their sum is the character value $-1$ from step [](#s1){.pf-ref}, in dimension $3$.
 Hence exactly one eigenvalue is $1$ and two are $-1$.
+
 :::
 
-<1>3. The Molien series is
+:::
+
+::: {.pf-step #s3}
+
+The Molien series is
 \[
 M_G(t)
 =\frac14\left(
@@ -83,13 +101,15 @@ M_G(t)
 \right)
 =\frac{1+t^3}{(1-t^2)^3}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Molien's formula gives
 \[
 M_G(t)=\frac1{|G|}\sum_{g\in G}\frac1{\det(I-tg)}.
 \]
 The identity contributes $(1-t)^{-3}$.
-By <1>2, each of the three nonidentity elements contributes
+By step [](#s2){.pf-ref}, each of the three nonidentity elements contributes
 \[
 \frac1{(1-t)(1+t)^2}.
 \]
@@ -101,15 +121,22 @@ Combining the terms and simplifying gives
 \right)
 =\frac{1+t^3}{(1-t^2)^3}.
 \]
-:::
 
 **Part (b).**
 
-<1>4. A monomial $y_1^{a_1}y_2^{a_2}y_3^{a_3}$ is $\widetilde G$-invariant if and only if
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+A monomial $y_1^{a_1}y_2^{a_2}y_3^{a_3}$ is $\widetilde G$-invariant if and only if
 \[
 a_1\equiv a_2\equiv a_3\pmod2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The generator $g_1$ changes the sign of $y_1$ and $y_2$, so invariance under $g_1$ is equivalent to
 \[
 a_1+a_2\equiv0\pmod2.
@@ -119,25 +146,37 @@ Likewise, $g_2$ changes the signs of $y_2,y_3$, so invariance under $g_2$ is equ
 a_2+a_3\equiv0\pmod2.
 \]
 These two congruences say precisely that $a_1,a_2,a_3$ have the same parity.
+
 :::
 
-<1>5. A Hironaka decomposition is
+:::
+
+::: {.pf-step #s5}
+
+A Hironaka decomposition is
 \[
 k[y_1,y_2,y_3]^{\widetilde G}
 =k[y_1^2,y_2^2,y_3^2]
 \oplus
 y_1y_2y_3\,k[y_1^2,y_2^2,y_3^2].
 \]
-::: {.proof}
-By <1>4, every invariant monomial has either all three exponents even or all three odd.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, every invariant monomial has either all three exponents even or all three odd.
 In the first case it lies in $k[y_1^2,y_2^2,y_3^2]$.
 In the second it is $y_1y_2y_3$ times a monomial in the three squares.
 The two summands have disjoint monomial bases, so the sum is direct.
-:::
 
 **Part (c).**
 
-<1>6. The first invariant ring has presentation
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+The first invariant ring has presentation
 \[
 k[y_1,y_2,y_3]^{\widetilde G}
 \cong
@@ -150,8 +189,10 @@ a=y_1^2,
 \quad c=y_3^2,
 \quad d=y_1y_2y_3.
 \]
-::: {.proof}
-The Hironaka decomposition in <1>5 shows that $a,b,c,d$ generate the invariant ring.
+
+::: pf-proof
+
+The Hironaka decomposition in step [](#s5){.pf-ref} shows that $a,b,c,d$ generate the invariant ring.
 They satisfy
 \[
 d^2=abc.
@@ -160,14 +201,21 @@ Conversely, every polynomial modulo the relation $d^2=abc$ has a unique represen
 \[
 F(a,b,c)+dG(a,b,c).
 \]
-Under the displayed substitution, the two terms land in the two direct summands of <1>5. Hence the induced homomorphism has trivial kernel beyond $(d^2-abc)$ and is surjective.
+Under the displayed substitution, the two terms land in the two direct summands of step [](#s5){.pf-ref}. Hence the induced homomorphism has trivial kernel beyond $(d^2-abc)$ and is surjective.
+
 :::
 
-<1>7. The restricted $G$-module $V$ is isomorphic to the $\widetilde G$-module $W$ in part (b), after relabeling the three nontrivial characters.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+The restricted $G$-module $V$ is isomorphic to the $\widetilde G$-module $W$ in part (b), after relabeling the three nontrivial characters.
+
+::: pf-proof
+
 Since $G$ is abelian of exponent $2$, its complex representations split into one-dimensional characters.
 Let its four characters be $1,\chi_1,\chi_2,\chi_3$.
-The character in <1>1 equals
+The character in step [](#s1){.pf-ref} equals
 \[
 \chi_1+\chi_2+\chi_3:
 \]
@@ -177,9 +225,14 @@ Thus
 V|_G\cong\chi_1\oplus\chi_2\oplus\chi_3.
 \]
 The module $W$ has exactly the same three nontrivial characters by the sign actions in part (b). Hence the two representations are isomorphic.
+
 :::
 
-<1>8. Consequently, after choosing an eigenbasis $z_1,z_2,z_3$ for $V|_G$ corresponding to the three nontrivial characters,
+:::
+
+::: pf-step
+
+Consequently, after choosing an eigenbasis $z_1,z_2,z_3$ for $V|_G$ corresponding to the three nontrivial characters,
 \[
 k[x_1,x_2,x_3]^G
 \cong
@@ -194,14 +247,22 @@ A=z_1^2,
 \quad C=z_3^2,
 \quad D=z_1z_2z_3.
 \]
-::: {.proof}
-A linear change of coordinates induced by the $G$-module isomorphism of <1>7 identifies the polynomial representations and hence their invariant rings.
-The calculation of <1>4--<1>6 then applies verbatim in the eigenbasis $z_1,z_2,z_3$.
+
+::: pf-proof
+
+A linear change of coordinates induced by the $G$-module isomorphism of step [](#s7){.pf-ref} identifies the polynomial representations and hence their invariant rings.
+The calculation of steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} then applies verbatim in the eigenbasis $z_1,z_2,z_3$.
 The Hilbert series of this hypersurface is
 \[
 \frac{1-t^6}{(1-t^2)^3(1-t^3)}
 =\frac{1+t^3}{(1-t^2)^3},
 \]
-in agreement with the Molien series in <1>3.
+in agreement with the Molien series in step [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

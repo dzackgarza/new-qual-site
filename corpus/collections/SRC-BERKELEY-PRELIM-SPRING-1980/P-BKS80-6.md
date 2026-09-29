@@ -45,7 +45,11 @@ but $C_2$ has no proper nontrivial subgroup.
 
 The following argument shows that this is the only exception.
 
-<1>1. Put
+::: pf
+
+::: {.pf-step #s1}
+
+Put
 $$
 k\coloneqq[G:H]=\frac nm.
 $$
@@ -55,25 +59,38 @@ $$
 $$
 whose kernel $K$ is a proper normal subgroup of $G$.
 
-::: {.proof}
+::: pf-proof
+
 The kernel of any homomorphism is normal. Since $H$ is proper, $k\ge2$,
 and the coset action is transitive on at least two points. Hence the action
 is not trivial, so $K\ne G$. Thus $K\lhd G$ and $K$ is proper.
+
 :::
 
-<1>2. If $K\ne\{e\}$, then $G$ has the required proper nontrivial normal
+:::
+
+::: {.pf-step #s2}
+
+If $K\ne\{e\}$, then $G$ has the required proper nontrivial normal
 subgroup.
 
-::: {.proof}
-This is immediate from step <1>1.
+::: pf-proof
+
+This is immediate from step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Suppose $K=\{e\}$. Then
+:::
+
+::: {.pf-step #s3}
+
+Suppose $K=\{e\}$. Then
 $$
 G\cong S_k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $K$ is trivial, then $\varphi$ is injective, so
 $$
 n=|G|=|\varphi(G)|
@@ -90,54 +107,78 @@ $$
 $$
 The index is an integer, so it equals $1$. Hence
 $\varphi(G)=S_k$ and $G\cong S_k$.
+
 :::
 
-<1>4. Under the hypothesis of step <1>3, if $k\ge3$, then $G$ has a
+:::
+
+::: {.pf-step #s4}
+
+Under the hypothesis of step [](#s3){.pf-ref}, if $k\ge3$, then $G$ has a
 proper nontrivial normal subgroup.
 
-::: {.proof}
+::: pf-proof
+
 For $k\ge3$, the alternating group
 $$
 A_k
 $$
 is a proper nontrivial normal subgroup of $S_k$. Transporting it through
-the isomorphism in step <1>3 gives a proper nontrivial normal subgroup of
+the isomorphism in step [](#s3){.pf-ref} gives a proper nontrivial normal subgroup of
 $G$.
+
 :::
 
-<1>5. Under the hypothesis of step <1>3, if $k=2$, then
+:::
+
+::: {.pf-step #s5}
+
+Under the hypothesis of step [](#s3){.pf-ref}, if $k=2$, then
 $$
 G\cong C_2
 \qquad\text{and}\qquad
 H=\{e\}.
 $$
 
-::: {.proof}
-Step <1>3 gives $G\cong S_2\cong C_2$, so $n=2$. Since
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives $G\cong S_2\cong C_2$, so $n=2$. Since
 $$
 k=\frac nm=2,
 $$
 one has $m=1$, hence $H=\{e\}$.
+
 :::
 
-<1>6. Consequently the sharp conclusion under the printed hypotheses is:
+:::
+
+::: {.pf-step #s6}
+
+Consequently the sharp conclusion under the printed hypotheses is:
 $$
 \boxed{
 \text{either }(G,H)\cong(C_2,\{e\}),
 \text{ or }G\text{ has a proper nontrivial normal subgroup}.}
 $$
 
-::: {.proof}
-If the kernel $K$ from step <1>1 is nontrivial, apply step <1>2. If it is
-trivial, step <1>3 identifies $G$ with $S_k$; step <1>4 settles $k\ge3$,
-while step <1>5 identifies the unique remaining case $k=2$ with the
+::: pf-proof
+
+If the kernel $K$ from step [](#s1){.pf-ref} is nontrivial, apply step [](#s2){.pf-ref}. If it is
+trivial, step [](#s3){.pf-ref} identifies $G$ with $S_k$; step [](#s4){.pf-ref} settles $k\ge3$,
+while step [](#s5){.pf-ref} identifies the unique remaining case $k=2$ with the
 displayed exception.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The opening counterexample disproves the statement as printed, and step
-<1>6 proves the corrected assertion with the unique exceptional case.
+[](#s6){.pf-ref} proves the corrected assertion with the unique exceptional case.
+
 :::
+
+:::
+
 :::

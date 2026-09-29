@@ -31,18 +31,29 @@ Show that for every integer $d\ge0$ there are integers $b_0,\dots,b_{md}$ such t
 :::
 
 ::: {.solution}
-<1>1. The claim is immediate when $d=0$, and also when $m=0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The claim is immediate when $d=0$, and also when $m=0$.
+
+::: pf-proof
+
 If $d=0$, then
 $$
 \frac{f(x)^0}{0!}=1,
 $$
 so take $b_0=1$. If $m=0$ and $d>0$, then $f=0$, so take $b_0=0$.
 Thus it remains to consider $m,d\geq1$.
+
 :::
 
-<1>2. For $0\leq n\leq md$, the coefficient of $x^n/n!$ in
+:::
+
+::: {.pf-step #s2}
+
+For $0\leq n\leq md$, the coefficient of $x^n/n!$ in
 $f(x)^d/d!$ is
 $$
 b_n
@@ -54,7 +65,8 @@ c_1+2c_2+\cdots+mc_m=n}}
 \prod_{i=1}^m a_i^{c_i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the multinomial theorem,
 $$
 f(x)^d
@@ -75,15 +87,21 @@ $$
 $$
 Multiplying the coefficient of $x^n$ by $n!$ gives the displayed formula
 for the coefficient $b_n$ of $x^n/n!$.
+
 :::
 
-<1>3. For every tuple $(c_1,\ldots,c_m)$ occurring in step <1>2,
+:::
+
+::: {.pf-step #s3}
+
+For every tuple $(c_1,\ldots,c_m)$ occurring in step [](#s2){.pf-ref},
 $$
 \frac{n!}{\prod_{i=1}^m c_i!(i!)^{c_i}}
 $$
 is an integer.
 
-::: {.proof}
+::: pf-proof
+
 Let $S$ be an $n$-element set. The displayed number counts partitions of
 $S$ into exactly $c_i$ unlabeled blocks of size $i$ for each
 $1\leq i\leq m$.
@@ -97,17 +115,28 @@ $$
 \frac{n!}{\prod_{i=1}^m c_i!(i!)^{c_i}},
 $$
 which is therefore an integer.
+
 :::
 
-<1>4. Every coefficient $b_n$ in step <1>2 is an integer.
+:::
 
-::: {.proof}
-Each $a_i$ is an integer by hypothesis, and step <1>3 shows that every
+::: {.pf-step #s4}
+
+Every coefficient $b_n$ in step [](#s2){.pf-ref} is an integer.
+
+::: pf-proof
+
+Each $a_i$ is an integer by hypothesis, and step [](#s3){.pf-ref} shows that every
 other factor in every summand defining $b_n$ is an integer. Hence
 $b_n\in\ZZ$.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \boxed{
 \frac{f(x)^d}{d!}
@@ -117,15 +146,22 @@ $$
 $$
 with every $b_n\in\ZZ$.
 
-::: {.proof}
-The degree of $f^d$ is at most $md$. Step <1>2 identifies the divided-power
-coefficient $b_n$ for every degree $0\leq n\leq md$, and step <1>4 proves
+::: pf-proof
+
+The degree of $f^d$ is at most $md$. Step [](#s2){.pf-ref} identifies the divided-power
+coefficient $b_n$ for every degree $0\leq n\leq md$, and step [](#s4){.pf-ref} proves
 that each is an integer.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>5 cover all cases.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s5){.pf-ref} cover all cases.
+
+:::
+
+:::
+
 :::

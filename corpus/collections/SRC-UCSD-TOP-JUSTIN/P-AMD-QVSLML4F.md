@@ -20,12 +20,19 @@ Compute $H_*(X\cross S^n)$ in terms of $H_*(X)$
 :::
 
 ::: {.solution}
-<1>1. For every $k$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $k$,
 $$
 \boxed{H_k(X\times S^n;\mathbb Z)\cong H_k(X;\mathbb Z)\oplus H_{k-n}(X;\mathbb Z),}
 $$
 where $H_j(X)=0$ for $j<0$.
-::: {.proof}
+
+::: pf-proof
+
 The homology of $S^n$ is free and nonzero only in degrees $0$ and $n$, where it is $\mathbb Z$. Hence the Künneth theorem has no Tor terms and gives
 $$
 H_k(X\times S^n)
@@ -33,15 +40,22 @@ H_k(X\times S^n)
 \oplus H_{k-n}(X)\otimes H_n(S^n),
 $$
 which is the displayed direct sum.
+
 :::
 
-<1>2. For the $n$-torus $T^n=(S^1)^n$,
+:::
+
+::: pf-step
+
+For the $n$-torus $T^n=(S^1)^n$,
 $$
 \boxed{H_k(T^n;\mathbb Z)\cong\mathbb Z^{\binom nk}}
 $$
 for $0\le k\le n$, and $H_k(T^n)=0$ otherwise.
-::: {.proof}
-Proceed by induction using $T^n=T^{n-1}\times S^1$ and <1>1:
+
+::: pf-proof
+
+Proceed by induction using $T^n=T^{n-1}\times S^1$ and step [](#s1){.pf-ref}:
 $$
 H_k(T^n)\cong H_k(T^{n-1})\oplus H_{k-1}(T^{n-1}).
 $$
@@ -50,5 +64,11 @@ $$
 \binom{n-1}{k}+\binom{n-1}{k-1}=\binom nk.
 $$
 The base case $T^1=S^1$ is immediate.
+
 :::
+
+:::
+
+:::
+
 :::

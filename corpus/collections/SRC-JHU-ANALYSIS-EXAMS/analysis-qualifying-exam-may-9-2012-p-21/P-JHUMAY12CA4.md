@@ -33,9 +33,14 @@ Prove that $f(z) = z + 1$.
 Set $g(z)=f(z)-1$ and $H=\{z:\operatorname{Im}z<\pi/2\}$.
 Then $g(-1)=-1$ and $g(0)=0$.
 
-<1>1. The restriction $g:H\to H$ is a holomorphic self-map.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The restriction $g:H\to H$ is a holomorphic self-map.
+
+::: pf-proof
+
 Subtracting the real number one leaves imaginary parts
 unchanged, so $g(U)\subset U$. Both $-1$ and zero belong
 to $H$, and their distinct images show that $g$ is
@@ -44,11 +49,17 @@ is open in $\CC$. It is contained in the
 closed half-plane $U$, so it cannot contain a point of
 the boundary line: any neighborhood of such a point
 meets $\CC\setminus U$. Hence $g(H)\subset H$.
+
 :::
 
-<1>2. A disk normalization makes $g$ the identity on $H$.
+:::
 
-::: {.proof}
+::: pf-step
+
+A disk normalization makes $g$ the identity on $H$.
+
+::: pf-proof
+
 Define
 $$
 \psi(z)=\frac{z}{z-i\pi},\qquad
@@ -77,22 +88,34 @@ holomorphically through zero, has modulus at most one,
 and equals one at $\beta$. The [[T-BYNL5|maximum modulus principle]]
 therefore makes that quotient identically one.
 It follows that $G(w)=w$ on $D$ and $g(z)=z$ on $H$.
+
 :::
 
-<1>3. The equality holds on the entire plane.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The equality holds on the entire plane.
+
+::: pf-proof
+
 The entire function $f(z)-z-1$ vanishes on the nonempty
 open set $H$. The [[T-RGE7C|identity theorem]] on the connected
 plane makes it identically zero. Hence
 $f(z)=z+1$ for every $z\in\CC$.
 This translation indeed preserves $U$ and has the two
 prescribed interpolation values.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the required formula on the entire plane.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required formula on the entire plane.
+
+:::
+
+:::
+
 :::

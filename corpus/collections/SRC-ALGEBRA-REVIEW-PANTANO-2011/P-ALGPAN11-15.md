@@ -40,8 +40,14 @@ For which of the following rings is it possible for the product of two nonzero e
 ::: {.solution}
 The answer is $\boxed{\text{(C)}}$, the ring $C([0,1],\mathbb R)$ of continuous real-valued functions.
 
-<1>1. Choice (C) has nonzero zero divisors.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Choice (C) has nonzero zero divisors.
+
+::: pf-proof
+
 Define
 \[
 f(x)=\max\{0,\tfrac12-x\},
@@ -53,11 +59,24 @@ Hence
 \[
 fg=0.
 \]
+
 :::
 
-<1>2. The other listed rings are integral domains.
-::: {.proof}
+:::
+
+::: pf-step
+
+The other listed rings are integral domains.
+
+::: pf-proof
+
 $\mathbb C$ is a field; $\mathbb Z/11$ is a field because $11$ is prime; $\mathbb Q(\sqrt2)$ is a field; and $\mathbb R[x]$ is a polynomial ring over a field, hence an integral domain.
 None of them has nonzero zero divisors.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -57,12 +57,17 @@ J_k\coloneqq\left\{j\in\{1,\ldots,n\}:
 \beta_k\coloneqq\frac{k\pi}{2}+\frac\pi4.
 $$
 
-<1>1. There is $k\in\{0,1,2,3\}$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is $k\in\{0,1,2,3\}$ such that
 $$
 \sum_{j\in J_k}\abs{z_j}\geq\frac M4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The half-open intervals defining $J_0,J_1,J_2,J_3$ partition
 $[0,2\pi)$, so these index sets partition $\{1,\ldots,n\}$.
 Consequently,
@@ -71,15 +76,21 @@ $$
 $$
 At least one of these four nonnegative sums is at least their
 average $M/4$.
+
 :::
 
-<1>2. For every $k\in\{0,1,2,3\}$,
+:::
+
+::: {.pf-step #s2}
+
+For every $k\in\{0,1,2,3\}$,
 $$
 \abs{\sum_{j\in J_k}z_j}
 \geq\frac1{\sqrt2}\sum_{j\in J_k}\abs{z_j}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $j\in J_k$, the defining inequalities give
 $-\pi/4\leq\theta_j-\beta_k<\pi/4$. Hence
 $$
@@ -99,12 +110,14 @@ $$
 &\geq\frac1{\sqrt2}\sum_{j\in J_k}\abs{z_j}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Choose $k$ as in step <1>1 and take $J=J_k$. Step <1>2 gives
+::: pf-qed
+
+Choose $k$ as in step [](#s1){.pf-ref} and take $J=J_k$. Step [](#s2){.pf-ref} gives
 $$
 \abs{\sum_{j\in J}z_j}
 \geq\frac1{\sqrt2}\sum_{j\in J}\abs{z_j}
@@ -112,5 +125,9 @@ $$
 =\frac1{4\sqrt2}\sum_{j=1}^n\abs{z_j}.
 $$
 This also covers $M=0$, since all the sums then vanish.
+
 :::
+
+:::
+
 :::

@@ -31,10 +31,16 @@ In the following, give complete justification for your answers.
 (b) Find all distributions $T \in \mathcal{D}'(\mathbb{R})$ such that $x^2 T = 0$.
 :::
 
-
 ::: {.solution}
-<1>1. Solve $xT=0$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Solve $xT=0$.
+
+::: pf-proof
+
 Choose $\chi\in C_c^\infty(\mathbb R)$ with $\chi=1$ on a neighborhood of $0$. For any test function $\varphi\in C_c^\infty(\mathbb R)$, the function
 \[
 \varphi(x)-\varphi(0)\chi(x)
@@ -63,10 +69,17 @@ Therefore
 \[
 \boxed{xT=0\iff T=c\delta_0\text{ for some }c\in\mathbb C.}
 \]
+
 :::
 
-<1>2. Solve $x^2T=0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Solve $x^2T=0$.
+
+::: pf-proof
+
 Using the same cutoff $\chi$, every test function has a second-order decomposition
 \[
 \varphi(x)
@@ -114,5 +127,11 @@ Hence every linear combination of $\delta_0$ and $\delta_0'$ is annihilated by $
 \[
 \boxed{x^2T=0\iff T=a\delta_0+b\delta_0'\text{ for some }a,b\in\mathbb C.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

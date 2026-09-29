@@ -36,8 +36,15 @@ Prove that $K$ is compact, $\mu(K) = 1$, and $\mu(H) < 1$ for every proper compa
 :::
 
 ::: {.solution}
-<1>1. Show that $V$ is open and null.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that $V$ is open and null.
+
+::: pf-proof
+
 By definition, $V$ is a union of open sets, so $V$ is open.
 
 Suppose for contradiction that $\mu(V)>0$. Since $\mu$ is Radon, it is inner regular on the open set $V$, so there exists a compact set
@@ -67,10 +74,17 @@ a contradiction. Therefore
 \[
 \boxed{\mu(V)=0.}
 \]
+
 :::
 
-<1>2. Prove the basic properties of the support in the compact probability case.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the basic properties of the support in the compact probability case.
+
+::: pf-proof
+
 Now assume $X$ is compact and $\mu(X)=1$, and put
 \[
 K:=\operatorname{supp}(\mu)=X\setminus V.
@@ -79,10 +93,17 @@ Since $V$ is open, $K$ is closed in the compact space $X$, hence compact. Also
 \[
 \mu(K)=\mu(X)-\mu(V)=1.
 \]
+
 :::
 
-<1>3. Show that no proper compact subset of $K$ has full measure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that no proper compact subset of $K$ has full measure.
+
+::: pf-proof
+
 Let $H\subsetneq K$ be compact. Choose
 \[
 x\in K\setminus H.
@@ -105,5 +126,11 @@ Therefore
 \boxed{\mu(H)\le1-\mu(U)<1.}
 \]
 Thus every proper compact subset of the support has strictly smaller measure.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -36,11 +36,17 @@ f,g:X\to Y
 \]
 are homotopic.
 
-<1>1. For every $n>0$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n>0$,
 \[
 \widetilde H_n(f)=\widetilde H_n(g).
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $n>0$ one has
 \[
 \widetilde H_n(X)=H_n(X),
@@ -48,10 +54,17 @@ For $n>0$ one has
 \widetilde H_n(Y)=H_n(Y).
 \]
 Homotopic maps induce the same homomorphism on ordinary homology, so the induced maps agree.
+
 :::
 
-<1>2. The same holds in degree zero.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The same holds in degree zero.
+
+::: pf-proof
+
 For a nonempty space $Z$,
 \[
 \widetilde H_0(Z)=\ker\bigl(\epsilon:H_0(Z)\to\mathbb Z\bigr),
@@ -67,13 +80,26 @@ Since homotopic maps satisfy
 f_*=g_*:H_0(X)\to H_0(Y),
 \]
 their restrictions to the augmentation kernel are equal. These restrictions are precisely the induced maps on $\widetilde H_0$. If $X$ is empty the assertion is trivial.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 \boxed{f_*=g_*:\widetilde H_n(X)\to\widetilde H_n(Y)\text{ for all }n.}
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -33,7 +33,11 @@ Show that for each $i$ the function $h^i(X_t, \mco_{X_t})$ is a constant functio
 ::: {.solution}
 Let $d$ be the common degree of the hypersurfaces.
 
-<1>1. For every parameter value $t$, the hypersurface $X_t\subseteq\PP_k^n$
+::: pf
+
+::: {.pf-step #s1}
+
+For every parameter value $t$, the hypersurface $X_t\subseteq\PP_k^n$
 fits into an exact sequence
 $$
 0
@@ -47,7 +51,8 @@ $$
 $$
 where $F_t$ is a homogeneous equation of degree $d$ for $X_t$.
 
-::: {.proof}
+::: pf-proof
+
 A hypersurface of degree $d$ is the effective Cartier divisor cut out by
 one nonzero homogeneous form $F_t$ of degree $d$. Its ideal sheaf is
 therefore
@@ -56,9 +61,14 @@ $$
 $$
 with inclusion into $\mco_{\PP^n}$ given by multiplication by $F_t$.
 Taking the quotient gives the displayed sequence.
+
 :::
 
-<1>2. The cohomology groups of the two line bundles in step <1>1 depend only
+:::
+
+::: {.pf-step #s2}
+
+The cohomology groups of the two line bundles in step [](#s1){.pf-ref} depend only
 on $n$ and $d$:
 $$
 H^q(\PP^n,\mco)=
@@ -83,13 +93,19 @@ h^n(\PP^n,\mco(-d))
 \end{cases}
 $$
 
-::: {.proof}
+::: pf-proof
+
 These are the standard cohomology formulas for twisting sheaves on
 projective space, recorded in
 [[T-IJW1K|the cohomology of $\mco_{\PP^n}(d)$]].
+
 :::
 
-<1>3. Assume $n\ge2$. Then for every $t$,
+:::
+
+::: {.pf-step #s3}
+
+Assume $n\ge2$. Then for every $t$,
 $$
 h^0(X_t,\mco_{X_t})=1,
 $$
@@ -114,8 +130,9 @@ H^q(X_t,\mco_{X_t})=0
 (q\ge n).
 $$
 
-::: {.proof}
-Apply cohomology to the exact sequence of step <1>1. Since
+::: pf-proof
+
+Apply cohomology to the exact sequence of step [](#s1){.pf-ref}. Since
 $$
 H^0(\PP^n,\mco(-d))=0
 $$
@@ -128,7 +145,7 @@ $$
 H^0(X_t,\mco_{X_t})\cong k.
 $$
 For $0<q<n-1$, both neighbouring projective-space groups vanish by
-step <1>2, so
+step [](#s2){.pf-ref}, so
 $$
 H^q(X_t,\mco_{X_t})=0.
 $$
@@ -149,12 +166,17 @@ H^{n-1}(X_t,\mco_{X_t})
 \cong
 H^n(\PP^n,\mco(-d)),
 $$
-whose dimension is the value in step <1>2. The same long exact sequence
+whose dimension is the value in step [](#s2){.pf-ref}. The same long exact sequence
 gives $H^q(X_t,\mco_{X_t})=0$ for $q\ge n$. None of these dimensions
 depends on $t$.
+
 :::
 
-<1>4. If $n=1$, then for every $t$,
+:::
+
+::: {.pf-step #s4}
+
+If $n=1$, then for every $t$,
 $$
 h^0(X_t,\mco_{X_t})=d
 $$
@@ -165,8 +187,9 @@ H^q(X_t,\mco_{X_t})=0
 (q>0).
 $$
 
-::: {.proof}
-The long exact sequence of step <1>1 becomes
+::: pf-proof
+
+The long exact sequence of step [](#s1){.pf-ref} becomes
 $$
 0
 \longrightarrow
@@ -188,24 +211,36 @@ h^0(X_t,\mco_{X_t})=1+(d-1)=d.
 $$
 A hypersurface in $\PP^1$ is zero-dimensional, so its higher coherent
 cohomology vanishes.
+
 :::
 
-<1>5. For every $i$, the number
+:::
+
+::: {.pf-step #s5}
+
+For every $i$, the number
 $$
 h^i(X_t,\mco_{X_t})
 $$
 is independent of $t$.
 
-::: {.proof}
-For $n\ge2$, step <1>3 gives every cohomology dimension explicitly in
-terms of $n$ and $d$. For $n=1$, step <1>4 does the same. If $n=0$, a
+::: pf-proof
+
+For $n\ge2$, step [](#s3){.pf-ref} gives every cohomology dimension explicitly in
+terms of $n$ and $d$. For $n=1$, step [](#s4){.pf-ref} does the same. If $n=0$, a
 positive-degree hypersurface in $\PP^0$ is empty, so every cohomology group
 is zero. Thus fixing $i$, the function of the parameter $t$ is constant.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

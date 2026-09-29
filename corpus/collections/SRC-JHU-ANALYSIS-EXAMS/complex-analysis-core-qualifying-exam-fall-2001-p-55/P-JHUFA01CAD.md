@@ -21,21 +21,39 @@ Problem 4. Suppose that $f : D _ { 1 } ( 0 ) \to \mathbb { C }$ is a one-to-one 
 :::
 
 ::: {.solution}
-<1>1. $h\da f^{-1}\circ g$ is a holomorphic self-map of $D_1(0)$ with $h(0)=0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$h\da f^{-1}\circ g$ is a holomorphic self-map of $D_1(0)$ with $h(0)=0$.
+
+::: pf-proof
+
 An injective holomorphic map has nonvanishing derivative and open image, so $f^{-1}\colon\Omega\to D_1(0)$ is holomorphic. Then $h$ is holomorphic, and $h(0)=f^{-1}(f(0))=0$.
+
 :::
 
-<1>2. $\abs{h(z)}\le\abs z$ on $D_1(0)$.
-
-::: {.proof}
-This is the Schwarz lemma applied to $h$, using step <1>1.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #s2}
 
-::: {.proof}
-For $\abs z<r$, step <1>2 gives $h(z)\in D_r(0)$, so $g(z)=f(h(z))\in f(D_r(0))$.
+$\abs{h(z)}\le\abs z$ on $D_1(0)$.
+
+::: pf-proof
+
+This is the Schwarz lemma applied to $h$, using step [](#s1){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+For $\abs z<r$, step [](#s2){.pf-ref} gives $h(z)\in D_r(0)$, so $g(z)=f(h(z))\in f(D_r(0))$.
+
+:::
+
+:::
+
 :::

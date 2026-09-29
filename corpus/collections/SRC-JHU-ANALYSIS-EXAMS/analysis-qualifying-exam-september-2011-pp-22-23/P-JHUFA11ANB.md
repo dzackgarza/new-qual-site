@@ -31,9 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Construct an entire function whose real part is $h$.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Construct an entire function whose real part is $h$.
+
+::: pf-proof
+
 Write $z=x+iy$, regard $h$ as a function of $(x,y)$, and
 define on all of $\RR^2$
 $$
@@ -58,11 +64,17 @@ $$
 Thus $H=h+iv$ has continuous first partial derivatives
 and satisfies the Cauchy–Riemann equations on the plane.
 By [[PR-JKE6C|Cauchy--Riemann implies holomorphic]], it is entire and has real part $h$.
+
 :::
 
-<1>2. The lower bound makes an entire exponential bounded.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The lower bound makes an entire exponential bounded.
+
+::: pf-proof
+
 Choose $m\in\RR$ with $h(z)\geq m$ everywhere.
 Then $E(z)=e^{-H(z)}$ is entire and satisfies
 $$
@@ -74,11 +86,17 @@ constant function yields
 $0=E'=-H'e^{-H}$ and hence $H'=0$ everywhere.
 An entire function with zero derivative is constant on
 the connected plane, so $h=\operatorname{Re}H$ is constant.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves that $h$ is constant.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves that $h$ is constant.
+
+:::
+
+:::
+
 :::

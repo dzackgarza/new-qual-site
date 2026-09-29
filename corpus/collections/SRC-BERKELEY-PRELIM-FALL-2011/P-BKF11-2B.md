@@ -41,18 +41,29 @@ $$
 f(x)\coloneqq x^4+6x-12.
 $$
 
-<1>1. For any field $k$, the quotient $k[x]/(f)$ is a field if and
+::: pf
+
+::: {.pf-step #s1}
+
+For any field $k$, the quotient $k[x]/(f)$ is a field if and
 only if $f$ is irreducible in $k[x]$.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial ring $k[x]$ is a principal ideal domain. Hence the
 principal ideal $(f)$ is maximal exactly when $f$ is irreducible.
 The quotient by an ideal is a field exactly when the ideal is maximal.
+
 :::
 
-<1>2. The polynomial $f$ is reducible over $\CC$ and over $\RR$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The polynomial $f$ is reducible over $\CC$ and over $\RR$.
+
+::: pf-proof
+
 By the fundamental theorem of algebra, every complex polynomial of
 positive degree has a complex root. Since $\deg f=4>1$, a linear
 factor obtained from such a root makes $f$ reducible in $\CC[x]$.
@@ -60,11 +71,17 @@ factor obtained from such a root makes $f$ reducible in $\CC[x]$.
 Every irreducible real polynomial has degree at most $2$: nonreal
 complex roots occur in conjugate pairs, giving real quadratic factors.
 Since $f$ has degree $4$, it is therefore reducible in $\RR[x]$.
+
 :::
 
-<1>3. The polynomial $f$ is irreducible over $\QQ$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The polynomial $f$ is irreducible over $\QQ$.
+
+::: pf-proof
+
 Apply Eisenstein's criterion with the prime $3$. The prime $3$
 divides every nonleading coefficient of
 $$
@@ -72,11 +89,17 @@ x^4+0x^3+0x^2+6x-12,
 $$
 while $3\nmid1$ and $9\nmid12$. Thus $f$ is irreducible in
 $\QQ[x]$.
+
 :::
 
-<1>4. The polynomial $f$ is reducible over $\FF_{2011^2}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The polynomial $f$ is reducible over $\FF_{2011^2}$.
+
+::: pf-proof
+
 Regard $f$ first as an element of $\FF_{2011}[x]$.
 
 If $f$ is reducible over $\FF_{2011}$, then the same factorization
@@ -96,23 +119,35 @@ $\FF_{2011^2}$ has degree at most $2$. It divides $f$, so $f$ has a
 proper factor over $\FF_{2011^2}$ and is reducible there.
 
 Thus $f$ is reducible over $\FF_{2011^2}$ in either case.
+
 :::
 
-<1>5. Among the four choices, the quotient is a field exactly for
+:::
+
+::: {.pf-step #s5}
+
+Among the four choices, the quotient is a field exactly for
 $$
 \boxed{k=\QQ}.
 $$
 
-::: {.proof}
-By step <1>1, the quotient is a field exactly when $f$ is
-irreducible. Step <1>3 gives irreducibility over $\QQ$, whereas
-steps <1>2 and <1>4 give reducibility over the other three listed
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the quotient is a field exactly when $f$ is
+irreducible. Step [](#s3){.pf-ref} gives irreducibility over $\QQ$, whereas
+steps [](#s2){.pf-ref} and [](#s4){.pf-ref} give reducibility over the other three listed
 fields.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the complete list of choices of $k$.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the complete list of choices of $k$.
+
+:::
+
+:::
+
 :::

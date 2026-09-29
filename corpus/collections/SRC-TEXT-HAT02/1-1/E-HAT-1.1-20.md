@@ -38,8 +38,14 @@ Fix $x_0\in X$ and define
 h(t)=f_t(x_0).
 \]
 
-<1>1. The path $h$ is a loop based at $x_0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The path $h$ is a loop based at $x_0$.
+
+::: pf-proof
+
 Since
 \[
 f_0=f_1=\operatorname{id}_X,
@@ -48,55 +54,89 @@ one has
 \[
 h(0)=f_0(x_0)=x_0=f_1(x_0)=h(1).
 \]
+
 :::
 
-<1>2. Lemma 1.19 gives
+:::
+
+::: {.pf-step #s2}
+
+Lemma 1.19 gives
 \[
 (f_0)_*=\beta_h\,(f_1)_*.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Lemma 1.19 states that for a homotopy $f_t:X\to X$ and the basepoint track $h(t)=f_t(x_0)$, the induced maps satisfy exactly this relation after the appropriate change of basepoint by $h$.
 Here both endpoint maps take $x_0$ to $x_0$, so all three maps act on
 \[
 \pi_1(X,x_0).
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 \[
 \beta_h=\operatorname{id}_{\pi_1(X,x_0)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Both $f_0$ and $f_1$ are the identity map, so
 \[
 (f_0)_*=(f_1)_*=\operatorname{id}_{\pi_1(X,x_0)}.
 \]
-Substituting into <1>2 gives
+Substituting into step [](#s2){.pf-ref} gives
 \[
 \operatorname{id}=\beta_h\operatorname{id}=\beta_h.
 \]
+
 :::
 
-<1>4. For every $[\gamma]\in\pi_1(X,x_0)$,
+:::
+
+::: {.pf-step #s4}
+
+For every $[\gamma]\in\pi_1(X,x_0)$,
 \[
 [h][\gamma][h]^{-1}=[\gamma].
 \]
-::: {.proof}
+
+::: pf-proof
+
 By the definition of the change-of-basepoint automorphism associated to the loop $h$,
 \[
 \beta_h([\gamma])=[h\cdot\gamma\cdot\bar h]
 =[h][\gamma][h]^{-1}.
 \]
-Now use <1>3.
+Now use step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Hence $[h]$ lies in the center of $\pi_1(X,x_0)$.
-::: {.proof}
-Multiplying the equality in <1>4 on the right by $[h]$ gives
+:::
+
+::: pf-step
+
+Hence $[h]$ lies in the center of $\pi_1(X,x_0)$.
+
+::: pf-proof
+
+Multiplying the equality in step [](#s4){.pf-ref} on the right by $[h]$ gives
 \[
 [h][\gamma]=[\gamma][h]
 \]
 for every $[\gamma]\in\pi_1(X,x_0)$.
 This is precisely the condition that $[h]$ be central.
+
 :::
+
+:::
+
+:::
+
 :::

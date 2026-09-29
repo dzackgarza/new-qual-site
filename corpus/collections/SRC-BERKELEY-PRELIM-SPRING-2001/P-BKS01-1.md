@@ -31,10 +31,15 @@ $$
 \operatorname{End}_F(V)\cong M_2(F).
 $$
 
-<1>1. A matrix $A\in M_2(F)$ fixes a nonzero vector if and only if
+::: pf
+
+::: {.pf-step #s1}
+
+A matrix $A\in M_2(F)$ fixes a nonzero vector if and only if
 $A-I$ is singular.
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A$ fixes a nonzero vector $v$ exactly when
 $$
 Av=v,
@@ -45,46 +50,64 @@ $$
 $$
 for some $v\ne0$. This happens exactly when $A-I$ has nontrivial
 kernel, hence exactly when it is singular.
+
 :::
 
-<1>2. The number sought equals
+:::
+
+::: {.pf-step #s2}
+
+The number sought equals
 $$
 q^4-\abs{GL_2(F)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The translation
 $$
 M_2(F)\longrightarrow M_2(F),
 \qquad
 A\longmapsto A-I
 $$
-is a bijection. By step <1>1, the desired matrices correspond exactly
+is a bijection. By step [](#s1){.pf-ref}, the desired matrices correspond exactly
 to the singular matrices. There are $q^4$ total $2\times2$ matrices,
 and the nonsingular ones form $GL_2(F)$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \abs{GL_2(F)}
 =
 (q^2-1)(q^2-q).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first column of an invertible matrix may be any nonzero vector in
 $F^2$, giving $q^2-1$ choices. Once the first column is chosen, the
 second may be any vector outside its one-dimensional span, giving
 $q^2-q$ choices.
+
 :::
 
-<1>4. The required number of endomorphisms is
+:::
+
+::: {.pf-step #s4}
+
+The required number of endomorphisms is
 $$
 \boxed{q^3+q^2-q}.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3,
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \begin{aligned}
 q^4-(q^2-1)(q^2-q)
@@ -94,11 +117,17 @@ q^4-(q^4-q^3-q^2+q)\\
 q^3+q^2-q.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested count.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested count.
+
+:::
+
+:::
+
 :::

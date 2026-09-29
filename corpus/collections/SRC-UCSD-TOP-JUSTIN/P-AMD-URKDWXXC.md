@@ -19,15 +19,27 @@ Compute $\tor(\QQ, A)$
 :::
 
 ::: {.solution}
-<1>1. For every abelian group $A$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every abelian group $A$,
 $$
 \boxed{\operatorname{Tor}_1^{\mathbb Z}(\mathbb Q,A)=0.}
 $$
-::: {.proof}
+
+::: pf-proof
+
 The $\mathbb Z$-module $\mathbb Q$ is a localization of $\mathbb Z$, hence is flat. Tor in positive degree with a flat module vanishes.
+
 :::
 
-<1>2. Apply $-\otimes_{\mathbb Z}A$ to
+:::
+
+::: {.pf-step #s2}
+
+Apply $-\otimes_{\mathbb Z}A$ to
 $$
 0\longrightarrow\mathbb Z\longrightarrow\mathbb Q\longrightarrow\mathbb Q/\mathbb Z\longrightarrow0.
 $$
@@ -38,20 +50,42 @@ $$
 \longrightarrow A
 \longrightarrow \mathbb Q\otimes A.
 $$
-::: {.proof}
-The term $\operatorname{Tor}_1(\mathbb Q,A)$ on the left is zero by <1>1, and $\mathbb Z\otimes A\cong A$.
+
+::: pf-proof
+
+The term $\operatorname{Tor}_1(\mathbb Q,A)$ on the left is zero by step [](#s1){.pf-ref}, and $\mathbb Z\otimes A\cong A$.
+
 :::
 
-<1>3. The kernel of the localization map $A\to\mathbb Q\otimes A$ is exactly the torsion subgroup $A_{\mathrm{tors}}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The kernel of the localization map $A\to\mathbb Q\otimes A$ is exactly the torsion subgroup $A_{\mathrm{tors}}$.
+
+::: pf-proof
+
 Under $\mathbb Q\otimes A\cong S^{-1}A$ with $S=\mathbb Z\setminus\{0\}$, an element $a\in A$ maps to zero iff some nonzero integer $s$ annihilates $a$, which is precisely the definition of torsion.
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{\operatorname{Tor}_1^{\mathbb Z}(\mathbb Q/\mathbb Z,A)\cong A_{\mathrm{tors}}.}
 $$
-::: {.proof}
-Combine <1>2 and <1>3.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

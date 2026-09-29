@@ -46,15 +46,26 @@ three conditions:
 2. $K$ is bounded in the given norm;
 3. $K'$ is equicontinuous on $[0,1]$.
 
-<1>1. If $K$ is compact in $M$, then $K$ is closed and bounded in $M$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $K$ is compact in $M$, then $K$ is closed and bounded in $M$.
+
+::: pf-proof
+
 Every compact subset of a metric space is closed and bounded.
+
 :::
 
-<1>2. If $K$ is compact in $M$, then $K'$ is equicontinuous.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $K$ is compact in $M$, then $K'$ is equicontinuous.
+
+::: pf-proof
+
 The derivative map
 $$
 D:M\longrightarrow C[0,1],
@@ -70,13 +81,19 @@ $$
 Therefore $K'=D(K)$ is compact in $C[0,1]$. By the Arzelà--Ascoli theorem,
 every compact family of continuous functions on $[0,1]$ is
 equicontinuous.
+
 :::
 
-<1>3. Conversely, suppose $K$ is closed and bounded in $M$ and $K'$ is
+:::
+
+::: {.pf-step #s3}
+
+Conversely, suppose $K$ is closed and bounded in $M$ and $K'$ is
 equicontinuous. Then every sequence $(f_n)$ in $K$ has a subsequence for
 which $(f_n')$ converges uniformly on $[0,1]$.
 
-::: {.proof}
+::: pf-proof
+
 Boundedness of $K$ in $M$ gives a constant $C$ such that
 $$
 \norm{f_n'}_\infty\leq C
@@ -84,9 +101,14 @@ $$
 for every $n$. Thus the derivative family is uniformly bounded, and it is
 equicontinuous by hypothesis. The Arzelà--Ascoli theorem gives a uniformly
 convergent subsequence of $(f_n')$.
+
 :::
 
-<1>4. After passing to a further subsequence, there are
+:::
+
+::: {.pf-step #s4}
+
+After passing to a further subsequence, there are
 $a\in\RR$ and $g\in C[0,1]$ such that
 $$
 f_n(0)\longrightarrow a
@@ -97,8 +119,9 @@ f_n'\longrightarrow g
 $$
 uniformly.
 
-::: {.proof}
-Use the subsequence from step <1>3. Boundedness of $K$ also gives
+::: pf-proof
+
+Use the subsequence from step [](#s3){.pf-ref}. Boundedness of $K$ also gives
 $$
 \abs{f_n(0)}
 \leq
@@ -109,9 +132,14 @@ $$
 $$
 Hence the real sequence $(f_n(0))$ has a convergent subsequence. Passing
 to it preserves the uniform convergence of the derivatives.
+
 :::
 
-<1>5. Define
+:::
+
+::: {.pf-step #s5}
+
+Define
 $$
 f(x)
 \coloneqq
@@ -123,7 +151,8 @@ f_n\longrightarrow f
 $$
 in the norm of $M$.
 
-::: {.proof}
+::: pf-proof
+
 The function $f$ is continuously differentiable and
 $$
 f'=g.
@@ -150,7 +179,7 @@ Taking the supremum over $x$ shows
 $$
 \norm{f_n-f}_\infty\longrightarrow0.
 $$
-Step <1>4 also gives
+Step [](#s4){.pf-ref} also gives
 $$
 \norm{f_n'-f'}_\infty
 =
@@ -165,28 +194,46 @@ $$
 +\norm{f_n'-f'}_\infty
 \longrightarrow0.
 $$
+
 :::
 
-<1>6. The limit $f$ from step <1>5 belongs to $K$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The limit $f$ from step [](#s5){.pf-ref} belongs to $K$.
+
+::: pf-proof
+
 The subsequence consists of points of $K$ and converges to $f$ in $M$.
 Since $K$ is closed in $M$, one has $f\in K$.
+
 :::
 
-<1>7. Under the three stated conditions, $K$ is compact.
+:::
 
-::: {.proof}
-Steps <1>3--<1>6 show that every sequence in $K$ has a subsequence
+::: {.pf-step #s7}
+
+Under the three stated conditions, $K$ is compact.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} show that every sequence in $K$ has a subsequence
 converging in $M$ to a point of $K$. Thus $K$ is sequentially compact.
 Because $M$ is a metric space, sequential compactness is equivalent to
 compactness.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove that compactness implies the three conditions, and
-step <1>7 proves the converse.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove that compactness implies the three conditions, and
+step [](#s7){.pf-ref} proves the converse.
+
+:::
+
+:::
+
 :::

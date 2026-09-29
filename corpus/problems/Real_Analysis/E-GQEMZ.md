@@ -26,33 +26,62 @@ audit:
 ::: {.solution}
 Let $f \in L^1(\RR^n)$, let $g$ be differentiable with $\dd{g}{x_i}$ bounded, and let $e_i$ be the $i$th standard basis vector.
 
-<1>1. For $h \neq 0$, $\frac{(f\ast g)(x + h e_i) - (f\ast g)(x)}{h} = \int f(x-y)\, \frac{g(y + h e_i) - g(y)}{h}\,dy$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For $h \neq 0$, $\frac{(f\ast g)(x + h e_i) - (f\ast g)(x)}{h} = \int f(x-y)\, \frac{g(y + h e_i) - g(y)}{h}\,dy$.
+
+::: pf-proof
+
 $(f\ast g)(x+he_i) = \int f(x+he_i-y)g(y)\,dy$; the change of variables $y \mapsto y + h e_i$ turns this into $\int f(x-y)g(y+he_i)\,dy$. Subtract $(f\ast g)(x) = \int f(x-y)g(y)\,dy$ and divide by $h$.
+
 :::
 
-<1>2. As $h \to 0$, the integrands in step <1>1 converge pointwise to $f(x-y)\,\dd{g}{y_i}(y)$ and are bounded by $|f(x-y)| \sup_z |\dd{g}{z_i}(z)|$, which is integrable in $y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+As $h \to 0$, the integrands in step [](#s1){.pf-ref} converge pointwise to $f(x-y)\,\dd{g}{y_i}(y)$ and are bounded by $|f(x-y)| \sup_z |\dd{g}{z_i}(z)|$, which is integrable in $y$.
+
+::: pf-proof
+
 Pointwise convergence is differentiability of $g$ in the direction $e_i$. The bound on the difference quotient is the mean value theorem applied to $t \mapsto g(y + te_i)$. The dominating function is integrable because $f \in L^1$.
+
 :::
 
-<1>3. $\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$.
-
-::: {.proof}
-By step <1>2 the dominated convergence theorem lets $h \to 0$ pass under the integral in step <1>1.
 :::
 
-<1>4. If $g$ is smooth and compactly supported, then $f \ast g$ is smooth.
+::: {.pf-step #s3}
 
-::: {.proof}
-Every partial derivative $D^\alpha g$ of a smooth compactly supported $g$ is bounded, so step <1>3 applied repeatedly gives $D^\alpha(f\ast g) = f \ast D^\alpha g$ for every multi-index $\alpha$. Each $f \ast D^\alpha g$ is the convolution of an $L^1$ function with a bounded function, hence continuous, so $f \ast g$ has continuous partial derivatives of all orders.
+$\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} the dominated convergence theorem lets $h \to 0$ pass under the integral in step [](#s1){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the differentiation formula, and step <1>4 is smoothness of $f\ast g$ for smooth compactly supported $g$.
 :::
+
+::: {.pf-step #s4}
+
+If $g$ is smooth and compactly supported, then $f \ast g$ is smooth.
+
+::: pf-proof
+
+Every partial derivative $D^\alpha g$ of a smooth compactly supported $g$ is bounded, so step [](#s3){.pf-ref} applied repeatedly gives $D^\alpha(f\ast g) = f \ast D^\alpha g$ for every multi-index $\alpha$. Each $f \ast D^\alpha g$ is the convolution of an $L^1$ function with a bounded function, hence continuous, so $f \ast g$ has continuous partial derivatives of all orders.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the differentiation formula, and step [](#s4){.pf-ref} is smoothness of $f\ast g$ for smooth compactly supported $g$.
+
+:::
+
+:::
+
 :::

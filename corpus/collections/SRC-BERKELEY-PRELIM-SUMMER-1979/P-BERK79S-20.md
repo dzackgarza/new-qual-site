@@ -41,12 +41,18 @@ attains a maximum value on $\mathbb R$.
 :::
 
 ::: {.solution}
-<1>1. The characteristic roots of the differential equation are
+
+::: pf
+
+::: {.pf-step #s1}
+
+The characteristic roots of the differential equation are
 $$
 -1\pm\frac{i}{\sqrt5}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The characteristic polynomial is
 $$
 5r^2+10r+6.
@@ -61,9 +67,14 @@ r
 -1\pm\frac{i}{\sqrt5}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. Every real solution has the form
+:::
+
+::: {.pf-step #s2}
+
+Every real solution has the form
 $$
 x(t)
 =
@@ -76,8 +87,9 @@ B\sin\frac{t}{\sqrt5}
 $$
 for some $A,B\in\RR$.
 
-::: {.proof}
-Step <1>1 gives a conjugate pair of characteristic roots
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives a conjugate pair of characteristic roots
 $$
 -1\pm i/\sqrt5.
 $$
@@ -87,9 +99,14 @@ e^{-t}\cos\frac{t}{\sqrt5},
 \qquad
 e^{-t}\sin\frac{t}{\sqrt5}.
 $$
+
 :::
 
-<1>3. For every real number $u$,
+:::
+
+::: {.pf-step #s3}
+
+For every real number $u$,
 $$
 \frac{u^2}{1+u^4}\leq\frac12,
 $$
@@ -98,7 +115,8 @@ $$
 \abs{u}=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The inequality
 $$
 (u^2-1)^2\geq0
@@ -116,19 +134,30 @@ $$
 u^2=1,
 $$
 equivalently $\abs{u}=1$.
+
 :::
 
-<1>4. If $x$ is the zero solution, then $f$ attains its maximum.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+If $x$ is the zero solution, then $f$ attains its maximum.
+
+::: pf-proof
+
 If $x\equiv0$, then
 $$
 f(t)=0
 $$
 for every $t$. Thus the maximum value is $0$, attained everywhere.
+
 :::
 
-<1>5. Suppose $x$ is not the zero solution. Then there are
+:::
+
+::: {.pf-step #s5}
+
+Suppose $x$ is not the zero solution. Then there are
 $$
 R>0
 \qquad\text{and}\qquad
@@ -144,8 +173,9 @@ Re^{-t}
 \right).
 $$
 
-::: {.proof}
-In step <1>2, the pair $(A,B)$ is not $(0,0)$. Set
+::: pf-proof
+
+In step [](#s2){.pf-ref}, the pair $(A,B)$ is not $(0,0)$. Set
 $$
 R=\sqrt{A^2+B^2}>0.
 $$
@@ -156,9 +186,14 @@ A=R\cos\phi,
 B=R\sin\phi.
 $$
 The angle-addition identity gives the displayed form.
+
 :::
 
-<1>6. There is a sequence $(t_k)$ with
+:::
+
+::: {.pf-step #s6}
+
+There is a sequence $(t_k)$ with
 $$
 t_k\longrightarrow-\infty
 $$
@@ -167,7 +202,8 @@ $$
 x(t_k)=Re^{-t_k}\longrightarrow\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose
 $$
 t_k
@@ -180,19 +216,25 @@ Then
 $$
 \frac{t_k}{\sqrt5}-\phi=-2\pi k,
 $$
-so the cosine in step <1>5 equals $1$. Hence
+so the cosine in step [](#s5){.pf-ref} equals $1$. Hence
 $$
 x(t_k)=Re^{-t_k}.
 $$
 Since $t_k\to-\infty$, one has $e^{-t_k}\to\infty$.
+
 :::
 
-<1>7. For every $k$, there is a point $s_k>t_k$ such that
+:::
+
+::: {.pf-step #s7}
+
+For every $k$, there is a point $s_k>t_k$ such that
 $$
 x(s_k)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 s_k
@@ -205,20 +247,26 @@ $$
 =
 -2\pi k+\frac\pi2,
 $$
-whose cosine is $0$. Step <1>5 therefore gives $x(s_k)=0$.
+whose cosine is $0$. Step [](#s5){.pf-ref} therefore gives $x(s_k)=0$.
+
 :::
 
-<1>8. There is a point $c\in\RR$ such that
+:::
+
+::: {.pf-step #s8}
+
+There is a point $c\in\RR$ such that
 $$
 x(c)=1.
 $$
 
-::: {.proof}
-By step <1>6, choose $k$ so large that
+::: pf-proof
+
+By step [](#s6){.pf-ref}, choose $k$ so large that
 $$
 x(t_k)>1.
 $$
-Step <1>7 gives
+Step [](#s7){.pf-ref} gives
 $$
 x(s_k)=0.
 $$
@@ -227,17 +275,23 @@ $[t_k,s_k]$ gives a point $c$ with
 $$
 x(c)=1.
 $$
+
 :::
 
-<1>9. If $x$ is nonzero, then
+:::
+
+::: {.pf-step #s9}
+
+If $x$ is nonzero, then
 $$
 \boxed{
 \max_{t\in\RR}f(t)=\frac12.
 }
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 f(t)
 =
@@ -245,23 +299,35 @@ f(t)
 \leq
 \frac12
 $$
-for every $t$. Step <1>8 gives a point $c$ with $x(c)=1$, and therefore
+for every $t$. Step [](#s8){.pf-ref} gives a point $c$ with $x(c)=1$, and therefore
 $$
 f(c)=\frac12.
 $$
 Thus the upper bound is attained.
+
 :::
 
-<1>10. In every case, $f$ attains a maximum value on $\RR$.
-
-::: {.proof}
-The zero solution is handled by step <1>4. Every nonzero solution is
-handled by step <1>9.
 :::
 
-<1>11. Q.E.D.
+::: {.pf-step #s10}
 
-::: {.proof}
-Step <1>10 is the required conclusion.
+In every case, $f$ attains a maximum value on $\RR$.
+
+::: pf-proof
+
+The zero solution is handled by step [](#s4){.pf-ref}. Every nonzero solution is
+handled by step [](#s9){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s10){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

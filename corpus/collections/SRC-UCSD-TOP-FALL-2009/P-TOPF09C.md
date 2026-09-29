@@ -20,7 +20,12 @@ Calculate the integral homology $H^*(Y \times \mathbb{RP}^2; \mathbb{Z})$.
 :::
 
 ::: {.solution}
-<1>1. The cellular chain complex of $Y$ in positive dimensions is
+
+::: pf
+
+::: pf-step
+
+The cellular chain complex of $Y$ in positive dimensions is
 $$
 0\longrightarrow \mathbb Z\xrightarrow{6}\mathbb Z\longrightarrow0
 $$
@@ -33,20 +38,34 @@ H_i(Y;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-::: {.proof}
+
+::: pf-proof
+
 The attaching map of the $4$-cell has degree $6$, so the cellular boundary $C_4\to C_3$ is multiplication by $6$.
+
 :::
 
-<1>2. The integral homology of $\mathbb{RP}^2$ is
+:::
+
+::: pf-step
+
+The integral homology of $\mathbb{RP}^2$ is
 $$
 H_0\cong\mathbb Z,\qquad H_1\cong\mathbb Z/2,
 $$
 with all higher groups zero.
-::: {.proof}
+
+::: pf-proof
+
 This is the standard cellular calculation for $\mathbb{RP}^2$.
+
 :::
 
-<1>3. The Künneth theorem gives
+:::
+
+::: {.pf-step #s3}
+
+The Künneth theorem gives
 $$
 \boxed{
 H_i(Y\times\mathbb{RP}^2;\mathbb Z)\cong
@@ -57,15 +76,22 @@ H_i(Y\times\mathbb{RP}^2;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}}
 $$
-::: {.proof}
+
+::: pf-proof
+
 The tensor contribution $H_3(Y)\otimes H_1(\mathbb{RP}^2)$ is $\mathbb Z/2$ in degree $4$, while
 $$
 \operatorname{Tor}(\mathbb Z/6,\mathbb Z/2)\cong\mathbb Z/2
 $$
 contributes in degree $5$. The remaining nonzero tensor terms are $H_0(Y)\otimes H_0(\mathbb{RP}^2)\cong\mathbb Z$ in degree $0$, $H_0(Y)\otimes H_1(\mathbb{RP}^2)\cong\mathbb Z/2$ in degree $1$, and $H_3(Y)\otimes H_0(\mathbb{RP}^2)\cong\mathbb Z/6$ in degree $3$.
+
 :::
 
-<1>4. If the notation $H^*$ in the question was intended literally, the integral cohomology groups are
+:::
+
+::: pf-step
+
+If the notation $H^*$ in the question was intended literally, the integral cohomology groups are
 $$
 H^i(Y\times\mathbb{RP}^2;\mathbb Z)\cong
 \begin{cases}
@@ -75,7 +101,15 @@ H^i(Y\times\mathbb{RP}^2;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-::: {.proof}
-Apply the universal coefficient theorem for cohomology to the homology groups in <1>3. Since all positive-degree homology is finite, Hom into $\mathbb Z$ vanishes there and the torsion reappears one degree higher through Ext.
+
+::: pf-proof
+
+Apply the universal coefficient theorem for cohomology to the homology groups in step [](#s3){.pf-ref}. Since all positive-degree homology is finite, Hom into $\mathbb Z$ vanishes there and the torsion reappears one degree higher through Ext.
+
 :::
+
+:::
+
+:::
+
 :::

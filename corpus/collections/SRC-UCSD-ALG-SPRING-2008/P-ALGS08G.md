@@ -30,9 +30,16 @@ Show that if $A$ has a minimal right ideal, then $A$ satisfies the minimum condi
 :::
 
 ::: {.solution}
-<1>1. Let $I$ be a minimal nonzero right ideal of $A$, and let $S$ be the sum of all right ideals of $A$ that are isomorphic to $I$ as right $A$-modules.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $I$ be a minimal nonzero right ideal of $A$, and let $S$ be the sum of all right ideals of $A$ that are isomorphic to $I$ as right $A$-modules.
 Then $S$ is a nonzero two-sided ideal of $A$.
-::: {.proof}
+
+::: pf-proof
+
 By construction, $S$ is a right ideal and $I\subseteq S$, so $S\ne0$.
 
 Let $J\subseteq A$ be a right ideal isomorphic to $I$, and let $a\in A$.
@@ -47,21 +54,35 @@ Thus $aJ=0$, or else $aJ$ is a simple right ideal isomorphic to $J$, hence to $I
 In either case $aJ\subseteq S$.
 Because $S$ is the sum of all such $J$, this shows $aS\subseteq S$ for every $a\in A$.
 Hence $S$ is also a left ideal, so it is two-sided.
+
 :::
 
-<1>2. The right $A$-module $A_A$ is a sum of simple submodules.
-::: {.proof}
-The ring $A$ is simple and $S$ from <1>1 is a nonzero two-sided ideal.
+:::
+
+::: {.pf-step #s2}
+
+The right $A$-module $A_A$ is a sum of simple submodules.
+
+::: pf-proof
+
+The ring $A$ is simple and $S$ from step [](#s1){.pf-ref} is a nonzero two-sided ideal.
 Therefore
 \[
 S=A.
 \]
 Every summand used to define $S$ is a minimal right ideal, hence a simple right $A$-module.
 Thus $A_A$ is a sum of simple submodules.
+
 :::
 
-<1>3. A module that is a sum of simple submodules is a direct sum of simple submodules.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+A module that is a sum of simple submodules is a direct sum of simple submodules.
+
+::: pf-proof
+
 Let $M$ be a sum of simple submodules.
 Choose, by Zorn's lemma, a maximal family $\{M_\lambda\}_{\lambda\in\Lambda}$ of simple submodules whose sum is direct, and put
 \[
@@ -77,11 +98,18 @@ N\oplus T
 \]
 is a strictly larger direct sum of simple submodules, contradicting maximality.
 Thus $N=M$.
+
 :::
 
-<1>4. The module $A_A$ is a finite direct sum of simple right ideals.
-::: {.proof}
-By <1>2 and <1>3, write
+:::
+
+::: {.pf-step #s4}
+
+The module $A_A$ is a finite direct sum of simple right ideals.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, write
 \[
 A=\bigoplus_{\lambda\in\Lambda} I_\lambda,
 \]
@@ -99,13 +127,26 @@ Hence
 A=\bigoplus_{\lambda\in F}I_\lambda,
 \]
 a finite direct sum of simple right $A$-modules.
+
 :::
 
-<1>5. Therefore $A$ satisfies the minimum condition for right ideals.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore $A$ satisfies the minimum condition for right ideals.
+
+::: pf-proof
+
 A simple module is Artinian: its only submodules are $0$ and itself.
-A finite direct sum of Artinian modules is Artinian, so <1>4 implies that the right module $A_A$ is Artinian.
+A finite direct sum of Artinian modules is Artinian, so step [](#s4){.pf-ref} implies that the right module $A_A$ is Artinian.
 The submodules of $A_A$ are exactly the right ideals of $A$.
 Therefore every descending chain of right ideals stabilizes; equivalently, $A$ satisfies the minimum condition for right ideals.
+
 :::
+
+:::
+
+:::
+
 :::

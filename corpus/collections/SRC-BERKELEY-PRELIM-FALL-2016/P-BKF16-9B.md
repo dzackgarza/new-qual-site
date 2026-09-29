@@ -37,12 +37,17 @@ You may assume the Sylow theorems: if a prime power $p^n$ is the largest power o
 ::: {.solution}
 Let $n_3$ denote the number of Sylow $3$-subgroups of $G$.
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 n_3\in\{1,4\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the Sylow theorems,
 $$
 n_3\equiv1\pmod3
@@ -52,9 +57,14 @@ $$
 n_3\mid4.
 $$
 The only divisors of $4$ congruent to $1$ modulo $3$ are $1$ and $4$.
+
 :::
 
-<1>2. Suppose first that $n_3=1$. If $P$ is the Sylow $3$-subgroup and
+:::
+
+::: {.pf-step #s2}
+
+Suppose first that $n_3=1$. If $P$ is the Sylow $3$-subgroup and
 $H$ is any Sylow $2$-subgroup, then
 $$
 P\cong C_3,
@@ -64,7 +74,8 @@ P\cong C_3,
 G\cong P\rtimes H.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The unique Sylow $3$-subgroup $P$ is normal. Since $|P|=3$ and
 $|H|=4$,
 $$
@@ -79,12 +90,18 @@ $$
 12.
 $$
 Thus $PH=G$, giving the semidirect-product decomposition.
+
 :::
 
-<1>3. In the case $n_3=1$, there are exactly four semidirect products
+:::
+
+::: {.pf-step #s3}
+
+In the case $n_3=1$, there are exactly four semidirect products
 up to isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 Every group of order $4$ is isomorphic to either
 $$
 C_4
@@ -93,7 +110,7 @@ or
 $$
 V_4\cong C_2\times C_2.
 $$
-The action in step <1>2 is a homomorphism
+The action in step [](#s2){.pf-ref} is a homomorphism
 $$
 H\to\Aut(C_3)\cong C_2.
 $$
@@ -109,9 +126,14 @@ semidirect products.
 
 Thus each of the two possibilities for $H$ gives one trivial and one
 nontrivial action, for a total of four isomorphism types.
+
 :::
 
-<1>4. The four groups from step <1>3 are
+:::
+
+::: {.pf-step #s4}
+
+The four groups from step [](#s3){.pf-ref} are
 $$
 C_{12},
 \qquad
@@ -124,7 +146,8 @@ $$
 where in $C_3\rtimes C_4$ a generator of $C_4$ acts on $C_3$ by
 inversion.
 
-::: {.proof}
+::: pf-proof
+
 The trivial $C_4$-action gives
 $$
 C_3\times C_4\cong C_{12}.
@@ -161,12 +184,18 @@ C_3\rtimes V_4
 \cong
 S_3\times C_2.
 $$
+
 :::
 
-<1>5. Suppose now that $n_3=4$. Then $G$ has a unique Sylow
+:::
+
+::: {.pf-step #s5}
+
+Suppose now that $n_3=4$. Then $G$ has a unique Sylow
 $2$-subgroup $H$, so $H$ is normal.
 
-::: {.proof}
+::: pf-proof
+
 Distinct subgroups of order $3$ intersect only in the identity. Hence
 the four Sylow $3$-subgroups contribute
 $$
@@ -180,16 +209,22 @@ consisting of the identity and the three elements not among those eight
 order-$3$ elements. Since that set has exactly four elements, every
 Sylow $2$-subgroup must equal it. Therefore the Sylow $2$-subgroup is
 unique and normal.
+
 :::
 
-<1>6. In the case $n_3=4$, one has
+:::
+
+::: {.pf-step #s6}
+
+In the case $n_3=4$, one has
 $$
 H\cong V_4.
 $$
 
-::: {.proof}
-Let $P$ be any Sylow $3$-subgroup. By step <1>5, $H$ is normal, so as
-in step <1>2,
+::: pf-proof
+
+Let $P$ be any Sylow $3$-subgroup. By step [](#s5){.pf-ref}, $H$ is normal, so as
+in step [](#s2){.pf-ref},
 $$
 G\cong H\rtimes P.
 $$
@@ -208,15 +243,21 @@ C_4\times C_3\cong C_{12}.
 $$
 That group has a unique Sylow $3$-subgroup, contradicting $n_3=4$.
 Hence $H\cong V_4$.
+
 :::
 
-<1>7. The case $n_3=4$ yields exactly one isomorphism type, namely
+:::
+
+::: {.pf-step #s7}
+
+The case $n_3=4$ yields exactly one isomorphism type, namely
 $$
 G\cong A_4.
 $$
 
-::: {.proof}
-By step <1>6,
+::: pf-proof
+
+By step [](#s6){.pf-ref},
 $$
 G\cong V_4\rtimes C_3.
 $$
@@ -237,17 +278,23 @@ $$
 and a $3$-cycle acts by conjugation as a $3$-cycle on the three
 nonidentity elements of that subgroup. Thus the unique group in this
 case is $A_4$.
+
 :::
 
-<1>8. The five groups obtained in steps <1>4 and <1>7 are pairwise
+:::
+
+::: {.pf-step #s8}
+
+The five groups obtained in steps [](#s4){.pf-ref} and [](#s7){.pf-ref} are pairwise
 nonisomorphic.
 
-::: {.proof}
+::: pf-proof
+
 The group $A_4$ is separated from the other four by having four Sylow
-$3$-subgroups; the groups in step <1>4 have a unique Sylow
+$3$-subgroups; the groups in step [](#s4){.pf-ref} have a unique Sylow
 $3$-subgroup.
 
-Among the four groups in step <1>4, the two groups from trivial actions
+Among the four groups in step [](#s4){.pf-ref}, the two groups from trivial actions
 are abelian and the two groups from nontrivial actions are nonabelian.
 The abelian groups are distinct because $C_{12}$ is cyclic, while
 $C_6\times C_2$ has no element of order $12$.
@@ -263,22 +310,34 @@ S_3\times C_2
 $$
 has no element of order $4$, since element orders in $S_3$ are
 $1$, $2$, or $3$. Thus these two groups are not isomorphic.
+
 :::
 
-<1>9. The number of groups of order $12$ up to isomorphism is
+:::
+
+::: {.pf-step #s9}
+
+The number of groups of order $12$ up to isomorphism is
 $$
 \boxed{5}.
 $$
 
-::: {.proof}
-Steps <1>2--<1>4 give four isomorphism types when $n_3=1$. Steps
-<1>5--<1>7 give one isomorphism type when $n_3=4$. Step <1>8 shows that
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give four isomorphism types when $n_3=1$. Steps
+[](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} give one isomorphism type when $n_3=4$. Step [](#s8){.pf-ref} shows that
 all five are distinct.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>9 is the requested count.
 :::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref} is the requested count.
+
+:::
+
+:::
+
 :::

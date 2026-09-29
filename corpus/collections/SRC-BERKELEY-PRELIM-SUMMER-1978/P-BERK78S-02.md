@@ -53,9 +53,14 @@ b&a
 \end{pmatrix}.
 $$
 
-<1>1. The set $R$ is closed under addition and additive inverses.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The set $R$ is closed under addition and additive inverses.
+
+::: pf-proof
+
 For $a,b,c,d\in F$,
 $$
 M(a,b)+M(c,d)
@@ -73,12 +78,18 @@ $$
 M(0,0)
 $$
 is the zero matrix.
+
 :::
 
-<1>2. The set $R$ is closed under multiplication, and multiplication in
+:::
+
+::: {.pf-step #s2}
+
+The set $R$ is closed under multiplication, and multiplication in
 $R$ is commutative.
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 \begin{aligned}
@@ -103,35 +114,53 @@ field and hence commutative. Therefore
 $$
 M(a,b)M(c,d)=M(c,d)M(a,b).
 $$
+
 :::
 
-<1>3. The ring $R$ has identity
+:::
+
+::: {.pf-step #s3}
+
+The ring $R$ has identity
 $$
 \boxed{
 M(1,0)=I_2.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The matrix $M(1,0)$ is the ordinary $2\times2$ identity matrix, so it is
 the multiplicative identity for every element of $R$.
+
 :::
 
-<1>4. With the usual matrix operations, $R$ is a commutative ring with
+:::
+
+::: {.pf-step #s4}
+
+With the usual matrix operations, $R$ is a commutative ring with
 identity.
 
-::: {.proof}
-Steps <1>1--<1>3 give closure under the ring operations, additive inverses,
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give closure under the ring operations, additive inverses,
 commutativity of multiplication, and an identity. All remaining ring
 axioms are inherited from the matrix ring $M_2(F)$.
+
 :::
 
-<1>5. For $M(a,b)\in R$,
+:::
+
+::: {.pf-step #s5}
+
+For $M(a,b)\in R$,
 $$
 \det M(a,b)=a^2+b^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the $2\times2$ determinant formula,
 $$
 \det
@@ -144,14 +173,20 @@ a^2-(-b)b
 =
 a^2+b^2.
 $$
+
 :::
 
-<1>6. A nonzero element $M(a,b)$ is invertible in $R$ exactly when
+:::
+
+::: {.pf-step #s6}
+
+A nonzero element $M(a,b)$ is invertible in $R$ exactly when
 $$
 a^2+b^2\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $a^2+b^2\neq0$, then
 $$
 M(a,b)^{-1}
@@ -169,14 +204,20 @@ M\left(
 $$
 which lies in $R$.
 
-If $a^2+b^2=0$, step <1>5 shows that $M(a,b)$ is singular as a matrix, so
+If $a^2+b^2=0$, step [](#s5){.pf-ref} shows that $M(a,b)$ is singular as a matrix, so
 it cannot have an inverse in $R$.
+
 :::
 
-<1>7. The ring $R$ is a field exactly when $-1$ is not a square in $F$.
+:::
 
-::: {.proof}
-By step <1>6, $R$ fails to be a field exactly when there are
+::: {.pf-step #s7}
+
+The ring $R$ is a field exactly when $-1$ is not a square in $F$.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, $R$ fails to be a field exactly when there are
 $(a,b)\neq(0,0)$ such that
 $$
 a^2+b^2=0.
@@ -192,42 +233,66 @@ u^2+1^2=0,
 $$
 so the nonzero matrix $M(u,1)$ is not invertible. Thus the criterion is
 exactly that $-1$ have no square root in $F$.
+
 :::
 
-<1>8. For $F=\QQ$, the ring $R$ is a field.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+For $F=\QQ$, the ring $R$ is a field.
+
+::: pf-proof
+
 No rational number has square $-1$, since the square of a rational number
-is nonnegative when viewed in $\RR$. Step <1>7 applies.
+is nonnegative when viewed in $\RR$. Step [](#s7){.pf-ref} applies.
+
 :::
 
-<1>9. For $F=\CC$, the ring $R$ is not a field.
+:::
 
-::: {.proof}
+::: {.pf-step #s9}
+
+For $F=\CC$, the ring $R$ is not a field.
+
+::: pf-proof
+
 In $\CC$,
 $$
 i^2=-1.
 $$
-Thus step <1>7 shows that $R$ is not a field. Explicitly,
+Thus step [](#s7){.pf-ref} shows that $R$ is not a field. Explicitly,
 $$
 M(i,1)
 $$
 is nonzero and has determinant zero.
+
 :::
 
-<1>10. For $F=\ZZ_5$, the ring $R$ is not a field.
+:::
 
-::: {.proof}
+::: {.pf-step #s10}
+
+For $F=\ZZ_5$, the ring $R$ is not a field.
+
+::: pf-proof
+
 Modulo $5$,
 $$
 2^2=4=-1.
 $$
-Hence $-1$ is a square, and step <1>7 applies.
+Hence $-1$ is a square, and step [](#s7){.pf-ref} applies.
+
 :::
 
-<1>11. For $F=\ZZ_7$, the ring $R$ is a field.
+:::
 
-::: {.proof}
+::: {.pf-step #s11}
+
+For $F=\ZZ_7$, the ring $R$ is a field.
+
+::: pf-proof
+
 The squares modulo $7$ are
 $$
 0,\ 1,\ 2,\ 4.
@@ -236,25 +301,37 @@ Since
 $$
 -1=6
 $$
-is not among them, $-1$ is not a square in $\ZZ_7$. Step <1>7 therefore
+is not among them, $-1$ is not a square in $\ZZ_7$. Step [](#s7){.pf-ref} therefore
 shows that $R$ is a field.
+
 :::
 
-<1>12. Among the four listed fields,
+:::
+
+::: {.pf-step #s12}
+
+Among the four listed fields,
 $$
 \boxed{
 R\text{ is a field exactly for }F=\QQ\text{ and }F=\ZZ_7.
 }
 $$
 
-::: {.proof}
-This collects steps <1>8--<1>11.
+::: pf-proof
+
+This collects steps [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref}.
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the ring assertion, and step <1>12 gives the complete
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the ring assertion, and step [](#s12){.pf-ref} gives the complete
 field classification.
+
 :::
+
+:::
+
 :::

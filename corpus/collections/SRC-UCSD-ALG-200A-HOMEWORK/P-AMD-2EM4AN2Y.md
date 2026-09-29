@@ -54,27 +54,47 @@ H=\langle(12)(34)\rangle
 =\{e,(12)(34)\}.
 \]
 
-<1>1. We have $K\normal G$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+We have $K\normal G$.
+
+::: pf-proof
+
 The subgroup $K$ consists of the identity together with all three double transpositions in $A_4$.
 Conjugation in $S_4$ preserves cycle type, so every conjugate of a double transposition is again a double transposition.
 Hence conjugation by every element of $A_4$ preserves $K$, and therefore
 \[
 K\normal A_4.
 \]
+
 :::
 
-<1>2. We have $H\normal K$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+We have $H\normal K$.
+
+::: pf-proof
+
 The Klein four group $K$ is abelian.
 Every subgroup of an abelian group is normal, so
 \[
 H\normal K.
 \]
+
 :::
 
-<1>3. The subgroup $H$ is not normal in $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The subgroup $H$ is not normal in $G$.
+
+::: pf-proof
+
 Let
 \[
 g=(123)\in A_4.
@@ -94,14 +114,27 @@ Hence
 gHg^{-1}\ne H,
 \]
 so $H\not\normal A_4$.
+
 :::
 
-<1>4. Thus normality is not transitive.
-::: {.proof}
-Steps <1>1 and <1>2 give
+:::
+
+::: pf-step
+
+Thus normality is not transitive.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 \[
 H\normal K\normal G,
 \]
-while <1>3 gives $H\not\normal G$.
+while step [](#s3){.pf-ref} gives $H\not\normal G$.
+
 :::
+
+:::
+
+:::
+
 :::

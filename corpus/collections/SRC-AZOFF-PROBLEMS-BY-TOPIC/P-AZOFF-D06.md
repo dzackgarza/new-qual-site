@@ -61,7 +61,11 @@ g(z)
 \int_{-A}^{A}f(t)e^{-izt}\,dt.
 $$
 
-<1>1. Fix $z_0\in\CC$. For $h\neq0$,
+::: pf
+
+::: {.pf-step #s1}
+
+Fix $z_0\in\CC$. For $h\neq0$,
 $$
 \frac{g(z_0+h)-g(z_0)}h
 =
@@ -71,7 +75,8 @@ f(t)e^{-iz_0t}
 \,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the compact-support reduction above,
 $$
 \begin{aligned}
@@ -89,9 +94,14 @@ f(t)e^{-iz_0t}
 \end{aligned}
 $$
 Divide by the nonzero complex number $h$.
+
 :::
 
-<1>2. As $h\to0$,
+:::
+
+::: {.pf-step #s2}
+
+As $h\to0$,
 $$
 \frac{e^{-iht}-1}{h}
 \longrightarrow
@@ -102,7 +112,8 @@ $$
 t\in[-A,A].
 $$
 
-::: {.proof}
+::: pf-proof
+
 Define the entire function
 $$
 \Phi(w)
@@ -133,24 +144,35 @@ $$
 \longrightarrow0.
 $$
 Multiplying by $\abs t\leq A$ gives the claimed uniform convergence.
+
 :::
 
-<1>3. The integrands in step <1>1 converge uniformly on $[-A,A]$ to
+:::
+
+::: {.pf-step #s3}
+
+The integrands in step [](#s1){.pf-ref} converge uniformly on $[-A,A]$ to
 $$
 -it\,f(t)e^{-iz_0t}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The continuous function
 $$
 t\longmapsto f(t)e^{-iz_0t}
 $$
 is bounded on the compact interval $[-A,A]$. Multiplying the uniform
-convergence from step <1>2 by this bounded factor preserves uniform
+convergence from step [](#s2){.pf-ref} by this bounded factor preserves uniform
 convergence.
+
 :::
 
-<1>4. The complex derivative of $g$ exists at $z_0$ and is
+:::
+
+::: {.pf-step #s4}
+
+The complex derivative of $g$ exists at $z_0$ and is
 $$
 g'(z_0)
 =
@@ -158,9 +180,10 @@ g'(z_0)
 (-it)f(t)e^{-iz_0t}\,dt.
 $$
 
-::: {.proof}
-Uniform convergence of the integrands in step <1>3 allows the limit to pass
-through the Riemann integral in step <1>1. Hence
+::: pf-proof
+
+Uniform convergence of the integrands in step [](#s3){.pf-ref} allows the limit to pass
+through the Riemann integral in step [](#s1){.pf-ref}. Hence
 $$
 \begin{aligned}
 g'(z_0)
@@ -172,18 +195,30 @@ g'(z_0)
 (-it)f(t)e^{-iz_0t}\,dt.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The function $g$ is entire.
+:::
 
-::: {.proof}
-The point $z_0\in\CC$ was arbitrary. Step <1>4 shows that the complex
+::: {.pf-step #s5}
+
+The function $g$ is entire.
+
+::: pf-proof
+
+The point $z_0\in\CC$ was arbitrary. Step [](#s4){.pf-ref} shows that the complex
 derivative exists at every point of $\CC$. Therefore $g$ is entire.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

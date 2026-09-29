@@ -38,7 +38,11 @@ $$
 I_0=[0,1].
 $$
 
-<1>1. Starting from any closed interval
+::: pf
+
+::: {.pf-step #s1}
+
+Starting from any closed interval
 $$
 I_n=[a_n,b_n]
 $$
@@ -59,7 +63,8 @@ E\cap(I_n\sm I_{n+1})
 $$
 is countable.
 
-::: {.proof}
+::: pf-proof
+
 If both displayed sets are uncountable, the first alternative holds.
 
 Otherwise at least one of them is countable. They cannot both be countable,
@@ -80,16 +85,22 @@ closed half of $I_n$ lying on the other side of $m_n$. The discarded portion
 of $E$ is contained in the countable side, while $E\cap I_{n+1}$ must be
 uncountable because $E\cap I_n$ is uncountable and only a countable set has
 been discarded.
+
 :::
 
-<1>2. If the first alternative in step <1>1 never occurs, then there is a
+:::
+
+::: {.pf-step #s2}
+
+If the first alternative in step [](#s1){.pf-ref} never occurs, then there is a
 unique point
 $$
 s\in\bigcap_{n=0}^{\infty}I_n.
 $$
 
-::: {.proof}
-Under that assumption step <1>1 constructs a nested sequence
+::: pf-proof
+
+Under that assumption step [](#s1){.pf-ref} constructs a nested sequence
 $$
 I_0\supseteq I_1\supseteq I_2\supseteq\cdots
 $$
@@ -99,16 +110,22 @@ $$
 $$
 The nested interval theorem therefore gives exactly one point in their
 intersection; call it $s$.
+
 :::
 
-<1>3. The first alternative in step <1>1 must occur at some finite stage.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The first alternative in step [](#s1){.pf-ref} must occur at some finite stage.
+
+::: pf-proof
+
 Suppose it never occurs. For each $n$, put
 $$
 D_n=E\cap(I_n\sm I_{n+1}).
 $$
-Step <1>1 says every $D_n$ is countable. By step <1>2,
+Step [](#s1){.pf-ref} says every $D_n$ is countable. By step [](#s2){.pf-ref},
 $$
 \bigcap_{n=0}^{\infty}I_n=\{s\}.
 $$
@@ -124,9 +141,14 @@ $$
 The right-hand side is a singleton together with a countable union of
 countable sets, and is therefore countable. This contradicts the assumption
 that $E$ is uncountable.
+
 :::
 
-<1>4. There is a real number $t$ such that both
+:::
+
+::: {.pf-step #s4}
+
+There is a real number $t$ such that both
 $$
 E\cap(-\infty,t)
 \qquad\text{and}\qquad
@@ -134,19 +156,26 @@ E\cap(t,\infty)
 $$
 are uncountable.
 
-::: {.proof}
-By step <1>3, the construction stops at some stage $n$ because the first
-alternative in step <1>1 holds. Set
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the construction stops at some stage $n$ because the first
+alternative in step [](#s1){.pf-ref} holds. Set
 $$
 t=\boxed{m_n}.
 $$
 That alternative says exactly that both displayed subsets of $E$ are
 uncountable.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 supplies the required splitting point.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} supplies the required splitting point.
+
+:::
+
+:::
+
 :::

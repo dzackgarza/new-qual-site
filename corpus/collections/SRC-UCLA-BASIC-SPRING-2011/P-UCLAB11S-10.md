@@ -16,6 +16,20 @@ audit:
 ::: {.problem}
 Let $f$ be defined on an open set $G\subset\mathbb R^2$, and let $(x_0,y_0)\in G$.
 
-<1>1. Define what it means for $f$ to be differentiable at $(x_0,y_0)$.
-<1>2. Prove that if $\partial f/\partial x$ and $\partial f/\partial y$ exist and are continuous on an open neighborhood of $(x_0,y_0)$, then $f$ is differentiable at $(x_0,y_0)$.
+::: pf
+
+::: pf-step
+
+Define what it means for $f$ to be differentiable at $(x_0,y_0)$.
+
+:::
+
+::: pf-step
+
+Prove that if $\partial f/\partial x$ and $\partial f/\partial y$ exist and are continuous on an open neighborhood of $(x_0,y_0)$, then $f$ is differentiable at $(x_0,y_0)$.
+
+:::
+
+:::
+
 :::

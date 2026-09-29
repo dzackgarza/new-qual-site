@@ -36,26 +36,46 @@ Define
 \qquad r\in R,\ a\in A[p].
 \]
 
-<1>1. The action is well defined with respect to the residue class of $r$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The action is well defined with respect to the residue class of $r$.
+
+::: pf-proof
+
 If $r-r'\in(p)$, write $r-r'=sp$. Then for $a\in A[p]$,
 \[
 ra-r'a=(r-r')a=spa=s(pa)=0.
 \]
 Hence $ra=r'a$.
+
 :::
 
-<1>2. The action preserves $A[p]$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The action preserves $A[p]$.
+
+::: pf-proof
+
 If $a\in A[p]$, then
 \[
 p(ra)=r(pa)=0
 \]
 by commutativity of $R$. Thus $ra\in A[p]$.
+
 :::
 
-<1>3. The module axioms descend from the $R$-module structure on $A$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The module axioms descend from the $R$-module structure on $A$.
+
+::: pf-proof
+
 For $r,s\in R$ and $a,b\in A[p]$,
 \[
 (r+(p))\cdot(a+b)=ra+rb,
@@ -70,6 +90,11 @@ and
 \[
 (1+(p))\cdot a=a.
 \]
+
+:::
+
+:::
+
 :::
 
 Therefore $A[p]$ is naturally an $R/(p)$-module. If $(p)$ is maximal, then $R/(p)$ is a field and $A[p]$ is consequently a vector space over that field.

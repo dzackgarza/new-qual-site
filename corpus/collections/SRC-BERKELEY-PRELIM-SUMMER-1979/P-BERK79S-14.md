@@ -40,7 +40,12 @@ B\cong C.
 :::
 
 ::: {.solution}
-<1>1. By the fundamental theorem of finite abelian groups, there are
+
+::: pf
+
+::: {.pf-step #s1}
+
+By the fundamental theorem of finite abelian groups, there are
 uniquely determined nonnegative integers
 $$
 a_{p,k},
@@ -70,22 +75,29 @@ C
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The elementary-divisor form of the fundamental theorem states that every
 finite abelian group is a finite direct product of cyclic groups of
 prime-power order, and that the multiplicity of each cyclic factor
 $\ZZ/p^k\ZZ$ is uniquely determined by the isomorphism type of the group.
 Apply this theorem separately to $A$, $B$, and $C$.
+
 :::
 
-<1>2. The elementary-divisor decomposition of $A\times B$ contains
+:::
+
+::: {.pf-step #s2}
+
+The elementary-divisor decomposition of $A\times B$ contains
 $$
 a_{p,k}+b_{p,k}
 $$
 copies of $\ZZ/p^k\ZZ$ for every prime $p$ and every $k\geq1$.
 
-::: {.proof}
-Using the decompositions from step <1>1,
+::: pf-proof
+
+Using the decompositions from step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 A\times B
@@ -106,36 +118,48 @@ A\times B
 $$
 Thus direct product adds the multiplicities of identical elementary
 divisors.
+
 :::
 
-<1>3. The elementary-divisor decomposition of $A\times C$ contains
+:::
+
+::: {.pf-step #s3}
+
+The elementary-divisor decomposition of $A\times C$ contains
 $$
 a_{p,k}+c_{p,k}
 $$
 copies of $\ZZ/p^k\ZZ$ for every prime $p$ and every $k\geq1$.
 
-::: {.proof}
-The same calculation as in step <1>2, with $C$ in place of $B$, gives
+::: pf-proof
+
+The same calculation as in step [](#s2){.pf-ref}, with $C$ in place of $B$, gives
 $$
 A\times C
 \cong
 \prod_p\prod_{k\geq1}
 (\ZZ/p^k\ZZ)^{a_{p,k}+c_{p,k}}.
 $$
+
 :::
 
-<1>4. For every prime $p$ and every $k\geq1$,
+:::
+
+::: {.pf-step #s4}
+
+For every prime $p$ and every $k\geq1$,
 $$
 b_{p,k}=c_{p,k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis gives
 $$
 A\times B\cong A\times C.
 $$
 By uniqueness of the elementary-divisor multiplicities in the fundamental
-theorem, steps <1>2--<1>3 imply
+theorem, steps [](#s2){.pf-ref} and [](#s3){.pf-ref} imply
 $$
 a_{p,k}+b_{p,k}
 =
@@ -145,24 +169,36 @@ for every $p,k$. Cancelling the integer $a_{p,k}$ gives
 $$
 b_{p,k}=c_{p,k}.
 $$
+
 :::
 
-<1>5. The groups $B$ and $C$ are isomorphic:
+:::
+
+::: {.pf-step #s5}
+
+The groups $B$ and $C$ are isomorphic:
 $$
 \boxed{
 B\cong C.
 }
 $$
 
-::: {.proof}
-Step <1>4 says that $B$ and $C$ have exactly the same elementary-divisor
-multiplicities. Their decompositions in step <1>1 are therefore
+::: pf-proof
+
+Step [](#s4){.pf-ref} says that $B$ and $C$ have exactly the same elementary-divisor
+multiplicities. Their decompositions in step [](#s1){.pf-ref} are therefore
 isomorphic term by term.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required cancellation conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required cancellation conclusion.
+
+:::
+
+:::
+
 :::

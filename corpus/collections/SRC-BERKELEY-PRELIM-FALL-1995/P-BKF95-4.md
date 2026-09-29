@@ -44,14 +44,19 @@ $$
 X,Y\in M_n(\RR).
 $$
 
-<1>1. The real matrices $X$ and $Y$ satisfy
+::: pf
+
+::: {.pf-step #s1}
+
+The real matrices $X$ and $Y$ satisfy
 $$
 XA=BX
 \qquad\text{and}\qquad
 YA=BY.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis
 $$
 CAC^{-1}=B
@@ -68,9 +73,14 @@ B(X+iY).
 $$
 Since $A$ and $B$ are real, equality of real and imaginary parts gives the
 two displayed relations.
+
 :::
 
-<1>2. For every real number $t$, the real matrix
+:::
+
+::: {.pf-step #s2}
+
+For every real number $t$, the real matrix
 $$
 D_t\coloneqq X+tY
 $$
@@ -79,8 +89,9 @@ $$
 D_tA=BD_t.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 D_tA
@@ -94,15 +105,21 @@ B(X+tY)\\
 BD_t.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The polynomial
+:::
+
+::: {.pf-step #s3}
+
+The polynomial
 $$
 p(t)\coloneqq\det(X+tY)\in\RR[t]
 $$
 is not identically zero.
 
-::: {.proof}
+::: pf-proof
+
 Evaluate the polynomial at the complex number $i$:
 $$
 p(i)
@@ -113,19 +130,30 @@ p(i)
 $$
 The matrix $C$ is invertible, so $\det C\neq0$. Hence $p$ cannot be the
 zero polynomial.
+
 :::
 
-<1>4. There is a real number $t_0$ such that
+:::
+
+::: {.pf-step #s4}
+
+There is a real number $t_0$ such that
 $$
 \det(X+t_0Y)\neq0.
 $$
 
-::: {.proof}
-By step <1>3, $p$ is a nonzero polynomial. It has only finitely many real
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $p$ is a nonzero polynomial. It has only finitely many real
 roots, so choose any real $t_0$ outside that finite set.
+
 :::
 
-<1>5. The real matrix
+:::
+
+::: {.pf-step #s5}
+
+The real matrix
 $$
 \boxed{D=X+t_0Y}
 $$
@@ -134,8 +162,9 @@ $$
 DAD^{-1}=B.
 $$
 
-::: {.proof}
-Step <1>4 gives $\det D\neq0$, so $D$ is invertible. Step <1>2 gives
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives $\det D\neq0$, so $D$ is invertible. Step [](#s2){.pf-ref} gives
 $$
 DA=BD.
 $$
@@ -143,11 +172,17 @@ Multiplying on the right by $D^{-1}$ yields
 $$
 DAD^{-1}=B.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 constructs the required invertible real matrix.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} constructs the required invertible real matrix.
+
+:::
+
+:::
+
 :::

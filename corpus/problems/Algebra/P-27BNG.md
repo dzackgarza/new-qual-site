@@ -32,7 +32,11 @@ H=\Gal(K/E).
 \]
 Since $G$ is cyclic, every subgroup of $G$ is cyclic and normal.
 
-<1>1. Both intermediate extensions are cyclic Galois.
+::: pf
+
+::: pf-step
+
+Both intermediate extensions are cyclic Galois.
 Because $H\le G$ and $G$ is cyclic, $H$ is cyclic. Hence
 \[
 \Gal(K/E)=H
@@ -49,7 +53,16 @@ By the fundamental theorem of Galois theory, this is equivalent to $E/F$ being G
 \]
 A quotient of a cyclic group is cyclic, so $E/F$ is cyclic Galois as well.
 
-<1>2. There is a unique intermediate field of every divisor degree.
+:::
+
+::: pf-step
+
+There is a unique intermediate field of every divisor degree.
+
+:::
+
+:::
+
 Write
 \[
 G=\langle g\rangle,

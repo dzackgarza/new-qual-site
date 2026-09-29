@@ -32,8 +32,14 @@ f:X\longrightarrow Y
 \]
 be finite.  We verify the three defining properties of a proper morphism.
 
-<1>1. The morphism $f$ is of finite type.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The morphism $f$ is of finite type.
+
+::: pf-proof
+
 Let
 \[
 V=\Spec B\subseteq Y
@@ -51,10 +57,17 @@ A=B[a_1,\ldots,a_n],
 because the right side is a $B$-subalgebra containing the module generators and hence all of $A$.
 
 Thus the affine criterion of Hartshorne II.3.3 shows that $f$ is of finite type.
+
 :::
 
-<1>2. The morphism $f$ is separated.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The morphism $f$ is separated.
+
+::: pf-proof
+
 Separatedness is local on the target, so work over
 \[
 V=\Spec B\subseteq Y,
@@ -84,10 +97,17 @@ This homomorphism is surjective because
 a=\mu(a\otimes1).
 \]
 A surjective ring homomorphism induces a closed immersion of spectra.  Hence the diagonal is a closed immersion affine-locally on $Y$, and therefore globally.  Thus $f$ is separated.
+
 :::
 
-<1>3. Every base change of $f$ is finite.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every base change of $f$ is finite.
+
+::: pf-proof
+
 Let
 \[
 Y'\longrightarrow Y
@@ -113,28 +133,56 @@ If $a_1,\ldots,a_n$ generate $A$ as a $B$-module, then
 a_1\otimes1,\ldots,a_n\otimes1
 \]
 generate $A\otimes_BB'$ as a $B'$-module.  Hence the base-changed morphism is finite.
+
 :::
 
-<1>4. Every base change of $f$ is a closed map.
-::: {.proof}
-By <1>3 every base change is finite.  Hartshorne II.3.5(b) proves that finite morphisms are closed.  Hence every base change of $f$ is closed.
 :::
 
-<1>5. Thus $f$ is universally closed.
-::: {.proof}
-Universal closedness means exactly that every base change of $f$ is a closed map.  This is <1>4.
+::: {.pf-step #s4}
+
+Every base change of $f$ is a closed map.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref} every base change is finite.  Hartshorne II.3.5(b) proves that finite morphisms are closed.  Hence every base change of $f$ is closed.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Thus $f$ is universally closed.
+
+::: pf-proof
+
+Universal closedness means exactly that every base change of $f$ is a closed map.  This is step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 \[
 \boxed{f\text{ is proper}.}
 \]
-::: {.proof}
-By definition, a morphism is proper if it is separated, of finite type, and universally closed.  These three properties are <1>2, <1>1, and <1>5, respectively.
+
+::: pf-proof
+
+By definition, a morphism is proper if it is separated, of finite type, and universally closed.  These three properties are steps [](#s2){.pf-ref}, [](#s1){.pf-ref} and [](#s5){.pf-ref}, respectively.
+
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

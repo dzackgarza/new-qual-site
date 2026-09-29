@@ -46,7 +46,11 @@ $$
 H=\OO_X(1).
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 h^0(X,H)=4
 $$
@@ -55,7 +59,8 @@ $$
 g\ge d-3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $X$ is not contained in a plane, no nonzero linear form on $\PP^3$
 vanishes identically on $X$.  Thus the restriction map
 $$
@@ -77,15 +82,21 @@ Substituting $h^0(X,H)=4$ yields
 $$
 g=d-3+h^0(X,K-H)\ge d-3.
 $$
+
 :::
 
-<1>2. If $d=6$, then
+:::
+
+::: {.pf-step #s2}
+
+If $d=6$, then
 $$
 \boxed{g=3\text{ or }4}.
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 g\ge6-3=3.
 $$
@@ -95,15 +106,21 @@ $$
 g\le\frac{6^2}{4}-6+1=4.
 $$
 Thus $3\le g\le4$.
+
 :::
 
-<1>3. If $d=7$, then Castelnuovo and step <1>1 give
+:::
+
+::: {.pf-step #s3}
+
+If $d=7$, then Castelnuovo and step [](#s1){.pf-ref} give
 $$
 4\le g\le6.
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 g\ge7-3=4.
 $$
@@ -114,11 +131,17 @@ g
 \frac{7^2-1}{4}-7+1
 =6.
 $$
+
 :::
 
-<1>4. When $d=7$, the case $g=4$ is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+When $d=7$, the case $g=4$ is impossible.
+
+::: pf-proof
+
 Suppose $d=7$ and $g=4$.  Then
 $$
 \deg(2H)=14>2g-2=6,
@@ -139,21 +162,33 @@ $$
 h^0(\PP^3,\OO_{\PP^3}(2))=10<11=h^0(X,2H),
 $$
 which is impossible.  Hence $g\ne4$.
+
 :::
 
-<1>5. If $d=7$, then
+:::
+
+::: {.pf-step #s5}
+
+If $d=7$, then
 $$
 \boxed{g=5\text{ or }6}.
 $$
 
-::: {.proof}
-Step <1>3 gives $4\le g\le6$, and step <1>4 excludes $g=4$.
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives $4\le g\le6$, and step [](#s4){.pf-ref} excludes $g=4$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves the degree-$6$ assertion, and step <1>5 proves the
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the degree-$6$ assertion, and step [](#s5){.pf-ref} proves the
 degree-$7$ assertion.
+
 :::
+
+:::
+
 :::

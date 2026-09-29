@@ -46,7 +46,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: pf-step
+
+Let
 $$
 V
 \coloneqq
@@ -71,7 +76,8 @@ $$
 Then $V$ is a real vector space and both $f$ and $g$ are linear
 endomorphisms of $V$.
 
-::: {.proof}
+::: pf-proof
+
 The space $V$ is closed under coordinatewise addition and scalar
 multiplication. If $a_n\to0$, then also
 $$
@@ -83,14 +89,20 @@ a_n-a_{n+1}\to0.
 $$
 Hence both displayed formulas map $V$ into itself. Their coordinate
 formulas are linear.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \boxed{f+g=1_V}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every
 $$
 a=(a_1,a_2,\ldots)\in V,
@@ -100,11 +112,17 @@ $$
 (a_n-a_{n+1})+a_{n+1}=a_n.
 $$
 Thus $(f+g)(a)=a$ for every $a\in V$.
+
 :::
 
-<1>3. The map $g$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The map $g$ is surjective.
+
+::: pf-proof
+
 Given
 $$
 b=(b_1,b_2,\ldots)\in V,
@@ -117,11 +135,17 @@ Since $b_n\to0$, also $a\in V$, and by construction
 $$
 g(a)=b.
 $$
+
 :::
 
-<1>4. The map $g$ is not injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The map $g$ is not injective.
+
+::: pf-proof
+
 The nonzero vector
 $$
 e_1=(1,0,0,\ldots)\in V
@@ -131,11 +155,17 @@ $$
 g(e_1)=0.
 $$
 Hence $\ker g\ne0$.
+
 :::
 
-<1>5. The map $f$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The map $f$ is injective.
+
+::: pf-proof
+
 Suppose
 $$
 f(a_1,a_2,\ldots)=0.
@@ -153,11 +183,17 @@ term is $0$, and
 $$
 \ker f=0.
 $$
+
 :::
 
-<1>6. The map $f$ is not surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The map $f$ is not surjective.
+
+::: pf-proof
+
 The sequence
 $$
 b
@@ -193,13 +229,19 @@ $$
 The harmonic partial sums diverge to $+\infty$, so the right-hand side
 cannot converge to $0$. This contradicts $a\in V$. Thus $b$ is not in
 the image of $f$.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>3--<1>4 show that $g$ is surjective but not injective. Steps
-<1>5--<1>6 show that $f$ is injective but not surjective. Step <1>2
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that $g$ is surjective but not injective. Steps
+[](#s5){.pf-ref} and [](#s6){.pf-ref} show that $f$ is injective but not surjective. Step [](#s2){.pf-ref}
 gives $f+g=1_V$, so the construction satisfies all requirements.
+
 :::
+
+:::
+
 :::

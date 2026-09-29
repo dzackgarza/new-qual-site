@@ -56,12 +56,19 @@ Show that $G$ has a normal Sylow $p$-subgroup.
 :::
 
 ::: {.solution}
-<1>1. Let $P\in\operatorname{Syl}_p(G)$ and suppose $N_G(P)\le H\le G$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $P\in\operatorname{Syl}_p(G)$ and suppose $N_G(P)\le H\le G$.
 Then $P\in\operatorname{Syl}_p(H)$ and
 \[
 N_H(P)=N_G(P).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 P\le N_G(P)\le H,
@@ -78,13 +85,20 @@ The assumption $N_G(P)\le H$ therefore gives
 \[
 N_H(P)=N_G(P).
 \]
+
 :::
 
-<1>2. Under the hypotheses of <1>1,
+:::
+
+::: {.pf-step #s2}
+
+Under the hypotheses of step [](#s1){.pf-ref},
 \[
 [G:H]\equiv1\pmod p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The number of Sylow $p$-subgroups of a finite group is the index of the normalizer of one of them.
 Thus
 \[
@@ -96,7 +110,7 @@ By Sylow's theorem,
 \[
 n_p(G)\equiv n_p(H)\equiv1\pmod p.
 \]
-Using <1>1 and the index formula,
+Using step [](#s1){.pf-ref} and the index formula,
 \[
 [G:N_G(P)]
   =[G:H]\,[H:N_G(P)]
@@ -111,11 +125,18 @@ so
 [G:H]\equiv1\pmod p.
 \]
 This proves part (a).
+
 :::
 
-<1>3. Let $p$ be the largest prime dividing $|G|$ and let $P\in\operatorname{Syl}_p(G)$.
+:::
+
+::: {.pf-step #s3}
+
+Let $p$ be the largest prime dividing $|G|$ and let $P\in\operatorname{Syl}_p(G)$.
 Then $P\trianglelefteq G$.
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that $P$ is not normal.
 Then
 \[
@@ -128,7 +149,7 @@ By hypothesis,
 \]
 for some prime $q$.
 
-Applying <1>2 with $H=M$ gives
+Applying step [](#s2){.pf-ref} with $H=M$ gives
 \[
 q=[G:M]\equiv1\pmod p.
 \]
@@ -145,10 +166,17 @@ a contradiction.
 
 Hence $N_G(P)=G$, which is equivalent to $P\trianglelefteq G$.
 This proves part (b).
+
 :::
 
-<1>4. If $N\trianglelefteq K$ and both $N$ and $K/N$ are solvable, then $K$ is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $N\trianglelefteq K$ and both $N$ and $K/N$ are solvable, then $K$ is solvable.
+
+::: pf-proof
+
 Choose $r,s\ge0$ such that
 \[
 (K/N)^{(r)}=1
@@ -165,10 +193,17 @@ Therefore
 K^{(r+s)}=(K^{(r)})^{(s)}\le N^{(s)}=1.
 \]
 Thus $K$ is solvable.
+
 :::
 
-<1>5. Every finite $p$-group is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Every finite $p$-group is solvable.
+
+::: pf-proof
+
 We induct on the order of a finite $p$-group $P$.
 The trivial group is solvable.
 If $P$ is nontrivial and abelian, it is solvable.
@@ -177,11 +212,18 @@ If $P$ is nonabelian, the class equation gives
 1<Z(P)<P.
 \]
 Both $Z(P)$ and $P/Z(P)$ are smaller $p$-groups, so they are solvable by induction.
-Since $Z(P)\trianglelefteq P$, <1>4 implies that $P$ is solvable.
+Since $Z(P)\trianglelefteq P$, step [](#s4){.pf-ref} implies that $P$ is solvable.
+
 :::
 
-<1>6. The prime-index condition on maximal subgroups passes from $G$ to every quotient $G/N$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The prime-index condition on maximal subgroups passes from $G$ to every quotient $G/N$.
+
+::: pf-proof
+
 Let $N\trianglelefteq G$, and let $\overline M$ be a maximal subgroup of $G/N$.
 Let $M$ be its inverse image in $G$.
 Then
@@ -199,36 +241,50 @@ By hypothesis, $[G:M]$ is prime, and the correspondence theorem gives
 [G/N:\overline M]=[G:M].
 \]
 Thus every maximal subgroup of $G/N$ has prime index.
+
 :::
 
-<1>7. The group $G$ is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+The group $G$ is solvable.
+
+::: pf-proof
+
 We induct on $|G|$.
 The trivial group is solvable.
 
 Assume $G\ne1$, let $p$ be the largest prime dividing $|G|$, and choose $P\in\operatorname{Syl}_p(G)$.
-By <1>3,
+By step [](#s3){.pf-ref},
 \[
 P\trianglelefteq G.
 \]
-By <1>5, the $p$-group $P$ is solvable.
+By step [](#s5){.pf-ref}, the $p$-group $P$ is solvable.
 
-By <1>6, the quotient $G/P$ again has the property that every maximal subgroup has prime index.
+By step [](#s6){.pf-ref}, the quotient $G/P$ again has the property that every maximal subgroup has prime index.
 Since
 \[
 |G/P|<|G|,
 \]
 the induction hypothesis gives that $G/P$ is solvable.
-Applying <1>4 to
+Applying step [](#s4){.pf-ref} to
 \[
 P\trianglelefteq G
 \]
 shows that $G$ is solvable.
 This proves part (c).
+
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-<1>2, <1>3, and <1>7.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s7){.pf-ref}.
+
+:::
+
+:::
+
 :::

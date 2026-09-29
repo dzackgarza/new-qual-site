@@ -26,8 +26,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let $G$ have order $pqr$ with $p<q<r$ prime. Then $G$ is not simple.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $G$ have order $pqr$ with $p<q<r$ prime. Then $G$ is not simple.
+
+::: pf-proof
+
 Suppose for contradiction that $G$ is simple. Let $n_r$ be the number of Sylow $r$-subgroups. The Sylow theorems give
 \[
 n_r\equiv1\pmod r,
@@ -74,19 +81,33 @@ Thus
 pq(r-1)+r(q-1)>pqr-1,
 \]
 more nonidentity elements than $G$ possesses. This contradiction proves that $G$ is not simple.
+
 :::
 
-<1>2. There is a simple group of order $2^2\cdot3\cdot5=60$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is a simple group of order $2^2\cdot3\cdot5=60$.
+
+::: pf-proof
+
 The alternating group $A_5$ has order
 \[
 |A_5|=\frac{5!}{2}=60,
 \]
 and $A_5$ is simple.
+
 :::
 
-<1>3. No group of order $2^2\cdot3\cdot7=84$ is simple.
-::: {.proof}
+:::
+
+::: pf-step
+
+No group of order $2^2\cdot3\cdot7=84$ is simple.
+
+::: pf-proof
+
 Let $G$ have order $84$. If $n_7$ denotes the number of Sylow $7$-subgroups, then
 \[
 n_7\equiv1\pmod7,
@@ -98,10 +119,17 @@ Among the divisors of $12$, only $1$ is congruent to $1$ modulo $7$. Hence
 n_7=1.
 \]
 Thus the Sylow $7$-subgroup is normal, so $G$ is not simple.
+
 :::
 
-<1>4. No group of order $2^2\cdot3\cdot11=132$ is simple.
-::: {.proof}
+:::
+
+::: pf-step
+
+No group of order $2^2\cdot3\cdot11=132$ is simple.
+
+::: pf-proof
+
 Suppose for contradiction that $G$ is simple of order $132$. For the Sylow $11$-subgroups,
 \[
 n_{11}\equiv1\pmod{11},
@@ -138,5 +166,11 @@ Conjugation gives an action of $G$ on the set of its four Sylow $3$-subgroups, h
 \varphi:G\longrightarrow S_4.
 \]
 The action is transitive by Sylow conjugacy and has more than one point, so $\varphi$ is nontrivial. Its kernel is normal in $G$. Since $G$ is assumed simple, a nontrivial homomorphism must have trivial kernel, so $\varphi$ would be injective. Then $|G|$ would divide $|S_4|=24$, contradicting $|G|=132$. Therefore no group of order $132$ is simple.
+
 :::
+
+:::
+
+:::
+
 :::

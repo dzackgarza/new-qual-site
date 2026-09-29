@@ -23,7 +23,11 @@ Show that for $n\ne6$,
 ::: {.solution}
 For $n=1,2$ the statement is immediate, so assume $n\ge3$.
 
-<1>1. Every automorphism sends transpositions to transpositions when $n\ne6$.
+::: pf
+
+::: pf-step
+
+Every automorphism sends transpositions to transpositions when $n\ne6$.
 
 An involution in $S_n$ has cycle type $2^k1^{n-2k}$. Its conjugacy class has size
 \[
@@ -43,7 +47,15 @@ For $k=2$ there is no integer solution. For $k=3$ the unique solution is $n=6$. 
 \]
 and it increases with $n$. Thus, when $n\ne6$, necessarily $k=1$.
 
-<1>2. An automorphism preserving transpositions is inner.
+:::
+
+::: pf-step
+
+An automorphism preserving transpositions is inner.
+
+:::
+
+:::
 
 Let
 \[

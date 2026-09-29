@@ -39,7 +39,11 @@ Use a Segre embedding.
 Use [[D-MODAMPLE|very ampleness]] and the [[D-MORIMM|immersion]] convention in which the source is an open subscheme of a closed subscheme of the target.
 The locally noetherian hypotheses give a corrected formulation of the source exercise; the erratum treats its unrestricted version.
 
-<1>1. For a scheme $B$ and nonnegative integers $r,s$, the Segre closed immersion
+::: pf
+
+::: {.pf-step #s1}
+
+For a scheme $B$ and nonnegative integers $r,s$, the Segre closed immersion
 $$
 \sigma:\PP_B^r\times_B\PP_B^s\longrightarrow\PP_B^{(r+1)(s+1)-1}
 $$
@@ -49,7 +53,8 @@ $$
 $$
 where $q_1,q_2$ are the projections.
 
-::: {.proof}
+::: pf-proof
+
 The products $X_iY_j$ of the homogeneous coordinate sections generate the displayed tensor product of invertible sheaves and define $\sigma$.
 On the target chart with $Z_{ij}\ne0$, its inverse image is $D_+(X_i)\times_B D_+(Y_j)$, and the coordinate map sends
 $$
@@ -59,22 +64,34 @@ The coordinates with $b=j$ and $a=i$ recover all affine coordinates of the two f
 Thus $\sigma$ is a closed immersion.
 The construction by generating sections identifies its pullback of $\OO(1)$ with their invertible sheaf; equivalently, the chart frames are $X_iY_j$, with transition functions $(X_a/X_i)(Y_b/Y_j)$.
 This construction commutes with base change, so the calculation over affine opens proves the assertion over every $B$; see the [Segre embedding](https://stacks.math.columbia.edu/tag/01WD) and [[P-AGH2511CARTPROD]].
+
 :::
 
-<1>2. A [[D-MORIMM|locally closed immersion]] into a locally noetherian scheme is an [[D-MORIMM|immersion]] in the source convention.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A [[D-MORIMM|locally closed immersion]] into a locally noetherian scheme is an [[D-MORIMM|immersion]] in the source convention.
+
+::: pf-proof
+
 Let $h:V\to W$ be closed in an open subscheme $W'\subseteq W$.
 For every affine open $T\subseteq W$, the open subset $T\cap W'$ of the noetherian space $T$ is quasi-compact.
 Its closed subscheme $h^{-1}(T)$ is therefore quasi-compact.
 Thus $h$ is quasi-compact.
 The [factorization for quasi-compact immersions](https://stacks.math.columbia.edu/tag/01QV) writes $h$ as an open immersion followed by a closed immersion.
 Concretely, its closed factor is defined by the quasi-coherent ideal $\ker(\OO_W\to h_*\OO_V)$; its restriction to $W'$ is the ideal defining $V$, so $V$ is open in that closed factor.
+
 :::
 
-<1>3. The assertion of part (a) holds.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The assertion of part (a) holds.
+
+::: pf-proof
+
 Choose $Y$-immersions
 $$
 i:X\longrightarrow\PP_Y^r,\qquad j:X\longrightarrow\PP_Y^s
@@ -88,17 +105,23 @@ $$
 h=\sigma\circ(i,j):X\longrightarrow\PP_Y^{(r+1)(s+1)-1}
 $$
 is a locally closed immersion.
-The target is locally noetherian, so step <1>2 makes $h$ an immersion in the source convention.
-Step <1>1 gives
+The target is locally noetherian, so step [](#s2){.pf-ref} makes $h$ an immersion in the source convention.
+Step [](#s1){.pf-ref} gives
 $$
 h^*\OO(1)\cong i^*\OO(1)\otimes j^*\OO(1)\cong\mcl\otimes\mcm.
 $$
 This realizes the required very ample sheaf.
+
 :::
 
-<1>4. The assertion of part (b) holds.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The assertion of part (b) holds.
+
+::: pf-proof
+
 Choose immersions over the indicated bases
 $$
 i:X\longrightarrow\PP_Y^r,\qquad j:Y\longrightarrow\PP_Z^s
@@ -115,9 +138,9 @@ $$
 h=\sigma\circ k\circ i:X\longrightarrow\PP_Z^{(r+1)(s+1)-1}
 $$
 is a locally closed immersion.
-Its target is locally noetherian, so step <1>2 gives the required open-in-closed factorization.
+Its target is locally noetherian, so step [](#s2){.pf-ref} gives the required open-in-closed factorization.
 The twisting sheaf on relative projective space commutes with base change, giving $a^*\OO_{\PP_Z^r}(1)\cong\OO_{\PP_Y^r}(1)$ [@Har10a, Chapter II, §5].
-Therefore step <1>1 gives
+Therefore step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 h^*\OO(1)
@@ -126,21 +149,33 @@ h^*\OO(1)
 \end{aligned}
 $$
 Thus this sheaf is very ample relative to $Z$.
+
 :::
 
-<1>5. With the closed-in-open immersion convention, the same two assertions hold over arbitrary base schemes.
+:::
 
-::: {.proof}
-The constructions in steps <1>3 and <1>4 already give locally closed immersions and the asserted pullbacks over arbitrary bases.
-Only the conversion in step <1>2 used local noetherianity.
+::: {.pf-step #s5}
+
+With the closed-in-open immersion convention, the same two assertions hold over arbitrary base schemes.
+
+::: pf-proof
+
+The constructions in steps [](#s3){.pf-ref} and [](#s4){.pf-ref} already give locally closed immersions and the asserted pullbacks over arbitrary bases.
+Only the conversion in step [](#s2){.pf-ref} used local noetherianity.
 Omitting that conversion proves the arbitrary-base formulation when very ampleness is witnessed by a closed immersion into an open subscheme of a finite-dimensional relative projective space.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>4 prove the corrected assertions in the source convention, and step <1>5 proves their arbitrary-base closed-in-open formulation.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the corrected assertions in the source convention, and step [](#s5){.pf-ref} proves their arbitrary-base closed-in-open formulation.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Erratum to the unrestricted source convention"}

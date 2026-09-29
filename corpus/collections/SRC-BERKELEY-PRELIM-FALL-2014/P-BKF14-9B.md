@@ -32,7 +32,12 @@ How many roots does the polynomial $x ^ { 1 0 0 0 0 0 } { - 1 }$ have in the fin
 :::
 
 ::: {.solution}
-<1>1. Every root lies in the cyclic group
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every root lies in the cyclic group
 $$
 \FF_{65537}^{\times},
 $$
@@ -41,7 +46,8 @@ $$
 65537-1=65536=2^{16}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $x^{100000}=1$, then $x\ne0$, so every root belongs to the
 multiplicative group of the field. The multiplicative group of a
 finite field is cyclic, and here its order is the number of nonzero
@@ -49,9 +55,14 @@ field elements,
 $$
 65536=2^{16}.
 $$
+
 :::
 
-<1>2. In a cyclic group of order $N$, the equation
+:::
+
+::: {.pf-step #s2}
+
+In a cyclic group of order $N$, the equation
 $$
 x^m=1
 $$
@@ -61,7 +72,8 @@ $$
 $$
 solutions.
 
-::: {.proof}
+::: pf-proof
+
 Let $\gamma$ generate the group. Every element has the form
 $x=\gamma^k$ for a unique residue class $k$ modulo $N$. Then
 $$
@@ -76,14 +88,20 @@ $$
 \frac Nd\mid k.
 $$
 Modulo $N$, there are exactly $d$ such residue classes.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \gcd(100000,65536)=32.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 100000=10^5=2^5\,5^5
@@ -93,25 +111,37 @@ $$
 65536=2^{16}.
 $$
 Their greatest common divisor is therefore $2^5=32$.
+
 :::
 
-<1>4. The polynomial has exactly
+:::
+
+::: {.pf-step #s4}
+
+The polynomial has exactly
 $$
 \boxed{32}
 $$
 roots in $\FF_{65537}$.
 
-::: {.proof}
-Apply step <1>2 to the cyclic group in step <1>1 with
+::: pf-proof
+
+Apply step [](#s2){.pf-ref} to the cyclic group in step [](#s1){.pf-ref} with
 $$
 m=100000,\qquad N=65536.
 $$
-Step <1>3 gives the number of solutions as $32$.
+Step [](#s3){.pf-ref} gives the number of solutions as $32$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested root count.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested root count.
+
+:::
+
+:::
+
 :::

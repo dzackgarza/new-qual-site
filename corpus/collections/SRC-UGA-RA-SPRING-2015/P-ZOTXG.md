@@ -38,8 +38,15 @@ Let $f \in L^1(\RR)$ and $g$ be a bounded measurable function on $\RR$.
 \]
 :::
 ::: {.solution}
-<1>1. The convolution is well defined and bounded.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The convolution is well defined and bounded.
+
+::: pf-proof
+
 Let $M:=\|g\|_\infty$. For every $x\in\mathbb R$,
 \[
 \int_{\mathbb R}|f(y)g(x-y)|\,dy
@@ -49,10 +56,17 @@ Thus $(f*g)(x)$ is absolutely convergent and
 \[
 \|f*g\|_\infty\le M\|f\|_1.
 \]
+
 :::
 
-<1>2. The convolution is uniformly continuous.
-::: {.proof}
+:::
+
+::: pf-step
+
+The convolution is uniformly continuous.
+
+::: pf-proof
+
 For $h\in\mathbb R$, a change of variables gives
 \[
 (f*g)(x+h)
@@ -69,10 +83,17 @@ and therefore
 \le M\|\tau_{-h}f-f\|_1.
 \]
 Translations are strongly continuous on $L^1(\mathbb R)$, so the right-hand side tends to $0$ as $h\to0$, independently of $x$. Thus $f*g$ is uniformly continuous.
+
 :::
 
-<1>3. Differentiate when $g\in C^1$ and $g'$ is bounded.
-::: {.proof}
+:::
+
+::: pf-step
+
+Differentiate when $g\in C^1$ and $g'$ is bounded.
+
+::: pf-proof
+
 For $h\ne0$,
 \[
 \frac{(f*g)(x+h)-(f*g)(x)}h
@@ -89,5 +110,11 @@ Finally, $g'$ is bounded and measurable, so Step 2 applied to $(f,g')$ shows tha
 \[
 \boxed{(f*g)'=f*g'.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

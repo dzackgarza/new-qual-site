@@ -40,8 +40,15 @@ Hint: If such $(a_n)$ existed, find a sequence of linear functionals that yields
 :::
 
 ::: {.solution}
-<1>1. Assume a uniform rate exists and define the associated functionals.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Assume a uniform rate exists and define the associated functionals.
+
+::: pf-proof
+
 Suppose there were positive numbers $a_n\to\infty$ such that for every $f\in L^1([0,1])$ there is $C_f<\infty$ with
 \[
 \left|\int_0^1 f(x)e^{inx}\,dx\right|
@@ -55,10 +62,17 @@ T_n:L^1([0,1])\to\mathbb C,
 T_n(f):=a_n\int_0^1f(x)e^{inx}\,dx.
 \]
 Each $T_n$ is a bounded linear functional.
+
 :::
 
-<1>2. The family is pointwise bounded.
-::: {.proof}
+:::
+
+::: pf-step
+
+The family is pointwise bounded.
+
+::: pf-proof
+
 For every fixed $f\in L^1([0,1])$, the assumed estimate gives
 \[
 |T_n(f)|
@@ -74,10 +88,17 @@ Since $L^1([0,1])$ is Banach, the Uniform Boundedness Principle implies
 \[
 \sup_n\|T_n\|<\infty.
 \]
+
 :::
 
-<1>3. Compute the operator norms and obtain the contradiction.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the operator norms and obtain the contradiction.
+
+::: pf-proof
+
 The functional
 \[
 f\longmapsto\int_0^1f(x)e^{inx}\,dx
@@ -89,5 +110,11 @@ is represented by the $L^\infty$ function $e^{inx}$, whose essential supremum no
 But $a_n\to\infty$, contradicting Step 2.
 
 Hence no sequence $(a_n)$ with the stated property can exist. Equivalently, the Riemann--Lebesgue lemma admits no convergence rate uniform over all $f\in L^1([0,1])$.
+
 :::
+
+:::
+
+:::
+
 :::

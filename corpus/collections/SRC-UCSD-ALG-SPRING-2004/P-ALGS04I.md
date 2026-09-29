@@ -29,35 +29,77 @@ Use the universal mapping property to prove that $V \otimes W$ is a vector space
 :::
 
 ::: {.solution}
-<1>1. Let $\{v_1, \ldots, v_m\}$ be a basis of $V$ and $\{w_1, \ldots, w_n\}$ a basis of $W$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $\{v_1, \ldots, v_m\}$ be a basis of $V$ and $\{w_1, \ldots, w_n\}$ a basis of $W$.
+
+::: pf-proof
+
 choose bases.
+
 :::
 
-<1>2. The set $\{v_i \otimes w_j : 1 \le i \le m, 1 \le j \le n\}$ spans $V \otimes W$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The set $\{v_i \otimes w_j : 1 \le i \le m, 1 \le j \le n\}$ spans $V \otimes W$.
+
+::: pf-proof
+
 every element of $V \otimes W$ is a finite sum of pure tensors $v \otimes w$, and each $v = \sum_i a_i v_i$, $w = \sum_j b_j w_j$ expands to $\sum_{i,j} a_i b_j (v_i \otimes w_j)$ by bilinearity.
+
 :::
 
-<1>3. The set $\{v_i \otimes w_j\}$ is linearly independent.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The set $\{v_i \otimes w_j\}$ is linearly independent.
+
+::: pf-proof
+
 for each pair $(i, j)$, define the bilinear map $\varphi_{ij} : V \times W \to \mathbb{C}$ by $\varphi_{ij}(v, w) = v_i^*(v) w_j^*(w)$ (where $v_i^*, w_j^*$ are the dual basis functionals).
 By the universal property, $\varphi_{ij}$ induces a linear map $\tilde\varphi_{ij} : V \otimes W \to \mathbb{C}$ with $\tilde\varphi_{ij}(v_p \otimes w_q) = \delta_{ip}\delta_{jq}$.
 If $\sum_{i,j} c_{ij}(v_i \otimes w_j) = 0$, applying $\tilde\varphi_{ij}$ gives $c_{ij} = 0$ for each $(i,j)$.
+
 :::
 
-<1>4. Hence $\{v_i \otimes w_j\}$ is a basis of $V \otimes W$.
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. Therefore $\dim(V \otimes W) = mn$.
-::: {.proof}
-<1>4 (there are $mn$ basis elements).
+::: {.pf-step #s4}
+
+Hence $\{v_i \otimes w_j\}$ is a basis of $V \otimes W$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
 :::
+
+::: {.pf-step #s5}
+
+Therefore $\dim(V \otimes W) = mn$.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} (there are $mn$ basis elements).
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
 :::

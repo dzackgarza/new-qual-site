@@ -33,7 +33,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The functions
+
+::: pf
+
+::: {.pf-step #s1}
+
+The functions
 $$
 fg',
 \qquad
@@ -43,7 +48,8 @@ fg
 $$
 belong to $L^1(\RR)$.
 
-::: {.proof}
+::: pf-proof
+
 By the Cauchy--Schwarz inequality,
 $$
 \int_{\RR}\abs{fg'}
@@ -53,9 +59,14 @@ $$
 <\infty.
 $$
 The same argument with $f'$ and $g$ shows that $f'g\in L^1(\RR)$, and the same argument with $f$ and $g$ shows that $fg\in L^1(\RR)$.
+
 :::
 
-<1>2. There are sequences
+:::
+
+::: {.pf-step #s2}
+
+There are sequences
 $$
 x_j\longrightarrow-\infty,
 \qquad
@@ -68,12 +79,13 @@ f(x_j)g(x_j)\longrightarrow0,
 f(y_j)g(y_j)\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 h(x)=\abs{f(x)g(x)}.
 $$
-By step <1>1, $h\in L^1(\RR)$. For each positive integer $j$, there must be some $y_j>j$ with
+By step [](#s1){.pf-ref}, $h\in L^1(\RR)$. For each positive integer $j$, there must be some $y_j>j$ with
 $$
 h(y_j)<\frac1j.
 $$
@@ -82,9 +94,14 @@ $$
 h(x_j)<\frac1j.
 $$
 These choices have the required limits.
+
 :::
 
-<1>3. For every $j$,
+:::
+
+::: {.pf-step #s3}
+
+For every $j$,
 $$
 \int_{x_j}^{y_j}fg'\,dx
 +
@@ -93,15 +110,21 @@ $$
 f(y_j)g(y_j)-f(x_j)g(x_j).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ and $g$ are continuously differentiable,
 $$
 (fg)'=f'g+fg'.
 $$
 Integrate this identity on the finite interval $[x_j,y_j]$ and apply the fundamental theorem of calculus.
+
 :::
 
-<1>4. Passing to the limit in step <1>3 gives
+:::
+
+::: {.pf-step #s4}
+
+Passing to the limit in step [](#s3){.pf-ref} gives
 $$
 \int_{-\infty}^{\infty}fg'\,dx
 +
@@ -110,17 +133,23 @@ $$
 0.
 $$
 
-::: {.proof}
-By step <1>1, both $fg'$ and $f'g$ are absolutely integrable. Since
+::: pf-proof
+
+By step [](#s1){.pf-ref}, both $fg'$ and $f'g$ are absolutely integrable. Since
 $$
 x_j\to-\infty,
 \qquad
 y_j\to+\infty,
 $$
-their integrals over $[x_j,y_j]$ converge to their integrals over $\RR$. By step <1>2, the boundary term on the right-hand side of step <1>3 converges to $0$. Taking $j\to\infty$ proves the displayed identity.
+their integrals over $[x_j,y_j]$ converge to their integrals over $\RR$. By step [](#s2){.pf-ref}, the boundary term on the right-hand side of step [](#s3){.pf-ref} converges to $0$. Taking $j\to\infty$ proves the displayed identity.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 \int_{-\infty}^{\infty}fg'\,dx
@@ -129,13 +158,20 @@ $$
 }.
 $$
 
-::: {.proof}
-Rearrange the identity in step <1>4.
+::: pf-proof
+
+Rearrange the identity in step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required identity.
+
+:::
+
+:::
+
 :::

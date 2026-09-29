@@ -37,7 +37,12 @@ Prove that if $G/Z(G)$ is nilpotent, then $G$ is nilpotent.
 :::
 
 ::: {.solution}
-<1>1. For a group $K$, write its lower central series as
+
+::: pf
+
+::: {.pf-step #s1}
+
+For a group $K$, write its lower central series as
 \[
 \gamma_1(K)=K,
 \qquad
@@ -47,7 +52,9 @@ If $N\trianglelefteq K$ and $\pi:K\to K/N$ is the quotient map, then for every $
 \[
 \gamma_i(K/N)=\pi(\gamma_i(K)).
 \]
-::: {.proof}
+
+::: pf-proof
+
 We induct on $i$.
 For $i=1$,
 \[
@@ -65,10 +72,17 @@ Since $\pi$ is surjective and homomorphisms preserve commutators,
 \end{aligned}
 \]
 Thus the formula holds for all $i$.
+
 :::
 
-<1>2. If $G/Z(G)$ is nilpotent, then some term of the lower central series of $G$ lies in $Z(G)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $G/Z(G)$ is nilpotent, then some term of the lower central series of $G$ lies in $Z(G)$.
+
+::: pf-proof
+
 Set
 \[
 Z=Z(G).
@@ -77,7 +91,7 @@ Since $G/Z$ is nilpotent, there is some $c\ge0$ such that
 \[
 \gamma_{c+1}(G/Z)=1.
 \]
-Applying <1>1 to the quotient map $G\to G/Z$ gives
+Applying step [](#s1){.pf-ref} to the quotient map $G\to G/Z$ gives
 \[
 \gamma_{c+1}(G)Z/Z=1.
 \]
@@ -85,11 +99,18 @@ Hence
 \[
 \gamma_{c+1}(G)\le Z(G).
 \]
+
 :::
 
-<1>3. The lower central series of $G$ terminates one step later.
-::: {.proof}
-By <1>2,
+:::
+
+::: {.pf-step #s3}
+
+The lower central series of $G$ terminates one step later.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 \[
 \gamma_{c+1}(G)\le Z(G).
 \]
@@ -101,10 +122,17 @@ Therefore
   =1.
 \]
 Thus $G$ is nilpotent.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>3.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -46,7 +46,11 @@ $$
 f(v_j)=\sum_{i=1}^n a_{ij}v_i.
 $$
 
-<1>1. The vectors
+::: pf
+
+::: {.pf-step #s1}
+
+The vectors
 $$
 v_i v_j,
 \qquad
@@ -54,13 +58,19 @@ v_i v_j,
 $$
 form a basis of $S^2V$.
 
-::: {.proof}
+::: pf-proof
+
 The symmetric square is the degree-two part of the symmetric algebra on $V$.
 Relative to the chosen basis of $V$, its degree-two monomials are exactly the
 displayed vectors.
+
 :::
 
-<1>2. In the basis from step <1>1,
+:::
+
+::: {.pf-step #s2}
+
+In the basis from step [](#s1){.pf-ref},
 $$
 \trace(S^2f)
 =
@@ -70,7 +80,8 @@ $$
 \left(a_{ii}a_{jj}+a_{ij}a_{ji}\right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a diagonal basis vector,
 $$
 (S^2f)(v_i^2)=f(v_i)^2,
@@ -89,11 +100,16 @@ $f(v_i)$ and $v_i$ from $f(v_j)$. Their total coefficient is
 $$
 a_{ii}a_{jj}+a_{ji}a_{ij}.
 $$
-Summing these diagonal coefficients over the basis from step <1>1 gives the
+Summing these diagonal coefficients over the basis from step [](#s1){.pf-ref} gives the
 displayed trace formula.
+
 :::
 
-<1>3. The square of the trace of $f$ is
+:::
+
+::: {.pf-step #s3}
+
+The square of the trace of $f$ is
 $$
 \trace(f)^2
 =
@@ -102,15 +118,21 @@ $$
 2\sum_{1\leq i<j\leq n}a_{ii}a_{jj}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \trace(f)=\sum_{i=1}^n a_{ii},
 $$
 expanding its square gives the formula.
+
 :::
 
-<1>4. The trace of $f^2$ is
+:::
+
+::: {.pf-step #s4}
+
+The trace of $f^2$ is
 $$
 \trace(f^2)
 =
@@ -119,7 +141,8 @@ $$
 2\sum_{1\leq i<j\leq n}a_{ij}a_{ji}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $A=(a_{ij})$ is the matrix of $f$, then
 $$
 \trace(f^2)
@@ -136,9 +159,14 @@ a_{ij}a_{ji}
 a_{ji}a_{ij},
 $$
 whose sum is $2a_{ij}a_{ji}$.
+
 :::
 
-<1>5. The required identity holds:
+:::
+
+::: {.pf-step #s5}
+
+The required identity holds:
 $$
 \boxed{
 2\trace(S^2f)
@@ -147,8 +175,9 @@ $$
 }.
 $$
 
-::: {.proof}
-Doubling the formula in step <1>2 gives
+::: pf-proof
+
+Doubling the formula in step [](#s2){.pf-ref} gives
 $$
 2\trace(S^2f)
 =
@@ -158,13 +187,19 @@ $$
 +
 2\sum_{i<j}a_{ij}a_{ji}.
 $$
-Adding the formulas from steps <1>3 and <1>4 gives exactly the same
+Adding the formulas from steps [](#s3){.pf-ref} and [](#s4){.pf-ref} gives exactly the same
 expression.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is precisely the claimed trace identity.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is precisely the claimed trace identity.
+
+:::
+
+:::
+
 :::

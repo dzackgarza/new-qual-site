@@ -33,8 +33,15 @@ Let $E$ be an intermediate field extension in $K \leq E \leq F$.
 :::
 
 ::: {.solution}
-<1>1. If $u\in F$ is separable over $K$, then $u$ is separable over $E$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $u\in F$ is separable over $K$, then $u$ is separable over $E$.
+
+::: pf-proof
+
 Let
 \[
 m_K(x)\in K[x]
@@ -52,19 +59,39 @@ m_E\mid m_K\qquad\text{in }E[x].
 Because $u$ is separable over $K$, the polynomial $m_K$ has no repeated root in
 a splitting field. Every divisor of a polynomial with distinct roots likewise
 has distinct roots. Hence $m_E$ is separable, so $u$ is separable over $E$.
+
 :::
 
-<1>2. If $F/K$ is separable, then $F/E$ is separable.
-::: {.proof}
-Let $u\in F$. Since $F/K$ is separable, $u$ is separable over $K$. By <1>1,
+:::
+
+::: pf-step
+
+If $F/K$ is separable, then $F/E$ is separable.
+
+::: pf-proof
+
+Let $u\in F$. Since $F/K$ is separable, $u$ is separable over $K$. By step [](#s1){.pf-ref},
 $u$ is separable over $E$. Since this holds for every $u\in F$, the extension
 $F/E$ is separable.
+
 :::
 
-<1>3. If $F/K$ is separable, then $E/K$ is separable.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $F/K$ is separable, then $E/K$ is separable.
+
+::: pf-proof
+
 Every element of $E$ is also an element of $F$. Since every element of $F$ is
 separable over $K$, every element of $E$ is separable over $K$. Thus $E/K$ is
 separable.
+
 :::
+
+:::
+
+:::
+
 :::

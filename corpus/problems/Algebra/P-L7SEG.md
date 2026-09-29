@@ -43,8 +43,15 @@ H_1=\phi^{-1}(H_2).
 :::
 
 ::: {.solution}
-<1>1. Images and preimages are subgroups.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Images and preimages are subgroups.
+
+::: pf-proof
+
 If $a=\phi(x)$ and $b=\phi(y)$ lie in $\phi(G_1)$, then
 \[
 ab^{-1}=\phi(xy^{-1})\in\phi(G_1),
@@ -56,19 +63,33 @@ If $x,y\in H_1$, then $\phi(x),\phi(y)\in H_2$, hence
 \phi(xy^{-1})=\phi(x)\phi(y)^{-1}\in H_2.
 \]
 Thus $xy^{-1}\in H_1$.
+
 :::
 
-<1>2. The kernel is normal.
-::: {.proof}
+:::
+
+::: pf-step
+
+The kernel is normal.
+
+::: pf-proof
+
 If $k\in\ker\phi$ and $g\in G_1$, then
 \[
 \phi(gkg^{-1})=\phi(g)e\phi(g)^{-1}=e,
 \]
 so $gkg^{-1}\in\ker\phi$.
+
 :::
 
-<1>3. The coset criterion holds.
-::: {.proof}
+:::
+
+::: pf-step
+
+The coset criterion holds.
+
+::: pf-proof
+
 We have
 \[
 xH_1=yH_1
@@ -76,25 +97,45 @@ xH_1=yH_1
 \iff \phi(y)^{-1}\phi(x)\in H_2
 \iff \phi(x)H_2=\phi(y)H_2.
 \]
+
 :::
 
-<1>4. Injectivity is equivalent to trivial kernel.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Injectivity is equivalent to trivial kernel.
+
+::: pf-proof
+
 If $\phi$ is injective, then $\phi(g)=e$ implies $g=e$. Conversely, if $\ker\phi=\{e\}$ and $\phi(x)=\phi(y)$, then
 \[
 \phi(y^{-1}x)=e,
 \]
 so $y^{-1}x=e$ and $x=y$.
+
 :::
 
-<1>5. First isomorphism theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+First isomorphism theorem.
+
+::: pf-proof
+
 Define
 \[
 \bar\phi:G_1/\ker\phi\to\operatorname{im}\phi,
 \qquad
 \bar\phi(g\ker\phi)=\phi(g).
 \]
-This is well defined because two cosets are equal exactly when their quotient lies in the kernel. It is a surjective homomorphism by construction, and its kernel is trivial by <1>4. Hence it is an isomorphism.
+This is well defined because two cosets are equal exactly when their quotient lies in the kernel. It is a surjective homomorphism by construction, and its kernel is trivial by step [](#s4){.pf-ref}. Hence it is an isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -32,25 +32,76 @@ audit:
 ::: {.solution}
 Take $|x| < 2$.
 
-<1>1. Split the integral into two parts: $$\int \frac{x+1}{\sqrt{4-x^2}} \, dx = \int \frac{x}{\sqrt{4-x^2}} \, dx + \int \frac{1}{\sqrt{4-x^2}} \, dx.$$
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Split the integral into two parts: $$\int \frac{x+1}{\sqrt{4-x^2}} \, dx = \int \frac{x}{\sqrt{4-x^2}} \, dx + \int \frac{1}{\sqrt{4-x^2}} \, dx.$$
+
+::: pf-proof
+
 The integrand satisfies $\frac{x+1}{\sqrt{4-x^2}} = \frac{x}{\sqrt{4-x^2}} + \frac{1}{\sqrt{4-x^2}}$, and the integral of a sum is the sum of the integrals.
+
 :::
 
-<1>2. $\int \frac{x}{\sqrt{4-x^2}} \, dx = -\sqrt{4-x^2} + C_1$.
-::: {.proof}
-<2>1. Substitute $u = 4 - x^2 \implies du = -2x \, dx \implies x \, dx = -\frac{1}{2} \, du$.
-<2>2. $\int \frac{x}{\sqrt{4-x^2}} \, dx = -\frac{1}{2} \int u^{-1/2} \, du = -\frac{1}{2} (2 u^{1/2}) + C_1 = -\sqrt{4-x^2} + C_1$.
 :::
 
-<1>3. $\int \frac{1}{\sqrt{4-x^2}} \, dx = \arcsin\left(\frac{x}{2}\right) + C_2$.
-::: {.proof}
-<2>1. Substitute $x = 2\sin(\theta)$ for $\theta \in (-\pi/2, \pi/2)$, so $dx = 2\cos(\theta) \, d\theta$ and $\sqrt{4-x^2} = \sqrt{4 - 4\sin^2(\theta)} = 2\cos(\theta)$.
-<2>2. $\int \frac{1}{\sqrt{4-x^2}} \, dx = \int \frac{2\cos(\theta)}{2\cos(\theta)} \, d\theta = \int 1 \, d\theta = \theta + C_2 = \arcsin\left(\frac{x}{2}\right) + C_2$.
+::: {.pf-step #s2}
+
+$\int \frac{x}{\sqrt{4-x^2}} \, dx = -\sqrt{4-x^2} + C_1$.
+
+::: pf-proof
+
+::: pf-step
+
+Substitute $u = 4 - x^2 \implies du = -2x \, dx \implies x \, dx = -\frac{1}{2} \, du$.
+
 :::
 
-<1>4. Combining results: $$\int \frac{x+1}{\sqrt{4-x^2}} \, dx = -\sqrt{4-x^2} + \arcsin\left(\frac{x}{2}\right) + C.$$
-::: {.proof}
-Adding the two antiderivatives from <1>2 and <1>3, and absorbing the constants $C_1 + C_2$ into a single constant $C$, gives the stated result.
+::: pf-step
+
+$\int \frac{x}{\sqrt{4-x^2}} \, dx = -\frac{1}{2} \int u^{-1/2} \, du = -\frac{1}{2} (2 u^{1/2}) + C_1 = -\sqrt{4-x^2} + C_1$.
+
 :::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+$\int \frac{1}{\sqrt{4-x^2}} \, dx = \arcsin\left(\frac{x}{2}\right) + C_2$.
+
+::: pf-proof
+
+::: pf-step
+
+Substitute $x = 2\sin(\theta)$ for $\theta \in (-\pi/2, \pi/2)$, so $dx = 2\cos(\theta) \, d\theta$ and $\sqrt{4-x^2} = \sqrt{4 - 4\sin^2(\theta)} = 2\cos(\theta)$.
+
+:::
+
+::: pf-step
+
+$\int \frac{1}{\sqrt{4-x^2}} \, dx = \int \frac{2\cos(\theta)}{2\cos(\theta)} \, d\theta = \int 1 \, d\theta = \theta + C_2 = \arcsin\left(\frac{x}{2}\right) + C_2$.
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+Combining results: $$\int \frac{x+1}{\sqrt{4-x^2}} \, dx = -\sqrt{4-x^2} + \arcsin\left(\frac{x}{2}\right) + C.$$
+
+::: pf-proof
+
+Adding the two antiderivatives from steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, and absorbing the constants $C_1 + C_2$ into a single constant $C$, gives the stated result.
+
+:::
+
+:::
+
+:::
+
 :::

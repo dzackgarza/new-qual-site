@@ -31,12 +31,17 @@ $$
 J\coloneqq\int_0^\infty\frac{\sin 2x}{x}\,dx.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \int_{-\infty}^{\infty}\frac{\sin^2x}{x^2}\,dx=2J.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The original integrand is even. It is bounded near $0$, since
 $\sin x/x\to1$, and it is at most $1/x^2$ for large $x$, so the improper
 integral converges. For $0<\varepsilon<R$, integration by parts gives
@@ -52,9 +57,14 @@ $$
 \int_0^\infty\frac{\sin^2x}{x^2}\,dx=J,
 $$
 and evenness gives the claim.
+
 :::
 
-<1>2. For $a>0$, define
+:::
+
+::: {.pf-step #s2}
+
+For $a>0$, define
 $$
 J(a)\coloneqq\int_0^\infty e^{-ax}\frac{\sin 2x}{x}\,dx.
 $$
@@ -63,7 +73,8 @@ $$
 J(a)=\frac\pi2-\arctan\frac a2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For fixed $a>0$, differentiation under the integral sign is justified on a
 small neighborhood of $a$ by an integrable exponential majorant. Thus
 $$
@@ -84,14 +95,20 @@ $$
 $$
 so $J(a)\to0$ as $a\to\infty$. Since
 $\arctan(a/2)\to\pi/2$, it follows that $C=\pi/2$.
+
 :::
 
-<1>3. The undamped Dirichlet integral satisfies
+:::
+
+::: {.pf-step #s3}
+
+The undamped Dirichlet integral satisfies
 $$
 J=\lim_{a\downarrow0}J(a)=\frac\pi2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $a\geq0$, let
 $$
 \phi_a(x)\coloneqq\frac{e^{-ax}}{x}.
@@ -116,22 +133,34 @@ $[0,R]$, followed by the uniform tail estimate, gives
 $$
 J=\lim_{a\downarrow0}J(a).
 $$
-Step <1>2 now yields $J=\pi/2$.
+Step [](#s2){.pf-ref} now yields $J=\pi/2$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{\int_{-\infty}^{\infty}\frac{\sin^2x}{x^2}\,dx=\pi}.
 $$
 
-::: {.proof}
-By step <1>1 the integral equals $2J$, and step <1>3 gives
+::: pf-proof
+
+By step [](#s1){.pf-ref} the integral equals $2J$, and step [](#s3){.pf-ref} gives
 $J=\pi/2$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

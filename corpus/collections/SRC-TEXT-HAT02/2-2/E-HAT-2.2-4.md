@@ -42,13 +42,26 @@ be the identity on the first summand and a reflection on the second summand. Set
 f=g\circ p.
 \]
 
-<1>1. The map $f$ is surjective.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The map $f$ is surjective.
+
+::: pf-proof
+
 The first wedge summand is mapped by $g$ via the identity onto all of $S^n$. Hence the composite $f$ is onto.
+
 :::
 
-<1>2. The degree of $f$ is zero.
-::: {.proof}
+:::
+
+::: pf-step
+
+The degree of $f$ is zero.
+
+::: pf-proof
+
 On top homology, the pinch map sends a fundamental class to the sum of the fundamental classes of the two wedge summands:
 \[
 p_*[S^n]=([S^n],[S^n]).
@@ -61,6 +74,11 @@ so
 \[
 \boxed{\deg f=0.}
 \]
+
+:::
+
+:::
+
 :::
 
 Thus for every $n\ge1$ there is a surjective degree-zero map $S^n\to S^n$.

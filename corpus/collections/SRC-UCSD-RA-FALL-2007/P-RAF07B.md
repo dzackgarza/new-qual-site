@@ -31,10 +31,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. The finite-measure case is immediate.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The finite-measure case is immediate.
+
+::: pf-proof
+
 Set
 \[
 S_E:=\sup\{\mu(F):F\in\mathcal M,\ F\subset E,\ \mu(F)<\infty\}.
@@ -44,10 +50,17 @@ Every admissible $F$ satisfies $\mu(F)\le\mu(E)$, so $S_E\le\mu(E)$. If $\mu(E)<
 S_E\ge\mu(E).
 \]
 Thus $S_E=\mu(E)$ in this case.
+
 :::
 
-<1>2. Treat the case $\mu(E)=\infty$ by contradiction.
-::: {.proof}
+:::
+
+::: pf-step
+
+Treat the case $\mu(E)=\infty$ by contradiction.
+
+::: pf-proof
+
 Suppose $\mu(E)=\infty$ but $S_E<\infty$. Choose measurable sets $F_n\subset E$ with $\mu(F_n)<\infty$ and
 \[
 \mu(F_n)>S_E-\frac1n.
@@ -95,5 +108,11 @@ Thus $S_E=\infty=\mu(E)$. Combining both cases,
 \boxed{
 \mu(E)=\sup\{\mu(F):F\subset E,\ F\in\mathcal M,\ \mu(F)<\infty\}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

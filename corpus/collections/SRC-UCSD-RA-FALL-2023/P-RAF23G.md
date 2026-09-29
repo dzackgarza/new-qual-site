@@ -33,8 +33,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Obtain the immediate upper bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Obtain the immediate upper bound.
+
+::: pf-proof
+
 Let
 \[
 M:=\|f\|_\infty>0.
@@ -51,10 +58,17 @@ Hence
 \frac{\alpha_{n+1}}{\alpha_n}\le M.
 \]
 Also $M>0$ implies $\alpha_n>0$ for every $n$.
+
 :::
 
-<1>2. Reinterpret the ratio as an expectation.
-::: {.proof}
+:::
+
+::: pf-step
+
+Reinterpret the ratio as an expectation.
+
+::: pf-proof
+
 Define a probability measure $\nu_n$ by
 \[
 d\nu_n
@@ -66,10 +80,17 @@ Then
 =\int |f|\,d\nu_n.
 \]
 Thus it is enough to show that $\nu_n$ concentrates near the set where $|f|$ is close to $M$.
+
 :::
 
-<1>3. Show exponential concentration near the essential supremum.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show exponential concentration near the essential supremum.
+
+::: pf-proof
+
 Fix $\varepsilon>0$ with $2\varepsilon<M$. By definition of essential supremum,
 \[
 A_\varepsilon:=\{|f|>M-\varepsilon\}
@@ -97,10 +118,17 @@ Then
 \longrightarrow0.
 \end{aligned}
 \]
+
 :::
 
-<1>4. Pass to the limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass to the limit.
+
+::: pf-proof
+
 Using Step 2 and restricting the integral to $X\setminus B_\varepsilon$,
 \[
 \frac{\alpha_{n+1}}{\alpha_n}
@@ -119,5 +147,11 @@ Since $\varepsilon>0$ is arbitrary and Step 1 gives the opposite upper bound,
 \boxed{
 \lim_{n\to\infty}\frac{\alpha_{n+1}}{\alpha_n}=M=\|f\|_\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

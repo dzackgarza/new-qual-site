@@ -53,9 +53,14 @@ For (a), use Theorem I.3.4.
 Write $h^i(X,F)=\dim_k H^i(X,F)$.
 The [[D-COHEULER|Euler characteristic]] is finite by coherent cohomology finiteness and vanishing.
 
-<1>1. If $X$ is integral and $k$ is algebraically closed, the constants map $k\to\Gamma(X,\OO_X)$ is an isomorphism.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $X$ is integral and $k$ is algebraically closed, the constants map $k\to\Gamma(X,\OO_X)$ is an isomorphism.
+
+::: pf-proof
+
 The ring $B=\Gamma(X,\OO_X)$ is a domain, since regular functions on the integral scheme inject into its function field.
 It is finite-dimensional over $k$ by [@Har10a, Theorem III.5.2].
 For every nonzero $b\in B$, multiplication by $b$ is an injective endomorphism of this finite-dimensional vector space and hence is surjective.
@@ -63,12 +68,18 @@ In particular it takes some element to $1$, so $b$ is invertible.
 Thus $B$ is a finite field extension of $k$.
 Algebraic closedness of $k$ forces $B=k$, through its given constants inclusion.
 This is the constant-function conclusion used in the hint.
+
 :::
 
-<1>2. The formulas in (a) follow.
+:::
 
-::: {.proof}
-The groups $H^j(X,\OO_X)$ vanish for $j>r$ [@Har10a, Theorem III.2.7], and step <1>1 gives $h^0=1$.
+::: {.pf-step #s2}
+
+The formulas in (a) follow.
+
+::: pf-proof
+
+The groups $H^j(X,\OO_X)$ vanish for $j>r$ [@Har10a, Theorem III.2.7], and step [](#s1){.pf-ref} gives $h^0=1$.
 Therefore
 $$
 \begin{aligned}
@@ -80,11 +91,17 @@ $$
 where the second line uses $i=r-j$.
 For $r=0$ both sums are empty and the value is zero.
 For a curve, $r=1$, and the formula is $p_a(X)=h^1(X,\OO_X)$.
+
 :::
 
-<1>3. For any projective embedding in (b), the constant term of its Hilbert polynomial is $\chi(X,\OO_X)$, so the two definitions of arithmetic genus agree.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+For any projective embedding in (b), the constant term of its Hilbert polynomial is $\chi(X,\OO_X)$, so the two definitions of arithmetic genus agree.
+
+::: pf-proof
+
 Let $S(X)$ be the homogeneous coordinate ring for $X\hookrightarrow\PP_k^N$ and let $P_X$ be its Hilbert polynomial.
 The high-degree comparison in [[P-AGH259GAMMASTAR]] identifies
 $$
@@ -100,11 +117,17 @@ The genus defined from the projective embedding in [@Har10a, Exercise I.7.2] is 
 It is therefore $(-1)^r(\chi(X,\OO_X)-1)$, exactly the definition in the statement.
 Since the latter uses only cohomology of the abstract scheme, it is independent of the embedding.
 No equality of the coordinate ring with the section ring in small degrees is assumed.
+
 :::
 
-<1>4. Birational nonsingular projective integral curves are isomorphic, and their arithmetic genera agree.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Birational nonsingular projective integral curves are isomorphic, and their arithmetic genera agree.
+
+::: pf-proof
+
 Let $C\dashrightarrow C'$ be a birational map between such curves.
 At every closed point $x\in C$, the local ring $\OO_{C,x}$ is a DVR because $C$ is nonsingular and one-dimensional [@Har10a, Theorem I.6.2A].
 Embed $C'$ in projective space and write the rational map in homogeneous coordinates in $K(C)$.
@@ -118,13 +141,19 @@ They glue with the original rational-map domain to a morphism $C\to C'$.
 The rational inverse extends in the same way.
 Their composites agree with the identity on dense opens and hence everywhere, again by separatedness and reducedness.
 Thus the morphisms are inverse isomorphisms.
-An isomorphism identifies the cohomology of the structure sheaves, and step <1>2 gives $p_a(C)=p_a(C')$.
+An isomorphism identifies the cohomology of the structure sheaves, and step [](#s2){.pf-ref} gives $p_a(C)=p_a(C')$.
 This proves the birational-invariance assertion in (c).
+
 :::
 
-<1>5. A nonsingular plane curve of degree $d\ge3$ is not rational.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+A nonsingular plane curve of degree $d\ge3$ is not rational.
+
+::: pf-proof
+
 Over the algebraically closed field, choose a point outside the plane curve and make it $[1:0:0]$ by a projective coordinate change.
 The computation in [[P-AGH347PLANECURVEGENUS]] then gives
 $$
@@ -133,14 +162,20 @@ h^1(C,\OO_C)=\frac{(d-1)(d-2)}2>0.
 $$
 In particular the curve is connected, since a nontrivial open-and-closed decomposition would give a nontrivial idempotent global function.
 Its regular local rings are domains [@Har10a, Remark II.6.11.1A], so its irreducible components are disjoint and reduced; connectedness therefore makes it integral.
-Step <1>2 identifies its arithmetic genus with this positive $h^1$.
+Step [](#s2){.pf-ref} identifies its arithmetic genus with this positive $h^1$.
 On the other hand, $h^1(\PP_k^1,\OO)=0$ by [[P-AGH322FLASQUERESPONE]], so $p_a(\PP_k^1)=0$.
-If $C$ were rational, it would be birational to $\PP_k^1$, contradicting step <1>4.
+If $C$ were rational, it would be birational to $\PP_k^1$, contradicting step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove (a), step <1>3 proves (b), and steps <1>4--<1>5 prove (c) and its nonrationality conclusion.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), step [](#s3){.pf-ref} proves (b), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (c) and its nonrationality conclusion.
+
+:::
+
+:::
+
 :::

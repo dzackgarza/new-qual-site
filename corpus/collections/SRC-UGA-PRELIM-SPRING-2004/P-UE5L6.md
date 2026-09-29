@@ -24,44 +24,72 @@ Argue that $f$ must be differentiable and then find all such function(s) explici
 :::
 
 ::: {.solution}
-<1>1. The function $f$ is differentiable and satisfies
+
+::: pf
+
+::: {.pf-step #s1}
+
+The function $f$ is differentiable and satisfies
 \[
 f'(x)=3f(x)
 \]
 for every $x\in\mathbb R$.
-::: {.proof}
+
+::: pf-proof
+
 Because $f$ is continuous, the function $3f$ is continuous. By the Fundamental Theorem of Calculus,
 \[
 F(x)=\int_0^x 3f(t)\,dt
 \]
 is differentiable and $F'(x)=3f(x)$. Since the given equation is $f(x)=5+F(x)$, the function $f$ is differentiable and $f'(x)=3f(x)$.
+
 :::
 
-<1>2. The initial value is
+:::
+
+::: {.pf-step #s2}
+
+The initial value is
 \[
 f(0)=5.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Substituting $x=0$ into the integral equation gives
 \[
 f(0)=5+\int_0^0 3f(t)\,dt=5.
 \]
+
 :::
 
-<1>3. The only differentiable function satisfying <1>1 and <1>2 is
+:::
+
+::: pf-step
+
+The only differentiable function satisfying steps [](#s1){.pf-ref} and [](#s2){.pf-ref} is
 \[
 f(x)=5e^{3x}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define $h(x)=e^{-3x}f(x)$. Then
 \[
 h'(x)=e^{-3x}(f'(x)-3f(x))=0,
 \]
 so $h$ is constant. Since $h(0)=f(0)=5$, we have $h(x)=5$ for all $x$, hence $f(x)=5e^{3x}$.
+
 :::
 
-<1>4. This function indeed satisfies the original integral equation.
-::: {.proof}
+:::
+
+::: pf-step
+
+This function indeed satisfies the original integral equation.
+
+::: pf-proof
+
 For $f(x)=5e^{3x}$,
 \[
 5+\int_0^x 3f(t)\,dt
@@ -70,5 +98,11 @@ For $f(x)=5e^{3x}$,
 =5e^{3x}
 =f(x).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

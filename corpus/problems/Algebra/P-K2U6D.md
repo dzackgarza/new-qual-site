@@ -30,8 +30,15 @@ Show that $G$ has a normal Sylow $7$-subgroup and that its Sylow $11$-subgroup i
 :::
 
 ::: {.solution}
-<1>1. The Sylow $7$-subgroup is normal.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The Sylow $7$-subgroup is normal.
+
+::: pf-proof
+
 Let $n_7$ be the number of Sylow $7$-subgroups. Sylow gives
 \[
 n_7\equiv1\pmod7,
@@ -43,10 +50,17 @@ The divisors of $33$ are $1,3,11,33$, and only $1$ is congruent to $1$ modulo $7
 n_7=1.
 \]
 So the Sylow $7$-subgroup is unique and therefore normal.
+
 :::
 
-<1>2. The Sylow $11$-subgroup is unique.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Sylow $11$-subgroup is unique.
+
+::: pf-proof
+
 Similarly,
 \[
 n_{11}\equiv1\pmod{11},
@@ -54,10 +68,17 @@ n_{11}\equiv1\pmod{11},
 n_{11}\mid21.
 \]
 Among $1,3,7,21$, only $1$ is congruent to $1$ modulo $11$. Thus $n_{11}=1$. Let $Q$ denote this unique Sylow $11$-subgroup; then $Q\trianglelefteq G$ and $Q\cong C_{11}$.
+
 :::
 
-<1>3. The subgroup $Q$ is central.
-::: {.proof}
+:::
+
+::: pf-step
+
+The subgroup $Q$ is central.
+
+::: pf-proof
+
 Conjugation gives a homomorphism
 \[
 G\longrightarrow\Aut(Q)\cong C_{10}.
@@ -74,5 +95,11 @@ the image is trivial. Thus every element of $G$ centralizes every element of $Q$
 \[
 Q\subseteq Z(G).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

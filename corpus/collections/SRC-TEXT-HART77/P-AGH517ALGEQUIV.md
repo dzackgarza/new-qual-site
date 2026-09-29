@@ -61,10 +61,15 @@ Since $\Num X$ is a quotient of the Néron-Severi group, it is also finitely gen
 Write $D\sim_{\mathrm{pa}}D'$ for prealgebraic equivalence and
 $D\sim_{\mathrm{alg}}D'$ for algebraic equivalence.
 
-<1>1. Prealgebraic equivalence is symmetric, is preserved by negation, and is
+::: pf
+
+::: {.pf-step #s1}
+
+Prealgebraic equivalence is symmetric, is preserved by negation, and is
 preserved by translating both divisors by the same divisor.
 
-::: {.proof}
+::: pf-proof
+
 For effective divisors, symmetry follows by interchanging the two parameter
 points in the same flat family.
 
@@ -103,41 +108,53 @@ D+E=(A+E_+)-(B+E_-)
 \sim_{\mathrm{pa}}
 (A'+E_+)-(B'+E_-)=D'+E.
 $$
+
 :::
 
-<1>2. The set
+:::
+
+::: {.pf-step #s2}
+
+The set
 $$
 \boxed{\{D\in\Div X:D\sim_{\mathrm{alg}}0\}}
 $$
 is a subgroup of $\Div X$.
 
-::: {.proof}
+::: pf-proof
+
 It contains $0$. Suppose
 $$
 0=D_0\sim_{\mathrm{pa}}D_1\sim_{\mathrm{pa}}\cdots
 \sim_{\mathrm{pa}}D_r=D.
 $$
-Negating each step and using step <1>1 gives an algebraic-equivalence chain
+Negating each step and using step [](#s1){.pf-ref} gives an algebraic-equivalence chain
 from $0$ to $-D$. Thus the set is closed under inverses.
 
 Now suppose $D\sim_{\mathrm{alg}}0$ and $E\sim_{\mathrm{alg}}0$. Choose a
 chain from $0$ to $D$ and a chain from $0$ to $E$. By the translation property
-in step <1>1, translating the second chain by $D$ gives a chain from $D$ to
+in step [](#s1){.pf-ref}, translating the second chain by $D$ gives a chain from $D$ to
 $D+E$. Concatenating the two chains gives
 $$
 0\sim_{\mathrm{alg}}D+E.
 $$
 Hence the displayed set is closed under addition and inverses, proving part
 (a).
+
 :::
 
-<1>3. If $D$ and $D'$ are linearly equivalent, then
+:::
+
+::: {.pf-step #s3}
+
+If $D$ and $D'$ are linearly equivalent, then
 $$
 \boxed{D\sim_{\mathrm{pa}}D'},
 $$
 and therefore $D\sim_{\mathrm{alg}}D'$.
 
-::: {.proof}
+::: pf-proof
+
 Choose an effective divisor $G$ whose coefficients are large enough that
 $$
 A=D+G,
@@ -169,15 +186,21 @@ D=A-G\sim_{\mathrm{pa}}A'-G=D'.
 $$
 This pencil is the homogeneous form of the source hint using $(tf-u)$.
 Thus part (b) follows.
+
 :::
 
-<1>4. Let $H$ be a very ample divisor. If effective divisors $A,A'$ are
+:::
+
+::: {.pf-step #s4}
+
+Let $H$ be a very ample divisor. If effective divisors $A,A'$ are
 prealgebraically equivalent, then
 $$
 A\cdot H=A'\cdot H.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $\mathcal A\subseteq X\times T$ be a flat family of effective Cartier
 divisors with fibres $A$ and $A'$ at two closed points of the nonsingular
 curve $T$. The divisor $H$ embeds
@@ -195,15 +218,21 @@ $H$. Therefore
 $$
 A\cdot H=A'\cdot H.
 $$
+
 :::
 
-<1>5. If arbitrary divisors $D,D'$ are algebraically equivalent, then
+:::
+
+::: {.pf-step #s5}
+
+If arbitrary divisors $D,D'$ are algebraically equivalent, then
 $$
 D\cdot H=D'\cdot H
 $$
 for every very ample divisor $H$.
 
-::: {.proof}
+::: pf-proof
+
 First suppose $D\sim_{\mathrm{pa}}D'$. Write
 $$
 D=A-B,
@@ -211,7 +240,7 @@ D=A-B,
 D'=A'-B'
 $$
 with $A\sim_{\mathrm{pa}}A'$ and $B\sim_{\mathrm{pa}}B'$ effective.
-Step <1>4 and bilinearity give
+Step [](#s4){.pf-ref} and bilinearity give
 $$
 D\cdot H
 =A\cdot H-B\cdot H
@@ -220,11 +249,17 @@ D\cdot H
 $$
 If $D\sim_{\mathrm{alg}}D'$, apply this equality to each consecutive pair in
 an algebraic-equivalence chain and use transitivity of equality.
+
 :::
 
-<1>6. Every divisor $E$ on $X$ is a difference of two very ample divisors.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Every divisor $E$ on $X$ is a difference of two very ample divisors.
+
+::: pf-proof
+
 Fix a very ample divisor $H_0$. Since $\OO_X(H_0)$ is ample, for all
 sufficiently large $n$ the sheaf
 $$
@@ -242,19 +277,25 @@ $$
 E=(E+nH_0)-nH_0
 $$
 is a difference of very ample divisors.
+
 :::
 
-<1>7. Algebraic equivalence implies numerical equivalence:
+:::
+
+::: {.pf-step #s7}
+
+Algebraic equivalence implies numerical equivalence:
 $$
 \boxed{D\sim_{\mathrm{alg}}D'\Longrightarrow D\equiv_{\mathrm{num}}D'}.
 $$
 
-::: {.proof}
-Let $E$ be any divisor. By step <1>6, write
+::: pf-proof
+
+Let $E$ be any divisor. By step [](#s6){.pf-ref}, write
 $$
 E=H_1-H_2
 $$
-with $H_1,H_2$ very ample. Step <1>5 gives
+with $H_1,H_2$ very ample. Step [](#s5){.pf-ref} gives
 $$
 D\cdot H_i=D'\cdot H_i
 \qquad(i=1,2).
@@ -270,12 +311,18 @@ D\cdot E
 $$
 Since this holds for every divisor $E$, the divisors $D,D'$ are numerically
 equivalent. This proves part (c).
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part (a), step <1>3 proves part (b), and steps <1>4--<1>7
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), step [](#s3){.pf-ref} proves part (b), and steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref}
 prove part (c).
+
 :::
+
+:::
+
 :::

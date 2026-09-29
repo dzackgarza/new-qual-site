@@ -34,11 +34,17 @@ Use your definition to prove that $S_4$ is solvable.
 :::
 
 ::: {.solution}
-<1>1. A group is solvable when its derived series reaches the
+
+::: pf
+
+::: {.pf-step #s1}
+
+A group is solvable when its derived series reaches the
 trivial subgroup after finitely many steps. Equivalently, it has
 a finite subnormal series with abelian factors.
 
-::: {.proof}
+::: pf-proof
+
 Define $G^{(0)}=G$ and let $G^{(j+1)}$ be the subgroup generated
 by all commutators $xyx^{-1}y^{-1}$ with $x,y\in G^{(j)}$.
 Solvability means $G^{(n)}=1$ for some finite $n$.
@@ -54,11 +60,17 @@ with every $G_j/G_{j+1}$ abelian. Then $[G_j,G_j]\subseteq G_{j+1}$.
 Induction gives $G^{(j)}\subseteq G_j$: taking commutators preserves
 the inclusion at each step. Therefore $G^{(n)}\subseteq G_n=1$,
 so $G$ is solvable under the derived-series definition.
+
 :::
 
-<1>2. The group $S_4$ is solvable.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The group $S_4$ is solvable.
+
+::: pf-proof
+
 Let
 $$
 V=\{1,(12)(34),(13)(24),(14)(23)\}.
@@ -75,14 +87,20 @@ S_4\triangleright A_4\triangleright V\triangleright1
 $$
 has factors of orders $2$, $3$, and $4$. The first two are cyclic
 because their orders are prime, and the last is the abelian group
-$V\cong C_2\times C_2$. All factors are abelian, so step <1>1
+$V\cong C_2\times C_2$. All factors are abelian, so step [](#s1){.pf-ref}
 proves solvability.
+
 :::
 
-<1>3. The assertion in part (b) is false: every degree-four
+:::
+
+::: {.pf-step #s3}
+
+The assertion in part (b) is false: every degree-four
 polynomial over $\mathbb Q$ is solvable by radicals.
 
-::: {.proof}
+::: pf-proof
+
 Let $K$ be its splitting field. This is a finite Galois extension
 because the base field has characteristic zero. Its Galois group
 acts faithfully on the distinct roots: an automorphism fixing
@@ -93,28 +111,40 @@ This argument includes reducible polynomials and repeated roots.
 
 A subgroup $H$ of a solvable group $G$ is solvable because
 $H^{(j)}\subseteq G^{(j)}$ for every $j$, by induction on
-commutators. Step <1>2 therefore makes the Galois group solvable.
+commutators. Step [](#s2){.pf-ref} therefore makes the Galois group solvable.
 The Galois criterion for solvability by radicals in characteristic
 zero states that a polynomial is solvable by radicals exactly
 when its splitting-field Galois group is solvable [@DF04].
 Applying it proves the claim and disproves the proposed negation.
+
 :::
 
-<1>4. The assertion in part (c) is also false. An irreducible
+:::
+
+::: pf-step
+
+The assertion in part (c) is also false. An irreducible
 counterexample is $g(x)=x^5-2$.
 
-::: {.proof}
+::: pf-proof
+
 This polynomial is irreducible over $\mathbb Q$ by Eisenstein's
 criterion at $2$ [@DF04]. Let $a=\sqrt[5]{2}$, and let $\zeta$
 be a primitive fifth root of unity. Its five roots are
 $a,\zeta a,\zeta^2a,\zeta^3a,\zeta^4a$.
 
 The number $\zeta$ is a root of the quartic
-$x^4+x^3+x^2+x+1$. By step <1>3, all roots of that quartic
+$x^4+x^3+x^2+x+1$. By step [](#s3){.pf-ref}, all roots of that quartic
 lie in a radical extension of $\mathbb Q$. Choose a radical
 tower ending in a field $M$ containing them. Adjoining $a$ is
 one further radical adjunction, since $a^5=2\in M$.
 The resulting field $M(a)$ contains all five displayed roots of
 $g$. Thus $g$ is solvable by radicals.
+
 :::
+
+:::
+
+:::
+
 :::

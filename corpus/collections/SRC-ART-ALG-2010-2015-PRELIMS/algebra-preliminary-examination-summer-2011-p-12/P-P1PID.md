@@ -32,28 +32,46 @@ Prove that $R$ is a field.
 :::
 
 ::: {.solution}
-<1>1. The ring $R$ is an integral domain.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The ring $R$ is an integral domain.
+
+::: pf-proof
+
 Since $1\ne0$, the principal ideal $(0)$ is proper and
 hence prime by hypothesis. If $ab=0$, then $ab\in(0)$,
 so primality gives $a\in(0)$ or $b\in(0)$.
 Thus $R$ has no zero divisors and is an integral domain.
+
 :::
 
-<1>2. Every nonzero element of $R$ is a unit.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every nonzero element of $R$ is a unit.
+
+::: pf-proof
+
 Let $a\ne0$. Suppose that $a$ is not a unit.
 Then $(a^2)$ is proper: if $1=a^2b$ for some $b\in R$,
 the element $ab$ would be an inverse of $a$.
 By hypothesis $(a^2)$ is therefore prime.
 Since $a\cdot a\in(a^2)$, primality implies $a\in(a^2)$.
-Write $a=a^2c$. Then $a(1-ac)=0$, and step <1>1 together
+Write $a=a^2c$. Then $a(1-ac)=0$, and step [](#s1){.pf-ref} together
 with $a\ne0$ gives $1=ac$. This makes $a$ a unit, a
 contradiction. Hence every nonzero element is invertible,
 and the nonzero commutative unital ring $R$ is a field.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

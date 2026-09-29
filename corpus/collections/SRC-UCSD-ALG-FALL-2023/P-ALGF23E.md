@@ -35,8 +35,15 @@ Justify your answer.
 :::
 
 ::: {.solution}
-<1>1. Over $\mathbb C$, the polynomial $t^p-1$ has $p$ distinct roots.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Over $\mathbb C$, the polynomial $t^p-1$ has $p$ distinct roots.
+
+::: pf-proof
+
 Let
 \[
 \zeta_p=e^{2\pi i/p}.
@@ -50,39 +57,60 @@ The roots are distinct because the derivative
 pt^{p-1}
 \]
 does not vanish at any $p$-th root of unity in characteristic zero.
+
 :::
 
-<1>2. If $F=\mathbb C$, the characteristic polynomial of $a$ equals its minimal polynomial:
+:::
+
+::: {.pf-step #s2}
+
+If $F=\mathbb C$, the characteristic polynomial of $a$ equals its minimal polynomial:
 \[
 \chi_a(t)=t^p-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The minimal polynomial divides the characteristic polynomial.
 By hypothesis its degree is $p$, while $a$ is a $p\times p$ matrix, so $\chi_a$ also has degree $p$.
 Both polynomials are monic.
 Therefore they are equal.
+
 :::
 
-<1>3. If $F=\mathbb C$, the Jordan form of $a$ is
+:::
+
+::: pf-step
+
+If $F=\mathbb C$, the Jordan form of $a$ is
 \[
 \operatorname{diag}(1,\zeta_p,\zeta_p^2,\ldots,\zeta_p^{p-1}),
 \]
 up to permutation of the diagonal entries.
-::: {.proof}
-By <1>1 and <1>2, the characteristic polynomial has the $p$ distinct eigenvalues
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the characteristic polynomial has the $p$ distinct eigenvalues
 \[
 1,\zeta_p,\ldots,\zeta_p^{p-1},
 \]
 each with algebraic multiplicity one.
 Hence every Jordan block has size one, and each eigenvalue occurs exactly once.
 This proves part (a).
+
 :::
 
-<1>4. Over $\mathbb F_p$ one has
+:::
+
+::: {.pf-step #s4}
+
+Over $\mathbb F_p$ one has
 \[
 t^p-1=(t-1)^p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 In characteristic $p$, all intermediate binomial coefficients
 \[
 \binom pk
@@ -93,25 +121,39 @@ Thus the binomial theorem gives
 \[
 (t-1)^p=t^p-1.
 \]
+
 :::
 
-<1>5. If $F=\mathbb F_p$, the largest Jordan block of $a$ for the eigenvalue $1$ has size $p$.
-::: {.proof}
-By <1>4, the minimal polynomial is
+:::
+
+::: {.pf-step #s5}
+
+If $F=\mathbb F_p$, the largest Jordan block of $a$ for the eigenvalue $1$ has size $p$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, the minimal polynomial is
 \[
 m_a(t)=(t-1)^p.
 \]
 For a matrix whose only eigenvalue is $1$, the exponent of $(t-1)$ in the minimal polynomial is the size of the largest Jordan block for that eigenvalue.
 Hence a Jordan block of size $p$ occurs.
+
 :::
 
-<1>6. If $F=\mathbb F_p$, the Jordan form of $a$ is the single block
+:::
+
+::: pf-step
+
+If $F=\mathbb F_p$, the Jordan form of $a$ is the single block
 \[
 J_p(1).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The matrix $a$ acts on a vector space of dimension $p$.
-By <1>5, one Jordan block already has size $p$, so it exhausts the entire dimension and no other block can occur.
+By step [](#s5){.pf-ref}, one Jordan block already has size $p$, so it exhausts the entire dimension and no other block can occur.
 Thus the Jordan form is
 \[
 J_p(1)=
@@ -124,5 +166,11 @@ J_p(1)=
 \end{pmatrix}.
 \]
 This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

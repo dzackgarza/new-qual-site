@@ -31,13 +31,17 @@ Prove that every finite group is isomorphic to
 2. A group of even permutations.
 :::
 
-
 ::: {.solution}
 Let $G$ be a finite group with $\abs{G}=n$.
 
-<1>1. $G$ is isomorphic to a group of permutations.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$G$ is isomorphic to a group of permutations.
+
+::: pf-proof
+
 For each $g\in G$, let
 $$
 L_g:G\longrightarrow G,
@@ -65,12 +69,18 @@ $$
 G\cong \lambda(G)\le \operatorname{Sym}(G)\cong S_n.
 $$
 This is Cayley’s theorem.
+
 :::
 
-<1>2. $G$ is isomorphic to a group of even permutations.
+:::
 
-::: {.proof}
-By step <1>1 it suffices to embed $S_n$ into an alternating group.
+::: {.pf-step #s2}
+
+$G$ is isomorphic to a group of even permutations.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} it suffices to embed $S_n$ into an alternating group.
 Regard $S_n$ as the permutations of $\{1,\ldots,n+2\}$ that fix $n+1$ and $n+2$, and let
 $$
 \tau=(n+1\ n+2).
@@ -112,11 +122,17 @@ $$
 S_n\hookrightarrow A_{n+2}.
 $$
 Composing this embedding with the Cayley embedding of $G$ proves that $G$ is isomorphic to a subgroup of an alternating group, hence to a group of even permutations.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part 1, and step <1>2 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part 1, and step [](#s2){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

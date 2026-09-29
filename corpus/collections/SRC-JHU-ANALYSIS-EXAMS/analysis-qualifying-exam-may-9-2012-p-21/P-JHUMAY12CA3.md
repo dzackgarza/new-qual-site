@@ -34,9 +34,14 @@ Prove that $z = 0$ is a removable singularity.
 Choose $m\in\RR$ with $\operatorname{Re}f(z)\geq m$
 on the punctured disk $U$.
 
-<1>1. A fractional transform of $f$ is bounded and holomorphic on $U$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+A fractional transform of $f$ is bounded and holomorphic on $U$.
+
+::: pf-proof
+
 Let $F=f-m+1$, so $\operatorname{Re}F\geq1$, and put
 $$
 q(z)=\frac{F(z)-1}{F(z)+1}.
@@ -49,11 +54,17 @@ $$
 so $\abs{q}<1$ throughout $U$. [[D-BQLJV|Riemann's removable singularity theorem]]
 extends $q$ holomorphically to the full unit disk; write $Q$ for this extension.
 Continuity gives $\abs{Q(0)}\leq1$.
+
 :::
 
-<1>2. The inverse transform extends $f$ across zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The inverse transform extends $f$ across zero.
+
+::: pf-proof
+
 In fact $\abs{Q(0)}<1$. Otherwise $Q$ would attain its
 maximum modulus one at an interior point of the disk.
 The [[T-BYNL5|maximum modulus principle]] would make $Q$ constant
@@ -69,11 +80,17 @@ $q=(F-1)/(F+1)$ gives $F=(1+q)/(1-q)$ and consequently
 $f=m+2q/(1-q)$. Thus $\widetilde f=f$ on $U$.
 The displayed function is a holomorphic extension of
 $f$ through zero, proving removability.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 constructs the required holomorphic extension across zero.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} constructs the required holomorphic extension across zero.
+
+:::
+
+:::
+
 :::

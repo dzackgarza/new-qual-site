@@ -31,10 +31,16 @@ Compute the following two limits allowing for the values of $\pm\infty$:
 (b) $\displaystyle\lim_{n \to \infty} \int_0^\infty \frac{x^n}{1 + x^{n+1}} e^{-x/n}\,dx$
 :::
 
-
 ::: {.solution}
-<1>1. Evaluate part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Evaluate part (a).
+
+::: pf-proof
+
 For fixed \(x\ne1\),
 \[
 \frac{x^n}{1+x^{n+2}}e^{-x/n}
@@ -64,10 +70,17 @@ The Dominated Convergence Theorem gives
 \frac{x^n}{1+x^{n+2}}e^{-x/n}\,dx
 =\int_1^\infty x^{-2}\,dx=1.}
 \]
+
 :::
 
-<1>2. Evaluate part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Evaluate part (b).
+
+::: pf-proof
+
 The integrands are nonnegative. For every fixed \(x>1\),
 \[
 \frac{x^n}{1+x^{n+1}}e^{-x/n}
@@ -89,5 +102,11 @@ Hence
 \int_0^\infty\frac{x^n}{1+x^{n+1}}e^{-x/n}\,dx
 =+\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

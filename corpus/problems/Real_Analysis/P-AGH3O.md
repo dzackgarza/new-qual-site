@@ -41,30 +41,53 @@ Conclude that $Hf$ is not locally integrable.
 ::: {.solution}
 Here $Hf(x) = \sup_{r>0}\frac{1}{2r}\int_{x-r}^{x+r}|f(t)|\,dt$ is the Hardy--Littlewood maximal function, and $f(x) = \frac{1}{|x|\log^2(1/|x|)}$ for $0 < |x| \le 1/2$.
 
-<1>1. For $0 < s \le 1/2$, $\int_{-s}^{s} f = \frac{2}{\log(1/s)}$. In particular $\int_\RR f = \frac{2}{\log 2}$, so $f \in L^1(\RR)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For $0 < s \le 1/2$, $\int_{-s}^{s} f = \frac{2}{\log(1/s)}$. In particular $\int_\RR f = \frac{2}{\log 2}$, so $f \in L^1(\RR)$.
+
+::: pf-proof
+
 $f$ is even, and the substitution $u = \log(1/t)$, $du = -dt/t$, gives $\int_0^{s}\frac{dt}{t\log^2(1/t)} = \int_{\log(1/s)}^\infty u^{-2}\,du = \frac{1}{\log(1/s)}$.
+
 :::
 
-<1>2. For $0 < |x| \le 1/2$, $Hf(x) \ge \frac{1}{2|x|\log(1/|x|)}$.
+:::
 
-::: {.proof}
-Take $r = 2|x|$. The interval $(x - r, x + r)$ contains $(-|x|, |x|)$ and $f \ge 0$, so by step <1>1
+::: {.pf-step #s2}
+
+For $0 < |x| \le 1/2$, $Hf(x) \ge \frac{1}{2|x|\log(1/|x|)}$.
+
+::: pf-proof
+
+Take $r = 2|x|$. The interval $(x - r, x + r)$ contains $(-|x|, |x|)$ and $f \ge 0$, so by step [](#s1){.pf-ref}
 $$
 Hf(x) \ge \frac{1}{4|x|}\int_{-|x|}^{|x|} f = \frac{1}{4|x|}\cdot\frac{2}{\log(1/|x|)}.
 $$
 So part (b) holds with $c = 1/2$.
+
 :::
 
-<1>3. $Hf$ is not integrable on any neighborhood of $0$.
+:::
 
-::: {.proof}
-For $0 < \delta \le 1/2$, step <1>2 and the substitution $u = \log(1/x)$ give
+::: pf-step
+
+$Hf$ is not integrable on any neighborhood of $0$.
+
+::: pf-proof
+
+For $0 < \delta \le 1/2$, step [](#s2){.pf-ref} and the substitution $u = \log(1/x)$ give
 $$
 \int_{-\delta}^{\delta} Hf \ge 2 \cdot \frac12\int_0^{\delta}\frac{dx}{x\log(1/x)} = \int_{\log(1/\delta)}^\infty \frac{du}{u} = \infty.
 $$
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

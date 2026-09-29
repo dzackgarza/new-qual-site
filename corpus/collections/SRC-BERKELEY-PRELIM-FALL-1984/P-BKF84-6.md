@@ -32,7 +32,12 @@ For nonzero integers $a,b,c$, prove that
 :::
 
 ::: {.solution}
-<1>1. Fix a prime $p$ and set
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix a prime $p$ and set
 $$
 \alpha=v_p(a),
 \qquad
@@ -43,7 +48,8 @@ $$
 where the valuations are taken on the absolute values of the nonzero
 integers.
 
-::: {.proof}
+::: pf-proof
+
 For nonzero integers, prime factorization gives
 $$
 v_p(\gcd(r,s))
@@ -56,36 +62,54 @@ v_p(\operatorname{lcm}(r,s))
 =
 \max\{v_p(r),v_p(s)\}.
 $$
+
 :::
 
-<1>2. The exponent of $p$ on the left-hand side is
+:::
+
+::: {.pf-step #s2}
+
+The exponent of $p$ on the left-hand side is
 $$
 \min\bigl(\alpha,\max(\beta,\gamma)\bigr).
 $$
 
-::: {.proof}
-Apply the two valuation formulas from step <1>1 first to
+::: pf-proof
+
+Apply the two valuation formulas from step [](#s1){.pf-ref} first to
 $\operatorname{lcm}(b,c)$ and then to its gcd with $a$.
+
 :::
 
-<1>3. The exponent of $p$ on the right-hand side is
+:::
+
+::: {.pf-step #s3}
+
+The exponent of $p$ on the right-hand side is
 $$
 \max\bigl(\min(\alpha,\beta),\min(\alpha,\gamma)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply the gcd formula separately to $(a,b)$ and $(a,c)$ and then apply
 the lcm formula to the resulting two integers.
+
 :::
 
-<1>4. For all real numbers $\alpha,\beta,\gamma$,
+:::
+
+::: {.pf-step #s4}
+
+For all real numbers $\alpha,\beta,\gamma$,
 $$
 \min\bigl(\alpha,\max(\beta,\gamma)\bigr)
 =
 \max\bigl(\min(\alpha,\beta),\min(\alpha,\gamma)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\beta\leq\gamma$, then the left-hand side is
 $$
 \min(\alpha,\gamma).
@@ -98,9 +122,14 @@ $$
 $$
 so the right-hand side is the same number. The case
 $\gamma\leq\beta$ is symmetric.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 \gcd\bigl(a,\operatorname{lcm}(b,c)\bigr)
@@ -109,15 +138,22 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>2--<1>4, the two positive integers in the displayed formula
+::: pf-proof
+
+By steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}, the two positive integers in the displayed formula
 have the same $p$-adic valuation for every prime $p$. Uniqueness of
 prime factorization therefore makes them equal.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the desired identity.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the desired identity.
+
+:::
+
+:::
+
 :::

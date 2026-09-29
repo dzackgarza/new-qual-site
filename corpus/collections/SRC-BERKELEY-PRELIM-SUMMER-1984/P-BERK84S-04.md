@@ -39,7 +39,6 @@ $$
 with x, $y > 0$
 :::
 
-
 ::: {.solution}
 Write
 \[
@@ -55,8 +54,14 @@ so the larger eigenvalue is
 \lambda_+=\frac{a+d+\sqrt{(a-d)^2+4bc}}2.
 \]
 
-<1>1. One has $\lambda_+>a$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+One has $\lambda_+>a$.
+
+::: pf-proof
+
 Since $bc>0$,
 \[
 \sqrt{(a-d)^2+4bc}>|a-d|\ge a-d.
@@ -66,11 +71,18 @@ Therefore
 \lambda_+-a
 =\frac{d-a+\sqrt{(a-d)^2+4bc}}2>0.
 \]
+
 :::
 
-<1>2. The vector $v=(b,\lambda_+-a)^T$ is a strictly positive eigenvector.
-::: {.proof}
-By hypothesis $b>0$, and by <1>1 also $\lambda_+-a>0$. Hence both coordinates of $v$ are strictly positive.
+:::
+
+::: pf-step
+
+The vector $v=(b,\lambda_+-a)^T$ is a strictly positive eigenvector.
+
+::: pf-proof
+
+By hypothesis $b>0$, and by step [](#s1){.pf-ref} also $\lambda_+-a>0$. Hence both coordinates of $v$ are strictly positive.
 
 Moreover, since $\lambda_+$ is an eigenvalue,
 \[
@@ -97,5 +109,11 @@ Therefore
 A v=\lambda_+ v,
 \]
 with both coordinates of $v$ positive, as required.
+
 :::
+
+:::
+
+:::
+
 :::

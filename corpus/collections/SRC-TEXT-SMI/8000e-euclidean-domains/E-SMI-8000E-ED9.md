@@ -30,12 +30,17 @@ Prove that if $a$ is a nonzero, nonunit element of a strongly Euclidean domain, 
 [A domain is called "strongly Euclidean" if it is a Euclidean domain with a size function $\abs{\cdot}$ satisfying $\abs{ab} = \abs{a}$ if $b$ is a unit, and $\abs{a} < \abs{ab}$ and $\abs{b} > 0$ if $b$ is not a unit.]
 :::
 
-
 ::: {.solution}
 Write $\delta(a)=\lvert a\rvert$ for the strongly Euclidean size.
 
-<1>1. Every nonzero nonunit factors into finitely many irreducibles.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every nonzero nonunit factors into finitely many irreducibles.
+
+::: pf-proof
+
 We use induction on the positive integer $\delta(a)$. Since $a$ is a nonunit,
 the strong Euclidean hypothesis gives
 $$
@@ -58,10 +63,17 @@ $$
 Thus both $b$ and $c$ have strictly smaller positive size. By induction each
 factors into finitely many irreducibles, and multiplying those factorizations
 gives one for $a$.
+
 :::
 
-<1>2. In any irreducible factorization of $a$, the sizes of successive partial products strictly increase.
-::: {.proof}
+:::
+
+::: pf-step
+
+In any irreducible factorization of $a$, the sizes of successive partial products strictly increase.
+
+::: pf-proof
+
 Let
 $$
 a=p_1p_2\cdots p_r
@@ -82,10 +94,17 @@ Hence
 $$
 0<\delta(q_1)<\delta(q_2)<\cdots<\delta(q_r)=\delta(a).
 $$
+
 :::
 
-<1>3. Bound the number of irreducible factors by $\lvert a\rvert$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Bound the number of irreducible factors by $\lvert a\rvert$.
+
+::: pf-proof
+
 The numbers
 $$
 \delta(q_1),\ldots,\delta(q_r)
@@ -100,5 +119,11 @@ $$
 \boxed{\lvert a\rvert}
 $$
 irreducible elements.
+
 :::
+
+:::
+
+:::
+
 :::

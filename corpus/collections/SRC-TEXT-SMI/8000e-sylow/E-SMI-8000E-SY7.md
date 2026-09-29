@@ -31,8 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. For a finite $p$-group action, the number of fixed points is congruent to the size of the set modulo $p$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+For a finite $p$-group action, the number of fixed points is congruent to the size of the set modulo $p$.
+
+::: pf-proof
+
 Let a finite $p$-group $Q$ act on a finite set $X$. Decompose $X$ into
 $Q$-orbits. For $x\in X$, the orbit-stabilizer theorem gives
 $$
@@ -50,10 +57,17 @@ for some integer $N$. Hence
 $$
 \boxed{|X^Q|\equiv |X|\pmod p.}
 $$
+
 :::
 
-<1>2. Let $P'$ act on the left cosets $G/P$ by left multiplication.
-::: {.proof}
+:::
+
+::: pf-step
+
+Let $P'$ act on the left cosets $G/P$ by left multiplication.
+
+::: pf-proof
+
 Define
 $$
 x\cdot(gP)=(xg)P
@@ -64,7 +78,7 @@ Because $P$ is Sylow,
 $$
 |G/P|=[G:P]
 $$
-is not divisible by $p$. By step <1>1,
+is not divisible by $p$. By step [](#s1){.pf-ref},
 $$
 |(G/P)^{P'}|\equiv [G:P]\not\equiv0\pmod p.
 $$
@@ -72,10 +86,17 @@ Therefore the action has at least one fixed coset, say
 $$
 gP.
 $$
+
 :::
 
-<1>3. A fixed coset forces $P$ and $P'$ to be conjugate.
-::: {.proof}
+:::
+
+::: pf-step
+
+A fixed coset forces $P$ and $P'$ to be conjugate.
+
+::: pf-proof
+
 The coset $gP$ is fixed by $P'$ precisely when, for every $x\in P'$,
 $$
 xgP=gP.
@@ -102,5 +123,11 @@ $$
 \boxed{P'=gPg^{-1}.}
 $$
 Thus any two Sylow $p$-subgroups are conjugate.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -54,8 +54,14 @@ G=\pi_1(S,*),
 C=[G,G].
 \]
 
-<1>1. The subgroup $C$ is normal in $G$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup $C$ is normal in $G$.
+
+::: pf-proof
+
 The commutator subgroup of any group is characteristic.
 Indeed, if
 \[
@@ -68,36 +74,57 @@ is an automorphism, then
 for every $x,y\in G$.
 Thus $\varphi(C)\subseteq C$; applying the same argument to $\varphi^{-1}$ gives equality.
 Every characteristic subgroup is normal, so $C\trianglelefteq G$.
+
 :::
 
-<1>2. The covering
+:::
+
+::: pf-step
+
+The covering
 \[
 p:\widetilde S\longrightarrow S
 \]
 corresponding to $C$ is regular.
-::: {.proof}
+
+::: pf-proof
+
 For a connected covering of a connected, locally path-connected space, the covering is regular exactly when the corresponding subgroup of the fundamental group is normal.
-By <1>1, the corresponding subgroup $C$ is normal in $G$.
+By step [](#s1){.pf-ref}, the corresponding subgroup $C$ is normal in $G$.
 Hence $p$ is regular.
+
 :::
 
-<1>3. The deck transformation group is
+:::
+
+::: {.pf-step #s3}
+
+The deck transformation group is
 \[
 \operatorname{Deck}(p)\cong G/C.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a regular covering corresponding to a normal subgroup $H\trianglelefteq\pi_1(S,*)$, the deck transformation group is canonically isomorphic to
 \[
 \pi_1(S,*)/H.
 \]
 Apply this with $H=C$.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 G/C\cong\ZZ^4.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a closed orientable surface of genus $2$,
 \[
 G
@@ -114,14 +141,21 @@ Therefore
 \[
 G/C=G_{\mathrm{ab}}\cong\ZZ^4.
 \]
+
 :::
 
-<1>5. The element
+:::
+
+::: pf-step
+
+The element
 \[
 \gamma=[a_1,b_1]
 \]
 is nontrivial in $G$.
-::: {.proof}
+
+::: pf-proof
+
 Let $F(a,b)$ be the free group on $a,b$.
 Define a map on the generators of the surface presentation by
 \[
@@ -149,15 +183,22 @@ But
 \]
 which is a nonempty reduced word in the free group and hence is not the identity.
 Thus $\gamma\ne1$ in $G$.
+
 :::
 
-<1>6. The nontrivial element $\gamma=[a_1,b_1]$ induces the trivial deck transformation of $\widetilde S$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The nontrivial element $\gamma=[a_1,b_1]$ induces the trivial deck transformation of $\widetilde S$.
+
+::: pf-proof
+
 By definition,
 \[
 \gamma\in[G,G]=C.
 \]
-Under the isomorphism in <1>3, the deck transformation associated to an element $g\in G$ depends only on its coset $gC$.
+Under the isomorphism in step [](#s3){.pf-ref}, the deck transformation associated to an element $g\in G$ depends only on its coset $gC$.
 Thus
 \[
 \gamma C=C,
@@ -166,6 +207,11 @@ the identity element of $G/C$, so $\gamma$ induces the identity deck transformat
 
 Equivalently, the lift of a loop representing $\gamma$ from a chosen point of the fiber is closed.
 The associated deck transformation fixes that point, and a deck transformation of a connected cover that fixes one point is the identity.
+
+:::
+
+:::
+
 :::
 
 Therefore

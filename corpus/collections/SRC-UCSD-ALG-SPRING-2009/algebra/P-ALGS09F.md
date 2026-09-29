@@ -42,8 +42,14 @@ Since $R$ is a PID and is not a field,
 \]
 for some nonzero nonunit $\pi\in R$.
 
-<1>1. Every irreducible element of $R$ is associate to $\pi$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every irreducible element of $R$ is associate to $\pi$.
+
+::: pf-proof
+
 Let $q\in R$ be irreducible.
 Then $(q)$ is a nonzero prime ideal of the PID $R$, hence a maximal ideal.
 Since $R$ has only one maximal ideal,
@@ -51,9 +57,14 @@ Since $R$ has only one maximal ideal,
 (q)=\mathfrak m=(\pi).
 \]
 Thus $q$ and $\pi$ are associates.
+
 :::
 
-<1>2. Every finitely generated $R$-module is isomorphic to
+:::
+
+::: {.pf-step #s2}
+
+Every finitely generated $R$-module is isomorphic to
 \[
 R^r\oplus \bigoplus_{i=1}^t R/(\pi^{e_i})
 \]
@@ -61,20 +72,29 @@ for integers $r,t\ge0$ and positive integers $e_i$; after reordering one may ass
 \[
 1\le e_1\le e_2\le\cdots\le e_t.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The structure theorem for finitely generated modules over a PID gives
 \[
 M\cong R^r\oplus\bigoplus_j R/(d_j),
 \]
 where the nonzero nonunits $d_j$ may be chosen in invariant-factor form, or equivalently decomposed into powers of irreducibles in elementary-divisor form.
-By <1>1, every irreducible of $R$ is associate to $\pi$.
+By step [](#s1){.pf-ref}, every irreducible of $R$ is associate to $\pi$.
 Hence every elementary divisor is associate to a power $\pi^e$, giving the displayed decomposition.
 Conversely every such finite direct sum is a finitely generated $R$-module.
+
 :::
 
-<1>3. There are only countably infinitely many isomorphism classes of finitely generated $R$-modules.
-::: {.proof}
-By <1>2, an isomorphism class is determined by a nonnegative integer $r$ and a finite nondecreasing sequence
+:::
+
+::: pf-step
+
+There are only countably infinitely many isomorphism classes of finitely generated $R$-modules.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, an isomorphism class is determined by a nonnegative integer $r$ and a finite nondecreasing sequence
 \[
 (e_1,\ldots,e_t)
 \]
@@ -86,13 +106,20 @@ R/(\pi),\ R/(\pi^2),\ R/(\pi^3),\ldots
 \]
 are pairwise nonisomorphic: the annihilator of $R/(\pi^n)$ is $(\pi^n)$, and these ideals are distinct.
 Thus there are exactly countably infinitely many isomorphism classes.
+
 :::
 
-<1>4. For all integers $a,b\ge1$, there is a nonzero homomorphism
+:::
+
+::: {.pf-step #s4}
+
+For all integers $a,b\ge1$, there is a nonzero homomorphism
 \[
 R/(\pi^a)\longrightarrow R/(\pi^b).
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $a\ge b$, define
 \[
 \varphi(\overline r)=\overline r.
@@ -116,11 +143,18 @@ It is nonzero because
 \[
 \pi^{b-a}\notin(\pi^b).
 \]
+
 :::
 
-<1>5. If $M$ and $N$ are nonzero finitely generated torsion $R$-modules, then there is a nonzero homomorphism $M\to N$.
-::: {.proof}
-By <1>2, choose cyclic direct summands
+:::
+
+::: pf-step
+
+If $M$ and $N$ are nonzero finitely generated torsion $R$-modules, then there is a nonzero homomorphism $M\to N$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, choose cyclic direct summands
 \[
 R/(\pi^a)\subseteq M,
 \qquad
@@ -136,7 +170,7 @@ be the projection onto the chosen summand and
 i:R/(\pi^b)\hookrightarrow N
 \]
 the inclusion of the chosen summand.
-By <1>4 there is a nonzero map
+By step [](#s4){.pf-ref} there is a nonzero map
 \[
 \varphi:R/(\pi^a)\to R/(\pi^b).
 \]
@@ -146,5 +180,11 @@ i\circ\varphi\circ p:M\to N
 \]
 is nonzero: choose $x$ in the selected summand of $M$ with $\varphi(x)\ne0$.
 Thus the required homomorphism exists.
+
 :::
+
+:::
+
+:::
+
 :::

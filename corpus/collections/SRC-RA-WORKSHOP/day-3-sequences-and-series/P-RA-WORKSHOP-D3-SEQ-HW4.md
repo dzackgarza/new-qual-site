@@ -23,9 +23,23 @@ Prove that there is a subsequence $\{a_{n_k}\}$ of $\{a_n\}$ such that $\sum_{k=
 :::
 
 :::: {.solution}
-<1>1. Extract a rapidly decaying subsequence.
+
+::: pf
+
+::: pf-step
+
+Extract a rapidly decaying subsequence.
 Proof: since $|a_n| \to 0$, for each $k \ge 1$ we may choose an index $n_k$ with $n_1 < n_2 < \cdots$ and $|a_{n_k}| \le 2^{-k}$ (indeed $|a_n| < 2^{-k}$ for all sufficiently large $n$, so pick any $n_k$ larger than $n_{k-1}$ with this property).
-<1>2. The subseries converges absolutely.
+
+:::
+
+::: pf-step
+
+The subseries converges absolutely.
 Proof: $\sum_{k=1}^\infty |a_{n_k}| \le \sum_{k=1}^\infty 2^{-k} = 1 < \infty$, so $\sum_k a_{n_k}$ converges absolutely, hence converges.
-<1>3. Q.E.D.
+
+:::
+
+:::
+
 :::

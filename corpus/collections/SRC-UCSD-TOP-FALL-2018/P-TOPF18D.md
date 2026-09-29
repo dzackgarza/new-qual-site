@@ -21,25 +21,59 @@ Prove that the result still holds even if $M$ is non-orientable.
 :::
 
 ::: {.solution}
-<1>1. If $M$ is closed, connected, orientable, and $3$-dimensional, then $\chi(M)=0$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $M$ is closed, connected, orientable, and $3$-dimensional, then $\chi(M)=0$.
+
+::: pf-proof
+
 Over $\mathbb Q$, Poincaré duality gives $b_i=b_{3-i}$. Hence
 $$\chi(M)=b_0-b_1+b_2-b_3=(b_0-b_3)+(b_2-b_1)=0.$$
+
 :::
 
-<1>2. If $M$ is nonorientable, let $p:\widetilde M\to M$ be its orientation double cover.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $M$ is nonorientable, let $p:\widetilde M\to M$ be its orientation double cover.
+
+::: pf-proof
+
 The orientation character defines a connected two-sheeted covering, and $\widetilde M$ is orientable.
+
 :::
 
-<1>3. Then $\chi(\widetilde M)=2\chi(M)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Then $\chi(\widetilde M)=2\chi(M)$.
+
+::: pf-proof
+
 Euler characteristic is multiplicative under finite-sheeted coverings of finite CW complexes; closed manifolds admit finite CW structures.
+
 :::
 
-<1>4. Since $\widetilde M$ is a closed orientable $3$-manifold, <1>1 gives $\chi(\widetilde M)=0$, so
-$$\boxed{\chi(M)=0}.$$
-::: {.proof}
-Combine <1>1--<1>3.
 :::
+
+::: pf-step
+
+Since $\widetilde M$ is a closed orientable $3$-manifold, step [](#s1){.pf-ref} gives $\chi(\widetilde M)=0$, so
+$$\boxed{\chi(M)=0}.$$
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

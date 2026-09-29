@@ -30,7 +30,12 @@ has finite index in $K$.
 :::
 
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: pf-step
+
+Define
 $$
 \Phi:K/(K\cap H)\longrightarrow G/H
 $$
@@ -39,13 +44,20 @@ $$
 \Phi\bigl(k(K\cap H)\bigr)=kH.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This gives a candidate map from the set of left cosets of $K\cap H$ in $K$ to the set of left cosets of $H$ in $G$.
+
 :::
 
-<1>2. The map $\Phi$ is well-defined.
+:::
 
-::: {.proof}
+::: pf-step
+
+The map $\Phi$ is well-defined.
+
+::: pf-proof
+
 Suppose
 $$
 k_1(K\cap H)=k_2(K\cap H).
@@ -59,11 +71,17 @@ $$
 k_1H=k_2H.
 $$
 Thus the value of $\Phi$ depends only on the coset.
+
 :::
 
-<1>3. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The map $\Phi$ is injective.
+
+::: pf-proof
+
 Suppose
 $$
 \Phi\bigl(k_1(K\cap H)\bigr)
@@ -82,12 +100,18 @@ which means
 $$
 k_1(K\cap H)=k_2(K\cap H).
 $$
+
 :::
 
-<1>4. The index $[K:K\cap H]$ is finite.
+:::
 
-::: {.proof}
-By step <1>3,
+::: {.pf-step #s4}
+
+The index $[K:K\cap H]$ is finite.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 [K:K\cap H]
 =
@@ -101,11 +125,17 @@ The right-hand side is finite by hypothesis. Therefore
 $$
 \boxed{[K:K\cap H]<\infty}.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

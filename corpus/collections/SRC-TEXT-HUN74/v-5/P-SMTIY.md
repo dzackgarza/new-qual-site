@@ -23,21 +23,39 @@ Show that if $|K| = p^n$, then every element of $K$ has a unique $p$th root in $
 :::
 
 ::: {.solution}
-<1>1. The Frobenius map $\varphi\colon K \to K$, $\varphi(x) = x^p$, is an injective ring homomorphism.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The Frobenius map $\varphi\colon K \to K$, $\varphi(x) = x^p$, is an injective ring homomorphism.
+
+::: pf-proof
+
 The field $K$ has order $p^n$, so its prime field is $\FF_p$ and $\operatorname{char}K=p$. Hence $p$ divides $\binom pk$ for $0<k<p$, so $(x + y)^p = x^p + y^p$; also $(xy)^p = x^p y^p$ and $1^p=1$. The kernel of a ring homomorphism out of a field is an ideal not containing $1$, hence $0$.
+
 :::
 
-<1>2. $\varphi$ is bijective.
-
-::: {.proof}
-By step <1>1, $\varphi$ is an injective map from the finite set $K$ to itself, hence surjective.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #s2}
 
-::: {.proof}
-By step <1>2, for every $a\in K$ there is exactly one $x\in K$ with $x^p=\varphi(x)=a$.
+$\varphi$ is bijective.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $\varphi$ is an injective map from the finite set $K$ to itself, hence surjective.
+
 :::
+
+:::
+
+::: pf-qed
+
+By step [](#s2){.pf-ref}, for every $a\in K$ there is exactly one $x\in K$ with $x^p=\varphi(x)=a$.
+
+:::
+
+:::
+
 :::

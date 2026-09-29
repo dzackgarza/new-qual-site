@@ -53,7 +53,11 @@ For the attaching map $f:S^1\to T$, write
 f_*([S^1])=(m,n)\in\ZZ^2.
 \]
 
-<1>1. The relative homology of the pair $(X,T)$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The relative homology of the pair $(X,T)$ is
 \[
 H_k(X,T)\cong
 \begin{cases}
@@ -61,7 +65,9 @@ H_k(X,T)\cong
 0,&k\ne2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Collapsing $T$ to a point collapses the boundary of the newly attached disk as well, so
 \[
 X/T\cong D^2/S^1\cong S^2.
@@ -72,9 +78,14 @@ H_k(X,T)\cong\widetilde H_k(X/T)
 \cong\widetilde H_k(S^2).
 \]
 This is $\ZZ$ in degree $2$ and zero otherwise.
+
 :::
 
-<1>2. In the long exact sequence of $(X,T)$, the connecting homomorphism
+:::
+
+::: {.pf-step #s2}
+
+In the long exact sequence of $(X,T)$, the connecting homomorphism
 \[
 \partial:H_2(X,T)\cong\ZZ\longrightarrow H_1(T)\cong\ZZ^2
 \]
@@ -82,13 +93,20 @@ is
 \[
 \partial(1)=(m,n).
 \]
-::: {.proof}
+
+::: pf-proof
+
 A generator of $H_2(X,T)$ is represented by the newly attached disk with its boundary in $T$.
 The connecting homomorphism sends this relative class to the homology class of its boundary in $T$.
 That boundary is precisely the attaching loop $f:S^1\to T$, whose class is $(m,n)$ by definition.
+
 :::
 
-<1>3. The relevant part of the long exact sequence is therefore
+:::
+
+::: {.pf-step #s3}
+
+The relevant part of the long exact sequence is therefore
 \[
 0\longrightarrow H_2(T)\cong\ZZ
 \longrightarrow H_2(X)
@@ -99,23 +117,32 @@ That boundary is precisely the attaching loop $f:S^1\to T$, whose class is $(m,n
 \longrightarrow0,
 \]
 where the middle map sends $1$ to $(m,n)$.
-::: {.proof}
-Use <1>1 in the long exact sequence
+
+::: pf-proof
+
+Use step [](#s1){.pf-ref} in the long exact sequence
 \[
 H_3(X,T)\to H_2(T)\to H_2(X)\to H_2(X,T)
 \xrightarrow{\partial}H_1(T)\to H_1(X)\to H_1(X,T).
 \]
-The two outer relative groups vanish, and <1>2 identifies $\partial$.
+The two outer relative groups vanish, and step [](#s2){.pf-ref} identifies $\partial$.
+
 :::
 
-<1>4. If $(m,n)=(0,0)$, then
+:::
+
+::: pf-step
+
+If $(m,n)=(0,0)$, then
 \[
 H_2(X)\cong\ZZ^2,
 \qquad
 H_1(X)\cong\ZZ^2.
 \]
-::: {.proof}
-When $(m,n)=0$, the connecting map in <1>3 is zero.
+
+::: pf-proof
+
+When $(m,n)=0$, the connecting map in step [](#s3){.pf-ref} is zero.
 Exactness gives a short exact sequence
 \[
 0\longrightarrow\ZZ\longrightarrow H_2(X)\longrightarrow\ZZ\longrightarrow0.
@@ -124,14 +151,19 @@ It splits because the quotient group $\ZZ$ is free, so
 \[
 H_2(X)\cong\ZZ^2.
 \]
-The next part of <1>3 gives
+The next part of step [](#s3){.pf-ref} gives
 \[
 H_1(X)\cong\operatorname{coker}(0:\ZZ\to\ZZ^2)
 \cong\ZZ^2.
 \]
+
 :::
 
-<1>5. Suppose $(m,n)\ne(0,0)$ and set
+:::
+
+::: pf-step
+
+Suppose $(m,n)\ne(0,0)$ and set
 \[
 d=\gcd(|m|,|n|)\ge1.
 \]
@@ -141,7 +173,9 @@ H_2(X)\cong\ZZ,
 \qquad
 H_1(X)\cong\ZZ\oplus\ZZ/d\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 \ZZ\longrightarrow\ZZ^2,
@@ -149,7 +183,7 @@ The map
 1\longmapsto(m,n),
 \]
 is injective when $(m,n)\ne0$.
-Hence exactness in <1>3 gives
+Hence exactness in step [](#s3){.pf-ref} gives
 \[
 H_2(T)\xrightarrow{\cong}H_2(X),
 \]
@@ -172,15 +206,22 @@ Therefore
 \cong
 \ZZ\oplus\ZZ/d\ZZ.
 \]
+
 :::
 
-<1>6. In every case,
+:::
+
+::: pf-step
+
+In every case,
 \[
 H_0(X)\cong\ZZ,
 \qquad
 H_k(X)=0\quad(k\ge3).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The torus and the attached disk meet along the nonempty image of $S^1$, so $X$ is path-connected and $H_0(X)\cong\ZZ$.
 
 For $k\ge3$, the long exact sequence of $(X,T)$ has
@@ -189,11 +230,18 @@ H_k(T)=0
 \qquad\text{and}\qquad
 H_k(X,T)=0
 \]
-by the homology of the torus and <1>1. Exactness gives $H_k(X)=0$.
+by the homology of the torus and step [](#s1){.pf-ref}. Exactness gives $H_k(X)=0$.
+
 :::
 
-<1>7. Every case listed above actually occurs.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every case listed above actually occurs.
+
+::: pf-proof
+
 The nullhomotopic attaching map has $(m,n)=(0,0)$.
 
 For each $d\ge1$, the map
@@ -208,6 +256,11 @@ has
 \]
 whose coordinate gcd is $d$.
 Hence all the nonzero cases occur as well.
+
+:::
+
+:::
+
 :::
 
 Thus the complete list is

@@ -40,29 +40,41 @@ How many free parameters are required?
 :::
 
 ::: {.solution}
-<1>1. The system is equivalent to the recurrence
+
+::: pf
+
+::: {.pf-step #s1}
+
+The system is equivalent to the recurrence
 $$
 x_{n+4}=-x_n-x_{n+2},
 \qquad
 n\geq1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is obtained by solving the equation
 $$
 x_n+x_{n+2}+x_{n+4}=0
 $$
 for its last term.
+
 :::
 
-<1>2. The odd-indexed subsequence satisfies
+:::
+
+::: {.pf-step #s2}
+
+The odd-indexed subsequence satisfies
 $$
 x_{n+6}=x_n
 $$
 for every odd $n\geq1$.
 
-::: {.proof}
-For odd $n$, step <1>1 gives
+::: pf-proof
+
+For odd $n$, step [](#s1){.pf-ref} gives
 $$
 x_{n+4}=-x_n-x_{n+2}.
 $$
@@ -78,20 +90,31 @@ x_{n+6}
 x_n.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The even-indexed subsequence also satisfies
+:::
+
+::: {.pf-step #s3}
+
+The even-indexed subsequence also satisfies
 $$
 x_{n+6}=x_n
 $$
 for every even $n\geq2$.
 
-::: {.proof}
-The calculation in step <1>2 uses only the recurrence and therefore applies
+::: pf-proof
+
+The calculation in step [](#s2){.pf-ref} uses only the recurrence and therefore applies
 unchanged to even $n$.
+
 :::
 
-<1>4. Choose arbitrary scalars
+:::
+
+::: {.pf-step #s4}
+
+Choose arbitrary scalars
 $$
 a,b,c,d
 $$
@@ -109,7 +132,8 @@ x_5=-a-c,
 x_6=-b-d.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $n=1$,
 $$
 x_1+x_3+x_5=0,
@@ -126,9 +150,14 @@ so
 $$
 x_6=-x_2-x_4=-b-d.
 $$
+
 :::
 
-<1>5. The complete solution determined by $a,b,c,d$ is
+:::
+
+::: {.pf-step #s5}
+
+The complete solution determined by $a,b,c,d$ is
 $$
 \boxed{
 \begin{aligned}
@@ -144,18 +173,25 @@ m=0,1,2,\ldots.
 }
 $$
 
-::: {.proof}
-Step <1>4 gives the first six terms. Steps <1>2--<1>3 give
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives the first six terms. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give
 $$
 x_{n+6}=x_n
 $$
 for every $n\geq1$, so those six values repeat and yield the displayed
 formula.
+
 :::
 
-<1>6. Every sequence in step <1>5 satisfies the infinite system.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Every sequence in step [](#s5){.pf-ref} satisfies the infinite system.
+
+::: pf-proof
+
 It is enough to verify the recurrence over one period. The odd-indexed
 triples are cyclic permutations of
 $$
@@ -170,12 +206,18 @@ $$
 x_n+x_{n+2}+x_{n+4}=0
 $$
 for every $n\geq1$.
+
 :::
 
-<1>7. Every solution of the infinite system occurs uniquely in the form
-given in step <1>5.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+Every solution of the infinite system occurs uniquely in the form
+given in step [](#s5){.pf-ref}.
+
+::: pf-proof
+
 Given any solution, define
 $$
 a=x_1,\quad
@@ -183,31 +225,43 @@ b=x_2,\quad
 c=x_3,\quad
 d=x_4.
 $$
-Step <1>4 forces $x_5$ and $x_6$, and step <1>1 then recursively determines
-every later term. Steps <1>2--<1>3 show that the recursively determined
-sequence is exactly the one in step <1>5. Thus the representation is both
+Step [](#s4){.pf-ref} forces $x_5$ and $x_6$, and step [](#s1){.pf-ref} then recursively determines
+every later term. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that the recursively determined
+sequence is exactly the one in step [](#s5){.pf-ref}. Thus the representation is both
 exhaustive and unique.
+
 :::
 
-<1>8. Exactly
+:::
+
+::: {.pf-step #s8}
+
+Exactly
 $$
 \boxed{4}
 $$
 free parameters are required.
 
-::: {.proof}
+::: pf-proof
+
 The four values
 $$
 a,b,c,d
 $$
-in step <1>5 may be chosen independently, and step <1>7 shows that every
+in step [](#s5){.pf-ref} may be chosen independently, and step [](#s7){.pf-ref} shows that every
 solution is uniquely determined by them. Hence the solution space has four
 free parameters.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>5--<1>8 give all solutions and the number of free parameters.
 :::
+
+::: pf-qed
+
+Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} give all solutions and the number of free parameters.
+
+:::
+
+:::
+
 :::

@@ -38,11 +38,18 @@ Let $f\in L^\infty([0,1])$.
 :::
 
 ::: {.solution}
-<1>1. For every $1<p<\infty$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $1<p<\infty$,
 $$
 \norm{f}_p\le\norm{f}_\infty.
 $$
-::: {.proof}
+
+::: pf-proof
+
 Let $M=\norm{f}_\infty$. Since $[0,1]$ has measure $1$,
 $$
 \norm{f}_p^p=\int_0^1\abs{f}^p\le M^p,
@@ -51,13 +58,20 @@ and taking $p$th roots gives the claim. In particular,
 $$
 \limsup_{p\to\infty}\norm{f}_p\le M.
 $$
+
 :::
 
-<1>2. If $M>0$, then
+:::
+
+::: {.pf-step #s2}
+
+If $M>0$, then
 $$
 \liminf_{p\to\infty}\norm{f}_p\ge M.
 $$
-::: {.proof}
+
+::: pf-proof
+
 Fix $0<\varepsilon<M$. By the definition of essential supremum,
 $$
 A_\varepsilon=\{x:\abs{f(x)}>M-\varepsilon\}
@@ -78,20 +92,34 @@ Since $\varepsilon>0$ is arbitrary,
 $$
 \liminf_{p\to\infty}\norm{f}_p\ge M.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 \lim_{p\to\infty}\norm{f}_p=\norm{f}_\infty.
 }
 $$
-::: {.proof}
-If $M=0$, then $f=0$ almost everywhere and the result is immediate. If $M>0$, combine the limsup bound from step <1>1 with the liminf bound from step <1>2.
+
+::: pf-proof
+
+If $M=0$, then $f=0$ almost everywhere and the result is immediate. If $M>0$, combine the limsup bound from step [](#s1){.pf-ref} with the liminf bound from step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>1 proves part (a), and step <1>3 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s3){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

@@ -37,9 +37,15 @@ Give a proof or counterexample.
 :::
 
 ::: {.solution}
-<1>1. (a) The sum of two nilpotent matrices need not be nilpotent.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+(a) The sum of two nilpotent matrices need not be nilpotent.
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -79,9 +85,14 @@ $$
 for every $m\geq1$. If $(A+B)^r=0$ for some $r\geq1$, then
 $(A+B)^{2r}=0$, contradicting the displayed identity with $m=r$.
 Thus $A+B$ is not nilpotent.
+
 :::
 
-<1>2. (b) Suppose $A^k=0$ for some $k\geq1$, and define
+:::
+
+::: {.pf-step #s2}
+
+(b) Suppose $A^k=0$ for some $k\geq1$, and define
 $$
 S=I+A+A^2+\cdots+A^{k-1}.
 $$
@@ -90,7 +101,8 @@ $$
 (I-A)S=I.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding and cancelling consecutive powers gives
 $$
 \begin{aligned}
@@ -105,34 +117,52 @@ I-A^k\\
 I.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Under the same hypotheses,
+:::
+
+::: {.pf-step #s3}
+
+Under the same hypotheses,
 $$
 S(I-A)=I.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since every term of $S$ is a power of $A$, it commutes with $A$. Thus
 the same finite geometric-series computation gives
 $$
 S(I-A)=I-A^k=I.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{(I-A)^{-1}=I+A+A^2+\cdots+A^{k-1}}.
 $$
 
-::: {.proof}
-Steps <1>2 and <1>3 show that the displayed matrix is both a left and
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that the displayed matrix is both a left and
 right inverse of $I-A$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 answers part (a), and step <1>4 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (a), and step [](#s4){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

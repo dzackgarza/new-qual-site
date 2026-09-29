@@ -30,28 +30,63 @@ Find if possible a choice function for each of the following collections, withou
 :::
 
 ::: {.solution}
-<1>1. (a) Yes: $c(A)=\min A$ (least element) is a choice function for nonempty subsets of $\ZZ_+$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+(a) Yes: $c(A)=\min A$ (least element) is a choice function for nonempty subsets of $\ZZ_+$.
+
+::: pf-proof
+
 $\ZZ_+$ well-ordered.
+
 :::
 
-<1>2. (b) Yes: well-order $\ZZ$ as $0,1,-1,2,-2,\dots$ and take least in that order.
-::: {.proof}
+:::
+
+::: pf-step
+
+(b) Yes: well-order $\ZZ$ as $0,1,-1,2,-2,\dots$ and take least in that order.
+
+::: pf-proof
+
 explicit well-ordering.
+
 :::
 
-<1>3. (c) Yes: $\QQ$ countable, fix enumeration $q_1,q_2,\dots$ and take $c(A)=q_{\min\{n:q_n\in A\}}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+(c) Yes: $\QQ$ countable, fix enumeration $q_1,q_2,\dots$ and take $c(A)=q_{\min\{n:q_n\in A\}}$.
+
+::: pf-proof
+
 countable well-ordering.
+
 :::
 
-<1>4. (d) No: $\mathcal D$ is all nonempty subsets of Cantor set $2^\omega$; no definable choice without AC (requires AC).
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+(d) No: $\mathcal D$ is all nonempty subsets of Cantor set $2^\omega$; no definable choice without AC (requires AC).
+
+::: pf-proof
+
 $2^\omega$ uncountable with no definable well-order in ZF.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>1 and <1>4.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

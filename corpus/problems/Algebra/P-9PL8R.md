@@ -45,16 +45,22 @@ A[s]=\{x\in A:sx=0\}.
 \]
 :::
 
-
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: pf-step
+
+Define
 \[
 \phi:R\to sA,
 \qquad
 x\mapsto sxa.
 \]
 Then $\phi$ is a surjective $R$-module homomorphism.
-::: {.proof}
+
+::: pf-proof
+
 For $t,x,y\in R$,
 \[
 \phi(tx)=s(tx)a=t(sxa)=t\phi(x)
@@ -64,13 +70,20 @@ and
 \phi(x+y)=s(x+y)a=sxa+sya=\phi(x)+\phi(y).
 \]
 Every element of $sA$ has the form $s(ya)=sya=\phi(y)$, so $\phi$ is surjective.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 \ker\phi=(k).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Certainly $k\in\ker\phi$, because
 \[
 \phi(k)=ska=ra=0.
@@ -90,24 +103,38 @@ Since $R$ is a domain and $s\ne0$, cancellation gives
 x=tk\in(k).
 \]
 Thus $\ker\phi=(k)$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 R/(k)\cong sA.
 \]
-::: {.proof}
-Apply the first isomorphism theorem to the surjective map $\phi$ and use <1>2.
+
+::: pf-proof
+
+Apply the first isomorphism theorem to the surjective map $\phi$ and use step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #s4}
+
+Define
 \[
 \psi:R\to A[s],
 \qquad
 x\mapsto kxa.
 \]
 Then $\psi$ is a well-defined surjective $R$-module homomorphism.
-::: {.proof}
+
+::: pf-proof
+
 First,
 \[
 s\psi(x)=skxa=rxa=x(ra)=0,
@@ -130,13 +157,20 @@ Therefore
 \[
 y=ta=uka=\psi(u).
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 \[
 \ker\psi=(s).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 \psi(s)=ksa=r a=0,
@@ -156,13 +190,26 @@ for some $u\in R$. Since $R$ is a domain and $k\ne0$, cancellation gives
 x=us\in(s).
 \]
 Thus $\ker\psi=(s)$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 R/(s)\cong A[s].
 \]
-::: {.proof}
-Apply the first isomorphism theorem to $\psi$ and use <1>4 and <1>5.
+
+::: pf-proof
+
+Apply the first isomorphism theorem to $\psi$ and use steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

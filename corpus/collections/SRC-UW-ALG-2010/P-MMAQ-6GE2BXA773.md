@@ -36,17 +36,28 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
 :::
 
 ::: {.solution}
-<1>1. The order of $G=\operatorname{GL}_2(\mathbb F_p)$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The order of $G=\operatorname{GL}_2(\mathbb F_p)$ is
 \[
 |G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
 \]
 
-::: {.proof}
+::: pf-proof
+
 The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\mathbb F_p^2$, giving $p^2-1$ choices.
 Once it is chosen, the second column may be any vector not in its one-dimensional span, giving $p^2-p$ choices.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 \[
 \varphi:\mathbb Z/p\mathbb Z\longrightarrow U,
 \qquad
@@ -55,7 +66,8 @@ Once it is chosen, the second column may be any vector not in its one-dimensiona
 \]
 is an isomorphism of groups.
 
-::: {.proof}
+::: pf-proof
+
 Matrix multiplication gives
 \[
 \begin{pmatrix}1&a\\0&1\end{pmatrix}
@@ -64,19 +76,30 @@ Matrix multiplication gives
 \begin{pmatrix}1&a+b\\0&1\end{pmatrix},
 \]
 so $\varphi$ is a homomorphism from the additive group of $\mathbb F_p$. It is visibly bijective.
+
 :::
 
-<1>3. The subgroup $U$ is a Sylow $p$-subgroup of $G$.
+:::
 
-::: {.proof}
-By <1>2, $|U|=p$. From <1>1,
+::: {.pf-step #s3}
+
+The subgroup $U$ is a Sylow $p$-subgroup of $G$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $|U|=p$. From step [](#s1){.pf-ref},
 \[
 |G|=p(p-1)^2(p+1),
 \]
 and neither $p-1$ nor $p+1$ is divisible by $p$. Hence the highest power of $p$ dividing $|G|$ is $p$ itself.
+
 :::
 
-<1>4. The normalizer of $U$ is the subgroup
+:::
+
+::: {.pf-step #s4}
+
+The normalizer of $U$ is the subgroup
 \[
 N_G(U)=
 \left\{
@@ -85,7 +108,8 @@ N_G(U)=
 \right\}.
 \]
 
-::: {.proof}
+::: pf-proof
+
 Every nonidentity element of $U$ has the form
 \[
 u_t=\begin{pmatrix}1&t\\0&1\end{pmatrix},\qquad t\ne0,
@@ -109,16 +133,22 @@ g\begin{pmatrix}1&t\\0&1\end{pmatrix}g^{-1}
 \begin{pmatrix}1&(a/d)t\\0&1\end{pmatrix}\in U.
 \]
 Hence every invertible upper-triangular matrix normalizes $U$.
+
 :::
 
-<1>5. There are exactly $p+1$ subgroups of order $p$ in $G$.
+:::
 
-::: {.proof}
-By <1>3, the subgroups of order $p$ are exactly the Sylow $p$-subgroups, and all Sylow $p$-subgroups are conjugate. Therefore their number is
+::: pf-step
+
+There are exactly $p+1$ subgroups of order $p$ in $G$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the subgroups of order $p$ are exactly the Sylow $p$-subgroups, and all Sylow $p$-subgroups are conjugate. Therefore their number is
 \[
 [G:N_G(U)].
 \]
-By <1>4,
+By step [](#s4){.pf-ref},
 \[
 |N_G(U)|=p(p-1)^2,
 \]
@@ -128,5 +158,11 @@ so
 =\frac{p(p-1)^2(p+1)}{p(p-1)^2}
 =p+1.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

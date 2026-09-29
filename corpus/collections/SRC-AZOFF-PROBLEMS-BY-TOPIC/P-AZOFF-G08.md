@@ -50,7 +50,11 @@ $$
 For $0<\varepsilon<1<R$, integrate $F$ around the positively oriented
 keyhole contour with cut along the positive real axis.
 
-<1>1. The poles inside the contour are $i$ and $-i$, with
+::: pf
+
+::: {.pf-step #s1}
+
+The poles inside the contour are $i$ and $-i$, with
 $$
 \Res(F;i)
 =
@@ -61,7 +65,8 @@ $$
 -\frac{1+i}{2\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The poles are the simple zeros of $1+z^2$. On the chosen branch,
 $$
 i^{1/2}=e^{i\pi/4}
@@ -92,30 +97,42 @@ $$
 -\frac{1+i}{2\sqrt2}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The sum of the enclosed residues is
+:::
+
+::: {.pf-step #s2}
+
+The sum of the enclosed residues is
 $$
 -\frac{i}{\sqrt2}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \frac{1-i}{2\sqrt2}
 -\frac{1+i}{2\sqrt2}
 =
 -\frac{i}{\sqrt2}.
 $$
+
 :::
 
-<1>3. The two straight portions of the keyhole contour contribute
+:::
+
+::: {.pf-step #s3}
+
+The two straight portions of the keyhole contour contribute
 $$
 2\int_{\varepsilon}^{R}
 \frac{\sqrt{x}}{1+x^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the upper bank,
 $$
 z^{1/2}=\sqrt{x},
@@ -136,11 +153,17 @@ $$
 \int_{\varepsilon}^{R}
 \frac{\sqrt{x}}{1+x^2}\,dx.
 $$
+
 :::
 
-<1>4. The outer circular contribution tends to zero as $R\to\infty$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The outer circular contribution tends to zero as $R\to\infty$.
+
+::: pf-proof
+
 On $\abs{z}=R$,
 $$
 \abs{z^{1/2}}=R^{1/2},
@@ -156,12 +179,18 @@ $$
 \frac{2\pi R^{3/2}}{R^2-1}
 \longrightarrow0.
 $$
+
 :::
 
-<1>5. The inner circular contribution tends to zero as
+:::
+
+::: {.pf-step #s5}
+
+The inner circular contribution tends to zero as
 $\varepsilon\to0$.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=\varepsilon$,
 $$
 \abs{z^{1/2}}=\varepsilon^{1/2},
@@ -177,9 +206,14 @@ $$
 \frac{2\pi\varepsilon^{3/2}}{1-\varepsilon^2}
 \longrightarrow0.
 $$
+
 :::
 
-<1>6. The requested value is
+:::
+
+::: {.pf-step #s6}
+
+The requested value is
 $$
 \boxed{
 \int_0^{\infty}
@@ -189,16 +223,17 @@ $$
 }
 $$
 
-::: {.proof}
-By the residue theorem and step <1>2, the keyhole contour integral is
+::: pf-proof
+
+By the residue theorem and step [](#s2){.pf-ref}, the keyhole contour integral is
 $$
 2\pi i
 \left(-\frac{i}{\sqrt2}\right)
 =
 \sqrt2\,\pi.
 $$
-By step <1>3, the two straight portions contribute twice the truncated
-target integral. Steps <1>4 and <1>5 show that both circular contributions
+By step [](#s3){.pf-ref}, the two straight portions contribute twice the truncated
+target integral. Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} show that both circular contributions
 vanish. Hence
 $$
 2\int_0^{\infty}
@@ -207,11 +242,17 @@ $$
 \sqrt2\,\pi,
 $$
 which yields the displayed value.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

@@ -43,10 +43,15 @@ f_4(z)&\coloneqq\sum_{n=1}^{\infty}\frac{z^n}{n}.
 \end{aligned}
 $$
 
-<1>1. Each of the four power series has radius of convergence exactly
+::: pf
+
+::: {.pf-step #s1}
+
+Each of the four power series has radius of convergence exactly
 $1$.
 
-::: {.proof}
+::: pf-proof
+
 For the coefficient sequences
 $$
 \frac{(-1)^{n-1}}n,\qquad
@@ -57,12 +62,18 @@ $$
 respectively, the $n$th roots of the absolute values tend to $1$.
 The Cauchy--Hadamard formula therefore gives radius of convergence
 $1$ in every case.
+
 :::
 
-<1>2. The series $f_1$ converges at $1$ and extends holomorphically to
+:::
+
+::: {.pf-step #s2}
+
+The series $f_1$ converges at $1$ and extends holomorphically to
 a neighborhood of $1$.
 
-::: {.proof}
+::: pf-proof
+
 At $z=1$,
 $$
 f_1(1)=\sum_{n=1}^{\infty}\frac{(-1)^{n-1}}n
@@ -86,12 +97,18 @@ $\Re(1+z)>0$, so this branch is well-defined and the derivative and
 value at $0$ agree with those of $f_1$. The same expression
 $\log(1+z)$ is holomorphic, for example, on the disk $|z-1|<1$.
 Hence $f_1$ extends holomorphically across $1$.
+
 :::
 
-<1>3. The series $f_2$ converges at $1$ but does not extend
+:::
+
+::: {.pf-step #s3}
+
+The series $f_2$ converges at $1$ but does not extend
 holomorphically to any neighborhood of $1$.
 
-::: {.proof}
+::: pf-proof
+
 At $z=1$,
 $$
 f_2(1)=\sum_{n=1}^{\infty}\frac1{n^2}
@@ -117,12 +134,18 @@ its derivative would be continuous, hence bounded on a sufficiently
 small closed disk about $1$. On the portion of that disk inside
 $|z|<1$, the derivative would agree with $f_2'$, contradicting the
 displayed blow-up.
+
 :::
 
-<1>4. The series $f_3$ does not converge at $1$, but its power-series
+:::
+
+::: {.pf-step #s4}
+
+The series $f_3$ does not converge at $1$, but its power-series
 function extends holomorphically to a neighborhood of $1$.
 
-::: {.proof}
+::: pf-proof
+
 At $z=1$, the terms of the series are $(-1)^n$, which do not tend to
 $0$, so the series diverges.
 
@@ -132,12 +155,18 @@ f_3(z)=\frac1{1+z}.
 $$
 The rational function $1/(1+z)$ is holomorphic on a neighborhood of
 $z=1$, so it supplies the required extension.
+
 :::
 
-<1>5. The series $f_4$ does not converge at $1$ and does not extend
+:::
+
+::: {.pf-step #s5}
+
+The series $f_4$ does not converge at $1$ and does not extend
 holomorphically to any neighborhood of $1$.
 
-::: {.proof}
+::: pf-proof
+
 At $z=1$,
 $$
 f_4(1)=\sum_{n=1}^{\infty}\frac1n
@@ -148,7 +177,7 @@ For real $0<r<1$,
 $$
 f_4(r)=\sum_{n=1}^{\infty}\frac{r^n}{n}.
 $$
-As in step <1>3, finite partial sums show that
+As in step [](#s3){.pf-ref}, finite partial sums show that
 $$
 f_4(r)\longrightarrow+\infty
 \qquad
@@ -158,13 +187,19 @@ A holomorphic extension to a neighborhood of $1$ would be continuous,
 and therefore bounded on a sufficiently small closed disk about $1$.
 Its agreement with $f_4$ on the unit-disk side would contradict this
 blow-up.
+
 :::
 
-<1>6. The four series have exactly the requested combination of
+:::
+
+::: {.pf-step #s6}
+
+The four series have exactly the requested combination of
 properties.
 
-::: {.proof}
-Step <1>1 gives radius $1$ for all four. Steps <1>2--<1>5 give,
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives radius $1$ for all four. Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} give,
 respectively,
 $$
 \begin{array}{c|cc}
@@ -176,11 +211,17 @@ f_3&\text{no}&\text{yes}\\
 f_4&\text{no}&\text{no}.
 \end{array}
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 matches all four requirements in the problem.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} matches all four requirements in the problem.
+
+:::
+
+:::
+
 :::

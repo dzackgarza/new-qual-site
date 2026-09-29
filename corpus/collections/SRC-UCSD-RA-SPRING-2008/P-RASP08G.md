@@ -34,10 +34,16 @@ defines a distribution on $\mathbb{R}$.
 Express the derivative of $f$ in the sense of distributions in terms of the distribution $T$ given in (a).
 :::
 
-
 ::: {.solution}
-<1>1. Rewrite the limiting expression in a manifestly finite form.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Rewrite the limiting expression in a manifestly finite form.
+
+::: pf-proof
+
 For $0<\varepsilon<1$,
 \[
 \begin{aligned}
@@ -63,10 +69,17 @@ T(\phi)
 =\int_0^1\frac{\phi(x)-\phi(0)}x\,dx
 +\int_1^\infty\frac{\phi(x)}x\,dx.}
 \]
+
 :::
 
-<1>2. Prove that $T$ is a distribution.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that $T$ is a distribution.
+
+::: pf-proof
+
 Linearity is immediate. Let $K\subset\mathbb R$ be compact and suppose $\operatorname{supp}\phi\subset K$. By the mean-value estimate,
 \[
 |\phi(x)-\phi(0)|\le x\sup_{0\le t\le1}|\phi'(t)|
@@ -90,10 +103,17 @@ This is precisely the required continuity estimate for a distribution. Therefore
 \[
 \boxed{T\in\mathcal D'(\mathbb R).}
 \]
+
 :::
 
-<1>3. Show that $H(x)\log x$ is locally integrable.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $H(x)\log x$ is locally integrable.
+
+::: pf-proof
+
 Let
 \[
 f(x)=H(x)\log x,
@@ -106,10 +126,17 @@ Away from $0$, $\log x$ is locally integrable. Hence
 \[
 \boxed{f\in L^1_{\mathrm{loc}}(\mathbb R).}
 \]
+
 :::
 
-<1>4. Compute the distributional derivative.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the distributional derivative.
+
+::: pf-proof
+
 For $\phi\in C_c^\infty(\mathbb R)$,
 \[
 f'(\phi)
@@ -141,5 +168,11 @@ Therefore
 \[
 \boxed{(H\log x)'=T\quad\text{in }\mathcal D'(\mathbb R).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

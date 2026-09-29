@@ -35,13 +35,19 @@ b. A pair of fields $F \subset K$ such that $K$ is finite dimensional over $F$ b
 :::
 
 ::: {.solution}
-<1>1. For part (a), take
+
+::: pf
+
+::: pf-step
+
+For part (a), take
 $$
 F=\mathbb Q,\qquad K=\mathbb Q(\sqrt2),
 \qquad L=\mathbb Q(\sqrt[4]{2}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $a=\sqrt[4]{2}>0$, so $a^2=\sqrt2$.
 Eisenstein's criterion at two makes $T^2-2$ and $T^4-2$
 irreducible over $\mathbb Q$ [@DF04]. Hence
@@ -59,15 +65,21 @@ However, $L\subseteq\mathbb R$ contains $a$ but not the
 nonreal root $ia$ of the irreducible polynomial $T^4-2$.
 That polynomial therefore does not split over $L$, so
 $L/F$ is not normal and hence is not Galois.
+
 :::
 
-<1>2. For part (b), take
+:::
+
+::: pf-step
+
+For part (b), take
 $$
 F=\mathbb F_2(t),\qquad K=F(u),\qquad u^2=t,
 $$
 where $t$ is transcendental over $\mathbb F_2$.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $T^2-t$ has no root in $F$.
 Indeed, a root written as $A(t)/B(t)$, with nonzero
 $A,B\in\mathbb F_2[t]$, would give $A(t)^2=tB(t)^2$.
@@ -82,5 +94,11 @@ In characteristic two one has $T^2-t=(T-u)^2$ over $K$.
 The minimal polynomial of $u$ over $F$ therefore has a
 repeated root and is not separable. Hence $K/F$ is a
 finite-dimensional, nonseparable extension, as required.
+
 :::
+
+:::
+
+:::
+
 :::

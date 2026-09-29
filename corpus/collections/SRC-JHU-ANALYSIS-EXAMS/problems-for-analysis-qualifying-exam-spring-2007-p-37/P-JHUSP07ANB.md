@@ -32,9 +32,14 @@ audit:
 ::: {.solution}
 The integral is $\boxed{2\pi/(1-a^2)}$.
 
-<1>1. The unit-circle substitution produces a rational contour integral.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The unit-circle substitution produces a rational contour integral.
+
+::: pf-proof
+
 Since $0<a<1$, the real denominator is
 $$
 1-2a\cos\theta+a^2=|e^{i\theta}-a|^2\geq(1-a)^2>0,
@@ -47,11 +52,17 @@ $1-a(z+z^{-1})+a^2=(z-a)(1-az)/z$. Therefore
 $$
 I=\int_{|z|=1}\frac{dz}{i(z-a)(1-az)}.
 $$
+
 :::
 
-<1>2. The pole at $a$ gives the value.
+:::
 
-::: {.proof}
+::: pf-step
+
+The pole at $a$ gives the value.
+
+::: pf-proof
+
 The two poles are $a$ and $1/a$. Only $a$ lies inside
 the unit circle, and neither lies on it. The enclosed
 pole is simple, with residue $1/(i(1-a^2))$.
@@ -60,5 +71,11 @@ $$
 I=2\pi i\frac1{i(1-a^2)}=\frac{2\pi}{1-a^2}
 $$
 [@SS03], as required.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -32,13 +32,24 @@ exists and is an eigenvalue of $A$.
 :::
 
 ::: {.solution}
-<1>1. There is an orthonormal basis $v_1,\ldots,v_n$ of eigenvectors of $A$ with positive eigenvalues $\lambda_1,\ldots,\lambda_n$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There is an orthonormal basis $v_1,\ldots,v_n$ of eigenvectors of $A$ with positive eigenvalues $\lambda_1,\ldots,\lambda_n$.
+
+::: pf-proof
+
 Since $A$ is real symmetric, the spectral theorem gives an orthonormal eigenbasis. Since $A$ is positive definite, every eigenvalue is positive.
+
 :::
 
-<1>2. Write
+:::
+
+::: {.pf-step #s2}
+
+Write
 $$
 y=\sum_{i=1}^n c_i v_i,
 $$
@@ -48,24 +59,36 @@ $$
 $$
 Then $\lambda_*$ is well-defined and is an eigenvalue of $A$.
 
-::: {.proof}
+::: pf-proof
+
 Because $y\ne0$, at least one coefficient $c_i$ is nonzero. Hence the displayed set is a nonempty finite set of eigenvalues of $A$, so it has a maximum, and that maximum is itself an eigenvalue.
+
 :::
 
-<1>3. For every nonnegative integer $m$,
+:::
+
+::: {.pf-step #s3}
+
+For every nonnegative integer $m$,
 $$
 y^TA^my=\sum_{i=1}^n c_i^2\lambda_i^m>0.
 $$
 
-::: {.proof}
-Using the orthonormal eigenbasis from step <1>1,
+::: pf-proof
+
+Using the orthonormal eigenbasis from step [](#s1){.pf-ref},
 $$
 A^my=\sum_{i=1}^n c_i\lambda_i^m v_i.
 $$
 Taking the inner product with $y$ gives the displayed sum. Every term is nonnegative, and at least one is positive because some $c_i\ne0$ and every $\lambda_i>0$.
+
 :::
 
-<1>4. The quotient satisfies
+:::
+
+::: {.pf-step #s4}
+
+The quotient satisfies
 $$
 \frac{y^TA^{m+1}y}{y^TA^my}
 =
@@ -73,18 +96,25 @@ $$
 {\displaystyle\sum_{i=1}^n c_i^2(\lambda_i/\lambda_*)^m}.
 $$
 
-::: {.proof}
-Apply step <1>3 with exponents $m$ and $m+1$, then divide numerator and denominator by the positive number $\lambda_*^m$.
+::: pf-proof
+
+Apply step [](#s3){.pf-ref} with exponents $m$ and $m+1$, then divide numerator and denominator by the positive number $\lambda_*^m$.
+
 :::
 
-<1>5. The quotient converges to $\lambda_*$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The quotient converges to $\lambda_*$.
+
+::: pf-proof
+
 If $c_i\ne0$, then $0<\lambda_i/\lambda_*\le1$ by definition of $\lambda_*$. Thus every term with $\lambda_i<\lambda_*$ tends to $0$ as $m\to\infty$, while every term with $\lambda_i=\lambda_*$ remains unchanged. Put
 $$
 S\coloneqq\sum_{\substack{i\\ \lambda_i=\lambda_*}}c_i^2.
 $$
-By definition of $\lambda_*$, one has $S>0$. Therefore step <1>4 gives
+By definition of $\lambda_*$, one has $S>0$. Therefore step [](#s4){.pf-ref} gives
 $$
 \lim_{m\to\infty}\frac{y^TA^{m+1}y}{y^TA^my}
 =
@@ -92,21 +122,33 @@ $$
 =
 \lambda_*.
 $$
+
 :::
 
-<1>6. Hence
+:::
+
+::: {.pf-step #s6}
+
+Hence
 $$
 \boxed{\lim_{m\to\infty}\frac{y^TA^{m+1}y}{y^TA^my}=\lambda_*},
 $$
 and this limit is an eigenvalue of $A$.
 
-::: {.proof}
-Step <1>5 gives the limit, and step <1>2 shows that $\lambda_*$ is an eigenvalue of $A$.
+::: pf-proof
+
+Step [](#s5){.pf-ref} gives the limit, and step [](#s2){.pf-ref} shows that $\lambda_*$ is an eigenvalue of $A$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

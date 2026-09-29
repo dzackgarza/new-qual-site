@@ -41,9 +41,14 @@ Choose $u\in I$ and $v\in J$ such that $u+v=1$.
 The finite direct sum in the statement carries componentwise
 addition and multiplication, so it is the product ring $R/I\times R/J$.
 
-<1>1. The ideals $IJ$ and $I\cap J$ are equal.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The ideals $IJ$ and $I\cap J$ are equal.
+
+::: pf-proof
+
 Every product $ij$, with $i\in I$ and $j\in J$, belongs to
 both ideals. Their intersection is closed under finite sums,
 so $IJ\subseteq I\cap J$.
@@ -52,26 +57,37 @@ Conversely, for $z\in I\cap J$ one has $z=zu+zv$.
 Since $u\in I$, $z\in J$, and $R$ is commutative,
 $zu\in IJ$. Since $z\in I$ and $v\in J$, also $zv\in IJ$.
 Thus $z\in IJ$, proving the reverse inclusion.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 \phi:R\longrightarrow R/I\times R/J,\qquad
 r\longmapsto(r+I,r+J)
 $$
 is a surjective ring homomorphism with kernel $IJ$.
 
-::: {.proof}
+::: pf-proof
+
 Both components are quotient homomorphisms, so $\phi$ preserves
 addition, multiplication, and the identity. Its kernel is
-$I\cap J$, which equals $IJ$ by step <1>1.
+$I\cap J$, which equals $IJ$ by step [](#s1){.pf-ref}.
 
 For arbitrary representatives $a,b\in R$, put $r=av+bu$.
 Then $r-a=u(b-a)\in I$ and $r-b=v(a-b)\in J$.
 Consequently $\phi(r)=(a+I,b+J)$, proving surjectivity.
+
 :::
 
-<1>3. The required isomorphism and its inverse are
+:::
+
+::: pf-step
+
+The required isomorphism and its inverse are
 $$
 \begin{aligned}
 \overline\phi:R/(IJ)&\longrightarrow R/I\times R/J,
@@ -81,17 +97,24 @@ $$
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The map $\overline\phi$ is well defined because $IJ\subseteq I\cap J$.
 It is a ring homomorphism. Changing $a$ by an element $i\in I$
 changes $av+bu$ by $iv\in IJ$; changing $b$ by $j\in J$
 changes it by $ju\in IJ$. Thus $\psi$ is also well defined.
 
-The residue computation in step <1>2 gives
+The residue computation in step [](#s2){.pf-ref} gives
 $\overline\phi\psi(a+I,b+J)=(a+I,b+J)$.
 In the other direction,
 $\psi\overline\phi(r+IJ)=r(v+u)+IJ=r+IJ$.
 Therefore $\overline\phi$ is a bijective ring homomorphism
 and hence a ring isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -26,7 +26,6 @@ Do you know what a group representation is?
 Do you know what the trace of a group representation is?
 :::
 
-
 ::: {.solution}
 A finite-dimensional representation of a group $G$ over a field $F$ is a homomorphism
 \[
@@ -41,8 +40,14 @@ The trace attached to the representation is its character
 \chi_\rho(g)=\operatorname{tr}(\rho(g)).
 \]
 
-<1>1. The character is constant on conjugacy classes.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The character is constant on conjugacy classes.
+
+::: pf-proof
+
 For $g,h\in G$,
 \[
 \rho(hgh^{-1})=\rho(h)\rho(g)\rho(h)^{-1}.
@@ -51,15 +56,27 @@ Trace is invariant under similarity, so
 \[
 \chi_\rho(hgh^{-1})=\chi_\rho(g).
 \]
+
 :::
 
-<1>2. Isomorphic representations have the same character.
-::: {.proof}
+:::
+
+::: pf-step
+
+Isomorphic representations have the same character.
+
+::: pf-proof
+
 If $\rho_1$ and $\rho_2$ are isomorphic, then for some invertible $T$,
 \[
 \rho_2(g)=T\rho_1(g)T^{-1}
 \]
 for every $g$. Again trace is similarity-invariant.
+
+:::
+
+:::
+
 :::
 
 Thus $\chi_\rho$ is a class function that depends only on the isomorphism class of $\rho$; for a finite group over $\CC$, it determines $\rho$ up to isomorphism.

@@ -32,7 +32,12 @@ Let $f : [ 0 , 1 ] \times [ 0 , 1 ] \to \mathbb { R }$ be continuous and assume 
 :::
 
 ::: {.solution}
-<1>1. Let $(x_n)$ be any sequence in $[0,1]$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $(x_n)$ be any sequence in $[0,1]$ such that
 $$
 x_n\longrightarrow x.
 $$
@@ -41,12 +46,18 @@ $$
 g(x_n)\longrightarrow g(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Both the domain and codomain are metric spaces, so continuity is
 equivalent to sequential continuity.
+
 :::
 
-<1>2. Every convergent subsequence
+:::
+
+::: {.pf-step #s2}
+
+Every convergent subsequence
 $$
 g(x_{n_j})\longrightarrow b
 $$
@@ -55,7 +66,8 @@ $$
 b=g(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $j$, the definition of $g(x_{n_j})$ as a maximizer gives
 $$
 f(x_{n_j},g(x_{n_j}))
@@ -75,14 +87,20 @@ $$
 But $g(x)$ is the unique point of $[0,1]$ at which
 $y\mapsto f(x,y)$ attains its maximum. Thus the displayed inequality
 forces $b=g(x)$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 g(x_n)\longrightarrow g(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose not. Then there is an $\varepsilon>0$ and a subsequence
 $(x_{n_j})$ such that
 $$
@@ -97,24 +115,36 @@ The inequality above passes to the limit and gives
 $$
 |b-g(x)|\ge\varepsilon,
 $$
-so $b\ne g(x)$. This contradicts step <1>2.
+so $b\ne g(x)$. This contradicts step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 \boxed{g:[0,1]\to[0,1]}
 $$
 is continuous.
 
-::: {.proof}
-The sequence $(x_n)$ and its limit $x$ in step <1>1 were arbitrary,
-and step <1>3 proves the required sequential continuity at every
+::: pf-proof
+
+The sequence $(x_n)$ and its limit $x$ in step [](#s1){.pf-ref} were arbitrary,
+and step [](#s3){.pf-ref} proves the required sequential continuity at every
 $x\in[0,1]$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

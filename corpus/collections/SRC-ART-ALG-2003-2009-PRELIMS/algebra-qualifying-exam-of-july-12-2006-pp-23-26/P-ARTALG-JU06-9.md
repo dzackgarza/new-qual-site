@@ -33,7 +33,11 @@ audit:
 ::: {.solution}
 Write $C_m=\mathbb Z/m\mathbb Z$.
 
-<1>1. The elementary-divisor form of the structure theorem is as follows.
+::: pf
+
+::: {.pf-step #s1}
+
+The elementary-divisor form of the structure theorem is as follows.
 
 Every finitely generated abelian group $A$ has a decomposition
 $$
@@ -48,7 +52,11 @@ The integer $r$ and the lists of exponents for each prime are
 uniquely determined by $A$. This is the structure theorem for
 finitely generated abelian groups [@DF04]. Empty sums are allowed.
 
-<1>2. The four groups of order $300$ are the following.
+:::
+
+::: pf-step
+
+The four groups of order $300$ are the following.
 
 | Group | Exponent |
 | --- | --- |
@@ -57,8 +65,9 @@ finitely generated abelian groups [@DF04]. Empty sums are allowed.
 | $C_4\oplus C_3\oplus C_5\oplus C_5$ | $60$ |
 | $C_2\oplus C_2\oplus C_3\oplus C_5\oplus C_5$ | $30$ |
 
-::: {.proof}
-Finiteness forces $r=0$ in step <1>1. For each prime $p$, the
+::: pf-proof
+
+Finiteness forces $r=0$ in step [](#s1){.pf-ref}. For each prime $p$, the
 sum $\sum_j e_{p,j}$ is the exponent of $p$ in the group order.
 For $p=2$ that sum is $2$, with exactly the partitions $(2)$
 and $(1,1)$. For $p=3$ it is $1$, with only the partition $(1)$.
@@ -75,5 +84,11 @@ This gives the four exponents displayed in the table. They are
 distinct and invariant under isomorphism, so no two listed groups
 are isomorphic. The primary-decomposition argument proves that
 every abelian group of order $300$ appears on the list.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -37,7 +37,11 @@ $$
 d_n=x_n-x_{n-1}.
 $$
 
-<1>1. For every $n\geq2$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\geq2$,
 $$
 d_n=-\frac12d_{n-1},
 $$
@@ -47,7 +51,8 @@ d_n=
 \left(-\frac12\right)^{n-1}(b-a).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using the recurrence for $x_n$,
 $$
 \begin{aligned}
@@ -63,9 +68,14 @@ $$
 d_1=x_1-x_0=b-a,
 $$
 iteration gives the stated formula.
+
 :::
 
-<1>2. For every $n\geq0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n\geq0$,
 $$
 x_n
 =
@@ -75,8 +85,9 @@ x_n
 \left(-\frac12\right)^n.
 $$
 
-::: {.proof}
-For $n\geq1$, telescoping and step <1>1 give
+::: pf-proof
+
+For $n\geq1$, telescoping and step [](#s1){.pf-ref} give
 $$
 \begin{aligned}
 x_n
@@ -91,16 +102,22 @@ x_n
 $$
 For $n=0$ the same expression equals $a$, so the formula holds for all
 $n\geq0$.
+
 :::
 
-<1>3. The sequence $(x_n)$ is Cauchy.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The sequence $(x_n)$ is Cauchy.
+
+::: pf-proof
+
 Put
 $$
 C=\frac{2(a-b)}3.
 $$
-By step <1>2, for any $m,n\geq0$,
+By step [](#s2){.pf-ref}, for any $m,n\geq0$,
 $$
 \begin{aligned}
 \abs{x_n-x_m}
@@ -126,9 +143,14 @@ $$
 \abs{x_n-x_m}<\varepsilon.
 $$
 Thus $(x_n)$ is Cauchy.
+
 :::
 
-<1>4. The limit is
+:::
+
+::: {.pf-step #s4}
+
+The limit is
 $$
 \boxed{
 \lim_{n\to\infty}x_n
@@ -137,8 +159,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 x_n-\frac{a+2b}{3}
 =
@@ -150,12 +173,18 @@ $$
 \left(-\frac12\right)^n\longrightarrow0,
 $$
 the displayed difference tends to zero.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the Cauchy property, and step <1>4 gives the requested
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the Cauchy property, and step [](#s4){.pf-ref} gives the requested
 limit.
+
 :::
+
+:::
+
 :::

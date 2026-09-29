@@ -46,14 +46,19 @@ F(z)
 \frac{e^{3iz}-3e^{iz}}{z^3}.
 $$
 
-<1>1. For real $x\ne0$,
+::: pf
+
+::: {.pf-step #s1}
+
+For real $x\ne0$,
 $$
 \operatorname{Im}F(x)
 =
 -4\frac{\sin^3x}{x^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The triple-angle identity gives
 $$
 \sin(3x)-3\sin x
@@ -67,9 +72,14 @@ $$
 \sin(3x)-3\sin x,
 $$
 division by the real number $x^3$ gives the claim.
+
 :::
 
-<1>2. The integral
+:::
+
+::: {.pf-step #s2}
+
+The integral
 $$
 I
 \coloneqq
@@ -78,7 +88,8 @@ I
 $$
 is absolutely convergent.
 
-::: {.proof}
+::: pf-proof
+
 As $x\to0$,
 $$
 \frac{\sin^3x}{x^3}
@@ -96,9 +107,14 @@ $$
 \frac1{\abs{x}^3},
 $$
 whose integral over the two tails converges.
+
 :::
 
-<1>3. For $0<r<R$, let $C_{r,R}$ be the positively oriented boundary
+:::
+
+::: {.pf-step #s3}
+
+For $0<r<R$, let $C_{r,R}$ be the positively oriented boundary
 of the upper half-annulus
 $$
 \{z:r<\abs z<R,\ \operatorname{Im}z>0\}.
@@ -108,7 +124,8 @@ $$
 \int_{C_{r,R}}F(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The contour consists of the real intervals
 $$
 [-R,-r]
@@ -122,12 +139,18 @@ The only possible singularity of $F$ is at $0$, which lies outside
 the half-annular region bounded by the contour. Hence $F$ is
 holomorphic on and inside $C_{r,R}$, so Cauchy's theorem gives the
 displayed integral.
+
 :::
 
-<1>4. The contribution from the outer semicircle tends to $0$ as
+:::
+
+::: {.pf-step #s4}
+
+The contribution from the outer semicircle tends to $0$ as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 On the upper semicircle $\abs z=R$,
 $$
 \abs{e^{3iz}}
@@ -155,15 +178,21 @@ F(z)\,dz
 \longrightarrow
 0.
 $$
+
 :::
 
-<1>5. The contribution from the clockwise inner semicircle tends to
+:::
+
+::: {.pf-step #s5}
+
+The contribution from the clockwise inner semicircle tends to
 $$
 3\pi i
 $$
 as $r\downarrow0$.
 
-::: {.proof}
+::: pf-proof
+
 The Taylor expansion at $0$ is
 $$
 e^{3iz}-3e^{iz}
@@ -209,9 +238,14 @@ $$
 is bounded uniformly on $\gamma_r$ for small $r$, while the arc length
 is $\pi r$, so its integral tends to $0$. Thus the whole inner-arc
 integral tends to $3\pi i$.
+
 :::
 
-<1>6. Taking imaginary parts in the contour identity and then letting
+:::
+
+::: {.pf-step #s6}
+
+Taking imaginary parts in the contour identity and then letting
 $$
 r\downarrow0,
 \qquad
@@ -222,13 +256,14 @@ $$
 -4I+3\pi=0.
 $$
 
-::: {.proof}
-By step <1>3, the sum of the two real-axis integrals and the two arc
-integrals is $0$. Step <1>4 makes the outer-arc contribution vanish,
-and step <1>5 makes the imaginary part of the inner-arc contribution
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the sum of the two real-axis integrals and the two arc
+integrals is $0$. Step [](#s4){.pf-ref} makes the outer-arc contribution vanish,
+and step [](#s5){.pf-ref} makes the imaginary part of the inner-arc contribution
 tend to $3\pi$.
 
-By steps <1>1--<1>2, the imaginary parts of the real-axis integrals
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the imaginary parts of the real-axis integrals
 converge absolutely to
 $$
 \int_{-\infty}^{\infty}\operatorname{Im}F(x)\,dx
@@ -237,20 +272,32 @@ $$
 $$
 Taking imaginary parts and passing to the limits therefore yields the
 displayed equation.
+
 :::
 
-<1>7. The value of the integral is
+:::
+
+::: {.pf-step #s7}
+
+The value of the integral is
 $$
 \boxed{\frac{3\pi}{4}}.
 $$
 
-::: {.proof}
-Solve the equation in step <1>6 for $I$.
+::: pf-proof
+
+Solve the equation in step [](#s6){.pf-ref} for $I$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

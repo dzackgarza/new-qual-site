@@ -37,12 +37,17 @@ $$
 N\coloneqq 17^{17}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 N\equiv1\pmod4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 17\equiv1\pmod4,
@@ -51,14 +56,20 @@ raising both sides to the seventeenth power gives
 $$
 17^{17}\equiv1^{17}\equiv1\pmod4.
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 17^N\equiv7\pmod{10}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Modulo $10$,
 $$
 17^N\equiv7^N.
@@ -67,7 +78,7 @@ Also
 $$
 7^4=2401\equiv1\pmod{10}.
 $$
-By step <1>1, there is an integer $q$ such that $N=4q+1$. Therefore
+By step [](#s1){.pf-ref}, there is an integer $q$ such that $N=4q+1$. Therefore
 $$
 7^N
 =
@@ -75,21 +86,33 @@ $$
 \equiv
 7\pmod{10}.
 $$
+
 :::
 
-<1>3. The rightmost decimal digit of $17^{17^{17}}$ is
+:::
+
+::: {.pf-step #s3}
+
+The rightmost decimal digit of $17^{17^{17}}$ is
 $$
 \boxed{7}.
 $$
 
-::: {.proof}
-The number in the problem is $17^N$, and step <1>2 says that it is congruent
+::: pf-proof
+
+The number in the problem is $17^N$, and step [](#s2){.pf-ref} says that it is congruent
 to $7$ modulo $10$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested digit.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested digit.
+
+:::
+
+:::
+
 :::

@@ -35,10 +35,16 @@ isomorphic?
 :::
 
 ::: {.solution}
-<1>1. Each defining polynomial is a product of two distinct linear factors
+
+::: pf
+
+::: {.pf-step #s1}
+
+Each defining polynomial is a product of two distinct linear factors
 over $\RR$.
 
-::: {.proof}
+::: pf-proof
+
 For the first polynomial,
 $$
 x^2+x-1
@@ -50,14 +56,20 @@ $$
 x^2+2x-3=(x-1)(x+3),
 $$
 whose roots $1$ and $-3$ are distinct.
+
 :::
 
-<1>2. If $a,b\in\RR$ with $a\ne b$, then
+:::
+
+::: {.pf-step #s2}
+
+If $a,b\in\RR$ with $a\ne b$, then
 $$
 \RR[x]/((x-a)(x-b))\cong\RR\times\RR.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Consider the evaluation homomorphism
 $$
 \varphi\colon\RR[x]\longrightarrow\RR\times\RR,
@@ -81,16 +93,27 @@ $$
 $$
 The first isomorphism theorem for rings therefore gives the displayed
 isomorphism.
+
 :::
 
-<1>3. Both rings in the problem are isomorphic to $\RR\times\RR$.
-
-::: {.proof}
-Apply step <1>2 to the two pairs of distinct real roots exhibited in
-step <1>1.
 :::
 
-<1>4. Hence
+::: {.pf-step #s3}
+
+Both rings in the problem are isomorphic to $\RR\times\RR$.
+
+::: pf-proof
+
+Apply step [](#s2){.pf-ref} to the two pairs of distinct real roots exhibited in
+step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+Hence
 $$
 \boxed{
 \RR[x]/(x^2+x-1)
@@ -99,15 +122,22 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>3, each quotient is isomorphic to the same ring
+::: pf-proof
+
+By step [](#s3){.pf-ref}, each quotient is isomorphic to the same ring
 $\RR\times\RR$; composing one isomorphism with the inverse of the other
 gives the asserted isomorphism.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 answers the question affirmatively.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} answers the question affirmatively.
+
+:::
+
+:::
+
 :::

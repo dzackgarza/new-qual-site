@@ -47,8 +47,15 @@ b. $\begin{array} { r } { | \Delta _ { h } f ( x ) | \geq 4 ^ { k - 1 } - \sum _
 :::
 
 ::: {.solution}
-<1>1. The series converges uniformly, hence defines a continuous function.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The series converges uniformly, hence defines a continuous function.
+
+::: pf-proof
+
 The periodic triangle wave satisfies
 \[
 0\le \psi(x)\le \frac12
@@ -66,10 +73,17 @@ the Weierstrass $M$-test gives uniform convergence of
 f(x)=\sum_{n=0}^\infty 2^{-n}\psi(8^n x).
 \]
 Each summand is continuous, so $f$ is continuous on $\mathbb R$.
+
 :::
 
-<1>2. Construct small increments with a large difference quotient.
-::: {.proof}
+:::
+
+::: pf-step
+
+Construct small increments with a large difference quotient.
+
+::: pf-proof
+
 Fix $x\in\mathbb R$ and $k\ge1$. Choose
 \[
 h_k\in\{8^{-k},-8^{-k}\}
@@ -111,10 +125,17 @@ Therefore
 \end{aligned}
 \]
 The right-hand side tends to $\infty$ as $k\to\infty$.
+
 :::
 
-<1>3. Conclude nowhere differentiability.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude nowhere differentiability.
+
+::: pf-proof
+
 Since $|h_k|=8^{-k}\to0$ while
 \[
 |\Delta_{h_k}f(x)|\to\infty,
@@ -122,5 +143,11 @@ Since $|h_k|=8^{-k}\to0$ while
 the difference quotients at $x$ cannot converge to a finite limit. Thus $f$ is not differentiable at $x$.
 
 The point $x$ was arbitrary, so $f$ is nowhere differentiable.
+
 :::
+
+:::
+
+:::
+
 :::

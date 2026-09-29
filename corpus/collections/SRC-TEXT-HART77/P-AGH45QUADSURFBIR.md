@@ -35,13 +35,19 @@ Show that the quadric surface $Q: xy = zw$ in $\PP^3$ is birational to $\PP^2$, 
 :::
 
 ::: {.solution}
-<1>1. The open subset
+
+::: pf
+
+::: pf-step
+
+The open subset
 $$
 U=Q\cap D_+(w)
 $$
 is isomorphic to $\AA^2$.
 
-::: {.proof}
+::: pf-proof
+
 On $D_+(w)$ normalize $w=1$.
 The equation of $Q$ becomes
 $$
@@ -65,11 +71,17 @@ U\longrightarrow\AA^2,
 $$
 are morphisms and are inverse to one another.
 Thus $U\cong\AA^2$.
+
 :::
 
-<1>2. The surface $Q$ is birational to $\PP^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The surface $Q$ is birational to $\PP^2$.
+
+::: pf-proof
+
 The quadric $Q$ is irreducible by [[P-AGH215QUADRIC]], so its nonempty open subset $U$ is dense.
 The standard open subset
 $$
@@ -89,11 +101,17 @@ $$
 Q\dashrightarrow\PP^2
 $$
 is birational.
+
 :::
 
-<1>3. The surface $Q$ contains two disjoint projective lines.
+:::
 
-::: {.proof}
+::: pf-step
+
+The surface $Q$ contains two disjoint projective lines.
+
+::: pf-proof
+
 By [[P-AGH215QUADRIC]], one ruling consists of the pairwise disjoint lines
 $$
 L_{[a:b]}
@@ -105,11 +123,17 @@ $$
 L_{[1:0]}\cap L_{[0:1]}=\varnothing.
 $$
 Each is a closed irreducible curve on $Q$.
+
 :::
 
-<1>4. The surface $Q$ is not isomorphic to $\PP^2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The surface $Q$ is not isomorphic to $\PP^2$.
+
+::: pf-proof
+
 Suppose an isomorphism
 $$
 \alpha:Q\xrightarrow{\sim}\PP^2
@@ -125,11 +149,17 @@ $$
 would be two disjoint curves in $\PP^2$.
 But [[P-AGH37HYPMEETS]] proves that any two curves in $\PP^2$ have nonempty intersection.
 This contradiction shows that no such isomorphism exists.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves birationality, and step <1>4 proves nonisomorphism.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves birationality, and step [](#s4){.pf-ref} proves nonisomorphism.
+
+:::
+
+:::
+
 :::

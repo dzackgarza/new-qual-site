@@ -23,7 +23,6 @@ audit:
 What's the field with 25 elements?
 :::
 
-
 ::: {.solution}
 Up to isomorphism there is a unique field with $25=5^2$ elements, namely $\FF_{25}$.
 A concrete model is
@@ -31,14 +30,32 @@ A concrete model is
 \FF_{25}\cong \FF_5[t]/(t^2+2).
 \]
 
-<1>1. The polynomial $t^2+2$ is irreducible over $\FF_5$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The polynomial $t^2+2$ is irreducible over $\FF_5$.
+
+::: pf-proof
+
 A quadratic over a field is reducible iff it has a root. The squares in $\FF_5$ are $0,1,4$, while a root of $t^2+2$ would satisfy $t^2=3$. Since $3$ is not a square modulo $5$, there is no root.
+
 :::
 
-<1>2. Therefore the quotient is a field with $25$ elements.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore the quotient is a field with $25$ elements.
+
+::: pf-proof
+
 Irreducibility makes $(t^2+2)$ maximal in $\FF_5[t]$. Every residue class has a unique representative $a+bt$ with $a,b\in\FF_5$, giving $5^2=25$ elements.
+
+:::
+
+:::
+
 :::
 
 Thus one may write

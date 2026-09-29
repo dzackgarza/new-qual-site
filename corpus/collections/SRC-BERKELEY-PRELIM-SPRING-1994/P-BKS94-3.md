@@ -34,7 +34,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Under the substitution
+
+::: pf
+
+::: pf-step
+
+Under the substitution
 $$
 t=\tan\frac{\theta}{2},
 $$
@@ -45,16 +50,23 @@ $$
 d\theta=\frac{2\,dt}{1+t^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 These are the standard tangent half-angle identities.
+
 :::
 
-<1>2. The integral becomes
+:::
+
+::: {.pf-step #s2}
+
+The integral becomes
 $$
 \int_{-\infty}^{\infty}\frac{dt}{1+2t^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 As $\theta$ runs from $-\pi$ to $\pi$, the variable $t$ runs from
 $-\infty$ to $\infty$. Moreover,
 $$
@@ -73,16 +85,22 @@ $$
 =
 \frac{dt}{1+2t^2}.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_{-\infty}^{\infty}\frac{dt}{1+2t^2}
 =
 \frac{\pi}{\sqrt2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set $u=\sqrt2\,t$. Then
 $$
 \int_{-\infty}^{\infty}\frac{dt}{1+2t^2}
@@ -95,9 +113,14 @@ $$
 =
 \frac{\pi}{\sqrt2}.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \int_{-\pi}^{\pi}\frac{d\theta}{3-\cos\theta}
@@ -106,13 +129,20 @@ $$
 }.
 $$
 
-::: {.proof}
-Combine steps <1>2 and <1>3.
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

@@ -37,17 +37,30 @@ The unique function is
 \]
 for every nonempty finite CW complex $X$.
 
-<1>1. The axioms force $\varphi(\mathrm{pt})=0$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The axioms force $\varphi(\mathrm{pt})=0$.
+
+::: pf-proof
+
 Take $X=S^0$ and let $A$ be one of its two points. Then $X/A\cong S^0$, so
 \[
 n=\varphi(S^0)=\varphi(\mathrm{pt})+\varphi(S^0).
 \]
 Hence $\varphi(\mathrm{pt})=0$.
+
 :::
 
-<1>2. The axioms force $\varphi(D^k)=0$ for every $k\ge1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The axioms force $\varphi(D^k)=0$ for every $k\ge1$.
+
+::: pf-proof
+
 Choose a CW decomposition of $D^k$ into two closed $k$-balls $A$ and $B$ meeting along a $(k-1)$-ball, with $A$ a subcomplex. Collapsing $A$ to a point turns the other half-ball into another $k$-ball, so
 \[
 D^k/A\cong D^k.
@@ -57,41 +70,62 @@ By homeomorphism invariance and additivity,
 \varphi(D^k)=\varphi(A)+\varphi(D^k/A)=2\varphi(D^k),
 \]
 hence $\varphi(D^k)=0$.
+
 :::
 
-<1>3. For every $k\ge0$,
+:::
+
+::: {.pf-step #s3}
+
+For every $k\ge0$,
 \[
 \varphi(S^k)=(-1)^k n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The case $k=0$ is axiom (c). For $k\ge1$, regard $S^{k-1}=\partial D^k$ as a subcomplex of $D^k$. Since
 \[
 D^k/S^{k-1}\cong S^k,
 \]
-additivity and <1>2 give
+additivity and step [](#s2){.pf-ref} give
 \[
 0=\varphi(D^k)=\varphi(S^{k-1})+\varphi(S^k).
 \]
 Thus $\varphi(S^k)=-\varphi(S^{k-1})$, proving the formula inductively.
+
 :::
 
-<1>4. A finite discrete space of $r\ge1$ points has value
+:::
+
+::: {.pf-step #s4}
+
+A finite discrete space of $r\ge1$ points has value
 \[
 (r-1)n.
 \]
-::: {.proof}
-The case $r=1$ is <1>1 and $r=2$ is axiom (c). For $r>2$, choose a two-point subcomplex $A\cong S^0$. Collapsing $A$ to one point leaves a discrete space of $r-1$ points, so induction and additivity give
+
+::: pf-proof
+
+The case $r=1$ is step [](#s1){.pf-ref} and $r=2$ is axiom (c). For $r>2$, choose a two-point subcomplex $A\cong S^0$. Collapsing $A$ to one point leaves a discrete space of $r-1$ points, so induction and additivity give
 \[
 \varphi(r\text{ points})=n+(r-2)n=(r-1)n.
 \]
+
 :::
 
-<1>5. For every finite CW complex $X$,
+:::
+
+::: pf-step
+
+For every finite CW complex $X$,
 \[
 \varphi(X)=n\widetilde\chi(X).
 \]
-::: {.proof}
-Let $c_k$ be the number of $k$-cells. By <1>4,
+
+::: pf-proof
+
+Let $c_k$ be the number of $k$-cells. By step [](#s4){.pf-ref},
 \[
 \varphi(X^0)=(c_0-1)n.
 \]
@@ -99,7 +133,7 @@ For $k\ge1$, collapsing $X^{k-1}$ gives
 \[
 X^k/X^{k-1}\cong\bigvee^{c_k}S^k.
 \]
-Repeated additivity for wedge summands, together with <1>1 and <1>3, yields
+Repeated additivity for wedge summands, together with steps [](#s1){.pf-ref} and [](#s3){.pf-ref}, yields
 \[
 \varphi(X^k/X^{k-1})=c_k(-1)^k n.
 \]
@@ -110,10 +144,17 @@ Induction over the skeleta therefore gives
 =n(\chi(X)-1).
 \]
 This proves uniqueness.
+
 :::
 
-<1>6. The formula $\varphi(X)=n\widetilde\chi(X)$ satisfies axioms (a)--(c).
-::: {.proof}
+:::
+
+::: pf-step
+
+The formula $\varphi(X)=n\widetilde\chi(X)$ satisfies axioms (a)--(c).
+
+::: pf-proof
+
 Homeomorphism invariance is clear. For a CW pair $(X,A)$,
 \[
 \widetilde\chi(X)=\widetilde\chi(A)+\widetilde\chi(X/A),
@@ -123,10 +164,17 @@ which follows immediately from cell counts: the quotient has the cells of $X-A$ 
 \widetilde\chi(S^0)=1,
 \]
 so $\varphi(S^0)=n$. Thus existence holds.
+
 :::
 
-<1>7. The function $\varphi$ is a homotopy invariant.
-::: {.proof}
+:::
+
+::: pf-step
+
+The function $\varphi$ is a homotopy invariant.
+
+::: pf-proof
+
 For finite CW complexes,
 \[
 \chi(X)=\sum_i(-1)^i\dim_{\mathbb Q}H_i(X;\mathbb Q),
@@ -135,5 +183,11 @@ so Euler characteristic is preserved by homotopy equivalence. Therefore the redu
 \[
 X\simeq Y\quad\Longrightarrow\quad\varphi(X)=\varphi(Y).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

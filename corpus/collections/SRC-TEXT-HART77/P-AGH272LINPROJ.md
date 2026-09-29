@@ -40,9 +40,14 @@ T:F\longrightarrow V,\quad f_j\longmapsto t_j.
 $$
 Write $r=\dim_kV$.
 
-<1>1. There is an injective linear map $J:E\to F$ with $T\circ J=S$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+There is an injective linear map $J:E\to F$ with $T\circ J=S$.
+
+::: pf-proof
+
 Choose complements $E=E_0\oplus\ker S$ and $F=F_0\oplus\ker T$.
 The restrictions $S|_{E_0}$ and $T|_{F_0}$ are isomorphisms onto $V$.
 Since
@@ -53,14 +58,20 @@ choose an injection $J_1:\ker S\to\ker T$.
 Define $J$ on $E_0$ to be $(T|_{F_0})^{-1}\circ S|_{E_0}$, and on $\ker S$ to be $J_1$.
 The images of these two summands lie in the complementary subspaces $F_0$ and $\ker T$, and both restrictions are injective.
 Thus $J$ is injective, and its construction gives $T\circ J=S$.
+
 :::
 
-<1>2. There is a matrix $A=(a_{ij})$ of row rank $n+1$ such that $s_i=\sum_{j=0}^m a_{ij}t_j$.
+:::
+
+::: {.pf-step #s2}
+
+There is a matrix $A=(a_{ij})$ of row rank $n+1$ such that $s_i=\sum_{j=0}^m a_{ij}t_j$.
 Its linear forms define a projection $p_A:\PP^m\setminus L\to\PP^n$, with $\dim L=m-n-1$ when $m>n$.
 
-::: {.proof}
+::: pf-proof
+
 Write $J(e_i)=\sum_j a_{ij}f_j$.
-The identity in step <1>1 gives the required section identities, and injectivity of $J$ makes the rows of $A$ linearly independent.
+The identity in step [](#s1){.pf-ref} gives the required section identities, and injectivity of $J$ makes the rows of $A$ linearly independent.
 For homogeneous coordinates $z_0,\ldots,z_m$, put
 $$
 \ell_i(z)=\sum_j a_{ij}z_j,\qquad
@@ -73,11 +84,17 @@ Projection along the kernel maps $\PP^m\setminus L$ to the linear $n$-plane of l
 Thus $p_A$ is a linear projection followed by a projective linear isomorphism of its target.
 Under any fixed linear identification of that target with $\PP^n$, the latter is an automorphism of $\PP^n$.
 When $m=n$, $A$ is invertible, the center is empty, and $p_A$ itself is a projective linear automorphism; the dimension $-1$ convention refers to this empty center.
+
 :::
 
-<1>3. The image of $\psi$ avoids $L$, and $\varphi=p_A\circ\psi$ as morphisms of schemes.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The image of $\psi$ avoids $L$, and $\varphi=p_A\circ\psi$ as morphisms of schemes.
+
+::: pf-proof
+
 Under the isomorphism $\psi^*\OO_{\PP^m}(1)\cong\mcl$, the pullback of $\ell_i$ is $\sum_j a_{ij}t_j=s_i$ [@Har10a, Theorem II.7.1].
 The sections $s_i$ [[D-MODGG|generate]] $\mcl$ at every point, so their common zero subscheme is empty.
 Consequently $\psi^{-1}(L)=\varnothing$, and the composite is defined on all of $X$.
@@ -90,12 +107,18 @@ $$
 These are exactly the coordinate-ring maps defining $\varphi$ on $X_{s_i}$.
 The opens $X_{s_i}$ cover $X$, so the morphisms agree, including when $X$ is nonreduced.
 For $X=\varnothing$ the same equality is the uniqueness of its morphism to the target.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 construct a projection with the required center without assuming either generating list is a basis.
-Step <1>3 proves the required factorization, and the target identification in step <1>2 gives its stated automorphism.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct a projection with the required center without assuming either generating list is a basis.
+Step [](#s3){.pf-ref} proves the required factorization, and the target identification in step [](#s2){.pf-ref} gives its stated automorphism.
+
+:::
+
+:::
+
 :::

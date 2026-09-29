@@ -41,7 +41,12 @@ and give an example where equality does not hold.
 :::
 
 ::: {.solution}
-<1>1. The pairwise-intersection hypothesis gives
+
+::: pf
+
+::: {.pf-step #s1}
+
+The pairwise-intersection hypothesis gives
 $$
 \begin{aligned}
 \dim(U+V)&=\dim U+\dim V,\\
@@ -50,21 +55,28 @@ $$
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
+
 For finite-dimensional subspaces $A,B$,
 $$
 \dim(A+B)=\dim A+\dim B-\dim(A\cap B).
 $$
 Each of the three intersections in the problem is the zero subspace, so applying
 this formula to the three pairs gives the displayed equalities.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \dim(U+V+W)\le\dim U+\dim V+\dim W.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Consider the linear map
 $$
 \Phi\colon U\oplus V\oplus W\longrightarrow U+V+W,
@@ -77,12 +89,18 @@ $$
 \le\dim(U\oplus V\oplus W)
 =\dim U+\dim V+\dim W.
 $$
+
 :::
 
-<1>3. The required dimension inequality holds.
+:::
 
-::: {.proof}
-By step <1>1, its right-hand side equals
+::: {.pf-step #s3}
+
+The required dimension inequality holds.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, its right-hand side equals
 $$
 2(\dim U+\dim V+\dim W).
 $$
@@ -90,10 +108,15 @@ Its left-hand side equals
 $$
 \dim(U+V+W)+\dim U+\dim V+\dim W,
 $$
-which is at most the same quantity by step <1>2.
+which is at most the same quantity by step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. In $\RR^2$, the choice
+:::
+
+::: {.pf-step #s4}
+
+In $\RR^2$, the choice
 $$
 \boxed{
 U=\operatorname{span}(e_1),\qquad
@@ -103,7 +126,8 @@ W=\operatorname{span}(e_1+e_2)
 $$
 satisfies the hypotheses and makes the inequality strict.
 
-::: {.proof}
+::: pf-proof
+
 The three lines are distinct, so any two intersect trivially.
 Each has dimension $1$, every pair spans $\RR^2$, and all three
 together also span $\RR^2$. Thus the left-hand side of the required
@@ -116,12 +140,18 @@ $$
 2+2+2=6.
 $$
 Hence equality fails.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the inequality, and step <1>4 gives the requested
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the inequality, and step [](#s4){.pf-ref} gives the requested
 strict example.
+
 :::
+
+:::
+
 :::

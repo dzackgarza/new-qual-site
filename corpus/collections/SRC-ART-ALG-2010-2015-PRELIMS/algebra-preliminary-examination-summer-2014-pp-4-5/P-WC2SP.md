@@ -47,10 +47,16 @@ Show that $R/M^n$ is a local ring.
 :::
 
 ::: {.solution}
-<1>1. If $A$ is a local ring with unique maximal ideal $M$, then
+
+::: pf
+
+::: pf-step
+
+If $A$ is a local ring with unique maximal ideal $M$, then
 $A^\times=A\setminus M$.
 
-::: {.proof}
+::: pf-proof
+
 A unit cannot lie in a proper ideal: if $u\in I$ and $u$ is a
 unit, then $1=u^{-1}u\in I$. Thus no element of $M$ is a unit.
 
@@ -62,14 +68,20 @@ an ideal containing $(a)$ and remains proper, since membership
 of $1$ in that union would put $1$ in a member of the chain.
 Zorn's lemma gives a maximal element, which is a maximal ideal
 of $A$ [@DF04]. By uniqueness it is $M$, so $a\in M$.
+
 :::
 
-<1>2. In part (b), $R$ is local with unique maximal ideal
+:::
+
+::: pf-step
+
+In part (b), $R$ is local with unique maximal ideal
 $$
 \mathfrak m=\{x\in F:|x|<1\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The axioms imply $|0|=0$ and $|1|>0$. Multiplicativity gives
 $|1|=|1|^2$, hence $|1|=1$. Also $|-1|^2=|1|=1$ and
 $|-1|\geq0$, so $|-1|=1$ and $|-x|=|x|$.
@@ -93,11 +105,17 @@ Every proper ideal contains no unit, so is contained in
 $\mathfrak m$. This proves uniqueness. The argument also
 covers the trivial absolute value, when $R=F$ and
 $\mathfrak m=(0)$.
+
 :::
 
-<1>3. In part (c), the unique maximal ideal of $R/M^n$ is $M/M^n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (c), the unique maximal ideal of $R/M^n$ is $M/M^n$.
+
+::: pf-proof
+
 Since $n\geq1$, one has $M^n\subseteq M\ne R$.
 Moreover,
 $$
@@ -114,5 +132,11 @@ Primality, applied repeatedly to this product of $n$ copies
 of $m$, gives $m\in N$. Hence $M\subseteq N$.
 Maximality of $M$ and properness of $N$ give $N=M$, so
 $\mathfrak n=M/M^n$. Thus no other maximal ideal exists.
+
 :::
+
+:::
+
+:::
+
 :::

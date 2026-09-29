@@ -41,7 +41,11 @@ $$
 \int_{\Gamma_N}F(z)\,dz\longrightarrow0.
 $$
 
-<1>1. At each integer $k$,
+::: pf
+
+::: pf-step
+
+At each integer $k$,
 $$
 \operatorname{Res}(F,k)=\frac1{k^2+a^2}.
 $$
@@ -52,7 +56,16 @@ $$
 $$
 using $\cot(iu)=-i\coth u$.
 
-<1>2. The residue theorem therefore gives, after $N\to\infty$,
+:::
+
+::: pf-step
+
+The residue theorem therefore gives, after $N\to\infty$,
+
+:::
+
+:::
+
 $$
 \sum_{k\in\mathbb Z}\frac1{k^2+a^2}
 =\frac{\pi}{a}\coth(\pi a).

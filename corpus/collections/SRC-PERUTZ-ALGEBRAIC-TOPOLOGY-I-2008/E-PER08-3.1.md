@@ -42,8 +42,14 @@ are two pushouts of the same diagram
 G_1\xleftarrow{f_1}H\xrightarrow{f_2}G_2.
 \]
 
-<1>1. There is a unique homomorphism $\phi:P\to Q$ compatible with the structure maps.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+There is a unique homomorphism $\phi:P\to Q$ compatible with the structure maps.
+
+::: pf-proof
+
 Because $Q$ is a pushout square,
 \[
 q_1f_1=q_2f_2.
@@ -58,10 +64,17 @@ such that
 \qquad
 \phi p_2=q_2.
 \]
+
 :::
 
-<1>2. There is a unique homomorphism $\psi:Q\to P$ compatible with the structure maps.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is a unique homomorphism $\psi:Q\to P$ compatible with the structure maps.
+
+::: pf-proof
+
 Similarly, since
 \[
 p_1f_1=p_2f_2,
@@ -76,10 +89,17 @@ such that
 \qquad
 \psi q_2=p_2.
 \]
+
 :::
 
-<1>3. The maps $\phi$ and $\psi$ are inverse isomorphisms.
-::: {.proof}
+:::
+
+::: pf-step
+
+The maps $\phi$ and $\psi$ are inverse isomorphisms.
+
+::: pf-proof
+
 For $i=1,2$,
 \[
 (\psi\phi)p_i
@@ -105,10 +125,17 @@ for $i=1,2$, and the uniqueness clause for $Q$ gives
 \phi\psi=\operatorname{id}_Q.
 \]
 Therefore $\phi$ is an isomorphism with inverse $\psi$.
+
 :::
 
-<1>4. The isomorphism is unique as an isomorphism of pushout diagrams.
-::: {.proof}
+:::
+
+::: pf-step
+
+The isomorphism is unique as an isomorphism of pushout diagrams.
+
+::: pf-proof
+
 Suppose
 \[
 \theta:P\to Q
@@ -124,5 +151,11 @@ The universal property of $P$ says that there is exactly one such homomorphism, 
 \]
 
 Thus the pushout is unique up to a unique isomorphism commuting with the maps from $G_1$ and $G_2$.
+
 :::
+
+:::
+
+:::
+
 :::

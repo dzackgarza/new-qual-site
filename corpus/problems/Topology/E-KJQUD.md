@@ -17,14 +17,34 @@ review: draft
 :::
 
 ::: {.solution}
-<1>1. The closure $\overline E$ is the intersection of all closed subsets of $X$ containing $E$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The closure $\overline E$ is the intersection of all closed subsets of $X$ containing $E$.
+
+::: pf-proof
+
 Arbitrary intersections of closed sets are closed, so this is the unique smallest closed subset containing $E$.
+
 :::
 
-<1>2. Equivalently,
-$$\boxed{\overline E=\{x\in X:U\cap E\ne\varnothing\text{ for every open neighborhood }U\ni x\}.}$$
-::: {.proof}
-A point fails to lie in the intersection from <1>1 exactly when it has an open neighborhood contained in the complement of some closed set containing $E$, hence disjoint from $E$.
 :::
+
+::: pf-step
+
+Equivalently,
+$$\boxed{\overline E=\{x\in X:U\cap E\ne\varnothing\text{ for every open neighborhood }U\ni x\}.}$$
+
+::: pf-proof
+
+A point fails to lie in the intersection from step [](#s1){.pf-ref} exactly when it has an open neighborhood contained in the complement of some closed set containing $E$, hence disjoint from $E$.
+
+:::
+
+:::
+
+:::
+
 :::

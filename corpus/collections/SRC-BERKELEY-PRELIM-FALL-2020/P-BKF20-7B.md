@@ -43,7 +43,12 @@ Let $A$ be linear on a vector space $W$ over a field $k$, with $A^5=I$.
 :::
 
 ::: {.solution}
-<1>1. Assume
+
+::: pf
+
+::: {.pf-step #s1}
+
+Assume
 $$
 \operatorname{char}k\ne5
 $$
@@ -58,7 +63,8 @@ $$
 \operatorname{im}P=U.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $5$ is nonzero in $k$, it is invertible and $P$ is well-defined.
 For every $w\in W$,
 $$
@@ -87,23 +93,34 @@ u.
 $$
 Therefore every $u\in U$ belongs to $\operatorname{im}P$, proving
 equality.
+
 :::
 
-<1>2. The operator $P$ is a projection:
+:::
+
+::: {.pf-step #s2}
+
+The operator $P$ is a projection:
 $$
 P^2=P.
 $$
 
-::: {.proof}
-By step <1>1, $Pw\in U$ for every $w\in W$. The same step shows that
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $Pw\in U$ for every $w\in W$. The same step shows that
 $P$ acts as the identity on $U$. Hence
 $$
 P^2w=P(Pw)=Pw
 $$
 for every $w$.
+
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #s3}
+
+If
 $$
 V\coloneqq\ker P,
 $$
@@ -112,18 +129,19 @@ $$
 W=U\oplus V.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $w\in W$,
 $$
 w
 =
 Pw+(w-Pw).
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 Pw\in U,
 $$
-and by step <1>2,
+and by step [](#s2){.pf-ref},
 $$
 P(w-Pw)
 =
@@ -133,19 +151,25 @@ Pw-P^2w
 $$
 so $w-Pw\in V$. Thus $W=U+V$.
 
-If $x\in U\cap V$, then step <1>1 gives
+If $x\in U\cap V$, then step [](#s1){.pf-ref} gives
 $$
 Px=x,
 $$
 while $x\in V$ gives $Px=0$. Hence $x=0$, so the sum is direct.
+
 :::
 
-<1>4. The complement $V$ satisfies
+:::
+
+::: {.pf-step #s4}
+
+The complement $V$ satisfies
 $$
 AV=V.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The operator $P$ is a polynomial in $A$, so
 $$
 PA=AP.
@@ -177,9 +201,14 @@ $$
 V\subseteq AV.
 $$
 Therefore $AV=V$. This proves part (a).
+
 :::
 
-<1>5. For part (b), let
+:::
+
+::: {.pf-step #s5}
+
+For part (b), let
 $$
 k=\FF_5,
 \qquad
@@ -196,7 +225,8 @@ $$
 A^5=I.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 A=I+N,
@@ -216,14 +246,20 @@ I+5N
 =
 I.
 $$
+
 :::
 
-<1>6. For the operator in step <1>5,
+:::
+
+::: {.pf-step #s6}
+
+For the operator in step [](#s5){.pf-ref},
 $$
 U=\operatorname{span}(e_1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 v=ae_1+be_2,
@@ -233,12 +269,18 @@ $$
 Av=(a+b)e_1+be_2.
 $$
 Thus $Av=v$ exactly when $b=0$, which gives the stated fixed space.
+
 :::
 
-<1>7. The fixed space $U$ in step <1>6 has no $A$-invariant
+:::
+
+::: {.pf-step #s7}
+
+The fixed space $U$ in step [](#s6){.pf-ref} has no $A$-invariant
 complement.
 
-::: {.proof}
+::: pf-proof
+
 Any complement $V$ of the one-dimensional subspace $U$ in $W=k^2$
 must itself be one-dimensional. Write
 $$
@@ -252,7 +294,7 @@ A(ae_1+be_2)
 =
 \lambda(ae_1+be_2).
 $$
-Using step <1>6, this becomes
+Using step [](#s6){.pf-ref}, this becomes
 $$
 (a+b)e_1+be_2
 =
@@ -268,12 +310,18 @@ a+b=a,
 $$
 so $b=0$, a contradiction. Therefore no such invariant complement
 exists.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), and steps <1>5--<1>7 give the required
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), and steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} give the required
 counterexample for part (b).
+
 :::
+
+:::
+
 :::

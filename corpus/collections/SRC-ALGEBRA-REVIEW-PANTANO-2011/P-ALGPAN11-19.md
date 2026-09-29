@@ -59,8 +59,14 @@ The successive remainders are
 \]
 so the answer is $\boxed{\text{(D)}}$.
 
-<1>1. For $a=273$ and $b=110$, the algorithm computes $r=53,4,1,0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+For $a=273$ and $b=110$, the algorithm computes $r=53,4,1,0$.
+
+::: pf-proof
+
 \[
 273=2\cdot110+53,
 \]
@@ -79,5 +85,11 @@ and finally
 4=4\cdot1+0.
 \]
 Thus the algorithm computes $r=53,4,1,0$ in order.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -36,9 +36,14 @@ Show that if $I_m-AB$ is invertible then so is $I_n-BA$. (Hint: what does the co
 ::: {.solution}
 Assume that $I_m-AB$ is invertible.
 
-<1>1. The kernel of $I_n-BA$ is trivial.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The kernel of $I_n-BA$ is trivial.
+
+::: pf-proof
+
 Let $v\in\CC^n$ satisfy
 $$
 (I_n-BA)v=0.
@@ -60,19 +65,31 @@ $$
 v=BAv=Bw=0.
 $$
 Thus $\ker(I_n-BA)=\{0\}$.
+
 :::
 
-<1>2. The matrix $I_n-BA$ is invertible.
+:::
 
-::: {.proof}
-By step <1>1, the linear map $I_n-BA:\CC^n\to\CC^n$ is injective. An
+::: {.pf-step #s2}
+
+The matrix $I_n-BA$ is invertible.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the linear map $I_n-BA:\CC^n\to\CC^n$ is injective. An
 injective endomorphism of the finite-dimensional vector space $\CC^n$ is
 surjective, hence invertible.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

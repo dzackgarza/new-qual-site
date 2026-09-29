@@ -35,12 +35,17 @@ N=A-I
 \end{pmatrix}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 N^2=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 \begin{pmatrix}
@@ -54,15 +59,21 @@ $$
 \end{pmatrix}.
 $$
 Hence $N^2=0$.
+
 :::
 
-<1>2. For every integer $m$,
+:::
+
+::: {.pf-step #s2}
+
+For every integer $m$,
 $$
 A^m=I+mN.
 $$
 
-::: {.proof}
-For $m\geq0$, the binomial theorem and step <1>1 give
+::: pf-proof
+
+For $m\geq0$, the binomial theorem and step [](#s1){.pf-ref} give
 $$
 (I+N)^m=I+mN.
 $$
@@ -84,9 +95,14 @@ $$
 (I-N)^k=I-kN=I+mN.
 $$
 Thus the formula holds for every integer $m$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \boxed{
 A^{100}
@@ -98,8 +114,9 @@ A^{100}
 }.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 A^{100}
@@ -123,9 +140,14 @@ I+100N\\
 \end{pmatrix}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \boxed{
 A^{-7}
@@ -137,8 +159,9 @@ A^{-7}
 }.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 A^{-7}
@@ -162,11 +185,17 @@ I-7N\\
 \end{pmatrix}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>4 are the requested calculations.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} are the requested calculations.
+
+:::
+
+:::
+
 :::

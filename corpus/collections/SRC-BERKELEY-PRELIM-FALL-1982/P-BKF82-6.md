@@ -31,8 +31,14 @@ Let $T$ be a linear operator on a finite-dimensional complex vector space and $f
 Yes. The eigenvalues of $f(T)$ are exactly the numbers $f(\lambda)$ with
 $\lambda$ an eigenvalue of $T$.
 
-<1>1. An eigenvalue of $T$ produces an eigenvalue of $f(T)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+An eigenvalue of $T$ produces an eigenvalue of $f(T)$.
+
+::: pf-proof
+
 Let $v\ne0$ satisfy
 $$
 Tv=\lambda v.
@@ -49,10 +55,17 @@ f(T)v
 =f(\lambda)v.
 $$
 Thus $f(\lambda)$ is an eigenvalue of $f(T)$.
+
 :::
 
-<1>2. Every eigenvalue of $f(T)$ arises in this way when $f$ is nonconstant.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every eigenvalue of $f(T)$ arises in this way when $f$ is nonconstant.
+
+::: pf-proof
+
 Let $\mu$ be an eigenvalue of $f(T)$. Then
 $$
 f(T)-\mu I
@@ -72,10 +85,17 @@ so $\lambda_j$ is an eigenvalue of $T$. By construction
 $$
 f(\lambda_j)=\mu.
 $$
+
 :::
 
-<1>3. The constant-polynomial case gives the same conclusion.
-::: {.proof}
+:::
+
+::: pf-step
+
+The constant-polynomial case gives the same conclusion.
+
+::: pf-proof
+
 If $f\equiv c$, then $f(T)=cI$, whose only eigenvalue is $c$. On a nonzero
 finite-dimensional complex vector space, $T$ has an eigenvalue $\lambda$, and
 $f(\lambda)=c$. Thus again every eigenvalue of $f(T)$ is obtained from an
@@ -85,5 +105,11 @@ Therefore
 $$
 \boxed{\sigma(f(T))=f(\sigma(T)).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

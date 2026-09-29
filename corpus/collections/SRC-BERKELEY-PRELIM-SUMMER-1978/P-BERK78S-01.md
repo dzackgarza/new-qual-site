@@ -41,13 +41,19 @@ For each of the following, either give an example or prove that no such example 
 :::
 
 ::: {.solution}
-<1>1. For part (1), the symmetric group
+
+::: pf
+
+::: {.pf-step #s1}
+
+For part (1), the symmetric group
 $$
 \boxed{S_3}
 $$
 is nonabelian.
 
-::: {.proof}
+::: pf-proof
+
 For example,
 $$
 (12)(23)=(123)
@@ -57,22 +63,33 @@ $$
 (23)(12)=(132).
 $$
 Thus multiplication in $S_3$ is not commutative.
+
 :::
 
-<1>2. For part (2), the group
+:::
+
+::: {.pf-step #s2}
+
+For part (2), the group
 $$
 \boxed{C_2\times C_2}
 $$
 is finite abelian and not cyclic.
 
-::: {.proof}
+::: pf-proof
+
 It is abelian because it is a direct product of abelian groups. It has four
 elements, but every nonidentity element has order $2$. A cyclic group of
 order $4$ would contain an element of order $4$, so $C_2\times C_2$ is not
 cyclic.
+
 :::
 
-<1>3. For part (3), the additive group
+:::
+
+::: {.pf-step #s3}
+
+For part (3), the additive group
 $$
 \boxed{\ZZ}
 $$
@@ -82,7 +99,8 @@ $$
 $$
 of index $5$.
 
-::: {.proof}
+::: pf-proof
+
 The five cosets are
 $$
 5\ZZ,\quad
@@ -96,21 +114,32 @@ $$
 [\ZZ:5\ZZ]=5,
 $$
 and $\ZZ$ is infinite.
+
 :::
 
-<1>4. For part (4), the groups
+:::
+
+::: {.pf-step #s4}
+
+For part (4), the groups
 $$
 \boxed{C_4\quad\text{and}\quad C_2\times C_2}
 $$
 have the same finite order but are not isomorphic.
 
-::: {.proof}
+::: pf-proof
+
 Both groups have order $4$. The first contains an element of order $4$,
-whereas the second has no such element by step <1>2. Since isomorphisms
+whereas the second has no such element by step [](#s2){.pf-ref}. Since isomorphisms
 preserve element orders, the groups are not isomorphic.
+
 :::
 
-<1>5. For part (5), take
+:::
+
+::: {.pf-step #s5}
+
+For part (5), take
 $$
 \boxed{
 G=S_3,
@@ -120,7 +149,8 @@ H=\langle(12)\rangle.
 $$
 Then $H$ is not normal in $G$.
 
-::: {.proof}
+::: pf-proof
+
 Conjugating the generator by $(123)$ gives
 $$
 (123)(12)(123)^{-1}=(23),
@@ -134,9 +164,14 @@ $$
 (123)H(123)^{-1}\neq H,
 $$
 so $H$ is not normal.
+
 :::
 
-<1>6. For part (6), the alternating group
+:::
+
+::: {.pf-step #s6}
+
+For part (6), the alternating group
 $$
 \boxed{A_5}
 $$
@@ -147,7 +182,8 @@ $$
 A_5.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The group $A_5$ is nonabelian; for instance the $3$-cycles $(123)$ and
 $(345)$ do not commute.
 
@@ -175,9 +211,14 @@ $$
 $$
 none of which divides $60$. Thus a normal subgroup has order either $1$ or
 $60$. Therefore $A_5$ is simple.
+
 :::
 
-<1>7. For part (7), take
+:::
+
+::: {.pf-step #s7}
+
+For part (7), take
 $$
 \boxed{
 G=\ZZ,
@@ -188,7 +229,8 @@ $$
 Then $H\trianglelefteq G$, but $G/H$ is not isomorphic to any subgroup of
 $G$.
 
-::: {.proof}
+::: pf-proof
+
 The group $\ZZ$ is abelian, so every subgroup is normal. Moreover,
 $$
 \ZZ/2\ZZ\cong C_2.
@@ -196,11 +238,17 @@ $$
 Every nonzero subgroup of $\ZZ$ is of the form $m\ZZ$ and is infinite
 cyclic; the zero subgroup is trivial. Thus $\ZZ$ has no subgroup
 isomorphic to the finite nontrivial group $C_2$.
+
 :::
 
-<1>8. Part (8) is impossible: every subgroup of index $2$ is normal.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+Part (8) is impossible: every subgroup of index $2$ is normal.
+
+::: pf-proof
+
 Let $H\leq G$ with $[G:H]=2$. If $g\in H$, then
 $$
 gH=H=Hg.
@@ -219,12 +267,18 @@ gH=Hg
 $$
 for every $g\in G$. Therefore $H\trianglelefteq G$, and no example of the
 requested kind exists.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>7 give the requested examples, and step <1>8 proves the
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} give the requested examples, and step [](#s8){.pf-ref} proves the
 nonexistence assertion for part (8).
+
 :::
+
+:::
+
 :::

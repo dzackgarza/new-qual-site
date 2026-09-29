@@ -27,17 +27,29 @@ audit:
 Show that if a subgroup H of a group G has just one left coset different from itself, then it is a normal subgroup of G.
 :::
 
-
 ::: {.solution}
 Let $H\le G$. Since $H$ has exactly one left coset other than $H$ itself, there are exactly two left cosets of $H$ in $G$.
 
-<1>1. If $g\in H$, then $gH=Hg=H$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $g\in H$, then $gH=Hg=H$.
+
+::: pf-proof
+
 Because $H$ is a subgroup, left or right multiplication by an element of $H$ preserves $H$. Hence $gH=H=Hg$.
+
 :::
 
-<1>2. If $g\notin H$, then $gH=G\setminus H$ and $Hg=G\setminus H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $g\notin H$, then $gH=G\setminus H$ and $Hg=G\setminus H$.
+
+::: pf-proof
+
 The left cosets of $H$ partition $G$. Since there are only two of them, namely $H$ and one other coset, every $g\notin H$ lies in that unique other left coset. Thus
 \[
 gH=G\setminus H.
@@ -52,11 +64,18 @@ Hence there are also exactly two right cosets. Since $g\notin H$, the right cose
 Hg=G\setminus H.
 \]
 Therefore $gH=Hg$.
+
 :::
 
-<1>3. Therefore $H$ is normal in $G$.
-::: {.proof}
-By <1>1 and <1>2, for every $g\in G$ we have $gH=Hg$. This is equivalent to
+:::
+
+::: pf-step
+
+Therefore $H$ is normal in $G$.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, for every $g\in G$ we have $gH=Hg$. This is equivalent to
 \[
 gHg^{-1}=H
 \]
@@ -64,5 +83,11 @@ for every $g\in G$. Hence
 \[
 \boxed{H\trianglelefteq G}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -37,8 +37,15 @@ Does $\alpha^p\omega(\alpha)$ tend to a limit as $\alpha\to0^+$? Give a proof or
 :::
 
 ::: {.solution}
-<1>1. Use the layer-cake identity.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Use the layer-cake identity.
+
+::: pf-proof
+
 For the nonnegative function $\abs{f}^p$,
 $$
 \norm{f}_p^p
@@ -49,13 +56,20 @@ $$
 \int_0^a \alpha^{p-1}\omega(\alpha)\,d\alpha\longrightarrow0
 \qquad(a\downarrow0).
 $$
+
 :::
 
-<1>2. The limit is
+:::
+
+::: {.pf-step #s2}
+
+The limit is
 $$
 \boxed{\lim_{\alpha\to0^+}\alpha^p\omega(\alpha)=0}.
 $$
-::: {.proof}
+
+::: pf-proof
+
 The distribution function $\omega$ is decreasing. Hence for $t\in[\alpha/2,\alpha]$,
 $$
 \omega(t)\ge\omega(\alpha).
@@ -75,11 +89,18 @@ $$
 \int_0^\alpha t^{p-1}\omega(t)\,dt
 \longrightarrow0.
 $$
-The last limit follows from step <1>1.
+The last limit follows from step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>2 gives the requested limit.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the requested limit.
+
+:::
+
+:::
+
 :::

@@ -41,28 +41,39 @@ Both [[D-QNTZY|coherence and quasi-coherence]] are local properties.
 It therefore suffices to work on an arbitrary affine open $U=\Spec A\subseteq X$, where $A$ is noetherian.
 Write $\mcf|_U=\widetilde M$ and $\mcg|_U=\widetilde N$; the module $M$ is finite, and $N$ is finite in (a) and arbitrary in (b).
 
-<1>1. The module $M$ has a resolution by finite free $A$-modules
+::: pf
+
+::: {.pf-step #s1}
+
+The module $M$ has a resolution by finite free $A$-modules
 $$
 \cdots\longrightarrow P_2\longrightarrow P_1\longrightarrow P_0
 \longrightarrow M\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a finite generating set for $M$ to obtain $P_0\twoheadrightarrow M$.
 Its kernel is finitely generated because $A$ is noetherian and $P_0$ is finite.
 Choose a finite free module surjecting onto that kernel and repeat.
 This gives an exact resolution, although it need not terminate.
 The associated-sheaf functor is exact on $\Spec A$, so sheafification gives a resolution of $\widetilde M$ by finite-rank free sheaves.
+
 :::
 
-<1>2. On $U$ there is an isomorphism
+:::
+
+::: {.pf-step #s2}
+
+On $U$ there is an isomorphism
 $$
 \mathcal{E}xt_U^i(\widetilde M,\widetilde N)
 \cong\widetilde{\Ext_A^i(M,N)}
 \qquad(i\ge0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The locally free resolution formula [@Har10a, Proposition III.6.5] computes the left side as the $i$th cohomology sheaf of
 $$
 \sheafhom_U(\widetilde P_\bullet,\widetilde N).
@@ -80,22 +91,34 @@ H^i(\Hom_A(P_\bullet,N))=\Ext_A^i(M,N).
 $$
 This proves the assertion, including $i=0$.
 For a fixed degree only the neighboring finite free terms enter its kernel and image; an infinite resolution causes no infinite-product issue.
+
 :::
 
-<1>3. The sheaf in step <1>2 is coherent in (a) and quasi-coherent in (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The sheaf in step [](#s2){.pf-ref} is coherent in (a) and quasi-coherent in (b).
+
+::: pf-proof
+
 In (a), each $\Hom_A(P_j,N)$ is a finite direct sum of the finite module $N$.
 Its submodules and quotients are finite over the noetherian ring $A$.
 Therefore the cohomology modules $\Ext_A^i(M,N)$ are finite, and their associated sheaves are coherent [@Har10a, Proposition II.5.4].
 
 In (b), the Ext modules need not be finite, but the associated sheaf of every $A$-module is quasi-coherent.
-Thus step <1>2 gives quasi-coherence with no finiteness requirement on $N$.
+Thus step [](#s2){.pf-ref} gives quasi-coherence with no finiteness requirement on $N$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove both assertions on each affine open, and locality of sheaf Ext and of the two finiteness properties gives (a) and (b) on $X$.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove both assertions on each affine open, and locality of sheaf Ext and of the two finiteness properties gives (a) and (b) on $X$.
+
+:::
+
+:::
+
 :::

@@ -31,9 +31,14 @@ $$
 J\coloneqq\int_0^\infty\frac{\sin^3x}{x^3}\,dx.
 $$
 
-<1>1. The given integral is absolutely convergent and equals $2J$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The given integral is absolutely convergent and equals $2J$.
+
+::: pf-proof
+
 Near zero, $\sin x/x\to1$, so $\sin^3x/x^3$ extends continuously
 across zero. For $\abs{x}\ge1$,
 $$
@@ -41,14 +46,19 @@ $$
 $$
 which is integrable at infinity. The integrand is even, hence the
 whole-line integral is $2J$.
+
 :::
 
-<1>2.
+:::
+
+::: {.pf-step #s2}
+
 $$
 J=\frac38\int_0^\infty\frac{\cos x-\cos3x}{x^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Integrating by parts with
 $u=\sin^3x$ and $dv=x^{-3}\,dx$ gives
 $$
@@ -62,14 +72,19 @@ $$
 \sin^2x\cos x=\frac{\cos x-\cos3x}{4}
 $$
 gives the claim.
+
 :::
 
-<1>3.
+:::
+
+::: {.pf-step #s3}
+
 $$
 \int_0^\infty\frac{\cos x-\cos3x}{x^2}\,dx=\pi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Another integration by parts gives
 $$
 \int_0^\infty\frac{\cos x-\cos3x}{x^2}\,dx
@@ -88,26 +103,38 @@ the last display equals
 $$
 3\frac\pi2-\frac\pi2=\pi.
 $$
+
 :::
 
-<1>4. The requested integral is $\boxed{3\pi/4}$.
+:::
 
-::: {.proof}
-By steps <1>2 and <1>3,
+::: {.pf-step #s4}
+
+The requested integral is $\boxed{3\pi/4}$.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 J=\frac{3\pi}{8}.
 $$
-Step <1>1 therefore gives
+Step [](#s1){.pf-ref} therefore gives
 $$
 \int_{-\infty}^{\infty}\frac{\sin^3x}{x^3}\,dx
 =2J
 =\frac{3\pi}{4}.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 evaluates the integral.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} evaluates the integral.
+
+:::
+
+:::
+
 :::

@@ -37,8 +37,15 @@ pointwise almost everywhere.
 :::
 
 ::: {.solution}
-<1>1. The convolution is continuous.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The convolution is continuous.
+
+::: pf-proof
+
 Since $E$ and $F$ have finite measure,
 \[
 \chi_E,\chi_F\in L^2(\mathbb R).
@@ -51,10 +58,17 @@ For $h\in\mathbb R$,
 \end{aligned}
 \]
 The right-hand side is independent of $x$ and tends to $0$ as $h\to0$ by continuity of translations in $L^2$. Hence $\chi_E*\chi_F$ is uniformly continuous, in particular continuous.
+
 :::
 
-<1>2. The normalized interval convolutions converge almost everywhere to $\chi_E$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The normalized interval convolutions converge almost everywhere to $\chi_E$.
+
+::: pf-proof
+
 For every $x$,
 \[
 \begin{aligned}
@@ -68,5 +82,11 @@ Thus this is the average of $\chi_E$ over the interval $[x-1/n,x]$. By the one-s
 n\int_{x-1/n}^{x}\chi_E(y)\,dy\longrightarrow\chi_E(x).
 \]
 This proves the claim.
+
 :::
+
+:::
+
+:::
+
 :::

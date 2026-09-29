@@ -39,17 +39,31 @@ See Munkres p.164, especially for (ii).
 :::
 
 ::: {.solution}
-<1>1. A topological space is compact if every open cover has a finite subcover.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+A topological space is compact if every open cover has a finite subcover.
+
+::: pf-proof
+
 This is the definition of compactness.
+
 :::
 
-<1>2. The space
+:::
+
+::: pf-step
+
+The space
 \[
 X_0=\{0\}\cup\left\{{1\over n}:n\in\ZZ^+\right\}
 \]
 is compact.
-::: {.proof}
+
+::: pf-proof
+
 Let $\mathcal U$ be an open cover of $X_0$.
 Choose $U_0\in\mathcal U$ with $0\in U_0$.
 Because $U_0$ is open in the subspace topology, there is $\varepsilon>0$ such that
@@ -69,24 +83,38 @@ Thus only the finitely many points
 remain to be covered.
 Choose one member of $\mathcal U$ containing each of these remaining points.
 Together with $U_0$, these finitely many sets cover $X_0$.
+
 :::
 
-<1>3. The family
+:::
+
+::: {.pf-step #s3}
+
+The family
 \[
 \mathcal V=\left\{(1/n,1]:n\in\ZZ^+\right\}
 \]
 is an open cover of $(0,1]$ in the subspace topology.
-::: {.proof}
+
+::: pf-proof
+
 Each $(1/n,1]$ equals
 \[
 (1/n,2)\cap(0,1],
 \]
 so it is open in $(0,1]$.
 If $x\in(0,1]$, choose $n$ with $1/n<x$; then $x\in(1/n,1]$.
+
 :::
 
-<1>4. No finite subfamily of $\mathcal V$ covers $(0,1]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+No finite subfamily of $\mathcal V$ covers $(0,1]$.
+
+::: pf-proof
+
 Take finitely many members
 \[
 (1/n_1,1],\ldots,(1/n_k,1]
@@ -100,10 +128,23 @@ Then $1/N\in(0,1]$, but for every $i$,
 {1\over N}\le {1\over n_i},
 \]
 so $1/N\notin(1/n_i,1]$.
+
 :::
 
-<1>5. $(0,1]$ is not compact.
-::: {.proof}
-By <1>3, $\mathcal V$ is an open cover, and by <1>4 it has no finite subcover.
 :::
+
+::: pf-step
+
+$(0,1]$ is not compact.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $\mathcal V$ is an open cover, and by step [](#s4){.pf-ref} it has no finite subcover.
+
+:::
+
+:::
+
+:::
+
 :::

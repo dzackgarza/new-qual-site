@@ -16,8 +16,22 @@ audit:
 ::: {.problem}
 Give examples of the following.
 
-<1>1. A function $f:[0,1]\to\mathbb R$ that is not Riemann integrable although $|f|$ is Riemann integrable.
-<1>2. Continuous functions $f_n,f:[0,1]\to\mathbb R$ such that $f_n(t)\to f(t)$ for every $t\in[0,1]$, but
+::: pf
+
+::: pf-step
+
+A function $f:[0,1]\to\mathbb R$ that is not Riemann integrable although $|f|$ is Riemann integrable.
+
+:::
+
+::: pf-step
+
+Continuous functions $f_n,f:[0,1]\to\mathbb R$ such that $f_n(t)\to f(t)$ for every $t\in[0,1]$, but
+
+:::
+
+:::
+
 \[
 \int_0^1 f_n(t)\,dt
 \]

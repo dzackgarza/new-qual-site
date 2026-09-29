@@ -31,8 +31,15 @@ Which surfaces can cover $T^2$?
 :::
 
 ::: {.solution}
-<1>1. The torus.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The torus.
+
+::: pf-proof
+
 Write $T^2=\mathbb R^2/\mathbb Z^2$.
 The universal covering map is the quotient, and its deck transformations are exactly
 \[
@@ -44,10 +51,17 @@ Connected covering surfaces correspond to subgroups $H\le\mathbb Z^2$.
 Such a subgroup has rank $0,1$, or $2$.
 The quotient $\mathbb R^2/H$ is respectively homeomorphic to $\mathbb R^2$, $S^1\times\mathbb R$, or $T^2$ (in the rank-$2$ case possibly with more than one sheet).
 Thus these are precisely the connected surface types covering $T^2$.
+
 :::
 
-<1>2. The Klein bottle.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Klein bottle.
+
+::: pf-proof
+
 Let
 \[
 a(x,y)=(x+1,y),\qquad b(x,y)=(-x,y+1).
@@ -63,5 +77,11 @@ Therefore
 \[
 \pi_1(K)\cong\Gamma\cong\langle a,b\mid bab^{-1}=a^{-1}\rangle.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

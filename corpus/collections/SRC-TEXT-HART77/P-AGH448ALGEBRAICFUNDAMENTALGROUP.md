@@ -63,14 +63,19 @@ Note: More generally, Grothendieck has shown (SGA 1, X, 2.6) that the algebraic 
 Fix the origin $O\in X(k)$. We compute the inverse limit over connected
 finite Galois etale covers of $X$.
 
-<1>1. Every connected finite etale cover
+::: pf
+
+::: {.pf-step #s1}
+
+Every connected finite etale cover
 $$
 \phi:Y\longrightarrow X
 $$
 is a genus-one curve; after choosing $O_Y\in\phi^{-1}(O)$, it is an elliptic
 curve and $\phi:(Y,O_Y)\to(X,O)$ is an etale isogeny.
 
-::: {.proof}
+::: pf-proof
+
 Let $d=\deg\phi$. Since $\phi$ is etale, Riemann--Hurwitz gives
 $$
 2g(Y)-2=d\bigl(2g(X)-2\bigr)=0.
@@ -87,9 +92,14 @@ transformations, so
 $$
 \Gal(Y/X)\cong\ker\phi(k).
 $$
+
 :::
 
-<1>2. If $\phi:Y\to X$ is an etale isogeny of degree $d$, then the dual
+:::
+
+::: {.pf-step #s2}
+
+If $\phi:Y\to X$ is an etale isogeny of degree $d$, then the dual
 isogeny satisfies
 $$
 \phi\circ\hat\phi=[d]_X.
@@ -97,7 +107,8 @@ $$
 In particular, whenever $[d]_X$ is etale, the cover $[d]_X:X\to X$
 dominates $\phi$.
 
-::: {.proof}
+::: pf-proof
+
 This is [[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(c)]]. The displayed
 factorization is a morphism of covers
 $$
@@ -108,9 +119,14 @@ X&\xrightarrow{[d]_X}X.
 $$
 Thus $[d]_X$ dominates $\phi$ whenever it belongs to the etale covering
 system.
+
 :::
 
-<1>3. If $m$ is prime to $p=\characteristic k$ (with no restriction when
+:::
+
+::: {.pf-step #s3}
+
+If $m$ is prime to $p=\characteristic k$ (with no restriction when
 $\characteristic k=0$), then
 $$
 [m]_X:X\longrightarrow X
@@ -120,27 +136,34 @@ $$
 \boxed{\Gal([m]_X)\cong(\ZZ/m\ZZ)^2.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The multiplication map has degree $m^2$. When $m$ is invertible in $k$, it
 is separable, hence etale on the elliptic curve. Its kernel is the full
 $m$-torsion group
 $$
 X[m](k)\cong(\ZZ/m\ZZ)^2.
 $$
-By step <1>1, this kernel is the deck-transformation group.
+By step [](#s1){.pf-ref}, this kernel is the deck-transformation group.
+
 :::
 
-<1>4. Suppose $\characteristic k=p>0$ and the Hasse invariant of $X$ is
+:::
+
+::: {.pf-step #s4}
+
+Suppose $\characteristic k=p>0$ and the Hasse invariant of $X$ is
 zero. Then every finite etale cover of $X$ has degree prime to $p$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose that an etale isogeny $\phi:Y\to X$ has degree
 $$
 d=p^r m,
 \qquad
 (m,p)=1.
 $$
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 \phi\circ\hat\phi=[d]_X.
 $$
@@ -156,9 +179,14 @@ $$
 $$
 by [[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(f)]], whose $p$-adic valuation
 is only $r$. Therefore $r=0$.
+
 :::
 
-<1>5. In the Hasse-zero case, the covers $[m]_X$ with $(m,p)=1$ are
+:::
+
+::: {.pf-step #s5}
+
+In the Hasse-zero case, the covers $[m]_X$ with $(m,p)=1$ are
 cofinal, and therefore
 $$
 \boxed{
@@ -168,9 +196,10 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>4 every connected finite etale Galois cover has degree $d$ prime
-to $p$. Step <1>2 says that it is dominated by $[d]_X$, and step <1>3
+::: pf-proof
+
+By step [](#s4){.pf-ref} every connected finite etale Galois cover has degree $d$ prime
+to $p$. Step [](#s2){.pf-ref} says that it is dominated by $[d]_X$, and step [](#s3){.pf-ref}
 computes the Galois group of this standard cover. Hence the standard covers
 form a cofinal system. Taking the inverse limit over integers prime to $p$
 gives
@@ -179,9 +208,14 @@ $$
 \cong
 \prod_{\ell\ne p}\ZZ_\ell^2.
 $$
+
 :::
 
-<1>6. Suppose $\characteristic k=p>0$ and the Hasse invariant of $X$ is
+:::
+
+::: {.pf-step #s6}
+
+Suppose $\characteristic k=p>0$ and the Hasse invariant of $X$ is
 nonzero. For $r\ge0$ let
 $$
 F_X^{(r)}:X\longrightarrow X^{(p^r)}
@@ -207,10 +241,11 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Nonzero Hasse invariant is the ordinary case. Thus $F_X^{(r)}$ has degree
 $p^r$ and is purely inseparable, while $V_X^{(r)}$ is separable of degree
-$p^r$. Hence $V_X^{(r)}$ is etale. Step <1>3 shows that $[m]_X$ is also
+$p^r$. Hence $V_X^{(r)}$ is etale. Step [](#s3){.pf-ref} shows that $[m]_X$ is also
 etale, so $\psi_{r,m}$ is etale.
 
 For $r=0$ the assertion about the $p$-primary kernel is trivial, so assume
@@ -249,20 +284,26 @@ X^{(p^r)}[m](k)\cong(\ZZ/m\ZZ)^2
 $$
 lies in $\ker\psi_{r,m}$. These subgroups have coprime orders and their
 product has order $p^r m^2=\deg\psi_{r,m}$, so they give the entire kernel.
-Step <1>1 identifies this kernel with the Galois group.
+Step [](#s1){.pf-ref} identifies this kernel with the Galois group.
+
 :::
 
-<1>7. The covers $\psi_{r,m}$ of step <1>6 are cofinal among connected
+:::
+
+::: {.pf-step #s7}
+
+The covers $\psi_{r,m}$ of step [](#s6){.pf-ref} are cofinal among connected
 finite etale Galois covers of $X$.
 
-::: {.proof}
+::: pf-proof
+
 Let $\phi:Y\to X$ be an etale isogeny and write
 $$
 \deg\phi=p^r m,
 \qquad
 (m,p)=1.
 $$
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 \phi\circ\hat\phi=[p^r m]_X.
 $$
@@ -329,9 +370,14 @@ $$
 \psi_{r,m}.
 $$
 Thus $\psi_{r,m}$ dominates $\phi$.
+
 :::
 
-<1>8. In the ordinary positive-characteristic case,
+:::
+
+::: {.pf-step #s8}
+
+In the ordinary positive-characteristic case,
 $$
 \boxed{
 \pi_1(X)
@@ -340,9 +386,10 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>7 it suffices to take the inverse limit of the Galois groups in
-step <1>6. Hence
+::: pf-proof
+
+By step [](#s7){.pf-ref} it suffices to take the inverse limit of the Galois groups in
+step [](#s6){.pf-ref}. Hence
 $$
 \begin{aligned}
 \pi_1(X)
@@ -353,9 +400,14 @@ $$
 \ZZ_p\times\prod_{\ell\ne p}(\ZZ_\ell\times\ZZ_\ell).
 \end{aligned}
 $$
+
 :::
 
-<1>9. If $\characteristic k=0$, then
+:::
+
+::: {.pf-step #s9}
+
+If $\characteristic k=0$, then
 $$
 \boxed{
 \pi_1(X)
@@ -364,11 +416,12 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every multiplication map $[m]_X$ is etale in characteristic zero. For a
-connected finite etale Galois cover $\phi$ of degree $d$, step <1>2 shows
+connected finite etale Galois cover $\phi$ of degree $d$, step [](#s2){.pf-ref} shows
 that $[d]_X$ dominates $\phi$. Thus the multiplication maps are cofinal.
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 \begin{aligned}
 \pi_1(X)
@@ -378,13 +431,19 @@ $$
 \prod_{\ell\text{ prime}}(\ZZ_\ell\times\ZZ_\ell).
 \end{aligned}
 $$
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>9 gives the characteristic-zero formula, step <1>5 gives the
-Hasse-zero formula in characteristic $p$, and step <1>8 gives the nonzero
+::: pf-qed
+
+Step [](#s9){.pf-ref} gives the characteristic-zero formula, step [](#s5){.pf-ref} gives the
+Hasse-zero formula in characteristic $p$, and step [](#s8){.pf-ref} gives the nonzero
 Hasse-invariant formula in characteristic $p$.
+
 :::
+
+:::
+
 :::

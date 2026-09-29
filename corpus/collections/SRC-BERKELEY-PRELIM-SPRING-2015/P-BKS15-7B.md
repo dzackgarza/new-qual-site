@@ -41,14 +41,20 @@ for all $i,j$, and has rank at most $m$.
 :::
 
 ::: {.solution}
-<1>1. For every integer $m\geq1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $m\geq1$,
 $$
 \sum_{n=m}^{\infty}\frac1{n!}
 \leq
 \frac2{m!}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write $n=m+k$. For $k\geq0$,
 $$
 (m+k)!
@@ -65,9 +71,14 @@ $$
 =
 \frac2{m!}.
 $$
+
 :::
 
-<1>2. If $\abs{z}\leq1$, then
+:::
+
+::: {.pf-step #s2}
+
+If $\abs{z}\leq1$, then
 $$
 \left|
 e^z-
@@ -77,7 +88,8 @@ e^z-
 \frac2{m!}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponential power series gives
 $$
 e^z-
@@ -96,27 +108,39 @@ e^z-
 \leq
 \sum_{n=m}^{\infty}\frac1{n!}.
 $$
-Apply step <1>1.
+Apply step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. For every $i,j$,
+:::
+
+::: {.pf-step #s3}
+
+For every $i,j$,
 $$
 \abs{A_{ij}-B_{ij}}
 \leq
 \frac2{m!}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\abs{t_i}\leq1$ and $\abs{s_j}\leq1$,
 $$
 \abs{t_is_j}\leq1.
 $$
-Apply step <1>2 with $z=t_is_j$ and use the definitions of $A_{ij}$ and $B_{ij}$.
+Apply step [](#s2){.pf-ref} with $z=t_is_j$ and use the definitions of $A_{ij}$ and $B_{ij}$.
+
 :::
 
-<1>4. The matrix $B$ is a sum of $m$ matrices of rank at most $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The matrix $B$ is a sum of $m$ matrices of rank at most $1$.
+
+::: pf-proof
+
 For $0\leq n\leq m-1$, define column vectors
 $$
 u_n
@@ -148,15 +172,21 @@ B
 \sum_{n=0}^{m-1}u_nv_n^T.
 $$
 Each outer product $u_nv_n^T$ has rank at most $1$.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \rank B\leq m.
 $$
 
-::: {.proof}
-By step <1>4 and subadditivity of matrix rank,
+::: pf-proof
+
+By step [](#s4){.pf-ref} and subadditivity of matrix rank,
 $$
 \rank B
 \leq
@@ -164,12 +194,18 @@ $$
 \leq
 m.
 $$
+
 :::
 
-<1>6. Therefore $B$ has the required entrywise approximation and rank bound.
+:::
 
-::: {.proof}
-Step <1>3 gives
+::: {.pf-step #s6}
+
+Therefore $B$ has the required entrywise approximation and rank bound.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives
 $$
 \boxed{
 \abs{A_{ij}-B_{ij}}
@@ -177,15 +213,21 @@ $$
 \frac2{m!}
 }
 $$
-for every $i,j$, and step <1>5 gives
+for every $i,j$, and step [](#s5){.pf-ref} gives
 $$
 \boxed{\rank B\leq m}.
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

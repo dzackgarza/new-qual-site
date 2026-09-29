@@ -42,12 +42,18 @@ M\nu(x)
 =\sup_{r>0}\frac{\nu([x-r,x+r])}{2r}.
 \]
 
-<1>1. For every finite positive Borel measure $\nu$ and every $t>0$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every finite positive Borel measure $\nu$ and every $t>0$,
 \[
 m\{x:M\nu(x)>t\}
 \le\frac{3\nu(\mathbb R)}{t}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 E_t=\{x:M\nu(x)>t\}.
@@ -101,9 +107,14 @@ m(F)
 \]
 because the selected intervals are disjoint.
 Taking the supremum over compact $F\subseteq E_t$ proves the claim.
+
 :::
 
-<1>2. Since $\mu\perp m$, there is a Borel set $N\subseteq\mathbb R$ such that
+:::
+
+::: {.pf-step #s2}
+
+Since $\mu\perp m$, there is a Borel set $N\subseteq\mathbb R$ such that
 \[
 m(N)=0
 \qquad\text{and}\qquad
@@ -113,7 +124,9 @@ For every $\delta>0$, there is a compact set $K\subseteq N$ such that
 \[
 \mu(\mathbb R\setminus K)<\delta.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The first assertion is the definition of singularity of $\mu$ with respect to Lebesgue measure.
 
 A finite Borel measure on $\mathbb R$ is regular, so it is inner regular on the Borel set $N$.
@@ -127,9 +140,14 @@ Since $\mu(\mathbb R\setminus N)=0$,
 =\mu(N\setminus K)
 <\delta.
 \]
+
 :::
 
-<1>3. Define the upper symmetric density
+:::
+
+::: {.pf-step #s3}
+
+Define the upper symmetric density
 \[
 D^*\mu(x)
 =\limsup_{r\downarrow0}
@@ -140,8 +158,10 @@ For every $t>0$ and every $\delta>0$,
 m\{x:D^*\mu(x)>t\}
 \le\frac{3\delta}{t}.
 \]
-::: {.proof}
-Choose $K$ as in <1>2 and decompose
+
+::: pf-proof
+
+Choose $K$ as in step [](#s2){.pf-ref} and decompose
 \[
 \mu=\mu_K+\nu,
 \]
@@ -180,52 +200,79 @@ Therefore
 K\cup\{M\nu>t\}.
 \]
 Since $K\subseteq N$ and $m(N)=0$, we have $m(K)=0$.
-Applying <1>1 to $\nu$ gives
+Applying step [](#s1){.pf-ref} to $\nu$ gives
 \[
 m\{D^*\mu>t\}
 \le
 \frac{3\nu(\mathbb R)}t
 <\frac{3\delta}t.
 \]
+
 :::
 
-<1>4. For every $t>0$,
+:::
+
+::: {.pf-step #s4}
+
+For every $t>0$,
 \[
 m\{x:D^*\mu(x)>t\}=0.
 \]
-::: {.proof}
-The estimate in <1>3 holds for every $\delta>0$.
+
+::: pf-proof
+
+The estimate in step [](#s3){.pf-ref} holds for every $\delta>0$.
 Letting $\delta\downarrow0$ forces the measure of the set to be zero.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 \[
 D^*\mu(x)=0
 \]
 for Lebesgue almost every $x$.
-::: {.proof}
+
+::: pf-proof
+
 Since $D^*\mu\ge0$,
 \[
 \{D^*\mu>0\}
 =\bigcup_{j=1}^\infty\{D^*\mu>1/j\}.
 \]
-Each set on the right has Lebesgue measure zero by <1>4, so their countable union has measure zero.
+Each set on the right has Lebesgue measure zero by step [](#s4){.pf-ref}, so their countable union has measure zero.
+
 :::
 
-<1>6. Therefore, for Lebesgue almost every $x\in\mathbb R$,
+:::
+
+::: pf-step
+
+Therefore, for Lebesgue almost every $x\in\mathbb R$,
 \[
 \boxed{
 \lim_{\epsilon\to0}
 \frac{\mu([x-\epsilon,x+\epsilon])}{2\epsilon}
 =0.}
 \]
-::: {.proof}
-For almost every $x$, <1>5 gives
+
+::: pf-proof
+
+For almost every $x$, step [](#s5){.pf-ref} gives
 \[
 \limsup_{\epsilon\downarrow0}
 \frac{\mu([x-\epsilon,x+\epsilon])}{2\epsilon}=0.
 \]
 The quotient is nonnegative, so its liminf is at least $0$.
 Hence the limsup and liminf are both $0$, and the limit exists and equals $0$.
+
 :::
+
+:::
+
+:::
+
 :::

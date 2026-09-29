@@ -49,19 +49,30 @@ $$
 Q(y,x)=Q(x,y).
 $$
 
-<1>1. If $f'$ is continuous on $[a,b]$, then $f'$ is uniformly continuous
+::: pf
+
+::: {.pf-step #s1}
+
+If $f'$ is continuous on $[a,b]$, then $f'$ is uniformly continuous
 on $[a,b]$.
 
-::: {.proof}
+::: pf-proof
+
 The interval $[a,b]$ is compact. Hence the Heine--Cantor theorem applied to
 the continuous function $f'$ shows that $f'$ is uniformly continuous.
+
 :::
 
-<1>2. If $f'$ is continuous on $[a,b]$, then $f$ is uniformly
+:::
+
+::: {.pf-step #s2}
+
+If $f'$ is continuous on $[a,b]$, then $f$ is uniformly
 differentiable on $[a,b]$.
 
-::: {.proof}
-Let $\varepsilon>0$. By step <1>1, choose $\delta>0$ such that
+::: pf-proof
+
+Let $\varepsilon>0$. By step [](#s1){.pf-ref}, choose $\delta>0$ such that
 $$
 \abs{u-v}<\delta
 \quad\Longrightarrow\quad
@@ -92,12 +103,18 @@ $$
 $$
 The same $\delta$ works for every such pair $x,y$, so $f$ is uniformly
 differentiable.
+
 :::
 
-<1>3. If $f$ is uniformly differentiable on $[a,b]$, then $f'$ is uniformly
+:::
+
+::: {.pf-step #s3}
+
+If $f$ is uniformly differentiable on $[a,b]$, then $f'$ is uniformly
 continuous on $[a,b]$.
 
-::: {.proof}
+::: pf-proof
+
 Let $\varepsilon>0$. By uniform differentiability, choose $\delta>0$ such
 that for distinct $x,y\in[a,b]$ with $\abs{x-y}<\delta$,
 $$
@@ -126,17 +143,28 @@ $$
 If $x=y$, the same conclusion is immediate. Hence the estimate holds for
 all $x,y\in[a,b]$ with $\abs{x-y}<\delta$.
 Thus $f'$ is uniformly continuous on $[a,b]$.
+
 :::
 
-<1>4. If $f$ is uniformly differentiable on $[a,b]$, then $f'$ is
+:::
+
+::: {.pf-step #s4}
+
+If $f$ is uniformly differentiable on $[a,b]$, then $f'$ is
 continuous on $[a,b]$.
 
-::: {.proof}
+::: pf-proof
+
 Every uniformly continuous function is continuous. Apply this to $f'$ using
-step <1>3.
+step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 f\text{ is uniformly differentiable on }[a,b]
@@ -145,14 +173,21 @@ f'\text{ is continuous on }[a,b]
 }.
 $$
 
-::: {.proof}
-Step <1>2 proves the reverse implication, and step <1>4 proves the forward
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves the reverse implication, and step [](#s4){.pf-ref} proves the forward
 implication.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::

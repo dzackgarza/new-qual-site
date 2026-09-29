@@ -41,22 +41,36 @@ Hint: use the lower central series.
 :::
 
 ::: {.solution}
-<1>1. Write the lower central series of a group $K$ as
+
+::: pf
+
+::: pf-step
+
+Write the lower central series of a group $K$ as
 \[
 \gamma_1(K)=K,
 \qquad
 \gamma_{i+1}(K)=[K,\gamma_i(K)].
 \]
 A group $K$ is nilpotent precisely when $\gamma_{c+1}(K)=1$ for some $c\ge0$.
-::: {.proof}
+
+::: pf-proof
+
 This is the lower-central-series characterization of nilpotence used in the problem hint.
+
 :::
 
-<1>2. If $H\le G$, then for every $i\ge1$,
+:::
+
+::: {.pf-step #s2}
+
+If $H\le G$, then for every $i\ge1$,
 \[
 \gamma_i(H)\le\gamma_i(G).
 \]
-::: {.proof}
+
+::: pf-proof
+
 We induct on $i$.
 For $i=1$,
 \[
@@ -70,28 +84,42 @@ If $\gamma_i(H)\le\gamma_i(G)$, then
   =\gamma_{i+1}(G).
 \]
 Thus the containment holds for every $i$.
+
 :::
 
-<1>3. Every subgroup of a nilpotent group is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every subgroup of a nilpotent group is nilpotent.
+
+::: pf-proof
+
 Suppose $G$ is nilpotent, so
 \[
 \gamma_{c+1}(G)=1
 \]
 for some $c$.
-If $H\le G$, then <1>2 gives
+If $H\le G$, then step [](#s2){.pf-ref} gives
 \[
 \gamma_{c+1}(H)\le\gamma_{c+1}(G)=1.
 \]
 Hence $H$ is nilpotent.
+
 :::
 
-<1>4. If $N\trianglelefteq G$ and $\pi:G\to G/N$ is the quotient map, then for every $i\ge1$,
+:::
+
+::: {.pf-step #s4}
+
+If $N\trianglelefteq G$ and $\pi:G\to G/N$ is the quotient map, then for every $i\ge1$,
 \[
 \gamma_i(G/N)=\pi(\gamma_i(G))
                  =\gamma_i(G)N/N.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Again use induction on $i$.
 For $i=1$ the equality is
 \[
@@ -107,26 +135,40 @@ If it holds for $i$, then surjectivity of $\pi$ and preservation of commutators 
   &=\pi(\gamma_{i+1}(G)).
 \end{aligned}
 \]
+
 :::
 
-<1>5. Every quotient of a nilpotent group is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Every quotient of a nilpotent group is nilpotent.
+
+::: pf-proof
+
 Let $N\trianglelefteq G$, and suppose
 \[
 \gamma_{c+1}(G)=1.
 \]
-By <1>4,
+By step [](#s4){.pf-ref},
 \[
 \gamma_{c+1}(G/N)
   =\pi(\gamma_{c+1}(G))
   =1.
 \]
 Therefore $G/N$ is nilpotent.
-Together with <1>3, this proves the claim.
+Together with step [](#s3){.pf-ref}, this proves the claim.
+
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
 :::

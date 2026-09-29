@@ -44,8 +44,14 @@ $$
 We show that the permutations $scs^{-1}$ and $d$ agree on every element of
 $\{1,\ldots,n\}$.
 
-<1>1. Compute the action on the support of the conjugated cycle.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Compute the action on the support of the conjugated cycle.
+
+::: pf-proof
+
 For $1\le i<k$,
 $$
 \begin{aligned}
@@ -65,10 +71,17 @@ $$
 s(a_1),\ldots,s(a_k)
 $$
 exactly as the cycle $d$ does.
+
 :::
 
-<1>2. Both permutations fix every point outside that support.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Both permutations fix every point outside that support.
+
+::: pf-proof
+
 Let $x$ be different from each $s(a_i)$. Since $s$ is bijective,
 $s^{-1}(x)$ is different from every $a_i$. Hence $c$ fixes $s^{-1}(x)$,
 and therefore
@@ -78,16 +91,29 @@ $$
 =x.
 $$
 The cycle $d$ also fixes $x$ by definition.
+
 :::
 
-<1>3. Conclude the equality of permutations.
-::: {.proof}
-Steps <1>1 and <1>2 show that $scs^{-1}$ and $d$ have the same value on
+:::
+
+::: pf-step
+
+Conclude the equality of permutations.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that $scs^{-1}$ and $d$ have the same value on
 every point. Hence
 $$
 \boxed{
 s(a_1\,a_2\,\cdots\,a_k)s^{-1}
 =\bigl(s(a_1)\,s(a_2)\,\cdots\,s(a_k)\bigr).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

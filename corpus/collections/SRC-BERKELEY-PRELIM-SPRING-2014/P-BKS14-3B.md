@@ -54,9 +54,14 @@ N(P)
 \int_0^1\abs{P(x)}\,dx.
 $$
 
-<1>1. The function $N$ is a norm on $V$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The function $N$ is a norm on $V$.
+
+::: pf-proof
+
 Nonnegativity, homogeneity, and the triangle inequality follow from the
 corresponding properties of absolute value and the integral.
 
@@ -71,15 +76,21 @@ P(x)=0
 $$
 for every $x\in[0,1]$. A polynomial with infinitely many zeros is the zero
 polynomial. Hence $P=0$.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 P\longmapsto N(P)
 $$
 is continuous with respect to the coefficient norm.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 P(x)-Q(x)
@@ -108,9 +119,14 @@ $$
 \end{aligned}
 $$
 Thus $N$ is continuous.
+
 :::
 
-<1>3. The coefficient-unit sphere
+:::
+
+::: {.pf-step #s3}
+
+The coefficient-unit sphere
 $$
 \Sigma
 \coloneqq
@@ -118,16 +134,22 @@ $$
 $$
 is compact.
 
-::: {.proof}
+::: pf-proof
+
 Under the coefficient identification
 $$
 V\cong\RR^{2015},
 $$
 the set $\Sigma$ is closed and bounded. The Heine--Borel theorem therefore
 gives compactness.
+
 :::
 
-<1>4. There exists a number
+:::
+
+::: {.pf-step #s4}
+
+There exists a number
 $$
 m>0
 $$
@@ -137,32 +159,39 @@ N(P)\geq m
 $$
 for every $P\in\Sigma$.
 
-::: {.proof}
-By steps <1>2 and <1>3, the continuous function $N$ attains a minimum
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the continuous function $N$ attains a minimum
 $m$ on $\Sigma$.
 
-Every $P\in\Sigma$ is nonzero, so step <1>1 gives
+Every $P\in\Sigma$ is nonzero, so step [](#s1){.pf-ref} gives
 $$
 N(P)>0.
 $$
 In particular the attained minimum satisfies $m>0$.
+
 :::
 
-<1>5. For every $P\in V$,
+:::
+
+::: {.pf-step #s5}
+
+For every $P\in V$,
 $$
 \norm{P}_{\mathrm{coef}}
 \leq
 \frac1mN(P).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The assertion is immediate for $P=0$. If $P\neq0$, set
 $$
 Q
 \coloneqq
 \frac{P}{\norm{P}_{\mathrm{coef}}}.
 $$
-Then $Q\in\Sigma$, so step <1>4 gives
+Then $Q\in\Sigma$, so step [](#s4){.pf-ref} gives
 $$
 N(Q)\geq m.
 $$
@@ -173,9 +202,14 @@ $$
 m,
 $$
 which rearranges to the claim.
+
 :::
 
-<1>6. For every polynomial $P$ of degree at most $2014$,
+:::
+
+::: {.pf-step #s6}
+
+For every polynomial $P$ of degree at most $2014$,
 $$
 \abs{P(0)}
 \leq
@@ -183,7 +217,8 @@ $$
 \int_0^1\abs{P(x)}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 P(0)=a_0,
@@ -194,10 +229,15 @@ $$
 \leq
 \norm{P}_{\mathrm{coef}}.
 $$
-Apply step <1>5.
+Apply step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Thus there exists a constant
+:::
+
+::: {.pf-step #s7}
+
+Thus there exists a constant
 $$
 \boxed{C=\frac1m}
 $$
@@ -208,18 +248,25 @@ P(0)
 C\int_0^1\abs{P(x)}\,dx.
 $$
 
-::: {.proof}
-Step <1>6 gives the stronger inequality with $\abs{P(0)}$ on the left.
+::: pf-proof
+
+Step [](#s6){.pf-ref} gives the stronger inequality with $\abs{P(0)}$ on the left.
 Since
 $$
 P(0)\leq\abs{P(0)},
 $$
 the stated inequality follows.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 proves the required uniform bound.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} proves the required uniform bound.
+
+:::
+
+:::
+
 :::

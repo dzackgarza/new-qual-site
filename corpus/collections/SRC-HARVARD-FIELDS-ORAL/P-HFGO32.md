@@ -33,8 +33,14 @@ Justify your answer.
 ::: {.solution}
 No. The element $x$ is transcendental over $k$.
 
-<1>1. The element $t$ is algebraic over $k(x)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The element $t$ is algebraic over $k(x)$.
+
+::: pf-proof
+
 From
 \[
 x=\frac{t^3+2}{t^2+3}
@@ -48,18 +54,38 @@ Thus $t$ satisfies the monic polynomial
 T^3-xT^2+(2-3x)\in k(x)[T],
 \]
 so $t$ is algebraic over $k(x)$.
+
 :::
 
-<1>2. The element $x$ cannot be algebraic over $k$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The element $x$ cannot be algebraic over $k$.
+
+::: pf-proof
+
 Suppose that $x$ were algebraic over $k$. Then the extension $k(x)/k$ would
-be algebraic. By <1>1, $t$ is algebraic over $k(x)$. Algebraicity is transitive,
+be algebraic. By step [](#s1){.pf-ref}, $t$ is algebraic over $k(x)$. Algebraicity is transitive,
 so $t$ would be algebraic over $k$, contradicting the hypothesis that $t$ is
 transcendental over $k$.
+
 :::
 
-<1>3. Therefore $x$ is transcendental over $k$.
-::: {.proof}
-This is the negation of the impossible assumption in <1>2.
 :::
+
+::: pf-step
+
+Therefore $x$ is transcendental over $k$.
+
+::: pf-proof
+
+This is the negation of the impossible assumption in step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -29,9 +29,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Boundary nonvanishing gives a positive approximation threshold.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Boundary nonvanishing gives a positive approximation threshold.
+
+::: pf-proof
+
 Write $D=D(P,r)$ and $C=\partial D$. Continuity of $f$
 and compactness of $C$ imply that
 $$
@@ -42,14 +48,20 @@ $$
 |g(z)-f(z)|<\delta\leq|f(z)|\qquad(z\in C).
 $$
 In particular $|g(z)|\geq|f(z)|-|g(z)-f(z)|>0$ on $C$.
+
 :::
 
-<1>2. The two finite zero counts agree, with multiplicities.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two finite zero counts agree, with multiplicities.
+
+::: pf-proof
+
 Both $f$ and $g$ are holomorphic on the open neighborhood
 $U$ of $\overline D$. The strict boundary inequality in
-step <1>1 allows Rouché's theorem to be applied to $f$
+step [](#s1){.pf-ref} allows Rouché's theorem to be applied to $f$
 and the perturbation $g-f$. It gives the same number of
 zeros for $f$ and $f+(g-f)=g$ inside $C$, counted with
 multiplicity [@SS03, Chapter 3, Theorem 4.3].
@@ -62,5 +74,11 @@ compact subset of $U$, contradicting the identity theorem.
 Every zero has finite multiplicity by its local Taylor
 expansion [@SS03]. Thus the equality is of precisely the
 finite multiplicity counts requested.
+
 :::
+
+:::
+
+:::
+
 :::

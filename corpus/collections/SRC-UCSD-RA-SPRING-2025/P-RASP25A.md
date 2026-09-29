@@ -36,8 +36,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Prove $(1)\Rightarrow(2)$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove $(1)\Rightarrow(2)$.
+
+::: pf-proof
+
 Assume $f\in L^2([0,1])$ and define
 \[
 g(x):=\int_0^x|f(t)|^2\,dt.
@@ -51,10 +58,17 @@ Then $g$ is absolutely continuous. If $x<y$, Cauchy--Schwarz gives
 \end{aligned}
 \]
 For $y<x$ the same estimate follows after interchanging the endpoints, and for $x=y$ both sides vanish. Thus (2) holds.
+
 :::
 
-<1>2. Show that the function $g$ in (2) is nondecreasing.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the function $g$ in (2) is nondecreasing.
+
+::: pf-proof
+
 Assume (2). If $x<y$, then
 \[
 0\le
@@ -73,10 +87,17 @@ almost everywhere and
 \[
 g(y)-g(x)=\int_x^y g'(t)\,dt.
 \]
+
 :::
 
-<1>3. Differentiate the interval inequality almost everywhere.
-::: {.proof}
+:::
+
+::: pf-step
+
+Differentiate the interval inequality almost everywhere.
+
+::: pf-proof
+
 For $x<y$, divide the assumed inequality by $(y-x)^2$ to obtain
 \[
 \left|
@@ -98,10 +119,17 @@ Hence
 |f(x)|^2\le g'(x)
 \]
 for almost every $x$.
+
 :::
 
-<1>4. Conclude that $f\in L^2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude that $f\in L^2$.
+
+::: pf-proof
+
 Integrating the a.e. inequality from Step 3 gives
 \[
 \int_0^1|f(x)|^2\,dx
@@ -113,5 +141,11 @@ Therefore
 \boxed{f\in L^2([0,1]).}
 \]
 This proves $(2)\Rightarrow(1)$ and completes the equivalence.
+
 :::
+
+:::
+
+:::
+
 :::

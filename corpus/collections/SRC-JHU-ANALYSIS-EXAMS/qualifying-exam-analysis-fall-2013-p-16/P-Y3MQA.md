@@ -32,9 +32,15 @@ $$\frac{|f(0)| - |z|}{1 + |f(0)| \cdot |z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}
 :::
 
 ::: {.solution}
-<1>1. Normalization at the origin gives a Schwarz-lemma estimate.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Normalization at the origin gives a Schwarz-lemma estimate.
+
+::: pf-proof
+
 Put $c=f(0)$ and define
 $$
 H(z)=\frac{f(z)-c}{1-\overline c f(z)}.
@@ -50,13 +56,19 @@ Schwarz's lemma gives $|H(z)|\leq|z|$ [@SS03], or
 $$
 |f(z)-c|\leq |z|\,|1-\overline c f(z)|.
 $$
+
 :::
 
-<1>2. The triangle inequalities give both requested bounds.
+:::
 
-::: {.proof}
+::: pf-step
+
+The triangle inequalities give both requested bounds.
+
+::: pf-proof
+
 For fixed $z\in D$, write $a=|c|$, $b=|f(z)|$ and
-$r=|z|$. Step <1>1 implies
+$r=|z|$. Step [](#s1){.pf-ref} implies
 $$
 |b-a|\leq |f(z)-c|\leq r(1+ab).
 $$
@@ -69,5 +81,11 @@ The latter denominator is positive even when $a-r<0$,
 so no additional case assumption is needed. Substituting
 back gives the two stated inequalities at every point,
 including $z=0$.
+
 :::
+
+:::
+
+:::
+
 :::

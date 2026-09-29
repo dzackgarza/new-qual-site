@@ -36,9 +36,14 @@ zero is a removable singularity or a pole.
 Suppose, for a contradiction, that zero is an essential
 singularity. In particular $f$ is nonconstant.
 
-<1>1. The image of every punctured disk about zero is dense in $\CC$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The image of every punctured disk about zero is dense in $\CC$.
+
+::: pf-proof
+
 Fix $0<r<1$. If $f(\{0<\abs{z}<r\})$ were not dense,
 there would be $w\in\CC$ and $\delta>0$ such that
 $\abs{f(z)-w}\geq\delta$ throughout this punctured disk.
@@ -54,11 +59,17 @@ disk. Its Taylor expansion has the form $G(z)=z^mH(z)$
 with $m\geq1$ and $H(0)\ne0$. Consequently
 $f(z)=w+z^{-m}/H(z)$ has a pole at zero. Both alternatives
 contradict essentiality. Thus the image must be dense.
+
 :::
 
-<1>2. There are $n+1$ pairwise disjoint disks whose images have nonempty intersection.
+:::
 
-::: {.proof}
+::: pf-step
+
+There are $n+1$ pairwise disjoint disks whose images have nonempty intersection.
+
+::: pf-proof
+
 Choose an open disk $B_1$ with closure contained in
 $D\setminus\{0\}$. The restriction of $f$ to $B_1$ is
 nonconstant: otherwise the identity theorem on the
@@ -70,7 +81,7 @@ Inductively, suppose $B_1,\ldots,B_k$ have pairwise
 disjoint closures in $D\setminus\{0\}$ and
 $V_k=\bigcap_{j=1}^k f(B_j)$ is nonempty and open.
 Choose $r>0$ so small that $r<1$ and the punctured disk
-$0<\abs{z}<r$ misses all those closures. Step <1>1 gives
+$0<\abs{z}<r$ misses all those closures. Step [](#s1){.pf-ref} gives
 a point $a$ in this punctured disk with $f(a)\in V_k$.
 Choose an open disk $B_{k+1}$ about $a$ whose closure
 is contained in $0<\abs{z}<r$. It is disjoint from all
@@ -81,22 +92,34 @@ V_{k+1}=V_k\cap f(B_{k+1})
 $$
 is open and contains $f(a)$, so it is nonempty.
 This completes the induction up to $k=n+1$.
+
 :::
 
-<1>3. The common image value contradicts the fiber bound.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The common image value contradicts the fiber bound.
+
+::: pf-proof
+
 Choose $w\in\bigcap_{j=1}^{n+1}f(B_j)$. For each $j$
 there is $z_j\in B_j$ with $f(z_j)=w$. The disks are
 disjoint, so these are $n+1$ distinct points of $f^{-1}(w)$,
 contrary to the hypothesis. Zero is therefore not essential.
 The [[FF-QZXBS|classification of isolated singularities]] leaves only
 a removable singularity or a pole, as required.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves the required classification of the singularity at zero.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the required classification of the singularity at zero.
+
+:::
+
+:::
+
 :::

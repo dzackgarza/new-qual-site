@@ -33,10 +33,16 @@ Let $\mathbf { F } _ { q }$ be a finite field with q elements and let V be an nd
 3. Let $S L _ { n } ( \mathbf { F } _ { q } )$ denote the subgroup of $G L _ { n } ( \mathbf { F } _ { q } )$ consisting of matrices with determinant 1. Find the order of $S L _ { n } ( \mathbf { F } _ { q } )$
 :::
 
-
 ::: {.solution}
-<1>1. The vector space $V$ has $q^n$ elements.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The vector space $V$ has $q^n$ elements.
+
+::: pf-proof
+
 Choose a basis $e_1,\ldots,e_n$ of $V$. Every vector has a unique expression
 \[
 v=a_1e_1+\cdots+a_ne_n,
@@ -46,16 +52,23 @@ There are $q$ choices for each of the $n$ coefficients, hence
 \[
 \boxed{|V|=q^n}.
 \]
+
 :::
 
-<1>2. The order of $\mathrm{GL}_n(\mathbf F_q)$ is
+:::
+
+::: {.pf-step #s2}
+
+The order of $\mathrm{GL}_n(\mathbf F_q)$ is
 \[
 \boxed{
 |\mathrm{GL}_n(\mathbf F_q)|
 =\prod_{j=0}^{n-1}(q^n-q^j).
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 An invertible $n\times n$ matrix is the same thing as an ordered basis of $\mathbf F_q^n$, with the columns of the matrix as the basis vectors.
 
 The first column may be any nonzero vector, giving
@@ -71,16 +84,23 @@ vectors outside that span. Therefore
 |\mathrm{GL}_n(\mathbf F_q)|
 =(q^n-1)(q^n-q)(q^n-q^2)\cdots(q^n-q^{n-1}).
 \]
+
 :::
 
-<1>3. The order of $\mathrm{SL}_n(\mathbf F_q)$ is
+:::
+
+::: pf-step
+
+The order of $\mathrm{SL}_n(\mathbf F_q)$ is
 \[
 \boxed{
 |\mathrm{SL}_n(\mathbf F_q)|
 =\frac1{q-1}\prod_{j=0}^{n-1}(q^n-q^j).
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 The determinant defines a group homomorphism
 \[
 \det:\mathrm{GL}_n(\mathbf F_q)\longrightarrow\mathbf F_q^\times.
@@ -97,6 +117,12 @@ the first isomorphism theorem gives
 \[
 [\mathrm{GL}_n(\mathbf F_q):\mathrm{SL}_n(\mathbf F_q)]=q-1.
 \]
-Dividing the result of <1>2 by $q-1$ yields the displayed formula.
+Dividing the result of step [](#s2){.pf-ref} by $q-1$ yields the displayed formula.
+
 :::
+
+:::
+
+:::
+
 :::

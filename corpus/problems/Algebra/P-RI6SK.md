@@ -36,8 +36,14 @@ Let
 O_p(G)=\bigcap_{P\in\operatorname{Syl}_p(G)}P.
 \]
 
-<1>1. The subgroup \(O_p(G)\) is normal in \(G\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup \(O_p(G)\) is normal in \(G\).
+
+::: pf-proof
+
 For every \(g\in G\), conjugation sends Sylow \(p\)-subgroups to Sylow \(p\)-subgroups and therefore permutes the set \(\operatorname{Syl}_p(G)\). Hence
 \[
 gO_p(G)g^{-1}
@@ -45,28 +51,55 @@ gO_p(G)g^{-1}
 =\bigcap_{Q\in\operatorname{Syl}_p(G)}Q
 =O_p(G).
 \]
+
 :::
 
-<1>2. The subgroup \(O_p(G)\) is a \(p\)-group.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The subgroup \(O_p(G)\) is a \(p\)-group.
+
+::: pf-proof
+
 It is contained in every Sylow \(p\)-subgroup, hence in particular in one \(p\)-group. Every subgroup of a finite \(p\)-group is a \(p\)-group.
+
 :::
 
-<1>3. Every normal \(p\)-subgroup \(N\trianglelefteq G\) is contained in every Sylow \(p\)-subgroup of \(G\).
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every normal \(p\)-subgroup \(N\trianglelefteq G\) is contained in every Sylow \(p\)-subgroup of \(G\).
+
+::: pf-proof
+
 Fix \(P\in\operatorname{Syl}_p(G)\). Since \(N\trianglelefteq G\), the product \(NP\) is a subgroup of \(G\). Both \(N\) and \(P\) are \(p\)-groups, so
 \[
 |NP|=\frac{|N|\,|P|}{|N\cap P|}
 \]
 is a power of \(p\). Thus \(NP\) is a \(p\)-subgroup containing the Sylow subgroup \(P\). Maximality of \(P\) among \(p\)-subgroups gives \(NP=P\), hence \(N\le P\).
+
 :::
 
-<1>4. Therefore \(O_p(G)\) is the unique maximal normal \(p\)-subgroup of \(G\).
-::: {.proof}
-By <1>1 and <1>2, \(O_p(G)\) itself is a normal \(p\)-subgroup. By <1>3, every normal \(p\)-subgroup \(N\) satisfies
+:::
+
+::: pf-step
+
+Therefore \(O_p(G)\) is the unique maximal normal \(p\)-subgroup of \(G\).
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, \(O_p(G)\) itself is a normal \(p\)-subgroup. By step [](#s3){.pf-ref}, every normal \(p\)-subgroup \(N\) satisfies
 \[
 N\le\bigcap_{P\in\operatorname{Syl}_p(G)}P=O_p(G).
 \]
 Hence \(O_p(G)\) contains every normal \(p\)-subgroup, which is exactly the asserted maximality and uniqueness.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -44,13 +44,18 @@ E\coloneqq
 $$
 Let $W\subset\RR^4$ be any $3$-dimensional linear subspace.
 
-<1>1. The intersection
+::: pf
+
+::: {.pf-step #s1}
+
+The intersection
 $$
 W\cap\{x=y=0\}
 $$
 contains a nonzero vector.
 
-::: {.proof}
+::: pf-proof
+
 The coordinate plane
 $$
 H_+\coloneqq\{(0,0,z,u):z,u\in\RR\}
@@ -66,9 +71,14 @@ $$
 1.
 $$
 Hence the intersection contains a nonzero vector.
+
 :::
 
-<1>2. There is a point
+:::
+
+::: {.pf-step #s2}
+
+There is a point
 $$
 p\in E\cap W\cap\{x=y=0\}
 $$
@@ -77,8 +87,9 @@ $$
 \norm{p}\le\frac12.
 $$
 
-::: {.proof}
-Choose a nonzero vector in the intersection from step <1>1 and scale it
+::: pf-proof
+
+Choose a nonzero vector in the intersection from step [](#s1){.pf-ref} and scale it
 by a positive real number until
 $$
 4z^2+5u^2=1.
@@ -94,20 +105,26 @@ $$
 4\norm{p}^2.
 $$
 Thus $\norm{p}\le1/2$.
+
 :::
 
-<1>3. The intersection
+:::
+
+::: {.pf-step #s3}
+
+The intersection
 $$
 W\cap\{z=u=0\}
 $$
 contains a nonzero vector.
 
-::: {.proof}
+::: pf-proof
+
 The coordinate plane
 $$
 H_-\coloneqq\{(x,y,0,0):x,y\in\RR\}
 $$
-also has dimension $2$. As in step <1>1,
+also has dimension $2$. As in step [](#s1){.pf-ref},
 $$
 \dim(W\cap H_-)
 \ge
@@ -115,9 +132,14 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>4. There is a point
+:::
+
+::: {.pf-step #s4}
+
+There is a point
 $$
 q\in E\cap W\cap\{z=u=0\}
 $$
@@ -126,8 +148,9 @@ $$
 \norm{q}\ge\frac1{\sqrt3}>\frac12.
 $$
 
-::: {.proof}
-Choose a nonzero vector in the intersection from step <1>3 and scale it
+::: pf-proof
+
+Choose a nonzero vector in the intersection from step [](#s3){.pf-ref} and scale it
 to satisfy
 $$
 2x^2+3y^2=1.
@@ -146,12 +169,18 @@ Hence
 $$
 \norm{q}\ge\frac1{\sqrt3}>\frac12.
 $$
+
 :::
 
-<1>5. If $E\cap W$ were a sphere in $W$, that sphere would be centered
+:::
+
+::: {.pf-step #s5}
+
+If $E\cap W$ were a sphere in $W$, that sphere would be centered
 at the origin.
 
-::: {.proof}
+::: pf-proof
+
 The set $E\cap W$ is centrally symmetric:
 $$
 v\in E\cap W
@@ -164,15 +193,21 @@ $v\mapsto-v$.
 If a sphere with center $c\in W$ is invariant under $v\mapsto-v$, then
 its image under this map is the same sphere but with center $-c$.
 A Euclidean sphere has a unique center, so $c=-c$, hence $c=0$.
+
 :::
 
-<1>6. No $3$-dimensional subspace through the origin cuts $E$ in a
+:::
+
+::: {.pf-step #s6}
+
+No $3$-dimensional subspace through the origin cuts $E$ in a
 sphere.
 
-::: {.proof}
-If $E\cap W$ were a sphere, step <1>5 would make it a sphere centered
+::: pf-proof
+
+If $E\cap W$ were a sphere, step [](#s5){.pf-ref} would make it a sphere centered
 at $0$, so every point of the section would have the same Euclidean
-norm. But steps <1>2 and <1>4 give points $p,q\in E\cap W$ with
+norm. But steps [](#s2){.pf-ref} and [](#s4){.pf-ref} give points $p,q\in E\cap W$ with
 $$
 \norm{p}\le\frac12
 <
@@ -182,21 +217,33 @@ $$
 $$
 Thus the section contains points at different distances from the
 origin, a contradiction.
+
 :::
 
-<1>7. Therefore the answer is
+:::
+
+::: {.pf-step #s7}
+
+Therefore the answer is
 $$
 \boxed{\text{no}}.
 $$
 
-::: {.proof}
-The subspace $W$ was arbitrary, and step <1>6 excludes every
+::: pf-proof
+
+The subspace $W$ was arbitrary, and step [](#s6){.pf-ref} excludes every
 $3$-dimensional linear subspace.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

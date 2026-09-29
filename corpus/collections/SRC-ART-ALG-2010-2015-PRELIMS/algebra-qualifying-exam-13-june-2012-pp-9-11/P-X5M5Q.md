@@ -44,9 +44,14 @@ d. Which of these subfields are Galois over $\mathbb{Q}$?
 Put $a=\sqrt[3]{5}>0$, choose $\zeta=e^{2\pi i/3}$, and
 write $a_j=\zeta^ja$ for $j\in\mathbb Z/3\mathbb Z$.
 
-<1>1. One has $K=\mathbb Q(a,\zeta)$ and $[K:\mathbb Q]=6$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+One has $K=\mathbb Q(a,\zeta)$ and $[K:\mathbb Q]=6$.
+
+::: pf-proof
+
 The roots are $a_0,a_1,a_2$. The field they generate contains
 $a=a_0$ and $\zeta=a_1/a_0$, and conversely all the roots
 belong to $\mathbb Q(a,\zeta)$. This proves the field identity.
@@ -57,12 +62,18 @@ with $\zeta^2+\zeta+1=0$, adjoining $\zeta$ has degree two.
 The tower law gives the asserted degree six.
 The polynomial has distinct roots, and its splitting field
 is a finite Galois extension [@DF04].
+
 :::
 
-<1>2. The Galois group is $S_3$, acting as all permutations
+:::
+
+::: pf-step
+
+The Galois group is $S_3$, acting as all permutations
 of $a_0,a_1,a_2$.
 
-::: {.proof}
+::: pf-proof
+
 An automorphism permutes the roots; that action is faithful
 because they generate $K$. Since the Galois group has order
 $[K:\mathbb Q]=6=|S_3|$, its image is all of $S_3$.
@@ -85,9 +96,14 @@ Thus $r=(0\,1\,2)$ and $s=(1\,2)$, and the six maps
 $r^us^v$ act by $j\mapsto u+(-1)^v j$, with
 $u\in\mathbb Z/3\mathbb Z$ and $v\in\{0,1\}$.
 These specify every automorphism and its root permutation.
+
 :::
 
-<1>3. The complete subfield list is
+:::
+
+::: {.pf-step #s3}
+
+The complete subfield list is
 $$
 \mathbb Q,\qquad \mathbb Q(\zeta)=\mathbb Q(\sqrt{-3}),
 \qquad \mathbb Q(a_0),\quad\mathbb Q(a_1),\quad\mathbb Q(a_2),
@@ -95,7 +111,8 @@ $$
 $$
 Their degrees over $\mathbb Q$ are respectively $1,2,3,3,3,6$.
 
-::: {.proof}
+::: pf-proof
+
 By the Galois correspondence, intermediate fields correspond
 bijectively to subgroups $H\leq S_3$, and the fixed field
 has degree $[S_3:H]$ [@DF04]. Lagrange's theorem restricts
@@ -121,12 +138,18 @@ therefore equal. The three stabilizers are different, so
 the three cubic fields are different. Every subfield of
 $K$ contains its prime field $\mathbb Q$, so no additional
 subfields lie outside this correspondence.
+
 :::
 
-<1>4. Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$
+:::
+
+::: pf-step
+
+Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$
 are Galois over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
+
 A fixed field $K^H$ is Galois over $\mathbb Q$ exactly
 when $H$ is normal in $S_3$ [@DF04]. The identity subgroup
 and the whole group are normal. The subgroup $A_3$ has
@@ -134,7 +157,13 @@ index two and is normal, giving the quadratic Galois field.
 Conjugation by $r$ cyclically permutes the three transpositions,
 so none of their order-two subgroups is normal.
 Thus none of the three cubic fields is Galois, and the
-exhaustive list in step <1>3 proves that these decisions
+exhaustive list in step [](#s3){.pf-ref} proves that these decisions
 cover every subfield.
+
 :::
+
+:::
+
+:::
+
 :::

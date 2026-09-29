@@ -35,9 +35,14 @@ $$
 K\coloneqq f(X).
 $$
 
-<1>1. The subset $K\subseteq Y$ is compact.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The subset $K\subseteq Y$ is compact.
+
+::: pf-proof
+
 Let $\{U_\alpha\}_{\alpha\in A}$ be an open cover of $K$. Then
 $$
 \{f^{-1}(U_\alpha)\}_{\alpha\in A}
@@ -52,19 +57,25 @@ $$
 K\subseteq\bigcup_{j=1}^m U_{\alpha_j}.
 $$
 Thus every open cover of $K$ has a finite subcover.
+
 :::
 
-<1>2. Every point $y\in Y\setminus K$ has an open neighborhood
+:::
+
+::: {.pf-step #s2}
+
+Every point $y\in Y\setminus K$ has an open neighborhood
 disjoint from $K$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $y\notin K$. The function
 $$
 g\colon K\to\RR,
 \qquad
 g(z)=d(y,z)
 $$
-is continuous. By step <1>1, $K$ is compact, so $g$ attains its
+is continuous. By step [](#s1){.pf-ref}, $K$ is compact, so $g$ attains its
 minimum at some $z_0\in K$.
 
 Since $y\notin K$, one has $d(y,z)>0$ for every $z\in K$. Hence
@@ -82,22 +93,34 @@ Thus $w\ne z$, so
 $$
 B(y,\delta/2)\cap K=\varnothing.
 $$
+
 :::
 
-<1>3. The image $f(X)$ is closed in $Y$.
+:::
 
-::: {.proof}
-Step <1>2 shows that every point of $Y\setminus K$ has an open
+::: {.pf-step #s3}
+
+The image $f(X)$ is closed in $Y$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that every point of $Y\setminus K$ has an open
 neighborhood contained in $Y\setminus K$. Therefore $Y\setminus K$
 is open, so
 $$
 \boxed{f(X)=K\text{ is closed in }Y}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

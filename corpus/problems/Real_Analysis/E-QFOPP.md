@@ -24,27 +24,50 @@ audit:
 ::: {.solution}
 Write $\tau_h f \coloneqq f \circ \tau_h$, so $\tau_h f(x) = f(x+h)$, and let $m$ be Lebesgue measure on $\RR^n$.
 
-<1>1. For measurable $E$, $\int \tau_h \chi_E = m(E)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For measurable $E$, $\int \tau_h \chi_E = m(E)$.
+
+::: pf-proof
+
 $\tau_h\chi_E(x) = \chi_E(x + h) = \chi_{E - h}(x)$, and $m(E - h) = m(E)$ by translation invariance of Lebesgue measure.
+
 :::
 
-<1>2. The claim holds for nonnegative simple $s = \sum_i a_i\chi_{E_i}$.
-
-::: {.proof}
-By linearity and step <1>1, $\int \tau_h s = \sum_i a_i m(E_i) = \int s$.
 :::
 
-<1>3. The claim holds for measurable $f \geq 0$.
+::: {.pf-step #s2}
 
-::: {.proof}
-Choose simple functions $0 \leq s_k \nearrow f$ pointwise. Then $\tau_h s_k \nearrow \tau_h f$ pointwise, and the monotone convergence theorem with step <1>2 gives $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
+The claim holds for nonnegative simple $s = \sum_i a_i\chi_{E_i}$.
+
+::: pf-proof
+
+By linearity and step [](#s1){.pf-ref}, $\int \tau_h s = \sum_i a_i m(E_i) = \int s$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-For $f \in L^1$, $(\tau_h f)^\pm = \tau_h(f^\pm)$; apply step <1>3 to $f^+$ and $f^-$ and subtract.
 :::
+
+::: {.pf-step #s3}
+
+The claim holds for measurable $f \geq 0$.
+
+::: pf-proof
+
+Choose simple functions $0 \leq s_k \nearrow f$ pointwise. Then $\tau_h s_k \nearrow \tau_h f$ pointwise, and the monotone convergence theorem with step [](#s2){.pf-ref} gives $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
+
+:::
+
+:::
+
+::: pf-qed
+
+For $f \in L^1$, $(\tau_h f)^\pm = \tau_h(f^\pm)$; apply step [](#s3){.pf-ref} to $f^+$ and $f^-$ and subtract.
+
+:::
+
+:::
+
 :::

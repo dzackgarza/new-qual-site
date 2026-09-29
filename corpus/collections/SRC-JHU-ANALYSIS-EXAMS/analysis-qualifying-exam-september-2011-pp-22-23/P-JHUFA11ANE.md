@@ -29,38 +29,66 @@ Give a sequence $(f_j)$ in $L^2(\RR)$ such that $\norm{f_j}_2=1$ for every $j$, 
 :::
 
 ::: {.solution}
-<1>1. For $j\ge1$, define
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $j\ge1$, define
 $$
 f_j=\mathbf1_{[j,j+1]}.
 $$
 Then $\norm{f_j}_2=1$ for every $j$.
-::: {.proof}
+
+::: pf-proof
+
 Indeed,
 $$
 \norm{f_j}_2^2=\int_j^{j+1}1\,dx=1.
 $$
+
 :::
 
-<1>2. Distinct terms satisfy
+:::
+
+::: {.pf-step #s2}
+
+Distinct terms satisfy
 $$
 \norm{f_j-f_k}_2=\sqrt2.
 $$
-::: {.proof}
+
+::: pf-proof
+
 If $j\ne k$, the supports are disjoint, so
 $$
 \norm{f_j-f_k}_2^2
 =\norm{f_j}_2^2+\norm{f_k}_2^2
 =2.
 $$
+
 :::
 
-<1>3. The sequence has no norm-convergent subsequence.
-::: {.proof}
-By step <1>2, distinct terms are always distance $\sqrt2$ apart. Hence no subsequence is Cauchy in $L^2(\RR)$, so no subsequence converges in norm.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Steps <1>1 and <1>3 give the required sequence and its noncompactness property.
+::: {.pf-step #s3}
+
+The sequence has no norm-convergent subsequence.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, distinct terms are always distance $\sqrt2$ apart. Hence no subsequence is Cauchy in $L^2(\RR)$, so no subsequence converges in norm.
+
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s3){.pf-ref} give the required sequence and its noncompactness property.
+
+:::
+
+:::
+
 :::

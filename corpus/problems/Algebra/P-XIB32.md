@@ -46,21 +46,38 @@ Since the characteristic is $0$, $f$ is separable and has $17$ distinct roots in
 
 Every field homomorphism from $\QQ(\alpha)$ fixing $\QQ$ is determined by the image of $\alpha$, and that image may be any root of $f$ lying in the target field.
 
-<1>1. Into $\CC$:
+::: pf
+
+::: pf-step
+
+Into $\CC$:
 All $17$ roots lie in $\CC$, so there are
 \[
 17
 \]
 homomorphisms.
 
-<1>2. Into $\RR$:
+:::
+
+::: pf-step
+
+Into $\RR$:
 The function $x\mapsto x^{17}$ is strictly increasing on $\RR$, so $x^{17}=2$ has exactly one real root. Hence there is exactly
 \[
 1
 \]
 homomorphism into $\RR$.
 
-<1>3. Into $\overline{\QQ}$:
+:::
+
+::: pf-step
+
+Into $\overline{\QQ}$:
+
+:::
+
+:::
+
 All roots of $f$ are algebraic over $\QQ$, hence lie in $\overline{\QQ}$. Therefore there are again
 \[
 17

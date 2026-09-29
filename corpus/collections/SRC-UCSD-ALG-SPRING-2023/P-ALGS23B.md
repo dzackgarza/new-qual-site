@@ -41,91 +41,152 @@ $|\mathcal{O}_P| = p^k$.
 ::: {.solution}
 **(a).**
 
-<1>1. Let \(P_1,P_2\in\operatorname{Syl}_p(G)\) be distinct and put
+::: pf
+
+::: pf-step
+
+Let \(P_1,P_2\in\operatorname{Syl}_p(G)\) be distinct and put
 \[
 K=N_G(P_1)\cap P_2.
 \]
 Then \(K\) is a \(p\)-subgroup of \(N_G(P_1)\).
-::: {.proof}
+
+::: pf-proof
+
 The group \(K\) is a subgroup of the \(p\)-group \(P_2\), so its order is a power of
 \(p\). By definition it also lies in \(N_G(P_1)\).
+
 :::
 
-<1>2. The product \(P_1K\) is a \(p\)-subgroup of \(G\).
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The product \(P_1K\) is a \(p\)-subgroup of \(G\).
+
+::: pf-proof
+
 Because \(K\le N_G(P_1)\), the subgroup \(P_1\) is normal in \(P_1K\). Therefore
 \[
 |P_1K|=\frac{|P_1||K|}{|P_1\cap K|}
 \]
 is a power of \(p\), so \(P_1K\) is a \(p\)-subgroup of \(G\).
+
 :::
 
-<1>3. Since \(P_1\) is Sylow, \(P_1K=P_1\), hence \(K\le P_1\). Therefore
+:::
+
+::: {.pf-step #s3}
+
+Since \(P_1\) is Sylow, \(P_1K=P_1\), hence \(K\le P_1\). Therefore
 \[
 N_G(P_1)\cap P_2=K\le P_1\cap P_2=1.
 \]
-::: {.proof}
-A Sylow \(p\)-subgroup is maximal among \(p\)-subgroups. By <1>2, \(P_1K\) is a
+
+::: pf-proof
+
+A Sylow \(p\)-subgroup is maximal among \(p\)-subgroups. By step [](#s2){.pf-ref}, \(P_1K\) is a
 \(p\)-subgroup containing \(P_1\), so equality holds. Thus \(K\le P_1\). The standing
 hypothesis gives \(P_1\cap P_2=1\) because \(P_1\ne P_2\).
-:::
 
 **(b).**
 
-<1>4. For \(P\in\operatorname{Syl}_p(G)\), the stabilizer of \(P\) under conjugation by
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+For \(P\in\operatorname{Syl}_p(G)\), the stabilizer of \(P\) under conjugation by
 \(P_0\) is
 \[
 \operatorname{Stab}_{P_0}(P)=P_0\cap N_G(P).
 \]
-::: {.proof}
+
+::: pf-proof
+
 An element \(x\in P_0\) fixes \(P\) under conjugation exactly when \(xPx^{-1}=P\), which
 is exactly the condition \(x\in N_G(P)\).
+
 :::
 
-<1>5. If \(P\ne P_0\), then \(\operatorname{Stab}_{P_0}(P)=1\).
-::: {.proof}
-Apply part (a), <1>3, with \(P_1=P\) and \(P_2=P_0\). Then
+:::
+
+::: {.pf-step #s5}
+
+If \(P\ne P_0\), then \(\operatorname{Stab}_{P_0}(P)=1\).
+
+::: pf-proof
+
+Apply part (a), step [](#s3){.pf-ref}, with \(P_1=P\) and \(P_2=P_0\). Then
 \[
 N_G(P)\cap P_0=1.
 \]
-Combine this with <1>4.
+Combine this with step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. If \(P\ne P_0\), then
+:::
+
+::: {.pf-step #s6}
+
+If \(P\ne P_0\), then
 \[
 |\mathcal O_P|=p^k.
 \]
-::: {.proof}
-By orbit-stabilizer and <1>5,
+
+::: pf-proof
+
+By orbit-stabilizer and step [](#s5){.pf-ref},
 \[
 |\mathcal O_P|=[P_0:\operatorname{Stab}_{P_0}(P)]=|P_0|=p^k.
 \]
-:::
 
 **(c).**
 
-<1>7. Part (c) is false as printed in the source: the hypothesis \(|G|=p^km\) implies
+:::
+
+:::
+
+::: pf-step
+
+Part (c) is false as printed in the source: the hypothesis \(|G|=p^km\) implies
 \[
 |G|\equiv0\pmod{p^k},
 \]
 not \(1\pmod{p^k}\).
-::: {.proof}
+
+::: pf-proof
+
 The integer \(p^k\) divides \(|G|\) by the first sentence of the problem. Thus the
 requested congruence cannot hold for \(k\ge1\).
+
 :::
 
-<1>8. The conclusion that follows from part (b), and hence the evidently intended
+:::
+
+::: pf-step
+
+The conclusion that follows from part (b), and hence the evidently intended
 statement, is
 \[
 |\operatorname{Syl}_p(G)|\equiv1\pmod{p^k}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let \(P_0\) act by conjugation on \(\operatorname{Syl}_p(G)\). The subgroup \(P_0\)
-itself is fixed. By <1>6, every orbit not equal to \(\{P_0\}\) has exactly \(p^k\)
+itself is fixed. By step [](#s6){.pf-ref}, every orbit not equal to \(\{P_0\}\) has exactly \(p^k\)
 elements. Thus for some integer \(r\ge0\),
 \[
 |\operatorname{Syl}_p(G)|=1+r p^k,
 \]
 which is the claimed congruence.
+
 :::
+
+:::
+
+:::
+
 :::

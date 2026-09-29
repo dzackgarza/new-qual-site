@@ -39,7 +39,11 @@ D\coloneqq\{(x,x):x>0\}
 $$
 be the diagonal branch.
 
-<1>1. Every solution with $x\ne y$ has a unique parameter
+::: pf
+
+::: pf-step
+
+Every solution with $x\ne y$ has a unique parameter
 $$
 t\coloneqq\frac yx>0,
 \qquad
@@ -55,7 +59,8 @@ t^{t/(t-1)}
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For positive $x,y$, write $y=tx$. Then
 $$
 x^y=y^x
@@ -79,9 +84,14 @@ x=t^{1/(t-1)},
 y=tx=t^{t/(t-1)}.
 $$
 The parameter is uniquely $t=y/x$.
+
 :::
 
-<1>2. Conversely, for every $t>0$ with $t\ne1$, the point
+:::
+
+::: {.pf-step #s2}
+
+Conversely, for every $t>0$ with $t\ne1$, the point
 $$
 \gamma(t)
 \coloneqq
@@ -92,7 +102,8 @@ t^{t/(t-1)}
 $$
 satisfies $x^y=y^x$ and does not lie on $D$.
 
-::: {.proof}
+::: pf-proof
+
 For $\gamma(t)=(x,y)$ one has $y=tx$ and
 $x^{t-1}=t$. Therefore
 $$
@@ -104,14 +115,20 @@ x^y=x^{tx}=(x^t)^x=y^x.
 $$
 Since $y/x=t\ne1$, one has $x\ne y$, so the point is not on the
 diagonal.
+
 :::
 
-<1>3. The off-diagonal branch has the limiting point
+:::
+
+::: {.pf-step #s3}
+
+The off-diagonal branch has the limiting point
 $$
 \lim_{t\to1}\gamma(t)=(e,e).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first coordinate satisfies
 $$
 \log\left(t^{1/(t-1)}\right)
@@ -125,23 +142,35 @@ $$
 \longrightarrow1,
 $$
 so its limit is also $e$.
+
 :::
 
-<1>4. The two branches intersect at exactly
+:::
+
+::: {.pf-step #s4}
+
+The two branches intersect at exactly
 $$
 \boxed{(e,e)}.
 $$
 
-::: {.proof}
-By step <1>2, no point $\gamma(t)$ with $t\ne1$ lies on the diagonal.
-Step <1>3 shows that the off-diagonal branch extends to $t=1$ at
+::: pf-proof
+
+By step [](#s2){.pf-ref}, no point $\gamma(t)$ with $t\ne1$ lies on the diagonal.
+Step [](#s3){.pf-ref} shows that the off-diagonal branch extends to $t=1$ at
 $(e,e)$, which itself lies on $D$ and satisfies $e^e=e^e$. Therefore
 this is the unique intersection point of the two branches.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested intersection point.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested intersection point.
+
+:::
+
+:::
+
 :::

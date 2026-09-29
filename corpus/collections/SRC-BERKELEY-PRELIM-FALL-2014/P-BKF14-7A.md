@@ -44,12 +44,17 @@ V_t\coloneqq
 \operatorname{span}\{(1,0,t,0),(0,1,0,t)\}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 U=\{(a,b,c,d)\in\RR^4:a-b+c-d=0\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each of the three displayed generators of $U$ satisfies
 $a-b+c-d=0$. They are linearly independent: if
 $$
@@ -65,53 +70,76 @@ $$
 $$
 also has dimension $3$, so the inclusion already established is an
 equality.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 $$
 V_t=\{(x,y,tx,ty):x,y\in\RR\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Indeed,
 $$
 x(1,0,t,0)+y(0,1,0,t)=(x,y,tx,ty).
 $$
 Conversely every linear combination of the two generators has this
 form.
+
 :::
 
-<1>3. A vector $(x,y,tx,ty)\in V_t$ belongs to $U$ if and only if
+:::
+
+::: {.pf-step #s3}
+
+A vector $(x,y,tx,ty)\in V_t$ belongs to $U$ if and only if
 $$
 (1+t)(x-y)=0.
 $$
 
-::: {.proof}
-Substituting $(a,b,c,d)=(x,y,tx,ty)$ into the equation from step <1>1
+::: pf-proof
+
+Substituting $(a,b,c,d)=(x,y,tx,ty)$ into the equation from step [](#s1){.pf-ref}
 gives
 $$
 x-y+tx-ty=(1+t)(x-y).
 $$
+
 :::
 
-<1>4. If $t\ne-1$, then
+:::
+
+::: {.pf-step #s4}
+
+If $t\ne-1$, then
 $$
 U\cap V_t
 =
 \operatorname{span}\{(1,1,t,t)\}.
 $$
 
-::: {.proof}
-When $t\ne-1$, step <1>3 forces $x=y$. Hence every vector in the
+::: pf-proof
+
+When $t\ne-1$, step [](#s3){.pf-ref} forces $x=y$. Hence every vector in the
 intersection has the form
 $$
 (x,x,tx,tx)=x(1,1,t,t).
 $$
 The displayed vector is nonzero, so it is a basis of the
 one-dimensional intersection.
+
 :::
 
-<1>5. If $t=-1$, then
+:::
+
+::: {.pf-step #s5}
+
+If $t=-1$, then
 $$
 U\cap V_{-1}=V_{-1},
 $$
@@ -120,14 +148,20 @@ $$
 \boxed{\{(1,0,-1,0),(0,1,0,-1)\}}.
 $$
 
-::: {.proof}
-For $t=-1$, the condition in step <1>3 is automatic, so every vector of
+::: pf-proof
+
+For $t=-1$, the condition in step [](#s3){.pf-ref} is automatic, so every vector of
 $V_{-1}$ lies in $U$. The two displayed generators of $V_{-1}$ are
 linearly independent because their first two coordinates are the
 standard basis of $\RR^2$.
+
 :::
 
-<1>6. Thus a basis of the intersection is
+:::
+
+::: {.pf-step #s6}
+
+Thus a basis of the intersection is
 $$
 \boxed{
 \begin{cases}
@@ -137,13 +171,20 @@ $$
 }
 $$
 
-::: {.proof}
-This combines steps <1>4 and <1>5.
+::: pf-proof
+
+This combines steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the requested basis for every value of $t$.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the requested basis for every value of $t$.
+
+:::
+
+:::
+
 :::

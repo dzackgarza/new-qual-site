@@ -51,7 +51,11 @@ $$
 s(z)=\exp\!\left(\frac12\Log z\right).
 $$
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 s:D\longrightarrow
 U,
@@ -60,7 +64,8 @@ U=\{w\in\CC:\abs w<1,\ \operatorname{Im}w>0\},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For $z\in D$,
 $$
 \abs{s(z)}=\sqrt{\abs z}<1
@@ -102,9 +107,14 @@ $$
 s'(z)=\frac{s(z)}{2z}\neq0
 $$
 on $D$, the map is conformal.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 M:U\longrightarrow Q_1,
 \qquad
@@ -116,7 +126,8 @@ Q_1=\{\zeta\in\CC:\operatorname{Re}\zeta>0,\ \operatorname{Im}\zeta>0\},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For $w\in U$,
 $$
 \operatorname{Re}M(w)
@@ -158,9 +169,14 @@ $$
 M'(w)=\frac{2}{(1-w)^2}\neq0
 $$
 on $U$, so $M$ is conformal.
+
 :::
 
-<1>3. The squaring map
+:::
+
+::: {.pf-step #s3}
+
+The squaring map
 $$
 P:Q_1\longrightarrow\mathcal H,
 \qquad
@@ -172,7 +188,8 @@ $$
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 If $\zeta=u+iv\in Q_1$, then
 $$
 \operatorname{Im}(\zeta^2)=2uv>0.
@@ -189,9 +206,14 @@ $$
 P'(\zeta)=2\zeta\neq0
 $$
 on $Q_1$, it is conformal.
+
 :::
 
-<1>4. The Cayley map
+:::
+
+::: {.pf-step #s4}
+
+The Cayley map
 $$
 C:\mathcal H\longrightarrow\DD,
 \qquad
@@ -199,7 +221,8 @@ C(\xi)=\frac{\xi-i}{\xi+i},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For $\xi=x+iy$ with $y>0$,
 $$
 \abs{\xi+i}^2-\abs{\xi-i}^2=4y>0,
@@ -213,9 +236,14 @@ $$
 C'(\xi)=\frac{2i}{(\xi+i)^2}\neq0
 $$
 on $\mathcal H$, so it is conformal.
+
 :::
 
-<1>5. Put
+:::
+
+::: {.pf-step #s5}
+
+Put
 $$
 q(z)=
 \left(
@@ -233,8 +261,9 @@ s(z)=\exp\!\left(\frac12\Log z\right),
 }
 $$
 
-::: {.proof}
-By steps <1>1--<1>4,
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 F=C\circ P\circ M\circ s
 $$
@@ -244,11 +273,17 @@ D\xrightarrow{s}U\xrightarrow{M}Q_1
 \xrightarrow{P}\mathcal H\xrightarrow{C}\DD.
 $$
 Therefore $F$ is a conformal bijection from $D$ onto $\DD$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested map.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested map.
+
+:::
+
+:::
+
 :::

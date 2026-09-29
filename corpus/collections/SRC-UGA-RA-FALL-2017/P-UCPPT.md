@@ -39,8 +39,15 @@ E &\mapsto f(E)
 :::
 
 ::: {.solution}
-<1>1. Show that null sets are preserved by $x\mapsto x^2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that null sets are preserved by $x\mapsto x^2$.
+
+::: pf-proof
+
 For every $M>0$, the map
 \[
 f(x)=x^2
@@ -59,10 +66,17 @@ is null. Thus
 \[
 m^*(E)=0\Longrightarrow m^*(f(E))=0.
 \]
+
 :::
 
-<1>2. Show that null sets are preserved by the inverse map $y\mapsto\sqrt y$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that null sets are preserved by the inverse map $y\mapsto\sqrt y$.
+
+::: pf-proof
+
 Fix $M>0$. The function
 \[
 g(y)=\sqrt y
@@ -92,10 +106,17 @@ Thus
 \[
 \boxed{m^*(E)=0\iff m^*(f(E))=0.}
 \]
+
 :::
 
-<1>3. Show that $f$ sends Lebesgue measurable sets to Lebesgue measurable sets.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $f$ sends Lebesgue measurable sets to Lebesgue measurable sets.
+
+::: pf-proof
+
 On $[0,\infty)$, $f(x)=x^2$ is a homeomorphism with inverse $g(y)=\sqrt y$. Hence $f$ and $g$ send Borel sets to Borel sets.
 
 Let $E$ be Lebesgue measurable. There is a Borel set $B$ such that
@@ -107,14 +128,27 @@ Since $f$ is injective,
 f(E)\triangle f(B)=f(E\triangle B).
 \]
 By part 1, $f(E\triangle B)$ is null, while $f(B)$ is Borel. Therefore $f(E)$ is Lebesgue measurable.
+
 :::
 
-<1>4. Conclude bijectivity on the Lebesgue sigma-algebra.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude bijectivity on the Lebesgue sigma-algebra.
+
+::: pf-proof
+
 The same argument applied to the inverse homeomorphism $g(y)=\sqrt y$ shows that $g$ also sends Lebesgue measurable sets to Lebesgue measurable sets. Since $f$ and $g$ are inverse bijections of $[0,\infty)$,
 \[
 E\longmapsto f(E)
 \]
 is a bijection from the Lebesgue measurable subsets of $[0,\infty)$ onto themselves.
+
 :::
+
+:::
+
+:::
+
 :::

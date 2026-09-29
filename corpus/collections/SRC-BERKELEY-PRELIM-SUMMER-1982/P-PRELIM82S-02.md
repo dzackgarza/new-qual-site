@@ -36,7 +36,12 @@ Compute
 :::
 
 ::: {.solution}
-<1>1. With
+
+::: pf
+
+::: {.pf-step #s1}
+
+With
 $$
 t=x^{100},
 $$
@@ -48,7 +53,8 @@ $$
 \,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The substitution gives
 $$
 x=t^{1/100}
@@ -76,9 +82,14 @@ t^{1/100-1}
 \,dt.
 \end{aligned}
 $$
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 0<a<1,
 $$
@@ -92,7 +103,8 @@ J(a)
 $$
 This improper integral converges.
 
-::: {.proof}
+::: pf-proof
+
 Near $0$, the integrand is bounded in absolute value by
 $$
 t^{a-1},
@@ -104,9 +116,14 @@ $$
 t^{a-2},
 $$
 whose integral over $[1,\infty)$ converges because $a-2<-1$.
+
 :::
 
-<1>3. On
+:::
+
+::: pf-step
+
+On
 $$
 \CC\sm[0,\infty),
 $$
@@ -127,12 +144,18 @@ z^{a-1}
 \exp\bigl((a-1)\Log z\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The slit plane is a domain on which the displayed argument is continuous.
 Thus $\Log z$ and hence $z^{a-1}$ are holomorphic there.
+
 :::
 
-<1>4. Let $\Gamma_{\varepsilon,R}$ be the positively oriented keyhole
+:::
+
+::: {.pf-step #s4}
+
+Let $\Gamma_{\varepsilon,R}$ be the positively oriented keyhole
 contour about the positive real axis, with inner radius $\varepsilon$ and
 outer radius $R$, where
 $$
@@ -147,7 +170,8 @@ $$
 2\pi i\,e^{i\pi(a-1)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Inside the keyhole contour, the function
 $$
 \frac{z^{a-1}}{1+z}
@@ -170,9 +194,14 @@ $$
 e^{i\pi(a-1)}.
 $$
 The residue theorem gives the displayed contour integral.
+
 :::
 
-<1>5. The contributions from the inner and outer circular arcs of
+:::
+
+::: {.pf-step #s5}
+
+The contributions from the inner and outer circular arcs of
 $\Gamma_{\varepsilon,R}$ tend to $0$ as
 $$
 \varepsilon\to0^+
@@ -180,7 +209,8 @@ $$
 R\to\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the inner circle $\abs{z}=\varepsilon$,
 $$
 \abs{
@@ -210,9 +240,14 @@ $$
 \frac{2\pi R^a}{R-1}.
 $$
 Since $a<1$, this tends to $0$ as $R\to\infty$.
+
 :::
 
-<1>6. In the limit
+:::
+
+::: {.pf-step #s6}
+
+In the limit
 $$
 \varepsilon\to0^+,
 \qquad
@@ -225,7 +260,8 @@ $$
 \bigr)J(a).
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the upper side of the positive axis,
 $$
 \arg z=0,
@@ -253,9 +289,14 @@ $$
 -e^{2\pi ia}J(a).
 $$
 Adding the two gives the claim.
+
 :::
 
-<1>7. For $0<a<1$,
+:::
+
+::: {.pf-step #s7}
+
+For $0<a<1$,
 $$
 \boxed{
 J(a)
@@ -264,9 +305,10 @@ J(a)
 }
 $$
 
-::: {.proof}
-Letting the two radii tend to their limits in step <1>4 and using steps
-<1>5--<1>6 gives
+::: pf-proof
+
+Letting the two radii tend to their limits in step [](#s4){.pf-ref} and using steps
+[](#s5){.pf-ref} and [](#s6){.pf-ref} gives
 $$
 \bigl(
 1-e^{2\pi ia}
@@ -292,9 +334,14 @@ J(a)
 =
 \frac{\pi}{\sin(\pi a)}.
 $$
+
 :::
 
-<1>8. The requested integral equals
+:::
+
+::: {.pf-step #s8}
+
+The requested integral equals
 $$
 \boxed{
 \frac{\pi}
@@ -302,12 +349,13 @@ $$
 }
 $$
 
-::: {.proof}
-Apply step <1>7 with
+::: pf-proof
+
+Apply step [](#s7){.pf-ref} with
 $$
 a=\frac{51}{100}.
 $$
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 \int_0^\infty
@@ -332,11 +380,17 @@ $$
 \frac{\pi}{100}
 \right).
 $$
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

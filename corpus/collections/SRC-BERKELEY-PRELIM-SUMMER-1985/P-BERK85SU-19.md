@@ -34,7 +34,12 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. For every positive integer $n$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every positive integer $n$,
 $$
 A_1
 \le
@@ -43,7 +48,8 @@ A_1
 k^{1/n}A_1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since all $A_j$ are nonnegative, the sum contains the term $A_1^n$,
 so
 $$
@@ -58,19 +64,25 @@ A_1^n+A_2^n+\cdots+A_k^n
 kA_1^n.
 $$
 Taking nonnegative $n$th roots gives the displayed inequalities.
+
 :::
 
-<1>2. The required limit is
+:::
+
+::: {.pf-step #s2}
+
+The required limit is
 $$
 \boxed{A_1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \lim_{n\to\infty}k^{1/n}=1,
 $$
-step <1>1 and the squeeze theorem give
+step [](#s1){.pf-ref} and the squeeze theorem give
 $$
 \lim_{n\to\infty}
 \left(A_1^n+A_2^n+\cdots+A_k^n\right)^{1/n}
@@ -78,11 +90,17 @@ $$
 A_1.
 $$
 This also covers $A_1=0$, in which case every $A_j$ is $0$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

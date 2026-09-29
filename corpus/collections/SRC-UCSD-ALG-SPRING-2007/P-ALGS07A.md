@@ -46,8 +46,15 @@ For $p=2$, that matrix group instead has elements of order $4$ and is the dihedr
 :::
 
 ::: {.solution}
-<1>1. The group $G$ has a normal subgroup of order $p^2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The group $G$ has a normal subgroup of order $p^2$.
+
+::: pf-proof
+
 The class equation for a finite $p$-group shows that its center is nontrivial.
 Choose a central subgroup
 \[
@@ -65,10 +72,17 @@ Its inverse image $K$ is therefore normal in $G$, and
 |K|=|C|\,|K/C|=p^2.
 \]
 This proves part (a).
+
 :::
 
-<1>2. In part (b)(i), the only possibility is $G\cong C_{p^3}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+In part (b)(i), the only possibility is $G\cong C_{p^3}$.
+
+::: pf-proof
+
 If $|g|=p^3$, then the cyclic subgroup $\langle g\rangle$ already has
 \[
 |\langle g\rangle|=p^3=|G|.
@@ -78,10 +92,17 @@ Hence $G=\langle g\rangle$ and
 G\cong C_{p^3}.
 \]
 Conversely, the cyclic group $C_{p^3}$ has its unique subgroup of order $p^2$ as a cyclic normal subgroup, so this possibility occurs.
+
 :::
 
-<1>3. In part (b)(ii), $G$ is a semidirect product $C_{p^2}\rtimes C_p$.
-::: {.proof}
+:::
+
+::: pf-step
+
+In part (b)(ii), $G$ is a semidirect product $C_{p^2}\rtimes C_p$.
+
+::: pf-proof
+
 Now assume $|g|=p$.
 Since $g\notin N$, the order-$p$ subgroup $\langle g\rangle$ is not contained in $N$, and therefore
 \[
@@ -107,16 +128,23 @@ Since $g^p=1$, the $p$th power of this automorphism is the identity, so
 \[
 u^p\equiv1\pmod{p^2}.
 \]
+
 :::
 
-<1>4. If $p$ is odd, part (b)(ii) gives exactly
+:::
+
+::: pf-step
+
+If $p$ is odd, part (b)(ii) gives exactly
 \[
 C_{p^2}\times C_p
 \quad\text{and}\quad
 C_{p^2}\rtimes C_p,
 \]
 where in the nontrivial product a generator of $C_p$ acts by $n\mapsto n^{1+p}$.
-::: {.proof}
+
+::: pf-proof
+
 Assume $p$ is odd.
 Reducing $u^p\equiv1\pmod{p^2}$ modulo $p$ and using $u^p\equiv u\pmod p$ gives
 \[
@@ -145,10 +173,17 @@ so every nontrivial action yields the same isomorphism type, with presentation
 \left\langle n,g\ \middle|\ n^{p^2}=g^p=1,\ gng^{-1}=n^{1+p}\right\rangle.
 \]
 The two groups are not isomorphic because the first is abelian and the second is not.
+
 :::
 
-<1>5. If $p=2$, part (b)(ii) gives exactly $C_4\times C_2$ and the dihedral group of order $8$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $p=2$, part (b)(ii) gives exactly $C_4\times C_2$ and the dihedral group of order $8$.
+
+::: pf-proof
+
 For $p=2$,
 \[
 \operatorname{Aut}(C_4)\cong(\mathbb Z/4\mathbb Z)^\times=\{1,3\}.
@@ -167,5 +202,11 @@ and the resulting presentation
 \]
 is the dihedral group of order $8$.
 Thus these are precisely the possibilities in part (b)(ii).
+
 :::
+
+:::
+
+:::
+
 :::

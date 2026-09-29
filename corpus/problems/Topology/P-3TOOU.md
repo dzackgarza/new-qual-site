@@ -41,27 +41,61 @@ But then, summarizing our results, we have $S^1 \cross I \homotopic S^1 \cross \
 :::
 
 ::: {.solution}
-<1>1. Model the Möbius band as
+
+::: pf
+
+::: pf-step
+
+Model the Möbius band as
 $$M=[0,1]\times[-1,1]/(0,t)\sim(1,-t).$$
-::: {.proof}
+
+::: pf-proof
+
 This is the standard quotient model.
+
 :::
 
-<1>2. The homotopy
+:::
+
+::: pf-step
+
+The homotopy
 $$H_s([x,t])=[x,(1-s)t]$$
 is a strong deformation retraction of $M$ onto its center circle $C=\{[x,0]\}$.
-::: {.proof}
+
+::: pf-proof
+
 It is compatible with the quotient relation because $(0,t)\sim(1,-t)$ implies $(0,(1-s)t)\sim(1,-(1-s)t)$. At $s=1$ every point lies on $C$, and points of $C$ are fixed throughout.
+
 :::
 
-<1>3. The cylinder $S^1\times I$ also deformation retracts onto $S^1\times\{0\}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The cylinder $S^1\times I$ also deformation retracts onto $S^1\times\{0\}$.
+
+::: pf-proof
+
 Use $(z,t,s)\mapsto(z,(1-s)t)$.
+
 :::
 
-<1>4. Since both spaces deformation retract onto a circle,
-$$\boxed{M\simeq S^1\times I.}$$
-::: {.proof}
-Each is homotopy equivalent to $S^1$.
 :::
+
+::: pf-step
+
+Since both spaces deformation retract onto a circle,
+$$\boxed{M\simeq S^1\times I.}$$
+
+::: pf-proof
+
+Each is homotopy equivalent to $S^1$.
+
+:::
+
+:::
+
+:::
+
 :::

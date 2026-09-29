@@ -26,7 +26,7 @@ audit:
 ::: {.problem}
 a. 
 Let $\mu$ be a measure on a measurable space $(X, \mathcal M)$ and $f$ a positive measurable function.
-  
+
   Define a measure $\lambda$ by
 \[
 \lambda(E):=\int_{E} f ~d \mu, \quad E \in \mathcal{M}
@@ -56,8 +56,15 @@ A_c \definedas \theset{ x\in X \suchthat \abs{f(x)} \geq c  } \implies \mu(A_c) 
 :::
 
 ::: {.solution}
-<1>1. Prove the integration formula for indicator functions and simple functions.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the integration formula for indicator functions and simple functions.
+
+::: pf-proof
+
 For every measurable $E\subseteq X$, the definition of $\lambda$ gives
 \[
 \int_X \mathbf1_E\,d\lambda
@@ -76,10 +83,17 @@ then linearity of the integral yields
 =\sum_{j=1}^N a_j\lambda(E_j)
 =\int_X fs\,d\mu.
 \]
+
 :::
 
-<1>2. Pass to an arbitrary positive measurable $g$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass to an arbitrary positive measurable $g$.
+
+::: pf-proof
+
 Choose nonnegative simple functions $s_n$ with
 \[
 s_n\uparrow g.
@@ -101,10 +115,17 @@ Thus
 \[
 \boxed{\int_X g\,d\lambda=\int_X fg\,d\mu.}
 \]
+
 :::
 
-<1>3. Prove part (b) by level sets away from the unique zero of $x^2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove part (b) by level sets away from the unique zero of $x^2$.
+
+::: pf-proof
+
 For $n\ge1$, set
 \[
 E_n:=E\cap\{|x|\ge1/n\}.
@@ -125,5 +146,11 @@ The singleton $\{0\}$ has Lebesgue measure zero, as does each $E_n$. Hence
 \[
 \boxed{m(E)=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -37,7 +37,12 @@ Prove that $g_n\to g$ uniformly as $n\to\infty$.
 :::
 
 ::: {.solution}
-<1>1. Fix $\varepsilon>0$. There exist $\delta>0$ and
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix $\varepsilon>0$. There exist $\delta>0$ and
 $N\in\NN$ such that
 $$
 d_Y(y,y')<\delta
@@ -50,19 +55,26 @@ d_Y(f_n(x),f(x))<\delta
 $$
 for all $x\in X$ and all $n\ge N$.
 
-::: {.proof}
+::: pf-proof
+
 The first assertion is the uniform continuity of $g$. After choosing
 such a $\delta$, the uniform convergence $f_n\to f$ gives an
 $N$ for which the second inequality holds simultaneously for every
 $x\in X$ whenever $n\ge N$.
+
 :::
 
-<1>2. For every $n\ge N$ and every $y\in Y$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n\ge N$ and every $y\in Y$,
 $$
 d_X(g_n(y),g(y))<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $n\ge N$ and $y\in Y$, and put
 $$
 x\coloneqq g_n(y).
@@ -71,13 +83,13 @@ Since $g_n=f_n^{-1}$,
 $$
 f_n(x)=y.
 $$
-The second inequality in step <1>1 therefore gives
+The second inequality in step [](#s1){.pf-ref} therefore gives
 $$
 d_Y(f(x),y)
 =d_Y(f(x),f_n(x))
 <\delta.
 $$
-Apply the first inequality in step <1>1 to the two points
+Apply the first inequality in step [](#s1){.pf-ref} to the two points
 $f(x)$ and $y$. Since $g=f^{-1}$,
 $$
 \begin{aligned}
@@ -88,22 +100,34 @@ d_X(g_n(y),g(y))
 \end{aligned}
 $$
 The estimate is independent of $y$.
+
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #s3}
+
+Hence
 $$
 \boxed{g_n\longrightarrow g\text{ uniformly on }Y}.
 $$
 
-::: {.proof}
-Given arbitrary $\varepsilon>0$, step <1>1 produces an $N$ such
-that step <1>2 holds for every $y\in Y$ and every $n\ge N$. This is
+::: pf-proof
+
+Given arbitrary $\varepsilon>0$, step [](#s1){.pf-ref} produces an $N$ such
+that step [](#s2){.pf-ref} holds for every $y\in Y$ and every $n\ge N$. This is
 exactly the definition of uniform convergence.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

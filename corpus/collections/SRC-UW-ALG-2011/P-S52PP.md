@@ -30,15 +30,28 @@ Show that the following are equivalent:
 - Any $R$-module is projective.
 :::
 
-
 ::: {.solution}
-<1>1. If $R$ is a field, then $R$ is semisimple.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $R$ is a field, then $R$ is semisimple.
+
+::: pf-proof
+
 Viewed as a left module over itself, a field $R$ has only the submodules $0$ and $R$, because its left ideals are precisely its ideals. Thus ${}_RR$ is simple. A simple module is semisimple, so $R$ is a semisimple ring.
+
 :::
 
-<1>2. If $R$ is semisimple, then every $R$-module is projective.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $R$ is semisimple, then every $R$-module is projective.
+
+::: pf-proof
+
 Let $M$ be an $R$-module. Choose a surjection
 \[
 \pi:F\twoheadrightarrow M
@@ -54,10 +67,17 @@ The restriction
 \pi|_C:C\longrightarrow M
 \]
 is an isomorphism: it is injective because $C\cap\ker\pi=0$, and it is surjective because every $f\in F$ can be written $f=k+c$ with $k\in\ker\pi$, so $\pi(f)=\pi(c)$. Thus the surjection $F\twoheadrightarrow M$ splits. Since every surjection from a free module onto $M$ splits, $M$ is projective.
+
 :::
 
-<1>3. If every $R$-module is projective, then $R$ is a field.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If every $R$-module is projective, then $R$ is a field.
+
+::: pf-proof
+
 Let $0\ne a\in R$. The module $R/(a)$ is projective by hypothesis, so the short exact sequence
 \[
 0\longrightarrow (a)\longrightarrow R\longrightarrow R/(a)\longrightarrow0
@@ -88,15 +108,28 @@ e^2=e\implies e(e-1)=0.
 Hence $e=1$. Since $e\in(a)$, we have $1\in(a)$, so $(a)=R$ and $a$ is a unit.
 
 Every nonzero element of $R$ is therefore invertible, so $R$ is a field.
+
 :::
 
-<1>4. Consequently the three conditions are equivalent.
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 give the cycle
+:::
+
+::: pf-step
+
+Consequently the three conditions are equivalent.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the cycle
 \[
 R\text{ field}\Longrightarrow R\text{ semisimple}
 \Longrightarrow\text{every }R\text{-module projective}
 \Longrightarrow R\text{ field}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

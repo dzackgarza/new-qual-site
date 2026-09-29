@@ -33,8 +33,14 @@ Classify up to isomorphism all groups of order 18. Do the same for orders 20 and
 We classify each order by first finding a normal Hall subgroup and then recording
 the possible conjugation actions of a complement.
 
-<1>1. Up to isomorphism there are exactly five groups of order $18$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Up to isomorphism there are exactly five groups of order $18$.
+
+::: pf-proof
+
 Let $|G|=18=2\cdot3^2$. By Sylow,
 \[
 n_3\mid2,\qquad n_3\equiv1\pmod3,
@@ -78,10 +84,17 @@ $3$-subgroup are separated from the three with Sylow subgroup $\ZZ_3^2$; within
 each case the conjugation action of an involution on that characteristic Sylow
 $3$-subgroup has different fixed-space dimension (or is trivial versus
 nontrivial). Hence exactly five isomorphism types occur.
+
 :::
 
-<1>2. Up to isomorphism there are exactly five groups of order $20$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Up to isomorphism there are exactly five groups of order $20$.
+
+::: pf-proof
+
 Let $|G|=20=2^2\cdot5$. Sylow gives
 \[
 n_5\mid4,\qquad n_5\equiv1\pmod5,
@@ -127,10 +140,17 @@ the $\ZZ_4$ cases from the $\ZZ_2^2$ cases. Within either family, the kernel (or
 equivalently the image size) of the conjugation action on the characteristic
 Sylow $5$-subgroup distinguishes the listed possibilities. Thus there are exactly
 five groups of order $20$.
+
 :::
 
-<1>3. Every group of order $30$ has a normal cyclic subgroup of order $15$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every group of order $30$ has a normal cyclic subgroup of order $15$.
+
+::: pf-proof
+
 Let $|G|=30=2\cdot3\cdot5$. Sylow gives
 \[
 n_5\in\{1,6\},\qquad n_3\in\{1,10\}.
@@ -160,11 +180,18 @@ $\operatorname{Aut}(\ZZ_5)$. Hence
 \[
 N\cong\ZZ_{15}.
 \]
+
 :::
 
-<1>4. Up to isomorphism there are exactly four groups of order $30$.
-::: {.proof}
-By <1>3, $G$ has a normal subgroup $N\cong\ZZ_{15}$. Cauchy's theorem supplies
+:::
+
+::: pf-step
+
+Up to isomorphism there are exactly four groups of order $30$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $G$ has a normal subgroup $N\cong\ZZ_{15}$. Cauchy's theorem supplies
 an involution $t\in G$, necessarily outside the odd-order subgroup $N$. Thus
 \[
 G\cong\ZZ_{15}\rtimes\ZZ_2.
@@ -196,5 +223,11 @@ These groups are pairwise nonisomorphic because the action of an involution on
 the characteristic subgroups of orders $3$ and $5$ is respectively trivial or
 inversion in the four distinct combinations. Hence there are exactly four
 isomorphism types of groups of order $30$.
+
 :::
+
+:::
+
+:::
+
 :::

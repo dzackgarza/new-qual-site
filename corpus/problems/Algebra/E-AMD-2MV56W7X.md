@@ -32,18 +32,36 @@ G_x=\{g\in G:g\cdot x=x\}.
 \]
 We use the subgroup test.
 
-<1>1. The set \(G_x\) is nonempty.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The set \(G_x\) is nonempty.
+
+::: pf-proof
+
 The identity satisfies \(e\cdot x=x\), so \(e\in G_x\).
+
 :::
 
-<1>2. If \(g,h\in G_x\), then \(gh^{-1}\in G_x\).
-::: {.proof}
+:::
+
+::: pf-step
+
+If \(g,h\in G_x\), then \(gh^{-1}\in G_x\).
+
+::: pf-proof
+
 Since \(h\cdot x=x\), applying \(h^{-1}\) gives \(h^{-1}\cdot x=x\). Hence
 \[
 (gh^{-1})\cdot x=g\cdot(h^{-1}\cdot x)=g\cdot x=x.
 \]
 Therefore \(gh^{-1}\in G_x\).
+
+:::
+
+:::
+
 :::
 
 By the subgroup criterion, \(G_x\le G\).

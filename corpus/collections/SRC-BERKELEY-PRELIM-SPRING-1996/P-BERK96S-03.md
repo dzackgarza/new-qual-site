@@ -37,12 +37,17 @@ $$
 I\coloneqq\int_0^{2\pi}\frac{d\theta}{2+\cos\theta}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 I=2\int_0^\pi\frac{d\theta}{2+\cos\theta}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 With
 $$
 f(\theta)\coloneqq\frac{1}{2+\cos\theta},
@@ -55,15 +60,21 @@ $$
 Since $\cos(2\pi-u)=\cos u$, the last integral equals
 $\int_0^\pi f(u)\,du$. Splitting the defining integral for $I$ at
 $\pi$ proves the claim.
+
 :::
 
-<1>2. The half-period integral satisfies
+:::
+
+::: {.pf-step #s2}
+
+The half-period integral satisfies
 $$
 \int_0^\pi\frac{d\theta}{2+\cos\theta}
 =2\int_0^\infty\frac{dt}{t^2+3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $0\leq\theta<\pi$, put
 $$
 t\coloneqq\tan\frac{\theta}{2}.
@@ -83,15 +94,21 @@ $$
 $$
 Applying the substitution first on $[0,b]$ with $b<\pi$ and then
 letting $b\uparrow\pi$ yields the stated identity.
+
 :::
 
-<1>3. The requested value is
+:::
+
+::: {.pf-step #s3}
+
+The requested value is
 $$
 I=\boxed{\frac{2\pi}{\sqrt3}}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \int_0^\pi\frac{d\theta}{2+\cos\theta}
 =
@@ -101,16 +118,22 @@ $$
 \right]_{0}^{\infty}
 =\frac{\pi}{\sqrt3}.
 $$
-Step <1>1 therefore gives
+Step [](#s1){.pf-ref} therefore gives
 $$
 I=2\cdot\frac{\pi}{\sqrt3}
 =\frac{2\pi}{\sqrt3}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 evaluates the required integral.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} evaluates the required integral.
+
+:::
+
+:::
+
 :::

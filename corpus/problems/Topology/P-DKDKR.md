@@ -43,8 +43,15 @@ p\circ\mu'=\mu\circ(p\times p).
 :::
 
 ::: {.solution}
-<1>1. The space $H\times H$ is path connected and simply connected.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The space $H\times H$ is path connected and simply connected.
+
+::: pf-proof
+
 The universal covering space $H$ is path connected and simply connected.
 Products of path-connected spaces are path connected, and
 \[
@@ -53,9 +60,14 @@ Products of path-connected spaces are path connected, and
 \pi_1(H,e')\times\pi_1(H,e')
 =0.
 \]
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 \[
 F\definedas\mu\circ(p\times p):H\times H\to G.
 \]
@@ -63,7 +75,9 @@ Then
 \[
 F(e',e')=e.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $p(e')=e$ and $e$ is the identity of $G$,
 \[
 F(e',e')
@@ -71,9 +85,14 @@ F(e',e')
 =\mu(e,e)
 =e.
 \]
+
 :::
 
-<1>3. The based map
+:::
+
+::: {.pf-step #s3}
+
+The based map
 \[
 F:(H\times H,(e',e'))\to(G,e)
 \]
@@ -82,25 +101,34 @@ has a unique lift
 \mu':(H\times H,(e',e'))\to(H,e')
 \]
 through $p$.
-::: {.proof}
+
+::: pf-proof
+
 The covering-space lifting criterion says that a based map $F:(X,x_0)\to(G,e)$ lifts to $(H,e')$ if and only if
 \[
 F_*\pi_1(X,x_0)
 \subseteq
 p_*\pi_1(H,e').
 \]
-Here both groups are trivial: the left one by <1>1 and the right one because $H$ is simply connected.
+Here both groups are trivial: the left one by step [](#s1){.pf-ref} and the right one because $H$ is simply connected.
 Thus a lift exists.
 Its value at the basepoint is prescribed to be $e'$, so uniqueness of based lifts gives uniqueness.
+
 :::
 
-<1>4. The lift $\mu'$ has the required compatibility with multiplication on $G$.
-::: {.proof}
-By the definition of a lift in <1>3,
+:::
+
+::: pf-step
+
+The lift $\mu'$ has the required compatibility with multiplication on $G$.
+
+::: pf-proof
+
+By the definition of a lift in step [](#s3){.pf-ref},
 \[
 p\circ\mu'=F.
 \]
-Substitute the definition of $F$ from <1>2 to obtain
+Substitute the definition of $F$ from step [](#s2){.pf-ref} to obtain
 \[
 p\circ\mu'=\mu\circ(p\times p).
 \]
@@ -110,5 +138,11 @@ p(\mu'(a,b))=p(a)p(b)
 \qquad(a,b\in H).
 \]
 Continuity of $\mu'$ is part of the lifting theorem, so no path-dependent definition of the product is required.
+
 :::
+
+:::
+
+:::
+
 :::

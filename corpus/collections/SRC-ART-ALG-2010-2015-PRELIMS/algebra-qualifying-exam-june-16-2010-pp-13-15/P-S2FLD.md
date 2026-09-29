@@ -35,10 +35,16 @@ b. $\mathbb{Q}(\sqrt{2} + \sqrt{5})$.
 :::
 
 ::: {.solution}
-<1>1. The field $\mathbb Q(\sqrt[3]{2})$ is not a splitting
+
+::: pf
+
+::: pf-step
+
+The field $\mathbb Q(\sqrt[3]{2})$ is not a splitting
 field over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
+
 Put $a=\sqrt[3]{2}>0$. The polynomial $T^3-2$ is
 Eisenstein at two, hence irreducible over $\mathbb Q$
 [@DF04]. Its roots are $a,\zeta a,\zeta^2 a$, where
@@ -51,12 +57,18 @@ is not normal. Every splitting field over a field is
 a normal extension [@DF04]. Consequently $\mathbb Q(a)$
 cannot be the splitting field of any polynomial over
 $\mathbb Q$.
+
 :::
 
-<1>2. The field $\mathbb Q(\sqrt2+\sqrt5)$ is the splitting
+:::
+
+::: pf-step
+
+The field $\mathbb Q(\sqrt2+\sqrt5)$ is the splitting
 field of $(T^2-2)(T^2-5)$ over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
+
 Let $s=\sqrt2+\sqrt5>0$. Since
 $$
 (\sqrt5-\sqrt2)s=5-2=3,
@@ -78,5 +90,11 @@ $\sqrt2,-\sqrt2,\sqrt5,-\sqrt5$. They all belong to
 this field, and the field they generate is exactly
 $\mathbb Q(\sqrt2,\sqrt5)=\mathbb Q(s)$.
 This proves that it is the asserted splitting field.
+
 :::
+
+:::
+
+:::
+
 :::

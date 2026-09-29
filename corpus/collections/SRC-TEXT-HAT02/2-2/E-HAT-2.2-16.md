@@ -37,7 +37,11 @@ For the standard simplex $\Delta^n$, the group of $i$-chains is free on the $(i+
 \operatorname{rank} C_i(\Delta^n)=\binom{n+1}{i+1}.
 \]
 
-<1>1. In the reduced simplicial chain complex of $\Delta^n$,
+::: pf
+
+::: {.pf-step #s1}
+
+In the reduced simplicial chain complex of $\Delta^n$,
 \[
 \operatorname{rank} Z_i
 =
@@ -47,7 +51,9 @@ For the standard simplex $\Delta^n$, the group of $i$-chains is free on the $(i+
 \qquad (0\le i\le n).
 \]
 Here $\binom{n}{n+1}=0$.
-::: {.proof}
+
+::: pf-proof
+
 The simplex is contractible, so its reduced chain complex is exact. Thus
 \[
 Z_i=B_i
@@ -75,18 +81,24 @@ in the augmented complex and using Pascal's identity gives inductively
 \binom{n}{i+1}.
 \]
 Exactness gives the same formula for $B_i$.
+
 :::
 
-<1>2. In the ordinary chain complex,
+:::
+
+::: pf-step
+
+In the ordinary chain complex,
 \[
 \operatorname{rank}Z_0=n+1,
 \qquad
 \operatorname{rank}B_0=n,
 \]
-and for $i\ge1$ the formulas of <1>1 remain valid.
-::: {.proof}
+and for $i\ge1$ the formulas of step [](#s1){.pf-ref} remain valid.
+
+::: pf-proof
+
 Ordinarily $\partial_0=0$, so $Z_0=C_0$ has rank $n+1$. The augmentation kernel has rank $n$, and because $\Delta^n$ is connected this kernel is $B_0$. For $i\ge1$, reduced and ordinary chains agree.
-:::
 
 Now let
 \[
@@ -94,11 +106,19 @@ K=(\Delta^n)^k
 \]
 be the $k$-skeleton.
 
-<1>3. For $i<k$,
+:::
+
+:::
+
+::: pf-step
+
+For $i<k$,
 \[
 \widetilde H_i(K)=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 In degrees at most $k$, the chain groups and boundary maps of $K$ agree with those of the full simplex. If $i<k$, then both $C_i$ and $C_{i+1}$ are present, so
 \[
 Z_i(K)=Z_i(\Delta^n),
@@ -106,13 +126,20 @@ Z_i(K)=Z_i(\Delta^n),
 B_i(K)=B_i(\Delta^n).
 \]
 Since the full simplex has zero reduced homology, the quotient $Z_i/B_i$ is zero.
+
 :::
 
-<1>4. In degree $k$,
+:::
+
+::: pf-step
+
+In degree $k$,
 \[
 \widetilde H_k(K)\cong\mathbb Z^{\binom{n}{k+1}}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 There are no $(k+1)$-chains in the $k$-skeleton, so
 \[
 B_k(K)=0.
@@ -121,7 +148,7 @@ On the other hand the boundary map out of $C_k$ is unchanged, hence
 \[
 Z_k(K)=Z_k(\Delta^n).
 \]
-By <1>1 this is free of rank
+By step [](#s1){.pf-ref} this is free of rank
 \[
 \binom{n}{k+1}.
 \]
@@ -134,5 +161,11 @@ Therefore
 \mathbb Z^{\binom{n}{k+1}},&i=k.
 \end{cases}}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

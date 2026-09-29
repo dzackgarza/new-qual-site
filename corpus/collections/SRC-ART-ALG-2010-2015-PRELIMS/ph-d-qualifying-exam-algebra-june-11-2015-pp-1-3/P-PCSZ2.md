@@ -38,13 +38,18 @@ Prove that this function is a group isomorphism if and only if $\varphi$ is the 
 Write $\varphi_\ell=\varphi(\ell)\in\operatorname{Aut}(J)$ for
 $\ell\in L$.
 
-<1>1. The semidirect product is the set $J\times L$ with multiplication
+::: pf
+
+::: {.pf-step #s1}
+
+The semidirect product is the set $J\times L$ with multiplication
 $$
 (j,\ell)*(j',\ell')=
 \bigl(j\varphi_\ell(j'),\ell\ell'\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For three pairs, multiplying the first two and then the third gives
 $$
 \bigl(j\varphi_\ell(j')\varphi_{\ell\ell'}(j''),
@@ -70,15 +75,21 @@ $j\varphi_\ell\varphi_{\ell^{-1}}(j^{-1})=1_J$;
 in the reverse order it gives
 $\varphi_{\ell^{-1}}(j^{-1})\varphi_{\ell^{-1}}(j)=1_J$.
 Both second coordinates are $1_L$. This verifies all group axioms.
+
 :::
 
-<1>2. The identity function on $J\times L$ is a group isomorphism
+:::
+
+::: pf-step
+
+The identity function on $J\times L$ is a group isomorphism
 from this semidirect product to the direct product if and only if
 $\varphi$ is trivial.
 
-::: {.proof}
+::: pf-proof
+
 If every $\varphi_\ell$ is the identity on $J$, the multiplication
-in step <1>1 becomes $(j,\ell)*(j',\ell')=(jj',\ell\ell')$,
+in step [](#s1){.pf-ref} becomes $(j,\ell)*(j',\ell')=(jj',\ell\ell')$,
 the direct-product multiplication. The identity function is then
 an isomorphism.
 
@@ -92,5 +103,11 @@ whereas multiplication of the same pairs in the direct product gives
 $(j,\ell)$. Preservation by the identity map implies
 $\varphi_\ell(j)=j$ for every $j,\ell$. Thus every
 $\varphi_\ell$ is the identity automorphism, proving the converse.
+
 :::
+
+:::
+
+:::
+
 :::

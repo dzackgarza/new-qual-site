@@ -28,8 +28,15 @@ Use the Chinese Remainder Theorem to prove there exists a unique polynomial $f(X
 :::
 
 ::: {.solution}
-<1>1. For distinct \(i,j\in\{0,\dots,m\}\), the ideals \((X-i)\) and \((X-j)\) of \(\mathbf Q[X]\) are comaximal.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+For distinct \(i,j\in\{0,\dots,m\}\), the ideals \((X-i)\) and \((X-j)\) of \(\mathbf Q[X]\) are comaximal.
+
+::: pf-proof
+
 Because \(i-j\in\mathbf Q^\times\),
 \[
 1=\frac{1}{j-i}(X-i)-\frac{1}{j-i}(X-j).
@@ -38,9 +45,14 @@ Thus
 \[
 (X-i)+(X-j)=\mathbf Q[X].
 \]
+
 :::
 
-<1>2. By the Chinese Remainder Theorem,
+:::
+
+::: {.pf-step #s2}
+
+By the Chinese Remainder Theorem,
 \[
 \mathbf Q[X]\Big/\Big(\prod_{i=0}^m(X-i)\Big)
 \cong
@@ -48,31 +60,47 @@ Thus
 \cong
 \mathbf Q^{m+1}.
 \]
-::: {.proof}
-The ideals \((X-i)\) are pairwise comaximal by <1>1, so their intersection equals their product and the CRT applies.
+
+::: pf-proof
+
+The ideals \((X-i)\) are pairwise comaximal by step [](#s1){.pf-ref}, so their intersection equals their product and the CRT applies.
 Evaluation at \(i\) identifies
 \[
 \mathbf Q[X]/(X-i)\cong\mathbf Q.
 \]
+
 :::
 
-<1>3. There exists a polynomial \(F(X)\in\mathbf Q[X]\) such that
+:::
+
+::: pf-step
+
+There exists a polynomial \(F(X)\in\mathbf Q[X]\) such that
 \[
 F(i)=n_i
 \qquad(0\le i\le m).
 \]
-::: {.proof}
-Under the isomorphism in <1>2, the tuple
+
+::: pf-proof
+
+Under the isomorphism in step [](#s2){.pf-ref}, the tuple
 \[
 (n_0,\dots,n_m)\in\mathbf Q^{m+1}
 \]
 has a preimage in the quotient.
 Choose any polynomial representative \(F\) of that residue class.
 Its image in the \(i\)-th factor is \(n_i\), which means \(F(i)=n_i\).
+
 :::
 
-<1>4. There is a representative \(f(X)\) of the same residue class with \(\deg f\le m\).
-::: {.proof}
+:::
+
+::: pf-step
+
+There is a representative \(f(X)\) of the same residue class with \(\deg f\le m\).
+
+::: pf-proof
+
 Let
 \[
 P(X)=\prod_{i=0}^m(X-i).
@@ -87,10 +115,17 @@ Thus \(\deg f\le m\). Since \(P(i)=0\) for every \(i\), one has
 \[
 f(i)=F(i)=n_i.
 \]
+
 :::
 
-<1>5. Such a polynomial \(f\) is unique among polynomials of degree at most \(m\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Such a polynomial \(f\) is unique among polynomials of degree at most \(m\).
+
+::: pf-proof
+
 Suppose \(f,g\in\mathbf Q[X]\) both have degree at most \(m\) and satisfy
 \[
 f(i)=g(i)=n_i
@@ -105,5 +140,11 @@ divides \(f-g\). But
 \deg(f-g)\le m<\deg P=m+1.
 \]
 Hence \(f-g=0\), so \(f=g\).
+
 :::
+
+:::
+
+:::
+
 :::

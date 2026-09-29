@@ -51,8 +51,15 @@ Let $G$ be a finite group and let $H<G$ be a proper subgroup.
 :::
 
 ::: {.solution}
-<1>1. Under conjugation, the stabilizer of $H$ in $G$ is $N_G(H)$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Under conjugation, the stabilizer of $H$ in $G$ is $N_G(H)$.
+
+::: pf-proof
+
 Let $G$ act on its set of subgroups by
 \[
 g\cdot K=gKg^{-1}.
@@ -63,21 +70,33 @@ By definition,
 =\{g\in G:gHg^{-1}=H\}
 =N_G(H).
 \]
+
 :::
 
-<1>2. The number of distinct conjugates of $H$ is $[G:N_G(H)]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The number of distinct conjugates of $H$ is $[G:N_G(H)]$.
+
+::: pf-proof
+
 The orbit of $H$ under the conjugation action is exactly
 \[
 \{gHg^{-1}:g\in G\}.
 \]
-By <1>1 and orbit-stabilizer, its cardinality is
+By step [](#s1){.pf-ref} and orbit-stabilizer, its cardinality is
 \[
 [G:N_G(H)].
 \]
+
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #s3}
+
+If
 \[
 m=[G:N_G(H)],
 \]
@@ -86,8 +105,10 @@ then
 \left|\bigcup_{g\in G}gHg^{-1}\right|
 \le 1+m(|H|-1).
 \]
-::: {.proof}
-By <1>2, there are exactly $m$ distinct conjugates of $H$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, there are exactly $m$ distinct conjugates of $H$.
 Every conjugate has cardinality $|H|$, and every conjugate contains the identity element $e$.
 
 After counting $e$ once, each of the $m$ conjugates can contribute at most $|H|-1$ further elements.
@@ -96,13 +117,20 @@ Hence
 \left|\bigcup_{g\in G}gHg^{-1}\right|
 \le 1+m(|H|-1).
 \]
+
 :::
 
-<1>4. We have
+:::
+
+::: {.pf-step #s4}
+
+We have
 \[
 m\le [G:H].
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every subgroup normalizes itself, so
 \[
 H\le N_G(H).
@@ -113,11 +141,18 @@ Therefore the index formula gives
 =m[N_G(H):H].
 \]
 Thus $m$ divides, and in particular is at most, $[G:H]$.
+
 :::
 
-<1>5. The union of the conjugates of $H$ has strictly fewer than $|G|$ elements.
-::: {.proof}
-By <1>3 and <1>4,
+:::
+
+::: {.pf-step #s5}
+
+The union of the conjugates of $H$ has strictly fewer than $|G|$ elements.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 \[
 \begin{aligned}
 \left|\bigcup_{g\in G}gHg^{-1}\right|
@@ -137,13 +172,26 @@ Therefore
 \[
 \left|\bigcup_{g\in G}gHg^{-1}\right|<|G|.
 \]
+
 :::
 
-<1>6. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 G\ne\bigcup_{g\in G}gHg^{-1}.
 \]
-::: {.proof}
-This follows immediately from <1>5, since the right-hand side has strictly smaller cardinality than $G$.
+
+::: pf-proof
+
+This follows immediately from step [](#s5){.pf-ref}, since the right-hand side has strictly smaller cardinality than $G$.
+
 :::
+
+:::
+
+:::
+
 :::

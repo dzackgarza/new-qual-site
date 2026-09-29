@@ -37,7 +37,11 @@ $$
 \HH\coloneqq\{z\in\CC:\operatorname{Im}z>0\}.
 $$
 
-<1>1. Define
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$
 \phi:\HH\longrightarrow\CC,
 \qquad
@@ -50,7 +54,8 @@ $$
 \phi(\HH)\subseteq\DD.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 z=x+iy,
@@ -77,9 +82,14 @@ Thus
 $$
 \abs{\phi(z)}<1.
 $$
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 \psi:\DD\longrightarrow\CC,
 \qquad
@@ -92,7 +102,8 @@ $$
 \psi(\DD)\subseteq\HH.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{w}<1$, one has $w\neq1$, so $\psi$ is holomorphic. Multiply
 numerator and denominator by $1-\overline w$:
 $$
@@ -119,11 +130,17 @@ $$
 0.
 $$
 Hence $\psi(w)\in\HH$.
+
 :::
 
-<1>3. The maps $\phi$ and $\psi$ are mutual inverses.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The maps $\phi$ and $\psi$ are mutual inverses.
+
+::: pf-proof
+
 Solving
 $$
 w=\frac{z-i}{z+i}
@@ -141,21 +158,33 @@ $$
 \phi(\psi(w))=w
 $$
 for $w\in\DD$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{\HH\cong_{\mathrm{bihol}}\DD}.
 $$
 
-::: {.proof}
-Steps <1>1--<1>3 show that $\phi$ is a holomorphic bijection
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} show that $\phi$ is a holomorphic bijection
 $\HH\to\DD$ with holomorphic inverse $\psi$.
+
 :::
 
-<1>5. The complex plane $\CC$ is not biholomorphic to $\DD$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The complex plane $\CC$ is not biholomorphic to $\DD$.
+
+::: pf-proof
+
 Suppose
 $$
 F:\CC\longrightarrow\DD
@@ -166,37 +195,54 @@ $$
 $$
 for every $z\in\CC$. By Liouville's theorem, $F$ would be constant,
 contradicting bijectivity.
+
 :::
 
-<1>6. The complex plane $\CC$ is not biholomorphic to $\HH$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The complex plane $\CC$ is not biholomorphic to $\HH$.
+
+::: pf-proof
+
 If there were a biholomorphism
 $$
 G:\CC\longrightarrow\HH,
 $$
-then composing with the biholomorphism $\phi:\HH\to\DD$ from step <1>4
+then composing with the biholomorphism $\phi:\HH\to\DD$ from step [](#s4){.pf-ref}
 would give a biholomorphism
 $$
 \phi\circ G:\CC\longrightarrow\DD,
 $$
-contradicting step <1>5.
+contradicting step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Thus the only biholomorphic equivalence among the three domains is
+:::
+
+::: {.pf-step #s7}
+
+Thus the only biholomorphic equivalence among the three domains is
 $$
 \boxed{\DD\sim\HH},
 $$
 while $\CC$ is biholomorphic to neither.
 
-::: {.proof}
-Step <1>4 gives the equivalence of $\DD$ and $\HH$, and steps <1>5 and
-<1>6 rule out the remaining pairs.
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives the equivalence of $\DD$ and $\HH$, and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} rule out the remaining pairs.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the requested classification.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the requested classification.
+
+:::
+
+:::
+
 :::

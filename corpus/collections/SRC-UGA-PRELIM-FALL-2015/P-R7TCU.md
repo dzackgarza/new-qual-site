@@ -27,14 +27,34 @@ Prove that $A^3=A$.
 :::
 
 ::: {.solution}
-<1>1. The characteristic polynomial of $A$ is $p_A(x)=x^3-x$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The characteristic polynomial of $A$ is $p_A(x)=x^3-x$.
+
+::: pf-proof
+
 $p_A(x)=\det(xI-A)$ is monic of degree $3$, and its roots in $\mathbb C$ are the eigenvalues of $A$.
 The three eigenvalues $-1,0,1$ are distinct, so they are all the roots, each simple, and $p_A(x)=(x+1)x(x-1)=x^3-x$.
+
 :::
 
-<1>2. $A^3=A$.
-::: {.proof}
-By the Cayley--Hamilton theorem $p_A(A)=0$, that is, $A^3-A=0$ by <1>1.
 :::
+
+::: pf-step
+
+$A^3=A$.
+
+::: pf-proof
+
+By the Cayley--Hamilton theorem $p_A(A)=0$, that is, $A^3-A=0$ by step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

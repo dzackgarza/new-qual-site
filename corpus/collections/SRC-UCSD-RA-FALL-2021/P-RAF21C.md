@@ -34,8 +34,15 @@ Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0
 :::
 
 ::: {.solution}
-<1>1. $\|Tf\|_p\le\|f\|_p$ for every $f\in L^p(\mathbb R)$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$\|Tf\|_p\le\|f\|_p$ for every $f\in L^p(\mathbb R)$.
+
+::: pf-proof
+
 For almost every $x$, Jensen's inequality for the probability measure on $[0,1]$ gives
 \[
 |Tf(x)|^p
@@ -55,10 +62,17 @@ Hence
 \[
 \boxed{\|Tf\|_p\le\|f\|_p.}
 \]
+
 :::
 
-<1>2. If $\|Tf\|_p=\|f\|_p$, then $f=0$ almost everywhere.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $\|Tf\|_p=\|f\|_p$, then $f=0$ almost everywhere.
+
+::: pf-proof
+
 Suppose $\|Tf\|_p=\|f\|_p$. Then equality holds in the pointwise Jensen inequality for almost every $x$. Since $1<p<\infty$, the function $z\mapsto |z|^p$ is strictly convex. Therefore, for almost every $x$, the function
 \[
 y\longmapsto f(x+y)
@@ -70,19 +84,33 @@ Thus for almost every $x$ there exists $c_x$ such that
 f(t)=c_x
 \]
 for almost every $t\in(x,x+1)$. If two such intervals overlap in a set of positive measure, their constants must agree. Chaining overlapping unit intervals shows that $f$ is almost everywhere equal to one constant on $\mathbb R$. Since $f\in L^p(\mathbb R)$, that constant must be $0$. Hence equality occurs only for $f=0$ almost everywhere.
+
 :::
 
-<1>3. $I-T$ is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$I-T$ is injective.
+
+::: pf-proof
+
 If $(I-T)f=0$, then $Tf=f$. Hence
 \[
 \|Tf\|_p=\|f\|_p,
 \]
-and step <1>2 implies $f=0$ almost everywhere. Therefore $I-T$ is injective.
+and step [](#s2){.pf-ref} implies $f=0$ almost everywhere. Therefore $I-T$ is injective.
+
 :::
 
-<1>4. For $f_N\coloneqq\mathbf1_{[0,N]}$, $\|(I-T)f_N\|_p/\|f_N\|_p\to0$ as $N\to\infty$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+For $f_N\coloneqq\mathbf1_{[0,N]}$, $\|(I-T)f_N\|_p/\|f_N\|_p\to0$ as $N\to\infty$.
+
+::: pf-proof
+
 Let
 \[
 f_N=\mathbf1_{[0,N]}.
@@ -104,19 +132,32 @@ Therefore
 \frac{\|(I-T)f_N\|_p}{\|f_N\|_p}
 \le \left(\frac2N\right)^{1/p}\longrightarrow0.
 \]
+
 :::
 
-<1>5. $(I-T)(L^p(\mathbb R))\ne L^p(\mathbb R)$.
-::: {.proof}
-Suppose $(I-T)(L^p)=L^p$. By step <1>3, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\mathbb R)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
+:::
+
+::: pf-step
+
+$(I-T)(L^p(\mathbb R))\ne L^p(\mathbb R)$.
+
+::: pf-proof
+
+Suppose $(I-T)(L^p)=L^p$. By step [](#s3){.pf-ref}, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\mathbb R)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
 \[
 \|(I-T)f\|_p\ge C\|f\|_p
 \]
 for every $f\in L^p$.
 
-Step <1>4 contradicts such a lower bound. Therefore
+Step [](#s4){.pf-ref} contradicts such a lower bound. Therefore
 \[
 \boxed{(I-T)(L^p(\mathbb R))\ne L^p(\mathbb R).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -29,8 +29,15 @@ Work problems 14, 15, 16, 17, page 557 of Dummit and Foote, then deduce Corollar
 :::
 
 ::: {.solution}
-<1>1. For every positive integer $m$, there are infinitely many primes $p$ with $p\equiv1\pmod m$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every positive integer $m$, there are infinitely many primes $p$ with $p\equiv1\pmod m$.
+
+::: pf-proof
+
 The case $m=1$ is immediate, so assume $m>1$. Recall that if a prime
 $q$ does not divide $m$ and
 $$
@@ -72,21 +79,35 @@ q\equiv1\pmod m,
 $$
 contradicting completeness of the list $p_1,\ldots,p_r$. Hence infinitely
 many such primes exist.
+
 :::
 
-<1>2. Write the given finite abelian group as a product of cyclic groups.
-::: {.proof}
+:::
+
+::: pf-step
+
+Write the given finite abelian group as a product of cyclic groups.
+
+::: pf-proof
+
 Let $A$ be any finite abelian group. By the structure theorem for finite
 abelian groups, there are positive integers $n_1,\ldots,n_r$ such that
 $$
 A\cong C_{n_1}\times\cdots\times C_{n_r}.
 $$
 We may discard any factor with $n_i=1$.
+
 :::
 
-<1>3. Choose distinct primes whose unit groups have the required cyclic quotients.
-::: {.proof}
-By step <1>1, choose distinct primes
+:::
+
+::: pf-step
+
+Choose distinct primes whose unit groups have the required cyclic quotients.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, choose distinct primes
 $$
 p_i\equiv1\pmod{n_i}
 $$
@@ -103,10 +124,17 @@ and therefore
 $$
 (\mathbf Z/p_i\mathbf Z)^\times/H_i\cong C_{n_i}.
 $$
+
 :::
 
-<1>4. Assemble the cyclic quotients inside one cyclotomic Galois group.
-::: {.proof}
+:::
+
+::: pf-step
+
+Assemble the cyclic quotients inside one cyclotomic Galois group.
+
+::: pf-proof
+
 Put
 $$
 N=p_1p_2\cdots p_r.
@@ -132,10 +160,17 @@ $$
 &\cong A.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Apply cyclotomic Galois theory and the fundamental theorem of Galois theory.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply cyclotomic Galois theory and the fundamental theorem of Galois theory.
+
+::: pf-proof
+
 Let
 $$
 L=\mathbf Q(\zeta_N).
@@ -168,5 +203,11 @@ $$
 \operatorname{Gal}(K/\mathbf Q)
 \text{ for a subfield }K\subseteq\mathbf Q(\zeta_N).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

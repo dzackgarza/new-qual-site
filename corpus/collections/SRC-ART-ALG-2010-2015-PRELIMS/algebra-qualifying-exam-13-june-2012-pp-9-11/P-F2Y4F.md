@@ -38,10 +38,15 @@ c. Prove that $x^3 + x + 1$ is irreducible over the field $K$ above.
 ::: {.solution}
 All polynomial computations below are in characteristic two.
 
-<1>1. The polynomial $h(y)=y^4+y^3+y^2+y+1$ is irreducible
+::: pf
+
+::: pf-step
+
+The polynomial $h(y)=y^4+y^3+y^2+y+1$ is irreducible
 over $\mathbb F_2$, so $K$ is a field with $16$ elements.
 
-::: {.proof}
+::: pf-proof
+
 Neither $0$ nor $1$ is a root of $h$, so $h$ has no linear
 factor. If it were reducible, its factorization into monic
 irreducibles would therefore consist of two quadratics.
@@ -57,15 +62,21 @@ irreducibility. The quotient by an irreducible polynomial
 over a field is a field [@DF04]. Polynomial division gives
 the basis $1,\bar y,\bar y^2,\bar y^3$ of $K$ over
 $\mathbb F_2$, so $[K:\mathbb F_2]=4$ and $|K|=2^4=16$.
+
 :::
 
-<1>2. The polynomial $x^{16}-x$ factors as
+:::
+
+::: {.pf-step #s2}
+
+The polynomial $x^{16}-x$ factors as
 $$
 x^{16}-x=\prod_{a\in K}(x-a)
 $$
 in $K[x]$.
 
-::: {.proof}
+::: pf-proof
+
 The multiplicative group $K^\times$ has order $15$, so
 Lagrange's theorem gives $a^{15}=1$ for each nonzero $a$
 [@DF04]. Hence every $a\in K$, including zero, satisfies
@@ -73,12 +84,18 @@ $a^{16}=a$. The sixteen distinct linear factors on the
 right therefore divide the monic degree-sixteen polynomial
 on the left. Equality follows from their degrees and
 leading coefficients.
+
 :::
 
-<1>3. Both polynomials in part (b) divide $x^{16}-x$, and
+:::
+
+::: pf-step
+
+Both polynomials in part (b) divide $x^{16}-x$, and
 therefore split completely over $K$.
 
-::: {.proof}
+::: pf-proof
+
 In the quotient $\mathbb F_2[x]/(x^4+x+1)$, write $t$ for
 the class of $x$. The identity $t^4=t+1$ gives
 $$
@@ -94,15 +111,21 @@ t^4=(t+1)^2=t^2+1=t,
 \qquad t^{16}=(t^4)^4=t^4=t.
 $$
 This proves the other divisibility. Both remain valid in
-$K[x]$. By step <1>2, every irreducible factor of a divisor
+$K[x]$. By step [](#s2){.pf-ref}, every irreducible factor of a divisor
 of $x^{16}-x$ in $K[x]$ is linear: unique factorization in
 the Euclidean domain $K[x]$ applies [@DF04]. Thus each
 polynomial in part (b) factors completely over $K$.
+
 :::
 
-<1>4. The polynomial $g(x)=x^3+x+1$ is irreducible over $K$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The polynomial $g(x)=x^3+x+1$ is irreducible over $K$.
+
+::: pf-proof
+
 The values $g(0)=g(1)=1$ show that $g$ has no root in
 $\mathbb F_2$. A reducible cubic over a field has a linear
 factor, so $g$ is irreducible over $\mathbb F_2$.
@@ -117,5 +140,11 @@ $$
 which is impossible for a positive integer degree.
 Hence $g$ has no root in $K$. Since its degree is three,
 it is irreducible over $K$.
+
 :::
+
+:::
+
+:::
+
 :::

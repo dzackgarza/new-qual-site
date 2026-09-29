@@ -35,7 +35,6 @@ $$
 where the $a_i$ are elements of $R$.
 :::
 
-
 ::: {.solution}
 Let
 $$
@@ -44,8 +43,14 @@ $$
 Because the $e_i$ are the standard coordinate vectors, this is exactly the
 submodule whose $i$th coordinate lies in $Ra_i$.
 
-<1>1. Define the coordinatewise quotient map.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Define the coordinatewise quotient map.
+
+::: pf-proof
+
 Set
 $$
 \Phi:R^m\longrightarrow
@@ -58,20 +63,34 @@ $$
 $$
 This is an $R$-module homomorphism because each coordinate quotient map is
 $R$-linear.
+
 :::
 
-<1>2. The map $\Phi$ is surjective.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $\Phi$ is surjective.
+
+::: pf-proof
+
 Given arbitrary residue classes
 $$
 (r_1+Ra_1,\ldots,r_m+Ra_m),
 $$
 the vector $(r_1,\ldots,r_m)\in R^m$ maps to them. Hence $\Phi$ is
 surjective.
+
 :::
 
-<1>3. The kernel of $\Phi$ is $N$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The kernel of $\Phi$ is $N$.
+
+::: pf-proof
+
 A vector $(r_1,\ldots,r_m)$ lies in $\ker\Phi$ exactly when
 $$
 r_i+Ra_i=Ra_i
@@ -93,10 +112,17 @@ The converse is immediate, so
 $$
 \ker\Phi=N.
 $$
+
 :::
 
-<1>4. Apply the first isomorphism theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the first isomorphism theorem.
+
+::: pf-proof
+
 Since $\Phi$ is surjective and has kernel $N$,
 $$
 R^m/N\cong
@@ -109,5 +135,11 @@ R^m/(Ra_1e_1+\cdots+Ra_me_m)
 \cong
 \prod_{i=1}^m R/Ra_i.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

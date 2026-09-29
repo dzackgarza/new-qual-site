@@ -60,7 +60,11 @@ $$
 H^1(X,\mco_X)=0.
 $$
 
-<1>1. Local rigidity lemma. Let \(\mcf\) be an invertible sheaf on
+::: pf
+
+::: {.pf-step #s1}
+
+Local rigidity lemma. Let \(\mcf\) be an invertible sheaf on
 \(X\times T\), and let \(t\in T\) be a closed point such that
 $$
 \mcf_t\cong\mco_X.
@@ -72,7 +76,8 @@ $$
 $$
 where \(q_U:X\times U\to U\) is the projection.
 
-::: {.proof}
+::: pf-proof
+
 The sheaf \(\mcf\) is flat over \(T\), because it is locally isomorphic to
 \(\mco_{X\times T}\), which is flat over \(T\).
 
@@ -147,12 +152,18 @@ morphism \(q_U\) is closed in \(U\). This image does not contain \(t\).
 After deleting it, \(\epsilon\) is surjective. Both sides are invertible
 sheaves, so a surjection between them is an isomorphism. This proves the
 lemma.
+
 :::
 
-<1>2. The isomorphism class of \(\mcl_t\) is locally constant as \(t\)
+:::
+
+::: {.pf-step #s2}
+
+The isomorphism class of \(\mcl_t\) is locally constant as \(t\)
 ranges over the closed points of \(T\).
 
-::: {.proof}
+::: pf-proof
+
 Fix a closed point \(t\in T\), and set
 $$
 \mca=\mcl_t\in\Pic X.
@@ -169,7 +180,7 @@ $$
 \cong
 \mco_X.
 $$
-By step <1>1, there is an open neighborhood \(U_t\) of \(t\) on which
+By step [](#s1){.pf-ref}, there is an open neighborhood \(U_t\) of \(t\) on which
 \(\mcf\) is pulled back from \(U_t\). Therefore for every closed point
 \(s\in U_t\),
 $$
@@ -180,15 +191,21 @@ $$
 \mcl_s\cong\mca\cong\mcl_t.
 $$
 Thus the fibre isomorphism class is locally constant on closed points.
+
 :::
 
-<1>3. All the closed-point fibres \(\mcl_t\) are mutually isomorphic.
+:::
+
+::: {.pf-step #s3}
+
+All the closed-point fibres \(\mcl_t\) are mutually isomorphic.
 This proves part (a).
 
-::: {.proof}
+::: pf-proof
+
 For every isomorphism class \(\alpha\in\Pic X\) that occurs among the
 closed fibres, let \(V_\alpha\subseteq T\) be the union of the
-neighborhoods \(U_t\) from step <1>2 over closed points \(t\) satisfying
+neighborhoods \(U_t\) from step [](#s2){.pf-ref} over closed points \(t\) satisfying
 $$
 [\mcl_t]=\alpha.
 $$
@@ -211,9 +228,14 @@ $$
 \mcl_t\cong\mcl_s
 $$
 for all closed points \(s,t\in T\), proving (a).
+
 :::
 
-<1>4. Suppose an invertible sheaf \(\mcf\) on \(X\times T\) satisfies
+:::
+
+::: {.pf-step #s4}
+
+Suppose an invertible sheaf \(\mcf\) on \(X\times T\) satisfies
 $$
 \mcf_t\cong\mco_X
 $$
@@ -223,13 +245,14 @@ $$
 \mcf\cong q^*\mcn.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 \mcn=q_*\mcf.
 $$
 Fix a closed point \(t\in T\). The same III.12.11 argument as in step
-<1>1 applies because
+[](#s1){.pf-ref} applies because
 $$
 H^0(X,\mcf_t)=k,
 \qquad
@@ -267,12 +290,18 @@ $$
 \mcf\cong q^*\mcn.
 $$
 This argument used III.12.11 and nowhere assumed that \(T\) is reduced.
+
 :::
 
-<1>5. Every invertible sheaf on \(X\times T\) is a tensor product of
+:::
+
+::: {.pf-step #s5}
+
+Every invertible sheaf on \(X\times T\) is a tensor product of
 pullbacks from the two factors.
 
-::: {.proof}
+::: pf-proof
+
 Let \(\mcl\) be invertible on \(X\times T\), and choose a closed point
 \(t_0\in T\). Put
 $$
@@ -290,7 +319,7 @@ hence
 $$
 \mcf_t\cong\mco_X.
 $$
-Step <1>4 supplies an invertible sheaf \(\mcn\) on \(T\) with
+Step [](#s4){.pf-ref} supplies an invertible sheaf \(\mcn\) on \(T\) with
 $$
 \mcf\cong q^*\mcn.
 $$
@@ -306,11 +335,17 @@ $$
 \longmapsto
 [p^*\mca\tensor q^*\mcn].
 $$
+
 :::
 
-<1>6. The homomorphism \(\Phi\) is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The homomorphism \(\Phi\) is injective.
+
+::: pf-proof
+
 Suppose
 $$
 p^*\mca\tensor q^*\mcn\cong\mco_{X\times T}.
@@ -337,22 +372,34 @@ $$
 \mcn\cong\mco_T.
 $$
 Hence the kernel of \(\Phi\) is trivial.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{\Pic(X\times T)\cong\Pic X\times\Pic T}.
 $$
 
-::: {.proof}
-Step <1>5 proves surjectivity of \(\Phi\), and step <1>6 proves
+::: pf-proof
+
+Step [](#s5){.pf-ref} proves surjectivity of \(\Phi\), and step [](#s6){.pf-ref} proves
 injectivity. This proves part (b), including the case of nonreduced
 connected \(T\).
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>7 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), and steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

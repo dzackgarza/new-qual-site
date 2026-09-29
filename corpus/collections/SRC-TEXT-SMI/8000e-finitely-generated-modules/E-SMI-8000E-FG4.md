@@ -28,7 +28,6 @@ audit:
 If $k = \ZZ/2\ZZ$, find all $k[X]$ module structures on $k^3$ up to isomorphism (which extend the natural $k$ module structure).
 :::
 
-
 ::: {.solution}
 Write
 $$
@@ -46,8 +45,14 @@ By Cayley--Hamilton, every such module is a finitely generated torsion
 $k[X]$-module. Since $k[X]$ is a PID, the elementary-divisor classification
 applies.
 
-<1>1. List the irreducible polynomials that can occur.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+List the irreducible polynomials that can occur.
+
+::: pf-proof
+
 Only irreducibles of degree at most $3$ can contribute to a module of
 $k$-dimension $3$.
 
@@ -71,10 +76,17 @@ A cubic over a field is reducible exactly when it has a root. A monic cubic
 $X^3+aX^2+bX+c$ over $\mathbb F_2$ has no root at $0$ exactly when $c=1$, and
 then no root at $1$ exactly when $1+a+b+1=a+b=1$. This leaves exactly $r_1$
 and $r_2$.
+
 :::
 
-<1>2. List the six classes supported at a single linear irreducible.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+List the six classes supported at a single linear irreducible.
+
+::: pf-proof
+
 For either $p\in\{p_0,p_1\}$, a $p$-primary module of dimension $3$ is indexed
 by a partition of $3$. The three possibilities are
 $$
@@ -86,10 +98,17 @@ k[X]/(p^2)\oplus k[X]/(p),
 (k[X]/(p))^3.}
 $$
 There are three for $p_0$ and three for $p_1$, giving six classes.
+
 :::
 
-<1>3. List the four classes involving both linear irreducibles.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+List the four classes involving both linear irreducibles.
+
+::: pf-proof
+
 One of $p_0,p_1$ contributes dimension $2$ and the other contributes dimension
 $1$. For the dimension-$2$ primary part there are two partitions, $(2)$ and
 $(1,1)$. Hence, for each ordered pair $(p,p')$ equal to
@@ -104,10 +123,17 @@ k[X]/(p^2)\oplus k[X]/(p'),
 (k[X]/(p))^2\oplus k[X]/(p').}
 $$
 This gives four further classes.
+
 :::
 
-<1>4. List the two classes containing the irreducible quadratic.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+List the two classes containing the irreducible quadratic.
+
+::: pf-proof
+
 The module
 $$
 k[X]/(q)
@@ -120,10 +146,17 @@ k[X]/(q)\oplus k[X]/(p_0),
 \qquad
 k[X]/(q)\oplus k[X]/(p_1).}
 $$
+
 :::
 
-<1>5. List the two classes arising from an irreducible cubic.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+List the two classes arising from an irreducible cubic.
+
+::: pf-proof
+
 Each quotient by an irreducible cubic already has dimension $3$, so the two
 possibilities are simply
 $$
@@ -132,10 +165,17 @@ k[X]/(r_1),
 \qquad
 k[X]/(r_2).}
 $$
+
 :::
 
-<1>6. Prove the list is complete and nonredundant.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the list is complete and nonredundant.
+
+::: pf-proof
+
 The structure theorem decomposes every finite torsion $k[X]$-module uniquely
 into primary cyclic summands
 $$
@@ -145,7 +185,7 @@ The $k$-dimension of such a summand is
 $$
 e\deg p.
 $$
-The cases in steps <1>2--<1>5 exhaust every way to write total weighted degree
+The cases in steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} exhaust every way to write total weighted degree
 $3$:
 
 - $3$ at one linear prime;
@@ -159,5 +199,11 @@ $$
 \boxed{6+4+2+2=14}
 $$
 isomorphism classes of $k[X]$-module structures on $k^3$.
+
 :::
+
+:::
+
+:::
+
 :::

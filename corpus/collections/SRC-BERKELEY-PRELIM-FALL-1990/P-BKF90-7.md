@@ -38,39 +38,62 @@ $$
 Q\coloneqq G/N.
 $$
 
-<1>1. The group $Q$ has no nontrivial proper subgroup.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The group $Q$ has no nontrivial proper subgroup.
+
+::: pf-proof
+
 By the subgroup correspondence theorem, subgroups of $Q=G/N$ are in bijection with subgroups $H$ of $G$ satisfying
 $$
 N\subseteq H\subseteq G.
 $$
 The hypothesis rules out every strict intermediate subgroup, so the only subgroups of $Q$ are the trivial subgroup and $Q$ itself.
+
 :::
 
-<1>2. The group $Q$ is cyclic.
+:::
 
-::: {.proof}
-Since $N\ne G$, the quotient $Q$ is nontrivial. Choose $q\in Q$ with $q\ne e$. Then $\langle q\rangle$ is a nontrivial subgroup of $Q$, so step <1>1 forces
+::: {.pf-step #s2}
+
+The group $Q$ is cyclic.
+
+::: pf-proof
+
+Since $N\ne G$, the quotient $Q$ is nontrivial. Choose $q\in Q$ with $q\ne e$. Then $\langle q\rangle$ is a nontrivial subgroup of $Q$, so step [](#s1){.pf-ref} forces
 $$
 \langle q\rangle=Q.
 $$
+
 :::
 
-<1>3. The element $q$ has finite order.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The element $q$ has finite order.
+
+::: pf-proof
+
 If $q$ had infinite order, then
 $$
 \langle q^2\rangle
 $$
-would be a nontrivial proper subgroup of the infinite cyclic group $\langle q\rangle=Q$, contradicting step <1>1.
+would be a nontrivial proper subgroup of the infinite cyclic group $\langle q\rangle=Q$, contradicting step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. The order of $q$ is prime.
+:::
 
-::: {.proof}
-Let $m\coloneqq\operatorname{ord}(q)$, which is finite by step <1>3. If $m$ were composite, write
+::: {.pf-step #s4}
+
+The order of $q$ is prime.
+
+::: pf-proof
+
+Let $m\coloneqq\operatorname{ord}(q)$, which is finite by step [](#s3){.pf-ref}. If $m$ were composite, write
 $$
 m=rs
 $$
@@ -78,22 +101,34 @@ with $1<r<m$. Then $q^r\ne e$, while
 $$
 (q^r)^s=q^m=e.
 $$
-Thus $\langle q^r\rangle$ would be a nontrivial proper subgroup of $Q=\langle q\rangle$, again contradicting step <1>1. Hence $m$ is prime.
+Thus $\langle q^r\rangle$ would be a nontrivial proper subgroup of $Q=\langle q\rangle$, again contradicting step [](#s1){.pf-ref}. Hence $m$ is prime.
+
 :::
 
-<1>5. The index $[G:N]$ is finite and prime.
+:::
 
-::: {.proof}
-By step <1>2, $Q=\langle q\rangle$, and by step <1>4 this cyclic group has prime finite order $m$. Therefore
+::: {.pf-step #s5}
+
+The index $[G:N]$ is finite and prime.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $Q=\langle q\rangle$, and by step [](#s4){.pf-ref} this cyclic group has prime finite order $m$. Therefore
 $$
 \boxed{[G:N]=\abs{G/N}=m},
 $$
 which is finite and prime.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

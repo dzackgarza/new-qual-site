@@ -36,7 +36,12 @@ where $C$ is the positively oriented circle $|z|=1/5$.
 :::
 
 ::: {.solution}
-<1>1. Under the change of variables
+
+::: pf
+
+::: {.pf-step #s1}
+
+Under the change of variables
 $$
 w=\frac1z,
 $$
@@ -46,7 +51,8 @@ $$
 $$
 with negative orientation.
 
-::: {.proof}
+::: pf-proof
+
 Parametrize
 $$
 z(t)=\frac15e^{it},
@@ -58,9 +64,14 @@ $$
 w(t)=\frac1{z(t)}=5e^{-it},
 $$
 which traverses $\abs w=5$ clockwise.
+
 :::
 
-<1>2. The original contour integral satisfies
+:::
+
+::: {.pf-step #s2}
+
+The original contour integral satisfies
 $$
 \int_C\frac{dz}{\sin(1/z)}
 =
@@ -69,14 +80,15 @@ $$
 $$
 where the circle on the right is positively oriented.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 z=\frac1w,
 \qquad
 dz=-\frac{dw}{w^2},
 $$
-step <1>1 gives
+step [](#s1){.pf-ref} gives
 $$
 \int_C\frac{dz}{\sin(1/z)}
 =
@@ -91,9 +103,14 @@ $$
 \int_{\abs w=5}^{+}
 \frac{dw}{w^2\sin w}.
 $$
+
 :::
 
-<1>3. The meromorphic function
+:::
+
+::: {.pf-step #s3}
+
+The meromorphic function
 $$
 F(w)=\frac1{w^2\sin w}
 $$
@@ -102,7 +119,8 @@ $$
 0,\quad \pi,\quad -\pi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Away from $w=0$, the poles occur at the zeros of $\sin w$, namely
 $$
 w=k\pi,
@@ -115,14 +133,20 @@ $$
 \pi<5<2\pi.
 $$
 The factor $w^2$ also makes $w=0$ a pole.
+
 :::
 
-<1>4. The residue of $F$ at $w=\pi$ is
+:::
+
+::: {.pf-step #s4}
+
+The residue of $F$ at $w=\pi$ is
 $$
 -\frac1{\pi^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The zero of $\sin w$ at $\pi$ is simple, with
 $$
 \cos\pi=-1.
@@ -138,14 +162,20 @@ $$
 -\frac1{\pi^2}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The residue of $F$ at $w=-\pi$ is
+:::
+
+::: {.pf-step #s5}
+
+The residue of $F$ at $w=-\pi$ is
 $$
 -\frac1{\pi^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Again the zero of $\sin w$ is simple, and
 $$
 \cos(-\pi)=-1.
@@ -159,14 +189,20 @@ $$
 =
 -\frac1{\pi^2}.
 $$
+
 :::
 
-<1>6. The residue of $F$ at $w=0$ is
+:::
+
+::: {.pf-step #s6}
+
+The residue of $F$ at $w=0$ is
 $$
 \frac16.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The Taylor expansion
 $$
 \sin w
@@ -198,23 +234,34 @@ O(w).
 \end{aligned}
 $$
 The coefficient of $w^{-1}$ is $1/6$.
+
 :::
 
-<1>7. The sum of the residues inside $\abs w=5$ is
+:::
+
+::: {.pf-step #s7}
+
+The sum of the residues inside $\abs w=5$ is
 $$
 \frac16-\frac2{\pi^2}.
 $$
 
-::: {.proof}
-Add the residues from steps <1>4--<1>6:
+::: pf-proof
+
+Add the residues from steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}:
 $$
 \frac16-\frac1{\pi^2}-\frac1{\pi^2}
 =
 \frac16-\frac2{\pi^2}.
 $$
+
 :::
 
-<1>8. The value of the requested integral is
+:::
+
+::: {.pf-step #s8}
+
+The value of the requested integral is
 $$
 \boxed{
 \frac1{2\pi i}
@@ -225,8 +272,9 @@ $$
 }
 $$
 
-::: {.proof}
-By steps <1>2--<1>3, the residue theorem applies to $F$ on the positively
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the residue theorem applies to $F$ on the positively
 oriented circle $\abs w=5$. Hence
 $$
 \frac1{2\pi i}
@@ -235,12 +283,18 @@ $$
 =
 \sum_{\abs a<5}\operatorname{Res}_{w=a}F(w).
 $$
-Step <1>7 evaluates this sum.
+Step [](#s7){.pf-ref} evaluates this sum.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

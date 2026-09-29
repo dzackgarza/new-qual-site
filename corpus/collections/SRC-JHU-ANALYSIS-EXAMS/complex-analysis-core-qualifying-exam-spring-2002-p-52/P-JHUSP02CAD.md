@@ -51,8 +51,15 @@ a counterexample to the claimed conclusion.
 :::
 
 ::: {.solution}
-<1>1. The even part factors holomorphically through $z^2$ as a disk map fixing zero.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The even part factors holomorphically through $z^2$ as a disk map fixing zero.
+
+::: pf-proof
+
 Set
 $$
 E(z)=\frac{f(z)+f(-z)}2.
@@ -78,10 +85,17 @@ $z^2=w$, so the corresponding even subseries is absolutely convergent.
 Therefore $G$ is holomorphic on $\Delta$, satisfies $G(0)=0$, and obeys
 $|G(w)|<1$ because $G(w)=E(z)$ for either square root $z$ of $w$.
 Thus $G:\Delta\to\Delta$ is a holomorphic self-map fixing zero.
+
 :::
 
-<1>2. Schwarz's lemma gives the required inequality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Schwarz's lemma gives the required inequality.
+
+::: pf-proof
+
 Schwarz's lemma [@SS03] applied to $G$ gives
 $$
 |G(w)|\le|w|\qquad(w\in\Delta).
@@ -91,10 +105,17 @@ $$
 \frac12|f(z)+f(-z)|=|E(z)|=|G(z^2)|\le|z|^2.
 $$
 Multiplying by two gives the asserted bound.
+
 :::
 
-<1>3. Equality at a nonzero point fixes the entire even part.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Equality at a nonzero point fixes the entire even part.
+
+::: pf-proof
+
 Suppose equality holds at $z_0\ne0$. Then
 $$
 |G(z_0^2)|=|z_0^2|,
@@ -116,10 +137,17 @@ $$
 a_2=\lambda,\qquad a_{2m}=0\quad(m\ne1).
 $$
 In particular $|a_2|=1$.
+
 :::
 
-<1>4. A disk map with a Taylor coefficient of modulus one at degree two has no other coefficients.
-::: {.proof}
+:::
+
+::: pf-step
+
+A disk map with a Taylor coefficient of modulus one at degree two has no other coefficients.
+
+::: pf-proof
+
 For $0<r<1$, the Taylor partial sums converge uniformly
 to $f$ on $|z|=r$ [@SS03]. Their squared moduli also
 converge uniformly there. Integrating the finite sums,
@@ -134,10 +162,16 @@ $r\uparrow1$ and using monotone convergence for the nonnegative series gives
 $$
 \sum_{n=1}^\infty|a_n|^2\le1.
 $$
-Step <1>3 gives $|a_2|=1$, so every other coefficient must vanish. Thus
+Step [](#s3){.pf-ref} gives $|a_2|=1$, so every other coefficient must vanish. Thus
 $$
 f(z)=a_2z^2=\lambda z^2=e^{i\theta}z^2
 $$
 for some real $\theta$, which is exactly the corrected equality conclusion.
+
 :::
+
+:::
+
+:::
+
 :::

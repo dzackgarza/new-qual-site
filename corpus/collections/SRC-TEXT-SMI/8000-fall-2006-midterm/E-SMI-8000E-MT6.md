@@ -43,8 +43,15 @@ You do not need to find a matrix $Q$ such that $Q^{-1}AQ = J$.
 :::
 
 ::: {.solution}
-<1>1. Compute the characteristic polynomial.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Compute the characteristic polynomial.
+
+::: pf-proof
+
 The matrix is block upper triangular with diagonal blocks
 $$
 B=\begin{pmatrix}-1&1\\-4&3\end{pmatrix}
@@ -78,10 +85,17 @@ Hence
 $$
 \boxed{\chi_A(x)=(x-1)^4(x-2).}
 $$
+
 :::
 
-<1>2. Determine the Jordan blocks for eigenvalue $1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the Jordan blocks for eigenvalue $1$.
+
+::: pf-proof
+
 Let
 $$
 N=A-I.
@@ -119,10 +133,17 @@ gives dimension $2+1=3$. Hence the blocks at eigenvalue $1$ have sizes
 $$
 3\quad\text{and}\quad1.
 $$
+
 :::
 
-<1>3. Determine the Jordan form and minimal polynomial.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the Jordan form and minimal polynomial.
+
+::: pf-proof
+
 The eigenvalue $2$ has algebraic multiplicity one, so it contributes a single
 $1\times1$ block. Thus, up to the ordering of blocks,
 $$
@@ -147,10 +168,17 @@ one factor $(x-2)$. Therefore
 $$
 \boxed{m_A(x)=(x-1)^3(x-2).}
 $$
+
 :::
 
-<1>4. Split $J$ into a diagonal matrix plus a nilpotent matrix.
-::: {.proof}
+:::
+
+::: pf-step
+
+Split $J$ into a diagonal matrix plus a nilpotent matrix.
+
+::: pf-proof
+
 Write
 $$
 J=D+N_J,
@@ -178,5 +206,11 @@ Thus the requested decomposition is
 $$
 \boxed{J=D+N_J.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

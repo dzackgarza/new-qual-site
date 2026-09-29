@@ -66,7 +66,11 @@ y^2
 \frac34.
 $$
 
-<1>1. Let $\alpha\in R=\Endo(X,P_0)$ correspond to multiplication by $\alpha$ on $\CC/\Lambda$.
+::: pf
+
+::: {.pf-step #s1}
+
+Let $\alpha\in R=\Endo(X,P_0)$ correspond to multiplication by $\alpha$ on $\CC/\Lambda$.
 Write
 $$
 \alpha=a+b\tau,
@@ -81,7 +85,8 @@ b\tau^2+(a-d)\tau-c=0.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Proposition IV.4.18 says precisely that
 $$
 R=\{\alpha\in\CC:\alpha\Lambda\subseteq\Lambda\}.
@@ -89,14 +94,20 @@ $$
 Since $1,\tau$ is a $\ZZ$-basis of $\Lambda$, the two displayed integral expressions for $\alpha$ and $\alpha\tau$ are necessary and sufficient.
 Eliminating $\alpha$ gives the boxed quadratic equation.
 If $b=0$, then $\alpha=a\in\ZZ$.
+
 :::
 
-<1>2. If $\deg f_\alpha\le2$ and $\alpha\notin\ZZ$, then
+:::
+
+::: {.pf-step #s2}
+
+If $\deg f_\alpha\le2$ and $\alpha\notin\ZZ$, then
 $$
 \boxed{b=\pm1.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 By [[P-AGH4411COMPLEXMULTIPLICATION|Exercise IV.4.11(a)]],
 $$
 \deg f_\alpha=\abs{\alpha}^2.
@@ -114,9 +125,14 @@ $$
 b^2\le\frac83<4.
 $$
 Thus $0<\abs b<2$, so $b=\pm1$.
+
 :::
 
-<1>3. After replacing $\alpha$ by $-\alpha$ if necessary, assume $b=1$.
+:::
+
+::: {.pf-step #s3}
+
+After replacing $\alpha$ by $-\alpha$ if necessary, assume $b=1$.
 Then there is an integer
 $$
 t=d-a
@@ -137,8 +153,9 @@ t=2x,
 $$
 Moreover $t\in\{-1,0\}$ for the points of $G$ relevant below.
 
-::: {.proof}
-With $b=1$, step <1>1 gives
+::: pf-proof
+
+With $b=1$, step [](#s1){.pf-ref} gives
 $$
 \tau^2+(a-d)\tau-c=0,
 $$
@@ -161,9 +178,14 @@ a^2+at-c.
 $$
 Because $-1/2\le x<1/2$ and $t=2x\in\ZZ$, one has $t\in\{-1,0\}$.
 The excluded right boundary $x=1/2$ is precisely the boundary convention making the representative in $G$ unique.
+
 :::
 
-<1>4. If $X$ has an automorphism fixing $P_0$ other than $\pm1$, then
+:::
+
+::: {.pf-step #s4}
+
+If $X$ has an automorphism fixing $P_0$ other than $\pm1$, then
 $$
 \boxed{
 \tau=i
@@ -172,14 +194,15 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 An automorphism has degree $1$.
 If its multiplier $\alpha$ were an integer, then
 $$
 1=\abs\alpha^2=\alpha^2,
 $$
 so $\alpha=\pm1$.
-Thus a new automorphism has $\alpha\notin\ZZ$, and steps <1>2--<1>3 apply.
+Thus a new automorphism has $\alpha\notin\ZZ$, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} apply.
 Since
 $$
 1=\abs\alpha^2=a^2+at-c,
@@ -221,9 +244,14 @@ $$
 Conversely, multiplication by $i$ preserves $\ZZ+\ZZ i$, and multiplication by $\omega$ preserves $\ZZ+\ZZ\omega$.
 Both have norm $1$ and are different from $\pm1$.
 This proves part (a).
+
 :::
 
-<1>5. If $X$ has an endomorphism of degree $2$, then
+:::
+
+::: {.pf-step #s5}
+
+If $X$ has an endomorphism of degree $2$, then
 $$
 \boxed{
 \tau=i,
@@ -234,9 +262,10 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 No integer multiplier has degree $2$, since an integer $n$ has degree $n^2$.
-Hence $\alpha\notin\ZZ$, and steps <1>2--<1>3 apply.
+Hence $\alpha\notin\ZZ$, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} apply.
 Now
 $$
 2=\abs\alpha^2=a^2+at-c,
@@ -279,11 +308,17 @@ $$
 \tau=\frac{-1+\sqrt{-7}}2.
 $$
 There are no other possibilities.
+
 :::
 
-<1>6. Each of the three values in step <1>5 actually has a degree-$2$ endomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Each of the three values in step [](#s5){.pf-ref} actually has a degree-$2$ endomorphism.
+
+::: pf-proof
+
 For $\tau=i$, multiplication by
 $$
 1+i
@@ -305,9 +340,14 @@ $$
 \abs{\tau}^2=\tau\bar\tau=2.
 $$
 Exercise IV.4.11(a) therefore gives degree $2$ in all three cases.
+
 :::
 
-<1>7. The three period values match the three $j$-values of [[P-AGH445DEGREETWOENDOMORPHISM|Exercise IV.4.5]] as follows:
+:::
+
+::: {.pf-step #s7}
+
+The three period values match the three $j$-values of [[P-AGH445DEGREETWOENDOMORPHISM|Exercise IV.4.5]] as follows:
 $$
 \boxed{
 \begin{array}{c|c|c}
@@ -319,7 +359,8 @@ i & -4 & 1728=2^6\cdot3^3\\
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\tau=i$, Example IV.4.20.1 already gives
 $$
 j(i)=1728.
@@ -340,11 +381,17 @@ H_{-7}(T)=T+3375.
 $$
 Thus the associated singular moduli are $8000$ and $-3375$.
 These are exactly the two remaining $j$-values found in Exercise IV.4.5.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves part (a), steps <1>5--<1>6 prove the complete list in part (b), and step <1>7 matches the three period representatives with the three $j$-values from Exercise IV.4.5.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (a), steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove the complete list in part (b), and step [](#s7){.pf-ref} matches the three period representatives with the three $j$-values from Exercise IV.4.5.
+
+:::
+
+:::
+
 :::

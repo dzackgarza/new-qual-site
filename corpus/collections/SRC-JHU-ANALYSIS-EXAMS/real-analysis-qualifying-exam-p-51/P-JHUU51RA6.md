@@ -44,8 +44,15 @@ in the sense of distributions.
 :::
 
 ::: {.solution}
-<1>1. The principal-value limit exists.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The principal-value limit exists.
+
+::: pf-proof
+
 Fix $\varphi\in C_c^\infty(\mathbb R)$. For $0<\varepsilon<1$, symmetry gives
 \[
 \int_{-1}^{-\varepsilon}\frac{\varphi(0)}x\,dx
@@ -69,10 +76,17 @@ so
 \left|\frac{\varphi(x)-\varphi(0)}x\right|\le C.
 \]
 Thus the first integral converges absolutely as $\varepsilon\to0^+$. Therefore the principal-value limit exists.
+
 :::
 
-<1>2. The locally integrable function $\log|x|$ defines a distribution.
-::: {.proof}
+:::
+
+::: pf-step
+
+The locally integrable function $\log|x|$ defines a distribution.
+
+::: pf-proof
+
 Since
 \[
 \int_0^1|\log x|\,dx<\infty,
@@ -83,10 +97,17 @@ we have $\log|x|\in L^1_{\mathrm{loc}}(\mathbb R)$. Hence it defines a distribut
 =
 \int_{\mathbb R}\log|x|\,\varphi(x)\,dx.
 \]
+
 :::
 
-<1>3. Its distributional derivative equals $u$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Its distributional derivative equals $u$.
+
+::: pf-proof
+
 By definition,
 \[
 \langle (\log|x|)',\varphi\rangle
@@ -124,5 +145,11 @@ Thus
 \boxed{u=(\log|x|)'}
 \]
 in $\mathcal D'(\mathbb R)$.
+
 :::
+
+:::
+
+:::
+
 :::

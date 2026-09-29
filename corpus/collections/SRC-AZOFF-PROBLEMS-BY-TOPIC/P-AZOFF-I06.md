@@ -48,9 +48,14 @@ g(z)
 \end{cases}
 $$
 
-<1>1. The function $g$ is analytic and zero-free on $\DD$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The function $g$ is analytic and zero-free on $\DD$.
+
+::: pf-proof
+
 Because $f$ has a zero of order exactly $k$ at the origin, there is an
 analytic function $g$ near $0$ with
 $$
@@ -58,14 +63,20 @@ f(z)=z^kg(z)
 $$
 and $g(0)\neq0$. This is exactly the extension displayed above. Since $f$
 has no zeros away from the origin, $g$ has no zeros anywhere in $\DD$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \lim_{\abs{z}\to1}\abs{g(z)}=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $z\neq0$,
 $$
 \abs{g(z)}
@@ -74,14 +85,20 @@ $$
 $$
 As $\abs{z}\to1$, the numerator tends to $1$ by hypothesis and the
 denominator tends to $1$. Hence the quotient tends to $1$.
+
 :::
 
-<1>3. For every $z_0\in\DD$,
+:::
+
+::: {.pf-step #s3}
+
+For every $z_0\in\DD$,
 $$
 \abs{g(z_0)}\leq1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $z_0\in\DD$ and choose $r$ with
 $$
 \abs{z_0}<r<1.
@@ -92,35 +109,47 @@ $$
 \leq
 \max_{\abs{z}=r}\abs{g(z)}.
 $$
-Step <1>2 implies
+Step [](#s2){.pf-ref} implies
 $$
 \max_{\abs{z}=r}\abs{g(z)}
 \longrightarrow1
 $$
 as $r\uparrow1$. Letting $r\uparrow1$ gives the claimed inequality.
+
 :::
 
-<1>4. For every $z_0\in\DD$,
+:::
+
+::: {.pf-step #s4}
+
+For every $z_0\in\DD$,
 $$
 \abs{g(z_0)}\geq1.
 $$
 
-::: {.proof}
-By step <1>1, the function $1/g$ is analytic on $\DD$. Step <1>2 gives
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the function $1/g$ is analytic on $\DD$. Step [](#s2){.pf-ref} gives
 $$
 \lim_{\abs{z}\to1}\abs{1/g(z)}=1.
 $$
-Applying step <1>3 to $1/g$ yields
+Applying step [](#s3){.pf-ref} to $1/g$ yields
 $$
 \abs{1/g(z_0)}\leq1,
 $$
 equivalently $\abs{g(z_0)}\geq1$.
+
 :::
 
-<1>5. The function $g$ is constant with unimodular value.
+:::
 
-::: {.proof}
-Steps <1>3 and <1>4 give
+::: {.pf-step #s5}
+
+The function $g$ is constant with unimodular value.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give
 $$
 \abs{g(z)}=1
 $$
@@ -132,9 +161,14 @@ g\equiv\lambda,
 \qquad
 \abs{\lambda}=1.
 $$
+
 :::
 
-<1>6. The required formula is
+:::
+
+::: {.pf-step #s6}
+
+The required formula is
 $$
 \boxed{
 f(z)=\lambda z^k,
@@ -143,17 +177,24 @@ f(z)=\lambda z^k,
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of $g$,
 $$
 f(z)=z^kg(z).
 $$
-Substitute the constant value from step <1>5.
+Substitute the constant value from step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested formula.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested formula.
+
+:::
+
+:::
+
 :::

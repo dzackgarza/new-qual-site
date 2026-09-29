@@ -55,9 +55,14 @@ $$
 F=(f,\id_C):C\times C\longrightarrow C\times C.
 $$
 
-<1>1. The $q$-power Frobenius $f:C\to C$ is finite of degree $q$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The $q$-power Frobenius $f:C\to C$ is finite of degree $q$.
+
+::: pf-proof
+
 Write $q=p^r$. The $k$-linear $p$-power Frobenius on a smooth curve over the
 perfect field $k$ has degree $p$; this is recorded in [[D-IV2FROBTWIST]]. The
 $q$-power Frobenius is its $r$-fold iterate, with the intervening Frobenius
@@ -66,9 +71,14 @@ Multiplicativity of degree under composition therefore gives
 $$
 \deg f=p^r=q.
 $$
+
 :::
 
-<1>2. Scheme-theoretically,
+:::
+
+::: {.pf-step #s2}
+
+Scheme-theoretically,
 $$
 \Gamma=F^*\Delta,
 $$
@@ -77,7 +87,8 @@ $$
 \boxed{\Gamma^2=q(2-2g)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The inverse image of the diagonal under $F$ consists of pairs $(P,Q)$ with
 $$
 f(P)=Q,
@@ -85,7 +96,7 @@ $$
 which is exactly the graph of $f$; the same equality holds scheme-theoretically
 because both are defined by pulling back the diagonal ideal.
 
-The morphism $F$ is finite of degree $q$ by step <1>1. The projection formula
+The morphism $F$ is finite of degree $q$ by step [](#s1){.pf-ref}. The projection formula
 for intersection numbers therefore gives
 $$
 (F^*\Delta)^2
@@ -100,12 +111,18 @@ Substitution yields
 $$
 \Gamma^2=q(2-2g).
 $$
+
 :::
 
-<1>3. The closed points of $\Gamma\cap\Delta$ are exactly the
+:::
+
+::: {.pf-step #s3}
+
+The closed points of $\Gamma\cap\Delta$ are exactly the
 $\FF_q$-rational points of $C$.
 
-::: {.proof}
+::: pf-proof
+
 A geometric point $(P,P)$ of the diagonal lies on the graph exactly when
 $$
 f(P)=P.
@@ -113,14 +130,20 @@ $$
 The fixed geometric points of the $q$-power Frobenius are precisely the points
 defined over $\FF_q$. Thus the underlying set of $\Gamma\cap\Delta$ is in
 bijection with $C(\FF_q)$.
+
 :::
 
-<1>4. Every point of $\Gamma\cap\Delta$ has intersection multiplicity one, so
+:::
+
+::: {.pf-step #s4}
+
+Every point of $\Gamma\cap\Delta$ has intersection multiplicity one, so
 $$
 \boxed{\Gamma\cdot\Delta=N}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The differential of Frobenius is zero. At a fixed point $P$, under
 $$
 T_{(P,P)}(C\times C)=T_PC\oplus T_PC,
@@ -135,14 +158,19 @@ T_{(P,P)}\Delta=\{(v,v):v\in T_PC\}.
 $$
 These two one-dimensional subspaces meet only at zero and span the tangent
 space of the surface. Hence the two smooth curves meet transversally at every
-fixed point, so every local intersection multiplicity is one. Step <1>3 now
+fixed point, so every local intersection multiplicity is one. Step [](#s3){.pf-ref} now
 gives
 $$
 \Gamma\cdot\Delta=\#C(\FF_q)=N.
 $$
+
 :::
 
-<1>5. With
+:::
+
+::: {.pf-step #s5}
+
+With
 $$
 l=C\times\{Q\},
 \qquad
@@ -156,14 +184,15 @@ $$
 $$
 in the notation of Exercise V.1.9.
 
-::: {.proof}
+::: pf-proof
+
 The intersection $\Gamma\cap m$ is obtained by fixing the first coordinate
 $P=Q$, leaving the single point $(Q,f(Q))$ with multiplicity one. Thus
 $$
 \Gamma\cdot m=1.
 $$
 The intersection with $l$ is the fibre $f^{-1}(Q)$, whose scheme-theoretic
-length is $\deg f=q$ by step <1>1. Hence
+length is $\deg f=q$ by step [](#s1){.pf-ref}. Hence
 $$
 \Gamma\cdot l=q.
 $$
@@ -172,9 +201,14 @@ $$
 \Delta\cdot l=\Delta\cdot m=1.
 $$
 This gives the stated types.
+
 :::
 
-<1>6. For integers $r,s$, put
+:::
+
+::: {.pf-step #s6}
+
+For integers $r,s$, put
 $$
 D=r\Gamma+s\Delta.
 $$
@@ -188,8 +222,9 @@ $$
 (rq+s,r+s).
 $$
 
-::: {.proof}
-The square formula follows from steps <1>2 and <1>4 together with
+::: pf-proof
+
+The square formula follows from steps [](#s2){.pf-ref} and [](#s4){.pf-ref} together with
 $\Delta^2=2-2g$:
 $$
 \begin{aligned}
@@ -198,26 +233,32 @@ D^2
 &=(2-2g)(qr^2+s^2)+2rsN.
 \end{aligned}
 $$
-The type is additive, so step <1>5 gives
+The type is additive, so step [](#s5){.pf-ref} gives
 $$
 D\cdot l=rq+s,
 \qquad
 D\cdot m=r+s.
 $$
+
 :::
 
-<1>7. For every pair of integers $r,s$,
+:::
+
+::: {.pf-step #s7}
+
+For every pair of integers $r,s$,
 $$
 rs(N-q-1)\leq g(qr^2+s^2).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply the Castelnuovo--Severi inequality from Exercise V.1.9,
-[[P-AGH519HODGEINDEX]], to the divisor $D$ of step <1>6:
+[[P-AGH519HODGEINDEX]], to the divisor $D$ of step [](#s6){.pf-ref}:
 $$
 D^2\leq2(D\cdot l)(D\cdot m).
 $$
-Substituting the formulas from step <1>6 gives
+Substituting the formulas from step [](#s6){.pf-ref} gives
 $$
 (2-2g)(qr^2+s^2)+2rsN
 \leq
@@ -227,15 +268,21 @@ Dividing by two and collecting terms yields
 $$
 rs(N-q-1)\leq g(qr^2+s^2).
 $$
+
 :::
 
-<1>8. One has
+:::
+
+::: {.pf-step #s8}
+
+One has
 $$
 N-q-1\leq2g\sqrt q.
 $$
 
-::: {.proof}
-Take $r,s>0$ in step <1>7 and divide by $rs$:
+::: pf-proof
+
+Take $r,s>0$ in step [](#s7){.pf-ref} and divide by $rs$:
 $$
 N-q-1
 \leq
@@ -252,15 +299,21 @@ gives
 $$
 N-q-1\leq2g\sqrt q.
 $$
+
 :::
 
-<1>9. One has
+:::
+
+::: {.pf-step #s9}
+
+One has
 $$
 N-q-1\geq-2g\sqrt q.
 $$
 
-::: {.proof}
-Take $r>0$ and $s<0$ in step <1>7. Dividing by the negative number $rs$
+::: pf-proof
+
+Take $r>0$ and $s<0$ in step [](#s7){.pf-ref}. Dividing by the negative number $rs$
 reverses the inequality:
 $$
 N-q-1
@@ -278,9 +331,14 @@ $$
 The negative rational numbers are dense in $\RR_{<0}$, so the supremum of the
 right-hand side over such rational $x$ is $-2g\sqrt q$. Taking this supremum
 gives the asserted lower bound.
+
 :::
 
-<1>10. Setting
+:::
+
+::: {.pf-step #s10}
+
+Setting
 $$
 a=q+1-N,
 $$
@@ -291,19 +349,26 @@ $$
 \boxed{|a|\leq2g\sqrt q}.
 $$
 
-::: {.proof}
-Steps <1>8--<1>9 give
+::: pf-proof
+
+Steps [](#s8){.pf-ref} and [](#s9){.pf-ref} give
 $$
 |N-q-1|\leq2g\sqrt q.
 $$
 Since $a=-(N-q-1)$, the same bound holds for $|a|$, and the defining equation
 for $a$ rearranges to $N=1-a+q$.
+
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove the two requested intersection identities, and steps
-<1>5--<1>10 apply Exercise V.1.9 to obtain the stated Riemann-hypothesis bound.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the two requested intersection identities, and steps
+[](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} apply Exercise V.1.9 to obtain the stated Riemann-hypothesis bound.
+
+:::
+
+:::
+
 :::

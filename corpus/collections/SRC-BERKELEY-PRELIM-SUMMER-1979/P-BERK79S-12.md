@@ -48,7 +48,11 @@ b\in\NN,
 \gcd(a,b)=1.
 $$
 
-<1>1. If
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 3t^3+10t^2-3t
 $$
@@ -59,7 +63,8 @@ b^3
 3a^2+10ab-3b^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Substituting $t=a/b$ gives
 $$
 3t^3+10t^2-3t
@@ -79,15 +84,21 @@ $$
 \gcd(a,b^3)=1.
 $$
 Euclid's lemma therefore gives the stated divisibility.
+
 :::
 
-<1>2. Under the hypothesis of step <1>1,
+:::
+
+::: {.pf-step #s2}
+
+Under the hypothesis of step [](#s1){.pf-ref},
 $$
 b\mid3.
 $$
 
-::: {.proof}
-Step <1>1 implies in particular
+::: pf-proof
+
+Step [](#s1){.pf-ref} implies in particular
 $$
 b
 \mid
@@ -104,31 +115,48 @@ b\mid3.
 $$
 Equivalently, since $\gcd(a^2,b)=1$, Euclid's lemma applied to
 $b\mid3a^2$ gives the same conclusion.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 b\in\{1,3\}.
 $$
 
-::: {.proof}
-The denominator $b$ is positive, and step <1>2 says that it is a positive
+::: pf-proof
+
+The denominator $b$ is positive, and step [](#s2){.pf-ref} says that it is a positive
 divisor of $3$.
+
 :::
 
-<1>4. If $b=1$, then $t$ is an integer, and every integer $t$ is a
+:::
+
+::: {.pf-step #s4}
+
+If $b=1$, then $t$ is an integer, and every integer $t$ is a
 solution.
 
-::: {.proof}
+::: pf-proof
+
 If $b=1$, then $t=a\in\ZZ$. Since
 $$
 3t^3+10t^2-3t
 $$
 is a polynomial with integer coefficients, it is an integer at every
 integer input.
+
 :::
 
-<1>5. Suppose $b=3$. Then
+:::
+
+::: {.pf-step #s5}
+
+Suppose $b=3$. Then
 $$
 3\nmid a,
 $$
@@ -137,12 +165,13 @@ $$
 9\mid a^2+10a-9.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $a/3$ is in lowest terms,
 $$
 3\nmid a.
 $$
-Step <1>1 becomes
+Step [](#s1){.pf-ref} becomes
 $$
 27
 \mid
@@ -151,14 +180,20 @@ $$
 3(a^2+10a-9).
 $$
 Dividing by $3$ gives the displayed condition.
+
 :::
 
-<1>6. Under the hypotheses of step <1>5,
+:::
+
+::: {.pf-step #s6}
+
+Under the hypotheses of step [](#s5){.pf-ref},
 $$
 a\equiv-1\pmod9.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Modulo $9$,
 $$
 a^2+10a-9
@@ -167,7 +202,7 @@ a^2+a
 =
 a(a+1).
 $$
-Thus step <1>5 gives
+Thus step [](#s5){.pf-ref} gives
 $$
 9\mid a(a+1).
 $$
@@ -180,16 +215,22 @@ which is equivalent to
 $$
 a\equiv-1\pmod9.
 $$
+
 :::
 
-<1>7. Hence every nonintegral solution has the form
+:::
+
+::: {.pf-step #s7}
+
+Hence every nonintegral solution has the form
 $$
 t=3k-\frac13
 $$
 for some $k\in\ZZ$.
 
-::: {.proof}
-By step <1>6,
+::: pf-proof
+
+By step [](#s6){.pf-ref},
 $$
 a=9k-1
 $$
@@ -201,9 +242,14 @@ t
 =
 3k-\frac13.
 $$
+
 :::
 
-<1>8. Every number
+:::
+
+::: {.pf-step #s8}
+
+Every number
 $$
 t=3k-\frac13,
 \qquad
@@ -211,7 +257,8 @@ k\in\ZZ,
 $$
 is indeed a solution.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 a=9k-1.
@@ -248,9 +295,14 @@ a(9k^2+8k-2)
 \ZZ.
 \end{aligned}
 $$
+
 :::
 
-<1>9. The complete set of rational solutions is
+:::
+
+::: {.pf-step #s9}
+
+The complete set of rational solutions is
 $$
 \boxed{
 \ZZ
@@ -262,15 +314,22 @@ k\in\ZZ
 }
 $$
 
-::: {.proof}
-Steps <1>3--<1>7 show that every solution lies in the displayed set.
-Steps <1>4 and <1>8 show that every number in the displayed set is a
+::: pf-proof
+
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} show that every solution lies in the displayed set.
+Steps [](#s4){.pf-ref} and [](#s8){.pf-ref} show that every number in the displayed set is a
 solution.
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Step <1>9 is the required classification.
 :::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref} is the required classification.
+
+:::
+
+:::
+
 :::

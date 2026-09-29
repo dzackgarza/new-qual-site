@@ -43,17 +43,31 @@ Then there is $x^* \in X^*$ such that $x^*(x) = \lim_{j \to \infty} x_j^*(x)$ fo
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 The Cantor--Lebesgue function $F:[0,1]\to[0,1]$ is continuous and nonconstant, while
 \[
 F'(x)=0
 \]
 for almost every $x\in[0,1]$. Hence continuity together with existence of the derivative a.e. and $f'=0$ a.e. does not force constancy.
+
 :::
 
-<1>2. Part (b) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is true.
+
+::: pf-proof
+
 Suppose $\mu(E_{j_0})=0$. Since the sets are decreasing,
 \[
 E_j\subseteq E_{j_0}
@@ -67,10 +81,17 @@ so $\mu(E_j)=0$ for every $j\ge j_0$. Hence
 \[
 \boxed{\mu(E_j)\to0.}
 \]
+
 :::
 
-<1>3. Part (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is true.
+
+::: pf-proof
+
 Because
 \[
 0\le f_j\le f_1
@@ -79,10 +100,17 @@ almost everywhere and $f_1\in L^1(X,\mu)$, while $f_j\to f$ almost everywhere, t
 \[
 \boxed{\int_X f\,d\mu=\lim_{j\to\infty}\int_X f_j\,d\mu.}
 \]
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 The total variation measure $|\nu|$ dominates $\nu$, so
 \[
 \nu\ll|\nu|.
@@ -105,10 +133,17 @@ By the defining integration identity for the Radon--Nikodym derivative, every $g
 \[
 \boxed{\int_X g\,d\nu=\int_X gf\,d|\nu|.}
 \]
+
 :::
 
-<1>5. Part (e) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (e) is true.
+
+::: pf-proof
+
 For each fixed $x\in X$, the scalar sequence $(x_j^*(x))$ converges and is therefore bounded. Thus
 \[
 \sup_j|x_j^*(x)|<\infty
@@ -132,5 +167,11 @@ Hence $x^*\in X^*$ and
 \[
 \boxed{x^*(x)=\lim_{j\to\infty}x_j^*(x)\quad\text{for every }x\in X.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

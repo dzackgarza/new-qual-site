@@ -35,9 +35,15 @@ Show that there exists a constant $c \in \mathbb { R }$ and a holomorphic functi
 :::
 
 ::: {.solution}
-<1>1. The holomorphic gradient of $h$ has a real residue on the exterior annulus.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The holomorphic gradient of $h$ has a real residue on the exterior annulus.
+
+::: pf-proof
+
 Write $z=x+iy$ and put $q(z)=h_x(z)-ih_y(z)$. The
 Cauchy–Riemann equations for $q$ are precisely
 $h_{xx}=-h_{yy}$ and $h_{xy}=h_{yx}$, so harmonicity
@@ -57,11 +63,17 @@ $$
 The real part is $dh$, whose integral over the closed
 circle is zero. Thus the integral is purely imaginary,
 and $a_{-1}$ is real. Denote this real number by $a$.
+
 :::
 
-<1>2. Subtracting $a/z$ gives a holomorphic gradient with a single-valued primitive.
+:::
 
-::: {.proof}
+::: pf-step
+
+Subtracting $a/z$ gives a holomorphic gradient with a single-valued primitive.
+
+::: pf-proof
+
 Set $c=-a$. The function $q+c/z=q-a/z$ has no
 $z^{-1}$ term. Define
 $$
@@ -86,11 +98,17 @@ F'(z)=q(z)-a/z.
 $$
 The integer powers make $F$ single-valued on all of $U$;
 no logarithm branch is assumed.
+
 :::
 
-<1>3. An additive real constant makes the real part equal to the required function.
+:::
 
-::: {.proof}
+::: pf-step
+
+An additive real constant makes the real part equal to the required function.
+
+::: pf-proof
+
 Put $H(z)=h(z)+c\log|z|$. On $U$,
 $$
 (\log|z|)_x-i(\log|z|)_y
@@ -107,5 +125,11 @@ $$
 c=-\frac1{2\pi i}\int_{|z|=r}(h_x-ih_y)\,dz\in\mathbb R.
 $$
 This is the asserted representation.
+
 :::
+
+:::
+
+:::
+
 :::

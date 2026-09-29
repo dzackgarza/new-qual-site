@@ -41,7 +41,11 @@ A\coloneqq
 \end{pmatrix}.
 $$
 
-<1>1. One square root is
+::: pf
+
+::: {.pf-step #s1}
+
+One square root is
 $$
 B=\boxed{
 \begin{pmatrix}
@@ -52,7 +56,8 @@ B=\boxed{
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 B^2=
@@ -63,12 +68,18 @@ B^2=
 \end{pmatrix}
 =A.
 $$
+
 :::
 
-<1>2. Every square root of $A$ acts by a scalar on each eigenspace of
+:::
+
+::: {.pf-step #s2}
+
+Every square root of $A$ acts by a scalar on each eigenspace of
 $A$.
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A$ is upper triangular with three distinct eigenvalues
 $1,4,9$. Hence it has three one-dimensional eigenspaces whose direct
 sum is $\CC^3$.
@@ -80,11 +91,17 @@ $$
 Thus $X$ preserves every eigenspace of $A$: if $Av=\lambda v$, then
 $A(Xv)=X(Av)=\lambda Xv$. Since each eigenspace is one-dimensional,
 $X$ acts on it by some scalar $\mu_\lambda$.
+
 :::
 
-<1>3. The matrix $A$ has exactly $\boxed{8}$ square roots.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The matrix $A$ has exactly $\boxed{8}$ square roots.
+
+::: pf-proof
+
 On the eigenspace for $\lambda\in\{1,4,9\}$, the equation $X^2=A$
 forces
 $$
@@ -99,13 +116,19 @@ $$
 \mu_9\in\{3,-3\}.
 $$
 The three choices are independent, giving $2^3=8$ operators. Step
-<1>2 shows that every square root arises in this way, so there are no
+[](#s2){.pf-ref} shows that every square root arises in this way, so there are no
 others.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 gives a square root, and step <1>3 gives the complete count.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives a square root, and step [](#s3){.pf-ref} gives the complete count.
+
+:::
+
+:::
+
 :::

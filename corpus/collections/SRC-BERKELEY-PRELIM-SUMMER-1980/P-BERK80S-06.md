@@ -34,13 +34,19 @@ where the branch of the square root is chosen so that $\sqrt{2^2-1}>0$.
 :::
 
 ::: {.solution}
-<1>1. On $\abs{z}>1$, the required branch is
+
+::: pf
+
+::: {.pf-step #s1}
+
+On $\abs{z}>1$, the required branch is
 $$
 \sqrt{z^2-1}=z\sqrt{1-z^{-2}},
 $$
 where the second square root is the principal branch.
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}>1$, one has $\abs{z^{-2}}<1$, so $1-z^{-2}$ lies in the open
 disk of radius $1$ centered at $1$. The principal square root is analytic
 on this disk, so the displayed function is analytic on $\abs{z}>1$, and its
@@ -49,31 +55,43 @@ $$
 2\sqrt{1-\frac14}=\sqrt3>0,
 $$
 so it is the branch required in the problem.
+
 :::
 
-<1>2. For $\abs{z}>1$, the branch of step <1>1 has Laurent expansion
+:::
+
+::: {.pf-step #s2}
+
+For $\abs{z}>1$, the branch of step [](#s1){.pf-ref} has Laurent expansion
 $$
 \sqrt{z^2-1}
 =z-\frac1{2z}-\frac1{8z^3}-\cdots,
 $$
 whose coefficient of $z^{-1}$ is $-\tfrac12$.
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{w}<1$, the binomial series gives
 $$
 \sqrt{1-w}
 =1-\frac12w-\frac18w^2-\cdots.
 $$
 Put $w=z^{-2}$ and multiply by $z$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_C\sqrt{z^2-1}\,dz=\boxed{-\pi i}.
 $$
 
-::: {.proof}
-The Laurent series of step <1>2 converges uniformly on the circle
+::: pf-proof
+
+The Laurent series of step [](#s2){.pf-ref} converges uniformly on the circle
 $\abs{z}=2$, so termwise integration around the positively oriented circle
 gives
 $$
@@ -81,11 +99,17 @@ $$
 =2\pi i\left(-\frac12\right)
 =-\pi i.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

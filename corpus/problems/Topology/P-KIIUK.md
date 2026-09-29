@@ -18,10 +18,27 @@ review: draft
 :::
 
 ::: {.solution}
-<1>1. The notation $X^n$ is not defined in the statement, so the target space is not determined.
 
-<1>2. For spheres, if $f:S^n\to S^n$ is not surjective, then $f$ is null-homotopic.
-::: {.proof}
-Choose $p\in S^n\setminus f(S^n)$. Then $f$ factors through $S^n\setminus\{p\}\cong\mathbb R^n$, which is contractible. Hence the factorization, and therefore $f$, is null-homotopic.
+::: pf
+
+::: pf-step
+
+The notation $X^n$ is not defined in the statement, so the target space is not determined.
+
 :::
+
+::: pf-step
+
+For spheres, if $f:S^n\to S^n$ is not surjective, then $f$ is null-homotopic.
+
+::: pf-proof
+
+Choose $p\in S^n\setminus f(S^n)$. Then $f$ factors through $S^n\setminus\{p\}\cong\mathbb R^n$, which is contractible. Hence the factorization, and therefore $f$, is null-homotopic.
+
+:::
+
+:::
+
+:::
+
 :::

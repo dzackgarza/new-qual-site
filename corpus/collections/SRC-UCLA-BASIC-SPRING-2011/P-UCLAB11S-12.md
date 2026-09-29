@@ -24,10 +24,24 @@ Define
 \]
 Recall that every contraction of a complete metric space has a unique fixed point.
 
-<1>1. Use this fixed-point theorem to obtain the solution of
+::: pf
+
+::: pf-step
+
+Use this fixed-point theorem to obtain the solution of
 \[
 f'(t)=f(t),\qquad f(0)=1,
 \]
 carefully explaining why the theorem applies.
-<1>2. Determine the successive approximations $T(0),T^2(0),T^3(0),\ldots$.
+
+:::
+
+::: pf-step
+
+Determine the successive approximations $T(0),T^2(0),T^3(0),\ldots$.
+
+:::
+
+:::
+
 :::

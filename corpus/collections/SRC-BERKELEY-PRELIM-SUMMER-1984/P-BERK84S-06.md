@@ -33,7 +33,6 @@ $$
 lie in the circle $| z | < \rho .$
 :::
 
-
 ::: {.solution}
 Fix $\rho>0$ and put
 \[
@@ -48,8 +47,14 @@ Then for $z\ne0$,
 f_n(z)=p_n(1/z).
 \]
 
-<1>1. For all sufficiently large $n$, the polynomial $p_n$ has no zero in the closed disk $|w|\le R$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+For all sufficiently large $n$, the polynomial $p_n$ has no zero in the closed disk $|w|\le R$.
+
+::: pf-proof
+
 On $|w|\le R$,
 \[
 |e^w|=e^{\operatorname{Re}w}\ge e^{-R}.
@@ -71,18 +76,31 @@ For such $n$ and every $|w|\le R$,
 >e^{-R}-e^{-R}=0.
 \]
 Thus $p_n$ has no zero in $|w|\le R$.
+
 :::
 
-<1>2. Every zero of $f_n$ then satisfies $|z|<\rho$.
-::: {.proof}
-Let $n$ be large enough for <1>1 and suppose $f_n(z)=0$. Since $f_n$ has a pole rather than a zero at $z=0$, we have $z\ne0$. Put $w=1/z$. Then
+:::
+
+::: pf-step
+
+Every zero of $f_n$ then satisfies $|z|<\rho$.
+
+::: pf-proof
+
+Let $n$ be large enough for step [](#s1){.pf-ref} and suppose $f_n(z)=0$. Since $f_n$ has a pole rather than a zero at $z=0$, we have $z\ne0$. Put $w=1/z$. Then
 \[
 p_n(w)=f_n(z)=0.
 \]
-By <1>1 this forces $|w|>R=1/\rho$. Therefore
+By step [](#s1){.pf-ref} this forces $|w|>R=1/\rho$. Therefore
 \[
 |z|=\frac1{|w|}<\rho.
 \]
 Hence, for all sufficiently large $n$, every zero of $f_n$ lies in the circle $|z|<\rho$.
+
 :::
+
+:::
+
+:::
+
 :::

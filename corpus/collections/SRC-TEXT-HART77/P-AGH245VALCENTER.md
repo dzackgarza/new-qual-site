@@ -48,7 +48,11 @@ be the generic point, so
 \kappa(\eta)=K(X)=K.
 \]
 
-<1>1. Let $R\subseteq K$ be a valuation ring containing $k$.
+::: pf
+
+::: {.pf-step #s1}
+
+Let $R\subseteq K$ be a valuation ring containing $k$.
 Giving a center $x\in X$ of $R$ is equivalent to giving a $k$-morphism
 \[
 \widetilde\eta:\Spec R\longrightarrow X
@@ -63,7 +67,8 @@ is the canonical morphism
 \]
 with image $\eta$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose first that $x$ is a center.
 By definition,
 \[
@@ -99,13 +104,19 @@ The induced homomorphism
 is local because morphisms of schemes are morphisms of locally ringed spaces.
 Its restriction on the generic point is the identity on $K$, hence it identifies $\mathcal O_{X,x}$ with a subring of $R$.
 Therefore $R$ dominates $\mathcal O_{X,x}$, so $x$ is a center.
+
 :::
 
-<1>2. If $X$ is separated over $k$, every valuation of $K/k$ has at most one center on $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $X$ is separated over $k$, every valuation of $K/k$ has at most one center on $X$.
+
+::: pf-proof
+
 Let $R$ be a valuation ring of $K/k$.
-Two centers would, by <1>1, give two morphisms
+Two centers would, by step [](#s1){.pf-ref}, give two morphisms
 \[
 \Spec R\rightrightarrows X
 \]
@@ -116,11 +127,17 @@ whose restrictions to
 are both the canonical generic-point morphism.
 
 The valuative criterion for separatedness says that a separated morphism has at most one such lift.  Therefore the two morphisms, and hence their closed-point images, coincide.
+
 :::
 
-<1>3. If $X$ is proper over $k$, every valuation of $K/k$ has a unique center on $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $X$ is proper over $k$, every valuation of $K/k$ has a unique center on $X$.
+
+::: pf-proof
+
 Let $R$ be a valuation ring of $K/k$.  Consider the diagram
 \[
 \begin{array}{ccc}
@@ -133,33 +150,45 @@ The valuative criterion for properness gives a unique dotted lift
 \[
 \Spec R\longrightarrow X.
 \]
-By <1>1 this lift is exactly a unique center of $R$ on $X$.
+By step [](#s1){.pf-ref} this lift is exactly a unique center of $R$ on $X$.
+
 :::
 
-<1>4. We use the refined Noetherian valuative criterion in the converse direction.
+:::
+
+::: {.pf-step #s4}
+
+We use the refined Noetherian valuative criterion in the converse direction.
 For a finite-type morphism
 \[
 T\longrightarrow S
 \]
 with $S$ locally noetherian, separatedness and properness may be tested using only discrete valuation rings whose fraction field is the residue field of the generic point of an irreducible component of $T$, with the generic point mapping canonically to that component.
 
-::: {.proof}
+::: pf-proof
+
 This is the refined Noetherian valuative criterion; see the Stacks Project, Lemmas 32.15.2 and 32.15.3.
 
 The comparison of valuations in different fields mentioned in Hartshorne's hint is the content of the reduction to these generic-component valuation rings.  Since the present $X$ is integral, it has only one irreducible component and its generic residue field is exactly $K(X)=K$.
+
 :::
 
-<1>5. Conversely, suppose every valuation of $K/k$ has at most one center on $X$.
+:::
+
+::: {.pf-step #s5}
+
+Conversely, suppose every valuation of $K/k$ has at most one center on $X$.
 Then $X$ is separated over $k$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 \[
 R\subseteq K
 \]
 be any discrete valuation ring containing $k$ with fraction field $K$.
 By hypothesis, $R$ has at most one center on $X$.
-By <1>1, the diagram
+By step [](#s1){.pf-ref}, the diagram
 \[
 \begin{array}{ccc}
 \Spec K&\longrightarrow&X\\
@@ -169,34 +198,45 @@ By <1>1, the diagram
 \]
 has at most one lift.
 
-Thus the generic-component uniqueness condition of the refined valuative criterion <1>4 holds.  Since $X$ is of finite type over the field $k$, that criterion implies
+Thus the generic-component uniqueness condition of the refined valuative criterion step [](#s4){.pf-ref} holds.  Since $X$ is of finite type over the field $k$, that criterion implies
 \[
 X\longrightarrow\Spec k
 \]
 is separated.
+
 :::
 
-<1>6. Conversely, suppose every valuation of $K/k$ has a unique center on $X$.
+:::
+
+::: {.pf-step #s6}
+
+Conversely, suppose every valuation of $K/k$ has a unique center on $X$.
 Then $X$ is proper over $k$.
 
-::: {.proof}
+::: pf-proof
+
 For every discrete valuation ring
 \[
 R\subseteq K
 \]
-containing $k$ and having fraction field $K$, the hypothesis and <1>1 say that the generic-point valuative diagram has exactly one lift
+containing $k$ and having fraction field $K$, the hypothesis and step [](#s1){.pf-ref} say that the generic-point valuative diagram has exactly one lift
 \[
 \Spec R\longrightarrow X.
 \]
 
-The existence-and-uniqueness condition in the refined valuative criterion <1>4 therefore holds.  Since $X$ is of finite type over the noetherian scheme $\Spec k$, the criterion implies that
+The existence-and-uniqueness condition in the refined valuative criterion step [](#s4){.pf-ref} therefore holds.  Since $X$ is of finite type over the noetherian scheme $\Spec k$, the criterion implies that
 \[
 X\longrightarrow\Spec k
 \]
 is proper.
+
 :::
 
-<1>7. Parts (a)--(c) therefore give the equivalences
+:::
+
+::: {.pf-step #s7}
+
+Parts (a)--(c) therefore give the equivalences
 \[
 \boxed{
 X\text{ separated over }k
@@ -213,26 +253,38 @@ X\text{ proper over }k
 }
 \]
 
-::: {.proof}
-The forward implications are <1>2--<1>3, and the converses are <1>5--<1>6.
+::: pf-proof
+
+The forward implications are steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, and the converses are steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Assume now that $X$ is proper over an algebraically closed field $k$, and let
+:::
+
+::: pf-step
+
+Assume now that $X$ is proper over an algebraically closed field $k$, and let
 \[
 a\in\Gamma(X,\mathcal O_X).
 \]
 If $a\notin k$, then $a$ is transcendental over $k$.
 
-::: {.proof}
+::: pf-proof
+
 Because $X$ is integral, restriction to the generic point gives an injection
 \[
 \Gamma(X,\mathcal O_X)\hookrightarrow K(X)=K.
 \]
 
 If $a$ were algebraic over the algebraically closed field $k$, then $a\in k$.  Thus $a\notin k$ forces $a$ to be transcendental.
+
 :::
 
-<1>9. Under the assumption $a\notin k$, there is a valuation ring
+:::
+
+::: {.pf-step #s9}
+
+Under the assumption $a\notin k$, there is a valuation ring
 \[
 R\subseteq K
 \]
@@ -241,7 +293,8 @@ of $K/k$ such that
 a^{-1}\in\mathfrak m_R.
 \]
 
-::: {.proof}
+::: pf-proof
+
 Since $a$ is transcendental over $k$, the subfield
 \[
 k(a)\subseteq K
@@ -269,11 +322,17 @@ a^{-1}\in\mathfrak m_{A_0}
 \subseteq
 \mathfrak m_R.
 \]
+
 :::
 
-<1>10. The valuation ring from <1>9 cannot have a center on $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s10}
+
+The valuation ring from step [](#s9){.pf-ref} cannot have a center on $X$.
+
+::: pf-proof
+
 Suppose it had center $x$.
 Then
 \[
@@ -288,32 +347,44 @@ so
 a\in R.
 \]
 
-But <1>9 also gives
+But step [](#s9){.pf-ref} also gives
 \[
 a^{-1}\in\mathfrak m_R.
 \]
 Since $a\in R$ is the inverse of $a^{-1}$, the element $a^{-1}$ is a unit of $R$, contradicting membership in the maximal ideal.
+
 :::
 
-<1>11. Therefore every global regular function on $X$ lies in $k$:
+:::
+
+::: {.pf-step #s11}
+
+Therefore every global regular function on $X$ lies in $k$:
 \[
 \boxed{\Gamma(X,\mathcal O_X)=k.}
 \]
 
-::: {.proof}
-If some $a\in\Gamma(X,\mathcal O_X)$ lay outside $k$, <1>9--<1>10 would produce a valuation of $K/k$ with no center on $X$.
-This contradicts properness and part (b), proved in <1>3.
+::: pf-proof
+
+If some $a\in\Gamma(X,\mathcal O_X)$ lay outside $k$, steps [](#s9){.pf-ref} and [](#s10){.pf-ref} would produce a valuation of $K/k$ with no center on $X$.
+This contradicts properness and part (b), proved in step [](#s3){.pf-ref}.
 
 The reverse inclusion
 \[
 k\subseteq\Gamma(X,\mathcal O_X)
 \]
 is the structure map of the $k$-scheme $X$.  Hence equality holds.
+
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Steps <1>2, <1>3, <1>5--<1>7, and <1>11 prove parts (a), (b), (c), and (d), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s11){.pf-ref} prove parts (a), (b), (c), and (d), respectively.
+
+:::
+
+:::
+
 :::

@@ -34,33 +34,54 @@ Hint: For each $g \in G$, prove that the permutation $\sigma_g(h) = ghg^{-1}$ of
 :::
 
 ::: {.solution}
-<1>1. The subgroup $H$ is normal in $G$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup $H$ is normal in $G$.
+
+::: pf-proof
+
 For every $g\in G$, the conjugate $gHg^{-1}$ is again a subgroup of $G$ of order $p$.
 By uniqueness of $H$, one has
 \[
 gHg^{-1}=H.
 \]
 Thus $H\trianglelefteq G$.
+
 :::
 
-<1>2. Conjugation defines a homomorphism
+:::
+
+::: pf-step
+
+Conjugation defines a homomorphism
 \[
 \theta:G\longrightarrow \operatorname{Aut}(H),
 \qquad
 \theta(g)(h)=ghg^{-1}.
 \]
-::: {.proof}
-By <1>1, conjugation by every $g\in G$ preserves $H$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, conjugation by every $g\in G$ preserves $H$.
 Restriction of conjugation to $H$ is therefore an automorphism of $H$, and
 \[
 \theta(g_1g_2)=\theta(g_1)\theta(g_2)
 \]
 for all $g_1,g_2\in G$.
+
 :::
 
-<1>3. For every $g\in G$, the automorphism $\theta(g)$ is trivial.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+For every $g\in G$, the automorphism $\theta(g)$ is trivial.
+
+::: pf-proof
+
 Since $|H|=p$, the group $H$ is cyclic, so
 \[
 |\operatorname{Aut}(H)|=p-1.
@@ -73,11 +94,18 @@ If a prime $q$ divided $r$, then $q\mid |G|$ and therefore $q\ge p$, since $p$ i
 But $q\mid p-1$ also gives $q\le p-1<p$, a contradiction.
 Hence $r$ has no prime divisor, so $r=1$.
 Therefore $\theta(g)=\operatorname{id}_H$.
+
 :::
 
-<1>4. Hence $H\subseteq Z(G)$.
-::: {.proof}
-By <1>3, for every $g\in G$ and every $h\in H$,
+:::
+
+::: pf-step
+
+Hence $H\subseteq Z(G)$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, for every $g\in G$ and every $h\in H$,
 \[
 ghg^{-1}=h.
 \]
@@ -86,5 +114,11 @@ Thus every element of $H$ commutes with every element of $G$, so
 \[
 H\le Z(G).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

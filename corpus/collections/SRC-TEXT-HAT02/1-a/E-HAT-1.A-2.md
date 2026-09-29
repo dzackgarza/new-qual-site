@@ -36,19 +36,32 @@ Choose a vertex
 a_0\in A.
 \]
 
-<1>1. Define a map on the vertices of $X$ by
+::: pf
+
+::: pf-step
+
+Define a map on the vertices of $X$ by
 \[
 r(v)=
 \begin{cases}
 v,&v\in A,\\a_0,&v\notin A.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 This already restricts to the identity on the $0$-skeleton of $A$.
+
 :::
 
-<1>2. For every edge $e$ of $X$ not contained in $A$, extend $r$ continuously across $e$ by mapping it to a path in $A$ joining the images of its endpoints.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+For every edge $e$ of $X$ not contained in $A$, extend $r$ continuously across $e$ by mapping it to a path in $A$ joining the images of its endpoints.
+
+::: pf-proof
+
 Let the endpoints of $e$ be $v,w$.
 Since $A$ is connected, hence path connected as a graph, there is an edge path
 \[
@@ -58,25 +71,45 @@ from $r(v)$ to $r(w)$.
 Choose a characteristic parametrization of $e$ by $I$ and define $r$ on $e$ to be $\alpha_e$.
 For an edge lying in $A$, define $r$ to be the identity.
 The definitions agree at all common endpoints by construction.
+
 :::
 
-<1>3. The resulting map
+:::
+
+::: pf-step
+
+The resulting map
 \[
 r:X\to A
 \]
 is continuous.
-::: {.proof}
-Its restriction to the closure of every edge is continuous by <1>2, and its restriction to the $0$-skeleton is continuous.
+
+::: pf-proof
+
+Its restriction to the closure of every edge is continuous by step [](#s2){.pf-ref}, and its restriction to the $0$-skeleton is continuous.
 The graph has the weak CW topology, so a map out of $X$ is continuous precisely when its restrictions to the closed cells are continuous.
 Hence $r$ is continuous.
+
 :::
 
-<1>4. The map $r$ is a retraction of $X$ onto $A$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $r$ is a retraction of $X$ onto $A$.
+
+::: pf-proof
+
 On every vertex and every edge of $A$, the construction used the identity map.
 Thus
 \[
 r|_A=\operatorname{id}_A.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

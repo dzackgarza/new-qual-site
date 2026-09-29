@@ -22,15 +22,27 @@ Show that the following map is again a $\sigma\dash$additive measure on $\mcb$:
 :::
 
 ::: {.solution}
-<1>1. $\mu(\emptyset) = 0$ and $\mu$ takes values in $[0,\infty]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$\mu(\emptyset) = 0$ and $\mu$ takes values in $[0,\infty]$.
+
+::: pf-proof
+
 Each $\mu_n(\emptyset) = 0$, and a series of terms in $[0,\infty]$ has a sum in $[0,\infty]$.
+
 :::
 
-<1>2. For pairwise disjoint $E_1, E_2, \ldots \in \mcb$, $\mu\qty{\bigcup_{k\geq1} E_k} = \sum_{k\geq1}\mu(E_k)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For pairwise disjoint $E_1, E_2, \ldots \in \mcb$, $\mu\qty{\bigcup_{k\geq1} E_k} = \sum_{k\geq1}\mu(E_k)$.
+
+::: pf-proof
+
 By $\sigma$-additivity of each $\mu_n$,
 $$
 \mu\qty{\bigcup_{k\geq 1} E_k}
@@ -40,11 +52,17 @@ $$
 = \sum_{k\geq 1} \mu(E_k).
 $$
 The third equality exchanges two sums of nonnegative terms, which is Tonelli's theorem for counting measure on $\NN \times \NN$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 are the axioms of a measure.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the axioms of a measure.
+
+:::
+
+:::
+
 :::

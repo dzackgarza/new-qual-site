@@ -38,9 +38,14 @@ $$
 R(z)\coloneqq\frac{1}{(z-2)(1+2z)^2(1-3z)^3}.
 $$
 
-<1>1. The poles of $R$ inside $C$ are $-1/2$ and $1/3$, while the only pole outside $C$ is $2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The poles of $R$ inside $C$ are $-1/2$ and $1/3$, while the only pole outside $C$ is $2$.
+
+::: pf-proof
+
 The denominator vanishes only at
 $$
 z=2,
@@ -50,11 +55,17 @@ z=-\frac12,
 z=\frac13.
 $$
 The latter two points have modulus less than $1$, while $\abs{2}>1$.
+
 :::
 
-<1>2. The sum of the residues of $R$ at all three finite poles is $0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The sum of the residues of $R$ at all three finite poles is $0$.
+
+::: pf-proof
+
 As $z\to\infty$,
 $$
 R(z)=O(z^{-6}).
@@ -70,14 +81,20 @@ $$
 2\pi i\sum_{p\in\{2,-1/2,1/3\}}\operatorname{Res}(R;p).
 $$
 The residue sum is independent of $T$, so letting $T\to\infty$ shows that it is $0$.
+
 :::
 
-<1>3. The residue at the exterior pole $z=2$ is
+:::
+
+::: {.pf-step #s3}
+
+The residue at the exterior pole $z=2$ is
 $$
 \operatorname{Res}(R;2)=-\frac1{3125}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The pole at $2$ is simple, so
 $$
 \begin{aligned}
@@ -87,15 +104,21 @@ $$
 &=-\frac1{3125}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The sum of the residues inside the unit circle is
+:::
+
+::: {.pf-step #s4}
+
+The sum of the residues inside the unit circle is
 $$
 \frac1{3125}.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3,
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \operatorname{Res}(R;-1/2)+\operatorname{Res}(R;1/3)
 =
@@ -103,26 +126,38 @@ $$
 =
 \frac1{3125}.
 $$
+
 :::
 
-<1>5. The requested integral is
+:::
+
+::: {.pf-step #s5}
+
+The requested integral is
 $$
 \boxed{\frac1{3125}}.
 $$
 
-::: {.proof}
-By step <1>1, the residue theorem on $C$ gives
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the residue theorem on $C$ gives
 $$
 \frac1{2\pi i}\int_C R(z)\,dz
 =
 \operatorname{Res}(R;-1/2)+\operatorname{Res}(R;1/3).
 $$
-Step <1>4 evaluates the right-hand side.
+Step [](#s4){.pf-ref} evaluates the right-hand side.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the required value.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the required value.
+
+:::
+
+:::
+
 :::

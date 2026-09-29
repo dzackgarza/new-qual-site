@@ -39,9 +39,14 @@ If $P=Y_1\cap Y_2$, imitate (Ex. 4.3) to show that $H^3(X-P,\mco_X)\ne0$.
 Put $A=k[x_1,x_2,x_3,x_4]$, let $P=V(x_1,x_2,x_3,x_4)$ be the origin, and write $U=X\setminus(Y_1\cup Y_2)$ and $W=X\setminus\{P\}$.
 Whenever the structure sheaf of $X$ appears on an open subset, its restriction to that open is understood.
 
-<1>1. The group $H^3(W,\OO_W)$ is nonzero.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The group $H^3(W,\OO_W)$ is nonzero.
+
+::: pf-proof
+
 Cover $W$ by the four principal affine opens $D(x_i)$.
 All their intersections are affine, so this cover computes cohomology by its Čech complex [@Har10a, Theorem III.4.5].
 Its term in degree three is $A_{x_1x_2x_3x_4}$, and the image of the preceding differential is the sum of the four subrings in which only three of the variables have been inverted.
@@ -55,11 +60,17 @@ Every Laurent monomial with at least one nonnegative exponent belongs to the den
 Uniqueness of Laurent coefficients therefore identifies the quotient with the direct sum of the one-dimensional spaces spanned by monomials having all four exponents negative.
 In particular the class of $1/(x_1x_2x_3x_4)$ is nonzero.
 This is the four-variable version of the calculation in [[P-AGH343PUNCTUREDPLANE]].
+
 :::
 
-<1>2. One has $H_{Y_a}^3(X,\OO_X)=H_{Y_a}^4(X,\OO_X)=0$ for $a=1,2$, while $H_P^4(X,\OO_X)\ne0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+One has $H_{Y_a}^3(X,\OO_X)=H_{Y_a}^4(X,\OO_X)=0$ for $a=1,2$, while $H_P^4(X,\OO_X)\ne0$.
+
+::: pf-proof
+
 For every closed subset $T\subseteq X$, the supported-cohomology exact sequence of [[P-AGH323SUPPORTS]], part (e), and affine vanishing give isomorphisms
 $$
 H^i(X\setminus T,\OO_X)\cong H_T^{i+1}(X,\OO_X)\qquad(i\ge1).
@@ -69,12 +80,18 @@ Indeed, the adjacent terms $H^i(X,\OO_X)$ and $H^{i+1}(X,\OO_X)$ are both zero.
 The complement of $Y_1$ is $D(x_1)\cup D(x_2)$ and that of $Y_2$ is $D(x_3)\cup D(x_4)$.
 Each is a separated scheme with a two-affine cover, so its structure-sheaf cohomology vanishes in degrees at least two, by [[P-AGH348COHDIM]], part (c).
 The preceding isomorphisms give the two vanishings for each $Y_a$.
-For $T=P$ and $i=3$, the same isomorphism and step <1>1 give $H_P^4(X,\OO_X)\ne0$.
+For $T=P$ and $i=3$, the same isomorphism and step [](#s1){.pf-ref} give $H_P^4(X,\OO_X)\ne0$.
+
 :::
 
-<1>3. The complement of the two planes has $H^2(U,\OO_U)\ne0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The complement of the two planes has $H^2(U,\OO_U)\ne0$.
+
+::: pf-proof
+
 The supported Mayer--Vietoris sequence of [[P-AGH324MAYERVIETORIS]] for $Y_1,Y_2$, whose intersection is $P$, contains
 $$
 H_{Y_1}^3(X,\OO_X)\oplus H_{Y_2}^3(X,\OO_X)
@@ -82,33 +99,45 @@ H_{Y_1}^3(X,\OO_X)\oplus H_{Y_2}^3(X,\OO_X)
 \longrightarrow H_P^4(X,\OO_X)
 \longrightarrow H_{Y_1}^4(X,\OO_X)\oplus H_{Y_2}^4(X,\OO_X).
 $$
-The first and last terms vanish by step <1>2.
+The first and last terms vanish by step [](#s2){.pf-ref}.
 Thus its middle arrow is an isomorphism.
-The open-support comparison in step <1>2, with $T=Y$, now gives
+The open-support comparison in step [](#s2){.pf-ref}, with $T=Y$, now gives
 $$
 H^2(U,\OO_U)\cong H_Y^3(X,\OO_X)
 \cong H_P^4(X,\OO_X)\cong H^3(W,\OO_W)\ne0.
 $$
+
 :::
 
-<1>4. Neither $Y\subseteq\AA_k^4$ nor its projective closure in $\PP_k^4$ is a set-theoretic complete intersection.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Neither $Y\subseteq\AA_k^4$ nor its projective closure in $\PP_k^4$ is a set-theoretic complete intersection.
+
+::: pf-proof
+
 Both planes have dimension two, so their union has codimension two in $X$.
 If it were a set-theoretic complete intersection, there would be polynomials $f,g\in A$ with $Y=V(f,g)$ as closed subsets.
 Then $U=D(f)\cup D(g)$ would have a two-affine cover.
-The Čech bound in step <1>2 would force $H^2(U,\OO_U)=0$, contradicting step <1>3.
+The Čech bound in step [](#s2){.pf-ref} would force $H^2(U,\OO_U)=0$, contradicting step [](#s3){.pf-ref}.
 This proves the affine assertion.
 
 The projective closure is the union of the two projective planes obtained by closing $Y_1$ and $Y_2$; its dimension remains two, so its codimension in $\PP_k^4$ is also two.
 If two projective hypersurfaces cut out this closure set-theoretically, restricting their equations to the affine chart $\AA_k^4$ would cut out $Y$ by two polynomials.
 The intersection of the closure with this chart is exactly $Y$, since $Y$ is already closed in the chart.
 This contradicts the affine assertion and proves the projective one.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove the cohomological obstruction indicated by the hints, and step <1>4 gives both set-theoretic complete-intersection conclusions.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the cohomological obstruction indicated by the hints, and step [](#s4){.pf-ref} gives both set-theoretic complete-intersection conclusions.
+
+:::
+
+:::
+
 :::

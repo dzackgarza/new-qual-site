@@ -32,8 +32,15 @@ $$
 Prove that $f$ is Borel measurable.
 :::
 ::: {.solution}
-<1>1. Show that every strict sublevel set is open.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that every strict sublevel set is open.
+
+::: pf-proof
+
 Fix $a\in\mathbb R$ and suppose $f(x)<a$. By hypothesis,
 \[
 \limsup_{y\to x}f(y)\le f(x)<a.
@@ -51,10 +58,17 @@ Thus
 \{f<a\}
 \]
 is open for every $a$.
+
 :::
 
-<1>2. Deduce Borel measurability.
-::: {.proof}
+:::
+
+::: pf-step
+
+Deduce Borel measurability.
+
+::: pf-proof
+
 Since each set $\{f<a\}$ is open, each set
 \[
 \{f\ge a\}=\mathbb R\setminus\{f<a\}
@@ -71,5 +85,11 @@ The rays $(a,\infty)$ generate the Borel sigma-algebra of $\mathbb R$, so the me
 f^{-1}((a,\infty))=\{f>a\}
 \]
 proves that $f$ is Borel measurable.
+
 :::
+
+:::
+
+:::
+
 :::

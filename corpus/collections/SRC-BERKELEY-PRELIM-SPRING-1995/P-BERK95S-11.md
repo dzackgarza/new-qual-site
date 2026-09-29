@@ -37,14 +37,19 @@ whose restriction to $S$ is $\varphi$.
 ::: {.solution}
 Write $\langle\cdot,\cdot\rangle$ for the Euclidean inner product.
 
-<1>1. For all $s,t\in S$,
+::: pf
+
+::: {.pf-step #s1}
+
+For all $s,t\in S$,
 $$
 \langle\varphi(s),\varphi(t)\rangle
 =
 \langle s,t\rangle.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $\varphi(0)=0$ and distances are preserved,
 $$
 \norm{\varphi(s)}
@@ -59,19 +64,25 @@ $$
 $$
 and the preservation of the distance between $s$ and $t$ gives the
 claim.
+
 :::
 
-<1>2. Every linear relation among elements of $S$ is carried to the
+:::
+
+::: {.pf-step #s2}
+
+Every linear relation among elements of $S$ is carried to the
 same linear relation among their images.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 \sum_{j=1}^r a_js_j=0,
 \qquad
 s_j\in S.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \norm{\sum_{j=1}^r a_j\varphi(s_j)}^2
@@ -92,15 +103,21 @@ Hence
 $$
 \sum_{j=1}^r a_j\varphi(s_j)=0.
 $$
+
 :::
 
-<1>3. There is a well-defined linear map
+:::
+
+::: {.pf-step #s3}
+
+There is a well-defined linear map
 $$
 T:\operatorname{span}(S)\longrightarrow\RR^n
 $$
 such that $T(s)=\varphi(s)$ for every $s\in S$.
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 v=\sum_{j=1}^r a_js_j
@@ -109,17 +126,23 @@ define
 $$
 T(v)\coloneqq\sum_{j=1}^r a_j\varphi(s_j).
 $$
-Step <1>2 shows that two representations of $v$ give the same value,
+Step [](#s2){.pf-ref} shows that two representations of $v$ give the same value,
 so $T$ is well-defined. Its linearity is immediate from the
 definition.
+
 :::
 
-<1>4. The map $T$ extends to a linear map
+:::
+
+::: {.pf-step #s4}
+
+The map $T$ extends to a linear map
 $$
 F:\RR^n\longrightarrow\RR^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a complementary subspace
 $$
 \RR^n=\operatorname{span}(S)\oplus U.
@@ -131,15 +154,21 @@ F(v+u)\coloneqq T(v)
 (v\in\operatorname{span}(S),\ u\in U).
 $$
 The direct-sum decomposition makes this well-defined and linear. By
-step <1>3, for every $s\in S$,
+step [](#s3){.pf-ref}, for every $s\in S$,
 $$
 F(s)=T(s)=\varphi(s).
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 provides the required linear extension.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} provides the required linear extension.
+
+:::
+
+:::
+
 :::

@@ -34,7 +34,12 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. For $\theta\notin\pi\ZZ$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $\theta\notin\pi\ZZ$,
 $$
 \frac{\sin(n\theta)}{\sin\theta}
 =
@@ -42,7 +47,8 @@ $$
 e^{i(2j-n+1)\theta}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using the exponential formula for sine,
 $$
 \begin{aligned}
@@ -63,9 +69,14 @@ $$
 The singularities of the original quotient at integer multiples of $\pi$
 are removable, so this identity determines the same integral over
 $[-\pi,\pi]$.
+
 :::
 
-<1>2. For every integer $k$,
+:::
+
+::: {.pf-step #s2}
+
+For every integer $k$,
 $$
 \int_{-\pi}^{\pi}e^{ik\theta}\,d\theta
 =
@@ -75,7 +86,8 @@ $$
 \end{cases}
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $k=0$ the integrand is $1$. For $k\neq0$,
 $$
 \int_{-\pi}^{\pi}e^{ik\theta}\,d\theta
@@ -88,16 +100,22 @@ $$
 =0,
 $$
 because $k$ is an integer.
+
 :::
 
-<1>3. The exponent
+:::
+
+::: {.pf-step #s3}
+
+The exponent
 $$
 2j-n+1
 $$
 vanishes for an integer $j$ with $0\leq j\leq n-1$ if and only if $n$ is
 odd.
 
-::: {.proof}
+::: pf-proof
+
 The equation
 $$
 2j-n+1=0
@@ -107,9 +125,14 @@ $$
 j=\frac{n-1}{2}.
 $$
 This is an integer exactly when $n$ is odd.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \boxed{
 \int_{-\pi}^{\pi}
@@ -122,16 +145,23 @@ $$
 }
 $$
 
-::: {.proof}
-Integrate the finite sum in step <1>1 term by term. By step <1>2, every
-nonzero Fourier mode contributes $0$. By step <1>3, exactly one zero mode is
+::: pf-proof
+
+Integrate the finite sum in step [](#s1){.pf-ref} term by term. By step [](#s2){.pf-ref}, every
+nonzero Fourier mode contributes $0$. By step [](#s3){.pf-ref}, exactly one zero mode is
 present when $n$ is odd and none is present when $n$ is even. The zero mode
 contributes $2\pi$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value for every positive integer $n$.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value for every positive integer $n$.
+
+:::
+
+:::
+
 :::

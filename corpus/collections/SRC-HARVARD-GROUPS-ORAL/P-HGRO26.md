@@ -31,12 +31,18 @@ Exactly one.
 
 Write $G=\langle g\rangle$ with $|G|=n$, and suppose $r\mid n$.
 
-<1>1. The subgroup
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup
 \[
 H=\left\langle g^{n/r}\right\rangle
 \]
 has order $r$.
-::: {.proof}
+
+::: pf-proof
+
 In a cyclic group of order $n$,
 \[
 |g^d|=\frac{n}{\gcd(n,d)}.
@@ -45,10 +51,17 @@ For $d=n/r$, this gives
 \[
 \left|g^{n/r}\right|=\frac{n}{n/r}=r.
 \]
+
 :::
 
-<1>2. Every subgroup of order $r$ equals $H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every subgroup of order $r$ equals $H$.
+
+::: pf-proof
+
 Every subgroup of a cyclic group is cyclic. Let $K\le G$ have order $r$.
 Then $K=\langle g^d\rangle$ for some divisor $d$ of $n$, and
 \[
@@ -58,11 +71,24 @@ Hence $d=n/r$, so
 \[
 K=\left\langle g^{n/r}\right\rangle=H.
 \]
+
 :::
 
-<1>3. Therefore a finite cyclic group has exactly one subgroup of each order
-dividing its order.
-::: {.proof}
-Existence is <1>1 and uniqueness is <1>2.
 :::
+
+::: pf-step
+
+Therefore a finite cyclic group has exactly one subgroup of each order
+dividing its order.
+
+::: pf-proof
+
+Existence is step [](#s1){.pf-ref} and uniqueness is step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -23,7 +23,12 @@ Prove that every eigenvalue of $A+B$ lies in
 :::
 
 ::: {.solution}
-<1>1. For every $v\in\RR^n$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $v\in\RR^n$,
 $$
 a_1\lVert v\rVert^2
 \leq
@@ -32,7 +37,8 @@ v^{\mathsf T}Av
 a_2\lVert v\rVert^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the spectral theorem, there is an orthonormal basis $u_1,\ldots,u_n$ of eigenvectors of $A$, with corresponding eigenvalues $\lambda_i\in[a_1,a_2]$. Write
 $$
 v=\sum_{i=1}^n c_i u_i.
@@ -48,9 +54,14 @@ v^{\mathsf T}Av
 \sum_{i=1}^n c_i^2.
 $$
 Bounding each $\lambda_i$ between $a_1$ and $a_2$ gives the claimed inequalities.
+
 :::
 
-<1>2. For every $v\in\RR^n$,
+:::
+
+::: {.pf-step #s2}
+
+For every $v\in\RR^n$,
 $$
 b_1\lVert v\rVert^2
 \leq
@@ -59,11 +70,17 @@ v^{\mathsf T}Bv
 b_2\lVert v\rVert^2.
 $$
 
-::: {.proof}
-Apply the argument of step <1>1 to the real symmetric matrix $B$ and its eigenvalues in $[b_1,b_2]$.
+::: pf-proof
+
+Apply the argument of step [](#s1){.pf-ref} to the real symmetric matrix $B$ and its eigenvalues in $[b_1,b_2]$.
+
 :::
 
-<1>3. For every $v\in\RR^n$,
+:::
+
+::: {.pf-step #s3}
+
+For every $v\in\RR^n$,
 $$
 (a_1+b_1)\lVert v\rVert^2
 \leq
@@ -72,21 +89,28 @@ v^{\mathsf T}(A+B)v
 (a_2+b_2)\lVert v\rVert^2.
 $$
 
-::: {.proof}
-Add the lower bounds in steps <1>1 and <1>2, and separately add their upper bounds, using
+::: pf-proof
+
+Add the lower bounds in steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, and separately add their upper bounds, using
 $$
 v^{\mathsf T}(A+B)v
 =
 v^{\mathsf T}Av+v^{\mathsf T}Bv.
 $$
+
 :::
 
-<1>4. Every eigenvalue $\lambda$ of $A+B$ lies in
+:::
+
+::: {.pf-step #s4}
+
+Every eigenvalue $\lambda$ of $A+B$ lies in
 $$
 \boxed{[a_1+b_1,a_2+b_2]}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A+B$ is real symmetric, so let $v\neq0$ be an eigenvector with
 $$
 (A+B)v=\lambda v.
@@ -97,7 +121,7 @@ v^{\mathsf T}(A+B)v
 =
 \lambda\lVert v\rVert^2.
 $$
-Substituting this into step <1>3 and dividing by the positive number $\lVert v\rVert^2$ gives
+Substituting this into step [](#s3){.pf-ref} and dividing by the positive number $\lVert v\rVert^2$ gives
 $$
 a_1+b_1
 \leq
@@ -105,11 +129,17 @@ a_1+b_1
 \leq
 a_2+b_2.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required spectral inclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required spectral inclusion.
+
+:::
+
+:::
+
 :::

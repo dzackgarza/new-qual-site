@@ -31,21 +31,33 @@ Prove that $H$ is normal.
 :::
 
 ::: {.solution}
-<1>1. The action on left cosets gives a homomorphism
+
+::: pf
+
+::: pf-step
+
+The action on left cosets gives a homomorphism
 $\rho:G\to S_p$ whose kernel $K$ is contained in $H$.
 
-::: {.proof}
+::: pf-proof
+
 There are exactly $p$ left cosets of $H$. Left multiplication
 $g\cdot(xH)=(gx)H$ is well defined and permutes these cosets.
 Composition agrees with multiplication in $G$, giving $\rho$.
 The action is transitive, since $yx^{-1}$ sends $xH$ to $yH$.
 Any element of the kernel fixes the coset $H$, hence belongs to
 its stabilizer, which is exactly $H$. Thus $K\subseteq H$.
+
 :::
 
-<1>2. The image of $\rho$ has order exactly $p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The image of $\rho$ has order exactly $p$.
+
+::: pf-proof
+
 Let $m=|\rho(G)|$. The first isomorphism theorem and Lagrange's
 theorem give $m\mid |G|$ and $m\mid p!$ [@DF04].
 Every prime dividing $m$ must therefore be at least $p$, by
@@ -53,11 +65,17 @@ minimality of $p$, and at most $p$, since it divides $p!$.
 Thus $p$ is its only possible prime divisor. The exponent of
 $p$ in $p!$ is one, so $m=1$ or $m=p$.
 Transitivity and orbit-stabilizer give $p\mid m$, hence $m=p$.
+
 :::
 
-<1>3. The subgroup $H$ equals $K$ and is normal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subgroup $H$ equals $K$ and is normal.
+
+::: pf-proof
+
 The index of $K$ is $[G:K]=|\rho(G)|=p$. Since $K\subseteq H$,
 index multiplication gives
 $$
@@ -65,5 +83,11 @@ p=[G:K]=[G:H][H:K]=p[H:K].
 $$
 Therefore $[H:K]=1$ and $H=K$. A homomorphism kernel is normal,
 so $H\lhd G$.
+
 :::
+
+:::
+
+:::
+
 :::

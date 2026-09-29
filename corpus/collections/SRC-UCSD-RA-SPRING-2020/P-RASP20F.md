@@ -37,10 +37,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Prove that (1) implies (2).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that (1) implies (2).
+
+::: pf-proof
+
 Assume there is a signed Radon measure \(\mu\) on \([0,1]\) with
 \[
 \int_0^1 t^n\,d\mu(t)=c_n.
@@ -64,10 +70,17 @@ Thus (2) holds with
 \[
 M=|\mu|([0,1]).
 \]
+
 :::
 
-<1>2. Define a bounded linear functional on polynomials from (2).
-::: {.proof}
+:::
+
+::: pf-step
+
+Define a bounded linear functional on polynomials from (2).
+
+::: pf-proof
+
 Assume (2). For a polynomial
 \[
 p(t)=\sum_{n=0}^N a_nt^n,
@@ -81,10 +94,17 @@ The monomial representation of a polynomial is unique, so \(L\) is well defined 
 |L(p)|\le M\|p\|_\infty.
 \]
 Hence \(L\) is bounded on the polynomial subspace of \(C([0,1])\).
+
 :::
 
-<1>3. Extend the functional and represent it by a signed Radon measure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extend the functional and represent it by a signed Radon measure.
+
+::: pf-proof
+
 By the Weierstrass approximation theorem, polynomials are uniformly dense in \(C([0,1])\). Since \(L\) is bounded in the uniform norm, it extends uniquely by continuity to a bounded linear functional
 \[
 \widetilde L:C([0,1])\to\mathbb R.
@@ -104,5 +124,11 @@ Applying this to \(f(t)=t^n\) gives
 for every \(n\ge0\). Thus (1) holds.
 
 Therefore conditions (1) and (2) are equivalent.
+
 :::
+
+:::
+
+:::
+
 :::

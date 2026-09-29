@@ -37,8 +37,15 @@ A sequence $(f_n)_n \subset L^1(\Omega, \mu)$ is equi-integrable if:
 :::
 
 ::: {.solution}
-<1>1. Transfer the equi-integrability bounds to the a.e. limit.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Transfer the equi-integrability bounds to the a.e. limit.
+
+::: pf-proof
+
 Assume $(f_n)$ is equi-integrable and $f_n\to f$ almost everywhere.
 
 Fix $\varepsilon>0$. By condition (a), choose $\delta>0$ such that
@@ -65,10 +72,17 @@ Fatou again gives
 \int_{\Omega\setminus A}|f|\,d\mu\le\varepsilon.
 \]
 Thus the same small-set and tail estimates hold for $f$.
+
 :::
 
-<1>2. Show that $f\in L^1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $f\in L^1$.
+
+::: pf-proof
+
 Keep the finite-measure set $A$ from Step 1. By Egorov's theorem, there is a measurable set $E\subset A$ with
 \[
 \mu(E)<\delta
@@ -90,10 +104,17 @@ Also Step 1 gives
 \int_{\Omega\setminus A}|f|\,d\mu\le\varepsilon.
 \]
 Hence $f\in L^1(\Omega,\mu)$.
+
 :::
 
-<1>3. Prove strong $L^1$ convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove strong $L^1$ convergence.
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Apply conditions (a) and (b) with bounds small enough that each occurrence below is at most $\varepsilon$; choose $A$ of finite measure and then, by Egorov, choose $E\subset A$ with $\mu(E)<\delta$ such that $f_n\to f$ uniformly on $A\setminus E$.
 
 By Step 1,
@@ -121,10 +142,17 @@ Since $\varepsilon$ is arbitrary,
 \[
 \boxed{\|f_n-f\|_1\to0.}
 \]
+
 :::
 
-<1>4. Strong $L^1$ convergence implies condition (a).
-::: {.proof}
+:::
+
+::: pf-step
+
+Strong $L^1$ convergence implies condition (a).
+
+::: pf-proof
+
 Suppose $f_n\to f$ in $L^1$. Fix $\varepsilon>0$. Choose $N$ such that
 \[
 \|f_n-f\|_1<\frac\varepsilon2
@@ -150,5 +178,11 @@ Thus for every measurable $E$ with $\mu(E)<\delta$,
 \sup_n\int_E|f_n|\,d\mu<\varepsilon.
 \]
 This is condition (a).
+
 :::
+
+:::
+
+:::
+
 :::

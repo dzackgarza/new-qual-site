@@ -37,9 +37,14 @@ $$
 p(t)=t^5+t^3+t-3.
 $$
 
-<1>1. The polynomial $p$ has exactly one real zero, namely $1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The polynomial $p$ has exactly one real zero, namely $1$.
+
+::: pf-proof
+
 For every $t\in\RR$,
 $$
 p'(t)=5t^4+3t^2+1>0.
@@ -49,14 +54,20 @@ $$
 p(1)=1+1+1-3=0,
 $$
 the unique real zero of $p$ is $1$.
+
 :::
 
-<1>2. Every eigenvalue $\lambda$ of $A$ is real and satisfies
+:::
+
+::: {.pf-step #s2}
+
+Every eigenvalue $\lambda$ of $A$ is real and satisfies
 $$
 p(\lambda)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $A$ is Hermitian, the spectral theorem implies that all of
 its eigenvalues are real. If $Av=\lambda v$ with $v\neq0$, then
 the matrix equation gives
@@ -70,36 +81,54 @@ $$
 p(\lambda)v.
 $$
 Since $v\neq0$, one has $p(\lambda)=0$.
+
 :::
 
-<1>3. Every eigenvalue of $A$ is equal to $1$.
+:::
 
-::: {.proof}
-By step <1>2, every eigenvalue is a real zero of $p$. Step <1>1
+::: {.pf-step #s3}
+
+Every eigenvalue of $A$ is equal to $1$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, every eigenvalue is a real zero of $p$. Step [](#s1){.pf-ref}
 shows that the only such zero is $1$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \boxed{A=I}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the spectral theorem there is a unitary matrix $U$ and a real
 diagonal matrix $D$ such that
 $$
 A=UDU^*.
 $$
-Step <1>3 shows that every diagonal entry of $D$ is $1$, so $D=I$.
+Step [](#s3){.pf-ref} shows that every diagonal entry of $D$ is $1$, so $D=I$.
 Hence
 $$
 A=UIU^*=I.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

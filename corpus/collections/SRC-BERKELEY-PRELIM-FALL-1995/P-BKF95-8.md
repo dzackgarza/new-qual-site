@@ -33,7 +33,12 @@ Prove that $A$ is invertible.
 :::
 
 ::: {.solution}
-<1>1. Suppose
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose
 $$
 Ax=0
 $$
@@ -52,13 +57,19 @@ $$
 \abs{x_i}>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $x\neq0$, at least one coordinate is nonzero. A finite set of
 nonnegative real numbers has a maximum, so such an index $i$ exists, and
 its maximal modulus is positive.
+
 :::
 
-<1>2. The $i$th row equation implies
+:::
+
+::: {.pf-step #s2}
+
+The $i$th row equation implies
 $$
 \abs{a_{ii}}\abs{x_i}
 \leq
@@ -68,7 +79,8 @@ $$
 \abs{x_i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The equation $Ax=0$ gives
 $$
 a_{ii}x_i
@@ -82,51 +94,75 @@ $$
 \sum_{j\neq i}
 \abs{a_{ij}}\abs{x_j}.
 $$
-By the choice of $i$ in step <1>1,
+By the choice of $i$ in step [](#s1){.pf-ref},
 $$
 \abs{x_j}\leq\abs{x_i}
 $$
 for every $j$. Substitution gives the displayed bound.
+
 :::
 
-<1>3. The assumption $x\neq0$ is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The assumption $x\neq0$ is impossible.
+
+::: pf-proof
+
 Strict diagonal dominance gives
 $$
 \sum_{j\neq i}\abs{a_{ij}}
 <
 \abs{a_{ii}}.
 $$
-Since $\abs{x_i}>0$, step <1>2 therefore yields
+Since $\abs{x_i}>0$, step [](#s2){.pf-ref} therefore yields
 $$
 \abs{a_{ii}}\abs{x_i}
 <
 \abs{a_{ii}}\abs{x_i},
 $$
 a contradiction.
+
 :::
 
-<1>4. The kernel of $A$ is trivial.
-
-::: {.proof}
-Step <1>3 shows that no nonzero vector can satisfy $Ax=0$.
 :::
 
-<1>5. The matrix $A$ is invertible.
+::: {.pf-step #s4}
 
-::: {.proof}
-By step <1>4, the linear map
+The kernel of $A$ is trivial.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that no nonzero vector can satisfy $Ax=0$.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+The matrix $A$ is invertible.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, the linear map
 $$
 A:\CC^n\longrightarrow\CC^n
 $$
 is injective. Since domain and codomain have the same finite dimension, it
 is bijective, hence $A$ is invertible.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

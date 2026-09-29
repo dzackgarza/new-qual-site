@@ -38,8 +38,14 @@ $1\le k\le n-1$, and also by the transpositions $(1\ j)$, $2\le j\le n$, it
 suffices to show that the first pair generates every adjacent transposition and
 the second pair generates every $(1\ j)$.
 
-<1>1. The permutations $(12)$ and $\sigma$ generate $S_n$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The permutations $(12)$ and $\sigma$ generate $S_n$.
+
+::: pf-proof
+
 For $0\le k\le n-2$, conjugation gives
 \[
 \sigma^k(12)\sigma^{-k}=(k+1\ k+2).
@@ -52,10 +58,17 @@ Every permutation is a product of adjacent transpositions, so
 \[
 \langle(12),\sigma\rangle=S_n.
 \]
+
 :::
 
-<1>2. The permutations $(12)$ and $\tau$ generate $S_n$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The permutations $(12)$ and $\tau$ generate $S_n$.
+
+::: pf-proof
+
 For $0\le k\le n-2$,
 \[
 \tau^k(12)\tau^{-k}=(1\ \tau^k(2)).
@@ -74,5 +87,11 @@ Therefore
 \[
 \langle(12),\tau\rangle=S_n.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

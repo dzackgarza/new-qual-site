@@ -47,7 +47,11 @@ $$
 $$
 Proposition V.2.6 also shows that $\mathcal N_\sigma$ is an invertible sheaf.
 
-<1>1. For two sections $\sigma',\sigma''$, their images are disjoint if and
+::: pf
+
+::: {.pf-step #s1}
+
+For two sections $\sigma',\sigma''$, their images are disjoint if and
 only if
 $$
 (\mathcal N_{\sigma'})_c\ne(\mathcal N_{\sigma''})_c
@@ -55,7 +59,8 @@ $$
 $$
 for every $c\in C$.
 
-::: {.proof}
+::: pf-proof
+
 Both sections lie over the identity of $C$.  Hence their images meet if and
 only if there is a point $c\in C$ for which
 $$
@@ -70,12 +75,18 @@ exactly when they have the same one-dimensional kernel.  Since the quotient
 sequences of Proposition V.2.6 remain exact on fibres, those kernels are
 $(\mathcal N_{\sigma'})_c$ and $(\mathcal N_{\sigma''})_c$.  This proves the
 claim.
+
 :::
 
-<1>2. If $\mathcal E$ is decomposable, then $\PP(\mathcal E)$ has two
+:::
+
+::: {.pf-step #s2}
+
+If $\mathcal E$ is decomposable, then $\PP(\mathcal E)$ has two
 disjoint sections.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 \mathcal E\cong\mathcal L'\oplus\mathcal L''
@@ -92,10 +103,15 @@ the two distinct direct-summand lines of
 $$
 \mathcal E_c=\mathcal L'_c\oplus\mathcal L''_c.
 $$
-Step <1>1 therefore shows that the two sections are disjoint.
+Step [](#s1){.pf-ref} therefore shows that the two sections are disjoint.
+
 :::
 
-<1>3. If $\PP(\mathcal E)$ has two disjoint sections, then
+:::
+
+::: {.pf-step #s3}
+
+If $\PP(\mathcal E)$ has two disjoint sections, then
 $$
 \boxed{
 \mathcal E\cong
@@ -103,7 +119,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $\sigma',\sigma''$ be disjoint sections and consider the natural map of
 rank-two locally free sheaves
 $$
@@ -114,7 +131,7 @@ $$
 $$
 induced by the two kernel inclusions.
 
-For each $c\in C$, step <1>1 says that the one-dimensional subspaces
+For each $c\in C$, step [](#s1){.pf-ref} says that the one-dimensional subspaces
 $$
 (\mathcal N_{\sigma'})_c,
 \qquad
@@ -133,11 +150,17 @@ The determinant $\det\theta$ is consequently a nowhere-vanishing morphism
 between line bundles.  Hence $\det\theta$ is an isomorphism, and therefore
 $\theta$ itself is an isomorphism.  Thus $\mathcal E$ is a direct sum of two
 invertible sheaves.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves the forward implication, and step <1>3 proves the converse.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the forward implication, and step [](#s3){.pf-ref} proves the converse.
+
+:::
+
+:::
+
 :::

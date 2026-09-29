@@ -40,14 +40,19 @@ $$
 P(z)=\prod_{j=1}^k(z-z_j)^{n_j}.
 $$
 
-<1>1. There is a holomorphic function $g$, nonvanishing on a
+::: pf
+
+::: {.pf-step #s1}
+
+There is a holomorphic function $g$, nonvanishing on a
 neighborhood of $\overline\Omega$, such that
 $$
 f(z)=g(z)P(z)
 $$
 there.
 
-::: {.proof}
+::: pf-proof
+
 The quotient $f/P$ is holomorphic away from the points $z_j$. Since
 $n_j$ is exactly the order of the zero of $f$ at $z_j$, each apparent
 singularity is removable and the quotient extends holomorphically
@@ -58,9 +63,14 @@ and $f$ is nonzero on $\gamma$, so $g$ has no zeros on
 $\overline\Omega$. By compactness, after shrinking the ambient
 neighborhood if necessary, $g$ is nonvanishing on a neighborhood of
 $\overline\Omega$.
+
 :::
 
-<1>2. Part 1 gives
+:::
+
+::: {.pf-step #s2}
+
+Part 1 gives
 $$
 \boxed{
 \frac1{2\pi i}
@@ -70,8 +80,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>1, away from the zeros of $f$,
+::: pf-proof
+
+By step [](#s1){.pf-ref}, away from the zeros of $f$,
 $$
 \frac{f'(z)}{f(z)}
 =
@@ -94,9 +105,14 @@ $$
 $$
 Integrating the logarithmic-derivative identity therefore yields the
 displayed formula.
+
 :::
 
-<1>3. More generally,
+:::
+
+::: {.pf-step #s3}
+
+More generally,
 $$
 \frac1{2\pi i}
 \int_\gamma
@@ -105,8 +121,9 @@ z\frac{f'(z)}{f(z)}\,dz
 \sum_{j=1}^k n_jz_j.
 $$
 
-::: {.proof}
-Differentiating the factorization from step <1>1 and multiplying the
+::: pf-proof
+
+Differentiating the factorization from step [](#s1){.pf-ref} and multiplying the
 resulting logarithmic-derivative identity by $z$ gives
 $$
 z\frac{f'(z)}{f(z)}
@@ -125,9 +142,14 @@ $$
 z_j.
 $$
 Summing over $j$ proves the formula.
+
 :::
 
-<1>4. Under the hypothesis of part 2,
+:::
+
+::: {.pf-step #s4}
+
+Under the hypothesis of part 2,
 $$
 \boxed{
 z_1
@@ -138,15 +160,22 @@ z\frac{f'(z)}{f(z)}\,dz
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $z_1$ is the only zero and it is simple, then $k=1$ and $n_1=1$.
-Step <1>3 reduces exactly to the displayed boundary integral.
+Step [](#s3){.pf-ref} reduces exactly to the displayed boundary integral.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part 1, and step <1>4 gives the boundary integral
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part 1, and step [](#s4){.pf-ref} gives the boundary integral
 requested in part 2.
+
 :::
+
+:::
+
 :::

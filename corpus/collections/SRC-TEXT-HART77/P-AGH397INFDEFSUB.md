@@ -43,7 +43,11 @@ I=\Gamma(U,\mci_Y),\qquad A_D=A[\epsilon]/(\epsilon^2).
 $$
 Then a closed subscheme of $U\times_k\Spec D$ is determined by an ideal $J\subseteq A_D$.
 
-<1>1. Suppose $J\subseteq A_D$ has closed fibre $I$, i.e.
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose $J\subseteq A_D$ has closed fibre $I$, i.e.
 $$
 (J+(\epsilon))/(\epsilon)=I\subseteq A.
 $$
@@ -52,7 +56,8 @@ $$
 \boxed{J\cap \epsilon A=\epsilon I}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 First note that $\epsilon I\subseteq J$.
 Indeed, for $i\in I$ choose a lift $i+\epsilon a\in J$; multiplying by $\epsilon$ gives $\epsilon i\in J$.
 
@@ -87,14 +92,20 @@ $$
 so $\sum d_\lambda b_\lambda\in\ker\epsilon=\epsilon B$.
 Reducing again modulo $\epsilon B$ gives every $d_\lambda=0$.
 Thus $B$ is a free, hence flat, $D$-module.
+
 :::
 
-<1>2. A flat deformation ideal $J$ determines a unique homomorphism
+:::
+
+::: {.pf-step #s2}
+
+A flat deformation ideal $J$ determines a unique homomorphism
 $$
 \phi_J:I/I^2\longrightarrow A/I.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $i\in I$, choose a lift
 $$
 i+\epsilon a\in J
@@ -108,7 +119,7 @@ If also $i+\epsilon a'\in J$, then
 $$
 \epsilon(a-a')\in J\cap\epsilon A=\epsilon I
 $$
-by step <1>1, so $a-a'\in I$.
+by step [](#s1){.pf-ref}, so $a-a'\in I$.
 
 The construction is additive.
 For $c\in A$, multiplying a lift by $c$ gives
@@ -125,9 +136,14 @@ Since $I$ acts trivially on $A/I$, it follows that $\phi_J(I^2)=0$, so it factor
 $$
 I/I^2\longrightarrow A/I.
 $$
+
 :::
 
-<1>3. Conversely, every
+:::
+
+::: {.pf-step #s3}
+
+Conversely, every
 $$
 \phi\in\operatorname{Hom}_{A/I}(I/I^2,A/I)
 $$
@@ -137,7 +153,8 @@ J_\phi
 =\{i+\epsilon a\in A_D:i\in I,\ a\bmod I=\phi(i\bmod I^2)\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The set $J_\phi$ is additive.
 For $c+\epsilon d\in A_D$ and $i+\epsilon a\in J_\phi$,
 $$
@@ -161,18 +178,24 @@ Thus
 $$
 J_\phi\cap\epsilon A=\epsilon I.
 $$
-Step <1>1 shows that $A_D/J_\phi$ is flat over $D$.
+Step [](#s1){.pf-ref} shows that $A_D/J_\phi$ is flat over $D$.
 Therefore $J_\phi$ defines an infinitesimal embedded deformation of $Y\cap U$ in $U$.
+
 :::
 
-<1>4. The constructions in steps <1>2 and <1>3 are mutually inverse.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The constructions in steps [](#s2){.pf-ref} and [](#s3){.pf-ref} are mutually inverse.
+
+::: pf-proof
+
 Starting from $\phi$, the lift $i+\epsilon a\in J_\phi$ satisfies
 $$
 a\bmod I=\phi(i\bmod I^2),
 $$
-so step <1>2 recovers exactly $\phi$.
+so step [](#s2){.pf-ref} recovers exactly $\phi$.
 
 Conversely, let $J$ be flat and put $\phi=\phi_J$.
 Every element $i+\epsilon a\in J$ satisfies the defining congruence for $J_\phi$, hence
@@ -186,12 +209,18 @@ $$
 \epsilon(a-a')\in\epsilon I\subseteq J.
 $$
 Therefore $i+\epsilon a\in J$ and $J_\phi=J$.
+
 :::
 
-<1>5. The affine correspondence is compatible with localization and therefore glues canonically over $X$.
+:::
 
-::: {.proof}
-Every operation used in steps <1>1--<1>4 commutes with localization: reduction modulo $\epsilon$, the ideal quotient $I/I^2$, the module $A/I$, and the formula defining $J_\phi$.
+::: {.pf-step #s5}
+
+The affine correspondence is compatible with localization and therefore glues canonically over $X$.
+
+::: pf-proof
+
+Every operation used in steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} commutes with localization: reduction modulo $\epsilon$, the ideal quotient $I/I^2$, the module $A/I$, and the formula defining $J_\phi$.
 Thus on overlapping affine opens, the homomorphisms obtained from a global deformation ideal sheaf agree after restriction.
 They glue to a global section
 $$
@@ -201,33 +230,45 @@ H^0\!\left(Y,
 \right).
 $$
 
-Conversely, a global section of this sheaf restricts on each affine open to a homomorphism $\phi$ as in step <1>3.
+Conversely, a global section of this sheaf restricts on each affine open to a homomorphism $\phi$ as in step [](#s3){.pf-ref}.
 The corresponding ideals $J_\phi$ agree on overlaps by the localization compatibility, so they glue to a quasicoherent ideal sheaf on $X\times_k\Spec D$.
-The resulting closed subscheme has closed fibre $Y$ and is flat over $D$ by the local criterion in step <1>1.
+The resulting closed subscheme has closed fibre $Y$ and is flat over $D$ by the local criterion in step [](#s1){.pf-ref}.
+
 :::
 
-<1>6. The set of infinitesimal embedded deformations of $Y$ in $X$ is therefore
+:::
+
+::: {.pf-step #s6}
+
+The set of infinitesimal embedded deformations of $Y$ in $X$ is therefore
 $$
 \boxed{H^0(Y,\mcn_{Y/X})}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By [[D-MODCONORM|the definition of the normal sheaf]],
 $$
 \mcn_{Y/X}
 =\sheafhom_{\mco_Y}(\mci_Y/\mci_Y^2,\mco_Y).
 $$
-Step <1>5 gives mutually inverse global constructions between its sections and flat closed subschemes
+Step [](#s5){.pf-ref} gives mutually inverse global constructions between its sections and flat closed subschemes
 $$
 Y'\subseteq X\times_k\Spec D
 $$
 whose closed fibre is $Y$.
 Hence $H^0(Y,\mcn_{Y/X})$ classifies exactly the infinitesimal deformations requested in the problem.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 establish the affine classification, and steps <1>5--<1>6 globalize it and identify the parameter space with global sections of the normal sheaf.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} establish the affine classification, and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} globalize it and identify the parameter space with global sections of the normal sheaf.
+
+:::
+
+:::
+
 :::

@@ -21,17 +21,31 @@ review: draft
 :::
 
 ::: {.solution}
-<1>1. Index $2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Index $2$.
+
+::: pf-proof
+
 If $H\le G$ has index $2$, then there are exactly two left cosets and two right cosets. For $g\notin H$, both $gH$ and $Hg$ are the complement $G\setminus H$. Hence
 \[
 gH=Hg
 \]
 for every $g\in G$, so $H\trianglelefteq G$.
+
 :::
 
-<1>2. Index equal to the smallest prime divisor.
-::: {.proof}
+:::
+
+::: pf-step
+
+Index equal to the smallest prime divisor.
+
+::: pf-proof
+
 Let $[G:H]=p$ and let $G$ act on the left cosets $G/H$. This gives
 \[
 \rho:G\to S_p.
@@ -47,5 +61,11 @@ A transitive group of prime order acts regularly, so the stabilizer of the coset
 H=\ker\rho.
 \]
 Therefore $H$ is normal in $G$.
+
 :::
+
+:::
+
+:::
+
 :::

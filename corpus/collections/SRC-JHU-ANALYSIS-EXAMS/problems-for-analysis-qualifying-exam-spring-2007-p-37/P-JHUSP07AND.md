@@ -35,9 +35,14 @@ $$
 \boxed{f(z)=\frac{2z(1+z)}{(1-z)^2},\qquad |z|<1.}
 $$
 
-<1>1. The disk is biholomorphic to the right half-plane.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The disk is biholomorphic to the right half-plane.
+
+::: pf-proof
+
 The map $T(z)=(1+z)/(1-z)$ is holomorphic on the unit
 disk and satisfies
 $$
@@ -50,22 +55,34 @@ $$
 $$
 Direct substitution verifies the inverse identities.
 Thus $T$ maps the disk onto $H=\{t:\operatorname{Re}t>0\}$.
+
 :::
 
-<1>2. The polynomial $p(t)=t^2-t$ maps $H$ onto $\mathbb C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The polynomial $p(t)=t^2-t$ maps $H$ onto $\mathbb C$.
+
+::: pf-proof
+
 Given any $w\in\mathbb C$, the equation
 $t^2-t-w=0$ has two complex roots $t_1,t_2$, counted
 with multiplicity, and $t_1+t_2=1$ by the quadratic
 formula. Their real parts sum to one, so at least one
 has real part at least $1/2$. That root belongs to $H$
 and satisfies $p(t)=w$. Since $w$ was arbitrary, $p(H)=\mathbb C$.
+
 :::
 
-<1>3. Composition gives the required surjection.
+:::
 
-::: {.proof}
+::: pf-step
+
+Composition gives the required surjection.
+
+::: pf-proof
+
 The composite $p\circ T$ is holomorphic on the disk
 and surjective by the preceding two steps. Its formula is
 $$
@@ -84,5 +101,11 @@ theorem [@SS03]. The map constructed here is not injective.
 Indeed, $t=(1\pm i\sqrt3)/2$ are two
 distinct points of $H$ with $p(t)=-1$, and their distinct
 inverse images under $T$ have the same value under $f$.
+
 :::
+
+:::
+
+:::
+
 :::

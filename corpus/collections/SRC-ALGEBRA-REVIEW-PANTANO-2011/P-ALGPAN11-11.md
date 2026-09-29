@@ -32,18 +32,37 @@ The map
 \]
 is a homomorphism if and only if $\boxed{a=e}$.
 
-<1>1. A homomorphism forces $a=e$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+A homomorphism forces $a=e$.
+
+::: pf-proof
+
 Every group homomorphism sends the identity to the identity.
 But
 \[
 \varphi(e)=aea^{-2}=a^{-1}.
 \]
 Hence $a^{-1}=e$, so $a=e$.
+
 :::
 
-<1>2. If $a=e$, then $\varphi$ is a homomorphism.
-::: {.proof}
-If $a=e$, then $\varphi(x)=x$ for all $x$, so $\varphi$ is the identity homomorphism.
 :::
+
+::: pf-step
+
+If $a=e$, then $\varphi$ is a homomorphism.
+
+::: pf-proof
+
+If $a=e$, then $\varphi(x)=x$ for all $x$, so $\varphi$ is the identity homomorphism.
+
+:::
+
+:::
+
+:::
+
 :::

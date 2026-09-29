@@ -32,14 +32,19 @@ Give a proof or a counterexample.
 ::: {.solution}
 The answer is no.
 
-<1>1. Take
+::: pf
+
+::: {.pf-step #s1}
+
+Take
 $$
 G=A_4.
 $$
 Its elements consist of the identity, three double transpositions, and
 eight $3$-cycles.
 
-::: {.proof}
+::: pf-proof
+
 The even permutations in $S_4$ have cycle types
 $$
 1^4,
@@ -57,9 +62,14 @@ $$
 =8
 $$
 $3$-cycles, accounting for all $12$ elements of $A_4$.
+
 :::
 
-<1>2. The set of squares in $A_4$ is exactly
+:::
+
+::: {.pf-step #s2}
+
+The set of squares in $A_4$ is exactly
 $$
 S
 =
@@ -68,7 +78,8 @@ S
 \{\text{all $3$-cycles in }A_4\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The identity squares to itself. Every double transposition has order
 $2$, so its square is $e$.
 
@@ -81,20 +92,32 @@ $$
 $$
 for an element of order $3$.
 Thus the displayed set is precisely the set of all squares.
+
 :::
 
-<1>3. The set $S$ has cardinality
+:::
+
+::: {.pf-step #s3}
+
+The set $S$ has cardinality
 $$
 \abs{S}=9.
 $$
 
-::: {.proof}
-By step <1>2, it contains the identity and the eight $3$-cycles.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, it contains the identity and the eight $3$-cycles.
+
 :::
 
-<1>4. The set $S$ is not a subgroup of $A_4$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The set $S$ is not a subgroup of $A_4$.
+
+::: pf-proof
+
 If $S\leq A_4$, Lagrange's theorem would imply
 $$
 \abs{S}\mid\abs{A_4}.
@@ -103,19 +126,31 @@ But
 $$
 9\nmid12,
 $$
-contradicting step <1>3.
+contradicting step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Therefore the set of squares in a finite group need not be a
+:::
+
+::: {.pf-step #s5}
+
+Therefore the set of squares in a finite group need not be a
 subgroup.
 
-::: {.proof}
-The finite group $A_4$ of step <1>1 is a counterexample by step <1>4.
+::: pf-proof
+
+The finite group $A_4$ of step [](#s1){.pf-ref} is a counterexample by step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 answers the question.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} answers the question.
+
+:::
+
+:::
+
 :::

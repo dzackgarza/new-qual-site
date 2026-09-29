@@ -54,8 +54,14 @@ By the universal property of the free product, the induced homomorphisms on fund
 \]
 We prove that $\Phi$ is surjective.
 
-<1>1. Every based loop in $X$ admits a finite subdivision whose subpaths lie alternately in $A$ or $B$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every based loop in $X$ admits a finite subdivision whose subpaths lie alternately in $A$ or $B$.
+
+::: pf-proof
+
 Let
 \[
 \gamma:[0,1]\longrightarrow X
@@ -79,14 +85,21 @@ Then for each $j$ the image
 \]
 is contained entirely in $A$ or entirely in $B$.
 Choose one such set and denote it by $L_j\in\{A,B\}$.
+
 :::
 
-<1>2. For every subdivision point $t_j$, one can choose a path
+:::
+
+::: {.pf-step #s2}
+
+For every subdivision point $t_j$, one can choose a path
 \[
 \alpha_j:[0,1]\longrightarrow X
 \]
 from $*$ to $\gamma(t_j)$ that lies in every $L_r$ incident to that endpoint.
-::: {.proof}
+
+::: pf-proof
+
 Take $\alpha_0$ and $\alpha_m$ to be the constant path at $*$.
 For $0<j<m$, there are two cases.
 
@@ -105,10 +118,17 @@ then
 \]
 Since $A\cap B$ is path connected and contains $*$, choose $\alpha_j$ inside $A\cap B$.
 Thus, for every $r$, both $\alpha_{r-1}$ and $\alpha_r$ lie in $L_r$.
+
 :::
 
-<1>3. The loop $\gamma$ is homotopic rel basepoint to a product of loops each lying entirely in $A$ or entirely in $B$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The loop $\gamma$ is homotopic rel basepoint to a product of loops each lying entirely in $A$ or entirely in $B$.
+
+::: pf-proof
+
 Let
 \[
 \gamma_j=\gamma|_{[t_{j-1},t_j]}
@@ -118,7 +138,7 @@ with the usual reparametrization to $[0,1]$, and define the based loop
 \sigma_j
 =\alpha_{j-1}*\gamma_j*\overline{\alpha_j}.
 \]
-By <1>2, the entire loop $\sigma_j$ lies in $L_j$, hence in $A$ or in $B$.
+By step [](#s2){.pf-ref}, the entire loop $\sigma_j$ lies in $L_j$, hence in $A$ or in $B$.
 
 In the concatenation
 \[
@@ -135,11 +155,18 @@ Since $\alpha_0$ and $\alpha_m$ are constant at $*$, cancellation of these backt
 =[\sigma_1]\cdots[\sigma_m]
 \]
 in $\pi_1(X,*)$.
+
 :::
 
-<1>4. The homomorphism $\Phi$ is surjective.
-::: {.proof}
-By <1>3, every element $[\gamma]\in\pi_1(X,*)$ is a product of classes $[\sigma_j]$, each represented by a loop wholly in $A$ or wholly in $B$.
+:::
+
+::: pf-step
+
+The homomorphism $\Phi$ is surjective.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, every element $[\gamma]\in\pi_1(X,*)$ is a product of classes $[\sigma_j]$, each represented by a loop wholly in $A$ or wholly in $B$.
 Therefore every factor lies in the image of
 \[
 (i_A)_*:\pi_1(A,*)\to\pi_1(X,*)
@@ -151,5 +178,11 @@ or of
 These two maps are precisely the restrictions of $\Phi$ to the two free factors.
 Hence $[\gamma]\in\operatorname{im}\Phi$.
 Since $[\gamma]$ was arbitrary, $\Phi$ is surjective.
+
 :::
+
+:::
+
+:::
+
 :::

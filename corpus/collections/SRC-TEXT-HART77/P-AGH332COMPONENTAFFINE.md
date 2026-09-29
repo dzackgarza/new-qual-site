@@ -32,17 +32,28 @@ Every irreducible component is given its reduced induced closed-subscheme struct
 The noetherian scheme has finitely many irreducible components.
 We use [[T-5IOUR|Serre's affineness criterion]] and [[T-COHAFF|vanishing of higher quasi-coherent cohomology on affine schemes]] [@Har10a, Theorems III.3.5 and III.3.7].
 
-<1>1. If $X$ is affine, each irreducible component is affine.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $X$ is affine, each irreducible component is affine.
+
+::: pf-proof
+
 For $X=\Spec A$, an irreducible component has reduced coordinate ring $A/\mathfrak p$, where $\mathfrak p$ is a minimal prime of $A$.
 It is the affine closed subscheme $\Spec(A/\mathfrak p)$.
+
 :::
 
-<1>2. Suppose $X=Y\cup Z$ is a union of two reduced closed subschemes and $X$ is reduced.
+:::
+
+::: {.pf-step #s2}
+
+Suppose $X=Y\cup Z$ is a union of two reduced closed subschemes and $X$ is reduced.
 If $Y$ and $Z$ are affine, then $H^1(X,F)=0$ for every coherent sheaf $F$ on $X$.
 
-::: {.proof}
+::: pf-proof
+
 Let $I$ and $J$ be the coherent ideal sheaves defining $Y$ and $Z$.
 Their intersection is zero.
 Indeed, on any affine open $\Spec A\subseteq X$, the ring $A$ is reduced, the ideals defining $Y$ and $Z$ are radical, and their zero sets cover $\Spec A$.
@@ -63,11 +74,17 @@ $$
 H^1(X,IF)=0,\qquad H^1(X,F/IF)=0.
 $$
 The long exact sequence of the displayed short exact sequence forces $H^1(X,F)=0$.
+
 :::
 
-<1>3. If every irreducible component is affine, then $X$ is affine.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If every irreducible component is affine, then $X$ is affine.
+
+::: pf-proof
+
 Induct on the number $r$ of irreducible components.
 For $r=0$, the scheme is empty and is $\Spec(0)$.
 For $r=1$, reducedness identifies $X$ with its sole reduced component, which is affine by hypothesis.
@@ -76,13 +93,19 @@ For $r>1$, take $Y$ to be one component and let $Z$ be the union of the other $r
 The scheme $Z$ is reduced and noetherian, and its irreducible components, with their reduced structures, are precisely the remaining components of $X$.
 They are affine by hypothesis, so induction gives affineness of $Z$.
 The chosen $Y$ is affine as well.
-Step <1>2 gives $H^1(X,F)=0$ for every coherent $F$, in particular for every coherent ideal sheaf.
+Step [](#s2){.pf-ref} gives $H^1(X,F)=0$ for every coherent $F$, in particular for every coherent ideal sheaf.
 Serre's criterion therefore makes $X$ affine.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves the forward implication and step <1>3 proves the converse.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the forward implication and step [](#s3){.pf-ref} proves the converse.
+
+:::
+
+:::
+
 :::

@@ -34,25 +34,42 @@ Cauchy's theorem: if $G$ is a finite group and $p$ is a prime dividing $|G|$, th
 
 Let $X=\{(g_1,\dots,g_p)\in G^p: g_1g_2\cdots g_p=1\}$, and let $C_p=\langle\sigma\rangle$ act on $X$ by $\sigma(g_1,\dots,g_p)=(g_2,\dots,g_p,g_1)$.
 
-<1>1. $|X|=|G|^{p-1}$, so $p\mid|X|$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$|X|=|G|^{p-1}$, so $p\mid|X|$.
+
+::: pf-proof
+
 $g_1,\dots,g_{p-1}$ are arbitrary and determine $g_p=(g_1\cdots g_{p-1})^{-1}$.
 The cyclic shift preserves $X$, since $g_2\cdots g_pg_1=g_1^{-1}(g_1\cdots g_p)g_1=1$.
+
 :::
 
-<1>2. Every $C_p$-orbit in $X$ has size $1$ or $p$, and the orbits of size $1$ are the tuples $(g,\dots,g)$ with $g^p=1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every $C_p$-orbit in $X$ has size $1$ or $p$, and the orbits of size $1$ are the tuples $(g,\dots,g)$ with $g^p=1$.
+
+::: pf-proof
+
 Orbit sizes divide $|C_p|=p$.
 A tuple is fixed by $\sigma$ exactly when all its entries are equal, and $(g,\dots,g)\in X$ exactly when $g^p=1$.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Let $F$ be the set of fixed tuples.
-By steps <1>1 and <1>2, $|F|\equiv|X|\equiv0\pmod p$, and $(1,\dots,1)\in F$, so $|F|\ge p\ge2$.
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|F|\equiv|X|\equiv0\pmod p$, and $(1,\dots,1)\in F$, so $|F|\ge p\ge2$.
 Hence some $(g,\dots,g)\in F$ has $g\neq1$ and $g^p=1$, and $g$ has order $p$.
+
 :::
+
+:::
+
 :::

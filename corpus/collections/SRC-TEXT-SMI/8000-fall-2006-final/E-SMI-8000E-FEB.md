@@ -42,8 +42,15 @@ Define what is meant by:
 :::
 
 ::: {.solution}
-<1>1. Algebraic element.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Algebraic element.
+
+::: pf-proof
+
 An element $c\in E$ is **algebraic over $k$** if there exists a nonzero
 polynomial
 $$
@@ -54,10 +61,17 @@ $$
 f(c)=0.
 $$
 If no such polynomial exists, $c$ is transcendental over $k$.
+
 :::
 
-<1>2. Minimal polynomial.
-::: {.proof}
+:::
+
+::: pf-step
+
+Minimal polynomial.
+
+::: pf-proof
+
 If $c$ is algebraic over $k$, its **minimal polynomial over $k$** is the
 unique monic polynomial
 $$
@@ -69,10 +83,17 @@ m_{c,k}(c)=0.
 $$
 It is irreducible over $k$, and every polynomial in $k[X]$ vanishing at $c$
 is divisible by $m_{c,k}$.
+
 :::
 
-<1>3. Separable algebraic extension.
-::: {.proof}
+:::
+
+::: pf-step
+
+Separable algebraic extension.
+
+::: pf-proof
+
 Assume $E/k$ is algebraic. The extension is **separable** if every
 $c\in E$ has a separable minimal polynomial over $k$, i.e. the roots of
 $m_{c,k}$ in an algebraic closure are all distinct.
@@ -87,10 +108,17 @@ $$
 \gcd(f,f')=1
 $$
 for every such irreducible $f$.
+
 :::
 
-<1>4. Normal algebraic extension.
-::: {.proof}
+:::
+
+::: pf-step
+
+Normal algebraic extension.
+
+::: pf-proof
+
 Assume $E/k$ is algebraic and place $E$ inside an algebraic closure
 $\overline k$. The extension is **normal** if every irreducible polynomial
 $$
@@ -107,10 +135,17 @@ $$
 \sigma(E)=E.
 $$
 Thus the $k$-conjugates of all elements of $E$ remain inside $E$.
+
 :::
 
-<1>5. Algebraic closure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Algebraic closure.
+
+::: pf-proof
+
 An extension $E/k$ is an **algebraic closure of $k$** if
 
 1. $E/k$ is algebraic, and
@@ -118,10 +153,17 @@ An extension $E/k$ is an **algebraic closure of $k$** if
 
 Equivalently, every nonconstant polynomial over $E$ has a root in $E$, while
 every element of $E$ is algebraic over $k$.
+
 :::
 
-<1>6. Galois group $\operatorname{Gal}_k(E)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Galois group $\operatorname{Gal}_k(E)$.
+
+::: pf-proof
+
 The group
 $$
 \operatorname{Gal}_k(E)=\operatorname{Aut}_k(E)
@@ -135,5 +177,11 @@ $$
 \sigma(a)=a
 \qquad\text{for every }a\in k.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

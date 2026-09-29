@@ -59,8 +59,14 @@ L^p(\mathbb R)\cap L^q(\mathbb R)\subset L^s(\mathbb R)
 p\le s\le q.
 \]
 
-<1>1. Counterexamples for (i), (ii), and (iii).
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Counterexamples for (i), (ii), and (iii).
+
+::: pf-proof
+
 Choose $a$ with
 \[
 \frac1q\le a<\frac1p.
@@ -89,10 +95,17 @@ Then $g\in L^q(\mathbb R)$ but $g\notin L^p(\mathbb R)$, because
 \int_1^\infty x^{-br}\,dx<\infty
 \quad\Longleftrightarrow\quad br>1.
 \]
+
 :::
 
-<1>2. Statements (iv) and (v) are true, while (vi) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statements (iv) and (v) are true, while (vi) is false.
+
+::: pf-proof
+
 Since $[0,1]$ has finite measure, Hölder's inequality gives
 \[
 \|f\|_p\le \|f\|_q
@@ -110,10 +123,17 @@ For (vi), choose $c$ with
 \frac1q<c\le\frac1p
 \]
 and set $a_n=n^{-c}$ for $n\ge1$ and $a_n=0$ for $n\le0$. Then $a\in\ell^q$ but $a\notin\ell^p$.
+
 :::
 
-<1>3. $L^p(\mathbb R)\cap L^q(\mathbb R)\subset L^s(\mathbb R)$ exactly when $p\le s\le q$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$L^p(\mathbb R)\cap L^q(\mathbb R)\subset L^s(\mathbb R)$ exactly when $p\le s\le q$.
+
+::: pf-proof
+
 If $p\le s\le q$, choose $\theta\in[0,1]$ such that
 \[
 \frac1s=\frac\theta p+\frac{1-\theta}{q}.
@@ -148,5 +168,11 @@ Thus the inclusion holds exactly for
 \[
 \boxed{p\le s\le q}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

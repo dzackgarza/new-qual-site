@@ -44,12 +44,17 @@ G
 $$
 the dihedral group of order $8$.
 
-<1>1. The center of $G$ is
+::: pf
+
+::: pf-step
+
+The center of $G$ is
 $$
 Z(G)=\{1,r^2\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The element $r^2$ commutes with $r$, and
 $$
 sr^2s
@@ -68,14 +73,20 @@ r(r^ks)=r^{k+1}s,
 $$
 and these are unequal because $r^2\ne1$. Thus no other element is
 central.
+
 :::
 
-<1>2. The center of $G/Z(G)$ is nontrivial; indeed,
+:::
+
+::: {.pf-step #s2}
+
+The center of $G/Z(G)$ is nontrivial; indeed,
 $$
 G/Z(G)\cong C_2\times C_2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The quotient has order $4$. The cosets of both $r$ and $s$ have order
 $2$, and modulo $Z(G)$ the relation
 $$
@@ -92,9 +103,14 @@ abelian and noncyclic, so it is $C_2\times C_2$. Therefore
 $$
 Z(G/Z(G))=G/Z(G)\ne1.
 $$
+
 :::
 
-<1>3. For the second example, take
+:::
+
+::: {.pf-step #s3}
+
+For the second example, take
 $$
 H=S_4.
 $$
@@ -103,7 +119,8 @@ $$
 H'=A_4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The sign map
 $$
 S_4\longrightarrow\{\pm1\}
@@ -116,9 +133,14 @@ $$
 is a $3$-cycle. Since $S_4'$ is normal, it contains every conjugate
 of this $3$-cycle, hence every $3$-cycle. The group $A_4$ is generated
 by $3$-cycles, so $A_4\subseteq S_4'$. Thus $S_4'=A_4$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 H''=A_4'=V_4,
 $$
@@ -129,7 +151,8 @@ V_4
 \{1,(12)(34),(13)(24),(14)(23)\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The subgroup $V_4$ is normal in $A_4$, and
 $$
 A_4/V_4
@@ -144,19 +167,30 @@ Thus $A_4'$ contains a nonidentity element of $V_4$. Since $A_4'$ is
 normal in $A_4$, it also contains the $A_4$-conjugates of
 $(12)(34)$, which are the other two nonidentity elements of $V_4$.
 Hence $V_4\subseteq A_4'$, and equality follows.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 H'''=V_4'=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The Klein four-group $V_4$ is abelian, so its derived subgroup is
 trivial.
+
 :::
 
-<1>6. The four groups
+:::
+
+::: {.pf-step #s6}
+
+The four groups
 $$
 \boxed{
 S_4,\quad A_4,\quad V_4,\quad 1
@@ -164,18 +198,25 @@ S_4,\quad A_4,\quad V_4,\quad 1
 $$
 are all distinct.
 
-::: {.proof}
+::: pf-proof
+
 Their orders are respectively
 $$
 24,\quad12,\quad4,\quad1.
 $$
-Together with steps <1>3--<1>5, this gives the required derived series.
+Together with steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}, this gives the required derived series.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 supplies the required group $G$, and step <1>6 supplies the
+::: pf-qed
+
+Step [](#s2){.pf-ref} supplies the required group $G$, and step [](#s6){.pf-ref} supplies the
 required group $H$.
+
 :::
+
+:::
+
 :::

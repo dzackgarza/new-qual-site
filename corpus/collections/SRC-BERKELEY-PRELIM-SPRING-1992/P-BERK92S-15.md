@@ -41,9 +41,14 @@ $$
 $$
 the positive divisors of $\abs G$ are $1,11,101,1111$.
 
-<1>1. Every orbit in $\Omega$ has size $1$, $11$, or $101$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Every orbit in $\Omega$ has size $1$, $11$, or $101$.
+
+::: pf-proof
+
 For $i\in\Omega$, the orbit-stabilizer theorem gives
 $$
 \abs{G\cdot i}=[G:G_i],
@@ -51,11 +56,17 @@ $$
 so the orbit size divides $\abs G=1111$. Since
 $\abs{\Omega}=999<1111$, no orbit can have size $1111$. Thus the only
 possible orbit sizes are $1,11,101$.
+
 :::
 
-<1>2. There must be an orbit of size $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+There must be an orbit of size $1$.
+
+::: pf-proof
+
 Suppose not. Then the orbit decomposition of $\Omega$ would give
 nonnegative integers $a,b$ such that
 $$
@@ -71,21 +82,33 @@ b\equiv10\pmod{11}.
 $$
 On the other hand, $101b\le999$, hence $0\le b\le9$. This is
 impossible.
+
 :::
 
-<1>3. Some $i\in\Omega$ is fixed by every element of $G$.
+:::
 
-::: {.proof}
-By step <1>2, there is an orbit $G\cdot i$ of size $1$. Thus
+::: {.pf-step #s3}
+
+Some $i\in\Omega$ is fixed by every element of $G$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, there is an orbit $G\cdot i$ of size $1$. Thus
 $$
 G\cdot i=\{i\},
 $$
 which means $\sigma(i)=i$ for every $\sigma\in G$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required common fixed point.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required common fixed point.
+
+:::
+
+:::
+
 :::

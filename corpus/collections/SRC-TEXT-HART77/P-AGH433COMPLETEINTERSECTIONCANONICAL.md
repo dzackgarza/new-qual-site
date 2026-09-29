@@ -49,7 +49,11 @@ $$
 \deg H_i=d_i.
 $$
 
-<1>1. The canonical sheaf of $X$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The canonical sheaf of $X$ is
 $$
 \omega_X
 \cong
@@ -58,7 +62,8 @@ $$
 m=\sum_{i=1}^{n-1}d_i-n-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The complete-intersection adjunction formula of Hartshorne II.8.4(d) gives
 $$
 \omega_X
@@ -80,19 +85,25 @@ $$
 \OO_X\!\left(\sum_i d_i-n-1\right)
 =\OO_X(m).
 $$
+
 :::
 
-<1>2. If $g(X)\ge2$, then
+:::
+
+::: {.pf-step #s2}
+
+If $g(X)\ge2$, then
 $$
 m>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hyperplane bundle $\OO_X(1)$ has positive degree
 $$
 \deg X=\prod_i d_i>0.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 2g-2
 =
@@ -102,44 +113,62 @@ m\deg\OO_X(1).
 $$
 The left-hand side is positive because $g\ge2$, and
 $\deg\OO_X(1)>0$.  Hence $m>0$.
+
 :::
 
-<1>3. The canonical divisor of $X$ is very ample.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The canonical divisor of $X$ is very ample.
+
+::: pf-proof
+
 The line bundle $\OO_X(1)$ is very ample because it is the restriction of
 the hyperplane bundle for the given closed immersion
 $$
 X\hookrightarrow\PP^n.
 $$
-By step <1>2, $m\ge1$.  Every positive tensor power of a very ample line
+By step [](#s2){.pf-ref}, $m\ge1$.  Every positive tensor power of a very ample line
 bundle is very ample: the corresponding morphism is the given embedding
 followed by the $m$-uple Veronese embedding.  Thus
 $$
 \omega_X\cong\OO_X(1)^{\tensor m}
 $$
 is very ample.
+
 :::
 
-<1>4. A curve of genus $2$ cannot be a complete intersection in any
+:::
+
+::: {.pf-step #s4}
+
+A curve of genus $2$ cannot be a complete intersection in any
 $\PP^n$.
 
-::: {.proof}
+::: pf-proof
+
 If $g(X)=2$, then every canonical divisor has degree
 $$
 \deg K_X=2g-2=2.
 $$
-If $X$ were a complete intersection, step <1>3 would make $K_X$ very ample.
+If $X$ were a complete intersection, step [](#s3){.pf-ref} would make $K_X$ very ample.
 But [[P-AGH431GENUSTWOVERYAMPLE|Exercise IV.3.1]] proves that on a genus-$2$
 curve every very ample divisor has degree at least $5$.  This contradicts
 $\deg K_X=2$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove that the canonical divisor of a complete-intersection
-curve of genus at least $2$ is very ample, and step <1>4 proves the genus-$2$
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove that the canonical divisor of a complete-intersection
+curve of genus at least $2$ is very ample, and step [](#s4){.pf-ref} proves the genus-$2$
 conclusion.
+
 :::
+
+:::
+
 :::

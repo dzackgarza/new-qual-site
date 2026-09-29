@@ -47,10 +47,15 @@ f(z),&\operatorname{Im}z\geq0,\\
 \end{cases}
 $$
 
-<1>1. The two formulas defining $F$ agree on the real diameter
+::: pf
+
+::: {.pf-step #s1}
+
+The two formulas defining $F$ agree on the real diameter
 $(-1,1)$.
 
-::: {.proof}
+::: pf-proof
+
 If $x\in(-1,1)$ is real, then $\bar x=x$. Since $f$ is real-valued on
 $S\cap\RR$,
 $$
@@ -62,22 +67,34 @@ f(x).
 $$
 Thus the reflected lower-half-disk formula has the same boundary value as
 the upper-half-disk formula.
+
 :::
 
-<1>2. The function $F$ is continuous on $\DD$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $F$ is continuous on $\DD$.
+
+::: pf-proof
+
 On the open upper half-disk and the open lower half-disk, continuity follows
 from continuity of $f$ and of conjugation. Along the real diameter, step
-<1>1 shows that the two formulas have the same value, and the continuity of
+[](#s1){.pf-ref} shows that the two formulas have the same value, and the continuity of
 $f$ on $S$ makes both one-sided limits equal to that value. Hence $F$ is
 continuous everywhere in $\DD$.
+
 :::
 
-<1>3. The function $F$ is holomorphic on the open upper and lower
+:::
+
+::: {.pf-step #s3}
+
+The function $F$ is holomorphic on the open upper and lower
 half-disks.
 
-::: {.proof}
+::: pf-proof
+
 It equals $f$ on the open upper half-disk, where $f$ is holomorphic. If
 $z_0$ lies in the open lower half-disk, then $\bar z_0$ lies in the open
 upper half-disk. Writing the local power series
@@ -91,31 +108,49 @@ $$
 \sum_{n=0}^{\infty}\bar a_n(z-z_0)^n
 $$
 near $z_0$. Hence the reflected formula is holomorphic there.
+
 :::
 
-<1>4. The function $F$ is holomorphic across the real diameter.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 give exactly the hypotheses of the Schwarz reflection
+::: {.pf-step #s4}
+
+The function $F$ is holomorphic across the real diameter.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give exactly the hypotheses of the Schwarz reflection
 principle across the real axis: the upper-half-disk function is holomorphic,
 extends continuously to the real diameter, and is real-valued there.
 Therefore its reflected extension $F$ is holomorphic through every point of
 $(-1,1)$.
+
 :::
 
-<1>5. The function $F$ is holomorphic on the entire open unit disk and
+:::
+
+::: {.pf-step #s5}
+
+The function $F$ is holomorphic on the entire open unit disk and
 restricts to $f$ on $S$.
 
-::: {.proof}
-Step <1>3 gives holomorphy away from the real diameter, and step <1>4 gives
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives holomorphy away from the real diameter, and step [](#s4){.pf-ref} gives
 holomorphy on the diameter. Hence $F$ is holomorphic on $\DD$. By its
 definition, $F=f$ wherever $\operatorname{Im}z\geq0$, which is precisely
 $S$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required holomorphic extension.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required holomorphic extension.
+
+:::
+
+:::
+
 :::

@@ -31,17 +31,31 @@ For each standard action below, identify the orbits, stabilizers, global fixed p
 :::
 
 ::: {.solution}
-<1>1. Left translation on $G$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Left translation on $G$.
+
+::: pf-proof
+
 The action is transitive, so there is one orbit, namely $G$. The stabilizer of every $x\in G$ is trivial because
 \[
 gx=x\iff g=e.
 \]
 Hence the kernel is trivial and the image is the left regular copy of $G$ in $\Sym(G)$. If $G\ne1$, there are no global fixed points.
+
 :::
 
-<1>2. Conjugation on $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conjugation on $G$.
+
+::: pf-proof
+
 The orbit of $x$ is its conjugacy class
 \[
 \operatorname{Cl}_G(x).
@@ -54,10 +68,17 @@ The global fixed points are exactly $Z(G)$. The kernel consists of elements conj
 \[
 \Inn(G)\cong G/Z(G).
 \]
+
 :::
 
-<1>3. Conjugation on the set of subgroups.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conjugation on the set of subgroups.
+
+::: pf-proof
+
 The orbit of $H$ is the conjugacy class of the subgroup,
 \[
 \{gHg^{-1}:g\in G\}.
@@ -71,10 +92,17 @@ The global fixed points are precisely the normal subgroups of $G$. The kernel is
 \bigcap_{H\le G}N_G(H),
 \]
 the subgroup of elements normalizing every subgroup of $G$. Thus the image is the quotient of $G$ by this kernel.
+
 :::
 
-<1>4. Left translation on $G/H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Left translation on $G/H$.
+
+::: pf-proof
+
 The action is transitive. The stabilizer of the coset $xH$ is
 \[
 xHx^{-1}.
@@ -89,5 +117,11 @@ the largest normal subgroup of $G$ contained in $H$. Hence the image is
 G/\operatorname{core}_G(H).
 \]
 If $H<G$, there is no global fixed coset; if $H=G$, the unique coset is fixed.
+
 :::
+
+:::
+
+:::
+
 :::

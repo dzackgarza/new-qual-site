@@ -36,9 +36,15 @@ X = \Spec k[x,y,z,w] / (z,w) \intersect (x+z, y+w)
 :::
 
 ::: {.solution}
-<1>1. A finite surjective morphism of nonsingular varieties is flat.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A finite surjective morphism of nonsingular varieties is flat.
+
+::: pf-proof
+
 Let $x\in X$, put $y=f(x)$, and write
 $$
 A=\OO_{Y,y},\qquad B=\OO_{X,x}.
@@ -95,15 +101,21 @@ Hence $B\cong A^m$ is free, in particular flat, over $A$.
 
 This holds for every $x\in X$, so $f$ is flat.
 This proves part (a).
+
 :::
 
-<1>2. In part (b), with $A=k[x,y]$, the coordinate ring of $X$ is naturally
+:::
+
+::: {.pf-step #s2}
+
+In part (b), with $A=k[x,y]$, the coordinate ring of $X$ is naturally
 $$
 R\cong A\times_k A
 =\{(u,v)\in A\oplus A:u(0,0)=v(0,0)\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 I_1=(z,w),\qquad I_2=(x+z,y+w)
@@ -124,9 +136,14 @@ k[x,y,z,w]/(I_1\cap I_2)
 $$
 where both maps $A\to k$ evaluate at $(0,0)$.
 The morphism to $Y=\Spec A$ acts diagonally on this fibre product.
+
 :::
 
-<1>3. As an $A$-module,
+:::
+
+::: {.pf-step #s3}
+
+As an $A$-module,
 $$
 R\cong A\oplus\mathfrak m,
 \qquad
@@ -134,7 +151,8 @@ R\cong A\oplus\mathfrak m,
 $$
 so the morphism in part (b) is not flat.
 
-::: {.proof}
+::: pf-proof
+
 The isomorphism is
 $$
 A\times_k A\longrightarrow A\oplus\mathfrak m,
@@ -157,9 +175,14 @@ $$
 $$
 so Nakayama's lemma says that $\mathfrak mA_{\mathfrak m}$ requires two generators and cannot be free of rank one.
 This contradiction proves nonflatness in part (b).
+
 :::
 
-<1>4. In part (c), put
+:::
+
+::: {.pf-step #s4}
+
+In part (c), put
 $$
 A=k[x,y],
 \qquad
@@ -172,7 +195,8 @@ $$
 \boxed{X_{\mathrm{red}}\cong Y}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The relations $z^2=zw=w^2=0$ give
 $$
 N^2=0,
@@ -188,11 +212,17 @@ $$
 R_{\mathrm{red}}=R/N\cong A.
 $$
 Therefore $X_{\mathrm{red}}\cong\Spec A=Y$.
+
 :::
 
-<1>5. As an $A$-module, the square-zero ideal $N$ is naturally isomorphic to the ideal $(x,y)\subseteq A$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+As an $A$-module, the square-zero ideal $N$ is naturally isomorphic to the ideal $(x,y)\subseteq A$.
+
+::: pf-proof
+
 The elements $z,w$ generate $N$, and the only $A$-linear relation imposed by the defining ideal is
 $$
 xz-yw=0.
@@ -224,11 +254,17 @@ $$
 N\cong(x,y).
 $$
 In particular $N$ is torsion-free as an $A$-module.
+
 :::
 
-<1>6. The scheme $X$ in part (c) has no embedded points.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The scheme $X$ in part (c) has no embedded points.
+
+::: pf-proof
+
 As an $A$-module,
 $$
 R\cong A\oplus N
@@ -256,25 +292,37 @@ $$
 \operatorname{Ass}_R(R)=\{N\}.
 $$
 Hence every associated point is minimal, so $X$ has no embedded points.
+
 :::
 
-<1>7. The morphism in part (c) is nevertheless not flat.
+:::
 
-::: {.proof}
-Step <1>5 gives
+::: {.pf-step #s7}
+
+The morphism in part (c) is nevertheless not flat.
+
+::: pf-proof
+
+Step [](#s5){.pf-ref} gives
 $$
 R\cong A\oplus(x,y)
 $$
 as an $A$-module.
 If $R$ were flat, the direct summand $(x,y)$ would be flat.
-Step <1>3 already proves that $(x,y)$ is not flat over $A$.
+Step [](#s3){.pf-ref} already proves that $(x,y)$ is not flat over $A$.
 Therefore $R$ is not flat over $A$, and the morphism $X\to Y$ is not flat.
 This proves part (c).
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), steps <1>2--<1>3 prove part (b), and steps <1>4--<1>7 prove part (c).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (b), and steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (c).
+
+:::
+
+:::
+
 :::

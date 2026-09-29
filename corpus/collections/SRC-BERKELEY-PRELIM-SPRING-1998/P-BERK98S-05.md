@@ -43,9 +43,14 @@ $$
 A=\RR e_{11}\oplus\RR e_{12}\oplus\RR e_{22}.
 $$
 
-<1>1. Every two-sided ideal $I\subseteq A$ is an $\RR$-vector subspace.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every two-sided ideal $I\subseteq A$ is an $\RR$-vector subspace.
+
+::: pf-proof
+
 For every $\lambda\in\RR$, the scalar matrix $\lambda I_2$ belongs to
 $A$. If $x\in I$, then
 $$
@@ -53,9 +58,14 @@ $$
 $$
 because $I$ is a left ideal. Together with closure under addition, this
 shows that $I$ is an $\RR$-vector subspace.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 x=ae_{11}+be_{12}+ce_{22}\in I,
 $$
@@ -64,7 +74,8 @@ $$
 ae_{11},\qquad be_{12},\qquad ce_{22}\in I.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $I$ is a two-sided ideal,
 $$
 e_{11}xe_{11}=ae_{11}\in I,
@@ -73,11 +84,17 @@ e_{11}xe_{22}=be_{12}\in I,
 \qquad
 e_{22}xe_{22}=ce_{22}\in I.
 $$
+
 :::
 
-<1>3. If $e_{11}\in I$ or $e_{22}\in I$, then $e_{12}\in I$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $e_{11}\in I$ or $e_{22}\in I$, then $e_{12}\in I$.
+
+::: pf-proof
+
 The matrix-unit products satisfy
 $$
 e_{11}e_{12}=e_{12},
@@ -86,9 +103,14 @@ e_{12}e_{22}=e_{12}.
 $$
 Thus $e_{11}\in I$ implies $e_{12}\in I$ because $I$ is a right ideal,
 and $e_{22}\in I$ implies $e_{12}\in I$ because $I$ is a left ideal.
+
 :::
 
-<1>4. Every two-sided ideal of $A$ is one of
+:::
+
+::: {.pf-step #s4}
+
+Every two-sided ideal of $A$ is one of
 $$
 0,
 \qquad
@@ -101,16 +123,17 @@ $$
 A.
 $$
 
-::: {.proof}
-Let $I$ be a two-sided ideal. By step <1>2, every element of $I$ contributes
-its three matrix-unit components separately to $I$. Hence step <1>1 shows
+::: pf-proof
+
+Let $I$ be a two-sided ideal. By step [](#s2){.pf-ref}, every element of $I$ contributes
+its three matrix-unit components separately to $I$. Hence step [](#s1){.pf-ref} shows
 that $I$ is spanned by whichever of
 $$
 e_{11},\qquad e_{12},\qquad e_{22}
 $$
 occur in its elements.
 
-By step <1>3, any spanning set containing $e_{11}$ or $e_{22}$ must also
+By step [](#s3){.pf-ref}, any spanning set containing $e_{11}$ or $e_{22}$ must also
 contain $e_{12}$. Therefore the only possible subsets of these matrix units
 that can span an ideal are
 $$
@@ -125,11 +148,17 @@ $$
 \{e_{11},e_{12},e_{22}\},
 $$
 which give exactly the five displayed subspaces.
+
 :::
 
-<1>5. Each of the five subspaces in step <1>4 is a two-sided ideal.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Each of the five subspaces in step [](#s4){.pf-ref} is a two-sided ideal.
+
+::: pf-proof
+
 The cases $0$ and $A$ are immediate. Also,
 $$
 A e_{12}\subseteq\RR e_{12},
@@ -144,9 +173,14 @@ an arbitrary upper-triangular matrix on either side preserves that
 condition. Likewise, $\RR e_{12}\oplus\RR e_{22}$ consists exactly of
 the matrices whose upper-left entry is zero, and that condition is
 preserved by multiplication on either side. Thus both are two-sided ideals.
+
 :::
 
-<1>6. Therefore the complete list of two-sided ideals is
+:::
+
+::: {.pf-step #s6}
+
+Therefore the complete list of two-sided ideals is
 $$
 \boxed{
 0, 
@@ -157,14 +191,21 @@ A
 }.
 $$
 
-::: {.proof}
-Step <1>4 proves that no other two-sided ideal exists, and step <1>5
+::: pf-proof
+
+Step [](#s4){.pf-ref} proves that no other two-sided ideal exists, and step [](#s5){.pf-ref}
 verifies that every listed subspace is a two-sided ideal.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the required classification.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the required classification.
+
+:::
+
+:::
+
 :::

@@ -39,8 +39,15 @@ f(x)=e^{-|x|},\qquad x\in\mathbb R.
 :::
 
 ::: {.solution}
-<1>1. The Fourier transform is smooth.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The Fourier transform is smooth.
+
+::: pf-proof
+
 For every integer $k\ge0$,
 \[
 \int_{\mathbb R}|x|^k e^{-|x|}\,dx<\infty.
@@ -65,10 +72,17 @@ Dominated convergence therefore justifies differentiation under the integral sig
 \widehat f\in C^\infty(\mathbb R).
 \]
 The same conclusion holds for any of the standard Fourier-transform normalizations, with the obvious change in constants.
+
 :::
 
-<1>2. The Fourier transform vanishes at infinity.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Fourier transform vanishes at infinity.
+
+::: pf-proof
+
 Since $f=e^{-|x|}\in L^1(\mathbb R)$, the Riemann--Lebesgue lemma gives
 \[
 \widehat f(\xi)\longrightarrow0
@@ -84,5 +98,11 @@ while
 |\widehat f(\xi)-\widehat g(\xi)|\le\|f-g\|_1.
 \]
 First choose $g$ so that the latter bound is small, then let $|\xi|\to\infty$. This proves the claimed decay.
+
 :::
+
+:::
+
+:::
+
 :::

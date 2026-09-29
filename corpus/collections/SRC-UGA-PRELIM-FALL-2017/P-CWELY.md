@@ -36,15 +36,28 @@ V=\{(x,y,z)\in\mathbb R^3:3x+4y+5z=0\}.
 ::: {.solution}
 Let $\varphi\colon\mathbb R^3\to\mathbb R$ be $\varphi(x,y,z)=3x+4y+5z$, so that $V=\ker\varphi$.
 
-<1>1. $V$ is a linear subspace of $\mathbb R^3$ of dimension $2$, with basis $v_1=(4,-3,0)$, $v_2=(5,0,-3)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$V$ is a linear subspace of $\mathbb R^3$ of dimension $2$, with basis $v_1=(4,-3,0)$, $v_2=(5,0,-3)$.
+
+::: pf-proof
+
 $V$ is the kernel of the linear map $\varphi$, hence a subspace.
 Since $\varphi(1,0,0)=3\neq0$, the image of $\varphi$ is $\mathbb R$, and rank--nullity gives $\dim V=\dim\mathbb R^3-\dim\operatorname{im}\varphi=3-1=2$.
 Both $v_1$ and $v_2$ satisfy $3x+4y+5z=0$, and they are linearly independent: if $av_1+bv_2=0$, the third coordinate gives $-3b=0$ and then the second gives $-3a=0$. Two independent vectors in a $2$-dimensional space form a basis.
+
 :::
 
-<1>2. Some linear map $S\colon\mathbb R^3\to\mathbb R^3$ has kernel $V$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Some linear map $S\colon\mathbb R^3\to\mathbb R^3$ has kernel $V$.
+
+::: pf-proof
+
 Let
 \[
 S=\begin{pmatrix}3&4&5\\0&0&0\\0&0&0\end{pmatrix},
@@ -52,20 +65,40 @@ S=\begin{pmatrix}3&4&5\\0&0&0\\0&0&0\end{pmatrix},
 S(x,y,z)^T=(3x+4y+5z,0,0)^T.
 \]
 Then $S\mathbf x=0$ exactly when $3x+4y+5z=0$, so $\ker S=V$.
+
 :::
 
-<1>3. Some linear map $T\colon\mathbb R^3\to\mathbb R^3$ has image $V$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Some linear map $T\colon\mathbb R^3\to\mathbb R^3$ has image $V$.
+
+::: pf-proof
+
 Let $T$ be the matrix with columns $v_1$, $v_2$, $0$:
 \[
 T=\begin{pmatrix}4&5&0\\-3&0&0\\0&-3&0\end{pmatrix}.
 \]
-The image of $T$ is its column space, $\operatorname{span}\{v_1,v_2\}=V$ by <1>1.
+The image of $T$ is its column space, $\operatorname{span}\{v_1,v_2\}=V$ by step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. No linear map $U\colon\mathbb R^3\to\mathbb R^3$ has $\ker U=\operatorname{im}U=V$.
-::: {.proof}
-Rank--nullity gives $\dim\ker U+\dim\operatorname{im}U=\dim\mathbb R^3=3$.
-If both equalled $V$, the left side would be $2\dim V=4$ by <1>1, a contradiction.
 :::
+
+::: pf-step
+
+No linear map $U\colon\mathbb R^3\to\mathbb R^3$ has $\ker U=\operatorname{im}U=V$.
+
+::: pf-proof
+
+Rank--nullity gives $\dim\ker U+\dim\operatorname{im}U=\dim\mathbb R^3=3$.
+If both equalled $V$, the left side would be $2\dim V=4$ by step [](#s1){.pf-ref}, a contradiction.
+
+:::
+
+:::
+
+:::
+
 :::

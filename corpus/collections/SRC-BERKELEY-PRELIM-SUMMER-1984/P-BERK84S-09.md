@@ -33,12 +33,17 @@ $$
 with initial conditions $x ( 0 ) = 0$ and $y ( 0 ) = 0$ . Prove that the solution must cross the line $x = 1$ in the xy plane by the time $t = 2$
 :::
 
-
 ::: {.solution}
 We argue by contradiction.
 
-<1>1. The solution cannot cross from $x\ge0$ into $x<0$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The solution cannot cross from $x\ge0$ into $x<0$.
+
+::: pf-proof
+
 Whenever $x(t_0)=0$, the first differential equation gives
 \[
 x'(t_0)=1+\frac12\,0^2\sin y(t_0)=1.
@@ -52,11 +57,18 @@ for all sufficiently small $h>0$. Since $x(0)=0$, the trajectory cannot have a f
 x(t)\ge0
 \]
 for as long as the solution exists forward in time.
+
 :::
 
-<1>2. Before the first crossing of $x=1$, one has $x'(t)>1/2$.
-::: {.proof}
-Suppose the trajectory has not crossed the line $x=1$ by time $t$. By <1>1 and continuity,
+:::
+
+::: {.pf-step #s2}
+
+Before the first crossing of $x=1$, one has $x'(t)>1/2$.
+
+::: pf-proof
+
+Suppose the trajectory has not crossed the line $x=1$ by time $t$. By step [](#s1){.pf-ref} and continuity,
 \[
 0\le x(s)<1
 \qquad(0\le s\le t).
@@ -68,11 +80,18 @@ x'(s)
 \ge1-\frac12x(s)^2
 >\frac12.
 \]
+
 :::
 
-<1>3. The trajectory must cross $x=1$ before or at time $2$.
-::: {.proof}
-Assume it does not cross $x=1$ for $0\le t\le2$. Then <1>2 holds throughout $[0,2]$, so
+:::
+
+::: pf-step
+
+The trajectory must cross $x=1$ before or at time $2$.
+
+::: pf-proof
+
+Assume it does not cross $x=1$ for $0\le t\le2$. Then step [](#s2){.pf-ref} holds throughout $[0,2]$, so
 \[
 x(2)-x(0)=\int_0^2x'(s)\,ds
 >\int_0^2\frac12\,ds=1.
@@ -83,5 +102,11 @@ Therefore the solution curve crosses the line $x=1$ at some time
 \[
 \boxed{t\le2}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

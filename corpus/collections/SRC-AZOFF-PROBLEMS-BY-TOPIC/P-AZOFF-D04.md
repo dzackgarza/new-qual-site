@@ -40,21 +40,32 @@ Suppose $\left( f _ { n } \right)$ converges pointwise to a function $g : \mathb
 :::
 
 ::: {.solution}
-<1>1. If $R$ is any closed rectangle in $\CC$, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $R$ is any closed rectangle in $\CC$, then
 $$
 f_n\longrightarrow g
 $$
 uniformly on $\partial R$.
 
-::: {.proof}
+::: pf-proof
+
 The boundary $\partial R$ is the union of four line segments. By hypothesis,
 $f_n\to g$ uniformly on each of those four segments. Given
 $\varepsilon>0$, choose an index for each side after which the error is
 smaller than $\varepsilon$, and take the maximum of those four indices. That
 single index works on all of $\partial R$.
+
 :::
 
-<1>2. If $z$ lies in the interior of a rectangle $R$, then
+:::
+
+::: {.pf-step #s2}
+
+If $z$ lies in the interior of a rectangle $R$, then
 $$
 g(z)
 =
@@ -63,7 +74,8 @@ g(z)
 \frac{g(\zeta)}{\zeta-z}\,d\zeta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $n$, Cauchy's integral formula gives
 $$
 f_n(z)
@@ -72,7 +84,7 @@ f_n(z)
 \int_{\partial R}
 \frac{f_n(\zeta)}{\zeta-z}\,d\zeta.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \sup_{\zeta\in\partial R}
 \abs{f_n(\zeta)-g(\zeta)}
@@ -102,12 +114,18 @@ f_n(z)\longrightarrow g(z)
 $$
 by the pointwise hypothesis. Passing to the limit gives the displayed
 formula.
+
 :::
 
-<1>3. The function $g$ is holomorphic in the interior of every rectangle
+:::
+
+::: {.pf-step #s3}
+
+The function $g$ is holomorphic in the interior of every rectangle
 $R$.
 
-::: {.proof}
+::: pf-proof
+
 For a fixed rectangle, define
 $$
 G_R(z)
@@ -130,22 +148,33 @@ Indeed, for $h$ small enough the denominators stay uniformly bounded away
 from zero on the compact boundary $\partial R$, so the difference-quotient
 integrands converge uniformly.
 
-Thus $G_R$ is holomorphic in $\operatorname{int}R$. Step <1>2 gives
+Thus $G_R$ is holomorphic in $\operatorname{int}R$. Step [](#s2){.pf-ref} gives
 $$
 g(z)=G_R(z)
 $$
 there, so $g$ is holomorphic in the interior of $R$.
+
 :::
 
-<1>4. The function $g$ is entire.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The function $g$ is entire.
+
+::: pf-proof
+
 Fix any $z_0\in\CC$ and choose a rectangle whose interior contains $z_0$.
-Step <1>3 shows that $g$ is holomorphic on a neighborhood of $z_0$. Since
+Step [](#s3){.pf-ref} shows that $g$ is holomorphic on a neighborhood of $z_0$. Since
 $z_0$ was arbitrary, $g$ is holomorphic on all of $\CC$.
+
 :::
 
-<1>5. Let $K\subseteq\CC$ be compact. There is a closed rectangle $R$ such
+:::
+
+::: {.pf-step #s5}
+
+Let $K\subseteq\CC$ be compact. There is a closed rectangle $R$ such
 that
 $$
 K\subseteq\operatorname{int}R
@@ -155,14 +184,20 @@ $$
 \delta=\operatorname{dist}(K,\partial R)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $K$ is compact, it is bounded. Choose a rectangle whose sides lie
 strictly outside a large disk containing $K$. Then $K$ lies in its interior.
 The disjoint compact sets $K$ and $\partial R$ have positive distance, which
 is the stated $\delta$.
+
 :::
 
-<1>6. For every $z\in K$,
+:::
+
+::: {.pf-step #s6}
+
+For every $z\in K$,
 $$
 \abs{f_n(z)-g(z)}
 \leq
@@ -171,8 +206,9 @@ $$
 \abs{f_n(\zeta)-g(\zeta)}.
 $$
 
-::: {.proof}
-By Cauchy's integral formula for $f_n$ and step <1>2 for $g$,
+::: pf-proof
+
+By Cauchy's integral formula for $f_n$ and step [](#s2){.pf-ref} for $g$,
 $$
 f_n(z)-g(z)
 =
@@ -186,39 +222,51 @@ z\in K,
 \qquad
 \zeta\in\partial R,
 $$
-step <1>5 gives
+step [](#s5){.pf-ref} gives
 $$
 \abs{\zeta-z}\geq\delta.
 $$
 Estimating the contour integral therefore gives the displayed inequality.
+
 :::
 
-<1>7. The convergence
+:::
+
+::: {.pf-step #s7}
+
+The convergence
 $$
 f_n\longrightarrow g
 $$
 is uniform on every compact subset of $\CC$.
 
-::: {.proof}
-For the rectangle from step <1>5, step <1>1 gives
+::: pf-proof
+
+For the rectangle from step [](#s5){.pf-ref}, step [](#s1){.pf-ref} gives
 $$
 \sup_{\zeta\in\partial R}
 \abs{f_n(\zeta)-g(\zeta)}
 \longrightarrow0.
 $$
-The constant in step <1>6 is independent of $z\in K$. Hence
+The constant in step [](#s6){.pf-ref} is independent of $z\in K$. Hence
 $$
 \sup_{z\in K}\abs{f_n(z)-g(z)}
 \longrightarrow0.
 $$
 Since $K$ was arbitrary, the convergence is uniform on every compact subset
 of $\CC$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves that $g$ is entire, and step <1>7 proves compact-uniform
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves that $g$ is entire, and step [](#s7){.pf-ref} proves compact-uniform
 convergence.
+
 :::
+
+:::
+
 :::

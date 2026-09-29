@@ -31,15 +31,21 @@ Prove that the quotient space $\RR^n/U$ is not Hausdorff.
 :::
 
 ::: {.solution}
-<1>1. As written, the statement has an exceptional case: if $U=\varnothing$, then the quotient is Hausdorff.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+As written, the statement has an exceptional case: if $U=\varnothing$, then the quotient is Hausdorff.
+
+::: pf-proof
+
 Collapsing the empty subset makes no identifications, so
 \[
 \RR^n/\varnothing\cong\RR^n,
 \]
 which is Hausdorff.
 Thus the intended assertion requires $U\neq\varnothing$.
-:::
 
 Assume henceforth that $n\ge1$ and that $U$ is nonempty.
 Let
@@ -48,8 +54,16 @@ q:\RR^n\longrightarrow\RR^n/U
 \]
 be the quotient map, and write $p=q(U)$ for the point obtained by collapsing $U$.
 
-<1>2. The boundary $\partial U$ is nonempty.
-::: {.proof}
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+The boundary $\partial U$ is nonempty.
+
+::: pf-proof
+
 Because $U$ is bounded and $n\ge1$, it is a proper subset of $\RR^n$.
 If $\partial U$ were empty, then, since $U$ is open,
 \[
@@ -57,10 +71,17 @@ If $\partial U$ were empty, then, since $U$ is open,
 \]
 so $U$ would also be closed.
 This would make $U$ a nonempty proper clopen subset of the connected space $\RR^n$, a contradiction.
+
 :::
 
-<1>3. For any $x\in\partial U$, the two distinct quotient points $p$ and $q(x)$ cannot be separated by disjoint open neighborhoods.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+For any $x\in\partial U$, the two distinct quotient points $p$ and $q(x)$ cannot be separated by disjoint open neighborhoods.
+
+::: pf-proof
+
 Since $U$ is open, no boundary point lies in $U$, so
 \[
 x\notin U
@@ -93,11 +114,24 @@ Since $U\subseteq V$, this gives
 W\cap V\neq\varnothing,
 \]
 contradicting the disjointness of $O_p$ and $O_x$.
+
 :::
 
-<1>4. Therefore, for every nonempty bounded open set $U\subset\RR^n$ with $n\ge1$, the quotient $\RR^n/U$ is not Hausdorff.
-::: {.proof}
-By <1>2 choose $x\in\partial U$.
-Then <1>3 exhibits two distinct points of the quotient that admit no disjoint open neighborhoods, which is exactly the failure of the Hausdorff property.
 :::
+
+::: pf-step
+
+Therefore, for every nonempty bounded open set $U\subset\RR^n$ with $n\ge1$, the quotient $\RR^n/U$ is not Hausdorff.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} choose $x\in\partial U$.
+Then step [](#s3){.pf-ref} exhibits two distinct points of the quotient that admit no disjoint open neighborhoods, which is exactly the failure of the Hausdorff property.
+
+:::
+
+:::
+
+:::
+
 :::

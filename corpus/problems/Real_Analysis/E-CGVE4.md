@@ -23,15 +23,26 @@ audit:
 ::: {.solution}
 Let $(N_n)_{n\ge1}$ be measurable sets with $\mu(N_n) = 0$ for all $n$.
 
-<1>1. $\mu\!\left(\bigcup_n N_n\right) \leq \sum_n \mu(N_n)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\mu\!\left(\bigcup_n N_n\right) \leq \sum_n \mu(N_n)$.
+
+::: pf-proof
+
 This is countable subadditivity of the measure $\mu$.
+
 :::
 
-<1>2. Q.E.D.
-
-::: {.proof}
-Each term of $\sum_n \mu(N_n)$ is $0$, so step <1>1 gives $\mu(\bigcup_n N_n) \leq 0$. Since $\mu$ is nonnegative, $\mu(\bigcup_n N_n) = 0$.
 :::
+
+::: pf-qed
+
+Each term of $\sum_n \mu(N_n)$ is $0$, so step [](#s1){.pf-ref} gives $\mu(\bigcup_n N_n) \leq 0$. Since $\mu$ is nonnegative, $\mu(\bigcup_n N_n) = 0$.
+
+:::
+
+:::
+
 :::

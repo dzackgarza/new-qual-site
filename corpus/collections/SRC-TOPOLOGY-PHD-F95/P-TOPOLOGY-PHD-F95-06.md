@@ -35,8 +35,15 @@ Prove that if $i:Y\to X$ is the inclusion map and $y\in Y$, then the induced hom
 :::
 
 ::: {.solution}
-<1>1. Definition of strong deformation retract.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Definition of strong deformation retract.
+
+::: pf-proof
+
 A subspace $Y\subseteq X$ is a \dfn{strong deformation retract} of $X$ if there is a continuous map
 \[
 H:X\times[0,1]\longrightarrow X
@@ -53,13 +60,20 @@ and
 H(y,t)=y\qquad(y\in Y,\;t\in[0,1]).
 \]
 Thus $H$ deforms the identity map of $X$ to a map with image in $Y$, while fixing every point of $Y$ throughout the deformation.
+
 :::
 
-<1>2. The endpoint map gives a retraction $r:X\to Y$ satisfying
+:::
+
+::: {.pf-step #s2}
+
+The endpoint map gives a retraction $r:X\to Y$ satisfying
 \[
 r\circ i=\id_Y.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 r(x)=H(x,1).
@@ -73,10 +87,17 @@ Hence
 \[
 r\circ i=\id_Y.
 \]
+
 :::
 
-<1>3. The maps $i\circ r$ and $\id_X$ are homotopic through maps fixing the basepoint $y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The maps $i\circ r$ and $\id_X$ are homotopic through maps fixing the basepoint $y$.
+
+::: pf-proof
+
 Regarding $r$ as $X\to Y$ and $i$ as the inclusion, the composite $i\circ r:X\to X$ is simply
 \[
 x\longmapsto H(x,1).
@@ -94,20 +115,27 @@ H(y,t)=y
 \qquad(0\le t\le1).
 \]
 Hence this homotopy is basepoint-preserving.
+
 :::
 
-<1>4. On fundamental groups,
+:::
+
+::: {.pf-step #s4}
+
+On fundamental groups,
 \[
 r_*\circ i_*=\id_{\pi_1(Y,y)}
 \quad\text{and}\quad
  i_*\circ r_*=\id_{\pi_1(X,y)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Functoriality of the induced homomorphism gives
 \[
 r_*\circ i_*=(r\circ i)_*.
 \]
-By <1>2, $r\circ i=\id_Y$, so
+By step [](#s2){.pf-ref}, $r\circ i=\id_Y$, so
 \[
 r_*\circ i_*=(\id_Y)_*=\id_{\pi_1(Y,y)}.
 \]
@@ -116,20 +144,33 @@ Likewise,
 \[
 i_*\circ r_*=(i\circ r)_*.
 \]
-By <1>3, $i\circ r$ is basepoint-preserving homotopic to $\id_X$.
+By step [](#s3){.pf-ref}, $i\circ r$ is basepoint-preserving homotopic to $\id_X$.
 Basepoint-preserving homotopic maps induce the same homomorphism on the fundamental group, hence
 \[
 (i\circ r)_*=(\id_X)_*=\id_{\pi_1(X,y)}.
 \]
 This proves both identities.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{i_*:\pi_1(Y,y)\longrightarrow\pi_1(X,y)\text{ is an isomorphism}.}
 \]
-::: {.proof}
-By <1>4, $r_*$ is simultaneously a left and right inverse for $i_*$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $r_*$ is simultaneously a left and right inverse for $i_*$.
 Therefore $i_*$ is an isomorphism with inverse $r_*$.
+
 :::
+
+:::
+
+:::
+
 :::

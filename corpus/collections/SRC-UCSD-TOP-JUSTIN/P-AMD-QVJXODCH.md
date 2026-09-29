@@ -18,7 +18,12 @@ What is its topological degree?
 :::
 
 ::: {.solution}
-<1>1. Interpreting $p$ as a rational map of the Riemann sphere,
+
+::: pf
+
+::: {.pf-step #s1}
+
+Interpreting $p$ as a rational map of the Riemann sphere,
 $$
 p:\mathbb{CP}^1\longrightarrow\mathbb{CP}^1,
 $$
@@ -26,7 +31,9 @@ its topological degree is
 $$
 \boxed{\max\{n,m\}}.
 $$
-::: {.proof}
+
+::: pf-proof
+
 Write $P(z)=\prod_{i=1}^n(z-a_i)$ and $Q(z)=\prod_{j=1}^m(z-b_j)$. Since all $a_i,b_j$ are distinct, $P$ and $Q$ have no common factor. The rational map is represented in homogeneous coordinates by two homogeneous polynomials of the common degree $d=\max(n,m)$:
 $$
 [Z:W]\longmapsto
@@ -35,10 +42,23 @@ $$
 \end{cases}
 $$
 after placing the necessary power of $W$ in the lower-degree component. These homogeneous forms have no common zero on $\mathbb{CP}^1$. A generic value therefore has exactly $d$ preimages counted with multiplicity. Holomorphic maps preserve orientation at regular points, so the topological degree equals this algebraic count, namely $d$.
+
 :::
 
-<1>2. In particular, if the intended map is instead the restriction of $p$ to a large circle with values in $\mathbb C^*$, its winding number is $n-m$.
-::: {.proof}
-On a sufficiently large circle enclosing every zero and pole, the argument principle gives winding number equal to the number of zeros minus the number of poles, namely $n-m$. This is a different notion from the degree of the rational self-map of $S^2$ in <1>1.
 :::
+
+::: pf-step
+
+In particular, if the intended map is instead the restriction of $p$ to a large circle with values in $\mathbb C^*$, its winding number is $n-m$.
+
+::: pf-proof
+
+On a sufficiently large circle enclosing every zero and pole, the argument principle gives winding number equal to the number of zeros minus the number of poles, namely $n-m$. This is a different notion from the degree of the rational self-map of $S^2$ in step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

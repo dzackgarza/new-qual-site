@@ -54,12 +54,18 @@ $$
 S=\{w\in\mathbb C:|\operatorname{Re}w|<1\}.
 $$
 
-<1>1. The function
+::: pf
+
+::: pf-step
+
+The function
 $$
 F(\zeta)=\frac{2i}{\pi}\log\frac{1+\zeta}{1-\zeta}
 $$
 is a biholomorphism from the unit disk onto $S$ and satisfies $F(0)=0$.
-::: {.proof}
+
+::: pf-proof
+
 The Möbius map
 $$
 M(\zeta)=\frac{1+\zeta}{1-\zeta}
@@ -76,10 +82,17 @@ $$
 \operatorname{Re}\left(\frac{2i}{\pi}(u+iv)\right)=-\frac{2v}{\pi}.
 $$
 The composition is the displayed $F$, and $F(0)=0$.
+
 :::
 
-<1>2. Pointwise subordination uses the closed disk of radius $|z|$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Pointwise subordination uses the closed disk of radius $|z|$.
+
+::: pf-proof
+
 The hypothesis $|\operatorname{Re}g(z)|<1$ says exactly that
 $g:\Delta\to S=F(\Delta)$, and $g(0)=F(0)$. Equivalently,
 $$
@@ -98,10 +111,17 @@ This includes $r=0$, where $K_0=\{0\}$ and $g(0)=0$.
 The open-disk subordination statement in the problem follows
 from the same estimate whenever $|z|<r$; the pointwise
 estimate at $r=|z|$ uses the closed disk $K_r$.
+
 :::
 
-<1>3. The explicit strip map has the required radial bound.
-::: {.proof}
+:::
+
+::: pf-step
+
+The explicit strip map has the required radial bound.
+
+::: pf-proof
+
 For $|\zeta|<1$,
 $$
 \log\frac{1+\zeta}{1-\zeta}
@@ -116,11 +136,17 @@ $$
 =\frac2\pi\log\frac{1+r}{1-r}.
 \end{aligned}
 $$
-Apply this with $\zeta=h(z)$ and $r=|z|$ from step <1>2. Then
+Apply this with $\zeta=h(z)$ and $r=|z|$ from step [](#s2){.pf-ref}. Then
 $$
 |g(z)|=|F(h(z))|
 \le\frac2\pi\log\frac{1+|z|}{1-|z|},
 $$
 which is the required estimate.
+
 :::
+
+:::
+
+:::
+
 :::

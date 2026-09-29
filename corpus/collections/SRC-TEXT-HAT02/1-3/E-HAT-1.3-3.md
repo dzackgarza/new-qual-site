@@ -37,8 +37,14 @@ p:\widetilde X\to X
 \]
 is finite and nonempty.
 
-<1>1. The space $\widetilde X$ is Hausdorff.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The space $\widetilde X$ is Hausdorff.
+
+::: pf-proof
+
 Let $\widetilde x\ne\widetilde y$.
 
 If
@@ -61,27 +67,41 @@ Distinct points in the same fiber lie in distinct sheets over $U$ because each s
 Those sheets are disjoint open neighborhoods of $\widetilde x$ and $\widetilde y$.
 
 Thus any two distinct points of $\widetilde X$ have disjoint open neighborhoods.
+
 :::
 
-<1>2. For every $x\in X$, there are open sets
+:::
+
+::: pf-step
+
+For every $x\in X$, there are open sets
 \[
 x\in V_x\subseteq\overline{V_x}\subseteq U_x
 \]
 with $U_x$ evenly covered.
-::: {.proof}
+
+::: pf-proof
+
 Choose an evenly covered open neighborhood $U_x$ of $x$.
 A compact Hausdorff space is regular, so there is an open neighborhood $V_x$ of $x$ whose closure satisfies
 \[
 \overline{V_x}\subseteq U_x.
 \]
+
 :::
 
-<1>3. For each $x$, the set
+:::
+
+::: {.pf-step #s3}
+
+For each $x$, the set
 \[
 p^{-1}(\overline{V_x})
 \]
 is compact.
-::: {.proof}
+
+::: pf-proof
+
 Write the evenly covered decomposition
 \[
 p^{-1}(U_x)=\coprod_{\lambda\in\Lambda_x}W_\lambda,
@@ -103,10 +123,17 @@ W_\lambda\cap p^{-1}(\overline{V_x})
 is homeomorphic via $p$ to $\overline{V_x}$.
 Since $X$ is compact Hausdorff, the closed subset $\overline{V_x}$ is compact.
 Therefore $p^{-1}(\overline{V_x})$ is a finite union of compact sets and is compact.
+
 :::
 
-<1>4. Finitely many of the sets $V_x$ cover $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Finitely many of the sets $V_x$ cover $X$.
+
+::: pf-proof
+
 The family
 \[
 \{V_x:x\in X\}
@@ -116,11 +143,18 @@ Hence there are points $x_1,\dots,x_m$ such that
 \[
 X=V_{x_1}\cup\cdots\cup V_{x_m}.
 \]
+
 :::
 
-<1>5. The space $\widetilde X$ is compact.
-::: {.proof}
-From <1>4,
+:::
+
+::: {.pf-step #s5}
+
+The space $\widetilde X$ is compact.
+
+::: pf-proof
+
+From step [](#s4){.pf-ref},
 \[
 \widetilde X
 =p^{-1}(X)
@@ -135,11 +169,24 @@ Thus equality holds:
 =
 \bigcup_{i=1}^m p^{-1}(\overline{V_{x_i}}).
 \]
-Each set on the right is compact by <1>3, so their finite union is compact.
+Each set on the right is compact by step [](#s3){.pf-ref}, so their finite union is compact.
+
 :::
 
-<1>6. Hence $\widetilde X$ is compact Hausdorff.
-::: {.proof}
-Hausdorffness is <1>1 and compactness is <1>5.
 :::
+
+::: pf-step
+
+Hence $\widetilde X$ is compact Hausdorff.
+
+::: pf-proof
+
+Hausdorffness is step [](#s1){.pf-ref} and compactness is step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -32,17 +32,27 @@ $$
 T:\CC^n\longrightarrow\CC^n.
 $$
 
-<1>1. The assertion holds when $n=1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The assertion holds when $n=1$.
+
+::: pf-proof
+
 In this case $A=(a)$ for some $a\in\CC$, and
 $$
 0=\operatorname{tr}A=a.
 $$
 Thus $A=(0)$.
+
 :::
 
-<1>2. Assume $n\ge2$ and that the assertion holds for $(n-1)\times(n-1)$ complex matrices of trace zero. There is a basis of $\CC^n$ in which the matrix of $T$ has the form
+:::
+
+::: {.pf-step #s2}
+
+Assume $n\ge2$ and that the assertion holds for $(n-1)\times(n-1)$ complex matrices of trace zero. There is a basis of $\CC^n$ in which the matrix of $T$ has the form
 $$
 M=
 \begin{pmatrix}
@@ -52,7 +62,8 @@ c&B
 $$
 where $B$ is an $(n-1)\times(n-1)$ matrix with $\operatorname{tr}B=0$.
 
-::: {.proof}
+::: pf-proof
+
 If $T=0$, any basis gives the asserted form with $B=0$.
 
 Suppose $T\ne0$. Since $\operatorname{tr}T=0$, the map $T$ cannot be a scalar multiple of the identity: if $T=\lambda I$, then
@@ -76,11 +87,17 @@ $$
 0=\operatorname{tr}M=0+\operatorname{tr}B,
 $$
 and hence $\operatorname{tr}B=0$.
+
 :::
 
-<1>3. The matrix $M$ from step <1>2 is similar to a matrix whose diagonal entries are all zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The matrix $M$ from step [](#s2){.pf-ref} is similar to a matrix whose diagonal entries are all zero.
+
+::: pf-proof
+
 By the induction hypothesis applied to $B$, there is
 $$
 S\in\operatorname{GL}_{n-1}(\CC)
@@ -102,11 +119,17 @@ S^{-1}c&S^{-1}BS
 \end{pmatrix}.
 $$
 Its first diagonal entry is zero, and all remaining diagonal entries are zero because they are the diagonal entries of $S^{-1}BS$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 gives the base case, and steps <1>2--<1>3 give the induction step. Since $M$ is a matrix of $T$ in a basis, it is similar to the original matrix $A$, so step <1>3 proves the required assertion.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the base case, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the induction step. Since $M$ is a matrix of $T$ in a basis, it is similar to the original matrix $A$, so step [](#s3){.pf-ref} proves the required assertion.
+
+:::
+
+:::
+
 :::

@@ -33,20 +33,34 @@ defines a bounded continuous function on $\mathbb R$.
 :::
 
 ::: {.solution}
-<1>1. The convolution is bounded, with
+
+::: pf
+
+::: {.pf-step #s1}
+
+The convolution is bounded, with
 $$
 \|f*g\|_\infty\le\|f\|_2\|g\|_2.
 $$
-::: {.proof}
+
+::: pf-proof
+
 For each $x$, the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]] and translation invariance of the $L^2$ norm give
 $$
 |(f*g)(x)|\le \|f\|_2\,\|g(x-\cdot)\|_2=\|f\|_2\|g\|_2.
 $$
 Taking the supremum over $x$ proves the claim.
+
 :::
 
-<1>2. The convolution is uniformly continuous.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The convolution is uniformly continuous.
+
+::: pf-proof
+
 For $h\in\mathbb R$,
 $$
 (f*g)(x+h)-(f*g)(x)
@@ -58,10 +72,17 @@ $$
 \le\|f\|_2\,\|g(\cdot+h)-g\|_2.
 $$
 By [[PR-JX4YU|continuity of translation in $L^p$]], the final norm tends to $0$ as $h\to0$. The bound is independent of $x$, so $f*g$ is uniformly continuous, hence continuous.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>1 proves boundedness and step <1>2 proves continuity.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves boundedness and step [](#s2){.pf-ref} proves continuity.
+
+:::
+
+:::
+
 :::

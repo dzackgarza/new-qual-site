@@ -35,13 +35,19 @@ is an increasing function of $k$.
 :::
 
 ::: {.solution}
-<1>1. For every $k\in[0,1)$, the integrand
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $k\in[0,1)$, the integrand
 $$
 x\longmapsto\frac1{\sqrt{1-k\cos^2x}}
 $$
 is continuous on $[0,\pi/2]$.
 
-::: {.proof}
+::: pf-proof
+
 For every $x\in[0,\pi/2]$,
 $$
 1-k\cos^2x
@@ -52,9 +58,14 @@ $$
 $$
 Thus the denominator never vanishes, and the displayed function is
 continuous.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 0\leq k_1<k_2<1,
 $$
@@ -65,26 +76,33 @@ $$
 \frac1{\sqrt{1-k_2\cos^2x}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $x<\pi/2$, one has $\cos^2x>0$. Hence
 $$
 1-k_2\cos^2x
 <
 1-k_1\cos^2x.
 $$
-Both quantities are positive by step <1>1. Taking positive square roots
+Both quantities are positive by step [](#s1){.pf-ref}. Taking positive square roots
 and then reciprocals reverses the inequality, giving the claim.
+
 :::
 
-<1>3. If $0\leq k_1<k_2<1$, then
+:::
+
+::: {.pf-step #s3}
+
+If $0\leq k_1<k_2<1$, then
 $$
 F(k_1)<F(k_2).
 $$
 
-::: {.proof}
-By step <1>2, the $k_2$ integrand is strictly larger than the $k_1$
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the $k_2$ integrand is strictly larger than the $k_1$
 integrand throughout the interval $[0,\pi/2)$. Both are continuous by step
-<1>1. Therefore their difference is a nonnegative continuous function that
+[](#s1){.pf-ref}. Therefore their difference is a nonnegative continuous function that
 is positive on a nonempty interval, so its integral is positive:
 $$
 F(k_2)-F(k_1)
@@ -98,17 +116,29 @@ F(k_2)-F(k_1)
 >
 0.
 $$
+
 :::
 
-<1>4. The function $F$ is strictly increasing on $[0,1)$.
-
-::: {.proof}
-Step <1>3 applies to every pair $k_1<k_2$ in the stated interval.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Step <1>4 proves the required monotonicity.
+The function $F$ is strictly increasing on $[0,1)$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} applies to every pair $k_1<k_2$ in the stated interval.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the required monotonicity.
+
+:::
+
+:::
+
 :::

@@ -42,8 +42,14 @@ s_i\in\mcf_i(U),
 \]
 such that every transition map of the inverse system sends the appropriate component to the next one.  Restriction maps are defined componentwise.
 
-<1>1. The presheaf $\mcp$ satisfies local uniqueness.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The presheaf $\mcp$ satisfies local uniqueness.
+
+::: pf-proof
+
 Let
 \[
 U=\bigcup_{\alpha}U_\alpha
@@ -67,10 +73,17 @@ Since $\mcf_i$ is a sheaf,
 s_i=t_i.
 \]
 This holds for every $i$, hence the tuples $s$ and $t$ are equal in $\mcp(U)$.
+
 :::
 
-<1>2. The presheaf $\mcp$ satisfies gluing.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The presheaf $\mcp$ satisfies gluing.
+
+::: pf-proof
+
 Let
 \[
 U=\bigcup_\alpha U_\alpha
@@ -111,33 +124,52 @@ Hence
 s=(s_i)_i\in\mcp(U).
 \]
 By construction, $s$ restricts to every $s_\alpha$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 \[
 \boxed{
 U\longmapsto\varprojlim_i\mcf_i(U)
 }
 \]
 is already a sheaf.
-::: {.proof}
-Step <1>1 proves uniqueness and <1>2 proves existence of glued sections for every open cover.  These are precisely the sheaf axioms.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} proves uniqueness and step [](#s2){.pf-ref} proves existence of glued sections for every open cover.  These are precisely the sheaf axioms.
+
 :::
 
-<1>4. For every $i$, component projection defines a canonical sheaf morphism
+:::
+
+::: pf-step
+
+For every $i$, component projection defines a canonical sheaf morphism
 \[
 \pi_i:\mcp\longrightarrow\mcf_i,
 \]
 and the $\pi_i$ are compatible with the inverse system.
-::: {.proof}
+
+::: pf-proof
+
 On each open set $U$, define
 \[
 \pi_i(U)((s_j)_j)=s_i.
 \]
 This commutes with restrictions because restrictions in $\mcp$ are componentwise.  Compatibility with transition maps is exactly the defining compatibility condition on inverse-limit tuples.
+
 :::
 
-<1>5. Let $\mcg$ be a sheaf with a compatible family of morphisms
+:::
+
+::: {.pf-step #s5}
+
+Let $\mcg$ be a sheaf with a compatible family of morphisms
 \[
 \phi_i:\mcg\longrightarrow\mcf_i.
 \]
@@ -151,7 +183,9 @@ defined by
 \Phi(U)(s)=(\phi_i(U)(s))_i.
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $s\in\mcg(U)$, compatibility of the morphisms $\phi_i$ with the inverse system says exactly that the tuple
 \[
 (\phi_i(U)(s))_i
@@ -170,10 +204,17 @@ By construction,
 \pi_i\circ\Phi=\phi_i
 \]
 for every $i$.
+
 :::
 
-<1>6. The morphism $\Phi$ in <1>5 is unique with this property.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The morphism $\Phi$ in step [](#s5){.pf-ref} is unique with this property.
+
+::: pf-proof
+
 Suppose
 \[
 \Psi:\mcg\longrightarrow\mcp
@@ -194,9 +235,14 @@ Thus every component of $\Psi(U)(s)$ agrees with the corresponding component of 
 \Psi(U)(s)=\Phi(U)(s).
 \]
 Hence $\Psi=\Phi$.
+
 :::
 
-<1>7. Consequently, the sheaf $\mcp$ with its projections $\pi_i$ is the inverse limit in the category of sheaves:
+:::
+
+::: {.pf-step #s7}
+
+Consequently, the sheaf $\mcp$ with its projections $\pi_i$ is the inverse limit in the category of sheaves:
 \[
 \boxed{
 \varprojlim_i\mcf_i(U)
@@ -205,12 +251,21 @@ Hence $\Psi=\Phi$.
 \quad\text{for every open }U.
 }
 \]
-::: {.proof}
-Steps <1>5 and <1>6 are exactly the existence and uniqueness clauses in the universal property of a categorical inverse limit.
+
+::: pf-proof
+
+Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} are exactly the existence and uniqueness clauses in the universal property of a categorical inverse limit.
+
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Step <1>3 proves the sectionwise construction is a sheaf, and <1>7 proves it is the inverse limit in sheaves.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the sectionwise construction is a sheaf, and step [](#s7){.pf-ref} proves it is the inverse limit in sheaves.
+
+:::
+
+:::
+
 :::

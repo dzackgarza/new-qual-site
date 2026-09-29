@@ -43,10 +43,15 @@ Let $f:\mathbb R^n\to\mathbb R$ be a function whose partial derivatives of order
 ::: {.solution}
 Let $H_f(x)$ denote the Hessian matrix of $f$ at $x$.
 
-<1>1. A critical point $a$ with positive-definite Hessian $H_f(a)$ is a
+::: pf
+
+::: {.pf-step #s1}
+
+A critical point $a$ with positive-definite Hessian $H_f(a)$ is a
 strict local minimum.
 
-::: {.proof}
+::: pf-proof
+
 Because $H_f(a)$ is positive definite, there is a constant $c>0$ such that
 $$
 v^T H_f(a)v\ge 2c\norm{v}^2
@@ -83,12 +88,18 @@ f(a+h)-f(a)
 \end{aligned}
 $$
 which is strictly positive for $h\ne0$.
+
 :::
 
-<1>2. If the Hessian is positive definite everywhere, there is at most one
+:::
+
+::: {.pf-step #s2}
+
+If the Hessian is positive definite everywhere, there is at most one
 critical point.
 
-::: {.proof}
+::: pf-proof
+
 Suppose, toward a contradiction, that $a\ne b$ are both critical points.
 Put
 $$
@@ -115,11 +126,17 @@ g'(0)=\nabla f(a)\cdot v=0,
 g'(1)=\nabla f(b)\cdot v=0,
 $$
 contradicting strict increase.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part 1, and step <1>2 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part 1, and step [](#s2){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

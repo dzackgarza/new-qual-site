@@ -36,8 +36,15 @@ For $a \in \mathbb{R}^n$, let $f_a \in L^2(\mathbb{R}^n)$ be given by $f_a(x) = 
 :::
 
 ::: {.solution}
-<1>1. Extend the translation identity from $L^1\cap L^2$ to all of $L^2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Extend the translation identity from $L^1\cap L^2$ to all of $L^2$.
+
+::: pf-proof
+
 Fix $a\in\mathbb R^n$. Choose $f_j\in L^1(\mathbb R^n)\cap L^2(\mathbb R^n)$ such that
 \[
 f_j\to f
@@ -71,10 +78,17 @@ and multiplication by the unimodular factor $e^{-2\pi i\xi\cdot a}$ is an $L^2$ 
 =e^{-2\pi i\xi\cdot a}\widehat f(\xi)
 \quad\text{a.e.}}
 \]
+
 :::
 
-<1>2. Compute the orthogonal complement of the translation span.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the orthogonal complement of the translation span.
+
+::: pf-proof
+
 Let
 \[
 V:=\overline{\operatorname{span}}\{f_a:a\in\mathbb R^n\}
@@ -114,10 +128,17 @@ Since $\widehat f(\xi)\ne0$ almost everywhere, it follows that
 \qquad\text{a.e.}
 \]
 and therefore $g=0$ by Plancherel.
+
 :::
 
-<1>3. Conclude density.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude density.
+
+::: pf-proof
+
 Step 2 shows
 \[
 V^\perp=\{0\}.
@@ -132,5 +153,11 @@ Hence
 \operatorname{span}\{f_a:a\in\mathbb R^n\}
 \text{ is dense in }L^2(\mathbb R^n).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

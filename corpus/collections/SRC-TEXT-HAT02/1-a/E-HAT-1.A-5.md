@@ -42,7 +42,11 @@ h_n:C_n\to C_{n+1}
 \]
 fixing $x_0$.
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 g:X\to X
 \]
@@ -59,24 +63,38 @@ by collapsing $C_0$ to $x_0$ and, for $n\ge0$, setting
 \[
 f|_{C_{n+1}}=h_n^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each map is continuous on every closed cell and fixes the common $0$-cell.
 By the weak topology of the CW wedge, the resulting maps are continuous on $X$.
+
 :::
 
-<1>2. One has
+:::
+
+::: pf-step
+
+One has
 \[
 f\circ g=\operatorname{id}_X.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For every $n\ge0$,
 \[
 (f\circ g)|_{C_n}=h_n^{-1}\circ h_n=\operatorname{id}_{C_n}.
 \]
 The wedgepoint is fixed as well.
+
 :::
 
-<1>3. The fundamental group is
+:::
+
+::: pf-step
+
+The fundamental group is
 \[
 \pi_1(X,x_0)\cong F(a_0,a_1,a_2,\dots),
 \]
@@ -91,13 +109,22 @@ f_*(a_0)=1,
 \qquad
 f_*(a_{n+1})=a_n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The fundamental group of a graph is free on the edges outside a maximal tree; here the $0$-skeleton itself is a maximal tree, so the circles give the stated free basis.
 The formulas follow directly from the definitions of $f$ and $g$ on each circle.
+
 :::
 
-<1>4. Neither $f_*$ nor $g_*$ is an isomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+Neither $f_*$ nor $g_*$ is an isomorphism.
+
+::: pf-proof
+
 The map $g_*$ is injective but not surjective, since no reduced word in its image contains the generator $a_0$.
 The map $f_*$ is surjective but not injective, since
 \[
@@ -112,5 +139,11 @@ Nevertheless
 f_*g_*=(fg)_*=\operatorname{id}.
 \]
 Thus $f,g$ have the required properties.
+
 :::
+
+:::
+
+:::
+
 :::

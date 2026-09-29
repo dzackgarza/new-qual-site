@@ -25,20 +25,32 @@ for every $x\in R$.
 :::
 
 ::: {.solution}
-<1>1. For each positive integer $k$, define a function
+
+::: pf
+
+::: {.pf-step #s1}
+
+For each positive integer $k$, define a function
 $$
 F_k:R\longrightarrow R,
 \qquad
 F_k(x)=x^k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiplication in a ring is associative, so the positive power $x^k$ is defined for every $x\in R$ and every $k\geq1$. Hence $F_k$ is a well-defined function from $R$ to itself.
+
 :::
 
-<1>2. Only finitely many distinct functions $R\to R$ exist.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Only finitely many distinct functions $R\to R$ exist.
+
+::: pf-proof
+
 Since $R$ is finite, the set
 $$
 R^R=\{F:R\to R\}
@@ -48,29 +60,41 @@ $$
 \abs{R}^{\abs{R}},
 $$
 which is finite.
+
 :::
 
-<1>3. There exist positive integers $m>n$ such that
+:::
+
+::: {.pf-step #s3}
+
+There exist positive integers $m>n$ such that
 $$
 F_m=F_n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The infinite sequence
 $$
 F_1,F_2,F_3,\ldots
 $$
-takes values in the finite set $R^R$ from step <1>2. By the pigeonhole principle, two of these functions are equal. Thus there are positive integers $m>n$ with $F_m=F_n$.
+takes values in the finite set $R^R$ from step [](#s2){.pf-ref}. By the pigeonhole principle, two of these functions are equal. Thus there are positive integers $m>n$ with $F_m=F_n$.
+
 :::
 
-<1>4. For the integers $m>n$ from step <1>3,
+:::
+
+::: {.pf-step #s4}
+
+For the integers $m>n$ from step [](#s3){.pf-ref},
 $$
 x^m=x^n
 $$
 for every $x\in R$.
 
-::: {.proof}
-Equality $F_m=F_n$ means equality at every argument $x\in R$. By the definition in step <1>1,
+::: pf-proof
+
+Equality $F_m=F_n$ means equality at every argument $x\in R$. By the definition in step [](#s1){.pf-ref},
 $$
 x^m
 =
@@ -80,11 +104,17 @@ F_n(x)
 =
 x^n.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required uniform equality of powers.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required uniform equality of powers.
+
+:::
+
+:::
+
 :::

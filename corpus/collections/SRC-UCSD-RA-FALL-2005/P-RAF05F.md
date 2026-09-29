@@ -35,8 +35,15 @@ Let $(X, \mathcal{M}, \mu)$ be a finite measure space, and $0 \leq f_1 \leq f_2 
 :::
 
 ::: {.solution}
-<1>1. Prove convergence of the distribution functions.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove convergence of the distribution functions.
+
+::: pf-proof
+
 Fix $r\ge0$ and set
 \[
 E_j:=\{x\in X:f_j(x)>r\},
@@ -68,19 +75,33 @@ that is,
 \longrightarrow
 \mu(f^{-1}((r,\infty])).}
 \]
+
 :::
 
-<1>2. Write $f$ as an integral of its superlevel indicators.
-::: {.proof}
+:::
+
+::: pf-step
+
+Write $f$ as an integral of its superlevel indicators.
+
+::: pf-proof
+
 For every $x\in X$,
 \[
 f(x)=\int_0^\infty \mathbf1_{\{r<f(x)\}}\,dr.
 \]
 Indeed, if $f(x)=a<\infty$, the integrand is the indicator of $(0,a)$; if $f(x)=\infty$, the integral is infinite.
+
 :::
 
-<1>3. Apply Tonelli's theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Tonelli's theorem.
+
+::: pf-proof
+
 The function
 \[
 (x,r)\longmapsto \mathbf1_{\{r<f(x)\}}
@@ -100,5 +121,11 @@ Thus
 \int_X f\,d\mu
 =\int_0^\infty \mu(f^{-1}((r,\infty]))\,dr.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

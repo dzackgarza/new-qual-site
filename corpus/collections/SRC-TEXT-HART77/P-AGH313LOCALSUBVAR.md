@@ -39,9 +39,14 @@ Note also that if $Y$ is not a point then $K(Y)$ is not algebraically closed, so
 Choose a point $P\in Y$.
 Since $Y$ is locally closed in $X$, there is an open neighborhood $W\subseteq X$ of $P$ such that $Y\cap W$ is closed in $W$; shrinking further, take $W$ affine.
 
-<1>1. Replacing $(X,Y)$ by $(W,Y\cap W)$ does not change $\mco_{Y,X}$, $\dim X$, or $\dim Y$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Replacing $(X,Y)$ by $(W,Y\cap W)$ does not change $\mco_{Y,X}$, $\dim X$, or $\dim Y$.
+
+::: pf-proof
+
 Both $W\cap Y$ and the intersection of $Y$ with the domain of any representative $\gens{U,f}$ are nonempty open subsets of the irreducible variety $Y$.
 Their intersection is therefore nonempty.
 Thus restricting representatives from $U$ to $U\cap W$ defines a map
@@ -58,7 +63,6 @@ $$
 \dim(Y\cap W)=\dim Y.
 $$
 We may therefore assume from now on that $X$ is affine and that $Y$ is closed in $X$.
-:::
 
 Put
 $$
@@ -68,12 +72,19 @@ A=A(X),
 $$
 The ideal $\mathfrak p$ is prime because $Y$ is irreducible.
 
-<1>2. There is a canonical ring isomorphism
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+There is a canonical ring isomorphism
 $$
 \mco_{Y,X}\cong A_{\mathfrak p}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $s\notin\mathfrak p$, then $s$ does not vanish identically on $Y$.
 Hence the principal open set $D(s)$ meets $Y$, and the fraction $a/s$ is regular on $D(s)$.
 This defines a homomorphism
@@ -95,12 +106,18 @@ The class $\gens{U,f}$ is therefore represented by the image of $a/s\in A_{\math
 
 For injectivity, two fractions whose classes agree are equal as regular functions on a nonempty open subset of the irreducible affine variety $X$.
 They are consequently equal in the function field $K(X)=\operatorname{Frac}A$, hence equal in the subring $A_{\mathfrak p}$.
+
 :::
 
-<1>3. The ring $\mco_{Y,X}$ is local with residue field $K(Y)$.
+:::
 
-::: {.proof}
-By step <1>2, it is the localization $A_{\mathfrak p}$, whose unique maximal ideal is
+::: {.pf-step #s3}
+
+The ring $\mco_{Y,X}$ is local with residue field $K(Y)$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, it is the localization $A_{\mathfrak p}$, whose unique maximal ideal is
 $$
 \mathfrak pA_{\mathfrak p}.
 $$
@@ -115,14 +132,20 @@ Thus this localization is
 $$
 \operatorname{Frac}(A/\mathfrak p)=K(Y).
 $$
+
 :::
 
-<1>4. The dimension of the local ring is
+:::
+
+::: {.pf-step #s4}
+
+The dimension of the local ring is
 $$
 \dim\mco_{Y,X}=\boxed{\dim X-\dim Y}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The prime ideals of $A_{\mathfrak p}$ correspond to the prime ideals of $A$ contained in $\mathfrak p$, so
 $$
 \dim A_{\mathfrak p}=\operatorname{ht}\mathfrak p.
@@ -131,12 +154,18 @@ For the finitely generated $k$-domain $A$, the affine dimension formula [@Har10a
 $$
 \operatorname{ht}\mathfrak p+\dim(A/\mathfrak p)=\dim A.
 $$
-Since $\dim A=\dim X$ and $\dim(A/\mathfrak p)=\dim Y$, step <1>2 gives the claimed equality.
+Since $\dim A=\dim X$ and $\dim(A/\mathfrak p)=\dim Y$, step [](#s2){.pf-ref} gives the claimed equality.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves that $\mco_{Y,X}$ is local with residue field $K(Y)$, and step <1>4 computes its dimension.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves that $\mco_{Y,X}$ is local with residue field $K(Y)$, and step [](#s4){.pf-ref} computes its dimension.
+
+:::
+
+:::
+
 :::

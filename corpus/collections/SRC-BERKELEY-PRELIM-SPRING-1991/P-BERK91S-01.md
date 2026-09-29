@@ -52,10 +52,15 @@ the groups of order $4$ by their element orders.
 For a positive integer $m$, write $C_m\coloneqq(\ZZ/m\ZZ,+)$.
 Let $G$ be a finite group with identity $e$ and $\abs{G}\leq5$.
 
-<1>1. If $\abs{G}=1$, then $G\cong C_1$. If
+::: pf
+
+::: {.pf-step #s1}
+
+If $\abs{G}=1$, then $G\cong C_1$. If
 $\abs{G}=p\in\{2,3,5\}$, then $G\cong C_p$.
 
-::: {.proof}
+::: pf-proof
+
 In the first case $G=\{e\}$, which is isomorphic to $C_1$ by
 the unique map. In the second case choose $g\in G\setminus\{e\}$.
 By [[T-GJNT5|Lagrange's theorem]], the order of $g$ divides
@@ -67,12 +72,18 @@ $$
 $$
 is well defined because $g^p=e$, is a homomorphism by the
 exponent law, and is bijective because $g$ has order $p$.
+
 :::
 
-<1>2. If $\abs{G}=4$ and some element has order $4$, then
+:::
+
+::: {.pf-step #s2}
+
+If $\abs{G}=4$ and some element has order $4$, then
 $G\cong C_4$.
 
-::: {.proof}
+::: pf-proof
+
 Choose an element $g$ of order $4$. Its powers
 $e,g,g^2,g^3$ are distinct and exhaust $G$. Thus
 $$
@@ -80,15 +91,25 @@ $$
 \qquad \overline r\longmapsto g^r,
 $$
 is a well-defined bijective homomorphism.
+
 :::
 
-<1>3. If $\abs{G}=4$ and no element has order $4$, then
+:::
+
+::: {.pf-step #s3}
+
+If $\abs{G}=4$ and no element has order $4$, then
 $G\cong C_2\times C_2$.
 
-<2>1. Every element of $G$ is its own inverse, and $G$ is
+::: pf-proof
+
+::: {.pf-step #s3-1}
+
+Every element of $G$ is its own inverse, and $G$ is
 commutative.
 
-::: {.proof}
+::: pf-proof
+
 By [[T-GJNT5|Lagrange's theorem]], each element has order
 $1$, $2$, or $4$. The assumption excludes order $4$, so
 $x^2=e$ for every $x\in G$. Consequently, for every
@@ -96,18 +117,24 @@ $x,y\in G$,
 $$
 xy=(xy)^{-1}=y^{-1}x^{-1}=yx.
 $$
+
 :::
 
-<2>2. For distinct elements $a,b\in G\setminus\{e\}$, the map
+:::
+
+::: {.pf-step #s3-2}
+
+For distinct elements $a,b\in G\setminus\{e\}$, the map
 $$
 \theta\colon C_2\times C_2\longrightarrow G,
 \qquad (\overline r,\overline s)\longmapsto a^r b^s,
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 Such $a,b$ exist since $G\setminus\{e\}$ has three elements.
-Step <2>1 gives $a^2=b^2=e$ and $ab=ba$. The first equalities
+Step [](#s3-1){.pf-ref} gives $a^2=b^2=e$ and $ab=ba$. The first equalities
 make $\theta$ independent of the integer representatives
 $r,s$, and commutativity gives
 $$
@@ -120,34 +147,50 @@ $a,b$. If $ab=e$, then $b=a^{-1}=a$; if $ab=a$, then $b=e$;
 and if $ab=b$, then $a=e$. Each equality contradicts that
 choice. Thus the four images are distinct and exhaust $G$,
 so $\theta$ is bijective.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-Step <2>2 constructs the required isomorphism, using
-step <2>1.
 :::
 
-<1>4. A complete list, with no two entries isomorphic, is
+::: pf-qed
+
+Step [](#s3-2){.pf-ref} constructs the required isomorphism, using
+step [](#s3-1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+A complete list, with no two entries isomorphic, is
 $$
 \boxed{C_1,\ C_2,\ C_3,\ C_4,\ C_2\times C_2,\ C_5}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A group contains its identity, so its order is a positive
-integer. Steps <1>1--<1>3 exhaust the orders $1,2,3,4,5$.
+integer. Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} exhaust the orders $1,2,3,4,5$.
 Every listed group has the required order. Groups with
 different orders cannot be isomorphic. Among the two groups
 of order $4$, the element $\overline1\in C_4$ has order $4$,
 whereas every nonidentity element of $C_2\times C_2$ has
 order $2$. An isomorphism preserves element orders, so these
 two groups are not isomorphic.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives every isomorphism class exactly once.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives every isomorphism class exactly once.
+
+:::
+
+:::
+
 :::

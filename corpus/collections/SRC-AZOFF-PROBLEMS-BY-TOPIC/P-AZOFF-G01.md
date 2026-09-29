@@ -41,7 +41,11 @@ $$
 \Gamma_R=\{Re^{i\theta}:0\leq\theta\leq\pi\}.
 $$
 
-<1>1. The only poles of $F$ inside $C_R$ are
+::: pf
+
+::: {.pf-step #s1}
+
+The only poles of $F$ inside $C_R$ are
 $$
 z=i
 \qquad\text{and}\qquad
@@ -58,7 +62,8 @@ $$
 -\frac{3i}{16}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The poles are the zeros of
 $$
 (1+z^2)(1+9z^2),
@@ -102,15 +107,21 @@ $$
 -\frac{3i}{16}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The integral of $F$ over the semicircular arc tends to zero:
+:::
+
+::: {.pf-step #s2}
+
+The integral of $F$ over the semicircular arc tends to zero:
 $$
 \int_{\Gamma_R}F(z)\,dz\longrightarrow0
 $$
 as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 On $\Gamma_R$,
 $$
 \abs{1+z^2}\geq R^2-1
@@ -134,9 +145,14 @@ $$
 \frac{\pi R}{(R^2-1)(9R^2-1)}
 \longrightarrow0.
 $$
+
 :::
 
-<1>3. The integral over the whole real line is
+:::
+
+::: {.pf-step #s3}
+
+The integral over the whole real line is
 $$
 \int_{-\infty}^{\infty}
 \frac{dx}{(1+x^2)(1+9x^2)}
@@ -144,8 +160,9 @@ $$
 \frac{\pi}{4}.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>1,
+::: pf-proof
+
+By the residue theorem and step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \int_{C_R}F(z)\,dz
@@ -169,11 +186,16 @@ $$
 =
 \frac{\pi}{4}.
 $$
-Letting $R\to\infty$ and using step <1>2 gives the displayed real-line
+Letting $R\to\infty$ and using step [](#s2){.pf-ref} gives the displayed real-line
 integral.
+
 :::
 
-<1>4. The requested integral is
+:::
+
+::: {.pf-step #s4}
+
+The requested integral is
 $$
 \boxed{
 \int_0^{\infty}
@@ -183,8 +205,9 @@ $$
 }
 $$
 
-::: {.proof}
-The integrand is even. Therefore step <1>3 gives
+::: pf-proof
+
+The integrand is even. Therefore step [](#s3){.pf-ref} gives
 $$
 2\int_0^{\infty}
 \frac{dx}{(1+x^2)(1+9x^2)}
@@ -192,11 +215,17 @@ $$
 \frac{\pi}{4}.
 $$
 Divide by $2$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

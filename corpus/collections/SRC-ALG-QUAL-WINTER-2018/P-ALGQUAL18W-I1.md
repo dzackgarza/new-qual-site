@@ -40,7 +40,11 @@ $$
 K=\QQ(\alpha).
 $$
 
-<1>1. The element $\alpha$ is a root of
+::: pf
+
+::: {.pf-step #s1}
+
+The element $\alpha$ is a root of
 $$
 h(x)
 =
@@ -50,7 +54,8 @@ x^4-4x^2+2
 \in\QQ[x].
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 \alpha^2=2+\sqrt2.
@@ -67,21 +72,32 @@ Thus
 $$
 h(\alpha)=0.
 $$
+
 :::
 
-<1>2. The element
+:::
+
+::: pf-step
+
+The element
 $$
 \sqrt2=\alpha^2-2
 $$
 belongs to $K$.
 
-::: {.proof}
+::: pf-proof
+
 The expression $\alpha^2-2$ is a polynomial in $\alpha$ with rational
-coefficients, so it lies in $\QQ(\alpha)=K$. Step <1>1 identifies it with
+coefficients, so it lies in $\QQ(\alpha)=K$. Step [](#s1){.pf-ref} identifies it with
 $\sqrt2$.
+
 :::
 
-<1>3. The other positive square root
+:::
+
+::: {.pf-step #s3}
+
+The other positive square root
 $$
 \beta
 \coloneqq
@@ -89,7 +105,8 @@ $$
 $$
 also belongs to $K$.
 
-::: {.proof}
+::: pf-proof
+
 Define
 $$
 \gamma
@@ -119,16 +136,22 @@ Since $K$ is closed under negation and $\gamma\in K$, it follows that
 $$
 \beta=\sqrt{2-\sqrt2}\in K.
 $$
+
 :::
 
-<1>4. The four roots of $h(x)$ are exactly
+:::
+
+::: {.pf-step #s4}
+
+The four roots of $h(x)$ are exactly
 $$
 \pm\alpha,
 \qquad
 \pm\beta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The equation
 $$
 h(x)=0
@@ -155,13 +178,19 @@ and
 $$
 \pm\sqrt{2-\sqrt2}=\pm\beta.
 $$
+
 :::
 
-<1>5. The polynomial $h(x)$ splits completely over $K$.
+:::
 
-::: {.proof}
-By definition $\alpha\in K$, so also $-\alpha\in K$. Step <1>3 gives
-$\beta\in K$, hence also $-\beta\in K$. Step <1>4 lists all roots of $h$.
+::: {.pf-step #s5}
+
+The polynomial $h(x)$ splits completely over $K$.
+
+::: pf-proof
+
+By definition $\alpha\in K$, so also $-\alpha\in K$. Step [](#s3){.pf-ref} gives
+$\beta\in K$, hence also $-\beta\in K$. Step [](#s4){.pf-ref} lists all roots of $h$.
 Therefore
 $$
 h(x)
@@ -169,20 +198,31 @@ h(x)
 (x-\alpha)(x+\alpha)(x-\beta)(x+\beta)
 $$
 in $K[x]$.
+
 :::
 
-<1>6. The field $K$ is the splitting field of $h(x)$ over $\QQ$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The field $K$ is the splitting field of $h(x)$ over $\QQ$.
+
+::: pf-proof
+
 Since $\alpha$ is a root of $h$, every splitting field of $h$ contains
 $$
 \QQ(\alpha)=K.
 $$
-Conversely, step <1>5 shows that $K$ already contains every root of $h$.
+Conversely, step [](#s5){.pf-ref} shows that $K$ already contains every root of $h$.
 Hence $K$ itself is the splitting field.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{
 \QQ(\sqrt{2+\sqrt2})/\QQ
@@ -190,18 +230,25 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 A splitting field of a polynomial over the base field is a normal extension.
-Step <1>6 identifies $K$ as the splitting field of
+Step [](#s6){.pf-ref} identifies $K$ as the splitting field of
 $$
 x^4-4x^2+2
 $$
 over $\QQ$. Hence $K/\QQ$ is normal.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 proves that the statement in the problem is true.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} proves that the statement in the problem is true.
+
+:::
+
+:::
+
 :::

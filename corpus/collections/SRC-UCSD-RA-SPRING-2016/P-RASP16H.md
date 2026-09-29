@@ -34,28 +34,62 @@ Prove that the Fourier transform $\hat{f}$ is differentiable at every point $\xi
 ::: {.solution}
 **Goal.** Show $\hat f$ is differentiable everywhere when $f, xf \in L^1$.
 
-<1>1. $\hat f(\xi) = \int f(x) e^{-2\pi i x\xi}\,dx$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$\hat f(\xi) = \int f(x) e^{-2\pi i x\xi}\,dx$.
+
+::: pf-proof
+
 definition.
+
 :::
 
-<1>2. The integrand is differentiable in $\xi$ with derivative $-2\pi i x f(x) e^{-2\pi i x\xi}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The integrand is differentiable in $\xi$ with derivative $-2\pi i x f(x) e^{-2\pi i x\xi}$.
+
+::: pf-proof
+
 differentiate $e^{-2\pi i x\xi}$ with respect to $\xi$.
+
 :::
 
-<1>3. The derivative is dominated by $2\pi |x f(x)| \in L^1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The derivative is dominated by $2\pi |x f(x)| \in L^1$.
+
+::: pf-proof
+
 $|{-2\pi i x f(x) e^{-2\pi i x\xi}}| = 2\pi |x f(x)|$, and $xf \in L^1$ by hypothesis.
+
 :::
 
-<1>4. Hence $\hat f$ is differentiable and $\hat f'(\xi) = \int (-2\pi i x) f(x) e^{-2\pi i x\xi}\,dx = -2\pi i \widehat{xf}(\xi)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Hence $\hat f$ is differentiable and $\hat f'(\xi) = \int (-2\pi i x) f(x) e^{-2\pi i x\xi}\,dx = -2\pi i \widehat{xf}(\xi)$.
+
+::: pf-proof
+
 differentiation under the integral sign, justified by the dominated convergence theorem (the difference quotients are dominated by $2\pi |xf| \in L^1$).
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4 shows $\hat f$ is differentiable at every $\xi$.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} shows $\hat f$ is differentiable at every $\xi$.
+
+:::
+
+:::
+
 :::

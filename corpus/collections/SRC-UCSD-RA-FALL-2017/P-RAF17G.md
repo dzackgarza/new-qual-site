@@ -40,8 +40,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Establish uniform boundedness and equicontinuity for $p>1$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Establish uniform boundedness and equicontinuity for $p>1$.
+
+::: pf-proof
+
 Fix $p>1$ and let $q=p/(p-1)$. If $f\in\mathcal C_p$, then for $0\le x<y\le1$, absolute continuity gives
 \[
 f(y)-f(x)=\int_x^y f'(t)\,dt.
@@ -63,18 +70,32 @@ Also, since $f(0)=0$,
 |f(x)|\le x^{1-1/p}\le1,
 \]
 so $\mathcal C_p$ is uniformly bounded.
+
 :::
 
-<1>2. Apply Arzelà--Ascoli for $p>1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Arzelà--Ascoli for $p>1$.
+
+::: pf-proof
+
 The domain $[0,1]$ is compact. By Step 1, $\mathcal C_p$ is uniformly bounded and equicontinuous. Therefore the Arzelà--Ascoli theorem implies that its closure in $C([0,1])$ is compact. Hence
 \[
 \boxed{\mathcal C_p\text{ is precompact for every }p>1.}
 \]
+
 :::
 
-<1>3. Show that $\mathcal C_1$ is not precompact.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $\mathcal C_1$ is not precompact.
+
+::: pf-proof
+
 For $n\ge1$, define
 \[
 f_n(x):=\min(nx,1),
@@ -110,5 +131,11 @@ Hence $(f_n)$ has no uniformly convergent subsequence, so
 \[
 \boxed{\mathcal C_1\text{ is not precompact in }C([0,1]).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

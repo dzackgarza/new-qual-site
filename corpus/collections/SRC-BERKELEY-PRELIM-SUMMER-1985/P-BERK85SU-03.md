@@ -36,9 +36,14 @@ $$
 S=A^TA.
 $$
 
-<1>1. The matrix $S$ is symmetric positive definite.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The matrix $S$ is symmetric positive definite.
+
+::: pf-proof
+
 Symmetry is immediate:
 $$
 S^T=(A^TA)^T=A^TA=S.
@@ -54,15 +59,21 @@ v^TA^TAv
 0,
 $$
 because $A$ is nonsingular and hence $Av\neq0$.
+
 :::
 
-<1>2. There exists a positive-definite symmetric matrix $B$ such
+:::
+
+::: {.pf-step #s2}
+
+There exists a positive-definite symmetric matrix $B$ such
 that
 $$
 B^2=S.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the real spectral theorem, there is an orthogonal matrix $U$ and
 positive real numbers $\lambda_1,\ldots,\lambda_n$ such that
 $$
@@ -83,11 +94,17 @@ U^T.
 $$
 Then $B$ is symmetric, all of its eigenvalues are positive, and
 direct multiplication gives $B^2=S$.
+
 :::
 
-<1>3. The positive-definite symmetric square root of $S$ is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The positive-definite symmetric square root of $S$ is unique.
+
+::: pf-proof
+
 Suppose $C$ is positive definite and symmetric with
 $$
 C^2=S.
@@ -120,18 +137,24 @@ hence $\mu=\sqrt\lambda$. Thus
 $$
 C|_{E_\lambda}=\sqrt{\lambda} I.
 $$
-Step <1>2 shows that $B$ acts in exactly the same way on every
+Step [](#s2){.pf-ref} shows that $B$ acts in exactly the same way on every
 eigenspace of $S$. Since those eigenspaces span $\RR^n$, one has
 $C=B$.
+
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #s4}
+
+Define
 $$
 Q=AB^{-1}.
 $$
 Then $Q$ is orthogonal.
 
-::: {.proof}
+::: pf-proof
+
 The matrix $B$ is positive definite and therefore invertible. Since
 $B$ is symmetric and $B^2=A^TA$,
 $$
@@ -146,16 +169,22 @@ I.
 \end{aligned}
 $$
 Hence $Q$ is orthogonal.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \boxed{A=QB}
 $$
 with $Q$ orthogonal and $B$ positive-definite symmetric.
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 QB
 =
@@ -164,12 +193,18 @@ AB^{-1}B
 A.
 $$
 The required properties of $Q$ and $B$ were established in steps
-<1>2 and <1>4.
+[](#s2){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. This factorization is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+This factorization is unique.
+
+::: pf-proof
+
 Suppose also that
 $$
 A=Q_1B_1,
@@ -184,7 +219,7 @@ B_1Q_1^TQ_1B_1
 B_1^2.
 $$
 Thus $B_1$ is a positive-definite symmetric square root of $S=A^TA$.
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 B_1=B.
 $$
@@ -197,11 +232,17 @@ AB^{-1}
 Q.
 $$
 So both factors are unique.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves existence, and step <1>6 proves uniqueness.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves existence, and step [](#s6){.pf-ref} proves uniqueness.
+
+:::
+
+:::
+
 :::

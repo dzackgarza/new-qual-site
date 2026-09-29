@@ -44,8 +44,14 @@ u=\tan\frac x2,
 dx=\frac{2\,du}{1+u^2}.
 \]
 
-<1>1. The minus-sign numerator.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The minus-sign numerator.
+
+::: pf-proof
+
 Substitution gives
 \[
 \frac{1-\sin x}{1+\cos x}\,dx
@@ -66,10 +72,17 @@ or, after absorbing the constant \(\log2\),
 \[
 \tan\frac x2+\log|1+\cos x|+C.
 \]
+
 :::
 
-<1>2. The plus-sign numerator.
-::: {.proof}
+:::
+
+::: pf-step
+
+The plus-sign numerator.
+
+::: pf-proof
+
 Similarly,
 \[
 \frac{1+\sin x}{1+\cos x}\,dx
@@ -86,10 +99,17 @@ Equivalently,
 \tan\frac x2-2\log\left|\cos\frac x2\right|+C
 =\tan\frac x2-\log|1+\cos x|+C.
 \]
+
 :::
 
-<1>3. The denominator \(1+\sin x+\cos x\).
-::: {.proof}
+:::
+
+::: pf-step
+
+The denominator \(1+\sin x+\cos x\).
+
+::: pf-proof
+
 The same substitution gives
 \[
 \frac{dx}{1+\sin x+\cos x}
@@ -101,5 +121,11 @@ Therefore
 \int\frac{dx}{1+\sin x+\cos x}
 =\log\left|1+\tan\frac x2\right|+C.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

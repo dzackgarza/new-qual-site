@@ -60,11 +60,17 @@ Find
 ::: {.solution}
 Assume $k\ge1$, as in the usual meaning of a $k$-fold covering.
 
-<1>1. The mapping cone $C(\phi_k)$ is obtained from the target circle by attaching one $2$-cell by the degree-$k$ map $\phi_k$:
+::: pf
+
+::: pf-step
+
+The mapping cone $C(\phi_k)$ is obtained from the target circle by attaching one $2$-cell by the degree-$k$ map $\phi_k$:
 \[
 C(\phi_k)\cong S^1\cup_{\phi_k}D^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The quotient
 \[
 (S^1\times[0,1])/(S^1\times\{0\})
@@ -79,14 +85,21 @@ and the remaining mapping-cone identification glues that boundary to the target 
 (x,1)\longmapsto\phi_k(x).
 \]
 Thus the mapping cone is exactly the displayed adjunction space.
+
 :::
 
-<1>2. If $a$ denotes the standard generator of the target circle, attaching the $2$-cell imposes the relation
+:::
+
+::: pf-step
+
+If $a$ denotes the standard generator of the target circle, attaching the $2$-cell imposes the relation
 \[
 a^k=1
 \]
 on the fundamental group.
-::: {.proof}
+
+::: pf-proof
+
 Before attaching the $2$-cell, the $1$-skeleton is $S^1$, so
 \[
 \pi_1(S^1)\cong\langle a\rangle\cong\ZZ.
@@ -102,16 +115,29 @@ By the Seifert--van Kampen theorem for attaching a $2$-cell, the fundamental gro
 \cong
 \langle a\mid a^k=1\rangle.
 \]
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \pi_1(C(\phi_k))\cong\ZZ/k\ZZ.
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 The group with one generator $a$ and the single relation $a^k=1$ is the cyclic group of order $k$, namely $\ZZ/k\ZZ$.
 For $k=1$ this is the trivial group, as the formula also indicates.
+
 :::
+
+:::
+
+:::
+
 :::

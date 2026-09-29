@@ -44,11 +44,18 @@ ab=ba.
 :::
 
 ::: {.solution}
-<1>1. A nilpotent group satisfies the normalizer condition: if $H<G$, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+A nilpotent group satisfies the normalizer condition: if $H<G$, then
 \[
 H<N_G(H).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 1=Z_0(G)\le Z_1(G)\le\cdots\le Z_c(G)=G
@@ -76,10 +83,17 @@ Thus $xHx^{-1}=H$, so
 x\in N_G(H)\setminus H.
 \]
 Hence $H<N_G(H)$.
+
 :::
 
-<1>2. If $G$ is finite and nilpotent, every Sylow subgroup of $G$ is normal.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $G$ is finite and nilpotent, every Sylow subgroup of $G$ is normal.
+
+::: pf-proof
+
 Let $P\in\operatorname{Syl}_p(G)$ and put
 \[
 N=N_G(P).
@@ -98,16 +112,23 @@ The reverse inclusion is automatic, hence
 N_G(N)=N.
 \]
 
-If $N<G$, <1>1 would imply
+If $N<G$, step [](#s1){.pf-ref} would imply
 \[
 N<N_G(N),
 \]
 a contradiction.
 Thus $N=G$, so $P\trianglelefteq G$.
+
 :::
 
-<1>3. Distinct normal Sylow subgroups commute elementwise.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Distinct normal Sylow subgroups commute elementwise.
+
+::: pf-proof
+
 Let $P\trianglelefteq G$ be a Sylow $p$-subgroup and $Q\trianglelefteq G$ a Sylow $q$-subgroup with $p\ne q$.
 Since both are normal,
 \[
@@ -121,16 +142,23 @@ Hence
 \[
 [P,Q]=1.
 \]
+
 :::
 
-<1>4. A finite nilpotent group is the internal direct product of its Sylow subgroups.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+A finite nilpotent group is the internal direct product of its Sylow subgroups.
+
+::: pf-proof
+
 Let
 \[
 |G|=\prod_{i=1}^r p_i^{e_i}
 \]
 and choose $P_i\in\operatorname{Syl}_{p_i}(G)$.
-By <1>2 every $P_i$ is normal, and by <1>3 the $P_i$ commute pairwise.
+By step [](#s2){.pf-ref} every $P_i$ is normal, and by step [](#s3){.pf-ref} the $P_i$ commute pairwise.
 
 Therefore
 \[
@@ -147,11 +175,18 @@ Hence
 \[
 G=P_1\times\cdots\times P_r.
 \]
+
 :::
 
-<1>5. If $G$ is nilpotent and $a,b\in G$ have relatively prime orders, then $a$ and $b$ commute.
-::: {.proof}
-Use the decomposition from <1>4:
+:::
+
+::: {.pf-step #s5}
+
+If $G$ is nilpotent and $a,b\in G$ have relatively prime orders, then $a$ and $b$ commute.
+
+::: pf-proof
+
+Use the decomposition from step [](#s4){.pf-ref}:
 \[
 G=P_1\times\cdots\times P_r.
 \]
@@ -169,15 +204,22 @@ Since
 \gcd(|a|,|b|)=1,
 \]
 for each $i$ at least one of $a_i,b_i$ is trivial.
-Components in distinct Sylow factors commute by <1>3. Hence every component of $a$ commutes with every component of $b$, and therefore
+Components in distinct Sylow factors commute by step [](#s3){.pf-ref}. Hence every component of $a$ commutes with every component of $b$, and therefore
 \[
 ab=ba.
 \]
+
 :::
 
-<1>6. Conversely, suppose that every two elements of relatively prime orders in $G$ commute.
+:::
+
+::: {.pf-step #s6}
+
+Conversely, suppose that every two elements of relatively prime orders in $G$ commute.
 Then any two Sylow subgroups for distinct primes commute elementwise.
-::: {.proof}
+
+::: pf-proof
+
 Let $P\in\operatorname{Syl}_p(G)$ and $Q\in\operatorname{Syl}_q(G)$ with $p\ne q$.
 For arbitrary
 \[
@@ -195,16 +237,23 @@ Therefore
 \[
 [P,Q]=1.
 \]
+
 :::
 
-<1>7. Under the hypothesis of <1>6, $G$ is the internal direct product of one Sylow subgroup for each prime divisor of $|G|$.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+Under the hypothesis of step [](#s6){.pf-ref}, $G$ is the internal direct product of one Sylow subgroup for each prime divisor of $|G|$.
+
+::: pf-proof
+
 Write
 \[
 |G|=\prod_{i=1}^r p_i^{e_i}
 \]
 and choose $P_i\in\operatorname{Syl}_{p_i}(G)$.
-By <1>6 the $P_i$ commute pairwise, so their product
+By step [](#s6){.pf-ref} the $P_i$ commute pairwise, so their product
 \[
 P_1\cdots P_r
 \]
@@ -231,10 +280,17 @@ Hence
 \[
 G=P_1\times\cdots\times P_r.
 \]
+
 :::
 
-<1>8. Every finite $p$-group is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+Every finite $p$-group is nilpotent.
+
+::: pf-proof
+
 We induct on the order of a finite $p$-group $P$.
 The trivial group is nilpotent.
 If $P\ne1$, the class equation gives
@@ -263,10 +319,17 @@ and consequently
   =1.
 \]
 Hence $P$ is nilpotent.
+
 :::
 
-<1>9. A finite direct product of nilpotent groups is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s9}
+
+A finite direct product of nilpotent groups is nilpotent.
+
+::: pf-proof
+
 For two groups $A,B$, induction on $i$ gives
 \[
 \gamma_i(A\times B)=\gamma_i(A)\times\gamma_i(B).
@@ -282,20 +345,34 @@ then
 \gamma_{\max(c,d)+1}(A\times B)=1.
 \]
 Induction on the number of factors proves the finite-product statement.
+
 :::
 
-<1>10. Under the coprime-order commutativity hypothesis, $G$ is nilpotent.
-::: {.proof}
-By <1>7,
+:::
+
+::: {.pf-step #s10}
+
+Under the coprime-order commutativity hypothesis, $G$ is nilpotent.
+
+::: pf-proof
+
+By step [](#s7){.pf-ref},
 \[
 G=P_1\times\cdots\times P_r
 \]
 for Sylow subgroups $P_i$.
-Each $P_i$ is nilpotent by <1>8, so $G$ is nilpotent by <1>9.
+Each $P_i$ is nilpotent by step [](#s8){.pf-ref}, so $G$ is nilpotent by step [](#s9){.pf-ref}.
+
 :::
 
-<1>11. Q.E.D.
-::: {.proof}
-The forward implication is <1>5 and the reverse implication is <1>10.
 :::
+
+::: pf-qed
+
+The forward implication is step [](#s5){.pf-ref} and the reverse implication is step [](#s10){.pf-ref}.
+
+:::
+
+:::
+
 :::

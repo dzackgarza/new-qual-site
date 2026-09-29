@@ -25,19 +25,36 @@ Let $H\le G$ and let representations be modules over a commutative coefficient r
 ::: {.solution}
 Let $\rho:G\to\operatorname{Aut}_R(V)$ be a representation.
 
-<1>1. Its kernel
+::: pf
+
+::: pf-step
+
+Its kernel
 \[
 \ker\rho=\{g\in G:\rho(g)=1_V\}
 \]
 is a normal subgroup of $G$. If $\rho$ is irreducible, no stronger group-theoretic condition on the kernel holds in general; equivalently, $\rho$ factors through a faithful irreducible representation of $G/\ker\rho$.
 
-<1>2. For representations $\rho_i$,
+:::
+
+::: pf-step
+
+For representations $\rho_i$,
 \[
 \ker\Bigl(\bigoplus_i\rho_i\Bigr)=\bigcap_i\ker\rho_i,
 \]
 because an element acts trivially on the direct sum exactly when it acts trivially on every summand.
 
-<1>3. Induction is
+:::
+
+::: pf-step
+
+Induction is
+
+:::
+
+:::
+
 \[
 \operatorname{Ind}_H^G(M)=R[G]\otimes_{R[H]}M.
 \]

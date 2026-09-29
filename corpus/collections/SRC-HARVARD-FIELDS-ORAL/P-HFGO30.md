@@ -31,9 +31,15 @@ Let $m_a(T)\in F[T]$ be the minimal polynomial of $a$ over $F$, and set
 d=\deg m_a.
 \]
 
-<1>1. Every element of $F(a)$ is represented by a polynomial in $a$ of degree
+::: pf
+
+::: {.pf-step #s1}
+
+Every element of $F(a)$ is represented by a polynomial in $a$ of degree
 less than $d$.
-::: {.proof}
+
+::: pf-proof
+
 Because $m_a(a)=0$, Euclidean division gives, for every $f(T)\in F[T]$,
 \[
 f(T)=q(T)m_a(T)+r(T),
@@ -47,28 +53,48 @@ Moreover, since $m_a$ is irreducible,
 F[a]\cong F[T]/(m_a)
 \]
 is a field. Hence $F(a)=F[a]$.
+
 :::
 
-<1>2. The elements
+:::
+
+::: {.pf-step #s2}
+
+The elements
 \[
 1,a,\ldots,a^{d-1}
 \]
 form an $F$-basis of $F(a)$.
-::: {.proof}
-They span by <1>1. If
+
+::: pf-proof
+
+They span by step [](#s1){.pf-ref}. If
 \[
 c_0+c_1a+\cdots+c_{d-1}a^{d-1}=0,
 \]
 then the polynomial $c_0+c_1T+\cdots+c_{d-1}T^{d-1}$ has $a$ as a root.
 Minimality of $m_a$ forces this polynomial to be zero, so all coefficients
 vanish.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 [F(a):F]=d<\infty.
 \]
-::: {.proof}
-This is the dimension of the basis in <1>2.
+
+::: pf-proof
+
+This is the dimension of the basis in step [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

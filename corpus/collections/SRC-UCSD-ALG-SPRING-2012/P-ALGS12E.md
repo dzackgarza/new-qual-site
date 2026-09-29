@@ -38,8 +38,15 @@ Is every square matrix $A$ with entries in $K$ satisfying $A^m = I$ diagonalizab
 :::
 
 ::: {.solution}
-<1>1. A polynomial $f\in K[x]$ forces diagonalizability if and only if $f$ is squarefree.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A polynomial $f\in K[x]$ forces diagonalizability if and only if $f$ is squarefree.
+
+::: pf-proof
+
 Because $K$ is algebraically closed, write
 \[
 f(x)=c\prod_{i=1}^r (x-\lambda_i)^{e_i}
@@ -60,13 +67,20 @@ J=\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}.
 \]
 Its minimal polynomial is $(x-\lambda)^2$, so $f(J)=0$, but $J$ is not diagonalizable.
 Therefore $f$ does not force diagonalizability.
+
 :::
 
-<1>2. Fix $m\ge 1$.
+:::
+
+::: pf-step
+
+Fix $m\ge 1$.
 Every matrix $A$ satisfying $A^m=I$ is diagonalizable if and only if $\operatorname{char}K$ does not divide $m$.
-::: {.proof}
+
+::: pf-proof
+
 The condition $A^m=I$ is equivalent to $(x^m-1)(A)=0$.
-By <1>1, every such $A$ is diagonalizable exactly when $x^m-1$ is squarefree.
+By step [](#s1){.pf-ref}, every such $A$ is diagonalizable exactly when $x^m-1$ is squarefree.
 
 Its derivative is $mx^{m-1}$.
 If $\operatorname{char}K\nmid m$, then $m\neq0$ in $K$, and any common root of $x^m-1$ and $mx^{m-1}$ would have to be both nonzero and zero, impossible.
@@ -78,6 +92,12 @@ Then
 x^m-1=(x^r)^p-1=(x^r-1)^p
 \]
 in characteristic $p$, so the polynomial has repeated roots.
-By <1>1 there is a non-diagonalizable matrix annihilated by $x^m-1$; explicitly, for any $m$th root $\lambda$ one may take the $2\times2$ Jordan block $J_2(\lambda)$ whenever $(x-\lambda)^2\mid x^m-1$.
+By step [](#s1){.pf-ref} there is a non-diagonalizable matrix annihilated by $x^m-1$; explicitly, for any $m$th root $\lambda$ one may take the $2\times2$ Jordan block $J_2(\lambda)$ whenever $(x-\lambda)^2\mid x^m-1$.
+
 :::
+
+:::
+
+:::
+
 :::

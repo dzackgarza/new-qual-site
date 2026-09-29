@@ -30,8 +30,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Identify the odd sine series as the Fourier series of a square wave.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Identify the odd sine series as the Fourier series of a square wave.
+
+::: pf-proof
+
 Define the $2\pi$-periodic function
 \[
 q(x)=
@@ -64,10 +71,17 @@ The function $q$ is piecewise $C^1$, so the Dirichlet convergence theorem gives 
 -\dfrac\pi4,&\pi<x<2\pi.
 \end{cases}
 \]
+
 :::
 
-<1>2. Apply Parseval's identity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Parseval's identity.
+
+::: pf-proof
+
 Since $q^2=1$ almost everywhere,
 \[
 \int_0^{2\pi}|q(x)|^2\,dx=2\pi.
@@ -90,5 +104,11 @@ Therefore
 \boxed{
 \sum_{n=1}^\infty\frac1{(2n-1)^2}=\frac{\pi^2}{8}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

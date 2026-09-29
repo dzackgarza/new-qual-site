@@ -40,12 +40,18 @@ Let $A$ be an $n\times n$ complex matrix whose minimal polynomial $\mu$ has degr
 :::
 
 ::: {.solution}
-<1>1. For part 1, if $\lambda$ is not an eigenvalue of $A$, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+For part 1, if $\lambda$ is not an eigenvalue of $A$, then
 $$
 \mu(\lambda)\ne0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\lambda$ is not an eigenvalue, $A-\lambda I$ is invertible. If
 $\mu(\lambda)=0$, then
 $$
@@ -61,15 +67,21 @@ $$
 $$
 Multiplying by $(A-\lambda I)^{-1}$ would give $\nu(A)=0$, contradicting
 the minimality of $\mu$, since $\deg\nu<\deg\mu$.
+
 :::
 
-<1>2. There is a polynomial $p_\lambda$ of degree at most $k-1$ such
+:::
+
+::: {.pf-step #s2}
+
+There is a polynomial $p_\lambda$ of degree at most $k-1$ such
 that
 $$
 p_\lambda(A)=(A-\lambda I)^{-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomial
 $$
 q_\lambda(t)
@@ -87,7 +99,7 @@ $$
 =
 (A-\lambda I)q_\lambda(A).
 $$
-By step <1>1, $\mu(\lambda)\ne0$. Hence the polynomial
+By step [](#s1){.pf-ref}, $\mu(\lambda)\ne0$. Hence the polynomial
 $$
 p_\lambda(t)
 =
@@ -102,9 +114,14 @@ $A-\lambda I$, so it is the two-sided inverse:
 $$
 p_\lambda(A)=(A-\lambda I)^{-1}.
 $$
+
 :::
 
-<1>3. The vector space
+:::
+
+::: {.pf-step #s3}
+
+The vector space
 $$
 V
 =
@@ -112,7 +129,8 @@ V
 $$
 has dimension $k$.
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 c_0I+c_1A+\cdots+c_{k-1}A^{k-1}=0
@@ -125,9 +143,14 @@ would satisfy $r(A)=0$ and have degree at most $k-1$. This contradicts
 the definition of the minimal polynomial $\mu$ of degree $k$. Thus the
 displayed spanning family is linearly independent, hence is a basis of
 $V$.
+
 :::
 
-<1>4. For part 2, the $k$ matrices
+:::
+
+::: {.pf-step #s4}
+
+For part 2, the $k$ matrices
 $$
 R_j=(A-\lambda_jI)^{-1},
 \qquad
@@ -135,8 +158,9 @@ R_j=(A-\lambda_jI)^{-1},
 $$
 are linearly independent elements of $V$.
 
-::: {.proof}
-Step <1>2 shows that each $R_j$ is a polynomial in $A$ of degree at most
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that each $R_j$ is a polynomial in $A$ of degree at most
 $k-1$, so $R_j\in V$.
 
 Suppose
@@ -175,15 +199,21 @@ d_j\prod_{i\ne j}(\lambda_j-\lambda_i).
 $$
 The $\lambda_i$ are distinct, so the product is nonzero and hence
 $d_j=0$. Therefore $R_1,\ldots,R_k$ are linearly independent.
+
 :::
 
-<1>5. There exist $c_1,\ldots,c_k\in\CC$ such that
+:::
+
+::: {.pf-step #s5}
+
+There exist $c_1,\ldots,c_k\in\CC$ such that
 $$
 \sum_{j=1}^k c_j(A-\lambda_jI)^{-1}=I.
 $$
 
-::: {.proof}
-By step <1>3, $V$ has dimension $k$, and by step <1>4 the $k$ matrices
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $V$ has dimension $k$, and by step [](#s4){.pf-ref} the $k$ matrices
 $R_1,\ldots,R_k$ are linearly independent elements of $V$. They
 therefore form a basis of $V$. Since $I\in V$, there exist
 $c_1,\ldots,c_k\in\CC$ such that
@@ -194,11 +224,17 @@ I
 =
 \sum_{j=1}^k c_j(A-\lambda_jI)^{-1}.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part 1, and step <1>5 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part 1, and step [](#s5){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

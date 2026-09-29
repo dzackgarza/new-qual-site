@@ -45,7 +45,11 @@ z=Re^{i\theta},
 $$
 oriented from $R$ to $-R$.
 
-<1>1. The semicircular contribution satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The semicircular contribution satisfies
 $$
 \lim_{R\to\infty}
 \int_{C_R}F(z)\,dz
@@ -53,7 +57,8 @@ $$
 0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $C_R$,
 $$
 \abs{1+z^2}
@@ -107,16 +112,22 @@ $$
 \frac{\pi}{R^2-1}
 \longrightarrow0.
 $$
+
 :::
 
-<1>2. The only pole of $F$ in the upper half-plane is $z=i$, and
+:::
+
+::: pf-step
+
+The only pole of $F$ in the upper half-plane is $z=i$, and
 $$
 \operatorname{Res}_{z=i}F(z)
 =
 \frac{e^{-1}}{2i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The denominator factors as
 $$
 1+z^2=(z-i)(z+i).
@@ -129,9 +140,14 @@ $$
 =
 \frac{e^{-1}}{2i}.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_{-\infty}^{\infty}
 \frac{e^{ix}}{1+x^2}\,dx
@@ -139,7 +155,8 @@ $$
 \frac{\pi}{e}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $R>1$, the residue theorem on the contour formed by $[-R,R]$ and
 $C_R$ gives
 $$
@@ -152,10 +169,15 @@ $$
 =
 \frac{\pi}{e}.
 $$
-Let $R\to\infty$ and apply step <1>1.
+Let $R\to\infty$ and apply step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. Taking real parts in step <1>3 gives
+:::
+
+::: {.pf-step #s4}
+
+Taking real parts in step [](#s3){.pf-ref} gives
 $$
 \int_{-\infty}^{\infty}
 \frac{\cos x}{1+x^2}\,dx
@@ -163,7 +185,8 @@ $$
 \frac{\pi}{e}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every finite $R$,
 $$
 \operatorname{Re}
@@ -173,10 +196,15 @@ $$
 \int_{-R}^{R}
 \frac{\cos x}{1+x^2}\,dx.
 $$
-Pass to the limit using step <1>3.
+Pass to the limit using step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 \int_0^\infty
@@ -186,14 +214,21 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The real integrand is even, so its integral over the whole real line is
-twice its integral over $[0,\infty)$. Apply step <1>4.
+twice its integral over $[0,\infty)$. Apply step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required value.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required value.
+
+:::
+
+:::
+
 :::

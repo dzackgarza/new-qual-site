@@ -43,8 +43,14 @@ lies in $\ZZ[X]$ and is irreducible over $\QQ$.
 ::: {.solution}
 We prove option (i).
 
-<1>1. Fix an intermediate field and its pointwise stabilizer.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Fix an intermediate field and its pointwise stabilizer.
+
+::: pf-proof
+
 Let
 $$
 k\subseteq L\subseteq E
@@ -63,10 +69,17 @@ be its fixed field. Since every element of $H$ fixes $L$ pointwise,
 $$
 L\subseteq F.
 $$
+
 :::
 
-<1>2. The extension $E/L$ is finite Galois, so $|H|=[E:L]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The extension $E/L$ is finite Galois, so $|H|=[E:L]$.
+
+::: pf-proof
+
 The extension $E/L$ is finite because $E/k$ is finite. It is separable because
 separability is preserved when the base field is enlarged inside $E$.
 
@@ -83,10 +96,17 @@ its degree:
 $$
 \boxed{|H|=[E:L].}
 $$
+
 :::
 
-<1>3. Compare the degree over the fixed field with the size of $H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compare the degree over the fixed field with the size of $H$.
+
+::: pf-proof
+
 Because $L\subseteq F$, the tower law gives
 $$
 [E:F]\le [E:L].
@@ -103,7 +123,7 @@ $$
 \le |\operatorname{Aut}_F(E)|
 \le [E:F].
 $$
-Combining this with step <1>2 gives
+Combining this with step [](#s2){.pf-ref} gives
 $$
 [E:L]
 =|H|
@@ -122,10 +142,17 @@ and hence
 $$
 F=L.
 $$
+
 :::
 
-<1>4. Conclude surjectivity of the fixed-field map.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude surjectivity of the fixed-field map.
+
+::: pf-proof
+
 For the arbitrary intermediate field $L$, the subgroup
 $$
 H=\operatorname{Gal}(E/L)
@@ -140,5 +167,11 @@ $$
 H\longmapsto E^H
 $$
 is surjective onto the intermediate fields.
+
 :::
+
+:::
+
+:::
+
 :::

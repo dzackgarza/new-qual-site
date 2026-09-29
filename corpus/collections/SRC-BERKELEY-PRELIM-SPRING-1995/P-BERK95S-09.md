@@ -36,9 +36,14 @@ z_1,\ldots,z_d
 $$
 be the complex roots of $P$, counted with multiplicity.
 
-<1>1. Every root of $P$ has modulus $1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every root of $P$ has modulus $1$.
+
+::: pf-proof
+
 Since $P$ is monic,
 $$
 P(0)=(-1)^d\prod_{j=1}^d z_j=-1.
@@ -54,13 +59,19 @@ $$
 \abs{z_j}=1
 \qquad(1\le j\le d).
 $$
+
 :::
 
-<1>2. At least one root of $P$ equals $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+At least one root of $P$ equals $1$.
+
+::: pf-proof
+
 Because $P$ has real coefficients, every nonreal root occurs with its
-complex conjugate, with the same multiplicity. By step <1>1, each
+complex conjugate, with the same multiplicity. By step [](#s1){.pf-ref}, each
 nonreal conjugate pair has product
 $$
 z\overline z=\abs z^2=1.
@@ -80,17 +91,29 @@ $$
 $$
 Since $d$ and $r$ have the same parity, these two values are
 opposites, a contradiction.
+
 :::
 
-<1>3. $P(1)=0$.
-
-::: {.proof}
-By step <1>2, $1$ is a root of $P$.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #s3}
 
-::: {.proof}
-Step <1>3 proves the assertion.
+$P(1)=0$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $1$ is a root of $P$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the assertion.
+
+:::
+
+:::
+
 :::

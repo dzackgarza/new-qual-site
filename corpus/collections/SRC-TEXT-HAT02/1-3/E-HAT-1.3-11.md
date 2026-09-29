@@ -38,15 +38,28 @@ The intended statement is that there is no **connected** space covered by both $
 Let $X_1$ be the theta graph: two vertices joined by three distinct edges.
 Let $X_2$ be the dumbbell graph: two vertices joined by one edge, with one loop attached at each vertex.
 
-<1>1. Construct a graph $Z$ from two circles $C_1,C_2$ by choosing two antipodal vertices $N_i,S_i$ on each circle and adjoining one edge from $N_1$ to $N_2$ and one edge from $S_1$ to $S_2$.
+::: pf
+
+::: pf-step
+
+Construct a graph $Z$ from two circles $C_1,C_2$ by choosing two antipodal vertices $N_i,S_i$ on each circle and adjoining one edge from $N_1$ to $N_2$ and one edge from $S_1$ to $S_2$.
 Then $Z$ has four vertices and six edges.
-::: {.proof}
+
+::: pf-proof
+
 Each circle is subdivided by its two chosen vertices into two edges, so the two circles contribute four edges.
 The two joining edges contribute two more.
+
 :::
 
-<1>2. There is a free involution $\alpha$ of $Z$ whose quotient is $X_1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+There is a free involution $\alpha$ of $Z$ whose quotient is $X_1$.
+
+::: pf-proof
+
 Define $\alpha$ by
 \[
 N_1\leftrightarrow S_2,
@@ -67,10 +80,17 @@ Because the action is free on vertices and edge interiors, the quotient map
 Z\to X_1
 \]
 is a two-sheeted covering.
+
 :::
 
-<1>3. There is a second free involution $\beta$ of $Z$ whose quotient is $X_2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+There is a second free involution $\beta$ of $Z$ whose quotient is $X_2$.
+
+::: pf-proof
+
 Define $\beta$ by
 \[
 N_i\leftrightarrow S_i
@@ -91,15 +111,29 @@ and
 Z\to X_2
 \]
 is also a two-sheeted covering.
+
 :::
 
-<1>4. Hence $X_1$ and $X_2$ have the common finite-sheeted covering space $Z$.
-::: {.proof}
-This is <1>2--<1>3.
 :::
 
-<1>5. Neither $X_1$ nor $X_2$ admits a nontrivial covering map onto a connected graph.
-::: {.proof}
+::: pf-step
+
+Hence $X_1$ and $X_2$ have the common finite-sheeted covering space $Z$.
+
+::: pf-proof
+
+This is steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+Neither $X_1$ nor $X_2$ admits a nontrivial covering map onto a connected graph.
+
+::: pf-proof
+
 Both graphs have exactly two branch vertices, and every branch vertex has valence $3$.
 Let
 \[
@@ -116,22 +150,42 @@ But a finite graph has an even number of odd-valence vertices, since
 \]
 All other points of $W$ have valence $2$, so this is impossible.
 Therefore the degree is $1$, and $p$ is an isomorphism of covering spaces.
+
 :::
 
-<1>6. The graphs $X_1$ and $X_2$ are not homeomorphic.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The graphs $X_1$ and $X_2$ are not homeomorphic.
+
+::: pf-proof
+
 In $X_2$, the unique edge joining the two loop vertices is a separating edge: deleting an interior point of it disconnects the graph.
 In the theta graph $X_1$, deleting an interior point of any edge leaves the other two edges joining the two vertices, so the graph remains connected.
 This topological property distinguishes the two graphs.
+
 :::
 
-<1>7. Therefore no connected space is covered by both $X_1$ and $X_2$.
-::: {.proof}
-If a connected graph $W$ were covered by both, <1>5 would force both covering maps to have degree $1$.
+:::
+
+::: pf-step
+
+Therefore no connected space is covered by both $X_1$ and $X_2$.
+
+::: pf-proof
+
+If a connected graph $W$ were covered by both, step [](#s5){.pf-ref} would force both covering maps to have degree $1$.
 Hence
 \[
 X_1\cong W\cong X_2,
 \]
-contradicting <1>6.
+contradicting step [](#s6){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

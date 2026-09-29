@@ -36,8 +36,15 @@ Show that if $f \in L^p(\mathbb{R}^n)$, then the function $Kf(x) := \int_{\mathb
 :::
 
 ::: {.solution}
-<1>1. Apply the hypothesis to the nonnegative function $|f|$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Apply the hypothesis to the nonnegative function $|f|$.
+
+::: pf-proof
+
 Define the extended-valued measurable function
 \[
 h(x):=\int_{\mathbb R^n}K(x,y)|f(y)|\,dy.
@@ -48,10 +55,17 @@ By Tonelli, $h$ is measurable and takes values in $[0,\infty]$. For every nonneg
 =\iint g(x)K(x,y)|f(y)|\,dx\,dy
 \le K_0\|g\|_{p'}\|f\|_p.
 \]
+
 :::
 
-<1>2. Deduce that $h\in L^p$ and estimate its norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+Deduce that $h\in L^p$ and estimate its norm.
+
+::: pf-proof
+
 For a nonnegative measurable function $h$, the dual norm formula gives
 \[
 \|h\|_p
@@ -69,10 +83,17 @@ For completeness, the endpoint cases are contained in the same argument: if $p=1
 \[
 \operatorname*{ess\,sup}h\le K_0\|f\|_\infty.
 \]
+
 :::
 
-<1>3. Define $Kf$ almost everywhere and conclude the operator bound.
-::: {.proof}
+:::
+
+::: pf-step
+
+Define $Kf$ almost everywhere and conclude the operator bound.
+
+::: pf-proof
+
 At every $x$ for which $h(x)<\infty$,
 \[
 \int_{\mathbb R^n}K(x,y)|f(y)|\,dy<\infty.
@@ -89,5 +110,11 @@ almost everywhere. Thus
 \[
 \boxed{\|Kf\|_p\le\|h\|_p\le K_0\|f\|_p.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -22,33 +22,75 @@ Show that every conjugacy class in $G$ has at most $n$ elements.
 :::
 
 ::: {.solution}
-<1>1. Let $g \in G$, and let $C(g) = \{x g x^{-1} : x \in G\}$ be its conjugacy class.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $g \in G$, and let $C(g) = \{x g x^{-1} : x \in G\}$ be its conjugacy class.
+
+::: pf-proof
+
 setup.
+
 :::
 
-<1>2. The size of the conjugacy class is $|C(g)| = [G : C_G(g)]$, where $C_G(g)$ is the centralizer of $g$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The size of the conjugacy class is $|C(g)| = [G : C_G(g)]$, where $C_G(g)$ is the centralizer of $g$.
+
+::: pf-proof
+
 orbit–stabilizer theorem applied to the conjugation action.
+
 :::
 
-<1>3. $Z(G) \subseteq C_G(g)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$Z(G) \subseteq C_G(g)$.
+
+::: pf-proof
+
 every element of the center commutes with $g$, hence centralizes $g$.
+
 :::
 
-<1>4. Hence $[G : C_G(g)] \le [G : Z(G)] = n$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Hence $[G : C_G(g)] \le [G : Z(G)] = n$.
+
+::: pf-proof
+
 $C_G(g) \supseteq Z(G)$, so the index of $C_G(g)$ is at most the index of $Z(G)$.
+
 :::
 
-<1>5. Therefore $|C(g)| \le n$.
-::: {.proof}
-<1>2 and <1>4.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+::: {.pf-step #s5}
+
+Therefore $|C(g)| \le n$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
 :::

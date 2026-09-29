@@ -29,8 +29,15 @@ Assume that there exists an integrable function $F$ such that $|f_n| \leq F$ $\m
 :::
 
 ::: {.solution}
-<1>1. The limit is also dominated by $F$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The limit is also dominated by $F$.
+
+::: pf-proof
+
 Since $f_n\to f$ almost everywhere and $|f_n|\le F$ almost everywhere for every $n$, passage to the pointwise limit gives
 \[
 |f|\le F
@@ -40,10 +47,17 @@ almost everywhere. Consequently
 |f_n-f|\le |f_n|+|f|\le 2F
 \]
 almost everywhere.
+
 :::
 
-<1>2. Apply dominated convergence in $L^1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply dominated convergence in $L^1$.
+
+::: pf-proof
+
 We have $|f_n-f|\to0$ almost everywhere and
 \[
 |f_n-f|\le2F\in L^1(\mu).
@@ -53,10 +67,17 @@ Therefore the Dominated Convergence Theorem yields
 \int_X |f_n-f|\,d\mu\longrightarrow0.
 \]
 Thus $f_n\to f$ in $L^1$.
+
 :::
 
-<1>3. Deduce convergence in measure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Deduce convergence in measure.
+
+::: pf-proof
+
 Fix $\varepsilon>0$. By Chebyshev's inequality,
 \[
 \mu\bigl(\{|f_n-f|>\varepsilon\}\bigr)
@@ -66,5 +87,11 @@ The right-hand side tends to $0$ by Step 2. Hence
 \[
 \boxed{f_n\to f\text{ in measure}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

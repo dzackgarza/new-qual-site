@@ -67,8 +67,14 @@ Let $\alpha$ and $\beta$ be based loops representing $a_1$ and $b_1$, respective
 \gamma_1=\beta*\alpha*\overline\beta.
 \]
 
-<1>1. The loops $\gamma_0$ and $\gamma_1$ are freely homotopic.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The loops $\gamma_0$ and $\gamma_1$ are freely homotopic.
+
+::: pf-proof
+
 Their classes in the fundamental group satisfy
 \[
 [\gamma_1]
@@ -81,10 +87,17 @@ Equivalently, there exists
 \Gamma:[0,1]\times S^1\longrightarrow M
 \]
 with the required endpoint conditions, without requiring the point $\Gamma(s,1)$ to remain fixed during the homotopy.
+
 :::
 
-<1>2. The elements $a_1$ and $b_1$ do not commute in $\pi_1(M,x_0)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The elements $a_1$ and $b_1$ do not commute in $\pi_1(M,x_0)$.
+
+::: pf-proof
+
 Let $F(x,y)$ be the free group on $x,y$.
 Define a map on the generators of the surface presentation by
 \[
@@ -116,10 +129,17 @@ But
 \]
 is a nonempty reduced word in the free group $F(x,y)$, so it is not the identity.
 Thus $[a_1,b_1]\ne1$.
+
 :::
 
-<1>3. There is no homotopy from $\gamma_0$ to $\gamma_1$ that keeps the common base point fixed.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is no homotopy from $\gamma_0$ to $\gamma_1$ that keeps the common base point fixed.
+
+::: pf-proof
+
 A homotopy with
 \[
 \Gamma(s,1)=x_0
@@ -135,6 +155,12 @@ Thus
 a_1=b_1a_1b_1^{-1},
 \]
 which is equivalent to $a_1$ and $b_1$ commuting.
-This contradicts <1>2. Therefore the displayed pair has the required properties.
+This contradicts step [](#s2){.pf-ref}. Therefore the displayed pair has the required properties.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -55,7 +55,11 @@ P_0=[0:1:0]
 $$
 is the unique point at infinity.
 
-<1>1. At $P_0$ the functions $x$ and $y$ have poles of orders $2$ and $3$,
+::: pf
+
+::: {.pf-step #s1}
+
+At $P_0$ the functions $x$ and $y$ have poles of orders $2$ and $3$,
 respectively, and
 $$
 L(2P_0)=\langle1,x\rangle,
@@ -63,7 +67,8 @@ L(2P_0)=\langle1,x\rangle,
 L(3P_0)=\langle1,x,y\rangle.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The projective equation is
 $$
 Y^2Z=X(X-Z)(X-\lambda Z).
@@ -93,9 +98,14 @@ $$
 $$
 for every $n\ge1$.  The displayed functions therefore give bases of the
 two spaces.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 \sigma\in G=\Aut(X,P_0),
 $$
@@ -112,9 +122,10 @@ $$
 \sigma^*y=cy+dx+e.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $\sigma$ fixes $P_0$, pullback preserves the filtration by pole order
-at $P_0$.  Step <1>1 therefore gives
+at $P_0$.  Step [](#s1){.pf-ref} therefore gives
 $$
 \sigma^*x\in L(2P_0)=\langle1,x\rangle.
 $$
@@ -129,9 +140,14 @@ $$
 $$
 and exact pole order $3$ forces the coefficient of $y$ to be nonzero.  This
 gives the asserted form.
+
 :::
 
-<1>3. In fact
+:::
+
+::: {.pf-step #s3}
+
+In fact
 $$
 \boxed{
 \sigma^*x=ax+b,
@@ -141,8 +157,9 @@ $$
 $$
 with $a,c\ne0$.
 
-::: {.proof}
-Apply $\sigma^*$ to the equation $y^2=f(x)$.  Using step <1>2 gives
+::: pf-proof
+
+Apply $\sigma^*$ to the equation $y^2=f(x)$.  Using step [](#s2){.pf-ref} gives
 $$
 (cy+dx+e)^2=f(ax+b).
 $$
@@ -158,9 +175,14 @@ Here $c\ne0$ and $\operatorname{char}k\ne2$, hence
 $$
 d=e=0.
 $$
+
 :::
 
-<1>4. Every $\sigma\in G$ is induced by the projective linear automorphism
+:::
+
+::: {.pf-step #s4}
+
+Every $\sigma\in G$ is induced by the projective linear automorphism
 $$
 [X:Y:Z]
 \longmapsto
@@ -179,7 +201,8 @@ $$
 c^2=a^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The displayed projective map is invertible because $a,c\ne0$, and on the
 chart $Z=1$ it is exactly
 $$
@@ -206,9 +229,14 @@ involution
 $$
 \iota:(x,y)\longmapsto(x,-y).
 $$
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 j(X)\ne0,1728,
 $$
@@ -221,10 +249,11 @@ $$
 G=\{1,\iota\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Corollary IV.4.7 says that in this case no nonidentity affine automorphism of
 $\PP^1$ fixing $\infty$ permutes the three finite branch points
-$0,1,\lambda$.  Thus step <1>4 leaves only the two lifts of the identity on
+$0,1,\lambda$.  Thus step [](#s4){.pf-ref} leaves only the two lifts of the identity on
 the $x$-line, namely
 $$
 (x,y)\longmapsto(x,y)
@@ -232,9 +261,14 @@ $$
 (x,y)\longmapsto(x,-y).
 $$
 The second has order $2$.
+
 :::
 
-<1>6. Suppose
+:::
+
+::: {.pf-step #s6}
+
+Suppose
 $$
 j(X)=1728,
 \qquad
@@ -245,7 +279,8 @@ $$
 \boxed{G\cong\ZZ/4}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By Corollary IV.4.7 one has
 $$
 \lambda\in\left\{-1,2,\frac12\right\}.
@@ -266,7 +301,7 @@ i\in k,
 \qquad
 i^2=-1.
 $$
-Then step <1>4 gives a lift
+Then step [](#s4){.pf-ref} gives a lift
 $$
 g:(x,y)\longmapsto(\tau(x),iy),
 $$
@@ -287,9 +322,14 @@ so $g$ has order $4$.  Corollary IV.4.7 gives $|G|=4$, hence
 $$
 G=\langle g\rangle\cong\ZZ/4.
 $$
+
 :::
 
-<1>7. Suppose
+:::
+
+::: {.pf-step #s7}
+
+Suppose
 $$
 j(X)=0,
 \qquad
@@ -300,7 +340,8 @@ $$
 \boxed{G\cong\ZZ/6}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a primitive cube root of unity
 $$
 \omega^3=1,
@@ -325,7 +366,7 @@ Indeed, in either case
 $$
 0\longmapsto1\longmapsto\lambda\longmapsto0.
 $$
-Its coefficient $a$ satisfies $a^3=1$, so step <1>4 gives the order-$3$
+Its coefficient $a$ satisfies $a^3=1$, so step [](#s4){.pf-ref} gives the order-$3$
 lift
 $$
 r:(x,y)\longmapsto(\tau(x),y).
@@ -351,9 +392,14 @@ $$
 \ZZ/6.
 $$
 Corollary IV.4.7 gives $|G|=6$, so this subgroup is all of $G$.
+
 :::
 
-<1>8. Finally suppose
+:::
+
+::: {.pf-step #s8}
+
+Finally suppose
 $$
 \operatorname{char}k=3,
 \qquad
@@ -371,7 +417,8 @@ G\cong(\ZZ/3)\rtimes(\ZZ/4),
 $$
 where a generator of $\ZZ/4$ acts on $\ZZ/3$ by inversion.
 
-::: {.proof}
+::: pf-proof
+
 In characteristic $3$ the branch set is
 $$
 \{0,1,-1\}=\FF_3.
@@ -411,7 +458,7 @@ This is induced by
 $$
 s:[X:Y:Z]\longmapsto[-X:iY:Z].
 $$
-Step <1>4 shows that it preserves $X$, and
+Step [](#s4){.pf-ref} shows that it preserves $X$, and
 $$
 s^2=\iota,
 $$
@@ -439,14 +486,20 @@ r^a s^b,
 0\le b<4.
 $$
 Corollary IV.4.7 gives $|G|=12$, so this is the full automorphism group.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove that every automorphism fixing $P_0$ is induced by a
-projective transformation of the required form.  Steps <1>5--<1>8 give the
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove that every automorphism fixing $P_0$ is induced by a
+projective transformation of the required form.  Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} give the
 explicit transformations and the group structure in each of the four cases
 of Corollary IV.4.7.
+
 :::
+
+:::
+
 :::

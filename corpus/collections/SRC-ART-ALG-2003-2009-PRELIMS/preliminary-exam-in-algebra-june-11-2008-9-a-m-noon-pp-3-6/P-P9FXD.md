@@ -32,10 +32,16 @@ Prove that $G$ has a fixed point in $X$: i.e., an $x \in X$ such that $gx = x$ f
 :::
 
 ::: {.solution}
-<1>1. Every orbit has cardinality a power of $p$, and a singleton orbit
+
+::: pf
+
+::: pf-step
+
+Every orbit has cardinality a power of $p$, and a singleton orbit
 is exactly a point fixed by all of $G$.
 
-::: {.proof}
+::: pf-proof
+
 For $x\in X$, let $G_x=\{g\in G:gx=x\}$ be its stabilizer.
 The map $G/G_x\to Gx$ sending $gG_x$ to $gx$ is a bijection:
 two representatives give the same point exactly when they lie in the
@@ -45,11 +51,17 @@ $$
 $$
 which is a power of $p$. The orbit is a singleton precisely when
 $gx=x$ for every $g\in G$. Every other orbit has size divisible by $p$.
+
 :::
 
-<1>2. The global fixed-point set $X^G$ is nonempty.
+:::
 
-::: {.proof}
+::: pf-step
+
+The global fixed-point set $X^G$ is nonempty.
+
+::: pf-proof
+
 The orbits partition the finite set $X$. The singleton orbits contribute
 exactly $|X^G|$, and all other contributions are divisible by $p$.
 Therefore
@@ -58,5 +70,11 @@ $$
 $$
 The left side is nonzero modulo $p$ by hypothesis, so $|X^G|$ cannot
 be zero. Any $x\in X^G$ is fixed by every element of $G$, as required.
+
 :::
+
+:::
+
+:::
+
 :::

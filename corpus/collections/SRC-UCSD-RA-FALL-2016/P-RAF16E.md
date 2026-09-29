@@ -30,8 +30,15 @@ Prove that it is countably compact (i.e., any countable open cover of $X$ has a 
 :::
 
 ::: {.solution}
-<1>1. Assume a countable open cover has no finite subcover.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Assume a countable open cover has no finite subcover.
+
+::: pf-proof
+
 Let
 \[
 X=\bigcup_{n=1}^\infty U_n
@@ -40,10 +47,17 @@ be a countable open cover. Suppose, for contradiction, that no finite subfamily 
 \[
 x_n\in X\setminus\bigcup_{j=1}^n U_j.
 \]
+
 :::
 
-<1>2. Use sequential compactness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use sequential compactness.
+
+::: pf-proof
+
 By sequential compactness, some subsequence $(x_{n_k})$ converges to a point $x\in X$. Since the $U_j$ cover $X$, choose $m$ with
 \[
 x\in U_m.
@@ -64,5 +78,11 @@ Therefore every countable open cover has a finite subcover, and
 \[
 \boxed{X\text{ is countably compact}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

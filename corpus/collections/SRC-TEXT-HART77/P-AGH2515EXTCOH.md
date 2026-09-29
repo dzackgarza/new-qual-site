@@ -54,9 +54,14 @@ For an open inclusion $i:U\hookrightarrow X$ of noetherian schemes, direct image
 Indeed, $i$ is quasi-compact because every open subset of a noetherian space is quasi-compact, and it is separated.
 Kernels, cokernels, and images of morphisms of quasi-coherent sheaves are quasi-coherent [@Har10a, Proposition II.5.7].
 
-<1>1. Part (a) holds with the stated sectionwise meaning of union.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Part (a) holds with the stated sectionwise meaning of union.
+
+::: pf-proof
+
 Write $X=\Spec A$ with $A$ noetherian and $\mcf\cong\widetilde M$ [@Har10a, Proposition II.5.4].
 Every finitely generated submodule $N\subseteq M$ gives a [[D-QNTZY|coherent]] subsheaf $\widetilde N\subseteq\widetilde M$, since localization is exact.
 
@@ -72,31 +77,49 @@ They therefore glue to a section of $\widetilde N(W)$ whose image is $s$.
 For $W=\varnothing$ its only section is already in the zero subsheaf.
 This proves the required equality of section groups on every open set.
 The family is directed: the sum of two finitely generated submodules is finitely generated and contains both.
+
 :::
 
-<1>2. If $X$ is affine noetherian, $\mathcal H$ is [[D-QNTZY|quasi-coherent]] on $X$, and $\mathcal H|_U$ is [[D-QNTZY|coherent]], then some coherent subsheaf $\mathcal H'\subseteq\mathcal H$ satisfies $\mathcal H'|_U=\mathcal H|_U$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $X$ is affine noetherian, $\mathcal H$ is [[D-QNTZY|quasi-coherent]] on $X$, and $\mathcal H|_U$ is [[D-QNTZY|coherent]], then some coherent subsheaf $\mathcal H'\subseteq\mathcal H$ satisfies $\mathcal H'|_U=\mathcal H|_U$.
+
+::: pf-proof
+
 Take a finite affine open cover $U=\bigcup_{j=1}^aV_j$.
 On each $V_j$, choose finitely many sections generating $\mathcal H|_{V_j}$; coherence and the affine module description provide them.
-By step <1>1, each of these finitely many sections belongs to a coherent subsheaf of $\mathcal H$ on $X$.
+By step [](#s1){.pf-ref}, each of these finitely many sections belongs to a coherent subsheaf of $\mathcal H$ on $X$.
 Take the sum $\mathcal H'$ of those finitely many subsheaves.
 On the affine noetherian scheme $X$, this is the associated sheaf of a sum of finitely many finite submodules, so it is coherent.
 Its restriction to each $V_j$ contains a generating set of $\mathcal H|_{V_j}$ and is a subsheaf of that sheaf, hence equals it.
 Thus $\mathcal H'|_U=\mathcal H|_U$ as subsheaves.
 When $U=\varnothing$, take $\mathcal H'=0$.
+
 :::
 
-<1>3. Part (b) follows by applying step <1>2 to $i_*\mcf$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Part (b) follows by applying step [](#s2){.pf-ref} to $i_*\mcf$.
+
+::: pf-proof
+
 The sheaf $\mathcal H=i_*\mcf$ is quasi-coherent by the direct-image result, and $\mathcal H|_U\cong\mcf$ is coherent.
-Step <1>2 gives a coherent $\mcf'\subseteq i_*\mcf$ whose restriction is $\mcf$.
+Step [](#s2){.pf-ref} gives a coherent $\mcf'\subseteq i_*\mcf$ whose restriction is $\mcf$.
+
 :::
 
-<1>4. In part (c), the extension can be chosen as a subsheaf of the given $\mcg$ and agrees with $\mcf$ on $U$ as a subsheaf of $\mcg|_U$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+In part (c), the extension can be chosen as a subsheaf of the given $\mcg$ and agrees with $\mcf$ on $U$ as a subsheaf of $\mcg|_U$.
+
+::: pf-proof
+
 Let $i:U\hookrightarrow X$ be the open inclusion and let $\mathcal Q=(\mcg|_U)/\mcf$.
 The quotient $\mathcal Q$ is quasi-coherent.
 Define
@@ -110,17 +133,23 @@ $$
 \mathcal H|_U=\ker(\mcg|_U\to\mathcal Q)=\mcf
 $$
 as subsheaves of $\mcg|_U$.
-Apply step <1>2 to $\mathcal H$ and let $\mcf'$ be the resulting coherent subsheaf.
+Apply step [](#s2){.pf-ref} to $\mathcal H$ and let $\mcf'$ be the resulting coherent subsheaf.
 Then $\mcf'\subseteq\mathcal H\subseteq\mcg$, with the stated equality on $U$.
+
 :::
 
-<1>5. Part (d) holds, and therefore every coherent sheaf on an open subset extends to the noetherian scheme.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Part (d) holds, and therefore every coherent sheaf on an open subset extends to the noetherian scheme.
+
+::: pf-proof
+
 Choose a finite affine open cover $X=V_1\cup\cdots\cup V_a$.
 Begin with $W_0=U$ and the given coherent subsheaf $\mcf_0=\mcf\subseteq\mcg|_{W_0}$.
 Suppose a coherent subsheaf $\mcf_{j-1}\subseteq\mcg|_{W_{j-1}}$ has been constructed, where $W_{j-1}=U\cup V_1\cup\cdots\cup V_{j-1}$.
-Apply step <1>4 on the affine scheme $V_j$ to the coherent subsheaf
+Apply step [](#s4){.pf-ref} on the affine scheme $V_j$ to the coherent subsheaf
 $$
 \mcf_{j-1}|_{W_{j-1}\cap V_j}\subseteq\mcg|_{W_{j-1}\cap V_j}.
 $$
@@ -131,11 +160,17 @@ It still restricts to the original $\mcf$ on $U$.
 
 After the finitely many steps, $W_a=X$ and $\mcf_a$ is the required coherent subsheaf of $\mcg$.
 For the extension assertion without a prescribed ambient sheaf, take $\mcg=i_*\mcf$, which is quasi-coherent, and use its canonical identification with $\mcf$ on $U$.
+
 :::
 
-<1>6. The sectionwise union assertion in part (e) holds.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The sectionwise union assertion in part (e) holds.
+
+::: pf-proof
+
 Let $W\subseteq X$ be open and let $s\in\mcf(W)$.
 The image $\mathcal H$ of the morphism
 $$
@@ -143,15 +178,21 @@ $$
 $$
 is quasi-coherent and locally generated by one section.
 On a noetherian affine open its module is therefore finite, so $\mathcal H$ is coherent.
-Step <1>5, with ambient sheaf $\mcf$, extends $\mathcal H$ to a coherent subsheaf $\mathcal H'\subseteq\mcf$ on $X$ with $\mathcal H'|_W=\mathcal H$.
+Step [](#s5){.pf-ref}, with ambient sheaf $\mcf$, extends $\mathcal H$ to a coherent subsheaf $\mathcal H'\subseteq\mcf$ on $X$ with $\mathcal H'|_W=\mathcal H$.
 The section $s$ is the image of $1\in\OO_W(W)$ and thus belongs to $\mathcal H'(W)$.
 Every section on every open set is consequently contained in a coherent subsheaf on $X$.
 The reverse inclusion follows from these being subsheaves of $\mcf$, proving the asserted union.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), step <1>3 proves part (b), step <1>4 proves part (c), step <1>5 proves part (d) and the announced extension theorem, and step <1>6 proves part (e).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), step [](#s3){.pf-ref} proves part (b), step [](#s4){.pf-ref} proves part (c), step [](#s5){.pf-ref} proves part (d) and the announced extension theorem, and step [](#s6){.pf-ref} proves part (e).
+
+:::
+
+:::
+
 :::

@@ -32,7 +32,11 @@ Yes. In fact,
 A-B>0\qquad\Longrightarrow\qquad B^{-1}-A^{-1}>0.
 \]
 
-<1>1. Put
+::: pf
+
+::: pf-step
+
+Put
 \[
 C=B^{-1/2}AB^{-1/2}.
 \]
@@ -40,19 +44,28 @@ Then $C$ is symmetric positive definite and
 \[
 C-I=B^{-1/2}(A-B)B^{-1/2}>0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 A congruence by an invertible matrix preserves positive definiteness: if $M>0$ and $S$ is invertible, then for $x\ne0$,
 \[
 x^TS^TMSx=(Sx)^TM(Sx)>0.
 \]
 Apply this to $M=A-B$ and $S=B^{-1/2}$. Also $C$ is positive definite by the same argument applied to $A$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 I-C^{-1}>0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By the real spectral theorem, there is an orthogonal matrix $Q$ and positive eigenvalues $\lambda_1,\ldots,\lambda_n$ such that
 \[
 C=Q\operatorname{diag}(\lambda_1,\ldots,\lambda_n)Q^T.
@@ -63,13 +76,20 @@ I-C^{-1}
 =Q\operatorname{diag}\left(1-\lambda_1^{-1},\ldots,1-\lambda_n^{-1}\right)Q^T,
 \]
 and every diagonal entry $1-\lambda_i^{-1}$ is positive. Hence $I-C^{-1}>0$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 B^{-1}-A^{-1}>0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 A=B^{1/2}CB^{1/2},
@@ -87,6 +107,12 @@ Thus
 B^{-1}-A^{-1}
 =B^{-1/2}(I-C^{-1})B^{-1/2}.
 \]
-By <1>2 the middle factor is positive definite, and congruence by the invertible matrix $B^{-1/2}$ preserves positive definiteness. Hence the difference is positive definite.
+By step [](#s2){.pf-ref} the middle factor is positive definite, and congruence by the invertible matrix $B^{-1/2}$ preserves positive definiteness. Hence the difference is positive definite.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -47,7 +47,12 @@ T(a_1,a_2,a_3,\ldots)=(a_2,a_3,a_4,\ldots).
 :::
 
 ::: {.solution}
-<1>1. A nonzero sequence
+
+::: pf
+
+::: {.pf-step #s1}
+
+A nonzero sequence
 $$
 a=(a_1,a_2,\ldots)
 $$
@@ -57,7 +62,8 @@ a_{n+1}=\lambda a_n
 $$
 for every $n\geq1$.
 
-::: {.proof}
+::: pf-proof
+
 The equation
 $$
 T(a)=\lambda a
@@ -69,9 +75,14 @@ $$
 (\lambda a_1,\lambda a_2,\ldots),
 $$
 which is exactly the displayed coordinate relation.
+
 :::
 
-<1>2. For every $\lambda\in\CC$, the $\lambda$-eigenspace of $T$ is
+:::
+
+::: {.pf-step #s2}
+
+For every $\lambda\in\CC$, the $\lambda$-eigenspace of $T$ is
 $$
 \operatorname{span}_{\CC}
 \left\{
@@ -79,8 +90,9 @@ $$
 \right\}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 a_n=a_1\lambda^{n-1}
 $$
@@ -93,15 +105,21 @@ Conversely, this geometric sequence satisfies $a_{n+1}=\lambda a_n$, so
 $$
 T(a)=\lambda a.
 $$
+
 :::
 
-<1>3. Let $E$ be the set of sequences satisfying
+:::
+
+::: pf-step
+
+Let $E$ be the set of sequences satisfying
 $$
 x_{n+2}=x_{n+1}+x_n.
 $$
 Then $E$ is a vector subspace of $S$.
 
-::: {.proof}
+::: pf-proof
+
 The recurrence is homogeneous and linear. If $x,y\in E$ and
 $a,b\in\CC$, then
 $$
@@ -118,15 +136,21 @@ b(y_{n+1}+y_n)\\
 \end{aligned}
 $$
 Thus $ax+by\in E$.
+
 :::
 
-<1>4. Every pair
+:::
+
+::: {.pf-step #s4}
+
+Every pair
 $$
 (c,d)\in\CC^2
 $$
 occurs as the first two entries of a unique sequence in $E$.
 
-::: {.proof}
+::: pf-proof
+
 Starting from
 $$
 x_1=c,
@@ -139,9 +163,14 @@ x_3=x_2+x_1,
 $$
 then $x_4=x_3+x_2$, and inductively every later term. Hence existence and
 uniqueness follow recursively.
+
 :::
 
-<1>5. The map
+:::
+
+::: {.pf-step #s5}
+
+The map
 $$
 \Phi:E\longrightarrow\CC^2,
 \qquad
@@ -154,19 +183,26 @@ $$
 }
 $$
 
-::: {.proof}
-Linearity is immediate. Step <1>4 says precisely that $\Phi$ is bijective.
+::: pf-proof
+
+Linearity is immediate. Step [](#s4){.pf-ref} says precisely that $\Phi$ is bijective.
 Therefore $E\cong\CC^2$.
+
 :::
 
-<1>6. The subspace $E$ is invariant under $T$:
+:::
+
+::: {.pf-step #s6}
+
+The subspace $E$ is invariant under $T$:
 $$
 \boxed{
 T(E)\subseteq E.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $x\in E$ and set
 $$
 y=T(x),
@@ -186,9 +222,14 @@ y_{n+1}+y_n.
 \end{aligned}
 $$
 Thus $y\in E$.
+
 :::
 
-<1>7. Let
+:::
+
+::: {.pf-step #s7}
+
+Let
 $$
 \alpha=\frac{1+\sqrt5}{2},
 \qquad
@@ -201,14 +242,20 @@ $$
 \beta^2=\beta+1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The numbers $\alpha,\beta$ are the two roots of
 $$
 r^2-r-1=0.
 $$
+
 :::
 
-<1>8. The two sequences
+:::
+
+::: {.pf-step #s8}
+
+The two sequences
 $$
 u=(1,\alpha,\alpha^2,\ldots)
 $$
@@ -218,7 +265,8 @@ v=(1,\beta,\beta^2,\ldots)
 $$
 belong to $E$.
 
-::: {.proof}
+::: pf-proof
+
 For $u$,
 $$
 u_{n+2}
@@ -231,21 +279,32 @@ u_{n+2}
 =
 u_{n+1}+u_n
 $$
-by step <1>7. The proof for $v$ is identical.
+by step [](#s7){.pf-ref}. The proof for $v$ is identical.
+
 :::
 
-<1>9. The sequences $u$ and $v$ are linearly independent.
+:::
 
-::: {.proof}
-By step <1>2, $u$ and $v$ are eigenvectors of $T$ with distinct
+::: {.pf-step #s9}
+
+The sequences $u$ and $v$ are linearly independent.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $u$ and $v$ are eigenvectors of $T$ with distinct
 eigenvalues
 $$
 \alpha\neq\beta.
 $$
 Eigenvectors belonging to distinct eigenvalues are linearly independent.
+
 :::
 
-<1>10. An explicit basis of $E$ is
+:::
+
+::: {.pf-step #s10}
+
+An explicit basis of $E$ is
 $$
 \boxed{
 \left\{
@@ -255,12 +314,18 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>8--<1>9 give two linearly independent elements of the
-two-dimensional space $E$ from step <1>5. Hence they form a basis.
+::: pf-proof
+
+Steps [](#s8){.pf-ref} and [](#s9){.pf-ref} give two linearly independent elements of the
+two-dimensional space $E$ from step [](#s5){.pf-ref}. Hence they form a basis.
+
 :::
 
-<1>11. Define
+:::
+
+::: {.pf-step #s11}
+
+Define
 $$
 F_n
 =
@@ -271,7 +336,8 @@ $$
 F_1=F_2=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \alpha-\beta=\sqrt5,
@@ -296,15 +362,21 @@ F_2
 1.
 \end{aligned}
 $$
+
 :::
 
-<1>12. The sequence $(F_n)$ satisfies
+:::
+
+::: {.pf-step #s12}
+
+The sequence $(F_n)$ satisfies
 $$
 F_{n+2}=F_{n+1}+F_n.
 $$
 
-::: {.proof}
-By step <1>7,
+::: pf-proof
+
+By step [](#s7){.pf-ref},
 $$
 \alpha^{n+2}
 =
@@ -317,9 +389,14 @@ $$
 \beta^{n+1}+\beta^n.
 $$
 Subtract the two identities and divide by $\sqrt5$.
+
 :::
 
-<1>13. The Fibonacci numbers are
+:::
+
+::: {.pf-step #s13}
+
+The Fibonacci numbers are
 $$
 \boxed{
 f_n
@@ -337,8 +414,9 @@ f_n
 }
 $$
 
-::: {.proof}
-Steps <1>11--<1>12 show that $(F_n)$ satisfies the Fibonacci recurrence
+::: pf-proof
+
+Steps [](#s11){.pf-ref} and [](#s12){.pf-ref} show that $(F_n)$ satisfies the Fibonacci recurrence
 and the initial conditions
 $$
 F_1=F_2=1.
@@ -349,12 +427,18 @@ $$
 f_n=F_n
 $$
 for every $n$.
+
 :::
 
-<1>14. Q.E.D.
-
-::: {.proof}
-Step <1>2 answers part (1), steps <1>5--<1>10 prove part (2), and step
-<1>13 answers part (3).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} answers part (1), steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (2), and step
+[](#s13){.pf-ref} answers part (3).
+
+:::
+
+:::
+
 :::

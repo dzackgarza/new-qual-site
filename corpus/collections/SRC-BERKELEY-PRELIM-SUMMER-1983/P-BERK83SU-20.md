@@ -38,12 +38,17 @@ $$
 g_c(x)=\frac{f(x)}{1+cf(x)}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 g_c'(x)=\frac{f'(x)}{(1+cf(x))^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiating by the quotient rule gives
 $$
 g_c'(x)
@@ -53,17 +58,28 @@ g_c'(x)
 =
 \frac{f'(x)}{(1+cf(x))^2}.
 $$
+
 :::
 
-<1>2. If $f(x_0)=0$, then $f'(x_0)=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $f(x_0)=0$, then $f'(x_0)=0$.
+
+::: pf-proof
+
 Since $f\ge0$, any point $x_0$ with $f(x_0)=0$ is a local minimum of
 the differentiable function $f$. Hence Fermat's theorem gives
 $f'(x_0)=0$.
+
 :::
 
-<1>3. Fix $\varepsilon>0$, and let
+:::
+
+::: {.pf-step #s3}
+
+Fix $\varepsilon>0$, and let
 $$
 K
 =
@@ -77,27 +93,34 @@ $$
 m\coloneqq\min_{t\in K}f(t)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The set $K$ is closed in the compact interval $[0,1]$, hence compact.
-By step <1>2, no point of $K$ can be a zero of $f$. Thus $f>0$ on
+By step [](#s2){.pf-ref}, no point of $K$ can be a zero of $f$. Thus $f>0$ on
 $K$. If $K$ is nonempty, continuity of $f$ and compactness of $K$
 imply that $f$ attains there a strictly positive minimum $m$.
+
 :::
 
-<1>4. There exists $C>0$ such that for every $c\ge C$ and every
+:::
+
+::: {.pf-step #s4}
+
+There exists $C>0$ such that for every $c\ge C$ and every
 $x\in\RR$,
 $$
 \abs{g_c'(x)}<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 M=\max_{t\in[0,1]}\abs{f'(t)}.
 $$
-If the set $K$ from step <1>3 is empty, then
+If the set $K$ from step [](#s3){.pf-ref} is empty, then
 $\abs{f'(x)}<\varepsilon$ for every $x$ by periodicity, and step
-<1>1 gives
+[](#s1){.pf-ref} gives
 $$
 \abs{g_c'(x)}
 \le
@@ -108,7 +131,7 @@ $$
 for every $c\ge0$.
 
 Suppose instead that $K$ is nonempty, and let $m>0$ be as in step
-<1>3. Choose $C>0$ so large that
+[](#s3){.pf-ref}. Choose $C>0$ so large that
 $$
 \frac{M}{(1+Cm)^2}<\varepsilon.
 $$
@@ -118,7 +141,7 @@ f(x)=f(t),
 \qquad
 f'(x)=f'(t).
 $$
-If $t\notin K$, then $\abs{f'(t)}<\varepsilon$, and step <1>1
+If $t\notin K$, then $\abs{f'(t)}<\varepsilon$, and step [](#s1){.pf-ref}
 again gives $\abs{g_c'(x)}<\varepsilon$.
 
 If $t\in K$, then $f(t)\ge m$, so for $c\ge C$,
@@ -132,9 +155,14 @@ $$
 \varepsilon.
 $$
 Thus the same bound holds for every $x$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 g_c'\longrightarrow0
@@ -142,14 +170,21 @@ g_c'\longrightarrow0
 }.
 $$
 
-::: {.proof}
-Step <1>4 is exactly the $\varepsilon$-definition of uniform
+::: pf-proof
+
+Step [](#s4){.pf-ref} is exactly the $\varepsilon$-definition of uniform
 convergence of $g_c'$ to $0$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

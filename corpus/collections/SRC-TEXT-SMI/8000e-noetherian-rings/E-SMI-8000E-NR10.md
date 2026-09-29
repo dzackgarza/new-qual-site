@@ -30,10 +30,16 @@ Prove $R^n / IR^n$ is isomorphic to $(R/I)^n$ as $R$ modules, and as $R/I$ modul
 If $R^n \cong R^m$, deduce $n = m$, assuming it holds when $R$ is a field.
 :::
 
-
 ::: {.solution}
-<1>1. Identify $IR^n$ coordinatewise.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Identify $IR^n$ coordinatewise.
+
+::: pf-proof
+
 Let $e_1,\ldots,e_n$ be the standard basis of $R^n$. Every generator of
 $IR^n$ has the form
 $$
@@ -53,10 +59,17 @@ $$
 IR^n=I^n
 $$
 inside $R^n$.
+
 :::
 
-<1>2. Construct the quotient isomorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Construct the quotient isomorphism.
+
+::: pf-proof
+
 Define
 $$
 \Phi:R^n\longrightarrow(R/I)^n
@@ -66,7 +79,7 @@ $$
 \Phi(r_1,\ldots,r_n)
 =(r_1+I,\ldots,r_n+I).
 $$
-This is a surjective $R$-module homomorphism. By step <1>1,
+This is a surjective $R$-module homomorphism. By step [](#s1){.pf-ref},
 $$
 \ker\Phi=IR^n.
 $$
@@ -75,10 +88,17 @@ $$
 \boxed{R^n/IR^n\cong(R/I)^n}
 $$
 as $R$-modules.
+
 :::
 
-<1>3. The same map is an isomorphism of $R/I$-modules.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The same map is an isomorphism of $R/I$-modules.
+
+::: pf-proof
+
 The ideal $I$ annihilates the quotient $R^n/IR^n$, so scalar multiplication
 by $R$ factors through $R/I$: define
 $$
@@ -93,10 +113,17 @@ $$
 \Phi((r+I)(x+IR^n))=(r+I)\Phi(x+IR^n).
 $$
 Hence the isomorphism is $R/I$-linear as well.
+
 :::
 
-<1>4. An isomorphism $R^n\cong R^m$ descends modulo every ideal.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+An isomorphism $R^n\cong R^m$ descends modulo every ideal.
+
+::: pf-proof
+
 Let
 $$
 F:R^n\xrightarrow{\sim}R^m
@@ -110,21 +137,28 @@ $F^{-1}$ gives the reverse inclusion. Thus $F$ induces an isomorphism
 $$
 R^n/IR^n\xrightarrow{\sim}R^m/IR^m.
 $$
-By steps <1>2--<1>3,
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 (R/I)^n\cong(R/I)^m
 $$
 as $R/I$-modules.
+
 :::
 
-<1>5. Reduce rank invariance to the field case.
-::: {.proof}
+:::
+
+::: pf-step
+
+Reduce rank invariance to the field case.
+
+::: pf-proof
+
 Assume $R\ne0$; over the zero ring $R^n=0=R^m$ for all $n,m$. Choose a
 maximal ideal $\mathfrak m$ of $R$, which exists because $R\ne0$. Then
 $$
 k=R/\mathfrak m
 $$
-is a field. Applying step <1>4 with $I=\mathfrak m$ gives
+is a field. Applying step [](#s4){.pf-ref} with $I=\mathfrak m$ gives
 $$
 k^n\cong k^m.
 $$
@@ -136,5 +170,11 @@ Therefore
 $$
 \boxed{R^n\cong R^m\Longrightarrow n=m.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

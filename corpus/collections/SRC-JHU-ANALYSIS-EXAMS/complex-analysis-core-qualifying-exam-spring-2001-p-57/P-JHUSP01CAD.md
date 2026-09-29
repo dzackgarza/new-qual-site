@@ -30,8 +30,15 @@ Question 4. Let $u ( z ) > 0$ be a positive harmonic function in the punctured p
 :::
 
 ::: {.solution}
-<1>1. Lifting by the exponential map gives a positive harmonic function on the whole plane.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Lifting by the exponential map gives a positive harmonic function on the whole plane.
+
+::: pf-proof
+
 Define
 $$
 v(w)=u(e^w),\qquad w\in\mathbb C.
@@ -43,10 +50,17 @@ $$
 \Delta v(w)=|e^w|^2(\Delta u)(e^w)=0.
 $$
 Moreover $v(w)>0$ everywhere because $u>0$ on the punctured plane.
+
 :::
 
-<1>2. Every positive harmonic function on the plane is constant.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every positive harmonic function on the plane is constant.
+
+::: pf-proof
+
 Because $\mathbb C$ is simply connected, the harmonic function $v$ has a global
 harmonic conjugate, so there is an entire function $H$ with
 $\operatorname{Re}H=v$. Then
@@ -59,15 +73,28 @@ $$
 $$
 Liouville's theorem makes $E$ constant. Since an exponential never vanishes,
 $0=E'=-H'e^{-H}$ implies $H'=0$, hence $H$ and therefore $v$ are constant.
+
 :::
 
-<1>3. Constancy descends to the punctured plane.
-::: {.proof}
+:::
+
+::: pf-step
+
+Constancy descends to the punctured plane.
+
+::: pf-proof
+
 The exponential map is onto $\mathbb C\setminus\{0\}$. For any $z\ne0$, choose
 $w$ with $e^w=z$. If $v\equiv c$, then
 $$
 u(z)=u(e^w)=v(w)=c.
 $$
 Thus $u$ is constant on the punctured plane.
+
 :::
+
+:::
+
+:::
+
 :::

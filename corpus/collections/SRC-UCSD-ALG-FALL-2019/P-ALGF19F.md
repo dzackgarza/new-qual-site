@@ -42,8 +42,14 @@ Set
 g(x)=x^{p^\ell}-x\in\mathbb F_p[x].
 \]
 
-<1>1. The roots of $g$ in an algebraic closure form a field with $p^\ell$ elements.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The roots of $g$ in an algebraic closure form a field with $p^\ell$ elements.
+
+::: pf-proof
+
 In characteristic $p$, the Frobenius map satisfies
 \[
 (u+v)^{p^\ell}=u^{p^\ell}+v^{p^\ell}.
@@ -68,15 +74,22 @@ Thus $g$ has no repeated roots. Since $g$ splits in the algebraic closure and ha
 \qquad
 [K:\mathbb F_p]=\ell.
 \]
+
 :::
 
-<1>2. Every irreducible factor of $g$ has degree $1$ or $\ell$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every irreducible factor of $g$ has degree $1$ or $\ell$.
+
+::: pf-proof
+
 Let $h(x)\in\mathbb F_p[x]$ be an irreducible factor of $g$, and let $\alpha$ be a root of $h$ in $\overline{\mathbb F}_p$. Since $h\mid g$,
 \[
 \alpha^{p^\ell}=\alpha,
 \]
-so $\alpha\in K$ by <1>1.
+so $\alpha\in K$ by step [](#s1){.pf-ref}.
 
 Because $h$ is the minimal polynomial of $\alpha$ over $\mathbb F_p$,
 \[
@@ -95,10 +108,17 @@ Since $\ell$ is prime,
 \deg h\in\{1,\ell\}.
 \]
 This proves part (a).
+
 :::
 
-<1>3. Every monic irreducible polynomial of degree $\ell$ divides $g$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every monic irreducible polynomial of degree $\ell$ divides $g$.
+
+::: pf-proof
+
 Let $f(x)\in\mathbb F_p[x]$ be monic and irreducible of degree $\ell$, and put
 \[
 L=\mathbb F_p[x]/(f).
@@ -122,28 +142,42 @@ Since $f$ is the minimal polynomial of $\alpha$ over $\mathbb F_p$, it follows t
 f(x)\mid x^{p^\ell}-x.
 \]
 This proves part (b).
+
 :::
 
-<1>4. The polynomial $g$ has exactly $p$ monic linear factors, each with multiplicity one.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The polynomial $g$ has exactly $p$ monic linear factors, each with multiplicity one.
+
+::: pf-proof
+
 Every $a\in\mathbb F_p$ satisfies $a^p=a$, and iterating Frobenius gives
 \[
 a^{p^\ell}=a.
 \]
 Thus each $x-a$ divides $g$. These are the $p$ monic linear polynomials over $\mathbb F_p$.
 
-By <1>1, $g'(x)=-1$, so $g$ is squarefree. Hence each of these linear factors occurs exactly once.
+By step [](#s1){.pf-ref}, $g'(x)=-1$, so $g$ is squarefree. Hence each of these linear factors occurs exactly once.
+
 :::
 
-<1>5. There are exactly
+:::
+
+::: pf-step
+
+There are exactly
 \[
 \frac{p^\ell-p}{\ell}
 \]
 monic irreducible polynomials of degree $\ell$ over $\mathbb F_p$.
-::: {.proof}
-By <1>2, every irreducible factor of $g$ has degree $1$ or $\ell$. By <1>3, every monic irreducible polynomial of degree $\ell$ occurs as a factor of $g$, and by squarefreeness it occurs once.
 
-Let $N$ be the number of monic irreducible polynomials of degree $\ell$. Comparing degrees in the factorization of $g$ and using <1>4 gives
+::: pf-proof
+
+By step [](#s2){.pf-ref}, every irreducible factor of $g$ has degree $1$ or $\ell$. By step [](#s3){.pf-ref}, every monic irreducible polynomial of degree $\ell$ occurs as a factor of $g$, and by squarefreeness it occurs once.
+
+Let $N$ be the number of monic irreducible polynomials of degree $\ell$. Comparing degrees in the factorization of $g$ and using step [](#s4){.pf-ref} gives
 \[
 p^\ell=p+N\ell.
 \]
@@ -152,5 +186,11 @@ Therefore
 N=\frac{p^\ell-p}{\ell}.
 \]
 This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

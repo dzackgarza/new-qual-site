@@ -38,9 +38,14 @@ Show that the contour integral converges to your answer as $R \to + \infty$
 ::: {.solution}
 The value is $\boxed{\widehat f(1)=\pi/e}$.
 
-<1>1. The real integral exists absolutely.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The real integral exists absolutely.
+
+::: pf-proof
+
 For real $x$, $|e^{-ix}|=1$. The function
 $(1+x^2)^{-1}$ is bounded on $[-1,1]$ and is at most
 $x^{-2}$ for $|x|\geq1$. Since the latter is integrable
@@ -48,11 +53,17 @@ on both tails, the integral of $e^{-ix}/(1+x^2)$ is
 absolutely convergent. Thus limits of its truncated
 integrals determine its ordinary integral, not merely
 a principal value.
+
 :::
 
-<1>2. The clockwise lower semicircle encloses one pole.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The clockwise lower semicircle encloses one pole.
+
+::: pf-proof
+
 Set $F(z)=e^{-iz}/(1+z^2)$. For $R>1$, traverse
 $[-R,R]$ from left to right, then return from $R$ to
 $-R$ along the lower semicircle $\Gamma_R$.
@@ -71,11 +82,17 @@ $$
 The minus sign is the contour orientation; the lower
 half-plane is chosen because it gives exponential decay
 for the prescribed sign $e^{-iz}$.
+
 :::
 
-<1>3. The semicircle contribution tends to zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The semicircle contribution tends to zero.
+
+::: pf-proof
+
 On $\Gamma_R$, one has $\operatorname{Im}z\leq0$ and
 $$
 |e^{-iz}|=e^{\operatorname{Im}z}\leq1,
@@ -86,8 +103,14 @@ $$
 \left|\int_{\Gamma_R}F(z)\,dz\right|
 \leq\frac{\pi R}{R^2-1}\longrightarrow0.
 $$
-Letting $R\to\infty$ in the identity of step <1>2,
+Letting $R\to\infty$ in the identity of step [](#s2){.pf-ref},
 using this estimate and the absolute convergence in
-step <1>1, gives $\widehat f(1)=\pi/e$ as asserted.
+step [](#s1){.pf-ref}, gives $\widehat f(1)=\pi/e$ as asserted.
+
 :::
+
+:::
+
+:::
+
 :::

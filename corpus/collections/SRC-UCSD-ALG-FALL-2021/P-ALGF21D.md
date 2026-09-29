@@ -30,12 +30,24 @@ Show that if $K$ is a perfect field, then so is $F$.
 :::
 
 ::: {.solution}
-<1>1. If $\operatorname{char}F=0$, then $F$ is perfect.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $\operatorname{char}F=0$, then $F$ is perfect.
+
+::: pf-proof
+
 Every field of characteristic zero is perfect, so there is nothing to prove in this case.
+
 :::
 
-<1>2. Assume $\operatorname{char}F=p>0$.
+:::
+
+::: pf-step
+
+Assume $\operatorname{char}F=p>0$.
 Then
 \[
 F^p\subseteq F\subseteq K,
@@ -44,15 +56,24 @@ where
 \[
 F^p=\{x^p:x\in F\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The Frobenius map is a field homomorphism in characteristic $p$, so its image $F^p$ is a subfield of $F$.
+
 :::
 
-<1>3. The Frobenius isomorphisms induce
+:::
+
+::: {.pf-step #s3}
+
+The Frobenius isomorphisms induce
 \[
 [K^p:F^p]=[K:F].
 \]
-::: {.proof}
+
+::: pf-proof
+
 The Frobenius maps
 \[
 F\longrightarrow F^p,
@@ -67,9 +88,14 @@ x\longmapsto x^p,
 \]
 are field isomorphisms onto their images, and the second carries the subfield $F$ onto $F^p$.
 Thus the extensions $K/F$ and $K^p/F^p$ are isomorphic as field extensions, so their degrees are equal.
+
 :::
 
-<1>4. Since $K$ is perfect,
+:::
+
+::: {.pf-step #s4}
+
+Since $K$ is perfect,
 \[
 K^p=K.
 \]
@@ -77,22 +103,31 @@ Consequently
 \[
 [K:F^p]=[K:F].
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a field of characteristic $p>0$, perfectness is equivalent to surjectivity of Frobenius.
 Hence $K=K^p$.
-Using <1>3,
+Using step [](#s3){.pf-ref},
 \[
 [K:F^p]
 =[K^p:F^p]
 =[K:F].
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 \[
 F=F^p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By the tower law applied to
 \[
 F^p\subseteq F\subseteq K,
@@ -101,17 +136,30 @@ we have
 \[
 [K:F^p]=[K:F][F:F^p].
 \]
-By <1>4, the left side equals $[K:F]$.
+By step [](#s4){.pf-ref}, the left side equals $[K:F]$.
 Since $[K:F]$ is a positive finite integer, cancellation gives
 \[
 [F:F^p]=1.
 \]
 Therefore $F=F^p$.
+
 :::
 
-<1>6. The field $F$ is perfect.
-::: {.proof}
-If $\operatorname{char}F=0$, this is <1>1.
-If $\operatorname{char}F=p>0$, <1>5 shows that Frobenius on $F$ is surjective, which is equivalent to perfectness.
 :::
+
+::: pf-step
+
+The field $F$ is perfect.
+
+::: pf-proof
+
+If $\operatorname{char}F=0$, this is step [](#s1){.pf-ref}.
+If $\operatorname{char}F=p>0$, step [](#s5){.pf-ref} shows that Frobenius on $F$ is surjective, which is equivalent to perfectness.
+
+:::
+
+:::
+
+:::
+
 :::

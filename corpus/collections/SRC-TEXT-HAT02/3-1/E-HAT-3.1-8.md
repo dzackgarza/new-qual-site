@@ -38,7 +38,11 @@ Verify this in the following cases:
 ::: {.solution}
 All coefficient groups below are an arbitrary fixed abelian group $G$.
 
-<1>1. The long exact sequence of the pair $(D^{n+1},S^n)$ gives suspension-style isomorphisms
+::: pf
+
+::: {.pf-step #s1}
+
+The long exact sequence of the pair $(D^{n+1},S^n)$ gives suspension-style isomorphisms
 \[
 \widetilde H^i(S^n;G)\cong H^{i+1}(D^{n+1},S^n;G).
 \]
@@ -51,41 +55,64 @@ G,&i=0,n,\ n>0,\\
 \end{cases}
 \]
 with the usual interpretation for $S^0$.
-::: {.proof}
+
+::: pf-proof
+
 Since $D^{n+1}$ is contractible, its reduced cohomology vanishes. The reduced long exact sequence of the pair therefore identifies the relative group with the shifted reduced cohomology of the boundary. Excision identifies the relative group with the reduced cohomology contributed by the top cell, giving the induction.
+
 :::
 
-<1>2. The same computation follows from Mayer--Vietoris by writing
+:::
+
+::: pf-step
+
+The same computation follows from Mayer--Vietoris by writing
 \[
 S^n=U\cup V
 \]
 as two slightly enlarged hemispheres with $U,V$ contractible and $U\cap V\simeq S^{n-1}$.
-::: {.proof}
+
+::: pf-proof
+
 The reduced Mayer--Vietoris sequence gives isomorphisms
 \[
 \widetilde H^i(S^n;G)\cong\widetilde H^{i-1}(S^{n-1};G),
 \]
-since the reduced cohomology of $U$ and $V$ vanishes. Induction from $S^0$ gives the same answer as <1>1.
+since the reduced cohomology of $U$ and $V$ vanishes. Induction from $S^0$ gives the same answer as step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. If $A\subset X$ is closed and is a deformation retract of a neighborhood, then the quotient map induces isomorphisms
+:::
+
+::: pf-step
+
+If $A\subset X$ is closed and is a deformation retract of a neighborhood, then the quotient map induces isomorphisms
 \[
 \boxed{H^n(X,A;G)\cong\widetilde H^n(X/A;G)}
 \]
 for all $n$.
-::: {.proof}
+
+::: pf-proof
+
 Choose a neighborhood $N$ of $A$ that deformation retracts onto $A$. Excision and homotopy invariance identify
 \[
 H^n(X,A)\cong H^n(X,N).
 \]
 Collapsing $N$ to a point identifies the latter relative cochain theory with reduced cohomology of $X/N$. Since $N/A$ is contractible, the natural map $X/A\to X/N$ is a homotopy equivalence. Composing these identifications gives the asserted quotient isomorphism.
+
 :::
 
-<1>4. If $A$ is a retract of $X$, then
+:::
+
+::: pf-step
+
+If $A$ is a retract of $X$, then
 \[
 \boxed{H^n(X;G)\cong H^n(A;G)\oplus H^n(X,A;G).}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $i:A\hookrightarrow X$ and $r:X\to A$ satisfy $ri=\operatorname{id}_A$. Contravariance gives
 \[
 i^*r^*=\operatorname{id}_{H^n(A)},
@@ -95,5 +122,11 @@ so $i^*:H^n(X)\to H^n(A)$ is split surjective. In the long exact sequence of the
 0\to H^n(X,A)\to H^n(X)\xrightarrow{i^*}H^n(A)\to0.
 \]
 The map $r^*$ splits it, giving the direct sum.
+
 :::
+
+:::
+
+:::
+
 :::

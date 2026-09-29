@@ -37,14 +37,20 @@ Let $F$ be a finite field with $q$ elements and let $V$ be an $n$-dimensional ve
 :::
 
 ::: {.solution}
-<1>1. The vector space $V$ has
+
+::: pf
+
+::: {.pf-step #s1}
+
+The vector space $V$ has
 $$
 \boxed{
 \abs{V}=q^n.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a basis
 $$
 v_1,\ldots,v_n
@@ -59,12 +65,18 @@ a_i\in F.
 $$
 There are $q$ choices for each of the $n$ coefficients, independently.
 Hence there are $q^n$ vectors.
+
 :::
 
-<1>2. An $n\times n$ matrix over $F$ is invertible if and only if its
+:::
+
+::: pf-step
+
+An $n\times n$ matrix over $F$ is invertible if and only if its
 columns form an ordered basis of $F^n$.
 
-::: {.proof}
+::: pf-proof
+
 The columns of a matrix are the images of the standard basis under the
 associated linear map
 $$
@@ -72,22 +84,33 @@ F^n\longrightarrow F^n.
 $$
 The matrix is invertible exactly when this map is an isomorphism, which is
 equivalent to its images of the standard basis forming a basis.
+
 :::
 
-<1>3. After choosing $j-1$ linearly independent columns, their span has
+:::
+
+::: {.pf-step #s3}
+
+After choosing $j-1$ linearly independent columns, their span has
 exactly
 $$
 q^{j-1}
 $$
 elements.
 
-::: {.proof}
+::: pf-proof
+
 The span of $j-1$ linearly independent vectors is a
-$(j-1)$-dimensional vector space over $F$. Step <1>1 applied in dimension
+$(j-1)$-dimensional vector space over $F$. Step [](#s1){.pf-ref} applied in dimension
 $j-1$ gives $q^{j-1}$ elements.
+
 :::
 
-<1>4. The order of the general linear group is
+:::
+
+::: {.pf-step #s4}
+
+The order of the general linear group is
 $$
 \boxed{
 \abs{GL_n(F)}
@@ -96,9 +119,10 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first column can be any nonzero vector, giving $q^n-1$ choices.
-After $j-1$ independent columns have been chosen, step <1>3 says their
+After $j-1$ independent columns have been chosen, step [](#s3){.pf-ref} says their
 span has $q^{j-1}$ elements, so the $j$th column has
 $$
 q^n-q^{j-1}
@@ -109,15 +133,21 @@ $$
 (q^n-1)(q^n-q)\cdots(q^n-q^{n-1}),
 $$
 which is the displayed product.
+
 :::
 
-<1>5. The determinant map
+:::
+
+::: {.pf-step #s5}
+
+The determinant map
 $$
 \det:GL_n(F)\longrightarrow F^\times
 $$
 is a surjective group homomorphism with kernel $SL_n(F)$.
 
-::: {.proof}
+::: pf-proof
+
 Multiplicativity of determinant makes it a group homomorphism, and by
 definition its kernel is $SL_n(F)$. For any $a\in F^\times$, the diagonal
 matrix
@@ -125,18 +155,29 @@ $$
 \operatorname{diag}(a,1,\ldots,1)
 $$
 has determinant $a$, so the map is surjective.
+
 :::
 
-<1>6. The multiplicative group $F^\times$ has order
+:::
+
+::: {.pf-step #s6}
+
+The multiplicative group $F^\times$ has order
 $$
 q-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The field $F$ has $q$ elements, exactly one of which is zero.
+
 :::
 
-<1>7. The order of the special linear group is
+:::
+
+::: {.pf-step #s7}
+
+The order of the special linear group is
 $$
 \boxed{
 \abs{SL_n(F)}
@@ -146,8 +187,9 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>5 and the first isomorphism theorem,
+::: pf-proof
+
+By step [](#s5){.pf-ref} and the first isomorphism theorem,
 $$
 GL_n(F)/SL_n(F)\cong F^\times.
 $$
@@ -159,14 +201,20 @@ $$
 =
 q-1
 $$
-by step <1>6. Substitute the formula from step <1>4 and solve for
+by step [](#s6){.pf-ref}. Substitute the formula from step [](#s4){.pf-ref} and solve for
 $\abs{SL_n(F)}$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 answers part (1), step <1>4 answers part (2), and step <1>7
+::: pf-qed
+
+Step [](#s1){.pf-ref} answers part (1), step [](#s4){.pf-ref} answers part (2), and step [](#s7){.pf-ref}
 answers part (3).
+
 :::
+
+:::
+
 :::

@@ -22,32 +22,93 @@ Show that any countable space with the discrete topology is separable.
 :::
 
 ::: {.solution}
-<1>1. Definition of separability:
-<2>1. A topological space $(X, \mathcal{T})$ is **separable** if there exists a subset $D \subseteq X$ such that:
+
+::: pf
+
+::: {.pf-step #s1}
+
+Definition of separability:
+
+::: pf-proof
+
+::: pf-step
+
+A topological space $(X, \mathcal{T})$ is **separable** if there exists a subset $D \subseteq X$ such that:
 (i) $D$ is at most countable ($|D| \le \aleph_0$), and
 (ii) $D$ is dense in $X$ ($\overline{D} = X$).
-::: {.proof}
+
+::: pf-proof
+
 standard definition of separability.
+
 :::
 
-<1>2. Verification for a countable discrete space:
-<2>1. Let $X$ be a countable space equipped with the discrete topology $\mathcal{T} = \mathcal{P}(X)$.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Verification for a countable discrete space:
+
+::: pf-proof
+
+::: pf-step
+
+Let $X$ be a countable space equipped with the discrete topology $\mathcal{T} = \mathcal{P}(X)$.
 Choose the subset $D = X \subseteq X$.
-::: {.proof}
+
+::: pf-proof
+
 choice of $D$.
-:::
-<2>2. $D = X$ is countable by the hypothesis that $X$ is countable.
-::: {.proof}
-hypothesis.
-:::
-<2>3. The closure of the whole space is $\overline{D} = \overline{X} = X$, so $D$ is dense in $X$.
-::: {.proof}
-property of topological closure.
+
 :::
 
-<1>3. Conclusion:
-Since $D = X$ is a countable dense subset of $X$, $(X, \mathcal{T})$ is separable. Q.E.D.
-::: {.proof}
-<1>1 and <1>2.
 :::
+
+::: pf-step
+
+$D = X$ is countable by the hypothesis that $X$ is countable.
+
+::: pf-proof
+
+hypothesis.
+
+:::
+
+:::
+
+::: pf-step
+
+The closure of the whole space is $\overline{D} = \overline{X} = X$, so $D$ is dense in $X$.
+
+::: pf-proof
+
+property of topological closure.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+Conclusion:
+Since $D = X$ is a countable dense subset of $X$, $(X, \mathcal{T})$ is separable. Q.E.D.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

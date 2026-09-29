@@ -34,18 +34,31 @@ Let $R$ be a commutative ring and $M$ an $R-$module.
    Make explicit where the hypothesis that $R$ is a domain is used.
 :::
 
-
 ::: {.solution}
-<1>1. An element $m\in M$ is torsion if there exists a nonzero $r\in R$ such that
+
+::: pf
+
+::: pf-step
+
+An element $m\in M$ is torsion if there exists a nonzero $r\in R$ such that
 \[
 rm=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The zero element is always torsion; a nonzero torsion element is one annihilated by some nonzero scalar.
+
 :::
 
-<1>2. There is an infinite cyclic module with a nonzero torsion element.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is an infinite cyclic module with a nonzero torsion element.
+
+::: pf-proof
+
 Take
 \[
 R=\ZZ\times\ZZ,
@@ -64,23 +77,37 @@ satisfies
 \[
 rm=(0,1)(1,0)=(0,0).
 \]
-:::
 
 Now assume for the remaining parts that $R$ is a domain, and let
 \[
 T(M)=\{m\in M:m\text{ is torsion}\}.
 \]
 
-<1>3. The zero element lies in $T(M)$.
-::: {.proof}
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The zero element lies in $T(M)$.
+
+::: pf-proof
+
 For any nonzero $r\in R$,
 \[
 r0=0.
 \]
+
 :::
 
-<1>4. If $m,n\in T(M)$, then $m+n\in T(M)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $m,n\in T(M)$, then $m+n\in T(M)$.
+
+::: pf-proof
+
 Choose nonzero $a,b\in R$ with
 \[
 am=0,
@@ -92,19 +119,39 @@ Then
 (ab)(m+n)=b(am)+a(bn)=0.
 \]
 Because $R$ is a domain and $a,b\ne0$, one has $ab\ne0$. Hence $m+n$ is torsion. This is exactly where the domain hypothesis is used.
+
 :::
 
-<1>5. If $m\in T(M)$ and $r\in R$, then $rm\in T(M)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+If $m\in T(M)$ and $r\in R$, then $rm\in T(M)$.
+
+::: pf-proof
+
 Choose nonzero $a\in R$ with $am=0$. Then
 \[
 a(rm)=r(am)=0.
 \]
 Since the same nonzero scalar $a$ annihilates $rm$, it is torsion.
+
 :::
 
-<1>6. Therefore $T(M)$ is an $R$-submodule of $M$ when $R$ is a domain.
-::: {.proof}
-By <1>3--<1>5, $T(M)$ contains $0$ and is closed under addition and scalar multiplication.
 :::
+
+::: pf-step
+
+Therefore $T(M)$ is an $R$-submodule of $M$ when $R$ is a domain.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}, $T(M)$ contains $0$ and is closed under addition and scalar multiplication.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -36,19 +36,29 @@ of proper subspaces $V_1,\ldots,V_n$.
 ::: {.solution}
 Let $K$ denote the infinite ground field.
 
-<1>1. Suppose, for contradiction, that
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that
 $$
 V=\bigcup_{i=1}^n(a_i+V_i),
 $$
 and choose such a cover with $n$ minimal.
 
-::: {.proof}
+::: pf-proof
+
 This is the negation of the desired conclusion. Since the cover is
 finite, among all finite covers by cosets of proper subspaces there is one
 having the least possible number of cosets.
+
 :::
 
-<1>2. There exists
+:::
+
+::: {.pf-step #s2}
+
+There exists
 $$
 v\in a_1+V_1
 $$
@@ -58,19 +68,26 @@ v\notin a_i+V_i
 \qquad(2\le i\le n).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If every point of $a_1+V_1$ belonged to the union of the other cosets,
 then deleting $a_1+V_1$ would still leave a cover of $V$, contradicting
-the minimality in step <1>1.
+the minimality in step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Choose $w\in V\setminus V_1$ and consider the affine line
+:::
+
+::: {.pf-step #s3}
+
+Choose $w\in V\setminus V_1$ and consider the affine line
 $$
 L\coloneqq\{v+tw:t\in K\}.
 $$
 Each coset $a_i+V_i$ meets $L$ in at most one point.
 
-::: {.proof}
+::: pf-proof
+
 For $i=1$, if $v+tw\in a_1+V_1$, then subtracting
 $v\in a_1+V_1$ gives $tw\in V_1$. Since $w\notin V_1$, this forces
 $t=0$. Thus $a_1+V_1$ meets $L$ only at $v$.
@@ -87,31 +104,49 @@ $$
 $$
 Because $s-t\ne0$, it follows that $w\in V_i$. Subtracting $sw\in V_i$
 from $v+sw\in a_i+V_i$ then gives $v\in a_i+V_i$, contradicting step
-<1>2. Hence there cannot be two such parameters.
+[](#s2){.pf-ref}. Hence there cannot be two such parameters.
+
 :::
 
-<1>4. There exists $t\in K$ such that
+:::
+
+::: {.pf-step #s4}
+
+There exists $t\in K$ such that
 $$
 v+tw\notin\bigcup_{i=1}^n(a_i+V_i).
 $$
 
-::: {.proof}
-By step <1>3, each of the finitely many cosets excludes at most one
+::: pf-proof
+
+By step [](#s3){.pf-ref}, each of the finitely many cosets excludes at most one
 parameter $t\in K$. Hence only finitely many parameters place $v+tw$ in
 the union. Since $K$ is infinite, choose $t$ outside that finite set.
+
 :::
 
-<1>5. The assumed finite cover cannot exist.
-
-::: {.proof}
-Step <1>4 produces a vector $v+tw\in V$ lying in none of the cosets,
-contradicting the covering equality in step <1>1.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>5 proves the required nonexistence of a finite cover by cosets of
+The assumed finite cover cannot exist.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} produces a vector $v+tw\in V$ lying in none of the cosets,
+contradicting the covering equality in step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the required nonexistence of a finite cover by cosets of
 proper subspaces.
+
 :::
+
+:::
+
 :::

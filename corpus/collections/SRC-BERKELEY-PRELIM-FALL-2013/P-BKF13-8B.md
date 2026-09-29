@@ -35,74 +35,109 @@ Prove that if $n$ is coprime to $N=561$ then $n^{N-1}\equiv1\bmod N$.
 ::: {.solution}
 Let $N=561$.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 N=3\cdot11\cdot17
 \qquad\text{and}\qquad
 N-1=560.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives $3\cdot11\cdot17=561$, and subtracting $1$
 gives $560$.
+
 :::
 
-<1>2. If $\gcd(n,561)=1$, then
+:::
+
+::: {.pf-step #s2}
+
+If $\gcd(n,561)=1$, then
 $$
 n^{560}\equiv1\pmod3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis implies $3\nmid n$. By Fermat's little theorem,
 $n^2\equiv1\pmod3$. Since $560=280\cdot2$,
 $$
 n^{560}=(n^2)^{280}\equiv1\pmod3.
 $$
+
 :::
 
-<1>3. If $\gcd(n,561)=1$, then
+:::
+
+::: {.pf-step #s3}
+
+If $\gcd(n,561)=1$, then
 $$
 n^{560}\equiv1\pmod{11}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis implies $11\nmid n$. By Fermat's little theorem,
 $n^{10}\equiv1\pmod{11}$. Since $560=56\cdot10$,
 $$
 n^{560}=(n^{10})^{56}\equiv1\pmod{11}.
 $$
+
 :::
 
-<1>4. If $\gcd(n,561)=1$, then
+:::
+
+::: {.pf-step #s4}
+
+If $\gcd(n,561)=1$, then
 $$
 n^{560}\equiv1\pmod{17}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis implies $17\nmid n$. By Fermat's little theorem,
 $n^{16}\equiv1\pmod{17}$. Since $560=35\cdot16$,
 $$
 n^{560}=(n^{16})^{35}\equiv1\pmod{17}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{n^{N-1}\equiv1\pmod N}.
 $$
 
-::: {.proof}
-By steps <1>2--<1>4, each of the pairwise coprime integers $3$, $11$,
+::: pf-proof
+
+By steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}, each of the pairwise coprime integers $3$, $11$,
 and $17$ divides $n^{560}-1$. Hence their product $561$ divides
-$n^{560}-1$. Using step <1>1, this is
+$n^{560}-1$. Using step [](#s1){.pf-ref}, this is
 $$
 n^{N-1}\equiv1\pmod N.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required congruence.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required congruence.
+
+:::
+
+:::
+
 :::

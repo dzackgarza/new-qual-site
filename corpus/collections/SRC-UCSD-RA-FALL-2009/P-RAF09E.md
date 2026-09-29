@@ -38,8 +38,15 @@ Then $\nu_a \ll \mu$ and $\nu_s \perp \mu$.
 :::
 
 ::: {.solution}
-<1>1. Prove part (a) by the Riesz representation theorem.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a) by the Riesz representation theorem.
+
+::: pf-proof
+
 Since $\nu\le\lambda$ and $\lambda(X)<\infty$, for $f\in L^2(\lambda)$,
 \[
 \left|\int_X f\,d\nu\right|
@@ -63,10 +70,17 @@ Hence for every $f\in L^2(\lambda)$,
 \int_X f(1-g)\,d\nu
 =\int_X fg\,d\mu.}
 \]
+
 :::
 
-<1>2. Prove that $0\le g\le1$ almost everywhere.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that $0\le g\le1$ almost everywhere.
+
+::: pf-proof
+
 Because $\lambda$ is finite, indicators of measurable sets lie in $L^2(\lambda)$.
 
 Let
@@ -97,10 +111,17 @@ Thus
 \qquad\lambda\text{-a.e.}
 \]
 Changing $g$ on a $\lambda$-null set, we may assume this holds everywhere.
+
 :::
 
-<1>3. Prove the Lebesgue decomposition in part (c).
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the Lebesgue decomposition in part (c).
+
+::: pf-proof
+
 Let
 \[
 A=\{g<1\},
@@ -140,10 +161,17 @@ Hence
 \[
 \nu_a\ll\mu.
 \]
+
 :::
 
-<1>4. Identify the Radon--Nikodym density on $A$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Identify the Radon--Nikodym density on $A$.
+
+::: pf-proof
+
 Fix $E\in\mathcal M$ and again let
 \[
 A_n=\left\{g\le1-\frac1n\right\}.
@@ -169,5 +197,11 @@ d\nu_a
 =\frac{g}{1-g}\,d\mu,}
 \]
 where the density is understood on $A$; its value on the $\mu$-null set $B$ is irrelevant.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -34,23 +34,37 @@ In other words, a convergent series is Abel summable to its ordinary sum.
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 \[
 s_n=\sum_{k=1}^n a_k,
 \qquad
 s=\sum_{k=1}^{\infty}a_k.
 \]
 Then $(s_n)$ is bounded and $s_n\to s$.
-::: {.proof}
+
+::: pf-proof
+
 Convergence of the series means exactly that its sequence of partial sums converges to $s$. Every convergent sequence is bounded.
+
 :::
 
-<1>2. For $0\le r<1$ and every $N\ge1$,
+:::
+
+::: {.pf-step #s2}
+
+For $0\le r<1$ and every $N\ge1$,
 \[
 \sum_{n=1}^N a_nr^n
 =s_Nr^N+(1-r)\sum_{n=1}^{N-1}s_nr^n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $a_n=s_n-s_{n-1}$ with $s_0=0$,
 \[
 \begin{aligned}
@@ -61,34 +75,55 @@ Since $a_n=s_n-s_{n-1}$ with $s_0=0$,
 \end{aligned}
 \]
 This is the summation-by-parts formula of [[E-SS1.EX-14]] with the sequences $r^n$ and $a_n$ in the roles of $a_n$ and $b_n$.
+
 :::
 
-<1>3. For every $0\le r<1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $0\le r<1$,
 \[
 \sum_{n=1}^{\infty}a_nr^n
 =(1-r)\sum_{n=1}^{\infty}s_nr^n.
 \]
-::: {.proof}
-By <1>1 there is $C$ with $|s_n|\le C$. Hence $|s_Nr^N|\le Cr^N\to0$ and the series $\sum s_nr^n$ converges absolutely. Letting $N\to\infty$ in <1>2 gives the identity.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} there is $C$ with $|s_n|\le C$. Hence $|s_Nr^N|\le Cr^N\to0$ and the series $\sum s_nr^n$ converges absolutely. Letting $N\to\infty$ in step [](#s2){.pf-ref} gives the identity.
+
 :::
 
-<1>4. For $0\le r<1$,
+:::
+
+::: {.pf-step #s4}
+
+For $0\le r<1$,
 \[
 (1-r)\sum_{n=1}^{\infty}s_nr^n
 =sr+(1-r)\sum_{n=1}^{\infty}(s_n-s)r^n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Write $s_n=s+(s_n-s)$ and use
 \[
 (1-r)\sum_{n=1}^{\infty}r^n=r.
 \]
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 \[
 \lim_{r\to1^-}(1-r)\sum_{n=1}^{\infty}(s_n-s)r^n=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Choose $N$ so that $|s_n-s|<\varepsilon$ for every $n\ge N$. Then
 \[
 \begin{aligned}
@@ -102,18 +137,31 @@ Fix $\varepsilon>0$. Choose $N$ so that $|s_n-s|<\varepsilon$ for every $n\ge N$
 \end{aligned}
 \]
 The first term tends to $0$ as $r\to1^-$ because it is $(1-r)$ times a fixed finite constant. Thus the limsup is at most $\varepsilon$. Since $\varepsilon$ is arbitrary, the asserted limit is $0$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lim_{r\to1^-}\sum_{n=1}^{\infty}a_nr^n=s.
 \]
-::: {.proof}
-By <1>3 and <1>4,
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 \[
 \sum_{n=1}^{\infty}a_nr^n
 =sr+(1-r)\sum_{n=1}^{\infty}(s_n-s)r^n.
 \]
-The first term tends to $s$, and the second tends to $0$ by <1>5.
+The first term tends to $s$, and the second tends to $0$ by step [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

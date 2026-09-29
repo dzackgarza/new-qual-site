@@ -34,8 +34,15 @@ Hence $\Phi$ induces a one-to-one correspondence between $[S^1, X]$ and the set 
 :::
 
 ::: {.solution}
-<1>1. Sliding the basepoint of a loop along a path changes its based class by conjugation and does not change its free homotopy class.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Sliding the basepoint of a loop along a path changes its based class by conjugation and does not change its free homotopy class.
+
+::: pf-proof
+
 Let $p:I\to X$ be a path from $x$ to $y$, and let $f$ be a loop based at $y$.
 The loop
 \[
@@ -61,10 +68,17 @@ S^1\times I\to X.
 \]
 At $t=0$ it is $p\cdot f\cdot\bar p$, while at $t=1$ the two path pieces are constant and the loop is homotopic to $f$ by reparametrization.
 Thus the two loops are freely homotopic.
+
 :::
 
-<1>2. If $X$ is path connected, then $\Phi$ is surjective.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $X$ is path connected, then $\Phi$ is surjective.
+
+::: pf-proof
+
 Let $f:S^1\to X$ be arbitrary and put
 \[
 y=f(s_0).
@@ -75,19 +89,26 @@ Regard $f$ as a loop based at $y$ and define
 g=p\cdot f\cdot\bar p,
 \]
 a loop based at $x_0$.
-By <1>1, $g$ and $f$ are freely homotopic.
+By step [](#s1){.pf-ref}, $g$ and $f$ are freely homotopic.
 Hence
 \[
 \Phi([g])=[f]\in[S^1,X].
 \]
 Since $[f]$ was arbitrary, $\Phi$ is onto.
+
 :::
 
-<1>3. If $[f]$ and $[g]$ are conjugate in $\pi_1(X,x_0)$, then
+:::
+
+::: {.pf-step #s3}
+
+If $[f]$ and $[g]$ are conjugate in $\pi_1(X,x_0)$, then
 \[
 \Phi([f])=\Phi([g]).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 [g]=[h]\,[f]\,[h]^{-1}
@@ -97,19 +118,26 @@ Then $g$ is based-homotopic to
 \[
 h\cdot f\cdot\bar h.
 \]
-By <1>1, the latter loop is freely homotopic to $f$.
+By step [](#s1){.pf-ref}, the latter loop is freely homotopic to $f$.
 Therefore $g$ and $f$ define the same unbased homotopy class, so
 \[
 \Phi([g])=\Phi([f]).
 \]
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 \[
 \Phi([f])=\Phi([g]),
 \]
 then $[f]$ and $[g]$ are conjugate in $\pi_1(X,x_0)$.
-::: {.proof}
+
+::: pf-proof
+
 The equality of their images means that there is a free homotopy
 \[
 H:S^1\times I\to X
@@ -131,21 +159,41 @@ Consequently
 [f]=[h]\,[g]\,[h]^{-1}.
 \]
 Thus $[f]$ and $[g]$ are conjugate.
+
 :::
 
-<1>5. The fibers of $\Phi$ are exactly the conjugacy classes in $\pi_1(X,x_0)$.
-::: {.proof}
-The forward and reverse implications are <1>3 and <1>4.
 :::
 
-<1>6. If $X$ is path connected, $\Phi$ induces a bijection
+::: {.pf-step #s5}
+
+The fibers of $\Phi$ are exactly the conjugacy classes in $\pi_1(X,x_0)$.
+
+::: pf-proof
+
+The forward and reverse implications are steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+If $X$ is path connected, $\Phi$ induces a bijection
 \[
 \{\text{conjugacy classes in }\pi_1(X,x_0)\}
 \longrightarrow
 [S^1,X].
 \]
-::: {.proof}
-By <1>5 the map is constant exactly on conjugacy classes, so it factors through the set of conjugacy classes and the induced map is injective.
-By <1>2 it is surjective.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref} the map is constant exactly on conjugacy classes, so it factors through the set of conjugacy classes and the induced map is injective.
+By step [](#s2){.pf-ref} it is surjective.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -36,13 +36,18 @@ How many irreducible polynomials of degree exactly 6 are there over the finite f
 ::: {.solution}
 Work inside $\FF_{3^6}$.
 
-<1>1. Exactly
+::: pf
+
+::: {.pf-step #s1}
+
+Exactly
 $$
 3^6-3^3-3^2+3=696
 $$
 elements of $\FF_{3^6}$ have degree exactly $6$ over $\FF_3$.
 
-::: {.proof}
+::: pf-proof
+
 For an element $\alpha\in\FF_{3^6}$, the degree
 $[\FF_3(\alpha):\FF_3]$ divides $6$. Hence an element whose degree is
 less than $6$ has degree $1$, $2$, or $3$, and therefore lies in
@@ -62,16 +67,22 @@ Subtracting from $|\FF_{3^6}|=3^6=729$ gives
 $$
 729-33=696.
 $$
+
 :::
 
-<1>2. There are exactly
+:::
+
+::: {.pf-step #s2}
+
+There are exactly
 $$
 \frac{696}{6}=116
 $$
 monic irreducible polynomials of degree $6$ over $\FF_3$.
 
-::: {.proof}
-Every element $\alpha$ counted in step <1>1 has a monic irreducible
+::: pf-proof
+
+Every element $\alpha$ counted in step [](#s1){.pf-ref} has a monic irreducible
 minimal polynomial of degree $6$ over $\FF_3$. Such a polynomial has
 six distinct roots in $\FF_{3^6}$,
 $$
@@ -82,27 +93,39 @@ a monic irreducible sextic has degree $6$ over $\FF_3$. Thus the $696$
 degree-six elements are partitioned into sets of six roots, one set for
 each monic irreducible sextic. Hence there are $696/6=116$ such monic
 polynomials.
+
 :::
 
-<1>3. The number of irreducible polynomials of degree exactly $6$ over
+:::
+
+::: {.pf-step #s3}
+
+The number of irreducible polynomials of degree exactly $6$ over
 $\FF_3$ is
 $$
 \boxed{232}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every irreducible polynomial is a unique nonzero scalar multiple of a
 monic irreducible polynomial. Since $\FF_3^\times$ has two elements,
-each of the $116$ monic irreducible sextics from step <1>2 has exactly
+each of the $116$ monic irreducible sextics from step [](#s2){.pf-ref} has exactly
 two nonzero scalar multiples. Therefore the total number is
 $$
 2\cdot116=232.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested number.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested number.
+
+:::
+
+:::
+
 :::

@@ -31,22 +31,36 @@ Prove that $\RR^2$ is not homeomorphic to $\RR^n$ for $n > 2$.
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that there is a homeomorphism
+
+::: pf
+
+::: pf-step
+
+Suppose, for contradiction, that there is a homeomorphism
 \[
 h:\mathbb R^2\to\mathbb R^n
 \]
 with $n>2$.
-::: {.proof}
+
+::: pf-proof
+
 We will derive a contradiction from the homology of the complements of corresponding points.
+
 :::
 
-<1>2. Restricting $h$ gives a homeomorphism
+:::
+
+::: {.pf-step #s2}
+
+Restricting $h$ gives a homeomorphism
 \[
 \mathbb R^2\setminus\{0\}
 \cong
 \mathbb R^n\setminus\{h(0)\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $h$ is bijective,
 \[
 h\bigl(\mathbb R^2\setminus\{0\}\bigr)
@@ -54,15 +68,22 @@ h\bigl(\mathbb R^2\setminus\{0\}\bigr)
 \mathbb R^n\setminus\{h(0)\}.
 \]
 The restriction of a homeomorphism to a subspace is a homeomorphism onto its image.
+
 :::
 
-<1>3. The punctured plane deformation retracts onto $S^1$, so
+:::
+
+::: {.pf-step #s3}
+
+The punctured plane deformation retracts onto $S^1$, so
 \[
 H_1(\mathbb R^2\setminus\{0\};\mathbb Z)
 \cong
 \mathbb Z.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The radial map
 \[
 r(x)=\frac{x}{\|x\|}
@@ -76,13 +97,20 @@ H_1(S^1)
 \cong
 \mathbb Z.
 \]
+
 :::
 
-<1>4. The punctured $n$-space deformation retracts onto $S^{n-1}$, and for $n>2$,
+:::
+
+::: {.pf-step #s4}
+
+The punctured $n$-space deformation retracts onto $S^{n-1}$, and for $n>2$,
 \[
 H_1(\mathbb R^n\setminus\{h(0)\};\mathbb Z)=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Translation by $-h(0)$ is a homeomorphism
 \[
 \mathbb R^n\setminus\{h(0)\}
@@ -98,20 +126,33 @@ Since $n>2$, one has $n-1\ge2$, and the homology of a sphere gives
 H_1(S^{n-1};\mathbb Z)=0.
 \]
 Hence the displayed punctured-space group vanishes.
+
 :::
 
-<1>5. This contradicts <1>2, so
+:::
+
+::: pf-step
+
+This contradicts step [](#s2){.pf-ref}, so
 \[
 \boxed{\mathbb R^2\not\cong\mathbb R^n\quad(n>2)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Homeomorphic spaces have isomorphic homology groups.
-But <1>3 and <1>4 give respectively
+But steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give respectively
 \[
 H_1(\mathbb R^2\setminus\{0\})\cong\mathbb Z
 \qquad\text{and}\qquad
 H_1(\mathbb R^n\setminus\{h(0)\})=0,
 \]
-contradicting the homeomorphism in <1>2. Therefore no homeomorphism $\mathbb R^2\to\mathbb R^n$ exists for $n>2$.
+contradicting the homeomorphism in step [](#s2){.pf-ref}. Therefore no homeomorphism $\mathbb R^2\to\mathbb R^n$ exists for $n>2$.
+
 :::
+
+:::
+
+:::
+
 :::

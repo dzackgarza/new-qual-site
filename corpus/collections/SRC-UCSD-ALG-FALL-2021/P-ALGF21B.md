@@ -33,8 +33,15 @@ In the latter case, define a group homomorphism $\varphi \colon G \to S_{11}$ an
 :::
 
 ::: {.solution}
-<1>1. The multiplicative order of $2$ modulo $11$ is $10$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The multiplicative order of $2$ modulo $11$ is $10$.
+
+::: pf-proof
+
 One computes
 \[
 2^5=32\equiv-1\pmod{11},
@@ -53,10 +60,17 @@ The proper positive divisors of $10$ are $1,2,5$, and
 \pmod{11}.
 \]
 Hence the order is exactly $10$.
+
 :::
 
-<1>2. If $0\le n<10$, then the Sylow $11$-subgroup of $G$ is normal.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $0\le n<10$, then the Sylow $11$-subgroup of $G$ is normal.
+
+::: pf-proof
+
 Let $s$ be the number of Sylow $11$-subgroups.
 The Sylow theorems give
 \[
@@ -65,17 +79,24 @@ s\mid 2^n
 s\equiv1\pmod{11}.
 \]
 Thus $s=2^j$ for some $0\le j\le n<10$.
-By <1>1, among the powers $2^j$ with $0\le j<10$, only $2^0=1$ is congruent to $1$ modulo $11$.
+By step [](#s1){.pf-ref}, among the powers $2^j$ with $0\le j<10$, only $2^0=1$ is congruent to $1$ modulo $11$.
 Therefore
 \[
 s=1.
 \]
 Hence the Sylow $11$-subgroup is unique and therefore normal.
+
 :::
 
-<1>3. Every group of order $2^n\cdot11$ with $n<10$ is solvable.
-::: {.proof}
-Let $Q\trianglelefteq G$ be the unique Sylow $11$-subgroup from <1>2.
+:::
+
+::: {.pf-step #s3}
+
+Every group of order $2^n\cdot11$ with $n<10$ is solvable.
+
+::: pf-proof
+
+Let $Q\trianglelefteq G$ be the unique Sylow $11$-subgroup from step [](#s2){.pf-ref}.
 Then
 \[
 |Q|=11,
@@ -87,23 +108,37 @@ Also
 \]
 so $G/Q$ is a finite $2$-group and therefore solvable.
 An extension of a solvable group by a solvable group is solvable; hence $G$ is solvable.
+
 :::
 
-<1>4. Assume $n\ge10$, and let $P$ be a Sylow $2$-subgroup of $G$.
+:::
+
+::: pf-step
+
+Assume $n\ge10$, and let $P$ be a Sylow $2$-subgroup of $G$.
 The action of $G$ on the left cosets $G/P$ gives a homomorphism
 \[
 \varphi:G\longrightarrow S_{11}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 [G:P]=11,
 \]
 left multiplication of $G$ on the set $G/P$ of eleven left cosets gives a permutation representation on eleven points, hence a homomorphism to $S_{11}$.
+
 :::
 
-<1>5. The kernel $K:=\ker\varphi$ is a $2$-group, and hence is solvable.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The kernel $K:=\ker\varphi$ is a $2$-group, and hence is solvable.
+
+::: pf-proof
+
 Every element of $K$ fixes every coset, in particular the coset $P$.
 Thus if $k\in K$, then
 \[
@@ -115,15 +150,22 @@ Therefore
 K\le P.
 \]
 Since $P$ is a $2$-group, so is $K$; every finite $p$-group is solvable.
+
 :::
 
-<1>6. The image $\varphi(G)$ has order
+:::
+
+::: {.pf-step #s6}
+
+The image $\varphi(G)$ has order
 \[
 2^r\cdot11
 \]
 for some $0\le r\le8$.
-::: {.proof}
-By <1>5, $K$ is a $2$-group, so $|K|$ is a power of $2$.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, $K$ is a $2$-group, so $|K|$ is a power of $2$.
 The first isomorphism theorem gives
 \[
 |\varphi(G)|=[G:K]=\frac{2^n\cdot11}{|K|}.
@@ -144,35 +186,62 @@ v_2(11!)
 =5+2+1=8.
 \]
 Hence $r\le8$.
+
 :::
 
-<1>7. The image $\varphi(G)$ is solvable.
-::: {.proof}
-By <1>6,
+:::
+
+::: {.pf-step #s7}
+
+The image $\varphi(G)$ is solvable.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref},
 \[
 |\varphi(G)|=2^r\cdot11
 \]
 with $r\le8<10$.
-Therefore <1>3 applies to $\varphi(G)$, proving that it is solvable.
+Therefore step [](#s3){.pf-ref} applies to $\varphi(G)$, proving that it is solvable.
+
 :::
 
-<1>8. If $n\ge10$, then $G$ is solvable.
-::: {.proof}
-By <1>5, the normal subgroup
+:::
+
+::: {.pf-step #s8}
+
+If $n\ge10$, then $G$ is solvable.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, the normal subgroup
 \[
 K=\ker\varphi
 \]
 is solvable.
-By the first isomorphism theorem and <1>7,
+By the first isomorphism theorem and step [](#s7){.pf-ref},
 \[
 G/K\cong\varphi(G)
 \]
 is solvable.
 Therefore $G$ is an extension of a solvable group by a solvable group, and hence is solvable.
+
 :::
 
-<1>9. Consequently every group of order $2^n\cdot11$ is solvable.
-::: {.proof}
-The case $n<10$ is <1>3, and the case $n\ge10$ is <1>8.
 :::
+
+::: pf-step
+
+Consequently every group of order $2^n\cdot11$ is solvable.
+
+::: pf-proof
+
+The case $n<10$ is step [](#s3){.pf-ref}, and the case $n\ge10$ is step [](#s8){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

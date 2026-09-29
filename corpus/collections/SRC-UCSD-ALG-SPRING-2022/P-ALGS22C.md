@@ -40,30 +40,51 @@ $M$ to show that the calculation is ambiguous.
 :::
 
 ::: {.solution}
-<1>1. By the structure theorem for finitely generated modules over a PID, write
+
+::: pf
+
+::: pf-step
+
+By the structure theorem for finitely generated modules over a PID, write
 \[
 M\cong R^r\oplus\bigoplus_{q}\bigoplus_{j=1}^{s_q}R/(q^{e_{q,j}}),
 \]
 where \(q\) runs over primes of \(R\), up to associates, and every \(e_{q,j}\ge1\).
-::: {.proof}
+
+::: pf-proof
+
 This is the elementary-divisor form of the structure theorem for finitely generated
 modules over a PID.
+
 :::
 
-<1>2. The supplied number \(\dim_K(M\otimes_RK)\) is exactly
+:::
+
+::: {.pf-step #s2}
+
+The supplied number \(\dim_K(M\otimes_RK)\) is exactly
 \(r=\operatorname{rank}_R M\). Thus part (a) is determined precisely.
-::: {.proof}
+
+::: pf-proof
+
 Tensoring with \(K\) kills every torsion summand and sends \(R^r\) to \(K^r\). Hence
 \[
 M\otimes_RK\cong K^r.
 \]
+
 :::
 
-<1>3. Fix a prime \(p\), and let \(\mathfrak m=(p)\). Then
+:::
+
+::: {.pf-step #s3}
+
+Fix a prime \(p\), and let \(\mathfrak m=(p)\). Then
 \[
 \dim_{R/(p)}(M\otimes_RR/(p))=r+s_p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The free summand contributes \((R/(p))^r\). For a torsion summand \(R/(q^e)\),
 \[
 R/(q^e)\otimes_RR/(p)\cong R/(q^e,p).
@@ -72,18 +93,32 @@ If \(q\) is not associate to \(p\), then \((q^e,p)=R\), so this tensor product i
 If \(q\) is associate to \(p\), then \((p^e,p)=(p)\), so the tensor product is
 \(R/(p)\), independently of \(e\). Thus exactly the \(s_p\) elementary divisors that are
 powers of \(p\) contribute one dimension each.
+
 :::
 
-<1>4. Therefore part (b) is determined precisely by
+:::
+
+::: {.pf-step #s4}
+
+Therefore part (b) is determined precisely by
 \[
 s_p=\dim_{R/(p)}(M\otimes_RR/(p))-\dim_K(M\otimes_RK).
 \]
-::: {.proof}
-Subtract the value \(r\) found in <1>2 from the identity in <1>3.
+
+::: pf-proof
+
+Subtract the value \(r\) found in step [](#s2){.pf-ref} from the identity in step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Part (c) is not determined by the supplied data.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Part (c) is not determined by the supplied data.
+
+::: pf-proof
+
 Take
 \[
 M_1=R/(p),\qquad M_2=R/(p^2).
@@ -93,10 +128,23 @@ Both have rank zero. For the maximal ideal \((p)\), both fibers are one-dimensio
 supplied dimensions are identical for \(M_1\) and \(M_2\). Nevertheless their
 elementary-divisor lists are respectively \(\{p\}\) and \(\{p^2\}\), so the exact
 exponents cannot be recovered.
+
 :::
 
-<1>6. Hence (a) and (b) can be determined precisely, while (c) cannot.
-::: {.proof}
-Combine <1>2, <1>4, and <1>5.
 :::
+
+::: pf-step
+
+Hence (a) and (b) can be determined precisely, while (c) cannot.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

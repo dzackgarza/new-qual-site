@@ -32,7 +32,12 @@ c. Identify $\mathbb{R}^2$ with $\mathbb{C}$ and give a necessary and sufficient
 :::
 
 ::: {.solution}
-<1>1. Let $p=(a,b)$. A map $f:U\subset\mathbb R^2\to\mathbb R^m$ is differentiable at $p$ if there is a linear map
+
+::: pf
+
+::: pf-step
+
+Let $p=(a,b)$. A map $f:U\subset\mathbb R^2\to\mathbb R^m$ is differentiable at $p$ if there is a linear map
 \[
 L:\mathbb R^2\to\mathbb R^m
 \]
@@ -43,7 +48,11 @@ such that
 \]
 The map $L$ is the Fréchet derivative $Df(p)$.
 
-<1>2. If $f:U\to\mathbb R^2$ is $C^1$ near $p$ and $Df(p)$ is invertible, then there are neighborhoods $V$ of $p$ and $W$ of $f(p)$ such that
+:::
+
+::: pf-step
+
+If $f:U\to\mathbb R^2$ is $C^1$ near $p$ and $Df(p)$ is invertible, then there are neighborhoods $V$ of $p$ and $W$ of $f(p)$ such that
 \[
 f|_V:V\to W
 \]
@@ -52,7 +61,16 @@ is a $C^1$ diffeomorphism. Moreover
 D(f|_V)^{-1}(f(p))=(Df(p))^{-1}.
 \]
 
-<1>3. Identify $\mathbb R^2$ with $\mathbb C$ and write
+:::
+
+::: pf-step
+
+Identify $\mathbb R^2$ with $\mathbb C$ and write
+
+:::
+
+:::
+
 \[
 f=u+iv.
 \]

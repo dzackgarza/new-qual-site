@@ -52,14 +52,19 @@ $$
 whenever $j>i$, so that $P=(p_{ij})_{0\le i,j\le n}$ is an
 $(n+1)\times(n+1)$ matrix.
 
-<1>1. For every $0\le i,j\le n$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $0\le i,j\le n$,
 $$
 (PHP^T)_{ij}
 =
 \int_0^1P_i(t)P_j(t)\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By matrix multiplication,
 $$
 \begin{aligned}
@@ -86,15 +91,21 @@ $$
 \int_0^1P_i(t)P_j(t)\,dt.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The orthonormality hypothesis gives
+:::
+
+::: {.pf-step #s2}
+
+The orthonormality hypothesis gives
 $$
 \boxed{PHP^T=I}.
 $$
 
-::: {.proof}
-By step <1>1 and the assumed orthonormality,
+::: pf-proof
+
+By step [](#s1){.pf-ref} and the assumed orthonormality,
 $$
 (PHP^T)_{ij}
 =
@@ -104,12 +115,18 @@ $$
 $$
 Thus every entry of $PHP^T$ agrees with the corresponding entry of
 the identity matrix.
+
 :::
 
-<1>3. The matrix $P$ is invertible.
+:::
 
-::: {.proof}
-From step <1>2,
+::: pf-step
+
+The matrix $P$ is invertible.
+
+::: pf-proof
+
+From step [](#s2){.pf-ref},
 $$
 n+1
 =
@@ -126,9 +143,14 @@ $$
 \operatorname{rank}(P)=n+1,
 $$
 so the square matrix $P$ is invertible.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 H=P^{-1}P^{-T},
 $$
@@ -137,25 +159,32 @@ $$
 P^{-T}\coloneqq(P^{-1})^T.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiply the identity
 $$
 PHP^T=I
 $$
-from step <1>2 on the left by $P^{-1}$ and on the right by
+from step [](#s2){.pf-ref} on the left by $P^{-1}$ and on the right by
 $(P^T)^{-1}=P^{-T}$. This gives
 $$
 H=P^{-1}P^{-T}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{H^{-1}=P^TP}.
 $$
 
-::: {.proof}
-The right-hand side in step <1>4 is a product of invertible matrices,
+::: pf-proof
+
+The right-hand side in step [](#s4){.pf-ref} is a product of invertible matrices,
 so $H$ is invertible. Inverting that identity and reversing the order
 of factors gives
 $$
@@ -169,11 +198,17 @@ H^{-1}
 P^TP.
 \end{aligned}
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required identity.
+
+:::
+
+:::
+
 :::

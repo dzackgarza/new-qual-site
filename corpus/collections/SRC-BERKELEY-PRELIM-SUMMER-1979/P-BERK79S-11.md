@@ -43,12 +43,17 @@ $$
 V=F^n.
 $$
 
-<1>1. If $A^2=A$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $A^2=A$, then
 $$
 V=\operatorname{im}A+\ker A.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $v\in V$. Then
 $$
 v
@@ -70,14 +75,20 @@ $$
 v-Av\in\ker A.
 $$
 Thus every vector lies in the sum.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \operatorname{im}A\cap\ker A=\{0\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 w\in\operatorname{im}A\cap\ker A.
@@ -97,23 +108,35 @@ Av
 w.
 $$
 But $w\in\ker A$, so $Aw=0$. Hence $w=0$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 V=\operatorname{im}A\oplus\ker A.
 }
 $$
 
-::: {.proof}
-Step <1>1 gives the sum, and step <1>2 shows that it is direct.
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives the sum, and step [](#s2){.pf-ref} shows that it is direct.
+
 :::
 
-<1>4. The restriction of $A$ to $\operatorname{im}A$ is the identity,
+:::
+
+::: {.pf-step #s4}
+
+The restriction of $A$ to $\operatorname{im}A$ is the identity,
 while its restriction to $\ker A$ is zero.
 
-::: {.proof}
+::: pf-proof
+
 If $w\in\operatorname{im}A$, write
 $$
 w=Av.
@@ -129,9 +152,14 @@ Av
 w.
 $$
 If $w\in\ker A$, then $Aw=0$ by definition.
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 r=\operatorname{rank}A,
 $$
@@ -145,7 +173,8 @@ I_r&0\\
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a basis
 $$
 u_1,\ldots,u_r
@@ -154,13 +183,18 @@ of $\operatorname{im}A$ and a basis
 $$
 w_1,\ldots,w_{n-r}
 $$
-of $\ker A$. By step <1>3, their union is a basis of $V$. By step <1>4,
+of $\ker A$. By step [](#s3){.pf-ref}, their union is a basis of $V$. By step [](#s4){.pf-ref},
 the matrix of $A$ in this basis is identity on the first $r$ basis vectors
 and zero on the remaining $n-r$ basis vectors. Hence it is the displayed
 block diagonal matrix.
+
 :::
 
-<1>6. If
+:::
+
+::: {.pf-step #s6}
+
+If
 $$
 \operatorname{rank}A
 =
@@ -176,27 +210,40 @@ I_r&0\\
 \end{pmatrix}.
 $$
 
-::: {.proof}
-Step <1>5 applies to $A$. Since $B^2=B$ as well, the same argument applies
+::: pf-proof
+
+Step [](#s5){.pf-ref} applies to $A$. Since $B^2=B$ as well, the same argument applies
 to $B$, and the common rank hypothesis gives the same integer $r$.
+
 :::
 
-<1>7. The matrices $A$ and $B$ are similar:
+:::
+
+::: {.pf-step #s7}
+
+The matrices $A$ and $B$ are similar:
 $$
 \boxed{
 A\sim B.
 }
 $$
 
-::: {.proof}
-Similarity is transitive. Step <1>6 shows that $A$ and $B$ are both
+::: pf-proof
+
+Similarity is transitive. Step [](#s6){.pf-ref} shows that $A$ and $B$ are both
 similar to the same block diagonal matrix, so they are similar to each
 other.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

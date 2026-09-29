@@ -29,18 +29,45 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. With $u = \sin^2(x)$, $du = \sin(2x) \, dx$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+With $u = \sin^2(x)$, $du = \sin(2x) \, dx$.
+
+::: pf-proof
+
 By the chain rule, $\frac{du}{dx} = 2\sin(x)\cos(x)$, and by the double-angle identity for sine, $2\sin(x)\cos(x) = \sin(2x)$.
+
 :::
 
-<1>2. Transform and evaluate the integral in terms of $u$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = \int e^u \, du = e^u + C.$$
-::: {.proof}
-By <1>1, $\sin(2x)\,dx = du$, so the integral becomes $\int e^u\,du$; the antiderivative of $e^u$ is $e^u + C$.
 :::
 
-<1>3. Substitute back $u = \sin^2(x)$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = e^{\sin^2(x)} + C.$$
-::: {.proof}
-Replacing $u$ by $\sin^2(x)$ in the antiderivative $e^u + C$ from <1>2 gives $e^{\sin^2(x)} + C$.
+::: {.pf-step #s2}
+
+Transform and evaluate the integral in terms of $u$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = \int e^u \, du = e^u + C.$$
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $\sin(2x)\,dx = du$, so the integral becomes $\int e^u\,du$; the antiderivative of $e^u$ is $e^u + C$.
+
 :::
+
+:::
+
+::: pf-step
+
+Substitute back $u = \sin^2(x)$: $$\int e^{\sin^2(x)} \sin(2x) \, dx = e^{\sin^2(x)} + C.$$
+
+::: pf-proof
+
+Replacing $u$ by $\sin^2(x)$ in the antiderivative $e^u + C$ from step [](#s2){.pf-ref} gives $e^{\sin^2(x)} + C$.
+
+:::
+
+:::
+
+:::
+
 :::

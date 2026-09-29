@@ -39,8 +39,15 @@ For the true statements give a brief reason and for the false statements give a 
 :::
 
 ::: {.solution}
-<1>1. Statement 1 is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Statement 1 is false.
+
+::: pf-proof
+
 Take $\Omega=[0,1]$ with Lebesgue measure and enumerate the dyadic intervals level by level:
 \[
 f_n=\mathbf1_{[j2^{-k},(j+1)2^{-k})}
@@ -52,10 +59,17 @@ for $0\le j<2^k$, with $k\to\infty$ along the enumeration. Then
 so $f_n\to0$ in $L^2$.
 
 For every non-dyadic $x\in[0,1]$, at each level $k$ exactly one dyadic interval contains $x$, while the other intervals at that level do not. Hence $f_n(x)$ takes both values $1$ and $0$ infinitely often. Thus the full sequence does not converge pointwise at almost every $x$.
+
 :::
 
-<1>2. Statement 2 is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement 2 is true.
+
+::: pf-proof
+
 Since the singleton $\{\omega_0\}$ has positive finite measure,
 \[
 \|f_n-f\|_2^2
@@ -70,10 +84,17 @@ Therefore
 \frac{\|f_n-f\|_2}{\mu(\{\omega_0\})^{1/2}}
 \longrightarrow0.
 \]
+
 :::
 
-<1>3. Statement 3 is false in general.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement 3 is false in general.
+
+::: pf-proof
+
 Take $\Omega=\mathbb R$ with Lebesgue measure,
 \[
 f_n=\mathbf1_{[n,n+1]},
@@ -86,10 +107,17 @@ m\bigl(\{|f_n-f|\ge1/2\}\bigr)
 =m([n,n+1])=1
 \]
 for every $n$. Hence $f_n$ does not converge to $f$ in measure.
+
 :::
 
-<1>4. Statement 4 is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement 4 is true.
+
+::: pf-proof
+
 Let $h_n=f_n-f$. Hölder's inequality with exponents $3$ and $3/2$ gives
 \[
 \|h_n\|_1
@@ -102,5 +130,11 @@ Since $\|h_n\|_3\to0$,
 \[
 \boxed{\|f_n-f\|_1\to0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

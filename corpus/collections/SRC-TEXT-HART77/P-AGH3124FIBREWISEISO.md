@@ -47,13 +47,18 @@ $$
 $$
 for every \(y\in Y\).
 
-<1>1. The sheaf \(\mcf\) is flat over \(Y\), and
+::: pf
+
+::: {.pf-step #s1}
+
+The sheaf \(\mcf\) is flat over \(Y\), and
 $$
 h^0(X_y,\mcf_y)=1
 $$
 for every \(y\in Y\).
 
-::: {.proof}
+::: pf-proof
+
 Since \(f\) is flat, \(\mco_X\) is flat over \(Y\). Locally on \(X\), the
 invertible sheaf \(\mcf\) is isomorphic to \(\mco_X\), so \(\mcf\) is also
 flat over \(Y\).
@@ -85,9 +90,14 @@ $$
 h^0(X_y,\mcf_y)=1
 $$
 for all \(y\in Y\).
+
 :::
 
-<1>2. The sheaf
+:::
+
+::: {.pf-step #s2}
+
+The sheaf
 $$
 \mcn=f_*\mcf
 $$
@@ -99,8 +109,9 @@ $$
 H^0(X_y,\mcf_y).
 $$
 
-::: {.proof}
-The base \(Y\) is integral, hence reduced. By step <1>1, \(\mcf\) is
+::: pf-proof
+
+The base \(Y\) is integral, hence reduced. By step [](#s1){.pf-ref}, \(\mcf\) is
 coherent and flat over \(Y\), and the function
 $$
 y\longmapsto h^0(X_y,\mcf_y)
@@ -113,16 +124,22 @@ $$
 is locally free of rank \(1\), with the displayed base-change
 isomorphism. A locally free sheaf of rank \(1\) is invertible, so
 \(\mcn=f_*\mcf\) is the required line bundle candidate on \(Y\).
+
 :::
 
-<1>3. The canonical evaluation morphism
+:::
+
+::: {.pf-step #s3}
+
+The canonical evaluation morphism
 $$
 \epsilon:f^*\mcn=f^*f_*\mcf\longrightarrow\mcf
 $$
 restricts to an isomorphism on every fibre \(X_y\).
 
-::: {.proof}
-By the base-change isomorphism of step <1>2, the restriction of
+::: pf-proof
+
+By the base-change isomorphism of step [](#s2){.pf-ref}, the restriction of
 \(\epsilon\) to \(X_y\) is the ordinary evaluation map
 $$
 H^0(X_y,\mcf_y)\tensor_{\kappa(y)}\mco_{X_y}
@@ -133,7 +150,7 @@ Choose an isomorphism
 $$
 \mcf_y\cong\mco_{X_y}.
 $$
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 H^0(X_y,\mcf_y)\cong\kappa(y),
 $$
@@ -146,21 +163,27 @@ $$
 a\tensor s\longmapsto as,
 $$
 which is an isomorphism.
+
 :::
 
-<1>4. The evaluation morphism
+:::
+
+::: {.pf-step #s4}
+
+The evaluation morphism
 $$
 \epsilon:f^*\mcn\longrightarrow\mcf
 $$
 is an isomorphism on \(X\).
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \mcc=\operatorname{coker}(\epsilon).
 $$
 This is coherent. Fix \(x\in X\), put \(y=f(x)\), and take the stalk at
-\(x\). By step <1>3, tensoring the stalk sequence with \(\kappa(y)\)
+\(x\). By step [](#s3){.pf-ref}, tensoring the stalk sequence with \(\kappa(y)\)
 kills the cokernel:
 $$
 \mcc_x/\mfm_y\mcc_x=0,
@@ -177,15 +200,21 @@ Both its source and target are invertible sheaves. Locally at \(x\),
 rank-one \(\mco_{X,x}\)-modules. It is multiplication by a generator of
 the unit ideal, hence by a unit. Thus \(\epsilon_x\) is an isomorphism
 for every \(x\), so \(\epsilon\) is an isomorphism globally.
+
 :::
 
-<1>5. There is an invertible sheaf \(\mcn\) on \(Y\) such that
+:::
+
+::: {.pf-step #s5}
+
+There is an invertible sheaf \(\mcn\) on \(Y\) such that
 $$
 \mcl\cong\mcm\tensor f^*\mcn.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 \mcl\tensor\mcm^{-1}
 =\mcf
@@ -196,11 +225,17 @@ Tensoring by \(\mcm\) gives
 $$
 \boxed{\mcl\cong\mcm\tensor f^*\mcn}.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

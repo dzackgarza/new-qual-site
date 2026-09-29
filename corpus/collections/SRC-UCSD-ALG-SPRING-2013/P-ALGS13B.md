@@ -31,8 +31,15 @@ Prove that any projective $A$-module is flat.
 :::
 
 ::: {.solution}
-<1>1. Every free $A$-module is flat.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every free $A$-module is flat.
+
+::: pf-proof
+
 Let $F=\bigoplus_{i\in I}A$.
 For every $A$-module $M$ there is a natural isomorphism
 \[
@@ -41,10 +48,17 @@ M\otimes_A F\cong \bigoplus_{i\in I}(M\otimes_A A)\cong \bigoplus_{i\in I}M.
 Thus the functor $-\otimes_A F$ is naturally isomorphic to the direct-sum functor $M\mapsto\bigoplus_{i\in I}M$.
 Direct sums of exact sequences of modules are exact, so $-\otimes_A F$ is exact.
 Hence $F$ is flat.
+
 :::
 
-<1>2. A direct summand of a flat module is flat.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A direct summand of a flat module is flat.
+
+::: pf-proof
+
 Suppose $N\cong P\oplus Q$ and $N$ is flat.
 Then for every $A$-module $M$,
 \[
@@ -58,21 +72,41 @@ injective.
 Its restriction to the first direct summand is $u\otimes 1_P$, so $u\otimes 1_P$ is injective.
 Since tensor product is always right exact, $-\otimes_A P$ is exact.
 Thus $P$ is flat.
+
 :::
 
-<1>3. Every projective $A$-module is flat.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every projective $A$-module is flat.
+
+::: pf-proof
+
 Let $P$ be projective.
 There exists a free module $F$ and a module $Q$ such that
 \[
 F\cong P\oplus Q.
 \]
-By <1>1, $F$ is flat.
-By <1>2, its direct summand $P$ is flat.
+By step [](#s1){.pf-ref}, $F$ is flat.
+By step [](#s2){.pf-ref}, its direct summand $P$ is flat.
+
 :::
 
-<1>4. Therefore every projective module over a commutative ring is flat.
-::: {.proof}
-This is exactly <1>3.
 :::
+
+::: pf-step
+
+Therefore every projective module over a commutative ring is flat.
+
+::: pf-proof
+
+This is exactly step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

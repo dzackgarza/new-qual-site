@@ -37,14 +37,19 @@ $$
 For $R>a$, let $C_R$ be the positively oriented contour consisting of
 $[-R,R]$ and the upper semicircle of radius $R$.
 
-<1>1. The only pole of $F$ inside $C_R$ is the double pole at $z=ia$, and
+::: pf
+
+::: {.pf-step #s1}
+
+The only pole of $F$ inside $C_R$ is the double pole at $z=ia$, and
 $$
 \Res(F;ia)
 =
 -\frac{i}{4a}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 (z^2+a^2)^2
@@ -92,12 +97,18 @@ $$
 -\frac{i}{4a}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The integral over the upper semicircular arc tends to zero as
+:::
+
+::: {.pf-step #s2}
+
+The integral over the upper semicircular arc tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=R$,
 $$
 \abs{z^2+a^2}
@@ -119,9 +130,14 @@ $$
 \frac{\pi R^3}{(R^2-a^2)^2}
 \longrightarrow0.
 $$
+
 :::
 
-<1>3. The whole-line integral is
+:::
+
+::: {.pf-step #s3}
+
+The whole-line integral is
 $$
 \int_{-\infty}^{\infty}
 \frac{x^2}{(x^2+a^2)^2}\,dx
@@ -129,8 +145,9 @@ $$
 \frac{\pi}{2a}.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>1,
+::: pf-proof
+
+By the residue theorem and step [](#s1){.pf-ref},
 $$
 \int_{C_R}F(z)\,dz
 =
@@ -140,10 +157,15 @@ $$
 \frac{\pi}{2a}.
 $$
 Split the contour into the real segment and arc, let $R\to\infty$, and
-use step <1>2.
+use step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The requested value is
+:::
+
+::: {.pf-step #s4}
+
+The requested value is
 $$
 \boxed{
 \int_0^{\infty}
@@ -153,13 +175,20 @@ $$
 }
 $$
 
-::: {.proof}
-The integrand is even, so step <1>3 is twice the half-line integral.
+::: pf-proof
+
+The integrand is even, so step [](#s3){.pf-ref} is twice the half-line integral.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

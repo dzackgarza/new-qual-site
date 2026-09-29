@@ -27,10 +27,16 @@ audit:
 Let A be a 2 $\times$ 2 matrix over C which is not a scalar multiple of the identity matrix I. Show that any 2 $\times$ 2 matrix X over C commuting with A has the form $X = \alpha I + \beta A$ , where $\alpha , \beta \in \mathbb { C }$
 :::
 
-
 ::: {.solution}
-<1>1. Since $A$ is not scalar, there is a vector $v\in\mathbb C^2$ such that $v$ and $Av$ are linearly independent.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Since $A$ is not scalar, there is a vector $v\in\mathbb C^2$ such that $v$ and $Av$ are linearly independent.
+
+::: pf-proof
+
 Suppose instead that $Av\in\mathbb Cv$ for every nonzero $v$. Choose a basis $e_1,e_2$. Then
 \[
 Ae_1=\lambda e_1,
@@ -48,11 +54,18 @@ Therefore some $v$ has $v,Av$ linearly independent. Since the space has dimensio
 (v,Av)
 \]
 is a basis of $\mathbb C^2$.
+
 :::
 
-<1>2. Any matrix $X$ commuting with $A$ is of the form $\alpha I+\beta A$.
-::: {.proof}
-Let $X$ satisfy $XA=AX$. Using the basis from <1>1, write
+:::
+
+::: pf-step
+
+Any matrix $X$ commuting with $A$ is of the form $\alpha I+\beta A$.
+
+::: pf-proof
+
+Let $X$ satisfy $XA=AX$. Using the basis from step [](#s1){.pf-ref}, write
 \[
 Xv=\alpha v+\beta Av
 \]
@@ -72,5 +85,11 @@ Thus $X$ and $Y$ agree on the basis $v,Av$, so $X=Y$. Consequently
 \[
 \boxed{X=\alpha I+\beta A}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

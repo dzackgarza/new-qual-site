@@ -33,7 +33,6 @@ Prove every ideal $I$ in $R$ is principal, i.e. is a cyclic module.
 [Hint: if $I$ contains nonzero elements, choose one $x$ of smallest size, and prove $x$ divides all the other elements of $I$.] Conclude that either $I = \{0\}$, or $I$ is isomorphic to $R$.
 :::
 
-
 ::: {.solution}
 Let
 $$
@@ -41,18 +40,31 @@ $$
 $$
 be a Euclidean size function.
 
-<1>1. If $I\ne0$, choose a nonzero element $x\in I$ of minimal Euclidean size.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+If $I\ne0$, choose a nonzero element $x\in I$ of minimal Euclidean size.
+
+::: pf-proof
+
 The set
 $$
 \{\delta(y):0\ne y\in I\}
 $$
 is a nonempty subset of $\mathbb Z$ bounded below, so it has a least element.
 Choose $0\ne x\in I$ attaining that minimum.
+
 :::
 
-<1>2. The element $x$ divides every element of $I$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The element $x$ divides every element of $I$.
+
+::: pf-proof
+
 Let $y\in I$. If $y=0$, the assertion is trivial. If $y\ne0$, Euclidean
 division by $x$ gives
 $$
@@ -71,15 +83,22 @@ $$
 y=qx.
 $$
 Thus every $y\in I$ lies in $(x)$.
+
 :::
 
-<1>3. Every ideal of $R$ is principal.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every ideal of $R$ is principal.
+
+::: pf-proof
+
 Because $x\in I$, one has
 $$
 (x)\subseteq I.
 $$
-Step <1>2 gives the reverse inclusion, so
+Step [](#s2){.pf-ref} gives the reverse inclusion, so
 $$
 I=(x).
 $$
@@ -88,10 +107,17 @@ $$
 I=(0).
 $$
 Thus every ideal is principal.
+
 :::
 
-<1>4. A nonzero ideal is isomorphic to $R$ as an $R$-module.
-::: {.proof}
+:::
+
+::: pf-step
+
+A nonzero ideal is isomorphic to $R$ as an $R$-module.
+
+::: pf-proof
+
 If $I=(x)$ with $x\ne0$, define
 $$
 \mu_x:R\longrightarrow I,
@@ -108,5 +134,11 @@ $$
 \boxed{I\cong R.}
 $$
 Therefore every ideal is either $0$ or an $R$-module isomorphic to $R$.
+
 :::
+
+:::
+
+:::
+
 :::

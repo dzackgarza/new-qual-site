@@ -36,8 +36,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Define the functional on $V$ and extend it.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Define the functional on $V$ and extend it.
+
+::: pf-proof
+
 For $f\in V$, set
 \[
 L(f):=\lim_{n\to\infty}n\int_0^{1/n}f(x)\,dx.
@@ -63,10 +70,17 @@ with the same norm. Hence
 \varphi(f)=L(f)
 \]
 for every $f\in V$.
+
 :::
 
-<1>2. Test the extension on shrinking interval indicators.
-::: {.proof}
+:::
+
+::: pf-step
+
+Test the extension on shrinking interval indicators.
+
+::: pf-proof
+
 For $k\ge1$, let
 \[
 f_k=\mathbf1_{[0,1/k]}.
@@ -81,10 +95,17 @@ Therefore $f_k\in V$ and
 \varphi(f_k)=1
 \qquad\text{for every }k.
 \]
+
 :::
 
-<1>3. Rule out representation by an $L^1$ density.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rule out representation by an $L^1$ density.
+
+::: pf-proof
+
 Suppose there were $g\in L^1([0,1])$ such that
 \[
 \varphi(f)=\int_0^1 f(x)g(x)\,dx
@@ -98,5 +119,11 @@ But absolute continuity of the Lebesgue integral for $g\in L^1$ implies
 \int_0^{1/k}g(x)\,dx\longrightarrow0
 \]
 as $k\to\infty$, a contradiction. Hence no such $g$ exists.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,8 +39,14 @@ The poles $z=\pm\frac12$ lie on the real axis, so use a large upper
 semicircle and indent the real axis by small upper semicircles around those
 two poles.
 
-<1>1. The contribution from the large semicircle tends to zero.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The contribution from the large semicircle tends to zero.
+
+::: pf-proof
+
 On the upper half-plane,
 $$
 |e^{i\pi z}|=e^{-\pi\operatorname{Im}z}\le1.
@@ -53,10 +59,17 @@ so the large-arc integral has absolute value at most
 $$
 \frac{\pi R}{4R^2-1}\longrightarrow0.
 $$
+
 :::
 
-<1>2. Compute the residues at the two real poles.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the residues at the two real poles.
+
+::: pf-proof
+
 Since $(4z^2-1)'=8z$,
 $$
 \operatorname{Res}_{z=1/2}F
@@ -70,10 +83,17 @@ $$
 =\frac{i}{4}.
 $$
 Thus the sum of the two residues is $i/2$.
+
 :::
 
-<1>3. Evaluate the principal-value integral of $F$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Evaluate the principal-value integral of $F$.
+
+::: pf-proof
+
 The small upper indentation around a simple real pole is traversed clockwise,
 so its limiting contribution is $-i\pi$ times the residue. There are no
 poles strictly inside the indented contour. Hence, after letting the large
@@ -83,10 +103,17 @@ $$
 =i\pi\left(\frac{i}{4}+\frac{i}{4}\right)
 =-\frac\pi2.
 $$
+
 :::
 
-<1>4. Take real parts.
-::: {.proof}
+:::
+
+::: pf-step
+
+Take real parts.
+
+::: pf-proof
+
 For real $x$,
 $$
 \operatorname{Re}F(x)
@@ -95,11 +122,17 @@ $$
 Although $F$ itself has poles at $\pm\frac12$, the real part has removable
 singularities there because $\cos(\pi x)$ vanishes at both points. It is also
 $O(x^{-2})$ at infinity, so its ordinary improper integral converges and equals
-the real part of the principal value computed in step <1>3. Therefore
+the real part of the principal value computed in step [](#s3){.pf-ref}. Therefore
 $$
 \boxed{
 \int_{-\infty}^{\infty}\frac{\cos(\pi x)}{4x^2-1}\,dx
 =-\frac\pi2.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

@@ -34,7 +34,12 @@ Let A be an $m \times n$ matrix of rank r and B a $p \times q$ matrix of rank s.
 :::
 
 ::: {.solution}
-<1>1. The condition
+
+::: pf
+
+::: {.pf-step #s1}
+
+The condition
 $$
 AXB=0
 $$
@@ -43,7 +48,8 @@ $$
 X(\operatorname{im}B)\subseteq\ker A.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Regard
 $$
 B:\mathbb R^q\to\mathbb R^p,
@@ -68,24 +74,35 @@ for every $v$, which is equivalent to
 $$
 X(\operatorname{im}B)\subseteq\ker A.
 $$
+
 :::
 
-<1>2. The two distinguished subspaces have dimensions
+:::
+
+::: {.pf-step #s2}
+
+The two distinguished subspaces have dimensions
 $$
 \dim(\operatorname{im}B)=s,
 \qquad
 \dim(\ker A)=n-r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first equality is the definition of the rank of $B$. The second is
 the rank-nullity theorem applied to
 $$
 A:\mathbb R^n\to\mathbb R^m.
 $$
+
 :::
 
-<1>3. Choose a basis
+:::
+
+::: {.pf-step #s3}
+
+Choose a basis
 $$
 e_1,\ldots,e_p
 $$
@@ -106,24 +123,31 @@ $$
 \operatorname{span}(u_{r+1},\ldots,u_n).
 $$
 
-::: {.proof}
-By step <1>2, a basis of $\operatorname{im}B$ has $s$ vectors and may be
+::: pf-proof
+
+By step [](#s2){.pf-ref}, a basis of $\operatorname{im}B$ has $s$ vectors and may be
 extended to a basis of $\mathbb R^p$. Likewise, a basis of $\ker A$ has
 $n-r$ vectors and may be extended by $r$ further vectors to a basis of
 $\mathbb R^n$; relabel the latter so that the kernel basis is
 $u_{r+1},\ldots,u_n$.
+
 :::
 
-<1>4. In the bases from step <1>3, the matrices $X$ satisfying $AXB=0$
+:::
+
+::: {.pf-step #s4}
+
+In the bases from step [](#s3){.pf-ref}, the matrices $X$ satisfying $AXB=0$
 are exactly the $n\times p$ matrices whose upper-left $r\times s$
 block is zero.
 
-::: {.proof}
-By step <1>1, the condition is that
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the condition is that
 $$
 X(e_j)\in\ker A
 $$
-for every $1\le j\le s$. By step <1>3, this says precisely that the
+for every $1\le j\le s$. By step [](#s3){.pf-ref}, this says precisely that the
 coefficients of
 $$
 u_1,\ldots,u_r
@@ -134,26 +158,38 @@ exactly the $rs$ entries in the upper-left $r\times s$ block.
 There is no condition on the remaining matrix entries: the first $s$
 columns may have arbitrary components along
 $u_{r+1},\ldots,u_n$, and the remaining $p-s$ columns are unrestricted.
+
 :::
 
-<1>5. The vector space of solutions has dimension
+:::
+
+::: {.pf-step #s5}
+
+The vector space of solutions has dimension
 $$
 \boxed{np-rs}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 An arbitrary $n\times p$ matrix has $np$ independent entries. Step
-<1>4 imposes exactly $rs$ independent zero-coordinate conditions and no
+[](#s4){.pf-ref} imposes exactly $rs$ independent zero-coordinate conditions and no
 others. Hence the solution space has
 $$
 np-rs
 $$
 free coordinates.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested dimension.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested dimension.
+
+:::
+
+:::
+
 :::

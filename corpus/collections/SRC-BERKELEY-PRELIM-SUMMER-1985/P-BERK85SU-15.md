@@ -35,7 +35,12 @@ f\in X_k\quad\Longleftrightarrow\quad f'\in X_{k+1}.
 :::
 
 ::: {.solution}
-<1>1. If $f\in X_k$, then there is a constant $C>0$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $f\in X_k$, then there is a constant $C>0$ such that
 $$
 \abs{f(w)}
 \le
@@ -43,16 +48,23 @@ $$
 $$
 for every $w\in\DD$.
 
-::: {.proof}
+::: pf-proof
+
 This is exactly the defining boundedness condition for $X_k$.
+
 :::
 
-<1>2. If $f\in X_k$, then
+:::
+
+::: {.pf-step #s2}
+
+If $f\in X_k$, then
 $$
 f'\in X_{k+1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $z\in\DD$, and set
 $$
 d=1-\abs{z},
@@ -67,7 +79,7 @@ $$
 =
 \frac d2.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \abs{f(w)}
 \le
@@ -89,9 +101,14 @@ $$
 2^{k+1}C
 $$
 for every $z\in\DD$, which is precisely $f'\in X_{k+1}$.
+
 :::
 
-<1>3. Conversely, suppose $f'\in X_{k+1}$. Then there is a constant
+:::
+
+::: {.pf-step #s3}
+
+Conversely, suppose $f'\in X_{k+1}$. Then there is a constant
 $C>0$ such that
 $$
 \abs{f'(w)}
@@ -100,12 +117,18 @@ $$
 $$
 for every $w\in\DD$.
 
-::: {.proof}
+::: pf-proof
+
 This is the defining boundedness condition for $X_{k+1}$ applied to
 $f'$.
+
 :::
 
-<1>4. For every $z\in\DD$,
+:::
+
+::: {.pf-step #s4}
+
+For every $z\in\DD$,
 $$
 \abs{f(z)-f(0)}
 \le
@@ -115,9 +138,10 @@ $$
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $r=\abs{z}$. Integrating along the radial segment from $0$ to
-$z$ and using step <1>3 gives
+$z$ and using step [](#s3){.pf-ref} gives
 $$
 \begin{aligned}
 \abs{f(z)-f(0)}
@@ -140,15 +164,21 @@ C
 \end{aligned}
 $$
 This is the claimed inequality.
+
 :::
 
-<1>5. If $f'\in X_{k+1}$, then
+:::
+
+::: {.pf-step #s5}
+
+If $f'\in X_{k+1}$, then
 $$
 f\in X_k.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 \begin{aligned}
 (1-\abs{z})^k\abs{f(z)}
@@ -162,9 +192,14 @@ $$
 $$
 The right-hand side is independent of $z$, so the defining
 supremum for $X_k$ is finite.
+
 :::
 
-<1>6. Consequently,
+:::
+
+::: {.pf-step #s6}
+
+Consequently,
 $$
 \boxed{
 f\in X_k
@@ -173,14 +208,21 @@ f'\in X_{k+1}
 }.
 $$
 
-::: {.proof}
-Step <1>2 proves the forward implication, and step <1>5 proves the
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves the forward implication, and step [](#s5){.pf-ref} proves the
 reverse implication.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::

@@ -26,10 +26,16 @@ Can you show that all groups of order $p^n$ for $p$ prime are solvable?
 Do you know how to do this for groups of order $p^r q^s$?
 :::
 
-
 ::: {.solution}
-<1>1. Every finite $p$-group is solvable.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every finite $p$-group is solvable.
+
+::: pf-proof
+
 We argue by induction on $|G|$. The trivial group is solvable. Let $G$ be a nontrivial finite $p$-group. Its center $Z(G)$ is nontrivial. Hence
 \[
 1<|Z(G)|<|G|
@@ -37,14 +43,27 @@ We argue by induction on $|G|$. The trivial group is solvable. Let $G$ be a nont
 unless $G$ is abelian, in which case $G$ is already solvable.
 
 The quotient $G/Z(G)$ is a smaller $p$-group, so by induction it is solvable. The center $Z(G)$ is abelian, hence solvable. An extension of a solvable group by a solvable group is solvable, so $G$ is solvable.
+
 :::
 
-<1>2. More generally, every finite group of order
+:::
+
+::: pf-step
+
+More generally, every finite group of order
 \[
 p^r q^s
 \]
 with $p,q$ prime is solvable.
-::: {.proof}
+
+::: pf-proof
+
 This is Burnside's $p^a q^b$ theorem, whose classical proof uses character theory. Applying Burnside's theorem with $a=r$ and $b=s$ gives the result.
+
 :::
+
+:::
+
+:::
+
 :::

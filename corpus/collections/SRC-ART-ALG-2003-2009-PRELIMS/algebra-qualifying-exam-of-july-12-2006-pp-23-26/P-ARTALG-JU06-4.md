@@ -29,9 +29,15 @@ If $p$ is a prime, $k$ is a positive integer and $G$ is a group of order $p^k$, 
 :::
 
 ::: {.solution}
-<1>1. Every nontrivial finite $p$-group has a central subgroup of order $p$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every nontrivial finite $p$-group has a central subgroup of order $p$.
+
+::: pf-proof
+
 In the class equation, each noncentral conjugacy class has size
 $[G:C_G(x)]$, a power of $p$ greater than $1$ [@DF04]. It follows
 that $p\mid |Z(G)|$. Since the center contains the identity, it
@@ -40,16 +46,22 @@ By Lagrange's theorem, the order of $z$ is $p^a$ with $a\geq1$.
 Then $c=z^{p^{a-1}}$ is nonidentity and satisfies $c^p=1$, so it
 has order $p$. The subgroup $C=\langle c\rangle$ lies in the center
 and is therefore normal in $G$.
+
 :::
 
-<1>2. For each integer $1\leq i\leq k$, a group $G$ of order $p^k$ has a normal subgroup of order $p^i$.
+:::
 
-::: {.proof}
+::: pf-step
+
+For each integer $1\leq i\leq k$, a group $G$ of order $p^k$ has a normal subgroup of order $p^i$.
+
+::: pf-proof
+
 We induct on $k$. When $k=1$, the only order is $p$, and $G$ itself is a
 normal subgroup of that order.
 
 Let $k\geq2$ and assume the assertion for groups of order $p^{k-1}$.
-Choose $C$ as in step <1>1. It supplies the subgroup of order $p$.
+Choose $C$ as in step [](#s1){.pf-ref}. It supplies the subgroup of order $p$.
 Let $\rho:G\to G/C$ be the quotient map; its codomain has order
 $p^{k-1}$.
 
@@ -63,5 +75,11 @@ so $N$ is normal in $G$. The map $N\to M$ is surjective with
 kernel $C$. Its fibers are cosets of $C$, each of size $p$;
 hence $|N|=p|M|=p^i$. This constructs the required subgroup for
 every $i$ and completes the induction.
+
 :::
+
+:::
+
+:::
+
 :::

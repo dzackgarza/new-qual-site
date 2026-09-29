@@ -38,7 +38,12 @@ Give a proof of your answer.
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that the universal covering map
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that the universal covering map
 \[
 p:S^2\longrightarrow\RP^2
 \]
@@ -54,11 +59,18 @@ H(x,0)=p(x)
 H(x,1)=y_0
 \]
 for some $y_0\in\RP^2$.
-::: {.proof}
+
+::: pf-proof
+
 This is the definition of nullhomotopy.
+
 :::
 
-<1>2. The homotopy $H$ lifts through $p$ to
+:::
+
+::: {.pf-step #s2}
+
+The homotopy $H$ lifts through $p$ to
 \[
 \widetilde H:S^2\times I\longrightarrow S^2
 \]
@@ -68,21 +80,30 @@ with
 \qquad\text{and}\qquad
 p\circ\widetilde H=H.
 \]
-::: {.proof}
+
+::: pf-proof
+
 At time $0$, the identity map $\id_{S^2}$ is a lift of $H(-,0)=p$, since
 \[
 p\circ\id_{S^2}=p.
 \]
 The homotopy lifting property for covering maps therefore gives the stated lift beginning at $\id_{S^2}$.
+
 :::
 
-<1>3. The terminal map
+:::
+
+::: {.pf-step #s3}
+
+The terminal map
 \[
 \widetilde H_1:S^2\longrightarrow S^2
 \]
 is constant.
-::: {.proof}
-From <1>1--<1>2,
+
+::: pf-proof
+
+From steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 \[
 p(\widetilde H(x,1))=H(x,1)=y_0
 \]
@@ -94,11 +115,18 @@ Thus
 The fiber of the double covering $p$ consists of two antipodal points and is therefore discrete.
 Since $S^2$ is connected, its continuous image in a discrete space is a singleton.
 Hence $\widetilde H_1$ is constant.
+
 :::
 
-<1>4. This contradicts the homology of $S^2$.
-::: {.proof}
-By <1>2--<1>3, the identity map of $S^2$ is homotopic to a constant map.
+:::
+
+::: {.pf-step #s4}
+
+This contradicts the homology of $S^2$.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the identity map of $S^2$ is homotopic to a constant map.
 Homotopic maps induce the same map on integral homology.
 But on
 \[
@@ -106,13 +134,26 @@ H_2(S^2;\ZZ)\cong\ZZ,
 \]
 the identity induces the identity homomorphism, whereas a constant map factors through a point and therefore induces the zero homomorphism in degree $2$.
 This is impossible.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{p:S^2\longrightarrow\RP^2\text{ is not nullhomotopic}.}
 \]
-::: {.proof}
-The assumption in <1>1 led to the contradiction in <1>4.
+
+::: pf-proof
+
+The assumption in step [](#s1){.pf-ref} led to the contradiction in step [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -37,9 +37,15 @@ its boundary circle $\abs{z-1}=2$.
 :::
 
 ::: {.solution}
-<1>1. The only enclosed poles are $0$ and $\pi/2$, with no pole on the contour.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The only enclosed poles are $0$ and $\pi/2$, with no pole on the contour.
+
+::: pf-proof
+
 Put $F(z)=1/(z^3\cos z)$. Besides zero, its possible
 poles are the zeros of cosine. The equation $\cos z=0$
 is equivalent to $e^{2iz}=-1$, hence to
@@ -55,14 +61,20 @@ Thus $\pi/2\in(1,2)$ lies inside, while $-\pi/2<-1$
 and $3\pi/2>3$; all other cosine zeros are farther away.
 Also $\abs{0-1}=1<2$. These strict inequalities exclude
 boundary poles and identify every enclosed pole.
+
 :::
 
-<1>2. The integral is
+:::
+
+::: {.pf-step #s2}
+
+The integral is
 $$
 \boxed{\int_\gamma \frac{dz}{z^3\cos z}=i\pi-\frac{16i}{\pi^2}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 At zero the Taylor expansion gives
 $$
 \cos z=1-\frac{z^2}{2}+O(z^4),\qquad
@@ -77,17 +89,23 @@ $$
 $$
 The [[T-HRPNO|residue theorem]] applies to the meromorphic function
 $F$ on the disk and its counterclockwise boundary.
-Using step <1>1, it gives
+Using step [](#s1){.pf-ref}, it gives
 $$
 \int_\gamma F(z)\,dz
 =2\pi i\left(\frac12-\frac8{\pi^3}\right)
 =i\pi-\frac{16i}{\pi^2}.
 $$
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 gives the requested integral.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the requested integral.
+
+:::
+
+:::
+
 :::

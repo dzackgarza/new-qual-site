@@ -50,9 +50,14 @@ $$
 \{z\longmapsto az+b:a,b\in\mathbb C,\ a\ne0\}.}
 $$
 
-<1>1. Part (a) reduces to the disk automorphisms.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Part (a) reduces to the disk automorphisms.
+
+::: pf-proof
+
 The displayed maps $T,T^{-1}$ are inverse by substitution.
 For $z\in H$ and $w\in D$,
 $$
@@ -80,11 +85,17 @@ $|\lambda|=1$ [@SS03]. Hence $g=\lambda\phi_a$.
 Conversely each such map is a rotation composed with
 a disk automorphism. Conjugating proves exactly the
 formula for part (a), including its converse.
+
 :::
 
-<1>2. A plane automorphism must be a polynomial.
+:::
 
-::: {.proof}
+::: pf-step
+
+A plane automorphism must be a polynomial.
+
+::: pf-proof
+
 Let $F:\mathbb C\to\mathbb C$ be a holomorphic bijection.
 Its inverse is holomorphic, hence continuous, by the
 nonvanishing derivative of an injective holomorphic
@@ -107,11 +118,17 @@ Cauchy's coefficient estimate for the entire Taylor
 series of $F$ gives $|c_k|\leq CR^{m-k}$ for large $R$.
 Letting $R\to\infty$ shows $c_k=0$ for every $k>m$
 [@SS03]. Hence $F$ is a polynomial.
+
 :::
 
-<1>3. The polynomial has degree one, and all such maps are automorphisms.
+:::
 
-::: {.proof}
+::: pf-step
+
+The polynomial has degree one, and all such maps are automorphisms.
+
+::: pf-proof
+
 The polynomial cannot be constant. If its degree were
 at least two, its derivative would be a nonconstant
 polynomial, hence have a complex zero by the fundamental
@@ -120,5 +137,11 @@ nonvanishing derivative of an injective holomorphic
 function. Therefore $F(z)=az+b$ with $a\ne0$.
 Conversely this map is holomorphic and has the entire
 inverse $w\mapsto(w-b)/a$. This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

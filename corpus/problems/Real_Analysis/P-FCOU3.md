@@ -52,8 +52,15 @@ and $x$ may be chosen so that
 :::
 
 ::: {.solution}
-<1>1. $\left\|x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n\right\|^2 = \|x\|^2-\sum_{n=1}^{N}|\langle x,u_n\rangle|^2$ for every $N$, and $\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le\|x\|^2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$\left\|x-\sum_{n=1}^{N}\langle x,u_n\rangle u_n\right\|^2 = \|x\|^2-\sum_{n=1}^{N}|\langle x,u_n\rangle|^2$ for every $N$, and $\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le\|x\|^2$.
+
+::: pf-proof
+
 Set
 \[
 s_N:=\sum_{n=1}^N\langle x,u_n\rangle u_n.
@@ -94,10 +101,17 @@ for every $N$. Letting $N\to\infty$ gives
 \boxed{
 \sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le\|x\|^2.}
 \]
+
 :::
 
-<1>2. For $(a_n)\in\ell^2$, the series $\sum_n a_nu_n$ converges in $H$ to some $x$ with $\langle x,u_k\rangle = a_k$ for every $k$ and $\|x\|^2 = \sum_n|a_n|^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+For $(a_n)\in\ell^2$, the series $\sum_n a_nu_n$ converges in $H$ to some $x$ with $\langle x,u_k\rangle = a_k$ for every $k$ and $\|x\|^2 = \sum_n|a_n|^2$.
+
+::: pf-proof
+
 Let $(a_n)\in\ell^2$ and define
 \[
 S_N:=\sum_{n=1}^N a_nu_n.
@@ -128,15 +142,22 @@ Also
 \sum_{n=1}^{\infty}|a_n|^2.
 \]
 Thus $x$ has the required coefficients and norm.
+
 :::
 
-<1>3. If $(u_n)$ is complete, then $\|x\|^2=\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2$ for every $x\in H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $(u_n)$ is complete, then $\|x\|^2=\sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2$ for every $x\in H$.
+
+::: pf-proof
+
 Fix $x\in H$. By Bessel's inequality, the coefficient sequence
 \[
 a_n:=\langle x,u_n\rangle
 \]
-belongs to $\ell^2$. By step <1>2, the series
+belongs to $\ell^2$. By step [](#s2){.pf-ref}, the series
 \[
 s:=\sum_{n=1}^{\infty}a_nu_n
 \]
@@ -146,11 +167,17 @@ converges in $H$. For every $k$,
 =
 a_k-a_k=0.
 \]
-Thus $x-s$ is orthogonal to every $u_k$. Completeness of the orthonormal sequence means that the only vector orthogonal to every $u_k$ is $0$, so $x=s$. Therefore step <1>2 gives
+Thus $x-s$ is orthogonal to every $u_k$. Completeness of the orthonormal sequence means that the only vector orthogonal to every $u_k$ is $0$, so $x=s$. Therefore step [](#s2){.pf-ref} gives
 \[
 \boxed{
 \|x\|^2=
 \sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

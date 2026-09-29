@@ -32,7 +32,11 @@ Prove that $\gamma_0$ is homotopic to $\gamma_1$ if and only if the elements rep
 ::: {.solution}
 Identify $S^1$ with $I/(0\sim1)$ and use the same symbols $\gamma_0,\gamma_1$ for the corresponding loops $I\to X$.
 
-<1>1. Suppose first that $\gamma_0$ and $\gamma_1$ are freely homotopic.
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose first that $\gamma_0$ and $\gamma_1$ are freely homotopic.
 If
 \[
 H:S^1\times I\to X
@@ -43,7 +47,8 @@ is a free homotopy from $\gamma_0$ to $\gamma_1$, then the track of the basepoin
 \]
 is a loop at $x_0$.
 
-::: {.proof}
+::: pf-proof
+
 Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
 \[
 \alpha(0)=\gamma_0(1)=x_0
@@ -51,15 +56,21 @@ Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
 \alpha(1)=\gamma_1(1)=x_0.
 \]
 Thus $\alpha$ is indeed a loop based at $x_0$.
+
 :::
 
-<1>2. The based homotopy classes satisfy
+:::
+
+::: {.pf-step #s2}
+
+The based homotopy classes satisfy
 \[
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}
 \qquad\text{in }\pi_1(X,x_0).
 \]
 
-::: {.proof}
+::: pf-proof
+
 Let
 \[
 q:I\to S^1=I/(0\sim1)
@@ -89,9 +100,14 @@ and therefore
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}.
 \]
 Thus freely homotopic based loops represent conjugate elements.
+
 :::
 
-<1>3. Conversely, suppose that $[\gamma_0]$ and $[\gamma_1]$ are conjugate.
+:::
+
+::: {.pf-step #s3}
+
+Conversely, suppose that $[\gamma_0]$ and $[\gamma_1]$ are conjugate.
 Choose a loop $\alpha$ at $x_0$ such that
 \[
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}.
@@ -101,14 +117,21 @@ Then $\gamma_0$ is homotopic relative to the basepoint to the loop
 \alpha*\gamma_1*\alpha^{-1}.
 \]
 
-::: {.proof}
+::: pf-proof
+
 The displayed equality is precisely equality of the two based-loop classes in $\pi_1(X,x_0)$.
 By the definition of the fundamental group, representatives of the same class are homotopic through loops that keep the basepoint fixed.
+
 :::
 
-<1>4. For any two loops $a,b$ based at the same point, the loops $a*b$ and $b*a$ are freely homotopic.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+For any two loops $a,b$ based at the same point, the loops $a*b$ and $b*a$ are freely homotopic.
+
+::: pf-proof
+
 Let
 \[
 L=a*b:S^1\to X
@@ -121,18 +144,24 @@ K(z,t)=L(R_t(z))
 \]
 is a free homotopy.
 At $t=0$ it is $a*b$, while at $t=1$ the half-turn interchanges the two half-circle parameter intervals, so it is $b*a$.
+
 :::
 
-<1>5. The conjugate loop $\alpha*\gamma_1*\alpha^{-1}$ is freely homotopic to $\gamma_1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The conjugate loop $\alpha*\gamma_1*\alpha^{-1}$ is freely homotopic to $\gamma_1$.
+
+::: pf-proof
+
 Up to the standard based reparameterization associating concatenations,
 \[
 \alpha*\gamma_1*\alpha^{-1}
 \simeq
 \alpha*(\gamma_1*\alpha^{-1}).
 \]
-Apply <1>4 with
+Apply step [](#s4){.pf-ref} with
 \[
 a=\alpha,
 \qquad
@@ -150,15 +179,27 @@ The loop on the right is based-homotopic, by associativity of concatenation, to
 \]
 The loop $\alpha^{-1}*\alpha$ is null-homotopic relative to the basepoint, so this is based-homotopic to $\gamma_1$.
 Every based homotopy is in particular a free homotopy, proving the claim.
+
 :::
 
-<1>6. Therefore $\gamma_0$ and $\gamma_1$ are freely homotopic if and only if their classes in $\pi_1(X,x_0)$ are conjugate.
+:::
 
-::: {.proof}
-The forward implication is <1>1--<1>2.
-For the converse, <1>3 gives a based homotopy from $\gamma_0$ to $\alpha*\gamma_1*\alpha^{-1}$, and <1>5 gives a free homotopy from that conjugate loop to $\gamma_1$.
+::: pf-step
+
+Therefore $\gamma_0$ and $\gamma_1$ are freely homotopic if and only if their classes in $\pi_1(X,x_0)$ are conjugate.
+
+::: pf-proof
+
+The forward implication is steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+For the converse, step [](#s3){.pf-ref} gives a based homotopy from $\gamma_0$ to $\alpha*\gamma_1*\alpha^{-1}$, and step [](#s5){.pf-ref} gives a free homotopy from that conjugate loop to $\gamma_1$.
 Concatenating the two homotopies gives a free homotopy from $\gamma_0$ to $\gamma_1$.
+
 :::
+
+:::
+
+:::
+
 :::
 
 - Claim: $\gamma_1$ and $T\ast \gamma_2 \ast \inverseof{T}$ are homotopic rel $x_0$, making $\gamma_1, \gamma_2$ conjugate in $\pi_1$.

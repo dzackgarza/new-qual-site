@@ -50,9 +50,14 @@ The global complete-intersection hypothesis means that the saturated homogeneous
 For $0\le j\le c$, put $Y_j=\operatorname{Proj}(S/(F_1,\ldots,F_j))$, so $Y_0=X$ and $Y_c=Y$.
 All twists on these schemes are the restrictions of the standard twists on $\PP_k^r$.
 
-<1>1. The forms $F_1,\ldots,F_c$ are a regular sequence, and $\dim Y_j=r-j$ for every $j$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The forms $F_1,\ldots,F_c$ are a regular sequence, and $\dim Y_j=r-j$ for every $j$.
+
+::: pf-proof
+
 Let $\mathfrak m=(x_0,\ldots,x_r)$.
 The dimension of the homogeneous coordinate ring of the nonempty $Y$ is $q+1$; localization at the vertex $\mathfrak m$ has that same dimension [@Har10a, Chapter I, §§2 and 7].
 The regular local ring $S_{\mathfrak m}$ is Cohen--Macaulay of dimension $r+1$.
@@ -68,17 +73,23 @@ These Proj schemes are nonempty, since $r+1-j\ge q+1\ge2$ and a cone supported o
 Hence $\dim Y_j=r-j$.
 The argument is algebraic over $k$ and does not require algebraic closedness.
 For $c=0$ the assertions refer to the empty regular sequence and $Y=X$.
+
 :::
 
-<1>2. For every $j$ and $n\in\ZZ$, the restriction map $H^0(X,\OO_X(n))\to H^0(Y_j,\OO_{Y_j}(n))$ is surjective, and
+:::
+
+::: {.pf-step #s2}
+
+For every $j$ and $n\in\ZZ$, the restriction map $H^0(X,\OO_X(n))\to H^0(Y_j,\OO_{Y_j}(n))$ is surjective, and
 $$
 H^i(Y_j,\OO_{Y_j}(n))=0\qquad(0<i<r-j).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Induct on $j$.
 For $j=0$, the restriction is the identity and the vanishing is the projective-space calculation [@Har10a, Theorem III.5.1].
-For $j\ge1$, regularity in step <1>1 gives the exact sequence on $Y_{j-1}$
+For $j\ge1$, regularity in step [](#s1){.pf-ref} gives the exact sequence on $Y_{j-1}$
 $$
 0\longrightarrow\OO_{Y_{j-1}}(n-d_j)
 \xrightarrow{F_j}\OO_{Y_{j-1}}(n)
@@ -102,12 +113,18 @@ Both outer groups vanish by induction, since $0<i<i+1\le s<s+1$.
 The middle group therefore vanishes.
 This holds for every integer $n$, including negative twists, and completes the induction.
 At $j=c$ it proves (a) and (c).
+
 :::
 
-<1>3. The constants map $k\to H^0(Y,\OO_Y)$ is an isomorphism, and $Y$ is connected.
+:::
 
-::: {.proof}
-Step <1>2 at $n=0$ gives a surjection
+::: {.pf-step #s3}
+
+The constants map $k\to H^0(Y,\OO_Y)$ is an isomorphism, and $Y$ is connected.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} at $n=0$ gives a surjection
 $$
 k=H^0(\PP_k^r,\OO)\longrightarrow H^0(Y,\OO_Y).
 $$
@@ -117,12 +134,18 @@ Thus $H^0(Y,\OO_Y)=k$.
 A decomposition of $Y$ into two nonempty open-and-closed subsets would yield the nontrivial idempotent global section equal to $1$ on one subset and $0$ on the other.
 A field has no such idempotent, so $Y$ is connected, proving (b).
 No reducedness is used in this argument.
+
 :::
 
-<1>4. The arithmetic genus is $\boxed{p_a(Y)=\dim_kH^q(Y,\OO_Y)}$.
+:::
 
-::: {.proof}
-Step <1>3 gives $h^0(Y,\OO_Y)=1$, and step <1>2 gives $h^i(Y,\OO_Y)=0$ for $0<i<q$.
+::: {.pf-step #s4}
+
+The arithmetic genus is $\boxed{p_a(Y)=\dim_kH^q(Y,\OO_Y)}$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives $h^0(Y,\OO_Y)=1$, and step [](#s2){.pf-ref} gives $h^i(Y,\OO_Y)=0$ for $0<i<q$.
 Cohomology also vanishes for $i>q$ by Grothendieck vanishing, since $\dim Y=q$ [@Har10a, Theorem III.2.7].
 Coherent cohomology is finite-dimensional because $Y$ is projective [@Har10a, Theorem III.5.2].
 Therefore
@@ -130,11 +153,17 @@ $$
 \chi(Y,\OO_Y)=1+(-1)^q h^q(Y,\OO_Y).
 $$
 The definition $p_a(Y)=(-1)^q(\chi(Y,\OO_Y)-1)$ now gives the claimed value, proving (d).
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves (a) and (c), step <1>3 proves (b), and step <1>4 proves (d), with the regular-sequence foundation in step <1>1.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves (a) and (c), step [](#s3){.pf-ref} proves (b), and step [](#s4){.pf-ref} proves (d), with the regular-sequence foundation in step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
 :::

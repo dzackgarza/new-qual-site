@@ -36,37 +36,54 @@ $$
 Thus $A_k$ consists of the members of $A$ with exactly $k$
 decimal digits, and $A$ is the disjoint union of these sets.
 
-<1>1. For every $k\ge1$, the set $A_k$ has $8\cdot9^{k-1}$ elements.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For every $k\ge1$, the set $A_k$ has $8\cdot9^{k-1}$ elements.
+
+::: pf-proof
+
 The leading digit has eight choices, namely $1,\ldots,8$.
 Each of the remaining $k-1$ digits has nine choices, namely
 $0,\ldots,8$. Every such digit string represents exactly one
 member of $A_k$, so multiplying the numbers of choices gives
 $\#A_k=8\cdot9^{k-1}$.
+
 :::
 
-<1>2. For every $k\ge1$,
+:::
+
+::: {.pf-step #s2}
+
+For every $k\ge1$,
 $$
 \sum_{a\in A_k}\frac1a\le8\left(\frac9{10}\right)^{k-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each $a\in A_k$ satisfies $a\ge10^{k-1}$, and therefore
-$1/a\le10^{-(k-1)}$. Step <1>1 bounds the sum by
+$1/a\le10^{-(k-1)}$. Step [](#s1){.pf-ref} bounds the sum by
 $$
 \frac{\#A_k}{10^{k-1}}
 =8\left(\frac9{10}\right)^{k-1}.
 $$
+
 :::
 
-<1>3. The partial sums of $\sum_{a\in A}1/a$ are bounded by $80$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The partial sums of $\sum_{a\in A}1/a$ are bounded by $80$.
+
+::: pf-proof
+
 For any positive integer $M$, choose $N\ge1$ such that $M<10^N$.
 Every member of $A$ not exceeding $M$ lies in
 $A_1\cup\cdots\cup A_N$. Since all summands are nonnegative,
-step <1>2 gives
+step [](#s2){.pf-ref} gives
 $$
 \sum_{\substack{a\in A\\a\le M}}\frac1a
 \le\sum_{k=1}^{N}\sum_{a\in A_k}\frac1a
@@ -74,13 +91,19 @@ $$
 =80\left(1-\left(\frac9{10}\right)^N\right)
 <80.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-The partial sums in step <1>3 are nondecreasing because all
+::: pf-qed
+
+The partial sums in step [](#s3){.pf-ref} are nondecreasing because all
 summands are positive. Being bounded above, they converge to
 a finite limit. Hence $\sum_{a\in A}1/a\le80<\infty$.
+
 :::
+
+:::
+
 :::

@@ -34,8 +34,15 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. Prove the upper bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the upper bound.
+
+::: pf-proof
+
 For every $g\in L^1([0,1])$ with $\|g\|_1\le1$,
 \[
 \|fg\|_1
@@ -47,10 +54,17 @@ Hence
 \[
 \sup_{\|g\|_1\le1}\|fg\|_1\le\|f\|_\infty.
 \]
+
 :::
 
-<1>2. Prove the reverse inequality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the reverse inequality.
+
+::: pf-proof
+
 Since $f$ is continuous on the compact interval $[0,1]$, there is $x_0\in[0,1]$ such that
 \[
 |f(x_0)|=\|f\|_\infty.
@@ -79,5 +93,11 @@ Letting $\varepsilon\downarrow0$ gives the reverse inequality. Thus
 \boxed{
 \sup_{\|g\|_1\le1}\|fg\|_1=\|f\|_\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

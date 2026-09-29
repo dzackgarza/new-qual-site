@@ -29,14 +29,19 @@ $$
 I_n\coloneqq(n+1)\int_0^1x^nf(x)\,dx.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 I_n-f(1)
 =
 (n+1)\int_0^1x^n\bigl(f(x)-f(1)\bigr)\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 (n+1)\int_0^1x^n\,dx=1,
@@ -48,9 +53,14 @@ f(1)
 (n+1)\int_0^1x^nf(1)\,dx.
 $$
 Subtracting this from the definition of $I_n$ gives the identity.
+
 :::
 
-<1>2. For every $\varepsilon>0$, there exist $0<\delta<1$ and $M<\infty$ such that
+:::
+
+::: {.pf-step #s2}
+
+For every $\varepsilon>0$, there exist $0<\delta<1$ and $M<\infty$ such that
 $$
 \abs{f(x)-f(1)}<\varepsilon
 \qquad
@@ -63,11 +73,17 @@ $$
 \text{for }0\leq x\leq1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Continuity of $f$ at $1$ gives the first assertion for some $\delta>0$, which may be decreased to lie in $(0,1)$. Continuity on the compact interval $[0,1]$ makes $f(x)-f(1)$ bounded there, giving the second assertion.
+
 :::
 
-<1>3. With $\delta$ and $M$ as in step <1>2,
+:::
+
+::: {.pf-step #s3}
+
+With $\delta$ and $M$ as in step [](#s2){.pf-ref},
 $$
 \abs{I_n-f(1)}
 \leq
@@ -75,8 +91,9 @@ M(1-\delta)^{n+1}+\varepsilon
 $$
 for every $n$.
 
-::: {.proof}
-By step <1>1, split the integral at $1-\delta$:
+::: pf-proof
+
+By step [](#s1){.pf-ref}, split the integral at $1-\delta$:
 $$
 \begin{aligned}
 \abs{I_n-f(1)}
@@ -93,29 +110,41 @@ M(n+1)\int_0^{1-\delta}x^n\,dx
 M(1-\delta)^{n+1}+\varepsilon.
 \end{aligned}
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \lim_{n\to\infty}I_n=f(1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $0<1-\delta<1$,
 $$
 M(1-\delta)^{n+1}\longrightarrow0.
 $$
-Thus step <1>3 gives
+Thus step [](#s3){.pf-ref} gives
 $$
 \limsup_{n\to\infty}\abs{I_n-f(1)}
 \leq\varepsilon.
 $$
 Since $\varepsilon>0$ was arbitrary, the limsup is $0$, and therefore $I_n\to f(1)$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required limit.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required limit.
+
+:::
+
+:::
+
 :::

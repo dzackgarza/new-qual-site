@@ -37,49 +37,94 @@ is a non-negative measurable function and
 ::: {.solution}
 Take $h \in \RR^n$, and write $\tau_h f(x) \coloneqq f(x-h)$.
 
-<1>1. For measurable $E$, $E + h$ is measurable and $m(E + h) = m(E)$.
+::: pf
 
-<2>1. $m^*(A + h) = m^*(A)$ for every $A \subseteq \RR^n$.
+::: {.pf-step #s1}
 
-::: {.proof}
+For measurable $E$, $E + h$ is measurable and $m(E + h) = m(E)$.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+$m^*(A + h) = m^*(A)$ for every $A \subseteq \RR^n$.
+
+::: pf-proof
+
 Translation by $h$ is a bijection between countable covers of $A$ by closed boxes and countable covers of $A + h$ by closed boxes, and it preserves the volume of each box. Taking infima gives equality.
+
 :::
 
-<2>2. $E + h$ is measurable.
-
-::: {.proof}
-Write $E = G \setminus Z$ with $G$ a $G_\delta$ set and $Z$ null. Translation is a homeomorphism of $\RR^n$, so $G + h$ is a $G_\delta$ set, and $m^*(Z + h) = 0$ by step <2>1. So $E + h = (G + h) \setminus (Z + h)$ is measurable.
 :::
 
-<2>3. Q.E.D.
+::: {.pf-step #s1-2}
 
-::: {.proof}
-Step <2>2 gives measurability, and on measurable sets $m = m^*$, so step <2>1 gives $m(E + h) = m(E)$.
+$E + h$ is measurable.
+
+::: pf-proof
+
+Write $E = G \setminus Z$ with $G$ a $G_\delta$ set and $Z$ null. Translation is a homeomorphism of $\RR^n$, so $G + h$ is a $G_\delta$ set, and $m^*(Z + h) = 0$ by step [](#s1-1){.pf-ref}. So $E + h = (G + h) \setminus (Z + h)$ is measurable.
+
 :::
 
-<1>2. For measurable $f \geq 0$, $\tau_h f$ is measurable and $\int \tau_h f = \int f$.
-
-<2>1. $\tau_h f$ is measurable.
-
-::: {.proof}
-For every $a \in \RR$, $\theset{\tau_h f > a} = \theset{f > a} + h$, which is measurable by step <1>1.
 :::
 
-<2>2. For measurable $E$, $\int \tau_h \chi_E = m(E)$.
+::: pf-qed
 
-::: {.proof}
-$\tau_h\chi_E(x) = \chi_E(x - h) = \chi_{E + h}(x)$, and $m(E + h) = m(E)$ by step <1>1.
+Step [](#s1-2){.pf-ref} gives measurability, and on measurable sets $m = m^*$, so step [](#s1-1){.pf-ref} gives $m(E + h) = m(E)$.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-By linearity, step <2>2 gives $\int \tau_h s = \int s$ for nonnegative simple $s$. Choose simple $0 \leq s_k \nearrow f$. Then $\tau_h s_k \nearrow \tau_h f$, and the monotone convergence theorem gives $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 are the two parts.
 :::
+
+::: {.pf-step #s2}
+
+For measurable $f \geq 0$, $\tau_h f$ is measurable and $\int \tau_h f = \int f$.
+
+::: pf-proof
+
+::: pf-step
+
+$\tau_h f$ is measurable.
+
+::: pf-proof
+
+For every $a \in \RR$, $\theset{\tau_h f > a} = \theset{f > a} + h$, which is measurable by step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s2-2}
+
+For measurable $E$, $\int \tau_h \chi_E = m(E)$.
+
+::: pf-proof
+
+$\tau_h\chi_E(x) = \chi_E(x - h) = \chi_{E + h}(x)$, and $m(E + h) = m(E)$ by step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+By linearity, step [](#s2-2){.pf-ref} gives $\int \tau_h s = \int s$ for nonnegative simple $s$. Choose simple $0 \leq s_k \nearrow f$. Then $\tau_h s_k \nearrow \tau_h f$, and the monotone convergence theorem gives $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the two parts.
+
+:::
+
+:::
+
 :::

@@ -41,23 +41,36 @@ be the antipodal double cover, and use $\mathbb Z_2$ coefficients throughout. Ha
 \overset{\delta}{\longrightarrow}H_{n-1}(\mathbb{RP}^\infty)\to\cdots .
 \]
 
-<1>1. Since $S^\infty$ is contractible,
+::: pf
+
+::: pf-step
+
+Since $S^\infty$ is contractible,
 \[
 H_n(S^\infty;\mathbb Z_2)=0\quad(n>0),
 \qquad
 H_0(S^\infty;\mathbb Z_2)=\mathbb Z_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The infinite sphere $S^\infty$ is contractible, so it has the homology of a point.
+
 :::
 
-<1>2. For every $n\ge2$, the connecting map is an isomorphism
+:::
+
+::: {.pf-step #s2}
+
+For every $n\ge2$, the connecting map is an isomorphism
 \[
 \delta:H_n(\mathbb{RP}^\infty;\mathbb Z_2)
 \xrightarrow{\cong}
 H_{n-1}(\mathbb{RP}^\infty;\mathbb Z_2).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The portion of the transfer sequence around these groups is
 \[
 0\longrightarrow H_n(\mathbb{RP}^\infty)
@@ -65,13 +78,20 @@ The portion of the transfer sequence around these groups is
 \longrightarrow0,
 \]
 since the adjacent positive-dimensional homology groups of $S^\infty$ vanish.
+
 :::
 
-<1>3. The same conclusion holds for $n=1$:
+:::
+
+::: {.pf-step #s3}
+
+The same conclusion holds for $n=1$:
 \[
 H_1(\mathbb{RP}^\infty;\mathbb Z_2)\cong H_0(\mathbb{RP}^\infty;\mathbb Z_2)\cong\mathbb Z_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 At the bottom of the transfer sequence we have
 \[
 0\to H_1(\mathbb{RP}^\infty)
@@ -80,13 +100,26 @@ At the bottom of the transfer sequence we have
 \overset{p_*}{\longrightarrow}H_0(\mathbb{RP}^\infty)\to0.
 \]
 Both spaces are connected, so $p_*$ is the identity isomorphism on $H_0\cong\mathbb Z_2$. Exactness therefore forces $\tau_*=0$ and $\delta$ to be an isomorphism.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{H_n(\mathbb{RP}^\infty;\mathbb Z_2)\cong\mathbb Z_2\quad\text{for every }n\ge0.}
 \]
-::: {.proof}
-The degree-zero group is $\mathbb Z_2$ because $\mathbb{RP}^\infty$ is connected. Apply the isomorphisms of <1>2--<1>3 inductively.
+
+::: pf-proof
+
+The degree-zero group is $\mathbb Z_2$ because $\mathbb{RP}^\infty$ is connected. Apply the isomorphisms of steps [](#s2){.pf-ref} and [](#s3){.pf-ref} inductively.
+
 :::
+
+:::
+
+:::
+
 :::

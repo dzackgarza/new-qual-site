@@ -20,14 +20,27 @@ Give examples of simple groups. Are there infinitely many?
 ::: {.solution}
 A group is **simple** if it is nontrivial and has no normal subgroups other than $1$ and itself.
 
-<1>1. Abelian examples:
+::: pf
+
+::: pf-step
+
+Abelian examples:
 For every prime $p$, the cyclic group
 \[
 C_p=\ZZ/p\ZZ
 \]
 is simple. Indeed, its subgroups have orders dividing $p$, so only the trivial subgroup and the whole group occur.
 
-<1>2. Nonabelian examples:
+:::
+
+::: pf-step
+
+Nonabelian examples:
+
+:::
+
+:::
+
 For every $n\ge5$, the alternating group
 \[
 A_n

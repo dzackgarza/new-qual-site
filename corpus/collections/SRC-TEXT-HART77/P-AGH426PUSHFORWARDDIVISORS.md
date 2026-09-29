@@ -65,7 +65,11 @@ Since $f$ is a finite morphism between nonsingular curves, it is flat; hence
 $E$ is locally free of rank $n$.  More generally, $f_*\mcm$ is locally free
 of rank $n$ for every invertible sheaf $\mcm$ on $X$.
 
-<1>1. Let $Q\in Y$.  If
+::: pf
+
+::: {.pf-step #s1}
+
+Let $Q\in Y$.  If
 $$
 0\longrightarrow E_0\longrightarrow E_1\longrightarrow k(Q)
 \longrightarrow0
@@ -77,7 +81,8 @@ $$
 \det E_0\tensor\mcl(Q).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Away from $Q$ the two bundles are equal.  At $Q$, let
 $$
 A=\OO_{Y,Q}
@@ -96,16 +101,22 @@ $\mcl(Q)$, so
 $$
 \det E_1\cong\det E_0\tensor\mcl(Q).
 $$
+
 :::
 
-<1>2. For every divisor $D$ on $X$ and every closed point $P\in X$,
+:::
+
+::: {.pf-step #s2}
+
+For every divisor $D$ on $X$ and every closed point $P\in X$,
 $$
 \det f_*\mcl(D+P)
 \cong
 \det f_*\mcl(D)\tensor\mcl(f(P)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 There is a short exact sequence
 $$
 0
@@ -133,10 +144,15 @@ f_*\mcl(D+P)
 k(f(P))
 \longrightarrow0.
 $$
-Step <1>1 gives the claimed determinant relation.
+Step [](#s1){.pf-ref} gives the claimed determinant relation.
+
 :::
 
-<1>3. For every divisor $D$ on $X$,
+:::
+
+::: {.pf-step #s3}
+
+For every divisor $D$ on $X$,
 $$
 \boxed{
 \det\left(f_*\mcl(D)\right)
@@ -145,9 +161,10 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Starting with $D=0$, add the points occurring in the positive part of $D$
-one at a time and apply step <1>2.  To subtract a point, apply step <1>2 to
+one at a time and apply step [](#s2){.pf-ref}.  To subtract a point, apply step [](#s2){.pf-ref} to
 $D-P$:
 $$
 \det f_*\mcl(D-P)
@@ -167,9 +184,14 @@ $$
 \mcl\left(\sum_Pn_Pf(P)\right),
 $$
 which is exactly the formula in part (a).
+
 :::
 
-<1>4. If $D\sim D'$ on $X$, then
+:::
+
+::: {.pf-step #s4}
+
+If $D\sim D'$ on $X$, then
 $$
 f_*D\sim f_*D'
 $$
@@ -178,13 +200,14 @@ $$
 f_*:\Pic X\longrightarrow\Pic Y.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Linear equivalence $D\sim D'$ is equivalent to
 $$
 \mcl(D)\cong\mcl(D').
 $$
 Applying $f_*$ preserves this isomorphism, so their determinants are
-isomorphic.  Step <1>3 gives
+isomorphic.  Step [](#s3){.pf-ref} gives
 $$
 \det E\tensor\mcl(f_*D)
 \cong
@@ -196,15 +219,21 @@ $$
 $$
 which is the desired linear equivalence.  Since the divisor pushforward is
 additive, the induced map on divisor classes is a group homomorphism.
+
 :::
 
-<1>5. The composite
+:::
+
+::: {.pf-step #s5}
+
+The composite
 $$
 f_*f^*:\Pic Y\longrightarrow\Pic Y
 $$
 is multiplication by $n$.
 
-::: {.proof}
+::: pf-proof
+
 It is enough to check a closed point $Q\in Y$.  The pullback divisor is
 $$
 f^*Q
@@ -229,9 +258,14 @@ $$
 By additivity this holds for every divisor and hence every divisor class.
 Equivalently, on line bundles the composite sends $\mcm$ to
 $\mcm^{\tensor n}$.
+
 :::
 
-<1>6. Finite duality gives an isomorphism
+:::
+
+::: {.pf-step #s6}
+
+Finite duality gives an isomorphism
 $$
 f_*\Omega_X
 \cong
@@ -240,7 +274,8 @@ f_*\Omega_X
 E^\vee\tensor\Omega_Y.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By [[P-AGH3610FINITEFLATDUAL|Exercise III.6.10]] and
 [[P-AGH372FINITEDUAL|Exercise III.7.2]], finite duality identifies the
 pushforward of the dualizing sheaf of $X$ with the dual of $f_*\OO_X$
@@ -263,9 +298,14 @@ $$
 E^\vee\tensor\Omega_Y,
 $$
 which proves the displayed formula.
+
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #s7}
+
+One has
 $$
 \boxed{
 \det f_*\Omega_X
@@ -274,8 +314,9 @@ $$
 }
 $$
 
-::: {.proof}
-Take determinants in step <1>6.  Since $E$ has rank $n$,
+::: pf-proof
+
+Take determinants in step [](#s6){.pf-ref}.  Since $E$ has rank $n$,
 $$
 \det(E^\vee\tensor\Omega_Y)
 \cong
@@ -286,9 +327,14 @@ $$
 \det(E^\vee)\cong(\det E)^{-1}.
 $$
 Substituting $E=f_*\OO_X$ gives exactly the formula in part (c).
+
 :::
 
-<1>8. Assume now that $f$ is separable, with ramification divisor $R$ and
+:::
+
+::: {.pf-step #s8}
+
+Assume now that $f$ is separable, with ramification divisor $R$ and
 branch divisor
 $$
 B=f_*R.
@@ -300,7 +346,8 @@ $$
 f^*\Omega_Y\tensor\mcl(R).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a finite separable morphism of nonsingular curves, the differential
 $$
 f^*\Omega_Y\longrightarrow\Omega_X
@@ -313,23 +360,29 @@ $$
 \cong
 f^*\Omega_Y\tensor\mcl(R).
 $$
+
 :::
 
-<1>9. The determinant of $E=f_*\OO_X$ satisfies
+:::
+
+::: {.pf-step #s9}
+
+The determinant of $E=f_*\OO_X$ satisfies
 $$
 \boxed{
 (\det E)^2\cong\mcl(-B).
 }
 $$
 
-::: {.proof}
-By step <1>8 and the projection formula,
+::: pf-proof
+
+By step [](#s8){.pf-ref} and the projection formula,
 $$
 f_*\Omega_X
 \cong
 \Omega_Y\tensor f_*\mcl(R).
 $$
-Taking determinants and using step <1>3 with $D=R$ gives
+Taking determinants and using step [](#s3){.pf-ref} with $D=R$ gives
 $$
 \begin{aligned}
 \det f_*\Omega_X
@@ -341,7 +394,7 @@ $$
 \Omega_Y^{\tensor n}\tensor\det E\tensor\mcl(B).
 \end{aligned}
 $$
-On the other hand, step <1>7 gives
+On the other hand, step [](#s7){.pf-ref} gives
 $$
 \det f_*\Omega_X
 \cong
@@ -356,12 +409,18 @@ $$
 (\det E)^2\cong\mcl(-B).
 $$
 This proves part (d).
+
 :::
 
-<1>10. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 prove part (b), steps
-<1>6--<1>7 prove part (c), and steps <1>8--<1>9 prove part (d).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), steps
+[](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (c), and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (d).
+
+:::
+
+:::
+
 :::

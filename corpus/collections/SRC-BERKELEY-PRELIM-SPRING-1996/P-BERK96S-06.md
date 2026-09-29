@@ -35,21 +35,32 @@ Ax=0,
 $$
 where $A\in M_{m\times n}(\QQ)$.
 
-<1>1. The rank of $A$ over $\QQ$ equals its rank over $\CC$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The rank of $A$ over $\QQ$ equals its rank over $\CC$.
+
+::: pf-proof
+
 For each $k$, every $k\times k$ minor of $A$ is a rational number. Such a
 minor is nonzero when regarded as an element of $\QQ$ if and only if it is
 nonzero when regarded as an element of $\CC$. Since the rank is the largest
 size of a nonzero minor, the two ranks are equal.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \rank_{\QQ}A<n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By hypothesis there is a nonzero vector
 $$
 v\in\CC^n
@@ -59,16 +70,22 @@ kernel, so rank-nullity gives
 $$
 \rank_{\CC}A<n.
 $$
-Step <1>1 gives the same inequality over $\QQ$.
+Step [](#s1){.pf-ref} gives the same inequality over $\QQ$.
+
 :::
 
-<1>3. The system has a nonzero rational solution, so the answer is
+:::
+
+::: {.pf-step #s3}
+
+The system has a nonzero rational solution, so the answer is
 $$
 \boxed{\text{yes}}.
 $$
 
-::: {.proof}
-By step <1>2 and rank-nullity over $\QQ$,
+::: pf-proof
+
+By step [](#s2){.pf-ref} and rank-nullity over $\QQ$,
 $$
 \dim_{\QQ}\ker(A:\QQ^n\to\QQ^m)
 =
@@ -77,11 +94,17 @@ n-\rank_{\QQ}A
 $$
 Thus this kernel contains a nonzero vector in $\QQ^n$, which is a nonzero
 rational solution of the original system.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves the required assertion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the required assertion.
+
+:::
+
+:::
+
 :::

@@ -39,13 +39,19 @@ $$
 :::
 
 ::: {.solution}
-<1>1. For every real $s>-1$ and integer $n\ge0$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every real $s>-1$ and integer $n\ge0$,
 $$
 \int_0^1x^s\log(x)^n\,dx
 =\frac{(-1)^n n!}{(s+1)^{n+1}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $n=0$,
 $$
 \int_0^1x^s\,dx=\frac1{s+1}.
@@ -65,55 +71,78 @@ $$
 The boundary term vanishes: it is zero at $x=1$, and
 $x^{s+1}\abs{\log x}^n\to0$ as $x\to0^+$ because $s+1>0$.
 Induction on $n$ now yields the displayed formula.
+
 :::
 
-<1>2. For $0<x\le1$,
+:::
+
+::: {.pf-step #s2}
+
+For $0<x\le1$,
 $$
 x^{-x}
 =\sum_{n=0}^{\infty}\frac{(-x\log x)^n}{n!},
 $$
 and every term in this series is nonnegative.
 
-::: {.proof}
+::: pf-proof
+
 Since $x^{-x}=e^{-x\log x}$, the exponential power series gives the
 identity. On $(0,1]$ one has $\log x\le0$, hence
 $-x\log x\ge0$, so every summand is nonnegative.
+
 :::
 
-<1>3. The series in step <1>2 may be integrated term by term on
+:::
+
+::: {.pf-step #s3}
+
+The series in step [](#s2){.pf-ref} may be integrated term by term on
 $(0,1)$.
 
-::: {.proof}
+::: pf-proof
+
 The partial sums
 $$
 S_N(x)=\sum_{n=0}^N\frac{(-x\log x)^n}{n!}
 $$
-are nonnegative and increase pointwise to $x^{-x}$ by step <1>2.
+are nonnegative and increase pointwise to $x^{-x}$ by step [](#s2){.pf-ref}.
 Therefore the monotone convergence theorem gives
 $$
 \int_0^1x^{-x}\,dx
 =\sum_{n=0}^{\infty}\frac1{n!}
   \int_0^1x^n(-\log x)^n\,dx.
 $$
+
 :::
 
-<1>4. For every integer $n\ge0$,
+:::
+
+::: {.pf-step #s4}
+
+For every integer $n\ge0$,
 $$
 \frac1{n!}\int_0^1x^n(-\log x)^n\,dx
 =\frac1{(n+1)^{n+1}}.
 $$
 
-::: {.proof}
-Applying step <1>1 with $s=n$ gives
+::: pf-proof
+
+Applying step [](#s1){.pf-ref} with $s=n$ gives
 $$
 \int_0^1x^n\log(x)^n\,dx
 =\frac{(-1)^n n!}{(n+1)^{n+1}}.
 $$
 Multiplying the integrand by $(-1)^n$ and dividing by $n!$ yields the
 claim.
+
 :::
 
-<1>5. Hence
+:::
+
+::: {.pf-step #s5}
+
+Hence
 $$
 \boxed{
 \int_0^1x^{-x}\,dx
@@ -121,18 +150,25 @@ $$
 }.
 $$
 
-::: {.proof}
-Combining steps <1>3 and <1>4 gives
+::: pf-proof
+
+Combining steps [](#s3){.pf-ref} and [](#s4){.pf-ref} gives
 $$
 \int_0^1x^{-x}\,dx
 =\sum_{n=0}^{\infty}\frac1{(n+1)^{n+1}}.
 $$
 Relabeling $m=n+1$ gives the displayed identity.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is exactly the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is exactly the required identity.
+
+:::
+
+:::
+
 :::

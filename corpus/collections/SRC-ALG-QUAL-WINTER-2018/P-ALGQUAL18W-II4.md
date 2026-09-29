@@ -42,33 +42,49 @@ R=\CC[x_1,\ldots,x_n]
 \mfm=\sqrt I.
 $$
 
-<1>1. There are $c_1,\ldots,c_n\in\CC$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There are $c_1,\ldots,c_n\in\CC$ such that
 $$
 \mfm=(x_1-c_1,\ldots,x_n-c_n).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The ideal $\mfm$ is maximal by hypothesis. Since the ground field $\CC$ is
 algebraically closed, the weak Hilbert Nullstellensatz says that every
 maximal ideal of $\CC[x_1,\ldots,x_n]$ is the ideal of a point of
 $\CC^n$. Hence $\mfm$ has the displayed form.
+
 :::
 
-<1>2. For each $i$ there is an integer $e_i\geq1$ such that
+:::
+
+::: {.pf-step #s2}
+
+For each $i$ there is an integer $e_i\geq1$ such that
 $$
 (x_i-c_i)^{e_i}\in I.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 x_i-c_i\in\mfm=\sqrt I.
 $$
 By the definition of the radical, some positive power of $x_i-c_i$ lies in
 $I$. Choose one such exponent and call it $e_i$.
+
 :::
 
-<1>3. The monomials
+:::
+
+::: {.pf-step #s3}
+
+The monomials
 $$
 \prod_{i=1}^n (x_i-c_i)^{a_i},
 \qquad
@@ -76,7 +92,8 @@ $$
 $$
 form a $\CC$-basis of $R$.
 
-::: {.proof}
+::: pf-proof
+
 The change of variables
 $$
 y_i=x_i-c_i
@@ -87,9 +104,14 @@ $$
 \prod_{i=1}^n x_i^{a_i}
 $$
 to the displayed family, so that family is again a basis.
+
 :::
 
-<1>4. The residue classes of the monomials
+:::
+
+::: {.pf-step #s4}
+
+The residue classes of the monomials
 $$
 \prod_{i=1}^n (x_i-c_i)^{a_i},
 \qquad
@@ -98,8 +120,9 @@ $$
 $$
 span $R/I$ over $\CC$.
 
-::: {.proof}
-By step <1>3 every element of $R$ is a $\CC$-linear combination of translated
+::: pf-proof
+
+By step [](#s3){.pf-ref} every element of $R$ is a $\CC$-linear combination of translated
 monomials. If one such monomial has
 $$
 a_i\geq e_i
@@ -108,11 +131,16 @@ for some $i$, then it is divisible by
 $$
 (x_i-c_i)^{e_i}\in I
 $$
-by step <1>2, so its class in $R/I$ is zero. Thus only the displayed
+by step [](#s2){.pf-ref}, so its class in $R/I$ is zero. Thus only the displayed
 monomials are needed to span the quotient.
+
 :::
 
-<1>5. The quotient is finite-dimensional, with
+:::
+
+::: {.pf-step #s5}
+
+The quotient is finite-dimensional, with
 $$
 \boxed{
 \dim_{\CC}(R/I)
@@ -123,18 +151,25 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 There are exactly
 $$
 \prod_{i=1}^n e_i
 $$
-monomials in the spanning family from step <1>4. Hence $R/I$ is spanned by
+monomials in the spanning family from step [](#s4){.pf-ref}. Hence $R/I$ is spanned by
 finitely many vectors and satisfies the displayed dimension bound.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required finite-dimensionality statement.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required finite-dimensionality statement.
+
+:::
+
+:::
+
 :::

@@ -35,10 +35,16 @@ has at least three distinct solutions in $A$.
 :::
 
 ::: {.solution}
-<1>1. For every $x\in A$, the minimal polynomial of $x$ over $\CC$ has
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in A$, the minimal polynomial of $x$ over $\CC$ has
 no repeated root.
 
-::: {.proof}
+::: pf-proof
+
 Let $m_x(t)$ be the minimal polynomial of $x$. Since $\CC$ is
 algebraically closed,
 $$
@@ -62,30 +68,42 @@ $$
 b(x)^2=0,
 $$
 contrary to the hypothesis. Therefore every $e_i=1$.
+
 :::
 
-<1>2. There is an element $x\in A$ whose minimal polynomial has at least
+:::
+
+::: pf-step
+
+There is an element $x\in A$ whose minimal polynomial has at least
 two distinct roots.
 
-::: {.proof}
+::: pf-proof
+
 Since $\dim_{\CC}A\geq2$, choose
 $$
 x\notin\CC\cdot1.
 $$
 If the minimal polynomial of $x$ had degree $1$, then
 $x=\lambda1$ for some $\lambda\in\CC$, contrary to the choice of $x$.
-Thus $\deg m_x\geq2$. By step <1>1, all roots of $m_x$ are distinct, so
+Thus $\deg m_x\geq2$. By step [](#s1){.pf-ref}, all roots of $m_x$ are distinct, so
 there are at least two of them.
+
 :::
 
-<1>3. There is an idempotent $e\in A$ with
+:::
+
+::: {.pf-step #s3}
+
+There is an idempotent $e\in A$ with
 $$
 e\neq0,
 \qquad
 e\neq1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 m_x(t)=\prod_{i=1}^r(t-\lambda_i),
@@ -118,21 +136,33 @@ $$
 \deg(q-1)<\deg m_x,
 $$
 so $(q-1)(x)\neq0$. Hence $e\neq1$.
+
 :::
 
-<1>4. The equation $a^2=a$ has at least three distinct solutions in $A$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The equation $a^2=a$ has at least three distinct solutions in $A$.
+
+::: pf-proof
+
 The elements
 $$
 \boxed{0,\qquad1,\qquad e}
 $$
-are idempotent, and step <1>3 shows that they are pairwise distinct.
+are idempotent, and step [](#s3){.pf-ref} shows that they are pairwise distinct.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

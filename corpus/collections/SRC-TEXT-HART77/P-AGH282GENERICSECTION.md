@@ -41,24 +41,35 @@ Use a method similar to the proof of Bertini's theorem (II.8.18).
 The value of a section at $x$ means its image in the fibre $\mce(x)=\mce_x\otimes_{\OO_{X,x}}\kappa(x)$.
 Thus the required condition is nonzero fibre value at every scheme point, not just nonzero germ.
 
-<1>1. There is a finite-dimensional subspace $W\subseteq V$ which generates $\mce$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+There is a finite-dimensional subspace $W\subseteq V$ which generates $\mce$.
+
+::: pf-proof
+
 At every point choose finitely many sections from $V$ that generate the stalk, using the assumed [[D-MODGG|global generation]] and finite rank.
 Their images generate on a neighborhood: the cokernel of the map from a finite free sheaf is coherent and vanishes at that stalk, so it vanishes after shrinking.
 The variety $X$ is quasi-compact, so finitely many such neighborhoods cover it.
 The span $W$ of the sections chosen on that finite cover is finite-dimensional and generates at every point.
 Write $m=\dim_kW$ and choose a basis $s_1,\ldots,s_m$.
 In particular, $m\ge r$.
+
 :::
 
-<1>2. Let $I\subseteq X\times_k\AA_k^m$ be the incidence subscheme defined by the vanishing of the universal section $\sum_j a_js_j$, where $a_1,\ldots,a_m$ are the coordinates on $\AA^m$.
+:::
+
+::: {.pf-step #s2}
+
+Let $I\subseteq X\times_k\AA_k^m$ be the incidence subscheme defined by the vanishing of the universal section $\sum_j a_js_j$, where $a_1,\ldots,a_m$ are the coordinates on $\AA^m$.
 Then $I$ is the total space of a vector bundle of rank $m-r$ on $X$, and
 $$
 \dim I=n+m-r<m.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The evaluation map $W\otimes_k\OO_X\twoheadrightarrow\mce$ is surjective.
 It splits locally because the target is locally free: on a framed open, choose local lifts of a basis.
 Its kernel is consequently locally free of rank $m-r$.
@@ -68,11 +79,17 @@ The vanishing of the universal section is then the vanishing of $r$ independent 
 These local descriptions identify $I$ with the total space of the kernel bundle.
 In particular, $I$ is integral and has dimension $n+m-r$, since its trivializing opens are products of nonempty opens of the integral variety $X$ with $\AA^{m-r}$.
 The inequality follows from $r>n$.
+
 :::
 
-<1>3. There is a section $s\in W$ with no zero on $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+There is a section $s\in W$ with no zero on $X$.
+
+::: pf-proof
+
 Let $Z$ be the reduced closure of the image of the second projection $I\to\AA^m$.
 The induced dominant morphism from the integral variety $I$ to $Z$ gives an inclusion of function fields.
 Dimensions of integral finite-type schemes over a field equal the transcendence degrees of their function fields, so
@@ -87,24 +104,36 @@ The fibre of $I\to\AA^m$ over $a$ is exactly the zero subscheme of $s$.
 It is empty because $a$ is outside the closure of the image.
 Consequently $s_x\notin\mathfrak m_x\mce_x$ for every $x\in X$, as required.
 The argument uses the closure of the incidence image; it does not require that the projection be proper or that the image itself be closed.
+
 :::
 
-<1>4. The map $\OO_X\to\mce$ defined by $1\mapsto s$ is injective with a locally free cokernel of rank $r-1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The map $\OO_X\to\mce$ defined by $1\mapsto s$ is injective with a locally free cokernel of rank $r-1$.
+
+::: pf-proof
+
 Fix $x\in X$ and express $s$ in a local frame $e_1,\ldots,e_r$ as $s=\sum_i b_ie_i$.
-Step <1>3 says that at least one $b_i$ is outside the maximal ideal at $x$.
+Step [](#s3){.pf-ref} says that at least one $b_i$ is outside the maximal ideal at $x$.
 Reorder the frame so that this is $b_1$, and shrink until $b_1$ is a unit.
 The list $s,e_2,\ldots,e_r$ is then a frame, since its change-of-basis determinant is $b_1$.
 In this frame, the map from $\OO_X$ is the inclusion of the first summand, with free cokernel of rank $r-1$.
 These local descriptions prove global injectivity and local freeness of the cokernel $\mce'$, giving the stated short exact sequence.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 produce the section in the prescribed space $V$, and step <1>4 proves the exact sequence with locally free quotient.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} produce the section in the prescribed space $V$, and step [](#s4){.pf-ref} proves the exact sequence with locally free quotient.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

@@ -44,7 +44,11 @@ for the dual projective space parametrizing planes in $\PP^3$.
 In Chapter IV, a curve is nonsingular, so every point of $X$ has a
 well-defined tangent line.
 
-<1>1. The locus
+::: pf
+
+::: {.pf-step #s1}
+
+The locus
 $$
 B_{\mathrm{tan}}
 =
@@ -53,7 +57,8 @@ B_{\mathrm{tan}}
 $$
 is closed and has dimension at most $2$.
 
-::: {.proof}
+::: pf-proof
+
 Consider the incidence variety
 $$
 \mathcal T
@@ -76,9 +81,14 @@ $B_{\mathrm{tan}}$, so
 $$
 \dim B_{\mathrm{tan}}\le2.
 $$
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 $$
 G=\operatorname{Gr}(1,3)
 $$
@@ -89,7 +99,8 @@ S\subseteq G
 $$
 of dimension $2$.
 
-::: {.proof}
+::: pf-proof
+
 On
 $$
 (X\times X)\setminus\Delta
@@ -111,15 +122,21 @@ not planar. Thus every fibre of $\sigma$ is finite.
 
 Consequently the image has dimension $2$, and its closure $S$ is an
 irreducible surface in $G$.
+
 :::
 
-<1>3. The family
+:::
+
+::: {.pf-step #s3}
+
+The family
 $$
 M\subseteq S
 $$
 of multisecant lines has dimension at most $1$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \mathcal U
@@ -165,14 +182,19 @@ theorem shows that not every secant of a nonplanar curve is a multisecant
 $$
 M\ne S.
 $$
-Since $S$ is an irreducible surface by step <1>2,
+Since $S$ is an irreducible surface by step [](#s2){.pf-ref},
 $$
 \boxed{\dim M\le1}.
 $$
 This is the curve case of the classical trisecant lemma.
+
 :::
 
-<1>4. The locus
+:::
+
+::: {.pf-step #s4}
+
+The locus
 $$
 B_{\mathrm{multi}}
 =
@@ -182,7 +204,8 @@ H\supseteq\ell
 $$
 is closed and has dimension at most $2$.
 
-::: {.proof}
+::: pf-proof
+
 Consider
 $$
 \mathcal M
@@ -197,16 +220,21 @@ $$
 \dim M+1
 \le2
 $$
-by step <1>3.
+by step [](#s3){.pf-ref}.
 
 The incidence variety $\mathcal M$ is projective, so its image in
 $\check{\PP}^3$ is closed. That image is $B_{\mathrm{multi}}$, proving
 $$
 \dim B_{\mathrm{multi}}\le2.
 $$
+
 :::
 
-<1>5. There is a nonempty Zariski-open subset
+:::
+
+::: {.pf-step #s5}
+
+There is a nonempty Zariski-open subset
 $$
 U
 =
@@ -215,23 +243,30 @@ U
 \bigl(B_{\mathrm{tan}}\cup B_{\mathrm{multi}}\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The dual projective space has dimension
 $$
 \dim\check{\PP}^3=3.
 $$
-Steps <1>1 and <1>4 give two closed subsets of dimension at most $2$.
+Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} give two closed subsets of dimension at most $2$.
 Their union is therefore a proper closed subset of the irreducible
 threefold $\check{\PP}^3$. Its complement $U$ is nonempty and open.
+
 :::
 
-<1>6. If $H\in U$, then the scheme-theoretic intersection
+:::
+
+::: {.pf-step #s6}
+
+If $H\in U$, then the scheme-theoretic intersection
 $$
 X\cap H
 $$
 consists of exactly $d$ distinct reduced points.
 
-::: {.proof}
+::: pf-proof
+
 Because $X$ is not contained in any plane, $H$ does not contain $X$.
 Thus $H$ cuts on $X$ an effective hyperplane divisor of degree
 $$
@@ -249,11 +284,17 @@ point therefore has multiplicity $1$.
 
 The total degree of the hyperplane divisor is $d$, so it has exactly
 $d$ distinct points.
+
 :::
 
-<1>7. No three points of $X\cap H$ are collinear for $H\in U$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+No three points of $X\cap H$ are collinear for $H\in U$.
+
+::: pf-proof
+
 Suppose distinct points
 $$
 P,Q,R\in X\cap H
@@ -273,18 +314,24 @@ $$
 H\in B_{\mathrm{multi}},
 $$
 contrary to $H\in U$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 For every plane
 $$
 H\in U,
 $$
-step <1>6 gives exactly $d$ distinct intersection points and step <1>7
-shows that no three are collinear. Step <1>5 says that $U$ is a nonempty
+step [](#s6){.pf-ref} gives exactly $d$ distinct intersection points and step [](#s7){.pf-ref}
+shows that no three are collinear. Step [](#s5){.pf-ref} says that $U$ is a nonempty
 Zariski-open subset of the dual projective space. This is precisely the
 asserted Bertini lemma.
+
 :::
+
+:::
+
 :::

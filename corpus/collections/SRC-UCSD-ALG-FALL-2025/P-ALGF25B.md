@@ -47,21 +47,34 @@ P_1 \cap P_2 = \bigcap_{P \in \operatorname{Syl}_p(G)} P.
 ::: {.solution}
 Put $D=P_1\cap P_2$.
 
-<1>1. The subgroups $P_1$ and $P_2$ are Sylow $p$-subgroups of $H=N_G(N)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The subgroups $P_1$ and $P_2$ are Sylow $p$-subgroups of $H=N_G(N)$.
+
+::: pf-proof
+
 Because $N\trianglelefteq P_i$, every element of $P_i$ normalizes $N$; hence
 \[
 P_1,P_2\le H.
 \]
 Each $P_i$ is already a Sylow $p$-subgroup of $G$, so no $p$-subgroup of the subgroup $H\le G$ can properly contain it.
 Thus $P_1,P_2\in\operatorname{Syl}_p(H)$.
+
 :::
 
-<1>2. For every $P\in\operatorname{Syl}_p(G)$, there exists $h\in H$ such that
+:::
+
+::: {.pf-step #s2}
+
+For every $P\in\operatorname{Syl}_p(G)$, there exists $h\in H$ such that
 \[
 hPh^{-1}\cap H\subseteq P_1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The intersection $P\cap H$ is a $p$-subgroup of $H$.
 Choose a Sylow $p$-subgroup $Q$ of $H$ containing $P\cap H$.
 By Sylow conjugacy inside $H$, there is $h\in H$ such that
@@ -76,14 +89,21 @@ hPh^{-1}\cap H
 =P_1.
 \]
 This proves part (a).
+
 :::
 
-<1>3. The same $h$ may be chosen so that
+:::
+
+::: {.pf-step #s3}
+
+The same $h$ may be chosen so that
 \[
 hPh^{-1}\cap P_2=D.
 \]
-::: {.proof}
-Take $h$ from <1>2 and write $P'=hPh^{-1}$.
+
+::: pf-proof
+
+Take $h$ from step [](#s2){.pf-ref} and write $P'=hPh^{-1}$.
 Since $P_2\le H$,
 \[
 P'\cap P_2\subseteq P'\cap H\subseteq P_1,
@@ -102,11 +122,18 @@ Hence
 P'\cap P_2=D,
 \]
 which proves part (b).
+
 :::
 
-<1>4. The subgroup $N$ is contained in every Sylow $p$-subgroup of $G$.
-::: {.proof}
-Fix $P\in\operatorname{Syl}_p(G)$ and choose $h\in H$ as in <1>3.
+:::
+
+::: pf-step
+
+The subgroup $N$ is contained in every Sylow $p$-subgroup of $G$.
+
+::: pf-proof
+
+Fix $P\in\operatorname{Syl}_p(G)$ and choose $h\in H$ as in step [](#s3){.pf-ref}.
 Since $N\subseteq D$,
 \[
 N\subseteq D=hPh^{-1}\cap P_2\subseteq hPh^{-1}.
@@ -114,10 +141,17 @@ N\subseteq D=hPh^{-1}\cap P_2\subseteq hPh^{-1}.
 But $h\in H=N_G(N)$, so $h^{-1}Nh=N$.
 Conjugating the containment by $h^{-1}$ gives $N\subseteq P$.
 This proves part (c).
+
 :::
 
-<1>5. If $P_1$ is abelian, then $D$ is exactly the intersection of all Sylow $p$-subgroups of $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $P_1$ is abelian, then $D$ is exactly the intersection of all Sylow $p$-subgroups of $G$.
+
+::: pf-proof
+
 Every Sylow $p$-subgroup of $G$ is conjugate to $P_1$, so every Sylow $p$-subgroup is abelian; in particular, $P_2$ is abelian.
 Therefore
 \[
@@ -141,5 +175,11 @@ Hence
 P_1\cap P_2=D=\bigcap_{P\in\operatorname{Syl}_p(G)}P,
 \]
 proving part (d).
+
 :::
+
+:::
+
+:::
+
 :::

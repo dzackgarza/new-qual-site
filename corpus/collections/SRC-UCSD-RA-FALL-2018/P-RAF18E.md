@@ -33,8 +33,15 @@ Let $1 < p < \infty$, and $\{f_n\}_n \subset L^p([0,1], m)$ be a sequence such t
 :::
 
 ::: {.solution}
-<1>1. Interpolate between $L^1$ and $L^p$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Interpolate between $L^1$ and $L^p$.
+
+::: pf-proof
+
 Fix $r\in[1,p)$. Choose $\theta\in(0,1]$ so that
 \[
 \frac1r=\theta+\frac{1-\theta}{p}.
@@ -55,10 +62,17 @@ Thus
 \[
 \boxed{\|f_n\|_r\to0\quad\text{for every }1\le r<p.}
 \]
+
 :::
 
-<1>2. Prove weak convergence in $L^p$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove weak convergence in $L^p$.
+
+::: pf-proof
+
 Let $g\in L^q([0,1])$ and fix $\varepsilon>0$. Since bounded functions are dense in $L^q([0,1])$, choose $h\in L^\infty([0,1])$ with
 \[
 \|g-h\|_q<\frac{\varepsilon}{2M}
@@ -84,5 +98,11 @@ Therefore
 \[
 \boxed{\int_0^1 f_ng\,dm\longrightarrow0\quad\text{for every }g\in L^q([0,1]).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

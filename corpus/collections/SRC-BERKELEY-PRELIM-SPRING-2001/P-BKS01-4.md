@@ -35,7 +35,11 @@ f(z)=\frac{1}{1+z^5},
 \zeta=e^{i\pi/5}.
 $$
 
-<1>1. Let $C_R$ be the positively oriented boundary of the sector
+::: pf
+
+::: {.pf-step #s1}
+
+Let $C_R$ be the positively oriented boundary of the sector
 $$
 0\leq\arg z\leq\frac{2\pi}{5},
 \qquad
@@ -52,7 +56,8 @@ $$
 \frac{1}{5\zeta^4}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The poles are the five roots of
 $$
 z^5=-1,
@@ -72,9 +77,14 @@ $$
 =
 \frac{1}{5\zeta^4}.
 $$
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 I_R=\int_0^R\frac{dx}{1+x^5},
 $$
@@ -85,7 +95,8 @@ I_R
 -e^{2\pi i/5}I_R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The lower ray is the positive real axis, so its contribution is $I_R$.
 On the upper ray write
 $$
@@ -104,12 +115,18 @@ $$
 =
 -e^{2\pi i/5}I_R.
 $$
+
 :::
 
-<1>3. The integral over the circular arc of $C_R$ tends to zero as
+:::
+
+::: {.pf-step #s3}
+
+The integral over the circular arc of $C_R$ tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 On the arc,
 $$
 \abs{1+z^5}
@@ -125,9 +142,14 @@ $$
 \frac{2\pi R/5}{R^5-1}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 I=\int_0^\infty\frac{dx}{1+x^5},
 $$
@@ -138,8 +160,9 @@ $$
 \frac{2\pi i}{5\zeta^4}.
 $$
 
-::: {.proof}
-By the residue theorem and steps <1>1--<1>2,
+::: pf-proof
+
+By the residue theorem and steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 \left(1-e^{2\pi i/5}\right)I_R
 +
@@ -147,17 +170,23 @@ $$
 =
 2\pi i\frac{1}{5\zeta^4}.
 $$
-Now let $R\to\infty$ and use step <1>3.
+Now let $R\to\infty$ and use step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. The value of the integral is
+:::
+
+::: {.pf-step #s5}
+
+The value of the integral is
 $$
 \boxed{
 \frac{\pi}{5\sin(\pi/5)}
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 \theta=\frac{\pi}{5},
@@ -170,7 +199,7 @@ $$
 =
 -2ie^{i\theta}\sin\theta.
 $$
-Using step <1>4,
+Using step [](#s4){.pf-ref},
 $$
 \begin{aligned}
 I
@@ -184,11 +213,17 @@ I
 \end{aligned}
 $$
 because $e^{-5i\theta}=e^{-i\pi}=-1$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

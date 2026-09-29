@@ -50,12 +50,17 @@ c&d
 \end{pmatrix}.
 $$
 
-<1>1. If $A^2=-I$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $A^2=-I$, then
 $$
 a+d=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding the square gives
 $$
 A^2=
@@ -82,9 +87,14 @@ c(a+d)=0
 $$
 would force $b=c=0$. The first diagonal equation would then give
 $a^2=-1$, impossible over $\RR$. Therefore $a+d=0$.
+
 :::
 
-<1>2. If $A^2=-I$, then there are $p,q\in\RR$ with $pq\ge1$ such
+:::
+
+::: {.pf-step #s2}
+
+If $A^2=-I$, then there are $p,q\in\RR$ with $pq\ge1$ such
 that
 $$
 A=
@@ -94,8 +104,9 @@ q&\mp\sqrt{pq-1}
 \end{pmatrix}.
 $$
 
-::: {.proof}
-By step <1>1, $d=-a$. The diagonal equation becomes
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $d=-a$. The diagonal equation becomes
 $$
 a^2+bc=-1.
 $$
@@ -119,14 +130,20 @@ a=\pm\sqrt{pq-1}.
 $$
 Since $d=-a$, the two diagonal signs are opposite, exactly as in the
 stated form.
+
 :::
 
-<1>3. Every matrix of the displayed form in part 1 satisfies
+:::
+
+::: {.pf-step #s3}
+
+Every matrix of the displayed form in part 1 satisfies
 $$
 A^2=-I.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 s=\pm\sqrt{pq-1},
@@ -146,15 +163,26 @@ s^2-pq&0\\
 \end{pmatrix}.
 $$
 Since $s^2=pq-1$, this is $-I$.
+
 :::
 
-<1>4. Part 1 is therefore proved.
-
-::: {.proof}
-Step <1>2 proves necessity, and step <1>3 proves sufficiency.
 :::
 
-<1>5. For part 2, suppose for contradiction that a real matrix $A$
+::: {.pf-step #s4}
+
+Part 1 is therefore proved.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves necessity, and step [](#s3){.pf-ref} proves sufficiency.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+For part 2, suppose for contradiction that a real matrix $A$
 satisfies
 $$
 A^2=
@@ -169,7 +197,8 @@ D
 $$
 Then $A$ commutes with $D$.
 
-::: {.proof}
+::: pf-proof
+
 Since $D=A^2$,
 $$
 AD
@@ -182,11 +211,17 @@ A^2A
 =
 DA.
 $$
+
 :::
 
-<1>6. Any real $2\times2$ matrix commuting with $D$ is diagonal.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Any real $2\times2$ matrix commuting with $D$ is diagonal.
+
+::: pf-proof
+
 Write
 $$
 A=
@@ -206,11 +241,17 @@ $$
 b=c=0.
 $$
 Thus $A$ is diagonal.
+
 :::
 
-<1>7. No real diagonal matrix can square to $D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+No real diagonal matrix can square to $D$.
+
+::: pf-proof
+
 If
 $$
 A=
@@ -229,9 +270,14 @@ a^2&0\\
 $$
 Equality with $D$ would require $a^2=-1$, impossible for
 $a\in\RR$.
+
 :::
 
-<1>8. Therefore, for every $\varepsilon>0$, there is no real
+:::
+
+::: {.pf-step #s8}
+
+Therefore, for every $\varepsilon>0$, there is no real
 $2\times2$ matrix whose square is
 $$
 \begin{pmatrix}
@@ -240,14 +286,21 @@ $$
 \end{pmatrix}.
 $$
 
-::: {.proof}
-Steps <1>5--<1>7 show that assuming such a matrix exists leads to a
+::: pf-proof
+
+Steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} show that assuming such a matrix exists leads to a
 contradiction.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves part 1, and step <1>8 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part 1, and step [](#s8){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

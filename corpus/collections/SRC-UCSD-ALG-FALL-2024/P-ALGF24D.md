@@ -58,11 +58,18 @@ Use flatness and the short exact sequence in part (b).
 :::
 
 ::: {.solution}
-<1>1. For every ideal $I\subseteq A$, multiplication induces an isomorphism
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every ideal $I\subseteq A$, multiplication induces an isomorphism
 \[
 \mu_I:I\otimes_A M\longrightarrow IM,\qquad a\otimes x\longmapsto ax.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The multiplication map is $A$-balanced, so it induces an $A$-linear map on the tensor product.
 By flatness, the inclusion $\iota:I\hookrightarrow A$ induces an injection
 \[
@@ -74,24 +81,38 @@ The composite of this isomorphism with $\iota\otimes1_M$ is therefore injective 
 IM=\left\{\sum_{j=1}^s a_jx_j:a_j\in I,\ x_j\in M,\ s\text{ finite}\right\}.
 \]
 Restricting the codomain to that image gives $\mu_I$, proving part (a).
+
 :::
 
-<1>2. In part (b), the element
+:::
+
+::: {.pf-step #s2}
+
+In part (b), the element
 \[
 t=\sum_{i=1}^n e_i\otimes x_i\in A^n\otimes_A M
 \]
 belongs to $\ker(f\otimes1_M)$, where $e_1,\ldots,e_n$ is the standard basis of $A^n$.
-::: {.proof}
+
+::: pf-proof
+
 We have
 \[
 (f\otimes1_M)(t)=\sum_{i=1}^n a_i\otimes x_i\in I\otimes_A M.
 \]
 Applying $\mu_I$ gives $\sum_i a_ix_i=0$ by the assumed relation.
-Injectivity of $\mu_I$ from <1>1 now implies $(f\otimes1_M)(t)=0$.
+Injectivity of $\mu_I$ from step [](#s1){.pf-ref} now implies $(f\otimes1_M)(t)=0$.
+
 :::
 
-<1>3. The required finite collection of vectors $\mathbf{k}_j\in K$ and elements $y_j\in M$ exists.
-::: {.proof}
+:::
+
+::: pf-step
+
+The required finite collection of vectors $\mathbf{k}_j\in K$ and elements $y_j\in M$ exists.
+
+::: pf-proof
+
 Let $j:K\hookrightarrow A^n$ be the inclusion.
 Tensoring the given short exact sequence with the flat module $M$ gives the exact sequence
 \[
@@ -100,7 +121,7 @@ Tensoring the given short exact sequence with the flat module $M$ gives the exac
 \xrightarrow{f\otimes1_M}I\otimes_A M
 \longrightarrow0.
 \]
-By <1>2 and exactness, $t$ is the image of some $u\in K\otimes_A M$.
+By step [](#s2){.pf-ref} and exactness, $t$ is the image of some $u\in K\otimes_A M$.
 Every element of a tensor product is a finite sum of pure tensors, so write
 \[
 u=\sum_{j=1}^m\mathbf{k}_j\otimes y_j,
@@ -119,5 +140,11 @@ the equality $(j\otimes1_M)(u)=t$ becomes
 Taking the $i$th coordinate gives $\sum_{j=1}^m b_{ij}y_j=x_i$ for every $i$.
 Moreover, $\mathbf{k}_j\in K$ gives $\sum_i a_i b_{ij}=0$ for every $j$, as required by the prescribed kernel condition.
 This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

@@ -36,13 +36,19 @@ $$
 :::
 
 ::: {.solution}
-<1>1. With the substitution $x=\tan\theta$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+With the substitution $x=\tan\theta$,
 $$
 \int_0^\infty\frac{dx}{(1+x^2)^2}
 =\int_0^{\pi/2}\cos^2\theta\,d\theta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $R>0$, put $x=\tan\theta$ on $[0,R]$. Then
 $$
 dx=\sec^2\theta\,d\theta,
@@ -56,15 +62,21 @@ $$
 $$
 Letting $R\to\infty$ gives $\arctan R\to\pi/2$, which yields the
 displayed identity.
+
 :::
 
-<1>2. The value of the integral is
+:::
+
+::: {.pf-step #s2}
+
+The value of the integral is
 $$
 \boxed{\frac\pi4}.
 $$
 
-::: {.proof}
-By step <1>1 and the identity
+::: pf-proof
+
+By step [](#s1){.pf-ref} and the identity
 $$
 \cos^2\theta=\frac{1+\cos(2\theta)}2,
 $$
@@ -79,11 +91,17 @@ $$
 &=\frac\pi4.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

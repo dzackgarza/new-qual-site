@@ -29,10 +29,16 @@ This is stated and proved in Folland, but you are being asked to give a proof he
 For this, you may use without proof the following: A normed vector space $X$ is complete if and only if every absolutely convergent series in $X$ converges.
 :::
 
-
 ::: {.solution}
-<1>1. Start with an absolutely convergent series in $L^2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Start with an absolutely convergent series in $L^2$.
+
+::: pf-proof
+
 Suppose
 \[
 \sum_{n=1}^\infty \|f_n\|_2<\infty.
@@ -52,10 +58,17 @@ Hence
 \int_X G_N^2\,d\mu\le M^2
 \]
 for every $N$.
+
 :::
 
-<1>2. Show that the series converges absolutely almost everywhere.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the series converges absolutely almost everywhere.
+
+::: pf-proof
+
 The sequence $(G_N)$ is increasing, so
 \[
 G_N^2\uparrow G^2,
@@ -77,10 +90,17 @@ converges absolutely for almost every $x$. Define
 f(x):=\sum_{n=1}^\infty f_n(x)
 \]
 on that full-measure set, and define $f$ arbitrarily on the null exceptional set. Since $|f|\le G$, we have $f\in L^2$.
+
 :::
 
-<1>3. Prove convergence in the $L^2$ norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove convergence in the $L^2$ norm.
+
+::: pf-proof
+
 For $N<M$,
 \[
 \left\|\sum_{n=N+1}^M f_n\right\|_2
@@ -103,5 +123,11 @@ By the criterion stated in the problem, this proves that
 \[
 \boxed{L^2(X,\mu)\text{ is complete}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

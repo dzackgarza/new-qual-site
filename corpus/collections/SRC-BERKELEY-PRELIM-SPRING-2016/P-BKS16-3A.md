@@ -38,7 +38,11 @@ $$
 ::: {.solution}
 The statement is false.
 
-<1>1. On the measure space $(0,1)$ with Lebesgue measure, define
+::: pf
+
+::: {.pf-step #s1}
+
+On the measure space $(0,1)$ with Lebesgue measure, define
 $$
 g(x)=x^{-1/2}
 $$
@@ -53,7 +57,8 @@ n^{1/4},&0<x\leq1/n,\\
 $$
 Then $g$ and every $f_n$ are nonnegative and integrable.
 
-::: {.proof}
+::: pf-proof
+
 Each $f_n$ is a bounded step function supported on an interval of finite measure. Also
 $$
 \int_0^1g(x)\,dx
@@ -62,14 +67,20 @@ $$
 =
 2.
 $$
+
 :::
 
-<1>2. For every $n$ and every $x\in(0,1)$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n$ and every $x\in(0,1)$,
 $$
 f_n(x)^2\leq g(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $x>1/n$, then $f_n(x)=0$. If $0<x\leq1/n$, then
 $$
 f_n(x)^2=n^{1/2}
@@ -78,9 +89,14 @@ while
 $$
 g(x)=x^{-1/2}\geq(1/n)^{-1/2}=n^{1/2}.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_0^1f_n(x)\,dx
 =
@@ -88,7 +104,8 @@ n^{-3/4}
 \longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 \int_0^1f_n(x)\,dx
@@ -97,9 +114,14 @@ n^{1/4}\frac1n
 =
 n^{-3/4}.
 $$
+
 :::
 
-<1>4. Nevertheless,
+:::
+
+::: {.pf-step #s4}
+
+Nevertheless,
 $$
 \int_0^1f_n(x)^4\,dx
 =
@@ -107,7 +129,8 @@ $$
 $$
 for every $n$.
 
-::: {.proof}
+::: pf-proof
+
 On $(0,1/n]$ one has
 $$
 f_n(x)^4=n,
@@ -120,21 +143,33 @@ n\frac1n
 =
 1.
 $$
+
 :::
 
-<1>5. Thus the proposed conclusion
+:::
+
+::: {.pf-step #s5}
+
+Thus the proposed conclusion
 $$
 \int f_n^4\,dx\longrightarrow0
 $$
 does not follow from the hypotheses.
 
-::: {.proof}
-Steps <1>1--<1>3 verify all hypotheses, while step <1>4 shows that the proposed conclusion fails.
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} verify all hypotheses, while step [](#s4){.pf-ref} shows that the proposed conclusion fails.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 supplies the requested counterexample.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} supplies the requested counterexample.
+
+:::
+
+:::
+
 :::

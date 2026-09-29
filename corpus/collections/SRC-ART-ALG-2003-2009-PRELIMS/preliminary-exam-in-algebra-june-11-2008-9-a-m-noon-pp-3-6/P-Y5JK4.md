@@ -26,34 +26,58 @@ c. Show that $\mathbf{Z}[i]/I$ is finite.
 :::
 
 ::: {.solution}
-<1>1. In part (a), every ideal of a Euclidean domain $R$ with Euclidean function $N$ is principal.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+In part (a), every ideal of a Euclidean domain $R$ with Euclidean function $N$ is principal.
+
+::: pf-proof
+
 Let $I$ be an ideal of $R$. If $I=0$, then $I=(0)$.
 Otherwise choose $d\in I\setminus\{0\}$ with $N(d)$ minimal; then $(d)\subseteq I$.
 For $a\in I$, division gives $q,r\in R$ with $a=qd+r$ and either $r=0$ or $N(r)<N(d)$.
 Since $r=a-qd\in I$, minimality of $N(d)$ excludes $r\ne0$, so $a=qd\in(d)$.
 Hence $I=(d)$, and $R$ is a principal ideal domain.
+
 :::
 
-<1>2. In part (b), every coset of $I=(\alpha)$ contains an element of norm less than $N(\alpha)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+In part (b), every coset of $I=(\alpha)$ contains an element of norm less than $N(\alpha)$.
+
+::: pf-proof
+
 A coset has the form $\beta+I$ with $\beta\in\ZZ[i]$.
 Division by $\alpha\ne0$ gives $q,r\in\ZZ[i]$ with $\beta=q\alpha+r$ and either $r=0$ or $N(r)<N(\alpha)$.
 Then $r=\beta-q\alpha\in\beta+I$, and in both cases $N(r)<N(\alpha)$, because $N(0)=0<N(\alpha)$.
+
 :::
 
-<1>3. In part (c), $\ZZ[i]/I$ is finite.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+In part (c), $\ZZ[i]/I$ is finite.
+
+::: pf-proof
+
 Let $n=N(\alpha)$. The Gaussian integers $a+bi$ with $a^2+b^2<n$ satisfy $\abs{a},\abs{b}<\sqrt n$, so there are finitely many of them.
-By step <1>2 every coset of $I$ contains one of them, so there are finitely many cosets.
+By step [](#s2){.pf-ref} every coset of $I$ contains one of them, so there are finitely many cosets.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 answer parts (a), (b), and (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} answer parts (a), (b), and (c).
+
+:::
+
+:::
+
 :::

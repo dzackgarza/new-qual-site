@@ -54,9 +54,14 @@ $$
 P=[0:0:1].
 $$
 
-<1>1. The only singular point of $C$ is $P$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The only singular point of $C$ is $P$.
+
+::: pf-proof
+
 The partial derivatives are
 $$
 F_x=4x^3+yz^2,
@@ -114,11 +119,17 @@ $$
 x=y=0.
 $$
 Thus $P$ is the unique singular point.
+
 :::
 
-<1>2. The singularity of $C$ at $P$ is an ordinary node.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The singularity of $C$ at $P$ is an ordinary node.
+
+::: pf-proof
+
 On the affine chart $z=1$, a local equation at $P$ is
 $$
 f(x,y)=xy+x^4+y^4.
@@ -133,18 +144,24 @@ V(xy)=V(x)\cup V(y),
 $$
 the union of two distinct lines.
 Hence $P$ is an ordinary double point, that is, a node.
+
 :::
 
-<1>3. The quartic $C$ is integral.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The quartic $C$ is integral.
+
+::: pf-proof
+
 First, $F$ is squarefree.
 Indeed, if an irreducible polynomial $G$ occurred in $F$ with multiplicity at least $2$, then $G$ would divide each partial derivative of $F$.
-Every point of the positive-dimensional curve $V(G)$ would then be singular on $C$, contradicting step <1>1, which found only the single singular point $P$.
+Every point of the positive-dimensional curve $V(G)$ would then be singular on $C$, contradicting step [](#s1){.pf-ref}, which found only the single singular point $P$.
 Thus $C$ is reduced.
 
-Step <1>1 says that different irreducible components of $C$ could meet only at $P$.
-Step <1>2 says that at $P$ there are exactly two smooth local branches meeting transversely, so if $C$ were reducible it would have exactly two irreducible components
+Step [](#s1){.pf-ref} says that different irreducible components of $C$ could meet only at $P$.
+Step [](#s2){.pf-ref} says that at $P$ there are exactly two smooth local branches meeting transversely, so if $C$ were reducible it would have exactly two irreducible components
 $$
 C_1,\ C_2
 $$
@@ -167,14 +184,20 @@ $$
 contrary to the quartic equation.
 Hence $C$ is irreducible.
 Since $F$ is a single irreducible equation in the polynomial ring over a field, and we have already shown it squarefree, $C$ is integral.
+
 :::
 
-<1>4. The normalization $\widetilde C$ has genus
+:::
+
+::: {.pf-step #s4}
+
+The normalization $\widetilde C$ has genus
 $$
 \boxed{g(\widetilde C)=2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 An integral plane quartic has arithmetic genus
 $$
 p_a(C)
@@ -182,7 +205,7 @@ p_a(C)
 \frac{(4-1)(4-2)}2
 =3.
 $$
-By step <1>1, $P$ is its only singularity, and by step <1>2 it is a node.
+By step [](#s1){.pf-ref}, $P$ is its only singularity, and by step [](#s2){.pf-ref} it is a node.
 Exercise [[P-AGH418ARITHGENUSSINGULAR|IV.1.8]] gives
 $$
 \delta_P=1
@@ -197,9 +220,14 @@ Therefore
 $$
 g(\widetilde C)=3-1=2.
 $$
+
 :::
 
-<1>5. Suppose, for contradiction, that $C$ is the image of a nonsingular curve
+:::
+
+::: {.pf-step #s5}
+
+Suppose, for contradiction, that $C$ is the image of a nonsingular curve
 $$
 X\subseteq\PP^3
 $$
@@ -209,7 +237,8 @@ $$
 $$
 Then $X\cong\widetilde C$.
 
-::: {.proof}
+::: pf-proof
+
 The smooth curve $X$ is normal.
 Since $\pi$ is birational onto the integral curve $C$, the universal property of normalization factors it as
 $$
@@ -225,18 +254,24 @@ Hence
 $$
 X\cong\widetilde C.
 $$
-By step <1>4,
+By step [](#s4){.pf-ref},
 $$
 g(X)=2.
 $$
+
 :::
 
-<1>6. The hypothetical space curve $X$ has degree
+:::
+
+::: {.pf-step #s6}
+
+The hypothetical space curve $X$ has degree
 $$
 \boxed{\deg X=4}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Projection from a point outside $X$ is defined by a three-dimensional subspace of
 $$
 H^0(X,\mco_X(1)),
@@ -257,12 +292,18 @@ Therefore
 $$
 \deg X=4.
 $$
+
 :::
 
-<1>7. The curve $C$ cannot be a birational projection of a nonsingular curve in $\PP^3$.
+:::
 
-::: {.proof}
-Steps <1>5--<1>6 would produce a nonsingular curve in $\PP^3$ with
+::: {.pf-step #s7}
+
+The curve $C$ cannot be a birational projection of a nonsingular curve in $\PP^3$.
+
+::: pf-proof
+
+Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} would produce a nonsingular curve in $\PP^3$ with
 $$
 \deg X=4,
 \qquad
@@ -270,13 +311,19 @@ g(X)=2.
 $$
 But [[P-AGH436CURVESOFDEGREEFOUR|Exercise IV.3.6(a)]] classifies nonsingular degree-$4$ curves: in $\PP^3$ their genus is either $0$ or $1$, never $2$.
 This contradiction proves that no such projection exists.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 show that the displayed curve is an integral plane quartic with exactly one node.
-Steps <1>5--<1>7 show that it cannot arise as the birational projection of any nonsingular curve in $\PP^3$.
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} show that the displayed curve is an integral plane quartic with exactly one node.
+Steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} show that it cannot arise as the birational projection of any nonsingular curve in $\PP^3$.
 Hence it is the required counterexample.
+
 :::
+
+:::
+
 :::

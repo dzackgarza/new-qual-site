@@ -30,9 +30,15 @@ Let $A,B$ be complex $n\times n$ matrices. Prove or disprove each assertion:
 :::
 
 ::: {.solution}
-<1>1. Assertion (1) is false.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Assertion (1) is false.
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -59,11 +65,17 @@ A+B
 $$
 has characteristic polynomial $(t-1)^2$ and is not the identity matrix.
 Its $1$-eigenspace is one-dimensional, so it is not diagonalizable.
+
 :::
 
-<1>2. Assertion (2) is false.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Assertion (2) is false.
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -88,12 +100,18 @@ AB
 0&1
 \end{pmatrix},
 $$
-which is the same nondiagonalizable Jordan block as in step <1>1.
+which is the same nondiagonalizable Jordan block as in step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Assertion (3) is true.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Assertion (3) is true.
+
+::: pf-proof
+
 If $A^2=A$, then
 $$
 A(A-I)=0.
@@ -105,12 +123,18 @@ $$
 This polynomial splits over $\CC$ and has no repeated root. Therefore the
 minimal polynomial of $A$ also splits with no repeated root, which is
 equivalent to diagonalizability over $\CC$.
+
 :::
 
-<1>4. Suppose $A$ is invertible and $A^2$ is diagonalizable. Then every
+:::
+
+::: {.pf-step #s4}
+
+Suppose $A$ is invertible and $A^2$ is diagonalizable. Then every
 eigenspace of $A^2$ is invariant under $A$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 E_\mu\coloneqq\ker(A^2-\mu I)
@@ -126,15 +150,21 @@ A(\mu v)
 \mu Av.
 $$
 Thus $Av\in E_\mu$.
+
 :::
 
-<1>5. For every eigenvalue $\mu$ of $A^2$, the restriction
+:::
+
+::: {.pf-step #s5}
+
+For every eigenvalue $\mu$ of $A^2$, the restriction
 $$
 A|_{E_\mu}
 $$
 is diagonalizable.
 
-::: {.proof}
+::: pf-proof
+
 Because $A$ is invertible, $A^2$ is invertible, so $\mu\ne0$. On
 $E_\mu$ one has
 $$
@@ -151,24 +181,35 @@ $$
 -\sqrt\mu,
 $$
 because $\mu\ne0$. Thus the restriction is diagonalizable.
+
 :::
 
-<1>6. Assertion (4) is true.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Assertion (4) is true.
+
+::: pf-proof
+
 Since $A^2$ is diagonalizable,
 $$
 \CC^n
 =
 \bigoplus_{\mu\in\Spec(A^2)}E_\mu.
 $$
-By step <1>4 each summand is $A$-invariant, and by step <1>5 the
+By step [](#s4){.pf-ref} each summand is $A$-invariant, and by step [](#s5){.pf-ref} the
 restriction of $A$ to each summand has a basis of eigenvectors. Combining
 these bases gives an eigenbasis of $\CC^n$ for $A$. Hence $A$ is
 diagonalizable.
+
 :::
 
-<1>7. Therefore the answers are
+:::
+
+::: {.pf-step #s7}
+
+Therefore the answers are
 $$
 \boxed{
 (1)\ \text{false},\qquad
@@ -178,14 +219,21 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>1--<1>2 give counterexamples to the first two assertions, while
-steps <1>3 and <1>6 prove the last two.
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give counterexamples to the first two assertions, while
+steps [](#s3){.pf-ref} and [](#s6){.pf-ref} prove the last two.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 gives the complete requested classification.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} gives the complete requested classification.
+
+:::
+
+:::
+
 :::

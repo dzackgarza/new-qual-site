@@ -37,9 +37,14 @@ D:A\times B\longrightarrow\RR,
 D(x,y)=\norm{x-y}.
 $$
 
-<1>1. The space $A\times B$ is nonempty and compact, and $D$ is continuous.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The space $A\times B$ is nonempty and compact, and $D$ is continuous.
+
+::: pf-proof
+
 The sets $A$ and $B$ are nonempty, so their product is nonempty. Since both
 are compact subsets of $\RR^n$, their finite product $A\times B$ is compact.
 
@@ -49,9 +54,14 @@ $$
 $$
 is continuous, and the Euclidean norm is continuous. Hence their composition
 $D$ is continuous.
+
 :::
 
-<1>2. There exist $a\in A$ and $b\in B$ such that
+:::
+
+::: {.pf-step #s2}
+
+There exist $a\in A$ and $b\in B$ such that
 $$
 \boxed{
 \norm{a-b}
@@ -60,8 +70,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>1, $D$ is a continuous real-valued function on the nonempty compact
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $D$ is a continuous real-valued function on the nonempty compact
 space $A\times B$. The extreme value theorem therefore gives
 $$
 (a,b)\in A\times B
@@ -75,11 +86,17 @@ D(a,b)
 \inf_{(x,y)\in A\times B}D(x,y),
 $$
 which is the displayed equality.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 supplies the required points.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} supplies the required points.
+
+:::
+
+:::
+
 :::

@@ -31,28 +31,62 @@ Consider the following topologies on $\mathbb{R}$:
 - $\mathcal{T}_5 = \{U \subseteq \mathbb{R} : \mathbb{R} \setminus U \text{ is countable}\} \cup \{\emptyset\}$, the cocountable topology;
 - $\mathcal{T}_6 = \mathcal{P}(\mathbb{R})$, the discrete topology.
 
-<1>1. $\mathcal{T}_1$ and $\mathcal{T}_6$ differ from each other and from $\mathcal{T}_2,\ldots,\mathcal{T}_5$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$\mathcal{T}_1$ and $\mathcal{T}_6$ differ from each other and from $\mathcal{T}_2,\ldots,\mathcal{T}_5$.
+
+::: pf-proof
+
 $\mathbb{R} \setminus \{0\}$ lies in $\mathcal{T}_2, \ldots, \mathcal{T}_6$ but not in $\mathcal{T}_1$. The singleton $\{0\}$ lies in $\mathcal{T}_6$ but in none of $\mathcal{T}_1, \ldots, \mathcal{T}_5$: its complement is uncountable, so $\{0\} \notin \mathcal{T}_4, \mathcal{T}_5$, and it contains no interval $(a, b)$ or $[a, b)$ with $a < b$, so $\{0\} \notin \mathcal{T}_2, \mathcal{T}_3$.
+
 :::
 
-<1>2. $\mathcal{T}_2 \neq \mathcal{T}_3$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$\mathcal{T}_2 \neq \mathcal{T}_3$.
+
+::: pf-proof
+
 $[0, 1) \in \mathcal{T}_3$, but $[0, 1) \notin \mathcal{T}_2$ because no interval $(-\varepsilon, \varepsilon)$ with $\varepsilon > 0$ lies in $[0, 1)$.
+
 :::
 
-<1>3. $\mathcal{T}_2$ and $\mathcal{T}_3$ differ from $\mathcal{T}_4$ and $\mathcal{T}_5$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$\mathcal{T}_2$ and $\mathcal{T}_3$ differ from $\mathcal{T}_4$ and $\mathcal{T}_5$.
+
+::: pf-proof
+
 $(0, 1)$ lies in $\mathcal{T}_2$ and $\mathcal{T}_3$ (it is the union of the intervals $[1/n, 1)$), but its complement is uncountable, so it lies in neither $\mathcal{T}_4$ nor $\mathcal{T}_5$.
+
 :::
 
-<1>4. $\mathcal{T}_4 \subsetneq \mathcal{T}_5$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+$\mathcal{T}_4 \subsetneq \mathcal{T}_5$.
+
+::: pf-proof
+
 Every finite set is countable, so $\mathcal{T}_4 \subseteq \mathcal{T}_5$. The set $\mathbb{R} \setminus \mathbb{N}$ has countably infinite complement, so it lies in $\mathcal{T}_5$ but not in $\mathcal{T}_4$.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>4 separate every pair among $\mathcal{T}_1, \ldots, \mathcal{T}_6$, so these are six distinct topologies on $\mathbb{R}$.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} separate every pair among $\mathcal{T}_1, \ldots, \mathcal{T}_6$, so these are six distinct topologies on $\mathbb{R}$.
+
+:::
+
+:::
+
 :::

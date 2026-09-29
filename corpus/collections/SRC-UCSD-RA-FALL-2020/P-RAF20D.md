@@ -42,31 +42,91 @@ $$
 :::
 
 ::: {.solution}
-<1>1. (1) $f^\alpha \in L^1$ for $\alpha \in (0,1)$ and $\lim_{\alpha \to 0^+} \int f^\alpha\,d\mu = \mu\theset{f > 0}$.
-<2>1. $f^\alpha \in L^1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+(1) $f^\alpha \in L^1$ for $\alpha \in (0,1)$ and $\lim_{\alpha \to 0^+} \int f^\alpha\,d\mu = \mu\theset{f > 0}$.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+$f^\alpha \in L^1$.
+
+::: pf-proof
+
 On $\theset{f \le 1}$, $f^\alpha \le 1$; on $\theset{f > 1}$, $f^\alpha \le f$ because $\alpha < 1$. Hence $f^\alpha \le 1 + f$ for every $\alpha\in(0,1)$, and $1+f \in L^1$ because $\mu(X)<\infty$.
-:::
-<2>2. $f^\alpha \to \mathbf 1_{\theset{f > 0}}$ pointwise as $\alpha \to 0^+$.
-::: {.proof}
-If $f(x) > 0$, then $f(x)^\alpha \to 1$; if $f(x) = 0$, then $f(x)^\alpha = 0$.
-:::
-<2>3. $\lim_{\alpha \to 0^+} \int f^\alpha\,d\mu = \int \mathbf 1_{\theset{f>0}}\,d\mu = \mu\theset{f > 0}$.
-::: {.proof}
-Apply the dominated convergence theorem to the pointwise limit of step <2>2, with the dominating function $1 + f$ of step <2>1.
+
 :::
 
-<1>2. (2) $g \in L^p$ for $p \in [1,\infty)$ and $\lim_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} = \|g\|_\infty$.
-<2>1. $g \in L^p$ for all $p \in [1,\infty)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s1-2}
+
+$f^\alpha \to \mathbf 1_{\theset{f > 0}}$ pointwise as $\alpha \to 0^+$.
+
+::: pf-proof
+
+If $f(x) > 0$, then $f(x)^\alpha \to 1$; if $f(x) = 0$, then $f(x)^\alpha = 0$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\lim_{\alpha \to 0^+} \int f^\alpha\,d\mu = \int \mathbf 1_{\theset{f>0}}\,d\mu = \mu\theset{f > 0}$.
+
+::: pf-proof
+
+Apply the dominated convergence theorem to the pointwise limit of step [](#s1-2){.pf-ref}, with the dominating function $1 + f$ of step [](#s1-1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+(2) $g \in L^p$ for $p \in [1,\infty)$ and $\lim_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} = \|g\|_\infty$.
+
+::: pf-proof
+
+::: pf-step
+
+$g \in L^p$ for all $p \in [1,\infty)$.
+
+::: pf-proof
+
 Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^p \le \|g\|_\infty^p \mu(X) < \infty$.
+
 :::
-<2>2. $\frac{\int |g|^{p+1}}{\int |g|^p} \le \|g\|_\infty$.
-::: {.proof}
+
+:::
+
+::: {.pf-step #s2-2}
+
+$\frac{\int |g|^{p+1}}{\int |g|^p} \le \|g\|_\infty$.
+
+::: pf-proof
+
 Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^{p+1} = \int |g| \cdot |g|^p \le \|g\|_\infty \int |g|^p$, and $\int|g|^p>0$ because $\|g\|_\infty>0$.
+
 :::
-<2>3. $\liminf_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} \ge \|g\|_\infty$.
-::: {.proof}
+
+:::
+
+::: {.pf-step #s2-3}
+
+$\liminf_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} \ge \|g\|_\infty$.
+
+::: pf-proof
+
 Write $M=\|g\|_\infty>0$ and fix $\varepsilon\in(0,M)$. Let
 \[
 A=\{|g|>M-\varepsilon/2\},
@@ -106,14 +166,33 @@ The last factor tends to $1$, so
 \ge M-\varepsilon.
 \]
 Letting $\varepsilon\downarrow0$ proves the desired lower bound.
-:::
-<2>4. Hence the limit is $\|g\|_\infty$.
-::: {.proof}
-Steps <2>2 and <2>3 give matching upper and lower bounds.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Steps <1>1 and <1>2 prove (1) and (2).
 :::
+
+::: pf-step
+
+Hence the limit is $\|g\|_\infty$.
+
+::: pf-proof
+
+Steps [](#s2-2){.pf-ref} and [](#s2-3){.pf-ref} give matching upper and lower bounds.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (1) and (2).
+
+:::
+
+:::
+
 :::

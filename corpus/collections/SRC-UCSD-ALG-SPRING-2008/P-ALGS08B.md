@@ -29,8 +29,15 @@ Classify all groups of order $99 = 3^2 \cdot 11$ up to isomorphism.
 :::
 
 ::: {.solution}
-<1>1. The Sylow $11$-subgroup of $G$ is unique and normal.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The Sylow $11$-subgroup of $G$ is unique and normal.
+
+::: pf-proof
+
 Let $n_{11}$ be the number of Sylow $11$-subgroups.
 Sylow's theorem gives
 \[
@@ -48,10 +55,17 @@ Then $Q\trianglelefteq G$, and since $|Q|=11$,
 \[
 Q\cong C_{11}.
 \]
+
 :::
 
-<1>2. The Sylow $3$-subgroup of $G$ is unique and normal.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Sylow $3$-subgroup of $G$ is unique and normal.
+
+::: pf-proof
+
 Let $n_3$ be the number of Sylow $3$-subgroups.
 Again by Sylow's theorem,
 \[
@@ -66,10 +80,17 @@ n_3=1.
 \]
 Write $P$ for the unique Sylow $3$-subgroup.
 Then $P\trianglelefteq G$ and $|P|=9$.
+
 :::
 
-<1>3. The group $G$ is the internal direct product $P\times Q$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The group $G$ is the internal direct product $P\times Q$.
+
+::: pf-proof
+
 Since $|P|=9$ and $|Q|=11$ are coprime,
 \[
 P\cap Q=1.
@@ -88,10 +109,17 @@ Therefore
 \[
 G\cong P\times Q.
 \]
+
 :::
 
-<1>4. There are exactly two possibilities for $P$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There are exactly two possibilities for $P$.
+
+::: pf-proof
+
 Every group of order $p^2$ is abelian.
 Therefore a group of order $9$ is isomorphic to exactly one of
 \[
@@ -105,16 +133,23 @@ P\cong C_9
 \quad\text{or}\quad
 P\cong C_3\times C_3.
 \]
+
 :::
 
-<1>5. Consequently there are exactly two groups of order $99$ up to isomorphism:
+:::
+
+::: pf-step
+
+Consequently there are exactly two groups of order $99$ up to isomorphism:
 \[
 C_{99}
 \qquad\text{and}\qquad
 C_3\times C_{33}.
 \]
-::: {.proof}
-If $P\cong C_9$, then by <1>3,
+
+::: pf-proof
+
+If $P\cong C_9$, then by step [](#s3){.pf-ref},
 \[
 G\cong C_9\times C_{11}\cong C_{99},
 \]
@@ -125,5 +160,11 @@ G\cong C_3\times C_3\times C_{11}
 \cong C_3\times C_{33}.
 \]
 These two groups are not isomorphic: the first contains an element of order $99$, whereas every element of the second has order dividing $33$.
+
 :::
+
+:::
+
+:::
+
 :::

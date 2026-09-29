@@ -49,14 +49,19 @@ $$
 \right)^{1/2}.
 $$
 
-<1>1. For every pair of real $n\times n$ matrices $A,B$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every pair of real $n\times n$ matrices $A,B$,
 $$
 \norm{AB}_F
 \leq
 \norm{A}_F\norm{B}_F.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $i,j$,
 $$
 (AB)_{ij}
@@ -101,9 +106,14 @@ $$
 \end{aligned}
 $$
 Taking square roots proves the claim.
+
 :::
 
-<1>2. Fix
+:::
+
+::: {.pf-step #s2}
+
+Fix
 $$
 X\in M_{n\times n}(\RR)
 $$
@@ -116,7 +126,8 @@ $$
 M_{n\times n}(\RR)\longrightarrow M_{n\times n}(\RR).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For matrices $H,K$ and scalars $a,b\in\RR$,
 $$
 \begin{aligned}
@@ -129,14 +140,20 @@ a(XH+HX)+b(XK+KX)\\
 aL_X(H)+bL_X(K).
 \end{aligned}
 $$
+
 :::
 
-<1>3. For every increment $H$,
+:::
+
+::: {.pf-step #s3}
+
+For every increment $H$,
 $$
 f(X+H)-f(X)-L_X(H)=H^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding without assuming commutativity,
 $$
 \begin{aligned}
@@ -156,9 +173,14 @@ $$
 L_X(H)=XH+HX,
 $$
 the displayed remainder identity follows.
+
 :::
 
-<1>4. The remainder in step <1>3 satisfies
+:::
+
+::: {.pf-step #s4}
+
+The remainder in step [](#s3){.pf-ref} satisfies
 $$
 \frac{
 \norm{f(X+H)-f(X)-L_X(H)}_F
@@ -170,8 +192,9 @@ $$
 $$
 as $H\to0$.
 
-::: {.proof}
-For $H\neq0$, steps <1>1 and <1>3 give
+::: pf-proof
+
+For $H\neq0$, steps [](#s1){.pf-ref} and [](#s3){.pf-ref} give
 $$
 \begin{aligned}
 \frac{
@@ -188,23 +211,35 @@ $$
 \end{aligned}
 $$
 The right-hand side tends to zero with $H$.
+
 :::
 
-<1>5. The derivative of $f$ at $X$ is the linear map
+:::
+
+::: {.pf-step #s5}
+
+The derivative of $f$ at $X$ is the linear map
 $$
 \boxed{
 Df(X)[H]=XH+HX.
 }
 $$
 
-::: {.proof}
-Step <1>2 shows that $L_X$ is linear, and step <1>4 is exactly the
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that $L_X$ is linear, and step [](#s4){.pf-ref} is exactly the
 Fréchet differentiability condition with derivative $L_X$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested derivative.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested derivative.
+
+:::
+
+:::
+
 :::

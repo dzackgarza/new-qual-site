@@ -45,9 +45,14 @@ $$
 $$
 No finite-generation hypothesis is placed on $M$.
 
-<1>1. The assignment $M\mapsto\Gamma_{\mfa}(M)$ is an additive left exact functor, proving (a).
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The assignment $M\mapsto\Gamma_{\mfa}(M)$ is an additive left exact functor, proving (a).
+
+::: pf-proof
+
 If two elements are killed by powers $\mfa^r$ and $\mfa^s$, their sum is killed by $\mfa^{\max(r,s)}$.
 Multiplying an element by a scalar in $A$ preserves any annihilating power.
 Thus $\Gamma_{\mfa}(M)$ is a submodule.
@@ -57,14 +62,20 @@ For an exact sequence $0\to M'\xrightarrow{u}M\xrightarrow{v}M''$, the induced m
 If $m\in\Gamma_{\mfa}(M)$ lies in $\ker v$, write $m=u(m')$.
 For a power $\mfa^n$ killing $m$, injectivity of $u$ gives $\mfa^n m'=0$.
 Hence $m'$ lies in $\Gamma_{\mfa}(M')$, proving exactness at the middle term.
+
 :::
 
-<1>2. Under $M\cong\Gamma(X,\widetilde M)$, one has a natural equality
+:::
+
+::: {.pf-step #s2}
+
+Under $M\cong\Gamma(X,\widetilde M)$, one has a natural equality
 $$
 \Gamma_{\mfa}(M)=\Gamma_Y(X,\widetilde M).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The support of the section corresponding to $m$ is $V(\Ann_A(m))$, by [[P-AGH256SUPPORT]], part (a).
 It is contained in $V(\mfa)$ exactly when $\mfa\subseteq\sqrt{\Ann_A(m)}$.
 If $\mfa^n m=0$, this containment holds.
@@ -74,15 +85,21 @@ Every monomial of total degree $N=1+\sum_j(n_j-1)$ in the generators is divisibl
 Thus $\mfa^N m=0$.
 For $\mfa=0$ the assertion holds directly, since all elements are killed by its first power and $Y=X$.
 This proves equality, and its construction commutes with all module homomorphisms.
+
 :::
 
-<1>3. For every $i\ge0$ there is a natural $A$-linear isomorphism
+:::
+
+::: {.pf-step #s3}
+
+For every $i\ge0$ there is a natural $A$-linear isomorphism
 $$
 \boxed{H_{\mfa}^i(M)\cong H_Y^i(X,\widetilde M),}
 $$
 proving (b).
 
-::: {.proof}
+::: pf-proof
+
 Choose an injective resolution $M\to I^\bullet$ in the category of $A$-modules.
 The associated-sheaf functor on $\Spec A$ is exact, as can be checked by localization at every prime, so $\widetilde M\to\widetilde{I^\bullet}$ is an exact resolution.
 Since $A$ is noetherian, each $\widetilde{I^q}$ is flasque [@Har10a, Proposition III.3.4].
@@ -90,28 +107,40 @@ Flasque sheaves are acyclic for sections supported in a closed subset, by [[P-AG
 Consequently this resolution computes the supported cohomology of $\widetilde M$.
 It is not necessary that the associated sheaves be injective as abelian sheaves.
 
-Step <1>2 identifies, term by term and compatibly with the differentials, the complexes
+Step [](#s2){.pf-ref} identifies, term by term and compatibly with the differentials, the complexes
 $$
 \Gamma_{\mfa}(I^\bullet)\cong\Gamma_Y(X,\widetilde{I^\bullet}).
 $$
 The cohomology of the first is $H_{\mfa}^i(M)$ by definition and that of the second is $H_Y^i(X,\widetilde M)$ by the preceding acyclicity.
 This gives the required isomorphism.
 All maps preserve scalar multiplication, and comparison of injective resolutions makes the isomorphism natural in $M$ [@Har10a, Chapter III, §1].
+
 :::
 
-<1>4. Every element of $H_{\mfa}^i(M)$ is killed by some power of $\mfa$, proving (c).
+:::
 
-::: {.proof}
-Compute the group by $\Gamma_{\mfa}(I^\bullet)$ as in step <1>3.
+::: {.pf-step #s4}
+
+Every element of $H_{\mfa}^i(M)$ is killed by some power of $\mfa$, proving (c).
+
+::: pf-proof
+
+Compute the group by $\Gamma_{\mfa}(I^\bullet)$ as in step [](#s3){.pf-ref}.
 A cohomology class has a cocycle representative $z\in\Gamma_{\mfa}(I^i)$.
 By definition, some power $\mfa^n$ kills $z$ and therefore also kills its cohomology class.
 Thus every element belongs to $\Gamma_{\mfa}(H_{\mfa}^i(M))$, proving equality with the whole module.
 The exponent may depend on the class; a single exponent annihilating the entire cohomology module is not required.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), steps <1>2--<1>3 prove (b), and step <1>4 proves (c).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (b), and step [](#s4){.pf-ref} proves (c).
+
+:::
+
+:::
+
 :::

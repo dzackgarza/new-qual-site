@@ -48,7 +48,6 @@ $$
 $$
 :::
 
-
 ::: {.solution}
 In each part, the columns of $Q$ are chosen as Jordan chains. We verify the
 chain equations, which are equivalent to
@@ -57,8 +56,14 @@ AQ=QJ
 $$
 and hence to $Q^{-1}AQ=J$ once $Q$ is invertible.
 
-<1>1. Matrix $A$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Matrix $A$.
+
+::: pf-proof
+
 Let $i^2=-1$ and take
 $$
 Q_A=
@@ -89,10 +94,17 @@ $$
 Q_A^{-1}AQ_A=
 \begin{pmatrix}i&0\\0&-i\end{pmatrix}.}
 $$
+
 :::
 
-<1>2. Matrix $B$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Matrix $B$.
+
+::: pf-proof
+
 Set
 $$
 v_3=(1,0,0)^t,
@@ -128,10 +140,17 @@ Q_B^{-1}BQ_B=
 0&0&1
 \end{pmatrix}.}
 $$
+
 :::
 
-<1>3. Matrix $C$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Matrix $C$.
+
+::: pf-proof
+
 Choose eigenvectors
 $$
 v_{-2}=(1,-1,-1)^t,
@@ -171,10 +190,17 @@ Q_C^{-1}CQ_C=
 0&0&3
 \end{pmatrix}.}
 $$
+
 :::
 
-<1>4. Matrix $D$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Matrix $D$.
+
+::: pf-proof
+
 Let
 $$
 v=(-1,1,-1,1)^t,
@@ -223,10 +249,17 @@ Q_D^{-1}DQ_D=
 0&0&0&-2
 \end{pmatrix}.}
 $$
+
 :::
 
-<1>5. Matrix $E$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Matrix $E$.
+
+::: pf-proof
+
 At eigenvalue $3$, take
 $$
 v_3=(1,0,0,-1,0)^t,
@@ -283,5 +316,11 @@ Q_E^{-1}EQ_E=
 0&0&0&0&2
 \end{pmatrix}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

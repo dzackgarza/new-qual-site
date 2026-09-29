@@ -55,8 +55,14 @@ C=C_{S_n}(\sigma)
 \]
 for its centralizer in $S_n$.
 
-<1>1. The set of $A_n$-orbits contained in $\mathcal K$ is a transitive $S_n$-set.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The set of $A_n$-orbits contained in $\mathcal K$ is a transitive $S_n$-set.
+
+::: pf-proof
+
 The group $S_n$ acts transitively on $\mathcal K$ by conjugation, and $A_n\normal S_n$.
 If $\mathcal O$ is an $A_n$-orbit in $\mathcal K$ and $g\in S_n$, then normality gives
 \[
@@ -67,10 +73,17 @@ g\mathcal O
 \]
 which is again an $A_n$-orbit.
 Because the original $S_n$-action on $\mathcal K$ is transitive, this induced action on the set of $A_n$-orbits is also transitive.
+
 :::
 
-<1>2. The stabilizer in $S_n$ of the $A_n$-orbit $A_n\cdot\sigma$ is $A_nC$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The stabilizer in $S_n$ of the $A_n$-orbit $A_n\cdot\sigma$ is $A_nC$.
+
+::: pf-proof
+
 For $g\in S_n$,
 \[
 g(A_n\cdot\sigma)=A_n\cdot\sigma
@@ -86,11 +99,18 @@ a^{-1}g\in C,
 \]
 or equivalently $g\in A_nC$.
 Since $A_n\normal S_n$, the product $A_nC$ is a subgroup.
+
 :::
 
-<1>3. The class $\mathcal K$ is either one $A_n$-orbit or two $A_n$-orbits of equal size.
-::: {.proof}
-By <1>1 and <1>2, the number of $A_n$-orbits in $\mathcal K$ is
+:::
+
+::: {.pf-step #s3}
+
+The class $\mathcal K$ is either one $A_n$-orbit or two $A_n$-orbits of equal size.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the number of $A_n$-orbits in $\mathcal K$ is
 \[
 [S_n:A_nC].
 \]
@@ -100,16 +120,23 @@ A_n\le A_nC\le S_n,
 \]
 this index is either $1$ or $2$.
 
-If there are two orbits, <1>1 says an element of $S_n$ carries either orbit bijectively onto the other by conjugation.
+If there are two orbits, step [](#s1){.pf-ref} says an element of $S_n$ carries either orbit bijectively onto the other by conjugation.
 Hence the two orbits have equal cardinality.
+
 :::
 
-<1>4. The class $\mathcal K$ splits into two $A_n$-orbits if and only if
+:::
+
+::: {.pf-step #s4}
+
+The class $\mathcal K$ splits into two $A_n$-orbits if and only if
 \[
 C\le A_n.
 \]
-::: {.proof}
-By <1>3, splitting occurs exactly when
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, splitting occurs exactly when
 \[
 [S_n:A_nC]=2,
 \]
@@ -118,10 +145,17 @@ that is, exactly when
 A_nC=A_n.
 \]
 This is equivalent to $C\le A_n$.
+
 :::
 
-<1>5. If the cycle type of $\sigma$ contains an even cycle length, then $C$ contains an odd permutation.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+If the cycle type of $\sigma$ contains an even cycle length, then $C$ contains an odd permutation.
+
+::: pf-proof
+
 Let $c$ be an even-length cycle occurring in the disjoint-cycle decomposition of $\sigma$.
 Since the cycles in that decomposition are disjoint, $c$ commutes with $\sigma$, so
 \[
@@ -129,10 +163,17 @@ c\in C.
 \]
 A cycle of length $k$ has sign $(-1)^{k-1}$.
 For even $k$, this sign is $-1$, so $c$ is odd.
+
 :::
 
-<1>6. If an odd cycle length occurs at least twice, then $C$ contains an odd permutation.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+If an odd cycle length occurs at least twice, then $C$ contains an odd permutation.
+
+::: pf-proof
+
 Suppose two cycles of the same odd length $k$ occur:
 \[
 c=(a_1\ a_2\ \cdots\ a_k),
@@ -152,20 +193,34 @@ so $\tau\in C$.
 
 The permutation $\tau$ is a product of $k$ disjoint transpositions.
 Since $k$ is odd, $\tau$ is odd.
+
 :::
 
-<1>7. If $C\le A_n$, then all cycle lengths of $\sigma$ are odd and pairwise distinct.
-::: {.proof}
-If an even cycle length occurred, <1>5 would give an odd element of $C$.
+:::
+
+::: {.pf-step #s7}
+
+If $C\le A_n$, then all cycle lengths of $\sigma$ are odd and pairwise distinct.
+
+::: pf-proof
+
+If an even cycle length occurred, step [](#s5){.pf-ref} would give an odd element of $C$.
 Thus every cycle length is odd.
 
-If a cycle length were repeated, it would therefore be a repeated odd length, and <1>6 would again give an odd element of $C$.
+If a cycle length were repeated, it would therefore be a repeated odd length, and step [](#s6){.pf-ref} would again give an odd element of $C$.
 Hence the cycle lengths are pairwise distinct.
+
 :::
 
-<1>8. Suppose all cycle lengths of $\sigma$ are odd and pairwise distinct.
+:::
+
+::: {.pf-step #s8}
+
+Suppose all cycle lengths of $\sigma$ are odd and pairwise distinct.
 Then every element of $C$ preserves the support of each cycle of $\sigma$.
-::: {.proof}
+
+::: pf-proof
+
 Let $\tau\in C$, and let $x$ lie in a cycle of $\sigma$ of length $k$.
 Because $\tau\sigma=\sigma\tau$,
 \[
@@ -177,16 +232,23 @@ Thus $\tau$ carries the $\sigma$-orbit of $x$ bijectively onto the $\sigma$-orbi
 There is only one cycle of length $k$, by hypothesis.
 Therefore $\tau(x)$ lies in the same cycle support as $x$.
 Hence every cycle support is invariant under $\tau$.
+
 :::
 
-<1>9. Under the hypotheses of <1>8, every element of $C$ is even.
-::: {.proof}
+:::
+
+::: {.pf-step #s9}
+
+Under the hypotheses of step [](#s8){.pf-ref}, every element of $C$ is even.
+
+::: pf-proof
+
 Let
 \[
 \sigma=c_1c_2\cdots c_d
 \]
 be its disjoint-cycle decomposition, where $c_i$ has odd length $k_i$.
-By <1>8, any $\tau\in C$ preserves the support of every $c_i$.
+By step [](#s8){.pf-ref}, any $\tau\in C$ preserves the support of every $c_i$.
 
 On the support of a single cycle $c_i$, any permutation commuting with $c_i$ is a power of $c_i$.
 Indeed, if $x$ is one point of that support and
@@ -206,11 +268,24 @@ Consequently
 \[
 C\le A_n.
 \]
+
 :::
 
-<1>10. The class $\mathcal K$ splits into two equal $A_n$-orbits if and only if its cycle lengths are odd and pairwise distinct.
-::: {.proof}
-By <1>4, splitting is equivalent to $C\le A_n$.
-Step <1>7 proves that this condition forces all cycle lengths to be odd and pairwise distinct, while <1>9 proves the converse.
 :::
+
+::: pf-step
+
+The class $\mathcal K$ splits into two equal $A_n$-orbits if and only if its cycle lengths are odd and pairwise distinct.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, splitting is equivalent to $C\le A_n$.
+Step [](#s7){.pf-ref} proves that this condition forces all cycle lengths to be odd and pairwise distinct, while step [](#s9){.pf-ref} proves the converse.
+
+:::
+
+:::
+
+:::
+
 :::

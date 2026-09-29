@@ -32,8 +32,14 @@ Imitate the proof given in class for the number of Sylow subgroups to prove that
 ::: {.solution}
 Let $\mathcal S$ be the set of Sylow $p$-subgroups of $G$.
 
-<1>1. The $p$-group $Q$ acts on $\mathcal S$ by conjugation.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The $p$-group $Q$ acts on $\mathcal S$ by conjugation.
+
+::: pf-proof
+
 For $q\in Q$ and $P\in\mathcal S$, define
 $$
 q\cdot P=qPq^{-1}.
@@ -41,10 +47,17 @@ $$
 Conjugation preserves subgroup order, so $qPq^{-1}$ is again a subgroup of
 order $p^r$. Thus it is again Sylow, and the formula defines an action of
 $Q$ on $\mathcal S$.
+
 :::
 
-<1>2. This action has a fixed point.
-::: {.proof}
+:::
+
+::: pf-step
+
+This action has a fixed point.
+
+::: pf-proof
+
 By Sylow's theorem,
 $$
 |\mathcal S|\equiv1\pmod p.
@@ -67,10 +80,17 @@ so $\mathcal S^Q$ is nonempty. Choose
 $$
 P\in\mathcal S^Q.
 $$
+
 :::
 
-<1>3. A fixed Sylow subgroup contains $Q$.
-::: {.proof}
+:::
+
+::: pf-step
+
+A fixed Sylow subgroup contains $Q$.
+
+::: pf-proof
+
 The fact that $P$ is fixed by the conjugation action of $Q$ means
 $$
 qPq^{-1}=P
@@ -97,5 +117,11 @@ $$
 $$
 Thus every subgroup of order $p^s$ with $s<r$ is contained in a Sylow
 $p$-subgroup of $G$.
+
 :::
+
+:::
+
+:::
+
 :::

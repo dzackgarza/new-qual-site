@@ -37,7 +37,11 @@ $$
 F(x)=3x+85\cos x.
 $$
 
-<1>1. There is a unique maximal solution
+::: pf
+
+::: {.pf-step #s1}
+
+There is a unique maximal solution
 $$
 x:(\alpha,\beta)\longrightarrow\RR,
 \qquad
@@ -45,32 +49,45 @@ x(0)=77,
 $$
 with $-\infty\le\alpha<0<\beta\le\infty$.
 
-::: {.proof}
+::: pf-proof
+
 The function $F$ is smooth on $\RR$, so the local existence and uniqueness
 theorem and continuation of solutions give the maximal solution.
+
 :::
 
-<1>2. For every $x\in\RR$,
+:::
+
+::: {.pf-step #s2}
+
+For every $x\in\RR$,
 $$
 \abs{F(x)}\le3\abs{x}+85.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has $\abs{3x+85\cos x}\le3\abs{x}+85\abs{\cos x}\le3\abs{x}+85$.
+
 :::
 
-<1>3. If $\beta<\infty$, then
+:::
+
+::: {.pf-step #s3}
+
+If $\beta<\infty$, then
 $$
 \abs{x(t)}\le(77+85\beta)e^{3\beta}
 \qquad(0\le t<\beta).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $0\le t<\beta$,
 $$
 x(t)=77+\int_0^t F(x(s))\,ds,
 $$
-so step <1>2 gives
+so step [](#s2){.pf-ref} gives
 $$
 \abs{x(t)}
 \le77+85\beta+3\int_0^t\abs{x(s)}\,ds.
@@ -80,37 +97,55 @@ $$
 \abs{x(t)}\le(77+85\beta)e^{3t}
 \le(77+85\beta)e^{3\beta}.
 $$
+
 :::
 
-<1>4. If $\alpha>-\infty$, then
+:::
+
+::: {.pf-step #s4}
+
+If $\alpha>-\infty$, then
 $$
 \abs{x(t)}\le(77+85\abs{\alpha})e^{3\abs{\alpha}}
 \qquad(\alpha<t\le0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set $y(s)=x(-s)$ for $-\beta<s<-\alpha$. Then
 $$
 y'(s)=-F(y(s)),
 \qquad y(0)=77,
 $$
-and $\abs{-F(y)}\le3\abs{y}+85$ by step <1>2. The argument of step <1>3
+and $\abs{-F(y)}\le3\abs{y}+85$ by step [](#s2){.pf-ref}. The argument of step [](#s3){.pf-ref}
 applied to $y$ on $[0,\abs{\alpha})$ gives the bound.
+
 :::
 
-<1>5. $\alpha=-\infty$ and $\beta=\infty$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+$\alpha=-\infty$ and $\beta=\infty$.
+
+::: pf-proof
+
 For a smooth vector field on $\RR$, a maximal solution with a finite
 endpoint satisfies $\abs{x(t)}\to\infty$ as that endpoint is approached.
-Steps <1>3 and <1>4 show that $x$ stays bounded near any finite endpoint,
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that $x$ stays bounded near any finite endpoint,
 so neither endpoint is finite.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>5, the maximal solution is defined for every
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s5){.pf-ref}, the maximal solution is defined for every
 $t\in\RR$.
+
 :::
+
+:::
+
 :::

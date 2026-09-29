@@ -59,12 +59,18 @@ Taking $r=-1$ instead gives multiplicative order $m=2$, while both $\alpha$ and 
 ::: {.solution}
 Fix an algebraic closure $\overline F$ containing $E$, and write $\Gamma=\operatorname{Gal}(E/F)$.
 
-<1>1. For every $u\in E$, the roots in $\overline F$ of its minimal polynomial over $F$ are exactly
+::: pf
+
+::: {.pf-step #s1}
+
+For every $u\in E$, the roots in $\overline F$ of its minimal polynomial over $F$ are exactly
 \[
 \{\sigma(u):\sigma\in\Gamma\}.
 \]
 In particular, all these roots lie in $E$, and $\Gamma$ acts transitively on $X$.
-::: {.proof}
+
+::: pf-proof
+
 If $h$ is the minimal polynomial of $u$, then
 \[
 h(\sigma(u))=\sigma(h(u))=0
@@ -84,47 +90,75 @@ Hence $\sigma(E)\subseteq E$.
 An injective $F$-linear endomorphism of the finite-dimensional space $E$ is surjective, so $\sigma\in\Gamma$ and $\sigma(u)=v$.
 This proves the assertion.
 For $u=\alpha\in X$, its minimal polynomial is the monic irreducible polynomial $f$, yielding the transitivity on $X$.
+
 :::
 
-<1>2. The set of roots of $g=m_{\alpha^m,F}$ in $E$ is $\{\beta^m:\beta\in X\}$.
-::: {.proof}
-Applying <1>1 to $\alpha^m$ gives its conjugates as
+:::
+
+::: {.pf-step #s2}
+
+The set of roots of $g=m_{\alpha^m,F}$ in $E$ is $\{\beta^m:\beta\in X\}$.
+
+::: pf-proof
+
+Applying step [](#s1){.pf-ref} to $\alpha^m$ gives its conjugates as
 \[
 \{\sigma(\alpha^m):\sigma\in\Gamma\}
 =\{\sigma(\alpha)^m:\sigma\in\Gamma\}.
 \]
-Transitivity on $X$ from <1>1 identifies this set with $\{\beta^m:\beta\in X\}$.
+Transitivity on $X$ from step [](#s1){.pf-ref} identifies this set with $\{\beta^m:\beta\in X\}$.
 This proves part (a), including that $g$ splits in $E$.
+
 :::
 
-<1>3. Under the hypotheses of (b), multiplication by $r$ maps $X$ into itself.
-::: {.proof}
-Given $\beta\in X$, choose $\sigma\in\Gamma$ with $\sigma(\alpha)=\beta$ by <1>1. Since $r\in F$ and $r\alpha\in X$, we have
+:::
+
+::: {.pf-step #s3}
+
+Under the hypotheses of (b), multiplication by $r$ maps $X$ into itself.
+
+::: pf-proof
+
+Given $\beta\in X$, choose $\sigma\in\Gamma$ with $\sigma(\alpha)=\beta$ by step [](#s1){.pf-ref}. Since $r\in F$ and $r\alpha\in X$, we have
 \[
 r\beta=\sigma(r\alpha)\in X.
 \]
 Thus $\ell_r$ is well-defined.
 This argument does not require $\alpha\ne0$.
+
 :::
 
-<1>4. If in addition $\alpha\ne0$, then $r$ is a root of unity.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If in addition $\alpha\ne0$, then $r$ is a root of unity.
+
+::: pf-proof
+
 First, $0\notin X$: otherwise $x$ divides the monic irreducible polynomial $f$, forcing $f=x$ and contradicting $\alpha\ne0$.
 Since $r\alpha\in X$, this also shows $r\ne0$.
-Multiplication by $r$ is injective, so <1>3 makes $\ell_r$ a permutation of the finite set $X$.
+Multiplication by $r$ is injective, so step [](#s3){.pf-ref} makes $\ell_r$ a permutation of the finite set $X$.
 Some positive power $k$ of this permutation is the identity; for example one may take $k=|X|!$.
 Evaluating at $\alpha$ gives $r^k\alpha=\alpha$.
 Cancelling $\alpha\ne0$ yields $r^k=1$, proving the remaining conclusion of part (b).
+
 :::
 
-<1>5. Under the hypotheses of (c), each fiber of the map
+:::
+
+::: {.pf-step #s5}
+
+Under the hypotheses of (c), each fiber of the map
 \[
 X\longrightarrow Y:=\{\beta^m:\beta\in X\},\qquad \beta\longmapsto\beta^m,
 \]
 is an orbit of $\langle r\rangle$ and has exactly $m$ elements.
-::: {.proof}
-By the argument in <1>4, every element of $X$ is nonzero.
-For each $\beta\in X$, <1>3 shows that
+
+::: pf-proof
+
+By the argument in step [](#s4){.pf-ref}, every element of $X$ is nonzero.
+For each $\beta\in X$, step [](#s3){.pf-ref} shows that
 \[
 \beta,r\beta,\ldots,r^{m-1}\beta
 \]
@@ -135,18 +169,25 @@ Conversely, suppose $\gamma\in X$ and $\gamma^m=\beta^m$.
 Then $(\gamma/\beta)^m=1$.
 The $m$ distinct elements $1,r,\ldots,r^{m-1}$ already exhaust the roots of the degree-$m$ polynomial $t^m-1$.
 Therefore $\gamma/\beta=r^i$ for some $i$, proving the description of the fiber.
+
 :::
 
-<1>6. The polynomial identity $f(x)=g(x^m)$ holds, proving part (c).
-::: {.proof}
+:::
+
+::: pf-step
+
+The polynomial identity $f(x)=g(x^m)$ holds, proving part (c).
+
+::: pf-proof
+
 The polynomials $f$ and $g$ are irreducible in characteristic zero, hence separable.
-Together with <1>2, this gives
+Together with step [](#s2){.pf-ref}, this gives
 \[
 f(x)=\prod_{\beta\in X}(x-\beta),\qquad
 g(t)=\prod_{y\in Y}(t-y).
 \]
 For each $y\in Y$, choose $\beta\in X$ with $\beta^m=y$.
-By <1>5, the roots in this fiber are exactly $r^i\beta$ for $0\le i<m$.
+By step [](#s5){.pf-ref}, the roots in this fiber are exactly $r^i\beta$ for $0\le i<m$.
 These are $m$ distinct roots of the monic degree-$m$ polynomial $x^m-y$, so
 \[
 \prod_{i=0}^{m-1}(x-r^i\beta)=x^m-y.
@@ -156,5 +197,11 @@ Grouping the factors of $f$ by these fibers now yields
 f(x)=\prod_{y\in Y}(x^m-y)=g(x^m).
 \]
 Finally $f=m_{\alpha,F}$ by monicity and irreducibility, so this is precisely the stated identity of minimal polynomials.
+
 :::
+
+:::
+
+:::
+
 :::

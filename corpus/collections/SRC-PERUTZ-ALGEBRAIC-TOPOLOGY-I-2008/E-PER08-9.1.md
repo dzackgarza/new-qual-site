@@ -41,8 +41,14 @@ is an exact sequence, and $\sum_p\dim C_p<\infty$, then $\sum_p(-1)^p\dim C_p=0$
 ::: {.solution}
 Let $Z_p=\ker(d_p)$ and $B_p=\operatorname{im}(d_{p+1})$.
 
-<1>1. Euler characteristic of a finite-dimensional chain complex equals the alternating sum of chain dimensions.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Euler characteristic of a finite-dimensional chain complex equals the alternating sum of chain dimensions.
+
+::: pf-proof
+
 There are short exact sequences
 \[
 0\to Z_p\to C_p\to B_{p-1}\to0,
@@ -58,14 +64,27 @@ The two boundary sums cancel after shifting the index, giving
 \[
 \sum_p(-1)^p\dim C_p=\sum_p(-1)^p\dim H_p=\chi(C_*).
 \]
+
 :::
 
-<1>2. The alternating sum of dimensions in a finite exact sequence is zero.
-::: {.proof}
+:::
+
+::: pf-step
+
+The alternating sum of dimensions in a finite exact sequence is zero.
+
+::: pf-proof
+
 Regard the exact sequence as a chain complex.
-Its homology vanishes in every degree, so <1>1 gives
+Its homology vanishes in every degree, so step [](#s1){.pf-ref} gives
 \[
 \sum_p(-1)^p\dim C_p=0.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

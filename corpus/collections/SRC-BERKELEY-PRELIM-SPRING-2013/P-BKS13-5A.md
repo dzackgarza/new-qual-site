@@ -41,12 +41,17 @@ g(z)
 a_0+a_1z+\cdots+a_nz^n.
 $$
 
-<1>1. For every real $\theta$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every real $\theta$,
 $$
 f(\theta)=g(e^{i\theta}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Substituting
 $$
 z=e^{i\theta}
@@ -59,9 +64,14 @@ a_0+a_1e^{i\theta}+\cdots+a_ne^{ni\theta}
 =
 f(\theta).
 $$
+
 :::
 
-<1>2. Suppose, for contradiction, that
+:::
+
+::: {.pf-step #s2}
+
+Suppose, for contradiction, that
 $$
 \abs{f(\theta)}
 \leq
@@ -75,8 +85,9 @@ $$
 $$
 for every $z$ with $\abs{z}\leq1$.
 
-::: {.proof}
-By step <1>1, the assumed inequality says
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the assumed inequality says
 $$
 \abs{g(z)}
 \leq
@@ -85,34 +96,51 @@ $$
 for every point $z$ of the unit circle. Since $g$ is holomorphic on a
 neighborhood of the closed unit disk, the maximum modulus theorem gives
 the same bound throughout the disk.
+
 :::
 
-<1>3. Under the assumption of step <1>2, the polynomial $g$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+Under the assumption of step [](#s2){.pf-ref}, the polynomial $g$ is constant.
+
+::: pf-proof
+
 At the interior point $z=0$,
 $$
 \abs{g(0)}
 =
 \abs{a_0}.
 $$
-Thus the upper bound from step <1>2 is attained at an interior point.
+Thus the upper bound from step [](#s2){.pf-ref} is attained at an interior point.
 The maximum modulus principle therefore implies that $g$ is constant on
 the unit disk, and hence everywhere as a polynomial.
+
 :::
 
-<1>4. The assumption in step <1>2 is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The assumption in step [](#s2){.pf-ref} is impossible.
+
+::: pf-proof
+
 If $g$ were constant, every coefficient of positive degree would vanish.
 In particular,
 $$
 a_n=0,
 $$
 contradicting the hypothesis.
+
 :::
 
-<1>5. Therefore there exists
+:::
+
+::: {.pf-step #s5}
+
+Therefore there exists
 $$
 \boxed{\theta\in\RR}
 $$
@@ -123,14 +151,21 @@ $$
 \abs{a_0}.
 $$
 
-::: {.proof}
-Step <1>4 is the negation of the assumption that the displayed strict
+::: pf-proof
+
+Step [](#s4){.pf-ref} is the negation of the assumption that the displayed strict
 inequality fails for every real $\theta$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

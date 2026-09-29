@@ -30,13 +30,22 @@ Describe the set of all entire functions $f$ for which there exist positive cons
 :::
 
 ::: {.solution}
-<1>1. For part (a), write $f(z)=\sum_{k=0}^\infty a_kz^k$. For every $r\ge C_2$, Cauchy's estimate gives
+
+::: pf
+
+::: pf-step
+
+For part (a), write $f(z)=\sum_{k=0}^\infty a_kz^k$. For every $r\ge C_2$, Cauchy's estimate gives
 $$
 |a_k|\le \frac{\max_{|z|=r}|f(z)|}{r^k}\le C_1r^{m-k}.
 $$
 If $k>m$, letting $r\to\infty$ gives $a_k=0$. Hence $f$ is a polynomial of degree at most $m$ (including the zero polynomial). Conversely every polynomial of degree at most $m$ satisfies such a bound outside a sufficiently large disk.
 
-<1>2. For part (b), the principal parts must be
+:::
+
+::: pf-step
+
+For part (b), the principal parts must be
 $$
 \frac{A}{z-1},\qquad \frac{B}{(z+1)^2}+\frac{D}{z+1},
 $$
@@ -46,7 +55,15 @@ g(z)=R(z)-\frac{A}{z-1}-\frac{B}{(z+1)^2}-\frac{D}{z+1}
 $$
 extends to an entire function.
 
-<1>3. For $|z|\ge2$, the principal-part terms are bounded, while $|R(z)|\le C|z|$. Hence $|g(z)|\le C'|z|$ for sufficiently large $|z|$. Part (a), with $m=1$, gives $g(z)=\alpha z+\beta$.
+:::
+
+::: pf-step
+
+For $|z|\ge2$, the principal-part terms are bounded, while $|R(z)|\le C|z|$. Hence $|g(z)|\le C'|z|$ for sufficiently large $|z|$. Part (a), with $m=1$, gives $g(z)=\alpha z+\beta$.
+
+:::
+
+:::
 
 Therefore exactly the functions
 $$

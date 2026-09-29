@@ -35,7 +35,12 @@ Let $A\subset\mathbb R^n$ be compact, let $x\in A$, and let $(x_i)$ be a sequenc
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that $(x_i)$ does not converge to $x$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that $(x_i)$ does not converge to $x$.
 Then there are an $\varepsilon>0$ and a subsequence
 $$
 (x_{i_k})
@@ -46,7 +51,8 @@ $$
 $$
 for every $k$.
 
-::: {.proof}
+::: pf-proof
+
 Failure of $x_i\to x$ means that there is an $\varepsilon>0$ such that for
 every index $N$ there is some $i\geq N$ with
 $$
@@ -56,11 +62,17 @@ Choose such indices inductively with
 $$
 i_1<i_2<\cdots.
 $$
+
 :::
 
-<1>2. The subsequence $(x_{i_k})$ has a convergent subsequence.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The subsequence $(x_{i_k})$ has a convergent subsequence.
+
+::: pf-proof
+
 Every term $x_{i_k}$ lies in the compact set $A$. Sequential compactness of
 compact subsets of $\RR^n$ therefore gives indices
 $$
@@ -70,27 +82,39 @@ and a point $y\in A$ such that
 $$
 x_{i_{k_j}}\longrightarrow y.
 $$
+
 :::
 
-<1>3. The limit in step <1>2 must be
+:::
+
+::: {.pf-step #s3}
+
+The limit in step [](#s2){.pf-ref} must be
 $$
 y=x.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The sequence $(x_{i_{k_j}})$ is a convergent subsequence of the original
 sequence $(x_i)$. By the hypothesis of the problem, every such subsequence
 converges to $x$. Limits in $\RR^n$ are unique, so $y=x$.
+
 :::
 
-<1>4. The original sequence converges to $x$.
+:::
 
-::: {.proof}
-By step <1>1,
+::: {.pf-step #s4}
+
+The original sequence converges to $x$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \norm{x_{i_{k_j}}-x}\geq\varepsilon
 $$
-for every $j$. But steps <1>2--<1>3 give
+for every $j$. But steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give
 $$
 x_{i_{k_j}}\longrightarrow x,
 $$
@@ -98,11 +122,16 @@ so
 $$
 \norm{x_{i_{k_j}}-x}\longrightarrow0.
 $$
-This contradiction proves that the supposition in step <1>1 was false.
+This contradiction proves that the supposition in step [](#s1){.pf-ref} was false.
 Hence $x_i\to x$.
+
 :::
 
-<1>5. For part (2), take
+:::
+
+::: {.pf-step #s5}
+
+For part (2), take
 $$
 A=\{0,1,2,3,\ldots\}\subset\RR,
 \qquad
@@ -116,15 +145,22 @@ x_{2n-1}=n
 $$
 for $n\geq1$.
 
-::: {.proof}
+::: pf-proof
+
 The set $A$ is unbounded, hence not compact. The displayed rule defines a
 sequence in $A$.
+
 :::
 
-<1>6. Every convergent subsequence of the sequence in step <1>5 converges
+:::
+
+::: {.pf-step #s6}
+
+Every convergent subsequence of the sequence in step [](#s5){.pf-ref} converges
 to $0$.
 
-::: {.proof}
+::: pf-proof
+
 Every convergent sequence in $\RR$ is bounded. For any $M>0$, only
 finitely many odd-indexed terms
 $$
@@ -134,23 +170,35 @@ lie in $[-M,M]$. Thus a bounded subsequence can contain only finitely many
 odd-indexed terms. Every convergent subsequence is therefore eventually
 made entirely of the even-indexed terms, all of which equal $0$. Hence it
 converges to $0$.
+
 :::
 
-<1>7. The full sequence in step <1>5 does not converge to $0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The full sequence in step [](#s5){.pf-ref} does not converge to $0$.
+
+::: pf-proof
+
 Its odd-indexed subsequence is
 $$
 1,2,3,\ldots,
 $$
 which does not converge to $0$. Hence the full sequence cannot converge to
 $0$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves part (1), while steps <1>5--<1>7 give the required
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (1), while steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} give the required
 noncompact counterexample for part (2).
+
 :::
+
+:::
+
 :::

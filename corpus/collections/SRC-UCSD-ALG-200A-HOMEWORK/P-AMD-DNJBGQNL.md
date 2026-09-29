@@ -54,8 +54,15 @@ I\operatorname{char}A.
 :::
 
 ::: {.solution}
-<1>1. The subgroup $I$ is normal in $A$ for every group $G$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup $I$ is normal in $A$ for every group $G$.
+
+::: pf-proof
+
 For $g\in G$, write
 \[
 c_g(x)=gxg^{-1}.
@@ -75,22 +82,36 @@ Hence conjugation by every element of $A$ preserves $I$, so
 \[
 I\normal A.
 \]
+
 :::
 
-<1>2. If $G$ is abelian and simple, then $I\operatorname{char}A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $G$ is abelian and simple, then $I\operatorname{char}A$.
+
+::: pf-proof
+
 If $G$ is abelian, every inner automorphism is the identity.
 Hence
 \[
 I=\{1_A\}.
 \]
 The trivial subgroup is characteristic in every group, so the conclusion is immediate in this case.
-:::
 
 Assume from now on that $G$ is nonabelian simple.
 
-<1>3. The group $G$ is centerless.
-::: {.proof}
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The group $G$ is centerless.
+
+::: pf-proof
+
 The center $Z(G)$ is a normal subgroup of $G$.
 Since $G$ is simple,
 \[
@@ -103,10 +124,17 @@ Therefore
 \[
 Z(G)=\{e\}.
 \]
+
 :::
 
-<1>4. The group $I$ is a nontrivial simple normal subgroup of $A$ and is isomorphic to $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The group $I$ is a nontrivial simple normal subgroup of $A$ and is isomorphic to $G$.
+
+::: pf-proof
+
 The homomorphism
 \[
 G\longrightarrow I,
@@ -114,28 +142,42 @@ G\longrightarrow I,
 g\longmapsto c_g,
 \]
 is surjective by definition and has kernel $Z(G)$.
-By <1>3 its kernel is trivial, so
+By step [](#s3){.pf-ref} its kernel is trivial, so
 \[
 G\cong I.
 \]
 Thus $I$ is nontrivial and simple because $G$ is.
-Normality follows from <1>1.
+Normality follows from step [](#s1){.pf-ref}.
+
 :::
 
-<1>5. Let $\Phi\in\operatorname{Aut}(A)$ and set
+:::
+
+::: {.pf-step #s5}
+
+Let $\Phi\in\operatorname{Aut}(A)$ and set
 \[
 J=\Phi(I).
 \]
 Then $J$ is a nontrivial simple normal subgroup of $A$.
-::: {.proof}
+
+::: pf-proof
+
 Automorphisms preserve normal subgroups and restrict to isomorphisms onto their images.
-By <1>4, $I$ is nontrivial, simple, and normal in $A$.
+By step [](#s4){.pf-ref}, $I$ is nontrivial, simple, and normal in $A$.
 Therefore $J=\Phi(I)$ has the same three properties.
+
 :::
 
-<1>6. The intersection $I\cap J$ is normal in both $I$ and $J$.
-::: {.proof}
-Both $I$ and $J$ are normal in $A$ by <1>4 and <1>5. In particular, for $i\in I$,
+:::
+
+::: {.pf-step #s6}
+
+The intersection $I\cap J$ is normal in both $I$ and $J$.
+
+::: pf-proof
+
+Both $I$ and $J$ are normal in $A$ by steps [](#s4){.pf-ref} and [](#s5){.pf-ref}. In particular, for $i\in I$,
 \[
 i(I\cap J)i^{-1}
 =I\cap iJi^{-1}
@@ -146,11 +188,18 @@ The same argument with $J$ shows
 \[
 I\cap J\normal J.
 \]
+
 :::
 
-<1>7. If $I\cap J\ne\{1_A\}$, then $I=J$.
-::: {.proof}
-By <1>6, $I\cap J$ is a nontrivial normal subgroup of the simple group $I$.
+:::
+
+::: {.pf-step #s7}
+
+If $I\cap J\ne\{1_A\}$, then $I=J$.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, $I\cap J$ is a nontrivial normal subgroup of the simple group $I$.
 Hence
 \[
 I\cap J=I.
@@ -160,10 +209,17 @@ It is also a nontrivial normal subgroup of the simple group $J$, so
 I\cap J=J.
 \]
 Therefore $I=J$.
+
 :::
 
-<1>8. The alternative $I\cap J=\{1_A\}$ is impossible.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+The alternative $I\cap J=\{1_A\}$ is impossible.
+
+::: pf-proof
+
 Assume for contradiction that
 \[
 I\cap J=\{1_A\}.
@@ -180,21 +236,28 @@ Hence
 Thus every element of $J$ commutes with every element of $I=\operatorname{Inn}(G)$.
 
 But an element of $J$ is an automorphism of $G$.
-Since $G$ is centerless by <1>3, Exercise 3(a) says that an automorphism of $G$ commuting with every inner automorphism must be the identity.
+Since $G$ is centerless by step [](#s3){.pf-ref}, Exercise 3(a) says that an automorphism of $G$ commuting with every inner automorphism must be the identity.
 Therefore every element of $J$ is $1_A$, so
 \[
 J=\{1_A\}.
 \]
-This contradicts <1>5, which says that $J$ is nontrivial.
+This contradicts step [](#s5){.pf-ref}, which says that $J$ is nontrivial.
+
 :::
 
-<1>9. Every automorphism $\Phi$ of $A$ preserves $I$.
-::: {.proof}
-By <1>8,
+:::
+
+::: pf-step
+
+Every automorphism $\Phi$ of $A$ preserves $I$.
+
+::: pf-proof
+
+By step [](#s8){.pf-ref},
 \[
 I\cap\Phi(I)\ne\{1_A\}.
 \]
-Applying <1>7 with $J=\Phi(I)$ gives
+Applying step [](#s7){.pf-ref} with $J=\Phi(I)$ gives
 \[
 \Phi(I)=I.
 \]
@@ -202,6 +265,12 @@ Since $\Phi\in\operatorname{Aut}(A)$ was arbitrary,
 \[
 I\operatorname{char}A.
 \]
-Together with <1>2, this covers both the abelian and nonabelian simple cases.
+Together with step [](#s2){.pf-ref}, this covers both the abelian and nonabelian simple cases.
+
 :::
+
+:::
+
+:::
+
 :::

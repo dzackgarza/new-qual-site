@@ -29,25 +29,45 @@ Decide which of the following assertions are true: (I) $*$ is commutative; (II) 
 ::: {.solution}
 Assertions I and II are true, while III is false.
 
-<1>1. The operation is commutative.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The operation is commutative.
+
+::: pf-proof
+
 Since multiplication and addition in $\mathbb Q$ are commutative,
 \[
 a*b=ab+a+b=ba+b+a=b*a.
 \]
+
 :::
 
-<1>2. The $*$-identity is $0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The $*$-identity is $0$.
+
+::: pf-proof
+
 For every $a\in\mathbb Q$,
 \[
 a*0=a\cdot0+a+0=a,
 \]
 and by commutativity also $0*a=a$.
+
 :::
 
-<1>3. Not every rational has a $*$-inverse.
-::: {.proof}
+:::
+
+::: pf-step
+
+Not every rational has a $*$-inverse.
+
+::: pf-proof
+
 The identity
 \[
 a*b=0
@@ -62,6 +82,11 @@ For $a\ne-1$ this gives $b=(a+1)^{-1}-1$, but for $a=-1$ one has
 \]
 for every $b$.
 Thus $-1$ has no inverse.
+
+:::
+
+:::
+
 :::
 
 Hence exactly I and II hold.

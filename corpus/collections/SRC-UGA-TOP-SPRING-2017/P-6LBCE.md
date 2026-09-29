@@ -47,11 +47,17 @@ Let
 C=S_1\cap S_2.
 \]
 
-<1>1. The intersection is the circle
+::: pf
+
+::: pf-step
+
+The intersection is the circle
 \[
 C=\theset{(0,y,z)\in\RR^3\mid y^2+z^2=3}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $(x,y,z)\in S_1\cap S_2$, subtracting the two sphere equations gives
 \[
 (x-1)^2-(x+1)^2=0,
@@ -67,10 +73,17 @@ Substitution into either sphere equation gives
 \]
 hence $y^2+z^2=3$.
 The converse is immediate, so the displayed circle is exactly the intersection.
+
 :::
 
-<1>2. A CW structure on $X$ has one $0$-cell, one $1$-cell, and four $2$-cells.
-::: {.proof}
+:::
+
+::: pf-step
+
+A CW structure on $X$ has one $0$-cell, one $1$-cell, and four $2$-cells.
+
+::: pf-proof
+
 Choose a point $v\in C$.
 Give the circle $C$ its standard CW structure with one $0$-cell $v$ and one $1$-cell $e$.
 
@@ -89,9 +102,14 @@ is obtained from the $1$-skeleton $C$ by attaching four $2$-cells, each along a 
 S^1\longrightarrow C.
 \]
 This is the required CW structure.
+
 :::
 
-<1>3. After orienting the four $2$-cells suitably, the cellular chain complex is
+:::
+
+::: pf-step
+
+After orienting the four $2$-cells suitably, the cellular chain complex is
 \[
 0\longrightarrow\ZZ^4
 \xrightarrow{\ d_2\ }
@@ -106,7 +124,9 @@ d_2(a_1,a_2,a_3,a_4)=a_1+a_2+a_3+a_4,
 \qquad
 d_1=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 There are four $2$-cells, one $1$-cell, and one $0$-cell, so the cellular chain groups are
 \[
 C_2(X)\cong\ZZ^4,
@@ -128,9 +148,14 @@ The cellular boundary matrix is therefore
 d_2=\begin{bmatrix}1&1&1&1\end{bmatrix}.
 \]
 The unique $1$-cell is a loop with both endpoints at the unique $0$-cell, so $d_1=0$.
+
 :::
 
-<1>4. The homology groups are
+:::
+
+::: pf-step
+
+The homology groups are
 \[
 \boxed{
 H_n(X;\ZZ)\cong
@@ -141,7 +166,9 @@ H_n(X;\ZZ)\cong
 0, & n\ge3.
 \end{cases}}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The map $d_2:\ZZ^4\to\ZZ$ is surjective, so
 \[
 H_1(X;\ZZ)=\ker d_1/\operatorname{im}d_2
@@ -159,5 +186,11 @@ Finally $d_1=0$ gives
 H_0(X;\ZZ)\cong\ZZ,
 \]
 and there are no cells in dimensions at least $3$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -30,8 +30,14 @@ Let $M$ be a real $n\times n$ matrix. Prove or disprove: the dimension of the su
 ::: {.solution}
 The assertion is true.
 
-<1>1. Identify the orthogonal complement of the row space.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Identify the orthogonal complement of the row space.
+
+::: pf-proof
+
 Let $R(M)\subseteq\mathbb R^n$ be the span of the rows of $M$. A vector
 $x\in\mathbb R^n$ lies in $R(M)^\perp$ exactly when its dot product with
 every row of $M$ is zero. Those dot products are precisely the coordinates of
@@ -43,10 +49,17 @@ Therefore
 $$
 \dim R(M)=n-\dim\ker M.
 $$
+
 :::
 
-<1>2. Compare with the column space.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compare with the column space.
+
+::: pf-proof
+
 The span of the columns of $M$ is the image of the linear map
 $$
 M:\mathbb R^n\to\mathbb R^n.
@@ -55,10 +68,16 @@ By rank-nullity,
 $$
 \dim\operatorname{im}M=n-\dim\ker M.
 $$
-Combining this with step <1>1 gives
+Combining this with step [](#s1){.pf-ref} gives
 $$
 \boxed{\dim R(M)=\dim\operatorname{im}M,}
 $$
 which is exactly equality of row rank and column rank.
+
 :::
+
+:::
+
+:::
+
 :::

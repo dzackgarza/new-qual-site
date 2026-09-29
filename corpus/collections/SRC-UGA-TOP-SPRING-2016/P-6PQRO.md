@@ -51,14 +51,20 @@ S=q(X\times\{-1\})
 \]
 for the north and south suspension points.
 
-<1>1. The subspaces
+::: pf
+
+::: {.pf-step #s1}
+
+The subspaces
 \[
 U=SX\setminus\{S\},
 \qquad
 V=SX\setminus\{N\}
 \]
 are open, contractible, and satisfy $SX=U\cup V$.
-::: {.proof}
+
+::: pf-proof
+
 The sets are open because
 \[
 q^{-1}(U)=X\times(-1,1],
@@ -84,10 +90,17 @@ H_V([x,t],s)=[x,(1-s)t-s]
 \]
 contracts $V$ to $S$.
 This proves part (a).
+
 :::
 
-<1>2. The intersection $U\cap V$ is homeomorphic to $X\times(-1,1)$ and hence homotopy equivalent to $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The intersection $U\cap V$ is homeomorphic to $X\times(-1,1)$ and hence homotopy equivalent to $X$.
+
+::: pf-proof
+
 One has
 \[
 q^{-1}(U\cap V)=X\times(-1,1).
@@ -98,15 +111,22 @@ The restriction of $q$ to this saturated open subset is therefore a bijective qu
 X\times(-1,1)\xrightarrow{\cong}U\cap V.
 \]
 Projection onto $X$ is a homotopy equivalence because $(-1,1)$ is contractible.
+
 :::
 
-<1>3. If $X$ is path-connected, then
+:::
+
+::: pf-step
+
+If $X$ is path-connected, then
 \[
 \boxed{\pi_1(SX)=\{0\}}.
 \]
-::: {.proof}
-If $X$ is path-connected, then <1>2 implies that $U\cap V$ is path-connected.
-The sets $U$ and $V$ are open and contractible by <1>1, hence path-connected and simply connected.
+
+::: pf-proof
+
+If $X$ is path-connected, then step [](#s2){.pf-ref} implies that $U\cap V$ is path-connected.
+The sets $U$ and $V$ are open and contractible by step [](#s1){.pf-ref}, hence path-connected and simply connected.
 The Seifert–van Kampen theorem gives
 \[
 \pi_1(SX)
@@ -115,13 +135,20 @@ The Seifert–van Kampen theorem gives
 \]
 Both outer groups are trivial, so their amalgamated product is trivial.
 This proves part (b).
+
 :::
 
-<1>4. For every $n\ge1$ there is an isomorphism
+:::
+
+::: pf-step
+
+For every $n\ge1$ there is an isomorphism
 \[
 \boxed{H_{n+1}(SX)\cong H_n(X)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Apply the Mayer–Vietoris sequence to the open cover $SX=U\cup V$.
 For $n\ge1$, contractibility of $U$ and $V$ gives
 \[
@@ -138,7 +165,7 @@ H_n(U\cap V)
 \longrightarrow0.
 \]
 Thus $\partial$ is an isomorphism.
-By <1>2,
+By step [](#s2){.pf-ref},
 \[
 H_n(U\cap V)\cong H_n(X).
 \]
@@ -147,5 +174,11 @@ Combining the two isomorphisms yields
 H_{n+1}(SX)\cong H_n(X)
 \]
 for every $n\ge1$, which is part (c).
+
 :::
+
+:::
+
+:::
+
 :::

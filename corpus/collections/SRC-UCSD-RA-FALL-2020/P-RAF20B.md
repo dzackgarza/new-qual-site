@@ -38,8 +38,15 @@ Prove that $T : X \to X$ is a bijective, linear, and bounded operator, but its i
 :::
 
 ::: {.solution}
-<1>1. $T$ is linear and bounded, with $\|T\|=1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$T$ is linear and bounded, with $\|T\|=1$.
+
+::: pf-proof
+
 The map $T$ acts coordinatewise by multiplication by the scalars $1/k$, so it is linear. Moreover, for $a=(a_k)\in X$,
 \[
 \|Ta\|
@@ -52,10 +59,17 @@ Hence $T$ is bounded and
 \|T\|\le1.
 \]
 Since $Te_1=e_1$, in fact $\|T\|=1$.
+
 :::
 
-<1>2. $T$ is bijective, with $T^{-1}(b_1,b_2,\ldots)=(b_1,2b_2,3b_3,\ldots)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$T$ is bijective, with $T^{-1}(b_1,b_2,\ldots)=(b_1,2b_2,3b_3,\ldots)$.
+
+::: pf-proof
+
 If $Ta=0$, then $a_k/k=0$ for every $k$, so $a=0$; hence $T$ is injective.
 
 Given $b=(b_k)\in X$, define
@@ -72,10 +86,17 @@ Thus
 \[
 T^{-1}(b_1,b_2,\ldots)=(b_1,2b_2,3b_3,\ldots).
 \]
+
 :::
 
-<1>3. $T^{-1}$ is unbounded.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$T^{-1}$ is unbounded.
+
+::: pf-proof
+
 For the standard basis vector $e_n$,
 \[
 \|e_n\|=1,
@@ -96,11 +117,17 @@ for every $n$, impossible. Hence
 \[
 \boxed{T^{-1}\text{ is unbounded}.}
 \]
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 show that $T$ is a bounded linear bijection, and step <1>3 shows that $T^{-1}$ is unbounded.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that $T$ is a bounded linear bijection, and step [](#s3){.pf-ref} shows that $T^{-1}$ is unbounded.
+
+:::
+
+:::
+
 :::

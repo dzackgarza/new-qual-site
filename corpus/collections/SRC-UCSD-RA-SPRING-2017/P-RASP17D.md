@@ -38,10 +38,16 @@ For true statements give a brief justification; for false statements give a coun
    If $f : \Omega \to \mathbb{C}$ is measurable such that $\sup_{n \in \mathbb{N}} \left|\int_{\Omega_n} f \mathbf{1}_{|f| \leq n} g \, d\mu\right| < \infty$ for all $g \in L^2(\mu)$, then $f \in L^2(\mu)$.
 :::
 
-
 ::: {.solution}
-<1>1. Statement (1) is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Statement (1) is true.
+
+::: pf-proof
+
 For every fixed \(x\in X\), the hypothesis says
 \[
 \sup_n|\varphi_n(x)|<\infty.
@@ -59,10 +65,17 @@ so
 \boxed{
 \sup_n\sup_{\|x\|=1}|\varphi_n(x)|<\infty.}
 \]
+
 :::
 
-<1>2. Statement (2) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (2) is false.
+
+::: pf-proof
+
 Take
 \[
 X=\ell^1,
@@ -84,10 +97,17 @@ However, for every \(x\in c_{00}\), only finitely many coordinates of \(x\) are 
 \sup_n|\varphi_n(x)|<\infty.
 \]
 Thus pointwise boundedness merely on a dense subspace does not imply uniform boundedness.
+
 :::
 
-<1>3. Statement (3), with the corrected absolute-value hypothesis, is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (3), with the corrected absolute-value hypothesis, is true.
+
+::: pf-proof
+
 Set
 \[
 f_n:=\mathbf1_{\Omega_n}f\,\mathbf1_{\{|f|\le n\}}.
@@ -127,5 +147,11 @@ Hence
 \[
 \boxed{f\in L^2(\mu).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

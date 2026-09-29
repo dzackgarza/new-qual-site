@@ -39,8 +39,14 @@ q:Y\to Z,
 r=q\circ p:X\to Z.
 \]
 
-<1>1. For every $z\in Z$ there is a path-connected open neighborhood $U$ of $z$ that is evenly covered by both $q$ and $r$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+For every $z\in Z$ there is a path-connected open neighborhood $U$ of $z$ that is evenly covered by both $q$ and $r$.
+
+::: pf-proof
+
 Choose evenly covered neighborhoods $U_q$ and $U_r$ of $z$ for the two covering maps.
 Their intersection is an open neighborhood of $z$.
 Since $Z$ is locally path connected, choose a path-connected open neighborhood
@@ -48,11 +54,18 @@ Since $Z$ is locally path connected, choose a path-connected open neighborhood
 z\in U\subseteq U_q\cap U_r.
 \]
 Restricting an evenly covered neighborhood to a connected open subset preserves the sheet decomposition, so $U$ is evenly covered by both maps.
+
 :::
 
-<1>2. Let $W$ be a sheet of $r^{-1}(U)$.
+:::
+
+::: {.pf-step #s2}
+
+Let $W$ be a sheet of $r^{-1}(U)$.
 Then $p(W)$ lies in a single sheet $V$ of $q^{-1}(U)$.
-::: {.proof}
+
+::: pf-proof
+
 The restriction
 \[
 r|_W:W\to U
@@ -70,14 +83,21 @@ p(W)\subseteq q^{-1}(U),
 \]
 which is a disjoint union of open sheets.
 A connected subset of this disjoint union lies in one sheet, say $V$.
+
 :::
 
-<1>3. The restriction
+:::
+
+::: {.pf-step #s3}
+
+The restriction
 \[
 p|_W:W\to V
 \]
 is a homeomorphism.
-::: {.proof}
+
+::: pf-proof
+
 On $W$ one has
 \[
 q|_V\circ p|_W=r|_W.
@@ -94,27 +114,46 @@ Hence
 p|_W=(q|_V)^{-1}\circ r|_W,
 \]
 which is a homeomorphism from $W$ onto $V$.
+
 :::
 
-<1>4. For each sheet $V$ of $q^{-1}(U)$,
+:::
+
+::: {.pf-step #s4}
+
+For each sheet $V$ of $q^{-1}(U)$,
 \[
 p^{-1}(V)
 \]
 is a disjoint union of sheets $W$ of $r^{-1}(U)$, each mapped homeomorphically onto $V$.
-::: {.proof}
+
+::: pf-proof
+
 Every point of $p^{-1}(V)$ lies in a unique $r$-sheet $W$ over $U$.
-By <1>2, the entire connected sheet $W$ maps into one $q$-sheet; since it contains a point mapping into $V$, that sheet must be $V$.
+By step [](#s2){.pf-ref}, the entire connected sheet $W$ maps into one $q$-sheet; since it contains a point mapping into $V$, that sheet must be $V$.
 Conversely every $r$-sheet that maps into $V$ lies in $p^{-1}(V)$.
-The homeomorphism statement is <1>3.
+The homeomorphism statement is step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Therefore $p:X\to Y$ is a covering map.
-::: {.proof}
-The sheets $V$ arising from all path-connected neighborhoods $U$ in <1>1 form an open cover of $Y$.
-By <1>4, every such $V$ is evenly covered by $p$.
 :::
 
-<1>6. Now assume $r:X\to Z$ is a normal covering.
+::: pf-step
+
+Therefore $p:X\to Y$ is a covering map.
+
+::: pf-proof
+
+The sheets $V$ arising from all path-connected neighborhoods $U$ in step [](#s1){.pf-ref} form an open cover of $Y$.
+By step [](#s4){.pf-ref}, every such $V$ is evenly covered by $p$.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+Now assume $r:X\to Z$ is a normal covering.
 Let $x_1,x_2\in X$ satisfy
 \[
 p(x_1)=p(x_2)=y.
@@ -123,16 +162,25 @@ Then there is a deck transformation $h$ of $r$ with
 \[
 h(x_1)=x_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The two points lie in the same fiber of $r$ because
 \[
 r(x_i)=q(p(x_i))=q(y).
 \]
 For a connected normal covering, the deck transformation group acts transitively on each fiber.
+
 :::
 
-<1>7. Every such deck transformation $h$ is a deck transformation of $p$ whenever it sends one point of a $p$-fiber to another point of the same $p$-fiber.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+Every such deck transformation $h$ is a deck transformation of $p$ whenever it sends one point of a $p$-fiber to another point of the same $p$-fiber.
+
+::: pf-proof
+
 The maps
 \[
 p\circ h,
@@ -152,11 +200,24 @@ Since $X$ is path connected for a normal covering, uniqueness of lifts gives
 p\circ h=p.
 \]
 Thus $h$ is a deck transformation of $p$.
+
 :::
 
-<1>8. The deck group of $p$ acts transitively on every fiber, so $p$ is normal.
-::: {.proof}
-For arbitrary $x_1,x_2$ in one $p$-fiber, <1>6 supplies a deck transformation $h$ of $r$ carrying $x_1$ to $x_2$, and <1>7 shows that the same $h$ is a deck transformation of $p$.
-This is the transitivity criterion for normal coverings.
 :::
+
+::: pf-step
+
+The deck group of $p$ acts transitively on every fiber, so $p$ is normal.
+
+::: pf-proof
+
+For arbitrary $x_1,x_2$ in one $p$-fiber, step [](#s6){.pf-ref} supplies a deck transformation $h$ of $r$ carrying $x_1$ to $x_2$, and step [](#s7){.pf-ref} shows that the same $h$ is a deck transformation of $p$.
+This is the transitivity criterion for normal coverings.
+
+:::
+
+:::
+
+:::
+
 :::

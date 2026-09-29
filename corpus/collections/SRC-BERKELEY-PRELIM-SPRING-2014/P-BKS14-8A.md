@@ -30,7 +30,11 @@ Let $G$ be a group of order $48$. Show that $G$ contains a normal subgroup of or
 ::: {.solution}
 Let $P$ be a Sylow $2$-subgroup of $G$.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \abs{P}=16
 $$
@@ -39,7 +43,8 @@ $$
 [G:P]=3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \abs{G}=48=2^4\cdot3,
@@ -48,9 +53,14 @@ a Sylow $2$-subgroup has order $2^4=16$. Its index is therefore
 $$
 \frac{48}{16}=3.
 $$
+
 :::
 
-<1>2. Left multiplication on the set of left cosets
+:::
+
+::: pf-step
+
+Left multiplication on the set of left cosets
 $$
 G/P
 $$
@@ -59,8 +69,9 @@ $$
 \rho:G\longrightarrow S_3.
 $$
 
-::: {.proof}
-There are three left cosets by step <1>1. For $g\in G$, define
+::: pf-proof
+
+There are three left cosets by step [](#s1){.pf-ref}. For $g\in G$, define
 $$
 \rho(g)(xP)
 \coloneqq
@@ -71,39 +82,57 @@ $$
 \rho(gh)=\rho(g)\rho(h)
 $$
 because left multiplication is associative.
+
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #s3}
+
+Let
 $$
 K\coloneqq\ker\rho.
 $$
 Then $K$ is a normal subgroup of $G$.
 
-::: {.proof}
+::: pf-proof
+
 The kernel of every group homomorphism is normal.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 K\subseteq P.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every element $k\in K$ fixes every coset, in particular the coset $P$.
 Thus
 $$
 kP=P.
 $$
 This is equivalent to $k\in P$.
+
 :::
 
-<1>5. The index
+:::
+
+::: {.pf-step #s5}
+
+The index
 $$
 [G:K]
 $$
 divides $6$.
 
-::: {.proof}
+::: pf-proof
+
 By the first isomorphism theorem,
 $$
 G/K
@@ -117,9 +146,14 @@ $$
 \abs{\operatorname{im}\rho}
 $$
 divides $6$.
+
 :::
 
-<1>6. The order of $K$ is either
+:::
+
+::: {.pf-step #s6}
+
+The order of $K$ is either
 $$
 16
 $$
@@ -128,14 +162,15 @@ $$
 8.
 $$
 
-::: {.proof}
-By step <1>4, $K$ is a subgroup of the $2$-group $P$, so
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $K$ is a subgroup of the $2$-group $P$, so
 $$
 \abs{K}
 $$
 is a power of $2$ dividing $16$.
 
-By step <1>5,
+By step [](#s5){.pf-ref},
 $$
 \abs{K}
 =
@@ -150,21 +185,33 @@ $$
 48,\ 24,\ 16,\ 8.
 $$
 The only powers of $2$ among them are $16$ and $8$.
+
 :::
 
-<1>7. Therefore $G$ contains a normal subgroup of order
+:::
+
+::: {.pf-step #s7}
+
+Therefore $G$ contains a normal subgroup of order
 $$
 \boxed{16\text{ or }8}.
 $$
 
-::: {.proof}
-The subgroup $K$ is normal by step <1>3 and has one of the two required
-orders by step <1>6.
+::: pf-proof
+
+The subgroup $K$ is normal by step [](#s3){.pf-ref} and has one of the two required
+orders by step [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -46,7 +46,11 @@ $$
 s(z)=\exp\!\left(\frac12\Log z\right).
 $$
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 s:D\longrightarrow
 R,
@@ -55,7 +59,8 @@ R=\{w\in\CC:\operatorname{Re}w>0\},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For $z\in D$,
 $$
 -\frac{\pi}{2}
@@ -99,9 +104,14 @@ $$
 s'(z)=\frac{s(z)}{2z}\neq0
 $$
 on $D$, so $s$ is conformal.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 C:R\longrightarrow\DD,
 \qquad
@@ -109,7 +119,8 @@ C(w)=\frac{w-1}{w+1},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For $w=u+iv$ with $u>0$,
 $$
 \abs{w+1}^2-\abs{w-1}^2=4u>0,
@@ -138,9 +149,14 @@ $$
 C'(w)=\frac{2}{(w+1)^2}\neq0
 $$
 on $R$, so $C$ is conformal.
+
 :::
 
-<1>3. A conformal bijection from the slit plane $D$ onto the unit disk is
+:::
+
+::: {.pf-step #s3}
+
+A conformal bijection from the slit plane $D$ onto the unit disk is
 $$
 \boxed{
 F(z)
@@ -153,8 +169,9 @@ s(z)=\exp\!\left(\frac12\Log z\right),
 }
 $$
 
-::: {.proof}
-By steps <1>1--<1>2,
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 F=C\circ s
 $$
@@ -163,11 +180,17 @@ $$
 D\xrightarrow{s}R\xrightarrow{C}\DD.
 $$
 Therefore $F$ is a conformal bijection from $D$ onto $\DD$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested map.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested map.
+
+:::
+
+:::
+
 :::

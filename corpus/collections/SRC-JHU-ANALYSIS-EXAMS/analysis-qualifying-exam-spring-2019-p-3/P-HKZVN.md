@@ -41,8 +41,15 @@ What does Fubini’s theorem imply about such $f ?$ What about Tonelli’s theor
 :::
 
 ::: {.solution}
-<1>1. Define a measurable function with conditionally convergent iterated integrals.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Define a measurable function with conditionally convergent iterated integrals.
+
+::: pf-proof
+
 Set
 \[
 f(x,y)=
@@ -75,10 +82,17 @@ hence
 =-\frac1{1+y^2}.
 \]
 Thus $f_y\in L^1(\mathbb R)$ for every $y\ne0$.
+
 :::
 
-<1>2. Compute the two iterated integrals.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the two iterated integrals.
+
+::: pf-proof
+
 Therefore
 \[
 \int_{\mathbb R}\left(\int_{\mathbb R}f_x(y)\,dy\right)dx
@@ -92,10 +106,17 @@ whereas
 =-\frac\pi4.
 \]
 Hence the iterated integrals exist but are unequal.
+
 :::
 
-<1>3. Explain what Fubini and Tonelli imply.
-::: {.proof}
+:::
+
+::: pf-step
+
+Explain what Fubini and Tonelli imply.
+
+::: pf-proof
+
 Fubini's theorem says that if $f\in L^1(\mathbb R^2)$, then the two iterated integrals must agree. Since they do not, this example necessarily satisfies
 \[
 f\notin L^1(\mathbb R^2).
@@ -115,5 +136,11 @@ Hence
 \iint_{\mathbb R^2}|f(x,y)|\,dx\,dy=\infty.
 \]
 So Tonelli confirms that absolute integrability fails, exactly as required for the two iterated integrals to differ.
+
 :::
+
+:::
+
+:::
+
 :::

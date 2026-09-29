@@ -39,11 +39,17 @@ R=\mathbb C[x,y],
 \mathfrak m=(x-2,y-3).
 \]
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 \[
 \sqrt I=\mathfrak m.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By Hilbert's Nullstellensatz,
 \[
 \sqrt I=I(\mathbf V(I)).
@@ -56,13 +62,20 @@ the ideal of the variety is exactly
 \[
 I(\{(2,3)\})=(x-2,y-3)=\mathfrak m.
 \]
+
 :::
 
-<1>2. There exists $N\ge1$ such that
+:::
+
+::: {.pf-step #s2}
+
+There exists $N\ge1$ such that
 \[
 \mathfrak m^N\subseteq I.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $x-2,y-3\in\sqrt I$, there exist integers $a,b\ge1$ such that
 \[
 (x-2)^a\in I,
@@ -85,11 +98,18 @@ a contradiction. Hence every degree-$N$ monomial in the generators of $\mathfrak
 \[
 \mathfrak m^N\subseteq I.
 \]
+
 :::
 
-<1>3. The quotient $R/I$ is finite-dimensional over $\mathbb C$.
-::: {.proof}
-By <1>2 there is a surjection
+:::
+
+::: pf-step
+
+The quotient $R/I$ is finite-dimensional over $\mathbb C$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} there is a surjection
 \[
 R/\mathfrak m^N\twoheadrightarrow R/I.
 \]
@@ -105,10 +125,17 @@ u^iv^j,
 \qquad i+j<N.
 \]
 Therefore $R/\mathfrak m^N$ is finite-dimensional, and so is its quotient $R/I$. This proves part (a).
+
 :::
 
-<1>4. The analogous statement over $\mathbb R$ is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+The analogous statement over $\mathbb R$ is false.
+
+::: pf-proof
+
 Take
 \[
 J=\bigl((x-2)^2+(y-3)^2\bigr)\subseteq\mathbb R[x,y].
@@ -136,5 +163,11 @@ Viewing both sides as polynomials in $y-3$ over the domain $\mathbb R[x-2]$, the
 J\cap\mathbb R[x-2]=0,
 \]
 which proves the asserted linear independence. Hence the real analogue fails. This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

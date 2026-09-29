@@ -65,11 +65,16 @@ These are the [[PR-ULJAJ|Blaschke-factor automorphisms]], with the
 opposite sign convention. In particular, $b_a(a)=0$, and $a$ is the
 only zero of $b_a$ in $\DD$.
 
-<1>1. If $h:\DD\to\CC$ is analytic, $\abs{h}\le1$, and $h(a)=0$
+::: pf
+
+::: {.pf-step #s1}
+
+If $h:\DD\to\CC$ is analytic, $\abs{h}\le1$, and $h(a)=0$
 for $a\in(-1,1)$, then $h/b_a$ extends analytically to $\DD$ and its
 extension has modulus at most $1$.
 
-::: {.proof}
+::: pf-proof
+
 For $0<t<1$, define $H_t:\DD\to\DD$ by
 $H_t(w)\coloneqq t h(b_a^{-1}(w))$. This function is analytic and
 $H_t(0)=t h(a)=0$. The [[T-DAETF|Schwarz lemma]] gives
@@ -88,13 +93,19 @@ $$
 $$
 This formula supplies an analytic extension at $a$, with value
 $(1-a^2)h'(a)$. The modulus bound at $a$ follows by continuity.
+
 :::
 
-<1>2. There is an analytic function $q_3:\DD\to\CC$ with
+:::
+
+::: {.pf-step #s2}
+
+There is an analytic function $q_3:\DD\to\CC$ with
 $\abs{q_3}\le1$ such that $f=b_0b_rb_{-r}q_3$ on $\DD$.
 
-::: {.proof}
-Apply step <1>1 to $h=f$ and $a=0$, and let $q_1$ be the analytic
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} to $h=f$ and $a=0$, and let $q_1$ be the analytic
 extension of $f/b_0=f/z$. Then $\abs{q_1}\le1$ and
 $$
 q_1(r)=\frac{f(r)}r=0,
@@ -103,25 +114,31 @@ q_1(-r)=\frac{f(-r)}{-r}=0,
 $$
 because $r\ne0$.
 
-Apply step <1>1 to $h=q_1$ and $a=r$, and let $q_2$ be the analytic
+Apply step [](#s1){.pf-ref} to $h=q_1$ and $a=r$, and let $q_2$ be the analytic
 extension of $q_1/b_r$. Then $\abs{q_2}\le1$. Since
 $$
 b_r(-r)=\frac{-2r}{1+r^2}\ne0,
 $$
 the quotient satisfies $q_2(-r)=q_1(-r)/b_r(-r)=0$.
 
-Apply step <1>1 to $h=q_2$ and $a=-r$, and let $q_3$ be the analytic
+Apply step [](#s1){.pf-ref} to $h=q_2$ and $a=-r$, and let $q_3$ be the analytic
 extension of $q_2/b_{-r}$. Then $\abs{q_3}\le1$. The identities
 $f=b_0q_1$, $q_1=b_rq_2$, and $q_2=b_{-r}q_3$ hold away from their
 respective removed zeros and extend there by continuity. Multiplying
 them gives $f=b_0b_rb_{-r}q_3$ throughout $\DD$.
+
 :::
 
-<1>3. For every $z\in\DD$,
+:::
+
+::: {.pf-step #s3}
+
+For every $z\in\DD$,
 $\abs{f(z)}\le\abs{z}\abs{(z^2-r^2)/(1-r^2z^2)}$.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 \abs{f(z)}
@@ -131,11 +148,17 @@ $$
 \end{aligned}
 $$
 The denominators are nonzero on $\DD$, since $0<r<1$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the asserted bound on the entire unit disk.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the asserted bound on the entire unit disk.
+
+:::
+
+:::
+
 :::

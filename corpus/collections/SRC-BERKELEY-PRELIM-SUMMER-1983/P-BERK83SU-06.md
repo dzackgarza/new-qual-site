@@ -41,12 +41,17 @@ $$
 b_i=\sum_{j=1}^n q_{ji}a_j.
 $$
 
-<1>1. The matrix $Q$ is orthogonal and
+::: pf
+
+::: {.pf-step #s1}
+
+The matrix $Q$ is orthogonal and
 $$
 \det Q=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $(a_i)$ is orthonormal,
 $$
 \inner{b_i}{b_k}
@@ -64,9 +69,14 @@ $$
 $$
 The two bases have the same orientation, so their change-of-basis
 determinant is positive. Hence $\det Q=1$.
+
 :::
 
-<1>2. Relative to the basis $(a_i)$, the vectors
+:::
+
+::: {.pf-step #s2}
+
+Relative to the basis $(a_i)$, the vectors
 $$
 c_i=a_i+2b_i
 $$
@@ -75,7 +85,8 @@ $$
 C=I+2Q.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using the definition of $Q$,
 $$
 \begin{aligned}
@@ -89,15 +100,21 @@ a_i+2b_i\\
 $$
 Thus the $i$th coordinate column of $c_i$ is the $i$th column of
 $I+2Q$.
+
 :::
 
-<1>3. Every complex eigenvalue $\lambda$ of $Q$ satisfies
+:::
+
+::: {.pf-step #s3}
+
+Every complex eigenvalue $\lambda$ of $Q$ satisfies
 $$
 \abs{\lambda}=1,
 $$
 and the nonreal eigenvalues occur in conjugate pairs.
 
-::: {.proof}
+::: pf-proof
+
 If $Qv=\lambda v$ for a nonzero $v\in\CC^n$, then orthogonality of
 $Q$ implies
 $$
@@ -116,14 +133,20 @@ $$
 so $\abs{\lambda}=1$. Since $Q$ has real entries, its characteristic
 polynomial has real coefficients, and therefore every nonreal root
 occurs together with its complex conjugate.
+
 :::
 
-<1>4. The multiplicity of the eigenvalue $-1$ of $Q$ is even.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The multiplicity of the eigenvalue $-1$ of $Q$ is even.
+
+::: pf-proof
+
 An orthogonal matrix is normal, hence diagonalizable over $\CC$.
 Its determinant is the product of its eigenvalues, counted with
-multiplicity. By step <1>3, every nonreal conjugate pair
+multiplicity. By step [](#s3){.pf-ref}, every nonreal conjugate pair
 $\lambda,\overline\lambda$ contributes
 $$
 \lambda\overline\lambda
@@ -132,19 +155,25 @@ $$
 =1
 $$
 to that product. The eigenvalue $1$ also contributes $1$. If $m$ is
-the multiplicity of $-1$, step <1>1 therefore gives
+the multiplicity of $-1$, step [](#s1){.pf-ref} therefore gives
 $$
 1=\det Q=(-1)^m.
 $$
 Thus $m$ is even.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \det(I+2Q)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $Q$ is diagonalizable over $\CC$, the eigenvalues of $I+2Q$
 are $1+2\lambda$, where $\lambda$ ranges over the eigenvalues of $Q$.
 For a nonreal conjugate pair
@@ -156,31 +185,43 @@ $$
 >0.
 $$
 An eigenvalue $\lambda=1$ contributes the positive factor $3$. An
-eigenvalue $\lambda=-1$ contributes the factor $-1$, and step <1>4
+eigenvalue $\lambda=-1$ contributes the factor $-1$, and step [](#s4){.pf-ref}
 shows that the number of these factors is even. Hence their total
 product is positive. Therefore
 $$
 \det(I+2Q)>0.
 $$
+
 :::
 
-<1>6. The vectors $(a_i+2b_i)_{i=1}^n$ form a basis with the same
+:::
+
+::: {.pf-step #s6}
+
+The vectors $(a_i+2b_i)_{i=1}^n$ form a basis with the same
 orientation as $(a_i)$.
 
-::: {.proof}
-By step <1>2, their coordinate matrix relative to $(a_i)$ is $I+2Q$.
-Step <1>5 gives
+::: pf-proof
+
+By step [](#s2){.pf-ref}, their coordinate matrix relative to $(a_i)$ is $I+2Q$.
+Step [](#s5){.pf-ref} gives
 $$
 \det(I+2Q)>0.
 $$
 In particular, this matrix is invertible, so its columns form a basis.
 Its positive determinant says precisely that this basis has the same
 orientation as $(a_i)$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

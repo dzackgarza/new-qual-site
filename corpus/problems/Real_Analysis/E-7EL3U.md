@@ -31,38 +31,68 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $g$ is continuous on $[a,b]$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$g$ is continuous on $[a,b]$.
+
+::: pf-proof
+
 $g$ is the uniform limit of the continuous functions $f_n'$.
+
 :::
 
-<1>2. For every $x \in [a,b]$, $f_n(x) = f_n(x_0) + \int_{x_0}^x f_n'(t) \, dt$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For every $x \in [a,b]$, $f_n(x) = f_n(x_0) + \int_{x_0}^x f_n'(t) \, dt$.
+
+::: pf-proof
+
 This is the fundamental theorem of calculus, since $f_n$ is continuously differentiable.
+
 :::
 
-<1>3. Let $c = \lim_n f_n(x_0)$ and $f(x) \coloneqq c + \int_{x_0}^x g(t)\,dt$. Then $f_n \to f$ uniformly on $[a,b]$.
+:::
 
-::: {.proof}
-The limit $c$ exists by hypothesis, and $f$ is defined because $g$ is continuous by step <1>1.
-By step <1>2, for every $x \in [a,b]$,
+::: {.pf-step #s3}
+
+Let $c = \lim_n f_n(x_0)$ and $f(x) \coloneqq c + \int_{x_0}^x g(t)\,dt$. Then $f_n \to f$ uniformly on $[a,b]$.
+
+::: pf-proof
+
+The limit $c$ exists by hypothesis, and $f$ is defined because $g$ is continuous by step [](#s1){.pf-ref}.
+By step [](#s2){.pf-ref}, for every $x \in [a,b]$,
 $$
 \abs{f_n(x) - f(x)} \leq \abs{f_n(x_0) - c} + \abs{\int_{x_0}^x (f_n'(t) - g(t))\,dt} \leq \abs{f_n(x_0) - c} + (b-a)\norm{f_n' - g}_\infty,
 $$
 and the right-hand side does not depend on $x$ and tends to $0$.
+
 :::
 
-<1>4. $f$ is differentiable and $f' = g$.
-
-::: {.proof}
-Since $g$ is continuous by step <1>1, the fundamental theorem of calculus applied to $f(x) = c + \int_{x_0}^x g(t)\,dt$ gives $f'(x) = g(x)$ for every $x \in [a,b]$. In particular $f \in C^1[a,b]$.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Step <1>3 gives $f_n \to f$ uniformly, and step <1>4 gives that $f$ is differentiable with $f' = g$.
+$f$ is differentiable and $f' = g$.
+
+::: pf-proof
+
+Since $g$ is continuous by step [](#s1){.pf-ref}, the fundamental theorem of calculus applied to $f(x) = c + \int_{x_0}^x g(t)\,dt$ gives $f'(x) = g(x)$ for every $x \in [a,b]$. In particular $f \in C^1[a,b]$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives $f_n \to f$ uniformly, and step [](#s4){.pf-ref} gives that $f$ is differentiable with $f' = g$.
+
+:::
+
+:::
+
 :::

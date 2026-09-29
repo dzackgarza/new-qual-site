@@ -30,8 +30,14 @@ Prove or disprove that $\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G
 ::: {.solution}
 The assertion is true.
 
-<1>1. Conjugating an inner automorphism by any automorphism gives another inner automorphism.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Conjugating an inner automorphism by any automorphism gives another inner automorphism.
+
+::: pf-proof
+
 For $g\in G$, let
 $$
 c_g(x)=gxg^{-1}
@@ -50,11 +56,18 @@ Hence
 $$
 \varphi c_g\varphi^{-1}=c_{\varphi(g)}\in\operatorname{Inn}(G).
 $$
+
 :::
 
-<1>2. Therefore $\operatorname{Inn}(G)$ is normal in $\operatorname{Aut}(G)$.
-::: {.proof}
-Step <1>1 shows that
+:::
+
+::: pf-step
+
+Therefore $\operatorname{Inn}(G)$ is normal in $\operatorname{Aut}(G)$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that
 $$
 \varphi\operatorname{Inn}(G)\varphi^{-1}
 \subseteq\operatorname{Inn}(G)
@@ -64,5 +77,11 @@ $\varphi^{-1}$ gives the reverse inclusion. Thus
 $$
 \boxed{\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G).}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

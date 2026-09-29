@@ -38,16 +38,30 @@ For the true statements give a brief reason and for the false statements give a 
 :::
 
 ::: {.solution}
-<1>1. Part (a) is true.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is true.
+
+::: pf-proof
+
 Let $A=\mathbb R\setminus E$ with $m(E)=0$. Every nonempty open interval has positive Lebesgue measure, so no nonempty open interval can be contained in $E$. Equivalently, every nonempty open interval meets $A$. Thus $A$ is dense in $\mathbb R$, and
 \[
 \boxed{\overline A=\mathbb R.}
 \]
+
 :::
 
-<1>2. Part (b) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is false.
+
+::: pf-proof
+
 Take
 \[
 E=\mathbb Q.
@@ -57,10 +71,17 @@ Then $E$ is Borel and has Lebesgue measure zero, but
 \overline E=\mathbb R.
 \]
 Hence the interior of $\overline E$ is all of $\mathbb R$, so $E$ is not nowhere dense.
+
 :::
 
-<1>3. Part (c) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is false.
+
+::: pf-proof
+
 Take
 \[
 X=\ell^2
@@ -74,10 +95,17 @@ be the subspace of finitely supported sequences. Then $E$ is a proper linear sub
 \overline E=X,
 \]
 so $E$ is not nowhere dense.
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 Suppose the subspace $E\subset X$ has nonempty interior. Then for some $x_0\in E$ and $r>0$,
 \[
 B(x_0,r)\subset E.
@@ -98,5 +126,11 @@ Thus
 \[
 \boxed{E=X.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

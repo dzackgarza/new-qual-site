@@ -37,10 +37,16 @@ TBT^{-1}=\begin{pmatrix}0&1\\1&0\end{pmatrix}.
 :::
 
 ::: {.solution}
-<1>1. The matrix $A$ is diagonalizable over $\RR$, with eigenvalues among
+
+::: pf
+
+::: {.pf-step #s1}
+
+The matrix $A$ is diagonalizable over $\RR$, with eigenvalues among
 $\{1,-1\}$.
 
-::: {.proof}
+::: pf-proof
+
 The relation
 $$
 A^2=I
@@ -51,27 +57,39 @@ t^2-1=(t-1)(t+1).
 $$
 This polynomial splits over $\RR$ with distinct roots, so $A$ is
 diagonalizable and its eigenvalues lie in $\{1,-1\}$.
+
 :::
 
-<1>2. Both $1$ and $-1$ occur as eigenvalues of $A$.
+:::
 
-::: {.proof}
+::: pf-step
+
+Both $1$ and $-1$ occur as eigenvalues of $A$.
+
+::: pf-proof
+
 If $A=I$, then
 $$
 AB+BA=2B=0,
 $$
 so $B=0$, contradicting $B^2=I$. The same contradiction follows if
-$A=-I$. Since step <1>1 makes $A$ diagonalizable with eigenvalues only
+$A=-I$. Since step [](#s1){.pf-ref} makes $A$ diagonalizable with eigenvalues only
 $\pm1$, it follows that both eigenvalues occur.
+
 :::
 
-<1>3. Choose a nonzero vector $v$ with
+:::
+
+::: {.pf-step #s3}
+
+Choose a nonzero vector $v$ with
 $$
 Av=v.
 $$
 Then $Bv$ is a nonzero eigenvector of $A$ with eigenvalue $-1$.
 
-::: {.proof}
+::: pf-proof
+
 The relation
 $$
 AB=-BA
@@ -85,21 +103,32 @@ A(Bv)
 -Bv.
 $$
 Moreover, $Bv\neq0$ because $B^2=I$ makes $B$ invertible.
+
 :::
 
-<1>4. The vectors
+:::
+
+::: {.pf-step #s4}
+
+The vectors
 $$
 v,\ Bv
 $$
 form a basis of $\RR^2$.
 
-::: {.proof}
-By step <1>3, they are nonzero eigenvectors of $A$ for the distinct
+::: pf-proof
+
+By step [](#s3){.pf-ref}, they are nonzero eigenvectors of $A$ for the distinct
 eigenvalues $1$ and $-1$. Hence they are linearly independent. Since the
 space has dimension $2$, they form a basis.
+
 :::
 
-<1>5. In the ordered basis $(v,Bv)$, the matrices of $A$ and $B$ are
+:::
+
+::: {.pf-step #s5}
+
+In the ordered basis $(v,Bv)$, the matrices of $A$ and $B$ are
 $$
 \begin{pmatrix}
 1&0\\
@@ -113,8 +142,9 @@ $$
 $$
 respectively.
 
-::: {.proof}
-For $A$, step <1>3 gives
+::: pf-proof
+
+For $A$, step [](#s3){.pf-ref} gives
 $$
 Av=v,
 \qquad
@@ -134,12 +164,18 @@ v
 $$
 is the first basis vector. These coordinate actions give the two displayed
 matrices.
+
 :::
 
-<1>6. There is an invertible real matrix $T$ satisfying the two required
+:::
+
+::: {.pf-step #s6}
+
+There is an invertible real matrix $T$ satisfying the two required
 conjugation identities.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 P=
@@ -149,7 +185,7 @@ v&Bv\\
 \vert&\vert
 \end{pmatrix}.
 $$
-Step <1>4 makes $P$ invertible. Step <1>5 says
+Step [](#s4){.pf-ref} makes $P$ invertible. Step [](#s5){.pf-ref} says
 $$
 P^{-1}AP
 =
@@ -172,11 +208,17 @@ $$
 T=P^{-1}
 $$
 gives exactly the required formulas.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 constructs the required real invertible matrix $T$.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} constructs the required real invertible matrix $T$.
+
+:::
+
+:::
+
 :::

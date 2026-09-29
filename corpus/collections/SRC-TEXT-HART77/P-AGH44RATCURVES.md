@@ -45,21 +45,33 @@ Thus $Y$ is a rational curve.
 :::
 
 ::: {.solution}
-<1>1. Every conic in $\PP^2$ is a rational curve.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every conic in $\PP^2$ is a rational curve.
+
+::: pf-proof
+
 By [[P-AGH31CONICS]], every projective conic is isomorphic to $\PP^1$.
 An isomorphism is in particular a birational equivalence.
 Hence every conic is rational, proving (a).
+
 :::
 
-<1>2. The cuspidal cubic
+:::
+
+::: {.pf-step #s2}
+
+The cuspidal cubic
 $$
 C=Z(y^2-x^3)\subseteq\AA^2
 $$
 has function field $K(C)\cong k(t)$.
 
-::: {.proof}
+::: pf-proof
+
 As in [[P-AGH317NORMAL]], its coordinate ring is
 $$
 A(C)\cong k[t^2,t^3]
@@ -85,9 +97,14 @@ K(C)=k(t),
 $$
 a purely transcendental extension of $k$ of degree one.
 Hence $C$ is rational, proving (b).
+
 :::
 
-<1>3. Projection from
+:::
+
+::: {.pf-step #s3}
+
+Projection from
 $$
 P=[0:0:1]
 $$
@@ -98,13 +115,19 @@ $$
 [x:y:z]\longmapsto[x:y].
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the coordinate form of projection from a point established in [[P-AGH314PROJPOINT]].
 On $Y$, the simultaneous equations $x=y=0$ give only the point $P$.
 Thus the displayed formula is a morphism on $Y\setminus\{P\}$ and represents the desired rational map.
+
 :::
 
-<1>4. On the dense open subset
+:::
+
+::: {.pf-step #s4}
+
+On the dense open subset
 $$
 U=Y\cap D_+(x),
 $$
@@ -113,7 +136,8 @@ $$
 V=\{[1:t]\in\PP^1:t^2\ne1\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $[x:y:z]\in U$, then $z\ne0$: otherwise the cubic equation with $z=0$ would give $x^3=0$, contradicting $x\ne0$.
 Normalize to $z=1$ and put
 $$
@@ -153,21 +177,33 @@ $$
 $$
 while the formulas derived above show $\psi(\varphi(Q))=Q$ for $Q\in U$.
 Thus $U\cong V$.
+
 :::
 
-<1>5. The projection $\varphi$ is birational and $Y$ is rational.
+:::
 
-::: {.proof}
-Step <1>4 gives an isomorphism between nonempty open subsets of $Y$ and $\PP^1$.
+::: {.pf-step #s5}
+
+The projection $\varphi$ is birational and $Y$ is rational.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives an isomorphism between nonempty open subsets of $Y$ and $\PP^1$.
 Therefore $\varphi$ is a birational map.
 Hence $Y$ is a rational curve, proving (c).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, and <1>3--<1>5 prove (a), (b), and (c), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (a), (b), and (c), respectively.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="The word nodal in characteristic two"}

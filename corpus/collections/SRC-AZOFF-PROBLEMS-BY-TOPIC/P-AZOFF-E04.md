@@ -40,9 +40,15 @@ d) $\begin{array} { r } { f ( \frac { 1 } { n } ) = \frac { n - 2 } { n - 1 } } 
 :::
 
 ::: {.solution}
-<1>1. Part (a) is impossible.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Part (a) is impossible.
+
+::: pf-proof
+
 The points $1/n$ converge to $0$, which lies in the open unit disk. Since an
 analytic function is continuous,
 $$
@@ -53,11 +59,17 @@ $$
 f(1/n)=(-1)^n
 $$
 do not converge. Hence no analytic function on the disk can satisfy (a).
+
 :::
 
-<1>2. Part (b) is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Part (b) is impossible.
+
+::: pf-proof
+
 For every odd integer $n>1$, the prescription gives
 $$
 f(1/n)=0.
@@ -71,11 +83,17 @@ on the disk. This contradicts the values prescribed for even $n$, since
 $$
 f(1/n)=e^{-n}\neq0.
 $$
+
 :::
 
-<1>3. Part (c) is impossible.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Part (c) is impossible.
+
+::: pf-proof
+
 Since
 $$
 \frac1{n^2}\longrightarrow0
@@ -97,16 +115,22 @@ $$
 n\longrightarrow\infty.
 $$
 Thus the derivative at $0$ cannot exist, a contradiction.
+
 :::
 
-<1>4. Part (d) is possible; one such function is
+:::
+
+::: {.pf-step #s4}
+
+Part (d) is possible; one such function is
 $$
 \boxed{
 f(z)=\frac{1-2z}{1-z}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{z}<1$, the denominator $1-z$ is nonzero, so this rational function
 is analytic on the open unit disk. For every integer $n>1$,
 $$
@@ -119,18 +143,30 @@ f(1/n)
 \end{aligned}
 $$
 Hence it realizes exactly the values in (d).
+
 :::
 
-<1>5. Exactly part (d) is possible.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 rule out (a)--(c), while step <1>4 constructs an analytic
+::: {.pf-step #s5}
+
+Exactly part (d) is possible.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} rule out (a)--(c), while step [](#s4){.pf-ref} constructs an analytic
 function satisfying (d).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested classification.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested classification.
+
+:::
+
+:::
+
 :::

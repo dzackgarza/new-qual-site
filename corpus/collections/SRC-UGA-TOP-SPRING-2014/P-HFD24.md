@@ -34,8 +34,15 @@ Show that $X$ is Hausdorff if and only if $\Delta$ is closed in $X\times X$.
 :::
 
 ::: {.solution}
-<1>1. If $X$ is Hausdorff, then $\Delta$ is closed in $X\times X$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $X$ is Hausdorff, then $\Delta$ is closed in $X\times X$.
+
+::: pf-proof
+
 It is enough to prove that
 \[
 (X\times X)\setminus\Delta
@@ -63,10 +70,17 @@ Hence
 (x,y)\in U\times V\subseteq(X\times X)\setminus\Delta.
 \]
 Every point of the complement therefore has an open neighborhood contained in the complement, so the complement is open and $\Delta$ is closed.
+
 :::
 
-<1>2. If $\Delta$ is closed in $X\times X$, then $X$ is Hausdorff.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $\Delta$ is closed in $X\times X$, then $X$ is Hausdorff.
+
+::: pf-proof
+
 Let $x,y\in X$ with $x\ne y$.
 Then
 \[
@@ -92,13 +106,26 @@ U\times V\subseteq(X\times X)\setminus\Delta.
 \]
 Thus $U$ and $V$ are disjoint open neighborhoods of $x$ and $y$.
 Since every pair of distinct points admits such neighborhoods, $X$ is Hausdorff.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{X\text{ is Hausdorff}\iff\Delta\text{ is closed in }X\times X}.
 \]
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

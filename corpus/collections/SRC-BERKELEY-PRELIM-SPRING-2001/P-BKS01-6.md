@@ -28,14 +28,20 @@ Let $S$ be a real special orthogonal $n\times n$ matrix: $S^TS=I$ and $\det S=1$
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \det(S-I)
 =
 \det(I-S).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $S$ is orthogonal,
 $$
 S^{-1}=S^T.
@@ -56,21 +62,27 @@ $$
 \det(I-S).
 \end{aligned}
 $$
+
 :::
 
-<1>2. If $n$ is odd, then
+:::
+
+::: {.pf-step #s2}
+
+If $n$ is odd, then
 $$
 \det(S-I)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $n$,
 $$
 \det(I-S)
 =
 (-1)^n\det(S-I).
 $$
-Combining this with step <1>1 gives
+Combining this with step [](#s1){.pf-ref} gives
 $$
 \det(S-I)
 =
@@ -83,26 +95,38 @@ $$
 -\det(S-I),
 $$
 so $2\det(S-I)=0$. Over $\RR$, this implies $\det(S-I)=0$.
+
 :::
 
-<1>3. If $n$ is odd, then $1$ is an eigenvalue of $S$.
+:::
 
-::: {.proof}
-By step <1>2, $S-I$ is singular. Hence there exists a nonzero vector
+::: {.pf-step #s3}
+
+If $n$ is odd, then $1$ is an eigenvalue of $S$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $S-I$ is singular. Hence there exists a nonzero vector
 $v$ with
 $$
 (S-I)v=0,
 $$
 equivalently $Sv=v$.
+
 :::
 
-<1>4. If $n$ is even, the matrix
+:::
+
+::: {.pf-step #s4}
+
+If $n$ is even, the matrix
 $$
 S=-I_n
 $$
 is special orthogonal and has no eigenvalue $1$.
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 S^TS=(-I_n)^2=I_n.
@@ -116,11 +140,17 @@ $$
 $$
 because $n$ is even. Thus $S$ is special orthogonal. Its only
 eigenvalue is $-1$, so $1$ is not an eigenvalue.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part 1, and step <1>4 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part 1, and step [](#s4){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

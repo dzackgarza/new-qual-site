@@ -39,8 +39,15 @@ Show that the following are equivalent:
 :::
 
 ::: {.solution}
-<1>1. Identify the nullspace of the adjoint.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Identify the nullspace of the adjoint.
+
+::: pf-proof
+
 For $y\in H$,
 \[
 y\in\mathcal N(P^*)
@@ -59,10 +66,17 @@ Taking orthogonal complements and using $M^{\perp\perp}=\overline M$ yields
 \[
 \boxed{\overline{\mathcal R(P^*)}=\mathcal N(P)^\perp.}
 \]
+
 :::
 
-<1>2. Closed range of $P$ implies closed range of $P^*$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Closed range of $P$ implies closed range of $P^*$.
+
+::: pf-proof
+
 Assume $\mathcal R(P)$ is closed. The restriction
 \[
 P:\mathcal N(P)^\perp\longrightarrow\mathcal R(P)
@@ -109,10 +123,17 @@ Together with Step 1 this gives
 \mathcal R(P^*)=\mathcal N(P)^\perp,
 \]
 which is closed.
+
 :::
 
-<1>3. Self-adjoint idempotents satisfy the best-approximation property.
-::: {.proof}
+:::
+
+::: pf-step
+
+Self-adjoint idempotents satisfy the best-approximation property.
+
+::: pf-proof
+
 Assume $P^2=P$ and $P=P^*$. Since
 \[
 \mathcal R(P)=\mathcal N(I-P),
@@ -138,10 +159,17 @@ Hence
 \[
 \|x-Px\|=\inf_{y\in\mathcal R(P)}\|x-y\|.
 \]
+
 :::
 
-<1>4. The best-approximation property forces self-adjointness.
-::: {.proof}
+:::
+
+::: pf-step
+
+The best-approximation property forces self-adjointness.
+
+::: pf-proof
+
 Assume (i). Since $Px\in\mathcal R(P)$ is a best approximation to $x$ from the closed subspace $\mathcal R(P)$, the Hilbert-space projection theorem gives
 \[
 x-Px\perp\mathcal R(P)
@@ -162,5 +190,11 @@ and $P$ is precisely the orthogonal projection onto $\mathcal R(P)$. Orthogonal 
 \[
 \boxed{P=P^*.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

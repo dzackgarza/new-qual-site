@@ -41,10 +41,15 @@ $$
 Thus $\Gamma$ consists of the segment from $2i$ to $-2i$ and the semicircle
 $2e^{i\theta}$, $-\pi/2\leq\theta\leq\pi/2$.
 
-<1>1. The polynomial $p$ has no zero on $\Gamma$, and every zero of $p$
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomial $p$ has no zero on $\Gamma$, and every zero of $p$
 with positive real part lies in $D$.
 
-::: {.proof}
+::: pf-proof
+
 If $p(z)=0$ and $\abs{z}\geq2$, then
 $$
 \abs{z}^4
@@ -66,17 +71,23 @@ p(iy)
 $$
 whose real part is $y^4+1>0$. Thus $p$ has no zero on the diameter of
 $\Gamma$. The preceding modulus estimate excludes zeros on the semicircle.
+
 :::
 
-<1>2. Along the diameter of $\Gamma$, the change in a continuous argument
+:::
+
+::: {.pf-step #s2}
+
+Along the diameter of $\Gamma$, the change in a continuous argument
 of $p$ is $2\alpha$, where
 $$
 \alpha\coloneqq\arctan\frac{8}{17}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Parametrize the diameter by $z=iy$ with $y$ decreasing from $2$ to $-2$.
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 p(iy)=1+y^4-iy^3
 $$
@@ -89,12 +100,18 @@ p(-2i)=17+8i.
 $$
 Their arguments are $-\alpha$ and $\alpha$, respectively. Hence the change
 is $2\alpha$.
+
 :::
 
-<1>3. Along the semicircle of $\Gamma$, the change in a continuous
+:::
+
+::: {.pf-step #s3}
+
+Along the semicircle of $\Gamma$, the change in a continuous
 argument of $p$ is $4\pi-2\alpha$.
 
-::: {.proof}
+::: pf-proof
+
 For $z=2e^{i\theta}$ with $-\pi/2\leq\theta\leq\pi/2$,
 $$
 p(z)
@@ -125,29 +142,41 @@ so the change in the argument of $u$ is $-2\alpha$.
 Meanwhile, as $\theta$ increases from $-\pi/2$ to $\pi/2$, the argument of
 $e^{4i\theta}$ increases by $4\pi$. Therefore the total change in the
 argument of $p$ along the semicircle is $4\pi-2\alpha$.
+
 :::
 
-<1>4. The polynomial $p$ has exactly two zeros in the open right
+:::
+
+::: {.pf-step #s4}
+
+The polynomial $p$ has exactly two zeros in the open right
 half-plane, counted with multiplicity.
 
-::: {.proof}
-By steps <1>2 and <1>3, the total change in the argument of $p$ along
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the total change in the argument of $p$ along
 $\Gamma$ is
 $$
 2\alpha+(4\pi-2\alpha)=4\pi.
 $$
-By step <1>1, $p$ has no zero on $\Gamma$. The argument principle therefore
+By step [](#s1){.pf-ref}, $p$ has no zero on $\Gamma$. The argument principle therefore
 gives
 $$
 \frac{4\pi}{2\pi}=2
 $$
-zeros in $D$, counted with multiplicity. Step <1>1 shows that these are
+zeros in $D$, counted with multiplicity. Step [](#s1){.pf-ref} shows that these are
 exactly the zeros of $p$ with positive real part.
+
 :::
 
-<1>5. The first quadrant contains exactly $\boxed{1}$ zero of $p$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The first quadrant contains exactly $\boxed{1}$ zero of $p$.
+
+::: pf-proof
+
 The polynomial $p$ has real coefficients, so its nonreal zeros occur in
 complex-conjugate pairs with the same multiplicity. It has no positive real
 zero because
@@ -155,14 +184,20 @@ $$
 p(x)=x^4+x^3+1>0
 \qquad(x>0).
 $$
-Hence the two zeros in the open right half-plane counted in step <1>4 form
+Hence the two zeros in the open right half-plane counted in step [](#s4){.pf-ref} form
 one conjugate pair: one lies in the first quadrant and the other in the
 fourth quadrant. Thus exactly one zero lies in the first quadrant.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

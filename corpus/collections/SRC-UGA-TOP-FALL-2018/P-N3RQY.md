@@ -46,8 +46,14 @@ Then $X=A\cup B$.
 Choose a CW structure on $X$ in which $A$ and $B$ are subcomplexes, subdividing along the equator and the two poles; equivalently, use small open regular neighborhoods of these subspaces.
 Thus the Mayer--Vietoris sequence applies to this decomposition.
 
-<1>1. The space $A$ is contractible.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The space $A$ is contractible.
+
+::: pf-proof
+
 Scalar contraction gives a homotopy
 \[
 H:A\times[0,1]\longrightarrow A,
@@ -64,9 +70,14 @@ H_i(A;\ZZ)\cong
 0,&i>0.
 \end{cases}
 \]
+
 :::
 
-<1>2. The intersection $A\cap B$ is the disjoint union of the equator and the north and south poles:
+:::
+
+::: {.pf-step #s2}
+
+The intersection $A\cap B$ is the disjoint union of the equator and the north and south poles:
 \[
 A\cap B
 =E\amalg\{N\}\amalg\{S\},
@@ -82,7 +93,9 @@ H_i(A\cap B;\ZZ)\cong
 0,&i\ge2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The plane $P$ meets the unit sphere in
 \[
 E=\{(x,y,0):x^2+y^2=1\}\cong S^1,
@@ -95,13 +108,20 @@ S=(0,0,-1).
 \]
 These three pieces are pairwise disjoint and are exactly the intersection.
 The displayed homology follows from the homology of a circle and of a three-component space.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 H_2(X;\ZZ)\cong\ZZ^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 H_2(A)=0,
@@ -132,13 +152,20 @@ Because the quotient group $\ZZ$ is free, the short exact sequence splits, so
 \[
 H_2(X;\ZZ)\cong\ZZ^2.
 \]
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 \[
 H_1(X;\ZZ)\cong\ZZ^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The degree-$1$ and degree-$0$ part of the Mayer--Vietoris sequence is
 \[
 0
@@ -152,11 +179,11 @@ H_0(A)\oplus H_0(B)
 H_0(X)
 \longrightarrow0.
 \]
-By <1>1 and connectedness of $B=S^2$,
+By step [](#s1){.pf-ref} and connectedness of $B=S^2$,
 \[
 H_0(A)\oplus H_0(B)\cong\ZZ^2,
 \]
-whereas <1>2 gives
+whereas step [](#s2){.pf-ref} gives
 \[
 H_0(A\cap B)\cong\ZZ^3.
 \]
@@ -175,9 +202,14 @@ Exactness gives
 \[
 H_1(X;\ZZ)\cong\ker\psi\cong\ZZ^2.
 \]
+
 :::
 
-<1>5. The remaining homology groups are
+:::
+
+::: {.pf-step #s5}
+
+The remaining homology groups are
 \[
 H_0(X;\ZZ)\cong\ZZ
 \]
@@ -186,7 +218,9 @@ and
 H_i(X;\ZZ)=0
 \qquad(i\ge3).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The space $X$ is path connected because both $A$ and $B$ are path connected and
 \[
 A\cap B\neq\varnothing.
@@ -201,9 +235,14 @@ H_i(B),
 H_{i-1}(A\cap B)
 \]
 all vanish, so Mayer--Vietoris gives $H_i(X)=0$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 H_i(X;\ZZ)\cong
@@ -213,7 +252,15 @@ H_i(X;\ZZ)\cong
 0,&i\ge3.
 \end{cases}}
 \]
-::: {.proof}
-Combine <1>3, <1>4, and <1>5.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

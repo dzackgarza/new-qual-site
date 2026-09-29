@@ -34,8 +34,15 @@ Suppose that $G$ is a finite group that has a normal subgroup $N$ with the follo
 :::
 
 ::: {.solution}
-<1>1. If $N$ is cyclic, then conjugation by $G$ acts trivially on $N$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $N$ is cyclic, then conjugation by $G$ acts trivially on $N$.
+
+::: pf-proof
+
 Because $N\trianglelefteq G$, conjugation defines a homomorphism
 \[
 c:G\longrightarrow \operatorname{Aut}(N).
@@ -64,16 +71,23 @@ forces $|\operatorname{im}\bar c|=1$. Thus every element of $G$ centralizes $N$,
 \[
 N\subseteq Z(G).
 \]
+
 :::
 
-<1>2. If $N$ is cyclic, then $G$ is abelian.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $N$ is cyclic, then $G$ is abelian.
+
+::: pf-proof
+
 Choose $g\in G$ such that $gN$ generates the cyclic group $G/N$. Every element of $G$ has the form
 \[
 g^r a,
 \qquad a\in N.
 \]
-By <1>1, $N\subseteq Z(G)$. Hence for $a,b\in N$,
+By step [](#s1){.pf-ref}, $N\subseteq Z(G)$. Hence for $a,b\in N$,
 \[
 (g^r a)(g^s b)
 =g^{r+s}ab
@@ -81,16 +95,23 @@ By <1>1, $N\subseteq Z(G)$. Hence for $a,b\in N$,
 =(g^s b)(g^r a).
 \]
 Thus every pair of elements of $G$ commutes, so $G$ is abelian. This proves part (1).
+
 :::
 
-<1>3. The pair
+:::
+
+::: pf-step
+
+The pair
 \[
 G=A_4,
 \qquad
 N=\{1,(12)(34),(13)(24),(14)(23)\}
 \]
 is an example for part (2).
-::: {.proof}
+
+::: pf-proof
+
 The subgroup $N$ is the Klein four group, so it is abelian of order
 \[
 n=4.
@@ -114,5 +135,11 @@ Finally, $A_4$ is nonabelian; for example
 (123)(124)\ne(124)(123).
 \]
 Thus all hypotheses are satisfied, $N$ is abelian, and $G$ is not abelian.
+
 :::
+
+:::
+
+:::
+
 :::

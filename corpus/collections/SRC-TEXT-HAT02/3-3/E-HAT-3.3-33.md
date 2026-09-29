@@ -23,38 +23,87 @@ Show that if $M$ is a compact contractible $n$-manifold then $\partial M$ is a h
 :::
 
 ::: {.solution}
-<1>1. $M$ contractible implies $H_i(M)=0$ for $i>0$, $H_0=\ZZ$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$M$ contractible implies $H_i(M)=0$ for $i>0$, $H_0=\ZZ$.
+
+::: pf-proof
+
 contractible.
+
 :::
 
-<1>2. Lefschetz duality: $H_i(M,\partial M)\cong H^{n-i}(M)=0$ for $i<n$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Lefschetz duality: $H_i(M,\partial M)\cong H^{n-i}(M)=0$ for $i<n$.
+
+::: pf-proof
+
 duality for compact $n$-manifold.
+
 :::
 
-<1>3. Long exact sequence of pair $(M,\partial M)$: $\cdots\to H_i(\partial M)\to H_i(M)\to H_i(M,\partial M)\to\cdots$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Long exact sequence of pair $(M,\partial M)$: $\cdots\to H_i(\partial M)\to H_i(M)\to H_i(M,\partial M)\to\cdots$.
+
+::: pf-proof
+
 LES.
+
 :::
 
-<1>4. For $i<n-1$, $H_i(M,\partial M)=0$ and $H_i(M)=0$, so $H_i(\partial M)=0$.
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. For $i=n-1$, $0\to H_{n-1}(\partial M)\to0\to\ZZ\to H_{n-2}(\partial M)\to0$ gives $H_{n-1}(\partial M)\cong\ZZ$.
-::: {.proof}
-<1>3 with $H_n(M,\partial M)\cong\ZZ$, $H_n(M)=0$.
+::: {.pf-step #s4}
+
+For $i<n-1$, $H_i(M,\partial M)=0$ and $H_i(M)=0$, so $H_i(\partial M)=0$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
 
-<1>6. Hence $H_i(\partial M)\cong H_i(S^{n-1})$.
-::: {.proof}
-<1>4 and <1>5.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+::: {.pf-step #s5}
+
+For $i=n-1$, $0\to H_{n-1}(\partial M)\to0\to\ZZ\to H_{n-2}(\partial M)\to0$ gives $H_{n-1}(\partial M)\cong\ZZ$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} with $H_n(M,\partial M)\cong\ZZ$, $H_n(M)=0$.
+
 :::
+
+:::
+
+::: {.pf-step #s6}
+
+Hence $H_i(\partial M)\cong H_i(S^{n-1})$.
+
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

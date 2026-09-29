@@ -27,10 +27,16 @@ Find all intermediate fields in the extension $\mathbb Q(\alpha,i)/\mathbb Q$.
 Show that every element of $K$ has a unique $p$th root in $K$.
 :::
 
-
 ::: {.solution}
-<1>1. The extension \(L=\mathbb Q(\alpha,i)\) of \(\mathbb Q\) has exactly ten intermediate fields, listed in the box at the end of this step.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The extension \(L=\mathbb Q(\alpha,i)\) of \(\mathbb Q\) has exactly ten intermediate fields, listed in the box at the end of this step.
+
+::: pf-proof
+
 The polynomial \(x^4-2\) is irreducible over \(\mathbb Q\) by Eisenstein at \(2\), so
 \[
 [\mathbb Q(\alpha):\mathbb Q]=4.
@@ -134,10 +140,17 @@ Together with the fixed fields of the whole group and the trivial subgroup, the 
 \mathbb Q(\alpha,i).
 \end{gathered}}
 \]
+
 :::
 
-<1>2. Every element of a finite field \(K\) of order \(p^n\) has a unique \(p\)-th root in \(K\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Every element of a finite field \(K\) of order \(p^n\) has a unique \(p\)-th root in \(K\).
+
+::: pf-proof
+
 Consider the Frobenius map
 \[
 F:K\longrightarrow K,
@@ -163,5 +176,11 @@ because every \(a\in K\) satisfies \(a^{p^n}=a\), and hence
 \left(a^{p^{n-1}}\right)^p=a^{p^n}=a.
 \]
 Uniqueness follows from injectivity of Frobenius.
+
 :::
+
+:::
+
+:::
+
 :::

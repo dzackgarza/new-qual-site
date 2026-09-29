@@ -36,8 +36,14 @@ audit:
 ::: {.solution}
 It is enough to prove the general assertion in part (iii).
 
-<1>1. Determine the order of a Sylow $p$-subgroup of $S_{np}$ when $p>n$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Determine the order of a Sylow $p$-subgroup of $S_{np}$ when $p>n$.
+
+::: pf-proof
+
 Because $n<p$,
 $$
 np<p^2.
@@ -53,10 +59,17 @@ Therefore a Sylow $p$-subgroup $P$ of $S_{np}$ has order
 $$
 \boxed{|P|=p^n.}
 $$
+
 :::
 
-<1>2. Every nontrivial $P$-orbit on the $np$ letters has size exactly $p$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every nontrivial $P$-orbit on the $np$ letters has size exactly $p$.
+
+::: pf-proof
+
 Let $\Omega$ be the set of $np$ letters on which $S_{np}$ acts. Since $P$ is
 a $p$-group, every orbit size is a power of $p$. But
 $$
@@ -67,10 +80,17 @@ either
 $$
 1\quad\text{or}\quad p.
 $$
+
 :::
 
-<1>3. The action on each nontrivial orbit has cyclic image of order $p$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The action on each nontrivial orbit has cyclic image of order $p$.
+
+::: pf-proof
+
 Let $O$ be a $P$-orbit of size $p$. Restriction of permutations gives a
 homomorphism
 $$
@@ -86,10 +106,17 @@ $$
 |\rho_O(P)|=p.
 $$
 Thus $\rho_O(P)$ is cyclic.
+
 :::
 
-<1>4. There are exactly $n$ nontrivial orbits, and $P$ embeds in their product action.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+There are exactly $n$ nontrivial orbits, and $P$ embeds in their product action.
+
+::: pf-proof
+
 Suppose there are $k$ nontrivial orbits
 $$
 O_1,\ldots,O_k.
@@ -108,11 +135,11 @@ nontrivial orbit. It also fixes every point in every singleton orbit by
 definition. Hence it fixes all $np$ letters, so it is the identity
 permutation. Thus $\rho$ is injective.
 
-Each factor on the right has order $p$ by step <1>3, so
+Each factor on the right has order $p$ by step [](#s3){.pf-ref}, so
 $$
 |P|\le p^k.
 $$
-Using step <1>1,
+Using step [](#s1){.pf-ref},
 $$
 p^n\le p^k.
 $$
@@ -120,11 +147,18 @@ Therefore $n\le k$. Combined with $k\le n$, this gives
 $$
 k=n.
 $$
+
 :::
 
-<1>5. Conclude that $P$ is abelian.
-::: {.proof}
-By step <1>4, $P$ embeds in a direct product of $n$ cyclic groups of order
+:::
+
+::: pf-step
+
+Conclude that $P$ is abelian.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $P$ embeds in a direct product of $n$ cyclic groups of order
 $p$:
 $$
 P\hookrightarrow C_p^n.
@@ -137,7 +171,13 @@ $$
 
 Taking $n=2$ gives part (i) for $p>2$, and taking $n=3$ gives part (ii) for
 $p>3$.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

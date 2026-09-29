@@ -44,12 +44,18 @@ b. Show that the Euler characteristic of $M \times N$ is the product of the Eule
 ::: {.solution}
 For each $i,j\ge0$, let $c_i(M)$ and $c_j(N)$ denote the numbers of $i$-cells of $M$ and $j$-cells of $N$, respectively.
 
-<1>1. For every $i$-cell $e^i_\alpha\subset M$ and every $j$-cell $e^j_\beta\subset N$, the product
+::: pf
+
+::: {.pf-step #s1}
+
+For every $i$-cell $e^i_\alpha\subset M$ and every $j$-cell $e^j_\beta\subset N$, the product
 \[
 e^i_\alpha\times e^j_\beta
 \]
 is an $(i+j)$-cell of $M\times N$.
-::: {.proof}
+
+::: pf-proof
+
 Choose characteristic maps
 \[
 \varphi_\alpha:D^i\longrightarrow M,
@@ -81,44 +87,65 @@ Moreover,
 \]
 and the product characteristic map sends this boundary into products in which at least one factor lies in a lower skeleton.
 Thus these product cells attach along lower-dimensional product cells.
+
 :::
 
-<1>2. The product cells in <1>1 form a CW structure on $M\times N$, with
+:::
+
+::: {.pf-step #s2}
+
+The product cells in step [](#s1){.pf-ref} form a CW structure on $M\times N$, with
 \[
 (M\times N)^n
 =
 \bigcup_{i+j\le n} M^i\times N^j.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The open cells of $M$ partition $M$, and the open cells of $N$ partition $N$.
 Hence the products
 \[
 e^i_\alpha\times e^j_\beta
 \]
 partition $M\times N$.
-By <1>1 each is an open cell of dimension $i+j$, attached to the union of cells of smaller total dimension.
+By step [](#s1){.pf-ref} each is an open cell of dimension $i+j$, attached to the union of cells of smaller total dimension.
 
 Because $M$ and $N$ are finite CW complexes, only finitely many such cells occur.
 Hence the weak topology determined by these cells agrees with the ordinary product topology, so this is a CW structure on the given topological product.
+
 :::
 
-<1>3. The number of $n$-cells in this product CW structure is
+:::
+
+::: {.pf-step #s3}
+
+The number of $n$-cells in this product CW structure is
 \[
 c_n(M\times N)
 =
 \sum_{i+j=n}c_i(M)c_j(N).
 \]
-::: {.proof}
-By <1>1--<1>2, an $n$-cell is exactly a product of an $i$-cell of $M$ and a $j$-cell of $N$ with $i+j=n$.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, an $n$-cell is exactly a product of an $i$-cell of $M$ and a $j$-cell of $N$ with $i+j=n$.
 There are $c_i(M)c_j(N)$ such pairs for fixed $(i,j)$, and summing over $i+j=n$ gives the formula.
+
 :::
 
-<1>4. The Euler characteristic satisfies
+:::
+
+::: pf-step
+
+The Euler characteristic satisfies
 \[
 \boxed{\chi(M\times N)=\chi(M)\chi(N)}.
 \]
-::: {.proof}
-Using <1>3 and the definition of Euler characteristic for a finite CW complex,
+
+::: pf-proof
+
+Using step [](#s3){.pf-ref} and the definition of Euler characteristic for a finite CW complex,
 \[
 \begin{aligned}
 \chi(M\times N)
@@ -131,5 +158,11 @@ Using <1>3 and the definition of Euler characteristic for a finite CW complex,
 \end{aligned}
 \]
 All sums are finite because $M$ and $N$ are finite CW complexes.
+
 :::
+
+:::
+
+:::
+
 :::

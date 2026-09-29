@@ -39,9 +39,14 @@ B(u)\coloneqq\int_s^u b(v)\,dv,
 y(u)\coloneqq x(u)e^{-B(u)}.
 $$
 
-<1>1. The function $y$ is nonincreasing on $[s,\infty)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The function $y$ is nonincreasing on $[s,\infty)$.
+
+::: pf-proof
+
 Since $b$ is continuous,
 $$
 B'(u)=b(u).
@@ -59,9 +64,14 @@ $$
 x'(u)-b(u)x(u)\le0.
 $$
 Hence $y'(u)\le0$, so $y$ is nonincreasing.
+
 :::
 
-<1>2. If $s\le t$, then
+:::
+
+::: {.pf-step #s2}
+
+If $s\le t$, then
 $$
 \boxed{
 x(t)
@@ -70,8 +80,9 @@ x(s)\exp\left(\int_s^t b(u)\,du\right)
 }.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 y(t)\le y(s).
 $$
@@ -84,11 +95,17 @@ $$
 x(t)\le x(s)e^{B(t)}
 =x(s)\exp\left(\int_s^t b(u)\,du\right).
 $$
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 is the required inequality.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} is the required inequality.
+
+:::
+
+:::
+
 :::

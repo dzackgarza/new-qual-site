@@ -35,24 +35,41 @@ Let $R$ be a commutative ring.
 
 (3) The ring $\ZZ[x]$ is a UFD that is not a PID.
 
-<1>1. $\ZZ[x]$ is a UFD.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\ZZ[x]$ is a UFD.
+
+::: pf-proof
+
 $\ZZ$ is a UFD, and by Gauss's lemma a polynomial ring over a UFD is a UFD.
+
 :::
 
-<1>2. The ideal $I=(2,x)=\{h\in\ZZ[x]:h(0)\in2\ZZ\}$ is not principal.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The ideal $I=(2,x)=\{h\in\ZZ[x]:h(0)\in2\ZZ\}$ is not principal.
+
+::: pf-proof
+
 Every $2f+xg$ has constant term $2f(0)$, and conversely $h=h(0)+x\,\frac{h-h(0)}{x}$ with $h(0)$ even lies in $I$.
 Suppose $I=(d)$. Since $2\in(d)$, $d$ divides $2$, so $\deg d=0$ and $d=c\in\{\pm1,\pm2\}$.
 If $c=\pm1$, then $1\in I$, but $1$ has odd constant term.
 If $c=\pm2$, then $x\in(2)$, but the coefficient $1$ of $x$ is odd.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By steps <1>1 and <1>2, $\ZZ[x]$ is a UFD with a non-principal ideal.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $\ZZ[x]$ is a UFD with a non-principal ideal.
+
+:::
+
+:::
+
 :::

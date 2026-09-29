@@ -33,13 +33,18 @@ $$
 d\coloneqq\abs{\det C}.
 $$
 
-<1>1. If
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 d=1,
 $$
 then $B$ already has integer entries.
 
-::: {.proof}
+::: pf-proof
+
 The adjugate formula gives
 $$
 C^{-1}
@@ -52,9 +57,14 @@ $$
 B=C^{-1}AC
 $$
 is an integer matrix. Thus one may take $m=1$.
+
 :::
 
-<1>2. Suppose
+:::
+
+::: {.pf-step #s2}
+
+Suppose
 $$
 d>1.
 $$
@@ -63,7 +73,8 @@ $$
 \operatorname{GL}_n(\ZZ/d\ZZ).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A$ has integer entries and
 $$
 \det A=1.
@@ -71,38 +82,56 @@ $$
 Therefore its determinant is a unit modulo $d$, so its reduction is
 invertible over $\ZZ/d\ZZ$. The ring $\ZZ/d\ZZ$ is finite, hence so is
 the group of invertible $n\times n$ matrices over it.
+
 :::
 
-<1>3. There exists a positive integer $m$ such that
+:::
+
+::: {.pf-step #s3}
+
+There exists a positive integer $m$ such that
 $$
 A^m\equiv I\pmod d.
 $$
 
-::: {.proof}
-The element represented by $A$ in the finite group from step <1>2 has
+::: pf-proof
+
+The element represented by $A$ in the finite group from step [](#s2){.pf-ref} has
 finite order. Let $m$ be that order.
+
 :::
 
-<1>4. For this $m$, there is an integer matrix $D$ such that
+:::
+
+::: {.pf-step #s4}
+
+For this $m$, there is an integer matrix $D$ such that
 $$
 A^m=I+dD.
 $$
 
-::: {.proof}
-Step <1>3 says every entry of
+::: pf-proof
+
+Step [](#s3){.pf-ref} says every entry of
 $$
 A^m-I
 $$
 is divisible by $d$. Divide those entries by $d$.
+
 :::
 
-<1>5. The matrix
+:::
+
+::: {.pf-step #s5}
+
+The matrix
 $$
 dC^{-1}
 $$
 has integer entries.
 
-::: {.proof}
+::: pf-proof
+
 The adjugate formula gives
 $$
 C^{-1}
@@ -120,11 +149,17 @@ dC^{-1}
 \pm\operatorname{adj}(C),
 $$
 whose entries are integers because $C$ has integer entries.
+
 :::
 
-<1>6. The matrix $B^m$ has integer entries.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The matrix $B^m$ has integer entries.
+
+::: pf-proof
+
 Because
 $$
 B=C^{-1}AC,
@@ -135,7 +170,7 @@ B^m
 =
 C^{-1}A^mC.
 $$
-Using step <1>4,
+Using step [](#s4){.pf-ref},
 $$
 \begin{aligned}
 B^m
@@ -148,23 +183,35 @@ I+(dC^{-1})DC.
 \end{aligned}
 $$
 The matrices $dC^{-1}$, $D$, and $C$ all have integer entries by steps
-<1>4 and <1>5. Hence so does $B^m$.
+[](#s4){.pf-ref} and [](#s5){.pf-ref}. Hence so does $B^m$.
+
 :::
 
-<1>7. Therefore there exists a positive integer
+:::
+
+::: {.pf-step #s7}
+
+Therefore there exists a positive integer
 $$
 \boxed{m}
 $$
 such that every entry of $B^m$ is an integer.
 
-::: {.proof}
-Step <1>1 handles $d=1$. For $d>1$, choose the positive integer from step
-<1>3 and apply step <1>6.
+::: pf-proof
+
+Step [](#s1){.pf-ref} handles $d=1$. For $d>1$, choose the positive integer from step
+[](#s3){.pf-ref} and apply step [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required result.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required result.
+
+:::
+
+:::
+
 :::

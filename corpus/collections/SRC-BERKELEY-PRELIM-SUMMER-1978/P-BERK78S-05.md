@@ -33,7 +33,12 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. Under the substitution
+
+::: pf
+
+::: {.pf-step #s1}
+
+Under the substitution
 $$
 z=e^{i\theta},
 $$
@@ -46,7 +51,8 @@ $$
 e^{-i\theta}=\frac1z.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiating
 $$
 z=e^{i\theta}
@@ -63,17 +69,23 @@ also gives
 $$
 e^{-i\theta}=z^{-1}.
 $$
+
 :::
 
-<1>2. The integral is
+:::
+
+::: {.pf-step #s2}
+
+The integral is
 $$
 \frac1i
 \oint_{\abs{z}=1}
 \frac{e^z}{z^2}\,dz.
 $$
 
-::: {.proof}
-Using step <1>1,
+::: pf-proof
+
+Using step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 e^{e^{i\theta}-i\theta}\,d\theta
@@ -87,15 +99,21 @@ e^z\frac1z\frac{dz}{iz}\\
 $$
 As $\theta$ increases from $0$ to $2\pi$, the variable $z$ traverses the
 unit circle once counterclockwise.
+
 :::
 
-<1>3. The residue of
+:::
+
+::: {.pf-step #s3}
+
+The residue of
 $$
 \frac{e^z}{z^2}
 $$
 at $z=0$ is $1$.
 
-::: {.proof}
+::: pf-proof
+
 The exponential series is
 $$
 e^z
@@ -115,15 +133,21 @@ $$
 \cdots.
 $$
 The coefficient of $z^{-1}$ is $1$, which is the residue.
+
 :::
 
-<1>4. The value of the integral is
+:::
+
+::: {.pf-step #s4}
+
+The value of the integral is
 $$
 \boxed{2\pi}.
 $$
 
-::: {.proof}
-The only pole inside the unit circle is $z=0$. By steps <1>2--<1>3 and the
+::: pf-proof
+
+The only pole inside the unit circle is $z=0$. By steps [](#s2){.pf-ref} and [](#s3){.pf-ref} and the
 residue theorem,
 $$
 \begin{aligned}
@@ -140,11 +164,17 @@ $$
 2\pi.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

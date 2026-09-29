@@ -38,13 +38,27 @@ Let $(X, d)$ be a compact metric space.
 :::
 
 ::: {.solution}
-<1>1. (1) A metric space is \dfn{separable} if it contains a countable dense subset. A topological space is \dfn{second countable} if its topology has a countable base.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+(1) A metric space is \dfn{separable} if it contains a countable dense subset. A topological space is \dfn{second countable} if its topology has a countable base.
+
+::: pf-proof
+
 These are the definitions.
+
 :::
 
-<1>2. (2) $X$ is second countable.
-::: {.proof}
+:::
+
+::: pf-step
+
+(2) $X$ is second countable.
+
+::: pf-proof
+
 For every $n\ge1$, compactness gives a finite set
 \[
 D_n=\{x_{n,1},\dots,x_{n,N_n}\}\subset X
@@ -72,10 +86,17 @@ Then
 x\in B(q,r)\subset B(x,\varepsilon)\subset U.
 \]
 Hence $X$ is second countable.
+
 :::
 
-<1>3. (3) $C(X,\mathbb R)$ is separable in the uniform norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+(3) $C(X,\mathbb R)$ is separable in the uniform norm.
+
+::: pf-proof
+
 For each $q\in D$, define
 \[
 \rho_q(x):=d(x,q).
@@ -98,5 +119,11 @@ Therefore
 \[
 \boxed{C(X,\mathbb R)\text{ is separable in the uniform norm}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

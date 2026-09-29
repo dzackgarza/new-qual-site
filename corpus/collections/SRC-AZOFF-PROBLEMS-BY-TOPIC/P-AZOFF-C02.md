@@ -39,7 +39,11 @@ S=\{z\in\CC:0<\operatorname{Im}z<1\},
 \mathcal H=\{w\in\CC:\operatorname{Im}w>0\}.
 $$
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 E:S\longrightarrow\mathcal H,
 \qquad
@@ -47,7 +51,8 @@ E(z)=e^{\pi z},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 z=x+iy,
@@ -96,9 +101,14 @@ $$
 E'(z)=\pi e^{\pi z}\neq0
 $$
 on $S$, so $E$ is conformal.
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 $$
 C:\mathcal H\longrightarrow\DD,
 \qquad
@@ -106,7 +116,8 @@ C(w)=\frac{w-i}{w+i},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For $w=u+iv$ with $v>0$,
 $$
 \abs{w+i}^2-\abs{w-i}^2
@@ -133,9 +144,14 @@ $$
 C'(w)=\frac{2i}{(w+i)^2}\neq0
 $$
 on $\mathcal H$, so $C$ is conformal.
+
 :::
 
-<1>3. A conformal bijection from the strip $S$ onto the unit disk is
+:::
+
+::: {.pf-step #s3}
+
+A conformal bijection from the strip $S$ onto the unit disk is
 $$
 \boxed{
 T(z)
@@ -144,8 +160,9 @@ T(z)
 }.
 $$
 
-::: {.proof}
-By steps <1>1--<1>2,
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 $$
 T=C\circ E
 $$
@@ -154,11 +171,17 @@ $$
 S\xrightarrow{E}\mathcal H\xrightarrow{C}\DD.
 $$
 Therefore $T$ is a conformal bijection from $S$ onto $\DD$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested map.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested map.
+
+:::
+
+:::
+
 :::

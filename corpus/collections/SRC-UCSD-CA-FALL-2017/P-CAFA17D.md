@@ -25,38 +25,86 @@ Find the maximum value of $|f(2i)|$ for $f \in \mathcal{F}$.
 ::: {.solution}
 **Goal.** Find $\max_{f \in \mathcal F} |f(2i)|$.
 
-<1>1. Conjugate to the unit disk via the Cayley transform $\phi(z) = \frac{z - i}{z + i}$, which maps $\mathfrak h^+$ to $\DD$ and $i \mapsto 0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Conjugate to the unit disk via the Cayley transform $\phi(z) = \frac{z - i}{z + i}$, which maps $\mathfrak h^+$ to $\DD$ and $i \mapsto 0$.
+
+::: pf-proof
+
 the Cayley transform maps the upper half-plane to the unit disk, sending $i$ to $0$.
+
 :::
 
-<1>2. $\phi(2i) = \frac{2i - i}{2i + i} = \frac{i}{3i} = \frac13$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$\phi(2i) = \frac{2i - i}{2i + i} = \frac{i}{3i} = \frac13$.
+
+::: pf-proof
+
 compute.
+
 :::
 
-<1>3. For $f \in \mathcal F$, define $g = f \circ \phi^{-1}: \DD \to \DD$ with $g(0) = f(i) = 0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+For $f \in \mathcal F$, define $g = f \circ \phi^{-1}: \DD \to \DD$ with $g(0) = f(i) = 0$.
+
+::: pf-proof
+
 $g$ is a holomorphic self-map of the disk with $g(0) = 0$.
+
 :::
 
-<1>4. By the Schwarz lemma, $|g(w)| \le |w|$ for all $w \in \DD$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+By the Schwarz lemma, $|g(w)| \le |w|$ for all $w \in \DD$.
+
+::: pf-proof
+
 Schwarz lemma applied to $g$.
+
 :::
 
-<1>5. Hence $|f(2i)| = |g(\phi(2i))| = |g(1/3)| \le 1/3$.
-::: {.proof}
-<1>2 and <1>4.
 :::
 
-<1>6. The bound is attained by $g(w) = w$ (i.e. $f = \phi$), giving $|f(2i)| = 1/3$.
-::: {.proof}
+::: pf-step
+
+Hence $|f(2i)| = |g(\phi(2i))| = |g(1/3)| \le 1/3$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+The bound is attained by $g(w) = w$ (i.e. $f = \phi$), giving $|f(2i)| = 1/3$.
+
+::: pf-proof
+
 $g(w) = w$ satisfies $g(0) = 0$ and $|g(w)| < 1$, and $|g(1/3)| = 1/3$.
+
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-the maximum value is $1/3$.
 :::
+
+::: pf-qed
+
+the maximum value is $1/3$.
+
+:::
+
+:::
+
 :::

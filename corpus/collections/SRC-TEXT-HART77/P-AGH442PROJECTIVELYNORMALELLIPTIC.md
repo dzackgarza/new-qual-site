@@ -45,11 +45,16 @@ L=\mco_X(D),
 d=\deg L\ge3.
 $$
 
-<1>1. Every line bundle $A$ on $X$ of degree at least $2$ is globally
+::: pf
+
+::: {.pf-step #s1}
+
+Every line bundle $A$ on $X$ of degree at least $2$ is globally
 generated, and it contains a two-dimensional base-point-free space of
 sections.
 
-::: {.proof}
+::: pf-proof
+
 For any point $Q\in X$, Serre duality and $K_X\sim0$ give
 $$
 H^1(X,A(-Q))
@@ -81,9 +86,14 @@ $$
 V=\langle s_0,s_1\rangle
 $$
 is a base-point-free pencil.
+
 :::
 
-<1>2. The quadratic multiplication map
+:::
+
+::: {.pf-step #s2}
+
+The quadratic multiplication map
 $$
 \operatorname{Sym}^2H^0(X,L)
 \longrightarrow
@@ -91,12 +101,13 @@ H^0(X,L^2)
 $$
 is surjective.
 
-::: {.proof}
+::: pf-proof
+
 Fix a point $P\in X$ and set
 $$
 A=L(-P).
 $$
-Since $\deg A=d-1\ge2$, step <1>1 supplies a base-point-free pencil
+Since $\deg A=d-1\ge2$, step [](#s1){.pf-ref} supplies a base-point-free pencil
 $$
 V\subseteq H^0(X,A).
 $$
@@ -128,7 +139,7 @@ $$
 Since $H^0(X,A)\subseteq H^0(X,L)$, the image of the full quadratic
 multiplication map contains $H^0(X,L^2(-P))$.
 
-By step <1>1, $L$ is globally generated.  Choose
+By step [](#s1){.pf-ref}, $L$ is globally generated.  Choose
 $$
 s\in H^0(X,L)
 $$
@@ -140,17 +151,23 @@ The latter space has codimension one in $H^0(X,L^2)$, because
 $H^1(X,L^2(-P))=0$.  Thus the quadratic multiplication image contains a
 codimension-one subspace and an element outside it.  It is all of
 $H^0(X,L^2)$.
+
 :::
 
-<1>3. For every $n\ge2$, multiplication gives a surjection
+:::
+
+::: {.pf-step #s3}
+
+For every $n\ge2$, multiplication gives a surjection
 $$
 H^0(X,L)\otimes H^0(X,L^n)
 \twoheadrightarrow
 H^0(X,L^{n+1}).
 $$
 
-::: {.proof}
-By step <1>1 choose a base-point-free pencil
+::: pf-proof
+
+By step [](#s1){.pf-ref} choose a base-point-free pencil
 $$
 W\subseteq H^0(X,L).
 $$
@@ -179,9 +196,14 @@ W\otimes H^0(X,L^n)
 H^0(X,L^{n+1}).
 $$
 The same is therefore true with $H^0(X,L)$ in place of $W$.
+
 :::
 
-<1>4. For every $m\ge1$, the natural map
+:::
+
+::: {.pf-step #s4}
+
+For every $m\ge1$, the natural map
 $$
 \operatorname{Sym}^mH^0(X,L)
 \longrightarrow
@@ -189,10 +211,11 @@ H^0(X,L^m)
 $$
 is surjective.
 
-::: {.proof}
-The assertion is tautological for $m=1$ and is step <1>2 for $m=2$.
+::: pf-proof
+
+The assertion is tautological for $m=1$ and is step [](#s2){.pf-ref} for $m=2$.
 Assume it for some $m\ge2$.  Compose its tensor product with $H^0(X,L)$
-with the multiplication map of step <1>3:
+with the multiplication map of step [](#s3){.pf-ref}:
 $$
 H^0(X,L)\otimes\operatorname{Sym}^mH^0(X,L)
 \twoheadrightarrow
@@ -206,11 +229,17 @@ $$
 $$
 Hence the latter maps surjectively to $H^0(X,L^{m+1})$.  Induction proves
 the assertion for all $m$.
+
 :::
 
-<1>5. The embedding defined by $\abs{D}$ is projectively normal.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The embedding defined by $\abs{D}$ is projectively normal.
+
+::: pf-proof
+
 For the complete linear-series embedding
 $$
 X\hookrightarrow\PP(H^0(X,L)^*),
@@ -221,7 +250,7 @@ $$
 \longrightarrow
 H^0(X,L^m).
 $$
-Step <1>4 proves that it is surjective for every $m\ge1$.  For $m=0$, the
+Step [](#s4){.pf-ref} proves that it is surjective for every $m\ge1$.  For $m=0$, the
 restriction map is
 $$
 k\longrightarrow H^0(X,\mco_X),
@@ -232,13 +261,19 @@ the criterion of [[P-AGH2514PROJNORM|Exercise II.5.14(d)]] now gives
 $$
 \boxed{X\subseteq\PP^n\text{ is projectively normal}.}
 $$
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2--<1>4 prove normal generation of $L=\mco_X(D)$, and step <1>5
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove normal generation of $L=\mco_X(D)$, and step [](#s5){.pf-ref}
 identifies this with projective normality of the complete-linear-series
 embedding.
+
 :::
+
+:::
+
 :::

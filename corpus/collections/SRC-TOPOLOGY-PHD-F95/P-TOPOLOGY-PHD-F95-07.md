@@ -38,18 +38,32 @@ Prove by any method you know that:
 :::
 
 ::: {.solution}
-<1>1. If $h:X\to Y$ is a homeomorphism and $x\in X$, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $h:X\to Y$ is a homeomorphism and $x\in X$, then
 \[
 h|_{X\setminus\{x\}}:X\setminus\{x\}\longrightarrow Y\setminus\{h(x)\}
 \]
 is a homeomorphism.
-::: {.proof}
+
+::: pf-proof
+
 The restriction is bijective because $h$ is bijective, and its inverse is the restriction of $h^{-1}$ to $Y\setminus\{h(x)\}$.
 Both restrictions are continuous.
+
 :::
 
-<1>2. The punctured line is disconnected, whereas the punctured plane is path connected.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The punctured line is disconnected, whereas the punctured plane is path connected.
+
+::: pf-proof
+
 For any $a\in\RR$,
 \[
 \RR\setminus\{a\}=(-\infty,a)\sqcup(a,\infty),
@@ -60,21 +74,35 @@ Hence $\RR\setminus\{a\}$ is disconnected.
 For any $b\in\RR^2$, translation by $-b$ identifies $\RR^2\setminus\{b\}$ with $\RR^2\setminus\{0\}$.
 The latter is path connected: if $x,y\ne0$, move radially from $x$ to $x/\|x\|$, follow an arc of the unit circle from $x/\|x\|$ to $y/\|y\|$, and then move radially to $y$.
 All three pieces avoid the origin, so their concatenation is a path in $\RR^2\setminus\{0\}$ from $x$ to $y$.
+
 :::
 
-<1>3. Therefore $\RR$ is not homeomorphic to $\RR^2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore $\RR$ is not homeomorphic to $\RR^2$.
+
+::: pf-proof
+
 Suppose $h:\RR\to\RR^2$ were a homeomorphism and choose $a\in\RR$.
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 \RR\setminus\{a\}\cong\RR^2\setminus\{h(a)\}.
 \]
-The left side is disconnected by <1>2, while the right side is path connected and hence connected.
+The left side is disconnected by step [](#s2){.pf-ref}, while the right side is path connected and hence connected.
 Connectedness is preserved by homeomorphisms, a contradiction.
+
 :::
 
-<1>4. For $n\ge2$, the punctured Euclidean space $\RR^n\setminus\{0\}$ strongly deformation retracts onto $S^{n-1}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+For $n\ge2$, the punctured Euclidean space $\RR^n\setminus\{0\}$ strongly deformation retracts onto $S^{n-1}$.
+
+::: pf-proof
+
 Define
 \[
 H:(\RR^n\setminus\{0\})\times[0,1]\longrightarrow\RR^n\setminus\{0\}
@@ -96,11 +124,18 @@ H(x,t)=x
 \]
 for all $t$.
 Thus $H$ is a strong deformation retraction onto $S^{n-1}$.
+
 :::
 
-<1>5. The punctured plane has fundamental group $\ZZ$, while punctured three-space has trivial fundamental group.
-::: {.proof}
-By <1>4 and invariance of the fundamental group under strong deformation retraction,
+:::
+
+::: {.pf-step #s5}
+
+The punctured plane has fundamental group $\ZZ$, while punctured three-space has trivial fundamental group.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref} and invariance of the fundamental group under strong deformation retraction,
 \[
 \pi_1(\RR^2\setminus\{0\})\cong\pi_1(S^1)\cong\ZZ
 \]
@@ -110,18 +145,25 @@ and
 \]
 Here $\pi_1(S^1)\cong\ZZ$ is the standard computation from the universal covering map $\RR\to S^1$, $t\mapsto e^{2\pi i t}$.
 Also $\pi_1(S^2)=0$ follows, for example, from Seifert--van Kampen applied to the cover of $S^2$ by the complements of the north and south poles: both members are homeomorphic to $\RR^2$ and hence simply connected, so their union has trivial fundamental group.
+
 :::
 
-<1>6. Therefore $\RR^2$ is not homeomorphic to $\RR^3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore $\RR^2$ is not homeomorphic to $\RR^3$.
+
+::: pf-proof
+
 Suppose $h:\RR^2\to\RR^3$ were a homeomorphism and choose $a\in\RR^2$.
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 \RR^2\setminus\{a\}\cong\RR^3\setminus\{h(a)\}.
 \]
 Translations identify these spaces with $\RR^2\setminus\{0\}$ and $\RR^3\setminus\{0\}$, respectively.
 Thus a homeomorphism would induce an isomorphism of fundamental groups.
-But by <1>5 these groups are
+But by step [](#s5){.pf-ref} these groups are
 \[
 \ZZ
 \quad\text{and}\quad
@@ -132,5 +174,11 @@ This contradiction proves
 \[
 \boxed{\RR^2\not\cong\RR^3}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

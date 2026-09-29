@@ -41,11 +41,17 @@ be these lines and set
 Y=\mathbb R^3\setminus X.
 \]
 
-<1>1. Radial projection gives a deformation retraction
+::: pf
+
+::: {.pf-step #s1}
+
+Radial projection gives a deformation retraction
 \[
 Y\simeq S^2\setminus\bigl(X\cap S^2\bigr).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since every line $L_i$ passes through the origin, membership in $X$ is invariant under multiplication by a positive scalar.
 For $y\in Y$, define
 \[
@@ -61,10 +67,17 @@ Thus $H$ is a deformation retraction onto
 \[
 S^2\setminus(X\cap S^2).
 \]
+
 :::
 
-<1>2. The set $X\cap S^2$ consists of exactly $2n$ points.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The set $X\cap S^2$ consists of exactly $2n$ points.
+
+::: pf-proof
+
 Each line through the origin meets $S^2$ in a pair of antipodal points.
 Distinct lines give disjoint antipodal pairs.
 Hence
@@ -72,10 +85,17 @@ Hence
 X\cap S^2=\{p_1,-p_1,\dots,p_n,-p_n\}
 \]
 has cardinality $2n$.
+
 :::
 
-<1>3. A sphere with $k\ge1$ punctures has fundamental group free of rank $k-1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+A sphere with $k\ge1$ punctures has fundamental group free of rank $k-1$.
+
+::: pf-proof
+
 Choose one puncture $q$.
 Stereographic projection from $q$ gives a homeomorphism
 \[
@@ -98,21 +118,34 @@ Hence
 F_{k-1},
 \]
 the free group on $k-1$ generators.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \pi_1(\mathbb R^3\setminus X)\cong F_{2n-1}.
 \]
-::: {.proof}
-By <1>1--<1>2,
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref},
 \[
 Y\simeq S^2\setminus\{2n\text{ points}\}.
 \]
-Apply <1>3 with $k=2n$.
+Apply step [](#s3){.pf-ref} with $k=2n$.
 Thus
 \[
 \boxed{\pi_1(\mathbb R^3\setminus X)\cong F_{2n-1}}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

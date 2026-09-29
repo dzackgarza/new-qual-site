@@ -40,10 +40,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Compute the convolution-type limit.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Compute the convolution-type limit.
+
+::: pf-proof
+
 For fixed \(x\in\mathbb R\), eventually \(|x|\le k\), and
 \[
 1+\frac{x^2}{k}\longrightarrow1.
@@ -66,10 +72,17 @@ Since \(g\ge0\) and \(\|g\|_1=2\),
 \[
 \boxed{L=2\pi.}
 \]
+
 :::
 
-<1>2. Compute the Lebesgue--Stieltjes masses.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the Lebesgue--Stieltjes masses.
+
+::: pf-proof
+
 For a Lebesgue--Stieltjes measure associated to the increasing right-continuous function \(F\),
 \[
 \mu((a,b])=F(b)-F(a),
@@ -104,10 +117,17 @@ so
 \[
 \boxed{\mu([1,2])=13.}
 \]
+
 :::
 
-<1>3. Compute the oscillatory integral over \(E\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the oscillatory integral over \(E\).
+
+::: pf-proof
+
 Using
 \[
 \cos^2\theta=\frac12+\frac12\cos(2\theta),
@@ -127,5 +147,11 @@ The phase factor \(e^{2iu_k}\) has modulus \(1\), so the oscillatory term still 
 \boxed{
 \lim_{k\to\infty}\int_E\cos^2(k\pi x+u_k)\,dx=\frac14.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

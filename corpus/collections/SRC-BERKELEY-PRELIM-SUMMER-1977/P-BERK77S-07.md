@@ -47,9 +47,14 @@ A_{\CC}:\CC^6\longrightarrow\CC^6
 $$
 be the complexification of $A$.
 
-<1>1. The operator $A_{\CC}$ is diagonalizable over $\CC$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The operator $A_{\CC}$ is diagonalizable over $\CC$.
+
+::: pf-proof
+
 Since
 $$
 A_{\CC}^{26}=I,
@@ -65,12 +70,18 @@ $$
 $$
 which has no common root with $x^{26}-1$. Hence $m_A(x)$ is a product of
 distinct linear factors. Therefore $A_{\CC}$ is diagonalizable.
+
 :::
 
-<1>2. Every eigenvalue of $A_{\CC}$ is a $26$th root of unity, and
+:::
+
+::: {.pf-step #s2}
+
+Every eigenvalue of $A_{\CC}$ is a $26$th root of unity, and
 nonreal eigenvalues occur in conjugate pairs with equal multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 A_{\CC}v=\lambda v
@@ -93,9 +104,14 @@ $$
 Conjugation therefore gives an antilinear bijection between the
 $\lambda$- and $\bar\lambda$-eigenspaces, so they have equal complex
 dimension.
+
 :::
 
-<1>3. For every nonreal eigenvalue $\lambda$ and every nonzero
+:::
+
+::: {.pf-step #s3}
+
+For every nonreal eigenvalue $\lambda$ and every nonzero
 $\lambda$-eigenvector
 $$
 v=u+iw
@@ -108,7 +124,8 @@ P_v=\operatorname{span}_{\RR}\{u,w\}
 $$
 is two-dimensional and $A$-invariant.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 \lambda=\alpha+i\beta
@@ -134,12 +151,18 @@ Ar=\lambda r.
 $$
 The left side is real while $\lambda$ is nonreal, impossible for
 $r\neq0$. Thus $u,w$ are linearly independent and $\dim_{\RR}P_v=2$.
+
 :::
 
-<1>4. The real subspace corresponding to every conjugate pair of nonreal
+:::
+
+::: {.pf-step #s4}
+
+The real subspace corresponding to every conjugate pair of nonreal
 eigenspaces is a direct sum of $A$-invariant two-planes.
 
-::: {.proof}
+::: pf-proof
+
 Fix a nonreal eigenvalue $\lambda$ and choose a complex basis
 $$
 v_1,\ldots,v_m
@@ -148,7 +171,7 @@ of its eigenspace. Write
 $$
 v_j=u_j+iw_j.
 $$
-By step <1>3, each
+By step [](#s3){.pf-ref}, each
 $$
 P_j=\operatorname{span}_{\RR}\{u_j,w_j\}
 $$
@@ -183,14 +206,20 @@ $$
 is direct. Its real dimension is $2m$, equal to the real dimension of the
 real form of the direct sum of the $\lambda$- and
 $\bar\lambda$-eigenspaces, so it is exactly that real form.
+
 :::
 
-<1>5. The only real eigenvalues of $A_{\CC}$ are $1$ and $-1$, and their
+:::
+
+::: pf-step
+
+The only real eigenvalues of $A_{\CC}$ are $1$ and $-1$, and their
 real eigenspaces split into $A$-invariant lines.
 
-::: {.proof}
+::: pf-proof
+
 A real $26$th root of unity is necessarily $1$ or $-1$. Since
-$A_{\CC}$ is diagonalizable by step <1>1, the real eigenspaces
+$A_{\CC}$ is diagonalizable by step [](#s1){.pf-ref}, the real eigenspaces
 $$
 E_+=\ker(A-I),
 \qquad
@@ -199,13 +228,19 @@ $$
 admit real bases. Every basis line in $E_+$ is fixed by $A$, and every
 basis line in $E_-$ is multiplied by $-1$. Hence each basis line is
 $A$-invariant.
+
 :::
 
-<1>6. The direct sum of all one-dimensional real eigenspaces has even
+:::
+
+::: {.pf-step #s6}
+
+The direct sum of all one-dimensional real eigenspaces has even
 dimension.
 
-::: {.proof}
-By steps <1>2--<1>4, every contribution from a nonreal conjugate pair has
+::: pf-proof
+
+By steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}, every contribution from a nonreal conjugate pair has
 even real dimension. Since
 $$
 \dim_{\RR}\RR^6=6
@@ -215,18 +250,29 @@ $$
 \dim E_+ + \dim E_-
 $$
 must also be even.
+
 :::
 
-<1>7. The real eigenlines can be paired to form $A$-invariant
+:::
+
+::: {.pf-step #s7}
+
+The real eigenlines can be paired to form $A$-invariant
 two-dimensional subspaces.
 
-::: {.proof}
-By step <1>6 there are an even number of basis lines in the direct sum
+::: pf-proof
+
+By step [](#s6){.pf-ref} there are an even number of basis lines in the direct sum
 $E_+\oplus E_-$. Pair them arbitrarily. The direct sum of any two invariant
 lines is two-dimensional and $A$-invariant.
+
 :::
 
-<1>8. There exist two-dimensional $A$-invariant subspaces
+:::
+
+::: {.pf-step #s8}
+
+There exist two-dimensional $A$-invariant subspaces
 $V_1,V_2,V_3$ such that
 $$
 \boxed{
@@ -234,18 +280,25 @@ $$
 }
 $$
 
-::: {.proof}
-Step <1>4 decomposes all nonreal spectral contributions into invariant
-two-planes. Step <1>7 decomposes the remaining real spectral contribution
+::: pf-proof
+
+Step [](#s4){.pf-ref} decomposes all nonreal spectral contributions into invariant
+two-planes. Step [](#s7){.pf-ref} decomposes the remaining real spectral contribution
 into invariant two-planes. Together these planes form a direct sum equal to
-$\RR^6$ because the complex eigenspace decomposition in step <1>1 is
+$\RR^6$ because the complex eigenspace decomposition in step [](#s1){.pf-ref} is
 complete. Their dimensions sum to $6$, so exactly three planes occur.
 Label them $V_1,V_2,V_3$.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 is the required decomposition.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} is the required decomposition.
+
+:::
+
+:::
+
 :::

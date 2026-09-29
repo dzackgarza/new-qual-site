@@ -40,10 +40,15 @@ $$
 \sum_{j=1}^r\lambda_j=n.
 $$
 
-<1>1. Isomorphism classes of abelian groups of order $p^n$ are in
+::: pf
+
+::: {.pf-step #s1}
+
+Isomorphism classes of abelian groups of order $p^n$ are in
 bijection with partitions of $n$.
 
-::: {.proof}
+::: pf-proof
+
 By the classification theorem for finite abelian groups, every abelian
 group $G$ of order $p^n$ has a decomposition
 $$
@@ -64,16 +69,22 @@ so the $\lambda_j$ form a partition of $n$. The same classification
 theorem says that these exponents are uniquely determined by the
 isomorphism class of $G$. Conversely, every partition of $n$ gives such
 an abelian group of order $p^n$.
+
 :::
 
-<1>2. Every $n\times n$ matrix $A$ over $F$ satisfying $A^n=0$ is
+:::
+
+::: {.pf-step #s2}
+
+Every $n\times n$ matrix $A$ over $F$ satisfying $A^n=0$ is
 similar over $F$ to a direct sum
 $$
 J_{\lambda_1}(0)\oplus\cdots\oplus J_{\lambda_r}(0),
 $$
 where $(\lambda_1,\ldots,\lambda_r)$ is a partition of $n$.
 
-::: {.proof}
+::: pf-proof
+
 The relation $A^n=0$ says that $A$ is nilpotent. Its minimal polynomial
 therefore divides $x^n$, which splits over every field $F$. Hence the
 Jordan normal form theorem applies over $F$, and every Jordan block has
@@ -86,24 +97,36 @@ $$
 $$
 Reordering the blocks so that the sizes are weakly decreasing produces a
 partition of $n$.
+
 :::
 
-<1>3. Two matrices satisfying $A^n=0$ are similar if and only if their
-partitions in step <1>2 are equal.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Two matrices satisfying $A^n=0$ are similar if and only if their
+partitions in step [](#s2){.pf-ref} are equal.
+
+::: pf-proof
+
 Jordan normal form is unique up to permutation of its Jordan blocks.
 Thus a nilpotent similarity class is determined exactly by the multiset
 of its block sizes. Writing those sizes in weakly decreasing order gives
 exactly one partition of $n$. Conversely, equal partitions give the same
 Jordan normal form and hence similar matrices.
+
 :::
 
-<1>4. Similarity classes of $n\times n$ matrices $A$ satisfying $A^n=0$
+:::
+
+::: {.pf-step #s4}
+
+Similarity classes of $n\times n$ matrices $A$ satisfying $A^n=0$
 are therefore in bijection with partitions of $n$.
 
-::: {.proof}
-Steps <1>2 and <1>3 assign to each similarity class a unique partition.
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} assign to each similarity class a unique partition.
 Conversely, for every partition
 $\lambda=(\lambda_1,\ldots,\lambda_r)$ of $n$, the matrix
 $$
@@ -111,20 +134,32 @@ J_{\lambda_1}(0)\oplus\cdots\oplus J_{\lambda_r}(0)
 $$
 has size $n$ and satisfies $A^n=0$, since each block has size at most
 $n$ and is nilpotent.
+
 :::
 
-<1>5. The two numbers in the problem are equal; both are the number of
+:::
+
+::: {.pf-step #s5}
+
+The two numbers in the problem are equal; both are the number of
 partitions of $n$.
 
-::: {.proof}
-Step <1>1 identifies the abelian-group isomorphism classes with
-partitions of $n$, while step <1>4 identifies the required matrix
+::: pf-proof
+
+Step [](#s1){.pf-ref} identifies the abelian-group isomorphism classes with
+partitions of $n$, while step [](#s4){.pf-ref} identifies the required matrix
 similarity classes with the same set of partitions.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the asserted equality.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the asserted equality.
+
+:::
+
+:::
+
 :::

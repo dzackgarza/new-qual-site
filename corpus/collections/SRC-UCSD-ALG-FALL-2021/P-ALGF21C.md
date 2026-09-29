@@ -36,8 +36,14 @@ Set
 L=\mathbb Q(\zeta).
 \]
 
-<1>1. The extension $L/\mathbb Q$ is finite abelian Galois.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The extension $L/\mathbb Q$ is finite abelian Galois.
+
+::: pf-proof
+
 The field $L$ is the splitting field over $\mathbb Q$ of the $n$th cyclotomic polynomial, so $L/\mathbb Q$ is finite Galois.
 Moreover,
 \[
@@ -51,14 +57,21 @@ indeed every automorphism is determined by
 \]
 for some $a$ prime to $n$.
 Hence $\operatorname{Gal}(L/\mathbb Q)$ is abelian.
+
 :::
 
-<1>2. Every intermediate field
+:::
+
+::: {.pf-step #s2}
+
+Every intermediate field
 \[
 \mathbb Q\subseteq E\subseteq L
 \]
 is Galois over $\mathbb Q$.
-::: {.proof}
+
+::: pf-proof
+
 By the fundamental theorem of Galois theory,
 \[
 E=L^H
@@ -68,16 +81,23 @@ for the subgroup
 H=\operatorname{Gal}(L/E)
 \le\operatorname{Gal}(L/\mathbb Q).
 \]
-By <1>1, the ambient Galois group is abelian, so every subgroup is normal.
+By step [](#s1){.pf-ref}, the ambient Galois group is abelian, so every subgroup is normal.
 The Galois correspondence therefore implies that $E/\mathbb Q$ is Galois.
+
 :::
 
-<1>3. The extension
+:::
+
+::: {.pf-step #s3}
+
+The extension
 \[
 \mathbb Q(\sqrt[3]{2})/\mathbb Q
 \]
 is not Galois.
-::: {.proof}
+
+::: pf-proof
+
 The polynomial
 \[
 x^3-2
@@ -94,13 +114,20 @@ Its three roots are
 where $\omega$ is a primitive cube root of unity.
 The field $\mathbb Q(\sqrt[3]{2})$ is contained in $\mathbb R$, whereas the latter two roots are nonreal.
 Thus the minimal polynomial does not split over $\mathbb Q(\sqrt[3]{2})$, so this extension is not normal and hence is not Galois.
+
 :::
 
-<1>4. One has
+:::
+
+::: pf-step
+
+One has
 \[
 \sqrt[3]{2}\notin\mathbb Q(\zeta).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Suppose instead that
 \[
 \sqrt[3]{2}\in L.
@@ -113,11 +140,17 @@ Then
 \subseteq
 L.
 \]
-By <1>2, the intermediate extension $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ would be Galois.
-This contradicts <1>3.
+By step [](#s2){.pf-ref}, the intermediate extension $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ would be Galois.
+This contradicts step [](#s3){.pf-ref}.
 Therefore
 \[
 \sqrt[3]{2}\notin\mathbb Q(\zeta).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -35,23 +35,40 @@ Show that
 ::: {.solution}
 We prove $\int_0^\infty \frac{g(x)}{x}\int_0^x f(y)\,dy\,dx \le AB$ with $A = \int_0^\infty f(y)y^{-1/2}\,dy$ and $B = \left(\int_0^\infty g(y)^2\,dy\right)^{1/2}$; see the remark below.
 
-<1>1. $\int_0^\infty \frac{g(x)}{x}\int_0^x f(y)\,dy\,dx = \int_0^\infty f(y) \int_y^\infty \frac{g(x)}{x}\, dx\, dy$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\int_0^\infty \frac{g(x)}{x}\int_0^x f(y)\,dy\,dx = \int_0^\infty f(y) \int_y^\infty \frac{g(x)}{x}\, dx\, dy$.
+
+::: pf-proof
+
 The integrand $f(y)g(x)x^{-1}\chi_{\theset{y < x}}$ is nonnegative and measurable on $(0,\infty)^2$, so Tonelli's theorem allows exchanging the order of integration.
+
 :::
 
-<1>2. For $y > 0$, $\int_y^\infty \frac{g(x)}{x}\, dx \le B y^{-1/2}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For $y > 0$, $\int_y^\infty \frac{g(x)}{x}\, dx \le B y^{-1/2}$.
+
+::: pf-proof
+
 By the Cauchy--Schwarz inequality, $\int_y^\infty \frac{g(x)}{x}\, dx \le \left(\int_y^\infty g^2\right)^{1/2}\left(\int_y^\infty x^{-2}\,dx\right)^{1/2} \le B\,y^{-1/2}$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By steps <1>1 and <1>2, the left side is at most $\int_0^\infty f(y)\,B y^{-1/2}\, dy = AB$.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the left side is at most $\int_0^\infty f(y)\,B y^{-1/2}\, dy = AB$.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

@@ -34,7 +34,6 @@ Show that $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.
 - Continuous image of compact is compact.
 :::
 
-
 ::: {.strategy}
 ![figures/image_2021-05-21-01-16-52.png](../../assets/figures/image_2021-05-21-01-16-52.png)
 
@@ -44,10 +43,16 @@ Use that $X$ is compact to get a finite subcover.
 
 :::
 
-
 ::: {.solution}
-<1>1. If $X\times Y$ is compact, then both $X$ and $Y$ are compact.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $X\times Y$ is compact, then both $X$ and $Y$ are compact.
+
+::: pf-proof
+
 The coordinate projections
 \[
 \pi_X:X\times Y\to X,
@@ -63,11 +68,18 @@ X=\pi_X(X\times Y),
 Y=\pi_Y(X\times Y)
 \]
 are compact.
+
 :::
 
-<1>2. Suppose $X$ and $Y$ are compact, and let $\mathcal U$ be an open cover of $X\times Y$.
+:::
+
+::: {.pf-step #s2}
+
+Suppose $X$ and $Y$ are compact, and let $\mathcal U$ be an open cover of $X\times Y$.
 For every $x\in X$, there is an open neighborhood $V_x$ of $x$ such that $V_x\times Y$ is covered by finitely many members of $\mathcal U$.
-::: {.proof}
+
+::: pf-proof
+
 Fix $x\in X$.
 The fiber $\{x\}\times Y$ is homeomorphic to the compact space $Y$, so finitely many members
 \[
@@ -84,27 +96,46 @@ By the tube lemma, there is an open neighborhood $V_x\ni x$ such that
 V_x\times Y\subseteq W_x.
 \]
 Thus the same finitely many $U_{x,j}$ cover $V_x\times Y$.
+
 :::
 
-<1>3. If $X$ and $Y$ are compact, then $X\times Y$ is compact.
-::: {.proof}
-The family $\{V_x:x\in X\}$ from <1>2 is an open cover of $X$.
+:::
+
+::: pf-step
+
+If $X$ and $Y$ are compact, then $X\times Y$ is compact.
+
+::: pf-proof
+
+The family $\{V_x:x\in X\}$ from step [](#s2){.pf-ref} is an open cover of $X$.
 Compactness of $X$ gives points $x_1,\ldots,x_r$ such that
 \[
 X=V_{x_1}\cup\cdots\cup V_{x_r}.
 \]
-For each $i$, <1>2 supplies finitely many members of $\mathcal U$ covering $V_{x_i}\times Y$.
+For each $i$, step [](#s2){.pf-ref} supplies finitely many members of $\mathcal U$ covering $V_{x_i}\times Y$.
 The union of these finitely many finite subfamilies covers
 \[
 X\times Y
 =\bigcup_{i=1}^r(V_{x_i}\times Y).
 \]
 Hence $\mathcal U$ has a finite subcover.
+
 :::
 
-<1>4. The nonempty hypothesis is necessary for the implication in <1>1.
-::: {.proof}
+:::
+
+::: pf-step
+
+The nonempty hypothesis is necessary for the implication in step [](#s1){.pf-ref}.
+
+::: pf-proof
+
 If $Y=\emptyset$, then $X\times Y=\emptyset$ is compact for every space $X$, including noncompact spaces.
+
+:::
+
+:::
+
 :::
 
 :::

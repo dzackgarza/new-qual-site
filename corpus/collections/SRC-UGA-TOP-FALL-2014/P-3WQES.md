@@ -31,8 +31,15 @@ Identify (with proof, but of course you can appeal to the classification of surf
 :::
 
 ::: {.solution}
-<1>1. Any such cell decomposition is connected and has a finite number, say $r$, of $2$-cells.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Any such cell decomposition is connected and has a finite number, say $r$, of $2$-cells.
+
+::: pf-proof
+
 The unique $0$-cell lies in the $0$-skeleton.
 Each $1$-cell is attached to that vertex at both endpoints, so the $1$-skeleton is connected.
 Every $2$-cell is attached to the $1$-skeleton, hence the whole surface is connected.
@@ -40,13 +47,20 @@ Every $2$-cell is attached to the $1$-skeleton, hence the whole surface is conne
 Since the surface is compact and the given cell decomposition is a CW decomposition, the surface is contained in a finite subcomplex; because the whole space is the surface, only finitely many cells occur.
 As the ambient space is a surface, the cells have dimensions at most $2$.
 Let $r$ denote the number of $2$-cells.
+
 :::
 
-<1>2. One necessarily has
+:::
+
+::: {.pf-step #s2}
+
+One necessarily has
 \[
 r\ge1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $r=0$, the surface would equal its $1$-skeleton, a graph with one vertex and two edges.
 Its second homology with $\mathbb Z/2$ coefficients would therefore vanish.
 
@@ -55,13 +69,20 @@ On the other hand, every connected compact surface without boundary has a mod-$2
 H_2(S;\mathbb Z/2)\cong\mathbb Z/2.
 \]
 This contradiction shows that at least one $2$-cell is present.
+
 :::
 
-<1>3. The Euler characteristic satisfies
+:::
+
+::: {.pf-step #s3}
+
+The Euler characteristic satisfies
 \[
 \chi(S)=1-2+r=r-1\ge0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a finite CW decomposition,
 \[
 \chi(S)=c_0-c_1+c_2.
@@ -78,10 +99,15 @@ Thus
 \[
 \chi(S)=1-2+r=r-1.
 \]
-By <1>2, $r\ge1$, so $\chi(S)\ge0$.
+By step [](#s2){.pf-ref}, $r\ge1$, so $\chi(S)\ge0$.
+
 :::
 
-<1>4. By the classification of compact connected surfaces, the only possible surfaces are
+:::
+
+::: {.pf-step #s4}
+
+By the classification of compact connected surfaces, the only possible surfaces are
 \[
 S^2,
 \qquad
@@ -92,7 +118,9 @@ T^2,
 K,
 \]
 where $K$ is the Klein bottle.
-::: {.proof}
+
+::: pf-proof
+
 For the closed orientable surface $\Sigma_g$ of genus $g$,
 \[
 \chi(\Sigma_g)=2-2g.
@@ -113,10 +141,17 @@ k=1\quad\text{or}\quad k=2,
 \]
 namely $\RP^2$ and the Klein bottle.
 No other closed connected surface has nonnegative Euler characteristic.
+
 :::
 
-<1>5. The sphere $S^2$ admits a decomposition with one $0$-cell and two $1$-cells.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The sphere $S^2$ admits a decomposition with one $0$-cell and two $1$-cells.
+
+::: pf-proof
+
 Embed a figure-eight graph
 \[
 S^1\vee S^1
@@ -132,10 +167,17 @@ Indeed, its Euler characteristic is
 \[
 1-2+3=2=\chi(S^2).
 \]
+
 :::
 
-<1>6. The projective plane $\RP^2$ admits such a decomposition with two $2$-cells.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The projective plane $\RP^2$ admits such a decomposition with two $2$-cells.
+
+::: pf-proof
+
 Start with the standard polygon model of $\RP^2$ as a $2$-gon whose boundary word is
 \[
 aa.
@@ -150,10 +192,17 @@ Thus
 \[
 (c_0,c_1,c_2)=(1,2,2).
 \]
+
 :::
 
-<1>7. The torus $T^2$ admits such a decomposition with one $2$-cell.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+The torus $T^2$ admits such a decomposition with one $2$-cell.
+
+::: pf-proof
+
 Use the standard square model with boundary word
 \[
 aba^{-1}b^{-1}.
@@ -163,10 +212,17 @@ Hence
 \[
 (c_0,c_1,c_2)=(1,2,1).
 \]
+
 :::
 
-<1>8. The Klein bottle $K$ also admits such a decomposition with one $2$-cell.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+The Klein bottle $K$ also admits such a decomposition with one $2$-cell.
+
+::: pf-proof
+
 Use the standard square model of the Klein bottle with boundary word
 \[
 aba^{-1}b.
@@ -176,13 +232,26 @@ Thus
 \[
 (c_0,c_1,c_2)=(1,2,1).
 \]
+
 :::
 
-<1>9. Therefore the complete list is
+:::
+
+::: pf-step
+
+Therefore the complete list is
 \[
 \boxed{S^2,\ \RP^2,\ T^2,\ \text{and the Klein bottle}.}
 \]
-::: {.proof}
-Necessity follows from <1>3--<1>4, and <1>5--<1>8 explicitly realize every surface on the list.
+
+::: pf-proof
+
+Necessity follows from steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} explicitly realize every surface on the list.
+
 :::
+
+:::
+
+:::
+
 :::

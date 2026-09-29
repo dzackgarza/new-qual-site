@@ -17,7 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. Let $(X,d)$ be a complete metric space.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $(X,d)$ be a complete metric space.
 A map $T\colon X\to X$ is a contraction if there is $0<\lambda<1$ such that
 \[
 d(Tx,Ty)\le \lambda d(x,y)
@@ -25,7 +30,16 @@ d(Tx,Ty)\le \lambda d(x,y)
 for all $x,y\in X$.
 Prove that every contraction has a fixed point.
 
-<1>2. Using <1>1, show that if $f\colon\mathbb R\to\mathbb R$ is differentiable and
+:::
+
+::: pf-step
+
+Using step [](#s1){.pf-ref}, show that if $f\colon\mathbb R\to\mathbb R$ is differentiable and
+
+:::
+
+:::
+
 \[
 f'(x)=e^{-x^2}-e^{-x^4},
 \]

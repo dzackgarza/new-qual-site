@@ -38,23 +38,41 @@ f:I\to X
 \]
 be a loop based at the $0$-cell $x_0$.
 
-<1>1. The image of $f$ is contained in a finite connected subcomplex $K\subseteq X$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The image of $f$ is contained in a finite connected subcomplex $K\subseteq X$.
+
+::: pf-proof
+
 The image $f(I)$ is compact.
 A compact subset of a CW complex is contained in a finite subcomplex.
 Adjoin finitely many edge paths in $X$ joining the components of that finite subcomplex to $x_0$ if necessary; since $X$ is path connected and one-dimensional, these paths may be chosen in the $1$-skeleton and meet only finitely many cells.
 The resulting finite subcomplex $K$ is connected and contains both $f(I)$ and $x_0$.
+
 :::
 
-<1>2. The finite graph $K$ admits a finite open cover $\mathcal U$ such that every $U\in\mathcal U$ is contractible and any two points of $U$ can be joined inside $U$ by a path that is piecewise monotone on edges.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The finite graph $K$ admits a finite open cover $\mathcal U$ such that every $U\in\mathcal U$ is contractible and any two points of $U$ can be joined inside $U$ by a path that is piecewise monotone on edges.
+
+::: pf-proof
+
 For each vertex choose a small open star consisting of short initial intervals in the incident edges; this is a finite tree and hence contractible.
 Cover the remaining compact middle portions of the finitely many edges by finitely many open intervals contained in edge interiors.
 These sets form the required finite cover.
 Inside an open interval the joining path is the unique monotone subinterval, and inside a small star two points can be joined by passing monotonically to the central vertex and then monotonically out along the other incident edge.
+
 :::
 
-<1>3. There is a subdivision
+:::
+
+::: pf-step
+
+There is a subdivision
 \[
 0=t_0<t_1<\cdots<t_m=1
 \]
@@ -63,12 +81,19 @@ such that each path segment
 f([t_{i-1},t_i])
 \]
 lies in one member $U_i\in\mathcal U$.
-::: {.proof}
+
+::: pf-proof
+
 The inverse images $f^{-1}(U)$, $U\in\mathcal U$, form an open cover of the compact interval $I$.
 Choose a Lebesgue number for this cover and take a subdivision with smaller mesh.
+
 :::
 
-<1>4. For each $i$, replace the restricted path
+:::
+
+::: {.pf-step #s4}
+
+For each $i$, replace the restricted path
 \[
 f|_{[t_{i-1},t_i]}
 \]
@@ -78,8 +103,10 @@ Then the concatenation
 g=g_1\cdots g_m
 \]
 is homotopic to $f$ relative to the basepoint.
-::: {.proof}
-Such a $g_i$ exists by <1>2.
+
+::: pf-proof
+
+Such a $g_i$ exists by step [](#s2){.pf-ref}.
 Since $U_i$ is contractible, any two paths in $U_i$ with the same endpoints are homotopic relative to those endpoints.
 Thus
 \[
@@ -88,10 +115,17 @@ f|_{[t_{i-1},t_i]}\simeq g_i
 rel endpoints.
 The finitely many homotopies paste because adjacent pieces fix their common endpoint.
 Since $t_0=0$ and $t_m=1$, the basepoint $x_0$ is fixed throughout.
+
 :::
 
-<1>5. After finitely many cancellations, $g$ is homotopic rel basepoint to a loop whose breakpoints are all vertices of $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+After finitely many cancellations, $g$ is homotopic rel basepoint to a loop whose breakpoints are all vertices of $K$.
+
+::: pf-proof
+
 The path $g$ has only finitely many monotone edge pieces.
 Suppose one of its breakpoints $p$ lies in the interior of an edge $e$.
 The pieces immediately before and after $p$ lie in the same edge, since no other edge meets $e$ at an interior point.
@@ -102,19 +136,39 @@ Because an edge is an interval, this backtracking segment is homotopic rel endpo
 
 Each operation removes at least one interior breakpoint.
 There are finitely many, so after finitely many operations all breakpoints are vertices.
+
 :::
 
-<1>6. A monotone path in a closed edge whose endpoints are vertices traverses that edge exactly once, possibly in the reverse orientation.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+A monotone path in a closed edge whose endpoints are vertices traverses that edge exactly once, possibly in the reverse orientation.
+
+::: pf-proof
+
 The characteristic map identifies the closed $1$-cell with an interval whose endpoints are the incident vertices.
 A monotone path from one endpoint to the other covers the edge once; reversing the direction reverses the orientation.
 If both endpoints coincide because the edge is a loop edge, the corresponding traversal is the standard once-around traversal of that $1$-cell.
+
 :::
 
-<1>7. Therefore every loop in $X$ is homotopic relative to $x_0$ to a loop consisting of a finite sequence of edges traversed monotonically.
-::: {.proof}
-By <1>4--<1>5, $f$ is homotopic to a finite concatenation of monotone edge pieces whose successive endpoints are vertices.
-By <1>6, each nonconstant piece is a traversal of a whole edge.
-Deleting constant pieces gives the required finite edge sequence.
 :::
+
+::: pf-step
+
+Therefore every loop in $X$ is homotopic relative to $x_0$ to a loop consisting of a finite sequence of edges traversed monotonically.
+
+::: pf-proof
+
+By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, $f$ is homotopic to a finite concatenation of monotone edge pieces whose successive endpoints are vertices.
+By step [](#s6){.pf-ref}, each nonconstant piece is a traversal of a whole edge.
+Deleting constant pieces gives the required finite edge sequence.
+
+:::
+
+:::
+
+:::
+
 :::

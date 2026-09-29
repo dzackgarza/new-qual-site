@@ -36,9 +36,14 @@ audit:
 ::: {.solution}
 The answer to (a) is yes; the answer to (b) is no.
 
-<1>1. The polynomial $p(z)=z^2-z$ maps $H$ onto $\mathbb C$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The polynomial $p(z)=z^2-z$ maps $H$ onto $\mathbb C$.
+
+::: pf-proof
+
 The restriction of this polynomial to $H$ is holomorphic.
 For any $w\in\mathbb C$, let $z_1,z_2$ be the two roots,
 counted with multiplicity, of $z^2-z-w=0$. The quadratic
@@ -47,11 +52,17 @@ $\operatorname{Re}z_1+\operatorname{Re}z_2=1$.
 At least one root has real part at least $1/2$, so lies
 in $H$. That root maps to $w$. This proves surjectivity
 onto $\mathbb C$.
+
 :::
 
-<1>2. Every holomorphic map from $\mathbb C$ to $H$ is constant.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every holomorphic map from $\mathbb C$ to $H$ is constant.
+
+::: pf-proof
+
 For such a map $f$, put
 $$
 g(z)=\frac{f(z)-1}{f(z)+1}.
@@ -64,5 +75,11 @@ $g=c$ for some $|c|<1$ [@SS03]. Solving for $f$ gives
 $f=(1+c)/(1-c)$, a constant. It cannot be surjective
 onto $H$, which contains more than one point. Thus no
 surjective map in direction (b) exists.
+
 :::
+
+:::
+
+:::
+
 :::

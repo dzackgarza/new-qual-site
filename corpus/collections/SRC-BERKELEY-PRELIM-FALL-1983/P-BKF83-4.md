@@ -26,7 +26,11 @@ Prove or disprove: every infinite sequence of real numbers has either a nondecre
 ::: {.solution}
 The assertion is true.
 
-<1>1. Call an index $n$ a tail maximum if
+::: pf
+
+::: {.pf-step #s1}
+
+Call an index $n$ a tail maximum if
 $$
 x_n\ge x_m
 \qquad
@@ -35,7 +39,8 @@ $$
 If there are infinitely many tail maxima, the sequence has a nonincreasing
 subsequence.
 
-::: {.proof}
+::: pf-proof
+
 List infinitely many tail-maximum indices in increasing order:
 $$
 n_1<n_2<n_3<\cdots.
@@ -49,12 +54,18 @@ $$
 x_{n_1},x_{n_2},x_{n_3},\ldots
 $$
 is nonincreasing.
+
 :::
 
-<1>2. If there are only finitely many tail maxima, the sequence has a
+:::
+
+::: {.pf-step #s2}
+
+If there are only finitely many tail maxima, the sequence has a
 strictly increasing subsequence.
 
-::: {.proof}
+::: pf-proof
+
 Choose $N$ larger than every tail-maximum index, taking $N=1$ if there
 are none. Then no $n\ge N$ is a tail maximum. Therefore, for every
 $n\ge N$, there exists $m>n$ such that
@@ -72,18 +83,30 @@ x_{n_{j+1}}>x_{n_j}.
 $$
 This recursion continues indefinitely and produces a strictly increasing,
 hence nondecreasing, subsequence.
+
 :::
 
-<1>3. Every infinite real sequence therefore has a monotone subsequence.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every infinite real sequence therefore has a monotone subsequence.
+
+::: pf-proof
+
 Either there are infinitely many tail maxima or there are only finitely
-many. Step <1>1 handles the first case and step <1>2 handles the second.
+many. Step [](#s1){.pf-ref} handles the first case and step [](#s2){.pf-ref} handles the second.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves the stated assertion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the stated assertion.
+
+:::
+
+:::
+
 :::

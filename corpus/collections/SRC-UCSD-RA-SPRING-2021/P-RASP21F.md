@@ -29,10 +29,16 @@ Show that if $\mu$ is a Radon measure on $Y$, then $\nu(E) := \mu(E \cap Y)$ def
 Also demonstrate that $Y$ being closed is needed here, by giving an example where $Y$ is not closed and the corresponding $\nu$ is not Radon.
 :::
 
-
 ::: {.solution}
-<1>1. Show that $\nu$ is a Borel measure on $X$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Show that $\nu$ is a Borel measure on $X$.
+
+::: pf-proof
+
 Because $Y$ is closed, it is Borel in $X$. If $E\subseteq X$ is Borel, then $E\cap Y$ is Borel in the subspace $Y$, so
 \[
 \nu(E):=\mu(E\cap Y)
@@ -43,19 +49,33 @@ is well defined. Countable additivity follows immediately from countable additiv
 =\bigcup_j(E_j\cap Y)
 \]
 for disjoint Borel sets $E_j$.
+
 :::
 
-<1>2. Prove finiteness on compact sets.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove finiteness on compact sets.
+
+::: pf-proof
+
 Let $K\subseteq X$ be compact. Since $Y$ is closed in $X$, the intersection $K\cap Y$ is compact in $X$, hence compact in the subspace $Y$. Because $\mu$ is Radon on $Y$,
 \[
 \nu(K)=\mu(K\cap Y)<\infty.
 \]
 Thus $\nu$ is finite on compact subsets of $X$.
+
 :::
 
-<1>3. Prove inner regularity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove inner regularity.
+
+::: pf-proof
+
 Let $E\subseteq X$ be Borel. Since $\mu$ is Radon on $Y$,
 \[
 \mu(E\cap Y)
@@ -71,10 +91,17 @@ Therefore
 =\sup\{\nu(L):L\subseteq E,\ L\text{ compact in }X\}.
 \]
 Hence $\nu$ is inner regular. Together with Step 2, this shows that $\nu$ is a Radon measure on the LCH space $X$.
+
 :::
 
-<1>4. Show that closedness of $Y$ is necessary.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that closedness of $Y$ is necessary.
+
+::: pf-proof
+
 Take
 \[
 X=\mathbb R,
@@ -98,5 +125,11 @@ is compact in $\mathbb R$, while
 \nu(K)=\#Y=\infty.
 \]
 Therefore $\nu$ is not Radon on $X$. This proves that the assumption that $Y$ is closed cannot be omitted.
+
 :::
+
+:::
+
+:::
+
 :::

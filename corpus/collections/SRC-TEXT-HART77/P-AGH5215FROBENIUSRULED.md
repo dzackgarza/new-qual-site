@@ -105,12 +105,17 @@ C=V(F)\subseteq\PP^2
 $$
 is nonsingular; hence it has genus $3$.
 
-<1>1. There is a natural identification
+::: pf
+
+::: {.pf-step #s1}
+
+There is a natural identification
 $$
 H^1(C,\OO_C)\cong H^2(\PP^2,\OO_{\PP^2}(-4)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The quartic equation gives
 $$
 0
@@ -129,17 +134,23 @@ H^1(\PP^2,\OO_{\PP^2})=0
 H^2(\PP^2,\OO_{\PP^2})=0,
 $$
 the connecting map in cohomology is the displayed isomorphism.
+
 :::
 
-<1>2. Under the identification in step <1>1, Frobenius on
+:::
+
+::: {.pf-step #s2}
+
+Under the identification in step [](#s1){.pf-ref}, Frobenius on
 $H^1(C,\OO_C)$ is represented by
 $$
 \alpha\longmapsto F^2\alpha^3
 $$
 on $H^2(\PP^2,\OO_{\PP^2}(-4))$.
 
-::: {.proof}
-Pulling the quartic sequence of step <1>1 back by the characteristic-$3$
+::: pf-proof
+
+Pulling the quartic sequence of step [](#s1){.pf-ref} back by the characteristic-$3$
 Frobenius changes
 $$
 \OO_{\PP^2}(-4)
@@ -159,15 +170,21 @@ Naturality of the connecting homomorphism therefore gives exactly
 $$
 \alpha\longmapsto F^2\alpha^3.
 $$
+
 :::
 
-<1>3. The Frobenius action on
+:::
+
+::: {.pf-step #s3}
+
+The Frobenius action on
 $$
 H^1(C,\OO_C)
 $$
 is identically zero.
 
-::: {.proof}
+::: pf-proof
+
 Using the standard Cech cover of $\PP^2$, a basis of
 $$
 H^2(\PP^2,\OO_{\PP^2}(-4))
@@ -214,11 +231,16 @@ $$
 in $H^2(\PP^2,\OO(-4))$.
 
 The other two basis vectors are obtained by cyclic permutation, and $F$ is
-cyclically symmetric. Their images vanish as well. Step <1>2 therefore shows
+cyclically symmetric. Their images vanish as well. Step [](#s2){.pf-ref} therefore shows
 that Frobenius acts as zero on $H^1(C,\OO_C)$. This proves part (a).
+
 :::
 
-<1>4. For every point $P\in C$, the natural map
+:::
+
+::: {.pf-step #s4}
+
+For every point $P\in C$, the natural map
 $$
 H^1(C,\OO_C(-P))
 \longrightarrow
@@ -234,7 +256,8 @@ H^1(C,\OO_C)
 $$
 has dimension $2$.
 
-::: {.proof}
+::: pf-proof
+
 From
 $$
 0\to\OO_C(-P)\to\OO_C\to\OO_P\to0,
@@ -262,9 +285,14 @@ dimension
 $$
 5-3=2.
 $$
+
 :::
 
-<1>5. There exists
+:::
+
+::: {.pf-step #s5}
+
+There exists
 $$
 0\ne\xi\in H^1(C,\OO_C(-P))
 $$
@@ -275,7 +303,8 @@ f^*\xi=0
 H^1(C,\OO_C(-3P)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Frobenius pullback gives a commutative square
 $$
 \begin{CD}
@@ -284,9 +313,9 @@ H^1(C,\OO_C(-P)) @>>> H^1(C,\OO_C)\\
 H^1(C,\OO_C(-3P)) @>>> H^1(C,\OO_C).
 \end{CD}
 $$
-The right vertical arrow is zero by step <1>3. Thus the image of the left
+The right vertical arrow is zero by step [](#s3){.pf-ref}. Thus the image of the left
 vertical arrow is contained in the two-dimensional kernel identified in
-step <1>4.
+step [](#s4){.pf-ref}.
 
 But the source has dimension
 $$
@@ -297,9 +326,14 @@ $$
 0\ne\xi
 $$
 in that kernel. This proves part (b).
+
 :::
 
-<1>6. Let $\mathcal E$ be the extension determined by $\xi$:
+:::
+
+::: {.pf-step #s6}
+
+Let $\mathcal E$ be the extension determined by $\xi$:
 $$
 0
 \longrightarrow
@@ -319,7 +353,8 @@ $$
 \boxed{e=-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The inclusion of $\OO_C$ gives a nonzero global section of $\mathcal E$.
 Let $M$ be a line bundle of negative degree.
 
@@ -359,17 +394,23 @@ defines the normalized section $C_0$, and
 $$
 C_0^2=-e=1.
 $$
+
 :::
 
-<1>7. Frobenius pullback splits the extension:
+:::
+
+::: {.pf-step #s7}
+
+Frobenius pullback splits the extension:
 $$
 f^*\mathcal E
 \cong
 \OO_C\oplus\OO_C(3P).
 $$
 
-::: {.proof}
-Pulling back the extension of step <1>6 gives
+::: pf-proof
+
+Pulling back the extension of step [](#s6){.pf-ref} gives
 $$
 0
 \longrightarrow
@@ -384,10 +425,15 @@ Its extension class is precisely
 $$
 f^*\xi\in H^1(C,\OO_C(-3P)),
 $$
-which vanishes by the choice made in step <1>5. Hence the sequence splits.
+which vanishes by the choice made in step [](#s5){.pf-ref}. Hence the sequence splits.
+
 :::
 
-<1>8. A splitting in step <1>7 produces a morphism
+:::
+
+::: {.pf-step #s8}
+
+A splitting in step [](#s7){.pf-ref} produces a morphism
 $$
 \varphi:C\longrightarrow X
 $$
@@ -400,7 +446,8 @@ $$
 \varphi^*\OO_X(C_0)\cong\OO_C.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose the quotient supplied by the splitting,
 $$
 f^*\mathcal E\twoheadrightarrow\OO_C.
@@ -425,15 +472,21 @@ chosen quotient line bundle $\OO_C$. Hence
 $$
 \varphi^*\OO_X(C_0)\cong\OO_C.
 $$
+
 :::
 
-<1>9. Let $Y\subset X$ be the scheme-theoretic image of $\varphi$. Then
+:::
+
+::: {.pf-step #s9}
+
+Let $Y\subset X$ be the scheme-theoretic image of $\varphi$. Then
 $Y$ is integral, $\varphi:C\to Y$ is its normalization, and
 $$
 \boxed{Y\equiv3C_0-3f}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $C$ is proper and
 $$
 \pi\circ\varphi=f
@@ -457,7 +510,7 @@ has degree $3$,
 $$
 3=ma.
 $$
-Also step <1>8 gives
+Also step [](#s8){.pf-ref} gives
 $$
 0=\deg\varphi^*\OO_X(C_0)=m(C_0\cdot Y).
 $$
@@ -483,7 +536,7 @@ $$
 C_0-f
 $$
 would have degree one over $C$, hence would be a section, whereas the
-normalized-bundle argument of [[P-AGH5214IRRCURVESCHARP]], step <1>2, shows
+normalized-bundle argument of [[P-AGH5214IRRCURVESCHARP]], step [](#s2){.pf-ref}, shows
 that every section $C_0+bf$ has $b\ge0$.
 
 Therefore $m=1$ and
@@ -492,16 +545,22 @@ Y\equiv3C_0-3f.
 $$
 Since $C$ is nonsingular and the finite map $C\to Y$ is birational, it is
 the normalization of $Y$.
+
 :::
 
-<1>10. The morphism
+:::
+
+::: {.pf-step #s10}
+
+The morphism
 $$
 \pi|_Y:Y\longrightarrow C
 $$
 is purely inseparable of degree $3$.
 
-::: {.proof}
-Step <1>9 identifies the function field of $Y$ with that of its normalization
+::: pf-proof
+
+Step [](#s9){.pf-ref} identifies the function field of $Y$ with that of its normalization
 $C$. Under this identification, the induced extension of function fields for
 $\pi|_Y$ is exactly the extension induced by
 $$
@@ -509,22 +568,28 @@ f:C\longrightarrow C.
 $$
 The characteristic-$3$ Frobenius is purely inseparable of degree $3$.
 Therefore so is $\pi|_Y$.
+
 :::
 
-<1>11. The curve $Y$ is singular; more precisely,
+:::
+
+::: {.pf-step #s11}
+
+The curve $Y$ is singular; more precisely,
 $$
 p_a(Y)=4,
 \qquad
 g(\widetilde Y)=3.
 $$
 
-::: {.proof}
-The base curve is a nonsingular plane quartic, so $g=3$. Step <1>6 gives
+::: pf-proof
+
+The base curve is a nonsingular plane quartic, so $g=3$. Step [](#s6){.pf-ref} gives
 $e=-1$, hence the canonical divisor of the ruled surface is numerically
 $$
 K_X\equiv-2C_0+(2g-2-e)f=-2C_0+5f.
 $$
-Using step <1>9 and adjunction,
+Using step [](#s9){.pf-ref} and adjunction,
 $$
 \begin{aligned}
 2p_a(Y)-2
@@ -537,11 +602,16 @@ Thus
 $$
 p_a(Y)=4.
 $$
-Its normalization is $C$ by step <1>9, so its geometric genus is $3$.
+Its normalization is $C$ by step [](#s9){.pf-ref}, so its geometric genus is $3$.
 Consequently $Y$ is singular, proving the correction recorded above.
+
 :::
 
-<1>12. The divisor
+:::
+
+::: {.pf-step #s12}
+
+The divisor
 $$
 D=2C_0
 $$
@@ -553,7 +623,8 @@ b>\frac12ae,
 $$
 but $D$ is not ample.
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 D=2C_0
@@ -576,7 +647,7 @@ b=0>\frac12(2)(-1)=-1.
 $$
 So the numerical hypotheses of (2.21.b) are satisfied.
 
-On the other hand, step <1>9 gives the integral curve
+On the other hand, step [](#s9){.pf-ref} gives the integral curve
 $$
 Y\equiv3C_0-3f.
 $$
@@ -595,13 +666,21 @@ $$
 \boxed{D\text{ is not ample}.}
 $$
 This is exactly the characteristic-$3$ failure that the exercise exhibits.
+
 :::
 
-<1>13. Q.E.D. for the corrected statement.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 prove part (b), and steps
-<1>6--<1>12 prove the corrected form of part (c) and the non-ampleness
+::: pf-qed
+
+for the corrected statement.
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), and steps
+[](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref} and [](#s12){.pf-ref} prove the corrected form of part (c) and the non-ampleness
 counterexample.
+
 :::
+
+:::
+
 :::

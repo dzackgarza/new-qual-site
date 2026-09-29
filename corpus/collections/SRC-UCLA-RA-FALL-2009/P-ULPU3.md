@@ -45,7 +45,11 @@ R_j\longrightarrow1.
 \]
 For example, one may take $R_j=1-1/(j+1)$.
 
-<1>1. Define a positive Borel measure $\mu_j$ on $[0,2\pi]$ by
+::: pf
+
+::: {.pf-step #s1}
+
+Define a positive Borel measure $\mu_j$ on $[0,2\pi]$ by
 \[
 d\mu_j(\theta)
 =\frac1{2\pi}h(R_je^{i\theta})\,d\theta.
@@ -55,7 +59,9 @@ Then
 \mu_j([0,2\pi])=h(0)
 \]
 for every $j$.
-::: {.proof}
+
+::: pf-proof
+
 The function
 \[
 \theta\longmapsto h(R_je^{i\theta})
@@ -73,16 +79,23 @@ h(0)
 =\frac1{2\pi}\int_0^{2\pi}h(R_je^{i\theta})\,d\theta
 =\mu_j([0,2\pi]).
 \]
+
 :::
 
-<1>2. After passing to a subsequence, the measures $\mu_j$ converge weak-* to a finite positive Borel measure $\mu$ on $[0,2\pi]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+After passing to a subsequence, the measures $\mu_j$ converge weak-* to a finite positive Borel measure $\mu$ on $[0,2\pi]$.
+
+::: pf-proof
+
 By the Riesz representation theorem, finite signed Borel measures on the compact interval $[0,2\pi]$ identify with the dual space
 \[
 C([0,2\pi])^*.
 \]
 For a positive measure, its dual norm is its total mass.
-Hence <1>1 gives the uniform bound
+Hence step [](#s1){.pf-ref} gives the uniform bound
 \[
 \|\mu_j\|=h(0).
 \]
@@ -106,15 +119,22 @@ Therefore
 \int\varphi\,d\mu
 \]
 for every fixed continuous $\varphi$.
+
 :::
 
-<1>3. Fix $0\le r<1$ and $\eta\in\mathbb R$.
+:::
+
+::: {.pf-step #s3}
+
+Fix $0\le r<1$ and $\eta\in\mathbb R$.
 For all sufficiently large $j$, so that $r<R_j$, the given Poisson formula yields
 \[
 h(re^{i\eta})
 =\int_0^{2\pi}P_{r/R_j}(\eta-\theta)\,d\mu_j(\theta).
 \]
-::: {.proof}
+
+::: pf-proof
+
 For large $j$ we have $R_j>r$.
 Applying the formula supplied in the problem at radius $R_j$ gives
 \[
@@ -122,10 +142,15 @@ h(re^{i\eta})
 =\frac1{2\pi}\int_0^{2\pi}
 P_{r/R_j}(\eta-\theta)h(R_je^{i\theta})\,d\theta.
 \]
-The definition of $\mu_j$ in <1>1 turns this exactly into the displayed identity.
+The definition of $\mu_j$ in step [](#s1){.pf-ref} turns this exactly into the displayed identity.
+
 :::
 
-<1>4. The functions
+:::
+
+::: {.pf-step #s4}
+
+The functions
 \[
 \varphi_j(\theta)=P_{r/R_j}(\eta-\theta)
 \]
@@ -133,7 +158,9 @@ converge uniformly on $[0,2\pi]$ to
 \[
 \varphi(\theta)=P_r(\eta-\theta).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $R_j\to1$,
 \[
 \frac r{R_j}\longrightarrow r.
@@ -158,15 +185,22 @@ is continuous on the compact set
 \]
 It is therefore uniformly continuous there.
 Hence convergence of the parameter $r/R_j\to r$ implies uniform convergence in $\theta$.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 \[
 \int_0^{2\pi}\varphi_j\,d\mu_j
 \longrightarrow
 \int_0^{2\pi}\varphi\,d\mu.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 \begin{aligned}
@@ -179,12 +213,17 @@ Write
 +\left|\int\varphi\,d\mu_j-\int\varphi\,d\mu\right|.
 \end{aligned}
 \]
-By <1>1, the masses in the first term equal the fixed number $h(0)$, and by <1>4 the uniform norm tends to $0$.
-The second term tends to $0$ by weak-* convergence from <1>2, since $\varphi$ is fixed and continuous.
+By step [](#s1){.pf-ref}, the masses in the first term equal the fixed number $h(0)$, and by step [](#s4){.pf-ref} the uniform norm tends to $0$.
+The second term tends to $0$ by weak-* convergence from step [](#s2){.pf-ref}, since $\varphi$ is fixed and continuous.
 Thus the entire expression tends to $0$.
+
 :::
 
-<1>6. The measure $\mu$ from <1>2 satisfies
+:::
+
+::: pf-step
+
+The measure $\mu$ from step [](#s2){.pf-ref} satisfies
 \[
 \boxed{
 h(re^{i\eta})
@@ -192,13 +231,21 @@ h(re^{i\eta})
 }
 \]
 for every $re^{i\eta}\in\mathbb D$.
-::: {.proof}
-For fixed $r,\eta$, the left side of the identity in <1>3 is independent of $j$.
-Taking $j\to\infty$ and applying <1>5 gives
+
+::: pf-proof
+
+For fixed $r,\eta$, the left side of the identity in step [](#s3){.pf-ref} is independent of $j$.
+Taking $j\to\infty$ and applying step [](#s5){.pf-ref} gives
 \[
 h(re^{i\eta})
 =\int_0^{2\pi}P_r(\eta-\theta)\,d\mu(\theta).
 \]
 Since $r<1$ and $\eta$ were arbitrary, the representation holds throughout the open unit disk.
+
 :::
+
+:::
+
+:::
+
 :::

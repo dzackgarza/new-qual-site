@@ -48,7 +48,11 @@ $$
 f(z)=\sum_{n=0}^{\infty}c_nz^n.
 $$
 
-<1>1. If
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 \abs{f(z)}
 \leq
@@ -61,7 +65,8 @@ $$
 \frac{aR^{1/2}+b}{R^n}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Cauchy's coefficient formula on the circle $\abs{\zeta}=R$ gives
 $$
 c_n
@@ -89,16 +94,22 @@ $$
 \frac{aR^{1/2}+b}{R^n}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. Under the hypothesis of part (1),
+:::
+
+::: {.pf-step #s2}
+
+Under the hypothesis of part (1),
 $$
 c_n=0
 $$
 for every $n\geq1$.
 
-::: {.proof}
-Fix $n\geq1$. Step <1>1 gives
+::: pf-proof
+
+Fix $n\geq1$. Step [](#s1){.pf-ref} gives
 $$
 \abs{c_n}
 \leq
@@ -112,22 +123,33 @@ both terms on the right tend to zero as $R\to\infty$. Therefore
 $$
 \abs{c_n}=0.
 $$
+
 :::
 
-<1>3. Under the hypothesis of part (1),
+:::
+
+::: {.pf-step #s3}
+
+Under the hypothesis of part (1),
 $$
 \boxed{f\text{ is constant}.}
 $$
 
-::: {.proof}
-By step <1>2, every Taylor coefficient of positive degree vanishes. Hence
+::: pf-proof
+
+By step [](#s2){.pf-ref}, every Taylor coefficient of positive degree vanishes. Hence
 $$
 f(z)=c_0
 $$
 for every $z\in\CC$.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 \abs{f(z)}
 \leq
@@ -140,19 +162,26 @@ $$
 \frac{aR^{5/2}+b}{R^n}.
 $$
 
-::: {.proof}
-The proof is identical to step <1>1, with the new growth bound replacing
+::: pf-proof
+
+The proof is identical to step [](#s1){.pf-ref}, with the new growth bound replacing
 the old one in Cauchy's coefficient estimate.
+
 :::
 
-<1>5. Under the hypothesis of part (2),
+:::
+
+::: {.pf-step #s5}
+
+Under the hypothesis of part (2),
 $$
 c_n=0
 $$
 for every $n\geq3$.
 
-::: {.proof}
-Fix $n\geq3$. Step <1>4 gives
+::: pf-proof
+
+Fix $n\geq3$. Step [](#s4){.pf-ref} gives
 $$
 \abs{c_n}
 \leq
@@ -166,27 +195,39 @@ the right-hand side tends to zero as $R\to\infty$. Therefore
 $$
 c_n=0.
 $$
+
 :::
 
-<1>6. Under the hypothesis of part (2),
+:::
+
+::: {.pf-step #s6}
+
+Under the hypothesis of part (2),
 $$
 \boxed{
 f\text{ is a polynomial of degree at most }2.
 }
 $$
 
-::: {.proof}
-Step <1>5 shows that every Taylor coefficient of degree at least $3$
+::: pf-proof
+
+Step [](#s5){.pf-ref} shows that every Taylor coefficient of degree at least $3$
 vanishes. Thus
 $$
 f(z)=c_0+c_1z+c_2z^2.
 $$
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves part (1), and step <1>6 gives the conclusion for part
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), and step [](#s6){.pf-ref} gives the conclusion for part
 (2).
+
 :::
+
+:::
+
 :::

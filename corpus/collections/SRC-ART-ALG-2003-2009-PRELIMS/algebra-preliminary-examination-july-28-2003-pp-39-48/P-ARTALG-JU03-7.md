@@ -33,19 +33,30 @@ The Galois group of a nonzero polynomial means the group of
 $F$-automorphisms of its splitting field. As usual this notation
 presupposes $g\ne0$. Fix an algebraic closure $\overline F$.
 
-<1>1. The quotient $h(x)=g(x)/(x-\alpha)$ belongs to $F[x]$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The quotient $h(x)=g(x)/(x-\alpha)$ belongs to $F[x]$.
+
+::: pf-proof
+
 Division by the monic linear polynomial $x-\alpha$ gives
 $g=(x-\alpha)h+c$, with $h\in F[x]$ and $c\in F$.
 Evaluation at $\alpha$ gives $c=g(\alpha)=0$.
 Since $g\ne0$, the quotient $h$ is nonzero and
 $\deg h=\deg g-1$.
+
 :::
 
-<1>2. The two splitting fields inside $\overline F$ are equal.
+:::
 
-::: {.proof}
+::: pf-step
+
+The two splitting fields inside $\overline F$ are equal.
+
+::: pf-proof
+
 Let $R_g$ and $R_h$ be the sets of roots in $\overline F$,
 without counting multiplicities. The identity
 $g=(x-\alpha)h$ implies
@@ -62,12 +73,24 @@ $$
 These are exactly the two splitting fields. If $\deg g=1$,
 then $h$ is a nonzero constant, $R_h$ is empty, and both fields
 are $F$; the same equality covers that case.
+
 :::
 
-<1>3. The Galois groups coincide.
+:::
 
-::: {.proof}
+::: pf-step
+
+The Galois groups coincide.
+
+::: pf-proof
+
 Writing the common splitting field as $L$, both groups equal
 $\operatorname{Aut}_F(L)$, with the same composition law.
+
 :::
+
+:::
+
+:::
+
 :::

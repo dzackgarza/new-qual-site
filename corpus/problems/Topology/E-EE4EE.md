@@ -24,28 +24,63 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let $X$ be a topological space and $A \subseteq X$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $X$ be a topological space and $A \subseteq X$.
+
+::: pf-proof
+
 setup.
+
 :::
 
-<1>2. A point $x \in A$ is an **interior point** of $A$ if there is an open set $U$ with $x \in U \subseteq A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A point $x \in A$ is an **interior point** of $A$ if there is an open set $U$ with $x \in U \subseteq A$.
+
+::: pf-proof
+
 definition of interior point.
+
 :::
 
-<1>3. A point $x \in A$ is an **isolated point** of $A$ if there is an open set $U$ with $U \cap A = \{x\}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+A point $x \in A$ is an **isolated point** of $A$ if there is an open set $U$ with $U \cap A = \{x\}$.
+
+::: pf-proof
+
 definition of isolated point.
+
 :::
 
-<1>4. A point $x \in X$ is a **limit point** (accumulation point) of $A$ if every open set $U$ containing $x$ meets $A$ in a point other than $x$, i.e. $(U \setminus \{x\}) \cap A \neq \varnothing$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+A point $x \in X$ is a **limit point** (accumulation point) of $A$ if every open set $U$ containing $x$ meets $A$ in a point other than $x$, i.e. $(U \setminus \{x\}) \cap A \neq \varnothing$.
+
+::: pf-proof
+
 definition of limit point.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>2, <1>3, <1>4.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

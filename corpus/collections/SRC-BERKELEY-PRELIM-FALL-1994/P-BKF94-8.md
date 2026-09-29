@@ -42,26 +42,37 @@ x\coloneqq\sin\frac{\theta}{3},
 s\coloneqq\sin\theta.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 s=3x-4x^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the triple-angle identity
 $$
 \sin(3u)=3\sin u-4\sin^3u
 $$
 with $u=\theta/3$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 F_\theta\subseteq E_\theta.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 s=3x-4x^3\in\QQ(x)=E_\theta.
 $$
@@ -69,15 +80,21 @@ Therefore
 $$
 F_\theta=\QQ(s)\subseteq E_\theta.
 $$
+
 :::
 
-<1>3. The extension degree satisfies
+:::
+
+::: {.pf-step #s3}
+
+The extension degree satisfies
 $$
 [E_\theta:F_\theta]\in\{1,2,3\}.
 $$
 
-::: {.proof}
-Step <1>1 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives
 $$
 4x^3-3x+s=0.
 $$
@@ -88,11 +105,17 @@ E_\theta=F_\theta(x),
 $$
 the degree $[E_\theta:F_\theta]$ is the degree of that minimal polynomial,
 so it is $1$, $2$, or $3$.
+
 :::
 
-<1>4. Degree $1$ occurs.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Degree $1$ occurs.
+
+::: pf-proof
+
 Take $\theta=0$. Then
 $$
 \sin\theta=0
@@ -103,11 +126,17 @@ Hence
 $$
 F_0=E_0=\QQ.
 $$
+
 :::
 
-<1>5. Degree $2$ occurs.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Degree $2$ occurs.
+
+::: pf-proof
+
 Take $\theta=\pi$. Then
 $$
 F_\pi
@@ -130,11 +159,17 @@ Therefore
 $$
 [E_\pi:F_\pi]=2.
 $$
+
 :::
 
-<1>6. Degree $3$ occurs.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Degree $3$ occurs.
+
+::: pf-proof
+
 Take
 $$
 \theta=\frac{\pi}{6}.
@@ -174,21 +209,33 @@ so
 $$
 [E_\theta:F_\theta]=3.
 $$
+
 :::
 
-<1>7. The complete set of possibilities is
+:::
+
+::: {.pf-step #s7}
+
+The complete set of possibilities is
 $$
 \boxed{\{1,2,3\}}.
 $$
 
-::: {.proof}
-Step <1>3 gives the only possible degrees, and steps <1>4--<1>6 show that
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives the only possible degrees, and steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} show that
 each of them occurs.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>2 and <1>7 prove the two requested assertions.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s7){.pf-ref} prove the two requested assertions.
+
+:::
+
+:::
+
 :::

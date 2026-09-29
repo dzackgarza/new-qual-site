@@ -52,9 +52,14 @@ $$
 Since $(0,w)(0,w')=(0,w+w')$ and $W$ is a subspace, $N$ is a subgroup of
 $G$.
 
-<1>1. $G'\subseteq N$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$G'\subseteq N$.
+
+::: pf-proof
+
 For $g=(k,a)$ and $h=(\ell,b)$, direct multiplication gives
 $$
 \begin{aligned}
@@ -78,23 +83,34 @@ $$
 and the positive-power factorization applies to $T^{-n}-I$; all powers of
 $T$ commute with $T-I$. Thus both $(I-T^\ell)a$ and $(T^k-I)b$ lie in $W$,
 so every commutator lies in $N$. Since $N$ is a subgroup, $G'\subseteq N$.
+
 :::
 
-<1>2. $N\subseteq G'$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$N\subseteq G'$.
+
+::: pf-proof
+
 Let $w\in W$. Then $w=(T-I)v$ for some $v\in V$. Take
 $$
 g=(1,0),\qquad h=(0,v).
 $$
-The commutator formula in the proof of step <1>1 gives
+The commutator formula in the proof of step [](#s1){.pf-ref} gives
 $$
 [g,h]=(0,(T-I)v)=(0,w).
 $$
 Hence every element of $N$ is a commutator and lies in $G'$.
+
 :::
 
-<1>3. The map
+:::
+
+::: {.pf-step #s3}
+
+The map
 $$
 \Phi:(T-I)V\longrightarrow G',\qquad \Phi(w)=f_{0,w},
 $$
@@ -103,8 +119,9 @@ $$
 \boxed{G'\cong ((T-I)V,+)}.
 $$
 
-::: {.proof}
-Steps <1>1 and <1>2 give
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 G'=N=\{f_{0,w}:w\in (T-I)V\},
 $$
@@ -113,11 +130,17 @@ $$
 f_{0,w}\circ f_{0,w'}=f_{0,w+w'},
 $$
 $\Phi$ is a homomorphism. It is injective because $f_{0,w}(0)=w$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required isomorphism.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required isomorphism.
+
+:::
+
+:::
+
 :::

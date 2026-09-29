@@ -45,27 +45,51 @@ $f = \alpha z ^ { n }$ for $\alpha \in \mathbb { C } , | \alpha | = 1$ and an in
 :::
 
 ::: {.solution}
-<1>1. (a) $f$ has a removable singularity at $0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+(a) $f$ has a removable singularity at $0$.
+
+::: pf-proof
+
 With $t=\log(1/\abs z)$, the hypothesis gives $\abs{zf(z)}\le e^{-t}t^{100}\le101!/t$ for $\abs z\le1/2$, using $e^t\ge t^{101}/101!$, so $zf(z)\to0$ as $z\to0$. By the removable singularity theorem $h(z)=zf(z)$ extends holomorphically with $h(0)=0$, so $h(z)=zH(z)$ with $H$ holomorphic near $0$, and $H$ extends $f$ [@SS03].
+
 :::
 
-<1>2. (b) If $f$, extended by step <1>1, has no zero in $\abs z<1$, then $f$ is constant.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+(b) If $f$, extended by step [](#s1){.pf-ref}, has no zero in $\abs z<1$, then $f$ is constant.
+
+::: pf-proof
+
 Both $f$ and $1/f$ are holomorphic on $\abs z\le1$ with modulus $1$ on $\abs z=1$, so the maximum modulus principle gives $\abs f\le1$ and $\abs{1/f}\le1$ there. So $\abs f\equiv1$ on $\abs z<1$, where $f$ attains its maximum modulus at an interior point; hence $f$ is constant on $\abs z<1$, and on the connected disk $\abs z<2$ by the identity theorem.
+
 :::
 
-<1>3. (c) False: $f(z)=z^{100}\frac{z-1/3}{1-z/3}$ satisfies both hypotheses and is not of the form $\alpha z^n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+(c) False: $f(z)=z^{100}\frac{z-1/3}{1-z/3}$ satisfies both hypotheses and is not of the form $\alpha z^n$.
+
+::: pf-proof
+
 $f$ is holomorphic on $\abs z<2$, since its only pole is $z=3$. For $a=1/3$, $\abs{1-az}^2-\abs{z-a}^2=(1-a^2)(1-\abs z^2)$, so the rational factor has modulus $1$ on $\abs z=1$ and at most $1$ on $\abs z\le1$. Hence $\abs f=1$ on $\abs z=1$, and for $0<r=\abs z\le1/2$, $\abs{f(z)}\le r^{100}\le(\log(1/r))^{100}$, because $\log(1/r)\ge\log2>1/2\ge r$. Finally $f(1/3)=0$, while $\alpha z^n$ with $\abs\alpha=1$ has no zero other than $0$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2 and <1>3 answer parts (a), (b) and (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} answer parts (a), (b) and (c).
+
+:::
+
+:::
+
 :::

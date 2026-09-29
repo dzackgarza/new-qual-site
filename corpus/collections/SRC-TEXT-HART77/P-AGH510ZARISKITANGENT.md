@@ -40,12 +40,17 @@ A=\OO_{X,P},\qquad \mathfrak m=\mathfrak m_P.
 $$
 Since $X$ is a variety over the algebraically closed field $k$, the residue field at the closed point $P$ is $k$.
 
-<1>1. The tangent-space dimension is the embedding dimension of the local ring:
+::: pf
+
+::: {.pf-step #s1}
+
+The tangent-space dimension is the embedding dimension of the local ring:
 $$
 \dim_kT_P(X)=\dim_k\mathfrak m/\mathfrak m^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is immediate from the definition
 $$
 T_P(X)=(\mathfrak m/\mathfrak m^2)^\vee.
@@ -53,15 +58,21 @@ $$
 The vector space $\mathfrak m/\mathfrak m^2$ is finite-dimensional because the local ring is noetherian and its maximal ideal is finitely generated.
 Its dimension is the minimum number of generators of $\mathfrak m$, by Nakayama's lemma, and is called the embedding dimension of $A$.
 Dual finite-dimensional vector spaces have the same dimension.
+
 :::
 
-<1>2. For every point $P$ of the variety,
+:::
+
+::: {.pf-step #s2}
+
+For every point $P$ of the variety,
 $$
 \boxed{\dim T_P(X)\ge\dim X,}
 $$
 with equality exactly when $P$ is nonsingular.
 
-::: {.proof}
+::: pf-proof
+
 The noetherian local ring $A$ satisfies
 $$
 \dim A\le\dim_k\mathfrak m/\mathfrak m^2
@@ -73,7 +84,7 @@ $$
 \dim A=\operatorname{height}\mathfrak m\le e.
 $$
 For a closed point of a variety, $\dim A=\dim X$ [@Har10a, Exercise I.3.12].
-Step <1>1 therefore gives the displayed inequality.
+Step [](#s1){.pf-ref} therefore gives the displayed inequality.
 
 By definition, a noetherian local ring is regular precisely when
 $$
@@ -81,14 +92,20 @@ $$
 $$
 For varieties, the local ring $\OO_{X,P}$ is regular exactly when $P$ is nonsingular [@Har10a, Theorem I.5.1].
 Thus equality in the tangent-space inequality is equivalent to nonsingularity, proving part (1).
+
 :::
 
-<1>3. A morphism $\varphi:X\to Y$ naturally induces a linear tangent map
+:::
+
+::: {.pf-step #s3}
+
+A morphism $\varphi:X\to Y$ naturally induces a linear tangent map
 $$
 \boxed{T_P(\varphi):T_P(X)\longrightarrow T_{\varphi(P)}(Y).}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put $Q=\varphi(P)$ and let
 $$
 \mathfrak n\subseteq\OO_{Y,Q}
@@ -125,14 +142,20 @@ $$
 These are exactly $T_P(X)$ and $T_Q(Y)$.
 The construction uses only the induced local-ring map, so it is natural and respects identities and composition.
 This proves part (2).
+
 :::
 
-<1>4. For vertical projection of the parabola $X=V(x-y^2)$ to the $x$-axis,
+:::
+
+::: {.pf-step #s4}
+
+For vertical projection of the parabola $X=V(x-y^2)$ to the $x$-axis,
 $$
 \boxed{T_0(\varphi)=0.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The parabola has coordinate ring
 $$
 k[x,y]/(x-y^2)\cong k[y],
@@ -157,11 +180,17 @@ T_0(X)\longrightarrow T_0(\AA_x^1),
 $$
 as required.
 Geometrically, the parabola has vertical tangent at the origin, so its differential under vertical projection collapses that tangent direction.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (1), step <1>3 proves part (2), and step <1>4 proves part (3).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (1), step [](#s3){.pf-ref} proves part (2), and step [](#s4){.pf-ref} proves part (3).
+
+:::
+
+:::
+
 :::

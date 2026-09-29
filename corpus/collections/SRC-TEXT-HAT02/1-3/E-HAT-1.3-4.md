@@ -33,27 +33,40 @@ Do the same when $X$ is the union of a sphere and a circle intersecting it in tw
 ::: {.solution}
 Let $p,q\in S^2$ be the two endpoints of the added diameter in the first space.
 
-<1>1. For the sphere-with-diameter space, construct $\widetilde X$ from copies
+::: pf
+
+::: {.pf-step #s1}
+
+For the sphere-with-diameter space, construct $\widetilde X$ from copies
 \[
 S_n^2\cong S^2,
 \qquad n\in\mathbb Z,
 \]
 by adjoining an interval $I_n$ from the point $q_n\in S_n^2$ to the point $p_{n+1}\in S_{n+1}^2$ for every $n$.
-::: {.proof}
+
+::: pf-proof
+
 Here $p_n,q_n$ denote the copies of $p,q$ in $S_n^2$.
 Thus the incidence pattern is the infinite line
 \[
 \cdots-S_{-1}^2-I_{-1}-S_0^2-I_0-S_1^2-I_1-\cdots .
 \]
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 \[
 P:\widetilde X\to X
 \]
 by mapping every $S_n^2$ homeomorphically onto the sphere and every $I_n$ homeomorphically onto the diameter, with its endpoints sent to $q$ and $p$ respectively.
 Then $P$ is a covering map.
-::: {.proof}
+
+::: pf-proof
+
 Away from $p$ and $q$, the assertion is immediate: a small neighborhood lies either in the sphere away from the attachment points or in the interior of the diameter, and its inverse image is a disjoint union of copies.
 
 Choose a small disk neighborhood $D_p$ of $p$ in the sphere and a short initial subinterval $J_p$ of the diameter meeting the sphere only at $p$.
@@ -67,10 +80,17 @@ These lifted neighborhoods are pairwise disjoint and each maps homeomorphically 
 
 The same construction at $q$ uses the initial segment of $I_n$ issuing from $q_n$.
 Thus $p$ and $q$ are evenly covered as well.
+
 :::
 
-<1>3. The covering space $\widetilde X$ is simply connected.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The covering space $\widetilde X$ is simply connected.
+
+::: pf-proof
+
 Each sphere $S_n^2$ and each interval $I_n$ is simply connected, adjacent pieces meet in a single point, and the incidence graph is the infinite line, hence a tree.
 Any loop has compact image, so it meets only finitely many of these pieces and lies in a finite subtree of the graph of spaces.
 Repeated application of van Kampen along point intersections shows that every such finite union is simply connected.
@@ -78,26 +98,39 @@ Hence
 \[
 \pi_1(\widetilde X)=0.
 \]
+
 :::
 
-<1>4. Now let $X'$ be the union of $S^2$ with a circle meeting the sphere exactly at $p$ and $q$.
+:::
+
+::: pf-step
+
+Now let $X'$ be the union of $S^2$ with a circle meeting the sphere exactly at $p$ and $q$.
 Write the two arcs of the added circle from $p$ to $q$ as $A$ and $B$.
 Let
 \[
 F_2=\langle a,b\rangle
 \]
 be the free group on two generators.
-::: {.proof}
+
+::: pf-proof
+
 The two arcs $A$ and $B$ are disjoint except at their endpoints $p,q$.
 The symbols $a,b$ will record which of these two arc types is crossed in the covering.
+
 :::
 
-<1>5. Construct $\widetilde X'$ from a copy $S_g^2$ of the sphere for every $g\in F_2$ as follows:
+:::
+
+::: {.pf-step #s5}
+
+Construct $\widetilde X'$ from a copy $S_g^2$ of the sphere for every $g\in F_2$ as follows:
 
 - for each $g$, attach an interval $A_g$ from $p_g\in S_g^2$ to $q_{ga}\in S_{ga}^2$;
 - for each $g$, attach an interval $B_g$ from $p_g\in S_g^2$ to $q_{gb}\in S_{gb}^2$.
 
-::: {.proof}
+::: pf-proof
+
 If each sphere copy is collapsed to a vertex, the resulting incidence graph has vertex set $F_2$ and edges
 \[
 g\longleftrightarrow ga,
@@ -105,14 +138,21 @@ g\longleftrightarrow ga,
 g\longleftrightarrow gb.
 \]
 This is the Cayley graph of $F_2$ with respect to $a,b$, hence a tree.
+
 :::
 
-<1>6. Map each $S_g^2$ homeomorphically to the sphere, each $A_g$ homeomorphically to $A$, and each $B_g$ homeomorphically to $B$.
+:::
+
+::: {.pf-step #s6}
+
+Map each $S_g^2$ homeomorphically to the sphere, each $A_g$ homeomorphically to $A$, and each $B_g$ homeomorphically to $B$.
 This defines a covering map
 \[
 P':\widetilde X'\to X'.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Away from $p,q$, the local covering property is immediate.
 
 At $p_g$, exactly one lift of a short initial segment of $A$ and one lift of a short initial segment of $B$ issue from the sphere sheet $S_g^2$, namely the segments in $A_g$ and $B_g$.
@@ -124,16 +164,36 @@ A_{ga^{-1}}\quad\text{and}\quad B_{gb^{-1}},
 \]
 again giving exactly one lift of each local branch at $q$.
 Thus neighborhoods of both intersection points are evenly covered.
+
 :::
 
-<1>7. The space $\widetilde X'$ is simply connected.
-::: {.proof}
-Its sphere pieces are simply connected and their incidence graph is the Cayley tree from <1>5.
-As in <1>3, every loop lies in a finite subtree of sphere and interval pieces, and van Kampen along the point intersections gives trivial fundamental group.
 :::
 
-<1>8. Therefore the constructions in <1>1 and <1>5 are simply connected covering spaces of the two requested spaces.
-::: {.proof}
-The covering properties are <1>2 and <1>6, and simple connectivity is <1>3 and <1>7.
+::: {.pf-step #s7}
+
+The space $\widetilde X'$ is simply connected.
+
+::: pf-proof
+
+Its sphere pieces are simply connected and their incidence graph is the Cayley tree from step [](#s5){.pf-ref}.
+As in step [](#s3){.pf-ref}, every loop lies in a finite subtree of sphere and interval pieces, and van Kampen along the point intersections gives trivial fundamental group.
+
 :::
+
+:::
+
+::: pf-step
+
+Therefore the constructions in steps [](#s1){.pf-ref} and [](#s5){.pf-ref} are simply connected covering spaces of the two requested spaces.
+
+::: pf-proof
+
+The covering properties are steps [](#s2){.pf-ref} and [](#s6){.pf-ref}, and simple connectivity is steps [](#s3){.pf-ref} and [](#s7){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

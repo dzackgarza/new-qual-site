@@ -53,8 +53,14 @@ Define
 C=\left\langle gHg^{-1}:g\in G\right\rangle.
 \]
 
-<1>1. The subgroup $C$ is normal in $G$ and contains $H$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup $C$ is normal in $G$ and contains $H$.
+
+::: pf-proof
+
 Taking $g=e$ shows that $H\le C$.
 
 For $x,g\in G$ and $h\in H$,
@@ -68,39 +74,60 @@ Applying the same argument to $x^{-1}$ gives the reverse inclusion, so
 xCx^{-1}=C.
 \]
 Hence $C\normal G$.
+
 :::
 
-<1>2. The subgroup $C$ is the smallest normal subgroup of $G$ containing $H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The subgroup $C$ is the smallest normal subgroup of $G$ containing $H$.
+
+::: pf-proof
+
 Let $N\normal G$ with $H\le N$.
 For every $g\in G$, normality gives
 \[
 gHg^{-1}\le gNg^{-1}=N.
 \]
 Therefore $N$ contains every generator of $C$, and hence $C\le N$.
-Together with <1>1, this proves that $C$ is precisely the smallest normal subgroup of $G$ containing $H$.
+Together with step [](#s1){.pf-ref}, this proves that $C$ is precisely the smallest normal subgroup of $G$ containing $H$.
+
 :::
 
-<1>3. We have
+:::
+
+::: {.pf-step #s3}
+
+We have
 \[
 C=\bigcap_{\substack{H\le N\\N\normal G}}N.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 I=\bigcap_{\substack{H\le N\\N\normal G}}N.
 \]
 The family being intersected is nonempty because it contains $G$ itself.
-By <1>2, $C$ is contained in every member of this family, so $C\le I$.
-On the other hand, <1>1 says that $C$ itself is a normal subgroup containing $H$, so it is one of the subgroups occurring in the intersection.
+By step [](#s2){.pf-ref}, $C$ is contained in every member of this family, so $C\le I$.
+On the other hand, step [](#s1){.pf-ref} says that $C$ itself is a normal subgroup containing $H$, so it is one of the subgroups occurring in the intersection.
 Hence $I\le C$.
 Thus $I=C$.
+
 :::
 
-<1>4. Every homomorphism $\phi:G\to X$ satisfying $\phi(H)=\{e_X\}$ factors uniquely through $G/C$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every homomorphism $\phi:G\to X$ satisfying $\phi(H)=\{e_X\}$ factors uniquely through $G/C$.
+
+::: pf-proof
+
 The hypothesis $\phi(H)=\{e_X\}$ says $H\le\ker\phi$.
-Since $\ker\phi\normal G$, <1>2 gives
+Since $\ker\phi\normal G$, step [](#s2){.pf-ref} gives
 \[
 C\le\ker\phi.
 \]
@@ -118,12 +145,19 @@ It is a homomorphism and satisfies
 \phi=\bar\phi\circ q.
 \]
 Because $q$ is surjective, any homomorphism with this factorization is forced to send $gC=q(g)$ to $\phi(g)$, so $\bar\phi$ is unique.
+
 :::
 
-<1>5. The factorization property characterizes $C$ among normal subgroups containing $H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The factorization property characterizes $C$ among normal subgroups containing $H$.
+
+::: pf-proof
+
 Let $D\normal G$ contain $H$, and suppose every homomorphism from $G$ that kills $H$ factors through $G/D$.
-By <1>2, $C\le D$.
+By step [](#s2){.pf-ref}, $C\le D$.
 
 The quotient map
 \[
@@ -140,13 +174,26 @@ q_C(d)=\psi(D)=C.
 \]
 Thus $d\in C$, so $D\le C$.
 Therefore $D=C$.
+
 :::
 
-<1>6. Therefore the four characterizations define the same subgroup, the normal closure $\operatorname{clos}(H)=C$.
-::: {.proof}
-Property (ii) is the definition of $C$.
-Steps <1>1 and <1>2 prove property (i), <1>3 proves property (iii), and <1>4 proves property (iv).
-Step <1>5 shows that property (iv), like the other descriptions, uniquely determines the same normal subgroup.
-Hence all four characterizations are equivalent.
 :::
+
+::: pf-step
+
+Therefore the four characterizations define the same subgroup, the normal closure $\operatorname{clos}(H)=C$.
+
+::: pf-proof
+
+Property (ii) is the definition of $C$.
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove property (i), step [](#s3){.pf-ref} proves property (iii), and step [](#s4){.pf-ref} proves property (iv).
+Step [](#s5){.pf-ref} shows that property (iv), like the other descriptions, uniquely determines the same normal subgroup.
+Hence all four characterizations are equivalent.
+
+:::
+
+:::
+
+:::
+
 :::

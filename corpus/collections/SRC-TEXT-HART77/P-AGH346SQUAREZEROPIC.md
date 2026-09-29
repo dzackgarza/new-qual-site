@@ -40,9 +40,14 @@ All structure rings are commutative, and $X$ and $X_0$ have the same underlying 
 Write $\rho:\OO_X\to\OO_{X_0}$ for the quotient morphism and $\rho^\times$ for its restriction to the sheaves of units.
 The zero symbols in the displayed exact sequences denote trivial abelian groups; the neutral element in a unit group is $1$.
 
-<1>1. The map $e:\mci\to\OO_X^\times$, $a\mapsto1+a$, is an injective homomorphism of abelian sheaves with image $\ker\rho^\times$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The map $e:\mci\to\OO_X^\times$, $a\mapsto1+a$, is an injective homomorphism of abelian sheaves with image $\ker\rho^\times$.
+
+::: pf-proof
+
 For sections $a,b$ of $\mci$ on the same open set, their product is zero because $\mci^2=0$.
 Thus
 $$
@@ -55,11 +60,17 @@ Its image reduces to $1$ in the quotient sheaf.
 Conversely, a section $u$ of $\OO_X^\times$ whose image is the identity satisfies $u-1\in\ker\rho=\mci$.
 It is therefore $e(u-1)$.
 This proves the kernel identification as sheaves.
+
 :::
 
-<1>2. The morphism $\rho^\times$ is surjective as a morphism of sheaves.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The morphism $\rho^\times$ is surjective as a morphism of sheaves.
+
+::: pf-proof
+
 The stalk of the sheaf of units at $x$ is the unit group of the ring $\OO_{X,x}$.
 Indeed, a unit germ and its inverse have representatives whose product is $1$ after restricting to a sufficiently small common neighborhood; those representatives are inverse unit sections there.
 Hence it suffices to prove that units lift across the stalk quotient $B\to B/J$, where $B=\OO_{X,x}$ and $J=\mci_x$ has $J^2=0$.
@@ -69,13 +80,19 @@ Then $bc=1+a$ for $a\in J$.
 Since $(1+a)^{-1}=1-a$, the element $c(1-a)$ is an inverse for $b$.
 Thus $b$ is a unit lifting $\bar b$.
 This proves surjectivity at every stalk and therefore surjectivity of sheaves.
-Together with step <1>1 it proves the required short exact sequence.
+Together with step [](#s1){.pf-ref} it proves the required short exact sequence.
+
 :::
 
-<1>3. Its cohomology sequence gives the required Picard exact sequence, whose middle map is $[L]\mapsto[L\otimes_{\OO_X}\OO_{X_0}]$.
+:::
 
-::: {.proof}
-Apply the long exact sequence of derived global sections to the short exact sequence of abelian sheaves in steps <1>1--<1>2.
+::: {.pf-step #s3}
+
+Its cohomology sequence gives the required Picard exact sequence, whose middle map is $[L]\mapsto[L\otimes_{\OO_X}\OO_{X_0}]$.
+
+::: pf-proof
+
+Apply the long exact sequence of derived global sections to the short exact sequence of abelian sheaves in steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
 Its beginning is
 $$
 \begin{aligned}
@@ -96,11 +113,17 @@ $$
 $$
 In particular, an invertible sheaf on $X_0$ lifts precisely when its connecting class in $H^2(X,\mci)$ is zero.
 No assertion that the map on global units is surjective was needed.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove exactness of the sheaf sequence, and step <1>3 gives the cohomological and Picard conclusions.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove exactness of the sheaf sequence, and step [](#s3){.pf-ref} gives the cohomological and Picard conclusions.
+
+:::
+
+:::
+
 :::

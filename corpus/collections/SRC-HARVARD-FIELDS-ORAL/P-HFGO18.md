@@ -32,9 +32,15 @@ f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0
 \]
 with $a_n\ne0$ and $n$ odd.
 
-<1>1. The values of $f(x)$ have opposite signs for sufficiently large positive
+::: pf
+
+::: {.pf-step #s1}
+
+The values of $f(x)$ have opposite signs for sufficiently large positive
 and negative $x$.
-::: {.proof}
+
+::: pf-proof
+
 Divide by the leading term:
 \[
 \frac{f(x)}{a_nx^n}
@@ -43,15 +49,28 @@ Divide by the leading term:
 \]
 as $|x|\to\infty$. Hence for sufficiently large $R>0$, $f(R)$ has the sign of
 $a_n$, while, because $n$ is odd, $f(-R)$ has the opposite sign.
+
 :::
 
-<1>2. The polynomial $f$ has a real zero.
-::: {.proof}
-Polynomials are continuous. By <1>1, for sufficiently large $R$ the numbers
+:::
+
+::: pf-step
+
+The polynomial $f$ has a real zero.
+
+::: pf-proof
+
+Polynomials are continuous. By step [](#s1){.pf-ref}, for sufficiently large $R$ the numbers
 $f(-R)$ and $f(R)$ have opposite signs. The intermediate value theorem therefore
 gives some $c\in[-R,R]$ such that
 \[
 f(c)=0.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

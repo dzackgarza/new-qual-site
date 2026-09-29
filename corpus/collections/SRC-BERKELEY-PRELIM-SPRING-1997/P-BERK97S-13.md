@@ -27,9 +27,15 @@ for every $z\in\mathbb C$.
 :::
 
 ::: {.solution}
-<1>1. The derivative $f'(z)$ is nonzero for every $z\in\CC$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The derivative $f'(z)$ is nonzero for every $z\in\CC$.
+
+::: pf-proof
+
 Suppose $f'(z_0)=0$. Since $f$ is not constant, its Taylor expansion gives
 an integer $m\geq2$ and a holomorphic function $u$ with $u(z_0)\neq0$
 such that
@@ -50,9 +56,14 @@ Two sufficiently small numbers differing by a nontrivial $m$-th root of
 unity have the same $m$-th power, and their distinct preimages under $H$
 therefore have the same image under $f$. This contradicts injectivity.
 Thus $f'(z_0)\neq0$.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 $$
 g(\zeta)\coloneqq f(1/\zeta),
 \qquad
@@ -60,11 +71,12 @@ g(\zeta)\coloneqq f(1/\zeta),
 $$
 the isolated singularity at $0$ is a pole.
 
-::: {.proof}
+::: pf-proof
+
 The map $g$ is injective on $\CC\sm\{0\}$.
 
 Suppose first that $0$ were an essential singularity. Choose
-$\zeta_0\neq0$. By step <1>1 and the chain rule, $g'(\zeta_0)\neq0$,
+$\zeta_0\neq0$. By step [](#s1){.pf-ref} and the chain rule, $g'(\zeta_0)\neq0$,
 so the holomorphic inverse function theorem gives a neighborhood $U$ of
 $\zeta_0$, with closure disjoint from $0$, such that $g(U)$ contains an
 open neighborhood $V$ of $g(\zeta_0)$. By the Casorati--Weierstrass
@@ -79,11 +91,17 @@ bounded near $0$, so $f$ would be bounded outside a sufficiently large
 disk. It is also bounded on that disk by continuity. Liouville's theorem
 would make $f$ constant, contradicting injectivity. Hence the singularity
 is neither essential nor removable, so it is a pole.
+
 :::
 
-<1>3. The entire function $f$ is a polynomial.
+:::
 
-::: {.proof}
+::: pf-step
+
+The entire function $f$ is a polynomial.
+
+::: pf-proof
+
 If the pole of $g$ at $0$ has order $m$, then for some constants $C,R>0$,
 $$
 \abs{f(z)}\leq C\abs{z}^m
@@ -104,31 +122,49 @@ $$
 $$
 Letting $r\to\infty$ yields $a_k=0$. Thus only finitely many Taylor
 coefficients are nonzero.
+
 :::
 
-<1>4. The polynomial $f$ has degree $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The polynomial $f$ has degree $1$.
+
+::: pf-proof
+
 It cannot have degree $0$ because it is injective. If
 $\deg f=d\geq2$, then $f'$ is a nonconstant polynomial of degree $d-1$.
 By the fundamental theorem of algebra, $f'$ has a zero, contradicting
-step <1>1. Hence $\deg f=1$.
+step [](#s1){.pf-ref}. Hence $\deg f=1$.
+
 :::
 
-<1>5. Therefore there are $a,b\in\CC$ with $a\neq0$ such that
+:::
+
+::: {.pf-step #s5}
+
+Therefore there are $a,b\in\CC$ with $a\neq0$ such that
 $$
 \boxed{f(z)=az+b}
 $$
 for every $z\in\CC$.
 
-::: {.proof}
-By step <1>4, $f$ is a degree-one polynomial, so it has the displayed form
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $f$ is a degree-one polynomial, so it has the displayed form
 with nonzero leading coefficient.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

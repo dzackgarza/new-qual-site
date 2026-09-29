@@ -40,12 +40,17 @@ $$
 g(x)=\sup_{k\geq 1} f_k(x).
 $$
 
-<1>1. For every $x\in X$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in X$,
 $$
 g_n(x)\uparrow g(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Uniform boundedness gives $M>0$ such that
 $$
 \abs{f_k(x)}\leq M
@@ -58,9 +63,14 @@ g_n(x)
 $$
 is nondecreasing in $n$, and its supremum over $n$ is exactly
 $\sup_{k\geq 1}f_k(x)=g(x)$.
+
 :::
 
-<1>2. For every $\eta>0$ there exists $\delta>0$ such that, for every
+:::
+
+::: {.pf-step #s2}
+
+For every $\eta>0$ there exists $\delta>0$ such that, for every
 $k\geq 1$,
 $$
 d(x,y)<\delta
@@ -68,7 +78,8 @@ d(x,y)<\delta
 \abs{f_k(x)-f_k(y)}<\eta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $a\in X$, equicontinuity at $a$ gives $r_a>0$ such that
 $$
 d(a,z)<r_a
@@ -113,9 +124,14 @@ $$
 <
 \eta.
 $$
+
 :::
 
-<1>3. For the same $\delta$ as in step <1>2,
+:::
+
+::: {.pf-step #s3}
+
+For the same $\delta$ as in step [](#s2){.pf-ref},
 $$
 d(x,y)<\delta
 \quad\Longrightarrow\quad
@@ -128,8 +144,9 @@ d(x,y)<\delta
 \abs{g(x)-g(y)}\leq\eta.
 $$
 
-::: {.proof}
-If $d(x,y)<\delta$, step <1>2 gives
+::: pf-proof
+
+If $d(x,y)<\delta$, step [](#s2){.pf-ref} gives
 $$
 f_k(x)<f_k(y)+\eta
 $$
@@ -146,16 +163,22 @@ g(x)\leq g(y)+\eta,
 $$
 and interchanging $x$ and $y$ gives
 $\abs{g(x)-g(y)}\leq\eta$.
+
 :::
 
-<1>4. For every $\varepsilon>0$ there exists $N$ such that, for all
+:::
+
+::: {.pf-step #s4}
+
+For every $\varepsilon>0$ there exists $N$ such that, for all
 $n\geq N$ and all $x\in X$,
 $$
 0\leq g(x)-g_n(x)<\varepsilon.
 $$
 
-::: {.proof}
-Apply step <1>2 with
+::: pf-proof
+
+Apply step [](#s2){.pf-ref} with
 $$
 \eta=\frac{\varepsilon}{3}
 $$
@@ -166,7 +189,7 @@ X
 \subseteq
 \bigcup_{j=1}^m B\left(x_j,\frac{\delta}{2}\right).
 $$
-By step <1>1, for each $j$ there exists $N_j$ such that
+By step [](#s1){.pf-ref}, for each $j$ there exists $N_j$ such that
 $$
 n\geq N_j
 \quad\Longrightarrow\quad
@@ -178,7 +201,7 @@ N=\max_{1\leq j\leq m}N_j.
 $$
 
 Let $n\geq N$ and $x\in X$. Choose $j$ with
-$d(x,x_j)<\delta/2$. Step <1>3 then gives
+$d(x,x_j)<\delta/2$. Step [](#s3){.pf-ref} then gives
 $$
 \abs{g(x)-g(x_j)}\leq\frac{\varepsilon}{3},
 \qquad
@@ -200,18 +223,30 @@ g(x)-g_n(x)\\
 \varepsilon.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The sequence $\{g_n\}$ converges uniformly on $X$ to $g$.
+:::
 
-::: {.proof}
-Step <1>4 is exactly the definition of uniform convergence of $g_n$ to
+::: {.pf-step #s5}
+
+The sequence $\{g_n\}$ converges uniformly on $X$ to $g$.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} is exactly the definition of uniform convergence of $g_n$ to
 $g$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the required uniform convergence.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the required uniform convergence.
+
+:::
+
+:::
+
 :::

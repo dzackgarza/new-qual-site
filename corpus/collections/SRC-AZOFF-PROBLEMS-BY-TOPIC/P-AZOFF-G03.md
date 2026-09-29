@@ -51,13 +51,18 @@ For $0<\varepsilon<1<R$, integrate $F$ around the positively oriented
 keyhole contour with outer radius $R$, inner radius $\varepsilon$, and cut
 along the positive real axis.
 
-<1>1. The only pole inside the keyhole contour is the double pole at
+::: pf
+
+::: {.pf-step #s1}
+
+The only pole inside the keyhole contour is the double pole at
 $z=-1$, and
 $$
 \Res(F;-1)=-\frac{i}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The chosen branch is holomorphic away from the positive real axis, and the
 only zero of the denominator in the slit plane is $z=-1$. Since
 $$
@@ -81,15 +86,21 @@ $$
 -\frac{i}{2}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The two straight portions of the keyhole contour contribute
+:::
+
+::: {.pf-step #s2}
+
+The two straight portions of the keyhole contour contribute
 $$
 2\int_{\varepsilon}^{R}
 \frac{\sqrt{x}}{(1+x)^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the upper bank of the cut, the argument tends to $0$, so
 $$
 z^{1/2}=\sqrt{x},
@@ -117,11 +128,17 @@ $$
 \frac{\sqrt{x}}{(1+x)^2}\,dx.
 $$
 Adding the two contributions gives the claim.
+
 :::
 
-<1>3. The outer circular contribution tends to zero as $R\to\infty$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The outer circular contribution tends to zero as $R\to\infty$.
+
+::: pf-proof
+
 On $\abs{z}=R$,
 $$
 \abs{z^{1/2}}=R^{1/2}
@@ -139,12 +156,18 @@ $$
 \frac{2\pi R^{3/2}}{(R-1)^2}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. The inner circular contribution tends to zero as
+:::
+
+::: {.pf-step #s4}
+
+The inner circular contribution tends to zero as
 $\varepsilon\to0$.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs{z}=\varepsilon$,
 $$
 \abs{z^{1/2}}=\varepsilon^{1/2}
@@ -162,9 +185,14 @@ $$
 \frac{2\pi\varepsilon^{3/2}}{(1-\varepsilon)^2}
 \longrightarrow0.
 $$
+
 :::
 
-<1>5. The target integral is
+:::
+
+::: {.pf-step #s5}
+
+The target integral is
 $$
 \boxed{
 \int_0^{\infty}
@@ -174,8 +202,9 @@ $$
 }
 $$
 
-::: {.proof}
-By the residue theorem and step <1>1, the keyhole contour integral is
+::: pf-proof
+
+By the residue theorem and step [](#s1){.pf-ref}, the keyhole contour integral is
 $$
 2\pi i\Res(F;-1)
 =
@@ -183,8 +212,8 @@ $$
 =
 \pi.
 $$
-By step <1>2, its two straight portions contribute twice the truncated
-target integral. Steps <1>3 and <1>4 show that the circular contributions
+By step [](#s2){.pf-ref}, its two straight portions contribute twice the truncated
+target integral. Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that the circular contributions
 vanish as $R\to\infty$ and $\varepsilon\to0$. Hence
 $$
 2\int_0^{\infty}
@@ -193,11 +222,17 @@ $$
 \pi,
 $$
 which gives the displayed value.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

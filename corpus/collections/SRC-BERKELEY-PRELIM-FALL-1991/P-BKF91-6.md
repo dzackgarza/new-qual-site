@@ -36,7 +36,11 @@ Prove that
 ::: {.solution}
 Fix $R$ with $0<R<1$ and put $g=f'$.
 
-<1>1. For $0\le x<R$,
+::: pf
+
+::: {.pf-step #s1}
+
+For $0\le x<R$,
 $$
 f(x)-f(0)
 =
@@ -47,7 +51,8 @@ g(Re^{i\theta})e^{i\theta}
 \,d\theta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $0\le t<R$, Cauchy's formula on the circle $\abs z=R$ gives
 $$
 g(t)
@@ -67,14 +72,20 @@ R\int_0^{x/R}\frac{ds}{1-se^{-i\theta}}
 -Re^{i\theta}\log\left(1-\frac{x}{R}e^{-i\theta}\right).
 $$
 For $0\le s<1$, the number $1-se^{-i\theta}$ has positive real part, so the logarithm can be taken on the principal branch throughout the integration path.
+
 :::
 
-<1>2. There is an absolute constant $C$ such that, for every real $\theta$,
+:::
+
+::: {.pf-step #s2}
+
+There is an absolute constant $C$ such that, for every real $\theta$,
 $$
 \int_0^1\abs{\log(1-se^{-i\theta})}\,ds\le C.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $0\le s<1$,
 $$
 1-s\le\abs{1-se^{-i\theta}}\le1+s\le2,
@@ -89,17 +100,23 @@ The right-hand side is integrable on $[0,1)$; for example one may take
 $$
 C=1+\log2+\frac\pi2.
 $$
+
 :::
 
-<1>3. For every $0<R<1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $0<R<1$,
 $$
 \int_0^R\abs{f(x)-f(0)}\,dx
 \le
 \frac{CM}{2\pi}.
 $$
 
-::: {.proof}
-Taking absolute values in step <1>1, integrating in $x$, and using Tonelli's theorem gives
+::: pf-proof
+
+Taking absolute values in step [](#s1){.pf-ref}, integrating in $x$, and using Tonelli's theorem gives
 $$
 \begin{aligned}
 \int_0^R\abs{f(x)-f(0)}\,dx
@@ -118,18 +135,24 @@ $$
 &\le\frac{CM}{2\pi},
 \end{aligned}
 $$
-using step <1>2 and the hypothesis.
+using step [](#s2){.pf-ref} and the hypothesis.
+
 :::
 
-<1>4. For every $0<R<1$,
+:::
+
+::: {.pf-step #s4}
+
+For every $0<R<1$,
 $$
 \int_0^R\abs{f(x)}\,dx
 \le
 \abs{f(0)}+\frac{CM}{2\pi}.
 $$
 
-::: {.proof}
-The triangle inequality and step <1>3 give
+::: pf-proof
+
+The triangle inequality and step [](#s3){.pf-ref} give
 $$
 \int_0^R\abs{f(x)}\,dx
 \le
@@ -138,24 +161,36 @@ R\abs{f(0)}
 \le
 \abs{f(0)}+\frac{CM}{2\pi}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{\int_0^1\abs{f(x)}\,dx<\infty}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The integrals
 $$
 \int_0^R\abs{f(x)}\,dx
 $$
-increase as $R\uparrow1$ and are uniformly bounded by step <1>4. Taking the limit $R\uparrow1$ proves the claim.
+increase as $R\uparrow1$ and are uniformly bounded by step [](#s4){.pf-ref}. Taking the limit $R\uparrow1$ proves the claim.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

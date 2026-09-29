@@ -40,7 +40,11 @@ $$
 \omega\coloneqq\frac{\sqrt3}{2}.
 $$
 
-<1>1. Every real solution of $y'''-y=0$ has the form
+::: pf
+
+::: {.pf-step #s1}
+
+Every real solution of $y'''-y=0$ has the form
 $$
 y(x)
 =
@@ -49,7 +53,8 @@ A e^x
 $$
 for real constants $A,B,C$.
 
-::: {.proof}
+::: pf-proof
+
 The characteristic polynomial is
 $$
 r^3-1
@@ -62,27 +67,39 @@ $$
 -\frac12\pm i\frac{\sqrt3}{2}.
 $$
 The standard real solution basis for a constant-coefficient linear ODE therefore gives the displayed form.
+
 :::
 
-<1>2. The hypothesis $\lim_{x\to\infty}y(x)=0$ forces $A=0$.
+:::
 
-::: {.proof}
-The oscillatory term in step <1>1 is bounded in absolute value by
+::: {.pf-step #s2}
+
+The hypothesis $\lim_{x\to\infty}y(x)=0$ forces $A=0$.
+
+::: pf-proof
+
+The oscillatory term in step [](#s1){.pf-ref} is bounded in absolute value by
 $$
 e^{-x/2}(\abs B+\abs C),
 $$
 which tends to zero.
 If $A\ne0$, then $Ae^x$ is unbounded in absolute value as $x\to\infty$, so the sum cannot tend to zero.
 Hence $A=0$.
+
 :::
 
-<1>3. For a decaying solution,
+:::
+
+::: {.pf-step #s3}
+
+For a decaying solution,
 $$
 y(0)+y'(0)+y''(0)=0.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 y(x)
 =
@@ -101,26 +118,38 @@ y''(0)
 =-\frac B2-\frac{\sqrt3}{2}C.
 $$
 Adding the three displayed values gives zero.
+
 :::
 
-<1>4. One valid choice is
+:::
+
+::: {.pf-step #s4}
+
+One valid choice is
 $$
 \boxed{a=b=c=1,\qquad d=0}.
 $$
 
-::: {.proof}
-These four real numbers are not all zero, and step <1>3 gives
+::: pf-proof
+
+These four real numbers are not all zero, and step [](#s3){.pf-ref} gives
 $$
 ay(0)+by'(0)+cy''(0)
 =y(0)+y'(0)+y''(0)
 =0
 =d.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 supplies the required constants.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} supplies the required constants.
+
+:::
+
+:::
+
 :::

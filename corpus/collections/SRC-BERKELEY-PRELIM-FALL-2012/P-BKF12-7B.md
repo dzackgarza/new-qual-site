@@ -45,13 +45,18 @@ $$
 V_\mu\coloneqq\ker(B-\mu I)^d.
 $$
 
-<1>1. If $v$ is a $B$-eigenvector with eigenvalue $\lambda$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $v$ is a $B$-eigenvector with eigenvalue $\lambda$, then
 $Av=0$ or $Av$ is a $B$-eigenvector with eigenvalue
 $$
 \boxed{\lambda-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The relation $AB-BA=A$ gives
 $$
 BA=AB-A.
@@ -64,9 +69,14 @@ B(Av)
 $$
 Thus either $Av=0$ or it is an eigenvector of $B$ with eigenvalue
 $\lambda-1$.
+
 :::
 
-<1>2. For every $\mu\in\CC$,
+:::
+
+::: {.pf-step #s2}
+
+For every $\mu\in\CC$,
 $$
 (B-(\mu-1)I)A=A(B-\mu I),
 $$
@@ -75,7 +85,8 @@ $$
 (B-(\mu-1)I)^rA=A(B-\mu I)^r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using $BA=AB-A$,
 $$
 \begin{aligned}
@@ -87,15 +98,21 @@ $$
 $$
 The formula for the $r$th powers follows by induction on $r$ from this
 intertwining identity.
+
 :::
 
-<1>3. For every $\mu\in\CC$ and every integer $k\ge0$,
+:::
+
+::: {.pf-step #s3}
+
+For every $\mu\in\CC$ and every integer $k\ge0$,
 $$
 A^k(V_\mu)\subseteq V_{\mu-k}.
 $$
 
-::: {.proof}
-If $w\in V_\mu$, then step <1>2 with $r=d$ gives
+::: pf-proof
+
+If $w\in V_\mu$, then step [](#s2){.pf-ref} with $r=d$ gives
 $$
 (B-(\mu-1)I)^dAw
 =A(B-\mu I)^dw
@@ -103,15 +120,21 @@ $$
 $$
 Thus $Aw\in V_{\mu-1}$. Repeating this inclusion gives
 $A^k(V_\mu)\subseteq V_{\mu-k}$ for every $k\ge0$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \boxed{A^d=0};
 $$
 in particular, $A$ is nilpotent.
 
-::: {.proof}
+::: pf-proof
+
 Since $B$ is a complex linear operator on a finite-dimensional space,
 the generalized eigenspace decomposition gives
 $$
@@ -127,18 +150,24 @@ eigenvalue of $B$. Then $B-(\lambda-k)I$ is invertible, so
 $$
 V_{\lambda-k}=0.
 $$
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 A^k(V_\lambda)\subseteq V_{\lambda-k}=0.
 $$
 Consequently $A^d$ also vanishes on $V_\lambda$. This holds for every
 generalized eigenspace in the displayed direct sum, so $A^d=0$ on $V$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves the eigenvector assertion, and step <1>4 proves that
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the eigenvector assertion, and step [](#s4){.pf-ref} proves that
 $A$ is nilpotent.
+
 :::
+
+:::
+
 :::

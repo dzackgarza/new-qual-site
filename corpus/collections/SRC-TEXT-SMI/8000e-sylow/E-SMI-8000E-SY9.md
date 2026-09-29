@@ -46,8 +46,14 @@ $$
 G=GL_3(\mathbf F_2).
 $$
 
-<1>1. Compute the order of $G$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Compute the order of $G$.
+
+::: pf-proof
+
 An invertible matrix is the same as an ordered basis of $\mathbf F_2^3$.
 The first column may be any nonzero vector, giving $8-1=7$ choices. The
 second may be any vector outside the span of the first, giving $8-2=6$
@@ -56,10 +62,17 @@ two, giving $8-4=4$ choices. Thus
 $$
 \boxed{|G|=(8-1)(8-2)(8-4)=7\cdot6\cdot4=168=2^3\cdot3\cdot7.}
 $$
+
 :::
 
-<1>2. List all possible characteristic polynomials.
-::: {.proof}
+:::
+
+::: pf-step
+
+List all possible characteristic polynomials.
+
+::: pf-proof
+
 For $A\in G$, the characteristic polynomial is a monic cubic over
 $\mathbf F_2$. Its constant term is nonzero, hence equals $1$. Therefore it
 is one of the four monic cubics with constant term $1$:
@@ -72,10 +85,17 @@ f_{7,2}(x)&=x^3+x^2+1.
 \end{aligned}
 $$
 The last two have no root in $\mathbf F_2$, so they are irreducible.
+
 :::
 
-<1>3. Determine the rational and Jordan forms for $f_u=(x+1)^3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the rational and Jordan forms for $f_u=(x+1)^3$.
+
+::: pf-proof
+
 The invariant factors are powers of $x+1$ whose degrees sum to $3$ and form
 a divisibility chain. Thus the three possibilities correspond to the
 partitions
@@ -116,10 +136,17 @@ $$
 $$
 For a size-$2$ nilpotent block, $N^2=0$; for a size-$3$ block,
 $N^2\ne0$ but $N^4=0$, so the order is $4$.
+
 :::
 
-<1>4. Determine the rational forms for the other three characteristic polynomials.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Determine the rational forms for the other three characteristic polynomials.
+
+::: pf-proof
+
 For
 $$
 f_3=(x+1)(x^2+x+1),
@@ -169,10 +196,17 @@ companion matrices have order $7$.
 The three polynomials in this step do not split over $\mathbf F_2$, so they
 have no Jordan form over $\mathbf F_2$. Over a splitting field they are
 diagonalizable because all their irreducible factors are separable.
+
 :::
 
-<1>5. Exhibit representatives of all six conjugacy classes.
-::: {.proof}
+:::
+
+::: pf-step
+
+Exhibit representatives of all six conjugacy classes.
+
+::: pf-proof
+
 The rational-form classification above shows that the complete list consists
 of six classes. Representatives may be chosen as
 $$
@@ -194,7 +228,7 @@ A_4=
 0&0&1
 \end{pmatrix},
 $$
-together with $A_3,A_{7,1},A_{7,2}$ from step <1>4. Their orders are
+together with $A_3,A_{7,1},A_{7,2}$ from step [](#s4){.pf-ref}. Their orders are
 respectively
 $$
 1,2,4,3,7,7.
@@ -202,10 +236,17 @@ $$
 Thus the only elements of the same order which can fail to be conjugate are
 the order-$7$ elements, and the two irreducible cubics show that there are
 indeed two distinct order-$7$ conjugacy classes.
+
 :::
 
-<1>6. Compute the centralizer and conjugacy-class size for each representative.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the centralizer and conjugacy-class size for each representative.
+
+::: pf-proof
+
 For the identity the centralizer is all of $G$, so the class has size $1$.
 
 For $A_2=I+E_{12}$, solving $XA_2=A_2X$ over $\mathbf F_2$ shows that the
@@ -283,10 +324,17 @@ $$
 1+21+56+42+24+24=168,
 $$
 as required.
+
 :::
 
-<1>7. Count the elements of each order.
-::: {.proof}
+:::
+
+::: pf-step
+
+Count the elements of each order.
+
+::: pf-proof
+
 The table immediately gives
 $$
 \boxed{
@@ -297,10 +345,17 @@ $$
 $$
 There are two order-$7$ classes of $24$ elements each; every other occurring
 order is a single conjugacy class.
+
 :::
 
-<1>8. Count the Sylow $7$- and Sylow $3$-subgroups.
-::: {.proof}
+:::
+
+::: pf-step
+
+Count the Sylow $7$- and Sylow $3$-subgroups.
+
+::: pf-proof
+
 A Sylow $7$-subgroup is cyclic of order $7$ and therefore contains six
 elements of order $7$. Distinct subgroups of prime order meet only in the
 identity, so the $48$ elements of order $7$ partition into sets of six:
@@ -313,10 +368,17 @@ nonidentity elements. The $56$ elements of order $3$ therefore give
 $$
 \boxed{n_3=56/2=28.}
 $$
+
 :::
 
-<1>9. Count the Sylow $2$-subgroups and identify their structure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Count the Sylow $2$-subgroups and identify their structure.
+
+::: pf-proof
+
 Consider the upper unitriangular subgroup
 $$
 U=
@@ -358,10 +420,17 @@ $$
 $$
 In fact equality in the incidence count shows that every order-$4$ element
 lies in a unique Sylow $2$-subgroup.
+
 :::
 
-<1>10. Prove that $G$ is simple.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that $G$ is simple.
+
+::: pf-proof
+
 Let $N\trianglelefteq G$. A normal subgroup is a union of conjugacy classes
 and must contain the identity. The nonidentity class sizes are
 $$
@@ -391,5 +460,11 @@ Therefore no nontrivial proper normal subgroup can exist. Hence
 $$
 \boxed{GL_3(\mathbf F_2)\text{ is simple}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

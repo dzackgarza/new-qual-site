@@ -53,12 +53,17 @@ R
 \{\alpha\in\CC:\alpha\Lambda\subseteq\Lambda\}.
 $$
 
-<1>1. If $0\ne\alpha\in R$ and $f=f_\alpha$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $0\ne\alpha\in R$ and $f=f_\alpha$, then
 $$
 \boxed{\deg f=\abs{\alpha}^2.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The kernel of
 $$
 f_\alpha:\CC/\Lambda\longrightarrow\CC/\Lambda,
@@ -95,12 +100,18 @@ $$
 \frac{A(\alpha\Lambda)}{A(\Lambda)}.
 $$
 Combining the last three displays proves part (a).
+
 :::
 
-<1>2. If $f_\alpha$ corresponds to $\alpha\in R$, then its dual corresponds
+:::
+
+::: {.pf-step #s2}
+
+If $f_\alpha$ corresponds to $\alpha\in R$, then its dual corresponds
 to $\bar\alpha$.
 
-::: {.proof}
+::: pf-proof
+
 If $\alpha=0$, both the dual endomorphism and complex conjugate are zero.
 Assume $\alpha\ne0$, and let $\beta\in R$ correspond to $\widehat f_\alpha$.
 By [[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(c)]],
@@ -108,7 +119,7 @@ $$
 \widehat f_\alpha\circ f_\alpha=[\deg f_\alpha]_X.
 $$
 On the complex torus, composition multiplies the corresponding complex
-numbers. By step <1>1,
+numbers. By step [](#s1){.pf-ref},
 $$
 \beta\alpha
 =
@@ -123,14 +134,20 @@ $$
 \beta=\bar\alpha.
 $$
 This proves part (b).
+
 :::
 
-<1>3. If $\tau$ is integral over $\ZZ$, then
+:::
+
+::: {.pf-step #s3}
+
+If $\tau$ is integral over $\ZZ$, then
 $$
 \boxed{R=\ZZ[\tau].}
 $$
 
-::: {.proof}
+::: pf-proof
+
 First let $\alpha\in R$. Since $1\in\Lambda$ and
 $\alpha\Lambda\subseteq\Lambda$, one has
 $$
@@ -168,11 +185,17 @@ $$
 \alpha\Lambda\subseteq\Lambda.
 $$
 Thus $\alpha\in R$, proving the reverse inclusion and part (c).
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a), (b), and (c), respectively.
+
+:::
+
+:::
+
 :::

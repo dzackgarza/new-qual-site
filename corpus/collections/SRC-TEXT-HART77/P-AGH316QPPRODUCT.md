@@ -51,7 +51,11 @@ $$
 be the Segre variety from [[P-AGH214SEGRE]], with homogeneous coordinates $z_{ij}=x_i y_j$.
 We identify the set $\PP^n\times\PP^m$ with $S$.
 
-<1>1. The two set-theoretic projections
+::: pf
+
+::: {.pf-step #s1}
+
+The two set-theoretic projections
 $$
 \pi_1:S\to\PP^n,
 \qquad
@@ -59,7 +63,8 @@ $$
 $$
 are morphisms.
 
-::: {.proof}
+::: pf-proof
+
 The opens
 $$
 D_+(z_{ij})\cap S
@@ -75,11 +80,17 @@ $$
 Because $z_{ij}\ne0$, neither displayed coordinate vector is zero.
 Each formula is given by homogeneous linear forms and therefore defines a morphism on the chart.
 The rank-one minor equations make these formulas agree on overlaps, so they glue to the stated morphisms.
+
 :::
 
-<1>2. The subset $X\times Y\subseteq S$ is a quasi-projective variety, proving (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The subset $X\times Y\subseteq S$ is a quasi-projective variety, proving (a).
+
+::: pf-proof
+
 Since $X\subseteq\PP^n$ and $Y\subseteq\PP^m$ are locally closed and the projections are continuous,
 $$
 X\times Y
@@ -97,7 +108,7 @@ U_\alpha\times V_\beta
 \pi_1^{-1}(U_\alpha)\cap\pi_2^{-1}(V_\beta)
 $$
 is open in $X\times Y$.
-On the corresponding Segre chart $D_+(z_{ij})$, the row-and-column formulas of step <1>1 identify this open with the affine product of $U_\alpha$ and $V_\beta$.
+On the corresponding Segre chart $D_+(z_{ij})$, the row-and-column formulas of step [](#s1){.pf-ref} identify this open with the affine product of $U_\alpha$ and $V_\beta$.
 It is therefore irreducible by [[P-AGH315AFFPRODUCT]].
 
 Any two nonempty members $U_\alpha\times V_\beta$ and $U_{\alpha'}\times V_{\beta'}$ intersect: irreducibility of $X$ gives
@@ -115,31 +126,43 @@ Therefore every product chart is contained in the closure of the fixed irreducib
 The fixed chart is consequently dense in $X\times Y$, and its closure is irreducible.
 Hence $X\times Y$ is irreducible.
 Being irreducible and locally closed in projective space, it is quasi-projective.
+
 :::
 
-<1>3. If $X$ and $Y$ are projective, then $X\times Y$ is projective.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $X$ and $Y$ are projective, then $X\times Y$ is projective.
+
+::: pf-proof
+
 In this case $X$ is closed in $\PP^n$ and $Y$ is closed in $\PP^m$.
 Therefore
 $$
 X\times Y=\pi_1^{-1}(X)\cap\pi_2^{-1}(Y)
 $$
 is closed in $S$.
-The Segre variety $S$ is projective by [[P-AGH214SEGRE]], and step <1>2 gives irreducibility.
+The Segre variety $S$ is projective by [[P-AGH214SEGRE]], and step [](#s2){.pf-ref} gives irreducibility.
 Hence $X\times Y$ is a projective variety, proving (b).
+
 :::
 
-<1>4. The restricted projections make $X\times Y$ a categorical product of $X$ and $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The restricted projections make $X\times Y$ a categorical product of $X$ and $Y$.
+
+::: pf-proof
+
 The restrictions
 $$
 p_X:X\times Y\to X,
 \qquad
 p_Y:X\times Y\to Y
 $$
-of the morphisms in step <1>1 are morphisms by [[P-AGH310SUBVARIETY]].
+of the morphisms in step [](#s1){.pf-ref} are morphisms by [[P-AGH310SUBVARIETY]].
 
 Now let $Z$ be a variety with morphisms
 $$
@@ -161,7 +184,7 @@ W=f^{-1}(U)\cap g^{-1}(V)
 $$
 is an open neighborhood of $z$.
 On $W$, the pair $(f,g)$ lands in the affine product $U\times V$ and is a morphism by the universal property proved in [[P-AGH315AFFPRODUCT]].
-The identification of that affine product with the corresponding Segre open is an isomorphism by the row-and-column formulas of step <1>1.
+The identification of that affine product with the corresponding Segre open is an isomorphism by the row-and-column formulas of step [](#s1){.pf-ref}.
 Thus $h|_W$ is a morphism.
 Since such neighborhoods cover $Z$, $h$ is a morphism globally.
 
@@ -173,11 +196,17 @@ p_Y\circ h=g,
 $$
 and uniqueness follows because these two coordinates determine every point of the Cartesian set $X\times Y$.
 This proves (c).
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>4 prove (a)--(c), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a)--(c), respectively.
+
+:::
+
+:::
+
 :::

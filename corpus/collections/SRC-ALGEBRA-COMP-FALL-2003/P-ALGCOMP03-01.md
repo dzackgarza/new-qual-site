@@ -28,10 +28,16 @@ audit:
 \]
 :::
 
-
 ::: {.solution}
-<1>1. If \([G:A]\) and \([G:B]\) are coprime, then \(G=AB\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If \([G:A]\) and \([G:B]\) are coprime, then \(G=AB\).
+
+::: pf-proof
+
 Set
 \[
 m=[G:A],
@@ -81,10 +87,17 @@ for some \(a\in A\), so \(g\in aB\subseteq AB\). Hence
 \[
 \boxed{G=AB}.
 \]
+
 :::
 
-<1>2. A finite group is not the union of the conjugates of a proper subgroup.
-::: {.proof}
+:::
+
+::: pf-step
+
+A finite group is not the union of the conjugates of a proper subgroup.
+
+::: pf-proof
+
 Let
 \[
 N=N_G(H)=\{g\in G:g^{-1}Hg=H\}.
@@ -121,5 +134,11 @@ Consequently
 \[
 \boxed{\bigcup_{x\in G}x^{-1}Hx\ne G}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

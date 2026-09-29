@@ -73,14 +73,19 @@ $$
 \delta_P.
 $$
 
-<1>1. The sheaf $\mathcal Q$ is supported at finitely many closed points and
+::: pf
+
+::: {.pf-step #s1}
+
+The sheaf $\mathcal Q$ is supported at finitely many closed points and
 $$
 \dim_kH^0(X,\mathcal Q)
 =
 \sum_{P\in X}\delta_P.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The normalization is an isomorphism over the regular locus of the
 one-dimensional scheme $X$. Hence $\mathcal Q$ is supported on the finite
 singular locus.
@@ -95,9 +100,14 @@ H^0(X,\mathcal Q)
 \bigoplus_{P\in X}\mathcal Q_P.
 $$
 Taking dimensions gives the formula.
+
 :::
 
-<1>2. There is a short exact sequence
+:::
+
+::: {.pf-step #s2}
+
+There is a short exact sequence
 $$
 0
 \longrightarrow
@@ -110,7 +120,8 @@ H^1(\widetilde X,\mco_{\widetilde X})
 0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply cohomology to
 $$
 0
@@ -145,9 +156,14 @@ k.
 $$
 The first map is the identity on constants. The long exact sequence
 therefore reduces to the displayed short exact sequence.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \boxed{
 p_a(X)
@@ -158,7 +174,8 @@ p_a(\widetilde X)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For an integral projective curve $C$ over $k$,
 $$
 p_a(C)
@@ -167,7 +184,7 @@ p_a(C)
 =
 h^1(C,\mco_C)
 $$
-because $h^0(C,\mco_C)=1$. Thus step <1>2 and step <1>1 give
+because $h^0(C,\mco_C)=1$. Thus step [](#s2){.pf-ref} and step [](#s1){.pf-ref} give
 $$
 p_a(X)
 =
@@ -176,12 +193,18 @@ p_a(\widetilde X)
 \sum_{P\in X}\delta_P.
 $$
 This proves part (a).
+
 :::
 
-<1>4. If $p_a(X)=0$, then $X$ is nonsingular.
+:::
 
-::: {.proof}
-By step <1>3,
+::: {.pf-step #s4}
+
+If $p_a(X)=0$, then $X$ is nonsingular.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 0
 =
@@ -206,15 +229,21 @@ $$
 for every $P$, so every local ring of $X$ is integrally closed. A
 one-dimensional noetherian integrally closed local domain is a DVR and
 therefore regular. Hence $X$ is nonsingular.
+
 :::
 
-<1>5. If $p_a(X)=0$, then
+:::
+
+::: {.pf-step #s5}
+
+If $p_a(X)=0$, then
 $$
 X\cong\PP^1.
 $$
 
-::: {.proof}
-By step <1>4, $X$ is a smooth projective curve. Its genus is
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $X$ is a smooth projective curve. Its genus is
 $$
 g=p_a(X)=0.
 $$
@@ -232,11 +261,17 @@ $$
 A finite degree-one morphism of integral smooth projective curves is
 birational, and a finite birational morphism to the normal curve $\PP^1$
 is an isomorphism. This proves part (b).
+
 :::
 
-<1>6. The number $\delta_P$ depends only on the analytic isomorphism class of the singularity.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The number $\delta_P$ depends only on the analytic isomorphism class of the singularity.
+
+::: pf-proof
+
 Put
 $$
 A=\mco_{X,P},
@@ -272,14 +307,20 @@ $$
 $$
 The right-hand side depends only on the isomorphism class of the completed
 local ring $\widehat A$. Thus $\delta_P$ is an analytic invariant.
+
 :::
 
-<1>7. If $P$ is an ordinary cusp, then
+:::
+
+::: {.pf-step #s7}
+
+If $P$ is an ordinary cusp, then
 $$
 \delta_P=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Up to analytic isomorphism, an ordinary cusp has completed local ring
 $$
 \widehat A
@@ -296,19 +337,25 @@ k[[t]]/k[[t^2,t^3]]
 \cong
 k\cdot t
 $$
-as a $k$-vector space. This quotient has length $1$. Step <1>6 therefore
+as a $k$-vector space. This quotient has length $1$. Step [](#s6){.pf-ref} therefore
 gives
 $$
 \delta_P=1.
 $$
+
 :::
 
-<1>8. If $P$ is a node, then
+:::
+
+::: {.pf-step #s8}
+
+If $P$ is a node, then
 $$
 \delta_P=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Up to analytic isomorphism, a node has completed local ring
 $$
 \widehat A
@@ -351,16 +398,22 @@ $$
 \cong
 k,
 $$
-which has length $1$. Step <1>6 gives
+which has length $1$. Step [](#s6){.pf-ref} gives
 $$
 \delta_P=1.
 $$
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), steps <1>4--<1>5 prove part (b), and
-steps <1>6--<1>8 prove part (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), and
+steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove part (c).
+
+:::
+
+:::
+
 :::

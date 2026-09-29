@@ -29,8 +29,15 @@ Show that there is $C$ such that $\|B(x,y)\| \leq C\|x\|\|y\|$.
 :::
 
 ::: {.solution}
-<1>1. Build a pointwise-bounded family of operators on $Y$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Build a pointwise-bounded family of operators on $Y$.
+
+::: pf-proof
+
 For each $x\in X$ with $\|x\|\le1$, define
 \[
 T_x:Y\to Z,
@@ -56,10 +63,17 @@ Thus the family
 \mathcal F:=\{T_x:\|x\|\le1\}\subset L(Y,Z)
 \]
 is pointwise bounded.
+
 :::
 
-<1>2. Apply the Uniform Boundedness Principle.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Uniform Boundedness Principle.
+
+::: pf-proof
+
 Because $Y$ is Banach, the Uniform Boundedness Principle yields
 \[
 C:=\sup_{\|x\|\le1}\|T_x\|<\infty.
@@ -70,10 +84,17 @@ Equivalently,
 \qquad
 \text{whenever }\|x\|\le1.
 \]
+
 :::
 
-<1>3. Rescale to arbitrary $x$ and $y$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rescale to arbitrary $x$ and $y$.
+
+::: pf-proof
+
 If $x=0$ or $y=0$, separate linearity gives $B(x,y)=0$. Otherwise set
 \[
 u=\frac{x}{\|x\|}.
@@ -90,5 +111,11 @@ Therefore
 \[
 \boxed{\|B(x,y)\|\le C\|x\|\|y\|\quad\text{for all }x\in X,\ y\in Y.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -33,8 +33,14 @@ If $R/P$ is finite, show that $P$ is maximal.
 ::: {.solution}
 Because $P$ is prime, the quotient $R/P$ is an integral domain.
 
-<1>1. Every finite integral domain is a field.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every finite integral domain is a field.
+
+::: pf-proof
+
 Let $D$ be a finite integral domain and let $0\ne a\in D$. Multiplication by
 $a$ defines
 \[
@@ -45,16 +51,36 @@ x\mapsto ax.
 This map is injective because $D$ has no zero divisors, hence bijective because
 $D$ is finite. Therefore $1$ lies in its image, so $ab=1$ for some $b\in D$.
 Thus every nonzero element of $D$ is invertible.
+
 :::
 
-<1>2. The quotient $R/P$ is a field.
-::: {.proof}
-It is a finite integral domain, so <1>1 applies.
 :::
 
-<1>3. Therefore $P$ is maximal.
-::: {.proof}
+::: {.pf-step #s2}
+
+The quotient $R/P$ is a field.
+
+::: pf-proof
+
+It is a finite integral domain, so step [](#s1){.pf-ref} applies.
+
+:::
+
+:::
+
+::: pf-step
+
+Therefore $P$ is maximal.
+
+::: pf-proof
+
 For a commutative ring with identity, an ideal $I$ is maximal if and only if
-$R/I$ is a field. Apply this criterion to $I=P$ and use <1>2.
+$R/I$ is a field. Apply this criterion to $I=P$ and use step [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

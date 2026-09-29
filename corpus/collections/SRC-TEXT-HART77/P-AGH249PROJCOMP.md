@@ -29,7 +29,12 @@ Conclude that projective morphisms have the stability properties (a)--(f) of (Ex
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: pf-step
+
+Let
 \[
 X\xrightarrow{f}Y\xrightarrow{g}Z
 \]
@@ -42,11 +47,18 @@ and
 Y\xhookrightarrow{j}\mathbb P^s_Z\longrightarrow Z
 \]
 with $i$ and $j$ closed immersions.
-::: {.proof}
+
+::: pf-proof
+
 This is exactly the definition of a projective morphism.
+
 :::
 
-<1>2. There is a canonical identification
+:::
+
+::: pf-step
+
+There is a canonical identification
 \[
 \mathbb P^r_Y
 \cong
@@ -59,7 +71,9 @@ Under this identification, the morphism
 \mathbb P^r_Z\times_Z\mathbb P^s_Z
 \]
 induced by $j$ is a closed immersion.
-::: {.proof}
+
+::: pf-proof
+
 Relative projective space commutes with base change:
 \[
 \mathbb P^r_Y
@@ -78,9 +92,14 @@ along the projection
 \mathbb P^s_Z.
 \]
 Closed immersions are stable under base change, so it is a closed immersion.
+
 :::
 
-<1>3. The composite
+:::
+
+::: {.pf-step #s3}
+
+The composite
 \[
 X
 \xhookrightarrow{i}
@@ -89,11 +108,18 @@ X
 \mathbb P^r_Z\times_Z\mathbb P^s_Z
 \]
 is a closed immersion.
-::: {.proof}
+
+::: pf-proof
+
 Both arrows are closed immersions, and closed immersions are stable under composition.
+
 :::
 
-<1>4. The relative Segre morphism
+:::
+
+::: {.pf-step #s4}
+
+The relative Segre morphism
 \[
 \operatorname{Seg}:
 \mathbb P^r_Z\times_Z\mathbb P^s_Z
@@ -101,7 +127,9 @@ Both arrows are closed immersions, and closed immersions are stable under compos
 \mathbb P^{r+s+rs}_Z
 \]
 is a closed immersion.
-::: {.proof}
+
+::: pf-proof
+
 Over $\Spec\mathbb Z$, the ordinary Segre embedding
 \[
 \mathbb P^r_\mathbb Z\times\mathbb P^s_\mathbb Z
@@ -115,31 +143,52 @@ Since
 (r+1)(s+1)-1=r+s+rs,
 \]
 base changing this closed immersion along $Z\to\Spec\mathbb Z$ gives the displayed relative Segre closed immersion.
+
 :::
 
-<1>5. The composite
+:::
+
+::: {.pf-step #s5}
+
+The composite
 \[
 X\longrightarrow\mathbb P^{r+s+rs}_Z
 \]
 is a closed immersion.
-::: {.proof}
-Compose the closed immersion of <1>3 with the Segre closed immersion of <1>4.  A composition of closed immersions is a closed immersion.
+
+::: pf-proof
+
+Compose the closed immersion of step [](#s3){.pf-ref} with the Segre closed immersion of step [](#s4){.pf-ref}.  A composition of closed immersions is a closed immersion.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 \[
 \boxed{g\circ f:X\longrightarrow Z\text{ is projective}.}
 \]
-::: {.proof}
-Step <1>5 gives a factorization
+
+::: pf-proof
+
+Step [](#s5){.pf-ref} gives a factorization
 \[
 X\hookrightarrow\mathbb P^{r+s+rs}_Z\longrightarrow Z
 \]
 with first arrow a closed immersion.  This is precisely the definition of projectivity.
+
 :::
 
-<1>7. Every closed immersion is projective.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+Every closed immersion is projective.
+
+::: pf-proof
+
 If
 \[
 i:X\hookrightarrow Y
@@ -154,10 +203,17 @@ X\xhookrightarrow{i}\mathbb P^0_Y\longrightarrow Y
 \]
 is a projective factorization.
 Thus projective morphisms satisfy property (a) of Hartshorne II.4.8.
+
 :::
 
-<1>8. Projective morphisms are stable under arbitrary base extension.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+Projective morphisms are stable under arbitrary base extension.
+
+::: pf-proof
+
 Let
 \[
 f:X\to Y
@@ -180,26 +236,47 @@ Y'.
 \]
 The first arrow remains a closed immersion.  Hence the base-changed morphism is projective.
 Thus property (c) of II.4.8 holds.
+
 :::
 
-<1>9. Projective morphisms satisfy properties (a)--(c) of Hartshorne II.4.8.
-::: {.proof}
-Property (a) is <1>7, property (b) is the composition result <1>6, and property (c) is <1>8.
 :::
 
-<1>10. Consequently projective morphisms satisfy all six stability properties (a)--(f) of Hartshorne II.4.8.
-::: {.proof}
+::: {.pf-step #s9}
+
+Projective morphisms satisfy properties (a)--(c) of Hartshorne II.4.8.
+
+::: pf-proof
+
+Property (a) is step [](#s7){.pf-ref}, property (b) is the composition result step [](#s6){.pf-ref}, and property (c) is step [](#s8){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s10}
+
+Consequently projective morphisms satisfy all six stability properties (a)--(f) of Hartshorne II.4.8.
+
+::: pf-proof
+
 Hartshorne II.4.8 proves formally that any class of morphisms satisfying (a)--(c) also satisfies:
 
 - products preserve the property;
 - if $g\circ f$ has the property and $g$ is separated, then $f$ has the property;
 - passage to reductions preserves the property.
 
-Applying that exercise to projective morphisms using <1>9 proves (d)--(f) as well.
+Applying that exercise to projective morphisms using step [](#s9){.pf-ref} proves (d)--(f) as well.
+
 :::
 
-<1>11. Q.E.D.
-::: {.proof}
-Step <1>6 proves closure under composition, and <1>10 gives the requested stability package.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} proves closure under composition, and step [](#s10){.pf-ref} gives the requested stability package.
+
+:::
+
+:::
+
 :::

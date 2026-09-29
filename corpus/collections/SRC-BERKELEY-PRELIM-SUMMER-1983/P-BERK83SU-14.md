@@ -42,13 +42,18 @@ X=\{1,\ldots,n\},
 $$
 be the set of equivalence classes.
 
-<1>1. The rule
+::: pf
+
+::: pf-step
+
+The rule
 $$
 \sigma\cdot[i]=[\sigma(i)]
 $$
 defines a transitive action of $G$ on $\mathcal B$.
 
-::: {.proof}
+::: pf-proof
+
 The stated hypothesis gives
 $$
 i\sim j
@@ -67,22 +72,34 @@ For classes $[i]$ and $[j]$, transitivity of the action of $G$ on $X$
 gives some $\sigma\in G$ with $\sigma(i)=j$. Then
 $\sigma\cdot[i]=[j]$, so the induced action on $\mathcal B$ is
 transitive.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 K=\ker\bigl(G\to\operatorname{Sym}(\mathcal B)\bigr),
 $$
 then either $K=G$ or $K=\{1\}$.
 
-::: {.proof}
+::: pf-proof
+
 The kernel $K$ is a normal subgroup of $G$. Since $G$ is simple, it
 has no normal subgroups other than $\{1\}$ and $G$.
+
 :::
 
-<1>3. If $K=G$, then $\sim$ is the universal equivalence relation.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $K=G$, then $\sim$ is the universal equivalence relation.
+
+::: pf-proof
+
 If $K=G$, every element of $G$ fixes every class in $\mathcal B$.
 Fix $i\in X$. For any $j\in X$, transitivity gives
 $\sigma\in G$ with $\sigma(i)=j$. Since $\sigma$ fixes the class
@@ -94,24 +111,36 @@ $$
 [i].
 $$
 Thus every two elements of $X$ are equivalent.
+
 :::
 
-<1>4. If $K=\{1\}$, then the induced action of $G$ on the set of
+:::
+
+::: {.pf-step #s4}
+
+If $K=\{1\}$, then the induced action of $G$ on the set of
 equivalence classes is faithful.
 
-::: {.proof}
+::: pf-proof
+
 This is exactly the assertion that the kernel of
 $$
 G\longrightarrow\operatorname{Sym}(\mathcal B)
 $$
 is trivial.
+
 :::
 
-<1>5. No stronger conclusion, such as saying that $\sim$ must be
+:::
+
+::: {.pf-step #s5}
+
+No stronger conclusion, such as saying that $\sim$ must be
 either equality or the universal relation, follows from the stated
 hypotheses.
 
-::: {.proof}
+::: pf-proof
+
 Let $G=A_5$ act on the set $X=G$ by left multiplication. This action
 is transitive, and $A_5$ is simple. Let $H\le A_5$ be a subgroup of
 order $2$, and define
@@ -130,26 +159,38 @@ $$
 so left multiplication preserves the relation. Thus this is a
 nontrivial proper $G$-invariant equivalence relation satisfying all
 the hypotheses.
+
 :::
 
-<1>6. Consequently,
+:::
+
+::: {.pf-step #s6}
+
+Consequently,
 $$
 \boxed{
 \text{$\sim$ is universal, or $G$ acts faithfully on $X/{\sim}$.}
 }
 $$
 
-::: {.proof}
-By step <1>2, the kernel of the induced action is either $G$ or
-trivial. Step <1>3 identifies the first case with the universal
-relation, and step <1>4 identifies the second with a faithful action.
-Step <1>5 shows that the second case need not be the equality
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the kernel of the induced action is either $G$ or
+trivial. Step [](#s3){.pf-ref} identifies the first case with the universal
+relation, and step [](#s4){.pf-ref} identifies the second with a faithful action.
+Step [](#s5){.pf-ref} shows that the second case need not be the equality
 relation.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the complete conclusion forced by the hypotheses.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the complete conclusion forced by the hypotheses.
+
+:::
+
+:::
+
 :::

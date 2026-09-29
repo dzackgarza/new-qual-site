@@ -42,12 +42,17 @@ $$
 T(z)=i\frac{1+z}{1-z}.
 $$
 
-<1>1. The map $T$ is holomorphic on $\DD$ and
+::: pf
+
+::: {.pf-step #s1}
+
+The map $T$ is holomorphic on $\DD$ and
 $$
 T(\DD)\subseteq\mathcal H.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The only pole of $T$ is at $z=1$, which does not lie in $\DD$, so $T$ is
 holomorphic on $\DD$.
 
@@ -67,16 +72,22 @@ $$
 \end{aligned}
 $$
 Thus $T(z)\in\mathcal H$.
+
 :::
 
-<1>2. For every $w\in\mathcal H$, the equation $w=T(z)$ has the unique
+:::
+
+::: {.pf-step #s2}
+
+For every $w\in\mathcal H$, the equation $w=T(z)$ has the unique
 solution
 $$
 z=\frac{w-i}{w+i},
 $$
 and this solution belongs to $\DD$.
 
-::: {.proof}
+::: pf-proof
+
 Solving
 $$
 w=i\frac{1+z}{1-z}
@@ -109,35 +120,53 @@ $$
 \abs{\frac{w-i}{w+i}}<1,
 $$
 so $z\in\DD$. The algebraic solution is unique.
+
 :::
 
-<1>3. The derivative of $T$ is nowhere zero on $\DD$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The derivative of $T$ is nowhere zero on $\DD$.
+
+::: pf-proof
+
 Direct differentiation gives
 $$
 T'(z)=\frac{2i}{(1-z)^2}.
 $$
 Since $1\notin\DD$, this derivative is nonzero at every point of $\DD$.
+
 :::
 
-<1>4. A conformal bijection of the unit disk onto the upper half-plane is
+:::
+
+::: {.pf-step #s4}
+
+A conformal bijection of the unit disk onto the upper half-plane is
 $$
 \boxed{
 T(z)=i\frac{1+z}{1-z}
 }.
 $$
 
-::: {.proof}
-Step <1>1 shows that $T$ maps $\DD$ into $\mathcal H$. Step <1>2 gives an
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that $T$ maps $\DD$ into $\mathcal H$. Step [](#s2){.pf-ref} gives an
 inverse defined on all of $\mathcal H$, so $T$ is bijective onto
-$\mathcal H$. Step <1>3 shows that its derivative never vanishes. Hence $T$
+$\mathcal H$. Step [](#s3){.pf-ref} shows that its derivative never vanishes. Hence $T$
 is conformal.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested map.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested map.
+
+:::
+
+:::
+
 :::

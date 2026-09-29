@@ -44,8 +44,15 @@ must $T$ extend boundedly to $\ell^2$? Explain.
 :::
 
 ::: {.solution}
-<1>1. Square-summable matrix coefficients give a bounded operator.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Square-summable matrix coefficients give a bounded operator.
+
+::: pf-proof
+
 Let $x=\sum_m x_m e_m\in c_{00}$. For each $n$,
 \[
 (Tx)_n=\sum_m a_{mn}x_m.
@@ -72,10 +79,17 @@ Thus
 \left(\sum_{m,n}|a_{mn}|^2\right)^{1/2}\|x\|_2.
 \]
 Since $c_{00}$ is dense in $\ell^2$, $T$ extends uniquely by continuity to a bounded operator on $\ell^2$.
+
 :::
 
-<1>2. Uniformly bounded entries do not suffice.
-::: {.proof}
+:::
+
+::: pf-step
+
+Uniformly bounded entries do not suffice.
+
+::: pf-proof
+
 Define $T:c_{00}\to\ell^2$ on the basis by
 \[
 Te_m=e_1+e_2+\cdots+e_m.
@@ -100,7 +114,13 @@ However,
 \|e_m\|_2=1.
 \]
 Therefore $T$ is unbounded on $c_{00}$ and cannot extend to a bounded operator on $\ell^2$.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

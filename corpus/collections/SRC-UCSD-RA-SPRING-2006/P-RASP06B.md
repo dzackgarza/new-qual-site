@@ -32,8 +32,15 @@ Let $\{f_j\}$ be a sequence of functions in $AC([0,1])$ such that $f_j' \to g$ i
 :::
 
 ::: {.solution}
-<1>1. Identify the pointwise limit explicitly.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Identify the pointwise limit explicitly.
+
+::: pf-proof
+
 Since each $f_j$ is absolutely continuous,
 \[
 f_j(x)=f_j(0)+\int_0^x f_j'(t)\,dt.
@@ -55,10 +62,17 @@ The right side tends to $0$, independently of $x$. Hence $f_j\to F$ uniformly, s
 \[
 \boxed{f(x)=c+\int_0^x g(t)\,dt.}
 \]
+
 :::
 
-<1>2. Prove absolute continuity and identify the derivative.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove absolute continuity and identify the derivative.
+
+::: pf-proof
+
 Because $g\in L^1([0,1])$, the function
 \[
 x\longmapsto c+\int_0^x g(t)\,dt
@@ -72,5 +86,11 @@ for almost every $x\in[0,1]$. Thus
 \boxed{f\in AC([0,1]),\qquad f'=g\text{ a.e.}}
 \]
 as required.
+
 :::
+
+:::
+
+:::
+
 :::

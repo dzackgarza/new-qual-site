@@ -40,10 +40,15 @@ Hint: Use (5.2.2) to count how many complete intersections $Q \intersect F_3$ th
 We work over an algebraically closed field of characteristic $0$, as in the
 surrounding discussion.
 
-<1>1. Hyperelliptic curves of genus $4$ are parametrized by unordered
+::: pf
+
+::: pf-step
+
+Hyperelliptic curves of genus $4$ are parametrized by unordered
 configurations of $10$ distinct points of $\PP^1$, modulo $\PGL_2$.
 
-::: {.proof}
+::: pf-proof
+
 A hyperelliptic genus-$4$ curve is a double cover
 $$
 f:X\longrightarrow\PP^1.
@@ -66,14 +71,20 @@ one takes the square root of the corresponding section of
 $\OO_{\PP^1}(10)$, and scalar choices differ by a square over the
 algebraically closed field.  Changing coordinates on $\PP^1$ changes the
 cover only by isomorphism.  Hence the asserted parametrization.
+
 :::
 
-<1>2. The hyperelliptic genus-$4$ locus is irreducible of dimension
+:::
+
+::: {.pf-step #s2}
+
+The hyperelliptic genus-$4$ locus is irreducible of dimension
 $$
 \boxed{7}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The open configuration space of $10$ ordered distinct points of $\PP^1$ is
 irreducible of dimension $10$.  Quotienting by the finite symmetric group
 does not change dimension or irreducibility, so unordered branch divisors
@@ -91,16 +102,22 @@ $$
 10-3=7.
 $$
 Its image is irreducible because the parameter space is irreducible.
+
 :::
 
-<1>3. A nonhyperelliptic genus-$4$ curve has canonical model
+:::
+
+::: pf-step
+
+A nonhyperelliptic genus-$4$ curve has canonical model
 $$
 \boxed{C=Q\cap F_3\subset\PP^3,}
 $$
 where $Q$ is its unique quadric, and the cubic $F_3$ is unique modulo
 addition of $Q$ times a linear form.
 
-::: {.proof}
+::: pf-proof
+
 This is the canonical genus-$4$ description recalled in (5.2.2).  The
 canonical system embeds a nonhyperelliptic genus-$4$ curve as a degree-$6$
 curve in $\PP^3$.  It lies on a unique quadric $Q$ and on a cubic not
@@ -123,15 +140,21 @@ c\in k^*,
 L\in H^0(\PP^3,\OO(1)),
 $$
 does not change $C$, and these are precisely the redundancies.
+
 :::
 
-<1>4. Canonically embedded smooth $(2,3)$ complete intersections form an
+:::
+
+::: {.pf-step #s4}
+
+Canonically embedded smooth $(2,3)$ complete intersections form an
 irreducible parameter space of dimension
 $$
 \boxed{24}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Quadrics in $\PP^3$ form
 $$
 \PP H^0(\PP^3,\OO(2))
@@ -173,15 +196,21 @@ $$
 The condition that $Q\cap F_3$ be a smooth curve is open and nonempty, so
 the smooth-complete-intersection locus is still irreducible of dimension
 $24$.
+
 :::
 
-<1>5. Nonhyperelliptic genus-$4$ curves form an irreducible family of
+:::
+
+::: {.pf-step #s5}
+
+Nonhyperelliptic genus-$4$ curves form an irreducible family of
 dimension
 $$
 \boxed{9}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Two canonical models represent isomorphic curves exactly when they differ by
 a projective coordinate change in $\PP^3$.  The group
 $$
@@ -195,18 +224,24 @@ By [[P-AGH452AUTOMORPHISMGROUPFINITE|Exercise IV.5.2]], the stabilizer of a
 smooth genus-$4$ canonical curve is finite.  Thus every orbit has dimension
 $15$.
 
-Step <1>4 gives an irreducible $24$-dimensional parameter space dominating
+Step [](#s4){.pf-ref} gives an irreducible $24$-dimensional parameter space dominating
 the nonhyperelliptic genus-$4$ family, so the latter is irreducible and has
 dimension
 $$
 24-15=9.
 $$
+
 :::
 
-<1>6. Let $C=Q\cap F_3$ be a nonhyperelliptic canonical genus-$4$ curve.
+:::
+
+::: {.pf-step #s6}
+
+Let $C=Q\cap F_3$ be a nonhyperelliptic canonical genus-$4$ curve.
 Its $g^1_3$'s are in bijection with the rulings of $Q$.
 
-::: {.proof}
+::: pf-proof
+
 First, every ruling of $Q$ gives a $g^1_3$.  Indeed, a ruling line
 $$
 \ell\subset Q
@@ -245,12 +280,18 @@ $$
 $$
 As $D$ varies in its pencil, these lines vary in a ruling of $Q$.
 The ruling recovers $|D|$ by intersection with $C$, proving the bijection.
+
 :::
 
-<1>7. The curve $C$ has exactly two $g^1_3$'s when $Q$ is smooth and exactly
+:::
+
+::: {.pf-step #s7}
+
+The curve $C$ has exactly two $g^1_3$'s when $Q$ is smooth and exactly
 one when $Q$ has rank $3$.
 
-::: {.proof}
+::: pf-proof
+
 A smooth quadric surface is
 $$
 Q\cong\PP^1\times\PP^1
@@ -263,20 +304,26 @@ of bidegree $(1,1)$, whereas
 $$
 C\sim(3,3).
 $$
-Thus step <1>6 gives exactly two $g^1_3$'s.
+Thus step [](#s6){.pf-ref} gives exactly two $g^1_3$'s.
 
 An irreducible singular quadric containing a nondegenerate smooth canonical
 curve has rank $3$, hence is a quadric cone.  Such a cone has exactly one
-ruling by lines, so step <1>6 gives exactly one $g^1_3$.
+ruling by lines, so step [](#s6){.pf-ref} gives exactly one $g^1_3$.
+
 :::
 
-<1>8. The rank-$3$ quadrics form an irreducible locally closed subset of
+:::
+
+::: pf-step
+
+The rank-$3$ quadrics form an irreducible locally closed subset of
 $\PP^9$ of dimension
 $$
 \boxed{8}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A quadric in $\PP^3$ is represented by a symmetric $4\times4$ matrix,
 up to scalar.  Every rank-$3$ quadric is projectively equivalent to
 $$
@@ -294,17 +341,23 @@ therefore has dimension $8$.
 The locus of rank at most $2$ is a proper closed subset of this
 hypersurface.  Therefore its complement, the rank-$3$ locus, is irreducible
 and still has dimension $8$.
+
 :::
 
-<1>9. Nonhyperelliptic genus-$4$ curves having exactly one $g^1_3$ form an
+:::
+
+::: {.pf-step #s9}
+
+Nonhyperelliptic genus-$4$ curves having exactly one $g^1_3$ form an
 irreducible family of dimension
 $$
 \boxed{8}.
 $$
 
-::: {.proof}
-By step <1>7, this is precisely the locus whose unique canonical quadric has
-rank $3$.  Restrict the parameter construction of step <1>4 to the
+::: pf-proof
+
+By step [](#s7){.pf-ref}, this is precisely the locus whose unique canonical quadric has
+rank $3$.  Restrict the parameter construction of step [](#s4){.pf-ref} to the
 irreducible $8$-dimensional rank-$3$ quadric locus.  The cubic fibre remains
 $\PP^{15}$, so the resulting parameter space has dimension
 $$
@@ -322,13 +375,19 @@ of isomorphism classes is irreducible of dimension
 $$
 23-15=8.
 $$
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves the hyperelliptic assertion, step <1>5 proves the
-nonhyperelliptic assertion, and step <1>9 proves the assertion about curves
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the hyperelliptic assertion, step [](#s5){.pf-ref} proves the
+nonhyperelliptic assertion, and step [](#s9){.pf-ref} proves the assertion about curves
 with a unique $g^1_3$.
+
 :::
+
+:::
+
 :::

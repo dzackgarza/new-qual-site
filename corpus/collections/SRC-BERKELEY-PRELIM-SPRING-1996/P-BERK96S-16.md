@@ -43,20 +43,31 @@ x=(x_1,\ldots,x_n)^T\in\RR^n:
 \right\}.
 $$
 
-<1>1. The vector $\mathbf{1}$ is an eigenvector of $A$ with eigenvalue
+::: pf
+
+::: {.pf-step #s1}
+
+The vector $\mathbf{1}$ is an eigenvector of $A$ with eigenvalue
 $n-1$.
 
-::: {.proof}
+::: pf-proof
+
 Every row of $A$ contains exactly $n-1$ entries equal to $1$. Hence
 $$
 A\mathbf{1}=(n-1)\mathbf{1}.
 $$
+
 :::
 
-<1>2. Every vector in $H$ is an eigenvector with eigenvalue $-1$, unless it
+:::
+
+::: {.pf-step #s2}
+
+Every vector in $H$ is an eigenvector with eigenvalue $-1$, unless it
 is zero.
 
-::: {.proof}
+::: pf-proof
+
 If $x\in H$, then for each $i$,
 $$
 (Ax)_i
@@ -71,9 +82,14 @@ Thus
 $$
 Ax=-x.
 $$
+
 :::
 
-<1>3. For $n\geq2$, the complete eigenspace decomposition is
+:::
+
+::: {.pf-step #s3}
+
+For $n\geq2$, the complete eigenspace decomposition is
 $$
 \boxed{
 E_{n-1}
@@ -86,7 +102,8 @@ H
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The subspace $H$ has dimension $n-1$, while
 $$
 \{c\mathbf{1}:c\in\RR\}
@@ -103,14 +120,19 @@ $$
 \{c\mathbf{1}:c\in\RR\}
 \oplus H.
 $$
-Steps <1>1 and <1>2 show that $A$ acts on these summands by $n-1$ and $-1$,
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that $A$ acts on these summands by $n-1$ and $-1$,
 respectively, so there are no other eigenvalues or eigenspaces.
 
 If $n=1$, then $A=(0)$, so the only eigenvalue is $0$ and its eigenspace is
 all of $\RR$.
+
 :::
 
-<1>4. The determinant is
+:::
+
+::: {.pf-step #s4}
+
+The determinant is
 $$
 \boxed{
 \det A
@@ -119,17 +141,24 @@ $$
 }.
 $$
 
-::: {.proof}
-For $n\geq2$, step <1>3 gives the eigenvalue $n-1$ with multiplicity $1$
+::: pf-proof
+
+For $n\geq2$, step [](#s3){.pf-ref} gives the eigenvalue $n-1$ with multiplicity $1$
 and the eigenvalue $-1$ with multiplicity $n-1$. Their product is the
 displayed determinant. If $n=1$, then $A=(0)$ and the same formula gives
 $0$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>3 and <1>4 give the requested eigenspaces, eigenvalues, and
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give the requested eigenspaces, eigenvalues, and
 determinant.
+
 :::
+
+:::
+
 :::

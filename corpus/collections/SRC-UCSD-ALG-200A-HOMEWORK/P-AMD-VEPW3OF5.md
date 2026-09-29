@@ -50,12 +50,18 @@ Then
 Let $D_r$ denote the dihedral group of order $2r$ acting on the bead positions, and hence on $\mathcal C$.
 The desired bracelets are exactly the $D_r$-orbits.
 
-<1>1. A rotation through $k$ bead positions fixes exactly
+::: pf
+
+::: {.pf-step #s1}
+
+A rotation through $k$ bead positions fixes exactly
 \[
 n^{\gcd(r,k)}
 \]
 colorings.
-::: {.proof}
+
+::: pf-proof
+
 The permutation of the $r$ bead positions induced by rotation through $k$ places has exactly
 \[
 \gcd(r,k)
@@ -66,14 +72,21 @@ There are $n$ independent choices of color for each cycle, hence
 \[
 |\operatorname{Fix}(\rho^k)|=n^{\gcd(r,k)}.
 \]
+
 :::
 
-<1>2. The total fixed-coloring contribution from all rotations is
+:::
+
+::: {.pf-step #s2}
+
+The total fixed-coloring contribution from all rotations is
 \[
 \sum_{d\mid r}\varphi(d)n^{r/d}.
 \]
-::: {.proof}
-By <1>1, the rotation contribution is
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the rotation contribution is
 \[
 \sum_{k=0}^{r-1}n^{\gcd(r,k)}.
 \]
@@ -94,14 +107,21 @@ Reindexing by $d=r/g$ gives
 \[
 \sum_{d\mid r}\varphi(d)n^{r/d}.
 \]
+
 :::
 
-<1>3. If $r$ is odd, every reflection fixes exactly
+:::
+
+::: {.pf-step #s3}
+
+If $r$ is odd, every reflection fixes exactly
 \[
 n^{(r+1)/2}
 \]
 colorings.
-::: {.proof}
+
+::: pf-proof
+
 For odd $r$, the axis of a reflection passes through one bead and the midpoint of the opposite edge.
 Thus the induced permutation of bead positions has one fixed bead and
 \[
@@ -119,9 +139,14 @@ n^{(r+1)/2}
 \]
 fixed colorings.
 There are $r$ reflections of this type.
+
 :::
 
-<1>4. If $r$ is even, half the reflections fix
+:::
+
+::: {.pf-step #s4}
+
+If $r$ is even, half the reflections fix
 \[
 n^{r/2+1}
 \]
@@ -130,7 +155,9 @@ colorings and half fix
 n^{r/2}
 \]
 colorings.
-::: {.proof}
+
+::: pf-proof
+
 For even $r$, there are two reflection types.
 
 A reflection whose axis passes through two opposite beads fixes those two bead positions and pairs the other $r-2$ positions.
@@ -156,9 +183,14 @@ n^{r/2}
 colorings.
 
 There are $r/2$ reflections of each type.
+
 :::
 
-<1>5. If $r$ is odd, the number of distinct bracelets is
+:::
+
+::: pf-step
+
+If $r$ is odd, the number of distinct bracelets is
 \[
 \boxed{
 \frac1{2r}
@@ -168,12 +200,19 @@ There are $r/2$ reflections of each type.
 \right)
 }.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Burnside's lemma says that the number of $D_r$-orbits is the average number of fixed colorings over the $2r$ group elements.
-Combine the rotation contribution from <1>2 with the $r$ equal reflection contributions from <1>3, then divide by $2r$.
+Combine the rotation contribution from step [](#s2){.pf-ref} with the $r$ equal reflection contributions from step [](#s3){.pf-ref}, then divide by $2r$.
+
 :::
 
-<1>6. If $r$ is even, the number of distinct bracelets is
+:::
+
+::: pf-step
+
+If $r$ is even, the number of distinct bracelets is
 \[
 \boxed{
 \frac1{2r}
@@ -184,8 +223,16 @@ Combine the rotation contribution from <1>2 with the $r$ equal reflection contri
 \right)
 }.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Again apply Burnside's lemma.
-Use <1>2 for the rotations and <1>4 for the two families of $r/2$ reflections, then divide their total fixed-point count by $|D_r|=2r$.
+Use step [](#s2){.pf-ref} for the rotations and step [](#s4){.pf-ref} for the two families of $r/2$ reflections, then divide their total fixed-point count by $|D_r|=2r$.
+
 :::
+
+:::
+
+:::
+
 :::

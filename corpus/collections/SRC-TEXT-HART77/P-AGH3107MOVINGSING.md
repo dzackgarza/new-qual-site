@@ -78,9 +78,14 @@ F_1=xz(x+z),
 F_2=yz(y+z).
 $$
 
-<1>1. The vector space of cubic forms vanishing at all seven points of $\PP^2(\FF_2)$ has basis $F_0,F_1,F_2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The vector space of cubic forms vanishing at all seven points of $\PP^2(\FF_2)$ has basis $F_0,F_1,F_2$.
+
+::: pf-proof
+
 Write a general homogeneous cubic as
 $$
 \begin{aligned}
@@ -121,11 +126,17 @@ and therefore
 $$
 \boxed{\dim D=2}.
 $$
+
 :::
 
-<1>2. The base locus of $D$ is exactly the seven points $\PP^2(\FF_2)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The base locus of $D$ is exactly the seven points $\PP^2(\FF_2)$.
+
+::: pf-proof
+
 A point $[x:y:z]$ is in the base locus exactly when
 $$
 xy(x+y)=xz(x+z)=yz(y+z)=0.
@@ -138,25 +149,37 @@ Therefore every base point has homogeneous coordinates with entries in
 $\{0,1\}$, not all zero. These are exactly the seven points of
 $\PP^2(\FF_2)$. Conversely each such point plainly annihilates all three
 $F_i$.
+
 :::
 
-<1>3. The linear system defines on the complement of the base locus the morphism
+:::
+
+::: {.pf-step #s3}
+
+The linear system defines on the complement of the base locus the morphism
 $$
 \varphi:\PP^2\setminus\PP^2(\FF_2)\longrightarrow\PP^2,
 \qquad
 [x:y:z]\longmapsto[F_2:F_1:F_0].
 $$
 
-::: {.proof}
-Step <1>2 says precisely that $F_0,F_1,F_2$ do not vanish simultaneously on
+::: pf-proof
+
+Step [](#s2){.pf-ref} says precisely that $F_0,F_1,F_2$ do not vanish simultaneously on
 the displayed open subset, so the three sections define a morphism there.
 The reversal of the coordinate order is only a projective automorphism of the
 target and is convenient for the calculation below.
+
 :::
 
-<1>4. Geometrically, $\varphi(P)$ is the line through $P$ and its Frobenius image $P^{(2)}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Geometrically, $\varphi(P)$ is the line through $P$ and its Frobenius image $P^{(2)}$.
+
+::: pf-proof
+
 For
 $$
 P=[x:y:z],
@@ -178,11 +201,17 @@ $P^{(2)}$.
 
 The cross product vanishes exactly when $P=P^{(2)}$ projectively, i.e. at the
 seven $\FF_2$-points, which are precisely the deleted base points.
+
 :::
 
-<1>5. The morphism $\varphi$ is generically finite, purely inseparable, and of degree $2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The morphism $\varphi$ is generically finite, purely inseparable, and of degree $2$.
+
+::: pf-proof
+
 Let
 $$
 K=k(A,B)
@@ -191,7 +220,7 @@ be the function field of the target chart consisting of lines
 $$
 L_{A,B}: AX+BY+Z=0.
 $$
-By step <1>4, a point $[x:y:z]$ in the generic fibre lies both on $L_{A,B}$
+By step [](#s4){.pf-ref}, a point $[x:y:z]$ in the generic fibre lies both on $L_{A,B}$
 and, after Frobenius, on the same line. Hence
 $$
 Ax+By+z=0,
@@ -227,14 +256,20 @@ $$
 \boxed{\deg\varphi=2,\qquad\varphi\text{ inseparable}.}
 $$
 This proves part (a).
+
 :::
 
-<1>6. Every member of $D$ has a unique singular point, and this gives a bijection
+:::
+
+::: {.pf-step #s6}
+
+Every member of $D$ has a unique singular point, and this gives a bijection
 $$
 D(k)\xrightarrow{\sim}\PP^2(k).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write a member as
 $$
 C_{a,b,c}=V(G_{a,b,c}),
@@ -289,11 +324,17 @@ $$
 \boxed{D(k)\leftrightarrow\PP^2(k)}
 $$
 by its singular point.
+
 :::
 
-<1>7. For an $\FF_2$-line $L$, the member $C_{a,b,c}$ contains $L$ if and only if its singular point $P_{a,b,c}$ lies on $L$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+For an $\FF_2$-line $L$, the member $C_{a,b,c}$ contains $L$ if and only if its singular point $P_{a,b,c}$ lies on $L$.
+
+::: pf-proof
+
 The group $\PGL_3(\FF_2)$ preserves the set of seven base points and acts
 transitively on the seven $\FF_2$-lines. It therefore suffices to treat the
 line
@@ -312,25 +353,37 @@ $$
 lies on $z=0$ exactly when $a=0$.
 This proves the equivalence for $z=0$, and equivariance under
 $\PGL_3(\FF_2)$ proves it for every $\FF_2$-line.
+
 :::
 
-<1>8. If the singular point is one of the seven base points, the cubic is the union of the three $\FF_2$-lines through that point.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+If the singular point is one of the seven base points, the cubic is the union of the three $\FF_2$-lines through that point.
+
+::: pf-proof
+
 Let $P=P_{a,b,c}\in\PP^2(\FF_2)$. Exactly three $\FF_2$-lines pass through
-$P$. By step <1>7 each of their linear equations divides $G_{a,b,c}$.
+$P$. By step [](#s7){.pf-ref} each of their linear equations divides $G_{a,b,c}$.
 Their product already has degree three, so, up to a nonzero scalar,
 $$
 G_{a,b,c}=L_1L_2L_3.
 $$
 Hence $C_{a,b,c}$ is precisely the union of those three concurrent lines.
+
 :::
 
-<1>9. If the singular point lies on an $\FF_2$-line but is not an $\FF_2$-point, the cubic is that line plus a smooth irreducible conic tangent to it at the singular point.
+:::
 
-::: {.proof}
+::: {.pf-step #s9}
+
+If the singular point lies on an $\FF_2$-line but is not an $\FF_2$-point, the cubic is that line plus a smooth irreducible conic tangent to it at the singular point.
+
+::: pf-proof
+
 Such a point $P$ lies on exactly one $\FF_2$-line: two distinct
-$\FF_2$-lines intersect in an $\FF_2$-point. By step <1>7 the equation has
+$\FF_2$-lines intersect in an $\FF_2$-point. By step [](#s7){.pf-ref} the equation has
 exactly one $\FF_2$-linear factor, say
 $$
 G=LQ,
@@ -340,7 +393,7 @@ where $Q$ has degree two.
 Suppose $Q$ were reducible. Then over the algebraically closed field $k$ the
 cubic would be a product of three lines, counted with multiplicity. A repeated
 line would make the singular locus positive-dimensional in characteristic
-$2$, contrary to the uniqueness proved in step <1>6. Thus the three lines
+$2$, contrary to the uniqueness proved in step [](#s6){.pf-ref}. Thus the three lines
 would be distinct. Since their union has only one singular point, they would
 all have to pass through $P$.
 
@@ -355,18 +408,24 @@ of the seven base points, contradiction.
 
 Hence $Q$ is irreducible. An irreducible conic over an algebraically closed
 field is smooth. The line $L$ and conic $Q$ can meet only at singular points
-of their union, and step <1>6 says there is only $P$. Bézout's theorem gives
+of their union, and step [](#s6){.pf-ref} says there is only $P$. Bézout's theorem gives
 $$
 I_P(L,Q)=2,
 $$
 so $L$ is tangent to $Q$ at $P$.
+
 :::
 
-<1>10. If the singular point lies on none of the seven $\FF_2$-lines, the cubic is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #s10}
+
+If the singular point lies on none of the seven $\FF_2$-lines, the cubic is irreducible.
+
+::: pf-proof
+
 Suppose $G= LQ$ with $L$ linear and $Q$ quadratic.
-By step <1>7, $L$ cannot be an $\FF_2$-line. Therefore $L$ contains at most
+By step [](#s7){.pf-ref}, $L$ cannot be an $\FF_2$-line. Therefore $L$ contains at most
 one of the seven $\FF_2$-points, so $Q$ must contain at least six of them.
 
 We claim that no nonzero conic contains six of the seven points of
@@ -393,11 +452,17 @@ Thus all coefficients vanish, contradiction.
 
 So $G$ has no linear factor. Every reducible cubic over an algebraically
 closed field has a linear factor, hence $C_{a,b,c}$ is irreducible.
+
 :::
 
-<1>11. In the situation of step <1>10, the unique singularity is a cusp.
+:::
 
-::: {.proof}
+::: {.pf-step #s11}
+
+In the situation of step [](#s10){.pf-ref}, the unique singularity is a cusp.
+
+::: pf-proof
+
 Let
 $$
 P=[r:s:t]=[\sqrt c:\sqrt b:\sqrt a]
@@ -421,22 +486,30 @@ Over the algebraically closed field $k$ this is the square of a linear form.
 The quadratic part is not zero. If it vanished, the cubic would have
 multiplicity three at $P$; a plane cubic of multiplicity three at a point is a
 product of three lines through that point over an algebraically closed field,
-contradicting irreducibility from step <1>10.
+contradicting irreducibility from step [](#s10){.pf-ref}.
 
 Thus $P$ is a double point with a repeated tangent line. An irreducible
 singular plane cubic has arithmetic genus one and normalization genus zero, so
 its unique double point has $\delta=1$. A double point with $\delta=1$ and a
 repeated tangent is a cusp rather than a node [[D-CRVPLSING]]. Hence
 $C_{a,b,c}$ is an irreducible cuspidal cubic with cusp $P$.
+
 :::
 
-<1>12. Q.E.D. for the corrected statement.
+:::
 
-::: {.proof}
-Steps <1>1--<1>5 prove part (a). Step <1>6 proves that every member is
+::: pf-qed
+
+for the corrected statement.
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (a). Step [](#s6){.pf-ref} proves that every member is
 singular and that the singular-point correspondence is a bijection with
-$\PP^2(k)$. Steps <1>7--<1>11 prove the corrected three-case classification
+$\PP^2(k)$. Steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove the corrected three-case classification
 recorded in the erratum above, and in particular show that the singular points
 move over all of $\PP^2$.
+
 :::
+
+:::
+
 :::

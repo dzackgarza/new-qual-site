@@ -21,7 +21,6 @@ audit:
   date: 2026-09-09
 ---
 
-
 ::: {.problem}
 Prove that the nilradical of a commutative ring $R$ is the intersection of all prime ideals:
 \[
@@ -30,8 +29,15 @@ Prove that the nilradical of a commutative ring $R$ is the intersection of all p
 :::
 
 ::: {.solution}
-<1>1. Every nilpotent element belongs to every prime ideal.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every nilpotent element belongs to every prime ideal.
+
+::: pf-proof
+
 Let $x\in R$ be nilpotent, so $x^n=0$ for some $n\ge1$, and let $\mathfrak p$ be prime. Since
 \[
 x^n=0\in\mathfrak p,
@@ -40,10 +46,17 @@ primality implies $x\in\mathfrak p$. Hence
 \[
 \sqrt{(0)}\subseteq\bigcap_{\mathfrak p\in\operatorname{Spec}(R)}\mathfrak p.
 \]
+
 :::
 
-<1>2. If $x$ is not nilpotent, there exists a prime ideal not containing $x$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $x$ is not nilpotent, there exists a prime ideal not containing $x$.
+
+::: pf-proof
+
 Assume $x$ is not nilpotent and set
 \[
 S=\{1,x,x^2,\ldots\}.
@@ -61,13 +74,26 @@ s_1s_2=uv+utb+vra+rtab\in\mathfrak p,
 because $u,v,ab\in\mathfrak p$. But $s_1s_2\in S$ since $S$ is multiplicatively closed, contradicting $\mathfrak p\cap S=\varnothing$. Hence $\mathfrak p$ is prime.
 
 Since $x\in S$ and $\mathfrak p\cap S=\varnothing$, we have $x\notin\mathfrak p$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \sqrt{(0)}=\bigcap_{\mathfrak p\in\operatorname{Spec}(R)}\mathfrak p.
 \]
-::: {.proof}
-By <1>1, the nilradical is contained in every prime ideal. By <1>2, every nonnilpotent element is omitted by at least one prime ideal. Thus an element lies in every prime ideal exactly when it is nilpotent.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the nilradical is contained in every prime ideal. By step [](#s2){.pf-ref}, every nonnilpotent element is omitted by at least one prime ideal. Thus an element lies in every prime ideal exactly when it is nilpotent.
+
 :::
+
+:::
+
+:::
+
 :::

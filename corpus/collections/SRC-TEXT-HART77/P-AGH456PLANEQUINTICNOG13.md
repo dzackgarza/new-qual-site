@@ -43,13 +43,18 @@ C\subseteq\PP^2
 $$
 be a nonsingular plane quintic.
 
-<1>1. The canonical embedding of $C$ is the restriction of the second
+::: pf
+
+::: {.pf-step #s1}
+
+The canonical embedding of $C$ is the restriction of the second
 Veronese embedding
 $$
 v_2:\PP^2\hookrightarrow\PP^5.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Adjunction gives
 $$
 K_C=(K_{\PP^2}+C)|_C=\OO_C(2).
@@ -76,12 +81,18 @@ $$
 S=v_2(\PP^2)\subseteq\PP^5
 $$
 for the Veronese surface containing the canonical curve.
+
 :::
 
-<1>2. If $C$ had a $g^1_3$, every divisor in that pencil would span a
+:::
+
+::: {.pf-step #s2}
+
+If $C$ had a $g^1_3$, every divisor in that pencil would span a
 trisecant line to the canonical curve.
 
-::: {.proof}
+::: pf-proof
+
 Let $D$ be a divisor in a hypothetical $g^1_3$.  Then
 $$
 \deg D=3,
@@ -109,12 +120,18 @@ $$
 \ell\subseteq\PP^5,
 $$
 and $\ell\cap C$ has length at least $3$.
+
 :::
 
-<1>3. No line in $\PP^5$ meets the Veronese surface $S$ in a subscheme of
+:::
+
+::: {.pf-step #s3}
+
+No line in $\PP^5$ meets the Veronese surface $S$ in a subscheme of
 length at least $3$.  Therefore $C$ has no $g^1_3$.
 
-::: {.proof}
+::: pf-proof
+
 In coordinates
 $$
 [X_0:X_1:X_2:X_3:X_4:X_5]
@@ -157,13 +174,19 @@ $$
 which is impossible because the latter degree is twice the positive integer
 $\deg\OO_B(1)$.
 
-Step <1>2 would produce exactly such a trisecant line from any $g^1_3$.
+Step [](#s2){.pf-ref} would produce exactly such a trisecant line from any $g^1_3$.
 Hence a nonsingular plane quintic has no $g^1_3$.
+
 :::
 
-<1>4. There exist nonhyperelliptic genus-$6$ curves with a $g^1_3$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+There exist nonhyperelliptic genus-$6$ curves with a $g^1_3$.
+
+::: pf-proof
+
 Take a smooth member
 $$
 X\in\left|\OO_{\PP^1\times\PP^1}(3,4)\right|.
@@ -202,22 +225,34 @@ $$
 (2-1)(3-1)=2,
 $$
 contradicting $g(X)=6$.
+
 :::
 
-<1>5. The curves from step <1>4 cannot be represented as nonsingular plane
+:::
+
+::: {.pf-step #s5}
+
+The curves from step [](#s4){.pf-ref} cannot be represented as nonsingular plane
 quintics.
 
-::: {.proof}
-The existence of a $g^1_3$ is intrinsic to the curve.  By step <1>3, a
+::: pf-proof
+
+The existence of a $g^1_3$ is intrinsic to the curve.  By step [](#s3){.pf-ref}, a
 nonsingular plane quintic has no such pencil.  Therefore the
-nonhyperelliptic genus-$6$ curves constructed in step <1>4 admit no
+nonhyperelliptic genus-$6$ curves constructed in step [](#s4){.pf-ref} admit no
 nonsingular plane quintic model.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove the first assertion, and steps <1>4--<1>5 prove the
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the first assertion, and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove the
 second.
+
 :::
+
+:::
+
 :::

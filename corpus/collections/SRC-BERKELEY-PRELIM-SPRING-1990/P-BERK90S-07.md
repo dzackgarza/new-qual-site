@@ -60,12 +60,17 @@ C_a(t)\coloneqq\int_0^\infty\frac{\cos(tx)}{x^2+a^2}\,dx
 \quad(0\leq t\leq1).
 $$
 
-<1>1. The defining integrals converge absolutely, and
+::: pf
+
+::: {.pf-step #s1}
+
+The defining integrals converge absolutely, and
 $$
 I(a)=\int_0^1 C_a(t)\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $x>0$, the inequalities $\abs{\sin x}\leq x$ and
 $\abs{\cos(tx)}\leq1$ bound the absolute values of both integrands by
 $(x^2+a^2)^{-1}$. This bound is integrable on $(0,\infty)$, since
@@ -87,9 +92,14 @@ I(a)=\int_0^\infty\int_0^1
 \frac{\cos(tx)}{x^2+a^2}\,dt\,dx
 =\int_0^1 C_a(t)\,dt.
 $$
+
 :::
 
-<1>2. For every $t\in[0,1]$,
+:::
+
+::: {.pf-step #s2}
+
+For every $t\in[0,1]$,
 $$
 C_a(t)=\frac{\pi}{2a}e^{-at}.
 $$
@@ -103,13 +113,18 @@ For $R>a$, let $\Gamma_R$ be the upper semicircle of radius $R$,
 oriented from $R$ to $-R$. The segment from $-R$ to $R$ followed by
 $\Gamma_R$ is a positively oriented simple closed contour.
 
-<2>1. For every $R>a$,
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+For every $R>a$,
 $$
 \int_{-R}^R F_t(x)\,dx+\int_{\Gamma_R}F_t(z)\,dz
 =\frac{\pi}{a}e^{-at}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The only pole of $F_t$ inside this contour is the simple pole at $ia$.
 The [[T-ESKLY|simple-pole residue formula]] gives
 $$
@@ -119,12 +134,18 @@ $$
 $$
 The [[T-HRPNO|residue theorem]] gives the asserted contour integral as
 $2\pi i$ times this residue.
+
 :::
 
-<2>2. The integral of $F_t$ over $\Gamma_R$ tends to zero as
+:::
+
+::: {.pf-step #s2-2}
+
+The integral of $F_t$ over $\Gamma_R$ tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z\in\Gamma_R$, one has $\Im z\geq0$ and $\abs{z}=R$, so
 $$
 \abs{e^{itz}}=e^{-t\Im z}\leq1,
@@ -137,40 +158,56 @@ $$
 \leq\frac{\pi R}{R^2-a^2}\longrightarrow0.
 $$
 This estimate holds for every $t\in[0,1]$, including $t=0$.
+
 :::
 
-<2>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The real-line integral converges absolutely because
-$\abs{F_t(x)}=(x^2+a^2)^{-1}$. Letting $R\to\infty$ in step <2>1
-and using step <2>2 gives
+$\abs{F_t(x)}=(x^2+a^2)^{-1}$. Letting $R\to\infty$ in step [](#s2-1){.pf-ref}
+and using step [](#s2-2){.pf-ref} gives
 $$
 \int_{-\infty}^{\infty}\frac{e^{itx}}{x^2+a^2}\,dx
 =\frac{\pi}{a}e^{-at}.
 $$
 Taking real parts and using the evenness of
 $x\mapsto\cos(tx)/(x^2+a^2)$ yields
-$2C_a(t)=\pi e^{-at}/a$, proving step <1>2.
+$2C_a(t)=\pi e^{-at}/a$, proving step [](#s2){.pf-ref}.
+
 :::
 
-<1>3. The requested value is
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The requested value is
 $$
 I(a)=\boxed{\frac{\pi}{2a^2}\bigl(1-e^{-a}\bigr)}.
 $$
 
-::: {.proof}
-Steps <1>1 and <1>2 give
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 I(a)=\frac{\pi}{2a}\int_0^1e^{-at}\,dt
 =\frac{\pi}{2a}\frac{1-e^{-a}}{a}.
 $$
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 establishes convergence, and step <1>3 evaluates the integral
+::: pf-qed
+
+Step [](#s1){.pf-ref} establishes convergence, and step [](#s3){.pf-ref} evaluates the integral
 for every $a>0$.
+
 :::
+
+:::
+
 :::

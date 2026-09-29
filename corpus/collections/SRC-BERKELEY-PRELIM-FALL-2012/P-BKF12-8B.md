@@ -44,14 +44,19 @@ d\coloneqq\deg p.
 $$
 Because a maximal ideal is proper, $p\ne1$, so $d\ge1$.
 
-<1>1. Every class in $S$ has a unique representative of the form
+::: pf
+
+::: {.pf-step #s1}
+
+Every class in $S$ has a unique representative of the form
 $$
 a_0+a_1x+\cdots+a_{d-1}x^{d-1},
 \qquad
 a_i\in R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $p$ is monic, polynomial division by $p$ works over the
 commutative ring $R$: every $f\in R[x]$ can be written
 $$
@@ -67,25 +72,37 @@ $$
 $$
 whereas $\deg(r_1-r_2)<d$, a contradiction. Thus $q=0$ and
 $r_1=r_2$.
+
 :::
 
-<1>2. The natural homomorphism
+:::
+
+::: {.pf-step #s2}
+
+The natural homomorphism
 $$
 R\longrightarrow S
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
+
 If $r\in R$ maps to zero, then the constant polynomial $r$ and the zero
 polynomial represent the same class in $S$. Both have degree less than
-$d$, so uniqueness in step <1>1 gives $r=0$.
+$d$, so uniqueness in step [](#s1){.pf-ref} gives $r=0$.
+
 :::
 
-<1>3. Every nonzero element $r\in R$ is a unit in $R$.
+:::
 
-::: {.proof}
-Let $0\ne r\in R$. By step <1>2, its image in the field $S$ is
-nonzero, so it has an inverse in $S$. By step <1>1, write that inverse
+::: {.pf-step #s3}
+
+Every nonzero element $r\in R$ is a unit in $R$.
+
+::: pf-proof
+
+Let $0\ne r\in R$. By step [](#s2){.pf-ref}, its image in the field $S$ is
+nonzero, so it has an inverse in $S$. By step [](#s1){.pf-ref}, write that inverse
 uniquely as
 $$
 f=a_0+a_1x+\cdots+a_{d-1}x^{d-1}.
@@ -99,23 +116,35 @@ $$
 ra_0+ra_1x+\cdots+ra_{d-1}x^{d-1}
 $$
 already has degree less than $d$, as does the constant polynomial $1$.
-By uniqueness in step <1>1,
+By uniqueness in step [](#s1){.pf-ref},
 $$
 ra_0=1.
 $$
 Thus $a_0\in R$ is an inverse of $r$.
+
 :::
 
-<1>4. The ring $R$ is a field.
+:::
 
-::: {.proof}
-Step <1>3 shows that every nonzero element of the commutative ring
+::: {.pf-step #s4}
+
+The ring $R$ is a field.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows that every nonzero element of the commutative ring
 $R$ is a unit, which is exactly the field condition.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the required conclusion.
+
+:::
+
+:::
+
 :::

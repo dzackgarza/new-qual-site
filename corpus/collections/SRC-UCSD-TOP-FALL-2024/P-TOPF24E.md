@@ -27,29 +27,49 @@ Is there an analogue of this result for one-holed higher-genus surfaces?
 ::: {.solution}
 Let the basepoint of $\partial\Sigma\cong S^1$ be the basepoint used for $\pi_1(\Sigma)$.
 
-<1>1. The one-holed torus deformation retracts onto a wedge $R=S^1\vee S^1$ with generators $a,b$, and under this retraction the oriented boundary loop represents the commutator
+::: pf
+
+::: {.pf-step #s1}
+
+The one-holed torus deformation retracts onto a wedge $R=S^1\vee S^1$ with generators $a,b$, and under this retraction the oriented boundary loop represents the commutator
 $$
 [a,b]=aba^{-1}b^{-1}\in\pi_1(R).
 $$
-::: {.proof}
+
+::: pf-proof
+
 Give $\Sigma$ its standard CW structure with one vertex, two $1$-cells $a,b$, and boundary circle. Cutting along the two generating arcs exhibits a polygon whose boundary word is $aba^{-1}b^{-1}c^{-1}$, where $c$ is the boundary component. Equivalently, after retracting $\Sigma$ onto the graph spine $R$, the boundary class maps to $[a,b]$ (up to reversing the chosen boundary orientation, which only replaces the commutator by its inverse).
+
 :::
 
-<1>2. Suppose $[\alpha]=yzy^{-1}z^{-1}$ in $\pi_1(X,x_0)$. Choose based loops $\beta,\gamma$ representing $y,z$ and define a based map
+:::
+
+::: {.pf-step #s2}
+
+Suppose $[\alpha]=yzy^{-1}z^{-1}$ in $\pi_1(X,x_0)$. Choose based loops $\beta,\gamma$ representing $y,z$ and define a based map
 $$
 \varphi:R=S^1\vee S^1\longrightarrow X
 $$
 by sending the two circle summands to $\beta$ and $\gamma$.
-::: {.proof}
+
+::: pf-proof
+
 A map from a wedge of two based circles is specified by two based loops. By construction, $\varphi_*(a)=y$ and $\varphi_*(b)=z$.
+
 :::
 
-<1>3. If $r:\Sigma\to R$ is a deformation retraction, then $F_0=\varphi\circ r$ has boundary loop $\lambda=F_0|_{\partial\Sigma}$ satisfying
+:::
+
+::: {.pf-step #s3}
+
+If $r:\Sigma\to R$ is a deformation retraction, then $F_0=\varphi\circ r$ has boundary loop $\lambda=F_0|_{\partial\Sigma}$ satisfying
 $$
 [\lambda]=[\alpha]\in\pi_1(X,x_0).
 $$
-::: {.proof}
-By <1>1,
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 [r|_{\partial\Sigma}]=[a,b].
 $$
@@ -57,10 +77,17 @@ Hence
 $$
 [\lambda]=\varphi_*[a,b]=[\varphi_*a,\varphi_*b]=[y,z]=[\alpha].
 $$
+
 :::
 
-<1>4. The map $F_0$ can be changed, without changing its existence on the interior, to a map $F:\Sigma\to X$ whose boundary restriction is exactly $\alpha$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The map $F_0$ can be changed, without changing its existence on the interior, to a map $F:\Sigma\to X$ whose boundary restriction is exactly $\alpha$.
+
+::: pf-proof
+
 Equality $[\lambda]=[\alpha]$ means that there is a based homotopy
 $$
 H:\partial\Sigma\times I\to X
@@ -70,43 +97,77 @@ $$
 \widetilde H:\Sigma\times I\to X.
 $$
 Set $F=\widetilde H(-,1)$. Then $F|_{\partial\Sigma}=\alpha$ exactly.
+
 :::
 
-<1>5. Conversely, if $F:\Sigma\to X$ satisfies $F|_{\partial\Sigma}=\alpha$, then $[\alpha]$ is a commutator.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Conversely, if $F:\Sigma\to X$ satisfies $F|_{\partial\Sigma}=\alpha$, then $[\alpha]$ is a commutator.
+
+::: pf-proof
+
 Let
 $$
 y=F_*(a),\qquad z=F_*(b).
 $$
-By <1>1,
+By step [](#s1){.pf-ref},
 $$
 [\alpha]=F_*[\partial\Sigma]=F_*[a,b]=[F_*a,F_*b]=[y,z].
 $$
+
 :::
 
-<1>6. Hence
+:::
+
+::: pf-step
+
+Hence
 $$
 \boxed{[\alpha]\text{ is one commutator}\iff \alpha\text{ extends over a one-holed torus}.}
 $$
-::: {.proof}
-The forward implication is <1>2--<1>4 and the reverse implication is <1>5.
+
+::: pf-proof
+
+The forward implication is steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} and the reverse implication is step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. For the one-holed orientable surface $\Sigma_g^1$ of genus $g$, the boundary class is
+:::
+
+::: {.pf-step #s7}
+
+For the one-holed orientable surface $\Sigma_g^1$ of genus $g$, the boundary class is
 $$
 [a_1,b_1]\cdots[a_g,b_g].
 $$
-::: {.proof}
+
+::: pf-proof
+
 The standard polygonal CW description of $\Sigma_g^1$ gives the boundary word as the product of the $g$ commutators of the $2g$ spine generators.
+
 :::
 
-<1>8. Therefore the higher-genus analogue is
+:::
+
+::: pf-step
+
+Therefore the higher-genus analogue is
 $$
 \boxed{\alpha\text{ extends over }\Sigma_g^1
 \iff
 [\alpha]=\prod_{i=1}^g[y_i,z_i]\text{ in }\pi_1(X,x_0).}
 $$
-::: {.proof}
-For the reverse implication, map the $2g$-circle graph spine to loops representing $y_i,z_i$, obtaining a map whose boundary is based-homotopic to $\alpha$, and use the homotopy extension property as in <1>4. The forward implication follows by applying $F_*$ to the boundary word in <1>7.
+
+::: pf-proof
+
+For the reverse implication, map the $2g$-circle graph spine to loops representing $y_i,z_i$, obtaining a map whose boundary is based-homotopic to $\alpha$, and use the homotopy extension property as in step [](#s4){.pf-ref}. The forward implication follows by applying $F_*$ to the boundary word in step [](#s7){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

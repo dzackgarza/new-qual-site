@@ -29,49 +29,143 @@ Hint: First prove the case for a free $R$-module.
 :::
 
 ::: {.solution}
-<1>1. A free $R$-module is flat.
-<2>1. A free module $R^{(I)}$ is a direct sum of copies of $R$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A free $R$-module is flat.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+A free module $R^{(I)}$ is a direct sum of copies of $R$.
+
+::: pf-proof
+
 definition.
+
 :::
-<2>2. $R$ is flat: tensoring with $R$ is the identity functor, which is exact.
-::: {.proof}
+
+:::
+
+::: {.pf-step #s1-2}
+
+$R$ is flat: tensoring with $R$ is the identity functor, which is exact.
+
+::: pf-proof
+
 $R \otimes_R M \cong M$ naturally.
+
 :::
-<2>3. A direct sum of flat modules is flat.
-::: {.proof}
+
+:::
+
+::: {.pf-step #s1-3}
+
+A direct sum of flat modules is flat.
+
+::: pf-proof
+
 tensor product commutes with direct sums, and a direct sum of exact sequences is exact.
-:::
-<2>4. Hence $R^{(I)}$ is flat.
-::: {.proof}
-<2>1–<2>3.
+
 :::
 
-<1>2. A projective module $P$ is a direct summand of a free module: $P \oplus Q \cong R^{(I)}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Hence $R^{(I)}$ is flat.
+
+::: pf-proof
+
+Steps [](#s1-1){.pf-ref}, [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+A projective module $P$ is a direct summand of a free module: $P \oplus Q \cong R^{(I)}$.
+
+::: pf-proof
+
 characterization of projective modules.
+
 :::
 
-<1>3. A direct summand of a flat module is flat.
-<2>1. Let $0 \to M' \to M \to M'' \to 0$ be exact.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+A direct summand of a flat module is flat.
+
+::: pf-proof
+
+::: {.pf-step #s3-1}
+
+Let $0 \to M' \to M \to M'' \to 0$ be exact.
+
+::: pf-proof
+
 take an arbitrary short exact sequence.
-:::
-<2>2. $0 \to (P \oplus Q) \otimes M' \to (P \oplus Q) \otimes M \to (P \oplus Q) \otimes M'' \to 0$ is exact.
-::: {.proof}
-$P \oplus Q \cong R^{(I)}$ is flat (<1>1).
-:::
-<2>3. This sequence is the direct sum of the sequences for $P$ and for $Q$, so the $P$-sequence $0 \to P \otimes M' \to P \otimes M \to P \otimes M'' \to 0$ is exact.
-::: {.proof}
-a direct summand of an exact sequence is exact.
-:::
-<2>4. Hence $P$ is flat.
-::: {.proof}
-<2>1–<2>3.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>2 and <1>3.
 :::
+
+::: {.pf-step #s3-2}
+
+$0 \to (P \oplus Q) \otimes M' \to (P \oplus Q) \otimes M \to (P \oplus Q) \otimes M'' \to 0$ is exact.
+
+::: pf-proof
+
+$P \oplus Q \cong R^{(I)}$ is flat (step [](#s1){.pf-ref}).
+
+:::
+
+:::
+
+::: {.pf-step #s3-3}
+
+This sequence is the direct sum of the sequences for $P$ and for $Q$, so the $P$-sequence $0 \to P \otimes M' \to P \otimes M \to P \otimes M'' \to 0$ is exact.
+
+::: pf-proof
+
+a direct summand of an exact sequence is exact.
+
+:::
+
+:::
+
+::: pf-step
+
+Hence $P$ is flat.
+
+::: pf-proof
+
+Steps [](#s3-1){.pf-ref}, [](#s3-2){.pf-ref} and [](#s3-3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
 :::

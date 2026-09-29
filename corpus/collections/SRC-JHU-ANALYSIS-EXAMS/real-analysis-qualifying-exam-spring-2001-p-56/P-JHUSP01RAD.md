@@ -37,8 +37,14 @@ The inequality holds exactly for
 \boxed{\alpha=\beta=\frac12}.
 \]
 
-<1>1. Necessity.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Necessity.
+
+::: pf-proof
+
 Apply the inequality to $cf$ with $c>0$. Homogeneity forces
 \[
 1=\alpha+\beta.
@@ -64,10 +70,17 @@ Together with $\alpha+\beta=1$, this gives
 \[
 \alpha=\beta=\frac12.
 \]
+
 :::
 
-<1>2. Sufficiency.
-::: {.proof}
+:::
+
+::: pf-step
+
+Sufficiency.
+
+::: pf-proof
+
 By Hölder's inequality with exponents $4/3$ and $4$,
 \[
 \int |f|^2
@@ -79,5 +92,11 @@ Taking square roots gives
 \|f\|_2\le\|f\|_{4/3}^{1/2}\|f\|_4^{1/2}.
 \]
 Thus the claimed pair is both necessary and sufficient.
+
 :::
+
+:::
+
+:::
+
 :::

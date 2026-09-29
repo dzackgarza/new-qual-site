@@ -29,18 +29,31 @@ f(x)=x^3-3x-3
 is isomorphic to $S_3$.
 :::
 
-
 ::: {.solution}
-<1>1. The polynomial $f$ is irreducible over $\QQ$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The polynomial $f$ is irreducible over $\QQ$.
+
+::: pf-proof
+
 Apply Eisenstein's criterion with the prime $3$. The leading coefficient is $1$, so it is not divisible by $3$. Every lower coefficient is divisible by $3$, and the constant term $-3$ is not divisible by $9$. Hence $f$ is irreducible over $\QQ$.
+
 :::
 
-<1>2. The discriminant of $f$ is
+:::
+
+::: pf-step
+
+The discriminant of $f$ is
 \[
 \Delta=-135.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a depressed cubic
 \[
 x^3+ax+b,
@@ -55,12 +68,25 @@ Here $a=-3$ and $b=-3$, so
 =108-243
 =-135.
 \]
+
 :::
 
-<1>3. The Galois group is $S_3$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Galois group is $S_3$.
+
+::: pf-proof
+
 Because $f$ is an irreducible cubic, its Galois group acts transitively on the three roots. Thus it is either $A_3$ or $S_3$.
 
 For an irreducible cubic over a field of characteristic different from $2$, the Galois group lies in $A_3$ exactly when the discriminant is a square in the base field. Here $-135$ is not a square in $\QQ$. Therefore the Galois group is not contained in $A_3$, so it must be $S_3$.
+
 :::
+
+:::
+
+:::
+
 :::

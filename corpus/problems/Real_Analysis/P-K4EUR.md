@@ -31,33 +31,62 @@ audit:
 Write $\langle f, h\rangle = \int_X f\bar h$, linear in $f$.
 For a linear $\Lambda$ the representing formula is $\Lambda(f) = \langle f, g\rangle = \int_X f\bar g$; see the remark below.
 
-<1>1. $M = \ker \Lambda$ is a closed subspace, and $L^2(X) = M \oplus M^\perp$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$M = \ker \Lambda$ is a closed subspace, and $L^2(X) = M \oplus M^\perp$.
+
+::: pf-proof
+
 $M$ is the kernel of the bounded linear functional $\Lambda$, so it is a subspace, and it is closed because $\Lambda$ is continuous.
 In a Hilbert space every closed subspace $M$ satisfies $H = M \oplus M^\perp$ by the projection theorem.
+
 :::
 
-<1>2. If $\Lambda \neq 0$, then $M^\perp = \operatorname{span}\theset{g_0}$ for some $g_0$ with $\|g_0\| = 1$.
+:::
 
-::: {.proof}
-$M \neq L^2(X)$, so $M^\perp \neq \theset0$ by step <1>1; choose $g_0 \in M^\perp$ with $\|g_0\| = 1$, so $\Lambda(g_0) \neq 0$.
+::: {.pf-step #s2}
+
+If $\Lambda \neq 0$, then $M^\perp = \operatorname{span}\theset{g_0}$ for some $g_0$ with $\|g_0\| = 1$.
+
+::: pf-proof
+
+$M \neq L^2(X)$, so $M^\perp \neq \theset0$ by step [](#s1){.pf-ref}; choose $g_0 \in M^\perp$ with $\|g_0\| = 1$, so $\Lambda(g_0) \neq 0$.
 For $h \in M^\perp$, the vector $\Lambda(h)g_0 - \Lambda(g_0)h$ lies in $M^\perp$ and in $M$, hence is $0$, so $h$ is a multiple of $g_0$.
+
 :::
 
-<1>3. There is $g \in L^2(X)$ with $\Lambda(f) = \langle f, g\rangle$ for all $f$.
+:::
 
-::: {.proof}
+::: pf-step
+
+There is $g \in L^2(X)$ with $\Lambda(f) = \langle f, g\rangle$ for all $f$.
+
+::: pf-proof
+
 If $\Lambda = 0$ take $g = 0$.
-Otherwise, by steps <1>1 and <1>2, $f = m + \langle f, g_0\rangle g_0$ with $m \in M$, so $\Lambda(f) = \langle f, g_0\rangle\Lambda(g_0) = \langle f, \overline{\Lambda(g_0)}\,g_0\rangle$.
+Otherwise, by steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $f = m + \langle f, g_0\rangle g_0$ with $m \in M$, so $\Lambda(f) = \langle f, g_0\rangle\Lambda(g_0) = \langle f, \overline{\Lambda(g_0)}\,g_0\rangle$.
 Take $g = \overline{\Lambda(g_0)}\,g_0$.
+
 :::
 
-<1>4. $g$ is unique in $L^2(X)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+$g$ is unique in $L^2(X)$.
+
+::: pf-proof
+
 If $\langle f, g\rangle = \langle f, g'\rangle$ for all $f$, take $f = g - g'$ to get $\|g - g'\|^2 = 0$.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

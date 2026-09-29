@@ -20,9 +20,15 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. The improper integral converges absolutely.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The improper integral converges absolutely.
+
+::: pf-proof
+
 On $(0,1]$,
 $$
 \frac{|\log x|}{1+x^2}
@@ -40,16 +46,22 @@ $$
 \frac{\log x}{x^2},
 $$
 whose integral converges by integration by parts. Hence the original integral is absolutely convergent.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \int_1^\infty\frac{\log x}{1+x^2}\,dx
 =
 -\int_0^1\frac{\log t}{1+t^2}\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Use the substitution
 $$
 x=\frac1t,
@@ -70,28 +82,40 @@ $$
 -\int_0^1\frac{\log t}{1+t^2}\,dt.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 \int_0^\infty\frac{\log x}{1+x^2}\,dx=0.
 }
 $$
 
-::: {.proof}
-By absolute convergence from step <1>1, split at $1$:
+::: pf-proof
+
+By absolute convergence from step [](#s1){.pf-ref}, split at $1$:
 $$
 \int_0^\infty
 =
 \int_0^1+\int_1^\infty.
 $$
-Step <1>2 shows that the two contributions cancel.
+Step [](#s2){.pf-ref} shows that the two contributions cancel.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

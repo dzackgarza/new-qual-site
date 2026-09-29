@@ -46,7 +46,11 @@ $$
 \beta=\frac{1-\sqrt5}{2}.
 $$
 
-<1>1. The numbers $\alpha$ and $\beta$ are the two fixed points of
+::: pf
+
+::: {.pf-step #s1}
+
+The numbers $\alpha$ and $\beta$ are the two fixed points of
 $F$, and
 $$
 \alpha+\beta=1,
@@ -54,7 +58,8 @@ $$
 \alpha\beta=-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The fixed-point equation is
 $$
 z=1+\frac1z,
@@ -65,26 +70,38 @@ z^2-z-1=0.
 $$
 Its two roots are the displayed numbers. Their sum and product follow
 from the quadratic equation.
+
 :::
 
-<1>2. If $z_0=\beta$, then
+:::
+
+::: {.pf-step #s2}
+
+If $z_0=\beta$, then
 $$
 z_n=\beta
 $$
 for every $n$, so the sequence converges.
 
-::: {.proof}
-By step <1>1, $F(\beta)=\beta$. The recurrence therefore makes the
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $F(\beta)=\beta$. The recurrence therefore makes the
 sequence constant.
+
 :::
 
-<1>3. Suppose $z_0\ne\beta$. Then no term $z_n$ equals $\beta$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Suppose $z_0\ne\beta$. Then no term $z_n$ equals $\beta$.
+
+::: pf-proof
+
 First, every $z_n$ is nonzero because the recurrence is assumed to
 hold for every $n$ and therefore $1/z_n$ must be defined.
 
-For $z\ne0$, using step <1>1,
+For $z\ne0$, using step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 F(z)-\beta
@@ -102,9 +119,14 @@ because $-\alpha\beta=1$. Hence $F(z)=\beta$ if and only if
 $z=\beta$. If some $z_n$ equaled $\beta$, repeated application of
 this implication backwards would force $z_0=\beta$, contrary to the
 assumption.
+
 :::
 
-<1>4. For $z\ne0,\beta$, define
+:::
+
+::: {.pf-step #s4}
+
+For $z\ne0,\beta$, define
 $$
 W(z)=\frac{z-\alpha}{z-\beta}.
 $$
@@ -115,8 +137,9 @@ W(F(z))
 \frac{\beta}{\alpha}W(z).
 $$
 
-::: {.proof}
-Using step <1>1,
+::: pf-proof
+
+Using step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 W(F(z))
@@ -146,9 +169,14 @@ $$
 \frac{z-\alpha}{z-\beta},
 $$
 as claimed.
+
 :::
 
-<1>5. Under the assumption $z_0\ne\beta$, if
+:::
+
+::: {.pf-step #s5}
+
+Under the assumption $z_0\ne\beta$, if
 $$
 w_n=W(z_n),
 $$
@@ -159,8 +187,9 @@ w_n=
 \longrightarrow0.
 $$
 
-::: {.proof}
-Steps <1>3--<1>4 and the recurrence give
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} and the recurrence give
 $$
 w_{n+1}=\frac{\beta}{\alpha}w_n,
 $$
@@ -177,14 +206,20 @@ $$
 1.
 $$
 Hence $w_n\to0$.
+
 :::
 
-<1>6. Under the assumption $z_0\ne\beta$,
+:::
+
+::: {.pf-step #s6}
+
+Under the assumption $z_0\ne\beta$,
 $$
 z_n\longrightarrow\alpha.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Solving
 $$
 w=\frac{z-\alpha}{z-\beta}
@@ -193,7 +228,7 @@ for $z$ gives
 $$
 z=\frac{\beta w-\alpha}{w-1}.
 $$
-By step <1>5, $w_n\to0$. Therefore
+By step [](#s5){.pf-ref}, $w_n\to0$. Therefore
 $$
 z_n
 =
@@ -203,19 +238,31 @@ z_n
 =
 \alpha.
 $$
+
 :::
 
-<1>7. Every sequence satisfying the recurrence for all $n\ge0$
+:::
+
+::: {.pf-step #s7}
+
+Every sequence satisfying the recurrence for all $n\ge0$
 converges.
 
-::: {.proof}
-If $z_0=\beta$, use step <1>2. Otherwise use step <1>6. These two
+::: pf-proof
+
+If $z_0=\beta$, use step [](#s2){.pf-ref}. Otherwise use step [](#s6){.pf-ref}. These two
 cases are exhaustive.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -39,7 +39,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. For part (1), define
+
+::: pf
+
+::: {.pf-step #s1}
+
+For part (1), define
 $$
 f(x)
 =
@@ -50,7 +55,8 @@ x^2\sin(1/x),&x\neq0,\\
 $$
 Then $f$ is differentiable on $\RR$.
 
-::: {.proof}
+::: pf-proof
+
 For $x\neq0$, the displayed formula is a product of differentiable
 functions. At $0$,
 $$
@@ -70,16 +76,22 @@ the derivative exists and
 $$
 f'(0)=0.
 $$
+
 :::
 
-<1>2. For $x\neq0$,
+:::
+
+::: {.pf-step #s2}
+
+For $x\neq0$,
 $$
 f'(x)
 =
 2x\sin(1/x)-\cos(1/x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiate
 $$
 x^2\sin(1/x)
@@ -96,16 +108,22 @@ x^2\cos(1/x)\left(-\frac1{x^2}\right)\\
 2x\sin(1/x)-\cos(1/x).
 \end{aligned}
 $$
+
 :::
 
-<1>3. The derivative $f'$ from part (1) is not continuous at $0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The derivative $f'$ from part (1) is not continuous at $0$.
+
+::: pf-proof
+
 Set
 $$
 x_n=\frac1{2\pi n}.
 $$
-Then $x_n\to0$ and step <1>2 gives
+Then $x_n\to0$ and step [](#s2){.pf-ref} gives
 $$
 f'(x_n)=-1.
 $$
@@ -117,11 +135,16 @@ Then $y_n\to0$ and
 $$
 f'(y_n)=1.
 $$
-Thus $f'(x)$ has no limit as $x\to0$, while step <1>1 gives $f'(0)=0$.
+Thus $f'(x)$ has no limit as $x\to0$, while step [](#s1){.pf-ref} gives $f'(0)=0$.
 Hence $f'$ is discontinuous at $0$.
+
 :::
 
-<1>4. For part (2), define
+:::
+
+::: {.pf-step #s4}
+
+For part (2), define
 $$
 h(x)=f(x)-2x.
 $$
@@ -132,7 +155,8 @@ h'(0)<0
 h'(1)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiation gives
 $$
 h'(x)=f'(x)-2.
@@ -142,14 +166,20 @@ $$
 f'(0)<2<f'(1)
 $$
 are exactly the displayed inequalities.
+
 :::
 
-<1>5. There is a point $x_0\in(0,1)$ such that
+:::
+
+::: {.pf-step #s5}
+
+There is a point $x_0\in(0,1)$ such that
 $$
 h(x_0)<h(0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 h'(0)<0,
@@ -167,14 +197,20 @@ implies
 $$
 h(x_0)<h(0).
 $$
+
 :::
 
-<1>6. There is a point $x_1\in(0,1)$ such that
+:::
+
+::: {.pf-step #s6}
+
+There is a point $x_1\in(0,1)$ such that
 $$
 h(x_1)<h(1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 h'(1)>0,
@@ -192,33 +228,45 @@ inequality by $x_1-1$ reverses the sign and gives
 $$
 h(x_1)-h(1)<0.
 $$
+
 :::
 
-<1>7. The function $h$ attains its minimum on $[0,1]$ at some point
+:::
+
+::: {.pf-step #s7}
+
+The function $h$ attains its minimum on $[0,1]$ at some point
 $$
 c\in(0,1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The differentiable function $f$ is continuous, so $h$ is continuous.
 Therefore $h$ attains a minimum on the compact interval $[0,1]$.
-Step <1>5 shows that $0$ is not a minimizer, and step <1>6 shows that
+Step [](#s5){.pf-ref} shows that $0$ is not a minimizer, and step [](#s6){.pf-ref} shows that
 $1$ is not a minimizer. Hence some minimizer lies in the open interval.
+
 :::
 
-<1>8. There is a point $c\in(0,1)$ such that
+:::
+
+::: {.pf-step #s8}
+
+There is a point $c\in(0,1)$ such that
 $$
 \boxed{
 f'(c)=2.
 }
 $$
 
-::: {.proof}
-Let $c$ be an interior minimizer from step <1>7. Fermat's theorem gives
+::: pf-proof
+
+Let $c$ be an interior minimizer from step [](#s7){.pf-ref}. Fermat's theorem gives
 $$
 h'(c)=0.
 $$
-By the definition of $h$ in step <1>4,
+By the definition of $h$ in step [](#s4){.pf-ref},
 $$
 0
 =
@@ -227,12 +275,18 @@ h'(c)
 f'(c)-2.
 $$
 Thus $f'(c)=2$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 give the requested example for part (1), and step <1>8
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the requested example for part (1), and step [](#s8){.pf-ref}
 proves part (2).
+
 :::
+
+:::
+
 :::

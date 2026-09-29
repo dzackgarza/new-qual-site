@@ -43,7 +43,11 @@ if $m\ne n$.
 For $n\ge0$, let $V_n\subset\RR[x]$ be the real vector space of
 polynomials of degree at most $n$.
 
-<1>1. The linear map
+::: pf
+
+::: {.pf-step #s1}
+
+The linear map
 $$
 T_n\colon V_n\longrightarrow V_n^*,
 \qquad
@@ -51,7 +55,8 @@ T_n(S)(P)=\int_{-1}^1S(x)P(x)\,dx,
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 The map is linear. If $T_n(S)=0$, then taking $P=S$ gives
 $$
 0=T_n(S)(S)=\int_{-1}^1S(x)^2\,dx.
@@ -61,23 +66,29 @@ on $[-1,1]$. Hence $S=0$ as a polynomial, and $T_n$ is injective.
 
 Both $V_n$ and $V_n^*$ have dimension $n+1$. Therefore the injective
 linear map $T_n$ is an isomorphism.
+
 :::
 
-<1>2. There is a unique $S_n\in V_n$ satisfying
+:::
+
+::: {.pf-step #s2}
+
+There is a unique $S_n\in V_n$ satisfying
 $$
 \int_{-1}^1S_n(x)P(x)\,dx=P(1)
 \qquad(P\in V_n),
 $$
 and $S_n$ has degree exactly $n$.
 
-::: {.proof}
+::: pf-proof
+
 Evaluation at $1$ defines a linear functional
 $$
 E_n\colon V_n\to\RR,
 \qquad
 E_n(P)=P(1).
 $$
-By step <1>1, there is a unique $S_n\in V_n$ with
+By step [](#s1){.pf-ref}, there is a unique $S_n\in V_n$ with
 $T_n(S_n)=E_n$, which is exactly the displayed identity.
 
 For $n=0$, taking $P=1$ gives
@@ -105,43 +116,61 @@ $$
 \int_{-1}^1S_n(x)\,dx=1,
 $$
 a contradiction. Thus $\deg S_n=n$.
+
 :::
 
-<1>3. If $m<n$, then
+:::
+
+::: {.pf-step #s3}
+
+If $m<n$, then
 $$
 \int_{-1}^1(1-x)S_m(x)S_n(x)\,dx=0.
 $$
 
-::: {.proof}
-Since $\deg S_m=m$ by step <1>2, the polynomial
+::: pf-proof
+
+Since $\deg S_m=m$ by step [](#s2){.pf-ref}, the polynomial
 $$
 P(x)\coloneqq(1-x)S_m(x)
 $$
 has degree at most $m+1\le n$. Hence $P\in V_n$, and $P(1)=0$.
-Applying the defining identity for $S_n$ from step <1>2 gives
+Applying the defining identity for $S_n$ from step [](#s2){.pf-ref} gives
 $$
 \int_{-1}^1S_n(x)(1-x)S_m(x)\,dx=P(1)=0,
 $$
 which is the asserted integral.
+
 :::
 
-<1>4. For all $m\ne n$,
+:::
+
+::: {.pf-step #s4}
+
+For all $m\ne n$,
 $$
 \boxed{
 \int_{-1}^1(1-x)S_m(x)S_n(x)\,dx=0
 }.
 $$
 
-::: {.proof}
-If $m<n$, this is step <1>3. If $n<m$, apply step <1>3 with the roles
+::: pf-proof
+
+If $m<n$, this is step [](#s3){.pf-ref}. If $n<m$, apply step [](#s3){.pf-ref} with the roles
 of $m$ and $n$ interchanged; multiplication is commutative, so the
 same integral is obtained.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves the required existence, uniqueness, and degree of
-$S_n$, and step <1>4 proves the required orthogonality.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the required existence, uniqueness, and degree of
+$S_n$, and step [](#s4){.pf-ref} proves the required orthogonality.
+
+:::
+
+:::
+
 :::

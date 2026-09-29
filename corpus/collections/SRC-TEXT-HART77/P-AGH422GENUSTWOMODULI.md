@@ -51,10 +51,16 @@ e. Summing up, conclude that there is a one-to-one correspondence between the se
 :::
 
 ::: {.solution}
-<1>1. The canonical degree-two map of a genus-$2$ curve is ramified at
+
+::: pf
+
+::: {.pf-step #s1}
+
+The canonical degree-two map of a genus-$2$ curve is ramified at
 exactly six points, each with ramification index $2$.
 
-::: {.proof}
+::: pf-proof
+
 By [[P-AGH417HYPERELLIPTIC|Exercise IV.1.7]], the canonical system gives
 a finite morphism
 $$
@@ -88,16 +94,22 @@ Hence there are exactly six ramification points.
 Their images in $\PP^1$ are distinct: a ramification point already has
 multiplicity $2$ in its fibre, which exhausts the degree of $f$. Thus the
 map has exactly six branch points as well.
+
 :::
 
-<1>2. Any finite morphism
+:::
+
+::: {.pf-step #s2}
+
+Any finite morphism
 $$
 h:X\longrightarrow\PP^1
 $$
 of degree $2$ from a genus-$2$ curve is the canonical morphism up to an
 automorphism of $\PP^1$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 D=h^*(q)
@@ -125,9 +137,14 @@ Moreover $\ell(D)=\ell(K)=2$, so the pencil defining $h$ is the complete
 canonical pencil. Choosing a different basis of its two-dimensional
 section space changes the target coordinates by an element of
 $\PGL_2(k)$. This proves the uniqueness assertion in part (a).
+
 :::
 
-<1>3. For
+:::
+
+::: {.pf-step #s3}
+
+For
 $$
 K(X)=k(x)(z),
 \qquad
@@ -140,7 +157,8 @@ $$
 is ramified exactly over the six points $x=\alpha_i$, with ramification
 index $2$ above each one.
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 h(x)=\prod_{i=1}^6(x-\alpha_i).
@@ -187,13 +205,19 @@ $$
 Since $\operatorname{char}k\ne2$, the two points $w=\pm1$ are nonsingular
 and the derivative $2w$ is nonzero there. Thus the cover is unramified at
 infinity. Hence the six $\alpha_i$ are exactly the branch points.
+
 :::
 
-<1>4. The curve $X$ in step <1>3 has genus $2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The curve $X$ in step [](#s3){.pf-ref} has genus $2$.
+
+::: pf-proof
+
 The extension is separable because its degree is $2$ and
-$\operatorname{char}k\ne2$. By step <1>3 there are exactly six tame
+$\operatorname{char}k\ne2$. By step [](#s3){.pf-ref} there are exactly six tame
 ramification points, each with $e_P=2$. Riemann--Hurwitz gives
 $$
 2g(X)-2
@@ -208,19 +232,30 @@ and therefore
 $$
 \boxed{g(X)=2}.
 $$
+
 :::
 
-<1>5. The map $f$ in step <1>3 is the morphism determined by the
+:::
+
+::: {.pf-step #s5}
+
+The map $f$ in step [](#s3){.pf-ref} is the morphism determined by the
 canonical linear system, up to an automorphism of $\PP^1$.
 
-::: {.proof}
-Step <1>4 gives $g(X)=2$, and $f$ has degree $2$. Step <1>2 says that
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives $g(X)=2$, and $f$ has degree $2$. Step [](#s2){.pf-ref} says that
 every degree-two morphism from a genus-$2$ curve to $\PP^1$ is the
 canonical morphism up to an automorphism of the target. This proves the
 remaining assertion of part (b).
+
 :::
 
-<1>6. Given three distinct points
+:::
+
+::: {.pf-step #s6}
+
+Given three distinct points
 $$
 P_1,P_2,P_3\in\PP^1,
 $$
@@ -237,7 +272,8 @@ $$
 \varphi(P_3)=\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By [[P-AGH66AUTP1|Exercise I.6.6]],
 $$
 \Aut\PP^1=\PGL_2(k).
@@ -255,10 +291,15 @@ $$
 fixes $0$, $1$, and $\infty$. A fractional linear transformation fixing
 $0$ and $\infty$ has the form $x\mapsto cx$, and fixing $1$ forces
 $c=1$. Hence $\psi=\varphi$.
+
 :::
 
-<1>7. After ordering the six branch points of a genus-$2$ curve and
-applying the unique normalization of step <1>6, the branch set has the
+:::
+
+::: {.pf-step #s7}
+
+After ordering the six branch points of a genus-$2$ curve and
+applying the unique normalization of step [](#s6){.pf-ref}, the branch set has the
 form
 $$
 0,\ 1,\ \infty,\ \beta_1,\ \beta_2,\ \beta_3,
@@ -270,15 +311,21 @@ $$
 \beta_i\ne\beta_j\quad(i\ne j).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Part (a) gives six distinct branch points on $\PP^1$. Choose an ordering
-and apply step <1>6 to the first three. Since the six points are distinct,
+and apply step [](#s6){.pf-ref} to the first three. Since the six points are distinct,
 the remaining three normalized points are distinct from each other and
 from $0$, $1$, and $\infty$. Thus they are finite elements of $k$,
 different from $0$ and $1$.
+
 :::
 
-<1>8. The rule in part (d) defines an action of $\Sigma_6$ on
+:::
+
+::: {.pf-step #s8}
+
+The rule in part (d) defines an action of $\Sigma_6$ on
 $$
 U
 =
@@ -289,13 +336,14 @@ U
 \right\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Associate to a point of $U$ the ordered six-tuple
 $$
 (0,1,\infty,\beta_1,\beta_2,\beta_3).
 $$
 Given $\sigma\in\Sigma_6$, reorder this six-tuple by $\sigma$. Its first
-three entries are still distinct, so step <1>6 gives a unique projective
+three entries are still distinct, so step [](#s6){.pf-ref} gives a unique projective
 automorphism sending them to $0$, $1$, and $\infty$. Apply that
 automorphism to the remaining three entries; because all six entries were
 distinct, the resulting last three lie in $U$.
@@ -304,15 +352,21 @@ The identity permutation clearly acts trivially. For two permutations,
 performing the first reordering and normalization and then the second
 produces the same normalized ordered six-tuple as performing the combined
 reordering once: both projective automorphisms send the same first three
-ordered points to $0$, $1$, and $\infty$, and step <1>6 makes that
+ordered points to $0$, $1$, and $\infty$, and step [](#s6){.pf-ref} makes that
 normalizing automorphism unique. Hence the rule satisfies the group law
 and defines the stated action.
+
 :::
 
-<1>9. A separable degree-two cover of $\PP^1$ over $k$ is determined,
+:::
+
+::: {.pf-step #s9}
+
+A separable degree-two cover of $\PP^1$ over $k$ is determined,
 up to isomorphism over $\PP^1$, by its branch locus.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 F=k(\PP^1)=k(x),
@@ -360,9 +414,14 @@ F(\sqrt{d_1})=F(\sqrt{d_2}).
 $$
 The corresponding nonsingular projective curves are consequently
 isomorphic over $\PP^1$.
+
 :::
 
-<1>10. There is a bijection
+:::
+
+::: {.pf-step #s10}
+
+There is a bijection
 $$
 \left\{
 \begin{array}{c}
@@ -374,15 +433,16 @@ $$
 U/\Sigma_6.
 $$
 
-::: {.proof}
-Given a genus-$2$ curve $X$, step <1>1 gives the six branch points of its
-canonical map. Order them and apply step <1>6 to the first three. Step
-<1>7 then produces a point
+::: pf-proof
+
+Given a genus-$2$ curve $X$, step [](#s1){.pf-ref} gives the six branch points of its
+canonical map. Order them and apply step [](#s6){.pf-ref} to the first three. Step
+[](#s7){.pf-ref} then produces a point
 $$
 (\beta_1,\beta_2,\beta_3)\in U.
 $$
 Changing the ordering changes this point by exactly the action defined in
-step <1>8. Changing coordinates on the target $\PP^1$ does not change its
+step [](#s8){.pf-ref}. Changing coordinates on the target $\PP^1$ does not change its
 $\Sigma_6$-orbit: after applying the coordinate change, the unique
 normalization of the same ordered first three points is obtained by
 composing the old normalization with the inverse coordinate change.
@@ -394,7 +454,7 @@ targets, so isomorphic curves determine the same orbit.
 
 Conversely, suppose two genus-$2$ curves determine the same orbit. After
 choosing orderings and normalizations, their canonical maps have the same
-six-point branch locus. Step <1>9 then identifies the two quadratic
+six-point branch locus. Step [](#s9){.pf-ref} then identifies the two quadratic
 function-field extensions of $k(\PP^1)$, and hence identifies the two
 nonsingular projective curves. Thus distinct isomorphism classes cannot
 determine the same orbit.
@@ -409,17 +469,23 @@ B=\{0,1,\infty,\beta_1,\beta_2,\beta_3\}\subset\PP^1.
 $$
 Choose a point $q\in\PP^1\setminus B$ and an automorphism
 $\tau\in\Aut\PP^1$ with $\tau(q)=\infty$. Then $\tau(B)$ consists of six
-finite points. Part (b), proved in steps <1>3--<1>5, constructs a genus-$2$
+finite points. Part (b), proved in steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}, constructs a genus-$2$
 curve whose canonical map is branched exactly over $\tau(B)$. Composing
 that map with $\tau^{-1}$ gives branch locus $B$, so the resulting curve
 maps to the prescribed orbit. Therefore the correspondence is surjective
 as well as injective.
+
 :::
 
-<1>11. The parameter space in step <1>10 is an open subset of
+:::
+
+::: {.pf-step #s11}
+
+The parameter space in step [](#s10){.pf-ref} is an open subset of
 $\AA_k^3$ modulo a finite group, and it has infinitely many orbits.
 
-::: {.proof}
+::: pf-proof
+
 Explicitly,
 $$
 U
@@ -442,13 +508,19 @@ distinct values of $\beta_1$ and $\beta_2$ leaves infinitely many choices
 of $\beta_3$, while every $\Sigma_6$-orbit is finite. Hence $U/\Sigma_6$
 is infinite, so there are infinitely many pairwise non-isomorphic curves
 of genus $2$ over $k$.
+
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), steps <1>3--<1>5 prove part (b), steps
-<1>6--<1>7 prove part (c), step <1>8 proves part (d), and steps
-<1>9--<1>11 prove part (e).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), steps
+[](#s6){.pf-ref} and [](#s7){.pf-ref} prove part (c), step [](#s8){.pf-ref} proves part (d), and steps
+[](#s9){.pf-ref}, [](#s10){.pf-ref} and [](#s11){.pf-ref} prove part (e).
+
+:::
+
+:::
+
 :::

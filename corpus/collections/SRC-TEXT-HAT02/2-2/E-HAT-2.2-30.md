@@ -50,7 +50,11 @@ For the mapping torus $T_f$, the Wang sequence yields short exact sequences
 \]
 In the cases below the kernel term is free, so each sequence splits as an abstract group.
 
-<1>1. For a reflection $f:S^2\to S^2$,
+::: pf
+
+::: pf-step
+
+For a reflection $f:S^2\to S^2$,
 \[
 H_i(T_f)\cong
 \begin{cases}
@@ -59,11 +63,18 @@ H_i(T_f)\cong
 0,&i\ge3.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 On $H_2(S^2)=\mathbb Z$, a reflection acts by $-1$, so $1-f_*$ is multiplication by $2$. On $H_0$ it is zero. The displayed groups follow immediately from the short exact sequences.
+
 :::
 
-<1>2. If $f:S^2\to S^2$ has degree $2$, then
+:::
+
+::: pf-step
+
+If $f:S^2\to S^2$ has degree $2$, then
 \[
 H_i(T_f)\cong
 \begin{cases}
@@ -71,13 +82,20 @@ H_i(T_f)\cong
 0,&i\ge2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 On $H_2$, the map $1-f_*$ is multiplication by $-1$, hence an isomorphism. On $H_0$ it is zero. Thus there is no homology contribution in degrees $2$ or $3$, while the kernel in degree $0$ produces the usual $\mathbb Z$ in $H_1$.
-:::
 
 Let $T^2=S^1\times S^1$ and choose the standard basis of $H_1(T^2)=\mathbb Z^2$.
 
-<1>3. If $f$ is the identity on the first factor and a reflection on the second, then
+:::
+
+:::
+
+::: pf-step
+
+If $f$ is the identity on the first factor and a reflection on the second, then
 \[
 H_i(T_f)\cong
 \begin{cases}
@@ -88,7 +106,9 @@ H_i(T_f)\cong
 0,&i>3.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 On $H_1$, $f_*=\operatorname{diag}(1,-1)$, so
 \[
 1-f_*=\operatorname{diag}(0,2).
@@ -102,9 +122,14 @@ while
 H_1(T_f)\cong(\mathbb Z\oplus\mathbb Z_2)\oplus\mathbb Z.
 \]
 There is no $H_3$ because multiplication by $2$ on $H_2$ has trivial kernel.
+
 :::
 
-<1>4. If $f$ reflects both factors, then
+:::
+
+::: pf-step
+
+If $f$ reflects both factors, then
 \[
 H_i(T_f)\cong
 \begin{cases}
@@ -113,14 +138,21 @@ H_i(T_f)\cong
 0,&i>3.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 On $H_1$, $f_*=-I$, so $1-f_*=2I$. Its kernel is zero and its cokernel is $(\mathbb Z_2)^2$. On $H_2$, $f_*$ is multiplication by $\det(-I)=+1$, so $1-f_*=0$. Thus $H_3\cong\mathbb Z$, $H_2\cong\mathbb Z$, and
 \[
 H_1\cong(\mathbb Z_2)^2\oplus\mathbb Z.
 \]
+
 :::
 
-<1>5. If $f$ interchanges the two factors and then reflects one factor, then
+:::
+
+::: pf-step
+
+If $f$ interchanges the two factors and then reflects one factor, then
 \[
 H_i(T_f)\cong
 \begin{cases}
@@ -129,7 +161,9 @@ H_i(T_f)\cong
 0,&i>3.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Up to changing the basis, the induced map on $H_1$ has matrix
 \[
 A=
@@ -150,5 +184,11 @@ This matrix has determinant $2$ and Smith normal form $\operatorname{diag}(1,2)$
 \[
 H_1\cong\mathbb Z_2\oplus\mathbb Z.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

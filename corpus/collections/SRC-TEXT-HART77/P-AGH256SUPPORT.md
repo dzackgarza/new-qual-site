@@ -52,17 +52,28 @@ For part (d), use (Ex. 1.20) and (5.8) to show a priori that $\mch^0_Z(\mcf)$ is
 Use the [[D-UDIVH|support]] conventions of [[P-AGH2114SUPPORT]] and the [[P-AGH2120SUPPSUBSHEAF|subsheaf of sections with support in a closed set]].
 For $X=\Spec A$ and $\mcf=\widetilde M$, the stalk at $\mathfrak p$ is $M_{\mathfrak p}$ and the sections on $D(f)$ are $M_f$ [@Har10a, Proposition II.5.1].
 
-<1>1. For part (a), $\supp m=V(\Ann m)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For part (a), $\supp m=V(\Ann m)$.
+
+::: pf-proof
+
 For a prime ideal $\mathfrak p\subseteq A$, the germ $m/1$ is zero in $M_{\mathfrak p}$ exactly when there exists $s\in A\setminus\mathfrak p$ with $sm=0$.
 Equivalently, $\Ann m$ is not contained in $\mathfrak p$.
 Thus the germ is nonzero exactly at the primes containing $\Ann m$, proving the equality.
+
 :::
 
-<1>2. For part (b), $\supp\mcf=V(\Ann M)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For part (b), $\supp\mcf=V(\Ann M)$.
+
+::: pf-proof
+
 Choose generators $m_1,\ldots,m_r$ of $M$.
 If $M_{\mathfrak p}=0$, for each $j$ there is $s_j\notin\mathfrak p$ with $s_jm_j=0$.
 The product $s=\prod_j s_j$ is outside $\mathfrak p$ and annihilates all generators, hence all of $M$.
@@ -70,27 +81,43 @@ Therefore $\Ann M$ is not contained in $\mathfrak p$.
 Conversely, an element of $\Ann M\setminus\mathfrak p$ becomes a unit after localization and annihilates $M_{\mathfrak p}$, forcing that module to be zero.
 Consequently $M_{\mathfrak p}\ne0$ exactly when $\Ann M\subseteq\mathfrak p$.
 For $M=0$ the empty product is $1$, and the same argument gives empty support.
+
 :::
 
-<1>3. The [[D-UDIVH|support]] in part (c) is closed.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The [[D-UDIVH|support]] in part (c) is closed.
+
+::: pf-proof
+
 On each affine open $U=\Spec A\subseteq X$, the [[D-QNTZY|coherent]] sheaf $\mcf$ restricts to $\widetilde M$ for a finite $A$-module $M$ [@Har10a, Proposition II.5.4].
-Step <1>2 shows that $\supp\mcf\cap U=V(\Ann M)$ is closed in $U$.
+Step [](#s2){.pf-ref} shows that $\supp\mcf\cap U=V(\Ann M)$ is closed in $U$.
 Thus $U\setminus\supp\mcf$ is open in $U$, hence in $X$.
 The complement $X\setminus\supp\mcf$ is the union of these open subsets as $U$ runs over an affine cover, so it is open.
+
 :::
 
-<1>4. For part (d), the inclusion $\Gamma_\mfa(M)\subseteq M$ induces an isomorphism
+:::
+
+::: {.pf-step #s4}
+
+For part (d), the inclusion $\Gamma_\mfa(M)\subseteq M$ induces an isomorphism
 $$
 \widetilde{\Gamma_\mfa(M)}\cong\mch_Z^0(\widetilde M).
 $$
 
-<2>1. The sections of $\widetilde M$ supported in $Z$ are precisely $\Gamma_\mfa(M)$.
+::: pf-proof
 
-::: {.proof}
+::: {.pf-step #s4-1}
+
+The sections of $\widetilde M$ supported in $Z$ are precisely $\Gamma_\mfa(M)$.
+
+::: pf-proof
+
 The set $\Gamma_\mfa(M)$ is a submodule: a common power of $\mfa$ annihilates the sum of two elements annihilated by powers of $\mfa$, and scalar multiplication preserves this property.
-By step <1>1 and the ideal description of closed subsets of an affine spectrum,
+By step [](#s1){.pf-ref} and the ideal description of closed subsets of an affine spectrum,
 $$
 \supp m\subseteq V(\mfa)
 \quad\Longleftrightarrow\quad
@@ -104,15 +131,21 @@ For $N=1+\sum_i(n_i-1)$, every monomial of total degree $N$ in the $a_i$ has som
 These monomials generate $\mfa^N$, so $\mfa^N m=0$.
 If $\mfa=0$, its first power already annihilates every element.
 This proves the desired equality of section modules.
+
 :::
 
-<2>2. For every $f\in A$, localization identifies
+:::
+
+::: {.pf-step #s4-2}
+
+For every $f\in A$, localization identifies
 $$
 \Gamma_\mfa(M)_f=\Gamma_{\mfa A_f}(M_f)
 $$
 as submodules of $M_f$.
 
-::: {.proof}
+::: pf-proof
+
 Localization of the inclusion $\Gamma_\mfa(M)\subseteq M$ is injective.
 An element of its source is still annihilated by a power of $\mfa A_f$, giving one containment.
 For the other, let $m/f^q$ be annihilated by $(\mfa A_f)^n$.
@@ -124,24 +157,34 @@ $$
 m/f^q=(f^em)/f^{q+e}\in\Gamma_\mfa(M)_f.
 $$
 If $\mfa^n=0$, one may take its generating list to consist of the single element zero and take $e=0$.
+
 :::
 
-<2>3. Q.E.D.
+:::
 
-::: {.proof}
-Apply step <2>1 over the noetherian ring $A_f$, with module $M_f$ and ideal $\mfa A_f$.
+::: pf-qed
+
+Apply step [](#s4-1){.pf-ref} over the noetherian ring $A_f$, with module $M_f$ and ideal $\mfa A_f$.
 The sections of $\mch_Z^0(\widetilde M)$ on $D(f)$ are exactly $\Gamma_{\mfa A_f}(M_f)$.
-By step <2>2, these are also the sections of $\widetilde{\Gamma_\mfa(M)}$.
+By step [](#s4-2){.pf-ref}, these are also the sections of $\widetilde{\Gamma_\mfa(M)}$.
 All identifications are inclusions into $M_f$ and commute with restriction.
 They therefore give the asserted isomorphism on a basis, hence on $X$.
+
 :::
 
-<1>5. Part (e) follows from the affine description in step <1>4.
+:::
 
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Part (e) follows from the affine description in step [](#s4){.pf-ref}.
+
+::: pf-proof
+
 For an affine open $U=\Spec A$ in $X$, write $Z\cap U=V(\mfa)$ and $\mcf|_U\cong\widetilde M$.
 The [[P-AGH2120SUPPSUBSHEAF|definition of the supported subsheaf]] commutes with restriction to $U$.
-Step <1>4 therefore gives
+Step [](#s4){.pf-ref} therefore gives
 $$
 \mch_Z^0(\mcf)|_U\cong\widetilde{\Gamma_\mfa(M)}.
 $$
@@ -149,12 +192,18 @@ These descriptions make $\mch_Z^0(\mcf)$ [[D-QNTZY|quasi-coherent]].
 If $\mcf$ is [[D-QNTZY|coherent]], then $M$ is finitely generated over the noetherian ring $A$.
 Its submodule $\Gamma_\mfa(M)$ is consequently finitely generated, so the displayed associated sheaf is [[D-QNTZY|coherent]].
 This proves the second assertion on an affine cover of $X$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c).
-Step <1>4 proves part (d), and step <1>5 proves part (e).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a), (b), and (c).
+Step [](#s4){.pf-ref} proves part (d), and step [](#s5){.pf-ref} proves part (e).
+
+:::
+
+:::
+
 :::

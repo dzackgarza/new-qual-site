@@ -29,10 +29,16 @@ Assume that $\|\xi_m\| \leq 1$ and $\lim_{n \to \infty} \langle \xi_n, \xi_m \ra
 Prove that $\lim_{n \to \infty} \langle \xi_n, \xi \rangle = 0$ for every $\xi \in H$.
 :::
 
-
 ::: {.solution}
-<1>1. Prove convergence on the closed span of the sequence.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove convergence on the closed span of the sequence.
+
+::: pf-proof
+
 Let
 \[
 M:=\overline{\operatorname{span}}\{\xi_m:m\ge1\}.
@@ -65,10 +71,17 @@ Since $\varepsilon$ is arbitrary,
 \langle \xi_n,\xi\rangle\longrightarrow0
 \]
 for every $\xi\in M$.
+
 :::
 
-<1>2. Extend the conclusion to all of $H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extend the conclusion to all of $H$.
+
+::: pf-proof
+
 Every $\xi\in H$ has an orthogonal decomposition
 \[
 \xi=\xi_M+\xi_\perp,
@@ -91,5 +104,11 @@ by Step 1. Hence
 \[
 \boxed{\xi_n\rightharpoonup0\text{ in }H.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -25,17 +25,35 @@ Prove that $X$ is **connected** if and only if the only subsets of $X$ that are 
 :::
 
 ::: {.solution}
-<1>1. Suppose $X$ is connected and $A\subseteq X$ is clopen. If $A$ were neither $\varnothing$ nor $X$, then
+
+::: pf
+
+::: pf-step
+
+Suppose $X$ is connected and $A\subseteq X$ is clopen. If $A$ were neither $\varnothing$ nor $X$, then
 $$
 X=A\sqcup(X\setminus A)
 $$
 would be a union of two disjoint nonempty open sets, contradicting connectedness. Hence the only clopen subsets are $\varnothing$ and $X$.
 
-<1>2. Conversely, suppose the only clopen subsets are $\varnothing$ and $X$. If $X$ were disconnected, there would be disjoint nonempty open sets $U,V$ with $X=U\cup V$. Then
+:::
+
+::: pf-step
+
+Conversely, suppose the only clopen subsets are $\varnothing$ and $X$. If $X$ were disconnected, there would be disjoint nonempty open sets $U,V$ with $X=U\cup V$. Then
 $$
 X\setminus U=V
 $$
 is open, so $U$ is also closed. Thus $U$ is a nontrivial clopen subset, a contradiction.
 
-<1>3. Therefore $X$ is connected if and only if its only clopen subsets are $\varnothing$ and $X$.
+:::
+
+::: pf-step
+
+Therefore $X$ is connected if and only if its only clopen subsets are $\varnothing$ and $X$.
+
+:::
+
+:::
+
 :::

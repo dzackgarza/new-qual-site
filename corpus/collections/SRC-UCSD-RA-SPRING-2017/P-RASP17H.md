@@ -37,10 +37,16 @@ $$
    Show that for each $0 < M < \infty$ there exists $1 \leq n_1 < n_2 < n_3 < \ldots$ in $\mathbb{N}$ such that $\{\hat{f}_{n_k}\}_{k=1}^\infty$ is uniformly convergent on $[-M, M]$ to some $g \in C([-M, M], \mathbb{C})$.
 :::
 
-
 ::: {.solution}
-<1>1. Differentiate the Fourier transform under the integral sign.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Differentiate the Fourier transform under the integral sign.
+
+::: pf-proof
+
 With the source normalization,
 \[
 \widehat f(k)=\frac1{\sqrt{2\pi}}\int_{\mathbb R}f(x)e^{-ikx}\,dx.
@@ -56,10 +62,17 @@ Therefore differentiation under the integral sign is justified for every order a
 \int_{-1}^1(-ix)^\ell f(x)e^{-ikx}\,dx.
 \]
 Hence \(\widehat f\in C^\infty(\mathbb R)\).
+
 :::
 
-<1>2. Prove the stated uniform derivative bound.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the stated uniform derivative bound.
+
+::: pf-proof
+
 By Cauchy--Schwarz,
 \[
 \begin{aligned}
@@ -78,10 +91,17 @@ The bound is independent of \(k\), so
 \frac1{\sqrt{2\pi}}
 \sqrt{\frac{2}{2\ell+1}}\,\|f\|_2.}
 \]
+
 :::
 
-<1>3. Apply Arzelà--Ascoli to the sequence \((\widehat f_n)\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Arzelà--Ascoli to the sequence \((\widehat f_n)\).
+
+::: pf-proof
+
 Assume \(\|f_n\|_2\le1\). Step 2 with \(\ell=0\) gives
 \[
 \sup_n\sup_{k\in\mathbb R}|\widehat f_n(k)|
@@ -102,5 +122,11 @@ So \((\widehat f_n)\) is uniformly bounded and equicontinuous on the compact int
 g\in C([-M,M],\mathbb C).
 \]
 This is exactly the required conclusion.
+
 :::
+
+:::
+
+:::
+
 :::

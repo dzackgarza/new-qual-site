@@ -34,8 +34,15 @@ Precisely you need to show that (a) $\nu$ as defined above is a Radon measure; (
 :::
 
 ::: {.solution}
-<1>1. The functional $I$ is well defined, linear, and positive.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The functional $I$ is well defined, linear, and positive.
+
+::: pf-proof
+
 If $f\in C_c(X)$, then $f|_Y\in C_c(Y)$ because
 \[
 \operatorname{supp}(f|_Y)\subseteq \operatorname{supp}(f)\cap Y,
@@ -49,10 +56,17 @@ is well defined. Linearity is immediate from linearity of the integral. If $f\ge
 I(f)\ge0.
 \]
 So $I$ is a positive linear functional on $C_c(X)$.
+
 :::
 
-<1>2. Define the candidate measure and prove that it is Radon.
-::: {.proof}
+:::
+
+::: pf-step
+
+Define the candidate measure and prove that it is Radon.
+
+::: pf-proof
+
 For each Borel set $E\subseteq X$, define
 \[
 \nu(E):=\mu(E\cap Y).
@@ -96,10 +110,17 @@ Hence
 \nu(U)=\mu(W)\le\nu(E)+\varepsilon.
 \]
 Thus $\nu$ is outer regular as well. Therefore $\nu$ is a Radon measure on $X$.
+
 :::
 
-<1>3. Show that $I$ is integration against $\nu$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $I$ is integration against $\nu$.
+
+::: pf-proof
+
 For every nonnegative Borel measurable function $h$ on $X$, the definition of $\nu$ gives
 \[
 \int_X h\,d\nu=\int_Y h|_Y\,d\mu;
@@ -118,5 +139,11 @@ The Riesz--Markov theorem says that a positive linear functional on $C_c(X)$ is 
 \boxed{\nu(E)=\mu(E\cap Y)}
 \]
 for every Borel set $E\subseteq X$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -27,28 +27,63 @@ Hint: The solution of (b) does not require (a).
 :::
 
 ::: {.solution}
-<1>1. From the representation, $u(a) = \operatorname{Re}\frac{1}{2\pi i}\int_{|\eta|=R} \frac{\eta-a}{\eta+a}u(\eta)\frac{d\eta}{\eta}$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+From the representation, $u(a) = \operatorname{Re}\frac{1}{2\pi i}\int_{|\eta|=R} \frac{\eta-a}{\eta+a}u(\eta)\frac{d\eta}{\eta}$.
+
+::: pf-proof
+
 hypothesis.
+
 :::
 
-<1>2. Bound $|u(z)|=o(|z|)$, let $R\to\infty$, then $\frac{\eta-a}{\eta+a}=1+O(R^{-1})$, so $u(a)=\operatorname{Re}\frac{1}{2\pi i}\int_{|\eta|=R} u(\eta)\frac{d\eta}{\eta}+o(1)$.
-::: {.proof}
-<1>1 and growth.
 :::
 
-<1>3. The integral $\frac{1}{2\pi i}\int_{|\eta|=R} u(\eta)\frac{d\eta}{\eta}$ is bounded independent of $R$, so $u$ is constant by letting $R\to\infty$ for $u(a)-u(0)$.
-::: {.proof}
-<1>2 (difference tends to $0$).
+::: {.pf-step #s2}
+
+Bound $|u(z)|=o(|z|)$, let $R\to\infty$, then $\frac{\eta-a}{\eta+a}=1+O(R^{-1})$, so $u(a)=\operatorname{Re}\frac{1}{2\pi i}\int_{|\eta|=R} u(\eta)\frac{d\eta}{\eta}+o(1)$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} and growth.
+
 :::
 
-<1>4. Part (b) follows by writing $\frac{\eta-a}{\eta+a}\frac{d\eta}{\eta}= \frac{R^2-|a|^2}{|Re^{i\theta}-a|^2}d\theta + i(\dots)$ and taking real part.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The integral $\frac{1}{2\pi i}\int_{|\eta|=R} u(\eta)\frac{d\eta}{\eta}$ is bounded independent of $R$, so $u$ is constant by letting $R\to\infty$ for $u(a)-u(0)$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} (difference tends to $0$).
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+Part (b) follows by writing $\frac{\eta-a}{\eta+a}\frac{d\eta}{\eta}= \frac{R^2-|a|^2}{|Re^{i\theta}-a|^2}d\theta + i(\dots)$ and taking real part.
+
+::: pf-proof
+
 $\eta=Re^{i\theta}$, $d\eta=i\eta d\theta$.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>3 and <1>4.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

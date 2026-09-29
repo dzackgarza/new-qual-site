@@ -43,8 +43,14 @@ Let
 \]
 be the quotient homomorphism, and restrict it to $H$.
 
-<1>1. The integer $|\pi(H)|$ divides $|H|$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The integer $|\pi(H)|$ divides $|H|$.
+
+::: pf-proof
+
 The restriction
 \[
 \pi|_H:H\longrightarrow G/N
@@ -62,20 +68,34 @@ Since $H$ is finite,
 |\pi(H)|=[H:H\cap N],
 \]
 which divides $|H|$ by Lagrange's theorem.
+
 :::
 
-<1>2. The integer $|\pi(H)|$ divides $[G:N]$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The integer $|\pi(H)|$ divides $[G:N]$.
+
+::: pf-proof
+
 The image $\pi(H)$ is a subgroup of the finite quotient group $G/N$.
 Therefore Lagrange's theorem gives
 \[
 |\pi(H)|\mid|G/N|=[G:N].
 \]
+
 :::
 
-<1>3. The image $\pi(H)$ is trivial.
-::: {.proof}
-By <1>1 and <1>2, $|\pi(H)|$ divides both $|H|$ and $[G:N]$.
+:::
+
+::: {.pf-step #s3}
+
+The image $\pi(H)$ is trivial.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $|\pi(H)|$ divides both $|H|$ and $[G:N]$.
 The hypothesis says
 \[
 \gcd(|H|,[G:N])=1.
@@ -88,11 +108,18 @@ Thus
 \[
 \pi(H)=\{N\}.
 \]
+
 :::
 
-<1>4. Therefore $H\le N$.
-::: {.proof}
-By <1>3, every $h\in H$ satisfies
+:::
+
+::: pf-step
+
+Therefore $H\le N$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, every $h\in H$ satisfies
 \[
 \pi(h)=N,
 \]
@@ -105,5 +132,11 @@ that is,
 \[
 H\le N.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -32,8 +32,15 @@ c. Show that every prime ideal in a commutative Artinian ring is maximal.
 :::
 
 ::: {.solution}
-<1>1. A surjective homomorphic image of a left Artinian ring is left Artinian.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A surjective homomorphic image of a left Artinian ring is left Artinian.
+
+::: pf-proof
+
 Let
 \[
 J_1\supseteq J_2\supseteq J_3\supseteq\cdots
@@ -53,10 +60,17 @@ J_i=f(f^{-1}(J_i))=f(f^{-1}(J_N))=J_N
 \qquad(i\ge N).
 \]
 Thus every descending chain of left ideals of \(R\) stabilizes.
+
 :::
 
-<1>2. Every Artinian integral domain is a field.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every Artinian integral domain is a field.
+
+::: pf-proof
+
 Let \(A\) be an Artinian integral domain and let \(0\ne a\in A\). The descending chain
 \[
 (a)\supseteq(a^2)\supseteq(a^3)\supseteq\cdots
@@ -74,14 +88,27 @@ Because \(A\) is a domain and \(a^n\ne0\), cancellation gives
 1=ab.
 \]
 Thus every nonzero element of \(A\) is a unit, so \(A\) is a field.
+
 :::
 
-<1>3. Every prime ideal in a commutative Artinian ring is maximal.
-::: {.proof}
-Let \(\mathfrak p\) be a prime ideal of the commutative Artinian ring \(A\). The quotient \(A/\mathfrak p\) is an integral domain. By <1>1, applied to the quotient map
+:::
+
+::: pf-step
+
+Every prime ideal in a commutative Artinian ring is maximal.
+
+::: pf-proof
+
+Let \(\mathfrak p\) be a prime ideal of the commutative Artinian ring \(A\). The quotient \(A/\mathfrak p\) is an integral domain. By step [](#s1){.pf-ref}, applied to the quotient map
 \[
 A\twoheadrightarrow A/\mathfrak p,
 \]
-the quotient is Artinian. By <1>2 it is therefore a field. Hence \(\mathfrak p\) is maximal.
+the quotient is Artinian. By step [](#s2){.pf-ref} it is therefore a field. Hence \(\mathfrak p\) is maximal.
+
 :::
+
+:::
+
+:::
+
 :::

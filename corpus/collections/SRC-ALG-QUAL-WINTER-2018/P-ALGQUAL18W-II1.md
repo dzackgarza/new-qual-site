@@ -42,12 +42,17 @@ $$
 m=[S_n:H].
 $$
 
-<1>1. The index $m$ satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The index $m$ satisfies
 $$
 2\leq m<n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $H$ is proper,
 $$
 m\geq2.
@@ -62,29 +67,41 @@ m
 =
 n.
 $$
+
 :::
 
-<1>2. The action of $S_n$ on the left cosets $S_n/H$ gives a nontrivial
+:::
+
+::: pf-step
+
+The action of $S_n$ on the left cosets $S_n/H$ gives a nontrivial
 homomorphism
 $$
 \rho:S_n\longrightarrow S_m.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Left multiplication permutes the $m$ cosets, giving the homomorphism
 $\rho$.
 
-The action is transitive. Since $m\geq2$ by step <1>1, a transitive action
+The action is transitive. Since $m\geq2$ by step [](#s1){.pf-ref}, a transitive action
 on $m$ points is not trivial. Hence $\rho$ is nontrivial.
+
 :::
 
-<1>3. Assume $n\geq5$. Then the restriction
+:::
+
+::: {.pf-step #s3}
+
+Assume $n\geq5$. Then the restriction
 $$
 \rho|_{A_n}:A_n\longrightarrow S_m
 $$
 is trivial.
 
-::: {.proof}
+::: pf-proof
+
 For $n\geq5$, the alternating group $A_n$ is simple.
 
 If the restriction were nontrivial, simplicity would make its kernel
@@ -96,7 +113,7 @@ $$
 =
 m!.
 $$
-But step <1>1 gives
+But step [](#s1){.pf-ref} gives
 $$
 m\leq n-1,
 $$
@@ -113,15 +130,21 @@ $$
 where the strict middle inequality uses $n\geq5$. Contradiction.
 
 Thus $\rho|_{A_n}$ is trivial.
+
 :::
 
-<1>4. If $n\geq5$, then
+:::
+
+::: {.pf-step #s4}
+
+If $n\geq5$, then
 $$
 \boxed{H=A_n.}
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 A_n\subseteq\ker\rho.
 $$
@@ -134,7 +157,7 @@ orbit of a group of order $2$ has size at most $2$, so
 $$
 m\leq2.
 $$
-Step <1>1 gives $m\geq2$, hence
+Step [](#s1){.pf-ref} gives $m\geq2$, hence
 $$
 m=2.
 $$
@@ -144,12 +167,18 @@ $A_n$ and $H$ have index $2$ in $S_n$, they have the same order. Therefore
 $$
 H=A_n.
 $$
+
 :::
 
-<1>5. For every $n\geq3$, the subgroup $A_n$ satisfies the required
+:::
+
+::: {.pf-step #s5}
+
+For every $n\geq3$, the subgroup $A_n$ satisfies the required
 inequality.
 
-::: {.proof}
+::: pf-proof
+
 The subgroup $A_n$ is proper of order
 $$
 \abs{A_n}
@@ -165,11 +194,17 @@ $$
 \frac n2>1,
 $$
 which holds. Hence $A_n$ is always an example for $n\geq3$.
+
 :::
 
-<1>6. For $n=1$ and $n=2$, there are no such proper subgroups.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+For $n=1$ and $n=2$, there are no such proper subgroups.
+
+::: pf-proof
+
 For $n=1$,
 $$
 \abs{S_1}=1=(1-1)!,
@@ -182,14 +217,20 @@ $$
 $$
 The only proper subgroup of $S_2$ is the trivial subgroup, of order $1$,
 which does not satisfy the strict inequality.
+
 :::
 
-<1>7. For $n=3$, the unique possibility is
+:::
+
+::: {.pf-step #s7}
+
+For $n=3$, the unique possibility is
 $$
 \boxed{H=A_3.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Here
 $$
 (n-1)!=2.
@@ -203,11 +244,17 @@ The unique subgroup of order $3$ is the Sylow $3$-subgroup
 $$
 A_3.
 $$
+
 :::
 
-<1>8. For $n=4$, any such subgroup has order $8$ or $12$.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+For $n=4$, any such subgroup has order $8$ or $12$.
+
+::: pf-proof
+
 Now
 $$
 (n-1)!=6.
@@ -222,14 +269,20 @@ $$
 \quad\text{and}\quad
 12.
 $$
+
 :::
 
-<1>9. The unique subgroup of $S_4$ of order $12$ is
+:::
+
+::: {.pf-step #s9}
+
+The unique subgroup of $S_4$ of order $12$ is
 $$
 A_4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A subgroup of order $12$ has index $2$, hence is normal. Every index-two
 subgroup is the kernel of a surjective homomorphism
 $$
@@ -244,12 +297,18 @@ Both groups have order $12$, so
 $$
 H=A_4.
 $$
+
 :::
 
-<1>10. The subgroups of $S_4$ of order $8$ are exactly three Sylow
+:::
+
+::: {.pf-step #s10}
+
+The subgroups of $S_4$ of order $8$ are exactly three Sylow
 $2$-subgroups.
 
-::: {.proof}
+::: pf-proof
+
 An order-$8$ subgroup is a Sylow $2$-subgroup because
 $$
 24=2^3\cdot3.
@@ -287,9 +346,14 @@ Since we have exhibited three distinct ones,
 $$
 n_2=3.
 $$
+
 :::
 
-<1>11. The complete classification is:
+:::
+
+::: {.pf-step #s11}
+
+The complete classification is:
 $$
 \boxed{
 \begin{aligned}
@@ -301,14 +365,21 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>3--<1>5 classify all cases $n\geq5$ and verify $A_n$ as an example
-for every $n\geq3$. Steps <1>6--<1>10 exhaust the small cases.
+::: pf-proof
+
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} classify all cases $n\geq5$ and verify $A_n$ as an example
+for every $n\geq3$. Steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} exhaust the small cases.
+
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Step <1>11 gives all proper subgroups satisfying the required order bound.
 :::
+
+::: pf-qed
+
+Step [](#s11){.pf-ref} gives all proper subgroups satisfying the required order bound.
+
+:::
+
+:::
+
 :::

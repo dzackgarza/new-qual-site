@@ -45,12 +45,20 @@ $$
 q(x)=\inner{Ax}{x}.
 $$
 
-<1>1. If $q(u)=0$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $q(u)=0$, then
 $$
 (A+A^T)u=0.
 $$
 
-<2>1. For every $x\in\RR^n$ and every $t\in\RR$,
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+For every $x\in\RR^n$ and every $t\in\RR$,
 $$
 q(u+tx)
 =
@@ -59,7 +67,8 @@ t\inner{(A+A^T)u}{x}
 t^2q(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $q(u)=0$,
 $$
 \begin{aligned}
@@ -78,21 +87,27 @@ t\inner{Au+A^Tu}{x}
 t^2q(x).
 \end{aligned}
 $$
+
 :::
 
-<2>2. For every $x\in\RR^n$,
+:::
+
+::: {.pf-step #s1-2}
+
+For every $x\in\RR^n$,
 $$
 \inner{(A+A^T)u}{x}=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $x$ and set
 $$
 c=\inner{(A+A^T)u}{x},
 \qquad
 d=q(x)\geq0.
 $$
-By the hypothesis and step <2>1,
+By the hypothesis and step [](#s1-1){.pf-ref},
 $$
 tc+t^2d\geq0
 $$
@@ -111,15 +126,21 @@ tc+t^2d
 <0,
 $$
 a contradiction. Hence $c=0$.
+
 :::
 
-<2>3. One has
+:::
+
+::: {.pf-step #s1-3}
+
+One has
 $$
 (A+A^T)u=0.
 $$
 
-::: {.proof}
-Apply step <2>2 with
+::: pf-proof
+
+Apply step [](#s1-2){.pf-ref} with
 $$
 x=(A+A^T)u.
 $$
@@ -128,31 +149,47 @@ $$
 \norm{(A+A^T)u}^2=0,
 $$
 so $(A+A^T)u=0$.
+
 :::
 
-<2>4. Q.E.D.
-
-::: {.proof}
-Step <2>3 proves step <1>1.
 :::
 
-<1>2. If $Au=0$, then $A^Tu=0$.
+::: pf-qed
 
-::: {.proof}
+Step [](#s1-3){.pf-ref} proves step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $Au=0$, then $A^Tu=0$.
+
+::: pf-proof
+
 If $Au=0$, then
 $$
 q(u)=\inner{Au}{u}=0.
 $$
-Step <1>1 therefore gives
+Step [](#s1){.pf-ref} therefore gives
 $$
 Au+A^Tu=0.
 $$
 Since $Au=0$, it follows that $A^Tu=0$.
+
 :::
 
-<1>3. If $A^Tu=0$, then $Au=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $A^Tu=0$, then $Au=0$.
+
+::: pf-proof
+
 If $A^Tu=0$, then
 $$
 q(u)
@@ -162,26 +199,38 @@ q(u)
 \inner{u}{A^Tu}
 =0.
 $$
-Step <1>1 therefore gives
+Step [](#s1){.pf-ref} therefore gives
 $$
 Au+A^Tu=0.
 $$
 Since $A^Tu=0$, it follows that $Au=0$.
+
 :::
 
-<1>4. Therefore, for every $u\in\RR^n$,
+:::
+
+::: {.pf-step #s4}
+
+Therefore, for every $u\in\RR^n$,
 $$
 \boxed{Au=0\quad\Longleftrightarrow\quad A^Tu=0}.
 $$
 
-::: {.proof}
-The forward implication is step <1>2 and the reverse implication is
-step <1>3.
+::: pf-proof
+
+The forward implication is step [](#s2){.pf-ref} and the reverse implication is
+step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::

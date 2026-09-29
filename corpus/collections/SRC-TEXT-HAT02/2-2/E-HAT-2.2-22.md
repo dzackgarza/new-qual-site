@@ -35,9 +35,20 @@ Give $X$ a finite CW structure. Pull this structure back along the $n$-sheeted c
 p:\widetilde X\to X.
 \]
 
-<1>1. Every open $k$-cell of $X$ has exactly $n$ lifts, each an open $k$-cell of $\widetilde X$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every open $k$-cell of $X$ has exactly $n$ lifts, each an open $k$-cell of $\widetilde X$.
+
+::: pf-proof
+
 An open cell is contractible and hence simply connected. The restriction of the covering over the cell is therefore a disjoint union of homeomorphic copies of the cell. Since each point has exactly $n$ preimages, there are exactly $n$ such copies. The lifted characteristic maps provide a CW structure on $\widetilde X$.
+
+:::
+
+:::
+
 :::
 
 If $c_k(X)$ denotes the number of $k$-cells, then

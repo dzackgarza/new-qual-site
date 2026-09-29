@@ -39,8 +39,14 @@ Then
 A=\ker(\operatorname{ev}_\theta).
 \]
 
-<1>1. If $\theta$ is transcendental over $F$, then $A=(0)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+If $\theta$ is transcendental over $F$, then $A=(0)$.
+
+::: pf-proof
+
 By definition of transcendence, no nonzero polynomial in $F[x]$ vanishes at
 $\theta$. Hence
 \[
@@ -50,14 +56,21 @@ Therefore
 \[
 F[\theta]\cong F[x].
 \]
+
 :::
 
-<1>2. If $\theta$ is algebraic over $F$, then
+:::
+
+::: pf-step
+
+If $\theta$ is algebraic over $F$, then
 \[
 A=(m_\theta(x)),
 \]
 where $m_\theta$ is the minimal polynomial of $\theta$ over $F$.
-::: {.proof}
+
+::: pf-proof
+
 Certainly $m_\theta(\theta)=0$, so
 \[
 (m_\theta)\subseteq A.
@@ -74,6 +87,11 @@ Evaluating at $\theta$ gives
 \]
 By minimality of the degree of $m_\theta$, this forces $r=0$. Thus
 $m_\theta$ divides $f$, and $A=(m_\theta)$.
+
+:::
+
+:::
+
 :::
 
 Hence

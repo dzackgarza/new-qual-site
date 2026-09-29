@@ -38,40 +38,118 @@ Show that
 **Goal:** Suppose $(f_n)$ is a sequence of entire functions with $f_n \to g$ pointwise, and $f_n \to g$ uniformly on every line segment in $\CC$.
 Show that $g$ is entire and $f_n \to g$ uniformly on every compact subset of $\CC$.
 
-<1>1. $g$ is holomorphic on $\CC$.
-<2>1. It suffices to show $\oint_\gamma g = 0$ for every closed polygonal path $\gamma$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$g$ is holomorphic on $\CC$.
+
+::: pf-proof
+
+::: pf-step
+
+It suffices to show $\oint_\gamma g = 0$ for every closed polygonal path $\gamma$.
+
+::: pf-proof
+
 Morera's theorem.
+
 :::
-<2>2. For a closed polygonal path $\gamma$ (a finite union of line segments), $\int_\gamma g = \lim_n \int_\gamma f_n$.
-::: {.proof}
+
+:::
+
+::: {.pf-step #s1-2}
+
+For a closed polygonal path $\gamma$ (a finite union of line segments), $\int_\gamma g = \lim_n \int_\gamma f_n$.
+
+::: pf-proof
+
 $\gamma$ is a finite union of line segments; on each, $f_n \to g$ uniformly by hypothesis, so the integrals converge.
-:::
-<2>3. $\int_\gamma g = 0$.
-::: {.proof}
-each $f_n$ is entire, so $\oint_\gamma f_n = 0$ (Cauchy's theorem); <2>2 gives the limit $0$.
+
 :::
 
-<1>2. $f_n \to g$ uniformly on compact sets.
-<2>1. Let $K \subset \CC$ be compact; choose a bounded polygonal domain $\Omega$ with $K \subset \Omega$ and $\dist(K, \bd\Omega) > 0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\int_\gamma g = 0$.
+
+::: pf-proof
+
+each $f_n$ is entire, so $\oint_\gamma f_n = 0$ (Cauchy's theorem); step [](#s1-2){.pf-ref} gives the limit $0$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$f_n \to g$ uniformly on compact sets.
+
+::: pf-proof
+
+::: pf-step
+
+Let $K \subset \CC$ be compact; choose a bounded polygonal domain $\Omega$ with $K \subset \Omega$ and $\dist(K, \bd\Omega) > 0$.
+
+::: pf-proof
+
 e.g. a large square (or union of squares) around $K$, whose boundary is a finite union of line segments.
-:::
-<2>2. For $z \in K$: $f_n(z) - g(z) = \frac{1}{2\pi i}\oint_{\bd\Omega} \frac{f_n(\zeta) - g(\zeta)}{\zeta - z}\, d\zeta$.
-::: {.proof}
-Cauchy integral formula applied to the holomorphic functions $f_n$ and $g$ (entire by <1>1) on the domain $\Omega$.
-:::
-<2>3. $\sup_{z \in K}|f_n(z) - g(z)| \le \frac{\operatorname{length}(\bd\Omega)}{2\pi\, d} \sup_{\zeta \in \bd\Omega}|f_n(\zeta) - g(\zeta)|$ where $d = \dist(K, \bd\Omega)$.
-::: {.proof}
-bound the integral in <2>2: $|\zeta - z| \ge d$.
-:::
-<2>4. The right-hand side tends to $0$.
-::: {.proof}
-$\bd\Omega$ is a finite union of line segments, and $f_n \to g$ uniformly on each, so $\sup_{\bd\Omega}|f_n - g| \to 0$.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>1 shows $g$ is entire; <1>2 shows uniform convergence on compacta.
 :::
+
+::: {.pf-step #s2-2}
+
+For $z \in K$: $f_n(z) - g(z) = \frac{1}{2\pi i}\oint_{\bd\Omega} \frac{f_n(\zeta) - g(\zeta)}{\zeta - z}\, d\zeta$.
+
+::: pf-proof
+
+Cauchy integral formula applied to the holomorphic functions $f_n$ and $g$ (entire by step [](#s1){.pf-ref}) on the domain $\Omega$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\sup_{z \in K}|f_n(z) - g(z)| \le \frac{\operatorname{length}(\bd\Omega)}{2\pi\, d} \sup_{\zeta \in \bd\Omega}|f_n(\zeta) - g(\zeta)|$ where $d = \dist(K, \bd\Omega)$.
+
+::: pf-proof
+
+bound the integral in step [](#s2-2){.pf-ref}: $|\zeta - z| \ge d$.
+
+:::
+
+:::
+
+::: pf-step
+
+The right-hand side tends to $0$.
+
+::: pf-proof
+
+$\bd\Omega$ is a finite union of line segments, and $f_n \to g$ uniformly on each, so $\sup_{\bd\Omega}|f_n - g| \to 0$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} shows $g$ is entire; step [](#s2){.pf-ref} shows uniform convergence on compacta.
+
+:::
+
+:::
+
 :::

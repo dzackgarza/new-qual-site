@@ -28,8 +28,14 @@ Classify the groups of order $28$ up to isomorphism.
 ::: {.solution}
 There are exactly four isomorphism types.
 
-<1>1. Every group $G$ of order $28$ has a normal Sylow $7$-subgroup $P\cong C_7$ and a Sylow $2$-subgroup $Q$ of order $4$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every group $G$ of order $28$ has a normal Sylow $7$-subgroup $P\cong C_7$ and a Sylow $2$-subgroup $Q$ of order $4$.
+
+::: pf-proof
+
 Sylow gives
 \[
 n_7\equiv1\pmod7,
@@ -50,10 +56,17 @@ for some action
 \[
 \theta:Q\longrightarrow\Aut(C_7)\cong C_6.
 \]
+
 :::
 
-<1>2. If $Q\cong C_4$, there are exactly two isomorphism types.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $Q\cong C_4$, there are exactly two isomorphism types.
+
+::: pf-proof
+
 The image of a homomorphism $C_4\to C_6$ has order dividing both $4$ and $6$, hence has order $1$ or $2$.
 
 For the trivial action,
@@ -65,10 +78,17 @@ For a nontrivial action, a generator of $C_4$ acts by the unique involution in $
 C_7\rtimes C_4
 =\langle a,t\mid a^7=t^4=1,\ tat^{-1}=a^{-1}\rangle.
 \]
+
 :::
 
-<1>3. If $Q\cong C_2\times C_2$, there are exactly two isomorphism types.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $Q\cong C_2\times C_2$, there are exactly two isomorphism types.
+
+::: pf-proof
+
 Any homomorphism
 \[
 C_2^2\longrightarrow C_6
@@ -83,11 +103,23 @@ Any nontrivial action is a surjection $C_2^2\to C_2$. All nonzero homomorphisms 
 \[
 G\cong (C_7\rtimes C_2)\times C_2.
 \]
+
 :::
 
-<1>4. The four groups are pairwise nonisomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+
+The four groups are pairwise nonisomorphic.
+
+::: pf-proof
+
 The first two listed direct products are the two abelian groups of order $28$, one cyclic and one noncyclic. The two nonabelian groups have nonisomorphic Sylow $2$-subgroups: one has a cyclic Sylow $2$-subgroup $C_4$, while the other has Sylow $2$-subgroup $C_2^2$. Hence all four types are distinct.
+
+:::
+
+:::
+
 :::
 
 Thus the groups of order $28$ are

@@ -25,28 +25,40 @@ satisfies $\lim_{x\to+\infty}f(x)=0$.
 :::
 
 ::: {.solution}
-<1>1. Take
+
+::: pf
+
+::: {.pf-step #s1}
+
+Take
 $$
 \boxed{q(x)=1,\qquad p(x)=-1}
 $$
 for every $x\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 Both functions are continuous, and for every $x\in\RR$,
 $$
 \abs{q(x)}=1=\abs{p(x)}.
 $$
 Thus the required pointwise inequality $\abs{q(x)}\leq\abs{p(x)}$ holds.
+
 :::
 
-<1>2. Every solution of
+:::
+
+::: {.pf-step #s2}
+
+Every solution of
 $$
 f'+qf=0
 $$
 tends to $0$ as $x\to+\infty$.
 
-::: {.proof}
-For the choice in step <1>1, the equation is
+::: pf-proof
+
+For the choice in step [](#s1){.pf-ref}, the equation is
 $$
 f'+f=0.
 $$
@@ -59,16 +71,22 @@ $$
 f(x)=Ce^{-x}
 $$
 for some constant $C$. Hence $\lim_{x\to+\infty}f(x)=0$.
+
 :::
 
-<1>3. The corresponding equation
+:::
+
+::: {.pf-step #s3}
+
+The corresponding equation
 $$
 f'+pf=0
 $$
 has a solution that does not tend to $0$ as $x\to+\infty$.
 
-::: {.proof}
-For the choice in step <1>1, this equation is
+::: pf-proof
+
+For the choice in step [](#s1){.pf-ref}, this equation is
 $$
 f'-f=0.
 $$
@@ -77,11 +95,17 @@ $$
 f(x)=e^x
 $$
 is a solution, and $\lim_{x\to+\infty}e^x=+\infty$. Thus this solution does not tend to $0$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 verify all hypotheses of the proposed theorem, while step <1>3 shows that its conclusion fails. Therefore the boxed pair in step <1>1 is a counterexample.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} verify all hypotheses of the proposed theorem, while step [](#s3){.pf-ref} shows that its conclusion fails. Therefore the boxed pair in step [](#s1){.pf-ref} is a counterexample.
+
+:::
+
+:::
+
 :::

@@ -54,22 +54,32 @@ $$
 A_n\coloneqq A+D_n.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 A_n\longrightarrow A
 $$
 as $n\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 Every entry of $D_n$ tends to $0$, so $D_n\to0$. Hence
 $$
 A_n-A=D_n\longrightarrow0.
 $$
 Thus $A_n\to A$ entrywise, equivalently in any norm on the
 finite-dimensional space of $4\times4$ real matrices.
+
 :::
 
-<1>2. For arbitrary real numbers $a,b,c,d$, the matrix
+:::
+
+::: {.pf-step #s2}
+
+For arbitrary real numbers $a,b,c,d$, the matrix
 $$
 A+\operatorname{diag}(a,b,c,d)
 $$
@@ -78,7 +88,8 @@ $$
 (\lambda-a)(\lambda-b)(\lambda-c)(\lambda-d).
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 \lambda I-
@@ -110,9 +121,14 @@ $$
 (\lambda-a)(\lambda-b)(\lambda-c)(\lambda-d).
 \end{aligned}
 $$
+
 :::
 
-<1>3. The eigenvalues of $A_n$ are
+:::
+
+::: {.pf-step #s3}
+
+The eigenvalues of $A_n$ are
 $$
 \frac1n,\qquad
 \frac2n,\qquad
@@ -120,8 +136,9 @@ $$
 -\frac2n.
 $$
 
-::: {.proof}
-Apply step <1>2 with
+::: pf-proof
+
+Apply step [](#s2){.pf-ref} with
 $$
 (a,b,c,d)
 =
@@ -131,26 +148,44 @@ $$
 $$
 The four roots of the resulting characteristic polynomial are exactly
 the displayed numbers.
+
 :::
 
-<1>4. For every $n\ge1$, the matrix $A_n$ has four distinct real
+:::
+
+::: {.pf-step #s4}
+
+For every $n\ge1$, the matrix $A_n$ has four distinct real
 eigenvalues, exactly two positive and two negative.
 
-::: {.proof}
-The four numbers in step <1>3 are real and pairwise distinct. The
+::: pf-proof
+
+The four numbers in step [](#s3){.pf-ref} are real and pairwise distinct. The
 first two are positive and the last two are negative.
+
 :::
 
-<1>5. The sequence $(A_n)$ has all the required properties.
+:::
 
-::: {.proof}
-Step <1>1 gives convergence to $A$, and step <1>4 gives the required
+::: {.pf-step #s5}
+
+The sequence $(A_n)$ has all the required properties.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives convergence to $A$, and step [](#s4){.pf-ref} gives the required
 eigenvalue condition for every $n$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 completes the construction.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} completes the construction.
+
+:::
+
+:::
+
 :::

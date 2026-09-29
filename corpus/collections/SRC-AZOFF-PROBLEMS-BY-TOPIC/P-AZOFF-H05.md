@@ -36,7 +36,11 @@ $$
 F(z)=e^z-az^n.
 $$
 
-<1>1. On the unit circle,
+::: pf
+
+::: {.pf-step #s1}
+
+On the unit circle,
 $$
 e^{-1}
 \leq
@@ -45,7 +49,8 @@ e^{-1}
 e.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}=1$, then
 $$
 -1\leq\operatorname{Re}z\leq1.
@@ -55,17 +60,23 @@ $$
 \abs{e^z}=e^{\operatorname{Re}z},
 $$
 the displayed bounds follow.
+
 :::
 
-<1>2. If $\abs{a}>e$, then on $\abs{z}=1$,
+:::
+
+::: {.pf-step #s2}
+
+If $\abs{a}>e$, then on $\abs{z}=1$,
 $$
 \abs{e^z}
 <
 \abs{-az^n}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \abs{e^z}\leq e.
 $$
@@ -73,65 +84,95 @@ On the unit circle,
 $$
 \abs{-az^n}=\abs{a}>e.
 $$
+
 :::
 
-<1>3. If $\abs{a}>e$, then the equation
+:::
+
+::: {.pf-step #s3}
+
+If $\abs{a}>e$, then the equation
 $$
 e^z=az^n
 $$
 has exactly $n$ solutions in the open unit disk, counting multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 F(z)=-az^n+e^z.
 $$
-By step <1>2 and Rouché's theorem, $F$ and $-az^n$ have the same number of
+By step [](#s2){.pf-ref} and Rouché's theorem, $F$ and $-az^n$ have the same number of
 zeros in $\abs{z}<1$. The latter has exactly $n$ zeros there, all at
 $z=0$ counted with multiplicity.
+
 :::
 
-<1>4. If $\abs{a}<e^{-1}$, then on $\abs{z}=1$,
+:::
+
+::: {.pf-step #s4}
+
+If $\abs{a}<e^{-1}$, then on $\abs{z}=1$,
 $$
 \abs{az^n}
 <
 \abs{e^z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the unit circle,
 $$
 \abs{az^n}=\abs{a}<e^{-1}.
 $$
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 \abs{e^z}\geq e^{-1}.
 $$
 Thus the inequality is strict.
+
 :::
 
-<1>5. If $\abs{a}<e^{-1}$, then the equation
+:::
+
+::: {.pf-step #s5}
+
+If $\abs{a}<e^{-1}$, then the equation
 $$
 e^z=az^n
 $$
 has no solutions in the open unit disk.
 
-::: {.proof}
-By step <1>4 and Rouché's theorem, $F=e^z-az^n$ and $e^z$ have the same
+::: pf-proof
+
+By step [](#s4){.pf-ref} and Rouché's theorem, $F=e^z-az^n$ and $e^z$ have the same
 number of zeros in $\abs{z}<1$. The exponential function has no zeros
 anywhere in $\CC$, so this number is zero.
+
 :::
 
-<1>6. Therefore the equation has exactly $n$ solutions in the unit disk
+:::
+
+::: {.pf-step #s6}
+
+Therefore the equation has exactly $n$ solutions in the unit disk
 when $\abs{a}>e$, and none when $\abs{a}<e^{-1}$.
 
-::: {.proof}
-This combines steps <1>3 and <1>5.
+::: pf-proof
+
+This combines steps [](#s3){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -49,7 +49,11 @@ $$
 T(z)=\frac{z-\rho}{z-\rho^{-1}}.
 $$
 
-<1>1. For every $z\neq\rho^{-1}$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $z\neq\rho^{-1}$,
 $$
 \abs{T(z)}^2-\rho^2
 =
@@ -57,7 +61,8 @@ $$
 {\abs{z-\rho^{-1}}^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\rho\rho^{-1}=1$,
 $$
 \begin{aligned}
@@ -75,9 +80,14 @@ $$
 \abs{z-\rho^{-1}}^2
 $$
 gives the identity.
+
 :::
 
-<1>2. For every $z\neq\rho^{-1}$,
+:::
+
+::: {.pf-step #s2}
+
+For every $z\neq\rho^{-1}$,
 $$
 \abs{T(z)}^2-\rho^4
 =
@@ -86,7 +96,8 @@ $$
 {\abs{z-\rho^{-1}}^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding gives
 $$
 \begin{aligned}
@@ -119,19 +130,25 @@ $$
 \left(\abs z^2-\frac12\operatorname{Re}z\right).
 $$
 Dividing by the denominator proves the claim.
+
 :::
 
-<1>3. The map $T$ sends $\Omega$ into the annulus
+:::
+
+::: pf-step
+
+The map $T$ sends $\Omega$ into the annulus
 $$
 \rho^2<\abs w<\rho.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $z\in\Omega$, then
 $$
 \abs z<1.
 $$
-Since $1-\rho^2>0$, step <1>1 gives
+Since $1-\rho^2>0$, step [](#s1){.pf-ref} gives
 $$
 \abs{T(z)}<\rho.
 $$
@@ -144,20 +161,26 @@ Squaring and simplifying gives
 $$
 \abs z^2-\frac12\operatorname{Re}z>0.
 $$
-Since $1-\rho^4>0$, step <1>2 therefore gives
+Since $1-\rho^4>0$, step [](#s2){.pf-ref} therefore gives
 $$
 \abs{T(z)}>\rho^2.
 $$
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 T:\Omega\longrightarrow
 \{w\in\CC:\rho^2<\abs w<\rho\}
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 The map $T$ is a Möbius transformation. Its pole
 $$
 \rho^{-1}=2+\sqrt3
@@ -182,7 +205,7 @@ T^{-1}(w)
 =
 \frac{\rho^{-1}w-\rho}{w-1}
 $$
-is defined. Apply the identities in steps <1>1--<1>2 to
+is defined. Apply the identities in steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to
 $$
 z=T^{-1}(w).
 $$
@@ -197,9 +220,14 @@ $$
 $$
 Thus $z\in\Omega$. Hence $T$ is onto the displayed annulus; injectivity
 follows from the Möbius inverse.
+
 :::
 
-<1>5. A one-to-one conformal map of $\Omega$ onto an annulus
+:::
+
+::: {.pf-step #s5}
+
+A one-to-one conformal map of $\Omega$ onto an annulus
 $$
 r<\abs w<1
 $$
@@ -215,8 +243,9 @@ r=\rho=2-\sqrt3.
 }
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 \rho^2<\abs{T(z)}<\rho.
 $$
@@ -226,11 +255,17 @@ $$
 $$
 Multiplication by the nonzero constant $\rho^{-1}$ preserves conformality
 and injectivity, so $F$ is the required conformal bijection.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives both the map and the required inner radius.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives both the map and the required inner radius.
+
+:::
+
+:::
+
 :::

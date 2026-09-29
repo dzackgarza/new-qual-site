@@ -21,16 +21,27 @@ Prove that $f$ is nondecreasing.
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that there exist $0\leq a<b\leq1$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that there exist $0\leq a<b\leq1$ such that
 $$
 f(a)>f(b).
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is precisely the negation of the assertion that $f$ is nondecreasing.
+
 :::
 
-<1>2. There is an $\varepsilon>0$ such that the continuous function
+:::
+
+::: {.pf-step #s2}
+
+There is an $\varepsilon>0$ such that the continuous function
 $$
 g(x)=f(x)+\varepsilon x
 $$
@@ -40,8 +51,9 @@ $$
 $$
 for every $x_0\in[0,1)$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \frac{f(a)-f(b)}{b-a}>0.
 $$
@@ -67,15 +79,21 @@ $$
 \limsup_{x\to x_0^+}\frac{f(x)-f(x_0)}{x-x_0}+\varepsilon
 \geq\varepsilon>0.
 $$
+
 :::
 
-<1>3. The function $g$ has a point $c\in[a,b)$ such that
+:::
+
+::: {.pf-step #s3}
+
+The function $g$ has a point $c\in[a,b)$ such that
 $$
 \limsup_{x\to c^+}\frac{g(x)-g(c)}{x-c}\leq0.
 $$
 
-::: {.proof}
-Since $g$ is continuous, it attains a maximum on the compact interval $[a,b]$. Let $c$ be a point where this maximum is attained. Step <1>2 gives $g(a)>g(b)$, so $c\neq b$ and hence $c\in[a,b)$.
+::: pf-proof
+
+Since $g$ is continuous, it attains a maximum on the compact interval $[a,b]$. Let $c$ be a point where this maximum is attained. Step [](#s2){.pf-ref} gives $g(a)>g(b)$, so $c\neq b$ and hence $c\in[a,b)$.
 
 For every $x\in(c,b]$,
 $$
@@ -86,27 +104,45 @@ $$
 \frac{g(x)-g(c)}{x-c}\leq0
 $$
 for all $x>c$ sufficiently close to $c$. Taking the upper limit proves the claim.
+
 :::
 
-<1>4. The assumption in step <1>1 is impossible.
+:::
 
-::: {.proof}
-Since $c<b\leq1$, one has $c\in[0,1)$. Step <1>2 applied at $x_0=c$ gives
+::: {.pf-step #s4}
+
+The assumption in step [](#s1){.pf-ref} is impossible.
+
+::: pf-proof
+
+Since $c<b\leq1$, one has $c\in[0,1)$. Step [](#s2){.pf-ref} applied at $x_0=c$ gives
 $$
 \limsup_{x\to c^+}\frac{g(x)-g(c)}{x-c}\geq\varepsilon>0,
 $$
-contradicting step <1>3.
+contradicting step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. The function $f$ is nondecreasing on $[0,1]$.
-
-::: {.proof}
-By step <1>4, there do not exist $a<b$ with $f(a)>f(b)$. Hence for every $a<b$ in $[0,1]$ one has $f(a)\leq f(b)$.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+The function $f$ is nondecreasing on $[0,1]$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, there do not exist $a<b$ with $f(a)>f(b)$. Hence for every $a<b$ in $[0,1]$ one has $f(a)\leq f(b)$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -40,7 +40,12 @@ Prove that $\{g_n\}$ converges uniformly on $[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. There is a constant $M\geq0$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+There is a constant $M\geq0$ such that
 $$
 \abs{K(x,y)}
 \leq
@@ -48,16 +53,22 @@ M
 $$
 for every $(x,y)\in[0,1]^2$.
 
-::: {.proof}
+::: pf-proof
+
 The kernel $K$ is continuous on the compact set $[0,1]^2$. Hence the
 continuous function
 $$
 (x,y)\longmapsto\abs{K(x,y)}
 $$
 attains a finite maximum. Let that maximum be $M$.
+
 :::
 
-<1>2. For every $m,n$ and every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s2}
+
+For every $m,n$ and every $x\in[0,1]$,
 $$
 \abs{g_n(x)-g_m(x)}
 \leq
@@ -69,7 +80,8 @@ M
 \right)^{1/2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of $g_n$,
 $$
 \begin{aligned}
@@ -94,7 +106,7 @@ K(x,y)
 \right)^{1/2}
 \end{aligned}
 $$
-by Cauchy--Schwarz. Step <1>1 gives
+by Cauchy--Schwarz. Step [](#s1){.pf-ref} gives
 $$
 \int_0^1
 \abs{K(x,y)}^2
@@ -105,9 +117,14 @@ $$
 M^2,
 $$
 which yields the stated estimate.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \sup_{x\in[0,1]}
 \abs{g_n(x)-g_m(x)}
@@ -116,8 +133,9 @@ $$
 $$
 as $m,n\to\infty$.
 
-::: {.proof}
-The right-hand side of the estimate in step <1>2 is independent of $x$.
+::: pf-proof
+
+The right-hand side of the estimate in step [](#s2){.pf-ref} is independent of $x$.
 Therefore
 $$
 \sup_{x\in[0,1]}
@@ -132,16 +150,22 @@ M
 $$
 By hypothesis, the integral tends to zero as $m,n\to\infty$, so the
 displayed supremum does also.
+
 :::
 
-<1>4. For every $x\in[0,1]$, the sequence
+:::
+
+::: {.pf-step #s4}
+
+For every $x\in[0,1]$, the sequence
 $$
 \bigl(g_n(x)\bigr)_{n\geq1}
 $$
 converges in $\RR$.
 
-::: {.proof}
-Step <1>3 shows in particular that, for fixed $x$,
+::: pf-proof
+
+Step [](#s3){.pf-ref} shows in particular that, for fixed $x$,
 $$
 \abs{g_n(x)-g_m(x)}
 \longrightarrow
@@ -149,9 +173,14 @@ $$
 $$
 as $m,n\to\infty$. Thus $\bigl(g_n(x)\bigr)$ is a Cauchy sequence in the
 complete metric space $\RR$, so it converges.
+
 :::
 
-<1>5. Define
+:::
+
+::: {.pf-step #s5}
+
+Define
 $$
 g(x)
 =
@@ -165,8 +194,9 @@ g_n\longrightarrow g
 }
 $$
 
-::: {.proof}
-Let $\varepsilon>0$. By step <1>3, there is $N$ such that
+::: pf-proof
+
+Let $\varepsilon>0$. By step [](#s3){.pf-ref}, there is $N$ such that
 $$
 \abs{g_n(x)-g_m(x)}
 <
@@ -175,7 +205,7 @@ $$
 for every $x\in[0,1]$ whenever $m,n\geq N$.
 
 Fix $n\geq N$ and $x\in[0,1]$. Letting $m\to\infty$ and using the
-definition of $g(x)$ from step <1>4 gives
+definition of $g(x)$ from step [](#s4){.pf-ref} gives
 $$
 \abs{g_n(x)-g(x)}
 \leq
@@ -189,11 +219,17 @@ $$
 \varepsilon
 $$
 whenever $n\geq N$. This is uniform convergence.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

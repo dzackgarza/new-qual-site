@@ -39,7 +39,12 @@ Why is the resulting formula for $I(a)$ also valid for certain nonreal complex v
 :::
 
 ::: {.solution}
-<1>1. With the substitution
+
+::: pf
+
+::: {.pf-step #s1}
+
+With the substitution
 $$
 z=e^{i\theta},
 $$
@@ -52,7 +57,8 @@ I(a)
 {i(z^2+2az+1)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the unit circle,
 $$
 \cos\theta
@@ -76,15 +82,21 @@ $$
 $$
 As $\theta$ runs from $0$ to $2\pi$, $z$ traverses the unit circle once
 counterclockwise.
+
 :::
 
-<1>2. For real $a>1$, the two poles of the contour integrand are
+:::
+
+::: {.pf-step #s2}
+
+For real $a>1$, the two poles of the contour integrand are
 $$
 z_\pm=-a\pm\sqrt{a^2-1},
 $$
 and exactly $z_+$ lies inside the unit circle.
 
-::: {.proof}
+::: pf-proof
+
 The poles are the roots of
 $$
 z^2+2az+1=0,
@@ -106,9 +118,14 @@ $$
 1.
 $$
 Thus only $z_+$ is enclosed by the unit circle.
+
 :::
 
-<1>3. The residue at the enclosed pole is
+:::
+
+::: {.pf-step #s3}
+
+The residue at the enclosed pole is
 $$
 \operatorname{Res}_{z=z_+}
 \frac{2}{i(z^2+2az+1)}
@@ -116,7 +133,8 @@ $$
 \frac1{i\sqrt{a^2-1}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 z^2+2az+1=(z-z_+)(z-z_-).
@@ -135,17 +153,23 @@ $$
 \frac1{i\sqrt{a^2-1}}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. For real $a>1$,
+:::
+
+::: {.pf-step #s4}
+
+For real $a>1$,
 $$
 \boxed{
 I(a)=\frac{2\pi}{\sqrt{a^2-1}}.
 }
 $$
 
-::: {.proof}
-By the residue theorem and steps <1>1--<1>3,
+::: pf-proof
+
+By the residue theorem and steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \begin{aligned}
 I(a)
@@ -160,9 +184,14 @@ I(a)
 \frac{2\pi}{\sqrt{a^2-1}}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The function
+:::
+
+::: {.pf-step #s5}
+
+The function
 $$
 a\longmapsto I(a)
 =
@@ -173,7 +202,8 @@ $$
 H=\{a\in\CC:\operatorname{Re}a>1\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix a compact set $K\subset H$. There is a $\delta>0$ such that
 $$
 \operatorname{Re}a\geq1+\delta
@@ -192,15 +222,21 @@ $$
 $$
 are uniformly bounded on $K\times[0,2\pi]$. Differentiation under the
 integral sign is therefore valid on $H$, so $I$ is holomorphic there.
+
 :::
 
-<1>6. There is a holomorphic square root
+:::
+
+::: {.pf-step #s6}
+
+There is a holomorphic square root
 $$
 s(a)=\sqrt{a^2-1}
 $$
 on $H$ which is positive for real $a>1$.
 
-::: {.proof}
+::: pf-proof
+
 For $a\in H$, both $a-1$ and $a+1$ lie in the right half-plane. The
 principal square root is holomorphic on the right half-plane and positive
 on the positive real axis. Define
@@ -214,9 +250,14 @@ $$
 s(a)^2=a^2-1,
 $$
 and $s(a)>0$ for real $a>1$.
+
 :::
 
-<1>7. For every complex $a$ with $\operatorname{Re}a>1$,
+:::
+
+::: {.pf-step #s7}
+
+For every complex $a$ with $\operatorname{Re}a>1$,
 $$
 \boxed{
 I(a)=\frac{2\pi}{s(a)}
@@ -224,26 +265,33 @@ I(a)=\frac{2\pi}{s(a)}
 \frac{2\pi}{\sqrt{a^2-1}},
 }
 $$
-where the square root is the branch from step <1>6.
+where the square root is the branch from step [](#s6){.pf-ref}.
 
-::: {.proof}
-By step <1>5, $I(a)$ is holomorphic on the connected domain $H$. By step
-<1>6,
+::: pf-proof
+
+By step [](#s5){.pf-ref}, $I(a)$ is holomorphic on the connected domain $H$. By step
+[](#s6){.pf-ref},
 $$
 \frac{2\pi}{s(a)}
 $$
-is also holomorphic on $H$. Step <1>4 shows that the two holomorphic
+is also holomorphic on $H$. Step [](#s4){.pf-ref} shows that the two holomorphic
 functions agree for every real $a>1$. This set has accumulation points in
 $H$, so the identity theorem implies that they agree throughout $H$.
 In particular, the formula holds for every nonreal $a$ with
 $\operatorname{Re}a>1$.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 evaluates the original real integral, and step <1>7 explains the
+::: pf-qed
+
+Step [](#s4){.pf-ref} evaluates the original real integral, and step [](#s7){.pf-ref} explains the
 nonreal complex parameters for which the same formula follows by analytic
 continuation.
+
 :::
+
+:::
+
 :::

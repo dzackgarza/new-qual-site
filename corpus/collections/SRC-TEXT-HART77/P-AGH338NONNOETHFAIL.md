@@ -37,10 +37,15 @@ $$
 and use the same symbols for the residue classes of the variables.
 Identify $A$ with its given submodule of $I$, so $1\in I$ means the image of $1_A$.
 
-<1>1. For every $n\ge0$, $x_0^n x_{n+1}$ is nonzero in $A$, while $x_0^{n+1}x_{n+1}=0$.
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\ge0$, $x_0^n x_{n+1}$ is nonzero in $A$, while $x_0^{n+1}x_{n+1}=0$.
 In particular, $A$ is not noetherian.
 
-::: {.proof}
+::: pf-proof
+
 For fixed $n$, define a homomorphism
 $$
 A\longrightarrow k[t,u]/(t^{n+1}u)
@@ -57,11 +62,17 @@ $$
 $$
 form a strictly increasing chain: $x_{n+1}$ belongs to the $(n+1)$st annihilator and not to the $n$th.
 This violates the ascending chain condition for a noetherian ring.
+
 :::
 
-<1>2. The class $1/x_0\in I_{x_0}$ is not in the image of $I\to I_{x_0}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The class $1/x_0\in I_{x_0}$ is not in the image of $I\to I_{x_0}$.
+
+::: pf-proof
+
 Suppose $z\in I$ satisfies $z/1=1/x_0$.
 By the equality criterion for module localization, there is an integer $n\ge0$ such that
 $$
@@ -70,28 +81,40 @@ x_0^n(x_0z-1)=0,
 $$
 in $I$.
 Multiply by $x_{n+1}$.
-The left side vanishes because $x_0^{n+1}x_{n+1}=0$ in $A$, whereas the right side is the image of the nonzero element $x_0^n x_{n+1}\in A$ from step <1>1.
+The left side vanishes because $x_0^{n+1}x_{n+1}=0$ in $A$, whereas the right side is the image of the nonzero element $x_0^n x_{n+1}\in A$ from step [](#s1){.pf-ref}.
 The inclusion $A\hookrightarrow I$ makes that image nonzero.
 This is a contradiction, so the displayed class cannot lift.
 The argument works for every module containing $A$, and in particular for the injective module in the statement.
+
 :::
 
-<1>3. The associated sheaf $\widetilde I$ on $X=\Spec A$ is not flasque.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The associated sheaf $\widetilde I$ on $X=\Spec A$ is not flasque.
+
+::: pf-proof
+
 For any ring and module, the associated-sheaf construction gives
 $$
 \Gamma(X,\widetilde I)=I,\qquad
 \Gamma(D(x_0),\widetilde I)=I_{x_0},
 $$
 with restriction the localization map [@Har10a, Proposition II.5.1].
-Step <1>2 shows that this restriction is not surjective.
+Step [](#s2){.pf-ref} shows that this restriction is not surjective.
 Thus $\widetilde I$ is not flasque even though $I$ is an injective module, proving the failure of the noetherian conclusions invoked in the statement.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves the requested nonsurjectivity, with its explicit obstruction established in step <1>1; step <1>3 gives the corresponding sheaf-theoretic counterexample.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the requested nonsurjectivity, with its explicit obstruction established in step [](#s1){.pf-ref}; step [](#s3){.pf-ref} gives the corresponding sheaf-theoretic counterexample.
+
+:::
+
+:::
+
 :::

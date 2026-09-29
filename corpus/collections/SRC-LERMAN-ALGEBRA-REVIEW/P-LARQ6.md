@@ -33,17 +33,31 @@ is a basis.
 :::
 
 ::: {.solution}
-<1>1. The quotient is naturally an $F$-vector space.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The quotient is naturally an $F$-vector space.
+
+::: pf-proof
+
 The ideal $(p)$ is closed under multiplication by constants from $F$. Hence scalar multiplication
 $$
 a\cdot(f+(p))=af+(p)
 $$
 is well-defined for $a\in F$ and $f\in F[x]$. Together with the quotient addition, this gives the usual $F$-vector-space structure on $F[x]/(p)$.
+
 :::
 
-<1>2. The displayed classes span the quotient.
-::: {.proof}
+:::
+
+::: pf-step
+
+The displayed classes span the quotient.
+
+::: pf-proof
+
 For any $f\in F[x]$, the division algorithm gives unique polynomials $q,r\in F[x]$ such that
 $$
 f=qp+r,
@@ -61,10 +75,17 @@ shows that every coset is an $F$-linear combination of
 $$
 1+(p),x+(p),\ldots,x^{n-1}+(p).
 $$
+
 :::
 
-<1>3. The displayed classes are linearly independent.
-::: {.proof}
+:::
+
+::: pf-step
+
+The displayed classes are linearly independent.
+
+::: pf-proof
+
 Suppose
 $$
 a_0(1+(p))+a_1(x+(p))+\cdots+a_{n-1}(x^{n-1}+(p))=0+(p).
@@ -83,5 +104,11 @@ They are consequently a basis of size $n$, and
 $$
 \dim_F F[x]/(p)=n.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

@@ -26,12 +26,17 @@ What are the finite-dimensional complex representations of $S_3$?
 How do they restrict to $S_2$?
 :::
 
-
 ::: {.solution}
 Let $H=S_2=\langle(12)\rangle\le S_3$.
 
-<1>1. Up to isomorphism, $S_3$ has exactly three irreducible complex representations: the trivial representation $\mathbf 1$, the sign representation $\mathrm{sgn}$, and the two-dimensional standard representation $V$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Up to isomorphism, $S_3$ has exactly three irreducible complex representations: the trivial representation $\mathbf 1$, the sign representation $\mathrm{sgn}$, and the two-dimensional standard representation $V$.
+
+::: pf-proof
+
 The conjugacy classes of $S_3$ have cycle types
 \[
 1^3,\qquad 2\,1,\qquad 3,
@@ -49,14 +54,26 @@ so $d=2$. The standard representation on
 \{(x_1,x_2,x_3)\in\CC^3:x_1+x_2+x_3=0\}
 \]
 is irreducible and supplies this two-dimensional representation.
+
 :::
 
-<1>2. Every finite-dimensional complex representation of $S_3$ is a direct sum of copies of these three irreducibles.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every finite-dimensional complex representation of $S_3$ is a direct sum of copies of these three irreducibles.
+
+::: pf-proof
+
 Maschke's theorem applies because $\operatorname{char}\CC=0$ does not divide $|S_3|$. Hence every finite-dimensional representation is completely reducible.
+
 :::
 
-<1>3. Their restrictions to $H\cong C_2$ are
+:::
+
+::: pf-step
+
+Their restrictions to $H\cong C_2$ are
 \[
 \mathbf1|_H\cong\mathbf1_H,
 \qquad
@@ -64,7 +81,9 @@ Maschke's theorem applies because $\operatorname{char}\CC=0$ does not divide $|S
 \qquad
 V|_H\cong\mathbf1_H\oplus\mathrm{sgn}_H.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The first two are immediate. For the standard representation, the transposition $(12)$ acts on
 \[
 V=\{x_1+x_2+x_3=0\}
@@ -76,5 +95,11 @@ with eigenvectors
 (1,-1,0)\quad\text{of eigenvalue }-1.
 \]
 Thus as a representation of $H$, $V$ splits as the direct sum of the trivial and sign characters.
+
 :::
+
+:::
+
+:::
+
 :::

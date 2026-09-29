@@ -38,7 +38,12 @@ Find the coefficients $a_n$.
 :::
 
 ::: {.solution}
-<1>1. Comparing coefficients in the differential equation gives
+
+::: pf
+
+::: {.pf-step #s1}
+
+Comparing coefficients in the differential equation gives
 $$
 -a_0=0
 $$
@@ -48,7 +53,8 @@ $$
 $$
 for every $n\ge2$.
 
-::: {.proof}
+::: pf-proof
+
 From
 $$
 J_1(x)=\sum_{n=0}^{\infty}a_nx^n
@@ -73,9 +79,14 @@ $$
 (n^2-1)a_n+a_{n-2}.
 $$
 Each coefficient must vanish, proving the claim.
+
 :::
 
-<1>2. The initial coefficients are
+:::
+
+::: {.pf-step #s2}
+
+The initial coefficients are
 $$
 a_0=0,
 \qquad
@@ -86,44 +97,57 @@ $$
 a_n=-\frac{a_{n-2}}{(n-1)(n+1)}.
 $$
 
-::: {.proof}
-Step <1>1 gives $a_0=0$. Since
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives $a_0=0$. Since
 $$
 J_1'(x)=\sum_{n=1}^{\infty}na_nx^{n-1},
 $$
 the condition $J_1'(0)=1$ gives $a_1=1$. For $n\ge2$, solve the
-recurrence in step <1>1 for $a_n$, using
+recurrence in step [](#s1){.pf-ref} for $a_n$, using
 $$
 n^2-1=(n-1)(n+1).
 $$
+
 :::
 
-<1>3. Every even coefficient vanishes:
+:::
+
+::: {.pf-step #s3}
+
+Every even coefficient vanishes:
 $$
 a_{2m}=0
 \qquad(m\ge0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The initial even coefficient is $a_0=0$. If $a_{2m}=0$, then the
-recurrence in step <1>2 gives
+recurrence in step [](#s2){.pf-ref} gives
 $$
 a_{2m+2}
 =-\frac{a_{2m}}{(2m+1)(2m+3)}
 =0.
 $$
 Induction proves the claim.
+
 :::
 
-<1>4. For every $m\ge0$,
+:::
+
+::: {.pf-step #s4}
+
+For every $m\ge0$,
 $$
 a_{2m+1}
 =\frac{(-1)^m}{4^m m!(m+1)!}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The formula gives $a_1=1$ when $m=0$. For $m\ge1$, repeated use of
-step <1>2 yields
+step [](#s2){.pf-ref} yields
 $$
 \begin{aligned}
 a_{2m+1}
@@ -135,9 +159,14 @@ a_{2m+1}
 &=\frac{(-1)^m}{4^m m!(m+1)!}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. Hence the coefficients are
+:::
+
+::: {.pf-step #s5}
+
+Hence the coefficients are
 $$
 \boxed{
 a_n=
@@ -149,14 +178,21 @@ a_n=
 }.
 $$
 
-::: {.proof}
-Step <1>3 gives all even coefficients and step <1>4 gives all odd
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives all even coefficients and step [](#s4){.pf-ref} gives all odd
 coefficients.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives every requested coefficient.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives every requested coefficient.
+
+:::
+
+:::
+
 :::

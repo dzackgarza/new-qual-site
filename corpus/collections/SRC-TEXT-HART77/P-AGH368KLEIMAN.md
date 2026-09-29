@@ -42,9 +42,14 @@ Write $K=K(X)$ and view every local ring of the integral scheme $X$ as a subring
 For an invertible sheaf $L$ and section $s$, let $X_s$ be the open subset where $s$ is a local frame.
 Local factoriality implies normality and makes every Weil divisor Cartier, by the [[D-5PQ5W|Cartier--Weil comparison]].
 
-<1>1. If $x\notin\overline{\{z\}}$, then there is $f\in\OO_{X,x}$ with $f\notin\OO_{X,z}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $x\notin\overline{\{z\}}$, then there is $f\in\OO_{X,x}$ with $f\notin\OO_{X,z}$.
+
+::: pf-proof
+
 Suppose instead that $\OO_{X,x}\subseteq\OO_{X,z}$ inside $K$.
 The induced morphism $\Spec\OO_{X,z}\to\Spec\OO_{X,x}\to X$ agrees at the generic point with the canonical morphism $\Spec\OO_{X,z}\to X$.
 They must agree everywhere: their equalizer is a closed subscheme because $X$ is separated, contains the generic point, and is therefore the whole reduced integral source, as in [[P-AGH242AGREEDENSE]].
@@ -53,13 +58,19 @@ The image of $\Spec\OO_{X,x}\to X$ consists of the generalizations of $x$.
 This follows on an affine neighborhood $\Spec A$ from the correspondence between primes of $A_{\mathfrak p_x}$ and primes of $A$ contained in $\mathfrak p_x$.
 Equality of the two morphisms would therefore make $z$ a generalization of $x$, meaning $x\in\overline{\{z\}}$, a contradiction.
 The asserted noninclusion of local rings supplies $f$, which is necessarily nonzero.
+
 :::
 
-<1>2. For every point $x$ and every open neighborhood $U$, there is an effective Cartier divisor $D$ with $x\notin\supp D$ and $X\setminus U\subseteq\supp D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For every point $x$ and every open neighborhood $U$, there is an effective Cartier divisor $D$ with $x\notin\supp D$ and $X\setminus U\subseteq\supp D$.
+
+::: pf-proof
+
 First suppose $Z=X\setminus U$ is irreducible and nonempty, with generic point $z$.
-Step <1>1 gives $f\in\OO_{X,x}\setminus\OO_{X,z}$.
+Step [](#s1){.pf-ref} gives $f\in\OO_{X,x}\setminus\OO_{X,z}$.
 Define its pole divisor
 $$
 D=(f)_\infty=\sum_H\max\{0,-v_H(f)\}H,
@@ -79,12 +90,18 @@ In general, $X\setminus U$ has finitely many irreducible components $Z_1,\ldots,
 Apply the preceding construction to each $Z_i$ and take the sum of the resulting effective Cartier divisors.
 Their supports all avoid $x$, and their union contains $X\setminus U$, proving the assertion.
 If the complement is empty, take $D=0$.
+
 :::
 
-<1>3. The opens in (a) form a basis.
+:::
 
-::: {.proof}
-Given $x\in U$, choose $D$ from step <1>2 and put $L=\OO_X(D)$.
+::: {.pf-step #s3}
+
+The opens in (a) form a basis.
+
+::: pf-proof
+
+Given $x\in U$, choose $D$ from step [](#s2){.pf-ref} and put $L=\OO_X(D)$.
 The effective divisor gives a canonical global section $s$ of $L$, namely the rational function $1$ in $\OO_X(D)\subseteq K$.
 If $a$ is a local equation for $D$, the frame of $L$ is $a^{-1}$ and the coefficient of $s$ in this frame is $a$.
 Thus $s$ is a frame exactly away from $D$, and
@@ -92,13 +109,19 @@ $$
 x\in X_s=X\setminus\supp D\subseteq U.
 $$
 Every point and neighborhood have such a refinement, proving the basis assertion, including at nonclosed points.
+
 :::
 
-<1>4. Every coherent sheaf $F$ is a quotient of a finite direct sum of invertible sheaves.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every coherent sheaf $F$ is a quotient of a finite direct sum of invertible sheaves.
+
+::: pf-proof
+
 For each $x$, choose an affine neighborhood $U_x$ and a finite family of sections generating $F|_{U_x}$.
-By step <1>3, choose $W_x=X_{s_x}\subseteq U_x$ containing $x$, with $s_x\in\Gamma(X,L_x)$ and $L_x$ invertible.
+By step [](#s3){.pf-ref}, choose $W_x=X_{s_x}\subseteq U_x$ containing $x$, with $s_x\in\Gamma(X,L_x)$ and $L_x$ invertible.
 Quasi-compactness of $X$ gives a finite cover by such opens, which we label $W_i=X_{s_i}$ for $1\le i\le t$.
 Let $a_{ij}\in\Gamma(W_i,F)$ be the restrictions of the finite generating families just chosen.
 
@@ -117,11 +140,17 @@ $$
 $$
 There are finitely many pairs, and the displayed source is locally free of finite rank.
 This proves (b) and the theorem.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove (a), including the existence of the rational function used in the hint, and step <1>4 proves (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (a), including the existence of the rational function used in the hint, and step [](#s4){.pf-ref} proves (b).
+
+:::
+
+:::
+
 :::

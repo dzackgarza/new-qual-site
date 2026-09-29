@@ -38,7 +38,12 @@ Prove that $T$ is completely reducible if and only if $V$ has a basis of eigenve
 :::
 
 ::: {.solution}
-<1>1. Suppose $V$ has a basis of eigenvectors of $T$. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose $V$ has a basis of eigenvectors of $T$. Let
 $$
 \lambda_1,\ldots,\lambda_r
 $$
@@ -51,14 +56,20 @@ $$
 V=V_1\oplus\cdots\oplus V_r.
 $$
 
-::: {.proof}
+::: pf-proof
+
 An eigenbasis is the disjoint union of bases of the eigenspaces
 $V_i$. Therefore the eigenspaces span $V$, and eigenspaces belonging to
 distinct eigenvalues have zero intersection. This gives the displayed
 direct sum.
+
 :::
 
-<1>2. For each $i$, define the polynomial
+:::
+
+::: {.pf-step #s2}
+
+For each $i$, define the polynomial
 $$
 q_i(t)
 =
@@ -72,7 +83,8 @@ $$
 is the projection of $V$ onto $V_i$ along the sum of the other
 eigenspaces.
 
-::: {.proof}
+::: pf-proof
+
 For an eigenvector $v\in V_k$,
 $$
 q_i(T)v
@@ -88,17 +100,23 @@ $$
 q_i(\lambda_k)=0
 $$
 for $k\neq i$. Thus $q_i(T)$ is the identity on $V_i$ and zero on every
-$V_k$ with $k\neq i$. Step <1>1 then gives the stated projection.
+$V_k$ with $k\neq i$. Step [](#s1){.pf-ref} then gives the stated projection.
+
 :::
 
-<1>3. If $E\subseteq V$ is $T$-invariant, then
+:::
+
+::: {.pf-step #s3}
+
+If $E\subseteq V$ is $T$-invariant, then
 $$
 E
 =
 \bigoplus_{i=1}^r(E\cap V_i).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $E$ is $T$-invariant, it is invariant under every polynomial in
 $T$. In particular,
 $$
@@ -106,13 +124,13 @@ q_i(T)(E)\subseteq E
 $$
 for every $i$.
 
-Take $e\in E$. By step <1>1, write
+Take $e\in E$. By step [](#s1){.pf-ref}, write
 $$
 e=e_1+\cdots+e_r,
 \qquad
 e_i\in V_i.
 $$
-Step <1>2 gives
+Step [](#s2){.pf-ref} gives
 $$
 e_i=q_i(T)e.
 $$
@@ -124,12 +142,18 @@ E
 $$
 The reverse inclusion is immediate, and the sum is direct because the
 $V_i$ form a direct sum.
+
 :::
 
-<1>4. Under the hypothesis of step <1>1, every $T$-invariant subspace has
+:::
+
+::: {.pf-step #s4}
+
+Under the hypothesis of step [](#s1){.pf-ref}, every $T$-invariant subspace has
 a $T$-invariant complement.
 
-::: {.proof}
+::: pf-proof
+
 Let $E\subseteq V$ be $T$-invariant. For each $i$, choose a vector-space
 complement
 $$
@@ -148,7 +172,7 @@ Set
 $$
 F=F_1\oplus\cdots\oplus F_r.
 $$
-Then $F$ is $T$-invariant. Using steps <1>1 and <1>3,
+Then $F$ is $T$-invariant. Using steps [](#s1){.pf-ref} and [](#s3){.pf-ref},
 $$
 \begin{aligned}
 V
@@ -161,23 +185,35 @@ V
 E\oplus F.
 \end{aligned}
 $$
+
 :::
 
-<1>5. If $V$ has a basis of eigenvectors, then $T$ is completely
+:::
+
+::: {.pf-step #s5}
+
+If $V$ has a basis of eigenvectors, then $T$ is completely
 reducible.
 
-::: {.proof}
-Step <1>4 gives the required invariant complement for every invariant
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives the required invariant complement for every invariant
 subspace.
+
 :::
 
-<1>6. Conversely, suppose $T$ is completely reducible. If
+:::
+
+::: {.pf-step #s6}
+
+Conversely, suppose $T$ is completely reducible. If
 $$
 \dim V>0,
 $$
 then $T$ has an eigenvector.
 
-::: {.proof}
+::: pf-proof
+
 The characteristic polynomial of $T$ has positive degree and has a root
 because the ground field is algebraically closed. If $\lambda$ is such a
 root, then
@@ -185,9 +221,14 @@ $$
 \ker(T-\lambda I)\neq0.
 $$
 Any nonzero vector in this kernel is an eigenvector.
+
 :::
 
-<1>7. Let $v$ be an eigenvector from step <1>6 and let
+:::
+
+::: {.pf-step #s7}
+
+Let $v$ be an eigenvector from step [](#s6){.pf-ref} and let
 $$
 E=\operatorname{span}\{v\}
 $$
@@ -197,18 +238,25 @@ $$
 V=E\oplus W.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The eigenline $E$ is $T$-invariant. Complete reducibility of $T$ therefore
 provides a $T$-invariant complement $W$.
+
 :::
 
-<1>8. The restriction
+:::
+
+::: {.pf-step #s8}
+
+The restriction
 $$
 T|_W:W\to W
 $$
 is completely reducible.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 L\subseteq W
@@ -238,31 +286,42 @@ Thus $c\in W\cap C$, so the displayed sum spans $W$. It is direct because
 $L\cap C=0$. Finally, $W\cap C$ is $T$-invariant because both $W$ and $C$
 are. Hence every invariant subspace of $W$ has an invariant complement in
 $W$.
+
 :::
 
-<1>9. If $T$ is completely reducible, then $V$ has a basis of
+:::
+
+::: {.pf-step #s9}
+
+If $T$ is completely reducible, then $V$ has a basis of
 eigenvectors.
 
-::: {.proof}
+::: pf-proof
+
 Proceed by induction on
 $$
 \dim V.
 $$
 The assertion is trivial for $\dim V=0$. Suppose $\dim V>0$. By steps
-<1>6--<1>7,
+[](#s6){.pf-ref} and [](#s7){.pf-ref},
 $$
 V=\operatorname{span}\{v\}\oplus W
 $$
-with $v$ an eigenvector and $W$ invariant. By step <1>8, the restriction
+with $v$ an eigenvector and $W$ invariant. By step [](#s8){.pf-ref}, the restriction
 $T|_W$ is completely reducible. Since
 $$
 \dim W=\dim V-1,
 $$
 the induction hypothesis gives a basis of $W$ consisting of eigenvectors
 of $T|_W$, hence of $T$. Adjoining $v$ gives an eigenbasis of $V$.
+
 :::
 
-<1>10. The equivalence holds:
+:::
+
+::: {.pf-step #s10}
+
+The equivalence holds:
 $$
 \boxed{
 T\text{ is completely reducible}
@@ -271,14 +330,21 @@ V\text{ has a basis of eigenvectors of }T.
 }
 $$
 
-::: {.proof}
-Step <1>5 proves that an eigenbasis implies complete reducibility, and
-step <1>9 proves the reverse implication.
+::: pf-proof
+
+Step [](#s5){.pf-ref} proves that an eigenbasis implies complete reducibility, and
+step [](#s9){.pf-ref} proves the reverse implication.
+
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Step <1>10 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s10){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::

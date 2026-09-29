@@ -31,14 +31,20 @@ that is orthogonal to every polynomial of lower degree.
 :::
 
 ::: {.solution}
-<1>1. It is enough to impose
+
+::: pf
+
+::: {.pf-step #s1}
+
+It is enough to impose
 $$
 \langle p,1\rangle=0
 \qquad\text{and}\qquad
 \langle p,x^2\rangle=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomials of degree less than $4$ are spanned by
 $$
 1,\qquad x,\qquad x^2,\qquad x^3.
@@ -50,14 +56,20 @@ $$
 is even. Hence $p(x)x$ and $p(x)x^3$ are odd, so their integrals over the
 symmetric interval $[-1,1]$ vanish automatically. Thus only the two even
 basis elements give conditions.
+
 :::
 
-<1>2. The condition $\langle p,1\rangle=0$ is
+:::
+
+::: {.pf-step #s2}
+
+The condition $\langle p,1\rangle=0$ is
 $$
 a+\frac b3=\frac15.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 \int_{-1}^1x^{2k}\,dx=\frac{2}{2k+1},
@@ -71,14 +83,20 @@ $$
 2a+\frac{2b}{3}-\frac25.
 $$
 Dividing by $2$ gives the displayed equation.
+
 :::
 
-<1>3. The condition $\langle p,x^2\rangle=0$ is
+:::
+
+::: {.pf-step #s3}
+
+The condition $\langle p,x^2\rangle=0$ is
 $$
 \frac a3+\frac b5=\frac17.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 0
@@ -88,21 +106,27 @@ $$
 \frac{2a}{3}+\frac{2b}{5}-\frac27.
 $$
 Dividing by $2$ gives the displayed equation.
+
 :::
 
-<1>4. The unique solution of the two equations in steps <1>2 and <1>3 is
+:::
+
+::: {.pf-step #s4}
+
+The unique solution of the two equations in steps [](#s2){.pf-ref} and [](#s3){.pf-ref} is
 $$
 a=-\frac3{35},
 \qquad
 b=\frac67.
 $$
 
-::: {.proof}
-From step <1>2,
+::: pf-proof
+
+From step [](#s2){.pf-ref},
 $$
 a=\frac15-\frac b3.
 $$
-Substitution into step <1>3 gives
+Substitution into step [](#s3){.pf-ref} gives
 $$
 \frac1{15}
 -\frac b9
@@ -126,9 +150,14 @@ a
 =
 -\frac3{35}.
 $$
+
 :::
 
-<1>5. Therefore the required polynomial is
+:::
+
+::: {.pf-step #s5}
+
+Therefore the required polynomial is
 $$
 \boxed{
 p(x)
@@ -139,16 +168,23 @@ p(x)
 }.
 $$
 
-::: {.proof}
-Steps <1>2--<1>4 make $p$ orthogonal to $1$ and $x^2$, and step <1>1 then
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} make $p$ orthogonal to $1$ and $x^2$, and step [](#s1){.pf-ref} then
 makes it orthogonal to every polynomial of degree less than $4$.
 Uniqueness follows because the two independent linear equations in steps
-<1>2 and <1>3 have the unique solution found in step <1>4.
+[](#s2){.pf-ref} and [](#s3){.pf-ref} have the unique solution found in step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required polynomial.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required polynomial.
+
+:::
+
+:::
+
 :::

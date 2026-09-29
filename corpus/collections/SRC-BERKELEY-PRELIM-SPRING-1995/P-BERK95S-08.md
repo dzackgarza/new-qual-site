@@ -36,7 +36,11 @@ w_1,\ldots,w_r,v_1,\ldots,v_s
 $$
 of $V$.
 
-<1>1. In this basis, the matrix of $L$ has block form
+::: pf
+
+::: {.pf-step #s1}
+
+In this basis, the matrix of $L$ has block form
 $$
 [L]=
 \begin{pmatrix}
@@ -46,15 +50,21 @@ $$
 $$
 for some matrix $B$.
 
-::: {.proof}
+::: pf-proof
+
 Because $L(W)\subseteq L(V)\subseteq W$, the restriction $L_W$ is
 well-defined and gives the upper-left block. Since every vector
 $L(v_j)$ lies in $W$, all coordinates of $L(v_j)$ in the complementary
 basis vectors $v_1,\ldots,v_s$ vanish. Hence the entire lower row of
 blocks is zero.
+
 :::
 
-<1>2. In the same basis,
+:::
+
+::: {.pf-step #s2}
+
+In the same basis,
 $$
 [I_V-tL]
 =
@@ -64,18 +74,24 @@ I_W-t[L_W]&-tB\\
 \end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Subtract $t[L]$ from the identity matrix, using the block form from
-step <1>1.
+step [](#s1){.pf-ref}.
+
 :::
 
-<1>3.
+:::
+
+::: {.pf-step #s3}
+
 $$
 \det(I_V-tL)=\det(I_W-tL_W).
 $$
 
-::: {.proof}
-The matrix in step <1>2 is block upper triangular. Therefore
+::: pf-proof
+
+The matrix in step [](#s2){.pf-ref} is block upper triangular. Therefore
 $$
 \det(I_V-tL)
 =
@@ -85,11 +101,17 @@ $$
 $$
 This calculation holds in the polynomial ring over the ground field,
 so it proves the asserted identity in $t$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required determinant identity.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required determinant identity.
+
+:::
+
+:::
+
 :::

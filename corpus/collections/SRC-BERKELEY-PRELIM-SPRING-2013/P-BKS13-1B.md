@@ -28,7 +28,12 @@ Find $\int_0^1 \arctan(x)\,dx$.
 :::
 
 ::: {.solution}
-<1>1. Integration by parts gives
+
+::: pf
+
+::: {.pf-step #s1}
+
+Integration by parts gives
 $$
 \int_0^1\arctan x\,dx
 =
@@ -37,7 +42,8 @@ $$
 \int_0^1\frac{x}{1+x^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take
 $$
 u=\arctan x,
@@ -64,16 +70,22 @@ $$
 \int_0^1\frac{x}{1+x^2}\,dx.
 \end{aligned}
 $$
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \int_0^1\frac{x}{1+x^2}\,dx
 =
 \frac12\log2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 With
 $$
 u=1+x^2,
@@ -91,9 +103,14 @@ $$
 =
 \frac12\log2.
 $$
+
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #s3}
+
+Hence
 $$
 \boxed{
 \int_0^1\arctan x\,dx
@@ -104,13 +121,20 @@ $$
 }.
 $$
 
-::: {.proof}
-Substitute step <1>2 into step <1>1.
+::: pf-proof
+
+Substitute step [](#s2){.pf-ref} into step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required value.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required value.
+
+:::
+
+:::
+
 :::

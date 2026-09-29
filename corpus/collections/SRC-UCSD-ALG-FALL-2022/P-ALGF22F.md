@@ -33,19 +33,32 @@ Prove that the coefficients of $f$ and $g$ belong to $C$.
 ::: {.solution}
 Let $L=\operatorname{Frac}(B)$, and fix an algebraic closure $\overline L$.
 
-<1>1. Over $\overline L$, write
+::: pf
+
+::: {.pf-step #s1}
+
+Over $\overline L$, write
 \[
 f(x)=\prod_{i=1}^m(x-\alpha_i),
 \qquad
 g(x)=\prod_{j=1}^n(x-\beta_j).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The ring $B$ is an integral domain, so it embeds in its fraction field $L$.
 Both $f$ and $g$ may therefore be viewed as monic polynomials in $L[x]$, and they split into linear factors over $\overline L$.
+
 :::
 
-<1>2. Every root of $fg$ in $\overline L$ is integral over $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every root of $fg$ in $\overline L$ is integral over $A$.
+
+::: pf-proof
+
 By hypothesis,
 \[
 fg\in C[x],
@@ -58,21 +71,35 @@ By definition of the integral closure, every element of $C$ is integral over $A$
 Thus $C/A$ is an integral extension.
 Integrality is transitive, so every element integral over $C$ is integral over $A$.
 Therefore every root of $fg$ is integral over $A$.
+
 :::
 
-<1>3. Every $\alpha_i$ and every $\beta_j$ is integral over $A$.
-::: {.proof}
-By <1>1, each $\alpha_i$ and each $\beta_j$ is a root of
+:::
+
+::: {.pf-step #s3}
+
+Every $\alpha_i$ and every $\beta_j$ is integral over $A$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, each $\alpha_i$ and each $\beta_j$ is a root of
 \[
 fg=f\,g.
 \]
-The assertion therefore follows from <1>2.
+The assertion therefore follows from step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Every coefficient of $f$ and every coefficient of $g$ is integral over $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every coefficient of $f$ and every coefficient of $g$ is integral over $A$.
+
+::: pf-proof
+
 The elements of $\overline L$ integral over $A$ form a subring.
-By <1>3, all the roots $\alpha_i$ are integral over $A$.
+By step [](#s3){.pf-ref}, all the roots $\alpha_i$ are integral over $A$.
 The coefficients of the monic polynomial
 \[
 f(x)=\prod_{i=1}^m(x-\alpha_i)
@@ -81,16 +108,29 @@ are, up to sign, elementary symmetric polynomials in the $\alpha_i$.
 They are therefore sums of products of elements integral over $A$, hence are themselves integral over $A$.
 
 The same argument applied to the roots $\beta_j$ shows that every coefficient of $g$ is integral over $A$.
+
 :::
 
-<1>5. All coefficients of $f$ and $g$ belong to $C$.
-::: {.proof}
+:::
+
+::: pf-step
+
+All coefficients of $f$ and $g$ belong to $C$.
+
+::: pf-proof
+
 By hypothesis, the coefficients of $f$ and $g$ lie in $B$.
-By <1>4, they are integral over $A$.
+By step [](#s4){.pf-ref}, they are integral over $A$.
 But
 \[
 C=\{b\in B:b\text{ is integral over }A\}.
 \]
 Hence every coefficient of $f$ and $g$ lies in $C$, as required.
+
 :::
+
+:::
+
+:::
+
 :::

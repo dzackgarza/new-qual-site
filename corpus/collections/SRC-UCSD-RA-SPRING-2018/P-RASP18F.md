@@ -36,10 +36,16 @@ For $t \geq 0$, let $\varphi(t) = m(\{x \in \mathbb{R} : f(x) \geq t\})$.
    Prove that $f \in L^1(\mathbb{R}, m)$.
 :::
 
-
 ::: {.solution}
-<1>1. Prove the distribution-function bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the distribution-function bound.
+
+::: pf-proof
+
 For \(t>0\), on the set \(\{f\ge t\}\) we have \(f\ge t\). Hence
 \[
 t\,\varphi(t)
@@ -51,10 +57,17 @@ Therefore
 \[
 \boxed{\varphi(t)\le \frac{\|f\|_1}{t}.}
 \]
+
 :::
 
-<1>2. Prove the layer-cake formula.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the layer-cake formula.
+
+::: pf-proof
+
 For every \(x\), since \(f(x)\ge0\),
 \[
 f(x)=\int_0^\infty \mathbf1_{\{t\le f(x)\}}\,dt.
@@ -72,10 +85,17 @@ Thus
 \[
 \boxed{\int_{\mathbb R}f\,dm=\int_0^\infty\varphi(t)\,dt.}
 \]
+
 :::
 
-<1>3. Deduce integrability from the assumed distribution bound.
-::: {.proof}
+:::
+
+::: pf-step
+
+Deduce integrability from the assumed distribution bound.
+
+::: pf-proof
+
 Because \(0\le f\le1\),
 \[
 \varphi(t)=0
@@ -92,5 +112,11 @@ Hence
 \[
 \boxed{f\in L^1(\mathbb R).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

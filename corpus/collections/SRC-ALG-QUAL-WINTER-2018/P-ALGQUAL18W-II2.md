@@ -41,7 +41,11 @@ v_1,\ldots,v_m
 $$
 of $V$ over $k$.
 
-<1>1. The vectors
+::: pf
+
+::: {.pf-step #s1}
+
+The vectors
 $$
 x_i\otimes v_j,
 \qquad
@@ -56,7 +60,8 @@ $$
 k[G]\otimes_{k[H]}V.
 $$
 
-::: {.proof}
+::: pf-proof
+
 As a right $k[H]$-module,
 $$
 k[G]
@@ -71,9 +76,14 @@ k[G]\otimes_{k[H]}V
 $$
 The chosen basis of $V$ therefore gives the displayed basis of the induced
 module.
+
 :::
 
-<1>2. For each $i$ there are unique
+:::
+
+::: {.pf-step #s2}
+
+For each $i$ there are unique
 $$
 \sigma(i)\in\{1,\ldots,r\}
 \qquad\text{and}\qquad
@@ -86,7 +96,8 @@ $$
 and $\sigma$ is the permutation of $G/H$ induced by left multiplication by
 $g$.
 
-::: {.proof}
+::: pf-proof
+
 The element $g x_i$ lies in a unique left coset $x_{\sigma(i)}H$, so it has
 a unique expression
 $$
@@ -94,12 +105,18 @@ g x_i=x_{\sigma(i)}h_i
 $$
 with $h_i\in H$. Since left multiplication by $g$ is a bijection of $G/H$,
 the resulting map $i\mapsto\sigma(i)$ is a permutation.
+
 :::
 
-<1>3. The permutation $\sigma$ has no fixed point.
+:::
 
-::: {.proof}
-If $\sigma(i)=i$, then step <1>2 gives
+::: {.pf-step #s3}
+
+The permutation $\sigma$ has no fixed point.
+
+::: pf-proof
+
+If $\sigma(i)=i$, then step [](#s2){.pf-ref} gives
 $$
 g x_i=x_i h_i
 $$
@@ -112,15 +129,21 @@ $$
 \sigma(i)\neq i
 $$
 for every $i$.
+
 :::
 
-<1>4. The trace of $g$ on the induced module is
+:::
+
+::: {.pf-step #s4}
+
+The trace of $g$ on the induced module is
 $$
 \trace\!\left(g\mid\Ind_H^G V\right)=\boxed{0}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 g(x_i\otimes v_j)
 =
@@ -138,15 +161,21 @@ into
 $$
 x_{\sigma(i)}\otimes V.
 $$
-By step <1>3 these are distinct summands. Consequently the coefficient of
+By step [](#s3){.pf-ref} these are distinct summands. Consequently the coefficient of
 $x_i\otimes v_j$ in $g(x_i\otimes v_j)$ is zero for every basis vector from
-step <1>1. Every diagonal entry of the matrix of $g$ in that basis is
+step [](#s1){.pf-ref}. Every diagonal entry of the matrix of $g$ in that basis is
 therefore zero, and so its trace is zero.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required trace identity.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required trace identity.
+
+:::
+
+:::
+
 :::

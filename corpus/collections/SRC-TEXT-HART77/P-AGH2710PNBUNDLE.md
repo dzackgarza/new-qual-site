@@ -42,10 +42,15 @@ For a disconnected base, carry out this construction on each connected component
 Use the convention $\PP(\mce)=\operatorname{Proj}_X\operatorname{Sym}^{\bullet}\mce$ of [[P-AGH278SECTIONSPE]].
 All bundle isomorphisms are over the base scheme.
 
-<1>1. In part (a), a projective bundle has an open cover $(U_i)$ and isomorphisms $h_i:\pi^{-1}(U_i)\to\PP_{U_i}^n$ whose changes of coordinates are projective linear.
+::: pf
+
+::: {.pf-step #s1}
+
+In part (a), a projective bundle has an open cover $(U_i)$ and isomorphisms $h_i:\pi^{-1}(U_i)\to\PP_{U_i}^n$ whose changes of coordinates are projective linear.
 The changes of coordinates satisfy the cocycle identity as projective automorphisms.
 
-::: {.proof}
+::: pf-proof
+
 For every affine open $W=\Spec A\subseteq U_i\cap U_j$, require $h_j\circ h_i^{-1}$ to be induced by a graded $A$-algebra automorphism
 $$
 A[T_0,\ldots,T_n]\longrightarrow A[T_0,\ldots,T_n],\qquad
@@ -60,27 +65,39 @@ Conversely, projective coordinate changes satisfying these identities glue the s
 This describes the required bundle notion in terms of gluing data.
 Multiplying a chosen matrix by a unit does not change its projective automorphism, since the unit cancels in every homogeneous coordinate ratio.
 Thus the matrices representing the $g_{ji}$ are not required to satisfy an exact matrix cocycle identity; assuming such lifts would assume the vector bundle sought in (c).
+
 :::
 
-<1>2. A locally free sheaf $\mce$ of rank $n+1$ gives the projective bundle in (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+A locally free sheaf $\mce$ of rank $n+1$ gives the projective bundle in (b).
+
+::: pf-proof
+
 Choose a frame for $\mce$ on each affine open $U_i$ of a cover.
 It identifies its symmetric algebra with the polynomial algebra in $n+1$ degree-one variables, and hence identifies $\PP(\mce)|_{U_i}$ with $\PP_{U_i}^n$.
 Two frames differ by an invertible matrix of regular functions on their overlap.
 The same matrix changes the degree-one generators of their symmetric algebras and induces the required projective coordinate change.
 These identifications satisfy the cocycle identity because they arise from the single sheaf $\mce$.
 Changing the frames gives an equivalent atlas.
+
 :::
 
-<1>3. For (c), it suffices to assume that every local ring of the noetherian scheme $X$ is a unique factorization domain.
+:::
+
+::: {.pf-step #s3}
+
+For (c), it suffices to assume that every local ring of the noetherian scheme $X$ is a unique factorization domain.
 Under this hypothesis, each connected component of $X$ is integral and open and closed, and $P$ is locally factorial as well.
 
-::: {.proof}
+::: pf-proof
+
 This hypothesis is local factoriality.
 It holds for regular $X$ because a regular local ring is factorial [@Har10a, Remark II.6.11.1A].
 Local factoriality also makes every local ring a domain.
-As in [[P-AGH279PICPE]], step <1>1, the finitely many irreducible components of a noetherian scheme with domain local rings are disjoint, reduced, and open and closed.
+As in [[P-AGH279PICPE]], step [](#s1){.pf-ref}, the finitely many irreducible components of a noetherian scheme with domain local rings are disjoint, reduced, and open and closed.
 Thus they are the integral connected components.
 
 On a standard affine chart of a bundle trivialization, a local ring of $P$ at a point above $x\in X$ is a localization of a polynomial ring over $\OO_{X,x}$.
@@ -91,14 +108,20 @@ It is noetherian because finitely many trivializing opens on $X$, each covered b
 Over an integral component of $X$, each trivializing open has integral inverse image, and any two such inverse images have nonempty intersection over the generic point of the base.
 Consequently their union is integral.
 All the required constructions can be made separately on these finitely many components and then combined.
-We therefore assume $X$ is integral and nonempty for steps <1>4--<1>5.
+We therefore assume $X$ is integral and nonempty for steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
 The case $n=0$ is immediate: $\PP_U^0=U$ and all transition maps over $U$ are the identity, so $P\cong X=\PP(\OO_X)$.
 Assume henceforth that $n\ge1$.
+
 :::
 
-<1>4. The bundle $P$ carries an invertible sheaf $\mathcal L$ which restricts to degree one on every fibre.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The bundle $P$ carries an invertible sheaf $\mathcal L$ which restricts to degree one on every fibre.
+
+::: pf-proof
+
 Choose a nonempty affine trivializing open $U\subseteq X$.
 Inside $P|_U\cong\PP_U^n$, choose the coordinate hyperplane $H_U$ and let $H$ be its reduced closure in $P$.
 It is an integral codimension-one closed subscheme: its generic point lies in the open $P|_U$ and has codimension one there and in $P$.
@@ -122,12 +145,18 @@ The opens $U$ and $V$ meet because $X$ is integral.
 At a point of their intersection, the transition between the projective trivializations preserves $\OO(1)$, while a sheaf pulled back from $V$ is trivial on the fibre.
 Since $\Pic(\PP^n_{\kappa(x)})\cong\ZZ$ for $n\ge1$, comparison on that fibre gives $d_V=1$.
 This holds for every such $V$, so $\mathcal L$ has degree one on every fibre.
+
 :::
 
-<1>5. With $\mce=\pi_*\mathcal L$, the sheaf $\mce$ is locally free of rank $n+1$, and $P\cong\PP(\mce)$ over $X$.
+:::
 
-::: {.proof}
-On an affine trivializing open $V$ of step <1>4, the degree-one section calculation gives
+::: {.pf-step #s5}
+
+With $\mce=\pi_*\mathcal L$, the sheaf $\mce$ is locally free of rank $n+1$, and $P\cong\PP(\mce)$ over $X$.
+
+::: pf-proof
+
+On an affine trivializing open $V$ of step [](#s4){.pf-ref}, the degree-one section calculation gives
 $$
 \mce|_V
 \cong\pi_{V*}(\pi_V^*\mathcal M_V\otimes\OO(1))
@@ -147,40 +176,58 @@ Hence $j$ is locally the identity map between the two projective-space trivializ
 It follows that $j$ is a projective-bundle isomorphism globally.
 Combining the construction on the components gives the result for the original $X$.
 This proves (c) under local factoriality, and in particular under regularity.
+
 :::
 
-<1>6. Local factoriality is strictly weaker than regularity, even among affine varieties.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Local factoriality is strictly weaker than regularity, even among affine varieties.
+
+::: pf-proof
+
 Over an algebraically closed field of characteristic different from two, let
 $$
 Z=\Spec k[x_0,x_1,x_2,x_3,x_4]/(x_0^2+x_1^2+x_2^2+x_3^2+x_4^2).
 $$
-The quadric calculation in [[P-AGH265QUADRIC]], steps <1>1 and <1>4, makes its coordinate ring a normal noetherian domain with zero class group.
+The quadric calculation in [[P-AGH265QUADRIC]], steps [](#s1){.pf-ref} and [](#s4){.pf-ref}, makes its coordinate ring a normal noetherian domain with zero class group.
 It is therefore a UFD [@Har10a, Proposition II.6.2], and every localization is factorial.
 At the origin, however, the maximal ideal modulo its square has dimension five over $k$, because the only defining relation is quadratic.
 The local ring has dimension four: it is a polynomial regular local ring of dimension five modulo a nonzero hypersurface equation [@AM18, Chapter 11].
 Thus its embedding dimension exceeds its Krull dimension, so that local ring is not regular.
-This supplies a locally factorial, nonregular base to which steps <1>3--<1>5 still apply.
+This supplies a locally factorial, nonregular base to which steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} still apply.
+
 :::
 
-<1>7. For regular $X$, the map $\mce\mapsto\PP(\mce)$ gives the bijection in (d).
+:::
 
-::: {.proof}
-Step <1>2 constructs a bundle from each locally free sheaf of rank $n+1$, and step <1>5 proves that every bundle arises in this way.
-For $n\ge1$, [[P-AGH279PICPE]], steps <1>5--<1>6, proves that two such projectivizations are isomorphic over $X$ exactly when the sheaves differ by tensoring with an invertible sheaf.
-The isomorphism constructed there from an invertible twist is locally induced by a linear change of frame, so it is an isomorphism of the bundles defined in step <1>1.
+::: {.pf-step #s7}
+
+For regular $X$, the map $\mce\mapsto\PP(\mce)$ gives the bijection in (d).
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} constructs a bundle from each locally free sheaf of rank $n+1$, and step [](#s5){.pf-ref} proves that every bundle arises in this way.
+For $n\ge1$, [[P-AGH279PICPE]], steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, proves that two such projectivizations are isomorphic over $X$ exactly when the sheaves differ by tensoring with an invertible sheaf.
+The isomorphism constructed there from an invertible twist is locally induced by a linear change of frame, so it is an isomorphism of the bundles defined in step [](#s1){.pf-ref}.
 This proves that the fibres of the assignment are precisely the equivalence classes in (d).
 
 For $n=0$, all projective-space bundles are $X$, and any two rank-one sheaves differ by an invertible twist, namely $\mce'=\mce\otimes(\mce'\otimes\mce^{-1})$.
 Thus the classification also holds in this case, and the empty base has the corresponding unique empty bundle.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 give (a) and (b).
-Steps <1>3--<1>6 prove (c), including the requested weaker hypothesis and an example separating it from regularity.
-Step <1>7 proves (d).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give (a) and (b).
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove (c), including the requested weaker hypothesis and an example separating it from regularity.
+Step [](#s7){.pf-ref} proves (d).
+
+:::
+
+:::
+
 :::

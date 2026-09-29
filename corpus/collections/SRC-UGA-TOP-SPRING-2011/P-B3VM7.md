@@ -29,7 +29,12 @@ b. Use degree theory to prove this theorem in case $X = S^n$.
 :::
 
 ::: {.solution}
-<1>1. Let $X$ be a finite simplicial complex and $f:X\to X$ a continuous map.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $X$ be a finite simplicial complex and $f:X\to X$ a continuous map.
 Its Lefschetz number is
 \[
 L(f)
@@ -45,16 +50,25 @@ L(f)\ne0
 \quad\Longrightarrow\quad
 f\text{ has a fixed point}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because $X$ is a finite simplicial complex, each rational homology group is finite-dimensional and vanishes in sufficiently large degree, so the displayed sum and traces are well-defined.
 The implication is the Lefschetz fixed-point theorem requested in part (a).
+
 :::
 
-<1>2. For $n\ge1$ and a continuous map $f:S^n\to S^n$,
+:::
+
+::: {.pf-step #s2}
+
+For $n\ge1$ and a continuous map $f:S^n\to S^n$,
 \[
 L(f)=1+(-1)^n\deg(f).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The only nonzero rational homology groups of $S^n$ are
 \[
 H_0(S^n;\QQ)\cong\QQ,
@@ -63,17 +77,24 @@ H_n(S^n;\QQ)\cong\QQ.
 \]
 Since $S^n$ is connected, $f_*$ acts as the identity on $H_0$, so its trace there is $1$.
 By definition of degree, $f_*$ acts on $H_n(S^n;\QQ)$ as multiplication by $\deg(f)$, so its trace there is $\deg(f)$.
-Substitution into <1>1 gives
+Substitution into step [](#s1){.pf-ref} gives
 \[
 L(f)=1+(-1)^n\deg(f).
 \]
+
 :::
 
-<1>3. If $f:S^n\to S^n$ has no fixed point, then $f$ is homotopic to the antipodal map
+:::
+
+::: {.pf-step #s3}
+
+If $f:S^n\to S^n$ has no fixed point, then $f$ is homotopic to the antipodal map
 \[
 A(x)=-x.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Regard $S^n$ as the unit sphere in $\RR^{n+1}$ and define
 \[
 H(x,t)
@@ -97,13 +118,20 @@ H(x,0)=f(x),
 H(x,1)=-x=A(x),
 \]
 so $f\simeq A$.
+
 :::
 
-<1>4. The antipodal map $A:S^n\to S^n$ has degree
+:::
+
+::: {.pf-step #s4}
+
+The antipodal map $A:S^n\to S^n$ has degree
 \[
 \deg(A)=(-1)^{n+1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The antipodal map is the restriction to the unit sphere of the linear automorphism
 \[
 -I:\RR^{n+1}\to\RR^{n+1}.
@@ -117,15 +145,22 @@ one gets
 \[
 \deg(A)=(-1)^{n+1}.
 \]
+
 :::
 
-<1>5. If $f:S^n\to S^n$ has no fixed point, then $L(f)=0$.
-::: {.proof}
-By <1>3 and homotopy invariance of degree,
+:::
+
+::: {.pf-step #s5}
+
+If $f:S^n\to S^n$ has no fixed point, then $L(f)=0$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref} and homotopy invariance of degree,
 \[
 \deg(f)=\deg(A).
 \]
-Using <1>4 and then <1>2,
+Using step [](#s4){.pf-ref} and then step [](#s2){.pf-ref},
 \[
 L(f)
 =
@@ -135,11 +170,18 @@ L(f)
 =
 0.
 \]
+
 :::
 
-<1>6. Therefore the Lefschetz fixed-point theorem holds for $S^n$.
-::: {.proof}
-Step <1>5 proves the contrapositive: if $f$ has no fixed point, then $L(f)=0$.
+:::
+
+::: pf-step
+
+Therefore the Lefschetz fixed-point theorem holds for $S^n$.
+
+::: pf-proof
+
+Step [](#s5){.pf-ref} proves the contrapositive: if $f$ has no fixed point, then $L(f)=0$.
 Hence
 \[
 L(f)\ne0
@@ -147,10 +189,17 @@ L(f)\ne0
 f\text{ has a fixed point}.
 \]
 This is exactly the theorem in the case $X=S^n$.
+
 :::
 
-<1>7. The case $n=0$ also satisfies the theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+The case $n=0$ also satisfies the theorem.
+
+::: pf-proof
+
 The space $S^0$ consists of two points.
 A fixed-point-free self-map must interchange them, so its induced map on
 \[
@@ -158,5 +207,11 @@ H_0(S^0;\QQ)\cong\QQ^2
 \]
 is the transposition matrix, whose trace is $0$.
 Thus again a fixed-point-free map has Lefschetz number $0$.
+
 :::
+
+:::
+
+:::
+
 :::

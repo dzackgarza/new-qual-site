@@ -33,7 +33,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. For $n\ge1$, define the continuous triangular spike
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $n\ge1$, define the continuous triangular spike
 $$
 \boxed{
 f_n(x)\coloneqq
@@ -45,32 +50,45 @@ f_n(x)\coloneqq
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 At $x=1/(2n)$, both nonzero formulas equal $2n$, and at $x=1/n$
 the second formula equals $0$, matching the last piece. The value at
 $x=0$ is also $0$. Thus the pieces join continuously, so
 $f_n\colon[0,1]\to\RR$ is continuous.
+
 :::
 
-<1>2. For every fixed $x\in[0,1]$,
+:::
+
+::: {.pf-step #s2}
+
+For every fixed $x\in[0,1]$,
 $$
 f_n(x)\longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $x=0$, then $f_n(0)=0$ for every $n$. If $x>0$, choose $N$ such
 that $1/N<x$. For every $n\ge N$, one has $1/n\le1/N<x$, so
-$x>1/n$ and hence $f_n(x)=0$ by the last branch in step <1>1.
+$x>1/n$ and hence $f_n(x)=0$ by the last branch in step [](#s1){.pf-ref}.
 Therefore $f_n(x)\to0$ for every $x\in[0,1]$.
+
 :::
 
-<1>3. For every $n\ge1$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n\ge1$,
 $$
 \int_0^1 f_n(x)\,dx=1.
 $$
 
-::: {.proof}
-Using the two nonzero pieces from step <1>1,
+::: pf-proof
+
+Using the two nonzero pieces from step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \int_0^1 f_n(x)\,dx
@@ -80,21 +98,33 @@ $$
 &=1.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The proposed implication is false.
+:::
 
-::: {.proof}
-Step <1>2 gives pointwise convergence $f_n\to0$, while step <1>3 gives
+::: {.pf-step #s4}
+
+The proposed implication is false.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives pointwise convergence $f_n\to0$, while step [](#s3){.pf-ref} gives
 $$
 \lim_{n\to\infty}\int_0^1 f_n(x)\,dx=1\ne0.
 $$
-Thus the sequence from step <1>1 is a counterexample.
+Thus the sequence from step [](#s1){.pf-ref} is a counterexample.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required counterexample.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required counterexample.
+
+:::
+
+:::
+
 :::

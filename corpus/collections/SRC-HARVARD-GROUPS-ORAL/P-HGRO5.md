@@ -40,14 +40,27 @@ G=UT_3(\mathbf F_3)
 \right\}.
 \]
 
-<1>1. The group $G$ has order $27$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The group $G$ has order $27$.
+
+::: pf-proof
+
 The entries $a,b,c$ can be chosen independently from the three-element field
 $\mathbf F_3$, so $|G|=3^3=27$.
+
 :::
 
-<1>2. The group $G$ is nonabelian.
-::: {.proof}
+:::
+
+::: pf-step
+
+The group $G$ is nonabelian.
+
+::: pf-proof
+
 Let
 \[
 x=I+E_{12},\qquad y=I+E_{23}.
@@ -59,5 +72,11 @@ xy=I+E_{12}+E_{23}+E_{13},
 yx=I+E_{12}+E_{23}.
 \]
 Hence $xy\ne yx$, so $G$ is nonabelian.
+
 :::
+
+:::
+
+:::
+
 :::

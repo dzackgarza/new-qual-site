@@ -38,9 +38,14 @@ N_G(H)=\{g\in G:gHg^{-1}=H\}
 $$
 be the normalizer of $H$.
 
-<1>1. The number of conjugates of $H$ is at most $[G:H]$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The number of conjugates of $H$ is at most $[G:H]$.
+
+::: pf-proof
+
 The group $G$ acts by conjugation on its set of subgroups. The stabilizer
 of $H$ is exactly $N_G(H)$, so the orbit-stabilizer theorem gives
 $$
@@ -54,16 +59,22 @@ Therefore
 $$
 [G:N_G(H)]\le [G:H].
 $$
+
 :::
 
-<1>2. The union of all conjugates of $H$ is a proper subset of $G$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The union of all conjugates of $H$ is a proper subset of $G$.
+
+::: pf-proof
+
 Let
 $$
 m=\#\{xHx^{-1}:x\in G\}.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 m\le [G:H].
 $$
@@ -81,12 +92,18 @@ $$
 =\abs{G}-[G:H]+1
 <\abs{G}.
 $$
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part 1. By step <1>2, some element of $G$ lies in no
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part 1. By step [](#s2){.pf-ref}, some element of $G$ lies in no
 subgroup $xHx^{-1}$, which proves part 2.
+
 :::
+
+:::
+
 :::

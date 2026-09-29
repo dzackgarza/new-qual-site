@@ -33,10 +33,16 @@ Show that $G = KN_G(P)$.
 :::
 
 ::: {.solution}
-<1>1. For every $g\in G$, there is $k\in K$ with
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $g\in G$, there is $k\in K$ with
 $gPg^{-1}=kPk^{-1}$.
 
-::: {.proof}
+::: pf-proof
+
 Normality gives $gKg^{-1}=K$. Hence $gPg^{-1}$ is a
 subgroup of $K$. Conjugation preserves order, so it has
 order $|P|$, the largest power of $p$ dividing $|K|$.
@@ -44,12 +50,18 @@ It is therefore a Sylow $p$-subgroup of $K$.
 Sylow conjugacy, applied inside the finite group $K$,
 gives an element $k\in K$ with the asserted equality
 [@DF04].
+
 :::
 
-<1>2. Every $g\in G$ belongs to $KN_G(P)$.
+:::
 
-::: {.proof}
-Choose $k$ as in step <1>1. Then
+::: pf-step
+
+Every $g\in G$ belongs to $KN_G(P)$.
+
+::: pf-proof
+
+Choose $k$ as in step [](#s1){.pf-ref}. Then
 $$
 (k^{-1}g)P(k^{-1}g)^{-1}
 =k^{-1}(gPg^{-1})k=P.
@@ -59,5 +71,11 @@ $g=k(k^{-1}g)\in KN_G(P)$. This proves
 $G\subseteq KN_G(P)$. The reverse inclusion holds
 because both factors are subsets of the group $G$ and
 their products lie in $G$. Hence $G=KN_G(P)$.
+
 :::
+
+:::
+
+:::
+
 :::

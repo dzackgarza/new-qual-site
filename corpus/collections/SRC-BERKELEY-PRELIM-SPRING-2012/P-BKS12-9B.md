@@ -35,9 +35,14 @@ x_n+y_n\sqrt2
 (3+\sqrt2)(3+2\sqrt2)^n.
 $$
 
-<1>1. The numbers $x_n$ and $y_n$ are integers for every $n\geq0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The numbers $x_n$ and $y_n$ are integers for every $n\geq0$.
+
+::: pf-proof
+
 For $n=0$,
 $$
 x_0=3,
@@ -67,14 +72,20 @@ x_{n+1}=3x_n+4y_n,
 y_{n+1}=2x_n+3y_n,
 $$
 which are integers. Induction proves the claim.
+
 :::
 
-<1>2. For every $n\geq0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n\geq0$,
 $$
 x_n^2-2y_n^2=7.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiply the defining identity by its conjugate:
 $$
 \begin{aligned}
@@ -88,13 +99,19 @@ x_n^2-2y_n^2
 7.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The sequences $x_n$ and $y_n$ are positive and strictly increasing.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The sequences $x_n$ and $y_n$ are positive and strictly increasing.
+
+::: pf-proof
+
 The initial values $x_0=3$ and $y_0=1$ are positive. If $x_n,y_n>0$, the
-recurrences from step <1>1 give
+recurrences from step [](#s1){.pf-ref} give
 $$
 x_{n+1}
 =
@@ -111,9 +128,14 @@ y_{n+1}
 y_n.
 $$
 Induction proves positivity and strict increase.
+
 :::
 
-<1>4. The pairs
+:::
+
+::: {.pf-step #s4}
+
+The pairs
 $$
 \boxed{(x_n,y_n),\qquad n=0,1,2,\ldots}
 $$
@@ -122,15 +144,22 @@ $$
 x^2-2y^2=7.
 $$
 
-::: {.proof}
-Step <1>1 gives integrality and step <1>2 gives the equation. Step <1>3
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives integrality and step [](#s2){.pf-ref} gives the equation. Step [](#s3){.pf-ref}
 shows that the first coordinates $x_n$ are strictly increasing, so the
 pairs are all distinct.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 supplies infinitely many integer solutions.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} supplies infinitely many integer solutions.
+
+:::
+
+:::
+
 :::

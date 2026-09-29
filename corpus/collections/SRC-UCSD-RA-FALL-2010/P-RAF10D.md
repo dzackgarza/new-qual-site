@@ -33,13 +33,27 @@ for all $f \in Y$.
 :::
 
 ::: {.solution}
-<1>1. The continuous representative is unique.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The continuous representative is unique.
+
+::: pf-proof
+
 If two continuous functions on $[0,1]$ agree almost everywhere, then their difference is continuous and vanishes almost everywhere. If it were nonzero at some point, continuity would make it nonzero on an interval of positive measure, a contradiction. Hence every element of $Y$ has a unique continuous representative.
+
 :::
 
-<1>2. Define the representative map and prove its graph is closed.
-::: {.proof}
+:::
+
+::: pf-step
+
+Define the representative map and prove its graph is closed.
+
+::: pf-proof
+
 Because $Y$ is a closed subspace of the Banach space $L^2([0,1])$, $Y$ is itself Banach. Define
 \[
 T:Y\to C([0,1]),
@@ -67,10 +81,17 @@ Since $g$ is continuous, it is exactly the continuous representative of $f$. Thu
 g=T(f).
 \]
 Therefore the graph of $T$ is closed.
+
 :::
 
-<1>3. Apply the Closed Graph Theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Closed Graph Theorem.
+
+::: pf-proof
+
 Both $Y$ and $C([0,1])$ are Banach spaces. By Step 2, the linear map
 \[
 T:Y\to C([0,1])
@@ -86,5 +107,11 @@ Since $T(f)$ is the continuous representative of $f$,
 \|f\|_{L^\infty([0,1])}
 \le C\|f\|_{L^2([0,1])}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

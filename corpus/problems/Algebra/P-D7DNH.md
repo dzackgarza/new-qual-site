@@ -35,13 +35,19 @@ A=
 Compute $\ZZ^4/N$ using Smith normal form.
 :::
 
-
 ::: {.solution}
-<1>1. The Smith normal form of $A$ is
+
+::: pf
+
+::: pf-step
+
+The Smith normal form of $A$ is
 \[
 \operatorname{diag}(3,6,6,0).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The invariant factors may be recovered from determinantal divisors. The gcd of all entries is
 \[
 \Delta_1=3.
@@ -63,15 +69,22 @@ d_2=\Delta_2/\Delta_1=6,
 d_3=\Delta_3/\Delta_2=6.
 \]
 Thus the Smith normal form is $\operatorname{diag}(3,6,6,0)$.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \ZZ^4/N
 \cong
 \ZZ/3\ZZ\oplus\ZZ/6\ZZ\oplus\ZZ/6\ZZ\oplus\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Unimodular row and column operations do not change the isomorphism type of the cokernel. Hence
 \[
 \operatorname{coker}(A)
@@ -79,5 +92,11 @@ Unimodular row and column operations do not change the isomorphism type of the c
 \operatorname{coker}(\operatorname{diag}(3,6,6,0)),
 \]
 which is exactly the displayed direct sum.
+
 :::
+
+:::
+
+:::
+
 :::

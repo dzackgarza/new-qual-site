@@ -60,12 +60,18 @@ Then $\|x\|_2=\|y\|_2$ and
 \|Ax-b\|_2=\|\Sigma y-c\|_2.
 \]
 
-<1>1. A vector $x=Vy$ is a least-squares solution if and only if
+::: pf
+
+::: {.pf-step #s1}
+
+A vector $x=Vy$ is a least-squares solution if and only if
 \[
 y_i=\frac{c_i}{\sigma_i}\qquad(1\le i\le r),
 \]
 with $y_{r+1},\ldots,y_n$ arbitrary.
-::: {.proof}
+
+::: pf-proof
+
 Since $U$ is unitary,
 \[
 \|Ax-b\|_2^2
@@ -78,9 +84,14 @@ The second sum is independent of $y$. Each term in the first sum is nonnegative 
 y_i=c_i/\sigma_i.
 \]
 The coordinates $y_{r+1},\ldots,y_n$ do not occur in the residual at all. Hence the displayed condition is exactly the set of least-squares solutions.
+
 :::
 
-<1>2. The pseudoinverse is
+:::
+
+::: {.pf-step #s2}
+
+The pseudoinverse is
 \[
 A^\dagger=V\Sigma^\dagger U^*,
 \]
@@ -95,7 +106,9 @@ Thus
 \widetilde x=A^\dagger b
 \]
 is a least-squares solution.
-::: {.proof}
+
+::: pf-proof
+
 By definition of the Moore--Penrose pseudoinverse of an SVD,
 \[
 \Sigma^\dagger
@@ -106,10 +119,15 @@ V^*\widetilde x
 =V^*V\Sigma^\dagger U^*b
 =\Sigma^\dagger c.
 \]
-Its first $r$ coordinates are exactly $c_i/\sigma_i$, so <1>1 shows that $\widetilde x$ is a least-squares solution. This proves part (a).
+Its first $r$ coordinates are exactly $c_i/\sigma_i$, so step [](#s1){.pf-ref} shows that $\widetilde x$ is a least-squares solution. This proves part (a).
+
 :::
 
-<1>3. If $\widehat x$ is any least-squares solution, then
+:::
+
+::: {.pf-step #s3}
+
+If $\widehat x$ is any least-squares solution, then
 \[
 \|\widehat x\|_2^2
 =\|\widetilde x\|_2^2
@@ -121,12 +139,14 @@ In particular,
 \[
 \|\widehat x\|_2\ge \|\widetilde x\|_2.
 \]
-::: {.proof}
-By <1>1, every least-squares solution has
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, every least-squares solution has
 \[
 \widehat y_i=c_i/\sigma_i\qquad(1\le i\le r).
 \]
-By <1>2, the SVD coordinates of $\widetilde x$ have these same first $r$ entries and zero entries afterward. Since $V$ is unitary,
+By step [](#s2){.pf-ref}, the SVD coordinates of $\widetilde x$ have these same first $r$ entries and zero entries afterward. Since $V$ is unitary,
 \[
 \|\widehat x\|_2^2
 =\|\widehat y\|_2^2
@@ -139,18 +159,31 @@ whereas
 =\sum_{i=1}^r\left|\frac{c_i}{\sigma_i}\right|^2.
 \]
 This proves part (b).
+
 :::
 
-<1>4. The minimum-$2$-norm least-squares solution is unique and equals $A^\dagger b$.
-::: {.proof}
-Equality in <1>3 holds if and only if
+:::
+
+::: pf-step
+
+The minimum-$2$-norm least-squares solution is unique and equals $A^\dagger b$.
+
+::: pf-proof
+
+Equality in step [](#s3){.pf-ref} holds if and only if
 \[
 \widehat y_{r+1}=\cdots=\widehat y_n=0.
 \]
-Together with the forced first $r$ coordinates from <1>1, this determines $\widehat y$ uniquely as $\Sigma^\dagger c$. Therefore
+Together with the forced first $r$ coordinates from step [](#s1){.pf-ref}, this determines $\widehat y$ uniquely as $\Sigma^\dagger c$. Therefore
 \[
 \widehat x=V\widehat y=V\Sigma^\dagger U^*b=A^\dagger b=\widetilde x.
 \]
 Hence $\widetilde x$ is the unique least-squares solution of minimum Euclidean norm. This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

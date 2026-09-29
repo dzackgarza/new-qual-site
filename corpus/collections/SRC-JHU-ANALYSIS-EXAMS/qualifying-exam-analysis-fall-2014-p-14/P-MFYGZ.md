@@ -49,8 +49,15 @@ where A is a constant depending only on d and $\begin{array} { r } { | | f | | _
 :::
 
 ::: {.solution}
-<1>1. Associate a good ball to every point of the superlevel set.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Associate a good ball to every point of the superlevel set.
+
+::: pf-proof
+
 Fix $\alpha>0$ and write
 \[
 E_\alpha:=\{x\in\mathbb R^d:M_f(x)>\alpha\}.
@@ -71,10 +78,17 @@ Hence
 \alpha\,m(B_x)<\int_{B_x}|f|\le \|f\|_1.
 \]
 In particular the radii of all such balls are uniformly bounded in terms of $\alpha$, $d$, and $\|f\|_1$.
+
 :::
 
-<1>2. Apply the $5r$ covering lemma.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the $5r$ covering lemma.
+
+::: pf-proof
+
 Apply the $5r$ covering lemma to the family $\{B_x:x\in E_\alpha\}$. There is a finite or countable pairwise disjoint subfamily $\{B_j\}$ such that
 \[
 E_\alpha\subseteq\bigcup_j 5B_j,
@@ -87,10 +101,17 @@ m(E_\alpha)
 \le \sum_j m(5B_j)
 =5^d\sum_j m(B_j).
 \]
+
 :::
 
-<1>3. Use disjointness and the defining average inequality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use disjointness and the defining average inequality.
+
+::: pf-proof
+
 For each selected ball,
 \[
 \alpha\,m(B_j)<\int_{B_j}|f|.
@@ -111,5 +132,11 @@ Thus the desired estimate holds with, for example,
 \[
 \boxed{A=5^d.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

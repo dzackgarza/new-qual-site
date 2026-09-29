@@ -26,14 +26,20 @@ Let $n$ be a positive integer. Compute
 :::
 
 ::: {.solution}
-<1>1. For $\theta\notin2\pi\ZZ$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $\theta\notin2\pi\ZZ$,
 $$
 \frac{1-\cos(n\theta)}{1-\cos\theta}
 =
 \abs{\sum_{k=0}^{n-1}e^{ik\theta}}^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 \abs{1-e^{it}}^2=2(1-\cos t)
@@ -52,16 +58,21 @@ $$
 $$
 The quotient has a removable singularity at each point of $2\pi\ZZ$,
 where both sides extend continuously with value $n^2$.
+
 :::
 
-<1>2.
+:::
+
+::: {.pf-step #s2}
+
 $$
 \int_0^{2\pi}
 \abs{\sum_{k=0}^{n-1}e^{ik\theta}}^2\,d\theta
 =2\pi n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expand:
 $$
 \abs{\sum_{k=0}^{n-1}e^{ik\theta}}^2
@@ -79,21 +90,33 @@ $$
 $$
 Thus only the $n$ diagonal terms $j=k$ survive the integration,
 giving $2\pi n$.
+
 :::
 
-<1>3. The requested integral equals
+:::
+
+::: {.pf-step #s3}
+
+The requested integral equals
 $$
 \boxed{2\pi n}.
 $$
 
-::: {.proof}
-Combine steps <1>1 and <1>2. Changing the value at the removable
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}. Changing the value at the removable
 singularity does not affect the integral.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the value of the integral.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the value of the integral.
+
+:::
+
+:::
+
 :::

@@ -25,9 +25,13 @@ Determine the Galois groups of the following polynomials over $\mathbb Q$.
 - $f(x)=x^4+4x^2-5$.
 :::
 
-
 ::: {.solution}
-<1>1. For
+
+::: pf
+
+::: {.pf-step #s1}
+
+For
 \[
 f_1(x)=x^4+4x^2+1,
 \]
@@ -39,7 +43,9 @@ Then the four roots of \(f_1\) are
 \[
 \pm\alpha,\qquad \pm\alpha^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Solving the quadratic equation in \(y=x^2\) gives
 \[
 y^2+4y+1=0,
@@ -56,15 +62,22 @@ we have
 \]
 Thus the square roots of the two values of \(y\) are exactly
 \(\pm\alpha\) and \(\pm\alpha^{-1}\).
+
 :::
 
-<1>2. The splitting field of \(f_1\) is
+:::
+
+::: pf-step
+
+The splitting field of \(f_1\) is
 \[
 K_1=\mathbb Q(\alpha),
 \qquad [K_1:\mathbb Q]=4.
 \]
-::: {.proof}
-By <1>1, \(\mathbb Q(\alpha)\) already contains every root, so it is the splitting field. Moreover
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, \(\mathbb Q(\alpha)\) already contains every root, so it is the splitting field. Moreover
 \[
 \sqrt3=\alpha^2+2\in\mathbb Q(\alpha),
 \]
@@ -77,13 +90,20 @@ The first extension has degree \(2\). The element \(-2+\sqrt3\) is not a square 
 [\mathbb Q(\alpha):\mathbb Q(\sqrt3)]=2.
 \]
 Therefore \([K_1:\mathbb Q]=4\).
+
 :::
 
-<1>3. We have
+:::
+
+::: pf-step
+
+We have
 \[
 \operatorname{Gal}(K_1/\mathbb Q)\cong C_2\times C_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since \(K_1\) is the splitting field of a separable polynomial over \(\mathbb Q\), it is Galois of degree \(4\). Two nontrivial automorphisms are determined by
 \[
 \tau(\alpha)=-\alpha,
@@ -96,9 +116,14 @@ Both have order \(2\), and they commute because
 =\tau\sigma(\alpha).
 \]
 Thus the Galois group contains three nontrivial involutions and is therefore the Klein four group, not the cyclic group of order \(4\).
+
 :::
 
-<1>4. For
+:::
+
+::: pf-step
+
+For
 \[
 f_2(x)=x^4+4x^2-5,
 \]
@@ -110,22 +135,37 @@ Hence its splitting field is
 \[
 K_2=\mathbb Q(\sqrt{-5}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The factorization is immediate:
 \[
 (x^2-1)(x^2+5)=x^4+4x^2-5.
 \]
 The roots are \(\pm1\) and \(\pm\sqrt{-5}\), so adjoining \(\sqrt{-5}\) gives all roots.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \operatorname{Gal}(K_2/\mathbb Q)\cong C_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since \(-5\) is not a square in \(\mathbb Q\), \([K_2:\mathbb Q]=2\). Every quadratic extension in characteristic \(0\) is Galois, with nontrivial automorphism
 \[
 \sqrt{-5}\longmapsto-\sqrt{-5}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

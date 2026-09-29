@@ -29,7 +29,6 @@ audit:
 If $R$ is normal and $P$ prime, prove that $R_P$ is also normal.
 :::
 
-
 ::: {.solution}
 Let $K$ be the fraction field of $R$. Since
 $$
@@ -43,8 +42,14 @@ z\in K
 $$
 be integral over $R_P$. We prove that $z\in R_P$.
 
-<1>1. Choose one common denominator for the coefficients of an integral equation.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Choose one common denominator for the coefficients of an integral equation.
+
+::: pf-proof
+
 There is a monic equation
 $$
 z^n+c_1z^{n-1}+\cdots+c_n=0
@@ -79,15 +84,22 @@ we have
 $$
 z^n+\frac{b_1}{s}z^{n-1}+\cdots+\frac{b_n}{s}=0.
 $$
+
 :::
 
-<1>2. The element $sz$ is integral over $R$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The element $sz$ is integral over $R$.
+
+::: pf-proof
+
 Put
 $$
 y=sz.
 $$
-Multiply the equation from step <1>1 by $s^n$ and substitute
+Multiply the equation from step [](#s1){.pf-ref} by $s^n$ and substitute
 $z=y/s$. The $i$th lower-degree term becomes
 $$
 s^n\frac{b_i}{s}z^{n-i}
@@ -98,10 +110,17 @@ $$
 y^n+b_1y^{n-1}+b_2s\,y^{n-2}+\cdots+b_ns^{n-1}=0
 $$
 with all coefficients in $R$. Hence $y=sz$ is integral over $R$.
+
 :::
 
-<1>3. Use normality of $R$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use normality of $R$.
+
+::: pf-proof
+
 Because $R$ is normal and $y=sz\in K$ is integral over $R$, one has
 $$
 y=sz\in R.
@@ -117,5 +136,11 @@ Therefore
 $$
 \boxed{R_P\text{ is normal}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

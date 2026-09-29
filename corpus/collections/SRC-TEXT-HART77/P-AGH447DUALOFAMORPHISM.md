@@ -62,7 +62,11 @@ $$
 The preceding results identify $\alpha_E$ as an isomorphism of group
 varieties.
 
-<1>1. For every morphism
+::: pf
+
+::: {.pf-step #s1}
+
+For every morphism
 $$
 f:X\longrightarrow X'
 $$
@@ -77,7 +81,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $f$ is nonconstant of degree $m$, then
 $$
 \deg f^*\mcl=m\deg\mcl,
@@ -101,9 +106,14 @@ $$
 f^*\OO_{X'}\cong\OO_X,
 $$
 it sends $P_0'$ to $P_0$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 X\xrightarrow{f}X'\xrightarrow{g}X''
 $$
@@ -116,7 +126,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Pullback of line bundles is contravariantly functorial:
 $$
 (g\circ f)^*=f^*\circ g^*.
@@ -138,9 +149,14 @@ $$
 $$
 Here the middle juxtaposition denotes composition of the displayed
 morphisms.
+
 :::
 
-<1>3. Assume now that
+:::
+
+::: {.pf-step #s3}
+
+Assume now that
 $$
 f(P_0)=P_0',
 \qquad
@@ -155,7 +171,8 @@ $$
 \boxed{\hat f(Q')=[n]Q.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $f$ carries origin to origin, it is a homomorphism of elliptic
 curves.  A separable morphism between genus-one curves is unramified by
 Riemann--Hurwitz.  Hence
@@ -194,15 +211,21 @@ $$
 =
 nQ.
 $$
-By the definition in step <1>1 this point is $\hat f(Q')$.
+By the definition in step [](#s1){.pf-ref} this point is $\hat f(Q')$.
+
 :::
 
-<1>4. Under the same hypotheses, if $f$ is purely inseparable, then again
+:::
+
+::: {.pf-step #s4}
+
+Under the same hypotheses, if $f$ is purely inseparable, then again
 $$
 \boxed{\hat f(Q')=[n]Q.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 A finite purely inseparable morphism of degree $n$ between smooth curves is
 radicial.  Over the algebraically closed field, each fibre therefore has a
 single point, with scheme-theoretic multiplicity $n$.  Hence
@@ -218,9 +241,14 @@ f^*\OO_{X'}(Q'-P_0')
 \OO_X\bigl(nQ-nP_0\bigr),
 $$
 whose class corresponds to $[n]Q$.
+
 :::
 
-<1>5. For an arbitrary nonconstant $f$ preserving the origins, one still has
+:::
+
+::: {.pf-step #s5}
+
+For an arbitrary nonconstant $f$ preserving the origins, one still has
 $$
 \boxed{
 \hat f(f(Q))=[n]Q
@@ -228,7 +256,8 @@ $$
 $$
 for every $Q\in X$.
 
-::: {.proof}
+::: pf-proof
+
 Factor the finite extension of function fields into its inseparable and
 separable parts.  On smooth projective models this gives
 $$
@@ -246,7 +275,7 @@ Put
 $$
 R=f_i(Q).
 $$
-Steps <1>3--<1>4 and contravariance from step <1>2 give
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} and contravariance from step [](#s2){.pf-ref} give
 $$
 \begin{aligned}
 \hat f(f(Q))
@@ -264,9 +293,14 @@ $$
 [n]Q.
 \end{aligned}
 $$
+
 :::
 
-<1>6. Consequently
+:::
+
+::: {.pf-step #s6}
+
+Consequently
 $$
 \boxed{
 \hat f\circ f=[n]_X,
@@ -275,8 +309,9 @@ f\circ\hat f=[n]_{X'}.
 }
 $$
 
-::: {.proof}
-The first equality is exactly step <1>5.
+::: pf-proof
+
+The first equality is exactly step [](#s5){.pf-ref}.
 
 Since a nonconstant morphism of projective curves is surjective, every
 $Q'\in X'$ is $f(Q)$ for some $Q\in X$.  Then
@@ -296,9 +331,14 @@ $$
 f\circ\hat f=[n]_{X'}.
 $$
 This proves part (c).
+
 :::
 
-<1>7. Let
+:::
+
+::: {.pf-step #s7}
+
+Let
 $$
 p_1:X\times X'\longrightarrow X,
 \qquad
@@ -321,7 +361,8 @@ $$
 Then $\mcm_h$ represents $h$ in the normalized relative Picard group
 $\Pic_\sigma$ occurring in the hint.
 
-::: {.proof}
+::: pf-proof
+
 On the fibre $\{x\}\times X'$ the graph $\Gamma_h$ cuts out the point
 $h(x)$, while $X\times\{P_0'\}$ cuts out $P_0'$.  Therefore
 $$
@@ -356,9 +397,14 @@ $$
 x\longmapsto\OO_{X'}(h(x)-P_0'),
 $$
 so representability of $\Pic^0(X'/X)$ identifies it with the morphism $h$.
+
 :::
 
-<1>8. For any two morphisms $f,g:X\to X'$ one has the symmetric identity
+:::
+
+::: {.pf-step #s8}
+
+For any two morphisms $f,g:X\to X'$ one has the symmetric identity
 $$
 \boxed{
 \Gamma_g^*\mcm_f
@@ -367,7 +413,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Pulling the graph divisor $\Gamma_f$ back along $\Gamma_g$ gives the
 zero divisor of the difference morphism
 $$
@@ -412,17 +459,23 @@ $$
 (f-g)^*\OO(P_0').
 $$
 The resulting expression is symmetric in $f$ and $g$, proving the claim.
+
 :::
 
-<1>9. If $f,g:X\to X'$ preserve the base points, then
+:::
+
+::: {.pf-step #s9}
+
+If $f,g:X\to X'$ preserve the base points, then
 $$
 \boxed{
 \widehat{f+g}=\hat f+\hat g.
 }
 $$
 
-::: {.proof}
-The group law on the relative Jacobian is tensor product, so step <1>7 gives
+::: pf-proof
+
+The group law on the relative Jacobian is tensor product, so step [](#s7){.pf-ref} gives
 $$
 \mcm_{f+g}
 \cong
@@ -437,14 +490,14 @@ Let
 $$
 h:X\longrightarrow X'
 $$
-be the constant morphism with value $A$.  By step <1>7,
+be the constant morphism with value $A$.  By step [](#s7){.pf-ref},
 $$
 \mcm_h\cong p_2^*\mcl;
 $$
 the possible normalization factor pulled back from $X$ is trivial because
 $h$ is constant.
 
-Using step <1>8 three times,
+Using step [](#s8){.pf-ref} three times,
 $$
 \begin{aligned}
 (f+g)^*\mcl
@@ -469,7 +522,7 @@ $$
 \alpha_X:X\overset\sim\longrightarrow\Pic^0(X),
 $$
 tensor product is addition.  Applying the definition of the dual from
-step <1>1 to the last identity yields
+step [](#s1){.pf-ref} to the last identity yields
 $$
 \widehat{f+g}(A)
 =
@@ -477,39 +530,51 @@ $$
 $$
 This holds for every $A\in X'$, so the two morphisms are equal.  This proves
 the starred part (d).
+
 :::
 
-<1>10. For every $r\in\ZZ$,
+:::
+
+::: {.pf-step #s10}
+
+For every $r\in\ZZ$,
 $$
 \boxed{\widehat{[r]_X}=[r]_X.}
 $$
 
-::: {.proof}
-The identity morphism pulls every line bundle back to itself, so step <1>1 gives
+::: pf-proof
+
+The identity morphism pulls every line bundle back to itself, so step [](#s1){.pf-ref} gives
 $$
 \widehat{[1]_X}=[1]_X.
 $$
-By step <1>9, dualization is additive on endomorphisms. Hence it sends zero to
+By step [](#s9){.pf-ref}, dualization is additive on endomorphisms. Hence it sends zero to
 zero, sends negatives to negatives, and sends the sum of $r$ copies of the
 identity to the sum of $r$ copies of its dual. Therefore
 $$
 \widehat{[r]_X}=[r]_X
 $$
 for every integer $r$.
+
 :::
 
-<1>11. For every $r\in\ZZ$,
+:::
+
+::: {.pf-step #s11}
+
+For every $r\in\ZZ$,
 $$
 \boxed{\deg [r]_X=r^2.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $r=0$ this is the convention that a constant morphism has degree $0$.
 Let $r\ne0$ and put
 $$
 d=\deg[r]_X.
 $$
-Applying step <1>6 to $[r]_X$ and using step <1>10 gives
+Applying step [](#s6){.pf-ref} to $[r]_X$ and using step [](#s10){.pf-ref} gives
 $$
 [d]_X
 =
@@ -519,25 +584,31 @@ $$
 $$
 The standard embedding $\ZZ\to\Endo(X)$, $m\mapsto[m]_X$, is injective, so
 $d=r^2$. This proves part (e).
+
 :::
 
-<1>12. For every morphism $f:X\to X'$,
+:::
+
+::: {.pf-step #s12}
+
+For every morphism $f:X\to X'$,
 $$
 \boxed{\deg\hat f=\deg f.}
 $$
 
-::: {.proof}
-If $f$ is constant, step <1>1 shows that $\hat f$ is the zero morphism, so
+::: pf-proof
+
+If $f$ is constant, step [](#s1){.pf-ref} shows that $\hat f$ is the zero morphism, so
 both degrees are $0$. Suppose that $f$ is nonconstant and put
 $$
 n=\deg f>0.
 $$
-Step <1>6 gives
+Step [](#s6){.pf-ref} gives
 $$
 f\circ\hat f=[n]_{X'}.
 $$
 Degrees of finite morphisms of curves multiply under composition. Hence step
-<1>11 gives
+[](#s11){.pf-ref} gives
 $$
 n^2
 =
@@ -552,13 +623,19 @@ $$
 \deg\hat f=n=\deg f.
 $$
 This proves part (f).
+
 :::
 
-<1>13. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove parts (a)--(b), steps <1>3--<1>6 prove part (c),
-steps <1>7--<1>9 prove part (d), steps <1>10--<1>11 prove part (e), and
-step <1>12 proves part (f).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove parts (a)--(b), steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (c),
+steps [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (d), steps [](#s10){.pf-ref} and [](#s11){.pf-ref} prove part (e), and
+step [](#s12){.pf-ref} proves part (f).
+
+:::
+
+:::
+
 :::

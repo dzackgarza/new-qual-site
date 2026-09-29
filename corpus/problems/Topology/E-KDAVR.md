@@ -23,33 +23,74 @@ Show that if $X$ is compact and $A\subseteq X$ is closed then $A$ is compact.
 ::: {.solution}
 **Goal:** Show that if $X$ is compact and $A \subseteq X$ is closed, then $A$ is compact.
 
-<1>1. Let $\theset{U_\alpha}$ be an open cover of $A$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Let $\theset{U_\alpha}$ be an open cover of $A$.
+
+::: pf-proof
+
 Arbitrary open cover of $A$ (by open subsets of $X$).
+
 :::
 
-<1>2. $X \setminus A$ is open in $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$X \setminus A$ is open in $X$.
+
+::: pf-proof
+
 $A$ is closed.
+
 :::
 
-<1>3. $\theset{U_\alpha} \cup \theset{X \setminus A}$ is an open cover of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$\theset{U_\alpha} \cup \theset{X \setminus A}$ is an open cover of $X$.
+
+::: pf-proof
+
 On $A$, the $U_\alpha$ cover; on $X \setminus A$, the set $X \setminus A$ covers.
+
 :::
 
-<1>4. There is a finite subcover of $X$: some $U_{\alpha_1}, \ldots, U_{\alpha_n}$ together with (possibly) $X \setminus A$.
-::: {.proof}
-$X$ is compact and <1>3 is an open cover.
 :::
 
-<1>5. $\theset{U_{\alpha_1}, \ldots, U_{\alpha_n}}$ is a finite cover of $A$.
-::: {.proof}
-The finite subcover from <1>4 covers $A$ after discarding $X \setminus A$ (which contains no points of $A$); the remaining $U_{\alpha_j}$ still cover $A$ since any $a \in A$ lies in one of the subcover members, which must be a $U_{\alpha_j}$ because $a \notin X \setminus A$.
+::: {.pf-step #s4}
+
+There is a finite subcover of $X$: some $U_{\alpha_1}, \ldots, U_{\alpha_n}$ together with (possibly) $X \setminus A$.
+
+::: pf-proof
+
+$X$ is compact and step [](#s3){.pf-ref} is an open cover.
+
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>1--<1>5 show every open cover of $A$ has a finite subcover.
 :::
+
+::: {.pf-step #s5}
+
+$\theset{U_{\alpha_1}, \ldots, U_{\alpha_n}}$ is a finite cover of $A$.
+
+::: pf-proof
+
+The finite subcover from step [](#s4){.pf-ref} covers $A$ after discarding $X \setminus A$ (which contains no points of $A$); the remaining $U_{\alpha_j}$ still cover $A$ since any $a \in A$ lies in one of the subcover members, which must be a $U_{\alpha_j}$ because $a \notin X \setminus A$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} show every open cover of $A$ has a finite subcover.
+
+:::
+
+:::
+
 :::

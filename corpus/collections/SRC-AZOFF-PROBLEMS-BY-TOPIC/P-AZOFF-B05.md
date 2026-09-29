@@ -66,7 +66,11 @@ f_s(1,3)=9,
 f_t(1,3)=0.
 $$
 
-<1>1. Part (a): there are open intervals
+::: pf
+
+::: {.pf-step #s1}
+
+Part (a): there are open intervals
 $$
 1\in U\subseteq\RR,
 \qquad
@@ -91,7 +95,8 @@ $$
 \phi'(3)=\boxed{0}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $f:\RR^2\to\RR$ is smooth,
 $$
 f(1,3)=0,
@@ -119,9 +124,14 @@ $$
 =
 0.
 $$
+
 :::
 
-<1>2. Parts (b) and (c): there are open neighborhoods
+:::
+
+::: {.pf-step #s2}
+
+Parts (b) and (c): there are open neighborhoods
 $$
 1\in U_{\CC}\subseteq\CC,
 \qquad
@@ -146,7 +156,11 @@ $$
 \Phi'(3)=0.
 $$
 
-<2>1. Realify the complex polynomial as
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+Realify the complex polynomial as
 $$
 \mathcal F:\RR^2_s\times\RR^2_t\longrightarrow\RR^2,
 \qquad
@@ -167,7 +181,8 @@ $$
 9I_2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For fixed $t$, the polynomial $s\mapsto f(s,t)$ is holomorphic with complex
 derivative
 $$
@@ -176,9 +191,14 @@ $$
 The real derivative of a holomorphic map $\CC\to\CC$ is the real-linear map
 given by multiplication by its complex derivative. At $(1,3)$ that complex
 number is $9$, so the corresponding real matrix is $9I_2$.
+
 :::
 
-<2>2. The real implicit function theorem gives real neighborhoods
+:::
+
+::: {.pf-step #s2-2}
+
+The real implicit function theorem gives real neighborhoods
 $$
 1\in U\subseteq\RR^2_s,
 \qquad
@@ -190,16 +210,22 @@ $$
 $$
 whose graph is exactly the zero set of $\mathcal F$ in $U\times V$.
 
-::: {.proof}
-Step <2>1 gives the invertibility hypothesis for the real implicit function
+::: pf-proof
+
+Step [](#s2-1){.pf-ref} gives the invertibility hypothesis for the real implicit function
 theorem applied to
 $$
 \mathcal F:\RR^2_s\times\RR^2_t\to\RR^2.
 $$
 Thus the theorem gives the stated map and local graph description.
+
 :::
 
-<2>3. After shrinking $U$ and $V$ if necessary,
+:::
+
+::: {.pf-step #s2-3}
+
+After shrinking $U$ and $V$ if necessary,
 $$
 D\Phi_{\RR}(t)
 =
@@ -208,7 +234,8 @@ D_t\mathcal F(\Phi_{\RR}(t),t)
 $$
 is complex-linear for every $t\in V$.
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 f_s(1,3)=9\neq0,
@@ -234,14 +261,20 @@ are multiplication by the complex numbers $f_s$ and $f_t$, respectively.
 They are therefore complex-linear. The inverse of the nonzero multiplication
 map $D_s\mathcal F$ is also complex-linear, so the displayed composition is
 complex-linear.
+
 :::
 
-<2>4. Under the identifications $\RR^2\cong\CC$, the map $\Phi_{\RR}$ is
+:::
+
+::: {.pf-step #s2-4}
+
+Under the identifications $\RR^2\cong\CC$, the map $\Phi_{\RR}$ is
 holomorphic.
 
-::: {.proof}
+::: pf-proof
+
 Fix $t_0\in V$. Since $\Phi_{\RR}$ is real differentiable at $t_0$ and
-$D\Phi_{\RR}(t_0)$ is complex-linear by step <2>3, there is
+$D\Phi_{\RR}(t_0)$ is complex-linear by step [](#s2-3){.pf-ref}, there is
 $\lambda\in\CC$ such that
 $$
 \Phi_{\RR}(t_0+h)-\Phi_{\RR}(t_0)
@@ -261,17 +294,23 @@ $$
 Thus the complex derivative exists at every $t_0\in V$, so
 $\Phi_{\RR}$ is holomorphic. Denote the resulting complex map by $\Phi$ and
 the neighborhoods by $U_{\CC},V_{\CC}$.
+
 :::
 
-<2>5. The holomorphic map $\Phi$ has the graph and uniqueness stated in
-step <1>2, and
+:::
+
+::: {.pf-step #s2-5}
+
+The holomorphic map $\Phi$ has the graph and uniqueness stated in
+step [](#s2){.pf-ref}, and
 $$
 \Phi'(3)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The graph and uniqueness are exactly those supplied by the real implicit
-function theorem in step <2>2, merely rewritten under
+function theorem in step [](#s2-2){.pf-ref}, merely rewritten under
 $\RR^2\cong\CC$.
 
 Differentiating
@@ -290,21 +329,31 @@ $$
 =
 0.
 $$
+
 :::
 
-<2>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <2>1--<2>5 derive the complex implicit-function conclusion in step
-<1>2 entirely from the real implicit function theorem, as required in part
+::: pf-qed
+
+Steps [](#s2-1){.pf-ref}, [](#s2-2){.pf-ref}, [](#s2-3){.pf-ref}, [](#s2-4){.pf-ref} and [](#s2-5){.pf-ref} derive the complex implicit-function conclusion in step
+[](#s2){.pf-ref} entirely from the real implicit function theorem, as required in part
 (c).
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 gives the real conclusion in part (a), while step <1>2 and its
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} gives the real conclusion in part (a), while step [](#s2){.pf-ref} and its
 substeps give the complex conclusion in part (b) and the requested real-IFT
 proof in part (c).
+
 :::
+
+:::
+
 :::

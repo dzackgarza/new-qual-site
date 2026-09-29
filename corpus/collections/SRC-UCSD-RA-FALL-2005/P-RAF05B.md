@@ -30,8 +30,15 @@ Find Lebesgue measurable sets $A, B \subset \mathbb{R}^2$ such that $A + B$ is n
 :::
 
 ::: {.solution}
-<1>1. Choose a nonmeasurable subset of the real line.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Choose a nonmeasurable subset of the real line.
+
+::: pf-proof
+
 Let $V\subset\mathbb R$ be a non-Lebesgue-measurable set, for example a Vitali set. Define
 \[
 A:=V\times\{0\},
@@ -39,10 +46,17 @@ A:=V\times\{0\},
 B:=\{0\}\times\mathbb R.
 \]
 Both $A$ and $B$ are subsets of one-dimensional affine subspaces of $\mathbb R^2$, hence of planar Lebesgue-null sets. Since planar Lebesgue measure is complete, both $A$ and $B$ are Lebesgue measurable in $\mathbb R^2$.
+
 :::
 
-<1>2. Compute the Minkowski sum.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the Minkowski sum.
+
+::: pf-proof
+
 Every element of $A+B$ has the form
 \[
 (v,0)+(0,t)=(v,t)
@@ -51,10 +65,17 @@ with $v\in V$ and $t\in\mathbb R$. Thus
 \[
 A+B=V\times\mathbb R.
 \]
+
 :::
 
-<1>3. Show that $V\times\mathbb R$ is not Lebesgue measurable.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $V\times\mathbb R$ is not Lebesgue measurable.
+
+::: pf-proof
+
 Suppose for contradiction that $V\times\mathbb R$ were Lebesgue measurable in $\mathbb R^2$. Then
 \[
 E:=(V\times\mathbb R)\cap(\mathbb R\times[0,1])
@@ -70,5 +91,11 @@ Hence $V$ would be Lebesgue measurable, contradicting its choice. Therefore
 \[
 \boxed{A+B=V\times\mathbb R\text{ is not Lebesgue measurable}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

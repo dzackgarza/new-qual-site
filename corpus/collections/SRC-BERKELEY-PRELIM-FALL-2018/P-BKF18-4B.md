@@ -45,10 +45,16 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. The integrand has a removable singularity at $0$, is integrable
+
+::: pf
+
+::: {.pf-step #s1}
+
+The integrand has a removable singularity at $0$, is integrable
 on $\RR$, and is even.
 
-::: {.proof}
+::: pf-proof
+
 The Taylor expansion
 $$
 \sin x
@@ -74,9 +80,14 @@ $$
 so the integral converges absolutely at infinity.
 
 Finally, both $x-\sin x$ and $x^3$ are odd, so their quotient is even.
+
 :::
 
-<1>2. Put
+:::
+
+::: {.pf-step #s2}
+
+Put
 $$
 J
 \coloneqq
@@ -90,7 +101,8 @@ J
 \int_0^\infty\frac{1-\cos x}{x^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Perform integration by parts on $[\varepsilon,R]$ with
 $$
 u=x-\sin x,
@@ -127,16 +139,22 @@ O(\varepsilon)
 \to0.
 $$
 Taking the limits gives the claim.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_0^\infty\frac{1-\cos x}{x^2}\,dx
 =
 \int_0^\infty\frac{\sin x}{x}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Again integrate by parts on $[\varepsilon,R]$, now with
 $$
 u=1-\cos x,
@@ -167,21 +185,27 @@ $$
 O(\varepsilon^2).
 $$
 Taking limits proves the identity.
+
 :::
 
-<1>4. The half-line integral is
+:::
+
+::: {.pf-step #s4}
+
+The half-line integral is
 $$
 J=\frac{\pi}{4}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The standard Dirichlet integral gives
 $$
 \int_0^\infty\frac{\sin x}{x}\,dx
 =
 \frac{\pi}{2}.
 $$
-Combining this with steps <1>2--<1>3 yields
+Combining this with steps [](#s2){.pf-ref} and [](#s3){.pf-ref} yields
 $$
 J
 =
@@ -189,9 +213,14 @@ J
 =
 \frac{\pi}{4}.
 $$
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 \int_{-\infty}^{\infty}
@@ -201,20 +230,27 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>1 the integrand is even, so
+::: pf-proof
+
+By step [](#s1){.pf-ref} the integrand is even, so
 $$
 \int_{-\infty}^{\infty}
 \frac{x-\sin x}{x^3}\,dx
 =
 2J.
 $$
-Now apply step <1>4.
+Now apply step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

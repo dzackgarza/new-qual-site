@@ -35,35 +35,53 @@ Show that if $j<0$, then $c_j=0$.
 :::
 
 ::: {.solution}
-<1>1. Choose $M>0$ such that
+
+::: pf
+
+::: pf-step
+
+Choose $M>0$ such that
 $$
 \abs{f(z)}\le M
 $$
 for all $0<\abs{z}<\varepsilon$.
 
-::: {.proof}
+::: pf-proof
+
 Such an $M$ exists by the boundedness hypothesis.
+
 :::
 
-<1>2. For every integer $j$ and every $0<r<\varepsilon$,
+:::
+
+::: {.pf-step #s2}
+
+For every integer $j$ and every $0<r<\varepsilon$,
 $$
 c_j
 =\frac1{2\pi i}
 \int_{\abs{z}=r}z^{-j-1}f(z)\,dz.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the Laurent coefficient formula applied on the circle
 $\abs{z}=r$, which lies in the annulus of analyticity.
+
 :::
 
-<1>3. For every integer $j$ and every $0<r<\varepsilon$,
+:::
+
+::: {.pf-step #s3}
+
+For every integer $j$ and every $0<r<\varepsilon$,
 $$
 \abs{c_j}\le M r^{-j}.
 $$
 
-::: {.proof}
-By step <1>2 and the ML estimate,
+::: pf-proof
+
+By step [](#s2){.pf-ref} and the ML estimate,
 $$
 \begin{aligned}
 \abs{c_j}
@@ -73,22 +91,34 @@ $$
 &=Mr^{-j}.
 \end{aligned}
 $$
+
 :::
 
-<1>4. If $j<0$, then $c_j=0$.
+:::
 
-::: {.proof}
-For fixed $j<0$, the exponent $-j$ is positive. Step <1>3 holds for
+::: {.pf-step #s4}
+
+If $j<0$, then $c_j=0$.
+
+::: pf-proof
+
+For fixed $j<0$, the exponent $-j$ is positive. Step [](#s3){.pf-ref} holds for
 every $0<r<\varepsilon$, so letting $r\to0^+$ gives
 $$
 0\le\abs{c_j}\le Mr^{-j}\longrightarrow0.
 $$
 Therefore $\abs{c_j}=0$, hence $c_j=0$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves that every negative Laurent coefficient vanishes.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves that every negative Laurent coefficient vanishes.
+
+:::
+
+:::
+
 :::

@@ -26,24 +26,46 @@ Show that $\RR$ is not homeomorphic to $[0, \infty)$.
 :::
 
 ::: {.solution}
-<1>1. Suppose that a homeomorphism
+
+::: pf
+
+::: pf-step
+
+Suppose that a homeomorphism
 $$
 f:[0,\infty)\longrightarrow\mathbb R
 $$
 exists, and set $y=f(0)$.
 
-<1>2. Restricting $f$ gives a homeomorphism
+:::
+
+::: pf-step
+
+Restricting $f$ gives a homeomorphism
 $$
 (0,\infty)=[0,\infty)\setminus\{0\}
 \longrightarrow
 \mathbb R\setminus\{y\}.
 $$
 
-<1>3. The space $(0,\infty)$ is connected, whereas
+:::
+
+::: pf-step
+
+The space $(0,\infty)$ is connected, whereas
 $$
 \mathbb R\setminus\{y\}=(-\infty,y)\sqcup(y,\infty)
 $$
 is disconnected.
 
-<1>4. This contradicts invariance of connectedness under homeomorphism. Therefore $\mathbb R$ is not homeomorphic to $[0,\infty)$.
+:::
+
+::: pf-step
+
+This contradicts invariance of connectedness under homeomorphism. Therefore $\mathbb R$ is not homeomorphic to $[0,\infty)$.
+
+:::
+
+:::
+
 :::

@@ -47,11 +47,17 @@ Assume that $A_n$ is simple for every $n\ge5$.
 ::: {.solution}
 Fix $n\ge5$.
 
-<1>1. A proper subgroup $H<A_n$ of index $m$ would force
+::: pf
+
+::: {.pf-step #s1}
+
+A proper subgroup $H<A_n$ of index $m$ would force
 \[
 |A_n|\mid m!.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 \[
 [A_n:H]=m<\infty.
@@ -71,15 +77,22 @@ Lagrange's theorem therefore gives
 \[
 |A_n|\mid |S_m|=m!.
 \]
+
 :::
 
-<1>2. No subgroup of $A_n$ has index strictly smaller than $n$.
-::: {.proof}
+:::
+
+::: pf-step
+
+No subgroup of $A_n$ has index strictly smaller than $n$.
+
+::: pf-proof
+
 Suppose for contradiction that $H<A_n$ has index
 \[
 m=[A_n:H]<n.
 \]
-Then <1>1 gives
+Then step [](#s1){.pf-ref} gives
 \[
 |A_n|\mid m!.
 \]
@@ -92,10 +105,17 @@ because $n\ge5$, while
 m!\le(n-1)!.
 \]
 Hence $|A_n|>m!$, so the positive integer $|A_n|$ cannot divide $m!$, a contradiction.
+
 :::
 
-<1>3. The natural action of $A_n$ on $\{1,\ldots,n\}$ is transitive.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The natural action of $A_n$ on $\{1,\ldots,n\}$ is transitive.
+
+::: pf-proof
+
 Let $i,j\in\{1,\ldots,n\}$ with $i\ne j$.
 Since $n\ge5$, choose $k\notin\{i,j\}$.
 The $3$-cycle
@@ -104,16 +124,23 @@ The $3$-cycle
 \]
 is even, hence lies in $A_n$, and sends $i$ to $j$.
 Thus any point can be sent to any other point, so the action is transitive.
+
 :::
 
-<1>4. A point stabilizer in $A_n$ has index $n$.
-::: {.proof}
+:::
+
+::: pf-step
+
+A point stabilizer in $A_n$ has index $n$.
+
+::: pf-proof
+
 Fix $i\in\{1,\ldots,n\}$ and let
 \[
 H=(A_n)_i
 =\{\sigma\in A_n:\sigma(i)=i\}.
 \]
-By <1>3, the orbit of $i$ has cardinality $n$.
+By step [](#s3){.pf-ref}, the orbit of $i$ has cardinality $n$.
 Orbit-stabilizer therefore gives
 \[
 [A_n:H]
@@ -121,5 +148,11 @@ Orbit-stabilizer therefore gives
 =n.
 \]
 Thus $A_n$ has a subgroup of index exactly $n$.
+
 :::
+
+:::
+
+:::
+
 :::

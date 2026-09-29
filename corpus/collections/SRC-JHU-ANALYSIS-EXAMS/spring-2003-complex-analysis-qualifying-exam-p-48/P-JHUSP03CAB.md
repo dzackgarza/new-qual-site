@@ -42,8 +42,14 @@ $$
 $$
 holds.
 
-<1>1. Dividing by the fixed zero produces a holomorphic disk map.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Dividing by the fixed zero produces a holomorphic disk map.
+
+::: pf-proof
+
 Because $f(0)=0$, define
 $$
 g(z)=\begin{cases}f(z)/z,&z\ne0,\\ f'(0),&z=0.\end{cases}
@@ -54,10 +60,17 @@ $|g(z)|\le1$ throughout the disk. Since $w\ne0$ and $f(w)=0$, one has
 $g(w)=0$. Thus $g$ is not a constant of modulus one. The maximum modulus
 principle therefore gives $|g(z)|<1$ for every $z\in\Delta$; hence
 $g:\Delta\to\Delta$ is a holomorphic self-map.
+
 :::
 
-<1>2. Schwarz-Pick gives a stronger inequality than required.
-::: {.proof}
+:::
+
+::: pf-step
+
+Schwarz-Pick gives a stronger inequality than required.
+
+::: pf-proof
+
 Apply the Schwarz-Pick inequality [@SS03] to $g$ at the two points $0$ and $w$:
 $$
 \left|\frac{g(0)-g(w)}{1-\overline{g(w)}g(0)}\right|
@@ -73,5 +86,11 @@ $$
 \frac{M}{1+M}\le M\le |w|.
 $$
 This is the claimed estimate.
+
 :::
+
+:::
+
+:::
+
 :::

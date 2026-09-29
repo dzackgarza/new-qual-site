@@ -21,30 +21,49 @@ Diagonalize the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & -1 \end{bmatrix}$ and u
 :::
 
 ::: {.solution}
-<1>1. The characteristic polynomial of $A$ is
+
+::: pf
+
+::: pf-step
+
+The characteristic polynomial of $A$ is
 \[
 \chi_A(\lambda)=\det(\lambda I-A)=\lambda^2-9.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Directly,
 \[
 \det\begin{bmatrix}\lambda-1&-2\\-4&\lambda+1\end{bmatrix}
 =(\lambda-1)(\lambda+1)-8
 =\lambda^2-9.
 \]
+
 :::
 
-<1>2. The eigenvalues are $3$ and $-3$, with eigenvectors
+:::
+
+::: {.pf-step #s2}
+
+The eigenvalues are $3$ and $-3$, with eigenvectors
 \[
 v_+=\begin{bmatrix}1\\1\end{bmatrix},
 \qquad
 v_-=\begin{bmatrix}1\\-2\end{bmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $\lambda=3$, the equation $(A-3I)v=0$ gives $-2x+2y=0$, hence $y=x$. For $\lambda=-3$, the equation $(A+3I)v=0$ gives $4x+2y=0$, hence $y=-2x$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 P=\begin{bmatrix}1&1\\1&-2\end{bmatrix},
 \qquad
@@ -54,11 +73,23 @@ satisfy
 \[
 A=PDP^{-1}.
 \]
-::: {.proof}
-The columns of $P$ are the two eigenvectors from <1>2. Since they correspond to distinct eigenvalues, they are linearly independent, so $P$ is invertible. The relation $AP=PD$ is exactly the eigenvector equations, and hence $A=PDP^{-1}$.
+
+::: pf-proof
+
+The columns of $P$ are the two eigenvectors from step [](#s2){.pf-ref}. Since they correspond to distinct eigenvalues, they are linearly independent, so $P$ is invertible. The relation $AP=PD$ is exactly the eigenvector equations, and hence $A=PDP^{-1}$.
+
 :::
 
-<1>4. Using the diagonal form,
+:::
+
+::: pf-step
+
+Using the diagonal form,
+
+:::
+
+:::
+
 \[
 A^2=PD^2P^{-1}=P(9I_2)P^{-1}=9I_2
 =\begin{bmatrix}9&0\\0&9\end{bmatrix}.

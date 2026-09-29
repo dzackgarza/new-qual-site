@@ -33,8 +33,15 @@ Prove that $\lim_{n \to \infty} \|f_n\|_1 = 0$.
 :::
 
 ::: {.solution}
-<1>1. Build a single integrable dominating function.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Build a single integrable dominating function.
+
+::: pf-proof
+
 Define
 \[
 g_n:=\max(|f_1|,\ldots,|f_n|).
@@ -59,10 +66,17 @@ By the Monotone Convergence Theorem,
 \le M.
 \]
 Thus $g\in L^1(\mathbb R)$.
+
 :::
 
-<1>2. Apply dominated convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply dominated convergence.
+
+::: pf-proof
+
 For every $n$,
 \[
 |f_n|\le g,
@@ -75,5 +89,11 @@ Hence
 \[
 \boxed{\|f_n\|_1\to0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

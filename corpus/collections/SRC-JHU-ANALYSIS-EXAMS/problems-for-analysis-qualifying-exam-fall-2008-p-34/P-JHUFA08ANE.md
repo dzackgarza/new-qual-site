@@ -27,15 +27,27 @@ have in the unit disk $D = \{ x \in \mathbb { C } : | z | < 1 \} ?$ Justify your
 :::
 
 ::: {.solution}
-<1>1. On $\abs z=1$, $\abs{e^z}<\abs{-3z^7}$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+On $\abs z=1$, $\abs{e^z}<\abs{-3z^7}$.
+
+::: pf-proof
+
 $\abs{e^z}=e^{\Re z}\le e<3=\abs{-3z^7}$.
+
 :::
 
-<1>2. Q.E.D.
-
-::: {.proof}
-By step <1>1 and Rouché's theorem, $e^z-3z^7$ has as many zeros in $\abs z<1$ as $-3z^7$, counted with multiplicity, namely $\boxed{7}$. Counted without multiplicity the answer is the same: at a zero, $e^z=3z^7$ and the derivative $e^z-21z^6=3z^7-21z^6=3z^6(z-7)$ is nonzero for $0<\abs z<1$, and $z=0$ is not a zero.
 :::
+
+::: pf-qed
+
+By step [](#s1){.pf-ref} and Rouché's theorem, $e^z-3z^7$ has as many zeros in $\abs z<1$ as $-3z^7$, counted with multiplicity, namely $\boxed{7}$. Counted without multiplicity the answer is the same: at a zero, $e^z=3z^7$ and the derivative $e^z-21z^6=3z^7-21z^6=3z^6(z-7)$ is nonzero for $0<\abs z<1$, and $z=0$ is not a zero.
+
+:::
+
+:::
+
 :::

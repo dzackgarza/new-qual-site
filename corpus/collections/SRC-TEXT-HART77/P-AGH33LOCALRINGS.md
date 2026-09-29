@@ -39,13 +39,18 @@ Show that for each $P \in X$, $\phi$ induces a homomorphism of local rings $\phi
 For a point $P\in X$, write $Q=\phi(P)$.
 A germ in $\mco_{Q,Y}$ will be represented by a regular function $f$ on an open neighborhood $U$ of $Q$.
 
-<1>1. The rule
+::: pf
+
+::: {.pf-step #s1}
+
+The rule
 $$
 \phi_P^*([f]_Q)=[f\circ\phi]_P
 $$
 defines a homomorphism of local rings $\phi_P^*: \mco_{Q,Y}\to\mco_{P,X}$, proving (a).
 
-::: {.proof}
+::: pf-proof
+
 Because $\phi$ is a morphism, $f\circ\phi$ is regular on the open neighborhood $\phi^{-1}(U)$ of $P$.
 If two representatives $f$ on $U$ and $g$ on $V$ determine the same germ at $Q$, then they agree on some open neighborhood $W\subseteq U\cap V$ of $Q$.
 Their pullbacks therefore agree on the neighborhood $\phi^{-1}(W)$ of $P$, so the displayed rule is independent of the representative.
@@ -61,11 +66,17 @@ $$
 (\phi_P^*)^{-1}(\mathfrak m_{P,X})=\mathfrak m_{Q,Y}.
 $$
 Thus $\phi_P^*$ is a local homomorphism.
+
 :::
 
-<1>2. If $\phi$ is an isomorphism, then it is a homeomorphism and every $\phi_P^*$ is an isomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $\phi$ is an isomorphism, then it is a homeomorphism and every $\phi_P^*$ is an isomorphism.
+
+::: pf-proof
+
 Let $\psi=\phi^{-1}$ be the inverse morphism.
 The underlying continuous maps $\phi$ and $\psi$ are inverse to one another, hence $\phi$ is a homeomorphism.
 Pullback of germs is functorial under composition, so
@@ -75,11 +86,17 @@ $$
 \phi_P^*\circ\psi_Q^*=\operatorname{id}_{\mco_{P,X}}.
 $$
 Hence $\phi_P^*$ is an isomorphism with inverse $\psi_Q^*$.
+
 :::
 
-<1>3. Conversely, if $\phi$ is a homeomorphism and every $\phi_P^*$ is an isomorphism, then the inverse homeomorphism $\psi=\phi^{-1}:Y\to X$ is a morphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Conversely, if $\phi$ is a homeomorphism and every $\phi_P^*$ is an isomorphism, then the inverse homeomorphism $\psi=\phi^{-1}:Y\to X$ is a morphism.
+
+::: pf-proof
+
 It is enough to check locally that pullback by $\psi$ preserves regular functions.
 Let $Q\in Y$, put $P=\psi(Q)$, and let $f$ be regular on an open neighborhood $U$ of $P$.
 Because $\phi_P^*$ is surjective, there is a germ $[g]_Q\in\mco_{Q,Y}$ with
@@ -101,22 +118,34 @@ $$
 so $f\circ\psi$ is regular near $Q$.
 Since $Q$ and $f$ were arbitrary, $\psi$ is a morphism.
 Thus $\phi$ is an isomorphism, completing (b).
+
 :::
 
-<1>4. If $\phi(X)$ is dense in $Y$, then the image of every nonempty open subset of $X$ is dense in $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+If $\phi(X)$ is dense in $Y$, then the image of every nonempty open subset of $X$ is dense in $Y$.
+
+::: pf-proof
+
 Let $U\subseteq X$ be nonempty and open.
 Since a variety is irreducible, $U$ is dense in $X$.
 Let $C=\overline{\phi(U)}\subseteq Y$.
 Then $\phi^{-1}(C)$ is a closed subset of $X$ containing $U$, so density of $U$ gives $\phi^{-1}(C)=X$.
 Hence $\phi(X)\subseteq C$.
 By hypothesis $\phi(X)$ is dense in $Y$, and therefore $C=Y$.
+
 :::
 
-<1>5. Under the hypothesis of (c), the map $\phi_P^*$ is injective for every $P\in X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Under the hypothesis of (c), the map $\phi_P^*$ is injective for every $P\in X$.
+
+::: pf-proof
+
 Fix $P\in X$, put $Q=\phi(P)$, and suppose $[f]_Q\in\mco_{Q,Y}$ satisfies
 $$
 \phi_P^*([f]_Q)=0.
@@ -127,15 +156,21 @@ $$
 U\subseteq\phi^{-1}(V)
 $$
 of $P$ on which $f\circ\phi=0$.
-By step <1>4, $\phi(U)$ is dense in $Y$, hence dense in the open subspace $V$.
+By step [](#s4){.pf-ref}, $\phi(U)$ is dense in $Y$, hence dense in the open subspace $V$.
 The zero set of the regular function $f$ is closed in $V$ and contains $\phi(U)$, so it is all of $V$.
 Thus $f=0$ on $V$, whence $[f]_Q=0$.
 Therefore $\phi_P^*$ is injective.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), steps <1>2--<1>3 prove (b), and steps <1>4--<1>5 prove (c).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (b), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (c).
+
+:::
+
+:::
+
 :::

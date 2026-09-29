@@ -48,7 +48,11 @@ D&E&F
 $$
 and write the quadratic form as $q(x,y,z)$.
 
-<1>1. If $A\neq0$ and $\Delta_2\neq0$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $A\neq0$ and $\Delta_2\neq0$, then
 $$
 \begin{aligned}
 q(x,y,z)
@@ -66,7 +70,8 @@ y+\frac{AE-BD}{\Delta_2}z
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
+
 Completing the square in $x$ gives
 $$
 \begin{aligned}
@@ -102,9 +107,14 @@ ACF-AE^2-B^2F+2BDE-CD^2
 =\Delta_3.
 $$
 Hence the remaining coefficient is $\Delta_3/\Delta_2$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 A>0,
 \qquad
@@ -114,7 +124,8 @@ A>0,
 $$
 then $q$ is positive definite.
 
-::: {.proof}
+::: pf-proof
+
 Under these inequalities, all three coefficients
 $$
 A,
@@ -123,7 +134,7 @@ A,
 \qquad
 \frac{\Delta_3}{\Delta_2}
 $$
-in step <1>1 are positive. The three linear forms occurring there arise
+in step [](#s1){.pf-ref} are positive. The three linear forms occurring there arise
 successively as
 $$
 x+\frac BAy+\frac DAz,
@@ -133,23 +144,35 @@ y+\frac{AE-BD}{\Delta_2}z,
 z.
 $$
 If all three vanished, then $z=0$, then $y=0$, then $x=0$. Thus for every
-nonzero $(x,y,z)$ at least one square in step <1>1 is positive, and
+nonzero $(x,y,z)$ at least one square in step [](#s1){.pf-ref} is positive, and
 therefore $q(x,y,z)>0$.
+
 :::
 
-<1>3. If $q$ is positive definite, then $A>0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $q$ is positive definite, then $A>0$.
+
+::: pf-proof
+
 Evaluating at $(1,0,0)$ gives
 $$
 A=q(1,0,0)>0.
 $$
+
 :::
 
-<1>4. If $q$ is positive definite, then $\Delta_2>0$.
+:::
 
-::: {.proof}
-By step <1>3, $A>0$. Evaluate $q$ at the nonzero vector
+::: {.pf-step #s4}
+
+If $q$ is positive definite, then $\Delta_2>0$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $A>0$. Evaluate $q$ at the nonzero vector
 $$
 \left(-\frac BA,1,0\right).
 $$
@@ -164,12 +187,18 @@ C-\frac{B^2}{A}
 \frac{\Delta_2}{A}.
 $$
 Since $A>0$, this implies $\Delta_2>0$.
+
 :::
 
-<1>5. If $q$ is positive definite, then $\Delta_3>0$.
+:::
 
-::: {.proof}
-By steps <1>3 and <1>4, the identity in step <1>1 applies. Set
+::: {.pf-step #s5}
+
+If $q$ is positive definite, then $\Delta_3>0$.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the identity in step [](#s1){.pf-ref} applies. Set
 $$
 z=1,
 \qquad
@@ -178,14 +207,19 @@ y=-\frac{AE-BD}{\Delta_2},
 x=-\frac BAy-\frac DA.
 $$
 This is a nonzero vector because $z=1$, and the first two squares in
-step <1>1 vanish. Hence positive definiteness gives
+step [](#s1){.pf-ref} vanish. Hence positive definiteness gives
 $$
 0<q(x,y,1)=\frac{\Delta_3}{\Delta_2}.
 $$
 Since $\Delta_2>0$, it follows that $\Delta_3>0$.
+
 :::
 
-<1>6. Therefore $q$ is positive definite if and only if
+:::
+
+::: {.pf-step #s6}
+
+Therefore $q$ is positive definite if and only if
 $$
 \boxed{
 A>0,
@@ -196,14 +230,21 @@ A>0,
 }.
 $$
 
-::: {.proof}
-Step <1>2 proves sufficiency. Steps <1>3--<1>5 prove necessity.
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves sufficiency. Steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove necessity.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-The definitions of $\Delta_2$ and $\Delta_3$ make step <1>6 exactly the
+::: pf-qed
+
+The definitions of $\Delta_2$ and $\Delta_3$ make step [](#s6){.pf-ref} exactly the
 three determinant inequalities in the problem.
+
 :::
+
+:::
+
 :::

@@ -33,13 +33,18 @@ This shows in particular that the birational map making $X$ birational to a hype
 Let $K=k(X)$ be the function field of $X$.
 We use that $k$ is algebraically closed, hence perfect, so every finitely generated extension of $k$ is separably generated [@Har10a, Theorem I.4.8A].
 
-<1>1. After a projective linear change of coordinates, the rational functions
+::: pf
+
+::: {.pf-step #s1}
+
+After a projective linear change of coordinates, the rational functions
 $$
 u_i=\frac{x_i}{x_0}\qquad(1\le i\le r+1)
 $$
 generate $K$ over $k$.
 
-::: {.proof}
+::: pf-proof
+
 Choose a hyperplane not containing $X$ and call its equation $x_0=0$.
 On the dense affine open $X\cap D_+(x_0)$, the coordinate ratios $x_i/x_0$, $1\le i\le n$, generate $K$ as a field over $k$.
 
@@ -62,9 +67,14 @@ Hence primitive linear combinations form a nonempty open subset of the relevant 
 Finally, the condition that the last coordinate point $[0:\cdots:0:1]$ lie outside the transformed $X$ is also open and nonempty, because $X\subsetneq\PP^n$.
 The parameter space of projective coordinate systems is irreducible, so these finitely many nonempty open conditions can be imposed simultaneously.
 We henceforth use such a coordinate system.
+
 :::
 
-<1>2. Projection from
+:::
+
+::: {.pf-step #s2}
+
+Projection from
 $$
 P=[0:\cdots:0:1]\notin X
 $$
@@ -73,7 +83,8 @@ $$
 \pi:X\longrightarrow X'\coloneqq\overline{\pi(X)}\subseteq H.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Projection from $P$ is
 $$
 [x_0:\cdots:x_n]\longmapsto[x_0:\cdots:x_{n-1}].
@@ -81,11 +92,17 @@ $$
 Its only indeterminacy point is $P$.
 Since $P\notin X$, its restriction to $X$ is everywhere defined and is a morphism, by the coordinate description of projection in Exercise I.3.14.
 The image of the irreducible space $X$ is irreducible, so its closure $X'$ is a projective variety.
+
 :::
 
-<1>3. The induced map of function fields $k(X')\hookrightarrow K$ is an isomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The induced map of function fields $k(X')\hookrightarrow K$ is an isomorphism.
+
+::: pf-proof
+
 On the dense open set $x_0\ne0$, the projection retains the affine coordinate functions
 $$
 u_i=x_i/x_0\qquad(1\le i\le n-1).
@@ -95,33 +112,51 @@ $$
 k(u_1,\ldots,u_{n-1})\subseteq K.
 $$
 Because $n\ge r+2$, one has $r+1\le n-1$.
-Step <1>1 shows that the first $r+1$ of these retained functions already generate $K$.
+Step [](#s1){.pf-ref} shows that the first $r+1$ of these retained functions already generate $K$.
 Hence
 $$
 k(X')=k(u_1,\ldots,u_{n-1})=K.
 $$
+
 :::
 
-<1>4. The morphism $\pi:X\to X'$ is birational.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The morphism $\pi:X\to X'$ is birational.
+
+::: pf-proof
+
 A dominant morphism of varieties is birational exactly when it induces an isomorphism of function fields [@Har10a, Proposition I.4.4].
-Dominance holds by the definition of $X'$ as the closure of the image, and step <1>3 gives the required function-field isomorphism.
+Dominance holds by the definition of $X'$ as the closure of the image, and step [](#s3){.pf-ref} gives the required function-field isomorphism.
 Thus the chosen projection is birational onto its image.
+
 :::
 
-<1>5. Repeating the construction reduces the ambient projective dimension to $r+1$.
+:::
 
-::: {.proof}
-If the current ambient dimension is greater than $r+1$, step <1>4 replaces the variety birationally by one in a projective space of dimension one less.
+::: {.pf-step #s5}
+
+Repeating the construction reduces the ambient projective dimension to $r+1$.
+
+::: pf-proof
+
+If the current ambient dimension is greater than $r+1$, step [](#s4){.pf-ref} replaces the variety birationally by one in a projective space of dimension one less.
 Its dimension remains $r$, because birational varieties have the same function field and therefore the same transcendence degree over $k$.
 After finitely many repetitions the image lies in $\PP^{r+1}$, where an $r$-dimensional projective variety has codimension one and is therefore a hypersurface by [[P-AGH28HYPERSURFACE]].
 This proves the final assertion in the statement.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 construct the required point, projection, and birational morphism; step <1>5 gives the stated finite iteration to a hypersurface.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} construct the required point, projection, and birational morphism; step [](#s5){.pf-ref} gives the stated finite iteration to a hypersurface.
+
+:::
+
+:::
+
 :::

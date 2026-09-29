@@ -33,19 +33,30 @@ Let $f$ be a positive $C^2$ function on $(0,\infty)$ such that $f'\le0$ and $f''
 :::
 
 ::: {.solution}
-<1>1. The limit
+
+::: pf
+
+::: {.pf-step #s1}
+
+The limit
 $$
 L=\lim_{t\to\infty}f(t)
 $$
 exists and is finite.
 
-::: {.proof}
+::: pf-proof
+
 Since $f'\leq0$, the function $f$ is nonincreasing. Since $f$ is
 positive, it is bounded below by $0$. Hence the monotone convergence
 theorem for real-valued functions gives a finite limit $L\geq0$.
+
 :::
 
-<1>2. There is a constant $M>0$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is a constant $M>0$ such that
 $$
 \abs{f'(s)-f'(t)}
 \leq
@@ -53,7 +64,8 @@ M\abs{s-t}
 $$
 for all $s,t>0$.
 
-::: {.proof}
+::: pf-proof
+
 Choose $M>0$ with
 $$
 \abs{f''(u)}\leq M
@@ -64,16 +76,22 @@ $$
 \leq
 M\abs{s-t}.
 $$
+
 :::
 
-<1>3. For every $\varepsilon>0$, there exists $T>0$ such that
+:::
+
+::: {.pf-step #s3}
+
+For every $\varepsilon>0$, there exists $T>0$ such that
 $$
 t\geq T
 \quad\Longrightarrow\quad
 f'(t)>-\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose not. Then for some $\varepsilon>0$ there are arbitrarily large
 $t$ such that
 $$
@@ -83,7 +101,7 @@ Set
 $$
 \delta=\frac{\varepsilon}{2M}>0.
 $$
-For every $s\in[t,t+\delta]$, step <1>2 gives
+For every $s\in[t,t+\delta]$, step [](#s2){.pf-ref} gives
 $$
 f'(s)
 \leq
@@ -104,30 +122,42 @@ f(t)-f(t+\delta)
 \end{aligned}
 $$
 The right-hand side is a fixed positive number, independent of $t$.
-But step <1>1 gives
+But step [](#s1){.pf-ref} gives
 $$
 f(t)-f(t+\delta)\longrightarrow L-L=0
 $$
 as $t\to\infty$, a contradiction.
+
 :::
 
-<1>4. The derivative satisfies
+:::
+
+::: {.pf-step #s4}
+
+The derivative satisfies
 $$
 \boxed{\lim_{t\to\infty}f'(t)=0}.
 $$
 
-::: {.proof}
-By hypothesis, $f'(t)\leq0$ for every $t$. Step <1>3 says that for
+::: pf-proof
+
+By hypothesis, $f'(t)\leq0$ for every $t$. Step [](#s3){.pf-ref} says that for
 every $\varepsilon>0$, all sufficiently large $t$ satisfy
 $$
 -\varepsilon<f'(t)\leq0.
 $$
 This is exactly $f'(t)\to0$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the desired conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the desired conclusion.
+
+:::
+
+:::
+
 :::

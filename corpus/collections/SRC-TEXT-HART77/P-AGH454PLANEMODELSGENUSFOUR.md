@@ -54,14 +54,19 @@ $$
 where $Q$ is the unique quadric containing $C$.  The curve has two
 $g^1_3$'s when $Q$ is smooth and one when $Q$ is a rank-$3$ quadric cone.
 
-<1>1. For a general point $P\in C$, projection from $P$ is the morphism
+::: pf
+
+::: {.pf-step #s1}
+
+For a general point $P\in C$, projection from $P$ is the morphism
 defined by
 $$
 \boxed{|K-P|:X\longrightarrow\PP^2,}
 $$
 and it is birational onto a plane quintic.
 
-::: {.proof}
+::: pf-proof
+
 Hyperplanes in $\PP^3$ through $P$ restrict on the canonical curve to
 canonical divisors containing $P$.  Removing that fixed point gives the
 complete linear system $|K-P|$.  Since
@@ -110,13 +115,19 @@ $$
 $$
 so its map is immersive at $P$.  The complement of these finite exceptional
 sets is nonempty, and we choose $P$ there.
+
 :::
 
-<1>2. A line through $P$ identifies two distinct points of
+:::
+
+::: {.pf-step #s2}
+
+A line through $P$ identifies two distinct points of
 $C\setminus\{P\}$ under this projection if and only if it is a ruling line
 of $Q$ through $P$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose distinct
 $$
 A,B\in C\setminus\{P\}
@@ -146,17 +157,23 @@ L\cap C=P+A+B
 $$
 with $A,B$ distinct from each other and from $P$.  Projection from $P$
 contracts $L$, so it identifies $A$ and $B$.
+
 :::
 
-<1>3. Assume $Q$ is smooth.  Then the plane quintic of step <1>1 has exactly
+:::
+
+::: {.pf-step #s3}
+
+Assume $Q$ is smooth.  Then the plane quintic of step [](#s1){.pf-ref} has exactly
 two singularities, both nodes.
 
-::: {.proof}
+::: pf-proof
+
 A smooth quadric
 $$
 Q\cong\PP^1\times\PP^1
 $$
-has exactly two ruling lines through $P$.  By step <1>2 they give two
+has exactly two ruling lines through $P$.  By step [](#s2){.pf-ref} they give two
 identified residual pairs
 $$
 A_i,B_i,
@@ -194,12 +211,18 @@ $$
 $$
 Hence there are no further singularities.  This proves the forward
 assertion in part (a).
+
 :::
 
-<1>4. Conversely, the normalization of a plane quintic with two nodes has
+:::
+
+::: {.pf-step #s4}
+
+Conversely, the normalization of a plane quintic with two nodes has
 two distinct $g^1_3$'s.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \nu:X\longrightarrow C'\subseteq\PP^2
@@ -253,12 +276,18 @@ $$
 that is, a $g^1_2$ on $X$.  Then $X$ would be hyperelliptic, contrary to
 the standing hypothesis.  Hence the two degree-$3$ pencils are distinct.
 This proves the converse in part (a).
+
 :::
 
-<1>5. Assume $Q$ is a rank-$3$ quadric cone.  Then the plane quintic of
-step <1>1 has exactly one singular point, and it is a tacnode.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Assume $Q$ is a rank-$3$ quadric cone.  Then the plane quintic of
+step [](#s1){.pf-ref} has exactly one singular point, and it is a tacnode.
+
+::: pf-proof
+
 Through a smooth point $P$ of a quadric cone there is exactly one ruling
 line
 $$
@@ -268,7 +297,7 @@ For general $P$ write
 $$
 L\cap C=P+A+B
 $$
-with $A,B$ distinct.  Step <1>2 says that projection identifies precisely
+with $A,B$ distinct.  Step [](#s2){.pf-ref} says that projection identifies precisely
 this residual pair.
 
 The crucial difference from the smooth-quadric case is that the tangent
@@ -276,7 +305,7 @@ plane to a quadric cone is constant along a ruling.  Thus
 $$
 T_AQ=T_BQ.
 $$
-As in step <1>3, the tangent line to the projected branch coming from $A$
+As in step [](#s3){.pf-ref}, the tangent line to the projected branch coming from $A$
 is obtained by projecting the plane spanned by $P$ and $T_AC$, namely
 $T_AQ$; similarly the tangent line of the branch coming from $B$ is obtained
 from $T_BQ$.  The equality above therefore says that the two smooth branches
@@ -296,12 +325,18 @@ $$
 y^2=x^4.
 $$
 This proves the first assertion of part (b).
+
 :::
 
-<1>6. If $X$ has only one $g^1_3$, then it has no birational plane model of
+:::
+
+::: {.pf-step #s6}
+
+If $X$ has only one $g^1_3$, then it has no birational plane model of
 degree less than $6$ whose only singularities are nodes.
 
-::: {.proof}
+::: pf-proof
+
 Let an integral nodal plane model have degree $d$ and $r$ nodes.  Its
 normalization has genus
 $$
@@ -327,15 +362,21 @@ so
 $$
 r=2.
 $$
-By step <1>4, the normalization of such a two-nodal quintic has two distinct
+By step [](#s4){.pf-ref}, the normalization of such a two-nodal quintic has two distinct
 $g^1_3$'s.  This contradicts the hypothesis that $X$ has only one.
 Therefore every nodal plane model has degree at least $6$.
+
 :::
 
-<1>7. Every such $X$ has a degree-$6$ plane model whose only singularities
+:::
+
+::: {.pf-step #s7}
+
+Every such $X$ has a degree-$6$ plane model whose only singularities
 are nodes.
 
-::: {.proof}
+::: pf-proof
+
 Use the canonical embedding
 $$
 C\subseteq\PP^3.
@@ -353,18 +394,24 @@ is birational onto a plane curve whose only singularities are nodes.
 Because the centre does not lie on $C$, projection preserves the
 hyperplane bundle, so the plane image still has degree $6$.
 
-Combining this with step <1>6 shows that
+Combining this with step [](#s6){.pf-ref} shows that
 $$
 \boxed{6}
 $$
 is the least possible degree of a nodal plane model.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove part (a).  Step <1>5 constructs the tacnodal quintic
-in the one-$g^1_3$ case, and steps <1>6--<1>7 prove that the least degree of
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a).  Step [](#s5){.pf-ref} constructs the tacnodal quintic
+in the one-$g^1_3$ case, and steps [](#s6){.pf-ref} and [](#s7){.pf-ref} prove that the least degree of
 a plane model having only nodes is $6$.
+
 :::
+
+:::
+
 :::

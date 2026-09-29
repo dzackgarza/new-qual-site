@@ -32,8 +32,14 @@ Show that if $f \in K[x]$ is irreducible, then $f$ divides $x^{q^n} - x$ in $K[x
 ::: {.solution}
 Let $d=\deg f$ and let $\alpha$ be a root of $f$ in an algebraic closure $\overline K$.
 
-<1>1. The field $K(\alpha)$ has $q^d$ elements.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The field $K(\alpha)$ has $q^d$ elements.
+
+::: pf-proof
+
 Because $f$ is irreducible of degree $d$, it is the minimal polynomial of $\alpha$ over $K$, so
 \[
 [K(\alpha):K]=d.
@@ -43,14 +49,21 @@ Thus
 \[
 K(\alpha)\cong \mathbf F_{q^d}.
 \]
+
 :::
 
-<1>2. We have
+:::
+
+::: {.pf-step #s2}
+
+We have
 \[
 f\mid x^{q^n}-x
 \]
 if and only if $\alpha\in \mathbf F_{q^n}$.
-::: {.proof}
+
+::: pf-proof
+
 The roots of $x^{q^n}-x$ in $\overline K$ are exactly the elements of the unique field $\mathbf F_{q^n}\subset\overline K$.
 The derivative of $x^{q^n}-x$ is $-1$, so all its roots are simple.
 
@@ -59,15 +72,22 @@ If $f$ divides $x^{q^n}-x$, then every root of $f$, in particular $\alpha$, is a
 Conversely, if $\alpha\in\mathbf F_{q^n}$, then $x^{q^n}-x$ vanishes at $\alpha$.
 Since $f$ is the minimal polynomial of $\alpha$ over $K$, it divides every polynomial in $K[x]$ vanishing at $\alpha$.
 Hence $f\mid x^{q^n}-x$.
+
 :::
 
-<1>3. We have
+:::
+
+::: {.pf-step #s3}
+
+We have
 \[
 \mathbf F_{q^d}\subseteq \mathbf F_{q^n}
 \quad\Longleftrightarrow\quad
  d\mid n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $d\mid n$, write $n=dr$.
 Every $a\in\mathbf F_{q^d}$ satisfies $a^{q^d}=a$, hence iterating Frobenius gives $a^{q^n}=a$; therefore $a\in\mathbf F_{q^n}$.
 
@@ -78,19 +98,32 @@ n=[\mathbf F_{q^n}:\mathbf F_q]
   =[\mathbf F_{q^n}:\mathbf F_{q^d}]\,[\mathbf F_{q^d}:\mathbf F_q],
 \]
 so $d$ divides $n$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 f\mid x^{q^n}-x
 \quad\Longleftrightarrow\quad
 \deg f\mid n.
 \]
-::: {.proof}
-By <1>1 and <1>2, divisibility is equivalent to
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, divisibility is equivalent to
 \[
 K(\alpha)=\mathbf F_{q^d}\subseteq\mathbf F_{q^n}.
 \]
-Apply <1>3.
+Apply step [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

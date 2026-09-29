@@ -17,7 +17,6 @@ review: draft
 Give the $4 \times 4$ Jordan forms with minimal polynomial $(x - 1)(x - 2)^2$.
 :::
 
-
 ::: {.solution}
 The minimal polynomial
 \[
@@ -30,13 +29,26 @@ says exactly the following about the Jordan blocks:
 
 Since the total dimension is $4$, enumerate the possible partitions of the generalized eigenspace dimensions subject to those constraints.
 
-<1>1. The eigenvalue-$2$ generalized eigenspace has dimension $2$.
+::: pf
+
+::: pf-step
+
+The eigenvalue-$2$ generalized eigenspace has dimension $2$.
 Then it must contribute one block $J_2(2)$, while eigenvalue $1$ contributes two $1\times1$ blocks:
 \[
 J_2(2)\oplus[1]\oplus[1].
 \]
 
-<1>2. The eigenvalue-$2$ generalized eigenspace has dimension $3$.
+:::
+
+::: pf-step
+
+The eigenvalue-$2$ generalized eigenspace has dimension $3$.
+
+:::
+
+:::
+
 It must contain one block of size $2$ and one block of size $1$, while eigenvalue $1$ contributes one block:
 \[
 J_2(2)\oplus[2]\oplus[1].

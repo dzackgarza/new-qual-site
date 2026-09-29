@@ -38,7 +38,11 @@ v=(x_1,\ldots,x_n)\in\CC^n
 $$
 be a nonzero eigenvector with eigenvalue $\lambda$.
 
-<1>1. The equation $Tv=\lambda v$ is equivalent to
+::: pf
+
+::: {.pf-step #s1}
+
+The equation $Tv=\lambda v$ is equivalent to
 $$
 x_{j+1}=\lambda x_j
 \quad(1\le j<n),
@@ -46,7 +50,8 @@ x_{j+1}=\lambda x_j
 x_1=\lambda x_n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 Tv=(x_2,\ldots,x_n,x_1),
@@ -56,33 +61,45 @@ $$
 \lambda v=(\lambda x_1,\ldots,\lambda x_n).
 $$
 Equality of the coordinates gives exactly the displayed relations.
+
 :::
 
-<1>2. Every eigenvalue satisfies $\lambda^n=1$, and every eigenvector
+:::
+
+::: {.pf-step #s2}
+
+Every eigenvalue satisfies $\lambda^n=1$, and every eigenvector
 with eigenvalue $\lambda$ has the form
 $$
 v=c(1,\lambda,\lambda^2,\ldots,\lambda^{n-1})
 $$
 for some $c\in\CC^\times$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 x_j=\lambda^{j-1}x_1
 \qquad(1\le j\le n).
 $$
 If $x_1=0$, then all coordinates vanish, contradicting $v\ne0$.
-Thus $x_1\ne0$. The last relation in step <1>1 gives
+Thus $x_1\ne0$. The last relation in step [](#s1){.pf-ref} gives
 $$
 x_1=\lambda x_n
 =\lambda^n x_1,
 $$
 so $\lambda^n=1$. Taking $c=x_1$ yields the displayed form.
+
 :::
 
-<1>3. Conversely, every $n$th root of unity is an eigenvalue.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Conversely, every $n$th root of unity is an eigenvalue.
+
+::: pf-proof
+
 Let $\omega^n=1$ and set
 $$
 v_\omega=(1,\omega,\omega^2,\ldots,\omega^{n-1}).
@@ -97,9 +114,14 @@ Tv_\omega
 \end{aligned}
 $$
 Hence $\omega$ is an eigenvalue and $v_\omega$ is an eigenvector.
+
 :::
 
-<1>4. Writing
+:::
+
+::: {.pf-step #s4}
+
+Writing
 $$
 \omega_k\coloneqq e^{2\pi i k/n}
 \qquad(0\le k<n),
@@ -115,16 +137,23 @@ E_{\omega_k}
 }
 $$
 
-::: {.proof}
-Step <1>2 shows that every eigenvalue is an $n$th root of unity and
-that its eigenspace is at most the displayed line. Step <1>3 shows
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that every eigenvalue is an $n$th root of unity and
+that its eigenspace is at most the displayed line. Step [](#s3){.pf-ref} shows
 that every $n$th root occurs and that the displayed line is contained
 in the corresponding eigenspace.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 lists all eigenvalues and all their eigenvectors.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} lists all eigenvalues and all their eigenvectors.
+
+:::
+
+:::
+
 :::

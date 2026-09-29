@@ -30,8 +30,14 @@ Let $R$ be a noncommutative ring and let $Z(R)$ be its center. Prove that the ad
 ::: {.solution}
 Suppose for contradiction that the additive quotient $R/Z(R)$ is cyclic.
 
-<1>1. There is $a\in R$ such that every $x\in R$ equals $ma+z$ for some $m\in\mathbb Z$ and $z\in Z(R)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+There is $a\in R$ such that every $x\in R$ equals $ma+z$ for some $m\in\mathbb Z$ and $z\in Z(R)$.
+
+::: pf-proof
+
 There is some $a\in R$ such that
 $$
 R/Z(R)=\langle a+Z(R)\rangle.
@@ -41,11 +47,18 @@ $z\in Z(R)$ such that
 $$
 x=ma+z.
 $$
+
 :::
 
-<1>2. Any two elements of $R$ then commute.
-::: {.proof}
-Take arbitrary $x,y\in R$. By step <1>1 write
+:::
+
+::: {.pf-step #s2}
+
+Any two elements of $R$ then commute.
+
+::: pf-proof
+
+Take arbitrary $x,y\in R$. By step [](#s1){.pf-ref} write
 $$
 x=ma+z,
 \qquad
@@ -70,14 +83,27 @@ yx
 $$
 Using $aw=wa$, $za=az$, and $zw=wz$, the two expressions are equal.
 Hence $xy=yx$.
+
 :::
 
-<1>3. This contradicts the hypothesis that $R$ is noncommutative.
-::: {.proof}
-Step <1>2 shows that every pair of elements of $R$ commutes, so $R$ would be
+:::
+
+::: pf-step
+
+This contradicts the hypothesis that $R$ is noncommutative.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that every pair of elements of $R$ commutes, so $R$ would be
 commutative. Therefore the assumption that $R/Z(R)$ is cyclic is impossible:
 $$
 \boxed{(R/Z(R),+)\text{ is not cyclic}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

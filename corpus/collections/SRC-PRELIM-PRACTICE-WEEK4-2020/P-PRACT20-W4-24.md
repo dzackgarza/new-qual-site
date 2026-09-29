@@ -25,7 +25,12 @@ for all $x , y \in \mathbb { R }$
 :::
 
 ::: {.solution}
-<1>1. The polynomials
+
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomials
 $$
 1,
 \qquad
@@ -34,7 +39,9 @@ x^2+x+1,
 x^2-x+1
 $$
 are linearly independent.
-::: {.proof}
+
+::: pf-proof
+
 Suppose
 $$
 \alpha+\beta(x^2+x+1)+\gamma(x^2-x+1)=0.
@@ -48,14 +55,21 @@ $$
 \beta+\gamma=0.
 $$
 The last two equations imply $\beta=\gamma=0$, and then the first gives $\alpha=0$.
+
 :::
 
-<1>2. Any representation
+:::
+
+::: {.pf-step #s2}
+
+Any representation
 $$
 1+xy+x^2y^2=a(x)b(y)+c(x)d(y)
 $$
-would put all three polynomials from step <1>1 in the span of $a$ and $c$.
-::: {.proof}
+would put all three polynomials from step [](#s1){.pf-ref} in the span of $a$ and $c$.
+
+::: pf-proof
+
 Evaluate the identity at $y=0,1,-1$. We obtain
 $$
 1=a(x)b(0)+c(x)d(0),
@@ -72,15 +86,29 @@ $$
 \operatorname{span}_{\mathbb R}\{a(x),c(x)\},
 $$
 whose dimension is at most $2$.
+
 :::
 
-<1>3. No such polynomials $a,b,c,d$ exist.
-::: {.proof}
-Step <1>1 gives three linearly independent polynomials, while step <1>2 would place them in a space of dimension at most $2$. This is impossible.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 proves the required nonexistence.
+::: {.pf-step #s3}
+
+No such polynomials $a,b,c,d$ exist.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives three linearly independent polynomials, while step [](#s2){.pf-ref} would place them in a space of dimension at most $2$. This is impossible.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the required nonexistence.
+
+:::
+
+:::
+
 :::

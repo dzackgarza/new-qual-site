@@ -33,7 +33,11 @@ audit:
 ::: {.solution}
 Write $C_m=\mathbb Z/m\mathbb Z$ as an additive group.
 
-<1>1. Every finite abelian group has a decomposition
+::: pf
+
+::: {.pf-step #s1}
+
+Every finite abelian group has a decomposition
 $$
 A\cong\bigoplus_{p\ \mathrm{prime}}
 \bigoplus_{j=1}^{s_p}C_{p^{e_{p,j}}},
@@ -46,7 +50,11 @@ finite abelian group. Empty lists are allowed, including the
 empty sum for the trivial group. This is the elementary-divisor
 form of the structure theorem [@DF04].
 
-<1>2. Exactly six isomorphism classes have order $360$.
+:::
+
+::: {.pf-step #s2}
+
+Exactly six isomorphism classes have order $360$.
 
 | Group | Exponent |
 | --- | --- |
@@ -57,8 +65,9 @@ form of the structure theorem [@DF04].
 | $C_2\oplus C_2\oplus C_2\oplus C_9\oplus C_5$ | $90$ |
 | $C_2\oplus C_2\oplus C_2\oplus C_3\oplus C_3\oplus C_5$ | $30$ |
 
-::: {.proof}
-Factor $360=2^3\cdot3^2\cdot5$. In step <1>1, the exponents
+::: pf-proof
+
+Factor $360=2^3\cdot3^2\cdot5$. In step [](#s1){.pf-ref}, the exponents
 for a prime $p$ sum to the exponent of $p$ in the group order.
 For $p=2$ the sum must be $3$. The only partitions of $3$ into
 positive integers are $(3)$, $(1,2)$, and $(1,1,1)$, giving
@@ -71,11 +80,17 @@ no other prime occurs. These three choices for the $2$-part and
 two choices for the $3$-part produce precisely the six rows.
 Each row has order $8\cdot9\cdot5=360$, so every listed
 possibility is realized.
+
 :::
 
-<1>3. The six listed groups are pairwise nonisomorphic.
+:::
 
-::: {.proof}
+::: pf-step
+
+The six listed groups are pairwise nonisomorphic.
+
+::: pf-proof
+
 The exponent of a finite additive group is the least positive
 integer that annihilates every element, and is invariant under
 isomorphism. In a direct sum of cyclic groups, an integer kills
@@ -85,7 +100,13 @@ of those orders.
 
 The least common multiples for the six rows are, respectively,
 $360,120,180,60,90,30$. They are pairwise distinct, so no two
-rows are isomorphic. Combined with step <1>2, this proves both
+rows are isomorphic. Combined with step [](#s2){.pf-ref}, this proves both
 exhaustiveness and absence of repetitions.
+
 :::
+
+:::
+
+:::
+
 :::

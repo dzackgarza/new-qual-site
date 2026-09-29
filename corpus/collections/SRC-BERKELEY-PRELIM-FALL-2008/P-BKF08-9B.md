@@ -39,25 +39,36 @@ p\coloneqq2^n+n^2,
 $$
 which is prime by hypothesis.
 
-<1>1. The integer $n$ is odd.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The integer $n$ is odd.
+
+::: pf-proof
+
 If $n$ were even, then both $2^n$ and $n^2$ would be even, so $p$ would
 be even. Since $n\ge2$,
 $$
 p=2^n+n^2\ge2^2+2^2=8>2,
 $$
 so an even value of $p$ could not be prime. Therefore $n$ is odd.
+
 :::
 
-<1>2. The integer $n$ is divisible by $3$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The integer $n$ is divisible by $3$.
+
+::: pf-proof
+
 Suppose instead that $3\nmid n$. Then
 $$
 n^2\equiv1\pmod3.
 $$
-Since $2\equiv-1\pmod3$ and $n$ is odd by step <1>1,
+Since $2\equiv-1\pmod3$ and $n$ is odd by step [](#s1){.pf-ref},
 $$
 2^n\equiv(-1)^n\equiv-1\pmod3.
 $$
@@ -67,22 +78,34 @@ p=2^n+n^2\equiv-1+1\equiv0\pmod3.
 $$
 But $p\ge8>3$, so a positive integer divisible by $3$ cannot be prime.
 This contradiction proves $3\mid n$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{n\equiv3\pmod6}.
 $$
 
-::: {.proof}
-By step <1>2, $n$ is congruent to either $0$ or $3$ modulo $6$.
-Step <1>1 excludes the even congruence class $0$, leaving only
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $n$ is congruent to either $0$ or $3$ modulo $6$.
+Step [](#s1){.pf-ref} excludes the even congruence class $0$, leaving only
 $n\equiv3\pmod6$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required congruence.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required congruence.
+
+:::
+
+:::
+
 :::

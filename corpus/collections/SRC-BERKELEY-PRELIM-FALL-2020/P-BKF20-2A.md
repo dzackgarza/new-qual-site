@@ -43,7 +43,12 @@ Let $S$ be a set and let $(f_n)$ and $(g_n)$ be sequences of functions $S\to\mat
 :::
 
 ::: {.solution}
-<1>1. Suppose the hypotheses of part (a) hold. Choose constants
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose the hypotheses of part (a) hold. Choose constants
 $B,C\ge0$ such that
 $$
 |f(s)|\le B,
@@ -52,22 +57,29 @@ $$
 $$
 for every $s\in S$.
 
-::: {.proof}
+::: pf-proof
+
 Such constants exist because $f$ and $g$ are bounded by hypothesis.
+
 :::
 
-<1>2. There is $N_0$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is $N_0$ such that
 $$
 |f_n(s)|\le B+1
 $$
 for every $n\ge N_0$ and every $s\in S$.
 
-::: {.proof}
+::: pf-proof
+
 Since $f_n\to f$ uniformly, there is $N_0$ such that
 $$
 |f_n(s)-f(s)|<1
 $$
-for all $n\ge N_0$ and all $s\in S$. Then step <1>1 and the triangle
+for all $n\ge N_0$ and all $s\in S$. Then step [](#s1){.pf-ref} and the triangle
 inequality give
 $$
 |f_n(s)|
@@ -76,11 +88,17 @@ $$
 <
 B+1.
 $$
+
 :::
 
-<1>3. The sequence $(f_ng_n)$ converges uniformly to $fg$ on $S$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The sequence $(f_ng_n)$ converges uniformly to $fg$ on $S$.
+
+::: pf-proof
+
 Let $\varepsilon>0$. Uniform convergence supplies integers $N_1,N_2$
 such that, for every $s\in S$,
 $$
@@ -100,7 +118,7 @@ Take
 $$
 N\coloneqq\max\{N_0,N_1,N_2\}.
 $$
-For $n\ge N$ and every $s\in S$, steps <1>1--<1>2 give
+For $n\ge N$ and every $s\in S$, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 \begin{aligned}
 |f_n(s)g_n(s)-f(s)g(s)|
@@ -120,9 +138,14 @@ C\frac{\varepsilon}{2(C+1)}\\
 $$
 The same $N$ works for every $s\in S$, so the convergence is uniform.
 This proves part (a).
+
 :::
 
-<1>4. For part (b), take
+:::
+
+::: {.pf-step #s4}
+
+For part (b), take
 $$
 S=\RR,
 \qquad
@@ -144,7 +167,8 @@ g(x)=1,
 $$
 uniformly on $\RR$, while $f$ is unbounded.
 
-::: {.proof}
+::: pf-proof
+
 For every $n$,
 $$
 \sup_{x\in\RR}|f_n(x)-f(x)|=0.
@@ -158,11 +182,17 @@ $$
 0.
 $$
 Thus both convergences are uniform, and $f(x)=x$ is unbounded.
+
 :::
 
-<1>5. The products in step <1>4 do not converge uniformly to $fg$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The products in step [](#s4){.pf-ref} do not converge uniformly to $fg$.
+
+::: pf-proof
+
 For every $x\in\RR$,
 $$
 f_n(x)g_n(x)-f(x)g(x)
@@ -180,12 +210,18 @@ $$
 $$
 In particular, these suprema do not tend to $0$, so convergence is not
 uniform. This proves part (b).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves part (a), and steps <1>4--<1>5 give the required
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the required
 counterexample for part (b).
+
 :::
+
+:::
+
 :::

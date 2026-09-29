@@ -53,7 +53,11 @@ H\sim C_0+nf,
 $$
 so $H^2=2n-e=d$.
 
-<1>1. The divisor
+::: pf
+
+::: {.pf-step #s1}
+
+The divisor
 $$
 D\coloneqq H-K_X
 \sim
@@ -61,7 +65,8 @@ D\coloneqq H-K_X
 $$
 has a base-point-free complete linear system.
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 b=n+e+2.
@@ -84,11 +89,17 @@ n-2e+2
 \ge0.
 $$
 Thus $|D|$ is base-point-free.
+
 :::
 
-<1>2. The system $|D|$ contains a nonsingular member $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The system $|D|$ contains a nonsingular member $Y$.
+
+::: pf-proof
+
 Set
 $$
 q=n-2e+2\ge0.
@@ -106,7 +117,7 @@ D
 \bigl(C_0+(e+q)f\bigr)+2(C_0+ef).
 $$
 The first summand is very ample by the rational-scroll construction (2.19),
-because $e+q>e$, while step <1>1 with $a=1$ shows that $C_0+ef$ is
+because $e+q>e$, while step [](#s1){.pf-ref} with $a=1$ shows that $C_0+ef$ is
 base-point-free.  The tensor product of a very ample invertible sheaf with
 globally generated invertible sheaves is very ample.  Hence $D$ is very
 ample, so a general member of $|D|$ is nonsingular by Bertini's theorem.
@@ -128,11 +139,17 @@ contracted section $C_0$, and hence is disjoint from it.  Bertini applied
 on $X\setminus C_0$, where the associated morphism is an immersion, then
 shows that a general member is nonsingular.  Choose such a member and call
 it $Y$.
+
 :::
 
-<1>3. The curve $Y$ is connected, hence irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The curve $Y$ is connected, hence irreducible.
+
+::: pf-proof
+
 From
 $$
 0\longrightarrow\OO_X(-D)
@@ -171,17 +188,23 @@ and $R^1\pi_*\OO_X(H)=0$, while $n>e\ge0$, one obtains
 $$
 H^1(X,\OO_X(H))=0.
 $$
-Therefore $H^0(Y,\OO_Y)=k$, so $Y$ is connected.  By step <1>2 it is
+Therefore $H^0(Y,\OO_Y)=k$, so $Y$ is connected.  By step [](#s2){.pf-ref} it is
 nonsingular; a connected nonsingular curve is irreducible.
+
 :::
 
-<1>4. The canonical bundle of $Y$ is the restriction of the hyperplane
+:::
+
+::: {.pf-step #s4}
+
+The canonical bundle of $Y$ is the restriction of the hyperplane
 bundle:
 $$
 \boxed{K_Y\cong\OO_Y(H)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Adjunction and the definition $D=H-K_X$ give
 $$
 K_Y
@@ -192,15 +215,21 @@ K_Y
 \cong
 \OO_Y(H).
 $$
+
 :::
 
-<1>5. The genus of $Y$ is
+:::
+
+::: {.pf-step #s5}
+
+The genus of $Y$ is
 $$
 \boxed{g(Y)=d+2}.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 2g(Y)-2
 =
@@ -221,9 +250,14 @@ H\cdot D
 \end{aligned}
 $$
 Thus $2g(Y)-2=2d+2$, whence $g(Y)=d+2$.
+
 :::
 
-<1>6. The restriction map
+:::
+
+::: {.pf-step #s6}
+
+The restriction map
 $$
 H^0(X,\OO_X(H))
 \longrightarrow
@@ -232,7 +266,8 @@ $$
 is an isomorphism.  Consequently the given embedding of $Y$ is its
 complete canonical embedding.
 
-::: {.proof}
+::: pf-proof
+
 Since $Y\sim D=H-K_X$, restriction gives
 $$
 0
@@ -255,7 +290,7 @@ H^1(X,\OO_X)^\vee
 $$
 by Serre duality, because $X$ is ruled over $\PP^1$ and
 $H^1(X,\OO_X)=0$.  The cohomology sequence therefore makes the restriction
-map an isomorphism.  By step <1>4 its target is $H^0(Y,K_Y)$.
+map an isomorphism.  By step [](#s4){.pf-ref} its target is $H^0(Y,K_Y)$.
 
 Moreover,
 $$
@@ -270,15 +305,21 @@ $$
 Thus the given embedding $X\hookrightarrow\PP^{d+1}$ uses all sections of
 $H$.  Its restriction to $Y$ is therefore defined by the complete canonical
 system $|K_Y|$, as claimed.
+
 :::
 
-<1>7. For every integer $g\ge4$, parameters $n>e\ge0$ satisfying the
+:::
+
+::: {.pf-step #s7}
+
+For every integer $g\ge4$, parameters $n>e\ge0$ satisfying the
 hypotheses can be chosen with
 $$
 2n-e=g-2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put $d=g-2\ge2$.  If $d$ is even, take
 $$
 e=0,
@@ -294,14 +335,20 @@ e=1,
 n=\frac{d+1}{2}.
 $$
 Then $n>1=e$, $2n-e=d$, and $n\ge0=2e-2$.
-Thus steps <1>1--<1>6 produce a canonical curve of genus $g=d+2$ in every
+Thus steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} produce a canonical curve of genus $g=d+2$ in every
 genus $g\ge4$.
+
 :::
 
-<1>8. Every curve $Y$ produced above carries a $g^1_3$ and is
+:::
+
+::: {.pf-step #s8}
+
+Every curve $Y$ produced above carries a $g^1_3$ and is
 nonhyperelliptic.
 
-::: {.proof}
+::: pf-proof
+
 The ruling restricts to a morphism
 $$
 \pi|_Y:Y\longrightarrow\PP^1
@@ -316,16 +363,22 @@ $$
 Therefore the pullback of $|\OO_{\PP^1}(1)|$ is a base-point-free
 $g^1_3$ on $Y$.
 
-By step <1>6 the complete canonical map of $Y$ is an embedding.  A
+By step [](#s6){.pf-ref} the complete canonical map of $Y$ is an embedding.  A
 hyperelliptic curve of genus at least $2$ has canonical map of degree $2$
 onto a rational normal curve, so $Y$ is not hyperelliptic.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>6 construct the required nonsingular canonical curve of genus
-$d+2$.  Steps <1>7--<1>8 give, for every $g\ge4$, a nonhyperelliptic
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} construct the required nonsingular canonical curve of genus
+$d+2$.  Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} give, for every $g\ge4$, a nonhyperelliptic
 genus-$g$ curve carrying a $g^1_3$.
+
 :::
+
+:::
+
 :::

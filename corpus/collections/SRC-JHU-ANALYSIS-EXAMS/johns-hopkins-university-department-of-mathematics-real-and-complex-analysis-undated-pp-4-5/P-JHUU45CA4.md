@@ -41,9 +41,14 @@ Write $dA=dx\,dy$ and $\|f\|_2=(\int_U|f|^2\,dA)^{1/2}$.
 If $U$ is empty, the space consists of the unique empty
 function and is the zero Hilbert space. Assume $U\ne\varnothing$.
 
-<1>1. The displayed formula is an inner product on $A^2(U)$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The displayed formula is an inner product on $A^2(U)$.
+
+::: pf-proof
+
 Linear combinations remain holomorphic, and
 $|af+bg|^2\leq2|a|^2|f|^2+2|b|^2|g|^2$ proves their
 square integrability. Thus $A^2(U)$ is a complex vector space.
@@ -57,11 +62,17 @@ inside $U$ on which $|f|\geq|f(a)|/2>0$. Its positive
 area makes $\int_U|f|^2\,dA>0$. Hence zero norm forces
 the holomorphic function itself to be zero everywhere,
 not just almost everywhere. This proves positive definiteness.
+
 :::
 
-<1>2. The $L^2$ norm controls uniform convergence on each compact subset.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The $L^2$ norm controls uniform convergence on each compact subset.
+
+::: pf-proof
+
 Let $h$ be holomorphic on $U$, and suppose
 $\overline{D(a,r)}\subset U$. Cauchy's formula and
 Cauchy–Schwarz on each circle of radius $0<\rho<r$ give
@@ -84,12 +95,18 @@ $$
 \sup_{a\in K}|h(a)|\leq\frac1{\sqrt\pi r}\|h\|_2.
 $$
 Apply this to differences of elements of $A^2(U)$.
+
 :::
 
-<1>3. Every Cauchy sequence in $A^2(U)$ converges in its norm.
+:::
 
-::: {.proof}
-Let $(f_n)$ be such a sequence. Step <1>2 makes it
+::: pf-step
+
+Every Cauchy sequence in $A^2(U)$ converges in its norm.
+
+::: pf-proof
+
+Let $(f_n)$ be such a sequence. Step [](#s2){.pf-ref} makes it
 uniformly Cauchy on each compact subset of $U$. Completeness
 of $\mathbb C$ gives a pointwise limit $f$, and the same
 Cauchy estimates show that convergence is uniform on each
@@ -110,5 +127,11 @@ $$
 $$
 Therefore $f_n\to f$ in norm. The inner-product space
 is complete, hence is a Hilbert space.
+
 :::
+
+:::
+
+:::
+
 :::

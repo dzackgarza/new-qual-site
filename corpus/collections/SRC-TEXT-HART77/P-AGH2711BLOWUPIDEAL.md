@@ -45,9 +45,14 @@ The degree-zero summand is $\OO_X$, and the grading distinguishes the different 
 These are the [[D-SCHBLOWUP|Rees algebra and blowup]].
 All isomorphisms of blowups below are over $X$.
 
-<1>1. There is a canonical isomorphism $B(\mathcal I^d)\cong B(\mathcal I)$ for every $d\ge1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+There is a canonical isomorphism $B(\mathcal I^d)\cong B(\mathcal I)$ for every $d\ge1$.
+
+::: pf-proof
+
 The Rees algebra of $\mathcal I^d$ is the $d$th Veronese algebra
 $$
 \mathcal R(\mathcal I^d)=\bigoplus_{q\ge0}\mathcal I^{dq}
@@ -68,11 +73,17 @@ The equality criterion for fractions is the same on both sides, since a power of
 These charts cover the two Proj schemes and their identifications agree after further localization.
 They also commute with restriction on $X$, so they glue to the required isomorphism.
 If the positive-degree algebra is nilpotent, both Proj schemes are empty and the same assertion holds.
+
 :::
 
-<1>2. Multiplying by an invertible ideal $\mathcal J$ does not change the blowup.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Multiplying by an invertible ideal $\mathcal J$ does not change the blowup.
+
+::: pf-proof
+
 Work on an open set where $\mathcal J$ has a generator $a$.
 Because $\mathcal J\subseteq\OO_X$ is an invertible module, multiplication by $a$ identifies $\OO_X$ with this ideal; thus $a$ is a non-zero-divisor.
 For every $q$, multiplication by $a^q$ is an isomorphism
@@ -86,11 +97,17 @@ If $a$ is replaced by $ua$ for a unit $u$, the graded isomorphism is changed by 
 This change acts identically on Proj: in a degree-zero fraction, numerator and denominator have the same degree, and the powers of $u$ cancel.
 Thus the local isomorphisms agree on overlaps and glue to $B(\mathcal I\mathcal J)\cong B(\mathcal I)$.
 This proves (b) for the original noetherian scheme, without requiring it to be integral.
+
 :::
 
-<1>3. On the regular integral scheme in (c), the double dual $\mathcal J=\mathcal I_0^{\vee\vee}$ is an invertible ideal containing $\mathcal I_0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+On the regular integral scheme in (c), the double dual $\mathcal J=\mathcal I_0^{\vee\vee}$ is an invertible ideal containing $\mathcal I_0$.
+
+::: pf-proof
+
 Duals are taken with respect to $\OO_X$.
 The sheaves in question are coherent, and taking their duals commutes with localization because their modules are finitely presented on noetherian affine opens.
 Fix a point $x$, put $R=\OO_{X,x}$ and $K=\operatorname{Frac}R$, and write $I=(\mathcal I_0)_x$.
@@ -116,29 +133,41 @@ The double dual of the inclusion $\mathcal I_0\hookrightarrow\OO_X$ consequently
 Every stalk of $\mathcal J$ is free of rank one.
 For a coherent sheaf, a stalk basis extends to a basis on a neighborhood: extend the generator, and shrink until the coherent kernel and cokernel of the resulting map from $\OO_X$ vanish.
 Thus $\mathcal J$ is an invertible ideal with the stated inclusion.
+
 :::
 
-<1>4. Define the coherent ideal
+:::
+
+::: {.pf-step #s4}
+
+Define the coherent ideal
 $$
 \boxed{\mathcal K\coloneqq\mathcal I_0\otimes\mathcal J^{-1}\subseteq\OO_X,
 \qquad\mathcal J=\mathcal I_0^{\vee\vee}.}
 $$
 Then $B(\mathcal K)\cong X'$, and $\mathcal K_x=\OO_{X,x}$ exactly when $(\mathcal I_0)_x$ is principal.
 
-::: {.proof}
+::: pf-proof
+
 Tensor the inclusion $\mathcal I_0\subseteq\mathcal J$ with the invertible sheaf $\mathcal J^{-1}$.
 This gives the displayed ideal inclusion.
-At the point considered in step <1>3, its stalk is $g^{-1}I\subseteq R$, and multiplication gives $\mathcal K\mathcal J=\mathcal I_0$ globally.
-Part (b), proved in step <1>2, therefore identifies $B(\mathcal K)$ with $B(\mathcal I_0)=X'$.
+At the point considered in step [](#s3){.pf-ref}, its stalk is $g^{-1}I\subseteq R$, and multiplication gives $\mathcal K\mathcal J=\mathcal I_0$ globally.
+Part (b), proved in step [](#s2){.pf-ref}, therefore identifies $B(\mathcal K)$ with $B(\mathcal I_0)=X'$.
 
 If $I$ is principal, its generator is a greatest common divisor of its generators, so $I=gR$ and $g^{-1}I=R$.
 Conversely, $g^{-1}I=R$ implies $I=gR$, which is principal.
 Since $R$ is a domain and $I\ne0$, being principal here is equivalent to being an invertible ideal at the stalk.
+
 :::
 
-<1>5. The non-isomorphism locus of $f$ is exactly $V(\mathcal K)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The non-isomorphism locus of $f$ is exactly $V(\mathcal K)$.
+
+::: pf-proof
+
 Where $\mathcal I_0$ is invertible, its blowup is the identity: locally its Rees algebra is $R[T]$, with the generator of the ideal corresponding to $T$ in degree one, and $\operatorname{Proj}R[T]=\Spec R$.
 Thus its invertibility locus is contained in $U$.
 
@@ -150,18 +179,24 @@ Over an open set where $f$ is an isomorphism, this identifies $\mathcal I_0$ its
 Consequently $U$ is precisely the invertibility locus of $\mathcal I_0$.
 Invertibility at a stalk extends to a neighborhood by coherence, so this also proves the equality pointwise.
 
-Step <1>4 now gives
+Step [](#s4){.pf-ref} now gives
 $$
 x\in U\quad\Longleftrightarrow\quad\mathcal K_x=\OO_{X,x}
 \quad\Longleftrightarrow\quad x\notin\operatorname{Supp}(\OO_X/\mathcal K).
 $$
 The closed subscheme $Y$ defined by $\mathcal K$ therefore has support exactly $X\setminus U$, while its blowup is $X'$.
 This is the required strengthening of the blowup presentation in (c).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), step <1>2 proves (b), and steps <1>3--<1>5 construct the ideal and prove the exact support assertion in (c).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), step [](#s2){.pf-ref} proves (b), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} construct the ideal and prove the exact support assertion in (c).
+
+:::
+
+:::
+
 :::

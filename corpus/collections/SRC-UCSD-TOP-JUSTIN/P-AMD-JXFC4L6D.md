@@ -18,7 +18,12 @@ Compute $H_*(\RP^2\cross \RP^3; \ZZ)$
 :::
 
 ::: {.solution}
-<1>1. The integral homology of the factors is
+
+::: pf
+
+::: pf-step
+
+The integral homology of the factors is
 $$
 H_i(\mathbb{RP}^2)=
 \begin{cases}
@@ -36,11 +41,18 @@ H_i(\mathbb{RP}^3)=
 0,&\text{otherwise}.
 \end{cases}
 $$
-::: {.proof}
+
+::: pf-proof
+
 These are the standard cellular homology groups of real projective spaces.
+
 :::
 
-<1>2. The Künneth theorem gives
+:::
+
+::: pf-step
+
+The Künneth theorem gives
 $$
 \boxed{H_n(\mathbb{RP}^2\times\mathbb{RP}^3;\mathbb Z)\cong
 \begin{cases}
@@ -52,7 +64,9 @@ $$
 0,&n\ge5.
 \end{cases}}
 $$
-::: {.proof}
+
+::: pf-proof
+
 The tensor terms give
 $$
 \begin{array}{c|ccccc}
@@ -68,5 +82,11 @@ $$
 \cong\mathbb Z/2,
 $$
 which appears in degree $3$. The Künneth short exact sequence splits noncanonically, giving the displayed groups.
+
 :::
+
+:::
+
+:::
+
 :::

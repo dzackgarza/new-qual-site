@@ -38,7 +38,12 @@ f(z)=\frac1{2\pi i}\int_{|w|=1}g(z/w)h(w)\frac{dw}{w}.
 :::
 
 ::: {.solution}
-<1>1. For each fixed $z\in\CC$ and every $w$ with $\abs{w}=1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For each fixed $z\in\CC$ and every $w$ with $\abs{w}=1$,
 $$
 g(z/w)
 =
@@ -52,7 +57,8 @@ h(w)
 $$
 with both series absolutely and uniformly convergent on the unit circle.
 
-::: {.proof}
+::: pf-proof
+
 Because $g$ is entire, its power series converges absolutely at
 $\abs{z}$:
 $$
@@ -71,9 +77,14 @@ $$
 $$
 and the $M$-test gives uniform absolute convergence of the second series on
 $\abs{w}=1$.
+
 :::
 
-<1>2. The product admits the uniformly absolutely convergent expansion
+:::
+
+::: {.pf-step #s2}
+
+The product admits the uniformly absolutely convergent expansion
 $$
 g(z/w)h(w)
 =
@@ -82,8 +93,9 @@ g_nh_mz^nw^{m-n}
 $$
 on $\abs{w}=1$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \sum_{n,m\geq0}
 \abs{g_nh_mz^nw^{m-n}}
@@ -98,17 +110,23 @@ $$
 $$
 uniformly for $\abs{w}=1$. Hence the double series converges uniformly and
 absolutely there and represents the product.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 f(z)
 =
 \sum_{n=0}^{\infty}g_nh_nz^n.
 $$
 
-::: {.proof}
-By step <1>2, termwise contour integration is valid:
+::: pf-proof
+
+By step [](#s2){.pf-ref}, termwise contour integration is valid:
 $$
 \begin{aligned}
 f(z)
@@ -133,21 +151,33 @@ w^{m-n-1}\,dw
 $$
 Therefore only the terms with $m=n$ survive, yielding the displayed
 series.
+
 :::
 
-<1>4. The Taylor coefficients of $f$ at the origin are
+:::
+
+::: {.pf-step #s4}
+
+The Taylor coefficients of $f$ at the origin are
 $$
 \boxed{f_n=g_nh_n}.
 $$
 
-::: {.proof}
-Step <1>3 is already the Taylor expansion of $f$ in powers of $z$, so its
+::: pf-proof
+
+Step [](#s3){.pf-ref} is already the Taylor expansion of $f$ in powers of $z$, so its
 $n$th coefficient is $g_nh_n$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested formula.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested formula.
+
+:::
+
+:::
+
 :::

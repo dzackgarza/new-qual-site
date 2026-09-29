@@ -31,35 +31,76 @@ Prove that if $f_\mathfrak{m}$ is injective for all maximal ideals $\mathfrak{m}
 :::
 
 ::: {.solution}
-<1>1. Let \(K=\ker f\). It suffices to show \(K=0\).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let \(K=\ker f\). It suffices to show \(K=0\).
+
+::: pf-proof
+
 By definition, \(f\) is injective exactly when its kernel is zero.
+
 :::
 
-<1>2. Suppose for contradiction that \(0\ne x\in K\), and let
+:::
+
+::: pf-step
+
+Suppose for contradiction that \(0\ne x\in K\), and let
 \[
 I=\operatorname{Ann}_A(x)=\{a\in A:ax=0\}.
 \]
 Then \(I\) is a proper ideal of \(A\).
-::: {.proof}
+
+::: pf-proof
+
 If \(I=A\), then \(1\in I\), so \(x=1x=0\), contrary to the choice of \(x\).
+
 :::
 
-<1>3. Choose a maximal ideal \(\mathfrak m\supseteq I\). Then \(x/1\ne0\) in \(M_{\mathfrak m}\).
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Choose a maximal ideal \(\mathfrak m\supseteq I\). Then \(x/1\ne0\) in \(M_{\mathfrak m}\).
+
+::: pf-proof
+
 If \(x/1=0\) in \(M_{\mathfrak m}\), then by the localization relation there exists \(s\in A\setminus\mathfrak m\) such that \(sx=0\). Hence \(s\in I\subseteq\mathfrak m\), contradicting \(s\notin\mathfrak m\).
+
 :::
 
-<1>4. On the other hand, \(f_{\mathfrak m}(x/1)=0\).
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+On the other hand, \(f_{\mathfrak m}(x/1)=0\).
+
+::: pf-proof
+
 Since \(x\in\ker f\), one has \(f(x)=0\). Therefore
 \[
 f_{\mathfrak m}(x/1)=f(x)/1=0.
 \]
+
 :::
 
-<1>5. This contradicts the injectivity of \(f_{\mathfrak m}\). Hence \(K=0\), so \(f\) is injective.
-::: {.proof}
-By <1>3 the element \(x/1\) is nonzero, while <1>4 shows that it lies in the kernel of the injective map \(f_{\mathfrak m}\).
 :::
+
+::: pf-step
+
+This contradicts the injectivity of \(f_{\mathfrak m}\). Hence \(K=0\), so \(f\) is injective.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref} the element \(x/1\) is nonzero, while step [](#s4){.pf-ref} shows that it lies in the kernel of the injective map \(f_{\mathfrak m}\).
+
+:::
+
+:::
+
+:::
+
 :::

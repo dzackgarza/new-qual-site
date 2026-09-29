@@ -31,8 +31,14 @@ Prove or disprove that normal subgroups are closed under intersection.
 The assertion is true; in fact an arbitrary intersection of normal subgroups
 is normal.
 
-<1>1. The intersection of normal subgroups is a subgroup.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The intersection of normal subgroups is a subgroup.
+
+::: pf-proof
+
 Let $\{N_i\}_{i\in I}$ be normal subgroups of $G$ and put
 $$
 N=\bigcap_{i\in I}N_i.
@@ -43,10 +49,17 @@ $$
 xy^{-1}\in N_i
 $$
 for every $i$. Therefore $xy^{-1}\in N$, so $N\le G$.
+
 :::
 
-<1>2. The intersection is invariant under conjugation.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The intersection is invariant under conjugation.
+
+::: pf-proof
+
 Let $g\in G$ and $x\in N$. Since $x\in N_i$ for every $i$ and each $N_i$ is
 normal,
 $$
@@ -58,14 +71,27 @@ gxg^{-1}\in\bigcap_{i\in I}N_i=N.
 $$
 Thus $gNg^{-1}\subseteq N$. Replacing $g$ by $g^{-1}$ gives the reverse
 inclusion, so $gNg^{-1}=N$.
+
 :::
 
-<1>3. Therefore normal subgroups are closed under intersection.
-::: {.proof}
-Steps <1>1 and <1>2 show
+:::
+
+::: pf-step
+
+Therefore normal subgroups are closed under intersection.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show
 $$
 \boxed{\bigcap_{i\in I}N_i\trianglelefteq G.}
 $$
 In particular, the intersection of any two normal subgroups is normal.
+
 :::
+
+:::
+
+:::
+
 :::

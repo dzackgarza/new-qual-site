@@ -45,10 +45,16 @@ D = \begin{bmatrix} 1 & -2 & -1 & 0 \\ 1 & 0 & -3 & 0 \\ -1 & -2 & 1 & 0 \\ 1 & 
 $$
 :::
 
-
 ::: {.solution}
-<1>1. List the Jordan forms in part (i) and their minimal polynomials.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+List the Jordan forms in part (i) and their minimal polynomials.
+
+::: pf-proof
+
 The characteristic polynomial
 $$
 (X-4)^3
@@ -66,10 +72,17 @@ J_1(4)^{\oplus3}=4I_3 & X-4.
 $$
 The exponent in the minimal polynomial is the size of the largest Jordan
 block.
+
 :::
 
-<1>2. Every root of the characteristic polynomial is a root of the minimal polynomial.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every root of the characteristic polynomial is a root of the minimal polynomial.
+
+::: pf-proof
+
 Let $c$ be a root of the characteristic polynomial. Then
 $$
 \det(T-cI)=0,
@@ -88,10 +101,17 @@ m(c)=0.
 $$
 Thus every characteristic root occurs among the roots of the minimal
 polynomial.
+
 :::
 
-<1>3. The primary subspace $M_c$ has dimension equal to the algebraic multiplicity $m_c$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The primary subspace $M_c$ has dimension equal to the algebraic multiplicity $m_c$.
+
+::: pf-proof
+
 By the primary decomposition theorem,
 $$
 M=\bigoplus_c M_c,
@@ -124,10 +144,17 @@ $$
 \boxed{\dim M_c=d_c=m_c}
 $$
 for every characteristic root $c$.
+
 :::
 
-<1>4. Compute the characteristic polynomial of $A$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the characteristic polynomial of $A$.
+
+::: pf-proof
+
 $$
 XI-A=
 \begin{pmatrix}
@@ -139,10 +166,17 @@ so
 $$
 \boxed{\operatorname{ch}_A(X)=X^2+1.}
 $$
+
 :::
 
-<1>5. Compute the characteristic polynomial of $B$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the characteristic polynomial of $B$.
+
+::: pf-proof
+
 Expanding along the first column of
 $$
 XI-B=
@@ -164,10 +198,17 @@ Hence
 $$
 \boxed{\operatorname{ch}_B(X)=(X-1)(X-3)^2.}
 $$
+
 :::
 
-<1>6. Compute the characteristic polynomial of $C$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the characteristic polynomial of $C$.
+
+::: pf-proof
+
 One has
 $$
 XI-C=
@@ -191,10 +232,17 @@ Thus
 $$
 \boxed{\operatorname{ch}_C(X)=(X-3)(X-1)(X+2).}
 $$
+
 :::
 
-<1>7. Compute the characteristic polynomial of $D$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the characteristic polynomial of $D$.
+
+::: pf-proof
+
 The last column of $XI-D$ is $(0,0,0,X-2)^t$. Expanding along it gives
 $$
 \det(XI-D)
@@ -220,5 +268,11 @@ Therefore
 $$
 \boxed{\operatorname{ch}_D(X)=(X+2)(X-2)^3.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

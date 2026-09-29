@@ -23,33 +23,75 @@ Prove that $G$ is cyclic.
 :::
 
 ::: {.solution}
-<1>1. Write $G$ as a direct product of cyclic groups of prime-power order: $G \cong \prod_i \mathbb{Z}/p_i^{e_i}$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Write $G$ as a direct product of cyclic groups of prime-power order: $G \cong \prod_i \mathbb{Z}/p_i^{e_i}$.
+
+::: pf-proof
+
 fundamental theorem of finite abelian groups.
+
 :::
 
-<1>2. Suppose for contradiction that $G$ is not cyclic, so some prime $p$ appears in at least two cyclic factors (i.e. $G$ has a subgroup isomorphic to $\mathbb{Z}/p \times \mathbb{Z}/p$).
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Suppose for contradiction that $G$ is not cyclic, so some prime $p$ appears in at least two cyclic factors (i.e. $G$ has a subgroup isomorphic to $\mathbb{Z}/p \times \mathbb{Z}/p$).
+
+::: pf-proof
+
 $G$ is cyclic iff no prime appears in more than one factor.
+
 :::
 
-<1>3. Then $G$ has at least two distinct subgroups of order $p$ (the subgroups $\mathbb{Z}/p \times 0$ and $0 \times \mathbb{Z}/p$ inside $\mathbb{Z}/p \times \mathbb{Z}/p$).
-::: {.proof}
-<1>2.
 :::
 
-<1>4. This contradicts the hypothesis that $G$ has a unique subgroup of order $p$ (where $p$ is a divisor of $n$).
-::: {.proof}
-<1>3 and the hypothesis.
+::: {.pf-step #s3}
+
+Then $G$ has at least two distinct subgroups of order $p$ (the subgroups $\mathbb{Z}/p \times 0$ and $0 \times \mathbb{Z}/p$ inside $\mathbb{Z}/p \times \mathbb{Z}/p$).
+
+::: pf-proof
+
+Step [](#s2){.pf-ref}.
+
 :::
 
-<1>5. Hence $G$ is cyclic.
-::: {.proof}
-<1>4.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+::: {.pf-step #s4}
+
+This contradicts the hypothesis that $G$ has a unique subgroup of order $p$ (where $p$ is a divisor of $n$).
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} and the hypothesis.
+
 :::
+
+:::
+
+::: {.pf-step #s5}
+
+Hence $G$ is cyclic.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
 :::

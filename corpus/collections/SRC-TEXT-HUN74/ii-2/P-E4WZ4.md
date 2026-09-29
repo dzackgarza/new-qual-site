@@ -35,7 +35,11 @@ direct sum of its Sylow subgroups, and an abelian group of order $p^n$ is
 determined up to isomorphism by the partition $n=a_1+\cdots+a_r$ with
 $G\cong\ZZ_{p^{a_1}}\oplus\cdots\oplus\ZZ_{p^{a_r}}$.
 
-<1>1. There are exactly eleven abelian groups of order $64=2^6$:
+::: pf
+
+::: pf-step
+
+There are exactly eleven abelian groups of order $64=2^6$:
 \[
 \begin{aligned}
 &\ZZ_{64},\\
@@ -51,7 +55,9 @@ $G\cong\ZZ_{p^{a_1}}\oplus\cdots\oplus\ZZ_{p^{a_r}}$.
 &\ZZ_2^{\oplus6}.
 \end{aligned}
 \]
-::: {.proof}
+
+::: pf-proof
+
 An abelian group of order $2^6$ is uniquely determined by a partition of $6$:
 \[
 6,\ 5+1,\ 4+2,\ 4+1+1,\ 3+3,\ 3+2+1,\ 3+1+1+1,
@@ -62,9 +68,14 @@ An abelian group of order $2^6$ is uniquely determined by a partition of $6$:
 Replacing each part $a$ by a cyclic summand $\ZZ_{2^a}$ gives exactly the
 displayed list. Distinct partitions give nonisomorphic groups by uniqueness in
 the classification theorem.
+
 :::
 
-<1>2. There are exactly seven abelian groups of order $96=2^5\cdot3$:
+:::
+
+::: pf-step
+
+There are exactly seven abelian groups of order $96=2^5\cdot3$:
 \[
 \begin{aligned}
 &\ZZ_{32}\oplus\ZZ_3,\\
@@ -76,7 +87,9 @@ the classification theorem.
 &\ZZ_2^{\oplus5}\oplus\ZZ_3.
 \end{aligned}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The Sylow $3$-subgroup has order $3$, hence is necessarily $\ZZ_3$. The Sylow
 $2$-subgroup has order $2^5$, and the partitions
 \[
@@ -85,5 +98,11 @@ $2$-subgroup has order $2^5$, and the partitions
 give its seven possible isomorphism types. Taking the direct sum with $\ZZ_3$
 gives the displayed list. Uniqueness of the primary decomposition shows that no
 two groups on the list are isomorphic and that no further cases occur.
+
 :::
+
+:::
+
+:::
+
 :::

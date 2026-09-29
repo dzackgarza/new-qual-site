@@ -28,7 +28,12 @@ Let K be a field. Let R be an integral domain which contains K and is finite-dim
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 $$
 x\in R,
 \qquad
@@ -42,7 +47,8 @@ m_x(r)=xr,
 $$
 is $K$-linear.
 
-::: {.proof}
+::: pf-proof
+
 For $r,s\in R$ and $a,b\in K$,
 $$
 \begin{aligned}
@@ -57,11 +63,17 @@ am_x(r)+bm_x(s).
 $$
 Thus $m_x$ is a linear endomorphism of the finite-dimensional
 $K$-vector space $R$.
+
 :::
 
-<1>2. The map $m_x$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The map $m_x$ is injective.
+
+::: pf-proof
+
 If
 $$
 m_x(r)=0,
@@ -75,20 +87,32 @@ $$
 r=0.
 $$
 Hence the kernel is trivial.
+
 :::
 
-<1>3. The map $m_x$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The map $m_x$ is surjective.
+
+::: pf-proof
+
 The domain and codomain are the same finite-dimensional vector space.
 Every injective linear endomorphism of a finite-dimensional vector space
-is surjective. Apply step <1>2.
+is surjective. Apply step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The element $x$ has a multiplicative inverse in $R$.
+:::
 
-::: {.proof}
-By step <1>3, the element
+::: {.pf-step #s4}
+
+The element $x$ has a multiplicative inverse in $R$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the element
 $$
 1\in R
 $$
@@ -97,21 +121,33 @@ $$
 m_x(y)=xy=1.
 $$
 Since $R$ is commutative, this $y$ is the inverse of $x$.
+
 :::
 
-<1>5. Every nonzero element of $R$ is invertible, so
+:::
+
+::: {.pf-step #s5}
+
+Every nonzero element of $R$ is invertible, so
 $$
 \boxed{R\text{ is a field}}.
 $$
 
-::: {.proof}
-The element $x\neq0$ in step <1>1 was arbitrary. Step <1>4 therefore
+::: pf-proof
+
+The element $x\neq0$ in step [](#s1){.pf-ref} was arbitrary. Step [](#s4){.pf-ref} therefore
 shows that every nonzero element of $R$ has an inverse in $R$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

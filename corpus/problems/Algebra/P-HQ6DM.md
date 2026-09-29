@@ -41,10 +41,16 @@ B=PAQ.
 \]
 :::
 
-
 ::: {.solution}
-<1>1. Similarity is reflexive, symmetric, and transitive.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Similarity is reflexive, symmetric, and transitive.
+
+::: pf-proof
+
 Reflexivity: $A=I_nAI_n^{-1}$.
 
 Symmetry: if $B=PAP^{-1}$, then
@@ -63,10 +69,17 @@ then
 C=(QP)A(QP)^{-1}.
 \]
 Thus similarity is an equivalence relation.
+
 :::
 
-<1>2. Matrix equivalence is reflexive, symmetric, and transitive.
-::: {.proof}
+:::
+
+::: pf-step
+
+Matrix equivalence is reflexive, symmetric, and transitive.
+
+::: pf-proof
+
 Reflexivity: for $A\in M_{m\times n}(R)$,
 \[
 A=I_m A I_n.
@@ -88,5 +101,11 @@ with $P'\in\operatorname{GL}_m(R)$ and $Q'\in\operatorname{GL}_n(R)$, then
 C=(P'P)A(QQ'),
 \]
 and $P'P$, $QQ'$ are invertible. Thus matrix equivalence is an equivalence relation.
+
 :::
+
+:::
+
+:::
+
 :::

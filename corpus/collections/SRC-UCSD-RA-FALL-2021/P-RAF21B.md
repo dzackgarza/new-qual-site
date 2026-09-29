@@ -30,8 +30,15 @@ Either find an example or show that no such $f$ exists.
 :::
 
 ::: {.solution}
-<1>1. There are nonempty open intervals $E_n$ with $m(E_n)\le2^{-n}$ such that every open interval with rational endpoints contains $E_n$ for infinitely many $n$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+There are nonempty open intervals $E_n$ with $m(E_n)\le2^{-n}$ such that every open interval with rational endpoints contains $E_n$ for infinitely many $n$.
+
+::: pf-proof
+
 Let $(B_j)_{j\ge1}$ enumerate the open intervals with rational endpoints. Choose a sequence $j(n)$ such that every positive integer occurs infinitely often; for example
 \[
 1,1,2,1,2,3,1,2,3,4,\ldots.
@@ -53,10 +60,17 @@ Then
 \[
 \int_{\mathbb R} a_n\mathbf1_{E_n}(x)\,dx=1.
 \]
+
 :::
 
-<1>2. With $a_n\coloneqq m(E_n)^{-1}$, the series $F\coloneqq\sum_n a_n\mathbf1_{E_n}$ is finite almost everywhere, and there is a Borel function $f\colon\mathbb R\to[0,\infty)$ with $f=F$ almost everywhere.
-::: {.proof}
+:::
+
+::: pf-step
+
+With $a_n\coloneqq m(E_n)^{-1}$, the series $F\coloneqq\sum_n a_n\mathbf1_{E_n}$ is finite almost everywhere, and there is a Borel function $f\colon\mathbb R\to[0,\infty)$ with $f=F$ almost everywhere.
+
+::: pf-proof
+
 Define
 \[
 F(x):=\sum_{n=1}^\infty a_n\mathbf1_{E_n}(x).
@@ -84,10 +98,17 @@ F(x),&x\notin N,\\
 \end{cases}
 \]
 Then $f:\mathbb R\to[0,\infty)$ is Borel measurable and finite everywhere.
+
 :::
 
-<1>3. Every nonempty interval has infinite integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every nonempty interval has infinite integral.
+
+::: pf-proof
+
 Fix $a<b$. Choose a rational interval $B_j$ with
 \[
 B_j\subset(a,b).
@@ -111,5 +132,11 @@ Since $f=F$ almost everywhere, the same is true for $f$:
 \boxed{\int_a^b f(x)\,dx=\infty\quad\text{for every }a<b.}
 \]
 Thus such a function exists.
+
 :::
+
+:::
+
+:::
+
 :::

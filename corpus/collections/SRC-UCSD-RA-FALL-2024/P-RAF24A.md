@@ -29,8 +29,15 @@ Show that either $E$ or $E^c$ has measure 0.
 :::
 
 ::: {.solution}
-<1>1. Assume both sets have positive measure and localize them.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Assume both sets have positive measure and localize them.
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 \[
 m(E)>0
@@ -47,10 +54,17 @@ with
 \[
 0<m(A),m(B)<\infty.
 \]
+
 :::
 
-<1>2. Use continuity of translation to find a rational translate with positive overlap.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use continuity of translation to find a rational translate with positive overlap.
+
+::: pf-proof
+
 Define
 \[
 h(t):=m((A+t)\cap B)
@@ -76,10 +90,17 @@ Thus $h(t_0)>0$ for some $t_0$. By continuity, $h>0$ on a nonempty open interval
 \[
 m((A+r)\cap B)=h(r)>0.
 \]
+
 :::
 
-<1>3. Contradict rational invariance.
-::: {.proof}
+:::
+
+::: pf-step
+
+Contradict rational invariance.
+
+::: pf-proof
+
 Because $A\subset E$ and $r\in\mathbb Q$,
 \[
 A+r\subset E+r=E.
@@ -92,5 +113,11 @@ contradicting Step 2. Hence it is impossible for both $E$ and $E^c$ to have posi
 \[
 \boxed{m(E)=0\quad\text{or}\quad m(E^c)=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

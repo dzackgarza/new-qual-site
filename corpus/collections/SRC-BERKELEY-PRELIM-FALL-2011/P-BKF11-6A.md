@@ -42,12 +42,17 @@ c_a(x)\coloneqq axa^{-1}
 $$
 be the inner automorphism determined by $a$.
 
-<1>1. For every $h\in\Aut(G)$ and $a\in G$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $h\in\Aut(G)$ and $a\in G$,
 $$
 h\circ c_a\circ h^{-1}=c_{h(a)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $x\in G$,
 $$
 \begin{aligned}
@@ -58,9 +63,14 @@ $$
 \end{aligned}
 $$
 Thus the two automorphisms agree on every element of $G$.
+
 :::
 
-<1>2. For $a,b\in G$,
+:::
+
+::: {.pf-step #s2}
+
+For $a,b\in G$,
 $$
 c_a=c_b
 $$
@@ -69,7 +79,8 @@ $$
 b^{-1}a\in Z(G).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose first that $c_a=c_b$. Then for every $x\in G$,
 $$
 axa^{-1}=bxb^{-1}.
@@ -88,21 +99,27 @@ axa^{-1}
 =bxb^{-1},
 $$
 so $c_a=c_b$.
+
 :::
 
-<1>3. Every element of $Z(\Aut(G))$ is the identity automorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every element of $Z(\Aut(G))$ is the identity automorphism.
+
+::: pf-proof
+
 Let $h\in Z(\Aut(G))$. Since every $c_a$ belongs to $\Aut(G)$,
 centrality gives
 $$
 h\circ c_a\circ h^{-1}=c_a
 $$
-for every $a\in G$. By step <1>1,
+for every $a\in G$. By step [](#s1){.pf-ref},
 $$
 c_{h(a)}=c_a.
 $$
-Step <1>2 therefore gives
+Step [](#s2){.pf-ref} therefore gives
 $$
 a^{-1}h(a)\in Z(G)=\{e\}.
 $$
@@ -110,21 +127,33 @@ Thus $h(a)=a$ for every $a\in G$, so
 $$
 h=\operatorname{id}_G.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{Z(\Aut(G))=\{\operatorname{id}_G\}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The identity automorphism belongs to the center of every automorphism
-group, and step <1>3 shows that no other automorphism does.
+group, and step [](#s3){.pf-ref} shows that no other automorphism does.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

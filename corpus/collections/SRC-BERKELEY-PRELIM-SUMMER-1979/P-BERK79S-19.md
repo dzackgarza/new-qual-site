@@ -45,25 +45,37 @@ g_n(x)=\int_0^1\sqrt{x+y}\,f_n(y)\,dy,
 :::
 
 ::: {.solution}
-<1>1. For every $n$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n$,
 $$
 \norm{f_n}_{L^2([0,1])}\leq\sqrt5.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis gives
 $$
 \int_0^1 f_n(y)^2\,dy\leq5.
 $$
 Taking square roots gives the stated $L^2$ bound.
+
 :::
 
-<1>2. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s2}
+
+For every $x\in[0,1]$,
 $$
 \int_0^1(x+y)\,dy=x+\frac12\leq\frac32.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Direct integration gives
 $$
 \int_0^1(x+y)\,dy
@@ -71,16 +83,22 @@ $$
 x+\frac12.
 $$
 Since $x\leq1$, this is at most $3/2$.
+
 :::
 
-<1>3. For every $n$ and every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n$ and every $x\in[0,1]$,
 $$
 \abs{g_n(x)}
 \leq
 \sqrt{\frac{15}{2}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By Cauchy--Schwarz,
 $$
 \begin{aligned}
@@ -99,7 +117,7 @@ $$
 \right)^{1/2}.
 \end{aligned}
 $$
-Apply steps <1>1--<1>2:
+Apply steps [](#s1){.pf-ref} and [](#s2){.pf-ref}:
 $$
 \abs{g_n(x)}
 \leq
@@ -107,27 +125,39 @@ $$
 =
 \sqrt{\frac{15}{2}}.
 $$
+
 :::
 
-<1>4. One may take
+:::
+
+::: {.pf-step #s4}
+
+One may take
 $$
 \boxed{
 K=\sqrt{\frac{15}{2}}.
 }
 $$
 
-::: {.proof}
-Step <1>3 gives the required uniform bound for this constant.
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives the required uniform bound for this constant.
+
 :::
 
-<1>5. For all nonnegative real numbers $a,b$,
+:::
+
+::: {.pf-step #s5}
+
+For all nonnegative real numbers $a,b$,
 $$
 \abs{\sqrt a-\sqrt b}
 \leq
 \sqrt{\abs{a-b}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Assume without loss of generality that $a\geq b$. Then
 $$
 \begin{aligned}
@@ -143,16 +173,22 @@ $$
 b\leq\sqrt{ab}
 $$
 when $a\geq b\geq0$. Taking square roots gives the claim.
+
 :::
 
-<1>6. For every $n$ and all $x,x'\in[0,1]$,
+:::
+
+::: {.pf-step #s6}
+
+For every $n$ and all $x,x'\in[0,1]$,
 $$
 \abs{g_n(x)-g_n(x')}
 \leq
 \sqrt5\,\abs{x-x'}^{1/2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of $g_n$ and Cauchy--Schwarz,
 $$
 \begin{aligned}
@@ -171,7 +207,7 @@ $$
 \right)^{1/2}.
 \end{aligned}
 $$
-By step <1>5,
+By step [](#s5){.pf-ref},
 $$
 \abs{
 \sqrt{x+y}-\sqrt{x'+y}
@@ -189,17 +225,23 @@ $$
 \leq
 \abs{x-x'}.
 $$
-Combine this with step <1>1 to obtain the displayed estimate.
+Combine this with step [](#s1){.pf-ref} to obtain the displayed estimate.
+
 :::
 
-<1>7. The family
+:::
+
+::: {.pf-step #s7}
+
+The family
 $$
 \{g_n:n\geq1\}
 $$
 is uniformly bounded and equicontinuous on $[0,1]$.
 
-::: {.proof}
-Uniform boundedness is step <1>3.
+::: pf-proof
+
+Uniform boundedness is step [](#s3){.pf-ref}.
 
 For equicontinuity, let $\varepsilon>0$ and choose
 $$
@@ -209,7 +251,7 @@ If
 $$
 \abs{x-x'}<\delta,
 $$
-then step <1>6 gives
+then step [](#s6){.pf-ref} gives
 $$
 \abs{g_n(x)-g_n(x')}
 <
@@ -218,20 +260,32 @@ $$
 \varepsilon
 $$
 for every $n$. This is equicontinuity.
+
 :::
 
-<1>8. Some subsequence of $(g_n)$ converges uniformly on $[0,1]$.
+:::
 
-::: {.proof}
-Each $g_n$ is continuous by the estimate in step <1>6. The interval
-$[0,1]$ is compact, and step <1>7 gives uniform boundedness and
+::: {.pf-step #s8}
+
+Some subsequence of $(g_n)$ converges uniformly on $[0,1]$.
+
+::: pf-proof
+
+Each $g_n$ is continuous by the estimate in step [](#s6){.pf-ref}. The interval
+$[0,1]$ is compact, and step [](#s7){.pf-ref} gives uniform boundedness and
 equicontinuity. The Arzelà--Ascoli theorem therefore gives a subsequence
 which converges uniformly on $[0,1]$.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>4 answers part (1), and step <1>8 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} answers part (1), and step [](#s8){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

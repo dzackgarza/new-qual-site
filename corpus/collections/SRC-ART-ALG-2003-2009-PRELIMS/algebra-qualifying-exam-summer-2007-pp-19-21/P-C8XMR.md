@@ -39,7 +39,11 @@ View the number fields inside $\mathbb C$. A complex number is
 constructible when its real and imaginary coordinates are
 straightedge-and-compass constructible from $0$ and $1$.
 
-<1>1. A complex number $z$ is constructible if and only if it lies
+::: pf
+
+::: {.pf-step #s1}
+
+A complex number $z$ is constructible if and only if it lies
 in a finite tower
 $$
 \mathbb Q=E_0\subset E_1\subset\cdots\subset E_r\subseteq\mathbb C,
@@ -47,7 +51,8 @@ $$
 $$
 The tower of length zero is allowed.
 
-::: {.proof}
+::: pf-proof
+
 Use the real quadratic-tower criterion and the fact that the real
 constructible numbers form a field closed under nonnegative square
 roots [@DF04]. For constructible real and imaginary coordinates,
@@ -72,12 +77,18 @@ allowed when $b=0$. Then $(u+i\varepsilon v)^2=z$.
 The quadratic formula now shows that every quadratic extension
 of a field of constructible complex numbers still consists of
 constructible numbers. Induction up the tower proves the converse.
+
 :::
 
-<1>2. A group of order $2^n$ admits a chain from the whole group
+:::
+
+::: {.pf-step #s2}
+
+A group of order $2^n$ admits a chain from the whole group
 to the identity subgroup with every successive index equal to $2$.
 
-::: {.proof}
+::: pf-proof
+
 We induct on $n$, with the trivial group as the case $n=0$.
 For a nontrivial $2$-group $G$, the conjugacy-class equation shows
 that $|Z(G)|$ is even: every noncentral conjugacy class has size
@@ -91,30 +102,42 @@ Apply induction to $G/C$. Taking inverse images of its subgroup
 chain gives a chain from $G$ to $C$ with all successive indices $2$,
 because the quotient map identifies the relevant coset spaces.
 Append $C\supset\{1\}$ to obtain the required chain.
+
 :::
 
-<1>3. In part (a), every element of $K$ is constructible.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (a), every element of $K$ is constructible.
+
+::: pf-proof
+
 The group $G=\operatorname{Gal}(K/\mathbb Q)$ has order $2^n$.
 Choose the chain
 $$
 G=G_0\supset G_1\supset\cdots\supset G_n=\{1\}
 $$
-from step <1>2, and set $F_i=K^{G_i}$. The Galois correspondence
+from step [](#s2){.pf-ref}, and set $F_i=K^{G_i}$. The Galois correspondence
 and its degree formula [@DF04] give
 $$
 \mathbb Q=F_0\subset F_1\subset\cdots\subset F_n=K,
 \qquad [F_{i+1}:F_i]=[G_i:G_{i+1}]=2.
 $$
 Thus every element of $K$ lies in a quadratic tower and is
-constructible by step <1>1.
+constructible by step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. Every finite quadratic tower over $\mathbb Q$ is contained
+:::
+
+::: {.pf-step #s4}
+
+Every finite quadratic tower over $\mathbb Q$ is contained
 in a finite Galois extension of $\mathbb Q$ of power-of-two degree.
 
-::: {.proof}
+::: pf-proof
+
 Let $\mathbb Q=E_0\subset\cdots\subset E_r$ be such a tower.
 In characteristic zero, completing the square in a quadratic
 minimal polynomial gives
@@ -146,12 +169,18 @@ The tower law makes $[N_i:\mathbb Q]$ a power of $2$ as well.
 The identity element of $H$ ensures that $\sqrt{a_i}\in N_i$,
 and hence $E_i\subseteq N_i$. This completes the induction;
 $N_r$ is the required extension.
+
 :::
 
-<1>5. The root in part (b) is not constructible.
+:::
 
-::: {.proof}
-Suppose $\alpha$ were constructible. Steps <1>1 and <1>4 put it in
+::: pf-step
+
+The root in part (b) is not constructible.
+
+::: pf-proof
+
+Suppose $\alpha$ were constructible. Steps [](#s1){.pf-ref} and [](#s4){.pf-ref} put it in
 a finite Galois extension $N/\mathbb Q$ with $[N:\mathbb Q]=2^m$
 for some $m\geq0$. The irreducible polynomial $f$ has a root in
 the normal extension $N/\mathbb Q$, so it splits in $N$.
@@ -162,5 +191,11 @@ $$
 $$
 which is impossible since $3\mid24$ but $3\nmid2^m$.
 Thus $\alpha$ is not constructible.
+
 :::
+
+:::
+
+:::
+
 :::

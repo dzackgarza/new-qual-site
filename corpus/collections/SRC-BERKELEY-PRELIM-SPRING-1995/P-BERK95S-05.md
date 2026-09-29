@@ -29,10 +29,15 @@ is monotone.
 ::: {.solution}
 Let $y$ be a solution on an interval $I$.
 
-<1>1. If $y'(x_0)=0$ at some $x_0\in I$, then $y$ is constant on
+::: pf
+
+::: {.pf-step #s1}
+
+If $y'(x_0)=0$ at some $x_0\in I$, then $y$ is constant on
 $I$.
 
-::: {.proof}
+::: pf-proof
+
 From the differential equation,
 $$
 0=y'(x_0)=f(y(x_0)).
@@ -60,13 +65,19 @@ The set $E$ is closed by continuity. If $x\in E$, then
 $f(y(x))=f(c)=0$, so the same local-uniqueness argument shows that
 $y\equiv c$ near $x$; hence $E$ is open in $I$. Since $I$ is
 connected and $E$ is nonempty, $E=I$.
+
 :::
 
-<1>2. Every nonconstant solution has derivative of one strict sign on
+:::
+
+::: {.pf-step #s2}
+
+Every nonconstant solution has derivative of one strict sign on
 $I$.
 
-::: {.proof}
-If $y$ is nonconstant, step <1>1 shows that
+::: pf-proof
+
+If $y$ is nonconstant, step [](#s1){.pf-ref} shows that
 $$
 y'(x)\ne0
 \qquad(x\in I).
@@ -78,18 +89,30 @@ $$
 is continuous. A continuous nonvanishing real-valued function on the
 connected interval $I$ has constant sign. Thus either
 $y'(x)>0$ for every $x\in I$ or $y'(x)<0$ for every $x\in I$.
+
 :::
 
-<1>3. Every solution is monotone.
+:::
 
-::: {.proof}
-A constant solution is monotone. By step <1>2, every nonconstant
+::: {.pf-step #s3}
+
+Every solution is monotone.
+
+::: pf-proof
+
+A constant solution is monotone. By step [](#s2){.pf-ref}, every nonconstant
 solution is either strictly increasing or strictly decreasing.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves the assertion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the assertion.
+
+:::
+
+:::
+
 :::

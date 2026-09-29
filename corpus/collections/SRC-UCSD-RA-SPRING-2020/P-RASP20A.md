@@ -40,10 +40,16 @@ Then there exists $j_0$ such that $\mu(E_{j_0}) \geq q/n$.
 (4) The space $C([0,1])$ is a closed subspace of $L^1([0,1], m)$ with respect to the $L^1$-norm.
 :::
 
-
 ::: {.solution}
-<1>1. Statement (1) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Statement (1) is false.
+
+::: pf-proof
+
 Take
 \[
 E=\mathbb Q\cap[0,1].
@@ -61,10 +67,17 @@ Therefore
 m(E_k)=1+2/k\longrightarrow1\ne0=m(E).
 \]
 Thus the assertion is false.
+
 :::
 
-<1>2. Statement (2) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (2) is true.
+
+::: pf-proof
+
 A differentiable function is continuous, hence Borel measurable. For each \(n\ge2\), define the Borel function
 \[
 q_n(x)=
@@ -78,10 +91,17 @@ For each fixed \(x\in(0,1)\), eventually \(x<1-1/n\), and differentiability give
 q_n(x)\longrightarrow f'(x).
 \]
 Thus \(f'\) is a pointwise limit of Borel functions and is therefore Borel measurable.
+
 :::
 
-<1>3. Statement (3) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (3) is true.
+
+::: pf-proof
+
 The hypothesis says
 \[
 \sum_{j=1}^n\mathbf1_{E_j}(x)\ge q
@@ -97,10 +117,17 @@ Hence at least one term satisfies
 \[
 \boxed{\mu(E_{j_0})\ge q/n.}
 \]
+
 :::
 
-<1>4. Statement (4) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (4) is false.
+
+::: pf-proof
+
 Let
 \[
 f=\mathbf1_{[0,1/2]}.
@@ -110,5 +137,11 @@ Continuous piecewise-linear functions obtained by smoothing the jump on an inter
 But the \(L^1\)-class of \(f\) has no continuous representative: any continuous representative equal to \(1\) almost everywhere on \((0,1/2)\) must equal \(1\) everywhere there by continuity, and similarly must equal \(0\) everywhere on \((1/2,1)\), contradicting continuity at \(1/2\). Hence \(f\notin C([0,1])\) as an \(L^1\)-class.
 
 Therefore \(C([0,1])\) is not closed in \(L^1([0,1])\).
+
 :::
+
+:::
+
+:::
+
 :::

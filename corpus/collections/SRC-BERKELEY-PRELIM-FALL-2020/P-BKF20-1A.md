@@ -40,7 +40,12 @@ Find the indefinite integral
 :::
 
 ::: {.solution}
-<1>1. Integration by parts gives
+
+::: pf
+
+::: {.pf-step #s1}
+
+Integration by parts gives
 $$
 \int e^{2x}\sin x\,dx
 =
@@ -49,7 +54,8 @@ $$
 2\int e^{2x}\cos x\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take
 $$
 u=e^{2x},
@@ -68,9 +74,14 @@ $$
 $$
 gives the displayed identity, with the arbitrary additive constant
 understood.
+
 :::
 
-<1>2. A second integration by parts gives
+:::
+
+::: {.pf-step #s2}
+
+A second integration by parts gives
 $$
 \int e^{2x}\cos x\,dx
 =
@@ -79,7 +90,8 @@ e^{2x}\sin x
 2\int e^{2x}\sin x\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Now take
 $$
 u=e^{2x},
@@ -93,9 +105,14 @@ du=2e^{2x}\,dx,
 v=\sin x,
 $$
 and integration by parts gives the claim.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 \int e^{2x}\sin x\,dx
@@ -104,8 +121,9 @@ $$
 }
 $$
 
-::: {.proof}
-Substitute step <1>2 into step <1>1:
+::: pf-proof
+
+Substitute step [](#s2){.pf-ref} into step [](#s1){.pf-ref}:
 $$
 \begin{aligned}
 \int e^{2x}\sin x\,dx
@@ -128,12 +146,18 @@ $$
 where the arbitrary constants from the preceding indefinite
 integrations have been absorbed into one constant. Dividing by $5$
 gives the stated formula.
+
 :::
 
-<1>4. The expression in step <1>3 is an antiderivative of
+:::
+
+::: {.pf-step #s4}
+
+The expression in step [](#s3){.pf-ref} is an antiderivative of
 $e^{2x}\sin x$.
 
-::: {.proof}
+::: pf-proof
+
 Differentiating its nonconstant part gives
 $$
 \begin{aligned}
@@ -154,12 +178,18 @@ e^{2x}\sin x.
 $$
 Thus the formula indeed gives all antiderivatives after adding the
 arbitrary constant $C$.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 gives the requested indefinite integral, and step <1>4
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested indefinite integral, and step [](#s4){.pf-ref}
 verifies it.
+
 :::
+
+:::
+
 :::

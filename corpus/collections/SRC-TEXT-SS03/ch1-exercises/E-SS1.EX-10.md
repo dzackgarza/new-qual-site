@@ -39,7 +39,12 @@ where $\Delta$ is the Laplacian
 :::
 
 ::: {.solution}
-<1>1. On a $C^2$ function $f$, the Wirtinger derivatives are
+
+::: pf
+
+::: {.pf-step #s1}
+
+On a $C^2$ function $f$, the Wirtinger derivatives are
 \[
 \frac{\partial}{\partial z}
 =\frac12\left(\frac{\partial}{\partial x}-i\frac{\partial}{\partial y}\right),
@@ -47,11 +52,18 @@ where $\Delta$ is the Laplacian
 \frac{\partial}{\partial\overline z}
 =\frac12\left(\frac{\partial}{\partial x}+i\frac{\partial}{\partial y}\right).
 \]
-::: {.proof}
+
+::: pf-proof
+
 These are the definitions of the Wirtinger differential operators for $z=x+iy$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 4\frac{\partial}{\partial z}\frac{\partial}{\partial\overline z}f
 =
@@ -60,32 +72,48 @@ These are the definitions of the Wirtinger differential operators for $z=x+iy$.
 -i\frac{\partial^2f}{\partial y\partial x}
 +\frac{\partial^2f}{\partial y^2}.
 \]
-::: {.proof}
-Expand the product of the two first-order operators in <1>1 and apply it to $f$.
+
+::: pf-proof
+
+Expand the product of the two first-order operators in step [](#s1){.pf-ref} and apply it to $f$.
+
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #s3}
+
+Hence
 \[
 4\frac{\partial}{\partial z}\frac{\partial}{\partial\overline z}f=\Delta f.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $f$ is $C^2$, Clairaut's theorem gives
 \[
 \frac{\partial^2f}{\partial x\partial y}
 =
 \frac{\partial^2f}{\partial y\partial x}.
 \]
-Thus the mixed terms in <1>2 cancel, leaving
+Thus the mixed terms in step [](#s2){.pf-ref} cancel, leaving
 \[
 \frac{\partial^2f}{\partial x^2}+\frac{\partial^2f}{\partial y^2}=\Delta f.
 \]
+
 :::
 
-<1>4. Likewise,
+:::
+
+::: {.pf-step #s4}
+
+Likewise,
 \[
 4\frac{\partial}{\partial\overline z}\frac{\partial}{\partial z}f=\Delta f.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Expanding in the reverse order gives
 \[
 \frac{\partial^2f}{\partial x^2}
@@ -94,9 +122,14 @@ Expanding in the reverse order gives
 +\frac{\partial^2f}{\partial y^2},
 \]
 and the same equality of mixed partials cancels the middle terms.
+
 :::
 
-<1>5. Therefore, as second-order differential operators on $C^2$ functions,
+:::
+
+::: pf-step
+
+Therefore, as second-order differential operators on $C^2$ functions,
 \[
 4\frac{\partial}{\partial z}\frac{\partial}{\partial\overline z}
 =
@@ -104,7 +137,15 @@ and the same equality of mixed partials cancels the middle terms.
 =
 \Delta.
 \]
-::: {.proof}
-Both operator compositions agree with $\Delta$ on every $C^2$ function by <1>3 and <1>4.
+
+::: pf-proof
+
+Both operator compositions agree with $\Delta$ on every $C^2$ function by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

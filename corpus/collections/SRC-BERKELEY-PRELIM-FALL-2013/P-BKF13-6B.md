@@ -47,9 +47,14 @@ B\coloneqq
 \end{pmatrix}.
 $$
 
-<1>1. One has $A^2=I_2$ and $B^2=I_2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+One has $A^2=I_2$ and $B^2=I_2$.
+
+::: pf-proof
+
 The identity $A^2=I_2$ is immediate. Also,
 $$
 B^2
@@ -69,9 +74,14 @@ B^2
 \end{pmatrix}
 =I_2.
 $$
+
 :::
 
-<1>2. The product is
+:::
+
+::: {.pf-step #s2}
+
+The product is
 $$
 AB=
 \begin{pmatrix}
@@ -80,14 +90,21 @@ AB=
 \end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This follows by direct matrix multiplication.
+
 :::
 
-<1>3. The matrix $AB$ has eigenvalues $2$ and $1/2$.
+:::
 
-::: {.proof}
-By step <1>2,
+::: {.pf-step #s3}
+
+The matrix $AB$ has eigenvalues $2$ and $1/2$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 AB
 \begin{pmatrix}
@@ -114,18 +131,30 @@ AB
 \end{pmatrix}.
 $$
 Thus $2$ and $1/2$ are eigenvalues of $AB$.
+
 :::
 
-<1>4. Therefore such matrices exist.
-
-::: {.proof}
-Step <1>1 shows that the displayed $A$ and $B$ are involutions, and step
-<1>3 shows that their product has the required eigenvalues.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Step <1>4 answers the existence question affirmatively.
+Therefore such matrices exist.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that the displayed $A$ and $B$ are involutions, and step
+[](#s3){.pf-ref} shows that their product has the required eigenvalues.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} answers the existence question affirmatively.
+
+:::
+
+:::
+
 :::

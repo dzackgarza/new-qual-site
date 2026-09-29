@@ -46,9 +46,14 @@ In (a) and (b), put $K=K(Y)$ and $L=K(X)$, and let $\eta$ be the generic point o
 The finite surjective morphism gives an inclusion $K\hookrightarrow L$ and a finite field extension of degree $r=[L:K]>0$.
 All occurrences of a power of a sheaf in the maps $\alpha$ and $\beta$ mean finite direct sums.
 
-<1>1. A $K$-basis $b_1,\ldots,b_r$ of $L$ gives the coherent sheaf and morphism required in (a).
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+A $K$-basis $b_1,\ldots,b_r$ of $L$ gives the coherent sheaf and morphism required in (a).
+
+::: pf-proof
+
 Let $\mathcal K_X$ be the sheaf of rational functions on the integral scheme $X$.
 It is quasi-coherent: on $\Spec B\subseteq X$ it is the associated sheaf of the $B$-module $\operatorname{Frac}B=L$, whose localizations at nonzero elements are again $L$.
 Each $b_i$ is a global section of this sheaf.
@@ -65,15 +70,21 @@ Indeed, over an affine open $\Spec A\subseteq Y$, the finite inverse image has c
 The sheaf $\mcm$ on this fibre is $L$, since its nonzero generators span it as an $L$-module.
 Consequently $\alpha_\eta$ is the basis isomorphism $K^{\oplus r}\to L$.
 This proves (a), without requiring $L/K$ to be separable.
+
 :::
 
-<1>2. The coherent sheaf
+:::
+
+::: {.pf-step #s2}
+
+The coherent sheaf
 $$
 \mathcal H=\sheafhom_{\OO_Y}(f_*\mcm,\mcf)
 $$
 is the direct image of a coherent sheaf $\mcg$ on $X$.
 
-::: {.proof}
+::: pf-proof
+
 Finite pushforward preserves coherence on noetherian schemes by [[P-AGH255PUSHCOH]], part (c).
 Thus $f_*\mcm$ and $\mcf$ are coherent.
 Their sheaf Hom is coherent: locally a finite presentation of the first module identifies Hom with the kernel of a map between two finite direct sums of the second module.
@@ -92,27 +103,39 @@ The module corresponding to $\mathcal H$ is finite over $A$ by its coherence.
 Its finite $A$-generating set also generates it as a $B$-module, since the $B$-action extends the $A$-action.
 The ring $B$ is noetherian, so the corresponding sheaf on $\Spec B$ is coherent.
 These opens cover $X$, proving coherence of $\mcg$.
+
 :::
 
-<1>3. Precomposition with $\alpha$ gives the morphism in (b), which is an isomorphism at $\eta$.
+:::
 
-::: {.proof}
-Use step <1>2 to identify $f_*\mcg$ with $\mathcal H$ and define
+::: {.pf-step #s3}
+
+Precomposition with $\alpha$ gives the morphism in (b), which is an isomorphism at $\eta$.
+
+::: pf-proof
+
+Use step [](#s2){.pf-ref} to identify $f_*\mcg$ with $\mathcal H$ and define
 $$
 \beta:f_*\mcg\cong\sheafhom_{\OO_Y}(f_*\mcm,\mcf)
 \xrightarrow{\alpha^*}\sheafhom_{\OO_Y}(\OO_Y^{\oplus r},\mcf)
 \cong\mcf^{\oplus r}.
 $$
-The Hom description in step <1>2 commutes with localization, so at $\eta$ this is precomposition with the isomorphism $\alpha_\eta$ of step <1>1.
+The Hom description in step [](#s2){.pf-ref} commutes with localization, so at $\eta$ this is precomposition with the isomorphism $\alpha_\eta$ of step [](#s1){.pf-ref}.
 It is therefore an isomorphism there for every finite-dimensional $K$-vector space $\mcf_\eta$, including zero.
 This proves (b).
+
 :::
 
-<1>4. In the setting of the theorem, suppose in addition that $X,Y$ are integral and every proper reduced closed subscheme of $Y$ is affine.
+:::
+
+::: {.pf-step #s4}
+
+In the setting of the theorem, suppose in addition that $X,Y$ are integral and every proper reduced closed subscheme of $Y$ is affine.
 Then $Y$ is affine.
 
-::: {.proof}
-For any coherent $\mcf$ on $Y$, take $\beta$ from step <1>3 and set
+::: pf-proof
+
+For any coherent $\mcf$ on $Y$, take $\beta$ from step [](#s3){.pf-ref} and set
 $$
 \mathcal K=\ker\beta,\qquad\mathcal C=\coker\beta,
 \qquad\mathcal Q=\im\beta.
@@ -141,11 +164,17 @@ then gives $H^1(Y,\mcf^{\oplus r})=0$.
 Cohomology commutes with finite direct sums, and $r>0$, so $H^1(Y,\mcf)=0$.
 This holds for every coherent sheaf, in particular every coherent ideal sheaf.
 Serre's criterion [[T-5IOUR]] proves that $Y$ is affine.
+
 :::
 
-<1>5. Noetherian induction proves (c) for the original finite surjective morphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Noetherian induction proves (c) for the original finite surjective morphism.
+
+::: pf-proof
+
 Fix the morphism in the theorem, and induct on closed subsets $T\subseteq Y$ to prove that their reduced induced subschemes $T_{\mathrm{red}}$ are affine.
 The empty subset is affine.
 Suppose the assertion holds for every proper closed subset of a nonempty $T$.
@@ -163,16 +192,22 @@ The finitely many irreducible components of $(X_T)_{\mathrm{red}}$ have closed i
 Irreducibility forces one image to be all of $T$.
 Choose that component with its reduced structure; it is integral and affine, being closed in $X_T$, and maps finite surjectively to $T_{\mathrm{red}}$.
 Every proper reduced closed subscheme of $T_{\mathrm{red}}$ is affine by induction.
-Step <1>4 applies to this component and proves affineness of $T_{\mathrm{red}}$.
+Step [](#s4){.pf-ref} applies to this component and proves affineness of $T_{\mathrm{red}}$.
 
 Thus the induction closes on the noetherian space $Y$.
 Taking $T=Y$ proves that $Y_{\mathrm{red}}$ is affine, and [[P-AGH331REDAFFINE]] finally gives affineness of $Y$.
-This retains any nonreduced structure in the original schemes and in the supports used in step <1>4.
+This retains any nonreduced structure in the original schemes and in the supports used in step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), steps <1>2--<1>3 prove (b), and steps <1>4--<1>5 prove (c) and the theorem.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (b), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (c) and the theorem.
+
+:::
+
+:::
+
 :::

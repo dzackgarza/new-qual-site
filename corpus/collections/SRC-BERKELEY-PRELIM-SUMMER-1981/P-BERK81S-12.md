@@ -30,9 +30,15 @@ Show that no commutative ring with identity has additive group isomorphic to $\m
 :::
 
 ::: {.solution}
-<1>1. Every element of the additive group $\QQ/\ZZ$ has finite order.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every element of the additive group $\QQ/\ZZ$ has finite order.
+
+::: pf-proof
+
 Let
 $$
 \frac ab+\ZZ
@@ -51,32 +57,44 @@ a+\ZZ
 0.
 $$
 Thus every element of $\QQ/\ZZ$ is torsion.
+
 :::
 
-<1>2. Suppose, toward a contradiction, that $R$ is a ring with identity
+:::
+
+::: {.pf-step #s2}
+
+Suppose, toward a contradiction, that $R$ is a ring with identity
 $1_R$ whose additive group is isomorphic to $\QQ/\ZZ$. Then there is an
 integer $n\geq1$ such that
 $$
 n1_R=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Under an additive-group isomorphism
 $$
 (R,+)\cong\QQ/\ZZ,
 $$
-the element $1_R$ corresponds to an element of $\QQ/\ZZ$. By step <1>1,
+the element $1_R$ corresponds to an element of $\QQ/\ZZ$. By step [](#s1){.pf-ref},
 that element has finite additive order. Hence some positive integer $n$
 satisfies the displayed equality.
+
 :::
 
-<1>3. Every element of $R$ is annihilated additively by $n$:
+:::
+
+::: {.pf-step #s3}
+
+Every element of $R$ is annihilated additively by $n$:
 $$
 nr=0
 $$
 for every $r\in R$.
 
-::: {.proof}
+::: pf-proof
+
 For any $r\in R$, distributivity and the identity property give
 $$
 \begin{aligned}
@@ -89,12 +107,18 @@ nr
 0.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The additive group $\QQ/\ZZ$ is not annihilated by any positive
+:::
+
+::: {.pf-step #s4}
+
+The additive group $\QQ/\ZZ$ is not annihilated by any positive
 integer.
 
-::: {.proof}
+::: pf-proof
+
 Fix $n\geq1$. Consider
 $$
 \frac1{n+1}+\ZZ
@@ -116,22 +140,34 @@ n
 0.
 $$
 Thus multiplication by $n$ does not annihilate all of $\QQ/\ZZ$.
+
 :::
 
-<1>5. No ring with identity can have additive group isomorphic to
+:::
+
+::: {.pf-step #s5}
+
+No ring with identity can have additive group isomorphic to
 $\QQ/\ZZ$.
 
-::: {.proof}
-Step <1>3 says that, under the supposition in step <1>2, multiplication by
+::: pf-proof
+
+Step [](#s3){.pf-ref} says that, under the supposition in step [](#s2){.pf-ref}, multiplication by
 $n$ annihilates the entire additive group of $R$. An additive-group
 isomorphism would then imply that multiplication by $n$ annihilates
-$\QQ/\ZZ$, contradicting step <1>4.
+$\QQ/\ZZ$, contradicting step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 proves the required nonexistence statement. In particular, no
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the required nonexistence statement. In particular, no
 commutative ring with identity has the stated additive group.
+
 :::
+
+:::
+
 :::

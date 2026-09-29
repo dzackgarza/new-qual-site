@@ -23,43 +23,83 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $f \ast g$ is uniformly continuous.
 
-<2>1. $|f \ast g(x + h) - f \ast g(x)| \le \|g\|_1 \sup_{z}|f(z + h) - f(z)|$ for all $x, h$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$f \ast g$ is uniformly continuous.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+$|f \ast g(x + h) - f \ast g(x)| \le \|g\|_1 \sup_{z}|f(z + h) - f(z)|$ for all $x, h$.
+
+::: pf-proof
+
 $|f\ast g(x+h) - f\ast g(x)| = \left|\int (f(x + h - y) - f(x - y))g(y)\,dy\right| \le \int |f(x+h-y) - f(x-y)|\,|g(y)|\,dy$, and the first factor of the integrand is at most $\sup_z|f(z+h) - f(z)|$.
+
 :::
 
-<2>2. $\sup_z|f(z + h) - f(z)| \to 0$ as $h \to 0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s1-2}
+
+$\sup_z|f(z + h) - f(z)| \to 0$ as $h \to 0$.
+
+::: pf-proof
+
 A continuous function with compact support is uniformly continuous.
+
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-Steps <2>1 and <2>2 give $\sup_x|f\ast g(x + h) - f\ast g(x)| \to 0$ as $h \to 0$.
 :::
 
-<1>2. $f \ast g$ is compactly supported.
+::: pf-qed
 
-<2>1. $\supp f + \supp g$ is compact.
+Steps [](#s1-1){.pf-ref} and [](#s1-2){.pf-ref} give $\sup_x|f\ast g(x + h) - f\ast g(x)| \to 0$ as $h \to 0$.
 
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+$f \ast g$ is compactly supported.
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+$\supp f + \supp g$ is compact.
+
+::: pf-proof
+
 It is the image of the compact set $\supp f \times \supp g$ under the continuous map $(a,b) \mapsto a + b$.
+
 :::
 
-<2>2. Q.E.D.
-
-::: {.proof}
-If $x \notin \supp f + \supp g$, then $(x - \supp g) \cap \supp f = \emptyset$, so $f(x - y)g(y) = 0$ for every $y$ and $f\ast g(x) = 0$. So $\theset{f\ast g \neq 0}$ lies in the closed set $\supp f + \supp g$, and so does its closure $\supp(f\ast g)$, which is compact by step <2>1.
 :::
 
-<1>3. Q.E.D.
+::: pf-qed
 
-::: {.proof}
-Steps <1>1 and <1>2.
+If $x \notin \supp f + \supp g$, then $(x - \supp g) \cap \supp f = \emptyset$, so $f(x - y)g(y) = 0$ for every $y$ and $f\ast g(x) = 0$. So $\theset{f\ast g \neq 0}$ lies in the closed set $\supp f + \supp g$, and so does its closure $\supp(f\ast g)$, which is compact by step [](#s2-1){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
 :::

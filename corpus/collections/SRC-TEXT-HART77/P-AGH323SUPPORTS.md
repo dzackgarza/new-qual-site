@@ -72,9 +72,14 @@ $$
 We use the ordinary cohomological facts that injective abelian sheaves are flasque, flasque sheaves are acyclic for global sections on every open, and acyclic resolutions compute right derived functors [@Har10a, Chapter III, §1, Lemma III.2.4 and Proposition III.2.5].
 Restriction of a flasque sheaf to an open subset is flasque by its definition.
 
-<1>1. Sections with support in $Y$ form an additive left exact functor, proving (a).
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Sections with support in $Y$ form an additive left exact functor, proving (a).
+
+::: pf-proof
+
 A morphism of sheaves sends a section with zero germ at a point to one with zero germ there.
 It therefore sends sections supported in $Y$ to sections supported in $Y$, and respects sums, identities and compositions.
 
@@ -85,11 +90,17 @@ At every point outside $Y$, the image of $t_x$ under the injective stalk map $a_
 Thus $t_x=0$ there, so $t$ is supported in $Y$.
 This proves exactness at the middle term for sections with support, as well as injectivity at the first term.
 The functor's zeroth derived functor is itself, so $H_Y^0(X,\mcf)=\Gamma_Y(X,\mcf)$.
+
 :::
 
-<1>2. If the kernel $A$ of a short exact sequence $0\to A\to B\to C\to0$ is flasque, then $\Gamma_Y(X,B)\to\Gamma_Y(X,C)$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If the kernel $A$ of a short exact sequence $0\to A\to B\to C\to0$ is flasque, then $\Gamma_Y(X,B)\to\Gamma_Y(X,C)$ is surjective.
+
+::: pf-proof
+
 Let $c\in\Gamma_Y(X,C)$.
 Ordinary global sections of the given sequence are exact on the right, because $H^1(X,A)=0$ for the flasque sheaf $A$.
 Choose a global lift $b\in\Gamma(X,B)$ of $c$.
@@ -97,12 +108,18 @@ Its restriction to $U$ maps to zero in $C|_U$ and therefore comes from a section
 Flasqueness of $A$ extends $a_U$ to $a\in\Gamma(X,A)$.
 Subtract its image from $b$.
 The resulting section still maps to $c$ and restricts to zero on $U$, so it belongs to $\Gamma_Y(X,B)$.
-Together with step <1>1, this gives the full exact sequence in (b).
+Together with step [](#s1){.pf-ref}, this gives the full exact sequence in (b).
+
 :::
 
-<1>3. Every flasque sheaf is acyclic for $\Gamma_Y(X,-)$, proving (c).
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every flasque sheaf is acyclic for $\Gamma_Y(X,-)$, proving (c).
+
+::: pf-proof
+
 First, the quotient $Q$ in a short exact sequence $0\to A\to B\to Q\to0$ with $A$ and $B$ flasque is flasque.
 For opens $W\subseteq V$, a section of $Q$ on $W$ lifts to $B(W)$, because $A|_W$ is acyclic for ordinary global sections.
 Extend the lift to $B(V)$ by flasqueness and take its image in $Q(V)$.
@@ -115,7 +132,7 @@ $$
 $$
 Every $I^j$ is flasque because it is injective.
 The quotient assertion just proved shows inductively that every $Z^j$ is flasque.
-Step <1>2 makes each of these sequences exact after applying $\Gamma_Y(X,-)$.
+Step [](#s2){.pf-ref} makes each of these sequences exact after applying $\Gamma_Y(X,-)$.
 Splicing the resulting sequences shows that the augmented complex
 $$
 0\to\Gamma_Y(X,\mcf)\to\Gamma_Y(X,I^0)
@@ -123,21 +140,33 @@ $$
 $$
 is exact.
 Its positive-degree cohomology groups are the derived functors $H_Y^i(X,\mcf)$, so they are zero.
+
 :::
 
-<1>4. The sequence in (d) is exact for every flasque $\mcf$.
+:::
 
-::: {.proof}
-The kernel of restriction to $U$ is exactly $\Gamma_Y(X,\mcf)$ by the support description preceding step <1>1.
+::: {.pf-step #s4}
+
+The sequence in (d) is exact for every flasque $\mcf$.
+
+::: pf-proof
+
+The kernel of restriction to $U$ is exactly $\Gamma_Y(X,\mcf)$ by the support description preceding step [](#s1){.pf-ref}.
 The restriction map $\Gamma(X,\mcf)\to\Gamma(U,\mcf|_U)$ is surjective by flasqueness.
 This proves all terms of the short exact sequence in (d).
+
 :::
 
-<1>5. The long exact sequence in (e) is the cohomology sequence of a short exact sequence of complexes.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The long exact sequence in (e) is the cohomology sequence of a short exact sequence of complexes.
+
+::: pf-proof
+
 Choose an injective resolution $\mcf\to I^\bullet$ on $X$.
-Its terms are flasque, so step <1>4 gives a degreewise short exact sequence
+Its terms are flasque, so step [](#s4){.pf-ref} gives a degreewise short exact sequence
 $$
 0\to\Gamma_Y(X,I^\bullet)\to\Gamma(X,I^\bullet)
 \to\Gamma(U,I^\bullet|_U)\to0.
@@ -145,14 +174,20 @@ $$
 The first two complexes compute $H_Y^i(X,\mcf)$ and $H^i(X,\mcf)$ by definition.
 Restriction is exact, and $I^\bullet|_U$ has flasque terms.
 It is therefore an acyclic resolution of $\mcf|_U$ for ordinary cohomology, so the third complex computes $H^i(U,\mcf|_U)$.
-The long exact cohomology sequence of these complexes is exactly the sequence in (e), with the zeroth supported term identified by step <1>1.
+The long exact cohomology sequence of these complexes is exactly the sequence in (e), with the zeroth supported term identified by step [](#s1){.pf-ref}.
 The maps arise from inclusion of supported sections, restriction and the connecting maps of the short exact sequence.
 Comparison of resolutions gives their naturality in $\mcf$ [@Har10a, Chapter III, §1].
+
 :::
 
-<1>6. Restriction gives the natural excision isomorphisms in (f).
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Restriction gives the natural excision isomorphisms in (f).
+
+::: pf-proof
+
 For every sheaf $A$ on $X$, restriction induces an isomorphism
 $$
 \Gamma_Y(X,A)\xrightarrow{\cong}\Gamma_Y(V,A|_V).
@@ -162,17 +197,23 @@ It therefore glues with the zero section on $X\setminus Y$ to a unique section o
 The glued section has support in $Y$.
 This construction is inverse to restriction and commutes with morphisms of sheaves.
 
-Apply these degree-zero isomorphisms to the injective resolution $I^\bullet$ from step <1>5.
+Apply these degree-zero isomorphisms to the injective resolution $I^\bullet$ from step [](#s5){.pf-ref}.
 They identify the complexes $\Gamma_Y(X,I^\bullet)$ and $\Gamma_Y(V,I^\bullet|_V)$.
 The restricted complex resolves $\mcf|_V$ and consists of flasque sheaves.
-By step <1>3, these terms are acyclic for $\Gamma_Y(V,-)$, so its cohomology is $H_Y^i(V,\mcf|_V)$.
+By step [](#s3){.pf-ref}, these terms are acyclic for $\Gamma_Y(V,-)$, so its cohomology is $H_Y^i(V,\mcf|_V)$.
 The first complex computes $H_Y^i(X,\mcf)$.
 Taking cohomology of the natural isomorphism of complexes proves (f) in every degree, including degree zero.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>6 prove parts (a)--(f), respectively, without imposing a noetherian, separation or local compactness hypothesis on the topological space.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove parts (a)--(f), respectively, without imposing a noetherian, separation or local compactness hypothesis on the topological space.
+
+:::
+
+:::
+
 :::

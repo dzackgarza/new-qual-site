@@ -49,11 +49,16 @@ preceding stage, starting with $f(x_0)=f(1)=0$.
 ::: {.solution}
 Write $f^{(0)}\coloneqq f$ and $x_0\coloneqq1$.
 
-<1>1. Let $1\leq k\leq n+1$ and $t\in(0,1]$. If
+::: pf
+
+::: {.pf-step #s1}
+
+Let $1\leq k\leq n+1$ and $t\in(0,1]$. If
 $f^{(k-1)}(t)=0$, then there exists $s\in(0,t)$ such that
 $f^{(k)}(s)=0$.
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is infinitely differentiable, $f^{(k-1)}$ is continuous
 on $[0,t]$ and differentiable on $(0,t)$. The inequality
 $0\leq k-1\leq n$ and the hypotheses give $f^{(k-1)}(0)=0$.
@@ -63,27 +68,39 @@ $$
 f^{(k)}(s)
 =\frac{f^{(k-1)}(t)-f^{(k-1)}(0)}{t}=0.
 $$
+
 :::
 
-<1>2. There exist points $x_1,\ldots,x_{n+1}$ such that
+:::
+
+::: {.pf-step #s2}
+
+There exist points $x_1,\ldots,x_{n+1}$ such that
 $$
 1=x_0>x_1>\cdots>x_{n+1}>0,
 \qquad f^{(k)}(x_k)=0\quad(0\leq k\leq n+1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The initial point satisfies $f^{(0)}(x_0)=f(1)=0$. Suppose
 $1\leq k\leq n+1$ and $x_{k-1}\in(0,1]$ has been chosen with
-$f^{(k-1)}(x_{k-1})=0$. Apply step <1>1 with $t=x_{k-1}$
+$f^{(k-1)}(x_{k-1})=0$. Apply step [](#s1){.pf-ref} with $t=x_{k-1}$
 and choose the resulting point as $x_k$. Then
 $0<x_k<x_{k-1}$ and $f^{(k)}(x_k)=0$. Induction constructs
 all the stated points.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 gives $x_{n+1}\in(0,1)$ with
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives $x_{n+1}\in(0,1)$ with
 $f^{(n+1)}(x_{n+1})=0$, as required.
+
 :::
+
+:::
+
 :::

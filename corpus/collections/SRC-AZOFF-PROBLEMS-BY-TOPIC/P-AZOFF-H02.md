@@ -30,12 +30,18 @@ Assuming that $| b | < 1$ , show that $f ( z ) = z ^ { 3 } + 3 z ^ { 2 } + b z +
 :::
 
 ::: {.solution}
-<1>1. On the unit circle,
+
+::: pf
+
+::: {.pf-step #s1}
+
+On the unit circle,
 $$
 \abs{z^3+bz+b^2}<3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}=1$, then
 $$
 \begin{aligned}
@@ -52,42 +58,60 @@ Since $\abs{b}<1$,
 $$
 1+\abs{b}+\abs{b}^2<3.
 $$
+
 :::
 
-<1>2. On the unit circle,
+:::
+
+::: {.pf-step #s2}
+
+On the unit circle,
 $$
 \abs{z^3+bz+b^2}
 <
 \abs{3z^2}.
 $$
 
-::: {.proof}
-By step <1>1, the left-hand side is less than $3$. If $\abs{z}=1$, then
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the left-hand side is less than $3$. If $\abs{z}=1$, then
 $$
 \abs{3z^2}=3.
 $$
+
 :::
 
-<1>3. The polynomial
+:::
+
+::: {.pf-step #s3}
+
+The polynomial
 $$
 f(z)=z^3+3z^2+bz+b^2
 $$
 has exactly two zeros in $\abs{z}<1$, counting multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 f(z)=3z^2+(z^3+bz+b^2).
 $$
-Step <1>2 is the strict Rouché inequality on $\abs{z}=1$. Hence $f$ and
+Step [](#s2){.pf-ref} is the strict Rouché inequality on $\abs{z}=1$. Hence $f$ and
 $3z^2$ have the same number of zeros in the unit disk, counting
 multiplicity. The polynomial $3z^2$ has exactly two zeros there, both at
 $z=0$ counted with multiplicity.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

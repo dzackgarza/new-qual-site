@@ -24,21 +24,38 @@ Determine all entire functions $f: \mathbb{C} \to \mathbb{C}$ for which $|f(z)| 
 ::: {.solution}
 Write $f(z)=\sum_{n\ge0}a_nz^n$, the Taylor series of $f$ at $0$, which converges on $\CC$.
 
-<1>1. $a_n=0$ for $n\ge3$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$a_n=0$ for $n\ge3$.
+
+::: pf-proof
+
 Cauchy's estimate on $\abs z=R$ gives $\abs{a_n}\le R^{-n}\max_{\abs z=R}\abs f\le R^{2-n}$, which tends to $0$ as $R\to\infty$ when $n\ge3$.
+
 :::
 
-<1>2. $a_0=a_1=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$a_0=a_1=0$.
+
+::: pf-proof
+
 $\abs{a_0}=\abs{f(0)}\le0$. Then $\abs{a_1+a_2z}=\abs{f(z)}/\abs z\le\abs z$ for $z\ne0$, and letting $z\to0$ gives $a_1=0$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By steps <1>1 and <1>2, $f(z)=a_2z^2$, and the bound at $z=1$ gives $\abs{a_2}\le1$. Conversely, $cz^2$ with $\abs c\le1$ satisfies the bound. So the functions are $\boxed{f(z)=cz^2,\ \abs c\le1}$.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, $f(z)=a_2z^2$, and the bound at $z=1$ gives $\abs{a_2}\le1$. Conversely, $cz^2$ with $\abs c\le1$ satisfies the bound. So the functions are $\boxed{f(z)=cz^2,\ \abs c\le1}$.
+
+:::
+
+:::
+
 :::

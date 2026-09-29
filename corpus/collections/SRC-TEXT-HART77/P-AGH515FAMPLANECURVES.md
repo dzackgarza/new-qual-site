@@ -44,16 +44,27 @@ V_d=k[x,y,z]_d,
 $$
 so $\dim_kV_d=\binom{d+2}{2}=N+1$ and the parameter space of nonzero degree-$d$ forms up to scalar is $\PP(V_d)\cong\PP^N$.
 
-<1>1. A point $[f]\in\PP(V_d)$ determines the algebraic set $Z(f)\subseteq\PP^2$, and every algebraic set cut out by one degree-$d$ equation occurs in this way.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+A point $[f]\in\PP(V_d)$ determines the algebraic set $Z(f)\subseteq\PP^2$, and every algebraic set cut out by one degree-$d$ equation occurs in this way.
+
+::: pf-proof
+
 Replacing $f$ by a nonzero scalar multiple does not change its zero set, so the assignment is well-defined on projective coefficient space.
 Conversely, by definition, an algebraic set in $\PP^2$ which can be defined by one homogeneous equation of degree $d$ is $Z(f)$ for some nonzero $f\in V_d$, hence comes from the point $[f]$.
+
 :::
 
-<1>2. If $f$ is square-free, then $[f]$ is the unique point of $\PP(V_d)$ defining $Z(f)$; nonuniqueness can occur only when repeated irreducible factors are present.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $f$ is square-free, then $[f]$ is the unique point of $\PP(V_d)$ defining $Z(f)$; nonuniqueness can occur only when repeated irreducible factors are present.
+
+::: pf-proof
+
 Factor
 $$
 f=c\prod_{i=1}^r p_i^{a_i},
@@ -79,11 +90,17 @@ Thus $g$ is a scalar multiple of $f$ and $[g]=[f]$, even if no square-freeness h
 Hence every failure of injectivity requires repeated factors.
 Such failures do occur: the distinct cubic forms $x^2y$ and $xy^2$ define the same union of the two coordinate lines.
 This proves part (a).
+
 :::
 
-<1>3. The set of coefficient points whose degree-$d$ form has a singular projective zero is Zariski closed in $\PP^N$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The set of coefficient points whose degree-$d$ form has a singular projective zero is Zariski closed in $\PP^N$.
+
+::: pf-proof
+
 Write the universal degree-$d$ form as
 $$
 F_A(x,y,z)=\sum_{i+j+k=d}A_{ijk}x^iy^jz^k,
@@ -104,11 +121,17 @@ $$
 \Delta_d\subseteq\PP^N.
 $$
 Its complement $U_d=\PP^N\setminus\Delta_d$ is Zariski open.
+
 :::
 
-<1>4. The open set $U_d$ is nonempty for every $d>0$, and every point of $U_d$ defines an irreducible nonsingular plane curve of degree $d$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The open set $U_d$ is nonempty for every $d>0$, and every point of $U_d$ defines an irreducible nonsingular plane curve of degree $d$.
+
+::: pf-proof
+
 The card [[P-AGH55NONSINGDEGD|a nonsingular plane curve of each degree in each characteristic]] gives an explicit degree-$d$ homogeneous form whose three partial derivatives and defining equation have no common projective zero.
 Its coefficient point therefore belongs to $U_d$, so $U_d$ is nonempty.
 
@@ -122,22 +145,34 @@ $$
 for every first partial derivative, and $gh=0$ as well, producing a singular point of $Z(f)$.
 This contradicts $[f]\in U_d$.
 Thus $f$ is irreducible and defines an irreducible nonsingular curve.
+
 :::
 
-<1>5. Irreducible nonsingular degree-$d$ curves correspond one-to-one with the points of $U_d$.
+:::
 
-::: {.proof}
-Step <1>4 shows that every point of $U_d$ gives such a curve.
+::: {.pf-step #s5}
+
+Irreducible nonsingular degree-$d$ curves correspond one-to-one with the points of $U_d$.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} shows that every point of $U_d$ gives such a curve.
 Conversely, the defining form of an irreducible nonsingular degree-$d$ plane curve has no singular projective zero, so its coefficient point lies in $U_d$.
 
 If two points of $U_d$ define the same curve, their defining forms are irreducible and hence square-free.
-Step <1>2 then shows that the two forms differ by a scalar, so the two points of $\PP^N$ are equal.
+Step [](#s2){.pf-ref} then shows that the two forms differ by a scalar, so the two points of $\PP^N$ are equal.
 This gives the required bijection and proves part (b).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove the coefficient-space correspondence and its possible nonuniqueness, while steps <1>3--<1>5 identify the irreducible nonsingular curves with the nonempty Zariski-open set $U_d$.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove the coefficient-space correspondence and its possible nonuniqueness, while steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} identify the irreducible nonsingular curves with the nonempty Zariski-open set $U_d$.
+
+:::
+
+:::
+
 :::

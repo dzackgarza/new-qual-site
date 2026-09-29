@@ -39,26 +39,39 @@ Let
 \]
 be the upper central series of the nilpotent group $G$.
 
-<1>1. For every proper subgroup $H<G$, there exists an index $i\ge1$ such that
+::: pf
+
+::: pf-step
+
+For every proper subgroup $H<G$, there exists an index $i\ge1$ such that
 \[
 Z_{i-1}(G)\le H
 \quad\text{but}\quad
 Z_i(G)\nleq H.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $Z_0(G)=1\le H$ and $Z_c(G)=G\nleq H$, there is a least $i$ for which
 \[
 Z_i(G)\nleq H.
 \]
 Minimality gives $Z_{i-1}(G)\le H$.
+
 :::
 
-<1>2. Choose
+:::
+
+::: {.pf-step #s2}
+
+Choose
 \[
 x\in Z_i(G)\setminus H.
 \]
 Then $x\in N_G(H)$.
-::: {.proof}
+
+::: pf-proof
+
 For every $h\in H$, the image of $x$ in
 \[
 G/Z_{i-1}(G)
@@ -82,22 +95,36 @@ Applying the same argument to $x^{-1}\in Z_i(G)$ gives the reverse inclusion, so
 xHx^{-1}=H.
 \]
 Hence $x\in N_G(H)$.
+
 :::
 
-<1>3. Every proper subgroup $H<G$ is properly contained in its normalizer:
+:::
+
+::: {.pf-step #s3}
+
+Every proper subgroup $H<G$ is properly contained in its normalizer:
 \[
 H<N_G(H).
 \]
-::: {.proof}
+
+::: pf-proof
+
 One always has $H\le N_G(H)$.
-By <1>2, the chosen element $x$ lies in $N_G(H)$ but not in $H$.
+By step [](#s2){.pf-ref}, the chosen element $x$ lies in $N_G(H)$ but not in $H$.
 Thus the containment is strict.
 This proves part (a).
+
 :::
 
-<1>4. Every maximal subgroup $M<G$ is normal in $G$.
-::: {.proof}
-By <1>3,
+:::
+
+::: pf-step
+
+Every maximal subgroup $M<G$ is normal in $G$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 \[
 M<N_G(M)\le G.
 \]
@@ -110,5 +137,11 @@ By definition of the normalizer, this is equivalent to
 M\trianglelefteq G.
 \]
 This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

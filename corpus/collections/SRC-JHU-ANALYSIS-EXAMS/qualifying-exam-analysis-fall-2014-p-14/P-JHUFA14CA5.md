@@ -34,9 +34,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The exponential integrand has one double pole in the upper half-plane.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The exponential integrand has one double pole in the upper half-plane.
+
+::: pf-proof
+
 Set $F(z)=e^{iaz}/(1+z^2)^2$. Its only upper-half-plane
 pole is $i$, of order two. Differentiating the holomorphic
 factor gives its residue [@SS03]:
@@ -56,11 +62,17 @@ $$
 +\int_{\Gamma_R}F(z)\,dz
 =\frac{\pi(a+1)e^{-a}}2.
 $$
+
 :::
 
-<1>2. The semicircle vanishes and symmetry gives the requested value.
+:::
 
-::: {.proof}
+::: pf-step
+
+The semicircle vanishes and symmetry gives the requested value.
+
+::: pf-proof
+
 On $\Gamma_R$, the assumption $a>0$ implies
 $|e^{iaz}|=e^{-a\operatorname{Im}z}\leq1$. Also
 $|1+z^2|\geq R^2-1$. Hence
@@ -71,7 +83,7 @@ $$
 The integral on the real line converges absolutely:
 its absolute integrand is $(1+x^2)^{-2}$, bounded on
 $[-1,1]$ and at most $|x|^{-4}$ outside that interval.
-Letting $R\to\infty$ in step <1>1 is therefore justified.
+Letting $R\to\infty$ in step [](#s1){.pf-ref} is therefore justified.
 Its real part is
 $$
 \int_{-\infty}^{\infty}\frac{\cos(ax)}{(1+x^2)^2}\,dx
@@ -79,5 +91,11 @@ $$
 $$
 The integrand is even, so the half-line integral is
 $\pi(a+1)e^{-a}/4$, as asserted.
+
 :::
+
+:::
+
+:::
+
 :::

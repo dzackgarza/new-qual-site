@@ -34,33 +34,63 @@ Prove that $f \equiv 0$.
 :::
 
 ::: {.solution}
-<1>1. (a) If $f$ is bounded and holomorphic on $\mathbb H$ and vanishes at points $\tau_k=x_k+iy_k$ with $\abs{x_k}\le1$, $0<y_k\le1$, and $\sum y_k=\infty$, then $f\equiv0$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+(a) If $f$ is bounded and holomorphic on $\mathbb H$ and vanishes at points $\tau_k=x_k+iy_k$ with $\abs{x_k}\le1$, $0<y_k\le1$, and $\sum y_k=\infty$, then $f\equiv0$.
+
+::: pf-proof
+
 Let $\Phi(z) = \frac{z - i}{z + i}$ be the Cayley transform $\mathbb H\to\mathbb D$ and $g=f\circ\Phi^{-1}$, a bounded holomorphic function on $\mathbb D$ vanishing at $\alpha_k = \Phi(\tau_k)$. Then
 $$1 - |\alpha_k|^2 = \frac{(x_k^2 + (y_k+1)^2) - (x_k^2 + (y_k-1)^2)}{x_k^2 + (y_k+1)^2} = \frac{4 y_k}{x_k^2 + (y_k + 1)^2}\ge\frac{4y_k}{5},$$
 since $x_k^2 + (y_k + 1)^2 \le 1 + 4$. Using $1 - r \ge \frac{1}{2}(1 - r^2)$ for $0\le r<1$, $\sum_k (1 - |\alpha_k|) \ge \frac{2}{5} \sum_k y_k = \infty$. By [[E-SS5.PR-1]], the zeros of a bounded holomorphic function on $\mathbb D$ that is not identically zero satisfy $\sum(1-\abs{\alpha_k})<\infty$. Hence $g \equiv 0$ and $f \equiv 0$.
+
 :::
 
-<1>2. (b) If $\gcd(c,d)=1$ and $c\not\equiv d\pmod2$, there are $a,b\in\ZZ$ with $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+(b) If $\gcd(c,d)=1$ and $c\not\equiv d\pmod2$, there are $a,b\in\ZZ$ with $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$.
+
+::: pf-proof
+
 By Bézout's identity there are $a_0, b_0$ with $a_0 d - b_0 c = 1$, and $a = a_0 + c t$, $b = b_0 + d t$ also satisfy $ad-bc=1$ for every $t \in \ZZ$. A matrix of $\operatorname{SL}_2(\ZZ)$ lies in $G$ if and only if $a \equiv d$ and $b \equiv c \pmod 2$. If $c$ is even and $d$ odd, then $ad$ is odd, so $a$ is odd for every $t$, and $t \equiv b_0 \pmod 2$ makes $b$ even. If $c$ is odd and $d$ even, then $bc$ is odd, so $b$ is odd for every $t$, and $t \equiv a_0 \pmod 2$ makes $a$ even.
+
 :::
 
-<1>3. (c) $\sum \frac{1}{c^2 + d^2} = \infty$ over coprime pairs $(c,d)$ of opposite parity.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+(c) $\sum \frac{1}{c^2 + d^2} = \infty$ over coprime pairs $(c,d)$ of opposite parity.
+
+::: pf-proof
+
 A coprime pair $(a,b)$ either has opposite parity or has both entries odd. For $a,b$ coprime and odd, $c = \frac{a+b}{2}$ and $d = \frac{a-b}{2}$ are coprime of opposite parity with $c^2 + d^2 = \frac{a^2 + b^2}{2}$, and $(a,b)\mapsto(c,d)$ is injective. So if the sum in (c) were finite, $\sum_{\gcd(a,b)=1} \frac{1}{a^2 + b^2}$ would be finite. Writing each nonzero $(k,\ell)$ as $n(a,b)$ with $n=\gcd(k,\ell)$,
 $$\sum_{(k, \ell) \neq (0, 0)} \frac{1}{k^2 + \ell^2} = \Bigl(\sum_{n=1}^\infty \frac{1}{n^2}\Bigr) \Bigl(\sum_{\gcd(a, b)=1} \frac{1}{a^2 + b^2}\Bigr)$$
 would be finite. But for each $m\ge1$ there are $8m$ pairs with $\max(\abs k,\abs\ell)=m$, each with $k^2+\ell^2\le2m^2$, so the left side is at least $\sum_{m\ge1}\frac{8m}{2m^2}=\infty$.
+
 :::
 
-<1>4. (d) A bounded holomorphic $G$-invariant $F$ on $\mathbb H$ is constant.
+:::
 
-::: {.proof}
-Put $F_0 = F - F(i)$, which is bounded, holomorphic, $G$-invariant, and vanishes at $i$. For each coprime pair $(c,d)$ of opposite parity, step <1>2 gives $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$, and since $ad - bc = 1$,
+::: pf-step
+
+(d) A bounded holomorphic $G$-invariant $F$ on $\mathbb H$ is constant.
+
+::: pf-proof
+
+Put $F_0 = F - F(i)$, which is bounded, holomorphic, $G$-invariant, and vanishes at $i$. For each coprime pair $(c,d)$ of opposite parity, step [](#s2){.pf-ref} gives $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$, and since $ad - bc = 1$,
 $$g(i) = \frac{(ai+b)(-ci+d)}{c^2 + d^2} = \frac{ac+bd}{c^2+d^2} + \frac{i}{c^2+d^2}.$$
-Applying a power of $T^2\in G$ gives a point $\tau_{c,d}$ of the $G$-orbit of $i$ with $\abs{\Re\tau_{c,d}} \le 1$ and $\Im\tau_{c,d} = \frac{1}{c^2 + d^2} \in (0, 1]$, and $F_0(\tau_{c,d}) = F_0(i) = 0$ by invariance. If two pairs give the same point, the corresponding elements $h,h'$ of $G$ (the matrices $g$ composed with the translations) satisfy $h^{-1}h'(i)=i$, so $h^{-1}h'\in\{\pm I,\pm S\}$ and the bottom row of $h'$ is $\pm(c,d)$ or $\pm(d,-c)$; thus each point arises from at most four pairs. By step <1>3, $\sum \Im\tau_{c,d}=\infty$, so the sum over distinct points $\tau_{c,d}$ is also infinite, and step <1>1 gives $F_0 \equiv 0$, that is, $F\equiv F(i)$.
+Applying a power of $T^2\in G$ gives a point $\tau_{c,d}$ of the $G$-orbit of $i$ with $\abs{\Re\tau_{c,d}} \le 1$ and $\Im\tau_{c,d} = \frac{1}{c^2 + d^2} \in (0, 1]$, and $F_0(\tau_{c,d}) = F_0(i) = 0$ by invariance. If two pairs give the same point, the corresponding elements $h,h'$ of $G$ (the matrices $g$ composed with the translations) satisfy $h^{-1}h'(i)=i$, so $h^{-1}h'\in\{\pm I,\pm S\}$ and the bottom row of $h'$ is $\pm(c,d)$ or $\pm(d,-c)$; thus each point arises from at most four pairs. By step [](#s3){.pf-ref}, $\sum \Im\tau_{c,d}=\infty$, so the sum over distinct points $\tau_{c,d}$ is also infinite, and step [](#s1){.pf-ref} gives $F_0 \equiv 0$, that is, $F\equiv F(i)$.
+
 :::
+
+:::
+
+:::
+
 :::

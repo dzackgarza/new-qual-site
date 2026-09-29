@@ -57,13 +57,18 @@ W=
 $$
 where the argument on $W$ is chosen in that interval.
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 M:L\longrightarrow W
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 z=x+iy
@@ -127,14 +132,20 @@ $$
 M'(z)=\frac{2i}{(z+i)^2}\neq0
 $$
 on $L$, because $-i$ is a boundary point of the lens. Thus $M$ is conformal.
+
 :::
 
-<1>2. The removed slit satisfies
+:::
+
+::: {.pf-step #s2}
+
+The removed slit satisfies
 $$
 M([0,i))=[-1,0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 z=iy,
@@ -149,9 +160,14 @@ M(iy)
 $$
 As $y$ runs from $0$ to $1$, this runs monotonically from $-1$ toward $0$
 without attaining $0$. Hence the image is exactly $[-1,0)$.
+
 :::
 
-<1>3. The fourth-power map
+:::
+
+::: {.pf-step #s3}
+
+The fourth-power map
 $$
 P:W\longrightarrow
 \CC\sm(-\infty,0],
@@ -160,7 +176,8 @@ P(w)=w^4,
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 w=re^{i\theta},
@@ -193,9 +210,14 @@ $$
 P'(w)=4w^3\neq0
 $$
 on $W$, it is conformal.
+
 :::
 
-<1>4. The composition
+:::
+
+::: {.pf-step #s4}
+
+The composition
 $$
 Q(z)=M(z)^4-1
 $$
@@ -204,8 +226,9 @@ $$
 \CC\sm(-\infty,0].
 $$
 
-::: {.proof}
-By steps <1>1--<1>3,
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 P\circ M
 $$
@@ -213,7 +236,7 @@ maps the unslit lens $L$ bijectively onto
 $$
 \CC\sm(-\infty,0].
 $$
-Step <1>2 gives
+Step [](#s2){.pf-ref} gives
 $$
 P(M([0,i)))
 =
@@ -231,9 +254,14 @@ $$
 Q(G)=\CC\sm(-\infty,0].
 $$
 Translation preserves conformality and bijectivity.
+
 :::
 
-<1>5. On
+:::
+
+::: {.pf-step #s5}
+
+On
 $$
 \CC\sm(-\infty,0]
 $$
@@ -253,7 +281,8 @@ R=\{\eta\in\CC:\operatorname{Re}\eta>0\},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For the principal argument
 $$
 -\pi<\Arg\xi<\pi,
@@ -276,9 +305,14 @@ $$
 s'(\xi)=\frac{s(\xi)}{2\xi}\neq0,
 $$
 so it is conformal.
+
 :::
 
-<1>6. A bijective conformal map from $G$ onto the upper half-plane is
+:::
+
+::: {.pf-step #s6}
+
+A bijective conformal map from $G$ onto the upper half-plane is
 $$
 \boxed{
 F(z)
@@ -293,8 +327,9 @@ i\exp\!\left[
 $$
 where $\Log$ is the principal logarithm.
 
-::: {.proof}
-By steps <1>4--<1>5,
+::: pf-proof
+
+By steps [](#s4){.pf-ref} and [](#s5){.pf-ref},
 $$
 s\circ Q
 $$
@@ -304,11 +339,17 @@ $$
 \mathcal H=\{w\in\CC:\operatorname{Im}w>0\}.
 $$
 Hence the displayed $F$ is the required conformal bijection.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives the requested map.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives the requested map.
+
+:::
+
+:::
+
 :::

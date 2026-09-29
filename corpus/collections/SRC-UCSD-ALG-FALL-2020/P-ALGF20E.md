@@ -33,8 +33,15 @@ Suppose that $D$ is an integral domain and $M$ is a $D$-module.
 :::
 
 ::: {.solution}
-<1>1. If $M$ is flat, then multiplication by every nonzero $d\in D$ is injective on $M$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $M$ is flat, then multiplication by every nonzero $d\in D$ is injective on $M$.
+
+::: pf-proof
+
 Fix $0\ne d\in D$. Since $D$ is an integral domain, multiplication by $d$ gives an injective $D$-linear map
 \[
 0\longrightarrow D\xrightarrow{\,\cdot d\,}D.
@@ -58,15 +65,29 @@ M\longrightarrow M,
 m\longmapsto dm.
 \]
 Hence $dm=0$ implies $m=0$.
+
 :::
 
-<1>2. Therefore every flat $D$-module is torsion-free.
-::: {.proof}
-Torsion-freeness over a domain means precisely that for every $0\ne d\in D$, the equation $dm=0$ forces $m=0$. This is <1>1.
 :::
 
-<1>3. If $D$ is a PID and $M$ is finitely generated and torsion-free, then $M$ is a finite-rank free $D$-module.
-::: {.proof}
+::: pf-step
+
+Therefore every flat $D$-module is torsion-free.
+
+::: pf-proof
+
+Torsion-freeness over a domain means precisely that for every $0\ne d\in D$, the equation $dm=0$ forces $m=0$. This is step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+If $D$ is a PID and $M$ is finitely generated and torsion-free, then $M$ is a finite-rank free $D$-module.
+
+::: pf-proof
+
 By the structure theorem for finitely generated modules over a PID,
 \[
 M\cong D^r\oplus T
@@ -79,10 +100,17 @@ Thus
 \[
 M\cong D^r.
 \]
+
 :::
 
-<1>4. Every free $D$-module is flat.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every free $D$-module is flat.
+
+::: pf-proof
+
 For a free module $D^r$ and any $D$-module $X$,
 \[
 X\otimes_D D^r\cong X^r.
@@ -92,10 +120,23 @@ Finite direct sums preserve injections and exact sequences. Hence the functor
 -\otimes_D D^r
 \]
 is exact, so $D^r$ is flat.
+
 :::
 
-<1>5. If $D$ is a PID and $M$ is finitely generated and torsion-free, then $M$ is flat.
-::: {.proof}
-By <1>3, $M$ is free, and by <1>4 every free module is flat. This proves part (2).
 :::
+
+::: pf-step
+
+If $D$ is a PID and $M$ is finitely generated and torsion-free, then $M$ is flat.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $M$ is free, and by step [](#s4){.pf-ref} every free module is flat. This proves part (2).
+
+:::
+
+:::
+
+:::
+
 :::

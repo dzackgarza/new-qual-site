@@ -58,11 +58,17 @@ c_g(x)=gxg^{-1}
 \]
 for the corresponding inner automorphism.
 
-<1>1. For every $g\in G$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $g\in G$,
 \[
 \sigma c_g\sigma^{-1}=c_{\sigma(g)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $x\in G$,
 \[
 \begin{aligned}
@@ -73,15 +79,22 @@ For $x\in G$,
 \end{aligned}
 \]
 Thus the two automorphisms are equal.
+
 :::
 
-<1>2. For $a,b\in G$,
+:::
+
+::: {.pf-step #s2}
+
+For $a,b\in G$,
 \[
 c_a=c_b
 \quad\Longleftrightarrow\quad
 b^{-1}a\in Z(G).
 \]
-::: {.proof}
+
+::: pf-proof
+
 We have
 \[
 c_b^{-1}c_a=c_{b^{-1}a}.
@@ -92,13 +105,20 @@ An inner automorphism $c_z$ is the identity exactly when
 zxz^{-1}=x
 \]
 for every $x\in G$, which is equivalent to $z\in Z(G)$.
+
 :::
 
-<1>3. The automorphism $\sigma$ commutes with $c_g$ if and only if
+:::
+
+::: {.pf-step #s3}
+
+The automorphism $\sigma$ commutes with $c_g$ if and only if
 \[
 g^{-1}\sigma(g)\in Z(G).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The equality
 \[
 \sigma c_g=c_g\sigma
@@ -107,35 +127,49 @@ is equivalent to
 \[
 \sigma c_g\sigma^{-1}=c_g.
 \]
-By <1>1 this becomes
+By step [](#s1){.pf-ref} this becomes
 \[
 c_{\sigma(g)}=c_g.
 \]
-Applying <1>2 with $a=\sigma(g)$ and $b=g$ gives precisely
+Applying step [](#s2){.pf-ref} with $a=\sigma(g)$ and $b=g$ gives precisely
 \[
 g^{-1}\sigma(g)\in Z(G).
 \]
+
 :::
 
-<1>4. Therefore $\sigma$ commutes with every element of $I$ if and only if
+:::
+
+::: {.pf-step #s4}
+
+Therefore $\sigma$ commutes with every element of $I$ if and only if
 \[
 g^{-1}\sigma(g)\in Z(G)
 \]
 for every $g\in G$.
-::: {.proof}
+
+::: pf-proof
+
 The inner automorphism group is
 \[
 I=\{c_g:g\in G\}.
 \]
-Apply <1>3 for every $g\in G$.
+Apply step [](#s3){.pf-ref} for every $g\in G$.
+
 :::
 
-<1>5. If $Z(G)=\{e\}$ and $\sigma$ commutes with every element of $I$, then
+:::
+
+::: pf-step
+
+If $Z(G)=\{e\}$ and $\sigma$ commutes with every element of $I$, then
 \[
 \sigma=\operatorname{id}_G.
 \]
-::: {.proof}
-By <1>4,
+
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 \[
 g^{-1}\sigma(g)\in Z(G)=\{e\}
 \]
@@ -146,5 +180,11 @@ g^{-1}\sigma(g)=e,
 \]
 so $\sigma(g)=g$ for every $g\in G$.
 Therefore $\sigma$ is the identity automorphism.
+
 :::
+
+:::
+
+:::
+
 :::

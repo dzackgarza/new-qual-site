@@ -31,12 +31,19 @@ Prove there is a finite set $\alpha_1,\ldots,\alpha_n$ in $A$ with $C_{\alpha_1}
 :::
 
 ::: {.solution}
-<1>1. The family
+
+::: pf
+
+::: {.pf-step #s1}
+
+The family
 \[
 \{U\}\cup\{X\setminus C_\alpha:\alpha\in A\}
 \]
 is an open cover of $X$.
-::: {.proof}
+
+::: pf-proof
+
 Each $C_\alpha$ is closed, so every $X\setminus C_\alpha$ is open.
 Let $x\in X$.
 If $x\in U$, then $x$ is covered by $U$.
@@ -47,29 +54,56 @@ C=\bigcap_{\alpha\in A}C_\alpha,
 \]
 there is some $\alpha$ with $x\notin C_\alpha$, so $x\in X\setminus C_\alpha$.
 Thus the displayed family covers $X$.
+
 :::
 
-<1>2. Compactness of $X$ gives indices $\alpha_1,\dots,\alpha_n\in A$ such that
+:::
+
+::: {.pf-step #s2}
+
+Compactness of $X$ gives indices $\alpha_1,\dots,\alpha_n\in A$ such that
 \[
 X=U\cup(X\setminus C_{\alpha_1})\cup\cdots\cup(X\setminus C_{\alpha_n}).
 \]
-::: {.proof}
-Apply the definition of compactness to the open cover in <1>1.
+
+::: pf-proof
+
+Apply the definition of compactness to the open cover in step [](#s1){.pf-ref}.
 If a finite subcover omits $U$, adjoin $U$ without affecting finiteness.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 C_{\alpha_1}\cap\cdots\cap C_{\alpha_n}\subseteq U.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $x$ lie in the finite intersection on the left.
 Then $x$ lies in none of the complements $X\setminus C_{\alpha_i}$.
-The covering equality in <1>2 therefore forces $x\in U$.
+The covering equality in step [](#s2){.pf-ref} therefore forces $x\in U$.
+
 :::
 
-<1>4. This is the required finite family.
-::: {.proof}
-The indices $\alpha_1,\dots,\alpha_n$ from <1>2 satisfy exactly the inclusion proved in <1>3.
 :::
+
+::: pf-step
+
+This is the required finite family.
+
+::: pf-proof
+
+The indices $\alpha_1,\dots,\alpha_n$ from step [](#s2){.pf-ref} satisfy exactly the inclusion proved in step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

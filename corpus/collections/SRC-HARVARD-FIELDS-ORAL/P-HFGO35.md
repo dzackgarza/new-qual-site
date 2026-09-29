@@ -29,28 +29,48 @@ What degree must the polynomial have?
 ::: {.solution}
 The polynomial must have degree $3$.
 
-<1>1. If $f(T)\in\mathbb F_3[T]$ is irreducible of degree $d$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $f(T)\in\mathbb F_3[T]$ is irreducible of degree $d$, then
 \[
 \mathbb F_3[T]/(f)
 \]
 has $3^d$ elements.
-::: {.proof}
+
+::: pf-proof
+
 Every residue class has a unique representative of degree less than $d$, so it
 is determined by $d$ coefficients in $\mathbb F_3$. Hence there are $3^d$
 classes. Irreducibility of $f$ makes the quotient a field.
+
 :::
 
-<1>2. To obtain $27=3^3$ elements, one must take $d=3$.
-::: {.proof}
-By <1>1 the field has $3^d$ elements, and $3^d=27$ if and only if $d=3$.
 :::
 
-<1>3. For example,
+::: {.pf-step #s2}
+
+To obtain $27=3^3$ elements, one must take $d=3$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref} the field has $3^d$ elements, and $3^d=27$ if and only if $d=3$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+For example,
 \[
 f(T)=T^3-T-1
 \]
 is irreducible over $\mathbb F_3$.
-::: {.proof}
+
+::: pf-proof
+
 It has no root in $\mathbb F_3$:
 \[
 f(0)=2,
@@ -61,14 +81,27 @@ f(2)=2.
 \]
 A cubic over a field is reducible exactly when it has a linear factor, hence a
 root. Therefore $f$ is irreducible.
+
 :::
 
-<1>4. Thus
+:::
+
+::: pf-step
+
+Thus
 \[
 \mathbb F_3[T]/(T^3-T-1)
 \]
 is a field of order $27$.
-::: {.proof}
-This follows from <1>1--<1>3.
+
+::: pf-proof
+
+This follows from steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

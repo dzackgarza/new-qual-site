@@ -33,7 +33,6 @@ $$
 is irreducible in $\mathbb { Z } [ x ]$
 :::
 
-
 ::: {.solution}
 Let
 \[
@@ -41,8 +40,14 @@ f(x)=x^6+539x^5-511x+847.
 \]
 Apply the change of variable $x\mapsto x-7$.
 
-<1>1. The translated polynomial $f(x-7)$ is Eisenstein at $7$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The translated polynomial $f(x-7)$ is Eisenstein at $7$.
+
+::: pf-proof
+
 Expanding gives
 \[
 \begin{aligned}
@@ -65,21 +70,34 @@ The leading coefficient is $1$, so it is not divisible by $7$. Moreover,
 \]
 so $49\nmid8936900$.
 Therefore Eisenstein's criterion at the prime $7$ shows that $f(x-7)$ is irreducible in $\mathbb Q[x]$.
+
 :::
 
-<1>2. Hence $f(x)$ is irreducible in $\mathbb Z[x]$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Hence $f(x)$ is irreducible in $\mathbb Z[x]$.
+
+::: pf-proof
+
 The substitution
 \[
 \tau:\mathbb Q[x]\longrightarrow\mathbb Q[x],
 \qquad
 \tau(g)(x)=g(x-7),
 \]
-is a ring automorphism, with inverse $g(x)\mapsto g(x+7)$. Thus $f$ is reducible in $\mathbb Q[x]$ if and only if $f(x-7)$ is reducible in $\mathbb Q[x]$. By <1>1, $f$ is therefore irreducible in $\mathbb Q[x]$.
+is a ring automorphism, with inverse $g(x)\mapsto g(x+7)$. Thus $f$ is reducible in $\mathbb Q[x]$ if and only if $f(x-7)$ is reducible in $\mathbb Q[x]$. By step [](#s1){.pf-ref}, $f$ is therefore irreducible in $\mathbb Q[x]$.
 
 Finally, $f$ is monic, hence primitive. Gauss's lemma then implies that irreducibility in $\mathbb Q[x]$ is equivalent to irreducibility in $\mathbb Z[x]$. Therefore
 \[
 \boxed{x^6+539x^5-511x+847\text{ is irreducible in }\mathbb Z[x].}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

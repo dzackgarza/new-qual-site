@@ -39,13 +39,18 @@ $$
 F(x,y,z)=x^3y+y^3z+z^3x.
 $$
 
-<1>1. The plane quartic
+::: pf
+
+::: {.pf-step #s1}
+
+The plane quartic
 $$
 X=V(F)\subset\PP^2
 $$
 is nonsingular.
 
-::: {.proof}
+::: pf-proof
+
 In characteristic $3$,
 $$
 F_x=z^3,
@@ -60,9 +65,14 @@ x=y=z=0,
 $$
 which is not a point of $\PP^2$.  The projective Jacobian criterion therefore
 shows that $X$ is nonsingular.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 P=[a:b:c]\in X,
 $$
@@ -71,13 +81,14 @@ $$
 T_P(X)=V(c^3x+a^3y+b^3z).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a nonsingular projective plane curve, the tangent line at $P$ is defined
 by
 $$
 F_x(P)x+F_y(P)y+F_z(P)z=0.
 $$
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 F_x(P)=c^3,
 \qquad
@@ -86,11 +97,17 @@ F_y(P)=a^3,
 F_z(P)=b^3,
 $$
 which yields the displayed equation.
+
 :::
 
-<1>3. Every point of $X$ is an inflection point.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every point of $X$ is an inflection point.
+
+::: pf-proof
+
 Fix $P=[a:b:c]\in X$ and choose a standard affine chart containing $P$.
 After fixing the nonzero homogeneous coordinate defining that chart, write a
 nearby lift as
@@ -111,7 +128,7 @@ F(a+u,b+v,c+w)
 $$
 There are no terms of total degree $2$ in the local increments.
 
-The constant term vanishes because $P\in X$, and by step <1>2 the linear
+The constant term vanishes because $P\in X$, and by step [](#s2){.pf-ref} the linear
 term is an equation for the tangent line.  After restricting to
 $T_P(X)$, the local equation therefore has order at least $3$.  Hence
 $$
@@ -119,9 +136,14 @@ I_P\bigl(X,T_P(X)\bigr)\ge3,
 $$
 so $P$ is an inflection point.  Since $P$ was arbitrary, every point of $X$
 is an inflection point.
+
 :::
 
-<1>4. In dual homogeneous coordinates $[U:V:W]$, the Gauss map is
+:::
+
+::: {.pf-step #s4}
+
+In dual homogeneous coordinates $[U:V:W]$, the Gauss map is
 $$
 \gamma:X\longrightarrow(\PP^2)^*,
 \qquad
@@ -132,8 +154,9 @@ $$
 Y=V(U^3V+V^3W+W^3U).
 $$
 
-::: {.proof}
-The formula for $\gamma$ is exactly the tangent-line formula of step <1>2.
+::: pf-proof
+
+The formula for $\gamma$ is exactly the tangent-line formula of step [](#s2){.pf-ref}.
 For a point in its image,
 $$
 (U,V,W)=(c^3,a^3,b^3),
@@ -150,7 +173,7 @@ U^3V+V^3W+W^3U
 $$
 Thus $\gamma(X)\subseteq Y$.
 
-The same Jacobian calculation as in step <1>1 shows that $Y$ is nonsingular.
+The same Jacobian calculation as in step [](#s1){.pf-ref} shows that $Y$ is nonsingular.
 Moreover it is geometrically integral: if its defining quartic factored over
 an algebraic closure, two positive-degree components would meet in
 $\PP^2$ by Bézout, producing a singular point.  The map $\gamma$ is
@@ -164,12 +187,18 @@ By definition the closure of the Gauss image is the dual curve.  Therefore
 $$
 X^*=Y.
 $$
+
 :::
 
-<1>5. The dual curve $X^*$ is isomorphic to $X$.
+:::
 
-::: {.proof}
-The equation found in step <1>4,
+::: {.pf-step #s5}
+
+The dual curve $X^*$ is isomorphic to $X$.
+
+::: pf-proof
+
+The equation found in step [](#s4){.pf-ref},
 $$
 U^3V+V^3W+W^3U=0,
 $$
@@ -185,15 +214,21 @@ therefore restricts to an isomorphism
 $$
 X\xrightarrow{\sim}X^*.
 $$
+
 :::
 
-<1>6. Under the identification in step <1>5, the Gauss map is
+:::
+
+::: {.pf-step #s6}
+
+Under the identification in step [](#s5){.pf-ref}, the Gauss map is
 $$
 \gamma([x:y:z])=[z^3:x^3:y^3].
 $$
 It is a purely inseparable morphism of degree $3$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 q:X\longrightarrow X,
@@ -205,7 +240,7 @@ $$
 \rho([x:y:z])=[z:x:y].
 $$
 The cyclic permutation $\rho$ preserves the equation $F=0$, so it is an
-automorphism of $X$.  Step <1>4 gives
+automorphism of $X$.  Step [](#s4){.pf-ref} gives
 $$
 \gamma=\rho\circ q.
 $$
@@ -262,13 +297,19 @@ and consequently
 $$
 \deg\gamma=3.
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves nonsingularity, step <1>3 proves that every point is an
-inflection point, steps <1>4--<1>5 identify the dual curve with $X$, and step
-<1>6 proves that the natural map to the dual is purely inseparable.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves nonsingularity, step [](#s3){.pf-ref} proves that every point is an
+inflection point, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} identify the dual curve with $X$, and step
+[](#s6){.pf-ref} proves that the natural map to the dual is purely inseparable.
+
+:::
+
+:::
+
 :::

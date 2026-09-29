@@ -32,7 +32,11 @@ Let $M = ([0, 1] \times [0, 1]) / \sim$ be the standard **Möbius strip**, where
 ::: {.solution}
 Let $q:[0,1]\times[0,1]\to M$ be the quotient map.
 
-<1>1. Define
+::: pf
+
+::: pf-step
+
+Define
 \[
 H_s(q(x,y))=q\!\left(x,(1-s)y+s/2\right).
 \]
@@ -54,7 +58,11 @@ C=\{q(x,1/2):0\le x\le1\},
 \]
 and at $s=1$ maps all of $M$ onto $C$. Hence $C$ is a strong deformation retract of $M$.
 
-<1>2. Since $C\cong S^1$,
+:::
+
+::: pf-step
+
+Since $C\cong S^1$,
 \[
 \pi_1(M)\cong\pi_1(C)\cong\mathbb Z.
 \]
@@ -64,7 +72,11 @@ With basepoint $q(0,1/2)$, let
 \]
 Then $[\alpha]$ is a generator.
 
-<1>3. The boundary of $M$ is one circle. A positively chosen parametrization can be written as the concatenation of
+:::
+
+::: pf-step
+
+The boundary of $M$ is one circle. A positively chosen parametrization can be written as the concatenation of
 \[
 \gamma_0(t)=q(t,0),\qquad
 \gamma_1(t)=q(t,1),
@@ -79,7 +91,16 @@ q(1,1)=q(0,0).
 \]
 Thus $\gamma_0*\gamma_1$ traverses the whole boundary once.
 
-<1>4. Under the deformation retraction to $C$, both $\gamma_0$ and $\gamma_1$ become the core loop $\alpha$ with the same orientation. Therefore
+:::
+
+::: pf-step
+
+Under the deformation retraction to $C$, both $\gamma_0$ and $\gamma_1$ become the core loop $\alpha$ with the same orientation. Therefore
+
+:::
+
+:::
+
 \[
 [\partial M]=[\alpha]^2\in\pi_1(M).
 \]

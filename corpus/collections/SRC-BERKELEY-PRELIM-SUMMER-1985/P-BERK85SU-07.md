@@ -37,26 +37,38 @@ f(x)=e^{x^2/2}\int_x^\infty e^{-t^2/2}\,dt.
 :::
 
 ::: {.solution}
-<1>1. For every $x>0$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x>0$,
 $$
 f(x)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The integrand $e^{-t^2/2}$ is positive for every real $t$, so
 $$
 \int_x^\infty e^{-t^2/2}\,dt>0.
 $$
 Multiplication by the positive factor $e^{x^2/2}$ preserves
 positivity.
+
 :::
 
-<1>2. For every $x>0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $x>0$,
 $$
 f(x)<\frac1x.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $t>x>0$ one has $t/x>1$. Hence
 $$
 \begin{aligned}
@@ -72,23 +84,35 @@ Multiplying by $e^{x^2/2}$ gives
 $$
 f(x)<\frac1x.
 $$
+
 :::
 
-<1>3. Part 1 is
+:::
+
+::: {.pf-step #s3}
+
+Part 1 is
 $$
 \boxed{0<f(x)<\frac1x}.
 $$
 
-::: {.proof}
-Combine steps <1>1 and <1>2.
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The derivative of $f$ is
+:::
+
+::: {.pf-step #s4}
+
+The derivative of $f$ is
 $$
 f'(x)=xf(x)-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiate
 $$
 f(x)=e^{x^2/2}\int_x^\infty e^{-t^2/2}\,dt.
@@ -105,21 +129,33 @@ xe^{x^2/2}
 xf(x)-1.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The function $f$ is strictly decreasing on $(0,\infty)$.
+:::
 
-::: {.proof}
-Step <1>2 gives $xf(x)<1$ for every $x>0$. Hence step <1>4 gives
+::: {.pf-step #s5}
+
+The function $f$ is strictly decreasing on $(0,\infty)$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives $xf(x)<1$ for every $x>0$. Hence step [](#s4){.pf-ref} gives
 $$
 f'(x)=xf(x)-1<0.
 $$
 Therefore $f$ is strictly decreasing.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part 1, and step <1>5 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part 1, and step [](#s5){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

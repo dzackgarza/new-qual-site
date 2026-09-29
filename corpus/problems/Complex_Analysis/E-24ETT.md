@@ -30,24 +30,41 @@ Show that
 ::: {.solution}
 Assume that $f$ is a bijection $\DD\to\Omega$; the remark gives a counterexample without this hypothesis.
 
-<1>1. $F\coloneqq \inverseof{f}\circ g$ is a holomorphic map $\DD\to\DD$ with $F(0)=0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$F\coloneqq \inverseof{f}\circ g$ is a holomorphic map $\DD\to\DD$ with $F(0)=0$.
+
+::: pf-proof
+
 The inverse $\inverseof{f}\colon\Omega\to\DD$ of the bijective holomorphic map $f$ is holomorphic, and $g(\DD)\subseteq\Omega$, so $F$ is defined and holomorphic on $\DD$ with values in $\DD$.
 Since $g(0)=f(0)$, we have $F(0)=\inverseof{f}(f(0))=0$.
+
 :::
 
-<1>2. $\abs{F(z)}\le\abs{z}$ for all $z\in\DD$.
-
-::: {.proof}
-This is the Schwarz lemma applied to $F$, which step <1>1 permits.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #s2}
 
-::: {.proof}
-Let $0<r<1$ and $\abs{z}<r$. By step <1>2, $w\coloneqq F(z)$ satisfies $\abs{w}<r$, so $g(z)=f(F(z))=f(w)\in f\qty{\theset{\abs{w}<r}}$.
+$\abs{F(z)}\le\abs{z}$ for all $z\in\DD$.
+
+::: pf-proof
+
+This is the Schwarz lemma applied to $F$, which step [](#s1){.pf-ref} permits.
+
 :::
+
+:::
+
+::: pf-qed
+
+Let $0<r<1$ and $\abs{z}<r$. By step [](#s2){.pf-ref}, $w\coloneqq F(z)$ satisfies $\abs{w}<r$, so $g(z)=f(F(z))=f(w)\in f\qty{\theset{\abs{w}<r}}$.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

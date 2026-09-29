@@ -30,11 +30,18 @@ A \da
 :::
 
 ::: {.solution}
-<1>1. The characteristic polynomial of $A$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The characteristic polynomial of $A$ is
 \[
 \chi_A(t)=t(t-1)^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Direct expansion gives
 \[
 \det(tI-A)
@@ -47,16 +54,30 @@ t-1&1&0\\
 =(t-1)(t^2-t+1)-(t-1)
 =t(t-1)^2.
 \]
+
 :::
 
-<1>2. The eigenspace for the eigenvalue $0$ is one-dimensional.
-::: {.proof}
-The eigenvalue $0$ has algebraic multiplicity $1$ by <1>1, so its geometric multiplicity
+:::
+
+::: {.pf-step #s2}
+
+The eigenspace for the eigenvalue $0$ is one-dimensional.
+
+::: pf-proof
+
+The eigenvalue $0$ has algebraic multiplicity $1$ by step [](#s1){.pf-ref}, so its geometric multiplicity
 is also $1$.
+
 :::
 
-<1>3. The eigenspace for the eigenvalue $1$ is one-dimensional.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The eigenspace for the eigenvalue $1$ is one-dimensional.
+
+::: pf-proof
+
 One has
 \[
 A-I=
@@ -72,16 +93,28 @@ rank-nullity
 \[
 \dim\ker(A-I)=1.
 \]
+
 :::
 
-<1>4. The Jordan blocks for the eigenvalue $1$ consist of one block of size $2$.
-::: {.proof}
-By <1>1, the eigenvalue $1$ has algebraic multiplicity $2$. By <1>3, its eigenspace has
+:::
+
+::: {.pf-step #s4}
+
+The Jordan blocks for the eigenvalue $1$ consist of one block of size $2$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the eigenvalue $1$ has algebraic multiplicity $2$. By step [](#s3){.pf-ref}, its eigenspace has
 dimension $1$, which equals the number of Jordan blocks for that eigenvalue. Therefore
 there is exactly one such block, and its total size must be $2$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \JCF(A)=J_2(1)\oplus J_1(0),
 \]
@@ -94,7 +127,15 @@ up to permutation of Jordan blocks; explicitly,
 0&0&0
 \end{pmatrix}.
 \]
-::: {.proof}
-Combine <1>2 and <1>4.
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -42,9 +42,15 @@ for every $p,q\in X_1$.
 :::
 
 ::: {.solution}
-<1>1. The map $f$ is injective, hence bijective.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The map $f$ is injective, hence bijective.
+
+::: pf-proof
+
 If $f(p)=f(q)$, then the metric comparison gives
 $$
 d_1(p,q)
@@ -53,12 +59,18 @@ d_2(f(p),f(q))
 =0.
 $$
 Thus $p=q$. Since $f$ is surjective by hypothesis, it is bijective.
+
 :::
 
-<1>2. If $X_1$ is complete, then $X_2$ is complete.
+:::
 
-::: {.proof}
-Let $(y_n)$ be a Cauchy sequence in $X_2$. By step <1>1, define
+::: {.pf-step #s2}
+
+If $X_1$ is complete, then $X_2$ is complete.
+
+::: pf-proof
+
+Let $(y_n)$ be a Cauchy sequence in $X_2$. By step [](#s1){.pf-ref}, define
 $$
 x_n\coloneqq f^{-1}(y_n).
 $$
@@ -79,18 +91,29 @@ $$
 y_n=f(x_n)\longrightarrow f(x)\in X_2.
 $$
 Thus every Cauchy sequence in $X_2$ converges.
+
 :::
 
-<1>3. Therefore the answer to part 1 is
+:::
+
+::: {.pf-step #s3}
+
+Therefore the answer to part 1 is
 $$
 \boxed{\text{yes}}.
 $$
 
-::: {.proof}
-This is exactly step <1>2.
+::: pf-proof
+
+This is exactly step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. For part 2, let
+:::
+
+::: {.pf-step #s4}
+
+For part 2, let
 $$
 X_1=(0,1),
 \qquad
@@ -102,7 +125,8 @@ f(x)=\tan\bigl(\pi(x-1/2)\bigr).
 $$
 Then $f:X_1\to X_2$ is a continuous surjection satisfying the required metric comparison.
 
-::: {.proof}
+::: pf-proof
+
 The tangent function is continuous and strictly increasing from $-\infty$ to $\infty$ on $(-\pi/2,\pi/2)$, so the displayed $f$ is a continuous bijection from $(0,1)$ onto $\RR$.
 
 Moreover,
@@ -126,30 +150,48 @@ Thus
 $$
 d_1(x,y)\le d_2(f(x),f(y)).
 $$
+
 :::
 
-<1>5. In the example from step <1>4, $X_2$ is complete but $X_1$ is not complete.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+In the example from step [](#s4){.pf-ref}, $X_2$ is complete but $X_1$ is not complete.
+
+::: pf-proof
+
 The real line with its usual metric is complete. The interval $(0,1)$ is not complete: for example,
 $$
 x_n=\frac1n
 $$
 is Cauchy in $(0,1)$ but converges in $\RR$ to $0\notin(0,1)$.
+
 :::
 
-<1>6. Therefore the answer to part 2 is
+:::
+
+::: {.pf-step #s6}
+
+Therefore the answer to part 2 is
 $$
 \boxed{\text{no}}.
 $$
 
-::: {.proof}
-Steps <1>4 and <1>5 give a counterexample satisfying every hypothesis.
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give a counterexample satisfying every hypothesis.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part 1, and step <1>6 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part 1, and step [](#s6){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

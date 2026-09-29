@@ -37,38 +37,56 @@ Show that if $h$ is surjective, then $f$ is surjective.
 :::
 
 ::: {.solution}
-<1>1. Fix an arbitrary element
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix an arbitrary element
 $$
 y\in G.
 $$
 
-::: {.proof}
+::: pf-proof
+
 To prove surjectivity of $f$, it suffices to construct an element
 $z\in G$ such that
 $$
 f(z)=y.
 $$
+
 :::
 
-<1>2. Since $h$ is surjective, there is an element $x\in G$ such that
+:::
+
+::: {.pf-step #s2}
+
+Since $h$ is surjective, there is an element $x\in G$ such that
 $$
 x-u(v(x))=u(y).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply surjectivity of
 $$
 h(x)=x-u(v(x))
 $$
 to the element $u(y)\in G$.
+
 :::
 
-<1>3. Applying $v$ to the equality in step <1>2 gives
+:::
+
+::: {.pf-step #s3}
+
+Applying $v$ to the equality in step [](#s2){.pf-ref} gives
 $$
 v(x)-v(u(v(x)))=v(u(y)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The map $v:G\to G$ is a group homomorphism, so it preserves subtraction:
 $$
 \begin{aligned}
@@ -77,10 +95,15 @@ v\bigl(x-u(v(x))\bigr)
 v(x)-v(u(v(x))).
 \end{aligned}
 $$
-Apply $v$ to both sides of the equality in step <1>2.
+Apply $v$ to both sides of the equality in step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #s4}
+
+Define
 $$
 z=y+v(x).
 $$
@@ -91,7 +114,8 @@ f(z)=y.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using additivity of $u$ and $v$,
 $$
 \begin{aligned}
@@ -110,20 +134,32 @@ v(x)-v(u(v(x)))-v(u(y))
 \bigr).
 \end{aligned}
 $$
-The parenthesized term is zero by step <1>3. Hence $f(z)=y$.
+The parenthesized term is zero by step [](#s3){.pf-ref}. Hence $f(z)=y$.
+
 :::
 
-<1>5. The map $f$ is surjective.
+:::
 
-::: {.proof}
-The element $y\in G$ in step <1>1 was arbitrary, and step <1>4 constructs
+::: {.pf-step #s5}
+
+The map $f$ is surjective.
+
+::: pf-proof
+
+The element $y\in G$ in step [](#s1){.pf-ref} was arbitrary, and step [](#s4){.pf-ref} constructs
 a preimage $z$ of it under $f$. Therefore every element of $G$ lies in the
 image of $f$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

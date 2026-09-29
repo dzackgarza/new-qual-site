@@ -51,12 +51,17 @@ when this sum can vanish.
 For a column vector $x=(x_1,\ldots,x_n)^T\in\CC^n$, write $x^*$
 for its conjugate transpose and set $x_0=x_{n+1}=0$.
 
-<1>1. For every $x\in\CC^n$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in\CC^n$,
 $$
 x^*Ax=\sum_{j=0}^n\abs{x_{j+1}-x_j}^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The entries of $A$ give
 $$
 x^*Ax
@@ -70,22 +75,34 @@ at $j=0$ and $j=n$ vanish because $x_0=x_{n+1}=0$, and all the
 remaining mixed terms are those in the displayed expression.
 Thus the expressions are equal. For $n=1$, the mixed-term sum
 is empty and both expressions equal $2\abs{x_1}^2$.
+
 :::
 
-<1>2. For every nonzero $x\in\CC^n$, the number $x^*Ax$ is
+:::
+
+::: {.pf-step #s2}
+
+For every nonzero $x\in\CC^n$, the number $x^*Ax$ is
 real and strictly positive.
 
-::: {.proof}
-Each summand in step <1>1 is a nonnegative real number. Their sum
+::: pf-proof
+
+Each summand in step [](#s1){.pf-ref} is a nonnegative real number. Their sum
 can be zero only if $x_{j+1}=x_j$ for all $0\leq j\leq n$.
 Since $x_0=0$, these equalities force $x_1=\cdots=x_n=0$.
 Thus the sum is strictly positive whenever $x\neq0$.
+
 :::
 
-<1>3. Every eigenvalue $\lambda\in\CC$ of $A$ is real and
+:::
+
+::: {.pf-step #s3}
+
+Every eigenvalue $\lambda\in\CC$ of $A$ is real and
 strictly positive.
 
-::: {.proof}
+::: pf-proof
+
 Choose a nonzero eigenvector $x\in\CC^n$ with $Ax=\lambda x$.
 Multiplying by $x^*$ gives
 $$
@@ -94,15 +111,21 @@ $$
 =\frac{\displaystyle\sum_{j=0}^n\abs{x_{j+1}-x_j}^2}
        {\displaystyle\sum_{j=1}^n\abs{x_j}^2}.
 $$
-The numerator is a positive real number by step <1>2. The
+The numerator is a positive real number by step [](#s2){.pf-ref}. The
 denominator is a positive real number because $x\neq0$.
 Their quotient is therefore real and strictly positive.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 applies to every eigenvalue of $A$ and proves the
+::: pf-qed
+
+Step [](#s3){.pf-ref} applies to every eigenvalue of $A$ and proves the
 required conclusion.
+
 :::
+
+:::
+
 :::

@@ -42,7 +42,11 @@ X=\RP^2\vee S^1
 \]
 and let $x_0$ denote the wedge point.
 
-<1>1. With rational coefficients,
+::: pf
+
+::: pf-step
+
+With rational coefficients,
 \[
 H_k(X;\QQ)\cong
 \begin{cases}
@@ -51,7 +55,9 @@ H_k(X;\QQ)\cong
 \end{cases}
 \]
 The degree-$1$ generator comes from the $S^1$ summand.
-::: {.proof}
+
+::: pf-proof
+
 The integral homology of $\RP^2$ is
 \[
 H_0(\RP^2;\ZZ)=\ZZ,
@@ -63,9 +69,14 @@ H_k(\RP^2;\ZZ)=0\quad(k\ge2).
 After tensoring with $\QQ$, the torsion group in degree $1$ vanishes.
 Reduced homology takes wedges to direct sums, while $S^1$ contributes one copy of $\QQ$ in degree $1$.
 This gives the displayed groups.
+
 :::
 
-<1>2. For
+:::
+
+::: pf-step
+
+For
 \[
 f=\id_{\RP^2}\vee *,
 \]
@@ -73,7 +84,9 @@ one has
 \[
 L(f)=1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $X$ is connected, $f_*$ is the identity on $H_0(X;\QQ)$ and has trace $1$.
 The only nonzero positive-degree rational homology is the circle class in $H_1$, and $f$ collapses the $S^1$ summand to $x_0$.
 Hence
@@ -85,23 +98,37 @@ Therefore
 \[
 L(f)=1-0=1.
 \]
+
 :::
 
-<1>3. No map homotopic to $f$ can be fixed-point-free.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+No map homotopic to $f$ can be fixed-point-free.
+
+::: pf-proof
+
 If $h\simeq f$, homotopy invariance gives
 \[
 L(h)=L(f)=1\ne0.
 \]
 The space $X$ is a finite CW complex, so the Lefschetz fixed-point theorem applies and forces $h$ to have a fixed point.
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 \[
 g=*\vee\id_{S^1}
 \]
 is homotopic to a map $h:X\to X$ defined by a nontrivial rotation on the circle and a compatible constant map on $\RP^2$.
-::: {.proof}
+
+::: pf-proof
+
 Identify the circle summand with the unit circle in $\CC$ and take the wedge point to be
 \[
 x_0=1\in S^1.
@@ -135,10 +162,17 @@ Set
 h=H_1.
 \]
 Thus $h\simeq g$.
+
 :::
 
-<1>5. The map $h$ from <1>4 has no fixed points.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The map $h$ from step [](#s4){.pf-ref} has no fixed points.
+
+::: pf-proof
+
 On the $S^1$ summand,
 \[
 h(z)=e^{i\theta}z.
@@ -156,13 +190,26 @@ In particular
 h(x_0)=e^{i\theta}\ne x_0.
 \]
 Hence $h$ is fixed-point-free on all of $X$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{g=*\vee\id_{S^1}\text{ is homotopic to a fixed-point-free map, while }f=\id_{\RP^2}\vee *\text{ is not}.}
 \]
-::: {.proof}
-The impossibility for $f$ is <1>3, and <1>4--<1>5 construct the required representative for $g$.
+
+::: pf-proof
+
+The impossibility for $f$ is steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} construct the required representative for $g$.
+
 :::
+
+:::
+
+:::
+
 :::

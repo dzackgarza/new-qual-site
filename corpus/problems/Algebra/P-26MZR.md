@@ -34,13 +34,26 @@ with
 i^2=j^2=k^2=ijk=-1.
 \]
 
-<1>1. The element $-1$ has order $2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The element $-1$ has order $2$.
+
+::: pf-proof
+
 One has $(-1)^2=1$ and $-1\ne1$.
+
 :::
 
-<1>2. Each of $\pm i,\pm j,\pm k$ has order $4$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Each of $\pm i,\pm j,\pm k$ has order $4$.
+
+::: pf-proof
+
 For $u\in\{i,j,k\}$,
 \[
 u^2=-1,
@@ -50,11 +63,24 @@ so $u^4=1$ but $u^2\ne1$. Also
 (-u)^2=u^2=-1,
 \]
 so $-u$ likewise has order $4$.
+
 :::
 
-<1>3. Hence $-1$ is the unique element of order $2$ in $Q_8$.
-::: {.proof}
-The eight elements of $Q_8$ are $1,-1,\pm i,\pm j,\pm k$. The identity has order $1$,
-$-1$ has order $2$ by <1>1, and all six remaining elements have order $4$ by <1>2.
 :::
+
+::: pf-step
+
+Hence $-1$ is the unique element of order $2$ in $Q_8$.
+
+::: pf-proof
+
+The eight elements of $Q_8$ are $1,-1,\pm i,\pm j,\pm k$. The identity has order $1$,
+$-1$ has order $2$ by step [](#s1){.pf-ref}, and all six remaining elements have order $4$ by step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

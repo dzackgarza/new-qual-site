@@ -23,13 +23,19 @@ G(x)=\frac{\langle Ax,x\rangle}{\langle Bx,x\rangle}.
 :::
 
 ::: {.solution}
-<1>1. The function $G$ is continuous on $\RR^n\setminus\{0\}$ and satisfies
+
+::: pf
+
+::: {.pf-step #s1}
+
+The function $G$ is continuous on $\RR^n\setminus\{0\}$ and satisfies
 $$
 G(cx)=G(x)
 $$
 for every $x\neq0$ and every nonzero real scalar $c$.
 
-::: {.proof}
+::: pf-proof
+
 Since $B$ is positive definite,
 $$
 \inner{Bx}{x}>0
@@ -48,25 +54,36 @@ G(cx)
 G(x).
 \end{aligned}
 $$
+
 :::
 
-<1>2. The function $G$ attains a maximum on $\RR^n\setminus\{0\}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $G$ attains a maximum on $\RR^n\setminus\{0\}$.
+
+::: pf-proof
+
 Restrict $G$ to the Euclidean unit sphere
 $$
 S^{n-1}=\{x\in\RR^n:\norm x=1\}.
 $$
-This sphere is compact, and step <1>1 shows that $G$ is continuous on it. Hence $G$ attains a maximum there, say at $u\in S^{n-1}$.
+This sphere is compact, and step [](#s1){.pf-ref} shows that $G$ is continuous on it. Hence $G$ attains a maximum there, say at $u\in S^{n-1}$.
 
-For any nonzero $x$, step <1>1 gives
+For any nonzero $x$, step [](#s1){.pf-ref} gives
 $$
 G(x)=G\left(\frac{x}{\norm x}\right).
 $$
 Thus the maximum on the unit sphere is also the maximum on the entire domain.
+
 :::
 
-<1>3. Let $u\neq0$ be any maximum point and put
+:::
+
+::: {.pf-step #s3}
+
+Let $u\neq0$ be any maximum point and put
 $$
 \lambda=G(u).
 $$
@@ -75,7 +92,8 @@ $$
 Au=\lambda Bu.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix any $y\in\RR^n$ and consider
 $$
 \varphi(t)=G(u+ty)
@@ -123,22 +141,28 @@ As this holds for every $y\in\RR^n$,
 $$
 Au-\lambda Bu=0.
 $$
+
 :::
 
-<1>4. Every maximum point $u$ is an eigenvector of
+:::
+
+::: {.pf-step #s4}
+
+Every maximum point $u$ is an eigenvector of
 $$
 \boxed{B^{-1}A},
 $$
 with eigenvalue $G(u)$.
 
-::: {.proof}
+::: pf-proof
+
 Positive definiteness implies that $B$ is invertible: if $Bx=0$, then
 $$
 \inner{Bx}{x}=0,
 $$
 so positive definiteness forces $x=0$.
 
-Applying $B^{-1}$ to the identity in step <1>3 gives
+Applying $B^{-1}$ to the identity in step [](#s3){.pf-ref} gives
 $$
 B^{-1}Au
 =
@@ -147,11 +171,17 @@ B^{-1}Au
 G(u)u.
 $$
 Since $u\neq0$, it is an eigenvector of $B^{-1}A$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves existence of a maximum, and step <1>4 identifies the required matrix and eigenvector relation.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves existence of a maximum, and step [](#s4){.pf-ref} identifies the required matrix and eigenvector relation.
+
+:::
+
+:::
+
 :::

@@ -38,7 +38,11 @@ $$
 For $R>a$, integrate $F$ over the positively oriented upper semicircle with
 diameter $[-R,R]$.
 
-<1>1. The only pole of $F$ inside the contour is the double pole at
+::: pf
+
+::: {.pf-step #s1}
+
+The only pole of $F$ inside the contour is the double pole at
 $z=ia$, and
 $$
 \Res(F;ia)
@@ -46,7 +50,8 @@ $$
 -\frac{i e^{-a}(a+1)}{4a^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 (z^2+a^2)^2
@@ -88,12 +93,18 @@ $$
 -\frac{i e^{-a}(a+1)}{4a^3}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The integral over the upper semicircular arc tends to zero as
+:::
+
+::: {.pf-step #s2}
+
+The integral over the upper semicircular arc tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z$ in the upper half-plane,
 $$
 \abs{e^{iz}}\leq1.
@@ -119,9 +130,14 @@ $$
 \frac{\pi R}{(R^2-a^2)^2}
 \longrightarrow0.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_{-\infty}^{\infty}
 \frac{e^{ix}}{(x^2+a^2)^2}\,dx
@@ -129,8 +145,9 @@ $$
 \frac{\pi e^{-a}(a+1)}{2a^3}.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>1,
+::: pf-proof
+
+By the residue theorem and step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \int_{C_R}F(z)\,dz
@@ -147,10 +164,15 @@ $$
 $$
 The real-axis integrand is absolutely integrable because its modulus is
 $(x^2+a^2)^{-2}$. Split the contour into the real segment and the arc, let
-$R\to\infty$, and use step <1>2.
+$R\to\infty$, and use step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The whole-line cosine integral is
+:::
+
+::: {.pf-step #s4}
+
+The whole-line cosine integral is
 $$
 \int_{-\infty}^{\infty}
 \frac{\cos x}{(x^2+a^2)^2}\,dx
@@ -158,11 +180,17 @@ $$
 \frac{\pi e^{-a}(a+1)}{2a^3}.
 $$
 
-::: {.proof}
-Take real parts in step <1>3.
+::: pf-proof
+
+Take real parts in step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. The requested value is
+:::
+
+::: {.pf-step #s5}
+
+The requested value is
 $$
 \boxed{
 \int_0^{\infty}
@@ -172,14 +200,21 @@ $$
 }
 $$
 
-::: {.proof}
-The integrand in step <1>4 is even, so its whole-line integral is twice the
+::: pf-proof
+
+The integrand in step [](#s4){.pf-ref} is even, so its whole-line integral is twice the
 half-line integral.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

@@ -39,8 +39,14 @@ $$
 \boxed{\frac{\pi}{6}}.
 $$
 
-<1>1. The upper-half-plane residues sum to $-i/6$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The upper-half-plane residues sum to $-i/6$.
+
+::: pf-proof
+
 Let
 $$
 F(z)=\frac{z^2}{z^6+1}.
@@ -67,10 +73,17 @@ $$
 =-\frac{i}{6}+\frac{i}{6}-\frac{i}{6}
 =-\frac{i}{6}.
 $$
+
 :::
 
-<1>2. The upper semicircle gives the real-line integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+The upper semicircle gives the real-line integral.
+
+::: pf-proof
+
 Integrate $F$ over the contour formed by $[-R,R]$ and the counterclockwise
 upper semicircle $\Gamma_R$, with $R>1$. On $|z|=R$,
 $$
@@ -88,10 +101,17 @@ $$
 $$
 The integral converges absolutely because the integrand is bounded near zero
 and is $O(x^{-4})$ at infinity.
+
 :::
 
-<1>3. Evenness gives the requested half-line value.
-::: {.proof}
+:::
+
+::: pf-step
+
+Evenness gives the requested half-line value.
+
+::: pf-proof
+
 The real integrand is even. Hence
 $$
 2\int_0^\infty\frac{u^2}{u^6+1}\,du
@@ -99,5 +119,11 @@ $$
 =\frac{\pi}{3},
 $$
 so the desired integral is $\pi/6$.
+
 :::
+
+:::
+
+:::
+
 :::

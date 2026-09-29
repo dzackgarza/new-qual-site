@@ -47,13 +47,18 @@ Answers: $j=2^6 \cdot 3^3$; $j=2^6 \cdot 5^3$; $j=-3^3 \cdot 5^3$.
 ::: {.solution}
 Hartshorne is assuming $\characteristic k\ne2$ in this section.
 
-<1>1. The degree-$2$ endomorphism $f$ is unramified, and
+::: pf
+
+::: {.pf-step #s1}
+
+The degree-$2$ endomorphism $f$ is unramified, and
 $$
 \ker f=\{P_0,T\}
 $$
 for a nonzero point $T$ of order $2$.
 
-::: {.proof}
+::: pf-proof
+
 Since $\deg f=2$ and $\characteristic k\ne2$, the morphism $f$ is separable.
 Riemann--Hurwitz for $f:X\to X$ gives
 $$
@@ -64,9 +69,14 @@ so $f$ is unramified.
 An endomorphism of an elliptic curve is a group homomorphism, so its kernel
 has two points.  Write it as $\{P_0,T\}$.  Being a two-element subgroup, it
 has $2T=P_0$.
+
 :::
 
-<1>2. There are degree-$2$ morphisms
+:::
+
+::: {.pf-step #s2}
+
+There are degree-$2$ morphisms
 $$
 \pi':X\longrightarrow\PP^1,
 \qquad
@@ -77,7 +87,8 @@ $$
 \pi\circ f=g\circ\pi'.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $\pi'$ be the morphism associated to
 $$
 \abs{P_0+T}.
@@ -111,26 +122,38 @@ $$
 4=\deg(\pi\circ f)=\deg g\cdot2,
 $$
 so $\deg g=2$.
+
 :::
 
-<1>3. After suitable choices of coordinates on the two copies of $\PP^1$,
+:::
+
+::: {.pf-step #s3}
+
+After suitable choices of coordinates on the two copies of $\PP^1$,
 $$
 g(t)=t^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The degree-$2$ map $g$ is separable.  Riemann--Hurwitz gives exactly two
 simple ramification points.  Send them to $0,\infty$ in the source and send
 their branch values to $0,\infty$ in the target.  Then $g$ has a double zero
 at $0$ and a double pole at $\infty$, so $g(t)=ct^2$.  Rescaling the target
 coordinate makes $c=1$.
+
 :::
 
-<1>4. The branch values of $g$ are two of the four branch values of $\pi$,
+:::
+
+::: {.pf-step #s4}
+
+The branch values of $g$ are two of the four branch values of $\pi$,
 and the branch values of $\pi'$ are exactly the inverse images under $g$ of
 the other two.
 
-::: {.proof}
+::: pf-proof
+
 Because $f$ is unramified, the branch values of $\pi\circ f$ are exactly the
 branch values of $\pi$, and every ramification index of the composite is
 $2$.
@@ -146,9 +169,14 @@ composite.  Thus the four branch values of $\pi'$ lie over the two branch
 values of $\pi$ that are not branch values of $g$.  Each of those two target
 points has two distinct inverse images under $g$, giving exactly the four
 branch values of $\pi'$.
+
 :::
 
-<1>5. Write the branch set of $\pi$ as
+:::
+
+::: {.pf-step #s5}
+
+Write the branch set of $\pi$ as
 $$
 \{0,\infty,1,\lambda\}
 $$
@@ -165,8 +193,9 @@ $$
 $$
 and $\lambda'$ must belong to the $\Sigma_3$-orbit of $\lambda$.
 
-::: {.proof}
-By step <1>3, $g(t)=t^2$.  Step <1>4 therefore says that the branch set of
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $g(t)=t^2$.  Step [](#s4){.pf-ref} therefore says that the branch set of
 $\pi'$ is
 $$
 \{1,-1,\mu,-\mu\}.
@@ -206,9 +235,14 @@ $$
 \right\}.
 $$
 This is the required relation involving $\lambda$.
+
 :::
 
-<1>6. Up to the $\Sigma_3$-action, the relation in step <1>5 has exactly
+:::
+
+::: {.pf-step #s6}
+
+Up to the $\Sigma_3$-action, the relation in step [](#s5){.pf-ref} has exactly
 three classes of solutions:
 $$
 \lambda=-1,
@@ -218,12 +252,13 @@ $$
 \lambda^2-\lambda+16=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Substitute $\lambda=\mu^2$ and
 $$
 \lambda'=\left(\frac{\mu-1}{\mu+1}\right)^2
 $$
-into the six possibilities of step <1>5.  Since
+into the six possibilities of step [](#s5){.pf-ref}.  Since
 $\lambda\ne0,1$, we have $\mu\ne0,\pm1$.  Clearing denominators and removing
 the excluded factors gives the equations
 $$
@@ -268,9 +303,14 @@ $$
 $$
 Thus the last two lie in the same $\Sigma_3$-orbit as the preceding class.
 No other parameter classes occur.
+
 :::
 
-<1>7. The corresponding $j$-invariants are
+:::
+
+::: {.pf-step #s7}
+
+The corresponding $j$-invariants are
 $$
 \boxed{
 2^6\cdot3^3,
@@ -281,7 +321,8 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Use Hartshorne's formula
 $$
 j(\lambda)
@@ -340,13 +381,19 @@ $$
 respectively.  In small positive characteristic some of the three displayed
 integer $j$-values may coincide after reduction; the calculation above shows
 that no additional $j$-values occur.
+
 :::
 
-<1>8. Each of the three parameter classes is realized by a degree-$2$
+:::
+
+::: {.pf-step #s8}
+
+Each of the three parameter classes is realized by a degree-$2$
 endomorphism.
 
-::: {.proof}
-Choose $\mu$ satisfying one of the equations in step <1>6 and set
+::: pf-proof
+
+Choose $\mu$ satisfying one of the equations in step [](#s6){.pf-ref} and set
 $\lambda=\mu^2$.  Consider the smooth genus-one curves
 $$
 X_\lambda:
@@ -374,13 +421,13 @@ $$
 (tY)^2=t^2(t^2-1)(t^2-\mu^2).
 $$
 
-By step <1>5, the Legendre parameter of $X_\mu'$ is
+By step [](#s5){.pf-ref}, the Legendre parameter of $X_\mu'$ is
 $$
 \lambda'
 =
 \left(\frac{\mu-1}{\mu+1}\right)^2.
 $$
-For the solutions retained in step <1>6, $\lambda'$ lies in the
+For the solutions retained in step [](#s6){.pf-ref}, $\lambda'$ lies in the
 $\Sigma_3$-orbit of $\lambda$.  Hence Theorem IV.4.1 gives
 $$
 X_\mu'\cong X_\lambda.
@@ -389,13 +436,19 @@ Choose an isomorphism carrying the origin of $X_\lambda$ to either point of
 $X_\mu'$ lying above the origin of $X_\lambda$ under $F$; this is possible by
 composing any isomorphism with a translation on $X_\mu'$.  Its composition
 with $F$ is then an endomorphism of $X_\lambda$ of degree $2$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove parts (a)--(b), steps <1>4--<1>5 prove part (c),
-and steps <1>6--<1>8 give the three parameter classes and the three
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove parts (a)--(b), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (c),
+and steps [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} give the three parameter classes and the three
 $j$-values of part (d), together with their realization.
+
 :::
+
+:::
+
 :::

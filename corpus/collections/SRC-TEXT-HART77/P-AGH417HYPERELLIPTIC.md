@@ -42,14 +42,20 @@ See also (V, Ex.
 :::
 
 ::: {.solution}
-<1>1. If $g=2$, then the canonical system has degree $2$ and dimension $1$:
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $g=2$, then the canonical system has degree $2$ and dimension $1$:
 $$
 \deg K=2,
 \qquad
 \dim\abs{K}=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a smooth projective curve of genus $g$,
 $$
 \deg K=2g-2
@@ -70,11 +76,17 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>2. The canonical system $\abs{K}$ has no base point.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The canonical system $\abs{K}$ has no base point.
+
+::: pf-proof
+
 Suppose that $P\in X$ were a base point of $\abs{K}$. Then every canonical section vanishes at $P$, so
 $$
 H^0(X,\mco_X(K-P))
@@ -111,12 +123,18 @@ $$
 Since $P\ne0$, the equality criterion in
 [[P-AGH415DIMLEQDEG|Exercise IV.1.5]]
 would force $g=0$, contradicting $g=2$. Thus $\abs{K}$ has no base point.
+
 :::
 
-<1>3. Every genus-$2$ curve is hyperelliptic.
+:::
 
-::: {.proof}
-By steps <1>1--<1>2, the complete linear system $\abs{K}$ is base-point free of dimension $1$. Hence it defines a morphism
+::: {.pf-step #s3}
+
+Every genus-$2$ curve is hyperelliptic.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the complete linear system $\abs{K}$ is base-point free of dimension $1$. Hence it defines a morphism
 $$
 \varphi_{\abs{K}}:X\longrightarrow\PP^1
 $$
@@ -135,11 +153,17 @@ $$
 2.
 $$
 Thus $X$ is hyperelliptic. This proves part (a).
+
 :::
 
-<1>4. The curves constructed in (IV.1.1.1) admit a finite morphism of degree $2$ to $\PP^1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The curves constructed in (IV.1.1.1) admit a finite morphism of degree $2$ to $\PP^1$.
+
+::: pf-proof
+
 In that construction, for every $g\ge2$ one obtains a smooth curve
 $$
 X\subseteq Q,
@@ -169,17 +193,29 @@ $$
 \deg(p|_X)=2.
 $$
 Hence every curve in the construction is hyperelliptic.
+
 :::
 
-<1>5. Hyperelliptic curves exist in every genus $g\ge2$.
-
-::: {.proof}
-The construction in (IV.1.1.1) produces such a smooth curve for every $g\ge2$, and step <1>4 gives a degree-two morphism from each one to $\PP^1$. This proves part (b).
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>3 proves part (a), and steps <1>4--<1>5 prove part (b).
+Hyperelliptic curves exist in every genus $g\ge2$.
+
+::: pf-proof
+
+The construction in (IV.1.1.1) produces such a smooth curve for every $g\ge2$, and step [](#s4){.pf-ref} gives a degree-two morphism from each one to $\PP^1$. This proves part (b).
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

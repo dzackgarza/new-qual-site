@@ -31,18 +31,30 @@ Prove that the characteristic of $F$ is positive.
 :::
 
 ::: {.solution}
-<1>1. Assume for contradiction that
+
+::: pf
+
+::: {.pf-step #s1}
+
+Assume for contradiction that
 \[
 \operatorname{char}F=0.
 \]
 Then $E/F$ is a finite Galois extension.
-::: {.proof}
+
+::: pf-proof
+
 In characteristic zero every irreducible polynomial is separable.
 Thus $f$ is separable over $F$.
 Since $E$ is the splitting field of $f$, the extension $E/F$ is finite, normal, and separable, hence Galois.
+
 :::
 
-<1>2. There exists
+:::
+
+::: pf-step
+
+There exists
 \[
 \sigma\in\operatorname{Gal}(E/F)
 \]
@@ -50,7 +62,9 @@ such that
 \[
 \sigma(\alpha)=\alpha+1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The elements $\alpha$ and $\alpha+1$ are both roots of the irreducible polynomial $f$.
 Hence they have the same minimal polynomial over $F$, and the assignment
 \[
@@ -60,15 +74,22 @@ defines an $F$-isomorphism
 \[
 F(\alpha)\longrightarrow F(\alpha+1)\subseteq E.
 \]
-Because $E/F$ is normal by <1>1, this $F$-embedding extends to an $F$-automorphism of $E$.
+Because $E/F$ is normal by step [](#s1){.pf-ref}, this $F$-embedding extends to an $F$-automorphism of $E$.
 Call that automorphism $\sigma$.
+
 :::
 
-<1>3. For every integer $k\ge0$,
+:::
+
+::: {.pf-step #s3}
+
+For every integer $k\ge0$,
 \[
 \sigma^k(\alpha)=\alpha+k.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The assertion is clear for $k=0$.
 If it holds for $k$, then $\sigma$ fixes $F$, and in particular fixes the prime-field element $k\cdot1_F$.
 Therefore
@@ -80,17 +101,24 @@ Therefore
 =\alpha+(k+1).
 \]
 Induction proves the formula.
+
 :::
 
-<1>4. The assumption $\operatorname{char}F=0$ is impossible.
-::: {.proof}
-By <1>1, the finite group $\operatorname{Gal}(E/F)$ contains $\sigma$.
+:::
+
+::: {.pf-step #s4}
+
+The assumption $\operatorname{char}F=0$ is impossible.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the finite group $\operatorname{Gal}(E/F)$ contains $\sigma$.
 Let $r\ge1$ be the order of $\sigma$.
 Then
 \[
 \alpha=\sigma^r(\alpha).
 \]
-Using <1>3,
+Using step [](#s3){.pf-ref},
 \[
 \alpha=\alpha+r,
 \]
@@ -99,11 +127,24 @@ so
 r\cdot1_F=0.
 \]
 This contradicts characteristic zero.
+
 :::
 
-<1>5. Therefore $F$ has positive characteristic.
-::: {.proof}
-Every field has characteristic either $0$ or a prime number.
-By <1>4, characteristic zero is excluded, so $\operatorname{char}F>0$.
 :::
+
+::: pf-step
+
+Therefore $F$ has positive characteristic.
+
+::: pf-proof
+
+Every field has characteristic either $0$ or a prime number.
+By step [](#s4){.pf-ref}, characteristic zero is excluded, so $\operatorname{char}F>0$.
+
+:::
+
+:::
+
+:::
+
 :::

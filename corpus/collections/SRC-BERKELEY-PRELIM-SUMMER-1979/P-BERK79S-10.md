@@ -36,12 +36,18 @@ y'(t)=x(t).
 :::
 
 ::: {.solution}
-<1>1. Every solution satisfies
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every solution satisfies
 $$
 y''-2y'+y=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The second equation gives
 $$
 y'=x.
@@ -59,14 +65,20 @@ y''
 2y'-y.
 $$
 Rearranging gives the claimed second-order equation.
+
 :::
 
-<1>2. The characteristic polynomial of the equation in step <1>1 is
+:::
+
+::: {.pf-step #s2}
+
+The characteristic polynomial of the equation in step [](#s1){.pf-ref} is
 $$
 r^2-2r+1=(r-1)^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Substituting the trial function
 $$
 y(t)=e^{rt}
@@ -81,16 +93,22 @@ $$
 $$
 Since $e^{rt}\neq0$, the characteristic equation is the displayed
 polynomial equation.
+
 :::
 
-<1>3. Every real solution of the equation in step <1>1 has the form
+:::
+
+::: {.pf-step #s3}
+
+Every real solution of the equation in step [](#s1){.pf-ref} has the form
 $$
 y(t)=(a+bt)e^t
 $$
 for some $a,b\in\RR$.
 
-::: {.proof}
-Step <1>2 gives the repeated characteristic root
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives the repeated characteristic root
 $$
 r=1
 $$
@@ -102,14 +120,20 @@ Hence
 $$
 y(t)=ae^t+bte^t=(a+bt)e^t.
 $$
+
 :::
 
-<1>4. For a solution from step <1>3, the second equation forces
+:::
+
+::: {.pf-step #s4}
+
+For a solution from step [](#s3){.pf-ref}, the second equation forces
 $$
 x(t)=(a+b+bt)e^t.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 x=y',
@@ -126,9 +150,14 @@ be^t+(a+bt)e^t\\
 (a+b+bt)e^t.
 \end{aligned}
 $$
+
 :::
 
-<1>5. For every $a,b\in\RR$, the pair
+:::
+
+::: {.pf-step #s5}
+
+For every $a,b\in\RR$, the pair
 $$
 \boxed{
 \begin{aligned}
@@ -139,8 +168,9 @@ x(t)&=(a+b+bt)e^t
 $$
 satisfies the original system.
 
-::: {.proof}
-From step <1>4,
+::: pf-proof
+
+From step [](#s4){.pf-ref},
 $$
 y'(t)=x(t).
 $$
@@ -171,21 +201,33 @@ $$
 x'=2x-y
 $$
 as well.
+
 :::
 
-<1>6. Every solution of the original system occurs uniquely in the form
-given in step <1>5.
+:::
 
-::: {.proof}
-Step <1>1 shows that the $y$-component of every solution must solve the
-second-order equation there. Step <1>3 gives its complete two-parameter
-solution family, and step <1>4 uniquely determines $x$ from $y$. Hence no
+::: {.pf-step #s6}
+
+Every solution of the original system occurs uniquely in the form
+given in step [](#s5){.pf-ref}.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that the $y$-component of every solution must solve the
+second-order equation there. Step [](#s3){.pf-ref} gives its complete two-parameter
+solution family, and step [](#s4){.pf-ref} uniquely determines $x$ from $y$. Hence no
 other solutions occur.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>5--<1>6 give exactly all required pairs.
 :::
+
+::: pf-qed
+
+Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} give exactly all required pairs.
+
+:::
+
+:::
+
 :::

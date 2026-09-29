@@ -43,9 +43,15 @@ Use (Ex. 3.5) and (Ex. 3.1e). See (7.2) for a generalization.
 :::
 
 ::: {.solution}
-<1>1. If $Y\subseteq\PP^n$ is projective with $\dim Y\ge1$ and $H\subseteq\PP^n$ is a hypersurface, then $Y\cap H\ne\varnothing$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $Y\subseteq\PP^n$ is projective with $\dim Y\ge1$ and $H\subseteq\PP^n$ is a hypersurface, then $Y\cap H\ne\varnothing$.
+
+::: pf-proof
+
 Suppose instead that $Y\cap H=\varnothing$.
 Then
 $$
@@ -59,25 +65,37 @@ But $Y$ is projective as well.
 Part (e) of [[P-AGH31CONICS]] shows that a variety which is both affine and projective consists of a single point.
 That would give $\dim Y=0$, contradicting $\dim Y\ge1$.
 Thus $Y\cap H\ne\varnothing$, proving (b).
+
 :::
 
-<1>2. Any two curves in $\PP^2$ have a nonempty intersection.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Any two curves in $\PP^2$ have a nonempty intersection.
+
+::: pf-proof
+
 Let $C,D\subseteq\PP^2$ be curves.
 Each has dimension one.
 By [[P-AGH28HYPERSURFACE]], a projective variety of dimension $2-1=1$ in $\PP^2$ is a hypersurface.
-Apply step <1>1 with $Y=C$ and $H=D$.
+Apply step [](#s1){.pf-ref} with $Y=C$ and $H=D$.
 It gives
 $$
 C\cap D\ne\varnothing,
 $$
 which proves (a).
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (b), and step <1>2 proves (a).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (b), and step [](#s2){.pf-ref} proves (a).
+
+:::
+
+:::
+
 :::

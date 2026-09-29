@@ -34,8 +34,14 @@ $$
 182=2\cdot7\cdot13.
 $$
 
-<1>1. The Sylow $7$-subgroup is unique.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The Sylow $7$-subgroup is unique.
+
+::: pf-proof
+
 Let $n_7$ be the number of Sylow $7$-subgroups. Sylow's theorem gives
 $$
 n_7\mid \frac{182}{7}=26
@@ -56,10 +62,17 @@ Hence the only possibility is
 $$
 n_7=1.
 $$
+
 :::
 
-<1>2. Conclude that $G$ is not simple.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude that $G$ is not simple.
+
+::: pf-proof
+
 The unique Sylow $7$-subgroup $P$ has order $7$, so it is nontrivial and
 proper in $G$. Uniqueness makes it invariant under conjugation, hence normal:
 $$
@@ -70,5 +83,11 @@ Hence
 $$
 \boxed{\text{no group of order }182\text{ is simple}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

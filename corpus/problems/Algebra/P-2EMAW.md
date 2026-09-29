@@ -25,29 +25,54 @@ audit:
 - Show that every maximal subgroup of a $p$-group is normal.
 :::
 
-
 ::: {.solution}
 Let $G$ be a finite $p$-group and let $M<G$ be maximal.
 
-<1>1. One has $M<N_G(M)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+One has $M<N_G(M)$.
+
+::: pf-proof
+
 By the normalizer condition for finite $p$-groups, every proper subgroup is properly contained in its normalizer. Since $M<G$,
 \[
 M<N_G(M).
 \]
+
 :::
 
-<1>2. Hence $N_G(M)=G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Hence $N_G(M)=G$.
+
+::: pf-proof
+
 We have
 \[
 M<N_G(M)\le G.
 \]
 Because $M$ is maximal, there is no subgroup strictly between $M$ and $G$. Therefore $N_G(M)=G$.
+
 :::
 
-<1>3. Therefore $M\trianglelefteq G$.
-::: {.proof}
-The equality $N_G(M)=G$ says precisely that every element of $G$ normalizes $M$. Hence $M$ is normal.
 :::
+
+::: pf-step
+
+Therefore $M\trianglelefteq G$.
+
+::: pf-proof
+
+The equality $N_G(M)=G$ says precisely that every element of $G$ normalizes $M$. Hence $M$ is normal.
+
+:::
+
+:::
+
+:::
+
 :::

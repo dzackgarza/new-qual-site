@@ -36,10 +36,16 @@ A rational curve of degree 5 in $\PP^3$ is always contained in a cubic surface, 
 :::
 
 ::: {.solution}
-<1>1. Every rational quintic $X\subseteq\PP^3$ is contained in a cubic
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every rational quintic $X\subseteq\PP^3$ is contained in a cubic
 surface.
 
-::: {.proof}
+::: pf-proof
+
 Since $X\cong\PP^1$ and $\deg\OO_X(1)=5$,
 $$
 \deg\OO_X(3)=15,
@@ -63,9 +69,14 @@ $$
 h^0(\PP^3,\mathcal I_X(3))\ge4.
 $$
 Any nonzero element of this kernel is a cubic equation vanishing on $X$.
+
 :::
 
-<1>2. Fix $\alpha\in k^*$ and define
+:::
+
+::: {.pf-step #s2}
+
+Fix $\alpha\in k^*$ and define
 $$
 \phi:\PP^1\longrightarrow\PP^3,
 \qquad
@@ -81,7 +92,8 @@ f_3=t^5.
 $$
 Then $\phi$ is a closed embedding and its image has degree $5$.
 
-::: {.proof}
+::: pf-proof
+
 The four sections have no common zero, so they define a morphism and
 $$
 \phi^*\OO_{\PP^3}(1)\cong\OO_{\PP^1}(5).
@@ -108,11 +120,17 @@ pulled-back hyperplane bundle.  Therefore
 $$
 \deg\phi(\PP^1)=\deg\OO_{\PP^1}(5)=5.
 $$
+
 :::
 
-<1>3. The curve $C=\phi(\PP^1)$ is contained in no quadric surface.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The curve $C=\phi(\PP^1)$ is contained in no quadric surface.
+
+::: pf-proof
+
 A quadric containing $C$ would give a nonzero relation among the ten products
 $f_if_j$ with $0\le i\le j\le3$.  Suppose
 $$
@@ -140,12 +158,18 @@ of $s^2t^8$ then gives $H=0$, the coefficient of $s^4t^6$ gives $G=0$, and
 finally the coefficient of $t^{10}$ gives $J=0$.  Thus every coefficient is
 zero, so the ten products are linearly independent and no nonzero quadratic
 equation vanishes on $C$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves that every rational quintic lies on a cubic surface.
-Steps <1>2--<1>3 exhibit a nonsingular rational quintic lying on no quadric.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves that every rational quintic lies on a cubic surface.
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} exhibit a nonsingular rational quintic lying on no quadric.
+
+:::
+
+:::
+
 :::

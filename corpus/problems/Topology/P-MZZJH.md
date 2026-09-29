@@ -27,20 +27,41 @@ $$g = n(h - 1) + 1.$$
 :::
 
 ::: {.solution}
-<1>1. For a closed orientable surface of genus $r$,
+
+::: pf
+
+::: pf-step
+
+For a closed orientable surface of genus $r$,
 $$
 \chi(M_r)=2-2r.
 $$
 
-<1>2. Euler characteristic multiplies by the number of sheets in a finite covering:
+:::
+
+::: pf-step
+
+Euler characteristic multiplies by the number of sheets in a finite covering:
 $$
 \chi(M_g)=n\,\chi(M_h).
 $$
-::: {.proof}
+
+::: pf-proof
+
 Give $M_h$ a finite CW structure. Each open cell is evenly covered, and an $n$-sheeted covering has exactly $n$ lifts of each cell. Thus every cell count is multiplied by $n$, hence so is the alternating sum defining Euler characteristic.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
+
+:::
+
+:::
+
 $$
 2-2g=n(2-2h).
 $$

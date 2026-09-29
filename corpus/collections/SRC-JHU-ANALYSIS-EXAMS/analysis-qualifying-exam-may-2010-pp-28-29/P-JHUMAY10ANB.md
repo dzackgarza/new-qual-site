@@ -47,9 +47,14 @@ $$
 \boxed{\{0,A,-A,B,-B,A+B,-A-B\}.}
 $$
 
-<1>1. The two poles give the contributions $A$ and $B$ for positive winding number one.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The two poles give the contributions $A$ and $B$ for positive winding number one.
+
+::: pf-proof
+
 Write $F(z)=e^{\pi z}/((z-1)(z-i)^2)$. At the simple
 pole $1$,
 $$
@@ -69,11 +74,17 @@ $$
 where $e^{\pi i}=-1$, $(i-1)^{-1}=(-1-i)/2$, and
 $(i-1)^{-2}=i/2$. Multiplication by $2\pi i$ gives $B$.
 These are the only poles [@SS03].
+
 :::
 
-<1>2. A simple closed curve allows exactly the displayed residue combinations.
+:::
 
-::: {.proof}
+::: pf-step
+
+A simple closed curve allows exactly the displayed residue combinations.
+
+::: pf-proof
+
 A simple closed smooth curve has index zero at every
 point of its unbounded complementary component and a
 common index $\varepsilon\in\{1,-1\}$ at every point
@@ -88,11 +99,17 @@ $$
 In particular a curve cannot have index $1$ at one
 enclosed pole and $-1$ at the other while remaining simple.
 Thus no other combination is allowed.
+
 :::
 
-<1>3. Every listed value is attained.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every listed value is attained.
+
+::: pf-proof
+
 The circle $|z|=1/4$ encloses neither pole. The circles
 $|z-1|=1/4$ and $|z-i|=1/4$ enclose exactly $1$ and
 $i$, respectively, because their distance is $\sqrt2$.
@@ -101,5 +118,11 @@ a pole, and all are smooth and simple. Counterclockwise
 orientation gives $0,A,B,A+B$; reversing the last three
 orientations gives their negatives. This proves both
 attainability and exhaustion of the stated set.
+
 :::
+
+:::
+
+:::
+
 :::

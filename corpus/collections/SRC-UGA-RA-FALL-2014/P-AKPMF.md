@@ -35,8 +35,15 @@ f \in L^p(\RR^n) \implies \|f\|_{p} = \sup _{\|g\|_{q}=1}\left|\int f(x) g(x) d 
 \]
 :::
 ::: {.solution}
-<1>1. Hölder gives the upper bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Hölder gives the upper bound.
+
+::: pf-proof
+
 For every $g\in L^q(\mathbb R^n)$ with $\|g\|_q=1$, Hölder's inequality gives
 \[
 \left|\int_{\mathbb R^n}f(x)g(x)\,dx\right|
@@ -47,10 +54,17 @@ Hence
 \[
 \sup_{\|g\|_q=1}\left|\int fg\right|\le\|f\|_p.
 \]
+
 :::
 
-<1>2. Prove equality when $1<p<\infty$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove equality when $1<p<\infty$.
+
+::: pf-proof
+
 If $f=0$, the result is immediate. Otherwise define
 \[
 g(x)=\frac{\overline{f(x)}|f(x)|^{p-2}}{\|f\|_p^{p-1}},
@@ -68,10 +82,17 @@ Moreover,
 =\|f\|_p.
 \]
 Thus the supremum is at least $\|f\|_p$, and Step 1 gives equality.
+
 :::
 
-<1>3. Prove equality when $p=1$ and $q=\infty$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove equality when $p=1$ and $q=\infty$.
+
+::: pf-proof
+
 If $f=0$, there is nothing to prove. Define the phase
 \[
 \theta(x)=
@@ -85,10 +106,17 @@ Then $\|\theta\|_\infty=1$ and
 \int f\theta=\int |f|=\|f\|_1.
 \]
 Hence the supremum equals $\|f\|_1$.
+
 :::
 
-<1>4. Prove equality when $p=\infty$ and $q=1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove equality when $p=\infty$ and $q=1$.
+
+::: pf-proof
+
 Let $M=\|f\|_\infty$. If $M=0$, the result is immediate. Fix $\varepsilon\in(0,M)$. By the definition of essential supremum,
 \[
 A_\varepsilon:=\{x:|f(x)|>M-\varepsilon\}
@@ -116,10 +144,17 @@ Then $\|g\|_1=1$ and
 \ge M-\varepsilon.
 \]
 Letting $\varepsilon\downarrow0$ shows that the supremum is at least $M$. Step 1 gives the reverse inequality, hence equality.
+
 :::
 
-<1>5. Conclude.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude.
+
+::: pf-proof
+
 All conjugate pairs $1\le p,q\le\infty$ have been covered, so
 \[
 \boxed{
@@ -127,5 +162,11 @@ All conjugate pairs $1\le p,q\le\infty$ have been covered, so
 =\sup_{\|g\|_q=1}
 \left|\int_{\mathbb R^n}f(x)g(x)\,dx\right|.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

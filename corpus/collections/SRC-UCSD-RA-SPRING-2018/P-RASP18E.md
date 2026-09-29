@@ -39,10 +39,16 @@ $$
 $$
 :::
 
-
 ::: {.solution}
-<1>1. Prove the \(L^p\) convolution bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the \(L^p\) convolution bound.
+
+::: pf-proof
+
 For \(y\in\mathbb R\), let \(\tau_y f(x)=f(x-y)\). Translation invariance of Lebesgue measure gives
 \[
 \|\tau_y f\|_p=\|f\|_p.
@@ -60,10 +66,17 @@ In particular the defining integral is finite for almost every \(x\), and
 \[
 \boxed{\|\mu*f\|_p\le\mu(\mathbb R)\|f\|_p.}
 \]
+
 :::
 
-<1>2. Compute the Fourier transform.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the Fourier transform.
+
+::: pf-proof
+
 Assume \(f\in L^1(\mathbb R)\). Part 1 gives \(\mu*f\in L^1\), and Tonelli--Fubini applies because
 \[
 \int_{\mathbb R}\int_{\mathbb R}|f(x-y)|\,d\mu(y)\,dx
@@ -89,10 +102,17 @@ Thus
 \[
 \boxed{\widehat{\mu*f}=\sqrt{2\pi}\,\widehat\mu\,\widehat f.}
 \]
+
 :::
 
-<1>3. Apply Fourier inversion.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Fourier inversion.
+
+::: pf-proof
+
 Assume now that \(f,\widehat f\in L^1(\mathbb R)\). Since \(\mu\) is finite,
 \[
 |\widehat\mu(k)|
@@ -119,5 +139,11 @@ Hence
 (\mu*f)(x)=\int_{\mathbb R}\widehat\mu(k)\widehat f(k)e^{ikx}\,dk
 \quad\text{for a.e. }x.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

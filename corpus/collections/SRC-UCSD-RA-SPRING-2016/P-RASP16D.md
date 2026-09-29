@@ -41,10 +41,16 @@ Prove that $\|I_k\| = \sum_{j=0}^{k} |A_j^{(k)}|$.
 Prove $\sup_{k \geq 1} \sum_{j=0}^{k} |A_j^{(k)}| < \infty$.
 :::
 
-
 ::: {.solution}
-<1>1. Extend convergence from polynomials to all continuous functions.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Extend convergence from polynomials to all continuous functions.
+
+::: pf-proof
+
 Put
 \[
 M:=\sup_{k\ge1}\sum_{j=0}^k |A_j^{(k)}|<\infty.
@@ -75,10 +81,17 @@ The first term is below \(\varepsilon/2\), and the second tends to \(0\) by hypo
 \[
 I_k[f]\longrightarrow I[f].
 \]
+
 :::
 
-<1>2. Compute the norm of \(I_k\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the norm of \(I_k\).
+
+::: pf-proof
+
 For \(\|f\|_\infty\le1\),
 \[
 |I_k[f]|
@@ -106,10 +119,17 @@ Hence
 \[
 \boxed{\|I_k\|=\sum_{j=0}^k |A_j^{(k)}|.}
 \]
+
 :::
 
-<1>3. Deduce uniform boundedness of the coefficient sums from pointwise convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Deduce uniform boundedness of the coefficient sums from pointwise convergence.
+
+::: pf-proof
+
 Assume \(I_k[f]\to I[f]\) for every \(f\in C([0,1])\). For each fixed \(f\), the scalar sequence \((I_k[f])_k\) converges and is therefore bounded:
 \[
 \sup_k |I_k[f]|<\infty.
@@ -123,5 +143,11 @@ Using Step 2,
 \boxed{
 \sup_{k\ge1}\sum_{j=0}^k |A_j^{(k)}|<\infty.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

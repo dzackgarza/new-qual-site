@@ -39,7 +39,11 @@ b. Show by example that such a general inequality cannot hold for $p>q$.
 ::: {.solution}
 We first prove the form of Young's convolution inequality needed below.
 
-<1>1. Let $1\le p,a,r\le\infty$ satisfy
+::: pf
+
+::: {.pf-step #s1}
+
+Let $1\le p,a,r\le\infty$ satisfy
 \[
 1+\frac1r=\frac1p+\frac1a.
 \]
@@ -47,7 +51,9 @@ Then
 \[
 \|f*g\|_{L^r}\le\|f\|_{L^p}\|g\|_{L^a}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 First suppose $r<\infty$.
 Then necessarily $p,a<\infty$, and the exponent relation implies
 \[
@@ -127,15 +133,22 @@ For every $x$, Hölder's inequality directly gives
 \end{aligned}
 \]
 Taking the essential supremum over $x$ proves the endpoint case.
+
 :::
 
-<1>2. There is one finite constant $A_\phi$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is one finite constant $A_\phi$ such that
 \[
 \|\phi\|_{L^a}\le A_\phi
 \qquad
 \text{for every }1\le a\le\infty.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 M=\|\phi\|_{L^\infty},
@@ -160,13 +173,20 @@ Hence one may take
 \[
 A_\phi=M\max\{1,L\}.
 \]
+
 :::
 
-<1>3. If $1\le p\le q\le\infty$, then
+:::
+
+::: pf-step
+
+If $1\le p\le q\le\infty$, then
 \[
 \|f*\phi\|_{L^q}\le A_\phi\|f\|_{L^p}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define $a\in[1,\infty]$ by
 \[
 \frac1a=1+\frac1q-\frac1p.
@@ -180,7 +200,7 @@ The exponent identity is exactly
 \[
 1+\frac1q=\frac1p+\frac1a.
 \]
-Applying <1>1 with $g=\phi$ and then <1>2 gives
+Applying step [](#s1){.pf-ref} with $g=\phi$ and then step [](#s2){.pf-ref} gives
 \[
 \|f*\phi\|_q
 \le\|f\|_p\|\phi\|_a
@@ -188,13 +208,20 @@ Applying <1>1 with $g=\phi$ and then <1>2 gives
 \]
 The constant $A_\phi$ depends only on the fixed function $\phi$, not on $p,q$, or $f$.
 This proves part (a).
+
 :::
 
-<1>4. For every pair $1\le q<p\le\infty$, there are a compactly supported continuous $\phi$ and an $f\in L^p$ such that
+:::
+
+::: pf-step
+
+For every pair $1\le q<p\le\infty$, there are a compactly supported continuous $\phi$ and an $f\in L^p$ such that
 \[
 f*\phi\notin L^q.
 \]
-::: {.proof}
+
+::: pf-proof
+
 First suppose $p<\infty$.
 Choose a number $\alpha$ satisfying
 \[
@@ -247,5 +274,11 @@ Then $f\in L^\infty$ and
 for every $x$.
 Thus $f*\phi$ is a nonzero constant and hence does not belong to $L^q(\mathbb R)$.
 This proves that no analogous general estimate can hold for $p>q$.
+
 :::
+
+:::
+
+:::
+
 :::

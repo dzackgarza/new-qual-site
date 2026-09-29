@@ -31,9 +31,15 @@ in $\mathbb F_p[x]$, where $g,h$ are quadratic. Prove that both $g$ and $h$ are 
 :::
 
 ::: {.solution}
-<1>1. The polynomial $x^4+1$ has no root in $\FF_p$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomial $x^4+1$ has no root in $\FF_p$.
+
+::: pf-proof
+
 Suppose $a\in\FF_p$ satisfied $a^4+1=0$. Then $a\ne0$ and
 $$
 (a^2)^2=-1.
@@ -47,24 +53,36 @@ $$
 (u^2)^{(p-1)/2}=u^{p-1}=1.
 $$
 This contradiction proves the claim.
+
 :::
 
-<1>2. Both $g$ and $h$ are irreducible over $\FF_p$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Both $g$ and $h$ are irreducible over $\FF_p$.
+
+::: pf-proof
+
 A reducible quadratic over a field has a linear factor and therefore
 a root in that field. If, say, $g$ were reducible, there would be
 $a\in\FF_p$ with $g(a)=0$. Since
 $$
 x^4+1=g(x)h(x),
 $$
-this would give $a^4+1=0$, contradicting step <1>1. Hence $g$ is
+this would give $a^4+1=0$, contradicting step [](#s1){.pf-ref}. Hence $g$ is
 irreducible. The same argument applies to $h$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves both required irreducibility statements.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves both required irreducibility statements.
+
+:::
+
+:::
+
 :::

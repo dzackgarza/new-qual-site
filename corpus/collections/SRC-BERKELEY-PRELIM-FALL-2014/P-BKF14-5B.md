@@ -54,12 +54,17 @@ $$
 Since $f$ has no zero or pole on $Q$, the function $h$ is holomorphic
 on a neighborhood of $Q$.
 
-<1>1. The logarithmic derivative $h$ has periods $1$ and $i$:
+::: pf
+
+::: {.pf-step #s1}
+
+The logarithmic derivative $h$ has periods $1$ and $i$:
 $$
 h(z+1)=h(z)=h(z+i).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiating the identities
 $$
 f(z+1)=f(z)=f(z+i)
@@ -70,18 +75,24 @@ f'(z+1)=f'(z)=f'(z+i).
 $$
 Dividing by the corresponding nonzero values of $f$ wherever $h$ is
 defined gives the claimed periodicity.
+
 :::
 
-<1>2. The sum of the contributions from the right and left edges to
+:::
+
+::: {.pf-step #s2}
+
+The sum of the contributions from the right and left edges to
 $$
 I\coloneqq\frac1{2\pi i}\oint_Q z h(z)\,dz
 $$
 is an integer.
 
-::: {.proof}
+::: pf-proof
+
 The right edge is traversed from $1$ to $1+i$, while the left edge is
 traversed from $i$ to $0$. Translating the right edge by $-1$ and using
-step <1>1 gives
+step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 &\int_{1}^{1+i} z h(z)\,dz
@@ -105,15 +116,21 @@ $$
 \frac1{2\pi i}\int_0^i\frac{f'(t)}{f(t)}\,dt
 $$
 is its winding number about $0$, hence an integer.
+
 :::
 
-<1>3. The sum of the contributions from the bottom and top edges to
+:::
+
+::: {.pf-step #s3}
+
+The sum of the contributions from the bottom and top edges to
 $I$ is an imaginary integer.
 
-::: {.proof}
+::: pf-proof
+
 The bottom edge is traversed from $0$ to $1$, and the top edge from
 $1+i$ to $i$. Using the parameter $z=t+i$ on the top edge and step
-<1>1,
+[](#s1){.pf-ref},
 $$
 \begin{aligned}
 &\int_0^1 z h(z)\,dz
@@ -137,27 +154,39 @@ Since $f(1)=f(0)$ and $f$ is nonzero on the bottom edge, the quantity
 in parentheses is the winding number of the closed curve
 $t\mapsto f(t)$ about $0$, and hence belongs to $\ZZ$. The whole
 expression therefore belongs to $i\ZZ$.
+
 :::
 
-<1>4. The contour integral satisfies
+:::
+
+::: {.pf-step #s4}
+
+The contour integral satisfies
 $$
 I\in\ZZ[i].
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3, the vertical-edge pair contributes an integer
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the vertical-edge pair contributes an integer
 and the horizontal-edge pair contributes an imaginary integer. Their
 sum is therefore a Gaussian integer.
+
 :::
 
-<1>5. At a zero $z_a$ of multiplicity $k_a$, the function
+:::
+
+::: {.pf-step #s5}
+
+At a zero $z_a$ of multiplicity $k_a$, the function
 $$
 z\frac{f'(z)}{f(z)}
 $$
 has residue $k_a z_a$, and at a pole $w_b$ of order $l_b$ it has
 residue $-l_b w_b$.
 
-::: {.proof}
+::: pf-proof
+
 Near a zero $z_a$ of order $k_a$, write
 $$
 f(z)=(z-z_a)^{k_a}u(z),
@@ -185,30 +214,42 @@ $$
 -\frac{l_b}{z-w_b}+\frac{v'(z)}{v(z)},
 $$
 so the residue after multiplication by $z$ is $-l_b w_b$.
+
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #s6}
+
+One has
 $$
 \boxed{
 \sum_a k_a z_a-\sum_b l_b w_b\in\ZZ[i].
 }
 $$
 
-::: {.proof}
-By the residue theorem and step <1>5,
+::: pf-proof
+
+By the residue theorem and step [](#s5){.pf-ref},
 $$
 \frac1{2\pi i}\oint_Q
 z\frac{f'(z)}{f(z)}\,dz
 =
 \sum_a k_a z_a-\sum_b l_b w_b.
 $$
-The left-hand side belongs to $\ZZ[i]$ by step <1>4, proving the
+The left-hand side belongs to $\ZZ[i]$ by step [](#s4){.pf-ref}, proving the
 claim.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required Gaussian-integrality statement.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required Gaussian-integrality statement.
+
+:::
+
+:::
+
 :::

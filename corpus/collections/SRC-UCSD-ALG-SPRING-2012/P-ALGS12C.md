@@ -36,22 +36,36 @@ Prove or give a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Suppose \(R\) is Noetherian and \(\phi:R\to R\) is surjective.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose \(R\) is Noetherian and \(\phi:R\to R\) is surjective.
 Then the ascending chain
 \[
 \ker\phi\subseteq\ker\phi^2\subseteq\ker\phi^3\subseteq\cdots
 \]
 stabilizes.
-::: {.proof}
+
+::: pf-proof
+
 Each \(\ker\phi^n\) is an ideal of \(R\). Since \(R\) is Noetherian, every ascending chain of ideals stabilizes.
 Thus there exists \(N\ge1\) such that
 \[
 \ker\phi^N=\ker\phi^{N+1}.
 \]
+
 :::
 
-<1>2. Under the hypotheses of <1>1, \(\ker\phi=0\).
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Under the hypotheses of step [](#s1){.pf-ref}, \(\ker\phi=0\).
+
+::: pf-proof
+
 Let \(a\in\ker\phi\). Since \(\phi\) is surjective, so is \(\phi^N\). Hence there exists \(b\in R\) with
 \[
 \phi^N(b)=a.
@@ -69,15 +83,29 @@ Therefore
 a=\phi^N(b)=0.
 \]
 Thus \(\ker\phi=0\).
+
 :::
 
-<1>3. Therefore every surjective endomorphism of a Noetherian commutative ring is injective.
-::: {.proof}
-A ring homomorphism is injective exactly when its kernel is zero, and <1>2 gives \(\ker\phi=0\).
 :::
 
-<1>4. The conclusion fails without the Noetherian hypothesis.
-::: {.proof}
+::: pf-step
+
+Therefore every surjective endomorphism of a Noetherian commutative ring is injective.
+
+::: pf-proof
+
+A ring homomorphism is injective exactly when its kernel is zero, and step [](#s2){.pf-ref} gives \(\ker\phi=0\).
+
+:::
+
+:::
+
+::: pf-step
+
+The conclusion fails without the Noetherian hypothesis.
+
+::: pf-proof
+
 Let \(k\) be any field and set
 \[
 R=k[x_1,x_2,x_3,\ldots].
@@ -104,5 +132,11 @@ But \(x_1\neq0\) and
 \]
 so \(\phi\) is not injective.
 Hence a surjective endomorphism of a non-Noetherian ring need not be injective.
+
 :::
+
+:::
+
+:::
+
 :::

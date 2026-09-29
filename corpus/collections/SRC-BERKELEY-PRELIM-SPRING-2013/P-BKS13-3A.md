@@ -35,14 +35,24 @@ F(x)\coloneqq x e^{-x^6\sin^2x},
 x\geq0.
 $$
 
-<1>1. The integral of $F$ over $[0,\pi/2]$ is finite.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The integral of $F$ over $[0,\pi/2]$ is finite.
+
+::: pf-proof
+
 The function $F$ is continuous on the compact interval $[0,\pi/2]$.
 Hence its integral there is finite.
+
 :::
 
-<1>2. For every real $u$ with
+:::
+
+::: {.pf-step #s2}
+
+For every real $u$ with
 $$
 \abs{u}\leq\frac\pi2,
 $$
@@ -53,7 +63,8 @@ $$
 \frac{2}{\pi}\abs{u}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $[0,\pi/2]$, the sine function is concave and lies above the chord
 joining $(0,0)$ to $(\pi/2,1)$. Therefore
 $$
@@ -61,9 +72,14 @@ $$
 $$
 for $0\leq u\leq\pi/2$. The assertion for negative $u$ follows from the
 oddness of sine.
+
 :::
 
-<1>3. For every integer $n\geq1$, let
+:::
+
+::: {.pf-step #s3}
+
+For every integer $n\geq1$, let
 $$
 I_n
 \coloneqq
@@ -81,7 +97,8 @@ x
 \frac{3\pi n}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $n\geq1$,
 $$
 n-\frac12\geq\frac n2
@@ -91,9 +108,14 @@ $$
 n+\frac12\leq\frac{3n}{2}.
 $$
 Multiplying by $\pi$ gives the result.
+
 :::
 
-<1>4. If $x\in I_n$ and
+:::
+
+::: {.pf-step #s4}
+
+If $x\in I_n$ and
 $$
 u\coloneqq x-n\pi,
 $$
@@ -104,7 +126,8 @@ x^6\sin^2x
 \frac{\pi^4}{16}n^6u^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 \abs{u}\leq\frac\pi2.
@@ -113,13 +136,13 @@ Since
 $$
 \sin(n\pi+u)=(-1)^n\sin u,
 $$
-step <1>2 gives
+step [](#s2){.pf-ref} gives
 $$
 \sin^2x
 \geq
 \frac{4u^2}{\pi^2}.
 $$
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 x^6
 \geq
@@ -134,9 +157,14 @@ x^6\sin^2x
 =
 \frac{\pi^4}{16}n^6u^2.
 $$
+
 :::
 
-<1>5. There is a constant $C>0$, independent of $n$, such that
+:::
+
+::: {.pf-step #s5}
+
+There is a constant $C>0$, independent of $n$, such that
 $$
 \int_{I_n}F(x)\,dx
 \leq
@@ -144,12 +172,13 @@ $$
 $$
 for every $n\geq1$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 c\coloneqq\frac{\pi^4}{16}.
 $$
-By steps <1>3 and <1>4,
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 \begin{aligned}
 \int_{I_n}F(x)\,dx
@@ -185,17 +214,23 @@ C
 \frac{3\pi}{2}
 \int_{-\infty}^{\infty}e^{-cv^2}\,dv.
 $$
+
 :::
 
-<1>6. The improper integral over $[\pi/2,\infty)$ is finite.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The improper integral over $[\pi/2,\infty)$ is finite.
+
+::: pf-proof
+
 The intervals
 $$
 I_1,I_2,\ldots
 $$
 cover $[\pi/2,\infty)$ and meet only at endpoints. Since $F\geq0$,
-step <1>5 gives
+step [](#s5){.pf-ref} gives
 $$
 \int_{\pi/2}^{\infty}F(x)\,dx
 =
@@ -206,9 +241,14 @@ C\sum_{n=1}^{\infty}\frac1{n^2}
 <
 \infty.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{
 \int_0^\infty
@@ -218,14 +258,21 @@ x e^{-x^6\sin^2x}\,dx
 }.
 $$
 
-::: {.proof}
-Step <1>1 gives finiteness on $[0,\pi/2]$, and step <1>6 gives
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives finiteness on $[0,\pi/2]$, and step [](#s6){.pf-ref} gives
 finiteness on $[\pi/2,\infty)$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required convergence statement.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required convergence statement.
+
+:::
+
+:::
+
 :::

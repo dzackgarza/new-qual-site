@@ -43,7 +43,11 @@ r_+\coloneqq\frac{3+\sqrt{13}}2,
 r_-\coloneqq\frac{3-\sqrt{13}}2.
 $$
 
-<1>1. The numbers $r_+$ and $r_-$ are the two distinct roots of
+::: pf
+
+::: {.pf-step #s1}
+
+The numbers $r_+$ and $r_-$ are the two distinct roots of
 $$
 r^2-3r-1=0,
 $$
@@ -52,7 +56,8 @@ $$
 \abs{r_-}<r_+.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The quadratic formula gives exactly the displayed values. Since
 $\sqrt{13}>3$,
 $$
@@ -67,14 +72,20 @@ $$
 <\frac{\sqrt{13}+3}{2}
 =r_+.
 $$
+
 :::
 
-<1>2. For every $n\ge0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $n\ge0$,
 $$
 u_n=\frac{r_+^n-r_-^n}{\sqrt{13}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $r_+$ and $r_-$ are distinct roots of the characteristic
 equation, every sequence of the form
 $$
@@ -101,9 +112,14 @@ B=-\frac1{\sqrt{13}},
 $$
 which gives the claimed formula. The recurrence and the two initial
 values determine the sequence uniquely.
+
 :::
 
-<1>3. The ratio satisfies
+:::
+
+::: {.pf-step #s3}
+
+The ratio satisfies
 $$
 \frac{u_n}{u_{n-1}}
 =r_+
@@ -112,17 +128,23 @@ $$
 $$
 for $n\ge2$.
 
-::: {.proof}
-Step <1>2 gives
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives
 $$
 \frac{u_n}{u_{n-1}}
 =\frac{r_+^n-r_-^n}{r_+^{n-1}-r_-^{n-1}}.
 $$
 Factoring $r_+^n$ from the numerator and $r_+^{n-1}$ from the
 denominator yields the displayed expression.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \lim_{n\to\infty}\frac{u_n}{u_{n-1}}
@@ -130,18 +152,25 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \abs{r_-/r_+}<1.
 $$
-Hence both powers of $r_-/r_+$ in step <1>3 tend to $0$. Taking the
+Hence both powers of $r_-/r_+$ in step [](#s3){.pf-ref} tend to $0$. Taking the
 limit there gives $r_+=(3+\sqrt{13})/2$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested limit.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested limit.
+
+:::
+
+:::
+
 :::

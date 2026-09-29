@@ -33,8 +33,15 @@ Explain why this example does not contradict part (a) above.
 :::
 
 ::: {.solution}
-<1>1. Prove part (a) by the Lebesgue density theorem.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a) by the Lebesgue density theorem.
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 \[
 |E|<1.
@@ -65,10 +72,17 @@ contradicting the density limit above. Therefore
 \[
 \boxed{|E|=1.}
 \]
+
 :::
 
-<1>2. Construct a dense measurable set of intermediate measure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Construct a dense measurable set of intermediate measure.
+
+::: pf-proof
+
 Enumerate the rationals in $[0,1]$ as
 \[
 \{q_n:n\ge1\}.
@@ -95,10 +109,17 @@ Therefore
 \[
 |E\cap(a,b)|>0.
 \]
+
 :::
 
-<1>3. Explain why this does not contradict part (a).
-::: {.proof}
+:::
+
+::: pf-step
+
+Explain why this does not contradict part (a).
+
+::: pf-proof
+
 Part (a) requires one fixed constant $\varepsilon>0$ such that
 \[
 |E\cap(a,b)|\ge\varepsilon|a-b|
@@ -106,5 +127,11 @@ Part (a) requires one fixed constant $\varepsilon>0$ such that
 for every interval. The set in Step 2 only guarantees that each intersection has some positive measure; it gives no uniform lower bound on the relative proportion.
 
 Indeed, if such a uniform $\varepsilon$ existed, part (a) would force $|E|=1$, contradicting the construction. Thus there is no contradiction.
+
 :::
+
+:::
+
+:::
+
 :::

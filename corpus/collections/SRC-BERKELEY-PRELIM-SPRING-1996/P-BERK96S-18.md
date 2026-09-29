@@ -42,10 +42,15 @@ G_0\coloneqq G\times\{1\},
 H_0\coloneqq\{1\}\times H.
 $$
 
-<1>1. Every homomorphism $G\to H$ and every homomorphism $H\to G$ is
+::: pf
+
+::: {.pf-step #s1}
+
+Every homomorphism $G\to H$ and every homomorphism $H\to G$ is
 trivial.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \psi:G\longrightarrow H
@@ -58,15 +63,21 @@ $$
 $$
 one has $\abs{\im\psi}=1$. Thus $\psi$ is trivial. The same argument
 with $G$ and $H$ interchanged proves the other assertion.
+
 :::
 
-<1>2. Every automorphism
+:::
+
+::: {.pf-step #s2}
+
+Every automorphism
 $$
 \varphi\in\Aut(G\times H)
 $$
 preserves both $G_0$ and $H_0$.
 
-::: {.proof}
+::: pf-proof
+
 For $g\in G$, write
 $$
 \varphi(g,1)=(\alpha(g),\beta(g)).
@@ -78,7 +89,7 @@ $$
 \beta:G\to H
 $$
 obtained by composing $\varphi|_{G_0}$ with the two projections are
-homomorphisms. By step <1>1, $\beta$ is trivial, so
+homomorphisms. By step [](#s1){.pf-ref}, $\beta$ is trivial, so
 $$
 \varphi(g,1)=(\alpha(g),1)\in G_0.
 $$
@@ -100,9 +111,14 @@ $$
 \qquad
 \varphi(H_0)=H_0.
 $$
+
 :::
 
-<1>3. Every $\varphi\in\Aut(G\times H)$ has a unique expression
+:::
+
+::: {.pf-step #s3}
+
+Every $\varphi\in\Aut(G\times H)$ has a unique expression
 $$
 \varphi(g,h)=(\alpha(g),\delta(h))
 $$
@@ -113,8 +129,9 @@ $$
 \delta\in\Aut(H).
 $$
 
-::: {.proof}
-By step <1>2, the restrictions of $\varphi$ to $G_0$ and $H_0$ are
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the restrictions of $\varphi$ to $G_0$ and $H_0$ are
 automorphisms of those factors. Thus there are unique
 $$
 \alpha\in\Aut(G),
@@ -142,18 +159,24 @@ $$
 \end{aligned}
 $$
 Uniqueness follows by evaluating at $(g,1)$ and $(1,h)$.
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 \Phi:\Aut(G\times H)\longrightarrow\Aut(G)\times\Aut(H),
 \qquad
 \varphi\longmapsto(\alpha,\delta),
 $$
-where $(\alpha,\delta)$ is supplied by step <1>3, is a group isomorphism.
+where $(\alpha,\delta)$ is supplied by step [](#s3){.pf-ref}, is a group isomorphism.
 
-::: {.proof}
-Composition is componentwise in the formula from step <1>3, so $\Phi$ is a
+::: pf-proof
+
+Composition is componentwise in the formula from step [](#s3){.pf-ref}, so $\Phi$ is a
 homomorphism. It is injective because that formula determines $\varphi$
 uniquely. It is surjective because, for every
 $$
@@ -165,9 +188,14 @@ $$
 $$
 is an automorphism of $G\times H$ whose image under $\Phi$ is
 $(\alpha,\delta)$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 \Aut(G\times H)
@@ -176,13 +204,20 @@ $$
 }.
 $$
 
-::: {.proof}
-This is the isomorphism constructed in step <1>4.
+::: pf-proof
+
+This is the isomorphism constructed in step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

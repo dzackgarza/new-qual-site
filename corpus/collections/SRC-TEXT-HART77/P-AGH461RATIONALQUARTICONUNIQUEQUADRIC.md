@@ -38,9 +38,14 @@ A rational curve of degree 4 in $\PP^3$ is contained in a unique quadric surface
 Let $X\subseteq\PP^3$ be the given rational quartic, and put
 $H=\OO_X(1)$.
 
-<1>1. The curve $X$ is not contained in a plane.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The curve $X$ is not contained in a plane.
+
+::: pf-proof
+
 If $X$ lay in a plane, then, being a nonsingular plane curve of degree $4$,
 it would have genus
 $$
@@ -48,11 +53,17 @@ $$
 $$
 But $X$ is rational, so its genus is $0$.  Hence $X$ is nondegenerate in
 $\PP^3$.
+
 :::
 
-<1>2. At least one quadric surface contains $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+At least one quadric surface contains $X$.
+
+::: pf-proof
+
 Since $X\cong\PP^1$ and $\deg H=4$,
 $$
 \deg(2H)=8,
@@ -75,15 +86,21 @@ $$
 H^0(\PP^3,\mathcal I_X(2))\neq0,
 $$
 and a nonzero element is the equation of a quadric containing $X$.
+
 :::
 
-<1>3. That containing quadric is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+That containing quadric is unique.
+
+::: pf-proof
+
 Suppose two linearly independent quadrics $Q_1,Q_2$ contain $X$.
 They cannot have a common plane component: otherwise, because $X$ is
 irreducible and lies in each quadric, the common-factor alternatives force
-$X$ into a plane, contrary to step <1>1.  Hence
+$X$ into a plane, contrary to step [](#s1){.pf-ref}.  Hence
 $$
 Y=Q_1\cap Q_2
 $$
@@ -107,15 +124,21 @@ p_a(Y)
 $$
 whereas the nonsingular rational curve $X$ has $p_a(X)=0$.  This
 contradiction proves uniqueness.
+
 :::
 
-<1>4. The unique quadric $Q$ is nonsingular.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The unique quadric $Q$ is nonsingular.
+
+::: pf-proof
+
 Over the algebraically closed ground field, a singular quadric surface in
 $\PP^3$ is either a union (possibly doubled) of planes or an irreducible
 quadric cone.  The first possibility would put the irreducible curve $X$ in
-a plane, contradicting step <1>1.
+a plane, contradicting step [](#s1){.pf-ref}.
 
 Suppose therefore that $Q$ is a quadric cone.  The quadric-cone calculation
 on [[FE-CRVQUAD]] says that an integral curve of even degree $2a$ on $Q$
@@ -129,12 +152,18 @@ p_a(X)=(2-1)^2=1,
 $$
 again contradicting the fact that the nonsingular rational curve $X$ has
 genus $0$.  Thus $Q$ cannot be singular.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 gives existence, step <1>3 gives uniqueness, and step <1>4 proves
+::: pf-qed
+
+Step [](#s2){.pf-ref} gives existence, step [](#s3){.pf-ref} gives uniqueness, and step [](#s4){.pf-ref} proves
 that the unique quadric is nonsingular.
+
 :::
+
+:::
+
 :::

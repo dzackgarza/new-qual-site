@@ -28,8 +28,14 @@ Classify all groups of order 14 up to isomorphism. Prove your classification.
 ::: {.solution}
 Let $G$ have order $14$.
 
-<1>1. The Sylow $7$-subgroup $P$ is unique and hence normal.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The Sylow $7$-subgroup $P$ is unique and hence normal.
+
+::: pf-proof
+
 Its number $n_7$ satisfies
 \[
 n_7\mid2,
@@ -37,18 +43,32 @@ n_7\mid2,
 n_7\equiv1\pmod7.
 \]
 Thus $n_7=1$. Since $|P|=7$, we have $P\cong C_7$.
+
 :::
 
-<1>2. If $Q$ is a Sylow $2$-subgroup, then
+:::
+
+::: pf-step
+
+If $Q$ is a Sylow $2$-subgroup, then
 \[
 G\cong C_7\rtimes C_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 We have $|Q|=2$, $P\cap Q=1$, and $|PQ|=14$, so $G=PQ$. Since $P\trianglelefteq G$, this is an internal semidirect product.
+
 :::
 
-<1>3. There are exactly two possible actions $C_2\to\Aut(C_7)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+There are exactly two possible actions $C_2\to\Aut(C_7)$.
+
+::: pf-proof
+
 Since
 \[
 \Aut(C_7)\cong(\ZZ/7\ZZ)^\times\cong C_6,
@@ -65,6 +85,11 @@ G\cong
 \langle y,x\mid y^7=x^2=1,\;xyx^{-1}=y^{-1}\rangle,
 \]
 which is the dihedral group $D_7$ of order $14$.
+
+:::
+
+:::
+
 :::
 
 Hence, up to isomorphism, the groups of order $14$ are exactly

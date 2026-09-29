@@ -42,10 +42,15 @@ $$
 \int_a^b q(x)r(x)f(x)\,dx.
 $$
 
-<1>1. The displayed pairing is an inner product on the polynomial
+::: pf
+
+::: {.pf-step #s1}
+
+The displayed pairing is an inner product on the polynomial
 space.
 
-::: {.proof}
+::: pf-proof
+
 Linearity and symmetry follow from the integral. For every polynomial
 $q$,
 $$
@@ -57,9 +62,14 @@ interval $[a,b]$. By continuity, $q(x)^2$ is bounded below by a positive
 number on some subinterval, and the positive continuous function $f$ is
 also bounded below there by a positive number. Hence
 $\langle q,q\rangle>0$. Thus the pairing is positive definite.
+
 :::
 
-<1>2. Define $p_0(x)=1$, and recursively for $n\ge1$ define
+:::
+
+::: {.pf-step #s2}
+
+Define $p_0(x)=1$, and recursively for $n\ge1$ define
 $$
 p_n(x)
 \coloneqq
@@ -71,29 +81,42 @@ p_k(x).
 $$
 The recursion is well-defined.
 
-::: {.proof}
-By step <1>1, every nonzero polynomial has positive squared norm. The
+::: pf-proof
+
+By step [](#s1){.pf-ref}, every nonzero polynomial has positive squared norm. The
 induction below shows that each $p_k$ is monic of degree $k$, hence
 nonzero, so every denominator $\langle p_k,p_k\rangle$ is positive.
 For $n=0$, $p_0=1$ is already nonzero, starting the recursion.
+
 :::
 
-<1>3. For every $n\ge0$, the polynomial $p_n$ is monic of degree $n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+For every $n\ge0$, the polynomial $p_n$ is monic of degree $n$.
+
+::: pf-proof
+
 Proceed by induction. The assertion is clear for $p_0=1$. Assume it
 holds for $p_0,\ldots,p_{n-1}$. Every term in the sum defining $p_n$ in
-step <1>2 has degree at most $n-1$. Therefore subtracting that sum from
+step [](#s2){.pf-ref} has degree at most $n-1$. Therefore subtracting that sum from
 $x^n$ does not change the coefficient of $x^n$, which remains $1$.
 Hence $p_n$ is monic of degree $n$.
+
 :::
 
-<1>4. The polynomials $p_0,p_1,p_2,\ldots$ are pairwise orthogonal for
+:::
+
+::: {.pf-step #s4}
+
+The polynomials $p_0,p_1,p_2,\ldots$ are pairwise orthogonal for
 $\langle\ ,\ \rangle$.
 
-::: {.proof}
+::: pf-proof
+
 Again proceed inductively. Suppose $p_0,\ldots,p_{n-1}$ are pairwise
-orthogonal. For $m<n$, step <1>2 gives
+orthogonal. For $m<n$, step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 \langle p_n,p_m\rangle
@@ -111,24 +134,36 @@ $$
 $$
 Thus $p_n$ is orthogonal to every earlier $p_m$, completing the
 induction.
+
 :::
 
-<1>5. Consequently, whenever $m\ne n$,
+:::
+
+::: {.pf-step #s5}
+
+Consequently, whenever $m\ne n$,
 $$
 \boxed{
 \int_a^b p_m(x)p_n(x)f(x)\,dx=0
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The integral is exactly $\langle p_m,p_n\rangle$, which vanishes by
-step <1>4. Step <1>3 supplies the required monic degree condition.
+step [](#s4){.pf-ref}. Step [](#s3){.pf-ref} supplies the required monic degree condition.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>3 and <1>5 give all required properties of the sequence
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s5){.pf-ref} give all required properties of the sequence
 $(p_n)_{n\ge0}$.
+
 :::
+
+:::
+
 :::

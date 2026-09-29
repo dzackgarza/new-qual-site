@@ -50,7 +50,11 @@ Describe one representative from each class.
 ::: {.solution}
 Write $\Sigma_{g,b}$ for the compact connected orientable surface of genus $g$ with $b$ boundary components, and write $N_{k,b}$ for the compact connected nonorientable surface of nonorientable genus $k$ with $b$ boundary components.
 
-<1>1. The orientable surfaces with Euler characteristic $-3$ are exactly
+::: pf
+
+::: {.pf-step #s1}
+
+The orientable surfaces with Euler characteristic $-3$ are exactly
 \[
 \Sigma_{0,5},
 \qquad
@@ -58,7 +62,9 @@ Write $\Sigma_{g,b}$ for the compact connected orientable surface of genus $g$ w
 \qquad
 \Sigma_{2,1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By the classification theorem for compact connected surfaces, every orientable example is homeomorphic to a unique $\Sigma_{g,b}$ with
 \[
 g\ge0,
@@ -83,9 +89,14 @@ Since $g,b$ are nonnegative integers, the only solutions are
 \qquad
 (2,1).
 \]
+
 :::
 
-<1>2. The nonorientable surfaces with Euler characteristic $-3$ are exactly
+:::
+
+::: {.pf-step #s2}
+
+The nonorientable surfaces with Euler characteristic $-3$ are exactly
 \[
 N_{1,4},
 \quad
@@ -97,7 +108,9 @@ N_{4,1},
 \quad
 N_{5,0}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Again by the classification theorem, every compact connected nonorientable surface is homeomorphic to a unique $N_{k,b}$ with
 \[
 k\ge1,
@@ -116,17 +129,29 @@ The positive-integer/nonnegative-integer solutions are
 \[
 (k,b)=(1,4),(2,3),(3,2),(4,1),(5,0).
 \]
+
 :::
 
-<1>3. These eight surfaces are pairwise nonhomeomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+
+These eight surfaces are pairwise nonhomeomorphic.
+
+::: pf-proof
+
 An orientable surface cannot be homeomorphic to a nonorientable one.
-Within the orientable class, the classification theorem says the pair $(g,b)$ determines the homeomorphism type, and the three pairs in <1>1 are distinct.
-Within the nonorientable class, the pair $(k,b)$ determines the homeomorphism type, and the five pairs in <1>2 are distinct.
+Within the orientable class, the classification theorem says the pair $(g,b)$ determines the homeomorphism type, and the three pairs in step [](#s1){.pf-ref} are distinct.
+Within the nonorientable class, the pair $(k,b)$ determines the homeomorphism type, and the five pairs in step [](#s2){.pf-ref} are distinct.
 Hence all eight listed surfaces are pairwise nonhomeomorphic.
+
 :::
 
-<1>4. Explicit representatives are:
+:::
+
+::: pf-step
+
+Explicit representatives are:
 
 - the sphere with five disjoint open disks removed, representing $\Sigma_{0,5}$;
 
@@ -144,9 +169,15 @@ Hence all eight listed surfaces are pairwise nonhomeomorphic.
 
 - the connected sum of five copies of $\RP^2$, representing $N_{5,0}$.
 
-::: {.proof}
+::: pf-proof
+
 The standard representatives in the classification theorem realize $\Sigma_{g,b}$ by deleting $b$ open disks from the closed orientable genus-$g$ surface and realize $N_{k,b}$ by deleting $b$ open disks from the connected sum of $k$ projective planes.
 The Klein bottle is $N_{2,0}$, so deleting three disks gives $N_{2,3}$.
+
+:::
+
+:::
+
 :::
 
 Therefore the number of homeomorphism classes is

@@ -44,9 +44,15 @@ zero is on the boundary.
 :::
 
 ::: {.solution}
-<1>1. The limit is holomorphic and has a positive boundary modulus minimum.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The limit is holomorphic and has a positive boundary modulus minimum.
+
+::: pf-proof
+
 The local uniform limit theorem makes $f$ holomorphic
 on $U$ [@SS03]. Since $f$ is continuous and nonzero on
 the compact circle $\partial D$,
@@ -59,11 +65,17 @@ are finite in number: an infinite set of distinct zeros
 would have an accumulation point in this compact subset
 of $U$, contradicting the identity theorem [@SS03].
 Each zero has finite multiplicity by its Taylor expansion.
+
 :::
 
-<1>2. Uniform convergence on the boundary gives the same zero count.
+:::
 
-::: {.proof}
+::: pf-step
+
+Uniform convergence on the boundary gives the same zero count.
+
+::: pf-proof
+
 Choose $N$ so that for every $n\geq N$,
 $$
 \sup_{z\in\partial D}|f_n(z)-f(z)|<\delta.
@@ -74,7 +86,13 @@ on a neighborhood of $\overline D$, and gives equality
 of their numbers of zeros in $D$, counting multiplicities
 [@SS03]. The same strict inequality shows that $f_n$
 is nonzero on the boundary, so its zero count is finite
-by the argument in step <1>1. This holds for every
+by the argument in step [](#s1){.pf-ref}. This holds for every
 $n\geq N$, as required.
+
 :::
+
+:::
+
+:::
+
 :::

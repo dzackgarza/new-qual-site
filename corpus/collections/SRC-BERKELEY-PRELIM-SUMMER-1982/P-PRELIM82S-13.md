@@ -37,7 +37,12 @@ Must $f$ be identically zero?
 :::
 
 ::: {.solution}
-<1>1. There are polynomials $U_m\in\RR[t]$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+There are polynomials $U_m\in\RR[t]$ such that
 $$
 \sin((m+1)x)
 =
@@ -46,7 +51,11 @@ $$
 for every integer $m\geq0$, and $U_m$ has degree $m$ with leading
 coefficient $2^m$.
 
-<2>1. Define
+::: pf-proof
+
+::: {.pf-step #s1-1}
+
+Define
 $$
 U_0(t)=1,
 \qquad
@@ -58,18 +67,25 @@ U_{m+1}(t)=2tU_m(t)-U_{m-1}(t)
 $$
 for $m\geq1$.
 
-::: {.proof}
+::: pf-proof
+
 This recursion defines a polynomial $U_m$ for every $m\geq0$.
+
 :::
 
-<2>2. For every $m\geq0$,
+:::
+
+::: {.pf-step #s1-2}
+
+For every $m\geq0$,
 $$
 \sin((m+1)x)
 =
 \sin x\,U_m(\cos x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $m=0$ and $m=1$, this is
 $$
 \sin x=\sin x
@@ -85,19 +101,25 @@ $$
 =
 2\cos x\sin((m+1)x)-\sin(mx)
 $$
-and step <2>1 give
+and step [](#s1-1){.pf-ref} give
 $$
 \sin((m+2)x)
 =
 \sin x\,U_{m+1}(\cos x).
 $$
 Induction proves the identity.
+
 :::
 
-<2>3. The polynomial $U_m$ has degree $m$ and leading coefficient
+:::
+
+::: {.pf-step #s1-3}
+
+The polynomial $U_m$ has degree $m$ and leading coefficient
 $2^m$.
 
-::: {.proof}
+::: pf-proof
+
 This is clear for $U_0$ and $U_1$. If it holds for $U_m$ and
 $U_{m-1}$, then
 $$
@@ -105,22 +127,32 @@ U_{m+1}(t)=2tU_m(t)-U_{m-1}(t).
 $$
 The first term has degree $m+1$ and leading coefficient $2^{m+1}$,
 whereas the second has smaller degree. The claim follows by induction.
+
 :::
 
-<2>4. Q.E.D.
-
-::: {.proof}
-Steps <2>2 and <2>3 establish step <1>1.
 :::
 
-<1>2. Every polynomial in $\RR[t]$ is a finite linear combination of
+::: pf-qed
+
+Steps [](#s1-2){.pf-ref} and [](#s1-3){.pf-ref} establish step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Every polynomial in $\RR[t]$ is a finite linear combination of
 the polynomials
 $$
 U_0,U_1,U_2,\ldots.
 $$
 
-::: {.proof}
-For each $N\geq0$, step <1>1 shows that
+::: pf-proof
+
+For each $N\geq0$, step [](#s1){.pf-ref} shows that
 $$
 U_0,U_1,\ldots,U_N
 $$
@@ -128,9 +160,14 @@ have respective degrees $0,1,\ldots,N$ and nonzero leading
 coefficients. They are therefore linearly independent. Since the vector
 space of real polynomials of degree at most $N$ has dimension $N+1$,
 they form a basis of that space.
+
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #s3}
+
+Define
 $$
 g:[-1,1]\longrightarrow\RR,
 \qquad
@@ -141,9 +178,10 @@ $$
 \int_{-1}^1 g(t)P(t)\,dt=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $g$ is continuous. For $m\geq0$, the hypothesis with
-$n=m+1$ and step <1>1 give
+$n=m+1$ and step [](#s1){.pf-ref} give
 $$
 0
 =
@@ -162,18 +200,24 @@ $$
 =
 \int_{-1}^1 g(t)U_m(t)\,dt.
 $$
-By linearity and step <1>2, the same identity holds with $U_m$ replaced
+By linearity and step [](#s2){.pf-ref}, the same identity holds with $U_m$ replaced
 by any polynomial $P$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \int_{-1}^1 g(t)^2\,dt=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the Weierstrass approximation theorem, there is a sequence of
-polynomials $P_k$ converging uniformly to $g$ on $[-1,1]$. Step <1>3
+polynomials $P_k$ converging uniformly to $g$ on $[-1,1]$. Step [](#s3){.pf-ref}
 gives
 $$
 \int_{-1}^1 g(t)P_k(t)\,dt=0
@@ -193,39 +237,57 @@ $$
 \end{aligned}
 $$
 The right-hand side tends to zero, proving the claim.
+
 :::
 
-<1>5. The function $g$ is identically zero on $[-1,1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The function $g$ is identically zero on $[-1,1]$.
+
+::: pf-proof
+
 The function $g^2$ is continuous and nonnegative. If
 $g(t_0)\neq0$ at some $t_0\in[-1,1]$, continuity would make $g^2$
 strictly positive on a nonempty interval relative to $[-1,1]$, giving
 $$
 \int_{-1}^1g(t)^2\,dt>0,
 $$
-contrary to step <1>4. Thus $g\equiv0$.
+contrary to step [](#s4){.pf-ref}. Thus $g\equiv0$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{f\equiv0\text{ on }[0,\pi]}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $x\in[0,\pi]$, one has
 $$
 \arccos(\cos x)=x.
 $$
-Thus step <1>5 gives
+Thus step [](#s5){.pf-ref} gives
 $$
 f(x)=g(\cos x)=0.
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 answers the question affirmatively.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} answers the question affirmatively.
+
+:::
+
+:::
+
 :::

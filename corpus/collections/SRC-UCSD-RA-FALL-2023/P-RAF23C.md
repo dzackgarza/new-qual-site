@@ -31,8 +31,15 @@ Prove that if for any open subset $U$, $\mu(U) = \int_U f\,d\mu$, then $f = 1$ $
 :::
 
 ::: {.solution}
-<1>1. $f\le1$ $\mu$-almost everywhere.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+$f\le1$ $\mu$-almost everywhere.
+
+::: pf-proof
+
 Fix $\varepsilon>0$ and set
 \[
 A_\varepsilon:=\{x:f(x)\ge1+\varepsilon\}.
@@ -59,10 +66,17 @@ Taking $\varepsilon=1/m$ and a countable union gives
 \[
 f\le1\qquad\mu\text{-a.e.}
 \]
+
 :::
 
-<1>2. $f=1$ $\mu$-almost everywhere.
-::: {.proof}
+:::
+
+::: pf-step
+
+$f=1$ $\mu$-almost everywhere.
+
+::: pf-proof
+
 After changing $f$ on a null set if necessary, assume $0\le f\le1$ everywhere. For every open set $U$,
 \[
 0=\mu(U)-\int_U f\,d\mu
@@ -78,5 +92,11 @@ so $1-f=0$ almost everywhere on $U_j$. Taking the countable union yields
 \[
 \boxed{f=1\quad\mu\text{-a.e. on }X.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -25,22 +25,40 @@ Prove that $\sim$ is an **equivalence relation** on $\{1, 2, \dots, n\}$.
 :::
 
 ::: {.solution}
-<1>1. $\sim$ is reflexive.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$\sim$ is reflexive.
+
+::: pf-proof
+
 For every $j$, the clause $j = j$ of the definition gives $j \sim j$.
+
 :::
 
-<1>2. $\sim$ is symmetric.
-
-::: {.proof}
-Let $j \sim k$. If $j = k$, then $k \sim j$ by step <1>1. If $j \ne k$, then $(j\,k) \in H$, and $(k\,j) = (j\,k)$ as permutations, so $k \sim j$.
 :::
 
-<1>3. $\sim$ is transitive.
+::: {.pf-step #s2}
 
-::: {.proof}
-Let $j \sim k$ and $k \sim \ell$. If $j = k$ or $k = \ell$, then $j \sim \ell$ is one of the hypotheses, and if $j = \ell$, then $j \sim \ell$ by step <1>1. Otherwise $j, k, \ell$ are distinct and $(j\,k), (k\,\ell) \in H$. Put $\sigma = (j\,k)(k\,\ell)(j\,k)$, which lies in $H$ because $H$ is a subgroup. Composing from the right,
+$\sim$ is symmetric.
+
+::: pf-proof
+
+Let $j \sim k$. If $j = k$, then $k \sim j$ by step [](#s1){.pf-ref}. If $j \ne k$, then $(j\,k) \in H$, and $(k\,j) = (j\,k)$ as permutations, so $k \sim j$.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+$\sim$ is transitive.
+
+::: pf-proof
+
+Let $j \sim k$ and $k \sim \ell$. If $j = k$ or $k = \ell$, then $j \sim \ell$ is one of the hypotheses, and if $j = \ell$, then $j \sim \ell$ by step [](#s1){.pf-ref}. Otherwise $j, k, \ell$ are distinct and $(j\,k), (k\,\ell) \in H$. Put $\sigma = (j\,k)(k\,\ell)(j\,k)$, which lies in $H$ because $H$ is a subgroup. Composing from the right,
 $$
 \sigma(j) = (j\,k)(k\,\ell)(k) = \ell,
 \qquad
@@ -49,11 +67,17 @@ $$
 \sigma(k) = (j\,k)(k\,\ell)(j) = k,
 $$
 and $\sigma$ fixes every index outside $\{j, k, \ell\}$. Hence $\sigma = (j\,\ell) \in H$, and $j \sim \ell$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-By steps <1>1--<1>3, $\sim$ is an equivalence relation on $\{1, 2, \dots, n\}$.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\sim$ is an equivalence relation on $\{1, 2, \dots, n\}$.
+
+:::
+
+:::
+
 :::

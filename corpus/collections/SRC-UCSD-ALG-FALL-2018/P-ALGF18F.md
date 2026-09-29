@@ -40,11 +40,17 @@ Suppose $\alpha \in \overline{\mathbb{F}}_q$ is a zero of $x^q - x + 1$.
 ::: {.solution}
 Throughout, an integer $i$ occurring in an expression such as $\alpha-i$ is understood through its image in the prime field $\mathbb F_p\subseteq\mathbb F_q$.
 
-<1>1. For every positive integer $i$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every positive integer $i$,
 \[
 \alpha^{q^i}=\alpha-i.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $\alpha$ is a root of $x^q-x+1$,
 \[
 \alpha^q=\alpha-1.
@@ -64,11 +70,18 @@ The $q$th-power map is a field homomorphism in characteristic $p$, and every ele
 (\alpha-i)^q=\alpha^q-i=(\alpha-1)-i=\alpha-(i+1).
 \]
 Induction proves the formula for all $i\ge1$, proving part (a).
+
 :::
 
-<1>2. The element $\alpha$ lies in $\mathbb F_{q^p}$ but not in $\mathbb F_q$.
-::: {.proof}
-Taking $i=p$ in <1>1 and using characteristic $p$ gives
+:::
+
+::: {.pf-step #s2}
+
+The element $\alpha$ lies in $\mathbb F_{q^p}$ but not in $\mathbb F_q$.
+
+::: pf-proof
+
+Taking $i=p$ in step [](#s1){.pf-ref} and using characteristic $p$ gives
 \[
 \alpha^{q^p}=\alpha-p=\alpha.
 \]
@@ -88,14 +101,21 @@ so $\alpha$ is not fixed by the $q$th-power Frobenius and therefore
 \[
 \alpha\notin\mathbb F_q.
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 [\mathbb F_q(\alpha):\mathbb F_q]=p.
 \]
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 \[
 \mathbb F_q(\alpha)\subseteq\mathbb F_{q^p}.
 \]
@@ -105,20 +125,27 @@ Hence the tower law gives
 [\mathbb F_{q^p}:\mathbb F_q]=p.
 \]
 Since $p$ is prime, the degree is either $1$ or $p$.
-The degree cannot be $1$ because $\alpha\notin\mathbb F_q$ by <1>2.
+The degree cannot be $1$ because $\alpha\notin\mathbb F_q$ by step [](#s2){.pf-ref}.
 Therefore it is $p$.
+
 :::
 
-<1>4. The extension $\mathbb F_q[\alpha]/\mathbb F_q$ is Galois of degree $p$, so
+:::
+
+::: pf-step
+
+The extension $\mathbb F_q[\alpha]/\mathbb F_q$ is Galois of degree $p$, so
 \[
 \left|\operatorname{Gal}(\mathbb F_q[\alpha]/\mathbb F_q)\right|=p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because $\alpha$ is algebraic over $\mathbb F_q$,
 \[
 \mathbb F_q[\alpha]=\mathbb F_q(\alpha).
 \]
-By <1>2 and <1>3,
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 \[
 \mathbb F_q(\alpha)\subseteq\mathbb F_{q^p}
 \]
@@ -131,16 +158,23 @@ The polynomial $x^{q^p}-x$ splits over $\mathbb F_{q^p}$ and has derivative $-1$
 Therefore $\mathbb F_{q^p}/\mathbb F_q$ is Galois.
 Its Galois group has order equal to the extension degree, namely $p$.
 This proves part (b).
+
 :::
 
-<1>5. Every irreducible factor of $x^q-x+1$ in $\mathbb F_q[x]$ has degree $p$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every irreducible factor of $x^q-x+1$ in $\mathbb F_q[x]$ has degree $p$.
+
+::: pf-proof
+
 Let
 \[
 r(x)\in\mathbb F_q[x]
 \]
 be an irreducible factor, and let $\beta$ be a root of $r$ in the algebraic closure.
-Then $\beta$ is also a root of $x^q-x+1$, so the argument of <1>1 gives
+Then $\beta$ is also a root of $x^q-x+1$, so the argument of step [](#s1){.pf-ref} gives
 \[
 \beta^{q^p}=\beta
 \qquad\text{and}\qquad
@@ -150,7 +184,7 @@ Thus
 \[
 \beta\in\mathbb F_{q^p}\setminus\mathbb F_q.
 \]
-Exactly as in <1>3,
+Exactly as in step [](#s3){.pf-ref},
 \[
 [\mathbb F_q(\beta):\mathbb F_q]=p.
 \]
@@ -159,5 +193,11 @@ Since $r$ is the minimal polynomial of $\beta$ over $\mathbb F_q$,
 \deg r=p.
 \]
 This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

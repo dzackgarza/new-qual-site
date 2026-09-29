@@ -47,9 +47,14 @@ $$
 \psi(g)=g^{-1}\varphi(g).
 $$
 
-<1>1. The map $\psi$ is injective.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The map $\psi$ is injective.
+
+::: pf-proof
+
 Suppose
 $$
 \psi(g)=\psi(h).
@@ -79,16 +84,27 @@ $$
 hg^{-1}=e,
 $$
 and hence $h=g$.
+
 :::
 
-<1>2. The map $\psi$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The map $\psi$ is surjective.
+
+::: pf-proof
+
 The group $G$ is finite. An injective self-map of a finite set is
-surjective, so step <1>1 gives surjectivity.
+surjective, so step [](#s1){.pf-ref} gives surjectivity.
+
 :::
 
-<1>3. Every element of $G$ can be written in the form
+:::
+
+::: {.pf-step #s3}
+
+Every element of $G$ can be written in the form
 $$
 \boxed{
 g^{-1}\varphi(g)
@@ -96,11 +112,17 @@ g^{-1}\varphi(g)
 $$
 for some $g\in G$.
 
-::: {.proof}
-This is exactly surjectivity of $\psi$ from step <1>2.
+::: pf-proof
+
+This is exactly surjectivity of $\psi$ from step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Assume now that
+:::
+
+::: {.pf-step #s4}
+
+Assume now that
 $$
 \varphi^2=\operatorname{id}.
 $$
@@ -111,8 +133,9 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>3, write
+::: pf-proof
+
+By step [](#s3){.pf-ref}, write
 $$
 x=g^{-1}\varphi(g)
 $$
@@ -135,12 +158,18 @@ x^{-1}
 \varphi(g)^{-1}g.
 $$
 Hence $\varphi(x)=x^{-1}$.
+
 :::
 
-<1>5. The group $G$ is abelian.
+:::
 
-::: {.proof}
-By step <1>4, the inversion map is the automorphism $\varphi$, so it is a
+::: {.pf-step #s5}
+
+The group $G$ is abelian.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, the inversion map is the automorphism $\varphi$, so it is a
 homomorphism. Therefore for all $g,h\in G$,
 $$
 (gh)^{-1}
@@ -161,26 +190,38 @@ Taking inverses gives
 $$
 gh=hg.
 $$
+
 :::
 
-<1>6. No nonidentity element of $G$ is equal to its inverse.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+No nonidentity element of $G$ is equal to its inverse.
+
+::: pf-proof
+
 If
 $$
 g=g^{-1},
 $$
-then step <1>4 gives
+then step [](#s4){.pf-ref} gives
 $$
 \varphi(g)=g.
 $$
 The only fixed point of $\varphi$ is the identity, so $g=e$.
+
 :::
 
-<1>7. The order of $G$ is odd.
+:::
 
-::: {.proof}
-By step <1>6, the inversion map pairs every nonidentity element $g$ with a
+::: {.pf-step #s7}
+
+The order of $G$ is odd.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, the inversion map pairs every nonidentity element $g$ with a
 distinct element $g^{-1}$. Thus
 $$
 G\sm\{e\}
@@ -194,12 +235,18 @@ $$
 \abs G-1
 $$
 is even, so $\abs G$ is odd.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves part (1), while steps <1>4, <1>5, and <1>7 prove all
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), while steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s7){.pf-ref} prove all
 claims in part (2).
+
 :::
+
+:::
+
 :::

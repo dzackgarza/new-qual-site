@@ -31,9 +31,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Every group of order $15$ is solvable.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every group of order $15$ is solvable.
+
+::: pf-proof
+
 Let $|G|=15=3\cdot5$. The number $n_5$ of Sylow $5$-subgroups
 divides $3$ and is $1$ modulo $5$, by Sylow's theorems [@DF04].
 Of the divisors $1,3$ of $3$, only $1$ satisfies that congruence.
@@ -51,11 +57,17 @@ Equivalently, the commutator subgroup $G'$ lies in $P$ because
 $G/P$ is abelian, and then $G''\subseteq P'=\{1\}$ because
 $P$ is abelian. This also proves solvability directly from the
 derived-series definition.
+
 :::
 
-<1>2. Every group of order $36$ has a nontrivial proper normal subgroup.
+:::
 
-::: {.proof}
+::: pf-step
+
+Every group of order $36$ has a nontrivial proper normal subgroup.
+
+::: pf-proof
+
 Let $|G|=36=2^2\cdot3^2$. Sylow's theorems give
 $n_3\mid4$ and $n_3\equiv1\pmod3$, so $n_3=1$ or $4$.
 If $n_3=1$, the unique subgroup of order $9$ is normal and is
@@ -69,5 +81,11 @@ $|G|=36>24=|S_4|$, so $\ker\rho\ne\{1\}$.
 The kernel is normal, and it is therefore a nontrivial proper
 normal subgroup in this case as well. Neither possibility allows
 $G$ to be simple.
+
 :::
+
+:::
+
+:::
+
 :::

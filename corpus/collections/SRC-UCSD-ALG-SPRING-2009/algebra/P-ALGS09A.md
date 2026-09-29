@@ -36,14 +36,20 @@ Let
 H=\langle a,b\mid a^2=e,\ ab=b^{-1}a\rangle.
 \]
 
-<1>1. The assignments
+::: pf
+
+::: {.pf-step #s1}
+
+The assignments
 \[
 a\longmapsto f,
 \qquad
 b\longmapsto g
 \]
 define a surjective homomorphism \(\Phi:H\to G\).
-::: {.proof}
+
+::: pf-proof
+
 The generators \(f,g\) satisfy the defining relations of \(H\). First,
 \[
 f^2(x)=x,
@@ -65,16 +71,23 @@ Therefore the presentation of \(H\) gives a homomorphism
 \Phi:H\to G
 \]
 with \(\Phi(a)=f\) and \(\Phi(b)=g\). Since \(G=\langle f,g\rangle\), this homomorphism is surjective.
+
 :::
 
-<1>2. Every element of \(H\) has the form
+:::
+
+::: {.pf-step #s2}
+
+Every element of \(H\) has the form
 \[
 b^n
 \qquad\text{or}\qquad
 b^n a
 \]
 for some \(n\in\mathbb Z\).
-::: {.proof}
+
+::: pf-proof
+
 From
 \[
 ab=b^{-1}a
@@ -86,10 +99,17 @@ ab^n=b^{-n}a
 \]
 Thus any occurrence of \(a\) can be moved to the far right of a word, at the cost of inverting the exponent of the adjacent power of \(b\). After doing this throughout the word, all copies of \(a\) occur at the far right.
 The relation \(a^2=e\) then reduces their number modulo \(2\). Hence every element has one of the stated forms.
+
 :::
 
-<1>3. The homomorphism \(\Phi\) is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The homomorphism \(\Phi\) is injective.
+
+::: pf-proof
+
 For \(n\in\mathbb Z\),
 \[
 \Phi(b^n)=g^n,
@@ -104,19 +124,32 @@ g^n(x)=x+n,
 \]
 If \(g^n\) is the identity permutation of \(\mathbb R\), then evaluating at \(0\) gives \(n=0\). On the other hand, \(g^n f\) is never the identity, since it has slope \(-1\); explicitly, equality \(-x+n=x\) for every \(x\) is impossible.
 
-By <1>2, every element of \(\ker\Phi\) is either \(b^n\) or \(b^n a\). The preceding calculation shows that only \(b^0=e\) lies in the kernel.
+By step [](#s2){.pf-ref}, every element of \(\ker\Phi\) is either \(b^n\) or \(b^n a\). The preceding calculation shows that only \(b^0=e\) lies in the kernel.
 Therefore
 \[
 \ker\Phi=\{e\}.
 \]
+
 :::
 
-<1>4. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 G\cong \langle a,b\mid a^2=e,\ ab=b^{-1}a\rangle.
 \]
-::: {.proof}
-By <1>1, \(\Phi\) is surjective, and by <1>3 it is injective.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, \(\Phi\) is surjective, and by step [](#s3){.pf-ref} it is injective.
 Thus \(\Phi\) is an isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

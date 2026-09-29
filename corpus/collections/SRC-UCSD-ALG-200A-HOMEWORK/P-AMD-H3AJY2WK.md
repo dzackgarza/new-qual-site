@@ -66,11 +66,17 @@ For $x\in X$, write
 \]
 for its $H$-orbit.
 
-<1>1. For every $g\in G$ and $x\in X$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $g\in G$ and $x\in X$,
 \[
 g\mathcal O_x=\mathcal O_{gx}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $H\normal G$,
 \[
 gHg^{-1}=H.
@@ -87,15 +93,22 @@ g\mathcal O_x
 \end{aligned}
 \]
 Thus $g$ sends every $H$-orbit onto another $H$-orbit.
+
 :::
 
-<1>2. The rule
+:::
+
+::: pf-step
+
+The rule
 \[
 g\cdot\mathcal O_x:=g\mathcal O_x
 \]
 defines an action of $G$ on $Y$.
-::: {.proof}
-By <1>1, the rule takes $Y$ to itself.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the rule takes $Y$ to itself.
 For the identity element,
 \[
 e\cdot\mathcal O_x=\mathcal O_x.
@@ -108,26 +121,40 @@ g_1\cdot(g_2\cdot\mathcal O_x)
 =(g_1g_2)\cdot\mathcal O_x.
 \]
 Hence the action axioms hold.
+
 :::
 
-<1>3. The induced action of $G$ on $Y$ is transitive.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The induced action of $G$ on $Y$ is transitive.
+
+::: pf-proof
+
 Let $\mathcal O_x,\mathcal O_y\in Y$.
 Because the original $G$-action on $X$ is transitive, there exists $g\in G$ with
 \[
 gx=y.
 \]
-Then <1>1 gives
+Then step [](#s1){.pf-ref} gives
 \[
 g\mathcal O_x=\mathcal O_{gx}=\mathcal O_y.
 \]
 Thus every $H$-orbit can be carried to every other one.
+
 :::
 
-<1>4. All $H$-orbits in $X$ have the same cardinality.
-::: {.proof}
+:::
+
+::: pf-step
+
+All $H$-orbits in $X$ have the same cardinality.
+
+::: pf-proof
+
 Let $\mathcal O_x,\mathcal O_y\in Y$.
-By <1>3, choose $g\in G$ such that
+By step [](#s3){.pf-ref}, choose $g\in G$ such that
 \[
 g\mathcal O_x=\mathcal O_y.
 \]
@@ -142,13 +169,20 @@ Hence
 \[
 |\mathcal O_x|=|\mathcal O_y|.
 \]
+
 :::
 
-<1>5. If $x\in\mathcal O_\alpha$, then
+:::
+
+::: pf-step
+
+If $x\in\mathcal O_\alpha$, then
 \[
 |\mathcal O_\alpha|=|H:H\cap G_x|.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $x\in\mathcal O_\alpha$, we have
 \[
 \mathcal O_\alpha=Hx.
@@ -165,14 +199,21 @@ as sets, and hence
 \[
 |\mathcal O_\alpha|=|H:H\cap G_x|.
 \]
+
 :::
 
-<1>6. The subgroup $HG_x$ is the stabilizer in $G$ of the orbit $\mathcal O_x$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The subgroup $HG_x$ is the stabilizer in $G$ of the orbit $\mathcal O_x$.
+
+::: pf-proof
+
 Because $H\normal G$, the product $HG_x$ is a subgroup of $G$.
 
 Now let $g\in G$.
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 g\mathcal O_x=\mathcal O_{gx}.
 \]
@@ -190,19 +231,32 @@ Thus
 \[
 \operatorname{Stab}_G(\mathcal O_x)=HG_x.
 \]
+
 :::
 
-<1>7. We have
+:::
+
+::: pf-step
+
+We have
 \[
 |Y|=|G:HG_x|.
 \]
-::: {.proof}
-By <1>3, the $G$-action on $Y$ is transitive.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the $G$-action on $Y$ is transitive.
 Hence $Y$ is the orbit of $\mathcal O_x$ under this action.
-By <1>6, the stabilizer of $\mathcal O_x$ is $HG_x$.
+By step [](#s6){.pf-ref}, the stabilizer of $\mathcal O_x$ is $HG_x$.
 Orbit-stabilizer therefore gives
 \[
 |Y|=|G:\operatorname{Stab}_G(\mathcal O_x)|=|G:HG_x|.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

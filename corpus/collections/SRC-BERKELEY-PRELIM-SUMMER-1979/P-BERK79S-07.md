@@ -45,7 +45,11 @@ $$
 $$
 for every $t\in[0,1]$.
 
-<1>1. For every $R>0$, the series
+::: pf
+
+::: {.pf-step #s1}
+
+For every $R>0$, the series
 $$
 \sum_{n=0}^{\infty}
 \frac{f(t)t^nz^n}{n!}
@@ -55,7 +59,8 @@ $$
 [0,1]\times\{z\in\CC:\abs{z}\leq R\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 0\leq t\leq1
@@ -77,9 +82,14 @@ $$
 Me^R
 $$
 converges. The Weierstrass M-test gives the required uniform convergence.
+
 :::
 
-<1>2. For every $z\in\CC$,
+:::
+
+::: {.pf-step #s2}
+
+For every $z\in\CC$,
 $$
 g(z)
 =
@@ -90,14 +100,15 @@ g(z)
 \right)z^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $z\in\CC$ and choose $R>\abs{z}$. The exponential series gives
 $$
 e^{tz}
 =
 \sum_{n=0}^{\infty}\frac{t^nz^n}{n!}.
 $$
-By step <1>1, after multiplication by $f(t)$ this series converges
+By step [](#s1){.pf-ref}, after multiplication by $f(t)$ this series converges
 uniformly in $t\in[0,1]$. Therefore it may be integrated term by term:
 $$
 \begin{aligned}
@@ -114,11 +125,17 @@ f(t)
 \int_0^1f(t)t^n\,dt.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The power series in step <1>2 has infinite radius of convergence.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The power series in step [](#s2){.pf-ref} has infinite radius of convergence.
+
+::: pf-proof
+
 Set
 $$
 c_n
@@ -155,24 +172,36 @@ Me^{\abs{z}}
 \infty.
 $$
 Thus the radius of convergence is infinite.
+
 :::
 
-<1>4. The function $g$ is entire.
+:::
 
-::: {.proof}
-By step <1>2, $g$ is represented on all of $\CC$ by the power series whose
-radius of convergence is infinite by step <1>3. A power series is analytic
+::: {.pf-step #s4}
+
+The function $g$ is entire.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $g$ is represented on all of $\CC$ by the power series whose
+radius of convergence is infinite by step [](#s3){.pf-ref}. A power series is analytic
 throughout its disk of convergence, so
 $$
 \boxed{
 g\text{ is entire}.
 }
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

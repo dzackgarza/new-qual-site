@@ -37,8 +37,15 @@ Let $\varphi:\mathbb R\to\mathbb R$ be continuous with compact support.
 :::
 
 ::: {.solution}
-<1>1. Endpoint bounds.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Endpoint bounds.
+
+::: pf-proof
+
 For $1\le p<\infty$, Minkowski's integral inequality gives
 $$
 \begin{aligned}
@@ -60,10 +67,17 @@ For $p=\infty$, necessarily $q=\infty$, and directly
 $$
 \|f*\varphi\|_\infty\le\|\varphi\|_1\|f\|_\infty.
 $$
+
 :::
 
-<1>2. Interpolate the output norm for $p\le q\le\infty$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Interpolate the output norm for $p\le q\le\infty$.
+
+::: pf-proof
+
 Assume $1\le p<\infty$ and let $h=f*\varphi$. If $p\le q<\infty$, then
 $$
 \|h\|_q^q
@@ -74,16 +88,23 @@ Hence
 $$
 \|h\|_q\le\|h\|_\infty^{1-p/q}\|h\|_p^{p/q}.
 $$
-Using step <1>1,
+Using step [](#s1){.pf-ref},
 $$
 \|f*\varphi\|_q
 \le\|\varphi\|_{p'}^{1-p/q}\|\varphi\|_1^{p/q}\|f\|_p.
 $$
-The case $q=\infty$ is already contained in step <1>1. This proves part (a).
+The case $q=\infty$ is already contained in step [](#s1){.pf-ref}. This proves part (a).
+
 :::
 
-<1>3. Failure when $p>q$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Failure when $p>q$.
+
+::: pf-proof
+
 Choose a nonzero compactly supported continuous kernel $\varphi$. Let
 $$
 \psi(x)=\overline{\varphi(-x)},
@@ -115,10 +136,17 @@ $$
 N^{1/q-1/p}\le A\frac{\|\psi\|_p}{\|h\|_q}
 $$
 for every $N$, impossible because $1/q-1/p>0$. Hence no such general estimate can hold for $p>q$.
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and step <1>3 proves part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), and step [](#s3){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

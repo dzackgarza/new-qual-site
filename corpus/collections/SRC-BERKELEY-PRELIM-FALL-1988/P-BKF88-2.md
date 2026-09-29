@@ -20,20 +20,32 @@ Determine the group $\operatorname{Aut}(\mathbb C)$ of all one-to-one analytic m
 :::
 
 ::: {.solution}
-<1>1. If $f:\CC\to\CC$ is a bijective entire function, then $f^{-1}$ is continuous.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $f:\CC\to\CC$ is a bijective entire function, then $f^{-1}$ is continuous.
+
+::: pf-proof
+
 The function $f$ is nonconstant because it is bijective. By the open mapping theorem, $f$ maps open subsets of $\CC$ to open subsets of $\CC$. Since $f$ is bijective, this is exactly the statement that its inverse $f^{-1}:\CC\to\CC$ is continuous.
+
 :::
 
-<1>2. For every bijective entire $f$,
+:::
+
+::: {.pf-step #s2}
+
+For every bijective entire $f$,
 $$
 \abs{f(z)}\longrightarrow\infty
 \qquad\text{as}\qquad
 \abs z\longrightarrow\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose otherwise. Then there is a sequence $(z_n)$ with
 $$
 \abs{z_n}\longrightarrow\infty
@@ -42,7 +54,7 @@ while $(f(z_n))$ remains bounded. A bounded sequence in $\CC$ has a convergent s
 $$
 f(z_n)\longrightarrow w
 $$
-for some $w\in\CC$. By continuity of $f^{-1}$ from step <1>1,
+for some $w\in\CC$. By continuity of $f^{-1}$ from step [](#s1){.pf-ref},
 $$
 z_n
 =
@@ -51,28 +63,40 @@ f^{-1}(f(z_n))
 f^{-1}(w),
 $$
 contradicting $\abs{z_n}\to\infty$.
+
 :::
 
-<1>3. Every bijective entire function is a polynomial.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every bijective entire function is a polynomial.
+
+::: pf-proof
+
 Consider
 $$
 g(\zeta)=f(1/\zeta)
 $$
-on a punctured neighborhood of $0$. Step <1>2 gives
+on a punctured neighborhood of $0$. Step [](#s2){.pf-ref} gives
 $$
 \abs{g(\zeta)}\longrightarrow\infty
 \qquad\text{as}\qquad
 \zeta\longrightarrow0.
 $$
 Thus $g$ has a pole at $0$. Equivalently, the singularity of $f$ at infinity is a pole. An entire function with a pole at infinity is a polynomial.
+
 :::
 
-<1>4. Every bijective entire function has degree one.
+:::
 
-::: {.proof}
-Let $f$ be bijective. By step <1>3, $f$ is a nonconstant polynomial. If $\deg f\geq2$, then $f'$ is a nonconstant polynomial and therefore has a zero $z_0$ by the fundamental theorem of algebra. But an injective holomorphic function has nonzero derivative at every point, so this contradicts injectivity. Hence
+::: {.pf-step #s4}
+
+Every bijective entire function has degree one.
+
+::: pf-proof
+
+Let $f$ be bijective. By step [](#s3){.pf-ref}, $f$ is a nonconstant polynomial. If $\deg f\geq2$, then $f'$ is a nonconstant polynomial and therefore has a zero $z_0$ by the fundamental theorem of algebra. But an injective holomorphic function has nonzero derivative at every point, so this contradicts injectivity. Hence
 $$
 \deg f=1.
 $$
@@ -81,9 +105,14 @@ $$
 f(z)=az+b
 $$
 for some $a,b\in\CC$ with $a\neq0$.
+
 :::
 
-<1>5. Conversely, every map
+:::
+
+::: {.pf-step #s5}
+
+Conversely, every map
 $$
 z\longmapsto az+b,
 \qquad
@@ -93,15 +122,21 @@ b\in\CC,
 $$
 is an automorphism of $\CC$.
 
-::: {.proof}
+::: pf-proof
+
 Such a map is entire and has entire inverse
 $$
 w\longmapsto\frac{w-b}{a}.
 $$
 Hence it is one-to-one and onto.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{
 \Aut(\CC)
@@ -114,16 +149,23 @@ $$
 (a,b)(c,d)=(ac,ad+b).
 $$
 
-::: {.proof}
-Steps <1>4 and <1>5 give exactly the automorphisms. The composition formula follows from
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give exactly the automorphisms. The composition formula follows from
 $$
 a(cz+d)+b=(ac)z+(ad+b).
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 determines the automorphism group.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} determines the automorphism group.
+
+:::
+
+:::
+
 :::

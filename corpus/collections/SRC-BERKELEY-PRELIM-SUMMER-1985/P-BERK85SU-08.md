@@ -38,7 +38,11 @@ and
 If $a=b$, the constant polynomial $p(x)=f(a)$ has all the required
 properties. Assume henceforth that $a<b$.
 
-<1>1. Define
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$
 g:[0,(b-a)^2]\to\RR,
 \qquad
@@ -46,27 +50,39 @@ g(y)=f(a+\sqrt y).
 $$
 Then $g$ is continuous.
 
-::: {.proof}
+::: pf-proof
+
 The map
 $$
 y\longmapsto a+\sqrt y
 $$
 is continuous from $[0,(b-a)^2]$ to $[a,b]$, and $f$ is continuous.
 Therefore their composition $g$ is continuous.
+
 :::
 
-<1>2. There is a polynomial $q$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is a polynomial $q$ such that
 $$
 \abs{q(y)-g(y)}<\frac\varepsilon2
 $$
 for every $y\in[0,(b-a)^2]$.
 
-::: {.proof}
+::: pf-proof
+
 This is the Weierstrass approximation theorem applied to the
-continuous function $g$ from step <1>1.
+continuous function $g$ from step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The polynomial
+:::
+
+::: {.pf-step #s3}
+
+The polynomial
 $$
 r(y)
 \coloneqq
@@ -82,9 +98,10 @@ $$
 $$
 for every $y\in[0,(b-a)^2]$.
 
-::: {.proof}
+::: pf-proof
+
 The first identity is immediate. For the approximation estimate,
-step <1>2 gives
+step [](#s2){.pf-ref} gives
 $$
 \begin{aligned}
 \abs{r(y)-g(y)}
@@ -97,9 +114,14 @@ $$
 \varepsilon.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #s4}
+
+Define
 $$
 p(x)=r((x-a)^2).
 $$
@@ -112,26 +134,33 @@ $$
 p'(a)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $r$ is a polynomial, so is $p$. Moreover,
 $$
 p(a)=r(0)=g(0)=f(a)
 $$
-by step <1>3 and the definition of $g$. Differentiating gives
+by step [](#s3){.pf-ref} and the definition of $g$. Differentiating gives
 $$
 p'(x)
 =
 2(x-a)r'((x-a)^2),
 $$
 so $p'(a)=0$.
+
 :::
 
-<1>5. For every $x\in[a,b]$,
+:::
+
+::: {.pf-step #s5}
+
+For every $x\in[a,b]$,
 $$
 \boxed{\abs{p(x)-f(x)}<\varepsilon}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $x-a\ge0$,
 $$
 g((x-a)^2)
@@ -140,7 +169,7 @@ f\left(a+\sqrt{(x-a)^2}\right)
 =
 f(x).
 $$
-Therefore step <1>3 gives
+Therefore step [](#s3){.pf-ref} gives
 $$
 \abs{p(x)-f(x)}
 =
@@ -148,12 +177,18 @@ $$
 <
 \varepsilon.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the prescribed value and derivative at $a$, and
-step <1>5 gives the required uniform approximation.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the prescribed value and derivative at $a$, and
+step [](#s5){.pf-ref} gives the required uniform approximation.
+
+:::
+
+:::
+
 :::

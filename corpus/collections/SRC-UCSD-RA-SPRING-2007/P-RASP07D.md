@@ -29,10 +29,16 @@ Prove that if $1 < p < \infty$ and $f_n$ converges to $f$ weakly in $\ell^p(\mat
 (The converse is also true, but you are not asked to prove it here.)
 :::
 
-
 ::: {.solution}
-<1>1. Weak convergence implies uniform boundedness of the norms.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Weak convergence implies uniform boundedness of the norms.
+
+::: pf-proof
+
 Let $q=p/(p-1)$, so $(\ell^p)^*=\ell^q$. For each $n$, define
 \[
 T_n:\ell^q\to\mathbb C,
@@ -55,10 +61,17 @@ Hence
 \[
 \boxed{\sup_n\|f_n\|_p<\infty.}
 \]
+
 :::
 
-<1>2. Weak convergence implies coordinatewise convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Weak convergence implies coordinatewise convergence.
+
+::: pf-proof
+
 Fix $k\in\mathbb N$. Let $e_k\in\ell^q$ be the sequence with $1$ in the $k$th coordinate and $0$ elsewhere. The corresponding continuous linear functional on $\ell^p$ is
 \[
 x\longmapsto \langle x,e_k\rangle=x(k).
@@ -73,5 +86,11 @@ Since $k$ was arbitrary,
 \[
 \boxed{f_n\to f\text{ pointwise on }\mathbb N.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

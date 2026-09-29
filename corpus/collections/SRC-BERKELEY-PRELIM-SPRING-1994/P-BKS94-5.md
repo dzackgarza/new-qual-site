@@ -44,12 +44,17 @@ $$
 P(z)\coloneqq\sum_{k=0}^n c_k z^k.
 $$
 
-<1>1. If $\sin t$ is a solution, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $\sin t$ is a solution, then
 $$
 P(i)=P(-i)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \sin t=\frac{e^{it}-e^{-it}}{2i},
@@ -62,14 +67,20 @@ P(D)\sin t
 $$
 If this function is identically zero, the linear independence of
 $e^{it}$ and $e^{-it}$ over $\CC$ forces both coefficients to vanish.
+
 :::
 
-<1>2. If $\sin 2t$ is a solution, then
+:::
+
+::: {.pf-step #s2}
+
+If $\sin 2t$ is a solution, then
 $$
 P(2i)=P(-2i)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Likewise,
 $$
 \sin2t=\frac{e^{2it}-e^{-2it}}{2i},
@@ -82,27 +93,39 @@ P(D)\sin2t
 $$
 The two exponentials are linearly independent, giving the two asserted
 roots.
+
 :::
 
-<1>3. Every nonzero constant-coefficient equation having both prescribed
+:::
+
+::: {.pf-step #s3}
+
+Every nonzero constant-coefficient equation having both prescribed
 solutions has order at least $4$.
 
-::: {.proof}
-Steps <1>1 and <1>2 show that its characteristic polynomial has the four
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that its characteristic polynomial has the four
 distinct roots
 $$
 i,-i,2i,-2i.
 $$
 Therefore its degree, which is the order of the equation, is at least $4$.
+
 :::
 
-<1>4. The fourth-order equation
+:::
+
+::: {.pf-step #s4}
+
+The fourth-order equation
 $$
 x^{(4)}+5x''+4x=0
 $$
 has both $\sin t$ and $\sin2t$ as solutions.
 
-::: {.proof}
+::: pf-proof
+
 Its characteristic polynomial is
 $$
 z^4+5z^2+4
@@ -114,33 +137,51 @@ $$
 $$
 Thus $e^{\pm it}$ and $e^{\pm2it}$ are solutions, and hence so are their
 linear combinations $\sin t$ and $\sin2t$.
+
 :::
 
-<1>5. For real coefficients, the smallest possible order is $4$, and one
+:::
+
+::: {.pf-step #s5}
+
+For real coefficients, the smallest possible order is $4$, and one
 minimum-order equation is
 $$
 \boxed{x^{(4)}+5x''+4x=0}.
 $$
 
-::: {.proof}
-Step <1>3 gives the lower bound, while step <1>4 realizes it with real
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives the lower bound, while step [](#s4){.pf-ref} realizes it with real
 coefficients.
+
 :::
 
-<1>6. Allowing the coefficients $c_k$ to be complex does not change either
+:::
+
+::: {.pf-step #s6}
+
+Allowing the coefficients $c_k$ to be complex does not change either
 answer.
 
-::: {.proof}
-The arguments in steps <1>1--<1>3 used only complex linear independence of
+::: pf-proof
+
+The arguments in steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} used only complex linear independence of
 the exponential functions and therefore remain valid when the $c_k$ are
 complex. Thus order at least $4$ is still necessary. The real-coefficient
-equation in step <1>4 is also a complex-coefficient equation, so order $4$
+equation in step [](#s4){.pf-ref} is also a complex-coefficient equation, so order $4$
 is still attainable.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>5 and <1>6 answer the two parts.
 :::
+
+::: pf-qed
+
+Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} answer the two parts.
+
+:::
+
+:::
+
 :::

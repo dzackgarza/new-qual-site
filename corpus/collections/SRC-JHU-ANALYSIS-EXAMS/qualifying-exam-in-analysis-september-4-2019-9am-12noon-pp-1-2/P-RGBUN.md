@@ -32,9 +32,14 @@ Evaluate $\int_0^\infty \frac{\log x}{x^2+2}\,dx$ by contour integration using t
 ::: {.solution}
 The value is $\boxed{\pi\log2/(4\sqrt2)}$.
 
-<1>1. The chosen branch gives an identity for the truncated integral.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The chosen branch gives an identity for the truncated integral.
+
+::: pf-proof
+
 Use $\operatorname{Log}z=\log|z|+i\arg z$ with
 $-\pi/2<\arg z<3\pi/2$, whose cut is the nonpositive
 imaginary axis. This branch is holomorphic on a neighborhood
@@ -63,12 +68,18 @@ $$
 Adding the two arc integrals, the residue theorem says
 that this expression equals
 $\pi(\log\sqrt2+i\pi/2)/\sqrt2$ [@SS03].
+
 :::
 
-<1>2. Both arcs vanish in the limit, and taking real parts
+:::
+
+::: pf-step
+
+Both arcs vanish in the limit, and taking real parts
 determines the required integral.
 
-::: {.proof}
+::: pf-proof
+
 On either upper arc, $|\arg z|\leq\pi$. On the large arc
 $\Gamma_R$, the reverse triangle inequality gives
 $|z^2+2|\geq R^2-2$, so
@@ -88,7 +99,7 @@ $|\log x|/2$, and for $x\geq1$ it is at most
 $\log x/x^2$. Both comparison integrals are finite.
 The integral of $1/(x^2+2)$ also converges.
 
-Letting $R\to\infty$ and $\varepsilon\to0$ in step <1>1
+Letting $R\to\infty$ and $\varepsilon\to0$ in step [](#s1){.pf-ref}
 and taking real parts gives
 $$
 2\int_0^\infty\frac{\log x}{x^2+2}\,dx
@@ -96,5 +107,11 @@ $$
 =\frac{\pi\log2}{2\sqrt2}.
 $$
 Dividing by two proves the displayed answer.
+
 :::
+
+:::
+
+:::
+
 :::

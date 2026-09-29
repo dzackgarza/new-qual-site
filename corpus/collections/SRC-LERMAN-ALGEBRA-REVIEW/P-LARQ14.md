@@ -27,8 +27,15 @@ Prove that $\mathbb R[x]/(x-2)\cong\mathbb R$ as rings.
 :::
 
 ::: {.solution}
-<1>1. Evaluation at $2$ has kernel $(x-2)$ and is surjective.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Evaluation at $2$ has kernel $(x-2)$ and is surjective.
+
+::: pf-proof
+
 Define
 $$
 \Phi:\mathbb R[x]\to\mathbb R,
@@ -47,10 +54,17 @@ Hence
 $$
 \ker\Phi=(x-2).
 $$
+
 :::
 
-<1>2. The first isomorphism theorem gives the desired ring isomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+The first isomorphism theorem gives the desired ring isomorphism.
+
+::: pf-proof
+
 Since $\operatorname{im}\Phi=\mathbb R$ and $\ker\Phi=(x-2)$,
 $$
 \mathbb R[x]/(x-2)
@@ -58,5 +72,11 @@ $$
 \cong\operatorname{im}\Phi
 =\mathbb R.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

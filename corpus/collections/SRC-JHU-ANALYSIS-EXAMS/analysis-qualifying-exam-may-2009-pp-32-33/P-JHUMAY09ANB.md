@@ -39,8 +39,14 @@ have in the half-plane Re $z > 0 ?$ Prove that your answer is correct.
 There is exactly $\boxed{1}$ solution in the right half-plane,
 and it is a simple zero of $z+e^{-z}-(2+i)$.
 
-<1>1. Every right-half-plane solution lies in $B=\{z:|z-(2+i)|<1\}$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every right-half-plane solution lies in $B=\{z:|z-(2+i)|<1\}$.
+
+::: pf-proof
+
 If $z$ satisfies the equation and $\operatorname{Re}z>0$,
 then
 $$
@@ -49,10 +55,17 @@ $$
 Thus $z\in B$. Conversely every point of $B$ has real
 part greater than one, so all zeros in $B$ lie in the
 required half-plane. It remains to count the zeros there.
+
 :::
 
-<1>2. There is precisely one zero in $B$, counted with multiplicity.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is precisely one zero in $B$, counted with multiplicity.
+
+::: pf-proof
+
 For $|z-(2+i)|=1$ one has $\operatorname{Re}z\geq1$.
 Consequently
 $$
@@ -64,7 +77,13 @@ inside for $z+e^{-z}-(2+i)$ as for $z-(2+i)$ [@SS03].
 The latter has exactly one simple zero. Thus the former
 has one zero counted with multiplicity, which means that
 there is one distinct zero and its multiplicity is one.
-By step <1>1 no right-half-plane solution lies outside $B$.
+By step [](#s1){.pf-ref} no right-half-plane solution lies outside $B$.
 This gives the asserted complete count.
+
 :::
+
+:::
+
+:::
+
 :::

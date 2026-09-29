@@ -35,11 +35,18 @@ Hint: Figure out the action of $x$ on the obvious $\mathbb{C}$-basis.
 :::
 
 ::: {.solution}
-<1>1. For every commutative ring $R$ and ideals $I,J\subseteq R$, there is a canonical isomorphism
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every commutative ring $R$ and ideals $I,J\subseteq R$, there is a canonical isomorphism
 \[
 (R/I)\otimes_R(R/J)\cong R/(I+J).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 \Phi:(R/I)\otimes_R(R/J)\longrightarrow R/(I+J),
@@ -74,30 +81,50 @@ and, using the balancing relation,
 =(r+I)\otimes(s+J).
 \]
 Hence $\Phi$ and $\Psi$ are inverse isomorphisms.
+
 :::
 
-<1>2. Applying <1>1 with $R=\mathbb{C}[x]$, $I=(x^n)$, and $J=(x^m)$ gives
+:::
+
+::: {.pf-step #s2}
+
+Applying step [](#s1){.pf-ref} with $R=\mathbb{C}[x]$, $I=(x^n)$, and $J=(x^m)$ gives
 \[
 \mathbb{C}[x]/(x^n)\otimes_{\mathbb{C}[x]}\mathbb{C}[x]/(x^m)
 \cong
 \mathbb{C}[x]/(x^{\min(m,n)}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 In $\mathbb{C}[x]$,
 \[
 (x^n)+(x^m)=(x^{\min(m,n)}).
 \]
-Substitute this into <1>1.
+Substitute this into step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Thus the decomposition in part (a) exists with
+:::
+
+::: pf-step
+
+Thus the decomposition in part (a) exists with
 \[
 k=1,
 \qquad
 a_1=\min(m,n),
 \]
 and these values answer part (b).
-::: {.proof}
-The module on the right side of <1>2 is already one summand of the required form $\mathbb{C}[x]/(x^{a_1})$, so taking $a_1=\min(m,n)$ gives the desired decomposition.
+
+::: pf-proof
+
+The module on the right side of step [](#s2){.pf-ref} is already one summand of the required form $\mathbb{C}[x]/(x^{a_1})$, so taking $a_1=\min(m,n)$ gives the desired decomposition.
+
 :::
+
+:::
+
+:::
+
 :::

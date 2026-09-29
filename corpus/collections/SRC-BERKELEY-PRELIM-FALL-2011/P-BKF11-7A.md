@@ -33,13 +33,19 @@ in the annulus $\{z:1<\abs{z}<3\}$.
 :::
 
 ::: {.solution}
-<1>1. For $\abs{z}>1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $\abs{z}>1$,
 $$
 \frac1{1+z}
 =\sum_{n=0}^{\infty}(-1)^n z^{-n-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}>1$, then $\abs{z^{-1}}<1$. Hence the geometric series
 gives
 $$
@@ -50,15 +56,21 @@ $$
 &=\sum_{n=0}^{\infty}(-1)^n z^{-n-1}.
 \end{aligned}
 $$
+
 :::
 
-<1>2. For $\abs{z}<3$,
+:::
+
+::: {.pf-step #s2}
+
+For $\abs{z}<3$,
 $$
 \frac1{z^2-9}
 =-\sum_{n=0}^{\infty}\frac{z^{2n}}{9^{n+1}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $\abs{z}<3$, then $\abs{z^2/9}<1$. Therefore
 $$
 \begin{aligned}
@@ -68,9 +80,14 @@ $$
 &=-\sum_{n=0}^{\infty}\frac{z^{2n}}{9^{n+1}}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. On $1<\abs{z}<3$, the Laurent expansion of $f$ is
+:::
+
+::: {.pf-step #s3}
+
+On $1<\abs{z}<3$, the Laurent expansion of $f$ is
 $$
 \boxed{
 f(z)
@@ -79,20 +96,27 @@ f(z)
 }.
 $$
 
-::: {.proof}
-Step <1>1 converges for $\abs{z}>1$, and step <1>2 converges for
+::: pf-proof
+
+Step [](#s1){.pf-ref} converges for $\abs{z}>1$, and step [](#s2){.pf-ref} converges for
 $\abs{z}<3$. Both therefore converge on the requested annulus, where
 their sum equals $f$. Written termwise, the expansion begins
 $$
 \frac1z-\frac1{z^2}+\frac1{z^3}-\cdots
 -\frac19-\frac{z^2}{81}-\frac{z^4}{729}-\cdots,
 $$
-in agreement with the series in steps <1>1 and <1>2.
+in agreement with the series in steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the required Laurent expansion on the stated annulus.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required Laurent expansion on the stated annulus.
+
+:::
+
+:::
+
 :::

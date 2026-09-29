@@ -69,10 +69,15 @@ G=\Aut X,
 n=\size G.
 $$
 
-<1>1. It is enough to prove the bound after replacing the ground field by
+::: pf
+
+::: pf-step
+
+It is enough to prove the bound after replacing the ground field by
 its algebraic closure.
 
-::: {.proof}
+::: pf-proof
+
 Base change to an algebraic closure preserves the genus.  Every
 $k$-automorphism of $X$ induces an automorphism of the base-changed curve,
 and this map on automorphism groups is injective.  Thus a bound for the
@@ -80,9 +85,14 @@ geometric automorphism group also bounds $\Aut_kX$.
 
 We may therefore assume from now on that $k$ is algebraically closed.  In
 particular every closed point of the curves below has residue field $k$.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 f:X\longrightarrow Y=X/G
 $$
@@ -92,7 +102,8 @@ f^{-1}(f(P))
 $$
 has exactly $n/r$ points, and every one of them has ramification index $r$.
 
-::: {.proof}
+::: pf-proof
+
 The extension of function fields
 $$
 k(Y)=k(X)^G\subseteq k(X)
@@ -119,9 +130,14 @@ $$
 This orbit is the whole fibre.  Stabilizers of points in the same orbit are
 conjugate, so they all have order $r$ and hence all points of the fibre have
 ramification index $r$.
+
 :::
 
-<1>3. If $P_1,\ldots,P_s$ lie over the distinct branch points of $Y$ and
+:::
+
+::: {.pf-step #s3}
+
+If $P_1,\ldots,P_s$ lie over the distinct branch points of $Y$ and
 $$
 r_i=e_{P_i},
 $$
@@ -136,7 +152,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Characteristic $0$ ramification is tame, so Riemann--Hurwitz for the
 degree-$n$ morphism $f$ gives
 $$
@@ -147,7 +164,7 @@ n\bigl(2g(Y)-2\bigr)
 \sum_{P\in X}(e_P-1).
 $$
 
-By step <1>2, the fibre over the branch point represented by $P_i$ contains
+By step [](#s2){.pf-ref}, the fibre over the branch point represented by $P_i$ contains
 $n/r_i$ points, each with ramification index $r_i$.  Its total contribution
 to the ramification sum is therefore
 $$
@@ -157,9 +174,14 @@ n\left(1-\frac1{r_i}\right).
 $$
 Summing over all branch fibres and dividing by $n$ gives the displayed
 formula.
+
 :::
 
-<1>4. Put
+:::
+
+::: {.pf-step #s4}
+
+Put
 $$
 E
 =
@@ -174,7 +196,8 @@ $$
 E\ge\frac12.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $g(Y)\ge2$, then already
 $$
 2g(Y)-2\ge2.
@@ -186,14 +209,20 @@ $$
 1-\frac1{r_i}\ge\frac12.
 $$
 Thus $E\ge1/2$ in the only remaining case.
+
 :::
 
-<1>5. Suppose $g(Y)=0$.  If $E>0$, then $s\ge3$.  For $s\ge4$, one has
+:::
+
+::: {.pf-step #s5}
+
+Suppose $g(Y)=0$.  If $E>0$, then $s\ge3$.  For $s\ge4$, one has
 $$
 E\ge\frac16.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $g(Y)=0$,
 $$
 E
@@ -225,9 +254,14 @@ and therefore
 $$
 E\ge\frac16.
 $$
+
 :::
 
-<1>6. Suppose $g(Y)=0$ and $s=3$.  Then the smallest positive value of $E$
+:::
+
+::: {.pf-step #s6}
+
+Suppose $g(Y)=0$ and $s=3$.  Then the smallest positive value of $E$
 is
 $$
 \frac1{42},
@@ -238,7 +272,8 @@ $$
 $$
 up to permutation.
 
-::: {.proof}
+::: pf-proof
+
 Reorder the indices so that
 $$
 2\le r_1\le r_2\le r_3.
@@ -298,19 +333,25 @@ $41/42$, attained at $(2,3,7)$.  Hence the least positive value of $E$ is
 $$
 1-\frac{41}{42}=\frac1{42}.
 $$
+
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #s7}
+
+One has
 $$
 \boxed{\size\Aut X\le84(g-1).}
 $$
 
-::: {.proof}
-Since $g\ge2$, step <1>3 gives
+::: pf-proof
+
+Since $g\ge2$, step [](#s3){.pf-ref} gives
 $$
 E=\frac{2g-2}{n}>0.
 $$
-Steps <1>4--<1>6 show that every positive value of $E$ is at least $1/42$.
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} show that every positive value of $E$ is at least $1/42$.
 Therefore
 $$
 \frac{2g-2}{n}\ge\frac1{42},
@@ -320,12 +361,18 @@ $$
 n\le42(2g-2)=84(g-1).
 $$
 This is Hurwitz's bound.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>3 prove part (a), steps <1>4--<1>6 prove the numerical
-minimum in part (b), and step <1>7 gives the required automorphism bound.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove part (a), steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove the numerical
+minimum in part (b), and step [](#s7){.pf-ref} gives the required automorphism bound.
+
+:::
+
+:::
+
 :::

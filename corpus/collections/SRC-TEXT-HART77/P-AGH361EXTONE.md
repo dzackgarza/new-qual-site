@@ -44,13 +44,18 @@ Choose an embedding $u:A\hookrightarrow J$ into an injective sheaf and put $C=J/
 Such an embedding exists for modules on a ringed space [@Har10a, Proposition III.2.2].
 Write $\partial:\Hom(B,C)\to\Ext^1(B,A)$ for the connecting map associated to $0\to A\xrightarrow{u}J\xrightarrow{v}C\to0$.
 
-<1>1. The map $\partial$ induces an isomorphism
+::: pf
+
+::: {.pf-step #s1}
+
+The map $\partial$ induces an isomorphism
 $$
 \Hom(B,C)/\im\bigl(\Hom(B,J)\xrightarrow{v\circ-}\Hom(B,C)\bigr)
 \xrightarrow{\cong}\Ext^1(B,A).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The long exact sequence of the right derived functors of $\Hom(B,-)$ contains
 $$
 \Hom(B,J)\longrightarrow\Hom(B,C)\xrightarrow{\partial}
@@ -58,15 +63,21 @@ $$
 $$
 The last group is zero because $J$ is injective [@Har10a, Chapter III, §6].
 Exactness proves the assertion.
+
 :::
 
-<1>2. For $c:B\to C$, the pullback sheaf
+:::
+
+::: {.pf-step #s2}
+
+For $c:B\to C$, the pullback sheaf
 $$
 E_c=J\times_C B=\ker\bigl(J\oplus B\xrightarrow{(j,b)\mapsto v(j)-c(b)}C\bigr)
 $$
 is an extension of $B$ by $A$, whose assigned class is $\partial(c)$.
 
-::: {.proof}
+::: pf-proof
+
 The maps are $a\mapsto(u(a),0)$ and $(j,b)\mapsto b$.
 They give an exact sequence $0\to A\to E_c\to B\to0$.
 Indeed, on each stalk, surjectivity of $v$ supplies a lift of $c(b)$, and the kernel of the projection is $\ker v=u(A)$.
@@ -75,12 +86,18 @@ Naturality of connecting homomorphisms therefore gives
 $$
 \delta_{E_c}(\id_B)=\partial(c).
 $$
-Step <1>1 now shows that every element of $\Ext^1(B,A)$ is the assigned class of an extension.
+Step [](#s1){.pf-ref} now shows that every element of $\Ext^1(B,A)$ is the assigned class of an extension.
+
 :::
 
-<1>3. Every extension $0\to A\xrightarrow{a}E\xrightarrow{p}B\to0$ is isomorphic, with identity maps on its endpoints, to some $E_c$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every extension $0\to A\xrightarrow{a}E\xrightarrow{p}B\to0$ is isomorphic, with identity maps on its endpoints, to some $E_c$.
+
+::: pf-proof
+
 Injectivity of $J$ extends $u:A\to J$ across $a$ to a morphism $h:E\to J$ with $ha=u$.
 The composite $vh$ vanishes on $a(A)$, so it factors uniquely as $c p$ for a morphism $c:B\to C$.
 Thus
@@ -92,17 +109,23 @@ It is an isomorphism: at a stalk, an element in its kernel lies in $a(A)$ and is
 For $(j,b)\in(E_c)_x$, choose $e\in E_x$ with $p(e)=b$.
 Then $j-h(e)\in\ker v=u(A_x)$; adding its preimage under $u$ through $a$ adjusts $e$ to a preimage of $(j,b)$.
 Hence the map is bijective on every stalk.
-By step <1>2 and naturality under an isomorphism of extensions, the class assigned to $E$ is $\partial(c)$.
+By step [](#s2){.pf-ref} and naturality under an isomorphism of extensions, the class assigned to $E$ is $\partial(c)$.
+
 :::
 
-<1>4. Two extensions have the same assigned class if and only if they are isomorphic as extensions.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Two extensions have the same assigned class if and only if they are isomorphic as extensions.
+
+::: pf-proof
+
 An isomorphism of extensions has identity endpoint maps, so naturality of the long exact sequence makes their values of $\delta(\id_B)$ equal.
 
-Conversely, use step <1>3 to express the two extensions as $E_c$ and $E_d$.
-If their assigned classes agree, then $\partial(c)=\partial(d)$ by step <1>2.
-Step <1>1 supplies $t:B\to J$ with $d-c=vt$.
+Conversely, use step [](#s3){.pf-ref} to express the two extensions as $E_c$ and $E_d$.
+If their assigned classes agree, then $\partial(c)=\partial(d)$ by step [](#s2){.pf-ref}.
+Step [](#s1){.pf-ref} supplies $t:B\to J$ with $d-c=vt$.
 The map
 $$
 E_c\longrightarrow E_d,\qquad (j,b)\longmapsto(j+t(b),b)
@@ -110,13 +133,19 @@ $$
 is defined because $v(j+t(b))=c(b)+(d-c)(b)=d(b)$.
 Its inverse subtracts $t(b)$.
 It fixes both endpoints and is therefore the required extension isomorphism.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves surjectivity of the specified assignment, and step <1>4 proves that its fibres are exactly the isomorphism classes of extensions.
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves surjectivity of the specified assignment, and step [](#s4){.pf-ref} proves that its fibres are exactly the isomorphism classes of extensions.
 Thus it gives the requested bijection.
 The zero class corresponds to the split extension: by exactness, $\delta(\id_B)=0$ exactly when $\id_B$ lifts to a morphism $B\to E$, which is a splitting.
+
 :::
+
+:::
+
 :::

@@ -33,8 +33,14 @@ $$
 \boxed{\varphi\circ T_M=T_N\circ\varphi.}
 $$
 
-<1>1. Every $F[x]$-module homomorphism is an $F$-linear intertwiner.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every $F[x]$-module homomorphism is an $F$-linear intertwiner.
+
+::: pf-proof
+
 Let $\varphi:M\to N$ be $F[x]$-linear. Since the constants $F$ embed in $F[x]$, for $a\in F$ and $m\in M$,
 $$
 \varphi(am)=a\varphi(m),
@@ -49,10 +55,17 @@ $$
 =T_N\varphi(m).
 $$
 Hence $\varphi T_M=T_N\varphi$.
+
 :::
 
-<1>2. Every $F$-linear intertwiner is $F[x]$-linear.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every $F$-linear intertwiner is $F[x]$-linear.
+
+::: pf-proof
+
 Conversely, suppose $\varphi$ is $F$-linear and
 $$
 \varphi T_M=T_N\varphi.
@@ -75,5 +88,11 @@ $$
 \end{aligned}
 $$
 Thus $\varphi$ respects multiplication by every element of $F[x]$, so it is an $F[x]$-module homomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

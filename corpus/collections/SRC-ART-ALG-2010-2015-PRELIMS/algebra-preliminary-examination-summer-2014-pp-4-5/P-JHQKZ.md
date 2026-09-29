@@ -47,10 +47,15 @@ $$
 \end{aligned}
 $$
 
-<1>1. The tensor product and quotient have the required left
+::: pf
+
+::: pf-step
+
+The tensor product and quotient have the required left
 $R$-module structures.
 
-::: {.proof}
+::: pf-proof
+
 Because $I$ is two-sided, $R/I$ is an $(R,R)$-bimodule by
 left and right multiplication. Put $T=(R/I)\otimes_R M$, using
 the right $R$-action on $R/I$ and the given left action on $M$.
@@ -69,11 +74,17 @@ the finite expressions and negatives can be absorbed in the
 coefficients. For $r\in R$, each $ra_i$ lies in $I$, so
 $r\sum_i a_im_i=\sum_i(ra_i)m_i\in IM$. Hence $IM$ is a
 left submodule, and $M/IM$ is a left quotient module.
+
 :::
 
-<1>2. The displayed rule defines a left $R$-linear map $\Phi$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The displayed rule defines a left $R$-linear map $\Phi$.
+
+::: pf-proof
+
 Define $\beta:(R/I)\times M\to M/IM$ by
 $\beta(a+I,m)=am+IM$. If $a$ is replaced by $a+i$ with
 $i\in I$, the value changes by $im\in IM$, so it is
@@ -90,12 +101,18 @@ $$
 \Phi\big(r((a+I)\otimes m)\big)
 =(ra)m+IM=r(am+IM).
 $$
+
 :::
 
-<1>3. The map $\Psi$ is well defined and left $R$-linear,
+:::
+
+::: pf-step
+
+The map $\Psi$ is well defined and left $R$-linear,
 and is inverse to $\Phi$.
 
-::: {.proof}
+::: pf-proof
+
 Define $\eta:M\to T$ by $\eta(m)=(1+I)\otimes m$.
 It is additive, and balancing gives
 $$
@@ -116,5 +133,11 @@ $$
 Since elementary tensors generate $T$, these identities prove
 that both composites are the identity. Thus $\Phi$ is the
 claimed left $R$-module isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

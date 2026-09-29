@@ -32,13 +32,20 @@ Show that a connected, normal topological space with more than a single point is
 :::
 
 ::: {.solution}
-<1>1. Choose distinct points $x_0,x_1\in X$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Choose distinct points $x_0,x_1\in X$.
 There is a continuous map
 \[
 f:X\longrightarrow[0,1]
 \]
 such that $f(x_0)=0$ and $f(x_1)=1$.
-::: {.proof}
+
+::: pf-proof
+
 Under the standard convention used here, a normal space is $T_1$, so the singletons
 \[
 \{x_0\},\qquad \{x_1\}
@@ -50,13 +57,20 @@ f(x_0)=0,
 \qquad
 f(x_1)=1.
 \]
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 f(X)=[0,1].
 \]
-::: {.proof}
+
+::: pf-proof
+
 The continuous image of a connected space is connected, so $f(X)$ is a connected subset of $[0,1]$ containing both $0$ and $1$.
 
 Let $t\in(0,1)$.
@@ -68,17 +82,30 @@ f(X)\cap(t,\infty)
 \]
 are disjoint nonempty relatively open subsets whose union is $f(X)$: the first contains $0$, and the second contains $1$.
 This contradicts connectedness of $f(X)$.
-Hence every $t\in(0,1)$ belongs to $f(X)$, and the endpoints already belong to $f(X)$ by <1>1. Thus $f(X)=[0,1]$.
+Hence every $t\in(0,1)$ belongs to $f(X)$, and the endpoints already belong to $f(X)$ by step [](#s1){.pf-ref}. Thus $f(X)=[0,1]$.
+
 :::
 
-<1>3. The space $X$ is uncountable.
-::: {.proof}
+:::
+
+::: pf-step
+
+The space $X$ is uncountable.
+
+::: pf-proof
+
 If $X$ were countable, then its image $f(X)$ under any function would be countable.
-But <1>2 gives
+But step [](#s2){.pf-ref} gives
 \[
 f(X)=[0,1],
 \]
 and the interval $[0,1]$ is uncountable by Cantor's diagonal argument.
 This contradiction proves that $X$ is uncountable.
+
 :::
+
+:::
+
+:::
+
 :::

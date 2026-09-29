@@ -38,14 +38,20 @@ A=\begin{pmatrix}
 :::
 
 ::: {.solution}
-<1>1. The characteristic polynomial of $A$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The characteristic polynomial of $A$ is
 $$
 \chi_A(t)
 =
 (t-1)(t-4)^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The matrix $A$ is upper triangular. Hence its characteristic polynomial is
 the product of
 $$
@@ -57,11 +63,17 @@ $$
 =
 (t-1)(t-4)(t-4).
 $$
+
 :::
 
-<1>2. The eigenspace for the eigenvalue $4$ is one-dimensional.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The eigenspace for the eigenvalue $4$ is one-dimensional.
+
+::: pf-proof
+
 One has
 $$
 A-4I
@@ -104,18 +116,24 @@ $$
 \right\},
 $$
 which has dimension $1$.
+
 :::
 
-<1>3. The eigenvalue $4$ contributes exactly one Jordan block, and that
+:::
+
+::: {.pf-step #s3}
+
+The eigenvalue $4$ contributes exactly one Jordan block, and that
 block has size $2$.
 
-::: {.proof}
-Step <1>1 shows that the algebraic multiplicity of $4$ is $2$. The number
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that the algebraic multiplicity of $4$ is $2$. The number
 of Jordan blocks for the eigenvalue $4$ equals
 $$
 \dim\ker(A-4I),
 $$
-which is $1$ by step <1>2. Thus there is one block whose total size is
+which is $1$ by step [](#s2){.pf-ref}. Thus there is one block whose total size is
 $2$, namely
 $$
 J_2(4)
@@ -125,19 +143,30 @@ J_2(4)
 0&4
 \end{pmatrix}.
 $$
+
 :::
 
-<1>4. The eigenvalue $1$ contributes the one-dimensional block
+:::
+
+::: {.pf-step #s4}
+
+The eigenvalue $1$ contributes the one-dimensional block
 $$
 (1).
 $$
 
-::: {.proof}
-By step <1>1, the algebraic multiplicity of $1$ is $1$. Hence its entire
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the algebraic multiplicity of $1$ is $1$. Hence its entire
 Jordan contribution is the unique block of size $1$.
+
 :::
 
-<1>5. The Jordan canonical form is
+:::
+
+::: {.pf-step #s5}
+
+The Jordan canonical form is
 $$
 \boxed{
 \begin{pmatrix}
@@ -148,15 +177,22 @@ $$
 }
 $$
 
-::: {.proof}
-Combine the blocks from steps <1>3--<1>4. Jordan blocks may be reordered,
+::: pf-proof
+
+Combine the blocks from steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. Jordan blocks may be reordered,
 so any permutation of these diagonal blocks is the same Jordan canonical
 form up to block ordering.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested Jordan canonical form.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the requested Jordan canonical form.
+
+:::
+
+:::
+
 :::

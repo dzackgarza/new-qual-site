@@ -39,10 +39,16 @@ Let $F$ be a field.
 :::
 
 ::: {.solution}
-<1>1. Part (1): $F[x]$ is a vector space over $F$ under the usual
+
+::: pf
+
+::: {.pf-step #s1}
+
+Part (1): $F[x]$ is a vector space over $F$ under the usual
 polynomial addition and scalar multiplication.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 p(x)=\sum_{j=0}^m p_jx^j,
@@ -69,11 +75,17 @@ is the additive inverse of $p$. Commutativity and associativity of addition,
 the distributive laws, compatibility of scalar multiplication, and
 $1p=p$ all hold coefficientwise because they hold in the field $F$.
 Therefore the vector-space axioms hold.
+
 :::
 
-<1>2. Part (2): $F_n[x]$ is a vector subspace of $F[x]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Part (2): $F_n[x]$ is a vector subspace of $F[x]$.
+
+::: pf-proof
+
 The zero polynomial lies in $F_n[x]$. If $p,q\in F_n[x]$, then
 $$
 \deg(p+q)\leq n
@@ -85,15 +97,21 @@ $$
 $$
 Thus $F_n[x]$ is closed under addition and scalar multiplication, so it is
 a subspace.
+
 :::
 
-<1>3. The list
+:::
+
+::: {.pf-step #s3}
+
+The list
 $$
 1,x,\ldots,x^n
 $$
 is a basis of $F_n[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Every polynomial $p\in F_n[x]$ has a unique expression
 $$
 p(x)=a_0+a_1x+\cdots+a_nx^n
@@ -107,26 +125,38 @@ $$
 c_0=c_1=\cdots=c_n=0.
 $$
 Thus the list is linearly independent and hence a basis.
+
 :::
 
-<1>4. Consequently,
+:::
+
+::: {.pf-step #s4}
+
+Consequently,
 $$
 \boxed{
 \dim_F F_n[x]=n+1.
 }
 $$
 
-::: {.proof}
-Step <1>3 gives a basis with exactly $n+1$ elements.
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives a basis with exactly $n+1$ elements.
+
 :::
 
-<1>5. Part (3): for every $a\in F$, the polynomials
+:::
+
+::: {.pf-step #s5}
+
+Part (3): for every $a\in F$, the polynomials
 $$
 1,\ x-a,\ \ldots,\ (x-a)^n
 $$
 are linearly independent in $F_n[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 \sum_{j=0}^n c_j(x-a)^j=0.
@@ -137,9 +167,14 @@ coefficient $1$, whereas every term with index less than $m$ has degree
 less than $m$. Therefore the coefficient of $x^m$ in the displayed sum is
 $c_m\neq0$, contradicting that the sum is the zero polynomial. Hence every
 $c_j=0$, proving linear independence.
+
 :::
 
-<1>6. For every $a\in F$,
+:::
+
+::: {.pf-step #s6}
+
+For every $a\in F$,
 $$
 \boxed{
 \{1,x-a,\ldots,(x-a)^n\}
@@ -147,16 +182,23 @@ $$
 $$
 is a basis of $F_n[x]$.
 
-::: {.proof}
+::: pf-proof
+
 Each $(x-a)^j$ has degree $j\leq n$, so all $n+1$ displayed polynomials
-belong to $F_n[x]$. By step <1>5 they are linearly independent, while step
-<1>4 shows that $F_n[x]$ has dimension $n+1$. Therefore they form a basis.
+belong to $F_n[x]$. By step [](#s5){.pf-ref} they are linearly independent, while step
+[](#s4){.pf-ref} shows that $F_n[x]$ has dimension $n+1$. Therefore they form a basis.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (1), steps <1>2--<1>4 prove part (2), and steps
-<1>5--<1>6 prove part (3).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (1), steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (2), and steps
+[](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (3).
+
+:::
+
+:::
+
 :::

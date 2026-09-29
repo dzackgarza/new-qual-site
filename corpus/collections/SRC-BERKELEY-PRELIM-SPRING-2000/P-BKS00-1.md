@@ -56,7 +56,11 @@ p_3=e_2+e_4,
 p_4=e_3.
 $$
 
-<1>1. The matrix
+::: pf
+
+::: {.pf-step #s1}
+
+The matrix
 $$
 P
 =
@@ -69,7 +73,8 @@ P
 $$
 whose columns are $p_1,p_2,p_3,p_4$, is invertible.
 
-::: {.proof}
+::: pf-proof
+
 Expanding the determinant along the first row gives
 $$
 \det P
@@ -84,9 +89,14 @@ $$
 =1.
 $$
 Hence $P\in GL_4(\RR)$.
+
 :::
 
-<1>2. The action of $B$ on these four columns is
+:::
+
+::: {.pf-step #s2}
+
+The action of $B$ on these four columns is
 $$
 Bp_1=p_1,
 \qquad
@@ -97,7 +107,8 @@ Bp_3=0,
 Bp_4=p_3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Reading off the columns of $B$,
 $$
 Be_2=e_2,
@@ -121,14 +132,20 @@ $$
 Be_3=e_2+e_4.
 $$
 These are exactly the four displayed identities.
+
 :::
 
-<1>3. The matrices satisfy
+:::
+
+::: {.pf-step #s3}
+
+The matrices satisfy
 $$
 BP=PA.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The columns of $PA$ are
 $$
 p_1,
@@ -139,26 +156,38 @@ p_1,
 \qquad
 p_3,
 $$
-because the four columns of $A$ are $e_1,-e_2,0,e_3$. By step <1>2,
+because the four columns of $A$ are $e_1,-e_2,0,e_3$. By step [](#s2){.pf-ref},
 these are also the four columns of $BP$.
+
 :::
 
-<1>4. The answer is
+:::
+
+::: {.pf-step #s4}
+
+The answer is
 $$
 \boxed{\text{Yes}}.
 $$
 
-::: {.proof}
-By step <1>1, $P$ is invertible. Step <1>3 therefore gives
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $P$ is invertible. Step [](#s3){.pf-ref} therefore gives
 $$
 B=PAP^{-1},
 $$
 so $A$ and $B$ are similar over $\RR$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the requested similarity.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the requested similarity.
+
+:::
+
+:::
+
 :::

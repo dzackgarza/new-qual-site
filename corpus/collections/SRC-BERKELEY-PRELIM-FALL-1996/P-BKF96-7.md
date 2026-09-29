@@ -41,13 +41,18 @@ $$
 A\in\GL_2(\FF_p).
 $$
 
-<1>1. If the characteristic polynomial of $A$ is irreducible over
+::: pf
+
+::: {.pf-step #s1}
+
+If the characteristic polynomial of $A$ is irreducible over
 $\FF_p$, then the order of $A$ divides
 $$
 p^2-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 In this case the characteristic polynomial is also the minimal polynomial,
 because both have degree $2$. Therefore
 $$
@@ -66,15 +71,21 @@ $$
 $$
 a group of order $p^2-1$. By Lagrange's theorem, the order of $A$ divides
 $p^2-1$.
+
 :::
 
-<1>2. Suppose the characteristic polynomial of $A$ splits over $\FF_p$
+:::
+
+::: {.pf-step #s2}
+
+Suppose the characteristic polynomial of $A$ splits over $\FF_p$
 with two distinct roots. Then the order of $A$ divides
 $$
 p-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 With distinct eigenvalues, $A$ is diagonalizable over $\FF_p$:
 $$
 A\sim
@@ -96,9 +107,14 @@ $$
 A^{p-1}=I,
 $$
 so the order divides $p-1$.
+
 :::
 
-<1>3. Suppose the characteristic polynomial is
+:::
+
+::: {.pf-step #s3}
+
+Suppose the characteristic polynomial is
 $$
 (t-\lambda)^2
 $$
@@ -107,7 +123,8 @@ $$
 p(p-1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $A=\lambda I$, its order divides $p-1$, so the conclusion follows.
 Otherwise its Jordan form over $\FF_p$ is
 $$
@@ -145,9 +162,14 @@ A^{p(p-1)}
 I.
 $$
 Thus the order of $A$ divides $p(p-1)$.
+
 :::
 
-<1>4. Every element of $\GL_2(\FF_p)$ has order dividing either
+:::
+
+::: {.pf-step #s4}
+
+Every element of $\GL_2(\FF_p)$ has order dividing either
 $$
 p^2-1
 $$
@@ -156,17 +178,24 @@ $$
 p(p-1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every quadratic characteristic polynomial is either irreducible or splits
-over $\FF_p$. Step <1>1 handles the irreducible case. In the split case,
-either the roots are distinct, handled by step <1>2, or the polynomial has
-a repeated root, handled by step <1>3. Since $p-1$ divides $p(p-1)$, the
+over $\FF_p$. Step [](#s1){.pf-ref} handles the irreducible case. In the split case,
+either the roots are distinct, handled by step [](#s2){.pf-ref}, or the polynomial has
+a repeated root, handled by step [](#s3){.pf-ref}. Since $p-1$ divides $p(p-1)$, the
 distinct-root case also satisfies the second bound.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required dichotomy.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required dichotomy.
+
+:::
+
+:::
+
 :::

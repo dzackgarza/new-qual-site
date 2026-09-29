@@ -31,9 +31,15 @@ for all $x,y\in\mathbb R$. Prove that the range of $f$ is all of $\mathbb R$.
 :::
 
 ::: {.solution}
-<1>1. The function $f$ is injective.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The function $f$ is injective.
+
+::: pf-proof
+
 If $x\ne y$, then
 $$
 \abs{x-y}>0.
@@ -43,22 +49,34 @@ $$
 \abs{f(x)-f(y)}\ge\abs{x-y}>0,
 $$
 so $f(x)\ne f(y)$.
+
 :::
 
-<1>2. The function $f$ is either strictly increasing or strictly decreasing.
-
-::: {.proof}
-A continuous injective real-valued function on an interval is strictly monotone. Apply this standard theorem to the interval $\RR$ using step <1>1.
 :::
 
-<1>3. If $f$ is strictly increasing, then
+::: pf-step
+
+The function $f$ is either strictly increasing or strictly decreasing.
+
+::: pf-proof
+
+A continuous injective real-valued function on an interval is strictly monotone. Apply this standard theorem to the interval $\RR$ using step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+If $f$ is strictly increasing, then
 $$
 \lim_{x\to\infty}f(x)=\infty,
 \qquad
 \lim_{x\to-\infty}f(x)=-\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $x>0$, monotonicity gives $f(x)>f(0)$, so the hypothesis with $y=0$ yields
 $$
 f(x)-f(0)=\abs{f(x)-f(0)}\ge x.
@@ -70,16 +88,22 @@ $$
 f(0)-f(x)=\abs{f(x)-f(0)}\ge -x.
 $$
 Hence $f(x)\le f(0)+x\to-\infty$ as $x\to-\infty$.
+
 :::
 
-<1>4. If $f$ is strictly decreasing, then
+:::
+
+::: {.pf-step #s4}
+
+If $f$ is strictly decreasing, then
 $$
 \lim_{x\to\infty}f(x)=-\infty,
 \qquad
 \lim_{x\to-\infty}f(x)=\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $x>0$, one has $f(x)<f(0)$, and therefore
 $$
 f(0)-f(x)=\abs{f(x)-f(0)}\ge x,
@@ -91,21 +115,33 @@ $$
 f(x)-f(0)=\abs{f(x)-f(0)}\ge -x,
 $$
 so $f(x)\ge f(0)-x\to\infty$ as $x\to-\infty$.
+
 :::
 
-<1>5. The range of $f$ is all of $\RR$.
+:::
 
-::: {.proof}
-Let $y\in\RR$. In either monotonicity case, steps <1>3 and <1>4 show that there exist $a<b$ such that $y$ lies between $f(a)$ and $f(b)$. Since $f$ is continuous, the intermediate value theorem gives $c\in[a,b]$ with
+::: {.pf-step #s5}
+
+The range of $f$ is all of $\RR$.
+
+::: pf-proof
+
+Let $y\in\RR$. In either monotonicity case, steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that there exist $a<b$ such that $y$ lies between $f(a)$ and $f(b)$. Since $f$ is continuous, the intermediate value theorem gives $c\in[a,b]$ with
 $$
 f(c)=y.
 $$
 Thus every real number lies in the range of $f$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves that $f(\RR)=\RR$.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves that $f(\RR)=\RR$.
+
+:::
+
+:::
+
 :::

@@ -46,14 +46,19 @@ M
 $$
 for every $x\in U$ and every $1\leq i,j\leq n$.
 
-<1>1. For every $x,y\in U$ and every component $i$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x,y\in U$ and every component $i$,
 $$
 \abs{f_i(y)-f_i(x)}
 \leq
 M\sum_{j=1}^n\abs{y_j-x_j}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $x,y\in U$. Convexity of $U$ implies that the segment
 $$
 \gamma(t)=x+t(y-x),
@@ -86,9 +91,14 @@ $$
 M\sum_{j=1}^n\abs{y_j-x_j},
 $$
 which is the required estimate.
+
 :::
 
-<1>2. The map $f$ is globally Lipschitz on $U$: for all $x,y\in U$,
+:::
+
+::: {.pf-step #s2}
+
+The map $f$ is globally Lipschitz on $U$: for all $x,y\in U$,
 $$
 \norm{f(y)-f(x)}
 \leq
@@ -96,14 +106,15 @@ nM\norm{y-x},
 $$
 where $\norm{\cdot}$ is the Euclidean norm.
 
-::: {.proof}
+::: pf-proof
+
 By Cauchy--Schwarz,
 $$
 \sum_{j=1}^n\abs{y_j-x_j}
 \leq
 \sqrt n\,\norm{y-x}.
 $$
-Thus step <1>1 gives, for every $i$,
+Thus step [](#s1){.pf-ref} gives, for every $i$,
 $$
 \abs{f_i(y)-f_i(x)}
 \leq
@@ -125,16 +136,22 @@ n^2M^2\norm{y-x}^2.
 \end{aligned}
 $$
 Taking square roots gives the claim.
+
 :::
 
-<1>3. If $x\in\overline U$ and $(x_k)$ is any sequence in $U$ with
+:::
+
+::: {.pf-step #s3}
+
+If $x\in\overline U$ and $(x_k)$ is any sequence in $U$ with
 $$
 x_k\longrightarrow x,
 $$
 then $(f(x_k))$ is a Cauchy sequence in $\RR^n$.
 
-::: {.proof}
-The sequence $(x_k)$ is Cauchy. By step <1>2,
+::: pf-proof
+
+The sequence $(x_k)$ is Cauchy. By step [](#s2){.pf-ref},
 $$
 \norm{f(x_k)-f(x_\ell)}
 \leq
@@ -142,9 +159,14 @@ nM\norm{x_k-x_\ell}.
 $$
 The right-hand side tends to zero as $k,\ell\to\infty$. Hence
 $(f(x_k))$ is Cauchy.
+
 :::
 
-<1>4. For every $x\in\overline U$, define
+:::
+
+::: {.pf-step #s4}
+
+For every $x\in\overline U$, define
 $$
 \bar f(x)
 =
@@ -153,8 +175,9 @@ $$
 where $(x_k)$ is any sequence in $U$ converging to $x$. This definition is
 independent of the chosen sequence.
 
-::: {.proof}
-Existence of the limit follows from step <1>3 and completeness of
+::: pf-proof
+
+Existence of the limit follows from step [](#s3){.pf-ref} and completeness of
 $\RR^n$.
 
 For independence, suppose
@@ -163,7 +186,7 @@ x_k\to x
 \qquad\text{and}\qquad
 y_k\to x
 $$
-with $x_k,y_k\in U$. Step <1>2 gives
+with $x_k,y_k\in U$. Step [](#s2){.pf-ref} gives
 $$
 \norm{f(x_k)-f(y_k)}
 \leq
@@ -177,16 +200,22 @@ $$
 \longrightarrow0,
 $$
 the two image sequences have the same limit.
+
 :::
 
-<1>5. The function $\bar f$ extends $f$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The function $\bar f$ extends $f$.
+
+::: pf-proof
+
 If $x\in U$, choose the constant sequence
 $$
 x_k=x.
 $$
-Then step <1>4 gives
+Then step [](#s4){.pf-ref} gives
 $$
 \bar f(x)
 =
@@ -194,9 +223,14 @@ $$
 =
 f(x).
 $$
+
 :::
 
-<1>6. The extension $\bar f$ is Lipschitz on $\overline U$ with the same
+:::
+
+::: {.pf-step #s6}
+
+The extension $\bar f$ is Lipschitz on $\overline U$ with the same
 constant:
 $$
 \norm{\bar f(y)-\bar f(x)}
@@ -205,7 +239,8 @@ nM\norm{y-x}
 $$
 for all $x,y\in\overline U$.
 
-::: {.proof}
+::: pf-proof
+
 Choose sequences
 $$
 x_k\in U,\qquad x_k\to x,
@@ -214,30 +249,42 @@ and
 $$
 y_k\in U,\qquad y_k\to y.
 $$
-By step <1>2,
+By step [](#s2){.pf-ref},
 $$
 \norm{f(y_k)-f(x_k)}
 \leq
 nM\norm{y_k-x_k}.
 $$
-Pass to the limit using step <1>4 and continuity of the Euclidean norm:
+Pass to the limit using step [](#s4){.pf-ref} and continuity of the Euclidean norm:
 $$
 \norm{\bar f(y)-\bar f(x)}
 \leq
 nM\norm{y-x}.
 $$
+
 :::
 
-<1>7. The function $\bar f$ is continuous on $\overline U$.
+:::
 
-::: {.proof}
-Every Lipschitz map is continuous, and step <1>6 shows that $\bar f$ is
+::: {.pf-step #s7}
+
+The function $\bar f$ is continuous on $\overline U$.
+
+::: pf-proof
+
+Every Lipschitz map is continuous, and step [](#s6){.pf-ref} shows that $\bar f$ is
 Lipschitz.
+
 :::
 
-<1>8. The continuous extension of $f$ to $\overline U$ is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+The continuous extension of $f$ to $\overline U$ is unique.
+
+::: pf-proof
+
 Suppose
 $$
 F,G:\overline U\longrightarrow\RR^n
@@ -261,12 +308,18 @@ G(x).
 \end{aligned}
 $$
 Thus $F=G$ on $\overline U$.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4--<1>7 construct a continuous extension, and step <1>8 proves
+::: pf-qed
+
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} construct a continuous extension, and step [](#s8){.pf-ref} proves
 its uniqueness.
+
 :::
+
+:::
+
 :::

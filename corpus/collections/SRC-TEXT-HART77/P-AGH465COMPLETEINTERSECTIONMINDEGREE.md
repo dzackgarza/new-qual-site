@@ -41,13 +41,18 @@ $$
 S=k[x_0,x_1,x_2,x_3].
 $$
 
-<1>1. The saturated homogeneous ideal of $X$ is
+::: pf
+
+::: pf-step
+
+The saturated homogeneous ideal of $X$ is
 $$
 I(X)=(F,G),
 $$
 where $F$ and $G$ are homogeneous forms of degrees $a$ and $b$.
 
-::: {.proof}
+::: pf-proof
+
 By hypothesis, $X$ is the scheme-theoretic complete intersection of two
 surfaces of degrees $a$ and $b$.  Under the complete-intersection convention
 of [[P-AGH284COMPINT|Exercise II.8.4]], its saturated homogeneous ideal is
@@ -61,9 +66,14 @@ with
 $$
 I(X)=(F,G).
 $$
+
 :::
 
-<1>2. For every integer
+:::
+
+::: {.pf-step #s2}
+
+For every integer
 $$
 m<\min(a,b),
 $$
@@ -72,7 +82,8 @@ $$
 I(X)_m=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $(F,G)$ is a homogeneous ideal,
 $$
 I(X)_m
@@ -88,14 +99,20 @@ Hence
 $$
 I(X)_m=0.
 $$
+
 :::
 
-<1>3. The curve $X$ lies on no surface of degree
+:::
+
+::: {.pf-step #s3}
+
+The curve $X$ lies on no surface of degree
 $$
 m<\min(a,b).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose a surface $T\subseteq\PP^3$ of degree $m<\min(a,b)$ contained $X$.
 Let
 $$
@@ -106,13 +123,19 @@ lies in the saturated homogeneous ideal of $X$, so
 $$
 H\in I(X)_m.
 $$
-Step <1>2 gives $I(X)_m=0$, contradicting $H\ne0$.  Therefore no such
+Step [](#s2){.pf-ref} gives $I(X)_m=0$, contradicting $H\ne0$.  Therefore no such
 surface exists.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is exactly the required assertion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is exactly the required assertion.
+
+:::
+
+:::
+
 :::

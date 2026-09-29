@@ -41,9 +41,14 @@ $$
 $$
 of $V$.
 
-<1>1. In this basis, the matrix of $D$ has zero diagonal.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+In this basis, the matrix of $D$ has zero diagonal.
+
+::: pf-proof
+
 For $j\geq1$,
 $$
 D(x^j)=jx^{j-1},
@@ -55,24 +60,36 @@ $$
 Thus every basis vector is sent into the span of basis vectors preceding
 it. Hence the matrix of $D$ is strictly triangular and in particular has
 all diagonal entries equal to zero.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \boxed{
 \operatorname{tr}D=0.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The trace is the sum of the diagonal entries of any matrix representing the
-operator. Step <1>1 shows that all of them are zero.
+operator. Step [](#s1){.pf-ref} shows that all of them are zero.
+
 :::
 
-<1>3. Every eigenvector of $D$ is a nonzero constant polynomial, and its
+:::
+
+::: {.pf-step #s3}
+
+Every eigenvector of $D$ is a nonzero constant polynomial, and its
 eigenvalue is $0$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 Dp=\lambda p
@@ -92,9 +109,14 @@ p'=0.
 $$
 Therefore $p$ is constant. Conversely, every nonzero constant polynomial
 is killed by $D$, so it is an eigenvector with eigenvalue $0$.
+
 :::
 
-<1>4. The exponential operator is
+:::
+
+::: {.pf-step #s4}
+
+The exponential operator is
 $$
 e^D
 =
@@ -106,7 +128,8 @@ $$
 $$
 for every $p\in V$.
 
-::: {.proof}
+::: pf-proof
+
 Since every polynomial in $V$ has degree at most $10$,
 $$
 D^{11}=0.
@@ -122,15 +145,21 @@ p(x+1)
 =
 (e^Dp)(x).
 $$
+
 :::
 
-<1>5. If $p$ is an eigenvector of $e^D$ with eigenvalue $\mu$, then
+:::
+
+::: {.pf-step #s5}
+
+If $p$ is an eigenvector of $e^D$ with eigenvalue $\mu$, then
 $$
 \mu=1.
 $$
 
-::: {.proof}
-By step <1>4, the eigenvector equation is
+::: pf-proof
+
+By step [](#s4){.pf-ref}, the eigenvector equation is
 $$
 p(x+1)=\mu p(x).
 $$
@@ -144,12 +173,18 @@ $$
 a_m=\mu a_m,
 $$
 so $\mu=1$.
+
 :::
 
-<1>6. Every eigenvector of $e^D$ is a nonzero constant polynomial.
+:::
 
-::: {.proof}
-By step <1>5, an eigenvector satisfies
+::: {.pf-step #s6}
+
+Every eigenvector of $e^D$ is a nonzero constant polynomial.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, an eigenvector satisfies
 $$
 p(x+1)=p(x).
 $$
@@ -165,9 +200,14 @@ which is nonzero. Thus a nonconstant polynomial cannot satisfy the
 displayed periodicity relation. Hence every eigenvector is constant.
 Conversely, every nonzero constant polynomial is fixed by $e^D$, so it is
 an eigenvector with eigenvalue $1$.
+
 :::
 
-<1>7. The complete eigenvector classifications are
+:::
+
+::: {.pf-step #s7}
+
+The complete eigenvector classifications are
 $$
 \boxed{
 \begin{aligned}
@@ -177,13 +217,20 @@ e^D &: \text{all nonzero constants, with eigenvalue }1.
 }
 $$
 
-::: {.proof}
-This is exactly the content of steps <1>3 and <1>6.
+::: pf-proof
+
+This is exactly the content of steps [](#s3){.pf-ref} and [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part (1), and step <1>7 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

@@ -25,53 +25,123 @@ Show that there exist complex numbers $z \neq 0$ for which $f(z)$ is positive re
 :::
 
 ::: {.solution}
-<1>1. Suppose for contradiction that $f(z)$ is not positive real for any $z \neq 0$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose for contradiction that $f(z)$ is not positive real for any $z \neq 0$.
+
+::: pf-proof
+
 assume the conclusion fails.
+
 :::
 
-<1>2. Then $f(\mathbb{C} \setminus \{0\})$ avoids the positive real axis $(0, \infty)$.
-::: {.proof}
-<1>1.
 :::
 
-<1>3. Since $f$ is entire (hence continuous), $f(\mathbb{C})$ avoids $(0, \infty)$ except possibly at $f(0)$.
-::: {.proof}
-<1>2 and continuity.
+::: {.pf-step #s2}
+
+Then $f(\mathbb{C} \setminus \{0\})$ avoids the positive real axis $(0, \infty)$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. The set $\mathbb{C} \setminus (0, \infty)$ is simply connected (it is the plane slit along the positive real axis).
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Since $f$ is entire (hence continuous), $f(\mathbb{C})$ avoids $(0, \infty)$ except possibly at $f(0)$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} and continuity.
+
+:::
+
+:::
+
+::: pf-step
+
+The set $\mathbb{C} \setminus (0, \infty)$ is simply connected (it is the plane slit along the positive real axis).
+
+::: pf-proof
+
 the slit plane is simply connected.
+
 :::
 
-<1>5. The principal branch of the square root maps $\mathbb{C} \setminus (0, \infty)$ into the upper half-plane $\{w : \operatorname{Im} w > 0\}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The principal branch of the square root maps $\mathbb{C} \setminus (0, \infty)$ into the upper half-plane $\{w : \operatorname{Im} w > 0\}$.
+
+::: pf-proof
+
 the square root of a point in the slit plane has argument in $(0, \pi)$.
+
 :::
 
-<1>6. Hence $h(z) = \sqrt{f(z)}$ is an entire function mapping $\mathbb{C}$ into the upper half-plane.
-::: {.proof}
-<1>3 and <1>5.
 :::
 
-<1>7. The Cayley transform $\phi(w) = \frac{w - i}{w + i}$ maps the upper half-plane into the unit disk, so $\phi \circ h$ is a bounded entire function.
-::: {.proof}
-<1>6 and the Cayley transform.
+::: {.pf-step #s6}
+
+Hence $h(z) = \sqrt{f(z)}$ is an entire function mapping $\mathbb{C}$ into the upper half-plane.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
 
-<1>8. By Liouville's theorem, $\phi \circ h$ is constant, so $h$ is constant, so $f = h^2$ is constant.
-::: {.proof}
-<1>7.
 :::
 
-<1>9. This contradicts $f$ being non-constant, so there exists $z \neq 0$ with $f(z)$ positive real.
-::: {.proof}
-<1>8.
+::: {.pf-step #s7}
+
+The Cayley transform $\phi(w) = \frac{w - i}{w + i}$ maps the upper half-plane into the unit disk, so $\phi \circ h$ is a bounded entire function.
+
+::: pf-proof
+
+Step [](#s6){.pf-ref} and the Cayley transform.
+
 :::
 
-<1>10. Q.E.D.
-::: {.proof}
-<1>9.
 :::
+
+::: {.pf-step #s8}
+
+By Liouville's theorem, $\phi \circ h$ is constant, so $h$ is constant, so $f = h^2$ is constant.
+
+::: pf-proof
+
+Step [](#s7){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s9}
+
+This contradicts $f$ being non-constant, so there exists $z \neq 0$ with $f(z)$ positive real.
+
+::: pf-proof
+
+Step [](#s8){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s9){.pf-ref}.
+
+:::
+
+:::
+
 :::

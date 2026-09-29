@@ -37,13 +37,18 @@ $$
 u^{2/3}=(\sqrt[3]{u})^2.
 $$
 
-<1>1. The function
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 y_1(x)\coloneqq\left(\frac{x+3}{3}\right)^3
 $$
 is a differentiable solution on all of $\RR$ with $y_1(0)=1$.
 
-::: {.proof}
+::: pf-proof
+
 Differentiating gives
 $$
 y_1'(x)=\frac{(x+3)^2}{9}.
@@ -57,9 +62,14 @@ Also
 $$
 y_1(0)=\left(\frac33\right)^3=1.
 $$
+
 :::
 
-<1>2. Define a second function by
+:::
+
+::: {.pf-step #s2}
+
+Define a second function by
 $$
 y_2(x)\coloneqq
 \begin{cases}
@@ -69,7 +79,8 @@ y_2(x)\coloneqq
 $$
 Then $y_2$ is differentiable at $x=-3$ and $y_2'(-3)=0$.
 
-::: {.proof}
+::: pf-proof
+
 Both pieces have value $0$ at $x=-3$, so $y_2$ is continuous there.
 Moreover,
 $$
@@ -82,21 +93,27 @@ $$
 $$
 Both one-sided expressions tend to $0$ as $h\to0$. Hence the derivative
 exists at $-3$ and equals $0$.
+
 :::
 
-<1>3. The function $y_2$ satisfies
+:::
+
+::: {.pf-step #s3}
+
+The function $y_2$ satisfies
 $$
 y_2'=y_2^{2/3}
 $$
 on all of $\RR$ and satisfies $y_2(0)=1$.
 
-::: {.proof}
+::: pf-proof
+
 For $x<-3$, one has $y_2(x)=0$, so
 $$
 y_2'(x)=0=y_2(x)^{2/3}.
 $$
 For $x>-3$, the function agrees with $y_1$, so the differential equation
-holds by step <1>1. At $x=-3$, step <1>2 gives
+holds by step [](#s1){.pf-ref}. At $x=-3$, step [](#s2){.pf-ref} gives
 $$
 y_2'(-3)=0=y_2(-3)^{2/3}.
 $$
@@ -104,11 +121,17 @@ Finally, since $0>-3$,
 $$
 y_2(0)=\left(\frac33\right)^3=1.
 $$
+
 :::
 
-<1>4. The two solutions are distinct.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The two solutions are distinct.
+
+::: pf-proof
+
 For example,
 $$
 y_1(-4)=-\frac1{27},
@@ -116,19 +139,31 @@ y_1(-4)=-\frac1{27},
 y_2(-4)=0.
 $$
 Thus $y_1\ne y_2$.
+
 :::
 
-<1>5. Therefore there is more than one real-valued differentiable
+:::
+
+::: {.pf-step #s5}
+
+Therefore there is more than one real-valued differentiable
 solution of the initial-value problem.
 
-::: {.proof}
-Steps <1>1 and <1>3 give two global differentiable solutions with the
-same initial value, and step <1>4 shows that they are different.
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s3){.pf-ref} give two global differentiable solutions with the
+same initial value, and step [](#s4){.pf-ref} shows that they are different.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

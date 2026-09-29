@@ -36,10 +36,16 @@ Determine if each of the following statements is true or false.
    Then $\mu_A$ is a Radon measure.
 :::
 
-
 ::: {.solution}
-<1>1. Statement 1 is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Statement 1 is false.
+
+::: pf-proof
+
 Take $g=0$ and
 \[
 f=-\mathbf1_{(0,1)}+\mathbf1_{(1,2)}.
@@ -56,10 +62,17 @@ x-2,&1<x\le2,\\
 \end{cases}
 \]
 which is always $\le0=\int_{-\infty}^xg$. But $f=1>0=g$ on $(1,2)$. Thus the asserted pointwise a.e. order does not follow.
+
 :::
 
-<1>2. Statement 2 is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement 2 is true.
+
+::: pf-proof
+
 Let
 \[
 M:=\sup_n\|f_n\|_2<\infty.
@@ -83,10 +96,17 @@ Hence
 \left|\int_Xf_n\,d\mu-\int_Xf\,d\mu\right|
 \le\|f_n-f\|_1\to0.
 \]
+
 :::
 
-<1>3. Statement 3 is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement 3 is true.
+
+::: pf-proof
+
 Because $A$ is open, it is Borel, so $\mu_A(E)=\mu(A\cap E)$ defines a Borel measure. If $K\subseteq X$ is compact, then
 \[
 \mu_A(K)=\mu(A\cap K)\le\mu(K)<\infty,
@@ -104,5 +124,11 @@ For every such $K$, $\mu_A(K)=\mu(K)$. Therefore
 =\sup\{\mu_A(K):K\subseteq E,\ K\text{ compact}\}.
 \]
 Thus $\mu_A$ is inner regular and finite on compact sets, hence Radon.
+
 :::
+
+:::
+
+:::
+
 :::

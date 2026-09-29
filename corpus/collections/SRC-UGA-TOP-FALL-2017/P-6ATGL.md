@@ -37,11 +37,17 @@ i:A\hookrightarrow X
 \]
 be the inclusion.
 
-<1>1. The relative long exact sequence identifies $H_0(X,A)$ with the cokernel of
+::: pf
+
+::: {.pf-step #s1}
+
+The relative long exact sequence identifies $H_0(X,A)$ with the cokernel of
 \[
 i_*:H_0(A;\ZZ)\longrightarrow H_0(X;\ZZ).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The degree-zero part of the long exact sequence of the pair $(X,A)$ is
 \[
 H_0(A;\ZZ)
@@ -63,10 +69,17 @@ H_0(X,A;\ZZ)=0
 \quad\Longleftrightarrow\quad
 i_*\text{ is surjective}.
 \]
+
 :::
 
-<1>2. The map $i_*$ is surjective if and only if $A$ meets every path component of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The map $i_*$ is surjective if and only if $A$ meets every path component of $X$.
+
+::: pf-proof
+
 For any space $Y$, its zeroth singular homology is canonically the free abelian group on its path components:
 \[
 H_0(Y;\ZZ)
@@ -83,14 +96,27 @@ Therefore $i_*$ is surjective exactly when
 C\cap A\neq\varnothing
 \]
 for every path component $C$ of $X$.
+
 :::
 
-<1>3. Consequently,
+:::
+
+::: pf-step
+
+Consequently,
 \[
 H_0(X,A;\ZZ)=0
 \]
 if and only if $A$ intersects every path component of $X$.
-::: {.proof}
-Combine <1>1 and <1>2.
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

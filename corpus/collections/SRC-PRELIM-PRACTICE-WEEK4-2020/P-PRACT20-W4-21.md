@@ -18,13 +18,27 @@ Suppose that A has distinct eigenvalues $\lambda _ { 1 } , \ldots , \lambda _ { 
 :::
 
 ::: {.solution}
-<1>1. The claim holds for one eigenvector.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The claim holds for one eigenvector.
+
+::: pf-proof
+
 An eigenvector is nonzero by definition, so $\{v_1\}$ is linearly independent.
+
 :::
 
-<1>2. If the claim holds for $k$ distinct eigenvalues, then it holds for $k+1$ distinct eigenvalues.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If the claim holds for $k$ distinct eigenvalues, then it holds for $k+1$ distinct eigenvalues.
+
+::: pf-proof
+
 Suppose
 $$
 \alpha_1v_1+\cdots+\alpha_kv_k+\alpha_{k+1}v_{k+1}=0,
@@ -52,15 +66,29 @@ $$
 \alpha_{k+1}v_{k+1}=0.
 $$
 Because $v_{k+1}\ne0$, we also have $\alpha_{k+1}=0$. Thus $v_1,\dots,v_{k+1}$ are linearly independent.
+
 :::
 
-<1>3. The eigenvectors $v_1,\dots,v_k$ are linearly independent for every $k\ge1$.
-::: {.proof}
-This follows from steps <1>1--<1>2 by induction on $k$.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>3 is exactly the required conclusion.
+::: {.pf-step #s3}
+
+The eigenvectors $v_1,\dots,v_k$ are linearly independent for every $k\ge1$.
+
+::: pf-proof
+
+This follows from steps [](#s1){.pf-ref} and [](#s2){.pf-ref} by induction on $k$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

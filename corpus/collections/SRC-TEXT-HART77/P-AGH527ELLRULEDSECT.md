@@ -43,12 +43,17 @@ $$
 $$
 be the ruled surface of (2.11.6), with $\mathcal E$ normalized.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \deg\mathcal E=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For the elliptic ruled surface of (2.11.6), the invariant is
 $$
 e=-1.
@@ -61,14 +66,20 @@ Hence
 $$
 \deg\mathcal E=\deg\det\mathcal E=1.
 $$
+
 :::
 
-<1>2. For every point $P\in C$,
+:::
+
+::: {.pf-step #s2}
+
+For every point $P\in C$,
 $$
 \dim_k\Hom\qty(\mathcal E,\OO_C(P))=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 \mathcal F_P=\mathcal E^\vee\tensor\OO_C(P).
@@ -100,15 +111,21 @@ H^0(C,\mathcal F_P)
 =
 \Hom\qty(\mathcal E,\OO_C(P)).
 $$
+
 :::
 
-<1>3. Every nonzero morphism
+:::
+
+::: {.pf-step #s3}
+
+Every nonzero morphism
 $$
 \mathcal E\longrightarrow\OO_C(P)
 $$
 is surjective.
 
-::: {.proof}
+::: pf-proof
+
 Let the image be
 $$
 \OO_C(P-Z)\subseteq\OO_C(P)
@@ -131,16 +148,22 @@ $$
 $$
 where $\deg\mathcal N^{-1}<0$, contradicting normalization. Thus $Z=0$, and
 the map is surjective.
+
 :::
 
-<1>4. For every $P\in C$ there is a unique section $C_P\subseteq X$
+:::
+
+::: {.pf-step #s4}
+
+For every $P\in C$ there is a unique section $C_P\subseteq X$
 corresponding to the quotient
 $$
 \mathcal E\twoheadrightarrow\OO_C(P).
 $$
 
-::: {.proof}
-By steps <1>2--<1>3, there is a surjection
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, there is a surjection
 $$
 \mathcal E\twoheadrightarrow\OO_C(P),
 $$
@@ -148,9 +171,14 @@ unique up to a nonzero scalar. Under the quotient convention for
 $\PP(\mathcal E)$, a line-bundle quotient of $\mathcal E$ gives a section of
 $\pi$. Multiplying the quotient map by a scalar does not change the section,
 so the resulting section $C_P$ is unique.
+
 :::
 
-<1>5. If a section $D\subseteq X$ corresponds to an exact sequence
+:::
+
+::: {.pf-step #s5}
+
+If a section $D\subseteq X$ corresponds to an exact sequence
 $$
 0\longrightarrow\mathcal N
 \longrightarrow\mathcal E
@@ -162,7 +190,8 @@ $$
 D^2=2\deg\mathcal L-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The normal bundle of the section determined by the quotient
 $\mathcal E\twoheadrightarrow\mathcal L$ is
 $$
@@ -182,17 +211,23 @@ Since
 $$
 \deg\mathcal N+\deg\mathcal L=\deg\mathcal E=1
 $$
-by step <1>1, one obtains
+by step [](#s1){.pf-ref}, one obtains
 $$
 D^2=2\deg\mathcal L-1.
 $$
+
 :::
 
-<1>6. The sections of self-intersection one are exactly the sections
-$C_P$ from step <1>4.
+:::
 
-::: {.proof}
-If $D^2=1$, step <1>5 gives
+::: {.pf-step #s6}
+
+The sections of self-intersection one are exactly the sections
+$C_P$ from step [](#s4){.pf-ref}.
+
+::: pf-proof
+
+If $D^2=1$, step [](#s5){.pf-ref} gives
 $$
 1=2\deg\mathcal L-1,
 $$
@@ -206,18 +241,24 @@ an effective divisor consisting of one point $P$, so
 $$
 \mathcal L\cong\OO_C(P).
 $$
-Thus $D=C_P$ by uniqueness in step <1>4.
+Thus $D=C_P$ by uniqueness in step [](#s4){.pf-ref}.
 
 Conversely, for the quotient to $\OO_C(P)$ one has $\deg\mathcal L=1$, so
-step <1>5 gives
+step [](#s5){.pf-ref} gives
 $$
 C_P^2=1.
 $$
+
 :::
 
-<1>7. The sections $C_P$ form an algebraic family parametrized by $C$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The sections $C_P$ form an algebraic family parametrized by $C$.
+
+::: pf-proof
+
 Let $p,q:C\times C\to C$ be the first and second projections, and let
 $\Delta\subseteq C\times C$ be the diagonal. The line bundle
 $$
@@ -229,7 +270,7 @@ $$
 =
 p^*\mathcal E^\vee\tensor\OO_{C\times C}(\Delta).
 $$
-By step <1>2 and its proof, every fibre of $q$ satisfies
+By step [](#s2){.pf-ref} and its proof, every fibre of $q$ satisfies
 $$
 h^0(\mathcal G|_{C\times\{P\}})=1,
 \qquad
@@ -247,21 +288,27 @@ p^*\mathcal E\tensor q^*\mathcal R
 \OO_{C\times C}(\Delta)
 $$
 whose restriction over $P$ is the unique nonzero map
-$\mathcal E\to\OO_C(P)$ up to scalar. By step <1>3 every fibre map is
+$\mathcal E\to\OO_C(P)$ up to scalar. By step [](#s3){.pf-ref} every fibre map is
 surjective, hence this is a relative line-bundle quotient. Projectivizing it
 gives a family of sections of $X\to C$ over the second copy of $C$, with fibre
 $C_P$ over $P$. Thus the self-intersection-one sections form a
 one-dimensional algebraic family parametrized by $C$.
+
 :::
 
-<1>8. For $P,Q\in C$,
+:::
+
+::: {.pf-step #s8}
+
+For $P,Q\in C$,
 $$
 \OO_X(C_P-C_Q)
 \cong
 \pi^*\OO_C(P-Q).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 0\longrightarrow\mathcal N_P
@@ -300,16 +347,22 @@ $$
 \OO_X(1)\tensor\pi^*\qty((\det\mathcal E)^{-1}\tensor\OO_C(P)).
 $$
 Dividing the formulas for $P$ and $Q$ gives the displayed identity.
+
 :::
 
-<1>9. No two distinct sections in this family are linearly equivalent.
+:::
 
-::: {.proof}
+::: {.pf-step #s9}
+
+No two distinct sections in this family are linearly equivalent.
+
+::: pf-proof
+
 Suppose
 $$
 C_P\sim C_Q.
 $$
-Step <1>8 gives
+Step [](#s8){.pf-ref} gives
 $$
 \pi^*\OO_C(P-Q)\cong\OO_X.
 $$
@@ -325,13 +378,19 @@ Each degree-one line bundle on the elliptic curve has a one-dimensional space
 of sections, so its unique effective divisor is determined by the line bundle.
 Hence $P=Q$. Therefore distinct parameters give non-linearly-equivalent
 sections.
+
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4--<1>7 identify the self-intersection-one sections with an algebraic
-family parametrized by $C$, and steps <1>8--<1>9 prove that no two distinct
+::: pf-qed
+
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} identify the self-intersection-one sections with an algebraic
+family parametrized by $C$, and steps [](#s8){.pf-ref} and [](#s9){.pf-ref} prove that no two distinct
 members are linearly equivalent.
+
 :::
+
+:::
+
 :::

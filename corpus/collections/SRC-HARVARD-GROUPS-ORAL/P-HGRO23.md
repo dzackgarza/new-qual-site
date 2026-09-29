@@ -29,31 +29,57 @@ Prove that $G$ has nontrivial center.
 ::: {.solution}
 Use the class equation for the conjugation action of $G$ on itself.
 
-<1>1. Every noncentral conjugacy class has cardinality divisible by $p$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every noncentral conjugacy class has cardinality divisible by $p$.
+
+::: pf-proof
+
 If $x\notin Z(G)$, then its conjugacy class has size
 \[
 [G:C_G(x)].
 \]
 Since $C_G(x)$ is a proper subgroup of the $p$-group $G$, this index is a power
 of $p$ greater than $1$, hence is divisible by $p$.
+
 :::
 
-<1>2. The order of the center is divisible by $p$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The order of the center is divisible by $p$.
+
+::: pf-proof
+
 The class equation is
 \[
 |G|=|Z(G)|+\sum_i [G:C_G(x_i)],
 \]
-where the $x_i$ represent the noncentral conjugacy classes. By <1>1 every term
+where the $x_i$ represent the noncentral conjugacy classes. By step [](#s1){.pf-ref} every term
 in the sum is divisible by $p$, and $|G|=p^r$ is divisible by $p$. Hence
 \[
 |Z(G)|\equiv0\pmod p.
 \]
+
 :::
 
-<1>3. Therefore $Z(G)$ is nontrivial.
-::: {.proof}
-Since $p$ divides $|Z(G)|$, we have $|Z(G)|\ge p>1$.
 :::
+
+::: pf-step
+
+Therefore $Z(G)$ is nontrivial.
+
+::: pf-proof
+
+Since $p$ divides $|Z(G)|$, we have $|Z(G)|\ge p>1$.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -34,12 +34,17 @@ $$
 g(x)=f(x+c)-f(x).
 $$
 
-<1>1. The function $g$ is continuous and satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The function $g$ is continuous and satisfies
 $$
 \int_0^1 g(x)\,dx=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Continuity is immediate from continuity of $f$. Also
 $$
 \int_0^1 f(x+c)\,dx
@@ -54,33 +59,51 @@ $$
 \int_0^1f(u)\,du.
 $$
 Subtracting gives the claim.
+
 :::
 
-<1>2. There exists $x_0\in[0,1]$ such that
+:::
+
+::: {.pf-step #s2}
+
+There exists $x_0\in[0,1]$ such that
 $$
 g(x_0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose $g$ had no zero on $[0,1]$. Since $[0,1]$ is connected and
 $g$ is continuous, $g$ would be either strictly positive everywhere or
 strictly negative everywhere. Its integral over $[0,1]$ would then be
-strictly positive or strictly negative, contradicting step <1>1.
+strictly positive or strictly negative, contradicting step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The point $x_0$ from step <1>2 satisfies
+:::
+
+::: {.pf-step #s3}
+
+The point $x_0$ from step [](#s2){.pf-ref} satisfies
 $$
 f(x_0+c)=f(x_0).
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is exactly the identity $g(x_0)=0$ under the definition of $g$.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-The number $c\in\RR$ was arbitrary, so step <1>3 proves the claim for
+::: pf-qed
+
+The number $c\in\RR$ was arbitrary, so step [](#s3){.pf-ref} proves the claim for
 every real $c$.
+
 :::
+
+:::
+
 :::

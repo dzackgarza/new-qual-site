@@ -26,40 +26,73 @@ Show that $N(N(P)) = N(P)$ where $N$ is the normalizer in $G$.
 ::: {.solution}
 Write \(N_G(H)\) for the normalizer of a subgroup \(H\le G\).
 
-<1>1. The subgroup \(P\) is normal in \(N_G(P)\), hence is the unique Sylow \(p\)-subgroup of \(N_G(P)\).
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup \(P\) is normal in \(N_G(P)\), hence is the unique Sylow \(p\)-subgroup of \(N_G(P)\).
+
+::: pf-proof
+
 By definition, every element of \(N_G(P)\) conjugates \(P\) to itself, so \(P\trianglelefteq N_G(P)\). Since \(P\) is Sylow in \(G\), it has the largest possible \(p\)-power order among subgroups of \(G\), hence also among subgroups of \(N_G(P)\le G\). Thus \(P\) is Sylow in \(N_G(P)\). A normal Sylow subgroup is unique.
+
 :::
 
-<1>2. One always has
+:::
+
+::: {.pf-step #s2}
+
+One always has
 \[
 N_G(P)\subseteq N_G(N_G(P)).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every subgroup is normal in its own normalizer. Applying this to the subgroup \(N_G(P)\le G\) gives \(N_G(P)\trianglelefteq N_G(N_G(P))\), hence the displayed inclusion.
+
 :::
 
-<1>3. If \(x\in N_G(N_G(P))\), then
+:::
+
+::: {.pf-step #s3}
+
+If \(x\in N_G(N_G(P))\), then
 \[
 xPx^{-1}=P.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because \(x\) normalizes \(N_G(P)\),
 \[
 xN_G(P)x^{-1}=N_G(P).
 \]
-Since \(P\le N_G(P)\), this implies \(xPx^{-1}\le N_G(P)\). Conjugation preserves order, so \(xPx^{-1}\) is a Sylow \(p\)-subgroup of \(N_G(P)\). By the uniqueness from <1>1, it must equal \(P\).
+Since \(P\le N_G(P)\), this implies \(xPx^{-1}\le N_G(P)\). Conjugation preserves order, so \(xPx^{-1}\) is a Sylow \(p\)-subgroup of \(N_G(P)\). By the uniqueness from step [](#s1){.pf-ref}, it must equal \(P\).
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 N_G(N_G(P))=N_G(P).
 \]
-::: {.proof}
-By <1>3, every element of \(N_G(N_G(P))\) normalizes \(P\), so
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, every element of \(N_G(N_G(P))\) normalizes \(P\), so
 \[
 N_G(N_G(P))\subseteq N_G(P).
 \]
-Step <1>2 gives the reverse inclusion.
+Step [](#s2){.pf-ref} gives the reverse inclusion.
+
 :::
+
+:::
+
+:::
+
 :::

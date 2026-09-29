@@ -44,9 +44,14 @@ For sheaves of modules $\mathcal A,\mathcal B$ on $X$, the sections of $\sheafho
 Here $\OO_U=\OO_X|_U$; in particular $\Hom_{\OO_X}(\mathcal A,\mathcal B)$ is the module of global sections of this sheaf [@Har10a, Chapter II, §5].
 Tensor products in parts (a)-(c) are over $\OO_X$.
 
-<1>1. For part (a), the evaluation morphism $\delta:\mce\dualof{\to(\dualof{\mce})}$ is an isomorphism.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For part (a), the evaluation morphism $\delta:\mce\dualof{\to(\dualof{\mce})}$ is an isomorphism.
+
+::: pf-proof
+
 For an open set $U$ and $e\in\mce(U)$, define $\delta_U(e)$ by the compatible maps
 $$
 \dualof{\mce}(V)\longrightarrow\OO_X(V),
@@ -64,11 +69,17 @@ $$
 is inverse to $\delta_V$.
 Thus $\delta$ is locally, and hence globally, an isomorphism.
 The defining evaluation formula commutes with morphisms of locally free sheaves, so it is natural and does not depend on the frames used to verify it.
+
 :::
 
-<1>2. For part (b), the morphism $\beta:\dualof{\mce}\otimes\mcf\to\sheafhom_{\OO_X}(\mce,\mcf)$ defined by evaluation and scalar multiplication is an isomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For part (b), the morphism $\beta:\dualof{\mce}\otimes\mcf\to\sheafhom_{\OO_X}(\mce,\mcf)$ defined by evaluation and scalar multiplication is an isomorphism.
+
+::: pf-proof
+
 For $\lambda\in\dualof{\mce}(U)$ and $s\in\mcf(U)$, define $\beta_U(\lambda\otimes s)$ on each $V\subseteq U$ by
 $$
 e\longmapsto\lambda_V(e)s|_V,
@@ -85,11 +96,17 @@ Evaluation on the frame proves that applying $\beta$ to this section recovers $\
 Conversely, the identity $\lambda=\sum_j\lambda(e_j)\dualof{e_j}$ proves that the reverse composite fixes every local elementary tensor, and these tensors locally generate the tensor product sheaf.
 Thus $\beta$ is an isomorphism.
 Its evaluation formula commutes with precomposition in $\mce$ and postcomposition in $\mcf$, giving naturality.
+
 :::
 
-<1>3. For part (c), currying gives the natural tensor–Hom adjunction.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+For part (c), currying gives the natural tensor–Hom adjunction.
+
+::: pf-proof
+
 Given an $\OO_X$-linear morphism $\varphi:\mce\otimes\mcf\to\mcg$, define
 $$
 C(\varphi):\mcf\longrightarrow\sheafhom_{\OO_X}(\mce,\mcg)
@@ -114,16 +131,22 @@ $$
 \sheafhom_{\OO_X}(\mce\otimes\mcf,\mcg)
 \cong\sheafhom_{\OO_X}\bigl(\mcf,\sheafhom_{\OO_X}(\mce,\mcg)\bigr).
 $$
+
 :::
 
-<1>4. For part (d), the canonical projection morphism
+:::
+
+::: {.pf-step #s4}
+
+For part (d), the canonical projection morphism
 $$
 \pi:f_*\mcf\otimes_{\OO_Y}\mce
 \longrightarrow f_*\bigl(\mcf\otimes_{\OO_X}f^*\mce\bigr)
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 For an open set $U\subseteq Y$, a section $s\in\mcf(f^{-1}U)$, and a section $e\in\mce(U)$, let $f^*e\in(f^*\mce)(f^{-1}U)$ denote its pullback.
 The rule $s\otimes e\mapsto s\otimes f^*e$ is balanced over $\OO_Y(U)$ and compatible with restriction.
 Sheafification therefore gives $\pi$.
@@ -134,11 +157,17 @@ Tensoring with either finite free sheaf takes the corresponding finite direct su
 Thus both the source and target of $\pi|_U$ identify with $(f_*\mcf|_U)^{\oplus r}$.
 On these identifications $\pi|_U$ is the identity, since each frame section pulls back to the corresponding frame section.
 It follows that $\pi$ is an isomorphism on $Y$, and its inverse gives the displayed direction in part (d). The defining formula commutes with morphisms of $\mcf$ and $\mce$, so the isomorphism is natural.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, <1>3, and <1>4 prove parts (a), (b), (c), and (d), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove parts (a), (b), (c), and (d), respectively.
+
+:::
+
+:::
+
 :::

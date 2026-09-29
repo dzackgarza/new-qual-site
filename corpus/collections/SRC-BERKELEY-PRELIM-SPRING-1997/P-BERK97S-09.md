@@ -30,9 +30,14 @@ is a ring homomorphism, show that $h$ is either injective or zero.
 Let $E_{ij}$ denote the standard matrix unit with a $1$ in position
 $(i,j)$ and zeros elsewhere.
 
-<1>1. Every nonzero two-sided ideal of $R=M_n(F)$ is all of $R$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every nonzero two-sided ideal of $R=M_n(F)$ is all of $R$.
+
+::: pf-proof
+
 Let $I\subseteq R$ be a nonzero two-sided ideal and choose
 $$
 0\neq A=(a_{rs})\in I.
@@ -47,11 +52,17 @@ $$
 I_n=E_{11}+\cdots+E_{nn}\in I.
 $$
 Since an ideal containing the identity is the whole ring, $I=R$.
+
 :::
 
-<1>2. The kernel of $h$ is a two-sided ideal of $R$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The kernel of $h$ is a two-sided ideal of $R$.
+
+::: pf-proof
+
 The kernel is an additive subgroup. If $A\in\ker h$ and $B\in R$, then
 $$
 h(BA)=h(B)h(A)=0,
@@ -59,15 +70,21 @@ h(BA)=h(B)h(A)=0,
 h(AB)=h(A)h(B)=0.
 $$
 Thus $BA,AB\in\ker h$.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{h=0\quad\text{or}\quad h\text{ is injective}}.
 $$
 
-::: {.proof}
-By step <1>2, $\ker h$ is a two-sided ideal of $R$, so step <1>1 gives
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $\ker h$ is a two-sided ideal of $R$, so step [](#s1){.pf-ref} gives
 $$
 \ker h=R
 \qquad\text{or}\qquad
@@ -75,11 +92,17 @@ $$
 $$
 In the first case $h$ is the zero homomorphism. In the second case $h$ is
 injective.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required dichotomy.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required dichotomy.
+
+:::
+
+:::
+
 :::

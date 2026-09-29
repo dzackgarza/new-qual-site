@@ -48,8 +48,15 @@ having exactly one fixed point.
 :::
 
 ::: {.solution}
-<1>1. Every degree-one map $f:S^2\to S^2$ has a fixed point.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every degree-one map $f:S^2\to S^2$ has a fixed point.
+
+::: pf-proof
+
 With rational coefficients,
 \[
 H_i(S^2;\QQ)\cong
@@ -68,10 +75,17 @@ L(f)
 =2.
 \]
 Since $L(f)\neq0$, the Lefschetz fixed point theorem implies that $f$ has a fixed point.
+
 :::
 
-<1>2. A nonzero translation of $\RR^2$ has no fixed points.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A nonzero translation of $\RR^2$ has no fixed points.
+
+::: pf-proof
+
 For example, define
 \[
 T:\RR^2\longrightarrow\RR^2,
@@ -80,9 +94,14 @@ T(x,y)=(x+1,y).
 \]
 If $T(x,y)=(x,y)$, then $x+1=x$, which is impossible.
 Thus $T$ is fixed-point-free.
+
 :::
 
-<1>3. The translation $T$ extends to a homeomorphism
+:::
+
+::: pf-step
+
+The translation $T$ extends to a homeomorphism
 \[
 \widehat T:S^2\longrightarrow S^2
 \]
@@ -94,7 +113,9 @@ by setting
 \[
 \widehat T(\infty)=\infty.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The translation $T$ is a homeomorphism and is proper: if $K\subset\RR^2$ is compact, then
 \[
 T^{-1}(K)=K-(1,0)
@@ -113,10 +134,17 @@ of $\infty$ in the one-point compactification,
 which is again a neighborhood of $\infty$.
 Thus the extension is continuous at $\infty$ as well as on $\RR^2$.
 The same argument applies to $T^{-1}$, so $\widehat T$ is a homeomorphism.
+
 :::
 
-<1>4. The map $\widehat T$ has degree $1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The map $\widehat T$ has degree $1$.
+
+::: pf-proof
+
 For $s\in[0,1]$, let
 \[
 T_s(x,y)=(x+s,y).
@@ -152,11 +180,18 @@ Degree is invariant under homotopy, so
 \deg\operatorname{id}_{S^2}
 =1.
 \]
+
 :::
 
-<1>5. The map $\widehat T$ has exactly one fixed point.
-::: {.proof}
-By <1>2, it has no fixed point in the open subset $\RR^2\subset S^2$.
+:::
+
+::: pf-step
+
+The map $\widehat T$ has exactly one fixed point.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, it has no fixed point in the open subset $\RR^2\subset S^2$.
 By definition,
 \[
 \widehat T(\infty)=\infty.
@@ -165,6 +200,12 @@ Hence its fixed-point set is exactly
 \[
 \{\infty\}.
 \]
-Together with <1>4, this gives the required degree-one example for part (iii).
+Together with step [](#s4){.pf-ref}, this gives the required degree-one example for part (iii).
+
 :::
+
+:::
+
+:::
+
 :::

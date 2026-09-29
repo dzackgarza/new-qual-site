@@ -41,8 +41,14 @@ $$
 G=\operatorname{Gal}(f/\mathbf Q)\le S_5.
 $$
 
-<1>1. Modulo $2$, the polynomial factors as an irreducible quadratic times an irreducible cubic.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Modulo $2$, the polynomial factors as an irreducible quadratic times an irreducible cubic.
+
+::: pf-proof
+
 Reducing modulo $2$ gives
 $$
 \overline f(X)=X^5+X+1.
@@ -67,15 +73,22 @@ fact from the sheet, $G$ contains an element with disjoint cycle structure
 $$
 (2)(3).
 $$
+
 :::
 
-<1>2. The group $G$ contains a transposition.
-::: {.proof}
+:::
+
+::: pf-step
+
+The group $G$ contains a transposition.
+
+::: pf-proof
+
 Let
 $$
 \sigma=(ab)(cde)\in G
 $$
-be the element supplied by step <1>1. Since the two cycles are disjoint,
+be the element supplied by step [](#s1){.pf-ref}. Since the two cycles are disjoint,
 $$
 \sigma^3
 =(ab)^3(cde)^3
@@ -85,10 +98,17 @@ Thus
 $$
 \boxed{G\text{ contains a transposition}.}
 $$
+
 :::
 
-<1>3. Modulo $3$, the polynomial is irreducible.
-::: {.proof}
+:::
+
+::: pf-step
+
+Modulo $3$, the polynomial is irreducible.
+
+::: pf-proof
+
 Modulo $3$,
 $$
 \overline f(X)=X^5+2X+2.
@@ -120,10 +140,17 @@ respectively. Hence none divides $\overline f$.
 Therefore $\overline f$ is irreducible of degree five over $\mathbf F_3$.
 In particular it is separable, and the cycle-type fact gives a $5$-cycle in
 $G$.
+
 :::
 
-<1>4. A subgroup of $S_5$ containing a $5$-cycle and a transposition is all of $S_5$.
-::: {.proof}
+:::
+
+::: pf-step
+
+A subgroup of $S_5$ containing a $5$-cycle and a transposition is all of $S_5$.
+
+::: pf-proof
+
 After relabeling the five roots, write the $5$-cycle as
 $$
 \rho=(1\,2\,3\,4\,5)
@@ -153,5 +180,11 @@ Therefore
 $$
 \boxed{\operatorname{Gal}(X^5-X-1/\mathbf Q)\cong S_5.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

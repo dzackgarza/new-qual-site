@@ -35,14 +35,20 @@ Prove or disprove that $X$ is connected.
 ::: {.solution}
 The space $X$ is not connected.
 
-<1>1. Let
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 \[
 U=\{(x,y)\in\RR^2:y<\sqrt2\,x\},
 \qquad
 V=\{(x,y)\in\RR^2:y>\sqrt2\,x\}.
 \]
 Then $U$ and $V$ are disjoint open subsets of $\RR^2$.
-::: {.proof}
+
+::: pf-proof
+
 The map
 \[
 g:\RR^2\longrightarrow\RR,
@@ -56,17 +62,24 @@ U=g^{-1}((-\infty,0)),
 V=g^{-1}((0,\infty)).
 \]
 Thus both sets are open, and their defining inequalities make them disjoint.
+
 :::
 
-<1>2. The subsets
+:::
+
+::: {.pf-step #s2}
+
+The subsets
 \[
 A=X\cap U,
 \qquad
 B=X\cap V
 \]
 are disjoint open subsets of $X$ whose union is $X$.
-::: {.proof}
-They are open in $X$ by the definition of the subspace topology and are disjoint by <1>1. Now let $(x,y)\in X$.
+
+::: pf-proof
+
+They are open in $X$ by the definition of the subspace topology and are disjoint by step [](#s1){.pf-ref}. Now let $(x,y)\in X$.
 Because $x>0$ and $y/x\in\QQ$, while $\sqrt2\notin\QQ$, one has
 \[
 \frac yx\neq\sqrt2.
@@ -83,10 +96,17 @@ Thus every point of $X$ lies in $A$ or $B$, so
 \[
 X=A\cup B.
 \]
+
 :::
 
-<1>3. Both $A$ and $B$ are nonempty.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Both $A$ and $B$ are nonempty.
+
+::: pf-proof
+
 The point $(1,1)$ belongs to $X$ and satisfies
 \[
 1<\sqrt2,
@@ -97,11 +117,24 @@ Likewise, $(1,2)\in X$ and
 2>\sqrt2,
 \]
 so $(1,2)\in B$.
+
 :::
 
-<1>4. Therefore $X$ is disconnected.
-::: {.proof}
-By <1>2 and <1>3, $A$ and $B$ form a separation of $X$ into two disjoint nonempty open subsets.
-Hence $X$ is not connected.
 :::
+
+::: pf-step
+
+Therefore $X$ is disconnected.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $A$ and $B$ form a separation of $X$ into two disjoint nonempty open subsets.
+Hence $X$ is not connected.
+
+:::
+
+:::
+
+:::
+
 :::

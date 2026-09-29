@@ -29,21 +29,41 @@ Prove that $R$ is a field.
 :::
 
 ::: {.solution}
-<1>1. Every nonzero element generates the unit ideal.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every nonzero element generates the unit ideal.
+
+::: pf-proof
+
 Let $a\in R$ with $a\ne0$. The principal ideal $(a)$ contains $a$, so $(a)\ne(0)$. By hypothesis, the only ideals are $(0)$ and $R$. Therefore
 $$
 (a)=R.
 $$
 In particular $1\in(a)$.
+
 :::
 
-<1>2. Every nonzero element is invertible.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every nonzero element is invertible.
+
+::: pf-proof
+
 Since $1\in(a)$, there exists $b\in R$ such that
 $$
 ba=1.
 $$
 Because $R$ is commutative, also $ab=1$. Thus every nonzero $a\in R$ has a multiplicative inverse. Since $R$ is nonzero and has an identity, this is exactly the definition of a field.
+
 :::
+
+:::
+
+:::
+
 :::

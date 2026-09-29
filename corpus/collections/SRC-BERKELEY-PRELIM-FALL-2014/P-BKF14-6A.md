@@ -38,18 +38,28 @@ Let $V=\FF_3^4$ and fix a nondegenerate skew-symmetric bilinear form
 $\omega$ on $V$. Since the characteristic is not $2$, $\omega$ is
 alternating.
 
-<1>1. The number of choices for the first vector $e_1$ of a symplectic
+::: pf
+
+::: {.pf-step #s1}
+
+The number of choices for the first vector $e_1$ of a symplectic
 basis is
 $$
 3^4-1=80.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The vector $e_1$ may be any nonzero vector of the $4$-dimensional
 space $V$, which has $3^4$ elements.
+
 :::
 
-<1>2. Once $e_1$ is chosen, the number of vectors $f_1$ satisfying
+:::
+
+::: {.pf-step #s2}
+
+Once $e_1$ is chosen, the number of vectors $f_1$ satisfying
 $$
 \omega(e_1,f_1)=1
 $$
@@ -58,7 +68,8 @@ $$
 3^3=27.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Nondegeneracy implies that the linear functional
 $$
 V\longrightarrow\FF_3,
@@ -67,16 +78,22 @@ v\longmapsto\omega(e_1,v)
 $$
 is nonzero. It is therefore surjective, and its kernel has dimension
 $3$. Every fiber has $3^3$ elements.
+
 :::
 
-<1>3. Put $U_1=\operatorname{span}\{e_1,f_1\}$. Then $U_1$ is
+:::
+
+::: {.pf-step #s3}
+
+Put $U_1=\operatorname{span}\{e_1,f_1\}$. Then $U_1$ is
 nondegenerate and
 $$
 W\coloneqq U_1^\perp
 $$
 is a $2$-dimensional nondegenerate symplectic subspace.
 
-::: {.proof}
+::: pf-proof
+
 In the basis $(e_1,f_1)$, the restriction of $\omega$ to $U_1$ has
 matrix
 $$
@@ -93,9 +110,14 @@ $$
 and $\dim W=2$. If a vector of $W$ is orthogonal to all of $W$, it is
 also orthogonal to $U_1$, hence to all of $V$; nondegeneracy of
 $\omega$ forces it to be zero. Thus $\omega|_W$ is nondegenerate.
+
 :::
 
-<1>4. The number of choices for $e_2\in W\setminus\{0\}$ is
+:::
+
+::: {.pf-step #s4}
+
+The number of choices for $e_2\in W\setminus\{0\}$ is
 $$
 3^2-1=8,
 $$
@@ -108,14 +130,20 @@ $$
 3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first count is the number of nonzero vectors in the
 $2$-dimensional space $W$. For the second, nondegeneracy of
 $\omega|_W$ makes $w\mapsto\omega(e_2,w)$ a nonzero linear functional
 on $W$. Its fibers therefore have cardinality $3^{2-1}=3$.
+
 :::
 
-<1>5. The order of the group preserving $\omega$ is
+:::
+
+::: {.pf-step #s5}
+
+The order of the group preserving $\omega$ is
 $$
 \boxed{
 |\operatorname{Sp}_4(\FF_3)|
@@ -124,8 +152,9 @@ $$
 }
 $$
 
-::: {.proof}
-Steps <1>1--<1>4 count exactly the ordered symplectic bases
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} count exactly the ordered symplectic bases
 $(e_1,f_1,e_2,f_2)$ of $(V,\omega)$. Given one fixed symplectic basis,
 each $\omega$-preserving automorphism is uniquely determined by its
 image basis, and every symplectic basis occurs in this way. Hence the
@@ -138,34 +167,46 @@ $$
 =
 51\,840.
 $$
+
 :::
 
-<1>6. The group $\operatorname{GL}_4(\FF_3)$ acts transitively on the
+:::
+
+::: {.pf-step #s6}
+
+The group $\operatorname{GL}_4(\FF_3)$ acts transitively on the
 set of nondegenerate skew-symmetric bilinear forms on $V$, and the
 stabilizer of $\omega$ is $\operatorname{Sp}_4(\FF_3)$.
 
-::: {.proof}
+::: pf-proof
+
 Every nondegenerate alternating form admits a symplectic basis by the
-construction in steps <1>1--<1>4. Sending a symplectic basis for one
+construction in steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref}. Sending a symplectic basis for one
 form to a symplectic basis for another gives an element of
 $\operatorname{GL}_4(\FF_3)$ carrying one form to the other. Thus the
 action is transitive. By definition, the stabilizer of $\omega$ is the
 group of linear automorphisms preserving $\omega$.
+
 :::
 
-<1>7. The number of nondegenerate skew-symmetric bilinear forms on $V$
+:::
+
+::: {.pf-step #s7}
+
+The number of nondegenerate skew-symmetric bilinear forms on $V$
 is
 $$
 \boxed{468}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The order of the general linear group is
 $$
 |\operatorname{GL}_4(\FF_3)|
 =(3^4-1)(3^4-3)(3^4-3^2)(3^4-3^3).
 $$
-By orbit-stabilizer and steps <1>5--<1>6, the number of forms is
+By orbit-stabilizer and steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, the number of forms is
 $$
 \begin{aligned}
 \frac{|\operatorname{GL}_4(\FF_3)|}
@@ -184,11 +225,17 @@ $$
 468.
 \end{aligned}
 $$
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>5 and <1>7 give the two requested numbers.
 :::
+
+::: pf-qed
+
+Steps [](#s5){.pf-ref} and [](#s7){.pf-ref} give the two requested numbers.
+
+:::
+
+:::
+
 :::

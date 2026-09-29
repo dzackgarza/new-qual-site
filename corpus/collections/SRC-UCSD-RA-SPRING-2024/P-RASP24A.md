@@ -32,8 +32,15 @@ Show that $f$ is Borel measurable, find all its points of discontinuity, and fin
 :::
 
 ::: {.solution}
-<1>1. Prove Borel measurability.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove Borel measurability.
+
+::: pf-proof
+
 For each $n$,
 \[
 \mathbf 1_{(r_n,\infty)}(x)
@@ -48,10 +55,17 @@ Hence
 f(x)=\sum_{n=1}^\infty 2^{-n}\mathbf 1_{(r_n,\infty)}(x).
 \]
 Each summand is Borel measurable, and the partial sums increase pointwise to $f$. Therefore $f$ is Borel measurable.
+
 :::
 
-<1>2. Determine the discontinuity set.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the discontinuity set.
+
+::: pf-proof
+
 Fix $a\in\mathbb R$. Since the series is absolutely and uniformly bounded by
 \[
 \sum_{n=1}^\infty2^{-n}=1,
@@ -73,10 +87,17 @@ This quantity is positive exactly when $a=r_n$ for at least one $n$. Therefore t
 \boxed{\{r_n:n\ge1\}},
 \]
 where repetitions are ignored.
+
 :::
 
-<1>3. Compute the integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the integral.
+
+::: pf-proof
+
 The summands are nonnegative, so Tonelli's theorem gives
 \[
 \begin{aligned}
@@ -91,5 +112,11 @@ Hence
 \boxed{\int_0^1 f(x)\,dx
 =\sum_{n=1}^\infty\frac{1-r_n}{2^n}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -53,12 +53,17 @@ A=\diag(\lambda_1,\ldots,\lambda_n),
 $$
 Write $B=(b_{ij})$ in the same basis.
 
-<1>1. If $\lambda_i>0$ or $\lambda_j>0$, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $\lambda_i>0$ or $\lambda_j>0$, then
 $$
 b_{ij}=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $(i,j)$-entry of
 $$
 AB+BA=0
@@ -73,39 +78,57 @@ $$
 \lambda_i+\lambda_j>0.
 $$
 Therefore $b_{ij}=0$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 AB=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $(i,j)$-entry of $AB$ is
 $$
 \lambda_i b_{ij}.
 $$
-If $\lambda_i=0$, this entry is zero. If $\lambda_i>0$, step <1>1 gives
+If $\lambda_i=0$, this entry is zero. If $\lambda_i>0$, step [](#s1){.pf-ref} gives
 $b_{ij}=0$. Thus every entry of $AB$ is zero.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 BA=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $(i,j)$-entry of $BA$ is
 $$
 b_{ij}\lambda_j.
 $$
-If $\lambda_j=0$, this entry is zero. If $\lambda_j>0$, step <1>1 gives
+If $\lambda_j=0$, this entry is zero. If $\lambda_j>0$, step [](#s1){.pf-ref} gives
 $b_{ij}=0$. Thus every entry of $BA$ is zero.
+
 :::
 
-<1>4. Neither matrix need be zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Neither matrix need be zero.
+
+::: pf-proof
+
 For example, in dimension $2$ take
 $$
 A=
@@ -125,12 +148,18 @@ and
 $$
 AB=BA=0.
 $$
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2 and <1>3 prove the required vanishing, and step <1>4 supplies the
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the required vanishing, and step [](#s4){.pf-ref} supplies the
 requested example.
+
 :::
+
+:::
+
 :::

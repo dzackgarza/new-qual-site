@@ -39,13 +39,19 @@ Prove that the sequence $(a_n)$ tends to the unique root of $f(x)=x$ in $I$.
 :::
 
 ::: {.solution}
-<1>1. Under the hypotheses of part (a), the equation
+
+::: pf
+
+::: {.pf-step #s1}
+
+Under the hypotheses of part (a), the equation
 $$
 f(x)=x
 $$
 has at least one solution in $I$.
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 I=[\alpha,\beta].
@@ -63,11 +69,17 @@ $$
 h(x)\coloneqq f(x)-x
 $$
 therefore has a zero in $I$ by the intermediate value theorem.
+
 :::
 
-<1>2. The fixed point of $f$ in $I$ is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The fixed point of $f$ in $I$ is unique.
+
+::: pf-proof
+
 Suppose
 $$
 f(x)=x,
@@ -88,9 +100,14 @@ This contradicts
 $$
 |f'(c)|\le r<1.
 $$
+
 :::
 
-<1>3. If $p$ is the unique fixed point from steps <1>1--<1>2, then
+:::
+
+::: {.pf-step #s3}
+
+If $p$ is the unique fixed point from steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, then
 $$
 |a_{n+1}-p|
 \le
@@ -98,7 +115,8 @@ r|a_n-p|
 $$
 for every $n\ge0$.
 
-::: {.proof}
+::: pf-proof
+
 Since $a_n,p\in I$, the mean value theorem gives a point between them
 at which
 $$
@@ -113,12 +131,18 @@ a_{n+1}=f(a_n)
 f(p)=p
 $$
 gives the claim.
+
 :::
 
-<1>4. The sequence in part (a) converges to $p$.
+:::
 
-::: {.proof}
-Iterating step <1>3 gives
+::: {.pf-step #s4}
+
+The sequence in part (a) converges to $p$.
+
+::: pf-proof
+
+Iterating step [](#s3){.pf-ref} gives
 $$
 |a_n-p|
 \le
@@ -133,14 +157,20 @@ $$
 a_n\longrightarrow p.
 $$
 This proves part (a).
+
 :::
 
-<1>5. For the cosine iteration, after two steps one has
+:::
+
+::: {.pf-step #s5}
+
+For the cosine iteration, after two steps one has
 $$
 a_2\in[\cos1,1].
 $$
 
-::: {.proof}
+::: pf-proof
+
 For arbitrary real $a_0$,
 $$
 a_1=\cos(a_0)\in[-1,1].
@@ -150,9 +180,14 @@ $\cos1$ and $1$. Therefore
 $$
 a_2=\cos(a_1)\in[\cos1,1].
 $$
+
 :::
 
-<1>6. Put
+:::
+
+::: {.pf-step #s6}
+
+Put
 $$
 c\coloneqq\cos1,
 \qquad
@@ -167,8 +202,9 @@ a_3\in J
 \cos(J)\subseteq J.
 $$
 
-::: {.proof}
-By step <1>5,
+::: pf-proof
+
+By step [](#s5){.pf-ref},
 $$
 a_2\in[c,1].
 $$
@@ -202,9 +238,14 @@ $$
 c<\cos d\le\cos x\le d,
 $$
 which proves $\cos(J)\subseteq J$.
+
 :::
 
-<1>7. On $J$,
+:::
+
+::: {.pf-step #s7}
+
+On $J$,
 $$
 |\cos'(x)|
 \le
@@ -213,8 +254,9 @@ $$
 1.
 $$
 
-::: {.proof}
-The interval $J$ lies in $(0,1)$ by step <1>6. Therefore
+::: pf-proof
+
+The interval $J$ lies in $(0,1)$ by step [](#s6){.pf-ref}. Therefore
 $$
 |\cos'(x)|
 =
@@ -226,21 +268,27 @@ Since $d<1<\pi/2$,
 $$
 \sin d<1.
 $$
+
 :::
 
-<1>8. The cosine iteration converges to the unique solution of
+:::
+
+::: {.pf-step #s8}
+
+The cosine iteration converges to the unique solution of
 $$
 \cos x=x
 $$
 in $J$.
 
-::: {.proof}
-By steps <1>6--<1>7, the function
+::: pf-proof
+
+By steps [](#s6){.pf-ref} and [](#s7){.pf-ref}, the function
 $$
 f(x)=\cos x
 $$
 maps the closed interval $J$ into itself and satisfies the derivative
-bound required in part (a). Starting from $a_3\in J$, step <1>4 shows
+bound required in part (a). Starting from $a_3\in J$, step [](#s4){.pf-ref} shows
 that the tail
 $$
 a_3,a_4,\ldots
@@ -248,11 +296,17 @@ $$
 converges to the unique fixed point of cosine in $J$. A finite initial
 segment does not affect convergence, so the whole sequence $(a_n)$ has
 the same limit.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves part (a), and step <1>8 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (a), and step [](#s8){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

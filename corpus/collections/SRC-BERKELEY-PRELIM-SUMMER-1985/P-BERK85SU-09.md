@@ -34,10 +34,16 @@ u''(x)=e^x u(x).
 :::
 
 ::: {.solution}
-<1>1. Part 1: $u$ cannot have a positive local maximum at an interior
+
+::: pf
+
+::: {.pf-step #s1}
+
+Part 1: $u$ cannot have a positive local maximum at an interior
 point.
 
-::: {.proof}
+::: pf-proof
+
 Suppose $0<x_0<1$ and $u$ has a positive local maximum at $x_0$.
 Since $u$ is $C^2$, the second-derivative test gives
 $$
@@ -52,12 +58,18 @@ e^{x_0}u(x_0)
 0,
 $$
 because $e^{x_0}>0$ and $u(x_0)>0$. This is a contradiction.
+
 :::
 
-<1>2. Part 1: $u$ cannot have a negative local minimum at an interior
+:::
+
+::: {.pf-step #s2}
+
+Part 1: $u$ cannot have a negative local minimum at an interior
 point.
 
-::: {.proof}
+::: pf-proof
+
 Suppose $0<x_0<1$ and $u$ has a negative local minimum at $x_0$.
 The second-derivative test gives
 $$
@@ -72,42 +84,66 @@ e^{x_0}u(x_0)
 0,
 $$
 since $u(x_0)<0$. This is again a contradiction.
+
 :::
 
-<1>3. Under the additional hypothesis $u(0)=u(1)=0$, the function
+:::
+
+::: {.pf-step #s3}
+
+Under the additional hypothesis $u(0)=u(1)=0$, the function
 $u$ cannot take a positive value.
 
-::: {.proof}
+::: pf-proof
+
 If $u(x)>0$ for some $x\in(0,1)$, continuity on the compact interval
 $[0,1]$ gives a point $x_0$ where $u$ attains its maximum. That
 maximum is positive. Since the endpoint values are both $0$, the
 maximizer satisfies $0<x_0<1$. It is therefore a positive local
-maximum, contradicting step <1>1.
+maximum, contradicting step [](#s1){.pf-ref}.
+
 :::
 
-<1>4. Under the same boundary conditions, the function $u$ cannot
+:::
+
+::: {.pf-step #s4}
+
+Under the same boundary conditions, the function $u$ cannot
 take a negative value.
 
-::: {.proof}
+::: pf-proof
+
 If $u(x)<0$ for some $x\in(0,1)$, continuity gives a point $x_0$
 where $u$ attains its minimum on $[0,1]$. That minimum is negative,
 so the zero endpoint values force $0<x_0<1$. This is a negative local
-minimum, contradicting step <1>2.
+minimum, contradicting step [](#s2){.pf-ref}.
+
 :::
 
-<1>5. Part 2 gives
+:::
+
+::: {.pf-step #s5}
+
+Part 2 gives
 $$
 \boxed{u(x)\equiv0\text{ on }[0,1]}.
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4, $u$ takes neither positive nor negative
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $u$ takes neither positive nor negative
 values. Hence $u(x)=0$ for every $x\in[0,1]$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 prove part 1, and step <1>5 proves part 2.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part 1, and step [](#s5){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

@@ -46,8 +46,14 @@ $$
 \boxed{\chi_A(A)=0.}
 $$
 
-<1>1. Expand the adjugate identity over $F[t]$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Expand the adjugate identity over $F[t]$.
+
+::: pf-proof
+
 Write
 $$
 \operatorname{adj}(tI-A)=B_{n-1}t^{n-1}+\cdots+B_0.
@@ -67,10 +73,17 @@ and
 $$
 -AB_0=c_0I.
 $$
+
 :::
 
-<1>2. Solve the recurrence and conclude.
-::: {.proof}
+:::
+
+::: pf-step
+
+Solve the recurrence and conclude.
+
+::: pf-proof
+
 Starting from $B_{n-1}=I$ and descending through the recurrence gives
 $$
 B_0=A^{n-1}+c_{n-1}A^{n-2}+\cdots+c_1I.
@@ -83,5 +96,11 @@ This is exactly
 $$
 \boxed{\chi_A(A)=0.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

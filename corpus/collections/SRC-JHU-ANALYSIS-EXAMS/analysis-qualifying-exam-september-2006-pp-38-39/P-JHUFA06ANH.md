@@ -37,8 +37,15 @@ f(x)=1.
 :::
 
 ::: {.solution}
-<1>1. The norm satisfies the parallelogram identity.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The norm satisfies the parallelogram identity.
+
+::: pf-proof
+
 Apply the assumed inequality to the pair $x+y,x-y$. Since
 \[
 (x+y)+(x-y)=2x,
@@ -60,20 +67,34 @@ Combining this with the original inequality yields equality:
 \|x+y\|^2+\|x-y\|^2
 =2\|x\|^2+2\|y\|^2.
 \]
+
 :::
 
-<1>2. The norm comes from a Hilbert-space inner product.
-::: {.proof}
+:::
+
+::: pf-step
+
+The norm comes from a Hilbert-space inner product.
+
+::: pf-proof
+
 By the Jordan--von Neumann theorem, the parallelogram identity implies that
 \[
 \langle x,y\rangle
 =\frac14\bigl(\|x+y\|^2-\|x-y\|^2\bigr)
 \]
 defines a real inner product whose induced norm is the given norm. Since $X$ is complete for that norm, $X$ is a Hilbert space.
+
 :::
 
-<1>3. Riesz representation gives existence and uniqueness of the norming point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Riesz representation gives existence and uniqueness of the norming point.
+
+::: pf-proof
+
 By the Riesz representation theorem, there exists a unique $u\in X$ such that
 \[
 f(x)=\langle x,u\rangle
@@ -94,5 +115,11 @@ If $x\in X$ also satisfies $\|x\|=1$ and $f(x)=1$, then
 1=\langle x,u\rangle\le\|x\|\,\|u\|=1.
 \]
 Equality holds in Cauchy--Schwarz. In a real Hilbert space this forces $x$ and $u$ to be linearly dependent, and because both have norm $1$ and $\langle x,u\rangle=1$, one must have $x=u$. Thus the norming point is unique.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -33,44 +33,87 @@ Show that the composite function $f\circ g$ is also injective.
 ::: {.solution}
 **Goal:** Prove that if $A$ is a set and $f, g: A \to A$ are injective functions, then their composition $f \circ g: A \to A$ is injective.
 
-<1>1. Definition: A function $h: A \to A$ is injective if for all $x, y \in A$, $h(x) = h(y) \implies x = y$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Definition: A function $h: A \to A$ is injective if for all $x, y \in A$, $h(x) = h(y) \implies x = y$.
+
+::: pf-proof
+
 By the standard definition of injectivity.
+
 :::
 
-<1>2. Assume $f: A \to A$ and $g: A \to A$ are injective functions.
+:::
+
+::: {.pf-step #s2}
+
+Assume $f: A \to A$ and $g: A \to A$ are injective functions.
 Let $x, y \in A$ and assume $(f \circ g)(x) = (f \circ g)(y)$.
 
-::: {.proof}
-By setting up the hypothesis of the implication in <1>1 for $h = f \circ g$.
+::: pf-proof
+
+By setting up the hypothesis of the implication in step [](#s1){.pf-ref} for $h = f \circ g$.
+
 :::
 
-<1>3. $f(g(x)) = f(g(y))$.
-
-::: {.proof}
-By definition of function composition, $(f \circ g)(x) = f(g(x))$ and $(f \circ g)(y) = f(g(y))$, so this follows from <1>2.
 :::
 
-<1>4. $g(x) = g(y)$.
+::: {.pf-step #s3}
 
-::: {.proof}
-By <1>2, $f$ is injective.
+$f(g(x)) = f(g(y))$.
+
+::: pf-proof
+
+By definition of function composition, $(f \circ g)(x) = f(g(x))$ and $(f \circ g)(y) = f(g(y))$, so this follows from step [](#s2){.pf-ref}.
+
 :::
-Applying the definition of injectivity to the elements $g(x), g(y) \in A$ with $f(g(x)) = f(g(y))$ from <1>3 yields $g(x) = g(y)$.
 
-<1>5. $x = y$.
-
-::: {.proof}
-By <1>2, $g$ is injective.
 :::
-Applying the definition of injectivity to $x, y \in A$ with $g(x) = g(y)$ from <1>4 yields $x = y$.
 
-<1>6. Conclusion: $f \circ g$ is injective.
+::: {.pf-step #s4}
 
-::: {.proof}
-We showed in <1>2–<1>5 that for all $x, y \in A$, $(f \circ g)(x) = (f \circ g)(y) \implies x = y$.
+$g(x) = g(y)$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $f$ is injective.
+
+Applying the definition of injectivity to the elements $g(x), g(y) \in A$ with $f(g(x)) = f(g(y))$ from step [](#s3){.pf-ref} yields $g(x) = g(y)$.
+
 :::
-By <1>1, $f \circ g$ is injective.
+
+:::
+
+::: {.pf-step #s5}
+
+$x = y$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $g$ is injective.
+
+Applying the definition of injectivity to $x, y \in A$ with $g(x) = g(y)$ from step [](#s4){.pf-ref} yields $x = y$.
+
+:::
+
+:::
+
+::: pf-step
+
+Conclusion: $f \circ g$ is injective.
+
+::: pf-proof
+
+We showed in steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} that for all $x, y \in A$, $(f \circ g)(x) = (f \circ g)(y) \implies x = y$.
+
+:::
+
+:::
+
+:::
+
+By step [](#s1){.pf-ref}, $f \circ g$ is injective.
 Q.E.D.
 :::

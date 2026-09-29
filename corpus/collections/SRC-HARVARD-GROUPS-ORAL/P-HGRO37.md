@@ -42,9 +42,15 @@ PSL_2(3)\cong A_4.
 Equivalently, if $N\trianglelefteq SL_n(q)$ is not contained in the center, then
 $N=SL_n(q)$, apart from the two exceptional pairs $(n,q)=(2,2),(2,3)$.
 
-<1>1. Reduce a noncentral normal subgroup to a subgroup containing a nontrivial
+::: pf
+
+::: {.pf-step #s1}
+
+Reduce a noncentral normal subgroup to a subgroup containing a nontrivial
 transvection.
-::: {.proof}
+
+::: pf-proof
+
 Let $N\trianglelefteq SL_n(q)$ contain a noncentral element $A$. One studies
 commutators of $A$ with elementary transvections
 \[
@@ -58,11 +64,18 @@ transvection in $N$.
 For $n=2$, the same reduction is carried out directly with $2\times2$ matrices;
 the very small fields $\mathbb F_2$ and $\mathbb F_3$ are exactly where the
 argument fails and yield the two exceptions.
+
 :::
 
-<1>2. A normal subgroup containing one nontrivial transvection contains all
+:::
+
+::: {.pf-step #s2}
+
+A normal subgroup containing one nontrivial transvection contains all
 elementary transvections.
-::: {.proof}
+
+::: pf-proof
+
 Conjugating by permutation and diagonal matrices in $SL_n(q)$ moves a
 transvection between coordinate pairs and changes its parameter. Commutator
 relations among elementary matrices then give
@@ -75,20 +88,34 @@ t_{ij}(a)t_{ij}(b)=t_{ij}(a+b).
 \]
 Normality therefore propagates one nontrivial transvection to the full family
 of elementary transvections required to generate $SL_n(q)$.
+
 :::
 
-<1>3. The elementary transvections generate $SL_n(q)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The elementary transvections generate $SL_n(q)$.
+
+::: pf-proof
+
 Gaussian elimination expresses every determinant-one matrix as a product of
 elementary matrices. Hence a normal subgroup containing all elementary
 transvections is the whole group $SL_n(q)$.
+
 :::
 
-<1>4. Therefore every proper normal subgroup of $SL_n(q)$ is central, outside
+:::
+
+::: pf-step
+
+Therefore every proper normal subgroup of $SL_n(q)$ is central, outside
 the two exceptional cases.
-::: {.proof}
-If a normal subgroup is not central, <1>1 gives a nontrivial transvection,
-<1>2 gives all elementary transvections, and <1>3 gives the whole group.
+
+::: pf-proof
+
+If a normal subgroup is not central, step [](#s1){.pf-ref} gives a nontrivial transvection,
+step [](#s2){.pf-ref} gives all elementary transvections, and step [](#s3){.pf-ref} gives the whole group.
 Quotienting by the center therefore leaves no nontrivial proper normal subgroup
 in $PSL_n(q)$.
 
@@ -99,5 +126,11 @@ PSL_2(2)\cong S_3
 PSL_2(3)\cong A_4,
 \]
 and neither group is simple.
+
 :::
+
+:::
+
+:::
+
 :::

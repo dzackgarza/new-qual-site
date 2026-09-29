@@ -31,8 +31,15 @@ Let $f:[0,1]\to\mathbb R$ be nondecreasing. Assume that $f$ is differentiable al
 :::
 
 ::: {.solution}
-<1>1. Fatou's lemma bounds the derivative integral by the total increase of $f$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fatou's lemma bounds the derivative integral by the total increase of $f$.
+
+::: pf-proof
+
 For $0<h<1$, define
 $$
 q_h(x)=\begin{cases}
@@ -72,10 +79,17 @@ Combining this with Fatou yields
 $$
 \boxed{\int_0^1 f'(x)\,dx\le f(1)-f(0)}.
 $$
+
 :::
 
-<1>2. Q.E.D.
-::: {.proof}
-Step <1>1 establishes the required integral inequality.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} establishes the required integral inequality.
+
+:::
+
+:::
+
 :::

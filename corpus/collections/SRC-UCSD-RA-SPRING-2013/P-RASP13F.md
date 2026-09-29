@@ -42,8 +42,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Fourier transform the equation.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Fourier transform the equation.
+
+::: pf-proof
+
 Use the convention
 \[
 \widehat v(z)=\int_{\mathbb R^n}e^{-2\pi i x\cdot z}v(x)\,dx.
@@ -67,10 +74,17 @@ and hence
 \[
 \boxed{\widehat u(z)=\frac{\widehat f(z)}{1+4\pi^2|z|^2}.}
 \]
+
 :::
 
-<1>2. Express the multiplier by Gaussian multipliers.
-::: {.proof}
+:::
+
+::: pf-step
+
+Express the multiplier by Gaussian multipliers.
+
+::: pf-proof
+
 For every $z$,
 \[
 \frac1{1+4\pi^2|z|^2}
@@ -89,10 +103,17 @@ Thus
 e^{-4\pi^2t|z|^2}\widehat f(z)
 =\widehat{H_t*f}(z).
 \]
+
 :::
 
-<1>3. Integrate the heat kernels and invert the transform.
-::: {.proof}
+:::
+
+::: pf-step
+
+Integrate the heat kernels and invert the transform.
+
+::: pf-proof
+
 Define
 \[
 v(x)=\int_0^\infty e^{-t}(H_t*f)(x)\,dt.
@@ -119,5 +140,11 @@ u(x)=\int_0^\infty\frac{e^{-t}}{(4\pi t)^{n/2}}
 \int_{\mathbb R^n}e^{-|x-y|^2/(4t)}f(y)\,dy\,dt.}
 \]
 The right-hand side is the natural continuous representative of the solution.
+
 :::
+
+:::
+
+:::
+
 :::

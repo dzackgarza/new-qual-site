@@ -50,8 +50,15 @@ and $x$ may be chosen so that
 :::
 
 ::: {.solution}
-<1>1. Prove the finite orthogonal-projection identity and Bessel's inequality.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the finite orthogonal-projection identity and Bessel's inequality.
+
+::: pf-proof
+
 Set
 \[
 s_N:=\sum_{n=1}^N\langle x,u_n\rangle u_n.
@@ -92,10 +99,17 @@ for every $N$. Letting $N\to\infty$ gives
 \boxed{
 \sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2\le\|x\|^2.}
 \]
+
 :::
 
-<1>2. Reconstruct a vector from square-summable coefficients.
-::: {.proof}
+:::
+
+::: pf-step
+
+Reconstruct a vector from square-summable coefficients.
+
+::: pf-proof
+
 Let $(a_n)\in\ell^2$ and define
 \[
 S_N:=\sum_{n=1}^N a_nu_n.
@@ -126,10 +140,17 @@ Also
 \sum_{n=1}^{\infty}|a_n|^2.
 \]
 Thus $x$ has the required coefficients and norm.
+
 :::
 
-<1>3. Prove Parseval's identity when the orthonormal sequence is complete.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove Parseval's identity when the orthonormal sequence is complete.
+
+::: pf-proof
+
 Fix $x\in H$. By Bessel's inequality, the coefficient sequence
 \[
 a_n:=\langle x,u_n\rangle
@@ -150,5 +171,11 @@ Thus $x-s$ is orthogonal to every $u_k$. Completeness of the orthonormal sequenc
 \|x\|^2=
 \sum_{n=1}^{\infty}|\langle x,u_n\rangle|^2.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

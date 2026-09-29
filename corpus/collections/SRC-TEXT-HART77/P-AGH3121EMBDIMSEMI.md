@@ -35,20 +35,31 @@ is upper semicontinuous on the set of closed points of $Y$.
 :::
 
 ::: {.solution}
-<1>1. It is enough to prove the assertion on an affine neighbourhood
+
+::: pf
+
+::: {.pf-step #s1}
+
+It is enough to prove the assertion on an affine neighbourhood
 $$
 U=\Spec A
 $$
 of an arbitrary closed point $y\in Y$.
 
-::: {.proof}
+::: pf-proof
+
 Upper semicontinuity is local on the source. Since $Y$ is of finite type
 over $k$, every point has an affine neighbourhood of finite type over $k$.
 Thus it suffices to prove the required upper semicontinuity on the closed
 points of each such affine open.
+
 :::
 
-<1>2. Write
+:::
+
+::: {.pf-step #s2}
+
+Write
 $$
 A=k[x_1,\ldots,x_N]/I,
 \qquad
@@ -68,7 +79,8 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $k$ is algebraically closed and $A$ is of finite type over $k$,
 the residue field of every closed point $z$ is $k$. Let
 $$
@@ -121,16 +133,22 @@ $$
 N-\operatorname{rank}J(z),
 $$
 as claimed.
+
 :::
 
-<1>3. For every integer $q$, the subset of closed points
+:::
+
+::: {.pf-step #s3}
+
+For every integer $q$, the subset of closed points
 $$
 \{z\in U:\varphi(z)\ge q\}
 $$
 is closed in the subspace of closed points of $U$.
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \varphi(z)\ge q
 \quad\Longleftrightarrow\quad
@@ -152,27 +170,39 @@ vanishes at $z$. These minors are regular functions on $U$, so their
 common zero locus is closed. If $N-q<0$, the set is empty; if
 $N-q\ge\min\{r,N\}$, it is all of $U$. Thus the assertion holds for every
 $q$.
+
 :::
 
-<1>4. The function
+:::
+
+::: {.pf-step #s4}
+
+The function
 $$
 \varphi(y)=\dim_k(\mfm_y/\mfm_y^2)
 $$
 is upper semicontinuous on the closed points of $Y$.
 
-::: {.proof}
+::: pf-proof
+
 For an integer-valued function, upper semicontinuity is equivalent to the
 closedness of every superlevel set
 $$
 \{y:\varphi(y)\ge q\}.
 $$
-Step <1>3 proves this on every affine neighbourhood from step <1>1.
+Step [](#s3){.pf-ref} proves this on every affine neighbourhood from step [](#s1){.pf-ref}.
 Since the property is local, it holds on all of $Y$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required upper semicontinuity.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required upper semicontinuity.
+
+:::
+
+:::
+
 :::

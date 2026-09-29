@@ -47,9 +47,15 @@ d. Show that $\inverseof{g}(U) \to U$ is an isomorphism, completing the proof.
 :::
 
 ::: {.solution}
-<1>1. It is enough to prove the theorem when the underlying topological space of $X$ is irreducible.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+It is enough to prove the theorem when the underlying topological space of $X$ is irreducible.
+
+::: pf-proof
+
 Because $X$ is proper over the noetherian scheme $S$, it is noetherian.
 Let
 \[
@@ -127,12 +133,18 @@ g_i^{-1}(W_i)\xrightarrow{\sim}W_i.
 Hence $g^{-1}(W)\to W$ is an isomorphism.
 
 Thus the irreducible case implies the general case, including the nonreduced scheme structure on the dense open.
+
 :::
 
-<1>2. We now assume $X$ irreducible.
+:::
+
+::: {.pf-step #s2}
+
+We now assume $X$ irreducible.
 Every point $x\in X$ has an open neighborhood which is quasi-projective over $S$.
 
-::: {.proof}
+::: pf-proof
+
 Let $s\in S$ be the image of $x$.
 Choose an affine open neighborhood
 \[
@@ -184,19 +196,30 @@ is an open immersion and
 P_W\hookrightarrow\mathbb P^N_S
 \]
 is a closed immersion.  Hence $P_W$ is projective over $S$, and $W$ is quasi-projective over $S$.
+
 :::
 
-<1>3. There is a finite open cover
+:::
+
+::: {.pf-step #s3}
+
+There is a finite open cover
 \[
 X=U_1\cup\cdots\cup U_n
 \]
 such that every $U_i$ is quasi-projective over $S$.
 
-::: {.proof}
-The neighborhoods from <1>2 cover $X$.  Since $X$ is proper over $S$, it is of finite type, hence quasi-compact because $S$ is noetherian and the structure morphism is proper.  Thus finitely many of the quasi-projective neighborhoods suffice.
+::: pf-proof
+
+The neighborhoods from step [](#s2){.pf-ref} cover $X$.  Since $X$ is proper over $S$, it is of finite type, hence quasi-compact because $S$ is noetherian and the structure morphism is proper.  Thus finitely many of the quasi-projective neighborhoods suffice.
+
 :::
 
-<1>4. For each $i$, choose an open immersion
+:::
+
+::: {.pf-step #s4}
+
+For each $i$, choose an open immersion
 \[
 j_i:U_i\hookrightarrow P_i
 \]
@@ -207,27 +230,39 @@ U=\bigcap_{i=1}^nU_i
 \]
 is nonempty and dense in $X$.
 
-::: {.proof}
+::: pf-proof
+
 The first assertion is the definition of quasi-projectivity.
 
 Since $X$ is irreducible, every nonempty open subset is dense, and any finite intersection of nonempty open subsets is nonempty.  Thus the finite intersection $U$ is nonempty, open, and dense.
+
 :::
 
-<1>5. Put
+:::
+
+::: {.pf-step #s5}
+
+Put
 \[
 P=P_1\times_S\cdots\times_SP_n.
 \]
 Then $P$ is projective over $S$.
 
-::: {.proof}
+::: pf-proof
+
 Projective morphisms are stable under finite products by Hartshorne II.4.8 together with II.4.9.  Hence the structure morphism
 \[
 P\to S
 \]
 is projective.
+
 :::
 
-<1>6. The maps
+:::
+
+::: {.pf-step #s6}
+
+The maps
 \[
 U\hookrightarrow X,
 \qquad
@@ -247,13 +282,19 @@ X'\hookrightarrow Q
 \]
 be the scheme-theoretic image of $f$.
 
-::: {.proof}
+::: pf-proof
+
 The universal property of the fibre product gives the displayed morphism from its coordinate maps.
 
 Since $U$ is noetherian, the morphism $f$ is quasi-compact and quasi-separated.  Hartshorne II.3.11 therefore supplies its scheme-theoretic image, a closed subscheme $X'\subseteq Q$ through which $f$ factors minimally.
+
 :::
 
-<1>7. Let
+:::
+
+::: {.pf-step #s7}
+
+Let
 \[
 g:X'\to X,
 \qquad
@@ -262,7 +303,8 @@ h:X'\to P
 be the restrictions of the two projections from $Q=X\times_SP$.
 The morphism $h$ is proper.
 
-::: {.proof}
+::: pf-proof
+
 The projection
 \[
 Q=X\times_SP\longrightarrow P
@@ -279,9 +321,14 @@ The inclusion $X'\hookrightarrow Q$ is a closed immersion, hence proper.  Theref
 h:X'\to P
 \]
 is proper.
+
 :::
 
-<1>8. For each $i$, let
+:::
+
+::: {.pf-step #s8}
+
+For each $i$, let
 \[
 O_i=U_i\times_SP\subseteq Q.
 \]
@@ -291,15 +338,21 @@ X_i'=X'\cap O_i
 \]
 cover $X'$.
 
-::: {.proof}
+::: pf-proof
+
 The opens $U_i$ cover $X$, so their inverse images under the projection
 \[
 Q\to X
 \]
 cover $Q$.  Intersecting with the closed subscheme $X'$ gives an open cover of $X'$.
+
 :::
 
-<1>9. Let
+:::
+
+::: {.pf-step #s9}
+
+Let
 \[
 \pi_i:P\to P_i
 \]
@@ -316,20 +369,27 @@ G_i\to P
 \]
 is an open immersion.
 
-::: {.proof}
+::: pf-proof
+
 The morphism $G_i\to P$ is the base change of the open immersion
 \[
 j_i:U_i\hookrightarrow P_i
 \]
 along $\pi_i:P\to P_i$.  Open immersions are stable under base change.
+
 :::
 
-<1>10. There is a closed immersion
+:::
+
+::: {.pf-step #s10}
+
+There is a closed immersion
 \[
 G_i\hookrightarrow O_i=U_i\times_SP.
 \]
 
-::: {.proof}
+::: pf-proof
+
 The morphism is the graph of the composite
 \[
 U_i\xrightarrow{j_i}P_i
@@ -345,22 +405,28 @@ is a closed immersion because $P_i$ is separated over $S$; projective morphisms 
 G_i\hookrightarrow U_i\times_SP=O_i.
 \]
 Thus it is a closed immersion.
+
 :::
 
-<1>11. The image $f(U)$ is contained in every $G_i\subseteq O_i$, and consequently
+:::
+
+::: {.pf-step #s11}
+
+The image $f(U)$ is contained in every $G_i\subseteq O_i$, and consequently
 \[
 X_i'=X'\cap O_i
 \]
 is a closed subscheme of $G_i$.
 
-::: {.proof}
+::: pf-proof
+
 For $x\in U$, the $i$th projective coordinate of $f(x)$ is by definition $j_i(x)$.
 Hence
 \[
 f(U)\subseteq G_i.
 \]
 
-Inside the open scheme $O_i$, the subscheme $G_i$ is closed by <1>10.  The restriction of the scheme-theoretic image $X'$ to $O_i$ is the scheme-theoretic image of
+Inside the open scheme $O_i$, the subscheme $G_i$ is closed by step [](#s10){.pf-ref}.  The restriction of the scheme-theoretic image $X'$ to $O_i$ is the scheme-theoretic image of
 \[
 f^{-1}(O_i)=U\longrightarrow O_i.
 \]
@@ -369,62 +435,91 @@ Because this morphism factors through the closed subscheme $G_i$, minimality of 
 X_i'\hookrightarrow G_i.
 \]
 This factor is again a closed immersion.
+
 :::
 
-<1>12. The restriction
+:::
+
+::: {.pf-step #s12}
+
+The restriction
 \[
 h|_{X_i'}:X_i'\longrightarrow P
 \]
 is an immersion for every $i$.
 
-::: {.proof}
-By <1>11,
+::: pf-proof
+
+By step [](#s11){.pf-ref},
 \[
 X_i'\hookrightarrow G_i
 \]
-is a closed immersion, and by <1>9,
+is a closed immersion, and by step [](#s9){.pf-ref},
 \[
 G_i\hookrightarrow P
 \]
 is an open immersion.  Their composition is therefore an immersion.
+
 :::
 
-<1>13. The morphism
+:::
+
+::: {.pf-step #s13}
+
+The morphism
 \[
 h:X'\to P
 \]
 is an immersion.
 
-::: {.proof}
-Being an immersion is local on the source.  The open subsets $X_i'$ cover $X'$ by <1>8, and the restriction of $h$ to each is an immersion by <1>12.  Hence $h$ is an immersion.
+::: pf-proof
+
+Being an immersion is local on the source.  The open subsets $X_i'$ cover $X'$ by step [](#s8){.pf-ref}, and the restriction of $h$ to each is an immersion by step [](#s12){.pf-ref}.  Hence $h$ is an immersion.
+
 :::
 
-<1>14. A proper immersion is a closed immersion.
+:::
+
+::: {.pf-step #s14}
+
+A proper immersion is a closed immersion.
 Hence
 \[
 \boxed{h:X'\hookrightarrow P}
 \]
 is a closed immersion.
 
-::: {.proof}
+::: pf-proof
+
 An immersion factors as an open immersion followed by a closed immersion onto a locally closed subscheme of the target.
 A proper morphism is closed, so the image of the proper immersion $h$ is closed in $P$.
 Thus the locally closed image is actually closed, and the immersion is a closed immersion.
 
 Equivalently, a proper monomorphism is a closed immersion.
+
 :::
 
-<1>15. The scheme $X'$ is projective over $S$.
+:::
 
-::: {.proof}
-By <1>5, $P$ is projective over $S$.  By <1>14, $X'$ is a closed subscheme of $P$.  A closed immersion followed by a projective morphism is projective.  Hence
+::: {.pf-step #s15}
+
+The scheme $X'$ is projective over $S$.
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, $P$ is projective over $S$.  By step [](#s14){.pf-ref}, $X'$ is a closed subscheme of $P$.  A closed immersion followed by a projective morphism is projective.  Hence
 \[
 X'\to S
 \]
 is projective.
+
 :::
 
-<1>16. Inside the open subscheme
+:::
+
+::: {.pf-step #s16}
+
+Inside the open subscheme
 \[
 O=U\times_SP\subseteq Q,
 \]
@@ -434,7 +529,8 @@ f:U\to O
 \]
 is a closed immersion.
 
-::: {.proof}
+::: pf-proof
+
 The morphism $U\to P$ is the product of the maps
 \[
 j_i|_U:U\to P_i.
@@ -444,14 +540,20 @@ The scheme $P$ is separated over $S$, being projective.  Therefore the graph
 U\longrightarrow U\times_SP=O
 \]
 of $U\to P$ is a closed immersion.  This graph is precisely $f$.
+
 :::
 
-<1>17. The restriction of $X'$ to $O$ is exactly $f(U)$ scheme-theoretically:
+:::
+
+::: {.pf-step #s17}
+
+The restriction of $X'$ to $O$ is exactly $f(U)$ scheme-theoretically:
 \[
 \boxed{X'\cap O=f(U).}
 \]
 
-::: {.proof}
+::: pf-proof
+
 The scheme-theoretic image commutes with restriction to an open subscheme for the quasi-compact morphism $f$.  Thus
 \[
 X'\cap O
@@ -460,15 +562,21 @@ is the scheme-theoretic image of
 \[
 f:U\to O.
 \]
-But <1>16 shows that this map is already a closed immersion.  Its scheme-theoretic image is therefore its closed image $f(U)$ itself.
+But step [](#s16){.pf-ref} shows that this map is already a closed immersion.  Its scheme-theoretic image is therefore its closed image $f(U)$ itself.
+
 :::
 
-<1>18. The inverse image of $U\subseteq X$ under $g$ is
+:::
+
+::: {.pf-step #s18}
+
+The inverse image of $U\subseteq X$ under $g$ is
 \[
 g^{-1}(U)=X'\cap O=f(U).
 \]
 
-::: {.proof}
+::: pf-proof
+
 The inverse image under the projection
 \[
 g:X'\to X
@@ -477,17 +585,23 @@ of $U$ is the intersection of $X'$ with the inverse image of $U$ in $Q=X\times_S
 \[
 U\times_SP=O.
 \]
-Apply <1>17.
+Apply step [](#s17){.pf-ref}.
+
 :::
 
-<1>19. The morphism
+:::
+
+::: {.pf-step #s19}
+
+The morphism
 \[
 \boxed{g^{-1}(U)\xrightarrow{\sim}U}
 \]
 is an isomorphism.
 
-::: {.proof}
-By <1>18, the source is the graph $f(U)$.  The first projection
+::: pf-proof
+
+By step [](#s18){.pf-ref}, the source is the graph $f(U)$.  The first projection
 \[
 f(U)\longrightarrow U
 \]
@@ -496,23 +610,35 @@ is inverse to the graph morphism
 f:U\longrightarrow f(U).
 \]
 Thus $g$ restricts to an isomorphism over $U$.
+
 :::
 
-<1>20. This proves Chow's lemma.
+:::
 
-::: {.proof}
-In the irreducible case, <1>3--<1>4 produce the finite quasi-projective cover and dense open $U$ requested in part (b). Steps <1>5--<1>15 construct the projective scheme $X'$ and prove part (c). Steps <1>16--<1>19 prove part (d).
+::: {.pf-step #s20}
 
-Finally <1>1 reduces the general noetherian proper scheme to this irreducible case.  Hence there exist a projective $S$-scheme $X'$ and a morphism
+This proves Chow's lemma.
+
+::: pf-proof
+
+In the irreducible case, steps [](#s3){.pf-ref} and [](#s4){.pf-ref} produce the finite quasi-projective cover and dense open $U$ requested in part (b). Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref}, [](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref}, [](#s14){.pf-ref} and [](#s15){.pf-ref} construct the projective scheme $X'$ and prove part (c). Steps [](#s16){.pf-ref}, [](#s17){.pf-ref}, [](#s18){.pf-ref} and [](#s19){.pf-ref} prove part (d).
+
+Finally step [](#s1){.pf-ref} reduces the general noetherian proper scheme to this irreducible case.  Hence there exist a projective $S$-scheme $X'$ and a morphism
 \[
 g:X'\to X
 \]
 which is an isomorphism over a dense open subset of $X$.
+
 :::
 
-<1>21. Q.E.D.
-
-::: {.proof}
-Step <1>20 is the stated theorem.
 :::
+
+::: pf-qed
+
+Step [](#s20){.pf-ref} is the stated theorem.
+
+:::
+
+:::
+
 :::

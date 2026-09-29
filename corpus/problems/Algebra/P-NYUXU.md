@@ -28,18 +28,31 @@ Let
 \]
 be the conjugacy orbit of $H$.
 
-<1>1. The stabilizer of $H$ is its normalizer.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The stabilizer of $H$ is its normalizer.
+
+::: pf-proof
+
 By definition,
 \[
 \operatorname{Stab}_G(H)
 =\{g\in G:gHg^{-1}=H\}
 =N_G(H).
 \]
+
 :::
 
-<1>2. Apply orbit-stabilizer.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply orbit-stabilizer.
+
+::: pf-proof
+
 Orbit-stabilizer gives a bijection
 \[
 G/N_G(H)\longrightarrow \mathcal O(H),\qquad gN_G(H)\longmapsto gHg^{-1}.
@@ -49,5 +62,11 @@ Hence
 |\mathcal O(H)|=[G:N_G(H)].
 \]
 Thus the number of conjugates of $H$ is the index of its normalizer.
+
 :::
+
+:::
+
+:::
+
 :::

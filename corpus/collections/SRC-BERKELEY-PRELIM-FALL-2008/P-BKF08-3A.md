@@ -50,29 +50,40 @@ $$
 $$
 and index coordinates by $r\in\ZZ/n\ZZ$.
 
-<1>1. For each $k$, define
+::: pf
+
+::: pf-step
+
+For each $k$, define
 $$
 v^{(k)}_r\coloneqq\zeta_k^r
 \qquad(r\in\ZZ/n\ZZ).
 $$
 Then $v^{(k)}$ is a well-defined nonzero vector in $\CC^n$.
 
-::: {.proof}
+::: pf-proof
+
 Since $\zeta_k^n=1$, one has
 $$
 \zeta_k^{r+n}=\zeta_k^r,
 $$
 so the coordinate assignment is periodic modulo $n$. Its coordinate at
 $r=0$ equals $1$, hence the vector is nonzero.
+
 :::
 
-<1>2. The vector $v^{(k)}$ is an eigenvector of $A=(a_{ij})$ with
+:::
+
+::: {.pf-step #s2}
+
+The vector $v^{(k)}$ is an eigenvector of $A=(a_{ij})$ with
 eigenvalue
 $$
 \lambda_k=\zeta_k-\zeta_k^{-1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 In row $r$, the only nonzero entries of $A$ occur in columns $r+1$ and
 $r-1$ modulo $n$, with coefficients $1$ and $-1$, respectively. Therefore
 $$
@@ -85,15 +96,21 @@ $$
 \end{aligned}
 $$
 Thus $Av^{(k)}=\lambda_kv^{(k)}$.
+
 :::
 
-<1>3. The vectors
+:::
+
+::: {.pf-step #s3}
+
+The vectors
 $$
 v^{(0)},v^{(1)},\ldots,v^{(n-1)}
 $$
 form a basis of $\CC^n$.
 
-::: {.proof}
+::: pf-proof
+
 The matrix having these vectors as columns is
 $$
 V=(\zeta_k^r)_{0\le r,k\le n-1}.
@@ -106,9 +123,14 @@ $$
 $$
 Thus its columns are linearly independent, and there are $n$ of them in
 $\CC^n$.
+
 :::
 
-<1>4. The eigenvalues of $A$, counted with algebraic multiplicity, are
+:::
+
+::: {.pf-step #s4}
+
+The eigenvalues of $A$, counted with algebraic multiplicity, are
 $$
 \boxed{
 \lambda_k
@@ -117,8 +139,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3, the basis
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the basis
 $v^{(0)},\ldots,v^{(n-1)}$ diagonalizes $A$ with diagonal entries
 $\lambda_0,\ldots,\lambda_{n-1}$. Finally,
 $$
@@ -127,11 +150,17 @@ $$
 =2i\sin\!\left(\frac{2\pi k}{n}\right).
 $$
 This gives the complete eigenvalue multiset, including repetitions.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives exactly the requested eigenvalues.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives exactly the requested eigenvalues.
+
+:::
+
+:::
+
 :::

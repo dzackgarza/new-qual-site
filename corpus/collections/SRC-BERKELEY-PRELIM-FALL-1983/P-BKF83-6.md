@@ -31,13 +31,19 @@ have in the annulus
 :::
 
 ::: {.solution}
-<1>1. The polynomial $p$ has exactly five zeros in
+
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomial $p$ has exactly five zeros in
 $$
 \abs{z}<2,
 $$
 counted with multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 On the circle $\abs{z}=2$,
 $$
 \abs{z^5}=32,
@@ -55,15 +61,21 @@ $$
 $$
 on the whole circle. By Rouché's theorem, $p$ and $z^5$ have the same
 number of zeros in $\abs{z}<2$. Hence $p$ has five there.
+
 :::
 
-<1>2. The polynomial $p$ has exactly two zeros in
+:::
+
+::: {.pf-step #s2}
+
+The polynomial $p$ has exactly two zeros in
 $$
 \abs{z}<1,
 $$
 counted with multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 On the circle $\abs{z}=1$,
 $$
 \abs{5z^2}=5,
@@ -81,9 +93,14 @@ $$
 $$
 on the whole circle. Rouché's theorem shows that $p$ and $5z^2$ have the
 same number of zeros in $\abs{z}<1$, namely two.
+
 :::
 
-<1>3. The annulus
+:::
+
+::: {.pf-step #s3}
+
+The annulus
 $$
 1<\abs{z}<2
 $$
@@ -93,18 +110,25 @@ $$
 $$
 zeros of $p$, counted with multiplicity.
 
-::: {.proof}
-The strict inequalities in steps <1>1 and <1>2 also show that $p$ has no
+::: pf-proof
+
+The strict inequalities in steps [](#s1){.pf-ref} and [](#s2){.pf-ref} also show that $p$ has no
 zeros on either boundary circle. Thus the zeros in $\abs{z}<2$ split into
 those in $\abs{z}<1$ and those in the annulus. Their multiplicities give
 $$
 5-2=3.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the requested count.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested count.
+
+:::
+
+:::
+
 :::

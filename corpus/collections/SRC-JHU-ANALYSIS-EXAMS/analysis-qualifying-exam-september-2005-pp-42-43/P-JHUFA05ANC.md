@@ -27,21 +27,38 @@ Give either a proof or a counterexample.
 ::: {.solution}
 No. Let $g_n(e^{i\theta})\da ne^{in\theta}$.
 
-<1>1. For each fixed $k\in\ZZ$, $\int_{S^1}e^{ik\theta}g_n(e^{i\theta})\,d\theta\to0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For each fixed $k\in\ZZ$, $\int_{S^1}e^{ik\theta}g_n(e^{i\theta})\,d\theta\to0$.
+
+::: pf-proof
+
 The integral is $n\int_0^{2\pi}e^{i(k+n)\theta}\,d\theta$, which is $0$ whenever $n>\abs k$.
+
 :::
 
-<1>2. $g_n$ does not converge weakly to $0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$g_n$ does not converge weakly to $0$.
+
+::: pf-proof
+
 The functional $\Lambda_n(f)\da\int_{S^1}g_nf\,d\theta$ on the Banach space $C(S^1)$ has norm $\norm{g_n}_{L^1}=2\pi n$. If $\Lambda_n(f)\to0$ for every $f$, the uniform boundedness principle would give $\sup_n\norm{\Lambda_n}<\infty$, which is false.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 show that the sequence $g_n$ is a counterexample.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that the sequence $g_n$ is a counterexample.
+
+:::
+
+:::
+
 :::

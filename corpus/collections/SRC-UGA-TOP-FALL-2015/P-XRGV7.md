@@ -49,8 +49,14 @@ p([z,t])=e^{2\pi i t},
 \]
 be the mapping-torus projection.
 
-<1>1. The Klein bottle is the union of two annuli $U$ and $V$ whose intersection is the disjoint union of two annuli.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The Klein bottle is the union of two annuli $U$ and $V$ whose intersection is the disjoint union of two annuli.
+
+::: pf-proof
+
 Choose two closed arcs $A,B\subset S^1$ such that
 \[
 A\cup B=S^1,
@@ -78,9 +84,14 @@ U\cap V=p^{-1}(C_0)\sqcup p^{-1}(C_1)
 \]
 is the disjoint union of two annuli.
 Because the interiors of $U$ and $V$ cover $K$, this is an excisive pair and the Mayer–Vietoris sequence applies.
+
 :::
 
-<1>2. With suitable generators, the Mayer–Vietoris map
+:::
+
+::: {.pf-step #s2}
+
+With suitable generators, the Mayer–Vietoris map
 \[
 \alpha:H_1(U\cap V)\longrightarrow H_1(U)\oplus H_1(V)
 \]
@@ -91,7 +102,9 @@ is represented by
 -1&1
 \end{pmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each annulus deformation retracts onto a fiber circle, so
 \[
 H_1(U\cap V)\cong\ZZ^2,
@@ -109,15 +122,22 @@ Thus, for the Mayer–Vietoris map $(i_*,-j_*)$,
 \alpha(x_1)=(a,b),
 \]
 which gives the displayed matrix.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 H_2(K;\ZZ)=0
 \qquad\text{and}\qquad
 \operatorname{coker}(\alpha)\cong\ZZ/2\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The relevant part of Mayer–Vietoris begins
 \[
 0
@@ -126,7 +146,7 @@ The relevant part of Mayer–Vietoris begins
 \xrightarrow{\alpha}
 \ZZ^2.
 \]
-The matrix in <1>2 has determinant $2$, so $\alpha$ is injective over $\ZZ$ and therefore $H_2(K)=0$.
+The matrix in step [](#s2){.pf-ref} has determinant $2$, so $\alpha$ is injective over $\ZZ$ and therefore $H_2(K)=0$.
 
 Its entries have greatest common divisor $1$ and its determinant has absolute value $2$.
 Hence its Smith normal form is
@@ -137,14 +157,21 @@ so
 \[
 \operatorname{coker}(\alpha)\cong\ZZ/2\ZZ.
 \]
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 \[
 \beta:H_0(U\cap V)\longrightarrow H_0(U)\oplus H_0(V)
 \]
 has kernel isomorphic to $\ZZ$ and cokernel isomorphic to $\ZZ$.
-::: {.proof}
+
+::: pf-proof
+
 Both $U$ and $V$ are connected, while $U\cap V$ has two components.
 Thus, under the standard generators,
 \[
@@ -160,9 +187,14 @@ and
 \[
 \operatorname{coker}\beta\cong\ZZ.
 \]
+
 :::
 
-<1>5. The integral homology of the Klein bottle is
+:::
+
+::: pf-step
+
+The integral homology of the Klein bottle is
 \[
 \boxed{
 H_n(K;\ZZ)\cong
@@ -172,7 +204,9 @@ H_n(K;\ZZ)\cong
 0,&n\ge2.
 \end{cases}}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Exactness around $H_1(K)$ gives
 \[
 0
@@ -181,7 +215,7 @@ Exactness around $H_1(K)$ gives
 \longrightarrow\ker(\beta)
 \longrightarrow0.
 \]
-By <1>3 and <1>4 this is
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref} this is
 \[
 0\longrightarrow\ZZ/2\ZZ
 \longrightarrow H_1(K)
@@ -192,6 +226,12 @@ Since $\ZZ$ is free, the sequence splits, so
 \[
 H_1(K)\cong\ZZ\oplus\ZZ/2\ZZ.
 \]
-Also $H_0(K)\cong\operatorname{coker}(\beta)\cong\ZZ$, <1>3 gives $H_2(K)=0$, and Mayer–Vietoris gives $H_n(K)=0$ for $n\ge3$ because the annuli and their intersection have no homology in those degrees.
+Also $H_0(K)\cong\operatorname{coker}(\beta)\cong\ZZ$, step [](#s3){.pf-ref} gives $H_2(K)=0$, and Mayer–Vietoris gives $H_n(K)=0$ for $n\ge3$ because the annuli and their intersection have no homology in those degrees.
+
 :::
+
+:::
+
+:::
+
 :::

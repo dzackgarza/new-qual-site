@@ -40,7 +40,12 @@ where $A$ is antisymmetric, $S$ is symmetric with $\operatorname{tr}S=0$, and $c
 :::
 
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$
 A\coloneqq\frac{M-M^T}{2},
 \qquad
@@ -51,7 +56,8 @@ $$
 M=A+T.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 A^T=-A,
@@ -59,9 +65,14 @@ A^T=-A,
 T^T=T,
 $$
 by direct transposition, and adding the two definitions gives $A+T=M$.
+
 :::
 
-<1>2. Set
+:::
+
+::: {.pf-step #s2}
+
+Set
 $$
 c\coloneqq\frac{\operatorname{tr}M}{n},
 \qquad
@@ -72,7 +83,8 @@ $$
 M=A+S+cI.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $T$ and $I$ are symmetric, so is $S$. Also
 $$
 \operatorname{tr}T
@@ -88,15 +100,21 @@ $$
 \operatorname{tr}M-cn
 =0.
 $$
-Finally, $T=S+cI$, so step <1>1 gives the claimed decomposition.
+Finally, $T=S+cI$, so step [](#s1){.pf-ref} gives the claimed decomposition.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \operatorname{tr}(AS)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using invariance of trace under transpose and cyclicity of trace,
 $$
 \operatorname{tr}(AS)
@@ -110,17 +128,23 @@ $$
 -\operatorname{tr}(AS).
 $$
 Hence $2\operatorname{tr}(AS)=0$.
+
 :::
 
-<1>4. One also has
+:::
+
+::: {.pf-step #s4}
+
+One also has
 $$
 \operatorname{tr}A=0,
 \qquad
 \operatorname{tr}S=0.
 $$
 
-::: {.proof}
-The second equality is step <1>2. For the first,
+::: pf-proof
+
+The second equality is step [](#s2){.pf-ref}. For the first,
 $$
 \operatorname{tr}A
 =
@@ -129,17 +153,23 @@ $$
 -\operatorname{tr}A,
 $$
 so $\operatorname{tr}A=0$.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \operatorname{tr}(M^2)
 =
 \operatorname{tr}(A^2)+\operatorname{tr}(S^2)+nc^2.
 $$
 
-::: {.proof}
-From step <1>2,
+::: pf-proof
+
+From step [](#s2){.pf-ref},
 $$
 M=A+S+cI.
 $$
@@ -153,14 +183,19 @@ $$
 +2c\operatorname{tr}S.
 \end{aligned}
 $$
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 \operatorname{tr}(AS+SA)=2\operatorname{tr}(AS)=0,
 $$
-and step <1>4 kills the remaining cross terms.
+and step [](#s4){.pf-ref} kills the remaining cross terms.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{
 \operatorname{tr}(M^2)
@@ -169,8 +204,9 @@ $$
 +\frac1n(\operatorname{tr}M)^2}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 c=\frac{\operatorname{tr}M}{n},
 $$
@@ -178,12 +214,18 @@ so
 $$
 nc^2=\frac1n(\operatorname{tr}M)^2.
 $$
-Substitute this into step <1>5.
+Substitute this into step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part 1, and step <1>6 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part 1, and step [](#s6){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

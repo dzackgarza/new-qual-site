@@ -53,13 +53,18 @@ Show that $X = X_1 \union X_2$ with $X_1, X_2$ closed, so $X = X_1$ or $X = X_2$
 ::: {.solution}
 Write affine coordinates on $\AA^{n+m}$ as $(x_1,\ldots,x_n,y_1,\ldots,y_m)$.
 
-<1>1. If $Z\subseteq X\times Y$ is closed, then
+::: pf
+
+::: {.pf-step #s1}
+
+If $Z\subseteq X\times Y$ is closed, then
 $$
 X_Z=\{x\in X:\{x\}\times Y\subseteq Z\}
 $$
 is closed in $X$.
 
-::: {.proof}
+::: pf-proof
+
 Choose finitely many polynomials $F_1,\ldots,F_r\in k[x_1,\ldots,x_n,y_1,\ldots,y_m]$ whose common zero set on $X\times Y$ is $Z$.
 Fix one $F=F_\ell$.
 Its image in
@@ -77,16 +82,22 @@ a_1(x)=\cdots=a_N(x)=0.
 $$
 Thus the condition that $F$ vanish on the whole fiber $\{x\}\times Y$ cuts out a closed subset of $X$.
 Intersecting these closed subsets for $F_1,\ldots,F_r$ gives $X_Z$.
+
 :::
 
-<1>2. The subset $X\times Y\subseteq\AA^{n+m}$ is irreducible, proving (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The subset $X\times Y\subseteq\AA^{n+m}$ is irreducible, proving (a).
+
+::: pf-proof
+
 Suppose
 $$
 X\times Y=Z_1\cup Z_2
 $$
-with $Z_1,Z_2$ closed, and form $X_i=X_{Z_i}$ as in step <1>1.
+with $Z_1,Z_2$ closed, and form $X_i=X_{Z_i}$ as in step [](#s1){.pf-ref}.
 For each fixed $x\in X$, the fiber $\{x\}\times Y$ is isomorphic to the irreducible variety $Y$.
 It is the union of the two closed subsets
 $$
@@ -97,19 +108,25 @@ $$
 so it is contained in one of the $Z_i$.
 Hence $X=X_1\cup X_2$.
 
-Step <1>1 makes $X_1$ and $X_2$ closed in the irreducible variety $X$.
+Step [](#s1){.pf-ref} makes $X_1$ and $X_2$ closed in the irreducible variety $X$.
 Thus $X=X_1$ or $X=X_2$.
 If, say, $X=X_1$, every fiber lies in $Z_1$, so $X\times Y=Z_1$.
 This is exactly irreducibility.
+
 :::
 
-<1>3. The natural homomorphism
+:::
+
+::: {.pf-step #s3}
+
+The natural homomorphism
 $$
 A(X)\tensor_k A(Y)\longrightarrow A(X\times Y)
 $$
 is an isomorphism, proving (b).
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 S=k[x_1,\ldots,x_n,y_1,\ldots,y_m].
@@ -142,11 +159,17 @@ $$
 I(X\times Y)=I(X)S+I(Y)S,
 $$
 and taking quotients gives the asserted isomorphism.
+
 :::
 
-<1>4. The coordinate projections are morphisms, and the usual pairing of two morphisms gives the required universal morphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The coordinate projections are morphisms, and the usual pairing of two morphisms gives the required universal morphism.
+
+::: pf-proof
+
 The first projection
 $$
 \pi_X:X\times Y\to X
@@ -168,20 +191,26 @@ $$
 $$
 Any map satisfying these two equations must send $z$ to $(f(z),g(z))$, so $h$ is unique.
 This proves (c).
+
 :::
 
-<1>5. The dimension satisfies
+:::
+
+::: {.pf-step #s5}
+
+The dimension satisfies
 $$
 \dim(X\times Y)=\dim X+\dim Y.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Put $A=A(X)$ and $B=A(Y)$.
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 A(X\times Y)=A\tensor_k B,
 $$
-which is a domain by step <1>2.
+which is a domain by step [](#s2){.pf-ref}.
 
 Choose Noether normalizations
 $$
@@ -207,11 +236,17 @@ $$
 \dim(A\tensor_k B)=r+s=\dim X+\dim Y.
 $$
 This proves (d).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>5 prove parts (a)--(d), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove parts (a)--(d), respectively.
+
+:::
+
+:::
+
 :::

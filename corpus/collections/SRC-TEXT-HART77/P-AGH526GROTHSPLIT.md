@@ -39,12 +39,17 @@ Hint: Choose a subinvertible sheaf of maximal degree, and use induction on the r
 ::: {.solution}
 Let $\mathcal E$ be locally free of rank $r$ on $\PP^1$.
 
-<1>1. There is a largest integer $a$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a largest integer $a$ such that
 $$
 H^0\qty(\PP^1,\mathcal E(-a))\ne0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $N\gg0$, Serre's theorem makes $\mathcal E(N)$ globally generated, so it
 has a nonzero section. Thus the displayed set of integers is nonempty.
 
@@ -56,9 +61,14 @@ H^1\qty(\PP^1,\mathcal E^\vee(a-2)).
 $$
 The group on the right vanishes for $a\gg0$ by Serre vanishing. Hence the set
 is bounded above and has a largest element $a$.
+
 :::
 
-<1>2. A nonzero section of $\mathcal E(-a)$ yields an exact sequence
+:::
+
+::: {.pf-step #s2}
+
+A nonzero section of $\mathcal E(-a)$ yields an exact sequence
 $$
 0\longrightarrow\OO_{\PP^1}(a)
 \longrightarrow\mathcal E
@@ -67,7 +77,8 @@ $$
 $$
 with $\mathcal F$ locally free of rank $r-1$.
 
-::: {.proof}
+::: pf-proof
+
 A nonzero section gives an injective map
 $$
 \OO_{\PP^1}(a)\longrightarrow\mathcal E.
@@ -82,28 +93,40 @@ $$
 contradicting maximality of $a$. Thus $m=0$: the original image is already
 saturated. Its quotient is torsion-free on a nonsingular curve and therefore
 locally free, of rank $r-1$.
+
 :::
 
-<1>3. Assume inductively that every locally free sheaf of rank $r-1$ on
+:::
+
+::: {.pf-step #s3}
+
+Assume inductively that every locally free sheaf of rank $r-1$ on
 $\PP^1$ splits. Then
 $$
 \mathcal F\cong\bigoplus_{j=1}^{r-1}\OO_{\PP^1}(b_j)
 $$
 for some integers $b_j$.
 
-::: {.proof}
+::: pf-proof
+
 This is exactly the induction hypothesis applied to the quotient $\mathcal F$
-of step <1>2. The rank-one base case is immediate because every invertible
+of step [](#s2){.pf-ref}. The rank-one base case is immediate because every invertible
 sheaf on $\PP^1$ is $\OO(n)$ for some $n\in\ZZ$.
+
 :::
 
-<1>4. Every summand in step <1>3 satisfies
+:::
+
+::: {.pf-step #s4}
+
+Every summand in step [](#s3){.pf-ref} satisfies
 $$
 b_j\le a.
 $$
 
-::: {.proof}
-Twist the exact sequence of step <1>2 by $\OO(-a-1)$:
+::: pf-proof
+
+Twist the exact sequence of step [](#s2){.pf-ref} by $\OO(-a-1)$:
 $$
 0\longrightarrow\OO(-1)
 \longrightarrow\mathcal E(-a-1)
@@ -131,16 +154,22 @@ $$
 H^0\qty(\PP^1,\mathcal E(-a-1))\ne0,
 $$
 contradicting the maximality of $a$. Therefore every $b_j\le a$.
+
 :::
 
-<1>5. The exact sequence in step <1>2 splits.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The exact sequence in step [](#s2){.pf-ref} splits.
+
+::: pf-proof
+
 Its extension class lies in
 $$
 \Ext^1\qty(\mathcal F,\OO(a)).
 $$
-Using step <1>3 and the extension calculation [[PR-ET5PQ]],
+Using step [](#s3){.pf-ref} and the extension calculation [[PR-ET5PQ]],
 $$
 \begin{aligned}
 \Ext^1\qty(\mathcal F,\OO(a))
@@ -152,14 +181,19 @@ $$
 H^1\qty(\PP^1,\OO(a-b_j)).
 \end{aligned}
 $$
-By step <1>4, $a-b_j\ge0$. Theorem III.5.1 gives
+By step [](#s4){.pf-ref}, $a-b_j\ge0$. Theorem III.5.1 gives
 $$
 H^1\qty(\PP^1,\OO(a-b_j))=0
 $$
 for every $j$. Hence the entire Ext group vanishes and the sequence splits.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #s6}
+
+Therefore
 $$
 \boxed{
 \mathcal E
@@ -169,16 +203,23 @@ $$
 \bigoplus_{j=1}^{r-1}\OO_{\PP^1}(b_j).}
 $$
 
-::: {.proof}
-Step <1>5 splits the exact sequence of step <1>2, and step <1>3 splits its
+::: pf-proof
+
+Step [](#s5){.pf-ref} splits the exact sequence of step [](#s2){.pf-ref}, and step [](#s3){.pf-ref} splits its
 quotient. This proves the rank-$r$ case from the rank-$(r-1)$ case. Induction
 from rank one proves the theorem for every finite rank.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>6 prove that every locally free sheaf of finite rank on
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove that every locally free sheaf of finite rank on
 $\PP^1$ is a direct sum of invertible sheaves.
+
 :::
+
+:::
+
 :::

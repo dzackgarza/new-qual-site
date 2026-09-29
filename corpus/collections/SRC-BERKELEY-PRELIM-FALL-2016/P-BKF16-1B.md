@@ -48,7 +48,12 @@ Let $C = \int_{-\infty}^{\infty} e^{-x^2}\,dx$ and let $S_n$ be the $(n-1)$-dime
 :::
 
 ::: {.solution}
-<1>1. In rectangular coordinates,
+
+::: pf
+
+::: {.pf-step #s1}
+
+In rectangular coordinates,
 $$
 \int_{\RR^n}
 e^{-(x_1^2+\cdots+x_n^2)}
@@ -57,7 +62,8 @@ e^{-(x_1^2+\cdots+x_n^2)}
 C^n.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The integrand factors as
 $$
 \prod_{j=1}^n e^{-x_j^2}
@@ -75,16 +81,22 @@ e^{-(x_1^2+\cdots+x_n^2)}
 C^n.
 \end{aligned}
 $$
+
 :::
 
-<1>2. In polar coordinates, the same integral equals
+:::
+
+::: {.pf-step #s2}
+
+In polar coordinates, the same integral equals
 $$
 S_n
 \int_0^\infty
 e^{-r^2}r^{n-1}\,dr.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The integrand depends only on the Euclidean radius
 $$
 r=\sqrt{x_1^2+\cdots+x_n^2}.
@@ -95,9 +107,14 @@ r^{n-1}\,dr\,d\omega,
 $$
 and integration of $d\omega$ over the unit sphere gives its surface
 area $S_n$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_0^\infty
 e^{-r^2}r^{n-1}\,dr
@@ -105,7 +122,8 @@ e^{-r^2}r^{n-1}\,dr
 \frac12\Gamma\left(\frac n2\right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 t=r^2.
@@ -134,9 +152,14 @@ e^{-t}t^{n/2-1}\,dt\\
 \frac12\Gamma\left(\frac n2\right).
 \end{aligned}
 $$
+
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #s4}
+
+Hence
 $$
 \boxed{
 C^n
@@ -146,17 +169,24 @@ C^n
 }
 $$
 
-::: {.proof}
-Steps <1>1 and <1>2 compute the same integral, and step <1>3 evaluates
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} compute the same integral, and step [](#s3){.pf-ref} evaluates
 the radial factor. Equating the two expressions proves part (a).
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \boxed{\Gamma(1)=1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Directly from the definition,
 $$
 \Gamma(1)
@@ -167,14 +197,20 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>6. For every $s>0$,
+:::
+
+::: {.pf-step #s6}
+
+For every $s>0$,
 $$
 \boxed{\Gamma(s+1)=s\Gamma(s)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Integrating by parts,
 $$
 \begin{aligned}
@@ -192,20 +228,26 @@ and $e^{-t}t^s\to0$ as $t\to\infty$. Thus
 $$
 \Gamma(s+1)=s\Gamma(s).
 $$
-Together with step <1>5 this proves part (b).
+Together with step [](#s5){.pf-ref} this proves part (b).
+
 :::
 
-<1>7. The Gaussian integral is
+:::
+
+::: {.pf-step #s7}
+
+The Gaussian integral is
 $$
 \boxed{C=\sqrt\pi}.
 $$
 
-::: {.proof}
-Set $n=2$ in step <1>4. Using
+::: pf-proof
+
+Set $n=2$ in step [](#s4){.pf-ref}. Using
 $$
 S_2=2\pi
 $$
-and step <1>5,
+and step [](#s5){.pf-ref},
 $$
 C^2
 =
@@ -218,19 +260,25 @@ $$
 C=\sqrt\pi.
 $$
 This proves part (c).
+
 :::
 
-<1>8. The surface area of the unit $3$-sphere in $\RR^4$ is
+:::
+
+::: {.pf-step #s8}
+
+The surface area of the unit $3$-sphere in $\RR^4$ is
 $$
 \boxed{S_4=2\pi^2}.
 $$
 
-::: {.proof}
-Set $n=4$ in step <1>4. By steps <1>5--<1>6,
+::: pf-proof
+
+Set $n=4$ in step [](#s4){.pf-ref}. By steps [](#s5){.pf-ref} and [](#s6){.pf-ref},
 $$
 \Gamma(2)=1\cdot\Gamma(1)=1.
 $$
-By step <1>7,
+By step [](#s7){.pf-ref},
 $$
 C^4=\pi^2.
 $$
@@ -245,14 +293,20 @@ $$
 S_4=2\pi^2.
 $$
 This proves part (d).
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>4, <1>5--<1>6, <1>7, and <1>8 prove parts (a)--(d),
+::: pf-qed
+
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref} prove parts (a)--(d),
 respectively.
+
 :::
+
+:::
+
 :::
 
 ::: {.remark}

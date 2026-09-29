@@ -35,13 +35,19 @@ Choose the positive real root
 \alpha=\sqrt{2+\sqrt3}.
 \]
 
-<1>1. The four roots of $f$ are
+::: pf
+
+::: {.pf-step #s1}
+
+The four roots of $f$ are
 \[
 \pm\alpha,
 \qquad
 \pm\alpha^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Writing $y=x^2$, the equation $f(x)=0$ becomes
 \[
 y^2-4y+1=0,
@@ -59,21 +65,35 @@ we have
 \sqrt{2-\sqrt3}=\alpha^{-1}.
 \]
 Thus the four roots are exactly the displayed elements.
+
 :::
 
-<1>2. The splitting field is
+:::
+
+::: {.pf-step #s2}
+
+The splitting field is
 \[
 K=\mathbb Q(\alpha).
 \]
-::: {.proof}
-The field $\mathbb Q(\alpha)$ contains both $\alpha$ and its inverse $\alpha^{-1}$, hence all four roots from <1>1. Conversely, every splitting field contains $\alpha$. Therefore $\mathbb Q(\alpha)$ is precisely the splitting field.
+
+::: pf-proof
+
+The field $\mathbb Q(\alpha)$ contains both $\alpha$ and its inverse $\alpha^{-1}$, hence all four roots from step [](#s1){.pf-ref}. Conversely, every splitting field contains $\alpha$. Therefore $\mathbb Q(\alpha)$ is precisely the splitting field.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 K=\mathbb Q(\sqrt2,\sqrt3).
 \]
-::: {.proof}
+
+::: pf-proof
+
 From
 \[
 \alpha^2+\alpha^{-2}=4
@@ -108,14 +128,21 @@ Conversely,
 =\frac{\sqrt6+\sqrt2}{2}
 \in\mathbb Q(\sqrt2,\sqrt3).
 \]
-Together with <1>2 this proves equality.
+Together with step [](#s2){.pf-ref} this proves equality.
+
 :::
 
-<1>4. The extension $K/\mathbb Q$ has degree $4$ and
+:::
+
+::: pf-step
+
+The extension $K/\mathbb Q$ has degree $4$ and
 \[
 \operatorname{Gal}(K/\mathbb Q)\cong C_2\times C_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The field $\mathbb Q(\sqrt2)$ has degree $2$ over $\mathbb Q$. Also
 \[
 \sqrt3\notin\mathbb Q(\sqrt2).
@@ -129,13 +156,18 @@ Thus $ab=0$. If $b=0$, then $a^2=3$, impossible for $a\in\mathbb Q$; if $a=0$, t
 [K:\mathbb Q]=4.
 \]
 
-By <1>3, independently changing the signs of $\sqrt2$ and $\sqrt3$ defines four $\mathbb Q$-automorphisms of $K$. They exhaust the Galois group because its order is $[K:\mathbb Q]=4$. Each nonidentity sign change has order $2$, so
+By step [](#s3){.pf-ref}, independently changing the signs of $\sqrt2$ and $\sqrt3$ defines four $\mathbb Q$-automorphisms of $K$. They exhaust the Galois group because its order is $[K:\mathbb Q]=4$. Each nonidentity sign change has order $2$, so
 \[
 \operatorname{Gal}(K/\mathbb Q)\cong C_2\times C_2.
 \]
+
 :::
 
-<1>5. The three proper intermediate fields are
+:::
+
+::: pf-step
+
+The three proper intermediate fields are
 \[
 \mathbb Q(\sqrt2),
 \qquad
@@ -143,7 +175,9 @@ By <1>3, independently changing the signs of $\sqrt2$ and $\sqrt3$ defines four 
 \qquad
 \mathbb Q(\sqrt6).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The Klein four group has exactly three nontrivial proper subgroups, each of order $2$. By the Galois correspondence, the proper nontrivial intermediate fields of $K/\mathbb Q$ are exactly their fixed fields.
 
 The automorphism changing the sign of $\sqrt3$ and fixing $\sqrt2$ has fixed field $\mathbb Q(\sqrt2)$. The automorphism changing the sign of $\sqrt2$ and fixing $\sqrt3$ has fixed field $\mathbb Q(\sqrt3)$. Finally, the automorphism changing both signs fixes
@@ -151,5 +185,11 @@ The automorphism changing the sign of $\sqrt3$ and fixing $\sqrt2$ has fixed fie
 \sqrt6=\sqrt2\sqrt3,
 \]
 so its fixed field is $\mathbb Q(\sqrt6)$. Each of these fields has degree $2$ over $\mathbb Q$, as required for the fixed field of an order-$2$ subgroup. Thus there are no other proper intermediate fields.
+
 :::
+
+:::
+
+:::
+
 :::

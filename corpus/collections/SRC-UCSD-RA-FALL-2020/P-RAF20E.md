@@ -43,8 +43,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. There is $v\in L^2([0,1])$ with $\|v\|_2\le1$ and $\int_{[0,1]}f'\,d\mu=\int_0^1 fv\,dx$ for every $f\in C^1([0,1])$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+There is $v\in L^2([0,1])$ with $\|v\|_2\le1$ and $\int_{[0,1]}f'\,d\mu=\int_0^1 fv\,dx$ for every $f\in C^1([0,1])$.
+
+::: pf-proof
+
 Define
 \[
 L(f):=\int_{[0,1]}f'\,d\mu,
@@ -63,10 +70,17 @@ such that
 \int_{[0,1]}f'\,d\mu=\int_0^1 f(x)v(x)\,dx
 \]
 for every $f\in C^1([0,1])$.
+
 :::
 
-<1>2. With $V(x)\coloneqq\int_0^x v(t)\,dt$, there is $c\in\mathbb R$ such that $\mu|_{(0,1)}=(c-V)\,m$.
-::: {.proof}
+:::
+
+::: pf-step
+
+With $V(x)\coloneqq\int_0^x v(t)\,dt$, there is $c\in\mathbb R$ such that $\mu|_{(0,1)}=(c-V)\,m$.
+
+::: pf-proof
+
 Restrict the preceding identity to $f\in C_c^1((0,1))$. In the sense of distributions on $(0,1)$,
 \[
 D\mu=-v.
@@ -88,10 +102,17 @@ Thus $\mu$ is absolutely continuous with respect to Lebesgue measure on the open
 u(x)=c-V(x)
 \]
 there.
+
 :::
 
-<1>3. $\mu(\{0\})=\mu(\{1\})=0$; hence $\mu\ll m$ on $[0,1]$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\mu(\{0\})=\mu(\{1\})=0$; hence $\mu\ll m$ on $[0,1]$.
+
+::: pf-proof
+
 Choose $\psi\in C_c^1([0,1))$ with $0\le\psi\le1$ and $\psi(0)=1$. For $\varepsilon>0$, define
 \[
 f_\varepsilon(x):=\int_0^x \psi(t/\varepsilon)\,dt.
@@ -115,10 +136,17 @@ Consequently
 \[
 \boxed{\mu\ll m\text{ on }[0,1].}
 \]
+
 :::
 
-<1>4. The density $u=d\mu/dm$ satisfies $|u(x)-u(y)|\le|x-y|^{1/2}$ for almost every $(x,y)\in[0,1]^2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The density $u=d\mu/dm$ satisfies $|u(x)-u(y)|\le|x-y|^{1/2}$ for almost every $(x,y)\in[0,1]^2$.
+
+::: pf-proof
+
 The density $u=c-V$ has an absolutely continuous representative satisfying
 \[
 u'(x)=-v(x)
@@ -138,5 +166,11 @@ Thus this representative satisfies the estimate for every $x,y$, and therefore t
 \boxed{|u(x)-u(y)|\le |x-y|^{1/2}}
 \]
 for almost every pair $(x,y)\in[0,1]^2$.
+
 :::
+
+:::
+
+:::
+
 :::

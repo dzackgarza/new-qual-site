@@ -34,8 +34,14 @@ $$
 f(X)=X^3+X+1\in\mathbf F_5[X].
 $$
 
-<1>1. The polynomial $f$ is irreducible over $\mathbf F_5$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The polynomial $f$ is irreducible over $\mathbf F_5$.
+
+::: pf-proof
+
 A cubic over a field is reducible if and only if it has a root in that field.
 Evaluate $f$ at the five elements of $\mathbf F_5$:
 $$
@@ -49,10 +55,17 @@ hence
 $$
 \boxed{f(X)=X^3+X+1\text{ is irreducible over }\mathbf F_5.}
 $$
+
 :::
 
-<1>2. Quotient by $f$ to construct the desired field.
-::: {.proof}
+:::
+
+::: pf-step
+
+Quotient by $f$ to construct the desired field.
+
+::: pf-proof
+
 Because $f$ is irreducible, the ideal $(f)$ is maximal in
 $\mathbf F_5[X]$. Therefore
 $$
@@ -75,5 +88,11 @@ $$
 \boxed{K=\mathbf F_5[X]/(X^3+X+1)}
 $$
 is a field with exactly $125$ elements.
+
 :::
+
+:::
+
+:::
+
 :::

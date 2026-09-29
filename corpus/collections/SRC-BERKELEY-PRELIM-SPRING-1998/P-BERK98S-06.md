@@ -30,9 +30,14 @@ H_t\coloneqq
 \subseteq\QQ/\ZZ.
 $$
 
-<1>1. The subgroup $H_t$ is cyclic of order $t$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The subgroup $H_t$ is cyclic of order $t$.
+
+::: pf-proof
+
 The class
 $$
 \frac1t+\ZZ
@@ -52,11 +57,17 @@ k\left(\frac1t+\ZZ\right)
 \neq0.
 $$
 Thus the generator has order exactly $t$.
+
 :::
 
-<1>2. Every element of $\QQ/\ZZ$ killed by $t$ belongs to $H_t$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every element of $\QQ/\ZZ$ killed by $t$ belongs to $H_t$.
+
+::: pf-proof
+
 Let $q+\ZZ\in\QQ/\ZZ$ and suppose
 $$
 t(q+\ZZ)=0.
@@ -66,24 +77,35 @@ $$
 q=\frac{tq}{t}\in\frac1t\ZZ.
 $$
 Hence $q+\ZZ\in H_t$.
+
 :::
 
-<1>3. Every subgroup of $\QQ/\ZZ$ of order $t$ is equal to $H_t$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every subgroup of $\QQ/\ZZ$ of order $t$ is equal to $H_t$.
+
+::: pf-proof
+
 Let $K\subseteq\QQ/\ZZ$ have order $t$. By Lagrange's theorem, every
 $x\in K$ satisfies
 $$
 tx=0.
 $$
-Step <1>2 therefore gives
+Step [](#s2){.pf-ref} therefore gives
 $$
 K\subseteq H_t.
 $$
-By step <1>1, both groups have exactly $t$ elements, so $K=H_t$.
+By step [](#s1){.pf-ref}, both groups have exactly $t$ elements, so $K=H_t$.
+
 :::
 
-<1>4. Therefore $\QQ/\ZZ$ has the unique cyclic subgroup of order $t$
+:::
+
+::: {.pf-step #s4}
+
+Therefore $\QQ/\ZZ$ has the unique cyclic subgroup of order $t$
 given by
 $$
 \boxed{
@@ -92,14 +114,21 @@ H_t=
 }.
 $$
 
-::: {.proof}
-Existence follows from step <1>1. Step <1>3 gives uniqueness, even among all
+::: pf-proof
+
+Existence follows from step [](#s1){.pf-ref}. Step [](#s3){.pf-ref} gives uniqueness, even among all
 subgroups of order $t$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

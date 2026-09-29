@@ -28,7 +28,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 \[
 V_1,\dots,V_r
 \]
@@ -40,7 +45,9 @@ The left regular representation decomposes as
 \[
 \mathbb C G\cong\bigoplus_{i=1}^r V_i^{\oplus d_i}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 By Maschke's theorem, the regular representation is completely reducible. The multiplicity of an irreducible character $\chi_i$ in the regular character $\chi_{\mathrm{reg}}$ is
 \[
 \langle\chi_{\mathrm{reg}},\chi_i\rangle
@@ -58,29 +65,48 @@ Hence
 =\overline{\chi_i(1)}=d_i.
 \]
 Thus $V_i$ occurs with multiplicity $d_i$.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: {.pf-step #s2}
+
+Therefore
 \[
 n=\sum_{i=1}^r d_i^2.
 \]
-::: {.proof}
-Take complex dimensions in <1>1. The regular module $\mathbb CG$ has dimension $|G|=n$, while the summand $V_i^{\oplus d_i}$ has dimension $d_i^2$.
+
+::: pf-proof
+
+Take complex dimensions in step [](#s1){.pf-ref}. The regular module $\mathbb CG$ has dimension $|G|=n$, while the summand $V_i^{\oplus d_i}$ has dimension $d_i^2$.
+
 :::
 
-<1>3. Every irreducible $\mathbb CG$-module $V$ satisfies
+:::
+
+::: pf-step
+
+Every irreducible $\mathbb CG$-module $V$ satisfies
 \[
 \dim_{\mathbb C}V\le\sqrt n.
 \]
-::: {.proof}
-If $V\cong V_j$, then <1>2 gives
+
+::: pf-proof
+
+If $V\cong V_j$, then step [](#s2){.pf-ref} gives
 \[
 (\dim V)^2=d_j^2\le\sum_{i=1}^r d_i^2=n.
 \]
 Taking nonnegative square roots yields the claim.
+
 :::
 
-<1>4. Let $G=S_3$, so
+:::
+
+::: {.pf-step #s4}
+
+Let $G=S_3$, so
 \[
 n=|S_3|=6
 \qquad\text{and}\qquad
@@ -95,7 +121,9 @@ Then
 \[
 \dim_{\mathbb C}V=2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The coordinate-sum map
 \[
 \mathbb C^3\longrightarrow\mathbb C,
@@ -103,10 +131,17 @@ The coordinate-sum map
 (z_1,z_2,z_3)\longmapsto z_1+z_2+z_3
 \]
 is nonzero and linear, and $V$ is its kernel. Hence $V$ has codimension $1$ in $\mathbb C^3$ and therefore dimension $2$. Permuting coordinates preserves the coordinate sum, so $V$ is $S_3$-stable.
+
 :::
 
-<1>5. The $S_3$-module $V$ in <1>4 is irreducible.
-::: {.proof}
+:::
+
+::: pf-step
+
+The $S_3$-module $V$ in step [](#s4){.pf-ref} is irreducible.
+
+::: pf-proof
+
 Since $\dim V=2$, a proper nonzero invariant subspace would be a one-dimensional invariant line. Suppose such a line existed and let
 \[
 0\ne v=(a,b,c)\in V
@@ -134,9 +169,19 @@ Checking the four combinations, together with
 a+b+c=0,
 \]
 forces $a=b=c=0$ in every case, contradicting $v\ne0$. Hence no invariant line exists, and $V$ is irreducible.
+
 :::
 
-<1>6. Thus $S_3$ provides the requested sharp example:
+:::
+
+::: pf-step
+
+Thus $S_3$ provides the requested sharp example:
+
+:::
+
+:::
+
 \[
 \dim_{\mathbb C}V=2=\lfloor\sqrt6\rfloor.
 \]

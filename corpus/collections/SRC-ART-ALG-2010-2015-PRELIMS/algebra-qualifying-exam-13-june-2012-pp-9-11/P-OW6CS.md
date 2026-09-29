@@ -46,11 +46,17 @@ f. An irreducible fifth degree polynomial over $\mathbb{Q}$ which is solvable by
 :::
 
 ::: {.solution}
-<1>1. In part (a), take $F=\mathbb Q$,
+
+::: pf
+
+::: pf-step
+
+In part (a), take $F=\mathbb Q$,
 $E=\mathbb Q(a)$, and $K=\mathbb Q(a,\zeta)$, where
 $a=\sqrt[3]{2}>0$ and $\zeta=e^{2\pi i/3}$.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $T^3-2$ is Eisenstein at two and therefore
 irreducible over $\mathbb Q$ [@DF04]. Thus $[E:F]=3>1$.
 The field $E$ is real, whereas $\zeta$ is nonreal, so
@@ -60,11 +66,17 @@ their ratio recovers $\zeta$. Hence $K$ is a splitting
 field in characteristic zero and $K/F$ is Galois [@DF04].
 But $E$ contains only the real root of the irreducible
 polynomial $T^3-2$, so $E/F$ is not normal and is not Galois.
+
 :::
 
-<1>2. No example exists in part (b): $K/E$ is always Galois.
+:::
 
-::: {.proof}
+::: pf-step
+
+No example exists in part (b): $K/E$ is always Galois.
+
+::: pf-proof
+
 For $a\in K$, let $p_a(T)\in F[T]$ and $q_a(T)\in E[T]$
 be its monic minimal polynomials over $F$ and $E$.
 The extension $K/F$ is algebraic, so both exist.
@@ -77,22 +89,34 @@ Thus every element of $K$ is separable over $E$, and
 every irreducible polynomial over $E$ with a root in
 $K$ splits over $K$. This proves that $K/E$ is algebraic,
 normal, and separable, hence Galois.
+
 :::
 
-<1>3. In part (c), take $\mathbb F_2[T]/(T^3+T+1)$.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (c), take $\mathbb F_2[T]/(T^3+T+1)$.
+
+::: pf-proof
+
 The polynomial is nonzero at both $0$ and $1$.
 A reducible cubic over a field has a linear factor,
 so this polynomial is irreducible over $\mathbb F_2$.
 The quotient is consequently a field [@DF04]. Polynomial
 division gives the basis $1,[T],[T^2]$ over $\mathbb F_2$,
 so it has exactly $2^3=8$ elements.
+
 :::
 
-<1>4. No example exists in part (d).
+:::
 
-::: {.proof}
+::: pf-step
+
+No example exists in part (d).
+
+::: pf-proof
+
 Let $L$ be the splitting field of $T^5+T-1$ over $\mathbb Q$.
 This is a finite Galois extension, since the base field
 has characteristic zero [@DF04]. Its automorphisms act
@@ -105,23 +129,35 @@ $[L:\mathbb Q]=|\operatorname{Gal}(L/\mathbb Q)|\mid120$.
 For an intermediate field $E$, the tower law makes
 $[E:\mathbb Q]$ a divisor of $[L:\mathbb Q]$ and hence
 of $120$. Since $7\nmid120$, degree seven is impossible.
+
 :::
 
-<1>5. In part (e), take $F=\mathbb F_2(t)$ and $K=F(u)$
+:::
+
+::: pf-step
+
+In part (e), take $F=\mathbb F_2(t)$ and $K=F(u)$
 with $u^2=t$, where $t$ is transcendental.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $T^2-t$ has no root in $F$: an equality
 $(A(t)/B(t))^2=t$, with nonzero polynomials $A,B$, would
 give $2\deg A=1+2\deg B$, impossible by parity.
 It is therefore irreducible, giving $[K:F]=2$.
 In $K[T]$ it equals $(T-u)^2$, so the minimal polynomial
 of $u$ has a repeated root. Hence $K/F$ is not separable.
+
 :::
 
-<1>6. In part (f), take $f(T)=T^5-2$.
+:::
 
-::: {.proof}
+::: pf-step
+
+In part (f), take $f(T)=T^5-2$.
+
+::: pf-proof
+
 Eisenstein's criterion at two proves irreducibility over
 $\mathbb Q$ [@DF04]. Let $b=\sqrt[5]{2}$ and choose a
 primitive fifth root of unity $\xi$. The roots of $f$
@@ -136,7 +172,13 @@ Each step adjoins an element having a positive integral
 power in the preceding field. Thus every root of the
 irreducible fifth-degree polynomial lies in a radical
 extension, which is exactly solvability by radicals.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

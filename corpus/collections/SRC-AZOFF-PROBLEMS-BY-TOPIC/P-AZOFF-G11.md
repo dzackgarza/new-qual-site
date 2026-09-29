@@ -41,7 +41,11 @@ $[-R,-\varepsilon]$, a clockwise upper semicircle of radius
 $\varepsilon$ about $0$, $[\varepsilon,R]$, and the large upper
 semicircle of radius $R$.
 
-<1>1. Near $z=0$,
+::: pf
+
+::: {.pf-step #s1}
+
+Near $z=0$,
 $$
 F(z)
 =
@@ -50,7 +54,8 @@ F(z)
 +O(z).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The exponential expansions give
 $$
 e^{iz}
@@ -70,16 +75,22 @@ $$
 3z^2+4iz^3+O(z^4).
 $$
 Divide by $z^3$.
+
 :::
 
-<1>2. The small indented semicircle contributes
+:::
+
+::: {.pf-step #s2}
+
+The small indented semicircle contributes
 $$
 -3\pi i
 $$
 as $\varepsilon\to0$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 F(z)=\frac3z+H(z),
 $$
@@ -99,12 +110,18 @@ $$
 $$
 The integral of $H$ tends to zero because its arc has length
 $\pi\varepsilon$.
+
 :::
 
-<1>3. The integral over the large upper semicircle tends to zero as
+:::
+
+::: {.pf-step #s3}
+
+The integral over the large upper semicircle tends to zero as
 $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 In the upper half-plane,
 $$
 \abs{e^{iz}}\leq1
@@ -128,9 +145,14 @@ $$
 \frac{6\pi}{R^2}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. The symmetric indented real-axis integrals satisfy
+:::
+
+::: {.pf-step #s4}
+
+The symmetric indented real-axis integrals satisfy
 $$
 \lim_{\substack{R\to\infty\\ \varepsilon\to0^+}}
 \left(
@@ -142,21 +164,28 @@ $$
 3\pi i.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The indentation removes the only singularity of $F$, so the function is
 holomorphic inside the indented contour. Cauchy's theorem gives total
 contour integral zero. Thus the real-axis portions are the negatives of the
-two arc integrals. Steps <1>2 and <1>3 give the displayed limit.
+two arc integrals. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the displayed limit.
+
 :::
 
-<1>5. For real $x\neq0$,
+:::
+
+::: {.pf-step #s5}
+
+For real $x\neq0$,
 $$
 \operatorname{Im}F(x)
 =
 4\frac{\sin^3x}{x^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The triple-angle identity
 $$
 \sin(3x)=3\sin x-4\sin^3x
@@ -167,9 +196,14 @@ $$
 $$
 Taking the imaginary part of the numerator of $F(x)$ and dividing by
 $x^3$ gives the claim.
+
 :::
 
-<1>6. The whole-line integral satisfies
+:::
+
+::: {.pf-step #s6}
+
+The whole-line integral satisfies
 $$
 4\int_{-\infty}^{\infty}
 \frac{\sin^3x}{x^3}\,dx
@@ -177,14 +211,20 @@ $$
 3\pi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $\sin^3x/x^3$ extends continuously across $0$ with value
 $1$, and it is absolutely integrable at infinity because it is bounded by
-$1/\abs{x}^3$ there. Hence taking imaginary parts in step <1>4 and using
-step <1>5 gives the ordinary improper integral in the display.
+$1/\abs{x}^3$ there. Hence taking imaginary parts in step [](#s4){.pf-ref} and using
+step [](#s5){.pf-ref} gives the ordinary improper integral in the display.
+
 :::
 
-<1>7. The requested value is
+:::
+
+::: {.pf-step #s7}
+
+The requested value is
 $$
 \boxed{
 \int_0^{\infty}
@@ -194,8 +234,9 @@ $$
 }
 $$
 
-::: {.proof}
-The function $\sin^3x/x^3$ is even. Therefore step <1>6 becomes
+::: pf-proof
+
+The function $\sin^3x/x^3$ is even. Therefore step [](#s6){.pf-ref} becomes
 $$
 8\int_0^{\infty}
 \frac{\sin^3x}{x^3}\,dx
@@ -203,11 +244,17 @@ $$
 3\pi.
 $$
 Divide by $8$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

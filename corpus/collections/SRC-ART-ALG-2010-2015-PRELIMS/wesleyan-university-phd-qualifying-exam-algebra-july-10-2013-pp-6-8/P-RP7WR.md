@@ -40,10 +40,15 @@ Explain.
 In part (a), every finite group occurs. In part (b), exactly
 the finite cyclic groups occur, including the trivial group.
 
-<1>1. Every finite group embeds in the automorphism group of
+::: pf
+
+::: pf-step
+
+Every finite group embeds in the automorphism group of
 a field.
 
-::: {.proof}
+::: pf-proof
+
 Given a finite group $G$, take algebraically independent
 indeterminates $X_h$ indexed by $h\in G$, and put
 $F=\mathbb Q(X_h:h\in G)$. For $g\in G$, the permutation
@@ -63,11 +68,17 @@ Thus $g\mapsto\sigma_g$ is a homomorphism to
 $\operatorname{Aut}(F)$. If $g\ne1$, then
 $\sigma_g(X_1)=X_g\ne X_1$, so it is not the identity.
 This proves injectivity and realizes $G$ as a subgroup.
+
 :::
 
-<1>2. The full automorphism group of any finite field is cyclic.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The full automorphism group of any finite field is cyclic.
+
+::: pf-proof
+
 Let $F$ be finite. Its characteristic is a prime $p$: the
 additive order of $1$ is finite and exceeds one, and a
 composite order would give zero divisors by factoring it.
@@ -99,13 +110,19 @@ gives at most the total degree $n$.
 The $n$ powers of $\varphi$ are already distinct automorphisms,
 so they exhaust $\operatorname{Aut}(F)$. It is therefore
 $\langle\varphi\rangle\cong C_n$.
+
 :::
 
-<1>3. Exactly the finite cyclic groups are realized in part (b).
+:::
 
-::: {.proof}
+::: pf-step
+
+Exactly the finite cyclic groups are realized in part (b).
+
+::: pf-proof
+
 Every subgroup of a cyclic group is cyclic [@DF04], so
-step <1>2 proves necessity. To prove existence for every
+step [](#s2){.pf-ref} proves necessity. To prove existence for every
 order $n\geq1$, fix a prime $p$ and work in an algebraic
 closure of $\mathbb F_p$. The polynomial $T^{p^n}-T$ has
 derivative $-1$, so it has exactly $p^n$ distinct roots there.
@@ -117,8 +134,14 @@ $$
 $$
 The first identity follows by iterating the characteristic-$p$
 binomial identity, and the other two by multiplicativity.
-Thus $F_n$ is a field of cardinality $p^n$. Step <1>2 gives
+Thus $F_n$ is a field of cardinality $p^n$. Step [](#s2){.pf-ref} gives
 $\operatorname{Aut}(F_n)\cong C_n$, realizing the prescribed
 cyclic group. For $n=1$ the group is trivial.
+
 :::
+
+:::
+
+:::
+
 :::

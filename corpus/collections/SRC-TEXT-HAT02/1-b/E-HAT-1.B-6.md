@@ -41,34 +41,53 @@ k\longmapsto m k
 \]
 for some nonzero integer $m$.
 
-<1>1. Its universal graph-of-spaces cover is a tree of copies of $\mathbb R$ joined by strips $\mathbb R\times I$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Its universal graph-of-spaces cover is a tree of copies of $\mathbb R$ joined by strips $\mathbb R\times I$.
+
+::: pf-proof
+
 The classifying space of each cyclic vertex or edge group can be chosen to be $S^1$.
 Its universal cover is $\mathbb R$.
 Hence each lifted vertex space is a line and each lifted edge mapping cylinder is a strip.
 The incidence graph of the lifted pieces is the Bass--Serre tree $T$.
+
 :::
 
-<1>2. Every lifted boundary map of an edge strip is an affine homeomorphism of $\mathbb R$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every lifted boundary map of an edge strip is an affine homeomorphism of $\mathbb R$.
+
+::: pf-proof
+
 A map $S^1\to S^1$ inducing multiplication by a nonzero integer $m$ on fundamental groups lifts to
 \[
 t\longmapsto mt+c
 \]
 on universal covers.
 This is a homeomorphism of $\mathbb R$.
+
 :::
 
-<1>3. The universal cover is homeomorphic to
+:::
+
+::: pf-step
+
+The universal cover is homeomorphic to
 \[
 \boxed{T\times\mathbb R}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Choose a coordinate on one vertex line and propagate coordinates across adjacent edge strips.
-By <1>2, each boundary attachment can be straightened to the identity by an affine reparametrization of the new vertex line.
+By step [](#s2){.pf-ref}, each boundary attachment can be straightened to the identity by an affine reparametrization of the new vertex line.
 Since the incidence graph $T$ is a tree, each new vertex is reached by a unique path from the initial vertex, so no conflicting coordinate choices arise.
 The resulting tree of lines and strips is exactly the product cell structure on $T\times\mathbb R$.
-:::
 
 Now specialize to the ray
 \[
@@ -77,7 +96,13 @@ G_1\xrightarrow{\times2}G_2\xrightarrow{\times3}G_3\xrightarrow{\times4}\cdots,
 G_k\cong\mathbb Z.
 \]
 
-<1>4. Since the underlying graph is a tree, the graph product is the direct limit
+:::
+
+:::
+
+::: pf-step
+
+Since the underlying graph is a tree, the graph product is the direct limit
 \[
 \pi_1(K\Gamma)
 \cong
@@ -86,14 +111,23 @@ G_k\cong\mathbb Z.
 \mathbb Z\xrightarrow{2}\mathbb Z\xrightarrow{3}\mathbb Z\xrightarrow{4}\cdots
 \bigr).
 \]
-::: {.proof}
+
+::: pf-proof
+
 There are no stable letters because a maximal tree is the whole underlying ray.
 The fundamental group presentation therefore takes the free product of the vertex groups and imposes exactly the edge identifications.
 This is the colimit of the displayed directed system.
+
 :::
 
-<1>5. This direct limit is isomorphic to $\mathbb Q$.
-::: {.proof}
+:::
+
+::: pf-step
+
+This direct limit is isomorphic to $\mathbb Q$.
+
+::: pf-proof
+
 Embed the $k$th copy of $\mathbb Z$ into $\mathbb Q$ by
 \[
 \phi_k(r)=\frac{r}{k!}.
@@ -114,13 +148,20 @@ Hence
 \[
 \varinjlim G_k\cong\mathbb Q.
 \]
+
 :::
 
-<1>6. To obtain the subgroup of rationals whose denominator is a power of $2$, replace the sequence by
+:::
+
+::: pf-step
+
+To obtain the subgroup of rationals whose denominator is a power of $2$, replace the sequence by
 \[
 \mathbb Z\xrightarrow{2}\mathbb Z\xrightarrow{2}\mathbb Z\xrightarrow{2}\cdots.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The same direct-limit calculation embeds the $k$th copy as
 \[
 2^{-(k-1)}\mathbb Z.
@@ -131,5 +172,11 @@ Therefore the limit is
 =\mathbb Z[1/2]
 =\left\{\frac a{2^k}:a\in\mathbb Z,\ k\ge0\right\}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

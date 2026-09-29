@@ -31,10 +31,16 @@ Prove that there is no holomorphic function $g : U \setminus \{z_0\} \to \mathbb
 :::
 
 ::: {.solution}
-<1>1. The logarithmic derivative of $f$ has a nonzero integral
+
+::: pf
+
+::: {.pf-step #s1}
+
+The logarithmic derivative of $f$ has a nonzero integral
 around a sufficiently small circle about its pole.
 
-::: {.proof}
+::: pf-proof
+
 Let $m\geq1$ be the order of the pole. The local Laurent
 expansion gives
 $$
@@ -53,11 +59,17 @@ and the circle parametrization give
 $$
 \int_\gamma\frac{f'}f\,dz=-2\pi i m\ne0.
 $$
+
 :::
 
-<1>2. A holomorphic logarithm would force the same integral to vanish.
+:::
 
-::: {.proof}
+::: pf-step
+
+A holomorphic logarithm would force the same integral to vanish.
+
+::: pf-proof
+
 Suppose the required $g$ existed. On the punctured disk,
 differentiation of $e^g=f$ gives $f'/f=g'$. But $g'$ has
 the single-valued primitive $g$ there, so
@@ -68,6 +80,12 @@ Indeed, parametrizing the circle makes the integrand the
 derivative of $g(\gamma(t))$, and the starting and ending
 values agree. This uses the primitive, not simple
 connectedness of the punctured domain. The zero integral
-contradicts step <1>1, proving that no such $g$ exists.
+contradicts step [](#s1){.pf-ref}, proving that no such $g$ exists.
+
 :::
+
+:::
+
+:::
+
 :::

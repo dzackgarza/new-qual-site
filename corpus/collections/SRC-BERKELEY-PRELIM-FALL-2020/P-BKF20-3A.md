@@ -41,7 +41,12 @@ Let $X$ be a metric space and let $T_1\supseteq T_2\supseteq\cdots$ be nonempty 
 :::
 
 ::: {.solution}
-<1>1. Suppose for contradiction that
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose for contradiction that
 $$
 \bigcap_{n=1}^{\infty}T_n=\varnothing.
 $$
@@ -51,7 +56,8 @@ $$
 $$
 is an open cover of $T_1$.
 
-::: {.proof}
+::: pf-proof
+
 Each $T_n$ is closed, so $X\setminus T_n$ is open. The assumed empty
 intersection implies, by De Morgan's law,
 $$
@@ -62,15 +68,21 @@ X\setminus\bigcap_{n=1}^{\infty}T_n
 \bigcup_{n=1}^{\infty}(X\setminus T_n).
 $$
 In particular these open sets cover $T_1$.
+
 :::
 
-<1>2. There is an integer $N\ge1$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is an integer $N\ge1$ such that
 $$
 T_1\subseteq X\setminus T_N.
 $$
 
-::: {.proof}
-Since $T_1$ is compact, step <1>1 has a finite subcover. Thus there are
+::: pf-proof
+
+Since $T_1$ is compact, step [](#s1){.pf-ref} has a finite subcover. Thus there are
 indices
 $$
 n_1,\ldots,n_k
@@ -97,16 +109,22 @@ X\setminus T_N
 $$
 for every $j$. Hence the whole finite union is contained in
 $X\setminus T_N$, proving the claim.
+
 :::
 
-<1>3. Step <1>2 contradicts the nonemptiness of $T_N$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Step [](#s2){.pf-ref} contradicts the nonemptiness of $T_N$.
+
+::: pf-proof
+
 Because the sets are nested,
 $$
 T_N\subseteq T_1.
 $$
-Step <1>2 says that every point of $T_1$ lies outside $T_N$. Therefore
+Step [](#s2){.pf-ref} says that every point of $T_1$ lies outside $T_N$. Therefore
 $$
 T_N
 \subseteq
@@ -116,23 +134,35 @@ T_1\cap(X\setminus T_N)
 $$
 Thus $T_N=\varnothing$, contrary to the hypothesis that every $T_n$ is
 nonempty.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \bigcap_{n=1}^{\infty}T_n\ne\varnothing.
 }
 $$
 
-::: {.proof}
-The contrary assumption in step <1>1 leads to the contradiction in
-step <1>3.
+::: pf-proof
+
+The contrary assumption in step [](#s1){.pf-ref} leads to the contradiction in
+step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

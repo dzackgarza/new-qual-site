@@ -33,12 +33,19 @@ Let $K = \mathbb{Q}(\sqrt{2}, \sqrt{3}, i)$ as a subfield of $\mathbb{C}$, where
 :::
 
 ::: {.solution}
-<1>1. The real subfield
+
+::: pf
+
+::: {.pf-step #s1}
+
+The real subfield
 \[
 L=\mathbb Q(\sqrt2,\sqrt3)
 \]
 has degree $4$ over $\mathbb Q$.
-::: {.proof}
+
+::: pf-proof
+
 The field $\mathbb Q(\sqrt2)$ has degree $2$ over $\mathbb Q$.
 Moreover,
 \[
@@ -59,11 +66,18 @@ Thus adjoining $\sqrt3$ gives another quadratic extension, and
 \[
 [L:\mathbb Q]=4.
 \]
+
 :::
 
-<1>2. The extension $K/\mathbb Q$ has degree $8$ and is Galois.
-::: {.proof}
-The field $L$ from <1>1 is contained in $\mathbb R$, so
+:::
+
+::: {.pf-step #s2}
+
+The extension $K/\mathbb Q$ has degree $8$ and is Galois.
+
+::: pf-proof
+
+The field $L$ from step [](#s1){.pf-ref} is contained in $\mathbb R$, so
 \[
 i\notin L.
 \]
@@ -81,13 +95,20 @@ The field $K$ is the splitting field over $\mathbb Q$ of
 (x^2-2)(x^2-3)(x^2+1).
 \]
 This polynomial is separable in characteristic zero, so $K/\mathbb Q$ is Galois.
+
 :::
 
-<1>3. The Galois group is
+:::
+
+::: pf-step
+
+The Galois group is
 \[
 \operatorname{Gal}(K/\mathbb Q)\cong C_2\times C_2\times C_2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Each independent choice of signs
 \[
 \sqrt2\longmapsto\varepsilon_2\sqrt2,
@@ -100,19 +121,26 @@ i\longmapsto\varepsilon_i i,
 \]
 extends to a $\mathbb Q$-automorphism of $K$.
 These give eight distinct automorphisms.
-By <1>2, a Galois extension of degree $8$ has exactly eight $\mathbb Q$-automorphisms, so these are all of them.
+By step [](#s2){.pf-ref}, a Galois extension of degree $8$ has exactly eight $\mathbb Q$-automorphisms, so these are all of them.
 
 Every nonidentity sign change has order $2$, and the three elementary sign changes commute.
 Hence the group is the elementary abelian group of order $8$.
 This proves part (a).
+
 :::
 
-<1>4. Set
+:::
+
+::: {.pf-step #s4}
+
+Set
 \[
 \beta=\sqrt2+\sqrt3+i.
 \]
 No nonidentity element of $\operatorname{Gal}(K/\mathbb Q)$ fixes $\beta$.
-::: {.proof}
+
+::: pf-proof
+
 Suppose the sign change $(\varepsilon_2,\varepsilon_3,\varepsilon_i)$ fixes $\beta$.
 Then
 \[
@@ -139,23 +167,36 @@ Thus
 \varepsilon_2=\varepsilon_3=1.
 \]
 So the stabilizer of $\beta$ is trivial.
+
 :::
 
-<1>5. One has
+:::
+
+::: pf-step
+
+One has
 \[
 K=\mathbb Q(\beta).
 \]
-::: {.proof}
+
+::: pf-proof
+
 By the Galois correspondence, the stabilizer of $\beta$ in $\operatorname{Gal}(K/\mathbb Q)$ is
 \[
 \operatorname{Gal}(K/\mathbb Q(\beta)).
 \]
-By <1>4 this subgroup is trivial.
+By step [](#s4){.pf-ref} this subgroup is trivial.
 Hence
 \[
 [K:\mathbb Q(\beta)]=1,
 \]
 so $K=\mathbb Q(\beta)$.
 This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

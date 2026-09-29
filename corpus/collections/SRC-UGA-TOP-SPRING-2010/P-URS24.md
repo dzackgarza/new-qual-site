@@ -25,28 +25,63 @@ Describe, with proof, all open subsets of $X$ with respect to this topology.
 :::
 
 ::: {.solution}
-<1>1. $U \subseteq X$ is open iff $\pi^{-1}(U)$ is open in $\mathbb{R}$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$U \subseteq X$ is open iff $\pi^{-1}(U)$ is open in $\mathbb{R}$.
+
+::: pf-proof
+
 definition of the quotient topology.
+
 :::
 
-<1>2. $\pi^{-1}(U)$ is a union of equivalence classes, i.e. a union of cosets of $\mathbb{Q}$ in $\mathbb{R}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\pi^{-1}(U)$ is a union of equivalence classes, i.e. a union of cosets of $\mathbb{Q}$ in $\mathbb{R}$.
+
+::: pf-proof
+
 the equivalence classes are exactly the cosets $x + \mathbb{Q}$.
+
 :::
 
-<1>3. A union of cosets of $\mathbb{Q}$ is open in $\mathbb{R}$ iff it is either empty or all of $\mathbb{R}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+A union of cosets of $\mathbb{Q}$ is open in $\mathbb{R}$ iff it is either empty or all of $\mathbb{R}$.
+
+::: pf-proof
+
 if $\pi^{-1}(U)$ is a nonempty open set, it contains an open interval $(a, b)$; but every coset of $\mathbb{Q}$ meets $(a, b)$ (since $\mathbb{Q}$ is dense), so $\pi^{-1}(U)$ contains every coset, hence equals $\mathbb{R}$.
+
 :::
 
-<1>4. Hence the only open subsets of $X$ are $\varnothing$ and $X$.
-::: {.proof}
-<1>1 and <1>3.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
+::: {.pf-step #s4}
+
+Hence the only open subsets of $X$ are $\varnothing$ and $X$.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -36,7 +36,11 @@ $$
 =-2\,\frac{1-z/2}{1-1/z}.
 $$
 
-<1>1. The Laurent series
+::: pf
+
+::: {.pf-step #s1}
+
+The Laurent series
 $$
 L(z)\coloneqq
 \log2+i\pi
@@ -45,7 +49,8 @@ L(z)\coloneqq
 $$
 converges normally on compact subsets of $1<\abs{z}<2$.
 
-::: {.proof}
+::: pf-proof
+
 On this annulus,
 $$
 \abs{\frac z2}<1,
@@ -60,14 +65,20 @@ $$
 $$
 converge normally on compact subannuli. The displayed series for
 $L$ is their difference plus the constant $\log2+i\pi$.
+
 :::
 
-<1>2. On $1<\abs{z}<2$,
+:::
+
+::: {.pf-step #s2}
+
+On $1<\abs{z}<2$,
 $$
 \exp L(z)=\frac{z(2-z)}{1-z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\abs{w}<1$,
 $$
 -\sum_{n=1}^{\infty}\frac{w^n}{n}=\Log(1-w),
@@ -88,9 +99,14 @@ $$
 &=\frac{z(2-z)}{1-z}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. The requested Laurent series is
+:::
+
+::: {.pf-step #s3}
+
+The requested Laurent series is
 $$
 \boxed{
 \log2+i\pi
@@ -99,16 +115,23 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>1 it is holomorphic on the specified annulus, and by step
-<1>2 its exponential is the given nonvanishing holomorphic function.
+::: pf-proof
+
+By step [](#s1){.pf-ref} it is holomorphic on the specified annulus, and by step
+[](#s2){.pf-ref} its exponential is the given nonvanishing holomorphic function.
 Thus it is a branch of its logarithm there.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 gives the required Laurent series and its domain of
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required Laurent series and its domain of
 convergence.
+
 :::
+
+:::
+
 :::

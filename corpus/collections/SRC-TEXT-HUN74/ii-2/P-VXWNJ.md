@@ -36,16 +36,29 @@ Write $G$ as the direct sum of its Sylow subgroups,
 G=\bigoplus_{p\mid |G|}G_p.
 \]
 
-<1>1. At least one Sylow subgroup $G_p$ is noncyclic.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+At least one Sylow subgroup $G_p$ is noncyclic.
+
+::: pf-proof
+
 If every $G_p$ were cyclic, then their orders would be pairwise coprime. The
 direct product of finite cyclic groups of pairwise coprime orders is cyclic, so
 $G$ would be cyclic, contrary to hypothesis.
+
 :::
 
-<1>2. A noncyclic finite abelian $p$-group contains a subgroup isomorphic to
+:::
+
+::: {.pf-step #s2}
+
+A noncyclic finite abelian $p$-group contains a subgroup isomorphic to
 $\ZZ_p\oplus\ZZ_p$.
-::: {.proof}
+
+::: pf-proof
+
 By the structure theorem for finite abelian $p$-groups,
 \[
 G_p\cong \ZZ_{p^{a_1}}\oplus\cdots\oplus\ZZ_{p^{a_r}}
@@ -62,11 +75,24 @@ both have order $p$. They lie in distinct direct summands, so
 \langle x,y\rangle=\langle x\rangle\oplus\langle y\rangle
 \cong\ZZ_p\oplus\ZZ_p.
 \]
+
 :::
 
-<1>3. Hence $G$ contains a subgroup isomorphic to $\ZZ_p\oplus\ZZ_p$ for some
-prime $p$.
-::: {.proof}
-Choose the prime supplied by <1>1 and apply <1>2 inside the subgroup $G_p\le G$.
 :::
+
+::: pf-step
+
+Hence $G$ contains a subgroup isomorphic to $\ZZ_p\oplus\ZZ_p$ for some
+prime $p$.
+
+::: pf-proof
+
+Choose the prime supplied by step [](#s1){.pf-ref} and apply step [](#s2){.pf-ref} inside the subgroup $G_p\le G$.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -50,12 +50,17 @@ $$
 be the linear span of $X$. Then $X$ is nondegenerate in $\PP^r$, and its
 degree in the span is still $4$.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 2\le r\le4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The case $r=1$ is impossible: an integral one-dimensional closed subscheme
 of $\PP^1$ is $\PP^1$ itself and has degree $1$.
 
@@ -67,29 +72,41 @@ By [[P-AGH434RATIONALNORMALCURVE|Exercise IV.3.4(b)]], a nondegenerate curve
 of degree at most its ambient dimension must have degree equal to that
 dimension. Hence $r=4$.
 Thus $2\le r\le4$.
+
 :::
 
-<1>2. If $r=4$, then
+:::
+
+::: {.pf-step #s2}
+
+If $r=4$, then
 $$
 g(X)=0
 $$
 and $X$ is the rational normal quartic in $\PP^4$ up to projective
 automorphism.
 
-::: {.proof}
+::: pf-proof
+
 This is exactly
 [[P-AGH434RATIONALNORMALCURVE|Exercise IV.3.4(b)]] with
 $$
 d=r=4.
 $$
+
 :::
 
-<1>3. If $r=2$, then
+:::
+
+::: {.pf-step #s3}
+
+If $r=2$, then
 $$
 g(X)=3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 In this case $X$ is a nonsingular plane curve of degree $4$. The plane-curve
 genus formula gives
 $$
@@ -98,14 +115,20 @@ g(X)
 \frac{(4-1)(4-2)}2
 =3.
 $$
+
 :::
 
-<1>4. If $r=3$, then
+:::
+
+::: {.pf-step #s4}
+
+If $r=3$, then
 $$
 g(X)\in\{0,1\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $X\subseteq\PP^3$ is nondegenerate,
 [[P-AGH435PROJECTIONFROMSPACECURVE|Exercise IV.3.5(b)]] gives
 $$
@@ -146,32 +169,44 @@ H^0(X,\mcl)
 $$
 injective, so the right side has dimension at least $4$. This contradiction
 excludes genus $2$.
+
 :::
 
-<1>5. The alternatives in part (a) are exactly:
+:::
+
+::: {.pf-step #s5}
+
+The alternatives in part (a) are exactly:
 
 1. $g=0$, with $X$ a rational normal quartic in $\PP^4$ or a nonsingular
    rational quartic in $\PP^3$;
 2. $X\subseteq\PP^2$, in which case $g=3$;
 3. $X\subseteq\PP^3$ and $g=1$.
 
-::: {.proof}
-Steps <1>1--<1>4 leave only the stated cases.
+::: pf-proof
 
-If $r=4$, step <1>2 gives the rational normal quartic.
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} leave only the stated cases.
+
+If $r=4$, step [](#s2){.pf-ref} gives the rational normal quartic.
 If $r=3$ and $g=0$, then $X\cong\PP^1$ and the given degree-$4$ embedding
 is precisely a nonsingular rational quartic in $\PP^3$ in the sense of
 Hartshorne II.7.8.6.
-The remaining $r=3$ possibility is $g=1$, and step <1>3 handles $r=2$.
+The remaining $r=3$ possibility is $g=1$, and step [](#s3){.pf-ref} handles $r=2$.
 This proves (a).
+
 :::
 
-<1>6. Assume now that $g(X)=1$. Then
+:::
+
+::: {.pf-step #s6}
+
+Assume now that $g(X)=1$. Then
 $$
 h^0(X,\mco_X(2))=8.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Part (a) puts $X$ nondegenerately in $\PP^3$. Let
 $$
 H=\mco_X(1).
@@ -195,15 +230,21 @@ h^0(X,\mco_X(2))
 8+1-1
 =8.
 $$
+
 :::
 
-<1>7. The vector space of quadrics containing $X$ has dimension at least
+:::
+
+::: {.pf-step #s7}
+
+The vector space of quadrics containing $X$ has dimension at least
 $2$:
 $$
 h^0(\PP^3,\mci_X(2))\ge2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Twist
 $$
 0
@@ -229,24 +270,35 @@ The middle space has dimension
 $$
 \binom{3+2}{2}=10,
 $$
-whereas step <1>6 gives dimension $8$ for the target. Therefore the kernel
+whereas step [](#s6){.pf-ref} gives dimension $8$ for the target. Therefore the kernel
 has dimension at least
 $$
 10-8=2.
 $$
+
 :::
 
-<1>8. Every nonzero quadric surface containing $X$ is irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+
+Every nonzero quadric surface containing $X$ is irreducible.
+
+::: pf-proof
+
 A reducible quadric surface in $\PP^3$ is a union of two planes, allowing the
 two planes to coincide. If such a quadric contained the irreducible curve
 $X$, irreducibility of $X$ would force $X$ to lie in one of those planes.
 This contradicts part (a), which places the genus-$1$ case nondegenerately
 in $\PP^3$. Hence every containing quadric is irreducible.
+
 :::
 
-<1>9. Choose two linearly independent quadrics
+:::
+
+::: {.pf-step #s9}
+
+Choose two linearly independent quadrics
 $$
 Q_1,Q_2\in H^0(\PP^3,\mci_X(2)).
 $$
@@ -259,8 +311,9 @@ $$
 P_Z(m)=4m.
 $$
 
-::: {.proof}
-Step <1>7 supplies the independent quadrics, and step <1>8 makes them
+::: pf-proof
+
+Step [](#s7){.pf-ref} supplies the independent quadrics, and step [](#s8){.pf-ref} makes them
 irreducible. Since they are distinct irreducible polynomials, they have no
 common factor. Thus they form a regular sequence in
 $$
@@ -292,15 +345,21 @@ P_Z(m)
 &=4m.
 \end{aligned}
 $$
+
 :::
 
-<1>10. One has
+:::
+
+::: {.pf-step #s10}
+
+One has
 $$
 X=Z
 $$
 scheme-theoretically.
 
-::: {.proof}
+::: pf-proof
+
 Because both quadrics contain $X$, there is a closed immersion
 $$
 X\hookrightarrow Z.
@@ -312,7 +371,7 @@ P_X(m)
 4m+1-g
 =4m.
 $$
-Step <1>9 gives the same polynomial for $Z$.
+Step [](#s9){.pf-ref} gives the same polynomial for $Z$.
 
 Let $\mathcal K$ be the kernel of the induced surjection
 $$
@@ -328,23 +387,35 @@ $$
 \mathcal K=0.
 $$
 Therefore $X=Z$ as schemes.
+
 :::
 
-<1>11. The genus-$1$ quartic is a complete intersection of two irreducible
+:::
+
+::: {.pf-step #s11}
+
+The genus-$1$ quartic is a complete intersection of two irreducible
 quadric surfaces in $\PP^3$.
 
-::: {.proof}
-Steps <1>8--<1>10 produce irreducible quadric surfaces $V(Q_1)$ and
+::: pf-proof
+
+Steps [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} produce irreducible quadric surfaces $V(Q_1)$ and
 $V(Q_2)$ and prove
 $$
 \boxed{X=V(Q_1)\cap V(Q_2)}
 $$
 scheme-theoretically. This proves (b).
+
 :::
 
-<1>12. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves (a), and step <1>11 proves (b).
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves (a), and step [](#s11){.pf-ref} proves (b).
+
+:::
+
+:::
+
 :::

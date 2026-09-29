@@ -38,7 +38,11 @@ g_n\longrightarrow g
 $$
 uniformly on $\RR$.
 
-<1>1. For every $\varepsilon>0$ there exists $\delta>0$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+For every $\varepsilon>0$ there exists $\delta>0$ such that
 $$
 \abs{u-v}<\delta
 \quad\Longrightarrow\quad
@@ -46,11 +50,17 @@ $$
 $$
 for all $u,v\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 This is exactly the uniform continuity of $f$.
+
 :::
 
-<1>2. For the $\delta$ from step <1>1, there exists $N$ such that
+:::
+
+::: {.pf-step #s2}
+
+For the $\delta$ from step [](#s1){.pf-ref}, there exists $N$ such that
 $$
 n\geq N
 \quad\Longrightarrow\quad
@@ -58,22 +68,29 @@ n\geq N
 $$
 for every $x\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 Since $g_n\to g$ uniformly, the definition of uniform convergence applied to
 the positive number $\delta$ gives such an $N$.
+
 :::
 
-<1>3. For every $n\geq N$ and every $x\in\RR$,
+:::
+
+::: {.pf-step #s3}
+
+For every $n\geq N$ and every $x\in\RR$,
 $$
 \abs{f(g_n(x))-f(g(x))}<\varepsilon.
 $$
 
-::: {.proof}
-Fix $n\geq N$ and $x\in\RR$. By step <1>2,
+::: pf-proof
+
+Fix $n\geq N$ and $x\in\RR$. By step [](#s2){.pf-ref},
 $$
 \abs{g_n(x)-g(x)}<\delta.
 $$
-Applying step <1>1 with
+Applying step [](#s1){.pf-ref} with
 $$
 u=g_n(x),
 \qquad
@@ -84,12 +101,18 @@ $$
 \abs{f(g_n(x))-f(g(x))}<\varepsilon.
 $$
 This is the claimed estimate.
+
 :::
 
-<1>4. The sequence $(f\circ g_n)$ converges uniformly to $f\circ g$.
+:::
 
-::: {.proof}
-Step <1>3 gives, for every $\varepsilon>0$, an $N$ such that
+::: {.pf-step #s4}
+
+The sequence $(f\circ g_n)$ converges uniformly to $f\circ g$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives, for every $\varepsilon>0$, an $N$ such that
 $$
 n\geq N
 \quad\Longrightarrow\quad
@@ -98,11 +121,17 @@ n\geq N
 \varepsilon
 $$
 for every $x\in\RR$. This is uniform convergence.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves the required uniform convergence.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the required uniform convergence.
+
+:::
+
+:::
+
 :::

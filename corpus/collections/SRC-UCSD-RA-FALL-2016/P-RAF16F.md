@@ -33,8 +33,15 @@ Prove that $f = 0$ identically on $[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. Convert the derivative moments into moments of $f$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Convert the derivative moments into moments of $f$.
+
+::: pf-proof
+
 Fix $k\ge1$. Integration by parts gives
 \[
 \int_0^1 x^k f'(x)\,dx
@@ -54,10 +61,17 @@ By linearity,
 \int_0^1 p(x)f(x)\,dx=0
 \]
 for every polynomial $p$.
+
 :::
 
-<1>2. Use polynomial density to test against $f$ itself.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use polynomial density to test against $f$ itself.
+
+::: pf-proof
+
 By the Weierstrass approximation theorem, there are polynomials $p_n$ such that
 \[
 \|p_n-f\|_\infty\longrightarrow0.
@@ -80,5 +94,11 @@ Hence $f=0$ almost everywhere. Since $f$ is continuous,
 \[
 \boxed{f\equiv0\text{ on }[0,1].}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

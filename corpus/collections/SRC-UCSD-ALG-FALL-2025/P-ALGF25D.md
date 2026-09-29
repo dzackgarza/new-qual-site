@@ -30,8 +30,15 @@ Prove that if $M$ is a projective $A$-module, then it is flat.
 :::
 
 ::: {.solution}
-<1>1. A projective module is a direct summand of a free module.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A projective module is a direct summand of a free module.
+
+::: pf-proof
+
 Choose a surjection $\pi:F\twoheadrightarrow M$ from a free $A$-module $F$.
 Since $M$ is projective, the identity map on $M$ lifts through $\pi$: there is an $A$-linear map
 \[
@@ -49,10 +56,17 @@ Hence
 \[
 F\cong M\oplus Q.
 \]
+
 :::
 
-<1>2. Tensoring with a free module preserves injections.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Tensoring with a free module preserves injections.
+
+::: pf-proof
+
 Write
 \[
 F\cong\bigoplus_{i\in I}A
@@ -71,12 +85,19 @@ u\otimes_A\operatorname{id}_F
 is the direct sum of copies of $u$.
 It is therefore injective.
 Thus every free $A$-module is flat.
+
 :::
 
-<1>3. A direct summand of a flat module is flat; hence $M$ is flat.
-::: {.proof}
+:::
+
+::: pf-step
+
+A direct summand of a flat module is flat; hence $M$ is flat.
+
+::: pf-proof
+
 Let $u:X'\hookrightarrow X$ be any injective $A$-linear map.
-Using $F\cong M\oplus Q$ from <1>1 and distributivity of tensor product over direct sums, the injective map from <1>2 becomes
+Using $F\cong M\oplus Q$ from step [](#s1){.pf-ref} and distributivity of tensor product over direct sums, the injective map from step [](#s2){.pf-ref} becomes
 \[
 u\otimes_A\operatorname{id}_F
 \cong
@@ -98,5 +119,11 @@ is injective for every injection $u$.
 
 The tensor functor $-\otimes_A M$ is always right exact, and the preceding argument shows that it also preserves monomorphisms.
 Consequently it is exact, so $M$ is flat.
+
 :::
+
+:::
+
+:::
+
 :::

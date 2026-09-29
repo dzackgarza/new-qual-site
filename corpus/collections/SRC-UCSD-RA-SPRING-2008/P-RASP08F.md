@@ -41,10 +41,16 @@ $$
 Find the Fourier transform of $\tau_h T$ in terms of the Fourier transform of $T$.
 :::
 
-
 ::: {.solution}
-<1>1. Translation preserves distributions.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Translation preserves distributions.
+
+::: pf-proof
+
 Fix $h\in\mathbb R$. The map
 \[
 \phi\longmapsto \tau_{-h}\phi,
@@ -58,10 +64,17 @@ Therefore the composition
 \tau_hT(\phi):=T(\tau_{-h}\phi)
 \]
 is linear and continuous on $C_c^\infty(\mathbb R)$. Hence $\tau_hT\in\mathcal D'(\mathbb R)$.
+
 :::
 
-<1>2. Recover the distributional derivative from difference quotients.
-::: {.proof}
+:::
+
+::: pf-step
+
+Recover the distributional derivative from difference quotients.
+
+::: pf-proof
+
 For every test function $\phi$,
 \[
 \left(\frac{\tau_hT-T}{h}\right)(\phi)
@@ -88,10 +101,17 @@ Thus
 \frac{\tau_hT-T}{h}\longrightarrow T'
 \quad\text{in }\mathcal D'(\mathbb R).}
 \]
+
 :::
 
-<1>3. Translation preserves tempered distributions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Translation preserves tempered distributions.
+
+::: pf-proof
+
 If $T\in\mathcal S'(\mathbb R)$, then translation is a continuous linear automorphism of the Schwartz space. Indeed, for every pair of nonnegative integers $m,k$,
 \[
 \sup_x |x^m(\tau_{-h}\phi)^{(k)}(x)|
@@ -102,10 +122,17 @@ is bounded by a finite linear combination of Schwartz seminorms of $\phi$, becau
 \phi\mapsto T(\tau_{-h}\phi)
 \]
 is continuous on $\mathcal S$, so $\tau_hT\in\mathcal S'$.
+
 :::
 
-<1>4. Compute the Fourier transform.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the Fourier transform.
+
+::: pf-proof
+
 With the convention
 \[
 \widehat\phi(\xi)=\int_{\mathbb R}\phi(x)e^{-2\pi i x\xi}\,dx,
@@ -123,5 +150,11 @@ The same identity extends by duality to tempered distributions. Therefore
 \widehat{\tau_hT}
 =e^{2\pi i h\xi}\widehat T.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

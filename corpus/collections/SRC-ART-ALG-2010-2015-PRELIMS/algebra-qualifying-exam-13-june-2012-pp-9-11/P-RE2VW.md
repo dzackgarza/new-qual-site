@@ -36,10 +36,15 @@ Prove that the minimal polynomial of $\alpha$ over $F$ has degree at least $n$.
 Let $G=\operatorname{Gal}(K/F)$, let $m(T)\in F[T]$ be
 the minimal polynomial of $\alpha$, and put $d=\deg m$.
 
-<1>1. The action of $G$ on the roots of $m$ defines a
+::: pf
+
+::: {.pf-step #s1}
+
+The action of $G$ on the roots of $m$ defines a
 nontrivial homomorphism $\rho:G\to S_d$.
 
-::: {.proof}
+::: pf-proof
+
 Normality and separability of the Galois extension imply
 that $m$ splits in $K$ with $d$ distinct roots [@DF04].
 Every $\sigma\in G$ fixes its coefficients, so sends each
@@ -50,21 +55,33 @@ The fixed field $K^G$ is $F$ [@DF04]. Since
 $\alpha\notin F$, some $\sigma\in G$ satisfies
 $\sigma(\alpha)\ne\alpha$. Thus the root action is not
 trivial and $\ker\rho\ne G$.
+
 :::
 
-<1>2. The homomorphism $\rho$ is injective.
+:::
 
-::: {.proof}
+::: pf-step
+
+The homomorphism $\rho$ is injective.
+
+::: pf-proof
+
 For $n\geq5$, the group $A_n$ is simple [@DF04]. Hence
 $G\cong A_n$ has no normal subgroups other than $1$ and
 $G$. The kernel of a homomorphism is normal, and step
-<1>1 excludes the latter possibility. Therefore
+[](#s1){.pf-ref} excludes the latter possibility. Therefore
 $\ker\rho=1$.
+
 :::
 
-<1>3. One has $d\geq n$.
+:::
 
-::: {.proof}
+::: pf-step
+
+One has $d\geq n$.
+
+::: pf-proof
+
 Injectivity gives $|A_n|=n!/2\leq |S_d|=d!$.
 If $d<n$, then $d\leq n-1$, so
 $$
@@ -73,5 +90,11 @@ $$
 where strictness follows from $n\geq5>2$.
 This contradicts $n!/2\leq d!$. Thus $d\geq n$,
 as required.
+
 :::
+
+:::
+
+:::
+
 :::

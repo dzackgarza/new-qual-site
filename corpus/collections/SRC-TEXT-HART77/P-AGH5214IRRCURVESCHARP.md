@@ -59,7 +59,11 @@ $$
 K_X\equiv-2C_0+(2g-2-e)f.
 $$
 
-<1>1. If
+::: pf
+
+::: {.pf-step #s1}
+
+If
 $$
 Y\equiv aC_0+bf
 $$
@@ -68,7 +72,8 @@ $$
 a=Y\cdot f\ge1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The ruling
 $$
 \pi:X\longrightarrow C
@@ -80,14 +85,20 @@ $$
 \deg(\pi|_Y)=Y\cdot f=a.
 $$
 Since $Y$ is not a fibre, this degree is positive.
+
 :::
 
-<1>2. If $a=1$, then $Y$ is a section and
+:::
+
+::: {.pf-step #s2}
+
+If $a=1$, then $Y$ is a section and
 $$
 \boxed{b\ge0}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The finite morphism
 $$
 Y\longrightarrow C
@@ -126,9 +137,14 @@ $$
 \deg N\le0,
 $$
 and therefore $b\ge0$.
+
 :::
 
-<1>3. Assume $a\ge2$. Let
+:::
+
+::: {.pf-step #s3}
+
+Assume $a\ge2$. Let
 $$
 \nu:\widetilde Y\longrightarrow Y
 $$
@@ -145,8 +161,9 @@ $$
 2g(\widetilde Y)-2\ge s(2g-2).
 $$
 
-::: {.proof}
-The total degree is $a$ by step <1>1. In characteristic $p$, the degree of a
+::: pf-proof
+
+The total degree is $a$ by step [](#s1){.pf-ref}. In characteristic $p$, the degree of a
 finite morphism of nonsingular curves factors as its separable degree times
 its inseparable degree, and the latter is a power of $p$:
 $$
@@ -166,9 +183,14 @@ s(2g-2)+\deg R
 s(2g-2),
 $$
 where $R$ is the effective ramification divisor.
+
 :::
 
-<1>4. For $a\ge2$ one has
+:::
+
+::: {.pf-step #s4}
+
+For $a\ge2$ one has
 $$
 \boxed{
 (a-1)(2b-ae)
@@ -176,13 +198,14 @@ $$
 -2(a-s)(g-1).}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The arithmetic genus of the integral curve $Y$ dominates the genus of its
 normalization:
 $$
 p_a(Y)\ge g(\widetilde Y)
 $$
-[[D-G1AEH]]. Hence step <1>3 gives
+[[D-G1AEH]]. Hence step [](#s3){.pf-ref} gives
 $$
 2p_a(Y)-2\ge s(2g-2).
 $$
@@ -201,9 +224,14 @@ Y\cdot(Y+K_X)
 \end{aligned}
 $$
 Comparing with $2s(g-1)$ and rearranging gives the claimed inequality.
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 2\le a\le p-1,
 $$
@@ -212,12 +240,13 @@ $$
 \boxed{b\ge\frac12ae}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $a<p$, no nontrivial power of $p$ divides the inseparable degree in
 $$
 a=s p^r.
 $$
-Thus $r=0$ and $s=a$. Step <1>4 becomes
+Thus $r=0$ and $s=a$. Step [](#s4){.pf-ref} becomes
 $$
 (a-1)(2b-ae)\ge0.
 $$
@@ -226,9 +255,14 @@ $$
 2b-ae\ge0,
 $$
 which is the desired inequality.
+
 :::
 
-<1>6. If
+:::
+
+::: {.pf-step #s6}
+
+If
 $$
 a\ge p,
 $$
@@ -237,12 +271,13 @@ $$
 \boxed{b\ge\frac12ae+1-g}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The separable degree satisfies
 $$
 1\le s\le a.
 $$
-From step <1>4,
+From step [](#s4){.pf-ref},
 $$
 2b-ae
 \ge
@@ -260,10 +295,15 @@ Equivalently,
 $$
 b\ge\frac12ae+1-g.
 $$
-Together with steps <1>2 and <1>5, this proves part (a).
+Together with steps [](#s2){.pf-ref} and [](#s5){.pf-ref}, this proves part (a).
+
 :::
 
-<1>7. Now let
+:::
+
+::: {.pf-step #s7}
+
+Now let
 $$
 D\equiv aC_0+bf
 $$
@@ -282,7 +322,8 @@ D\cdot f>0,
 D\cdot C_0>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 First,
 $$
 D\cdot f=a>0.
@@ -310,9 +351,14 @@ b-ae
 -\frac12ae+\frac{a(g-1)}p
 >0.
 $$
+
 :::
 
-<1>8. Under the hypotheses of step <1>7,
+:::
+
+::: {.pf-step #s8}
+
+Under the hypotheses of step [](#s7){.pf-ref},
 $$
 D\cdot Y>0
 $$
@@ -321,7 +367,8 @@ $$
 Y\ne C_0,f.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 Y\equiv cC_0+df.
@@ -385,21 +432,32 @@ a(g-1)\left(\frac cp-1\right)
 \ge0.
 $$
 The inequality is strict, so $D\cdot Y>0$ also when $c=p$.
+
 :::
 
-<1>9. The divisor $D$ in step <1>7 is ample.
+:::
 
-::: {.proof}
-Step <1>7 gives $D^2>0$ and positive intersection with $C_0$ and $f$.
-Step <1>8 gives positive intersection with every other irreducible curve on
+::: {.pf-step #s9}
+
+The divisor $D$ in step [](#s7){.pf-ref} is ample.
+
+::: pf-proof
+
+Step [](#s7){.pf-ref} gives $D^2>0$ and positive intersection with $C_0$ and $f$.
+Step [](#s8){.pf-ref} gives positive intersection with every other irreducible curve on
 $X$. The Nakai--Moishezon criterion [[T-SRFNAKAI]] therefore gives
 $$
 \boxed{D\text{ is ample}.}
 $$
 This proves the forward implication in part (b).
+
 :::
 
-<1>10. Conversely, if
+:::
+
+::: {.pf-step #s10}
+
+Conversely, if
 $$
 D\equiv aC_0+bf
 $$
@@ -410,7 +468,8 @@ $$
 b>\frac12ae}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Ampleness and Nakai--Moishezon give
 $$
 D\cdot f>0.
@@ -438,11 +497,17 @@ $$
 b>\frac12ae.
 $$
 This proves the converse implication in part (b).
+
 :::
 
-<1>11. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>6 prove part (a), and steps <1>7--<1>10 prove part (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove part (a), and steps [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref} prove part (b).
+
+:::
+
+:::
+
 :::

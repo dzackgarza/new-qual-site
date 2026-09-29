@@ -30,7 +30,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. For a monic quadratic
+
+::: pf
+
+::: pf-step
+
+For a monic quadratic
 \[
 f(x)=x^2+a_1x+a_0,
 \]
@@ -42,12 +47,21 @@ Hence for \(f(x)=x^2-x+2\),
 \[
 M=\begin{pmatrix}0&-2\\1&1\end{pmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Here \(a_1=-1\) and \(a_0=2\), so substituting into the standard companion form gives the displayed matrix.
+
 :::
 
-<1>2. The characteristic polynomial of \(M\) is \(f\).
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The characteristic polynomial of \(M\) is \(f\).
+
+::: pf-proof
+
 We compute
 \[
 \det(xI-M)
@@ -55,19 +69,39 @@ We compute
 =x(x-1)+2
 =x^2-x+2=f(x).
 \]
+
 :::
 
-<1>3. The minimal polynomial of \(M\) has degree \(2\).
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The minimal polynomial of \(M\) has degree \(2\).
+
+::: pf-proof
+
 The vector \(e_1=(1,0)^T\) satisfies
 \[
 Me_1=e_2.
 \]
 Thus \(e_1,Me_1\) are linearly independent, so no nonzero polynomial of degree at most \(1\) can annihilate \(M\). Hence the minimal polynomial has degree at least \(2\). Since \(M\) is \(2\times2\), Cayley-Hamilton implies that its minimal polynomial has degree at most \(2\).
+
 :::
 
-<1>4. Therefore the minimal polynomial of \(M\) is \(f(x)=x^2-x+2\).
-::: {.proof}
-By <1>2, \(f(M)=0\). By <1>3, the monic minimal polynomial has degree \(2\), and it divides the characteristic polynomial \(f\), also monic of degree \(2\). Therefore they are equal.
 :::
+
+::: pf-step
+
+Therefore the minimal polynomial of \(M\) is \(f(x)=x^2-x+2\).
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, \(f(M)=0\). By step [](#s3){.pf-ref}, the monic minimal polynomial has degree \(2\), and it divides the characteristic polynomial \(f\), also monic of degree \(2\). Therefore they are equal.
+
+:::
+
+:::
+
+:::
+
 :::

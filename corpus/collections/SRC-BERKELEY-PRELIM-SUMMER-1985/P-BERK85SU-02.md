@@ -36,14 +36,20 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. For $0\le\theta\le\pi/2$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $0\le\theta\le\pi/2$,
 $$
 \sin\theta
 \ge
 \frac{2}{\pi}\theta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $[0,\pi/2]$,
 $$
 \frac{d^2}{d\theta^2}\sin\theta
@@ -64,9 +70,14 @@ $$
 y=\frac{2}{\pi}\theta.
 $$
 Thus the displayed inequality holds.
+
 :::
 
-<1>2. For every $R>0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $R>0$,
 $$
 0
 \le
@@ -75,8 +86,9 @@ $$
 \frac{\pi}{2R}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 e^{-R\sin\theta}
 \le
@@ -95,9 +107,14 @@ $$
 \end{aligned}
 $$
 The lower bound is immediate from positivity of the integrand.
+
 :::
 
-<1>3. If $\lambda<1$, then
+:::
+
+::: {.pf-step #s3}
+
+If $\lambda<1$, then
 $$
 \boxed{
 \lim_{R\to\infty}
@@ -108,8 +125,9 @@ R^\lambda
 }.
 $$
 
-::: {.proof}
-Multiplying step <1>2 by $R^\lambda$ gives
+::: pf-proof
+
+Multiplying step [](#s2){.pf-ref} by $R^\lambda$ gives
 $$
 0
 \le
@@ -120,11 +138,17 @@ R^\lambda
 $$
 Since $\lambda-1<0$, the right-hand side tends to $0$. The squeeze
 theorem gives the displayed limit.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part 1, and step <1>3 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part 1, and step [](#s3){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

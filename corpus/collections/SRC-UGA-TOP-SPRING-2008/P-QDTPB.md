@@ -49,8 +49,14 @@ Let
 A=S^1\times[0,1].
 \]
 
-<1>1. The map $f$ is homotopic to the identity through a homotopy stationary on the boundary circle $S^1\times\{0\}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The map $f$ is homotopic to the identity through a homotopy stationary on the boundary circle $S^1\times\{0\}$.
+
+::: pf-proof
+
 Define
 \[
 H:A\times[0,1]\longrightarrow A
@@ -70,16 +76,23 @@ H_t(e^{i\theta},0)
 (e^{i\theta},0).
 \]
 Thus the homotopy is stationary on $S^1\times\{0\}$.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 \[
 \alpha:[0,1]\longrightarrow A,
 \qquad
 \alpha(s)=(1,s).
 \]
 Then $\alpha$ and $f\circ\alpha$ are not homotopic relative to their endpoints.
-::: {.proof}
+
+::: pf-proof
+
 Both paths run from
 \[
 p=(1,0)
@@ -115,10 +128,17 @@ in
 \pi_1(S^1,1)\cong\ZZ.
 \]
 Hence no such endpoint-fixed homotopy exists.
+
 :::
 
-<1>3. There is no homotopy from $f$ to the identity that is stationary on both boundary circles.
-::: {.proof}
+:::
+
+::: pf-step
+
+There is no homotopy from $f$ to the identity that is stationary on both boundary circles.
+
+::: pf-proof
+
 Suppose, for contradiction, that
 \[
 K:A\times[0,1]\longrightarrow A
@@ -133,7 +153,7 @@ x\in S^1\times\{0,1\}
 \]
 and every $t\in[0,1]$.
 
-Apply this homotopy to the path $\alpha$ from <1>2. The map
+Apply this homotopy to the path $\alpha$ from step [](#s2){.pf-ref}. The map
 \[
 F:[0,1]\times[0,1]\longrightarrow A,
 \qquad
@@ -154,9 +174,14 @@ F(0,t)=p,
 F(1,t)=q
 \]
 for every $t$.
-Thus $F$ is a homotopy relative to endpoints from $f\circ\alpha$ to $\alpha$, contradicting <1>2.
+Thus $F$ is a homotopy relative to endpoints from $f\circ\alpha$ to $\alpha$, contradicting step [](#s2){.pf-ref}.
 
 Therefore no homotopy from $f$ to the identity can be stationary on both boundary circles.
+
+:::
+
+:::
+
 :::
 
 Hence $f$ is homotopic to the identity relative to one boundary circle, but not relative to the full boundary $S^1\times\{0,1\}$.

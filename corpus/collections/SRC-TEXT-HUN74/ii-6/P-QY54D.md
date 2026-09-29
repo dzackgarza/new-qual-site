@@ -37,11 +37,17 @@ Q_8=\{\pm1,\pm i,\pm j,\pm k\},
 \]
 with $i^2=j^2=k^2=ijk=-1$.
 
-<1>1. The center of $Q_8$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The center of $Q_8$ is
 \[
 Z(Q_8)=\{\pm1\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The elements $1$ and $-1$ commute with every element of $Q_8$, so
 $\{\pm1\}\subseteq Z(Q_8)$.
 
@@ -51,11 +57,18 @@ ij=k\qquad\text{while}\qquad ji=-k,
 \]
 so neither $i$ nor $-i$ is central. Cyclically permuting $i,j,k$ shows that none
 of $\pm j,\pm k$ is central either. Thus no further elements lie in the center.
+
 :::
 
-<1>2. The quotient $Q_8/Z(Q_8)$ has four elements, each of order dividing $2$.
-::: {.proof}
-By <1>1, the quotient has order $8/2=4$. Its cosets are
+:::
+
+::: {.pf-step #s2}
+
+The quotient $Q_8/Z(Q_8)$ has four elements, each of order dividing $2$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the quotient has order $8/2=4$. Its cosets are
 \[
 Z(Q_8),\quad iZ(Q_8),\quad jZ(Q_8),\quad kZ(Q_8).
 \]
@@ -64,16 +77,29 @@ Moreover,
 (iZ(Q_8))^2=i^2Z(Q_8)=(-1)Z(Q_8)=Z(Q_8),
 \]
 and similarly for the $j$- and $k$-cosets.
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 Q_8/Z(Q_8)\cong \ZZ_2\oplus\ZZ_2,
 \]
 in particular the quotient is abelian.
-::: {.proof}
-By <1>2 the quotient has order $4$ and no element of order $4$, so it is the
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} the quotient has order $4$ and no element of order $4$, so it is the
 Klein four group rather than the cyclic group of order $4$. Therefore it is
 isomorphic to $\ZZ_2\oplus\ZZ_2$ and is abelian.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -29,10 +29,16 @@ audit:
 If $R$ is any ring, and $I$ an ideal, $R/I$ is a domain if and only if $I$ is prime, and $R/I$ is a field if and only if $I$ is maximal.
 :::
 
-
 ::: {.solution}
-<1>1. If $I$ is prime, then $R/I$ is a domain.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $I$ is prime, then $R/I$ is a domain.
+
+::: pf-proof
+
 Because $I$ is prime, it is proper, so $R/I$ is not the zero ring. Suppose
 $$
 (a+I)(b+I)=0+I.
@@ -50,10 +56,17 @@ $$
 a+I=0+I\quad\text{or}\quad b+I=0+I.
 $$
 Thus $R/I$ has no nonzero zero divisors and is a domain.
+
 :::
 
-<1>2. If $R/I$ is a domain, then $I$ is prime.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $R/I$ is a domain, then $I$ is prime.
+
+::: pf-proof
+
 A domain is nonzero, so $I\ne R$. If
 $$
 ab\in I,
@@ -67,10 +80,17 @@ $$
 a\in I\quad\text{or}\quad b\in I.
 $$
 Therefore $I$ is prime.
+
 :::
 
-<1>3. If $I$ is maximal, then $R/I$ is a field.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $I$ is maximal, then $R/I$ is a field.
+
+::: pf-proof
+
 Let $a+I$ be a nonzero element of $R/I$, so $a\notin I$. The ideal
 $$
 I+(a)
@@ -88,10 +108,17 @@ $$
 (r+I)(a+I)=1+I.
 $$
 Hence every nonzero element of $R/I$ is invertible, so $R/I$ is a field.
+
 :::
 
-<1>4. If $R/I$ is a field, then $I$ is maximal.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $R/I$ is a field, then $I$ is maximal.
+
+::: pf-proof
+
 Let $J$ be an ideal with
 $$
 I\subseteq J\subseteq R.
@@ -110,6 +137,11 @@ J=I
 J=R.
 $$
 Hence $I$ is maximal.
+
+:::
+
+:::
+
 :::
 
 Combining the four steps,

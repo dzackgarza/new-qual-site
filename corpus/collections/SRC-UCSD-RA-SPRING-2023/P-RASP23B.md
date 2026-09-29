@@ -32,8 +32,15 @@ Show by an example that the assumption $\mu(X) < \infty$ cannot be dropped.
 :::
 
 ::: {.solution}
-<1>1. Prove convergence when $\mu(X)<\infty$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove convergence when $\mu(X)<\infty$.
+
+::: pf-proof
+
 Uniform convergence gives
 \[
 \|f_n-f\|_\infty\longrightarrow0.
@@ -51,10 +58,17 @@ Thus
 \[
 \boxed{\int_Xf_n\,d\mu\longrightarrow\int_Xf\,d\mu.}
 \]
+
 :::
 
-<1>2. Show that finite total measure is necessary in general.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that finite total measure is necessary in general.
+
+::: pf-proof
+
 Take $X=[0,\infty)$ with Lebesgue measure and define
 \[
 f_n(x)=\frac1n\mathbf1_{[0,n]}(x).
@@ -69,5 +83,11 @@ so $f_n\to0$ uniformly. However,
 =\frac1n\,m([0,n])=1
 \]
 for every $n$. Therefore the integrals do not converge to the integral of the uniform limit.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -22,38 +22,87 @@ Prove that there are two harmonic functions $u,v$ on $G$ such that $\phi = e^u \
 :::
 
 ::: {.solution}
-<1>1. Since $G$ is simply connected and $\phi > 0$ is harmonic, $\phi$ has a harmonic conjugate $\psi$, so $F = \phi + i\psi$ is analytic on $G$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Since $G$ is simply connected and $\phi > 0$ is harmonic, $\phi$ has a harmonic conjugate $\psi$, so $F = \phi + i\psi$ is analytic on $G$.
+
+::: pf-proof
+
 a positive harmonic function on a simply connected region has a harmonic conjugate (its harmonic conjugate is obtained by integrating the closed form $-\phi_y\, dx + \phi_x\, dy$).
+
 :::
 
-<1>2. $F$ is nowhere zero on $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$F$ is nowhere zero on $G$.
+
+::: pf-proof
+
 $\operatorname{Re} F = \phi > 0$, so $F \neq 0$.
+
 :::
 
-<1>3. Since $G$ is simply connected and $F$ is nowhere zero, $F$ has an analytic logarithm: $F = e^H$ for some analytic $H$ on $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Since $G$ is simply connected and $F$ is nowhere zero, $F$ has an analytic logarithm: $F = e^H$ for some analytic $H$ on $G$.
+
+::: pf-proof
+
 a nowhere-vanishing analytic function on a simply connected region has an analytic logarithm.
+
 :::
 
-<1>4. Write $H = u + iv$ with $u, v$ harmonic (the real and imaginary parts of an analytic function are harmonic).
-::: {.proof}
+:::
+
+::: pf-step
+
+Write $H = u + iv$ with $u, v$ harmonic (the real and imaginary parts of an analytic function are harmonic).
+
+::: pf-proof
+
 real and imaginary parts of an analytic function are harmonic.
+
 :::
 
-<1>5. Then $\phi = \operatorname{Re} F = \operatorname{Re}(e^{u + iv}) = e^u \cos v$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Then $\phi = \operatorname{Re} F = \operatorname{Re}(e^{u + iv}) = e^u \cos v$.
+
+::: pf-proof
+
 $e^{u+iv} = e^u(\cos v + i\sin v)$, so its real part is $e^u \cos v$.
+
 :::
 
-<1>6. Replace $v$ by $v + \pi/2$ (equivalently, absorb a constant into $H$) to get $\phi = e^u \sin v$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+Replace $v$ by $v + \pi/2$ (equivalently, absorb a constant into $H$) to get $\phi = e^u \sin v$.
+
+::: pf-proof
+
 $\cos v = \sin(v + \pi/2)$, and $v + \pi/2$ is still harmonic.
+
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

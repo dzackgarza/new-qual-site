@@ -25,22 +25,39 @@ Prove that a subgroup of index two is normal.
 ::: {.solution}
 Let $H\le G$ with $[G:H]=2$.
 
-<1>1. For $g\notin H$, $gH=G\setminus H=Hg$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For $g\notin H$, $gH=G\setminus H=Hg$.
+
+::: pf-proof
+
 The left cosets partition $G$ into two sets, one of which is $H$; since $g\notin H$, $gH\neq H$, so $gH=G\setminus H$.
 The same argument with right cosets gives $Hg=G\setminus H$.
+
 :::
 
-<1>2. $gH=Hg$ for every $g\in G$.
-
-::: {.proof}
-For $g\in H$, $gH=H=Hg$; for $g\notin H$, use step <1>1.
 :::
 
-<1>3. Q.E.D.
+::: pf-step
 
-::: {.proof}
+$gH=Hg$ for every $g\in G$.
+
+::: pf-proof
+
+For $g\in H$, $gH=H=Hg$; for $g\notin H$, use step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
 Multiplying $gH=Hg$ on the right by $g^{-1}$ gives $gHg^{-1}=H$ for every $g\in G$, so $H\trianglelefteq G$.
+
 :::
+
+:::
+
 :::

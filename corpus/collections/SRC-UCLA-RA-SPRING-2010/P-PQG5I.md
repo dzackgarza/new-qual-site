@@ -40,8 +40,15 @@ b. Show that the mapping from $A$ to $\mathbb{R}$ defined by $$x \mapsto \int_0^
 :::
 
 ::: {.solution}
-<1>1. The set $A$ is closed in $\ell^2$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The set $A$ is closed in $\ell^2$.
+
+::: pf-proof
+
 Let $x^{(k)}\in A$ and suppose
 \[
 x^{(k)}\longrightarrow x
@@ -65,15 +72,22 @@ Letting $N\to\infty$ and using monotone convergence of the nonnegative partial s
 \sum_{n=1}^{\infty}n|x_n|^2\le1.
 \]
 Thus $x\in A$.
+
 :::
 
-<1>2. The tails of elements of $A$ are uniformly small:
+:::
+
+::: {.pf-step #s2}
+
+The tails of elements of $A$ are uniformly small:
 \[
 \sup_{x\in A}
 \sum_{n>N}|x_n|^2
 \le\frac1{N+1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For every $x\in A$,
 \[
 \begin{aligned}
@@ -84,16 +98,23 @@ For every $x\in A$,
 &\le\frac1{N+1}.
 \end{aligned}
 \]
+
 :::
 
-<1>3. The set $A$ is totally bounded in $\ell^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The set $A$ is totally bounded in $\ell^2$.
+
+::: pf-proof
+
 Fix $\varepsilon>0$.
 Choose $N$ so large that
 \[
 \frac1{N+1}<\frac{\varepsilon^2}{4}.
 \]
-By <1>2, every $x\in A$ has tail norm
+By step [](#s2){.pf-ref}, every $x\in A$ has tail norm
 \[
 \left(\sum_{n>N}|x_n|^2\right)^{1/2}<\frac\varepsilon2.
 \]
@@ -125,15 +146,21 @@ Then
 \end{aligned}
 \]
 Thus the finitely many embedded vectors form an $\varepsilon$-net for $A$.
+
 :::
 
-<1>4. The set $A$ is compact in $\ell^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The set $A$ is compact in $\ell^2$.
+
+::: pf-proof
+
 The Hilbert space $\ell^2$ is complete.
-By <1>1, its closed subset $A$ is complete, and by <1>3, $A$ is totally bounded.
+By step [](#s1){.pf-ref}, its closed subset $A$ is complete, and by step [](#s3){.pf-ref}, $A$ is totally bounded.
 A complete totally bounded metric space is compact.
 This proves part (a).
-:::
 
 For $x=(x_n)\in\ell^2$, let
 \[
@@ -141,11 +168,19 @@ g_{x,N}(\theta)=\sum_{n=1}^N x_ne^{in\theta}.
 \]
 Equip the circle with normalized measure $d\theta/(2\pi)$.
 
-<1>5. The sequence $g_{x,N}$ converges in $L^2(\mathbb T)$ to a function $g_x$, and
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+The sequence $g_{x,N}$ converges in $L^2(\mathbb T)$ to a function $g_x$, and
 \[
 \|g_x-g_y\|_{L^2}=\|x-y\|_{\ell^2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The functions $e^{in\theta}$, $n\ge1$, are orthonormal in $L^2(\mathbb T,d\theta/(2\pi))$.
 Hence for $M>N$,
 \[
@@ -161,9 +196,14 @@ Applying the same orthogonality identity to the coefficient sequence $x-y$ and p
 =
 \sum_{n=1}^{\infty}|x_n-y_n|^2.
 \]
+
 :::
 
-<1>6. The functional in part (b), interpreted as
+:::
+
+::: {.pf-step #s6}
+
+The functional in part (b), interpreted as
 \[
 \Phi(x)=\int_0^{2\pi}|g_x(\theta)|\,\frac{d\theta}{2\pi},
 \]
@@ -171,7 +211,9 @@ is well-defined and satisfies
 \[
 |\Phi(x)-\Phi(y)|\le\|x-y\|_{\ell^2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because the circle has normalized measure $1$, Cauchy--Schwarz gives
 \[
 \|h\|_{L^1}\le\|h\|_{L^2}
@@ -182,7 +224,7 @@ Moreover, the reverse triangle inequality gives
 \[
 \bigl||g_x|-|g_y|\bigr|\le|g_x-g_y|.
 \]
-Therefore, using <1>5,
+Therefore, using step [](#s5){.pf-ref},
 \[
 \begin{aligned}
 |\Phi(x)-\Phi(y)|
@@ -193,15 +235,28 @@ Therefore, using <1>5,
 \end{aligned}
 \]
 Thus $\Phi$ is $1$-Lipschitz, hence continuous.
+
 :::
 
-<1>7. The functional $\Phi$ attains its maximum on $A$.
-::: {.proof}
-By <1>4, $A$ is compact, and by <1>6, $\Phi:A\to\mathbb R$ is continuous.
+:::
+
+::: pf-step
+
+The functional $\Phi$ attains its maximum on $A$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $A$ is compact, and by step [](#s6){.pf-ref}, $\Phi:A\to\mathbb R$ is continuous.
 The extreme-value theorem therefore gives an element $x_\ast\in A$ such that
 \[
 \Phi(x_\ast)=\max_{x\in A}\Phi(x).
 \]
 This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

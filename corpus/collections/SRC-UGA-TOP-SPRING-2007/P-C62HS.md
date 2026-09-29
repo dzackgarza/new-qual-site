@@ -39,21 +39,35 @@ for all $x,y\in X$, then $f$ has a fixed point.
 :::
 
 ::: {.solution}
-<1>1. As written, the source statement has one exceptional case: it is false when $X=\varnothing$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+As written, the source statement has one exceptional case: it is false when $X=\varnothing$.
+
+::: pf-proof
+
 The empty metric space is compact, and its unique self-map satisfies the stated contraction inequality vacuously, but it has no fixed point.
 Thus the intended assertion requires $X\neq\varnothing$.
 Assume this from now on.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 \[
 g:X\to\RR,
 \qquad
 g(x)=d(x,f(x)).
 \]
 Then $g$ is continuous.
-::: {.proof}
+
+::: pf-proof
+
 For $x,y\in X$, the triangle inequality gives
 \[
 d(x,f(x))
@@ -70,21 +84,35 @@ Interchanging $x$ and $y$ yields
 |g(x)-g(y)|\le(1+C)d(x,y).
 \]
 Thus $g$ is Lipschitz, hence continuous.
+
 :::
 
-<1>3. The function $g$ attains a minimum at some point $x_0\in X$.
-::: {.proof}
-By <1>1, $X$ is nonempty, and by hypothesis it is compact.
-The continuous real-valued function $g$ from <1>2 therefore attains its minimum.
+:::
+
+::: {.pf-step #s3}
+
+The function $g$ attains a minimum at some point $x_0\in X$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $X$ is nonempty, and by hypothesis it is compact.
+The continuous real-valued function $g$ from step [](#s2){.pf-ref} therefore attains its minimum.
 Choose $x_0\in X$ such that
 \[
 g(x_0)\le g(x)
 \qquad\text{for all }x\in X.
 \]
+
 :::
 
-<1>4. The point $x_0$ from <1>3 is a fixed point of $f$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The point $x_0$ from step [](#s3){.pf-ref} is a fixed point of $f$.
+
+::: pf-proof
+
 Suppose $f(x_0)\ne x_0$.
 Then $g(x_0)=d(x_0,f(x_0))>0$, while the contraction inequality gives
 \[
@@ -99,19 +127,39 @@ g(f(x_0))
 because $0<C<1$.
 This contradicts the minimality of $g(x_0)$.
 Hence $g(x_0)=0$, so $f(x_0)=x_0$.
+
 :::
 
-<1>5. In fact, the fixed point is unique.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+In fact, the fixed point is unique.
+
+::: pf-proof
+
 If $x$ and $y$ are fixed points, then
 \[
 d(x,y)=d(f(x),f(y))\le C d(x,y).
 \]
 Since $C<1$, this forces $d(x,y)=0$, hence $x=y$.
+
 :::
 
-<1>6. Under the necessary nonempty interpretation of the source, $f$ has a fixed point.
-::: {.proof}
-Existence is <1>4; <1>5 gives the stronger uniqueness conclusion.
 :::
+
+::: pf-step
+
+Under the necessary nonempty interpretation of the source, $f$ has a fixed point.
+
+::: pf-proof
+
+Existence is step [](#s4){.pf-ref}; step [](#s5){.pf-ref} gives the stronger uniqueness conclusion.
+
+:::
+
+:::
+
+:::
+
 :::

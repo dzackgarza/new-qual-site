@@ -44,8 +44,15 @@ where $P_C(g)$ denotes the orthogonal projection of $g$ onto $C$.
 :::
 
 ::: {.solution}
-<1>1. Prove that $C$ is a closed subspace.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that $C$ is a closed subspace.
+
+::: pf-proof
+
 Define
 \[
 L:L^2(\Omega)\to\mathbb C,
@@ -62,10 +69,17 @@ Thus $L$ is continuous. Moreover
 C=\ker L,
 \]
 so $C$ is a closed linear subspace of $L^2(\Omega)$.
+
 :::
 
-<1>2. Compute the orthogonal projection.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the orthogonal projection.
+
+::: pf-proof
+
 For $g\in L^2(\Omega)$, set
 \[
 m_g:=\frac1{L^n(\Omega)}\int_\Omega g(x)\,dx
@@ -94,10 +108,17 @@ Thus $g-h\in C^\perp$. By the characterization of orthogonal projection,
 P_C(g)
 =g-\frac1{L^n(\Omega)}\int_\Omega g(x)\,dx.}
 \]
+
 :::
 
-<1>3. Identify $C^\perp$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Identify $C^\perp$.
+
+::: pf-proof
+
 Every constant function belongs to $C^\perp$ by the calculation in Step 2. Conversely, let $g\in C^\perp$. By Step 2,
 \[
 g=P_C(g)+(g-P_C(g)),
@@ -120,5 +141,11 @@ Therefore
 C^\perp
 =\{g\in L^2(\Omega):g=c\text{ a.e. for some }c\in\mathbb C\}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

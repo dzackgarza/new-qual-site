@@ -33,7 +33,12 @@ Prove that $f$ is injective.
 :::
 
 ::: {.solution}
-<1>1. If $z,w$ lie in the unit disk and $z\ne w$, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $z,w$ lie in the unit disk and $z\ne w$, then
 $$
 \frac{f(z)-f(w)}{z-w}
 =
@@ -44,7 +49,8 @@ a_n
 \sum_{j=0}^{n-1}z^{n-1-j}w^j.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $n\ge1$,
 $$
 z^n-w^n
@@ -58,13 +64,18 @@ $$
 Thus, for fixed $z,w$ in the unit disk, the relevant power series are
 absolutely convergent and the identity may be applied term by term to
 $f(z)-f(w)$. The $n=0$ terms cancel, giving the displayed formula.
+
 :::
 
-<1>2. Put
+:::
+
+::: {.pf-step #s2}
+
+Put
 $$
 r\coloneqq\max\{|z|,|w|\}<1.
 $$
-Then the higher-order part in step <1>1 satisfies
+Then the higher-order part in step [](#s1){.pf-ref} satisfies
 $$
 \left|
 \sum_{n=2}^{\infty}
@@ -75,7 +86,8 @@ a_n
 |a_1|.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $n\ge2$,
 $$
 \left|
@@ -103,15 +115,21 @@ r|a_1|\\
 \end{aligned}
 $$
 because $r<1$ and $a_1\ne0$.
+
 :::
 
-<1>3. For distinct $z,w$ in the unit disk,
+:::
+
+::: {.pf-step #s3}
+
+For distinct $z,w$ in the unit disk,
 $$
 f(z)\ne f(w).
 $$
 
-::: {.proof}
-By steps <1>1--<1>2 and the reverse triangle inequality,
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} and the reverse triangle inequality,
 $$
 \left|
 \frac{f(z)-f(w)}{z-w}
@@ -129,17 +147,29 @@ a_n
 $$
 Therefore $(f(z)-f(w))/(z-w)\ne0$, and since $z-w\ne0$, one has
 $f(z)-f(w)\ne0$.
+
 :::
 
-<1>4. Thus $f$ is injective on the unit disk.
-
-::: {.proof}
-Step <1>3 is exactly the injectivity condition.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Step <1>4 proves the assertion.
+Thus $f$ is injective on the unit disk.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} is exactly the injectivity condition.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the assertion.
+
+:::
+
+:::
+
 :::

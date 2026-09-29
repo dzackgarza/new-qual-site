@@ -36,9 +36,15 @@ for all $z \in \mathbb { C }$ . Prove that u is constant.
 :::
 
 ::: {.solution}
-<1>1. The harmonic function is the real part of an entire function.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The harmonic function is the real part of an entire function.
+
+::: pf-proof
+
 The plane is simply connected, so $u$ has a globally
 defined harmonic conjugate $v$; consequently $H=u+iv$
 is entire [@SS03]. One explicit construction, writing
@@ -53,11 +59,17 @@ v_x=-u_y(x,0)+\int_0^y u_{xx}(x,s)\,ds
 $$
 Thus the Cauchy–Riemann equations hold everywhere and
 $\operatorname{Re}H=u$.
+
 :::
 
-<1>2. The exponential of $H$ is a polynomial.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The exponential of $H$ is a polynomial.
+
+::: pf-proof
+
 The entire function $F=e^H$ satisfies
 $$
 |F(z)|=e^{u(z)}\leq e^{10\log(|z|+2)}=(|z|+2)^{10}.
@@ -70,17 +82,29 @@ $$
 [@SS03]. For every integer $k>10$, the right-hand side
 tends to zero as $R\to\infty$. Hence $a_k=0$ for all
 such $k$, so $F$ is a polynomial of degree at most ten.
+
 :::
 
-<1>3. This polynomial is constant, and so is $u$.
+:::
 
-::: {.proof}
+::: pf-step
+
+This polynomial is constant, and so is $u$.
+
+::: pf-proof
+
 An exponential has no zero. By the fundamental theorem
 of algebra, a nonconstant complex polynomial has a zero
-[@SS03]. The polynomial $F=e^H$ from step <1>2 must
+[@SS03]. The polynomial $F=e^H$ from step [](#s2){.pf-ref} must
 therefore be a nonzero constant. Differentiating gives
 $0=F'=H'e^H$, and nonvanishing of $e^H$ implies $H'=0$.
 Thus $H$ is constant on the connected plane, and its
 real part $u$ is constant as well.
+
 :::
+
+:::
+
+:::
+
 :::

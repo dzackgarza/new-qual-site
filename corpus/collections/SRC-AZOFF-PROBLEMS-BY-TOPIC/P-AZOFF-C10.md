@@ -41,14 +41,19 @@ $$
 M(z)=\frac{1+z}{1-z}.
 $$
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 M:D\longrightarrow
 \CC\sm(-\infty,0]
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 The only pole of $M$ is $z=1$, which is not in $D$. Its inverse is
 $$
 M^{-1}(w)=\frac{w-1}{w+1}.
@@ -86,9 +91,14 @@ $$
 M'(z)=\frac{2}{(1-z)^2}\neq0
 $$
 on $D$, so $M$ is conformal.
+
 :::
 
-<1>2. On
+:::
+
+::: {.pf-step #s2}
+
+On
 $$
 \CC\sm(-\infty,0]
 $$
@@ -111,7 +121,8 @@ R=\{\zeta\in\CC:\operatorname{Re}\zeta>0\},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 The argument of $s(w)$ is
 $$
 \frac12\Arg w\in
@@ -138,9 +149,14 @@ $$
 s'(w)=\frac{s(w)}{2w}\neq0,
 $$
 so $s$ is conformal.
+
 :::
 
-<1>3. The map
+:::
+
+::: {.pf-step #s3}
+
+The map
 $$
 C:R\longrightarrow\DD,
 \qquad
@@ -148,7 +164,8 @@ C(\zeta)=\frac{\zeta-1}{\zeta+1},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
+
 For $\zeta=u+iv$ with $u>0$,
 $$
 \abs{\zeta+1}^2-\abs{\zeta-1}^2=4u>0,
@@ -172,9 +189,14 @@ $$
 C'(\zeta)=\frac{2}{(\zeta+1)^2}\neq0
 $$
 on $R$, it is conformal.
+
 :::
 
-<1>4. Put
+:::
+
+::: {.pf-step #s4}
+
+Put
 $$
 q(z)=
 s(M(z))
@@ -192,8 +214,9 @@ F(z)=\frac{q(z)-1}{q(z)+1}.
 }
 $$
 
-::: {.proof}
-By steps <1>1--<1>3,
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 F=C\circ s\circ M
 $$
@@ -203,11 +226,17 @@ D\xrightarrow{M}\CC\sm(-\infty,0]
 \xrightarrow{s}R\xrightarrow{C}\DD.
 $$
 Therefore $F$ is a conformal bijection from $D$ onto $\DD$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested map.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested map.
+
+:::
+
+:::
+
 :::

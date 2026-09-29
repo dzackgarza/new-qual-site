@@ -35,7 +35,6 @@ $$
 is an exact sequence, then there is a linearly independent generating set consisting of $s + 1$ elements for $K$, and hence $K$ is isomorphic to $\ZZ^{s+1}$.
 :::
 
-
 ::: {.solution}
 Write the exact sequence as
 $$
@@ -47,8 +46,14 @@ $$
 p(t)=1.
 $$
 
-<1>1. The elements $i(e_1),\ldots,i(e_s),t$ generate $K$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The elements $i(e_1),\ldots,i(e_s),t$ generate $K$.
+
+::: pf-proof
+
 Let $x\in K$. Put
 $$
 n=p(x)\in\mathbb Z.
@@ -78,10 +83,17 @@ $$
 x=\sum_{j=1}^s a_j i(e_j)+nt,
 $$
 so the displayed $s+1$ elements generate $K$.
+
 :::
 
-<1>2. These $s+1$ generators are linearly independent over $\mathbb Z$.
-::: {.proof}
+:::
+
+::: pf-step
+
+These $s+1$ generators are linearly independent over $\mathbb Z$.
+
+::: pf-proof
+
 Suppose
 $$
 \sum_{j=1}^s a_j i(e_j)+nt=0.
@@ -100,14 +112,27 @@ $$
 $$
 The standard basis is independent, hence every $a_j=0$. Thus the $s+1$
 generators are independent.
+
 :::
 
-<1>3. Conclude the isomorphism type of $K$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude the isomorphism type of $K$.
+
+::: pf-proof
+
 A linearly independent generating set of $s+1$ elements is a basis of the
 abelian group $K$. Therefore
 $$
 \boxed{K\cong\mathbb Z^{s+1}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

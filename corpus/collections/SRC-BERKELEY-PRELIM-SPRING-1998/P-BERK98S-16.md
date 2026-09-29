@@ -42,14 +42,19 @@ $$
 1-z+az^2=w-z.
 $$
 
-<1>1. For every $z\in\CC$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $z\in\CC$,
 $$
 \abs{w-z}^2-\abs{w+z}^2
 =
 -4(1+a\abs z^2)\operatorname{Re}z.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 \abs{u-v}^2-\abs{u+v}^2
@@ -73,21 +78,27 @@ $$
 (1+a\abs z^2)\operatorname{Re}z.
 $$
 Substitution gives the claimed identity.
+
 :::
 
-<1>2. If $\operatorname{Re}z<0$, then
+:::
+
+::: {.pf-step #s2}
+
+If $\operatorname{Re}z<0$, then
 $$
 \abs{1-z+az^2}
 >
 \abs{1+z+az^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $a>0$,
 $$
 1+a\abs z^2>0.
 $$
-If $\operatorname{Re}z<0$, step <1>1 therefore gives
+If $\operatorname{Re}z<0$, step [](#s1){.pf-ref} therefore gives
 $$
 \abs{1-z+az^2}^2
 -
@@ -95,34 +106,52 @@ $$
 >0.
 $$
 Both norms are nonnegative, so the stated strict inequality follows.
+
 :::
 
-<1>3. The denominator $1-z+az^2$ is nonzero throughout the open left
+:::
+
+::: {.pf-step #s3}
+
+The denominator $1-z+az^2$ is nonzero throughout the open left
 half-plane.
 
-::: {.proof}
+::: pf-proof
+
 If it vanished at such a point, then its modulus would be $0$, contradicting
-the strict inequality in step <1>2.
+the strict inequality in step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. For every $z$ with $\operatorname{Re}z<0$,
+:::
+
+::: {.pf-step #s4}
+
+For every $z$ with $\operatorname{Re}z<0$,
 $$
 \boxed{\abs{f(z)}<1}.
 $$
 
-::: {.proof}
-By step <1>3, $f(z)$ is defined, and by step <1>2,
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $f(z)$ is defined, and by step [](#s2){.pf-ref},
 $$
 \abs{f(z)}
 =
 \frac{\abs{1+z+az^2}}{\abs{1-z+az^2}}
 <1.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

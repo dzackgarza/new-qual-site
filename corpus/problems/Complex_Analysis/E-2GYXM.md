@@ -41,7 +41,11 @@ $$
 \int_{\Gamma_N}F(w)\,dw\longrightarrow0.
 $$
 
-<1>1. At each integer $k$,
+::: pf
+
+::: pf-step
+
+At each integer $k$,
 $$
 \operatorname{Res}(F,k)=\frac1{(k-z)^2}=\frac1{(z-k)^2}.
 $$
@@ -50,7 +54,16 @@ $$
 \operatorname{Res}(F,z)=h'(z)=-\pi^2\csc^2(\pi z).
 $$
 
-<1>2. For $N$ sufficiently large, $\Gamma_N$ encloses $z$ and the integers $-N,\ldots,N$. The residue theorem therefore yields
+:::
+
+::: pf-step
+
+For $N$ sufficiently large, $\Gamma_N$ encloses $z$ and the integers $-N,\ldots,N$. The residue theorem therefore yields
+
+:::
+
+:::
+
 $$
 \frac1{2\pi i}\int_{\Gamma_N}F(w)\,dw
 =\sum_{k=-N}^N\frac1{(z-k)^2}-\pi^2\csc^2(\pi z).

@@ -32,8 +32,14 @@ Let
 O_p(G)=\bigcap_{P\in\Syl_p(G)}P.
 \]
 
-<1>1. The subgroup \(O_p(G)\) is normal in \(G\) and is a \(p\)-group.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The subgroup \(O_p(G)\) is normal in \(G\) and is a \(p\)-group.
+
+::: pf-proof
+
 Conjugation by any \(g\in G\) permutes the Sylow \(p\)-subgroups, so
 \[
 gO_p(G)g^{-1}
@@ -41,10 +47,17 @@ gO_p(G)g^{-1}
 =O_p(G).
 \]
 Thus \(O_p(G)\trianglelefteq G\). Since it is contained in every Sylow \(p\)-subgroup, it is itself a \(p\)-group.
+
 :::
 
-<1>2. Every normal \(p\)-subgroup of \(G\) is contained in \(O_p(G)\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Every normal \(p\)-subgroup of \(G\) is contained in \(O_p(G)\).
+
+::: pf-proof
+
 Let \(N\trianglelefteq G\) be a \(p\)-subgroup. Choose a Sylow \(p\)-subgroup \(P\) with \(N\le P\). For every \(g\in G\), normality gives
 \[
 N=gNg^{-1}\le gPg^{-1}.
@@ -53,6 +66,11 @@ Every Sylow \(p\)-subgroup is conjugate to \(P\), hence \(N\) lies in every Sylo
 \[
 N\le\bigcap_{Q\in\Syl_p(G)}Q=O_p(G).
 \]
+
+:::
+
+:::
+
 :::
 
 Thus \(O_p(G)\) is the unique largest normal \(p\)-subgroup of \(G\).

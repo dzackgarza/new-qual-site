@@ -50,8 +50,14 @@ such that for every $j\ge1$ one could find a Borel set $E_j\subset\mathbb R^n$ w
 \mu(E_j)\ge\varepsilon_0.
 \]
 
-<1>1. Reduce to sets inside a fixed compact ball.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Reduce to sets inside a fixed compact ball.
+
+::: pf-proof
+
 Since
 \[
 \overline{B_K(0)}\uparrow\mathbb R^n
@@ -79,10 +85,17 @@ and
 \operatorname{diam}(F_j)<\frac1j.
 \]
 In particular each $F_j$ is nonempty.
+
 :::
 
-<1>2. Extract a limiting point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extract a limiting point.
+
+::: pf-proof
+
 Choose $x_j\in F_j$. Since all $x_j$ lie in the compact ball $\overline{B_K(0)}$, a subsequence, still denoted $(x_j)$, converges to some
 \[
 x\in\overline{B_K(0)}.
@@ -107,10 +120,17 @@ for all sufficiently large $j$. Hence
 \[
 \mu(B_r(x))\ge\mu(F_j)\ge\frac{\varepsilon_0}{2}.
 \]
+
 :::
 
-<1>3. Obtain the contradiction with atomlessness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Obtain the contradiction with atomlessness.
+
+::: pf-proof
+
 Applying Step 2 with $r=1/m$ gives
 \[
 \mu(B_{1/m}(x))\ge\frac{\varepsilon_0}{2}
@@ -130,5 +150,11 @@ Hence for every $\varepsilon>0$ there exists $\delta>0$ such that
 \quad\Longrightarrow\quad
 \boxed{\mu(E)<\varepsilon}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,11 +39,17 @@ Which one is correct and why is it correct?
 ::: {.solution}
 The correct answer is **(c)**.
 
-<1>1. For every $n\ge0$, the singular chain group of the one-point space $X=\{*\}$ is
+::: pf
+
+::: pf-step
+
+For every $n\ge0$, the singular chain group of the one-point space $X=\{*\}$ is
 \[
 C_n(X)\cong\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
+
 There is exactly one continuous map
 \[
 \sigma_n:\Delta^n\longrightarrow\{*\},
@@ -54,14 +60,21 @@ By definition, $C_n(X)$ is the free abelian group on the singular $n$-simplices,
 C_n(X)=\ZZ\langle\sigma_n\rangle\cong\ZZ.
 \]
 In particular, $C_1(X)\neq0$, so alternative (a) is false.
+
 :::
 
-<1>2. The boundary map
+:::
+
+::: {.pf-step #s2}
+
+The boundary map
 \[
 \partial_1:C_1(X)\longrightarrow C_0(X)
 \]
 is the zero map.
-::: {.proof}
+
+::: pf-proof
+
 The two faces of the unique singular $1$-simplex are both the unique singular $0$-simplex $\sigma_0$.
 Therefore
 \[
@@ -74,14 +87,21 @@ Hence
 \ker\partial_1=C_1(X)\cong\ZZ\neq0,
 \]
 so alternative (b) is false.
+
 :::
 
-<1>3. The boundary map
+:::
+
+::: {.pf-step #s3}
+
+The boundary map
 \[
 \partial_2:C_2(X)\longrightarrow C_1(X)
 \]
 is surjective.
-::: {.proof}
+
+::: pf-proof
+
 All three faces of the unique singular $2$-simplex are the unique singular $1$-simplex $\sigma_1$.
 Thus
 \[
@@ -93,16 +113,23 @@ Since $\sigma_1$ generates $C_1(X)$, it follows that
 \[
 \operatorname{im}\partial_2=C_1(X).
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 H_1(X)
 =\ker\partial_1/\operatorname{im}\partial_2
 =0.
 \]
-::: {.proof}
-By <1>2 and <1>3,
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 \[
 \ker\partial_1
 =C_1(X)
@@ -110,5 +137,11 @@ By <1>2 and <1>3,
 \]
 and this common group is nonzero.
 This is exactly alternative (c).
+
 :::
+
+:::
+
+:::
+
 :::

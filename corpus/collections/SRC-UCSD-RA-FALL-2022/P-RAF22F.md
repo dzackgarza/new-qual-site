@@ -32,17 +32,31 @@ Prove that $\nu(E) = \int_E \varphi \, d\mu$ is a Radon measure.
 :::
 
 ::: {.solution}
-<1>1. The measure $\nu$ is finite, hence locally finite.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The measure $\nu$ is finite, hence locally finite.
+
+::: pf-proof
+
 Since $\varphi\ge0$ and $\varphi\in L^1(\mu)$,
 \[
 \nu(X)=\int_X\varphi\,d\mu<\infty.
 \]
 Thus $\nu$ is a finite positive Borel measure, in particular finite on every compact set.
+
 :::
 
-<1>2. $\nu(E)=\sup\{\nu(K):K\subset E,\ K\text{ compact}\}$ for every Borel set $E$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$\nu(E)=\sup\{\nu(K):K\subset E,\ K\text{ compact}\}$ for every Borel set $E$.
+
+::: pf-proof
+
 Fix a Borel set $E\subset X$ and $\varepsilon>0$. Since
 \[
 \{\varphi>0\}=\bigcup_{m,n\ge1}
@@ -87,11 +101,18 @@ Thus
 \nu(E)=\sup\{\nu(K):K\subset E,\ K\text{ compact}\},
 \]
 so $\nu$ is inner regular.
+
 :::
 
-<1>3. $\nu(E)=\inf\{\nu(U):E\subset U,\ U\text{ open}\}$ for every Borel set $E$; hence $\nu$ is Radon.
-::: {.proof}
-Let $E$ be Borel and let $\varepsilon>0$. By step <1>2 applied to $X\setminus E$, choose compact
+:::
+
+::: pf-step
+
+$\nu(E)=\inf\{\nu(U):E\subset U,\ U\text{ open}\}$ for every Borel set $E$; hence $\nu$ is Radon.
+
+::: pf-proof
+
+Let $E$ be Borel and let $\varepsilon>0$. By step [](#s2){.pf-ref} applied to $X\setminus E$, choose compact
 \[
 K\subset X\setminus E
 \]
@@ -115,5 +136,11 @@ Hence
 \]
 
 Thus $\nu$ is locally finite, inner regular, and outer regular; therefore it is a Radon measure.
+
 :::
+
+:::
+
+:::
+
 :::

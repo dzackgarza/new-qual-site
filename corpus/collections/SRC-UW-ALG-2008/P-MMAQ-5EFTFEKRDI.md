@@ -28,27 +28,55 @@ Let $f(x)$ be an irreducible polynomial of degree 5 over the field $\mathbb Q$ o
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let
 \[
 G=\operatorname{Gal}(E/\mathbb Q).
 \]
 Then $G$ acts transitively on the five roots of $f$.
-::: {.proof}
+
+::: pf-proof
+
 The polynomial $f$ is irreducible over $\mathbb Q$ and, since the characteristic is zero, it is separable. In the splitting field of an irreducible separable polynomial, the Galois group acts transitively on the roots: any $\mathbb Q$-embedding sending one root to another extends to an automorphism of the normal splitting field $E$.
+
 :::
 
-<1>2. The group $G$ contains a $5$-cycle.
-::: {.proof}
-By <1>1, the action of $G$ on five roots is transitive. Orbit-stabilizer therefore implies that $5$ divides $|G|$. By Cauchy's theorem, $G$ contains an element of order $5$. Viewed inside $S_5$, any element of order $5$ is a $5$-cycle.
 :::
 
-<1>3. The group $G$ contains a transposition.
-::: {.proof}
+::: {.pf-step #s2}
+
+The group $G$ contains a $5$-cycle.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the action of $G$ on five roots is transitive. Orbit-stabilizer therefore implies that $5$ divides $|G|$. By Cauchy's theorem, $G$ contains an element of order $5$. Viewed inside $S_5$, any element of order $5$ is a $5$-cycle.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+The group $G$ contains a transposition.
+
+::: pf-proof
+
 Complex conjugation preserves $E$ because $f$ has rational coefficients. By hypothesis, three roots of $f$ are real, so complex conjugation fixes those three roots. The remaining two roots are nonreal and, because the coefficients are real, form a conjugate pair; complex conjugation swaps them. Hence its permutation of the five roots is a transposition.
+
 :::
 
-<1>4. A $5$-cycle together with any transposition generates $S_5$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+A $5$-cycle together with any transposition generates $S_5$.
+
+::: pf-proof
+
 Let
 \[
 \sigma=(0\,1\,2\,3\,4)
@@ -70,22 +98,41 @@ of a graph on $\mathbb Z/5\mathbb Z$. Since $5$ is prime and $d\ne0$, repeated a
 \[
 \langle\sigma,\tau\rangle=S_5.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 \[
 G=S_5.
 \]
-::: {.proof}
-By <1>2 and <1>3, $G$ contains a $5$-cycle and a transposition. By <1>4, those two elements generate $S_5$. Since $G\le S_5$, it follows that $G=S_5$.
+
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, $G$ contains a $5$-cycle and a transposition. By step [](#s4){.pf-ref}, those two elements generate $S_5$. Since $G\le S_5$, it follows that $G=S_5$.
+
 :::
 
-<1>6. The polynomial $f$ is not solvable by radicals.
-::: {.proof}
-A polynomial over a field of characteristic zero is solvable by radicals only if the Galois group of its splitting field is a solvable group. By <1>5 this Galois group is $S_5$. The subgroup $A_5\trianglelefteq S_5$ is nonabelian simple, hence not solvable; therefore $S_5$ is not solvable. Thus $f$ is not solvable by radicals.
 :::
 
-<1>7. Let $r_1,\dots,r_5$ be the roots of $f$ and define
+::: pf-step
+
+The polynomial $f$ is not solvable by radicals.
+
+::: pf-proof
+
+A polynomial over a field of characteristic zero is solvable by radicals only if the Galois group of its splitting field is a solvable group. By step [](#s5){.pf-ref} this Galois group is $S_5$. The subgroup $A_5\trianglelefteq S_5$ is nonabelian simple, hence not solvable; therefore $S_5$ is not solvable. Thus $f$ is not solvable by radicals.
+
+:::
+
+:::
+
+::: {.pf-step #s7}
+
+Let $r_1,\dots,r_5$ be the roots of $f$ and define
 \[
 \delta=\prod_{1\le i<j\le5}(r_i-r_j).
 \]
@@ -98,7 +145,9 @@ and
 K=\mathbb Q(\delta)=\mathbb Q(\sqrt{\Delta(f)})
 \]
 is the fixed field $E^{A_5}$.
-::: {.proof}
+
+::: pf-proof
+
 For $\sigma\in S_5=G$, permuting the roots changes the Vandermonde product by the sign of the permutation:
 \[
 \sigma(\delta)=\operatorname{sgn}(\sigma)\delta.
@@ -108,11 +157,18 @@ Hence every element of $A_5$ fixes $\delta$, while every odd permutation sends $
 \mathbb Q(\delta)=E^{A_5}.
 \]
 Also $\delta^2$ is the discriminant $\Delta(f)$, which lies in $\mathbb Q$.
+
 :::
 
-<1>8. The extension $K/\mathbb Q$ is Galois of degree $2$.
-::: {.proof}
-By <1>7,
+:::
+
+::: pf-step
+
+The extension $K/\mathbb Q$ is Galois of degree $2$.
+
+::: pf-proof
+
+By step [](#s7){.pf-ref},
 \[
 K=E^{A_5}.
 \]
@@ -129,14 +185,21 @@ and
 \operatorname{Gal}(K/\mathbb Q)\cong S_5/A_5\cong C_2.
 \]
 Thus $K/\mathbb Q$ is Galois.
+
 :::
 
-<1>9. No field $F$ satisfying
+:::
+
+::: pf-step
+
+No field $F$ satisfying
 \[
 K\subsetneq F\subsetneq E
 \]
 is Galois over $\mathbb Q$.
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 H=\operatorname{Gal}(E/F).
@@ -154,5 +217,11 @@ But a normal subgroup $H\trianglelefteq S_5$ contained in $A_5$ is also normal i
 1<H<A_5.
 \]
 Therefore no strict intermediate field between $K$ and $E$ is Galois over $\mathbb Q$.
+
 :::
+
+:::
+
+:::
+
 :::

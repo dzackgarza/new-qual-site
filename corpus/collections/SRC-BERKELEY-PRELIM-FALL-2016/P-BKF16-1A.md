@@ -42,7 +42,11 @@ $$
 \zeta(s)\coloneqq\sum_{n=1}^{\infty}\frac1{n^s}.
 $$
 
-<1>1. For every finite set $P$ of primes,
+::: pf
+
+::: {.pf-step #s1}
+
+For every finite set $P$ of primes,
 $$
 \prod_{p\in P}\frac1{1-p^{-s}}
 =
@@ -51,7 +55,8 @@ $$
 \frac1{n^s}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $p\in P$, since $s>1$,
 $$
 \frac1{1-p^{-s}}
@@ -77,9 +82,14 @@ $$
 $$
 are exactly the positive integers all of whose prime divisors lie in
 $P$, each occurring once.
+
 :::
 
-<1>2. For $s>1$,
+:::
+
+::: {.pf-step #s2}
+
+For $s>1$,
 $$
 \boxed{
 \zeta(s)
@@ -88,8 +98,9 @@ $$
 }
 $$
 
-::: {.proof}
-Let $P_m$ be the set of the first $m$ primes. By step <1>1,
+::: pf-proof
+
+Let $P_m$ be the set of the first $m$ primes. By step [](#s1){.pf-ref},
 $$
 \prod_{p\in P_m}\frac1{1-p^{-s}}
 $$
@@ -106,9 +117,14 @@ $$
 $$
 Thus the limit of the finite Euler products is the claimed infinite
 product. This proves part (a).
+
 :::
 
-<1>3. Suppose, for contradiction, that
+:::
+
+::: {.pf-step #s3}
+
+Suppose, for contradiction, that
 $$
 \sum_p\frac1p
 $$
@@ -118,7 +134,8 @@ M\coloneqq\prod_p\frac1{1-p^{-1}}
 $$
 converges to a finite number.
 
-::: {.proof}
+::: pf-proof
+
 For $0\le x\le1/2$,
 $$
 -\log(1-x)
@@ -143,15 +160,21 @@ $$
 $$
 increase to a finite limit. Exponentiating shows that these products
 converge to a finite positive number $M$.
+
 :::
 
-<1>4. Under the assumption in step <1>3,
+:::
+
+::: {.pf-step #s4}
+
+Under the assumption in step [](#s3){.pf-ref},
 $$
 \zeta(s)\le M
 $$
 for every $s>1$.
 
-::: {.proof}
+::: pf-proof
+
 For every prime $p$ and every $s>1$,
 $$
 0<p^{-s}\le p^{-1},
@@ -164,17 +187,23 @@ $$
 $$
 Thus each finite Euler product for exponent $s$ is at most the
 corresponding finite product for exponent $1$. Passing to the limits
-and using steps <1>2--<1>3 gives
+and using steps [](#s2){.pf-ref} and [](#s3){.pf-ref} gives
 $$
 \zeta(s)
 \le
 M.
 $$
+
 :::
 
-<1>5. The function $\zeta(s)$ is unbounded as $s\downarrow1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The function $\zeta(s)$ is unbounded as $s\downarrow1$.
+
+::: pf-proof
+
 Let $B>0$. The harmonic partial sums are unbounded: for $r\ge1$,
 $$
 \begin{aligned}
@@ -205,21 +234,33 @@ $$
 B.
 $$
 Since $B$ was arbitrary, $\zeta(s)$ is unbounded near $1$.
+
 :::
 
-<1>6. The prime reciprocal series diverges:
+:::
+
+::: {.pf-step #s6}
+
+The prime reciprocal series diverges:
 $$
 \boxed{\sum_p\frac1p=\infty}.
 $$
 
-::: {.proof}
-If it converged, step <1>4 would bound $\zeta(s)$ uniformly for all
-$s>1$, contradicting step <1>5. This proves part (b).
+::: pf-proof
+
+If it converged, step [](#s4){.pf-ref} would bound $\zeta(s)$ uniformly for all
+$s>1$, contradicting step [](#s5){.pf-ref}. This proves part (b).
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part (a), and step <1>6 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), and step [](#s6){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

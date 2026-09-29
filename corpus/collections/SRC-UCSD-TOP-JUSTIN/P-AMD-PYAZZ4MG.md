@@ -19,41 +19,82 @@ Show that $f\simeq g \implies P\simeq Q$.
 :::
 
 ::: {.solution}
-<1>1. Let $H:S^1\times I\to X$ be a homotopy from $f$ to $g$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $H:S^1\times I\to X$ be a homotopy from $f$ to $g$.
+
+::: pf-proof
+
 This is the hypothesis $f\simeq g$.
+
 :::
 
-<1>2. Form
+:::
+
+::: pf-step
+
+Form
 $$
 R=X\cup_H(S^1\times I)\cup_g B^2,
 $$
 where $S^1\times\{0\}$ is attached to $X$ by $f$, $S^1\times\{1\}$ is attached to $X$ by $g$, and the boundary of the disk is attached along the top circle.
-::: {.proof}
+
+::: pf-proof
+
 This is the mapping-cylinder construction for the homotopy, followed by attachment of the $2$-cell at the $g$ end.
+
 :::
 
-<1>3. Collapsing the cylinder $S^1\times I$ toward its bottom end gives a deformation retraction
+:::
+
+::: {.pf-step #s3}
+
+Collapsing the cylinder $S^1\times I$ toward its bottom end gives a deformation retraction
 $$
 R\simeq X\cup_f B^2=P.
 $$
-::: {.proof}
+
+::: pf-proof
+
 Under the bottomward collapse, the disk together with the cylinder is again a disk whose boundary is identified with $X$ by $f$. The homotopy $H$ specifies the attaching points throughout the collapse, so it descends to the quotient.
+
 :::
 
-<1>4. Collapsing the same cylinder toward its top end gives a deformation retraction
+:::
+
+::: {.pf-step #s4}
+
+Collapsing the same cylinder toward its top end gives a deformation retraction
 $$
 R\simeq X\cup_g B^2=Q.
 $$
-::: {.proof}
+
+::: pf-proof
+
 The analogous topward collapse leaves the disk attached by $g$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{X\cup_f B^2\simeq X\cup_g B^2}.
 $$
-::: {.proof}
-Both spaces are homotopy-equivalent to $R$ by <1>3--<1>4.
+
+::: pf-proof
+
+Both spaces are homotopy-equivalent to $R$ by steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

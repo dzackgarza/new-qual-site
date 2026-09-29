@@ -28,38 +28,87 @@ Show that $f(z)$ is a constant.
 :::
 
 ::: {.solution}
-<1>1. $f(z)/z\to0$ as $z\to\infty$ implies $f$ bounded: for $|z|>R$, $|f(z)|\le|z|$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$f(z)/z\to0$ as $z\to\infty$ implies $f$ bounded: for $|z|>R$, $|f(z)|\le|z|$.
+
+::: pf-proof
+
 limit.
+
 :::
 
-<1>2. Cauchy estimate for $f'$: $|f'(0)|\le \max_{|z|=R}|f(z)|/R$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Cauchy estimate for $f'$: $|f'(0)|\le \max_{|z|=R}|f(z)|/R$.
+
+::: pf-proof
+
 Cauchy.
+
 :::
 
-<1>3. For large $R$, $\max_{|z|=R}|f(z)|\le2R$, so $|f'(0)|\le2$.
-::: {.proof}
-<1>1.
 :::
 
-<1>4. More generally $f(z)-f(0)$ satisfies same condition, and $g(z)=(f(z)-f(0))/z$ entire? Actually consider $g(z)=(f(z)-f(0))/z$ entire (removable at $0$).
-::: {.proof}
+::: pf-step
+
+For large $R$, $\max_{|z|=R}|f(z)|\le2R$, so $|f'(0)|\le2$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+More generally $f(z)-f(0)$ satisfies same condition, and $g(z)=(f(z)-f(0))/z$ entire? Actually consider $g(z)=(f(z)-f(0))/z$ entire (removable at $0$).
+
+::: pf-proof
+
 $g$ entire.
+
 :::
 
-<1>5. $g(z)\to0$ as $z\to\infty$ (since $f(z)/z\to0$), so $g$ bounded entire, hence constant $0$ by Liouville.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+$g(z)\to0$ as $z\to\infty$ (since $f(z)/z\to0$), so $g$ bounded entire, hence constant $0$ by Liouville.
+
+::: pf-proof
+
 $g$ bounded.
+
 :::
 
-<1>6. Hence $f(z)=f(0)$ constant.
-::: {.proof}
-<1>5.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+::: {.pf-step #s6}
+
+Hence $f(z)=f(0)$ constant.
+
+::: pf-proof
+
+Step [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

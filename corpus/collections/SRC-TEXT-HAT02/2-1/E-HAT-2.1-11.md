@@ -40,25 +40,44 @@ r:X\to A
 \]
 be a retraction, so $r\circ i=\operatorname{id}_A$.
 
-<1>1. On homology,
+::: pf
+
+::: pf-step
+
+On homology,
 \[
 r_*\circ i_*=\operatorname{id}_{H_n(A)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Homology is functorial, hence
 \[
 r_*i_*=(r\circ i)_*=(\operatorname{id}_A)_*=\operatorname{id}_{H_n(A)}.
 \]
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{i_*:H_n(A)\to H_n(X)\text{ is injective}.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $i_*(x)=0$, then applying $r_*$ gives
 \[
 x=r_*i_*(x)=0.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

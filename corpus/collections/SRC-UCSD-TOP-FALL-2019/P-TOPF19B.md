@@ -24,27 +24,61 @@ Classify (up to isomorphism) all subgroups of $G_n$ with index $m$.
 :::
 
 ::: {.solution}
-<1>1. The group $G_n$ is the fundamental group of the closed orientable surface $\Sigma_n$ of genus $n$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The group $G_n$ is the fundamental group of the closed orientable surface $\Sigma_n$ of genus $n$.
+
+::: pf-proof
+
 The displayed presentation is the standard polygon presentation of $\pi_1(\Sigma_n)$.
+
 :::
 
-<1>2. An index-$m$ subgroup $H\le G_n$ corresponds to a connected $m$-sheeted covering surface $\Sigma_g\to\Sigma_n$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+An index-$m$ subgroup $H\le G_n$ corresponds to a connected $m$-sheeted covering surface $\Sigma_g\to\Sigma_n$.
+
+::: pf-proof
+
 By the subgroup-covering correspondence, index equals the number of sheets. A covering of a closed orientable surface is again a closed orientable surface.
+
 :::
 
-<1>3. Euler characteristic gives
+:::
+
+::: {.pf-step #s3}
+
+Euler characteristic gives
 $$2-2g=m(2-2n),$$
 so
 $$g=1+m(n-1).$$
-::: {.proof}
+
+::: pf-proof
+
 Euler characteristic multiplies by the number of sheets of a finite covering.
+
 :::
 
-<1>4. Consequently every index-$m$ subgroup is, as an abstract group,
-$$\boxed{G_{\,1+m(n-1)}}.$$
-::: {.proof}
-The subgroup is the fundamental group of the covering surface from <1>2, whose genus is determined by <1>3. Thus all such subgroups have the same isomorphism type. Existence follows, for example, from the epimorphism $G_n\to\mathbb Z/m$ sending $a_1\mapsto1$ and all other standard generators to $0$; its kernel has index $m$.
 :::
+
+::: pf-step
+
+Consequently every index-$m$ subgroup is, as an abstract group,
+$$\boxed{G_{\,1+m(n-1)}}.$$
+
+::: pf-proof
+
+The subgroup is the fundamental group of the covering surface from step [](#s2){.pf-ref}, whose genus is determined by step [](#s3){.pf-ref}. Thus all such subgroups have the same isomorphism type. Existence follows, for example, from the epimorphism $G_n\to\mathbb Z/m$ sending $a_1\mapsto1$ and all other standard generators to $0$; its kernel has index $m$.
+
+:::
+
+:::
+
+:::
+
 :::

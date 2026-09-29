@@ -33,10 +33,16 @@ x^p-t\in K[x]$.
 -   Conclude that $f$ is irreducible over $K$.
 :::
 
-
 ::: {.solution}
-<1>1. The polynomial \(f(X)=X^p-t\) has no root in \(K=\mathbb F_p(t)\).
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The polynomial \(f(X)=X^p-t\) has no root in \(K=\mathbb F_p(t)\).
+
+::: pf-proof
+
 Suppose \(r\in K\) satisfies \(r^p=t\). Write
 \[
 r=\frac{a(t)}{b(t)}
@@ -50,28 +56,42 @@ Let \(v_t\) denote the exponent of the irreducible polynomial \(t\) in a nonzero
 p\,v_t(a)=1+p\,v_t(b),
 \]
 which is impossible modulo \(p\). Hence \(f\) has no root in \(K\).
+
 :::
 
-<1>2. If \(\alpha\) is a root of \(f\) in a splitting field \(E\), then
+:::
+
+::: {.pf-step #s2}
+
+If \(\alpha\) is a root of \(f\) in a splitting field \(E\), then
 \[
 f(X)=(X-\alpha)^p
 \]
 in \(E[X]\).
-::: {.proof}
+
+::: pf-proof
+
 We have \(\alpha^p=t\). Since the characteristic is \(p\), all intermediate binomial coefficients \(\binom pj\) vanish in \(\mathbb F_p\), so
 \[
 (X-\alpha)^p=X^p-\alpha^p=X^p-t=f(X).
 \]
 Thus \(\alpha\) is the unique root of \(f\) in an algebraic closure, with multiplicity \(p\).
+
 :::
 
-<1>3. The polynomial \(f(X)=X^p-t\) is irreducible over \(K\).
-::: {.proof}
+:::
+
+::: pf-step
+
+The polynomial \(f(X)=X^p-t\) is irreducible over \(K\).
+
+::: pf-proof
+
 Suppose \(f\) were reducible in \(K[X]\). Since \(f\) is monic, it would have a monic factor \(g\in K[X]\) of degree \(r\) with
 \[
 1\le r\le p-1.
 \]
-Over the splitting field \(E\), <1>2 shows that every root of \(g\) must equal \(\alpha\). Hence
+Over the splitting field \(E\), step [](#s2){.pf-ref} shows that every root of \(g\) must equal \(\alpha\). Hence
 \[
 g(X)=(X-\alpha)^r.
 \]
@@ -79,6 +99,12 @@ The coefficient of \(X^{r-1}\) in this polynomial is \(-r\alpha\). Because \(1\l
 \[
 \alpha=-r^{-1}[X^{r-1}]g\in K,
 \]
-contradicting <1>1. Therefore \(f\) is irreducible over \(K\).
+contradicting step [](#s1){.pf-ref}. Therefore \(f\) is irreducible over \(K\).
+
 :::
+
+:::
+
+:::
+
 :::

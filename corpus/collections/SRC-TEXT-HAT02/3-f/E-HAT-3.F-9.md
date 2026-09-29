@@ -77,18 +77,38 @@ which is multiplication by $p$ on $A$. By functoriality of Ext, the composite is
 \operatorname{Ext}({}_pA,\mathbb Z)\to0.}
 \]
 
-<1>1. If $A$ is torsionfree, then $\operatorname{Ext}(A,\mathbb Z)$ is divisible.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+If $A$ is torsionfree, then $\operatorname{Ext}(A,\mathbb Z)$ is divisible.
+
+::: pf-proof
+
 Torsionfreeness gives ${}_pA=0$. Exactness at the second copy of $\operatorname{Ext}(A,\mathbb Z)$ says multiplication by $p$ is surjective for every prime $p$. Therefore multiplication by every positive integer is surjective, so $\operatorname{Ext}(A,\mathbb Z)$ is divisible.
+
 :::
 
-<1>2. If $A$ is divisible, then $\operatorname{Ext}(A,\mathbb Z)$ is torsionfree.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $A$ is divisible, then $\operatorname{Ext}(A,\mathbb Z)$ is torsionfree.
+
+::: pf-proof
+
 Divisibility gives $A_p=0$ for every prime $p$. Exactness at the first copy of $\operatorname{Ext}(A,\mathbb Z)$ then says multiplication by $p$ has zero kernel. Thus the Ext group has no $p$-torsion for any prime $p$, hence is torsionfree.
+
 :::
 
-<1>3. Conversely, if $\operatorname{Hom}(A,\mathbb Z)=0$ and $\operatorname{Ext}(A,\mathbb Z)$ is torsionfree, then $A$ is divisible.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conversely, if $\operatorname{Hom}(A,\mathbb Z)=0$ and $\operatorname{Ext}(A,\mathbb Z)$ is torsionfree, then $A$ is divisible.
+
+::: pf-proof
+
 Precomposition with the surjection $A\xrightarrow p pA$ injects
 \[
 \operatorname{Hom}(pA,\mathbb Z)\hookrightarrow\operatorname{Hom}(A,\mathbb Z)=0,
@@ -105,5 +125,11 @@ But $A_p$ is a vector space over $\mathbb Z_p$, and if it were nonzero it would 
 \cong\operatorname{Hom}(A_p,\mathbb Q/\mathbb Z)
 \]
 from Exercise 5 (since $\operatorname{Hom}(A_p,\mathbb Q)=0$), this would contradict $\operatorname{Ext}(A_p,\mathbb Z)=0$. Hence $A_p=0$, i.e. $pA=A$, for every prime $p$. Therefore $A$ is divisible.
+
 :::
+
+:::
+
+:::
+
 :::

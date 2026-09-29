@@ -33,22 +33,31 @@ Include information about the existence, order, and number $n_p$ of Sylow $p$-su
 Let $G$ be finite, let $p$ be prime, and write
 $|G|=p^a m$ with $a\geq0$ and $p\nmid m$.
 
-<1>1. A Sylow $p$-subgroup is a subgroup of order $p^a$.
+::: pf
+
+::: {.pf-step #s1}
+
+A Sylow $p$-subgroup is a subgroup of order $p^a$.
 Such subgroups exist. Every subgroup of $G$ whose order
 is a power of $p$ is contained in a Sylow $p$-subgroup.
 Any two Sylow $p$-subgroups are conjugate by an element
 of $G$ [@DF04, sec. 4.5].
 
-<1>2. The number $n_p$ of Sylow $p$-subgroups satisfies
+:::
+
+::: pf-step
+
+The number $n_p$ of Sylow $p$-subgroups satisfies
 $$
 n_p=[G:N_G(P)],\qquad n_p\mid m,\qquad
 n_p\equiv1\pmod p
 $$
 for any Sylow $p$-subgroup $P$.
 
-::: {.proof}
+::: pf-proof
+
 Conjugation is transitive on the Sylow subgroups by step
-<1>1, and the stabilizer of $P$ is its normalizer
+[](#s1){.pf-ref}, and the stabilizer of $P$ is its normalizer
 $N_G(P)=\{g\in G:gPg^{-1}=P\}$. Orbit-stabilizer gives
 the index formula [@DF04]. Since $P\leq N_G(P)$,
 $$
@@ -66,15 +75,27 @@ of $p$. Its order divides $|G|$ and hence is at most $p^a$.
 But it contains both order-$p^a$ groups $P,Q$, forcing
 $P=PQ=Q$. Thus there is exactly one fixed point, and
 counting orbits gives $n_p\equiv1\pmod p$.
+
 :::
 
-<1>3. A Sylow $p$-subgroup $P$ is normal exactly when $n_p=1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+A Sylow $p$-subgroup $P$ is normal exactly when $n_p=1$.
+
+::: pf-proof
+
 If $P$ is normal, its conjugacy orbit has one member;
-conjugacy in step <1>1 then implies that it is the only
+conjugacy in step [](#s1){.pf-ref} then implies that it is the only
 Sylow subgroup. Conversely, if it is unique, each conjugate
 has the same order and must equal $P$, which is normality.
 For $a=0$, the unique Sylow $p$-subgroup is the trivial group.
+
 :::
+
+:::
+
+:::
+
 :::

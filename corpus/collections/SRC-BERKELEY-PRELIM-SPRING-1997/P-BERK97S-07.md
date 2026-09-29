@@ -29,9 +29,15 @@ Let $A,B$ be endomorphisms of a finite-dimensional vector space $V$ over a field
 :::
 
 ::: {.solution}
-<1>1. Statement (1) is false.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Statement (1) is false.
+
+::: pf-proof
+
 Take $V=K^2$ with basis $e_1,e_2$, and define endomorphisms by
 $$
 A(e_1)=e_1,\qquad A(e_2)=0,
@@ -50,11 +56,17 @@ BA(e_1)=B(e_1)=e_2,
 $$
 which is not a scalar multiple of $e_1$. Thus $e_1$ is not an eigenvector of
 $BA$.
+
 :::
 
-<1>2. Every nonzero eigenvalue of $AB$ is an eigenvalue of $BA$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Every nonzero eigenvalue of $AB$ is an eigenvalue of $BA$.
+
+::: pf-proof
+
 Let $\lambda\neq 0$ be an eigenvalue of $AB$, and choose $0\neq v\in V$
 such that
 $$
@@ -70,11 +82,17 @@ B(ABv)
 \lambda Bv.
 $$
 Hence $Bv$ is a nonzero eigenvector of $BA$ with eigenvalue $\lambda$.
+
 :::
 
-<1>3. If $0$ is an eigenvalue of $AB$, then $0$ is an eigenvalue of $BA$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $0$ is an eigenvalue of $AB$, then $0$ is an eigenvalue of $BA$.
+
+::: pf-proof
+
 If $0$ is an eigenvalue of $AB$, then $AB$ is singular, so
 $$
 \det(AB)=0.
@@ -93,18 +111,30 @@ $$
 $$
 Thus $BA$ is singular and has a nonzero kernel. Therefore $0$ is an
 eigenvalue of $BA$.
+
 :::
 
-<1>4. Statement (2) is true.
-
-::: {.proof}
-Step <1>2 proves the claim for every nonzero eigenvalue of $AB$, and step
-<1>3 proves it for the eigenvalue $0$.
 :::
 
-<1>5. Q.E.D.
+::: {.pf-step #s4}
 
-::: {.proof}
-Step <1>1 disproves statement (1), and step <1>4 proves statement (2).
+Statement (2) is true.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} proves the claim for every nonzero eigenvalue of $AB$, and step
+[](#s3){.pf-ref} proves it for the eigenvalue $0$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} disproves statement (1), and step [](#s4){.pf-ref} proves statement (2).
+
+:::
+
+:::
+
 :::

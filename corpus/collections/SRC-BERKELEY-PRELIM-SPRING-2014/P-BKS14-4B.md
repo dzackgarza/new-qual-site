@@ -42,14 +42,19 @@ f(z)=u(x,y)+iv(x,y),
 z=x+iy.
 $$
 
-<1>1. The real Jacobian determinant of $f$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The real Jacobian determinant of $f$ is
 $$
 J_f(x,y)
 =
 \abs{f'(z)}^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The real derivative matrix is
 $$
 Df
@@ -77,15 +82,21 @@ u_x^2+u_y^2\\
 \abs{f'(z)}^2.
 \end{aligned}
 $$
+
 :::
 
-<1>2. An injective holomorphic function on a domain has
+:::
+
+::: {.pf-step #s2}
+
+An injective holomorphic function on a domain has
 $$
 f'(z)\neq0
 $$
 at every point.
 
-::: {.proof}
+::: pf-proof
+
 This is the standard local mapping theorem for holomorphic functions:
 if the first nonzero term of the Taylor expansion of
 $$
@@ -94,25 +105,36 @@ $$
 at $z_0$ has degree $m\geq2$, then $f$ is locally $m$-to-$1$ near
 $z_0$. Local injectivity therefore forces $m=1$, equivalently
 $f'(z_0)\neq0$.
+
 :::
 
-<1>3. The injective holomorphic map
+:::
+
+::: {.pf-step #s3}
+
+The injective holomorphic map
 $$
 f:U\longrightarrow f(U)
 $$
 is a $C^1$ diffeomorphism.
 
-::: {.proof}
-By step <1>2, the real Jacobian determinant in step <1>1 is positive
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the real Jacobian determinant in step [](#s1){.pf-ref} is positive
 everywhere. The inverse function theorem therefore gives a $C^1$ local
 inverse near every point.
 
 Because $f$ is globally injective, these local inverses agree on overlaps
 and assemble to the inverse map on $f(U)$. Thus $f$ is a $C^1$
 diffeomorphism onto its image.
+
 :::
 
-<1>4. The area of the image satisfies
+:::
+
+::: {.pf-step #s4}
+
+The area of the image satisfies
 $$
 \boxed{
 \operatorname{Area}(f(U))
@@ -121,28 +143,35 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply the change-of-variables theorem to the diffeomorphism in step
-<1>3:
+[](#s3){.pf-ref}:
 $$
 \operatorname{Area}(f(U))
 =
 \int_U\abs{J_f(x,y)}\,dx\,dy.
 $$
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 J_f=\abs{f'}^2\geq0,
 $$
 which yields the displayed formula.
+
 :::
 
-<1>5. The function
+:::
+
+::: {.pf-step #s5}
+
+The function
 $$
 f(z)=z+\frac{z^2}{2}
 $$
 is injective on $U$.
 
-::: {.proof}
+::: pf-proof
+
 Suppose
 $$
 f(z_1)=f(z_2).
@@ -173,25 +202,37 @@ $$
 2
 $$
 for $z_1,z_2\in U$, a contradiction. Hence $z_1=z_2$.
+
 :::
 
-<1>6. For this function,
+:::
+
+::: {.pf-step #s6}
+
+For this function,
 $$
 f'(z)=1+z.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiate the polynomial.
+
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #s7}
+
+One has
 $$
 \int_U\abs{1+z}^2\,dx\,dy
 =
 \frac{3\pi}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Use polar coordinates
 $$
 z=re^{i\theta},
@@ -228,9 +269,14 @@ r\,d\theta\,dr\\
 \frac{3\pi}{2}.
 \end{aligned}
 $$
+
 :::
 
-<1>8. Hence the image of the unit disk under
+:::
+
+::: {.pf-step #s8}
+
+Hence the image of the unit disk under
 $$
 f(z)=z+\frac{z^2}{2}
 $$
@@ -239,14 +285,21 @@ $$
 \boxed{\frac{3\pi}{2}}.
 $$
 
-::: {.proof}
-Combine steps <1>4, <1>5, <1>6, and <1>7.
+::: pf-proof
+
+Combine steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref}.
+
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves the general area formula, and step <1>8 computes the
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves the general area formula, and step [](#s8){.pf-ref} computes the
 requested example.
+
 :::
+
+:::
+
 :::

@@ -50,10 +50,15 @@ Z=f(X)
 $$
 with its reduced induced structure.
 
-<1>1. Every member of $\mathcal D$ is the inverse image of a hyperplane
+::: pf
+
+::: {.pf-step #s1}
+
+Every member of $\mathcal D$ is the inverse image of a hyperplane
 section of $Z$.
 
-::: {.proof}
+::: pf-proof
+
 The morphism $f$ is defined by the vector space of sections underlying
 $\mathcal D$. Hence
 $$
@@ -73,27 +78,39 @@ D=f^{-1}(H)=f^*(H|_Z).
 $$
 Since the corresponding section is nonzero, $Z$ is not contained in $H$.
 Thus $H|_Z$ is an effective Cartier divisor on the integral variety $Z$.
+
 :::
 
-<1>2. The morphism $f:X\to Z$ has a factorization
+:::
+
+::: {.pf-step #s2}
+
+The morphism $f:X\to Z$ has a factorization
 $$
 X\xrightarrow{h}Y\xrightarrow{g}Z
 $$
 such that $h$ is projective with connected fibres and $g$ is finite
 surjective.
 
-::: {.proof}
+::: pf-proof
+
 This is the Stein factorization [@Har10a, Corollary III.11.5], applied after
 replacing the original target by the image $Z$. By construction,
 $$
 h_*\mco_X=\mco_Y.
 $$
 The map $g$ is surjective because $f$ is surjective onto $Z$.
+
 :::
 
-<1>3. The variety $Y$ is normal, projective, and has dimension at least $2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The variety $Y$ is normal, projective, and has dimension at least $2$.
+
+::: pf-proof
+
 First, $Y$ is irreducible because it is the image of the irreducible variety
 $X$ under the surjective map $h$. It is reduced because for every open
 $V\subseteq Y$,
@@ -135,17 +152,23 @@ finite surjective morphism preserves dimension, so
 $$
 \dim Y=\dim Z=\dim f(X)\ge2.
 $$
+
 :::
 
-<1>4. For the hyperplane $H$ associated to a member $D\in\mathcal D$, the
+:::
+
+::: {.pf-step #s4}
+
+For the hyperplane $H$ associated to a member $D\in\mathcal D$, the
 divisor
 $$
 E=g^*(H|_Z)
 $$
 is an effective ample Cartier divisor on $Y$.
 
-::: {.proof}
-By step <1>1, $H|_Z$ is an effective Cartier divisor and
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $H|_Z$ is an effective Cartier divisor and
 $$
 \mco_Z(H|_Z)=\mco_{\PP^n}(1)|_Z
 $$
@@ -157,23 +180,35 @@ $$
 $$
 is ample. Pullback of the defining nonzerodivisor of $H|_Z$ remains nonzero
 on the integral scheme $Y$, so $E$ is an effective Cartier divisor.
+
 :::
 
-<1>5. The support $|E|$ is connected.
+:::
 
-::: {.proof}
-By step <1>3, $Y$ is a normal projective variety of dimension at least $2$.
-By step <1>4, $|E|$ is the support of an effective ample divisor.
+::: {.pf-step #s5}
+
+The support $|E|$ is connected.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $Y$ is a normal projective variety of dimension at least $2$.
+By step [](#s4){.pf-ref}, $|E|$ is the support of an effective ample divisor.
 The Enriques--Severi--Zariski connectedness theorem
 [@Har10a, Corollary III.7.9] therefore gives
 $$
 \boxed{|E|\text{ is connected}.}
 $$
+
 :::
 
-<1>6. If $C\subseteq Y$ is connected, then $h^{-1}(C)$ is connected.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+If $C\subseteq Y$ is connected, then $h^{-1}(C)$ is connected.
+
+::: pf-proof
+
 The projective morphism $h$ is closed, surjective, and has connected fibres.
 Suppose, to the contrary, that
 $$
@@ -205,12 +240,18 @@ would then be a separation of that fibre, a contradiction.
 
 Thus $C=h(A)\amalg h(B)$ is disconnected, contrary to the hypothesis.
 Hence $h^{-1}(C)$ is connected.
+
 :::
 
-<1>7. Every divisor $D\in\mathcal D$ is connected.
+:::
 
-::: {.proof}
-For the hyperplane $H$ corresponding to $D$, steps <1>1 and <1>2 give
+::: pf-step
+
+Every divisor $D\in\mathcal D$ is connected.
+
+::: pf-proof
+
+For the hyperplane $H$ corresponding to $D$, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 D=f^*(H|_Z)
 =
@@ -222,16 +263,22 @@ Consequently
 $$
 |D|=h^{-1}(|E|).
 $$
-Step <1>5 says that $|E|$ is connected, and step <1>6 says its inverse image
+Step [](#s5){.pf-ref} says that $|E|$ is connected, and step [](#s6){.pf-ref} says its inverse image
 under $h$ is connected. Therefore $|D|$ is connected, which is exactly to say
 that the divisor scheme $D$ is connected.
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 The argument applies to every hyperplane, hence to every member of the
 base-point-free linear system $\mathcal D$. Thus every divisor in
 $\mathcal D$ is connected.
+
 :::
+
+:::
+
 :::

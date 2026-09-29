@@ -2365,7 +2365,7 @@ The source states structure only. The filter assigns the step numbers, prints th
 - A step proved directly holds one `::: pf-proof` block written in complete sentences.
 - A step proved by substeps holds one `::: pf-proof` block that contains those substeps.
 - The filter labels the last step at each level QED: that step proves the level's goal. When the goal needs an argument but no claim of its own, write the last step as a `::: pf-qed` block holding that argument. Never write a `pf-qed` sentence that only says the earlier steps answer the question.
-- Give a step an identifier, `::: {.pf-step #kebab-case-name}`, only when another step cites it. The name says what the step claims.
+- Give a step an identifier, `::: {.pf-step #name}`, only when another step cites it. The identifier is an anchor that readers never see; a kebab-case name for what the step claims, or a path such as `#s2-1`, both serve.
 - Cite a step as `step [](#name){.pf-ref}`; the filter fills in the number. Never write “above” or “the previous step” (`PROSE-03`).
 - Put a blank line before and after every fence line.
 - Do not restate the problem as a “**Goal.**” paragraph: the statement is on the same card.

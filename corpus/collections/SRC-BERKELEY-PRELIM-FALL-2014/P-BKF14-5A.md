@@ -37,12 +37,18 @@ If $z$ has positive real part and all the roots $a_i$ have negative real part, s
 :::
 
 ::: {.solution}
-<1>1. If $w\in\CC$ has $\Re w>0$, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $w\in\CC$ has $\Re w>0$, then
 $$
 \Re\!\left(\frac1w\right)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \frac1w=\frac{\overline w}{|w|^2},
@@ -53,14 +59,20 @@ $$
 =
 \frac{\Re w}{|w|^2}>0.
 $$
+
 :::
 
-<1>2. Under the hypotheses of part (a),
+:::
+
+::: {.pf-step #s2}
+
+Under the hypotheses of part (a),
 $$
 \Re\!\left(\frac{P'(z)}{P(z)}\right)>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The assumptions imply $z\ne a_i$ for every $i$, so $P(z)\ne0$. Taking
 the logarithmic derivative of
 $$
@@ -76,11 +88,16 @@ For every $i$,
 $$
 \Re(z-a_i)=\Re z-\Re a_i>0.
 $$
-Each summand therefore has positive real part by step <1>1, and so does
+Each summand therefore has positive real part by step [](#s1){.pf-ref}, and so does
 their sum.
+
 :::
 
-<1>3. Let $K$ be the convex hull of the roots of $P$. If
+:::
+
+::: {.pf-step #s3}
+
+Let $K$ be the convex hull of the roots of $P$. If
 $\zeta\notin K$, there is an affine change of complex coordinate
 $$
 w=e^{-i\theta}(z-c)
@@ -92,20 +109,27 @@ $$
 $$
 has negative real part.
 
-::: {.proof}
+::: pf-proof
+
 The set $K$ is compact and convex. Since $\zeta\notin K$, the strict
 separation theorem in $\RR^2$ gives a line separating $\zeta$ from
 $K$. A translation moves that line through the origin, and a rotation
 makes it the imaginary axis. Choosing the orientation so that $\zeta$
 lies on the right gives exactly the stated inequalities for real
 parts.
+
 :::
 
-<1>4. No zero of $P'$ lies outside $K$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+No zero of $P'$ lies outside $K$.
+
+::: pf-proof
+
 Suppose for contradiction that $P'(\zeta)=0$ for some
-$\zeta\notin K$. Use step <1>3 and define
+$\zeta\notin K$. Use step [](#s3){.pf-ref} and define
 $$
 Q(w)\coloneqq P(e^{i\theta}w+c).
 $$
@@ -119,21 +143,33 @@ Since $w_0$ is not a root of $Q$, this gives
 $$
 \frac{Q'(w_0)}{Q(w_0)}=0.
 $$
-But step <1>2, applied to $Q$ at $w_0$, says that this quotient has
+But step [](#s2){.pf-ref}, applied to $Q$ at $w_0$, says that this quotient has
 strictly positive real part. This contradiction proves the claim.
+
 :::
 
-<1>5. Therefore every root of $P'$ lies in the convex hull of the roots
+:::
+
+::: {.pf-step #s5}
+
+Therefore every root of $P'$ lies in the convex hull of the roots
 of $P$.
 
-::: {.proof}
-This is exactly the conclusion of step <1>4, with $K$ equal to that
+::: pf-proof
+
+This is exactly the conclusion of step [](#s4){.pf-ref}, with $K$ equal to that
 convex hull.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>2 proves part (a), and step <1>5 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (a), and step [](#s5){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

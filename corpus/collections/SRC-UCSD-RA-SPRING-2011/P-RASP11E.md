@@ -30,8 +30,15 @@ Show that there exists a subsequence $N_k \to \infty$ so that $S_{N_k} f \to f$ 
 :::
 
 ::: {.solution}
-<1>1. The symmetric partial sums converge to $f$ in $L^2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The symmetric partial sums converge to $f$ in $L^2$.
+
+::: pf-proof
+
 Let
 \[
 V_N=\operatorname{span}\{e^{inx}:-N\le n\le N\}.
@@ -46,10 +53,17 @@ Therefore the orthogonal projections satisfy
 \[
 \|S_Nf-f\|_2\longrightarrow0.
 \]
+
 :::
 
-<1>2. Extract a subsequence converging almost everywhere.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extract a subsequence converging almost everywhere.
+
+::: pf-proof
+
 Choose integers
 \[
 N_1<N_2<\cdots
@@ -80,5 +94,11 @@ for all sufficiently large $k$, and therefore
 \[
 \boxed{S_{N_k}f(x)\to f(x)\quad\text{for a.e. }x.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

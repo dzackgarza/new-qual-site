@@ -35,8 +35,15 @@ For the general case try computing $\int_0^{2\pi} |f(x+h) - f(x)|^2\,dx$ two dif
 :::
 
 ::: {.solution}
-<1>1. Estimate the $L^2$ norm of a translation difference.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Estimate the $L^2$ norm of a translation difference.
+
+::: pf-proof
+
 Set
 \[
 \alpha:=\frac12+\varepsilon>\frac12.
@@ -50,10 +57,17 @@ Therefore
 \int_0^{2\pi}|f(x+h)-f(x)|^2\,dx
 \le 2\pi C^2|h|^{2\alpha}.
 \]
+
 :::
 
-<1>2. Express the same quantity using Fourier coefficients.
-::: {.proof}
+:::
+
+::: pf-step
+
+Express the same quantity using Fourier coefficients.
+
+::: pf-proof
+
 Let
 \[
 c_n:=\frac1{2\pi}\int_0^{2\pi}f(x)e^{-inx}\,dx.
@@ -76,10 +90,17 @@ Combining this with Step 1 gives
 \sum_{n\in\mathbb Z}|c_n|^2|e^{inh}-1|^2
 \le C^2|h|^{2\alpha}.
 \]
+
 :::
 
-<1>3. Obtain a dyadic $\ell^2$ estimate for the coefficients.
-::: {.proof}
+:::
+
+::: pf-step
+
+Obtain a dyadic $\ell^2$ estimate for the coefficients.
+
+::: pf-proof
+
 Fix an integer $N\ge1$ and take
 \[
 h=\frac1N.
@@ -102,10 +123,17 @@ throughout this range. Therefore Step 2 gives
 \le C_1N^{-2\alpha}
 \]
 for a constant $C_1$ independent of $N$.
+
 :::
 
-<1>4. Upgrade the dyadic estimate to absolute summability.
-::: {.proof}
+:::
+
+::: pf-step
+
+Upgrade the dyadic estimate to absolute summability.
+
+::: pf-proof
+
 By Cauchy--Schwarz,
 \[
 \begin{aligned}
@@ -129,10 +157,17 @@ we obtain
 \[
 \sum_{n\in\mathbb Z}|c_n|<\infty.
 \]
+
 :::
 
-<1>5. Conclude uniform convergence to $f$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude uniform convergence to $f$.
+
+::: pf-proof
+
 Absolute summability implies that
 \[
 \sum_{n\in\mathbb Z}c_ne^{inx}
@@ -150,5 +185,11 @@ By Fejer's theorem, the Cesaro means of the Fourier series of a continuous perio
 h\equiv0.
 \]
 Therefore $S=f$, and the Fourier series of $f$ converges uniformly to $f$.
+
 :::
+
+:::
+
+:::
+
 :::

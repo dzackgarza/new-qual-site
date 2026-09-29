@@ -21,23 +21,40 @@ Show that a continuous function on a compact set is uniformly continuous.
 ::: {.solution}
 Let $(K,d)$ be a compact metric space, $f\colon K \to \RR$ continuous, and $\eps > 0$.
 
-<1>1. For each $z \in K$ there is $\delta_z > 0$ with $|f(x) - f(z)| < \eps/2$ whenever $d(x,z) < \delta_z$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+For each $z \in K$ there is $\delta_z > 0$ with $|f(x) - f(z)| < \eps/2$ whenever $d(x,z) < \delta_z$.
+
+::: pf-proof
+
 This is continuity of $f$ at $z$.
+
 :::
 
-<1>2. There are $z_1, \ldots, z_m \in K$ with $K = \bigcup_{i=1}^m B(z_i, \delta_{z_i}/2)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+There are $z_1, \ldots, z_m \in K$ with $K = \bigcup_{i=1}^m B(z_i, \delta_{z_i}/2)$.
+
+::: pf-proof
+
 The balls $B(z, \delta_z/2)$, $z \in K$, form an open cover of the compact space $K$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Put $\delta = \min_i \delta_{z_i}/2 > 0$ and let $d(x,y) < \delta$. By step <1>2, $d(x, z_i) < \delta_{z_i}/2$ for some $i$, and then $d(y, z_i) < \delta + \delta_{z_i}/2 \le \delta_{z_i}$. By step <1>1, $|f(x) - f(y)| \le |f(x) - f(z_i)| + |f(z_i) - f(y)| < \eps$.
 :::
+
+::: pf-qed
+
+Put $\delta = \min_i \delta_{z_i}/2 > 0$ and let $d(x,y) < \delta$. By step [](#s2){.pf-ref}, $d(x, z_i) < \delta_{z_i}/2$ for some $i$, and then $d(y, z_i) < \delta + \delta_{z_i}/2 \le \delta_{z_i}$. By step [](#s1){.pf-ref}, $|f(x) - f(y)| \le |f(x) - f(z_i)| + |f(z_i) - f(y)| < \eps$.
+
+:::
+
+:::
+
 :::
 
 ::: {.solution title="Sequential compactness"}

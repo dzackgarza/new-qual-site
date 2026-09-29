@@ -35,11 +35,14 @@ Show that for a prime ideal $\mathfrak p \subset A$, the following are equivalen
 -   $M \otimes_A k(\mathfrak p) = 0$, where $k(\mathfrak p) = A_{\mathfrak p}/\mathfrak p A_{\mathfrak p}$ is the residue field of $A$ at $\mathfrak p$.
 :::
 
-
 ::: {.solution}
 Let \(S=A\setminus\mathfrak p\), so \(A_{\mathfrak p}=S^{-1}A\) and \(M_{\mathfrak p}=S^{-1}M\).
 
-<1>1. If
+::: pf
+
+::: pf-step
+
+If
 \[
 \operatorname{Ann}(M)\not\subset\mathfrak p,
 \]
@@ -47,7 +50,9 @@ then
 \[
 M_{\mathfrak p}=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Choose
 \[
 s\in\operatorname{Ann}(M)\setminus\mathfrak p.
@@ -57,9 +62,14 @@ Then \(s/1\) is a unit in \(A_{\mathfrak p}\), while it annihilates every elemen
 \frac{s}{1}\frac{m}{1}=0.
 \]
 Multiplying by the inverse of \(s/1\) gives \(m/1=0\). Hence \(M_{\mathfrak p}=0\).
+
 :::
 
-<1>2. Conversely, if
+:::
+
+::: pf-step
+
+Conversely, if
 \[
 M_{\mathfrak p}=0,
 \]
@@ -67,7 +77,9 @@ then
 \[
 \operatorname{Ann}(M)\not\subset\mathfrak p.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let \(m_1,\dots,m_r\) generate \(M\). Since \(m_i/1=0\) in \(M_{\mathfrak p}\), for each \(i\) there exists \(s_i\in S\) such that
 \[
 s_i m_i=0.
@@ -80,9 +92,14 @@ Because \(\mathfrak p\) is prime and no \(s_i\) belongs to \(\mathfrak p\), we h
 \[
 s\in\operatorname{Ann}(M)\setminus\mathfrak p.
 \]
+
 :::
 
-<1>3. There is a natural isomorphism
+:::
+
+::: {.pf-step #s3}
+
+There is a natural isomorphism
 \[
 M\otimes_A k(\mathfrak p)
 \cong
@@ -90,23 +107,37 @@ M_{\mathfrak p}\otimes_{A_{\mathfrak p}} k(\mathfrak p)
 \cong
 M_{\mathfrak p}/\mathfrak pA_{\mathfrak p}M_{\mathfrak p}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since every element of \(S\) maps to a unit in the residue field \(k(\mathfrak p)\), tensoring with \(k(\mathfrak p)\) factors through localization, giving the first isomorphism. The second is the standard tensor-quotient identity
 \[
 N\otimes_R R/I\cong N/IN
 \]
 with \(R=A_{\mathfrak p}\), \(I=\mathfrak pA_{\mathfrak p}\), and \(N=M_{\mathfrak p}\).
+
 :::
 
-<1>4. If \(M_{\mathfrak p}=0\), then
+:::
+
+::: pf-step
+
+If \(M_{\mathfrak p}=0\), then
 \[
 M\otimes_A k(\mathfrak p)=0.
 \]
-::: {.proof}
-This is immediate from <1>3.
+
+::: pf-proof
+
+This is immediate from step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. If
+:::
+
+::: pf-step
+
+If
 \[
 M\otimes_A k(\mathfrak p)=0,
 \]
@@ -114,8 +145,10 @@ then
 \[
 M_{\mathfrak p}=0.
 \]
-::: {.proof}
-By <1>3,
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 \[
 M_{\mathfrak p}/\mathfrak pA_{\mathfrak p}M_{\mathfrak p}=0.
 \]
@@ -123,9 +156,19 @@ The \(A_{\mathfrak p}\)-module \(M_{\mathfrak p}\) is finitely generated because
 \[
 M_{\mathfrak p}=0.
 \]
+
 :::
 
-<1>6. Hence the three conditions are equivalent:
+:::
+
+::: pf-step
+
+Hence the three conditions are equivalent:
+
+:::
+
+:::
+
 \[
 \boxed{
 \operatorname{Ann}(M)\not\subset\mathfrak p

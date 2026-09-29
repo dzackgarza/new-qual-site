@@ -32,7 +32,11 @@ i:X\to F(X)
 \]
 such that the following universal property holds:
 
-<1>1. For every group $G$ and every function $f:X\to G$, there exists a unique
+::: pf
+
+::: pf-step
+
+For every group $G$ and every function $f:X\to G$, there exists a unique
 group homomorphism
 \[
 \widetilde f:F(X)\to G
@@ -41,18 +45,33 @@ such that
 \[
 \widetilde f\circ i=f.
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the defining universal property of the free group on $X$.
+
 :::
 
-<1>2. Concretely, $F(X)$ may be realized as reduced words in the alphabet
+:::
+
+::: pf-step
+
+Concretely, $F(X)$ may be realized as reduced words in the alphabet
 $X\sqcup X^{-1}$.
-::: {.proof}
+
+::: pf-proof
+
 Multiplication is concatenation followed by cancellation of adjacent pairs
 $xx^{-1}$ and $x^{-1}x$. Given $f:X\to G$, define $\widetilde f$ on a reduced
 word by replacing each $x$ by $f(x)$ and each $x^{-1}$ by $f(x)^{-1}$ and
 multiplying in $G$. Cancellation does not change the resulting product, so this
 defines a homomorphism. Its values on the generators are forced to equal $f$,
 which proves uniqueness.
+
 :::
+
+:::
+
+:::
+
 :::

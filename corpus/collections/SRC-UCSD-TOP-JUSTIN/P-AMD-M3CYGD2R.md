@@ -41,11 +41,17 @@ Use the Mayer-Vietoris sequence to calculate the integral homology of the follow
 ::: {.solution}
 All homology groups below have coefficients in $\ZZ$.
 
-<1>1. For $\RP^2=M\cup D^2$,
+::: pf
+
+::: {.pf-step #s1}
+
+For $\RP^2=M\cup D^2$,
 $$
 H_0(\RP^2)=\ZZ,\qquad H_1(\RP^2)=\ZZ/2,\qquad H_i(\RP^2)=0\quad(i\ge2).
 $$
-::: {.proof}
+
+::: pf-proof
+
 Take collar neighborhoods so that the intersection deformation retracts to the common boundary circle $S^1$. We have
 $$
 H_1(S^1)\cong\ZZ,\qquad H_1(M)\cong\ZZ,\qquad H_1(D^2)=0.
@@ -65,14 +71,21 @@ $$
 \longrightarrow H_1(\RP^2)\longrightarrow0.
 $$
 Hence $H_2=0$ and $H_1\cong\ZZ/2$. Connectedness gives $H_0\cong\ZZ$, and there is no homology above degree $2$.
+
 :::
 
-<1>2. For the torus,
+:::
+
+::: {.pf-step #s2}
+
+For the torus,
 $$
 H_0(T^2)=\ZZ,\qquad H_1(T^2)=\ZZ^2,\qquad H_2(T^2)=\ZZ,
 $$
 and $H_i(T^2)=0$ for $i>2$.
-::: {.proof}
+
+::: pf-proof
+
 Let $P=T^2\setminus\operatorname{int}(D^2)$ be the punctured torus. Then
 $$
 P\simeq S^1\vee S^1,\qquad H_1(P)\cong\ZZ^2,\qquad H_2(P)=0.
@@ -85,21 +98,28 @@ Thus the Mayer-Vietoris map
 $$
 H_1(S^1)\longrightarrow H_1(P)\oplus H_1(D^2)
 $$
-is zero. As in <1>1, the $H_0$ map is injective. Hence exactness gives
+is zero. As in step [](#s1){.pf-ref}, the $H_0$ map is injective. Hence exactness gives
 $$
 0\longrightarrow H_2(T^2)\longrightarrow\ZZ
 \xrightarrow{0}\ZZ^2
 \longrightarrow H_1(T^2)\longrightarrow0,
 $$
 which yields $H_2(T^2)\cong\ZZ$ and $H_1(T^2)\cong\ZZ^2$.
+
 :::
 
-<1>3. For the Klein bottle $K$,
+:::
+
+::: {.pf-step #s3}
+
+For the Klein bottle $K$,
 $$
 H_0(K)=\ZZ,\qquad H_1(K)=\ZZ\oplus\ZZ/2,
 \qquad H_i(K)=0\quad(i\ge2).
 $$
-::: {.proof}
+
+::: pf-proof
+
 Let $A$ and $B$ be the two cylinder pieces. Each deformation retracts to a circle, while
 $$
 A\cap B\simeq S^1\sqcup S^1.
@@ -142,9 +162,14 @@ It splits because $\ZZ$ is free, so
 $$
 H_1(K)\cong\ZZ\oplus\ZZ/2.
 $$
+
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #s4}
+
+Let
 $$
 Y_n=S^1\cup_{z^n}B^2.
 $$
@@ -162,7 +187,9 @@ $$
 (\ZZ,\ZZ),&n=0.
 \end{cases}
 $$
-::: {.proof}
+
+::: pf-proof
+
 Decompose the attached disk into an outer annular collar and an inner disk. Let $A$ be the original $S^1$ together with the outer collar and let $B$ be the inner disk together with a slightly overlapping collar. Then
 $$
 A\simeq S^1,\qquad B\simeq *,\qquad A\cap B\simeq S^1.
@@ -174,10 +201,17 @@ $$
 \longrightarrow H_1(Y_n)\longrightarrow0.
 $$
 Taking kernel and cokernel yields the stated groups, including the previously omitted case $n=0$.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-The four Mayer-Vietoris computations in <1>1--<1>4 give all requested homology groups.
 :::
+
+::: pf-qed
+
+The four Mayer-Vietoris computations in steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all requested homology groups.
+
+:::
+
+:::
+
 :::

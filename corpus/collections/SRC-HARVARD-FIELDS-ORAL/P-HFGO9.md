@@ -37,9 +37,15 @@ f(x)=(x-\alpha_1)f_1(x)
 \]
 for some $f_1(x)\in F[x]$ of degree one less than $f$.
 
-<1>1. Repeating this argument factors $f$ completely into linear factors over
+::: pf
+
+::: {.pf-step #s1}
+
+Repeating this argument factors $f$ completely into linear factors over
 $F$.
-::: {.proof}
+
+::: pf-proof
+
 Proceed by induction on $\deg f$. The assertion is trivial in degree $1$.
 For degree $n>1$, choose a root $\alpha_1\in F$ by hypothesis and write
 \[
@@ -50,12 +56,25 @@ f=(x-\alpha_1)f_1,
 If $f_1$ is nonconstant, the hypothesis applies to it as well, and the induction
 hypothesis gives a factorization of $f_1$ into linear factors over $F$.
 Thus $f$ splits completely over $F$.
+
 :::
 
-<1>2. Hence $F$ is algebraically closed.
-::: {.proof}
+:::
+
+::: pf-step
+
+Hence $F$ is algebraically closed.
+
+::: pf-proof
+
 A field is algebraically closed precisely when every nonconstant polynomial over
 it splits into linear factors, equivalently when every such polynomial has all
-its roots in the field. This is exactly <1>1.
+its roots in the field. This is exactly step [](#s1){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

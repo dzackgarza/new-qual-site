@@ -43,9 +43,14 @@ with the single invariant factor
 $f(T)=(T-3)^2(T-2)=T^3-8T^2+21T-18$.
 We use the companion-matrix convention with ones on the subdiagonal.
 
-<1>1. The vector $v=(0,0,1)^t$ is cyclic for $A$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The vector $v=(0,0,1)^t$ is cyclic for $A$.
+
+::: pf-proof
+
 Because $A$ is upper triangular,
 $$
 \det(TI-A)=(T-3)^2(T-2)=f(T).
@@ -61,11 +66,17 @@ P=\begin{pmatrix}0&10&55\\0&5&25\\1&3&9\end{pmatrix},
 \qquad \det P=10\cdot25-55\cdot5=-25\ne0.
 $$
 Thus these three vectors form a basis of $\mathbb Q^3$.
+
 :::
 
-<1>2. In that basis, $A$ has the displayed companion matrix $C$.
+:::
 
-::: {.proof}
+::: pf-step
+
+In that basis, $A$ has the displayed companion matrix $C$.
+
+::: pf-proof
+
 The exact matrix products are
 $$
 AP=PC=
@@ -81,5 +92,11 @@ $A^3v=18v-21Av+8A^2v$, while the first two columns advance
 along the cyclic basis. A cyclic module with this degree-three
 relation has the single invariant factor $f$, and its rational
 canonical form is the companion matrix $C$ [@DF04].
+
 :::
+
+:::
+
+:::
+
 :::

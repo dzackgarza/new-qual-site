@@ -38,8 +38,15 @@ Hint: Use the open mapping theorem.
 :::
 
 ::: {.solution}
-<1>1. Compute $\|g_k\|_\infty$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Compute $\|g_k\|_\infty$.
+
+::: pf-proof
+
 For $x\in\mathbb R$,
 \[
 g_k(x)
@@ -53,10 +60,17 @@ Since $k\ge1$, this length is at most $2$, and at $x=0$ it equals $2$. Therefore
 \[
 \boxed{\|g_k\|_\infty=2.}
 \]
+
 :::
 
-<1>2. Compute the inverse Fourier transform.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compute the inverse Fourier transform.
+
+::: pf-proof
+
 Use the convention
 \[
 \widehat f(\xi)=\int_{\mathbb R}e^{-2\pi ix\xi}f(x)\,dx.
@@ -79,10 +93,17 @@ h_k(x):=\mathcal F^{-1}(g_k)(x)
 \end{aligned}
 \]
 This function is in $L^1(\mathbb R)$: it is bounded near $0$ and is $O(x^{-2})$ at infinity.
+
 :::
 
-<1>3. Show that the $L^1$ norms of the inverse transforms are unbounded.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the $L^1$ norms of the inverse transforms are unbounded.
+
+::: pf-proof
+
 For $0\le x\le1/4$, concavity of $\sin$ on $[0,\pi/2]$ gives
 \[
 \sin(2\pi x)\ge4x.
@@ -115,10 +136,17 @@ Summing over $1\le j\le\lfloor k/4\rfloor-1$ shows
 \[
 \|h_k\|_1\longrightarrow\infty.
 \]
+
 :::
 
-<1>4. Use the open mapping theorem to rule out surjectivity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use the open mapping theorem to rule out surjectivity.
+
+::: pf-proof
+
 The Fourier transform
 \[
 \mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)
@@ -137,5 +165,11 @@ for every $k$, contradicting Step 3. Therefore
 \[
 \boxed{\mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)\text{ is not onto}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

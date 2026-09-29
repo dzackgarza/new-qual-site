@@ -37,13 +37,26 @@ $$
 $$
 ordered by inclusion.
 
-<1>1. The poset $\mathcal P$ is nonempty.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The poset $\mathcal P$ is nonempty.
+
+::: pf-proof
+
 The ideal $I$ itself belongs to $\mathcal P$.
+
 :::
 
-<1>2. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
+
+::: pf-proof
+
 Let $\mathcal C\subseteq\mathcal P$ be a chain. If $\mathcal C$ is empty,
 $I$ is an upper bound. Otherwise, by [[E-SMI-8000E-NR6]],
 $$
@@ -55,11 +68,18 @@ $$
 J_{\mathcal C}\in\mathcal P,
 $$
 and it is an upper bound for the chain.
+
 :::
 
-<1>3. Apply Zorn's lemma.
-::: {.proof}
-By steps <1>1--<1>2, Zorn's lemma gives a maximal element
+:::
+
+::: pf-step
+
+Apply Zorn's lemma.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, Zorn's lemma gives a maximal element
 $$
 \mathfrak m\in\mathcal P.
 $$
@@ -75,7 +95,13 @@ Hence $\mathfrak m$ is a maximal ideal of $R$ and
 $$
 \boxed{I\subseteq\mathfrak m.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

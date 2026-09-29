@@ -40,10 +40,15 @@ Q_{\alpha,\beta}(X)
 +\beta\,\operatorname{tr}(X)^2.
 $$
 
-<1>1. Every $Q_{\alpha,\beta}$ is a conjugation-invariant quadratic
+::: pf
+
+::: {.pf-step #s1}
+
+Every $Q_{\alpha,\beta}$ is a conjugation-invariant quadratic
 form.
 
-::: {.proof}
+::: pf-proof
+
 Both $\operatorname{tr}(X^2)$ and $\operatorname{tr}(X)^2$ are
 homogeneous quadratic polynomials in the entries of $X$. If $A$ is
 invertible, then
@@ -59,9 +64,14 @@ $$
 =\operatorname{tr}(X).
 $$
 Thus $Q_{\alpha,\beta}(AXA^{-1})=Q_{\alpha,\beta}(X)$.
+
 :::
 
-<1>2. The restriction of any conjugation-invariant quadratic form
+:::
+
+::: {.pf-step #s2}
+
+The restriction of any conjugation-invariant quadratic form
 $Q$ to diagonal matrices is of the form
 $$
 Q\!\left(
@@ -76,7 +86,8 @@ a&0\\
 $$
 for unique $\alpha,\beta\in\CC$.
 
-::: {.proof}
+::: pf-proof
+
 Because $Q$ is quadratic, its restriction to diagonal matrices has the
 form
 $$
@@ -109,12 +120,18 @@ $$
 $$
 gives the displayed expression. Uniqueness follows by comparing the
 coefficients of $a^2$ and $ab$.
+
 :::
 
-<1>3. Matrices with two distinct eigenvalues are dense in
+:::
+
+::: {.pf-step #s3}
+
+Matrices with two distinct eigenvalues are dense in
 $M_2(\CC)$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 X=
@@ -143,13 +160,19 @@ only finitely many zeros. Hence there are arbitrarily small nonzero
 $t$ for which $\Delta(t)\ne0$. For such $t$, the matrix $X+tD$ has
 two distinct eigenvalues and is therefore diagonalizable. Since
 $X+tD\to X$ as $t\to0$, the claim follows.
+
 :::
 
-<1>4. Every conjugation-invariant quadratic form $Q$ equals one of the
-forms in step <1>1.
+:::
 
-::: {.proof}
-Choose $\alpha,\beta$ from step <1>2 and set
+::: {.pf-step #s4}
+
+Every conjugation-invariant quadratic form $Q$ equals one of the
+forms in step [](#s1){.pf-ref}.
+
+::: pf-proof
+
+Choose $\alpha,\beta$ from step [](#s2){.pf-ref} and set
 $$
 R\coloneqq Q-Q_{\alpha,\beta}.
 $$
@@ -160,11 +183,16 @@ $$
 R(X)=R(AXA^{-1})=0.
 $$
 Thus $R$ vanishes on all matrices with distinct eigenvalues. By step
-<1>3 this set is dense, and $R$ is a polynomial, hence continuous.
+[](#s3){.pf-ref} this set is dense, and $R$ is a polynomial, hence continuous.
 Therefore $R$ vanishes on all of $M_2(\CC)$.
+
 :::
 
-<1>5. Consequently the complete family is
+:::
+
+::: {.pf-step #s5}
+
+Consequently the complete family is
 $$
 \boxed{
 Q(X)
@@ -176,14 +204,21 @@ Q(X)
 }
 $$
 
-::: {.proof}
-Step <1>1 shows that every displayed form is admissible, and step
-<1>4 shows that there are no others.
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that every displayed form is admissible, and step
+[](#s4){.pf-ref} shows that there are no others.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested classification.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested classification.
+
+:::
+
+:::
+
 :::

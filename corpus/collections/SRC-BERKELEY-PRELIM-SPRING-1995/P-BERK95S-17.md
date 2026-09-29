@@ -42,27 +42,38 @@ V_1\coloneqq\ker\chi_1(L),
 V_2\coloneqq\ker\chi_2(L).
 $$
 
-<1>1. There exist polynomials $a,b\in F[x]$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There exist polynomials $a,b\in F[x]$ such that
 $$
 a\chi_1+b\chi_2=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomials $\chi_1$ and $\chi_2$ are relatively prime, so Bézout's
 identity in the Euclidean domain $F[x]$ gives such $a$ and $b$.
+
 :::
 
-<1>2. Every $v\in V$ can be written as a sum $v=v_1+v_2$ with
+:::
+
+::: {.pf-step #s2}
+
+Every $v\in V$ can be written as a sum $v=v_1+v_2$ with
 $v_i\in V_i$.
 
-::: {.proof}
+::: pf-proof
+
 For $v\in V$, define
 $$
 v_1\coloneqq b(L)\chi_2(L)v,
 \qquad
 v_2\coloneqq a(L)\chi_1(L)v.
 $$
-Evaluating the identity from step <1>1 at $L$ gives
+Evaluating the identity from step [](#s1){.pf-ref} at $L$ gives
 $$
 I_V=a(L)\chi_1(L)+b(L)\chi_2(L),
 $$
@@ -85,41 +96,59 @@ $$
 =0.
 $$
 Hence $v_1\in V_1$ and $v_2\in V_2$.
+
 :::
 
-<1>3. One has $V_1\cap V_2=\{0\}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+One has $V_1\cap V_2=\{0\}$.
+
+::: pf-proof
+
 Let $w\in V_1\cap V_2$. Then
 $$
 \chi_1(L)w=0
 \qquad\text{and}\qquad
 \chi_2(L)w=0.
 $$
-Applying the operator identity from step <1>2 gives
+Applying the operator identity from step [](#s2){.pf-ref} gives
 $$
 w
 =a(L)\chi_1(L)w+b(L)\chi_2(L)w
 =0.
 $$
 Thus the intersection is trivial.
+
 :::
 
-<1>4. The required decomposition is
+:::
+
+::: {.pf-step #s4}
+
+The required decomposition is
 $$
 \boxed{V=V_1\oplus V_2},
 $$
 and $\chi_i(L)V_i=0$ for $i=1,2$.
 
-::: {.proof}
-Step <1>2 gives $V=V_1+V_2$, while step <1>3 shows that the sum is
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives $V=V_1+V_2$, while step [](#s3){.pf-ref} shows that the sum is
 direct. By the definition of $V_i$, the operator $\chi_i(L)$ vanishes
 on $V_i$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

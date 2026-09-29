@@ -30,8 +30,15 @@ Given covering space actions of groups $G_1$ on $X_1$ and $G_2$ on $X_2$, show t
 :::
 
 ::: {.solution}
-<1>1. The product action of $G_1\times G_2$ on $X_1\times X_2$ is free.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The product action of $G_1\times G_2$ on $X_1\times X_2$ is free.
+
+::: pf-proof
+
 Suppose
 \[
 (g_1,g_2)(x_1,x_2)=(x_1,x_2).
@@ -44,10 +51,17 @@ Since each $G_i$ acts as a covering space action, in particular freely, we obtai
 \[
 g_1=e_1,\qquad g_2=e_2.
 \]
+
 :::
 
-<1>2. The product action is a covering space action.
-::: {.proof}
+:::
+
+::: pf-step
+
+The product action is a covering space action.
+
+::: pf-proof
+
 Fix $(x_1,x_2)\in X_1\times X_2$.
 Since the action of $G_i$ is a covering space action, choose an open neighborhood $U_i$ of $x_i$ such that
 \[
@@ -70,9 +84,14 @@ g_2U_2\cap U_2\ne\varnothing.
 \]
 Hence $g_1=e_1$ and $g_2=e_2$.
 Thus distinct translates of $U$ are disjoint, which is exactly the local condition for a covering space action.
+
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #s3}
+
+Let
 \[
 q:X_1\times X_2\to (X_1\times X_2)/(G_1\times G_2)
 \]
@@ -86,16 +105,23 @@ The map
 q_1\times q_2:X_1\times X_2\to (X_1/G_1)\times(X_2/G_2)
 \]
 is constant on $(G_1\times G_2)$-orbits.
-::: {.proof}
+
+::: pf-proof
+
 For every $(g_1,g_2)$,
 \[
 (q_1\times q_2)(g_1x_1,g_2x_2)
 =(q_1x_1,q_2x_2),
 \]
 since each $q_i$ is constant on $G_i$-orbits.
+
 :::
 
-<1>4. Hence there is a unique continuous map
+:::
+
+::: pf-step
+
+Hence there is a unique continuous map
 \[
 \Phi:(X_1\times X_2)/(G_1\times G_2)
 \to
@@ -106,8 +132,10 @@ with
 \Phi([(x_1,x_2)])=([x_1],[x_2]).
 \]
 It is bijective.
-::: {.proof}
-Existence and continuity follow from the quotient property of $q$ and <1>3.
+
+::: pf-proof
+
+Existence and continuity follow from the quotient property of $q$ and step [](#s3){.pf-ref}.
 Surjectivity is immediate.
 For injectivity, suppose
 \[
@@ -122,10 +150,17 @@ Therefore
 (y_1,y_2)=(g_1,g_2)(x_1,x_2),
 \]
 so the two points lie in the same $(G_1\times G_2)$-orbit.
+
 :::
 
-<1>5. The map $\Phi$ is a homeomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $\Phi$ is a homeomorphism.
+
+::: pf-proof
+
 Each quotient map $q_i$ is open, since for an open set $V_i\subseteq X_i$,
 \[
 q_i^{-1}(q_i(V_i))=\bigcup_{g_i\in G_i}g_iV_i
@@ -142,5 +177,11 @@ Thus
 \[
 \boxed{(X_1\times X_2)/(G_1\times G_2)\cong X_1/G_1\times X_2/G_2.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

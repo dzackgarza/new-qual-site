@@ -31,8 +31,15 @@ If $v\in F$ and $nv \in K$, then $v\in K$.
 :::
 
 ::: {.solution}
-<1>1. The element $n\cdot1_K$ is nonzero in $K$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The element $n\cdot1_K$ is nonzero in $K$.
+
+::: pf-proof
+
 Since $\operatorname{char}K=p$, one has
 \[
 n\cdot1_K=0
@@ -40,24 +47,44 @@ n\cdot1_K=0
 p\mid n.
 \]
 The hypothesis $(p,n)=1$ excludes this, so $n\cdot1_K\ne0$.
+
 :::
 
-<1>2. The element $n\cdot1_K$ is invertible in $K$.
-::: {.proof}
-Every nonzero element of a field is invertible. Apply this to <1>1.
 :::
 
-<1>3. If $nv\in K$, then $v\in K$.
-::: {.proof}
+::: {.pf-step #s2}
+
+The element $n\cdot1_K$ is invertible in $K$.
+
+::: pf-proof
+
+Every nonzero element of a field is invertible. Apply this to step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-step
+
+If $nv\in K$, then $v\in K$.
+
+::: pf-proof
+
 Interpreting multiplication by the integer $n$ as scalar multiplication by
 $n\cdot1_K$, we have
 \[
 nv=(n\cdot1_K)v.
 \]
-By hypothesis the left side belongs to $K$, and by <1>2 the inverse
+By hypothesis the left side belongs to $K$, and by step [](#s2){.pf-ref} the inverse
 $(n\cdot1_K)^{-1}$ belongs to $K$. Therefore
 \[
 v=(n\cdot1_K)^{-1}(nv)\in K.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

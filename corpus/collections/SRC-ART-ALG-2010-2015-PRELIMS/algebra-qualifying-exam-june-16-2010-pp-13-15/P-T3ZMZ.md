@@ -42,9 +42,14 @@ $$
 \end{aligned}
 $$
 
-<1>1. The displayed formula defines a $\mathbb Z$-linear map $\Psi$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The displayed formula defines a $\mathbb Z$-linear map $\Psi$.
+
+::: pf-proof
+
 The map $\beta:A\times(\mathbb Z/m\mathbb Z)\to A/mA$
 given by $\beta(a,\bar r)=ra+mA$ is independent of the
 representative $r$: replacing $r$ by $r+mk$ changes $ra$
@@ -58,12 +63,18 @@ Thus it is balanced. The defining universal property of
 the tensor product gives an additive map $\Psi$ with
 the asserted formula. Every additive homomorphism of
 abelian groups is $\mathbb Z$-linear, so this is a module map.
+
 :::
 
-<1>2. The formula for $\Phi$ descends to $A/mA$, and
+:::
+
+::: pf-step
+
+The formula for $\Phi$ descends to $A/mA$, and
 the maps are inverse.
 
-::: {.proof}
+::: pf-proof
+
 The map $\eta:A\to T$, $a\mapsto a\otimes\bar1$,
 is additive. If $a=mb$, balancing gives
 $\eta(a)=(mb)\otimes\bar1=b\otimes\bar m=0$.
@@ -81,5 +92,11 @@ Elementary tensors generate $T$ additively, so the latter
 identity holds on all of $T$. Both composites are the
 identity, proving the isomorphism. When $m=1$, the same
 formulas apply and both modules are zero.
+
 :::
+
+:::
+
+:::
+
 :::

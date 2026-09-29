@@ -43,7 +43,11 @@ $$
 \frac{\alpha(\alpha-1)\cdots(\alpha-k+1)}{k!}.
 $$
 
-<1>1. The formal power series
+::: pf
+
+::: {.pf-step #s1}
+
+The formal power series
 $$
 F(t)\coloneqq\sum_{k=0}^{\infty}\binom{\alpha}{k}t^k
 \in\CC[[t]]
@@ -53,7 +57,8 @@ $$
 F(t)^r=1+t.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $c_k=\binom{\alpha}{k}$. Then
 $$
 (k+1)c_{k+1}=(\alpha-k)c_k,
@@ -84,9 +89,14 @@ Thus $g_2=0$, and induction gives $g_k=0$ for every $k\ge2$. Hence
 $$
 G(t)=1+t.
 $$
+
 :::
 
-<1>2. In $\CC[t]/(t^m)$,
+:::
+
+::: {.pf-step #s2}
+
+In $\CC[t]/(t^m)$,
 $$
 \left(
 \sum_{k=0}^{m-1}\binom{\alpha}{k}t^k
@@ -95,11 +105,17 @@ $$
 1+t.
 $$
 
-::: {.proof}
-Reduce the identity in step <1>1 modulo $t^m$. The image of $F(t)$ is represented by its truncation through degree $m-1$, which gives the displayed identity.
+::: pf-proof
+
+Reduce the identity in step [](#s1){.pf-ref} modulo $t^m$. The image of $F(t)$ is represented by its truncation through degree $m-1$, which gives the displayed identity.
+
 :::
 
-<1>3. The matrix
+:::
+
+::: {.pf-step #s3}
+
+The matrix
 $$
 A\coloneqq
 \sum_{k=0}^{m-1}\binom{1/r}{k}N^k
@@ -109,19 +125,26 @@ $$
 \boxed{A^r=I+N}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $N^m=0$, evaluation at $N$ defines a ring homomorphism
 $$
 \CC[t]/(t^m)\longrightarrow M_n(\CC),
 \qquad
 t\longmapsto N.
 $$
-Applying it to the identity in step <1>2 gives $A^r=I+N$.
+Applying it to the identity in step [](#s2){.pf-ref} gives $A^r=I+N$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 constructs the required matrix and proves the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} constructs the required matrix and proves the required identity.
+
+:::
+
+:::
+
 :::

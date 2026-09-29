@@ -35,7 +35,11 @@ audit:
 ::: {.solution}
 For each attachment, use Mayer--Vietoris with the original space and the Möbius band, whose intersection is the common attaching circle. The Möbius band deformation retracts onto its core circle, and its boundary circle represents twice the core generator in $H_1$.
 
-<1>1. In part (a), let
+::: pf
+
+::: pf-step
+
+In part (a), let
 \[
 Y=T^2\cup_{S^1}M,
 \]
@@ -48,7 +52,9 @@ H_i(Y)\cong
 0,&i>2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Choose generators $a,b$ for
 \[
 H_1(T^2)\cong\mathbb Z^2
@@ -74,9 +80,14 @@ so $H_2(Y)\cong\mathbb Z$. In degree one,
 H_1(Y)\cong\mathbb Z^3/\langle(a,-2c)\rangle\cong\mathbb Z^2.
 \]
 Connectedness gives $H_0(Y)=\mathbb Z$.
+
 :::
 
-<1>2. In part (b), let
+:::
+
+::: pf-step
+
+In part (b), let
 \[
 Z=\mathbb{RP}^2\cup_{\mathbb{RP}^1}M.
 \]
@@ -89,7 +100,9 @@ H_i(Z)\cong
 0,&i\ge2.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $u$ generate
 \[
 H_1(\mathbb{RP}^2)\cong\mathbb Z_2
@@ -108,5 +121,11 @@ It is injective because of the infinite cyclic second coordinate, so $H_2(Z)=0$.
 \cong\mathbb Z_4.
 \]
 Thus $H_1(Z)\cong\mathbb Z_4$, and connectedness gives $H_0(Z)=\mathbb Z$.
+
 :::
+
+:::
+
+:::
+
 :::

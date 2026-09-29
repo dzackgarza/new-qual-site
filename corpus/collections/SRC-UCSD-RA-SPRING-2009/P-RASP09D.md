@@ -32,10 +32,16 @@ $$
 exists and defines a distribution on $\mathbb{R}^2$.
 :::
 
-
 ::: {.solution}
-<1>1. Use oddness of the kernel to expose cancellation.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Use oddness of the kernel to expose cancellation.
+
+::: pf-proof
+
 Set
 \[
 K(x):=\frac{x_1+x_2}{|x|^3},
@@ -54,10 +60,17 @@ I_\varepsilon(\varphi)
 \bigl(\varphi(x)-\varphi(-x)\bigr)K(x)\,dx.
 \end{aligned}
 \]
+
 :::
 
-<1>2. Show that the symmetrized integrand is absolutely integrable near the origin.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the symmetrized integrand is absolutely integrable near the origin.
+
+::: pf-proof
+
 Fix $R>0$ so that $\operatorname{supp}\varphi\subset B(0,R)$. For $|x|\le R$,
 \[
 |\varphi(x)-\varphi(-x)|
@@ -84,10 +97,17 @@ The function $|x|^{-1}$ is locally integrable on $\mathbb R^2$, because in polar
 =2\pi R<\infty.
 \]
 Thus the symmetrized integrand is absolutely integrable near $0$; away from $0$ it is integrable because $\varphi$ has compact support.
+
 :::
 
-<1>3. Pass to the principal-value limit.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass to the principal-value limit.
+
+::: pf-proof
+
 By Step 2 and dominated convergence,
 \[
 \lim_{\varepsilon\downarrow0}I_\varepsilon(\varphi)
@@ -95,10 +115,17 @@ By Step 2 and dominated convergence,
 \bigl(\varphi(x)-\varphi(-x)\bigr)K(x)\,dx.
 \]
 Therefore the principal value exists for every test function $\varphi$.
+
 :::
 
-<1>4. Verify continuity on the test-function space.
-::: {.proof}
+:::
+
+::: pf-step
+
+Verify continuity on the test-function space.
+
+::: pf-proof
+
 Let $L\subset\mathbb R^2$ be compact, and suppose $\operatorname{supp}\varphi\subset L$. Choose $R$ with
 \[
 L\cup(-L)\subset B(0,R).
@@ -119,5 +146,11 @@ Thus the functional is continuous on every fixed compact-support test-function s
 \operatorname{PV}\!\left(\frac{x_1+x_2}{|x|^3}\right)
 \in\mathcal D'(\mathbb R^2).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

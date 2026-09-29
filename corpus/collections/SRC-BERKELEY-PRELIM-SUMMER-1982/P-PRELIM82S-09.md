@@ -47,14 +47,19 @@ S_m(z)
 $$
 where for $m=0$ the numerator is understood to be $1$.
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \lim_{n\to\infty}
 \left(\frac{1}{n^{\log n}}\right)^{1/n}
 =1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 n^{\log n}
@@ -72,16 +77,22 @@ $$
 \frac{(\log n)^2}{n}\longrightarrow0,
 $$
 the displayed quantity tends to $1$.
+
 :::
 
-<1>2. If $\abs{z}>1$, then the original series does not converge.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $\abs{z}>1$, then the original series does not converge.
+
+::: pf-proof
+
 For its $n$th term,
 $$
 u_n=\frac{z^n}{n^{\log n}},
 $$
-step <1>1 gives
+step [](#s1){.pf-ref} gives
 $$
 \abs{u_n}^{1/n}
 =
@@ -91,22 +102,34 @@ $$
 \abs{z}>1.
 $$
 Hence $\abs{u_n}$ does not tend to zero, so the series cannot converge.
+
 :::
 
-<1>3. Fix $m\geq0$. For all $n\geq\max\{1,m\}$,
+:::
+
+::: {.pf-step #s3}
+
+Fix $m\geq0$. For all $n\geq\max\{1,m\}$,
 $$
 n(n-1)\cdots(n-m+1)\leq n^m.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each of the $m$ factors on the left is at most $n$.
+
 :::
 
-<1>4. If $\abs{z}<1$, then $S_m(z)$ converges absolutely for every
+:::
+
+::: {.pf-step #s4}
+
+If $\abs{z}<1$, then $S_m(z)$ converges absolutely for every
 $m\geq0$.
 
-::: {.proof}
-Fix $m\geq0$ and put $r=\abs{z}<1$. By step <1>3,
+::: pf-proof
+
+Fix $m\geq0$ and put $r=\abs{z}<1$. By step [](#s3){.pf-ref},
 $$
 \left|
 \frac{n(n-1)\cdots(n-m+1)}{n^{\log n}}z^{n-m}
@@ -120,13 +143,19 @@ $$
 $$
 converges by the ratio test, since the ratio of consecutive terms tends
 to $r<1$. Therefore $S_m(z)$ converges absolutely.
+
 :::
 
-<1>5. If $\abs{z}=1$, then $S_m(z)$ converges absolutely for every
+:::
+
+::: {.pf-step #s5}
+
+If $\abs{z}=1$, then $S_m(z)$ converges absolutely for every
 $m\geq0$.
 
-::: {.proof}
-Fix $m\geq0$. By step <1>3 and $\abs{z}=1$,
+::: pf-proof
+
+Fix $m\geq0$. By step [](#s3){.pf-ref} and $\abs{z}=1$,
 $$
 \left|
 \frac{n(n-1)\cdots(n-m+1)}{n^{\log n}}z^{n-m}
@@ -147,22 +176,34 @@ $$
 \sum_{n=N}^{\infty}\frac1{n^2},
 $$
 so $S_m(z)$ converges absolutely.
+
 :::
 
-<1>6. The required set is
+:::
+
+::: {.pf-step #s6}
+
+The required set is
 $$
 \boxed{\{z\in\CC:\abs{z}\leq1\}}.
 $$
 
-::: {.proof}
-Steps <1>4 and <1>5 show that the original series and every
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} show that the original series and every
 term-by-term derivative converge absolutely whenever $\abs{z}\leq1$.
-Step <1>2 excludes every $z$ with $\abs{z}>1$.
+Step [](#s2){.pf-ref} excludes every $z$ with $\abs{z}>1$.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 gives exactly the requested set of complex numbers.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} gives exactly the requested set of complex numbers.
+
+:::
+
+:::
+
 :::

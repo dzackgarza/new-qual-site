@@ -33,31 +33,59 @@ Prove that $A$ is compact.
 :::
 
 ::: {.solution}
-<1>1. Every nonempty open subset of $X\times\mathbb R$ is of the form $X\times V$ for some open $V\subseteq\mathbb R$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every nonempty open subset of $X\times\mathbb R$ is of the form $X\times V$ for some open $V\subseteq\mathbb R$.
+
+::: pf-proof
+
 The only nonempty open subset of the indiscrete space $X$ is $X$ itself.
 Hence the basic open sets of the product topology are precisely the sets $X\times V$ with $V$ open in $\mathbb R$.
 Arbitrary unions of such sets again have this form.
+
 :::
 
-<1>2. Every open subset of the subspace $A$ is therefore of the form
+:::
+
+::: pf-step
+
+Every open subset of the subspace $A$ is therefore of the form
 \[
 A\cap(X\times V)
 \]
 for some open $V\subseteq\mathbb R$.
-::: {.proof}
-This is the definition of the subspace topology together with <1>1.
+
+::: pf-proof
+
+This is the definition of the subspace topology together with step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Let $\{A\cap(X\times V_i)\}_{i\in I}$ be an arbitrary open cover of $A$.
+:::
+
+::: {.pf-step #s3}
+
+Let $\{A\cap(X\times V_i)\}_{i\in I}$ be an arbitrary open cover of $A$.
 Then $\{V_i\}_{i\in I}$ covers $[0,1]$.
-::: {.proof}
+
+::: pf-proof
+
 For every $t\in[0,1]$, the point $(a,t)$ belongs to $A$.
 Since the displayed family covers $A$, there is an $i$ with $(a,t)\in X\times V_i$, hence $t\in V_i$.
+
 :::
 
-<1>4. The interval $[0,1]$ admits a finite subcover from $\{V_i\}_{i\in I}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The interval $[0,1]$ admits a finite subcover from $\{V_i\}_{i\in I}$.
+
+::: pf-proof
+
 We prove this directly.
 Let
 \[
@@ -75,10 +103,17 @@ A finite family covers $[0,x]$, and adjoining $V_j$ covers
 contradicting the definition of $s$ as an upper bound for $S$.
 Thus $s=1$.
 Now choose $x\in S$ with $x>1-\varepsilon/2$; a finite cover of $[0,x]$ together with $V_j$ covers all of $[0,1]$.
+
 :::
 
-<1>5. The corresponding finitely many members of the original cover cover $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The corresponding finitely many members of the original cover cover $A$.
+
+::: pf-proof
+
 Choose indices $i_1,\dots,i_n$ such that
 \[
 [0,1]\subseteq V_{i_1}\cup\cdots\cup V_{i_n}.
@@ -88,10 +123,23 @@ Every point of $A$ has second coordinate in $[0,1]$, so it lies in
 A\cap(X\times V_{i_1}),\ldots,A\cap(X\times V_{i_n})
 \]
 for at least one index.
+
 :::
 
-<1>6. Therefore $A$ is compact.
-::: {.proof}
-The open cover in <1>3 was arbitrary, and <1>5 produced a finite subcover.
 :::
+
+::: pf-step
+
+Therefore $A$ is compact.
+
+::: pf-proof
+
+The open cover in step [](#s3){.pf-ref} was arbitrary, and step [](#s5){.pf-ref} produced a finite subcover.
+
+:::
+
+:::
+
+:::
+
 :::

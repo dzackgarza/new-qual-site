@@ -32,7 +32,12 @@ for some $\xi\in[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: pf-step
+
+Let
 $$
 m\coloneqq\min_{x\in[0,1]}f(x),
 \qquad
@@ -40,11 +45,17 @@ M\coloneqq\max_{x\in[0,1]}f(x).
 $$
 These numbers exist.
 
-::: {.proof}
+::: pf-proof
+
 The function $f$ is continuous on the compact interval $[0,1]$, so the extreme value theorem applies.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 m
 \le
@@ -53,7 +64,8 @@ m
 M.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $x\in[0,1]$,
 $$
 m\le f(x)\le M.
@@ -75,30 +87,48 @@ $$
 \frac M3,
 $$
 which is the claimed inequality after multiplication by $3$.
+
 :::
 
-<1>3. There exists $\xi\in[0,1]$ such that
+:::
+
+::: {.pf-step #s3}
+
+There exists $\xi\in[0,1]$ such that
 $$
 f(\xi)=3\int_0^1 f(x)x^2\,dx.
 $$
 
-::: {.proof}
-By step <1>2, the right-hand side lies in the interval $[m,M]$. Since $f$ is continuous on the connected interval $[0,1]$ and attains both $m$ and $M$, the intermediate value theorem shows that $f$ attains every value in $[m,M]$.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the right-hand side lies in the interval $[m,M]$. Since $f$ is continuous on the connected interval $[0,1]$ and attains both $m$ and $M$, the intermediate value theorem shows that $f$ attains every value in $[m,M]$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{\int_0^1 f(x)x^2\,dx=\frac13f(\xi)}
 $$
 for some $\xi\in[0,1]$.
 
-::: {.proof}
-This is step <1>3 divided by $3$.
+::: pf-proof
+
+This is step [](#s3){.pf-ref} divided by $3$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required identity.
+
+:::
+
+:::
+
 :::

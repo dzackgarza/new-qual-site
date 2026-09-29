@@ -36,8 +36,14 @@ $$
 $$
 to two decimal places.
 
-<1>1. Derive the series from the geometric series.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Derive the series from the geometric series.
+
+::: pf-proof
+
 For $|t|<1$,
 $$
 \frac1{1+t}=\sum_{n=0}^{\infty}(-1)^n t^n.
@@ -53,10 +59,17 @@ $$
 $$
 Setting $u=x-1$ gives the displayed Taylor series. Its radius of
 convergence is one because the geometric series used above has radius one.
+
 :::
 
-<1>2. Evaluate at $x=1.1$ and control the error.
-::: {.proof}
+:::
+
+::: pf-step
+
+Evaluate at $x=1.1$ and control the error.
+
+::: pf-proof
+
 Putting $u=0.1$ gives the alternating series
 $$
 \ln(1.1)=0.1-\frac{0.1^2}{2}+\frac{0.1^3}{3}-\cdots.
@@ -74,5 +87,11 @@ $$
 0.09466<\ln(1.1)<0.09534,
 $$
 so rounding to two decimal places gives $0.10$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -50,8 +50,15 @@ and show that all of its subgroups of order $3$ are conjugate.
 :::
 
 ::: {.solution}
-<1>1. Every group $G$ of order $75$ has a unique Sylow $5$-subgroup $N$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every group $G$ of order $75$ has a unique Sylow $5$-subgroup $N$.
+
+::: pf-proof
+
 Let $n_5$ be the number of Sylow $5$-subgroups.
 Sylow's theorem gives
 \[
@@ -70,15 +77,22 @@ N\normal G,
 \qquad
 |N|=25.
 \]
+
 :::
 
-<1>2. The normal subgroup $N$ is isomorphic to either
+:::
+
+::: {.pf-step #s2}
+
+The normal subgroup $N$ is isomorphic to either
 \[
 C_{25}
 \qquad\text{or}\qquad
 C_5\times C_5.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every group of order $p^2$ is abelian.
 The classification of finite abelian groups therefore gives precisely the two possibilities
 \[
@@ -86,14 +100,21 @@ C_{25}
 \qquad\text{and}\qquad
 C_5\times C_5.
 \]
+
 :::
 
-<1>3. Every group $G$ of order $75$ has the form
+:::
+
+::: {.pf-step #s3}
+
+Every group $G$ of order $75$ has the form
 \[
 G\cong N\rtimes_\psi C_3
 \]
-for one of the two groups $N$ in <1>2.
-::: {.proof}
+for one of the two groups $N$ in step [](#s2){.pf-ref}.
+
+::: pf-proof
+
 Let $P$ be a Sylow $3$-subgroup of $G$.
 Then
 \[
@@ -115,10 +136,17 @@ and the internal semidirect-product theorem yields
 G\cong N\rtimes_\psi P
 \cong N\rtimes_\psi C_3.
 \]
+
 :::
 
-<1>4. If $N\cong C_{25}$, the action of $C_3$ on $N$ is necessarily trivial.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $N\cong C_{25}$, the action of $C_3$ on $N$ is necessarily trivial.
+
+::: pf-proof
+
 A generator of $C_{25}$ may be sent by an automorphism to any of the
 \[
 \varphi(25)=25-5=20
@@ -138,19 +166,25 @@ Therefore
 |\operatorname{im}\psi|=1,
 \]
 so $\psi$ is trivial.
+
 :::
 
-<1>5. The case $N\cong C_{25}$ gives exactly one group,
+:::
+
+::: {.pf-step #s5}
+
+The case $N\cong C_{25}$ gives exactly one group,
 \[
 G_1=C_{25}\times C_3\cong C_{75}.
 \]
-::: {.proof}
-By <1>4 the semidirect product is a direct product.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref} the semidirect product is a direct product.
 Since $25$ and $3$ are coprime,
 \[
 C_{25}\times C_3\cong C_{75}.
 \]
-:::
 
 Assume from now on that
 \[
@@ -161,7 +195,13 @@ Identify $N$ with the additive group of the two-dimensional vector space
 V=\mathbb F_5^2.
 \]
 
-<1>6. One has
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+One has
 \[
 \operatorname{Aut}(N)\cong\operatorname{GL}_2(\mathbb F_5)
 \]
@@ -169,7 +209,9 @@ and
 \[
 |\operatorname{Aut}(N)|=480.
 \]
-::: {.proof}
+
+::: pf-proof
+
 An automorphism of the additive group $V$ is exactly an invertible $\mathbb F_5$-linear map, so
 \[
 \operatorname{Aut}(N)\cong\operatorname{GL}_2(\mathbb F_5).
@@ -192,24 +234,38 @@ Thus
 =480
 =2^5\cdot3\cdot5.
 \]
+
 :::
 
-<1>7. Every subgroup of order $3$ in $\operatorname{Aut}(N)$ is a Sylow $3$-subgroup, and all such subgroups are conjugate.
-::: {.proof}
-By <1>6, the highest power of $3$ dividing
+:::
+
+::: {.pf-step #s7}
+
+Every subgroup of order $3$ in $\operatorname{Aut}(N)$ is a Sylow $3$-subgroup, and all such subgroups are conjugate.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, the highest power of $3$ dividing
 \[
 |\operatorname{Aut}(N)|=480
 \]
 is $3$ itself.
 Thus every subgroup of order $3$ is a Sylow $3$-subgroup.
 Sylow's conjugacy theorem says that all Sylow $3$-subgroups are conjugate.
+
 :::
 
-<1>8. Up to isomorphism, there is exactly one nontrivial action
+:::
+
+::: {.pf-step #s8}
+
+Up to isomorphism, there is exactly one nontrivial action
 \[
 C_3\longrightarrow\operatorname{Aut}(C_5\times C_5).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Any nontrivial homomorphism
 \[
 \psi:C_3\longrightarrow\operatorname{Aut}(N)
@@ -218,7 +274,7 @@ is injective because $C_3$ has prime order.
 Hence its image is a subgroup of order $3$.
 
 Let $\psi_1$ and $\psi_2$ be two nontrivial actions.
-By <1>7 there exists
+By step [](#s7){.pf-ref} there exists
 \[
 \theta\in\operatorname{Aut}(N)
 \]
@@ -228,9 +284,14 @@ After this conjugation, the two actions have the same image, a cyclic group of o
 The two resulting isomorphisms from $C_3$ onto that image differ by an automorphism of $C_3$.
 Exercise 1(b) shows that precomposing by such an automorphism also does not change the semidirect-product isomorphism type.
 Therefore all nontrivial actions give one isomorphism class.
+
 :::
 
-<1>9. A representative nontrivial action is given by the matrix
+:::
+
+::: {.pf-step #s9}
+
+A representative nontrivial action is given by the matrix
 \[
 A=
 \begin{pmatrix}
@@ -240,7 +301,9 @@ A=
 \in\operatorname{GL}_2(\mathbb F_5),
 \]
 which has order $3$.
-::: {.proof}
+
+::: pf-proof
+
 A direct multiplication gives
 \[
 A^2=
@@ -255,9 +318,14 @@ A^3=I.
 \]
 Since $A\ne I$, its order is exactly $3$.
 Thus a generator of $C_3$ may act on $V$ by $A$.
+
 :::
 
-<1>10. The case $N\cong C_5\times C_5$ gives exactly two groups:
+:::
+
+::: {.pf-step #s10}
+
+The case $N\cong C_5\times C_5$ gives exactly two groups:
 \[
 G_2=(C_5\times C_5)\times C_3
 \]
@@ -265,14 +333,23 @@ and the nonabelian semidirect product
 \[
 G_3=(C_5\times C_5)\rtimes_A C_3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The trivial action gives $G_2$.
-By <1>8, every nontrivial action gives the same isomorphism class, and <1>9 supplies the representative $G_3$.
+By step [](#s8){.pf-ref}, every nontrivial action gives the same isomorphism class, and step [](#s9){.pf-ref} supplies the representative $G_3$.
 Since $A\ne I$, the $C_3$-factor does not centralize $N$, so $G_3$ is nonabelian.
+
 :::
 
-<1>11. The three groups $G_1,G_2,G_3$ are pairwise nonisomorphic.
-::: {.proof}
+:::
+
+::: {.pf-step #s11}
+
+The three groups $G_1,G_2,G_3$ are pairwise nonisomorphic.
+
+::: pf-proof
+
 The group $G_3$ is nonabelian, whereas $G_1$ and $G_2$ are abelian, so
 \[
 G_3\not\cong G_1,
@@ -291,9 +368,14 @@ Thus
 \[
 G_1\not\cong G_2.
 \]
+
 :::
 
-<1>12. The complete classification of groups of order $75$ is
+:::
+
+::: pf-step
+
+The complete classification of groups of order $75$ is
 \[
 C_{75},
 \qquad
@@ -301,9 +383,17 @@ C_5\times C_5\times C_3,
 \qquad
 (C_5\times C_5)\rtimes_A C_3,
 \]
-with $A$ as in <1>9.
-::: {.proof}
-By <1>1--<1>3, every group of order $75$ is a semidirect product of a group of order $25$ by $C_3$.
-The cyclic order-$25$ case is exhausted by <1>4--<1>5, and the elementary-abelian order-$25$ case is exhausted by <1>6--<1>10. The resulting three groups are pairwise nonisomorphic by <1>11.
+with $A$ as in step [](#s9){.pf-ref}.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, every group of order $75$ is a semidirect product of a group of order $25$ by $C_3$.
+The cyclic order-$25$ case is exhausted by steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, and the elementary-abelian order-$25$ case is exhausted by steps [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref}, [](#s9){.pf-ref} and [](#s10){.pf-ref}. The resulting three groups are pairwise nonisomorphic by step [](#s11){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

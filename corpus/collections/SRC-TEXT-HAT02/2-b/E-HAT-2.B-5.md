@@ -23,54 +23,139 @@ Show that the inclusion $S^{n-k-1} \hookrightarrow S^n - S$ induces an isomorphi
 :::
 
 ::: {.solution}
-<1>1. Homology of the sphere complement $S^n \setminus S$:
-<2>1. By Alexander Duality (or the Mayer–Vietoris sphere-complement induction in Hatcher §2.B):
+
+::: pf
+
+::: {.pf-step #s1}
+
+Homology of the sphere complement $S^n \setminus S$:
+
+::: pf-proof
+
+::: pf-step
+
+By Alexander Duality (or the Mayer–Vietoris sphere-complement induction in Hatcher §2.B):
 For any embedded sphere $S \cong S^k \subset S^n$ ($0 \le k < n$), the reduced homology of the complement is:
 \[
 \widetilde{H}_i(S^n \setminus S) \cong \begin{cases} \mathbb{Z} & \text{if } i = n - k - 1, \\ 0 & \text{otherwise.} \end{cases}
 \]
 Thus the homology of $S^n \setminus S$ matches the homology of the sphere $S^{n-k-1}$ in all dimensions.
-::: {.proof}
+
+::: pf-proof
+
 Alexander Duality $\widetilde{H}_i(S^n \setminus S) \cong \widetilde{H}^{n-1-i}(S^k)$.
+
 :::
 
-<1>2. Local retraction in the coordinate ball $D^n$:
-<2>1. In the coordinate disk $D^n \cong D^k \times D^{n-k}$, the intersection with $S$ is $D^k \times \{0\}$.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Local retraction in the coordinate ball $D^n$:
+
+::: pf-proof
+
+::: pf-step
+
+In the coordinate disk $D^n \cong D^k \times D^{n-k}$, the intersection with $S$ is $D^k \times \{0\}$.
 The complement inside $D^n$ is:
 \[
 D^n \setminus (D^k \times \{0\}) \cong D^k \times (D^{n-k} \setminus \{0\}).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Cartesian product representation.
-:::
-<2>2. Since $D^k$ is contractible and $D^{n-k} \setminus \{0\}$ deformation retracts radially onto its boundary sphere $\partial D^{n-k} = S^{n-k-1}$:
-The inclusion $j: S^{n-k-1} \hookrightarrow D^n \setminus D^k$ is a homotopy equivalence.
-::: {.proof}
-radial deformation retraction along the last $n-k$ coordinates.
+
 :::
 
-<1>3. Induced isomorphism on homology:
-<2>1. Decompose the embedded sphere $S$ into the upper disk $D_1^k = S \cap D^n$ and the lower disk $D_2^k = \overline{S \setminus D_1^k}$, with intersection $\partial D_1^k = S^{k-1}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Since $D^k$ is contractible and $D^{n-k} \setminus \{0\}$ deformation retracts radially onto its boundary sphere $\partial D^{n-k} = S^{n-k-1}$:
+The inclusion $j: S^{n-k-1} \hookrightarrow D^n \setminus D^k$ is a homotopy equivalence.
+
+::: pf-proof
+
+radial deformation retraction along the last $n-k$ coordinates.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Induced isomorphism on homology:
+
+::: pf-proof
+
+::: pf-step
+
+Decompose the embedded sphere $S$ into the upper disk $D_1^k = S \cap D^n$ and the lower disk $D_2^k = \overline{S \setminus D_1^k}$, with intersection $\partial D_1^k = S^{k-1}$.
+
+::: pf-proof
+
 decomposition of $S^k$ into two hemispheres.
+
 :::
-<2>2. The Mayer–Vietoris sequence for $S^n \setminus S = (S^n \setminus D_1^k) \cap (S^n \setminus D_2^k)$ shows that the inclusion $D^n \setminus D^k \hookrightarrow S^n \setminus S$ induces an isomorphism on reduced homology in dimension $n - k - 1$.
-::: {.proof}
+
+:::
+
+::: pf-step
+
+The Mayer–Vietoris sequence for $S^n \setminus S = (S^n \setminus D_1^k) \cap (S^n \setminus D_2^k)$ shows that the inclusion $D^n \setminus D^k \hookrightarrow S^n \setminus S$ induces an isomorphism on reduced homology in dimension $n - k - 1$.
+
+::: pf-proof
+
 Mayer–Vietoris sequence with contractible disk complements.
+
 :::
-<2>3. Factoring the inclusion $i: S^{n-k-1} \hookrightarrow S^n \setminus S$ as:
+
+:::
+
+::: pf-step
+
+Factoring the inclusion $i: S^{n-k-1} \hookrightarrow S^n \setminus S$ as:
 \[
 S^{n-k-1} \xrightarrow{j} D^n \setminus D^k \hookrightarrow S^n \setminus S,
 \]
 the map $i_*$ is the composite of the homotopy equivalence $j_*$ and the Mayer–Vietoris isomorphism.
 Therefore $i_*: \widetilde{H}_i(S^{n-k-1}) \xrightarrow{\cong} \widetilde{H}_i(S^n \setminus S)$ is an isomorphism for all $i$.
-::: {.proof}
+
+::: pf-proof
+
 composition of homology isomorphisms.
+
 :::
 
-<1>4. Conclusion:
-The inclusion $S^{n-k-1} \hookrightarrow S^n \setminus S$ induces an isomorphism on all homology groups. Q.E.D.
-::: {.proof}
-<1>1 through <1>3.
 :::
+
+:::
+
+:::
+
+::: pf-step
+
+Conclusion:
+The inclusion $S^{n-k-1} \hookrightarrow S^n \setminus S$ induces an isomorphism on all homology groups. Q.E.D.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

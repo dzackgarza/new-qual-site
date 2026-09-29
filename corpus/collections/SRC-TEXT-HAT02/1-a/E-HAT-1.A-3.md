@@ -39,8 +39,14 @@ V=\#\{\text{vertices of }X\},
 E=\#\{\text{edges of }X\}.
 \]
 
-<1>1. A finite tree with $V$ vertices has exactly $V-1$ edges.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A finite tree with $V$ vertices has exactly $V-1$ edges.
+
+::: pf-proof
+
 Induct on $V$.
 For $V=1$ there are no edges.
 If $V>1$, a finite tree has a leaf vertex $v$ of degree one.
@@ -50,40 +56,66 @@ By induction it has $V-2$ edges, so the original tree has
 (V-2)+1=V-1
 \]
 edges.
+
 :::
 
-<1>2. Hence if $X$ is a finite tree,
+:::
+
+::: pf-step
+
+Hence if $X$ is a finite tree,
 \[
 \boxed{\chi(X)=1.}
 \]
-::: {.proof}
-By <1>1,
+
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 \[
 \chi(X)=V-E=V-(V-1)=1.
 \]
+
 :::
 
-<1>3. Now suppose $X$ is a finite connected graph and let $T\subseteq X$ be a maximal tree.
+:::
+
+::: pf-step
+
+Now suppose $X$ is a finite connected graph and let $T\subseteq X$ be a maximal tree.
 Then $T$ contains all vertices of $X$ and has $V-1$ edges.
-::: {.proof}
+
+::: pf-proof
+
 A maximal tree in a connected finite graph is spanning: if a vertex lay outside it, a shortest edge path from the tree to that vertex would allow one more edge and vertex to be adjoined without creating a cycle, contradicting maximality.
-Then <1>1 gives $V-1$ edges in $T$.
+Then step [](#s1){.pf-ref} gives $V-1$ edges in $T$.
+
 :::
 
-<1>4. Collapsing $T$ to a point gives a homotopy equivalence
+:::
+
+::: {.pf-step #s4}
+
+Collapsing $T$ to a point gives a homotopy equivalence
 \[
 X\simeq \bigvee^{E-V+1}S^1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 A tree is contractible, and collapsing a contractible subcomplex of a graph to a point is a homotopy equivalence.
 Every edge of $X\setminus T$ becomes a circle after the collapse.
 The number of such edges is
 \[
 E-(V-1)=E-V+1.
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \pi_1(X)\cong F_{E-V+1},
 \]
@@ -91,11 +123,19 @@ so its rank is
 \[
 E-V+1=1-(V-E)=\boxed{1-\chi(X)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The fundamental group of a wedge of $r$ circles is the free group of rank $r$.
-Apply <1>4 and the definition
+Apply step [](#s4){.pf-ref} and the definition
 \[
 \chi(X)=V-E.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

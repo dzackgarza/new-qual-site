@@ -55,12 +55,18 @@ $\varphi_2(K)$, so for some $a\in\ZZ$,
 \sigma\varphi_1(k)\sigma^{-1}=\varphi_2(k)^a.
 \]
 
-<1>1. There is an automorphism $\alpha:K\to K$, $\alpha(k)=k^b$, such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is an automorphism $\alpha:K\to K$, $\alpha(k)=k^b$, such that
 \[
 \sigma\varphi_1(x)\sigma^{-1}=\varphi_2(\alpha(x))
 \qquad(x\in K).
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $K$ is infinite, the injectivity of $\varphi_1$ and $\varphi_2$ makes both
 images infinite cyclic. Since $\varphi_2(k)^a$ generates $\varphi_2(K)$, we
 must have $a=\pm1$. Take $b=a$.
@@ -82,21 +88,28 @@ Hence $k\mapsto k^b$ is an automorphism $\alpha$ of $K$. Since
 $b\equiv a\pmod m$, we have $\varphi_2(k)^b=\varphi_2(k)^a$, and therefore
 the displayed intertwining identity holds on the generator $k$, hence on all
 of $K$.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 \Psi:H\rtimes_{\varphi_1}K\longrightarrow H\rtimes_{\varphi_2}K,
 \qquad
 \Psi(h,x)=(\sigma(h),\alpha(x)),
 \]
 is an isomorphism.
-::: {.proof}
+
+::: pf-proof
+
 For $(h,x),(h',x')\in H\rtimes_{\varphi_1}K$,
 \[
 (h,x)(h',x')=(h\varphi_1(x)(h'),xx').
 \]
-Using the intertwining identity from <1>1,
+Using the intertwining identity from step [](#s1){.pf-ref},
 \[
 \begin{aligned}
 \Psi((h,x)(h',x'))
@@ -112,5 +125,11 @@ $\alpha^{-1}(k)=k^c$, then
 \Psi^{-1}(h,x)=(\sigma^{-1}(h),\alpha^{-1}(x))
 \]
 is its two-sided inverse.
+
 :::
+
+:::
+
+:::
+
 :::

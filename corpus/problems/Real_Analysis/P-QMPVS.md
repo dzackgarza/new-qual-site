@@ -42,27 +42,50 @@ c. Let $X = [0, 1] \subset \RR$.
 ::: {.solution}
 Part (c)2. Let $f \ge 0$ be measurable on $X = [0,1]$.
 
-<1>1. $\int_X f^p = \int_{\theset{f < 1}} f^p + m\theset{f = 1} + \int_{\theset{f > 1}} f^p$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\int_X f^p = \int_{\theset{f < 1}} f^p + m\theset{f = 1} + \int_{\theset{f > 1}} f^p$.
+
+::: pf-proof
+
 $X$ is the disjoint union of $\theset{f < 1}$, $\theset{f = 1}$ and $\theset{f > 1}$, and $f^p = 1$ on $\theset{f = 1}$.
+
 :::
 
-<1>2. $\int_{\theset{f < 1}} f^p \to 0$ as $p \to \infty$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\int_{\theset{f < 1}} f^p \to 0$ as $p \to \infty$.
+
+::: pf-proof
+
 On $\theset{f < 1}$, $f^p \to 0$ pointwise and $0 \le f^p \le 1$, and $m(X) = 1$, so dominated convergence applies.
+
 :::
 
-<1>3. $\int_{\theset{f > 1}} f^p \to \infty$ if $m\theset{f > 1} > 0$, and it is $0$ if $m\theset{f > 1} = 0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+$\int_{\theset{f > 1}} f^p \to \infty$ if $m\theset{f > 1} > 0$, and it is $0$ if $m\theset{f > 1} = 0$.
+
+::: pf-proof
+
 If $m\theset{f > 1} > 0$, then $m\theset{f > 1 + 1/k} > 0$ for some $k$, and $\int_{\theset{f > 1}} f^p \ge (1 + 1/k)^p\, m\theset{f > 1 + 1/k} \to \infty$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-By steps <1>1--<1>3, $\int_X f^p \to m\theset{f = 1} = m(f^{-1}(1))$ when $f \le 1$ a.e., and $\int_X f^p \to \infty$ when $m\theset{f > 1} > 0$.
 :::
+
+::: pf-qed
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, $\int_X f^p \to m\theset{f = 1} = m(f^{-1}(1))$ when $f \le 1$ a.e., and $\int_X f^p \to \infty$ when $m\theset{f > 1} > 0$.
+
+:::
+
+:::
+
 :::

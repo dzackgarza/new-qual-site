@@ -41,8 +41,14 @@ Then
 I_1\supseteq I_2\supseteq I_3\supseteq\cdots.
 \]
 
-<1>1. Every containment $I_n\supsetneq I_{n+1}$ is strict.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every containment $I_n\supsetneq I_{n+1}$ is strict.
+
+::: pf-proof
+
 Distinct maximal ideals are comaximal. By the Chinese remainder theorem,
 \[
 R/I_{n+1}\cong\prod_{i=1}^{n+1}R/\mathfrak m_i.
@@ -52,12 +58,24 @@ Under this isomorphism, $I_n/I_{n+1}$ corresponds to
 0\times\cdots\times0\times R/\mathfrak m_{n+1},
 \]
 which is nonzero. Hence $I_n\ne I_{n+1}$.
+
 :::
 
-<1>2. This contradicts the Artinian condition.
-::: {.proof}
+:::
+
+::: pf-step
+
+This contradicts the Artinian condition.
+
+::: pf-proof
+
 An Artinian ring satisfies the descending chain condition on ideals, whereas
-<1>1 gives an infinite strictly descending chain.
+step [](#s1){.pf-ref} gives an infinite strictly descending chain.
+
+:::
+
+:::
+
 :::
 
 Therefore $R$ has only finitely many maximal ideals.

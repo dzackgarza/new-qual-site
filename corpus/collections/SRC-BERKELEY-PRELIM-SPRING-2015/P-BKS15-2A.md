@@ -52,15 +52,25 @@ E
 \{c\in[a,b]:[a,c]\text{ has a good partition}\}.
 $$
 
-<1>1. The set $E$ is nonempty.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The set $E$ is nonempty.
+
+::: pf-proof
+
 The degenerate interval $[a,a]$ has the empty partition, so $a\in E$.
 Alternatively, since $g(a)>0$, every sufficiently small $c>a$ lies in
 $E$ by using the one-interval partition $[a,c]$ tagged at $a$.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 $$
 c\coloneqq\sup E.
 $$
@@ -69,7 +79,8 @@ $$
 c>a.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $g(a)>0$ and $b>a$, choose
 $$
 0<h<\min(g(a),b-a).
@@ -83,14 +94,20 @@ $$
 h<g(a).
 $$
 Thus $a+h\in E$, so $\sup E>a$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 c=b.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose instead that $c<b$. Since $g(c)>0$, choose
 $$
 0<\eta
@@ -136,9 +153,14 @@ $$
 y\in E,
 $$
 contradicting $y>c=\sup E$. Therefore $c=b$.
+
 :::
 
-<1>4. There is some
+:::
+
+::: {.pf-step #s4}
+
+There is some
 $$
 x\in E
 $$
@@ -147,8 +169,9 @@ $$
 b-x<g(b).
 $$
 
-::: {.proof}
-By step <1>3,
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 \sup E=b.
 $$
@@ -161,12 +184,18 @@ b
 $$
 For such an $x$, the displayed inequality holds. If the chosen point is
 $b$, the conclusion is already immediate.
+
 :::
 
-<1>5. The interval $[a,b]$ has a good partition.
+:::
 
-::: {.proof}
-Take $x$ from step <1>4. If $x=b$, this is true because $b\in E$.
+::: {.pf-step #s5}
+
+The interval $[a,b]$ has a good partition.
+
+::: pf-proof
+
+Take $x$ from step [](#s4){.pf-ref}. If $x=b$, this is true because $b\in E$.
 Otherwise, take a good partition of $[a,x]$ and append the interval
 $$
 [x,b]
@@ -176,9 +205,14 @@ $$
 b-x<g(b),
 $$
 so the enlarged partition is good.
+
 :::
 
-<1>6. Therefore there is a finite sequence
+:::
+
+::: {.pf-step #s6}
+
+Therefore there is a finite sequence
 $$
 \boxed{
 a=t_0<t_1<\cdots<t_n=b
@@ -189,13 +223,20 @@ $$
 g(\xi_k)>t_{k+1}-t_k.
 $$
 
-::: {.proof}
-Unpack the definition of the good partition furnished by step <1>5.
+::: pf-proof
+
+Unpack the definition of the good partition furnished by step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is exactly the required statement.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is exactly the required statement.
+
+:::
+
+:::
+
 :::

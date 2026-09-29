@@ -46,7 +46,11 @@ f(x)=\norm{x-p}
 $$
 for $x\in D$.
 
-<1>1. For every $x\in D$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $x\in D$,
 $$
 \nabla f(x)
 =
@@ -57,7 +61,8 @@ $$
 \norm{\nabla f(x)}=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $p\notin D$, the denominator never vanishes on $D$. Differentiating
 the Euclidean norm gives
 $$
@@ -66,15 +71,21 @@ $$
 \frac{x-p}{\norm{x-p}}.
 $$
 The displayed vector is a normalized nonzero vector, so its norm is $1$.
+
 :::
 
-<1>2. The vector field
+:::
+
+::: {.pf-step #s2}
+
+The vector field
 $$
 v(x)\coloneqq\nabla f(x)
 $$
 is not constant on $D$.
 
-::: {.proof}
+::: pf-proof
+
 If $v$ were constant, then all vectors
 $$
 x-p,
@@ -84,9 +95,14 @@ $$
 would point in the same direction. Hence every point of $D$ would lie on
 one line through $p$, which is impossible because the square contains
 three noncollinear points.
+
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #s3}
+
+Let
 $$
 c
 \coloneqq
@@ -97,14 +113,15 @@ $$
 \norm{c}<1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The square has area $1$, so its integral is its average.
 
 If $c=0$, the conclusion is immediate. Suppose $c\neq0$ and set
 $$
 u\coloneqq\frac{c}{\norm{c}}.
 $$
-For every $x\in D$, Cauchy--Schwarz and step <1>1 give
+For every $x\in D$, Cauchy--Schwarz and step [](#s1){.pf-ref} give
 $$
 u\cdot v(x)
 \leq
@@ -114,7 +131,7 @@ u\cdot v(x)
 $$
 Equality holds only when $v(x)=u$, because both are unit vectors.
 
-By step <1>2, $v$ is not identically equal to $u$. Hence there is some
+By step [](#s2){.pf-ref}, $v$ is not identically equal to $u$. Hence there is some
 $x_1\in D$ with
 $$
 u\cdot v(x_1)<1.
@@ -138,9 +155,14 @@ u\cdot c
 \norm{c}.
 $$
 Thus $\norm{c}<1$.
+
 :::
 
-<1>4. There is no point
+:::
+
+::: {.pf-step #s4}
+
+There is no point
 $$
 (x_0,y_0)\in D
 $$
@@ -149,22 +171,35 @@ $$
 \nabla f(x_0,y_0)=c.
 $$
 
-::: {.proof}
-By step <1>1, every pointwise gradient has norm $1$. By step <1>3, the
+::: pf-proof
+
+By step [](#s1){.pf-ref}, every pointwise gradient has norm $1$. By step [](#s3){.pf-ref}, the
 average vector $c$ has norm strictly less than $1$. Therefore they cannot
 be equal.
+
 :::
 
-<1>5. Hence the proposed multivariable analogue of the mean value theorem
+:::
+
+::: {.pf-step #s5}
+
+Hence the proposed multivariable analogue of the mean value theorem
 fails.
 
-::: {.proof}
-Step <1>4 gives exactly the counterexample requested in the problem.
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives exactly the counterexample requested in the problem.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the claim.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the claim.
+
+:::
+
+:::
+
 :::

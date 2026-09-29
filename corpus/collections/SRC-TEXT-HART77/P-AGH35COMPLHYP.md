@@ -45,12 +45,17 @@ $$
 $$
 be the $d$-uple embedding, and write $Y=\rho_d(\PP^n)$.
 
-<1>1. There is a hyperplane $K\subseteq\PP^N$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a hyperplane $K\subseteq\PP^N$ such that
 $$
 \rho_d(H)=Y\cap K.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Index the homogeneous coordinates $y_0,\ldots,y_N$ of $\PP^N$ by the degree-$d$ monomials $M_0,\ldots,M_N$ in $x_0,\ldots,x_n$.
 Since these monomials form a basis of the degree-$d$ homogeneous polynomials, write
 $$
@@ -62,11 +67,17 @@ $$
 L(\rho_d(P))=\sum_i c_iM_i(P)=f(P).
 $$
 Hence $P\in H$ exactly when $\rho_d(P)\in K$, which proves the displayed identity.
+
 :::
 
-<1>2. The complement $Y\setminus(Y\cap K)$ is an affine variety.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The complement $Y\setminus(Y\cap K)$ is an affine variety.
+
+::: pf-proof
+
 The image $Y$ is closed in $\PP^N$ by [[P-AGH212DUPLE]].
 A projective linear change of coordinates carries $K$ to a coordinate hyperplane, whose complement is the standard affine chart $\AA^N$.
 Therefore $\PP^N\setminus K$ is affine.
@@ -77,19 +88,25 @@ Y\setminus(Y\cap K)=Y\cap(\PP^N\setminus K).
 $$
 Because $Y$ is closed in $\PP^N$, this intersection is closed in the affine variety $\PP^N\setminus K$.
 A closed subvariety of an affine variety is affine, so the displayed complement is affine.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 By [[P-AGH34DUPLEISO]], $\rho_d$ is an isomorphism $\PP^n\cong Y$.
-Step <1>1 shows that it restricts to an isomorphism
+Step [](#s1){.pf-ref} shows that it restricts to an isomorphism
 $$
 \PP^n\setminus H
 \cong
 Y\setminus(Y\cap K),
 $$
-and step <1>2 shows that the target is affine.
+and step [](#s2){.pf-ref} shows that the target is affine.
 Hence $\PP^n\setminus H$ is affine.
+
 :::
+
+:::
+
 :::

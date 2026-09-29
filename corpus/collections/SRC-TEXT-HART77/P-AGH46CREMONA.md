@@ -51,7 +51,11 @@ $$
 $$
 whenever the three displayed coordinates are not all zero.
 
-<1>1. On the dense open torus
+::: pf
+
+::: {.pf-step #s1}
+
+On the dense open torus
 $$
 T=D_+(a_0a_1a_2)
 $$
@@ -60,7 +64,8 @@ $$
 \varphi^2=\operatorname{id}_T.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $a_0a_1a_2\ne0$, then
 $$
 \begin{aligned}
@@ -73,21 +78,27 @@ $$
 after cancelling the common nonzero scalar $a_0a_1a_2$.
 The same hypothesis shows that $\varphi(T)\subseteq T$.
 Thus $\varphi|_T$ is its own set-theoretic inverse.
+
 :::
 
-<1>2. The restriction
+:::
+
+::: {.pf-step #s2}
+
+The restriction
 $$
 \varphi|_T:T\xrightarrow{\sim}T
 $$
 is an isomorphism; hence $\varphi$ is birational and is its own inverse as a rational map.
 
-::: {.proof}
+::: pf-proof
+
 The three quadratic forms
 $$
 a_1a_2,\qquad a_0a_2,\qquad a_0a_1
 $$
 have no common zero on $T$, so they define a morphism $T\to\PP^2$.
-Its image lies in $T$, and step <1>1 shows that the same morphism is its inverse there.
+Its image lies in $T$, and step [](#s1){.pf-ref} shows that the same morphism is its inverse there.
 Therefore it is an isomorphism $T\cong T$.
 
 The open set $T$ is nonempty and hence dense in the irreducible variety $\PP^2$.
@@ -96,9 +107,14 @@ This proves (a), and also answers (b) with
 $$
 \boxed{U=V=T}.
 $$
+
 :::
 
-<1>3. The quadratic formula defines a morphism precisely on
+:::
+
+::: {.pf-step #s3}
+
+The quadratic formula defines a morphism precisely on
 $$
 D
 =
@@ -106,7 +122,8 @@ D
 \{[1:0:0],[0:1:0],[0:0:1]\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The three defining quadrics vanish simultaneously exactly when at least two of $a_0,a_1,a_2$ vanish.
 In projective space this happens at precisely the three coordinate vertices.
 Away from them, homogeneous forms of the same degree with no common zero define a morphism
@@ -117,11 +134,17 @@ $$
 \longmapsto
 [a_1a_2:a_0a_2:a_0a_1].
 $$
+
 :::
 
-<1>4. The rational map $\varphi$ cannot be extended across any of the three omitted coordinate vertices.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The rational map $\varphi$ cannot be extended across any of the three omitted coordinate vertices.
+
+::: pf-proof
+
 By symmetry it suffices to consider
 $$
 P_0=[1:0:0].
@@ -152,13 +175,19 @@ These values are distinct, a contradiction.
 
 Permuting the coordinates gives the same contradiction at $[0:1:0]$ and $[0:0:1]$.
 Therefore none of the three vertices belongs to the domain of definition of the rational map.
+
 :::
 
-<1>5. Both $\varphi$ and $\varphi^{-1}$ have maximal domain $D$, and on that domain both are represented by the same quadratic formula.
+:::
 
-::: {.proof}
-Steps <1>3--<1>4 show that $D$ is exactly the maximal domain of $\varphi$ in the sense of [[P-AGH42RATMAPDOM]].
-By step <1>2 the inverse rational map satisfies
+::: {.pf-step #s5}
+
+Both $\varphi$ and $\varphi^{-1}$ have maximal domain $D$, and on that domain both are represented by the same quadratic formula.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that $D$ is exactly the maximal domain of $\varphi$ in the sense of [[P-AGH42RATMAPDOM]].
+By step [](#s2){.pf-ref} the inverse rational map satisfies
 $$
 \varphi^{-1}=\varphi.
 $$
@@ -169,11 +198,17 @@ $$
 [a_1a_2:a_0a_2:a_0a_1].
 $$
 This proves (c).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove (a) and (b), while steps <1>3--<1>5 prove (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a) and (b), while steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (c).
+
+:::
+
+:::
+
 :::

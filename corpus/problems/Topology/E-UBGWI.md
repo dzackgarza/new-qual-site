@@ -31,17 +31,40 @@ $$
 K=\bigcap\{F\subseteq X:F\text{ is closed and }A\subseteq F\}.
 $$
 
-<1>1. The set $K$ is closed and contains $A$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The set $K$ is closed and contains $A$.
+
+::: pf-proof
+
 Arbitrary intersections of closed sets are closed, and every set in the intersection contains $A$.
+
 :::
 
-<1>2. The closure $\overline A$ is closed and contains $A$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The closure $\overline A$ is closed and contains $A$.
+
+::: pf-proof
+
 Certainly $A\subseteq\overline A$. If $x\notin\overline A$, some open neighborhood of $x$ misses $A$; the same neighborhood lies in $X\setminus\overline A$. Thus $X\setminus\overline A$ is open.
+
 :::
 
-<1>3. Since $\overline A$ is one of the closed supersets occurring in the definition of $K$,
+:::
+
+::: pf-step
+
+Since $\overline A$ is one of the closed supersets occurring in the definition of $K$,
+
+:::
+
+:::
+
 $$
 K\subseteq\overline A.
 $$

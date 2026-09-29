@@ -51,20 +51,31 @@ Indeed, a positive power is very ample by [@Har10a, Theorem II.7.6] and gives an
 This immersion is proper, since its source is proper and its target is separated over $k$, and a proper immersion is a closed immersion [@Har10a, Remark II.5.16.1].
 We will construct such an ample sheaf in each case.
 
-<1>1. A proper nonsingular integral curve over $k$ is projective, proving (a).
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+A proper nonsingular integral curve over $k$ is projective, proving (a).
+
+::: pf-proof
+
 This is the equivalence between completeness and projectivity for nonsingular curves [@Har10a, Proposition II.6.7].
 Properness is completeness for the curve, so the stated hypothesis applies.
+
 :::
 
-<1>2. For integral $X$, its normalization is a nonsingular projective curve, and a very ample sheaf on it is represented by a reduced effective divisor supported over the nonsingular locus of $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For integral $X$, its normalization is a nonsingular projective curve, and a very ample sheaf on it is represented by a reduced effective divisor supported over the nonsingular locus of $X$.
+
+::: pf-proof
+
 Normalization of an integral curve of finite type over a field is finite and birational [@Har10a, Exercise II.3.8].
 Thus $f:\tilde X\to X$ is finite surjective, and $\tilde X$ is proper over $k$.
 Its one-dimensional normal local rings are DVRs, so it is nonsingular [@Har10a, Theorem I.6.2A].
-Step <1>1 makes it projective.
+Step [](#s1){.pf-ref} makes it projective.
 
 The nonsingular locus of $X$ is open and dense by [[P-AGH281DIFFNONCLOSED]], part (d).
 Its complement is a finite set of closed points of the integral curve, and finiteness of $f$ makes its inverse image finite as well.
@@ -74,24 +85,36 @@ Bertini's theorem gives another dense open subset whose intersections with the n
 Their intersection has a $k$-point because $k$ is algebraically closed.
 The resulting hyperplane section is $D=\sum P_i$ with distinct closed points and $\OO_{\tilde X}(D)\cong\mcl$.
 Its support avoids the inverse image of the singular locus, as required in (b).
+
 :::
 
-<1>3. Every proper integral curve $X$ is projective, completing (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Every proper integral curve $X$ is projective, completing (b).
+
+::: pf-proof
+
 The normalization is an isomorphism over the nonsingular locus, since the local rings there are normal.
-Thus the points $f(P_i)$ from step <1>2 are distinct nonsingular points of $X$ and define an effective Cartier divisor $D_0=\sum f(P_i)$ on $X$.
+Thus the points $f(P_i)$ from step [](#s2){.pf-ref} are distinct nonsingular points of $X$ and define an effective Cartier divisor $D_0=\sum f(P_i)$ on $X$.
 Each has a local equation given by a uniformizer, and away from these points the divisor is zero.
 Set $\mcl_0=\OO_X(D_0)$.
 Pullback of its local equations through the normalization gives $f^*D_0=D$, with multiplicity one because $f$ is an isomorphism there.
 Hence $f^*\mcl_0\cong\OO_{\tilde X}(D)\cong\mcl$.
 The very ample $\mcl$ is ample, and finite-surjection descent in [[P-AGH357AMPLENESS]], part (d), makes $\mcl_0$ ample on $X$.
-Properness and the ample-sheaf criterion preceding step <1>1 give projectivity.
+Properness and the ample-sheaf criterion preceding step [](#s1){.pf-ref} give projectivity.
+
 :::
 
-<1>4. For a reduced proper scheme $X$ of dimension at most one, restriction $\Pic X\to\bigoplus_i\Pic X_i$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+For a reduced proper scheme $X$ of dimension at most one, restriction $\Pic X\to\bigoplus_i\Pic X_i$ is surjective.
+
+::: pf-proof
+
 Induct on the finite number of irreducible components.
 The one-component and empty cases are immediate.
 Separate one component $Z$ from the reduced union $W$ of the others, and let $I,J$ be their ideals in $X$.
@@ -120,24 +143,36 @@ The noetherian space underlying $T$ has dimension zero, so $H^1(T,\OO_T^\times)=
 Closed direct image preserves cohomology, and [[P-AGH345PICH1]] identifies degree-one unit cohomology with Picard groups.
 The long exact sequence therefore makes $\Pic X\to\Pic Z\oplus\Pic W$ surjective.
 Composing with the induction surjection for $W$ proves the stated map onto all component Picard groups.
+
 :::
 
-<1>5. Every reduced one-dimensional proper scheme is projective, proving (c).
+:::
 
-::: {.proof}
-Every one-dimensional integral component is projective by step <1>3 and has an ample invertible sheaf.
+::: {.pf-step #s5}
+
+Every reduced one-dimensional proper scheme is projective, proving (c).
+
+::: pf-proof
+
+Every one-dimensional integral component is projective by step [](#s3){.pf-ref} and has an ample invertible sheaf.
 A zero-dimensional integral component is a single reduced point with residue field finite over $k$, hence is $\Spec k$ and is projective; its structure sheaf is ample.
-Step <1>4 allows the chosen invertible sheaves on all the components to be the restrictions of one invertible sheaf $L$ on $X$.
+Step [](#s4){.pf-ref} allows the chosen invertible sheaves on all the components to be the restrictions of one invertible sheaf $L$ on $X$.
 Ampleness on reduced components detects ampleness by [[P-AGH357AMPLENESS]], part (c), so $L$ is ample.
 The proper scheme $X$ is therefore projective.
 This also handles any isolated zero-dimensional components of the original one-dimensional scheme.
+
 :::
 
-<1>6. For arbitrary $X$ in (d), the map $\Pic X\to\Pic X_{\mathrm{red}}$ is surjective and $X$ is projective.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+For arbitrary $X$ in (d), the map $\Pic X\to\Pic X_{\mathrm{red}}$ is surjective and $X$ is projective.
+
+::: pf-proof
+
 Let $N$ be the nilradical ideal sheaf of $X$.
-It is nilpotent by noetherianness and a finite affine cover, as in [[P-AGH357AMPLENESS]], step <1>2.
+It is nilpotent by noetherianness and a finite affine cover, as in [[P-AGH357AMPLENESS]], step [](#s2){.pf-ref}.
 Choose $e\ge1$ with $N^e=0$, and write $X_j=(|X|,\OO_X/N^j)$ for $1\le j\le e$.
 Then $X_1=X_{\mathrm{red}}$ and $X_e=X$.
 The ideal $N^j/N^{j+1}$ of $X_{j+1}$ has square zero, since $2j\ge j+1$.
@@ -149,14 +184,20 @@ $$
 The last group is zero by Grothendieck vanishing: the underlying space has dimension one [@Har10a, Theorem III.2.7].
 Thus every transition on Picard groups is surjective, and composing them proves $\Pic X\to\Pic X_{\mathrm{red}}$ is surjective.
 
-Step <1>5 makes the reduction projective, so choose an ample invertible sheaf on it and lift its Picard class to an invertible sheaf $L$ on $X$.
+Step [](#s5){.pf-ref} makes the reduction projective, so choose an ample invertible sheaf on it and lift its Picard class to an invertible sheaf $L$ on $X$.
 By [[P-AGH357AMPLENESS]], part (b), $L$ is ample.
 The proper ample-sheaf criterion now proves that $X$ is projective, including all of its nilpotent structure.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), steps <1>2--<1>3 prove (b), steps <1>4--<1>5 prove (c), and step <1>6 proves (d) and the full theorem.
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (b), steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (c), and step [](#s6){.pf-ref} proves (d) and the full theorem.
+
+:::
+
+:::
+
 :::

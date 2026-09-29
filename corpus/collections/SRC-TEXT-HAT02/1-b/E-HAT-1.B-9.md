@@ -38,7 +38,11 @@ N
 \]
 to be a common multiple of the orders of all vertex and edge groups.
 
-<1>1. Over each vertex space $K(G_v,1)$ take
+::: pf
+
+::: {.pf-step #s1}
+
+Over each vertex space $K(G_v,1)$ take
 \[
 \frac{N}{|G_v|}
 \]
@@ -47,15 +51,22 @@ disjoint copies of its universal cover
 E G_v\to K(G_v,1).
 \]
 The resulting map over the vertex space has total degree $N$.
-::: {.proof}
+
+::: pf-proof
+
 Each universal cover has degree $|G_v|$ because its deck group is the finite group $G_v$.
 Hence
 \[
 \frac{N}{|G_v|}\cdot |G_v|=N.
 \]
+
 :::
 
-<1>2. Over each edge mapping cylinder take
+:::
+
+::: {.pf-step #s2}
+
+Over each edge mapping cylinder take
 \[
 \frac{N}{|G_e|}
 \]
@@ -63,13 +74,22 @@ copies of the universal lifted edge cylinder
 \[
 E G_e\times I.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The edge classifying space $K(G_e,1)$ has universal cover $E G_e$ of degree $|G_e|$.
 Thus the displayed number of copies again gives total degree $N$ over the interior of the edge cylinder.
+
 :::
 
-<1>3. The boundary components of these lifted edge cylinders can be matched exactly with the inverse images of the edge subspaces in the chosen vertex covers.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The boundary components of these lifted edge cylinders can be matched exactly with the inverse images of the edge subspaces in the chosen vertex covers.
+
+::: pf-proof
+
 Fix an incidence of an edge $e$ at a vertex $v$.
 Since the edge homomorphism
 \[
@@ -96,32 +116,53 @@ Across the $N/|G_v|$ chosen copies of $E G_v$, the total number of such boundary
 =
 \frac{N}{|G_e|},
 \]
-exactly the number of lifted edge cylinders from <1>2.
+exactly the number of lifted edge cylinders from step [](#s2){.pf-ref}.
 Hence the boundary copies can be paired and glued.
 The same count holds at the other endpoint of the edge.
+
 :::
 
-<1>4. After performing these gluings for every edge, one obtains a finite-sheeted covering
+:::
+
+::: pf-step
+
+After performing these gluings for every edge, one obtains a finite-sheeted covering
 \[
 \widehat K\to K\Gamma
 \]
 of degree $N$.
-::: {.proof}
-By <1>1--<1>3 the local degree is $N$ on every vertex space, edge-cylinder interior, and attaching region.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} the local degree is $N$ on every vertex space, edge-cylinder interior, and attaching region.
 The pieces are glued by lifts of the original attaching maps, so the resulting map is locally a homeomorphism and has exactly $N$ points in every fiber.
 Thus it is an $N$-sheeted covering.
+
 :::
 
-<1>5. Every connected component of $\widehat K$ has free fundamental group.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Every connected component of $\widehat K$ has free fundamental group.
+
+::: pf-proof
+
 Upstairs, every vertex space $E G_v$ and every edge space $E G_e$ is contractible.
 Collapsing each contractible vertex space to a point and each edge cylinder to an interval gives a homotopy equivalence from a component of $\widehat K$ to its underlying incidence graph.
 The fundamental group of a graph is free.
 Equivalently, the lifted graph of groups has trivial vertex and edge stabilizer groups, so Exercise 3 applies.
+
 :::
 
-<1>6. Therefore the original graph product contains a free subgroup of finite index.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore the original graph product contains a free subgroup of finite index.
+
+::: pf-proof
+
 Choose any connected component
 \[
 \widehat K_0\subseteq\widehat K.
@@ -136,10 +177,16 @@ The corresponding subgroup
 H=(p_*)\pi_1(\widehat K_0)
 \le\pi_1(K\Gamma)
 \]
-has index $d$, and by <1>5 the group $H$ is free.
+has index $d$, and by step [](#s5){.pf-ref} the group $H$ is free.
 Hence
 \[
 \boxed{\pi_1(K\Gamma)\text{ is virtually free}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

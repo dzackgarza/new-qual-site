@@ -39,12 +39,18 @@ is dense in $(1,\infty)$.
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \frac{b_{n+1}}{b_n}\longrightarrow1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypotheses give
 $$
 \frac{b_n}{b_{n+1}}\longrightarrow1.
@@ -56,9 +62,14 @@ $$
 \left(\frac{b_n}{b_{n+1}}\right)^{-1}
 \longrightarrow1.
 $$
+
 :::
 
-<1>2. Fix $x>1$ and $\varepsilon>0$. There is $N$ such that for every
+:::
+
+::: {.pf-step #s2}
+
+Fix $x>1$ and $\varepsilon>0$. There is $N$ such that for every
 $k\geq N$,
 $$
 1<\frac{b_{k+1}}{b_k}
@@ -66,17 +77,24 @@ $$
 1+\frac{\varepsilon}{x}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The lower inequality follows from the strict increase of $(b_k)$. The
-upper inequality holds for all sufficiently large $k$ by step <1>1.
+upper inequality holds for all sufficiently large $k$ by step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Fix any $n\geq N$. There exists a least integer $m>n$ such that
+:::
+
+::: {.pf-step #s3}
+
+Fix any $n\geq N$. There exists a least integer $m>n$ such that
 $$
 \frac{b_m}{b_n}\geq x.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $b_j\to\infty$ while $b_n$ is fixed,
 $$
 \frac{b_j}{b_n}\longrightarrow\infty
@@ -86,9 +104,14 @@ $$
 \frac{b_j}{b_n}\geq x
 $$
 is nonempty and therefore has a least element $m$.
+
 :::
 
-<1>4. For the indices $n<m$ from step <1>3,
+:::
+
+::: {.pf-step #s4}
+
+For the indices $n<m$ from step [](#s3){.pf-ref},
 $$
 x
 \leq
@@ -97,12 +120,13 @@ x
 x+\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first inequality is the definition of $m$. By minimality,
 $$
 \frac{b_{m-1}}{b_n}<x.
 $$
-Since $m-1\geq n\geq N$, step <1>2 gives
+Since $m-1\geq n\geq N$, step [](#s2){.pf-ref} gives
 $$
 \frac{b_m}{b_{m-1}}
 <
@@ -121,27 +145,39 @@ $$
 x+\varepsilon.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The set
+:::
+
+::: {.pf-step #s5}
+
+The set
 $$
 \left\{\frac{b_m}{b_n}:1\leq n<m\right\}
 $$
 is dense in $(1,\infty)$.
 
-::: {.proof}
-Given arbitrary $x>1$ and $\varepsilon>0$, step <1>4 produces an
+::: pf-proof
+
+Given arbitrary $x>1$ and $\varepsilon>0$, step [](#s4){.pf-ref} produces an
 element of the displayed set in
 $$
 [x,x+\varepsilon).
 $$
 Thus every point of $(1,\infty)$ can be approximated arbitrarily
 closely by elements of the set, which is exactly density.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

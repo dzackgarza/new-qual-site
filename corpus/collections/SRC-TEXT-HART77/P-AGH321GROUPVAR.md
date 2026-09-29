@@ -47,9 +47,15 @@ A **group variety** consists of a variety $Y$ together with a morphism $\mu: Y \
 :::
 
 ::: {.solution}
-<1>1. The variety $\GG_a=\AA^1$ with addition is a group variety.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The variety $\GG_a=\AA^1$ with addition is a group variety.
+
+::: pf-proof
+
 The underlying set is the field $k$, which is an abelian group under addition with identity $0$.
 The multiplication map in the sense of group varieties is
 $$
@@ -66,11 +72,17 @@ a\longmapsto-a,
 $$
 also polynomial and therefore a morphism.
 Thus all requirements in the definition are satisfied, proving (a).
+
 :::
 
-<1>2. The variety $\GG_m=\AA^1\setminus\{0\}$ with multiplication is a group variety.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The variety $\GG_m=\AA^1\setminus\{0\}$ with multiplication is a group variety.
+
+::: pf-proof
+
 Its underlying set is $k^\times$, a group under multiplication with identity $1$.
 The multiplication map
 $$
@@ -90,15 +102,21 @@ a\longmapsto a^{-1}
 $$
 is a morphism.
 Thus $\GG_m$ is a group variety, proving (b).
+
 :::
 
-<1>3. For morphisms $f,g:X\to G$, define
+:::
+
+::: {.pf-step #s3}
+
+For morphisms $f,g:X\to G$, define
 $$
 f*g=\mu\circ(f,g):X\to G.
 $$
 This equips $\Hom(X,G)$ with a group structure, proving (c).
 
-::: {.proof}
+::: pf-proof
+
 By [[P-AGH316QPPRODUCT]], the pair
 $$
 (f,g):X\to G\times G,
@@ -126,9 +144,14 @@ $$
 ((f*g)*h)(x)=(f(x)g(x))h(x)=f(x)(g(x)h(x))=(f*(g*h))(x).
 $$
 Thus all group axioms hold.
+
 :::
 
-<1>4. The map
+:::
+
+::: {.pf-step #s4}
+
+The map
 $$
 \Phi_a:\Hom(X,\GG_a)\longrightarrow\mco(X),
 \qquad
@@ -136,7 +159,8 @@ h\longmapsto h^*(t)=t\circ h
 $$
 is an isomorphism of additive groups.
 
-::: {.proof}
+::: pf-proof
+
 A morphism $h:X\to\AA^1$ pulls the affine coordinate $t$ back to a global regular function on $X$, so $\Phi_a$ is well-defined.
 
 Conversely, if $f\in\mco(X)$, the map
@@ -158,9 +182,14 @@ $$
 =\Phi_a(h_1)(x)+\Phi_a(h_2)(x).
 $$
 Hence $\Phi_a$ is a group isomorphism, proving (d).
+
 :::
 
-<1>5. The map
+:::
+
+::: {.pf-step #s5}
+
+The map
 $$
 \Phi_m:\Hom(X,\GG_m)\longrightarrow\mco(X)^\times,
 \qquad
@@ -168,7 +197,8 @@ h\longmapsto t\circ h
 $$
 is an isomorphism of multiplicative groups.
 
-::: {.proof}
+::: pf-proof
+
 If $h:X\to\GG_m$ is a morphism, then
 $$
 u=t\circ h
@@ -195,11 +225,17 @@ $$
 \Phi_m(h_1*h_2)=\Phi_m(h_1)\Phi_m(h_2),
 $$
 so $\Phi_m$ is a group isomorphism, proving (e).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>5 prove (a)--(e), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (a)--(e), respectively.
+
+:::
+
+:::
+
 :::

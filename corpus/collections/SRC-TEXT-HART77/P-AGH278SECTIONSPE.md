@@ -38,37 +38,54 @@ If $\mce$ has rank zero at a point, neither a section of $\pi$ nor an invertible
 For the empty scheme both sets have one element.
 We may therefore prove the assertion using open sets on which $\mce$ is free of positive finite rank.
 
-<1>1. The [[D-SCHRELSPECPROJ|relative Proj]] carries a canonical surjection
+::: pf
+
+::: {.pf-step #s1}
+
+The [[D-SCHRELSPECPROJ|relative Proj]] carries a canonical surjection
 $$
 q_{\mathrm{univ}}:\pi^*\mce\twoheadrightarrow\OO_P(1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 On an affine open $V=\Spec A\subseteq X$ with a frame $e_0,\ldots,e_r$ for $\mce$, the symmetric algebra is $A[T_0,\ldots,T_r]$, with $T_i$ corresponding to $e_i$ in degree one.
 Thus $P|_V\cong\PP_V^r$.
 Define the map there by $e_i\mapsto T_i$, where $T_i$ is the coordinate section of $\OO(1)$.
 On $D_+(T_i)$ this coordinate is a frame of $\OO(1)$, so the map is surjective.
 The maps on different frames agree: a change of frame in $\mce$ makes the identical linear change of degree-one elements in its symmetric algebra.
 They therefore glue to the stated canonical quotient.
+
 :::
 
-<1>2. A section $\sigma:X\to P$ gives the invertible quotient
+:::
+
+::: {.pf-step #s2}
+
+A section $\sigma:X\to P$ gives the invertible quotient
 $$
 q_\sigma:\mce\cong\sigma^*\pi^*\mce
 \xrightarrow{\sigma^*q_{\mathrm{univ}}}\sigma^*\OO_P(1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first identification comes from $\pi\circ\sigma=\id_X$.
 Pullback preserves invertible sheaves and surjective module morphisms, the latter by right exactness of tensor product in its definition.
 Hence the target is invertible and the displayed map is surjective.
 This construction gives a well-defined isomorphism class of quotient pairs.
+
 :::
 
-<1>3. Every invertible quotient $q:\mce\twoheadrightarrow\mcl$ defines a unique section $\sigma_q:X\to P$ whose pulled-back quotient is isomorphic to $(\mcl,q)$.
+:::
 
-::: {.proof}
-On a framed affine open $V$ as in step <1>1, put $s_i=q(e_i)\in\Gamma(V,\mcl)$.
+::: {.pf-step #s3}
+
+Every invertible quotient $q:\mce\twoheadrightarrow\mcl$ defines a unique section $\sigma_q:X\to P$ whose pulled-back quotient is isomorphic to $(\mcl,q)$.
+
+::: pf-proof
+
+On a framed affine open $V$ as in step [](#s1){.pf-ref}, put $s_i=q(e_i)\in\Gamma(V,\mcl)$.
 These sections generate $\mcl|_V$.
 Let $V_i\subseteq V$ be the open subset where $s_i$ is a frame.
 On $V_i$, define the morphism to the chart $D_+(T_i)$ of $\PP_V^r$ by the coordinate ratios
@@ -89,14 +106,20 @@ On each $V_i$ this is an isomorphism because it sends a frame to a frame, and it
 Such an isomorphism is unique: the sections $q(e_i)$ generate the target.
 The local isomorphisms therefore glue over all of $X$.
 Finally, any section inducing this quotient must have the displayed coordinate-ring maps on every $V_i$, so must equal $\sigma_q$.
+
 :::
 
-<1>4. The two constructions are inverse and are natural under base change.
+:::
 
-::: {.proof}
-Starting with a quotient, step <1>3 proves that pulling back the universal quotient along its associated section recovers that quotient up to the specified isomorphism.
+::: {.pf-step #s4}
+
+The two constructions are inverse and are natural under base change.
+
+::: pf-proof
+
+Starting with a quotient, step [](#s3){.pf-ref} proves that pulling back the universal quotient along its associated section recovers that quotient up to the specified isomorphism.
 Starting with a section $\sigma$, its coordinates on each $D_+(T_i)$ pull back to the ratios of the images of $e_j$ under $q_\sigma$.
-Step <1>3 reconstructs exactly those maps on coordinate rings, so it reconstructs $\sigma$.
+Step [](#s3){.pf-ref} reconstructs exactly those maps on coordinate rings, so it reconstructs $\sigma$.
 Thus the two constructions are mutually inverse.
 
 For any morphism $g:X'\to X$, the framed polynomial-algebra construction gives
@@ -105,12 +128,18 @@ $$
 $$
 with the universal quotient and $\OO(1)$ identified with their pullbacks.
 Pullback takes an invertible quotient of $\mce$ to an invertible quotient of $g^*\mce$, and a section to its base-changed section.
-The coordinate ratios in step <1>3 commute with these pullbacks, proving naturality.
+The coordinate ratios in step [](#s3){.pf-ref} commute with these pullbacks, proving naturality.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 construct both maps, and step <1>4 proves the required natural bijection.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} construct both maps, and step [](#s4){.pf-ref} proves the required natural bijection.
+
+:::
+
+:::
+
 :::

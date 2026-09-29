@@ -32,8 +32,15 @@ Without using the Riesz Representation Theorem, compute
 \]
 :::
 ::: {.solution}
-<1>1. Obtain the sharp upper bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Obtain the sharp upper bound.
+
+::: pf-proof
+
 For any $f\in L^2([0,1])$ with $\|f\|_2\le1$, Cauchy--Schwarz gives
 \[
 \left|\int_0^1 f(x)e^x\,dx\right|
@@ -50,10 +57,17 @@ so the supremum is at most
 \[
 \sqrt{\frac{e^2-1}{2}}.
 \]
+
 :::
 
-<1>2. Show that the bound is attained.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the bound is attained.
+
+::: pf-proof
+
 Let
 \[
 f_0(x):=\frac{e^x}{\|e^x\|_2}.
@@ -72,5 +86,11 @@ Therefore
 =\sqrt{\frac{e^2-1}{2}}.}
 \]
 No form of the Riesz Representation Theorem is needed.
+
 :::
+
+:::
+
+:::
+
 :::

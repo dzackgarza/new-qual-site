@@ -40,7 +40,11 @@ I(s)\coloneqq
 \int_0^\infty\frac{x^{s-1}}{1+x^2}\,dx.
 $$
 
-<1>1. For $0<s<2$,
+::: pf
+
+::: {.pf-step #s1}
+
+For $0<s<2$,
 $$
 I(s)
 =
@@ -48,7 +52,8 @@ I(s)
 \csc\frac{\pi s}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 \alpha\coloneqq\frac{s}{2},
@@ -110,9 +115,14 @@ J(\alpha)
 \frac{\pi}{\sin(\pi\alpha)}.
 $$
 Substituting $\alpha=s/2$ gives the formula for $I(s)$.
+
 :::
 
-<1>2. One may differentiate $I(s)$ twice under the integral sign in a
+:::
+
+::: {.pf-step #s2}
+
+One may differentiate $I(s)$ twice under the integral sign in a
 neighborhood of $s=1$, and
 $$
 I''(1)
@@ -121,7 +131,8 @@ I''(1)
 \frac{(\log x)^2}{1+x^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $1/2\leq s\leq3/2$, the second $s$-derivative of the integrand is
 $$
 \frac{x^{s-1}(\log x)^2}{1+x^2}.
@@ -144,15 +155,21 @@ I''(s)
 \frac{x^{s-1}(\log x)^2}{1+x^2}\,dx.
 $$
 Set $s=1$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 I''(1)=\frac{\pi^3}{8}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 I(s)
 =
@@ -184,9 +201,14 @@ I''(1)
 =
 \frac{\pi^3}{8}.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \int_0^\infty
@@ -196,13 +218,20 @@ $$
 }.
 $$
 
-::: {.proof}
-Combine steps <1>2 and <1>3.
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

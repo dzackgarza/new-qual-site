@@ -25,61 +25,146 @@ Prove that your answer is correct.
 :::
 
 ::: {.solution}
-<1>1. Open cover construction:
-<2>1. Let $X = S_1 \cup S_2$ with $S_1 \cap S_2 = \{p\}$, where each $S_i \cong S^2$.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Open cover construction:
+
+::: pf-proof
+
+::: pf-step
+
+Let $X = S_1 \cup S_2$ with $S_1 \cap S_2 = \{p\}$, where each $S_i \cong S^2$.
 Choose points $q_1 \in S_1 \setminus \{p\}$ and $q_2 \in S_2 \setminus \{p\}$ (e.g. the antipodal points to $p$ on each sphere).
-::: {.proof}
+
+::: pf-proof
+
 each $S_i \setminus \{p\}$ contains points distinct from $p$.
+
 :::
-<2>2. Define the open sets in $X$:
+
+:::
+
+::: pf-step
+
+Define the open sets in $X$:
 \[
 U = X \setminus \{q_1\} = (S_1 \setminus \{q_1\}) \cup S_2, \qquad V = X \setminus \{q_2\} = S_1 \cup (S_2 \setminus \{q_2\}).
 \]
 Since $\{q_1\}$ and $\{q_2\}$ are closed singletons in Hausdorff spaces, $U$ and $V$ are open in $X$, and $U \cup V = X \setminus \emptyset = X$.
-::: {.proof}
+
+::: pf-proof
+
 complements of closed points in $X$ are open.
+
 :::
 
-<1>2. Fundamental groups of $U, V$, and $U \cap V$:
-<2>1. **Fundamental group of $U$:**
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Fundamental groups of $U, V$, and $U \cap V$:
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+**Fundamental group of $U$:**
 $S_1 \setminus \{q_1\}$ is homeomorphic to $\mathbb{R}^2$, which deformation retracts onto the point $p$.
 This radial deformation retraction extends to $U$ by fixing $S_2$ pointwise.
 Thus $S_2$ is a deformation retract of $U$, so:
 \[
 \pi_1(U, p) \cong \pi_1(S_2, p) \cong \pi_1(S^2) = 0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 $\pi_1(S^2) = 0$ and homotopy invariance.
+
 :::
-<2>2. **Fundamental group of $V$:**
+
+:::
+
+::: pf-step
+
+**Fundamental group of $V$:**
 Symmetrically, $V$ deformation retracts onto $S_1$, so:
 \[
 \pi_1(V, p) \cong \pi_1(S_1, p) \cong \pi_1(S^2) = 0.
 \]
-::: {.proof}
-symmetry with <2>1.
+
+::: pf-proof
+
+symmetry with step [](#s2-1){.pf-ref}.
+
 :::
-<2>3. **Fundamental group of $U \cap V$:**
+
+:::
+
+::: pf-step
+
+**Fundamental group of $U \cap V$:**
 The intersection is $U \cap V = (S_1 \setminus \{q_1\}) \cup (S_2 \setminus \{q_2\})$.
 Both pieces are homeomorphic to $\mathbb{R}^2$ and share the common point $p$.
 The simultaneous radial retraction onto $p$ on each piece shows that $U \cap V$ deformation retracts to the point $\{p\}$.
 Thus $U \cap V$ is contractible, hence path-connected with $\pi_1(U \cap V, p) = 0$.
-::: {.proof}
+
+::: pf-proof
+
 union of two contractible open sets sharing a point.
+
 :::
 
-<1>3. Seifert–van Kampen Theorem:
-<2>1. Since $U$ and $V$ are open, $U \cup V = X$, and $U \cap V$ is path-connected, the Seifert–van Kampen Theorem gives:
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Seifert–van Kampen Theorem:
+
+::: pf-proof
+
+::: pf-step
+
+Since $U$ and $V$ are open, $U \cup V = X$, and $U \cap V$ is path-connected, the Seifert–van Kampen Theorem gives:
 \[
 \pi_1(X, p) \cong \pi_1(U, p) *_{\pi_1(U \cap V, p)} \pi_1(V, p) \cong 0 *_0 0 = 0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Seifert–van Kampen Theorem for an open cover.
+
 :::
 
-<1>4. Conclusion:
-The fundamental group of the wedge sum of two 2-spheres is the trivial group: $\pi_1(X) \cong 0$. Q.E.D.
-::: {.proof}
-<1>1 through <1>3.
 :::
+
+:::
+
+:::
+
+::: pf-step
+
+Conclusion:
+The fundamental group of the wedge sum of two 2-spheres is the trivial group: $\pi_1(X) \cong 0$. Q.E.D.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

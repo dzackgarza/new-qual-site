@@ -34,7 +34,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Fix a prime $p$ and put
+
+::: pf
+
+::: {.pf-step #s1}
+
+Fix a prime $p$ and put
 $$
 A=v_p(\abs{a}),
 \qquad
@@ -51,20 +56,27 @@ $$
 v_p(\operatorname{lcm}(a,b))=\max(A,B).
 $$
 
-::: {.proof}
+::: pf-proof
+
 In the prime factorizations of positive integers, the greatest common
 divisor takes the smaller exponent of each prime, while the least common
 multiple takes the larger exponent. Replacing a nonzero integer by its
 absolute value does not change either exponent.
+
 :::
 
-<1>2. For all nonnegative integers $A,B,C$,
+:::
+
+::: {.pf-step #s2}
+
+For all nonnegative integers $A,B,C$,
 $$
 \min(A,\max(B,C))
 =\max(\min(A,B),\min(A,C)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $A\le\max(B,C)$, then the left side is $A$. At least one of $B,C$ is
 at least $A$, so one of $\min(A,B),\min(A,C)$ equals $A$, while the other
 is at most $A$. Hence the right side is also $A$.
@@ -76,13 +88,19 @@ $$
 =\max(\min(A,B),\min(A,C)).
 $$
 Thus the identity holds in both cases.
+
 :::
 
-<1>3. For every prime $p$, the two integers in the required identity
+:::
+
+::: {.pf-step #s3}
+
+For every prime $p$, the two integers in the required identity
 have the same $p$-adic valuation.
 
-::: {.proof}
-Using step <1>1, the valuation of the left-hand side is
+::: pf-proof
+
+Using step [](#s1){.pf-ref}, the valuation of the left-hand side is
 $$
 \min(A,\max(B,C)).
 $$
@@ -90,10 +108,15 @@ The valuation of the right-hand side is
 $$
 \max(\min(A,B),\min(A,C)).
 $$
-These are equal by step <1>2.
+These are equal by step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \gcd\{a,\operatorname{lcm}\{b,c\}\}
@@ -102,15 +125,22 @@ $$
 }.
 $$
 
-::: {.proof}
-Both sides are positive integers. Step <1>3 shows that their prime
+::: pf-proof
+
+Both sides are positive integers. Step [](#s3){.pf-ref} shows that their prime
 factorizations have the same exponent at every prime, so the fundamental
 theorem of arithmetic implies that they are equal.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the desired identity.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is exactly the desired identity.
+
+:::
+
+:::
+
 :::

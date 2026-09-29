@@ -35,10 +35,16 @@ has a subsequence converging to a continuous function.
 :::
 
 ::: {.solution}
-<1>1. If $(a_n)$ has a bounded subsequence, then $(f_n)$ has a subsequence
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $(a_n)$ has a bounded subsequence, then $(f_n)$ has a subsequence
 converging locally uniformly to a continuous function.
 
-::: {.proof}
+::: pf-proof
+
 By Bolzano--Weierstrass, after passing to a subsequence we may assume
 $$
 a_n\to a\in\RR.
@@ -75,12 +81,18 @@ $$
 locally uniformly.
 
 In either case the limit is continuous.
+
 :::
 
-<1>2. If $(a_n)$ has no bounded subsequence, then $(f_n)$ has a subsequence
+:::
+
+::: {.pf-step #s2}
+
+If $(a_n)$ has no bounded subsequence, then $(f_n)$ has a subsequence
 converging uniformly on $\RR$ to a continuous function.
 
-::: {.proof}
+::: pf-proof
+
 If $(a_n)$ has no bounded subsequence, then $\abs{a_n}\to\infty$, so
 $$
 \sup_{x\in\RR}\abs{\frac{\sin(a_nx)}{a_n}}
@@ -106,12 +118,18 @@ $$
 f_n\longrightarrow \cos(x+\theta)
 $$
 uniformly, with continuous limit.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Every real sequence either has a bounded subsequence or has none, so
-step <1>1 or step <1>2 applies.
+step [](#s1){.pf-ref} or step [](#s2){.pf-ref} applies.
+
 :::
+
+:::
+
 :::

@@ -36,9 +36,14 @@ intersection to be $\{0\}$.
 ::: {.solution}
 Let $A$ and $B$ be nontrivial [[D-IQ4OX|subgroups]] of $(\QQ,+)$.
 
-<1>1. The intersection $A\cap B$ contains a nonzero element.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The intersection $A\cap B$ contains a nonzero element.
+
+::: pf-proof
+
 Choose $a\in A\setminus\{0\}$ and $b\in B\setminus\{0\}$.
 Since $a/b$ is a nonzero rational number, there are nonzero
 integers $m,n$ such that $a/b=m/n$. Hence
@@ -49,27 +54,39 @@ A [[D-IQ4OX|subgroup]] of an additive group is closed under integer
 multiples, so $na\in A$ and $mb\in B$. Their common value is
 nonzero because $n\ne0$ and $a\ne0$. Thus $na=mb$ is a nonzero
 element of $A\cap B$.
+
 :::
 
-<1>2. The group $(\QQ,+)$ is not the internal direct sum of
+:::
+
+::: {.pf-step #s2}
+
+The group $(\QQ,+)$ is not the internal direct sum of
 $A$ and $B$.
 
-::: {.proof}
+::: pf-proof
+
 In an internal direct sum, every element has a unique expression
 as the sum of an element of $A$ and an element of $B$.
 For any $c\in A\cap B$, the expressions
 $$
 c=c+0=0+c
 $$
-would therefore force $c=0$. This contradicts step <1>1.
+would therefore force $c=0$. This contradicts step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 excludes every pair of nontrivial [[D-IQ4OX|subgroups]] $A,B$.
+::: pf-qed
+
+Step [](#s2){.pf-ref} excludes every pair of nontrivial [[D-IQ4OX|subgroups]] $A,B$.
 An isomorphism from a direct sum of two nontrivial groups onto
 $(\QQ,+)$ would send its summands to such an internal direct sum,
 so no abstract direct-sum decomposition exists either.
+
 :::
+
+:::
+
 :::

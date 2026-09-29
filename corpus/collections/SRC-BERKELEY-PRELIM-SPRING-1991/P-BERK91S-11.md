@@ -36,13 +36,18 @@ $$
 a_n\coloneqq\frac{\sqrt{n+1}-\sqrt n}{n^x}.
 $$
 
-<1>1. For every $n\ge1$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $n\ge1$,
 $$
 \frac{1}{1+\sqrt2}\frac{1}{n^p}
 \le a_n\le\frac12\frac{1}{n^p}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Rationalizing the numerator gives
 $$
 a_n
@@ -52,24 +57,36 @@ $$
 Since $1\le\sqrt{1+1/n}\le\sqrt2$, its denominator satisfies
 the bounds in the claim. All factors are positive for every
 real $x$.
+
 :::
 
-<1>2. The series converges precisely for $\boxed{x>\tfrac12}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The series converges precisely for $\boxed{x>\tfrac12}$.
+
+::: pf-proof
+
 The $p$-series criterion states that $\sum_{n=1}^{\infty}n^{-p}$
 converges if and only if $p>1$. If $x>\tfrac12$, then $p>1$,
-so the upper bound in step <1>1 and the
+so the upper bound in step [](#s1){.pf-ref} and the
 [[PR-P6NHI|comparison test]] prove convergence.
 If $x\le\tfrac12$, then $p\le1$, so the lower bound and the
 [[PR-P6NHI|comparison test]] prove divergence. This includes
 $x=\tfrac12$, for which the lower bound is a positive constant
 multiple of the harmonic-series summand.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 determines convergence for every real parameter $x$.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} determines convergence for every real parameter $x$.
+
+:::
+
+:::
+
 :::

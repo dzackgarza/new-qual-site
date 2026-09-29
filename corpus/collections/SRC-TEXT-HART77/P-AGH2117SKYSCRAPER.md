@@ -47,8 +47,14 @@ A,&P\in U,\\
 \]
 with the evident restriction maps: identity when both opens contain $P$, and the zero map whenever the smaller open does not contain $P$.
 
-<1>1. The presheaf $\mathcal S$ is a sheaf.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The presheaf $\mathcal S$ is a sheaf.
+
+::: pf-proof
+
 Let
 \[
 U=\bigcup_\alpha U_\alpha
@@ -78,22 +84,34 @@ For indices not containing $P$, the only section is zero.  Hence the family glue
 a_{\alpha_0}\in\mathcal S(U)=A.
 \]
 Thus $\mathcal S$ is a sheaf.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 \[
 Q\in\overline{\{P\}},
 \]
 then every open neighborhood of $Q$ contains $P$.
-::: {.proof}
+
+::: pf-proof
+
 The condition
 \[
 Q\in\overline{\{P\}}
 \]
 means exactly that every open neighborhood of $Q$ meets the set $\{P\}$.  Meeting that singleton means containing $P$.
+
 :::
 
-<1>3. For every
+:::
+
+::: {.pf-step #s3}
+
+For every
 \[
 Q\in\overline{\{P\}},
 \]
@@ -101,8 +119,10 @@ one has
 \[
 \boxed{\mathcal S_Q\cong A.}
 \]
-::: {.proof}
-By <1>2, every neighborhood $U$ of $Q$ contains $P$, so
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, every neighborhood $U$ of $Q$ contains $P$, so
 \[
 \mathcal S(U)=A.
 \]
@@ -112,9 +132,14 @@ Every restriction map between such neighborhoods is the identity on $A$.  Theref
 =\varinjlim_{Q\in U}A
 \cong A.
 \]
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 \[
 Q\notin\overline{\{P\}},
 \]
@@ -122,7 +147,9 @@ then
 \[
 \boxed{\mathcal S_Q=0.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Choose an open neighborhood
 \[
 Q\in V
@@ -145,9 +172,14 @@ which is still a neighborhood of $Q$ but does not contain $P$.  The restriction 
 \mathcal S(U\cap V)=0,
 \]
 so the germ is zero.  Hence the entire stalk is zero.
+
 :::
 
-<1>5. Thus the stalks are
+:::
+
+::: {.pf-step #s5}
+
+Thus the stalks are
 \[
 \boxed{
 (i_P(A))_Q
@@ -158,16 +190,25 @@ A,&Q\in\overline{\{P\}},\\
 \end{cases}
 }
 \]
-::: {.proof}
-Combine <1>3 and <1>4.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Put
+:::
+
+::: {.pf-step #s6}
+
+Put
 \[
 Z=\overline{\{P\}}
 \]
 with its subspace topology.  Then $P$ belongs to every nonempty open subset of $Z$.
-::: {.proof}
+
+::: pf-proof
+
 Let $W\subseteq Z$ be nonempty and open, and choose $Q\in W$.  Write
 \[
 W=V\cap Z
@@ -176,13 +217,18 @@ for some open $V\subseteq X$ containing $Q$.  Since
 \[
 Q\in Z=\overline{\{P\}},
 \]
-step <1>2 says every neighborhood of $Q$ in $X$, in particular $V$, contains $P$.  Since $P\in Z$ as well,
+step [](#s2){.pf-ref} says every neighborhood of $Q$ in $X$, in particular $V$, contains $P$.  Since $P\in Z$ as well,
 \[
 P\in V\cap Z=W.
 \]
+
 :::
 
-<1>7. Let
+:::
+
+::: {.pf-step #s7}
+
+Let
 \[
 i:Z\hookrightarrow X
 \]
@@ -190,7 +236,9 @@ be the inclusion and let $\underline A_Z$ be the constant sheaf with value $A$ o
 \[
 \boxed{i_*\underline A_Z\cong i_P(A).}
 \]
-::: {.proof}
+
+::: pf-proof
+
 For an open $U\subseteq X$,
 \[
 (i_*\underline A_Z)(U)
@@ -201,7 +249,7 @@ If $P\in U$, then
 \[
 U\cap Z
 \]
-is a nonempty open subset of $Z$.  By <1>6 it contains the generic point $P$, and $Z$ is irreducible because it is the closure of one point.  Hence the constant sheaf has
+is a nonempty open subset of $Z$.  By step [](#s6){.pf-ref} it contains the generic point $P$, and $Z$ is irreducible because it is the closure of one point.  Hence the constant sheaf has
 \[
 \underline A_Z(U\cap Z)=A.
 \]
@@ -210,7 +258,7 @@ If $P\notin U$, then
 \[
 U\cap Z=\varnothing.
 \]
-Indeed, if $Q\in U\cap Z$, then $Q\in\overline{\{P\}}$, so <1>2 would force the neighborhood $U$ of $Q$ to contain $P$, contradiction.  Hence
+Indeed, if $Q\in U\cap Z$, then $Q\in\overline{\{P\}}$, so step [](#s2){.pf-ref} would force the neighborhood $U$ of $Q$ to contain $P$, contradiction.  Hence
 \[
 \underline A_Z(U\cap Z)=0.
 \]
@@ -225,10 +273,17 @@ A,&P\in U,\\
 \end{cases}
 \]
 with exactly the same restriction maps as $i_P(A)$.  The two sheaves are canonically isomorphic.
+
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Step <1>5 gives the stalk calculation, and <1>7 gives the pushforward description.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the stalk calculation, and step [](#s7){.pf-ref} gives the pushforward description.
+
+:::
+
+:::
+
 :::

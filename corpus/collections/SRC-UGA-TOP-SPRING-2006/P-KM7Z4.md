@@ -32,7 +32,12 @@ Find, with proof, all subspaces $Z$ of $Y$ which are retracts of $Y$.
 :::
 
 ::: {.solution}
-<1>1. The retracts are precisely the sets
+
+::: pf
+
+::: {.pf-step #s1}
+
+The retracts are precisely the sets
 \[
 [a,b]\qquad(0\le a\le b<\infty)
 \]
@@ -41,12 +46,21 @@ and
 [a,\infty)\qquad(a\ge0).
 \]
 Thus singletons occur when $a=b$, and $Y$ itself occurs when $a=0$ in the second family.
-::: {.proof}
-Steps <1>2--<1>4 show that every retract has one of these forms, and steps <1>5--<1>6 construct retractions onto every set in the list.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} show that every retract has one of these forms, and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} construct retractions onto every set in the list.
+
 :::
 
-<1>2. Every retract $Z\subseteq Y$ is closed in $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Every retract $Z\subseteq Y$ is closed in $Y$.
+
+::: pf-proof
+
 Let
 \[
 r:Y\to Z
@@ -62,44 +76,85 @@ Hence
 Z=(e,\operatorname{id}_Y)^{-1}(\Delta_Y)
 \]
 is closed in $Y$.
+
 :::
 
-<1>3. Every retract $Z\subseteq Y$ is connected.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every retract $Z\subseteq Y$ is connected.
+
+::: pf-proof
+
 The space $Y=[0,\infty)$ is connected, and
 \[
 Z=r(Y)
 \]
 is connected as the continuous image of a connected space.
+
 :::
 
-<1>4. Every retract $Z\subseteq Y$ has one of the forms listed in <1>1.
-::: {.proof}
-By <1>3, $Z$ is a nonempty connected subset of $\RR$, hence an interval.
-By <1>2 it is closed in the subspace $Y=[0,\infty)$.
+:::
+
+::: {.pf-step #s4}
+
+Every retract $Z\subseteq Y$ has one of the forms listed in step [](#s1){.pf-ref}.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $Z$ is a nonempty connected subset of $\RR$, hence an interval.
+By step [](#s2){.pf-ref} it is closed in the subspace $Y=[0,\infty)$.
 The nonempty closed intervals in $Y$ are exactly the bounded intervals $[a,b]$ with $0\le a\le b<\infty$ and the rays $[a,\infty)$ with $a\ge0$.
+
 :::
 
-<1>5. Every bounded interval $[a,b]$ listed in <1>1 is a retract of $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Every bounded interval $[a,b]$ listed in step [](#s1){.pf-ref} is a retract of $Y$.
+
+::: pf-proof
+
 Define
 \[
 r(x)=\min\{b,\max\{a,x\}\}.
 \]
 This is continuous, takes values in $[a,b]$, and restricts to the identity on $[a,b]$.
+
 :::
 
-<1>6. Every ray $[a,\infty)$ listed in <1>1 is a retract of $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+Every ray $[a,\infty)$ listed in step [](#s1){.pf-ref} is a retract of $Y$.
+
+::: pf-proof
+
 Define
 \[
 r(x)=\max\{a,x\}.
 \]
 Again $r$ is continuous, has image in $Z$, and satisfies $r|_Z=\operatorname{id}_Z$.
+
 :::
 
-<1>7. The classification in <1>1 is complete.
-::: {.proof}
-Necessity is <1>4 and sufficiency is <1>5--<1>6.
 :::
+
+::: pf-step
+
+The classification in step [](#s1){.pf-ref} is complete.
+
+::: pf-proof
+
+Necessity is step [](#s4){.pf-ref} and sufficiency is steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

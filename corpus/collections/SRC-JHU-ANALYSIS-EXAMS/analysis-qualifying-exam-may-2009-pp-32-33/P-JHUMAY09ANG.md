@@ -33,18 +33,32 @@ Let $1\le p<\infty$ and suppose $f_n\to f$ in $L^p([0,1])$.
 :::
 
 ::: {.solution}
-<1>1. Convergence in measure.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Convergence in measure.
+
+::: pf-proof
+
 Fix $\varepsilon>0$. By Chebyshev's inequality,
 \[
 \mu\{|f_n-f|\ge\varepsilon\}
 \le \frac1{\varepsilon^p}\int_0^1|f_n-f|^p\,dx.
 \]
 The right-hand side tends to $0$ because $f_n\to f$ in $L^p$. Hence $f_n\to f$ in measure.
+
 :::
 
-<1>2. An almost-everywhere convergent subsequence.
-::: {.proof}
+:::
+
+::: pf-step
+
+An almost-everywhere convergent subsequence.
+
+::: pf-proof
+
 Choose a subsequence $(f_{n_k})$ such that
 \[
 \|f_{n_k}-f\|_p^p\le2^{-k}.
@@ -64,5 +78,11 @@ for almost every $x$. Therefore its terms tend to zero, so
 f_{n_k}(x)\longrightarrow f(x)
 \]
 for almost every $x\in[0,1]$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -52,7 +52,11 @@ $$
 a=\sqrt2\,\abs{\sin u}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \sqrt{1-y(h)}
 =
@@ -61,7 +65,8 @@ $$
 a.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 1-y(h)
@@ -76,9 +81,14 @@ $$
 =
 \sqrt2\,\abs{\sin(2\pi h)}.
 $$
+
 :::
 
-<1>2. Hence
+:::
+
+::: {.pf-step #s2}
+
+Hence
 $$
 f(y(h))
 =
@@ -87,8 +97,9 @@ f(y(h))
 2-2a+\frac{2a^2}{1+a}.
 $$
 
-::: {.proof}
-Step <1>1 gives the first equality. For the second,
+::: pf-proof
+
+Step [](#s1){.pf-ref} gives the first equality. For the second,
 $$
 \begin{aligned}
 \frac2{1+a}-(2-2a)
@@ -98,9 +109,14 @@ $$
 \frac{2a^2}{1+a}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. For every real $u$,
+:::
+
+::: {.pf-step #s3}
+
+For every real $u$,
 $$
 \abs{
 \abs{\sin u}-\abs u
@@ -109,7 +125,8 @@ $$
 \frac{\abs u^3}{6}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The reverse triangle inequality gives
 $$
 \abs{
@@ -125,9 +142,14 @@ $$
 \frac{\abs u^3}{6},
 $$
 because the third derivative of $\sin$ has absolute value at most $1$.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 -2a
 =
@@ -142,7 +164,8 @@ $$
 \frac{\sqrt2}{3}(2\pi)^3\abs h^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 a=\sqrt2\,\abs{\sin u},
@@ -172,7 +195,7 @@ R_1(h)
 \abs{\sin u}-\abs u
 \right).
 $$
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 \abs{R_1(h)}
 \leq
@@ -180,9 +203,14 @@ $$
 =
 \frac{\sqrt2}{3}(2\pi)^3\abs h^3.
 $$
+
 :::
 
-<1>5. The second remainder term in step <1>2 satisfies
+:::
+
+::: {.pf-step #s5}
+
+The second remainder term in step [](#s2){.pf-ref} satisfies
 $$
 0
 \leq
@@ -191,7 +219,8 @@ $$
 16\pi^2 h^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $a\geq0$,
 $$
 \frac{2a^2}{1+a}
@@ -212,9 +241,14 @@ $$
 =
 16\pi^2h^2.
 $$
+
 :::
 
-<1>6. There is a constant $C>0$ such that for all sufficiently small
+:::
+
+::: {.pf-step #s6}
+
+There is a constant $C>0$ such that for all sufficiently small
 $h$,
 $$
 \abs{
@@ -228,8 +262,9 @@ f(y(h))
 Ch^2.
 $$
 
-::: {.proof}
-Combining steps <1>2, <1>4, and <1>5 gives
+::: pf-proof
+
+Combining steps [](#s2){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} gives
 $$
 f(y(h))
 -
@@ -241,13 +276,13 @@ R_1(h)
 +
 \frac{2a^2}{1+a}.
 $$
-For $\abs h\leq1$, step <1>4 gives
+For $\abs h\leq1$, step [](#s4){.pf-ref} gives
 $$
 \abs{R_1(h)}
 \leq
 \frac{\sqrt2}{3}(2\pi)^3h^2,
 $$
-and step <1>5 gives
+and step [](#s5){.pf-ref} gives
 $$
 \frac{2a^2}{1+a}
 \leq
@@ -261,9 +296,14 @@ C
 +
 16\pi^2.
 $$
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{
 f(y(h))
@@ -275,14 +315,21 @@ O(h^2)
 $$
 as $h\to0$.
 
-::: {.proof}
-Step <1>6 is exactly the stated $O(h^2)$ estimate, with an explicit
+::: pf-proof
+
+Step [](#s6){.pf-ref} is exactly the stated $O(h^2)$ estimate, with an explicit
 constant bounding the remainder divided by $h^2$ near $0$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required asymptotic formula.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required asymptotic formula.
+
+:::
+
+:::
+
 :::

@@ -22,23 +22,41 @@ audit:
 Show that the set \( \ts{ u_k(j) \da \delta_{kj} } \subseteq \ell^2(\ZZ) \) forms an orthonormal system.
 :::
 ::: {.solution}
-<1>1. $u_k = (\delta_{kj})_{j \in \ZZ}$ lies in $\ell^2(\ZZ)$ and $\|u_k\|_2 = 1$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$u_k = (\delta_{kj})_{j \in \ZZ}$ lies in $\ell^2(\ZZ)$ and $\|u_k\|_2 = 1$.
+
+::: pf-proof
+
 Exactly one entry of $u_k$, at $j = k$, is nonzero, and it equals $1$, so $\|u_k\|_2^2 = \sum_j |\delta_{kj}|^2 = 1$.
+
 :::
 
-<1>2. $\inner{u_k}{u_m} = 0$ for $k \neq m$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\inner{u_k}{u_m} = 0$ for $k \neq m$.
+
+::: pf-proof
+
 $\inner{u_k}{u_m} = \sum_j \delta_{kj}\delta_{mj}$, and each term vanishes because $j$ cannot equal both $k$ and $m$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Steps <1>1 and <1>2 are the two conditions for $\theset{u_k}_{k \in \ZZ}$ to be orthonormal.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are the two conditions for $\theset{u_k}_{k \in \ZZ}$ to be orthonormal.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

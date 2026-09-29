@@ -72,18 +72,38 @@ Define
 \varepsilon=0.
 \]
 
-<1>1. Both rows are exact.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Both rows are exact.
+
+::: pf-proof
+
 In the upper row, exactness is immediate at the zero groups, while at the two copies of $\mathbb Z$ it follows because the middle map is the identity. In the lower row the same argument applies to the identity map $\mathbb Z\to\mathbb Z$.
+
 :::
 
-<1>2. The diagram commutes.
-::: {.proof}
+:::
+
+::: pf-step
+
+The diagram commutes.
+
+::: pf-proof
+
 Every square involving one of $\alpha,\beta,\delta,\varepsilon$ has both composites equal to zero. For the square containing $\gamma$, the upper map into $C$ is the zero map $0\to\mathbb Z$, so both composites there are zero; for the square leaving $C$, the lower map $C'\to D'$ is zero, so both composites are again zero.
+
 :::
 
-<1>3. The four outer vertical maps are zero but the middle map is nonzero.
-::: {.proof}
+:::
+
+::: pf-step
+
+The four outer vertical maps are zero but the middle map is nonzero.
+
+::: pf-proof
+
 By construction
 \[
 \alpha=\beta=\delta=\varepsilon=0,
@@ -92,6 +112,11 @@ whereas
 \[
 \gamma=\operatorname{id}_{\mathbb Z}\ne0.
 \]
+
+:::
+
+:::
+
 :::
 
 This gives the requested example using only the groups $\mathbb Z$ and $0$.

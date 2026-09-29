@@ -59,8 +59,15 @@ Prove that $P/\Phi(P)$ is an elementary abelian $p$-group and that $\Phi(P)$ is 
 :::
 
 ::: {.solution}
-<1>1. Every automorphism of $G$ permutes the maximal subgroups of $G$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every automorphism of $G$ permutes the maximal subgroups of $G$.
+
+::: pf-proof
+
 Let $\alpha\in\operatorname{Aut}(G)$ and let $M<G$ be maximal.
 If
 \[
@@ -73,11 +80,18 @@ M<\alpha^{-1}(K)<G,
 contradicting maximality of $M$.
 Hence $\alpha(M)$ is maximal.
 Applying the same argument to $\alpha^{-1}$ shows that the induced map on maximal subgroups is a permutation.
+
 :::
 
-<1>2. The subgroup $\Phi(G)$ is characteristic in $G$.
-::: {.proof}
-By <1>1, for every $\alpha\in\operatorname{Aut}(G)$,
+:::
+
+::: {.pf-step #s2}
+
+The subgroup $\Phi(G)$ is characteristic in $G$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, for every $\alpha\in\operatorname{Aut}(G)$,
 \[
 \alpha(\Phi(G))
   =\alpha\left(\bigcap_{M\text{ maximal}}M\right)
@@ -85,13 +99,20 @@ By <1>1, for every $\alpha\in\operatorname{Aut}(G)$,
   =\Phi(G).
 \]
 This proves part (a).
+
 :::
 
-<1>3. Frattini's argument: if $N\trianglelefteq G$ and $S\in\operatorname{Syl}_p(N)$, then
+:::
+
+::: {.pf-step #s3}
+
+Frattini's argument: if $N\trianglelefteq G$ and $S\in\operatorname{Syl}_p(N)$, then
 \[
 G=N\,N_G(S).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $g\in G$.
 Since $N\trianglelefteq G$, the subgroup
 \[
@@ -111,17 +132,24 @@ and therefore
 g=n^{-1}(ng)\in N\,N_G(S).
 \]
 Hence $G=N\,N_G(S)$.
+
 :::
 
-<1>4. Every Sylow subgroup of $\Phi(G)$ is normal in $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every Sylow subgroup of $\Phi(G)$ is normal in $G$.
+
+::: pf-proof
+
 Set
 \[
 F=\Phi(G).
 \]
-By <1>2, $F\trianglelefteq G$.
+By step [](#s2){.pf-ref}, $F\trianglelefteq G$.
 Let $S\in\operatorname{Syl}_p(F)$.
-Frattini's argument <1>3 gives
+Frattini's argument step [](#s3){.pf-ref} gives
 \[
 G=F\,N_G(S).
 \]
@@ -142,10 +170,17 @@ Hence
 N_G(S)=G,
 \]
 so $S\trianglelefteq G$.
+
 :::
 
-<1>5. A finite group in which every Sylow subgroup is normal is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+A finite group in which every Sylow subgroup is normal is nilpotent.
+
+::: pf-proof
+
 Let $K$ be such a group and choose one Sylow subgroup $S_p$ for each prime $p\mid |K|$.
 If $p\ne q$, normality gives
 \[
@@ -180,20 +215,34 @@ Finally, lower central series commute with finite direct products:
 \gamma_i(A\times B)=\gamma_i(A)\times\gamma_i(B).
 \]
 Therefore a finite direct product of nilpotent groups is nilpotent, so $K$ is nilpotent.
+
 :::
 
-<1>6. The Frattini subgroup $\Phi(G)$ is nilpotent.
-::: {.proof}
-By <1>4, every Sylow subgroup of $\Phi(G)$ is normal in $G$, hence also normal in $\Phi(G)$.
-Apply <1>5 to the finite group $\Phi(G)$.
+:::
+
+::: {.pf-step #s6}
+
+The Frattini subgroup $\Phi(G)$ is nilpotent.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, every Sylow subgroup of $\Phi(G)$ is normal in $G$, hence also normal in $\Phi(G)$.
+Apply step [](#s5){.pf-ref} to the finite group $\Phi(G)$.
 This proves part (b).
+
 :::
 
-<1>7. If $P$ is a finite $p$-group and $H<P$, then
+:::
+
+::: {.pf-step #s7}
+
+If $P$ is a finite $p$-group and $H<P$, then
 \[
 H<N_P(H).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $H$ act by left multiplication on the finite set $P/H$ of left cosets.
 Every orbit has size a power of $p$.
 Since $H<P$,
@@ -220,11 +269,18 @@ Since this index is positive, it is at least $p$, so
 \[
 H<N_P(H).
 \]
+
 :::
 
-<1>8. Every maximal subgroup $M$ of a finite $p$-group $P$ is normal and has index $p$.
-::: {.proof}
-By <1>7,
+:::
+
+::: {.pf-step #s8}
+
+Every maximal subgroup $M$ of a finite $p$-group $P$ is normal and has index $p$.
+
+::: pf-proof
+
+By step [](#s7){.pf-ref},
 \[
 M<N_P(M)\le P.
 \]
@@ -241,17 +297,24 @@ Every nontrivial finite $p$-group has a subgroup of order $p$, so this is possib
 |P/M|=p.
 \]
 Thus $[P:M]=p$.
+
 :::
 
-<1>9. For a finite $p$-group $P$,
+:::
+
+::: {.pf-step #s9}
+
+For a finite $p$-group $P$,
 \[
 [P,P]\le\Phi(P)
 \qquad\text{and}\qquad
 x^p\in\Phi(P)\quad\text{for every }x\in P.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $M$ be any maximal subgroup of $P$.
-By <1>8,
+By step [](#s8){.pf-ref},
 \[
 P/M\cong C_p.
 \]
@@ -272,21 +335,35 @@ and
 x^p\in\Phi(P)
 \]
 for every $x\in P$.
+
 :::
 
-<1>10. The quotient $P/\Phi(P)$ is an elementary abelian $p$-group.
-::: {.proof}
-By <1>9, the quotient is abelian and every element has order dividing $p$.
+:::
+
+::: {.pf-step #s10}
+
+The quotient $P/\Phi(P)$ is an elementary abelian $p$-group.
+
+::: pf-proof
+
+By step [](#s9){.pf-ref}, the quotient is abelian and every element has order dividing $p$.
 It is finite because $P$ is finite.
 Hence it is a finite-dimensional vector space over $\mathbb F_p$, equivalently a finite direct product of copies of $C_p$.
 Thus $P/\Phi(P)$ is elementary abelian.
+
 :::
 
-<1>11. If $N\trianglelefteq P$ and $P/N$ is elementary abelian, then
+:::
+
+::: {.pf-step #s11}
+
+If $N\trianglelefteq P$ and $P/N$ is elementary abelian, then
 \[
 \Phi(P)\le N.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Set
 \[
 V=P/N.
@@ -315,17 +392,31 @@ Therefore
   =\pi^{-1}(0)
   =N.
 \]
+
 :::
 
-<1>12. The subgroup $\Phi(P)$ is the unique smallest normal subgroup $N\trianglelefteq P$ for which $P/N$ is elementary abelian.
-::: {.proof}
-By <1>2, $\Phi(P)$ is characteristic in $P$, hence normal, and by <1>10 its quotient is elementary abelian.
-By <1>11, every normal subgroup $N$ with elementary abelian quotient contains $\Phi(P)$.
+:::
+
+::: {.pf-step #s12}
+
+The subgroup $\Phi(P)$ is the unique smallest normal subgroup $N\trianglelefteq P$ for which $P/N$ is elementary abelian.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $\Phi(P)$ is characteristic in $P$, hence normal, and by step [](#s10){.pf-ref} its quotient is elementary abelian.
+By step [](#s11){.pf-ref}, every normal subgroup $N$ with elementary abelian quotient contains $\Phi(P)$.
 This proves the claimed minimality and uniqueness, completing part (c).
+
 :::
 
-<1>13. Q.E.D.
-::: {.proof}
-Parts (a), (b), and (c) are <1>2, <1>6, and <1>12.
 :::
+
+::: pf-qed
+
+Parts (a), (b), and (c) are steps [](#s2){.pf-ref}, [](#s6){.pf-ref} and [](#s12){.pf-ref}.
+
+:::
+
+:::
+
 :::

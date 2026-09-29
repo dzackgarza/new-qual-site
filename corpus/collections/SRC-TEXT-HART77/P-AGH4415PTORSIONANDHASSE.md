@@ -48,10 +48,15 @@ V=\widehat{F'}:X\longrightarrow X_p
 $$
 be its dual.
 
-<1>1. Under the identifications of an elliptic curve with its Jacobian, the
+::: pf
+
+::: {.pf-step #s1}
+
+Under the identifications of an elliptic curve with its Jacobian, the
 map $V$ is the morphism of Jacobians induced by pullback along $F'$.
 
-::: {.proof}
+::: pf-proof
+
 Exercise IV.4.7 defines the dual of a morphism
 $$
 f:Y\longrightarrow Z
@@ -62,9 +67,14 @@ f^*:\Pic^0(Z)\longrightarrow\Pic^0(Y),
 $$
 after identifying each elliptic curve with its degree-zero Picard variety.
 Applying this to $F'$ gives exactly the assertion.
+
 :::
 
-<1>2. The tangent map of $V$ at the origin identifies with
+:::
+
+::: {.pf-step #s2}
+
+The tangent map of $V$ at the origin identifies with
 $$
 (F')^*:
 H^1(X,\OO_X)
@@ -72,22 +82,29 @@ H^1(X,\OO_X)
 H^1(X_p,\OO_{X_p}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Remark IV.4.10.7 identifies the Zariski tangent space at the origin of the
 Jacobian of a curve $Y$ with
 $$
 T_0\Pic^0(Y)\cong H^1(Y,\OO_Y).
 $$
-This identification is functorial for pullback of line bundles. By step <1>1,
+This identification is functorial for pullback of line bundles. By step [](#s1){.pf-ref},
 $V$ is precisely the pullback map on the two Jacobians, so its differential
 at the origin is $(F')^*$ on $H^1(\OO)$.
+
 :::
 
-<1>3. The dual Frobenius $V$ is separable if and only if the Hasse invariant
+:::
+
+::: {.pf-step #s3}
+
+The dual Frobenius $V$ is separable if and only if the Hasse invariant
 of $X$ is $1$.
 
-::: {.proof}
-The map in step <1>2 is the $k$-linear form of the Frobenius action
+::: pf-proof
+
+The map in step [](#s2){.pf-ref} is the $k$-linear form of the Frobenius action
 $$
 F^*:H^1(X,\OO_X)\longrightarrow H^1(X,\OO_X)
 $$
@@ -98,7 +115,7 @@ nonzero.
 An isogeny between smooth curves is separable exactly when its differential
 is nonzero. For a group homomorphism it suffices to test the differential at
 the origin, because translations identify all tangent maps. Therefore, by
-step <1>2,
+step [](#s2){.pf-ref},
 $$
 V\text{ is separable}
 \iff
@@ -109,52 +126,70 @@ F^*\ne0
 \operatorname{Hasse}(X)=1.
 $$
 This proves the first assertion.
+
 :::
 
-<1>4. The Frobenius $F'$ has degree $p$, and Exercise IV.4.7 gives
+:::
+
+::: {.pf-step #s4}
+
+The Frobenius $F'$ has degree $p$, and Exercise IV.4.7 gives
 $$
 \boxed{
 F'\circ V=[p]_X.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The $k$-linear Frobenius is purely inseparable of degree $p$. Exercise
 IV.4.7(c), applied to $F'$, says that composition with the dual is
 multiplication by the degree, hence
 $$
 F'\circ\widehat{F'}=[p]_X.
 $$
+
 :::
 
-<1>5. The geometric $p$-torsion points of $X$ are exactly the geometric
+:::
+
+::: {.pf-step #s5}
+
+The geometric $p$-torsion points of $X$ are exactly the geometric
 kernel points of $V$:
 $$
 \boxed{X[p](k)=\ker V(k).}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The inclusion
 $$
 \ker V(k)\subseteq X[p](k)
 $$
-follows immediately from step <1>4.
+follows immediately from step [](#s4){.pf-ref}.
 
-Conversely, let $P\in X[p](k)$. Then step <1>4 gives
+Conversely, let $P\in X[p](k)$. Then step [](#s4){.pf-ref} gives
 $$
 F'(V(P))=[p](P)=0.
 $$
 The Frobenius $F'$ is radicial, so its geometric kernel has only the identity
 point. Hence $V(P)=0$, proving the reverse inclusion.
+
 :::
 
-<1>6. If the Hasse invariant is $1$, then
+:::
+
+::: {.pf-step #s6}
+
+If the Hasse invariant is $1$, then
 $$
 \boxed{X[p](k)\cong\ZZ/p\ZZ.}
 $$
 
-::: {.proof}
-By step <1>3, $V$ is separable. Exercise IV.4.7(f) gives
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $V$ is separable. Exercise IV.4.7(f) gives
 $$
 \deg V=\deg F'=p.
 $$
@@ -163,30 +198,42 @@ degree, so
 $$
 \#\ker V(k)=p.
 $$
-By step <1>5 this is $X[p](k)$. A group of prime order is cyclic, hence
+By step [](#s5){.pf-ref} this is $X[p](k)$. A group of prime order is cyclic, hence
 $$
 X[p](k)\cong\ZZ/p\ZZ.
 $$
+
 :::
 
-<1>7. If the Hasse invariant is $0$, then
+:::
+
+::: {.pf-step #s7}
+
+If the Hasse invariant is $0$, then
 $$
 \boxed{X[p](k)=0.}
 $$
 
-::: {.proof}
-By step <1>3, $V$ is inseparable. Since $\deg V=p$ is prime, its inseparable
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $V$ is inseparable. Since $\deg V=p$ is prime, its inseparable
 degree is $p$ and its separable degree is $1$. Thus its geometric kernel has
-only the identity point. Step <1>5 now gives
+only the identity point. Step [](#s5){.pf-ref} now gives
 $$
 X[p](k)=\ker V(k)=\{0\}.
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the separability criterion, while steps <1>6--<1>7 give the
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves the separability criterion, while steps [](#s6){.pf-ref} and [](#s7){.pf-ref} give the
 two possible groups of $p$-torsion points.
+
 :::
+
+:::
+
 :::

@@ -32,12 +32,19 @@ Show that this need not be a closed subset.
 :::
 
 ::: {.solution}
-<1>1. The complement of the support of a section is open:
+
+::: pf
+
+::: {.pf-step #s1}
+
+The complement of the support of a section is open:
 \[
 U\setminus\operatorname{supp}s
 =\{P\in U:s_P=0\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $P\in U$ satisfy
 \[
 s_P=0
@@ -59,18 +66,32 @@ Thus
 V\subseteq U\setminus\operatorname{supp}s.
 \]
 Every point of the complement has an open neighborhood contained in the complement, so the complement is open.
+
 :::
 
-<1>2. Hence
+:::
+
+::: {.pf-step #s2}
+
+Hence
 \[
 \boxed{\operatorname{supp}s\text{ is closed in }U.}
 \]
-::: {.proof}
-This is exactly the conclusion of <1>1.
+
+::: pf-proof
+
+This is exactly the conclusion of step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The support of a sheaf need not be closed.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The support of a sheaf need not be closed.
+
+::: pf-proof
+
 Take
 \[
 X=\mathbb A^1_{\mathbb C}
@@ -117,21 +138,35 @@ This subset is infinite.  Every proper Zariski-closed subset of $\mathbb A^1_{\m
 \{1,2,3,\ldots\}
 \]
 is Zariski dense but is not all of $X$.  It is therefore not closed.
+
 :::
 
-<1>4. Thus there is a genuine distinction:
+:::
+
+::: {.pf-step #s4}
+
+Thus there is a genuine distinction:
 \[
 \boxed{
 \operatorname{supp}s\text{ is always closed, whereas }
 \operatorname{supp}\mcf\text{ need not be closed}.
 }
 \]
-::: {.proof}
-The first assertion is <1>2 and the second is the example in <1>3.
+
+::: pf-proof
+
+The first assertion is step [](#s2){.pf-ref} and the second is the example in step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>4 is exactly the pair of assertions requested.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is exactly the pair of assertions requested.
+
+:::
+
+:::
+
 :::

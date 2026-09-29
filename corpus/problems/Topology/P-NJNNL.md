@@ -30,8 +30,15 @@ Prove that if $X$ is **compact**, then $(X, d)$ is **complete** (every Cauchy se
 :::
 
 ::: {.solution}
-<1>1. If $X$ is compact and $f:X\to Y$ is continuous, then $f(X)$ is compact.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $X$ is compact and $f:X\to Y$ is continuous, then $f(X)$ is compact.
+
+::: pf-proof
+
 Let $\{V_\alpha\}$ be an open cover of $f(X)$. Then $\{f^{-1}(V_\alpha)\}$ is an open cover of $X$. Compactness gives finitely many indices $\alpha_1,\dots,\alpha_r$ with
 $$
 X=\bigcup_{j=1}^r f^{-1}(V_{\alpha_j}).
@@ -41,10 +48,17 @@ $$
 f(X)\subseteq\bigcup_{j=1}^r V_{\alpha_j},
 $$
 so the original cover has a finite subcover.
+
 :::
 
-<1>2. Every compact metric space is complete.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every compact metric space is complete.
+
+::: pf-proof
+
 Let $(x_n)$ be Cauchy in compact metric $X$. Compact metric spaces are sequentially compact, so some subsequence $x_{n_k}$ converges to a point $x\in X$.
 
 Given $\varepsilon>0$, choose $N$ so that
@@ -56,5 +70,11 @@ $$
 d(x_n,x)\le d(x_n,x_{n_k})+d(x_{n_k},x)<\varepsilon.
 $$
 Thus $x_n\to x$, so every Cauchy sequence converges in $X$.
+
 :::
+
+:::
+
+:::
+
 :::

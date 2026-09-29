@@ -34,8 +34,14 @@ Let
 \Gamma:=\{(x,f(x)):x\in\mathbb R\}\subset\mathbb R^2.
 \]
 
-<1>1. The graph $\Gamma$ is Lebesgue measurable.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The graph $\Gamma$ is Lebesgue measurable.
+
+::: pf-proof
+
 The map
 \[
 F:\mathbb R^2\to\mathbb R,
@@ -47,10 +53,17 @@ is Lebesgue measurable because $(x,y)\mapsto y$ is continuous and $(x,y)\mapsto 
 \Gamma=F^{-1}(\{0\})
 \]
 is Lebesgue measurable.
+
 :::
 
-<1>2. Every vertical section of $\Gamma$ has one-dimensional measure zero.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every vertical section of $\Gamma$ has one-dimensional measure zero.
+
+::: pf-proof
+
 For fixed $x\in\mathbb R$,
 \[
 \Gamma_x:=\{y\in\mathbb R:(x,y)\in\Gamma\}=\{f(x)\}.
@@ -59,10 +72,17 @@ Therefore
 \[
 m_1(\Gamma_x)=0.
 \]
+
 :::
 
-<1>3. Apply Tonelli's theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Tonelli's theorem.
+
+::: pf-proof
+
 Since $\mathbf1_\Gamma\ge0$ is measurable, Tonelli's theorem gives
 \[
 \begin{aligned}
@@ -77,5 +97,11 @@ Thus
 \[
 \boxed{m_2(\Gamma)=0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

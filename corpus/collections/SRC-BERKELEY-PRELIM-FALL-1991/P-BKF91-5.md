@@ -30,16 +30,27 @@ Prove that $f^{(n+1)}(x)=0$ for some $x\in(0,1)$.
 :::
 
 ::: {.solution}
-<1>1. There exists $x_1\in(0,1)$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+There exists $x_1\in(0,1)$ such that
 $$
 f'(x_1)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The hypotheses give $f(0)=f(1)=0$. Rolle's theorem applied to $f$ on $[0,1]$ gives such a point $x_1$.
+
 :::
 
-<1>2. Suppose $1\le k\le n$ and there exists $x_k\in(0,1)$ such that
+:::
+
+::: {.pf-step #s2}
+
+Suppose $1\le k\le n$ and there exists $x_k\in(0,1)$ such that
 $$
 f^{(k)}(x_k)=0.
 $$
@@ -48,7 +59,8 @@ $$
 f^{(k+1)}(x_{k+1})=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By hypothesis,
 $$
 f^{(k)}(0)=0,
@@ -57,15 +69,21 @@ and by assumption $f^{(k)}(x_k)=0$. Rolle's theorem applied to $f^{(k)}$ on $[0,
 $$
 (f^{(k)})'(x_{k+1})=f^{(k+1)}(x_{k+1})=0.
 $$
+
 :::
 
-<1>3. There exists $x_{n+1}\in(0,1)$ such that
+:::
+
+::: {.pf-step #s3}
+
+There exists $x_{n+1}\in(0,1)$ such that
 $$
 f^{(n+1)}(x_{n+1})=0.
 $$
 
-::: {.proof}
-Step <1>1 supplies $x_1$. Apply step <1>2 successively for
+::: pf-proof
+
+Step [](#s1){.pf-ref} supplies $x_1$. Apply step [](#s2){.pf-ref} successively for
 $$
 k=1,2,\ldots,n.
 $$
@@ -74,11 +92,17 @@ $$
 0<x_{n+1}<x_n<\cdots<x_1<1
 $$
 and $f^{(n+1)}(x_{n+1})=0$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the required point in $(0,1)$.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required point in $(0,1)$.
+
+:::
+
+:::
+
 :::

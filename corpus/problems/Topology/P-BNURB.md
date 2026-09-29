@@ -23,61 +23,143 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Decomposition of the Klein bottle into two Möbius bands:
-<2>1. The Klein bottle $K$ is homeomorphic to the union of two Möbius bands $M_1$ and $M_2$ glued along their boundary circles:
+
+::: pf
+
+::: pf-step
+
+Decomposition of the Klein bottle into two Möbius bands:
+
+::: pf-proof
+
+::: pf-step
+
+The Klein bottle $K$ is homeomorphic to the union of two Möbius bands $M_1$ and $M_2$ glued along their boundary circles:
 \[
 K = M_1 \cup_\partial M_2.
 \]
 Slightly thicken $M_1$ and $M_2$ to open sets $U, V \subset K$.
-::: {.proof}
+
+::: pf-proof
+
 standard decomposition of the Klein bottle.
+
 :::
-<2>2. The homotopy types of the pieces are:
+
+:::
+
+::: pf-step
+
+The homotopy types of the pieces are:
 - $U \simeq S^1$ (core circle $a$ of $M_1$), so $H_0(U) \cong \mathbb{Z}$, $H_1(U) \cong \mathbb{Z} \langle a \rangle$, and $H_k(U) = 0$ for $k \ge 2$.
 - $V \simeq S^1$ (core circle $b$ of $M_2$), so $H_0(V) \cong \mathbb{Z}$, $H_1(V) \cong \mathbb{Z} \langle b \rangle$, and $H_k(V) = 0$ for $k \ge 2$.
 - $U \cap V \simeq S^1$ (the common boundary circle $\gamma$), so $H_0(U \cap V) \cong \mathbb{Z}$, $H_1(U \cap V) \cong \mathbb{Z} \langle \gamma \rangle$, and $H_k(U \cap V) = 0$ for $k \ge 2$.
-::: {.proof}
+
+::: pf-proof
+
 deformation retract of Möbius band onto its core circle and collar neighborhood onto boundary.
+
 :::
 
-<1>2. Inclusion homomorphisms on homology:
-<2>1. The boundary circle of a Möbius band traverses its core circle twice:
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+Inclusion homomorphisms on homology:
+
+::: pf-proof
+
+::: pf-step
+
+The boundary circle of a Möbius band traverses its core circle twice:
 The inclusion $i_1: U \cap V \to U$ induces $(i_1)_*: H_1(U \cap V) \to H_1(U)$ with $(i_1)_*([\gamma]) = 2[a]$.
 Similarly, the inclusion $i_2: U \cap V \to V$ induces $(i_2)_*: H_1(U \cap V) \to H_1(V)$ with $(i_2)_*([\gamma]) = 2[b]$.
-::: {.proof}
+
+::: pf-proof
+
 degree 2 wrapping of the boundary circle around the core of a Möbius band.
+
 :::
-<2>2. In the Mayer–Vietoris sequence, the map $\Phi_1 = ((i_1)_*, -(i_2)_*): H_1(U \cap V) \to H_1(U) \oplus H_1(V)$ is given by:
+
+:::
+
+::: pf-step
+
+In the Mayer–Vietoris sequence, the map $\Phi_1 = ((i_1)_*, -(i_2)_*): H_1(U \cap V) \to H_1(U) \oplus H_1(V)$ is given by:
 \[
 \Phi_1: \mathbb{Z} \to \mathbb{Z} \oplus \mathbb{Z}, \qquad 1 \mapsto (2, -2).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Mayer–Vietoris homomorphism definition.
+
 :::
 
-<1>3. Computation of homology groups via Mayer–Vietoris:
-<2>1. The Mayer–Vietoris sequence is:
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+Computation of homology groups via Mayer–Vietoris:
+
+::: pf-proof
+
+::: pf-step
+
+The Mayer–Vietoris sequence is:
 \[
 0 \to H_2(K) \xrightarrow{\partial_*} H_1(U \cap V) \xrightarrow{\Phi_1} H_1(U) \oplus H_1(V) \xrightarrow{\Psi_1} H_1(K) \xrightarrow{\partial_*} H_0(U \cap V) \xrightarrow{\Phi_0} H_0(U) \oplus H_0(V) \to H_0(K) \to 0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Mayer–Vietoris long exact sequence.
+
 :::
-<2>2. **Second homology $H_2(K)$:**
+
+:::
+
+::: pf-step
+
+**Second homology $H_2(K)$:**
 Since $\Phi_1(n) = (2n, -2n) = (0, 0) \iff n = 0$, $\Phi_1$ is injective ($\ker \Phi_1 = 0$).
 By exactness at $H_1(U \cap V)$:
 \[
 H_2(K) \cong \ker(\Phi_1) = 0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 injectivity of $\Phi_1$.
+
 :::
-<2>3. **Zeroth homology $H_0(K)$:**
+
+:::
+
+::: pf-step
+
+**Zeroth homology $H_0(K)$:**
 $K$ is connected, so $H_0(K) \cong \mathbb{Z}$.
-::: {.proof}
+
+::: pf-proof
+
 path-connectedness of $K$.
+
 :::
-<2>4. **First homology $H_1(K)$:**
+
+:::
+
+::: pf-step
+
+**First homology $H_1(K)$:**
 The map $\Phi_0: \mathbb{Z} \to \mathbb{Z} \oplus \mathbb{Z}$ given by $1 \mapsto (1, -1)$ is injective, so $\ker(\Phi_0) = 0$.
 Thus the boundary map $\partial_*: H_1(K) \to H_0(U \cap V)$ is the zero map.
 By exactness:
@@ -89,17 +171,36 @@ Therefore:
 \[
 H_1(K) \cong \frac{\mathbb{Z} u \oplus \mathbb{Z} v}{2\mathbb{Z} v} \cong \mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Smith normal form / quotient of free abelian groups.
+
 :::
 
-<1>4. Conclusion:
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+Conclusion:
 The homology groups of the Klein bottle are:
 \[
 H_0(K) \cong \mathbb{Z}, \qquad H_1(K) \cong \mathbb{Z} \oplus \mathbb{Z}/2\mathbb{Z}, \qquad H_2(K) \cong 0, \qquad H_k(K) \cong 0 \quad (k \ge 3).
 \]
 Q.E.D.
-::: {.proof}
-<1>2 and <1>3.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

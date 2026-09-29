@@ -31,29 +31,55 @@ F_2\longrightarrow\mathbb Z/2.
 \]
 Thus there are exactly three.
 
-<1>1. The kernel of $a\mapsto1$, $b\mapsto0$ is free on
+::: pf
+
+::: pf-step
+
+The kernel of $a\mapsto1$, $b\mapsto0$ is free on
 \[
 a^2,\quad b,\quad aba^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Use the Schreier transversal $\{1,a\}$.
 The nontrivial Schreier generators $t x\overline{tx}^{-1}$ for $t\in\{1,a\}$ and $x\in\{a,b\}$ are precisely $b,a^2,aba^{-1}$.
+
 :::
 
-<1>2. The kernel of $a\mapsto0$, $b\mapsto1$ is free on
+:::
+
+::: pf-step
+
+The kernel of $a\mapsto0$, $b\mapsto1$ is free on
 \[
 b^2,\quad a,\quad bab^{-1}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the same Schreier computation with $a$ and $b$ interchanged.
+
 :::
 
-<1>3. The kernel of $a\mapsto1$, $b\mapsto1$ is free on
+:::
+
+::: pf-step
+
+The kernel of $a\mapsto1$, $b\mapsto1$ is free on
 \[
 a^2,\quad ba^{-1},\quad ab.
 \]
-::: {.proof}
+
+::: pf-proof
+
 With transversal $\{1,a\}$, Schreier's method yields the three displayed nontrivial generators.
 Nielsen--Schreier also predicts rank $1+2(2-1)=3$, so each listed generating set is a free basis.
+
 :::
+
+:::
+
+:::
+
 :::

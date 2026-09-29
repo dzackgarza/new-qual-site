@@ -31,12 +31,18 @@ Find all entire functions $f$ which satisfy $\abs{f(z)} \geq \abs{z}$ for all $z
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 f(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Suppose instead that $f(0)\neq0$. For every $z\neq0$, the hypothesis gives
 $$
 \abs{f(z)}\geq\abs{z}>0,
@@ -56,9 +62,14 @@ $$
 and $g(0)=0$. Thus $g$ is bounded and entire. By Liouville's theorem, $g$
 is constant, and since $g(0)=0$, one has $g\equiv0$. This is impossible
 for any $z\neq0$, because $z/f(z)\neq0$. Therefore $f(0)=0$.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 h(z)
 =
@@ -73,8 +84,9 @@ $$
 $$
 for every $z\in\CC$.
 
-::: {.proof}
-By step <1>1, $f(0)=0$. The quotient $f(z)/z$ therefore has a removable
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $f(0)=0$. The quotient $f(z)/z$ therefore has a removable
 singularity at $0$, and its limiting value there is
 $$
 \lim_{z\to0}\frac{f(z)}z=f'(0).
@@ -90,35 +102,53 @@ $$
 $$
 Taking $z\to0$ and using continuity of $h$ gives
 $\abs{h(0)}\geq1$ as well.
+
 :::
 
-<1>3. The function $h$ is constant.
+:::
 
-::: {.proof}
-Step <1>2 shows that $h$ has no zeros. Hence $1/h$ is entire, and
+::: {.pf-step #s3}
+
+The function $h$ is constant.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that $h$ has no zeros. Hence $1/h$ is entire, and
 $$
 \abs{\frac1{h(z)}}\leq1
 $$
 for every $z\in\CC$. Liouville's theorem implies that $1/h$ is constant.
 Therefore $h$ is constant.
+
 :::
 
-<1>4. Every function satisfying the hypothesis has the form
+:::
+
+::: {.pf-step #s4}
+
+Every function satisfying the hypothesis has the form
 $$
 f(z)=cz
 $$
 for some $c\in\CC$ with $\abs{c}\geq1$.
 
-::: {.proof}
-By step <1>3, write $h\equiv c$. Step <1>2 gives $\abs{c}\geq1$, and the
+::: pf-proof
+
+By step [](#s3){.pf-ref}, write $h\equiv c$. Step [](#s2){.pf-ref} gives $\abs{c}\geq1$, and the
 definition of $h$ gives $f(z)=zh(z)=cz$ for $z\neq0$. The same formula also
-holds at $z=0$ by step <1>1.
+holds at $z=0$ by step [](#s1){.pf-ref}.
+
 :::
 
-<1>5. Conversely, every function $f(z)=cz$ with $\abs{c}\geq1$ satisfies
+:::
+
+::: {.pf-step #s5}
+
+Conversely, every function $f(z)=cz$ with $\abs{c}\geq1$ satisfies
 the required inequality.
 
-::: {.proof}
+::: pf-proof
+
 Such a function is entire, and
 $$
 \abs{f(z)}
@@ -128,9 +158,14 @@ $$
 \abs{z}
 $$
 for every $z\in\CC$.
+
 :::
 
-<1>6. The complete list is
+:::
+
+::: {.pf-step #s6}
+
+The complete list is
 $$
 \boxed{
 f(z)=cz,
@@ -141,14 +176,21 @@ c\in\CC,
 }
 $$
 
-::: {.proof}
-Step <1>4 proves that every solution is on this list, and step <1>5 proves
+::: pf-proof
+
+Step [](#s4){.pf-ref} proves that every solution is on this list, and step [](#s5){.pf-ref} proves
 that every function on the list is a solution.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested complete classification.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested complete classification.
+
+:::
+
+:::
+
 :::

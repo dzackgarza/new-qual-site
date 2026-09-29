@@ -31,7 +31,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. For every integer $n\geq1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $n\geq1$,
 $$
 \frac{1}{n(n+1)(n+2)}
 =
@@ -43,7 +48,8 @@ $$
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The difference inside the parentheses is
 $$
 \begin{aligned}
@@ -57,9 +63,14 @@ $$
 \end{aligned}
 $$
 Dividing by $2$ gives the identity.
+
 :::
 
-<1>2. The sum of the first $N$ terms is
+:::
+
+::: {.pf-step #s2}
+
+The sum of the first $N$ terms is
 $$
 \sum_{n=1}^{N}
 \frac{1}{n(n+1)(n+2)}
@@ -69,8 +80,9 @@ $$
 \frac{1}{2(N+1)(N+2)}.
 $$
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 \sum_{n=1}^{N}
@@ -97,24 +109,36 @@ $$
 \end{aligned}
 $$
 All intermediate terms cancel.
+
 :::
 
-<1>3. The series has sum
+:::
+
+::: {.pf-step #s3}
+
+The series has sum
 $$
 \boxed{\frac14}.
 $$
 
-::: {.proof}
-Let $N\to\infty$ in step <1>2. The remainder term satisfies
+::: pf-proof
+
+Let $N\to\infty$ in step [](#s2){.pf-ref}. The remainder term satisfies
 $$
 \frac{1}{2(N+1)(N+2)}
 \longrightarrow0.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested sum.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested sum.
+
+:::
+
+:::
+
 :::

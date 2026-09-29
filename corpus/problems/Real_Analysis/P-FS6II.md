@@ -46,27 +46,50 @@ all integrals possibly infinite. The same holds with the roles of $x$ and $t$ ex
 
 (b)
 
-<1>1. If $f$ is measurable, then $\mca$ is measurable.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $f$ is measurable, then $\mca$ is measurable.
+
+::: pf-proof
+
 $\mca = \theset{(x,t) : t \ge 0} \cap \theset{(x,t) : f(x) - t \ge 0}$, where $f(x) - t$ is taken in $[-\infty, \infty]$. The function $(x,t) \mapsto f(x)$ is measurable on $\RR^{n+1}$ because $f$ is measurable (cylinder functions of measurable functions are measurable; see [[E-JJ746]]), and $(x,t) \mapsto t$ is continuous, so their difference is measurable.
+
 :::
 
-<1>2. If $\mca$ is measurable, then $f$ is measurable.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $\mca$ is measurable, then $f$ is measurable.
+
+::: pf-proof
+
 For every $x$, the slice $\theset{t : (x,t) \in \mca}$ is $[0, f(x)]$, which has length $f(x)$. By part (a) applied to $F = \chi_\mca$, the function $x \mapsto m_1([0, f(x)]) = f(x)$ is measurable.
+
 :::
 
-<1>3. If $f$ is measurable, then $m(\mca) = \int_{\RR^n} f(x)\,dx = \int_0^\infty m\theset{x : f(x) \ge t}\,dt$.
-
-::: {.proof}
-By step <1>1, $\chi_\mca$ is measurable. Part (a) with the $t$-integral inside gives $m(\mca) = \int_{\RR^n}\int_\RR \chi_\mca(x,t)\,dt\,dx = \int_{\RR^n} f(x)\,dx$, since the slice at $x$ has length $f(x)$. Part (a) with the $x$-integral inside gives $m(\mca) = \int_\RR\int_{\RR^n}\chi_\mca(x,t)\,dx\,dt$. For $t < 0$ the slice $\theset{x : (x,t) \in \mca}$ is empty, and for $t \ge 0$ it is $\theset{x : f(x) \ge t}$, so this equals $\int_0^\infty m\theset{f \ge t}\,dt$.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #s3}
 
-::: {.proof}
-Steps <1>1 and <1>2 are (b)1, and step <1>3 is (b)2.
+If $f$ is measurable, then $m(\mca) = \int_{\RR^n} f(x)\,dx = \int_0^\infty m\theset{x : f(x) \ge t}\,dt$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $\chi_\mca$ is measurable. Part (a) with the $t$-integral inside gives $m(\mca) = \int_{\RR^n}\int_\RR \chi_\mca(x,t)\,dt\,dx = \int_{\RR^n} f(x)\,dx$, since the slice at $x$ has length $f(x)$. Part (a) with the $x$-integral inside gives $m(\mca) = \int_\RR\int_{\RR^n}\chi_\mca(x,t)\,dx\,dt$. For $t < 0$ the slice $\theset{x : (x,t) \in \mca}$ is empty, and for $t \ge 0$ it is $\theset{x : f(x) \ge t}$, so this equals $\int_0^\infty m\theset{f \ge t}\,dt$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} are (b)1, and step [](#s3){.pf-ref} is (b)2.
+
+:::
+
+:::
+
 :::

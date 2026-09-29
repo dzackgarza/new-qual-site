@@ -30,7 +30,6 @@ Show that an $n\times m$ matrix $A$over a division ring $D$ has an $m\times n$ l
 Similarly, show $A$ has a right $m\times n$ inverse $\iff \mathrm{rank} A = n$.
 :::
 
-
 ::: {.solution}
 Regard \(A\) as the matrix of the right-\(D\)-linear map
 \[
@@ -39,8 +38,14 @@ T:D^m\longrightarrow D^n,
 \]
 Its rank is the dimension of its image.
 
-<1>1. \(A\) has a left inverse if and only if \(\operatorname{rank}A=m\).
-::: {.proof}
+::: pf
+
+::: pf-step
+
+\(A\) has a left inverse if and only if \(\operatorname{rank}A=m\).
+
+::: pf-proof
+
 Suppose first that \(B A=I_m\). If \(Ax=0\), then
 \[
 x=I_mx=BAx=0,
@@ -60,10 +65,17 @@ S(T(e_i))=e_i
 for \(1\le i\le m\), and send every added basis vector to \(0\). Then
 \(S\circ T=\operatorname{id}_{D^m}\). If \(B\) is the matrix of \(S\), then
 \(BA=I_m\).
+
 :::
 
-<1>2. \(A\) has a right inverse if and only if \(\operatorname{rank}A=n\).
-::: {.proof}
+:::
+
+::: pf-step
+
+\(A\) has a right inverse if and only if \(\operatorname{rank}A=n\).
+
+::: pf-proof
+
 Suppose \(AC=I_n\) for some \(m\times n\) matrix \(C\). Then the associated
 map \(T:D^m\to D^n\) is surjective, since for every \(y\in D^n\),
 \[
@@ -76,5 +88,11 @@ basis \(f_1,\ldots,f_n\) of \(D^n\), and choose \(v_i\in D^m\) with
 \(T(v_i)=f_i\). There is a unique linear map \(U:D^n\to D^m\) satisfying
 \(U(f_i)=v_i\). Then \(T\circ U=\operatorname{id}_{D^n}\). If \(C\) is the
 matrix of \(U\), then \(AC=I_n\).
+
 :::
+
+:::
+
+:::
+
 :::

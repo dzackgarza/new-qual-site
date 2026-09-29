@@ -36,8 +36,15 @@ Prove or find a counterexample.
 :::
 
 ::: {.solution}
-<1>1. (a) If $A$ is closed and countable, then $f$ is constant.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+(a) If $A$ is closed and countable, then $f$ is constant.
+
+::: pf-proof
+
 Let $I$ be any connected component of $\mathbb R\setminus A$. Since $A$ is closed, $I$ is an open interval. On $I$, the function $f$ is differentiable and $f'=0$, so the mean value theorem shows that $f$ is constant on $I$.
 
 Fix $u<v$. The complement $[u,v]\setminus A$ is a countable union of pairwise disjoint open intervals, and $f$ is constant on each such interval. Since $A\cap[u,v]$ is countable, the set
@@ -47,12 +54,25 @@ f([u,v])
 is therefore countable: it is contained in the union of the countable set $f(A\cap[u,v])$ and one value for each component of $[u,v]\setminus A$.
 
 But $f([u,v])$ is connected because $f$ is continuous and $[u,v]$ is connected. A connected countable subset of $\mathbb R$ is a singleton. Hence $f(u)=f(v)$. Since $u<v$ were arbitrary, $f$ is constant on $\mathbb R$.
+
 :::
 
-<1>2. (b) No: the Cantor function, extended by constants, is continuous, has derivative $0$ off the Lebesgue-null Cantor set, and is not constant.
-::: {.proof}
+:::
+
+::: pf-step
+
+(b) No: the Cantor function, extended by constants, is continuous, has derivative $0$ off the Lebesgue-null Cantor set, and is not constant.
+
+::: pf-proof
+
 Let $C$ be the middle-third Cantor set and let $F:[0,1]\to[0,1]$ be the Cantor--Lebesgue function. Extend $F$ to a continuous function on $\mathbb R$ by setting $F(x)=0$ for $x\le0$ and $F(x)=1$ for $x\ge1$.
 
 The function is constant on every connected component of $\mathbb R\setminus C$, so it is differentiable there with derivative $0$. The Cantor set $C$ has Lebesgue measure $0$, but $F$ is not constant since $F(0)=0$ and $F(1)=1$. Thus a null exceptional set does not force constancy.
+
 :::
+
+:::
+
+:::
+
 :::

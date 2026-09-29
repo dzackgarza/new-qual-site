@@ -38,9 +38,14 @@ $$
 There is exactly one subfield of each listed order. In particular,
 there is exactly one subfield of order $25$.
 
-<1>1. Every subfield has order $5^d$ with $d$ a positive divisor of $20$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Every subfield has order $5^d$ with $d$ a positive divisor of $20$.
+
+::: pf-proof
+
 The characteristic of a finite field is a prime dividing its order:
 the additive order of $1$ divides the additive group order, and a
 composite characteristic would give nonzero zero divisors.
@@ -55,12 +60,18 @@ $$
 $$
 Consequently $d\mid20$ and $|K|=5^d$. The positive divisors
 of $20=2^2\cdot5$ are exactly $1,2,4,5,10,20$.
+
 :::
 
-<1>2. For each $d\mid20$, the set
+:::
+
+::: {.pf-step #s2}
+
+For each $d\mid20$, the set
 $F_d=\{a\in F:a^{5^d}=a\}$ is a subfield with exactly $5^d$ elements.
 
-::: {.proof}
+::: pf-proof
+
 Put $h_d(T)=T^{5^d}-T$. First, $h_d$ divides $h_{20}$ in
 $\mathbb F_5[T]$. Indeed, in the quotient ring by $(h_d)$ the
 class $t$ of $T$ satisfies $t^{5^d}=t$. Repeatedly taking the
@@ -91,21 +102,33 @@ $$
 $$
 so they are also closed under inversion. This proves that $F_d$
 is a subfield, with the cardinality already established.
+
 :::
 
-<1>3. A subfield of a given listed order is unique.
+:::
 
-::: {.proof}
+::: pf-step
+
+A subfield of a given listed order is unique.
+
+::: pf-proof
+
 If $K\subseteq F$ has order $5^d$, every nonzero $a\in K$
 satisfies $a^{5^d-1}=1$ by Lagrange's theorem in $K^\times$.
 Including zero, every element of $K$ satisfies $a^{5^d}=a$.
 Thus $K\subseteq F_d$. Since both fields have $5^d$ elements,
-they are equal. Together with steps <1>1 and <1>2, this proves
+they are equal. Together with steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, this proves
 that the displayed list is exhaustive and each order is realized
 by exactly one embedded subfield. For $d=2$ this says
 $$
 \{a\in F:a^{25}=a\}
 $$
 is the unique subfield of order $25$, answering part (b).
+
 :::
+
+:::
+
+:::
+
 :::

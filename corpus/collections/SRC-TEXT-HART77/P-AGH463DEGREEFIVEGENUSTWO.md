@@ -41,10 +41,15 @@ Show that for any abstract curve $X$ of genus 2, there exist embeddings of degre
 Write line-bundle classes additively, and let $K$ denote a canonical divisor.
 For an embedding $X\subseteq\PP^3$, put $H=\OO_X(1)$.
 
-<1>1. Every curve of degree $5$ and genus $2$ in $\PP^3$ is contained in a
+::: pf
+
+::: {.pf-step #s1}
+
+Every curve of degree $5$ and genus $2$ in $\PP^3$ is contained in a
 quadric surface.
 
-::: {.proof}
+::: pf-proof
+
 Since $\deg H=5$,
 $$
 \deg(2H)=10.
@@ -73,11 +78,17 @@ H^0(X,2H)
 $$
 has nonzero kernel.  A nonzero element of that kernel is the equation of a
 quadric containing $X$.
+
 :::
 
-<1>2. The containing quadric is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The containing quadric is unique.
+
+::: pf-proof
+
 First, $X$ is not contained in a plane.  Otherwise its image would be a
 nonsingular plane quintic, whose genus is
 $$
@@ -106,15 +117,21 @@ $$
 Every irreducible curve component of that intersection has degree at most
 $4$, so it cannot contain the degree-$5$ curve $X$.  This contradiction proves
 uniqueness.
+
 :::
 
-<1>3. Every line bundle $L$ of degree $5$ on an abstract genus-$2$ curve
+:::
+
+::: {.pf-step #s3}
+
+Every line bundle $L$ of degree $5$ on an abstract genus-$2$ curve
 defines a degree-$5$ embedding
 $$
 \varphi_L:X\hookrightarrow\PP^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By [[P-AGH431GENUSTWOVERYAMPLE|Exercise IV.3.1]], every divisor of degree
 $5$ on a genus-$2$ curve is very ample.  Moreover,
 $$
@@ -126,9 +143,14 @@ h^0(X,L)=5+1-2=4.
 $$
 Thus the complete linear system $\abs{L}$ embeds $X$ in $\PP^3$.  Its
 hyperplane bundle is $L$, so the image has degree $5$.
+
 :::
 
-<1>4. Let $L$ have degree $5$, and put
+:::
+
+::: {.pf-step #s4}
+
+Let $L$ have degree $5$, and put
 $$
 M=L-2K,
 \qquad
@@ -137,7 +159,8 @@ $$
 If $M$ is non-effective, then the unique quadric containing
 $\varphi_L(X)$ is nonsingular.
 
-::: {.proof}
+::: pf-proof
+
 Here
 $$
 \deg M=1,
@@ -199,13 +222,19 @@ X
 \PP^3.
 $$
 Its image is therefore contained in the smooth Segre quadric.  By step
-<1>2, this is the unique quadric containing $\varphi_L(X)$.
+[](#s2){.pf-ref}, this is the unique quadric containing $\varphi_L(X)$.
+
 :::
 
-<1>5. If $M=L-2K$ is effective, then the unique quadric containing
+:::
+
+::: {.pf-step #s5}
+
+If $M=L-2K$ is effective, then the unique quadric containing
 $\varphi_L(X)$ is singular.
 
-::: {.proof}
+::: pf-proof
+
 Since $\deg M=1$, effectivity gives
 $$
 M\sim P
@@ -251,23 +280,29 @@ Thus $\varphi_L(X)$ lies on the quadric cone
 $$
 Q_0=V_+(x_0x_2-x_1^2),
 $$
-which is singular at $[0:0:0:1]$.  Step <1>2 says that there is only one
+which is singular at $[0:0:0:1]$.  Step [](#s2){.pf-ref} says that there is only one
 containing quadric, so that quadric is $Q_0$ and is singular.
+
 :::
 
-<1>6. For every abstract genus-$2$ curve, both kinds of degree-$5$ embedding
+:::
+
+::: {.pf-step #s6}
+
+For every abstract genus-$2$ curve, both kinds of degree-$5$ embedding
 exist.
 
-::: {.proof}
+::: pf-proof
+
 For a singular containing quadric, choose any point $P\in X$ and set
 $$
 L_{\mathrm{sing}}=2K+P.
 $$
-This has degree $5$, so step <1>3 gives an embedding, while
+This has degree $5$, so step [](#s3){.pf-ref} gives an embedding, while
 $$
 L_{\mathrm{sing}}-2K\sim P
 $$
-is effective.  Step <1>5 makes its unique containing quadric singular.
+is effective.  Step [](#s5){.pf-ref} makes its unique containing quadric singular.
 
 For a nonsingular containing quadric, fix $P_0\in X$.  By
 [[T-CRVJACFUN]], the Jacobian $\Jac(X)$ has dimension $2$, while the
@@ -294,17 +329,23 @@ contrary to the choice of $A$.  Now set
 $$
 L_{\mathrm{sm}}=\OO_X(2K)\otimes M.
 $$
-Again $\deg L_{\mathrm{sm}}=5$, so step <1>3 gives an embedding, and
-$L_{\mathrm{sm}}-2K=M$ is non-effective.  Step <1>4 makes its unique
+Again $\deg L_{\mathrm{sm}}=5$, so step [](#s3){.pf-ref} gives an embedding, and
+$L_{\mathrm{sm}}-2K=M$ is non-effective.  Step [](#s4){.pf-ref} makes its unique
 containing quadric nonsingular.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove existence and uniqueness of the containing quadric.
-Step <1>3 realizes every degree-$5$ line bundle as an embedding, steps
-<1>4--<1>5 determine the quadric from $L-2K$, and step <1>6 constructs both
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove existence and uniqueness of the containing quadric.
+Step [](#s3){.pf-ref} realizes every degree-$5$ line bundle as an embedding, steps
+[](#s4){.pf-ref} and [](#s5){.pf-ref} determine the quadric from $L-2K$, and step [](#s6){.pf-ref} constructs both
 possibilities on every abstract genus-$2$ curve.
+
 :::
+
+:::
+
 :::

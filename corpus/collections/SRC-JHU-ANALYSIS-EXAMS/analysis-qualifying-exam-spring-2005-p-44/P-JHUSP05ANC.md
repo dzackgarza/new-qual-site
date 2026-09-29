@@ -38,8 +38,14 @@ Prove or find a counterexample to each statement:
 ::: {.solution}
 The answers are: (a) false, (b) false, (c) true, and (d) false.
 
-<1>1. Statement (a) is false.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Statement (a) is false.
+
+::: pf-proof
+
 Let
 \[
 f(x)=\frac{\mathbf 1_{[1,\infty)}(x)}{x}.
@@ -53,10 +59,17 @@ so $f\in L^2(\mathbb R)$, whereas
 \int_1^\infty |f(x)|\,dx=\int_1^\infty x^{-1}\,dx=\infty.
 \]
 Thus $f\notin L^1(\mathbb R)$.
+
 :::
 
-<1>2. Statement (b) is false.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Statement (b) is false.
+
+::: pf-proof
+
 Let
 \[
 g(x)=x^{-2/3}\mathbf 1_{(0,1)}(x).
@@ -70,10 +83,17 @@ so $g\in L^1(\mathbb R)$, but
 \int_0^1 |g(x)|^2\,dx=\int_0^1x^{-4/3}\,dx=\infty.
 \]
 Hence $g\notin L^2(\mathbb R)$.
+
 :::
 
-<1>3. Statement (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (c) is true.
+
+::: pf-proof
+
 By Cauchy--Schwarz,
 \[
 \|f\|_{L^1([0,1])}
@@ -82,14 +102,27 @@ By Cauchy--Schwarz,
 =\|f\|_2.
 \]
 Thus every $L^2([0,1])$ function belongs to $L^1([0,1])$.
+
 :::
 
-<1>4. Statement (d) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (d) is false.
+
+::: pf-proof
+
 The same function
 \[
 g(x)=x^{-2/3},\qquad 0<x<1,
 \]
-belongs to $L^1([0,1])$ but not to $L^2([0,1])$, by the calculation in <1>2.
+belongs to $L^1([0,1])$ but not to $L^2([0,1])$, by the calculation in step [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

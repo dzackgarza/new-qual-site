@@ -39,8 +39,15 @@ Think about a lattice which is $G$-invariant.)
 :::
 
 ::: {.solution}
-<1>1. Every lattice $L\le\mathbb Q^n$ has the form $L=x\mathbb Z^n$ for some $x\in\mathrm{GL}_n(\mathbb Q)$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Every lattice $L\le\mathbb Q^n$ has the form $L=x\mathbb Z^n$ for some $x\in\mathrm{GL}_n(\mathbb Q)$.
+
+::: pf-proof
+
 The additive group $L$ is finitely generated and torsion-free, because it is a subgroup of the torsion-free group $\mathbb Q^n$.
 By the structure theorem for finitely generated abelian groups, $L$ is free abelian of some finite rank $r$.
 Choose a $\mathbb Z$-basis $v_1,\ldots,v_r$ of $L$.
@@ -62,10 +69,17 @@ x\mathbb Z^n
 =L.
 \]
 This proves part (a).
+
 :::
 
-<1>2. A finite sum of lattices in $\mathbb Q^n$ is again a lattice.
-::: {.proof}
+:::
+
+::: pf-step
+
+A finite sum of lattices in $\mathbb Q^n$ is again a lattice.
+
+::: pf-proof
+
 For each $i$, choose a finite generating set $S_i$ for $L_i$.
 Then
 \[
@@ -76,10 +90,17 @@ It is therefore finitely generated.
 
 Its rational span is $\mathbb Q^n$, because it contains $L_1$ and $L_1$ already has rational span $\mathbb Q^n$.
 Thus $L_1+\cdots+L_m$ is a lattice, proving part (b).
+
 :::
 
-<1>3. Every finite subgroup of $\mathrm{GL}_n(\mathbb Q)$ preserves a lattice.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every finite subgroup of $\mathrm{GL}_n(\mathbb Q)$ preserves a lattice.
+
+::: pf-proof
+
 Let $G\le\mathrm{GL}_n(\mathbb Q)$ be finite and define
 \[
 L=\sum_{g\in G}g\mathbb Z^n.
@@ -96,10 +117,17 @@ hL
 \]
 since left multiplication by $h$ permutes the elements of $G$.
 Thus $L$ is $G$-invariant.
+
 :::
 
-<1>4. The invariant lattice gives the required integral conjugate of $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The invariant lattice gives the required integral conjugate of $G$.
+
+::: pf-proof
+
 By part (a), write
 \[
 L=y\mathbb Z^n
@@ -123,5 +151,11 @@ Taking $x=y^{-1}\in\mathrm{GL}_n(\mathbb Q)$ yields
 xGx^{-1}\subseteq\mathrm{GL}_n(\mathbb Z),
 \]
 which proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

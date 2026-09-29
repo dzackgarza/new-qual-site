@@ -38,12 +38,17 @@ $$
 D=(g+1)P.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \ell(D)\ge2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By [[T-MWDVL|Riemann--Roch]],
 $$
 \ell(D)-\ell(K-D)
@@ -56,21 +61,27 @@ Since $\ell(K-D)\ge0$, it follows that
 $$
 \ell(D)=2+\ell(K-D)\ge2.
 $$
+
 :::
 
-<1>2. There is a nonconstant rational function $f\in K(X)$ whose pole divisor satisfies
+:::
+
+::: {.pf-step #s2}
+
+There is a nonconstant rational function $f\in K(X)$ whose pole divisor satisfies
 $$
 (f)_\infty\le D.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition,
 $$
 L(D)=H^0(X,\mco_X(D))
 =
 \{f\in K(X):\operatorname{div}(f)+D\ge0\}\cup\{0\}.
 $$
-The constants form a one-dimensional subspace of $L(D)$, while step <1>1 gives $\dim_kL(D)\ge2$. Hence there is a nonconstant $f\in L(D)$.
+The constants form a one-dimensional subspace of $L(D)$, while step [](#s1){.pf-ref} gives $\dim_kL(D)\ge2$. Hence there is a nonconstant $f\in L(D)$.
 
 The inequality
 $$
@@ -80,22 +91,28 @@ says precisely that the polar divisor of $f$ is bounded by $D$:
 $$
 (f)_\infty\le D.
 $$
+
 :::
 
-<1>3. The function $f$ defines a finite morphism
+:::
+
+::: {.pf-step #s3}
+
+The function $f$ defines a finite morphism
 $$
 f:X\longrightarrow\PP^1
 $$
 of degree at most $g+1$.
 
-::: {.proof}
+::: pf-proof
+
 A nonconstant rational function on the smooth projective curve $X$ defines a nonconstant morphism to $\PP^1$. A nonconstant morphism between projective integral curves is finite.
 
 Its degree equals the degree of its polar divisor:
 $$
 \deg f=\deg (f)_\infty
 $$
-by the degree formula for a rational function on a projective curve. By step <1>2,
+by the degree formula for a rational function on a projective curve. By step [](#s2){.pf-ref},
 $$
 \deg (f)_\infty
 \le
@@ -107,11 +124,17 @@ Therefore
 $$
 \boxed{\deg f\le g+1}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the required finite morphism.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the required finite morphism.
+
+:::
+
+:::
+
 :::

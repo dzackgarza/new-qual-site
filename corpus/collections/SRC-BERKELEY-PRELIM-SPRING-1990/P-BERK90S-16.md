@@ -42,9 +42,14 @@ divisors, use the values at $n=2$ and $n=3$.
 ::: {.solution}
 For each $n\in\ZZ$, put $a_n\coloneqq n^{13}-n$.
 
-<1>1. The integer $2730$ divides $a_n$ for every $n\in\ZZ$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The integer $2730$ divides $a_n$ for every $n\in\ZZ$.
+
+::: pf-proof
+
 Let $p\in\{2,3,5,7,13\}$ and $n\in\ZZ$.
 Each such $p$ is prime and $p-1$ divides $12$.
 If $p\mid n$, then $p\mid a_n$.
@@ -58,14 +63,20 @@ $$
 2\cdot3\cdot5\cdot7\cdot13=2730
 $$
 divides every $a_n$.
+
 :::
 
-<1>2. The greatest common divisor is
+:::
+
+::: {.pf-step #s2}
+
+The greatest common divisor is
 $$
 \gcd\{a_n:n\in\ZZ\}=\boxed{2730}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The values $a_2=8190$ and $a_3=1594320$ satisfy
 $$
 195a_2-a_3
@@ -73,14 +84,20 @@ $$
 =2730.
 $$
 Every common divisor of all the $a_n$ divides this integer
-combination, hence divides $2730$. Conversely, step <1>1
+combination, hence divides $2730$. Conversely, step [](#s1){.pf-ref}
 shows that $2730$ is itself a positive common divisor.
 It is therefore the greatest common divisor.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 determines the gcd of the given set.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} determines the gcd of the given set.
+
+:::
+
+:::
+
 :::

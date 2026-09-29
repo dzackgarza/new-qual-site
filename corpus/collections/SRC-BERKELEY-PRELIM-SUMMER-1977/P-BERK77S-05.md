@@ -30,7 +30,12 @@ Write all values of $i^i$ in the form $a+bi$.
 :::
 
 ::: {.solution}
-<1>1. The complete set of logarithms of $i$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The complete set of logarithms of $i$ is
 $$
 \log i
 =
@@ -39,7 +44,8 @@ i\left(\frac\pi2+2\pi k\right),
 k\in\ZZ.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The number $i$ has modulus $1$ and arguments
 $$
 \frac\pi2+2\pi k,
@@ -53,20 +59,31 @@ $$
 i\left(\frac\pi2+2\pi k\right),
 $$
 and every integer $k$ gives one.
+
 :::
 
-<1>2. Corresponding to the logarithm indexed by $k$,
+:::
+
+::: {.pf-step #s2}
+
+Corresponding to the logarithm indexed by $k$,
 $$
 i\log i
 =
 -\left(\frac\pi2+2\pi k\right).
 $$
 
-::: {.proof}
-Multiply the expression in step <1>1 by $i$ and use $i^2=-1$.
+::: pf-proof
+
+Multiply the expression in step [](#s1){.pf-ref} by $i$ and use $i^2=-1$.
+
 :::
 
-<1>3. The complete set of values of $i^i$ is
+:::
+
+::: {.pf-step #s3}
+
+The complete set of values of $i^i$ is
 $$
 \boxed{
 i^i
@@ -77,24 +94,31 @@ k\in\ZZ.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a complex exponent, the multivalued power is obtained from
 $$
 i^i=\exp(i\log i)
 $$
-as $\log i$ ranges over all logarithms. Step <1>2 therefore gives
+as $\log i$ ranges over all logarithms. Step [](#s2){.pf-ref} therefore gives
 $$
 \exp\left(
 -\frac\pi2-2\pi k
 \right).
 $$
 These numbers are positive real, so in the requested form their imaginary
-part is $0$. Step <1>1 exhausts all logarithms, so no other values occur.
+part is $0$. Step [](#s1){.pf-ref} exhausts all logarithms, so no other values occur.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the requested list of all values.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested list of all values.
+
+:::
+
+:::
+
 :::

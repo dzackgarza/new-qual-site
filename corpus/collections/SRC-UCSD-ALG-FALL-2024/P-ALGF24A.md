@@ -31,11 +31,18 @@ Prove that $G$ has two normal subgroups $N_1 \subseteq N_2$ such that $|N_2| = p
 :::
 
 ::: {.solution}
-<1>1. The sign of the left regular action defines a surjective homomorphism
+
+::: pf
+
+::: {.pf-step #s1}
+
+The sign of the left regular action defines a surjective homomorphism
 \[
 \varepsilon:G\longrightarrow\{1,-1\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $g\in G$, let $L_g$ be the permutation $h\mapsto gh$ of the underlying set of $G$.
 Since $L_{gh}=L_gL_h$, the map $\varepsilon(g)=\operatorname{sgn}(L_g)$ is a homomorphism.
 
@@ -47,16 +54,30 @@ As $pq$ is odd,
 \varepsilon(t)=(-1)^{pq}=-1,
 \]
 so $\varepsilon$ is surjective.
+
 :::
 
-<1>2. The subgroup $N_2=\ker\varepsilon$ is normal in $G$ and has order $pq$.
-::: {.proof}
-A kernel is normal, and surjectivity in <1>1 gives $[G:N_2]=2$.
+:::
+
+::: pf-step
+
+The subgroup $N_2=\ker\varepsilon$ is normal in $G$ and has order $pq$.
+
+::: pf-proof
+
+A kernel is normal, and surjectivity in step [](#s1){.pf-ref} gives $[G:N_2]=2$.
 Hence $|N_2|=|G|/2=pq$.
+
 :::
 
-<1>3. The unique Sylow $q$-subgroup $N_1$ of $N_2$ is normal in $G$ and has order $q$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The unique Sylow $q$-subgroup $N_1$ of $N_2$ is normal in $G$ and has order $q$.
+
+::: pf-proof
+
 By the Sylow theorems, the number $n_q$ of Sylow $q$-subgroups of $N_2$ satisfies
 \[
 n_q\mid p,\qquad n_q\equiv1\pmod q.
@@ -68,5 +89,11 @@ Thus $n_q=1$; write $N_1$ for this unique subgroup, which has order $q$.
 For every $g\in G$, normality of $N_2$ implies that $gN_1g^{-1}$ is a subgroup of $N_2$ of order $q$.
 Uniqueness forces $gN_1g^{-1}=N_1$.
 Therefore $N_1\trianglelefteq G$, and $N_1\subseteq N_2$ gives the required pair.
+
 :::
+
+:::
+
+:::
+
 :::

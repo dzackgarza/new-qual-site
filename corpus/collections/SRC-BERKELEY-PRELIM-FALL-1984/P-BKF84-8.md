@@ -54,7 +54,11 @@ $$
 M=vv^T.
 $$
 
-<1>1. The vector $v$ is an eigenvector of $M$ with eigenvalue
+::: pf
+
+::: {.pf-step #s1}
+
+The vector $v$ is an eigenvector of $M$ with eigenvalue
 $$
 \lambda
 =
@@ -63,7 +67,8 @@ $$
 a^2+b^2+c^2+d^2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Directly,
 $$
 Mv
@@ -75,9 +80,14 @@ vv^Tv
 \norm v^2v.
 $$
 Since $v\neq0$, one has $\lambda>0$.
+
 :::
 
-<1>2. Every vector in
+:::
+
+::: {.pf-step #s2}
+
+Every vector in
 $$
 v^\perp
 =
@@ -85,7 +95,8 @@ v^\perp
 $$
 is an eigenvector with eigenvalue $0$.
 
-::: {.proof}
+::: pf-proof
+
 If $x\in v^\perp$, then
 $$
 Mx
@@ -100,16 +111,22 @@ Thus
 $$
 v^\perp\subseteq E_0(M).
 $$
+
 :::
 
-<1>3. In fact,
+:::
+
+::: {.pf-step #s3}
+
+In fact,
 $$
 E_0(M)=v^\perp,
 \qquad
 E_\lambda(M)=\RR v.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $Mx=0$, then
 $$
 v(v^Tx)=0.
@@ -126,10 +143,15 @@ one has
 $$
 x=\lambda^{-1}Mx\in\RR v.
 $$
-Together with step <1>1, this gives $E_\lambda(M)=\RR v$.
+Together with step [](#s1){.pf-ref}, this gives $E_\lambda(M)=\RR v$.
+
 :::
 
-<1>4. The complete eigenspace decomposition is
+:::
+
+::: {.pf-step #s4}
+
+The complete eigenspace decomposition is
 $$
 \boxed{
 \RR^4
@@ -147,19 +169,26 @@ $$
 $$
 on the three-dimensional summand $v^\perp$.
 
-::: {.proof}
+::: pf-proof
+
 Since $v\neq0$, orthogonal decomposition in Euclidean space gives
 $$
 \RR^4=\RR v\oplus v^\perp.
 $$
-Steps <1>1--<1>3 identify the eigenvalue on each summand. In particular,
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} identify the eigenvalue on each summand. In particular,
 these are all eigenvalues.
+
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives both the eigenvalues and the requested eigenspace
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives both the eigenvalues and the requested eigenspace
 decomposition.
+
 :::
+
+:::
+
 :::

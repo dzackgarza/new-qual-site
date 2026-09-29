@@ -41,27 +41,39 @@ Show that the projection of $Y$ from $P$ is a cuspidal cubic curve in the plane,
 :::
 
 ::: {.solution}
-<1>1. After a projective linear change of coordinates, part (a) reduces to
+
+::: pf
+
+::: {.pf-step #s1}
+
+After a projective linear change of coordinates, part (a) reduces to
 $$
 P=[0:\cdots:0:1],
 \qquad
 \PP^n=Z(x_{n+1})\subseteq\PP^{n+1}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a nonzero vector representing $P$ and a basis of the vector hyperplane whose projectivization is the given $\PP^n$.
 Since $P$ does not lie in that hyperplane, adjoining the representative of $P$ gives a basis of the ambient vector space.
 The resulting linear automorphism of the vector space induces a projective automorphism carrying the pair $(P,\PP^n)$ to the displayed coordinate pair.
 Conjugating the projection by projective automorphisms preserves the property of being a morphism.
+
 :::
 
-<1>2. In these coordinates,
+:::
+
+::: {.pf-step #s2}
+
+In these coordinates,
 $$
 \phi([a_0:\cdots:a_n:a_{n+1}])=[a_0:\cdots:a_n].
 $$
 This is a morphism on $\PP^{n+1}\setminus\{P\}$, proving (a).
 
-::: {.proof}
+::: pf-proof
+
 For $Q=[a_0:\cdots:a_{n+1}]\ne P$, not all of $a_0,\ldots,a_n$ vanish.
 The line through $P$ and $Q$ consists of the projective points represented by
 $$
@@ -75,17 +87,23 @@ After identifying that hyperplane with $\PP^n$, this is the displayed formula.
 
 The coordinate functions $x_0,\ldots,x_n$ are homogeneous of the same degree and have no common zero on the domain $\PP^{n+1}\setminus\{P\}$.
 Hence they define a morphism there [@Har10a, Chapter I, §3].
+
 :::
 
-<1>3. For the data in part (b), projection from $P=[0:0:1:0]$ onto $z=0$ restricts to
+:::
+
+::: {.pf-step #s3}
+
+For the data in part (b), projection from $P=[0:0:1:0]$ onto $z=0$ restricts to
 $$
 [t:u]\longmapsto[t^3:t^2u:u^3]
 $$
 in the plane coordinates $[x:y:w]$.
 
-::: {.proof}
+::: pf-proof
+
 Here the coordinate of the center is $z$.
-The same calculation as in step <1>2 therefore deletes the $z$-coordinate:
+The same calculation as in step [](#s2){.pf-ref} therefore deletes the $z$-coordinate:
 $$
 [x:y:z:w]\longmapsto[x:y:w].
 $$
@@ -95,14 +113,20 @@ $$
 $$
 gives the displayed parametrization.
 The center $P$ is not on $Y$, so this restriction is defined everywhere on $Y$.
+
 :::
 
-<1>4. The image in $\PP^2$ is exactly the cubic
+:::
+
+::: {.pf-step #s4}
+
+The image in $\PP^2$ is exactly the cubic
 $$
 C=Z(y^3-x^2w).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every parameterized point satisfies
 $$
 (t^2u)^3=(t^3)^2u^3,
@@ -118,11 +142,17 @@ $$
 which is the image of $[1:y]$.
 If $x=0$, then $y^3=0$, so $y=0$ and the point is $[0:0:1]$, the image of $[0:1]$.
 Thus every point of $C$ occurs.
+
 :::
 
-<1>5. The cubic $C$ is cuspidal at $[0:0:1]$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The cubic $C$ is cuspidal at $[0:0:1]$.
+
+::: pf-proof
+
 On the affine chart $w=1$ around $[0:0:1]$, its equation is
 $$
 y^3=x^2,
@@ -146,14 +176,20 @@ F_w=-x^2=0
 $$
 force $x=y=0$, also in characteristics $2$ and $3$.
 The lowest-degree term of the affine equation at the origin is $-x^2$, so the tangent cone is the doubled line $x=0$; together with the one-parameter normalization $t\mapsto(t^3,t^2)$, this is the standard cuspidal cubic.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove (a), and steps <1>3--<1>5 prove (b), with plane equation
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (b), with plane equation
 $$
 \boxed{y^3=x^2w}.
 $$
+
 :::
+
+:::
+
 :::

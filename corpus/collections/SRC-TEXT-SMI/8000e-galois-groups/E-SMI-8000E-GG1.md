@@ -36,8 +36,14 @@ $$
 k=\mathbf F_2.
 $$
 
-<1>1. The polynomial $f(X)=X^2+X+1$ is irreducible over $k$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The polynomial $f(X)=X^2+X+1$ is irreducible over $k$.
+
+::: pf-proof
+
 A quadratic polynomial over a field is reducible exactly when it has a root
 in that field. The only elements of $\mathbf F_2$ are $0$ and $1$, and
 $$
@@ -47,10 +53,17 @@ f(1)=1+1+1=1
 $$
 in characteristic $2$. Thus $f$ has no root in $\mathbf F_2$ and is
 irreducible.
+
 :::
 
-<1>2. The quotient $k[X]/(f)$ is a field with four elements.
-::: {.proof}
+:::
+
+::: pf-step
+
+The quotient $k[X]/(f)$ is a field with four elements.
+
+::: pf-proof
+
 Because $f$ is irreducible, the ideal $(f)$ is maximal in $k[X]$, so
 $$
 K=k[X]/(f)
@@ -69,10 +82,17 @@ Hence
 $$
 |K|=2^2=4.
 $$
+
 :::
 
-<1>3. This field is the splitting field of $f$ and has degree $2$ over $k$.
-::: {.proof}
+:::
+
+::: pf-step
+
+This field is the splitting field of $f$ and has degree $2$ over $k$.
+
+::: pf-proof
+
 By construction,
 $$
 \alpha^2+\alpha+1=0.
@@ -93,10 +113,17 @@ is the irreducible quadratic $f$,
 $$
 \boxed{[K:k]=2.}
 $$
+
 :::
 
-<1>4. The Galois group is cyclic of order $2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Galois group is cyclic of order $2$.
+
+::: pf-proof
+
 The polynomial $f$ is separable: its derivative is
 $$
 f'(X)=2X+1=1.
@@ -118,10 +145,17 @@ $$
 \boxed{\operatorname{Gal}(K/k)\cong C_2.}
 $$
 In particular the Galois group is solvable.
+
 :::
 
-<1>5. Under the standard definition, the root field is a radical extension.
-::: {.proof}
+:::
+
+::: pf-step
+
+Under the standard definition, the root field is a radical extension.
+
+::: pf-proof
+
 From
 $$
 \alpha^2+\alpha+1=0
@@ -147,7 +181,13 @@ in the base field. Hence, under the standard definition,
 $$
 \boxed{K/k\text{ is a radical extension}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

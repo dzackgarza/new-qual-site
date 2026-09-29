@@ -43,8 +43,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Part (a) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Part (a) is false.
+
+::: pf-proof
+
 Let $H$ be an infinite-dimensional Hilbert space and choose an orthonormal sequence $(e_n)$. Then
 \[
 e_n\rightharpoonup0
@@ -60,10 +67,17 @@ However, for $m\ne n$,
 \|e_n-e_m\|^2=2.
 \]
 Thus no subsequence is even norm-Cauchy, hence no subsequence converges in norm.
+
 :::
 
-<1>2. Part (b) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) is false.
+
+::: pf-proof
+
 Let
 \[
 F(x,y)=\frac{x^2-y^2}{(x^2+y^2)^2}.
@@ -97,10 +111,17 @@ and therefore
 =\frac\pi4.
 \]
 Thus the two iterated integrals are not equal. In particular the asserted Tonelli--Fubini conclusion is false; indeed $F$ is not absolutely integrable near $(0,0)$.
+
 :::
 
-<1>3. Part (c) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (c) is true.
+
+::: pf-proof
+
 Define
 \[
 f(x)=
@@ -129,10 +150,17 @@ If $0<p<1$, then at infinity
 \int_e^\infty f(x)^p\,dx=\infty
 \]
 because the power $x^{-p}$ is not integrable there. Also $f$ is unbounded, so $f\notin L^\infty$. Hence among all $0<p\le\infty$, the function belongs to $L^p$ exactly when $p=1$.
+
 :::
 
-<1>4. Part (d) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (d) is true.
+
+::: pf-proof
+
 Using $|\sin t|\le t$ for $t\ge0$, for $n>2$ we obtain
 \[
 \begin{aligned}
@@ -152,5 +180,11 @@ Therefore
 \le\frac{n}{(n-1)(n-2)}\longrightarrow0.
 \]
 Hence the stated limit is $0$.
+
 :::
+
+:::
+
+:::
+
 :::

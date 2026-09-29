@@ -37,8 +37,14 @@ Set
 \qquad t\ge0.
 \]
 
-<1>1. Convergence in measure implies convergence of the integrals.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Convergence in measure implies convergence of the integrals.
+
+::: pf-proof
+
 Assume $f_n\to0$ in measure.
 Fix $\varepsilon>0$.
 If $\mu(X)=0$, the conclusion is immediate, so assume $\mu(X)>0$.
@@ -63,10 +69,17 @@ Hence the integral is below $\varepsilon$ for all sufficiently large $n$, and th
 \[
 \int_X\frac{|f_n|}{1+|f_n|}\,d\mu\longrightarrow0.
 \]
+
 :::
 
-<1>2. Convergence of the integrals implies convergence in measure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Convergence of the integrals implies convergence in measure.
+
+::: pf-proof
+
 Assume
 \[
 \int_X\Phi(|f_n|)\,d\mu\longrightarrow0.
@@ -92,5 +105,11 @@ Thus
 \longrightarrow0.
 \]
 Since this holds for every $\eta>0$, $f_n\to0$ in measure.
+
 :::
+
+:::
+
+:::
+
 :::

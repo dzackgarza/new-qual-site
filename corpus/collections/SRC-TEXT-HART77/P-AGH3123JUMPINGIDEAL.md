@@ -84,7 +84,11 @@ $$
 [s^4:s^3u:s^2u^2:su^3:u^4].
 $$
 
-<1>1. Hartshorne's projection degeneration (III.9.8.3), applied by scaling
+::: pf
+
+::: {.pf-step #s1}
+
+Hartshorne's projection degeneration (III.9.8.3), applied by scaling
 the coordinate $x_2$, gives a flat family
 $$
 X\longrightarrow T=\AA^1
@@ -105,7 +109,8 @@ X_0=
 \subseteq V(x_2)\cong\PP^3.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 P=[0:0:1:0:0].
@@ -133,15 +138,21 @@ back to $\mco_{\PP^1}(4)$, so it has the same Hilbert polynomial $4m+1$.
 Any nonzero nilpotent thickening supported on this curve would contribute a
 nonzero Hilbert polynomial. Hence the flat special fibre has no extra
 scheme structure and is exactly the reduced $X_0$.
+
 :::
 
-<1>2. The ideal sheaf
+:::
+
+::: {.pf-step #s2}
+
+The ideal sheaf
 $$
 \mci\subseteq\mco_{\PP^4\times T}
 $$
 of the total family is flat over $T$.
 
-::: {.proof}
+::: pf-proof
+
 There is an exact sequence
 $$
 0
@@ -156,17 +167,23 @@ $$
 The middle term is flat over $T$, and $\mco_X$ is flat over $T$ because
 $X\to T$ is flat. In an exact sequence, the kernel of a surjection between
 flat modules is flat. Therefore $\mci$ is flat over $T$.
+
 :::
 
-<1>3. For the untwisted ideal sheaves, the printed jump does not occur:
+:::
+
+::: {.pf-step #s3}
+
+For the untwisted ideal sheaves, the printed jump does not occur:
 $$
 H^0(\PP^4,\mci_t)=H^1(\PP^4,\mci_t)=0
 $$
 for every $t\in T$.
 
-::: {.proof}
+::: pf-proof
+
 Since $\mco_X$ is flat over $T$, restricting the exact sequence of
-step <1>2 to a fibre remains exact:
+step [](#s2){.pf-ref} to a fibre remains exact:
 $$
 0
 \longrightarrow
@@ -199,9 +216,14 @@ H^1(\PP^4,\mci_t)=0.
 $$
 Thus the two displayed functions in the printed statement are both
 identically zero.
+
 :::
 
-<1>4. After twisting by $\mco_{\PP^4}(1)$, for every $a\ne0$ one has
+:::
+
+::: {.pf-step #s4}
+
+After twisting by $\mco_{\PP^4}(1)$, for every $a\ne0$ one has
 $$
 H^0(\PP^4,\mci_a(1))
 =
@@ -210,7 +232,8 @@ H^1(\PP^4,\mci_a(1))
 0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Twisting the fibre sequence gives
 $$
 0
@@ -233,9 +256,14 @@ identifies two five-dimensional spaces and sends the five coordinate
 linear forms to a basis of $H^0(\PP^1,\mco(4))$. Hence it is an
 isomorphism. Since $H^1(\PP^4,\mco(1))=0$, the long exact sequence gives
 the claimed vanishing.
+
 :::
 
-<1>5. For the special fibre,
+:::
+
+::: {.pf-step #s5}
+
+For the special fibre,
 $$
 h^0(\PP^4,\mci_0(1))
 =
@@ -244,7 +272,8 @@ h^1(\PP^4,\mci_0(1))
 1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The pullback of $\mco_{X_0}(1)$ to $\PP^1$ is again
 $\mco_{\PP^1}(4)$, so
 $$
@@ -287,9 +316,14 @@ $$
 H^1(\PP^4,\mci_0(1))
 $$
 with that cokernel. Both have dimension one.
+
 :::
 
-<1>6. Thus the intended semicontinuity example is
+:::
+
+::: {.pf-step #s6}
+
+Thus the intended semicontinuity example is
 $$
 h^0(t,\mci(1))
 =
@@ -301,17 +335,26 @@ h^1(t,\mci(1))
 \end{cases}
 $$
 
-::: {.proof}
-Steps <1>4 and <1>5 give the displayed values. Step <1>3 proves that the
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give the displayed values. Step [](#s3){.pf-ref} proves that the
 same assertion with $\mci$ in place of $\mci(1)$ is false.
+
 :::
 
-<1>7. Q.E.D. for the corrected statement.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 construct the required flat family and prove flatness of
-its ideal sheaf. Step <1>3 resolves the printed cohomology claim, and
-steps <1>4--<1>6 prove the missing-twist correction that has the advertised
+::: pf-qed
+
+for the corrected statement.
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} construct the required flat family and prove flatness of
+its ideal sheaf. Step [](#s3){.pf-ref} resolves the printed cohomology claim, and
+steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove the missing-twist correction that has the advertised
 jump.
+
 :::
+
+:::
+
 :::

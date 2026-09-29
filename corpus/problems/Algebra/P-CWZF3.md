@@ -25,12 +25,17 @@ audit:
 Let $R$ be a PID and let $(p)$ be a prime ideal of $R$. Prove that $R/(p)$ is a field.
 :::
 
-
 ::: {.solution}
 Let $(p)$ be a nonzero prime ideal in the PID $R$. Since every nonzero prime ideal in a PID is maximal, $(p)$ is maximal.
 
-<1>1. Every $x+(p)\ne (p)$ in $R/(p)$ is invertible.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every $x+(p)\ne (p)$ in $R/(p)$ is invertible.
+
+::: pf-proof
+
 Here $x\notin(p)$.
 Because $(p)$ is maximal and $(p)\subsetneq (p,x)$, one has
 \[
@@ -45,12 +50,25 @@ Reducing modulo $(p)$ gives
 (b+(p))(x+(p))=1+(p).
 \]
 Thus every nonzero class in $R/(p)$ has a multiplicative inverse.
+
 :::
 
-<1>2. Therefore $R/(p)$ is a field.
-::: {.proof}
-A commutative ring with identity is a field exactly when every nonzero element is invertible. This holds by <1>1.
 :::
+
+::: pf-step
+
+Therefore $R/(p)$ is a field.
+
+::: pf-proof
+
+A commutative ring with identity is a field exactly when every nonzero element is invertible. This holds by step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

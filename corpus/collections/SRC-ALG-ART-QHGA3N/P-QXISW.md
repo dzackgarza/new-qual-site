@@ -25,9 +25,13 @@ Let $p$ be a prime.
 Show that $S_p = \gens{\tau, \sigma}$ where $\tau$ is a transposition and $\sigma$ is a $p\dash$cycle.
 :::
 
-
 ::: {.solution}
-<1>1. Label the letters moved by \(\sigma\) as the elements of \(\mathbb Z/p\mathbb Z\) so that
+
+::: pf
+
+::: pf-step
+
+Label the letters moved by \(\sigma\) as the elements of \(\mathbb Z/p\mathbb Z\) so that
 \[
 \sigma(i)=i+1.
 \]
@@ -36,33 +40,56 @@ Write the transposition as
 \tau=(a,\,a+d)
 \]
 for some nonzero \(d\in\mathbb Z/p\mathbb Z\).
-::: {.proof}
+
+::: pf-proof
+
 A \(p\)-cycle acts transitively on the \(p\) letters, so after relabeling we may identify its action with translation by \(1\) on \(\mathbb Z/p\mathbb Z\). Since \(\tau\) is a transposition, its two entries are distinct, hence their difference \(d\) is nonzero.
+
 :::
 
-<1>2. For every \(k\in\mathbb Z/p\mathbb Z\), the subgroup \(\langle\tau,\sigma\rangle\) contains the transposition
+:::
+
+::: {.pf-step #s2}
+
+For every \(k\in\mathbb Z/p\mathbb Z\), the subgroup \(\langle\tau,\sigma\rangle\) contains the transposition
 \[
 (a+k,\,a+d+k).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Conjugating \(\tau\) by \(\sigma^k\) gives
 \[
 \sigma^k\tau\sigma^{-k}=(a+k,\,a+d+k).
 \]
 Since \(\tau,\sigma\in\langle\tau,\sigma\rangle\), every such conjugate lies in the subgroup.
+
 :::
 
-<1>3. The graph on \(\mathbb Z/p\mathbb Z\) with edges
+:::
+
+::: {.pf-step #s3}
+
+The graph on \(\mathbb Z/p\mathbb Z\) with edges
 \[
 \{i,i+d\}
 \]
 is connected.
-::: {.proof}
+
+::: pf-proof
+
 Because \(p\) is prime and \(d\neq0\), the element \(d\) generates the additive group \(\mathbb Z/p\mathbb Z\). Thus from any vertex \(i\), repeated addition of \(d\) reaches every vertex.
+
 :::
 
-<1>4. The transpositions corresponding to the edges of a connected graph on \(p\) vertices generate \(S_p\).
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The transpositions corresponding to the edges of a connected graph on \(p\) vertices generate \(S_p\).
+
+::: pf-proof
+
 Fix a spanning tree and a root vertex \(r\). Along the unique path
 \[
 r=v_0,v_1,\dots,v_m=v
@@ -74,13 +101,26 @@ the edge transpositions generate the transposition \((r,v)\): by induction on \(
 \[
 (u,v)=(r,u)(r,v)(r,u).
 \]
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 S_p=\langle\tau,\sigma\rangle.
 \]
-::: {.proof}
-By <1>2, \(\langle\tau,\sigma\rangle\) contains every edge transposition of the connected graph in <1>3. By <1>4 these transpositions generate \(S_p\). The reverse inclusion is automatic because \(\tau,\sigma\in S_p\).
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, \(\langle\tau,\sigma\rangle\) contains every edge transposition of the connected graph in step [](#s3){.pf-ref}. By step [](#s4){.pf-ref} these transpositions generate \(S_p\). The reverse inclusion is automatic because \(\tau,\sigma\in S_p\).
+
 :::
+
+:::
+
+:::
+
 :::

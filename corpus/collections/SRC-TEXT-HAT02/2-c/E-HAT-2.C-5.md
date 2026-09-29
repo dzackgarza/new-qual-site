@@ -46,35 +46,60 @@ in which
 r(\theta,t)=(\theta,-t).
 \]
 
-<1>1. There is a homeomorphism $h:M\to M$, isotopic to the identity and supported in these annuli, such that on a smaller annulus about each $C_j$,
+::: pf
+
+::: pf-step
+
+There is a homeomorphism $h:M\to M$, isotopic to the identity and supported in these annuli, such that on a smaller annulus about each $C_j$,
 \[
 h(\theta,t)=(\theta+\delta,t)
 \]
 for a fixed small $\delta\ne0$.
-::: {.proof}
+
+::: pf-proof
+
 Choose a bump function $\rho(t)$ equal to $1$ near $0$ and $0$ near the boundary of the annulus, and set
 \[
 h_s(\theta,t)=(\theta+s\delta\rho(t),t),\qquad 0\le s\le1.
 \]
 These maps give an isotopy, extended by the identity outside the disjoint annuli.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 g=h\circ r
 \]
 has no fixed points.
-::: {.proof}
+
+::: pf-proof
+
 Outside the chosen annuli, $h$ is the identity and $r$ has no fixed points. In an annulus,
 \[
 g(\theta,t)=(\theta+\delta\rho(-t),-t).
 \]
 A fixed point would require $t=-t$, hence $t=0$, and then would require $\theta+\delta=\theta$ in $S^1$, impossible for the chosen nonzero sufficiently small $\delta$.
+
 :::
 
-<1>3. The map $g$ is homotopic to $r$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $g$ is homotopic to $r$.
+
+::: pf-proof
+
 Since $h$ is isotopic to the identity, the maps $h_s\circ r$ give a homotopy from $r$ to $g$.
+
+:::
+
+:::
+
 :::
 
 Thus

@@ -49,13 +49,18 @@ Q\coloneqq\{w\in\CC:\Re w>0,\ \Im w>0\},
 H\coloneqq\{\zeta\in\CC:\Im\zeta>0\}.
 $$
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #s1}
+
+The map
 $$
 T\colon D\longrightarrow Q,\qquad T(z)\coloneqq\frac{z}{1-z},
 $$
 is a bijection with inverse $T^{-1}(w)=w/(1+w)$.
 
-::: {.proof}
+::: pf-proof
+
 For $z=x+iy$, the inequality $\abs{z-1/2}<1/2$ is equivalent
 to $\abs{z}^2<x$. Thus $D$ is described by
 $y>0$ and $\abs{z}^2<x$, and $1\notin D$. Multiplication by
@@ -80,12 +85,18 @@ T\left(\frac{w}{1+w}\right)=w,
 \frac{T(z)}{1+T(z)}=z
 $$
 show that the stated maps are inverse bijections.
+
 :::
 
-<1>2. The map $P\colon Q\to H$ defined by $P(w)=w^2$ is a
+:::
+
+::: {.pf-step #s2}
+
+The map $P\colon Q\to H$ defined by $P(w)=w^2$ is a
 bijection.
 
-::: {.proof}
+::: pf-proof
+
 Each $w\in Q$ has a unique polar representation
 $w=re^{i\theta}$ with $r>0$ and $0<\theta<\pi/2$.
 Then $w^2=r^2e^{2i\theta}\in H$. Conversely, each
@@ -94,16 +105,22 @@ $\zeta=Re^{i\phi}$ with $R>0$ and $0<\phi<\pi$.
 Its unique preimage in $Q$ is
 $w=\sqrt{R}\,e^{i\phi/2}$, proving both surjectivity and
 injectivity.
+
 :::
 
-<1>3. A one-to-one conformal map onto the upper half-plane is
+:::
+
+::: {.pf-step #s3}
+
+A one-to-one conformal map onto the upper half-plane is
 $$
 F\colon D\longrightarrow H,\qquad
 F(z)=\boxed{\left(\frac{z}{1-z}\right)^2}.
 $$
 
-::: {.proof}
-Steps <1>1 and <1>2 show that $F=P\circ T$ is a bijection.
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that $F=P\circ T$ is a bijection.
 It is holomorphic on $D$, since its only pole is at $1$,
 and its derivative is
 $$
@@ -111,11 +128,17 @@ F'(z)=\frac{2z}{(1-z)^3}.
 $$
 The points $0$ and $1$ are outside $D$, so $F'(z)\neq0$
 throughout $D$. Thus $F$ is conformal.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 supplies the required bijective conformal map.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} supplies the required bijective conformal map.
+
+:::
+
+:::
+
 :::

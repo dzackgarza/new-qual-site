@@ -36,7 +36,11 @@ choose $M>0$ such that
 |x|\ge M\implies |f(x)|<\varepsilon/2.
 \]
 
-<1>1. By Heine--Cantor, $f$ is uniformly continuous on the compact interval
+::: pf
+
+::: pf-step
+
+By Heine--Cantor, $f$ is uniformly continuous on the compact interval
 \[
 [-M-1,M+1].
 \]
@@ -49,9 +53,32 @@ Set
 \delta=\min\{1,\delta_0\}.
 \]
 
-<1>2. Let $|x-y|<\delta$.
-<2>1. If both $x,y\in[-M-1,M+1]$, the compact-interval estimate applies.
-<2>2. Otherwise, suppose for example $x>M+1$. Since $|x-y|<1$, one has $y>M$, so
+:::
+
+::: pf-step
+
+Let $|x-y|<\delta$.
+
+::: pf-proof
+
+::: pf-step
+
+If both $x,y\in[-M-1,M+1]$, the compact-interval estimate applies.
+
+:::
+
+::: pf-step
+
+Otherwise, suppose for example $x>M+1$. Since $|x-y|<1$, one has $y>M$, so
+
+:::
+
+:::
+
+:::
+
+:::
+
 \[
 |f(x)-f(y)|\le |f(x)|+|f(y)|<\varepsilon.
 \]

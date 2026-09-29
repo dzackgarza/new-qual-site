@@ -51,39 +51,56 @@ Fix $x_0\in[0,1]$ and $\varepsilon>0$. Put
 $c_-\coloneqq f(x_0)-\varepsilon$ and
 $c_+\coloneqq f(x_0)+\varepsilon$.
 
-<1>1. There exists $\delta>0$ such that the relative neighborhood
+::: pf
+
+::: {.pf-step #s1}
+
+There exists $\delta>0$ such that the relative neighborhood
 $$
 U\coloneqq(x_0-\delta,x_0+\delta)\cap[0,1]
 $$
 meets neither $f^{-1}(c_-)$ nor $f^{-1}(c_+)$.
 
-::: {.proof}
+::: pf-proof
+
 Both level sets are closed in $[0,1]$ by hypothesis. Their union is
 closed and omits $x_0$, since $c_-<f(x_0)<c_+$. Its complement is
 therefore a relatively open set containing $x_0$, so it contains $U$
 for some $\delta>0$.
+
 :::
 
-<1>2. Every $x\in U$ satisfies
+:::
+
+::: {.pf-step #s2}
+
+Every $x\in U$ satisfies
 $\abs{f(x)-f(x_0)}<\varepsilon$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $x\in U$. The segment with endpoints $x_0$ and $x$ is contained
 in $U$, because each point on it lies in $[0,1]$ and has distance
 at most $\abs{x-x_0}<\delta$ from $x_0$.
 If $f(x)\geq c_+$, the intermediate-value hypothesis on this segment
 gives a point $y$ on the segment with $f(y)=c_+$. This contradicts
-step <1>1. If $f(x)\leq c_-$, the same hypothesis gives a point
-$y$ on the segment with $f(y)=c_-$, again contradicting step <1>1.
+step [](#s1){.pf-ref}. If $f(x)\leq c_-$, the same hypothesis gives a point
+$y$ on the segment with $f(y)=c_-$, again contradicting step [](#s1){.pf-ref}.
 Consequently $c_-<f(x)<c_+$, which is the asserted inequality.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 show that for every $\varepsilon>0$ there is
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show that for every $\varepsilon>0$ there is
 $\delta>0$ such that $x\in[0,1]$ and $\abs{x-x_0}<\delta$ imply
 $\abs{f(x)-f(x_0)}<\varepsilon$. Thus $f$ is continuous at $x_0$.
 Since $x_0$ was arbitrary, $f$ is continuous on $[0,1]$.
+
 :::
+
+:::
+
 :::

@@ -37,8 +37,15 @@ Let $(f_h)_{h \in \mathbb{N}} \subset E$ be a sequence and $f \in E$.
 :::
 
 ::: {.solution}
-<1>1. Weakly convergent sequences are uniformly bounded.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Weakly convergent sequences are uniformly bounded.
+
+::: pf-proof
+
 Suppose $f_h\rightharpoonup f$ in $E=C([0,1])$. Every weakly convergent sequence in a Banach space is norm bounded. Indeed, for each $h$ define
 \[
 T_h:E^*\to\mathbb C,
@@ -62,10 +69,17 @@ for every $h$. Therefore
 \boxed{|f_h(x)|\le M}
 \]
 for every $x\in[0,1]$ and every $h$.
+
 :::
 
-<1>2. Weak convergence implies pointwise convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Weak convergence implies pointwise convergence.
+
+::: pf-proof
+
 Fix $x\in[0,1]$. The evaluation functional
 \[
 \delta_x:E\to\mathbb C,
@@ -84,10 +98,17 @@ Since $x$ was arbitrary,
 \[
 \boxed{f_h(x)\to f(x)\text{ for every }x\in[0,1].}
 \]
+
 :::
 
-<1>3. Show that $f_h(x)=x^h$ does not converge weakly.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $f_h(x)=x^h$ does not converge weakly.
+
+::: pf-proof
+
 For every $x\in[0,1)$,
 \[
 x^h\longrightarrow0,
@@ -110,10 +131,17 @@ If $(x^h)$ converged weakly in $E$ to some $f\in E$, Step 2 would force pointwis
 \[
 \boxed{x^h\text{ does not converge weakly in }C([0,1]).}
 \]
+
 :::
 
-<1>4. Deduce that $C([0,1])$ is not reflexive.
-::: {.proof}
+:::
+
+::: pf-step
+
+Deduce that $C([0,1])$ is not reflexive.
+
+::: pf-proof
+
 The sequence
 \[
 f_h(x)=x^h
@@ -126,5 +154,11 @@ But every subsequence $(x^{h_k})$ has the same pointwise limit $g$ from Step 3. 
 \[
 \boxed{C([0,1])\text{ is not reflexive}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

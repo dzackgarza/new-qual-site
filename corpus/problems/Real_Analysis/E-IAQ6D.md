@@ -27,11 +27,16 @@ Show that $f(t)=0$ for all $t\in[0,1]$.
 ![](../../assets/Real_Analysis/020_Integration/figures/2021-11-27_20-59-05.png)
 :::
 
-
 ::: {.solution}
-<1>1. $\int_0^1 f(t)p(t)\,dt = 0$ for every polynomial $p$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+$\int_0^1 f(t)p(t)\,dt = 0$ for every polynomial $p$.
+
+::: pf-proof
+
 If
 $$
 p(t)=\sum_{k=0}^N a_k t^k,
@@ -43,11 +48,17 @@ $$
 \sum_{k=0}^N a_k\int_0^1 f(t)t^k\,dt
 =0.
 $$
+
 :::
 
-<1>2. $\int_0^1 f(t)^2\,dt = 0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\int_0^1 f(t)^2\,dt = 0$.
+
+::: pf-proof
+
 By the Weierstrass approximation theorem, there are polynomials $p_n$ such that
 $$
 \|p_n-f\|_\infty\longrightarrow0.
@@ -63,12 +74,18 @@ $$
 \longrightarrow0.
 \end{aligned}
 $$
-By step <1>1, $\int_0^1 f(t)p_n(t)\,dt=0$ for every $n$, so $\int_0^1 f(t)^2\,dt=0$.
+By step [](#s1){.pf-ref}, $\int_0^1 f(t)p_n(t)\,dt=0$ for every $n$, so $\int_0^1 f(t)^2\,dt=0$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Since $f^2$ is continuous and nonnegative, step <1>2 implies $f(t)^2=0$ for every $t\in[0,1]$, that is, $\boxed{f\equiv0}$.
 :::
+
+::: pf-qed
+
+Since $f^2$ is continuous and nonnegative, step [](#s2){.pf-ref} implies $f(t)^2=0$ for every $t\in[0,1]$, that is, $\boxed{f\equiv0}$.
+
+:::
+
+:::
+
 :::

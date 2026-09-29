@@ -37,7 +37,6 @@ It may be helpful in this problem to write $n = p^i m$ where $\gcd(m,p) = 1$.
 Calculate $[F : K]$.
 :::
 
-
 ::: {.solution}
 Write
 \[
@@ -46,19 +45,32 @@ n=p^i m,\qquad (m,p)=1,
 and let $\alpha$ be a root of $x^n-t$.
 Thus $\alpha^n=t$.
 
-<1>1. The polynomial $x^n-t$ is irreducible over $K=k(t)$, so $[K(\alpha):K]=n$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The polynomial $x^n-t$ is irreducible over $K=k(t)$, so $[K(\alpha):K]=n$.
+
+::: pf-proof
+
 View $x^n-t$ as a polynomial in $k[t][x]$.
 It is Eisenstein at the prime element $t$: every nonleading coefficient is divisible by $t$, and the constant term $-t$ is not divisible by $t^2$.
 Hence it is irreducible in $k[t][x]$, and therefore in $k(t)[x]$ by Gauss's lemma.
+
 :::
 
-<1>2. Every root of $x^n-t$ is of the form $\zeta\alpha$ with $\zeta^m=1$.
+:::
+
+::: pf-step
+
+Every root of $x^n-t$ is of the form $\zeta\alpha$ with $\zeta^m=1$.
 Hence the splitting field is
 \[
 L=K(\alpha).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because $k$ is algebraically closed, all $m$th roots of unity lie in $k\subset K$.
 If $\zeta^m=1$, then
 \[
@@ -75,21 +87,33 @@ x^n-1=(x^m-1)^{p^i}.
 \]
 Thus $\beta/\alpha=\zeta$ for some $\zeta^m=1$.
 All roots therefore already lie in $K(\alpha)$.
+
 :::
 
-<1>3. The automorphism group is
+:::
+
+::: pf-step
+
+The automorphism group is
 \[
 G=\operatorname{Aut}(L/K)\cong \mu_m,
 \]
 acting by $\alpha\mapsto\zeta\alpha$ for $\zeta^m=1$.
 In particular $|G|=m$.
-::: {.proof}
+
+::: pf-proof
+
 Every $K$-automorphism sends $\alpha$ to another root of its irreducible polynomial, hence to $\zeta\alpha$ with $\zeta^m=1$.
 Conversely, for each such $\zeta$, the assignment $\alpha\mapsto\zeta\alpha$ preserves the relation $\alpha^n=t$ and defines a $K$-automorphism of $L$.
 These automorphisms are distinct.
+
 :::
 
-<1>4. The element
+:::
+
+::: {.pf-step #s4}
+
+The element
 \[
 \beta:=\alpha^m
 \]
@@ -97,7 +121,9 @@ is fixed by $G$, and
 \[
 [K(\beta):K]=p^i.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $\sigma_\zeta\in G$,
 \[
 \sigma_\zeta(\beta)=(\zeta\alpha)^m=\alpha^m=\beta.
@@ -108,9 +134,14 @@ Also
 \]
 The polynomial $x^{p^i}-t$ is Eisenstein at $t$ in $k[t][x]$, so it is irreducible over $K$.
 Hence $[K(\beta):K]=p^i$.
+
 :::
 
-<1>5. The fixed field is
+:::
+
+::: pf-step
+
+The fixed field is
 \[
 F=K(\beta)=K(\alpha^m),
 \]
@@ -118,8 +149,10 @@ and therefore
 \[
 \boxed{[F:K]=p^i}.
 \]
-::: {.proof}
-By <1>4, $K(\beta)\subseteq F$.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, $K(\beta)\subseteq F$.
 Moreover
 \[
 [L:K(\beta)]
@@ -131,6 +164,11 @@ Since $G$ has $m$ elements and fixes $K(\beta)$, Artin's theorem on fixed fields
 [L:F]=|G|=m.
 \]
 Thus $F$ and $K(\beta)$ are intermediate fields of the same degree over $K$, with $K(\beta)\subseteq F$, so they are equal.
-:::
+
 :::
 
+:::
+
+:::
+
+:::

@@ -28,7 +28,6 @@ audit:
 Assuming the dimension of a $\QQ$-vector space is well defined, use [[E-SMI-8000E-GA4]] to deduce that $\ZZ^s$ cannot be isomorphic to $\ZZ^t$ unless $s = t$.
 :::
 
-
 ::: {.solution}
 Suppose
 $$
@@ -36,8 +35,14 @@ $$
 $$
 is an isomorphism of abelian groups.
 
-<1>1. Precomposition with $\phi$ gives an isomorphism of $\mathbb Q$-vector spaces on Hom groups.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Precomposition with $\phi$ gives an isomorphism of $\mathbb Q$-vector spaces on Hom groups.
+
+::: pf-proof
+
 Define
 $$
 \phi^*:\operatorname{Hom}(\mathbb Z^t,\mathbb Q)
@@ -58,23 +63,37 @@ $$
 \operatorname{Hom}(\mathbb Z^s,\mathbb Q)
 $$
 as $\mathbb Q$-vector spaces.
+
 :::
 
-<1>2. $\mathbb Q^t\cong\mathbb Q^s$ as $\mathbb Q$-vector spaces.
-::: {.proof}
+:::
+
+::: pf-step
+
+$\mathbb Q^t\cong\mathbb Q^s$ as $\mathbb Q$-vector spaces.
+
+::: pf-proof
+
 By [[E-SMI-8000E-GA4]],
 $$
 \operatorname{Hom}(\mathbb Z^r,\mathbb Q)\cong\mathbb Q^r
 $$
-for each finite $r$. Hence step <1>1 yields
+for each finite $r$. Hence step [](#s1){.pf-ref} yields
 $$
 \mathbb Q^t\cong\mathbb Q^s
 $$
 as vector spaces over $\mathbb Q$.
+
 :::
 
-<1>3. Compare dimensions.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compare dimensions.
+
+::: pf-proof
+
 Dimension is invariant under vector-space isomorphism, so
 $$
 t=\dim_{\mathbb Q}\mathbb Q^t
@@ -86,5 +105,11 @@ $$
 \boxed{\mathbb Z^s\cong\mathbb Z^t\Longrightarrow s=t.}
 $$
 Therefore the rank of a finitely generated free abelian group is well defined.
+
 :::
+
+:::
+
+:::
+
 :::

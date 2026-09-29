@@ -45,20 +45,31 @@ $$
 \deg K=2g-2=2.
 $$
 
-<1>1. If $\deg D\geq5$, then $D$ is very ample.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $\deg D\geq5$, then $D$ is very ample.
+
+::: pf-proof
+
 Corollary IV.3.2(b) states that on a curve of genus $g$, every divisor of
 degree at least $2g+1$ is very ample.  Here
 $$
 2g+1=5,
 $$
 so every divisor of degree at least $5$ is very ample.
+
 :::
 
-<1>2. If $D$ is very ample, then $\deg D>0$ and $\ell(D)\geq3$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $D$ is very ample, then $\deg D>0$ and $\ell(D)\geq3$.
+
+::: pf-proof
+
 A very ample divisor is ample, so Corollary IV.3.3 gives
 $$
 \deg D>0.
@@ -75,11 +86,17 @@ Thus
 $$
 \ell(D)\geq3.
 $$
+
 :::
 
-<1>3. A very ample divisor on $X$ cannot have degree $1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+A very ample divisor on $X$ cannot have degree $1$.
+
+::: pf-proof
+
 A very ample divisor has a nonzero global section, so after replacing $D$ by a
 linearly equivalent effective divisor we may write
 $$
@@ -97,12 +114,18 @@ $h^0(X,\OO_X)=1$, it follows that
 $$
 \ell(D)\leq2,
 $$
-contradicting step <1>2.
+contradicting step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. A very ample divisor on $X$ cannot have degree $2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+A very ample divisor on $X$ cannot have degree $2$.
+
+::: pf-proof
+
 Riemann-Roch gives
 $$
 \ell(D)-\ell(K-D)=\deg D+1-g=1.
@@ -121,12 +144,18 @@ and therefore
 $$
 \ell(D)\leq2,
 $$
-again contradicting step <1>2.
+again contradicting step [](#s2){.pf-ref}.
+
 :::
 
-<1>5. A very ample divisor on $X$ cannot have degree $3$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+A very ample divisor on $X$ cannot have degree $3$.
+
+::: pf-proof
+
 Here
 $$
 \deg(K-D)=-1,
@@ -139,12 +168,18 @@ Riemann-Roch yields
 $$
 \ell(D)=\deg D+1-g=3+1-2=2,
 $$
-contradicting step <1>2.
+contradicting step [](#s2){.pf-ref}.
+
 :::
 
-<1>6. A very ample divisor on $X$ cannot have degree $4$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+A very ample divisor on $X$ cannot have degree $4$.
+
+::: pf-proof
+
 Again
 $$
 \deg(K-D)=-2,
@@ -171,31 +206,49 @@ $$
 g=\frac{(4-1)(4-2)}2=3,
 $$
 contradicting $g(X)=2$.
+
 :::
 
-<1>7. If $D$ is very ample, then
+:::
+
+::: {.pf-step #s7}
+
+If $D$ is very ample, then
 $$
 \boxed{\deg D\geq5}.
 $$
 
-::: {.proof}
-Step <1>2 gives $\deg D>0$, and steps <1>3--<1>6 exclude the four possible
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives $\deg D>0$, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} exclude the four possible
 positive degrees below $5$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: {.pf-step #s8}
+
+Therefore
 $$
 \boxed{D\text{ is very ample}\iff\deg D\geq5}.
 $$
 
-::: {.proof}
-Step <1>1 proves the reverse implication, and step <1>7 proves the forward
+::: pf-proof
+
+Step [](#s1){.pf-ref} proves the reverse implication, and step [](#s7){.pf-ref} proves the forward
 implication.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 is exactly the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} is exactly the required equivalence.
+
+:::
+
+:::
+
 :::

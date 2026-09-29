@@ -47,8 +47,14 @@ r_N:X\longrightarrow \bigvee_{i=1}^N S_i^1
 \]
 be the retraction that is the identity on the first $N$ circles and collapses all later circles to the wedge point.
 
-<1>1. The class of $\gamma$ is nonzero in $H_1(X;\mathbb Z)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The class of $\gamma$ is nonzero in $H_1(X;\mathbb Z)$.
+
+::: pf-proof
+
 Suppose instead that $[\gamma]=0$ in $H_1(X;\mathbb Z)$. By the Hurewicz theorem in degree $1$,
 \[
 H_1(X;\mathbb Z)\cong \pi_1(X)_{\mathrm{ab}},
@@ -69,14 +75,21 @@ then every commutator in the tail of $\gamma$ uses circles numbered $>2k+2$ and 
 =[x_1,x_2][x_3,x_4]\cdots[x_{2k+1},x_{2k+2}].
 \]
 On the other hand, the image of the right-hand side above is a product of at most $k$ commutators in this free group. This contradicts Exercise 12, which says that the displayed product of $k+1$ basis commutators cannot be expressed as a product of fewer than $k+1$ commutators. Therefore $[\gamma]\ne0$ in $H_1(X;\mathbb Z)$.
+
 :::
 
-<1>2. The map
+:::
+
+::: pf-step
+
+The map
 \[
 H_1(X)\longrightarrow H_1(A)\oplus H_1(B)
 \]
 induced by the retractions onto the odd and even circles is not an isomorphism.
-::: {.proof}
+
+::: pf-proof
+
 Let $r_A:X\to A$ and $r_B:X\to B$ be the two retractions. Each factor
 \[
 [f_{2j-1},f_{2j}]
@@ -84,5 +97,11 @@ Let $r_A:X\to A$ and $r_B:X\to B$ be the two retractions. Each factor
 contains one loop in $A$ and one loop in $B$. Under $r_A$, the even loop is collapsed, so the commutator becomes trivial; under $r_B$, the odd loop is collapsed, so it again becomes trivial. Thus both $(r_A)_*([\gamma])$ and $(r_B)_*([\gamma])$ vanish in first homology.
 
 By part 1, however, $[\gamma]\ne0$ in $H_1(X)$. Hence the displayed map has nonzero kernel and therefore is not an isomorphism.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -38,10 +38,16 @@ Let $\psi \in \ell^\infty(\mathbb{N})^*$ be any continuous linear functional suc
 3. Show there is no $y \in \ell^1(\mathbb{N})$ such that $\psi(x) = \sum_{n=1}^{\infty} x_n y_n$ for all $x \in \ell^\infty(\mathbb{N})$.
 :::
 
-
 ::: {.solution}
-<1>1. Extend the Cesaro-limit functional by Hahn--Banach.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Extend the Cesaro-limit functional by Hahn--Banach.
+
+::: pf-proof
+
 Define
 \[
 L:V\to\mathbb C,
@@ -66,10 +72,17 @@ with the same norm. Hence
 \varphi(x)=\lim_{n\to\infty}\frac1n\sum_{j=1}^n x_j
 \quad\text{for every }x\in V.}
 \]
+
 :::
 
-<1>2. Prove shift invariance of every such extension.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove shift invariance of every such extension.
+
+::: pf-proof
+
 Let
 \[
 x=(x_1,x_2,\ldots),
@@ -91,10 +104,17 @@ Therefore
 \boxed{\psi(\widetilde x)=\psi(x)}
 \]
 for every \(x\in\ell^\infty\).
+
 :::
 
-<1>3. Rule out representation by an \(\ell^1\) sequence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rule out representation by an \(\ell^1\) sequence.
+
+::: pf-proof
+
 Suppose there were \(y=(y_n)\in\ell^1\) such that
 \[
 \psi(x)=\sum_{n=1}^\infty x_ny_n
@@ -124,5 +144,11 @@ Hence the alleged representation would make \(\psi=0\). But the constant sequenc
 \psi(\mathbf1)=1.
 \]
 This contradiction proves that no such \(y\in\ell^1\) exists.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -29,10 +29,16 @@ In this problem, as you apply Sylow's Theorem, state precisely which portions yo
 > You need only show that if there is a simple group of order 60, then it must be isomorphic to $A_5$.
 :::
 
-
 ::: {.solution}
-<1>1. There is no simple group of order $30$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+There is no simple group of order $30$.
+
+::: pf-proof
+
 Suppose $|G|=30$ and $G$ is simple. By Sylow's third theorem,
 \[
 n_5\equiv1\pmod5,\qquad n_5\mid6,
@@ -58,13 +64,20 @@ nonidentity elements of order $3$. These sets are disjoint, so together with the
 1+24+20=45>30
 \]
 elements, a contradiction.
+
 :::
 
-<1>2. Now suppose $G$ is simple of order $60$. Then
+:::
+
+::: {.pf-step #s2}
+
+Now suppose $G$ is simple of order $60$. Then
 \[
 n_5=6,\qquad n_3=10.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $p=5$, Sylow's third theorem gives
 \[
 n_5\equiv1\pmod5,\qquad n_5\mid12,
@@ -80,32 +93,53 @@ so $n_3\in\{1,4,10\}$. The value $1$ is excluded by simplicity. If $n_3=4$, conj
 G\longrightarrow S_4.
 \]
 Its kernel is normal. Since $G$ is simple and the action is nontrivial, the map would be injective, impossible because $60\nmid24$. Therefore $n_3=10$.
+
 :::
 
-<1>3. The number $n_2$ of Sylow $2$-subgroups satisfies
+:::
+
+::: pf-step
+
+The number $n_2$ of Sylow $2$-subgroups satisfies
 \[
 n_2\in\{5,15\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Sylow's third theorem gives
 \[
 n_2\equiv1\pmod2,\qquad n_2\mid15,
 \]
 so $n_2\in\{1,3,5,15\}$. The value $1$ is excluded by simplicity. If $n_2=3$, conjugation on the three Sylow $2$-subgroups gives a nontrivial homomorphism $G\to S_3$, which by simplicity would be injective; this is impossible because $60>6$. Hence only $5$ and $15$ remain.
+
 :::
 
-<1>4. If $n_2=5$, then $G$ embeds in $S_5$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $n_2=5$, then $G$ embeds in $S_5$.
+
+::: pf-proof
+
 Conjugation gives a transitive action of $G$ on its five Sylow $2$-subgroups, hence a nontrivial homomorphism
 \[
 \varphi:G\longrightarrow S_5.
 \]
 Its kernel is normal. Since $G$ is simple and the action is nontrivial, $\ker\varphi=1$, so $\varphi$ is injective.
+
 :::
 
-<1>5. If $n_2=15$, then $G$ still has a subgroup of index $5$, and hence still embeds in $S_5$.
-::: {.proof}
-By <1>2, $n_5=6$, so the Sylow $5$-subgroups contribute exactly
+:::
+
+::: {.pf-step #s5}
+
+If $n_2=15$, then $G$ still has a subgroup of index $5$, and hence still embeds in $S_5$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $n_5=6$, so the Sylow $5$-subgroups contribute exactly
 \[
 6(5-1)=24
 \]
@@ -134,14 +168,21 @@ The value $60$ would put $x$ in $Z(G)$, impossible because a nonabelian simple g
 so $C_G(x)$ has index $5$.
 
 The action of $G$ on the five left cosets of $C_G(x)$ gives a nontrivial homomorphism $G\to S_5$. By simplicity its kernel is trivial, hence $G$ embeds in $S_5$.
+
 :::
 
-<1>6. In either case,
+:::
+
+::: {.pf-step #s6}
+
+In either case,
 \[
 G\cong A_5.
 \]
-::: {.proof}
-By <1>4 and <1>5, there is an injective homomorphism
+
+::: pf-proof
+
+By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, there is an injective homomorphism
 \[
 G\hookrightarrow S_5.
 \]
@@ -150,17 +191,30 @@ Its image has order $60$, hence index $2$ in $S_5$. Every index-$2$ subgroup is 
 \ker(\operatorname{sgn})=A_5.
 \]
 Thus the image of $G$ is $A_5$, and $G\cong A_5$.
+
 :::
 
-<1>7. Consequently, for a simple group $G$ of order $60$,
+:::
+
+::: pf-step
+
+Consequently, for a simple group $G$ of order $60$,
 \[
 \boxed{n_2=5,\qquad n_3=10,\qquad n_5=6}.
 \]
-::: {.proof}
-The values of $n_3$ and $n_5$ were proved in <1>2. By <1>6, $G\cong A_5$. The Sylow $2$-subgroups of $A_5$ are the five Klein four groups
+
+::: pf-proof
+
+The values of $n_3$ and $n_5$ were proved in step [](#s2){.pf-ref}. By step [](#s6){.pf-ref}, $G\cong A_5$. The Sylow $2$-subgroups of $A_5$ are the five Klein four groups
 \[
 V_i=\{1\}\cup\{(ab)(cd):\{a,b,c,d\}=\{1,2,3,4,5\}\setminus\{i\}\},
 \]
 one for each fixed letter $i$. Hence $n_2=5$.
+
 :::
+
+:::
+
+:::
+
 :::

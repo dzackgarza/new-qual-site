@@ -43,7 +43,11 @@ $$
 g(z_0)\neq0.
 $$
 
-<1>1. There is $\delta>0$ such that the closed disk
+::: pf
+
+::: {.pf-step #s1}
+
+There is $\delta>0$ such that the closed disk
 $$
 \overline{B}(z_0,\delta)
 $$
@@ -56,7 +60,8 @@ $$
 m g(z)+(z-z_0)g'(z)\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $D$ is open, some closed disk centered at $z_0$ lies in $D$.
 Moreover,
 $$
@@ -71,9 +76,14 @@ m g(z_0)
 $$
 Both displayed functions are continuous. Shrinking the disk if necessary
 therefore makes both nonzero on its closure.
+
 :::
 
-<1>2. On the punctured disk
+:::
+
+::: {.pf-step #s2}
+
+On the punctured disk
 $$
 0<\abs{z-z_0}\leq\delta,
 $$
@@ -82,7 +92,8 @@ $$
 f'(z)\neq0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiate the factorization above:
 $$
 f'(z)
@@ -93,10 +104,15 @@ m g(z)+(z-z_0)g'(z)
 \right).
 $$
 For $z\neq z_0$, the first factor is nonzero, and the second factor is
-nonzero by step <1>1.
+nonzero by step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #s3}
+
+Define
 $$
 \varepsilon
 =
@@ -108,19 +124,25 @@ $$
 \varepsilon>0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the boundary circle,
 $$
 f(z)-w_0
 =
 (z-z_0)^m g(z).
 $$
-Step <1>1 gives $g(z)\neq0$, so this expression never vanishes on the
+Step [](#s1){.pf-ref} gives $g(z)\neq0$, so this expression never vanishes on the
 circle. Its modulus is continuous on the compact circle, hence attains a
 strictly positive minimum.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 0<\abs{w-w_0}<\varepsilon,
 $$
@@ -130,7 +152,8 @@ $$
 $$
 counting multiplicity.
 
-::: {.proof}
+::: pf-proof
+
 On the boundary circle,
 $$
 \abs{
@@ -146,18 +169,24 @@ $$
 Rouché's theorem implies that $f-w$ and $f-w_0$ have the same number of
 zeros in the disk, counting multiplicity.
 
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 f(z)-w_0=(z-z_0)^m g(z)
 $$
 with $g$ nonzero throughout the disk. Hence $f-w_0$ has exactly the one
 zero $z_0$, of multiplicity $m$. Thus $f-w$ has exactly $m$ zeros counting
 multiplicity.
+
 :::
 
-<1>5. Every zero of $f-w$ in the disk from step <1>4 is simple.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Every zero of $f-w$ in the disk from step [](#s4){.pf-ref} is simple.
+
+::: pf-proof
+
 Because $w\neq w_0$,
 $$
 f(z_0)-w
@@ -165,12 +194,17 @@ f(z_0)-w
 w_0-w
 \neq0.
 $$
-Thus none of the zeros counted in step <1>4 is $z_0$. Every such zero lies
-in the punctured disk, where step <1>2 gives $f'(z)\neq0$. Therefore the
+Thus none of the zeros counted in step [](#s4){.pf-ref} is $z_0$. Every such zero lies
+in the punctured disk, where step [](#s2){.pf-ref} gives $f'(z)\neq0$. Therefore the
 derivative of $f(z)-w$ is nonzero at each zero, so each zero is simple.
+
 :::
 
-<1>6. For every $w$ satisfying
+:::
+
+::: {.pf-step #s6}
+
+For every $w$ satisfying
 $$
 0<\abs{w-w_0}<\varepsilon,
 $$
@@ -183,16 +217,23 @@ $$
 \abs{z-z_0}<\delta.
 $$
 
-::: {.proof}
-Step <1>4 gives $m$ solutions counted with multiplicity. Step <1>5 says
+::: pf-proof
+
+Step [](#s4){.pf-ref} gives $m$ solutions counted with multiplicity. Step [](#s5){.pf-ref} says
 that every counted zero has multiplicity one. Hence there are exactly $m$
 distinct solutions.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1, <1>3, and <1>6 provide the required positive numbers
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s3){.pf-ref} and [](#s6){.pf-ref} provide the required positive numbers
 $\delta$ and $\varepsilon$ and establish the conclusion.
+
 :::
+
+:::
+
 :::

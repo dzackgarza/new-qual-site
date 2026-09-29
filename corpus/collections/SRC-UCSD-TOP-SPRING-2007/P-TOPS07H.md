@@ -26,52 +26,115 @@ Show that $X$ is homotopy equivalent to $S^4$.
 :::
 
 ::: {.solution}
-<1>1. $\pi_1(X) = 1$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$\pi_1(X) = 1$.
+
+::: pf-proof
+
 the suspension of a path-connected space is simply connected (the two cones are contractible and their intersection is $M$, which is path-connected, so van Kampen gives the trivial group).
+
 :::
 
-<1>2. $H_0(X) = \ZZ$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+$H_0(X) = \ZZ$.
+
+::: pf-proof
+
 $X$ is path-connected.
+
 :::
 
-<1>3. $H_1(X) = 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+$H_1(X) = 0$.
+
+::: pf-proof
+
 $H_1(X) \cong H_0(M)$ by the suspension isomorphism, and $H_0(M) = \ZZ$; more precisely $\widetilde H_{n+1}(\Sigma M) \cong \widetilde H_n(M)$, so $H_1(X) \cong \widetilde H_0(M) = 0$.
+
 :::
 
-<1>4. $H_2(X) = 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+$H_2(X) = 0$.
+
+::: pf-proof
+
 $H_2(X) \cong \widetilde H_1(M) = 0$ (since $M$ is a homology sphere, $\widetilde H_1(M) = 0$).
+
 :::
 
-<1>5. $H_3(X) = 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+$H_3(X) = 0$.
+
+::: pf-proof
+
 $H_3(X) \cong \widetilde H_2(M) = 0$ (homology sphere).
+
 :::
 
-<1>6. $H_4(X) = \ZZ$.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+$H_4(X) = \ZZ$.
+
+::: pf-proof
+
 $H_4(X) \cong \widetilde H_3(M) = \ZZ$ (homology sphere).
+
 :::
 
-<1>7. Hence $X$ has the homology of $S^4$ and trivial fundamental group.
-::: {.proof}
-<1>1–<1>6.
 :::
 
-<1>8. $X$ is homotopy equivalent to $S^4$.
-::: {.proof}
-The suspension of the closed $3$-manifold $M$ has CW type, and <1>1 shows it is simply connected. The degree-$2$ Hurewicz theorem gives $\pi_2(X)\cong H_2(X)=0$. Thus $X$ is $2$-connected, so Hurewicz in degree $3$ gives $\pi_3(X)\cong H_3(X)=0$. Hence $X$ is $3$-connected, and Hurewicz now gives an isomorphism
+::: {.pf-step #s7}
+
+Hence $X$ has the homology of $S^4$ and trivial fundamental group.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s8}
+
+$X$ is homotopy equivalent to $S^4$.
+
+::: pf-proof
+
+The suspension of the closed $3$-manifold $M$ has CW type, and step [](#s1){.pf-ref} shows it is simply connected. The degree-$2$ Hurewicz theorem gives $\pi_2(X)\cong H_2(X)=0$. Thus $X$ is $2$-connected, so Hurewicz in degree $3$ gives $\pi_3(X)\cong H_3(X)=0$. Hence $X$ is $3$-connected, and Hurewicz now gives an isomorphism
 $$
 \pi_4(X)\xrightarrow{\cong}H_4(X)\cong\ZZ.
 $$
 Choose $f:S^4\to X$ representing a class mapping to a generator of $H_4(X)$. Then $f_*$ is an isomorphism on $H_4$; it is also an isomorphism on $H_0$, and all homology groups in degrees $1,2,3$ and above $4$ vanish on both spaces. Thus $f$ is a homology equivalence between simply connected CW complexes. The homological Whitehead theorem therefore implies that $f$ is a homotopy equivalence.
+
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-<1>7 and <1>8.
 :::
+
+::: pf-qed
+
+Steps [](#s7){.pf-ref} and [](#s8){.pf-ref}.
+
+:::
+
+:::
+
 :::

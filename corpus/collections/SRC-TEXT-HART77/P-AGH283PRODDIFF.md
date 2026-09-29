@@ -45,14 +45,19 @@ $$
 In (a), put $Z=X\times_S Y$.
 In (b), products are over $k$ and the canonical sheaf is the top exterior power of the sheaf of differentials.
 
-<1>1. For $A$-algebras $B,C$, put $D=B\otimes_A C$.
+::: pf
+
+::: {.pf-step #s1}
+
+For $A$-algebras $B,C$, put $D=B\otimes_A C$.
 There is a natural $D$-linear isomorphism
 $$
 \Omega_{D/A}\cong
 (\Omega_{B/A}\otimes_A C)\oplus(B\otimes_A\Omega_{C/A}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $M$ be the displayed direct sum, with its $D$-module structure induced by the two factors.
 Define
 $$
@@ -77,29 +82,41 @@ $$
 $$
 Such differentials generate $\Omega_{D/A}$, so the composites are identities.
 The formulas commute with homomorphisms of the algebras and with localization.
+
 :::
 
-<1>2. These affine isomorphisms give the natural sheaf isomorphism in (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+These affine isomorphisms give the natural sheaf isomorphism in (a).
+
+::: pf-proof
+
 Cover $S$ by affine opens $\Spec A$ and the corresponding inverse images in $X,Y$ by affine opens $\Spec B,\Spec C$.
 The affine products $\Spec(B\otimes_A C)$ cover $Z$.
-On such a product, the two summands of step <1>1 are exactly the modules defining $p_1^*\Omega_{X/S}$ and $p_2^*\Omega_{Y/S}$.
+On such a product, the two summands of step [](#s1){.pf-ref} are exactly the modules defining $p_1^*\Omega_{X/S}$ and $p_2^*\Omega_{Y/S}$.
 The natural maps to $\Omega_{Z/S}$ are induced by the projections, as in the transitivity sequence of [@Har10a, Proposition II.8.11]; base change identifies the relative term for either projection with the pullback of the other factor's differentials [@Har10a, Proposition II.8.10].
-Step <1>1 proves that the sum of these natural maps is an isomorphism on each affine product.
+Step [](#s1){.pf-ref} proves that the sum of these natural maps is an isomorphism on each affine product.
 Naturality and localization compatibility make the isomorphisms agree on overlaps, so they glue.
 No flatness or finite-type hypothesis is needed in (a).
+
 :::
 
-<1>3. For smooth varieties $X,Y$ of dimensions $r,s$ over a field $k$, there is a natural isomorphism
+:::
+
+::: {.pf-step #s3}
+
+For smooth varieties $X,Y$ of dimensions $r,s$ over a field $k$, there is a natural isomorphism
 $$
 \omega_{X\times_kY}\cong p_1^*\omega_X\otimes p_2^*\omega_Y.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The sheaves $\Omega_{X/k}$ and $\Omega_{Y/k}$ are locally free of ranks $r$ and $s$.
 Their product is smooth, since smooth morphisms are preserved by base change and composition, and has dimension $r+s$ [@Har10a, Chapter III, §10].
-Apply step <1>2 with $S=\Spec k$ and take the top exterior power.
+Apply step [](#s2){.pf-ref} with $S=\Spec k$ and take the top exterior power.
 For locally free sheaves of ranks $r$ and $s$, wedging the first summand before the second gives
 $$
 \bigwedge^{r+s}(F\oplus G)\cong\bigwedge^rF\otimes\bigwedge^sG.
@@ -117,28 +134,40 @@ $$
 $$
 Over the algebraically closed field in (b), nonsingular varieties are smooth, so this proves (b).
 The calculation also proves its smooth-variety formulation over an arbitrary field.
+
 :::
 
-<1>4. For the surface $X=Y\times_kY$ in (c), $\omega_X\cong\OO_X$ and $\boxed{p_g(X)=1}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+For the surface $X=Y\times_kY$ in (c), $\omega_X\cong\OO_X$ and $\boxed{p_g(X)=1}$.
+
+::: pf-proof
+
 The [[D-MODCONORM|adjunction formula]] for the smooth degree-three curve $Y\subseteq\PP_k^2$ gives
 $$
 \omega_Y\cong\OO_Y(3-3)\cong\OO_Y
 $$
 [@Har10a, Example II.8.20.3].
-Step <1>3 therefore gives $\omega_X\cong\OO_X$.
+Step [](#s3){.pf-ref} therefore gives $\omega_X\cong\OO_X$.
 The product of integral varieties over an algebraically closed field is integral [@Har10a, Exercises I.3.15--I.3.16 and II.3.23], and the Segre embedding makes $X$ projective.
 Every global regular function on this projective integral variety is constant: its morphism to $\PP^1$ has closed irreducible image missing infinity, so has image a point, and reducedness makes the function equal to that constant.
 Thus $\Gamma(X,\OO_X)=k$ and
 $$
 p_g(X)=\dim_k\Gamma(X,\omega_X)=1.
 $$
+
 :::
 
-<1>5. The Segre Hilbert polynomial of $X$ is $P_X(q)=9q^2$, and $\boxed{p_a(X)=-1}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The Segre Hilbert polynomial of $X$ is $P_X(q)=9q^2$, and $\boxed{p_a(X)=-1}$.
+
+::: pf-proof
+
 Write $Y=\operatorname{Proj}A$ with
 $$
 A=k[x_0,x_1,x_2]/(F),\qquad\deg F=3.
@@ -161,11 +190,17 @@ The Hilbert polynomial is consequently $P_X(q)=9q^2$.
 For a projective variety of dimension two, the definition of arithmetic genus is $p_a(X)=(-1)^2(P_X(0)-1)$ [@Har10a, Chapter I, §7].
 Since $P_X(0)=0$, this gives $p_a(X)=-1$.
 The value $P_X(0)$ is the polynomial's value at zero, not the dimension of the degree-zero piece $R_0=k$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove (a), step <1>3 proves (b), and steps <1>4--<1>5 give both genera required in (c).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), step [](#s3){.pf-ref} proves (b), and steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give both genera required in (c).
+
+:::
+
+:::
+
 :::

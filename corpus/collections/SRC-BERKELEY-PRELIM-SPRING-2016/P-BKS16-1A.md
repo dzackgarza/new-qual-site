@@ -43,12 +43,17 @@ $$
 f(x)=\sqrt{T^{\circ4}(x)}.
 $$
 
-<1>1. The function $T$ is a strictly increasing bijection
+::: pf
+
+::: {.pf-step #s1}
+
+The function $T$ is a strictly increasing bijection
 $$
 T:[4,9]\longrightarrow[4,9].
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $x\in[4,9]$,
 $$
 2\leq\sqrt{x}\leq3,
@@ -64,9 +69,14 @@ T(4)=4,
 T(9)=9.
 $$
 Continuity and strict monotonicity therefore give the stated bijection.
+
 :::
 
-<1>2. The inverse of $T$ is
+:::
+
+::: pf-step
+
+The inverse of $T$ is
 $$
 \psi(u)
 \coloneqq
@@ -74,7 +84,8 @@ $$
 $$
 which is a polynomial with rational coefficients.
 
-::: {.proof}
+::: pf-proof
+
 If $u=T(x)$, then
 $$
 u=-6+5\sqrt{x},
@@ -88,9 +99,14 @@ $$
 x=\left(\frac{u+6}{5}\right)^2.
 $$
 Thus $T^{-1}=\psi$ on $[4,9]$.
+
 :::
 
-<1>3. The function $f$ is a strictly increasing bijection
+:::
+
+::: {.pf-step #s3}
+
+The function $f$ is a strictly increasing bijection
 $$
 f:[4,9]\longrightarrow[2,3],
 $$
@@ -100,8 +116,9 @@ f^{-1}(y)=\psi^{\circ4}(y^2).
 $$
 In particular, $f^{-1}$ is a polynomial with rational coefficients.
 
-::: {.proof}
-By step <1>1, every iterate $T^{\circ r}$ is a strictly increasing bijection of $[4,9]$ onto itself and fixes $4$ and $9$. The square-root map is a strictly increasing bijection from $[4,9]$ onto $[2,3]$. Hence
+::: pf-proof
+
+By step [](#s1){.pf-ref}, every iterate $T^{\circ r}$ is a strictly increasing bijection of $[4,9]$ onto itself and fixes $4$ and $9$. The square-root map is a strictly increasing bijection from $[4,9]$ onto $[2,3]$. Hence
 $$
 f(x)=\sqrt{T^{\circ4}(x)}
 $$
@@ -116,9 +133,14 @@ $$
 x=\psi^{\circ4}(y^2).
 $$
 Since $\psi$ is a polynomial with rational coefficients, so is $y\mapsto\psi^{\circ4}(y^2)$.
+
 :::
 
-<1>4. One has the inverse-function identity
+:::
+
+::: {.pf-step #s4}
+
+One has the inverse-function identity
 $$
 \int_4^9 f(x)\,dx
 +
@@ -127,7 +149,8 @@ $$
 19.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Use the substitution $y=f(x)$. Since $x=f^{-1}(y)$,
 $$
 dx=(f^{-1})'(y)\,dy,
@@ -157,16 +180,22 @@ $$
 \end{aligned}
 $$
 Rearrange.
+
 :::
 
-<1>5. The integral in the problem is a rational number.
+:::
 
-::: {.proof}
-By step <1>3, $f^{-1}$ is a polynomial with rational coefficients. Hence
+::: {.pf-step #s5}
+
+The integral in the problem is a rational number.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $f^{-1}$ is a polynomial with rational coefficients. Hence
 $$
 \int_2^3 f^{-1}(y)\,dy
 $$
-is rational, because a polynomial over $\QQ$ has an antiderivative over $\QQ$ and the endpoints $2,3$ are rational. Step <1>4 then shows that
+is rational, because a polynomial over $\QQ$ has an antiderivative over $\QQ$ and the endpoints $2,3$ are rational. Step [](#s4){.pf-ref} then shows that
 $$
 \int_4^9 f(x)\,dx
 =
@@ -174,11 +203,17 @@ $$
 \int_2^3 f^{-1}(y)\,dy
 $$
 is rational.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

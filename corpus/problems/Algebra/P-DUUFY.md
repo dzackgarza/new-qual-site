@@ -25,20 +25,32 @@ audit:
   Show that $NH \leq G$ is a subgroup.
 :::
 
-
 ::: {.solution}
 We use the one-step subgroup criterion.
 
-<1>1. The set $NH$ is nonempty.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The set $NH$ is nonempty.
+
+::: pf-proof
+
 Since $e\in N\cap H$, one has $e=ee\in NH$.
+
 :::
 
-<1>2. If $n_1h_1,n_2h_2\in NH$, then
+:::
+
+::: {.pf-step #s2}
+
+If $n_1h_1,n_2h_2\in NH$, then
 \[
 (n_1h_1)(n_2h_2)^{-1}\in NH.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Compute
 \[
 (n_1h_1)(n_2h_2)^{-1}
@@ -54,10 +66,23 @@ n_1h n_2^{-1}
 =n_1(hn_2^{-1}h^{-1})h,
 \]
 which is a product of an element of $N$ and an element of $H$, so it lies in $NH$.
+
 :::
 
-<1>3. Therefore $NH\le G$.
-::: {.proof}
-Apply the subgroup criterion using <1>1 and <1>2.
 :::
+
+::: pf-step
+
+Therefore $NH\le G$.
+
+::: pf-proof
+
+Apply the subgroup criterion using steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

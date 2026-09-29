@@ -35,16 +35,27 @@ $$
 A=\{x\in[0,100]:x\le f(x)\}.
 $$
 
-<1>1. The set $A$ is nonempty and bounded above, so $c=\sup A$ exists and
+::: pf
+
+::: pf-step
+
+The set $A$ is nonempty and bounded above, so $c=\sup A$ exists and
 lies in $[0,100]$.
 
-::: {.proof}
+::: pf-proof
+
 Since $0<f(0)$, one has $0\in A$. By definition $A\subseteq[0,100]$.
+
 :::
 
-<1>2. One has $c\le f(c)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+One has $c\le f(c)$.
+
+::: pf-proof
+
 For every $x\in A$, one has $x\le c$. Because $f$ is monotonically
 increasing,
 $$
@@ -57,18 +68,30 @@ x\le f(c)
 $$
 so $f(c)$ is an upper bound for $A$. Since $c$ is the least upper bound,
 $c\le f(c)$.
+
 :::
 
-<1>3. One has $c<100$.
+:::
 
-::: {.proof}
-If $c=100$, then step <1>2 would give $100\le f(100)$, contrary to the
+::: {.pf-step #s3}
+
+One has $c<100$.
+
+::: pf-proof
+
+If $c=100$, then step [](#s2){.pf-ref} would give $100\le f(100)$, contrary to the
 hypothesis $f(100)<100$.
+
 :::
 
-<1>4. One has $f(c)\le c$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+One has $f(c)\le c$.
+
+::: pf-proof
+
 Suppose for contradiction that
 $$
 c<f(c).
@@ -77,23 +100,35 @@ Monotonicity gives
 $$
 f(c)\le f(f(c)).
 $$
-Since $c<100$ by step <1>3, monotonicity also gives
+Since $c<100$ by step [](#s3){.pf-ref}, monotonicity also gives
 $$
 f(c)\le f(100)<100,
 $$
 and $f(c)>c\ge0$. Hence $f(c)\in[0,100]$ and $f(c)\le f(f(c))$, so
 $f(c)\in A$. But $f(c)>c=\sup A$, a contradiction.
+
 :::
 
-<1>5. $f(c)=c$.
-
-::: {.proof}
-Steps <1>2 and <1>4 give $c\le f(c)\le c$.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>5 gives the fixed point $x=c$.
+$f(c)=c$.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s4){.pf-ref} give $c\le f(c)\le c$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the fixed point $x=c$.
+
+:::
+
+:::
+
 :::

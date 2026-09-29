@@ -73,8 +73,15 @@ nontrivial solution.
 :::
 
 ::: {.solution}
-<1>1. The displayed scalar system is exactly the coordinate form of $AX=B$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The displayed scalar system is exactly the coordinate form of $AX=B$.
+
+::: pf-proof
+
 The $i$th entry of the product $AX$ is
 $$
 (AX)_i=\sum_{j=1}^m a_{ij}x_j.
@@ -90,10 +97,17 @@ $$
 These are precisely the $n$ displayed equations. Hence a vector $X$ is a
 simultaneous solution of the scalar system if and only if it solves the matrix
 equation.
+
 :::
 
-<1>2. Simultaneous elementary row operations do not change the solution set.
-::: {.proof}
+:::
+
+::: pf-step
+
+Simultaneous elementary row operations do not change the solution set.
+
+::: pf-proof
+
 A sequence of elementary row operations is left multiplication by an
 invertible matrix $E$, a product of elementary matrices. Thus
 $$
@@ -111,10 +125,17 @@ EAX=EB.
 $$
 Multiplying by $E^{-1}$ yields $AX=B$. Therefore the two systems have exactly
 the same solutions.
+
 :::
 
-<1>3. Consistency is equivalent to equality of the two ranks.
-::: {.proof}
+:::
+
+::: pf-step
+
+Consistency is equivalent to equality of the two ranks.
+
+::: pf-proof
+
 The equation
 $$
 AX=B
@@ -132,10 +153,17 @@ Since $C=[A\mid B]$, this is exactly
 $$
 \boxed{AX=B\text{ is solvable}\iff\operatorname{rank}A=\operatorname{rank}C.}
 $$
+
 :::
 
-<1>4. A consistent system has a unique solution exactly when $\operatorname{rank}A=m$.
-::: {.proof}
+:::
+
+::: pf-step
+
+A consistent system has a unique solution exactly when $\operatorname{rank}A=m$.
+
+::: pf-proof
+
 Assume $AX=B$ is consistent and choose one solution $X_0$. Then $X$ is any
 other solution if and only if
 $$
@@ -162,10 +190,17 @@ consistent system,
 $$
 \boxed{\text{the solution is unique}\iff\operatorname{rank}A=m.}
 $$
+
 :::
 
-<1>5. The homogeneous system has a nontrivial solution exactly when $\operatorname{rank}A<m$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The homogeneous system has a nontrivial solution exactly when $\operatorname{rank}A<m$.
+
+::: pf-proof
+
 For $B=0$, the solution set is precisely $\ker A$. It contains a nonzero
 vector if and only if
 $$
@@ -181,10 +216,17 @@ $$
 \iff
 \operatorname{rank}A<m.
 $$
+
 :::
 
-<1>6. More unknowns than equations force a nontrivial homogeneous solution.
-::: {.proof}
+:::
+
+::: pf-step
+
+More unknowns than equations force a nontrivial homogeneous solution.
+
+::: pf-proof
+
 Since $A$ has $n$ rows,
 $$
 \operatorname{rank}A\le n.
@@ -193,6 +235,12 @@ If $n<m$, then
 $$
 \operatorname{rank}A\le n<m,
 $$
-so step <1>5 gives a nontrivial solution of $AX=0$.
+so step [](#s5){.pf-ref} gives a nontrivial solution of $AX=0$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,8 +39,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Decompose the convolution into dyadic annuli.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Decompose the convolution into dyadic annuli.
+
+::: pf-proof
+
 Fix $x\in\mathbb R^n$ and $t>0$. From the assumed decay,
 \[
 |\phi_t(y)|
@@ -57,10 +64,17 @@ A_0:=\{|y|<t\},
 \qquad
 A_k:=\{2^{k-1}t\le |y|<2^kt\},\quad k\ge1.
 \]
+
 :::
 
-<1>2. Estimate the inner ball.
-::: {.proof}
+:::
+
+::: pf-step
+
+Estimate the inner ball.
+
+::: pf-proof
+
 On $A_0$,
 \[
 |\phi_t(y)|\le Ct^{-n}.
@@ -74,10 +88,17 @@ Hence, writing $v_n=m(B(0,1))$,
 &\le Cv_n H(f)(x).
 \end{aligned}
 \]
+
 :::
 
-<1>3. Estimate each outer annulus.
-::: {.proof}
+:::
+
+::: pf-step
+
+Estimate each outer annulus.
+
+::: pf-proof
+
 If $y\in A_k$ with $k\ge1$, then
 \[
 1+\frac{|y|}{t}\ge 2^{k-1},
@@ -98,10 +119,17 @@ v_n(2^kt)^n H(f)(x)\\
 &=Cv_n2^{n+\varepsilon}2^{-k\varepsilon}H(f)(x).
 \end{aligned}
 \]
+
 :::
 
-<1>4. Sum the geometric series and take the supremum in $t$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Sum the geometric series and take the supremum in $t$.
+
+::: pf-proof
+
 Combining the preceding estimates gives
 \[
 |f*\phi_t(x)|
@@ -124,5 +152,11 @@ for every $t>0$. Taking the supremum over $t$ yields
 \boxed{M_\phi(f)(x)\le C'H(f)(x).}
 \]
 The constant is independent of $f$.
+
 :::
+
+:::
+
+:::
+
 :::

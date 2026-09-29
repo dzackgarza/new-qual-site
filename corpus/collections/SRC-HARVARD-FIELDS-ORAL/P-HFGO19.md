@@ -29,21 +29,39 @@ What can be said about the solvability of $p(x)$ by radicals?
 ::: {.solution}
 The polynomial is solvable by radicals.
 
-<1>1. Its Galois group is solvable.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Its Galois group is solvable.
+
+::: pf-proof
+
 By hypothesis,
 \[
 G\cong \mathbb Z/4\mathbb Z\times\mathbb Z/4\mathbb Z.
 \]
 This group is abelian. Every abelian group is solvable: its commutator subgroup
 is trivial, so its derived series terminates after one step.
+
 :::
 
-<1>2. A polynomial over $\mathbb Q$ is solvable by radicals if and only if its
+:::
+
+::: pf-step
+
+A polynomial over $\mathbb Q$ is solvable by radicals if and only if its
 Galois group is solvable.
-::: {.proof}
+
+::: pf-proof
+
 This is the Galois criterion for solvability by radicals in characteristic
-zero. Applying it to <1>1 gives the conclusion.
+zero. Applying it to step [](#s1){.pf-ref} gives the conclusion.
+
+:::
+
+:::
+
 :::
 
 Hence the roots of $p(x)$ can be expressed using a finite tower of radical

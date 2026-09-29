@@ -46,8 +46,15 @@ where $(i,n)$ denotes the transposition which interchanges $i$ and $n$.
 :::
 
 ::: {.solution}
-<1>1. The matrices $L(\sigma)$ define a representation of $G$ on the set of left cosets $G/H$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The matrices $L(\sigma)$ define a representation of $G$ on the set of left cosets $G/H$.
+
+::: pf-proof
+
 Left multiplication gives an action
 \[
 G\times G/H\to G/H,\qquad (\sigma,\tau H)\mapsto \sigma\tau H.
@@ -66,13 +73,20 @@ L(\sigma\rho)=L(\sigma)L(\rho),
 \qquad L(e)=I.
 \]
 Thus $L$ is a representation. This proves part (a).
+
 :::
 
-<1>2. For $G=S_n$ and $H=\{\sigma:\sigma(n)=n\}$, two permutations $\tau,\rho$ lie in the same left coset modulo $H$ if and only if
+:::
+
+::: {.pf-step #s2}
+
+For $G=S_n$ and $H=\{\sigma:\sigma(n)=n\}$, two permutations $\tau,\rho$ lie in the same left coset modulo $H$ if and only if
 \[
 \tau(n)=\rho(n).
 \]
-::: {.proof}
+
+::: pf-proof
+
 One has
 \[
 \tau H=\rho H
@@ -80,37 +94,56 @@ One has
 \iff (\rho^{-1}\tau)(n)=n
 \iff \tau(n)=\rho(n).
 \]
+
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 S_n=H+(1,n)H+\cdots+(n-1,n)H.
 \]
-::: {.proof}
-The representative $e$ sends $n$ to $n$, while $(i,n)$ sends $n$ to $i$. Thus the displayed $n$ representatives have pairwise distinct images of $n$. By <1>2 they lie in distinct left cosets. Since
+
+::: pf-proof
+
+The representative $e$ sends $n$ to $n$, while $(i,n)$ sends $n$ to $i$. Thus the displayed $n$ representatives have pairwise distinct images of $n$. By step [](#s2){.pf-ref} they lie in distinct left cosets. Since
 \[
 [S_n:H]=\frac{n!}{(n-1)!}=n,
 \]
 they form all left cosets. This proves part (b)(i).
+
 :::
 
-<1>4. For every $\sigma\in S_n$,
+:::
+
+::: {.pf-step #s4}
+
+For every $\sigma\in S_n$,
 \[
 \chi^L(\sigma)=\operatorname{fix}(\sigma).
 \]
-::: {.proof}
+
+::: pf-proof
+
 The trace of a permutation matrix is the number of basis vectors fixed by the permutation. Thus $\chi^L(\sigma)$ is the number of cosets $\tau H$ such that
 \[
 \sigma\tau H=\tau H.
 \]
-By <1>2, this is equivalent to
+By step [](#s2){.pf-ref}, this is equivalent to
 \[
 \sigma(\tau(n))=\tau(n).
 \]
 As $\tau H$ runs through the cosets, the values $\tau(n)$ run once through $\{1,\ldots,n\}$. Hence fixed cosets are in bijection with fixed points of $\sigma$, proving part (b)(ii).
+
 :::
 
-<1>5. For $S_4$, the permutation module is
+:::
+
+::: pf-step
+
+For $S_4$, the permutation module is
 \[
 \mathbb C^4=\mathbb C(1,1,1,1)\oplus W,
 \qquad
@@ -120,15 +153,24 @@ Both summands are $S_4$-stable; the first is the trivial representation and $W$ 
 \[
 \chi_W=\operatorname{fix}-1.
 \]
-::: {.proof}
-Permuting coordinates fixes $(1,1,1,1)$ and preserves the sum of coordinates, so both subspaces are invariant. Their dimensions are $1$ and $3$, and their direct sum is all of $\mathbb C^4$. By <1>4, the full permutation character is $\operatorname{fix}$, so subtracting the trivial character gives $\chi_W=\operatorname{fix}-1$.
+
+::: pf-proof
+
+Permuting coordinates fixes $(1,1,1,1)$ and preserves the sum of coordinates, so both subspaces are invariant. Their dimensions are $1$ and $3$, and their direct sum is all of $\mathbb C^4$. By step [](#s4){.pf-ref}, the full permutation character is $\operatorname{fix}$, so subtracting the trivial character gives $\chi_W=\operatorname{fix}-1$.
+
 :::
 
-<1>6. The representation $W$ is irreducible and is $A^{(3,1)}$. Therefore
+:::
+
+::: pf-step
+
+The representation $W$ is irreducible and is $A^{(3,1)}$. Therefore
 \[
 L\cong A^{(4)}\oplus A^{(3,1)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 On the five conjugacy classes of $S_4$ of cycle types
 \[
 (1^4),(2,1^2),(2^2),(3,1),(4),
@@ -143,5 +185,11 @@ The class sizes are $1,6,3,8,6$, so
 =\frac1{24}\left(9+6+3+0+6\right)=1.
 \]
 Hence $W$ is irreducible. The unique irreducible of $S_4$ with partition label $(3,1)$ has dimension $3$ and this character, so $W\cong A^{(3,1)}$; the constant line is $A^{(4)}$. This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

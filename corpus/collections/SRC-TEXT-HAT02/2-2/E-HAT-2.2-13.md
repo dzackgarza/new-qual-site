@@ -49,7 +49,11 @@ H_2(X)=\ker d_2=\mathbb Z(3,-2),
 \qquad H_0(X)=\mathbb Z.
 \]
 
-<1>1. The subcomplexes of $X$ are exactly
+::: pf
+
+::: pf-step
+
+The subcomplexes of $X$ are exactly
 \[
 \{e^0\},\quad
 S^1=e^0\cup e^1,\quad
@@ -68,7 +72,9 @@ A_3&\mathbb Z&\mathbb Z_3&0\\
 X&\mathbb Z&0&\mathbb Z.
 \end{array}
 \]
-::: {.proof}
+
+::: pf-proof
+
 A subcomplex containing a $2$-cell must contain its attaching circle, hence $e^1$. This gives the displayed list. The chain complexes for $A_2$ and $A_3$ are respectively
 \[
 0\to\mathbb Z\xrightarrow{2}\mathbb Z\to\mathbb Z\to0
@@ -78,9 +84,14 @@ and
 0\to\mathbb Z\xrightarrow{3}\mathbb Z\to\mathbb Z\to0,
 \]
 which give the stated groups. The groups for $X$ follow from the cellular complex above.
+
 :::
 
-<1>2. The quotient spaces and their homology are as follows:
+:::
+
+::: pf-step
+
+The quotient spaces and their homology are as follows:
 \[
 X/\{e^0\}=X,
 \qquad
@@ -101,12 +112,21 @@ Thus
 \widetilde H_2(X/A_3)\cong\mathbb Z,
 \]
 and all other reduced homology groups of these three quotients vanish.
-::: {.proof}
+
+::: pf-proof
+
 Collapsing the $1$-skeleton turns each $2$-cell into a $2$-sphere, giving $S^2\vee S^2$. If $A_2$ is collapsed, only the interior of $e^2_3$ remains, with its entire boundary collapsed, giving $S^2$; similarly for $A_3$.
+
 :::
 
-<1>3. The space $X$ is homotopy equivalent to $S^2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The space $X$ is homotopy equivalent to $S^2$.
+
+::: pf-proof
+
 First attach the degree-$2$ cell, obtaining $A_2$. Its fundamental group is
 \[
 \pi_1(A_2)\cong\mathbb Z_2.
@@ -118,14 +138,21 @@ With this replacement, $S^1\cup e^2_3$ is a disk, so the remaining degree-$2$ ce
 D^2\vee S^2\simeq S^2.
 \]
 Thus $X\simeq S^2$.
+
 :::
 
-<1>4. For $A=A_2$, the quotient map
+:::
+
+::: {.pf-step #s4}
+
+For $A=A_2$, the quotient map
 \[
 q_2:X\to X/A_2\cong S^2
 \]
 induces multiplication by $-2$ on $H_2$, up to orientation; for $A=A_3$, the quotient map induces multiplication by $3$, up to orientation.
-::: {.proof}
+
+::: pf-proof
+
 The generator of $H_2(X)$ is the cellular cycle
 \[
 3e^2_2-2e^2_3.
@@ -139,10 +166,23 @@ After collapsing $A_3$, only the first cell survives, giving
 (q_3)_*(3,-2)=3.
 \]
 Changing orientations changes only the signs.
+
 :::
 
-<1>5. The quotient map $X\to X/A$ is a homotopy equivalence only for the trivial subcomplex $A=\{e^0\}$.
-::: {.proof}
-For $A=S^1$, the quotient has $H_2\cong\mathbb Z^2$, unlike $H_2(X)\cong\mathbb Z$. For $A=A_2$ or $A=A_3$, the quotient is a sphere, but by <1>4 the induced map on $H_2$ is multiplication by $2$ or $3$, not an isomorphism. For $A=X$ the quotient is a point. Finally collapsing the single $0$-cell does nothing: $X/\{e^0\}$ is canonically homeomorphic to $X$. Hence precisely the trivial subcomplex gives a quotient homotopy equivalence.
 :::
+
+::: pf-step
+
+The quotient map $X\to X/A$ is a homotopy equivalence only for the trivial subcomplex $A=\{e^0\}$.
+
+::: pf-proof
+
+For $A=S^1$, the quotient has $H_2\cong\mathbb Z^2$, unlike $H_2(X)\cong\mathbb Z$. For $A=A_2$ or $A=A_3$, the quotient is a sphere, but by step [](#s4){.pf-ref} the induced map on $H_2$ is multiplication by $2$ or $3$, not an isomorphism. For $A=X$ the quotient is a point. Finally collapsing the single $0$-cell does nothing: $X/\{e^0\}$ is canonically homeomorphic to $X$. Hence precisely the trivial subcomplex gives a quotient homotopy equivalence.
+
+:::
+
+:::
+
+:::
+
 :::

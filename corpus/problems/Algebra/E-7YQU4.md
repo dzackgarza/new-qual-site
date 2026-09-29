@@ -29,26 +29,53 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let \(F\) be a finite field and define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let \(F\) be a finite field and define
 \[
 g(T)=1+\prod_{a\in F}(T-a)\in F[T].
 \]
 Then \(g\) is nonconstant.
-::: {.proof}
+
+::: pf-proof
+
 If \(|F|=q\), the product has degree \(q\), so \(g\) also has degree \(q\ge1\).
+
 :::
 
-<1>2. The polynomial \(g\) has no root in \(F\).
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The polynomial \(g\) has no root in \(F\).
+
+::: pf-proof
+
 For any \(b\in F\), one factor in the product is \(b-b=0\). Hence
 \[
 g(b)=1+0=1\neq0.
 \]
 Thus no element of \(F\) is a zero of \(g\).
+
 :::
 
-<1>3. Therefore \(F\) is not algebraically closed.
-::: {.proof}
-An algebraically closed field has a root for every nonconstant polynomial in one variable. By <1>1 and <1>2, \(g\in F[T]\) is nonconstant and has no root in \(F\). Hence \(F\) is not algebraically closed.
 :::
+
+::: pf-step
+
+Therefore \(F\) is not algebraically closed.
+
+::: pf-proof
+
+An algebraically closed field has a root for every nonconstant polynomial in one variable. By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, \(g\in F[T]\) is nonconstant and has no root in \(F\). Hence \(F\) is not algebraically closed.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -28,8 +28,15 @@ Use this isomorphism to decide whether $(x)$ is prime and whether it is maximal 
 :::
 
 ::: {.solution}
-<1>1. Evaluation at $x=0$ induces the required quotient isomorphism.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Evaluation at $x=0$ induces the required quotient isomorphism.
+
+::: pf-proof
+
 Define
 $$
 \Phi:\mathbb R[x,y]\to\mathbb R[y],\qquad
@@ -47,12 +54,25 @@ The first isomorphism theorem therefore gives
 $$
 \mathbb R[x,y]/(x)\cong\mathbb R[y].
 $$
+
 :::
 
-<1>2. The ideal $(x)$ is prime but not maximal.
-::: {.proof}
+:::
+
+::: pf-step
+
+The ideal $(x)$ is prime but not maximal.
+
+::: pf-proof
+
 An ideal $I$ in a commutative ring is prime exactly when the quotient by $I$ is an integral domain, and maximal exactly when that quotient is a field. The ring $\mathbb R[y]$ is an integral domain because $\mathbb R$ is a field, so $(x)$ is prime.
 
 However, $\mathbb R[y]$ is not a field: the nonconstant polynomial $y$ has no multiplicative inverse in $\mathbb R[y]$. Hence $(x)$ is not maximal.
+
 :::
+
+:::
+
+:::
+
 :::

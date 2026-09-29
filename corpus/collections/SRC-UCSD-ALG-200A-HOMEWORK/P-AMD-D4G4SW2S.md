@@ -53,8 +53,15 @@ Prove that $P\cap H$ is the unique Sylow $p$-subgroup of $H$.
 :::
 
 ::: {.solution}
-<1>1. Every $p$-subgroup of $G$ is contained in a conjugate of $P$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every $p$-subgroup of $G$ is contained in a conjugate of $P$.
+
+::: pf-proof
+
 Let $Q\le G$ be a $p$-subgroup.
 By the Sylow containment theorem, $Q$ is contained in some Sylow $p$-subgroup $S$ of $G$.
 All Sylow $p$-subgroups of $G$ are conjugate, so there exists $g\in G$ such that
@@ -65,19 +72,26 @@ Hence
 \[
 Q\le gPg^{-1}.
 \]
+
 :::
 
-<1>2. There exists $g\in G$ such that
+:::
+
+::: {.pf-step #s2}
+
+There exists $g\in G$ such that
 \[
 gPg^{-1}\cap H\in\operatorname{Syl}_p(H).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Choose
 \[
 Q\in\operatorname{Syl}_p(H).
 \]
 Since $Q\le H\le G$, the group $Q$ is a $p$-subgroup of $G$.
-By <1>1, there exists $g\in G$ such that
+By step [](#s1){.pf-ref}, there exists $g\in G$ such that
 \[
 Q\le gPg^{-1}.
 \]
@@ -92,13 +106,20 @@ Thus
 gPg^{-1}\cap H=Q,
 \]
 which proves part (a).
+
 :::
 
-<1>3. If $H\normal G$, then for every $g\in G$,
+:::
+
+::: {.pf-step #s3}
+
+If $H\normal G$, then for every $g\in G$,
 \[
 g(P\cap H)g^{-1}=gPg^{-1}\cap H.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Conjugation distributes over intersections, so
 \[
 g(P\cap H)g^{-1}=gPg^{-1}\cap gHg^{-1}.
@@ -108,18 +129,25 @@ Since $H\normal G$,
 gHg^{-1}=H.
 \]
 Substitution gives the claimed equality.
+
 :::
 
-<1>4. If $H\normal G$, then
+:::
+
+::: pf-step
+
+If $H\normal G$, then
 \[
 P\cap H\in\operatorname{Syl}_p(H).
 \]
-::: {.proof}
-By <1>2, choose $g\in G$ such that
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, choose $g\in G$ such that
 \[
 gPg^{-1}\cap H\in\operatorname{Syl}_p(H).
 \]
-By <1>3,
+By step [](#s3){.pf-ref},
 \[
 gPg^{-1}\cap H=g(P\cap H)g^{-1}.
 \]
@@ -127,20 +155,34 @@ Because $H\normal G$, conjugation by $g$ restricts to an automorphism of $H$.
 Hence $P\cap H$ and $g(P\cap H)g^{-1}$ are conjugate subgroups of $H$ and have the same order.
 The latter is a Sylow $p$-subgroup of $H$, so the former is also a Sylow $p$-subgroup of $H$.
 This proves part (b).
+
 :::
 
-<1>5. If $P\normal G$, then $P$ is the unique Sylow $p$-subgroup of $G$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $P\normal G$, then $P$ is the unique Sylow $p$-subgroup of $G$.
+
+::: pf-proof
+
 A Sylow subgroup is normal if and only if it is unique among the Sylow subgroups of the same prime.
 Since $P\in\operatorname{Syl}_p(G)$ and $P\normal G$, it is therefore the unique Sylow $p$-subgroup of $G$.
+
 :::
 
-<1>6. If $P\normal G$, then
+:::
+
+::: {.pf-step #s6}
+
+If $P\normal G$, then
 \[
 P\cap H\in\operatorname{Syl}_p(H).
 \]
-::: {.proof}
-By <1>2, there exists $g\in G$ such that
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, there exists $g\in G$ such that
 \[
 gPg^{-1}\cap H\in\operatorname{Syl}_p(H).
 \]
@@ -152,13 +194,20 @@ Hence
 \[
 P\cap H\in\operatorname{Syl}_p(H).
 \]
+
 :::
 
-<1>7. If $P\normal G$, every $p$-subgroup of $H$ is contained in $P\cap H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+If $P\normal G$, every $p$-subgroup of $H$ is contained in $P\cap H$.
+
+::: pf-proof
+
 Let $Q\le H$ be a $p$-subgroup.
 Then $Q$ is also a $p$-subgroup of $G$.
-By <1>1, $Q$ is contained in a conjugate of $P$.
+By step [](#s1){.pf-ref}, $Q$ is contained in a conjugate of $P$.
 Since $P\normal G$, every conjugate of $P$ equals $P$.
 Thus
 \[
@@ -168,13 +217,20 @@ Together with $Q\le H$, this gives
 \[
 Q\le P\cap H.
 \]
+
 :::
 
-<1>8. If $P\normal G$, then $P\cap H$ is the unique Sylow $p$-subgroup of $H$.
-::: {.proof}
-By <1>6, $P\cap H$ is a Sylow $p$-subgroup of $H$.
+:::
+
+::: pf-step
+
+If $P\normal G$, then $P\cap H$ is the unique Sylow $p$-subgroup of $H$.
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, $P\cap H$ is a Sylow $p$-subgroup of $H$.
 Let $Q\in\operatorname{Syl}_p(H)$.
-By <1>7,
+By step [](#s7){.pf-ref},
 \[
 Q\le P\cap H.
 \]
@@ -184,5 +240,11 @@ Therefore
 Q=P\cap H.
 \]
 Thus $P\cap H$ is unique, proving part (c).
+
 :::
+
+:::
+
+:::
+
 :::

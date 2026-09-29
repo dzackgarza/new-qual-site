@@ -37,8 +37,14 @@ $A/\mathfrak p$, and both are integral domains. Thus it suffices to prove:
 if $D\subseteq E$ is an integral extension of domains, then $E$ is a field if
 and only if $D$ is a field.
 
-<1>1. If $D$ is a field, then $E$ is a field.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $D$ is a field, then $E$ is a field.
+
+::: pf-proof
+
 Let $0\ne y\in E$. Since $y$ is integral over $D$, choose a monic equation of
 least degree
 \[
@@ -49,19 +55,39 @@ Minimality forces $a_0\ne0$. Rearranging gives
 y^{-1}=-a_0^{-1}(y^{n-1}+a_{n-1}y^{n-2}+\cdots+a_1)\in E.
 \]
 Thus every nonzero element of $E$ is invertible.
+
 :::
 
-<1>2. If $E$ is a field, then $D$ is a field.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $E$ is a field, then $D$ is a field.
+
+::: pf-proof
+
 For $0\ne x\in D$, its inverse $x^{-1}$ lies in $E$ and is integral over $D$.
 A monic equation for $x^{-1}$, multiplied by a suitable power of $x$, expresses
 $x^{-1}$ as an element of $D$. Hence every nonzero $x\in D$ is a unit.
+
 :::
 
-<1>3. Therefore $\mathfrak q$ is maximal if and only if $\mathfrak p$ is
-maximal.
-::: {.proof}
-A prime ideal is maximal exactly when its quotient domain is a field. Apply
-<1>1--<1>2 to $A/\mathfrak p\subseteq B/\mathfrak q$.
 :::
+
+::: pf-step
+
+Therefore $\mathfrak q$ is maximal if and only if $\mathfrak p$ is
+maximal.
+
+::: pf-proof
+
+A prime ideal is maximal exactly when its quotient domain is a field. Apply
+steps [](#s1){.pf-ref} and [](#s2){.pf-ref} to $A/\mathfrak p\subseteq B/\mathfrak q$.
+
+:::
+
+:::
+
+:::
+
 :::

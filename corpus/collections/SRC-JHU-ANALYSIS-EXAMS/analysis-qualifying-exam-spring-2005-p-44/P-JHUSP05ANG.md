@@ -40,8 +40,14 @@ $$
 \boxed{f(z)=\frac{z^2-2i}{z^2+2i}.}
 $$
 
-<1>1. Squaring maps $Q$ biholomorphically onto the upper half-plane $H$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Squaring maps $Q$ biholomorphically onto the upper half-plane $H$.
+
+::: pf-proof
+
 Every $z\in Q$ has a unique polar expression $re^{i\theta}$
 with $r>0$ and $0<\theta<\pi/2$. Its square has argument
 $2\theta\in(0,\pi)$, so lies in $H=\{v:\operatorname{Im}v>0\}$.
@@ -52,10 +58,17 @@ the other square root is $-z$, which is outside $Q$.
 Thus squaring is a holomorphic bijection. Its derivative
 $2z$ is nonzero on $Q$, so the inverse is holomorphic
 by the local inverse function theorem [@SS03].
+
 :::
 
-<1>2. A fractional transformation supplies the target disk and prescribed zero.
-::: {.proof}
+:::
+
+::: pf-step
+
+A fractional transformation supplies the target disk and prescribed zero.
+
+::: pf-proof
+
 Set
 $$
 T(v)=\frac{v-2i}{v+2i},\qquad
@@ -71,8 +84,14 @@ $$
 $$
 Substitution gives $T\circ S=\operatorname{id}_D$ and
 $S\circ T=\operatorname{id}_H$. Hence $T:H\to D$ is
-a holomorphic bijection. Composing it with step <1>1
+a holomorphic bijection. Composing it with step [](#s1){.pf-ref}
 gives the stated $f$, whose denominator cannot vanish
 on $Q$. Finally $(1+i)^2=2i$, so $f(1+i)=T(2i)=0$.
+
 :::
+
+:::
+
+:::
+
 :::

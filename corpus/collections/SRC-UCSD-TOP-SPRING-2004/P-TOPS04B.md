@@ -19,26 +19,53 @@ Prove that the Euler characteristic satisfies $\chi(E) = d \cdot \chi(B)$ if $B$
 :::
 
 ::: {.solution}
-<1>1. Lift a finite CW structure on $B$ through the covering map $p:E\to B$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Lift a finite CW structure on $B$ through the covering map $p:E\to B$.
+
+::: pf-proof
+
 Over each open cell $e^k\subset B$, the covering is trivial because $e^k$ is contractible. Thus $p^{-1}(e^k)$ is a disjoint union of $d$ open cells, each mapped homeomorphically onto $e^k$.
+
 :::
 
-<1>2. If $c_k(B)$ denotes the number of $k$-cells of $B$, then
+:::
+
+::: {.pf-step #s2}
+
+If $c_k(B)$ denotes the number of $k$-cells of $B$, then
 $$
 c_k(E)=d\,c_k(B).
 $$
-::: {.proof}
+
+::: pf-proof
+
 Each cell has exactly $d$ lifts in a $d$-sheeted covering.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \chi(E)=\sum_k(-1)^kc_k(E)
 =d\sum_k(-1)^kc_k(B)
 =d\chi(B).
 $$
-::: {.proof}
-Substitute <1>2 into the cellular formula for Euler characteristic.
+
+::: pf-proof
+
+Substitute step [](#s2){.pf-ref} into the cellular formula for Euler characteristic.
+
 :::
+
+:::
+
+:::
+
 :::

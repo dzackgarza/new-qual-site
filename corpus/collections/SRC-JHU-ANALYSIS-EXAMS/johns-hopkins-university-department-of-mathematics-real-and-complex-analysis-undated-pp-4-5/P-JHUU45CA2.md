@@ -37,9 +37,14 @@ $$I = \int_{-\infty}^{\infty} \frac{\sin x}{x} \, dx.$$
 ::: {.solution}
 The improper integral exists and equals $\boxed{\pi}$.
 
-<1>1. The integral converges as an ordinary improper Riemann integral.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The integral converges as an ordinary improper Riemann integral.
+
+::: pf-proof
+
 The quotient $\sin x/x$ extends continuously across zero
 with value one. For $B>A>0$, integration by parts gives
 $$
@@ -55,11 +60,17 @@ The Cauchy criterion proves convergence at positive infinity.
 Evenness gives convergence at negative infinity separately.
 Thus $I=2\int_0^\infty\sin x/x\,dx$ is an improper
 integral, not merely a symmetric principal value.
+
 :::
 
-<1>2. An indented upper semicircle evaluates the half-line integral.
+:::
 
-::: {.proof}
+::: pf-step
+
+An indented upper semicircle evaluates the half-line integral.
+
+::: pf-proof
+
 For $0<\varepsilon<R$, integrate $F(z)=e^{iz}/z$ over
 $[-R,-\varepsilon]$, the clockwise upper semicircle
 $\gamma_\varepsilon$ from $-\varepsilon$ to $\varepsilon$,
@@ -92,10 +103,16 @@ $$
 Here symmetry reduces the estimate to $[0,\pi/2]$, and
 concavity of sine on that interval gives $\sin t\geq2t/\pi$.
 Passing to the limits in the contour identity, using
-step <1>1 for the real integral, yields
+step [](#s1){.pf-ref} for the real integral, yields
 $$
 2i\int_0^\infty\frac{\sin x}x\,dx-i\pi=0.
 $$
 The half-line value is $\pi/2$, and evenness gives $I=\pi$.
+
 :::
+
+:::
+
+:::
+
 :::

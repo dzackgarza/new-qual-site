@@ -40,9 +40,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The derivative $f'$ has a constant sign on $\RR$.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The derivative $f'$ has a constant sign on $\RR$.
+
+::: pf-proof
+
 The hypothesis
 $$
 \abs{f'(x)}\geq\varepsilon>0
@@ -58,11 +64,17 @@ $$
 f'(x)\leq-\varepsilon
 $$
 for every $x$.
+
 :::
 
-<1>2. The function $f$ has at most one zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $f$ has at most one zero.
+
+::: pf-proof
+
 If
 $$
 f(a)=f(b)=0
@@ -72,11 +84,17 @@ $$
 f'(c)=0,
 $$
 contradicting the hypothesis.
+
 :::
 
-<1>3. The function $f$ has at least one zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The function $f$ has at least one zero.
+
+::: pf-proof
+
 Suppose first that
 $$
 f'(x)\geq\varepsilon
@@ -102,26 +120,38 @@ f'(x)\leq-\varepsilon,
 $$
 then the two limiting signs are reversed, and the same intermediate-value
 argument gives a zero.
+
 :::
 
-<1>4. There is a unique zero
+:::
+
+::: {.pf-step #s4}
+
+There is a unique zero
 $$
 z\in\RR
 $$
 of $f$.
 
-::: {.proof}
-Combine steps <1>2 and <1>3. This proves part (1).
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. This proves part (1).
+
 :::
 
-<1>5. For every real $x$,
+:::
+
+::: {.pf-step #s5}
+
+For every real $x$,
 $$
 \abs{f(x)}
 \geq
 \varepsilon\abs{x-z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If $x=z$, the assertion is immediate. Otherwise, the mean value theorem
 gives a point $c$ between $x$ and $z$ such that
 $$
@@ -131,9 +161,14 @@ f'(c)(x-z).
 $$
 Since $f(z)=0$ and $\abs{f'(c)}\geq\varepsilon$, taking absolute values
 gives the claim.
+
 :::
 
-<1>6. For every $n\geq0$,
+:::
+
+::: {.pf-step #s6}
+
+For every $n\geq0$,
 $$
 x_{n+1}-z
 =
@@ -145,7 +180,8 @@ f'(x_n)
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f(z)=0$, the fundamental theorem of calculus gives
 $$
 f(x_n)
@@ -176,16 +212,22 @@ f'(x_n)
 $$
 The denominator never vanishes by hypothesis, so every Newton iterate is
 defined.
+
 :::
 
-<1>7. For all real $s,t$,
+:::
+
+::: {.pf-step #s7}
+
+For all real $s,t$,
 $$
 \abs{f'(s)-f'(t)}
 \leq
 M\abs{s-t}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply the mean value theorem to $f'$ on the interval with endpoints
 $s,t$. There is a point $c$ between them such that
 $$
@@ -198,9 +240,14 @@ $$
 \abs{f''(c)}\leq M
 $$
 gives the result.
+
 :::
 
-<1>8. The Newton errors satisfy the stronger estimate
+:::
+
+::: {.pf-step #s8}
+
+The Newton errors satisfy the stronger estimate
 $$
 \abs{x_{n+1}-z}
 \leq
@@ -208,8 +255,9 @@ $$
 \abs{x_n-z}^2.
 $$
 
-::: {.proof}
-Apply steps <1>6 and <1>7 and use
+::: pf-proof
+
+Apply steps [](#s6){.pf-ref} and [](#s7){.pf-ref} and use
 $$
 \abs{f'(x_n)}\geq\varepsilon.
 $$
@@ -227,9 +275,14 @@ M(x_n-t)\,dt\\
 $$
 If $x_n<z$, reversing the integration limits gives the same formula with
 $\abs{x_n-z}$. Thus the estimate holds in all cases.
+
 :::
 
-<1>9. In particular,
+:::
+
+::: {.pf-step #s9}
+
+In particular,
 $$
 \boxed{
 \abs{x_{n+1}-z}
@@ -239,17 +292,23 @@ $$
 }.
 $$
 
-::: {.proof}
-Step <1>8 is stronger because
+::: pf-proof
+
+Step [](#s8){.pf-ref} is stronger because
 $$
 \frac{M}{2\varepsilon}
 \leq
 \frac{M}{\varepsilon}.
 $$
 This proves part (2).
+
 :::
 
-<1>10. If
+:::
+
+::: {.pf-step #s10}
+
+If
 $$
 \abs{f(x_0)}
 <
@@ -264,8 +323,9 @@ q_0
 1.
 $$
 
-::: {.proof}
-Step <1>5 gives
+::: pf-proof
+
+Step [](#s5){.pf-ref} gives
 $$
 \abs{x_0-z}
 \leq
@@ -279,9 +339,14 @@ q_0
 <
 1.
 $$
+
 :::
 
-<1>11. If
+:::
+
+::: {.pf-step #s11}
+
+If
 $$
 q_n
 \coloneqq
@@ -292,8 +357,9 @@ $$
 q_{n+1}\leq q_n^2.
 $$
 
-::: {.proof}
-Multiply the estimate in step <1>9 by $M/\varepsilon$:
+::: pf-proof
+
+Multiply the estimate in step [](#s9){.pf-ref} by $M/\varepsilon$:
 $$
 \begin{aligned}
 q_{n+1}
@@ -305,15 +371,21 @@ q_{n+1}
 q_n^2.
 \end{aligned}
 $$
+
 :::
 
-<1>12. Under the hypothesis of part (3),
+:::
+
+::: {.pf-step #s12}
+
+Under the hypothesis of part (3),
 $$
 x_n\longrightarrow z.
 $$
 
-::: {.proof}
-By steps <1>10 and <1>11,
+::: pf-proof
+
+By steps [](#s10){.pf-ref} and [](#s11){.pf-ref},
 $$
 0\leq q_n\leq q_0^{2^n}
 $$
@@ -329,12 +401,18 @@ $$
 \longrightarrow0.
 $$
 This proves part (3).
+
 :::
 
-<1>13. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 proves part (1), step <1>9 proves part (2), and step <1>12 proves
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (1), step [](#s9){.pf-ref} proves part (2), and step [](#s12){.pf-ref} proves
 part (3).
+
 :::
+
+:::
+
 :::

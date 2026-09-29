@@ -46,7 +46,11 @@ C(1+\abs{z}^k)
 $$
 for every $z\in\CC$.
 
-<1>1. For every $z_0\in\CC$ and every $R>0$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $z_0\in\CC$ and every $R>0$,
 $$
 \abs{g^{(k+1)}(z_0)}
 \leq
@@ -54,7 +58,8 @@ $$
 \left(1+(R+\abs{z_0})^k\right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the circle
 $$
 \abs{z-z_0}=R,
@@ -77,15 +82,21 @@ $$
 \max_{\abs{z-z_0}=R}\abs{g(z)},
 $$
 which is the claimed inequality.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 g^{(k+1)}\equiv0.
 $$
 
-::: {.proof}
-Fix $z_0\in\CC$. In step <1>1, let $R\to\infty$. Since
+::: pf-proof
+
+Fix $z_0\in\CC$. In step [](#s1){.pf-ref}, let $R\to\infty$. Since
 $$
 \frac{1+(R+\abs{z_0})^k}{R^{k+1}}
 \longrightarrow0,
@@ -95,24 +106,35 @@ $$
 \abs{g^{(k+1)}(z_0)}=0.
 $$
 The point $z_0$ was arbitrary, so $g^{(k+1)}$ is identically zero.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 f^{(m+k+1)}\equiv0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $g=f^{(m)}$,
 $$
 g^{(k+1)}
 =
 f^{(m+k+1)}.
 $$
-Now apply step <1>2.
+Now apply step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. For every integer
+:::
+
+::: {.pf-step #s4}
+
+For every integer
 $$
 n\geq m+k+1,
 $$
@@ -121,15 +143,22 @@ $$
 \boxed{f^{(n)}\equiv0}.
 $$
 
-::: {.proof}
-Step <1>3 gives the assertion for $n=m+k+1$. Every higher derivative is
+::: pf-proof
+
+Step [](#s3){.pf-ref} gives the assertion for $n=m+k+1$. Every higher derivative is
 a derivative of the zero function and is therefore also identically
 zero.
+
 :::
 
-<1>5. The threshold $m+k+1$ is the best possible uniform bound.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The threshold $m+k+1$ is the best possible uniform bound.
+
+::: pf-proof
+
 Take
 $$
 f(z)=z^{m+k}.
@@ -151,12 +180,18 @@ f^{(m+k+1)}\equiv0.
 $$
 Hence no smaller derivative order works for all functions satisfying
 the hypothesis.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the required vanishing range, and step <1>5 shows that
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required vanishing range, and step [](#s5){.pf-ref} shows that
 the bound is sharp.
+
 :::
+
+:::
+
 :::

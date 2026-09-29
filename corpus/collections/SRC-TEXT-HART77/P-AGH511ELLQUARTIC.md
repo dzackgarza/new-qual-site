@@ -57,9 +57,14 @@ $$
 \varphi([x:y:z:w])=[x:y:z].
 $$
 
-<1>1. Projection maps $Y\setminus\{P\}$ into $C$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Projection maps $Y\setminus\{P\}$ into $C$.
+
+::: pf-proof
+
 On $Y$ the two equations can be rewritten
 $$
 yw=x(x-z),\qquad
@@ -77,9 +82,14 @@ $$
 H(x,y,z)=0.
 $$
 The only point of $\PP^3$ where the three projection coordinates vanish is $P$, so the projection is defined on $Y\setminus\{P\}$ and lands in $C$.
+
 :::
 
-<1>2. On the cubic $C$, the simultaneous equations
+:::
+
+::: {.pf-step #s2}
+
+On the cubic $C$, the simultaneous equations
 $$
 y=0,\qquad x+z=0
 $$
@@ -89,7 +99,8 @@ Q=[1:0:-1].
 $$
 For every point of $C\setminus\{Q\}$ there is a unique $w$ satisfying the two equations of $Y$.
 
-::: {.proof}
+::: pf-proof
+
 The first assertion is immediate in projective coordinates.
 For a point $q=[x:y:z]\in C$, the required $w$ must satisfy
 $$
@@ -112,11 +123,17 @@ $$
 using $\operatorname{char}k\ne2$.
 Thus no $w$ solves the first equation there.
 Hence $Q$ has no preimage and every other point has exactly one.
+
 :::
 
-<1>3. The inverse to projection on $C\setminus\{Q\}$ is a morphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The inverse to projection on $C\setminus\{Q\}$ is a morphism.
+
+::: pf-proof
+
 The opens
 $$
 D_+(y),\qquad D_+(x+z)
@@ -132,7 +149,7 @@ w=\frac{yz}{x+z}.
 $$
 These are homogeneous degree-one expressions in the sense that scaling $[x:y:z]$ by $\lambda$ scales the resulting $w$ by $\lambda$.
 Thus they define morphisms to $\PP^3$.
-On the overlap they agree because the compatibility equation in step <1>2 is exactly
+On the overlap they agree because the compatibility equation in step [](#s2){.pf-ref} is exactly
 $$
 \frac{x(x-z)}y=\frac{yz}{x+z}.
 $$
@@ -141,16 +158,22 @@ $$
 \psi:C\setminus\{Q\}\longrightarrow Y\setminus\{P\}.
 $$
 By construction $\varphi\psi$ is the identity.
-For a point of $Y\setminus\{P\}$, its $w$ already satisfies the same two linear equations, whose solution is unique by step <1>2, so $\psi\varphi$ is also the identity.
+For a point of $Y\setminus\{P\}$, its $w$ already satisfies the same two linear equations, whose solution is unique by step [](#s2){.pf-ref}, so $\psi\varphi$ is also the identity.
 Consequently
 $$
 \boxed{Y\setminus\{P\}\cong C\setminus\{Q\}.}
 $$
+
 :::
 
-<1>4. The plane cubic $C$ is nonsingular and irreducible.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The plane cubic $C$ is nonsingular and irreducible.
+
+::: pf-proof
+
 Its partial derivatives are
 $$
 H_x=-3x^2+z^2,\qquad
@@ -171,12 +194,18 @@ Hence $C$ has no singular point.
 
 By [[P-AGH59NONVANISHIRRED]], a positive-degree homogeneous plane equation with nowhere-vanishing gradient on its zero set is irreducible.
 Thus $C$ is a nonsingular irreducible cubic curve.
+
 :::
 
-<1>5. The algebraic set $Y$ is irreducible of dimension one.
+:::
 
-::: {.proof}
-By steps <1>3--<1>4, the open subset
+::: {.pf-step #s5}
+
+The algebraic set $Y$ is irreducible of dimension one.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, the open subset
 $$
 Y\setminus\{P\}
 $$
@@ -191,11 +220,17 @@ $$
 Y=Y_0.
 $$
 Hence $Y$ is irreducible, and since the dense open subset $Y\setminus\{P\}$ is a curve, $\dim Y=1$.
+
 :::
 
-<1>6. The point $P$ is nonsingular on $Y$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The point $P$ is nonsingular on $Y$.
+
+::: pf-proof
+
 The Jacobian matrix of the two defining quadrics is
 $$
 \begin{pmatrix}
@@ -215,33 +250,45 @@ $$
 \end{pmatrix},
 $$
 which has rank two.
-By step <1>5, $Y$ is a projective variety of dimension one.
+By step [](#s5){.pf-ref}, $Y$ is a projective variety of dimension one.
 The projective Jacobian criterion [[P-AGH58JACOBIANRANK]] requires rank
 $$
 3-1=2
 $$
 for nonsingularity.
 Thus $P$ is nonsingular.
+
 :::
 
-<1>7. The projective curve $Y$ is nonsingular.
+:::
 
-::: {.proof}
-On $Y\setminus\{P\}$, step <1>3 identifies $Y$ with the open subset $C\setminus\{Q\}$ of the nonsingular cubic from step <1>4.
+::: {.pf-step #s7}
+
+The projective curve $Y$ is nonsingular.
+
+::: pf-proof
+
+On $Y\setminus\{P\}$, step [](#s3){.pf-ref} identifies $Y$ with the open subset $C\setminus\{Q\}$ of the nonsingular cubic from step [](#s4){.pf-ref}.
 Thus every point away from $P$ is nonsingular.
-Step <1>6 proves nonsingularity at $P$.
+Step [](#s6){.pf-ref} proves nonsingularity at $P$.
 Therefore
 $$
 \boxed{Y\text{ is an irreducible nonsingular projective curve}.}
 $$
 This proves the asserted elliptic-quartic properties required in the exercise.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 establish the stated projection isomorphism, and steps <1>4--<1>7 prove that $Y$ is an irreducible nonsingular curve.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} establish the stated projection isomorphism, and steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} prove that $Y$ is an irreducible nonsingular curve.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Characteristic two"}

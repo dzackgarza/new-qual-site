@@ -24,7 +24,6 @@ audit:
 State/prove the Sylow theorems.
 :::
 
-
 ::: {.solution}
 Let $G$ be finite and write
 \[
@@ -33,8 +32,14 @@ Let $G$ be finite and write
 \]
 A subgroup of order $p^a$ is called a Sylow $p$-subgroup.
 
-<1>1. **First Sylow theorem.** A Sylow $p$-subgroup of $G$ exists.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+**First Sylow theorem.** A Sylow $p$-subgroup of $G$ exists.
+
+::: pf-proof
+
 We argue by induction on $|G|$. The result is immediate for $|G|=1$. Assume $p\mid |G|$.
 
 If $p\mid |Z(G)|$, Cauchy's theorem gives a central subgroup $C\le Z(G)$ of order $p$. Then
@@ -52,10 +57,17 @@ where the $x_i$ represent the noncentral conjugacy classes. If every index $[G:C
 p\nmid [G:C_G(x)].
 \]
 Hence the full $p$-part $p^a$ of $|G|$ divides $|C_G(x)|$. Since $x$ is noncentral, $C_G(x)<G$, so induction applied to $C_G(x)$ gives a subgroup of order $p^a$. This is a Sylow $p$-subgroup of $G$.
+
 :::
 
-<1>2. **Second Sylow theorem.** If $P$ is a Sylow $p$-subgroup and $H\le G$ is any $p$-subgroup, then $H$ is contained in a conjugate of $P$. In particular, all Sylow $p$-subgroups are conjugate.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+**Second Sylow theorem.** If $P$ is a Sylow $p$-subgroup and $H\le G$ is any $p$-subgroup, then $H$ is contained in a conjugate of $P$. In particular, all Sylow $p$-subgroups are conjugate.
+
+::: pf-proof
+
 Let $H$ act by left multiplication on the set $G/P$ of left cosets. The number of cosets is
 \[
 [G:P]=m,
@@ -77,16 +89,23 @@ g^{-1}Hg\le P,
 or equivalently $H\le gPg^{-1}$.
 
 If $H$ is itself Sylow, then $|H|=|P|$, so containment forces equality. Thus every Sylow $p$-subgroup is conjugate to $P$.
+
 :::
 
-<1>3. **Third Sylow theorem.** If $n_p$ denotes the number of Sylow $p$-subgroups, then
+:::
+
+::: pf-step
+
+**Third Sylow theorem.** If $n_p$ denotes the number of Sylow $p$-subgroups, then
 \[
 n_p\mid m
 \qquad\text{and}\qquad
 n_p\equiv1\pmod p.
 \]
-::: {.proof}
-By <1>2, the Sylow $p$-subgroups form one conjugacy orbit. The stabilizer of $P$ under conjugation is its normalizer $N_G(P)$, so orbit-stabilizer gives
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the Sylow $p$-subgroups form one conjugacy orbit. The stabilizer of $P$ under conjugation is its normalizer $N_G(P)$, so orbit-stabilizer gives
 \[
 n_p=[G:N_G(P)].
 \]
@@ -102,6 +121,11 @@ Therefore all orbits except the singleton $\{P\}$ have cardinality divisible by 
 \[
 n_p\equiv1\pmod p.
 \]
+
+:::
+
+:::
+
 :::
 
 These are the three Sylow theorems.

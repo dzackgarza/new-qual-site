@@ -32,8 +32,15 @@ Either prove this or find a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Prove Scheffe's lemma in the nonnegative case.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove Scheffe's lemma in the nonnegative case.
+
+::: pf-proof
+
 Since $f_n\to f$ almost everywhere,
 \[
 \min(f_n,f)\to f
@@ -64,10 +71,17 @@ Thus
 \[
 \boxed{f_n\to f\text{ in }L^1(\mu).}
 \]
+
 :::
 
-<1>2. Show that nonnegativity is essential.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that nonnegativity is essential.
+
+::: pf-proof
+
 Take $X=[0,1]$ with Lebesgue measure, let $f\equiv0$, and for $n\ge2$ define
 \[
 f_n(x)=n\mathbf1_{(0,1/n)}(x)-n\mathbf1_{(1/n,2/n)}(x).
@@ -91,5 +105,11 @@ for every $n$. However,
 =n\frac1n+n\frac1n=2.
 \]
 Hence $f_n$ does not converge to $f$ in $L^1$. Therefore the conclusion in part (a) is false without the nonnegativity hypothesis.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -45,7 +45,11 @@ $$
 This number is finite because $f'''$ is continuous on the compact interval
 $[-1,1]$.
 
-<1>1. For every integer $n\geq1$, there are points
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $n\geq1$, there are points
 $$
 \xi_n^+\in(0,1/n)
 \qquad\text{and}\qquad
@@ -76,20 +80,27 @@ f(0)
 \frac{f'''(\xi_n^-)}{6n^3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply Taylor's theorem with Lagrange remainder of order three at the center
 $0$, once to $x=1/n$ and once to $x=-1/n$.
+
 :::
 
-<1>2. The $n$th summand of the given series equals
+:::
+
+::: {.pf-step #s2}
+
+The $n$th summand of the given series equals
 $$
 \frac{
 f'''(\xi_n^+)+f'''(\xi_n^-)
 }{6n^2}.
 $$
 
-::: {.proof}
-Subtract the two Taylor expansions in step <1>1. The constant and quadratic
+::: pf-proof
+
+Subtract the two Taylor expansions in step [](#s1){.pf-ref}. The constant and quadratic
 terms cancel, giving
 $$
 f(1/n)-f(-1/n)
@@ -101,14 +112,20 @@ f'''(\xi_n^+)+f'''(\xi_n^-)
 }{6n^3}.
 $$
 Multiplying by $n$ and subtracting $2f'(0)$ gives the displayed formula.
+
 :::
 
-<1>3. The absolute value of the $n$th summand is at most
+:::
+
+::: {.pf-step #s3}
+
+The absolute value of the $n$th summand is at most
 $$
 \frac{M}{3n^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of $M$,
 $$
 \abs{f'''(\xi_n^+)}
@@ -117,7 +134,7 @@ $$
 \abs{f'''(\xi_n^-)}
 \leq M.
 $$
-Therefore step <1>2 and the triangle inequality give
+Therefore step [](#s2){.pf-ref} and the triangle inequality give
 $$
 \abs{
 \frac{
@@ -129,22 +146,34 @@ f'''(\xi_n^+)+f'''(\xi_n^-)
 =
 \frac{M}{3n^2}.
 $$
+
 :::
 
-<1>4. The given series converges absolutely.
+:::
 
-::: {.proof}
-By step <1>3, its terms are dominated in absolute value by the convergent
+::: {.pf-step #s4}
+
+The given series converges absolutely.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, its terms are dominated in absolute value by the convergent
 series
 $$
 \frac{M}{3}\sum_{n=1}^{\infty}\frac1{n^2}.
 $$
 The comparison test therefore gives absolute convergence.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Absolute convergence in step <1>4 implies the required convergence.
 :::
+
+::: pf-qed
+
+Absolute convergence in step [](#s4){.pf-ref} implies the required convergence.
+
+:::
+
+:::
+
 :::

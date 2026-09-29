@@ -24,7 +24,6 @@ audit:
   date: 2026-09-09
 ---
 
-
 ::: {.problem}
 Suppose that $f:[0,1]\to\mathbb R$ is differentiable, $f(0)=0$, and there is $k>0$ such that
 \[
@@ -35,8 +34,15 @@ Prove that $f(x)=0$ for all $x\in[0,1]$.
 :::
 
 ::: {.solution}
-<1>1. Obtain an integral inequality.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Obtain an integral inequality.
+
+::: pf-proof
+
 Since $f$ is continuous on $[0,1]$, let
 \[
 M:=\max_{[0,1]}|f|<\infty.
@@ -48,10 +54,17 @@ The derivative bound gives $|f'|\le kM$, so $f$ is Lipschitz and hence absolutel
 \le k\int_0^x |f(t)|\,dt
 \qquad(0\le x\le1).
 \]
+
 :::
 
-<1>2. Iterate the inequality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Iterate the inequality.
+
+::: pf-proof
+
 We claim that for every integer $n\ge1$,
 \[
 |f(x)|\le M\frac{(kx)^n}{n!}
@@ -68,10 +81,17 @@ If the estimate holds for $n$, then Step 1 gives
 =M\frac{(kx)^{n+1}}{(n+1)!}.
 \]
 Thus the claim follows by induction.
+
 :::
 
-<1>3. Let the iteration order tend to infinity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Let the iteration order tend to infinity.
+
+::: pf-proof
+
 For each fixed $x\in[0,1]$,
 \[
 0\le |f(x)|\le M\frac{(kx)^n}{n!}\longrightarrow0
@@ -81,5 +101,11 @@ Hence $f(x)=0$. Since $x$ was arbitrary,
 \[
 \boxed{f\equiv0\text{ on }[0,1].}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

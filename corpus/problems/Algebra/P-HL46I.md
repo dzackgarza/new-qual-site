@@ -26,7 +26,6 @@ What is a ring of integers?
 What does “integral over $\ZZ$” mean?
 :::
 
-
 ::: {.solution}
 Let $K$ be a number field, i.e. a finite extension of $\QQ$.
 
@@ -43,17 +42,35 @@ The \dfn{ring of integers} of $K$ is
 \{\alpha\in K:\alpha\text{ is integral over }\ZZ\}.
 \]
 
-<1>1. The set $\mathcal O_K$ is a subring of $K$ containing $\ZZ$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The set $\mathcal O_K$ is a subring of $K$ containing $\ZZ$.
+
+::: pf-proof
+
 The elements integral over a ring form a subring of any overring: sums, differences, and products of integral elements are integral. Every integer $m$ is integral because it is a root of the monic polynomial $x-m$.
+
 :::
 
-<1>2. For $K=\QQ$, one has
+:::
+
+::: pf-step
+
+For $K=\QQ$, one has
 \[
 \mathcal O_{\QQ}=\ZZ.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $a/b\in\QQ$ be in lowest terms and integral over $\ZZ$. If it satisfies a monic polynomial with integer coefficients, multiplying by $b^n$ shows that $b\mid a^n$. Coprimality forces $b=1$, so the rational number is an integer.
+
+:::
+
+:::
+
 :::
 
 Thus $\mathcal O_K$ is the integral closure of $\ZZ$ in the number field $K$.

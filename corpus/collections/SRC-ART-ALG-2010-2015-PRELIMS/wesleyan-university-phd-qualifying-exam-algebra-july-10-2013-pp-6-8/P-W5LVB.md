@@ -36,10 +36,15 @@ b. List all $\mathbb{Q}[x]$-modules that are annihilated by $x^8 - 1$ and have d
 ::: {.solution}
 All classifications below are up to isomorphism.
 
-<1>1. The abelian groups of order $60$ are
+::: pf
+
+::: pf-step
+
+The abelian groups of order $60$ are
 $C_{60}$ and $C_{30}\times C_2$, where $C_n=\mathbb Z/n\mathbb Z$.
 
-::: {.proof}
+::: pf-proof
+
 In an abelian group $A$ of order $60=4\cdot3\cdot5$, each
 Sylow subgroup is normal and hence unique by Sylow conjugacy
 [@DF04]. Multiplication from the product of these subgroups
@@ -65,9 +70,14 @@ coprime orders; a tuple of generators has order equal to
 the product of those orders. The two groups are not
 isomorphic, since only the first contains an element of
 order $4$.
+
 :::
 
-<1>2. Every module in part (b) has a unique multiplicity
+:::
+
+::: {.pf-step #s2}
+
+Every module in part (b) has a unique multiplicity
 description
 $$
 M\cong E_1^{\oplus a}\oplus E_2^{\oplus b}
@@ -83,7 +93,8 @@ E_8=\mathbb Q[x]/(x^4+1).
 $$
 Each quotient has its natural $\mathbb Q[x]$-module structure.
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 f=x^8-1=(x-1)(x+1)(x^2+1)(x^4+1).
@@ -127,9 +138,14 @@ of each $e_j$ and hence restricts to an $E_j$-linear
 isomorphism on the corresponding summand. It therefore
 preserves all four multiplicities. Equal multiplicities
 give isomorphic direct sums, proving uniqueness.
+
 :::
 
-<1>3. There are exactly ten modules in part (b), namely
+:::
+
+::: pf-step
+
+There are exactly ten modules in part (b), namely
 
 | $(a,b,c,d)$ | Module |
 | --- | --- |
@@ -144,14 +160,21 @@ give isomorphic direct sums, proving uniqueness.
 | $(0,0,2,0)$ | $E_4^{\oplus2}$ |
 | $(0,0,0,1)$ | $E_8$ |
 
-::: {.proof}
-The equation in step <1>2 implies $d\leq1$. For $d=1$,
+::: pf-proof
+
+The equation in step [](#s2){.pf-ref} implies $d\leq1$. For $d=1$,
 the other multiplicities vanish, giving the last row.
 For $d=0$, one has $c\leq2$. If $c=2$, then $a=b=0$.
 If $c=1$, then $a+b=2$, giving the three pairs
 $(2,0),(1,1),(0,2)$. If $c=0$, then $a+b=4$, giving
 the five pairs displayed in the first five rows.
 These cases are exhaustive and disjoint, and uniqueness
-in step <1>2 shows that no two rows are isomorphic.
+in step [](#s2){.pf-ref} shows that no two rows are isomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

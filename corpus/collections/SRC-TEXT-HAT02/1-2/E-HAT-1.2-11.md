@@ -40,7 +40,11 @@ Do the same when $X = S^1 \times S^1$.
 Let $x_0$ be the wedge point of $X$ and assume $f(x_0)=x_0$.
 Let $t$ denote the loop in the mapping torus traced by the basepoint as the $I$-coordinate runs once around the quotient.
 
-<1>1. If $X=S^1\vee S^1$ with free generators $a,b$ of
+::: pf
+
+::: pf-step
+
+If $X=S^1\vee S^1$ with free generators $a,b$ of
 \[
 \pi_1(X,x_0)\cong F(a,b),
 \]
@@ -49,20 +53,29 @@ then $T_f$ is obtained from
 X\vee S^1
 \]
 by attaching two $2$-cells.
-::: {.proof}
+
+::: pf-proof
+
 Give each circle of $X$ one $0$-cell and one $1$-cell.
 The product of each $1$-cell with $I$ descends in the mapping torus to a $2$-cell.
 The $1$-skeleton of the mapping torus consists of the two original loops $a,b$ together with the loop $t$ coming from $x_0\times I$.
 Thus its $1$-skeleton is $X\vee S^1$.
+
 :::
 
-<1>2. The two attaching maps impose
+:::
+
+::: {.pf-step #s2}
+
+The two attaching maps impose
 \[
 t a t^{-1}=f_*(a),
 \qquad
 t b t^{-1}=f_*(b).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Use the copy $X\times\{1\}$ to name the generators $a$ and $b$, and orient $t$ from level $0$ to level $1$ along the basepoint.
 Consider the square obtained from the cylinder over the $a$-edge.
 Its oriented boundary traverses the bottom edge, the right vertical edge, the top edge backwards, and the left vertical edge backwards.
@@ -76,9 +89,14 @@ so its relation is equivalent to
 t a t^{-1} f_*(a)^{-1}=1.
 \]
 The same argument for the $b$-edge gives the second relation.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 \[
 \boxed{
 \pi_1(T_f)
@@ -86,12 +104,19 @@ The same argument for the $b$-edge gives the second relation.
 \left\langle a,b,t\ \middle|\ t a t^{-1}=f_*(a),\ t b t^{-1}=f_*(b)\right\rangle .
 }
 \]
-::: {.proof}
-The $1$-skeleton contributes the free group on $a,b,t$, and <1>2 gives exactly the attaching relations of the two $2$-cells.
+
+::: pf-proof
+
+The $1$-skeleton contributes the free group on $a,b,t$, and step [](#s2){.pf-ref} gives exactly the attaching relations of the two $2$-cells.
 Van Kampen for CW complexes yields the displayed presentation.
+
 :::
 
-<1>4. Now suppose
+:::
+
+::: {.pf-step #s4}
+
+Now suppose
 \[
 X=S^1\times S^1
 \]
@@ -112,19 +137,34 @@ t b t^{-1}=f_*(b)
 \right\rangle .
 }
 \]
-::: {.proof}
+
+::: pf-proof
+
 Use the usual CW structure on the torus with one $0$-cell, two $1$-cells $a,b$, and one $2$-cell attached along the commutator $[a,b]$.
 The mapping-torus $1$-skeleton adds the stable loop $t$.
 The original torus $2$-cell contributes the relation
 \[
 [a,b]=1,
 \]
-while the cylinders over the $a$- and $b$-edges contribute the two conjugacy relations from <1>2.
+while the cylinders over the $a$- and $b$-edges contribute the two conjugacy relations from step [](#s2){.pf-ref}.
 The product of the torus $2$-cell with $I$ gives a $3$-cell and therefore introduces no additional relation in the fundamental-group presentation.
+
 :::
 
-<1>5. The two requested presentations are therefore those in <1>3 and <1>4.
-::: {.proof}
-These are exactly the two cases stated in the source exercise.
 :::
+
+::: pf-step
+
+The two requested presentations are therefore those in steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
+::: pf-proof
+
+These are exactly the two cases stated in the source exercise.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -33,20 +33,32 @@ Prove that their union $A \cup B$ is also connected.
 :::
 
 ::: {.solution}
-<1>1. Suppose, for contradiction, that $A\cup B$ is disconnected. Then there
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that $A\cup B$ is disconnected. Then there
 are disjoint nonempty subsets $U,V\subseteq A\cup B$, open in the subspace
 topology, such that
 $$
 A\cup B=U\cup V.
 $$
 
-::: {.proof}
+::: pf-proof
+
 This is the definition of disconnectedness.
+
 :::
 
-<1>2. The connected set $A$ is contained entirely in $U$ or entirely in $V$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The connected set $A$ is contained entirely in $U$ or entirely in $V$.
+
+::: pf-proof
+
 We have
 $$
 A=(A\cap U)\cup(A\cap V).
@@ -54,34 +66,52 @@ $$
 The two sets on the right are disjoint and open in the subspace topology on
 $A$. If both were nonempty, they would separate $A$, contradicting the
 connectedness of $A$. Hence one is empty, so $A\subseteq U$ or $A\subseteq V$.
+
 :::
 
-<1>3. The connected set $B$ is contained entirely in $U$ or entirely in $V$.
+:::
 
-::: {.proof}
-The same argument as in step <1>2, applied to
+::: {.pf-step #s3}
+
+The connected set $B$ is contained entirely in $U$ or entirely in $V$.
+
+::: pf-proof
+
+The same argument as in step [](#s2){.pf-ref}, applied to
 $$
 B=(B\cap U)\cup(B\cap V),
 $$
 uses the connectedness of $B$.
+
 :::
 
-<1>4. The sets $A$ and $B$ must lie in the same member of the separation.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The sets $A$ and $B$ must lie in the same member of the separation.
+
+::: pf-proof
+
 Choose
 $$
 p\in A\cap B,
 $$
 which exists because $A$ and $B$ are not disjoint. Since $U$ and $V$ are
-disjoint, the point $p$ belongs to exactly one of them. Steps <1>2--<1>3 then
+disjoint, the point $p$ belongs to exactly one of them. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} then
 force both $A$ and $B$ to lie in that same set.
+
 :::
 
-<1>5. The union $A\cup B$ is connected.
+:::
 
-::: {.proof}
-By step <1>4, either
+::: {.pf-step #s5}
+
+The union $A\cup B$ is connected.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, either
 $$
 A\cup B\subseteq U
 $$
@@ -90,13 +120,19 @@ $$
 A\cup B\subseteq V.
 $$
 Since $A\cup B=U\cup V$, this makes the other member of the purported
-separation empty, contradicting step <1>1. Therefore no separation exists,
+separation empty, contradicting step [](#s1){.pf-ref}. Therefore no separation exists,
 so $A\cup B$ is connected.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

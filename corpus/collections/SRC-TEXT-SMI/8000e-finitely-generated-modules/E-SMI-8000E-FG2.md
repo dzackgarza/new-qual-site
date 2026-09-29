@@ -33,10 +33,16 @@ audit:
 (c) Write down all 7 by 7 Jordan matrices with minimal polynomial $(t - 2)(t - 3)$.
 :::
 
-
 ::: {.solution}
-<1>1. There is exactly one abelian group of order $648$ annihilated by $6$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+There is exactly one abelian group of order $648$ annihilated by $6$.
+
+::: pf-proof
+
 Let $G$ have order
 $$
 648=2^3 3^4.
@@ -71,10 +77,17 @@ Equivalently,
 $$
 G\cong(\mathbb Z/6)^3\oplus\mathbb Z/3.
 $$
+
 :::
 
-<1>2. Classify the seven-dimensional $k[t]$-modules annihilated by $(t-2)(t-3)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Classify the seven-dimensional $k[t]$-modules annihilated by $(t-2)(t-3)$.
+
+::: pf-proof
+
 Put
 $$
 p(t)=(t-2)(t-3).
@@ -110,10 +123,17 @@ V_r=(k[t]/(t-2))^r
 $$
 The integer $r$ is an isomorphism invariant, so these are exactly the eight
 isomorphism classes.
+
 :::
 
-<1>3. Classify the $7\times7$ Jordan matrices with minimal polynomial $(t-2)(t-3)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Classify the $7\times7$ Jordan matrices with minimal polynomial $(t-2)(t-3)$.
+
+::: pf-proof
+
 A matrix with this minimal polynomial is diagonalizable because the minimal
 polynomial has distinct linear factors. Both factors must actually occur, or
 the minimal polynomial would omit one of them. Thus the matrix has $r$ copies
@@ -129,5 +149,11 @@ J_r=2I_r\oplus3I_{7-r},
 $$
 These six matrices are pairwise nonconjugate because the multiplicity of the
 eigenvalue $2$ is invariant under conjugacy.
+
 :::
+
+:::
+
+:::
+
 :::

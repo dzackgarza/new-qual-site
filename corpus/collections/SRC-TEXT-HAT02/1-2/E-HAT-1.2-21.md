@@ -38,8 +38,14 @@ X*Y=(X\times Y\times I)/\sim
 in which at $t=0$ the $Y$-coordinate is forgotten, giving the copy of $X$, and at $t=1$ the $X$-coordinate is forgotten, giving the copy of $Y$.
 Denote these two ends simply by $X$ and $Y$.
 
-<1>1. The join $X*Y$ is path connected.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The join $X*Y$ is path connected.
+
+::: pf-proof
+
 Choose $y_0\in Y$.
 The subspace
 \[
@@ -48,14 +54,21 @@ X*\{y_0\}
 is the cone $CX$, hence is path connected and contains the whole $X$-end.
 Every point $[x,y,t]$ can be joined to its $X$-end point $[x,-,0]$ by varying only the coordinate $t$ from its given value down to $0$.
 Thus every point can be joined to the path-connected subspace $X*\{y_0\}$.
+
 :::
 
-<1>2. Let
+:::
+
+::: {.pf-step #s2}
+
+Let
 \[
 J=(X*Y)\setminus Y.
 \]
 Then $J$ deformation retracts onto the $X$-end.
-::: {.proof}
+
+::: pf-proof
+
 Every point of $J$ has a representative $[x,y,t]$ with $t<1$.
 Define
 \[
@@ -64,10 +77,17 @@ H_u([x,y,t])=[x,y,(1-u)t].
 This is well defined and continuous for $0\le u\le1$.
 At $u=1$ all points lie at $t=0$, where the $Y$-coordinate is forgotten, so the image is exactly $X$.
 Points already in $X$ remain fixed.
+
 :::
 
-<1>3. Any path in $X*Y$ whose endpoints lie in $J$ is homotopic relative to its endpoints to a path lying entirely in $J$, provided $X$ is path connected.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Any path in $X*Y$ whose endpoints lie in $J$ is homotopic relative to its endpoints to a path lying entirely in $J$, provided $X$ is path connected.
+
+::: pf-proof
+
 Let
 \[
 \alpha:I\to X*Y
@@ -111,10 +131,17 @@ It is homotopic rel endpoints to the original subpath: in the truncated cone reg
 Both then reduce to the same projected $Y$-path with the same endpoint fibers; reversing one contraction gives the required relative homotopy.
 
 Performing these finitely many replacements removes every intersection with the $Y$-end and leaves the original endpoints fixed.
+
 :::
 
-<1>4. Every loop in $X*Y$ is homotopic to a loop in the $X$-end.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every loop in $X*Y$ is homotopic to a loop in the $X$-end.
+
+::: pf-proof
+
 Let $\gamma:S^1\to X*Y$ be a loop.
 If $\gamma(S^1)\subseteq Y$, choose $x_0\in X$ and define
 \[
@@ -125,12 +152,19 @@ Thus in this case we may first replace $\gamma$ by a homotopic loop in $J$.
 
 Otherwise choose the basepoint of the parametrization at a point of the loop lying in $J$.
 
-By <1>3, $\gamma$ is homotopic to a loop contained in $J$.
-Apply the deformation retraction of <1>2 to obtain a loop contained in $X$.
+By step [](#s3){.pf-ref}, $\gamma$ is homotopic to a loop contained in $J$.
+Apply the deformation retraction of step [](#s2){.pf-ref} to obtain a loop contained in $X$.
+
 :::
 
-<1>5. Every loop in the $X$-end is nullhomotopic in $X*Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Every loop in the $X$-end is nullhomotopic in $X*Y$.
+
+::: pf-proof
+
 Fix any $y_0\in Y$.
 The subjoin
 \[
@@ -139,15 +173,28 @@ X*\{y_0\}
 is a cone on $X$.
 It contains the $X$-end and is contractible by moving the join coordinate from $t=0$ to the cone point $y_0$ at $t=1$.
 Hence every loop in $X$ contracts inside this subspace of $X*Y$.
+
 :::
 
-<1>6. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\pi_1(X*Y)=0,}
 \]
 and since $X*Y$ is path connected, it is simply connected.
-::: {.proof}
-By <1>4 every loop is homotopic to one in $X$, and by <1>5 every such loop is nullhomotopic.
-Path connectedness is <1>1.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref} every loop is homotopic to one in $X$, and by step [](#s5){.pf-ref} every such loop is nullhomotopic.
+Path connectedness is step [](#s1){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

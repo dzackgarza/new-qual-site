@@ -33,7 +33,12 @@ Show that $M'_h$ does not retract onto its boundary circle $C$, and hence $M_g$ 
 :::
 
 ::: {.solution}
-<1>1. For $h\ge1$, the surface $M'_h$ has fundamental group
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $h\ge1$, the surface $M'_h$ has fundamental group
 \[
 \pi_1(M'_h)\cong F(a_1,b_1,\dots,a_h,b_h),
 \]
@@ -41,7 +46,9 @@ and its boundary loop $C$ represents
 \[
 [a_1,b_1]\cdots[a_h,b_h].
 \]
-::: {.proof}
+
+::: pf-proof
+
 A genus-$h$ orientable surface with one boundary component has the standard CW description with one vertex and $2h$ one-cells
 \[
 a_1,b_1,\dots,a_h,b_h,
@@ -53,13 +60,20 @@ The boundary of the missing $2$-cell is the usual surface attaching word
 [a_1,b_1]\cdots[a_h,b_h],
 \]
 so this word represents the boundary circle $C$.
+
 :::
 
-<1>2. There is no retraction
+:::
+
+::: {.pf-step #s2}
+
+There is no retraction
 \[
 r:M'_h\to C.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Suppose such a retraction existed, and let
 \[
 i:C\hookrightarrow M'_h
@@ -74,7 +88,7 @@ Identify
 \pi_1(C)\cong\mathbb Z.
 \]
 
-For $h\ge1$, <1>1 says that $i_*(1)$ is a product of commutators.
+For $h\ge1$, step [](#s1){.pf-ref} says that $i_*(1)$ is a product of commutators.
 Every homomorphism from a group to the abelian group $\mathbb Z$ kills every commutator, so
 \[
 r_*i_*(1)=0,
@@ -86,10 +100,17 @@ r_*i_*(1)=1.
 
 If $h=0$, then $M'_0=D^2$, so $i_*:\pi_1(S^1)\to\pi_1(D^2)$ is the zero map and cannot possess a left inverse either.
 Thus no retraction exists for any $h\ge0$.
+
 :::
 
-<1>3. The closed surface $M_g$ cannot retract onto the separating circle $C$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The closed surface $M_g$ cannot retract onto the separating circle $C$.
+
+::: pf-proof
+
 If
 \[
 r:M_g\to C
@@ -99,33 +120,54 @@ were a retraction, then restricting $r$ to either subsurface $M'_h\subset M_g$ w
 r|_{M'_h}:M'_h\to C,
 \]
 because $C\subset M'_h$ and $r$ is the identity on $C$.
-This contradicts <1>2.
+This contradicts step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. A nonseparating simple closed curve $C'\subset M_g$ can be carried by a homeomorphism of $M_g$ to the standard loop $a_1$ in the usual one-vertex CW structure on $M_g$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+A nonseparating simple closed curve $C'\subset M_g$ can be carried by a homeomorphism of $M_g$ to the standard loop $a_1$ in the usual one-vertex CW structure on $M_g$.
+
+::: pf-proof
+
 Cutting an orientable surface along a nonseparating simple closed curve produces a connected orientable surface of genus $g-1$ with two boundary components.
 The same is true for the standard generator circle $a_1$.
 By the classification of compact orientable surfaces with boundary, the two cut surfaces are homeomorphic by a homeomorphism matching their two boundary circles.
 Regluing gives a homeomorphism of $M_g$ carrying $C'$ to $a_1$.
 Thus it suffices to construct a retraction onto $a_1$.
+
 :::
 
-<1>5. Define a map on the $1$-skeleton
+:::
+
+::: pf-step
+
+Define a map on the $1$-skeleton
 \[
 q:M_g^1\to a_1\cong S^1
 \]
 by mapping the edge $a_1$ identically to itself and collapsing every other $1$-cell to the common vertex.
-::: {.proof}
+
+::: pf-proof
+
 The standard $1$-skeleton is a wedge of the $2g$ circles
 \[
 a_1,b_1,\dots,a_g,b_g.
 \]
 A map from this wedge is determined continuously by its restrictions to the summand circles, and the stated restrictions agree at the wedge point.
+
 :::
 
-<1>6. The map $q$ extends across the $2$-cell of $M_g$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $q$ extends across the $2$-cell of $M_g$.
+
+::: pf-proof
+
 The attaching map of the $2$-cell represents
 \[
 [a_1,b_1]\cdots[a_g,b_g].
@@ -137,16 +179,29 @@ Under $q_*$, each $b_i$ and every $a_i$ for $i>1$ maps to the identity in
 while $a_1$ maps to the generator.
 Therefore every commutator maps to the identity, so the entire attaching loop maps trivially in $\pi_1(S^1)$.
 Hence its composite with $q$ is null-homotopic and $q$ extends over the $2$-cell.
+
 :::
 
-<1>7. The extension
+:::
+
+::: pf-step
+
+The extension
 \[
 r:M_g\to a_1
 \]
 is a retraction, and hence $M_g$ retracts onto $C'$.
-::: {.proof}
+
+::: pf-proof
+
 By construction, $r$ restricts to the identity on the edge $a_1$.
 Thus $r$ is a retraction onto $a_1$.
-Conjugating this retraction by the homeomorphism from <1>4 gives a retraction of $M_g$ onto the original nonseparating curve $C'$.
+Conjugating this retraction by the homeomorphism from step [](#s4){.pf-ref} gives a retraction of $M_g$ onto the original nonseparating curve $C'$.
+
 :::
+
+:::
+
+:::
+
 :::

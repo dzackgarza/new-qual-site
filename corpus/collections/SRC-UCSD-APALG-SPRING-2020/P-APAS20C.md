@@ -26,38 +26,87 @@ Prove that $\phi-t\psi$ is positive definite if and only if $t<\lambda_n(\theta)
 :::
 
 ::: {.solution}
-<1>1. $\phi - t\psi$ is positive definite iff $\psi^{-1/2}(\phi - t\psi)\psi^{-1/2}$ is positive definite.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$\phi - t\psi$ is positive definite iff $\psi^{-1/2}(\phi - t\psi)\psi^{-1/2}$ is positive definite.
+
+::: pf-proof
+
 conjugating by the invertible $\psi^{-1/2}$ preserves positive definiteness (it is a congruence).
+
 :::
 
-<1>2. $\psi^{-1/2}(\phi - t\psi)\psi^{-1/2} = \psi^{-1/2}\phi\psi^{-1/2} - t\psi^{-1/2}\psi\psi^{-1/2} = \theta - tI$.
-::: {.proof}
-<1>1, expanding.
 :::
 
-<1>3. $\theta$ is positive definite Hermitian (it is a congruence of the positive definite $\phi$), so it is diagonalizable with positive eigenvalues $\lambda_1 \ge \cdots \ge \lambda_n > 0$.
-::: {.proof}
+::: {.pf-step #s2}
+
+$\psi^{-1/2}(\phi - t\psi)\psi^{-1/2} = \psi^{-1/2}\phi\psi^{-1/2} - t\psi^{-1/2}\psi\psi^{-1/2} = \theta - tI$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref}, expanding.
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+$\theta$ is positive definite Hermitian (it is a congruence of the positive definite $\phi$), so it is diagonalizable with positive eigenvalues $\lambda_1 \ge \cdots \ge \lambda_n > 0$.
+
+::: pf-proof
+
 $\theta = \psi^{-1/2}\phi\psi^{-1/2}$ is Hermitian and positive definite.
+
 :::
 
-<1>4. $\theta - tI$ is positive definite iff all its eigenvalues are positive, i.e. iff $\lambda_i - t > 0$ for all $i$.
-::: {.proof}
-<1>3 (the eigenvalues of $\theta - tI$ are $\lambda_i - t$).
 :::
 
-<1>5. This holds iff $t < \lambda_i$ for all $i$, i.e. iff $t < \lambda_n$ (the smallest eigenvalue).
-::: {.proof}
-<1>4.
+::: {.pf-step #s4}
+
+$\theta - tI$ is positive definite iff all its eigenvalues are positive, i.e. iff $\lambda_i - t > 0$ for all $i$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref} (the eigenvalues of $\theta - tI$ are $\lambda_i - t$).
+
 :::
 
-<1>6. Hence $\phi - t\psi$ is positive definite iff $t < \lambda_n(\theta)$.
-::: {.proof}
-<1>1, <1>2, <1>5.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+::: {.pf-step #s5}
+
+This holds iff $t < \lambda_i$ for all $i$, i.e. iff $t < \lambda_n$ (the smallest eigenvalue).
+
+::: pf-proof
+
+Step [](#s4){.pf-ref}.
+
 :::
+
+:::
+
+::: {.pf-step #s6}
+
+Hence $\phi - t\psi$ is positive definite iff $t < \lambda_n(\theta)$.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

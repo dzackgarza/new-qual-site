@@ -26,20 +26,47 @@ review: draft
 :::
 
 ::: {.solution}
-<1>1. Removing one point from $S^2$ gives $\mathbb R^2$ by stereographic projection; the second removed point becomes one point of $\mathbb R^2$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Removing one point from $S^2$ gives $\mathbb R^2$ by stereographic projection; the second removed point becomes one point of $\mathbb R^2$.
+
+::: pf-proof
+
 Choose one of the two deleted points as the projection point.
+
 :::
 
-<1>2. The punctured plane $\mathbb R^2\setminus\{0\}$ strongly deformation retracts onto the unit circle by
+:::
+
+::: {.pf-step #s2}
+
+The punctured plane $\mathbb R^2\setminus\{0\}$ strongly deformation retracts onto the unit circle by
 $$H(x,t)=\bigl((1-t)+t/\|x\|\bigr)x.$$
-::: {.proof}
+
+::: pf-proof
+
 For $x\ne0$ the scalar is positive, so the homotopy stays in the punctured plane; at $t=1$ it is radial projection and it fixes the unit circle.
+
 :::
 
-<1>3. Therefore
-$$\boxed{S^2\setminus\{p,q\}\simeq S^1.}$$
-::: {.proof}
-Combine <1>1--<1>2.
 :::
+
+::: pf-step
+
+Therefore
+$$\boxed{S^2\setminus\{p,q\}\simeq S^1.}$$
+
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref} and [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -25,20 +25,45 @@ Show that if $f: X \to \mathbb{R}$ is continuous and $X$ is a nonempty compact t
 :::
 
 ::: {.solution}
-<1>1. Since $f$ is continuous and $X$ is compact, $f(X)$ is compact.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Since $f$ is continuous and $X$ is compact, $f(X)$ is compact.
+
+::: pf-proof
+
 If $\{V_\alpha\}$ is an open cover of $f(X)$, then $\{f^{-1}(V_\alpha)\}$ is an open cover of $X$. A finite subcover of $X$ pushes forward to a finite subcover of $f(X)$.
+
 :::
 
-<1>2. By Heine--Borel, the compact subset $f(X)\subset\mathbb R$ is bounded and closed.
+:::
 
-<1>3. Because $X$ is nonempty, $f(X)$ is nonempty. Since it is bounded, let
+::: pf-step
+
+By Heine--Borel, the compact subset $f(X)\subset\mathbb R$ is bounded and closed.
+
+:::
+
+::: pf-step
+
+Because $X$ is nonempty, $f(X)$ is nonempty. Since it is bounded, let
 $$
 m=\inf f(X),\qquad M=\sup f(X).
 $$
 Both $m$ and $M$ lie in the closure of $f(X)$; since $f(X)$ is closed, they lie in $f(X)$ itself.
 
-<1>4. Hence there are $x_{\min},x_{\max}\in X$ such that
+:::
+
+::: pf-step
+
+Hence there are $x_{\min},x_{\max}\in X$ such that
+
+:::
+
+:::
+
 $$
 f(x_{\min})=m,\qquad f(x_{\max})=M.
 $$

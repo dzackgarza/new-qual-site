@@ -37,7 +37,11 @@ $$
 $$
 be the linear map represented by $A$.
 
-<1>1. There is a subspace $V\subseteq F^n$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a subspace $V\subseteq F^n$ such that
 $$
 F^n=\ker\phi\oplus V
 $$
@@ -47,7 +51,8 @@ $$
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 Choose any vector-space complement $V$ of $\ker\phi$. The restriction
 $\phi|_V$ is injective because
 $$
@@ -62,9 +67,14 @@ $$
 u=\phi(w)=\phi(v).
 $$
 Thus the restriction is an isomorphism.
+
 :::
 
-<1>2. There is a linear map
+:::
+
+::: {.pf-step #s2}
+
+There is a linear map
 $$
 \psi:F^n\longrightarrow F^n
 $$
@@ -74,12 +84,13 @@ $$
 $$
 for every $u\in\im\phi$.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 \psi_0:(\im\phi)\longrightarrow V
 $$
-be the inverse of the isomorphism in step <1>1. Choose a complement
+be the inverse of the isomorphism in step [](#s1){.pf-ref}. Choose a complement
 $Z$ with
 $$
 F^n=\im\phi\oplus Z,
@@ -95,36 +106,54 @@ $$
 \phi\psi_0(u)
 =u.
 $$
+
 :::
 
-<1>3. The endomorphisms satisfy
+:::
+
+::: {.pf-step #s3}
+
+The endomorphisms satisfy
 $$
 \phi\psi\phi=\phi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $w\in F^n$, the vector $\phi(w)$ lies in $\im\phi$.
-Applying step <1>2 to this vector gives
+Applying step [](#s2){.pf-ref} to this vector gives
 $$
 \phi\psi\phi(w)=\phi(w).
 $$
 Since this holds for every $w$, the endomorphisms are equal.
+
 :::
 
-<1>4. If $X$ is the matrix of $\psi$ in the standard basis, then
+:::
+
+::: {.pf-step #s4}
+
+If $X$ is the matrix of $\psi$ in the standard basis, then
 $$
 AXA=A.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Matrix multiplication represents composition of the corresponding
 endomorphisms. Thus the matrix identity is exactly the endomorphism
-identity from step <1>3.
+identity from step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 constructs the required matrix $X$.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} constructs the required matrix $X$.
+
+:::
+
+:::
+
 :::

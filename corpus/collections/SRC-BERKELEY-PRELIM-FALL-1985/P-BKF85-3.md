@@ -22,15 +22,27 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. A polynomial of degree $2$ or $3$ over a field is reducible if and only if it has a root in that field.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+A polynomial of degree $2$ or $3$ over a field is reducible if and only if it has a root in that field.
+
+::: pf-proof
+
 If such a polynomial has a root $a$, then it is divisible by $x-a$ and is reducible. Conversely, any nontrivial factorization of a polynomial of degree $2$ or $3$ has a factor of degree $1$, and a degree-$1$ factor supplies a root in the field.
+
 :::
 
-<1>2. There are exactly $15$ reducible monic quadratic polynomials over $\FF_5$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+There are exactly $15$ reducible monic quadratic polynomials over $\FF_5$.
+
+::: pf-proof
+
 For each $a\in\FF_5$, let $A_a$ be the set of monic quadratic polynomials having $a$ as a root. Every element of $A_a$ has the form
 $$
 (x-a)(x-b),
@@ -57,26 +69,38 @@ $$
 =
 15.
 $$
-By step <1>1, this union is exactly the set of reducible monic quadratics.
+By step [](#s1){.pf-ref}, this union is exactly the set of reducible monic quadratics.
+
 :::
 
-<1>3. There are exactly
+:::
+
+::: {.pf-step #s3}
+
+There are exactly
 $$
 25-15=10
 $$
 monic irreducible quadratic polynomials over $\FF_5$.
 
-::: {.proof}
+::: pf-proof
+
 A monic quadratic is determined by its two nonleading coefficients, so there are
 $$
 5^2=25
 $$
-monic quadratics in total. Subtract the $15$ reducible ones counted in step <1>2.
+monic quadratics in total. Subtract the $15$ reducible ones counted in step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. There are exactly $85$ reducible monic cubic polynomials over $\FF_5$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+There are exactly $85$ reducible monic cubic polynomials over $\FF_5$.
+
+::: pf-proof
+
 For each $a\in\FF_5$, let $B_a$ be the set of monic cubic polynomials having $a$ as a root. Such a polynomial is
 $$
 (x-a)q(x),
@@ -116,26 +140,38 @@ $$
 85.
 \end{aligned}
 $$
-By step <1>1, these are precisely the reducible monic cubics.
+By step [](#s1){.pf-ref}, these are precisely the reducible monic cubics.
+
 :::
 
-<1>5. There are exactly
+:::
+
+::: {.pf-step #s5}
+
+There are exactly
 $$
 125-85=40
 $$
 monic irreducible cubic polynomials over $\FF_5$.
 
-::: {.proof}
+::: pf-proof
+
 A monic cubic is determined by its three nonleading coefficients, so there are
 $$
 5^3=125
 $$
-monic cubics in total. Subtract the $85$ reducible ones counted in step <1>4.
+monic cubics in total. Subtract the $85$ reducible ones counted in step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>5 give the answers $10$ and $40$, respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s5){.pf-ref} give the answers $10$ and $40$, respectively.
+
+:::
+
+:::
+
 :::

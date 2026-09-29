@@ -17,7 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. Consider
+
+::: pf
+
+::: pf-step
+
+Consider
 \[
 u^3+xv-y=0,\qquad v^3+yu-x=0.
 \]
@@ -27,5 +32,14 @@ Can these equations be solved uniquely for $u,v$ as functions of $x,y$ near
 \]
 Explain your answer.
 
-<1>2. Give an example in which the conclusion of the implicit function theorem is true although its standard nondegeneracy hypothesis fails.
+:::
+
+::: pf-step
+
+Give an example in which the conclusion of the implicit function theorem is true although its standard nondegeneracy hypothesis fails.
+
+:::
+
+:::
+
 :::

@@ -39,8 +39,14 @@ audit:
 ::: {.solution}
 Both assertions are false.
 
-<1>1. Part (a) fails for $f(z)=1/z$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Part (a) fails for $f(z)=1/z$.
+
+::: pf-proof
+
 The function
 $$
 f(z)=\frac1z
@@ -53,10 +59,17 @@ zF(z)=1
 $$
 for every $|z|<3$. Evaluating at $z=0$ gives $0=1$, a contradiction. Thus no
 holomorphic extension exists.
+
 :::
 
-<1>2. Part (b) fails for $f(z)=e^{1/z}$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Part (b) fails for $f(z)=e^{1/z}$.
+
+::: pf-proof
+
 The function
 $$
 f(z)=e^{1/z}
@@ -77,5 +90,11 @@ has infinitely many nonzero negative Laurent coefficients at zero, so zero is
 an essential singularity. A meromorphic function at zero can have only a
 removable singularity or a pole. This contradiction shows that no such
 meromorphic extension exists.
+
 :::
+
+:::
+
+:::
+
 :::

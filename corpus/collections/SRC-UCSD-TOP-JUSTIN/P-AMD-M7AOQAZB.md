@@ -20,7 +20,12 @@ Construct a space $X$ such that $H_*(X; \ZZ) = (\ZZ, \ZZ_6, \ZZ_{12}, \ZZ \oplus
 :::
 
 ::: {.solution}
-<1>1. For an abelian group $A$ and $r\ge1$, let $M(A,r)$ denote a Moore space with
+
+::: pf
+
+::: pf-step
+
+For an abelian group $A$ and $r\ge1$, let $M(A,r)$ denote a Moore space with
 $$
 \widetilde H_i(M(A,r);\mathbb Z)\cong
 \begin{cases}
@@ -33,15 +38,22 @@ $$
 M(\mathbb Z/m,r)=S^r\cup_m e^{r+1},
 $$
 where the top cell is attached by a degree-$m$ map.
-::: {.proof}
+
+::: pf-proof
+
 Its cellular chain complex in the two positive dimensions is
 $$
 0\to\mathbb Z\xrightarrow{m}\mathbb Z\to0,
 $$
 so the only reduced homology is $\mathbb Z/m$ in degree $r$.
+
 :::
 
-<1>2. Take
+:::
+
+::: pf-step
+
+Take
 $$
 X=M(\mathbb Z/6,1)\vee M(\mathbb Z/12,2)
 \vee S^3\vee M(\mathbb Z/4,3).
@@ -57,21 +69,35 @@ H_i(X;\mathbb Z)\cong
 0,&i\ge4.
 \end{cases}
 $$
-::: {.proof}
+
+::: pf-proof
+
 Reduced homology takes wedges of connected CW complexes to direct sums. Each summand contributes exactly the indicated group in its designated degree.
+
 :::
 
-<1>3. The cohomological universal coefficient theorem gives
+:::
+
+::: pf-step
+
+The cohomological universal coefficient theorem gives
 $$
 0\to\operatorname{Ext}(H_{i-1}(X),\mathbb Z)
 \to H^i(X;\mathbb Z)
 \to\operatorname{Hom}(H_i(X),\mathbb Z)\to0.
 $$
-::: {.proof}
+
+::: pf-proof
+
 This is the universal coefficient short exact sequence for integral cohomology.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 $$
 \boxed{H^i(X;\mathbb Z)\cong
 \begin{cases}
@@ -83,7 +109,9 @@ $$
 0,&i\ge5.
 \end{cases}}
 $$
-::: {.proof}
+
+::: pf-proof
+
 Use
 $$
 \operatorname{Hom}(\mathbb Z/m,\mathbb Z)=0,
@@ -101,5 +129,11 @@ $$
 0\to\mathbb Z/12\to H^3(X)\to\mathbb Z\to0
 $$
 splits because $\mathbb Z$ is free, yielding $H^3(X)\cong\mathbb Z\oplus\mathbb Z/12$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -24,38 +24,87 @@ Prove $f$ is constant.
 :::
 
 ::: {.solution}
-<1>1. The inequality $|f(z)| \le \log(|f(z)| + 2)$ holds for all $z \in \mathbb{C}$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The inequality $|f(z)| \le \log(|f(z)| + 2)$ holds for all $z \in \mathbb{C}$.
+
+::: pf-proof
+
 hypothesis.
+
 :::
 
-<1>2. The function $h(t) = t - \log(t + 2)$ satisfies $h(0) = -\log 2 < 0$ and $h(t) \to \infty$ as $t \to \infty$, and $h'(t) = 1 - 1/(t+2) > 0$ for $t > 0$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The function $h(t) = t - \log(t + 2)$ satisfies $h(0) = -\log 2 < 0$ and $h(t) \to \infty$ as $t \to \infty$, and $h'(t) = 1 - 1/(t+2) > 0$ for $t > 0$.
+
+::: pf-proof
+
 calculus.
+
 :::
 
-<1>3. Hence the set $\{t \ge 0 : t \le \log(t + 2)\}$ is bounded.
-::: {.proof}
-<1>2 ($h(t) \le 0$ only for bounded $t$).
 :::
 
-<1>4. Therefore $|f(z)|$ is uniformly bounded (there is $M$ with $|f(z)| \le M$ for all $z$).
-::: {.proof}
-<1>1 and <1>3.
+::: {.pf-step #s3}
+
+Hence the set $\{t \ge 0 : t \le \log(t + 2)\}$ is bounded.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} ($h(t) \le 0$ only for bounded $t$).
+
 :::
 
-<1>5. By Liouville's theorem, a bounded entire function is constant.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Therefore $|f(z)|$ is uniformly bounded (there is $M$ with $|f(z)| \le M$ for all $z$).
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+By Liouville's theorem, a bounded entire function is constant.
+
+::: pf-proof
+
 Liouville's theorem.
+
 :::
 
-<1>6. Hence $f$ is constant.
-::: {.proof}
-<1>4 and <1>5.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+::: {.pf-step #s6}
+
+Hence $f$ is constant.
+
+::: pf-proof
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref}.
+
+:::
+
+:::
+
 :::

@@ -43,8 +43,14 @@ Consider
 f(x)=x^2+1\in\mathbb R[x]\subseteq\mathbb H[x].
 \]
 
-<1>1. Every unit purely imaginary quaternion is a root of $f$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every unit purely imaginary quaternion is a root of $f$.
+
+::: pf-proof
+
 Let
 \[
 q=bi+cj+dk
@@ -64,13 +70,25 @@ Hence
 \[
 f(q)=q^2+1=0.
 \]
+
 :::
 
-<1>2. The polynomial $f$ has infinitely many roots in the division ring
+:::
+
+::: pf-step
+
+The polynomial $f$ has infinitely many roots in the division ring
 $\mathbb H$.
-::: {.proof}
+
+::: pf-proof
+
 The triples $(b,c,d)$ with $b^2+c^2+d^2=1$ form the unit sphere in
-$\mathbb R^3$, so <1>1 supplies infinitely many distinct roots.
+$\mathbb R^3$, so step [](#s1){.pf-ref} supplies infinitely many distinct roots.
+
+:::
+
+:::
+
 :::
 
 Thus the usual degree bound for roots over fields fails for polynomials over

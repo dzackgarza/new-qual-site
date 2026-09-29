@@ -35,8 +35,14 @@ $$
 every finite abelian group of order $200$ is the direct product of its
 $2$-primary part, of order $2^3$, and its $5$-primary part, of order $5^2$.
 
-<1>1. The abelian groups of order $2^3$ are $\mathbb Z_8$, $\mathbb Z_4\times\mathbb Z_2$, and $\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The abelian groups of order $2^3$ are $\mathbb Z_8$, $\mathbb Z_4\times\mathbb Z_2$, and $\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.
+
+::: pf-proof
+
 The partitions of $3$ are
 $$
 3,\qquad 2+1,\qquad 1+1+1.
@@ -49,10 +55,17 @@ $$
 \qquad
 \mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2.
 $$
+
 :::
 
-<1>2. The abelian groups of order $5^2$ are $\mathbb Z_{25}$ and $\mathbb Z_5\times\mathbb Z_5$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The abelian groups of order $5^2$ are $\mathbb Z_{25}$ and $\mathbb Z_5\times\mathbb Z_5$.
+
+::: pf-proof
+
 The partitions of $2$ are
 $$
 2,\qquad1+1.
@@ -63,12 +76,19 @@ $$
 \qquad
 \mathbb Z_5\times\mathbb Z_5.
 $$
+
 :::
 
-<1>3. There are exactly $6$ abelian groups of order $200$ up to isomorphism.
-::: {.proof}
+:::
+
+::: pf-step
+
+There are exactly $6$ abelian groups of order $200$ up to isomorphism.
+
+::: pf-proof
+
 Every finite abelian group of order $200$ is uniquely the direct product of
-one group from step <1>1 and one group from step <1>2. Thus there are exactly
+one group from step [](#s1){.pf-ref} and one group from step [](#s2){.pf-ref}. Thus there are exactly
 $3\cdot2=6$ isomorphism types:
 $$
 \boxed{
@@ -83,5 +103,11 @@ $$
 $$
 The primary decomposition theorem also shows that no two groups in this list
 are isomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

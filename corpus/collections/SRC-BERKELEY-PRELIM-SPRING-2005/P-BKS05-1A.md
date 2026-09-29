@@ -40,10 +40,16 @@ Give a proof or a counterexample.
 :::
 
 ::: {.solution}
-<1>1. Under the hypothesis in part (a), the sequence $(a_n)$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+Under the hypothesis in part (a), the sequence $(a_n)$ is
 Cauchy.
 
-::: {.proof}
+::: pf-proof
+
 Let $\varepsilon>0$. Since
 $$
 \sum_{k=1}^{\infty}|a_{k+1}-a_k|
@@ -67,11 +73,17 @@ $$
 \end{aligned}
 $$
 Thus $(a_n)$ is Cauchy.
+
 :::
 
-<1>2. The converse in part (b) is false.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The converse in part (b) is false.
+
+::: pf-proof
+
 Take
 $$
 a_n\coloneqq\frac{(-1)^n}{n}.
@@ -97,11 +109,17 @@ $$
 $$
 Thus a Cauchy sequence need not have summable successive absolute
 differences.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves part (a), and step <1>2 answers part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves part (a), and step [](#s2){.pf-ref} answers part (b).
+
+:::
+
+:::
+
 :::

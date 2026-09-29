@@ -25,13 +25,26 @@ Show that $U$ is respectively orthogonal or unitary, and solve for $S$ in terms 
 ::: {.solution}
 It suffices to treat the skew-Hermitian case; the real skew-symmetric case is identical with transpose in place of conjugate transpose.
 
-<1>1. The matrix $S-I$ is invertible.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The matrix $S-I$ is invertible.
+
+::: pf-proof
+
 If $(S-I)v=0$, then $Sv=v$. But every eigenvalue of a skew-Hermitian matrix is purely imaginary, while $1$ is real and nonzero. Hence $v=0$.
+
 :::
 
-<1>2. The Cayley transform is unitary.
-::: {.proof}
+:::
+
+::: pf-step
+
+The Cayley transform is unitary.
+
+::: pf-proof
+
 Because $S^*=-S$,
 \[
 U^*=\bigl((S-I)^{-1}\bigr)^*(S+I)^*
@@ -47,10 +60,17 @@ U^*U
 =(S+I)^{-1}(S-I)(S+I)(S-I)^{-1}=I.
 \]
 So $U$ is unitary. In the real case the same computation gives $U^TU=I$.
+
 :::
 
-<1>3. Recover $S$ from $U$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Recover $S$ from $U$.
+
+::: pf-proof
+
 From
 \[
 U(S-I)=S+I
@@ -68,5 +88,11 @@ so $U-I$ is invertible over $\RR$ or $\CC$. Hence
 S=(U-I)^{-1}(U+I).
 \]
 Since $U$ commutes with polynomials in $U$, this may equivalently be written $(U+I)(U-I)^{-1}$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -35,7 +35,12 @@ Give an example, with explanation, of a closed curve in a surface which is not n
 :::
 
 ::: {.solution}
-<1>1. Take the closed orientable genus-$2$ surface $\Sigma_2$, with
+
+::: pf
+
+::: pf-step
+
+Take the closed orientable genus-$2$ surface $\Sigma_2$, with
 \[
 \pi_1(\Sigma_2)
 =\left\langle a_1,b_1,a_2,b_2
@@ -44,13 +49,22 @@ Give an example, with explanation, of a closed curve in a surface which is not n
 \right\rangle.
 \]
 Let $\gamma$ be a based closed curve representing the commutator $[a_1,b_1]$.
-::: {.proof}
+
+::: pf-proof
+
 This is the standard one-relator presentation obtained from the usual $8$-gon model of $\Sigma_2$.
 The word $[a_1,b_1]=a_1b_1a_1^{-1}b_1^{-1}$ is therefore represented by a closed loop on $\Sigma_2$.
+
 :::
 
-<1>2. The curve $\gamma$ is not nullhomotopic.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The curve $\gamma$ is not nullhomotopic.
+
+::: pf-proof
+
 Let $F(a,b)$ be the free group on $a,b$ and define on the generators
 \[
 a_1\longmapsto a,
@@ -75,10 +89,17 @@ But
 \]
 since the reduced word $aba^{-1}b^{-1}$ is nonempty in the free group.
 Hence $[a_1,b_1]\ne1$ in $\pi_1(\Sigma_2)$, so $\gamma$ is not nullhomotopic.
+
 :::
 
-<1>3. The curve $\gamma$ is nullhomologous.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The curve $\gamma$ is nullhomologous.
+
+::: pf-proof
+
 For any path-connected space, the Hurewicz map identifies
 \[
 H_1(\Sigma_2;\ZZ)
@@ -93,10 +114,23 @@ a_1+b_1-a_1-b_1
 =0.
 \]
 Therefore $[\gamma]=0$ in $H_1(\Sigma_2;\ZZ)$.
+
 :::
 
-<1>4. Thus $\gamma$ is a closed curve on a surface which is not nullhomotopic but is nullhomologous.
-::: {.proof}
-<1>2 and <1>3.
 :::
+
+::: pf-step
+
+Thus $\gamma$ is a closed curve on a surface which is not nullhomotopic but is nullhomologous.
+
+::: pf-proof
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

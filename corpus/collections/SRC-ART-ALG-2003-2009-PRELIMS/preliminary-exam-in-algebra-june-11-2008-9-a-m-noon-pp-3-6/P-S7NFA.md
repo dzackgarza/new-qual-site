@@ -35,7 +35,12 @@ b. Prove, without using the Fundamental Theorem of Galois Theory, that if $E$ is
 :::
 
 ::: {.solution}
-<1>1. A splitting field of $g$ over $F$ is an extension $E/F$ such that
+
+::: pf
+
+::: pf-step
+
+A splitting field of $g$ over $F$ is an extension $E/F$ such that
 $$
 g(x)=a\prod_{i=1}^{n}(x-\alpha_i)
 \quad\text{with }a\in F^\times,\ \alpha_i\in E,
@@ -43,11 +48,16 @@ g(x)=a\prod_{i=1}^{n}(x-\alpha_i)
 $$
 The roots may repeat.
 
-<1>2. Every degree-$n$ polynomial over any field has a splitting field
+:::
+
+::: pf-step
+
+Every degree-$n$ polynomial over any field has a splitting field
 of degree at most $n!$ over that field; in particular the given $E$
 satisfies $[E:F]\leq n!$.
 
-::: {.proof}
+::: pf-proof
+
 We prove the degree bound for every splitting field by induction on
 $n$, uniformly over all coefficient fields. Existence follows by
 successively adjoining roots, using a quotient by an irreducible factor
@@ -73,5 +83,11 @@ hypothesis gives $[E:F_1]\leq(n-1)!$. Applying the tower law yields
 $$
 [E:F]=[E:F_1][F_1:F]\leq(n-1)!\,n=n!.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

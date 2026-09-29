@@ -24,7 +24,12 @@ for $a\in\mathbb R$.
 :::
 
 ::: {.solution}
-<1>1. For $a\neq0$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $a\neq0$,
 $$
 \int_0^\infty \frac{1-\cos(ax)}{x^2}\,dx
 =
@@ -32,22 +37,29 @@ $$
 \int_0^\infty\frac{1-\cos t}{t^2}\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The integrand depends on $a$ only through $\abs{a}$, since cosine is even. For $a\neq0$, set
 $$
 t=\abs{a}x.
 $$
 Then $dx=dt/\abs{a}$ and $x^2=t^2/\abs{a}^2$, which gives the displayed identity.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \int_0^\infty\frac{1-\cos t}{t^2}\,dt
 =
 \int_0^\infty\frac{\sin t}{t}\,dt.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $0<\varepsilon<R$, integration by parts gives
 $$
 \int_\varepsilon^R\frac{1-\cos t}{t^2}\,dt
@@ -64,16 +76,22 @@ $$
 \frac{1-\cos R}{R}\longrightarrow0.
 $$
 The integral of $\sin t/t$ converges by Dirichlet's test, so passage to the improper limits yields the claim.
+
 :::
 
-<1>3. For every $s>0$,
+:::
+
+::: {.pf-step #s3}
+
+For every $s>0$,
 $$
 F(s)\coloneqq\int_0^\infty e^{-st}\frac{\sin t}{t}\,dt
 =
 \frac\pi2-\arctan s.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $s_0>0$. For $s\geq s_0/2$, the derivative of the integrand with respect to $s$ has absolute value at most $e^{-s_0t/2}$, which is integrable on $[0,\infty)$. Thus differentiation under the integral sign is justified at $s_0$. Since $s_0$ was arbitrary,
 $$
 F'(s)
@@ -104,16 +122,22 @@ F(s)
 =
 \frac\pi2-\arctan s.
 $$
+
 :::
 
-<1>4. The Dirichlet integral is
+:::
+
+::: {.pf-step #s4}
+
+The Dirichlet integral is
 $$
 \int_0^\infty\frac{\sin t}{t}\,dt
 =
 \frac\pi2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Fix $R>0$. On $[0,R]$, dominated convergence gives
 $$
 \lim_{s\downarrow0}
@@ -139,13 +163,18 @@ $$
 =
 \lim_{s\downarrow0}F(s).
 $$
-Step <1>3 gives
+Step [](#s3){.pf-ref} gives
 $$
 \lim_{s\downarrow0}F(s)=\frac\pi2.
 $$
+
 :::
 
-<1>5. For every $a\in\RR$,
+:::
+
+::: {.pf-step #s5}
+
+For every $a\in\RR$,
 $$
 \boxed{
 \int_0^\infty \frac{1-\cos(ax)}{x^2}\,dx
@@ -154,13 +183,20 @@ $$
 }.
 $$
 
-::: {.proof}
-If $a=0$, the integrand vanishes identically. If $a\neq0$, combine steps <1>1, <1>2, and <1>4.
+::: pf-proof
+
+If $a=0$, the integrand vanishes identically. If $a\neq0$, combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required evaluation.
+
+:::
+
+:::
+
 :::

@@ -34,10 +34,16 @@ $\mathcal F\subseteq L^1(\mu)$ is uniformly integrable if for every $\varepsilon
 If $f_n \to f$ in measure, prove that $f_n \to f$ in $L^1(\mu)$.
 :::
 
-
 ::: {.solution}
-<1>1. Prove part (a).
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove part (a).
+
+::: pf-proof
+
 Assume first that $1<p<\infty$, and let $q=p/(p-1)$. If
 \[
 M:=\sup_{f\in\mathcal F}\|f\|_p<\infty,
@@ -58,10 +64,17 @@ If $p=\infty$, then
 \le M\mu(E),
 \]
 so the same conclusion holds. Hence every bounded subset of $L^p$, $p>1$, is uniformly integrable in the stated sense.
+
 :::
 
-<1>2. Give the counterexample for $p=1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Give the counterexample for $p=1$.
+
+::: pf-proof
+
 Take $X=[0,1]$ with Lebesgue measure and
 \[
 f_n=n\mathbf1_{(0,1/n)}.
@@ -77,10 +90,17 @@ m(E)<\delta,
 \left|\int_Ef_n\,dm\right|=1.
 \]
 Thus the family is not uniformly integrable.
+
 :::
 
-<1>3. Convert the source's signed-integral condition into absolute-integral control.
-::: {.proof}
+:::
+
+::: pf-step
+
+Convert the source's signed-integral condition into absolute-integral control.
+
+::: pf-proof
+
 For real-valued $h$, suppose that
 \[
 \left|\int_Ah\,d\mu\right|<\eta
@@ -103,10 +123,17 @@ For complex-valued functions, apply the same argument to the real and imaginary 
 \quad\text{as }\mu(E)\to0.
 \]
 Thus the source's formulation implies the standard absolute-integral form of uniform integrability.
+
 :::
 
-<1>4. Show that the limit $f$ has the same small-set control.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the limit $f$ has the same small-set control.
+
+::: pf-proof
+
 Since $f_n\to f$ in measure, every subsequence has a further subsequence converging to $f$ almost everywhere; in particular choose $f_{n_k}\to f$ a.e. If $\mu(E)<\delta$, Fatou's lemma gives
 \[
 \int_E|f|\,d\mu
@@ -117,10 +144,17 @@ Hence the same small-set bound that holds uniformly for the $f_n$ also holds for
 \int_E|f_n-f|\,d\mu
 \le \int_E|f_n|\,d\mu+\int_E|f|\,d\mu.
 \]
+
 :::
 
-<1>5. Use convergence in measure to conclude $L^1$ convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use convergence in measure to conclude $L^1$ convergence.
+
+::: pf-proof
+
 Let $\varepsilon>0$. Choose $\delta>0$ so that
 \[
 \mu(E)<\delta
@@ -149,5 +183,11 @@ Hence
 \[
 \boxed{f_n\to f\text{ in }L^1(\mu).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

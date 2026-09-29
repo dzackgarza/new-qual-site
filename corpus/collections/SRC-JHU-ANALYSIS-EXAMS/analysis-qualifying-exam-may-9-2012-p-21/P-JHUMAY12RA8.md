@@ -32,8 +32,15 @@ Prove that $\widehat f\in C_0(\mathbb R)$; that is, $\widehat f$ is continuous a
 :::
 
 ::: {.solution}
-<1>1. Continuity.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Continuity.
+
+::: pf-proof
+
 Let $\xi_n\to\xi$. For every $x$,
 \[
 f(x)e^{-2\pi i x\xi_n}\longrightarrow f(x)e^{-2\pi i x\xi},
@@ -47,10 +54,17 @@ Dominated convergence gives
 \widehat f(\xi_n)\longrightarrow\widehat f(\xi).
 \]
 Thus $\widehat f$ is continuous.
+
 :::
 
-<1>2. Vanishing at infinity for smooth compactly supported functions.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Vanishing at infinity for smooth compactly supported functions.
+
+::: pf-proof
+
 Let $g\in C_c^1(\mathbb R)$. Integration by parts gives, for $\xi\ne0$,
 \[
 \widehat g(\xi)
@@ -61,10 +75,17 @@ because the boundary term vanishes. Hence
 |\widehat g(\xi)|\le\frac{\|g'\|_1}{2\pi|\xi|}\longrightarrow0
 \qquad(|\xi|\to\infty).
 \]
+
 :::
 
-<1>3. Approximate an arbitrary $L^1$ function.
-::: {.proof}
+:::
+
+::: pf-step
+
+Approximate an arbitrary $L^1$ function.
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Choose $g\in C_c^1(\mathbb R)$ such that
 \[
 \|f-g\|_1<\frac{\varepsilon}{2},
@@ -74,7 +95,7 @@ using density of $C_c^1(\mathbb R)$ in $L^1(\mathbb R)$. For every $\xi$,
 |\widehat f(\xi)-\widehat g(\xi)|
 \le\|f-g\|_1<\frac{\varepsilon}{2}.
 \]
-By <1>2, there exists $R$ such that $|\widehat g(\xi)|<\varepsilon/2$ whenever $|\xi|>R$. Therefore, for $|\xi|>R$,
+By step [](#s2){.pf-ref}, there exists $R$ such that $|\widehat g(\xi)|<\varepsilon/2$ whenever $|\xi|>R$. Therefore, for $|\xi|>R$,
 \[
 |\widehat f(\xi)|
 \le|\widehat f(\xi)-\widehat g(\xi)|+|\widehat g(\xi)|
@@ -84,5 +105,11 @@ Thus $\widehat f(\xi)\to0$ as $|\xi|\to\infty$. Together with continuity, this p
 \[
 \widehat f\in C_0(\mathbb R).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

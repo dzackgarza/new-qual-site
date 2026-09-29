@@ -38,8 +38,15 @@ Must $f\in H^\sigma$? Prove your answer.
 :::
 
 ::: {.solution}
-<1>1. After passing to a subsequence, the Fourier transforms converge almost everywhere.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+After passing to a subsequence, the Fourier transforms converge almost everywhere.
+
+::: pf-proof
+
 By the [[PR-JCZKL|Plancherel theorem]],
 $$
 \widehat f_j\longrightarrow\widehat f
@@ -50,15 +57,22 @@ $$
 \widehat f_{j_k}(\xi)\longrightarrow\widehat f(\xi)
 $$
 for almost every $\xi$.
+
 :::
 
-<1>2. The limit belongs to $H^\sigma$ and satisfies $\|f\|_{H^\sigma}\le M$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The limit belongs to $H^\sigma$ and satisfies $\|f\|_{H^\sigma}\le M$.
+
+::: pf-proof
+
 Set
 $$
 w(\xi)=(1+|\xi|^2)^\sigma
 $$
-which is positive and measurable for every real $\sigma$. By step <1>1 and [[FT-P5UNP|Fatou's lemma]],
+which is positive and measurable for every real $\sigma$. By step [](#s1){.pf-ref} and [[FT-P5UNP|Fatou's lemma]],
 $$
 \begin{aligned}
 \|f\|_{H^\sigma}^2
@@ -73,10 +87,17 @@ f\in H^\sigma(\mathbb R^n),
 \qquad
 \|f\|_{H^\sigma}\le M.
 $$
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>2 proves that the uniform $H^\sigma$ bound passes to the $L^2$ limit.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves that the uniform $H^\sigma$ bound passes to the $L^2$ limit.
+
+:::
+
+:::
+
 :::

@@ -41,8 +41,15 @@ Nonemptiness is necessary: the empty set is closed and convex but has no element
 :::
 
 ::: {.solution}
-<1>1. Choose a minimizing sequence.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Choose a minimizing sequence.
+
+::: pf-proof
+
 Let $C$ be a nonempty closed convex subset of a Hilbert space $H$, and set
 \[
 d:=\inf_{x\in C}\|x\|.
@@ -53,10 +60,17 @@ $d\leq\|x_n\|<d+1/n$. Then
 \[
 \|x_n\|^2\longrightarrow d^2.
 \]
+
 :::
 
-<1>2. Prove that the minimizing sequence is Cauchy.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that the minimizing sequence is Cauchy.
+
+::: pf-proof
+
 By convexity,
 \[
 \frac{x_n+x_m}{2}\in C,
@@ -78,10 +92,17 @@ Therefore
 \frac12\|x_n\|^2+\frac12\|x_m\|^2-d^2.
 \]
 The right-hand side tends to $0$ as $m,n\to\infty$. Hence $(x_n)$ is Cauchy.
+
 :::
 
-<1>3. Obtain existence of a minimum-norm point.
-::: {.proof}
+:::
+
+::: pf-step
+
+Obtain existence of a minimum-norm point.
+
+::: pf-proof
+
 Since $H$ is complete, $x_n\to x$ for some $x\in H$. Because $C$ is closed,
 \[
 x\in C.
@@ -91,10 +112,17 @@ Continuity of the norm gives
 \|x\|=d.
 \]
 Thus $x$ has minimal norm in $C$.
+
 :::
 
-<1>4. Prove uniqueness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove uniqueness.
+
+::: pf-proof
+
 Suppose $x,y\in C$ both satisfy
 \[
 \|x\|=\|y\|=d.
@@ -113,5 +141,11 @@ The parallelogram identity gives
 Therefore $x=y$.
 
 Hence every nonempty closed convex subset of a Hilbert space has a unique element of minimal norm.
+
 :::
+
+:::
+
+:::
+
 :::

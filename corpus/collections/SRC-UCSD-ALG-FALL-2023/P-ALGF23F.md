@@ -35,8 +35,15 @@ Hint: Consider $\{\ker \phi^n\}_{n=1}^{\infty}$.
 :::
 
 ::: {.solution}
-<1>1. The algebra $A$ is a quotient of a polynomial ring over $\mathbb Q$ in finitely many variables.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The algebra $A$ is a quotient of a polynomial ring over $\mathbb Q$ in finitely many variables.
+
+::: pf-proof
+
 Because $A$ is finitely generated as a $\mathbb Q$-algebra, there exist
 \[
 a_1,\ldots,a_r\in A
@@ -57,27 +64,41 @@ Thus
 A\cong\mathbb Q[x_1,\ldots,x_r]/I
 \]
 for its kernel ideal $I$.
+
 :::
 
-<1>2. The ring $A$ is Noetherian.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The ring $A$ is Noetherian.
+
+::: pf-proof
+
 The field $\mathbb Q$ is Noetherian.
 By Hilbert's basis theorem,
 \[
 \mathbb Q[x_1,\ldots,x_r]
 \]
 is Noetherian.
-Every quotient of a Noetherian ring is Noetherian, so <1>1 gives that $A$ is Noetherian.
+Every quotient of a Noetherian ring is Noetherian, so step [](#s1){.pf-ref} gives that $A$ is Noetherian.
 This proves part (a).
+
 :::
 
-<1>3. The ideals
+:::
+
+::: {.pf-step #s3}
+
+The ideals
 \[
 K_n:=\ker(\phi^n)
 \qquad(n\ge1)
 \]
 form an ascending chain.
-::: {.proof}
+
+::: pf-proof
+
 If $x\in K_n$, then
 \[
 \phi^n(x)=0.
@@ -91,19 +112,33 @@ Hence
 \[
 K_1\subseteq K_2\subseteq K_3\subseteq\cdots.
 \]
+
 :::
 
-<1>4. There exists $N\ge1$ such that
+:::
+
+::: {.pf-step #s4}
+
+There exists $N\ge1$ such that
 \[
 K_N=K_{N+1}.
 \]
-::: {.proof}
-By <1>2, $A$ is Noetherian, so every ascending chain of ideals stabilizes.
-Apply this to the chain in <1>3.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $A$ is Noetherian, so every ascending chain of ideals stabilizes.
+Apply this to the chain in step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. The homomorphism $\phi$ is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The homomorphism $\phi$ is injective.
+
+::: pf-proof
+
 Let
 \[
 x\in\ker\phi=K_1.
@@ -121,7 +156,7 @@ so
 \[
 y\in K_{N+1}.
 \]
-By <1>4,
+By step [](#s4){.pf-ref},
 \[
 K_{N+1}=K_N,
 \]
@@ -130,12 +165,25 @@ hence $y\in K_N$ and therefore
 x=\phi^N(y)=0.
 \]
 Thus $\ker\phi=0$.
+
 :::
 
-<1>6. The map $\phi:A\to A$ is an isomorphism.
-::: {.proof}
-It is surjective by hypothesis and injective by <1>5.
+:::
+
+::: pf-step
+
+The map $\phi:A\to A$ is an isomorphism.
+
+::: pf-proof
+
+It is surjective by hypothesis and injective by step [](#s5){.pf-ref}.
 Therefore it is a ring isomorphism.
 This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

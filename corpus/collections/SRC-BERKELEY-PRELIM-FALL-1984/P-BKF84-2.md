@@ -37,7 +37,12 @@ Let $A,B$ be real $n\times n$ matrices and let $k$ be a positive integer. Find
 :::
 
 ::: {.solution}
-<1>1. For arbitrary square matrices $X,Y$ of the same size,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For arbitrary square matrices $X,Y$ of the same size,
 $$
 X^k-Y^k
 =
@@ -45,7 +50,8 @@ X^k-Y^k
 X^j(X-Y)Y^{k-1-j}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expand the right-hand side:
 $$
 \begin{aligned}
@@ -58,17 +64,23 @@ $$
 $$
 All intermediate terms cancel, leaving only $X^k-Y^k$. No
 commutativity is used.
+
 :::
 
-<1>2. The limit in Part (1) is
+:::
+
+::: {.pf-step #s2}
+
+The limit in Part (1) is
 $$
 \boxed{
 \sum_{j=0}^{k-1}A^jBA^{k-1-j}
 }.
 $$
 
-::: {.proof}
-Apply step <1>1 with
+::: pf-proof
+
+Apply step [](#s1){.pf-ref} with
 $$
 X=A+tB,
 \qquad
@@ -85,17 +97,23 @@ Each summand depends continuously on $t$, so letting $t\to0$ gives
 $$
 \sum_{j=0}^{k-1}A^jBA^{k-1-j}.
 $$
+
 :::
 
-<1>3. The derivative in Part (2) is
+:::
+
+::: {.pf-step #s3}
+
+The derivative in Part (2) is
 $$
 \boxed{
 k\operatorname{tr}(BA^{k-1})
 }.
 $$
 
-::: {.proof}
-By linearity of trace and step <1>2,
+::: pf-proof
+
+By linearity of trace and step [](#s2){.pf-ref},
 $$
 \left.
 \frac d{dt}\operatorname{tr}(A+tB)^k
@@ -113,11 +131,17 @@ $$
 \operatorname{tr}(BA^{k-1}).
 $$
 There are $k$ summands, so the displayed formula follows.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>2--<1>3 give the two requested values.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give the two requested values.
+
+:::
+
+:::
+
 :::

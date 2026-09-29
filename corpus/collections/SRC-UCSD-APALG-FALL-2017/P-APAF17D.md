@@ -41,11 +41,18 @@ B=\frac{1}{|G|}\sum_{g\in G}X(g)A X(g)^{-1}.
 :::
 
 ::: {.solution}
-<1>1. The trace of $B$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The trace of $B$ is
 \[
 \boxed{9}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Trace is invariant under similarity, so for every $g\in G$,
 \[
 \operatorname{tr}(X(g)AX(g)^{-1})=\operatorname{tr}(A).
@@ -61,10 +68,17 @@ Since
 \operatorname{tr}(A)=1+5+3=9,
 \]
 part (a) follows.
+
 :::
 
-<1>2. The matrix $B$ commutes with $X(h)$ for every $h\in G$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The matrix $B$ commutes with $X(h)$ for every $h\in G$.
+
+::: pf-proof
+
 For fixed $h\in G$,
 \[
 \begin{aligned}
@@ -77,29 +91,49 @@ As $g$ runs through $G$, so does $hg$. Reindexing the sum therefore gives
 X(h)BX(h)^{-1}=B.
 \]
 Equivalently, $X(h)B=BX(h)$.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 B=cI_3
 \]
 for some $c\in\mathbb C$.
-::: {.proof}
-The representation $X$ is irreducible over the algebraically closed field $\mathbb C$. By <1>2, $B$ is an intertwining endomorphism of this irreducible representation. Schur's lemma therefore gives
+
+::: pf-proof
+
+The representation $X$ is irreducible over the algebraically closed field $\mathbb C$. By step [](#s2){.pf-ref}, $B$ is an intertwining endomorphism of this irreducible representation. Schur's lemma therefore gives
 \[
 B=cI_3.
 \]
+
 :::
 
-<1>4. In fact,
+:::
+
+::: pf-step
+
+In fact,
 \[
 \boxed{B=3I_3}.
 \]
-::: {.proof}
-By <1>1 and <1>3,
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s3){.pf-ref},
 \[
 9=\operatorname{tr}(B)=\operatorname{tr}(cI_3)=3c.
 \]
 Hence $c=3$ and $B=3I_3$. This proves part (b).
+
 :::
+
+:::
+
+:::
+
 :::

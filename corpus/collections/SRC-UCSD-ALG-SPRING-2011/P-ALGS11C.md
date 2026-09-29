@@ -37,9 +37,16 @@ Show that the following statements are equivalent:
 :::
 
 ::: {.solution}
-<1>1. Assume that $A$ has exactly one prime ideal.
+
+::: pf
+
+::: {.pf-step #s1}
+
+Assume that $A$ has exactly one prime ideal.
 Then every element of $A$ is either a unit or nilpotent.
-::: {.proof}
+
+::: pf-proof
+
 Let $\mathfrak p$ be the unique prime ideal of $A$.
 The nilradical is the intersection of all prime ideals, hence
 \[
@@ -52,11 +59,18 @@ a\in\mathfrak p=\mathfrak n.
 \]
 Membership in the nilradical means that $a$ is nilpotent.
 Thus every element is a unit or nilpotent.
+
 :::
 
-<1>2. Assume that every element of $A$ is either a unit or nilpotent.
+:::
+
+::: {.pf-step #s2}
+
+Assume that every element of $A$ is either a unit or nilpotent.
 Then $A/\mathfrak n$ is a field.
-::: {.proof}
+
+::: pf-proof
+
 Let $a+\mathfrak n$ be a nonzero element of $A/\mathfrak n$.
 Then $a\notin\mathfrak n$, so $a$ is not nilpotent.
 By hypothesis, $a$ is therefore a unit in $A$.
@@ -66,11 +80,18 @@ If $ab=1$, then
 \]
 so $a+\mathfrak n$ is a unit in the quotient.
 Every nonzero element of $A/\mathfrak n$ is therefore invertible, hence $A/\mathfrak n$ is a field.
+
 :::
 
-<1>3. Assume that $A/\mathfrak n$ is a field.
+:::
+
+::: {.pf-step #s3}
+
+Assume that $A/\mathfrak n$ is a field.
 Then $A$ has exactly one prime ideal.
-::: {.proof}
+
+::: pf-proof
+
 Every prime ideal $\mathfrak p$ of $A$ contains the nilradical $\mathfrak n$.
 Prime ideals of $A$ containing $\mathfrak n$ correspond bijectively to prime ideals of $A/\mathfrak n$ via
 \[
@@ -78,13 +99,26 @@ Prime ideals of $A$ containing $\mathfrak n$ correspond bijectively to prime ide
 \]
 Since $A/\mathfrak n$ is a field, its only prime ideal is $(0)$.
 Consequently the only prime ideal of $A$ is $\mathfrak n$.
+
 :::
 
-<1>4. Therefore conditions (i), (ii), and (iii) are equivalent.
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 prove
+:::
+
+::: pf-step
+
+Therefore conditions (i), (ii), and (iii) are equivalent.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove
 \[
 \text{(i)}\Longrightarrow\text{(ii)}\Longrightarrow\text{(iii)}\Longrightarrow\text{(i)}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

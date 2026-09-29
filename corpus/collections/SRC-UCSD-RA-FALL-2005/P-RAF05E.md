@@ -35,8 +35,15 @@ Prove that $x_j \to 0$ weakly.
 :::
 
 ::: {.solution}
-<1>1. Obtain a uniform norm bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Obtain a uniform norm bound.
+
+::: pf-proof
+
 Taking $j=k$ in the assumed estimate gives
 \[
 \|x_j\|^2=|\langle x_j,x_j\rangle|\le1.
@@ -45,10 +52,17 @@ Hence
 \[
 \sup_j\|x_j\|\le1.
 \]
+
 :::
 
-<1>2. Prove convergence against the dense linear span.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove convergence against the dense linear span.
+
+::: pf-proof
+
 Let
 \[
 y=\sum_{k=1}^N a_kx_k.
@@ -66,10 +80,17 @@ For each fixed $k$, $2^{-|j-k|}\to0$ as $j\to\infty$, and the sum has only finit
 \langle x_j,y\rangle\longrightarrow0
 \]
 for every finite linear combination $y$ of the $x_k$.
+
 :::
 
-<1>3. Extend the convergence to every vector in $H$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Extend the convergence to every vector in $H$.
+
+::: pf-proof
+
 Fix $y\in H$ and $\varepsilon>0$. By density of the finite linear span, choose a finite linear combination $z$ of the $x_k$ such that
 \[
 \|y-z\|<\varepsilon.
@@ -92,5 +113,11 @@ for every $y\in H$. Thus
 \[
 \boxed{x_j\rightharpoonup0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -37,8 +37,14 @@ For $n\in\mathbb Z$, write
 \widehat f(n):=\int_0^1 f(x)e^{-2\pi i n x}\,dx.
 \]
 
-<1>1. Relate the Fourier coefficients of $f'$ and $f$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Relate the Fourier coefficients of $f'$ and $f$.
+
+::: pf-proof
+
 Since $f\in C^1([0,1])$, integration by parts gives
 \[
 \begin{aligned}
@@ -56,10 +62,17 @@ Also the zero-mean assumption says
 \[
 \widehat f(0)=0.
 \]
+
 :::
 
-<1>2. Prove the Poincare inequality.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove the Poincare inequality.
+
+::: pf-proof
+
 By Parseval's identity,
 \[
 \int_0^1|f(x)|^2\,dx
@@ -81,10 +94,17 @@ Thus
 \[
 \boxed{4\pi^2\int_0^1|f|^2\le\int_0^1|f'|^2.}
 \]
+
 :::
 
-<1>3. Characterize the equality case.
-::: {.proof}
+:::
+
+::: pf-step
+
+Characterize the equality case.
+
+::: pf-proof
+
 Equality in Step 2 is equivalent to
 \[
 \sum_{n\ne0}(n^2-1)|\widehat f(n)|^2=0.
@@ -111,5 +131,11 @@ we may write
 f(x)=a\cos(2\pi x)+b\sin(2\pi x)
 \]
 for suitable $a,b\in\mathbb C$. Therefore every equality case has exactly the stated form.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,17 +39,28 @@ Let $A$ be a real $n \times n$ matrix. Let $M$ denote the maximum of the absolut
 :::
 
 ::: {.solution}
-<1>1. Suppose $A$ is symmetric. Then there is an orthonormal basis
+
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose $A$ is symmetric. Then there is an orthonormal basis
 $$
 v_1,\ldots,v_n
 $$
 of $\RR^n$ consisting of eigenvectors of $A$.
 
-::: {.proof}
+::: pf-proof
+
 This is the spectral theorem for real symmetric matrices.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 Av_j=\lambda_jv_j
 $$
@@ -64,8 +75,9 @@ $$
 M^2\norm{x}^2.
 $$
 
-::: {.proof}
-Since the basis from step <1>1 is orthonormal,
+::: pf-proof
+
+Since the basis from step [](#s1){.pf-ref} is orthonormal,
 $$
 \norm{x}^2
 =
@@ -88,22 +100,34 @@ M^2\sum_{j=1}^n c_j^2
 M^2\norm{x}^2,
 $$
 because $\abs{\lambda_j}\leq M$ for every $j$.
+
 :::
 
-<1>3. If $A$ is symmetric, then
+:::
+
+::: {.pf-step #s3}
+
+If $A$ is symmetric, then
 $$
 \norm{Ax}\leq M\norm{x}
 $$
 for every $x\in\RR^n$.
 
-::: {.proof}
-Both sides are nonnegative, so taking square roots in step <1>2 gives the
+::: pf-proof
+
+Both sides are nonnegative, so taking square roots in step [](#s2){.pf-ref} gives the
 desired inequality.
+
 :::
 
-<1>4. The inequality can fail for nonsymmetric matrices.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The inequality can fail for nonsymmetric matrices.
+
+::: pf-proof
+
 Take
 $$
 A=
@@ -139,11 +163,17 @@ $$
 M\norm{x}=0.
 $$
 Thus the asserted inequality fails.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part 1, and step <1>4 proves part 2.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part 1, and step [](#s4){.pf-ref} proves part 2.
+
+:::
+
+:::
+
 :::

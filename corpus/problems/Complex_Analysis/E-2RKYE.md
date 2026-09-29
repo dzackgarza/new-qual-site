@@ -26,9 +26,14 @@ review: draft
 Assume $\abs a\ne1$.
 For $a=0$ both sides equal $2\pi$, so assume also $a\ne0$.
 
-<1>1. $\displaystyle\int_{0}^{2 \pi} \frac{d \theta}{1+a^{2}-2 a \cos \theta}=\frac{i}{a}\int_{\abs z=1}\frac{dz}{(z-a)(z-1/a)}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$\displaystyle\int_{0}^{2 \pi} \frac{d \theta}{1+a^{2}-2 a \cos \theta}=\frac{i}{a}\int_{\abs z=1}\frac{dz}{(z-a)(z-1/a)}$.
+
+::: pf-proof
+
 Put $z=e^{i\theta}$, so $2\cos\theta=z+\inverseof{z}$ and $d\theta=dz/(iz)$.
 Then
 \[
@@ -37,15 +42,20 @@ Then
 =\frac{dz}{-ia(z-a)(z-1/a)}
 =\frac{i}{a}\,\frac{dz}{(z-a)(z-1/a)}.
 \]
+
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Exactly one of $a$, $1/a$ lies in the unit disk.
 If $\abs a<1$, the residue theorem at $z=a$ gives $2\pi i\cdot\frac ia\cdot\frac{1}{a-1/a}=\frac{2\pi}{1-a^2}$.
 If $\abs a>1$, the residue at $z=1/a$ gives $2\pi i\cdot\frac ia\cdot\frac{1}{1/a-a}=\frac{2\pi}{a^2-1}$.
-Step <1>1 converts these into the two cases of the formula.
+Step [](#s1){.pf-ref} converts these into the two cases of the formula.
+
+:::
+
 :::
 
 :::

@@ -32,17 +32,30 @@ Show that if $f\in K[x]$ has degree $n$ and $F$ is a splitting field of $f$ over
 ::: {.solution}
 We argue by strong induction on $n=\deg f$.
 
-<1>1. The claim holds for $n\le1$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The claim holds for $n\le1$.
+
+::: pf-proof
+
 If $n=0$ or $1$, the polynomial already splits over $K$, so $F=K$ and
 $[F:K]=1$, which divides $n!$.
-:::
 
 Assume $n\ge2$ and that the assertion holds for every polynomial of degree
 strictly smaller than $n$ over every field.
 
-<1>2. If $f$ is irreducible over $K$, then $[F:K]$ divides $n!$.
-::: {.proof}
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $f$ is irreducible over $K$, then $[F:K]$ divides $n!$.
+
+::: pf-proof
+
 Choose a root $\alpha\in F$. Irreducibility gives
 \[
 [K(\alpha):K]=n.
@@ -67,10 +80,17 @@ The tower law therefore gives
 =n[F:K(\alpha)]
 \mid n(n-1)!=n!.
 \]
+
 :::
 
-<1>3. If $f$ is reducible over $K$, then $[F:K]$ divides $n!$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If $f$ is reducible over $K$, then $[F:K]$ divides $n!$.
+
+::: pf-proof
+
 Write
 \[
 f(x)=g(x)h(x)
@@ -103,11 +123,24 @@ Finally,
 \frac{n!}{r!s!}=\binom{n}{r}\in\ZZ,
 \]
 so $r!s!\mid n!$. Hence $[F:K]\mid n!$.
+
 :::
 
-<1>4. Therefore the assertion holds for every degree $n$.
-::: {.proof}
-Every polynomial is either irreducible or reducible. The two cases are covered
-by <1>2 and <1>3, completing the strong induction.
 :::
+
+::: pf-step
+
+Therefore the assertion holds for every degree $n$.
+
+::: pf-proof
+
+Every polynomial is either irreducible or reducible. The two cases are covered
+by steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, completing the strong induction.
+
+:::
+
+:::
+
+:::
+
 :::

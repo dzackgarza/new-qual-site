@@ -22,13 +22,33 @@ Suppose that $f$ is continuous and $f(x)\geq 0$ on $[0,1]$.
 If $f(0)>0$, prove that $\int_0^1 f(x)dx>0$.
 :::
 ::: {.solution}
-<1>1. Since $f(0) > 0$ and $f$ is continuous, there is $\delta \in (0,1)$ with $f(x) > f(0)/2$ for all $x \in [0,\delta]$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Since $f(0) > 0$ and $f$ is continuous, there is $\delta \in (0,1)$ with $f(x) > f(0)/2$ for all $x \in [0,\delta]$.
+
+::: pf-proof
+
 continuity at $0$ with $\eps = f(0)/2 > 0$ gives $|f(x) - f(0)| < f(0)/2$ for $|x| < \delta$, hence $f(x) > f(0) - f(0)/2 = f(0)/2$.
+
 :::
-<1>2. $\int_0^1 f \ge \int_0^\delta f \ge \delta \cdot f(0)/2 > 0$.
-::: {.proof}
-$f \ge 0$ on $[0,1]$ gives $\int_0^1 f \ge \int_0^\delta f$; and on $[0,\delta]$, $f \ge f(0)/2$ by <1>1, so $\int_0^\delta f \ge \delta f(0)/2 > 0$.
+
 :::
-<1>3. Q.E.D.
+
+::: pf-step
+
+$\int_0^1 f \ge \int_0^\delta f \ge \delta \cdot f(0)/2 > 0$.
+
+::: pf-proof
+
+$f \ge 0$ on $[0,1]$ gives $\int_0^1 f \ge \int_0^\delta f$; and on $[0,\delta]$, $f \ge f(0)/2$ by step [](#s1){.pf-ref}, so $\int_0^\delta f \ge \delta f(0)/2 > 0$.
+
+:::
+
+:::
+
+:::
+
 :::

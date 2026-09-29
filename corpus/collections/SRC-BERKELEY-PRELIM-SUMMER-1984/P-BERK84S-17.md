@@ -46,12 +46,18 @@ $$
 ::: {.solution}
 Fix $r$ with $0<r<R$.
 
-<1>1. There is a constant $C<\infty$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There is a constant $C<\infty$ such that
 \[
 |a_n|\le C r^{-n}
 \qquad(n\ge0).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Because $r<R$, the power series for $f$ converges absolutely at $z=r$.
 Therefore
 \[
@@ -62,11 +68,18 @@ Each summand is nonnegative, so for every $n$,
 |a_n|r^n\le C.
 \]
 Since $r>0$, this gives $|a_n|\le Cr^{-n}$.
+
 :::
 
-<1>2. The series defining $h$ converges absolutely for every $z\in\mathbb C$.
-::: {.proof}
-By <1>1, for every $z\in\mathbb C$,
+:::
+
+::: {.pf-step #s2}
+
+The series defining $h$ converges absolutely for every $z\in\mathbb C$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, for every $z\in\mathbb C$,
 \[
 \sum_{n=0}^{\infty}\left|\frac{a_nz^n}{n!}\right|
 \le C\sum_{n=0}^{\infty}\frac{(|z|/r)^n}{n!}
@@ -74,16 +87,29 @@ By <1>1, for every $z\in\mathbb C$,
 \]
 Thus the power series for $h$ has infinite radius of convergence.
 Hence $h$ is entire.
+
 :::
 
-<1>3. The required growth estimate holds.
-::: {.proof}
-The same estimate from <1>2 gives directly
+:::
+
+::: pf-step
+
+The required growth estimate holds.
+
+::: pf-proof
+
+The same estimate from step [](#s2){.pf-ref} gives directly
 \[
 |h(z)|
 \le\sum_{n=0}^{\infty}\left|\frac{a_nz^n}{n!}\right|
 \le C e^{|z|/r}.
 \]
 Thus the statement holds with $M=C$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -38,7 +38,12 @@ for all $y\in\mathbb R^n$ and all $t$, where $c\in\mathbb R$ is fixed. Prove tha
 :::
 
 ::: {.solution}
-<1>1. The function
+
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 u(t)\coloneqq\norm{x(t)}^2
 $$
@@ -47,7 +52,8 @@ $$
 u'(t)\le2c\,u(t).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using the differential equation,
 $$
 \begin{aligned}
@@ -58,16 +64,22 @@ u'(t)
 &=2c\,u(t).
 \end{aligned}
 $$
+
 :::
 
-<1>2. The function
+:::
+
+::: {.pf-step #s2}
+
+The function
 $$
 v(t)\coloneqq e^{-2ct}u(t)
 $$
 is nonincreasing for $t\ge0$.
 
-::: {.proof}
-By step <1>1,
+::: pf-proof
+
+By step [](#s1){.pf-ref},
 $$
 \begin{aligned}
 v'(t)
@@ -75,34 +87,52 @@ v'(t)
 &\le0.
 \end{aligned}
 $$
+
 :::
 
-<1>3. For every $t>0$,
+:::
+
+::: {.pf-step #s3}
+
+For every $t>0$,
 $$
 \norm{x(t)}^2\le e^{2ct}\norm{x(0)}^2.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 e^{-2ct}\norm{x(t)}^2=v(t)\le v(0)=\norm{x(0)}^2.
 $$
 Multiply by $e^{2ct}>0$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{\norm{x(t)}\le e^{ct}\norm{x(0)}}
 \qquad(t>0).
 $$
 
-::: {.proof}
-Both sides in step <1>3 are nonnegative. Taking square roots gives the stated inequality.
+::: pf-proof
+
+Both sides in step [](#s3){.pf-ref} are nonnegative. Taking square roots gives the stated inequality.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required estimate.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required estimate.
+
+:::
+
+:::
+
 :::

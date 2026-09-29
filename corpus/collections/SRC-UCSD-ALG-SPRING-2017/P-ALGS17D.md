@@ -30,7 +30,12 @@ Show how to construct a universal cyclically trilinear map $u: M \times M \times
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: pf-step
+
+Let
 \[
 T=M\otimes_R M\otimes_R M
 \]
@@ -43,19 +48,28 @@ Define
 \[
 C_3(M)=T/S.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The tensor cube $T$ is the universal target for trilinear maps out of $M\times M\times M$.
 Quotienting by $S$ imposes exactly the cyclic relation on pure tensors.
+
 :::
 
-<1>2. Define
+:::
+
+::: pf-step
+
+Define
 \[
 u:M\times M\times M\longrightarrow C_3(M),
 \qquad
 u(a,b,c)=[a\otimes b\otimes c].
 \]
 Then $u$ is trilinear and cyclically trilinear.
-::: {.proof}
+
+::: pf-proof
+
 The canonical map $(a,b,c)\mapsto a\otimes b\otimes c$ is trilinear, and the quotient map $T\to T/S$ is linear, so $u$ is trilinear.
 Moreover,
 \[
@@ -63,9 +77,14 @@ Moreover,
 \]
 because their difference lies in $S$.
 Hence $u(a,b,c)=u(b,c,a)$.
+
 :::
 
-<1>3. Let $f:M\times M\times M\to N$ be any cyclically trilinear map.
+:::
+
+::: pf-step
+
+Let $f:M\times M\times M\to N$ be any cyclically trilinear map.
 By the universal property of $T=M^{\otimes3}$, there is a unique $R$-linear map
 \[
 \widetilde f:T\longrightarrow N
@@ -74,12 +93,21 @@ such that
 \[
 \widetilde f(a\otimes b\otimes c)=f(a,b,c).
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is precisely the universal property of the tensor product, applied to the trilinear map $f$.
+
 :::
 
-<1>4. The map $\widetilde f$ annihilates $S$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $\widetilde f$ annihilates $S$.
+
+::: pf-proof
+
 For every generator of $S$,
 \[
 \widetilde f(a\otimes b\otimes c-b\otimes c\otimes a)
@@ -87,9 +115,14 @@ For every generator of $S$,
 \]
 by cyclic invariance of $f$.
 Hence $S\subseteq\ker\widetilde f$.
+
 :::
 
-<1>5. Therefore there is a unique linear map
+:::
+
+::: {.pf-step #s5}
+
+Therefore there is a unique linear map
 \[
 \phi:C_3(M)=T/S\longrightarrow N
 \]
@@ -97,7 +130,9 @@ such that $\phi\circ q=\widetilde f$, where $q:T\to T/S$ is the quotient map; eq
 \[
 \phi\circ u=f.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $S\subseteq\ker\widetilde f$, the universal property of the quotient gives a unique $\phi$ with $\phi\circ q=\widetilde f$.
 For $a,b,c\in M$,
 \[
@@ -105,10 +140,23 @@ For $a,b,c\in M$,
 =\widetilde f(a\otimes b\otimes c)=f(a,b,c).
 \]
 Uniqueness follows because the classes of pure tensors generate $C_3(M)$, so any linear map agreeing with $f$ on the image of $u$ is forced on all of $C_3(M)$.
+
 :::
 
-<1>6. Hence $u$ is universal among cyclically trilinear maps out of $M^3$.
-::: {.proof}
-This is exactly the factorization-and-uniqueness property established in <1>5.
 :::
+
+::: pf-step
+
+Hence $u$ is universal among cyclically trilinear maps out of $M^3$.
+
+::: pf-proof
+
+This is exactly the factorization-and-uniqueness property established in step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

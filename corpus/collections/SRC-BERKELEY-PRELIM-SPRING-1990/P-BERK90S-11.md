@@ -54,10 +54,15 @@ H_c\coloneqq\{z\in\CC:\Re z>c\}.
 $$
 Choose $M>0$ such that $\abs{f(z)}\leq M$ for all $z\in H$.
 
-<1>1. For every $z\in H_c$, the derivative satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+For every $z\in H_c$, the derivative satisfies
 $\abs{f'(z)}\leq M/c$.
 
-::: {.proof}
+::: pf-proof
+
 Fix $z\in H_c$. For $\abs{\zeta-z}\leq c$,
 $$
 \Re\zeta\geq\Re z-\abs{\zeta-z}\geq\Re z-c>0.
@@ -71,14 +76,20 @@ f'(z)=\frac{1}{2\pi i}
 $$
 The circle has length $2\pi c$, and the integrand has modulus
 at most $M/c^2$. Therefore $\abs{f'(z)}\leq M/c$.
+
 :::
 
-<1>2. For all $z,w\in H_c$,
+:::
+
+::: {.pf-step #s2}
+
+For all $z,w\in H_c$,
 $$
 \abs{f(w)-f(z)}\leq\frac{M}{c}\abs{w-z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Define $\gamma\colon[0,1]\to H_c$ by
 $\gamma(t)\coloneqq(1-t)z+tw$. Its image lies in $H_c$ because
 $$
@@ -89,17 +100,23 @@ The chain rule and the fundamental theorem of calculus give
 $$
 f(w)-f(z)=\int_0^1 f'(\gamma(t))(w-z)\,dt.
 $$
-Taking absolute values and applying step <1>1 proves the bound.
+Taking absolute values and applying step [](#s1){.pf-ref} proves the bound.
+
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 Given $\varepsilon>0$, set $\delta\coloneqq c\varepsilon/M>0$.
-For any $z,w\in H_c$ with $\abs{w-z}<\delta$, step <1>2 gives
+For any $z,w\in H_c$ with $\abs{w-z}<\delta$, step [](#s2){.pf-ref} gives
 $\abs{f(w)-f(z)}<\varepsilon$. The number $\delta$ is independent
 of $z$ and $w$, so $f|_{H_c}$ is
 [[FD-ST7TD|uniformly continuous]]. Since $c>0$ was arbitrary,
 the conclusion holds for every half-plane in the statement.
+
 :::
+
+:::
+
 :::

@@ -28,15 +28,20 @@ audit:
 If $f: R \to S$ is a ring map and $I$ an ideal of $S$, then $f^{-1}(I)$ is an ideal of $R$, the induced map $R/f^{-1}(I) \to S/I$ is injective, and $f^{-1}(I)$ is prime if $I$ is prime.
 :::
 
-
 ::: {.solution}
 Let
 $$
 J=f^{-1}(I)=\{r\in R:f(r)\in I\}.
 $$
 
-<1>1. The contraction $J$ is an ideal of $R$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The contraction $J$ is an ideal of $R$.
+
+::: pf-proof
+
 Since $0\in I$,
 $$
 0\in J.
@@ -51,10 +56,17 @@ $$
 f(ra)=f(r)f(a)\in I
 $$
 because $I$ is an ideal of $S$. Thus $ra\in J$. Therefore $J$ is an ideal.
+
 :::
 
-<1>2. The induced map $R/J\to S/I$ is injective.
-::: {.proof}
+:::
+
+::: pf-step
+
+The induced map $R/J\to S/I$ is injective.
+
+::: pf-proof
+
 Define
 $$
 \overline f:R/J\longrightarrow S/I,
@@ -81,10 +93,17 @@ Thus
 $$
 \boxed{R/f^{-1}(I)\hookrightarrow S/I.}
 $$
+
 :::
 
-<1>3. If $I$ is prime, then $f^{-1}(I)$ is prime.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $I$ is prime, then $f^{-1}(I)$ is prime.
+
+::: pf-proof
+
 Assume $I$ is prime. Because ring maps preserve $1$, if
 $$
 1\in f^{-1}(I),
@@ -109,5 +128,11 @@ $$
 a\in f^{-1}(I)\quad\text{or}\quad b\in f^{-1}(I).
 $$
 Hence $f^{-1}(I)$ is prime.
+
 :::
+
+:::
+
+:::
+
 :::

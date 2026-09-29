@@ -37,9 +37,15 @@ Find all conjugacy classes in $S_3$, listing the elements of each class.
 :::
 
 ::: {.solution}
-<1>1. Conjugation in $S_3$ preserves cycle type.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Conjugation in $S_3$ preserves cycle type.
+
+::: pf-proof
+
 For $\sigma\in S_3$ and a cycle
 $$
 \tau=(i_1\,i_2\,\ldots\,i_r),
@@ -52,27 +58,39 @@ $$
 $$
 Thus conjugating merely relabels the entries of a cycle and hence
 preserves its cycle type.
+
 :::
 
-<1>2. The identity forms the conjugacy class
+:::
+
+::: {.pf-step #s2}
+
+The identity forms the conjugacy class
 $$
 \{1\}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $\sigma\in S_3$,
 $$
 \sigma1\sigma^{-1}=1.
 $$
+
 :::
 
-<1>3. The three transpositions form one conjugacy class:
+:::
+
+::: {.pf-step #s3}
+
+The three transpositions form one conjugacy class:
 $$
 \{(12),(13),(23)\}.
 $$
 
-::: {.proof}
-By step <1>1, every conjugate of a transposition is again a
+::: pf-proof
+
+By step [](#s1){.pf-ref}, every conjugate of a transposition is again a
 transposition. Conversely, for any two transpositions
 $$
 (ij)
@@ -90,35 +108,52 @@ $$
 \sigma(ij)\sigma^{-1}=(rs).
 $$
 Thus all three transpositions are conjugate.
+
 :::
 
-<1>4. The two $3$-cycles form one conjugacy class:
+:::
+
+::: {.pf-step #s4}
+
+The two $3$-cycles form one conjugacy class:
 $$
 \{(123),(132)\}.
 $$
 
-::: {.proof}
-By step <1>1, conjugates of a $3$-cycle are $3$-cycles. Moreover,
+::: pf-proof
+
+By step [](#s1){.pf-ref}, conjugates of a $3$-cycle are $3$-cycles. Moreover,
 $$
 (23)(123)(23)^{-1}
 =
 (132),
 $$
 so the two $3$-cycles are conjugate.
+
 :::
 
-<1>5. These are all conjugacy classes of $S_3$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+These are all conjugacy classes of $S_3$.
+
+::: pf-proof
+
 The elements of $S_3$ are exactly
 $$
 1,\ (12),\ (13),\ (23),\ (123),\ (132).
 $$
-Steps <1>2--<1>4 partition these six elements into three conjugacy
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} partition these six elements into three conjugacy
 classes. Hence no further classes exist.
+
 :::
 
-<1>6. Therefore the conjugacy classes are
+:::
+
+::: {.pf-step #s6}
+
+Therefore the conjugacy classes are
 $$
 \boxed{
 \{1\},
@@ -129,13 +164,20 @@ $$
 }
 $$
 
-::: {.proof}
-This is the class decomposition established in steps <1>2--<1>5.
+::: pf-proof
+
+This is the class decomposition established in steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the requested list.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the requested list.
+
+:::
+
+:::
+
 :::

@@ -38,12 +38,17 @@ For a monic polynomial $f=x^d+c_{d-1}x^{d-1}+\cdots+c_0$,
 write $C(f)$ for its companion matrix with ones on the subdiagonal
 and last column $(-c_0,\ldots,-c_{d-1})^{\mathsf T}$.
 
-<1>1. The answer to part (a) is
+::: pf
+
+::: pf-step
+
+The answer to part (a) is
 $$
 C(x^2-3x-19)=\begin{pmatrix}0&19\\1&3\end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $A$ be the given matrix. Its characteristic polynomial is
 $$
 \det(xI-A)=(x-2)(x-1)-21=x^2-3x-19.
@@ -60,15 +65,21 @@ $$
 Thus $P^{-1}AP=C$. The cyclic basis $v,Av$ gives the single
 invariant factor $x^2-3x-19$, so this companion matrix is the
 rational canonical form over $\mathbb Q$ [@DF04].
+
 :::
 
-<1>2. There are exactly two invariant-factor chains in part (b):
+:::
+
+::: {.pf-step #s2}
+
+There are exactly two invariant-factor chains in part (b):
 $$
 \bigl((x^2+1)(x+1)^2\bigr),\qquad
 \bigl(x+1,\ (x^2+1)(x+1)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Over $\mathbb C$, the characteristic polynomial is
 $(x-i)(x+i)(x+1)^2$. Let $f_1\mid\cdots\mid f_r$ be the
 nonconstant monic invariant factors. Their product is the
@@ -83,9 +94,14 @@ $f_r$ as well. Its total multiplicity is only two, so $r=2$,
 $f_1=x+1$, and $f_2=(x^2+1)(x+1)$. If there is no earlier
 factor, $r=1$ and $f_1$ is the whole characteristic polynomial.
 This proves that the two chains exhaust all possibilities.
+
 :::
 
-<1>3. The two rational canonical forms are
+:::
+
+::: pf-step
+
+The two rational canonical forms are
 $$
 \begin{pmatrix}
 0&0&0&-1\\
@@ -101,7 +117,8 @@ $$
 \end{pmatrix}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The products expand to
 $$
 (x^2+1)(x+1)^2=x^4+2x^3+2x^2+2x+1,
@@ -110,10 +127,16 @@ $$
 $$
 The first displayed matrix is the companion matrix of the quartic.
 The second is $C(x+1)\oplus C(x^3+x^2+x+1)$. Their block
-polynomials form the two divisibility chains in step <1>2, so
+polynomials form the two divisibility chains in step [](#s2){.pf-ref}, so
 both are rational canonical forms with the required characteristic
 polynomial. Their minimal polynomials are their largest invariant
 factors, of degrees four and three respectively [@DF04]. They are
-therefore not similar, and step <1>2 proves completeness.
+therefore not similar, and step [](#s2){.pf-ref} proves completeness.
+
 :::
+
+:::
+
+:::
+
 :::

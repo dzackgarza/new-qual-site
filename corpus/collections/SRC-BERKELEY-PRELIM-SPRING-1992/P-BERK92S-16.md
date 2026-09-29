@@ -42,9 +42,14 @@ T(x)\coloneqq\frac{3+2x}{3+x},
 $$
 Then $\alpha>1$ and $T(\alpha)=\alpha$.
 
-<1>1. The interval $[1,\alpha]$ is invariant under $T$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The interval $[1,\alpha]$ is invariant under $T$.
+
+::: pf-proof
+
 For $x>-3$,
 $$
 T'(x)=\frac3{(3+x)^2}>0,
@@ -55,13 +60,19 @@ T(1)\le T(x)\le T(\alpha)=\alpha.
 $$
 Since $T(1)=5/4>1$, this gives
 $T(x)\in[1,\alpha]$.
+
 :::
 
-<1>2. The sequence $(x_n)$ is increasing and bounded above by
+:::
+
+::: {.pf-step #s2}
+
+The sequence $(x_n)$ is increasing and bounded above by
 $\alpha$.
 
-::: {.proof}
-By step <1>1 and $x_0=1$, induction gives
+::: pf-proof
+
+By step [](#s1){.pf-ref} and $x_0=1$, induction gives
 $x_n\in[1,\alpha]$ for every $n$. Moreover,
 $$
 T(x)-x
@@ -76,15 +87,21 @@ For $1\le x<\alpha$, the last expression is positive. Thus
 $x_{n+1}\ge x_n$ for all $n$, with equality only if
 $x_n=\alpha$. Therefore $(x_n)$ is increasing and bounded above by
 $\alpha$.
+
 :::
 
-<1>3. The limit exists and equals
+:::
+
+::: {.pf-step #s3}
+
+The limit exists and equals
 $$
 \boxed{\frac{\sqrt{13}-1}{2}}.
 $$
 
-::: {.proof}
-By step <1>2, monotone convergence gives a limit
+::: pf-proof
+
+By step [](#s2){.pf-ref}, monotone convergence gives a limit
 $\ell\in[1,\alpha]$. Passing to the limit in
 $x_{n+1}=T(x_n)$ gives
 $$
@@ -96,11 +113,17 @@ $$
 $$
 The two roots are $\alpha$ and $\beta$. Since
 $\ell\in[1,\alpha]$, necessarily $\ell=\alpha$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves existence and computes the limit.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves existence and computes the limit.
+
+:::
+
+:::
+
 :::

@@ -39,7 +39,11 @@ $$
 e_1,\ldots,e_n.
 $$
 
-<1>1. A linear map
+::: pf
+
+::: {.pf-step #s1}
+
+A linear map
 $$
 T:V\to V
 $$
@@ -49,7 +53,8 @@ T(e_1),\ldots,T(e_n)
 $$
 is a basis of $V$.
 
-::: {.proof}
+::: pf-proof
+
 The image of $T$ is the span of the images of a basis:
 $$
 \operatorname{im}T
@@ -60,20 +65,31 @@ $$
 Thus $T$ is surjective exactly when these $n$ vectors span $V$.
 Since $V$ has dimension $n$, a spanning family of $n$ vectors is a
 basis.
+
 :::
 
-<1>2. There are
+:::
+
+::: {.pf-step #s2}
+
+There are
 $$
 2^n-1
 $$
 choices for $T(e_1)$ in a surjective map.
 
-::: {.proof}
+::: pf-proof
+
 The first image vector must be nonzero. The vector space $V$ has
 $2^n$ elements, exactly one of which is $0$.
+
 :::
 
-<1>3. After linearly independent vectors
+:::
+
+::: {.pf-step #s3}
+
+After linearly independent vectors
 $$
 T(e_1),\ldots,T(e_j)
 $$
@@ -83,7 +99,8 @@ $$
 $$
 choices for $T(e_{j+1})$.
 
-::: {.proof}
+::: pf-proof
+
 The span
 $$
 \operatorname{span}
@@ -96,9 +113,14 @@ $$
 2^n-2^j
 $$
 choices.
+
 :::
 
-<1>4. The number of surjective linear maps $V\to V$ is
+:::
+
+::: {.pf-step #s4}
+
+The number of surjective linear maps $V\to V$ is
 $$
 \boxed{
 \prod_{j=0}^{n-1}(2^n-2^j)
@@ -107,21 +129,28 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>1, choosing a surjective linear map is equivalent to
+::: pf-proof
+
+By step [](#s1){.pf-ref}, choosing a surjective linear map is equivalent to
 choosing an ordered basis
 $$
 T(e_1),\ldots,T(e_n).
 $$
-Step <1>2 gives the first factor, and step <1>3 gives each subsequent
+Step [](#s2){.pf-ref} gives the first factor, and step [](#s3){.pf-ref} gives each subsequent
 factor. The choices are sequential and independent once the preceding
 vectors have been fixed, so multiplication gives the displayed
 product.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required count.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required count.
+
+:::
+
+:::
+
 :::

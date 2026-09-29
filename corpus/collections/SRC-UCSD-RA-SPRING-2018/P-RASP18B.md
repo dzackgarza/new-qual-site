@@ -32,10 +32,16 @@ Assume that $\lim_{n \to \infty} f_n(x) = 0$ for almost every $x \in [0,1]$.
 2. Give an example showing that we do not necessarily have $\lim_{n \to \infty} \|f_n\|_2 = 0$.
 :::
 
-
 ::: {.solution}
-<1>1. Prove \(L^1\)-convergence.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove \(L^1\)-convergence.
+
+::: pf-proof
+
 Fix \(\varepsilon>0\). By Egorov's theorem, since \([0,1]\) has finite measure and \(f_n\to0\) almost everywhere, there exists a measurable set \(E\subset[0,1]\) with
 \[
 m(E)<\frac{\varepsilon^2}{4}
@@ -58,10 +64,17 @@ where the second term uses Cauchy--Schwarz and \(\|f_n\|_2\le1\). Thus
 \[
 \boxed{\|f_n\|_1\to0.}
 \]
+
 :::
 
-<1>2. Give a counterexample for \(L^2\)-convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Give a counterexample for \(L^2\)-convergence.
+
+::: pf-proof
+
 Define
 \[
 f_n(x)=\sqrt n\,\mathbf1_{(0,1/n)}(x).
@@ -76,5 +89,11 @@ Hence
 \boxed{\|f_n\|_2=1\text{ for every }n,}
 \]
 so a.e. convergence together with a uniform \(L^2\) bound does not force \(L^2\)-norm convergence.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -34,12 +34,17 @@ in an extension field of $F$, prove that $f(x)$ has $p$ distinct zeros in $F(\al
 ::: {.solution}
 Let $\FF_p\subset F$ denote the prime subfield.
 
-<1>1. For every $c\in\FF_p$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $c\in\FF_p$,
 $$
 f(\alpha+c)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since the characteristic is $p$, the Frobenius identity gives
 $$
 (\alpha+c)^p=\alpha^p+c^p.
@@ -60,9 +65,14 @@ f(\alpha)\\
 0.
 \end{aligned}
 $$
+
 :::
 
-<1>2. The elements
+:::
+
+::: {.pf-step #s2}
+
+The elements
 $$
 \alpha+c,
 \qquad
@@ -70,39 +80,58 @@ c\in\FF_p,
 $$
 all lie in $F(\alpha)$.
 
-::: {.proof}
+::: pf-proof
+
 The field $F(\alpha)$ contains both $F$ and $\alpha$. Since
 $\FF_p\subset F$, it therefore contains $\alpha+c$ for every
 $c\in\FF_p$.
+
 :::
 
-<1>3. The $p$ elements $\alpha+c$, with $c\in\FF_p$, are
+:::
+
+::: {.pf-step #s3}
+
+The $p$ elements $\alpha+c$, with $c\in\FF_p$, are
 pairwise distinct.
 
-::: {.proof}
+::: pf-proof
+
 If
 $$
 \alpha+c=\alpha+d,
 $$
 then cancellation gives $c=d$. Since $\FF_p$ has exactly $p$
 elements, the displayed family has exactly $p$ distinct elements.
+
 :::
 
-<1>4. The polynomial $f(x)=x^p-x+3$ has
+:::
+
+::: {.pf-step #s4}
+
+The polynomial $f(x)=x^p-x+3$ has
 $$
 \boxed{p\text{ distinct zeros in }F(\alpha)}.
 $$
 
-::: {.proof}
-By steps <1>1--<1>3, the degree-$p$ polynomial $f$ has at least $p$
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}, the degree-$p$ polynomial $f$ has at least $p$
 distinct zeros in $F(\alpha)$. A nonzero polynomial of degree $p$
 over a field has at most $p$ roots. Hence these are exactly its
 $p$ distinct zeros.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

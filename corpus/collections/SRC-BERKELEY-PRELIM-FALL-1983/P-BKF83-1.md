@@ -31,7 +31,12 @@ where
 :::
 
 ::: {.solution}
-<1>1. For $\lambda>0$, set
+
+::: pf
+
+::: pf-step
+
+For $\lambda>0$, set
 $$
 F_\lambda(z)\coloneqq
 \frac{e^{i\lambda z}}{\cosh^2 z}.
@@ -45,7 +50,8 @@ $$
 z_0=\frac{i\pi}{2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The zeros of $\cosh z$ are
 $$
 z=\frac{(2k+1)i\pi}{2},
@@ -58,16 +64,22 @@ $$
 $$
 namely $z_0=i\pi/2$. Since each zero of $\cosh z$ is simple,
 $F_\lambda$ has a double pole there.
+
 :::
 
-<1>2. The residue at $z_0=i\pi/2$ is
+:::
+
+::: {.pf-step #s2}
+
+The residue at $z_0=i\pi/2$ is
 $$
 \operatorname{Res}_{z=z_0}F_\lambda
 =
 -i\lambda e^{-\pi\lambda/2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 z=z_0+w.
@@ -98,9 +110,14 @@ $$
 -i\lambda e^{-\pi\lambda/2},
 $$
 which is the residue.
+
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #s3}
+
+If
 $$
 I(\lambda)
 \coloneqq
@@ -114,7 +131,8 @@ I(\lambda)
 \frac{\pi\lambda}{\sinh(\pi\lambda/2)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $B_R$ denote the integral of $F_\lambda$ along the bottom edge of the
 rectangle:
 $$
@@ -157,7 +175,7 @@ $$
 $$
 which tends to zero.
 
-The residue theorem and step <1>2 therefore give, after letting
+The residue theorem and step [](#s2){.pf-ref} therefore give, after letting
 $R\to\infty$,
 $$
 \left(1-e^{-\pi\lambda}\right)I(\lambda)
@@ -174,9 +192,14 @@ $$
 2e^{-\pi\lambda/2}\sinh(\pi\lambda/2),
 $$
 the stated formula follows.
+
 :::
 
-<1>4. For $\lambda>0$,
+:::
+
+::: {.pf-step #s4}
+
+For $\lambda>0$,
 $$
 \int_0^\infty
 (\operatorname{sech}x)^2\cos(\lambda x)\,dx
@@ -184,7 +207,8 @@ $$
 \frac{\pi\lambda}{2\sinh(\pi\lambda/2)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $\operatorname{sech}^2x$ is even. Therefore the sine part of
 $I(\lambda)$ is odd and integrates to zero, while the cosine part is even.
 Thus
@@ -194,10 +218,15 @@ I(\lambda)
 2\int_0^\infty
 (\operatorname{sech}x)^2\cos(\lambda x)\,dx.
 $$
-Apply step <1>3.
+Apply step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. The formula extends to every real $\lambda$, with value $1$ at
+:::
+
+::: {.pf-step #s5}
+
+The formula extends to every real $\lambda$, with value $1$ at
 $\lambda=0$:
 $$
 \boxed{
@@ -210,12 +239,13 @@ $$
 \end{cases}}
 $$
 
-::: {.proof}
+::: pf-proof
+
 The original integral is an even function of $\lambda$. The quotient
 $$
 \frac{\pi\lambda}{2\sinh(\pi\lambda/2)}
 $$
-is also even, so step <1>4 gives the formula for $\lambda<0$ as well.
+is also even, so step [](#s4){.pf-ref} gives the formula for $\lambda<0$ as well.
 For $\lambda=0$,
 $$
 \int_0^\infty\operatorname{sech}^2x\,dx
@@ -225,11 +255,17 @@ $$
 $$
 This also equals the limit of the displayed quotient as
 $\lambda\to0$.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 gives the requested evaluation for every real $\lambda$.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested evaluation for every real $\lambda$.
+
+:::
+
+:::
+
 :::

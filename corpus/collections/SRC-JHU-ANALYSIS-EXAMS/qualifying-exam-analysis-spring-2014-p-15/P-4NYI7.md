@@ -47,18 +47,32 @@ that qualification no nonempty set can satisfy (a).
 :::
 
 ::: {.solution}
-<1>1. Take the middle-thirds Cantor set.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Take the middle-thirds Cantor set.
+
+::: pf-proof
+
 Start with $C_0=[0,1]$ and obtain $C_{n+1}$ by removing
 the open middle third of each component interval of $C_n$.
 Then $C_n$ is a union of $2^n$ disjoint closed intervals,
 each of length $3^{-n}$, by induction. Set
 $E=C=\bigcap_{n\geq0}C_n$. This is closed, hence Lebesgue
 measurable [@Fol13], and nonempty since $0\in C_n$ for every $n$.
+
 :::
 
-<1>2. Verify property (a).
-::: {.proof}
+:::
+
+::: pf-step
+
+Verify property (a).
+
+::: pf-proof
+
 Let $x<y$ belong to $C$ and choose $n$ with $3^{-n}<y-x$.
 If $(x,y)\subset C$, it is contained in $C_n$. An interval
 contained in the disjoint union defining $C_n$ must lie
@@ -67,10 +81,17 @@ would force it to contain the gap between them. But a
 component of length $3^{-n}$ cannot contain $(x,y)$.
 This contradiction shows that some $z\in(x,y)$ lies
 outside $C$, proving (a).
+
 :::
 
-<1>3. Verify property (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Verify property (b).
+
+::: pf-proof
+
 Every endpoint of a component interval of $C_n$ survives
 all later stages, because only open middle thirds are
 removed; it therefore belongs to $C$. For $x\in C$ and
@@ -81,5 +102,11 @@ from $x$, lies in $C$, and is at distance at most
 $3^{-n}<\varepsilon$ from $x$. Thus $x$ is not isolated.
 
 Therefore the answer is yes; the standard Cantor set satisfies both requested properties.
+
 :::
+
+:::
+
+:::
+
 :::

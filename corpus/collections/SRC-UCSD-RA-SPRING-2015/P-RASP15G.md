@@ -34,8 +34,15 @@ Define for each integer $k \geq 1$ that $f_k(x) = \sin(kx)$ ($x \in X$).
 :::
 
 ::: {.solution}
-<1>1. Prove weak convergence to $0$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove weak convergence to $0$.
+
+::: pf-proof
+
 Let $p'$ be the conjugate exponent, with $p'=\infty$ when $p=1$. Since $X=[-\pi,\pi]$ has finite measure,
 \[
 L^{p'}(X)\subseteq L^1(X)
@@ -54,10 +61,17 @@ Thus every continuous linear functional on $L^p(X)$ tends to $0$ on $f_k$, and t
 \[
 \boxed{f_k\rightharpoonup0\text{ in }L^p(X).}
 \]
+
 :::
 
-<1>2. Show that the norms do not tend to zero.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that the norms do not tend to zero.
+
+::: pf-proof
+
 For every integer $k\ge1$,
 \[
 \begin{aligned}
@@ -76,5 +90,11 @@ which is a positive constant independent of $k$. Consequently
 \|f_k\|_p\not\to0,
 \]
 so $f_k$ does not converge strongly to $0$ in $L^p(X)$.
+
 :::
+
+:::
+
+:::
+
 :::

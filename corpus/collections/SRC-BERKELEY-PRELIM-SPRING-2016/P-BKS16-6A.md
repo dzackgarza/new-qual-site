@@ -33,7 +33,11 @@ $$
 ::: {.solution}
 The assertion is false.
 
-<1>1. Suppose, for contradiction, that there are $\epsilon>0$ and a real $2\times2$ matrix $A$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+Suppose, for contradiction, that there are $\epsilon>0$ and a real $2\times2$ matrix $A$ such that
 $$
 A^{100}
 =
@@ -49,18 +53,25 @@ $$
 \mu^{100}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Over $\CC$, the characteristic polynomial of $A$ splits. Spectral mapping for the polynomial $t^{100}$ says that applying the polynomial to $A$ applies it to each eigenvalue, with multiplicity.
+
 :::
 
-<1>2. Neither $\lambda$ nor $\mu$ is real.
+:::
 
-::: {.proof}
+::: pf-step
+
+Neither $\lambda$ nor $\mu$ is real.
+
+::: pf-proof
+
 If, say, $\lambda\in\RR$, then
 $$
 \lambda^{100}\geq0.
 $$
-But by step <1>1, $\lambda^{100}$ must be an eigenvalue of
+But by step [](#s1){.pf-ref}, $\lambda^{100}$ must be an eigenvalue of
 $$
 A^{100},
 $$
@@ -71,21 +82,33 @@ $$
 -1-\epsilon,
 $$
 both negative. This is impossible. The same argument applies to $\mu$.
+
 :::
 
-<1>3. Since $A$ is real and its eigenvalues are nonreal,
+:::
+
+::: {.pf-step #s3}
+
+Since $A$ is real and its eigenvalues are nonreal,
 $$
 \mu=\overline{\lambda}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The characteristic polynomial of a real matrix has real coefficients, so its nonreal roots occur in complex-conjugate pairs.
+
 :::
 
-<1>4. The eigenvalues of $A^{100}$ must then be equal.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>3, they are
+::: {.pf-step #s4}
+
+The eigenvalues of $A^{100}$ must then be equal.
+
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s3){.pf-ref}, they are
 $$
 \lambda^{100}
 \qquad\text{and}\qquad
@@ -100,29 +123,47 @@ $$
 \lambda^{100}.
 $$
 Thus the two eigenvalues of $A^{100}$ coincide.
+
 :::
 
-<1>5. This contradicts $\epsilon>0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+This contradicts $\epsilon>0$.
+
+::: pf-proof
+
 The two eigenvalues of the proposed value of $A^{100}$ are
 $$
 -1
 \qquad\text{and}\qquad
 -1-\epsilon,
 $$
-which are distinct because $\epsilon>0$. This contradicts step <1>4.
+which are distinct because $\epsilon>0$. This contradicts step [](#s4){.pf-ref}.
+
 :::
 
-<1>6. Therefore no such $\epsilon>0$ and real matrix $A$ exist.
-
-::: {.proof}
-The assumption in step <1>1 leads to the contradiction in step <1>5.
 :::
 
-<1>7. Q.E.D.
+::: {.pf-step #s6}
 
-::: {.proof}
-Step <1>6 disproves the proposed assertion.
+Therefore no such $\epsilon>0$ and real matrix $A$ exist.
+
+::: pf-proof
+
+The assumption in step [](#s1){.pf-ref} leads to the contradiction in step [](#s5){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} disproves the proposed assertion.
+
+:::
+
+:::
+
 :::

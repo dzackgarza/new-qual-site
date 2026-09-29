@@ -77,8 +77,14 @@ G=\langle a,b\mid a^2=b^3\rangle,
 H=\langle s,t\mid sts=tst\rangle.
 \]
 
-<1>1. The assignments $a\mapsto sts$ and $b\mapsto ts$ define an isomorphism $G\cong H$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The assignments $a\mapsto sts$ and $b\mapsto ts$ define an isomorphism $G\cong H$.
+
+::: pf-proof
+
 In $H$, use the braid relation once to compute
 \[
 (sts)^2=(tst)(sts)=tststs=(ts)^3.
@@ -142,10 +148,17 @@ Hence $s,t$ lie in the image of $\phi$, so $\phi$ is surjective. Since it also h
 \[
 \boxed{G\cong H}.
 \]
+
 :::
 
-<1>2. The loops $\sigma$ and $\tau$ satisfy the braid relation.
-::: {.proof}
+:::
+
+::: pf-step
+
+The loops $\sigma$ and $\tau$ satisfy the braid relation.
+
+::: pf-proof
+
 The loop $\sigma$ performs a positive half-twist exchanging the two leftmost points $-2$ and $0$ while leaving $2$ fixed. The loop $\tau$ performs the corresponding positive half-twist exchanging the two rightmost points $0$ and $2$ while leaving $-2$ fixed.
 
 Draw the three trajectories in $[0,1]\times\mathbb C$. The concatenation
@@ -173,10 +186,17 @@ defines a homomorphism
 \[
 \eta:H\to B_3.
 \]
+
 :::
 
-<1>3. In fact $\eta:H\to B_3$ is an isomorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+In fact $\eta:H\to B_3$ is an isomorphism.
+
+::: pf-proof
+
 We give the standard crossing-word construction for three braids.
 
 Represent a loop in $C_3$ by three moving points in the plane. After an arbitrarily small homotopy, make the braid generic with respect to projection to the real axis: except at finitely many times, the three real parts are distinct; at each exceptional time exactly one adjacent pair has equal real part, and the crossing is transverse. Record a letter $s^{\pm1}$ when the left adjacent pair crosses and $t^{\pm1}$ when the right adjacent pair crosses, with the sign determined by which point passes through the upper half-plane relative to the other. Reading in time order gives a word in $s^{\pm1},t^{\pm1}$.
@@ -211,14 +231,21 @@ Therefore
 \[
 \boxed{H\cong B_3}.
 \]
+
 :::
 
-<1>4. Splitting off the center of mass gives
+:::
+
+::: {.pf-step #s4}
+
+Splitting off the center of mass gives
 \[
 \operatorname{Sym}^3(\mathbb C)\cong
 \mathbb C\times\operatorname{Sym}^3_0(\mathbb C).
 \]
-::: {.proof}
+
+::: pf-proof
+
 For an unordered triple $Q=\{a,b,c\}$ define its mean
 \[
 m(Q)=\frac{a+b+c}{3}
@@ -236,10 +263,17 @@ is continuous and has continuous inverse
 (m,\{u,v,w\})\longmapsto\{m+u,m+v,m+w\}.
 \]
 Hence it is a homeomorphism.
+
 :::
 
-<1>5. Centered unordered triples are homeomorphic to $\mathbb C^2$ by polynomial coefficients.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Centered unordered triples are homeomorphic to $\mathbb C^2$ by polynomial coefficients.
+
+::: pf-proof
+
 If $a+b+c=0$, then
 \[
 (t-a)(t-b)(t-c)
@@ -264,10 +298,17 @@ It is bijective by the fundamental theorem of algebra: every monic cubic
 t^3+xt+y
 \]
 has an unordered multiset of three complex roots, whose sum is zero because the $t^2$ coefficient vanishes. The inverse is continuous because the unordered multiset of roots of a monic polynomial depends continuously on its coefficients. Equivalently, the elementary-symmetric-polynomial map realizes the symmetric product $\operatorname{Sym}^3(\mathbb C)$ homeomorphically as the coefficient space of monic cubics. Hence $h$ is a homeomorphism.
+
 :::
 
-<1>6. The collision locus is the cusp discriminant.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The collision locus is the cusp discriminant.
+
+::: pf-proof
+
 A monic cubic
 \[
 t^3+xt+y
@@ -310,9 +351,14 @@ X^2=27y^2,
 Y^3=-4x^3.
 \]
 Thus the two cusp complements are homeomorphic.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 \[
 C_3\cong\mathbb C\times(\mathbb C^2\setminus C)
 \]
@@ -320,8 +366,10 @@ and
 \[
 B_3\cong\pi_1(\mathbb C^2\setminus C).
 \]
-::: {.proof}
-The configuration space $C_3$ is the open subset of $\operatorname{Sym}^3(\mathbb C)$ consisting of triples with distinct entries. By <1>4, translation by the mean does not affect whether entries are distinct. By <1>5--<1>6, the centered distinct triples correspond exactly to the complement of the discriminant cusp, which is linearly homeomorphic to $\mathbb C^2\setminus C$. Hence
+
+::: pf-proof
+
+The configuration space $C_3$ is the open subset of $\operatorname{Sym}^3(\mathbb C)$ consisting of triples with distinct entries. By step [](#s4){.pf-ref}, translation by the mean does not affect whether entries are distinct. By steps [](#s5){.pf-ref} and [](#s6){.pf-ref}, the centered distinct triples correspond exactly to the complement of the discriminant cusp, which is linearly homeomorphic to $\mathbb C^2\setminus C$. Hence
 \[
 C_3\cong\mathbb C\times(\mathbb C^2\setminus C).
 \]
@@ -331,10 +379,17 @@ B_3=\pi_1(C_3)
 \cong
 \pi_1(\mathbb C^2\setminus C).
 \]
+
 :::
 
-<1>8. The cusp complement strongly deformation retracts onto the complement of its link in $S^3$.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+The cusp complement strongly deformation retracts onto the complement of its link in $S^3$.
+
+::: pf-proof
+
 The cusp equation
 \[
 X^2=Y^3
@@ -377,10 +432,17 @@ Thus $H$ is a strong deformation retraction
 \searrow
 S^3\setminus(C\cap S^3).
 \]
+
 :::
 
-<1>9. The link $C\cap S^3$ is a trefoil isotopic to $K$.
-::: {.proof}
+:::
+
+::: {.pf-step #s9}
+
+The link $C\cap S^3$ is a trefoil isotopic to $K$.
+
+::: pf-proof
+
 Parametrize the cusp by
 \[
 (X,Y)=(u^3,u^2).
@@ -422,14 +484,21 @@ which is the $(2,3)$ torus knot. It is $K$ or the mirror image of $K$, and a ref
 \[
 S^3\setminus(C\cap S^3)\cong S^3\setminus K.
 \]
-Combining with <1>8 gives
+Combining with step [](#s8){.pf-ref} gives
 \[
 \boxed{\mathbb C^2\setminus C\simeq S^3\setminus K}.
 \]
+
 :::
 
-<1>10. Going around the full circle gives an automorphism of $\pi_1(S^3\setminus K)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Going around the full circle gives an automorphism of $\pi_1(S^3\setminus K)$.
+
+::: pf-proof
+
 The successive arrows are:
 \[
 \pi_1(S^3\setminus K)
@@ -444,7 +513,7 @@ B_3
 \xrightarrow{\cong}
 \pi_1(S^3\setminus K).
 \]
-The first arrow is the van Kampen presentation of the trefoil group used in [[E-PER08-4.2]]. The second is an isomorphism by <1>1. The third is an isomorphism by <1>3. The fourth is an isomorphism by <1>7. The fifth is an isomorphism by <1>8--<1>9.
+The first arrow is the van Kampen presentation of the trefoil group used in [[E-PER08-4.2]]. The second is an isomorphism by step [](#s1){.pf-ref}. The third is an isomorphism by step [](#s3){.pf-ref}. The fourth is an isomorphism by step [](#s7){.pf-ref}. The fifth is an isomorphism by steps [](#s8){.pf-ref} and [](#s9){.pf-ref}.
 
 A composition of isomorphisms is an isomorphism. Since the source and target of the full composite are the same group, the resulting endomorphism of
 \[
@@ -453,5 +522,11 @@ A composition of isomorphisms is an isomorphism. Since the source and target of 
 is an automorphism.
 
 Consequently all five groups listed in the problem are mutually isomorphic.
+
 :::
+
+:::
+
+:::
+
 :::

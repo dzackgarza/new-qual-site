@@ -21,7 +21,11 @@ Does $L^1$ have a natural multiplication making it an algebra? Distinguish point
 ::: {.solution}
 There is no single answer for a bare symbol $L^1$: the multiplication depends on the underlying measure-theoretic structure.
 
-<1>1. Pointwise multiplication does not make a general $L^1(X,\mu)$ into an algebra.
+::: pf
+
+::: pf-step
+
+Pointwise multiplication does not make a general $L^1(X,\mu)$ into an algebra.
 If $f,g\in L^1$, the product $fg$ need not lie in $L^1$. For example, on $(0,1)$ with Lebesgue measure,
 \[
 f(x)=x^{-2/3}
@@ -41,7 +45,16 @@ since
 \|fg\|_1\le \|f\|_1\|g\|_\infty.
 \]
 
-<1>2. Convolution gives the canonical $L^1$ algebra on a locally compact group.
+:::
+
+::: pf-step
+
+Convolution gives the canonical $L^1$ algebra on a locally compact group.
+
+:::
+
+:::
+
 Let $G$ be a locally compact group with a left Haar measure. For $f,g\in L^1(G)$ define
 \[
 (f*g)(x)=\int_G f(y)g(y^{-1}x)\,dy.

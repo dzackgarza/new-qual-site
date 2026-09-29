@@ -36,21 +36,39 @@ H=G[H,H].
 \]
 Suppose for contradiction that $G<H$. Since $H$ is finite, $G$ is contained in a maximal subgroup $M<H$.
 
-<1>1. Every maximal subgroup of a finite $p$-group has index $p$ and is normal.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every maximal subgroup of a finite $p$-group has index $p$ and is normal.
+
+::: pf-proof
+
 The quotient action of $H$ on the left cosets $H/M$ shows that the index is a power of $p$. Maximality forces the quotient to have no nontrivial proper subgroup, hence
 \[
 [H:M]=p.
 \]
 A subgroup of index $p$ in a finite $p$-group is normal.
+
 :::
 
-<1>2. We have $[H,H]\subseteq M$.
-::: {.proof}
+:::
+
+::: pf-step
+
+We have $[H,H]\subseteq M$.
+
+::: pf-proof
+
 Because $H/M$ has order $p$, it is cyclic and therefore abelian. The derived subgroup is contained in the kernel of every homomorphism to an abelian group, so
 \[
 [H,H]\subseteq M.
 \]
+
+:::
+
+:::
+
 :::
 
 Now $G\subseteq M$ and $[H,H]\subseteq M$, so

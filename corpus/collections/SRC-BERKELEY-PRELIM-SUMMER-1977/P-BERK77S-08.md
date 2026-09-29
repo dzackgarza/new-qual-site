@@ -43,9 +43,14 @@ $$
 F(x)=3x+85\cos x.
 $$
 
-<1>1. The vector field $F:\RR\to\RR$ is globally Lipschitz.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The vector field $F:\RR\to\RR$ is globally Lipschitz.
+
+::: pf-proof
+
 One has
 $$
 F'(x)=3-85\sin x,
@@ -63,9 +68,14 @@ $$
 88\abs{x-y}
 $$
 for all $x,y\in\RR$.
+
 :::
 
-<1>2. There is a unique maximal solution
+:::
+
+::: pf-step
+
+There is a unique maximal solution
 $$
 x:(\alpha,\beta)\longrightarrow\RR
 $$
@@ -80,14 +90,20 @@ $$
 -\infty\leq\alpha<0<\beta\leq\infty.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The function $F$ is continuously differentiable, hence locally Lipschitz.
 The Picard--Lindelöf theorem therefore gives a unique local solution through
 $(0,77)$, and the standard continuation construction gives a unique maximal
 solution on an open interval $(\alpha,\beta)$.
+
 :::
 
-<1>3. For every $t\in(\alpha,\beta)$,
+:::
+
+::: {.pf-step #s3}
+
+For every $t\in(\alpha,\beta)$,
 $$
 \abs{x(t)}
 \leq
@@ -95,7 +111,8 @@ $$
 -\frac{85}{3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $t\geq0$, the integral equation gives
 $$
 x(t)
@@ -144,15 +161,21 @@ $$
 3\abs y+85.
 $$
 Replacing $s$ by $-t$ gives the stated bound for negative $t$ as well.
+
 :::
 
-<1>4. The right endpoint of the maximal interval is
+:::
+
+::: {.pf-step #s4}
+
+The right endpoint of the maximal interval is
 $$
 \beta=\infty.
 $$
 
-::: {.proof}
-Suppose instead that $\beta<\infty$. Step <1>3 bounds $x(t)$ on
+::: pf-proof
+
+Suppose instead that $\beta<\infty$. Step [](#s3){.pf-ref} bounds $x(t)$ on
 $[0,\beta)$. Thus there is an $M<\infty$ such that
 $$
 \abs{x(t)}\leq M
@@ -178,37 +201,55 @@ produces a solution on an interval containing $\beta$. By uniqueness, this
 solution agrees with the original one just to the left of $\beta$, so it
 extends the maximal solution past $\beta$. This contradicts maximality.
 Thus $\beta=\infty$.
+
 :::
 
-<1>5. The left endpoint of the maximal interval is
+:::
+
+::: {.pf-step #s5}
+
+The left endpoint of the maximal interval is
 $$
 \alpha=-\infty.
 $$
 
-::: {.proof}
-If $\alpha>-\infty$, step <1>3 bounds $x(t)$ on $(\alpha,0]$. The same
-argument as in step <1>4 bounds $x'$ there, gives a finite limit
+::: pf-proof
+
+If $\alpha>-\infty$, step [](#s3){.pf-ref} bounds $x(t)$ on $(\alpha,0]$. The same
+argument as in step [](#s4){.pf-ref} bounds $x'$ there, gives a finite limit
 $$
 \lim_{t\downarrow\alpha}x(t),
 $$
 and local existence at that limiting state extends the solution to times
 less than $\alpha$. This contradicts maximality. Hence
 $\alpha=-\infty$.
+
 :::
 
-<1>6. The initial-value problem has a solution defined for every
+:::
+
+::: {.pf-step #s6}
+
+The initial-value problem has a solution defined for every
 $t\in\RR$.
 
-::: {.proof}
-By steps <1>4 and <1>5, the maximal interval is
+::: pf-proof
+
+By steps [](#s4){.pf-ref} and [](#s5){.pf-ref}, the maximal interval is
 $$
 (\alpha,\beta)=\RR.
 $$
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 is the required global-existence conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s6){.pf-ref} is the required global-existence conclusion.
+
+:::
+
+:::
+
 :::

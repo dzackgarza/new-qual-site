@@ -28,17 +28,34 @@ A subgroup of order $p^n$ is called a Sylow $p$-subgroup.
 
 The Sylow theorems are:
 
-<1>1. Existence.
+::: pf
+
+::: pf-step
+
+Existence.
 There exists a subgroup
 \[
 P\le G
 \]
 of order $p^n$.
 
-<1>2. Conjugacy and containment.
+:::
+
+::: pf-step
+
+Conjugacy and containment.
 Every $p$-subgroup of $G$ is contained in a Sylow $p$-subgroup, and any two Sylow $p$-subgroups are conjugate in $G$.
 
-<1>3. Number of Sylow subgroups.
+:::
+
+::: pf-step
+
+Number of Sylow subgroups.
+
+:::
+
+:::
+
 If $n_p$ denotes the number of Sylow $p$-subgroups, then
 \[
 n_p\equiv1\pmod p

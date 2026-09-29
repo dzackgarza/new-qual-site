@@ -37,25 +37,59 @@ So we have $H_2 \into H_1 \into H_0 = 0 \into \ZZ^2 \into \ZZ$.
 :::
 
 ::: {.solution}
-<1>1. The displayed simplicial complex is a connected graph with $V=5$ vertices and $E=6$ edges and no simplices of dimension at least $2$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The displayed simplicial complex is a connected graph with $V=5$ vertices and $E=6$ edges and no simplices of dimension at least $2$.
+
+::: pf-proof
+
 This is exactly the listed chain data.
+
 :::
 
-<1>2. Therefore $H_0\cong\mathbb Z$ and $H_k=0$ for $k\ge2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Therefore $H_0\cong\mathbb Z$ and $H_k=0$ for $k\ge2$.
+
+::: pf-proof
+
 Connectedness gives $H_0$, and the simplicial chain groups vanish above degree $1$.
+
 :::
 
-<1>3. The first homology is free of rank
+:::
+
+::: {.pf-step #s3}
+
+The first homology is free of rank
 $$E-V+1=6-5+1=2.$$
-::: {.proof}
+
+::: pf-proof
+
 For a connected finite graph, $\operatorname{rank}H_1=E-V+1$, from the cellular chain complex or Euler characteristic.
+
 :::
 
-<1>4. Hence
-$$\boxed{H_k\cong\begin{cases}\mathbb Z,&k=0,\\\mathbb Z^2,&k=1,\\0,&k\ge2.\end{cases}}$$
-::: {.proof}
-Combine <1>2--<1>3.
 :::
+
+::: pf-step
+
+Hence
+$$\boxed{H_k\cong\begin{cases}\mathbb Z,&k=0,\\\mathbb Z^2,&k=1,\\0,&k\ge2.\end{cases}}$$
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

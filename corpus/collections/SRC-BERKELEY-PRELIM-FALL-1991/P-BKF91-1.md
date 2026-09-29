@@ -31,9 +31,14 @@ Prove that every finite group of order at least $3$ has a nontrivial automorphis
 ::: {.solution}
 Let $G$ be a finite group with $\abs{G}\geq3$.
 
-<1>1. If $G$ is nonabelian, then $G$ has a nontrivial automorphism.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $G$ is nonabelian, then $G$ has a nontrivial automorphism.
+
+::: pf-proof
+
 Since $G$ is nonabelian, its center is a proper subgroup:
 $$
 Z(G)\neq G.
@@ -50,9 +55,14 @@ $$
 gxg^{-1}\neq x.
 $$
 Thus $c_g$ is not the identity automorphism.
+
 :::
 
-<1>2. Suppose $G$ is abelian. Then inversion
+:::
+
+::: {.pf-step #s2}
+
+Suppose $G$ is abelian. Then inversion
 $$
 \iota:G\longrightarrow G,
 \qquad
@@ -60,7 +70,8 @@ $$
 $$
 is an automorphism.
 
-::: {.proof}
+::: pf-proof
+
 For $x,y\in G$, commutativity gives
 $$
 \iota(xy)
@@ -69,19 +80,31 @@ $$
 =\iota(x)\iota(y).
 $$
 Also $\iota^2=\operatorname{id}_G$, so $\iota$ is bijective.
+
 :::
 
-<1>3. If the inversion automorphism in step <1>2 is nontrivial, then
+:::
+
+::: {.pf-step #s3}
+
+If the inversion automorphism in step [](#s2){.pf-ref} is nontrivial, then
 $G$ has a nontrivial automorphism.
 
-::: {.proof}
-This is immediate from step <1>2.
+::: pf-proof
+
+This is immediate from step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. If the inversion automorphism is the identity, then every element
+:::
+
+::: {.pf-step #s4}
+
+If the inversion automorphism is the identity, then every element
 of $G$ has order at most $2$.
 
-::: {.proof}
+::: pf-proof
+
 If $\iota=\operatorname{id}_G$, then
 $$
 x=x^{-1}
@@ -91,12 +114,18 @@ $$
 x^2=e
 $$
 for every $x\in G$.
+
 :::
 
-<1>5. Under the hypotheses of step <1>4, the group $G$ is a vector
+:::
+
+::: {.pf-step #s5}
+
+Under the hypotheses of step [](#s4){.pf-ref}, the group $G$ is a vector
 space over $\FF_2$ of dimension at least $2$.
 
-::: {.proof}
+::: pf-proof
+
 Because $G$ is abelian and every element has order dividing $2$, its
 group law makes it an elementary abelian $2$-group, equivalently an
 $\FF_2$-vector space. Since $G$ is finite,
@@ -108,12 +137,18 @@ Therefore
 $$
 \dim_{\FF_2}G\geq2.
 $$
+
 :::
 
-<1>6. Under the hypotheses of step <1>5, $G$ has a nontrivial
+:::
+
+::: {.pf-step #s6}
+
+Under the hypotheses of step [](#s5){.pf-ref}, $G$ has a nontrivial
 automorphism.
 
-::: {.proof}
+::: pf-proof
+
 Choose a basis
 $$
 e_1,e_2,e_3,\ldots,e_r
@@ -122,20 +157,32 @@ with $r\geq2$. The linear map that interchanges $e_1$ and $e_2$ and
 fixes every other basis vector is an invertible $\FF_2$-linear map.
 Hence it is a group automorphism of $G$, and it is nontrivial because
 it sends $e_1$ to $e_2\neq e_1$.
+
 :::
 
-<1>7. Every finite group of order at least $3$ has a nontrivial
+:::
+
+::: {.pf-step #s7}
+
+Every finite group of order at least $3$ has a nontrivial
 automorphism.
 
-::: {.proof}
-If $G$ is nonabelian, apply step <1>1. If $G$ is abelian, either
-inversion is nontrivial, in which case step <1>3 applies, or inversion
-is the identity, in which case step <1>6 applies.
+::: pf-proof
+
+If $G$ is nonabelian, apply step [](#s1){.pf-ref}. If $G$ is abelian, either
+inversion is nontrivial, in which case step [](#s3){.pf-ref} applies, or inversion
+is the identity, in which case step [](#s6){.pf-ref} applies.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

@@ -31,25 +31,37 @@ $$
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \log(n!)
 =
 \sum_{k=1}^n\log k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $n!=\prod_{k=1}^n k$ and every factor is positive, the logarithm of the product is the sum of the logarithms.
+
 :::
 
-<1>2. For every integer $n>1$,
+:::
+
+::: {.pf-step #s2}
+
+For every integer $n>1$,
 $$
 \int_1^n\log x\,dx
 <
 \sum_{k=1}^n\log k.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $k=2,\ldots,n$, the function $\log x$ is strictly increasing on $[k-1,k]$, so
 $$
 \int_{k-1}^k\log x\,dx
@@ -65,16 +77,22 @@ $$
 \sum_{k=1}^n\log k,
 $$
 because $\log1=0$.
+
 :::
 
-<1>3. For every integer $n\geq1$,
+:::
+
+::: {.pf-step #s3}
+
+For every integer $n\geq1$,
 $$
 \sum_{k=1}^n\log k
 <
 \int_1^{n+1}\log x\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $k=1,\ldots,n$, strict monotonicity gives
 $$
 \log k
@@ -82,9 +100,14 @@ $$
 \int_k^{k+1}\log x\,dx.
 $$
 Indeed, $\log x>\log k$ for every $x\in(k,k+1]$. Summing over $k$ yields the displayed inequality.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 n\log n-n+1
 <
@@ -93,8 +116,9 @@ n\log n-n+1
 (n+1)\log(n+1)-n.
 $$
 
-::: {.proof}
-By steps <1>1--<1>3,
+::: pf-proof
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \int_1^n\log x\,dx
 <
@@ -118,9 +142,14 @@ $$
 =
 (n+1)\log(n+1)-n.
 $$
+
 :::
 
-<1>5. For every integer $n>2$,
+:::
+
+::: {.pf-step #s5}
+
+For every integer $n>2$,
 $$
 \boxed{
 \frac{n^n}{e^{n-1}}
@@ -131,8 +160,9 @@ n!
 }.
 $$
 
-::: {.proof}
-The exponential function is strictly increasing. Exponentiating step <1>4 gives
+::: pf-proof
+
+The exponential function is strictly increasing. Exponentiating step [](#s4){.pf-ref} gives
 $$
 e^{n\log n-n+1}
 <
@@ -152,11 +182,17 @@ e^{(n+1)\log(n+1)-n}
 =
 \frac{(n+1)^{n+1}}{e^n}.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required inequality.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required inequality.
+
+:::
+
+:::
+
 :::

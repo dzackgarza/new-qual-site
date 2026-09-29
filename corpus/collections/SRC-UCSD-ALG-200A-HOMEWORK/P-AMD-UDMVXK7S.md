@@ -45,8 +45,15 @@ Find a presentation for the nonabelian group and justify that the presentation i
 :::
 
 ::: {.solution}
-<1>1. Every group $G$ of order $pq$ has a unique Sylow $q$-subgroup.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every group $G$ of order $pq$ has a unique Sylow $q$-subgroup.
+
+::: pf-proof
+
 Let $n_q$ denote the number of Sylow $q$-subgroups.
 Sylow's theorem gives
 \[
@@ -66,9 +73,14 @@ Q\normal G
 \qquad\text{and}\qquad
 Q\cong C_q.
 \]
+
 :::
 
-<1>2. Every group $G$ of order $pq$ is isomorphic to a semidirect product
+:::
+
+::: {.pf-step #s2}
+
+Every group $G$ of order $pq$ is isomorphic to a semidirect product
 \[
 C_q\rtimes_\psi C_p
 \]
@@ -76,8 +88,10 @@ for some homomorphism
 \[
 \psi:C_p\longrightarrow\operatorname{Aut}(C_q).
 \]
-::: {.proof}
-Let $Q$ be the unique Sylow $q$-subgroup from <1>1 and let $P$ be any Sylow $p$-subgroup.
+
+::: pf-proof
+
+Let $Q$ be the unique Sylow $q$-subgroup from step [](#s1){.pf-ref} and let $P$ be any Sylow $p$-subgroup.
 Then
 \[
 |Q|=q,
@@ -105,10 +119,17 @@ Q\cong C_q,
 \qquad
 P\cong C_p.
 \]
+
 :::
 
-<1>3. The group $\operatorname{Aut}(C_q)$ is cyclic of order $q-1$ and has a unique subgroup of order $p$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The group $\operatorname{Aut}(C_q)$ is cyclic of order $q-1$ and has a unique subgroup of order $p$.
+
+::: pf-proof
+
 Choose a generator $a$ of $C_q$.
 Every automorphism is determined by
 \[
@@ -121,10 +142,17 @@ for a unique $u\in(\mathbb Z/q\mathbb Z)^\times$, so
 The multiplicative group of the finite field $\mathbb F_q$ is cyclic of order $q-1$.
 Thus $\operatorname{Aut}(C_q)$ is cyclic of order $q-1$.
 Because $p\mid q-1$, a cyclic group of order $q-1$ has a unique subgroup of order $p$.
+
 :::
 
-<1>4. The trivial action gives the cyclic group $C_{pq}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The trivial action gives the cyclic group $C_{pq}$.
+
+::: pf-proof
+
 If $\psi$ is trivial, then the semidirect product is the direct product
 \[
 C_q\rtimes_\psi C_p=C_q\times C_p.
@@ -133,34 +161,48 @@ Since $p$ and $q$ are coprime,
 \[
 C_q\times C_p\cong C_{pq}.
 \]
+
 :::
 
-<1>5. Every nontrivial homomorphism
+:::
+
+::: {.pf-step #s5}
+
+Every nontrivial homomorphism
 \[
 \psi:C_p\longrightarrow\operatorname{Aut}(C_q)
 \]
 is injective and has the same image.
-::: {.proof}
+
+::: pf-proof
+
 The kernel of $\psi$ is a subgroup of the group $C_p$ of prime order.
 If $\psi$ is nontrivial, its kernel cannot be all of $C_p$, so
 \[
 \ker\psi=\{1\}.
 \]
 Thus $\psi$ is injective and its image has order $p$.
-By <1>3, $\operatorname{Aut}(C_q)$ has a unique subgroup of order $p$, so every nontrivial $\psi$ has that same image.
+By step [](#s3){.pf-ref}, $\operatorname{Aut}(C_q)$ has a unique subgroup of order $p$, so every nontrivial $\psi$ has that same image.
+
 :::
 
-<1>6. All nontrivial actions give isomorphic semidirect products.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+All nontrivial actions give isomorphic semidirect products.
+
+::: pf-proof
+
 Let $P=C_p=\langle b\rangle$, and let
 \[
 U\le\operatorname{Aut}(C_q)
 \]
-be the unique subgroup of order $p$ from <1>3. Choose a generator $\tau$ of $U$ and let
+be the unique subgroup of order $p$ from step [](#s3){.pf-ref}. Choose a generator $\tau$ of $U$ and let
 \[
 \psi_0(b)=\tau.
 \]
-For any nontrivial action $\psi$, <1>5 gives $\operatorname{im}\psi=U$.
+For any nontrivial action $\psi$, step [](#s5){.pf-ref} gives $\operatorname{im}\psi=U$.
 Hence
 \[
 \psi(b)=\tau^m
@@ -193,15 +235,22 @@ F\bigl((h_1,k_1)(h_2,k_2)\bigr)
 \]
 Since $\rho_m$ is bijective, $F$ is bijective.
 Therefore all nontrivial actions yield isomorphic semidirect products.
+
 :::
 
-<1>7. Fix an integer $r$ whose residue class modulo $q$ has order $p$ in $(\mathbb Z/q\mathbb Z)^\times$.
+:::
+
+::: {.pf-step #s7}
+
+Fix an integer $r$ whose residue class modulo $q$ has order $p$ in $(\mathbb Z/q\mathbb Z)^\times$.
 Then the nontrivial semidirect product has presentation
 \[
 \left\langle a,b\ \middle|\ a^q=1,\ b^p=1,\ bab^{-1}=a^r\right\rangle.
 \]
-::: {.proof}
-By <1>3, $(\mathbb Z/q\mathbb Z)^\times$ contains an element of order $p$; choose an integer representative $r$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $(\mathbb Z/q\mathbb Z)^\times$ contains an element of order $p$; choose an integer representative $r$.
 Let
 \[
 A=C_q=\langle a\rangle,
@@ -247,10 +296,17 @@ Since $\Gamma$ surjects onto the group $S$ of order $pq$,
 \]
 Thus $|\Gamma|=pq$, and the surjection $\Gamma\to S$ is an isomorphism.
 This proves that the presentation is correct.
+
 :::
 
-<1>8. The semidirect product in <1>7 is nonabelian.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+The semidirect product in step [](#s7){.pf-ref} is nonabelian.
+
+::: pf-proof
+
 The residue class of $r$ has order $p>1$, so
 \[
 r\not\equiv1\pmod q.
@@ -261,11 +317,24 @@ bab^{-1}=a^r\ne a,
 \]
 so $a$ and $b$ do not commute.
 Hence the group is nonabelian.
+
 :::
 
-<1>9. There are precisely two groups of order $pq$ up to isomorphism.
-::: {.proof}
-By <1>2, every group of order $pq$ is determined up to isomorphism by an action of $C_p$ on $C_q$.
-The trivial action gives the abelian group $C_{pq}$ by <1>4. Every nontrivial action gives the single nonabelian isomorphism class of <1>6, represented by the presentation in <1>7. The two classes are not isomorphic because one is abelian and the other is not by <1>8. Therefore there are exactly two isomorphism classes.
 :::
+
+::: pf-step
+
+There are precisely two groups of order $pq$ up to isomorphism.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, every group of order $pq$ is determined up to isomorphism by an action of $C_p$ on $C_q$.
+The trivial action gives the abelian group $C_{pq}$ by step [](#s4){.pf-ref}. Every nontrivial action gives the single nonabelian isomorphism class of step [](#s6){.pf-ref}, represented by the presentation in step [](#s7){.pf-ref}. The two classes are not isomorphic because one is abelian and the other is not by step [](#s8){.pf-ref}. Therefore there are exactly two isomorphism classes.
+
+:::
+
+:::
+
+:::
+
 :::

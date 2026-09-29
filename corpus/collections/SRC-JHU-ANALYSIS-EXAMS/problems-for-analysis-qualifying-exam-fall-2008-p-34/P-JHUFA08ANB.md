@@ -46,17 +46,31 @@ Prove that for every $1\le p\le\infty$,
 :::
 
 ::: {.solution}
-<1>1. The case $p=\infty$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The case $p=\infty$.
+
+::: pf-proof
+
 For almost every $y$,
 \[
 |Tf(y)|\le \|f\|_\infty\int_X|K(x,y)|\,d\mu(x)\le A\|f\|_\infty.
 \]
 Thus $\|Tf\|_\infty\le A\|f\|_\infty$.
+
 :::
 
-<1>2. The case $1\le p<\infty$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The case $1\le p<\infty$.
+
+::: pf-proof
+
 Fix $y$. Hölder's inequality with respect to the finite measure $|K(x,y)|\,d\mu(x)$ gives
 \[
 |Tf(y)|^p
@@ -80,5 +94,11 @@ Taking $p$th roots gives
 \[
 \|Tf\|_p\le A\|f\|_p.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

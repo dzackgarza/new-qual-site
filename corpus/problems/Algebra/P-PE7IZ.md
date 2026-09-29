@@ -20,8 +20,15 @@ Prove that $\ZZ$ is initial in the category of unital rings and unital ring homo
 :::
 
 ::: {.solution}
-<1>1. $\ZZ$ is initial among unital rings.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+$\ZZ$ is initial among unital rings.
+
+::: pf-proof
+
 Let $R$ be a unital ring. Define
 \[
 \phi:\ZZ\to R,
@@ -43,15 +50,22 @@ If $\psi:\ZZ\to R$ is any unital ring homomorphism, then $\psi(1)=1_R$, hence ad
 \psi(n)=n\cdot1_R=\phi(n)
 \]
 for every $n\in\ZZ$. Thus $\phi$ is unique.
+
 :::
 
-<1>2. Every abelian group has a unique $\ZZ$-module structure.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every abelian group has a unique $\ZZ$-module structure.
+
+::: pf-proof
+
 For an abelian group $A$, the endomorphism ring $\Endo_{\mathbf{Ab}}(A)$ is unital. A $\ZZ$-module structure on $A$ is equivalent to a unital ring homomorphism
 \[
 \ZZ\to\Endo_{\mathbf{Ab}}(A).
 \]
-By <1>1 there is exactly one such homomorphism. Explicitly,
+By step [](#s1){.pf-ref} there is exactly one such homomorphism. Explicitly,
 \[
 n\cdot a=
 \begin{cases}
@@ -60,5 +74,11 @@ a+\cdots+a,&n>0,\\
 -((-n)\cdot a),&n<0.
 \end{cases}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

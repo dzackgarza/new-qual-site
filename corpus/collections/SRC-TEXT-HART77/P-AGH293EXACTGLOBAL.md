@@ -64,14 +64,19 @@ $$
 by [@Har10a, Proposition II.9.6].
 Neither $\mcf$ nor $\mcf''$ is assumed coherent or annihilated by a power of $\mci$.
 
-<1>1. For every affine formal open $\mathfrak U$ and $n\ge1$, the sequence
+::: pf
+
+::: {.pf-step #s1}
+
+For every affine formal open $\mathfrak U$ and $n\ge1$, the sequence
 $$
 0\to K_n(\mathfrak U)\to G_n(\mathfrak U)
 \to\mcf''(\mathfrak U)\to0
 $$
 is exact.
 
-::: {.proof}
+::: pf-proof
+
 The sheaf sequence $0\to K_n\to G_n\to\mcf''\to0$ is exact by taking the indicated quotient of the original sequence.
 Left exactness on sections gives exactness except possibly at the last term.
 
@@ -86,11 +91,17 @@ Thus $s_i-b_i$ agree on overlaps and glue to a section of $G_n(\mathfrak U)$ lif
 This argument only uses the quasi-coherence of $K_n$ on the affine scheme $\mathfrak U_n$.
 The middle and last sheaves need only be sheaves of abelian groups for the correction and gluing, so they need not be modules over $\OO_{\mathfrak U_n}$.
 This proves the required modification of Proposition II.5.6 and all of (a).
+
 :::
 
-<1>2. The transition maps $K_{n+1}(\mathfrak U)\to K_n(\mathfrak U)$ are surjective for every affine formal open $\mathfrak U$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The transition maps $K_{n+1}(\mathfrak U)\to K_n(\mathfrak U)$ are surjective for every affine formal open $\mathfrak U$.
+
+::: pf-proof
+
 On the affine scheme $\mathfrak U_{n+1}$ there is an exact sequence of coherent sheaves
 $$
 0\to\mci^n\mcf'/\mci^{n+1}\mcf'
@@ -99,17 +110,23 @@ $$
 The last sheaf is regarded as a sheaf on that scheme through its quotient structure sheaf.
 Exactness of global sections for quasi-coherent sheaves on an affine scheme gives the asserted surjectivity [@Har10a, Proposition II.5.6].
 Consequently the inverse system of groups $K_n(\mathfrak U)$ satisfies the Mittag--Leffler condition.
+
 :::
 
-<1>3. For $H=\varprojlim_n G_n$, there is an exact sequence of sheaves
+:::
+
+::: {.pf-step #s3}
+
+For $H=\varprojlim_n G_n$, there is an exact sequence of sheaves
 $$
 0\longrightarrow\mcf'\longrightarrow H\longrightarrow\mcf''\longrightarrow0,
 $$
 and it is exact on sections over every affine formal open.
 
-::: {.proof}
-The sequences in step <1>1 form a short exact sequence of inverse systems of groups, with the constant system $\mcf''(\mathfrak U)$ on the right.
-Step <1>2 and the inverse-limit exactness criterion give
+::: pf-proof
+
+The sequences in step [](#s1){.pf-ref} form a short exact sequence of inverse systems of groups, with the constant system $\mcf''(\mathfrak U)$ on the right.
+Step [](#s2){.pf-ref} and the inverse-limit exactness criterion give
 $$
 0\to\varprojlim_n K_n(\mathfrak U)
 \to\varprojlim_n G_n(\mathfrak U)
@@ -117,8 +134,8 @@ $$
 $$
 [@Har10a, Proposition II.9.1].
 Explicitly, compatible lifts of a fixed section can be constructed recursively.
-After choosing a lift at level $n$, choose any lift at level $n+1$ by step <1>1.
-Its discrepancy at level $n$ lies in $K_n(\mathfrak U)$; lift that discrepancy through the surjection of step <1>2 and subtract it at level $n+1$.
+After choosing a lift at level $n$, choose any lift at level $n+1$ by step [](#s1){.pf-ref}.
+Its discrepancy at level $n$ lies in $K_n(\mathfrak U)$; lift that discrepancy through the surjection of step [](#s2){.pf-ref} and subtract it at level $n+1$.
 This produces compatible lifts at every level.
 
 Limits of sheaves are computed on sections [@Har10a, Proposition II.9.2].
@@ -130,13 +147,19 @@ $$
 These maps commute with restriction.
 Since affine formal opens form a basis, the resulting sequence of sheaves is exact.
 In particular, exactness has been proved on sections before passing to sheaves; it is not an application of a generally false exactness assertion for inverse limits of sheaves.
+
 :::
 
-<1>4. The natural map $\mcf\to H$ is an isomorphism, and the desired global-section sequence is exact.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The natural map $\mcf\to H$ is an isomorphism, and the desired global-section sequence is exact.
+
+::: pf-proof
+
 The quotient maps $\mcf\to G_n$ give a natural map $\eta:\mcf\to H$.
-It takes the original short exact sequence to the short exact sequence in step <1>3, with the identity on $\mcf'$ and on $\mcf''$.
+It takes the original short exact sequence to the short exact sequence in step [](#s3){.pf-ref}, with the identity on $\mcf'$ and on $\mcf''$.
 At a stalk, an element in the kernel of $\eta$ maps to zero in $\mcf''$ and hence comes from $\mcf'$; the identity on that term forces it to be zero.
 Conversely, an element of $H$ at a stalk has an image in $\mcf''$ which lifts to $\mcf$ at that stalk.
 Subtracting the image of this lift leaves an element of $\mcf'$, also in the image of $\eta$.
@@ -147,13 +170,19 @@ $$
 \boxed{\mcf\xrightarrow{\cong}\varprojlim_n\mcf/\mci^n\mcf'.}
 $$
 This uses the filtration by $\mci^n\mcf'$, not the possibly different filtration by $\mci^n\mcf$.
-Finally, take $\mathfrak U=\mathfrak X$ in step <1>3 and replace $H$ by $\mcf$ through $\eta$.
+Finally, take $\mathfrak U=\mathfrak X$ in step [](#s3){.pf-ref} and replace $H$ by $\mcf$ through $\eta$.
 The result is the full short exact sequence of global sections requested in (b).
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), and steps <1>2--<1>4 prove both the inverse-limit identification and global exactness in (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), and steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove both the inverse-limit identification and global exactness in (b).
+
+:::
+
+:::
+
 :::

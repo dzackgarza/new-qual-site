@@ -43,7 +43,12 @@ y'(0)=0.
 :::
 
 ::: {.solution}
-<1>1. The initial-value problem
+
+::: pf
+
+::: {.pf-step #s1}
+
+The initial-value problem
 $$
 y''=-\abs{y},
 \qquad
@@ -53,7 +58,8 @@ y'(0)=0
 $$
 has at most one solution.
 
-::: {.proof}
+::: pf-proof
+
 Introduce
 $$
 v=y'
@@ -84,16 +90,22 @@ $$
 $$
 The uniqueness theorem for ordinary differential equations therefore gives
 uniqueness for the stated initial data.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 \widetilde y(x)=y(-x).
 $$
 Then $\widetilde y$ satisfies the same differential equation and initial
 conditions as $y$.
 
-::: {.proof}
+::: pf-proof
+
 Differentiating twice,
 $$
 \widetilde y''(x)
@@ -112,9 +124,14 @@ and
 $$
 \widetilde y'(0)=-y'(0)=0.
 $$
+
 :::
 
-<1>3. The function $y$ is even:
+:::
+
+::: {.pf-step #s3}
+
+The function $y$ is even:
 $$
 \boxed{
 y(-x)=y(x)
@@ -122,16 +139,22 @@ y(-x)=y(x)
 $$
 for every $x\in\RR$.
 
-::: {.proof}
-By step <1>2, the functions $y$ and $\widetilde y$ solve the same
-initial-value problem. Uniqueness from step <1>1 gives
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the functions $y$ and $\widetilde y$ solve the same
+initial-value problem. Uniqueness from step [](#s1){.pf-ref} gives
 $$
 \widetilde y=y.
 $$
 This is exactly the displayed identity.
+
 :::
 
-<1>4. Define $\phi:[0,\infty)\to\RR$ by
+:::
+
+::: {.pf-step #s4}
+
+Define $\phi:[0,\infty)\to\RR$ by
 $$
 \phi(x)
 =
@@ -147,7 +170,8 @@ x\geq\pi/2.
 $$
 Then $\phi$ is $C^2$ on $[0,\infty)$.
 
-::: {.proof}
+::: pf-proof
+
 Each branch is smooth away from $x=\pi/2$. At the joining point,
 $$
 \cos(\pi/2)=0
@@ -172,9 +196,14 @@ $$
 $$
 and both equal $0$ there. Hence the two branches join with matching first
 and second derivatives.
+
 :::
 
-<1>5. The function $\phi$ satisfies
+:::
+
+::: {.pf-step #s5}
+
+The function $\phi$ satisfies
 $$
 \phi''=-\abs{\phi}
 $$
@@ -185,7 +214,8 @@ $$
 \phi'(0)=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For
 $$
 0\leq x\leq\pi/2,
@@ -217,7 +247,7 @@ $$
 =
 -\abs{\phi(x)}.
 $$
-Step <1>4 handles the joining point. Finally,
+Step [](#s4){.pf-ref} handles the joining point. Finally,
 $$
 \phi(0)=\cos0=1
 $$
@@ -225,23 +255,34 @@ and
 $$
 \phi'(0)=-\sin0=0.
 $$
+
 :::
 
-<1>6. For every $x\geq0$,
+:::
+
+::: {.pf-step #s6}
+
+For every $x\geq0$,
 $$
 y(x)=\phi(x).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The functions $y$ and $\phi$ satisfy the same differential equation and
-the same initial conditions at $0$ by step <1>5. Uniqueness from step
-<1>1 therefore gives equality on their common interval
+the same initial conditions at $0$ by step [](#s5){.pf-ref}. Uniqueness from step
+[](#s1){.pf-ref} therefore gives equality on their common interval
 $$
 [0,\infty).
 $$
+
 :::
 
-<1>7. The function $y$ has exactly one zero on the positive real axis,
+:::
+
+::: {.pf-step #s7}
+
+The function $y$ has exactly one zero on the positive real axis,
 namely
 $$
 \boxed{
@@ -249,8 +290,9 @@ x=\frac\pi2.
 }
 $$
 
-::: {.proof}
-By step <1>6,
+::: pf-proof
+
+By step [](#s6){.pf-ref},
 $$
 y(x)=\cos x
 $$
@@ -262,7 +304,7 @@ for $0\leq x<\pi/2$, while
 $$
 y(\pi/2)=0.
 $$
-For $x>\pi/2$, step <1>6 gives
+For $x>\pi/2$, step [](#s6){.pf-ref} gives
 $$
 y(x)
 =
@@ -271,11 +313,17 @@ y(x)
 0.
 $$
 Thus there is no other positive zero.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (1), and step <1>7 proves part (2).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (1), and step [](#s7){.pf-ref} proves part (2).
+
+:::
+
+:::
+
 :::

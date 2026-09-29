@@ -42,12 +42,17 @@ N\subseteq R
 $$
 be the ideal of strictly upper-triangular matrices.
 
-<1>1. The ideal $N$ is nilpotent:
+::: pf
+
+::: {.pf-step #s1}
+
+The ideal $N$ is nilpotent:
 $$
 N^n=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiplying a matrix supported strictly above the diagonal by another such
 matrix moves every possible nonzero entry at least one diagonal farther
 above the main diagonal. A product of $r$ strictly upper-triangular matrices
@@ -59,14 +64,20 @@ product of $n$ elements of $N$ is zero. Hence
 $$
 N^n=0.
 $$
+
 :::
 
-<1>2. If $M$ is a nonzero simple left $R$-module, then
+:::
+
+::: {.pf-step #s2}
+
+If $M$ is a nonzero simple left $R$-module, then
 $$
 NM=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $N$ is a two-sided ideal,
 $$
 NM
@@ -92,7 +103,7 @@ Inductively,
 $$
 N^rM=M
 $$
-for every $r\geq1$. Taking $r=n$ contradicts step <1>1:
+for every $r\geq1$. Taking $r=n$ contradicts step [](#s1){.pf-ref}:
 $$
 M
 =
@@ -104,17 +115,23 @@ Since $M$ is nonzero, this is impossible. Therefore
 $$
 NM=0.
 $$
+
 :::
 
-<1>3. Every simple $R$-module is naturally a simple module over
+:::
+
+::: {.pf-step #s3}
+
+Every simple $R$-module is naturally a simple module over
 $$
 R/N
 \cong
 \CC^n.
 $$
 
-::: {.proof}
-Step <1>2 shows that $N$ acts trivially, so the $R$-action factors uniquely
+::: pf-proof
+
+Step [](#s2){.pf-ref} shows that $N$ acts trivially, so the $R$-action factors uniquely
 through the quotient ring $R/N$.
 
 Two upper-triangular matrices are congruent modulo $N$ exactly when they have the same diagonal entries, so the map
@@ -131,11 +148,17 @@ is well defined and bijective. It is a ring isomorphism, because the diagonal of
 
 An $R/N$-submodule is exactly an $R$-submodule under the factored action, so
 the resulting $R/N$-module remains simple.
+
 :::
 
-<1>4. Every simple $\CC^n$-module is one-dimensional over $\CC$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every simple $\CC^n$-module is one-dimensional over $\CC$.
+
+::: pf-proof
+
 Let
 $$
 e_i
@@ -184,22 +207,34 @@ Therefore
 $$
 \dim_\CC M=1.
 $$
+
 :::
 
-<1>5. Every irreducible $U_n(\CC)$-module is one-dimensional over $\CC$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Every irreducible $U_n(\CC)$-module is one-dimensional over $\CC$.
+
+::: pf-proof
+
 Let $M$ be an irreducible, equivalently simple, $U_n(\CC)$-module. Step
-<1>3 reduces $M$ to a simple $\CC^n$-module, and step <1>4 proves that such
+[](#s3){.pf-ref} reduces $M$ to a simple $\CC^n$-module, and step [](#s4){.pf-ref} proves that such
 a module has complex dimension one. Hence
 $$
 \boxed{\dim_\CC M=1.}
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves that the statement in the problem is true.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves that the statement in the problem is true.
+
+:::
+
+:::
+
 :::

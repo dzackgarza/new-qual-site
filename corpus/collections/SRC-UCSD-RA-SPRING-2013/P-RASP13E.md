@@ -34,8 +34,15 @@ Prove that all $f$ and $f_n$ ($n = 1, 2, \ldots$) are in $L^p(\mu)$ and that $f_
 :::
 
 ::: {.solution}
-<1>1. Each $f_n$ belongs to $L^p$, and $f$ is dominated by $g$ almost everywhere.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Each $f_n$ belongs to $L^p$, and $f$ is dominated by $g$ almost everywhere.
+
+::: pf-proof
+
 Since $|f_n|\le g$ and $g\in L^p$,
 \[
 \|f_n\|_p^p\le\|g\|_p^p<\infty,
@@ -51,10 +58,17 @@ gives
 |f|\le g
 \]
 almost everywhere. Hence $f\in L^p$ as well.
+
 :::
 
-<1>2. Every subsequence has a further subsequence converging to $f$ in $L^p$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every subsequence has a further subsequence converging to $f$ in $L^p$.
+
+::: pf-proof
+
 Let $(f_{n_k})$ be any subsequence. It still converges to $f$ in measure, so there is a further subsequence $(f_{n_{k_j}})$ with
 \[
 f_{n_{k_j}}(x)\to f(x)
@@ -74,10 +88,17 @@ and $(2g)^p\in L^1$. Dominated convergence therefore gives
 \longrightarrow0.
 \]
 Thus every subsequence has a further subsequence converging to $f$ in $L^p$.
+
 :::
 
-<1>3. Conclude convergence of the full sequence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude convergence of the full sequence.
+
+::: pf-proof
+
 Suppose, toward a contradiction, that
 \[
 \|f_n-f\|_p\not\to0.
@@ -92,5 +113,11 @@ Hence
 \[
 \boxed{\|f_n-f\|_p\to0.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

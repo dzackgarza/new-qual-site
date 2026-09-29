@@ -45,7 +45,11 @@ Put
 K=\operatorname{Frac}(A).
 \]
 
-<1>1. Let $R\subseteq K$ be any valuation ring containing the subring $\phi(B)$.  Then there is a commutative diagram
+::: pf
+
+::: {.pf-step #s1}
+
+Let $R\subseteq K$ be any valuation ring containing the subring $\phi(B)$.  Then there is a commutative diagram
 \[
 \begin{array}{ccc}
 \Spec K&\longrightarrow&X\\
@@ -53,7 +57,9 @@ K=\operatorname{Frac}(A).
 \Spec R&\longrightarrow&Y.
 \end{array}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The top morphism is induced by the inclusion
 \[
 A\hookrightarrow K.
@@ -67,22 +73,36 @@ After composing with the inclusion $R\hookrightarrow K$, both routes on coordina
 B\xrightarrow{\phi}A\hookrightarrow K.
 \]
 Hence the square commutes.
+
 :::
 
-<1>2. Properness of $f$ gives a lift
+:::
+
+::: {.pf-step #s2}
+
+Properness of $f$ gives a lift
 \[
 \Spec R\longrightarrow X
 \]
-in the diagram of <1>1.
-::: {.proof}
+in the diagram of step [](#s1){.pf-ref}.
+
+::: pf-proof
+
 The valuative criterion for properness applies to every valuation ring and every such commutative square.  Since $f$ is proper, a unique lift exists.
+
 :::
 
-<1>3. The lift in <1>2 forces
+:::
+
+::: {.pf-step #s3}
+
+The lift in step [](#s2){.pf-ref} forces
 \[
 \boxed{A\subseteq R.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The lift corresponds to a ring homomorphism
 \[
 A\longrightarrow R
@@ -95,20 +115,27 @@ equals the original inclusion
 \[
 A\hookrightarrow K,
 \]
-because the lift restricts on the generic point to the top arrow in <1>1.
+because the lift restricts on the generic point to the top arrow in step [](#s1){.pf-ref}.
 
 Therefore every $a\in A$ maps to the same element $a\in K$, now lying in $R$.  Hence $A\subseteq R$.
+
 :::
 
-<1>4. Every element of $A$ is integral over $\phi(B)$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+Every element of $A$ is integral over $\phi(B)$.
+
+::: pf-proof
+
 Hartshorne II.4.11A states that if $C$ is a subring of a field $K$, then the integral closure of $C$ in $K$ is the intersection of all valuation rings of $K$ which contain $C$.
 
 Take
 \[
 C=\phi(B)\subseteq K.
 \]
-By <1>3, every valuation ring $R$ of $K$ containing $C$ also contains $A$.  Therefore
+By step [](#s3){.pf-ref}, every valuation ring $R$ of $K$ containing $C$ also contains $A$.  Therefore
 \[
 A
 \subseteq
@@ -117,20 +144,34 @@ A
 \overline C^{\,K},
 \]
 the integral closure of $C$ in $K$.  Thus every $a\in A$ is integral over $C=\phi(B)$.
+
 :::
 
-<1>5. The $B$-algebra $A$ is finitely generated.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The $B$-algebra $A$ is finitely generated.
+
+::: pf-proof
+
 The morphism $f$ is proper, hence of finite type by definition.  Since both source and target are affine, the affine criterion for finite type gives
 \[
 A=B[a_1,\ldots,a_n]
 \]
 for finitely many elements $a_i\in A$.
+
 :::
 
-<1>6. A finitely generated integral algebra is finite as a module.  Hence $A$ is a finite $B$-module.
-::: {.proof}
-By <1>4, each generator $a_i$ from <1>5 is integral over the image of $B$.  Thus for each $i$ there is a monic equation
+:::
+
+::: {.pf-step #s6}
+
+A finitely generated integral algebra is finite as a module.  Hence $A$ is a finite $B$-module.
+
+::: pf-proof
+
+By step [](#s4){.pf-ref}, each generator $a_i$ from step [](#s5){.pf-ref} is integral over the image of $B$.  Thus for each $i$ there is a monic equation
 \[
 a_i^{d_i}+b_{i,d_i-1}a_i^{d_i-1}+\cdots+b_{i,0}=0
 \]
@@ -143,22 +184,36 @@ a_1^{e_1}\cdots a_n^{e_n},
 0\le e_i<d_i.
 \]
 Hence $A$ is finite as a $B$-module.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 \[
 \boxed{f:X\longrightarrow Y\text{ is finite}.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 For an affine morphism
 \[
 \Spec A\longrightarrow\Spec B,
 \]
-finiteness is exactly the condition that $A$ be finite as a $B$-module.  This is <1>6.
+finiteness is exactly the condition that $A$ be finite as a $B$-module.  This is step [](#s6){.pf-ref}.
+
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Step <1>7 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

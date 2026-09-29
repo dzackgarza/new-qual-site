@@ -68,13 +68,20 @@ That is, if $H$ is simple, is $H^n$ characteristically simple?
 :::
 
 ::: {.solution}
-<1>1. If $A,B\trianglelefteq G$ are distinct minimal normal subgroups, then
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $A,B\trianglelefteq G$ are distinct minimal normal subgroups, then
 \[
 A\cap B=1
 \qquad\text{and}\qquad
 [A,B]=1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The intersection $A\cap B$ is normal in $G$ and is contained in the minimal normal subgroup $A$.
 Hence either
 \[
@@ -90,24 +97,38 @@ Because $A$ and $B$ are both normal in $G$,
 [A,B]\le A\cap B=1.
 \]
 Therefore $A$ and $B$ commute elementwise.
+
 :::
 
-<1>2. Let $N$ be a minimal normal subgroup of the nontrivial finite characteristically simple group $G$.
+:::
+
+::: pf-step
+
+Let $N$ be a minimal normal subgroup of the nontrivial finite characteristically simple group $G$.
 There is a maximal subgroup of the form
 \[
 M=N_1\times\cdots\times N_k,
 \]
 where every $N_i$ is a minimal normal subgroup of $G$ isomorphic to $N$.
-::: {.proof}
+
+::: pf-proof
+
 Since $G$ is finite and nontrivial, it has a minimal nontrivial normal subgroup $N$.
 The one-factor product $N$ belongs to the indicated collection.
 
-By <1>1, distinct minimal normal subgroups intersect trivially and commute, so every product of distinct members of the collection is indeed an internal direct product.
+By step [](#s1){.pf-ref}, distinct minimal normal subgroups intersect trivially and commute, so every product of distinct members of the collection is indeed an internal direct product.
 Since $G$ is finite, there is a member maximal under inclusion; call it $M$.
+
 :::
 
-<1>3. Every minimal normal subgroup $L\trianglelefteq G$ that is isomorphic to $N$ is contained in $M$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every minimal normal subgroup $L\trianglelefteq G$ that is isomorphic to $N$ is contained in $M$.
+
+::: pf-proof
+
 Suppose $L\nleq M$.
 Since $M$ is a product of normal subgroups, $M\trianglelefteq G$.
 Hence
@@ -129,13 +150,20 @@ M\times L,
 which is strictly larger than $M$ and whose factors are all minimal normal subgroups isomorphic to $N$.
 This contradicts maximality of $M$.
 Therefore $L\le M$.
+
 :::
 
-<1>4. The subgroup $M$ is characteristic in $G$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+The subgroup $M$ is characteristic in $G$.
+
+::: pf-proof
+
 Let $\alpha\in\operatorname{Aut}(G)$.
 For each factor $N_i$, the image $\alpha(N_i)$ is again a minimal normal subgroup of $G$ and is isomorphic to $N_i\cong N$.
-By <1>3,
+By step [](#s3){.pf-ref},
 \[
 \alpha(N_i)\le M.
 \]
@@ -153,21 +181,35 @@ Hence
 \alpha(M)=M.
 \]
 Since this holds for every automorphism $\alpha$, the subgroup $M$ is characteristic.
+
 :::
 
-<1>5. We have
+:::
+
+::: {.pf-step #s5}
+
+We have
 \[
 G=M=N_1\times\cdots\times N_k.
 \]
-::: {.proof}
-The subgroup $M$ is nontrivial and characteristic by <1>4. Since $G$ is characteristically simple,
+
+::: pf-proof
+
+The subgroup $M$ is nontrivial and characteristic by step [](#s4){.pf-ref}. Since $G$ is characteristically simple,
 \[
 M=G.
 \]
+
 :::
 
-<1>6. Each factor $N_i$ in <1>5 is simple.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+Each factor $N_i$ in step [](#s5){.pf-ref} is simple.
+
+::: pf-proof
+
 Fix $i$, and write
 \[
 G=N_i\times C,
@@ -188,23 +230,37 @@ K=1
 K=N_i.
 \]
 Thus $N_i$ is simple.
+
 :::
 
-<1>7. Part (a) follows: there is a simple group $H$ and an integer $n\ge1$ such that
+:::
+
+::: {.pf-step #s7}
+
+Part (a) follows: there is a simple group $H$ and an integer $n\ge1$ such that
 \[
 G\cong H^n.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Take $H=N$.
-By construction every factor $N_i$ is isomorphic to $N$, and by <1>6 it is simple.
-Then <1>5 gives
+By construction every factor $N_i$ is isomorphic to $N$, and by step [](#s6){.pf-ref} it is simple.
+Then step [](#s5){.pf-ref} gives
 \[
 G\cong N^k=H^k.
 \]
+
 :::
 
-<1>8. If $H=C_p$ is a cyclic simple group of prime order, then $H^n$ is characteristically simple.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+If $H=C_p$ is a cyclic simple group of prime order, then $H^n$ is characteristically simple.
+
+::: pf-proof
+
 Identify
 \[
 H^n\cong \mathbb F_p^n
@@ -220,15 +276,22 @@ Hence
 K=\mathbb F_p^n=H^n.
 \]
 Thus the only characteristic subgroups are $1$ and $H^n$.
+
 :::
 
-<1>9. Let $H$ be nonabelian simple and set
+:::
+
+::: {.pf-step #s9}
+
+Let $H$ be nonabelian simple and set
 \[
 G=H_1\times\cdots\times H_n,
 \qquad H_i\cong H.
 \]
 Every normal subgroup of $G$ is a product of a subset of the coordinate factors $H_i$.
-::: {.proof}
+
+::: pf-proof
+
 Let $K\trianglelefteq G$.
 Fix $i$.
 If the projection of $K$ to $H_i$ is trivial, then $K$ has no $H_i$-component.
@@ -259,12 +322,19 @@ H_i\le K.
 
 Therefore, for each $i$, either the projection of $K$ to $H_i$ is trivial or $H_i\le K$.
 It follows that $K$ is exactly the product of the coordinate factors on which it has nontrivial projection.
+
 :::
 
-<1>10. If $H$ is nonabelian simple, then $H^n$ is characteristically simple.
-::: {.proof}
+:::
+
+::: {.pf-step #s10}
+
+If $H$ is nonabelian simple, then $H^n$ is characteristically simple.
+
+::: pf-proof
+
 Let $K$ be characteristic in $H^n$.
-In particular $K\trianglelefteq H^n$, so by <1>9 it is a product of some subset of the coordinate factors.
+In particular $K\trianglelefteq H^n$, so by step [](#s9){.pf-ref} it is a product of some subset of the coordinate factors.
 
 Every permutation of the $n$ coordinates is an automorphism of $H^n$.
 Since $K$ is characteristic, its subset of coordinate factors must be invariant under every permutation.
@@ -275,15 +345,29 @@ K=1
 \qquad\text{or}\qquad
 K=H^n.
 \]
+
 :::
 
-<1>11. The converse in part (b) holds for every simple group $H$.
-::: {.proof}
-Every abelian simple group is cyclic of prime order, so the abelian case is <1>8. The nonabelian case is <1>10. Therefore $H^n$ is characteristically simple whenever $H$ is simple.
 :::
 
-<1>12. If $N\trianglelefteq G$ is minimal normal, then $N$ is characteristically simple.
-::: {.proof}
+::: {.pf-step #s11}
+
+The converse in part (b) holds for every simple group $H$.
+
+::: pf-proof
+
+Every abelian simple group is cyclic of prime order, so the abelian case is step [](#s8){.pf-ref}. The nonabelian case is step [](#s10){.pf-ref}. Therefore $H^n$ is characteristically simple whenever $H$ is simple.
+
+:::
+
+:::
+
+::: {.pf-step #s12}
+
+If $N\trianglelefteq G$ is minimal normal, then $N$ is characteristically simple.
+
+::: pf-proof
+
 Let $K$ be characteristic in $N$.
 Since $N\trianglelefteq G$, characteristicity of $K$ in $N$ implies
 \[
@@ -297,19 +381,33 @@ K=1
 K=N.
 \]
 Thus $N$ is characteristically simple.
+
 :::
 
-<1>13. If $N\trianglelefteq G$ is minimal normal, then
+:::
+
+::: {.pf-step #s13}
+
+If $N\trianglelefteq G$ is minimal normal, then
 \[
 N\cong H^n
 \]
 for some simple group $H$ and some $n\ge1$.
-::: {.proof}
-The subgroup $N$ is finite, nontrivial, and characteristically simple by <1>12. Apply part (a), namely <1>7, to the group $N$ itself.
+
+::: pf-proof
+
+The subgroup $N$ is finite, nontrivial, and characteristically simple by step [](#s12){.pf-ref}. Apply part (a), namely step [](#s7){.pf-ref}, to the group $N$ itself.
+
 :::
 
-<1>14. Q.E.D.
-::: {.proof}
-Parts (a), (b), and (c) are <1>7, <1>11, and <1>13, respectively.
 :::
+
+::: pf-qed
+
+Parts (a), (b), and (c) are steps [](#s7){.pf-ref}, [](#s11){.pf-ref} and [](#s13){.pf-ref}, respectively.
+
+:::
+
+:::
+
 :::

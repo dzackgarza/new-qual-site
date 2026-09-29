@@ -40,7 +40,11 @@ $$
 Thus $R_0=L$, $R_{n-1}=a_n+R_n$ for $n\ge1$, and the hypothesis says
 $a_n\le R_n$.
 
-<1>1. Define recursively $s_0=0$, $r_0=t$, and, for $n\ge1$,
+::: pf
+
+::: {.pf-step #s1}
+
+Define recursively $s_0=0$, $r_0=t$, and, for $n\ge1$,
 $$
 \varepsilon_n\coloneqq
 \begin{cases}
@@ -60,7 +64,8 @@ $$
 $$
 for every $n\ge0$.
 
-::: {.proof}
+::: pf-proof
+
 For $n=0$,
 $$
 0<r_0=t<L=R_0.
@@ -89,37 +94,54 @@ r_n
 =R_n.
 $$
 Thus the invariant holds in both cases, and induction proves the claim.
+
 :::
 
-<1>2. The selected partial sums satisfy
+:::
+
+::: {.pf-step #s2}
+
+The selected partial sums satisfy
 $$
 s_n\longrightarrow t.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Because $\sum a_n$ converges, its tails satisfy $R_n\to0$. By
-step <1>1,
+step [](#s1){.pf-ref},
 $$
 0<r_n=t-s_n\le R_n.
 $$
 Hence $r_n\to0$, so $s_n=t-r_n\to t$.
+
 :::
 
-<1>3. The set
+:::
+
+::: {.pf-step #s3}
+
+The set
 $$
 I\coloneqq\{n\ge1:\varepsilon_n=1\}
 $$
 is infinite.
 
-::: {.proof}
+::: pf-proof
+
 Suppose $I$ were finite. Then there would be $N$ such that
 $\varepsilon_n=0$ for every $n>N$, so $s_n=s_N$ and
-$r_n=t-s_N$ for every $n>N$. Step <1>1 gives $r_N>0$, hence this
-eventual constant residual is positive. But step <1>1 also gives
+$r_n=t-s_N$ for every $n>N$. Step [](#s1){.pf-ref} gives $r_N>0$, hence this
+eventual constant residual is positive. But step [](#s1){.pf-ref} also gives
 $r_n\le R_n\to0$, a contradiction. Thus $I$ is infinite.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 I=\{n_1<n_2<n_3<\cdots\},
 $$
@@ -128,22 +150,29 @@ $$
 \boxed{\sum_{i=1}^{\infty}a_{n_i}=t}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For every $k$,
 $$
 \sum_{i=1}^k a_{n_i}=s_{n_k}.
 $$
-Since $n_k\to\infty$, step <1>2 gives
+Since $n_k\to\infty$, step [](#s2){.pf-ref} gives
 $$
 s_{n_k}\longrightarrow t.
 $$
 Therefore the subseries indexed by $I$ converges to $t$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 shows that the selected indices form an infinite subsequence,
-and step <1>4 gives the required sum.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} shows that the selected indices form an infinite subsequence,
+and step [](#s4){.pf-ref} gives the required sum.
+
+:::
+
+:::
+
 :::

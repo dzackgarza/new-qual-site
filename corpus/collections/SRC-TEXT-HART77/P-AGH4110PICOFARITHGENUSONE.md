@@ -35,18 +35,22 @@ This generalizes (II, 6.11.4) and (II, Ex.
 6.7).
 :::
 
-
 ::: {.solution}
 We prove the corrected statement with target $\Pic^0 X$.
 
-<1>1. The canonical divisor $K$ from Exercise IV.1.9 satisfies
+::: pf
+
+::: {.pf-step #s1}
+
+The canonical divisor $K$ from Exercise IV.1.9 satisfies
 $$
 \deg K=0,
 \qquad
 \ell(K)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $p_a(X)=1$, the singular-curve Riemann--Roch formula
 [[P-AGH419RRSINGULAR|Exercise IV.1.9]] gives, for $D=0$,
 $$
@@ -67,12 +71,18 @@ $$
 \deg K.
 $$
 The left-hand side is zero, so $\deg K=0$.
+
 :::
 
-<1>2. An invertible sheaf of negative degree on $X$ has no nonzero global
+:::
+
+::: {.pf-step #s2}
+
+An invertible sheaf of negative degree on $X$ has no nonzero global
 section.
 
-::: {.proof}
+::: pf-proof
+
 Let $\mcl$ be invertible and suppose
 $$
 0\ne s\in H^0(X,\mcl).
@@ -101,14 +111,20 @@ $$
 \ge0.
 $$
 Thus a line bundle of negative degree cannot have a nonzero section.
+
 :::
 
-<1>3. If $E$ is a divisor supported in $X_{\reg}$ with $\deg E=1$, then
+:::
+
+::: {.pf-step #s3}
+
+If $E$ is a divisor supported in $X_{\reg}$ with $\deg E=1$, then
 $$
 \ell(E)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Exercise IV.1.9 gives
 $$
 \ell(E)-\ell(K-E)
@@ -117,14 +133,19 @@ $$
 =
 1.
 $$
-By step <1>1,
+By step [](#s1){.pf-ref},
 $$
 \deg(K-E)=-1.
 $$
-Hence step <1>2 gives $\ell(K-E)=0$, and therefore $\ell(E)=1$.
+Hence step [](#s2){.pf-ref} gives $\ell(K-E)=0$, and therefore $\ell(E)=1$.
+
 :::
 
-<1>4. The assignment
+:::
+
+::: {.pf-step #s4}
+
+The assignment
 $$
 \Phi:X_{\reg}\longrightarrow\Pic^0X,
 \qquad
@@ -132,17 +153,24 @@ P\longmapsto[\mcl(P-P_0)]
 $$
 is well defined.
 
-::: {.proof}
+::: pf-proof
+
 The divisor $P-P_0$ has degree zero. By Exercise IV.1.9(a),
 $$
 \deg\mcl(P-P_0)=0.
 $$
 Thus $\mcl(P-P_0)$ lies in $\Pic^0X$.
+
 :::
 
-<1>5. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The map $\Phi$ is injective.
+
+::: pf-proof
+
 Suppose
 $$
 \mcl(P-P_0)\cong\mcl(Q-P_0)
@@ -153,17 +181,23 @@ $$
 $$
 Thus $P$ and $Q$ are linearly equivalent effective divisors.
 
-By step <1>3,
+By step [](#s3){.pf-ref},
 $$
 \ell(P)=1,
 $$
 so the complete linear system $\abs{P}$ has dimension zero and contains
 only the divisor $P$. Since $Q\in\abs{P}$, we obtain $Q=P$.
+
 :::
 
-<1>6. The map $\Phi$ is surjective.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The map $\Phi$ is surjective.
+
+::: pf-proof
+
 Let $[\mcl]\in\Pic^0X$. By Exercise IV.1.9(c), choose a divisor $D$
 supported in $X_{\reg}$ such that
 $$
@@ -177,7 +211,7 @@ Put
 $$
 E=D+P_0.
 $$
-Then $E$ is supported in $X_{\reg}$ and has degree one. Step <1>3 gives
+Then $E$ is supported in $X_{\reg}$ and has degree one. Step [](#s3){.pf-ref} gives
 $$
 \ell(E)=1,
 $$
@@ -236,9 +270,14 @@ $$
 \Phi(P).
 $$
 Thus $\Phi$ is surjective.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: {.pf-step #s7}
+
+Therefore
 $$
 \boxed{
 X_{\reg}\xrightarrow{\sim}\Pic^0X,
@@ -247,16 +286,25 @@ P\longmapsto\mcl(P-P_0).
 }
 $$
 
-::: {.proof}
-Step <1>4 makes the map well defined, step <1>5 proves injectivity, and
-step <1>6 proves surjectivity.
+::: pf-proof
+
+Step [](#s4){.pf-ref} makes the map well defined, step [](#s5){.pf-ref} proves injectivity, and
+step [](#s6){.pf-ref} proves surjectivity.
+
 :::
 
-<1>8. Q.E.D. for the corrected statement.
-
-::: {.proof}
-Step <1>7 is the required one-to-one correspondence with $\Pic^0X$.
 :::
+
+::: pf-qed
+
+for the corrected statement.
+
+Step [](#s7){.pf-ref} is the required one-to-one correspondence with $\Pic^0X$.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

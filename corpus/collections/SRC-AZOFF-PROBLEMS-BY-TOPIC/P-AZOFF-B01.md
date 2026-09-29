@@ -36,9 +36,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The function $f$ is continuous at $(0,0)$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The function $f$ is continuous at $(0,0)$.
+
+::: pf-proof
+
 For $(x,y)\neq(0,0)$, the inequality
 $$
 2\abs{xy}\leq x^2+y^2
@@ -53,9 +59,14 @@ $$
 $$
 The right-hand side tends to $0=f(0,0)$ as $(x,y)\to(0,0)$. Hence $f$ is
 continuous at the origin.
+
 :::
 
-<1>2. The function $f$ is differentiable at every
+:::
+
+::: {.pf-step #s2}
+
+The function $f$ is differentiable at every
 $$
 (x,y)\neq(0,0),
 $$
@@ -66,7 +77,8 @@ Df(x,y)(h,k)
 \frac{y^3h+x^3k}{(x^2+y^2)^{3/2}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Away from the origin, the denominator
 $$
 \sqrt{x^2+y^2}
@@ -83,12 +95,18 @@ $$
 \frac{x^3}{(x^2+y^2)^{3/2}}.
 $$
 Thus the total derivative has the displayed form.
+
 :::
 
-<1>3. Both first partial derivatives of $f$ exist at $(0,0)$ and equal
+:::
+
+::: {.pf-step #s3}
+
+Both first partial derivatives of $f$ exist at $(0,0)$ and equal
 $0$.
 
-::: {.proof}
+::: pf-proof
+
 Along either coordinate axis, $f$ is identically zero:
 $$
 f(h,0)=0,
@@ -107,12 +125,18 @@ and similarly
 $$
 \frac{\partial f}{\partial y}(0,0)=0.
 $$
+
 :::
 
-<1>4. The function $f$ is not differentiable at $(0,0)$.
+:::
 
-::: {.proof}
-If $f$ were differentiable at the origin, step <1>3 would force its derivative
+::: {.pf-step #s4}
+
+The function $f$ is not differentiable at $(0,0)$.
+
+::: pf-proof
+
+If $f$ were differentiable at the origin, step [](#s3){.pf-ref} would force its derivative
 there to be the zero linear map. Differentiability would then imply
 $$
 \frac{\abs{f(h,k)}}{\sqrt{h^2+k^2}}
@@ -137,9 +161,14 @@ $$
 $$
 This does not tend to zero as $t\to0$. Hence $f$ is not differentiable at
 the origin.
+
 :::
 
-<1>5. Consequently,
+:::
+
+::: {.pf-step #s5}
+
+Consequently,
 $$
 \boxed{
 f\text{ is continuous on }\RR^2
@@ -147,17 +176,24 @@ f\text{ is continuous on }\RR^2
 }
 $$
 
-::: {.proof}
-Step <1>1 proves continuity at the only point where the defining formula is
+::: pf-proof
+
+Step [](#s1){.pf-ref} proves continuity at the only point where the defining formula is
 not manifestly continuous; away from the origin continuity follows from
-step <1>2. Step <1>2 proves differentiability off the origin, while step
-<1>4 rules it out at the origin.
+step [](#s2){.pf-ref}. Step [](#s2){.pf-ref} proves differentiability off the origin, while step
+[](#s4){.pf-ref} rules it out at the origin.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 gives the requested continuity and differentiability
+::: pf-qed
+
+Step [](#s5){.pf-ref} gives the requested continuity and differentiability
 classification.
+
 :::
+
+:::
+
 :::

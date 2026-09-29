@@ -40,8 +40,14 @@ Fix $x\in M$ and define
 I_x:=\{a\in A:ax\in N\}.
 \]
 
-<1>1. The subset $I_x$ is an ideal of $A$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The subset $I_x$ is an ideal of $A$.
+
+::: pf-proof
+
 If $a,b\in I_x$, then
 \[
 (a-b)x=ax-bx\in N,
@@ -51,10 +57,17 @@ so $a-b\in I_x$. If $r\in A$ and $a\in I_x$, then
 (ra)x=r(ax)\in N,
 \]
 so $ra\in I_x$. Thus $I_x\trianglelefteq A$.
+
 :::
 
-<1>2. For each $i$, some power of $a_i$ lies in $I_x$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+For each $i$, some power of $a_i$ lies in $I_x$.
+
+::: pf-proof
+
 The equality
 \[
 S_i^{-1}M=S_i^{-1}N
@@ -81,11 +94,18 @@ Hence
 a_i\in\sqrt{I_x}
 \]
 for every $i$.
+
 :::
 
-<1>3. The radical of $I_x$ is the whole ring $A$.
-::: {.proof}
-By <1>2, the ideal $\sqrt{I_x}$ contains every generator $a_i$. Since
+:::
+
+::: {.pf-step #s3}
+
+The radical of $I_x$ is the whole ring $A$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the ideal $\sqrt{I_x}$ contains every generator $a_i$. Since
 \[
 (a_1,\ldots,a_n)=A,
 \]
@@ -97,11 +117,18 @@ Therefore
 \[
 \sqrt{I_x}=A.
 \]
+
 :::
 
-<1>4. The element $x$ lies in $N$.
-::: {.proof}
-By <1>3,
+:::
+
+::: {.pf-step #s4}
+
+The element $x$ lies in $N$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 \[
 1\in\sqrt{I_x}.
 \]
@@ -113,10 +140,23 @@ Therefore
 \[
 x=1\cdot x\in N.
 \]
+
 :::
 
-<1>5. Consequently $N=M$.
-::: {.proof}
-The element $x\in M$ was arbitrary, so <1>4 gives $M\subseteq N$. The reverse inclusion is part of the hypothesis that $N$ is a submodule of $M$. Hence $N=M$.
 :::
+
+::: pf-step
+
+Consequently $N=M$.
+
+::: pf-proof
+
+The element $x\in M$ was arbitrary, so step [](#s4){.pf-ref} gives $M\subseteq N$. The reverse inclusion is part of the hypothesis that $N$ is a submodule of $M$. Hence $N=M$.
+
+:::
+
+:::
+
+:::
+
 :::

@@ -48,40 +48,57 @@ $$
 D_r=\{z\in\CC:\abs{z}<r\}.
 $$
 
-<1>1. Schwarz's lemma states: if $\varphi:\DD\to\DD$ is holomorphic and
+::: pf
+
+::: {.pf-step #s1}
+
+Schwarz's lemma states: if $\varphi:\DD\to\DD$ is holomorphic and
 $\varphi(0)=0$, then
 $$
 \abs{\varphi(z)}\leq\abs{z}
 $$
 for every $z\in\DD$.
 
-::: {.proof}
+::: pf-proof
+
 This is Schwarz's lemma; the source's first part asks for its statement.
+
 :::
 
-<1>2. The inverse map
+:::
+
+::: {.pf-step #s2}
+
+The inverse map
 $$
 f^{-1}:f(D)\longrightarrow D
 $$
 is holomorphic.
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is one-to-one and holomorphic, it is a conformal bijection from
 $D$ onto the domain $f(D)$. In particular its derivative does not vanish,
 so the holomorphic inverse function theorem gives a holomorphic local
 inverse at every point of $f(D)$. These local inverses agree because $f$ is
 globally one-to-one, and therefore form the holomorphic inverse $f^{-1}$.
+
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #s3}
+
+Define
 $$
 \varphi=f^{-1}\circ g.
 $$
 Then $\varphi:\DD\to\DD$ is holomorphic and satisfies $\varphi(0)=0$.
 
-::: {.proof}
+::: pf-proof
+
 The hypothesis $g(D)\subseteq f(D)$ makes the composition
-well-defined. Step <1>2 shows that it is holomorphic. Moreover,
+well-defined. Step [](#s2){.pf-ref} shows that it is holomorphic. Moreover,
 $$
 \varphi(0)
 =
@@ -91,16 +108,22 @@ f^{-1}(f(0))
 =
 0.
 $$
+
 :::
 
-<1>4. For every $0<r<1$,
+:::
+
+::: {.pf-step #s4}
+
+For every $0<r<1$,
 $$
 \varphi(D_r)\subseteq D_r.
 $$
 
-::: {.proof}
-If $z\in D_r$, then $\abs{z}<r$. By step <1>1 applied to the function in
-step <1>3,
+::: pf-proof
+
+If $z\in D_r$, then $\abs{z}<r$. By step [](#s1){.pf-ref} applied to the function in
+step [](#s3){.pf-ref},
 $$
 \abs{\varphi(z)}
 \leq
@@ -109,21 +132,27 @@ $$
 r.
 $$
 Thus $\varphi(z)\in D_r$.
+
 :::
 
-<1>5. For every $0<r<1$,
+:::
+
+::: {.pf-step #s5}
+
+For every $0<r<1$,
 $$
 \boxed{
 g(D_r)\subseteq f(D_r).
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 By the definition of $\varphi$,
 $$
 g=f\circ\varphi.
 $$
-Therefore step <1>4 gives
+Therefore step [](#s4){.pf-ref} gives
 $$
 g(D_r)
 =
@@ -131,13 +160,19 @@ f(\varphi(D_r))
 \subseteq
 f(D_r).
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required inclusion.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required inclusion.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark}

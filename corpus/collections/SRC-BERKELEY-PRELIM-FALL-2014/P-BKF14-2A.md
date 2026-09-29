@@ -56,9 +56,14 @@ $$
 Number the four displayed inequalities in the order in which they occur in
 the problem.
 
-<1>1. Inequality 1 is false.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Inequality 1 is false.
+
+::: pf-proof
+
 For $n\ge1$, define
 $$
 f_n(x)\coloneqq
@@ -84,12 +89,18 @@ $$
 \int_0^1\limsup_{n\to\infty}f_n(x)\,dx,
 $$
 contradicting inequality 1.
+
 :::
 
-<1>2. Inequality 3 is false.
+:::
 
-::: {.proof}
-Use the same sequence as in step <1>1. Since every integral is $1$ and
+::: {.pf-step #s2}
+
+Inequality 3 is false.
+
+::: pf-proof
+
+Use the same sequence as in step [](#s1){.pf-ref}. Since every integral is $1$ and
 $f_n(x)\to0$ pointwise,
 $$
 \liminf_{n\to\infty}\int_0^1f_n(x)\,dx=1
@@ -105,11 +116,17 @@ $$
 \int_0^1\liminf_n f_n
 $$
 fails.
+
 :::
 
-<1>3. Inequality 2 is false.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+Inequality 2 is false.
+
+::: pf-proof
+
 Define
 $$
 f_n(x)\coloneqq
@@ -155,19 +172,31 @@ $$
 \frac34,
 $$
 contradicting inequality 2.
+
 :::
 
-<1>4. The first three inequalities therefore admit counterexamples.
+:::
 
-::: {.proof}
-Steps <1>1, <1>2, and <1>3 provide counterexamples to inequalities 1,
+::: {.pf-step #s4}
+
+The first three inequalities therefore admit counterexamples.
+
+::: pf-proof
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} provide counterexamples to inequalities 1,
 3, and 2, respectively, which are three of the four displayed
 inequalities.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 supplies the three requested counterexamples.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} supplies the three requested counterexamples.
+
+:::
+
+:::
+
 :::

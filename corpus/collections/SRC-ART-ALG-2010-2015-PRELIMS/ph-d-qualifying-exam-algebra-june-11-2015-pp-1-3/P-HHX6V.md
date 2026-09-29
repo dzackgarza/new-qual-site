@@ -41,9 +41,14 @@ A submodule $N$ of the $D$-module $M$ is said to be pure in $M$ just in case for
 For an element $v$ of a $D$-module, write
 $\operatorname{ann}_D(v)=\{a\in D:av=0\}$.
 
-<1>1. A direct summand is pure, proving part (a).
+::: pf
 
-::: {.proof}
+::: pf-step
+
+A direct summand is pure, proving part (a).
+
+::: pf-proof
+
 Suppose $M=N\oplus N'$ and let $\pi:M\to N$ be the projection
 onto $N$. It is $D$-linear and restricts to the identity on $N$.
 If $y\in N$, $a\in D$, and $ax=y$ has a solution $x\in M$,
@@ -52,12 +57,18 @@ $$
 a\pi(x)=\pi(ax)=\pi(y)=y.
 $$
 Thus $\pi(x)\in N$ solves the same equation, as required.
+
 :::
 
-<1>2. A coset with principal annihilator has a representative
+:::
+
+::: {.pf-step #s2}
+
+A coset with principal annihilator has a representative
 with that same annihilator, proving part (b).
 
-::: {.proof}
+::: pf-proof
+
 Since $d\in\operatorname{ann}_D(z+N)$, the element $dz$ lies
 in $N$. The equation $dx=dz$ has the solution $z\in M$.
 Purity supplies a solution $n\in N$. Put $w=z-n$.
@@ -70,12 +81,18 @@ $a\in\operatorname{ann}_D(z+N)=(d)$.
 This proves the reverse inclusion and hence
 $\operatorname{ann}_D(w)=(d)$.
 No assumption that $d$ is nonzero or a nonunit is needed.
+
 :::
 
-<1>3. Under the hypotheses in part (c), the quotient map
+:::
+
+::: pf-step
+
+Under the hypotheses in part (c), the quotient map
 $q:M\to M/N$ admits a $D$-linear section.
 
-::: {.proof}
+::: pf-proof
+
 The quotient $Q=M/N$ is finitely generated, by the images of a
 finite generating set of $M$. It is torsion: a nonzero scalar
 annihilating a representative also annihilates its coset.
@@ -86,7 +103,7 @@ $$
 for nonzero nonunits $d_i\in D$ [@DF04]. The empty sum is
 allowed when $Q=0$. Let $u_i\in Q$ correspond to $1$ in the
 $i$th cyclic summand, so $\operatorname{ann}_D(u_i)=(d_i)$.
-Choose $z_i\in M$ with $q(z_i)=u_i$. By step <1>2, there is
+Choose $z_i\in M$ with $q(z_i)=u_i$. By step [](#s2){.pf-ref}, there is
 $w_i\in M$ with $q(w_i)=u_i$ and
 $\operatorname{ann}_D(w_i)=(d_i)$.
 
@@ -102,11 +119,17 @@ do not change the proposed value of $s$. Thus $s$ is well-defined
 and $D$-linear. Moreover $q(s(u_i))=u_i$ for all generators,
 so $q\circ s=\operatorname{id}_Q$. For $Q=0$, the zero map is
 the required section.
+
 :::
 
-<1>4. The section yields the direct summand in part (c).
+:::
 
-::: {.proof}
+::: pf-step
+
+The section yields the direct summand in part (c).
+
+::: pf-proof
+
 For every $m\in M$,
 $$
 m=(m-s(q(m)))+s(q(m)),
@@ -115,5 +138,11 @@ where the first term lies in $\ker q=N$ and the second in
 $s(Q)$. If $s(u)\in N$, applying $q$ gives
 $u=q(s(u))=0$, and hence $s(u)=0$.
 Therefore $N\cap s(Q)=0$ and $M=N\oplus s(Q)$.
+
 :::
+
+:::
+
+:::
+
 :::

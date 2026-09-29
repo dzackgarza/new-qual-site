@@ -36,11 +36,17 @@ Let
 N_3=\RP^2\#\RP^2\#\RP^2.
 \]
 
-<1>1. The surface $N_3$ has a CW structure with one $0$-cell, three $1$-cells $a,b,c$, and one $2$-cell whose attaching word is
+::: pf
+
+::: {.pf-step #s1}
+
+The surface $N_3$ has a CW structure with one $0$-cell, three $1$-cells $a,b,c$, and one $2$-cell whose attaching word is
 \[
 a^2b^2c^2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Remove the interior of a disk from $N_3$.
 The resulting nonorientable surface $N_{3,1}$ is a disk with three twisted bands attached, one for each projective-plane summand.
 Collapse the disk and the transverse directions in the three bands onto their cores.
@@ -57,9 +63,14 @@ a^2b^2c^2
 in $\pi_1(N_{3,1})$.
 Gluing back the removed disk attaches one $2$-cell along precisely this boundary loop.
 Hence $N_3$ has the asserted CW structure.
+
 :::
 
-<1>2. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 \pi_1(\RP^2\#\RP^2\#\RP^2)
@@ -67,8 +78,10 @@ Hence $N_3$ has the asserted CW structure.
 \left\langle a,b,c\ \middle|\ a^2b^2c^2=1\right\rangle .
 }
 \]
-::: {.proof}
-The $1$-skeleton in <1>1 is a wedge of three circles, so its fundamental group is the free group
+
+::: pf-proof
+
+The $1$-skeleton in step [](#s1){.pf-ref} is a wedge of three circles, so its fundamental group is the free group
 \[
 F(a,b,c).
 \]
@@ -80,5 +93,11 @@ The Seifert–van Kampen theorem therefore gives
 F(a,b,c)/\!\left\langle\!\left\langle a^2b^2c^2\right\rangle\!\right\rangle,
 \]
 which is exactly the displayed presentation.
+
 :::
+
+:::
+
+:::
+
 :::

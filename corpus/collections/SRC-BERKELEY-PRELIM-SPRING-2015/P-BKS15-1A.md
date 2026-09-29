@@ -35,7 +35,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. One has the identity
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has the identity
 $$
 \frac{x^4(1-x)^4}{1+x^2}
 =
@@ -44,7 +49,8 @@ x^6-4x^5+5x^4-4x^2+4
 \frac4{1+x^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Multiplying the right-hand side by $1+x^2$ gives
 $$
 \begin{aligned}
@@ -60,9 +66,14 @@ x^4(1-x)^4.
 \end{aligned}
 $$
 Divide by $1+x^2$.
+
 :::
 
-<1>2. The polynomial part integrates to
+:::
+
+::: {.pf-step #s2}
+
+The polynomial part integrates to
 $$
 \int_0^1
 \left(
@@ -72,7 +83,8 @@ x^6-4x^5+5x^4-4x^2+4
 \frac{22}{7}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Termwise integration gives
 $$
 \begin{aligned}
@@ -93,16 +105,22 @@ $$
 \frac{22}{7}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 4\int_0^1\frac{dx}{1+x^2}
 =
 \pi.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 \frac{d}{dx}\arctan x
@@ -119,9 +137,14 @@ $$
 =
 \pi.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \int_0^1
@@ -131,12 +154,18 @@ $$
 }.
 $$
 
-::: {.proof}
-Integrate the identity in step <1>1 and apply steps <1>2 and <1>3. This
+::: pf-proof
+
+Integrate the identity in step [](#s1){.pf-ref} and apply steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. This
 proves part (a).
+
 :::
 
-<1>5. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s5}
+
+For every $x\in[0,1]$,
 $$
 0
 \leq
@@ -145,7 +174,8 @@ x(1-x)
 \frac14.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Complete the square:
 $$
 x(1-x)
@@ -155,9 +185,14 @@ x(1-x)
 \left(x-\frac12\right)^2.
 $$
 Nonnegativity follows from $0\leq x\leq1$.
+
 :::
 
-<1>6. For every $x\in[0,1]$,
+:::
+
+::: {.pf-step #s6}
+
+For every $x\in[0,1]$,
 $$
 0
 \leq
@@ -167,8 +202,9 @@ $$
 $$
 and the integrand is positive for $0<x<1$.
 
-::: {.proof}
-By step <1>5,
+::: pf-proof
+
+By step [](#s5){.pf-ref},
 $$
 x^4(1-x)^4
 =
@@ -185,9 +221,14 @@ $$
 The upper inequality is strict: equality in the numerator bound requires
 $x=1/2$, where $1+x^2>1$; at the points where the denominator equals
 $1$, the numerator is $0$. Positivity on $(0,1)$ is immediate.
+
 :::
 
-<1>7. Consequently,
+:::
+
+::: {.pf-step #s7}
+
+Consequently,
 $$
 \boxed{
 0
@@ -198,12 +239,13 @@ $$
 }.
 $$
 
-::: {.proof}
-By step <1>4,
+::: pf-proof
+
+By step [](#s4){.pf-ref},
 $$
 \frac{22}{7}-\pi
 $$
-is the integral of the function in step <1>6 over an interval of length
+is the integral of the function in step [](#s6){.pf-ref} over an interval of length
 $1$. Its strict positivity gives the left inequality, while its strict
 pointwise upper bound gives
 $$
@@ -214,11 +256,17 @@ $$
 \frac1{256}.
 $$
 This proves part (b).
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>4 proves part (a), and step <1>7 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} proves part (a), and step [](#s7){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

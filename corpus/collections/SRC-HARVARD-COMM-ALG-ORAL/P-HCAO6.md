@@ -31,8 +31,15 @@ Show that $a$ is irreducible if and only if the ideal $(a)$ is maximal.
 :::
 
 ::: {.solution}
-<1>1. If $a$ is irreducible, then $(a)$ is maximal.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $a$ is irreducible, then $(a)$ is maximal.
+
+::: pf-proof
+
 Suppose
 \[
 (a)\subseteq I\subseteq R.
@@ -44,10 +51,17 @@ Because $a$ is irreducible, either $b$ or $c$ is a unit. If $b$ is a unit,
 then $I=(b)=R$. If $c$ is a unit, then $b$ is associate to $a$, so
 $I=(b)=(a)$. Thus no proper ideal lies strictly between $(a)$ and $R$, and
 $(a)$ is maximal.
+
 :::
 
-<1>2. If $(a)$ is maximal, then $a$ is irreducible.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $(a)$ is maximal, then $a$ is irreducible.
+
+::: pf-proof
+
 Suppose
 \[
 a=bc.
@@ -66,5 +80,11 @@ a=auc.
 Since $R$ is a domain and $a\ne0$, cancellation yields $uc=1$, so $c$ is a
 unit. Therefore every factorization of $a$ has a unit factor, and $a$ is
 irreducible.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -36,9 +36,14 @@ Suppose that $f ( i ) = 1 / 2$ . Determine the maximal possible value of $| f ^ 
 ::: {.solution}
 The maximum is $\boxed{3/8}$.
 
-<1>1. Normalize both the source and the target to a disk map fixing zero.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Normalize both the source and the target to a disk map fixing zero.
+
+::: pf-proof
+
 The maps
 $$
 \phi(z)=\frac{z-i}{z+i},\qquad
@@ -64,11 +69,17 @@ $$
 and the analogous identity holds for the inverse.
 Therefore $F=T\circ f\circ\psi$ maps $D$ holomorphically
 into $D$ and satisfies $F(0)=0$.
+
 :::
 
-<1>2. Schwarz's lemma gives the numerical bound.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+Schwarz's lemma gives the numerical bound.
+
+::: pf-proof
+
 Direct differentiation yields $\psi'(0)=2i$ and
 $T'(1/2)=4/3$. The chain rule gives
 $$
@@ -78,11 +89,17 @@ Schwarz's lemma implies $|F'(0)|\leq1$ [@SS03]. Hence
 $$
 |f'(i)|\leq\frac38.
 $$
+
 :::
 
-<1>3. The bound is attained, and the extremizers are explicit.
+:::
 
-::: {.proof}
+::: pf-step
+
+The bound is attained, and the extremizers are explicit.
+
+::: pf-proof
+
 For any $\lambda\in\mathbb C$ with $|\lambda|=1$, define
 $$
 f_\lambda(z)=T^{-1}(\lambda\phi(z))
@@ -90,7 +107,7 @@ f_\lambda(z)=T^{-1}(\lambda\phi(z))
 $$
 This is a holomorphic map $H\to D$ with $f_\lambda(i)=1/2$.
 Its normalized map is $F(w)=\lambda w$, so the derivative
-identity in step <1>2 gives $|f_\lambda'(i)|=3/8$.
+identity in step [](#s2){.pf-ref} gives $|f_\lambda'(i)|=3/8$.
 For example $\lambda=1$ gives $f_1(z)=(3z-i)/(3z+i)$.
 
 Conversely, equality in the derivative bound forces
@@ -98,5 +115,11 @@ $|F'(0)|=1$, so the equality case of Schwarz's lemma
 gives $F(w)=\lambda w$ for some $|\lambda|=1$ [@SS03].
 Undoing the two normalizations gives exactly $f_\lambda$.
 This proves attainability and the asserted maximum.
+
 :::
+
+:::
+
+:::
+
 :::

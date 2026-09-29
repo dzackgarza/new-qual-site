@@ -33,8 +33,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Rewrite the oscillatory factor.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Rewrite the oscillatory factor.
+
+::: pf-proof
+
 The identity
 \[
 \sin^2(nx)=\frac{1-\cos(2nx)}2
@@ -46,10 +53,17 @@ gives
 -\frac12\int_{\mathbb R}g(x)\cos(2nx)\,dx.
 \]
 The first integral is $3$, so it remains to control the oscillatory term.
+
 :::
 
-<1>2. Apply the Riemann--Lebesgue lemma.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply the Riemann--Lebesgue lemma.
+
+::: pf-proof
+
 Because $g\in L^1(\mathbb R)$, the Riemann--Lebesgue lemma implies
 \[
 \int_{\mathbb R}g(x)e^{2inx}\,dx\longrightarrow0.
@@ -63,5 +77,11 @@ Therefore
 \boxed{
 \lim_{n\to\infty}\int_{\mathbb R}g(x)\sin^2(nx)\,dx=\frac32.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

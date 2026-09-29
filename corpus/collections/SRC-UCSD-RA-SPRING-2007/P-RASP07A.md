@@ -31,8 +31,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Integrate the pointwise lower bound on the superlevel set.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Integrate the pointwise lower bound on the superlevel set.
+
+::: pf-proof
+
 Let
 \[
 E_r:=\{x\in X:|f(x)|>r\}.
@@ -55,5 +62,11 @@ Dividing by $r^p$ gives
 \le \frac{\|f\|_p^p}{r^p}
 =\left(\frac{\|f\|_p}{r}\right)^p.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

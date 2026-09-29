@@ -40,12 +40,18 @@ Then for any $X$, use induction on the dimension $n$: make $X$ birational to a h
 :::
 
 ::: {.solution}
-<1>1. For every integer $n\ge1$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $n\ge1$,
 $$
 \abs{\AA^n}=\abs{\PP^n}=\abs{k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The algebraically closed field $k$ is infinite.
 For every finite $n\ge1$, finite Cartesian powers of an infinite set have the same cardinality as the set itself, so
 $$
@@ -63,28 +69,40 @@ $$
 \abs{\PP^n}=\abs{k}
 $$
 as well.
+
 :::
 
-<1>2. Let $X$ be a variety of dimension $d\ge1$. Then
+:::
+
+::: {.pf-step #s2}
+
+Let $X$ be a variety of dimension $d\ge1$. Then
 $$
 \abs{X}\le\abs{k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 By definition, $X$ is quasi-projective, so it is a locally closed subset of some projective space $\PP^N$.
 Hence
 $$
 \abs{X}\le\abs{\PP^N}=\abs{k}
 $$
-by step <1>1.
+by step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. The same variety satisfies
+:::
+
+::: {.pf-step #s3}
+
+The same variety satisfies
 $$
 \abs{X}\ge\abs{k}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose a nonempty affine open subset $U\subseteq X$.
 Because $X$ is irreducible, every nonempty open subset has the same function field and hence the same dimension, so
 $$
@@ -112,21 +130,33 @@ Therefore
 $$
 \abs{X}\ge\abs{U}\ge\abs{\AA^d}=\abs{k}.
 $$
+
 :::
 
-<1>4. Every positive-dimensional variety has cardinality
+:::
+
+::: {.pf-step #s4}
+
+Every positive-dimensional variety has cardinality
 $$
 \boxed{\abs{X}=\abs{k}}.
 $$
 
-::: {.proof}
-Combine steps <1>2 and <1>3.
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}.
 This proves (a).
+
 :::
 
-<1>5. Every curve over $k$ has the cofinite topology on its set of closed points.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+Every curve over $k$ has the cofinite topology on its set of closed points.
+
+::: pf-proof
+
 Let $C$ be a curve and let $Z\subsetneq C$ be closed.
 Write $Z$ as the finite union of its irreducible components; this is possible because varieties are Noetherian.
 Every irreducible component of $Z$ is a proper irreducible closed subset of the one-dimensional irreducible variety $C$, so it has dimension zero.
@@ -135,11 +165,17 @@ Thus every proper closed subset of $C$ is finite.
 
 Conversely, every point is closed over the algebraically closed field $k$, so every finite subset is closed.
 Hence the closed subsets of $C$ are exactly $C$ and the finite subsets.
+
 :::
 
-<1>6. Any two curves over $k$ are homeomorphic.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Any two curves over $k$ are homeomorphic.
+
+::: pf-proof
+
 Let $C$ and $D$ be curves.
 By part (a),
 $$
@@ -149,15 +185,21 @@ so choose a bijection
 $$
 b:C\to D.
 $$
-By step <1>5, both spaces carry the cofinite topology.
+By step [](#s5){.pf-ref}, both spaces carry the cofinite topology.
 A bijection carries finite sets to finite sets, so both $b$ and $b^{-1}$ preserve closed sets.
 Therefore $b$ is a homeomorphism.
 This proves (b).
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove (a), and steps <1>5--<1>6 prove (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a), and steps [](#s5){.pf-ref} and [](#s6){.pf-ref} prove (b).
+
+:::
+
+:::
+
 :::

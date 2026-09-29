@@ -30,7 +30,12 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. One has
+
+::: pf
+
+::: {.pf-step #s1}
+
+One has
 $$
 \int_0^\infty\frac{x-\sin x}{x^3}\,dx
 =
@@ -38,7 +43,8 @@ $$
 \int_0^\infty\frac{1-\cos x}{x^2}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Integrate by parts first on $[\varepsilon,R]$:
 $$
 \begin{aligned}
@@ -66,16 +72,22 @@ $$
 $$
 is bounded near $0$ and is $O(x^{-2})$ at infinity, so its improper
 integral converges. Taking the two limits proves the identity.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \int_0^\infty\frac{1-\cos x}{x^2}\,dx
 =
 \int_0^\infty\frac{\sin x}{x}\,dx.
 $$
 
-::: {.proof}
+::: pf-proof
+
 On $[\varepsilon,R]$, another integration by parts gives
 $$
 \int_\varepsilon^R\frac{1-\cos x}{x^2}\,dx
@@ -93,16 +105,22 @@ $$
 at $0$ and is bounded at infinity. The integral of $\sin x/x$
 converges by Dirichlet's test, so passage to the improper limits is
 valid.
+
 :::
 
-<1>3. The Dirichlet integral is
+:::
+
+::: {.pf-step #s3}
+
+The Dirichlet integral is
 $$
 \int_0^\infty\frac{\sin x}{x}\,dx
 =
 \frac\pi2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $a>0$, define
 $$
 D(a)
@@ -164,9 +182,14 @@ $$
 $$
 Taking $a\downarrow0$ in the explicit formula for $D(a)$ yields
 $\pi/2$.
+
 :::
 
-<1>4. Hence
+:::
+
+::: {.pf-step #s4}
+
+Hence
 $$
 \boxed{
 \int_0^\infty\frac{x-\sin x}{x^3}\,dx
@@ -175,13 +198,20 @@ $$
 }.
 $$
 
-::: {.proof}
-Combine steps <1>1--<1>3.
+::: pf-proof
+
+Combine steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref}.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested evaluation.
+
+:::
+
+:::
+
 :::

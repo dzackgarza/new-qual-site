@@ -49,7 +49,11 @@ n=\sum_{j=0}^N\varepsilon_j2^j,
 \varepsilon_N=1.
 $$
 
-<1>1. For every positive integer $m$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every positive integer $m$,
 $$
 v_2(m!)
 =
@@ -57,7 +61,8 @@ v_2(m!)
 \left\lfloor\frac{m}{2^r}\right\rfloor.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Each integer in $\{1,\ldots,m\}$ contributes one factor of $2$ for
 each $r\geq1$ for which it is divisible by $2^r$. There are exactly
 $$
@@ -66,16 +71,25 @@ $$
 multiples of $2^r$ in this set. Summing these contributions over $r$
 counts every factor of $2$ in $m!$ exactly once. Only finitely many
 terms are nonzero.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 v_2(c_n)
 =
 \sum_{j=0}^N\varepsilon_j.
 $$
 
-<2>1. One has
+::: pf-proof
+
+::: {.pf-step #s2-1}
+
+One has
 $$
 v_2(c_n)
 =
@@ -87,12 +101,13 @@ v_2(c_n)
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 c_n=\frac{(2n)!}{(n!)^2},
 $$
-step <1>1 gives
+step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 v_2(c_n)
@@ -112,9 +127,14 @@ v_2(c_n)
 \right).
 \end{aligned}
 $$
+
 :::
 
-<2>2. For every $j\geq0$,
+:::
+
+::: {.pf-step #s2-2}
+
+For every $j\geq0$,
 $$
 \left\lfloor\frac{n}{2^j}\right\rfloor
 -
@@ -123,7 +143,8 @@ $$
 \varepsilon_j.
 $$
 
-::: {.proof}
+::: pf-proof
+
 From the binary expansion,
 $$
 \left\lfloor\frac{n}{2^j}\right\rfloor
@@ -139,42 +160,63 @@ $$
 \sum_{k=j+1}^N\varepsilon_k2^{k-j-1}.
 $$
 Subtracting twice the second equality from the first gives the claim.
+
 :::
 
-<2>3. One has
+:::
+
+::: {.pf-step #s2-3}
+
+One has
 $$
 v_2(c_n)
 =
 \sum_{j=0}^N\varepsilon_j.
 $$
 
-::: {.proof}
-In step <2>1, set $j=r-1$ and apply step <2>2 term by term. For
+::: pf-proof
+
+In step [](#s2-1){.pf-ref}, set $j=r-1$ and apply step [](#s2-2){.pf-ref} term by term. For
 $j>N$, the binary digit $\varepsilon_j$ is zero, so the resulting sum
 is exactly
 $$
 \sum_{j=0}^N\varepsilon_j.
 $$
+
 :::
 
-<2>4. Q.E.D.
-
-::: {.proof}
-Step <2>3 proves the claim of step <1>2.
 :::
 
-<1>3. (a) The coefficient $c_n$ is even.
+::: pf-qed
 
-::: {.proof}
+Step [](#s2-3){.pf-ref} proves the claim of step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+
+(a) The coefficient $c_n$ is even.
+
+::: pf-proof
+
 Since $n>0$, its binary expansion has at least one digit equal to $1$.
-Thus step <1>2 gives
+Thus step [](#s2){.pf-ref} gives
 $$
 v_2(c_n)\geq1,
 $$
 so $2$ divides $c_n$.
+
 :::
 
-<1>4. (b) One has
+:::
+
+::: {.pf-step #s4}
+
+(b) One has
 $$
 \boxed{
 4\mid c_n
@@ -183,8 +225,9 @@ n\text{ is not a power of }2
 }.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 4\mid c_n
 \quad\Longleftrightarrow\quad
@@ -195,11 +238,17 @@ $$
 A positive integer has exactly one nonzero binary digit if and only if it
 is a power of $2$. Hence the binary digit sum is at least two exactly
 when $n$ is not a power of $2$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves part (a), and step <1>4 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves part (a), and step [](#s4){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

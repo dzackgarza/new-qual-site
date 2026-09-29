@@ -35,7 +35,12 @@ Let $G$ be a group of order $p^k m$, where $p$ is a prime not dividing $m$.
 :::
 
 ::: {.solution}
-<1>1. A Sylow $p$-subgroup is a subgroup of order $p^k$.
+
+::: pf
+
+::: pf-step
+
+A Sylow $p$-subgroup is a subgroup of order $p^k$.
 Sylow's theorems assert that such subgroups exist, that every
 $p$-subgroup is contained in one, and that all Sylow $p$-subgroups
 are conjugate. Their number $n_p$ satisfies
@@ -46,10 +51,15 @@ These are the Sylow theorems in their finite-group form [@DF04].
 In particular, a unique Sylow subgroup is normal, because conjugation
 preserves its order.
 
-<1>2. A group of order $132=2^2\cdot3\cdot11$ has a nontrivial
+:::
+
+::: pf-step
+
+A group of order $132=2^2\cdot3\cdot11$ has a nontrivial
 proper normal subgroup.
 
-::: {.proof}
+::: pf-proof
+
 The number $n_{11}$ divides $12$ and is $1$ modulo $11$, so
 $n_{11}=1$ or $12$. In the first case the unique subgroup of
 order $11$ is the required normal subgroup.
@@ -78,5 +88,11 @@ has singleton orbits. Thus $\ker\varphi\ne G$ as well.
 Being the kernel of a homomorphism, it is a normal subgroup.
 Every case has produced a nontrivial proper normal subgroup,
 so no group of order $132$ is simple.
+
 :::
+
+:::
+
+:::
+
 :::

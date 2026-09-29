@@ -34,8 +34,14 @@ Assume $K\subseteq F$, with $F$ algebraically closed, and set
 E=\{a\in F:a\text{ is algebraic over }K\}.
 \]
 
-<1>1. The set $E$ is a subfield of $F$ containing $K$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The set $E$ is a subfield of $F$ containing $K$.
+
+::: pf-proof
+
 Every element of $K$ is algebraic over $K$, so $K\subseteq E$. If
 $a,b\in E$, then $K(a,b)/K$ is finite. Hence every element of $K(a,b)$ is
 algebraic over $K$. In particular,
@@ -43,16 +49,30 @@ algebraic over $K$. In particular,
 a-b,\quad ab\in E,
 \]
 and, if $a\ne0$, also $a^{-1}\in E$. Thus $E$ is a subfield of $F$.
+
 :::
 
-<1>2. The extension $E/K$ is algebraic.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The extension $E/K$ is algebraic.
+
+::: pf-proof
+
 This is immediate from the definition of $E$: every element of $E$ is algebraic
 over $K$.
+
 :::
 
-<1>3. Every nonconstant polynomial in $E[x]$ has a root in $E$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+Every nonconstant polynomial in $E[x]$ has a root in $E$.
+
+::: pf-proof
+
 Let
 \[
 f(x)=a_0+a_1x+\cdots+a_nx^n\in E[x],
@@ -69,18 +89,38 @@ $\alpha$ is algebraic over $K'$ because it satisfies the nonzero polynomial
 $f\in K'[x]$. Hence $K'(\alpha)/K'$ is finite. Since $K'/K$ is finite, the
 tower law shows that $K'(\alpha)/K$ is finite. Therefore $\alpha$ is algebraic
 over $K$, so $\alpha\in E$.
+
 :::
 
-<1>4. The field $E$ is algebraically closed.
-::: {.proof}
-By <1>3 every nonconstant polynomial in $E[x]$ has a root in $E$. Factoring off
+:::
+
+::: {.pf-step #s4}
+
+The field $E$ is algebraically closed.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref} every nonconstant polynomial in $E[x]$ has a root in $E$. Factoring off
 a linear factor and repeating by induction on degree shows that every polynomial
 in $E[x]$ splits into linear factors over $E$. Thus $E$ is algebraically closed.
+
 :::
 
-<1>5. Hence $E$ is an algebraic closure of $K$.
-::: {.proof}
-By <1>2, $E/K$ is algebraic, and by <1>4, $E$ is algebraically closed. These are
-exactly the defining properties of an algebraic closure of $K$.
 :::
+
+::: pf-step
+
+Hence $E$ is an algebraic closure of $K$.
+
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $E/K$ is algebraic, and by step [](#s4){.pf-ref}, $E$ is algebraically closed. These are
+exactly the defining properties of an algebraic closure of $K$.
+
+:::
+
+:::
+
+:::
+
 :::

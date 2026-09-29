@@ -41,7 +41,11 @@ F(z)
 \frac{\cosh(\pi z)}{z(z^2+1)}.
 $$
 
-<1>1. The poles of $F$ inside
+::: pf
+
+::: pf-step
+
+The poles of $F$ inside
 $$
 C=\{z:\abs{z}=2\}
 $$
@@ -51,7 +55,8 @@ $$
 $$
 and they are all simple.
 
-::: {.proof}
+::: pf-proof
+
 The denominator factors as
 $$
 z(z^2+1)
@@ -60,14 +65,20 @@ z(z-i)(z+i).
 $$
 Its three zeros are distinct and all have modulus less than $2$. The
 numerator is entire.
+
 :::
 
-<1>2. The residue at $0$ is
+:::
+
+::: {.pf-step #s2}
+
+The residue at $0$ is
 $$
 \operatorname{Res}_{z=0}F(z)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since the pole is simple,
 $$
 \operatorname{Res}_{z=0}F(z)
@@ -77,16 +88,22 @@ $$
 =
 1.
 $$
+
 :::
 
-<1>3. The residue at $i$ is
+:::
+
+::: {.pf-step #s3}
+
+The residue at $i$ is
 $$
 \operatorname{Res}_{z=i}F(z)
 =
 \frac12.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 \cosh(\pi i)=\cos\pi=-1,
@@ -104,16 +121,22 @@ $$
 \frac12.
 \end{aligned}
 $$
+
 :::
 
-<1>4. The residue at $-i$ is
+:::
+
+::: {.pf-step #s4}
+
+The residue at $-i$ is
 $$
 \operatorname{Res}_{z=-i}F(z)
 =
 \frac12.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Similarly,
 $$
 \cosh(-\pi i)=\cos\pi=-1,
@@ -131,9 +154,14 @@ $$
 \frac12.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The contour integral is
+:::
+
+::: {.pf-step #s5}
+
+The contour integral is
 $$
 \boxed{
 \int_C
@@ -143,9 +171,10 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The contour is positively oriented. By the residue theorem and steps
-<1>2--<1>4,
+[](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 \begin{aligned}
 \int_CF(z)\,dz
@@ -158,11 +187,17 @@ $$
 4\pi i.
 \end{aligned}
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required value.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required value.
+
+:::
+
+:::
+
 :::

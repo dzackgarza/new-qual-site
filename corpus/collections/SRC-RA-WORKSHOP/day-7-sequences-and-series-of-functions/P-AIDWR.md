@@ -27,32 +27,85 @@ Show that $f\equiv 0$.\
 :::
 
 ::: {.solution}
-<1>1. The hypotheses give $\int_0^1 f(x)\,x^{99}p(x)\,dx = 0$ for every polynomial $p$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The hypotheses give $\int_0^1 f(x)\,x^{99}p(x)\,dx = 0$ for every polynomial $p$.
+
+::: pf-proof
+
 $x^{99}p(x)$ is a finite linear combination of powers $x^{99}, x^{100}, \ldots$, each of which integrates to $0$ against $f$.
+
 :::
 
-<1>2. Consequently $\int_0^1 f(x)\,x^{99}h(x)\,dx = 0$ for every $h \in C([0,1])$.
-<2>1. Polynomials are dense in $C([0,1])$ (Weierstrass), so $p_k \to h$ uniformly.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Consequently $\int_0^1 f(x)\,x^{99}h(x)\,dx = 0$ for every $h \in C([0,1])$.
+
+::: pf-proof
+
+::: pf-step
+
+Polynomials are dense in $C([0,1])$ (Weierstrass), so $p_k \to h$ uniformly.
+
+::: pf-proof
+
 Weierstrass approximation theorem.
+
 :::
-<2>2. $x^{99}p_k \to x^{99}h$ uniformly.
-::: {.proof}
+
+:::
+
+::: pf-step
+
+$x^{99}p_k \to x^{99}h$ uniformly.
+
+::: pf-proof
+
 $|x^{99}p_k - x^{99}h| \le \|p_k - h\|_\infty \to 0$.
+
 :::
-<2>3. Q.E.D.
-::: {.proof}
+
+:::
+
+::: pf-qed
+
 $\int f\,x^{99}h = \lim_k \int f\,x^{99}p_k = 0$ by uniform convergence under the integral.
+
 :::
 
-<1>3. Take $h = f$: $\int_0^1 x^{99}f(x)^2\,dx = 0$.
-::: {.proof}
-<1>2 with $h = f \in C([0,1])$.
 :::
 
-<1>4. $f \equiv 0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Take $h = f$: $\int_0^1 x^{99}f(x)^2\,dx = 0$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} with $h = f \in C([0,1])$.
+
+:::
+
+:::
+
+::: pf-step
+
+$f \equiv 0$.
+
+::: pf-proof
+
 $x^{99}f(x)^2 \ge 0$ is continuous with integral $0$, hence identically $0$; so $f = 0$ on $(0,1]$, and continuity at $0$ gives $f(0) = 0$.
+
 :::
+
+:::
+
+:::
+
 :::

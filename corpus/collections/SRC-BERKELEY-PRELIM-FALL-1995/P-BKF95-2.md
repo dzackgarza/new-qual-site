@@ -49,9 +49,14 @@ x\in\RR^2:
 $$
 be the Voronoi cell of $a_j$.
 
-<1>1. Each $V_j$ is convex and contains $a_j$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+Each $V_j$ is convex and contains $a_j$.
+
+::: pf-proof
+
 For fixed $j$ and $\ell$, the inequality
 $$
 \norm{x-a_j}^2\leq\norm{x-a_\ell}^2
@@ -59,15 +64,21 @@ $$
 expands to a linear inequality in $x$, so it defines a closed half-plane
 containing $a_j$. The cell $V_j$ is the intersection of these half-planes.
 Hence it is convex and contains $a_j$.
+
 :::
 
-<1>2. Up to sets of planar area zero, the sets
+:::
+
+::: {.pf-step #s2}
+
+Up to sets of planar area zero, the sets
 $$
 P_j\coloneqq V_j\cap\overline{B}(a_j,r)
 $$
 partition $N(A,r)$.
 
-::: {.proof}
+::: pf-proof
+
 The Voronoi cells cover the plane, and the interiors of distinct cells are
 disjoint; their overlaps lie in finitely many perpendicular-bisector lines,
 which have planar area zero.
@@ -81,9 +92,14 @@ $$
 so $x\in P_j$. Conversely, every point of $P_j$ is within distance $r$ of
 $a_j$ and hence belongs to $N(A,r)$. Thus the $P_j$ partition
 $N(A,r)$ up to their shared boundaries.
+
 :::
 
-<1>3. Let
+:::
+
+::: {.pf-step #s3}
+
+Let
 $$
 \Gamma_j
 \coloneqq
@@ -96,7 +112,8 @@ $$
 \frac{2}{r}\operatorname{area}(P_j).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $S_j\subseteq[0,2\pi)$ be the set of angles $\theta$ for which
 $$
 a_j+r(\cos\theta,\sin\theta)\in V_j.
@@ -109,7 +126,7 @@ r\,\operatorname{length}(S_j),
 $$
 where the second length is angular measure.
 
-By step <1>1, $V_j$ is convex and contains $a_j$. Hence whenever
+By step [](#s1){.pf-ref}, $V_j$ is convex and contains $a_j$. Hence whenever
 $\theta\in S_j$, the entire radial segment
 $$
 \left\{
@@ -135,16 +152,22 @@ $$
 \frac r2\operatorname{length}(\Gamma_j).
 $$
 Since $Q_j\subseteq P_j$, the claimed inequality follows.
+
 :::
 
-<1>4. The boundary of $N(A,r)$ satisfies
+:::
+
+::: {.pf-step #s4}
+
+The boundary of $N(A,r)$ satisfies
 $$
 \operatorname{length}\partial N(A,r)
 \leq
 \sum_{j=1}^m\operatorname{length}(\Gamma_j).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The set $N(A,r)$ is the finite union
 $$
 \bigcup_{j=1}^m\overline B(a_j,r).
@@ -164,36 +187,48 @@ $$
 \bigcup_{j=1}^m\Gamma_j.
 $$
 Taking lengths gives the inequality.
+
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+
+One has
 $$
 \operatorname{length}\partial N(A,r)
 \leq
 \frac{2}{r}\operatorname{area}N(A,r).
 $$
 
-::: {.proof}
-By steps <1>3 and <1>4,
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 \operatorname{length}\partial N(A,r)
 \leq
 \frac2r
 \sum_{j=1}^m\operatorname{area}(P_j).
 $$
-Step <1>2 gives
+Step [](#s2){.pf-ref} gives
 $$
 \sum_{j=1}^m\operatorname{area}(P_j)
 =
 \operatorname{area}N(A,r).
 $$
 Combine the two formulas.
+
 :::
 
-<1>6. The neighborhood $N(A,r)$ is contained in the disk of radius
+:::
+
+::: {.pf-step #s6}
+
+The neighborhood $N(A,r)$ is contained in the disk of radius
 $1+r<2$ centered at the origin.
 
-::: {.proof}
+::: pf-proof
+
 Every $a\in A$ lies in the unit disk. If $x\in N(A,r)$, then for some
 $a\in A$,
 $$
@@ -209,9 +244,14 @@ $$
 <
 2.
 $$
+
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #s7}
+
+One has
 $$
 \boxed{
 \operatorname{length}\partial N(A,r)
@@ -220,14 +260,15 @@ $$
 }.
 $$
 
-::: {.proof}
-Step <1>6 gives
+::: pf-proof
+
+Step [](#s6){.pf-ref} gives
 $$
 \operatorname{area}N(A,r)
 \leq
 4\pi.
 $$
-Insert this in step <1>5:
+Insert this in step [](#s5){.pf-ref}:
 $$
 \operatorname{length}\partial N(A,r)
 \leq
@@ -236,11 +277,17 @@ $$
 \frac{8\pi}{r}.
 $$
 Thus one may take $C=8\pi$, independently of $A$.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is the required uniform boundary-length bound.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is the required uniform boundary-length bound.
+
+:::
+
+:::
+
 :::

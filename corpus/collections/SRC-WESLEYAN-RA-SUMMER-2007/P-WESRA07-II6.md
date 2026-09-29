@@ -41,8 +41,15 @@ For comparison, also answer the completeness question for the likely corrected f
 :::
 
 ::: {.solution}
-<1>1. The printed formula does not define a norm.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The printed formula does not define a norm.
+
+::: pf-proof
+
 A norm must be nonnegative.
 For the continuous function $f\equiv-1$,
 \[
@@ -61,10 +68,17 @@ Hence
 \boxed{f\longmapsto\int_0^1f\,dm\text{ is not a norm on }C([0,1]).}
 \]
 Therefore part 2 of the source, literally interpreted as completeness with respect to "this norm," is not well posed.
+
 :::
 
-<1>2. With the absolute value inserted, the formula is a norm but $C([0,1])$ is not complete.
-::: {.proof}
+:::
+
+::: pf-step
+
+With the absolute value inserted, the formula is a norm but $C([0,1])$ is not complete.
+
+::: pf-proof
+
 The functional
 \[
 \|f\|_1=\int_0^1|f(x)|\,dx
@@ -97,5 +111,11 @@ Therefore, for the corrected norm,
 \[
 \boxed{C([0,1])\text{ is not complete under }\|\cdot\|_1.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

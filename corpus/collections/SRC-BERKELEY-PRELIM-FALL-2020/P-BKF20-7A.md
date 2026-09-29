@@ -42,12 +42,18 @@ Let $V$ be $n$-dimensional over the finite field with $q$ elements. Prove that t
 :::
 
 ::: {.solution}
-<1>1. The number of ordered linearly independent $k$-tuples in $V$ is
+
+::: pf
+
+::: {.pf-step #s1}
+
+The number of ordered linearly independent $k$-tuples in $V$ is
 $$
 \prod_{i=0}^{k-1}(q^n-q^i).
 $$
 
-::: {.proof}
+::: pf-proof
+
 There are
 $$
 q^n-1
@@ -60,21 +66,32 @@ q^n-q^i
 $$
 vectors outside that span. Multiplying these choices for
 $i=0,\ldots,k-1$ gives the formula.
+
 :::
 
-<1>2. Every fixed $k$-dimensional subspace $W\subseteq V$ has exactly
+:::
+
+::: {.pf-step #s2}
+
+Every fixed $k$-dimensional subspace $W\subseteq V$ has exactly
 $$
 \prod_{i=0}^{k-1}(q^k-q^i)
 $$
 ordered bases.
 
-::: {.proof}
-The same argument as in step <1>1 applies inside $W$, which has
+::: pf-proof
+
+The same argument as in step [](#s1){.pf-ref} applies inside $W$, which has
 $q^k$ elements. An ordered basis is exactly an ordered linearly
 independent $k$-tuple in $W$.
+
 :::
 
-<1>3. If $N_{n,k}(q)$ denotes the number of $k$-dimensional subspaces
+:::
+
+::: {.pf-step #s3}
+
+If $N_{n,k}(q)$ denotes the number of $k$-dimensional subspaces
 of $V$, then
 $$
 N_{n,k}(q)
@@ -83,18 +100,24 @@ N_{n,k}(q)
 {\prod_{i=0}^{k-1}(q^k-q^i)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Every ordered linearly independent $k$-tuple spans a unique
 $k$-dimensional subspace. Conversely, for each such subspace $W$, the
 ordered independent $k$-tuples spanning it are precisely its ordered
-bases, whose number is the quantity in step <1>2.
+bases, whose number is the quantity in step [](#s2){.pf-ref}.
 
-Thus the set counted in step <1>1 is partitioned into equally sized
+Thus the set counted in step [](#s1){.pf-ref} is partitioned into equally sized
 blocks indexed by the $k$-dimensional subspaces, and division gives the
 displayed formula.
+
 :::
 
-<1>4. The quotient in step <1>3 equals
+:::
+
+::: {.pf-step #s4}
+
+The quotient in step [](#s3){.pf-ref} equals
 $$
 \frac{
 \prod_{j=n-k+1}^{n}(q^j-1)
@@ -103,7 +126,8 @@ $$
 }.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For each $i$,
 $$
 q^n-q^i
@@ -116,7 +140,7 @@ q^k-q^i
 =
 q^i(q^{k-i}-1).
 $$
-The factors $q^i$ cancel in the quotient of step <1>3, leaving
+The factors $q^i$ cancel in the quotient of step [](#s3){.pf-ref}, leaving
 $$
 \frac{
 \prod_{i=0}^{k-1}(q^{n-i}-1)
@@ -133,9 +157,14 @@ $$
 j=k-i
 $$
 gives the claim.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: {.pf-step #s5}
+
+Therefore
 $$
 \boxed{
 N_{n,k}(q)
@@ -146,7 +175,8 @@ N_{n,k}(q)
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Factor
 $$
 \prod_{j=1}^{n}(q^j-1)
@@ -159,12 +189,18 @@ $$
 \right).
 $$
 Solving this identity for the second product and substituting it into
-step <1>4 gives exactly the displayed expression.
+step [](#s4){.pf-ref} gives exactly the displayed expression.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required count.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required count.
+
+:::
+
+:::
+
 :::

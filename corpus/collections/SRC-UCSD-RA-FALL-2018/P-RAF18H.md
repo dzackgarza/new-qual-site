@@ -36,8 +36,15 @@ Show $\mathcal{F}_{[a,b]}$ is a precompact subset of $C([a,b], \mathbb{R})$.
 :::
 
 ::: {.solution}
-<1>1. Use Fourier inversion to obtain a uniform bound.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Use Fourier inversion to obtain a uniform bound.
+
+::: pf-proof
+
 For $f\in\mathcal F$,
 \[
 \int_{\mathbb R}|\widehat f(k)|\,dk\le1,
@@ -53,10 +60,17 @@ Consequently
 \le C_{\mathcal F}
 \]
 for every $x\in\mathbb R$. Hence the restrictions in $\mathcal F_{[a,b]}$ are uniformly bounded.
+
 :::
 
-<1>2. Obtain a common modulus of continuity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Obtain a common modulus of continuity.
+
+::: pf-proof
+
 For $x,y\in\mathbb R$,
 \[
 \begin{aligned}
@@ -67,13 +81,26 @@ For $x,y\in\mathbb R$,
 \end{aligned}
 \]
 because $|e^{iu}-e^{iv}|\le|u-v|$. Thus every $f\in\mathcal F$ is Lipschitz with the same Lipschitz constant. In particular, $\mathcal F_{[a,b]}$ is equicontinuous.
+
 :::
 
-<1>3. Apply Arzelà--Ascoli.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Arzelà--Ascoli.
+
+::: pf-proof
+
 The interval $[a,b]$ is compact. By Steps 1 and 2, the family $\mathcal F_{[a,b]}\subset C([a,b])$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore implies that its closure in the supremum norm is compact. Equivalently,
 \[
 \boxed{\mathcal F_{[a,b]}\text{ is precompact in }C([a,b]).}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

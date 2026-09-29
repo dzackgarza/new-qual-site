@@ -47,19 +47,30 @@ Write $T^i(M)=H_{\mfa}^i(M)$ and $T^0(M)=\Gamma_{\mfa}(M)$.
 By [[P-AGH333LOCALCOH]], every element of every $T^i(M)$ is killed by a power of $\mfa$.
 Regular sequences have nonzero final quotient, and the finite-module depth convention is the one in [[D-DEFREGSQ]].
 
-<1>1. If multiplication by some $x\in\mfa$ is injective on $M$, then $T^0(M)=0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If multiplication by some $x\in\mfa$ is injective on $M$, then $T^0(M)=0$.
+
+::: pf-proof
+
 For $m\in T^0(M)$, choose $q\ge1$ with $\mfa^qm=0$.
 Then $x^qm=0$.
 A power of an injective endomorphism is injective, so $m=0$.
 This proves the forward implication in (a) for arbitrary modules, and even when the injective multiplication map is surjective.
+
 :::
 
-<1>2. For a finite module $M$, $T^0(M)=0$ exactly when $\mfa$ is contained in no associated prime of $M$.
+:::
+
+::: {.pf-step #s2}
+
+For a finite module $M$, $T^0(M)=0$ exactly when $\mfa$ is contained in no associated prime of $M$.
 When $\mfa M\ne M$, this is equivalent to the existence of an $M$-regular element in $\mfa$.
 
-::: {.proof}
+::: pf-proof
+
 If $\mathfrak p=\Ann_A(m)$ for some $0\ne m\in M$ and $\mfa\subseteq\mathfrak p$, then $\mfa m=0$ and $T^0(M)\ne0$.
 Conversely, if $T^0(M)\ne0$, choose an associated prime $\mathfrak p$ of this nonzero finite submodule.
 Such a prime exists for a nonzero finite module over a noetherian ring.
@@ -72,12 +83,18 @@ Prime avoidance therefore supplies $x\in\mfa$ outside that union when none of th
 It acts injectively on $M$.
 If $\mfa M\ne M$, the quotient $M/xM$ maps onto the nonzero module $M/\mfa M$, so $M/xM\ne0$.
 Thus $x$ is an $M$-regular element under the proper-quotient convention.
-Conversely, such an element implies $T^0(M)=0$ by step <1>1.
+Conversely, such an element implies $T^0(M)=0$ by step [](#s1){.pf-ref}.
+
 :::
 
-<1>3. If $M$ is finite and $\mfa M=M$, then $T^i(M)=0$ for every $i\ge0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $M$ is finite and $\mfa M=M$, then $T^i(M)=0$ for every $i\ge0$.
+
+::: pf-proof
+
 For $M=0$, every derived functor is zero.
 Otherwise choose generators $m_1,\ldots,m_s$ of $M$ and coefficients $c_{ij}\in\mfa$ with $m_i=\sum_j c_{ij}m_j$.
 The adjugate identity for the matrix $1-(c_{ij})$ shows that its determinant annihilates each generator.
@@ -89,14 +106,20 @@ Because the original map is the identity, functoriality makes this induced endom
 For any $z\in T^i(M)$, however, some $\mfa^q$ kills $z$, so $t^qz=0$.
 Since $t$ acts identically, this implies $z=0$.
 This proves every vanishing in the exceptional case, consistently with $\depth_\mfa M=\infty$.
-Together with steps <1>1--<1>2 it also completes (a).
+Together with steps [](#s1){.pf-ref} and [](#s2){.pf-ref} it also completes (a).
+
 :::
 
-<1>4. For finite $M$ with $\mfa M\ne M$, a regular sequence of length $n$ in $\mfa$ implies $T^i(M)=0$ for $i<n$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+For finite $M$ with $\mfa M\ne M$, a regular sequence of length $n$ in $\mfa$ implies $T^i(M)=0$ for $i<n$.
+
+::: pf-proof
+
 Induct on $n$.
-For $n=0$ there is nothing to prove; the case $n=1$ is step <1>1.
+For $n=0$ there is nothing to prove; the case $n=1$ is step [](#s1){.pf-ref}.
 Let $n>1$ and write $x$ for the first entry of a regular sequence of length $n$.
 Put $N=M/xM$.
 It is finite and $N/\mfa N\cong M/\mfa M\ne0$.
@@ -113,20 +136,26 @@ $$
 makes multiplication by $x$ injective, since the left term is zero.
 But every element of $T^i(M)$ is killed by a power of $x$, by the ideal-torsion property.
 Injectivity then forces $T^i(M)=0$.
-Step <1>1 gives the missing degree zero, proving the induction.
-The multiplication maps here are scalar multiplication by the chain-map argument in step <1>3.
+Step [](#s1){.pf-ref} gives the missing degree zero, proving the induction.
+The multiplication maps here are scalar multiplication by the chain-map argument in step [](#s3){.pf-ref}.
+
 :::
 
-<1>5. For finite $M$ with $\mfa M\ne M$, vanishing of $T^i(M)$ for $i<n$ implies the existence of an $M$-regular sequence of length $n$ in $\mfa$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+For finite $M$ with $\mfa M\ne M$, vanishing of $T^i(M)$ for $i<n$ implies the existence of an $M$-regular sequence of length $n$ in $\mfa$.
+
+::: pf-proof
+
 Again induct on $n$.
 For $n=0$ use the empty sequence; $M$ is nonzero because $\mfa M\ne M$.
 For $n\ge1$, the hypothesis gives $T^0(M)=0$.
-Step <1>2 supplies an $M$-regular element $x\in\mfa$.
+Step [](#s2){.pf-ref} supplies an $M$-regular element $x\in\mfa$.
 Put $N=M/xM$; this is finite and $N/\mfa N\cong M/\mfa M\ne0$.
 
-For $0\le j<n-1$, the long exact sequence from step <1>4 has a segment
+For $0\le j<n-1$, the long exact sequence from step [](#s4){.pf-ref} has a segment
 $$
 T^j(M)\longrightarrow T^j(N)\longrightarrow T^{j+1}(M)
 $$
@@ -135,16 +164,22 @@ Thus $T^j(N)=0$ for all $j<n-1$.
 The induction hypothesis gives an $N$-regular sequence of length $n-1$ in $\mfa$.
 Prepending $x$ gives an $M$-regular sequence of length $n$, with the same nonzero final quotient.
 This proves the reverse induction without assuming a depth-drop formula.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove (a), with its arbitrary-module forward direction and its finite-module converse.
-For $\mfa M\ne M$, steps <1>4--<1>5 prove (b) for every $n$.
-For $\mfa M=M$, step <1>3 proves all the required vanishings and depth is infinite by convention.
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} prove (a), with its arbitrary-module forward direction and its finite-module converse.
+For $\mfa M\ne M$, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} prove (b) for every $n$.
+For $\mfa M=M$, step [](#s3){.pf-ref} proves all the required vanishings and depth is infinite by convention.
 Thus the equivalence in (b) holds for every finite module in the statement.
+
 :::
+
+:::
+
 :::
 
 ::: {.remark title="The exceptional depth convention"}

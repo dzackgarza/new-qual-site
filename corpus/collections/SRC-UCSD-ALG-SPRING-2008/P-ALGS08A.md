@@ -30,8 +30,15 @@ Show that $G$ is not the set-theoretic union of the conjugates of $H$.
 :::
 
 ::: {.solution}
-<1>1. The number of distinct conjugates of $H$ is at most $[G:H]$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The number of distinct conjugates of $H$ is at most $[G:H]$.
+
+::: pf-proof
+
 The conjugation action of $G$ on its subgroups has stabilizer
 \[
 N_G(H)=\{g\in G:gHg^{-1}=H\}
@@ -45,10 +52,17 @@ Since $H\le N_G(H)$,
 \[
 r=[G:N_G(H)]\le [G:H].
 \]
+
 :::
 
-<1>2. The union of those conjugates has strictly fewer than $|G|$ elements.
-::: {.proof}
+:::
+
+::: pf-step
+
+The union of those conjugates has strictly fewer than $|G|$ elements.
+
+::: pf-proof
+
 List the distinct conjugates as $H_1,\ldots,H_r$.
 Each has $|H|$ elements, and every one contains the identity.
 Therefore
@@ -57,7 +71,7 @@ Therefore
 \le 1+r(|H|-1).
 \]
 Put $m=[G:H]$.
-Because $H$ is proper, $m>1$, and <1>1 gives $r\le m$.
+Because $H$ is proper, $m>1$, and step [](#s1){.pf-ref} gives $r\le m$.
 Thus
 \[
 \left|\bigcup_{i=1}^r H_i\right|
@@ -67,5 +81,11 @@ Thus
 <|G|.
 \]
 Consequently the conjugates of $H$ cannot cover $G$.
+
 :::
+
+:::
+
+:::
+
 :::

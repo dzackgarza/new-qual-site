@@ -26,7 +26,12 @@ Let $a\in\mathbb C$ with $|a|<1$. Evaluate
 :::
 
 ::: {.solution}
-<1>1. Parametrizing the unit circle by $z=e^{it}$ gives
+
+::: pf
+
+::: {.pf-step #s1}
+
+Parametrizing the unit circle by $z=e^{it}$ gives
 $$
 I
 \coloneqq
@@ -36,7 +41,8 @@ I
 \frac{dt}{\abs{e^{it}-a}^2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $z=e^{it}$,
 $$
 \abs{dz}
@@ -45,9 +51,14 @@ $$
 =dt.
 $$
 Substitution gives the displayed formula.
+
 :::
 
-<1>2. The real integral in step <1>1 equals the contour integral
+:::
+
+::: {.pf-step #s2}
+
+The real integral in step [](#s1){.pf-ref} equals the contour integral
 $$
 I
 =
@@ -57,7 +68,8 @@ I
 $$
 where the unit circle is positively oriented.
 
-::: {.proof}
+::: pf-proof
+
 On $\abs z=1$ one has $\overline z=1/z$, so
 $$
 \abs{z-a}^2
@@ -72,10 +84,15 @@ dz=iz\,dt,
 \qquad
 dt=\frac{dz}{iz}.
 $$
-Substitution into step <1>1 gives the claimed contour integral.
+Substitution into step [](#s1){.pf-ref} gives the claimed contour integral.
+
 :::
 
-<1>3. The integrand
+:::
+
+::: {.pf-step #s3}
+
+The integrand
 $$
 \frac1{i(z-a)(1-\overline a z)}
 $$
@@ -85,7 +102,8 @@ $$
 \frac1{i(1-\abs a^2)}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The pole at $z=a$ lies inside because $\abs a<1$. If $a\neq0$, the only
 other possible pole is
 $$
@@ -101,9 +119,14 @@ $$
 =
 \frac1{i(1-\abs a^2)}.
 $$
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \int_{\abs z=1}\frac{\abs{dz}}{\abs{z-a}^2}
@@ -112,8 +135,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>2 and <1>3, the residue theorem gives
+::: pf-proof
+
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, the residue theorem gives
 $$
 I
 =
@@ -122,11 +146,17 @@ I
 =
 \frac{2\pi}{1-\abs a^2}.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required evaluation.
+
+:::
+
+:::
+
 :::

@@ -49,8 +49,15 @@ Prove that $P\normal K$.
 :::
 
 ::: {.solution}
-<1>1. The subgroup $P$ is a Sylow $p$-subgroup of $H$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup $P$ is a Sylow $p$-subgroup of $H$.
+
+::: pf-proof
+
 The subgroup $P$ is a $p$-subgroup of $H$ because $P\le H$.
 
 Let $Q\le H$ be any $p$-subgroup.
@@ -63,32 +70,53 @@ Thus no $p$-subgroup of $H$ has order larger than $P$, so
 \[
 P\in\operatorname{Syl}_p(H).
 \]
+
 :::
 
-<1>2. The subgroup $P$ is the unique Sylow $p$-subgroup of $H$.
-::: {.proof}
-By <1>1, $P$ is Sylow in $H$.
+:::
+
+::: {.pf-step #s2}
+
+The subgroup $P$ is the unique Sylow $p$-subgroup of $H$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $P$ is Sylow in $H$.
 By hypothesis,
 \[
 P\normal H.
 \]
 All Sylow $p$-subgroups of $H$ are conjugate in $H$, while normality makes every $H$-conjugate of $P$ equal to $P$.
 Hence every Sylow $p$-subgroup of $H$ is $P$.
+
 :::
 
-<1>3. The subgroup $P$ is characteristic in $H$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The subgroup $P$ is characteristic in $H$.
+
+::: pf-proof
+
 Every automorphism of $H$ preserves subgroup order and therefore sends a Sylow $p$-subgroup to a Sylow $p$-subgroup.
-By uniqueness from <1>2, any $\varphi\in\operatorname{Aut}(H)$ satisfies
+By uniqueness from step [](#s2){.pf-ref}, any $\varphi\in\operatorname{Aut}(H)$ satisfies
 \[
 \varphi(P)=P.
 \]
 Thus $P\operatorname{char}H$.
+
 :::
 
-<1>4. Therefore $P\normal K$.
-::: {.proof}
-By <1>3,
+:::
+
+::: pf-step
+
+Therefore $P\normal K$.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 \[
 P\operatorname{char}H,
 \]
@@ -101,5 +129,11 @@ Therefore
 \[
 P\normal K.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

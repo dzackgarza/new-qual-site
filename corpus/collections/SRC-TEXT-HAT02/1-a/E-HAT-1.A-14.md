@@ -36,8 +36,14 @@ We prove the equivalence between the assertion
 
 and the Axiom of Choice.
 
-<1>1. Assume the Axiom of Choice. Then every connected graph $X$ has a maximal tree.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Assume the Axiom of Choice. Then every connected graph $X$ has a maximal tree.
+
+::: pf-proof
+
 By the Axiom of Choice, Zorn's lemma holds.
 Fix a vertex $v_0$ of $X$ and consider the partially ordered set of tree subgraphs of $X$ containing $v_0$, ordered by inclusion.
 It is nonempty since $\{v_0\}$ is a tree.
@@ -58,9 +64,14 @@ By Zorn's lemma there is a maximal tree subgraph $T$ containing $v_0$.
 Since $X$ is connected, this maximal tree contains every vertex of $X$.
 Indeed, if a vertex lay outside $T$, choose a finite edge path from $v_0$ to it and take the first edge of this path leaving $T$.
 Adjoining that edge and its new endpoint preserves connectedness and creates no cycle, contradicting maximality.
+
 :::
 
-<1>2. Conversely, assume every connected graph has a maximal tree.
+:::
+
+::: {.pf-step #s2}
+
+Conversely, assume every connected graph has a maximal tree.
 Let
 \[
 \{A_i\}_{i\in I}
@@ -76,36 +87,65 @@ e_{i,a}
 \]
 joining $v_0$ to $v_i$.
 Then $X$ is connected.
-::: {.proof}
+
+::: pf-proof
+
 For each fixed $i$, the hypothesis $A_i\ne\varnothing$ says that there exists at least one edge from $v_0$ to $v_i$.
 Hence every vertex is joined to $v_0$ by a one-edge path.
 This proves connectedness without making a simultaneous choice from all the $A_i$.
+
 :::
 
-<1>3. Let $T$ be a maximal tree in $X$.
+:::
+
+::: {.pf-step #s3}
+
+Let $T$ be a maximal tree in $X$.
 For each $i\in I$, $T$ contains exactly one edge joining $v_0$ to $v_i$.
-::: {.proof}
-A maximal tree in a connected graph is spanning by the same elementary argument used at the end of <1>1, which does not use Choice once the maximal tree is given.
+
+::: pf-proof
+
+A maximal tree in a connected graph is spanning by the same elementary argument used at the end of step [](#s1){.pf-ref}, which does not use Choice once the maximal tree is given.
 Thus $v_i\in T$ for every $i$.
 Since every edge incident to $v_i$ joins it to $v_0$, connectedness of $T$ forces at least one edge $e_{i,a}$ to belong to $T$.
 
 It cannot contain two distinct such edges $e_{i,a}$ and $e_{i,b}$ with $a\ne b$, since the union of these two parallel edges is a cycle homeomorphic to $S^1$.
 Hence exactly one is present.
+
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #s4}
+
+Define
 \[
 f:I\longrightarrow\bigcup_{i\in I}A_i
 \]
 by letting $f(i)$ be the unique element $a\in A_i$ for which $e_{i,a}\subseteq T$.
 Then $f(i)\in A_i$ for every $i$.
-::: {.proof}
-Existence and uniqueness of this $a$ are <1>3.
+
+::: pf-proof
+
+Existence and uniqueness of this $a$ are step [](#s3){.pf-ref}.
 Thus $f$ is a choice function for the arbitrary family $\{A_i\}_{i\in I}$.
+
 :::
 
-<1>5. Therefore the maximal-tree principle implies the Axiom of Choice, and hence the two statements are equivalent.
-::: {.proof}
-<1>1 proves Choice implies maximal trees, while <1>2--<1>4 construct a choice function from the maximal-tree principle for an arbitrary family of nonempty sets.
 :::
+
+::: pf-step
+
+Therefore the maximal-tree principle implies the Axiom of Choice, and hence the two statements are equivalent.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} proves Choice implies maximal trees, while steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} construct a choice function from the maximal-tree principle for an arbitrary family of nonempty sets.
+
+:::
+
+:::
+
+:::
+
 :::

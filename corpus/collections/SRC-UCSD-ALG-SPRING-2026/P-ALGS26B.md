@@ -44,8 +44,15 @@ $|\operatorname{Syl}_p(N_G(\bar{P}))| < |\operatorname{Syl}_p(G)|$.
 :::
 
 ::: {.solution}
-<1>1. The subgroup \(O_p(G)\) is a normal \(p\)-subgroup of \(G\).
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The subgroup \(O_p(G)\) is a normal \(p\)-subgroup of \(G\).
+
+::: pf-proof
+
 Each Sylow \(p\)-subgroup is a \(p\)-group, so their intersection is again a
 \(p\)-group. Conjugation permutes the Sylow \(p\)-subgroups of \(G\), hence
 \[
@@ -55,10 +62,17 @@ gO_p(G)g^{-1}
  = O_p(G)
 \]
 for every \(g\in G\). Thus \(O_p(G)\trianglelefteq G\).
+
 :::
 
-<1>2. Every normal \(p\)-subgroup \(N\trianglelefteq G\) is contained in \(O_p(G)\).
-::: {.proof}
+:::
+
+::: pf-step
+
+Every normal \(p\)-subgroup \(N\trianglelefteq G\) is contained in \(O_p(G)\).
+
+::: pf-proof
+
 Fix \(P\in\operatorname{Syl}_p(G)\). Since \(N\trianglelefteq G\), the product \(NP\) is
 a subgroup of \(G\). Both \(N\) and \(P\) are \(p\)-groups, so
 \[
@@ -69,12 +83,19 @@ is a power of \(p\). By maximality of the Sylow subgroup \(P\), one has \(NP=P\)
 \[
 N\le \bigcap_{P\in\operatorname{Syl}_p(G)}P=O_p(G).
 \]
-Together with <1>1, this proves part (a).
+Together with step [](#s1){.pf-ref}, this proves part (a).
+
 :::
 
-<1>3. For every \(P\in\operatorname{Syl}_p(H)\), there exists
+:::
+
+::: {.pf-step #s3}
+
+For every \(P\in\operatorname{Syl}_p(H)\), there exists
 \(Q\in\operatorname{Syl}_p(G)\) such that \(Q\cap H=P\).
-::: {.proof}
+
+::: pf-proof
+
 Since \(P\) is a \(p\)-subgroup of \(G\), it is contained in some Sylow \(p\)-subgroup
 \(Q\) of \(G\). Then
 \[
@@ -82,34 +103,55 @@ P\le Q\cap H.
 \]
 The subgroup \(Q\cap H\) is a \(p\)-subgroup of \(H\). Since \(P\) is Sylow in \(H\),
 maximality gives \(Q\cap H=P\).
+
 :::
 
-<1>4. Choosing one such \(Q\) for each \(P\in\operatorname{Syl}_p(H)\) defines a
+:::
+
+::: pf-step
+
+Choosing one such \(Q\) for each \(P\in\operatorname{Syl}_p(H)\) defines a
 function
 \[
 f:\operatorname{Syl}_p(H)\longrightarrow\operatorname{Syl}_p(G)
 \]
 with \(f(P)\cap H=P\).
-::: {.proof}
-This is exactly the construction in <1>3, and proves part (b).
+
+::: pf-proof
+
+This is exactly the construction in step [](#s3){.pf-ref}, and proves part (b).
+
 :::
 
-<1>5. The function \(f\) from part (b) is injective.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+The function \(f\) from part (b) is injective.
+
+::: pf-proof
+
 If \(f(P_1)=f(P_2)=Q\), then
 \[
 P_1=Q\cap H=P_2.
 \]
 Hence \(P_1=P_2\).
+
 :::
 
-<1>6. If \(|\operatorname{Syl}_p(H)|=|\operatorname{Syl}_p(G)|\), then \(f\) is
+:::
+
+::: pf-step
+
+If \(|\operatorname{Syl}_p(H)|=|\operatorname{Syl}_p(G)|\), then \(f\) is
 bijective and
 \[
 O_p(H)=O_p(G)\cap H.
 \]
-::: {.proof}
-By <1>5, \(f\) is an injection between finite sets of the same cardinality, hence a
+
+::: pf-proof
+
+By step [](#s5){.pf-ref}, \(f\) is an injection between finite sets of the same cardinality, hence a
 bijection. Therefore every \(Q\in\operatorname{Syl}_p(G)\) is \(f(P)\) for a unique
 \(P\in\operatorname{Syl}_p(H)\), and for that \(P\) one has \(P=Q\cap H\). Thus
 \[
@@ -122,23 +164,37 @@ O_p(H)
 \end{aligned}
 \]
 This proves part (c).
+
 :::
 
-<1>7. Let \(\bar P\neq1\) be a \(p\)-subgroup of \(G\), and put \(H=N_G(\bar P)\). Then
+:::
+
+::: {.pf-step #s7}
+
+Let \(\bar P\neq1\) be a \(p\)-subgroup of \(G\), and put \(H=N_G(\bar P)\). Then
 \(O_p(H)\neq1\).
-::: {.proof}
+
+::: pf-proof
+
 By definition of the normalizer, \(\bar P\trianglelefteq H\). Since \(\bar P\) is a
 nontrivial normal \(p\)-subgroup of \(H\), part (a), applied to \(H\), gives
 \[
 1\neq\bar P\le O_p(H).
 \]
+
 :::
 
-<1>8. If \(O_p(G)=1\), then
+:::
+
+::: pf-step
+
+If \(O_p(G)=1\), then
 \[
 |\operatorname{Syl}_p(N_G(\bar P))|<|\operatorname{Syl}_p(G)|.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Part (b) gives an injection
 \[
 \operatorname{Syl}_p(H)\hookrightarrow\operatorname{Syl}_p(G),
@@ -148,7 +204,13 @@ so \(|\operatorname{Syl}_p(H)|\le |\operatorname{Syl}_p(G)|\). If equality held,
 \[
 O_p(H)=O_p(G)\cap H=1,
 \]
-contradicting <1>7. Hence the inequality is strict. Since \(H=N_G(\bar P)\), this is
+contradicting step [](#s7){.pf-ref}. Hence the inequality is strict. Since \(H=N_G(\bar P)\), this is
 exactly part (d).
+
 :::
+
+:::
+
+:::
+
 :::

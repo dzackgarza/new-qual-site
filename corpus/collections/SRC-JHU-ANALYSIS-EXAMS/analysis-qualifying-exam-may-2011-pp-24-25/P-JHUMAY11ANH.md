@@ -36,11 +36,18 @@ and give an example of strict inequality.
 :::
 
 ::: {.solution}
-<1>1. Weak convergence implies
+
+::: pf
+
+::: {.pf-step #s1}
+
+Weak convergence implies
 $$
 \norm{f}_2\le\liminf_j\norm{f_j}_2.
 $$
-::: {.proof}
+
+::: pf-proof
+
 If $f=0$, the inequality is immediate. If $f\ne0$, set $g=f/\norm{f}_2$. Then $\norm{g}_2=1$, and weak convergence gives
 $$
 \norm{f}_2
@@ -48,21 +55,35 @@ $$
 =\lim_j\abs{\inner{f_j}{g}}
 \le\liminf_j\norm{f_j}_2.
 $$
+
 :::
 
-<1>2. Strict inequality can occur.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Strict inequality can occur.
+
+::: pf-proof
+
 Let $(e_j)$ be an orthonormal sequence in $L^2(\RR^n)$. Bessel's inequality gives $e_j\rightharpoonup0$, whereas $\norm{e_j}_2=1$ for every $j$. Thus
 $$
 \norm{0}_2=0<1=\liminf_j\norm{e_j}_2.
 $$
+
 :::
 
-<1>3. If $\norm{f_j}_2\to\norm{f}_2$, then
+:::
+
+::: {.pf-step #s3}
+
+If $\norm{f_j}_2\to\norm{f}_2$, then
 $$
 \boxed{\norm{f_j-f}_2\to0}.
 $$
-::: {.proof}
+
+::: pf-proof
+
 Weak convergence gives
 $$
 \inner{f_j}{f}\to\inner{f}{f}=\norm{f}_2^2.
@@ -75,10 +96,17 @@ $$
 &\longrightarrow 0.
 \end{aligned}
 $$
+
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-Step <1>1 proves the lower-semicontinuity assertion in part (a), step <1>2 gives the requested strict example, and step <1>3 proves part (b).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the lower-semicontinuity assertion in part (a), step [](#s2){.pf-ref} gives the requested strict example, and step [](#s3){.pf-ref} proves part (b).
+
+:::
+
+:::
+
 :::

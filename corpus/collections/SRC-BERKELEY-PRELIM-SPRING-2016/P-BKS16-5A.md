@@ -31,7 +31,12 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Under the substitution
+
+::: pf
+
+::: {.pf-step #s1}
+
+Under the substitution
 $$
 z=e^{i\theta},
 $$
@@ -42,7 +47,8 @@ $$
 $$
 where the unit circle is oriented counterclockwise.
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 e^{-i\theta}=z^{-1}
@@ -64,9 +70,14 @@ $$
 \end{aligned}
 $$
 As $\theta$ runs from $0$ to $2\pi$, $z$ traverses the unit circle once counterclockwise.
+
 :::
 
-<1>2. The integrand
+:::
+
+::: {.pf-step #s2}
+
+The integrand
 $$
 F(z)=\frac{z}{i(3z+1)^2}
 $$
@@ -75,7 +86,8 @@ $$
 \operatorname{Res}_{z=-1/3}F(z)=\frac1{9i}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 (3z+1)^2=9\left(z+\frac13\right)^2,
@@ -99,9 +111,14 @@ $$
 \frac1{9i}.
 \end{aligned}
 $$
+
 :::
 
-<1>3. Hence
+:::
+
+::: {.pf-step #s3}
+
+Hence
 $$
 \boxed{
 \int_0^{2\pi}\frac{d\theta}{(3+e^{-i\theta})^2}
@@ -110,8 +127,9 @@ $$
 }.
 $$
 
-::: {.proof}
-By steps <1>1 and <1>2 and the residue theorem,
+::: pf-proof
+
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref} and the residue theorem,
 $$
 \oint_{\abs z=1}F(z)\,dz
 =
@@ -119,11 +137,17 @@ $$
 =
 \frac{2\pi}{9}.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the requested value.
+
+:::
+
+:::
+
 :::

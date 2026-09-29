@@ -51,9 +51,14 @@ $$
 S(t)\coloneqq\int_{-\infty}^{\infty}x^2u(x,t)\,dx.
 $$
 
-<1>1. The mass $M(t)$ is constant on $(0,\infty)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The mass $M(t)$ is constant on $(0,\infty)$.
+
+::: pf-proof
+
 Fix $t_0>0$ and choose $a>t_0$. The stated rapid decrease of $u$ and
 its derivatives on the strip $0<t<a$ gives an integrable dominating
 function for $u_t=u_{xx}$ near $t_0$, so differentiation under the
@@ -74,25 +79,37 @@ M'(t)
 =0.
 $$
 Since $t_0$ was arbitrary, $M'(t)=0$ for all $t>0$.
+
 :::
 
-<1>2. For every $t>0$,
+:::
+
+::: {.pf-step #s2}
+
+For every $t>0$,
 $$
 M(t)=1.
 $$
 
-::: {.proof}
-By step <1>1, $M$ is constant on the connected interval $(0,\infty)$.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, $M$ is constant on the connected interval $(0,\infty)$.
 The hypothesis gives $M(1)=1$, so the constant value is $1$.
+
 :::
 
-<1>3. For every $t>0$,
+:::
+
+::: {.pf-step #s3}
+
+For every $t>0$,
 $$
 S'(t)=2M(t).
 $$
 
-::: {.proof}
-As in step <1>1, rapid decrease justifies differentiation under the
+::: pf-proof
+
+As in step [](#s1){.pf-ref}, rapid decrease justifies differentiation under the
 integral sign. Using $u_t=u_{xx}$ gives
 $$
 S'(t)
@@ -111,23 +128,35 @@ $$
 $$
 All boundary terms vanish because $u$ and $u_x$ are rapidly decreasing
 in $x$.
+
 :::
 
-<1>4. Therefore, for every $t>0$,
+:::
+
+::: {.pf-step #s4}
+
+Therefore, for every $t>0$,
 $$
 \boxed{
 \frac d{dt}\int_{-\infty}^{\infty}x^2u(x,t)\,dx=2
 }.
 $$
 
-::: {.proof}
-By step <1>3, the derivative is $2M(t)$, and step <1>2 gives
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the derivative is $2M(t)$, and step [](#s2){.pf-ref} gives
 $M(t)=1$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is exactly the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is exactly the required identity.
+
+:::
+
+:::
+
 :::

@@ -57,24 +57,35 @@ C(f)=\begin{pmatrix}0&0&4\\1&0&0\\0&1&-3\end{pmatrix}.
 \end{gathered}
 $$
 
-<1>1. The invariant factors form a chain of nonconstant monic polynomials
+::: pf
+
+::: pf-step
+
+The invariant factors form a chain of nonconstant monic polynomials
 $$
 d_1\mid d_2\mid\cdots\mid d_s=f,
 \qquad \sum_{i=1}^s\deg d_i=6.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Apply the rational canonical form theorem to $\mathbf Q^6$ as a
 $\mathbf Q[x]$-module, with $x$ acting by the given matrix [@DF04].
 Its invariant factors determine the companion blocks, their degrees
 sum to the dimension, and their largest member is the minimal
 polynomial. Since $\deg f=3$, all the earlier invariant factors have
 total degree $3$ and divide $f$.
+
 :::
 
-<1>2. There are exactly six such chains.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+There are exactly six such chains.
+
+::: pf-proof
+
 The positive degrees before the final factor $f$ are nondecreasing and
 sum to $3$. Their only possibilities are $(3)$, $(1,2)$, and $(1,1,1)$.
 
@@ -89,12 +100,18 @@ Thus the three chains are $(p,p^2,f)$, $(p,pq,f)$, and $(q,pq,f)$.
 For $(1,1,1)$, divisibility forces the three monic linear factors to
 coincide. They are all $p$ or all $q$, giving $(p,p,p,f)$ and
 $(q,q,q,f)$. This exhausts the possible chains.
+
 :::
 
-<1>3. Every displayed matrix has the required minimal polynomial, and
+:::
+
+::: pf-step
+
+Every displayed matrix has the required minimal polynomial, and
 no two are similar.
 
-::: {.proof}
+::: pf-proof
+
 The minimal polynomial of $C(h)$ is $h$: a polynomial $g$ annihilates
 multiplication by $x$ on $\mathbf Q[x]/(h)$ exactly when $h\mid g$,
 as can be checked by applying it to $1$. A polynomial annihilates a
@@ -103,7 +120,13 @@ minimal polynomial is the least common multiple of the block minimal
 polynomials. For each displayed divisibility chain this is $f$, and
 the block sizes sum to $6$. The chains are distinct, so uniqueness of
 the invariant factors makes the six matrices pairwise nonsimilar
-[@DF04]. Step <1>2 proves that no further rational canonical form is
+[@DF04]. Step [](#s2){.pf-ref} proves that no further rational canonical form is
 possible.
+
 :::
+
+:::
+
+:::
+
 :::

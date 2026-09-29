@@ -39,10 +39,15 @@ Lengths and projective dimensions take values in $\NN\cup\{+\infty\}$, with the 
 For an empty $X$, take the supremum in this ordered set to be zero; all assertions are then immediate.
 The hypothesis of [[P-AGH364UNIVERSALDELTA|enough locally free sheaves]] supplies finite-rank locally free epimorphisms onto every coherent sheaf.
 
-<1>1. The equivalence in (a) holds.
+::: pf
 
-::: {.proof}
-If $\mcf$ is locally free, the functor $\sheafhom_X(\mcf,-)=\mcf^\vee\otimes-$ is exact locally, so all its positive derived sheaves vanish, as proved in [[P-AGH364UNIVERSALDELTA]], step <1>2.
+::: {.pf-step #s1}
+
+The equivalence in (a) holds.
+
+::: pf-proof
+
+If $\mcf$ is locally free, the functor $\sheafhom_X(\mcf,-)=\mcf^\vee\otimes-$ is exact locally, so all its positive derived sheaves vanish, as proved in [[P-AGH364UNIVERSALDELTA]], step [](#s2){.pf-ref}.
 
 Conversely, choose an exact sequence
 $$
@@ -60,9 +65,14 @@ Thus $\mcf$ is locally a direct summand of $E$.
 Its stalks are finite projective modules over local rings and hence free.
 Since $\mcf$ is coherent, a basis at a stalk extends to a basis on a neighborhood: extend its finitely many elements to sections and shrink until the coherent kernel and cokernel of the resulting map from a finite free sheaf vanish.
 Hence $\mcf$ is locally free, proving (a).
+
 :::
 
-<1>2. There are coherent sheaves $K_j$ and exact sequences
+:::
+
+::: {.pf-step #s2}
+
+There are coherent sheaves $K_j$ and exact sequences
 $$
 K_0=\mcf,\qquad
 0\longrightarrow K_{j+1}\longrightarrow E_j\longrightarrow K_j\longrightarrow0
@@ -75,7 +85,8 @@ $$
 \quad(q\ge1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Construct the sequences successively using enough locally frees.
 At each stage the kernel is coherent by [@Har10a, Proposition II.5.7], so the construction can continue.
 The long exact sheaf-Ext sequence in the first variable [@Har10a, Proposition III.6.4] contains
@@ -87,17 +98,23 @@ $$
 $$
 For $q\ge1$ the outside terms vanish by local freeness.
 Iterating the middle isomorphisms proves the formula, with $n=0$ giving the identity.
+
 :::
 
-<1>3. The equivalence in (b) holds for every $n\ge0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The equivalence in (b) holds for every $n\ge0$.
+
+::: pf-proof
+
 If $\mcf$ has a locally free resolution of length at most $n$, [@Har10a, Proposition III.6.5] computes $\mathcal{E}xt_X^i(\mcf,\mcg)$ as the cohomology of its sheaf-Hom complex with $\mcg$.
 That complex has no terms above degree $n$, so the required groups vanish for every $i>n$ and every $\mcg$.
 
 Conversely, assume the stated vanishing.
-Step <1>2 gives $\mathcal{E}xt_X^1(K_n,\mcg)=0$ for every $\mcg$.
-By step <1>1, $K_n$ is locally free.
+Step [](#s2){.pf-ref} gives $\mathcal{E}xt_X^1(K_n,\mcg)=0$ for every $\mcg$.
+By step [](#s1){.pf-ref}, $K_n$ is locally free.
 For $n\ge1$ the exact sequence
 $$
 0\longrightarrow K_n\longrightarrow E_{n-1}\longrightarrow\cdots
@@ -106,19 +123,25 @@ $$
 is therefore a locally free resolution of length $n$.
 For $n=0$, this says directly that $\mcf=K_0$ is locally free and has a length-zero resolution.
 Thus $\operatorname{hd}(\mcf)\le n$.
+
 :::
 
-<1>4. The equality in (c) is
+:::
+
+::: {.pf-step #s4}
+
+The equality in (c) is
 $$
 \boxed{\operatorname{hd}(\mcf)=
 \sup_{x\in X}\operatorname{pd}_{\OO_{X,x}}\mcf_x.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 A finite locally free resolution stays exact on stalks and becomes a finite free resolution over $\OO_{X,x}$.
 Consequently every stalkwise projective dimension is at most $\operatorname{hd}(\mcf)$.
 
-Suppose their supremum is a finite integer $n$ and use the resolution in step <1>2.
+Suppose their supremum is a finite integer $n$ and use the resolution in step [](#s2){.pf-ref}.
 For every $x$, dimension shifting of module Ext along its stalk sequences gives
 $$
 \Ext^1_{\OO_{X,x}}((K_n)_x,N)
@@ -126,17 +149,23 @@ $$
 $$
 for every $\OO_{X,x}$-module $N$.
 The module projectivity criterion [@Har10a, Proposition III.6.10A] makes $(K_n)_x$ projective, and its finite generation makes it free over the local ring.
-The neighborhood argument from step <1>1 then makes the coherent sheaf $K_n$ locally free.
-Truncating the resolution as in step <1>3 gives $\operatorname{hd}(\mcf)\le n$.
+The neighborhood argument from step [](#s1){.pf-ref} then makes the coherent sheaf $K_n$ locally free.
+Truncating the resolution as in step [](#s3){.pf-ref} gives $\operatorname{hd}(\mcf)\le n$.
 
 If the supremum is infinite, no finite locally free resolution can exist, by the first inequality.
 If the homological dimension were infinite while the supremum were finite, the preceding construction would give a finite resolution, a contradiction.
 These observations cover all values and prove (c).
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>1 proves (a), step <1>3 proves (b), and step <1>4 proves (c).
 :::
+
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves (a), step [](#s3){.pf-ref} proves (b), and step [](#s4){.pf-ref} proves (c).
+
+:::
+
+:::
+
 :::

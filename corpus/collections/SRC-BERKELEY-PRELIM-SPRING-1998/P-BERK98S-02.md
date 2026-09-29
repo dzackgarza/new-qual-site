@@ -29,37 +29,55 @@ Prove that $f$ has at least one zero in the open unit disk.
 :::
 
 ::: {.solution}
-<1>1. The constant $m$ is positive.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The constant $m$ is positive.
+
+::: pf-proof
+
 Since
 $$
 0\leq\abs{f(0)}<m,
 $$
 we have $m>0$.
+
 :::
 
-<1>2. Suppose, for contradiction, that $f$ has no zero in the open unit disk.
+:::
+
+::: {.pf-step #s2}
+
+Suppose, for contradiction, that $f$ has no zero in the open unit disk.
 Then $g\coloneqq 1/f$ is analytic on the open unit disk and continuous on
 the closed unit disk.
 
-::: {.proof}
+::: pf-proof
+
 Under the contradiction hypothesis, $f$ has no zero for $\abs{z}<1$.
-For $\abs{z}=1$, the boundary hypothesis and step <1>1 give
+For $\abs{z}=1$, the boundary hypothesis and step [](#s1){.pf-ref} give
 $$
 \abs{f(z)}>m>0,
 $$
 so $f$ has no zero on the unit circle either. Therefore $1/f$ is analytic
 on the open disk and extends continuously to its boundary.
+
 :::
 
-<1>3. The maximum modulus principle gives
+:::
+
+::: {.pf-step #s3}
+
+The maximum modulus principle gives
 $$
 \abs{g(0)}<\frac1m.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \abs{g(0)}
 \leq
@@ -73,31 +91,49 @@ $$
 $$
 The continuous function $\abs{g}$ attains its boundary maximum, so that
 maximum is also strictly less than $1/m$.
+
 :::
 
-<1>4. The assumption in step <1>2 is impossible.
+:::
 
-::: {.proof}
-By step <1>3,
+::: pf-step
+
+The assumption in step [](#s2){.pf-ref} is impossible.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 \frac1{\abs{f(0)}}
 =\abs{g(0)}
 <\frac1m,
 $$
-and step <1>2 gives $\abs{f(0)}>0$, while step <1>1 gives $m>0$.
+and step [](#s2){.pf-ref} gives $\abs{f(0)}>0$, while step [](#s1){.pf-ref} gives $m>0$.
 Taking reciprocals therefore yields $\abs{f(0)}>m$, contrary to the
 hypothesis.
+
 :::
 
-<1>5. Hence $f$ has at least one zero in the open unit disk.
-
-::: {.proof}
-This is the negation of the contradiction hypothesis in step <1>2.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>5 is the required conclusion.
+Hence $f$ has at least one zero in the open unit disk.
+
+::: pf-proof
+
+This is the negation of the contradiction hypothesis in step [](#s2){.pf-ref}.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

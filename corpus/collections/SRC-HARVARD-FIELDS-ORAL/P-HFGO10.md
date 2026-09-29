@@ -31,34 +31,67 @@ The degree of an algebraic closure can only be
 \]
 More precisely:
 
-<1>1. One has $[\overline F:F]=1$ if and only if $F$ is algebraically closed.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+One has $[\overline F:F]=1$ if and only if $F$ is algebraically closed.
+
+::: pf-proof
+
 This is immediate from the definition of an algebraic closure.
+
 :::
 
-<1>2. If $1<[\overline F:F]<\infty$, then $F$ is real closed and
+:::
+
+::: {.pf-step #s2}
+
+If $1<[\overline F:F]<\infty$, then $F$ is real closed and
 \[
 [\overline F:F]=2,
 \qquad
 \overline F=F(i),\quad i^2=-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the Artin--Schreier characterization of real closed fields: a field whose algebraic closure is a nontrivial finite extension is real closed, and its algebraic closure is obtained by adjoining $\sqrt{-1}$ and has degree $2$.
+
 :::
 
-<1>3. Conversely, if $F$ is real closed, then
+:::
+
+::: pf-step
+
+Conversely, if $F$ is real closed, then
 \[
 [\overline F:F]=2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Again by the Artin--Schreier theorem, $F(i)$ is algebraically closed and $i\notin F$, so $F(i)/F$ is quadratic and is an algebraic closure of $F$.
+
 :::
 
-<1>4. Therefore, for every field which is neither algebraically closed nor real closed,
+:::
+
+::: pf-step
+
+Therefore, for every field which is neither algebraically closed nor real closed,
 \[
 [\overline F:F]=\infty.
 \]
-::: {.proof}
-If the degree were finite, <1>1 and <1>2 would force it to be $1$ or $2$, corresponding respectively to the algebraically closed and real closed cases.
+
+::: pf-proof
+
+If the degree were finite, steps [](#s1){.pf-ref} and [](#s2){.pf-ref} would force it to be $1$ or $2$, corresponding respectively to the algebraically closed and real closed cases.
+
 :::
+
+:::
+
+:::
+
 :::

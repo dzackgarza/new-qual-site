@@ -37,28 +37,44 @@ $$
 V=\FF_p^n.
 $$
 
-<1>1. An $n\times n$ matrix over $\FF_p$ is invertible if and only if
+::: pf
+
+::: {.pf-step #s1}
+
+An $n\times n$ matrix over $\FF_p$ is invertible if and only if
 its columns form an ordered basis of $V$.
 
-::: {.proof}
+::: pf-proof
+
 A square matrix is invertible exactly when its columns are linearly
 independent. An independent family of $n$ vectors in the
 $n$-dimensional space $V$ is a basis, and conversely every basis gives
 an invertible matrix by using its vectors as columns.
+
 :::
 
-<1>2. The first column of an invertible matrix has
+:::
+
+::: {.pf-step #s2}
+
+The first column of an invertible matrix has
 $$
 p^n-1
 $$
 possible values.
 
-::: {.proof}
+::: pf-proof
+
 The first column may be any nonzero vector of $V$. The vector space
 $V$ has $p^n$ elements, exactly one of which is zero.
+
 :::
 
-<1>3. After linearly independent columns
+:::
+
+::: {.pf-step #s3}
+
+After linearly independent columns
 $$
 v_1,\ldots,v_j
 $$
@@ -68,7 +84,8 @@ p^n-p^j
 $$
 choices for the next column.
 
-::: {.proof}
+::: pf-proof
+
 The span
 $$
 \operatorname{span}\{v_1,\ldots,v_j\}
@@ -79,9 +96,14 @@ $$
 p^n-p^j
 $$
 choices.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 $$
 \boxed{
 \left|\operatorname{GL}_n(\FF_p)\right|
@@ -92,15 +114,22 @@ $$
 }
 $$
 
-::: {.proof}
-By step <1>1, count ordered bases column by column. Step <1>2 gives
-the first factor and step <1>3 gives each remaining factor.
+::: pf-proof
+
+By step [](#s1){.pf-ref}, count ordered bases column by column. Step [](#s2){.pf-ref} gives
+the first factor and step [](#s3){.pf-ref} gives each remaining factor.
 Multiplying the numbers of choices gives the displayed product.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the requested group order.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the requested group order.
+
+:::
+
+:::
+
 :::

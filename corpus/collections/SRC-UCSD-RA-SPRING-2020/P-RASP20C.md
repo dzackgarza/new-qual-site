@@ -29,10 +29,16 @@ Define $B = \{f \in L^2([0,1]) : \|f\|_2 \leq 1\}$.
 Prove that, with respect to the $L^1([0,1])$-norm, $B$ is closed and has an empty interior.
 :::
 
-
 ::: {.solution}
-<1>1. Prove that \(B\) is closed in the \(L^1\)-norm.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that \(B\) is closed in the \(L^1\)-norm.
+
+::: pf-proof
+
 Let \((f_n)\subset B\) and suppose
 \[
 f_n\to f
@@ -49,10 +55,17 @@ for almost every \(x\in[0,1]\). Since \(\|f_n\|_2\le1\), Fatou's lemma gives
 \le1.
 \]
 Hence \(f\in L^2([0,1])\) and \(\|f\|_2\le1\), so \(f\in B\). Therefore \(B\) is \(L^1\)-closed.
+
 :::
 
-<1>2. Prove that \(B\) has empty \(L^1\)-interior.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove that \(B\) has empty \(L^1\)-interior.
+
+::: pf-proof
+
 Fix \(f\in B\) and \(\varepsilon>0\). Let
 \[
 h(x)=c\,x^{-1/2}\mathbf1_{(0,1)}(x),
@@ -82,5 +95,11 @@ Thus every \(L^1\)-ball around every point of \(B\) contains a point outside \(B
 \[
 \boxed{\operatorname{int}_{L^1}(B)=\varnothing.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -31,8 +31,14 @@ Set
 K=\mathbb Q(\alpha,\beta).
 \]
 
-<1>1. The extension $K/\mathbb Q$ is finite.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The extension $K/\mathbb Q$ is finite.
+
+::: pf-proof
+
 Since $\alpha$ is algebraic over $\mathbb Q$,
 \[
 [\mathbb Q(\alpha):\mathbb Q]<\infty.
@@ -49,11 +55,18 @@ By the tower law,
 [\mathbb Q(\alpha):\mathbb Q]
 <\infty.
 \]
+
 :::
 
-<1>2. Every element of the finite extension $K/\mathbb Q$ is algebraic over
+:::
+
+::: {.pf-step #s2}
+
+Every element of the finite extension $K/\mathbb Q$ is algebraic over
 $\mathbb Q$.
-::: {.proof}
+
+::: pf-proof
+
 Let $\gamma\in K$. If $d=[K:\mathbb Q]$, then the $d+1$ elements
 \[
 1,\gamma,\gamma^2,\ldots,\gamma^d
@@ -64,10 +77,23 @@ $c_0,\ldots,c_d$, not all zero, such that
 c_0+c_1\gamma+\cdots+c_d\gamma^d=0.
 \]
 Hence $\gamma$ satisfies a nonzero polynomial in $\mathbb Q[x]$.
+
 :::
 
-<1>3. Therefore $\alpha+\beta$ is algebraic over $\mathbb Q$.
-::: {.proof}
-The sum $\alpha+\beta$ belongs to $K$, so apply <1>2.
 :::
+
+::: pf-step
+
+Therefore $\alpha+\beta$ is algebraic over $\mathbb Q$.
+
+::: pf-proof
+
+The sum $\alpha+\beta$ belongs to $K$, so apply step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

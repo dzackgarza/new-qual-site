@@ -46,9 +46,14 @@ Write $dA=dx\,dy$. Normality here means that every sequence
 has a subsequence converging uniformly on compact subsets
 to a finite holomorphic function.
 
-<1>1. A disk contained in $U$ gives a pointwise mean-square estimate.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+A disk contained in $U$ gives a pointwise mean-square estimate.
+
+::: pf-proof
+
 Suppose $\overline{D(a,r)}\subset U$. For $0<\rho<r$,
 Cauchy's formula at the center and Cauchy–Schwarz give
 $$
@@ -61,29 +66,41 @@ over $0<\rho<r$ yields, by polar coordinates,
 $$
 \pi r^2|f(a)|^2\leq\int_{D(a,r)}|f|^2\,dA.
 $$
+
 :::
 
-<1>2. The required compact-set bound holds with a constant independent of $f$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The required compact-set bound holds with a constant independent of $f$.
+
+::: pf-proof
+
 For nonempty compact $K\subset U$, choose $r>0$ with
 $\overline{D(a,r)}\subset U$ for all $a\in K$.
 If $U\ne\mathbb C$, take half the distance from $K$ to
 the closed set $\mathbb C\setminus U$; this distance is
 positive by compactness and openness. For $U=\mathbb C$,
-take $r=1$. Step <1>1 gives
+take $r=1$. Step [](#s1){.pf-ref} gives
 $$
 \sup_{a\in K}|f(a)|\leq\frac1{\sqrt\pi r}\|f\|_{L^2(U)}.
 $$
 Thus $C_K=1/(\sqrt\pi r)$ works. If the norm is infinite,
 the inequality holds in the extended sense. For empty
 $K$ the pointwise assertion has no points to check.
+
 :::
 
-<1>3. The family with $L^2$ norm at most one is normal on $U$.
+:::
 
-::: {.proof}
-Step <1>2 makes this family uniformly bounded on every
+::: pf-step
+
+The family with $L^2$ norm at most one is normal on $U$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} makes this family uniformly bounded on every
 compact subset of $U$. Montel's theorem gives normality
 [@SS03]. This also applies when $U$ is disconnected:
 its components are open and each contains a point with
@@ -100,14 +117,20 @@ In fact the limit remains in the family: pointwise
 convergence and Fatou's lemma give
 $\int_U|f|^2\,dA\leq\liminf_j\int_U|f_{n_j}|^2\,dA\leq1$
 [@Fol13].
+
 :::
 
-<1>4. Square integrability makes the isolated singularity removable.
+:::
 
-::: {.proof}
+::: pf-step
+
+Square integrability makes the isolated singularity removable.
+
+::: pf-proof
+
 Now let $U=\{0<|z|<1\}$ and $\int_U|f|^2\,dA<\infty$.
 For $0<|a|<1/2$, the closed disk of radius $r=|a|/2$
-centered at $a$ lies in $U$. Step <1>1 implies
+centered at $a$ lies in $U$. Step [](#s1){.pf-ref} implies
 $$
 |a|^2|f(a)|^2
 \leq\frac4\pi\int_{D(a,|a|/2)}|f|^2\,dA
@@ -126,5 +149,11 @@ singularity theorem extends it holomorphically with $h(0)=0$
 $h(z)=zF(z)$ for a holomorphic $F$ near zero. For $z\ne0$,
 this $F$ equals $f$. It supplies the required holomorphic
 extension across zero.
+
 :::
+
+:::
+
+:::
+
 :::

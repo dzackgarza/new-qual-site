@@ -26,9 +26,15 @@ Let $f:\mathbb R\to\mathbb R$ be bounded. Suppose the graph of $f$ is a closed s
 :::
 
 ::: {.solution}
-<1>1. If $x_n\to x$ in $\RR$, then $f(x_n)\to f(x)$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+If $x_n\to x$ in $\RR$, then $f(x_n)\to f(x)$.
+
+::: pf-proof
+
 Suppose instead that $f(x_n)$ does not converge to $f(x)$. Then there are
 $\varepsilon>0$ and a subsequence $(x_{n_k})$ such that
 $$
@@ -50,19 +56,31 @@ $$
 \abs{f(x_{n_{k_j}})-f(x)}\geq\varepsilon
 $$
 gives $\abs{y-f(x)}\geq\varepsilon$, a contradiction.
+
 :::
 
-<1>2. The function $f$ is continuous on $\RR$.
+:::
 
-::: {.proof}
-Step <1>1 shows that for every $x\in\RR$ and every sequence $x_n\to x$, one
+::: {.pf-step #s2}
+
+The function $f$ is continuous on $\RR$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} shows that for every $x\in\RR$ and every sequence $x_n\to x$, one
 has $f(x_n)\to f(x)$. By the sequential criterion for continuity on
 $\RR$, $f$ is continuous at every $x$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

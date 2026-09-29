@@ -48,14 +48,20 @@ In particular, the sheaf of differentials $\Omega$ on $\PP^2$ is not an extensio
 :::
 
 ::: {.solution}
-<1>1. Let $\mathcal E$ be locally free of rank $r\geq2$ on the nonsingular
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $\mathcal E$ be locally free of rank $r\geq2$ on the nonsingular
 projective curve $C$. There is an invertible subsheaf
 $$
 \mathcal L\hookrightarrow\mathcal E
 $$
 whose quotient is locally free of rank $r-1$.
 
-::: {.proof}
+::: pf-proof
+
 Fix a very ample invertible sheaf $\OO_C(1)$. For $n\gg0$, Serre's theorem
 makes
 $$
@@ -85,15 +91,21 @@ Thus one may take
 $$
 \mathcal L=\OO_C(-n).
 $$
+
 :::
 
-<1>2. Every locally free sheaf of rank $r$ on $C$ is a successive extension
+:::
+
+::: {.pf-step #s2}
+
+Every locally free sheaf of rank $r$ on $C$ is a successive extension
 of invertible sheaves.
 
-::: {.proof}
+::: pf-proof
+
 Proceed by induction on $r$. For $r=1$ there is nothing to prove.
 
-Assume $r\geq2$. By step <1>1 there is an exact sequence
+Assume $r\geq2$. By step [](#s1){.pf-ref} there is an exact sequence
 $$
 0\longrightarrow\mathcal L
 \longrightarrow\mathcal E
@@ -133,9 +145,14 @@ $$
 \subseteq\mathcal E_r=\mathcal E
 $$
 is the required filtration. This proves part (a).
+
 :::
 
-<1>3. The cotangent bundle on $\PP^2$ has total Chern class
+:::
+
+::: {.pf-step #s3}
+
+The cotangent bundle on $\PP^2$ has total Chern class
 $$
 c\qty(\Omega^1_{\PP^2})=1-3H+3H^2,
 $$
@@ -144,7 +161,8 @@ $$
 H=c_1\qty(\OO_{\PP^2}(1)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The cotangent Euler sequence is
 $$
 0\longrightarrow\Omega^1_{\PP^2}
@@ -163,12 +181,18 @@ Since $H^3=0$ in the Chow ring of $\PP^2$,
 $$
 (1-H)^3=1-3H+3H^2.
 $$
+
 :::
 
-<1>4. The bundle $\Omega^1_{\PP^2}$ is not an extension of invertible
+:::
+
+::: {.pf-step #s4}
+
+The bundle $\Omega^1_{\PP^2}$ is not an extension of invertible
 sheaves.
 
-::: {.proof}
+::: pf-proof
+
 Because $\Omega^1_{\PP^2}$ has rank two, a successive-extension filtration
 would give an exact sequence
 $$
@@ -185,7 +209,7 @@ $$
 \qquad
 \mathcal M\cong\OO(b).
 $$
-Multiplicativity of Chern classes and step <1>3 would then give
+Multiplicativity of Chern classes and step [](#s3){.pf-ref} would then give
 $$
 1-3H+3H^2
 =
@@ -211,13 +235,19 @@ This is impossible over $\ZZ$. Hence
 $$
 \boxed{\Omega^1_{\PP^2}\text{ is not a successive extension of line bundles}.}
 $$
+
 :::
 
-<1>5. For every integer $n\geq2$, there is a smooth projective $n$-fold with
+:::
+
+::: {.pf-step #s5}
+
+For every integer $n\geq2$, there is a smooth projective $n$-fold with
 a locally free sheaf that is not a successive extension of invertible sheaves.
 
-::: {.proof}
-For $n=2$, use step <1>4. For $n>2$, put
+::: pf-proof
+
+For $n=2$, use step [](#s4){.pf-ref}. For $n>2$, put
 $$
 Y=\PP^2\times\PP^{n-2}
 $$
@@ -238,14 +268,20 @@ $$
 \cong
 \Omega^1_{\PP^2}
 $$
-with invertible successive quotients, contradicting step <1>4. Thus the
+with invertible successive quotients, contradicting step [](#s4){.pf-ref}. Thus the
 curve statement does not extend to any dimension $n\geq2$, proving part (b).
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>5 prove part (b), including
+::: pf-qed
+
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove part (a), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref} prove part (b), including
 the stated example on $\PP^2$.
+
 :::
+
+:::
+
 :::

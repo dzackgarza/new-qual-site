@@ -35,9 +35,14 @@ $$
 R(z)\coloneqq\frac{e^z}{z(2z+1)^2}.
 $$
 
-<1>1. The poles of $R$ inside $C$ are a simple pole at $z=0$ and a double pole at $z=-1/2$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The poles of $R$ inside $C$ are a simple pole at $z=0$ and a double pole at $z=-1/2$.
+
+::: pf-proof
+
 The denominator vanishes only at
 $$
 z=0
@@ -48,14 +53,20 @@ Both points lie in $\abs z<1$. The factor $z$ occurs to the first power, while
 $$
 (2z+1)^2=4(z+1/2)^2.
 $$
+
 :::
 
-<1>2. The residue at $z=0$ is
+:::
+
+::: {.pf-step #s2}
+
+The residue at $z=0$ is
 $$
 \operatorname{Res}(R;0)=1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since the pole is simple,
 $$
 \operatorname{Res}(R;0)
@@ -63,16 +74,22 @@ $$
 \lim_{z\to0}\frac{e^z}{(2z+1)^2}
 =1.
 $$
+
 :::
 
-<1>3. The residue at $z=-1/2$ is
+:::
+
+::: {.pf-step #s3}
+
+The residue at $z=-1/2$ is
 $$
 \operatorname{Res}(R;-1/2)
 =
 -\frac32e^{-1/2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 R(z)
@@ -95,16 +112,22 @@ $$
 =
 -\frac32e^{-1/2}.
 $$
+
 :::
 
-<1>4. The integral is
+:::
+
+::: {.pf-step #s4}
+
+The integral is
 $$
 \boxed{
 2\pi i\left(1-\frac32e^{-1/2}\right)}.
 $$
 
-::: {.proof}
-By the residue theorem and steps <1>2--<1>3,
+::: pf-proof
+
+By the residue theorem and steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \begin{aligned}
 \int_C R(z)\,dz
@@ -115,11 +138,17 @@ $$
 &=2\pi i\left(1-\frac32e^{-1/2}\right).
 \end{aligned}
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

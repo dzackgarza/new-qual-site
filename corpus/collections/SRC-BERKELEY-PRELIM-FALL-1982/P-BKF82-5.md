@@ -41,8 +41,14 @@ $$
 I_n(g)=\int_0^1 g(x)\varphi_n(x)\,dx.
 $$
 
-<1>1. The total masses $I_n(1)$ are uniformly bounded.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The total masses $I_n(1)$ are uniformly bounded.
+
+::: pf-proof
+
 The hypothesis for $k=0$ says that
 $$
 I_n(1)=\int_0^1\varphi_n(x)\,dx
@@ -57,10 +63,17 @@ $$
 \le \|g\|_\infty I_n(1)
 \le M\|g\|_\infty.
 $$
+
 :::
 
-<1>2. The sequence $I_n(p)$ converges for every polynomial $p$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The sequence $I_n(p)$ converges for every polynomial $p$.
+
+::: pf-proof
+
 If
 $$
 p(x)=\sum_{k=0}^d c_kx^k,
@@ -71,21 +84,28 @@ I_n(p)=\sum_{k=0}^d c_k I_n(x^k).
 $$
 Each moment on the right converges by hypothesis, and the sum is finite.
 Therefore $I_n(p)$ converges.
+
 :::
 
-<1>3. For every continuous $f$, the sequence $I_n(f)$ is Cauchy.
-::: {.proof}
+:::
+
+::: pf-step
+
+For every continuous $f$, the sequence $I_n(f)$ is Cauchy.
+
+::: pf-proof
+
 Let $\varepsilon>0$. By the Weierstrass approximation theorem, choose a
 polynomial $p$ such that
 $$
 \|f-p\|_\infty<\frac{\varepsilon}{3M}.
 $$
-By step <1>2, $I_n(p)$ converges, so there is $N$ such that for
+By step [](#s2){.pf-ref}, $I_n(p)$ converges, so there is $N$ such that for
 $m,n\ge N$,
 $$
 |I_n(p)-I_m(p)|<\frac\varepsilon3.
 $$
-Then step <1>1 gives
+Then step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 |I_n(f)-I_m(f)|
@@ -95,10 +115,17 @@ $$
 \end{aligned}
 $$
 Thus $(I_n(f))$ is Cauchy in $\mathbb R$.
+
 :::
 
-<1>4. Conclude convergence.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude convergence.
+
+::: pf-proof
+
 The real numbers are complete, so the Cauchy sequence $I_n(f)$ converges.
 Hence for every $f\in C([0,1])$,
 $$
@@ -106,5 +133,11 @@ $$
 \lim_{n\to\infty}\int_0^1 f(x)\varphi_n(x)\,dx
 \text{ exists}.}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

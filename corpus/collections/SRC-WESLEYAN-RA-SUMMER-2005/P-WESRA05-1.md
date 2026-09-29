@@ -36,8 +36,15 @@ Let $X$ be nonempty and let $\mathcal A$ be a collection of subsets of $X$.
 :::
 
 ::: {.solution}
-<1>1. Definition.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Definition.
+
+::: pf-proof
+
 A sigma-algebra $\mathcal A$ on $X$ is a collection of subsets of $X$ such that
 \[
 X\in\mathcal A,
@@ -46,10 +53,17 @@ $A\in\mathcal A$ implies $X\setminus A\in\mathcal A$, and whenever $A_1,A_2,\ldo
 \[
 \bigcup_{n=1}^\infty A_n\in\mathcal A.
 \]
+
 :::
 
-<1>2. The infinitely-often set is measurable.
-::: {.proof}
+:::
+
+::: pf-step
+
+The infinitely-often set is measurable.
+
+::: pf-proof
+
 The set of points belonging to infinitely many $A_n$ is
 \[
 \limsup_{n\to\infty}A_n
@@ -57,10 +71,17 @@ The set of points belonging to infinitely many $A_n$ is
 \bigcap_{N=1}^\infty\bigcup_{n\ge N}A_n.
 \]
 Since sigma-algebras are closed under countable unions and intersections, this set belongs to $\mathcal A$.
+
 :::
 
-<1>3. The eventually-always set is measurable.
-::: {.proof}
+:::
+
+::: pf-step
+
+The eventually-always set is measurable.
+
+::: pf-proof
+
 The set of points belonging to all but finitely many $A_n$ is
 \[
 \liminf_{n\to\infty}A_n
@@ -68,20 +89,34 @@ The set of points belonging to all but finitely many $A_n$ is
 \bigcup_{N=1}^\infty\bigcap_{n\ge N}A_n.
 \]
 Again this belongs to $\mathcal A$.
+
 :::
 
-<1>4. Compare the two sets.
-::: {.proof}
+:::
+
+::: pf-step
+
+Compare the two sets.
+
+::: pf-proof
+
 If a point belongs to all but finitely many $A_n$, then it certainly belongs to infinitely many of them.
 Therefore
 \[
 \boxed{\liminf A_n\subseteq\limsup A_n.}
 \]
 Equality holds exactly when membership in the sequence $(A_n)$ eventually stabilizes for every point outside no exceptional oscillatory set; equivalently, no point belongs to infinitely many $A_n$ and also to infinitely many complements $A_n^c$.
+
 :::
 
-<1>5. Determine the possible sizes on a five-point set.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the possible sizes on a five-point set.
+
+::: pf-proof
+
 Every sigma-algebra on a finite set is determined by its atoms, which form a partition of $X$.
 If there are $k$ atoms, then every measurable set is a union of atoms, so the sigma-algebra has exactly
 \[
@@ -95,5 +130,11 @@ Hence the possible cardinalities are
 \[
 \boxed{2,4,8,16,32.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

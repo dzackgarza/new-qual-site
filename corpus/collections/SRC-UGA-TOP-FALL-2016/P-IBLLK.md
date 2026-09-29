@@ -40,12 +40,18 @@ E=\{(x_1,x_2,0)\in S^2\}
 \]
 for the equator, and let $D_+$ and $D_-$ be the closed upper and lower hemispheres.
 
-<1>1. The image of the equator in $X$ is
+::: pf
+
+::: {.pf-step #s1}
+
+The image of the equator in $X$ is
 \[
 E/(x\sim -x)\cong\RP^1\cong S^1.
 \]
 Give it a CW structure with one $0$-cell $v$ and one $1$-cell $e$.
-::: {.proof}
+
+::: pf-proof
+
 The antipodal action on the circle is free, and the quotient map
 \[
 q_E:S^1\longrightarrow S^1/(z\sim -z)
@@ -60,9 +66,14 @@ the quotient map becomes
 z\longmapsto z^2.
 \]
 Thus the quotient equator is a circle and has the stated one-vertex CW structure.
+
 :::
 
-<1>2. The interiors of $D_+$ and $D_-$ descend to two open $2$-cells $e_+^2$ and $e_-^2$ of $X$.
+:::
+
+::: {.pf-step #s2}
+
+The interiors of $D_+$ and $D_-$ descend to two open $2$-cells $e_+^2$ and $e_-^2$ of $X$.
 Hence $X$ has a CW structure with
 \[
 \#\{0\text{-cells}\}=1,
@@ -71,7 +82,9 @@ Hence $X$ has a CW structure with
 \qquad
 \#\{2\text{-cells}\}=2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The equivalence relation identifies points only on the equator.
 Therefore the quotient map is injective on each open hemisphere, so each hemisphere interior maps homeomorphically onto an open disk in $X$.
 
@@ -79,11 +92,16 @@ The characteristic map of either $2$-cell is the quotient map
 \[
 D_\pm\longrightarrow X.
 \]
-Its boundary lands in the quotient equator from <1>1.
+Its boundary lands in the quotient equator from step [](#s1){.pf-ref}.
 Together with the cells $v,e$, these two hemisphere interiors exhaust $X$.
+
 :::
 
-<1>3. After choosing orientations of the two $2$-cells suitably, both attaching maps have degree $2$ on the $1$-skeleton.
+:::
+
+::: {.pf-step #s3}
+
+After choosing orientations of the two $2$-cells suitably, both attaching maps have degree $2$ on the $1$-skeleton.
 Thus
 \[
 d_2:\ZZ e_+^2\oplus\ZZ e_-^2\longrightarrow\ZZ e
@@ -92,9 +110,11 @@ is given by
 \[
 d_2(a,b)=2a+2b.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The boundary circle of either hemisphere is the original equator $E$.
-By <1>1, its attaching map is exactly the antipodal quotient
+By step [](#s1){.pf-ref}, its attaching map is exactly the antipodal quotient
 \[
 S^1\longrightarrow E/(x\sim -x)\cong S^1,
 \]
@@ -106,22 +126,34 @@ Therefore
 \[
 d_2=(2\ \ 2).
 \]
+
 :::
 
-<1>4. The cellular differential
+:::
+
+::: {.pf-step #s4}
+
+The cellular differential
 \[
 d_1:\ZZ e\longrightarrow\ZZ v
 \]
 is zero.
-::: {.proof}
+
+::: pf-proof
+
 The unique $1$-cell is a loop whose two endpoints are both the unique $0$-cell $v$.
 Hence its cellular boundary is
 \[
 v-v=0.
 \]
+
 :::
 
-<1>5. The cellular chain complex is therefore
+:::
+
+::: {.pf-step #s5}
+
+The cellular chain complex is therefore
 \[
 0
 \longrightarrow
@@ -132,33 +164,49 @@ v-v=0.
 \ZZ
 \longrightarrow0.
 \]
-::: {.proof}
-This is immediate from the cell counts in <1>2 and the boundary computations in <1>3 and <1>4.
+
+::: pf-proof
+
+This is immediate from the cell counts in step [](#s2){.pf-ref} and the boundary computations in steps [](#s3){.pf-ref} and [](#s4){.pf-ref}.
+
 :::
 
-<1>6. The second homology group is
+:::
+
+::: {.pf-step #s6}
+
+The second homology group is
 \[
 \boxed{H_2(X;\ZZ)\cong\ZZ.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 There are no $3$-cells, so
 \[
 H_2(X)=\ker d_2.
 \]
-From <1>5,
+From step [](#s5){.pf-ref},
 \[
 \ker d_2
 =\{(a,b)\in\ZZ^2:2a+2b=0\}
 =\{(a,-a):a\in\ZZ\}
 \cong\ZZ.
 \]
+
 :::
 
-<1>7. The first homology group is
+:::
+
+::: {.pf-step #s7}
+
+The first homology group is
 \[
 \boxed{H_1(X;\ZZ)\cong\ZZ/2\ZZ.}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $d_1=0$,
 \[
 H_1(X)
@@ -171,9 +219,14 @@ Indeed,
 =\{2a+2b:a,b\in\ZZ\}
 =2\ZZ.
 \]
+
 :::
 
-<1>8. Finally,
+:::
+
+::: pf-step
+
+Finally,
 \[
 \boxed{
 H_i(X;\ZZ)
@@ -184,12 +237,20 @@ H_i(X;\ZZ)
 0, & i\ge3.
 \end{cases}}
 \]
-::: {.proof}
+
+::: pf-proof
+
 The space has one $0$-cell and $d_1=0$, so
 \[
 H_0(X)\cong\ZZ.
 \]
-Steps <1>6 and <1>7 compute the remaining nonzero groups.
+Steps [](#s6){.pf-ref} and [](#s7){.pf-ref} compute the remaining nonzero groups.
 There are no cells in dimensions at least $3$, so the higher homology groups vanish.
+
 :::
+
+:::
+
+:::
+
 :::

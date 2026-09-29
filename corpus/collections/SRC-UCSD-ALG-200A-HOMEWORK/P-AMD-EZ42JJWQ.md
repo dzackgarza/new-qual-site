@@ -42,8 +42,15 @@ Prove that $D_{2n}$ is nilpotent if and only if $n$ is a power of $2$.
 :::
 
 ::: {.solution}
-<1>1. Every finite $p$-group is nilpotent.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every finite $p$-group is nilpotent.
+
+::: pf-proof
+
 We induct on the order of a finite $p$-group $P$.
 The trivial group is nilpotent.
 If $P\ne1$, the class equation gives
@@ -75,10 +82,17 @@ Consequently
   =1.
 \]
 Hence $P$ is nilpotent.
+
 :::
 
-<1>2. If $n$ is a power of $2$, then $D_{2n}$ is nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+If $n$ is a power of $2$, then $D_{2n}$ is nilpotent.
+
+::: pf-proof
+
 Write
 \[
 n=2^i.
@@ -88,12 +102,19 @@ Then
 |D_{2n}|=2n=2^{i+1},
 \]
 so $D_{2n}$ is a finite $2$-group.
-By <1>1 it is nilpotent.
+By step [](#s1){.pf-ref} it is nilpotent.
+
 :::
 
-<1>3. Suppose that $n$ is not a power of $2$.
+:::
+
+::: {.pf-step #s3}
+
+Suppose that $n$ is not a power of $2$.
 Then $D_{2n}$ contains elements of relatively prime orders that do not commute.
-::: {.proof}
+
+::: pf-proof
+
 Since $n$ is not a power of $2$, some odd prime $p$ divides $n$.
 Set
 \[
@@ -117,17 +138,31 @@ Since $p$ is odd and $x$ has order $p>2$,
 x^{-1}\ne x.
 \]
 Thus $sx\ne xs$.
+
 :::
 
-<1>4. If $n$ is not a power of $2$, then $D_{2n}$ is not nilpotent.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+
+If $n$ is not a power of $2$, then $D_{2n}$ is not nilpotent.
+
+::: pf-proof
+
 For a finite nilpotent group, any two elements of relatively prime orders commute.
-By <1>3, $D_{2n}$ has an element $x$ of odd prime order and a reflection $s$ of order $2$ that do not commute.
+By step [](#s3){.pf-ref}, $D_{2n}$ has an element $x$ of odd prime order and a reflection $s$ of order $2$ that do not commute.
 Therefore $D_{2n}$ cannot be nilpotent.
+
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-The forward and reverse directions are <1>4 and <1>2, respectively.
 :::
+
+::: pf-qed
+
+The forward and reverse directions are steps [](#s4){.pf-ref} and [](#s2){.pf-ref}, respectively.
+
+:::
+
+:::
+
 :::

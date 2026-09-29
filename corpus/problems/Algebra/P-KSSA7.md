@@ -39,7 +39,12 @@ n=3,4,6.
 :::
 
 ::: {.solution}
-<1>1. The affine embedding.
+
+::: pf
+
+::: pf-step
+
+The affine embedding.
 The roots of $x^n-2$ are
 \[
 \zeta_n^j\alpha,
@@ -60,7 +65,11 @@ for a unique $b\in(\ZZ/n\ZZ)^\times$. Since $\alpha$ and $\zeta_n$ generate $L$,
 (a,b)(c,d)=(a+bc,bd).
 \]
 
-<1>2. The cases $n=3,4,6$ are dihedral.
+:::
+
+::: pf-step
+
+The cases $n=3,4,6$ are dihedral.
 For $n=3,4,6$, the cyclotomic field has degree $2$. In each case
 \[
 \QQ(\alpha)\cap\QQ(\zeta_n)=\QQ:
@@ -86,7 +95,11 @@ Hence
 \Gal(L/\QQ)\cong D_{2n}.
 \]
 
-<1>3. A dihedral group forces a very small cyclotomic quotient.
+:::
+
+::: pf-step
+
+A dihedral group forces a very small cyclotomic quotient.
 Restriction gives a surjection
 \[
 \Gal(L/\QQ)\twoheadrightarrow
@@ -105,7 +118,11 @@ n=5,8,10,12.
 \]
 For $n=5,10$, the unit group is cyclic of order $4$, so it cannot be an abelian quotient of a dihedral group. It remains to exclude $8$ and $12$.
 
-<1>4. The case $n=8$ is not dihedral.
+:::
+
+::: pf-step
+
+The case $n=8$ is not dihedral.
 Here
 \[
 \QQ(\alpha)\cap\QQ(\zeta_8)=\QQ(\sqrt2),
@@ -149,7 +166,16 @@ srs=r^3\ne r^{-1}=r^7.
 \]
 Therefore the group is not dihedral.
 
-<1>5. The case $n=12$ is not dihedral.
+:::
+
+::: pf-step
+
+The case $n=12$ is not dihedral.
+
+:::
+
+:::
+
 Suppose for contradiction that
 \[
 \Gal(L/\QQ)\cong D_{24}.

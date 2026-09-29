@@ -41,8 +41,15 @@ Let $N$ be a real vector space.
 :::
 
 ::: {.solution}
-<1>1. Definition of a norm.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Definition of a norm.
+
+::: pf-proof
+
 A norm on $N$ is a function $\|\cdot\|:N\to[0,\infty)$ such that for all $x,y\in N$ and all real scalars $a$,
 \[
 \|x\|=0\iff x=0,
@@ -51,10 +58,17 @@ A norm on $N$ is a function $\|\cdot\|:N\to[0,\infty)$ such that for all $x,y\in
 \qquad
 \|x+y\|\le\|x\|+\|y\|.
 \]
+
 :::
 
-<1>2. Determine the admissible exponent.
-::: {.proof}
+:::
+
+::: pf-step
+
+Determine the admissible exponent.
+
+::: pf-proof
+
 If $\|x\|_p=|x|^p$ is a norm, absolute homogeneity requires
 \[
 |ax|^p=|a|\,|x|^p
@@ -71,15 +85,29 @@ Hence
 \[
 \boxed{\|x\|_p=|x|^p\text{ is a norm exactly when }p=1.}
 \]
+
 :::
 
-<1>3. Definition of a Banach space.
-::: {.proof}
+:::
+
+::: pf-step
+
+Definition of a Banach space.
+
+::: pf-proof
+
 A normed vector space is a Banach space if it is complete for the metric induced by its norm, equivalently if every norm-Cauchy sequence converges in norm to an element of the space.
+
 :::
 
-<1>4. Hahn--Banach theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+Hahn--Banach theorem.
+
+::: pf-proof
+
 One standard real form is the following.
 Let $X$ be a real normed vector space, let $M\subseteq X$ be a linear subspace, and let $f\in M^*$ be bounded.
 Then there exists $F\in X^*$ such that
@@ -88,10 +116,17 @@ F|_M=f
 \qquad\text{and}\qquad
 \|F\|=\|f\|.
 \]
+
 :::
 
-<1>5. Pull the Cauchy sequence back through the inverse map.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pull the Cauchy sequence back through the inverse map.
+
+::: pf-proof
+
 The map $T:B\to B'$ is a bounded linear bijection between Banach spaces.
 By the Open Mapping Theorem, its inverse
 \[
@@ -106,5 +141,11 @@ Therefore there is $C>0$ such that
 \]
 Since $(y_n)$ is Cauchy in $B'$, it follows that $(x_n)$ is Cauchy in $B$.
 Because $B$ is complete, $(x_n)$ converges in $B$.
+
 :::
+
+:::
+
+:::
+
 :::

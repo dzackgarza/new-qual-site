@@ -63,11 +63,17 @@ a\circ p_{-n},&n<0,
 \]
 where $c$ is any constant map.
 
-<1>1. For every $m\ge1$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $m\ge1$,
 \[
 \deg p_m=m.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Take the regular value $1\in\CC\subset\widehat{\CC}$.
 Its inverse image under $p_m$ consists of the $m$ distinct $m$th roots of unity.
 At each such point,
@@ -79,10 +85,17 @@ Therefore
 \[
 \deg p_m=m.
 \]
+
 :::
 
-<1>2. The antipodal map on $S^2$ has degree $-1$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The antipodal map on $S^2$ has degree $-1$.
+
+::: pf-proof
+
 The antipodal map is the restriction to the unit sphere of the orthogonal linear map
 \[
 -I:\RR^3\longrightarrow\RR^3.
@@ -96,11 +109,18 @@ one has
 \[
 \deg a=-1.
 \]
+
 :::
 
-<1>3. The map $f_n$ has degree $n$ for every $n\in\ZZ$.
-::: {.proof}
-If $n>0$, this is <1>1. If $n=0$, a constant map has degree $0$.
+:::
+
+::: pf-step
+
+The map $f_n$ has degree $n$ for every $n\in\ZZ$.
+
+::: pf-proof
+
+If $n>0$, this is step [](#s1){.pf-ref}. If $n=0$, a constant map has degree $0$.
 If $n<0$, multiplicativity of degree under composition gives
 \[
 \deg f_n
@@ -108,14 +128,21 @@ If $n<0$, multiplicativity of degree under composition gives
 =(-1)(-n)
 =n.
 \]
+
 :::
 
-<1>4. Every fixed-point-free continuous map
+:::
+
+::: {.pf-step #s4}
+
+Every fixed-point-free continuous map
 \[
 f:S^2\longrightarrow S^2
 \]
 has degree $-1$.
-::: {.proof}
+
+::: pf-proof
+
 Assume
 \[
 f(x)\neq x
@@ -146,20 +173,33 @@ H(x,0)=f(x),
 \qquad
 H(x,1)=-x=a(x).
 \]
-Hence $f\simeq a$, so homotopy invariance of degree and <1>2 give
+Hence $f\simeq a$, so homotopy invariance of degree and step [](#s2){.pf-ref} give
 \[
 \deg f=-1.
 \]
+
 :::
 
-<1>5. A degree-$n$ self-map of $S^2$ must have a fixed point exactly when $n\neq-1$.
-::: {.proof}
-By the contrapositive of <1>4, every self-map of degree $n\neq-1$ has a fixed point.
+:::
+
+::: pf-step
+
+A degree-$n$ self-map of $S^2$ must have a fixed point exactly when $n\neq-1$.
+
+::: pf-proof
+
+By the contrapositive of step [](#s4){.pf-ref}, every self-map of degree $n\neq-1$ has a fixed point.
 For $n=-1$, our chosen example is
 \[
 f_{-1}=a\circ p_1=a,
 \]
 the antipodal map, which has no fixed point because $x=-x$ on $S^2$ would imply $x=0$.
 Thus degree $-1$ is the unique degree for which a fixed point is not forced, and the displayed family realizes that exception.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -33,8 +33,15 @@ Prove that $\pi_1(X, x_0) = \ts{ e }$.
 :::
 
 ::: {.solution}
-<1>1. Let $[\gamma]\in\pi_1(X,x_0)$ be arbitrary.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Let $[\gamma]\in\pi_1(X,x_0)$ be arbitrary.
+
+::: pf-proof
+
 Choose a representative loop
 \[
 \gamma:S^1\longrightarrow X
@@ -58,10 +65,17 @@ H(z,0)=\gamma(z),
 \qquad
 H(z,1)=x_0.
 \]
+
 :::
 
-<1>2. The track of the basepoint during the free homotopy is a loop at $x_0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The track of the basepoint during the free homotopy is a loop at $x_0$.
+
+::: pf-proof
+
 Define
 \[
 \alpha(t)=H(*,t).
@@ -75,10 +89,17 @@ and
 \alpha(1)=H(*,1)=x_0.
 \]
 Thus $\alpha$ is a loop based at $x_0$.
+
 :::
 
-<1>3. The loop $\gamma*\alpha*\alpha^{-1}$ is null-homotopic.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The loop $\gamma*\alpha*\alpha^{-1}$ is null-homotopic.
+
+::: pf-proof
+
 Let
 \[
 q:[0,1]\longrightarrow S^1,
@@ -109,11 +130,18 @@ Therefore
 [\gamma][\alpha][\alpha]^{-1}=e
 \]
 in $\pi_1(X,x_0)$.
+
 :::
 
-<1>4. The class $[\gamma]$ is trivial.
-::: {.proof}
-From <1>3,
+:::
+
+::: pf-step
+
+The class $[\gamma]$ is trivial.
+
+::: pf-proof
+
+From step [](#s3){.pf-ref},
 \[
 [\gamma][\alpha][\alpha]^{-1}=e.
 \]
@@ -129,5 +157,11 @@ The class $[\gamma]$ was arbitrary, so
 \[
 \boxed{\pi_1(X,x_0)=\{e\}}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

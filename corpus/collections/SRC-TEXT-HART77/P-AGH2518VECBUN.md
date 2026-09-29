@@ -58,9 +58,14 @@ A section is an $A$-algebra map $A[x_1,\ldots,x_n]\to A$, determined by the tupl
 Write $\mathcal S_X=\mcs(X/Y)$ for the sheaf of sections of a bundle $f:X\to Y$.
 All duals and symmetric algebras in this solution are over $\OO_Y$, and all spectra of sheaves of algebras are relative spectra.
 
-<1>1. The construction $\mathbf V(\mce)=\Spec_Y S(\mce)$ gives the bundle in part (a), independently of the chosen frames.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The construction $\mathbf V(\mce)=\Spec_Y S(\mce)$ gives the bundle in part (a), independently of the chosen frames.
+
+::: pf-proof
+
 A locally free sheaf is [[D-QNTZY|quasi-coherent]], and its [[D-DEFTALG|symmetric algebra]] is quasi-coherent because locally it is a polynomial algebra with its underlying direct-sum module.
 Thus [[P-AGH2517AFFMOR]] constructs its relative spectrum.
 On an affine open $U=\Spec A$ with frame $e_1,\ldots,e_n$ of $\mce$, the map
@@ -75,11 +80,17 @@ The corresponding map between polynomial coordinate rings sends $x'_a$ to $\sum_
 These are precisely the transition maps required in the statement.
 The same calculation applies to any replacement frames, so the union of the original and replacement trivializations remains a vector bundle structure.
 The identity on $\Spec_Y S(\mce)$ is then an isomorphism of the resulting bundles.
+
 :::
 
-<1>2. The sheaf $\mathcal S_X$ has the natural locally free module structure asserted in part (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The sheaf $\mathcal S_X$ has the natural locally free module structure asserted in part (b).
+
+::: pf-proof
+
 Over a trivializing affine open $U=\Spec A$, sections of $\AA_U^n\to U$ correspond to $A$-algebra maps $A[x_1,\ldots,x_n]\to A$.
 Sending a map to the tuple of coordinate images identifies this set with $A^n$.
 On smaller affine opens the correspondence commutes with restriction, so it identifies the section sheaf on $U$ with $\OO_U^n$.
@@ -90,14 +101,20 @@ This is an invertible linear map and preserves those operations, so the local op
 The module axioms hold locally, hence globally.
 Each trivialization identifies the resulting module sheaf with $\OO_U^n$, proving local freeness of rank $n$.
 A compatible change of bundle trivializations preserves these operations by the same calculation.
+
 :::
 
-<1>3. For $X=\mathbf V(\mce)$, the isomorphism in part (c) is
+:::
+
+::: {.pf-step #s3}
+
+For $X=\mathbf V(\mce)$, the isomorphism in part (c) is
 $$
 \boxed{\dualof{\mce}\xrightarrow{\cong}\mathcal S_X}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For an open set $U\subseteq Y$, a section of $\dualof{\mce}$ is an $\OO_U$-linear sheaf morphism $\lambda:\mce|_U\to\OO_U$.
 By the symmetric-algebra universal property, it extends uniquely to an $\OO_U$-algebra morphism
 $$
@@ -108,13 +125,19 @@ Its restriction to degree one gives $\lambda$.
 The two constructions are inverse on affine opens and commute with restriction, so they are inverse for every $U$ and define an isomorphism of sheaves of sets.
 
 In a frame $e_1,\ldots,e_n$, the tuple representing $s_\lambda$ is $(\lambda(e_1),\ldots,\lambda(e_n))$.
-This identifies addition and scalar multiplication of functionals with the operations of step <1>2. Thus the isomorphism is $\OO_Y$-linear.
+This identifies addition and scalar multiplication of functionals with the operations of step [](#s2){.pf-ref}. Thus the isomorphism is $\OO_Y$-linear.
 The construction is independent of frames since it uses the specified algebra homomorphism, and it is natural in $\mce$.
+
 :::
 
-<1>4. Every rank-$n$ bundle $f:X\to Y$ is canonically isomorphic, as a bundle, to $\mathbf V(\dualof{\mathcal S_X})$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+Every rank-$n$ bundle $f:X\to Y$ is canonically isomorphic, as a bundle, to $\mathbf V(\dualof{\mathcal S_X})$.
+
+::: pf-proof
+
 The morphism $f$ is affine: refine the trivializing cover by affine opens, whose inverse images are affine $n$-spaces.
 Put $\mathcal B=f_*\OO_X$.
 On a trivializing affine open $U$, the algebra $\mathcal B|_U$ is $\OO_U[x_1,\ldots,x_n]$.
@@ -137,30 +160,42 @@ $$
 X\cong\Spec_Y\mathcal B\cong\Spec_Y S(\mathcal E)\cong\mathbf V(\dualof{\mathcal S_X}).
 $$
 On every trivializing open this map identifies the same linear coordinate functions, so it is an isomorphism of vector bundles, not only of schemes over $Y$.
+
 :::
 
-<1>5. The inverse bijections in part (d) are
+:::
+
+::: {.pf-step #s5}
+
+The inverse bijections in part (d) are
 $$
 \boxed{[\mce]\longmapsto[\mathbf V(\mce)],\qquad
 [X\to Y]\longmapsto[\dualof{\mathcal S_X}]}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 A sheaf isomorphism induces an isomorphism of symmetric algebras and therefore a bundle isomorphism after taking relative spectra.
-A bundle isomorphism carries sections to sections; step <1>2 makes the resulting map linear, so it induces an isomorphism of their dual section sheaves.
+A bundle isomorphism carries sections to sections; step [](#s2){.pf-ref} makes the resulting map linear, so it induces an isomorphism of their dual section sheaves.
 Thus both maps are defined on the indicated isomorphism classes.
-For a locally free $\mce$, step <1>3 and the canonical bidual isomorphism from [[P-AGH251DUALSHEAF]] give
+For a locally free $\mce$, step [](#s3){.pf-ref} and the canonical bidual isomorphism from [[P-AGH251DUALSHEAF]] give
 $$
 \dualof{\mathcal S_{\mathbf V(\mce)}}\dualof{\cong(\dualof{\mce})}\cong\mce.
 $$
-For a vector bundle, step <1>4 gives the inverse reconstruction.
+For a vector bundle, step [](#s4){.pf-ref} gives the inverse reconstruction.
 Consequently the two maps are mutually inverse.
 When $n=0$, the same constructions give the zero sheaf and the bundle $Y\xrightarrow{\id_Y}Y$, so this case is included.
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1, <1>2, <1>3, and <1>5 prove parts (a), (b), (c), and (d), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s5){.pf-ref} prove parts (a), (b), (c), and (d), respectively.
+
+:::
+
+:::
+
 :::

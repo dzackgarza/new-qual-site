@@ -32,13 +32,19 @@ for every $x>x_0$.
 :::
 
 ::: {.solution}
-<1>1. Define
+
+::: pf
+
+::: {.pf-step #s1}
+
+Define
 $$
 g(x)=e^{-x}f(x).
 $$
 Then $g'(x)>0$ for every $x\in\RR$.
 
-::: {.proof}
+::: pf-proof
+
 By the product rule,
 $$
 g'(x)
@@ -47,34 +53,52 @@ e^{-x}\bigl(f'(x)-f(x)\bigr).
 $$
 The factor $e^{-x}$ is positive, and the hypothesis gives
 $f'(x)-f(x)>0$. Hence $g'(x)>0$.
+
 :::
 
-<1>2. The function $g$ is strictly increasing on $\RR$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $g$ is strictly increasing on $\RR$.
+
+::: pf-proof
+
 If $a<b$, the mean value theorem gives some $c\in(a,b)$ such that
 $$
 g(b)-g(a)=g'(c)(b-a).
 $$
-By step <1>1, both factors on the right are positive, so $g(b)>g(a)$.
+By step [](#s1){.pf-ref}, both factors on the right are positive, so $g(b)>g(a)$.
+
 :::
 
-<1>3. If $x>x_0$, then $f(x)>0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $x>x_0$, then $f(x)>0$.
+
+::: pf-proof
+
 Since
 $$
 g(x_0)=e^{-x_0}f(x_0)=0,
 $$
-strict increase from step <1>2 gives $g(x)>0$ whenever $x>x_0$. Therefore
+strict increase from step [](#s2){.pf-ref} gives $g(x)>0$ whenever $x>x_0$. Therefore
 $$
 f(x)=e^xg(x)>0.
 $$
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

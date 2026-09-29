@@ -66,8 +66,15 @@ B=\{z\in\mathbb H:|z-1|>\max(1,|z|)\}.
 :::
 
 ::: {.solution}
-<1>1. The displayed matrices satisfy $S^2=U^3=-I$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The displayed matrices satisfy $S^2=U^3=-I$.
+
+::: pf-proof
+
 Direct multiplication gives
 \[
 S^2=
@@ -91,10 +98,17 @@ U^3=U^2U
 =-I.
 \]
 Thus the classes $\pm S$ and $\pm U$ in $\operatorname{PSL}_2(\mathbb Z)$ have orders $2$ and $3$, respectively.
+
 :::
 
-<1>2. Right multiplication by a power of $T$ performs Euclidean reduction on the lower row.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Right multiplication by a power of $T$ performs Euclidean reduction on the lower row.
+
+::: pf-proof
+
 Write
 \[
 A=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}.
@@ -125,11 +139,18 @@ so
 \le\frac{|\gamma|}{2}
 =\frac{|c|}{2}.
 \]
+
 :::
 
-<1>3. Repeatedly applying <1>2 and then $S$ forces the lower-left entry to zero.
-::: {.proof}
-Suppose after some stage the current matrix has lower row $(c,d)$ with $c\neq0$. By <1>2, choose $n$ so that after right multiplication by $T^n$ the lower row is
+:::
+
+::: {.pf-step #s3}
+
+Repeatedly applying step [](#s2){.pf-ref} and then $S$ forces the lower-left entry to zero.
+
+::: pf-proof
+
+Suppose after some stage the current matrix has lower row $(c,d)$ with $c\neq0$. By step [](#s2){.pf-ref}, choose $n$ so that after right multiplication by $T^n$ the lower row is
 \[
 (c,d')
 \qquad\text{with}\qquad
@@ -150,11 +171,18 @@ A strictly decreasing sequence of positive integers must terminate. Hence after 
 AT^{n_1}ST^{n_2}S\cdots ST^{n_\ell}
 \]
 already has lower-left entry zero, or the final reduction has zero lower-right entry and one additional multiplication by $S$ moves that zero into the lower-left position. This is exactly the form asserted in the problem.
+
 :::
 
-<1>4. The matrices $S$ and $T$ generate $\operatorname{SL}_2(\mathbb Z)$.
-::: {.proof}
-Let $A\in\operatorname{SL}_2(\mathbb Z)$. By <1>3, there is a word $W$ in $S$ and powers of $T$ such that
+:::
+
+::: {.pf-step #s4}
+
+The matrices $S$ and $T$ generate $\operatorname{SL}_2(\mathbb Z)$.
+
+::: pf-proof
+
+Let $A\in\operatorname{SL}_2(\mathbb Z)$. By step [](#s3){.pf-ref}, there is a word $W$ in $S$ and powers of $T$ such that
 \[
 AW=
 \begin{pmatrix}a&b\\0&d\end{pmatrix}
@@ -187,15 +215,22 @@ Thus
 \[
 \operatorname{SL}_2(\mathbb Z)=\langle S,T\rangle.
 \]
+
 :::
 
-<1>5. The homomorphism
+:::
+
+::: {.pf-step #s5}
+
+The homomorphism
 \[
 \theta:(\mathbb Z/2)*(\mathbb Z/3)\to\operatorname{PSL}_2(\mathbb Z)
 \]
 is surjective.
-::: {.proof}
-By <1>1, the assignments
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the assignments
 \[
 a\longmapsto\pm S,
 \qquad
@@ -207,8 +242,7 @@ Since $U=ST$, in $\operatorname{PSL}_2(\mathbb Z)$ we have
 \[
 \pm T=(\pm S)^{-1}(\pm U).
 \]
-By <1>4, the classes of $S$ and $T$ generate $\operatorname{PSL}_2(\mathbb Z)$; hence the classes of $S$ and $U$ generate it. Therefore $\theta$ is surjective.
-:::
+By step [](#s4){.pf-ref}, the classes of $S$ and $T$ generate $\operatorname{PSL}_2(\mathbb Z)$; hence the classes of $S$ and $U$ generate it. Therefore $\theta$ is surjective.
 
 For injectivity, let the Möbius transformations associated with $\pm S$ and $\pm U$ be
 \[
@@ -240,8 +274,16 @@ we have
 D=\mathcal A\cap\mathcal B.
 \]
 
-<1>6. The generators satisfy the required ping-pong inclusions.
-::: {.proof}
+:::
+
+:::
+
+::: pf-step
+
+The generators satisfy the required ping-pong inclusions.
+
+::: pf-proof
+
 First suppose $z\notin\mathcal B$. If $\operatorname{Re}z<0$, then
 \[
 |z-1|^2-|z|^2=1-2\operatorname{Re}z>1
@@ -320,10 +362,17 @@ u(D),\
 u^2(D)\subseteq\mathbb H\setminus\mathcal B.
 \tag{4}
 \]
+
 :::
 
-<1>7. Every nontrivial reduced word sends $D$ disjointly from itself.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+
+Every nontrivial reduced word sends $D$ disjointly from itself.
+
+::: pf-proof
+
 Every nontrivial element of
 \[
 (\mathbb Z/2)*(\mathbb Z/3)
@@ -350,11 +399,18 @@ it follows that
 \[
 \boxed{\mu_w(D)\cap D=\varnothing}.
 \]
+
 :::
 
-<1>8. The homomorphism $\theta$ is injective, hence an isomorphism.
-::: {.proof}
-If $1\neq w\in(\mathbb Z/2)*(\mathbb Z/3)$, then by <1>7
+:::
+
+::: pf-step
+
+The homomorphism $\theta$ is injective, hence an isomorphism.
+
+::: pf-proof
+
+If $1\neq w\in(\mathbb Z/2)*(\mathbb Z/3)$, then by step [](#s7){.pf-ref}
 \[
 \mu_w(D)\cap D=\varnothing.
 \]
@@ -366,9 +422,15 @@ in $\operatorname{PSL}_2(\mathbb Z)$. Hence
 \[
 \ker\theta=\{1\}.
 \]
-Together with surjectivity from <1>5,
+Together with surjectivity from step [](#s5){.pf-ref},
 \[
 \boxed{\operatorname{PSL}_2(\mathbb Z)\cong(\mathbb Z/2)*(\mathbb Z/3)}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

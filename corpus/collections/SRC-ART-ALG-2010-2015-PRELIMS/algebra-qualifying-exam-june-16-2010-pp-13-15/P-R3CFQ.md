@@ -39,10 +39,15 @@ C=\begin{pmatrix}0&0&2\\1&0&3\\0&1&0\end{pmatrix},
 B=\begin{pmatrix}2&0&0\\0&-1&0\\0&0&-1\end{pmatrix}.
 $$
 
-<1>1. The vector $v=(1,0,0)^{\mathsf T}$ is cyclic for $A$,
+::: pf
+
+::: {.pf-step #s1}
+
+The vector $v=(1,0,0)^{\mathsf T}$ is cyclic for $A$,
 and $P^{-1}AP=C$ for $P=(v\ Av\ A^2v)$.
 
-::: {.proof}
+::: pf-proof
+
 Direct multiplication gives
 $$
 Av=\begin{pmatrix}-2\\-4\\-6\end{pmatrix},\quad
@@ -60,18 +65,24 @@ first vector to the second, the second to the third,
 and the third to twice the first plus three times the
 second. These three identities say exactly that $AP=PC$,
 so $P^{-1}AP=C$.
+
 :::
 
-<1>2. The matrix $C$ is the rational canonical form, with
+:::
+
+::: pf-step
+
+The matrix $C$ is the rational canonical form, with
 single invariant factor
 $f(t)=t^3-3t-2=(t-2)(t+1)^2$.
 
-::: {.proof}
+::: pf-proof
+
 The companion matrix of a monic polynomial
 $t^3+c_2t^2+c_1t+c_0$ has subdiagonal entries one and
 last column $(-c_0,-c_1,-c_2)^{\mathsf T}$ [@DF04].
 Hence $C$ is the companion matrix of $f$.
-The cyclic basis in step <1>1 identifies the
+The cyclic basis in step [](#s1){.pf-ref} identifies the
 $\mathbb Q[t]$-module with $\mathbb Q[t]/(f)$: the map
 $g\mapsto g(A)v$ is onto; division by $f$ reduces any
 element in its kernel to a polynomial of degree at most
@@ -84,12 +95,18 @@ Expanding the determinant of $tI-C$
 gives $t(t^2-3)-2=t^3-3t-2$. Similarity therefore gives
 $\chi_A=f$. The cyclic-basis argument also proves that
 the minimal polynomial has degree three and equals $f$.
+
 :::
 
-<1>3. The matrix $B$ has the same characteristic polynomial
+:::
+
+::: pf-step
+
+The matrix $B$ has the same characteristic polynomial
 as $A$ but is not similar to $A$.
 
-::: {.proof}
+::: pf-proof
+
 Its diagonal entries give
 $\chi_B(t)=(t-2)(t+1)^2=\chi_A(t)$.
 On the other hand,
@@ -103,5 +120,11 @@ $(-1)(1)-(1)(-4)=3\ne0$.
 But $B+I=\operatorname{diag}(3,0,0)$ has rank one.
 If $A$ and $B$ were similar, adding the identity would
 preserve that similarity and hence their ranks, a contradiction.
+
 :::
+
+:::
+
+:::
+
 :::

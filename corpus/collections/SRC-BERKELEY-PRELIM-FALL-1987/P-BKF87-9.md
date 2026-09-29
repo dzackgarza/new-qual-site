@@ -21,14 +21,20 @@ Evaluate
 :::
 
 ::: {.solution}
-<1>1. For $0<r<1$ and real $\phi$,
+
+::: pf
+
+::: {.pf-step #s1}
+
+For $0<r<1$ and real $\phi$,
 $$
 \frac{1-r^2}{1-2r\cos\phi+r^2}
 =
 1+2\sum_{k=1}^{\infty}r^k\cos(k\phi).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $\abs r<1$,
 $$
 \sum_{k=1}^{\infty}r^ke^{ik\phi}
@@ -49,9 +55,14 @@ The series converges uniformly in $\phi$ because
 $$
 \sum_{k=1}^{\infty}2r^k<\infty.
 $$
+
 :::
 
-<1>2. One has the uniformly convergent expansion
+:::
+
+::: {.pf-step #s2}
+
+One has the uniformly convergent expansion
 $$
 \frac1{5-4\cos(2\theta)}
 =
@@ -61,14 +72,15 @@ $$
 \right).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Take
 $$
 r=\frac12,
 \qquad
 \phi=2\theta
 $$
-in step <1>1. Since
+in step [](#s1){.pf-ref}. Since
 $$
 5-4\cos(2\theta)
 =
@@ -79,17 +91,23 @@ $$
 1-r^2=\frac34,
 $$
 division gives exactly the displayed formula.
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \int_0^{2\pi}\frac{d\theta}{5-4\cos(2\theta)}
 =
 \frac{2\pi}{3}.
 $$
 
-::: {.proof}
-Integrate the uniformly convergent series in step <1>2 term by term. For every $k\geq1$,
+::: pf-proof
+
+Integrate the uniformly convergent series in step [](#s2){.pf-ref} term by term. For every $k\geq1$,
 $$
 \int_0^{2\pi}\cos(2k\theta)\,d\theta=0.
 $$
@@ -99,9 +117,14 @@ $$
 =
 \frac{2\pi}{3}.
 $$
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \int_0^{2\pi}
 \frac{\cos(6\theta)}{5-4\cos(2\theta)}
@@ -110,8 +133,9 @@ $$
 \frac{\pi}{12}.
 $$
 
-::: {.proof}
-Multiply the series in step <1>2 by $\cos(6\theta)$ and integrate term by term. Orthogonality of the cosine functions gives zero for every term except $k=3$. Hence
+::: pf-proof
+
+Multiply the series in step [](#s2){.pf-ref} by $\cos(6\theta)$ and integrate term by term. Orthogonality of the cosine functions gives zero for every term except $k=3$. Hence
 $$
 \begin{aligned}
 \int_0^{2\pi}
@@ -126,21 +150,27 @@ $$
 \frac{\pi}{12}.
 \end{aligned}
 $$
+
 :::
 
-<1>5. The required integral is
+:::
+
+::: {.pf-step #s5}
+
+The required integral is
 $$
 \boxed{\frac{3\pi}{8}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Using
 $$
 \cos^2(3\theta)
 =
 \frac{1+\cos(6\theta)}2,
 $$
-steps <1>3 and <1>4 give
+steps [](#s3){.pf-ref} and [](#s4){.pf-ref} give
 $$
 \begin{aligned}
 \int_0^{2\pi}
@@ -157,11 +187,17 @@ $$
 \frac{3\pi}{8}.
 \end{aligned}
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the required evaluation.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} is the required evaluation.
+
+:::
+
+:::
+
 :::

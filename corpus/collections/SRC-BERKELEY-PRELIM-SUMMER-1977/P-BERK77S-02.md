@@ -36,13 +36,19 @@ Prove that $f$ is analytic on all of $\mathbb C$.
 :::
 
 ::: {.solution}
-<1>1. Let $P$ be a polygon contained in the closed upper half-plane whose
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let $P$ be a polygon contained in the closed upper half-plane whose
 interior lies in the open upper half-plane. Then
 $$
 \int_{\partial P}f(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For $\varepsilon>0$, truncate $P$ by the horizontal line
 $\operatorname{Im}z=\varepsilon$:
 $$
@@ -70,27 +76,39 @@ $$
 =
 0.
 $$
+
 :::
 
-<1>2. The analogous statement holds for a polygon contained in the closed
+:::
+
+::: {.pf-step #s2}
+
+The analogous statement holds for a polygon contained in the closed
 lower half-plane whose interior lies in the open lower half-plane.
 
-::: {.proof}
-The proof of step <1>1 applies verbatim after truncating by
+::: pf-proof
+
+The proof of step [](#s1){.pf-ref} applies verbatim after truncating by
 $\operatorname{Im}z=-\varepsilon$, because $f$ is holomorphic throughout
 the open lower half-plane and continuous on the real axis.
+
 :::
 
-<1>3. For every triangle $\Delta\subset\CC$,
+:::
+
+::: {.pf-step #s3}
+
+For every triangle $\Delta\subset\CC$,
 $$
 \int_{\partial\Delta}f(z)\,dz=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 If the interior of $\Delta$ lies entirely in one open half-plane, this is
 Cauchy's theorem. Otherwise the real axis cuts $\Delta$ into an upper
 polygon $\Delta_+$ and a lower polygon $\Delta_-$, allowing one of them to
-be degenerate. Steps <1>1 and <1>2 give
+be degenerate. Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} give
 $$
 \int_{\partial\Delta_+}f(z)\,dz=0,
 \qquad
@@ -102,19 +120,31 @@ are exactly $\partial\Delta$. Hence
 $$
 \int_{\partial\Delta}f(z)\,dz=0.
 $$
+
 :::
 
-<1>4. The function $f$ is analytic on $\CC$.
+:::
 
-::: {.proof}
-The function $f$ is continuous on $\CC$ by hypothesis, and step <1>3 shows
+::: {.pf-step #s4}
+
+The function $f$ is analytic on $\CC$.
+
+::: pf-proof
+
+The function $f$ is continuous on $\CC$ by hypothesis, and step [](#s3){.pf-ref} shows
 that its integral around every triangle is zero. Morera's theorem therefore
 implies that $f$ is holomorphic on all of $\CC$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

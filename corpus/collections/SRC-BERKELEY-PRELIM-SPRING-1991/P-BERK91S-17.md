@@ -41,14 +41,19 @@ c_n=0
 ::: {.solution}
 Fix an integer $n$.
 
-<1>1. For every $0<r<r_0$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every $0<r<r_0$,
 $$
 2\pi\abs{c_n}^2r^{2n+4}
 \le
 r^4\int_0^{2\pi}\abs{f(re^{i\theta})}^2\,d\theta.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The Laurent coefficient formula on the circle $\abs{z}=r$ gives
 $$
 c_nr^n
@@ -64,12 +69,18 @@ $$
 \left(\int_0^{2\pi}1\,d\theta\right),
 $$
 which is the claimed inequality after multiplying by $2\pi r^4$.
+
 :::
 
-<1>2. If $n<-2$, then $c_n=0$.
+:::
 
-::: {.proof}
-The hypothesis and step <1>1 give
+::: {.pf-step #s2}
+
+If $n<-2$, then $c_n=0$.
+
+::: pf-proof
+
+The hypothesis and step [](#s1){.pf-ref} give
 $$
 2\pi\abs{c_n}^2r^{2n+4}<M
 \qquad(0<r<r_0).
@@ -77,11 +88,17 @@ $$
 For $n<-2$, the exponent $2n+4$ is negative. If $c_n\ne0$, then the
 left-hand side tends to $+\infty$ as $r\downarrow0$, contradicting
 the uniform upper bound $M$. Hence $c_n=0$.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 applies to every integer $n<-2$.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} applies to every integer $n<-2$.
+
+:::
+
+:::
+
 :::

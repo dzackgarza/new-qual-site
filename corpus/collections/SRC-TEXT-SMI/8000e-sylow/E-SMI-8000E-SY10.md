@@ -41,8 +41,14 @@ so the hypothesis $p^s\mid |G|$ says $s\le r$.
 By the Sylow existence theorem, $G$ has a Sylow $p$-subgroup $P$ of order
 $p^r$. It is therefore enough to prove the following lemma.
 
-<1>1. Every finite $p$-group of order $p^r$ has a subgroup of order $p^s$ for every $0\le s\le r$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+Every finite $p$-group of order $p^r$ has a subgroup of order $p^s$ for every $0\le s\le r$.
+
+::: pf-proof
+
 We induct on $r$.
 
 For $r=0$, the group is trivial and there is nothing to prove. Assume
@@ -89,11 +95,18 @@ $$
 
 For $s=0$, take the trivial subgroup. This proves the lemma for all
 $0\le s\le r$.
+
 :::
 
-<1>2. Apply the lemma inside a Sylow subgroup of $G$.
-::: {.proof}
-The Sylow subgroup $P\le G$ has order $p^r$. Since $s\le r$, step <1>1
+:::
+
+::: pf-step
+
+Apply the lemma inside a Sylow subgroup of $G$.
+
+::: pf-proof
+
+The Sylow subgroup $P\le G$ has order $p^r$. Since $s\le r$, step [](#s1){.pf-ref}
 gives a subgroup
 $$
 H\le P
@@ -107,5 +120,11 @@ $$
 \boxed{p^s\mid |G|\quad\Longrightarrow\quad
 \text{$G$ has a subgroup of order $p^s$.}}
 $$
+
 :::
+
+:::
+
+:::
+
 :::

@@ -38,8 +38,15 @@ Carefully show that $f\in L^1(\mathbb R^2)$.
 :::
 
 ::: {.solution}
-<1>1. Use Tonelli and compute the inner integral.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Use Tonelli and compute the inner integral.
+
+::: pf-proof
+
 The function $f$ is nonnegative and measurable, so Tonelli's theorem gives
 \[
 \int_{\mathbb R^2}|f|\,d(x,y)
@@ -58,10 +65,17 @@ Hence
 \int_{\mathbb R^2}|f|
 =2\int_0^\infty\frac{dx}{x^{2/3}\sqrt{1+x^2}}.
 \]
+
 :::
 
-<1>2. Check integrability at zero and infinity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Check integrability at zero and infinity.
+
+::: pf-proof
+
 For $0<x\le1$,
 \[
 \frac{2}{x^{2/3}\sqrt{1+x^2}}
@@ -89,5 +103,11 @@ Therefore
 \boxed{\int_{\mathbb R^2}|f|<\infty,}
 \]
 so $f\in L^1(\mathbb R^2)$.
+
 :::
+
+:::
+
+:::
+
 :::

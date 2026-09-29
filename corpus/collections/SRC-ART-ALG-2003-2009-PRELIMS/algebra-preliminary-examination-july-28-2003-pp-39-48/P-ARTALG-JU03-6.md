@@ -46,10 +46,15 @@ The possible answers are (c), (d), and (e). Parts (c) and (d)
 describe the same isomorphism type. The unlabeled lattice does not
 distinguish that type from $C_3\times C_3$.
 
-<1>1. The required subgroup lattice has exactly four nontrivial
+::: pf
+
+::: {.pf-step #s1}
+
+The required subgroup lattice has exactly four nontrivial
 proper subgroups, all mutually incomparable.
 
-::: {.proof}
+::: pf-proof
+
 A splitting field over $\mathbb Q$ is a finite Galois extension,
 since characteristic zero gives separability. The Galois
 correspondence is an inclusion-reversing bijection between its
@@ -58,11 +63,17 @@ It exchanges the two endpoints and sends the four incomparable
 proper fields to four incomparable nontrivial proper subgroups.
 Conversely, a Galois extension with this subgroup lattice has the
 specified intermediate-field lattice.
+
 :::
 
-<1>2. Neither (a) nor (b) has the required subgroup lattice.
+:::
 
-::: {.proof}
+::: pf-step
+
+Neither (a) nor (b) has the required subgroup lattice.
+
+::: pf-proof
+
 In $C_2\times C_2$, each of the three nonidentity elements
 generates a different subgroup of order $2$. By Lagrange's theorem
 these are all the nontrivial proper subgroups. There are three,
@@ -71,12 +82,18 @@ not four, so (a) is impossible.
 A cyclic group has exactly one subgroup of each order dividing
 its order [@DF04]. Thus $C_6$ has just two nontrivial proper
 subgroups, of orders $2$ and $3$. This rules out (b).
+
 :::
 
-<1>3. Both (c) and (d) have the required subgroup lattice and
+:::
+
+::: pf-step
+
+Both (c) and (d) have the required subgroup lattice and
 are realized over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
+
 The symmetry group of an equilateral triangle acts faithfully
 on its three vertices. It has six elements, so this action
 identifies the dihedral group of order $6$ with $S_3$.
@@ -95,14 +112,20 @@ and their ratios recover $\zeta$. Eisenstein's criterion at $2$
 gives $[\mathbb Q(a):\mathbb Q]=3$, and adjoining the nonreal
 root $\zeta$ of $x^2+x+1$ to the real field $\mathbb Q(a)$ has
 degree $2$. Its Galois group therefore has order $6$ and acts
-faithfully on the three roots, so is $S_3$. Step <1>1 now gives
+faithfully on the three roots, so is $S_3$. Step [](#s1){.pf-ref} now gives
 the required field lattice. This realizes both descriptions.
+
 :::
 
-<1>4. The group in (e) also has the required subgroup lattice
+:::
+
+::: pf-step
+
+The group in (e) also has the required subgroup lattice
 and is realized over $\mathbb Q$.
 
-::: {.proof}
+::: pf-proof
+
 View $C_3\times C_3$ as the additive group of $\mathbb F_3^2$.
 Each nonzero vector spans a subgroup of order $3$ containing
 exactly two nonzero vectors. The eight nonzero vectors are thus
@@ -140,6 +163,12 @@ product of their minimal polynomials. Normality of $E/\mathbb Q$
 implies that all those polynomials split in $E$, and their roots
 include the basis elements, which generate $E$ as a field.
 Thus the splitting field of $g$ inside $E$ is exactly $E$.
-Step <1>1 then gives the prescribed six-element lattice.
+Step [](#s1){.pf-ref} then gives the prescribed six-element lattice.
+
 :::
+
+:::
+
+:::
+
 :::

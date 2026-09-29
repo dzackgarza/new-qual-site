@@ -18,7 +18,12 @@ Prove that there exists a unique integer $m$ such that $m$ has no multiple prime
 :::
 
 ::: {.solution}
-<1>1. There is an element $\alpha\in\mathbf F\setminus\QQ$ such that
+
+::: pf
+
+::: {.pf-step #s1}
+
+There is an element $\alpha\in\mathbf F\setminus\QQ$ such that
 $$
 \mathbf F=\QQ(\alpha),
 $$
@@ -28,15 +33,21 @@ x^2+rx+s
 $$
 with $r,s\in\QQ$.
 
-::: {.proof}
+::: pf-proof
+
 Choose any $\alpha\in\mathbf F\setminus\QQ$. Then
 $$
 1<[\QQ(\alpha):\QQ]\leq[\mathbf F:\QQ]=2.
 $$
 Hence $[\QQ(\alpha):\QQ]=2$ and therefore $\QQ(\alpha)=\mathbf F$. The monic minimal polynomial of $\alpha$ over $\QQ$ consequently has degree $2$, so it has the displayed form.
+
 :::
 
-<1>2. If
+:::
+
+::: {.pf-step #s2}
+
+If
 $$
 \Delta=r^2-4s,
 $$
@@ -45,7 +56,8 @@ $$
 \mathbf F=\QQ(\sqrt{\Delta}).
 $$
 
-::: {.proof}
+::: pf-proof
+
 From
 $$
 \alpha^2+r\alpha+s=0
@@ -68,15 +80,21 @@ If $\Delta=t^2$ for some $t\in\QQ$, then in the field $\mathbf F$,
 $$
 (2\alpha+r-t)(2\alpha+r+t)=0.
 $$
-Hence $2\alpha+r=\pm t$, which would imply $\alpha\in\QQ$, contrary to step <1>1. Therefore $\Delta$ is a nonzero nonsquare in $\QQ$.
+Hence $2\alpha+r=\pm t$, which would imply $\alpha\in\QQ$, contrary to step [](#s1){.pf-ref}. Therefore $\Delta$ is a nonzero nonsquare in $\QQ$.
+
 :::
 
-<1>3. There exists a squarefree integer $m$ such that
+:::
+
+::: {.pf-step #s3}
+
+There exists a squarefree integer $m$ such that
 $$
 \mathbf F\cong\QQ(\sqrt m).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 \Delta=\frac{a}{b}
@@ -98,12 +116,18 @@ with $c\in\ZZ_{>0}$ and $m$ a squarefree integer, with the sign of $m$ equal to 
 $$
 \QQ(\sqrt{ab})=\QQ(c\sqrt m)=\QQ(\sqrt m).
 $$
-Combining this with step <1>2 gives the required existence.
+Combining this with step [](#s2){.pf-ref} gives the required existence.
+
 :::
 
-<1>4. The squarefree integer $m$ in step <1>3 is unique.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The squarefree integer $m$ in step [](#s3){.pf-ref} is unique.
+
+::: pf-proof
+
 Suppose $m$ and $n$ are squarefree integers and
 $$
 \QQ(\sqrt m)\cong\mathbf F\cong\QQ(\sqrt n).
@@ -135,11 +159,17 @@ $$
 \nu_\ell(m),\nu_\ell(n)\in\{0,1\}.
 $$
 Since $m/n$ is a rational square, $\nu_\ell(m)-\nu_\ell(n)$ is even. It lies in $\{-1,0,1\}$, so it must be $0$. Thus $m$ and $n$ have the same prime divisors. Moreover $m/n=v^2>0$, so they have the same sign. Therefore $m=n$.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>3 proves existence and step <1>4 proves uniqueness.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} proves existence and step [](#s4){.pf-ref} proves uniqueness.
+
+:::
+
+:::
+
 :::

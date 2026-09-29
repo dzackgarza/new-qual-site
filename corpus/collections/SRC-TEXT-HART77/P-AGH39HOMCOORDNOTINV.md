@@ -44,35 +44,52 @@ $$
 [s:t]\longmapsto[s^2:st:t^2].
 $$
 
-<1>1. The homogeneous coordinate rings are
+::: pf
+
+::: pf-step
+
+The homogeneous coordinate rings are
 $$
 S(X)=k[s,t],
 \qquad
 S(Y)=k[u,v,w]/(uw-v^2).
 $$
 
-::: {.proof}
+::: pf-proof
+
 The projective line has zero homogeneous ideal, so $S(X)=k[s,t]$.
 The displayed parametrization satisfies $uw-v^2=0$.
 By [[P-AGH212DUPLE]], its image is a projective variety isomorphic to $\PP^1$ and is exactly the quadratic Veronese conic.
 The polynomial $uw-v^2$ is irreducible: viewing it as a degree-one polynomial in $u$ over $k[v,w]$, any nonconstant factor independent of $u$ would have to divide both $w$ and $v^2$, whose greatest common divisor is $1$.
 Thus $Z(uw-v^2)$ is an irreducible hypersurface in $\PP^2$, and its homogeneous ideal is $(uw-v^2)$ by [[P-AGH28HYPERSURFACE]].
 Hence the second displayed description follows.
+
 :::
 
-<1>2. The ring $S(X)$ is a unique factorization domain.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The ring $S(X)$ is a unique factorization domain.
+
+::: pf-proof
+
 It is the polynomial ring in two variables over the field $k$, hence is a unique factorization domain.
+
 :::
 
-<1>3. The ring
+:::
+
+::: {.pf-step #s3}
+
+The ring
 $$
 R=k[u,v,w]/(uw-v^2)
 $$
 is not a unique factorization domain.
 
-::: {.proof}
+::: pf-proof
+
 The polynomial $uw-v^2$ is irreducible in the UFD $k[u,v,w]$, hence prime, so $R$ is a domain.
 Give $R$ its standard grading, and write $\bar u,\bar v,\bar w$ for the degree-one residue classes.
 
@@ -96,16 +113,22 @@ $$
 $$
 This gives two factorizations into irreducibles which cannot be matched by reordering and multiplication by units.
 Therefore $R$ is not a unique factorization domain.
+
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
+::: pf-qed
+
 By [[P-AGH34DUPLEISO]], the quadratic Veronese map gives $X\cong Y$.
-Steps <1>2--<1>3 show that $S(X)$ is a UFD while $S(Y)$ is not.
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that $S(X)$ is a UFD while $S(Y)$ is not.
 Since being a UFD is preserved by ring isomorphism,
 $$
 S(X)\not\cong S(Y).
 $$
+
 :::
+
+:::
+
 :::

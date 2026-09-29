@@ -40,8 +40,15 @@ Show:
 :::
 
 ::: {.solution}
-<1>1. Prove that the recursion is well defined and produces continuous functions.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove that the recursion is well defined and produces continuous functions.
+
+::: pf-proof
+
 Let
 \[
 M:=\sup_{x\in\mathbb R}|G(x)|<\infty.
@@ -53,10 +60,17 @@ Therefore
 f_{n+1}(t)=1+\int_0^t G(f_n(\tau))\,d\tau
 \]
 is well defined for every $t\in[-1,1]$. In fact it is absolutely continuous, hence continuous. By induction, every $f_n$ is well defined and belongs to $C([-1,1])$.
+
 :::
 
-<1>2. Establish uniform boundedness and equicontinuity.
-::: {.proof}
+:::
+
+::: pf-step
+
+Establish uniform boundedness and equicontinuity.
+
+::: pf-proof
+
 For $n\ge0$ and $t\in[-1,1]$,
 \[
 |f_{n+1}(t)|
@@ -72,13 +86,26 @@ Also, for $s,t\in[-1,1]$,
 \end{aligned}
 \]
 Thus $(f_n)_{n\ge1}$ is uniformly bounded and equi-Lipschitz, hence equicontinuous.
+
 :::
 
-<1>3. Apply Arzelà--Ascoli.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Arzelà--Ascoli.
+
+::: pf-proof
+
 The domain $[-1,1]$ is compact. By Step 2, the family $\{f_n:n\ge1\}$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore implies that every sequence in this family has a uniformly convergent subsequence. In particular,
 \[
 \boxed{\{f_n\}_{n=1}^\infty\text{ has a uniformly convergent subsequence}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

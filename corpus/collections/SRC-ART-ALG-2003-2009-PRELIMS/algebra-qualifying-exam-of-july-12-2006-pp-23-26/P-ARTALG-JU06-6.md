@@ -54,9 +54,14 @@ All subgroups and their fixed fields are as follows.
 | $\langle r^3s\rangle$ | $2$ | $\mathbb Q((1-i)a)$ | $4$ |
 | $\{1\}$ | $1$ | $K$ | $8$ |
 
-<1>1. The degree and group presentation are as asserted.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The degree and group presentation are as asserted.
+
+::: pf-proof
+
 The roots of $x^4-2$ are $a,ia,-a,-ia$. Their generated field
 contains $i=(ia)/a$, so it is $\mathbb Q(a,i)$.
 Eisenstein's criterion at $2$ gives $[\mathbb Q(a):\mathbb Q]=4$
@@ -88,11 +93,17 @@ $$
 with exponents reduced modulo $4$ and $2$, respectively.
 Thus these relations give the usual presentation of the dihedral
 group of order $8$ and determine its entire multiplication table.
+
 :::
 
-<1>2. The table exhausts the subgroups of $G$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The table exhausts the subgroups of $G$.
+
+::: pf-proof
+
 Let $R=\langle r\rangle$, a normal cyclic subgroup of order $4$
 and index $2$. For any $H\leq G$, restriction of the quotient map
 $G\to G/R$ shows that $[H:H\cap R]\leq2$.
@@ -113,11 +124,17 @@ of order $4$ other than $R$.
 
 If $H\cap R=R$, then $H=R$ or $H=G$, since $R$ has index $2$.
 The three cases give exactly the ten distinct subgroups in the table.
+
 :::
 
-<1>3. Each field in the table is the fixed field of the indicated subgroup.
+:::
 
-::: {.proof}
+::: pf-step
+
+Each field in the table is the fixed field of the indicated subgroup.
+
+::: pf-proof
+
 The Galois correspondence gives $[K^H:\mathbb Q]=8/|H|$ [@DF04].
 It therefore suffices to show that each proposed field is fixed
 by $H$ and has this degree.
@@ -150,8 +167,14 @@ $4$, and $\mathbb Q(b)$ equals that fixed field.
 
 Finally, the endpoint fields $K^G=\mathbb Q$ and $K^{\{1\}}=K$
 are part of the Galois correspondence. This proves every row;
-the subgroup enumeration in step <1>2 proves that no subfield
+the subgroup enumeration in step [](#s2){.pf-ref} proves that no subfield
 has been omitted. Field inclusions are obtained by reversing
 the inclusions among the listed subgroups.
+
 :::
+
+:::
+
+:::
+
 :::

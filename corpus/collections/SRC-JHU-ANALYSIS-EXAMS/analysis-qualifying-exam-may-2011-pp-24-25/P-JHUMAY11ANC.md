@@ -34,9 +34,15 @@ Consider the iterates $f_n=f\circ\cdots\circ f$ with $n$ factors.
 :::
 
 ::: {.solution}
-<1>1. The derivatives of all iterates at $P$ have a common upper bound.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The derivatives of all iterates at $P$ have a common upper bound.
+
+::: pf-proof
+
 Since $U$ is open and contains $P$, choose $r>0$ with
 $\overline{D(P,r)}\subset U$. Boundedness of $U$ gives
 a constant $M>0$ such that $|z|\leq M$ for every $z\in U$.
@@ -51,20 +57,32 @@ f_n'(P)=\frac{1}{2\pi i}\int_{|z-P|=r}
 \qquad |f_n'(P)|\leq\frac Mr
 $$
 [@SS03]. Neither the radius nor this bound depends on $n$.
+
 :::
 
-<1>2. The chain rule forces $|f'(P)|\leq1$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The chain rule forces $|f'(P)|\leq1$.
+
+::: pf-proof
+
 Let $a=f'(P)$. Because every iterate fixes $P$, the
 chain rule gives $f_{n+1}'(P)=f'(P)f_n'(P)$. Starting
 with $f_1'(P)=a$, induction yields $f_n'(P)=a^n$.
-Step <1>1 therefore implies
+Step [](#s1){.pf-ref} therefore implies
 $$
 |a|^n\leq M/r,\qquad |a|\leq(M/r)^{1/n}
 \quad(n\geq1).
 $$
 Since $M/r$ is a fixed positive number, its $n$th root
 tends to one. Passing to the limit proves $|f'(P)|\leq1$.
+
 :::
+
+:::
+
+:::
+
 :::

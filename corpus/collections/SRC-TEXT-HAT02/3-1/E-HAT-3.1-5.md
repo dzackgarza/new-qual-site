@@ -28,48 +28,111 @@ Regarding a cochain $\varphi \in C^1(X; G)$ as a function from paths in $X$ to $
 :::
 
 ::: {.solution}
-<1>1. A $1$-cochain $\varphi$ assigns to each path $f$ a value $\varphi(f) \in G$, and $\delta\varphi = 0$ (cocycle condition) means $\varphi(\partial\sigma) = 0$ for every $2$-simplex $\sigma$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+A $1$-cochain $\varphi$ assigns to each path $f$ a value $\varphi(f) \in G$, and $\delta\varphi = 0$ (cocycle condition) means $\varphi(\partial\sigma) = 0$ for every $2$-simplex $\sigma$.
+
+::: pf-proof
+
 definition of cocycle.
+
 :::
 
-<1>2. **(a)** For paths $f, g$ with $f(1) = g(0)$, the concatenation $f \cdot g$ bounds a $2$-simplex (the triangle with edges $f$, $g$, and $f \cdot g$), so $\varphi(f \cdot g) - \varphi(f) - \varphi(g) = \varphi(\partial\sigma) = 0$.
-::: {.proof}
-<1>1 (the cocycle vanishes on the boundary of the triangle).
 :::
 
-<1>3. Hence $\varphi(f \cdot g) = \varphi(f) + \varphi(g)$.
-::: {.proof}
-<1>2.
+::: {.pf-step #s2}
+
+**(a)** For paths $f, g$ with $f(1) = g(0)$, the concatenation $f \cdot g$ bounds a $2$-simplex (the triangle with edges $f$, $g$, and $f \cdot g$), so $\varphi(f \cdot g) - \varphi(f) - \varphi(g) = \varphi(\partial\sigma) = 0$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref} (the cocycle vanishes on the boundary of the triangle).
+
 :::
 
-<1>4. **(b)** A constant path $c$ satisfies $c \cdot c = c$, so $\varphi(c) = \varphi(c \cdot c) = \varphi(c) + \varphi(c)$, forcing $\varphi(c) = 0$.
-::: {.proof}
-<1>3.
 :::
 
-<1>5. **(c)** If $f \simeq g$ (rel endpoints), then $f$ and $g$ differ by the boundary of a $2$-chain (a homotopy gives a $2$-chain whose boundary is $f - g$), so $\varphi(f) - \varphi(g) = \varphi(\partial(\text{homotopy})) = 0$.
-::: {.proof}
-<1>1.
+::: {.pf-step #s3}
+
+Hence $\varphi(f \cdot g) = \varphi(f) + \varphi(g)$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref}.
+
 :::
 
-<1>6. Hence $\varphi(f) = \varphi(g)$.
-::: {.proof}
-<1>5.
 :::
 
-<1>7. **(d)** ($\Rightarrow$) If $\varphi = \delta\psi$ is a coboundary, then $\varphi(f) = \psi(f(1)) - \psi(f(0))$ depends only on the endpoints.
-::: {.proof}
+::: {.pf-step #s4}
+
+**(b)** A constant path $c$ satisfies $c \cdot c = c$, so $\varphi(c) = \varphi(c \cdot c) = \varphi(c) + \varphi(c)$, forcing $\varphi(c) = 0$.
+
+::: pf-proof
+
+Step [](#s3){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+**(c)** If $f \simeq g$ (rel endpoints), then $f$ and $g$ differ by the boundary of a $2$-chain (a homotopy gives a $2$-chain whose boundary is $f - g$), so $\varphi(f) - \varphi(g) = \varphi(\partial(\text{homotopy})) = 0$.
+
+::: pf-proof
+
+Step [](#s1){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s6}
+
+Hence $\varphi(f) = \varphi(g)$.
+
+::: pf-proof
+
+Step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+::: {.pf-step #s7}
+
+**(d)** ($\Rightarrow$) If $\varphi = \delta\psi$ is a coboundary, then $\varphi(f) = \psi(f(1)) - \psi(f(0))$ depends only on the endpoints.
+
+::: pf-proof
+
 definition of coboundary.
+
 :::
 
-<1>8. ($\Leftarrow$) If $\varphi(f)$ depends only on the endpoints, define $\psi(x) = \varphi(f_x)$ for any path $f_x$ from a fixed basepoint to $x$; then $\varphi(f) = \psi(f(1)) - \psi(f(0)) = \delta\psi(f)$, so $\varphi$ is a coboundary.
-::: {.proof}
-<1>7, reversed.
 :::
 
-<1>9. Q.E.D.
-::: {.proof}
-<1>3, <1>4, <1>6, <1>7–<1>8.
+::: {.pf-step #s8}
+
+($\Leftarrow$) If $\varphi(f)$ depends only on the endpoints, define $\psi(x) = \varphi(f_x)$ for any path $f_x$ from a fixed basepoint to $x$; then $\varphi(f) = \psi(f(1)) - \psi(f(0)) = \delta\psi(f)$, so $\varphi$ is a coboundary.
+
+::: pf-proof
+
+Step [](#s7){.pf-ref}, reversed.
+
 :::
+
+:::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref} and [](#s8){.pf-ref}.
+
+:::
+
+:::
+
 :::

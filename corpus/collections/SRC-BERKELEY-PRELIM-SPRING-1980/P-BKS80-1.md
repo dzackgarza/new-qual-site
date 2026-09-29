@@ -33,14 +33,20 @@ Let $f:\RR\to\RR$ be the $2\pi$-periodic function satisfying $f(x)=x$ for $-\pi\
 :::
 
 ::: {.solution}
-<1>1. The cosine Fourier coefficients of $f$ vanish, and its sine
+
+::: pf
+
+::: {.pf-step #s1}
+
+The cosine Fourier coefficients of $f$ vanish, and its sine
 coefficients are
 $$
 b_n=\frac{2(-1)^{n+1}}{n}
 \qquad(n\ge1).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Changing a function at the endpoint $\pi$ does not affect its Fourier
 coefficients, so the coefficients may be computed from $f(x)=x$ on
 $[-\pi,\pi]$. Since $x$ is odd,
@@ -78,9 +84,14 @@ b_n
 \frac{2(-1)^{n+1}}n.
 \end{aligned}
 $$
+
 :::
 
-<1>2. Therefore the Fourier series of $f$ is
+:::
+
+::: {.pf-step #s2}
+
+Therefore the Fourier series of $f$ is
 $$
 \boxed{
 \sum_{n=1}^{\infty}
@@ -88,15 +99,22 @@ $$
 }
 $$
 
-::: {.proof}
-Insert the coefficients from step <1>1 into the real Fourier-series
+::: pf-proof
+
+Insert the coefficients from step [](#s1){.pf-ref} into the real Fourier-series
 formula.
+
 :::
 
-<1>3. The series in step <1>2 does not satisfy the uniform Cauchy
+:::
+
+::: {.pf-step #s3}
+
+The series in step [](#s2){.pf-ref} does not satisfy the uniform Cauchy
 criterion on $\RR$.
 
-::: {.proof}
+::: pf-proof
+
 For an integer $N\ge1$, set
 $$
 x_N\coloneqq\pi-\frac1N.
@@ -133,16 +151,27 @@ c.
 $$
 Therefore tails with arbitrarily large starting index have supremum at
 least $c$, so the uniform Cauchy criterion fails.
+
 :::
 
-<1>4. The Fourier series does not converge uniformly.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The Fourier series does not converge uniformly.
+
+::: pf-proof
+
 Uniform convergence of a series of functions implies the uniform Cauchy
-criterion. Step <1>3 shows that criterion fails.
+criterion. Step [](#s3){.pf-ref} shows that criterion fails.
+
 :::
 
-<1>5. At every point where $f$ is continuous, the Fourier series converges
+:::
+
+::: {.pf-step #s5}
+
+At every point where $f$ is continuous, the Fourier series converges
 to $f(x)$; at each jump point
 $$
 x=(2k+1)\pi,
@@ -150,7 +179,8 @@ x=(2k+1)\pi,
 $$
 it converges to $0$.
 
-::: {.proof}
+::: pf-proof
+
 The periodic function $f$ is piecewise $C^1$. By the Dirichlet convergence
 theorem, its Fourier series converges at each $x$ to
 $$
@@ -164,9 +194,14 @@ f(x^-)=\pi,
 f(x^+)=-\pi,
 $$
 whose average is $0$.
+
 :::
 
-<1>6. Explicitly, the sum $S$ of the series is
+:::
+
+::: {.pf-step #s6}
+
+Explicitly, the sum $S$ of the series is
 $$
 \boxed{
 S(x)=
@@ -179,7 +214,8 @@ x-2k\pi,
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 On the open interval
 $$
 ((2k-1)\pi,(2k+1)\pi),
@@ -188,13 +224,19 @@ periodicity and the defining formula on $[-\pi,\pi)$ give
 $$
 f(x)=x-2k\pi.
 $$
-Combine this with step <1>5.
+Combine this with step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves part (1), step <1>4 proves part (2), and step <1>6
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves part (1), step [](#s4){.pf-ref} proves part (2), and step [](#s6){.pf-ref}
 answers part (3).
+
 :::
+
+:::
+
 :::

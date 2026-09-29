@@ -38,7 +38,11 @@ Let
 \]
 be the universal double covering map.
 
-<1>1. The map $f$ has a lift
+::: pf
+
+::: pf-step
+
+The map $f$ has a lift
 \[
 \widetilde f:S^3\times S^3\longrightarrow S^3
 \]
@@ -46,7 +50,9 @@ with
 \[
 \pi\circ\widetilde f=f.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The space $S^3\times S^3$ is path-connected and simply connected, since each factor is path-connected and simply connected.
 Hence
 \[
@@ -55,37 +61,58 @@ f_*\pi_1(S^3\times S^3)=0
 \pi_*\pi_1(S^3)=0.
 \]
 The covering-space lifting criterion therefore gives a lift $\widetilde f$ after choosing a lift of one base point.
+
 :::
 
-<1>2. If $p\in\RP^3$ is omitted by $f$ and $q\in\pi^{-1}(p)$, then
+:::
+
+::: {.pf-step #s2}
+
+If $p\in\RP^3$ is omitted by $f$ and $q\in\pi^{-1}(p)$, then
 \[
 \widetilde f(S^3\times S^3)\subseteq S^3\setminus\{q\}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $\widetilde f(x)=q$ for some $x\in S^3\times S^3$, then
 \[
 f(x)=\pi(\widetilde f(x))=\pi(q)=p,
 \]
 contrary to the choice of $p$.
+
 :::
 
-<1>3. The lift $\widetilde f$ is homotopic to a constant map.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+The lift $\widetilde f$ is homotopic to a constant map.
+
+::: pf-proof
+
 Stereographic projection gives a homeomorphism
 \[
 S^3\setminus\{q\}\cong\RR^3.
 \]
 Thus $S^3\setminus\{q\}$ is contractible.
-By <1>2, $\widetilde f$ has image in this contractible subspace, so it is homotopic, through maps into $S^3\setminus\{q\}$, to a constant map.
+By step [](#s2){.pf-ref}, $\widetilde f$ has image in this contractible subspace, so it is homotopic, through maps into $S^3\setminus\{q\}$, to a constant map.
+
 :::
 
-<1>4. Therefore $f$ is homotopic to a constant map.
-::: {.proof}
+:::
+
+::: pf-step
+
+Therefore $f$ is homotopic to a constant map.
+
+::: pf-proof
+
 Let
 \[
 \widetilde H:(S^3\times S^3)\times I\longrightarrow S^3
 \]
-be the homotopy from <1>3, with $\widetilde H(-,0)=\widetilde f$ and $\widetilde H(-,1)=q_0$ constant.
+be the homotopy from step [](#s3){.pf-ref}, with $\widetilde H(-,0)=\widetilde f$ and $\widetilde H(-,1)=q_0$ constant.
 Then
 \[
 H=\pi\circ\widetilde H
@@ -97,5 +124,11 @@ H(-,0)=\pi\circ\widetilde f=f,
 H(-,1)=\pi(q_0).
 \]
 Hence $f$ is homotopic to a constant function.
+
 :::
+
+:::
+
+:::
+
 :::

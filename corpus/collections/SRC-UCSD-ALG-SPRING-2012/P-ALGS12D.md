@@ -39,17 +39,31 @@ Show that if $Q$ is flat, then $Q$ is torsionfree.
 :::
 
 ::: {.solution}
-<1>1. Let \(R\) be an integral domain and \(0\neq r\in R\). Multiplication by \(r\) gives an injective \(R\)-linear map
+
+::: pf
+
+::: {.pf-step #s1}
+
+Let \(R\) be an integral domain and \(0\neq r\in R\). Multiplication by \(r\) gives an injective \(R\)-linear map
 \[
 R\xrightarrow{\cdot r}R.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If \(ra=0\) in the domain \(R\) and \(r\neq0\), then \(a=0\). Hence multiplication by \(r\) is injective.
+
 :::
 
-<1>2. If \(Q\) is flat, multiplication by every nonzero \(r\in R\) is injective on \(Q\).
-::: {.proof}
-From <1>1 we have a short exact sequence
+:::
+
+::: {.pf-step #s2}
+
+If \(Q\) is flat, multiplication by every nonzero \(r\in R\) is injective on \(Q\).
+
+::: pf-proof
+
+From step [](#s1){.pf-ref} we have a short exact sequence
 \[
 0\longrightarrow R\xrightarrow{\cdot r}R\longrightarrow R/rR\longrightarrow0.
 \]
@@ -65,34 +79,68 @@ Under the canonical identification \(R\otimes_RQ\cong Q\), the displayed map is 
 Q\xrightarrow{\cdot r}Q.
 \]
 Therefore it is injective.
+
 :::
 
-<1>3. Every flat module over an integral domain is torsionfree.
-::: {.proof}
-Suppose \(q\in Q\) and \(0\neq r\in R\) satisfy \(rq=0\). By <1>2, multiplication by \(r\) on \(Q\) is injective, so \(q=0\). This is exactly torsionfreeness.
 :::
 
-<1>4. Let \(R\) be a PID and let \(M\) be finitely generated.
+::: {.pf-step #s3}
+
+Every flat module over an integral domain is torsionfree.
+
+::: pf-proof
+
+Suppose \(q\in Q\) and \(0\neq r\in R\) satisfy \(rq=0\). By step [](#s2){.pf-ref}, multiplication by \(r\) on \(Q\) is injective, so \(q=0\). This is exactly torsionfreeness.
+
+:::
+
+:::
+
+::: {.pf-step #s4}
+
+Let \(R\) be a PID and let \(M\) be finitely generated.
 By the structure theorem,
 \[
 M\cong R^s\oplus T,
 \]
 where \(T\) is a finite direct sum of nonzero cyclic torsion modules \(R/(d_i)\) if the torsion part is nonzero.
-::: {.proof}
+
+::: pf-proof
+
 This is the classification theorem for finitely generated modules over a PID.
+
 :::
 
-<1>5. A finitely generated \(R\)-module over a PID is flat if and only if its torsion part \(T\) in <1>4 is zero.
-::: {.proof}
-If \(M\) is flat, then <1>3 implies that \(M\) is torsionfree.
+:::
+
+::: {.pf-step #s5}
+
+A finitely generated \(R\)-module over a PID is flat if and only if its torsion part \(T\) in step [](#s4){.pf-ref} is zero.
+
+::: pf-proof
+
+If \(M\) is flat, then step [](#s3){.pf-ref} implies that \(M\) is torsionfree.
 Hence the torsion summand \(T\) must vanish.
 
 Conversely, if \(T=0\), then \(M\cong R^s\) is free.
 Every free module is flat because tensoring with a direct sum of copies of \(R\) is a direct sum of copies of the original exact sequence and therefore preserves exactness.
+
 :::
 
-<1>6. Thus the finitely generated flat modules over a PID are exactly the finitely generated free modules.
-::: {.proof}
-This is the equivalence established in <1>5.
 :::
+
+::: pf-step
+
+Thus the finitely generated flat modules over a PID are exactly the finitely generated free modules.
+
+::: pf-proof
+
+This is the equivalence established in step [](#s5){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

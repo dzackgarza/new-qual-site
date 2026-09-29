@@ -40,14 +40,19 @@ $$
 The maxima exist because $f$ and $g$ are continuous on the compact
 interval $[0,1]$.
 
-<1>1. There are points $x_f,x_g\in[0,1]$ such that
+::: pf
+
+::: {.pf-step #s1}
+
+There are points $x_f,x_g\in[0,1]$ such that
 $$
 (f-g)(x_f)\ge0,
 \qquad
 (f-g)(x_g)\le0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose
 $$
 f(x_f)=M,
@@ -62,32 +67,49 @@ Similarly, $f(x_g)\le M$, so
 $$
 (f-g)(x_g)=f(x_g)-M\le0.
 $$
+
 :::
 
-<1>2. There is $t\in[0,1]$ such that
+:::
+
+::: {.pf-step #s2}
+
+There is $t\in[0,1]$ such that
 $$
 f(t)=g(t).
 $$
 
-::: {.proof}
-The function $f-g$ is continuous. If either value in step <1>1 is
+::: pf-proof
+
+The function $f-g$ is continuous. If either value in step [](#s1){.pf-ref} is
 zero, take the corresponding point. Otherwise the two values have
 opposite signs, so the intermediate value theorem gives a zero
 between $x_f$ and $x_g$.
+
 :::
 
-<1>3.
+:::
+
+::: {.pf-step #s3}
+
 $$
 f(t)^2+3f(t)=g(t)^2+3g(t).
 $$
 
-::: {.proof}
-Substitute the equality $f(t)=g(t)$ from step <1>2 into both sides.
+::: pf-proof
+
+Substitute the equality $f(t)=g(t)$ from step [](#s2){.pf-ref} into both sides.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required conclusion.
+
+:::
+
+:::
+
 :::

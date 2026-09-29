@@ -45,8 +45,14 @@ Write
 \|f\|_{\Lambda_\alpha}=|f(0)|+[f]_\alpha.
 \]
 
-<1>1. Verify that $\|\cdot\|_{\Lambda_\alpha}$ is a norm.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Verify that $\|\cdot\|_{\Lambda_\alpha}$ is a norm.
+
+::: pf-proof
+
 Nonnegativity and absolute homogeneity are immediate. If
 \[
 \|f\|_{\Lambda_\alpha}=0,
@@ -66,10 +72,17 @@ Hence
 \|f+g\|_{\Lambda_\alpha}
 \le \|f\|_{\Lambda_\alpha}+\|g\|_{\Lambda_\alpha}.
 \]
+
 :::
 
-<1>2. Prove completeness.
-::: {.proof}
+:::
+
+::: pf-step
+
+Prove completeness.
+
+::: pf-proof
+
 Let $(f_n)$ be Cauchy in $\|\cdot\|_{\Lambda_\alpha}$. For every $h\in\Lambda_\alpha([0,1])$ and $x\in[0,1]$,
 \[
 |h(x)|\le |h(0)|+[h]_\alpha |x|^\alpha
@@ -109,10 +122,17 @@ Thus
 \|f_n-f\|_{\Lambda_\alpha}\le2\varepsilon
 \]
 for all $n\ge N$. In particular $f\in\Lambda_\alpha([0,1])$ and $f_n\to f$ in the Hölder norm. Hence $\Lambda_\alpha([0,1])$ is Banach.
+
 :::
 
-<1>3. Establish the Arzelà--Ascoli hypotheses for the unit ball.
-::: {.proof}
+:::
+
+::: pf-step
+
+Establish the Arzelà--Ascoli hypotheses for the unit ball.
+
+::: pf-proof
+
 If $f\in B$, then
 \[
 |f(0)|\le1,
@@ -130,10 +150,17 @@ Thus $B$ is uniformly bounded. Moreover, for every $x,y\in[0,1]$,
 uniformly for $f\in B$, so $B$ is equicontinuous.
 
 By the Arzelà--Ascoli theorem, $B$ is relatively compact in the uniform norm.
+
 :::
 
-<1>4. Show that $B$ is uniformly closed.
-::: {.proof}
+:::
+
+::: pf-step
+
+Show that $B$ is uniformly closed.
+
+::: pf-proof
+
 Suppose $f_n\in B$ and $f_n\to f$ uniformly. For each fixed $x\ne y$,
 \[
 |f_n(0)|+
@@ -153,5 +180,11 @@ Taking the supremum over $x\ne y$ yields
 Therefore $f\in B$. Thus $B$ is closed in the uniform norm.
 
 Since $B$ is both relatively compact and closed in $C([0,1])$, it is compact in the uniform norm.
+
 :::
+
+:::
+
+:::
+
 :::

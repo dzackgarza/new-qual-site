@@ -18,8 +18,15 @@ Let $E/F$ be a field extension with only finitely many intermediate fields. Prov
 :::
 
 ::: {.solution}
-<1>1. The extension $E/F$ is finite algebraic.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The extension $E/F$ is finite algebraic.
+
+::: pf-proof
+
 If $\alpha\in E$ were transcendental over $F$, then
 \[
 F(\alpha)\supsetneq F(\alpha^2)\supsetneq F(\alpha^4)\supsetneq\cdots
@@ -31,10 +38,17 @@ If $E/F$ were not finitely generated, start with $F_0=F$. Whenever $F_i\ne E$, c
 F_{i+1}=F_i(\alpha_i).
 \]
 This produces infinitely many distinct intermediate fields, again a contradiction. Therefore $E/F$ is finitely generated and algebraic, hence finite.
+
 :::
 
-<1>2. The finite extension is simple.
-::: {.proof}
+:::
+
+::: pf-step
+
+The finite extension is simple.
+
+::: pf-proof
+
 If $F$ is finite, then $E$ is a finite field, so $E^\times$ is cyclic. A generator of $E^\times$ generates $E$ as a field over $F$.
 
 Now suppose $F$ is infinite. The proper intermediate fields are proper $F$-vector subspaces of the finite-dimensional vector space $E$. By hypothesis there are only finitely many of them, and a finite-dimensional vector space over an infinite field cannot be the union of finitely many proper subspaces. Choose
@@ -45,5 +59,11 @@ outside the union of all proper intermediate fields. Then $F(\alpha)$ is an inte
 \[
 E=F(\alpha).
 \]
+
 :::
+
+:::
+
+:::
+
 :::

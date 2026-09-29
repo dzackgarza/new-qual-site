@@ -36,9 +36,14 @@ $$
 \boxed{f(z)=\alpha z^n,\qquad |\alpha|=1,\quad n=0,1,2,\ldots.}
 $$
 
-<1>1. Removing all zeros in the unit disk leaves a constant-modulus quotient.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+Removing all zeros in the unit disk leaves a constant-modulus quotient.
+
+::: pf-proof
+
 The boundary condition implies that $f$ is not identically
 zero and has no zero on the unit circle. It has finitely
 many zeros in the closed unit disk: otherwise compactness
@@ -69,11 +74,17 @@ and $|1/H|\leq1$, so $|H|=1$ [@SS03]. The same principle
 makes $H$ a constant $\alpha$ with $|\alpha|=1$.
 Consequently $fQ=\alpha P$ on the disk, and then on all
 of $\mathbb C$ by the identity theorem.
+
 :::
 
-<1>2. The entire-plane hypothesis forces every $a_j$ to be zero.
+:::
 
-::: {.proof}
+::: pf-step
+
+The entire-plane hypothesis forces every $a_j$ to be zero.
+
+::: pf-proof
+
 If some $a_j\ne0$, the point $b=1/\overline{a_j}$
 is a zero of $Q$ with $|b|>1$. But every zero of $P$
 has modulus less than one, so $P(b)\ne0$. Evaluating
@@ -85,5 +96,11 @@ and $Q(z)=1$, so $f(z)=\alpha z^n$ everywhere.
 Conversely every such monomial is entire and has modulus
 one on the unit circle. This proves both necessity and
 sufficiency, including the constant case $n=0$.
+
 :::
+
+:::
+
+:::
+
 :::

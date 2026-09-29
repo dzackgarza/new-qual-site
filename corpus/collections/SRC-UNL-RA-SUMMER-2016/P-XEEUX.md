@@ -36,8 +36,15 @@ f(x)=\frac{x}{1-x^2},\qquad x\in(0,1).
 :::
 
 ::: {.solution}
-<1>1. Prove continuity at an arbitrary $x_0\in(0,1)$ directly from the definition.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove continuity at an arbitrary $x_0\in(0,1)$ directly from the definition.
+
+::: pf-proof
+
 Fix $x_0\in(0,1)$ and $\varepsilon>0$. For $x\in(0,1)$,
 \[
 \begin{aligned}
@@ -72,10 +79,17 @@ Therefore
 <\varepsilon.
 \]
 Thus $f$ is continuous at $x_0$. Since $x_0$ was arbitrary, $f$ is continuous on $(0,1)$.
+
 :::
 
-<1>2. $f$ is not uniformly continuous on $(0,1)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+$f$ is not uniformly continuous on $(0,1)$.
+
+::: pf-proof
+
 For $n\ge1$, set
 \[
 x_n=\frac{n}{n+1},
@@ -106,5 +120,11 @@ for all sufficiently large $n$, because $|x_n-y_n|\to0$. This contradicts the di
 \[
 \boxed{f\text{ is not uniformly continuous on }(0,1)}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

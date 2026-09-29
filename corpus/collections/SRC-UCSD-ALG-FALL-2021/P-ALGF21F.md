@@ -29,7 +29,12 @@ Prove that in the category of commutative rings with unit, $A \otimes_{\mathbb{Z
 :::
 
 ::: {.solution}
-<1>1. There are canonical unital ring homomorphisms
+
+::: pf
+
+::: pf-step
+
+There are canonical unital ring homomorphisms
 \[
 i_A:A\longrightarrow A\otimes_{\mathbb Z}B,
 \qquad
@@ -41,7 +46,9 @@ i_B:B\longrightarrow A\otimes_{\mathbb Z}B,
 \qquad
 b\longmapsto1\otimes b.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Additivity follows from bilinearity of the tensor product.
 For multiplication,
 \[
@@ -53,9 +60,14 @@ Both maps send the unit to
 1\otimes1,
 \]
 the unit of the tensor-product ring.
+
 :::
 
-<1>2. Let $C$ be a commutative unital ring and let
+:::
+
+::: {.pf-step #s2}
+
+Let $C$ be a commutative unital ring and let
 \[
 f:A\longrightarrow C,
 \qquad
@@ -70,7 +82,9 @@ defines a $\mathbb Z$-balanced bilinear map
 \[
 \beta:A\times B\longrightarrow C.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Additivity in each variable follows from additivity of $f$ and $g$ and distributivity in $C$.
 For $n\in\mathbb Z$,
 \[
@@ -85,9 +99,14 @@ Hence
 \beta(na,b)=\beta(a,nb),
 \]
 so $\beta$ is balanced.
+
 :::
 
-<1>3. There is a unique group homomorphism
+:::
+
+::: {.pf-step #s3}
+
+There is a unique group homomorphism
 \[
 h:A\otimes_{\mathbb Z}B\longrightarrow C
 \]
@@ -96,13 +115,22 @@ such that
 h(a\otimes b)=f(a)g(b)
 \]
 for all $a\in A$ and $b\in B$.
-::: {.proof}
-This is exactly the universal property of the tensor product applied to the balanced bilinear map $\beta$ from <1>2.
+
+::: pf-proof
+
+This is exactly the universal property of the tensor product applied to the balanced bilinear map $\beta$ from step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The map $h$ is a unital ring homomorphism.
-::: {.proof}
-By <1>3, $h$ is additive.
+:::
+
+::: {.pf-step #s4}
+
+The map $h$ is a unital ring homomorphism.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, $h$ is additive.
 For pure tensors,
 \[
 \begin{aligned}
@@ -121,15 +149,22 @@ Also
 h(1\otimes1)=f(1)g(1)=1,
 \]
 so $h$ is unital.
+
 :::
 
-<1>5. The map $h$ satisfies
+:::
+
+::: {.pf-step #s5}
+
+The map $h$ satisfies
 \[
 h\circ i_A=f
 \qquad\text{and}\qquad
 h\circ i_B=g.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For $a\in A$,
 \[
 h(i_A(a))
@@ -144,10 +179,17 @@ h(i_B(b))
 =f(1)g(b)
 =g(b).
 \]
+
 :::
 
-<1>6. The map $h$ is the unique unital ring homomorphism with the property in <1>5.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+The map $h$ is the unique unital ring homomorphism with the property in step [](#s5){.pf-ref}.
+
+::: pf-proof
+
 Let
 \[
 k:A\otimes_{\mathbb Z}B\longrightarrow C
@@ -173,11 +215,24 @@ k(a\otimes b)
 \end{aligned}
 \]
 Since pure tensors generate the tensor product additively and both maps are additive, $k=h$.
+
 :::
 
-<1>7. Hence $A\otimes_{\mathbb Z}B$, together with $i_A$ and $i_B$, is the coproduct of $A$ and $B$ in the category of commutative unital rings.
-::: {.proof}
-Existence of the mediating morphism is <1>3--<1>5, and uniqueness is <1>6.
-This is precisely the coproduct universal property.
 :::
+
+::: pf-step
+
+Hence $A\otimes_{\mathbb Z}B$, together with $i_A$ and $i_B$, is the coproduct of $A$ and $B$ in the category of commutative unital rings.
+
+::: pf-proof
+
+Existence of the mediating morphism is steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref}, and uniqueness is step [](#s6){.pf-ref}.
+This is precisely the coproduct universal property.
+
+:::
+
+:::
+
+:::
+
 :::

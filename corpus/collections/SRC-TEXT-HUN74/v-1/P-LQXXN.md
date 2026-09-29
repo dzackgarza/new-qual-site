@@ -35,28 +35,48 @@ n=[K(u):K],
 \]
 which is odd by hypothesis.
 
-<1>1. The element $u^2$ is algebraic over $K$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The element $u^2$ is algebraic over $K$.
+
+::: pf-proof
+
 Since $u$ is algebraic over $K$, the extension $K(u)/K$ is finite. The element
 $u^2$ belongs to the finite extension $K(u)$, so it is algebraic over $K$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 [K(u):K(u^2)]\le2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The element $u$ is a root of
 \[
 X^2-u^2\in K(u^2)[X].
 \]
 Therefore the minimal polynomial of $u$ over $K(u^2)$ has degree at most $2$,
 which is exactly the asserted inequality.
+
 :::
 
-<1>3. The degree $[K(u):K(u^2)]$ divides the odd integer $n$.
-::: {.proof}
-By <1>1, the tower
+:::
+
+::: {.pf-step #s3}
+
+The degree $[K(u):K(u^2)]$ divides the odd integer $n$.
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the tower
 \[
 K\subseteq K(u^2)\subseteq K(u)
 \]
@@ -66,23 +86,43 @@ n=[K(u):K]
 =[K(u):K(u^2)]\,[K(u^2):K].
 \]
 Thus $[K(u):K(u^2)]$ divides $n$.
+
 :::
 
-<1>4. Consequently
+:::
+
+::: {.pf-step #s4}
+
+Consequently
 \[
 [K(u):K(u^2)]=1.
 \]
-::: {.proof}
-By <1>2 this degree is either $1$ or $2$. By <1>3 it divides the odd integer
+
+::: pf-proof
+
+By step [](#s2){.pf-ref} this degree is either $1$ or $2$. By step [](#s3){.pf-ref} it divides the odd integer
 $n$, so it cannot equal $2$.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 K(u)=K(u^2).
 \]
-::: {.proof}
-The inclusion $K(u^2)\subseteq K(u)$ is immediate. By <1>4 the extension has
+
+::: pf-proof
+
+The inclusion $K(u^2)\subseteq K(u)$ is immediate. By step [](#s4){.pf-ref} the extension has
 degree $1$, hence the two fields are equal.
+
 :::
+
+:::
+
+:::
+
 :::

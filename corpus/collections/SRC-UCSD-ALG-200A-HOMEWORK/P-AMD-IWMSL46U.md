@@ -39,8 +39,14 @@ Let
 S=\{g\in G:g\ne g^{-1}\}.
 \]
 
-<1>1. The set $S$ has even cardinality.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+The set $S$ has even cardinality.
+
+::: pf-proof
+
 If $g\in S$, then
 \[
 g^{-1}\ne(g^{-1})^{-1}=g,
@@ -59,16 +65,23 @@ partitions $S$ into disjoint two-element sets
 \{g,g^{-1}\}.
 \]
 Hence $|S|$ is even.
+
 :::
 
-<1>2. There is an element $h\in G\setminus S$ with $h\ne e$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+There is an element $h\in G\setminus S$ with $h\ne e$.
+
+::: pf-proof
+
 The identity satisfies
 \[
 e=e^{-1},
 \]
 so $e\notin S$.
-By <1>1, $|S|$ is even, while $|G|$ is even by hypothesis.
+By step [](#s1){.pf-ref}, $|S|$ is even, while $|G|$ is even by hypothesis.
 Therefore
 \[
 |G\setminus S|=|G|-|S|
@@ -80,10 +93,17 @@ Hence there exists
 h\in G\setminus S,
 \qquad h\ne e.
 \]
+
 :::
 
-<1>3. The element $h$ from <1>2 has order $2$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The element $h$ from step [](#s2){.pf-ref} has order $2$.
+
+::: pf-proof
+
 Because $h\notin S$,
 \[
 h=h^{-1}.
@@ -98,5 +118,11 @@ Its order divides $2$, so
 o(h)=2.
 \]
 Thus $G$ contains an element of order $2$.
+
 :::
+
+:::
+
+:::
+
 :::

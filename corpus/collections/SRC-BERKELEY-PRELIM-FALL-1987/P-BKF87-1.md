@@ -21,13 +21,19 @@ for $0\le\theta\le\pi/2$ and $0<p<1$.
 :::
 
 ::: {.solution}
-<1>1. The function
+
+::: pf
+
+::: {.pf-step #s1}
+
+The function
 $$
 \phi(x)=\log(\cos x)
 $$
 is strictly concave on $[0,\pi/2)$ and satisfies $\phi(0)=0$.
 
-::: {.proof}
+::: pf-proof
+
 For $0\leq x<\pi/2$,
 $$
 \phi''(x)=-\sec^2x<0.
@@ -36,19 +42,25 @@ Hence $\phi$ is strictly concave on this interval. Also
 $$
 \phi(0)=\log1=0.
 $$
+
 :::
 
-<1>2. If $0\leq\theta<\pi/2$ and $0<p<1$, then
+:::
+
+::: {.pf-step #s2}
+
+If $0\leq\theta<\pi/2$ and $0<p<1$, then
 $$
 p\log(\cos\theta)\leq\log(\cos(p\theta)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since
 $$
 p\theta=(1-p)\cdot0+p\theta,
 $$
-concavity from step <1>1 gives
+concavity from step [](#s1){.pf-ref} gives
 $$
 \begin{aligned}
 \phi(p\theta)
@@ -59,26 +71,38 @@ p\phi(\theta).
 \end{aligned}
 $$
 Substituting the definition of $\phi$ gives the claim.
+
 :::
 
-<1>3. If $0\leq\theta<\pi/2$, then
+:::
+
+::: {.pf-step #s3}
+
+If $0\leq\theta<\pi/2$, then
 $$
 (\cos\theta)^p\leq\cos(p\theta).
 $$
 
-::: {.proof}
-Exponentiating the inequality in step <1>2 gives
+::: pf-proof
+
+Exponentiating the inequality in step [](#s2){.pf-ref} gives
 $$
 \exp\bigl(p\log(\cos\theta)\bigr)
 \leq
 \exp\bigl(\log(\cos(p\theta))\bigr),
 $$
 which is exactly the asserted inequality.
+
 :::
 
-<1>4. The inequality also holds when $\theta=\pi/2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The inequality also holds when $\theta=\pi/2$.
+
+::: pf-proof
+
 Since $0<p<1$,
 $$
 0<\frac{p\pi}{2}<\frac{\pi}{2},
@@ -89,11 +113,17 @@ $$
 \leq
 \cos(p\pi/2).
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>3 and <1>4 cover the entire interval $0\leq\theta\leq\pi/2$.
 :::
+
+::: pf-qed
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} cover the entire interval $0\leq\theta\leq\pi/2$.
+
+:::
+
+:::
+
 :::

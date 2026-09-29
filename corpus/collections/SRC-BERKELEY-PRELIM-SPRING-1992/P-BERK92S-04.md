@@ -26,10 +26,15 @@ Show that every infinite closed subset of $\mathbb R^n$ is the closure of a coun
 Let $F\subseteq\RR^n$ be closed. Let $\mathcal B$ be the family of
 open balls with centers in $\QQ^n$ and positive rational radii.
 
-<1>1. There is a countable set $D\subseteq F$ meeting every member of
+::: pf
+
+::: {.pf-step #s1}
+
+There is a countable set $D\subseteq F$ meeting every member of
 $\mathcal B$ that meets $F$.
 
-::: {.proof}
+::: pf-proof
+
 The family $\mathcal B$ is countable. For each $B\in\mathcal B$ with
 $B\cap F\ne\varnothing$, choose one point
 $$
@@ -41,32 +46,50 @@ D\coloneqq
 \{x_B:B\in\mathcal B,\ B\cap F\ne\varnothing\}.
 $$
 Thus $D$ is countable and contained in $F$.
+
 :::
 
-<1>2. $F\subseteq\overline D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$F\subseteq\overline D$.
+
+::: pf-proof
+
 Fix $x\in F$ and an open neighborhood $U$ of $x$. Rational balls form
 a base for the Euclidean topology, so there is $B\in\mathcal B$ with
 $$
 x\in B\subseteq U.
 $$
-Since $x\in B\cap F$, step <1>1 provides
+Since $x\in B\cap F$, step [](#s1){.pf-ref} provides
 $x_B\in D\cap B\subseteq D\cap U$. Thus every neighborhood of $x$
 meets $D$, so $x\in\overline D$.
+
 :::
 
-<1>3. $\overline D=F$.
-
-::: {.proof}
-Step <1>2 gives $F\subseteq\overline D$. Conversely, $D\subseteq F$
-by step <1>1, and $F$ is closed, so $\overline D\subseteq F$.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #s3}
 
-::: {.proof}
-Step <1>3 expresses the given closed set as the closure of the
+$\overline D=F$.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} gives $F\subseteq\overline D$. Conversely, $D\subseteq F$
+by step [](#s1){.pf-ref}, and $F$ is closed, so $\overline D\subseteq F$.
+
+:::
+
+:::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} expresses the given closed set as the closure of the
 countable set $D$.
+
 :::
+
+:::
+
 :::

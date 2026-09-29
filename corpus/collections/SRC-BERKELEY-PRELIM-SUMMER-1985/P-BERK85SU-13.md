@@ -41,12 +41,17 @@ P(z)=a_0+a_1z+\cdots+a_{k-1}z^{k-1},
 $$
 where some of the final coefficients may be zero.
 
-<1>1. For every integer $j$ with $1\le j<k$,
+::: pf
+
+::: {.pf-step #s1}
+
+For every integer $j$ with $1\le j<k$,
 $$
 \sum_{i=1}^k\omega_i^j=0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $\zeta$ be a primitive $k$th root of unity. Multiplication by
 $\zeta$ permutes the set of all $k$th roots of unity. Hence
 $$
@@ -62,14 +67,20 @@ $$
 (1-\zeta^j)\sum_{i=1}^k\omega_i^j=0,
 $$
 which forces the displayed sum to vanish.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 $$
 \sum_{i=1}^k P(\omega_i)=ka_0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Expanding the polynomial term by term gives
 $$
 \begin{aligned}
@@ -82,31 +93,43 @@ $$
 a_j\sum_{i=1}^k\omega_i^j.
 \end{aligned}
 $$
-For $j=0$, the inner sum is $k$. For every $1\le j<k$, step <1>1
+For $j=0$, the inner sum is $k$. For every $1\le j<k$, step [](#s1){.pf-ref}
 shows that the inner sum is $0$. Thus only the constant term remains:
 $$
 \sum_{i=1}^kP(\omega_i)=ka_0.
 $$
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 $$
 \boxed{
 \frac1k\sum_{i=1}^kP(\omega_i)=P(0)
 }.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 \frac1k\sum_{i=1}^kP(\omega_i)=a_0,
 $$
 and by definition $a_0=P(0)$.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required identity.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} is the required identity.
+
+:::
+
+:::
+
 :::

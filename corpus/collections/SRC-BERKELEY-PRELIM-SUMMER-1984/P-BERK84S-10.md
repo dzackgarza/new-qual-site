@@ -37,7 +37,6 @@ $$
 Verify that $\| \cdot \|$ is a norm for the space $C ^ { 1 / 3 }$ , and prove that $C ^ { 1 / 3 }$ is complete with respect to this norm.
 :::
 
-
 ::: {.solution}
 For $f\in C^{1/3}$, write
 \[
@@ -46,8 +45,14 @@ For $f\in C^{1/3}$, write
 \frac{|f(x)-f(y)|}{|x-y|^{1/3}}.
 \]
 
-<1>1. The functional $\|\cdot\|_{1/3}$ is a norm on $C^{1/3}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The functional $\|\cdot\|_{1/3}$ is a norm on $C^{1/3}$.
+
+::: pf-proof
+
 Nonnegativity is immediate. If $\|f\|_{1/3}=0$, then
 \[
 |f(x)-f(y)|=0
@@ -73,10 +78,17 @@ Taking the supremum gives
 \|f+g\|_{1/3}\le \|f\|_{1/3}+\|g\|_{1/3}.
 \]
 Thus all norm axioms hold.
+
 :::
 
-<1>2. The Hölder norm controls the uniform norm.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+The Hölder norm controls the uniform norm.
+
+::: pf-proof
+
 Since $f(0)=0$, for every $x\in[0,1]$,
 \[
 |f(x)|=|f(x)-f(0)|
@@ -87,11 +99,18 @@ Hence
 \[
 \|f\|_\infty\le \|f\|_{1/3}.
 \]
+
 :::
 
-<1>3. Every Cauchy sequence in $\|\cdot\|_{1/3}$ converges uniformly to a function $f$ with $f(0)=0$.
-::: {.proof}
-Let $(f_n)$ be Cauchy in $\|\cdot\|_{1/3}$. By <1>2,
+:::
+
+::: pf-step
+
+Every Cauchy sequence in $\|\cdot\|_{1/3}$ converges uniformly to a function $f$ with $f(0)=0$.
+
+::: pf-proof
+
+Let $(f_n)$ be Cauchy in $\|\cdot\|_{1/3}$. By step [](#s2){.pf-ref},
 \[
 \|f_n-f_m\|_\infty
 \le \|f_n-f_m\|_{1/3},
@@ -100,10 +119,17 @@ so $(f_n)$ is uniformly Cauchy. Since $\mathbb R$ is complete, there is a functi
 \[
 f(0)=\lim_{n\to\infty}f_n(0)=0.
 \]
+
 :::
 
-<1>4. In fact $f_n\to f$ in the Hölder norm.
-::: {.proof}
+:::
+
+::: pf-step
+
+In fact $f_n\to f$ in the Hölder norm.
+
+::: pf-proof
+
 Fix $\varepsilon>0$. Since $(f_n)$ is Cauchy, choose $N$ so that
 \[
 \|f_n-f_m\|_{1/3}<\varepsilon
@@ -132,5 +158,11 @@ Thus $f_n\to f$ in the given norm. In particular,
 so $f\in C^{1/3}$.
 
 Hence $C^{1/3}$ is complete.
+
 :::
+
+:::
+
+:::
+
 :::

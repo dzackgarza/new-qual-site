@@ -37,23 +37,41 @@ R_u(x)=x-2\langle x,u\rangle u.
 \]
 Note that $R_u=R_{-u}$.
 
-<1>1. Given two reflections $R_u$ and $R_v$, choose a continuous path of unit vectors
+::: pf
+
+::: pf-step
+
+Given two reflections $R_u$ and $R_v$, choose a continuous path of unit vectors
 \[
 u_t\in S^n,
 \qquad u_0=u,\quad u_1=v,
 \]
 when $n\ge1$.
-::: {.proof}
+
+::: pf-proof
+
 The sphere $S^n$ is path connected for $n\ge1$. If necessary one may replace $v$ by $-v$, which defines the same reflection.
+
 :::
 
-<1>2. The formula
+:::
+
+::: pf-step
+
+The formula
 \[
 H_t(x)=R_{u_t}(x)=x-2\langle x,u_t\rangle u_t
 \]
 defines a homotopy through reflections from $R_u$ to $R_v$.
-::: {.proof}
+
+::: pf-proof
+
 The displayed expression depends continuously on $(x,t)$. For each fixed $t$, it is exactly reflection across the hyperplane $u_t^\perp$, hence restricts to a self-map of $S^n$. At $t=0$ and $t=1$ it equals the two prescribed reflections.
+
+:::
+
+:::
+
 :::
 
 For $n=0$ there is only one hyperplane in $\mathbb R$, so the assertion is trivial. Hence any two reflections of $S^n$ are homotopic, indeed homotopic through reflections.

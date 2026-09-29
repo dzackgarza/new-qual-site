@@ -25,7 +25,11 @@ The units of $\ZZ[i]$ are
 \]
 Up to these units, the Gaussian primes are exactly the following.
 
-<1>1. The ramified prime above $2$:
+::: pf
+
+::: pf-step
+
+The ramified prime above $2$:
 \[
 1+i,
 \]
@@ -34,8 +38,14 @@ with
 2=-i(1+i)^2.
 \]
 
-<1>2. Rational primes $p\equiv3\pmod4$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rational primes $p\equiv3\pmod4$.
+
+::: pf-proof
+
 Such a prime remains irreducible in $\ZZ[i]$. If it factored nontrivially, taking norms would write
 \[
 p^2=N(\alpha)N(\beta)
@@ -45,15 +55,27 @@ with both norms greater than $1$, forcing one factor to have norm $p$. But
 a^2+b^2=p
 \]
 has no solution when $p\equiv3\pmod4$.
+
 :::
 
-<1>3. Gaussian integers $a+bi$ with both coordinates nonzero and
+:::
+
+::: pf-step
+
+Gaussian integers $a+bi$ with both coordinates nonzero and
 \[
 a^2+b^2=p
 \]
 a rational prime.
-::: {.proof}
+
+::: pf-proof
+
 Their norm is the rational prime $p$. Since the norm is multiplicative, any factorization would force one factor to have norm $1$, hence be a unit. Thus $a+bi$ is prime.
+
+:::
+
+:::
+
 :::
 
 For rational primes $p\equiv1\pmod4$, Fermat's two-squares theorem gives

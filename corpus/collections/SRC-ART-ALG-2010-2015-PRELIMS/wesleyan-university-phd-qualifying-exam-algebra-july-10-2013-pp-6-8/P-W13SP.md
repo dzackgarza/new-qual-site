@@ -34,10 +34,15 @@ Show that any subgroup of $G$ of index $p$ is normal in $G$.
 ::: {.solution}
 Let $H\leq G$ have index $p$.
 
-<1>1. There is a normal subgroup $K\lhd G$ with $K\leq H$
+::: pf
+
+::: {.pf-step #s1}
+
+There is a normal subgroup $K\lhd G$ with $K\leq H$
 and $[G:K]\mid p!$.
 
-::: {.proof}
+::: pf-proof
+
 Act on the set $X=G/H$ of left cosets by left multiplication.
 The rule $\rho(g)(xH)=gxH$ is well-defined, since replacing
 $x$ by $xh$, with $h\in H$, does not change $gxH$.
@@ -50,11 +55,17 @@ so $kH=H$ and $k\in H$. The first isomorphism theorem
 identifies $G/K$ with $\rho(G)$ [@DF04]. Since $|X|=p$,
 the group $\operatorname{Sym}(X)$ has order $p!$.
 Lagrange's theorem therefore gives $[G:K]\mid p!$.
+
 :::
 
-<1>2. The subgroup $K$ equals $H$.
+:::
 
-::: {.proof}
+::: pf-step
+
+The subgroup $K$ equals $H$.
+
+::: pf-proof
+
 Put $m=[H:K]$. The index formula gives
 $$
 [G:K]=[G:H][H:K]=pm.
@@ -66,7 +77,13 @@ $|H|$, which divides $|G|$.
 If $m>1$, it has a prime divisor $q$. Divisibility by
 $(p-1)!$ implies $q\leq p-1$, whereas $q\mid|G|$
 and the definition of $p$ imply $q\geq p$. This is a
-contradiction. Hence $m=1$ and $H=K$. By step <1>1,
+contradiction. Hence $m=1$ and $H=K$. By step [](#s1){.pf-ref},
 $H$ is normal in $G$.
+
 :::
+
+:::
+
+:::
+
 :::

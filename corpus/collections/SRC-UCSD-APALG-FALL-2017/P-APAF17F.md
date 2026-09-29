@@ -46,15 +46,27 @@ The statement is left as the exam printed it.
 :::
 
 ::: {.solution}
-<1>1. Under the Frobenius characteristic map,
+
+::: pf
+
+::: pf-step
+
+Under the Frobenius characteristic map,
 \[
 \operatorname{ch}(V)=s_{(2)}s_{(2)}s_{(1)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The representations $S^{(2)}$ of $S_2$ and $S^{(1)}$ of $S_1$ are trivial. Induction from a Young subgroup corresponds under the Frobenius characteristic to multiplication of the corresponding Schur functions. Hence the induced module has characteristic $s_{(2)}s_{(2)}s_{(1)}$.
+
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+
+One has
 \[
 s_{(2)}s_{(2)}=s_{(4)}+s_{(3,1)}+s_{(2,2)},
 \]
@@ -63,7 +75,9 @@ and consequently
 s_{(2)}s_{(2)}s_{(1)}
 =s_{(5)}+2s_{(4,1)}+2s_{(3,2)}+s_{(3,1,1)}+s_{(2,2,1)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The first identity follows from the Pieri rule by adding a horizontal $2$-strip to the diagram $(2)$. Multiplying by $s_{(1)}=h_1$ and applying Pieri again gives
 \[
 \begin{aligned}
@@ -73,23 +87,37 @@ s_{(2,2)}s_{(1)}&=s_{(3,2)}+s_{(2,2,1)}.
 \end{aligned}
 \]
 Adding these identities yields the displayed expansion.
+
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #s3}
+
+Therefore
 \[
 \boxed{
 V\cong
 S^{(5)}\oplus2S^{(4,1)}\oplus2S^{(3,2)}\oplus S^{(3,1,1)}\oplus S^{(2,2,1)}.}
 \]
-::: {.proof}
-The Schur functions form the basis corresponding to irreducible $S_5$-characters under the Frobenius characteristic. Thus the coefficients in <1>2 are exactly the irreducible multiplicities. This proves part (a).
+
+::: pf-proof
+
+The Schur functions form the basis corresponding to irreducible $S_5$-characters under the Frobenius characteristic. Thus the coefficients in step [](#s2){.pf-ref} are exactly the irreducible multiplicities. This proves part (a).
+
 :::
 
-<1>4. The endomorphism algebra has dimension
+:::
+
+::: pf-step
+
+The endomorphism algebra has dimension
 \[
 \boxed{11}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 For a completely reducible complex representation
 \[
 V\cong\bigoplus_\lambda m_\lambda S^\lambda,
@@ -103,18 +131,25 @@ so
 \[
 \dim_\mathbb C\operatorname{End}_{S_5}(V)=\sum_\lambda m_\lambda^2.
 \]
-Using the multiplicities from <1>3 gives
+Using the multiplicities from step [](#s3){.pf-ref} gives
 \[
 1^2+2^2+2^2+1^2+1^2=11.
 \]
 This proves part (b).
+
 :::
 
-<1>5. For the operator exactly as printed in part (c),
+:::
+
+::: pf-step
+
+For the operator exactly as printed in part (c),
 \[
 \boxed{\operatorname{rank}\varphi=0}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The printed formula contains no action of $\sigma$ on $v$, so
 \[
 \varphi(v)
@@ -125,14 +160,27 @@ There are equally many even and odd permutations in $S_5$, hence
 \sum_{\sigma\in S_5}\operatorname{sign}(\sigma)=0.
 \]
 Therefore $\varphi=0$ and its rank is $0$.
+
 :::
 
-<1>6. If the intended operator was instead the antisymmetrizer
+:::
+
+::: pf-step
+
+If the intended operator was instead the antisymmetrizer
 \[
 \widetilde\varphi(v)=\frac1{5!}\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)\,\sigma v,
 \]
 then its rank is also $0$.
-::: {.proof}
-The antisymmetrizer is the projection onto the sign-isotypic component of $V$. The sign representation of $S_5$ is $S^{(1^5)}$, and <1>3 shows that $S^{(1^5)}$ does not occur in $V$. Hence the sign-isotypic component is zero, so $\widetilde\varphi=0$ as well.
+
+::: pf-proof
+
+The antisymmetrizer is the projection onto the sign-isotypic component of $V$. The sign representation of $S_5$ is $S^{(1^5)}$, and step [](#s3){.pf-ref} shows that $S^{(1^5)}$ does not occur in $V$. Hence the sign-isotypic component is zero, so $\widetilde\varphi=0$ as well.
+
 :::
+
+:::
+
+:::
+
 :::

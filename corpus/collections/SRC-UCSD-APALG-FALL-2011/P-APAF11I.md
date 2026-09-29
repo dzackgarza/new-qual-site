@@ -31,7 +31,12 @@ Let $k$ be a field.
 :::
 
 ::: {.solution}
-<1>1. **Hilbert's Nullstellensatz.** If $k$ is algebraically closed and $I\subseteq k[x_1,\ldots,x_n]$ is an ideal, then
+
+::: pf
+
+::: pf-step
+
+**Hilbert's Nullstellensatz.** If $k$ is algebraically closed and $I\subseteq k[x_1,\ldots,x_n]$ is an ideal, then
 \[
 I(V(I))=\sqrt I.
 \]
@@ -41,9 +46,10 @@ The weak form says that every maximal ideal of $k[x_1,\ldots,x_n]$ is
 (x_1-a_1,\ldots,x_n-a_n)
 \]
 for a unique $(a_1,\ldots,a_n)\in k^n$.
-::: {.proof}
+
+::: pf-proof
+
 This is the standard strong, respectively weak, form of Hilbert's Nullstellensatz. The algebraic-closedness hypothesis is essential for these formulations over $k^n$.
-:::
 
 Put
 \[
@@ -52,8 +58,16 @@ R=k[x_1,\ldots,x_n],
 K=\langle f_1,\ldots,f_s,1-yf\rangle\subseteq R[y].
 \]
 
-<1>2. If $f\in\sqrt I$, then $1\in K$.
-::: {.proof}
+:::
+
+:::
+
+::: {.pf-step #s2}
+
+If $f\in\sqrt I$, then $1\in K$.
+
+::: pf-proof
+
 Choose $N\ge1$ such that $f^N\in I=(f_1,\ldots,f_s)$. Then
 \[
 1-(yf)^N=(1-yf)\left(1+yf+\cdots+(yf)^{N-1}\right).
@@ -63,10 +77,17 @@ Hence
 1=(1-yf)\left(1+yf+\cdots+(yf)^{N-1}\right)+y^Nf^N.
 \]
 The first term lies in $(1-yf)$ and the second lies in $IR[y]$, because $f^N\in I$. Thus $1\in K$.
+
 :::
 
-<1>3. If $1\in K$, then $f\in\sqrt I$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+
+If $1\in K$, then $f\in\sqrt I$.
+
+::: pf-proof
+
 If $f=0$, then $f\in\sqrt I$ trivially. Assume $f\ne0$.
 Localize $R$ at the powers of $f$. There is an $R$-algebra homomorphism
 \[
@@ -91,18 +112,24 @@ Multiplying by a sufficiently large power $f^N$ clears denominators and yields
 f^N=\sum_i b_i f_i\in I.
 \]
 Hence $f\in\sqrt I$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{
 f\in\sqrt I
 \iff
 1\in\langle f_1,\ldots,f_s,1-yf\rangle\subseteq R[y].}
 \]
-::: {.proof}
-Combine <1>2 and <1>3. This proves part (b).
-:::
+
+::: pf-proof
+
+Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref}. This proves part (b).
 
 For part (c), write
 \[
@@ -113,11 +140,19 @@ with $u\in k^\times$, the $f_i$ pairwise nonassociate irreducibles, and $a_i\ge1
 g=f_1\cdots f_r.
 \]
 
-<1>5. One has
+:::
+
+:::
+
+::: {.pf-step #s5}
+
+One has
 \[
 (g)\subseteq\sqrt{(f)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let
 \[
 N=\max\{a_1,\ldots,a_r\}.
@@ -127,13 +162,20 @@ Then
 g^N=f_1^N\cdots f_r^N
 \]
 is divisible by $f_1^{a_1}\cdots f_r^{a_r}$, hence $g^N\in(f)$. Therefore $g\in\sqrt{(f)}$. Since the radical is an ideal, $(g)\subseteq\sqrt{(f)}$.
+
 :::
 
-<1>6. Conversely,
+:::
+
+::: {.pf-step #s6}
+
+Conversely,
 \[
 \sqrt{(f)}\subseteq(g).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $h\in\sqrt{(f)}$. Then $h^N\in(f)$ for some $N$, so
 \[
 f_1^{a_1}\cdots f_r^{a_r}\mid h^N.
@@ -144,13 +186,26 @@ Because the $f_i$ are pairwise nonassociate primes, their product divides $h$:
 f_1\cdots f_r\mid h.
 \]
 Hence $h\in(g)$.
+
 :::
 
-<1>7. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{\sqrt{(f)}=(f_1f_2\cdots f_r)}.
 \]
-::: {.proof}
-Combine <1>5 and <1>6. This proves part (c).
+
+::: pf-proof
+
+Combine steps [](#s5){.pf-ref} and [](#s6){.pf-ref}. This proves part (c).
+
 :::
+
+:::
+
+:::
+
 :::

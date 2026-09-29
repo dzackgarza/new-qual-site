@@ -31,21 +31,38 @@ Prove that $f \in C(S^1)$ (that is, $f$ is equal almost everywhere to a continuo
 ::: {.solution}
 Write $\widehat f(n)=\frac1{2\pi}\int_{-\pi}^\pi f(x)e^{-inx}\,dx$ and let $g(x)\da\sum_{n\in\ZZ}\widehat f(n)e^{inx}$.
 
-<1>1. $g$ is continuous on $S^1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+$g$ is continuous on $S^1$.
+
+::: pf-proof
+
 $\abs{\widehat f(n)e^{inx}}=\abs{\widehat f(n)}$ and $\sum_n\abs{\widehat f(n)}<\infty$, so by the Weierstrass $M$-test the series converges uniformly on $\RR$. Its terms are continuous and $2\pi$-periodic, so $g$ is too.
+
 :::
 
-<1>2. $\widehat g(k)=\widehat f(k)$ for all $k\in\ZZ$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+$\widehat g(k)=\widehat f(k)$ for all $k\in\ZZ$.
+
+::: pf-proof
+
 Uniform convergence allows integrating term by term, and $\frac1{2\pi}\int_{-\pi}^\pi e^{i(n-k)x}\,dx$ is $1$ for $n=k$ and $0$ otherwise.
+
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-By step <1>2, $f-g\in L^1(S^1)$ has all Fourier coefficients $0$, so $f-g=0$ almost everywhere by the uniqueness theorem for Fourier coefficients of $L^1(S^1)$ functions, a consequence of Fejér's theorem [@SS03a]. By step <1>1, $f$ equals the continuous function $g$ almost everywhere.
 :::
+
+::: pf-qed
+
+By step [](#s2){.pf-ref}, $f-g\in L^1(S^1)$ has all Fourier coefficients $0$, so $f-g=0$ almost everywhere by the uniqueness theorem for Fourier coefficients of $L^1(S^1)$ functions, a consequence of Fejér's theorem [@SS03a]. By step [](#s1){.pf-ref}, $f$ equals the continuous function $g$ almost everywhere.
+
+:::
+
+:::
+
 :::

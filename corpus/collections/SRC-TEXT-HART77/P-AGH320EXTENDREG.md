@@ -46,13 +46,18 @@ $$
 be the function field of $Y$.
 Since $Y\setminus\{P\}$ is a nonempty open subset, the given regular function determines an element, again denoted $f$, of $K$.
 
-<1>1. Put
+::: pf
+
+::: {.pf-step #s1}
+
+Put
 $$
 R=\mco_{P,Y}.
 $$
 Then $R$ is a Noetherian normal local domain of dimension at least two.
 
-::: {.proof}
+::: pf-proof
+
 Local rings of varieties are Noetherian domains.
 The hypothesis that $P$ is normal says exactly that $R$ is integrally closed in its fraction field, so $R$ is normal.
 By [[P-AGH312DIMLOCAL]],
@@ -60,11 +65,17 @@ $$
 \dim R=\dim Y\ge2.
 $$
 Its fraction field is $K(Y)=K$.
+
 :::
 
-<1>2. For every height-one prime $\mathfrak q\subset R$, the rational function $f$ belongs to $R_{\mathfrak q}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+For every height-one prime $\mathfrak q\subset R$, the rational function $f$ belongs to $R_{\mathfrak q}$.
+
+::: pf-proof
+
 Choose an affine open neighborhood $U\subseteq Y$ of $P$, write
 $$
 A=A(U),
@@ -100,23 +111,35 @@ A_{\mathfrak p}\cong (A_{\mathfrak m})_{\mathfrak pA_{\mathfrak m}}
 =R_{\mathfrak q},
 $$
 which proves the claim.
+
 :::
 
-<1>3. The rational function $f$ belongs to $R=\mco_{P,Y}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The rational function $f$ belongs to $R=\mco_{P,Y}$.
+
+::: pf-proof
+
 For a Noetherian normal domain, the height-one intersection theorem states that, inside its fraction field,
 $$
 R=\bigcap_{\operatorname{ht}\mathfrak q=1}R_{\mathfrak q}.
 $$
 This is Matsumura, *Commutative Ring Theory*, Theorem 11.5.
-Step <1>2 places $f$ in every ring in this intersection, so $f\in R$.
+Step [](#s2){.pf-ref} places $f$ in every ring in this intersection, so $f\in R$.
+
 :::
 
-<1>4. The function $f$ extends to a regular function on all of $Y$, proving (a).
+:::
 
-::: {.proof}
-By step <1>3, the germ $f\in\mco_{P,Y}$ is represented by a regular function $g$ on some open neighborhood $V$ of $P$.
+::: {.pf-step #s4}
+
+The function $f$ extends to a regular function on all of $Y$, proving (a).
+
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the germ $f\in\mco_{P,Y}$ is represented by a regular function $g$ on some open neighborhood $V$ of $P$.
 Both $g$ and the original function on $Y\setminus\{P\}$ represent the same element of $K(Y)$.
 Hence they agree on the overlap
 $$
@@ -127,11 +150,17 @@ $$
 V\cup(Y\setminus\{P\})=Y
 $$
 extending the original $f$.
+
 :::
 
-<1>5. The assertion fails in dimension one.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The assertion fails in dimension one.
+
+::: pf-proof
+
 Take
 $$
 Y=\AA^1,
@@ -154,11 +183,17 @@ $$
 $$
 with $a,s\in k[x]$ and $s\notin(x)$, then $s=ax$, so $s(0)=0$, contradicting $s\notin(x)$.
 Thus no extension exists, proving (b).
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>4 prove (a), and step <1>5 proves (b).
 :::
+
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove (a), and step [](#s5){.pf-ref} proves (b).
+
+:::
+
+:::
+
 :::

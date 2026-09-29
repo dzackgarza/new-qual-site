@@ -34,8 +34,15 @@ Prove that $T$ is invertible (with bounded inverse) if and only if both $T$ and 
 :::
 
 ::: {.solution}
-<1>1. Invertibility implies both operators are bounded below.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Invertibility implies both operators are bounded below.
+
+::: pf-proof
+
 Suppose $T$ is invertible with bounded inverse. Then for every $x\in H$,
 \[
 \|x\|=\|T^{-1}Tx\|\le \|T^{-1}\|\,\|Tx\|,
@@ -51,10 +58,17 @@ Moreover $T^*$ is invertible and
 (T^*)^{-1}=(T^{-1})^*.
 \]
 Applying the same argument to $T^*$ shows that $T^*$ is bounded below.
+
 :::
 
-<1>2. A bounded-below operator is injective and has closed range.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+A bounded-below operator is injective and has closed range.
+
+::: pf-proof
+
 Assume now that
 \[
 \|Tx\|\ge c\|x\|
@@ -70,10 +84,17 @@ so $(x_n)$ is Cauchy. Since $H$ is complete, $x_n\to x$ for some $x\in H$. Conti
 Tx_n\to Tx.
 \]
 Hence the limit belongs to $\operatorname{ran}T$, so $\operatorname{ran}T$ is closed.
+
 :::
 
-<1>3. If $T$ and $T^*$ are bounded below, then $T$ is bijective.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $T$ and $T^*$ are bounded below, then $T$ is bijective.
+
+::: pf-proof
+
 If $T^*$ is bounded below, then $T^*$ is injective, hence
 \[
 \ker T^*=\{0\}.
@@ -90,15 +111,22 @@ which implies
 \[
 \overline{\operatorname{ran}T}=H.
 \]
-By step <1>2 the range is already closed, so
+By step [](#s2){.pf-ref} the range is already closed, so
 \[
 \operatorname{ran}T=H.
 \]
 Thus $T$ is surjective as well as injective.
+
 :::
 
-<1>4. If $T$ and $T^*$ are bounded below, then $T^{-1}$ is bounded.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $T$ and $T^*$ are bounded below, then $T^{-1}$ is bounded.
+
+::: pf-proof
+
 Since $T$ is bijective, define $T^{-1}:H\to H$. If $y=Tx$, then
 \[
 \|T^{-1}y\|=\|x\|\le c^{-1}\|Tx\|=c^{-1}\|y\|.
@@ -108,5 +136,11 @@ Hence
 \|T^{-1}\|\le c^{-1}.
 \]
 Therefore $T$ is invertible with bounded inverse.
+
 :::
+
+:::
+
+:::
+
 :::

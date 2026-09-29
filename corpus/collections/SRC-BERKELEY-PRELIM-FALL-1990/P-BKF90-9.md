@@ -39,12 +39,17 @@ a\\ b\\ c
 \end{pmatrix}.
 $$
 
-<1>1. One has
+::: pf
+
+::: pf-step
+
+One has
 $$
 W=u^\perp.
 $$
 
-::: {.proof}
+::: pf-proof
+
 For a vector
 $$
 v=
@@ -57,22 +62,33 @@ $$
 ax+by+cz=u^Tv=0,
 $$
 which says that $v$ is orthogonal to $u$.
+
 :::
 
-<1>2. For every $v\in\RR^3$, the orthogonal projection of $v$ onto $W$ is
+:::
+
+::: {.pf-step #s2}
+
+For every $v\in\RR^3$, the orthogonal projection of $v$ onto $W$ is
 $$
 P_W(v)=v-(u^Tv)u.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $u$ has length $1$, the orthogonal projection of $v$ onto the line spanned by $u$ is
 $$
 (u^Tv)u.
 $$
 Subtracting that normal component from $v$ leaves the component in $u^\perp=W$.
+
 :::
 
-<1>3. The standard-basis matrix of $P_W$ is
+:::
+
+::: {.pf-step #s3}
+
+The standard-basis matrix of $P_W$ is
 $$
 \boxed{
 \begin{pmatrix}
@@ -82,8 +98,9 @@ $$
 \end{pmatrix}}.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+
+By step [](#s2){.pf-ref},
 $$
 P_W(v)=(I-uu^T)v.
 $$
@@ -97,11 +114,17 @@ ac&bc&c^2
 \end{pmatrix},
 $$
 so subtracting this matrix from the identity gives the displayed matrix.
+
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 gives the requested matrix.
 :::
+
+::: pf-qed
+
+Step [](#s3){.pf-ref} gives the requested matrix.
+
+:::
+
+:::
+
 :::

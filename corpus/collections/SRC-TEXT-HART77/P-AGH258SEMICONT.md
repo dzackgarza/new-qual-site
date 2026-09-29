@@ -41,9 +41,14 @@ Use Nakayama's lemma to prove the following.
 ::: {.solution}
 The fibers in the definition of $\varphi$ are finite-dimensional because $\mcf$ is [[D-QNTZY|coherent]].
 
-<1>1. If $\varphi(x)=r$, then $x$ has an affine neighborhood $U$ and a surjection $\OO_U^r\to\mcf|_U$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+If $\varphi(x)=r$, then $x$ has an affine neighborhood $U$ and a surjection $\OO_U^r\to\mcf|_U$.
+
+::: pf-proof
+
 Take an affine neighborhood $V=\Spec A$ of $x$ with $\mcf|_V\cong\widetilde M$, where $M$ is a finite $A$-module [@Har10a, Proposition II.5.4].
 Let $\mathfrak p$ correspond to $x$.
 Choose elements $m_1,\ldots,m_r\in M$ whose images form a basis of $M_{\mathfrak p}/\mathfrak pM_{\mathfrak p}$: each basis vector can be represented by a fraction from $M$, and multiplication by its nonzero denominator only rescales that basis vector.
@@ -55,35 +60,53 @@ For each element of a finite generating list of $C$, choose an annihilator outsi
 Their product $s\notin\mathfrak p$ annihilates $C$, so $u_s:A_s^r\to M_s$ is surjective.
 The associated-sheaf map is the asserted surjection on $U=D_V(s)$.
 When $r=0$, this construction gives $\mcf|_U=0$.
+
 :::
 
-<1>2. The function $\varphi$ is upper semi-continuous, proving part (a).
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The function $\varphi$ is upper semi-continuous, proving part (a).
+
+::: pf-proof
+
 Fix $n\in\ZZ$ and $x$ with $\varphi(x)=r<n$.
-On the neighborhood $U$ from step <1>1, taking the stalk at $y\in U$ and tensoring with $k(y)$ gives a surjection
+On the neighborhood $U$ from step [](#s1){.pf-ref}, taking the stalk at $y\in U$ and tensoring with $k(y)$ gives a surjection
 $$
 k(y)^r\longrightarrow\mcf_y\otimes_{\OO_{X,y}}k(y).
 $$
 Thus $\varphi(y)\le r<n$ throughout $U$.
 It follows that $\{x:\varphi(x)<n\}$ is open, and its complement $\{x:\varphi(x)\ge n\}$ is closed.
+
 :::
 
-<1>3. If $\mcf$ is locally free, then $\varphi$ is locally constant; connectedness makes it constant, proving part (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $\mcf$ is locally free, then $\varphi$ is locally constant; connectedness makes it constant, proving part (b).
+
+::: pf-proof
+
 On an open set with $\mcf|_U\cong\OO_U^r$, every fiber is $k(y)^r$, so $\varphi(y)=r$ for all $y\in U$.
 Hence each set $\varphi^{-1}(r)$ is open.
 Its complement is the union of the other such sets and is also open, so $\varphi^{-1}(r)$ is closed as well.
 If $X$ is nonempty and connected, the fiber containing any chosen point must be all of $X$.
 For empty $X$ the constancy assertion is vacuous.
+
 :::
 
-<1>4. If $X$ is reduced and $\varphi$ is constant, then $\mcf$ is locally free, proving part (c).
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+If $X$ is reduced and $\varphi$ is constant, then $\mcf$ is locally free, proving part (c).
+
+::: pf-proof
+
 Write the constant value as $r$ and fix $x\in X$.
-Step <1>1 gives an affine neighborhood $U=\Spec B$ and a surjective module homomorphism
+Step [](#s1){.pf-ref} gives an affine neighborhood $U=\Spec B$ and a surjective module homomorphism
 $$
 u:B^r\longrightarrow N
 $$
@@ -102,13 +125,19 @@ The intersection of all prime ideals is the nilradical, which is zero in the red
 Thus every $b_i$ is zero and $u$ is injective.
 It follows that $u$ is an isomorphism and $\mcf|_U\cong\OO_U^r$.
 The construction applies at each point, giving local freeness.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>2, <1>3, and <1>4 prove parts (a), (b), and (c), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove parts (a), (b), and (c), respectively.
+
+:::
+
+:::
+
 :::
 
 ::: {.remark title="Reducedness in part (c)"}

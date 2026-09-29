@@ -35,8 +35,15 @@ Let $A\in M_{m\times n}(F)$ and $b\in F^m$. Let $[A\mid b]$ be the augmented mat
 :::
 
 ::: {.solution}
-<1>1. The system is consistent iff $b$ lies in the column space of $A$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The system is consistent iff $b$ lies in the column space of $A$.
+
+::: pf-proof
+
 Writing the columns of $A$ as $a_1,\ldots,a_n$, the equation
 \[
 Ax=b
@@ -49,10 +56,17 @@ Thus a solution exists iff $b\in\operatorname{col}(A)$. This is equivalent to ad
 \[
 \operatorname{rank}[A\mid b]=\operatorname{rank}A.
 \]
+
 :::
 
-<1>2. A consistent system has a unique solution iff $\ker A=0$.
-::: {.proof}
+:::
+
+::: pf-step
+
+A consistent system has a unique solution iff $\ker A=0$.
+
+::: pf-proof
+
 Fix one solution $x_0$. Then every solution is of the form
 \[
 x_0+v,
@@ -68,5 +82,11 @@ Hence the solution is unique iff $\ker A=0$. By rank-nullity,
 n=\operatorname{rank}A+\dim\ker A,
 \]
 so $\ker A=0$ iff $\operatorname{rank}A=n$.
+
 :::
+
+:::
+
+:::
+
 :::

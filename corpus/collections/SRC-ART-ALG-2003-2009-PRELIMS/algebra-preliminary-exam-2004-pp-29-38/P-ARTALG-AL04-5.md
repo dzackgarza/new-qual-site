@@ -38,18 +38,29 @@ Give an example of each of the following:
 Examples are, respectively, $\mathbb Z$, $\mathbb Z[x]$, and
 $\mathbb Z[\sqrt{-5}]$.
 
-<1>1. The ring $\mathbb Z$ is Euclidean.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The ring $\mathbb Z$ is Euclidean.
+
+::: pf-proof
+
 Use the Euclidean function $d(b)=|b|$ for $b\ne0$. For integers
 $a,b$ with $b\ne0$, integer division gives $a=qb+r$ with
 $0\leq r<|b|$. Thus $r=0$ or $d(r)<d(b)$, as required.
+
 :::
 
-<1>2. The ring $\mathbb Z[x]$ is a unique factorization domain
+:::
+
+::: pf-step
+
+The ring $\mathbb Z[x]$ is a unique factorization domain
 but not a principal ideal domain.
 
-::: {.proof}
+::: pf-proof
+
 Unique prime factorization makes $\mathbb Z$ a unique factorization
 domain. Gauss's lemma implies that a polynomial ring in one variable
 over a unique factorization domain is again a unique factorization
@@ -62,12 +73,18 @@ of nonzero polynomials add, so $f$ is a constant integer dividing
 $2$: it is $1,-1,2$, or $-2$. The first two possibilities would
 give the whole ring. The last two give $(2)$, which does not contain
 $x$ because its coefficient of $x$ is odd. No generator is possible.
+
 :::
 
-<1>3. The integral domain $R=\mathbb Z[\sqrt{-5}]$ is not a
+:::
+
+::: pf-step
+
+The integral domain $R=\mathbb Z[\sqrt{-5}]$ is not a
 unique factorization domain.
 
-::: {.proof}
+::: pf-proof
+
 The ring embeds in $\mathbb C$, so it is a domain. For
 $z=a+b\sqrt{-5}$ define
 $$
@@ -97,5 +114,11 @@ The norms $4$ and $9$ of the factors on the left differ from
 the norm $6$ of either factor on the right. Thus no rearrangement
 and multiplication by units can identify the two irreducible
 factorizations. This disproves unique factorization in $R$.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -75,7 +75,11 @@ $$
 e=-\deg\det\mathcal E.
 $$
 
-<1>1. Fix
+::: pf
+
+::: {.pf-step #s1}
+
+Fix
 $$
 0\le e\le2g-2.
 $$
@@ -84,7 +88,8 @@ $$
 \Ext^1_C(\mathcal L,\OO_C)\ne0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Choose an effective divisor $A$ of degree $2g-2-e$ and put
 $$
 \mathcal L=\OO_C(A-K_C).
@@ -101,9 +106,14 @@ H^1\qty(C,\OO_C(K_C-A))^\vee
 \cong H^0(C,\OO_C(A)),
 $$
 which is nonzero because $A$ is effective.
+
 :::
 
-<1>2. A nonzero class in step <1>1 defines a normalized extension
+:::
+
+::: {.pf-step #s2}
+
+A nonzero class in step [](#s1){.pf-ref} defines a normalized extension
 $$
 0\longrightarrow\OO_C
 \longrightarrow\mathcal E
@@ -111,7 +121,8 @@ $$
 \longrightarrow0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The inclusion of $\OO_C$ gives $H^0(C,\mathcal E)\ne0$. Let $\mathcal M$ have
 negative degree. Tensoring the extension by $\mathcal M$ gives
 $$
@@ -126,11 +137,17 @@ $$
 H^0(C,\mathcal E\tensor\mathcal M)=0.
 $$
 Thus $\mathcal E$ is normalized.
+
 :::
 
-<1>3. The bundle $\mathcal E$ in step <1>2 is indecomposable.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+The bundle $\mathcal E$ in step [](#s2){.pf-ref} is indecomposable.
+
+::: pf-proof
+
 Suppose
 $$
 \mathcal E\cong\mathcal A\oplus\mathcal B
@@ -151,21 +168,32 @@ $\OO_C\to\OO_C\oplus\mathcal L$ has only a nonzero constant component in the
 $\OO_C$ summand and splits. If $\mathcal L\cong\OO_C$, the injection is a
 nonzero constant vector in $k^2$, and a constant change of basis again splits
 it. Either conclusion contradicts the choice of a nonzero extension class.
+
 :::
 
-<1>4. For every $0\le e\le2g-2$ there is an indecomposable ruled surface over
+:::
+
+::: {.pf-step #s4}
+
+For every $0\le e\le2g-2$ there is an indecomposable ruled surface over
 $C$ with invariant $e$.
 
-::: {.proof}
-For the normalized bundle in steps <1>2--<1>3,
+::: pf-proof
+
+For the normalized bundle in steps [](#s2){.pf-ref} and [](#s3){.pf-ref},
 $$
 \deg\det\mathcal E=\deg\mathcal L=-e.
 $$
-Thus $X=\PP(\mathcal E)$ has invariant $e$, and step <1>3 gives
+Thus $X=\PP(\mathcal E)$ has invariant $e$, and step [](#s3){.pf-ref} gives
 indecomposability. This proves part (a).
+
 :::
 
-<1>5. For part (b), let
+:::
+
+::: {.pf-step #s5}
+
+For part (b), let
 $$
 0\longrightarrow\OO_C
 \longrightarrow\mathcal E
@@ -182,7 +210,8 @@ V=H^0(C,\OO_C(K_C+D)),
 $$
 and the subsystem $H$ is $\PP(\ker\xi)$.
 
-::: {.proof}
+::: pf-proof
+
 There are natural identifications
 $$
 \Ext^1_C\qty(\OO_C(D),\OO_C)
@@ -194,10 +223,15 @@ H^1(C,\OO_C(-D))^\vee
 \cong H^0(C,\OO_C(K_C+D)).
 $$
 This is exactly the interpretation of $\xi$ and $H$ in the statement.
+
 :::
 
-<1>6. Let $F$ be any effective divisor with $\deg F\le d-1$. Pulling the
-extension in step <1>5 back along
+:::
+
+::: {.pf-step #s6}
+
+Let $F$ be any effective divisor with $\deg F\le d-1$. Pulling the
+extension in step [](#s5){.pf-ref} back along
 $$
 \OO_C(D-F)\hookrightarrow\OO_C(D)
 $$
@@ -212,7 +246,8 @@ $$
 L_F=|K_C+D-F|+F.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let $s_F$ be the canonical section of $\OO_C(F)$. The inclusion is
 multiplication by $s_F$. Under Serre duality, the dual of the induced map
 $\beta_F$ is therefore
@@ -223,16 +258,22 @@ H^0\qty(C,\OO_C(K_C+D)).
 $$
 Its projective image is precisely $L_F$. Hence $\beta_F(\xi)=0$ exactly when
 $\xi$ annihilates that image, equivalently when $L_F\subseteq H$.
+
 :::
 
-<1>7. If an effective divisor $E$ of degree $d-1$ satisfies
+:::
+
+::: {.pf-step #s7}
+
+If an effective divisor $E$ of degree $d-1$ satisfies
 $$
 L_E\subseteq H,
 $$
 then $\mathcal E$ is not normalized.
 
-::: {.proof}
-Step <1>6 gives $\beta_E(\xi)=0$, so the pulled-back extension
+::: pf-proof
+
+Step [](#s6){.pf-ref} gives $\beta_E(\xi)=0$, so the pulled-back extension
 $$
 0\longrightarrow\OO_C
 \longrightarrow\mathcal E_E
@@ -243,15 +284,21 @@ splits. The splitting followed by $\mathcal E_E\to\mathcal E$ embeds
 $\OO_C(D-E)$ in $\mathcal E$. Its degree is one, so twisting by its inverse,
 which has degree $-1$, gives a nonzero section of a negative twist of
 $\mathcal E$. Thus $\mathcal E$ is not normalized.
+
 :::
 
-<1>8. Conversely, if $\mathcal E$ is not normalized, then some effective
+:::
+
+::: {.pf-step #s8}
+
+Conversely, if $\mathcal E$ is not normalized, then some effective
 divisor $E$ of degree $d-1$ satisfies
 $$
 L_E\subseteq H.
 $$
 
-::: {.proof}
+::: pf-proof
+
 There is a negative-degree line bundle $\mathcal M$ and a nonzero morphism
 $$
 \mathcal M^{-1}\longrightarrow\mathcal E.
@@ -271,7 +318,7 @@ $$
 \mathcal A\cong\OO_C(D-F).
 $$
 Thus $\deg F=d-a\le d-1$. Since this inclusion already lifts to $\mathcal E$,
-the pullback extension along $\mathcal A\to\OO_C(D)$ splits. By step <1>6,
+the pullback extension along $\mathcal A\to\OO_C(D)$ splits. By step [](#s6){.pf-ref},
 $$
 L_F\subseteq H.
 $$
@@ -281,9 +328,14 @@ $\deg E=d-1$, and every section divisible by $E$ is divisible by $F$. Hence
 $$
 L_E\subseteq L_F\subseteq H.
 $$
+
 :::
 
-<1>9. Therefore
+:::
+
+::: {.pf-step #s9}
+
+Therefore
 $$
 \boxed{
 \mathcal E\text{ is normalized}
@@ -292,11 +344,17 @@ L_E\nsubseteq H
 \text{ for every effective }E\text{ of degree }d-1.}
 $$
 
-::: {.proof}
-Steps <1>7--<1>8 prove the two contrapositives. This proves part (b).
+::: pf-proof
+
+Steps [](#s7){.pf-ref} and [](#s8){.pf-ref} prove the two contrapositives. This proves part (b).
+
 :::
 
-<1>10. For part (c), put $d=-e$, so
+:::
+
+::: {.pf-step #s10}
+
+For part (c), put $d=-e$, so
 $$
 1\le d\le g,
 $$
@@ -305,7 +363,8 @@ $$
 \dim H^1(C,\OO_C(-D))=g+d-1.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Serre duality gives
 $$
 H^1(C,\OO_C(-D))^\vee
@@ -318,9 +377,14 @@ h^0(C,\OO_C(K_C+D))
 =(2g-2+d)+1-g
 =g+d-1.
 $$
+
 :::
 
-<1>11. Assume $d\ge2$. For an effective divisor $E$ of degree $d-1$, the
+:::
+
+::: {.pf-step #s11}
+
+Assume $d\ge2$. For an effective divisor $E$ of degree $d-1$, the
 nonzero classes $[\xi]$ for which
 $$
 L_E\subseteq H_\xi
@@ -331,12 +395,13 @@ $$
 $$
 of dimension $d-2$.
 
-::: {.proof}
+::: pf-proof
+
 Put
 $$
 V=H^0(C,\OO_C(K_C+D)),
 $$
-so $\dim V=g+d-1$ by step <1>10. Let
+so $\dim V=g+d-1$ by step [](#s10){.pf-ref}. Let
 $$
 W_E
 =
@@ -351,7 +416,7 @@ this line bundle is nonspecial, and Riemann--Roch gives
 $$
 \dim W_E=g.
 $$
-By step <1>6, the bad classes are exactly
+By step [](#s6){.pf-ref}, the bad classes are exactly
 $$
 \PP(W_E^\perp)\subseteq\PP(V^*).
 $$
@@ -359,15 +424,21 @@ Its dimension is
 $$
 (g+d-1-g)-1=d-2.
 $$
+
 :::
 
-<1>12. If $2\le d\le g$, the union of the bad extension classes in step
-<1>11 is a proper subset of
+:::
+
+::: {.pf-step #s12}
+
+If $2\le d\le g$, the union of the bad extension classes in step
+[](#s11){.pf-ref} is a proper subset of
 $$
 \PP H^1(C,\OO_C(-D)).
 $$
 
-::: {.proof}
+::: pf-proof
+
 Effective divisors of degree $d-1$ are parametrized by
 $$
 \Sym^{d-1}C,
@@ -376,7 +447,7 @@ which has dimension $d-1$. The spaces
 $$
 H^0(C,\OO_C(K_C+D-E))
 $$
-have constant dimension $g$ by step <1>11. The universal effective divisor on
+have constant dimension $g$ by step [](#s11){.pf-ref}. The universal effective divisor on
 $C\times\Sym^{d-1}C$, together with cohomology and base change, therefore gives
 a rank-$g$ subbundle of the trivial bundle with fibre $V$. Its annihilator
 projectivizes to a closed incidence variety
@@ -399,40 +470,52 @@ $$
 2d-3\le g+d-3<g+d-2.
 $$
 Thus the bad locus cannot fill the projective extension space.
+
 :::
 
-<1>13. For every integer $1\le d\le g$ there is a nonzero extension class
+:::
+
+::: {.pf-step #s13}
+
+For every integer $1\le d\le g$ there is a nonzero extension class
 $\xi$ satisfying the normalization criterion of part (b).
 
-::: {.proof}
+::: pf-proof
+
 If $d=1$, the only effective divisor of degree $d-1=0$ is $E=0$, and
 $$
 L_0=|K_C+D|
 $$
 cannot be contained in the proper hyperplane $H_\xi$ defined by any nonzero
-$\xi$. Such classes exist because step <1>10 gives
+$\xi$. Such classes exist because step [](#s10){.pf-ref} gives
 $$
 h^1(C,\OO_C(-D))=g>0.
 $$
 
-If $2\le d\le g$, step <1>12 shows that the bad classes form a proper closed
+If $2\le d\le g$, step [](#s12){.pf-ref} shows that the bad classes form a proper closed
 subset of the projective extension space. Choose $[\xi]$ outside it. Then
 $$
 L_E\nsubseteq H_\xi
 $$
-for every effective $E$ of degree $d-1$, so step <1>9 says that the
+for every effective $E$ of degree $d-1$, so step [](#s9){.pf-ref} says that the
 corresponding bundle is normalized.
+
 :::
 
-<1>14. For every
+:::
+
+::: {.pf-step #s14}
+
+For every
 $$
 -g\le e<0
 $$
 there exists a ruled surface over $C$ with invariant $e$.
 
-::: {.proof}
+::: pf-proof
+
 Set $d=-e$, choose a divisor $D$ of degree $d$, and choose the normalized
-extension from step <1>13:
+extension from step [](#s13){.pf-ref}:
 $$
 0\longrightarrow\OO_C
 \longrightarrow\mathcal E
@@ -448,14 +531,20 @@ $$
 -\deg\det\mathcal E=-d=e.
 $$
 This proves part (c).
+
 :::
 
-<1>15. If $g=2$, every ruled surface over $C$ has
+:::
+
+::: {.pf-step #s15}
+
+If $g=2$, every ruled surface over $C$ has
 $$
 \boxed{e\ge-2}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The note printed with this exercise cites Nagata [8] for the general theorem
 $$
 e\ge-g
@@ -467,13 +556,19 @@ $$
 e\ge-2,
 $$
 as required.
+
 :::
 
-<1>16. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), steps <1>5--<1>9 prove part (b), steps
-<1>10--<1>14 prove part (c), and step <1>15 proves part (d) from the general
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} prove part (a), steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, [](#s8){.pf-ref} and [](#s9){.pf-ref} prove part (b), steps
+[](#s10){.pf-ref}, [](#s11){.pf-ref}, [](#s12){.pf-ref}, [](#s13){.pf-ref} and [](#s14){.pf-ref} prove part (c), and step [](#s15){.pf-ref} proves part (d) from the general
 Nagata bound explicitly cited by the exercise.
+
 :::
+
+:::
+
 :::

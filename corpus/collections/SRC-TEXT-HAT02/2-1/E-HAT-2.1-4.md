@@ -45,7 +45,11 @@ denote the three distinct $1$-simplices, and let
 \]
 be the unique $2$-simplex.
 
-<1>1. The simplicial chain groups are
+::: pf
+
+::: pf-step
+
+The simplicial chain groups are
 \[
 C_2\cong\mathbb Z,
 \qquad
@@ -53,49 +57,79 @@ C_1\cong\mathbb Z^3,
 \qquad
 C_0\cong\mathbb Z.
 \]
-::: {.proof}
+
+::: pf-proof
+
 There is one $2$-simplex, three $1$-simplices, and one vertex in the quotient $\Delta$-complex.
+
 :::
 
-<1>2. The first boundary map is zero:
+:::
+
+::: pf-step
+
+The first boundary map is zero:
 \[
 \partial_1=0.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Every edge begins and ends at the same quotient vertex $v$, so
 \[
 \partial_1(a)=\partial_1(b)=\partial_1(c)=v-v=0.
 \]
+
 :::
 
-<1>3. The second boundary map is
+:::
+
+::: pf-step
+
+The second boundary map is
 \[
 \partial_2(\sigma)=a-b+c.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The simplicial boundary formula gives
 \[
 \partial[v_0,v_1,v_2]
 =[v_1,v_2]-[v_0,v_2]+[v_0,v_1]
 =c-b+a.
 \]
+
 :::
 
-<1>4. The map $\partial_2:\mathbb Z\to\mathbb Z^3$ is injective and its image is a primitive rank-one subgroup.
-::: {.proof}
+:::
+
+::: pf-step
+
+The map $\partial_2:\mathbb Z\to\mathbb Z^3$ is injective and its image is a primitive rank-one subgroup.
+
+::: pf-proof
+
 The vector of coefficients is
 \[
 (1,-1,1),
 \]
 which is nonzero and whose coordinates have greatest common divisor $1$.
 Thus the map is injective and the quotient by its image is torsion-free of rank two.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \boxed{H_0\cong\mathbb Z,\qquad H_1\cong\mathbb Z^2,\qquad H_k=0\ (k\ge2).}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $\partial_1=0$,
 \[
 H_0=C_0\cong\mathbb Z.
@@ -108,5 +142,11 @@ H_1=\ker\partial_1/\operatorname{im}\partial_2
 \cong\mathbb Z^2.
 \]
 Injectivity of $\partial_2$ gives $H_2=0$, and there are no higher simplices.
+
 :::
+
+:::
+
+:::
+
 :::

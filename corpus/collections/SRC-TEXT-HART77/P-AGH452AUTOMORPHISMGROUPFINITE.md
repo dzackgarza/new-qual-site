@@ -47,13 +47,18 @@ $$
 $$
 Thus assume from now on that $k$ is algebraically closed of characteristic $0$.
 
-<1>1. A nonidentity automorphism of a genus-$g$ curve fixes at most
+::: pf
+
+::: {.pf-step #s1}
+
+A nonidentity automorphism of a genus-$g$ curve fixes at most
 $$
 \boxed{2g+2}
 $$
 points.
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 1\ne\sigma\in\Aut X.
@@ -90,11 +95,17 @@ h(Q)-h(\sigma(Q))
 $$
 Thus every fixed point is a zero of $u$.
 A nonzero rational function has zero divisor and pole divisor of the same degree, so $\sigma$ has at most $2g+2$ fixed points.
+
 :::
 
-<1>2. If $X$ is hyperelliptic, then $\Aut X$ is finite.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $X$ is hyperelliptic, then $\Aut X$ is finite.
+
+::: pf-proof
+
 Choose the hyperelliptic map
 $$
 f:X\longrightarrow\PP^1,
@@ -155,9 +166,14 @@ k(X)/k(\PP^1),
 $$
 so it has order at most $2$.
 Hence $\Aut X$ is finite.
+
 :::
 
-<1>3. Suppose now that $X$ is not hyperelliptic.
+:::
+
+::: {.pf-step #s3}
+
+Suppose now that $X$ is not hyperelliptic.
 The canonical system embeds
 $$
 X\hookrightarrow\PP^{g-1}
@@ -167,7 +183,8 @@ $$
 \boxed{\deg W=g^3-g.}
 $$
 
-::: {.proof}
+::: pf-proof
+
 A nonhyperelliptic curve of genus $g\ge2$ has very ample canonical bundle, so the complete canonical system gives the stated embedding.
 Here
 $$
@@ -189,9 +206,14 @@ g(g-1)(g+1)\\
 g^3-g.
 \end{aligned}
 $$
+
 :::
 
-<1>4. At every point $P\in X$, its canonical hyperosculation weight $w(P)$ satisfies
+:::
+
+::: {.pf-step #s4}
+
+At every point $P\in X$, its canonical hyperosculation weight $w(P)$ satisfies
 $$
 w(P)\le\frac{g(g-1)}2,
 $$
@@ -203,7 +225,8 @@ w(P)\le\frac{g(g-1)}2-1.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 Let
 $$
 1=n_1<n_2<\cdots<n_g\le2g-1
@@ -276,18 +299,24 @@ $$
 of degree at most $2$.
 Since $g\ge2$, its degree cannot be $1$, so it has degree $2$ and $X$ is hyperelliptic.
 This is excluded, proving the strict bound.
+
 :::
 
-<1>5. A nonhyperelliptic curve has more than $2g+2$ distinct hyperosculation points.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+A nonhyperelliptic curve has more than $2g+2$ distinct hyperosculation points.
+
+::: pf-proof
+
 Let
 $$
 S=\operatorname{Supp} W,
 \qquad
 N=\size S.
 $$
-By steps <1>3--<1>4,
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 g^3-g
 =
@@ -311,26 +340,38 @@ N
 =
 2g+2.
 $$
+
 :::
 
-<1>6. If $X$ is nonhyperelliptic, then $\Aut X$ is finite.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+If $X$ is nonhyperelliptic, then $\Aut X$ is finite.
+
+::: pf-proof
+
 Every automorphism preserves the canonical linear system, hence preserves its vanishing sequences and permutes the finite set $S$ of hyperosculation points.
 Thus there is a homomorphism
 $$
 \Aut X\longrightarrow\operatorname{Sym}(S).
 $$
 If an automorphism lies in the kernel, it fixes every point of $S$.
-Step <1>5 gives more than $2g+2$ such fixed points, so step <1>1 forces the automorphism to be the identity.
+Step [](#s5){.pf-ref} gives more than $2g+2$ such fixed points, so step [](#s1){.pf-ref} forces the automorphism to be the identity.
 Hence the homomorphism is injective.
 Since $S$ is finite, so is $\operatorname{Sym}(S)$, and therefore $\Aut X$ is finite.
+
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>2 proves the hyperelliptic case, and steps <1>3--<1>6 prove the nonhyperelliptic case.
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the hyperelliptic case, and steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove the nonhyperelliptic case.
 These exhaust all curves of genus at least $2$.
+
 :::
+
+:::
+
 :::

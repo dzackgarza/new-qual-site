@@ -42,7 +42,11 @@ Furthermore, for every $\alpha \in k_0$, there exists an elliptic curve defined 
 ::: {.solution}
 Throughout this section Hartshorne assumes $\characteristic k\ne2$.
 
-<1>1. After completing the square, the equation becomes
+::: pf
+
+::: {.pf-step #s1}
+
+After completing the square, the equation becomes
 $$
 Y^2=x^3+Ax^2+Bx+C,
 $$
@@ -53,7 +57,8 @@ B=a_4+\frac{a_1a_3}{2},\qquad
 C=a_6+\frac{a_3^2}{4}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Set
 $$
 Y=y+\frac{a_1x+a_3}{2}.
@@ -61,9 +66,14 @@ $$
 Expanding $Y^2$ and substituting the original equation gives the displayed
 cubic.  This coordinate change is defined because $\characteristic k\ne2$
 and does not change the isomorphism class, hence not the $j$-invariant.
+
 :::
 
-<1>2. Let $p(x)=x^3+Ax^2+Bx+C$ and let
+:::
+
+::: {.pf-step #s2}
+
+Let $p(x)=x^3+Ax^2+Bx+C$ and let
 $$
 \Delta_p=A^2B^2-4B^3-4A^3C-27C^2+18ABC
 $$
@@ -72,7 +82,8 @@ $$
 \boxed{j(X)=256\frac{(A^2-3B)^3}{\Delta_p}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Write
 $$
 p(x)=(x-r_1)(x-r_2)(x-r_3).
@@ -118,37 +129,49 @@ $$
 Substitution in the Legendre formula cancels the powers of $r_2-r_1$ and
 gives the claimed expression.  Expanding the symmetric product of squared
 root differences gives the displayed polynomial formula for $\Delta_p$.
+
 :::
 
-<1>3. Hence $j$ is a rational function of the $a_i$ with coefficients in
+:::
+
+::: {.pf-step #s3}
+
+Hence $j$ is a rational function of the $a_i$ with coefficients in
 $\QQ$, and if all $a_i$ lie in $k_0$, then $j\in k_0$.
 
-::: {.proof}
-Step <1>1 expresses $A,B,C$ polynomially in the $a_i$ with rational
-coefficients, and step <1>2 expresses $j$ rationally in $A,B,C$ with integer
+::: pf-proof
+
+Step [](#s1){.pf-ref} expresses $A,B,C$ polynomially in the $a_i$ with rational
+coefficients, and step [](#s2){.pf-ref} expresses $j$ rationally in $A,B,C$ with integer
 coefficients.  Since $X$ is nonsingular, $\Delta_p\ne0$.
 
 If the $a_i$ lie in $k_0$, then $\characteristic k_0\ne2$, so $1/2$ and
 $1/4$ belong to $k_0$.  Thus $A,B,C,\Delta_p$ and consequently $j$ all lie
 in $k_0$.
+
 :::
 
-<1>4. Suppose $\characteristic k_0\ne2,3$.  Then every
+:::
+
+::: {.pf-step #s4}
+
+Suppose $\characteristic k_0\ne2,3$.  Then every
 $\alpha\in k_0$ occurs as the $j$-invariant of an elliptic curve defined
 over $k_0$.
 
-::: {.proof}
+::: pf-proof
+
 For $\alpha=0$, take
 $$
 E_0:y^2=x^3+1.
 $$
-Its cubic discriminant is $-27\ne0$, and step <1>2 gives $j(E_0)=0$.
+Its cubic discriminant is $-27\ne0$, and step [](#s2){.pf-ref} gives $j(E_0)=0$.
 
 For $\alpha=1728$, take
 $$
 E_{1728}:y^2=x^3-x.
 $$
-Its cubic discriminant is $4\ne0$, and step <1>2 gives
+Its cubic discriminant is $4\ne0$, and step [](#s2){.pf-ref} gives
 $j(E_{1728})=1728$.
 
 Now assume $\alpha\ne0,1728$ and put
@@ -161,7 +184,7 @@ Take
 $$
 E_\alpha:y^2=x^3+ux+v.
 $$
-For a cubic $x^3+ux+v$, step <1>2 becomes
+For a cubic $x^3+ux+v$, step [](#s2){.pf-ref} becomes
 $$
 j=1728\frac{4u^3}{4u^3+27v^2}.
 $$
@@ -177,12 +200,18 @@ $$
 j(E_\alpha)=\alpha.
 $$
 All coefficients belong to $k_0$.
+
 :::
 
-<1>5. Suppose $\characteristic k_0=3$.  Again every
+:::
+
+::: {.pf-step #s5}
+
+Suppose $\characteristic k_0=3$.  Again every
 $\alpha\in k_0$ occurs over $k_0$.
 
-::: {.proof}
+::: pf-proof
+
 Here $1728=0$.  For $\alpha=0$, take
 $$
 E_0:y^2=x^3-x.
@@ -213,13 +242,19 @@ j(E_\alpha)
 =\alpha,
 $$
 because $256=1$ in characteristic $3$.
+
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 give the rational expression and descent of $j$ to the
-coefficient field.  Steps <1>4--<1>5 give an elliptic curve over $k_0$ with
+::: pf-qed
+
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref} and [](#s3){.pf-ref} give the rational expression and descent of $j$ to the
+coefficient field.  Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} give an elliptic curve over $k_0$ with
 every prescribed $j$-invariant $\alpha\in k_0$.
+
 :::
+
+:::
+
 :::

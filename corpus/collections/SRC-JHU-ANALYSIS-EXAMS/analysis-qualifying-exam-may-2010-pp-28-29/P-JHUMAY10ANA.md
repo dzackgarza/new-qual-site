@@ -23,8 +23,15 @@ Prove that $f$ has a removable singularity at $0$.
 :::
 
 ::: {.solution}
-<1>1. The function $g(z)=zf(z)$ extends holomorphically across $0$ with value $0$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+The function $g(z)=zf(z)$ extends holomorphically across $0$ with value $0$.
+
+::: pf-proof
+
 For $0<|z|<1$,
 $$
 |g(z)|=|z|\,|f(z)|\le |z|^{1/2}.
@@ -33,10 +40,17 @@ Thus $g$ is bounded near $0$, so the [[D-BQLJV|Riemann removable singularity the
 $$
 G(0)=\lim_{z\to0}zf(z)=0.
 $$
+
 :::
 
-<1>2. Dividing the zero of $G$ by $z$ gives a holomorphic extension of $f$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+Dividing the zero of $G$ by $z$ gives a holomorphic extension of $f$.
+
+::: pf-proof
+
 By [[T-SRY2V|holomorphic implies analytic]], the Taylor series of $G$ at $0$ has the form
 $$
 G(z)=\sum_{n\ge1}a_nz^n
@@ -50,10 +64,17 @@ $$
 F(z)=\frac{G(z)}z=f(z).
 $$
 Thus $F$ extends $f$ holomorphically across $0$.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-Step <1>2 constructs the required holomorphic extension, so the singularity at $0$ is removable.
 :::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} constructs the required holomorphic extension, so the singularity at $0$ is removable.
+
+:::
+
+:::
+
 :::

@@ -51,20 +51,31 @@ r\circ i=\operatorname{id}_A.
 \]
 Fix $n\ge0$.
 
-<1>1. The induced homomorphisms satisfy
+::: pf
+
+::: {.pf-step #s1}
+
+The induced homomorphisms satisfy
 \[
 r_*\circ i_*=\operatorname{id}_{H_n(A)}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Singular homology is functorial.
 Therefore
 \[
 r_*\circ i_*=(r\circ i)_*=(\operatorname{id}_A)_*
 =\operatorname{id}_{H_n(A)}.
 \]
+
 :::
 
-<1>2. The map
+:::
+
+::: {.pf-step #s2}
+
+The map
 \[
 i_*:H_n(A)\longrightarrow H_n(X)
 \]
@@ -73,8 +84,10 @@ is injective, and
 r_*:H_n(X)\longrightarrow H_n(A)
 \]
 is surjective.
-::: {.proof}
-If $i_*(a)=0$, then by <1>1
+
+::: pf-proof
+
+If $i_*(a)=0$, then by step [](#s1){.pf-ref}
 \[
 a=r_*i_*(a)=0,
 \]
@@ -84,10 +97,15 @@ For every $a\in H_n(A)$,
 \[
 r_*(i_*(a))=a
 \]
-by <1>1, so $r_*$ is surjective.
+by step [](#s1){.pf-ref}, so $r_*$ is surjective.
+
 :::
 
-<1>3. Every $x\in H_n(X)$ has a decomposition
+:::
+
+::: {.pf-step #s3}
+
+Every $x\in H_n(X)$ has a decomposition
 \[
 x=i_*r_*(x)+\bigl(x-i_*r_*(x)\bigr)
 \]
@@ -97,23 +115,32 @@ i_*r_*(x)\in\operatorname{im}i_*,
 \qquad
 x-i_*r_*(x)\in\ker r_*.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The first membership is immediate.
-For the second, <1>1 gives
+For the second, step [](#s1){.pf-ref} gives
 \[
 r_*\bigl(x-i_*r_*(x)\bigr)
 =r_*(x)-r_*i_*r_*(x)
 =r_*(x)-r_*(x)
 =0.
 \]
+
 :::
 
-<1>4. The intersection
+:::
+
+::: {.pf-step #s4}
+
+The intersection
 \[
 \operatorname{im}i_*\cap\ker r_*
 \]
 is trivial.
-::: {.proof}
+
+::: pf-proof
+
 Let $y$ lie in the intersection.
 Write
 \[
@@ -124,18 +151,30 @@ Since $y\in\ker r_*$,
 \[
 0=r_*(y)=r_*i_*(a)=a
 \]
-by <1>1. Hence $y=i_*(0)=0$.
+by step [](#s1){.pf-ref}. Hence $y=i_*(0)=0$.
+
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+
+Hence
 \[
 H_n(X)=\operatorname{im}i_*\oplus\ker r_*
 \cong H_n(A)\oplus\ker r_*.
 \]
-::: {.proof}
-By <1>3 the two displayed subgroups generate $H_n(X)$, and by <1>4 their intersection is zero.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref} the two displayed subgroups generate $H_n(X)$, and by step [](#s4){.pf-ref} their intersection is zero.
 Thus the sum is direct.
-By <1>2, $i_*$ identifies $H_n(A)$ isomorphically with $\operatorname{im}i_*$.
+By step [](#s2){.pf-ref}, $i_*$ identifies $H_n(A)$ isomorphically with $\operatorname{im}i_*$.
+
+:::
+
+:::
+
 :::
 
 Taking

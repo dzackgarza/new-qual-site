@@ -44,26 +44,37 @@ f:D\setminus\{0\}\longrightarrow A
 $$
 is a holomorphic bijection.
 
-<1>1. The function $f$ extends to a holomorphic function
+::: pf
+
+::: pf-step
+
+The function $f$ extends to a holomorphic function
 $$
 F:D\longrightarrow\CC.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since $f(D\setminus\{0\})\subseteq A$, one has
 $$
 |f(z)|<R
 $$
 for every $0<|z|<1$. Thus $f$ is bounded near $0$, so the removable
 singularity theorem gives a holomorphic extension $F$ across $0$.
+
 :::
 
-<1>2. The extended value satisfies
+:::
+
+::: {.pf-step #s2}
+
+The extended value satisfies
 $$
 r<|F(0)|<R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Continuity at $0$ and
 $$
 r<|F(z)|<R
@@ -87,26 +98,38 @@ $$
 $$
 on $D$, with equality at $0$. The maximum-modulus principle would make
 $1/F$, and therefore $F$, constant. Thus both inequalities are strict.
+
 :::
 
-<1>3. There is $z_0\in D\setminus\{0\}$ such that
+:::
+
+::: pf-step
+
+There is $z_0\in D\setminus\{0\}$ such that
 $$
 F(z_0)=F(0).
 $$
 
-::: {.proof}
-By step <1>2, the point $F(0)$ belongs to $A$. Since the original map
+::: pf-proof
+
+By step [](#s2){.pf-ref}, the point $F(0)$ belongs to $A$. Since the original map
 $f:D\setminus\{0\}\to A$ is surjective, some
 $z_0\in D\setminus\{0\}$ satisfies
 $$
 f(z_0)=F(0).
 $$
 Because $F=f$ away from $0$, this is the stated equality.
+
 :::
 
-<1>4. The restriction of $F$ to $D\setminus\{0\}$ is not injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+
+The restriction of $F$ to $D\setminus\{0\}$ is not injective.
+
+::: pf-proof
+
 Choose disjoint open neighborhoods $U$ of $0$ and $V$ of $z_0$ whose
 closures lie in $D$. The nonconstant holomorphic function $F$ cannot
 be constant on either neighborhood, so the open mapping theorem shows
@@ -122,17 +145,29 @@ $$
 Since $q\neq F(0)$, one has $u\neq0$. Also $v\neq0$ because
 $0\notin V$. Thus $u,v\in D\setminus\{0\}$, and they are distinct
 because $U\cap V=\varnothing$. Hence $f(u)=f(v)$ with $u\neq v$.
+
 :::
 
-<1>5. No holomorphic bijection from the punctured disk onto $A$ exists.
-
-::: {.proof}
-Step <1>4 contradicts the assumed injectivity of $f$.
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #s5}
 
-::: {.proof}
-Step <1>5 proves the required assertion.
+No holomorphic bijection from the punctured disk onto $A$ exists.
+
+::: pf-proof
+
+Step [](#s4){.pf-ref} contradicts the assumed injectivity of $f$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the required assertion.
+
+:::
+
+:::
+
 :::

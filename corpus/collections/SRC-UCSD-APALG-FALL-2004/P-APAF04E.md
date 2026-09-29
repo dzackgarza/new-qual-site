@@ -64,8 +64,14 @@ A(g)_{ij}=
 \end{cases}
 \]
 
-<1>1. The map $g\mapsto A(g)$ is the left regular representation of $G$ on the vector space with basis $e_{g_1},\ldots,e_{g_k}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+The map $g\mapsto A(g)$ is the left regular representation of $G$ on the vector space with basis $e_{g_1},\ldots,e_{g_k}$.
+
+::: pf-proof
+
 For a fixed column $j$, there is a unique index $i$ such that
 \[
 g_i=gg_j.
@@ -79,15 +85,22 @@ This is left multiplication by $g$ on the basis indexed by $G$. Therefore
 A(g)A(h)e_{g_j}=A(g)e_{hg_j}=e_{ghg_j}=A(gh)e_{g_j}
 \]
 for every basis vector, so $A(g)A(h)=A(gh)$ and $A(e)=I$. Thus $A$ is precisely the left regular representation. This proves part (a).
+
 :::
 
-<1>2. Over $\mathbb C$, the regular representation decomposes as
+:::
+
+::: {.pf-step #s2}
+
+Over $\mathbb C$, the regular representation decomposes as
 \[
 \mathbb C[G]\cong\bigoplus_{\nu=1}^h n_\nu V_\nu,
 \qquad n_\nu=\dim V_\nu,
 \]
 where $V_1,\ldots,V_h$ are representatives of the irreducible $G$-modules.
-::: {.proof}
+
+::: pf-proof
+
 Maschke's theorem makes the regular representation completely reducible. Let $\chi_{\mathrm{reg}}$ be its character. Then
 \[
 \chi_{\mathrm{reg}}(e)=|G|,
@@ -104,32 +117,46 @@ If $\chi_\nu$ is the irreducible character of $V_\nu$, its multiplicity in the r
 =\dim V_\nu=n_\nu.
 \]
 This gives the asserted decomposition.
+
 :::
 
-<1>3. There is an invertible matrix $P$ such that, for every $g\in G$,
+:::
+
+::: {.pf-step #s3}
+
+There is an invertible matrix $P$ such that, for every $g\in G$,
 \[
 P^{-1}A(g)P
 =
 \bigoplus_{\nu=1}^h
 \underbrace{A^{(\nu)}(g)\oplus\cdots\oplus A^{(\nu)}(g)}_{n_\nu\text{ copies}}.
 \]
-::: {.proof}
-Choose a basis adapted to the direct-sum decomposition in <1>2. In that basis, the regular representation acts on each of the $n_\nu$ copies of $V_\nu$ by the irreducible representation $A^{(\nu)}$. The change-of-basis matrix from the original regular basis to this adapted basis is the required $P$.
+
+::: pf-proof
+
+Choose a basis adapted to the direct-sum decomposition in step [](#s2){.pf-ref}. In that basis, the regular representation acts on each of the $n_\nu$ copies of $V_\nu$ by the irreducible representation $A^{(\nu)}$. The change-of-basis matrix from the original regular basis to this adapted basis is the required $P$.
+
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #s4}
+
+Therefore
 \[
 \det(X)
 =
 \prod_{\nu=1}^h
 \det\Bigl(\sum_{g\in G}A^{(\nu)}(g)x_g\Bigr)^{n_\nu}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since
 \[
 X=\sum_{g\in G}A(g)x_g,
 \]
-<1>3 gives
+step [](#s3){.pf-ref} gives
 \[
 P^{-1}XP
 =
@@ -141,9 +168,14 @@ P^{-1}XP
 }_{n_\nu\text{ copies}}.
 \]
 Determinant is invariant under similarity and multiplicative on block-diagonal matrices, so taking determinants gives exactly the displayed formula. This proves part (b).
+
 :::
 
-<1>5. Let $G=C_n=\langle a\rangle$ and put
+:::
+
+::: {.pf-step #s5}
+
+Let $G=C_n=\langle a\rangle$ and put
 \[
 x_j=x_{a^j}\qquad(0\le j<n).
 \]
@@ -154,11 +186,18 @@ The irreducible complex representations of $C_n$ are the one-dimensional charact
 0\le r<n,
 \]
 where $\epsilon=e^{2\pi i/n}$.
-::: {.proof}
+
+::: pf-proof
+
 Since $C_n$ is finite abelian, every irreducible complex representation is one-dimensional. A character is determined by the image of $a$, which must be an $n$th root of unity. The $n$ choices are $\epsilon^r$, giving exactly the characters displayed above.
+
 :::
 
-<1>6. If the regular basis is ordered by
+:::
+
+::: pf-step
+
+If the regular basis is ordered by
 \[
 1,a^{-1},a^{-2},\ldots,a^{-(n-1)},
 \]
@@ -172,31 +211,46 @@ x_{n-2} & x_{n-1} & x_0 & \cdots & x_{n-3}\\
 x_1 & x_2 & x_3 & \cdots & x_0
 \end{bmatrix}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 With indices $i,j\in\{0,\ldots,n-1\}$ and $g_i=a^{-i}$,
 \[
 g_i g_j^{-1}=a^{-i}a^j=a^{j-i}.
 \]
 Thus the $(i,j)$-entry is $x_{j-i\bmod n}$, which is exactly the displayed circulant matrix.
+
 :::
 
-<1>7. Its determinant is
+:::
+
+::: pf-step
+
+Its determinant is
 \[
 \prod_{r=0}^{n-1}
 \bigl(x_0+\epsilon^r x_1+\epsilon^{2r}x_2+\cdots+\epsilon^{(n-1)r}x_{n-1}\bigr).
 \]
-::: {.proof}
-For $C_n$, every irreducible representation has dimension $1$, so <1>4 becomes
+
+::: pf-proof
+
+For $C_n$, every irreducible representation has dimension $1$, so step [](#s4){.pf-ref} becomes
 \[
 \det(X)
 =\prod_{r=0}^{n-1}\left(\sum_{j=0}^{n-1}\chi_r(a^j)x_j\right).
 \]
-Using <1>5,
+Using step [](#s5){.pf-ref},
 \[
 \sum_{j=0}^{n-1}\chi_r(a^j)x_j
 =\sum_{j=0}^{n-1}\epsilon^{rj}x_j
 =x_0+\epsilon^r x_1+\cdots+\epsilon^{(n-1)r}x_{n-1}.
 \]
 Substitution yields the required formula, proving part (c).
+
 :::
+
+:::
+
+:::
+
 :::

@@ -39,7 +39,11 @@ C \to D & C \to D & C \to D
 ::: {.solution}
 Hatcher's three diagrams are respectively a commutative triangle and two commutative squares. In each case the missing map is forced to be a composite of the other maps and their inverses.
 
-<1>1. For the triangle
+::: pf
+
+::: pf-step
+
+For the triangle
 \[
 A\xrightarrow{f}B,
 \qquad
@@ -48,7 +52,9 @@ A\xrightarrow{g}C\xrightarrow{h}B,
 f=h g,
 \]
 if any two of $f,g,h$ are isomorphisms, then so is the third.
-::: {.proof}
+
+::: pf-proof
+
 If $g$ and $h$ are isomorphisms, then $f=hg$ is an isomorphism. If $f$ and $g$ are isomorphisms, then
 \[
 h=f g^{-1}.
@@ -58,9 +64,14 @@ If $f$ and $h$ are isomorphisms, then
 g=h^{-1}f.
 \]
 In every case the remaining map is a composite of isomorphisms.
+
 :::
 
-<1>2. For the square
+:::
+
+::: pf-step
+
+For the square
 \[
 \begin{array}{ccc}
 A&\xrightarrow{f}&B\\
@@ -70,7 +81,9 @@ C&\xrightarrow{k}&D,
 \qquad hf=kg,
 \]
 if any three of $f,g,h,k$ are isomorphisms, then so is the fourth.
-::: {.proof}
+
+::: pf-proof
+
 Solve the commutativity equation for the unknown map. Explicitly,
 \[
 f=h^{-1}kg,
@@ -80,9 +93,14 @@ g=k^{-1}hf,
 \qquad k=hfg^{-1},
 \]
 according to which map is missing. Each expression is a composite of isomorphisms.
+
 :::
 
-<1>3. For the square with the right vertical arrow reversed,
+:::
+
+::: pf-step
+
+For the square with the right vertical arrow reversed,
 \[
 \begin{array}{ccc}
 A&\xrightarrow{f}&B\\
@@ -92,7 +110,9 @@ C&\xrightarrow{k}&D,
 \qquad f=hkg,
 \]
 the same conclusion holds.
-::: {.proof}
+
+::: pf-proof
+
 Again solve for the missing map:
 \[
 f=hkg,
@@ -101,6 +121,11 @@ f=hkg,
 \qquad k=h^{-1}fg^{-1}.
 \]
 Thus the fourth map is an isomorphism whenever the other three are.
+
+:::
+
+:::
+
 :::
 
 Hence in each of Hatcher's three commutative diagrams, if all maps but one are isomorphisms, the remaining map is necessarily an isomorphism as well.

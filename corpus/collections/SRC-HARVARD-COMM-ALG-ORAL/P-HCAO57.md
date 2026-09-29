@@ -47,9 +47,15 @@ is a Gröbner basis of the elimination ideal
 I_\ell=I\cap k[x_{\ell+1},\ldots,x_n].
 \]
 
-<1>1. $G_\ell\subseteq I_\ell$, and the leading monomials of $G_\ell$ generate
+::: pf
+
+::: pf-step
+
+$G_\ell\subseteq I_\ell$, and the leading monomials of $G_\ell$ generate
 $\operatorname{in}(I_\ell)$.
-::: {.proof}
+
+::: pf-proof
+
 Take $0\ne f\in I_\ell$. Since $G$ is a Gröbner basis of $I$, some $g\in G$
 has $\operatorname{LM}(g)$ dividing $\operatorname{LM}(f)$. The latter contains
 none of $x_1,\ldots,x_\ell$. Hence $\operatorname{LM}(g)$ contains none of them.
@@ -58,13 +64,26 @@ would be larger than every term involving only $x_{\ell+1},\ldots,x_n$, so its
 leading monomial would also involve an eliminated variable. Therefore
 $g\in G_\ell$. Thus the leading monomials of $G_\ell$ generate
 $\operatorname{in}(I_\ell)$.
+
 :::
 
-<1>2. It is called elimination because it computes all polynomial consequences
+:::
+
+::: pf-step
+
+It is called elimination because it computes all polynomial consequences
 of $I$ involving only the remaining variables $x_{\ell+1},\ldots,x_n$.
-::: {.proof}
+
+::: pf-proof
+
 By definition, those consequences are exactly the elements of the intersection
 $I\cap k[x_{\ell+1},\ldots,x_n]$. The theorem obtains generators for that ideal
 by discarding from $G$ the polynomials that still involve eliminated variables.
+
 :::
+
+:::
+
+:::
+
 :::

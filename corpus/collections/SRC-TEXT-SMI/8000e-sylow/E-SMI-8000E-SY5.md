@@ -35,8 +35,15 @@ If $p$, $q$ are distinct primes, prove:
 :::
 
 ::: {.solution}
-<1>1. Every group of order $pq$ is solvable.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+Every group of order $pq$ is solvable.
+
+::: pf-proof
+
 Let $p$ and $q$ be distinct primes, and relabel them if necessary so that
 $$
 p<q.
@@ -58,10 +65,17 @@ $$
 G\trianglerighteq Q\trianglerighteq1
 $$
 is an abelian normal tower, and $G$ is solvable.
+
 :::
 
-<1>2. If $|G|=p^2q$ and $q<p$, then $G$ is solvable.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $|G|=p^2q$ and $q<p$, then $G$ is solvable.
+
+::: pf-proof
+
 Let $P$ be a Sylow $p$-subgroup. Its number $n_p$ satisfies
 $$
 n_p\mid q,
@@ -79,10 +93,17 @@ $$
 G\trianglerighteq P\trianglerighteq1
 $$
 is an abelian normal tower.
+
 :::
 
-<1>3. If $|G|=p^2q$ and $p<q$, then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
-::: {.proof}
+:::
+
+::: pf-step
+
+If $|G|=p^2q$ and $p<q$, then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
+
+::: pf-proof
+
 Let $n_q$ denote the number of Sylow $q$-subgroups. Then
 $$
 n_q\mid p^2,
@@ -113,11 +134,18 @@ $$
 \boxed{p=2,\qquad q=3.}
 $$
 Outside this exceptional case, $n_q=1$, so the Sylow $q$-subgroup is normal
-and the same tower argument as in step <1>1 proves solvability.
+and the same tower argument as in step [](#s1){.pf-ref} proves solvability.
+
 :::
 
-<1>4. Every group of order $12$ is solvable.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every group of order $12$ is solvable.
+
+::: pf-proof
+
 Let $|G|=12$. If the Sylow $3$-subgroup is normal, then it is cyclic of order
 $3$, and the quotient has order $4$, hence is abelian; so $G$ is solvable.
 
@@ -143,6 +171,11 @@ $$
 G\trianglerighteq P\trianglerighteq1
 $$
 is an abelian normal tower. So every group of order $12$ is solvable.
+
+:::
+
+:::
+
 :::
 
 Combining the cases proves

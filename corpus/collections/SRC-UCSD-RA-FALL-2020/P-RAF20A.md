@@ -49,8 +49,15 @@ If $f * g = 0$ in $\mathbb{R}^n$ then either $f = 0$ identically in $\mathbb{R}^
 :::
 
 ::: {.solution}
-<1>1. Statement (1) is false.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Statement (1) is false.
+
+::: pf-proof
+
 Take $X=\ell^2$ and let
 \[
 A:=\{e_n:n\ge1\},
@@ -67,10 +74,17 @@ For every $x=(x_k)\in\ell^2$,
 \langle e_n,x\rangle=x_n\longrightarrow0,
 \]
 so $e_n\rightharpoonup0$ weakly. But $0\notin A$. Hence a norm-closed subset of a Banach space need not be sequentially weakly closed.
+
 :::
 
-<1>2. Statement (2) is true.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (2) is true.
+
+::: pf-proof
+
 Because $X$ is Hausdorff, every compact subset $K_j$ is closed. The nested family $(K_j)$ has the finite-intersection property: for every $N$,
 \[
 \bigcap_{j=1}^N K_j=K_N\ne\varnothing.
@@ -79,10 +93,17 @@ Since $X$ is compact, every family of closed subsets with the finite-intersectio
 \[
 \boxed{\bigcap_{j=1}^\infty K_j\ne\varnothing.}
 \]
+
 :::
 
-<1>3. Statement (3) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (3) is false.
+
+::: pf-proof
+
 Take $X=\mathbb R$ and
 \[
 \mu_n=\delta_{1/n},
@@ -105,10 +126,17 @@ whereas
 \mu(E)=1.
 \]
 Thus vague convergence does not imply convergence on every Borel set.
+
 :::
 
-<1>4. Statement (4) is false.
-::: {.proof}
+:::
+
+::: pf-step
+
+Statement (4) is false.
+
+::: pf-proof
+
 Choose nonzero functions
 \[
 \phi,\psi\in C_c^\infty(\mathbb R^n)
@@ -130,5 +158,11 @@ Since the Fourier transform is injective on $\mathcal S$,
 f*g=0.
 \]
 Thus two nonzero Schwartz functions can have zero convolution.
+
 :::
+
+:::
+
+:::
+
 :::

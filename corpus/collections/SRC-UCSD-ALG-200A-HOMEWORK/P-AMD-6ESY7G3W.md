@@ -53,8 +53,15 @@ Conclude that if $R$ is a division ring, then $M_n(R)$ is a simple ring; that is
 :::
 
 ::: {.solution}
-<1>1. If $I\trianglelefteq R$ is a two-sided ideal, then $M_n(I)$ is a two-sided ideal of $M_n(R)$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+If $I\trianglelefteq R$ is a two-sided ideal, then $M_n(I)$ is a two-sided ideal of $M_n(R)$.
+
+::: pf-proof
+
 It is an additive subgroup because addition and additive inverses are taken entrywise.
 
 Let
@@ -82,14 +89,21 @@ Hence
 BA\in M_n(I).
 \]
 Therefore $M_n(I)$ is a two-sided ideal.
+
 :::
 
-<1>2. Entrywise reduction modulo $I$ defines a surjective ring homomorphism
+:::
+
+::: {.pf-step #s2}
+
+Entrywise reduction modulo $I$ defines a surjective ring homomorphism
 \[
 \rho:M_n(R)\longrightarrow M_n(R/I)
 \]
 whose kernel is $M_n(I)$.
-::: {.proof}
+
+::: pf-proof
+
 Define
 \[
 \rho((a_{ij}))=(a_{ij}+I).
@@ -115,24 +129,38 @@ so
 \[
 \ker\rho=M_n(I).
 \]
+
 :::
 
-<1>3. There is an isomorphism
+:::
+
+::: {.pf-step #s3}
+
+There is an isomorphism
 \[
 M_n(R)/M_n(I)\cong M_n(R/I).
 \]
-::: {.proof}
-Apply the first isomorphism theorem to the surjection $\rho$ from <1>2. This completes part (a).
+
+::: pf-proof
+
+Apply the first isomorphism theorem to the surjection $\rho$ from step [](#s2){.pf-ref}. This completes part (a).
+
 :::
 
-<1>4. Let $J\trianglelefteq M_n(R)$ be a two-sided ideal.
+:::
+
+::: {.pf-step #s4}
+
+Let $J\trianglelefteq M_n(R)$ be a two-sided ideal.
 Define
 \[
 I=\{r\in R:rE_{11}\in J\},
 \]
 where $E_{ij}$ denotes the usual matrix unit.
 Then $I$ is a two-sided ideal of $R$.
-::: {.proof}
+
+::: pf-proof
+
 If $r,s\in I$, then
 \[
 (r+s)E_{11}=rE_{11}+sE_{11}\in J,
@@ -153,10 +181,17 @@ and
 (rE_{11})(aE_{11})=(ra)E_{11}\in J.
 \]
 Hence $ar,ra\in I$, so $I\trianglelefteq R$ is two-sided.
+
 :::
 
-<1>5. Every entry of every matrix in $J$ belongs to $I$.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+
+Every entry of every matrix in $J$ belongs to $I$.
+
+::: pf-proof
+
 Let
 \[
 A=(a_{ij})\in J.
@@ -178,13 +213,20 @@ Thus
 \[
 J\le M_n(I).
 \]
+
 :::
 
-<1>6. For every $r\in I$ and every $i,j$,
+:::
+
+::: {.pf-step #s6}
+
+For every $r\in I$ and every $i,j$,
 \[
 rE_{ij}\in J.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $r\in I$,
 \[
 rE_{11}\in J.
@@ -198,11 +240,18 @@ The left side is exactly
 rE_{ij}.
 \]
 Hence $rE_{ij}\in J$.
+
 :::
 
-<1>7. Every two-sided ideal $J$ of $M_n(R)$ is of the form $M_n(I)$ for a two-sided ideal $I$ of $R$.
-::: {.proof}
-For the ideal $I$ defined in <1>4, <1>5 gives
+:::
+
+::: {.pf-step #s7}
+
+Every two-sided ideal $J$ of $M_n(R)$ is of the form $M_n(I)$ for a two-sided ideal $I$ of $R$.
+
+::: pf-proof
+
+For the ideal $I$ defined in steps [](#s4){.pf-ref} and [](#s5){.pf-ref} gives
 \[
 J\le M_n(I).
 \]
@@ -214,7 +263,7 @@ then
 \[
 B=\sum_{i,j}b_{ij}E_{ij}.
 \]
-Each summand belongs to $J$ by <1>6, hence $B\in J$.
+Each summand belongs to $J$ by step [](#s6){.pf-ref}, hence $B\in J$.
 Thus
 \[
 M_n(I)\le J.
@@ -223,10 +272,17 @@ Therefore
 \[
 J=M_n(I).
 \]
+
 :::
 
-<1>8. A division ring has no two-sided ideals other than $0$ and itself.
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+A division ring has no two-sided ideals other than $0$ and itself.
+
+::: pf-proof
+
 Let $D$ be a division ring and let $0\ne I\trianglelefteq D$.
 Choose $0\ne r\in I$.
 Since $r$ is invertible and $I$ is a left ideal,
@@ -238,17 +294,24 @@ Hence every $d\in D$ satisfies
 d=d\cdot1\in I,
 \]
 so $I=D$.
+
 :::
 
-<1>9. If $R$ is a division ring, then $M_n(R)$ is simple.
-::: {.proof}
+:::
+
+::: {.pf-step #s9}
+
+If $R$ is a division ring, then $M_n(R)$ is simple.
+
+::: pf-proof
+
 Let $J\trianglelefteq M_n(R)$ be a two-sided ideal.
-By <1>7,
+By step [](#s7){.pf-ref},
 \[
 J=M_n(I)
 \]
 for some two-sided ideal $I\trianglelefteq R$.
-By <1>8,
+By step [](#s8){.pf-ref},
 \[
 I=0
 \qquad\text{or}\qquad
@@ -261,10 +324,17 @@ J=0
 J=M_n(R).
 \]
 Thus $M_n(R)$ is simple, completing part (b).
+
 :::
 
-<1>10. Q.E.D.
-::: {.proof}
-Parts (a) and (b) are <1>3 and <1>9.
 :::
+
+::: pf-qed
+
+Parts (a) and (b) are steps [](#s3){.pf-ref} and [](#s9){.pf-ref}.
+
+:::
+
+:::
+
 :::

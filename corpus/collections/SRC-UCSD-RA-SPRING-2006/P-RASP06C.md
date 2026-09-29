@@ -41,8 +41,15 @@ Hint: Estimate the left hand side of the formula in (b).
 :::
 
 ::: {.solution}
-<1>1. Prove the finite summation-by-parts identity.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Prove the finite summation-by-parts identity.
+
+::: pf-proof
+
 Since
 \[
 a_k=S_m^k-S_m^{k-1}
@@ -57,10 +64,17 @@ for $k>m$, with $a_m=S_m^m$, we have
 \end{aligned}
 \]
 This is the desired formula.
+
 :::
 
-<1>2. Rewrite the Abel sum using ordinary partial sums.
-::: {.proof}
+:::
+
+::: pf-step
+
+Rewrite the Abel sum using ordinary partial sums.
+
+::: pf-proof
+
 Let
 \[
 A_j:=\sum_{k=0}^j a_k,
@@ -78,10 +92,17 @@ Since $A_n$ is bounded and $x^n\to0$, letting $n\to\infty$ yields
 =(1-x)\sum_{j=0}^\infty A_jx^j.
 \]
 The series on the left converges absolutely because the convergent series $\sum a_k$ has bounded terms.
+
 :::
 
-<1>3. Pass to the boundary $x\uparrow1$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Pass to the boundary $x\uparrow1$.
+
+::: pf-proof
+
 Because
 \[
 (1-x)\sum_{j=0}^\infty x^j=1,
@@ -115,5 +136,11 @@ Since $\varepsilon$ is arbitrary,
 \boxed{\lim_{x\to1^-}\sum_{k=0}^\infty a_kx^k
 =\sum_{k=0}^\infty a_k.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

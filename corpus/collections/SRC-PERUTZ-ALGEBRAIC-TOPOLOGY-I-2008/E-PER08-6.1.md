@@ -32,18 +32,37 @@ C_n=\{(x,y):(x-1/n)^2+y^2=1/n^2\}.
 \]
 All circles meet at the origin.
 
-<1>1. $X$ is path connected and locally path connected.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+$X$ is path connected and locally path connected.
+
+::: pf-proof
+
 Every point can be joined to the origin along its circle, so $X$ is path connected.
 Away from the origin, sufficiently small neighbourhoods lie in one circle and contain connected arc neighbourhoods.
 At the origin, $X\cap B_\varepsilon(0)$ contains all sufficiently small circles together with short arcs from the finitely many larger circles; its component containing the origin is an open path-connected neighbourhood in $X$.
 Thus $X$ is locally path connected.
+
 :::
 
-<1>2. $X$ is not semilocally simply connected at the origin.
-::: {.proof}
+:::
+
+::: pf-step
+
+$X$ is not semilocally simply connected at the origin.
+
+::: pf-proof
+
 Every neighbourhood of the origin contains some entire circle $C_n$.
 The loop going once around $C_n$ is nontrivial in $\pi_1(X,0)$: collapsing all circles other than $C_n$ to the common basepoint gives a continuous retraction $X\to C_n$, so a null-homotopy in $X$ would induce a null-homotopy of the generator of $\pi_1(C_n)\cong\mathbb Z$.
 Hence no neighbourhood of the origin has trivial image in $\pi_1(X)$.
+
 :::
+
+:::
+
+:::
+
 :::

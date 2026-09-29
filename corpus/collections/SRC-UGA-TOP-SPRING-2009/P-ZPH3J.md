@@ -52,13 +52,19 @@ Write
 A=\begin{pmatrix}a&b\\ c&d\end{pmatrix}.
 \]
 
-<1>1. The linear map $A:\RR^2\to\RR^2$ induces a well-defined continuous map
+::: pf
+
+::: pf-step
+
+The linear map $A:\RR^2\to\RR^2$ induces a well-defined continuous map
 \[
 \mca:T=\RR^2/\ZZ^2\longrightarrow T,
 \qquad
 \mca([x])=[Ax].
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $x,x'\in\RR^2$ represent the same point of $T$, then $x'=x+z$ for some $z\in\ZZ^2$.
 Since $A$ has integer entries,
 \[
@@ -77,10 +83,17 @@ Then
 \mca\circ q=q\circ A.
 \]
 The right-hand side is continuous, and $q$ is a quotient map, so $\mca$ is continuous.
+
 :::
 
-<1>2. With respect to the basis of $H_1(T;\ZZ)$ given by the two coordinate circles, the matrix of $\mca_*$ is exactly $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+
+With respect to the basis of $H_1(T;\ZZ)$ given by the two coordinate circles, the matrix of $\mca_*$ is exactly $A$.
+
+::: pf-proof
+
 Let
 \[
 \alpha(t)=[(t,0)],
@@ -115,13 +128,20 @@ Hence the two columns of the matrix of $\mca_*$ in the ordered basis $([\alpha],
 \binom bd,
 \]
 so that matrix is $A$.
+
 :::
 
-<1>3. The map $\mca$ is homotopic to the identity if and only if
+:::
+
+::: pf-step
+
+The map $\mca$ is homotopic to the identity if and only if
 \[
 \boxed{A=I_2}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $A=I_2$, then $\mca$ is the identity map itself.
 
 Conversely, suppose $\mca\simeq\id_T$.
@@ -130,15 +150,22 @@ Homotopic maps induce the same map on singular homology, hence
 \mca_*=(\id_T)_*=I_2
 \]
 on $H_1(T;\ZZ)$.
-By <1>2, the matrix of $\mca_*$ is $A$.
+By step [](#s2){.pf-ref}, the matrix of $\mca_*$ is $A$.
 Therefore $A=I_2$.
+
 :::
 
-<1>4. Under the additional assumptions in the last part, if $\mca$ is homotopic to a fixed-point-free map, then
+:::
+
+::: {.pf-step #s4}
+
+Under the additional assumptions in the last part, if $\mca$ is homotopic to a fixed-point-free map, then
 \[
 \operatorname{tr}(A)=2.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $f:T\to T$ be fixed-point-free and homotopic to $\mca$.
 The torus is a finite CW complex, so the Lefschetz fixed-point theorem applies.
 Its contrapositive says that a fixed-point-free self-map has Lefschetz number zero.
@@ -152,7 +179,7 @@ H_1(T;\ZZ)\cong\ZZ^2,
 \qquad
 H_2(T;\ZZ)\cong\ZZ.
 \]
-The induced map on $H_0$ is the identity, the trace on $H_1$ is $\operatorname{tr}(A)$ by <1>2, and the induced map on $H_2$ is multiplication by the degree $\det A$.
+The induced map on $H_0$ is the identity, the trace on $H_1$ is $\operatorname{tr}(A)$ by step [](#s2){.pf-ref}, and the induced map on $H_2$ is multiplication by the degree $\det A$.
 Therefore
 \[
 L(\mca)
@@ -163,9 +190,14 @@ Since $\det A=1$, this becomes
 L(\mca)=2-\operatorname{tr}(A).
 \]
 The equality $L(f)=0$ now forces $\operatorname{tr}(A)=2$.
+
 :::
 
-<1>5. With integer nonnegative entries and $\det A=1$, the condition $\operatorname{tr}(A)=2$ is equivalent to
+:::
+
+::: {.pf-step #s5}
+
+With integer nonnegative entries and $\det A=1$, the condition $\operatorname{tr}(A)=2$ is equivalent to
 \[
 A=\begin{pmatrix}1&m\\0&1\end{pmatrix}
 \quad\text{or}\quad
@@ -173,7 +205,9 @@ A=\begin{pmatrix}1&0\\m&1\end{pmatrix}
 \qquad
 \text{for some }m\in\ZZ_{\ge0}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The trace condition gives
 \[
 a+d=2.
@@ -195,10 +229,17 @@ Then
 so $bc=0$.
 Hence either $c=0$ or $b=0$, giving exactly the two displayed forms.
 Conversely, every displayed matrix has trace $2$, determinant $1$, and nonnegative integer entries.
+
 :::
 
-<1>6. Every matrix in <1>5 yields a map $\mca$ homotopic to a fixed-point-free map.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+Every matrix in step [](#s5){.pf-ref} yields a map $\mca$ homotopic to a fixed-point-free map.
+
+::: pf-proof
+
 First suppose
 \[
 A=\begin{pmatrix}1&m\\0&1\end{pmatrix}.
@@ -246,14 +287,27 @@ x+\tfrac12\equiv x\pmod{\ZZ},
 \]
 again impossible.
 Therefore $h$ is fixed-point-free.
+
 :::
 
-<1>7. Hence, under the hypotheses of the final part, the necessary and sufficient condition is
+:::
+
+::: pf-step
+
+Hence, under the hypotheses of the final part, the necessary and sufficient condition is
 \[
 \boxed{\operatorname{tr}(A)=2}.
 \]
-Equivalently, $A$ has one of the two unipotent forms listed in <1>5.
-::: {.proof}
-Necessity is <1>4, and sufficiency follows from <1>5 and <1>6.
+Equivalently, $A$ has one of the two unipotent forms listed in step [](#s5){.pf-ref}.
+
+::: pf-proof
+
+Necessity is step [](#s4){.pf-ref}, and sufficiency follows from steps [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

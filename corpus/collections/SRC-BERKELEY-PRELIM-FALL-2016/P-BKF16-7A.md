@@ -35,16 +35,27 @@ Let A and B be two $n \times n$ matrices with coefficients in Q. For any field e
 :::
 
 ::: {.solution}
-<1>1. If $A$ and $B$ are similar over $\QQ$, then they are similar
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $A$ and $B$ are similar over $\QQ$, then they are similar
 over $\CC$.
 
-::: {.proof}
+::: pf-proof
+
 An invertible matrix with entries in $\QQ$ is also an invertible
 matrix with entries in $\CC$, since $\QQ\subset\CC$. Thus the same
 conjugating matrix works over $\CC$.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$
 V_{\QQ}
 \coloneqq
@@ -58,7 +69,8 @@ V_{\CC}
 $$
 Then $V_{\CC}$ has a basis consisting of matrices in $V_{\QQ}$.
 
-::: {.proof}
+::: pf-proof
+
 The matrix equation
 $$
 AX=XB
@@ -76,15 +88,21 @@ $$
 that form a $\QQ$-basis of $V_{\QQ}$. The same row-reduced system over
 $\CC$ has the same pivot and free variables, so these same matrices
 form a $\CC$-basis of $V_{\CC}$.
+
 :::
 
-<1>3. Assume $A$ and $B$ are similar over $\CC$. Then there is an
+:::
+
+::: {.pf-step #s3}
+
+Assume $A$ and $B$ are similar over $\CC$. Then there is an
 invertible matrix
 $$
 P\in V_{\CC}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Complex similarity gives
 $$
 A=PBP^{-1}
@@ -95,13 +113,18 @@ $$
 AP=PB,
 $$
 so $P\in V_{\CC}$.
+
 :::
 
-<1>4. Let
+:::
+
+::: {.pf-step #s4}
+
+Let
 $$
 Q_1,\ldots,Q_m
 $$
-be the rational basis from step <1>2 and define
+be the rational basis from step [](#s2){.pf-ref} and define
 $$
 D(y_1,\ldots,y_m)
 \coloneqq
@@ -115,7 +138,8 @@ D\in\QQ[y_1,\ldots,y_m]
 $$
 and $D$ is not the zero polynomial.
 
-::: {.proof}
+::: pf-proof
+
 The entries of each $Q_r$ are rational and each entry of
 $$
 \sum_r y_rQ_r
@@ -124,7 +148,7 @@ is a rational linear polynomial in the variables $y_r$. The
 determinant formula therefore shows that $D$ has rational
 coefficients.
 
-By steps <1>2--<1>3, write
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, write
 $$
 P=\sum_{r=1}^m c_rQ_r
 $$
@@ -137,9 +161,14 @@ D(c_1,\ldots,c_m)
 0.
 $$
 Hence $D$ is not identically zero.
+
 :::
 
-<1>5. If
+:::
+
+::: {.pf-step #s5}
+
+If
 $$
 F\in\QQ[y_1,\ldots,y_m]
 $$
@@ -152,7 +181,8 @@ $$
 F(q_1,\ldots,q_m)\ne0.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Proceed by induction on $m$. For $m=1$, a nonzero one-variable
 polynomial has only finitely many roots, while $\QQ$ is infinite, so a
 rational nonroot exists.
@@ -180,15 +210,21 @@ F(q_1,\ldots,q_{m-1},y_m)
 $$
 is a nonzero one-variable polynomial over $\QQ$. Choose a rational
 $q_m$ that is not one of its finitely many roots.
+
 :::
 
-<1>6. There is an invertible matrix
+:::
+
+::: {.pf-step #s6}
+
+There is an invertible matrix
 $$
 Q\in V_{\QQ}.
 $$
 
-::: {.proof}
-Apply step <1>5 to the nonzero polynomial $D$ from step <1>4. Choose
+::: pf-proof
+
+Apply step [](#s5){.pf-ref} to the nonzero polynomial $D$ from step [](#s4){.pf-ref}. Choose
 $$
 q_1,\ldots,q_m\in\QQ
 $$
@@ -212,13 +248,19 @@ D(q_1,\ldots,q_m)
 0,
 $$
 so $Q$ is invertible.
+
 :::
 
-<1>7. If $A$ and $B$ are similar over $\CC$, then they are similar
+:::
+
+::: {.pf-step #s7}
+
+If $A$ and $B$ are similar over $\CC$, then they are similar
 over $\QQ$.
 
-::: {.proof}
-By step <1>6, there is an invertible rational matrix $Q$ satisfying
+::: pf-proof
+
+By step [](#s6){.pf-ref}, there is an invertible rational matrix $Q$ satisfying
 $$
 AQ=QB.
 $$
@@ -227,9 +269,14 @@ $$
 A=QBQ^{-1}.
 $$
 Thus $A$ and $B$ are similar over $\QQ$.
+
 :::
 
-<1>8. Therefore
+:::
+
+::: {.pf-step #s8}
+
+Therefore
 $$
 \boxed{
 A\text{ and }B\text{ are similar over }\QQ
@@ -238,14 +285,21 @@ A\text{ and }B\text{ are similar over }\CC.
 }
 $$
 
-::: {.proof}
-The forward implication is step <1>1 and the reverse implication is
-step <1>7.
+::: pf-proof
+
+The forward implication is step [](#s1){.pf-ref} and the reverse implication is
+step [](#s7){.pf-ref}.
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 is the required equivalence.
 :::
+
+::: pf-qed
+
+Step [](#s8){.pf-ref} is the required equivalence.
+
+:::
+
+:::
+
 :::

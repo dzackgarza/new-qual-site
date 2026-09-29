@@ -32,13 +32,18 @@ Use (2.5.3) to show that $\PP^n$ is simply connected.
 ::: {.solution}
 Here **simply connected** means that every finite étale cover is trivial.
 
-<1>1. It is enough to prove that every connected finite étale cover
+::: pf
+
+::: {.pf-step #s1}
+
+It is enough to prove that every connected finite étale cover
 $$
 f:Y\longrightarrow\PP^n
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 A finite étale cover has only finitely many connected components. The
 image of each nonempty connected component is open because an étale
 morphism is open, and closed because a finite morphism is closed. Since
@@ -48,26 +53,38 @@ itself a connected finite étale cover.
 Thus, if every connected cover is an isomorphism, an arbitrary finite
 étale cover is a finite disjoint union of copies of $\PP^n$, which is
 exactly a trivial cover.
+
 :::
 
-<1>2. The assertion holds for $n=1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+The assertion holds for $n=1$.
+
+::: pf-proof
+
 This is Hartshorne IV.2.5.3: $\PP^1$ has no nontrivial connected finite
 étale cover. Equivalently,
 [[D-IV2ETCOV|the Riemann--Hurwitz computation for $\PP^1$]]
 shows that a connected finite étale cover of $\PP^1$ has degree one and
 is an isomorphism.
+
 :::
 
-<1>3. Assume $n\ge2$ and that $\PP^{n-1}$ is simply connected. Let
+:::
+
+::: {.pf-step #s3}
+
+Assume $n\ge2$ and that $\PP^{n-1}$ is simply connected. Let
 $$
 f:Y\longrightarrow\PP^n
 $$
 be a connected finite étale cover. Then $Y$ is a normal projective
 integral variety of dimension $n$.
 
-::: {.proof}
+::: pf-proof
+
 Since $f$ is finite and $\PP^n$ is projective, $Y$ is projective. Since
 $f$ is étale and $\PP^n$ is smooth over $k$, the scheme $Y$ is smooth,
 hence regular and normal.
@@ -78,9 +95,14 @@ whereas a regular local ring is a domain. Thus its irreducible components
 are open and closed. Because $Y$ is connected, it has only one
 irreducible component. Hence $Y$ is integral. Étale morphisms preserve
 dimension, so $\dim Y=n$.
+
 :::
 
-<1>4. If
+:::
+
+::: {.pf-step #s4}
+
+If
 $$
 H\cong\PP^{n-1}\subseteq\PP^n
 $$
@@ -90,7 +112,8 @@ D=f^{-1}(H),
 $$
 then $D$ is connected.
 
-::: {.proof}
+::: pf-proof
+
 The hyperplane $H$ is an effective Cartier divisor with
 $$
 \mco_{\PP^n}(H)\cong\mco_{\PP^n}(1).
@@ -108,19 +131,25 @@ $$
 A finite pullback of an ample invertible sheaf is ample, so
 $\mco_Y(D)$ is ample.
 
-By step <1>3, $Y$ is a normal projective variety of dimension at least
+By step [](#s3){.pf-ref}, $Y$ is a normal projective variety of dimension at least
 two. Hartshorne III.7.9, the Enriques--Severi--Zariski connectedness
 theorem, therefore says that the support of the effective ample divisor
 $D$ is connected. Thus $D$ is connected.
+
 :::
 
-<1>5. The restriction
+:::
+
+::: {.pf-step #s5}
+
+The restriction
 $$
 f|_D:D\longrightarrow H\cong\PP^{n-1}
 $$
 is an isomorphism.
 
-::: {.proof}
+::: pf-proof
+
 The square
 $$
 \begin{CD}
@@ -130,15 +159,21 @@ H @>>> \PP^n
 \end{CD}
 $$
 is cartesian. Hence $f|_D$ is the base change of the finite étale
-morphism $f$, so it is finite étale. Step <1>4 says that $D$ is
+morphism $f$, so it is finite étale. Step [](#s4){.pf-ref} says that $D$ is
 connected. By the induction hypothesis, every connected finite étale
 cover of $\PP^{n-1}$ is an isomorphism. Therefore $f|_D$ is an
 isomorphism.
+
 :::
 
-<1>6. The morphism $f$ has degree one and is an isomorphism.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+The morphism $f$ has degree one and is an isomorphism.
+
+::: pf-proof
+
 A finite étale morphism is finite locally free of constant rank on the
 connected target $\PP^n$. This rank is its degree and is preserved by
 base change. Hence
@@ -149,25 +184,37 @@ $$
 =
 1
 $$
-by step <1>5.
+by step [](#s5){.pf-ref}.
 
 Since $Y$ and $\PP^n$ are integral, $f$ induces an extension of function
 fields of degree one, so it is birational. It is also finite, while
 $\PP^n$ is normal. A finite birational morphism onto a normal integral
 scheme is an isomorphism. Thus $f$ is an isomorphism.
+
 :::
 
-<1>7. For every $n\ge1$, $\PP^n$ is simply connected.
+:::
 
-::: {.proof}
-Step <1>2 is the base case. Steps <1>3--<1>6 give the induction step from
-$n-1$ to $n$. Step <1>1 then upgrades the connected-cover statement to
+::: {.pf-step #s7}
+
+For every $n\ge1$, $\PP^n$ is simply connected.
+
+::: pf-proof
+
+Step [](#s2){.pf-ref} is the base case. Steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} give the induction step from
+$n-1$ to $n$. Step [](#s1){.pf-ref} then upgrades the connected-cover statement to
 all finite étale covers.
+
 :::
 
-<1>8. Q.E.D.
-
-::: {.proof}
-Step <1>7 is exactly the required conclusion.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} is exactly the required conclusion.
+
+:::
+
+:::
+
 :::

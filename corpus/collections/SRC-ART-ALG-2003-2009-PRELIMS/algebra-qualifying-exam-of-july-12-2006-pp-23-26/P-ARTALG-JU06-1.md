@@ -31,14 +31,20 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If $x_1,\ldots,x_r$ represent the noncentral conjugacy classes
+
+::: pf
+
+::: {.pf-step #s1}
+
+If $x_1,\ldots,x_r$ represent the noncentral conjugacy classes
 of a finite group $G$, then its class equation is
 $$
 |G|=|Z(G)|+\sum_{j=1}^r [G:C_G(x_j)],
 $$
 where $C_G(x)=\{g\in G:gx=xg\}$.
 
-::: {.proof}
+::: pf-proof
+
 Conjugacy is an equivalence relation, so its classes partition $G$.
 An element has a singleton conjugacy class precisely when it commutes
 with every element of $G$, that is, when it belongs to $Z(G)$.
@@ -52,17 +58,29 @@ $gxg^{-1}=hxh^{-1}$ is equivalent to $h^{-1}g\in C_G(x)$,
 which is equivalent to equality of the two left cosets.
 Thus each noncentral class has the displayed index as its size.
 Adding the class sizes gives the formula.
+
 :::
 
-<1>2. If $|G|=p^k$ with $k\geq1$, then $|Z(G)|\geq p$.
+:::
 
-::: {.proof}
+::: pf-step
+
+If $|G|=p^k$ with $k\geq1$, then $|Z(G)|\geq p$.
+
+::: pf-proof
+
 Each centralizer has order dividing $p^k$ by Lagrange's theorem [@DF04],
 so each index $[G:C_G(x_j)]$ is a power of $p$. Since $x_j$ is
 noncentral, its centralizer is proper, and that power is greater
-than $1$. Hence every term in the sum in step <1>1 is divisible
+than $1$. Hence every term in the sum in step [](#s1){.pf-ref} is divisible
 by $p$. The same equation implies $p\mid |Z(G)|$.
 The center contains the identity, so its size is a positive multiple
 of $p$ and therefore at least $p>1$. In particular it is nontrivial.
+
 :::
+
+:::
+
+:::
+
 :::

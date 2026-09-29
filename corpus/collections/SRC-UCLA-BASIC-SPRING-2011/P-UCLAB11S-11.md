@@ -14,6 +14,21 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. Prove that every connected subset $A\subset\mathbb R$ is arcwise connected.
-<1>2. Give an example of a connected subset of $\mathbb R^2$ that is not arcwise connected.
+
+::: pf
+
+::: pf-step
+
+Prove that every connected subset $A\subset\mathbb R$ is arcwise connected.
+
+:::
+
+::: pf-step
+
+Give an example of a connected subset of $\mathbb R^2$ that is not arcwise connected.
+
+:::
+
+:::
+
 :::

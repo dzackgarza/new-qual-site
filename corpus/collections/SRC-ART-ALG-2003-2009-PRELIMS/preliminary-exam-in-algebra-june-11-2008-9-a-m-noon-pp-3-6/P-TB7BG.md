@@ -38,22 +38,33 @@ We prove the assertion by induction on $n$. For $n=0$ the empty direct
 sum is the required form. Suppose $n>0$ and the assertion holds in
 smaller dimensions. Let $r\geq1$ be the least integer with $T^r=0$.
 
-<1>1. There is an invariant subspace $U$ with basis
+::: pf
+
+::: {.pf-step #s1}
+
+There is an invariant subspace $U$ with basis
 $v,Tv,\ldots,T^{r-1}v$.
 
-::: {.proof}
+::: pf-proof
+
 Minimality of $r$ gives $v\in V$ with $T^{r-1}v\ne0$.
 If $\sum_{j=0}^{r-1}a_jT^jv=0$ is a nonzero linear relation, let $k$
 be the least index with $a_k\ne0$. Applying $T^{r-1-k}$ gives
 $a_kT^{r-1}v=0$: every term with larger index is killed by $T^r=0$.
 This is a contradiction. The chain is therefore independent, and its
 span $U$ is invariant because $T(T^{r-1}v)=0$.
+
 :::
 
-<1>2. The subspace $U$ has a $T$-invariant complement.
+:::
 
-::: {.proof}
-Extend the chain in step <1>1 to a basis of $V$. Define a linear
+::: pf-step
+
+The subspace $U$ has a $T$-invariant complement.
+
+::: pf-proof
+
+Extend the chain in step [](#s1){.pf-ref} to a basis of $V$. Define a linear
 functional $\ell:V\to\mathbb C$ to be $1$ on $T^{r-1}v$ and $0$
 on every other vector of this basis. Define
 $$
@@ -77,11 +88,17 @@ $$
 w=\pi(w)+(w-\pi(w))\in U\oplus W.
 $$
 Indeed, the second term lies in $\ker\pi$ and $U\cap\ker\pi=0$.
+
 :::
 
-<1>3. Combining bases of $U$ and $W$ produces the asserted blocks.
+:::
 
-::: {.proof}
+::: pf-step
+
+Combining bases of $U$ and $W$ produces the asserted blocks.
+
+::: pf-proof
+
 On the ordered basis $v,Tv,\ldots,T^{r-1}v$ of $U$, the matrix of
 $T|_U$ has ones immediately below the diagonal and all other entries
 zero. The restriction $T|_W$ is nilpotent and $\dim W=n-r<n$.
@@ -90,5 +107,11 @@ Concatenating these two bases gives a basis of $V$ in which $T$ has
 the stated form. If $S$ has these basis vectors as columns in the
 original coordinates, then $S$ is invertible and $S^{-1}NS$ is
 exactly that block diagonal matrix.
+
 :::
+
+:::
+
+:::
+
 :::

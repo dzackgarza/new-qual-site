@@ -35,7 +35,11 @@ $$
 f(z)\coloneqq\frac{e^{-iz}}{z^2-2z+4}.
 $$
 
-<1>1. The poles of $f$ are
+::: pf
+
+::: pf-step
+
+The poles of $f$ are
 $$
 z=1\pm i\sqrt{3},
 $$
@@ -44,7 +48,8 @@ $$
 z_0\coloneqq1-i\sqrt{3}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One has
 $$
 z^2-2z+4
@@ -54,12 +59,18 @@ z^2-2z+4
 (z-1-i\sqrt{3})(z-1+i\sqrt{3}).
 $$
 Both poles are simple, and only $1-i\sqrt{3}$ has negative imaginary part.
+
 :::
 
-<1>2. If the real interval $[-R,R]$ is closed by the lower semicircle, then
+:::
+
+::: {.pf-step #s2}
+
+If the real interval $[-R,R]$ is closed by the lower semicircle, then
 the integral over that semicircle tends to $0$ as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z=x+iy$ in the lower half-plane,
 $$
 \abs{e^{-iz}}=e^y\leq1.
@@ -77,16 +88,22 @@ $$
 \frac{\pi R}{R^2-2R-4}
 \longrightarrow0.
 $$
+
 :::
 
-<1>3. The residue at $z_0=1-i\sqrt{3}$ is
+:::
+
+::: pf-step
+
+The residue at $z_0=1-i\sqrt{3}$ is
 $$
 \Res_{z=z_0}f(z)
 =
 \frac{e^{-\sqrt{3}-i}}{-2i\sqrt{3}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Since the pole is simple,
 $$
 \Res_{z=z_0}f(z)
@@ -106,16 +123,22 @@ e^{-i(1-i\sqrt{3})}
 e^{-\sqrt{3}-i}.
 $$
 Substitution gives the displayed residue.
+
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+
+One has
 $$
 \int_{-\infty}^{\infty}\frac{e^{-ix}}{x^2-2x+4}\,dx
 =
 \boxed{\frac{\pi}{\sqrt{3}}e^{-\sqrt{3}-i}}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The lower semicircular contour is clockwise. By the residue theorem,
 $$
 \int_{-R}^{R}f(x)\,dx
@@ -124,7 +147,7 @@ $$
 =
 -2\pi i\Res_{z=z_0}f(z).
 $$
-Letting $R\to\infty$ and using step <1>2 gives
+Letting $R\to\infty$ and using step [](#s2){.pf-ref} gives
 $$
 \int_{-\infty}^{\infty}f(x)\,dx
 =
@@ -133,11 +156,17 @@ $$
 =
 \frac{\pi}{\sqrt{3}}e^{-\sqrt{3}-i}.
 $$
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the requested value.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the requested value.
+
+:::
+
+:::
+
 :::

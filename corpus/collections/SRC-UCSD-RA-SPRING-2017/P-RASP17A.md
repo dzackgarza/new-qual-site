@@ -35,10 +35,16 @@ In each case below find $L$ (allowing for values of $\pm\infty$) and justify the
 3. $L = \lim_{n \to \infty} \int_0^\infty e^{-n^2 x^2} \cos(e^{-n^2 x^2}) \, n^2 x \, dx$
 :::
 
-
 ::: {.solution}
-<1>1. Evaluate the first limit.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Evaluate the first limit.
+
+::: pf-proof
+
 For \(n\ge1\),
 \[
 \frac{\min(nx,1)}x=
@@ -57,10 +63,17 @@ Therefore
 \[
 \boxed{L=+\infty.}
 \]
+
 :::
 
-<1>2. Evaluate the oscillatory integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Evaluate the oscillatory integral.
+
+::: pf-proof
+
 Let \(u(x)=x^{-3/2}\). Then \(u'(x)=-\frac32x^{-5/2}\in L^1([1,\infty))\). Integration by parts gives, for \(R>1\),
 \[
 \int_1^R u(x)e^{inx}\,dx
@@ -76,10 +89,17 @@ The right side tends to \(0\). Thus
 \[
 \boxed{L=0.}
 \]
+
 :::
 
-<1>3. Evaluate the third integral exactly.
-::: {.proof}
+:::
+
+::: pf-step
+
+Evaluate the third integral exactly.
+
+::: pf-proof
+
 Put \(u=n^2x^2\). Then \(du=2n^2x\,dx\), so
 \[
 \begin{aligned}
@@ -97,5 +117,11 @@ The expression is independent of \(n\), hence
 \[
 \boxed{L=\frac12\sin1.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

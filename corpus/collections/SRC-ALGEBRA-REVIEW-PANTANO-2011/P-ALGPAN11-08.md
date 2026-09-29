@@ -26,8 +26,14 @@ audit:
 ::: {.solution}
 The group must be abelian, so the answer is $\boxed{\text{(D)}}$.
 
-<1>1. For all $a,b\in G$, $ab=ba$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+For all $a,b\in G$, $ab=ba$.
+
+::: pf-proof
+
 For arbitrary $a,b\in G$,
 \[
 (ab)^2=a^2b^2
@@ -45,5 +51,11 @@ and right-multiplying by $b^{-1}$ gives
 ba=ab.
 \]
 Thus every pair of elements commutes and $G$ is abelian.
+
 :::
+
+:::
+
+:::
+
 :::

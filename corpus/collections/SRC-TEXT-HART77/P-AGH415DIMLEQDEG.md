@@ -39,8 +39,11 @@ $$
 \dim\abs{D}=\ell(D)-1.
 $$
 
+::: pf
 
-<1>1. The divisor sequence gives
+::: {.pf-step #s1}
+
+The divisor sequence gives
 $$
 0\to\mco_X\to\mco_X(D)\to\mco_X(D)|_D\to0,
 $$
@@ -49,41 +52,60 @@ $$
 h^0(D,\mco_X(D)|_D)=d.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The first map is multiplication by the canonical section with zero divisor
 $D$. The finite scheme $D$ has length $d$. Since
 $\mco_X(D)|_D$ is locally free of rank one on $D$, it also has length
 $d$, so its space of global sections has dimension $d$.
+
 :::
 
-<1>2. One has $\dim\abs{D}\le\deg D$.
+:::
 
-::: {.proof}
-Global sections of step <1>1 give
+::: {.pf-step #s2}
+
+One has $\dim\abs{D}\le\deg D$.
+
+::: pf-proof
+
+Global sections of step [](#s1){.pf-ref} give
 $$
 0\to H^0(X,\mco_X)\to H^0(X,\mco_X(D))
 \to H^0(D,\mco_X(D)|_D).
 $$
-Since $h^0(X,\mco_X)=1$, step <1>1 gives
+Since $h^0(X,\mco_X)=1$, step [](#s1){.pf-ref} gives
 $\ell(D)\le d+1$. Therefore
 $$
 \dim\abs{D}=\ell(D)-1\le d=\deg D.
 $$
+
 :::
 
-<1>3. If $D=0$, then equality holds.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $D=0$, then equality holds.
+
+::: pf-proof
+
 Here $\ell(0)=h^0(X,\mco_X)=1$, so
 $$
 \dim\abs{0}=0=\deg0.
 $$
+
 :::
 
-<1>4. If $g=0$, then equality holds for every effective $D$.
+:::
 
-::: {.proof}
-The case $D=0$ is step <1>3. If $d>0$, Riemann--Roch gives
+::: {.pf-step #s4}
+
+If $g=0$, then equality holds for every effective $D$.
+
+::: pf-proof
+
+The case $D=0$ is step [](#s3){.pf-ref}. If $d>0$, Riemann--Roch gives
 $$
 \ell(D)-\ell(K-D)=d+1.
 $$
@@ -92,32 +114,50 @@ $\ell(K-D)=0$. Thus $\ell(D)=d+1$, and therefore
 $$
 \dim\abs{D}=d=\deg D.
 $$
+
 :::
 
-<1>5. Conversely, suppose equality holds and $D\ne0$. Then
+:::
+
+::: {.pf-step #s5}
+
+Conversely, suppose equality holds and $D\ne0$. Then
 $\ell(K-D)=g$.
 
-::: {.proof}
+::: pf-proof
+
 Equality means $\ell(D)=d+1$. Riemann--Roch gives
 $$
 \ell(D)-\ell(K-D)=d+1-g.
 $$
 Hence $\ell(K-D)=g$. It also gives $\ell(K)=g$.
+
 :::
 
-<1>6. Choose a point $P$ in the support of $D$.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+
+Choose a point $P$ in the support of $D$.
+
+::: pf-proof
+
 Because $D-P$ is effective, the section spaces for $K-D$, $K-P$, and $K$ are nested.
-The first and third have dimension $g$ by step <1>5, so the middle one also has dimension $g$. Riemann--Roch for the degree-one divisor $P$ then gives
+The first and third have dimension $g$ by step [](#s5){.pf-ref}, so the middle one also has dimension $g$. Riemann--Roch for the degree-one divisor $P$ then gives
 $$
 \ell(P)=2.
 $$
+
 :::
 
-<1>7. The equality $\ell(P)=2$ forces $X\cong\PP^1$, hence $g=0$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+
+The equality $\ell(P)=2$ forces $X\cong\PP^1$, hence $g=0$.
+
+::: pf-proof
+
 Constants give one section of $\mco_X(P)$, so a second linearly independent section gives a nonconstant rational function
 $$
 f\in H^0(X,\mco_X(P)).
@@ -129,17 +169,29 @@ $$
 f:X\longrightarrow\PP^1
 $$
 whose degree is the degree of its polar divisor, namely $1$. A finite degree-one morphism between integral smooth projective curves is birational, and since $\PP^1$ is normal it is an isomorphism. Hence $X\cong\PP^1$ and $g=0$.
+
 :::
 
-<1>8. Equality holds if and only if $D=0$ or $g=0$.
-
-::: {.proof}
-Steps <1>3--<1>4 prove the two sufficient cases. Steps <1>5--<1>7 show that equality with $D\ne0$ forces $g=0$.
 :::
 
-<1>9. Q.E.D.
+::: {.pf-step #s8}
 
-::: {.proof}
-Step <1>2 proves the inequality and step <1>8 characterizes equality.
+Equality holds if and only if $D=0$ or $g=0$.
+
+::: pf-proof
+
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} prove the two sufficient cases. Steps [](#s5){.pf-ref}, [](#s6){.pf-ref} and [](#s7){.pf-ref} show that equality with $D\ne0$ forces $g=0$.
+
 :::
+
+:::
+
+::: pf-qed
+
+Step [](#s2){.pf-ref} proves the inequality and step [](#s8){.pf-ref} characterizes equality.
+
+:::
+
+:::
+
 :::

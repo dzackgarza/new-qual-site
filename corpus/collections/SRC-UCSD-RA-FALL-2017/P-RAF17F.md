@@ -31,8 +31,15 @@ Recall that $\|f * g\|_{L^1(m)} \leq \|f\|_{L^1(m)} \|g\|_{L^1(m)}$ for all $f, 
 :::
 
 ::: {.solution}
-<1>1. Take Fourier transforms of the convolution equation.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Take Fourier transforms of the convolution equation.
+
+::: pf-proof
+
 Since $f\in L^1(\mathbb R)$, both $f*f$ and $f*f*f$ belong to $L^1(\mathbb R)$. The Fourier transform converts convolution into multiplication, so the assumed identity gives
 \[
 \widehat f(\xi)^3
@@ -47,10 +54,17 @@ and hence
 \widehat f(\xi)\in\{0,\lambda\}
 \qquad\text{for every }\xi\in\mathbb R.
 \]
+
 :::
 
-<1>2. Use continuity and decay of the Fourier transform.
-::: {.proof}
+:::
+
+::: pf-step
+
+Use continuity and decay of the Fourier transform.
+
+::: pf-proof
+
 If $\lambda=0$, Step 1 immediately gives
 \[
 \widehat f\equiv0.
@@ -71,10 +85,17 @@ Therefore the only possible constant is $0$, so again
 \[
 \widehat f\equiv0.
 \]
+
 :::
 
-<1>3. Invoke uniqueness of the Fourier transform.
-::: {.proof}
+:::
+
+::: pf-step
+
+Invoke uniqueness of the Fourier transform.
+
+::: pf-proof
+
 The Fourier transform is injective on $L^1(\mathbb R)$. Since
 \[
 \widehat f=0,
@@ -83,5 +104,11 @@ we conclude
 \[
 \boxed{f=0\text{ almost everywhere}.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

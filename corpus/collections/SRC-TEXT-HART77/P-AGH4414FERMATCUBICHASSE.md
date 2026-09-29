@@ -39,20 +39,31 @@ $$
 F=x^3+y^3-z^3.
 $$
 
-<1>1. By Proposition IV.4.21, the Hasse invariant of $X_{(p)}$ is nonzero
+::: pf
+
+::: {.pf-step #s1}
+
+By Proposition IV.4.21, the Hasse invariant of $X_{(p)}$ is nonzero
 if and only if the coefficient of
 $$
 (xyz)^{p-1}
 $$
 in $F^{p-1}$ is nonzero modulo $p$.
 
-::: {.proof}
+::: pf-proof
+
 This is exactly Proposition IV.4.21 applied to the plane cubic $F=0$.
+
 :::
 
-<1>2. If $p\equiv2\pmod3$, then the coefficient in step <1>1 is zero.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+
+If $p\equiv2\pmod3$, then the coefficient in step [](#s1){.pf-ref} is zero.
+
+::: pf-proof
+
 Every monomial occurring in
 $$
 (x^3+y^3-z^3)^{p-1}
@@ -67,11 +78,17 @@ $$
 $$
 If $p\equiv2\pmod3$, this is impossible. Hence the required coefficient is
 zero, so the Hasse invariant vanishes.
+
 :::
 
-<1>3. If $p\equiv1\pmod3$, then the coefficient in step <1>1 is nonzero.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+
+If $p\equiv1\pmod3$, then the coefficient in step [](#s1){.pf-ref} is nonzero.
+
+::: pf-proof
+
 Put
 $$
 m=\frac{p-1}{3}.
@@ -88,35 +105,53 @@ $$
 Since $0<m<p$, neither $m!$ nor $(p-1)!$ is divisible by $p$. Therefore
 this coefficient is nonzero in $\FF_p$, and so the Hasse invariant is
 nonzero.
+
 :::
 
-<1>4. Consequently
+:::
+
+::: {.pf-step #s4}
+
+Consequently
 $$
 \boxed{
 \mfp=\{p\text{ prime}:p\equiv2\pmod3\}.
 }
 $$
 
-::: {.proof}
+::: pf-proof
+
 The excluded prime is $p=3$. Every other prime is congruent to $1$ or $2$
-modulo $3$. Steps <1>2--<1>3 show that the Hasse invariant vanishes exactly
+modulo $3$. Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} show that the Hasse invariant vanishes exactly
 in the second residue class. This includes $p=2$.
+
 :::
 
-<1>5. The set $\mfp$ has density $1/2$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+
+The set $\mfp$ has density $1/2$.
+
+::: pf-proof
+
 By Dirichlet's theorem on primes in arithmetic progressions, the primes are
 equidistributed between the two reduced residue classes $1$ and $2$ modulo
 $3$. The single excluded prime $3$ has density zero. Hence
 $$
 \delta(\mfp)=\frac{1}{\varphi(3)}=\frac12.
 $$
+
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Steps <1>4--<1>5 determine the required set of primes and its density.
 :::
+
+::: pf-qed
+
+Steps [](#s4){.pf-ref} and [](#s5){.pf-ref} determine the required set of primes and its density.
+
+:::
+
+:::
+
 :::

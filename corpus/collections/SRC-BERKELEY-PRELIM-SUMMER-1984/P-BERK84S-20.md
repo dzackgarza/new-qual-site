@@ -39,8 +39,14 @@ F(z)=\frac{z e^{iz}}{z^2+4z+20}
 \]
 Its poles are $-2\pm4i$.
 
-<1>1. On a large upper semicircle, the contour integral of $F$ tends to zero.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+
+On a large upper semicircle, the contour integral of $F$ tends to zero.
+
+::: pf-proof
+
 Let $C_R$ be the upper semicircle $z=Re^{i\theta}$, $0\le\theta\le\pi$, with $R$ large.
 Since the denominator is quadratic, there is a constant $K$ such that on $C_R$,
 \[
@@ -62,11 +68,18 @@ Using $\sin\theta\ge 2\theta/\pi$ on $[0,\pi/2]$ and symmetry,
 \le\frac{\pi}{R}.
 \]
 Therefore the semicircular integral tends to $0$ as $R\to\infty$.
+
 :::
 
-<1>2. The real-line integral of $F$ equals the residue contribution from $z_0=-2+4i$.
-::: {.proof}
-By the residue theorem and <1>1,
+:::
+
+::: pf-step
+
+The real-line integral of $F$ equals the residue contribution from $z_0=-2+4i$.
+
+::: pf-proof
+
+By the residue theorem and step [](#s1){.pf-ref},
 \[
 \int_{-\infty}^{\infty}\frac{x e^{ix}}{x^2+4x+20}\,dx
 =2\pi i\operatorname{Res}_{z=-2+4i}F(z).
@@ -82,10 +95,17 @@ Thus
 J:=\int_{-\infty}^{\infty}\frac{x e^{ix}}{x^2+4x+20}\,dx
 =\frac{\pi}{4}e^{-4}(-2+4i)e^{-2i}.
 \]
+
 :::
 
-<1>3. Taking imaginary parts gives the required integral.
-::: {.proof}
+:::
+
+::: pf-step
+
+Taking imaginary parts gives the required integral.
+
+::: pf-proof
+
 Because
 \[
 e^{-2i}=\cos2-i\sin2,
@@ -106,5 +126,11 @@ Since $\operatorname{Im}(x e^{ix})=x\sin x$,
 \boxed{\int_{-\infty}^{\infty}\frac{x\sin x}{x^2+4x+20}\,dx
 =\pi e^{-4}\left(\cos2+\frac12\sin2\right)}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -47,7 +47,6 @@ has $k$-dimension 4. How many are there?
 How many are there?
 :::
 
-
 ::: {.remark}
 The source PDF writes the bound variable as $x$ in the definitions of $V(2)$
 and $V(3)$ but then uses an undefined $v$ in both annihilation conditions.
@@ -78,8 +77,14 @@ $$
 J_\lambda(a)=\bigoplus_{j=1}^r J_{\lambda_j}(a).
 $$
 
-<1>1. Classify the abelian groups in part (a).
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Classify the abelian groups in part (a).
+
+::: pf-proof
+
 A finite abelian group of order
 $$
 2^3 3^4
@@ -122,10 +127,17 @@ $$
 \boxed{3\cdot5=15}
 $$
 isomorphism classes.
+
 :::
 
-<1>2. The two generalized eigenspaces in part (b) form a direct-sum decomposition of $V$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The two generalized eigenspaces in part (b) form a direct-sum decomposition of $V$.
+
+::: pf-proof
+
 If $x\in V(2)\cap V(3)$, then for some $r,s$,
 $$
 (t-2)^r x=0,
@@ -145,10 +157,17 @@ Since their dimensions are $3$ and $4$ and $\dim_kV=7$,
 $$
 V=V(2)\oplus V(3).
 $$
+
 :::
 
-<1>3. Classify the $k[t]$-modules in part (b).
-::: {.proof}
+:::
+
+::: pf-step
+
+Classify the $k[t]$-modules in part (b).
+
+::: pf-proof
+
 The module $V(2)$ is $(t-2)$-primary and has $k$-dimension $3$. The structure
 theorem for finitely generated modules over the PID $k[t]$ says that its
 isomorphism type is uniquely
@@ -173,10 +192,17 @@ $$
 \boxed{15}
 $$
 isomorphism classes.
+
 :::
 
-<1>4. Classify the Jordan matrices in part (c).
-::: {.proof}
+:::
+
+::: pf-step
+
+Classify the Jordan matrices in part (c).
+
+::: pf-proof
+
 Over $\mathbb Q$, a Jordan matrix with characteristic polynomial
 $$
 (t-2)^3(t-3)^4
@@ -196,5 +222,11 @@ and the number of conjugacy classes is again
 $$
 \boxed{15}.
 $$
+
 :::
+
+:::
+
+:::
+
 :::

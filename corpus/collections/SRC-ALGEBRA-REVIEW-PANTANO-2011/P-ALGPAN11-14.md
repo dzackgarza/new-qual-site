@@ -49,8 +49,14 @@ III. $x^m \odot x^n = x^{m+n}$ for each $x$ in $S$ and for all positive integers
 Assertions II and III must hold, while I need not.
 Hence the answer is $\boxed{\text{(D)}}$.
 
-<1>1. Assertion II follows by induction.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Assertion II follows by induction.
+
+::: pf-proof
+
 For $n=1$ it is tautological.
 If
 \[
@@ -63,10 +69,17 @@ then, using associativity and commutativity of $\oplus$,
 =(nx\oplus x)\oplus(ny\oplus y)
 =(n+1)x\oplus(n+1)y.
 \]
+
 :::
 
-<1>2. Assertion III follows from associativity of $\odot$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Assertion III follows from associativity of $\odot$.
+
+::: pf-proof
+
 For fixed $x$, induction on $n$ gives
 \[
 x^m\odot x^n=x^{m+n}.
@@ -78,15 +91,28 @@ x^m\odot x^{n+1}
 =(x^m\odot x^n)\odot x
 =x^{m+n+1}.
 \]
+
 :::
 
-<1>3. Assertion I can fail.
-::: {.proof}
+:::
+
+::: pf-step
+
+Assertion I can fail.
+
+::: pf-proof
+
 Take $S=S_3$, let $\odot$ be its group multiplication, and transport the group law of the cyclic group $C_6$ to the same six-element set to define a commutative associative operation $\oplus$.
 For $x=(12)$ and $y=(13)$ in $S_3$, $xy\ne yx$; cancelling $x$ on the left and $y$ on the right in $xyxy=xxyy$ would give $yx=xy$, so
 \[
 (xy)^2=xyxy\ne xxyy=x^2y^2.
 \]
 Thus I is not forced by the stated axioms.
+
 :::
+
+:::
+
+:::
+
 :::

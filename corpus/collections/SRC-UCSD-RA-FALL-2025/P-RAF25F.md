@@ -37,8 +37,15 @@ Hint: Use (1) to first prove that for every $\epsilon > 0$, there exists $\eta \
 :::
 
 ::: {.solution}
-<1>1. Construct a countable dense subset of $\ell^2(\mathbb N)$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Construct a countable dense subset of $\ell^2(\mathbb N)$.
+
+::: pf-proof
+
 Let $D$ be the set of all finitely supported sequences whose real and imaginary parts are rational numbers. Then $D$ is countable.
 
 Fix $x=(x_n)\in\ell^2$ and $\varepsilon>0$. Choose $N$ so large that
@@ -58,10 +65,17 @@ Then
 \|x-q\|_2^2<\frac{\varepsilon^2}{2}<\varepsilon^2.
 \]
 Thus $D$ is dense, and $\ell^2(\mathbb N)$ is separable.
+
 :::
 
-<1>2. Every uncountable subset has an uncountable part inside some arbitrarily small ball.
-::: {.proof}
+:::
+
+::: pf-step
+
+Every uncountable subset has an uncountable part inside some arbitrarily small ball.
+
+::: pf-proof
+
 Let $A\subset\ell^2$ be uncountable and let $\varepsilon>0$. Since $D$ is dense,
 \[
 \ell^2
@@ -76,10 +90,17 @@ were countable, then $A$ would be a countable union of countable sets and hence 
 A\cap B(q,\varepsilon)
 \]
 is uncountable.
+
 :::
 
-<1>3. Build nested uncountable sets of shrinking diameter.
-::: {.proof}
+:::
+
+::: pf-step
+
+Build nested uncountable sets of shrinking diameter.
+
+::: pf-proof
+
 Set $S_0=S$. Recursively, having chosen an uncountable set $S_{n-1}$, apply Step 2 with
 \[
 \varepsilon_n:=2^{-n}
@@ -98,10 +119,17 @@ and
 \[
 \operatorname{diam}(S_n)\le2^{1-n}.
 \]
+
 :::
 
-<1>4. Choose a pairwise-distinct convergent sequence from $S$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Choose a pairwise-distinct convergent sequence from $S$.
+
+::: pf-proof
+
 Choose recursively
 \[
 x_n\in S_n
@@ -125,5 +153,11 @@ Hence $(x_n)$ is Cauchy. Since $\ell^2$ is complete, there exists $x\in\ell^2$ s
 x_n\to x.
 \]
 Thus $S$ contains a convergent sequence of pairwise distinct elements.
+
 :::
+
+:::
+
+:::
+
 :::

@@ -30,7 +30,11 @@ Suppose $A$ is a symmetric matrix with rational entries and $A = U D U^T$, where
 ::: {.solution}
 No.
 
-<1>1. Consider
+::: pf
+
+::: {.pf-step #s1}
+
+Consider
 $$
 A
 =
@@ -41,11 +45,17 @@ A
 $$
 Then $A$ is symmetric and has rational entries.
 
-::: {.proof}
+::: pf-proof
+
 The displayed matrix equals its transpose, and all four entries lie in $\QQ$.
+
 :::
 
-<1>2. The characteristic polynomial of $A$ is
+:::
+
+::: {.pf-step #s2}
+
+The characteristic polynomial of $A$ is
 $$
 \chi_A(t)=t^2-2.
 $$
@@ -56,7 +66,8 @@ $$
 -\sqrt2.
 $$
 
-::: {.proof}
+::: pf-proof
+
 One computes
 $$
 \begin{aligned}
@@ -74,23 +85,34 @@ t^2-2.
 \end{aligned}
 $$
 Its two roots are $\pm\sqrt2$.
+
 :::
 
-<1>3. If
+:::
+
+::: {.pf-step #s3}
+
+If
 $$
 A=UDU^T
 $$
 with $U$ orthogonal and $D$ diagonal, then the diagonal entries of $D$ are precisely the eigenvalues of $A$, in some order.
 
-::: {.proof}
+::: pf-proof
+
 Since $U^{-1}=U^T$,
 $$
 D=U^TAU.
 $$
 Thus $D$ is similar to $A$, so it has the same eigenvalues. The eigenvalues of a diagonal matrix are its diagonal entries.
+
 :::
 
-<1>4. Therefore, for the matrix in step <1>1, every orthogonal diagonalization has
+:::
+
+::: {.pf-step #s4}
+
+Therefore, for the matrix in step [](#s1){.pf-ref}, every orthogonal diagonalization has
 $$
 D
 =
@@ -101,13 +123,20 @@ D
 $$
 up to permutation of the diagonal entries, and $D$ does not have rational entries.
 
-::: {.proof}
-By the real spectral theorem, the symmetric matrix $A$ has an orthogonal diagonalization. Combine steps <1>2 and <1>3 to identify its diagonal entries. Since $\sqrt2\notin\QQ$, neither possible ordering gives a rational diagonal matrix. Thus this particular orthogonal factorization $A=UDU^T$ already disproves the assertion that $D$ must have rational entries.
+::: pf-proof
+
+By the real spectral theorem, the symmetric matrix $A$ has an orthogonal diagonalization. Combine steps [](#s2){.pf-ref} and [](#s3){.pf-ref} to identify its diagonal entries. Since $\sqrt2\notin\QQ$, neither possible ordering gives a rational diagonal matrix. Thus this particular orthogonal factorization $A=UDU^T$ already disproves the assertion that $D$ must have rational entries.
+
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required counterexample.
 :::
+
+::: pf-qed
+
+Step [](#s4){.pf-ref} gives the required counterexample.
+
+:::
+
+:::
+
 :::

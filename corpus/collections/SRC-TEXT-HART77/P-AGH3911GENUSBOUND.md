@@ -42,9 +42,14 @@ $$
 g=p_a(Y).
 $$
 
-<1>1. One has $g\ge0$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+One has $g\ge0$.
+
+::: pf-proof
+
 Because $Y$ is a nonsingular projective integral curve over the algebraically
 closed field $k$,
 $$
@@ -55,15 +60,21 @@ Therefore
 $$
 \boxed{p_a(Y)\ge0}.
 $$
+
 :::
 
-<1>2. There is a linear projection
+:::
+
+::: {.pf-step #s2}
+
+There is a linear projection
 $$
 \pi:Y\longrightarrow C\subseteq\PP_k^2
 $$
 which is birational onto an integral plane curve $C$ of degree $d$.
 
-::: {.proof}
+::: pf-proof
+
 If $n=2$, take $C=Y$ and $\pi=\id_Y$.
 
 Assume $n\ge3$. Choose a general linear centre
@@ -84,16 +95,22 @@ the same total intersection multiplicity. Thus
 $$
 \deg C=\deg Y=d.
 $$
+
 :::
 
-<1>3. The projection construction of III.9.8.3 gives a flat family
+:::
+
+::: {.pf-step #s3}
+
+The projection construction of III.9.8.3 gives a flat family
 $$
 \mathcal Y\longrightarrow\AA^1
 $$
 whose fibre over $1$ is $Y$ and whose fibre $Y_0$ over $0$ has support $C$.
 
-::: {.proof}
-Choose homogeneous coordinates so that the projection of step <1>2 forgets
+::: pf-proof
+
+Choose homogeneous coordinates so that the projection of step [](#s2){.pf-ref} forgets
 the last $n-2$ coordinates. For $t\ne0$, scale those omitted coordinates by
 $t$. The resulting projective automorphisms carry $Y$ through an isotrivial
 family over $\GG_m$. Taking its scheme-theoretic closure over $\AA^1$ gives
@@ -110,16 +127,22 @@ $$
 \qquad\text{and}\qquad
 p_a(Y_0)=p_a(Y)=g.
 $$
+
 :::
 
-<1>4. The reduction of $Y_0$ is $C$, and the nilradical
+:::
+
+::: {.pf-step #s4}
+
+The reduction of $Y_0$ is $C$, and the nilradical
 $$
 \mathcal N=\ker(\OO_{Y_0}\longrightarrow\OO_C)
 $$
 has zero-dimensional support.
 
-::: {.proof}
-By step <1>3, the support of $Y_0$ is $C$, so
+::: pf-proof
+
+By step [](#s3){.pf-ref}, the support of $Y_0$ is $C$, so
 $$
 (Y_0)_{\mathrm{red}}=C.
 $$
@@ -134,7 +157,7 @@ gives
 $$
 P_{Y_0}=P_C+P_{\mathcal N}.
 $$
-Steps <1>2--<1>3 give
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} give
 $$
 \deg Y_0=d=\deg C.
 $$
@@ -143,14 +166,20 @@ Hilbert polynomial is its degree. Hence the linear terms of $P_{Y_0}$ and
 $P_C$ cancel, so $P_{\mathcal N}$ is constant. Therefore $\mathcal N$ has
 zero-dimensional support. Since it is coherent on the projective curve $C$,
 it has finite length.
+
 :::
 
-<1>5. The special fibre has arithmetic genus at most that of its reduced plane support:
+:::
+
+::: {.pf-step #s5}
+
+The special fibre has arithmetic genus at most that of its reduced plane support:
 $$
 p_a(Y_0)\le p_a(C).
 $$
 
-::: {.proof}
+::: pf-proof
+
 There is an exact sequence
 $$
 0\longrightarrow\mathcal N
@@ -179,44 +208,62 @@ p_a(Y_0)
 =p_a(C)-\operatorname{length}(\mathcal N)
 \le p_a(C).
 $$
+
 :::
 
-<1>6. The plane curve $C$ has
+:::
+
+::: {.pf-step #s6}
+
+The plane curve $C$ has
 $$
 p_a(C)=\frac12(d-1)(d-2).
 $$
 
-::: {.proof}
-By step <1>2, $C\subseteq\PP^2$ is a plane curve of degree $d$.
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $C\subseteq\PP^2$ is a plane curve of degree $d$.
 The plane-curve Hilbert-polynomial calculation of
 [[P-AGH72ARITHGENUS|Hartshorne I.7.2(b)]] gives
 $$
 \boxed{p_a(C)=\binom{d-1}{2}=\frac12(d-1)(d-2)}.
 $$
+
 :::
 
-<1>7. The required upper bound follows.
+:::
 
-::: {.proof}
-By steps <1>3 and <1>5,
+::: {.pf-step #s7}
+
+The required upper bound follows.
+
+::: pf-proof
+
+By steps [](#s3){.pf-ref} and [](#s5){.pf-ref},
 $$
 p_a(Y)=p_a(Y_0)\le p_a(C).
 $$
-Applying step <1>6 yields
+Applying step [](#s6){.pf-ref} yields
 $$
 \boxed{p_a(Y)\le\frac12(d-1)(d-2)}.
 $$
-Together with step <1>1 this proves
+Together with step [](#s1){.pf-ref} this proves
 $$
 0\le p_a(Y)\le\frac12(d-1)(d-2).
 $$
+
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves the lower bound. Steps <1>2--<1>6 compare $Y$ through the
-flat projection degeneration with a degree-$d$ plane curve, and step <1>7
+::: pf-qed
+
+Step [](#s1){.pf-ref} proves the lower bound. Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} compare $Y$ through the
+flat projection degeneration with a degree-$d$ plane curve, and step [](#s7){.pf-ref}
 gives the upper bound.
+
 :::
+
+:::
+
 :::

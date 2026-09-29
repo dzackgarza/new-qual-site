@@ -41,9 +41,18 @@ Let rings be commutative with identity.
 :::
 
 ::: {.solution}
-<1>1. Let $I\subsetneq R$. Consider the set of proper ideals containing $I$, ordered by inclusion. The union of a chain is again an ideal, and it is proper: if its union contained $1$, then one member of the chain would contain $1$. By Zorn's lemma there is a maximal member, i.e. a maximal ideal containing $I$.
 
-<1>2. Suppose $x$ is irreducible and
+::: pf
+
+::: {.pf-step #s1}
+
+Let $I\subsetneq R$. Consider the set of proper ideals containing $I$, ordered by inclusion. The union of a chain is again an ideal, and it is proper: if its union contained $1$, then one member of the chain would contain $1$. By Zorn's lemma there is a maximal member, i.e. a maximal ideal containing $I$.
+
+:::
+
+::: pf-step
+
+Suppose $x$ is irreducible and
 \[
 (x)\subseteq(a)\subseteq R.
 \]
@@ -53,7 +62,11 @@ Then $x=ar$. Irreducibility gives either $a$ a unit, so $(a)=R$, or $r$ a unit, 
 \]
 Maximality forces $(a)=(x)$ or $(a)=R$, so one of $a,b$ is a unit. Thus $x$ is irreducible.
 
-<1>3. Arbitrary intersections of ideals are ideals. For ideals $I,J$,
+:::
+
+::: pf-step
+
+Arbitrary intersections of ideals are ideals. For ideals $I,J$,
 \[
 I+J=\{a+b:a\in I,b\in J\}
 \]
@@ -63,25 +76,49 @@ IJ=\left\{\sum_{k=1}^r a_kb_k:a_k\in I,b_k\in J\right\}
 \]
 is an ideal by closure under addition and multiplication by arbitrary elements of $R$.
 
-<1>4. In $\ZZ$, the ideals $(2)$ and $(3)$ have union that is not an ideal: $2,3$ lie in the union but
+:::
+
+::: pf-step
+
+In $\ZZ$, the ideals $(2)$ and $(3)$ have union that is not an ideal: $2,3$ lie in the union but
 \[
 2+3=5
 \]
 does not.
 
-<1>5. If $R\ne0$, then $(0)$ is proper. By <1>1 it lies in a maximal ideal.
+:::
 
-<1>6. Ideals of $R/I$ correspond to ideals of $R$ containing $I$. Thus $I$ is maximal exactly when $R/I$ has no ideals except $0$ and itself. A nonzero commutative ring with identity has this property exactly when it is a field.
+::: pf-step
 
-<1>7. One has
+If $R\ne0$, then $(0)$ is proper. By step [](#s1){.pf-ref} it lies in a maximal ideal.
+
+:::
+
+::: {.pf-step #s6}
+
+Ideals of $R/I$ correspond to ideals of $R$ containing $I$. Thus $I$ is maximal exactly when $R/I$ has no ideals except $0$ and itself. A nonzero commutative ring with identity has this property exactly when it is a field.
+
+:::
+
+::: {.pf-step #s7}
+
+One has
 \[
 ab\in I\iff (a+I)(b+I)=0\text{ in }R/I.
 \]
 Thus $I$ is prime exactly when $R/I$ has no zero divisors, i.e. is an integral domain.
 
-<1>8. A unit cannot lie in a proper ideal, so no unit lies in any maximal ideal. Conversely, if $x$ is a nonunit, then $(x)$ is proper, hence by <1>1 lies in some maximal ideal. Therefore the union of maximal ideals is exactly the set of nonunits.
+:::
 
-<1>9. Every maximal ideal is prime by <1>6--<1>7, since every field is a domain. Hence
+::: pf-step
+
+A unit cannot lie in a proper ideal, so no unit lies in any maximal ideal. Conversely, if $x$ is a nonunit, then $(x)$ is proper, hence by step [](#s1){.pf-ref} lies in some maximal ideal. Therefore the union of maximal ideals is exactly the set of nonunits.
+
+:::
+
+::: pf-step
+
+Every maximal ideal is prime by steps [](#s6){.pf-ref} and [](#s7){.pf-ref}, since every field is a domain. Hence
 \[
 \operatorname{MaxSpec}R\subseteq\operatorname{Spec}R.
 \]
@@ -90,19 +127,31 @@ For $R=\ZZ$ the containment is strict because $(0)$ is prime but not maximal. Fo
 \operatorname{Spec}k=\operatorname{MaxSpec}k=\{(0)\}.
 \]
 
-<1>10. Let $\mathfrak p$ be prime and suppose $x^n\in\mathfrak p$. Repeated primality applied to
+:::
+
+::: pf-step
+
+Let $\mathfrak p$ be prime and suppose $x^n\in\mathfrak p$. Repeated primality applied to
 \[
 x^n=x\cdot x^{n-1}
 \]
 shows $x\in\mathfrak p$. Thus $\mathfrak p=\sqrt{\mathfrak p}$.
 
-<1>11. By definition,
+:::
+
+::: pf-step
+
+By definition,
 \[
 \sqrt{(0)}=\{x\in R:x^n=0\text{ for some }n\ge1\},
 \]
 which is exactly the nilradical.
 
-<1>12. Since $IJ\subseteq I\cap J$,
+:::
+
+::: pf-step
+
+Since $IJ\subseteq I\cap J$,
 \[
 \sqrt{IJ}\subseteq\sqrt I\cap\sqrt J.
 \]
@@ -112,13 +161,26 @@ x^{m+n}=x^mx^n\in IJ,
 \]
 so $x\in\sqrt{IJ}$.
 
-<1>13. Since $R$ is a domain, $(0)$ is prime. The hypothesis therefore makes $(0)$ maximal. Hence
+:::
+
+::: pf-step
+
+Since $R$ is a domain, $(0)$ is prime. The hypothesis therefore makes $(0)$ maximal. Hence
 \[
 R/(0)=R
 \]
-is a field by <1>6. Every field is a UFD.
+is a field by step [](#s6){.pf-ref}. Every field is a UFD.
 
-<1>14. If “Noetherian” is defined by the ascending-chain condition, suppose an ideal $I$ were not finitely generated. Choose $a_1\in I$, then inductively choose
+:::
+
+::: pf-step
+
+If “Noetherian” is defined by the ascending-chain condition, suppose an ideal $I$ were not finitely generated. Choose $a_1\in I$, then inductively choose
+
+:::
+
+:::
+
 \[
 a_{n+1}\in I\setminus(a_1,\ldots,a_n).
 \]

@@ -31,8 +31,15 @@ Be sure to justify all your steps.
 :::
 
 ::: {.solution}
-<1>1. Pass the domination to the limit.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Pass the domination to the limit.
+
+::: pf-proof
+
 Outside a null set,
 \[
 f_n(x)\to f(x),
@@ -46,10 +53,17 @@ Hence
 |f(x)|\le g(x)
 \]
 almost everywhere. In particular, $g_n\ge0$ and $g\ge0$ almost everywhere.
+
 :::
 
-<1>2. Apply Fatou to a nonnegative remainder.
-::: {.proof}
+:::
+
+::: pf-step
+
+Apply Fatou to a nonnegative remainder.
+
+::: pf-proof
+
 Define
 \[
 h_n:=g_n+g-|f_n-f|.
@@ -89,10 +103,17 @@ Therefore
 \[
 \|f_n-f\|_1\to0.
 \]
+
 :::
 
-<1>3. Conclude convergence of the integrals.
-::: {.proof}
+:::
+
+::: pf-step
+
+Conclude convergence of the integrals.
+
+::: pf-proof
+
 Finally,
 \[
 \left|\int_Xf_n\,d\mu-\int_Xf\,d\mu\right|
@@ -102,5 +123,11 @@ Thus
 \[
 \boxed{\int_X f_n\,d\mu\longrightarrow\int_X f\,d\mu.}
 \]
+
 :::
+
+:::
+
+:::
+
 :::

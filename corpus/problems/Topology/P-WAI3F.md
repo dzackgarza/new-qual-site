@@ -30,24 +30,58 @@ This is well-defined, since $e^{i\pi t} > 0$ and $z \neq 0$, so the linear homot
 :::
 
 ::: {.solution}
-<1>1. Write $n=2m-1$ and identify $S^n$ with the unit sphere in $\mathbb C^m$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+
+Write $n=2m-1$ and identify $S^n$ with the unit sphere in $\mathbb C^m$.
+
+::: pf-proof
+
 $n$ odd means $n+1=2m$.
+
 :::
 
-<1>2. Define
+:::
+
+::: {.pf-step #s2}
+
+Define
 $$H(z,t)=e^{\pi i t}z.$$
-::: {.proof}
+
+::: pf-proof
+
 Multiplication by a complex number of modulus $1$ preserves the unit sphere, so $H:S^n\times I\to S^n$ is continuous.
+
 :::
 
-<1>3. Then $H(z,0)=z$ and $H(z,1)=-z$.
-::: {.proof}
+:::
+
+::: pf-step
+
+Then $H(z,0)=z$ and $H(z,1)=-z$.
+
+::: pf-proof
+
 $e^0=1$ and $e^{\pi i}=-1$.
+
 :::
 
-<1>4. Hence the antipodal map on $S^n$ is homotopic to the identity for odd $n$.
-::: {.proof}
-The homotopy is <1>2.
 :::
+
+::: pf-step
+
+Hence the antipodal map on $S^n$ is homotopic to the identity for odd $n$.
+
+::: pf-proof
+
+The homotopy is step [](#s2){.pf-ref}.
+
+:::
+
+:::
+
+:::
+
 :::

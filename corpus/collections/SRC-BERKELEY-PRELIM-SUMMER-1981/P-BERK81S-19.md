@@ -53,9 +53,14 @@ z^{2n}
 \beta^2.
 $$
 
-<1>1. The polynomial $P$ has no zero on the imaginary axis.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+
+The polynomial $P$ has no zero on the imaginary axis.
+
+::: pf-proof
+
 For $y\in\RR$,
 $$
 \begin{aligned}
@@ -80,9 +85,14 @@ $$
 P(0)=\beta^2\neq0.
 $$
 Thus no such zero exists.
+
 :::
 
-<1>2. For all sufficiently large $R$, every zero of $P$ lies in
+:::
+
+::: {.pf-step #s2}
+
+For all sufficiently large $R$, every zero of $P$ lies in
 $$
 \{z:\abs{z}<R\},
 $$
@@ -102,14 +112,20 @@ z=iy,
 R\geq y\geq-R.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The polynomial has finitely many zeros, so choose $R$ larger than the
-modulus of every zero. Step <1>1 shows that no zero lies on the imaginary
+modulus of every zero. Step [](#s1){.pf-ref} shows that no zero lies on the imaginary
 segment. The stated orientation keeps the right half-disk on the left
 while traversing its boundary.
+
 :::
 
-<1>3. Let $N_+$ be the number of zeros of $P$ with positive real part,
+:::
+
+::: {.pf-step #s3}
+
+Let $N_+$ be the number of zeros of $P$ with positive real part,
 counted with multiplicity. For every sufficiently large $R$,
 $$
 2\pi N_+
@@ -119,15 +135,21 @@ $$
 \Delta_{I_R}\arg P.
 $$
 
-::: {.proof}
-For $R$ as in step <1>2, the boundary contains no zero of $P$, and the
+::: pf-proof
+
+For $R$ as in step [](#s2){.pf-ref}, the boundary contains no zero of $P$, and the
 right half-disk contains exactly the zeros with positive real part. The
 argument principle says that the total change of a continuous argument of
 $P$ around this positively oriented boundary equals $2\pi$ times the
 number of enclosed zeros, counted with multiplicity.
+
 :::
 
-<1>4. Along the semicircle,
+:::
+
+::: {.pf-step #s4}
+
+Along the semicircle,
 $$
 \Delta_{\Gamma_R}\arg P
 \longrightarrow
@@ -135,7 +157,8 @@ $$
 $$
 as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 For $z\in\Gamma_R$,
 $$
 P(z)
@@ -170,9 +193,14 @@ $$
 2n\pi.
 $$
 Adding the two argument changes proves the limit.
+
 :::
 
-<1>5. If $n$ is even, then
+:::
+
+::: {.pf-step #s5}
+
+If $n$ is even, then
 $$
 \Delta_{I_R}\arg P
 \longrightarrow
@@ -180,8 +208,9 @@ $$
 $$
 as $R\to\infty$.
 
-::: {.proof}
-When $n$ is even, step <1>1 gives
+::: pf-proof
+
+When $n$ is even, step [](#s1){.pf-ref} gives
 $$
 P(iy)
 =
@@ -210,9 +239,14 @@ $$
 $$
 Hence the arguments at both endpoints of the downward segment
 $y=R$ to $y=-R$ tend to $0$. Their difference therefore tends to $0$.
+
 :::
 
-<1>6. If $n$ is odd, then
+:::
+
+::: {.pf-step #s6}
+
+If $n$ is odd, then
 $$
 \Delta_{I_R}\arg P
 \longrightarrow
@@ -220,7 +254,8 @@ $$
 $$
 as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
+
 When $n$ is odd,
 $$
 P(iy)
@@ -247,17 +282,23 @@ has limiting argument change
 $$
 -\pi-\pi=-2\pi.
 $$
+
 :::
 
-<1>7. If $n$ is even, then
+:::
+
+::: {.pf-step #s7}
+
+If $n$ is even, then
 $$
 \boxed{
 N_+=n.
 }
 $$
 
-::: {.proof}
-By steps <1>3--<1>5,
+::: pf-proof
+
+By steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s5){.pf-ref},
 $$
 2\pi N_+
 =
@@ -273,17 +314,23 @@ $$
 2\pi N_+=2n\pi,
 $$
 so $N_+=n$.
+
 :::
 
-<1>8. If $n$ is odd, then
+:::
+
+::: {.pf-step #s8}
+
+If $n$ is odd, then
 $$
 \boxed{
 N_+=n-1.
 }
 $$
 
-::: {.proof}
-By steps <1>3, <1>4, and <1>6,
+::: pf-proof
+
+By steps [](#s3){.pf-ref}, [](#s4){.pf-ref} and [](#s6){.pf-ref},
 $$
 2\pi N_+
 \longrightarrow
@@ -295,11 +342,17 @@ Again the left-hand side is independent of sufficiently large $R$, so
 $$
 N_+=n-1.
 $$
+
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>7 proves the even case, and step <1>8 proves the odd case.
 :::
+
+::: pf-qed
+
+Step [](#s7){.pf-ref} proves the even case, and step [](#s8){.pf-ref} proves the odd case.
+
+:::
+
+:::
+
 :::

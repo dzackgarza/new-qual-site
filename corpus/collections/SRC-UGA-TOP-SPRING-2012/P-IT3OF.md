@@ -43,8 +43,15 @@ Identify, with proof, both this value of $n$ and the surface that $X_n$ is homeo
 :::
 
 ::: {.solution}
-<1>1. The space \(X_n\) has a CW structure with one cell in each of dimensions \(0,1,2\), where the \(2\)-cell is attached to the \(1\)-skeleton \(S^1\) by a degree-\(n\) map.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The space \(X_n\) has a CW structure with one cell in each of dimensions \(0,1,2\), where the \(2\)-cell is attached to the \(1\)-skeleton \(S^1\) by a degree-\(n\) map.
+
+::: pf-proof
+
 Start with the usual CW structure
 \[
 S^1=e^0\cup e^1.
@@ -57,13 +64,20 @@ whose degree is \(n\). Hence
 \[
 X_n=e^0\cup e^1\cup_{a_n}e^2.
 \]
+
 :::
 
-<1>2. The fundamental group is
+:::
+
+::: pf-step
+
+The fundamental group is
 \[
 \boxed{\pi_1(X_n)\cong\mathbb Z/n\mathbb Z}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The \(1\)-skeleton is \(S^1\), so
 \[
 \pi_1(S^1)\cong\langle a\rangle\cong\mathbb Z.
@@ -77,9 +91,14 @@ Since \(a_n\) has degree \(n\), its class in \(\pi_1(S^1)\) is \(a^n\). Seifert-
 \cong
 \mathbb Z/n\mathbb Z.
 \]
+
 :::
 
-<1>3. The cellular chain complex is
+:::
+
+::: {.pf-step #s3}
+
+The cellular chain complex is
 \[
 0
 \longrightarrow
@@ -90,8 +109,10 @@ Since \(a_n\) has degree \(n\), its class in \(\pi_1(S^1)\) is \(a^n\). Seifert-
 \mathbb Z
 \longrightarrow0.
 \]
-::: {.proof}
-By <1>1, the cellular chain groups are
+
+::: pf-proof
+
+By step [](#s1){.pf-ref}, the cellular chain groups are
 \[
 C_2(X_n)\cong C_1(X_n)\cong C_0(X_n)\cong\mathbb Z.
 \]
@@ -101,9 +122,14 @@ Since
 \deg(a_n)=n,
 \]
 one has \(\partial_2(m)=nm\).
+
 :::
 
-<1>4. The integral homology of \(X_n\) is
+:::
+
+::: {.pf-step #s4}
+
+The integral homology of \(X_n\) is
 \[
 \boxed{
 H_k(X_n;\mathbb Z)
@@ -114,8 +140,10 @@ H_k(X_n;\mathbb Z)
 0,&k\ge2.
 \end{cases}}
 \]
-::: {.proof}
-From <1>3,
+
+::: pf-proof
+
+From step [](#s3){.pf-ref},
 \[
 H_0(X_n)=\mathbb Z/\operatorname{im}\partial_1\cong\mathbb Z,
 \]
@@ -131,22 +159,36 @@ and, because \(n\ne0\), multiplication by \(n\) on \(\mathbb Z\) is injective, s
 H_2(X_n)=\ker\partial_2=0.
 \]
 There are no cells in dimensions above \(2\).
+
 :::
 
-<1>5. The Euler characteristic is
+:::
+
+::: {.pf-step #s5}
+
+The Euler characteristic is
 \[
 \chi(X_n)=1.
 \]
-::: {.proof}
-The CW structure in <1>1 has one \(0\)-cell, one \(1\)-cell, and one \(2\)-cell.
+
+::: pf-proof
+
+The CW structure in step [](#s1){.pf-ref} has one \(0\)-cell, one \(1\)-cell, and one \(2\)-cell.
 Therefore
 \[
 \chi(X_n)=1-1+1=1.
 \]
+
 :::
 
-<1>6. If \(X_n\) is homeomorphic to a surface, then that surface is \(\mathbb{RP}^2\).
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+
+If \(X_n\) is homeomorphic to a surface, then that surface is \(\mathbb{RP}^2\).
+
+::: pf-proof
+
 The space \(X_n\) is a finite connected CW complex, hence compact and connected.
 Thus any surface homeomorphic to it is a compact connected surface.
 
@@ -159,7 +201,7 @@ for an orientable surface of genus \(g\) with \(b\) boundary components, and
 \chi(M)=2-k-b
 \]
 for a nonorientable surface of genus \(k\ge1\) with \(b\) boundary components.
-By <1>5, \(\chi(M)=1\). In the orientable case this forces
+By step [](#s5){.pf-ref}, \(\chi(M)=1\). In the orientable case this forces
 \[
 2g+b=1,
 \]
@@ -169,35 +211,49 @@ k+b=1,
 \]
 so \(M\cong\mathbb{RP}^2\).
 
-But <1>4 gives
+But step [](#s4){.pf-ref} gives
 \[
 H_1(X_n;\mathbb Z)\cong\mathbb Z/n\mathbb Z\ne0,
 \]
 whereas \(H_1(D^2;\mathbb Z)=0\). Hence the disk is impossible, and the only possible surface is \(\mathbb{RP}^2\).
+
 :::
 
-<1>7. Consequently, if \(X_n\) is a surface, then
+:::
+
+::: {.pf-step #s7}
+
+Consequently, if \(X_n\) is a surface, then
 \[
 n=2.
 \]
-::: {.proof}
-By <1>6, such an \(X_n\) must be homeomorphic to \(\mathbb{RP}^2\). Homology is a homeomorphism invariant, and
+
+::: pf-proof
+
+By step [](#s6){.pf-ref}, such an \(X_n\) must be homeomorphic to \(\mathbb{RP}^2\). Homology is a homeomorphism invariant, and
 \[
 H_1(\mathbb{RP}^2;\mathbb Z)
 \cong
 \mathbb Z/2\mathbb Z.
 \]
-Comparing with <1>4,
+Comparing with step [](#s4){.pf-ref},
 \[
 \mathbb Z/n\mathbb Z
 \cong
 \mathbb Z/2\mathbb Z,
 \]
 which for \(n\ge2\) forces \(n=2\).
+
 :::
 
-<1>8. The space \(X_2\) is homeomorphic to \(\mathbb{RP}^2\).
-::: {.proof}
+:::
+
+::: {.pf-step #s8}
+
+The space \(X_2\) is homeomorphic to \(\mathbb{RP}^2\).
+
+::: pf-proof
+
 Use the standard disk model
 \[
 \mathbb{RP}^2
@@ -249,13 +305,26 @@ Composing with the standard disk-model homeomorphism gives
 \[
 \boxed{X_2\cong\mathbb{RP}^2}.
 \]
+
 :::
 
-<1>9. Therefore exactly one \(X_n\) is a surface:
+:::
+
+::: pf-step
+
+Therefore exactly one \(X_n\) is a surface:
 \[
 \boxed{n=2,\qquad X_2\cong\mathbb{RP}^2}.
 \]
-::: {.proof}
-Necessity is <1>7 and existence, with an explicit homeomorphism, is <1>8.
+
+::: pf-proof
+
+Necessity is step [](#s7){.pf-ref} and existence, with an explicit homeomorphism, is step [](#s8){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

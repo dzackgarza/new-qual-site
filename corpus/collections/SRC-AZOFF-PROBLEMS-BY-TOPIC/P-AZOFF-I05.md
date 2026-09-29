@@ -42,10 +42,15 @@ $$
 \Phi(w)=\frac{w-2}{w+2}.
 $$
 
-<1>1. The map $\Phi$ sends the right half-plane $H$ into the open unit
+::: pf
+
+::: {.pf-step #s1}
+
+The map $\Phi$ sends the right half-plane $H$ into the open unit
 disk.
 
-::: {.proof}
+::: pf-proof
+
 If $w\in H$, then $\operatorname{Re}w>0$. Hence
 $$
 \begin{aligned}
@@ -63,17 +68,23 @@ $$
 \abs{w-2}<\abs{w+2},
 $$
 so $\abs{\Phi(w)}<1$.
+
 :::
 
-<1>2. The function
+:::
+
+::: {.pf-step #s2}
+
+The function
 $$
 g=\Phi\circ f
 $$
 is an analytic self-map of the unit disk satisfying $g(0)=0$.
 
-::: {.proof}
+::: pf-proof
+
 The denominator $w+2$ does not vanish on $H$, so $\Phi$ is analytic there.
-Since $f$ is analytic and maps the unit disk into $H$, step <1>1 shows that
+Since $f$ is analytic and maps the unit disk into $H$, step [](#s1){.pf-ref} shows that
 $g$ is an analytic self-map of the unit disk. Moreover,
 $$
 g(0)
@@ -82,23 +93,35 @@ g(0)
 =
 0.
 $$
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 $$
 \abs{g'(0)}\leq1.
 $$
 
-::: {.proof}
-This is Schwarz's lemma applied to the function in step <1>2.
+::: pf-proof
+
+This is Schwarz's lemma applied to the function in step [](#s2){.pf-ref}.
+
 :::
 
-<1>4. The derivatives satisfy
+:::
+
+::: {.pf-step #s4}
+
+The derivatives satisfy
 $$
 g'(0)=\frac{f'(0)}4.
 $$
 
-::: {.proof}
+::: pf-proof
+
 Differentiating
 $$
 \Phi(w)=\frac{w-2}{w+2}
@@ -117,31 +140,43 @@ g'(0)
 =
 \frac{f'(0)}4.
 $$
+
 :::
 
-<1>5. The sharp upper bound is
+:::
+
+::: {.pf-step #s5}
+
+The sharp upper bound is
 $$
 \boxed{
 \abs{f'(0)}\leq4.
 }
 $$
 
-::: {.proof}
-Combining steps <1>3 and <1>4 gives
+::: pf-proof
+
+Combining steps [](#s3){.pf-ref} and [](#s4){.pf-ref} gives
 $$
 \frac{\abs{f'(0)}}4
 =
 \abs{g'(0)}
 \leq1.
 $$
+
 :::
 
-<1>6. The bound in step <1>5 is attained by
+:::
+
+::: {.pf-step #s6}
+
+The bound in step [](#s5){.pf-ref} is attained by
 $$
 f_0(z)=2\frac{1+z}{1-z}.
 $$
 
-::: {.proof}
+::: pf-proof
+
 The Cayley transform
 $$
 \frac{1+z}{1-z}
@@ -159,12 +194,18 @@ and hence
 $$
 \abs{f_0'(0)}=4.
 $$
-Thus equality occurs in step <1>5.
+Thus equality occurs in step [](#s5){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>5 proves the upper bound, and step <1>6 proves its sharpness.
 :::
+
+::: pf-qed
+
+Step [](#s5){.pf-ref} proves the upper bound, and step [](#s6){.pf-ref} proves its sharpness.
+
+:::
+
+:::
+
 :::

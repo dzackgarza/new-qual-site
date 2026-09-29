@@ -50,9 +50,14 @@ $$
 \DD=\{z\in\CC:\abs{z}<1\}.
 $$
 
-<1>1. The function $f$ has only finitely many zeros in $\DD$.
+::: pf
 
-::: {.proof}
+::: pf-step
+
+The function $f$ has only finitely many zeros in $\DD$.
+
+::: pf-proof
+
 The continuous extension $\widetilde f$ satisfies
 $$
 \abs{\widetilde f(\zeta)}=1
@@ -76,9 +81,14 @@ $$
 Since $f$ is not identically zero, its zeros are isolated. An infinite set
 of zeros in this compact disk would have an accumulation point in $\DD$,
 contradicting the identity theorem. Hence the zero set is finite.
+
 :::
 
-<1>2. List the zeros of $f$, with multiplicity, as
+:::
+
+::: {.pf-step #s2}
+
+List the zeros of $f$, with multiplicity, as
 $$
 a_1,\ldots,a_n
 $$
@@ -94,7 +104,8 @@ $$
 $$
 for every $\abs{\zeta}=1$.
 
-::: {.proof}
+::: pf-proof
+
 For each $j$, one has $\abs{a_j}<1$, so the denominator
 $$
 1-\overline{a_j}z
@@ -116,9 +127,14 @@ $$
 \abs{1-\overline{a_j}\zeta}.
 $$
 Thus every factor has modulus one on the unit circle, and so does $B$.
+
 :::
 
-<1>3. The quotient
+:::
+
+::: {.pf-step #s3}
+
+The quotient
 $$
 h(z)=\frac{f(z)}{B(z)}
 $$
@@ -133,14 +149,15 @@ h\equiv\lambda
 $$
 for some $\lambda\in\CC$ with $\abs{\lambda}=1$.
 
-::: {.proof}
-By step <1>2, $f$ and $B$ have the same zeros with the same multiplicities,
+::: pf-proof
+
+By step [](#s2){.pf-ref}, $f$ and $B$ have the same zeros with the same multiplicities,
 so every apparent singularity of $f/B$ at an $a_j$ is removable. After
 removing them, $h$ is analytic and zero-free on $\DD$. It is continuous on
 $\overline\DD$ because both $f$ and $B$ are continuous there and $B$ is
 nonzero on the unit circle.
 
-For $\abs{\zeta}=1$, the boundary hypotheses on $f$ and step <1>2 give
+For $\abs{\zeta}=1$, the boundary hypotheses on $f$ and step [](#s2){.pf-ref} give
 $$
 \abs{h(\zeta)}
 =
@@ -161,12 +178,18 @@ $$
 Therefore $\abs{h(z)}=1$ throughout $\DD$. By the open mapping theorem,
 $h$ is constant. Write $h\equiv\lambda$; its boundary modulus gives
 $\abs{\lambda}=1$.
+
 :::
 
-<1>4. Part (a): $f$ is a rational function.
+:::
 
-::: {.proof}
-By step <1>3,
+::: {.pf-step #s4}
+
+Part (a): $f$ is a rational function.
+
+::: pf-proof
+
+By step [](#s3){.pf-ref},
 $$
 f(z)
 =
@@ -177,9 +200,14 @@ f(z)
 \frac{z-a_j}{1-\overline{a_j}z}.
 $$
 The right-hand side is rational.
+
 :::
 
-<1>5. Part (b): if $0$ is the unique zero of $f$, then
+:::
+
+::: {.pf-step #s5}
+
+Part (b): if $0$ is the unique zero of $f$, then
 $$
 \boxed{
 f(z)=\lambda z^n
@@ -188,9 +216,10 @@ $$
 for some $n\in\NN$ and some $\lambda\in\CC$ with
 $\abs{\lambda}=1$.
 
-::: {.proof}
+::: pf-proof
+
 Let $n$ be the multiplicity of the zero at $0$. Then the zero list in step
-<1>2 is
+[](#s2){.pf-ref} is
 $$
 a_1=\cdots=a_n=0.
 $$
@@ -202,15 +231,20 @@ B(z)
 =
 z^n.
 $$
-Step <1>3 therefore gives
+Step [](#s3){.pf-ref} therefore gives
 $$
 f(z)=\lambda z^n,
 \qquad
 \abs{\lambda}=1.
 $$
+
 :::
 
-<1>6. Part (c): in general,
+:::
+
+::: {.pf-step #s6}
+
+Part (c): in general,
 $$
 \boxed{
 f(z)=\lambda
@@ -221,14 +255,21 @@ f(z)=\lambda
 }
 $$
 
-::: {.proof}
-This is exactly the identity $f=\lambda B$ established in step <1>3,
-with $B$ defined in step <1>2.
+::: pf-proof
+
+This is exactly the identity $f=\lambda B$ established in step [](#s3){.pf-ref},
+with $B$ defined in step [](#s2){.pf-ref}.
+
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Steps <1>4--<1>6 prove parts (a)--(c), respectively.
 :::
+
+::: pf-qed
+
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref} prove parts (a)--(c), respectively.
+
+:::
+
+:::
+
 :::

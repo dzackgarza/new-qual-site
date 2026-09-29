@@ -37,17 +37,30 @@ Justify each answer.
 ::: {.solution}
 The answers are: order $2$, yes; order $5$, yes; order $4$, no.
 
-<1>1. Every group of order $20$ has elements of orders $2$ and $5$.
-::: {.proof}
+::: pf
+
+::: pf-step
+
+Every group of order $20$ has elements of orders $2$ and $5$.
+
+::: pf-proof
+
 Since
 $$
 |G|=20=2^2\cdot5,
 $$
 both primes $2$ and $5$ divide $|G|$. Cauchy's theorem for finite groups therefore gives an element of order $2$ and an element of order $5$.
+
 :::
 
-<1>2. An element of order $4$ need not exist.
-::: {.proof}
+:::
+
+::: pf-step
+
+An element of order $4$ need not exist.
+
+::: pf-proof
+
 Consider
 $$
 G=C_2\times C_2\times C_5.
@@ -57,5 +70,11 @@ $$
 \operatorname{lcm}(2,2,5)=10.
 $$
 More explicitly, the only possible element orders are $1,2,5,$ and $10$. Hence this group has no element of order $4$, providing the required counterexample.
+
 :::
+
+:::
+
+:::
+
 :::

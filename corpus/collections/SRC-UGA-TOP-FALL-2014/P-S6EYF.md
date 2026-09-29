@@ -37,8 +37,15 @@ $$
 :::
 
 ::: {.solution}
-<1>1. The two surfaces are both homeomorphic to $S^2$, and their intersection is the common equatorial circle.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+
+The two surfaces are both homeomorphic to $S^2$, and their intersection is the common equatorial circle.
+
+::: pf-proof
+
 The unit sphere
 \[
 Y=\{x^2+y^2+z^2=1\}
@@ -73,14 +80,21 @@ A:=Y\cap Z
 \{(x,y,0):x^2+y^2=1\}
 \cong S^1.
 \]
+
 :::
 
-<1>2. Mayer--Vietoris applies to the decomposition
+:::
+
+::: {.pf-step #s2}
+
+Mayer--Vietoris applies to the decomposition
 \[
 X=Y\cup Z
 \]
 with intersection $A\cong S^1$.
-::: {.proof}
+
+::: pf-proof
+
 Give the common equator $A$ its standard CW structure with one $0$-cell and one $1$-cell.
 Each of the upper and lower hemispheres of $Y$ is then a $2$-cell attached along $A$, and the same is true for the upper and lower halves of $Z$.
 Thus $X$ is a CW complex for which $Y$, $Z$, and $A=Y\cap Z$ are subcomplexes.
@@ -97,7 +111,7 @@ The Mayer--Vietoris sequence for a union of CW subcomplexes therefore gives
 \widetilde H_{k-1}(A)
 \longrightarrow\cdots.
 \]
-By <1>1,
+By step [](#s1){.pf-ref},
 \[
 \widetilde H_k(A)
 \cong
@@ -115,15 +129,22 @@ and
 0,&k\ne2.
 \end{cases}
 \]
+
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+
+One has
 \[
 H_k(X;\mathbb Z)=0
 \qquad(k\ge3).
 \]
-::: {.proof}
-For $k\ge3$, the relevant Mayer--Vietoris terms from <1>2 are
+
+::: pf-proof
+
+For $k\ge3$, the relevant Mayer--Vietoris terms from step [](#s2){.pf-ref} are
 \[
 0
 \longrightarrow
@@ -136,13 +157,20 @@ Hence
 \widetilde H_k(X)=0
 \]
 for every $k\ge3$.
+
 :::
 
-<1>4. The second homology group is
+:::
+
+::: {.pf-step #s4}
+
+The second homology group is
 \[
 H_2(X;\mathbb Z)\cong\mathbb Z^3.
 \]
-::: {.proof}
+
+::: pf-proof
+
 The relevant part of the reduced Mayer--Vietoris sequence is
 \[
 0
@@ -177,14 +205,21 @@ Therefore
 \mathbb Z^3.
 \]
 Since degree $2$ is positive, reduced and unreduced homology agree there.
+
 :::
 
-<1>5. The first homology group is
+:::
+
+::: {.pf-step #s5}
+
+The first homology group is
 \[
 H_1(X;\mathbb Z)=0.
 \]
-::: {.proof}
-Continuing the same exact sequence from <1>4 gives
+
+::: pf-proof
+
+Continuing the same exact sequence from step [](#s4){.pf-ref} gives
 \[
 \mathbb Z
 \longrightarrow
@@ -205,21 +240,33 @@ Hence
 \[
 \widetilde H_1(X)=0.
 \]
+
 :::
 
-<1>6. Finally,
+:::
+
+::: {.pf-step #s6}
+
+Finally,
 \[
 H_0(X;\mathbb Z)\cong\mathbb Z.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Both $Y$ and $Z$ are path connected, and their intersection $A\cong S^1$ is nonempty.
 Therefore their union $X$ is path connected, so
 \[
 H_0(X;\mathbb Z)\cong\mathbb Z.
 \]
+
 :::
 
-<1>7. Thus the integral homology groups are
+:::
+
+::: pf-step
+
+Thus the integral homology groups are
 \[
 \boxed{
 H_k(X;\mathbb Z)
@@ -231,7 +278,15 @@ H_k(X;\mathbb Z)
 0,&k\ge3.
 \end{cases}}
 \]
-::: {.proof}
-Combine <1>3--<1>6.
+
+::: pf-proof
+
+Combine steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref} and [](#s6){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::

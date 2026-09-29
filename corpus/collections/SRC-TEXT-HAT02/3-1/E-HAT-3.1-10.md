@@ -60,7 +60,11 @@ Hence with coefficients in an abelian group $G$, the cellular cochain complex ha
 \end{cases}
 \]
 
-<1>1. For arbitrary $G$,
+::: pf
+
+::: {.pf-step #s1}
+
+For arbitrary $G$,
 \[
 H^k(L;G)\cong
 \begin{cases}
@@ -71,11 +75,18 @@ G[m],&0<k<2n-1\text{ and }k\text{ odd},\\
 \end{cases}
 \]
 where $G[m]=\ker(m:G\to G)$.
-::: {.proof}
+
+::: pf-proof
+
 This is immediate from the displayed alternating cochain differential.
+
 :::
 
-<1>2. With $G=\mathbb Z$,
+:::
+
+::: pf-step
+
+With $G=\mathbb Z$,
 \[
 H^k(L;\mathbb Z)\cong
 \begin{cases}
@@ -84,11 +95,18 @@ H^k(L;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Multiplication by $m$ on $\mathbb Z$ has zero kernel and cokernel $\mathbb Z_m$.
+
 :::
 
-<1>3. With $G=\mathbb Q$,
+:::
+
+::: pf-step
+
+With $G=\mathbb Q$,
 \[
 H^k(L;\mathbb Q)\cong
 \begin{cases}
@@ -96,19 +114,33 @@ H^k(L;\mathbb Q)\cong
 0,&\text{otherwise}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Multiplication by nonzero $m$ is an isomorphism of $\mathbb Q$.
+
 :::
 
-<1>4. With $G=\mathbb Z_m$,
+:::
+
+::: pf-step
+
+With $G=\mathbb Z_m$,
 \[
 \boxed{H^k(L;\mathbb Z_m)\cong\mathbb Z_m\quad(0\le k\le2n-1).}
 \]
-::: {.proof}
+
+::: pf-proof
+
 Multiplication by $m$ is zero on $\mathbb Z_m$, so every cellular coboundary vanishes.
+
 :::
 
-<1>5. For a prime $p$,
+:::
+
+::: pf-step
+
+For a prime $p$,
 \[
 H^k(L;\mathbb Z_p)\cong
 \begin{cases}
@@ -117,12 +149,21 @@ H^k(L;\mathbb Z_p)\cong
 0,&0<k<2n-1,&p\nmid m.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
+
 If $p\mid m$, multiplication by $m$ is zero on $\mathbb Z_p$. If $p\nmid m$, it is an automorphism.
+
 :::
 
-<1>6. These answers agree with the universal coefficient theorem.
-::: {.proof}
+:::
+
+::: pf-step
+
+These answers agree with the universal coefficient theorem.
+
+::: pf-proof
+
 The integral homology of the lens space is
 \[
 H_k(L;\mathbb Z)\cong
@@ -144,6 +185,12 @@ has
 \qquad
 \operatorname{Ext}(\mathbb Z_m,G)=G/mG,
 \]
-which reproduces exactly the formula in <1>1.
+which reproduces exactly the formula in step [](#s1){.pf-ref}.
+
 :::
+
+:::
+
+:::
+
 :::
