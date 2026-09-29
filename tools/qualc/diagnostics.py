@@ -26,6 +26,7 @@ class DiagnosticCode(Enum):
     UNMAPPED_DIV_CLASS = "unmapped-div-class"
     RAW_TEX_DROPPED = "raw-tex-dropped"
     UNDEFINED_MACRO = "undefined-macro"
+    LAMPORT_PROOF_INVALID = "lamport-proof-invalid"
     # pages
     PAGE_REFERENCE_MISSING = "page-reference-missing"
     PUBLICATION_REFERENCE_MISSING = "publication-reference-missing"

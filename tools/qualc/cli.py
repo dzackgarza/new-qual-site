@@ -12,6 +12,7 @@ import panflute as pf
 
 from . import emit, index
 from .diagnostics import Diagnostic, DiagnosticCode
+from .lamport import LamportError, apply_lamport
 from .model import ParsedCard, discover, parse_cards_with, to_json
 from .pandoc_batch import PandocServer
 from .publication import ReferenceItem, load_publications
@@ -50,6 +51,9 @@ def load(
     documents = [(item.source_path, item.ast) for item in parsed]
     documents.extend((str(page.source_path), to_json(pf.Doc(*page.blocks))) for page in wiki_pages)
     errors.extend(unrenderable_tex(pandoc, documents, preamble))
+    for (where, _), result in zip(documents, apply_lamport([ast for _, ast in documents], "html"), strict=True):
+        if isinstance(result, LamportError):
+            errors.append(Diagnostic(DiagnosticCode.LAMPORT_PROOF_INVALID, where, result.message))
     return parsed, wiki_pages, errors
 
 

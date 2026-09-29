@@ -31,6 +31,7 @@ import panflute as pf
 import yaml
 
 from .index import load_areas
+from .lamport import LamportError, apply_lamport
 from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json
 from .pandoc_batch import (
     PARALLEL_WORKERS,
@@ -1600,11 +1601,24 @@ def _page_ast(page: Page) -> str:
     return to_json(pf.Doc(*blocks))
 
 
+def _lamport_proofs(documents: list[str]) -> list[str]:
+    """Number and render structured proofs; `qualc check` has already rejected invalid ones."""
+    rendered: list[str] = []
+    for result in apply_lamport(documents, "html"):
+        match result:
+            case LamportError(message=message):
+                raise ValueError(f"structured proof rejected after check passed: {message}")
+            case str():
+                rendered.append(result)
+    return rendered
+
+
 def _html_ast(ast: str) -> str:
     return to_json(from_ast(ast).walk(_prepare_html))
 
 
 def _html_asts(documents: list[str]) -> list[str]:
+    documents = _lamport_proofs(documents)
     if len(documents) < 1_000:
         return [_html_ast(document) for document in documents]
     with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:

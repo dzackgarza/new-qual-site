@@ -30,6 +30,7 @@ from pydantic import (
 )
 
 from .diagnostics import Diagnostic, DiagnosticCode
+from .lamport import LAMPORT_CLASSES
 from .pandoc_batch import PARALLEL_WORKERS, PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
 from .tex import mark_definienda
 
@@ -497,7 +498,8 @@ NON_SEMANTIC_CLASSES = {"foldopen"}
 # The two sets above are total over the authored corpus: every class measured in
 # the prose repos is in one of them. Anything else is a typo or an environment
 # nobody has classified, and both must stop the build rather than become prose.
-KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES
+# Structured-proof classes belong to the Lamport filter's grammar (lamport.py).
+KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES | LAMPORT_CLASSES
 
 
 # A large mechanical proof-label conversion in the corpus inserted fenced-div

@@ -1124,6 +1124,22 @@ details.reveal[open] > summary {
 .pf-step > .pf-group > .pf-step {
   margin-left: 0;
 }
+/* Proofs written in the Lamport filter's syntax (`.pf` root, `.pf-step` and
+   `.pf-qed` steps, `.pf-proof` bodies). The filter prints the numbers; each
+   proof body sits one indentation stop inside the step it proves. */
+.pf {
+  margin: 0.4rem 0;
+}
+.pf-qed {
+  margin: 0.35rem 0;
+  padding-left: 1.4rem;
+  text-indent: -1.4rem;
+}
+.pf-proof {
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
+}
 .pf-number {
   font-variant-numeric: tabular-nums;
   color: var(--muted);
