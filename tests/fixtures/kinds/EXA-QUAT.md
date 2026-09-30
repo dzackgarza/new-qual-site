@@ -13,6 +13,6 @@ review: draft
 ---
 
 ::: example
-The quaternion group $Q_8$: its proper nontrivial subgroups are $\gens{-1}$ and
+The quaternion group $Q_8$: its proper nontrivial subgroups are $\generators{-1}$ and
 the three cyclic subgroups of order $4$, each of index $2$.
 :::
