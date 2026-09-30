@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I\da \int_\RR {1\over x^2 + 3x+ 2 }\dx
+I\definedas \int_\RR {1\over x^2 + 3x+ 2 }\dx
 .\]
 
  
@@ -40,7 +40,7 @@ So introduce a log with a branch cut along $\theta = 0$, and consider
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-24_04-03-05.png)
 
-Let $\gamma_+ = \ts{t + i\eps \st t\geq 0}$ (right-to left) and $\gamma_0 = \ts{t-i\eps \st t\geq 0}$ (left-to-right).
+Let $\gamma_+ = \theset{t + i\eps \st t\geq 0}$ (right-to left) and $\gamma_0 = \theset{t-i\eps \st t\geq 0}$ (left-to-right).
 Now use the general fact
 \[
 \int_{\gamma_+}f(z)\log(z) \dz &= \int_\eps^R f(t+i\eps)\log(t+i\eps) \dt \too \int_\RR f(t)\log(t)\dt \\
@@ -89,6 +89,6 @@ I
 &= - (\ln(1) + i\pi) + (\ln(2) + i\pi) \\
 &= \ln(2)
 ,\]
-noting that we've chosen a branch of $\log(z) \da \ln\qty{\abs{z}} + i\Arg(z)$ where $\Arg(z) \in (0, 2\pi)$.
+noting that we've chosen a branch of $\log(z) \definedas \ln\qty{\abs{z}} + i\Arg(z)$ where $\Arg(z) \in (0, 2\pi)$.
 :::
 

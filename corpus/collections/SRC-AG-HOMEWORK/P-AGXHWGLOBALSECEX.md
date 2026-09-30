@@ -55,7 +55,7 @@ which is exact at $\mcf_1(X)$ and at $\mcf_2(X)$.
 
 - Since
 \[
-(\ker f)(U) &\da \ker f_U \da \ker( \mcf_1(U) \xrightarrow{f_U} \mcf_2(U)) \\
+(\ker f)(U) &\definedas \ker f_U \definedas \ker( \mcf_1(U) \xrightarrow{f_U} \mcf_2(U)) \\
 \implies \ker f_X &= (\ker f)(X) = (\mathbf 0)(X) = 0
 .\]
 
@@ -105,9 +105,9 @@ which holds for all $p$.
   > \mcf_1 \mid^{U_1}_W (s_1) = t = \mcf_1\mid^{U_2}_W (s_2)
   > .\]
 
-  - Then $s_p \da \mcf_1 \mid^X_p(s) = 0 \sim (W, 0) \in (\mcf_1)_p$ means there is some $W_p$ and a lift $\tilde s(p) = 0 \in \mcf_1(W_p)$ with $\mcf_1\mid^{W_p}_p(\tilde s(p)) = s_p$.
+  - Then $s_p \definedas \mcf_1 \mid^X_p(s) = 0 \sim (W, 0) \in (\mcf_1)_p$ means there is some $W_p$ and a lift $\tilde s(p) = 0 \in \mcf_1(W_p)$ with $\mcf_1\mid^{W_p}_p(\tilde s(p)) = s_p$.
 
-  - This holds for all $p$, and $\ts{W_p}_{p\in X} \covers X$, so by the gluing axiom for $\mcf_1$ the sections $\ts{ \tilde s(p) \in \mcf_1(W_p) \st p\in X}$ glue to a unique $\tilde s\in \mcf_1(X)$; by uniqueness $\tilde s = s = 0 \in \mcf_1(X)$.
+  - This holds for all $p$, and $\theset{W_p}_{p\in X} \covers X$, so by the gluing axiom for $\mcf_1$ the sections $\theset{ \tilde s(p) \in \mcf_1(W_p) \st p\in X}$ glue to a unique $\tilde s\in \mcf_1(X)$; by uniqueness $\tilde s = s = 0 \in \mcf_1(X)$.
 
 **Exactness at $\mcf_2(X)$.**
 
@@ -115,10 +115,10 @@ which holds for all $p$.
   Let $s \in \im f_X \subseteq \mcf_2(X)$; restriction to the stalk at $p$ gives the diagram
 
 \begin{tikzcd}
-	& {\color{rgb,255:red,92;green,92;blue,214}\inverseof{f_X}(s)} & {\color{rgb,255:red,92;green,92;blue,214}s} & {\ell \da g_X(s)} \\
+	& {\color{rgb,255:red,92;green,92;blue,214}\inverseof{f_X}(s)} & {\color{rgb,255:red,92;green,92;blue,214}s} & {\ell \definedas g_X(s)} \\
 	0 & {\mcf_1(X)} & {\mcf_2(X)} & {\mcf_3(X)} & {?} \\
 	0 & {(\mcf_1)_p} & {(\mcf_2)_p} & {(\mcf_3)_p} \\
-	& {\color{rgb,255:red,92;green,92;blue,214}\mcf_1\mid^U_p(\inverseof{f_X}(s))} & {\color{rgb,255:red,92;green,92;blue,214}t \da \mcf_2\mid^U_p(s)} & 0
+	& {\color{rgb,255:red,92;green,92;blue,214}\mcf_1\mid^U_p(\inverseof{f_X}(s))} & {\color{rgb,255:red,92;green,92;blue,214}t \definedas \mcf_2\mid^U_p(s)} & 0
 	\arrow[from=2-1, to=2-2]
 	\arrow["{f_X}", from=2-2, to=2-3]
 	\arrow["{g_X}", from=2-3, to=2-4]
@@ -139,7 +139,7 @@ which holds for all $p$.
 \mcf_2\mid^X_p(s) \in \im f_p = \ker g_p
 .\]
 
-- Put $\ell\da g_X(s)$.
+- Put $\ell\definedas g_X(s)$.
   By commutativity, $\mcf_3 \mid^X_p(\ell) = g_p(\mcf_2\mid^X_p(s)) = 0$.
   Since this is true at all stalks, $\ell = 0\in \mcf_3(X)$, so $s \in \ker g_X$.
 
@@ -157,7 +157,7 @@ The exponential $z\mapsto e^{2\pi i z}$ gives the exact sequence of groups
 \[
 0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\unitsof{\CC}) \to 0 \in \Grp
 ,\]
-and, on $X\da \unitsof{\CC}$, the exact sequence of sheaves
+and, on $X\definedas \unitsof{\CC}$, the exact sequence of sheaves
 \[
 0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \unitsof{\Hol_X({-})} \to 0 \in \Sh(X, \Grp)
 .\]

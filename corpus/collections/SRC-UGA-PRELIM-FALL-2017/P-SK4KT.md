@@ -41,7 +41,7 @@ For a positive integer $n$, let $I_n$ denote the $n\times n$ identity matrix.
      0 & 1 & 0 \\
      0 & 0 & 1
      \end{array}\right), \quad
-   \spec(A) = [-1, 1, 1]
+   \Spec(A) = [-1, 1, 1]
    $$
 
 1. Every symmetric matrix with $A$ real spectrum admits a real eigendecomposition $\Lambda D \Lambda^T$, where $D$ is diagonal with entries the eigenvalues of $A$ and $\Lambda$ are orthogonal (which are also invertible).

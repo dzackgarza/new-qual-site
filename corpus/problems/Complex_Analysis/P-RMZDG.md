@@ -85,7 +85,7 @@ The ring of holomorphic functions on the connected disk is an integral domain, s
 ::: {.solution title="Part 3"}
 Consider
 \[
-f(z) \da \prod_{1\leq k \leq n} (w_k - z)
+f(z) \definedas \prod_{1\leq k \leq n} (w_k - z)
 .\]
 Then $f$ is holomorphic and nonconstant on $\DD$, so attains a maximum $M$ on $S^1$.
 Moreover, $\abs{f(z)} = \prod \abs{w_k-z}$ is exactly the product of distances from $z$ to the $w_k$.

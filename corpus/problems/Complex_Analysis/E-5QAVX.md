@@ -22,7 +22,7 @@ Show that $\abs{f''(0)} \leq 2$ and describe all $f$ for which this is an equali
 
 ::: {.solution}
 By Schwarz, $\abs{f(z)}\leq \abs z$.
-Write $g(z) \da f(z)/z$, which is holomorphic on $\DD$ since $f$ has a zero of order at least one at $0$, and $\abs{g(z)}\leq 1$.
+Write $g(z) \definedas f(z)/z$, which is holomorphic on $\DD$ since $f$ has a zero of order at least one at $0$, and $\abs{g(z)}\leq 1$.
 Write $f(z) = \sum_k c_kz^k$; then $c_0 = 0$ since $f(0) = 0$ and $c_1 = 0$ since $f'(0) = 0$, so $f(z)=c_2z^2 + \bigo(z^3)$.
 Thus $g(z) = c_2z + \bigo(z^2)$ and $g(0) = 0$. By the maximum modulus principle, the nonconstant function $g$ with $\abs g\le1$ satisfies $\abs g<1$ on $\DD$ (and $g\equiv0$ if $g$ is constant), so $g:\DD\to\DD$ and Schwarz applies:
 

@@ -38,7 +38,7 @@ Dually, $0 \to \OO_X \to \OO_X(1)\sumpower{n+1} \to T_X \to 0$, and the $\OO_X$ 
 Its determinant computes the canonical bundle.
 Taking top exterior powers in a short exact sequence multiplies them, so
 \[
-\omega_{\PP^n} = \Extpower^n \Omega = \Extpower^{n+1}\qty{\OO(-1)\sumpower{n+1}} \tensor \dualof{\OO} = \OO(-n-1) ,
+\omega_{\PP^n} = \Wedgepower^n \Omega = \Wedgepower^{n+1}\qty{\OO(-1)\sumpower{n+1}} \tensor \dualof{\OO} = \OO(-n-1) ,
 \]
 which is the one computation that the genus formulas, the Fano property of $\PP^n$, and every application of adjunction in projective space come out of.
 

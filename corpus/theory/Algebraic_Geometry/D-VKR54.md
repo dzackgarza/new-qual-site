@@ -28,7 +28,7 @@ prompts:
 ---
 
 ::: {.definition title="The spectrum"}
-$\Spec A$ is the set of prime ideals of $A$, with closed sets $V(J) = \ts{\mfp \st \mfp \supseteq J}$.
+$\Spec A$ is the set of prime ideals of $A$, with closed sets $V(J) = \theset{\mfp \st \mfp \supseteq J}$.
 Its structure sheaf sends $U$ to the functions
 $$
 \varphi : U \to \coprod_{\mfp \in U} A_\mfp

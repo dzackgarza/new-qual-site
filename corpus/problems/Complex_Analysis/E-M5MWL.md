@@ -40,7 +40,7 @@ using that $f(z) = {1\over z-1}$ is already an expansion of $f$ about $z=1$ sinc
 For the second integral:
 attempt to define a primitive
 \[
-F(z) \da {1\over 2}\log\qty{z-1\over z+1} \implies F'(z) = {1\over z^2-1}
+F(z) \definedas {1\over 2}\log\qty{z-1\over z+1} \implies F'(z) = {1\over z^2-1}
 .\]
 If this primitive is well-defined on $\gamma$, the integral will vanish because this is a closed curve.
 Choose the branch cut $\CC\sm(-\infty, 0]$ and define $g(z) = {z-1\over z+1}$, so that $F(z) = {1\over 2}\log(g(z))$.

@@ -21,22 +21,22 @@ Show that there exists $\delta >0$ and $\eps > 0$ such that for each $w$ such th
 :::
 
 ::: {.solution}
-Write $g(z) \da f(z) - w_0$, then $g$ is holomorphic on $D$ and thus $w_0$ is an isolated zero.
+Write $g(z) \definedas f(z) - w_0$, then $g$ is holomorphic on $D$ and thus $w_0$ is an isolated zero.
 Choose $\delta$ small enough so that $g$ is nonvanishing on $\DD_\delta(z_0)\smts{z_0}$.
 Let 
 \[
-\gamma \da \ts{\abs{\xi - z_0} = \delta }= \bd\DD_{\delta}(z_0)
+\gamma \definedas \theset{\abs{\xi - z_0} = \delta }= \bd\DD_{\delta}(z_0)
 .\]
-Choose $\eps < \inf\ts{w\in f(\delta)}$ so that $\abs{f(z) - w_0} > \eps$ in $\DD_\eps(w_0)\smts{w_0}$ for every $z\in \gamma$.
+Choose $\eps < \inf\theset{w\in f(\delta)}$ so that $\abs{f(z) - w_0} > \eps$ in $\DD_\eps(w_0)\smts{w_0}$ for every $z\in \gamma$.
 Let 
 \[
-\gamma' \da \bd \DD_{\eps}(w_0) = \ts{\abs{z-w_0} = \eps}
+\gamma' \definedas \bd \DD_{\eps}(w_0) = \theset{\abs{z-w_0} = \eps}
 ,\]
 and
 define the solution counting function:
 \[
 F(w) 
-\da {1\over 2\pi i} \oint_{\gamma'} \logd(g(z)) \dz 
+\definedas {1\over 2\pi i} \oint_{\gamma'} \logd(g(z)) \dz 
 = {1\over 2\pi i } \oint_{\gamma'} {g'(z)\over g(z) }\dz
 = {1\over 2\pi i} \oint_{\gamma'} {f'(z)\over f(z) - w} \dz
 ,\]

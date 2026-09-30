@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $Y, Z \subseteq \AA^2$ be two distinct curves, given by equations $f = 0$ and $g = 0$.
-For $P \in Y \intersect Z$, define the *intersection multiplicity* $(Y \cdot Z)_P$ of $Y$ and $Z$ at $P$ to be the length of the $\mco_P\da$module $\mco_P / \gens{f, g}$.
+For $P \in Y \intersect Z$, define the *intersection multiplicity* $(Y \cdot Z)_P$ of $Y$ and $Z$ at $P$ to be the length of the $\mco_P\definedas$module $\mco_P / \generators{f, g}$.
 
 1. Show that $(Y \cdot Z)_P$ is finite, and that $(Y \cdot Z)_P \geq \mu_P(Y) \cdot \mu_P(Z)$.
 

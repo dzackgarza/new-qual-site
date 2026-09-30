@@ -23,9 +23,9 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $F \subseteq \RR$ is closed with $m(F^c) < \infty$ and let \( \delta(x) \da d(x, F) \) and
+Suppose $F \subseteq \RR$ is closed with $m(F^c) < \infty$ and let \( \delta(x) \definedas d(x, F) \) and
 \[
-I_F(x) \da \int_\RR { \delta(y) \over \abs{x-y}^2 } \dy
+I_F(x) \definedas \int_\RR { \delta(y) \over \abs{x-y}^2 } \dy
 .\]
 
 a. Show that \( \delta \) is continuous.

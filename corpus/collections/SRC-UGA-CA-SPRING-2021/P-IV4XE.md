@@ -24,14 +24,14 @@ Let $\xi\in \RR$, evaluate
 :::
 
 ::: {.solution}
-Note $\cosh(z) \da {1\over 2}(e^z + e^{-z})$, and
+Note $\cosh(z) \definedas {1\over 2}(e^z + e^{-z})$, and
 \[
 \cosh(z) &= 0 \\
 \iff e^z + e^{-z} &= 0 \\
 \iff e^{-z}(e^{2z} + 1) &= 0 \\
 \iff e^{2z} &= -1 \quad \text{since }\abs{e^{-z}} = e^{\Re(z)} > 0 \\
 \iff 2z &= (2k+1)i\pi \\
-\iff z &\in \ts{\cdots, {-3i\pi \over 2}, {-i\pi \over 2}, {i\pi \over 2}, {3i\pi \over 2}, \cdots}
+\iff z &\in \theset{\cdots, {-3i\pi \over 2}, {-i\pi \over 2}, {i\pi \over 2}, {3i\pi \over 2}, \cdots}
 .\]
 So take the following rectangular contour enclosing the singularity $z= i\pi/2$:
 
@@ -58,7 +58,7 @@ Computing the residue term $\int_\Gamma f = 2\pi i \Res_{z=i\pi/2} f(z)$:
 using that $2\sinh(i\pi/2) = e^{i\pi/2} - e^{-i\pi/2} = i-(-i) = 2i$. 
 
 The $\gamma_2$ term:
-parameterize $\gamma_2 = \ts{t + i\pi \st t\in [-R, R]}$, then
+parameterize $\gamma_2 = \theset{t + i\pi \st t\in [-R, R]}$, then
 \[
 \int_{\gamma_2} f 
 &= -\int_{-\gamma_2} f \\
@@ -66,13 +66,13 @@ parameterize $\gamma_2 = \ts{t + i\pi \st t\in [-R, R]}$, then
 &= -\int_{-R}^{R} { e^{i\xi(t+i\pi)} \over \cosh(t + i\pi) }\dt \\
 &= -e^{-\xi \pi} \int_{-R}^R {e^{i\xi t} \over \cosh(t+i\pi)} \dt \\
 &= e^{-\xi \pi} \int_{-R}^R {e^{i\xi t} \over \cosh(t)} \dt \\
-&\da e^{-\xi \pi} I
+&\definedas e^{-\xi \pi} I
 ,\]
 using that $\cosh(z + i\pi) = -\cosh(z)$.
 
 The two $\gamma_{R_i}$ terms:
 the claim is that these vanish in the limit $R\to \infty$.
-Parameterize $\gamma_{R_2} = \ts{R = i \pi t \st t\in [0, 1]}$, then
+Parameterize $\gamma_{R_2} = \theset{R = i \pi t \st t\in [0, 1]}$, then
 \[
 \abs{\int_{\gamma_{R_2}} f} 
 &= \abs{ \int_0^1 {e^{i\xi(R+i\pi t)} \over \cosh(R + i\pi t)} \dt } \\

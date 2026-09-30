@@ -25,7 +25,7 @@ Compactness of $\CP^1$ implies that $f$ has only finitely many poles.
 Let $a_1,\ldots,a_n\in\CC$ be the finite poles, and let $P_j$ be the principal part of $f$ at $a_j$.
 Then
 \[
-g(z)\da f(z)-\sum_{j=1}^nP_j(z)
+g(z)\definedas f(z)-\sum_{j=1}^nP_j(z)
 \]
 is entire on $\CC$.
 

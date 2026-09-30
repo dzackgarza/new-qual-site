@@ -14,7 +14,7 @@ topics:
 [[T-GJNT5]]
 
 ::: {.proof title="of Lagrange's theorem"}
-Let $N \da [G:H]$ and write $G/H = \ts{g_1 H, \ldots, g_N H}$.
+Let $N \definedas [G:H]$ and write $G/H = \theset{g_1 H, \ldots, g_N H}$.
 Two left cosets are equal or disjoint, and $x\mapsto g_kx$ is a bijection $H\to g_kH$, so
 $$
 G = \disjoint_{k=1}^N g_k H \implies \size G = \sum_{k=1}^N \size{g_k H} = \sum_{k=1}^N \size H = N \size H.
@@ -44,7 +44,7 @@ $\contradiction$
 [[T-3KCD6]]
 
 ::: {.proof}
-Let $p$ be a prime dividing $\size G$, and let $X = \ts{(g_1,\ldots,g_p)\in G^p \st g_1g_2\cdots g_p = e}$.
+Let $p$ be a prime dividing $\size G$, and let $X = \theset{(g_1,\ldots,g_p)\in G^p \st g_1g_2\cdots g_p = e}$.
 Choosing $g_1,\ldots,g_{p-1}$ freely determines $g_p$, so $\size X = \size G^{p-1}$, which is divisible by $p$.
 The group $\ZZ/p$ acts on $X$ by cyclic rotation of the coordinates, since $g_1g_2\cdots g_p = e$ implies $g_2\cdots g_pg_1 = \inverseof{g_1} e\, g_1 = e$.
 Each orbit has size $1$ or $p$, and the orbits of size $1$ are the tuples $(g,\ldots,g)$ with $g^p = e$.
@@ -57,12 +57,12 @@ Hence the number of $g\in G$ with $g^p=e$ is congruent to $\size X\equiv 0 \pmod
 
 ::: {.remark}
 Lying in the same orbit is an equivalence relation, so the orbits partition $X$, and $G$ acts transitively on each orbit.
-A point $x$ is fixed if and only if $\Orb(x) = \ts x$, equivalently $\Stab_G(x) = G$.
+A point $x$ is fixed if and only if $\Orb(x) = \theset x$, equivalently $\Stab_G(x) = G$.
 The notation is listed on [[algebra/groups/notation|Notation]].
 :::
 
 ::: {.fact}
-For an action $\psi\colon G\to\Aut_\Set(X)$, the kernel is the intersection of the stabilizers:
+For an action $\psi\colon G\to\Aut_\Sets(X)$, the kernel is the intersection of the stabilizers:
 $$
 \ker \psi = \Intersect_{x\in X} G_x.
 $$
@@ -91,7 +91,7 @@ Define $\Phi\colon G/G_x\to\Orb(x)$ by $\Phi(gG_x) = g\actson x$.
 [[PR-KGHJ2]]
 
 ::: {.proof title="that stabilizers along an orbit are conjugate"}
-Let $x\in X$ and $y\in \Orb(x)$, choose $g\in G$ with $g\actson x=y$, and write $H_x \da \Stab(x)$ and $H_y\da \Stab(y)$.
+Let $x\in X$ and $y\in \Orb(x)$, choose $g\in G$ with $g\actson x=y$, and write $H_x \definedas \Stab(x)$ and $H_y\definedas \Stab(y)$.
 Then
 $$
 \begin{aligned}
@@ -131,18 +131,18 @@ $G$ acts on itself by $\phi\colon g \mapsto (h\mapsto gh)$.
 
 - $\Orb(x) = G$, so the action is transitive.
 
-- $\Stab(x) = \ts e$, and $\Fix(\phi) = \emptyset$ unless $G$ is trivial.
+- $\Stab(x) = \theset e$, and $\Fix(\phi) = \emptyset$ unless $G$ is trivial.
 
 - The kernel is trivial, so $G$ embeds in the symmetric group on the set $G$ (Cayley's theorem).
 
-- Orbit-stabilizer gives the bijection $G/\ts e \to G$.
+- Orbit-stabilizer gives the bijection $G/\theset e \to G$.
 :::
 
 ::: {.example title="Conjugation on $G$: centers and centralizers"}
 $G$ acts on itself by $g\actson x = gx\inverseof{g}$.
 
 - $\Orb(x) = [x]$ is the [[D-HLDEY|conjugacy class]] of $x$.
-  The orbit of $e$ is $\ts e$, so the action is transitive only when $G$ is trivial; every orbit is a singleton if and only if $G$ is abelian.
+  The orbit of $e$ is $\theset e$, so the action is transitive only when $G$ is trivial; every orbit is a singleton if and only if $G$ is abelian.
 
 - $\Fix(\phi) = Z(G)$, the [[D-NK7G7|center]].
 
@@ -154,9 +154,9 @@ $G$ acts on itself by $g\actson x = gx\inverseof{g}$.
 :::
 
 ::: {.example title="Conjugation on subgroups: normalizers"}
-$G$ acts on $\ts{H \st H\leq G}$ by conjugation.
+$G$ acts on $\theset{H \st H\leq G}$ by conjugation.
 
-- $\Orb(H) = \ts{gH\inverseof{g} \st g\in G}$ is the set of conjugates of $H$.
+- $\Orb(H) = \theset{gH\inverseof{g} \st g\in G}$ is the set of conjugates of $H$.
 
 - $\Fix(\phi)$ is the set of normal subgroups of $G$.
 
@@ -164,7 +164,7 @@ $G$ acts on $\ts{H \st H\leq G}$ by conjugation.
 
 - The kernel is $\Intersect_{H\leq G} N_G(H)$.
 
-- Orbit-stabilizer gives the number of conjugates of $H$: $$ \size{\ts{ gHg ^{-1} \st g \in G } } = [G: N_G(H)].
+- Orbit-stabilizer gives the number of conjugates of $H$: $$ \size{\theset{ gHg ^{-1} \st g \in G } } = [G: N_G(H)].
 $$
 :::
 
@@ -176,8 +176,8 @@ For a proper subgroup $H < G$, $G$ acts on $G/H$ by left translation.
 - $\Stab(xH) = xH\inverseof{x}$, since
   $$
   \begin{aligned}
-  \Stab(xH) &= \ts{g\in G\st gxH = xH} \\
-  &= \ts{g\in G \st \inverseof{x} g x\in H} \\
+  \Stab(xH) &= \theset{g\in G\st gxH = xH} \\
+  &= \theset{g\in G \st \inverseof{x} g x\in H} \\
   &= xH\inverseof{x}.
   \end{aligned}
 $$

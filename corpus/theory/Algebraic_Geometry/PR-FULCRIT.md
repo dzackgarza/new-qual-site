@@ -42,7 +42,7 @@ For a divisor $D = \sum a_\rho D_\rho$ with support function $\varphi_D$ on a co
 | --- | --- |
 | base point free | $\varphi_D$ is convex |
 | ample | $\varphi_D$ is strictly convex |
-| very ample | ample, and each vertex semigroup $\ts{m - m_\sigma \st m \in P_D \intersect M}$ is saturated in $M$ |
+| very ample | ample, and each vertex semigroup $\theset{m - m_\sigma \st m \in P_D \intersect M}$ is saturated in $M$ |
 :::
 
 ::: {.remark title="How the rows depend on each other"}
@@ -57,5 +57,5 @@ On a smooth complete toric variety ample and very ample agree, and on any comple
 ::: {.remark title="Worked positivity on two families"}
 On $\PP^n$ with $D = \sum a_i D_i$, base point free means $\sum a_i \geq 0$ and ample means $\sum a_i > 0$.
 
-On $\FF_m$ with rays labelled as $D_1, \ldots, D_4$ in cyclic order, $\Pic(\FF_m) = \gens{D_1, D_4}$, and $D = a D_1 + b D_4$ is ample exactly when $a > 0$ and $b > 0$.
+On $\FF_m$ with rays labelled as $D_1, \ldots, D_4$ in cyclic order, $\Pic(\FF_m) = \generators{D_1, D_4}$, and $D = a D_1 + b D_4$ is ample exactly when $a > 0$ and $b > 0$.
 :::

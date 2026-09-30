@@ -16,7 +16,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_\RR {e^{x\over 2}\over 1+e^x}\dx
+I \definedas \int_\RR {e^{x\over 2}\over 1+e^x}\dx
 .\]
 
 :::

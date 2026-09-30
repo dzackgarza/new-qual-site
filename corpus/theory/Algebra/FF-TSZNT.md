@@ -30,7 +30,7 @@ Then $G$ is an abelian group of exponent $2$, that is, written additively, a $2$
 :::
 
 ::: {.remark}
-The cycle graphs of $\ZZ/4\ZZ = \gens{g}$ and of $(\ZZ/2\ZZ)^2 = \theset{e, a, b, ab}$, with identity $e$:
+The cycle graphs of $\ZZ/4\ZZ = \generators{g}$ and of $(\ZZ/2\ZZ)^2 = \theset{e, a, b, ab}$, with identity $e$:
 
 \begin{tikzcd}
 	& {g^2} &&&& a \\

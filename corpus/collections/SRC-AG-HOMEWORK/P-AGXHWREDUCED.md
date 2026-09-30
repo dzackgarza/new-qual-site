@@ -15,12 +15,12 @@ review: draft
 ---
 
 ::: {.problem}
-Call $(X, \OO_X)\in \Sch$ **reduced** iff $\OO_X(U)$ has no nilpotents for every open $U$, and for $A\in \Ring$ define $A^{\red}\da A/\sqrt{0}$ to be $A$ modulo its ideal of nilpotents.
+Call $(X, \OO_X)\in \Sch$ **reduced** iff $\OO_X(U)$ has no nilpotents for every open $U$, and for $A\in \Ring$ define $A^{\red}\definedas A/\sqrt{0}$ to be $A$ modulo its ideal of nilpotents.
 
 a. Show that $X$ is reduced iff for every $p\in X$, the local ring $\OO_{X, p}$ has no nilpotents.
 
 b. Let $\OO_X^{\red}$ be the sheafification of $U \mapsto \OO_X(U)^{\red}$.
-Show that $X_{\red}\da (X, \OO_X^{\red})$ is a scheme, and that there is a morphism of schemes $X_{\red}\xrightarrow{\red} X$ inducing a homeomorphism $\abs{X_{\red}}\to \abs{X}$ on underlying topological spaces.
+Show that $X_{\red}\definedas (X, \OO_X^{\red})$ is a scheme, and that there is a morphism of schemes $X_{\red}\xrightarrow{\red} X$ inducing a homeomorphism $\abs{X_{\red}}\to \abs{X}$ on underlying topological spaces.
 
 c. Let $X \xrightarrow{f} Y\in \Sch$ with $X$ reduced.
 Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ is the composition
@@ -44,7 +44,7 @@ Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ 
 
 - $\sqrt{0_{R}} \leq \mfp$ for every $\mfp\in \Spec R$.
 
-- $R_{\red}\da R/\sqrt{0_{R}}$ is a quotient, and localization commutes with quotients.
+- $R_{\red}\definedas R/\sqrt{0_{R}}$ is a quotient, and localization commutes with quotients.
 
 - Maps $R\to S$ with $S$ reduced factor through $R_{\red}$.
 
@@ -63,9 +63,9 @@ $\impliedby$: suppose every $\OO_{X,p}$ is reduced, and let $s\in \OO_X(U)$ with
 
 **Part (b).** Let $P$ be the presheaf $U\mapsto\OO_X(U)^\red$, so $\OO_X^\red$ is its sheafification, and let $\rho\colon\OO_X\to\OO_X^\red$ be the quotient maps followed by sheafification. Stalks commute with quotients by the nilradical, so $P_p=\OO_{X,p}^\red=(\OO_X^\red)_p$.
 
-Let $U=\Spec A$ be an affine open of $X$ and $j\colon\Spec A^\red\to\Spec A$ the morphism induced by $A\to A^\red$. Every prime contains $\sqrt0$, so $j$ is a homeomorphism; identify the two spaces. For an open $V\subseteq U$, the map $\OO_U(V)\to\OO_{\Spec A^\red}(V)$ lands in a reduced ring, so it factors through $P(V)$; this is a map of presheaves $\ro{P}{U}\to\OO_{\Spec A^\red}$. On the stalk at $\mfp$ it is $(A_\mfp)^\red\to(A^\red)_{\mfp}$, an isomorphism because localization commutes with quotients and $\sqrt{0_{A_\mfp}}=(\sqrt{0_A})_\mfp$. The induced map $\ro{\OO_X^\red}{U}\to\OO_{\Spec A^\red}$ is therefore an isomorphism of sheaves. So $X_\red$ is covered by open sets isomorphic to affine schemes, and it is a scheme.
+Let $U=\Spec A$ be an affine open of $X$ and $j\colon\Spec A^\red\to\Spec A$ the morphism induced by $A\to A^\red$. Every prime contains $\sqrt0$, so $j$ is a homeomorphism; identify the two spaces. For an open $V\subseteq U$, the map $\OO_U(V)\to\OO_{\Spec A^\red}(V)$ lands in a reduced ring, so it factors through $P(V)$; this is a map of presheaves $\restrictionof{P}{U}\to\OO_{\Spec A^\red}$. On the stalk at $\mfp$ it is $(A_\mfp)^\red\to(A^\red)_{\mfp}$, an isomorphism because localization commutes with quotients and $\sqrt{0_{A_\mfp}}=(\sqrt{0_A})_\mfp$. The induced map $\restrictionof{\OO_X^\red}{U}\to\OO_{\Spec A^\red}$ is therefore an isomorphism of sheaves. So $X_\red$ is covered by open sets isomorphic to affine schemes, and it is a scheme.
 
-Let $\red\colon X_\red\to X$ be the identity on spaces with $\red^\#\da\rho$. Over each affine $U=\Spec A$ it is $j$, a morphism of schemes, so $\red$ is a morphism of schemes, and its underlying map is the identity, a homeomorphism.
+Let $\red\colon X_\red\to X$ be the identity on spaces with $\red^\#\definedas\rho$. Over each affine $U=\Spec A$ it is $j$, a morphism of schemes, so $\red$ is a morphism of schemes, and its underlying map is the identity, a homeomorphism.
 
 **Part (c).** Let $f\colon X\to Y$ with $X$ reduced, and let $g$ have the same underlying map as $f$, which is possible since $\red$ is the identity on spaces.
 

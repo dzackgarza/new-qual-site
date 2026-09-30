@@ -39,14 +39,14 @@ z^{-2}\Log(1+z)\sin(z)
 &= 1 + {z \over 2} + \cdots
 .\]
 
-$f_2$: essential, evident from a sequence like $z_k \da \inverseof{\qty{k\cdot {\pi\over 2} }}$ which makes $\sin(z_k)$ oscillate between 0 and 1.
+$f_2$: essential, evident from a sequence like $z_k \definedas \inverseof{\qty{k\cdot {\pi\over 2} }}$ which makes $\sin(z_k)$ oscillate between 0 and 1.
 
 $f_3$: pole of order 1 with residue 1, evident after some slightly clever Laurent manipulations:
 \[
 {1\over e^z-1}
 &= {1 \over z + {1\over 2}z^2 + \cdots} \\
 &= {1 \over z\qty{1 + {1\over 2}z + \cdots} } \\
-&\da {1\over z \qty{1 + p(z)}} && p(z) \da {1\over 2} z + {1\over 3!}z^2 + \cdots \\
+&\definedas {1\over z \qty{1 + p(z)}} && p(z) \definedas {1\over 2} z + {1\over 3!}z^2 + \cdots \\
 &= \inverseof{z} \sum_{k\geq 0}(-p(z))^k z^k \\
 &= \inverseof{z} \qty{1 - zp(z) + z^2p(z)^2 - z^3p(z)^3 + \bigo(z^4)} \\
 &= \inverseof{z}\qty{1- \bigo(z^2) + \bigo(z^4) - \bigo(z^6) } \\

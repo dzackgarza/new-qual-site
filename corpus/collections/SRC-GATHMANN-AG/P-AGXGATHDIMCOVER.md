@@ -17,29 +17,29 @@ review: draft
 ::: {.problem}
 Let $X$ be a topological space, and show
 
-a. If $\ts{U_i}_{i\in I}$ is an open cover of $X$, then $\dim X = \sup_{i\in I} \dim U_i$.
+a. If $\theset{U_i}_{i\in I}$ is an open cover of $X$, then $\dim X = \sup_{i\in I} \dim U_i$.
 
 b. If $X$ is an irreducible affine variety and $U\subset X$ is a nonempty open subset, then $\dim X = \dim U$.
   Does this hold for any irreducible topological space?
 :::
 
 ::: {.solution}
-> Strictly for notational convenience, we treat $\ts{U_i}$ as if it were a countable open cover.
+> Strictly for notational convenience, we treat $\theset{U_i}$ as if it were a countable open cover.
 
 **Part a**:
 First note that if $U \subseteq V$, then $\dim U \leq \dim V$.
-If this were not the case, one could find a chain $\ts{I_j}$ of closed irreducible subsets of $V$ of length $n>\dim U$.
-But then $I'_j \da I_j \intersect U$ would again be closed and irreducible, yielding a chain of length $n$ in $U$.
+If this were not the case, one could find a chain $\theset{I_j}$ of closed irreducible subsets of $V$ of length $n>\dim U$.
+But then $I'_j \definedas I_j \intersect U$ would again be closed and irreducible, yielding a chain of length $n$ in $U$.
 Thus $\dim X\geq \dim U_i$, and it remains true that $\dim X \geq \sup \dim U_i$, so it suffices to show that $\dim X \leq \sup \dim U_i$.
 
-Set $s \da \sup_i \dim U_i$ and $n\da \dim X$; we want to show $s\geq n$.
-Let $\ts{I_j}_{j\leq n}$ be a maximal chain of length $n$ of closed irreducible subsets of $X$, so
+Set $s \definedas \sup_i \dim U_i$ and $n\definedas \dim X$; we want to show $s\geq n$.
+Let $\theset{I_j}_{j\leq n}$ be a maximal chain of length $n$ of closed irreducible subsets of $X$, so
 \[
 \emptyset \subsetneq I_0 \subsetneq I_1 \subsetneq \cdots \subsetneq I_n \subseteq X
 .\]
 
-Since $I_0\subset X$ and $\ts{U_i}$ covers $X$, we can find some $U_{0}\in \ts{U_i}$ such that $I_0\intersect U_0$ is nonempty, since otherwise there would be a point in $I_0 \intersect \qty{X\sm \Union_{i\in J} U_i} = \emptyset$.
-We can do this for every $I_j$, so define $A_j \da I_j \intersect U_0$.
+Since $I_0\subset X$ and $\theset{U_i}$ covers $X$, we can find some $U_{0}\in \theset{U_i}$ such that $I_0\intersect U_0$ is nonempty, since otherwise there would be a point in $I_0 \intersect \qty{X\sm \Union_{i\in J} U_i} = \emptyset$.
+We can do this for every $I_j$, so define $A_j \definedas I_j \intersect U_0$.
 
 Each $A_j$ is closed in $U_0$, and remains irreducible, since any decomposition of $A_j$ would lift to a decomposition of $I_0$.
 To see that $A_0 \subsetneq A_1$, i.e. that the inclusions are still proper, note that
@@ -56,17 +56,17 @@ n \leq \dim U_0 \leq \sup_{i\in J} \dim U_i = s
 
 Define a space and a topology by
 \[
-X \da \ts{a, b} \qquad \tau \da \ts{\emptyset, X, \ts{a}}
+X \definedas \theset{a, b} \qquad \tau \definedas \theset{\emptyset, X, \theset{a}}
 .\]
-Here $\ts{b}$ is the only proper closed subset, since its complement is open, so $X$ must be irreducible.
+Here $\theset{b}$ is the only proper closed subset, since its complement is open, so $X$ must be irreducible.
 We can find a maximal ascending chain of length $1$,
 \[
-\emptyset \subsetneq \ts{b} \subsetneq X
+\emptyset \subsetneq \theset{b} \subsetneq X
 ,\]
 and so $\dim X = 1$.
-However, for $U\da \ts{a}$ there is only one possible maximal chain,
+However, for $U\definedas \theset{a}$ there is only one possible maximal chain,
 \[
-\emptyset \subsetneq \ts{a} = U
+\emptyset \subsetneq \theset{a} = U
 ,\]
 so $\dim U = 0$.
 :::

@@ -25,10 +25,10 @@ of both $S^{-1}A\dash$modules and $A\dash$modules.
 ::: {.solution}
 Recall the definition
 \[
-S^{-1}A &\da \ts{ {a\over s} \st a\in A,\, s\in S} / \sim \\
+S^{-1}A &\definedas \theset{ {a\over s} \st a\in A,\, s\in S} / \sim \\
 {a_1 \over s_1} &\sim {a_2 \over s_2} \iff \exists s\in S \text{ such that } s\qty{ s_2 a_1 - s_1 a_2 } = 0_A
 ,\]
-and similarly $S^{-1}M = \ts{{m\over s}}/\sim$.
+and similarly $S^{-1}M = \theset{{m\over s}}/\sim$.
 
 The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morphisms $\alpha: M\to N$ such that $\alpha(S) \subseteq \unitsof{N}$:
 
@@ -69,11 +69,11 @@ The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morph
 - $A\dash$bilinear: let $r\in A$, then
 \[
 \eta\qty{r \cdot {a\over s}, m}
-&\da \eta\qty{{r\cdot a\over s}, m}  \\
-&\da {\psi(r\cdot a)(m) \over s} \\
+&\definedas \eta\qty{{r\cdot a\over s}, m}  \\
+&\definedas {\psi(r\cdot a)(m) \over s} \\
 &= {r\cdot \psi(a)(m) \over s} \quad\text{since $\psi$ is a ring morphism} \\
 &= {\psi(a)(r\cdot m) \over s} \quad\text{since $\psi(a)$ is a ring morphism} \\
-&\da \eta\qty{ {a\over s}, r\cdot m}
+&\definedas \eta\qty{ {a\over s}, r\cdot m}
 .\]
 So this lifts to a map out of the tensor product.
 

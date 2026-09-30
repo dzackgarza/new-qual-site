@@ -18,7 +18,7 @@ review: draft
 ::: {.exercise}
 For $a\in\RR$ with $|a|>1$, evaluate
 \[
-I(a)\da \int_{-1}^1 {dx\over (x-a)\sqrt{1-x^2}}.
+I(a)\definedas \int_{-1}^1 {dx\over (x-a)\sqrt{1-x^2}}.
 \]
 :::
 

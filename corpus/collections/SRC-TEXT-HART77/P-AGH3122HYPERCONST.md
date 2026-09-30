@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\ts{X_t}$ be a family of hypersurfaces of the same degree in $\PP_k^n$.
+Let $\theset{X_t}$ be a family of hypersurfaces of the same degree in $\PP_k^n$.
 Show that for each $i$ the function $h^i(X_t, \mco_{X_t})$ is a constant function of $t$.
 :::
 

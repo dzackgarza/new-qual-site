@@ -33,12 +33,12 @@ prompts:
 ---
 
 ::: {.definition title="Projective variety"}
-A subset of $\PP^n$ is \dfn{closed} if it is $V(T)$ for a set $T$ of homogeneous elements of $S \da k[x_0,\ldots,x_n]$.
+A subset of $\PP^n$ is \dfn{closed} if it is $V(T)$ for a set $T$ of homogeneous elements of $S \definedas k[x_0,\ldots,x_n]$.
 A \dfn{projective variety} is an irreducible closed subset of $\PP^n$; a \dfn{quasi-projective variety} is an open subset of one.
 :::
 
 ::: {.remark}
-Let $p\in\PP^n$ have representative $v\in k^{n+1}\sm\ts{0}$, and let $f\in S$ be homogeneous of degree $d$.
+Let $p\in\PP^n$ have representative $v\in k^{n+1}\sm\theset{0}$, and let $f\in S$ be homogeneous of degree $d$.
 Then $f(\lambda v)=\lambda^d f(v)$ for $\lambda\in k^\times$, so the condition $f(v)=0$ does not depend on the representative $v$, although the value $f(v)$ does when $d>0$.
 For $f=x_0+x_1^2$ in $k[x_0,x_1]$ and $v=(-1,1)$, $f(v)=0$ but $f(2v)=2\ne0$ when $\operatorname{char}k\ne2$.
 Homogenizing with respect to a new variable $Z$ gives projective closures: $V(x^2 + y^2 - 1)$ becomes $V(X^2 + Y^2 - Z^2)$, and $V(y - x^3)$ becomes $V(YZ^2 - X^3)$.

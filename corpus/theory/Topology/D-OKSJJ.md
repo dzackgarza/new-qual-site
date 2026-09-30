@@ -18,7 +18,7 @@ Let $(I,\leq)$ be a directed set.
 An \dfn{inverse system} of abelian groups indexed by $I$ consists of abelian groups $A_\alpha$ for $\alpha\in I$ and homomorphisms $f_{\beta\alpha}\colon A_\beta\to A_\alpha$ for $\alpha\leq\beta$, with $f_{\alpha\alpha}=\id_{A_\alpha}$ and $f_{\beta\alpha}\circ f_{\gamma\beta}=f_{\gamma\alpha}$ for $\alpha\leq\beta\leq\gamma$.
 Its \dfn{inverse limit} is the subgroup of compatible families
 $$
-\varprojlim_\alpha A_\alpha\coloneqq\ts{(a_\alpha)_{\alpha\in I}\in\prod_{\alpha\in I}A_\alpha \st f_{\beta\alpha}(a_\beta)=a_\alpha\text{ whenever }\alpha\leq\beta},
+\varprojlim_\alpha A_\alpha\coloneqq\theset{(a_\alpha)_{\alpha\in I}\in\prod_{\alpha\in I}A_\alpha \st f_{\beta\alpha}(a_\beta)=a_\alpha\text{ whenever }\alpha\leq\beta},
 $$
 with the projections $\pi_\alpha\colon\varprojlim A_\alpha\to A_\alpha$.
 :::

@@ -22,7 +22,7 @@ E_0(z)=1-z,\qquad E_p(z)=(1-z)\exp\Big(z+\frac{z^2}{2}+\cdots+\frac{z^p}{p}\Big)
 $$
 Let $f$ be an entire function of order $\rho<\infty$, where
 $$
-\rho\coloneqq\inf\ts{\sigma\ge0\st\text{there is }R>0\text{ with }\abs{f(z)}\le e^{\abs z^\sigma}\text{ for all }\abs z>R},
+\rho\coloneqq\inf\theset{\sigma\ge0\st\text{there is }R>0\text{ with }\abs{f(z)}\le e^{\abs z^\sigma}\text{ for all }\abs z>R},
 $$
 and let $p\coloneqq\lfloor\rho\rfloor$.
 Suppose $f$ is not identically zero, has a [[D-65VIK|zero]] of order $m\ge0$ at $0$, and let $(z_k)_{k\ge1}$ be its nonzero zeros, repeated with multiplicity.

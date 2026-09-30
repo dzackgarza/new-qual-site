@@ -18,7 +18,7 @@ review: draft
 Let $\Log$ be the [[D-4CSPM|principal branch]] of the logarithm.
 The map
 $$
-F\colon\HH=\ts{z\st\Im z>0}\to\ts{w\st0<\Im w<\pi},\qquad F(z)=\Log z,
+F\colon\HH=\theset{z\st\Im z>0}\to\theset{w\st0<\Im w<\pi},\qquad F(z)=\Log z,
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $w\mapsto e^w$.
 :::

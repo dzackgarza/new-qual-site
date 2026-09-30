@@ -21,7 +21,7 @@ If $f: \DD_R(a)\to\DD_M(0)$ with $f(a) = 0$, then
 :::
 
 ::: {.solution}
-Set $g(z) \da {f(Rz + a) \over M}$, then $g: \DD\to \DD$ with $g(0) = f(a)/M = 0$, so unwinding Schwarz yields
+Set $g(z) \definedas {f(Rz + a) \over M}$, then $g: \DD\to \DD$ with $g(0) = f(a)/M = 0$, so unwinding Schwarz yields
 \[
 \abs{g(z)} \leq \abs{z} 
 \implies \abs{f(Rz+a)\over M}

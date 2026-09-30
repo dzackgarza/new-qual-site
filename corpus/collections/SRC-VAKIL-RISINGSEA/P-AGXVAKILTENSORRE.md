@@ -53,13 +53,13 @@ We use that every element of a tensor product is a finite sum of elementary tens
 **Claim**: $\im(g\tensor \id_N) \subseteq C\tensor_R N$.
 
 - Let $b\tensor n \in B\tensor_R N$ be an elementary tensor.
-- Then $(g\tensor \id_N)(b\tensor n) \da g(b) \tensor \id_N (n) = g(b) \tensor n$.
+- Then $(g\tensor \id_N)(b\tensor n) \definedas g(b) \tensor \id_N (n) = g(b) \tensor n$.
 - Since $\im(g) = C$, there is $c\in C$ with $g(b) = c$, so $g(b) \tensor n = c \tensor n \in C\tensor_R N$.
 - Extend by linearity:
 \[
 \qty{g\tensor_R \id_N}\qty{\sum_{i=1}^m r_i \cdot b_i \tensor n_i}
 = \sum_{i=1}^m (g\tensor \id_N)(r_i\cdot b_i \tensor n_i)
-\da \sum_{i=1}^m g(r_i\cdot b_i) \tensor \id_N(n_i)
+\definedas \sum_{i=1}^m g(r_i\cdot b_i) \tensor \id_N(n_i)
 =_H \sum_{i=1}^m r_i\cdot c_i \tensor n_i \in C\tensor_R N
 ,\]
 using bilinearity for the first equality; the equality marked $H$ uses the proof above for elementary tensors, noting that ring scalars $r_i\in R$ pull through $\mods{R}$ morphisms.
@@ -86,7 +86,7 @@ This proves (1).
 - By exactness of the original sequence, $\im f \subseteq \ker g$, so $g(f(a)) = 0 \in C$.
 - Then
 \[
-(g\tensor \id_N)\qty{ b \tensor n} = (g\tensor \id_N)(f(a)\tensor n) \da g(f(a)) \tensor n = 0\tensor n = 0\in C\tensor_R N
+(g\tensor \id_N)\qty{ b \tensor n} = (g\tensor \id_N)(f(a)\tensor n) \definedas g(f(a)) \tensor n = 0\tensor n = 0\in C\tensor_R N
 ,\]
 using that $0\tensor x = 0$ in any tensor product.
 - Extend by linearity.

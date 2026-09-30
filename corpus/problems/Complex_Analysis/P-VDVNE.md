@@ -33,5 +33,5 @@ Write $f(z) = \sum_{k\geq 0} c_k z^k$ since it is entire.
   Taking $f(z)= e^z$ has no zeros and an essential singularity at $z=\infty$.
 
 - If $f$ has infinitely many zeros, if $f$ is nonconstant then infinitely many $c_k$ are nonzero -- otherwise $f$ is a polynomial and can only have finitely many zeros.
-  Then $g(z) \da f(1/z) = \sum_{k\geq 0}{c_k\over z^k}$ has infinitely many nonzero terms, making $z=0$ an essential singularity for $g$ and $z=\infty$ essential for $f$.
+  Then $g(z) \definedas f(1/z) = \sum_{k\geq 0}{c_k\over z^k}$ has infinitely many nonzero terms, making $z=0$ an essential singularity for $g$ and $z=\infty$ essential for $f$.
 :::

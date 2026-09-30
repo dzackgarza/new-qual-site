@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-MVCOFKIK
 kind: problem
-title: $\tor(\ZZ\oplus\ZZ_2\oplus\ZZ_8,\ZZ\oplus\ZZ_4\oplus\ZZ_4)$ and $\ext(\ZZ\oplus\ZZ_2\oplus\ZZ_3,\ZZ\oplus\ZZ_4\oplus\ZZ_5)$
+title: $\Tor(\ZZ\oplus\ZZ_2\oplus\ZZ_8,\ZZ\oplus\ZZ_4\oplus\ZZ_4)$ and $\Ext(\ZZ\oplus\ZZ_2\oplus\ZZ_3,\ZZ\oplus\ZZ_4\oplus\ZZ_5)$
 classification:
   areas:
   - topology
@@ -15,9 +15,9 @@ review: draft
 ::: {.problem}
 Compute:
 
-1. $\tor(\ZZ \oplus \ZZ_2 \oplus \ZZ_8, \ZZ \oplus \ZZ_4 \oplus \ZZ_4)$
+1. $\Tor(\ZZ \oplus \ZZ_2 \oplus \ZZ_8, \ZZ \oplus \ZZ_4 \oplus \ZZ_4)$
 
-2. $\ext(\ZZ \oplus \ZZ_2 \oplus \ZZ_3, \ZZ \oplus \ZZ_4 \oplus \ZZ_5)$
+2. $\Ext(\ZZ \oplus \ZZ_2 \oplus \ZZ_3, \ZZ \oplus \ZZ_4 \oplus \ZZ_5)$
 :::
 
 ::: {.solution}

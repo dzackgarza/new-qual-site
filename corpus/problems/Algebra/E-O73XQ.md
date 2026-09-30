@@ -29,7 +29,7 @@ review: draft
 ::: {.solution}
 If $G/Z(G)$ is cyclic, then $G$ is abelian:
 
-- Write $H\da Z(G)$ and $G/H = \gens{xH}$ as a cyclic quotient.
+- Write $H\definedas Z(G)$ and $G/H = \generators{xH}$ as a cyclic quotient.
 
 - Fix $a, b\in G$, then $aH = x^n H$ and $bH = x^m H$.
 

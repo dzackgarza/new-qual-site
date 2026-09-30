@@ -30,7 +30,7 @@ and the nonabelian ones are
 
 3. the dicyclic group of order $12$,
 $$
-\gens{a,b\suchthat a^6=1,\ b^2=a^3,\ bab^{-1}=a^{-1}}\cong\ZZ/3\ZZ\rtimes\ZZ/4\ZZ,
+\generators{a,b\suchthat a^6=1,\ b^2=a^3,\ bab^{-1}=a^{-1}}\cong\ZZ/3\ZZ\rtimes\ZZ/4\ZZ,
 $$
 where a generator of $\ZZ/4\ZZ$ acts on $\ZZ/3\ZZ$ by inversion.
 :::

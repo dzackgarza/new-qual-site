@@ -27,5 +27,5 @@ Any discrete closed subset of a compact space is discrete and compact, thus nece
 
 Applying this to any bounded $\Omega \subseteq \CC$, there can only be finitely many poles in any disc of radius $R$.
 If there are infinitely many poles, this forces them to accumulate on $z=0\infty$.
-A limit point of a sequence of poles of $f$ is a limit point of a sequence of zeros of $g\da 1/f$, making it an essential singularity for both.
+A limit point of a sequence of poles of $f$ is a limit point of a sequence of zeros of $g\definedas 1/f$, making it an essential singularity for both.
 :::

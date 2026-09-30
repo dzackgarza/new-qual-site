@@ -48,5 +48,5 @@ A Cohen--Macaulay projective scheme $X$ of pure dimension over a field has a dua
 In dimension $0$ every Noetherian local ring is Cohen--Macaulay.
 $k[x,y]/(x^2, y^2)$ is a complete intersection.
 $k[x,y]/(x^2, xy, y^2)$ is Cohen--Macaulay but not Gorenstein: its socle $\{r \st \mfm r = 0\} = (x, y)$ is $2$-dimensional, while a zero-dimensional Gorenstein local ring has $1$-dimensional socle.
-The union of two planes in $\AA^4$ meeting in a point, $V((x,y) \cap (z,w))$, is not Cohen--Macaulay: removing the point disconnects it, while the punctured spectrum $\Spec R\sm\ts{\mfm}$ of a Cohen--Macaulay local ring $R$ of dimension at least $2$ is connected.
+The union of two planes in $\AA^4$ meeting in a point, $V((x,y) \cap (z,w))$, is not Cohen--Macaulay: removing the point disconnects it, while the punctured spectrum $\Spec R\sm\theset{\mfm}$ of a Cohen--Macaulay local ring $R$ of dimension at least $2$ is connected.
 :::

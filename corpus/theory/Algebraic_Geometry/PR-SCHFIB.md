@@ -22,9 +22,9 @@ prompts:
 ---
 
 ::: {.definition}
-For $f: X \to Y$ and $y \in Y$ with residue field $\kappa(y) \da \OO_{Y,y}/\mfm_y$, the \dfn{fibre} is
+For $f: X \to Y$ and $y \in Y$ with residue field $\kappa(y) \definedas \OO_{Y,y}/\mfm_y$, the \dfn{fibre} is
 \[
-X_y \da \fiberprod{X}{Y}{\Spec \kappa(y)} .
+X_y \definedas \fiberprod{X}{Y}{\Spec \kappa(y)} .
 \]
 Its underlying space is $\inverseof{f}(y)$, but it carries a scheme structure over the field $\kappa(y)$.
 :::

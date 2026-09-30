@@ -40,9 +40,9 @@ audit:
 ::: {.problem}
 There is a bijection
 \[
-\ts{ \text{morphisms } X \to Y }
+\theset{ \text{morphisms } X \to Y }
 &\stackrel{1: 1}{\leftrightarrow}
-\ts{ k\dash\text{algebra morphisms } \OO_{Y}(Y) \to \OO_{X}(X) } \\
+\theset{ k\dash\text{algebra morphisms } \OO_{Y}(Y) \to \OO_{X}(X) } \\
 f &\mapsto f^{*}
 .\]
 

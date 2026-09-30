@@ -26,7 +26,7 @@ A lattice polytope $P \subseteq M_\RR$ is \dfn{normal} if
 $$
 (kP \intersect M) + (\ell P \intersect M) = (k+\ell)P \intersect M \quad \text{for all } k, \ell \geq 1 ,
 $$
-equivalently $k \cdot (P \intersect M) = (kP) \intersect M$ for all $k \geq 1$, equivalently $(P \intersect M) \times \ts{1}$ generates the semigroup $C(P) \intersect (M \times \ZZ)$, where $C(P) \da \Cone(P \times \ts{1})$.
+equivalently $k \cdot (P \intersect M) = (kP) \intersect M$ for all $k \geq 1$, equivalently $(P \intersect M) \times \theset{1}$ generates the semigroup $C(P) \intersect (M \times \ZZ)$, where $C(P) \definedas \Cone(P \times \theset{1})$.
 :::
 
 ::: {.proposition title="Normality and dilation"}

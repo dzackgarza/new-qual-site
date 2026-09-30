@@ -17,13 +17,13 @@ review: draft
 Let $R = \ZZ[x,y]$, and $M = R/(x-y), N = R/(x,y)$.
 Construct free resolutions of $M,N$ to compute:
 
-- $\ext_R^*(M, M)$
+- $\Ext_R^*(M, M)$
 
-- $\ext_R^*(M, N)$
+- $\Ext_R^*(M, N)$
 
-- $\ext_R^*(N, M)$
+- $\Ext_R^*(N, M)$
 
-- $\ext_R^*(N, N)$
+- $\Ext_R^*(N, N)$
 :::
 
 ::: {.solution}

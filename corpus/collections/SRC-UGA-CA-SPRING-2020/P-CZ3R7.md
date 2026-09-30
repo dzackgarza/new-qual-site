@@ -46,7 +46,7 @@ where we've applied the assumption $\abs{w_1} = c\abs{w_2}$ twice.
 ::: {.solution title="part 2"}
 Using part 1:
 \[
-w_1\da z-z_1, w_2 \da z-z_2 \implies \abs{w_1} &= c\abs{w_2} \\
+w_1\definedas z-z_1, w_2 \definedas z-z_2 \implies \abs{w_1} &= c\abs{w_2} \\
 \implies \abs{w_1 - c^2 w_2} &= c \abs{w_1 - w_2} \\
 \implies \abs{ z-z_1 - c^2 (z-z_2) } &= \abs{(z-z_1) - (z-z_2)} \\
 \implies \abs{(1-c^2) z - z_3} &= \abs{ z_2 - z_1 } \\

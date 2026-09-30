@@ -36,7 +36,7 @@ A Noetherian ring $A$ is a \dfn{regular ring} if $A_\mfp$ is a regular local rin
 ::: {.definition title="valuation"}
 Let $K$ be a field and $G$ a totally ordered abelian group.
 A \dfn{valuation} of $K$ with values in $G$ is a group homomorphism $v \colon K^\times \to G$ such that $v(x+y) \geq \min(v(x), v(y))$ for all $x, y \in K^\times$ with $x + y \neq 0$.
-Its \dfn{valuation ring} is $R = \ts{x \in K^\times \st v(x) \geq 0} \cup \ts{0}$.
+Its \dfn{valuation ring} is $R = \theset{x \in K^\times \st v(x) \geq 0} \cup \theset{0}$.
 A domain $R$ is a valuation ring if it is the valuation ring of some valuation of $\operatorname{Frac} R$, and the valuation is \dfn{discrete} if $G = \ZZ$.
 [@Har10a, §I.6]
 :::

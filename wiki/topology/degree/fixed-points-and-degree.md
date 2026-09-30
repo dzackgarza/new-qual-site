@@ -77,10 +77,10 @@ For Lebesgue measurable sets $A_1,\ldots,A_n\subseteq\RR^n$ of finite measure, t
 :::
 
 ::: {.proof}
-For $u=(u_0,u')\in S^n\subseteq\RR\times\RR^n$, let $f_i(u)$ be the measure of $A_i\cap\ts{x \st \inner{u'}{x} > u_0}$, which is continuous in $u$.
+For $u=(u_0,u')\in S^n\subseteq\RR\times\RR^n$, let $f_i(u)$ be the measure of $A_i\cap\theset{x \st \inner{u'}{x} > u_0}$, which is continuous in $u$.
 By the Borsuk--Ulam theorem applied to $f=(f_1,\ldots,f_n)\colon S^n\to\RR^n$, there is $u$ with $f(u)=f(-u)$.
 If $u'=0$, then one of the two sets is empty and the other is $\RR^n$, so $f(u)=f(-u)$ forces every $A_i$ to have measure $0$ and any hyperplane works.
-Otherwise $P\coloneqq\ts{\inner{u'}{x}=u_0}$ is a hyperplane of measure zero, and $f(u)=f(-u)$ says that $P$ bisects each $A_i$.
+Otherwise $P\coloneqq\theset{\inner{u'}{x}=u_0}$ is a hyperplane of measure zero, and $f(u)=f(-u)$ says that $P$ bisects each $A_i$.
 
 :::
 

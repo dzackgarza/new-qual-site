@@ -15,7 +15,7 @@ review: draft
 
 ::: {.exercise}
 
-Let $p: X \to Y$ be a closed continuous surjective map such that $p^{-1}(\ts{y})$ is compact for each $y \in Y$.
+Let $p: X \to Y$ be a closed continuous surjective map such that $p^{-1}(\theset{y})$ is compact for each $y \in Y$.
 (Such a map is called a perfect map.)
 
 (a) Show that if $X$ is Hausdorff, then so is $Y$.

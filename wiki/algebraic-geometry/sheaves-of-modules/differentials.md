@@ -22,7 +22,7 @@ f^*\Omega_{Y/S} \to \Omega_{X/S} \to \Omega_{X/Y} \to 0 .
 \]
 The conormal sequence, for a closed immersion $Z \subseteq X$ with ideal $\mci$:
 \[
-\mci/\mci^2 \to \Omega_{X/S}\ro{}{Z} \to \Omega_{Z/S} \to 0 .
+\mci/\mci^2 \to \Omega_{X/S}\restrictionof{}{Z} \to \Omega_{Z/S} \to 0 .
 \]
 
 Neither sequence is left exact in general.
@@ -33,7 +33,7 @@ The relative sequence is exact on the left when $X\to Y$ is smooth.
 For a finite separable morphism $f\colon X\to Y$ of smooth curves, $0\to f^*\Omega_Y\to\Omega_X\to\Omega_{X/Y}\to0$ is exact, $\Omega_{X/Y}$ is a torsion sheaf whose lengths give the ramification divisor $R$, and $\Omega_X\cong f^*\Omega_Y(R)$.
 The conormal sequence is exact on the left when $X$ and $Z$ are smooth over a field, and taking determinants then gives adjunction,
 \[
-\omega_Z = \left( \omega_X \tensor \dualof{\det(\mci/\mci^2)} \right)\ro{}{Z} .
+\omega_Z = \left( \omega_X \tensor \dualof{\det(\mci/\mci^2)} \right)\restrictionof{}{Z} .
 \]
 For a smooth curve $C$ on a smooth surface $X$, $\det(\mci/\mci^2)^\vee=\OO_X(C)|_C$, so $\omega_C=(\omega_X\otimes\OO_X(C))|_C$; see [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
 

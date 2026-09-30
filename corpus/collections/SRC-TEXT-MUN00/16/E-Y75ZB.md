@@ -28,7 +28,7 @@ audit:
 Show that the countable collection
 
 $$
-\ts{(a, b) \times (c, d) \mid a < b \text{ and } c < d, \text{ and } a, b, c, d \text{ rational}}
+\theset{(a, b) \times (c, d) \mid a < b \text{ and } c < d, \text{ and } a, b, c, d \text{ rational}}
 $$
 
 is a basis for $\mathbb{R}^2$.

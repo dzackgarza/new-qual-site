@@ -26,7 +26,7 @@ Small: $m(z) = f(z) - M(z) = \sum_{k\leq n-1} c_k z^k$.
 Now use that
 \[
 \abs{m(z) \over M(z)}
-&\da \abs{\inverseof{c_n} \sum_{k\leq n-1} c_k z^{k-n}} \\
+&\definedas \abs{\inverseof{c_n} \sum_{k\leq n-1} c_k z^{k-n}} \\
 &= \abs{\inverseof{c_n}\qty{ {c_1\over z^n} + {c_2\over z^{n-1} } + \cdots + {c_{n-1}\over z}  }} \\
 &\convergesto{\abs{z}\to\infty}0
 ,\]
@@ -47,7 +47,7 @@ An estimate: write $f(z) = \sum_{k\leq n} c_k z^k$ with $c_n = 1$, then for $R> 
 &\leq \sum_{k\leq n-1} \abs{ c_k} R^k \\
 &\leq \sum_{k\leq n-1} \abs{ c_k} R^{n-1} \\
 &= R^{n-1} \sum_{k\leq n-1} \abs{ c_k}  \\
-&\da R^{n-1} C \\
+&\definedas R^{n-1} C \\
 &\leq R^n \\
 &= \abs{z^n}
 ,\]

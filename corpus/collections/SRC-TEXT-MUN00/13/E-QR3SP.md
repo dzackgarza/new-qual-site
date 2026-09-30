@@ -28,7 +28,7 @@ Show that the collection $\mathcal{T}_c$ given in Example 4 of §12 is a topolog
 Is the collection
 
 $$
-\mathcal{T}_\infty = \ts{U \mid X - U \text{ is infinite or empty or all of } X}
+\mathcal{T}_\infty = \theset{U \mid X - U \text{ is infinite or empty or all of } X}
 $$
 
 a topology on $X$?

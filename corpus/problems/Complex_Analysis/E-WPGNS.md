@@ -25,9 +25,9 @@ Note that $f$ has finitely many zeros: since $f$ is unbounded, there is some $R$
 So $Z_f$ is a closed subset of a compact set, so is either finite or has an accumulation point.
 In the latter case, $f\equiv 0$ by the identity principle, so suppose not.
 
-Write $Z_f = \ts{z_k}_{k\leq n}$ for the $n$ many zeros of $f$, included with multiplicity, and set 
+Write $Z_f = \theset{z_k}_{k\leq n}$ for the $n$ many zeros of $f$, included with multiplicity, and set 
 \[
-\Phi(z) \da \prod_{k\leq n} (z-z_k), \qquad F(z) \da {\Phi(z) \over f(z) }
+\Phi(z) \definedas \prod_{k\leq n} (z-z_k), \qquad F(z) \definedas {\Phi(z) \over f(z) }
 .\]
 Now $F$ is a nonvanishing entire function.
 

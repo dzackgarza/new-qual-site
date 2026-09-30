@@ -110,7 +110,7 @@ Steps [](#define-h){.pf-ref} and [](#h-equals-unimodular){.pf-ref} give $f = hg 
 :::
 
 ::: {.solution}
-Define $F(z) \da {f(z) \over g(z)}$.
+Define $F(z) \definedas {f(z) \over g(z)}$.
 
 ::: {.claim}
 $F$ is holomorphic on $\Omega$.

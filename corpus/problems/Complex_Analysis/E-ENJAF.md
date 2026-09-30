@@ -17,13 +17,13 @@ review: draft
 ::: {.exercise}
 Find a Laurent expansion at $z=0$ for
 \[
-f(z) \da e^{1\over z}\cos\qty{1\over z}
+f(z) \definedas e^{1\over z}\cos\qty{1\over z}
 .\]
 
 :::
 
 ::: {.solution}
-Let $g(z) \da e^z\cos(z)$, an entire function with $g(1/z ) = f(z)$ for $z\ne0$.
+Let $g(z) \definedas e^z\cos(z)$, an entire function with $g(1/z ) = f(z)$ for $z\ne0$.
 The Taylor series of $g$ at $0$, evaluated at $1/z$, is the Laurent series of $f$ on $\abs z>0$:
 \[
 g(z) 

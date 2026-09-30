@@ -30,7 +30,7 @@ topics:
 ::: {.proof}
 Let $f\colon X\to Y$ be continuous with $X$ a compact metric space, and let $\varepsilon>0$.
 The sets $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$ for $y\in Y$ form an open cover of $X$; let $\delta>0$ be a Lebesgue number for it.
-If $d(x,x')<\delta$, then $\ts{x,x'}$ has diameter less than $\delta$, so it lies in some $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$, and $d(f(x),f(x'))<\varepsilon$.
+If $d(x,x')<\delta$, then $\theset{x,x'}$ has diameter less than $\delta$, so it lies in some $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$, and $d(f(x),f(x'))<\varepsilon$.
 
 :::
 
@@ -58,10 +58,10 @@ $f(x) = \sqrt x$ on $[0, 1]$ is uniformly continuous, being continuous on a comp
 [[T-UEXBK]]
 
 ::: {.proof}
-Let $B$ be compact and $A\subseteq B$ closed, and let $\ts{A_i}_{i\in I}$ be a cover of $A$ by sets open in $A$.
+Let $B$ be compact and $A\subseteq B$ closed, and let $\theset{A_i}_{i\in I}$ be a cover of $A$ by sets open in $A$.
 By definition of the subspace topology, $A_i = B_i \intersect A$ for some $B_i$ open in $B$.
-Since $A$ is closed, $W\coloneqq B\sm A$ is open, and $\ts{B_i}_{i\in I}\union\ts{W}$ is an open cover of $B$.
-A finite subcover $\ts{B_{i_1},\ldots,B_{i_k},W}$ exists by compactness, and $\ts{A_{i_1},\ldots,A_{i_k}}$ covers $A$.
+Since $A$ is closed, $W\coloneqq B\sm A$ is open, and $\theset{B_i}_{i\in I}\union\theset{W}$ is an open cover of $B$.
+A finite subcover $\theset{B_{i_1},\ldots,B_{i_k},W}$ exists by compactness, and $\theset{A_{i_1},\ldots,A_{i_k}}$ covers $A$.
 
 :::
 
@@ -69,7 +69,7 @@ A finite subcover $\ts{B_{i_1},\ldots,B_{i_k},W}$ exists by compactness, and $\t
 
 ::: {.proof}
 Let $f\colon X\to Y$ be continuous with $X$ compact, and let $\mathcal{U}$ be a cover of $f(X)$ by open subsets of $Y$.
-Since $f$ is continuous, $\ts{\inverseof{f}(U) \suchthat U\in\mathcal U}$ is an open cover of $X$, with a finite subcover $\inverseof{f}(U_1),\ldots,\inverseof{f}(U_k)$.
+Since $f$ is continuous, $\theset{\inverseof{f}(U) \suchthat U\in\mathcal U}$ is an open cover of $X$, with a finite subcover $\inverseof{f}(U_1),\ldots,\inverseof{f}(U_k)$.
 Then $U_1,\ldots,U_k$ cover $f(X)$.
 
 :::
@@ -102,7 +102,7 @@ If $A\subseteq X$ is closed, then $A$ is compact because $X$ is compact, so $f(A
 :::
 
 ::: {.example title="Retractions onto points"}
-For every $x_0 \in X$, the constant map $r\colon X \to \ts{x_0}$ is a [[D-NCLVD|retraction]] onto $\ts{x_0}$.
+For every $x_0 \in X$, the constant map $r\colon X \to \theset{x_0}$ is a [[D-NCLVD|retraction]] onto $\theset{x_0}$.
 
 :::
 
@@ -122,7 +122,7 @@ See [@Mun00, p. 104].
 [[T-G4GO4]]
 
 ::: {.proof}
-Let $N\subseteq X\cross Y$ be open with $\ts{x_0}\cross Y\subseteq N$.
+Let $N\subseteq X\cross Y$ be open with $\theset{x_0}\cross Y\subseteq N$.
 For each $y\in Y$, choose open sets $U_y\subseteq X$ and $V_y\subseteq Y$ with $(x_0,y)\in U_y\cross V_y\subseteq N$.
 Since $Y$ is compact, finitely many $V_{y_1},\ldots,V_{y_n}$ cover $Y$.
 Let $W\coloneqq \bigcap_{j=1}^n U_{y_j}$, an open set containing $x_0$.
@@ -132,7 +132,7 @@ Hence $W\cross Y\subseteq N$.
 :::
 
 ::: {.example title="The tube lemma fails without compactness"}
-In $\RR\cross\RR$, the open set $N\coloneqq\ts{(x,y) \suchthat \abs y < e^{-x^2}}$ contains the slice $\RR\cross\ts{0}$, and it contains no tube $\RR\cross(-\delta,\delta)$ with $\delta>0$, since $e^{-x^2}<\delta$ for large $\abs x$.
+In $\RR\cross\RR$, the open set $N\coloneqq\theset{(x,y) \suchthat \abs y < e^{-x^2}}$ contains the slice $\RR\cross\theset{0}$, and it contains no tube $\RR\cross(-\delta,\delta)$ with $\delta>0$, since $e^{-x^2}<\delta$ for large $\abs x$.
 Here the slice is taken in the noncompact factor $\RR$.
 
 ![The region between a Gaussian and its reflection](../../../../assets/assets/figures/image_2021-05-21-01-39-26.png)

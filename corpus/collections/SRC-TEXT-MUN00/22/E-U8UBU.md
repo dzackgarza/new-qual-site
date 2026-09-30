@@ -20,7 +20,7 @@ audit:
 ::: {.exercise}
 
 Let $H$ be a subgroup of the topological group $G$.
-If $x \in G$, define $xH = \ts{x \cdot h \mid h \in H}$; this set is called a left coset of $H$ in $G$.
+If $x \in G$, define $xH = \theset{x \cdot h \mid h \in H}$; this set is called a left coset of $H$ in $G$.
 Let $G/H$ denote the collection of left cosets of $H$ in $G$; it is a partition of $G$.
 Give $G/H$ the quotient topology.
 

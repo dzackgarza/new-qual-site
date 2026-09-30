@@ -28,7 +28,7 @@ $$
 $$
 and if $\det A$ is invertible, the adjugate gives the inverse:
 $$
-\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
+\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \definedas (-1)^{i+j} \det \minor_A(j, i).
 $$
 :::
 
@@ -59,7 +59,7 @@ $$
 ::: {.fact title="Powers of an upper-triangular matrix"}
 If $A$ is upper triangular, the diagonal entries of $A^k$ are the $k$th powers of the diagonal entries of $A$:
 $$
-A\da\left(\begin{array}{ccc}
+A\definedas\left(\begin{array}{ccc}
 a_1 & & * \\
 & \ddots & \\
 0 & & a_n
@@ -75,7 +75,7 @@ By induction on $k$: a product of upper-triangular matrices is upper triangular,
 :::
 
 ::: {.example title="Polynomial long division"}
-For $f(x) \da x^3-6x^2+12x-8$, every rational root lies in $\ts{\pm 8, \pm 4, \pm 2, \pm 1}$.
+For $f(x) \definedas x^3-6x^2+12x-8$, every rational root lies in $\theset{\pm 8, \pm 4, \pm 2, \pm 1}$.
 Since $f(2) = 0$, divide by $x-2$:
 
 ![](../../../assets/figures/2021-07-24_18-32-38.png)

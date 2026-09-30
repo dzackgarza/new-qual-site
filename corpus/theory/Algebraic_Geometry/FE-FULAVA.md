@@ -43,7 +43,7 @@ and
 \det \begin{bmatrix} 0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0 \end{bmatrix} = 2 ,
 \]
 so they generate a sublattice of index $2$ in $M = \ZZ^3$.
-The semigroup $\ts{m - v \st m \in P \intersect M}$ is therefore not saturated, which is exactly the clause very ampleness requires, and $D$ fails it.
+The semigroup $\theset{m - v \st m \in P \intersect M}$ is therefore not saturated, which is exactly the clause very ampleness requires, and $D$ fails it.
 :::
 
 ::: {.remark title="What the map does"}

@@ -66,7 +66,7 @@ Use transitivity of characteristic.
 
 - All Sylows are conjugate, so for any $S' \in \Syl_p(G)$ we can write $S' = gS\inverseof{g}$ for some $g$.
 
-- Then using that $H$ is normal, $H \subseteq S \implies H = gH\inverseof{g} \subseteq gS\inverseof{g} \da S'$.
+- Then using that $H$ is normal, $H \subseteq S \implies H = gH\inverseof{g} \subseteq gS\inverseof{g} \definedas S'$.
   So $H$ is contained in every Sylow $p\dash$subgroup.
 
 :::
@@ -99,7 +99,7 @@ Use transitivity of characteristic.
 
   - $A\ch B$ iff $A$ is fixed by every $\psi\in \Aut(B)$., WTS $cA\inverseof{c} = A$ for all $c\in C$.
 
-  - Since $B\normal C$, the automorphism $\psi(\wait) \da c(\wait)\inverseof{c}$ descends to an element of $\Aut(B)$.
+  - Since $B\normal C$, the automorphism $\psi(\wait) \definedas c(\wait)\inverseof{c}$ descends to an element of $\Aut(B)$.
 
   - Then $\psi(A) = A$ since $A\ch B$, so $cA\inverseof{c} = A$ and $A\normal C$.
 :::

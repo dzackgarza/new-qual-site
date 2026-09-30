@@ -24,7 +24,7 @@ Let $X$ be a metric space with metric $d$; let $A \subset X$ be nonempty.
 (c) Define the $\epsilon$-neighborhood of $A$ in $X$ to be the set
 
 $$
-U(A, \epsilon) = \ts{x \mid d(x, A) < \epsilon}.
+U(A, \epsilon) = \theset{x \mid d(x, A) < \epsilon}.
 $$
 
 Show that $U(A, \epsilon)$ equals the union of the open balls $B_d(a, \epsilon)$ for $a \in A$.

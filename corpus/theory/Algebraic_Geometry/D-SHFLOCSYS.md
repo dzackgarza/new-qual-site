@@ -19,8 +19,8 @@ prompts:
 ---
 
 ::: {.definition title="Constant sheaf"}
-Let $A$ be an abelian group with the discrete topology. The \dfn{constant sheaf} $\ul{A}$ on a topological space $X$ has $\ul{A}(U)$ the group of continuous maps $U \to A$, with restriction of functions.
-If $U$ is open and connected, then $\ul{A}(U) = A$; more generally, if every connected component of the open set $U$ is open, then $\ul{A}(U) = \prod_{\pi_0(U)} A$, one factor for each connected component.
+Let $A$ be an abelian group with the discrete topology. The \dfn{constant sheaf} $\underline{A}$ on a topological space $X$ has $\underline{A}(U)$ the group of continuous maps $U \to A$, with restriction of functions.
+If $U$ is open and connected, then $\underline{A}(U) = A$; more generally, if every connected component of the open set $U$ is open, then $\underline{A}(U) = \prod_{\pi_0(U)} A$, one factor for each connected component.
 [@Har10a, §II.1]
 :::
 
@@ -36,6 +36,6 @@ The constant local systems correspond to the trivial representations, and $\Gamm
 :::
 
 ::: {.example}
-For the double cover $f \colon S^1 \to S^1$, $z \mapsto z^2$, the pushforward $f_* \ul{\QQ}$ is the local system of rank $2$ whose monodromy sends the generator of $\pi_1(S^1) = \ZZ$ to the swap of the two coordinates of $\QQ^2$.
-It decomposes as the constant local system $\ul{\QQ}$ plus the rank-one local system with monodromy $-1$, which has no nonzero global sections.
+For the double cover $f \colon S^1 \to S^1$, $z \mapsto z^2$, the pushforward $f_* \underline{\QQ}$ is the local system of rank $2$ whose monodromy sends the generator of $\pi_1(S^1) = \ZZ$ to the swap of the two coordinates of $\QQ^2$.
+It decomposes as the constant local system $\underline{\QQ}$ plus the rank-one local system with monodromy $-1$, which has no nonzero global sections.
 :::

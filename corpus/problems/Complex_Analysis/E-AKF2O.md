@@ -18,7 +18,7 @@ review: draft
 ::: {.exercise}
 
 \[
-I \da \int_{-\infty}^{\infty} \frac{d x}{\left(1+x^{2}\right)^{n+1}}=\frac{(2 n) !}{4^{n}(n !)^{2}} \pi .
+I \definedas \int_{-\infty}^{\infty} \frac{d x}{\left(1+x^{2}\right)^{n+1}}=\frac{(2 n) !}{4^{n}(n !)^{2}} \pi .
 \]
 
 Note that this solution can be written many ways:

@@ -29,7 +29,7 @@ prompts:
 Let $X = V(f) \subseteq \PP^2_{/\ZZ}$ with $f \in \ZZ[x,y,z]$ a cubic whose base change to $\CC$ is smooth.
 For all but finitely many primes the reduction $X_{(p)} \subseteq \PP^2_{/\FF_p}$ is again smooth, and one can ask for
 \[
-B \da \ts{ p \st X_{(p)} \text{ is smooth over } \bar\FF_p \text{ and has Hasse invariant } 0 } .
+B \definedas \theset{ p \st X_{(p)} \text{ is smooth over } \bar\FF_p \text{ and has Hasse invariant } 0 } .
 \]
 The answer depends entirely on whether $X_{/\CC}$ has complex multiplication:
 
@@ -39,7 +39,7 @@ The answer depends entirely on whether $X_{/\CC}$ has complex multiplication:
 
 - **Without CM**: $B$ has density $0$, and $B$ is nevertheless infinite.
   Both of these are theorems, the second Elkies'.
-  A finer count is not known: the expected asymptotic $\abs{\ts{p \in B \st p \leq x}} \sim c\,\tfrac{\sqrt x}{\log x}$ is the Lang--Trotter conjecture and is open.
+  A finer count is not known: the expected asymptotic $\abs{\theset{p \in B \st p \leq x}} \sim c\,\tfrac{\sqrt x}{\log x}$ is the Lang--Trotter conjecture and is open.
 :::
 
 ::: {.remark title="What is proved and what is not"}

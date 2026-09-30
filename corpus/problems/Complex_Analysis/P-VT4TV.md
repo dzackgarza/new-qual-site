@@ -23,7 +23,7 @@ Note that the leading coefficient of the expansion for $\sin(z)$ is 0, so this c
 A standard trick: factor out the smallest power of $z$ to get a piece with a nonzero leading coefficient, and invert that instead.
 Write
 \[
-\sin(z) = z - {1\over 3!}z^3 + {1\over 5!}z^5 - \bigo(z^7) = z f(z) \da z(1 + c_2z^2 + c_4 z^4 + \bigo(z^6))
+\sin(z) = z - {1\over 3!}z^3 + {1\over 5!}z^5 - \bigo(z^7) = z f(z) \definedas z(1 + c_2z^2 + c_4 z^4 + \bigo(z^6))
 ,\]
 where
 
@@ -35,7 +35,7 @@ where
 
 - $c_i = 0$ for $i$ odd.
 
-Writing $B(z) \da {1\over f(z)} = \sum b_k z^k$, we have
+Writing $B(z) \definedas {1\over f(z)} = \sum b_k z^k$, we have
 
 - $b_0 = \inverseof{c_0} = 1$
 

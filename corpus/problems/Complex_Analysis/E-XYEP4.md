@@ -23,7 +23,7 @@ review: draft
 :::
 
 ::: {.solution}
-Write $f(z) \da (z^2-1)^{-{1\over 2}}/z$.
+Write $f(z) \definedas (z^2-1)^{-{1\over 2}}/z$.
 In order for $(z^2-1)^{-{1\over 2}}$ to be well-defined, one needs to introduce a branch cut.
 Note that $f$ has a simple pole at $z=0$ and is holomorphic away from $z=0$ **if** $z^2-1$ is not on the positive real axis, where we've chosen the branch cut $\theta = 0$ for $\Log(z)$ and define $z^{1\over 2} = e^{{1\over 2}\Log(z)}$.
 But $z^2-1 \in \RR_{\geq 0} \iff z\in [-1, 1]^c$, which is what we've cut.
@@ -35,20 +35,20 @@ So take the branch cut $(-\infty, 1] \union [1, \infty)$ and use the following i
 Contributions along $C_8$ and $C_6$: note that $\int_{C_8}f \to I$, the desired integral.
 For reference, note that $z^2-1 = (z+1)(z-1)$, and we can parameterize
 \[
-C_8 = \ts{t+1+ i\eps \st t\in [\eps, R] } \implies \\
+C_8 = \theset{t+1+ i\eps \st t\in [\eps, R] } \implies \\
 \int_{C_8}f(z)\dz \to \int_0^\infty \inverseof{t} (t+2)^{-{1\over 2}} t^{-{1\over 2}} \dt
 ,\]
 where on $C_8$ we choose a branch of the square root so that $\arg(z+1) \in [-\pi, \pi)$ and $\arg(z-1)\in [-\pi, \pi)$.
 Now consider $C_6$.
-Write $\zeta_0 \da e^{2\pi i}$, then
+Write $\zeta_0 \definedas e^{2\pi i}$, then
 \[
-C_6 = \ts{\zeta_0 t + 1 - i\eps \st t\in [\eps, R]} \implies \\
+C_6 = \theset{\zeta_0 t + 1 - i\eps \st t\in [\eps, R]} \implies \\
 \int_{C_6} f(z)\dz
 &\to \int_R^{\eps} \inverseof{(\zeta_0 t)}(\zeta_0 t + 2)^{-{1\over 2}}(\zeta_0 t)^{-{1\over 2}}\dt \\
 &\to -\zeta_0^{-{3 \over 2}} \int_0^\infty \inverseof{t} (t+2)^{-{1\over 2}} t^{-{1\over 2}}\dt \\
 &= I
 ,\]
-since $-\zeta_0^{-{3\over 2}} \da -e^{-3\pi i} = 1$.
+since $-\zeta_0^{-{3\over 2}} \definedas -e^{-3\pi i} = 1$.
 So in the limit $\eps\to 0, R\to\infty$,
 \[
 \qty{ \int_{C_8} + \int_{C_6}}f \too 2I
@@ -56,7 +56,7 @@ So in the limit $\eps\to 0, R\to\infty$,
 
 The contribution from $C_2$: parameterize
 \[
-C_2 = \ts{s + i\eps \st x\in [-R, -1-\eps]}
+C_2 = \theset{s + i\eps \st x\in [-R, -1-\eps]}
 ,\]
 which implies
 \[

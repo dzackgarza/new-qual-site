@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I\da \int_{-1}^1 \sqrt{1-x^2} \dx = {\pi \over 2}
+I\definedas \int_{-1}^1 \sqrt{1-x^2} \dx = {\pi \over 2}
 .\]
 
 :::
@@ -29,18 +29,18 @@ Take a branch cut $[-1, 1]$ and $\Gamma$ the standard dogbone contour:
 
 Orient $\Gamma$ positively about *infinity*, i.e. counterclockwise.
 
-Contribution from $\gamma_1 \da\ts{t+i\eps \st t\in [-1, 1]}$, the upper horizontal piece:
+Contribution from $\gamma_1 \definedas\theset{t+i\eps \st t\in [-1, 1]}$, the upper horizontal piece:
 \[
 \int_{\gamma_1}f(z)\dz \to \int_{-1}^1 \sqrt{1-t^2} \dt = I
 .\]
 
-Contribution from $\gamma_2\da\ts{t-i\eps \st t\in [-1, 1]}$, the lower horizontal piece:
+Contribution from $\gamma_2\definedas\theset{t-i\eps \st t\in [-1, 1]}$, the lower horizontal piece:
 note that following $e^{2\pi i t}z$ to $t=1$ sends $\sqrt{z}$ to $-\sqrt{z}$, so
 \[
 \int_{\gamma_2}f(z)\dz \to \int_{1}^{-1} - \sqrt{1-t^2} \dt = I
 .\]
 
-Contributions from the circles: use that $f(z) \da \sqrt{z^2-1}$ is a continuous function and these arcs are compact, so they are uniformly bounded.
+Contributions from the circles: use that $f(z) \definedas \sqrt{z^2-1}$ is a continuous function and these arcs are compact, so they are uniformly bounded.
 Thus $\int f\to 0$ by the ML estimate on these arcs.
 
 The total contribution:

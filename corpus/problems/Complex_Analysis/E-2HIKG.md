@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I\da \int_0^\infty {x^{1\over 3} \over 1 + x^2} \dx = {\pi \over \sqrt 3}.
+I\definedas \int_0^\infty {x^{1\over 3} \over 1 + x^2} \dx = {\pi \over \sqrt 3}.
 \]
 :::
 

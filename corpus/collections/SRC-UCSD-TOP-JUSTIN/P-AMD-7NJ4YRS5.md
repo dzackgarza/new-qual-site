@@ -20,7 +20,7 @@ audit:
 
 ::: {.problem}
 Define $M$ as the group ring $R = \ZZ[\ZZ_2]$ with the action $(\cdot) \times -1$.
-Construct a free resolution of $M$ and compute $\tor_R^*(M, M)$.
+Construct a free resolution of $M$ and compute $\Tor_R^*(M, M)$.
 :::
 
 ::: {.solution}

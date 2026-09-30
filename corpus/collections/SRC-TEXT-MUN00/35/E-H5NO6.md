@@ -22,7 +22,7 @@ If $Y$ is a subspace of $Z$, we say that $Y$ is a retract of $Z$ if there is a c
 (b) Let $A$ be a two-point set in $\mathbb{R}^2$.
 Show that $A$ is not a retract of $\mathbb{R}^2$.
 
-(c) Let $S^1$ be the unit circle in $\mathbb{R}^2$; show that $S^1$ is a retract of $\mathbb{R}^2 - \ts{\mathbf{0}}$, where $\mathbf{0}$ is the origin.
+(c) Let $S^1$ be the unit circle in $\mathbb{R}^2$; show that $S^1$ is a retract of $\mathbb{R}^2 - \theset{\mathbf{0}}$, where $\mathbf{0}$ is the origin.
 Can you conjecture whether or not $S^1$ is a retract of $\mathbb{R}^2$?
 :::
 

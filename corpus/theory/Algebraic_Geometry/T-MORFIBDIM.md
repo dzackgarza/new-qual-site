@@ -49,7 +49,7 @@ If $f$ is flat then $\dim_x X_{f(x)} = \dim_x X - \dim_{f(x)} Y$ at every point,
 
 ::: {.remark}
 Upper semicontinuity means fibre dimension can jump **up** on special loci, never down.
-The blowup is the model: fibre dimension $0$ generically, $1$ over the origin, and the jump locus $\ts{0}$ is closed.
+The blowup is the model: fibre dimension $0$ generically, $1$ over the origin, and the jump locus $\theset{0}$ is closed.
 It cannot go the other way, because a component of a fibre is cut out by $\dim Y$ equations locally and Krull's height theorem bounds the drop.
 
 The two halves are used differently.

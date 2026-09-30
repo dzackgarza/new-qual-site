@@ -25,7 +25,7 @@ Show that
 
 2. $\sum k^{-2} z^k$ converges on $S^1$.
 
-3. $\sum \inverseof{k} z^k$ converges on $S^1\sm\ts{1}$ and diverges at $1$.
+3. $\sum \inverseof{k} z^k$ converges on $S^1\sm\theset{1}$ and diverges at $1$.
 :::
 
 ::: {.solution}
@@ -39,7 +39,7 @@ Show that
   It suffices to bound the partial sums of the $b_k$.
   Recalling that $\sum_{k\leq N} r^k = (1-r^{N+1}) / (1-r)$,
   \[
-  \norm{ \sum_{k\leq m} e^{ik\theta } } = \norm{1 - e^{i(m+1)\theta} \over 1 - e^{i\theta}} \leq {2 \over \norm{ 1- e^{i\theta}}} \da M
+  \norm{ \sum_{k\leq m} e^{ik\theta } } = \norm{1 - e^{i(m+1)\theta} \over 1 - e^{i\theta}} \leq {2 \over \norm{ 1- e^{i\theta}}} \definedas M
   ,\]
   which is a constant.
   Here we've used that two points on $S^1$ are at most distance 2 from each other.

@@ -30,7 +30,7 @@ Then
 ,\]
 so choose $\delta < { \eps \over 2R}$ to get uniform continuity on $\DD_{R/2}(0)$.
 
-To see $f$ can't be uniformly continuous on $\CC$, take $\eps \da c$ any constant and suppose the appropriate $\delta$ exists.
+To see $f$ can't be uniformly continuous on $\CC$, take $\eps \definedas c$ any constant and suppose the appropriate $\delta$ exists.
 We'll look for a bad pair of $z, w$, so take $w = z + {1\over 2}\delta$.
 This would imply
 \[

@@ -36,7 +36,7 @@ A **group variety** consists of a variety $Y$ together with a morphism $\mu: Y \
 (a) The **additive group** $\GG_a$ is the variety $\AA^1$ with the morphism $\mu: \AA^1 \times \AA^1 \to \AA^1$ defined by $\mu(a,b) = a+b$.
     Show that it is a group variety.
 
-(b) The **multiplicative group** $\GG_m$ is the variety $\AA^1 \sm \ts{0}$ with the morphism $\mu(a,b) = ab$.
+(b) The **multiplicative group** $\GG_m$ is the variety $\AA^1 \sm \theset{0}$ with the morphism $\mu(a,b) = ab$.
     Show that it is a group variety.
 
 (c) If $G$ is a group variety and $X$ is any variety, show that the set $\Hom(X, G)$ has a natural group structure.

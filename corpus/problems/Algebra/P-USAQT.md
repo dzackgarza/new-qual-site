@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-USAQT
 kind: problem
-title: Ideals, $\spec$, $\maxspec$, and radicals
+title: Ideals, $\Spec$, $\maxspec$, and radicals
 classification:
   areas:
   - algebra

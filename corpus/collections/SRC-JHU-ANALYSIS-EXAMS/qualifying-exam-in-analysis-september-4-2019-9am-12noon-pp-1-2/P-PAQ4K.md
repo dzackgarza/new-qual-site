@@ -51,7 +51,7 @@ The $f_n$ are nonnegative and measurable, and $f=\liminf_nf_n$ pointwise, so Fat
 
 ::: {.pf-step #s2}
 
-(b) No: $g_n\da\bigl(1-\frac1n\bigr)T_n+\frac1n$, with $T_n$ the tent of height $2n$ on $[0,\frac1n]$, is a counterexample.
+(b) No: $g_n\definedas\bigl(1-\frac1n\bigr)T_n+\frac1n$, with $T_n$ the tent of height $2n$ on $[0,\frac1n]$, is a counterexample.
 
 ::: pf-proof
 

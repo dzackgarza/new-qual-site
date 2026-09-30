@@ -27,7 +27,7 @@ T(w)=\frac{i-w}{i+w}.
 \]
 Then
 \[
-F\da T\circ f:\CC\to\DD
+F\definedas T\circ f:\CC\to\DD
 \]
 is entire and bounded.
 By Liouville's theorem, $F\equiv c$ for some $c\in\DD$.

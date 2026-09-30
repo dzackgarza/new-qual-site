@@ -70,15 +70,15 @@ M\qty{ (b_1 \tensor c_1),  (b_2\tensor c_2)} &= (b_1 \cdot_B b_2) \tensor (c_1 \
 - Check $A\dash$bilinearity:
 \[
 P(a\cdot (b_1\tensor c_1),\, (b_2\tensor c_2))
-&\da \qty{ a \cdot (b_1 + b_2)} \tensor (c_1 + c_2)  \\
+&\definedas \qty{ a \cdot (b_1 + b_2)} \tensor (c_1 + c_2)  \\
 &= \qty{ (b_1 + b_2)} \tensor a\cdot (c_1 + c_2) \quad\text{since $C$ is a left $A\dash$module} \\
-&\da P((b_1\tensor c_1),\, a\cdot (b_2\tensor c_2))
+&\definedas P((b_1\tensor c_1),\, a\cdot (b_2\tensor c_2))
 ,\]
 \[
 M(a\cdot (b_1\tensor c_1),\, (b_2\tensor c_2))
-&\da \qty{a\cdot (b_1 \cdot b_2)} \tensor (c_1 \cdot c_2) \\
+&\definedas \qty{a\cdot (b_1 \cdot b_2)} \tensor (c_1 \cdot c_2) \\
 &= (b_1 \cdot b_2) \tensor \qty{ a\cdot (c_1 \cdot c_2) } \quad\text{since $C$ is a left $A\dash$module} \\
-&\da M((b_1\tensor c_1),\, a\cdot (b_2\tensor c_2))
+&\definedas M((b_1\tensor c_1),\, a\cdot (b_2\tensor c_2))
 .\]
 
 - So these lift to maps out of $(B\tensor_A C)^{\tensor 2}$.

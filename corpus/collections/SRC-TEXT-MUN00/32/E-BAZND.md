@@ -40,7 +40,7 @@ $$
 of integers, for each $i \geq 1$ let us set
 
 $$
-B_i = \ts{\alpha_1, \dots, \alpha_{n_i}}
+B_i = \theset{\alpha_1, \dots, \alpha_{n_i}}
 $$
 
 and define $\mathbf{x}_i \in X$ by the equations
@@ -60,7 +60,7 @@ $$
 
 [Hint: To begin, note that $\mathbf{x}_1(\alpha) = 1$ for all $\alpha$; now choose $B_1$ so that $U(\mathbf{x}_1, B_1) \subset U$.]
 
-(d) Let $A$ be the set $\ts{\alpha_1, \alpha_2, \ldots}$ constructed in (c). Define $\mathbf{y}: J \to \mathbb{Z}_+$ by the equations
+(d) Let $A$ be the set $\theset{\alpha_1, \alpha_2, \ldots}$ constructed in (c). Define $\mathbf{y}: J \to \mathbb{Z}_+$ by the equations
 
 $$
 \mathbf{y}(\alpha_j) = j \quad \text{for } \alpha_j \in A,

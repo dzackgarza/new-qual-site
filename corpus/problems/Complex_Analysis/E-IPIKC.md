@@ -37,6 +37,6 @@ Apply the Cauchy estimate on the circle of radius $\rho\geq R$:
 .\]
 So $f$ is a polynomial of degree at most $n$.
 
-If the bound holds on all of $\CC\setminus\theset0$, then $h(z) \da f(z)/z^n$ is bounded near $0$, so its singularity at $0$ is removable, and $h$ is a bounded entire function. By Liouville $h$ is constant, and $f(z) = cz^n$.
+If the bound holds on all of $\CC\setminus\theset0$, then $h(z) \definedas f(z)/z^n$ is bounded near $0$, so its singularity at $0$ is removable, and $h$ is a bounded entire function. By Liouville $h$ is constant, and $f(z) = cz^n$.
 :::
 

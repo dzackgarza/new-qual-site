@@ -31,11 +31,11 @@ The classes of rings, each with a ring separating it from the next, are on [[alg
 
 **Subrings of a PID.** A subring of a [[D-HTIL5|principal ideal domain]] need not be one: $\ZZ[x] \subseteq \QQ[x]$.
 
-**Polynomial rings over a PID.** If $R$ is a principal ideal domain, $R[x]$ need not be: the ideal $\gens{2,x}\normal\ZZ[x]$ is not principal.
+**Polynomial rings over a PID.** If $R$ is a principal ideal domain, $R[x]$ need not be: the ideal $\generators{2,x}\normal\ZZ[x]$ is not principal.
 
 ## Modules
 
-**Torsion-free modules.** A [[D-ZJJ7G|torsion-free]] module over an integral domain need not be [[D-LIEMF|free]]; the ideal $\gens{2,x}\subseteq \ZZ[x]$ is torsion-free and not free.
+**Torsion-free modules.** A [[D-ZJJ7G|torsion-free]] module over an integral domain need not be [[D-LIEMF|free]]; the ideal $\generators{2,x}\subseteq \ZZ[x]$ is torsion-free and not free.
 
 **Projective modules.** A [[D-RHJMK|projective module]] need not be free: $\ZZ/2$ is a direct summand of $\ZZ/6\cong \ZZ/2\times\ZZ/3$, hence projective over $\ZZ/6$, and it is not free because it has $2$ elements.
 

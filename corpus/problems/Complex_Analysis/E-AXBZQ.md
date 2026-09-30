@@ -27,10 +27,10 @@ Write $f(z) = {ze^{iz} \over 1+z^2}$. Since $f\in \bigo\qty{1\over z}$ on the se
 
 ![Semicircular contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-14-14.png)
 
-Write $f(z) = e^{iz}g(z)$ where $g(z) \da {z\over 1 + z^2}$.
-Write $C_1 = [-R, R]$ and $C_R = \ts{Re^{it} \st t\in [0, \pi]}$. By Jordan's lemma,
+Write $f(z) = e^{iz}g(z)$ where $g(z) \definedas {z\over 1 + z^2}$.
+Write $C_1 = [-R, R]$ and $C_R = \theset{Re^{it} \st t\in [0, \pi]}$. By Jordan's lemma,
 \[
-\abs{\int_{C_R} e^{iz} g(z)\dz }\leq \pi M_R,\, \qquad M_R \da \sup_{z\in C_R}\abs{z\over 1+z^2}\leq {R\over R^2-1}
+\abs{\int_{C_R} e^{iz} g(z)\dz }\leq \pi M_R,\, \qquad M_R \definedas \sup_{z\in C_R}\abs{z\over 1+z^2}\leq {R\over R^2-1}
 ,\]
 so the arc integral tends to zero.
 By the residue theorem,

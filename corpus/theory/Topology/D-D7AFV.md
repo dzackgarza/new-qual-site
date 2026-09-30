@@ -19,6 +19,6 @@ A point $p\in A$ is an \dfn{isolated point} of $A$ if $p$ is not a [[D-Y6JAS|lim
 :::
 
 ::: {.proposition}
-A point $p\in A$ is an isolated point of $A$ if and only if there is a [[D-JMRPA|neighborhood]] $U$ of $p$ with $U\cap A = \ts{p}$.
+A point $p\in A$ is an isolated point of $A$ if and only if there is a [[D-JMRPA|neighborhood]] $U$ of $p$ with $U\cap A = \theset{p}$.
 :::
 

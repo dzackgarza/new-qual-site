@@ -21,13 +21,13 @@ review: draft
 Let $X$ be a locally Noetherian scheme, for example a variety, let $p\in X$, and let $(\OO_{X,p},\mfm_p)$ be the local ring at $p$.
 For $f\in\OO_{X,p}$, define the order of vanishing of $f$ at $p$ as
 $$
-\ord_p(f)\coloneqq\sup\theset{n\ge0\suchthat f\in\mfm_p^n}\in\ZZ_{\ge0}\cup\theset{\infty}.
+\order_p(f)\coloneqq\sup\theset{n\ge0\suchthat f\in\mfm_p^n}\in\ZZ_{\ge0}\cup\theset{\infty}.
 $$
-Then $\ord_p(f)=\infty$ if and only if $f=0$: a nonzero function vanishes to finite order at $p$.
+Then $\order_p(f)=\infty$ if and only if $f=0$: a nonzero function vanishes to finite order at $p$.
 :::
 
 ::: {.proof}
-The local ring $\OO_{X,p}$ is Noetherian, and $\ord_p(f)=\infty$ means $f\in\bigcap_{n\ge0}\mfm_p^n$, which is $0$ by [[FF-3K36R|Krull's intersection theorem]].
+The local ring $\OO_{X,p}$ is Noetherian, and $\order_p(f)=\infty$ means $f\in\bigcap_{n\ge0}\mfm_p^n$, which is $0$ by [[FF-3K36R|Krull's intersection theorem]].
 :::
 
 ::: {.remark}

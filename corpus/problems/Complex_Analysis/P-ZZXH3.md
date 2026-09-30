@@ -30,10 +30,10 @@ Show that $g$ is entire.
 By Fubini:
 \[
 \oint_T g(z)\dz 
-&\da \oint_T \int_\RR f(t)e^{-izt} \dt\dz \\
-&\da \int_\RR \oint_T f(t)e^{-izt} \dz\dt \\
-&\da \int_\RR f(t) \qty{ \oint_T e^{-izt} \dz } \dt \\
-&\da \int_\RR f(t) \cdot 0 \dt \\
+&\definedas \oint_T \int_\RR f(t)e^{-izt} \dt\dz \\
+&\definedas \int_\RR \oint_T f(t)e^{-izt} \dz\dt \\
+&\definedas \int_\RR f(t) \qty{ \oint_T e^{-izt} \dz } \dt \\
+&\definedas \int_\RR f(t) \cdot 0 \dt \\
 &= 0
 ,\]
 where the inner integral vanishes because $z\mapsto e^{-izt}$ is entire by Goursat's theorem.

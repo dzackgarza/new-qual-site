@@ -23,7 +23,7 @@ prompts:
 
 ::: {.example title="The recipe"}
 Let $\sigma \subseteq \RR^2$ be a two-dimensional cone.
-Take the convex hull of $(\sigma \intersect N) \sm \ts{0}$.
+Take the convex hull of $(\sigma \intersect N) \sm \theset{0}$.
 Its compact boundary is a broken line through finitely many lattice points; the rays through those points are exactly the rays of the minimal resolution.
 Every cone of the refined fan is then smooth, and the resolution is minimal because no exceptional curve has self-intersection $-1$.
 :::

@@ -17,7 +17,7 @@ review: draft
 
 Find a conformal map $L\to \DD$ where
 \[
-L\da \ts{\abs{z - i } < \sqrt 2} \intersect \ts{\abs{z+i} < \sqrt 2}
+L\definedas \theset{\abs{z - i } < \sqrt 2} \intersect \theset{\abs{z+i} < \sqrt 2}
 ,\]
 i.e. a lune with vertices $-1$ and $1$.
 

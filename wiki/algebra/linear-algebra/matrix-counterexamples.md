@@ -73,10 +73,10 @@ has determinant $1$, so it is invertible, and it is the Jordan block $J_3(1)$, s
 The matrices
 $$
 M_1
-\da
+\definedas
 \matt 0 {-1} 1 0, \qquad
 M_2
-\da
+\definedas
 \matt 0 1 {-1} 0
 $$
 are distinct and satisfy $M_1^2 = M_2^2 = -I$.

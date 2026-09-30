@@ -25,7 +25,7 @@ audit:
 Show that a nonzero nilpotent matrix $A$ is not diagonalizable over any field.
 Some useful facts:
 
-- $\spec A = \ts{0}$: if $Av=\lambda v$ and $A^N=0$, then $0=A^Nv=\lambda^N v$, so $\lambda=0$.
+- $\Spec A = \theset{0}$: if $Av=\lambda v$ and $A^N=0$, then $0=A^Nv=\lambda^N v$, so $\lambda=0$.
   Thus every Jordan block is nilpotent.
 
 - If $r$ is the nilpotency index of $A$, then $\min_A(x)=x^r$.

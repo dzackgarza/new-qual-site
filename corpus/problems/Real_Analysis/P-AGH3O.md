@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Consider the function
 \[
-f(x) \da 
+f(x) \definedas 
 \begin{cases}
 {1\over \abs{x} \qty{ \log\qty{1\over x}}^2 } &  \abs{x} \leq {1\over 2}
 \\

@@ -44,6 +44,6 @@ But then $f(X_1) = \emptyset$, forcing $f(X) = Y_2$.
 ::: {.remark}
 Erratum: both parts of the solution contain false or undefined steps.
 
-- Part a rests on the claim that every subset of a connected space is connected, which is false: $\ts{0,1}\subset\RR$ is disconnected. The decomposition should be taken with $Y_1,Y_2$ disjoint, nonempty and open in the subspace $f(X)$; then $f^{-1}(Y_1)$ and $f^{-1}(Y_2)$ are disjoint nonempty open subsets of $X$ whose union is all of $X$, which contradicts connectedness of $X$ directly.
+- Part a rests on the claim that every subset of a connected space is connected, which is false: $\theset{0,1}\subset\RR$ is disconnected. The decomposition should be taken with $Y_1,Y_2$ disjoint, nonempty and open in the subspace $f(X)$; then $f^{-1}(Y_1)$ and $f^{-1}(Y_2)$ are disjoint nonempty open subsets of $X$ whose union is all of $X$, which contradicts connectedness of $X$ directly.
 - In part b the sets $Y_i$ should be proper closed subsets of the subspace $f(X)$, and $X_1$ is never defined. Since $X=f^{-1}(Y_1)\union f^{-1}(Y_2)$ with both preimages closed, irreducibility of $X$ gives $X=f^{-1}(Y_i)$ for some $i$, hence $f(X)\subseteq Y_i$, contradicting properness of $Y_i$.
 :::

@@ -22,7 +22,7 @@ topics:
 
 - the Klein bottle $\KK$;
 
-- the Möbius band $\bbm$;
+- the Möbius band $\bM$;
 
 - the closed orientable surface of genus $g$, $\Sigma_g \coloneqq \#_{i=1}^g \TT^2$.
 
@@ -66,7 +66,7 @@ Removing the interiors of $b$ disjoint discs lowers $\chi$ by $b$.
 | Yes | $\Sigma_3$ | none | $\Sigma_2$ | none | $\TT^2$ | none | $\SS^2$ |
 | No | $N_6$ | $N_5$ | $N_4$ | $N_3$ | $\KK$ | $\RP^2$ | none |
 
-With boundary, $\chi=0$ also includes the annulus $S^1\cross I$ and the Möbius band $\bbm$, and $\chi=1$ includes the disc $\DD^2$.
+With boundary, $\chi=0$ also includes the annulus $S^1\cross I$ and the Möbius band $\bM$, and $\chi=1$ includes the disc $\DD^2$.
 
 :::
 
@@ -139,7 +139,7 @@ $$
 ## Manifolds
 
 ::: {.fact title="Local homology"}
-If $M$ is an $n$-manifold and $x\in M$ is an interior point, then by excision $H_k(M, M\sm\ts x) \cong H_k(\RR^n,\RR^n\sm\ts 0) \cong \tilde H_{k-1}(S^{n-1})$, which is $\ZZ$ for $k=n$ and $0$ otherwise.
+If $M$ is an $n$-manifold and $x\in M$ is an interior point, then by excision $H_k(M, M\sm\theset x) \cong H_k(\RR^n,\RR^n\sm\theset 0) \cong \tilde H_{k-1}(S^{n-1})$, which is $\ZZ$ for $k=n$ and $0$ otherwise.
 A space with a point at which these local homology groups differ from those of every $\RR^n$ is not a manifold near that point.
 
 :::
@@ -188,7 +188,7 @@ By Alexander's theorem, $S^3\sm K$ is irreducible, and its fundamental group is 
 By the sphere theorem, an irreducible orientable $3$-manifold has $\pi_2=0$; its universal cover is then a noncompact simply connected $3$-manifold with $H_2=H_3=0$, hence contractible by the Hurewicz and Whitehead theorems.
 So $\pi_j(S^3\sm K)=0$ for $j\geq 2$, and $S^3\sm K$ is a $K(\pi,1)$.
 
-For the wedge, $\RR^3\sm K \cong (S^3\sm K)\sm\ts{\infty}$.
+For the wedge, $\RR^3\sm K \cong (S^3\sm K)\sm\theset{\infty}$.
 The space $S^3\sm K$ deformation retracts onto the compact manifold $C\coloneqq S^3\sm\nu(K)$ with torus boundary, and a compact $3$-manifold with nonempty boundary deformation retracts onto a $2$-dimensional spine missing a chosen interior point.
 Removing that point therefore gives a space deformation retracting onto the spine together with a small sphere around the point and an arc joining them, so
 $$

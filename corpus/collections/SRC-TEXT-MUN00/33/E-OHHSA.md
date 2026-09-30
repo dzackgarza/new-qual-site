@@ -19,7 +19,7 @@ For each even integer $m$, let $L_m$ denote the line segment $m \times [-1, 0]$ 
 For each odd integer $n$ and each integer $k \geq 2$, let $C_{n,k}$ denote the union of the line segments $(n + 1 - 1/k) \times [-1, 0]$ and $(n - 1 + 1/k) \times [-1, 0]$ and the semicircle
 
 $$
-\ts{x \times y \mid (x - n)^2 + y^2 = (1 - 1/k)^2 \text{ and } y \geq 0}
+\theset{x \times y \mid (x - n)^2 + y^2 = (1 - 1/k)^2 \text{ and } y \geq 0}
 $$
 
 in the plane.
@@ -31,9 +31,9 @@ Topologize $X$ by taking sets of the following four types as basis elements:
 
 (ii) A set formed from one of the sets $C_{n,k}$ by deleting finitely many points.
 
-(iii) For each even integer $m$, the union of $\ts{a}$ and the set of points $x \times y$ of $X$ for which $x < m$.
+(iii) For each even integer $m$, the union of $\theset{a}$ and the set of points $x \times y$ of $X$ for which $x < m$.
 
-(iv) For each even integer $m$, the union of $\ts{b}$ and the set of points $x \times y$ of $X$ for which $x > m$.
+(iv) For each even integer $m$, the union of $\theset{b}$ and the set of points $x \times y$ of $X$ for which $x > m$.
 
 (a) Sketch $X$; show that these sets form a basis for a topology on $X$.
 

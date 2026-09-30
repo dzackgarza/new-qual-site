@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\prod_{n\in \ZZ} (1 + a_n) < \infty$ if $\ts{a_n} \in \ell_1(\ZZ)$.
+Show that $\prod_{n\in \ZZ} (1 + a_n) < \infty$ if $\theset{a_n} \in \ell_1(\ZZ)$.
 :::
 
 ::: {.solution}

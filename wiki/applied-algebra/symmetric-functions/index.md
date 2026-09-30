@@ -35,7 +35,7 @@ By the fundamental theorem of symmetric polynomials, the ring of symmetric polyn
 ## The characteristic map
 
 The Frobenius characteristic map is an isometry from the class functions on $S_n$ to the symmetric functions of degree $n$, sending the irreducible character $\chi^\lambda$ to $s_\lambda$.
-For partitions $\mu$ of $k$ and $\nu$ of $n-k$, it sends $\Ind_{S_k\times S_{n-k}}^{S_n}(\chi^\mu\times\chi^\nu)$ to $s_\mu s_\nu$, so the multiplicity of $\chi^\lambda$ in that induced character is the Littlewood--Richardson coefficient $c^\lambda_{\mu\nu}$.
+For partitions $\mu$ of $k$ and $\nu$ of $n-k$, it sends $\Indcat_{S_k\times S_{n-k}}^{S_n}(\chi^\mu\times\chi^\nu)$ to $s_\mu s_\nu$, so the multiplicity of $\chi^\lambda$ in that induced character is the Littlewood--Richardson coefficient $c^\lambda_{\mu\nu}$.
 It also gives
 $$
 p_\rho = \sum_\lambda \chi^\lambda(\rho)\, s_\lambda,

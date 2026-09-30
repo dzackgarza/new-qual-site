@@ -64,7 +64,7 @@ $$
 so $\lambda \in \RR$.
 A real symmetric matrix is Hermitian, so its eigenvalues are real, and it has a real unit eigenvector.
 
-- Let $W = \ts{\vector v}^\perp$.
+- Let $W = \theset{\vector v}^\perp$.
   For $\vector w \in W$,
 $$
 \inner{\vector v}{ A \vector w} =

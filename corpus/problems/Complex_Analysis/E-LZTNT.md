@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Fix $a\in \CC\union\ts{\infty}$ and let $f(z) \da e^{1\over z^2}$.
+Fix $a\in \CC\union\theset{\infty}$ and let $f(z) \definedas e^{1\over z^2}$.
 Find a sequence $z_k\to 0$ such that $f(z_k) \convergesto{k\to\infty} a$
 :::
 

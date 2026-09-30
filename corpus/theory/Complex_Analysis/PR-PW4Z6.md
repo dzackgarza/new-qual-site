@@ -17,7 +17,7 @@ review: draft
 ::: {.proposition}
 The map
 $$
-f\colon\ts{z\st\abs{z}<1,\ \Im z>0}\to\ts{w\st\Re w>0,\ \Im w>0},\qquad f(z)=\frac{1+z}{1-z},
+f\colon\theset{z\st\abs{z}<1,\ \Im z>0}\to\theset{w\st\Re w>0,\ \Im w>0},\qquad f(z)=\frac{1+z}{1-z},
 $$
 is a [[D-TM4TE|biholomorphism]] from the upper half-disc onto the first quadrant, with inverse $f^{-1}(w)=\frac{w-1}{w+1}$.
 :::

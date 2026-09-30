@@ -23,7 +23,7 @@ title: "Algebra qual prep week 2: finite group theory"
 
     - Self-action by left translation (*the left-regular action*)
 
-      - The homomorphism $G\to\Sym(G)$, $g\mapsto \psi_g$ with $\psi_g(x) \da gx$, is the Cayley representation, a permutation representation of $G$; $\Sym(G) \cong S_n$ for $n\da \size G$
+      - The homomorphism $G\to\Sym(G)$, $g\mapsto \psi_g$ with $\psi_g(x) \definedas gx$, is the Cayley representation, a permutation representation of $G$; $\Sym(G) \cong S_n$ for $n\definedas \size G$
 
       - [Strong Cayley theorem](https://math.la.asu.edu/~kawski/classes/mat444/handouts/strongCayley.pdf)
 

@@ -17,7 +17,7 @@ review: draft
 Let $R$ be a ring and $(M_\alpha)_{\alpha\in A}$ a family of left $R$-modules.
 The \dfn{direct product} of the family is the set
 $$
-\prod_{\alpha\in A} M_\alpha \coloneqq \ts{ (m_\alpha)_{\alpha\in A} \st m_\alpha \in M_\alpha \text{ for all } \alpha\in A }
+\prod_{\alpha\in A} M_\alpha \coloneqq \theset{ (m_\alpha)_{\alpha\in A} \st m_\alpha \in M_\alpha \text{ for all } \alpha\in A }
 $$
 with componentwise addition and scalar multiplication, together with the projections $\pi_\beta\colon\prod_{\alpha\in A} M_\alpha\to M_\beta$, $(m_\alpha)_{\alpha\in A}\mapsto m_\beta$, for $\beta\in A$.
 :::

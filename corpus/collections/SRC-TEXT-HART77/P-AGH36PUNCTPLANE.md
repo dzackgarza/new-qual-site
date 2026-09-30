@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH36PUNCTPLANE
 kind: problem
-title: The punctured plane $\AA^2 \sm \ts{(0,0)}$ is quasi-affine but not affine
+title: The punctured plane $\AA^2 \sm \theset{(0,0)}$ is quasi-affine but not affine
 classification:
   areas:
   - algebraic-geometry
@@ -28,7 +28,7 @@ audit:
 
 ::: {.problem}
 There are quasi-affine varieties which are not affine.
-Show that $X = \AA^2 \sm \ts{(0,0)}$ is not affine.
+Show that $X = \AA^2 \sm \theset{(0,0)}$ is not affine.
 :::
 
 ::: {.hint}

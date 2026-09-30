@@ -15,7 +15,7 @@ Every scheme is glued from affine open subschemes along open subschemes of their
 
 [[D-SCHGLUE]]
 
-Gluing two copies of $\AA^1_k=\Spec k[t]$ along $\AA^1_k\sm\ts{0}$ by $t\mapsto t^{-1}$ gives $\PP^1_k$; gluing them by the identity gives the line with doubled origin, which is not separated.
+Gluing two copies of $\AA^1_k=\Spec k[t]$ along $\AA^1_k\sm\theset{0}$ by $t\mapsto t^{-1}$ gives $\PP^1_k$; gluing them by the identity gives the line with doubled origin, which is not separated.
 
 [[FE-SCHLINE]]
 

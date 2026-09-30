@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and each is order 1. Calculate the residue of $1/\sin(\pi x)$ at $z=n\in \ZZ$.
+Show that the complex zeros of $f(z) \definedas \sin(\pi z)$ are exactly $\ZZ$, and each is order 1. Calculate the residue of $1/\sin(\pi x)$ at $z=n\in \ZZ$.
 :::
 
 ![image_2021-05-17-13-32-46](../../assets/figures/image_2021-05-17-13-32-46.png)

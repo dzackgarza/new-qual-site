@@ -42,7 +42,7 @@ So $K \cap F \neq \emptyset$.
 
 ::: {.pf-step #s1}
 
-The function $\delta(x) \da d(x,F) = \inf_{f\in F} d(x,f)$ is $1$-Lipschitz, hence continuous.
+The function $\delta(x) \definedas d(x,F) = \inf_{f\in F} d(x,f)$ is $1$-Lipschitz, hence continuous.
 
 ::: pf-proof
 
@@ -85,7 +85,7 @@ There is $\eps > 0$ with $d(k,f) \ge \eps$ for all $k \in K$, $f \in F$.
 
 ::: pf-proof
 
-take $\eps \da \inf_{k\in K} d(k,F) > 0$ from step [](#s3){.pf-ref}; then $d(k,f) \ge d(k,F) \ge \eps$ for all $k \in K$, $f \in F$.
+take $\eps \definedas \inf_{k\in K} d(k,F) > 0$ from step [](#s3){.pf-ref}; then $d(k,f) \ge d(k,F) \ge \eps$ for all $k \in K$, $f \in F$.
 
 :::
 

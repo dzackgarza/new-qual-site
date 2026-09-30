@@ -51,7 +51,7 @@ f(\gamma(t))
 &= {1\over 2}\qty{R\cos(t) + iR\sin(t) + \inverseof{R}\cos(-t) + i\inverseof{R}\sin(-t) } \\
 &= {1\over 2}\qty{R\cos(t) + iR\sin(t) + \inverseof{R}\cos(t) - i\inverseof{R}\sin(-t) } \\
 &= {1\over 2}\qty{R+\inverseof{R}}\cos(t) + i{1\over 2}\qty{R-\inverseof{R}}\sin(t) \\
-&\da H_R \cos(t) + iV_R\sin(t)
+&\definedas H_R \cos(t) + iV_R\sin(t)
 ,\]
 which is generally the equation of an ellipse of horizontal radius $H_R$ and vertical radius $V_R$. As $R$ varies, these sweep out ellipses of vertical radii from 0 to $\infty$. One can compute the foci: their distance from $z=0$ is given by $c$, where
 \[
@@ -65,7 +65,7 @@ so the foci are all at $\pm 1\in \RR$. One can check that these are clockwise wh
 **Part b**: The claim is that $f(\CC\sm\DD) = \CC\sm[-1, 1]$.
 
 Note that $f(z) = f(1/z)$, so for $z\neq 1/z$ there are exactly two preimages.
-These points are exactly $z=\pm 1$, so we need to take the domain $\Omega \da \CC\sm(\DD\union\ts{\pm 1})$ to get injectivity.
+These points are exactly $z=\pm 1$, so we need to take the domain $\Omega \definedas \CC\sm(\DD\union\theset{\pm 1})$ to get injectivity.
 Otherwise, for every $z\in \Omega$, exactly one of $z$ or $1/z$ is in $\DD$, so $f(z)$ takes on unique values in $\Omega$.
 By part 1, the images of circles of radius $R$ are ellipses, and these sweep out the entire plane outside of $[-1, 1]$:
 

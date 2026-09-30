@@ -17,18 +17,18 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}
+I \definedas \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}
 .\]
 
 :::
 
 ::: {.solution}
-On $(0,1)$ the radicand is negative, so $\sqrt{x^2-1}=\pm i\sqrt{1-x^2}$ and the value of $I$ depends on the branch. The stated value holds for $\sqrt{x^2-1}=-i\sqrt{1-x^2}$; the other branch gives $-i\pi/2$. Put $J\da\int_{-1}^1{dx\over\sqrt{1-x^2}}$.
+On $(0,1)$ the radicand is negative, so $\sqrt{x^2-1}=\pm i\sqrt{1-x^2}$ and the value of $I$ depends on the branch. The stated value holds for $\sqrt{x^2-1}=-i\sqrt{1-x^2}$; the other branch gives $-i\pi/2$. Put $J\definedas\int_{-1}^1{dx\over\sqrt{1-x^2}}$.
 
 ::: pf
 
 ::: {.pf-step #boundary-values}
-Let $g(z)\da\sqrt{z-1}\,\sqrt{z+1}$ with principal square roots. Then $g$ is holomorphic on $\CC\setminus[-1,1]$, and for $-1<x<1$ its boundary values are $g(x+i0)=i\sqrt{1-x^2}$ from above and $g(x-i0)=-i\sqrt{1-x^2}$ from below.
+Let $g(z)\definedas\sqrt{z-1}\,\sqrt{z+1}$ with principal square roots. Then $g$ is holomorphic on $\CC\setminus[-1,1]$, and for $-1<x<1$ its boundary values are $g(x+i0)=i\sqrt{1-x^2}$ from above and $g(x-i0)=-i\sqrt{1-x^2}$ from below.
 
 ::: pf-proof
 Each factor is holomorphic off its cut, $(-\infty,1]$ and $(-\infty,-1]$ respectively. On $(-\infty,-1)$ both factors change sign across the real axis, so their product is continuous there and extends holomorphically across it. For $-1<x<1$, $\sqrt{x+1}$ is continuous and positive, while $\sqrt{x-1\pm i0}=\pm i\sqrt{1-x}$.

@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-A morphism $f:X\to Y$ of schemes is \dfn{affine} if there is an open affine cover $\ts{V_i}$ of $Y$ such that $f^{-1}(V_i)$ is affine for each $i$.
+A morphism $f:X\to Y$ of schemes is \dfn{affine} if there is an open affine cover $\theset{V_i}$ of $Y$ such that $f^{-1}(V_i)$ is affine for each $i$.
 
 (a) Show that $f:X\to Y$ is affine if and only if, for every open affine $V\subseteq Y$, $f^{-1}(V)$ is affine.
 

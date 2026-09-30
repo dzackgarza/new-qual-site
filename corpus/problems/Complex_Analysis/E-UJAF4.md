@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Prove the following: if $\ts{f_n}$ is equicontinuous on $K$ a compact set and $f_n\to f$ pointwise, then $f_n\to f$ uniformly.
+Prove the following: if $\theset{f_n}$ is equicontinuous on $K$ a compact set and $f_n\to f$ pointwise, then $f_n\to f$ uniformly.
 
 :::
 

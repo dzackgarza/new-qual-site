@@ -36,9 +36,9 @@ audit:
 ::: {.problem}
 Let $a\in \RR$, and consider sheaves $\mcf$ on $\RR$ with the standard topology:
 
-1. $\mcf \da$ the sheaf of continuous functions;
+1. $\mcf \definedas$ the sheaf of continuous functions;
 
-2. $\mcf \da$ the sheaf of locally polynomial functions.
+2. $\mcf \definedas$ the sheaf of locally polynomial functions.
 
 For which is the stalk $\mcf_a$ a local ring?
 

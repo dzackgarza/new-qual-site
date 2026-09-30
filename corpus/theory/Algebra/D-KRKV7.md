@@ -17,8 +17,8 @@ review: draft
 The \dfn{quaternion group} is the group of order $8$
 $$
 \begin{aligned}
-Q_8 &= \gens{-1, i, j, k \suchthat (-1)^2 = 1,\ i^2 = j^2 = k^2 = ijk = -1} \\
-  &\cong \gens{x, y \suchthat  x^4 = y^4,\ x^2 = y^2,\ yxy^{-1} = x^{-1}},
+Q_8 &= \generators{-1, i, j, k \suchthat (-1)^2 = 1,\ i^2 = j^2 = k^2 = ijk = -1} \\
+  &\cong \generators{x, y \suchthat  x^4 = y^4,\ x^2 = y^2,\ yxy^{-1} = x^{-1}},
 \end{aligned}
 $$
 where the isomorphism sends $x\mapsto i$ and $y\mapsto j$.

@@ -24,7 +24,7 @@ audit:
 ::: {.exercise}
 Compute $\JCF(A)$ for
 \[
-A \da
+A \definedas
 \mattt{1}{-1}{0}{-1}{4}{-1}{-4}{13}{-3}.
 \]
 :::

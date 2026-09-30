@@ -28,9 +28,9 @@ Two subsets $S, T\subseteq X$ are \dfn{separated by neighborhoods} if there exis
 
 - $X$ is \dfn{$T_{2.5}$} if any two distinct points $x_1,x_2$ have open neighborhoods $U_1\ni x_1$ and $U_2\ni x_2$ with $\overline{U_1}\cap\overline{U_2}=\emptyset$.
 
-- $X$ is \dfn{$T_3$} if it is $T_0$ and [[D-EPTMG|regular]]: for every $x\in X$ and every closed $F\subseteq X$ with $x\notin F$, the sets $\ts{x}$ and $F$ are separated by neighborhoods.
+- $X$ is \dfn{$T_3$} if it is $T_0$ and [[D-EPTMG|regular]]: for every $x\in X$ and every closed $F\subseteq X$ with $x\notin F$, the sets $\theset{x}$ and $F$ are separated by neighborhoods.
 
-- $X$ is \dfn{$T_{3.5}$} if it is $T_0$ and \dfn{completely regular}: for every $x\in X$ and every closed $F\subseteq X$ with $x\notin F$ there is a continuous $f\colon X\to[0,1]$ with $f(x)=0$ and $f(F)\subseteq\ts{1}$.
+- $X$ is \dfn{$T_{3.5}$} if it is $T_0$ and \dfn{completely regular}: for every $x\in X$ and every closed $F\subseteq X$ with $x\notin F$ there is a continuous $f\colon X\to[0,1]$ with $f(x)=0$ and $f(F)\subseteq\theset{1}$.
 
 - $X$ is \dfn{$T_4$} if it is $T_1$ and [[D-YEQC3|normal]]: any two disjoint closed subsets of $X$ are separated by neighborhoods.
 :::
@@ -46,5 +46,5 @@ If $f\neq g$ agree almost everywhere, then $d(f,g)=0$, so every open set contain
 
 ::: {.example}
 A space that is $T_0$ but not $T_1$: for a commutative ring $R$ with a prime ideal that is not maximal, $\Spec R$ with the Zariski topology.
-The closure of the point $\mathfrak p$ is $V(\mathfrak p)=\ts{\mathfrak q\in\Spec R \st \mathfrak q\supseteq\mathfrak p}$, so a prime that is not maximal is not a closed point; distinct primes have distinct closures, which gives $T_0$.
+The closure of the point $\mathfrak p$ is $V(\mathfrak p)=\theset{\mathfrak q\in\Spec R \st \mathfrak q\supseteq\mathfrak p}$, so a prime that is not maximal is not a closed point; distinct primes have distinct closures, which gives $T_0$.
 :::

@@ -112,7 +112,7 @@ Local connectedness and local path connectedness use the second.
 
 ::: {.remark}
 If $r\colon X\to A$ is a retraction and $\iota\colon A\injects X$ the inclusion, then $r\circ\iota=\id_A$, so $\iota_*$ is injective on $\pi_1$ and on homology.
-For every point $x_0$ of a space $X$, the constant map $X\to\ts{x_0}$ is a retraction.
+For every point $x_0$ of a space $X$, the constant map $X\to\theset{x_0}$ is a retraction.
 :::
 
 [[D-KWWVL]]
@@ -134,15 +134,15 @@ For every point $x_0$ of a space $X$, the constant map $X\to\ts{x_0}$ is a retra
 ::: {.example title="Counterexamples for separation axioms"}
 \envlist
 
-- Not $T_0$: the space $\ts{ f\colon\RR\to \CC\st \int_\RR \abs{f}^2 < \infty }$ with the topology of the seminorm $\norm{f}_2$, since two functions that agree almost everywhere have the same neighborhoods.
+- Not $T_0$: the space $\theset{ f\colon\RR\to \CC\st \int_\RR \abs{f}^2 < \infty }$ with the topology of the seminorm $\norm{f}_2$, since two functions that agree almost everywhere have the same neighborhoods.
 
-- $T_0$ but not $T_1$: $\spec R$ with the Zariski topology, for a commutative ring $R$ with a prime ideal that is not maximal.
-  The closure of a point $\mathfrak p$ is $V(\mathfrak p)$, so the points of $\spec R \sm \mspec R$ are not closed.
+- $T_0$ but not $T_1$: $\Spec R$ with the Zariski topology, for a commutative ring $R$ with a prime ideal that is not maximal.
+  The closure of a point $\mathfrak p$ is $V(\mathfrak p)$, so the points of $\Spec R \sm \mspec R$ are not closed.
 :::
 [[D-2TZAI]]
 
 ::: {.example}
-An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\geq 1} (-1/n, 1/n) = \ts{0}$, which is closed and not open.
+An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\geq 1} (-1/n, 1/n) = \theset{0}$, which is closed and not open.
 :::
 
 [[D-OM7TD]]

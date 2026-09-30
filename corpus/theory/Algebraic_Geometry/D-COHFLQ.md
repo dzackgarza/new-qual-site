@@ -38,7 +38,7 @@ The proof of acyclicity is induction on the sequence $0 \to \mcf \to \mci \to \m
 ::: {.example title="Flasque sheaves"}
 The following sheaves are flasque:
 
-- the sheaf $\prod_x j^x_* \mcf_x$ of discontinuous sections of any sheaf $\mcf$, where $j^x\colon\ts{x}\injects X$;
+- the sheaf $\prod_x j^x_* \mcf_x$ of discontinuous sections of any sheaf $\mcf$, where $j^x\colon\theset{x}\injects X$;
 
 - every constant sheaf on an irreducible topological space [@Har10a, Exercise II.1.16];
 

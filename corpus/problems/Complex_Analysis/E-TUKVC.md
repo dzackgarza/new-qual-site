@@ -23,7 +23,7 @@ Prove that $f$ is a polynomial.
 :::
 
 ::: {.solution}
-Write $Z_n \da \ts{z\in \CC \st f^{(n)}(z) = 0 }$, then by hypothesis $\Union_{n\geq 0} Z_n = \CC$.
+Write $Z_n \definedas \theset{z\in \CC \st f^{(n)}(z) = 0 }$, then by hypothesis $\Union_{n\geq 0} Z_n = \CC$.
 A version of the Baire category theorem is that if $X$ is a complete metric space and $X$ is a countable union of closed sets, then at least one such set has a nonempty interior.
 Thus some $Z_n$ has an interior point $z_0$, and as a result there is some disc $\DD_\eps(z_0)$ on which $f^{(n)}(z_0) \equiv 0$.
 This implies that $f^{(k)}(z_0) \equiv 0$ on $\DD_\eps(z_0)$ for every $k\geq n$, so $f$ is a polynomial of degree at most $n$.

@@ -53,7 +53,7 @@ For $N=\ZZ/n$, $\Aut(\ZZ/n)\cong(\ZZ/n)^\times$, so every semidirect product $\Z
 
 ## Automorphism groups
 
-For cyclic $N\cong\ZZ/n$, $\Aut(N)\cong(\ZZ/n)^\times$, whose order is the number of integers in $\ts{1,\ldots,n}$ coprime to $n$, the value at $n$ of [[D-JX3YC|Euler's totient function]].
+For cyclic $N\cong\ZZ/n$, $\Aut(N)\cong(\ZZ/n)^\times$, whose order is the number of integers in $\theset{1,\ldots,n}$ coprime to $n$, the value at $n$ of [[D-JX3YC|Euler's totient function]].
 
 [[PR-N6S6P]]
 

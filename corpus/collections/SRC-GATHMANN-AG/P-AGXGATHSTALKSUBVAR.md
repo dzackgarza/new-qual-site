@@ -148,7 +148,7 @@ y\in D(g)\subseteq U
 $$
 there are $f,g\in A$ such that
 $$
-\ro{\phi}{D(g)}=\frac fg.
+\restrictionof{\phi}{D(g)}=\frac fg.
 $$
 Since $y\in D(g)\cap Y$, step [](#s1){.pf-ref} gives $g\notin\mfp$. Hence
 $$

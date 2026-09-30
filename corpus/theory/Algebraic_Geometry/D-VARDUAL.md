@@ -27,7 +27,7 @@ The \dfn{dual variety} $\dualof{X} \subseteq \dualof{(\PP^n)}$ is the closure of
 ::: {.proposition}
 The incidence correspondence
 \[
-\Phi = \overline{\ts{ (p, H) \st p \in X_{\mathrm{sm}},\ \mathbb{T}_p X \subseteq H }} \subseteq X \times \dualof{(\PP^n)}
+\Phi = \overline{\theset{ (p, H) \st p \in X_{\mathrm{sm}},\ \mathbb{T}_p X \subseteq H }} \subseteq X \times \dualof{(\PP^n)}
 \]
 is irreducible of dimension $n-1$, since over each smooth point $p$ the fibre is a projective space of dimension $n - 1 - \dim X$.
 So $\dualof{X}$, the image of $\Phi$ under the second projection, is irreducible of dimension at most $n-1$.

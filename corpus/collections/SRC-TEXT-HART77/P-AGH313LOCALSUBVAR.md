@@ -28,7 +28,7 @@ audit:
 
 ::: {.problem}
 Let $Y \subseteq X$ be a subvariety.
-Let $\mco_{Y,X}$ be the set of equivalence classes $\gens{U, f}$ where $U \subseteq X$ is open, $U \intersect Y \neq \emptyset$, and $f$ is a regular function on $U$; two classes $\gens{U,f}$ and $\gens{V,g}$ are equivalent if $f = g$ on $U \intersect V$.
+Let $\mco_{Y,X}$ be the set of equivalence classes $\generators{U, f}$ where $U \subseteq X$ is open, $U \intersect Y \neq \emptyset$, and $f$ is a regular function on $U$; two classes $\generators{U,f}$ and $\generators{V,g}$ are equivalent if $f = g$ on $U \intersect V$.
 
 Show that $\mco_{Y,X}$ is a local ring with residue field $K(Y)$ and dimension $\dim X - \dim Y$.
 It is called the **local ring of $Y$ on $X$**. When $Y = P$ is a point this recovers $\mco_P$, and when $Y = X$ it recovers $K(X)$.
@@ -47,7 +47,7 @@ Replacing $(X,Y)$ by $(W,Y\cap W)$ does not change $\mco_{Y,X}$, $\dim X$, or $\
 
 ::: pf-proof
 
-Both $W\cap Y$ and the intersection of $Y$ with the domain of any representative $\gens{U,f}$ are nonempty open subsets of the irreducible variety $Y$.
+Both $W\cap Y$ and the intersection of $Y$ with the domain of any representative $\generators{U,f}$ are nonempty open subsets of the irreducible variety $Y$.
 Their intersection is therefore nonempty.
 Thus restricting representatives from $U$ to $U\cap W$ defines a map
 $$
@@ -91,18 +91,18 @@ This defines a homomorphism
 $$
 A_{\mathfrak p}\longrightarrow\mco_{Y,X},
 \qquad
-\frac{a}{s}\longmapsto\gens{D(s),a/s}.
+\frac{a}{s}\longmapsto\generators{D(s),a/s}.
 $$
 It is well-defined: if $a/s=b/t$ in $A_{\mathfrak p}$, then the two fractions agree in $K(X)$ and hence as regular functions on $D(st)$; this principal open meets $Y$ because $st\notin\mathfrak p$.
 
-For surjectivity, let $\gens{U,f}$ be a class and choose $Q\in U\cap Y$.
+For surjectivity, let $\generators{U,f}$ be a class and choose $Q\in U\cap Y$.
 Regularity of $f$ gives a principal open neighborhood $D(s)\subseteq U$ of $Q$ and an expression
 $$
 f=\frac{a}{s}
 $$
 on $D(s)$.
 Since $s(Q)\ne0$ and $Q\in Y$, we have $s\notin\mathfrak p$.
-The class $\gens{U,f}$ is therefore represented by the image of $a/s\in A_{\mathfrak p}$.
+The class $\generators{U,f}$ is therefore represented by the image of $a/s\in A_{\mathfrak p}$.
 
 For injectivity, two fractions whose classes agree are equal as regular functions on a nonempty open subset of the irreducible affine variety $X$.
 They are consequently equal in the function field $K(X)=\operatorname{Frac}A$, hence equal in the subring $A_{\mathfrak p}$.

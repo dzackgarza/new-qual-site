@@ -20,5 +20,5 @@ The spaces $X$ and $Y$ are \dfn{homotopy equivalent}, or have the same \dfn{homo
 :::
 
 ::: {.example}
-Every [[D-9KQZT|homeomorphism]] is a homotopy equivalence, and the converse fails: for $n\geq 1$ the inclusion $\ts{0}\hookrightarrow\RR^n$ is a homotopy equivalence, with homotopy inverse the constant map $\RR^n\to\ts{0}$ and homotopy $H(x, t) = tx$ from the constant map to $\id_{\RR^n}$, but $\ts{0}$ and $\RR^n$ are not homeomorphic.
+Every [[D-9KQZT|homeomorphism]] is a homotopy equivalence, and the converse fails: for $n\geq 1$ the inclusion $\theset{0}\hookrightarrow\RR^n$ is a homotopy equivalence, with homotopy inverse the constant map $\RR^n\to\theset{0}$ and homotopy $H(x, t) = tx$ from the constant map to $\id_{\RR^n}$, but $\theset{0}$ and $\RR^n$ are not homeomorphic.
 :::

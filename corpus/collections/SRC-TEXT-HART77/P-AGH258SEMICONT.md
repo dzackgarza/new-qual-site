@@ -31,7 +31,7 @@ $$
 where $k(x) = \OO_x / \mfm_x$ is the residue field at $x$.
 Use Nakayama's lemma to prove the following.
 
-(a) The function $\varphi$ is upper semi-continuous, i.e. for any $n \in \ZZ$ the set $\ts{x \in X \st \varphi(x) \geq n}$ is closed.
+(a) The function $\varphi$ is upper semi-continuous, i.e. for any $n \in \ZZ$ the set $\theset{x \in X \st \varphi(x) \geq n}$ is closed.
 
 (b) If $\mcf$ is locally free and $X$ is connected, then $\varphi$ is a constant function.
 

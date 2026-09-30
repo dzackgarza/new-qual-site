@@ -18,9 +18,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \da \ts{x\in H \st Ux = x}$, let $P$ be the orthogonal projection onto $M$, and define
+Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \definedas \theset{x\in H \st Ux = x}$, let $P$ be the orthogonal projection onto $M$, and define
 \[
-S_N \da {1\over N} \sum_{n=0}^{N-1} U^n
+S_N \definedas {1\over N} \sum_{n=0}^{N-1} U^n
 .\]
 Show that for all $x\in H$,
 \[

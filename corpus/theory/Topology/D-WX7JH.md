@@ -18,7 +18,7 @@ review: draft
 Let $M$ be an $n$-[[D-UBWVX|manifold]], and for $A\subseteq M$ write $H_n(M\mid A) \coloneqq H_n(M, M\sm A;\ZZ)$.
 The \dfn{orientation double cover} of $M$ is the set $\tilde M$ of all [[D-6CI7D|local orientations]] $\mu_x$ of $M$ at points $x\in M$, with the map $p\colon\tilde M\to M$, $\mu_x\mapsto x$, and the topology with basis the sets
 $$
-U(\mu_B) \coloneqq \ts{ \mu_x \st x\in B,\ \mu_x \text{ the image of } \mu_B \text{ under } H_n(M\mid B)\to H_n(M\mid x) },
+U(\mu_B) \coloneqq \theset{ \mu_x \st x\in B,\ \mu_x \text{ the image of } \mu_B \text{ under } H_n(M\mid B)\to H_n(M\mid x) },
 $$
 where $B$ ranges over the open balls of finite radius in charts $\RR^n\subseteq M$ and $\mu_B$ over the generators of $H_n(M\mid B)\cong\ZZ$.
 :::

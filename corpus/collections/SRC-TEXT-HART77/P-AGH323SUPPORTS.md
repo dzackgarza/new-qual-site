@@ -49,8 +49,8 @@ is exact.
 Show that for any $\mcf$, there is a long exact sequence of cohomology groups
 $$
 \begin{aligned}
-0 &\to H_Y^0(X, \mcf) \to H^0(X, \mcf) \to H^0(U, \ro{\mcf}{U}) \\
-&\to H_Y^1(X, \mcf) \to H^1(X, \mcf) \to H^1(U, \ro{\mcf}{U}) \\
+0 &\to H_Y^0(X, \mcf) \to H^0(X, \mcf) \to H^0(U, \restrictionof{\mcf}{U}) \\
+&\to H_Y^1(X, \mcf) \to H^1(X, \mcf) \to H^1(U, \restrictionof{\mcf}{U}) \\
 &\to H_Y^2(X, \mcf) \to \cdots
 \end{aligned}
 $$
@@ -58,7 +58,7 @@ $$
 (f) *Excision.* Let $V$ be an open subset of $X$ containing $Y$.
 Then there are natural functorial isomorphisms, for all $i$ and $\mcf$,
 $$
-H_Y^i(X, \mcf) \cong H_Y^i(V, \ro{\mcf}{V}).
+H_Y^i(X, \mcf) \cong H_Y^i(V, \restrictionof{\mcf}{V}).
 $$
 :::
 

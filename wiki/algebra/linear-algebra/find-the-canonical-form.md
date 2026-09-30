@@ -61,7 +61,7 @@ If $f(A) = 0$ for a polynomial $f$, then $\min_A$ divides $f$.
 
 | Hypothesis | Consequence for $\min_A$ |
 | --- | --- |
-| $A^2 = A$ | $\min_A \divides t^2 - t$, so $A$ is diagonalizable with eigenvalues in $\ts{0,1}$ |
+| $A^2 = A$ | $\min_A \divides t^2 - t$, so $A$ is diagonalizable with eigenvalues in $\theset{0,1}$ |
 | $A^k = I$ | $\min_A\divides t^k-1$; if $\operatorname{char} F \notdivides k$ and $t^k-1$ splits over $F$, then $A$ is diagonalizable over $F$ |
 | $A^k = 0$ | $\min_A\divides t^k$, so $A$ is nilpotent and all its eigenvalues are $0$ |
 

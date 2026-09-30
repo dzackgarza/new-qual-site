@@ -18,7 +18,7 @@ review: draft
 ::: {.exercise}
 
 \[
-I\da \int_\RR {x\over (x^2 + 4x+13)^2}\dx
+I\definedas \int_\RR {x\over (x^2 + 4x+13)^2}\dx
 .\]
 
 :::
@@ -58,13 +58,13 @@ x^2 + 4x + 13 = 0
 one of which is in $\HH$.
 Write these as 
 \[
-z_1 \da -2+3i && z_2 \da -2 - 3i
+z_1 \definedas -2+3i && z_2 \definedas -2 - 3i
 .\]
 
 So let $\Gamma$ be comprised of
 
 - $C_1 = [-R,R]$, 
-- $C_2 = \ts{Re^{it} \st t\in [0, \pi]}$, 
+- $C_2 = \theset{Re^{it} \st t\in [0, \pi]}$, 
 - $\Gamma = C_1 + C_2$, then
 \[
 2\pi i \sum_{z_k\in \HH} \Res_{z=z_k}f(z) = \int_\Gamma f = \qty{\int_{C_1} + \int_{C_2}}f

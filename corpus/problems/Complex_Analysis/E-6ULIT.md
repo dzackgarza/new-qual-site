@@ -35,7 +35,7 @@ Choose $n$ with $\norm{f-f_n}_\infty<\eps/3$.
 
 The choice of one $n$ for all $z$ uses $\norm{f-f_n}_\infty<\eps/3$; pointwise convergence gives an $n$ depending on the point.
 
-Pointwise limits: on $[0,1]$, the uniformly continuous functions $f_n(x) \da x^n$ converge pointwise to $\chi_{\theset{1}}$, which is not continuous, hence not uniformly continuous.
+Pointwise limits: on $[0,1]$, the uniformly continuous functions $f_n(x) \definedas x^n$ converge pointwise to $\chi_{\theset{1}}$, which is not continuous, hence not uniformly continuous.
 
 :::
 

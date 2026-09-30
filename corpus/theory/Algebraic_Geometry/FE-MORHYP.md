@@ -21,7 +21,7 @@ prompts:
 
 ::: {.example}
 Let $X = V(xy - 1) \subseteq \AA^2_k$ and let $f : X \to \AA^1_k$ be the projection to $x$.
-Then $X \cong \GG_m$, every fibre is a single reduced point or empty, so $f$ is quasi-finite, and the image is $\AA^1 \sm \ts{0}$, which is not closed.
+Then $X \cong \GG_m$, every fibre is a single reduced point or empty, so $f$ is quasi-finite, and the image is $\AA^1 \sm \theset{0}$, which is not closed.
 A finite morphism is closed, so $f$ is not finite, and one sees it on rings: $k[x] \to k[x, x^{-1}]$ is of finite type and not module-finite.
 :::
 

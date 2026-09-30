@@ -24,8 +24,8 @@ audit:
 
 ::: {.problem}
 Let $(X, \OO_X)$ be a scheme and let $U \subseteq X$ be any open subset.
-Show that $\qty{U, \ro{\OO_X}{U}}$ is a scheme.
-We call this the **induced scheme structure** on the open set $U$, and we refer to $\qty{U, \ro{\OO_X}{U}}$ as an **open subscheme** of $X$.
+Show that $\qty{U, \restrictionof{\OO_X}{U}}$ is a scheme.
+We call this the **induced scheme structure** on the open set $U$, and we refer to $\qty{U, \restrictionof{\OO_X}{U}}$ as an **open subscheme** of $X$.
 :::
 
 ::: {.solution}

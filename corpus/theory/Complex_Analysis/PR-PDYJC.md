@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-For $0<\beta\le2\pi$ let $S_\beta\coloneqq\ts{re^{i\theta}\st r>0,\ 0<\theta<\beta}$ be the open sector of opening $\beta$, so that $S_\pi=\HH$.
+For $0<\beta\le2\pi$ let $S_\beta\coloneqq\theset{re^{i\theta}\st r>0,\ 0<\theta<\beta}$ be the open sector of opening $\beta$, so that $S_\pi=\HH$.
 Let $0<\alpha<2$, and on $S_{2\pi}=\CC\sm[0,\infty)$ define $z^\alpha\coloneqq r^\alpha e^{i\alpha\theta}$ for $z=re^{i\theta}$, $0<\theta<2\pi$.
 Then
 $$
@@ -34,5 +34,5 @@ The second statement is the first with $\alpha=\beta/\pi$, inverted.
 ::: {.remark}
 The formula $z^\alpha$ extends continuously to the boundary of $\HH$.
 As $x$ increases from $0$ to $\infty$ along the positive real axis, $x^\alpha$ increases from $0$ to $\infty$ along the positive real axis.
-As $x$ increases from $-\infty$ to $0$ along the negative real axis, $x^\alpha=\abs{x}^\alpha e^{i\alpha\pi}$ moves from $\infty$ to $0$ along the ray $\ts{te^{i\alpha\pi}\st t>0}$.
+As $x$ increases from $-\infty$ to $0$ along the negative real axis, $x^\alpha=\abs{x}^\alpha e^{i\alpha\pi}$ moves from $\infty$ to $0$ along the ray $\theset{te^{i\alpha\pi}\st t>0}$.
 :::

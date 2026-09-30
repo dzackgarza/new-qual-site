@@ -33,13 +33,13 @@ If $X$ is a quasi-affine or quasi-projective variety and $Y \subseteq X$ is an i
 This is the **induced structure** on $Y$, and $Y$ is called a **subvariety** of $X$.
 
 Now let $\phi: X \to Y$ be a morphism, and let $X' \subseteq X$ and $Y' \subseteq Y$ be irreducible locally closed subsets with $\phi(X') \subseteq Y'$.
-Show that $\ro{\phi}{X'} : X' \to Y'$ is a morphism.
+Show that $\restrictionof{\phi}{X'} : X' \to Y'$ is a morphism.
 :::
 
 ::: {.solution}
 Write
 $$
-\phi'=\ro{\phi}{X'}:X'\longrightarrow Y'.
+\phi'=\restrictionof{\phi}{X'}:X'\longrightarrow Y'.
 $$
 
 ::: pf

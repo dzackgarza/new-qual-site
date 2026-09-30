@@ -27,7 +27,7 @@ A topological space $X$ is a **Zariski space** if it is noetherian and every non
 
 For example, let $R$ be a discrete valuation ring and let $T = \operatorname{sp}(\Spec R)$.
 Then $T$ consists of two points: $t_0$, the maximal ideal, and $t_1$, the zero ideal.
-The open subsets are $\varnothing$, $\ts{t_1}$, and $T$.
+The open subsets are $\varnothing$, $\theset{t_1}$, and $T$.
 This is an irreducible Zariski space with generic point $t_1$.
 
 a. Show that if $X$ is a noetherian scheme then $\operatorname{sp}(X)$ is a Zariski space.
@@ -39,7 +39,7 @@ c. Show that a Zariski space $X$ satisfies the axiom $T_0$: given any two distin
 
 d. If $X$ is an irreducible Zariski space, then its generic point is contained in every nonempty open subset of $X$.
 
-e. If $x_0 \in \cl\qty{\ts{x_1}}$, we say $x_0$ is a specialization of $x_1$, or that $x_1$ is a generization of $x_0$.
+e. If $x_0 \in \cl\qty{\theset{x_1}}$, we say $x_0$ is a specialization of $x_1$, or that $x_1$ is a generization of $x_0$.
 Now let $X$ be a Zariski space.
 Show that the minimal points for the partial ordering determined by $x_1 > x_0$ when $x_0$ is a specialization of $x_1$ are the closed points, and the maximal points are the generic points of the irreducible components of $X$.
 Show also that a closed subset contains every specialization of any of its points; we say closed subsets are **stable under specialization**. Similarly, open subsets are stable under generization.

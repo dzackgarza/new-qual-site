@@ -32,7 +32,7 @@ The stalk $\OO_{X,p}$ is the \dfn{local ring at $p$}, with maximal ideal $\mfm_p
 :::
 
 ::: {.proposition title="Sections on an affine variety"}
-For $X$ affine with coordinate ring $A(X) = k[X] = k[x_1,\ldots,x_n]/I(X)$ and $D(f) \da X \sm V(f)$,
+For $X$ affine with coordinate ring $A(X) = k[X] = k[x_1,\ldots,x_n]/I(X)$ and $D(f) \definedas X \sm V(f)$,
 $$
 \OO_X(D(f)) = A(X)\invert{f}, \qquad \OO_X(X) = A(X), \qquad \OO_{X,p} = A(X)_{\mfm_p}, \qquad k(X) = \operatorname{Frac} A(X) .
 $$

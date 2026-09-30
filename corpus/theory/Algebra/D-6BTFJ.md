@@ -17,7 +17,7 @@ review: draft
 Let $n\geq 2$.
 The \dfn{symmetric group} $S_n$ is the group with [[D-V6UJ7|presentation]]
 $$
-S_n \coloneqq \gens{ \sigma_1, \ldots, \sigma_{n-1} \st \sigma_i^2 \ (1\leq i\leq n-1),\ \sigma_i\sigma_j\sigma_i^{-1}\sigma_j^{-1} \ (\abs{i-j}\geq 2),\ \sigma_i \sigma_{i+1} \sigma_i \sigma_{i+1}^{-1} \sigma_i^{-1} \sigma_{i+1}^{-1} \ (1\leq i\leq n-2) }.
+S_n \coloneqq \generators{ \sigma_1, \ldots, \sigma_{n-1} \st \sigma_i^2 \ (1\leq i\leq n-1),\ \sigma_i\sigma_j\sigma_i^{-1}\sigma_j^{-1} \ (\abs{i-j}\geq 2),\ \sigma_i \sigma_{i+1} \sigma_i \sigma_{i+1}^{-1} \sigma_i^{-1} \sigma_{i+1}^{-1} \ (1\leq i\leq n-2) }.
 $$
 :::
 

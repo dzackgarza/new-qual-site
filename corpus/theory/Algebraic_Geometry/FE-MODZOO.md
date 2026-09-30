@@ -24,7 +24,7 @@ prompts:
 
 ::: {.example title="Not quasicoherent"}
 On $X = \Spec A$ with $Z \subseteq X$ closed and $j: U = X \setminus Z \injects X$ open, the sheaf $j_!\OO_U$ extended by zero is an $\OO_X$-module that is not quasicoherent: its sections are not a localization at any point of $Z$.
-The constant sheaf $\ul{\ZZ}$ on a positive-dimensional $X$ is another, for the same reason — restriction maps do not localize.
+The constant sheaf $\underline{\ZZ}$ on a positive-dimensional $X$ is another, for the same reason — restriction maps do not localize.
 :::
 
 ::: {.example title="Quasicoherent, not coherent"}

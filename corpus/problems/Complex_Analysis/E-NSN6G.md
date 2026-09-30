@@ -30,7 +30,7 @@ Prove that if $f_n\to f$ locally uniformly with $f_n$ holomorphic, then $f_n'\to
 \sup_{z\in \Omega_R} \abs{F'(z)} \leq {1\over R} \sup_{\zeta \in \Omega} \abs{F(\zeta)} && \forall R
 ,\]
 where on the right we take the sup over all $\Omega$.
-  - Then take $F \da f_n-f$ and $R\to 0$ to conclude, since the right-hand side is a constant not depending on $\Omega_R$.
+  - Then take $F \definedas f_n-f$ and $R\to 0$ to conclude, since the right-hand side is a constant not depending on $\Omega_R$.
 - For any $z\in \Omega_R$, we have $\bar{D_R(z)} \subseteq \Omega_R$, so Cauchy's integral formula can be applied:
 \[
 \abs{F'(z)} 

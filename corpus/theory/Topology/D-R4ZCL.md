@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $(X,x_0)$ and $(Y,y_0)$ be based spaces.
-Identify the [[D-IGUUS|wedge sum]] $X\vee Y$ with the subspace $X\times\ts{y_0}\cup\ts{x_0}\times Y$ of $X\times Y$.
+Identify the [[D-IGUUS|wedge sum]] $X\vee Y$ with the subspace $X\times\theset{y_0}\cup\theset{x_0}\times Y$ of $X\times Y$.
 The \dfn{smash product} is the quotient space
 $$
 X\wedge Y\coloneqq(X\times Y)/(X\vee Y),

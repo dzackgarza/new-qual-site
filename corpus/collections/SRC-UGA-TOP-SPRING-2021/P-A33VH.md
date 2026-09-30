@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 For nonempty subsets $A, B$ of a metric space $(X, d)$, define the **setwise distance** as 
 \[
-d(A, B) \da \inf \ts{ d(a, b) \st a\in A,\, b\in B } 
+d(A, B) \definedas \inf \theset{ d(a, b) \st a\in A,\, b\in B } 
 .\]
 
 a. 
@@ -43,7 +43,7 @@ Show that if $d(A, B) = 0$ then $A \intersect B \neq \emptyset$.
 c. 
 Give an example in which $A$ is closed, $B$ is compact, and $d(a, b) > d(A, B)$ for all $a\in A$ and $b\in B$.
 
-> Hint: take $X = \ts{ 0 } \union (1, 2] \subset \RR$.
+> Hint: take $X = \theset{ 0 } \union (1, 2] \subset \RR$.
 > Throughout this problem, you may use without proof that the map $d:X\cross X\to \RR$ is continuous.
 
 :::

@@ -28,5 +28,5 @@ If $f'\equiv0$ on $\Omega$, then $f$ is locally constant, hence constant because
 So $f'$ is an analytic function on a connected open set that is not identically zero, and its zeros are isolated.
 
 (b) Put $h\coloneqq f-g$. Then $h'=0$ on $\Omega$, so $h$ is locally constant: on a disc $D\subseteq\Omega$, $h(z)-h(z_0)=\int_{[z_0,z]}h'(w)\,dw=0$.
-The set $\ts{z\in\Omega\st h(z)=h(z_0)}$ is therefore open, and it is closed by continuity, so it is all of $\Omega$.
+The set $\theset{z\in\Omega\st h(z)=h(z_0)}$ is therefore open, and it is closed by continuity, so it is all of $\Omega$.
 :::

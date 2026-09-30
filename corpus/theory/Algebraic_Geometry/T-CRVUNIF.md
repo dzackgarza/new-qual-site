@@ -27,12 +27,12 @@ prompts:
 ---
 
 ::: {.theorem title="Uniformisation"}
-Let $\Lambda \subseteq \CC$ be a lattice and $E_\Lambda \da V(y^2 = 4x^3 - g_2 x - g_3) \subseteq \PP^2_{/\CC}$.
+Let $\Lambda \subseteq \CC$ be a lattice and $E_\Lambda \definedas V(y^2 = 4x^3 - g_2 x - g_3) \subseteq \PP^2_{/\CC}$.
 Then $\Delta = g_2^3 - 27g_3^2 \neq 0$, so $E_\Lambda$ is a smooth cubic, and
 \[
 \phi \colon \CC/\Lambda \to E_\Lambda,
 \qquad
-z \mapsto \tv{\wp(z) : \wp'(z) : 1}, \quad 0 \mapsto \tv{0:1:0} ,
+z \mapsto \thevector{\wp(z) : \wp'(z) : 1}, \quad 0 \mapsto \thevector{0:1:0} ,
 \]
 is an isomorphism of Riemann surfaces which is also a group isomorphism onto $(E_\Lambda, p_0)$ with $p_0 = \phi(0)$.
 Conversely every elliptic curve over $\CC$ is isomorphic to some $E_\Lambda$: given $c_2, c_3$ with $c_2^3 - 27c_3^2 \neq 0$ there is a lattice with $g_2 = c_2$ and $g_3 = c_3$.

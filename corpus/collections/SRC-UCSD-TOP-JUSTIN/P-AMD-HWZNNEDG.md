@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-Prove that for a SES $0\into A\into B\into C$, the group $\ext(C,A)$ classifies extensions of $C$ by $A$ up to isomorphism.
+Prove that for a SES $0\into A\into B\into C$, the group $\Ext(C,A)$ classifies extensions of $C$ by $A$ up to isomorphism.
 :::
 
 ::: {.solution}

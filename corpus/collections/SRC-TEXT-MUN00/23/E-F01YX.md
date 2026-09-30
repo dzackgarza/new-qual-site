@@ -25,7 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Let $\ts{X_\alpha}_{\alpha \in J}$ be an indexed family of connected spaces; let $X$ be the product space
+Let $\theset{X_\alpha}_{\alpha \in J}$ be an indexed family of connected spaces; let $X$ be the product space
 
 $$
 X = \prod_{\alpha \in J} X_\alpha.

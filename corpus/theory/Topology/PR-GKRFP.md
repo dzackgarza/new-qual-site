@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.proposition}
-The real projective plane is obtained from a Möbius band $\bbm$ and a closed disc $D^2$ by identifying the boundary circle of $\bbm$ with $\partial D^2$ by a homeomorphism:
+The real projective plane is obtained from a Möbius band $\bM$ and a closed disc $D^2$ by identifying the boundary circle of $\bM$ with $\partial D^2$ by a homeomorphism:
 $$
-\RP^2 \cong \bbm \union_{\partial} D^2
+\RP^2 \cong \bM \union_{\partial} D^2
 .$$
 :::
 

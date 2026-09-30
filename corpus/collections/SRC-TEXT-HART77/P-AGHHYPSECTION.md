@@ -23,7 +23,7 @@ Show that every irreducible component of $Y \intersect H$ has dimension $r - 1$.
 
 ::: {.solution}
 Write $H = V(f)$.
-Irreducible components of $Y \intersect H$ correspond to the minimal primes $\mfp_i$ of $A(Y)$ containing $\gens{f}$, because $V(\mfp)$ is irreducible exactly when $\mfp$ is prime.
+Irreducible components of $Y \intersect H$ correspond to the minimal primes $\mfp_i$ of $A(Y)$ containing $\generators{f}$, because $V(\mfp)$ is irreducible exactly when $\mfp$ is prime.
 
 Since $Y \not\subseteq H$, the image of $f$ in $A(Y)$ is nonzero, and $A(Y)$ is a domain, so $f$ is neither a unit nor a zero divisor.
 Krull's principal ideal theorem then gives $\height \mfp_i = 1$ for each such minimal prime.

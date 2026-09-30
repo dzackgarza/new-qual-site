@@ -26,7 +26,7 @@ review: draft
 Set $z=e^{i\theta}$, so $\sin(\theta) = {z-\inverseof{z}\over 2i}$ and $\sin^2(\theta) = -{1\over 4}(z^{-2}-2+z^2)$.
 Then
 \[
-I\da \int_{[-\pi, \pi]} {1\over 1 + \sin^2(\theta)} \dtheta
+I\definedas \int_{[-\pi, \pi]} {1\over 1 + \sin^2(\theta)} \dtheta
 &= \int_{S^1} {1\over 1 - {1\over 4}(z^{-2} -2 + z^2) } {1\over iz}\dz \\
 &= \int_{S^1} {-4i \over z(4-(z^{-2} -2 + z^2))}\dz \\
 &= \int_{S^1} {-4iz \over z^2(6-z^{-2} - z^2)}\dz \\
@@ -45,13 +45,13 @@ w^2 - 6w + 1 =0
 .\]
 Write these roots as
 
-- $z_1 \da \sqrt{3-\sqrt 8}$
+- $z_1 \definedas \sqrt{3-\sqrt 8}$
 
-- $z_2 \da -\sqrt{3-\sqrt 8}$
+- $z_2 \definedas -\sqrt{3-\sqrt 8}$
 
-- $z_3 \da \sqrt{3+\sqrt 8}$
+- $z_3 \definedas \sqrt{3+\sqrt 8}$
 
-- $z_4 \da -\sqrt{3 + \sqrt 8}$
+- $z_4 \definedas -\sqrt{3 + \sqrt 8}$
 
 Their moduli:
 

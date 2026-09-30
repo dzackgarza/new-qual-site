@@ -26,10 +26,10 @@ topics:
 - $\ZZ \subseteq \RR$ is closed and not open.
   Its complement $\RR\sm\ZZ = \bigcup_{n\in \ZZ} (n, n+1)$ is open, and every neighborhood of $n\in \ZZ$ meets $\RR\sm \ZZ$, so $\ZZ$ has no interior points.
   Every point of $\ZZ$ is an isolated point and a boundary point, and $\ZZ$ has no accumulation points.
-- Points are closed in $\RR$, since $\RR \sm \ts{ p } = (-\infty, p) \union (p, \infty)$ is open.
-  An infinite intersection of open sets need not be open: $\bigcap_{n\geq 1} (p-1/n, p+1/n) = \ts{ p }$.
-- An interval $(a, b)$ is open in $\RR$, and $(a,b)\cross\ts{0}$ is not open in $\RR^d$ for $d\geq 2$.
-- $\ts{1/n \suchthat n\geq 1}$ has no interior points, each of its points is isolated, its boundary is $\ts{0}\union\ts{1/n \suchthat n\geq 1}$, and its only accumulation point is $0$.
+- Points are closed in $\RR$, since $\RR \sm \theset{ p } = (-\infty, p) \union (p, \infty)$ is open.
+  An infinite intersection of open sets need not be open: $\bigcap_{n\geq 1} (p-1/n, p+1/n) = \theset{ p }$.
+- An interval $(a, b)$ is open in $\RR$, and $(a,b)\cross\theset{0}$ is not open in $\RR^d$ for $d\geq 2$.
+- $\theset{1/n \suchthat n\geq 1}$ has no interior points, each of its points is isolated, its boundary is $\theset{0}\union\theset{1/n \suchthat n\geq 1}$, and its only accumulation point is $0$.
 - The Cantor set has no interior points and no isolated points; every point of it is a boundary point and an accumulation point.
 
 :::
@@ -48,14 +48,14 @@ where $\mathbb M$ is the Möbius band, $\mathbb K$ the Klein bottle, and $\Sigma
 \envlist
 
 - A finite set with at least two points and the discrete topology is compact and Hausdorff and not connected.
-- $(a, b)$ and $(a,\infty)$ are homeomorphic to $\RR$ and not compact; $(a,b]$ is neither open nor closed in $\RR$; $\ts{0} \union \ts{1/n\suchthat n\geq 1}$ is compact and countable, and $0$ is not an isolated point.
+- $(a, b)$ and $(a,\infty)$ are homeomorphic to $\RR$ and not compact; $(a,b]$ is neither open nor closed in $\RR$; $\theset{0} \union \theset{1/n\suchthat n\geq 1}$ is compact and countable, and $0$ is not an isolated point.
 - $\QQ$ is totally disconnected, not discrete, and not locally compact.
 - The topologist's sine curve is connected, not path connected, and not locally connected.
 - The one-point compactification of a locally compact Hausdorff space is compact Hausdorff; that of $\QQ$ is compact and not Hausdorff.
 - $\RR^\omega$, the countable product of copies of $\RR$, is connected and metrizable in the product topology, metrizable and not connected in the uniform topology, and neither connected nor metrizable in the box topology.
 - The Hawaiian earring is path connected and locally path connected and not semilocally simply connected, so it has no universal cover.
 - The Cantor set is compact, uncountable, and totally disconnected, with no isolated points.
-- Quaternionic projective space $\HP^n$ has a CW structure with one cell in each dimension $0,4,\ldots,4n$, so $H_k(\HP^n)\cong\ZZ$ for $k\in\ts{0,4,\ldots,4n}$ and $H_k(\HP^n)=0$ otherwise.
+- Quaternionic projective space $\HP^n$ has a CW structure with one cell in each dimension $0,4,\ldots,4n$, so $H_k(\HP^n)\cong\ZZ$ for $k\in\theset{0,4,\ldots,4n}$ and $H_k(\HP^n)=0$ otherwise.
 - The dunce cap is contractible, and no triangulation of it has a free edge, so it is not collapsible.
 - The Alexander horned sphere is an embedding $S^2\injects S^3$ one of whose complementary components is not simply connected, so the Schoenflies theorem fails in dimension $3$.
 
@@ -119,7 +119,7 @@ Then $X$ is compact, and if $X$ is infinite, then $X$ is not Hausdorff, since an
 
 ::: {.proof}
 If the topology is discrete, every singleton is open.
-Conversely, if $\ts x$ is open for each $x \in X$, then every $U\subseteq X$ is the union $\bigcup_{x\in U}\ts x$ of open sets, so $U$ is open.
+Conversely, if $\theset x$ is open for each $x \in X$, then every $U\subseteq X$ is the union $\bigcup_{x\in U}\theset x$ of open sets, so $U$ is open.
 
 :::
 

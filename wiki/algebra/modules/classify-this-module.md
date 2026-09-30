@@ -27,9 +27,9 @@ Let $R$ be a PID and $M$ a finitely generated $R$-module.
 
 3. **Decomposition.**
    $$
-   M \cong R^{n-k} \oplus \bigoplus_{i=1}^k R/\gens{a_i}.
+   M \cong R^{n-k} \oplus \bigoplus_{i=1}^k R/\generators{a_i}.
    $$
-   The free rank of $M$ is $n-k$, and the summands $R/\gens{a_i}$ with $a_i$ a unit are zero; the nonunit $a_i$ are the invariant factors of $M$.
+   The free rank of $M$ is $n-k$, and the summands $R/\generators{a_i}$ with $a_i$ a unit are zero; the nonunit $a_i$ are the invariant factors of $M$.
 
 4. **Elementary divisors and invariant factors.** The elementary divisors are the prime-power factors of the invariant factors.
    Conversely, the largest invariant factor is the product, over the primes $p$, of the largest elementary divisor that is a power of $p$; removing those elementary divisors and repeating gives the next invariant factor.
@@ -60,7 +60,7 @@ For finitely generated modules over a PID, the four conditions coincide.
 
 - $\QQ$ over $\ZZ$ is flat, not projective, and not finitely generated.
 
-- The ideal $\gens{2,x} \subseteq \ZZ[x]$ is torsion-free and not free.
+- The ideal $\generators{2,x} \subseteq \ZZ[x]$ is torsion-free and not free.
 :::
 
 ## Free ideals

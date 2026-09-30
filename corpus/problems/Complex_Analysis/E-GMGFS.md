@@ -18,14 +18,14 @@ review: draft
 ::: {.exercise}
 Find a Laurent expansion about $z=0$ of
 \[
-f(z) \da \cos\qty{1- {1\over z}}
+f(z) \definedas \cos\qty{1- {1\over z}}
 ,\]
 and compute the "residue" coefficient $c_{-1}$.
 
 :::
 
 ::: {.solution}
-Write $g(z) \da \cos(1-z)$, so $g(1/z) = f(z)$, and expand:
+Write $g(z) \definedas \cos(1-z)$, so $g(1/z) = f(z)$, and expand:
 \[
 g(z) 
 &= \cos(1-z) \\

@@ -26,7 +26,7 @@ audit:
 Recall the notions of support of a section of a sheaf, support of a sheaf, and subsheaf with supports from (Ex. 1.14) and (Ex. 1.20).
 
 (a) Let $A$ be a ring, let $M$ be an $A$-module, let $X = \Spec A$, and let $\mcf = \widetilde M$.
-For any $m \in M = \Gamma(X,\mcf)$, show that $\supp m = V(\Ann m)$, where $\Ann m = \ts{a \in A \st am = 0}$.
+For any $m \in M = \Gamma(X,\mcf)$, show that $\supp m = V(\Ann m)$, where $\Ann m = \theset{a \in A \st am = 0}$.
 
 (b) Now suppose that $A$ is noetherian and $M$ finitely generated.
 Show that $\supp \mcf = V(\Ann M)$.
@@ -35,7 +35,7 @@ Show that $\supp \mcf = V(\Ann M)$.
 
 (d) For any ideal $\mfa \subseteq A$, define a submodule $\Gamma_\mfa(M)$ of $M$ by
 $$
-\Gamma_\mfa(M) = \ts{m \in M \st \mfa^n m = 0 \text{ for some } n > 0}.
+\Gamma_\mfa(M) = \theset{m \in M \st \mfa^n m = 0 \text{ for some } n > 0}.
 $$
 Assume that $A$ is noetherian, and $M$ any $A$-module.
 Show that $\Gamma_\mfa(M)^\sim \cong \mch^0_Z(\mcf)$, where $Z = V(\mfa)$ and $\mcf = \widetilde M$.

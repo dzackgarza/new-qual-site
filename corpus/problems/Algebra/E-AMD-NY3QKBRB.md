@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto gh\inverseof{g})$ is $Z(G)$.
+Show that the kernel of the map $G\to \Aut(G)$ given by $g\mapsto (h\mapsto gh\inverseof{g})$ is $Z(G)$.
 :::
 
 ::: {.solution}
@@ -27,7 +27,7 @@ Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto gh\i
 ::: pf
 
 ::: pf-step
-Write $\varphi: G \to \aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
+Write $\varphi: G \to \Aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
 :::
 
 ::: {.pf-step #kernel-iff-center}
@@ -36,7 +36,7 @@ $g \in \ker \varphi$ if and only if $g \in Z(G)$.
 ::: pf-proof
 
 ::: pf-step
-$\ker \varphi = \ts{ g \in G \st c_g = \id_G }$, since the identity of $\aut(G)$ is the identity automorphism.
+$\ker \varphi = \theset{ g \in G \st c_g = \id_G }$, since the identity of $\Aut(G)$ is the identity automorphism.
 :::
 
 ::: pf-step

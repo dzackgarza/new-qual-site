@@ -29,7 +29,7 @@ More explicitly, let $z(t): [a, b]\to \CC$ be any parameterization of $\gamma$, 
 \int_\gamma f(z) \dz 
 &= \int_a^b f(z(t)) z'(t)\dt \\
 &= \int_a^b F'(z(t))z'(t) \dt \\
-&= \int_a^b \tilde F'(t)\dt && \text{ where } \tilde F(t) \da F(z(t)) \text{ by the chain rule} \\
+&= \int_a^b \tilde F'(t)\dt && \text{ where } \tilde F(t) \definedas F(z(t)) \text{ by the chain rule} \\
 &= F(z(b)) - F(z(a)) && \text{ by FTC} \\
 &= 0
 ,\]

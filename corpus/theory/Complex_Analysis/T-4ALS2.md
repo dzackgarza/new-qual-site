@@ -25,8 +25,8 @@ Let $\Omega\subseteq\CC$ be open and let $\mcf$ be a family of [[D-E7A5W|holomor
 
 ::: {.proof}
 Let $K\subseteq\Omega$ be compact and choose $r>0$ with $3r<\operatorname{dist}(K,\CC\sm\Omega)$ (any $r>0$ if $\Omega=\CC$).
-The set $K'\coloneqq\ts{z\st\operatorname{dist}(z,K)\le2r}$ is a compact subset of $\Omega$, so there is $M$ with $\abs f\le M$ on $K'$ for all $f\in\mcf$.
-For $z,w\in K$ with $\abs{z-w}<r$, the circle $C=\ts{\abs{\zeta-w}=2r}$ lies in $K'$, and the Cauchy integral formula gives
+The set $K'\coloneqq\theset{z\st\operatorname{dist}(z,K)\le2r}$ is a compact subset of $\Omega$, so there is $M$ with $\abs f\le M$ on $K'$ for all $f\in\mcf$.
+For $z,w\in K$ with $\abs{z-w}<r$, the circle $C=\theset{\abs{\zeta-w}=2r}$ lies in $K'$, and the Cauchy integral formula gives
 $$
 \abs{f(z)-f(w)}=\abs{\frac{1}{2\pi i}\int_Cf(\zeta)\Big(\frac{1}{\zeta-z}-\frac{1}{\zeta-w}\Big)d\zeta}\le\frac{1}{2\pi}\cdot2\pi(2r)\cdot M\cdot\frac{\abs{z-w}}{r\cdot2r}=\frac{M}{r}\abs{z-w},
 $$

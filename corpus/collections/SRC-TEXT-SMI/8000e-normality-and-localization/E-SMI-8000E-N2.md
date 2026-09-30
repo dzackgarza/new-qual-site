@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.exercise}
-In a ufd $R$, prove all "minimal" prime ideals are principal — i.e. if the only prime ideal contained in $P$ is $\ts{0}$, then $P$ is principal.
+In a ufd $R$, prove all "minimal" prime ideals are principal — i.e. if the only prime ideal contained in $P$ is $\theset{0}$, then $P$ is principal.
 :::
 
 ::: {.solution}

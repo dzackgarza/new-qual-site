@@ -46,7 +46,7 @@ $$
    is exact.
 
 (b) Now pass to the limit, using (9.1), (9.2), and (9.6).
-   Conclude that $\mcf \cong \inverselim_n \mcf/\mci^n \mcf'$ and that the sequence of global sections above is exact.
+   Conclude that $\mcf \cong \projectivelim_n \mcf/\mci^n \mcf'$ and that the sequence of global sections above is exact.
 :::
 
 ::: {.solution}

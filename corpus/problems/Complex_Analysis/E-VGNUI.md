@@ -49,7 +49,7 @@ Thus
 &= G(p) - G(p) \\
 &= 0
 ,\]
-where $G(z) \da {f(z) \over z-a}$ is a primitive for the integrand by definition.
+where $G(z) \definedas {f(z) \over z-a}$ is a primitive for the integrand by definition.
 
 :::
 

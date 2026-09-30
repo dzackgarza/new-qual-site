@@ -30,7 +30,7 @@ The second normal points out of the cone, so flip it to $(4,-1)$, and
 \[
 \dualof{\sigma} = \Cone\big( (4,-1),\ (-1,2) \big) .
 \]
-Check the two pairings that must vanish: $\inp{(4,-1)}{(1,4)} = 4 - 4 = 0$ and $\inp{(-1,2)}{(2,1)} = -2 + 2 = 0$, so each of these is the inward normal to one wall.
+Check the two pairings that must vanish: $\inner{(4,-1)}{(1,4)} = 4 - 4 = 0$ and $\inner{(-1,2)}{(2,1)} = -2 + 2 = 0$, so each of these is the inward normal to one wall.
 :::
 
 ::: {.example title="The semigroup and its equations"}

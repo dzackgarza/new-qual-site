@@ -23,7 +23,7 @@ prompts:
 
 ::: {.definition}
 Let $Z \subseteq \abs{X}$ be closed.
-For $X = \Spec A$ take $\mfa \da \Intersect_{\mfp \in Z} \mfp$, a radical ideal, and give $Z$ the structure $\Spec(A/\mfa)$.
+For $X = \Spec A$ take $\mfa \definedas \Intersect_{\mfp \in Z} \mfp$, a radical ideal, and give $Z$ the structure $\Spec(A/\mfa)$.
 These agree on overlaps, so they glue to a closed subscheme structure on $Z$ for any $X$: the \dfn{reduced induced structure} $Z^\red$.
 :::
 

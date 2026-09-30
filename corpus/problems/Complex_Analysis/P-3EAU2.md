@@ -49,7 +49,7 @@ Not possible: suppose so, then by continuity, we have
 f(0) = f(\lim 1/n^2)= \lim f(1/n^2)=\lim 1/n = 0
 ,\]
 so $z_0=0$ is a zero.
-Now defining $g(z) = z^{1\over 2} \da e^{1\over 2 \log(z)}$ on $U \da \CC\sm(-\infty, 0]$ extending this continuously to zero by $g(0)= 0$ yields $g(z) = f(z)$on $\ts{1/n^2 \st n>1}\union\ts{0}$, so $g(z) \equiv f(z)$ on $U$.
+Now defining $g(z) = z^{1\over 2} \definedas e^{1\over 2 \log(z)}$ on $U \definedas \CC\sm(-\infty, 0]$ extending this continuously to zero by $g(0)= 0$ yields $g(z) = f(z)$on $\theset{1/n^2 \st n>1}\union\theset{0}$, so $g(z) \equiv f(z)$ on $U$.
 But then $g\equiv f$ on $\DD$, and $g$ is not holomorphic on all of $\D$, contradicting that $f$ was holomorphic on $\DD$.
 
 **Part d**:
@@ -58,7 +58,7 @@ We can write
 \[
 {n-2\over n-1} = {1 - 2\cdot{1\over n} \over 1 - {1\over n}}
 ,\]
-so define $g(z) \da {1-2z\over 1-z}$.
+so define $g(z) \definedas {1-2z\over 1-z}$.
 Then $g(1/n) = f(1/n)$ for all $n$ and $g(0) = 1= f(0)$, so $g=f$ on a set with an accumulation point making $g\equiv f$ on $\DD$.
 Note that $g$ *is* holomorphic on $\DD$, since it has only a simple pole at $z_0 = 1$.
 :::

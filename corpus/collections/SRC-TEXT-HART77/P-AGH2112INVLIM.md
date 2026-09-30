@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\ts{\mcf_i}$ be an inverse system of sheaves on $X$.
+Let $\theset{\mcf_i}$ be an inverse system of sheaves on $X$.
 Show that the presheaf $U \mapsto \varprojlim \mcf_i(U)$ is a sheaf.
 It is called the **inverse limit** of the system and is denoted $\varprojlim \mcf_i$.
 Show that it has the universal property of an inverse limit in the category of sheaves.

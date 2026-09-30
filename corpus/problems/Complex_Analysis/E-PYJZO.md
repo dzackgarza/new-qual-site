@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Find a conformal map from the sector $\ts{\Arg(z) \in (0, \alpha)} \to \DD$.
+Find a conformal map from the sector $\theset{\Arg(z) \in (0, \alpha)} \to \DD$.
 :::
 
 ::: {.solution}

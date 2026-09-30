@@ -63,6 +63,6 @@ $\Aut(C_8) \cong \unitsof{(\ZZ/8\ZZ)} = \theset{1, 3, 5, 7}$ has every nonidenti
 :::
 
 ::: {.remark}
-By (h), for $N = C_p^n$ and $H = C_k = \gens{h}$, a homomorphism $\psi\colon C_k \to \GL_n(\FF_p)$ is determined by the matrix $A = \psi(h)$, and replacing $A$ by a similar matrix $PA\inverseof{P}$ gives an isomorphic semidirect product.
+By (h), for $N = C_p^n$ and $H = C_k = \generators{h}$, a homomorphism $\psi\colon C_k \to \GL_n(\FF_p)$ is determined by the matrix $A = \psi(h)$, and replacing $A$ by a similar matrix $PA\inverseof{P}$ gives an isomorphic semidirect product.
 So it suffices to take $A$ in a canonical form, such as the rational canonical form.
 :::

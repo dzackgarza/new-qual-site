@@ -47,9 +47,9 @@ If $f$ is holomorphic on $\Omega^+$ extending continuously to $I$ and real value
 
 **Part 3**: Define $h: \HH\to \bar{\HH}$ by $h(z) = (T\circ f\circ \inverseof{T})(z)$.
 Under $\inverseof{T}: \DD\to \HH$, we have $T(S^1) = \RR$, so $h$ is a holomorphic function on $\HH$ that is continuous and real-valued on $\RR$.
-By the reflection principle, defining $H(z) \da \bar{h(\bar z)}$ for $\Im(z) < 0$ yields an entire function $H: \CC\to \CC$ Noting that for $g(z) \da \bar{z}$, $g=\inverseof{g}$, we can write
+By the reflection principle, defining $H(z) \definedas \bar{h(\bar z)}$ for $\Im(z) < 0$ yields an entire function $H: \CC\to \CC$ Noting that for $g(z) \definedas \bar{z}$, $g=\inverseof{g}$, we can write
 \[
-H \da \inverseof{g} \circ h \circ = \inverseof{h} \circ (\inverseof{T} \circ f \circ T)\circ g
+H \definedas \inverseof{g} \circ h \circ = \inverseof{h} \circ (\inverseof{T} \circ f \circ T)\circ g
 .\]
 We can then conjugate $H$ by $T$ to get a direct formula in terms of $f$, and unwinding this yields the extension $F:\CC\to \CC$ defined by
 \[
@@ -57,7 +57,7 @@ F(z) =
 \begin{cases}
 f(z) & z\in \DD
 \\
-f_-(z) \da {1\over \bar{f\bar{z}}} & z\in \DD^c \\
+f_-(z) \definedas {1\over \bar{f\bar{z}}} & z\in \DD^c \\
 f(z) = f_i(z) & z\in S^1
 \end{cases}
 .\]

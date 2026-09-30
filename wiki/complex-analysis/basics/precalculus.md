@@ -66,7 +66,7 @@ u\mapsto a {1-u^2\over 1+u^2} +ib{2u\over 1+u^2},
 $$
   and, for $a=b=R$, of the circle of radius $R$; each misses only the point $-a$.
 
-- For $a\in\CC\setminus\ts{0}$ and $c\in\RR$, the set $\ts{z \st \bar{a}z + a\bar{z} + c = 0}$ is a line, and every line has this form.
+- For $a\in\CC\setminus\theset{0}$ and $c\in\RR$, the set $\theset{z \st \bar{a}z + a\bar{z} + c = 0}$ is a line, and every line has this form.
 
 :::
 

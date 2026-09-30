@@ -27,7 +27,7 @@ Choosing a branch of $z\mapsto z^{1\over n}$, write $g(z) = (h(z))^n$ for some $
 \[
 f(z) = z^n h(z)^n = (zh(z))^n
 .\]
-Write $H(z) \da zh(z)$, then $H'(z) = h(z) + zh'(z)$, so $H'(0)\neq 0$.
+Write $H(z) \definedas zh(z)$, then $H'(z) = h(z) + zh'(z)$, so $H'(0)\neq 0$.
 By the inverse function theorem, $H$ is invertible on a small neighborhood of $0$, making $f$ $n$-to-one for some $n$.
 Writing $f(z) = \sum_{k\geq 0} c_k z^k$, we have $c_0 = 0$ since $f(0) = 0$ and $c_1 = 0$ if $f'(0) = 0$, making $n\geq 2$, so $f$ fails injectivity in this neighborhood.
 :::

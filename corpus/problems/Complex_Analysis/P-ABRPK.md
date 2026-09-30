@@ -40,7 +40,7 @@ Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
 **Part 1**:
 use the reflection principle to define
 \[
-F(z) \da 
+F(z) \definedas 
 \begin{cases}
 f(z) & \abs{z} \leq 1 
 \\
@@ -52,7 +52,7 @@ Now $F:\CP^1\to \CP^1$ is holomorphic and all such functions are rational.
 As a consequence, $f$ is rational.
 
 **Part 2**:
-As in the proof of Schwarz, define $g(z) \da {f(z)\over z^n}$ where $n = \ord_{f}(0)$.
+As in the proof of Schwarz, define $g(z) \definedas {f(z)\over z^n}$ where $n = \order_{f}(0)$.
 Then $g$ is holomorphic on $\DD$ since the singularity at $z=0$ is removable.
 On $\abs{z} = r<1$,
 \[
@@ -64,8 +64,8 @@ Note that $\abs{g} = 1$ when $\abs{z}=1$, so $\abs{1/g}\leq 1$ in $\DD$ by the M
 Unwinding this, $\abs{f} = \abs{z}^n$, go $f(z) = \lambda z^n$ for some $\abs{\lambda} = 1$.
 
 **Part 3**:
-Define $\Psi(z) \da \prod_{k\leq n} \psi_{a_k}(z)$ where $\psi_a(z) \da {a-z\over 1-\bar a z}$.
-Set $g(z) \da {f(z) \over \Psi(z)}$, then by the same argument as above, $\abs{g} \leq 1$ and $\abs{g} = 1$ on $\abs{z} = 1$.
+Define $\Psi(z) \definedas \prod_{k\leq n} \psi_{a_k}(z)$ where $\psi_a(z) \definedas {a-z\over 1-\bar a z}$.
+Set $g(z) \definedas {f(z) \over \Psi(z)}$, then by the same argument as above, $\abs{g} \leq 1$ and $\abs{g} = 1$ on $\abs{z} = 1$.
 Then $g$ has no zeros, since they've all been divided out, and no poles since $f$ is holomorphic on $\DD$, so $1/g$ is holomorphic on $\DD$.
 Since $\abs{1/g} = 1$ on $S^1$, this forces $g$ to be constant.
 Equality in the Schwarz lemma implies $g(z) = \lambda z$ is a rotation, and unwinding this yields $f(z) = \lambda \Psi(z)$.

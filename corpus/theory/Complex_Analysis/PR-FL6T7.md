@@ -18,7 +18,7 @@ review: draft
 The [[D-FRVBV|Möbius transformation]]
 $$
 \begin{aligned}
-F\colon \HH=\ts{z\st \Im(z) > 0 } &\to \DD=\ts{w\st \abs{w} < 1 }, \\
+F\colon \HH=\theset{z\st \Im(z) > 0 } &\to \DD=\theset{w\st \abs{w} < 1 }, \\
 z &\mapsto {i-z \over i+z}
 \end{aligned}
 $$

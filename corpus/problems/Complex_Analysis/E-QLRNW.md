@@ -21,7 +21,7 @@ Show that
 
 - $f$ is continuous,
 - $f$ is differentiable,
-- $\ts{f_k'}\to f'$ locally uniformly.
+- $\theset{f_k'}\to f'$ locally uniformly.
 
 Thus if $f(z) = \sum{k\geq 0} c_k (z-z_0)^k$ is a power series, since $S_N\to f$ locally uniformly, $f$ can be differentiated term-by-term within its radius of convergence.
 
@@ -32,8 +32,8 @@ That $f$ is continuous is a local question: fixing a point $z_0$, take a closed 
 By local uniform convergence $f_k\to f$ uniformly on $\DD+z_0$, and differentiable $\implies$ continuous.
 So each $f_k$ is continuous, making $f$ continuous on $\DD+z_0$ by the uniform limit theorem.
 
-That $f$ is differentiable is again a local question: fix $z$ and write $\gamma \da \bar{\DD + z}$ as the boundary of the disc about $z$.
-Define $g_k(\xi) \da {f_k\over \xi-z}$, so $g_k \to {f \over \xi-a}$ locally uniformly.
+That $f$ is differentiable is again a local question: fix $z$ and write $\gamma \definedas \bar{\DD + z}$ as the boundary of the disc about $z$.
+Define $g_k(\xi) \definedas {f_k\over \xi-z}$, so $g_k \to {f \over \xi-a}$ locally uniformly.
 Now apply Cauchy's integral formula at $z$:
 \[
 f(z) 
@@ -57,7 +57,7 @@ That $f_k'\to f'$:
 .\]
 
 That the convergence is locally uniform:
-first consider what happens on an closed discs $K = D$ with $\gamma \da \bd{D}$.
+first consider what happens on an closed discs $K = D$ with $\gamma \definedas \bd{D}$.
 Then for $z\in D$,
 \[
 \abs{f'(z) - f_k'(z) }
@@ -68,7 +68,7 @@ Then for $z\in D$,
 &= { \sup_{\xi \in \gamma } \abs{f(\xi) - f_k(\xi) }}/r 
 .\]
 Since $\gamma$ is compact, using locally uniform convergence of $f_k\to f$, there exists an $n_0$ such that $n\geq n_0$ bounds this $\sup$ by $\eps$.
-For $K$ arbitrary, cover $K$ by discs $D_z$ for every $z\in K$ and extract a finite cover $\ts{D_{z_k}}_{k\leq N}$.
-Produce $n_0, n_1,\cdots, n_N$ as in the above argument, and take $n\da \max\ts{n_k}_{k\leq N}$ to obtain uniform convergence on every $D_{z_k}$ and thus on $K$.
+For $K$ arbitrary, cover $K$ by discs $D_z$ for every $z\in K$ and extract a finite cover $\theset{D_{z_k}}_{k\leq N}$.
+Produce $n_0, n_1,\cdots, n_N$ as in the above argument, and take $n\definedas \max\theset{n_k}_{k\leq N}$ to obtain uniform convergence on every $D_{z_k}$ and thus on $K$.
 :::
 

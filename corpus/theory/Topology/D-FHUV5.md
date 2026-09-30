@@ -15,10 +15,10 @@ review: draft
 ---
 
 ::: {.definition}
-Let $R$ be a [[D-GURUB|commutative ring]] and $G = \ts{g_1, \ldots, g_n}$ a finite group.
+Let $R$ be a [[D-GURUB|commutative ring]] and $G = \theset{g_1, \ldots, g_n}$ a finite group.
 The \dfn{group ring} $RG$ is the [[D-LIEMF|free]] $R$-module with basis the elements of $G$,
 $$
-RG\coloneqq\ts{ \sum_{i=1}^n a_i g_i \st a_i\in R },
+RG\coloneqq\theset{ \sum_{i=1}^n a_i g_i \st a_i\in R },
 $$
 with the multiplication that extends the group law $R$-bilinearly: $(ag)(bh)\coloneqq(ab)(gh)$ for $a, b\in R$ and $g, h\in G$.
 :::

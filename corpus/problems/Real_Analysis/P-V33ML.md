@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 Let $f:\\RR^n\\to\\RR$ be measurable. Show that
 \[
-\int_{\RR^n} \abs{ f} = \int_0^{\infty } m(A_t)\dt && A_t \da \ts{x\in \RR^n \st \abs{f(x)} > t}
+\int_{\RR^n} \abs{ f} = \int_0^{\infty } m(A_t)\dt && A_t \definedas \theset{x\in \RR^n \st \abs{f(x)} > t}
 .\]
 :::
 

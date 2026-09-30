@@ -25,7 +25,7 @@ prompts:
 ::: {.definition title="Projective"}
 $f : X \to Y$ is \dfn{projective} if it factors as a closed immersion followed by the projection,
 $$
-X \injects \PP^N_Y \to Y, \qquad \PP^N_Y \da \fiberprod{\PP^N_\ZZ}{\Spec \ZZ}{Y} ,
+X \injects \PP^N_Y \to Y, \qquad \PP^N_Y \definedas \fiberprod{\PP^N_\ZZ}{\Spec \ZZ}{Y} ,
 $$
 for some $N$.
 It is \dfn{quasi-projective} if it factors as an open immersion into a scheme projective over $Y$.

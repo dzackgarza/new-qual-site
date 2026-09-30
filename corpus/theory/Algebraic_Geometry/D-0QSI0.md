@@ -25,7 +25,7 @@ prompts:
 ::: {.definition title="Stalk"}
 For a presheaf $\mcf$ on $X$ and a point $p$,
 $$
-\mcf_p \da \colim_{U \ni p} \mcf(U) ,
+\mcf_p \definedas \colim_{U \ni p} \mcf(U) ,
 $$
 the colimit over open neighbourhoods of $p$ ordered by reverse inclusion.
 An element of $\mcf_p$ is a \dfn{germ} of a section at $p$: a pair $(U, s)$ with $s \in \mcf(U)$, where two pairs are identified when the sections agree on some smaller neighbourhood.

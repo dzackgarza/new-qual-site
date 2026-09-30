@@ -38,7 +38,7 @@ Hermitian, skew-Hermitian, and unitary matrices are normal, and by the spectral 
 
 ## Eigenvalue location
 
-- **Gershgorin.** Every eigenvalue of $A=(a_{ij})$ lies in some disc $\ts{z \st \abs{z-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}}$.
+- **Gershgorin.** Every eigenvalue of $A=(a_{ij})$ lies in some disc $\theset{z \st \abs{z-a_{ii}}\leq\sum_{j\neq i}\abs{a_{ij}}}$.
   A union of $k$ discs disjoint from the other $n-k$ discs contains exactly $k$ eigenvalues, counted with multiplicity.
 
 - **Courant--Fischer.** For Hermitian $A$ with eigenvalues $\lambda_1\geq\cdots\geq\lambda_n$, $\lambda_k = \max_{\dim S = k}\min_{0\neq x\in S} x^*Ax/x^*x$.

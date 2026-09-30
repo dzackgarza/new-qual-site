@@ -25,7 +25,7 @@ audit:
 ::: {.problem}
 Prove that if $f,\,xf(x) \in L^1(\RR)$, then
 \[
-F(y) \da \int f(x)\cos(yx)\,dx
+F(y) \definedas \int f(x)\cos(yx)\,dx
 \]
 defines a $C^1$ function.
 :::

@@ -26,7 +26,7 @@ With the fan of $\FF_a$ given by $u_1 = (1,0)$, $u_2 = (0,1)$, $u_3 = (-1,a)$, $
 \[
 \phi : N = \ZZ^2 \to \ZZ, \qquad (p,q) \mapsto p
 \]
-sends $u_1 \mapsto 1$, $u_3 \mapsto -1$, and $u_2, u_4 \mapsto 0$, so each cone of $\FF_a$ lands in a cone of the fan $\ts{\RR_{\geq 0}, \ts{0}, \RR_{\leq 0}}$ of $\PP^1$.
+sends $u_1 \mapsto 1$, $u_3 \mapsto -1$, and $u_2, u_4 \mapsto 0$, so each cone of $\FF_a$ lands in a cone of the fan $\theset{\RR_{\geq 0}, \theset{0}, \RR_{\leq 0}}$ of $\PP^1$.
 The induced toric morphism $\pi : \FF_a \to \PP^1$ is the ruling, with invariant fibres $D_1$ and $D_3$ and disjoint invariant sections $D_2$ and $D_4$.
 :::
 
@@ -75,7 +75,7 @@ Twisting changes the bundle and not the surface: $\PP(E) \cong \PP(E \tensor L)$
 \PP\big( \OO \oplus \OO(a) \big) \cong \PP\big( \OO(-a) \oplus \OO \big) ,
 \]
 and both notations name $\FF_a$.
-What does not depend on the convention is the pair of self-intersections $\ts{-a, +a}$ and the difference $a$ between them.
+What does not depend on the convention is the pair of self-intersections $\theset{-a, +a}$ and the difference $a$ between them.
 
 For $a \geq 1$ the negative section is the unique irreducible curve on $\FF_a$ with negative self-intersection, which is why $\FF_a \cong \FF_b$ forces $a = b$: the integer $a$ is recovered from the surface.
 For $a = 0$ there is no negative curve and $\FF_0 = \PP^1 \times \PP^1$ has two rulings instead of one.

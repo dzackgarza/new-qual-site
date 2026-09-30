@@ -22,7 +22,7 @@ Show that if $f$ is entire and $f(z) \convergesto{z\to\infty} \infty$ then $f$ i
 ::: {.solution}
 \envlist
 
-- Set $g(z) \da f(1/z)$, so $g(z) \convergesto{z\to 0} \infty$ making $z=0$ a singularity.
+- Set $g(z) \definedas f(1/z)$, so $g(z) \convergesto{z\to 0} \infty$ making $z=0$ a singularity.
 
 - This is not an essential singularity by Casorati-Weierstrass.
 

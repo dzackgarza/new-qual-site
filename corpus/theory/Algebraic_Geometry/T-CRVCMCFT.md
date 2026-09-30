@@ -25,7 +25,7 @@ prompts:
 ---
 
 ::: {.theorem title="Complex multiplication and class field theory"}
-Let $E/\CC$ have complex multiplication by the order $R$ of discriminant $D$ in the imaginary quadratic field $K$, and let $h(R) \da \abs{\Pic(R)}$ be the class number of that order.
+Let $E/\CC$ have complex multiplication by the order $R$ of discriminant $D$ in the imaginary quadratic field $K$, and let $h(R) \definedas \abs{\Pic(R)}$ be the class number of that order.
 Then:
 
 - $j(E)$ is an algebraic integer;
@@ -39,14 +39,14 @@ Then:
 
 There are exactly thirteen orders with $h(R) = 1$, so exactly thirteen values of $j$ arise this way, namely those of discriminant
 \[
-D \in \ts{ -3,\ -4,\ -7,\ -8,\ -11,\ -12,\ -16,\ -19,\ -27,\ -28,\ -43,\ -67,\ -163 } .
+D \in \theset{ -3,\ -4,\ -7,\ -8,\ -11,\ -12,\ -16,\ -19,\ -27,\ -28,\ -43,\ -67,\ -163 } .
 \]
 :::
 
 ::: {.remark title="Thirteen orders, nine fields"}
 The two counts refer to different objects: fields versus orders.
 
-**Nine** is the number of imaginary quadratic *fields* of class number one: $d_K \in \ts{-3,-4,-7,-8,-11,-19,-43,-67,-163}$.
+**Nine** is the number of imaginary quadratic *fields* of class number one: $d_K \in \theset{-3,-4,-7,-8,-11,-19,-43,-67,-163}$.
 That is the Baker--Heegner--Stark theorem, and it is a statement about maximal orders only.
 
 **Thirteen** is the number of imaginary quadratic *orders* of class number one, and an order need not be maximal.

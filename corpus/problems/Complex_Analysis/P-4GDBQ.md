@@ -23,8 +23,8 @@ Let $z_0 = r_0e^{i\pi} \in (-\infty, 0) \subseteq \RR$, and show that $z^{1\over
 
 where
 
-- $\gamma_1 = \ts{r_0 e^{it} \st t\in (0, \pi) }$,
-- $\gamma_2 = \ts{r_0 e^{-it} \st t\in (\pi, 0) }$
+- $\gamma_1 = \theset{r_0 e^{it} \st t\in (0, \pi) }$,
+- $\gamma_2 = \theset{r_0 e^{-it} \st t\in (\pi, 0) }$
 
 
 ![The situation](../../assets/Complex_Analysis/010_Basics/figures/2021-12-19_03-19-37.png)

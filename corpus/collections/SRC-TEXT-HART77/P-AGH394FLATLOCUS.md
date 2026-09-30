@@ -26,7 +26,7 @@ audit:
 Let $f: X \to Y$ be a morphism of finite type of noetherian schemes.
 Show that
 \[
-\ts{ x \in X \st f \text{ is flat at } x }
+\theset{ x \in X \st f \text{ is flat at } x }
 \]
 is an open subset of $X$, possibly empty.
 

@@ -21,7 +21,7 @@ Find the number of solutions to the following equation on $\abs{z} < 1$:
 :::
 
 ::: {.solution}
-Write $f(z) \da 6z^3 + 1 + e^z$.
+Write $f(z) \definedas 6z^3 + 1 + e^z$.
 
 - Small: $m(z) = e^z + 1$
 - Large: $M(z) = 6z^3$

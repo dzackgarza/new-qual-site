@@ -31,7 +31,7 @@ Every projective variety is complete; over $\CC$, a variety is complete if and o
 :::
 
 ::: {.remark}
-$\AA^1$ is not complete, although $\AA^1\to\Spec k$ is a closed map: after base change, the projection $\AA^1 \times \AA^1 \to \AA^1$ sends the closed hyperbola $V(xy-1)$ to $\AA^1 \sm \ts{0}$, which is not closed.
+$\AA^1$ is not complete, although $\AA^1\to\Spec k$ is a closed map: after base change, the projection $\AA^1 \times \AA^1 \to \AA^1$ sends the closed hyperbola $V(xy-1)$ to $\AA^1 \sm \theset{0}$, which is not closed.
 
 Complete varieties need not be projective: Hironaka constructed a nonsingular complete threefold that is not projective.
 Every complete curve and every nonsingular complete surface is projective, while there are complete normal surfaces that are not projective.

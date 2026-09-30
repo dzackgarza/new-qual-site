@@ -20,10 +20,10 @@ prompts:
 ---
 
 ::: {.definition}
-For $X \to S$ and a morphism $T \to S$, the \dfn{base change} of $X$ to $T$ is $X_T \da \fiberprod{X}{S}{T}$, with its projection $X_T \to T$.
+For $X \to S$ and a morphism $T \to S$, the \dfn{base change} of $X$ to $T$ is $X_T \definedas \fiberprod{X}{S}{T}$, with its projection $X_T \to T$.
 
 A property $P$ of morphisms is \dfn{stable under base change} if $X \to S$ having $P$ implies that $X_T \to T$ has $P$ for every $T \to S$.
-It is \dfn{local on the base} if $f\colon X \to S$ has $P$ whenever there is an open cover $\ts{V_i}$ of $S$ with each $\inverseof{f}(V_i) \to V_i$ having $P$.
+It is \dfn{local on the base} if $f\colon X \to S$ has $P$ whenever there is an open cover $\theset{V_i}$ of $S$ with each $\inverseof{f}(V_i) \to V_i$ having $P$.
 :::
 
 ::: {.remark}

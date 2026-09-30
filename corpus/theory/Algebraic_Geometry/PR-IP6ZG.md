@@ -24,7 +24,7 @@ prompts:
 ---
 
 ::: {.definition}
-For a direct system $\ts{\mcf_i}$ of sheaves on $X$ over a directed index set, $\colim_i \mcf_i$ is the sheafification of
+For a direct system $\theset{\mcf_i}$ of sheaves on $X$ over a directed index set, $\colim_i \mcf_i$ is the sheafification of
 \[
 U \longmapsto \colim_i \mcf_i(U) .
 \]

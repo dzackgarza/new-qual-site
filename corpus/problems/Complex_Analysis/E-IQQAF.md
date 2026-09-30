@@ -26,9 +26,9 @@ I = \int_\RR {\cos(x) \over x^2 + 1 }\dx
 ::: {.solution}
 Write
 \[
-I = \Re \int_\RR f(x) \dx && f(z) \da {e^{iz} \over z^2 + 1}
+I = \Re \int_\RR f(x) \dx && f(z) \definedas {e^{iz} \over z^2 + 1}
 .\]
-Define contours $C_1 = [-R, R]$, $C_2 = \ts{Re^{it} \st t\in [0, \pi]}$, and $\Gamma = C_1 + C_2$.
+Define contours $C_1 = [-R, R]$, $C_2 = \theset{Re^{it} \st t\in [0, \pi]}$, and $\Gamma = C_1 + C_2$.
 Then noting that $z_0 = i$ is the only pole of $f$ in $\HH$, by the residue theorem
 \[
 \int_\Gamma f(z) \dz = 2\pi i \Res_{z=i} f(z) = \qty{\int_{C_1} + \int_{C_2}} f

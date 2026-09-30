@@ -18,7 +18,7 @@ review: draft
 If $X_n$ is metrizable with metric $d_n$, then
 
 $$
-D(\mathbf{x}, \mathbf{y}) = \sup\ts{\bar{d}_i(x_i, y_i)/i}
+D(\mathbf{x}, \mathbf{y}) = \sup\theset{\bar{d}_i(x_i, y_i)/i}
 $$
 
 is a metric for the product space $X = \prod X_n$.

@@ -25,7 +25,7 @@ Just a computation:
 &= {1\over z-{z^3\over 3!} + {z^5\over 5!} - \bigo(z^7) } \\
 &={1\over z\qty{ 1 - {z^2\over 3!} + {z^4 \over 5!} - \bigo(z^6)} } \\
 &= \inverseof{z} \qty{1\over 1 - p(z)}
-\qquad p(z) \da {z^2\over 3!} - {z^4\over 5!} + \bigo(z^6) \\
+\qquad p(z) \definedas {z^2\over 3!} - {z^4\over 5!} + \bigo(z^6) \\
 &= \inverseof{z} \sum_{k\geq 0} p(z)^k \\
 &= \inverseof{z}\qty{ 1 + p(z) + p(z)^2 + \bigo(z^2)^3 } \\
 &= \inverseof{z}\qty{ 1

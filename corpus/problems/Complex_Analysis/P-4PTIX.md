@@ -142,7 +142,7 @@ Step [](#rouche-setup-a){.pf-ref} proves (a); step [](#part-b-counterexample){.p
 :::
 
 ::: {.solution title="Part 1"}
-Use Rouché: if $\abs{f(z)} < 1$ is strict when $\abs{z} = 1$, then consider $F(z) \da f(z) - z$.
+Use Rouché: if $\abs{f(z)} < 1$ is strict when $\abs{z} = 1$, then consider $F(z) \definedas f(z) - z$.
 Write the big part as $M(z) = z$ and the small as $m(z) = f(z)$, then on $\abs{z} = 1$
 \[
 \abs{m(z)} = \abs{f(z)} < 1 = \abs{z} = \abs{M(z)}
@@ -168,5 +168,5 @@ Moreover, not every map $f:\DD\to\DD$ need have a fixed point: consider
 g: \HH &\to \HH \\
 z &\mapsto z+1
 .\]
-Now conjugate with the Cayley map $C:\HH\to \DD$ to define $f\da Cg\inverseof{C}:\DD\to \DD$ which has no fixed points at all.
+Now conjugate with the Cayley map $C:\HH\to \DD$ to define $f\definedas Cg\inverseof{C}:\DD\to \DD$ which has no fixed points at all.
 :::

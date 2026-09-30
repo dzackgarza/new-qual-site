@@ -23,7 +23,7 @@ audit:
 Let
 \[
 M &= \{(w, x, y, z) \in \ZZ^4 \suchthat w + x + y + z \in 2\ZZ\} \\
-N &= \ts{
+N &= \theset{
 (w, x, y, z) \in \ZZ^4 \suchthat 4\divides (w - x),~ 4\divides (x - y),~ 4\divides ( y - z)
 }
 .\]

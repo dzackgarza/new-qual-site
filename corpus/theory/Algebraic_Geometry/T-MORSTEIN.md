@@ -26,7 +26,7 @@ prompts:
 Let $f : X \to Y$ be a proper morphism of Noetherian schemes.
 Then $f$ factors as
 \[
-X \mapsvia{g} Y' \da \Spec_Y f_* \OO_X \mapsvia{h} Y
+X \mapsvia{g} Y' \definedas \Spec_Y f_* \OO_X \mapsvia{h} Y
 \]
 with $g$ proper with connected fibres and $g_* \OO_X = \OO_{Y'}$, and $h$ finite.
 :::

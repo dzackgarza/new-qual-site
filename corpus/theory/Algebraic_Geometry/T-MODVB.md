@@ -25,13 +25,13 @@ prompts:
 
 ::: {.definition title="Locally free"}
 $\mcf$ is \dfn{free} if $\mcf \cong \bigoplus_{i \in I} \OO_X$ for some index set $I$, whose cardinality is its rank; it is free of rank $n$ if $\mcf \cong \OO_X\sumpower{n}$.
-$\mcf$ is **locally free** if $X$ has an open cover $\ts{U_j}$ with each $\ro{\mcf}{U_j}$ free, and locally free of rank $n$ if each $\ro{\mcf}{U_j}$ is free of rank $n$.
+$\mcf$ is **locally free** if $X$ has an open cover $\theset{U_j}$ with each $\restrictionof{\mcf}{U_j}$ free, and locally free of rank $n$ if each $\restrictionof{\mcf}{U_j}$ is free of rank $n$.
 The rank of a locally free sheaf is constant on each connected component of $X$.
 An **invertible sheaf** is a locally free sheaf of rank $1$.
 :::
 
 ::: {.theorem title="Bundles and sheaves"}
-Taking a rank-$n$ vector bundle $\pi: E \to X$ to its sheaf of sections $U \mapsto \ts{s: U \to E \mid \pi s = \id}$ is an equivalence between rank-$n$ vector bundles on $X$ and locally free $\OO_X$-modules of rank $n$.
+Taking a rank-$n$ vector bundle $\pi: E \to X$ to its sheaf of sections $U \mapsto \theset{s: U \to E \mid \pi s = \id}$ is an equivalence between rank-$n$ vector bundles on $X$ and locally free $\OO_X$-modules of rank $n$.
 :::
 
 ::: {.remark}

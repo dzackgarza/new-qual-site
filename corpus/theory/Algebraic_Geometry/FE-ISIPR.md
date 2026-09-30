@@ -23,7 +23,7 @@ It is not closed in the product topology.
 
 Suppose it were.
 Then $\AA^2 \sm \Delta$ would be open in the product, so it would contain a basic open box $U \times V$ around any of its points.
-Each factor carries the cofinite topology, so $U = \AA^1 \sm \ts{p_1,\ldots,p_m}$ and $V = \AA^1 \sm \ts{q_1,\ldots,q_n}$.
+Each factor carries the cofinite topology, so $U = \AA^1 \sm \theset{p_1,\ldots,p_m}$ and $V = \AA^1 \sm \theset{q_1,\ldots,q_n}$.
 Over an infinite field choose $z$ distinct from every $p_i$ and $q_j$; then $(z,z) \in (U \times V) \intersect \Delta$, contradicting $U \times V \subseteq \AA^2 \sm \Delta$.
 :::
 

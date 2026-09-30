@@ -17,7 +17,7 @@ review: draft
 Let $(\Omega,\mcb)$ be a measurable space with a Borel $\sigma\dash$algebra and $\mu_n: \mcb \to [0, \infty]$ be a $\sigma\dash$additive measure for each $n$.
 Show that the following map is again a $\sigma\dash$additive measure on $\mcb$:
 \[
-\mu(B) \da \sum_{n\geq 1} \mu_n(B)
+\mu(B) \definedas \sum_{n\geq 1} \mu_n(B)
 .\]
 :::
 

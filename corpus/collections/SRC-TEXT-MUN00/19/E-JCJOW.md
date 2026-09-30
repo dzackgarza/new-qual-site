@@ -24,7 +24,7 @@ audit:
 
 ::: {.exercise}
 
-Show that the choice axiom is equivalent to the statement that for any indexed family $\ts{A_\alpha}_{\alpha \in J}$ of nonempty sets, with $J \neq 0$, the cartesian product
+Show that the choice axiom is equivalent to the statement that for any indexed family $\theset{A_\alpha}_{\alpha \in J}$ of nonempty sets, with $J \neq 0$, the cartesian product
 
 $$
 \prod_{\alpha \in J} A_\alpha

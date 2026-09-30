@@ -26,7 +26,7 @@ audit:
 
 - Show that the uniform limit of bounded functions is uniformly bounded.
 
-- Construct sequences of functions $\ts{f_n}_{n\in \NN}$ and $\ts{g_n}_{n\in \NN}$ which converge uniformly on some set $E$, and yet their product sequence $\ts{h_n}_{n\in \NN}$ with $h_n \da f_n g_n$ does *not* converge uniformly.
+- Construct sequences of functions $\theset{f_n}_{n\in \NN}$ and $\theset{g_n}_{n\in \NN}$ which converge uniformly on some set $E$, and yet their product sequence $\theset{h_n}_{n\in \NN}$ with $h_n \definedas f_n g_n$ does *not* converge uniformly.
 
   - Show that if $f_n, g_n$ are additionally bounded, then $h_n$ does converge uniformly.
 

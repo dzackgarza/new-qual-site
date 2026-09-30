@@ -36,7 +36,7 @@ audit:
 ::: {.problem}
 Let $Y\subset \AA^n/k$ be an affine variety and define $A(Y)$ by the quotient
 \[
-\pi: k[x_1,\cdots, x_n] \to A(Y) \da k[x_1, \cdots, x_n]/I(Y)
+\pi: k[x_1,\cdots, x_n] \to A(Y) \definedas k[x_1, \cdots, x_n]/I(Y)
 .\]
 
 a. Show that $V_Y(J) = V(\pi^{-1}(J))$ for every $J\normal A(Y)$.

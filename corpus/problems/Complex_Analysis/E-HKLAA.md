@@ -51,7 +51,7 @@ The remaining steps are:
 The composite is $z\mapsto e^{i\pi/z}$.
 
 **Part 2.** The region is a lune with vertex $1$, where the circles $\abs z=1$ and $\abs{z-1/2}=1/2$ are tangent.
-Send $1\to \infty$ with $f(z) \da {1\over z-1}$.
+Send $1\to \infty$ with $f(z) \definedas {1\over z-1}$.
 For $z=x+iy$,
 \[
 \Re f(z)={x-1\over\abs{z-1}^2},
@@ -83,7 +83,7 @@ The remaining steps are:
 
 - Apply the Cayley map $w\mapsto {w-i\over w+i}$ to get $\DD$.
 
-**Part 3.** The circle $\abs{z+i}=\sqrt2$ passes through $\pm1$ and meets $i\RR$ in $\HH$ at $z_3 \da i(\sqrt{2} - 1)$, so the region is a lune with vertices $\pm 1$ bounded by $(-1,1)$ and the arc through $z_3$.
+**Part 3.** The circle $\abs{z+i}=\sqrt2$ passes through $\pm1$ and meets $i\RR$ in $\HH$ at $z_3 \definedas i(\sqrt{2} - 1)$, so the region is a lune with vertices $\pm 1$ bounded by $(-1,1)$ and the arc through $z_3$.
 Take $f(z)={z+1\over z-1}$, so that
 
 - $-1\mapsto 0$
@@ -97,7 +97,7 @@ $z_3\mapsto w_0$ where $\arg(w_0) = -3\pi/4$
 :::
 
 ::: {.proof}
-Let $z_3 = ic$ where $c\da \sqrt{2} -1$, then
+Let $z_3 = ic$ where $c\definedas \sqrt{2} -1$, then
 \[
 f(z_3)
 &= -{1+z_3\over 1-z_3} \\

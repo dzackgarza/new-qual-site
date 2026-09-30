@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_\RR {e^{ax} \over \cosh(x) }\dx,
+I \definedas \int_\RR {e^{ax} \over \cosh(x) }\dx,
 \qquad \abs{\Re(a)}<1.
 \]
 Show that

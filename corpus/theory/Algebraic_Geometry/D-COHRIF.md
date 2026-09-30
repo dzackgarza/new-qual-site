@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition}
-For $f: X \to Y$, the functor $f_*$ is left exact; set $R^i f_* \mcf \da R^i(f_*)(\mcf)$.
+For $f: X \to Y$, the functor $f_*$ is left exact; set $R^i f_* \mcf \definedas R^i(f_*)(\mcf)$.
 Equivalently, $R^i f_* \mcf$ is the sheafification of
 $$
 V \mapsto H^i\qty{\inverseof{f}(V), \restrictionof{\mcf}{\inverseof{f}(V)}} .

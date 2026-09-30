@@ -26,11 +26,11 @@ Prove that every such ideal $J$ is prime.
 ::: {.solution}
 \envlist
 
-- Restating, take the poset $S\da \ts{J\in \Id(R) \st J \intersect S = \emptyset, I\neq R, I \subseteq J}$ ordered by inclusion.
+- Restating, take the poset $S\definedas \theset{J\in \Id(R) \st J \intersect S = \emptyset, I\neq R, I \subseteq J}$ ordered by inclusion.
   Note that $S$ is nonempty since it contains $I$.
   It suffices to produce a maximal element of $S$.
-- Applying Zorn's lemma, let $C: C_1 \subseteq C_2 \subseteq \cdots$ be a chain and define $\hat{C} \da \union C_i$.
-- By standard arguments, $\hat{C} \in \Id(R)$ and $\hat{C} \contains I$, and it suffices to show $\hat{C} \intersect S = \emptyset$ and $\hat{C}\neq R$.
+- Applying Zorn's lemma, let $C: C_1 \subseteq C_2 \subseteq \cdots$ be a chain and define $\hat{C} \definedas \union C_i$.
+- By standard arguments, $\hat{C} \in \Id(R)$ and $\hat{C} \containing I$, and it suffices to show $\hat{C} \intersect S = \emptyset$ and $\hat{C}\neq R$.
 - $\hat{C} \intersect S = \emptyset$:
   - By contradiction, if $x\in \hat{C} \intersect S$ then $x\in C_j$ for some $j$, and $x\in S$.
     But then $x \in C_j \intersect S = \emptyset$.
@@ -41,9 +41,9 @@ Prove that every such ideal $J$ is prime.
 - Suppose not, then neither $a,b\in \mfp$. 
   By maximality, $\mfp + Ra = R$, and so $\mfp + Ra$ intersects $S$.
   Similarly $\mfp + Rb = R$ so $\mfp + Rb$ intersects $S$.
-- Produce elements $x\da p_1 + r_1a, y\da p_2 + r_2b\in S$, then since $S$ is multiplicatively closed,
+- Produce elements $x\definedas p_1 + r_1a, y\definedas p_2 + r_2b\in S$, then since $S$ is multiplicatively closed,
 \[
-xy&\da (p_1 + r_1 a)(p_2 + r_2b)\in S \\
+xy&\definedas (p_1 + r_1 a)(p_2 + r_2b)\in S \\
 &\implies p_1 p_2 + p_1r_2 b + p_2 r_1 a + r_1 r_2 ab \in S \\ 
 &\implies xy\in \mfp + \mfp Rb + \mfp Ra + R\mfp && \text{since } p_i, ab\in \mfp \\
 &\implies xy \in (\mfp + Rb + Ra + R)\mfp \subseteq \mfp

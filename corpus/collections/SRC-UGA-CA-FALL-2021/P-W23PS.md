@@ -31,7 +31,7 @@ The exam as transcribed in `2021_Fall.md.source`, and the existing solutions, ar
 ::: {.solution title="Newer, sketch"}
 By the ML estimate, $\int_{C_R} f \to 0$.
 
-The residue contribution: note the simple pole at $\omega_n \da e^{i\pi \over n}$,
+The residue contribution: note the simple pole at $\omega_n \definedas e^{i\pi \over n}$,
 \[
 \Res_{z=\omega_n} f(z) = {1\over n\omega_n^{n-1}} = {\omega \over n\omega^n} = -{\omega_n \over n}
 .\]
@@ -59,9 +59,9 @@ z^n+1  = \prod_{1\leq k \leq n}(z-\omega_{n, k}) =
 (z-e^{i\pi \over n})(z-e^{3i\pi \over n})
 \cdots (z-e^{(2n-1)i\pi \over n})
 .\]
-Note that only the root $e^{i\pi\over n}$ lies in the $2\pi/n$ wedge, so it is the only (simple) pole of $f(z) \da {1\over 1+z^n}$ in this region.
+Note that only the root $e^{i\pi\over n}$ lies in the $2\pi/n$ wedge, so it is the only (simple) pole of $f(z) \definedas {1\over 1+z^n}$ in this region.
 Since the pole is simple, the residue is computed by the simple-pole formula $\Res_{z=r_0} f = \lim_{z \to r_0} (z - r_0) f(z)$.
-Write $r_0 \da e^{i\pi\over n}$, then by L'Hôpital,
+Write $r_0 \definedas e^{i\pi\over n}$, then by L'Hôpital,
 \[
 \Res_{z = r_0} {1\over 1+z^n}
 &= \lim_{z\to r_0} {z-r_0 \over 1 + z^n} \\
@@ -75,13 +75,13 @@ Take a contour $\Gamma$ comprised of
 
 - $\gamma_1 = [0, R] \subseteq \RR$
 
-- $\gamma_2 = \ts{Re^{it} \st t\in [0, 2\pi/n]}$
+- $\gamma_2 = \theset{Re^{it} \st t\in [0, 2\pi/n]}$
 
 - $\gamma_3 = \zeta_n [0, R]$
 
 By the residue theorem
 \[
-2\pi i \Res_{z=r_0} f(z) = I \da \int_\Gamma f = \qty{\int_{\gamma_1} + \int_{\gamma_2} + \int_{\gamma_3}}f
+2\pi i \Res_{z=r_0} f(z) = I \definedas \int_\Gamma f = \qty{\int_{\gamma_1} + \int_{\gamma_2} + \int_{\gamma_3}}f
 .\]
 
 ::: {.claim}
@@ -121,9 +121,9 @@ e^{i\pi} e^{-i\pi \over n}\qty{1 - e^{2\pi i \over n}}
 ::: {.proof title="of claim 1"}
 Parameterize the curves:
 
-- $\gamma_1 \da \ts{t \st t\in [0, R]}, \dz = \dt$
+- $\gamma_1 \definedas \theset{t \st t\in [0, R]}, \dz = \dt$
 
-- $\gamma_3 \da \ts{t\zeta_n \st t\in [0, R]}, \dz = \zeta_n \dt$
+- $\gamma_3 \definedas \theset{t\zeta_n \st t\in [0, R]}, \dz = \zeta_n \dt$
 
 Then, a direct check:
 \[
@@ -136,7 +136,7 @@ Then, a direct check:
 :::
 
 ::: {.proof title="of claim 2"}
-Parameterize $\gamma_2 = \ts{Re^{it} \st t\in [0, 2\pi/n]}$ and apply the ML estimate:
+Parameterize $\gamma_2 = \theset{Re^{it} \st t\in [0, 2\pi/n]}$ and apply the ML estimate:
 \[
 {1\over 1 + (Re^{it})^n} \leq {1\over R^n - 1} \implies \int_{\gamma_2}f \leq {1\over R^n - 1} \qty{{2\pi R \over n}} = \bigo(R^{n-1})\convergesto{R\to\infty}0
 .\]

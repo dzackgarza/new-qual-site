@@ -13,9 +13,9 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\tor(\QQ, A)$
+Compute $\Tor(\QQ, A)$
 
-1. Compute $\tor(\QQ/\ZZ, A)$
+1. Compute $\Tor(\QQ/\ZZ, A)$
 :::
 
 ::: {.solution}

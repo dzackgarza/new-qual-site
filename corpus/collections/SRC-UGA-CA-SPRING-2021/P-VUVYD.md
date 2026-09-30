@@ -52,7 +52,7 @@ But we can write
 \[
 \dd{}{z} f(z) = \dd{}{x} f(x, y)
 \implies
-0 = \qty{\dd{^N}{x^N}} f(x, y) = \qty{\dd{^N}{z^N}} f(z) \da f^{(N)}(z)
+0 = \qty{\dd{^N}{x^N}} f(x, y) = \qty{\dd{^N}{z^N}} f(z) \definedas f^{(N)}(z)
 ,\]
 :::
 

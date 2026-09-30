@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-Is $\CC[x, y]$ a PID? Is \( \gens{ x, y }  \) a prime ideals in it?
+Is $\CC[x, y]$ a PID? Is \( \generators{ x, y }  \) a prime ideals in it?
 :::
 
 ::: {.solution}

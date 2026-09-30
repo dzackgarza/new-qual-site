@@ -24,9 +24,9 @@ audit:
 
 ::: {.problem}
 Let $Y$ be a scheme and let $n\ge0$ be an integer.
-A \dfn{geometric vector bundle} of rank $n$ over $Y$ is a scheme $X$ and a morphism $f:X\to Y$, together with an open covering $\ts{U_i}$ of $Y$ and isomorphisms $\psi_i:f^{-1}(U_i)\to\AA^n_{U_i}$, such that for any $i,j$ and any open affine $V=\Spec A\subseteq U_i\cap U_j$, the automorphism $\psi_j\circ\psi_i^{-1}$ of $\AA^n_V=\Spec A[x_1,\ldots,x_n]$ is given by a linear $A$-algebra automorphism $\theta$ with $\theta(x_a)=\sum_b c_{ab}x_b$ for an invertible matrix $(c_{ab})$ over $A$.
+A \dfn{geometric vector bundle} of rank $n$ over $Y$ is a scheme $X$ and a morphism $f:X\to Y$, together with an open covering $\theset{U_i}$ of $Y$ and isomorphisms $\psi_i:f^{-1}(U_i)\to\AA^n_{U_i}$, such that for any $i,j$ and any open affine $V=\Spec A\subseteq U_i\cap U_j$, the automorphism $\psi_j\circ\psi_i^{-1}$ of $\AA^n_V=\Spec A[x_1,\ldots,x_n]$ is given by a linear $A$-algebra automorphism $\theta$ with $\theta(x_a)=\sum_b c_{ab}x_b$ for an invertible matrix $(c_{ab})$ over $A$.
 
-An \dfn{isomorphism} $g:(X,f,\ts{U_i},\ts{\psi_i})\to(X',f',\ts{U'_i},\ts{\psi'_i})$ of vector bundles of rank $n$ is a scheme isomorphism $g:X\to X'$ with $f=f'\circ g$, such that the combined trivializations $\psi_i$ and $\psi'_i\circ g$ define a vector bundle structure on $X$.
+An \dfn{isomorphism} $g:(X,f,\theset{U_i},\theset{\psi_i})\to(X',f',\theset{U'_i},\theset{\psi'_i})$ of vector bundles of rank $n$ is a scheme isomorphism $g:X\to X'$ with $f=f'\circ g$, such that the combined trivializations $\psi_i$ and $\psi'_i\circ g$ define a vector bundle structure on $X$.
 
 (a) Let $\mce$ be a locally free sheaf of rank $n$ on $Y$.
     Let $S(\mce)$ be its symmetric algebra and let $X=\Spec_Y S(\mce)$ with projection $f:X\to Y$.

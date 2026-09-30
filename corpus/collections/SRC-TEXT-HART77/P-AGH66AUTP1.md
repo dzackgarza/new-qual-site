@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Think of $\PP^1$ as $\AA^1 \union \ts{\infty}$.
+Think of $\PP^1$ as $\AA^1 \union \theset{\infty}$.
 Define a *fractional linear transformation* of $\PP^1$ by sending
 $$
 x \mapsto \frac{ax + b}{cx + d}, \qquad a,b,c,d \in k, \quad ad - bc \neq 0.

@@ -46,7 +46,7 @@ Point-set topology used in algebraic topology: definitions, theorems, and counte
 ## The tube lemma
 
 ::: {.theorem title="Tube lemma"}
-Let $X$ and $Y$ be spaces with $Y$ compact, let $x_0\in X$, and let $N\subseteq X \times Y$ be open with $\ts{x_0} \times Y\subseteq N$.
+Let $X$ and $Y$ be spaces with $Y$ compact, let $x_0\in X$, and let $N\subseteq X \times Y$ be open with $\theset{x_0} \times Y\subseteq N$.
 Then there is an open neighborhood $U$ of $x_0$ in $X$ with $U \times Y \subseteq N$.
 
 :::
@@ -62,10 +62,10 @@ For $(x,y)\in U\times Y$, choose $i$ with $y\in V_{y_i}$; then $(x,y)\in U_{y_i}
 ::: {.example title="Applications of the tube lemma"}
 \envlist
 
-1. **Products of compact spaces are compact.** Let $X$ and $Y$ be compact and $\mathcal U$ an open cover of $X\times Y$. For each $x \in X$, the compact slice $\ts{x} \times Y$ is covered by finitely many members of $\mathcal U$, whose union $N_x$ contains a tube $W_x\times Y$ by the tube lemma. Finitely many $W_{x_1},\ldots,W_{x_m}$ cover $X$, and the finitely many members of $\mathcal U$ used for $N_{x_1},\ldots,N_{x_m}$ cover $X\times Y$.
+1. **Products of compact spaces are compact.** Let $X$ and $Y$ be compact and $\mathcal U$ an open cover of $X\times Y$. For each $x \in X$, the compact slice $\theset{x} \times Y$ is covered by finitely many members of $\mathcal U$, whose union $N_x$ contains a tube $W_x\times Y$ by the tube lemma. Finitely many $W_{x_1},\ldots,W_{x_m}$ cover $X$, and the finitely many members of $\mathcal U$ used for $N_{x_1},\ldots,N_{x_m}$ cover $X\times Y$.
 
 2. **Projections along compact factors are closed maps.** If $Y$ is compact, the projection $p\colon X \times Y \to X$ is closed.
-   Given a closed $A \subseteq X \times Y$ and $x \notin p(A)$, the complement of $A$ is open and contains $\ts{x} \times Y$.
+   Given a closed $A \subseteq X \times Y$ and $x \notin p(A)$, the complement of $A$ is open and contains $\theset{x} \times Y$.
    The tube lemma gives a neighborhood $U$ of $x$ with $U \times Y$ disjoint from $A$, so $U \cap p(A) = \emptyset$.
 
 3. **Products of quotient maps with a locally compact factor.** For the quotient map $p\colon\RR\to\RR/\ZZ_{+}$ collapsing the positive integers to a point, $p\times\id_\QQ\colon\RR\times\QQ\to(\RR/\ZZ_{+})\times\QQ$ is not a quotient map [@Mun00, sec. 22, Example 7].

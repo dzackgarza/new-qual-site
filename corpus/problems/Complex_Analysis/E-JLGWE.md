@@ -25,7 +25,7 @@ Induct on $k\ge0$. For $k=0$, $\abs f\le A+B$ outside a disk and $f$ is bounded 
 
 For $k\geq1$, assume the statement for $k-1$ and let $\abs{f(z)}\le A+B\abs z^k$ for $\abs z\ge R$. Consider
 \[
-g(z) \da 
+g(z) \definedas 
 \begin{cases}
 {f(z) - f(0) \over z} & z\neq 0, 
 \\

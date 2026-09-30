@@ -26,7 +26,7 @@ Since $g$ is holomorphic and nonvanishing there, so is $g'/g$, and the only cont
 :::
 
 ::: {.remark}
-For a nonzero rational function $f\in\CC(x)$ and $p\in\CC$, the residue of the logarithmic derivative at $p$ is the valuation $v_p(f)$ of $f$ at the prime ideal $\gens{x-p} \subseteq \CC[x]$:
+For a nonzero rational function $f\in\CC(x)$ and $p\in\CC$, the residue of the logarithmic derivative at $p$ is the valuation $v_p(f)$ of $f$ at the prime ideal $\generators{x-p} \subseteq \CC[x]$:
 $$
 d \qty{ \log(f) } = {f'\over f}\dz \implies \Res_{z=p}(d \log(f) ) = v_p(f)
 .$$
@@ -85,8 +85,8 @@ $$
 ::: {.example title="Using the index version"}
 Let $f(z) = z^2 + z = z(z+1)$.
 
-- $\gamma_1 \coloneqq \ts{\abs z = 2}$ encloses 2 zeros and no poles, so $f\circ \gamma_1$ winds twice about the origin counterclockwise.
-- $\gamma_2 \coloneqq \ts{\abs z = {1\over 2}}$ encloses 1 zero and no poles, so $f\circ \gamma_2$ winds once.
+- $\gamma_1 \coloneqq \theset{\abs z = 2}$ encloses 2 zeros and no poles, so $f\circ \gamma_1$ winds twice about the origin counterclockwise.
+- $\gamma_2 \coloneqq \theset{\abs z = {1\over 2}}$ encloses 1 zero and no poles, so $f\circ \gamma_2$ winds once.
 
 :::
 

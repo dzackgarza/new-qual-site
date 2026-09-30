@@ -40,7 +40,7 @@ On a non-simplicial fan the index can be infinite: the cone over a square, whose
 
 [[PR-TORPOS]]
 
-For $D=\sum a_\rho D_\rho$ Cartier on a complete $X_\Sigma$, $P_D$ is cut out by the inequalities $\inp{m}{u_\rho}\geq-a_\rho$.
+For $D=\sum a_\rho D_\rho$ Cartier on a complete $X_\Sigma$, $P_D$ is cut out by the inequalities $\inner{m}{u_\rho}\geq-a_\rho$.
 If the Cartier data $m_\sigma$ are distinct vertices of $P_D$, one for each maximal cone, then $D$ is ample; if every $m_\sigma$ lies in $P_D$ but two maximal cones have the same $m_\sigma$, then $D$ is base-point free and not ample.
 
 [[D-FULNORMPOLY]]

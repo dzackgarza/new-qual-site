@@ -11,7 +11,7 @@ Every nonconstant polynomial $P(z) = a_nz^n + \cdots + a_0\in\CC[z]$ with $a_n\n
 ## By the argument principle
 
 ::: {.proof title="Using the argument principle"}
-Since $\abs{P(z)}\to\infty$ as $\abs z\to\infty$, there is $R>0$ such that $P$ has no zeros in $\ts{\abs z\geq R}$.
+Since $\abs{P(z)}\to\infty$ as $\abs z\to\infty$, there is $R>0$ such that $P$ has no zeros in $\theset{\abs z\geq R}$.
 Let $g \coloneqq P'/P$ and fix $R' > R$.
 By the [[T-JXDQT|argument principle]], the number $N$ of zeros of $P$, counted with multiplicity, all of which lie in $\abs z < R'$, is
 $$

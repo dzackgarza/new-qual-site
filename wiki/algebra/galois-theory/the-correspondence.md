@@ -90,7 +90,7 @@ Over a finite field $\FF_p$, a polynomial of degree $d$ is irreducible if and on
 :::
 
 ::: {.example title="Irreducibility modulo $2$"}
-$f(x) \da x^4 + x + 1$ is irreducible over $\QQ$.
+$f(x) \definedas x^4 + x + 1$ is irreducible over $\QQ$.
 Modulo $2$, $f(0)=f(1)=1$, so $f$ has no linear factor, and the only monic irreducible quadratic over $\FF_2$ is $x^2+x+1$, which leaves remainder $1$ on dividing $f$; hence $f$ is irreducible over $\FF_2$.
 :::
 

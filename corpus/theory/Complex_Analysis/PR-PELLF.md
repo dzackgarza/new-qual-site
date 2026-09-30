@@ -18,7 +18,7 @@ review: draft
 Let $\Log$ be the [[D-4CSPM|principal branch]] of the logarithm.
 The map
 $$
-F\colon\ts{z\st\abs{z}<1,\ \Im z>0}\to\ts{w\st\Re w<0,\ 0<\Im w<\pi},\qquad F(z)=\Log z,
+F\colon\theset{z\st\abs{z}<1,\ \Im z>0}\to\theset{w\st\Re w<0,\ 0<\Im w<\pi},\qquad F(z)=\Log z,
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $w\mapsto e^w$.
 :::
@@ -31,14 +31,14 @@ Since $r\mapsto\ln r$ is a bijection $(0,1)\to(-\infty,0)$, $F$ is a bijection o
 ::: {.example}
 The same computation, with $\ln r$ ranging over $(-\infty,0)$ or $(0,\infty)$ and $\theta$ over $(0,\pi)$ or $(-\pi,0)$, shows that $\Log$ maps
 
-- $\ts{\abs{z}<1,\ \Im z>0}$ onto the half-strip $\ts{\Re w<0,\ 0<\Im w<\pi}$ in the second quadrant,
-- $\ts{\abs{z}<1,\ \Im z<0}$ onto the half-strip $\ts{\Re w<0,\ -\pi<\Im w<0}$ in the third quadrant,
-- $\ts{\abs{z}>1,\ \Im z>0}$ onto the half-strip $\ts{\Re w>0,\ 0<\Im w<\pi}$ in the first quadrant,
-- $\ts{\abs{z}>1,\ \Im z<0}$ onto the half-strip $\ts{\Re w>0,\ -\pi<\Im w<0}$ in the fourth quadrant.
+- $\theset{\abs{z}<1,\ \Im z>0}$ onto the half-strip $\theset{\Re w<0,\ 0<\Im w<\pi}$ in the second quadrant,
+- $\theset{\abs{z}<1,\ \Im z<0}$ onto the half-strip $\theset{\Re w<0,\ -\pi<\Im w<0}$ in the third quadrant,
+- $\theset{\abs{z}>1,\ \Im z>0}$ onto the half-strip $\theset{\Re w>0,\ 0<\Im w<\pi}$ in the first quadrant,
+- $\theset{\abs{z}>1,\ \Im z<0}$ onto the half-strip $\theset{\Re w>0,\ -\pi<\Im w<0}$ in the fourth quadrant.
 :::
 
 ::: {.remark}
-On the boundary of the upper half-disc, the segment $(0,1)$ maps onto $(-\infty,0)$, the semicircle $\ts{e^{i\theta}\st0<\theta<\pi}$ maps onto the segment from $0$ to $i\pi$, and the segment $(-1,0)$ maps onto the line $\ts{t+i\pi\st t<0}$.
+On the boundary of the upper half-disc, the segment $(0,1)$ maps onto $(-\infty,0)$, the semicircle $\theset{e^{i\theta}\st0<\theta<\pi}$ maps onto the segment from $0$ to $i\pi$, and the segment $(-1,0)$ maps onto the line $\theset{t+i\pi\st t<0}$.
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_17-56-47.png)
 :::

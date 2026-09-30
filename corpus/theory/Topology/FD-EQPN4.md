@@ -16,5 +16,5 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a set.
-The \dfn{indiscrete topology} on $X$ is the [[D-2TZAI|topology]] $\tau = \ts{\emptyset, X}$.
+The \dfn{indiscrete topology} on $X$ is the [[D-2TZAI|topology]] $\tau = \theset{\emptyset, X}$.
 :::

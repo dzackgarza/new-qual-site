@@ -26,7 +26,7 @@ prompts:
 Let $\sigma$ span $N_\RR$, so $\sigma^\perp = 0$ and the distinguished point $x_\sigma \in U_\sigma$ is the torus-fixed point.
 Its maximal ideal and square are
 \[
-\mfm = \gens{ \chi^u \st u \in S_\sigma \smz } , \qquad \mfm^2 = \gens{ \chi^u \st u \in (S_\sigma \smz) + (S_\sigma \smz) } ,
+\mfm = \generators{ \chi^u \st u \in S_\sigma \smz } , \qquad \mfm^2 = \generators{ \chi^u \st u \in (S_\sigma \smz) + (S_\sigma \smz) } ,
 \]
 so
 \[
@@ -35,7 +35,7 @@ so
 where $u \in S_\sigma \smz$ is **irreducible**, or **indecomposable**, if it is not a sum of two nonzero elements of $S_\sigma$.
 The irreducible elements are exactly the Hilbert basis of $S_\sigma$, so
 \[
-\dim T_{x_\sigma} U_\sigma = \size\ts{\text{Hilbert basis of } S_\sigma} .
+\dim T_{x_\sigma} U_\sigma = \size\theset{\text{Hilbert basis of } S_\sigma} .
 \]
 :::
 
@@ -47,7 +47,7 @@ $U_\sigma$ is smooth at $x_\sigma$ exactly when the Hilbert basis has $n = \dim 
 Each extremal ray of $\dualof{\sigma}$ contributes its primitive generator as an irreducible element, and distinct rays contribute distinct ones.
 So if $U_\sigma$ is smooth at $x_\sigma$ then
 \[
-\size\ts{\text{rays of } \dualof{\sigma}} \leq \size\ts{\text{Hilbert basis}} = \dim T_{x_\sigma} U_\sigma = n .
+\size\theset{\text{rays of } \dualof{\sigma}} \leq \size\theset{\text{Hilbert basis}} = \dim T_{x_\sigma} U_\sigma = n .
 \]
 A pointed full-dimensional cone in $\RR^n$ has at least $n$ rays, so $\dualof{\sigma}$ has exactly $n$ of them, and the Hilbert basis is exactly those $n$ primitive generators.
 They generate $S_\sigma$, hence generate $M$ as a group, and $n$ generators of a rank-$n$ lattice form a $\ZZ$-basis.

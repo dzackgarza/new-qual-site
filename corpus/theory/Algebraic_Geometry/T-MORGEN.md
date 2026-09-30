@@ -24,7 +24,7 @@ prompts:
 
 ::: {.theorem title="Generic smoothness"}
 Let $\characteristic k = 0$ and let $f : X \to Y$ be a dominant morphism of varieties over $k$ with $X$ smooth.
-Then there is a nonempty open $V \subseteq Y$ such that $\ro{f}{f^{-1}(V)} : f^{-1}(V) \to V$ is smooth.
+Then there is a nonempty open $V \subseteq Y$ such that $\restrictionof{f}{f^{-1}(V)} : f^{-1}(V) \to V$ is smooth.
 :::
 
 ::: {.remark}

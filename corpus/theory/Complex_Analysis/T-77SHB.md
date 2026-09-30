@@ -19,7 +19,7 @@ The [[D-DKJEU|fractional linear transformation]]
 $$
 G(w)=i\,\frac{1-w}{1+w}
 $$
-maps the unit disc $\DD$ biholomorphically onto the upper half-plane $\HH=\ts{z\st\Im z>0}$.
+maps the unit disc $\DD$ biholomorphically onto the upper half-plane $\HH=\theset{z\st\Im z>0}$.
 Its inverse is
 $$
 F(z)=\frac{i-z}{i+z},

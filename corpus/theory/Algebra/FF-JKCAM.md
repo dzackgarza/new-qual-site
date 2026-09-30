@@ -26,6 +26,6 @@ The abelian ones are $\ZZ/20\ZZ$ and $(\ZZ/2\ZZ)^2\times\ZZ/5\ZZ$, and the nonab
 
 3. the dicyclic group of order $20$,
 $$
-\gens{a,b\suchthat a^{10}=1,\ b^2=a^5,\ bab^{-1}=a^{-1}}.
+\generators{a,b\suchthat a^{10}=1,\ b^2=a^5,\ bab^{-1}=a^{-1}}.
 $$
 :::

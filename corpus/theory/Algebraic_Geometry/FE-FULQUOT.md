@@ -23,7 +23,7 @@ prompts:
 
 ::: {.example title="The invariant ring"}
 Take $\sigma = \Cone\big( m e_1 - e_2,\ e_2 \big) \subseteq N_\RR = \RR^2$ with $m \geq 2$.
-Solving $\inp{u}{m e_1 - e_2} \geq 0$ and $\inp{u}{e_2} \geq 0$ gives $\dualof{\sigma} = \Cone\big( (1,0), (1,m) \big)$, whose lattice points have Hilbert basis $(1,0), (1,1), \ldots, (1,m)$, so with $x = \chi^{e_1}$ and $y = \chi^{e_2}$,
+Solving $\inner{u}{m e_1 - e_2} \geq 0$ and $\inner{u}{e_2} \geq 0$ gives $\dualof{\sigma} = \Cone\big( (1,0), (1,m) \big)$, whose lattice points have Hilbert basis $(1,0), (1,1), \ldots, (1,m)$, so with $x = \chi^{e_1}$ and $y = \chi^{e_2}$,
 \[
 A_\sigma = k[S_\sigma] = k\big[ x,\ xy,\ \ldots,\ xy^m \big] .
 \]

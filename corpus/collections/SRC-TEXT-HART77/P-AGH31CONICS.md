@@ -26,7 +26,7 @@ audit:
 Let $k$ be algebraically closed.
 A conic means the zero set of an irreducible polynomial of degree two, homogeneous in the projective case.
 
-(a) Show that any conic in $\AA_k^2$ is isomorphic either to $\AA_k^1$ or to $\AA_k^1 \sm \ts{0}$.
+(a) Show that any conic in $\AA_k^2$ is isomorphic either to $\AA_k^1$ or to $\AA_k^1 \sm \theset{0}$.
 
 (b) Show that $\AA_k^1$ is not isomorphic to any proper open subset of itself.
 

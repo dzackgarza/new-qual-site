@@ -33,7 +33,7 @@ This applies when $M$ is a term whose zeros inside $\gamma$ are known, such as o
 The dominant term depends on the curve: for $z^4+6z+3$, it is $z^4$ on $\abs z = 2$ and $6z$ on $\abs z = 1$ ([[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]).
 
 ::: {.example title="Rouché's theorem fails with $\abs m\leq\abs M$ on $\gamma$"}
-On $\gamma = \ts{\abs z = 1}$, take $M(z) \coloneqq z$ and $m(z) \coloneqq -1$, so $\abs m \leq \abs M$ on $\gamma$ with equality everywhere.
+On $\gamma = \theset{\abs z = 1}$, take $M(z) \coloneqq z$ and $m(z) \coloneqq -1$, so $\abs m \leq \abs M$ on $\gamma$ with equality everywhere.
 Then $M$ has one zero in $\DD$, while $M + m = z - 1$ has none in $\DD$; its zero lies on $\gamma$.
 :::
 

@@ -46,7 +46,7 @@ Note that its topology is in general not the product topology.
 
 ::: {.hint}
 For (a), suppose $X \times Y = Z_1 \union Z_2$ with each $Z_i$ closed.
-Let $X_i = \ts{ x \in X \st \ts{x} \times Y \subseteq Z_i }$.
+Let $X_i = \theset{ x \in X \st \theset{x} \times Y \subseteq Z_i }$.
 Show that $X = X_1 \union X_2$ with $X_1, X_2$ closed, so $X = X_1$ or $X = X_2$, and hence $X \times Y = Z_1$ or $Z_2$.
 :::
 

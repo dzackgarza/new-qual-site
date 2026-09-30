@@ -29,7 +29,7 @@ Prove that $f \in C(S^1)$ (that is, $f$ is equal almost everywhere to a continuo
 :::
 
 ::: {.solution}
-Write $\widehat f(n)=\frac1{2\pi}\int_{-\pi}^\pi f(x)e^{-inx}\,dx$ and let $g(x)\da\sum_{n\in\ZZ}\widehat f(n)e^{inx}$.
+Write $\widehat f(n)=\frac1{2\pi}\int_{-\pi}^\pi f(x)e^{-inx}\,dx$ and let $g(x)\definedas\sum_{n\in\ZZ}\widehat f(n)e^{inx}$.
 
 ::: pf
 

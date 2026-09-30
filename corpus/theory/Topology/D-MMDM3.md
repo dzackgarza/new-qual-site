@@ -27,9 +27,9 @@ The composite $\Phi\colon D^n\to X\disjoint D^n\to X\cup_f D^n$ of the inclusion
 ::: {.example}
 In low dimensions:
 
-- $n=0$: $D^0$ is a point and $S^{-1}=\emptyset$, so $X\cup_f D^0=X\disjoint\ts{\pt}$.
+- $n=0$: $D^0$ is a point and $S^{-1}=\emptyset$, so $X\cup_f D^0=X\disjoint\theset{\pt}$.
 
-- $n=1$: $D^1=[-1,1]\subseteq\RR$ and $f$ is a map $S^0=\ts{-1,1}\to X$; the closed $1$-cell is the image of a path from $f(-1)$ to $f(1)$.
+- $n=1$: $D^1=[-1,1]\subseteq\RR$ and $f$ is a map $S^0=\theset{-1,1}\to X$; the closed $1$-cell is the image of a path from $f(-1)$ to $f(1)$.
 
 - $n=2$: $D^2\subseteq\RR^2$ is the closed disk, attached along a map $S^1\to X$.
 

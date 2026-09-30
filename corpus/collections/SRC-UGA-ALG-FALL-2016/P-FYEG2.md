@@ -19,21 +19,21 @@ Let $G$ be a finite group and $s, t\in G$ be two distinct elements of order 2. S
 
 > Recall that the dihedral groups of order $2m$ for $m\geq 2$ are of the form
 \[
-D_{2m} = \gens{\sigma, \tau \suchthat \sigma^m = 1 = \tau^2, \tau \sigma = \inverseof{\sigma} \tau}
+D_{2m} = \generators{\sigma, \tau \suchthat \sigma^m = 1 = \tau^2, \tau \sigma = \inverseof{\sigma} \tau}
 .\]
 :::
 
 ::: {.solution}
 \envlist
 
-- Suppose $G = \gens{ a, b}$ with $a^2 = b^2 = e$, satisfying some unknown relations.
+- Suppose $G = \generators{ a, b}$ with $a^2 = b^2 = e$, satisfying some unknown relations.
 
 - Consider $ab$.
   Since $G$ is finite, this has finite order, so $(ab)^n = e$ for some $n\geq 2$.
 
-- Note $\gens{ab, b} \subseteq \gens{a, b}$, since any finite word in $ab, b$ is also a finite word in $a, b$.
+- Note $\generators{ab, b} \subseteq \generators{a, b}$, since any finite word in $ab, b$ is also a finite word in $a, b$.
 
-- Since $(ab)b = ab^2 = a$, we have $\gens{ab, b} \subseteq \gens{a, b}$, so $\gens{ab, b} = \gens{a, b}$.
+- Since $(ab)b = ab^2 = a$, we have $\generators{ab, b} \subseteq \generators{a, b}$, so $\generators{ab, b} = \generators{a, b}$.
 
 - Write $D_{2n} = F(r, s) / \ker \pi$ for $\pi: F(r, s)\to D_{2n}$ the canonical presentation map.
 
@@ -60,9 +60,9 @@ t &\mapsto b
 - The claim is that $\size G \geq 2n$, which forces $\size G = 2n$.
   Then $\tilde \psi$ will be a surjective group morphism between groups of the same order, and thus an isomorphism.
 
-  - We have \( \gens{ ab }\leq G  \), so $n\divides \size G$.
+  - We have \( \generators{ ab }\leq G  \), so $n\divides \size G$.
 
-  - Since $b\not\in \gens{ ab }$, this forces $\size G > n$, so $\size G \geq 2n$.
+  - Since $b\not\in \generators{ ab }$, this forces $\size G > n$, so $\size G \geq 2n$.
 
 > Remark: see a more direct proof in [Theorem 2.1 and Theorem 1.1 here](https://kconrad.math.uconn.edu/blurbs/grouptheory/dihedral2.pdf)
 

@@ -29,7 +29,7 @@ Suppose that $\varnothing$ and $X$ are in $\mathcal{C}$, and that finite unions 
 Show that the collection
 
 $$
-\mathcal{T} = \ts{X - C \mid C \in \mathcal{C}}
+\mathcal{T} = \theset{X - C \mid C \in \mathcal{C}}
 $$
 
 is a topology on $X$.

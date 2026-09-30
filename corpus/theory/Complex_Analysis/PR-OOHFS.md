@@ -15,13 +15,13 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $\HH\coloneqq\ts{z\in\CC\st\Im z>0}$ and $\DD\coloneqq\ts{w\in\CC\st\abs{w}<1}$.
+Let $\HH\coloneqq\theset{z\in\CC\st\Im z>0}$ and $\DD\coloneqq\theset{w\in\CC\st\abs{w}<1}$.
 The Cayley transform
 $$
 \Psi\colon\HH\to\DD,\qquad \Psi(z)=\frac{z-i}{z+i},
 $$
 is a [[D-TM4TE|biholomorphism]], with inverse $\Psi^{-1}(w)=i\,\frac{1+w}{1-w}$.
-It restricts to a biholomorphism from the first quadrant $Q_1\coloneqq\ts{z\st\Re z>0,\ \Im z>0}$ onto the lower half-disc $\ts{w\in\DD\st\Im w<0}$.
+It restricts to a biholomorphism from the first quadrant $Q_1\coloneqq\theset{z\st\Re z>0,\ \Im z>0}$ onto the lower half-disc $\theset{w\in\DD\st\Im w<0}$.
 :::
 
 ::: {.proof}
@@ -33,7 +33,7 @@ $$
 so the inverse formula maps $\DD$ into $\HH$, and the two maps are mutually inverse.
 
 For $z\in\HH$, $\Im\Psi(z)=\Im\frac{(z-i)(\bar z-i)}{\abs{z+i}^2}=\frac{-2\Re z}{\abs{z+i}^2}$, since $(z-i)(\bar z-i)=\abs{z}^2-1-2i\Re z$.
-So $\Psi(z)$ lies in the lower half-disc exactly when $\Re z>0$, and $\Psi(Q_1)=\ts{w\in\DD\st\Im w<0}$.
+So $\Psi(z)$ lies in the lower half-disc exactly when $\Re z>0$, and $\Psi(Q_1)=\theset{w\in\DD\st\Im w<0}$.
 :::
 
 ::: {.remark}

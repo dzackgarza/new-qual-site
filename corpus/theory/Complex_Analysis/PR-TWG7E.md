@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $\HH_R\coloneqq\ts{w\st\Re w>0}$ be the right half-plane.
+Let $\HH_R\coloneqq\theset{w\st\Re w>0}$ be the right half-plane.
 The map
 $$
 F\colon\DD\to\HH_R,\qquad F(z)=\frac{1+z}{1-z},
@@ -50,7 +50,7 @@ On the boundary, $F(e^{i\theta})=i\cot(\theta/2)$ for $0<\theta<2\pi$, so the un
 :::
 
 ::: {.example}
-The restriction of $F$ to the upper half-disc $\ts{z\in\DD\st\Im z>0}$ is a biholomorphism onto the first quadrant: by the formula for $F(z)$ in the proof, $\Im F(z)>0$ exactly when $\Im z>0$.
+The restriction of $F$ to the upper half-disc $\theset{z\in\DD\st\Im z>0}$ is a biholomorphism onto the first quadrant: by the formula for $F(z)$ in the proof, $\Im F(z)>0$ exactly when $\Im z>0$.
 This is [[PR-PW4Z6]].
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_19-36-20.png)

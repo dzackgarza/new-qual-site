@@ -55,7 +55,7 @@ x_i\otimes v_j,
 $$
 form a basis of
 $$
-\Ind_H^G V
+\Indcat_H^G V
 =
 k[G]\otimes_{k[H]}V.
 $$
@@ -138,7 +138,7 @@ for every $i$.
 
 The trace of $g$ on the induced module is
 $$
-\trace\!\left(g\mid\Ind_H^G V\right)=\boxed{0}.
+\trace\!\left(g\mid\Indcat_H^G V\right)=\boxed{0}.
 $$
 
 ::: pf-proof

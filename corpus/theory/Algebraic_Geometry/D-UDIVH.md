@@ -24,11 +24,11 @@ prompts:
 Let $\mcf$ be a sheaf of abelian groups on a topological space $X$.
 For an open set $U\subseteq X$ and a section $s\in\mcf(U)$, the \dfn{support of the section} is
 $$
-\supp(s)\coloneqq\ts{x\in U\st s_x\ne0\text{ in }\mcf_x}.
+\supp(s)\coloneqq\theset{x\in U\st s_x\ne0\text{ in }\mcf_x}.
 $$
 The \dfn{support of the sheaf} is
 $$
-\supp(\mcf)\coloneqq\ts{x\in X\st\mcf_x\ne0}.
+\supp(\mcf)\coloneqq\theset{x\in X\st\mcf_x\ne0}.
 $$
 Here $s_x$ is the [[D-0QSI0|germ]] of $s$ in the [[D-0QSI0|stalk]] $\mcf_x$.
 :::
@@ -54,7 +54,7 @@ with zero restriction maps for proper inclusions.
 Every open cover of a nonempty open set contains that open set itself, so the sheaf axioms hold.
 The only neighborhood of $x$ is $X$, whereas $\{\eta\}$ is a neighborhood of $\eta$.
 Consequently $\mcf_x=0$ and $\mcf_\eta\cong\ZZ$, giving $\supp(\mcf)=\{\eta\}$, which is not closed in $X$.
-For the open inclusion $j:\{\eta\}\hookrightarrow X$, this sheaf is the extension by zero $j_!\ul{\ZZ}$.
+For the open inclusion $j:\{\eta\}\hookrightarrow X$, this sheaf is the extension by zero $j_!\underline{\ZZ}$.
 :::
 
 ::: {.proposition}

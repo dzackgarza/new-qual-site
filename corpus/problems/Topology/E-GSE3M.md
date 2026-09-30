@@ -38,7 +38,7 @@ definition of a disconnection.
 
 ::: {.pf-step #s2}
 
-Relabel so that $0 \in A$, and set $s \da \sup A$.
+Relabel so that $0 \in A$, and set $s \definedas \sup A$.
 
 ::: pf-proof
 

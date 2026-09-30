@@ -20,5 +20,5 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space and $x\in X$.
-A \dfn{neighborhood basis} at $x$ is a collection $\ts{B_j}_{j\in J}$ of open subsets of $X$ containing $x$ such that for every [[D-JMRPA|neighborhood]] $U_x$ of $x$ there exists $j\in J$ with $B_j \subseteq U_x$.
+A \dfn{neighborhood basis} at $x$ is a collection $\theset{B_j}_{j\in J}$ of open subsets of $X$ containing $x$ such that for every [[D-JMRPA|neighborhood]] $U_x$ of $x$ there exists $j\in J$ with $B_j \subseteq U_x$.
 :::

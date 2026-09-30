@@ -25,11 +25,11 @@ prompts:
 ::: {.definition title="Hilbert polynomial"}
 For $X \subseteq \PP^n$ closed with homogeneous coordinate ring $S(X) = k[x_0,\ldots,x_n]/I(X)$, the \dfn{Hilbert function} is
 $$
-h_X(r) \da \dim_k S(X)_r .
+h_X(r) \definedas \dim_k S(X)_r .
 $$
 For $r \gg 0$ it agrees with a polynomial $P_X(r)$, the \dfn{Hilbert polynomial} of $X$.
 
-For a coherent sheaf $\mcf$ on a closed subscheme $X \subseteq \PP^n_k$, the \dfn{Hilbert function of $\mcf$} is $h_\mcf(m) \da h^0(X, \mcf(m))$.
+For a coherent sheaf $\mcf$ on a closed subscheme $X \subseteq \PP^n_k$, the \dfn{Hilbert function of $\mcf$} is $h_\mcf(m) \definedas h^0(X, \mcf(m))$.
 :::
 
 ::: {.proposition}

@@ -41,7 +41,7 @@ The two rays give $D_1, D_2$, and the sequence
 \[
 M \to \Div_T(U_\sigma) = \ZZ D_1 \oplus \ZZ D_2 \to \Cl(U_\sigma) \to 0
 \]
-sends $m \mapsto \sum_\rho \inp{m}{u_\rho} D_\rho$.
+sends $m \mapsto \sum_\rho \inner{m}{u_\rho} D_\rho$.
 On the basis $e_1, e_2$ of $M$ the matrix against the ray generators $u_1 = e_2$, $u_2 = d e_1 - e_2$ is
 \[
 \begin{bmatrix} 0 & d \\ 1 & -1 \end{bmatrix} ,

@@ -20,5 +20,5 @@ Then $\Intersect_n C_n \neq \emptyset$ [@Mun00].
 
 ::: {.remark}
 If $X$ is Hausdorff, it suffices that each $C_n$ be nonempty and compact, since compact subsets of Hausdorff spaces are closed [@Mun00].
-Without closedness the conclusion fails: in an infinite set $\NN$ with the indiscrete topology every subset is compact, and $C_n = \ts{n, n+1, \ldots}$ is a decreasing sequence of nonempty compact sets with empty intersection.
+Without closedness the conclusion fails: in an infinite set $\NN$ with the indiscrete topology every subset is compact, and $C_n = \theset{n, n+1, \ldots}$ is a decreasing sequence of nonempty compact sets with empty intersection.
 :::

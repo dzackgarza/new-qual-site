@@ -23,11 +23,11 @@ audit:
 
 ::: {.exercise}
 Prove Cayley-Hamilton in the following way.
-Let $V=\spanof\ts{\vector v_1,\ldots,\vector v_n}$ and define
+Let $V=\spanof\theset{\vector v_1,\ldots,\vector v_n}$ and define
 \[
-\Fil_iV=\spanof\ts{\vector v_1,\ldots,\vector v_i},
+\Fil_iV=\spanof\theset{\vector v_1,\ldots,\vector v_i},
 \qquad
-\Fil_0V=\ts{0}.
+\Fil_0V=\theset{0}.
 \]
 Suppose the matrix of $A$ in this basis is upper triangular, with diagonal entries $\lambda_1,\ldots,\lambda_n$.
 Show that
@@ -53,7 +53,7 @@ For every $i$, the flag subspace $\Fil_iV$ is $A$-invariant.
 ::: pf-proof
 Because the matrix of $A$ in the ordered basis $v_1,\ldots,v_n$ is upper triangular, for each $j$ one has
 \[
-Av_j\in\spanof\ts{v_1,\ldots,v_j}=\Fil_jV.
+Av_j\in\spanof\theset{v_1,\ldots,v_j}=\Fil_jV.
 \]
 Thus if $j\le i$, then $Av_j\in\Fil_iV$. Since $\Fil_iV$ is spanned by $v_1,\ldots,v_i$, it follows that
 \[

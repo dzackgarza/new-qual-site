@@ -27,7 +27,7 @@ Let $k$ be algebraically closed.
 For given $n, d > 0$, let $M_0, M_1, \ldots, M_N$ be all the monomials of degree $d$ in the $n+1$ variables $x_0,\ldots,x_n$, where $N = \binom{n+d}{n} - 1$.
 Define $\rho_d : \PP^n \to \PP^N$ by
 $$
-\rho_d\qty{ \tv{a_0 : \cdots : a_n} } = \tv{ M_0(a) : \cdots : M_N(a) } .
+\rho_d\qty{ \thevector{a_0 : \cdots : a_n} } = \thevector{ M_0(a) : \cdots : M_N(a) } .
 $$
 This is the **$d$-uple embedding** of $\PP^n$ in $\PP^N$.
 For example, when $n = 1$ and $d = 2$ we have $N = 2$, and the image of the $2$-uple embedding of $\PP^1$ in $\PP^2$ is a conic.

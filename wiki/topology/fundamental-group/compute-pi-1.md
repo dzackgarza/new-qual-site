@@ -18,7 +18,7 @@ topics:
 ::: {.fact}
 If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces an isomorphism of [[D-EBNUE|fundamental groups]] $\pi_1(A,a) \cong \pi_1(X,a)$ for $a\in A$.
 
-- $\RR^n \sm \ts{0}$ deformation retracts onto $S^{n-1}$.
+- $\RR^n \sm \theset{0}$ deformation retracts onto $S^{n-1}$.
 - A torus minus a point deformation retracts onto $S^1\vee S^1$.
 - $\RR^3$ minus a line deformation retracts onto a circle, and $\RR^3$ minus a point onto $S^2$.
 - The Möbius band deformation retracts onto its core circle.

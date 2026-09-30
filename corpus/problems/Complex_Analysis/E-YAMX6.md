@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_0^\infty {x^\alpha \over (1+x)^2}\dx,
+I \definedas \int_0^\infty {x^\alpha \over (1+x)^2}\dx,
 \qquad 0<\alpha<1.
 \]
 :::

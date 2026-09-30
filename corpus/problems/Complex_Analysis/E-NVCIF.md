@@ -36,7 +36,7 @@ Write
 - $f(z) = {\pi^2 \over \sin^2(\pi z)}$
 - $g(z) = \sum_{k\in \ZZ} {1\over (z-k)^2}$
 
-Write the above equation as $f(z) = g(z) - h(z)$ and consider $h(z) \da f(z) - g(z)$.
+Write the above equation as $f(z) = g(z) - h(z)$ and consider $h(z) \definedas f(z) - g(z)$.
 Then $h$ is meromorphic with singularities precisely on the set $\ZZ$, and are thus isolated.
 By the classification of isolated singularities, these can be removable, poles, or essential.
 If they are removable, then $h$ is entire.

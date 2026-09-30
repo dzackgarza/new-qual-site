@@ -10,8 +10,8 @@ order: 202
 For $n\geq 0$,
 $$
 \begin{aligned}
-\DD^n &\coloneqq \ts{ \vector x \in \RR^{n} \st \norm{\vector x} \leq 1}, \\
-\SS^n &\coloneqq \ts{ \vector x \in \RR^{n+1} \st \norm{\vector x} = 1} = \bd \DD^{n+1}.
+\DD^n &\coloneqq \theset{ \vector x \in \RR^{n} \st \norm{\vector x} \leq 1}, \\
+\SS^n &\coloneqq \theset{ \vector x \in \RR^{n+1} \st \norm{\vector x} = 1} = \bd \DD^{n+1}.
 \end{aligned}
 $$
 Outside this block the blackboard-bold is dropped, and $D^n\coloneqq\DD^n$, $S^n\coloneqq\SS^n$.
@@ -42,7 +42,7 @@ the quotient collapsing the boundary to a point and the union of two discs glued
 
 ::: {.example title="Real projective space"}
 For $n\geq 1$, $\RP^n$ is the quotient of $S^n$ by the antipodal identification $\vector x \sim -\vector x$; equivalently, it is the space of lines through $0$ in $\RR^{n+1}$.
-The inclusions $\RP^n\injects\RP^{n+1}$ define $\RP^\infty \coloneqq \directlim_{n} \RP^n$.
+The inclusions $\RP^n\injects\RP^{n+1}$ define $\RP^\infty \coloneqq \injectivelim_{n} \RP^n$.
 The quotient map $S^n\to\RP^n$ is a $2$-sheeted covering map, a fiber bundle with fiber $S^0$:
 $$
 S^0 \to S^n \to \RP^n.
@@ -52,7 +52,7 @@ $$
 
 ::: {.example title="Complex projective space"}
 For $n\geq 1$, $\CP^n$ is the quotient of the unit sphere $S^{2n+1}\subseteq\CC^{n+1}$ by the action of $S^1\subseteq \CC^\times$ by scalar multiplication, $\vector z\sim\lambda\vector z$ for $\abs\lambda=1$; equivalently, it is the space of complex lines through $0$ in $\CC^{n+1}$.
-The inclusions $\CP^n\injects\CP^{n+1}$ define $\CP^\infty \coloneqq \directlim_n \CP^n$.
+The inclusions $\CP^n\injects\CP^{n+1}$ define $\CP^\infty \coloneqq \injectivelim_n \CP^n$.
 The quotient map is a fiber bundle, the Hopf fibration when $n=1$:
 $$
 S^1 \to S^{2n+1} \to \CP^n.
@@ -135,7 +135,7 @@ For $n\geq 2$ it is unique up to homotopy equivalence.
 ::: {.fact title="Low-dimensional identifications"}
 \envlist
 
-- The Möbius band $\MM$ deformation retracts onto its core circle, so $\MM \homotopic S^1$.
+- The Möbius band $\mcm$ deformation retracts onto its core circle, so $\mcm \homotopic S^1$.
 
 - As a set, $\CP^n = \CC^n \Disjoint \CP^{n-1} = \coprod_{i=0}^n \CC^i$, which gives a CW structure with one cell in each even dimension $0,2,\ldots,2n$.
 
@@ -170,7 +170,7 @@ The second follows from the first because $D(1,S^n)\cong\RR^n$ by stereographic 
 ::: {.fact title="Integral homology $H_0, H_1, H_2, H_3, H_4$"}
 | $X$ | $H_0$ | $H_1$ | $H_2$ | $H_3$ | $H_4$ |
 | --- | --- | --- | --- | --- | --- |
-| $S^1$, $\MM$, $\RP^1$ | $\ZZ$ | $\ZZ$ | $0$ | $0$ | $0$ |
+| $S^1$, $\mcm$, $\RP^1$ | $\ZZ$ | $\ZZ$ | $0$ | $0$ | $0$ |
 | $\RP^2$ | $\ZZ$ | $\ZZ/2$ | $0$ | $0$ | $0$ |
 | $\RP^3$ | $\ZZ$ | $\ZZ/2$ | $0$ | $\ZZ$ | $0$ |
 | $\RP^4$ | $\ZZ$ | $\ZZ/2$ | $0$ | $\ZZ/2$ | $0$ |
@@ -200,7 +200,7 @@ $F_m$ is the free group of rank $m$, and in the cohomology column $\abs{x}$ is t
 | $\RP^n$, $n\geq 3$ odd | $\ZZ/2$ | $\ZZ$ in degrees $0,n$, $\ZZ/2$ in odd degrees $<n$ | $1+x+\cdots+x^n$ | $\ZZ$ in degrees $0,n$, $\ZZ/2$ in even degrees $2,\ldots,n-1$ |
 | $\CP^n$ | $1$ | $\ZZ$ in degrees $0,2,\ldots,2n$ | $1+x^2+\cdots+x^{2n}$ | $\ZZ[x]/(x^{n+1})$, $\abs x=2$ |
 | Möbius band | $\ZZ$ | $\ZZ$, $\ZZ$ | $1+x$ | $\ZZ[x]/(x^2)$, $\abs x=1$ |
-| Klein bottle | $\gens{a,b \st aba\inverseof{b}}$ | $\ZZ$, $\ZZ\oplus\ZZ/2$ | $1+2x+x^2$ | $\ZZ$, $\ZZ$, $\ZZ/2$ |
+| Klein bottle | $\generators{a,b \st aba\inverseof{b}}$ | $\ZZ$, $\ZZ\oplus\ZZ/2$ | $1+2x+x^2$ | $\ZZ$, $\ZZ$, $\ZZ/2$ |
 
 With $\ZZ/2$ coefficients, $H^*(\RP^n;\ZZ/2)\cong\FF_2[a]/(a^{n+1})$ with $\abs a=1$.
 

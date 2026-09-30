@@ -25,7 +25,7 @@ Show that under either of the following two conditions, $R$ is local:
 :::
 
 ::: {.solution}
-Let $R$ be a commutative ring with identity and $N \da R\sm \unitsof{R}$ its set of nonunits.
+Let $R$ be a commutative ring with identity and $N \definedas R\sm \unitsof{R}$ its set of nonunits.
 
 ::: pf
 
@@ -44,7 +44,7 @@ If $1 + \mfm \subseteq \unitsof{R}$, then $R\sm \mfm \subseteq \unitsof{R}$, so 
 
 ::: pf-proof
 Let $r\in R\sm \mfm$.
-By maximality, $\mfm+\gens{r} = R$, so $rt + m = 1$ for some $t\in R$ and $m\in \mfm$.
+By maximality, $\mfm+\generators{r} = R$, so $rt + m = 1$ for some $t\in R$ and $m\in \mfm$.
 Then $rt = 1-m \in 1 + \mfm \subseteq \unitsof{R}$, so $r$ is a unit.
 :::
 

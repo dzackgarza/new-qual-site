@@ -22,13 +22,13 @@ Prove that $N$ is contained in the center of $G$.
 ::: {.concept}
 \envlist
 
-- Definition of conjugacy class: $[x] = \ts{gx\inverseof{g} \st g\in G}$.
+- Definition of conjugacy class: $[x] = \theset{gx\inverseof{g} \st g\in G}$.
 
-- A conjugacy class $[x]$ is trivial iff $[x] = \ts{ x }$ iff $x\in Z(G)$.
+- A conjugacy class $[x]$ is trivial iff $[x] = \theset{ x }$ iff $x\in Z(G)$.
 
 - Sizes of conjugacy classes divide the order of the group they live in.
 
-  - This is orbit-stabilizer: $G\actson G$ by $g\cdot x \da gx\inverseof{g}$, so $\OO(x) = [x]$.
+  - This is orbit-stabilizer: $G\actson G$ by $g\cdot x \definedas gx\inverseof{g}$, so $\OO(x) = [x]$.
     Then $\size \OO(x) = \size G / \size \Stab(x)$, so $\size \OO(x)$ divides $\size G$.
 :::
 
@@ -50,5 +50,5 @@ p = \size N = \sum_{i=1}^m \size [n_i] = 1 + \sum_{i=2}^m \size [n_i]
 
 - Hence every $\size[n_i] = 1$, and there are $m = p$ of them.
 
-- Then $[n_i] = \ts{ n_i } \iff n_i \in Z(G)$, and this holds for all $i$, so $N \subseteq Z(G)$.
+- Then $[n_i] = \theset{ n_i } \iff n_i \in Z(G)$, and this holds for all $i$, so $N \subseteq Z(G)$.
 :::

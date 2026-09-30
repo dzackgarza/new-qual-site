@@ -18,7 +18,7 @@ review: draft
 ::: {.problem}
 Let m
 \[
-A \da
+A \definedas
 \begin{bmatrix}
 4 & 1 & -1 \\
 -6 & -1 & 2 \\
@@ -42,7 +42,7 @@ Write down the minimal polynomial of $A$.
 ::: {.concept}
 \envlist
 
-- $\chi_A(t) = t^n - \tr\qty{\Extpower^1 A}t^{n-1} + \tr\qty{\Extpower^2 A}t^{n-2} - \cdots \pm \det(A)$
+- $\chi_A(t) = t^n - \tr\qty{\Wedgepower^1 A}t^{n-1} + \tr\qty{\Wedgepower^2 A}t^{n-2} - \cdots \pm \det(A)$
 
 - Finding generalized eigenvectors: let $B = A-\lambda I$, get eigenvector $v$, solve $Bw_1 = v, Bw_2 = w_1, \cdots$ to get a Jordan block.
   Repeat with any other usual eigenvectors.
@@ -63,7 +63,7 @@ Write down the minimal polynomial of $A$.
 ::: {.proof title="parts a and b"}
 \envlist
 
-- Write $\chi_A(t) = t^3 - T_1 t^2 + T_2 t - T_3$ where $T_i \da \tr\qty{\Extpower^i A}$:
+- Write $\chi_A(t) = t^3 - T_1 t^2 + T_2 t - T_3$ where $T_i \definedas \tr\qty{\Wedgepower^i A}$:
 
   - $T_1 = \tr(A) = 4-1+1=4$.
 
@@ -73,7 +73,7 @@ Write down the minimal polynomial of $A$.
 
 - So $\chi_A(t) = t^3 - 4t^2 + 5t-2$.
 
-- Try rational roots test: $r \in \ts{\pm 2/1}$, and check that 2 is root.
+- Try rational roots test: $r \in \theset{\pm 2/1}$, and check that 2 is root.
 
 - By polynomial long division, $\chi_A(t) / (t-2) = t^2-2t+1 = (t-1)^2$.
 
@@ -81,9 +81,9 @@ Write down the minimal polynomial of $A$.
 
 - $\lambda = 2$:
 
-  - Set $U\da A-\lambda I$, then find $\RREF(U)$ to compute its kernel:
+  - Set $U\definedas A-\lambda I$, then find $\RREF(U)$ to compute its kernel:
   \[
-  U \da
+  U \definedas
   \begin{bmatrix}
   2 & 1 & -1
   \\
@@ -106,7 +106,7 @@ Write down the minimal polynomial of $A$.
 
   - Similarly,
   \[
-  U \da 
+  U \definedas 
   \begin{bmatrix}
   3 & 1 & -1 \\
   -6 & -2 & 2 \\

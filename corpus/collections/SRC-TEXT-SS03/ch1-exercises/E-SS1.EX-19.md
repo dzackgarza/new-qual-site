@@ -21,7 +21,7 @@ Show that
 
 2. $\sum k^{-2} z^k$ converges on $S^1$.
 
-3. $\sum \inverseof{k} z^k$ converges on $S^1\sm\ts{1}$ and diverges at $1$.
+3. $\sum \inverseof{k} z^k$ converges on $S^1\sm\theset{1}$ and diverges at $1$.
 :::
 
 ::: {.solution}

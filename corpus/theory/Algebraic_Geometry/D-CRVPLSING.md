@@ -26,7 +26,7 @@ prompts:
 Let $p$ be a singular point of a curve $C$ with normalisation $\nu : \tilde C \to C$.
 Then
 $$
-\delta_p \da \dim_k \qty{ \qty{\nu_* \OO_{\tilde C} / \OO_C}_p } ,
+\delta_p \definedas \dim_k \qty{ \qty{\nu_* \OO_{\tilde C} / \OO_C}_p } ,
 $$
 a finite number, and $r_p$ denotes the number of analytic branches of $C$ at $p$.
 :::

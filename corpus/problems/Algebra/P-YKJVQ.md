@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.problem}
-- Show that \( \gens{ 2, x }\normal \ZZ[x]  \) is not a principal ideal.
+- Show that \( \generators{ 2, x }\normal \ZZ[x]  \) is not a principal ideal.
 :::
 
 ::: {.solution}

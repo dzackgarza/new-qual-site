@@ -20,14 +20,14 @@ Let $k$ be a field, $A \in \Mat_{n\times n}(k)$, and $\chi_A(t) \coloneqq \det(t
 Then
 $$
 \begin{aligned}
-\chi_A(t) &= \sum_{k=0}^n (-1)^k \trace\qty{\Extpower^k A}\, t^{n-k} \\
-&= t^n - \trace\qty{A} t^{n-1} + \trace\qty{\Extpower^2 A}\, t^{n-2} - \cdots + (-1)^{n-1} \trace\qty{\Extpower^{n-1} A}\, t + (-1)^n \det(A),
+\chi_A(t) &= \sum_{k=0}^n (-1)^k \trace\qty{\Wedgepower^k A}\, t^{n-k} \\
+&= t^n - \trace\qty{A} t^{n-1} + \trace\qty{\Wedgepower^2 A}\, t^{n-2} - \cdots + (-1)^{n-1} \trace\qty{\Wedgepower^{n-1} A}\, t + (-1)^n \det(A),
 \end{aligned}
 $$
-where $\trace\qty{\Extpower^0 A} = 1$, $\Extpower^1 A = A$, and $\trace\qty{\Extpower^n A} = \det(A)$.
+where $\trace\qty{\Wedgepower^0 A} = 1$, $\Wedgepower^1 A = A$, and $\trace\qty{\Wedgepower^n A} = \det(A)$.
 Moreover, for $0 \leq \ell \leq n$,
 $$
-\trace\qty{\Extpower^\ell A} = \sum_{\substack{S \subseteq \theset{1, \ldots, n} \\ \abs{S} = \ell}} \det\qty{A_{S,S}},
+\trace\qty{\Wedgepower^\ell A} = \sum_{\substack{S \subseteq \theset{1, \ldots, n} \\ \abs{S} = \ell}} \det\qty{A_{S,S}},
 $$
 the sum of the $\binom{n}{\ell}$ principal $\ell\times\ell$ minors of $A$, where $A_{S,S}$ is the submatrix of $A$ with rows and columns indexed by $S$, obtained by deleting the rows and columns indexed by the complement of $S$.
 :::

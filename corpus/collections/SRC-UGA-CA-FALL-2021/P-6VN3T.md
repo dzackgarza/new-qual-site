@@ -29,7 +29,7 @@ if $f$ has zeros.
 
 ::: {.solution}
 First show the hint: assume $f$ has nonzero zeros.
-Write $Z(f) \da \inverseof{f}(0)$ for the set of zeros in $\bar{\DD}$.
+Write $Z(f) \definedas \inverseof{f}(0)$ for the set of zeros in $\bar{\DD}$.
 
 ::: {.claim}
 If we assume $f$ is continuous on $\DD$, then $\size Z(f) < \infty$
@@ -37,16 +37,16 @@ If we assume $f$ is continuous on $\DD$, then $\size Z(f) < \infty$
 
 ::: {.proof}
 Suppose $\size Z(f) = \infty$, then by compactness of $\bar{\DD}$ there is a limit point $z_0$.
-If $z_0 \in \DD$, then there is a sequence $\ts{z_k}\to z_0$ with $f(z_k) = 0$ for every $k$, so $f$ is zero on a set $S\da \ts{z_k}_{k\geq 1} \union \ts{z_0}$ with an accumulation point and this forces $f\equiv 0$ on $\bar{\DD}$ by the identity principle, contradicting $\abs{f} = 1$ on $\bd \DD$>
+If $z_0 \in \DD$, then there is a sequence $\theset{z_k}\to z_0$ with $f(z_k) = 0$ for every $k$, so $f$ is zero on a set $S\definedas \theset{z_k}_{k\geq 1} \union \theset{z_0}$ with an accumulation point and this forces $f\equiv 0$ on $\bar{\DD}$ by the identity principle, contradicting $\abs{f} = 1$ on $\bd \DD$>
 
 Otherwise, if $z_0\in \bd \DD$, using continuity of $f$ we have $f(z_k) = 0$ for all $k$ and $z_k\to z_0$ so $f(z_0) = 0$, again contradiicting $\abs{f} = 1$ on $\bd \DD$.
 :::
 
-So write $Z(f) = \ts{z_1,\cdots, z_m}$ and define
+So write $Z(f) = \theset{z_1,\cdots, z_m}$ and define
 \[
-g(z) \da \prod_{1\leq k \leq m} {z-z_k \over 1 - \bar{z_k} z},
+g(z) \definedas \prod_{1\leq k \leq m} {z-z_k \over 1 - \bar{z_k} z},
 \quad
-h(z) \da {f(z) \over g(z)}
+h(z) \definedas {f(z) \over g(z)}
 .\]
 
 ::: {.claim}

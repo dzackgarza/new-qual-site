@@ -16,7 +16,7 @@ review: draft
 ::: {.exercise}
 Use the rational function formula to compute the residues at $z=\pm i$ of
 \[
-f(z) \da {1\over z^2 + 1}
+f(z) \definedas {1\over z^2 + 1}
 .\]
 
 :::

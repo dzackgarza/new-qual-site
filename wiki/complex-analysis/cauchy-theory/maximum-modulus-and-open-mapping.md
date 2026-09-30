@@ -80,14 +80,14 @@ A real harmonic function $u$ is continuous and has the mean value property, so t
 [[PR-6WOTK]]
 
 ::: {.proof title="from Gamelin"}
-The set $\ts{u(z)=M}$ is open.
+The set $\theset{u(z)=M}$ is open.
 Suppose $u(z_1)=M$ and $\DD_\rho(z_1)\subseteq D$, and write the mean value equality as
 $$
 0=\int_{0}^{2 \pi}\left[u\left(z_{1}\right)-u\left(z_{1}+r e^{i \theta}\right)\right] \frac{\dtheta}{2 \pi}, \quad 0<r<\rho
 .$$
 Since $u\leq M$, the integrand is nonnegative and continuous, so it vanishes identically.
-Thus $u(z_1+re^{i\theta})=u(z_1)=M$ for all such $r, \theta$, and $\ts{u(z)=M}$ contains a disc about each of its points, hence is open.
-The set $\ts{u(z)<M}$ is open by continuity.
+Thus $u(z_1+re^{i\theta})=u(z_1)=M$ for all such $r, \theta$, and $\theset{u(z)=M}$ contains a disc about each of its points, hence is open.
+The set $\theset{u(z)<M}$ is open by continuity.
 Since $D$ is connected one of them is empty, so either $u<M$ throughout or $u\equiv M$.
 
 :::

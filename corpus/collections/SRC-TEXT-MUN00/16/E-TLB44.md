@@ -29,23 +29,23 @@ Which of the following sets are open in $Y$?
 Which are open in $\mathbb{R}$?
 
 $$
-A = \ts{x \mid \tfrac{1}{2} < \abs{x} < 1},
+A = \theset{x \mid \tfrac{1}{2} < \abs{x} < 1},
 $$
 
 $$
-B = \ts{x \mid \tfrac{1}{2} < \abs{x} \leq 1},
+B = \theset{x \mid \tfrac{1}{2} < \abs{x} \leq 1},
 $$
 
 $$
-C = \ts{x \mid \tfrac{1}{2} \leq \abs{x} < 1},
+C = \theset{x \mid \tfrac{1}{2} \leq \abs{x} < 1},
 $$
 
 $$
-D = \ts{x \mid \tfrac{1}{2} \leq \abs{x} \leq 1},
+D = \theset{x \mid \tfrac{1}{2} \leq \abs{x} \leq 1},
 $$
 
 $$
-E = \ts{x \mid 0 < \abs{x} < 1 \text{ and } 1/x \notin \mathbb{Z}_+}.
+E = \theset{x \mid 0 < \abs{x} < 1 \text{ and } 1/x \notin \mathbb{Z}_+}.
 $$
 :::
 

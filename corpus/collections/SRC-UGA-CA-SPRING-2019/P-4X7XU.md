@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 Find a conformal map that maps the region 
 \[
-R = \ts{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
+R = \theset{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
 \]
 to the upper half plane.
 :::
@@ -24,7 +24,7 @@ to the upper half plane.
 ::: {.problem}
 Find a conformal map from 
 \[
-\ts{ z\st  \abs{z -1 / 2} >1 / 2, \Re(z)>0 }
+\theset{ z\st  \abs{z -1 / 2} >1 / 2, \Re(z)>0 }
 \]
 to $\mathbb{H}$.
 
@@ -43,10 +43,10 @@ The individual maps:
 - Apply $z\mapsto e^z$ to map to $\HH$.
 
 That steps 1 and 2 work requires a bit of analysis.
-Use that $f(z) \da 1/z$ satisfies $f(\RR) = \RR$ and $f(i\RR) = i \RR$.
+Use that $f(z) \definedas 1/z$ satisfies $f(\RR) = \RR$ and $f(i\RR) = i \RR$.
 To see where the circle $C_1$ gets mapped to, parameterize it as
 \[
-\gamma(t) \da \ts{{1\over 2}\qty{1+e^{it}} \st t\in [-\pi, \pi]}
+\gamma(t) \definedas \theset{{1\over 2}\qty{1+e^{it}} \st t\in [-\pi, \pi]}
 .\]
 
 Now computing its image:

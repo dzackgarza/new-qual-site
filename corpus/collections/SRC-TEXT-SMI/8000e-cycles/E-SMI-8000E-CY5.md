@@ -40,7 +40,7 @@ f(X) = (X_1 - X_2)(X_1 - X_3)(X_2 - X_3)
 $$
 
 to $(X_2 - X_1)(X_2 - X_3)(X_1 - X_3) = -f(X)$.
-Deduce that every permutation $m$ takes $f$ to either $f$ or $-f$, and that setting $\operatorname{sgn}(m) = c$, where $m(f) = c \cdot f$, defines a surjective homomorphism $S(n) \to \ts{\pm 1}$ whose kernel consists of those permutations which can be written as a product of an even number of 2-cycles.
+Deduce that every permutation $m$ takes $f$ to either $f$ or $-f$, and that setting $\operatorname{sgn}(m) = c$, where $m(f) = c \cdot f$, defines a surjective homomorphism $S(n) \to \theset{\pm 1}$ whose kernel consists of those permutations which can be written as a product of an even number of 2-cycles.
 Call that subgroup $A(n)$.
 :::
 

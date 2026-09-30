@@ -30,7 +30,7 @@ $$
   p_\chi(x) = x^2 - (\Tr A)x + \det A = x^2 - 7x + 6 = (x-6)(x-1),
   $$
 
-and so $\spec(A) = \theset{6,1}$.
+and so $\Spec(A) = \theset{6,1}$.
 Computing the kernel of $A-\lambda I$ for each of these yields
 $$
   \vector v_1 = \left[ \begin{array} { c } { 1 } \\ { - 2 } \end{array} \right],

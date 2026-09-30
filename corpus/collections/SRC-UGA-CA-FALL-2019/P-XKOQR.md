@@ -41,7 +41,7 @@ Applying the inverse function theorem yields that $f$ is a smooth diffeomorphism
 $\not\impliedby$: If $f'(z) = 0$ for some $z$, then we claim that $f$ can not be injective.
 Equivalently, injectivity of $f$ implies $f'\neq 0$.
 Suppose $f$ is holomorphic at $z_0$ but $f'(z_0)=0$.
-Write $h(z) \da f(z) - f(z_0)$, which has a zero $z_0$ of some order $k\geq 2$.
+Write $h(z) \definedas f(z) - f(z_0)$, which has a zero $z_0$ of some order $k\geq 2$.
 For a disc $D$ small enough about $z_0$ avoiding the other (isolated) zeros of $h$ and $f'$, for any $p$ in a neighborhood of $z_0$ and contained in $D$,
 \[
 \int_{\bd D} {f'(\xi) \over f(\xi) - p} \dxi
@@ -51,9 +51,9 @@ using the argument principle and that $(f(\xi) - p)' = f'(\xi)$.
 But for $D$ small enough, $\size Z(f(z) - p) = \size Z(f(z) - f(z_0)) = k$ by Rouché, so there are $k$ solutions to $f(z) = p$.
 Since $(f(z) - p)' \neq 0$ in $D$, none of these can be repeated roots, so these $k$ solutions are distinct, forcing $f$ to be $k$-to-one and fail injectivity.
 
-Expanding on the Rouché argument: set $c \da \inf_{z\in D} \abs{f(z) - w_0}$, then for $D'$ of radius $c$, set
+Expanding on the Rouché argument: set $c \definedas \inf_{z\in D} \abs{f(z) - w_0}$, then for $D'$ of radius $c$, set
 
-- $F(z) \da (f(z) - z_0) - (f(z) - p) = z-p$
+- $F(z) \definedas (f(z) - z_0) - (f(z) - p) = z-p$
 
 - $G(z) = f(z) - z_0$
 

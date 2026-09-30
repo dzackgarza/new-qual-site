@@ -22,12 +22,12 @@ prompts:
 
 ::: {.definition}
 For $X$ a topological space, $\globsec{X; \wait}: \Sh(X; \Ab) \to \Ab$ is left exact.
-Define $H^i(X, \mcf) \da R^i \globsec{X; \wait}(\mcf)$: choose an injective resolution $\mcf \injects \mci^\bullet$, apply $\globsec{X; \wait}$, and take cohomology.
+Define $H^i(X, \mcf) \definedas R^i \globsec{X; \wait}(\mcf)$: choose an injective resolution $\mcf \injects \mci^\bullet$, apply $\globsec{X; \wait}$, and take cohomology.
 :::
 
 ::: {.remark title="Enough injectives"}
 The construction requires enough injective objects.
-For each $x$, embed the stalk $\mcf_x \injects I_x$ into an injective $\OO_{X,x}\dash$module, let $j^x: \ts{x} \injects X$, and set $\mci \da \prod_{x \in X} j^x_* I_x$.
+For each $x$, embed the stalk $\mcf_x \injects I_x$ into an injective $\OO_{X,x}\dash$module, let $j^x: \theset{x} \injects X$, and set $\mci \definedas \prod_{x \in X} j^x_* I_x$.
 Then $\Hom(\mcg, \mci) = \prod_x \Hom_{\OO_{X,x}}(\mcg_x, I_x)$, a composite of the exact stalk functors with exact $\Hom$ functors, so $\mci$ is injective, and $\mcf \injects \mci$.
 :::
 

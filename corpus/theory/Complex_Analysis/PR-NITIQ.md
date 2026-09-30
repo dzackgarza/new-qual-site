@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc $D_r(z_0)\sm\ts{z_0}$ and have a [[D-R4BDD|pole]] at $z_0$, so that $\abs{f(z)}\to\infty$ as $z\to z_0$.
+Let $f$ be [[D-E7A5W|holomorphic]] on a punctured disc $D_r(z_0)\sm\theset{z_0}$ and have a [[D-R4BDD|pole]] at $z_0$, so that $\abs{f(z)}\to\infty$ as $z\to z_0$.
 Then there exist a least integer $n\ge1$ and a function $h$ holomorphic on a neighborhood of $z_0$ such that
 $$
 f(z)=(z-z_0)^{-n}h(z)
@@ -24,7 +24,7 @@ For this $n$, the function $h$ is unique and $h(z_0)\neq0$; the integer $n$ is t
 :::
 
 ::: {.proof}
-Since $\abs{f}\to\infty$, there is $0<\rho\le r$ with $f\neq0$ on $D_\rho(z_0)\sm\ts{z_0}$.
+Since $\abs{f}\to\infty$, there is $0<\rho\le r$ with $f\neq0$ on $D_\rho(z_0)\sm\theset{z_0}$.
 The function $g\coloneqq1/f$ is holomorphic and bounded there, so by Riemann's removable singularity theorem it extends holomorphically to $D_\rho(z_0)$ with $g(z_0)=0$.
 The extension is not identically zero, so its [[D-65VIK|zero]] at $z_0$ has a finite order $n\ge1$: $g(z)=(z-z_0)^nk(z)$ with $k$ holomorphic and nonvanishing on a neighborhood of $z_0$.
 Then $h\coloneqq1/k$ is holomorphic near $z_0$, $h(z_0)\neq0$, and $f(z)=(z-z_0)^{-n}h(z)$.

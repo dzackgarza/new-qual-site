@@ -26,17 +26,17 @@ Then there is $u_\tau \in \dualof{\sigma}$, unique up to a positive scalar and u
 \[
 \tau = \sigma \intersect u_\tau^\perp .
 \]
-It spans the ray $\dualof{\sigma} \intersect \tau^\perp$, and the hyperplane $H_\tau \da u_\tau^\perp$ is the hyperplane spanned by $\tau$.
+It spans the ray $\dualof{\sigma} \intersect \tau^\perp$, and the hyperplane $H_\tau \definedas u_\tau^\perp$ is the hyperplane spanned by $\tau$.
 :::
 
 ::: {.proposition title="Two presentations"}
 If $\sigma$ spans $N_\RR$ and $\sigma \neq N_\RR$, then
 \[
-\sigma = \Intersect_{\tau \text{ a facet of } \sigma} H_\tau^+ , \qquad H_\tau^+ \da \ts{ v \in N_\RR \st \inp{u_\tau}{v} \geq 0 } .
+\sigma = \Intersect_{\tau \text{ a facet of } \sigma} H_\tau^+ , \qquad H_\tau^+ \definedas \theset{ v \in N_\RR \st \inner{u_\tau}{v} \geq 0 } .
 \]
 Equivalently, if $u_1, \ldots, u_t$ generate $\dualof{\sigma}$, then
 \[
-\sigma = \ts{ v \in N_\RR \st \inp{u_1}{v} \geq 0, \ \ldots, \ \inp{u_t}{v} \geq 0 } .
+\sigma = \theset{ v \in N_\RR \st \inner{u_1}{v} \geq 0, \ \ldots, \ \inner{u_t}{v} \geq 0 } .
 \]
 :::
 
@@ -44,7 +44,7 @@ Equivalently, if $u_1, \ldots, u_t$ generate $\dualof{\sigma}$, then
 This is the working content of double duality.
 A cone arrives in one of two forms, and every computation needs the other.
 
-- Given by generators, $\sigma = \Cone(v_1, \ldots, v_r)$: the inequalities are $\inp{u}{v_i} \geq 0$, and solving them produces $\dualof{\sigma}$.
+- Given by generators, $\sigma = \Cone(v_1, \ldots, v_r)$: the inequalities are $\inner{u}{v_i} \geq 0$, and solving them produces $\dualof{\sigma}$.
 
 - Given by inequalities, $\sigma = \Intersect H_{u_j}^+$: the $u_j$ are generators of $\dualof{\sigma}$.
 

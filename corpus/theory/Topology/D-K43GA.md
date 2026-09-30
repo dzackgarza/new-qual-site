@@ -17,7 +17,7 @@ A topological space $X$ is \dfn{contractible} if $\id_X$ is [[D-MGRZP|nullhomoto
 :::
 
 ::: {.proposition}
-A topological space $X$ is contractible if and only if $X$ is [[D-HFR32|homotopy equivalent]] to a one-point space $\ts{x_0}$, that is, there are continuous maps $f\colon X\to\ts{x_0}$ and $g\colon\ts{x_0}\to X$ with $f\circ g = \id_{\ts{x_0}}$ and $g\circ f\simeq\id_X$.
+A topological space $X$ is contractible if and only if $X$ is [[D-HFR32|homotopy equivalent]] to a one-point space $\theset{x_0}$, that is, there are continuous maps $f\colon X\to\theset{x_0}$ and $g\colon\theset{x_0}\to X$ with $f\circ g = \id_{\theset{x_0}}$ and $g\circ f\simeq\id_X$.
 :::
 
 ::: {.concept}

@@ -18,10 +18,10 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space, $A\subseteq X$, and $x\in X$.
-The point $x$ is a \dfn{limit point} of $A$ if every [[D-JMRPA|neighborhood]] of $x$ meets $A\sm\ts{x}$.
+The point $x$ is a \dfn{limit point} of $A$ if every [[D-JMRPA|neighborhood]] of $x$ meets $A\sm\theset{x}$.
 A limit point is also called an accumulation point.
 :::
 
 ::: {.proposition}
-A point $x\in X$ is a limit point of $A\subseteq X$ if and only if $x\in \cl_{X}(A\sm\ts{x})$, the [[D-ASXW6|closure]] of $A\sm\ts{x}$ in $X$.
+A point $x\in X$ is a limit point of $A\subseteq X$ if and only if $x\in \cl_{X}(A\sm\theset{x})$, the [[D-ASXW6|closure]] of $A\sm\theset{x}$ in $X$.
 :::

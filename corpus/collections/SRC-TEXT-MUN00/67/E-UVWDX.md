@@ -24,7 +24,7 @@ audit:
 
 ::: {.exercise}
 
-If $G$ is free abelian with basis $\ts{x, y}$, show that $\ts{2x + 3y, x - y}$ is also a basis for $G$.
+If $G$ is free abelian with basis $\theset{x, y}$, show that $\theset{2x + 3y, x - y}$ is also a basis for $G$.
 :::
 
 ::: {.solution}

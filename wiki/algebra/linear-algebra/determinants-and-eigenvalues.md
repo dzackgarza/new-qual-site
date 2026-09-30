@@ -67,7 +67,7 @@ $$
 $$
 and if $\det A$ is invertible, the adjugate gives the inverse:
 $$
-\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
+\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \definedas (-1)^{i+j} \det \minor_A(j, i).
 $$
 :::
 
@@ -108,7 +108,7 @@ The determinant, characteristic polynomial, and minimal polynomial are also simi
 
 ::: {.fact title="Powers of a triangular matrix"}
 $$
-A\da\left(\begin{array}{ccc}
+A\definedas\left(\begin{array}{ccc}
 a_1 & & * \\
 & \ddots & \\
 0 & & a_n
@@ -125,7 +125,7 @@ $$
 ## Matrix groups
 
 The [[D-J5AAX|general linear group]] $\GL_n(F)$ is the group of invertible $n\times n$ matrices over $F$, and the [[D-P5D3T|special linear group]] $\SL_n(F)$ is its subgroup of matrices of determinant $1$.
-The [[D-3ZPR7|orthogonal group]] $\ts{A \st A^tA=I}$ is the group of matrices preserving the standard symmetric bilinear form, the [[D-QZ2LQ|unitary group]] $\ts{A\st A^\dagger A=I}$ preserves the standard Hermitian form, and the [[D-3V3SP|symplectic group]] $\ts{A\st A^tJA=J}$ preserves the standard alternating form with Gram matrix $J=\matt{0}{I_n}{-I_n}{0}$.
+The [[D-3ZPR7|orthogonal group]] $\theset{A \st A^tA=I}$ is the group of matrices preserving the standard symmetric bilinear form, the [[D-QZ2LQ|unitary group]] $\theset{A\st A^\dagger A=I}$ preserves the standard Hermitian form, and the [[D-3V3SP|symplectic group]] $\theset{A\st A^tJA=J}$ preserves the standard alternating form with Gram matrix $J=\matt{0}{I_n}{-I_n}{0}$.
 The [[D-GY7ZN|special orthogonal]] and [[D-MCUTE|special unitary]] groups are the subgroups of matrices of determinant $1$.
 
 [[D-J5AAX]]

@@ -27,13 +27,13 @@ Prove that
 ::: {.solution}
 Rouché's theorem: if $f,g$ are holomorphic on a domain containing a simple closed contour $\gamma$ and $\abs{g(z)} < \abs{f(z)}$ for all $z\in\gamma$, then $f$ and $f+g$ have the same number of zeros (counting multiplicity) inside $\gamma$.
 
-Write $p(z) \da a_0 + \cdots + z^n$.
+Write $p(z) \definedas a_0 + \cdots + z^n$.
 Toward a contradiction, suppose not so that $\abs{p(z)} < 1$ on $\abs{z} = 1$.
 Then
 \[
 \abs{f(z)} < 1 = \abs{z}^n \qquad \text{ on } \abs{z} = 1
 .\]
-Taking $m(z) \da f(z)$ and $M(z) \da -z^n$, we have 
+Taking $m(z) \definedas f(z)$ and $M(z) \definedas -z^n$, we have 
 \[
 n = \size Z_M = \size Z_{M+m} = \size Z_{f(z) - z^n} \leq n-1
 ,\]

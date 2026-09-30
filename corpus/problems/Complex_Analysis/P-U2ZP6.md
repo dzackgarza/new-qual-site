@@ -23,5 +23,5 @@ Can every continuous function on $\bar \DD$ be uniformly approximated by polynom
 
 ::: {.solution}
 No: polynomials are holomorphic and the uniform limit of holomorphic functions is holomorphic.
-However, $f(z) \da \bar{z}$ is continuous on $\bar\DD$ but not holomorphic.
+However, $f(z) \definedas \bar{z}$ is continuous on $\bar\DD$ but not holomorphic.
 :::

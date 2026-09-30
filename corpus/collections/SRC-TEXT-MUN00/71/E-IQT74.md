@@ -15,7 +15,7 @@ review: draft
 ::: {.exercise}
 
 Let $X$ be a space that is the union of subspaces $S_1, \ldots, S_n$, each of which is homeomorphic to the unit circle.
-Assume there is a point $p$ of $X$ such that $S_i \cap S_j = \ts{p}$ for $i \neq j$.
+Assume there is a point $p$ of $X$ such that $S_i \cap S_j = \theset{p}$ for $i \neq j$.
 
 (a) Show that $X$ is Hausdorff if and only if each space $S_i$ is closed in $X$.
 

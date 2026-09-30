@@ -15,7 +15,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
   - Cosets
 
-    - $xH \da \ts{xh\st h\in H}$, $G/H \da \ts{xH \st x\in G}$, and the left cosets partition $G$
+    - $xH \definedas \theset{xh\st h\in H}$, $G/H \definedas \theset{xH \st x\in G}$, and the left cosets partition $G$
 
   - The index of a subgroup
 

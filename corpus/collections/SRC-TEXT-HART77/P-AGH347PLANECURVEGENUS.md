@@ -26,7 +26,7 @@ audit:
 Let $k$ be a field and let $X$ be the closed subscheme of $\PP_k^2$ defined by a single homogeneous equation $f(x_0,x_1,x_2)=0$ of degree $d\ge1$.
 (Do not assume $f$ is irreducible.)
 Assume that $(1,0,0)$ is not on $X$.
-Then show that $X$ can be covered by the two open affine subsets $U=X \intersect \ts{x_1 \neq 0}$ and $V=X \intersect \ts{x_2 \neq 0}$.
+Then show that $X$ can be covered by the two open affine subsets $U=X \intersect \theset{x_1 \neq 0}$ and $V=X \intersect \theset{x_2 \neq 0}$.
 Now calculate the Čech complex
 $$
 \Gamma(U, \mco_X) \oplus \Gamma(V, \mco_X) \to \Gamma(U \intersect V, \mco_X)

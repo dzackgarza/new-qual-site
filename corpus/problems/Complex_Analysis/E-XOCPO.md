@@ -17,7 +17,7 @@ review: draft
 ::: {.exercise}
 Find a Laurent expansion that converges for $\abs{z} > 1$ of
 \[
-f(z) \da {1 \over e^{1-z}}
+f(z) \definedas {1 \over e^{1-z}}
 .\]
 
 :::

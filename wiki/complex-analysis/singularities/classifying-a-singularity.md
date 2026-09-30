@@ -25,7 +25,7 @@ A rational function has only isolated singularities, since a nonzero polynomial 
 
 $\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood of $0$ meets the branch cut $(-\infty, 0)$, where $\Log$ is not continuous.
 
-$G(z) \coloneqq 1/\sin(\pi/z)$ has isolated singularities at the points $1/n$, $n\in\ZZ\sm\ts{0}$, and a non-isolated singularity at $0$, where they accumulate.
+$G(z) \coloneqq 1/\sin(\pi/z)$ has isolated singularities at the points $1/n$, $n\in\ZZ\sm\theset{0}$, and a non-isolated singularity at $0$, where they accumulate.
 :::
 
 ## The limit criterion
@@ -62,7 +62,7 @@ Let $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ on a punctured disc about $z_0$.
 This criterion also gives the order of a pole and the residue $c_{-1}$.
 
 ::: {.remark title="Order as a valuation"}
-For $f(z) = \sum_{k\in\ZZ} a_k(z-a)^k$ about $a$, let $v_a(f) \coloneqq \min\ts{k \st a_k\neq 0}$, with $v_a(f) = -\infty$ when infinitely many negative coefficients are nonzero.
+For $f(z) = \sum_{k\in\ZZ} a_k(z-a)^k$ about $a$, let $v_a(f) \coloneqq \min\theset{k \st a_k\neq 0}$, with $v_a(f) = -\infty$ when infinitely many negative coefficients are nonzero.
 Then a zero of order $n$ has $v_a(f) = n$, a pole of order $n$ has $v_a(f) = -n$, a removable singularity has $v_a(f) \geq 0$, and an essential singularity has $v_a(f) = -\infty$.
 :::
 

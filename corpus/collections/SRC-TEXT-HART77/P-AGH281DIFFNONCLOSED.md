@@ -38,7 +38,7 @@ Show that $B$ is a regular local ring if and only if $\Omega_{B/k}$ is free of r
 (c) Strengthen (8.15) as follows. Let $X$ be an irreducible scheme of finite type over a perfect field $k$, and let $\dim X = n$.
 For any point $x \in X$, not necessarily closed, show that the local ring $\OO_{x, X}$ is a regular local ring if and only if the stalk $(\Omega_{X/k})_x$ is free of rank $n$.
 
-(d) Strengthen (8.16) as follows. If $X$ is a variety over an algebraically closed field $k$, then $U = \ts{x \in X \st \OO_x \text{ is a regular local ring}}$ is an open dense subset of $X$.
+(d) Strengthen (8.16) as follows. If $X$ is a variety over an algebraically closed field $k$, then $U = \theset{x \in X \st \OO_x \text{ is a regular local ring}}$ is an open dense subset of $X$.
 :::
 
 ::: {.hint}

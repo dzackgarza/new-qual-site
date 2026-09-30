@@ -24,7 +24,7 @@ prompts:
 Let $\sigma \subseteq N_\RR$ be a convex polyhedral cone and let $v \in N_\RR$ with $v \notin \sigma$.
 Then there is a **support vector** $u \in \dualof{\sigma}$ with
 \[
-\inp{u}{v} < 0 .
+\inner{u}{v} < 0 .
 \]
 That is, $v$ lies strictly on the negative side of a hyperplane that has all of $\sigma$ on its non-negative side.
 :::
@@ -38,7 +38,7 @@ That is, $v$ lies strictly on the negative side of a hyperplane that has all of 
 ::: {.proof}
 The inclusion $\sigma \subseteq \dualof{(\dualof{\sigma})}$ is the definition: every $v \in \sigma$ pairs non-negatively with every $u \in \dualof{\sigma}$.
 
-For the reverse, take $v \notin \sigma$ and apply separation to get $u \in \dualof{\sigma}$ with $\inp{u}{v} < 0$.
+For the reverse, take $v \notin \sigma$ and apply separation to get $u \in \dualof{\sigma}$ with $\inner{u}{v} < 0$.
 That $u$ witnesses $v \notin \dualof{(\dualof{\sigma})}$.
 :::
 

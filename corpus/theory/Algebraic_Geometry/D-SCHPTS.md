@@ -22,14 +22,14 @@ prompts:
 ---
 
 ::: {.definition}
-The \dfn{residue field} at $x \in X$ is $\kappa(x) \da \OO_{X,x}/\mfm_x$; for $x = \mfp \in \Spec A$ this is $\Frac(A/\mfp) = A_\mfp/\mfp A_\mfp$.
+The \dfn{residue field} at $x \in X$ is $\kappa(x) \definedas \OO_{X,x}/\mfm_x$; for $x = \mfp \in \Spec A$ this is $\Frac(A/\mfp) = A_\mfp/\mfp A_\mfp$.
 To \dfn{evaluate} $f \in \OO_X(U)$ at $x$ is to take its image under $\OO_X(U) \to \OO_{X,x} \to \kappa(x)$.
 
 A \dfn{closed point} is one whose closure is itself, corresponding to a maximal ideal in an affine chart.
-A \dfn{generic point} of an irreducible closed $Z$ is $\eta$ with $\closure{\ts{\eta}} = Z$.
+A \dfn{generic point} of an irreducible closed $Z$ is $\eta$ with $\closure{\theset{\eta}} = Z$.
 For $X$ over $k$, a \dfn{rational point} is an $x$ with $\kappa(x) = k$.
 
-Write $\tilde x \leadsto x$, "$\tilde x$ \dfn{specialises} to $x$", when $x \in \closure{\ts{\tilde x}}$; equivalently $\mfp_{\tilde x} \subseteq \mfp_x$ in an affine chart.
+Write $\tilde x \leadsto x$, "$\tilde x$ \dfn{specialises} to $x$", when $x \in \closure{\theset{\tilde x}}$; equivalently $\mfp_{\tilde x} \subseteq \mfp_x$ in an affine chart.
 :::
 
 ::: {.definition title="General points and general fibres"}

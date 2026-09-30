@@ -17,7 +17,7 @@ review: draft
 
 ::: {.problem}
 Let $R>0$.
-Suppose $f$ is holomorphic on $\ts{z\st \abs{z} < 3R}$.
+Suppose $f$ is holomorphic on $\theset{z\st \abs{z} < 3R}$.
 Let
 $$
 M_{R}:=\sup _{|z| \leq R}|f(z)|, \quad N_{R}:=\sup _{|z| \leq R}\left|f^{\prime}(z)\right|
@@ -60,7 +60,7 @@ Since taking sups preserves inequalities, we have
 \leq \inverseof{R} M_{2R}\,
 \forall \abs{z} \leq R
 \implies
-N_R\da \sup_{\abs{z} \leq R}\abs{f'(z)}
+N_R\definedas \sup_{\abs{z} \leq R}\abs{f'(z)}
 \leq \inverseof{R} M_{2R}
 .\]
 

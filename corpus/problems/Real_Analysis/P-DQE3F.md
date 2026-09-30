@@ -20,13 +20,13 @@ audit:
 ---
 
 ::: {.problem}
-Let \( \ts{ f_k }_{k=1}^{\infty } \subseteq L^2([0, 1]) \) be a sequence which *converges in $L^1$* to a function $f$.
+Let \( \theset{ f_k }_{k=1}^{\infty } \subseteq L^2([0, 1]) \) be a sequence which *converges in $L^1$* to a function $f$.
 
 a. Prove that $f\in L^1([0, 1])$.
 
 b. Give an example illustrating that $f_k$ may not converge to $f$ almost everywhere.
 
-c. Prove that $\ts{f_k}$ must contain a subsequence that converges to $f$ almost everywhere.
+c. Prove that $\theset{f_k}$ must contain a subsequence that converges to $f$ almost everywhere.
 :::
 ::: {.solution}
 

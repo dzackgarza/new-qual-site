@@ -23,13 +23,13 @@ prompts:
 ::: {.definition title="Zariski tangent space"}
 For $p \in X$ with local ring $\OO_{X,p}$ and maximal ideal $\mfm_p$, the \dfn{Zariski tangent space} is
 $$
-T_p X \da \dualof{(\mfm_p / \mfm_p^2)} .
+T_p X \definedas \dualof{(\mfm_p / \mfm_p^2)} .
 $$
 The point $p$ is \dfn{smooth} if $\dim_k T_p X = \dim_p X$, and \dfn{singular} otherwise.
 :::
 
 ::: {.proposition title="Jacobian criterion"}
-Let $X\subseteq\AA^n$ be an affine variety of dimension $d$, let $I(X) = \gens{f_1,\ldots,f_t} \subseteq k[x_1,\ldots,x_n]$, and let $J_X(p) = \left[ \partial f_i / \partial x_j (p) \right]$.
+Let $X\subseteq\AA^n$ be an affine variety of dimension $d$, let $I(X) = \generators{f_1,\ldots,f_t} \subseteq k[x_1,\ldots,x_n]$, and let $J_X(p) = \left[ \partial f_i / \partial x_j (p) \right]$.
 Then $\rank J_X(p)\le n-d$ for every $p\in X$, and $p$ is a smooth point if and only if $\rank J_X(p) = n-d$ [@Har10a, Theorem I.5.1].
 :::
 

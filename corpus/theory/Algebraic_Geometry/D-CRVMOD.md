@@ -35,7 +35,7 @@ A variety $M_g$ over $k$ is a \dfn{coarse moduli space} for curves of genus $g$ 
 ::: {.definition title="Fine moduli space"}
 $M_g$ is a \dfn{fine moduli space} when it represents the functor sending $T$ to the set of flat families over $T$ up to isomorphism: the classifying maps of (2) give a bijection
 $$
-\operatorname{Hom}(T, M_g) \longleftrightarrow \ts{\text{families over } T}/{\cong}
+\operatorname{Hom}(T, M_g) \longleftrightarrow \theset{\text{families over } T}/{\cong}
 $$
 natural in $T$.
 Equivalently $M_g$ carries a \dfn{universal family} $\mathcal{U} \to M_g$ such that every family $\mathcal{X}\to T$ is isomorphic to the pullback of $\mathcal{U}$ along a unique morphism $T\to M_g$.

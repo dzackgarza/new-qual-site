@@ -16,11 +16,11 @@ If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standar
 
 | Symbol | Region |
 | --- | --- |
-| $\DD \coloneqq \ts{z \st \abs z < 1}$ | the open unit disc |
-| $\HH \coloneqq \ts{z \st \Im z > 0}$ | the open upper half plane |
-| $Q_i$ | the $i$th open quadrant, so $Q_1 \coloneqq \ts{z \st \Re z> 0,\ \Im z > 0}$ |
+| $\DD \coloneqq \theset{z \st \abs z < 1}$ | the open unit disc |
+| $\HH \coloneqq \theset{z \st \Im z > 0}$ | the open upper half plane |
+| $Q_i$ | the $i$th open quadrant, so $Q_1 \coloneqq \theset{z \st \Re z> 0,\ \Im z > 0}$ |
 | $Q_{ij}$ | the interior of $\overline{Q_i \union Q_j}$, so $\HH = Q_{12}$ and $Q_{14}$ is the right half plane |
-| $L \coloneqq \ts{x+iy \st 0 < y < \pi}$ | the horizontal strip |
+| $L \coloneqq \theset{x+iy \st 0 < y < \pi}$ | the horizontal strip |
 
 ## Maps between standard regions
 
@@ -29,17 +29,17 @@ If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standar
 
 - **$\DD \to \DD$.** The automorphisms $z\mapsto\lambda\, {z-a\over 1-\bar a z}$ with $a\in\DD$ and $\lambda \in S^1$; by [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]], every automorphism of $\DD$ has this form.
 
-- **Sector $\to \HH$.** $z\mapsto z^n$ maps $\ts{0 < \Arg z < \pi/n}$ onto $\HH$.
-  More generally, for $0<a\theta_0\leq\pi$, a branch of $z \mapsto z^a$ maps $\ts{\Arg z \in (-\theta_0, \theta_0)}$ onto $\ts{\Arg w \in (-a\theta_0, a\theta_0)}$, so $a = \pi/(2\theta_0)$ maps a symmetric sector onto the right half plane.
+- **Sector $\to \HH$.** $z\mapsto z^n$ maps $\theset{0 < \Arg z < \pi/n}$ onto $\HH$.
+  More generally, for $0<a\theta_0\leq\pi$, a branch of $z \mapsto z^a$ maps $\theset{\Arg z \in (-\theta_0, \theta_0)}$ onto $\theset{\Arg w \in (-a\theta_0, a\theta_0)}$, so $a = \pi/(2\theta_0)$ maps a symmetric sector onto the right half plane.
 
   ![Squaring](../../../../assets/assets/figures/2021-12-10_20-25-14.png)
 
   ![Symmetric sector to right half-plane](../../../../assets/assets/figures/2021-12-10_20-24-49.png)
 
-- **Strip $\to \HH$.** $z\mapsto e^z$ maps $L$ onto $\HH$, and maps $\ts{-\pi<\Im z<\pi}$ onto $\CC\sm\RR_{\leq 0}$.
+- **Strip $\to \HH$.** $z\mapsto e^z$ maps $L$ onto $\HH$, and maps $\theset{-\pi<\Im z<\pi}$ onto $\CC\sm\RR_{\leq 0}$.
   For $b-a>0$ and $0<d-c\leq 2\pi$, the exponential maps rectangles to annular sectors:
   $$
-  \ts{\Re z \in [a,b],\ \Im z \in [c,d]} \mapsto \ts{Re^{i\theta} \st R\in[e^a,e^b],\ \theta\in[c,d]}
+  \theset{\Re z \in [a,b],\ \Im z \in [c,d]} \mapsto \theset{Re^{i\theta} \st R\in[e^a,e^b],\ \theta\in[c,d]}
   .$$
 
 - **Half disc $\to$ half plane.** The Joukowski map $z\mapsto z + \inverseof{z}$ maps $\abs z = 1$ onto $[-2,2]$, $\DD\intersect\HH$ onto $Q_{34}$, $\overline{\DD}^c \intersect \HH$ onto $\HH$, and $\overline{\DD}^c$ onto $\CC\sm[-2,2]$.

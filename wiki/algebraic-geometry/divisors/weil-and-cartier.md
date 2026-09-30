@@ -35,7 +35,7 @@ For an integral projective curve $X$ over an algebraically closed field with nor
 where $\tilde\OO_p$ is the integral closure of $\OO_{X,p}$.
 For an open subset $U = X \sm Z$ of a smooth variety, the comparison is the excision sequence
 \[
-\ZZ^{\ts{\text{components of } Z \text{ of codimension } 1}} \to \Cl(X) \to \Cl(U) \to 0 .
+\ZZ^{\theset{\text{components of } Z \text{ of codimension } 1}} \to \Cl(X) \to \Cl(U) \to 0 .
 \]
 It gives $\Cl(\AA^n)=0$ from $\Cl(\PP^n)=\ZZ$, and $\Cl(\PP^n\setminus V(f))\cong\ZZ/d$ for an irreducible form $f$ of degree $d$.
 

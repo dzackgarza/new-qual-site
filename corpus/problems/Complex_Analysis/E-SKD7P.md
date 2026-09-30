@@ -20,13 +20,13 @@ Show that any power series converges uniformly within its radius of convergence.
 :::
 
 ::: {.solution}
-Write $S_N(z) \da \sum_{0\leq k\leq N} c_k (z-z_0)^k$ and $S \da \lim_{N\to\infty} S_N$.
-Suppose $R\da \inverseof{\qty{\limsup_k \abs{c_k}^{1\over k} }}$ is the radius of convergence and let $r\leq R$, we'll show $S_N\to S$ uniformly on any disc $\abs{z-z_0}< r$.
+Write $S_N(z) \definedas \sum_{0\leq k\leq N} c_k (z-z_0)^k$ and $S \definedas \lim_{N\to\infty} S_N$.
+Suppose $R\definedas \inverseof{\qty{\limsup_k \abs{c_k}^{1\over k} }}$ is the radius of convergence and let $r\leq R$, we'll show $S_N\to S$ uniformly on any disc $\abs{z-z_0}< r$.
 
-Use the $M\dash$test: $\sum f_k$ converges if $\norm{f_k}_\infty\leq M_k$ where $\ts{M_k}\in \ell^1(\NN)$.
-Define $f_k \da c_k (z-z_0)^k$, then
+Use the $M\dash$test: $\sum f_k$ converges if $\norm{f_k}_\infty\leq M_k$ where $\theset{M_k}\in \ell^1(\NN)$.
+Define $f_k \definedas c_k (z-z_0)^k$, then
 \[
-\norm{f_k}_\infty =\sup_{\abs{z-z_0}\leq r} \abs{c_k(z-z_0)^k} \leq \abs{c_k} r^k \da M_k
+\norm{f_k}_\infty =\sup_{\abs{z-z_0}\leq r} \abs{c_k(z-z_0)^k} \leq \abs{c_k} r^k \definedas M_k
 .\]
 Then
 \[
@@ -42,15 +42,15 @@ Recall that root test:
 \[
 \sum_k a_k \text{ converges absolutely if } \limsup_k \abs{a_k}^{1\over k} < 1
 .\]
-Here we take $a_k \da c_k r^k$, then
+Here we take $a_k \definedas c_k r^k$, then
 \[
 \limsup_k \abs{a_k}^{1\over k}
-&\da \limsup_k \abs{c_k r^k}^{1\over k} \\
+&\definedas \limsup_k \abs{c_k r^k}^{1\over k} \\
 &= \limsup_k \abs{c_k}^{1\over k} r \\
 &< \limsup_k \abs{c_k}^{1\over k} R\\
-&\da \limsup_k \abs{c_k}^{1\over k} \inverseof{\qty{\limsup_{k} \abs{c_k}^{1\over k} }} \\
+&\definedas \limsup_k \abs{c_k}^{1\over k} \inverseof{\qty{\limsup_{k} \abs{c_k}^{1\over k} }} \\
 &= 1
 ,\]
 so $\sum_k \abs{c_k r^k} < \infty$.
-Thus $\ts{M_k}\in \ell^1(\NN)$, and so $\sum_k f_k$ converges uniformly and absolutely on $\abs{z-z_0} = r < R$.
+Thus $\theset{M_k}\in \ell^1(\NN)$, and so $\sum_k f_k$ converges uniformly and absolutely on $\abs{z-z_0} = r < R$.
 :::

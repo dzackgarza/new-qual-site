@@ -30,6 +30,6 @@ Constructible sheaves are preserved by $f^{-1}$, by $f_*$ and $f_!$ for morphism
 
 ::: {.example}
 Let $j \colon U = \AA^1 \setminus \{0\} \hookrightarrow \AA^1$ and $i \colon \{0\} \hookrightarrow \AA^1$ over $\CC$.
-The sheaf $j_! \ul{\CC}_U$ has stalk $\CC$ on $U$ and $0$ at $0$, and $i_* \CC$ has stalk $\CC$ at $0$ and $0$ elsewhere.
+The sheaf $j_! \underline{\CC}_U$ has stalk $\CC$ on $U$ and $0$ at $0$, and $i_* \CC$ has stalk $\CC$ at $0$ and $0$ elsewhere.
 Both are constructible with respect to the partition $\AA^1 = U \amalg \{0\}$, and neither is a local system on $\AA^1$.
 :::

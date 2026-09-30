@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $\DD\cap\HH=\ts{z\st\abs{z}<1,\ \Im z>0}$ be the upper half-disc and $\HH=\ts{w\st\Im w>0}$ the upper half-plane.
+Let $\DD\cap\HH=\theset{z\st\abs{z}<1,\ \Im z>0}$ be the upper half-disc and $\HH=\theset{w\st\Im w>0}$ the upper half-plane.
 The map
 $$
 F\colon\DD\cap\HH\to\HH,\qquad F(z)=-\frac12\big(z+z^{-1}\big),
@@ -29,7 +29,7 @@ F(z)=-\frac12\Big(r+\frac1r\Big)\cos\theta+\frac i2\Big(\frac1r-r\Big)\sin\theta
 $$
 so $\Im F(z)>0$ and $F$ is a holomorphic map into $\HH$.
 Given $w\in\HH$, the equation $F(z)=w$ is $z^2+2wz+1=0$.
-Its two roots have product $1$, and neither lies on the unit circle or the real axis, because $F$ maps the unit circle into $[-1,1]$ and $\RR\sm\ts{0}$ into $\RR$.
+Its two roots have product $1$, and neither lies on the unit circle or the real axis, because $F$ maps the unit circle into $[-1,1]$ and $\RR\sm\theset{0}$ into $\RR$.
 So exactly one root $z$ satisfies $\abs{z}<1$, and it satisfies $\Im z>0$ because $\Im F(z)$ has the sign of $\sin\theta$ when $\abs{z}<1$.
 Hence $F$ is bijective, and a bijective holomorphic map has a holomorphic inverse.
 :::
@@ -41,6 +41,6 @@ The inverse is $F^{-1}(w)=-w+\sqrt{w^2-1}$, with the branch of the square root f
 :::
 
 ::: {.remark}
-The Joukowski map $J(z)=\frac12(z+z^{-1})$ satisfies $J(z)=J(1/z)$ and maps each of the punctured disc $\ts{z\st 0<\abs{z}<1}$ and the exterior $\ts{z\st\abs{z}>1}$ conformally onto $\CC\sm[-1,1]$.
+The Joukowski map $J(z)=\frac12(z+z^{-1})$ satisfies $J(z)=J(1/z)$ and maps each of the punctured disc $\theset{z\st 0<\abs{z}<1}$ and the exterior $\theset{z\st\abs{z}>1}$ conformally onto $\CC\sm[-1,1]$.
 It maps the upper half-disc onto the lower half-plane, and each circle $\abs{z}=r$ with $r\neq1$ onto the ellipse with foci $\pm1$ and semi-axes $\frac12(r+r^{-1})$ and $\frac12\abs{r-r^{-1}}$ [@Ahl79].
 :::

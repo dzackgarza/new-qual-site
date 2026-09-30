@@ -19,7 +19,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\HH_R\da\{w\in\CC:\Re w>0\}$.
+Let $\HH_R\definedas\{w\in\CC:\Re w>0\}$.
 Suppose $f:\DD\to\HH_R$ is analytic and satisfies $f(0)=2$.
 Find a sharp upper bound for $\abs{f'(0)}$, and prove it is sharp by example.
 :::
@@ -33,7 +33,7 @@ C(w)=\frac{w-i}{w+i}:\HH\to\DD.
 \]
 Then $r(2)=i$ and $C(i)=0$, so
 \[
-F\da C\circ r\circ f:\DD\to\DD
+F\definedas C\circ r\circ f:\DD\to\DD
 \]
 satisfies $F(0)=0$.
 Schwarz's lemma gives $|F'(0)|\le1$.

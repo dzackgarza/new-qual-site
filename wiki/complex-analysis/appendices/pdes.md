@@ -12,7 +12,7 @@ On a simply connected domain every real harmonic function is the real part of a 
 :::
 
 ::: {.example title="Dirichlet problem on a half-strip"}
-On the half-strip $\ts{(x, y) \st 0 < x < \pi,\ y > 0}$, consider the problem
+On the half-strip $\theset{(x, y) \st 0 < x < \pi,\ y > 0}$, consider the problem
 $$
 \begin{aligned}
 \laplacian T &= 0, & T(0, y) &= T(\pi, y) = 0 \text{ for all } y > 0, \\

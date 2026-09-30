@@ -28,7 +28,7 @@ Let $K$ be compact, where $z\in K\implies \abs{z} \leq R$ for some constant $R$.
 For the remainder of the problem, we only work in $K$.
 
 ::: {.claim}
-$f_n(z) \da n\log(1 + {z\over n}) \to z$ uniformly.
+$f_n(z) \definedas n\log(1 + {z\over n}) \to z$ uniformly.
 :::
 
 ::: {.claim}

@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-G4GO4
 kind: theorem
 title: The tube lemma
-slogan: 'For compact $Y$, every open set containing the slice $\ts{x_0}\times Y$ contains a tube $W\times Y$ with $W$ a neighborhood of $x_0$.'
+slogan: 'For compact $Y$, every open set containing the slice $\theset{x_0}\times Y$ contains a tube $W\times Y$ with $W$ a neighborhood of $x_0$.'
 classification:
   areas:
   - topology

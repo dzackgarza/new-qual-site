@@ -23,9 +23,9 @@ z_{1}^{2}+z_{2}^{2}+z_{3}^{2}=z_{1} z_{2}+z_{2} z_{3}+z_{3} z_{1}
 $\implies$:
 Write the vertices as $z_1, z_2, z_3$ and the sides as
 
-- $s_1 \da z_2-z_1$
-- $s_2 \da z_3 - z_2$
-- $s_1 \da z_1 -z_3$
+- $s_1 \definedas z_2-z_1$
+- $s_2 \definedas z_3 - z_2$
+- $s_1 \definedas z_1 -z_3$
 
 Note that $s_i = \pm \zeta_3 s_{i-1}$, dividing yields
 \[

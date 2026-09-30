@@ -16,7 +16,7 @@ review: draft
 ::: {.problem}
 Find the conformal map that takes the upper half-plane conformally onto the half-strip 
 \[
-\ts{w=x+iy \st -\pi/2 < x < \pi/2,\, y>0}
+\theset{w=x+iy \st -\pi/2 < x < \pi/2,\, y>0}
 .\]
 :::
 

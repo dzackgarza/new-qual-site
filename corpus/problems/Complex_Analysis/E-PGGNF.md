@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Find a conformal map from $\ts{z\in \CC \st \abs{z} < 1, \Im(z) > 0} = \DD \intersect \HH$ to $\DD$.
+Find a conformal map from $\theset{z\in \CC \st \abs{z} < 1, \Im(z) > 0} = \DD \intersect \HH$ to $\DD$.
 :::
 
 ::: {.solution}

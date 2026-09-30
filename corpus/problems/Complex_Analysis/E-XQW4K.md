@@ -18,7 +18,7 @@ review: draft
 ::: {.exercise}
 Consider
 \[
-f(z) \da {1\over \sin(z)} - {1\over z} + {2z\over z^2-\pi^2}
+f(z) \definedas {1\over \sin(z)} - {1\over z} + {2z\over z^2-\pi^2}
 .\]
 Show that on $\abs{z} < 2\pi$, all singularities are removable, and find a Laurent expansion about $z=0$.
 
@@ -46,7 +46,7 @@ That $z=\pi$ is removable:
 &= \lim_{z\to \pi} {1\over \sin(z)} - {1\over z} + {1\over z-\pi} + {1\over z+\pi}\\
 &= c_1 + \lim_{z\to \pi} {1\over \sin(z)} + {1\over z-\pi} \\
 &= c_1 + \lim_{z\to \pi} { (z-\pi) -\sin(z) \over (z-\pi) \sin(z) }\\
-&= c_1 + \lim_{w\to 0} { w -\sin(w + \pi) \over w \sin(w+\pi) } \qquad w\da z-\pi \\
+&= c_1 + \lim_{w\to 0} { w -\sin(w + \pi) \over w \sin(w+\pi) } \qquad w\definedas z-\pi \\
 &= c_1 - \lim_{w\to 0} { w + \sin(w) \over w \sin(w) } \\
 &\equalsbecause{\text{LH}} c_1 + 0 < \infty
 ,\]
@@ -59,7 +59,7 @@ That $z=-\pi$ is removable:
 &= \lim_{z\to -\pi} {1\over \sin(z)} - {1\over z} + {1\over z-\pi} + {1\over z+\pi}\\
 &= c_2 + \lim_{z\to -\pi} {1\over \sin(z)} + {1\over z+\pi}\\
 &= c_2 + \lim_{z\to -\pi} {(z+\pi) - \sin(z) \over (z+\pi) \sin(z) } \\
-&= c_2 - \lim_{z\to -\pi} {w + \sin(w) \over w \sin(w) } \qquad w \da z+\pi \\
+&= c_2 - \lim_{z\to -\pi} {w + \sin(w) \over w \sin(w) } \qquad w \definedas z+\pi \\
 &= c_2 + 0 < \infty
 ,\]
 again by the same argument.

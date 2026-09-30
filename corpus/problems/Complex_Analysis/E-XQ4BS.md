@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that $h(z) = z + 3 + 2e^z$ has one root in $\ts{ \Re(z) \leq 0}$.
+Show that $h(z) = z + 3 + 2e^z$ has one root in $\theset{ \Re(z) \leq 0}$.
 :::
 
 ::: {.solution}
@@ -22,5 +22,5 @@ Use the following contour:
 
 ![](../../assets/figures/2021-07-29_20-39-31.png)
 
-Take $g(z) \da 2e^z < f(z) \da f(z) \da z+3$.
+Take $g(z) \definedas 2e^z < f(z) \definedas f(z) \definedas z+3$.
 :::

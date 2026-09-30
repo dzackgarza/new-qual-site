@@ -25,7 +25,7 @@ Give either a proof or a counterexample.
 :::
 
 ::: {.solution}
-No. Let $g_n(e^{i\theta})\da ne^{in\theta}$.
+No. Let $g_n(e^{i\theta})\definedas ne^{in\theta}$.
 
 ::: pf
 
@@ -47,7 +47,7 @@ $g_n$ does not converge weakly to $0$.
 
 ::: pf-proof
 
-The functional $\Lambda_n(f)\da\int_{S^1}g_nf\,d\theta$ on the Banach space $C(S^1)$ has norm $\norm{g_n}_{L^1}=2\pi n$. If $\Lambda_n(f)\to0$ for every $f$, the uniform boundedness principle would give $\sup_n\norm{\Lambda_n}<\infty$, which is false.
+The functional $\Lambda_n(f)\definedas\int_{S^1}g_nf\,d\theta$ on the Banach space $C(S^1)$ has norm $\norm{g_n}_{L^1}=2\pi n$. If $\Lambda_n(f)\to0$ for every $f$, the uniform boundedness principle would give $\sup_n\norm{\Lambda_n}<\infty$, which is false.
 
 :::
 

@@ -27,7 +27,7 @@ On $\abs{z} \leq 1$:
 
 For $\abs{z} = 1$,
 \[
-\abs{m(z)} \da \abs{z^7-5z^3}\leq \abs{z}^7 + 5\abs{z}^3 = 6 < 12 \da \abs{M(z)}
+\abs{m(z)} \definedas \abs{z^7-5z^3}\leq \abs{z}^7 + 5\abs{z}^3 = 6 < 12 \definedas \abs{M(z)}
 ,\]
 so $0 = Z_M = Z_{f}$.
 
@@ -38,7 +38,7 @@ On $\abs{z} \leq 2$,
 
 On $\abs{z} = 2$,
 \[
-\abs{m(z)} \da \abs{-5z^3 + 12} \leq 5\abs{z}^2 + 12 = 32 < 128 = 2^7 \da \abs{M(z)}
+\abs{m(z)} \definedas \abs{-5z^3 + 12} \leq 5\abs{z}^2 + 12 = 32 < 128 = 2^7 \definedas \abs{M(z)}
 ,\]
 so $7 = Z_M = Z_{f}$.
 

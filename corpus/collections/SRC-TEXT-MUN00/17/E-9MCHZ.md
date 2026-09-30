@@ -21,7 +21,7 @@ audit:
 
 Consider the five topologies on $\mathbb{R}$ given in Exercise 7 of §13.
 
-(a) Determine the closure of the set $K = \ts{1/n \mid n \in \mathbb{Z}_+}$ under each of these topologies.
+(a) Determine the closure of the set $K = \theset{1/n \mid n \in \mathbb{Z}_+}$ under each of these topologies.
 
 (b) Which of these topologies satisfy the Hausdorff axiom?
 the $T_1$ axiom?

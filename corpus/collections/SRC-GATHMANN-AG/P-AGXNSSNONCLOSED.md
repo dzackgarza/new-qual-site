@@ -19,18 +19,18 @@ Let $J \normal k[x_1, \cdots, x_n]$ be an ideal, and find a counterexample to $I
 :::
 
 ::: {.solution}
-Take $J = \gens{x^2+1} \normal \RR[x]$, noting that $J$ is nontrivial and proper but $\RR$ is not algebraically closed.
+Take $J = \generators{x^2+1} \normal \RR[x]$, noting that $J$ is nontrivial and proper but $\RR$ is not algebraically closed.
 Then $V(J) \subseteq \RR$ is empty, so $I(V(J)) = I(\emptyset)$.
 
 **Claim**: $I(V(J)) = \RR[x]$.
 
 For any set $X \subset \AA^n/k$,
 \[
-I(X) = \ts{f\in \RR[x] \st \forall x\in X,\, f(x)=0}
+I(X) = \theset{f\in \RR[x] \st \forall x\in X,\, f(x)=0}
 ,\]
 and so vacuously
 \[
-I(\emptyset) = \ts{f\in \RR[x] \st \forall x\in \emptyset,\, f(x)=0} = \ts{f\in \RR[x]} = \RR[x]
+I(\emptyset) = \theset{f\in \RR[x] \st \forall x\in \emptyset,\, f(x)=0} = \theset{f\in \RR[x]} = \RR[x]
 .\]
 
 **Claim**: $\sqrt{J} \neq \RR[x]$.

@@ -25,7 +25,7 @@ Find all entire functions $f$ that satisfy
 
 ::: {.solution}
 Claim: there are no such functions.
-Consider $g(z) \da f(z)/e^z$, which is entire since $e^z$ is nonvanishing.
+Consider $g(z) \definedas f(z)/e^z$, which is entire since $e^z$ is nonvanishing.
 Now $g$ is entire and $\abs{g} \geq 1$ everywhere, so $\im(g) \intersect \DD$ is empty.
 This contradicts Casorati-Weierstrass, which requires that $\im g$ be dense in $\CC$.
 

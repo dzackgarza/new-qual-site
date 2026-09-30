@@ -21,10 +21,10 @@ Show that there exists a meromorphic $g$ with *no* poles in $\DD$ such that $\ab
 :::
 
 ::: {.solution}
-Write $\ts{a_1,\cdots, a_n}$ for all of the poles of $f$, indexed with multiplicity, and define
+Write $\theset{a_1,\cdots, a_n}$ for all of the poles of $f$, indexed with multiplicity, and define
 \[
-g(z) \da \prod_{1\leq k\leq n} \psi_{a_k}(z) f(z) 
-\da \qty{ \prod_{1\leq k \leq n}{z-a_k\over 1 -\bar{a_k} z}} f(z)
+g(z) \definedas \prod_{1\leq k\leq n} \psi_{a_k}(z) f(z) 
+\definedas \qty{ \prod_{1\leq k \leq n}{z-a_k\over 1 -\bar{a_k} z}} f(z)
 .\]
 Then $g$ has no poles, and since $\abs{ \psi_{a_k} } = 1$ on $\bd \DD$, this works.
 :::

@@ -35,7 +35,7 @@ Show that if $f$ has a singularity at $z=0$, then it must be removable.
 :::
 
 ::: {.solution}
-Define $F(z) \da z^k f^{(k)}(z)$ and note that $\abs{F(z)} \leq M$ on $\DD\smz$.
+Define $F(z) \definedas z^k f^{(k)}(z)$ and note that $\abs{F(z)} \leq M$ on $\DD\smz$.
 
 If $f$ has an essential singularity at $z=0$, then so does $F$ by considering power series expansions:
 \[

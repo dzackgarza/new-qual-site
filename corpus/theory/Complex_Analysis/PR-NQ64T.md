@@ -23,7 +23,7 @@ with the conventions $1/0=\infty$ and $1/\infty=0$.
 Then the power series $f(z)=\sum_{k\ge0}c_kz^k$ converges absolutely for $\abs{z}<R$, uniformly on every closed disc $\abs{z}\le r$ with $r<R$, and diverges for $\abs{z}>R$.
 So $R$ is the radius of convergence of the series.
 
-Moreover $f$ is [[D-E7A5W|holomorphic]] on $D_R\coloneqq\ts{z\st\abs{z}<R}$, and it can be differentiated term by term:
+Moreover $f$ is [[D-E7A5W|holomorphic]] on $D_R\coloneqq\theset{z\st\abs{z}<R}$, and it can be differentiated term by term:
 $$
 f'(z)=\sum_{k\ge1}kc_kz^{k-1},\qquad \abs{z}<R,
 $$

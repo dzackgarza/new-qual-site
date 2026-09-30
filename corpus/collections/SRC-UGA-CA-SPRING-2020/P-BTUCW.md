@@ -28,16 +28,16 @@ Pick $w_0\in W$ with $f(z_0) = w_0$ for some $z_0\in U$; we want to show that $w
 
 Write 
 \[
-g_0(z) \da f(z) - w_0
+g_0(z) \definedas f(z) - w_0
 ,\]
 so $g_0$ is holomorphic and has a zero at $z_0$.
-Since zeros of holomorphic functions are isolated, there is some $U' \da \DD_r(z_0)$ where $g_0$ is nonvanishing.
-The claim is that if we choose $\eps$ small enough, we can arrange so that $W_\eps \da \DD_\eps(w_0) \subseteq f(U)$.
+Since zeros of holomorphic functions are isolated, there is some $U' \definedas \DD_r(z_0)$ where $g_0$ is nonvanishing.
+The claim is that if we choose $\eps$ small enough, we can arrange so that $W_\eps \definedas \DD_\eps(w_0) \subseteq f(U)$.
 This will follow if for every $w\in W_\eps$, the equation $f(z) = w$ has a solution in $U$, i.e. 
 Define a function that counts the number of zeros:
 \[
 F(w)
-&\da {1\over 2\pi i}\int_{\bd U' } {f(z) \over f(z) - w_1 }\dz\\
+&\definedas {1\over 2\pi i}\int_{\bd U' } {f(z) \over f(z) - w_1 }\dz\\
 &= {1\over 2\pi i}\int_{\bd U' } {\dd{}{z}\qty{f(z) - w} \over f(z) - w }\dz\\
 &= \size Z(f(z) - w, U' ) 
 ,\]
@@ -54,7 +54,7 @@ Then noting that $F(w_0) = 1$ since $z_0\in U'$ and $w_0\in W_\eps$, we have $F\
 ::: {.proof title="of claim"}
 Choose
 \[
-\eps \da \min_{z\in \bd U'}\abs{f(z) - w_0}
+\eps \definedas \min_{z\in \bd U'}\abs{f(z) - w_0}
 .\]
 Now if $\abs{w-w_0} < \eps$ and $\abs{z-z_0} = r$, we have $\abs{f(z) - w} > \eps > 0$.
 :::

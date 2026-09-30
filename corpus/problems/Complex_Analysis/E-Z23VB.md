@@ -25,7 +25,7 @@ Find a Mobius transformation sending
 :::
 
 ::: {.solution}
-Use cross ratios: set $T(z) \da (z;,1,i,2)$ and $S(w) = (w;,3,0,-1)$ and solve $T(z) = S(w) \implies w = (\inverseof{S} T)(z)$:
+Use cross ratios: set $T(z) \definedas (z;,1,i,2)$ and $S(w) = (w;,3,0,-1)$ and solve $T(z) = S(w) \implies w = (\inverseof{S} T)(z)$:
 \[
 {z-i \over z-2}{1-2\over 1-i}
 &= {w-0\over w+1}{3+1 \over 3-0} \\

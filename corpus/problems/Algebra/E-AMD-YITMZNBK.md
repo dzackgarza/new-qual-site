@@ -22,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-Let $R$ be a PID and let $0\neq x\in R$. Show that $x$ is irreducible if and only if the ideal $\gens{x}$ is maximal.
+Let $R$ be a PID and let $0\neq x\in R$. Show that $x$ is irreducible if and only if the ideal $\generators{x}$ is maximal.
 :::
 
 

@@ -18,8 +18,8 @@ review: draft
 ::: {.exercise}
 Compute
 \[
-I_1 \da \operatorname{PV}\int_\RR {\sin(x) \over x}\dx = \pi \\
-I_2 \da \operatorname{PV}\int_\RR {\cos(x) \over x}\dx = 0 
+I_1 \definedas \operatorname{PV}\int_\RR {\sin(x) \over x}\dx = \pi \\
+I_2 \definedas \operatorname{PV}\int_\RR {\cos(x) \over x}\dx = 0 
 .\]
 
 :::
@@ -32,7 +32,7 @@ The singularity at $z_0 = 0$ contributes a fractional residue:
 .\]
 Thus
 \[
-I \da \PV \int_\RR f(z)\dz = 0 + i\pi \implies I_1 = \Im(I) = \pi, \quad I_2 = \Re(I) = 0
+I \definedas \PV \int_\RR f(z)\dz = 0 + i\pi \implies I_1 = \Im(I) = \pi, \quad I_2 = \Re(I) = 0
 .\]
 :::
 

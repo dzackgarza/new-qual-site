@@ -22,8 +22,8 @@ audit:
 ::: {.problem}
 Let $f, g$ be non-negative measurable functions on $[0, \infty)$ with
 \[
-A &\da \int_0^{\infty } f(y) y^{-1/2} \dy < \infty \\
-B &\da \qty{ \int_0^{\infty } \abs{ g(y) } }^2 \dy < \infty  
+A &\definedas \int_0^{\infty } f(y) y^{-1/2} \dy < \infty \\
+B &\definedas \qty{ \int_0^{\infty } \abs{ g(y) } }^2 \dy < \infty  
 .\]
 
 Show that

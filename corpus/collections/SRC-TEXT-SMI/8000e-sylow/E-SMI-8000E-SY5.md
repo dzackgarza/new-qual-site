@@ -31,7 +31,7 @@ If $p$, $q$ are distinct primes, prove:
 
 (ii) every group of order $p^2 q$ is solvable.
 
-[A group $G$ is called "solvable" if there exists a sequence of subgroups $G = H_1, \ldots, H_n = \ts{e}$ such that each $H_{i+1}$ is a normal subgroup of $H_i$, and each quotient $H_i / H_{i+1}$ is abelian.]
+[A group $G$ is called "solvable" if there exists a sequence of subgroups $G = H_1, \ldots, H_n = \theset{e}$ such that each $H_{i+1}$ is a normal subgroup of $H_i$, and each quotient $H_i / H_{i+1}$ is abelian.]
 :::
 
 ::: {.solution}

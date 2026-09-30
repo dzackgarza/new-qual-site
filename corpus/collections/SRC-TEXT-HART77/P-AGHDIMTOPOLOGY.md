@@ -19,7 +19,7 @@ review: draft
 ::: {.problem}
 (a) If $Y$ is any subset of a topological space $X$, then $\dim Y \leq \dim X$.
 
-(b) If $X$ is covered by open subsets $\ts{U_i}$, then $\dim X = \sup_i \dim U_i$.
+(b) If $X$ is covered by open subsets $\theset{U_i}$, then $\dim X = \sup_i \dim U_i$.
 
 (c) Give an example of a topological space $X$ with a dense open subset $U$ such that $\dim U < \dim X$.
 
@@ -43,6 +43,6 @@ Then $(C_j \intersect U_{i_0})_j$ is a strict chain of length $n$ in $U_{i_0}$.
 If $Y \subsetneq X$ then $C_0 \subsetneq \cdots \subsetneq C_n = Y \subsetneq X$ is a strict chain of length $n+1$ in $X$, since $X$ is irreducible and therefore itself an irreducible closed subset.
 That contradicts $\dim X = n$.
 
-**(e)** Take $X = \ZZ_{\geq 0}$ with closed sets $\emptyset$, $X$, and $\ts{1,\ldots,i}$ for each $i$.
-The chain $\ts{1} \subsetneq \ts{1,2} \subsetneq \cdots$ is infinite, so $\dim X = \infty$, and every descending chain of closed sets is finite, so $X$ is Noetherian.
+**(e)** Take $X = \ZZ_{\geq 0}$ with closed sets $\emptyset$, $X$, and $\theset{1,\ldots,i}$ for each $i$.
+The chain $\theset{1} \subsetneq \theset{1,2} \subsetneq \cdots$ is infinite, so $\dim X = \infty$, and every descending chain of closed sets is finite, so $X$ is Noetherian.
 :::

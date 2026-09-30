@@ -51,7 +51,7 @@ The inclusion $\bigoplus_{j\in J} X_j \injects \prod_{j\in J} X_j$ is an isomorp
 The free group on $n$ generators is the free product of $n$ copies of $\ZZ$, and it is nonabelian for $n\geq 2$.
 It is written multiplicatively: elements of
 $$
-\ZZ^{\ast n} = \gens{a_1, \ldots, a_n}
+\ZZ^{\ast n} = \generators{a_1, \ldots, a_n}
 $$
 are reduced finite words in the symbols $a_i^k$ for $k\in \ZZ$, such as
 $$

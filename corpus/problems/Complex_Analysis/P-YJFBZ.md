@@ -27,9 +27,9 @@ Show that for sufficiently large $n$, the polynomial $P_n$ has no zeros in $\abs
 ::: {.solution}
 More is true: this will hold for any disc of arbitrary radius $R$, with $n$ depending on $R$.
 Fix $R$, then use that $P_n(z) \convergesto{n\to\infty} e^z$ uniformly on the compact disc $\abs{z} \leq R$.
-Consequently, setting $g_n(z) \da {P_n(z)\over e^z}$, we have $g_n(z) \to 1$ uniformly on this disc, for any $\eps> 0$ this can be used to produce an $n\gg 1$ such that $\abs{ g_n(z) - 1 } < \eps$ for all $\abs{z} \leq R$.
+Consequently, setting $g_n(z) \definedas {P_n(z)\over e^z}$, we have $g_n(z) \to 1$ uniformly on this disc, for any $\eps> 0$ this can be used to produce an $n\gg 1$ such that $\abs{ g_n(z) - 1 } < \eps$ for all $\abs{z} \leq R$.
 
-So take $\eps \da 1$ and define $h(z) \da 1$, then for $\abs{z} = R$
+So take $\eps \definedas 1$ and define $h(z) \definedas 1$, then for $\abs{z} = R$
 \[
 \abs{g_n(z) - 1} < 1 = \abs{h(z)}
 ,\]
@@ -46,7 +46,7 @@ We similarly have $P_n(z)-1\to e^z-1$ uniformly, so on a disc of radius $R$ choo
 \abs{{P_n(z) -1 \over e^z - 1} - 1} &< 1 \\
 \implies \abs{ (P_n(z) - 1) - (e^z-1) \over e^z-1} &< 1 \\
 \implies \abs{ (P_n(z) - 1) - (e^z-1)} &< \abs{e^z-1} \\
-\da \abs{m(z)} &< \abs{M(z)}
+\definedas \abs{m(z)} &< \abs{M(z)}
 ,\]
 so 
 \[

@@ -32,7 +32,7 @@ Rewrite the numerator as an integral.
 
 ::: pf-proof
 
-let $N(x) \da x\phi'(x) - \phi(x) + \phi(0)$. Differentiating,
+let $N(x) \definedas x\phi'(x) - \phi(x) + \phi(0)$. Differentiating,
 \[
 \frac{d}{dx}\big(x\phi'(x) - \phi(x) + \phi(0)\big) = \phi'(x) + x\phi''(x) - \phi'(x) = x\phi''(x),
 \]

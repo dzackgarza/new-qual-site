@@ -43,8 +43,8 @@ z_k
 .\]
 Thus
 \[
-r_1 &\da \inverseof{b}\qty{-a + \sqrt{a^2-b^2}} \\
-r_2 &\da \inverseof{b}\qty{-a - \sqrt{a^2-b^2}}
+r_1 &\definedas \inverseof{b}\qty{-a + \sqrt{a^2-b^2}} \\
+r_2 &\definedas \inverseof{b}\qty{-a - \sqrt{a^2-b^2}}
 .\]
 
 Assume $a>\abs b>0$, so that the integrand is continuous and the roots are real and distinct (for $b=0$ the integral is $2\pi/a$ directly).

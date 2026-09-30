@@ -35,7 +35,7 @@ Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that
 
 - the Fourier coefficients $\hat f_n(k)$ are supported in the integer frequencies in $[2^n,2^{n+1}]$, where
 \[
-\hat f_n(k)\da\int_0^1 f_n(x)e^{-2\pi ikx}\,dx=0
+\hat f_n(k)\definedas\int_0^1 f_n(x)e^{-2\pi ikx}\,dx=0
 \qquad\text{for }k\in\ZZ\setminus[2^n,2^{n+1}].
 \]
 

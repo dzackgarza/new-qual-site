@@ -22,7 +22,7 @@ Give an example of a function $f:\RR\to \RR$ that is everywhere differentiable b
 ::: {.solution}
 The standard example:
 \[
-f(x) \da 
+f(x) \definedas 
 \begin{cases}
 x^2\sin\qty{1\over x} & x\neq 0 
 \\

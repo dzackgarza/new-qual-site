@@ -22,9 +22,9 @@ $$
 - **Field $\implies$ Euclidean domain.** With the norm $d(x)=0$ for $x\neq0$, write $x = qy+r$ with $q = \inverseof{y} x$ and $r=0$.
 
 - **Euclidean domain $\implies$ PID.** Let $I\neq 0$ be an ideal and $a\in I$ a nonzero element with $d(a)$ minimal.
-  If $b\in I$, write $b = aq+r$ with $r=0$ or $d(r) < d(a)$; then $r = b-aq \in I$, so minimality forces $r=0$, and $I = \gens a$.
+  If $b\in I$, write $b = aq+r$ with $r=0$ or $d(r) < d(a)$; then $r = b-aq \in I$, so minimality forces $r=0$, and $I = \generators a$.
 
-- **PID $\implies$ UFD.** A PID is Noetherian, so a nonzero nonunit that is not a product of irreducibles would give a strictly ascending chain $\gens a \subsetneq \gens{a_1}\subsetneq\cdots$ of principal ideals; hence factorizations exist.
+- **PID $\implies$ UFD.** A PID is Noetherian, so a nonzero nonunit that is not a product of irreducibles would give a strictly ascending chain $\generators a \subsetneq \generators{a_1}\subsetneq\cdots$ of principal ideals; hence factorizations exist.
   In a PID every irreducible element $p$ generates a maximal ideal, so $p$ is prime, and two factorizations into primes agree up to order and units by cancelling one prime at a time.
 :::
 
@@ -39,7 +39,7 @@ $$
 
 - **UFD, not a PID.** $\ZZ[x]$.
   Since $\ZZ$ is a UFD, so is $\ZZ[x]$.
-  The ideal $\gens{2,x} = \ts{\sum r_ix^i \st r_0 \in 2\ZZ}$ is proper and not principal: a constant generator $\pm2$ generates only polynomials with even coefficients and misses $x$, and a generator of degree at least one misses $2$.
+  The ideal $\generators{2,x} = \theset{\sum r_ix^i \st r_0 \in 2\ZZ}$ is proper and not principal: a constant generator $\pm2$ generates only polynomials with even coefficients and misses $x$, and a generator of degree at least one misses $2$.
 
 - **Integral domain, not a UFD.** $\ZZ[\sqrt{-5}]$, where $(2+\sqrt{-5})(2-\sqrt{-5}) = 9 = 3\cdot 3$ and all four factors are irreducible and pairwise nonassociate, by the multiplicativity of the norm $N(a+b\sqrt{-5})=a^2+5b^2$.
 
@@ -57,10 +57,10 @@ For an ideal $I$ of a commutative ring $R$,
 $$
 I \text{ maximal} \iff R/I \text{ is a field}, \qquad I \text{ prime} \iff R/I \text{ is an integral domain}.
 $$
-Every field is an integral domain, so every maximal ideal is prime, and $\mspec R \subseteq \spec R$.
+Every field is an integral domain, so every maximal ideal is prime, and $\mspec R \subseteq \Spec R$.
 :::
 
-For a field $k$ and a nonconstant $f\in k[x]$, the following are equivalent: $\gens f$ is maximal in $k[x]$; $k[x]/\gens f$ is a field; $f$ is irreducible.
+For a field $k$ and a nonconstant $f\in k[x]$, the following are equivalent: $\generators f$ is maximal in $k[x]$; $k[x]/\generators f$ is a field; $f$ is irreducible.
 
 ## Transporting properties
 

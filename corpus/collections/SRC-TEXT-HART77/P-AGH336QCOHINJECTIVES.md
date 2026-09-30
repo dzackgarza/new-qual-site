@@ -35,7 +35,7 @@ Thus $\QCoh(X)$ has enough injectives.
 
 ::: {.hint}
 For (b), the method of proof of (2.4) will not work, because $\mco_U$ is not quasi-coherent on $X$ in general.
-Instead, use (II, Ex. 5.15) to show that if $\mci \in \QCoh(X)$ is injective, and if $U \subseteq X$ is an open subset, then $\ro{\mci}{U}$ is an injective object of $\QCoh(U)$.
+Instead, use (II, Ex. 5.15) to show that if $\mci \in \QCoh(X)$ is injective, and if $U \subseteq X$ is an open subset, then $\restrictionof{\mci}{U}$ is an injective object of $\QCoh(U)$.
 Then cover $X$ with open affines.
 :::
 

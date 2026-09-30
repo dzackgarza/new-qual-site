@@ -33,11 +33,11 @@ Determine for each space which of the three alternatives holds.
 
 The following subsets of $\mathbb{R}^2$:
 
-(f) $\ts{x \mid \norm{x} > 1}$
+(f) $\theset{x \mid \norm{x} > 1}$
 
-(g) $\ts{x \mid \norm{x} \geq 1}$
+(g) $\theset{x \mid \norm{x} \geq 1}$
 
-(h) $\ts{x \mid \norm{x} < 1}$
+(h) $\theset{x \mid \norm{x} < 1}$
 
 (i) $S^1 \cup (\mathbb{R}_+ \times 0)$
 

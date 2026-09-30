@@ -38,7 +38,7 @@ By the correspondence theorem, $J\mapsto J/I$ is an inclusion-preserving bijecti
 A proper ideal contains no unit.
 An ideal $\mfp$ is [[D-5BM46|prime]] if and only if $R/\mfp$ is an integral domain, and $\mfm$ is [[D-7XH2R|maximal]] if and only if $R/\mfm$ is a field.
 Hence every maximal ideal is prime, and $(0)\subset\ZZ$ is prime and not maximal.
-The [[D-CXXCG|prime spectrum]] $\spec R$ is the set of prime ideals of $R$, and the [[D-NX4KW|max spectrum]] $\mspec R\subseteq\spec R$ is the set of maximal ideals.
+The [[D-CXXCG|prime spectrum]] $\Spec R$ is the set of prime ideals of $R$, and the [[D-NX4KW|max spectrum]] $\mspec R\subseteq\Spec R$ is the set of maximal ideals.
 
 [[PR-RHQZT]]
 
@@ -72,8 +72,8 @@ $\impliedby$: For $x\in \nonzeroof{R}$, the ideal $Rx$ is nonzero, so $Rx = R$, 
 
 ## Radicals
 
-The [[D-JLCOX|radical]] of an ideal $I$ is $\sqrt I = \ts{x\in R \st x^n\in I \text{ for some } n\geq 1}$.
-The [[D-C2IM4|nilradical]] $\sqrt{(0)}$ is the set of nilpotent elements, it equals $\Intersect_{\mfp\in\spec R}\mfp$, and $R/\sqrt{(0)}$ is reduced.
+The [[D-JLCOX|radical]] of an ideal $I$ is $\sqrt I = \theset{x\in R \st x^n\in I \text{ for some } n\geq 1}$.
+The [[D-C2IM4|nilradical]] $\sqrt{(0)}$ is the set of nilpotent elements, it equals $\Intersect_{\mfp\in\Spec R}\mfp$, and $R/\sqrt{(0)}$ is reduced.
 The [[D-2IO6Q|Jacobson radical]] $J(R)$ is the intersection of the maximal ideals, and $x\in J(R)$ if and only if $1-rx$ is a unit for every $r\in R$.
 
 [[D-JLCOX]]

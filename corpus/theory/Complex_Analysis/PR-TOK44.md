@@ -22,9 +22,9 @@ $$
 with the conventions $1/0=\infty$ and $1/\infty=0$.
 Then the power series $\sum_{n\ge0}a_n(z-z_0)^n$
 
-(a) converges absolutely on $\ts{z\st\abs{z-z_0}<R}$,
+(a) converges absolutely on $\theset{z\st\abs{z-z_0}<R}$,
 
-(b) converges uniformly on $\ts{z\st\abs{z-z_0}\le r}$ for every $r<R$, and
+(b) converges uniformly on $\theset{z\st\abs{z-z_0}\le r}$ for every $r<R$, and
 
-(c) diverges on $\ts{z\st\abs{z-z_0}>R}$.
+(c) diverges on $\theset{z\st\abs{z-z_0}>R}$.
 :::

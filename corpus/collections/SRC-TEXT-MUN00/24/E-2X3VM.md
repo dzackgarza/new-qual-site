@@ -24,7 +24,7 @@ audit:
 
 (c) If $f: X \to Y$ is continuous and $X$ is path connected, is $f(X)$ necessarily path connected?
 
-(d) If $\ts{A_\alpha}$ is a collection of path-connected subspaces of $X$ and if $\bigcap A_\alpha \neq \varnothing$, is $\bigcup A_\alpha$ necessarily path connected?
+(d) If $\theset{A_\alpha}$ is a collection of path-connected subspaces of $X$ and if $\bigcap A_\alpha \neq \varnothing$, is $\bigcup A_\alpha$ necessarily path connected?
 :::
 
 ::: {.solution}

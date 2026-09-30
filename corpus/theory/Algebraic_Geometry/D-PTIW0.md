@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Čech complex"}
-For an indexed open cover $\mcu = \ts{U_i}$ of a topological space $X$, with an order on its index set, and a sheaf of abelian groups $\mcf$, put
+For an indexed open cover $\mcu = \theset{U_i}$ of a topological space $X$, with an order on its index set, and a sheaf of abelian groups $\mcf$, put
 $$
 C^p(\mcu, \mcf) = \prod_{i_0 < \cdots < i_p} \mcf(U_{i_0} \intersect \cdots \intersect U_{i_p}) ,
 $$

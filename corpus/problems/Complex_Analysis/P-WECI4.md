@@ -17,7 +17,7 @@ review: draft
 ::: {.exercise}
 Find the number of zeros in $\abs{z} < R$ of 
 \[
-p(z) \da z^d + a_1z^{d-1} + \cdots + a_d
+p(z) \definedas z^d + a_1z^{d-1} + \cdots + a_d
 ,\]
 supposing that
 $\abs{a_k}< {R^k \over d}$ for every $k$ (noting the strict inequality).

@@ -19,10 +19,10 @@ Show that $z\sin(z) = a$ has only real solutions.
 :::
 
 ::: {.solution}
-Consider $f(z) \da z\sin(z) - a$.
+Consider $f(z) \definedas z\sin(z) - a$.
 
-Big: $M(z) \da z\sin(z)$.
-Small: $m(z) \da -a$.
+Big: $M(z) \definedas z\sin(z)$.
+Small: $m(z) \definedas -a$.
 
 Use the following estimate:
 

@@ -9,7 +9,7 @@ topics:
 
 # The class equation
 
-For a finite group $G$, each element $g$ either lies in the [[D-NK7G7|center]] $Z(G)$, and then its [[D-HLDEY|conjugacy class]] is $\ts g$, or its conjugacy class has size $[G:C_G(g)] > 1$.
+For a finite group $G$, each element $g$ either lies in the [[D-NK7G7|center]] $Z(G)$, and then its [[D-HLDEY|conjugacy class]] is $\theset g$, or its conjugacy class has size $[G:C_G(g)] > 1$.
 
 [[C-O7CP3]]
 
@@ -58,15 +58,15 @@ Consequences for a group $G$ of order $p^k$:
 [[FF-OL75S]]
 
 ::: {.proof title="of Burnside's lemma"}
-Let $A \da \ts{ (g,x) \in G\cross X \st g\actson x = x }$, and write $\Stab(x) = \ts{g\in G \st gx=x}$ and $\Fix(g) = \ts{x\in X\st gx = x}$.
+Let $A \definedas \theset{ (g,x) \in G\cross X \st g\actson x = x }$, and write $\Stab(x) = \theset{g\in G \st gx=x}$ and $\Fix(g) = \theset{x\in X\st gx = x}$.
 
 Partitioning $A$ according to the first coordinate,
 $$
-A = \Disjoint_{g_0\in G} \ts{ (g_0, x) \st g_0 x = x } \cong \Disjoint_{g_0\in G} \ts{g_0}\cross \Fix(g_0).
+A = \Disjoint_{g_0\in G} \theset{ (g_0, x) \st g_0 x = x } \cong \Disjoint_{g_0\in G} \theset{g_0}\cross \Fix(g_0).
 $$
 Partitioning $A$ according to the second coordinate,
 $$
-A = \Disjoint_{x_0\in X} \ts{ (g, x_0) \st gx_0= x_0 } \cong \Disjoint_{x_0\in X} \Stab(x_0) \cross \ts{ x_0 }.
+A = \Disjoint_{x_0\in X} \theset{ (g, x_0) \st gx_0= x_0 } \cong \Disjoint_{x_0\in X} \Stab(x_0) \cross \theset{ x_0 }.
 $$
 Taking cardinalities,
 $$

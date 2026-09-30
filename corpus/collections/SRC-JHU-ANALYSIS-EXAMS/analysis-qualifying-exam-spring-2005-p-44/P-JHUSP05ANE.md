@@ -25,7 +25,7 @@ Notation: $\mathcal{C}_c^{\infty}(\mathbb{R})$ denotes the compactly supported f
 :::
 
 ::: {.solution}
-No such function exists. Let $f\in\mathcal C_c^\infty(\RR)$ with $\operatorname{supp}f\subseteq[-M,M]$, and put $F(z)\da\int_{-M}^Mf(x)e^{-ixz}\,dx$ for $z\in\CC$, so that $F=\widehat f$ on $\RR$.
+No such function exists. Let $f\in\mathcal C_c^\infty(\RR)$ with $\operatorname{supp}f\subseteq[-M,M]$, and put $F(z)\definedas\int_{-M}^Mf(x)e^{-ixz}\,dx$ for $z\in\CC$, so that $F=\widehat f$ on $\RR$.
 
 ::: pf
 

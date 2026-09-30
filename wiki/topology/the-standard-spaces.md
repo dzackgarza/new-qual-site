@@ -24,9 +24,9 @@ Fundamental groups and integral homology of spheres, tori, projective spaces, cl
 | $T^n$ | $\ZZ^n$ | $\ZZ^{\binom nk}$ in degree $k$ | universal cover $\RR^n$; product of circles |
 | $\RP^n$, $n\geq 2$ | $\ZZ/2$ | $\ZZ, \ZZ/2, 0, \ZZ/2, \dots$ | universal cover $S^n$; $H_n = \ZZ$ iff $n$ odd |
 | $\CP^n$ | $1$ | $\ZZ$ in every even degree $\leq 2n$ | no odd cells, so all boundary maps vanish |
-| Klein bottle $K$ | $\gens{a,b \st aba\inverseof{b}}$ | $\ZZ, \ZZ\oplus\ZZ/2, 0$ | non-orientable, so $H_2 = 0$ |
-| $\Sigma_g$, genus $g$ | $\gens{a_i,b_i \st \prod[a_i,b_i]}$ | $\ZZ, \ZZ^{2g}, \ZZ$ | closed orientable |
-| $N_k$, $k$ crosscaps | $\gens{a_i \st \prod a_i^2}$ | $\ZZ, \ZZ^{k-1}\oplus\ZZ/2, 0$ | closed non-orientable |
+| Klein bottle $K$ | $\generators{a,b \st aba\inverseof{b}}$ | $\ZZ, \ZZ\oplus\ZZ/2, 0$ | non-orientable, so $H_2 = 0$ |
+| $\Sigma_g$, genus $g$ | $\generators{a_i,b_i \st \prod[a_i,b_i]}$ | $\ZZ, \ZZ^{2g}, \ZZ$ | closed orientable |
+| $N_k$, $k$ crosscaps | $\generators{a_i \st \prod a_i^2}$ | $\ZZ, \ZZ^{k-1}\oplus\ZZ/2, 0$ | closed non-orientable |
 | $\bigvee_n S^1$ | free on $n$ | $\ZZ, \ZZ^n$ | $\pi_1$ free, homology free |
 | $\bigvee_n S^2$ | $1$ | $\ZZ, 0, \ZZ^n$ |  |
 | Möbius band | $\ZZ$ | $\ZZ, \ZZ$ | deformation retracts to its core circle |

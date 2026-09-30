@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Define
 \[
-f(x) \da x^4 + 4x^2 + 64 \in \QQ[x]
+f(x) \definedas x^4 + 4x^2 + 64 \in \QQ[x]
 .\]
 
 a. Find the splitting field $K$ of $f$ over $\QQ$.
@@ -37,12 +37,12 @@ c. Exhibit explicitly the correspondence between subgroups of $G$ and intermedia
 ::: {.solution}
 \envlist
 
-- First consider $g(z) \da z^2 + 4z + 64$.
+- First consider $g(z) \definedas z^2 + 4z + 64$.
   Applying the quadratic formula yields
   \[
   z = {-4 \pm \sqrt{16 - 64} \over 2} = -2 \pm {1\over 2}\sqrt{ -15 \cdot 16 } = -2 \pm 2i \sqrt{15}
   .\]
-- Substituting $z=x^2$ yields the splitting field of $f$ as $L\da \QQ(\pm \sqrt{ -2 \pm 2i\sqrt{15}})$.
+- Substituting $z=x^2$ yields the splitting field of $f$ as $L\definedas \QQ(\pm \sqrt{ -2 \pm 2i\sqrt{15}})$.
 
   - Note that this factorization shows that $f$ is irreducible over $\QQ$, since the two quadratic factors have irrational coefficients and none of the roots are real.
   - Irreducible implies separable over a perfect field, so $L/\QQ$ is a separable extension.
@@ -60,7 +60,7 @@ and so the roots of $f$ are $x = \pm \sqrt{5} \pm i\sqrt{3}$ and $L = \QQ(\sqrt 
 ,\]
 where we've used that $\min_{\sqrt 5, \QQ}(x) = x^2-5$ and $\min_{i\sqrt 3, \QQ}(x) = x^2 + 3$, which remains the minimal polynomial over $\QQ(\sqrt 5) \subseteq \RR$ since both roots are not real.
 
-- So $G\da \Gal(L/\QQ) \leq S_4$ is a transitive subgroup of size 4, making it either $C_4$ or $C_2^2$.
+- So $G\definedas \Gal(L/\QQ) \leq S_4$ is a transitive subgroup of size 4, making it either $C_4$ or $C_2^2$.
 
 - Label the roots:
 \[
@@ -94,7 +94,7 @@ i\sqrt 3 &\mapsto -i\sqrt 3 .
 - Checking that $\sigma_1^2 = \sigma_2^2 = \id$, this produces two distinct order 2 elements, forcing $G \cong C_2^2$ since $C_4$ only has one order 2 element.
   Explicitly, we have
 \[
-C_2^2 \cong G = \gens{\tau_1, \tau_2} = \ts{\id, \tau_1, \tau_2, \tau_1 \tau_2} = \ts{\id, (1,3)(2,4), (1,2)(3,4),  (1,4)(2,3) }
+C_2^2 \cong G = \generators{\tau_1, \tau_2} = \theset{\id, \tau_1, \tau_2, \tau_1 \tau_2} = \theset{\id, (1,3)(2,4), (1,2)(3,4),  (1,4)(2,3) }
 ,\]
   and the generic subgroup lattice looks like:
 
@@ -136,9 +136,9 @@ C_2^2 \cong G = \gens{\tau_1, \tau_2} = \ts{\id, \tau_1, \tau_2, \tau_1 \tau_2} 
 	&& \QQ \\
 	&& 1 \\
 	{} &&&& {} \\
-	{\gens{\sigma_1}} && {\gens{\sigma_1\sigma_2}} && {\gens{\sigma_2}} \\
+	{\generators{\sigma_1}} && {\generators{\sigma_1\sigma_2}} && {\generators{\sigma_2}} \\
 	\\
-	&& {G = \gens{\tau_1, \tau_2}}
+	&& {G = \generators{\tau_1, \tau_2}}
 	\arrow["2"{description}, from=5-3, to=3-1]
 	\arrow["2"{description}, from=5-3, to=3-3]
 	\arrow["2"{description}, from=5-3, to=3-5]

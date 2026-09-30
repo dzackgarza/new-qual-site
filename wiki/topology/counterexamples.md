@@ -22,7 +22,7 @@ By the Heine--Borel theorem, closed and bounded subsets of $\RR^n$ are compact.
 :::
 
 ::: {.example title="A continuous image of a closed set need not be closed"}
-The projection $\RR^2\to\RR$, $(x,y)\mapsto x$, sends the closed hyperbola $\ts{xy=1}$ onto $\RR\sm\ts0$, which is not closed.
+The projection $\RR^2\to\RR$, $(x,y)\mapsto x$, sends the closed hyperbola $\theset{xy=1}$ onto $\RR\sm\theset0$, which is not closed.
 Continuous images of compact sets are compact, and continuous images of connected sets are connected.
 
 :::
@@ -34,7 +34,7 @@ Each copy of $\RR$ is Hausdorff, and the two origins have no disjoint neighborho
 :::
 
 ::: {.example title="A connected space need not be path connected"}
-The topologist's sine curve $\ts{(x,\sin(1/x)) \st 0<x\leq 1}\union \ts{0}\times[-1,1]$ is [[D-YO6NZ|connected]] and not [[D-X73EB|path connected]].
+The topologist's sine curve $\theset{(x,\sin(1/x)) \st 0<x\leq 1}\union \theset{0}\times[-1,1]$ is [[D-YO6NZ|connected]] and not [[D-X73EB|path connected]].
 It is also not [[D-GYBZ2|locally connected]].
 
 :::
@@ -94,8 +94,8 @@ By Whitehead's theorem, a map between simply connected CW complexes inducing iso
 :::
 
 ::: {.example title="Singular homology does not commute with infinite products"}
-Let $X=\prod_{n\geq 1}\ts{0,1}$ be a countable product of two-point discrete spaces, the Cantor set.
-Its path components are its points, so $H_0(X)$ is free abelian of uncountable rank, whereas $\prod_{n\geq1} H_0(\ts{0,1}) \cong \prod_{n\geq 1}\ZZ^2$ is not free by the Baer--Specker theorem.
+Let $X=\prod_{n\geq 1}\theset{0,1}$ be a countable product of two-point discrete spaces, the Cantor set.
+Its path components are its points, so $H_0(X)$ is free abelian of uncountable rank, whereas $\prod_{n\geq1} H_0(\theset{0,1}) \cong \prod_{n\geq 1}\ZZ^2$ is not free by the Baer--Specker theorem.
 
 :::
 

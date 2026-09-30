@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-DGMOEV2O
 kind: problem
-title: $P\cap H\in\syl_p(H)$ for $P\in\syl_p(G)$ and $H\trianglelefteq G$
+title: $P\cap H\in\Syl_p(H)$ for $P\in\Syl_p(G)$ and $H\trianglelefteq G$
 classification:
   areas:
   - algebra

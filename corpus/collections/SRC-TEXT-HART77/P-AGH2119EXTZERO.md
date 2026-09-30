@@ -37,7 +37,7 @@ We call $j_! \mcf$ the sheaf obtained by **extending $\mcf$ by zero outside $U$*
 c. Now let $\mcf$ be a sheaf on $X$.
 Show that there is an exact sequence of sheaves on $X$,
 \[
-0 \to j_!\qty{\ro{\mcf}{U}} \to \mcf \to i_*\qty{\ro{\mcf}{Z}} \to 0.
+0 \to j_!\qty{\restrictionof{\mcf}{U}} \to \mcf \to i_*\qty{\restrictionof{\mcf}{Z}} \to 0.
 \]
 :::
 

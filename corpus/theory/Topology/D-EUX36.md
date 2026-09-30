@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space, $x_0\in X$, and $n\geq 1$, and let $I^n = [0,1]^n$ with boundary $\del I^n$.
-The \dfn{$n$th homotopy group} $\pi_n(X, x_0)$ is the set of [[D-IZI3T|homotopy classes]] of maps $f\colon(I^n, \del I^n)\to(X, x_0)$, where the homotopies $f_t$ are required to satisfy $f_t(\del I^n) = \ts{x_0}$ for all $t$, with the operation $[f]+[g]\coloneqq[f+g]$ given by
+The \dfn{$n$th homotopy group} $\pi_n(X, x_0)$ is the set of [[D-IZI3T|homotopy classes]] of maps $f\colon(I^n, \del I^n)\to(X, x_0)$, where the homotopies $f_t$ are required to satisfy $f_t(\del I^n) = \theset{x_0}$ for all $t$, with the operation $[f]+[g]\coloneqq[f+g]$ given by
 $$
 (f+g)(s_1, s_2, \ldots, s_n)\coloneqq
 \begin{cases}

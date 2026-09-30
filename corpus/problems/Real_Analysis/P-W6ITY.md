@@ -29,7 +29,7 @@ Suppose $0 < a < b \leq \infty$, and find examples of functions $f \in L^p((0, \
 
 *Hint: consider functions of the following form:*
 \[
-f(x) \da x^{- \alpha} \abs{ \log(x) }^{ \beta}
+f(x) \definedas x^{- \alpha} \abs{ \log(x) }^{ \beta}
 .\]
 :::
 ::: {.solution}
@@ -44,7 +44,7 @@ Case (i) ($a < p < b$): define $f$ piecewise.
 
 take, for fixed $\delta > 0$ (chosen below),
 \[
-f(x) \da \begin{cases}
+f(x) \definedas \begin{cases}
 x^{-1/b}\,(-\log x)^{-1} & 0 < x \le 1/2,\\
 1 & 1/2 < x \le 2,\\
 x^{-1/a}\,(\log x)^{-1} & x > 2 .
@@ -71,7 +71,7 @@ near $0$: $\int_0^{1/2} x^{-p/b}(-\log x)^{-p}\,dx$ converges iff $p/b < 1$, i.e
 
 Case (ii) ($a \le p \le b$): use $\delta > 0$ with $(1+\delta)a > 1$ and
     \[
-    f(x) \da \begin{cases}
+    f(x) \definedas \begin{cases}
     x^{-1/b}\,(-\log x)^{-1-\delta} & 0 < x \le 1/2,\\
     1 & 1/2 < x \le 2,\\
     x^{-1/a}\,(\log x)^{-1-\delta} & x > 2 .
@@ -96,7 +96,7 @@ near $0$: $\int_0^{1/2} x^{-p/b}(-\log x)^{-(1+\delta)p}\,dx$ converges iff $p/b
 
 Case (iii) ($p = a$): take $\delta > 0$ with $(1+\delta)a > 1$ and
     \[
-    f(x) \da \begin{cases}
+    f(x) \definedas \begin{cases}
     x^{-1/a}\,(-\log x)^{-1-\delta} & 0 < x \le 1/2,\\
     1 & 1/2 < x \le 2,\\
     x^{-1/a}\,(\log x)^{-1-\delta} & x > 2 .

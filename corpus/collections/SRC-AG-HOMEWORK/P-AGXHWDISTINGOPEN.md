@@ -15,22 +15,22 @@ review: draft
 ---
 
 ::: {.problem}
-Let $A\in \Ring$ and $X\da \Spec(A)$, and for $f\in A$ let $D(f) \da V(\gens{f})^c$.
+Let $A\in \Ring$ and $X\definedas \Spec(A)$, and for $f\in A$ let $D(f) \definedas V(\generators{f})^c$.
 Show that there is an isomorphism of ringed spaces
 \[
-(D(f), \ro{\OO_X}{D(f)}) \iso \Spec(A_f)
+(D(f), \restrictionof{\OO_X}{D(f)}) \iso \Spec(A_f)
 .\]
 :::
 
 ::: {.hint}
 - Take $\iota: A\to A_f$ and the induced map $\iota^*: \Spec A_f \to \Spec A$.
-- Use $\Spec S^{-1}A \cong \ts{\mfp\in \Spec A \st \mfp \intersect S = \emptyset }$, so $\Spec A_f = \ts{\mfp\in \Spec A \st \mfp \not\supseteq \gens{f}}$.
-- Construct $\psi \da \iota^*$, and check $D(g/f^k) \xrightarrow{\psi} D(gf)$ and $D(g) \xrightarrow{\psi^{-1}} D(g/1)$.
-- Use $\ro{\OO_{\Spec A}}{D(f)}(D(g)) = (A_f)_g$ and define $\psi^\# = \id$.
+- Use $\Spec S^{-1}A \cong \theset{\mfp\in \Spec A \st \mfp \intersect S = \emptyset }$, so $\Spec A_f = \theset{\mfp\in \Spec A \st \mfp \not\supseteq \generators{f}}$.
+- Construct $\psi \definedas \iota^*$, and check $D(g/f^k) \xrightarrow{\psi} D(gf)$ and $D(g) \xrightarrow{\psi^{-1}} D(g/1)$.
+- Use $\restrictionof{\OO_{\Spec A}}{D(f)}(D(g)) = (A_f)_g$ and define $\psi^\# = \id$.
 :::
 
 ::: {.solution}
-Let $\iota\colon A\to A_f$, $a\mapsto a/1$, let $Y\da\Spec A_f$, and let $\psi\colon Y\to X$ be $\psi(\mfq)\da\iota^{-1}(\mfq)$.
+Let $\iota\colon A\to A_f$, $a\mapsto a/1$, let $Y\definedas\Spec A_f$, and let $\psi\colon Y\to X$ be $\psi(\mfq)\definedas\iota^{-1}(\mfq)$.
 
 ::: pf
 
@@ -53,7 +53,7 @@ By step [](#psi-homeomorphism){.pf-ref}, $\psi^{-1}(D(af))=D(a/1)$. The sections
 :::
 
 ::: pf-qed
-The sets $D(af)$, $a\in A$, form a basis of $D(f)$ closed under intersection. By step [](#sections-isomorphism){.pf-ref}, $\psi^\#\colon\ro{\OO_X}{D(f)}\to\psi_*\OO_Y$ is defined and bijective on this basis and commutes with restriction, so it extends uniquely to an isomorphism of sheaves on $D(f)$. With step [](#psi-homeomorphism){.pf-ref}, $(\psi,\psi^\#)\colon(Y,\OO_Y)\to(D(f),\ro{\OO_X}{D(f)})$ is an isomorphism of ringed spaces, and its inverse is the required isomorphism.
+The sets $D(af)$, $a\in A$, form a basis of $D(f)$ closed under intersection. By step [](#sections-isomorphism){.pf-ref}, $\psi^\#\colon\restrictionof{\OO_X}{D(f)}\to\psi_*\OO_Y$ is defined and bijective on this basis and commutes with restriction, so it extends uniquely to an isomorphism of sheaves on $D(f)$. With step [](#psi-homeomorphism){.pf-ref}, $(\psi,\psi^\#)\colon(Y,\OO_Y)\to(D(f),\restrictionof{\OO_X}{D(f)})$ is an isomorphism of ringed spaces, and its inverse is the required isomorphism.
 :::
 
 :::

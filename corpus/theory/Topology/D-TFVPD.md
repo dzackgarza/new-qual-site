@@ -18,9 +18,9 @@ review: draft
 Let $f\colon X\to Y$ be a continuous map with [[D-RMQ7W|mapping cylinder]] $M_f=\qty{(X\times I)\disjoint Y}/\qty{(x,1)\sim f(x)}$.
 The \dfn{mapping cone} of $f$ is
 $$
-C_f\coloneqq M_f/(X\times\ts{0})=\qty{CX\disjoint Y}/\qty{(x,1)\sim f(x)\text{ for }x\in X},
+C_f\coloneqq M_f/(X\times\theset{0})=\qty{CX\disjoint Y}/\qty{(x,1)\sim f(x)\text{ for }x\in X},
 $$
-where $CX=(X\times I)/(X\times\ts{0})$ is the [[D-II4M4|cone]] on $X$; that is, $C_f$ is $Y$ with $CX$ attached along $f$ [@Hat02].
+where $CX=(X\times I)/(X\times\theset{0})$ is the [[D-II4M4|cone]] on $X$; that is, $C_f$ is $Y$ with $CX$ attached along $f$ [@Hat02].
 :::
 
 ::: {.proposition}

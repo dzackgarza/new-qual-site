@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a noetherian topological space, and let $\ts{\mci_\alpha}_{\alpha \in A}$ be a direct system of injective sheaves of abelian groups on $X$.
+Let $X$ be a noetherian topological space, and let $\theset{\mci_\alpha}_{\alpha \in A}$ be a direct system of injective sheaves of abelian groups on $X$.
 Then $\colim_\alpha \mci_\alpha$ is also injective.
 :::
 

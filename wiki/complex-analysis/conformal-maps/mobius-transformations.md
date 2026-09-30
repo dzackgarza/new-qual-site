@@ -47,7 +47,7 @@ An injective holomorphic map $f$ on an open set $U$ has $f'\neq 0$ on $U$, and $
 ::: {.remark title="As projective linear automorphisms"}
 Since $\Aut(\CP^1) \cong \PGL_2(\CC)$, acting on projective coordinates gives a matrix representation:
 $$
-\matt a b c d \cdot \tv{z: 1}^t = \tv{ {az+b \over cz + d }: 1} = \tv{f(z): 1}
+\matt a b c d \cdot \thevector{z: 1}^t = \thevector{ {az+b \over cz + d }: 1} = \thevector{f(z): 1}
 .$$
 Nonzero scalar multiples of a matrix give the same transformation, so the inverse transformation is given by the adjugate matrix:
 $$
@@ -85,7 +85,7 @@ This gives the uniqueness in [[PR-74KHY]].
 
 Möbius transformations map generalized circles to generalized circles, and hence map discs and half-planes onto discs and half-planes.
 A branch of $z\mapsto z^\alpha$ on a sector of opening $\theta$ at $0$, with $\alpha\theta\leq 2\pi$, maps it onto a sector of opening $\alpha\theta$.
-A branch of $\log$ maps the sector $\ts{\theta_1<\arg z<\theta_2}$ onto the strip $\ts{\theta_1<\Im w<\theta_2}$, and $\exp$ is its inverse.
+A branch of $\log$ maps the sector $\theset{\theta_1<\arg z<\theta_2}$ onto the strip $\theset{\theta_1<\Im w<\theta_2}$, and $\exp$ is its inverse.
 
 The Cayley transform maps $\HH$ onto $\DD$.
 Any two biholomorphisms of an open set onto $\DD$ differ by an automorphism of $\DD$, and the Riemann mapping theorem gives the existence of one for every simply connected open $\Omega\subsetneq\CC$.
@@ -126,8 +126,8 @@ The principal branch $\Log$ maps $\CC\sm\RR^{\leq 0}$ onto $\RR \cross (-\pi, \p
 It also maps
 $$
 \begin{aligned}
-\ts{ z \st \abs{z} < 1,\, \Im(z) > 0 } &\mapstofrom \RR^{<0} \cross (0, \pi ) \\
-\ts{ z \st \abs{z} > 1,\, \Im(z) > 0 } &\mapstofrom \RR^{>0} \cross (0, \pi )
+\theset{ z \st \abs{z} < 1,\, \Im(z) > 0 } &\mapstofrom \RR^{<0} \cross (0, \pi ) \\
+\theset{ z \st \abs{z} > 1,\, \Im(z) > 0 } &\mapstofrom \RR^{>0} \cross (0, \pi )
 \end{aligned}.$$
 On the boundary of the upper half disc: as $x$ runs from $0$ to $1$ in $\RR$, $\Log x$ runs from $-\infty$ to $0$; as $z$ runs from $1$ to $-1$ along $S^1\intersect\overline\HH$, $\Log z$ runs from $0$ to $i\pi$ vertically; as $x$ runs from $-1$ to $0$, $\Log x$, extended continuously from $\HH$, runs from $i\pi$ to $-\infty + i\pi$.
 

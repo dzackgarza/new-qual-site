@@ -27,7 +27,7 @@ Under what conditions does there exist an open covering $\mathcal{B}$ of $X$ ref
 (b) Show that such a covering exists if $X$ is compact Hausdorff.
 [Hint: Let $A_1, \ldots, A_n$ be a finite subcollection of $\mathcal{A}$ that covers $X$.
 Choose an open covering $C_1, \ldots, C_n$ of $X$ such that $\overline{C}_i \subset A_i$ for each $i$.
-For each nonempty subset $J$ of $\ts{1, \ldots, n}$, consider the set
+For each nonempty subset $J$ of $\theset{1, \ldots, n}$, consider the set
 
 $$
 B_J = \bigcap_{j \in J} A_j - \bigcup_{j \notin J} \overline{C}_j.]

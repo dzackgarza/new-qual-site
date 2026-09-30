@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\ts{\mcf_i}$ be a direct system of sheaves on a noetherian topological space $X$.
+Let $\theset{\mcf_i}$ be a direct system of sheaves on a noetherian topological space $X$.
 Show that the presheaf $U \mapsto \varinjlim \mcf_i(U)$ is already a sheaf.
 In particular,
 \[

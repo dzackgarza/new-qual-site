@@ -21,7 +21,7 @@ Let $R$ be a ring, $I \subseteq R$ a two-sided ideal, and $\phi\colon R \to R/I$
 (a) The maps $J \mapsto \bar{J} \coloneqq \phi(J) = J/I$ and $\bar{J} \mapsto \inverseof{\phi}(\bar{J})$ are mutually inverse inclusion-preserving bijections
 $$
 \begin{aligned}
-\correspond{\text{ideals } J \subseteq R \text{ with } J \contains I}
+\correspond{\text{ideals } J \subseteq R \text{ with } J \containing I}
 &\mapstofrom
 \correspond{\text{ideals of } R/I} \\
 J &\mapsto J/I \\

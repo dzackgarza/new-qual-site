@@ -25,7 +25,7 @@ The estimates for the added pieces are on [[complex-analysis/residues-and-contou
 
 **Integrand.** $\displaystyle\int_\RR f$ with $f = p/q$ rational, $q$ without real zeros, and $\deg q \geq \deg p + 2$; more generally $f = \bigo(1/\abs z^{1+\varepsilon})$ on the upper half plane.
 
-**Contour.** The segment $[-R, R]$ followed by the upper semicircle $C_R = \ts{Re^{it} \st t \in [0,\pi]}$.
+**Contour.** The segment $[-R, R]$ followed by the upper semicircle $C_R = \theset{Re^{it} \st t \in [0,\pi]}$.
 
 ![](../../../../assets/assets/figures/2021-07-29_18-37-57.png)
 
@@ -134,7 +134,7 @@ $$
 
 **Integrand.** A function whose values on a rotated ray or a translated line are a constant multiple of its values on the real axis.
 
-- If $f(\zeta z) = f(z)$ for $\zeta = e^{2\pi i/m}$, use the sector $\ts{0\leq\arg z\leq 2\pi/m,\ \abs z\leq R}$.
+- If $f(\zeta z) = f(z)$ for $\zeta = e^{2\pi i/m}$, use the sector $\theset{0\leq\arg z\leq 2\pi/m,\ \abs z\leq R}$.
   If the arc integral tends to $0$, the ray $z = \zeta x$, traversed toward $0$, contributes $-\zeta\int_0^\infty f$, so $(1 - \zeta)\int_0^\infty f$ is $2\pi i$ times the sum of the residues in the sector.
   For $f(x) = 1/(1+x^n)$ and $\zeta = e^{2\pi i/n}$ this gives $\int_0^\infty {\dx \over 1 + x^n} = {\pi/n \over \sin(\pi/n)}$.
 

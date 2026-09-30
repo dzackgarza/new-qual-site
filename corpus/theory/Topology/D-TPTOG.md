@@ -17,7 +17,7 @@ review: draft
 Let $f\colon X\to Y$ be a continuous map, $I=[0,1]$, and $Y^I$ the space of paths $I\to Y$ with the compact-open topology.
 The \dfn{mapping path space} of $f$ is the subspace
 $$
-E_f\coloneqq\ts{(x,\gamma)\in X\times Y^I \st \gamma(0)=f(x)}
+E_f\coloneqq\theset{(x,\gamma)\in X\times Y^I \st \gamma(0)=f(x)}
 $$
 of $X\times Y^I$ [@Hat02].
 :::

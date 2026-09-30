@@ -17,7 +17,7 @@ review: draft
 (a) Show that the logarithmic spiral
 
 $$
-C = \ts{0 \times 0} \cup \ts{e^t \cos t \times e^t \sin t \mid t \in \mathbb{R}}
+C = \theset{0 \times 0} \cup \theset{e^t \cos t \times e^t \sin t \mid t \in \mathbb{R}}
 $$
 
 is a retract of $\mathbb{R}^2$.

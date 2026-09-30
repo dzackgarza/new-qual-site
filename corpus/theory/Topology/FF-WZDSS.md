@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.fact}
-Let $n\geq 1$, let $A$ be an abelian group, and let $A[n]\coloneqq\ts{a\in A \st na = 0}$.
+Let $n\geq 1$, let $A$ be an abelian group, and let $A[n]\coloneqq\theset{a\in A \st na = 0}$.
 The groups [[D-BYIZA|$\Ext^k_{\ZZ}(\ZZ/n, A)$]] are
 $$
 \Ext^0_{\ZZ}(\ZZ/n, A)\cong\Hom(\ZZ/n, A)\cong A[n],\qquad

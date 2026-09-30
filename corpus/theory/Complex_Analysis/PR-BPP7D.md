@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.proposition}
-For $0<\alpha\le2\pi$, let $S_\alpha\coloneqq\ts{ z \st 0 < \arg(z) < \alpha }$, with $\arg z\in(0,\alpha)$ as in [[PR-AQFRA]].
+For $0<\alpha\le2\pi$, let $S_\alpha\coloneqq\theset{ z \st 0 < \arg(z) < \alpha }$, with $\arg z\in(0,\alpha)$ as in [[PR-AQFRA]].
 Then
 $$
 \begin{aligned}

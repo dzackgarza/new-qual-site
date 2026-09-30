@@ -12,7 +12,7 @@ A holomorphic function on the upper half of a symmetric region that is real on t
 The proof glues two holomorphic functions along a segment and applies Morera's theorem.
 
 ::: {.remark}
-Throughout, $\Omega$ is an open set symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$, and $\Omega^+ \coloneqq \Omega\cap\ts{\Im z>0}$, $I\coloneqq\Omega\cap\RR$, and $\Omega^- \coloneqq \Omega\cap\ts{\Im z<0}$.
+Throughout, $\Omega$ is an open set symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$, and $\Omega^+ \coloneqq \Omega\cap\theset{\Im z>0}$, $I\coloneqq\Omega\cap\RR$, and $\Omega^- \coloneqq \Omega\cap\theset{\Im z<0}$.
 
 :::
 
@@ -25,9 +25,9 @@ The glued function $f$ is holomorphic on $\Omega^\pm$ by hypothesis, so it remai
 Let $T\subset\Omega$ be a closed triangle.
 If $T$ misses $I$, then $T$ lies in $\Omega^+$ or in $\Omega^-$ and $\int_{\partial T} f=0$ by Goursat.
 
-If $T$ meets $I$, let $T^+\coloneqq T\cap\ts{\Im z\geq 0}$ and $T^-\coloneqq T\cap\ts{\Im z\leq 0}$, convex polygons with positively oriented boundaries.
+If $T$ meets $I$, let $T^+\coloneqq T\cap\theset{\Im z\geq 0}$ and $T^-\coloneqq T\cap\theset{\Im z\leq 0}$, convex polygons with positively oriented boundaries.
 The boundaries share the segment $T\cap\RR$ with opposite orientations, so $\int_{\partial T} f = \int_{\partial T^+} f + \int_{\partial T^-} f$.
-For small $\varepsilon>0$, the convex polygon $T^+_\varepsilon \coloneqq T^+\cap\ts{\Im z\geq\varepsilon}$ lies in $\Omega^+$, so $\int_{\partial T^+_\varepsilon} f = 0$ by Goursat's theorem applied to a triangulation of $T^+_\varepsilon$.
+For small $\varepsilon>0$, the convex polygon $T^+_\varepsilon \coloneqq T^+\cap\theset{\Im z\geq\varepsilon}$ lies in $\Omega^+$, so $\int_{\partial T^+_\varepsilon} f = 0$ by Goursat's theorem applied to a triangulation of $T^+_\varepsilon$.
 As $\varepsilon\to 0$ the boundaries $\partial T^+_\varepsilon$ converge to $\partial T^+$, and since $f$ is uniformly continuous on the compact set $T$, $\int_{\partial T^+} f = \lim_{\varepsilon\to 0}\int_{\partial T^+_\varepsilon} f = 0$; likewise $\int_{\partial T^-} f=0$.
 Thus $\int_{\partial T} f=0$, and Morera's theorem gives holomorphy on $\Omega$.
 

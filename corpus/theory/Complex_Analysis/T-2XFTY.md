@@ -20,7 +20,7 @@ review: draft
 ::: {.theorem}
 The group of [[D-TM4TE|biholomorphisms]] of the unit disc $\DD$ onto itself is
 $$
-\Aut(\DD)=\ts{z\mapsto e^{i\theta}\,\frac{\alpha-z}{1-\bar\alpha z}\st\theta\in\RR,\ \alpha\in\DD},
+\Aut(\DD)=\theset{z\mapsto e^{i\theta}\,\frac{\alpha-z}{1-\bar\alpha z}\st\theta\in\RR,\ \alpha\in\DD},
 $$
 the rotations composed with the [[D-MFPYG|Blaschke factors]] $\psi_\alpha$.
 :::

@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Write $\HH=\ts{\Im z>0}$ for the upper half-plane, $\DD^+=\ts{\abs z<1,\ \Im z>0}$ for the upper half-disc, $Q_1=\ts{\Re z>0,\ \Im z>0}$ for the first quadrant, $S_\beta=\ts{re^{i\theta}\st r>0,\ 0<\theta<\beta}$ for the sector of opening $\beta$, $\Sigma=\ts{0<\Im z<\pi}$ for the horizontal strip, and $\Log$ for the [[D-4CSPM|principal branch of the logarithm]].
+Write $\HH=\theset{\Im z>0}$ for the upper half-plane, $\DD^+=\theset{\abs z<1,\ \Im z>0}$ for the upper half-disc, $Q_1=\theset{\Re z>0,\ \Im z>0}$ for the first quadrant, $S_\beta=\theset{re^{i\theta}\st r>0,\ 0<\theta<\beta}$ for the sector of opening $\beta$, $\Sigma=\theset{0<\Im z<\pi}$ for the horizontal strip, and $\Log$ for the [[D-4CSPM|principal branch of the logarithm]].
 Each of the following maps is a [[D-TM4TE|biholomorphism]] from the stated domain onto the stated target.
 
 | Domain | Target | Map |
@@ -26,8 +26,8 @@ Each of the following maps is a [[D-TM4TE|biholomorphism]] from the stated domai
 | $S_{\pi/n}$, $n\ge1$ | $\HH$ | $z\mapsto z^n$ ([[PR-PDYJC]]) |
 | $\DD^+$ | $Q_1$ | $z\mapsto\frac{1+z}{1-z}$ ([[PR-PW4Z6]]) |
 | $\HH$ | $\Sigma$ | $z\mapsto\Log z$ ([[PR-XCDL5]]) |
-| $\DD^+$ | $\ts{\Re w<0,\ 0<\Im w<\pi}$ | $z\mapsto\Log z$ ([[PR-PELLF]]) |
-| $\ts{0<\Re z<\pi,\ \Im z>0}$ | $\DD^+$ | $z\mapsto e^{iz}$ |
+| $\DD^+$ | $\theset{\Re w<0,\ 0<\Im w<\pi}$ | $z\mapsto\Log z$ ([[PR-PELLF]]) |
+| $\theset{0<\Re z<\pi,\ \Im z>0}$ | $\DD^+$ | $z\mapsto e^{iz}$ |
 | $\DD^+$ | $\HH$ | $z\mapsto-\frac12\big(z+\frac1z\big)$ ([[PR-OTMIR]]) |
-| $\ts{-\frac\pi2<\Re z<\frac\pi2,\ \Im z>0}$ | $\HH$ | $z\mapsto\sin z$ ([[PR-3LBLV]]) |
+| $\theset{-\frac\pi2<\Re z<\frac\pi2,\ \Im z>0}$ | $\HH$ | $z\mapsto\sin z$ ([[PR-3LBLV]]) |
 :::

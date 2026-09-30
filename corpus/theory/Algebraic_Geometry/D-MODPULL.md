@@ -29,11 +29,11 @@ $$
 U \mapsto \colim_{V \supseteq f(U)} \mcg(V) ,
 $$
 the colimit over open subsets $V \subseteq Y$ containing $f(U)$.
-If $i: Z \injects X$ is the inclusion of a subspace, the \dfn{restriction} of a sheaf $\mcf$ on $X$ is $\ro{\mcf}{Z} \da \inverseof{i} \mcf$.
+If $i: Z \injects X$ is the inclusion of a subspace, the \dfn{restriction} of a sheaf $\mcf$ on $X$ is $\restrictionof{\mcf}{Z} \definedas \inverseof{i} \mcf$.
 :::
 
 ::: {.proposition}
-$\inverseof{f}$ is left adjoint to $f_*$ on sheaves of abelian groups, and for $x \in X$ the stalk is $(\inverseof{f} \mcg)_x = \mcg_{f(x)}$; in particular $(\ro{\mcf}{Z})_x = \mcf_x$ for $x \in Z$.
+$\inverseof{f}$ is left adjoint to $f_*$ on sheaves of abelian groups, and for $x \in X$ the stalk is $(\inverseof{f} \mcg)_x = \mcg_{f(x)}$; in particular $(\restrictionof{\mcf}{Z})_x = \mcf_x$ for $x \in Z$.
 If $\mcg$ is an $\OO_Y$-module, then $\inverseof{f} \mcg$ is an $\inverseof{f} \OO_Y$-module, which need not be an $\OO_X$-module.
 [@Har10a, §II.1, Exercise II.1.18]
 :::
@@ -42,7 +42,7 @@ If $\mcg$ is an $\OO_Y$-module, then $\inverseof{f} \mcg$ is an $\inverseof{f} \
 For $f: X \to Y$ of ringed spaces, $f_*\mcf$ is the $\OO_Y$-module $U \mapsto \mcf(\inverseof{f} U)$.
 For $\mcg \in \mods{\OO_Y}$, the \dfn{inverse image} is
 $$
-f^*\mcg \da \inverseof{f} \mcg \tensor_{\inverseof{f} \OO_Y} \OO_X ,
+f^*\mcg \definedas \inverseof{f} \mcg \tensor_{\inverseof{f} \OO_Y} \OO_X ,
 $$
 the sheaf-theoretic inverse image, base changed along $\inverseof{f}\OO_Y \to \OO_X$.
 :::

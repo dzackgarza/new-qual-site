@@ -19,7 +19,7 @@ audit:
 
 ::: {.exercise}
 
-Give an example of a collection of sets $\mathcal{A}$ that is not locally finite, such that the collection $\mathcal{B} = \ts{\overline{A} \mid A \in \mathcal{A}}$ is locally finite.
+Give an example of a collection of sets $\mathcal{A}$ that is not locally finite, such that the collection $\mathcal{B} = \theset{\overline{A} \mid A \in \mathcal{A}}$ is locally finite.
 :::
 
 ::: {.solution}

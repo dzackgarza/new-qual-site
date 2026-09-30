@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-CRVCM
 kind: theorem
 title: Complex multiplication, and $\operatorname{End}(E,p_0)$ as an order in an imaginary quadratic field
-slogan: 'Over $\CC$, an elliptic curve has extra endomorphisms exactly when its lattice is imaginary quadratic; then $\End(E)$ is an order in that field.'
+slogan: 'Over $\CC$, an elliptic curve has extra endomorphisms exactly when its lattice is imaginary quadratic; then $\Endo(E)$ is an order in that field.'
 classification:
   areas:
   - algebraic-geometry
@@ -28,14 +28,14 @@ prompts:
 ---
 
 ::: {.theorem title="The endomorphism ring inside $\CC$"}
-Let $E = \CC/\Lambda$ with $\Lambda = \Lambda_\tau = \gens{1,\tau}_\ZZ$.
+Let $E = \CC/\Lambda$ with $\Lambda = \Lambda_\tau = \generators{1,\tau}_\ZZ$.
 Then
 \[
-\operatorname{End}(E, p_0) \iso R_\Lambda \da \ts{ \alpha \in \CC \st \alpha \Lambda \subseteq \Lambda } ,
+\operatorname{End}(E, p_0) \iso R_\Lambda \definedas \theset{ \alpha \in \CC \st \alpha \Lambda \subseteq \Lambda } ,
 \]
 the isomorphism carrying an endomorphism to the scalar it is, and carrying $[n]$ to the integer $n$.
 Say $E$ has **complex multiplication** when $R_\Lambda \supsetneq \ZZ$.
-This happens exactly when $\tau$ is imaginary quadratic, that is $\tau \in K \da \QQ(\sqrt{-d})$ for some squarefree $d > 0$, and in that case
+This happens exactly when $\tau$ is imaginary quadratic, that is $\tau \in K \definedas \QQ(\sqrt{-d})$ for some squarefree $d > 0$, and in that case
 \[
 \ZZ \subsetneq R_\Lambda \subseteq \OO_K
 \]
@@ -50,13 +50,13 @@ where $f = [\OO_K : R_{\Lambda_\tau}]$ is the **conductor** of the order.
 
 ::: {.example title="The three standard computations"}
 **$\tau = i$.** Here $\tau^2 + 1 = 0$, so $A = 1$ and $R = \ZZ[i] = \OO_K$ for $K = \QQ(i)$, the maximal order, conductor $1$.
-Its unit group is $\ts{\pm 1, \pm i} \cong C_4$, so $\abs{\Aut(E,p_0)} = 4$, which is the $j = 1728$ row of the automorphism count; the curve is $y^2 = x^3 - ax$ for some $a$.
+Its unit group is $\theset{\pm 1, \pm i} \cong C_4$, so $\abs{\Aut(E,p_0)} = 4$, which is the $j = 1728$ row of the automorphism count; the curve is $y^2 = x^3 - ax$ for some $a$.
 
-**$\tau = \rho \da e^{2\pi i/3}$.** Here $\tau^2 + \tau + 1 = 0$, so $A = 1$ and $R = \ZZ[\rho] = \OO_K$ for $K = \QQ(\sqrt{-3})$, conductor $1$.
+**$\tau = \rho \definedas e^{2\pi i/3}$.** Here $\tau^2 + \tau + 1 = 0$, so $A = 1$ and $R = \ZZ[\rho] = \OO_K$ for $K = \QQ(\sqrt{-3})$, conductor $1$.
 Its unit group is the sixth roots of unity, $\cong C_6$, so $\abs{\Aut(E,p_0)} = 6$, which is the $j = 0$ row; the curve is $y^2 = x^3 - b$ for some $b$.
 
 **$\tau = 2i$.** Here $\tau^2 + 4 = 0$, so $A = 1$ and $R = \ZZ[2i] = \ZZ + 2\ZZ[i]$, of index $2$ in $\ZZ[i]$: an order of conductor $2$ in $K = \QQ(i)$, with discriminant $-16 = 2^2 \cdot (-4)$.
-Its unit group is only $\ts{\pm 1}$, so this curve has just the two automorphisms every elliptic curve has, and $j(2i) \neq 0, 1728$.
+Its unit group is only $\theset{\pm 1}$, so this curve has just the two automorphisms every elliptic curve has, and $j(2i) \neq 0, 1728$.
 Thus the endomorphism ring need not be the full ring of integers of the imaginary quadratic field.
 :::
 

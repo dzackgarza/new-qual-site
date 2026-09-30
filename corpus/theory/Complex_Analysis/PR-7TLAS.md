@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $S\coloneqq\theset{z\in\CC : -\pi/2<\Re z<\pi/2,\ \Im z>0}$ and $H\coloneqq\DD \intersect \ts{\Re(w) > 0}$.
+Let $S\coloneqq\theset{z\in\CC : -\pi/2<\Re z<\pi/2,\ \Im z>0}$ and $H\coloneqq\DD \intersect \theset{\Re(w) > 0}$.
 Then
 $$
 \begin{aligned}

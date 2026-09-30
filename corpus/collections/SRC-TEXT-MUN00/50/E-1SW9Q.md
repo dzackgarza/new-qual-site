@@ -22,13 +22,13 @@ There is a space that is locally 2-euclidean and satisfies (v) but not (iv) of E
 Let $A$ be the following subspace of $\mathbb{R}^3$:
 
 $$
-A = \ts{(x, y, 0) \mid x > 0}.
+A = \theset{(x, y, 0) \mid x > 0}.
 $$
 
 Given $c$ real, let $B_c$ be the following subspace of $\mathbb{R}^3$:
 
 $$
-B_c = \ts{(x, y, c) \mid x \leq 0}.
+B_c = \theset{(x, y, c) \mid x \leq 0}.
 $$
 
 Let $X$ be the set that is the union of $A$ and all the spaces $B_c$, for $c$ real.
@@ -41,11 +41,11 @@ Topologize $X$ by taking as a basis all sets of the following three types:
 (iii) For each open interval $I = (a, b)$ of $\mathbb{R}$, each real number $c$, and each $\epsilon > 0$, the set $A_c(I, \epsilon) \cup B_c(I, \epsilon)$, where
 
 $$
-A_c(I, \epsilon) = \ts{(x, y, 0) \mid 0 < x < \epsilon \text{ and } c + ax < y < c + bx},
+A_c(I, \epsilon) = \theset{(x, y, 0) \mid 0 < x < \epsilon \text{ and } c + ax < y < c + bx},
 $$
 
 $$
-B_c(I, \epsilon) = \ts{(x, y, c) \mid -\epsilon < x \leq 0 \text{ and } a < y < b}.
+B_c(I, \epsilon) = \theset{(x, y, c) \mid -\epsilon < x \leq 0 \text{ and } a < y < b}.
 $$
 
 The space $X$ is called the "Prüfer manifold."
@@ -74,7 +74,7 @@ defines a homeomorphism of $\mathbb{R}^2$ with the subspace $A \cup B_c$ of $X$.
 [Hint: The subspace
 
 $$
-L = \ts{(0, 0, c) \mid c \in \mathbb{R}}
+L = \theset{(0, 0, c) \mid c \in \mathbb{R}}
 $$
 
 of $X$ is closed and discrete.

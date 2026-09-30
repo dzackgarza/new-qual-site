@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 (a) Let $X=\AA_k^1$ be the affine line over an infinite field $k$.
-Let $P, Q$ be distinct closed points of $X$, and let $U=X-\ts{P, Q}$.
+Let $P, Q$ be distinct closed points of $X$, and let $U=X-\theset{P, Q}$.
 Show that $H^1(X, \ZZ_U) \neq 0$.
 
 (b) More generally, for $n\ge1$, let $Y \subseteq X=\AA_k^n$ be the union of $n+1$ hyperplanes in suitably general position, and let $U=X-Y$.

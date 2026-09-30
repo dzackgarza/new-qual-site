@@ -24,9 +24,9 @@ Elements of $\mcf(U)$ are \dfn{sections} of $\mcf$ over $U$, and elements of $\m
 :::
 
 ::: {.definition title="Sheaf"}
-A presheaf is a \dfn{sheaf} if for every open $U$ and every open cover $\ts{U_i}$ of $U$:
+A presheaf is a \dfn{sheaf} if for every open $U$ and every open cover $\theset{U_i}$ of $U$:
 
-- *identity*: a section $s \in \mcf(U)$ with $\ro{s}{U_i} = 0$ for all $i$ is $0$;
+- *identity*: a section $s \in \mcf(U)$ with $\restrictionof{s}{U_i} = 0$ for all $i$ is $0$;
 
 - *gluing*: sections $s_i \in \mcf(U_i)$ agreeing on every overlap $U_i \intersect U_j$ come from a section of $\mcf(U)$.
 

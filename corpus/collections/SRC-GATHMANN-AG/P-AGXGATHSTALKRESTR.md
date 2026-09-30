@@ -34,13 +34,13 @@ audit:
 
 ::: {.problem}
 Let $\mcf$ be a sheaf on a topological space $X$ and $a\in X$.
-Show that the stalk $\mcf_a$ is a *local object*: if $U\subset X$ is an open neighborhood of $a$, then $\mcf_a$ is isomorphic to the stalk of $\ro{\mcf}{U}$ at $a$ on $U$ viewed as a topological space.
+Show that the stalk $\mcf_a$ is a *local object*: if $U\subset X$ is an open neighborhood of $a$, then $\mcf_a$ is isomorphic to the stalk of $\restrictionof{\mcf}{U}$ at $a$ on $U$ viewed as a topological space.
 :::
 
 ::: {.solution}
 Put
 $$
-\mcf'=\ro{\mcf}{U}.
+\mcf'=\restrictionof{\mcf}{U}.
 $$
 
 ::: pf
@@ -69,7 +69,7 @@ is an open neighborhood of $a$ in $U$. Define
 $$
 \alpha([V,s]_a)
 =
-[V\cap U,\ro{s}{V\cap U}]_a.
+[V\cap U,\restrictionof{s}{V\cap U}]_a.
 $$
 
 If $(V,s)$ and $(W,t)$ determine the same germ in $\mcf_a$, there is an
@@ -128,16 +128,16 @@ For a representative $(V,s)$ in $X$,
 $$
 \beta\alpha([V,s]_a)
 =
-[V\cap U,\ro{s}{V\cap U}]_a.
+[V\cap U,\restrictionof{s}{V\cap U}]_a.
 $$
 The latter pair is a restriction of $(V,s)$ to another neighborhood of
 $a$, so it represents the same germ:
 $$
-[V\cap U,\ro{s}{V\cap U}]_a=[V,s]_a.
+[V\cap U,\restrictionof{s}{V\cap U}]_a=[V,s]_a.
 $$
 Therefore
 $$
-\boxed{\mcf_a\cong(\ro{\mcf}{U})_a}.
+\boxed{\mcf_a\cong(\restrictionof{\mcf}{U})_a}.
 $$
 The construction uses only restriction maps, so it preserves whatever
 algebraic structure the sheaf values carry.

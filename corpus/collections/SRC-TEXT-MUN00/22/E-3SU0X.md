@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-Check the details of Example 3 of §22: for the map $p: \mathbb{R} \to A = \ts{a, b, c}$ defined by
+Check the details of Example 3 of §22: for the map $p: \mathbb{R} \to A = \theset{a, b, c}$ defined by
 
 $$
 p(x) =

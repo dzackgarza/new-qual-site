@@ -23,12 +23,12 @@ prompts:
 Let $P \subseteq M_\RR$ be a lattice polytope.
 A face is a slice by a supporting affine hyperplane,
 $$
-F = P \intersect \ts{m \in M_\RR \st \inp{m}{u} = r}, \qquad \inp{m}{u} \geq r \text{ on } P ,
+F = P \intersect \theset{m \in M_\RR \st \inner{m}{u} = r}, \qquad \inner{m}{u} \geq r \text{ on } P ,
 $$
 for some $u \in N$ and $r \in \RR$.
 The facets are the faces of codimension one, and $P$ has the facet presentation
 $$
-P = \ts{ m \in M_\RR \st \inp{m}{u_F} \geq -a_F \text{ for every facet } F } ,
+P = \theset{ m \in M_\RR \st \inner{m}{u_F} \geq -a_F \text{ for every facet } F } ,
 $$
 where $u_F \in N$ is the primitive inward normal to $F$.
 :::
@@ -38,7 +38,7 @@ For a face $F \leq P$ set
 $$
 \sigma_F = \Cone\big( u_F' \st F \leq F',\ F' \text{ a facet} \big) \subseteq N_\RR .
 $$
-These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \da X_{\Sigma_P}$.
+These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \definedas X_{\Sigma_P}$.
 Vertices of $P$ give the maximal cones, facets of $P$ give the rays, and the whole poset is reversed.
 The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \dualof{\Cone(P \cap M - m_i)}$.
 :::

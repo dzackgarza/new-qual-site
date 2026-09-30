@@ -25,7 +25,7 @@ audit:
 ---
 
 ::: {.exercise}
-If $\ts{I_j}$ is any linearly ordered indexed set of proper ideals in a ring $R$ — i.e. for any two ideals $I_j$ and $I_k$, one is contained in the other — then their union is a proper ideal.
+If $\theset{I_j}$ is any linearly ordered indexed set of proper ideals in a ring $R$ — i.e. for any two ideals $I_j$ and $I_k$, one is contained in the other — then their union is a proper ideal.
 :::
 
 ::: {.solution}

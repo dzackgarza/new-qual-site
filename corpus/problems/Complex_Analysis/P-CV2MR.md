@@ -36,8 +36,8 @@ Now taking $w = Re^{i\theta} \neq 0$,
 = {\qty{\abs{z} + \abs{w} } \qty{\abs{z} - \abs{w}} \over z-w }
 = {\abs z - \abs w \over z-w}\cdot \qty{\abs{z} + \abs{w}}
 .\]
-First let $z\to w$ along $\bd \DD_{R'}(0)$ where $R' \da \abs{w}$, so that the numerator vanishes and the limit is zero.
-Then let $z\to w$ along the curve $\ts{tw\st t\in [0, 1]}$, then $\abs{z} = t \abs{w}$, so the ratio becomes
+First let $z\to w$ along $\bd \DD_{R'}(0)$ where $R' \definedas \abs{w}$, so that the numerator vanishes and the limit is zero.
+Then let $z\to w$ along the curve $\theset{tw\st t\in [0, 1]}$, then $\abs{z} = t \abs{w}$, so the ratio becomes
 \[
 {\abs z - \abs w \over z-w}\cdot \qty{\abs{z} + \abs{w}}
 &= {t\abs{w}  - \abs w \over tw-w}\cdot \qty{t\abs{w} + \abs{w}} \\

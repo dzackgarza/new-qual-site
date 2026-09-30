@@ -15,5 +15,5 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a commutative ring.
-An [[D-GOFWL|ideal]] $I \normal R$ is \dfn{principal} if there exists $a\in R$ such that $I = \gens{a} = Ra$.
+An [[D-GOFWL|ideal]] $I \normal R$ is \dfn{principal} if there exists $a\in R$ such that $I = \generators{a} = Ra$.
 :::

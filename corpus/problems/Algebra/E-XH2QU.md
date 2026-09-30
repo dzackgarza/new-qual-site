@@ -19,7 +19,7 @@ Show that $R[x]$ a PID $\iff R$ is a field.
 :::
 
 ::: {.hint}
-Take $r\in R$, then $\gens{r, x} = \gens{f}$ for some $f$.
+Take $r\in R$, then $\generators{r, x} = \generators{f}$ for some $f$.
 :::
 
 ::: {.solution}
@@ -41,9 +41,9 @@ If $R[x]$ is a PID, then every $0\neq r\in R$ is a unit.
 
 ::: pf-proof
 $R[x]$ is a domain, hence so is $R\subseteq R[x]$.
-Write $\gens{r,x}=\gens{f}$, so $r=fp$ and $x=fq$ for some $p,q\in R[x]$.
+Write $\generators{r,x}=\generators{f}$, so $r=fp$ and $x=fq$ for some $p,q\in R[x]$.
 In the domain $R[x]$, degrees add, so $\deg f=0$ from $r=fp$; write $f=c\in R$.
-Then $x=cq$ forces $q=ax+b$ with $ca=1$, so $c$ is a unit and $\gens{r,x}=R[x]$.
+Then $x=cq$ forces $q=ax+b$ with $ca=1$, so $c$ is a unit and $\generators{r,x}=R[x]$.
 Hence $1=rg(x)+xh(x)$ for some $g,h\in R[x]$, and evaluating at $x=0$ gives $1=rg(0)$.
 :::
 

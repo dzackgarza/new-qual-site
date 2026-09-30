@@ -30,7 +30,7 @@ In particular, if $f$ and $g$ are [[D-E7A5W|holomorphic]] on $\Omega$, then $f$ 
 :::
 
 ::: {.proof}
-On $\gamma$, $\frac{f+g}{f}=1+\frac gf$ takes values in the disc $\ts{\abs{w-1}<1}$, which does not contain $0$, so the closed curve $\frac{f+g}{f}\circ\gamma$ has [[D-PJ7JM|winding number]] $0$ about $0$.
+On $\gamma$, $\frac{f+g}{f}=1+\frac gf$ takes values in the disc $\theset{\abs{w-1}<1}$, which does not contain $0$, so the closed curve $\frac{f+g}{f}\circ\gamma$ has [[D-PJ7JM|winding number]] $0$ about $0$.
 The logarithmic derivative of a product is the sum of the logarithmic derivatives, so by [[T-52HK6]]
 $$
 \Index_{w=0}\big((f+g)\circ\gamma\big)=\Index_{w=0}(f\circ\gamma)+\Index_{w=0}\Big(\frac{f+g}{f}\circ\gamma\Big)=\Index_{w=0}(f\circ\gamma).

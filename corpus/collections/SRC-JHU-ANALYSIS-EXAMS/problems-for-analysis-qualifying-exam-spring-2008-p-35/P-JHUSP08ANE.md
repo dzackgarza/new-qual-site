@@ -27,7 +27,7 @@ audit:
 
 ::: {.pf-step #s1}
 
-$h\da f/g$ is entire and $\abs h\le1$.
+$h\definedas f/g$ is entire and $\abs h\le1$.
 
 ::: pf-proof
 

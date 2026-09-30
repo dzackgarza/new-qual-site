@@ -57,7 +57,7 @@ U=\Spec A
 $$
 on which
 $$
-\ro{\mce}{U}\cong\widetilde{A^r}.
+\restrictionof{\mce}{U}\cong\widetilde{A^r}.
 $$
 Because $X$ is integral, $A$ is a domain and its fraction field is $K$.
 

@@ -18,7 +18,7 @@ review: draft
 ::: {.theorem}
 Let $z_0\in\CC$, $0\le r<R\le\infty$, and let $f$ be [[D-E7A5W|holomorphic]] on the annulus
 $$
-A\coloneqq\ts{z\in\CC\st r<\abs{z-z_0}<R}.
+A\coloneqq\theset{z\in\CC\st r<\abs{z-z_0}<R}.
 $$
 Then $f$ has a two-sided expansion
 $$

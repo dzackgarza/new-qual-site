@@ -11,7 +11,7 @@ title: "Algebra qual prep week 4: rings"
 
 - Irreducible and prime elements, nilpotent elements, units
 
-- Radicals, the nilradical, $\spec R$ and $\mspec R$
+- Radicals, the nilradical, $\Spec R$ and $\mspec R$
 
 - Classes of rings: integral domains, Euclidean domains $\implies$ PIDs $\implies$ UFDs $\implies$ integral domains, Dedekind domains, Noetherian and Artinian rings
 

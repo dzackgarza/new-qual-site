@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $\Omega\subseteq\CC\sm\ts{0}$ be open and let $f=u+iv$ be [[D-E7A5W|holomorphic]] on $\Omega$, with $u,v$ real-valued.
+Let $\Omega\subseteq\CC\sm\theset{0}$ be open and let $f=u+iv$ be [[D-E7A5W|holomorphic]] on $\Omega$, with $u,v$ real-valued.
 Writing $u$ and $v$ as functions of $(r,\theta)$ through $z=re^{i\theta}$, $r>0$,
 $$
 \frac{\partial u}{\partial r}=\frac{1}{r}\frac{\partial v}{\partial\theta}\qquad\text{and}\qquad\frac{1}{r}\frac{\partial u}{\partial\theta}=-\frac{\partial v}{\partial r}.

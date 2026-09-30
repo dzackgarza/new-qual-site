@@ -40,7 +40,7 @@ b. If $X$ has degree $d$ and genus $g$, conclude that $g<\frac{1}{2}(d-1)(d-2)$.
 (Use (Ex.
 1.8).)
 
-c. Now let $\ts{X_t}$ be the flat family of curves induced by the projection (III, 9.8.3) whose fibre over $t=1$ is $X$, and whose fibre $X_0$ over $t=0$ is a scheme with support $\varphi(X)$.
+c. Now let $\theset{X_t}$ be the flat family of curves induced by the projection (III, 9.8.3) whose fibre over $t=1$ is $X$, and whose fibre $X_0$ over $t=0$ is a scheme with support $\varphi(X)$.
 Show that $X_0$ always has nilpotent elements.
 Thus the example (III, 9.8.4) is typical.
 :::

@@ -36,7 +36,7 @@ audit:
 ::: {.problem}
 Let
 \[
-R = k[x_1, x_2, x_3, x_4] / \gens{x_1 x_4 - x_2 x_3}
+R = k[x_1, x_2, x_3, x_4] / \generators{x_1 x_4 - x_2 x_3}
 \]
 and show the following:
 
@@ -46,7 +46,7 @@ b. $x_1, \cdots, x_4$ are irreducible but not prime in $R$, and thus $R$ is not 
 
 c. $x_1 x_4$ and $x_2 x_3$ are two decompositions of the same element in $R$ which are nonassociate.
 
-d. $\gens{x_1, x_2}$ is a prime ideal of codimension 1 in $R$ that is not principal.
+d. $\generators{x_1, x_2}$ is a prime ideal of codimension 1 in $R$ that is not principal.
 :::
 
 ::: {.solution}
@@ -107,20 +107,20 @@ The ideals
 $$
 (0)
 \subsetneq
-\gens{x_1,x_2}
+\generators{x_1,x_2}
 \subsetneq
-\gens{x_1,x_2,x_3}
+\generators{x_1,x_2,x_3}
 \subsetneq
-\gens{x_1,x_2,x_3,x_4}
+\generators{x_1,x_2,x_3,x_4}
 $$
 form a chain of prime ideals in $R$. Indeed,
 $$
 \begin{aligned}
-R/\gens{x_1,x_2}
+R/\generators{x_1,x_2}
 &\cong k[x_3,x_4],\\
-R/\gens{x_1,x_2,x_3}
+R/\generators{x_1,x_2,x_3}
 &\cong k[x_4],\\
-R/\gens{x_1,x_2,x_3,x_4}
+R/\generators{x_1,x_2,x_3,x_4}
 &\cong k,
 \end{aligned}
 $$
@@ -229,7 +229,7 @@ factorizations are therefore nonassociate.
 ::: {.pf-step #ideal-prime-codim-one}
 (d) The ideal
 $$
-I=\gens{x_1,x_2}
+I=\generators{x_1,x_2}
 $$
 is a prime ideal of codimension $1$.
 
@@ -242,9 +242,9 @@ so $I$ is prime. The chain
 $$
 I
 \subsetneq
-\gens{x_1,x_2,x_3}
+\generators{x_1,x_2,x_3}
 \subsetneq
-\gens{x_1,x_2,x_3,x_4}
+\generators{x_1,x_2,x_3,x_4}
 $$
 consists of prime ideals. Since $\dim R=3$ by step [](#dim-r-is-3){.pf-ref}, there cannot be a
 nonzero prime strictly between $(0)$ and $I$, for otherwise adjoining the
@@ -259,7 +259,7 @@ Thus $I$ has codimension $1$.
 :::
 
 ::: {.pf-step #ideal-not-principal}
-(d) The ideal $I=\gens{x_1,x_2}$ is not principal.
+(d) The ideal $I=\generators{x_1,x_2}$ is not principal.
 
 ::: pf-proof
 Suppose

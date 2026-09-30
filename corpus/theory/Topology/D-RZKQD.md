@@ -16,14 +16,14 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space and $I=[0,1]$.
-The \dfn{suspension} $SX$ is the quotient of $X\times I$ obtained by collapsing $X\times\ts{0}$ to one point and $X\times\ts{1}$ to another point [@Hat02].
+The \dfn{suspension} $SX$ is the quotient of $X\times I$ obtained by collapsing $X\times\theset{0}$ to one point and $X\times\theset{1}$ to another point [@Hat02].
 For a based space $(X,x_0)$, the \dfn{reduced suspension} is
 $$
-\Sigma X\coloneqq\frac{X\times I}{(X\times\ts{0})\cup(X\times\ts{1})\cup(\ts{x_0}\times I)},
+\Sigma X\coloneqq\frac{X\times I}{(X\times\theset{0})\cup(X\times\theset{1})\cup(\theset{x_0}\times I)},
 $$
-the quotient of $SX$ obtained by collapsing the segment $\ts{x_0}\times I$ to a point [@Hat02].
+the quotient of $SX$ obtained by collapsing the segment $\theset{x_0}\times I$ to a point [@Hat02].
 :::
 
 ::: {.remark}
-$SX$ is the union of two copies of the [[D-II4M4|cone]] $CX=(X\times I)/(X\times\ts{0})$ glued along their copies of $X\times\ts{1}\cong X$.
+$SX$ is the union of two copies of the [[D-II4M4|cone]] $CX=(X\times I)/(X\times\theset{0})$ glued along their copies of $X\times\theset{1}\cong X$.
 :::

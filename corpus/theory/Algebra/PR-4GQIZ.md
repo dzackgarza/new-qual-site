@@ -20,11 +20,11 @@ Let $k$ be a field, let $V$ be a nonzero finite-dimensional $k$-vector space, an
 Make $V$ a $k[x]$-module by $f(x) \cdot v \coloneqq f(T)v$, and let $\min_T(x)$ be the [[D-GK5SF|minimal polynomial]] of $T$.
 The following are equivalent:
 
-- $V \cong k[x]/\gens{\min_T}$ as $k[x]$-modules.
+- $V \cong k[x]/\generators{\min_T}$ as $k[x]$-modules.
 
 - $V$ admits a cyclic vector: there is $v \in V$ such that $v, Tv, T^2v, \ldots$ span $V$. For such $v$, $\min_T$ is the monic polynomial $p$ of least degree with $p(T)v = 0$.
 
-- $V$ is a [[D-HY7UU|cyclic]] $k[x]$-module. Its annihilator is then the ideal $\gens{\min_T}$.
+- $V$ is a [[D-HY7UU|cyclic]] $k[x]$-module. Its annihilator is then the ideal $\generators{\min_T}$.
 
 - The matrix of $T$ in some basis of $V$ is the [[D-HJR7M|companion matrix]] $C_{\min_T}$.
 

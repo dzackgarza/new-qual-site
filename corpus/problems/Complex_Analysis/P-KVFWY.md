@@ -35,7 +35,7 @@ Just reproducing the proof of holomorphicity in the Schwarz reflection theorem.
 
   - Now let $\eps\to 0$ and conclude by continuity of $f$.
 
-    - Parametrize $\Delta$ by a piecewise-smooth closed curve $\gamma: [a,b] \to \CC$, and write $\gamma_\eps(t) \da \gamma(t) + i\eps$ for the corresponding parametrization of $\Delta_\eps$.
+    - Parametrize $\Delta$ by a piecewise-smooth closed curve $\gamma: [a,b] \to \CC$, and write $\gamma_\eps(t) \definedas \gamma(t) + i\eps$ for the corresponding parametrization of $\Delta_\eps$.
       Then $\gamma_\eps'(t) = \gamma'(t)$, so
       $$
       \int_{\Delta_\eps} f = \int_a^b f(\gamma_\eps(t)) \gamma_\eps'(t)\,dt = \int_a^b f(\gamma(t) + i\eps) \gamma'(t)\,dt.

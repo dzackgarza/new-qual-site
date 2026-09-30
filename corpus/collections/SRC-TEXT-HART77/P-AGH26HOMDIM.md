@@ -18,11 +18,11 @@ review: draft
 Let $Y$ be a projective variety with homogeneous coordinate ring $S(Y)$.
 Show that $\dim S(Y) = \dim Y + 1$.
 
-Here $U_i \da \PP^n \sm H_i$, where $H_i = Z(x_i)$ is a coordinate hyperplane, and $\phi_i : U_i \to \AA^n$ is the homeomorphism
+Here $U_i \definedas \PP^n \sm H_i$, where $H_i = Z(x_i)$ is a coordinate hyperplane, and $\phi_i : U_i \to \AA^n$ is the homeomorphism
 \[
-\tv{a_0 : \cdots : a_n} \mapsto \qty{ \frac{a_0}{a_i}, \ldots, \widehat{\frac{a_i}{a_i}}, \ldots, \frac{a_n}{a_i} } .
+\thevector{a_0 : \cdots : a_n} \mapsto \qty{ \frac{a_0}{a_i}, \ldots, \widehat{\frac{a_i}{a_i}}, \ldots, \frac{a_n}{a_i} } .
 \]
-Conclude also that $\dim Y = \dim Y_i$ whenever $Y_i \da \phi_i(Y \intersect U_i)$ is nonempty.
+Conclude also that $\dim Y = \dim Y_i$ whenever $Y_i \definedas \phi_i(Y \intersect U_i)$ is nonempty.
 :::
 
 ::: {.solution}
@@ -31,9 +31,9 @@ Then $\dim Y = \sup_i \dim Y_i$, and since there are only finitely many charts t
 
 **The chart ring is the degree-zero part of a localization.** Define maps between $A(Y_0)$ and the degree-zero piece $\qty{S(Y)_{x_0}}_0$ by
 \[
-\alpha(f) \da f\qty{1, \frac{x_1}{x_0}, \ldots, \frac{x_n}{x_0}},
+\alpha(f) \definedas f\qty{1, \frac{x_1}{x_0}, \ldots, \frac{x_n}{x_0}},
 \qquad
-\beta(g) \da x_0^{\deg g} \cdot g(x_0, x_1, \ldots, x_n) .
+\beta(g) \definedas x_0^{\deg g} \cdot g(x_0, x_1, \ldots, x_n) .
 \]
 These are mutually inverse ring maps: on the one hand
 \[

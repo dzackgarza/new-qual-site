@@ -19,7 +19,7 @@ For $\Re s>0$ the integral
 $$
 \Gamma(s)=\int_0^\infty e^{-t}t^{s-1}\dt
 $$
-converges absolutely, and it defines a [[D-E7A5W|holomorphic]] function on the right half-plane $\ts{s\in\CC\st\Re s>0}$.
+converges absolutely, and it defines a [[D-E7A5W|holomorphic]] function on the right half-plane $\theset{s\in\CC\st\Re s>0}$.
 :::
 
 ::: {.proof}
@@ -30,7 +30,7 @@ $$
 $$
 The integrand is continuous in $(t,s)$ and holomorphic in $s$, and the interval is compact, so each $\Gamma_\varepsilon$ is entire.
 
-Fix $n\ge1$ and the strip $A_n\coloneqq\ts{s\st \frac1n<\Re s<n}$.
+Fix $n\ge1$ and the strip $A_n\coloneqq\theset{s\st \frac1n<\Re s<n}$.
 For $s\in A_n$,
 $$
 \abs{\Gamma(s)-\Gamma_\varepsilon(s)}\le\int_0^\varepsilon t^{1/n-1}\dt+\int_{1/\varepsilon}^\infty e^{-t}t^{n-1}\dt,

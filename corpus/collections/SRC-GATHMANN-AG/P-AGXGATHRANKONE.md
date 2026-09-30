@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Define
 \[
-X \da \ts{M \in \Mat(2\times 3, k) \st \rk M \leq 1} \subseteq \AA^6/k
+X \definedas \theset{M \in \Mat(2\times 3, k) \st \rank M \leq 1} \subseteq \AA^6/k
 .\]
 
 Show that $X$ is an irreducible variety, and find its dimension.
@@ -32,17 +32,17 @@ We use the following fact from linear algebra.
 
 Thus
 \[
-M_{ij} = 0 \text{ for all } \ell\times \ell \text{ minors } M_{ij} \iff \rk(M) < \ell
+M_{ij} = 0 \text{ for all } \ell\times \ell \text{ minors } M_{ij} \iff \rank(M) < \ell
 ,\]
 following from the fact that if one takes $\ell = \min(m,n)$ and all $\ell\times \ell$ minors vanish, then the largest nonzero minor must be of size $j\times j$ for $j\leq \ell -1$.
 But $\det M_{ij}$ is a polynomial $f_{ij}$ in its entries, so $X$ can be written as
 \[
-X = V\qty{\ts{f_{ij}}}
+X = V\qty{\theset{f_{ij}}}
 ,\]
 which exhibits $X$ as a variety.
 Thus
 \[
-M =  \begin{bmatrix} x & y & z \\ a & b & c \end{bmatrix} \implies X = V\qty{\gens{xb-ya, yc-zb, xc-za}} \subset \AA^6
+M =  \begin{bmatrix} x & y & z \\ a & b & c \end{bmatrix} \implies X = V\qty{\generators{xb-ya, yc-zb, xc-za}} \subset \AA^6
 .\]
 
 **Claim**: the ideal above is prime, so the coordinate ring $A(X)$ is a domain and thus $X$ is irreducible.
@@ -55,5 +55,5 @@ To enforce the rank one condition, the second row must be a scalar multiple of t
 
 ::: {.remark}
 Erratum: the solution is incomplete.
-It shows that $X$ is the zero locus of the three $2 \times 2$ minors, but both claims it then needs, that the ideal $\gens{xb-ya, yc-zb, xc-za}$ is prime and that $\dim X = 4$, are asserted without proof, and the degree-of-freedom count is a heuristic rather than an argument.
+It shows that $X$ is the zero locus of the three $2 \times 2$ minors, but both claims it then needs, that the ideal $\generators{xb-ya, yc-zb, xc-za}$ is prime and that $\dim X = 4$, are asserted without proof, and the degree-of-freedom count is a heuristic rather than an argument.
 :::

@@ -25,7 +25,7 @@ prompts:
 
 ::: {.definition}
 For $X \in \Sch\slice S$ and $T \in \Sch\slice S$, a \dfn{$T$-valued point} of $X$ is a morphism $T \to X$ over $S$.
-The assignment $T \mapsto X(T) \da \Hom_S(T, X)$ is the **functor of points** of $X$, and $X \mapsto X(-)$ is fully faithful into $\Sets^{\opcat{\Sch\slice S}}$ by Yoneda.
+The assignment $T \mapsto X(T) \definedas \Hom_S(T, X)$ is the **functor of points** of $X$, and $X \mapsto X(-)$ is fully faithful into $\Sets^{\opcat{\Sch\slice S}}$ by Yoneda.
 :::
 
 ::: {.proposition}

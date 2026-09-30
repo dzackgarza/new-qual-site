@@ -34,7 +34,7 @@ audit:
 ::: {.problem}
 Let $k$ be an algebraically closed field of characteristic $2$. Let $P_1, \ldots, P_7 \in \PP_k^2$ be the seven points of the projective plane over the prime field $\FF_2 \subseteq k$. Let $D$ be the linear system of all cubic curves in $X = \PP_k^2$ passing through $P_1, \ldots, P_7$.
 
-a. Show that $D$ is a linear system of dimension $2$ with base points $P_1, \ldots, P_7$, which determines an inseparable morphism of degree $2$ from $X - \ts{P_i}$ to $\PP^2$.
+a. Show that $D$ is a linear system of dimension $2$ with base points $P_1, \ldots, P_7$, which determines an inseparable morphism of degree $2$ from $X - \theset{P_i}$ to $\PP^2$.
 
 b. Show that every curve $C \in D$ is singular.
 

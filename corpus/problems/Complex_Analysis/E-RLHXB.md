@@ -18,7 +18,7 @@ review: draft
 ::: {.exercise}
 Without using the residue formula, compute
 \[
-\int_\RR f(x) \dx && f(x) \da {1\over x^4 + 16}
+\int_\RR f(x) \dx && f(x) \definedas {1\over x^4 + 16}
 .\]
 
 :::
@@ -27,8 +27,8 @@ Without using the residue formula, compute
 Use a semicircular contour, noting the poles are at $\pm \sqrt 2 \pm i\sqrt 2$. 
 Write
 
-- $f_1(z) \da (\sqrt 2 + i\sqrt 2)f(z)$
-- $f_2(z) \da (-\sqrt 2 + i\sqrt 2) f(z)$.
+- $f_1(z) \definedas (\sqrt 2 + i\sqrt 2)f(z)$
+- $f_2(z) \definedas (-\sqrt 2 + i\sqrt 2) f(z)$.
 
 Break the curve up into two integrals $I_1, I_2$ enclosing the poles, by Cauchy one gets
 

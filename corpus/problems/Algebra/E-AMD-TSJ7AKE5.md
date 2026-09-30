@@ -21,7 +21,7 @@ audit:
 ::: {.exercise}
 Given a subgroup $H\leq G$, let
 \[
-\mathcal C(H)=\ts{gHg^{-1}:g\in G}
+\mathcal C(H)=\theset{gHg^{-1}:g\in G}
 \]
 be the set of subgroups conjugate to $H$.
 Show that

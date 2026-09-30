@@ -20,8 +20,8 @@ prompts:
 ---
 
 ::: {.example title="Not separated"}
-Glue two copies of $\AA^1_k$ along $\AA^1 \sm \ts{0}$ by the identity.
-The result $X$ has two origins, and $X \to \Spec k$ is not separated: the two inclusions $\AA^1 \to X$ agree on the dense open $\AA^1 \sm \ts{0}$ and differ at $0$, so the agreement locus is not closed.
+Glue two copies of $\AA^1_k$ along $\AA^1 \sm \theset{0}$ by the identity.
+The result $X$ has two origins, and $X \to \Spec k$ is not separated: the two inclusions $\AA^1 \to X$ agree on the dense open $\AA^1 \sm \theset{0}$ and differ at $0$, so the agreement locus is not closed.
 
 By the proposition this *is* the failure of separatedness, not merely an illustration of it.
 :::

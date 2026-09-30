@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="Gluing data"}
-Let $\ts{X_i}$ be schemes, and for each pair $i,j$ let $U_{ij} \subseteq X_i$ be open with isomorphisms $\varphi_{ij}: U_{ij} \to U_{ji}$ satisfying $\varphi_{ii} = \id$, $\varphi_{ji} = \inverseof{\varphi_{ij}}$, and the cocycle condition $\varphi_{ik} = \varphi_{jk} \circ \varphi_{ij}$ on $U_{ij} \intersect U_{ik}$.
+Let $\theset{X_i}$ be schemes, and for each pair $i,j$ let $U_{ij} \subseteq X_i$ be open with isomorphisms $\varphi_{ij}: U_{ij} \to U_{ji}$ satisfying $\varphi_{ii} = \id$, $\varphi_{ji} = \inverseof{\varphi_{ij}}$, and the cocycle condition $\varphi_{ik} = \varphi_{jk} \circ \varphi_{ij}$ on $U_{ij} \intersect U_{ik}$.
 Then there is a scheme $X$ with an open cover by copies of the $X_i$ inducing the $\varphi_{ij}$, unique up to isomorphism.
 :::
 
@@ -30,7 +30,7 @@ The result is $\PP^n\slice k$, and its global sections are $k$, so it is not aff
 :::
 
 ::: {.remark}
-The same charts with different transition maps produce different schemes: gluing two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity gives the line with a doubled origin, while gluing by $t \mapsto \inverseof{t}$ gives $\PP^1$.
-The line with a doubled origin is not separated: its two open embeddings of $\AA^1$ agree on $\AA^1\sm\ts{0}$ and differ at the origin.
+The same charts with different transition maps produce different schemes: gluing two copies of $\AA^1$ along $\AA^1 \sm \theset{0}$ by the identity gives the line with a doubled origin, while gluing by $t \mapsto \inverseof{t}$ gives $\PP^1$.
+The line with a doubled origin is not separated: its two open embeddings of $\AA^1$ agree on $\AA^1\sm\theset{0}$ and differ at the origin.
 The scheme $\PP^1$ is separated, and it is proper over the base field.
 :::

@@ -53,7 +53,7 @@ Show that $N \cong \im f \oplus \ker g$.
   0 = g(n) = g(f(m)) = (g\circ f)(m)
   = \id_M(m) = m
   ,\]
-  so $m=0$ and since $f$ is a morphism in \(R\dash\)modules, $n\da f(m) = 0$.
+  so $m=0$ and since $f$ is a morphism in \(R\dash\)modules, $n\definedas f(m) = 0$.
 :::
 
 

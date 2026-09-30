@@ -16,7 +16,7 @@ review: draft
 ::: {.definition}
 Let $(X,d)$ be a metric space, let $p\in X$, and let $E\subseteq X$.
 
-(a) For $r>0$, the \dfn{neighborhood} of $p$ of \dfn{radius} $r$ is $N_r(p)\coloneqq\ts{q\in X\st d(p,q)<r}$.
+(a) For $r>0$, the \dfn{neighborhood} of $p$ of \dfn{radius} $r$ is $N_r(p)\coloneqq\theset{q\in X\st d(p,q)<r}$.
 
 (b) The point $p$ is a \dfn{limit point} of $E$ if every neighborhood of $p$ contains a point $q\in E$ with $q\neq p$.
 
@@ -28,7 +28,7 @@ Let $(X,d)$ be a metric space, let $p\in X$, and let $E\subseteq X$.
 
 (f) $E$ is \dfn{open} if every point of $E$ is an interior point of $E$.
 
-(g) The \dfn{complement} of $E$ is $E^c\coloneqq\ts{p\in X\st p\notin E}$.
+(g) The \dfn{complement} of $E$ is $E^c\coloneqq\theset{p\in X\st p\notin E}$.
 
 (h) $E$ is \dfn{perfect} if $E$ is closed and every point of $E$ is a limit point of $E$.
 
@@ -38,6 +38,6 @@ Let $(X,d)$ be a metric space, let $p\in X$, and let $E\subseteq X$.
 :::
 
 ::: {.remark}
-A point $p\in X$ is a limit point of $E$ if and only if $(N_r(p)\setminus\ts{p})\cap E\neq\emptyset$ for every $r>0$.
+A point $p\in X$ is a limit point of $E$ if and only if $(N_r(p)\setminus\theset{p})\cap E\neq\emptyset$ for every $r>0$.
 By (c), every point of $E$ is either a limit point or an isolated point of $E$, and not both.
 :::

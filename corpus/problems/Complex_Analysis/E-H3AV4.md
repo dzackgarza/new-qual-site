@@ -17,7 +17,7 @@ review: draft
 ::: {.problem}
 Let $\lambda = {1\over 2}\qty{1 + i \sqrt{3}}$ and find a map 
 \[
-R \da \ts{\abs{z - \lambda} < 1} \intersect \ts{\abs{z-\bar{\lambda}} < 1 } \too \DD
+R \definedas \theset{\abs{z - \lambda} < 1} \intersect \theset{\abs{z-\bar{\lambda}} < 1 } \too \DD
 .\]
 :::
 
@@ -28,12 +28,12 @@ Let $C_1=\theset{\abs{z-\lambda}=1}$ and $C_2=\theset{\abs{z-\bar\lambda}=1}$. S
 
 Send the vertices $0$ and $1$ of the lens to $0$ and $\infty$ with
 \[
-f(z) \da {z\over 1-z}
+f(z) \definedas {z\over 1-z}
 .\]
 
 ::: {.claim}
 \[
-f(R) = \ts{z\st -\theta_0 < \Arg(z) < \theta_0 },\qquad \theta_0 \da {\pi \over 6}
+f(R) = \theset{z\st -\theta_0 < \Arg(z) < \theta_0 },\qquad \theta_0 \definedas {\pi \over 6}
 .\]
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_19-35-44.png)

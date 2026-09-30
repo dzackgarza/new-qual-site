@@ -24,13 +24,13 @@ First, prove the following version of the tube lemma; then prove the theorem.
 
 Lemma.
 Let $\mathcal{A}$ be a collection of basis elements for the topology of the product space $X \times Y$, such that no finite subcollection of $\mathcal{A}$ covers $X \times Y$.
-If $X$ is compact, there is a point $x \in X$ such that no finite subcollection of $\mathcal{A}$ covers the slice $\ts{x} \times Y$.
+If $X$ is compact, there is a point $x \in X$ such that no finite subcollection of $\mathcal{A}$ covers the slice $\theset{x} \times Y$.
 
 Theorem.
 An arbitrary product of compact spaces is compact in the product topology.
 
 Proof.
-Let $\ts{X_\alpha}_{\alpha \in J}$ be an indexed family of compact spaces, let
+Let $\theset{X_\alpha}_{\alpha \in J}$ be an indexed family of compact spaces, let
 
 $$
 X = \prod_{\alpha \in J} X_\alpha.
@@ -44,14 +44,14 @@ Suppose points $p_i \in X_i$ are given, for all $i < \beta$.
 For any $\alpha < \beta$, let $Y_\alpha$ denote the subspace of $X$ defined by the equation
 
 $$
-Y_\alpha = \ts{\mathbf{x} \mid \pi_i(\mathbf{x}) = p_i \text{ for } i \leq \alpha}.
+Y_\alpha = \theset{\mathbf{x} \mid \pi_i(\mathbf{x}) = p_i \text{ for } i \leq \alpha}.
 $$
 
 Note that if $\alpha < \alpha'$, then $Y_\alpha \supset Y_{\alpha'}$.
 Show that if $\mathcal{A}$ is a finite collection of basis elements for $X$ that covers the space
 
 $$
-Z_\beta = \bigcap_{\alpha < \beta} Y_\alpha = \ts{\mathbf{x} \mid \pi_i(\mathbf{x}) = p_i \text{ for } i < \beta},
+Z_\beta = \bigcap_{\alpha < \beta} Y_\alpha = \theset{\mathbf{x} \mid \pi_i(\mathbf{x}) = p_i \text{ for } i < \beta},
 $$
 
 then $\mathcal{A}$ actually covers $Y_\alpha$ for some $\alpha < \beta$.

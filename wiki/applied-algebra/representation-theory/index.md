@@ -34,7 +34,7 @@ and $r$ is the number of conjugacy classes of $G$.
 
 ## Induced representations, the symmetric group, and indicators
 
-- **Induced and restricted representations.** For $H\le G$, a character $\psi$ of $H$, and a character $\chi$ of $G$, Frobenius reciprocity gives $\inner{\Ind_H^G \psi}{\chi}_G = \inner{\psi}{\Res^G_H\chi}_H$; characters of $G$ are obtained by inducing characters of subgroups and decomposing.
+- **Induced and restricted representations.** For $H\le G$, a character $\psi$ of $H$, and a character $\chi$ of $G$, Frobenius reciprocity gives $\inner{\Indcat_H^G \psi}{\chi}_G = \inner{\psi}{\Res^G_H\chi}_H$; characters of $G$ are obtained by inducing characters of subgroups and decomposing.
 
 - **The symmetric group.** The irreducible representations of $S_n$ are indexed by the partitions of $n$, their characters are computed by the Murnaghan--Nakayama rule, and their dimensions by the hook length formula; see [[applied-algebra/symmetric-functions/index|Symmetric functions]].
 

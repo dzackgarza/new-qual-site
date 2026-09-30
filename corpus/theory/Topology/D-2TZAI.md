@@ -26,5 +26,5 @@ The pair $(X, \tau)$ is a \dfn{topological space}, the elements of $\tau$ are it
 :::
 
 ::: {.remark}
-By De Morgan's laws, a collection $\mathcal F$ of subsets of $X$ is the collection of closed sets of a topology on $X$ if and only if $\emptyset, X\in\mathcal F$, $\mathcal F$ is closed under arbitrary intersections, and $\mathcal F$ is closed under finite unions; the topology is then $\ts{X\sm F \st F\in\mathcal F}$.
+By De Morgan's laws, a collection $\mathcal F$ of subsets of $X$ is the collection of closed sets of a topology on $X$ if and only if $\emptyset, X\in\mathcal F$, $\mathcal F$ is closed under arbitrary intersections, and $\mathcal F$ is closed under finite unions; the topology is then $\theset{X\sm F \st F\in\mathcal F}$.
 :::

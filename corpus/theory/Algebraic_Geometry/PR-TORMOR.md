@@ -36,12 +36,12 @@ Each $u \in N$ gives a one-parameter subgroup $\lambda^u : \GG_m \to T$, and the
 It does exactly when $u$ lies in some cone of $\Sigma$, and the limit is the distinguished point $x_\sigma$ of the smallest cone containing $u$.
 So full support means every one-parameter subgroup converges, which is completeness.
 
-For $\PP^2$ with $T = \ts{(1 : s : t)}$ and $\lambda^u(t) = (1 : t^{u_1} : t^{u_2})$, the three maximal cones of the fan are precisely the three regions of $u$ sending the limit to each of the three coordinate points.
+For $\PP^2$ with $T = \theset{(1 : s : t)}$ and $\lambda^u(t) = (1 : t^{u_1} : t^{u_2})$, the three maximal cones of the fan are precisely the three regions of $u$ sending the limit to each of the three coordinate points.
 :::
 
 ::: {.remark title="Two cheap invariants"}
 \[
-\pi_1(X_\Sigma) \cong N / N', \qquad N' = \gens{ \sigma \intersect N \st \sigma \in \Sigma } ,
+\pi_1(X_\Sigma) \cong N / N', \qquad N' = \generators{ \sigma \intersect N \st \sigma \in \Sigma } ,
 \]
 so a fan whose rays generate $N$ gives a simply connected variety.
 For $X_\Sigma$ smooth and complete, the topological Euler characteristic is the number of maximal cones,

@@ -20,7 +20,7 @@ $$
 z = re^{i\theta} = re^{i\qty{\theta + 2k\pi}} \implies z^{1/n} =
 \qty{ re^{i\qty{\theta + 2k\pi}} }^{1\over n} = r^{1\over n} e^{i\qty{\theta + 2k\pi \over n}},
 \qquad
-\ts{ \omega_k \coloneqq r^{1/n} e^{i \qty{ \theta + 2k\pi \over n} } \st 0 \leq k \leq n-1 }.
+\theset{ \omega_k \coloneqq r^{1/n} e^{i \qty{ \theta + 2k\pi \over n} } \st 0 \leq k \leq n-1 }.
 $$
 The roots have modulus $r^{1/n}$ and are spaced by angles of $2\pi/n$.
 Writing the argument as $\theta + 2k\pi$ before taking the root produces all $n$ of them.

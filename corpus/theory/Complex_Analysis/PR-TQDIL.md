@@ -16,7 +16,7 @@ review: draft
 ::: {.proposition}
 The map
 $$
-F\colon\ts{z\st\abs{\Re z}<\tfrac\pi2,\ \Im z>0}\to\ts{w\st\abs{w}<1,\ \Re w>0},\qquad F(z)=e^{iz},
+F\colon\theset{z\st\abs{\Re z}<\tfrac\pi2,\ \Im z>0}\to\theset{w\st\abs{w}<1,\ \Re w>0},\qquad F(z)=e^{iz},
 $$
 is a [[D-TM4TE|biholomorphism]] from the vertical half-strip onto the right half-disc, with inverse $w\mapsto-i\Log w$, where $\Log$ is the [[D-4CSPM|principal branch]] of the logarithm.
 :::

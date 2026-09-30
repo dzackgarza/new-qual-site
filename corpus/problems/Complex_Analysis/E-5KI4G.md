@@ -17,7 +17,7 @@ review: draft
 ::: {.exercise}
 Determine where the following real-valued function is or is not uniformly convergent:
 \[
-f_n(x) \da {\sin(nx)\over 1+nx}
+f_n(x) \definedas {\sin(nx)\over 1+nx}
 .\]
 
 :::
@@ -32,7 +32,7 @@ The convergence is uniform on $[a, \infty)$ for every $a>0$:
 
 The convergence is not uniform on $(0, \infty)$: 
 \[
-x_n \da {1\over n} \implies \sup_{x>0}\abs{f_n(x)}\geq\abs{f_n(x_n)} = {\sin(1) \over 2}
+x_n \definedas {1\over n} \implies \sup_{x>0}\abs{f_n(x)}\geq\abs{f_n(x_n)} = {\sin(1) \over 2}
 \]
 for every $n$.
 :::

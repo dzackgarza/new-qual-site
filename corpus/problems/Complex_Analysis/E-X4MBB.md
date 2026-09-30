@@ -19,7 +19,7 @@ Solve $z^4=i$.
 
 ::: {.solution}
 First find a principal root: $z^4=i = e^{i\pi\over 2} \implies z_0 = e^{i\pi \over 8}$.
-Now all of the roots are $\ts{z_k = z_0 \zeta_4^k \st k=0,1,2,3}$ where $\zeta_4=e^{2\pi i \over 4} = e^{i\pi \over 2}$, so
+Now all of the roots are $\theset{z_k = z_0 \zeta_4^k \st k=0,1,2,3}$ where $\zeta_4=e^{2\pi i \over 4} = e^{i\pi \over 2}$, so
 
 - $z_0 = e^{i\pi \over 8} e^{0i\pi \over 4} = e^{i\pi \over 8}$ corresponding to ${1\over 8} + {0\over 4}$,
 

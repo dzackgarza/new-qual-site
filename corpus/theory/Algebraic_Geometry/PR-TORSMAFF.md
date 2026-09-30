@@ -47,7 +47,7 @@ $X_\Sigma$ is normal.
 :::
 
 ::: {.remark}
-The reason is that $S_\sigma$ is a *saturated* semigroup: if $\ell m \in S_\sigma$ for some $\ell > 0$ then $m \in S_\sigma$, since the defining inequalities $\inp{m}{u} \geq 0$ are homogeneous.
+The reason is that $S_\sigma$ is a *saturated* semigroup: if $\ell m \in S_\sigma$ for some $\ell > 0$ then $m \in S_\sigma$, since the defining inequalities $\inner{m}{u} \geq 0$ are homogeneous.
 Concretely, $k[S_\sigma]$ is the intersection of the rings $k[S_\tau]$ over the rays $\tau \leq \sigma$, each of which is a Laurent polynomial ring $k[x_1, x_2^{\pm 1}, \ldots, x_n^{\pm 1}]$ and so integrally closed, and an intersection of integrally closed domains with the same fraction field is integrally closed.
 
 This is the standing caveat on the whole dictionary: fans produce *normal* toric varieties only.

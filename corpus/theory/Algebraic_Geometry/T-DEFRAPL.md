@@ -28,17 +28,17 @@ prompts:
 Let $(F,G)$ be an adjoint pair between categories in which limits and colimits exist, with $F$ the left adjoint.
 Then **right adjoints preserve limits**,
 \[
-G\qty( \inverselim_i B_i ) \cong \inverselim_i G(B_i) ,
+G\qty( \projectivelim_i B_i ) \cong \projectivelim_i G(B_i) ,
 \]
 and **left adjoints preserve colimits**,
 \[
-F\qty( \directlim_i A_i ) \cong \directlim_i F(A_i) .
+F\qty( \injectivelim_i A_i ) \cong \injectivelim_i F(A_i) .
 \]
 :::
 
 ::: {.remark}
-The proof is a universal property check: applying $G$ to a diagram $B_i$ gives a diagram $G(B_i)$, and adjointness converts a cone on $G(B_i)$ with vertex $T$ into a cone on $B_i$ with vertex $F(T)$, hence a unique map $F(T) \to \inverselim B_i$, hence a unique $T \to G(\inverselim B_i)$.
-That is exactly the universal property of $\inverselim G(B_i)$.
+The proof is a universal property check: applying $G$ to a diagram $B_i$ gives a diagram $G(B_i)$, and adjointness converts a cone on $G(B_i)$ with vertex $T$ into a cone on $B_i$ with vertex $F(T)$, hence a unique map $F(T) \to \projectivelim B_i$, hence a unique $T \to G(\projectivelim B_i)$.
+That is exactly the universal property of $\projectivelim G(B_i)$.
 The colimit statement is the same argument run the other way.
 
 The payoff is the exactness of the tensor-hom pair, with no diagram chase.

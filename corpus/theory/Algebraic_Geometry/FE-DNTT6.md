@@ -21,7 +21,7 @@ prompts:
 ::: {.example}
 On $X = \CC^*$ take the exponential sequence
 \[
-0 \to \ul{\ZZ} \xrightarrow{\ 2\pi i\ } \OO_X \xrightarrow{\ \exp\ } \OO_X^* \to 0 .
+0 \to \underline{\ZZ} \xrightarrow{\ 2\pi i\ } \OO_X \xrightarrow{\ \exp\ } \OO_X^* \to 0 .
 \]
 It is exact as a sequence of sheaves, because it is exact on stalks: near any point a nonvanishing holomorphic function has a logarithm.
 

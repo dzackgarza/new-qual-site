@@ -25,10 +25,10 @@ for all sufficiently large $n$'s.
 Key observation:
 \[
 P_n(z) = \sum_{1\leq k\leq n-1} kz^{k-1} = \dd{}{z}Q_n(z) 
-\qquad Q(z) \da \sum_{0\leq k \leq n} z^k
+\qquad Q(z) \definedas \sum_{0\leq k \leq n} z^k
 .\]
 Note that $Q(z) \to \sum_{k\geq 0} z^k = {1\over 1-z}$ uniformly on $\abs{z} \leq R < 1$ since this power series has radius of convergence 1.
-Similarly $P_n(z)$ converges uniformly to $\dd{}{z}{1\over 1-z} = {1\over (1-z)^2}$, so let $P(z) \da {1\over (1-z)^2}$.
+Similarly $P_n(z)$ converges uniformly to $\dd{}{z}{1\over 1-z} = {1\over (1-z)^2}$, so let $P(z) \definedas {1\over (1-z)^2}$.
 Note that $P$ is nonvanishing in $\DD$.
 
 Strategy:
@@ -44,7 +44,7 @@ Just by considering the geometry of circles of radius $R < 1$ and $1$ and measur
 Now fix $\eps < {1\over 4}$ and use uniform convergence of $P_n\to P$ to produce an $N$ such that $n\geq N$ implies $\norm{P-P_n}_\infty < \eps$ in $\abs{z} \leq R$.
 Then on $\abs{z} = R$, for $n\geq N$,
 \[
-\abs{m(z)} \da \abs{P(z) - P_n(z)} \leq \norm{P - P_n}_\infty < \eps < {1\over 4} \leq \abs{P(z)} = \abs{M(z)}
+\abs{m(z)} \definedas \abs{P(z) - P_n(z)} \leq \norm{P - P_n}_\infty < \eps < {1\over 4} \leq \abs{P(z)} = \abs{M(z)}
 ,\]
 so $0 = Z_P = Z_{P_n}$ by Rouché.
 :::

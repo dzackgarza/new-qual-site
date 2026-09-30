@@ -35,9 +35,9 @@ Then $E$ has Hasse invariant zero, that is $E$ is supersingular, if and only if
 :::
 
 ::: {.theorem title="The Legendre family"}
-For $p \neq 2$ and $E \colon y^2 = x(x-1)(x-\lambda)$ with $\lambda \neq 0,1$, put $m \da \tfrac{p-1}{2}$ and
+For $p \neq 2$ and $E \colon y^2 = x(x-1)(x-\lambda)$ with $\lambda \neq 0,1$, put $m \definedas \tfrac{p-1}{2}$ and
 \[
-h_p(\lambda) \da \sum_{i=0}^{m} \binom{m}{i}^2 \lambda^i .
+h_p(\lambda) \definedas \sum_{i=0}^{m} \binom{m}{i}^2 \lambda^i .
 \]
 Then $E$ is supersingular exactly when $h_p(\lambda) = 0$.
 Consequently, for each $p$ there are at most $\left\lfloor p/12 \right\rfloor + 2$ supersingular elliptic curves over $\bar k$ up to isomorphism.

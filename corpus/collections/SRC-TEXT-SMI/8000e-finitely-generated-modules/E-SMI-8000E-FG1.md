@@ -32,13 +32,13 @@ How many are there?
 (b) Write down one $k[t]$ module $V$, in each $k[t]$ isomorphism class, of $k$-dimension 7, and such that the subspace
 
 $$
-V(2) = \ts{x \in V : \text{for some } r, \ (t - 2)^r \cdot x = 0}
+V(2) = \theset{x \in V : \text{for some } r, \ (t - 2)^r \cdot x = 0}
 $$
 
 has $k$-dimension 3, and the subspace
 
 $$
-V(3) = \ts{x \in V : \text{for some } r, \ (t - 3)^r \cdot x = 0}
+V(3) = \theset{x \in V : \text{for some } r, \ (t - 3)^r \cdot x = 0}
 $$
 
 has $k$-dimension 4. How many are there?

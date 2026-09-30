@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 Suppose $f:\DD\to \DD$ with $f(a) = a$ a fixed point where $\abs{f'(a)} < 1$.
-Show that for any initial point $z_0$, the sequence $z_k \da f(z_{k-1})$ converges to $a$.
+Show that for any initial point $z_0$, the sequence $z_k \definedas f(z_{k-1})$ converges to $a$.
 
 :::
 
@@ -36,11 +36,11 @@ With such an $r$ and $C<1$ in hand,
 which proves the $a=0$ case.
 
 ::: {.proof title="That $f$ is a contraction"}
-The claim is that for any given $r$, the constant $C\da M/r$ works, where $M\da \max_{\abs{z} = r} \abs{f(z)}>0$.
+The claim is that for any given $r$, the constant $C\definedas M/r$ works, where $M\definedas \max_{\abs{z} = r} \abs{f(z)}>0$.
 The scaled Schwarz lemma gives $\abs{f(z)}\leq {M\over r}\abs{z} = C\abs{z}$, and $\abs{C} \leq 1$ since $\abs{M} \leq r$, which follows because $\abs{f(z)}\leq \abs{z}$ on $\DD$ itself.
 :::
 
-For $a\neq 0$, take a Blaschke factor $\psi_a(z)$ and consider $F \da \inverseof{\psi_a} \circ f\circ \psi_a$.
+For $a\neq 0$, take a Blaschke factor $\psi_a(z)$ and consider $F \definedas \inverseof{\psi_a} \circ f\circ \psi_a$.
 The claim is that this reduces to the case $a=0$.
 
 Note $F(0) = 0$, so $0$ is a fixed point of $F$.
@@ -56,7 +56,7 @@ F'(0)
 &= 1 \cdot f'(a)
 ,\]
 so $\abs{F'(0)} = \abs{f'(a)} < 1$.
-Now setting $w_k \da \psi_a(z_n)$ and writing $f = \psi_a \circ F \circ \inverseof{\psi_a}$, by continuity we have
+Now setting $w_k \definedas \psi_a(z_n)$ and writing $f = \psi_a \circ F \circ \inverseof{\psi_a}$, by continuity we have
 \[
 f(z_k) = \psi_a(F(w_k)) \convergesto{k\to\infty} \psi_a(0) = a
 .\]

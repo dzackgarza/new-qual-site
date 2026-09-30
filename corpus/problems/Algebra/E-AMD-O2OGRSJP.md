@@ -31,10 +31,10 @@ Let $\sigma \in S_n$ with $\sigma \neq \id$, and fix $i$ with $\sigma(i) = j \ne
 :::
 
 ::: {.pf-step #exists-third-point}
-There is a point $k \notin \ts{i, j}$.
+There is a point $k \notin \theset{i, j}$.
 
 ::: pf-proof
-$\ts{1, \dots, n}$ has $n \geq 4$ elements and $\ts{i,j}$ has two.
+$\theset{1, \dots, n}$ has $n \geq 4$ elements and $\theset{i,j}$ has two.
 :::
 
 :::
@@ -45,7 +45,7 @@ $\sigma$ does not commute with the transposition $\tau = (j\, k)$.
 ::: pf-proof
 
 ::: pf-step
-$(\sigma\tau)(i) = \sigma(\tau(i)) = \sigma(i) = j$, since $i \notin \ts{j,k}$ and so $\tau$ fixes $i$.
+$(\sigma\tau)(i) = \sigma(\tau(i)) = \sigma(i) = j$, since $i \notin \theset{j,k}$ and so $\tau$ fixes $i$.
 :::
 
 ::: pf-step

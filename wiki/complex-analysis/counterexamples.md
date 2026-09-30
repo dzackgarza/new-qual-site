@@ -27,7 +27,7 @@ An entire function with $\abs{f(z)} \leq C\abs z^n$ for large $\abs z$ is a poly
 
 **Zeros in the minimum modulus principle.** $f(z) = z$ on $\DD$ is nonconstant, and $\abs f$ has its minimum at the interior point $0$, a zero of $f$.
 
-**Unbounded domains.** On the strip $S\coloneqq\ts{\abs{\Im z}<\pi/2}$, the function $f(z) = \exp(e^z)$ is holomorphic on $\overline S$ with $\abs f = 1$ on $\bd S$, since $e^z = \pm i e^x$ there, and $f(x) = \exp(e^x)$ is unbounded on $\RR\subseteq S$.
+**Unbounded domains.** On the strip $S\coloneqq\theset{\abs{\Im z}<\pi/2}$, the function $f(z) = \exp(e^z)$ is holomorphic on $\overline S$ with $\abs f = 1$ on $\bd S$, since $e^z = \pm i e^x$ there, and $f(x) = \exp(e^x)$ is unbounded on $\RR\subseteq S$.
 By the Phragmén--Lindelöf principle for $S$, if $f$ is holomorphic on $S$, continuous on $\overline S$, $\abs f\leq 1$ on $\bd S$, and $\abs{f(z)}\leq \exp\qty{Ae^{\alpha\abs{\Re z}}}$ on $S$ for some $A>0$ and $\alpha<1$, then $\abs f\leq 1$ on $S$; the function $\exp(e^z)$ has this growth with $\alpha=1$.
 
 ## Singularities

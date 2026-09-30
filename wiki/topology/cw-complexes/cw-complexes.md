@@ -74,7 +74,7 @@ With the vertices labelled by integers, a simplicial complex is determined by it
 ::: {.example title="A labelling of the torus that is not a triangulation"}
 ![A labelling of the torus with every triangle on the vertices $1,1,2$](../../../../assets/assets/Topology/figures/1513062599096.png)
 
-In this picture a triangle has two vertices with the same label $1$, so the vertex set $\ts{1,2}$ does not determine a unique triangle, and the picture is not a simplicial complex.
+In this picture a triangle has two vertices with the same label $1$, so the vertex set $\theset{1,2}$ does not determine a unique triangle, and the picture is not a simplicial complex.
 
 :::
 
@@ -113,9 +113,9 @@ $$
 $$
 viewed as a map $\ZZ^4\to\ZZ^3$ on coordinates $(x_1,x_2,x_3,x_4)$, has kernel given by $x_1=-2x_2-2x_4$ and $x_3=x_4$, with basis
 $$
-\ker = \gens{(2,-1,0,0),\ (2,0,-1,-1)}.
+\ker = \generators{(2,-1,0,0),\ (2,0,-1,-1)}.
 $$
-Its rows span the image of the transpose, $\gens{(1,2,0,2),(0,0,1,-1)}\subseteq\ZZ^4$.
+Its rows span the image of the transpose, $\generators{(1,2,0,2),(0,0,1,-1)}\subseteq\ZZ^4$.
 
 :::
 

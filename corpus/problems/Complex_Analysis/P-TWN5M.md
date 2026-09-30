@@ -42,7 +42,7 @@ b. A circle, using that Apollonius circles are characterized as the locus of dis
   which is a circle of radius $2/3$ with center $\qty{{14\over 6}, 0}$.
   To avoid the calculation, use
   \[
-  Ax^2 + Bxy + Cy + \cdots = 0,\quad A=1, B=0, C=1 \implies \Delta \da B^2 - 4AC < 0
+  Ax^2 + Bxy + Cy + \cdots = 0,\quad A=1, B=0, C=1 \implies \Delta \definedas B^2 - 4AC < 0
   ,\]
   which is an ellipse, and since $A=C$ it is in fact a circle.
 

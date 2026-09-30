@@ -18,7 +18,7 @@ Let $D^n$ be the closed unit ball, $S^{n-1} = \del D^n$, and $s_0\in S^{n-1}$ a 
 A \dfn{map of triples} $f\colon (D^n, S^{n-1}, s_0) \to (X, A, x_0)$ is a continuous map $f\colon D^n\to X$ with $f(S^{n-1})\subseteq A$ and $f(s_0) = x_0$.
 The \dfn{relative homotopy group} is
 $$
-\pi_n(X, A, x_0) \coloneqq \ts{ f\colon (D^n, S^{n-1}, s_0) \to (X, A, x_0) } / \homotopic,
+\pi_n(X, A, x_0) \coloneqq \theset{ f\colon (D^n, S^{n-1}, s_0) \to (X, A, x_0) } / \homotopic,
 $$
 the set of [[D-Z7I7F|homotopy]] classes of maps of triples, where the homotopies are through maps of triples.
 :::

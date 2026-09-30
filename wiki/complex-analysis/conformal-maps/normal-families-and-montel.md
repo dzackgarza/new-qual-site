@@ -47,7 +47,7 @@ Then $\mathcal F$ is equicontinuous on every compact $K\subseteq\Omega$.
 :::
 
 ::: {.proof}
-Choose $r>0$ such that $K_{2r}\coloneqq\ts{z : \operatorname{dist}(z,K)\leq 2r}\subseteq\Omega$, and let $M$ bound every $f\in\mathcal F$ on the compact set $K_{2r}$.
+Choose $r>0$ such that $K_{2r}\coloneqq\theset{z : \operatorname{dist}(z,K)\leq 2r}\subseteq\Omega$, and let $M$ bound every $f\in\mathcal F$ on the compact set $K_{2r}$.
 For $\xi\in K_r$ the closed disc $\overline{D_r(\xi)}$ lies in $K_{2r}$, so Cauchy's estimate gives $\abs{f'(\xi)}\leq M/r$.
 For $z,w\in K$ with $\abs{z-w}<r$, the segment $[z,w]$ lies in $D_r(z)\subseteq K_r$, so $\abs{f(z)-f(w)}\leq (M/r)\abs{z-w}$ for every $f\in\mathcal F$.
 :::
@@ -80,7 +80,7 @@ Locally uniformly bounded families of holomorphic functions are normal.
 ::: {.remark title="Pointwise convergence"}
 If a locally uniformly bounded sequence of holomorphic functions on $\Omega$ converges pointwise on $\Omega$, then it converges locally uniformly.
 By Montel's theorem every subsequence has a further subsequence converging locally uniformly, and pointwise convergence forces all of these limits to equal the pointwise limit.
-Consequently, if $f_n \to f$ pointwise on $\Omega$ and $f$ is discontinuous or fails to be holomorphic at some point, then $\ts{f_n}$ is not uniformly bounded on compact subsets of $\Omega$.
+Consequently, if $f_n \to f$ pointwise on $\Omega$ and $f$ is discontinuous or fails to be holomorphic at some point, then $\theset{f_n}$ is not uniformly bounded on compact subsets of $\Omega$.
 :::
 
 ::: {.example}

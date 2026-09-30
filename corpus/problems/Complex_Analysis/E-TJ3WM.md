@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\Aut_\CC(\CC) = \ts{ z \mapsto az+b\st a\in \unitsof{\CC}, b\in \CC }$.
+Show that $\Aut_\CC(\CC) = \theset{ z \mapsto az+b\st a\in \unitsof{\CC}, b\in \CC }$.
 :::
 
 ::: {.solution}

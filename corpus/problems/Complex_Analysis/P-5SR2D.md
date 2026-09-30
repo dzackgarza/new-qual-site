@@ -19,10 +19,10 @@ Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \bar{f(\bar z)}$ is a
 :::
 
 ::: {.solution title="Cauchy-Riemann"}
-It suffices to show that $g(z) \da \bar{f(\bar z)}$ satisfies CR.
+It suffices to show that $g(z) \definedas \bar{f(\bar z)}$ satisfies CR.
 Write $f=u+iv$, then
 \[
-g(x, y) \da a(x, y) + ib(x, y) = u(x, -y) -i v(x, -y)
+g(x, y) \definedas a(x, y) + ib(x, y) = u(x, -y) -i v(x, -y)
 ,\]
 so we want to show $a_x = b_y$ and $a_y = -b_x$.
 By the chain rule,
@@ -45,16 +45,16 @@ a_y &= -u_y = v_x = -b_x
 :::
 
 ::: {.solution title="Direct definition"}
-Set $g(z) \da (f(z^*))^* \da \bar{f(\bar z)}$, we can then show $g'$ exists:
+Set $g(z) \definedas (f(z^*))^* \definedas \bar{f(\bar z)}$, we can then show $g'$ exists:
 \[
 \lim_{h\to 0} {g(z+h) - g(z) \over h} 
-&\da \lim_{h\to 0} {f((z+h)^*)^* - f(z^*)^* \over h^{**}} \\
+&\definedas \lim_{h\to 0} {f((z+h)^*)^* - f(z^*)^* \over h^{**}} \\
 &= \lim_{h\to 0} {\qty{ f(z^* + h^*) - f(z^*) }^* \over h^{**}} \\
 &= \lim_{h\to 0} \qty{ f(z^* + h^* ) - f(z^*) \over h^* }^* \\
-&\da \qty{f'(z^*)}^*
+&\definedas \qty{f'(z^*)}^*
 ,\]
 where we've used that $w\mapsto w^*$ is continuous to commute a limit.
-So this limit exists, $g$ is differentiable with $g'(z) \da \bar{f'(\bar z)}$.
+So this limit exists, $g$ is differentiable with $g'(z) \definedas \bar{f'(\bar z)}$.
 
 
 :::
@@ -63,7 +63,7 @@ So this limit exists, $g$ is differentiable with $g'(z) \da \bar{f'(\bar z)}$.
 Since $f$ is analytic, take a Laurent expansion $f(z) = \sum_{k\geq 0} c_k z^k$.
 Then
 \[
-g(z) \da (f(z^*))^*
+g(z) \definedas (f(z^*))^*
 = \qty{\sum_{k\geq 0} c_k \bar{z^k} }^* 
 = \sum_{k\geq 0} \bar{c_k} z^k
 ,\] 

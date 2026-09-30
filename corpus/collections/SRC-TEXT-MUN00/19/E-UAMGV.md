@@ -25,14 +25,14 @@ audit:
 
 ::: {.exercise}
 
-Let $A$ be a set; let $\ts{X_\alpha}_{\alpha \in J}$ be an indexed family of spaces; and let $\ts{f_\alpha}_{\alpha \in J}$ be an indexed family of functions $f_\alpha: A \to X_\alpha$.
+Let $A$ be a set; let $\theset{X_\alpha}_{\alpha \in J}$ be an indexed family of spaces; and let $\theset{f_\alpha}_{\alpha \in J}$ be an indexed family of functions $f_\alpha: A \to X_\alpha$.
 
 (a) Show there is a unique coarsest topology $\mathcal{T}$ on $A$ relative to which each of the functions $f_\alpha$ is continuous.
 
 (b) Let
 
 $$
-\mathcal{S}_\beta = \ts{f_\beta^{-1}(U_\beta) \mid U_\beta \text{ is open in } X_\beta},
+\mathcal{S}_\beta = \theset{f_\beta^{-1}(U_\beta) \mid U_\beta \text{ is open in } X_\beta},
 $$
 
 and let $S = \bigcup \mathcal{S}_\beta$.

@@ -25,7 +25,7 @@ audit:
 - Let $p$ be a prime and $\abs{G} = p^3$.
   Prove that $G$ has a normal subgroup $N$ of order $p^2$.
 
-  - Suppose $N = \gens{h}$ is cyclic and classify all possibilities for $G$ if:
+  - Suppose $N = \generators{h}$ is cyclic and classify all possibilities for $G$ if:
 
     - $\abs h = p^3$
 

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.definition}
-Let $X$ be a set and $\mathcal U = \ts{U_\alpha}_{\alpha\in I}$ a collection of subsets of $X$.
+Let $X$ be a set and $\mathcal U = \theset{U_\alpha}_{\alpha\in I}$ a collection of subsets of $X$.
 The collection $\mathcal U$ is a \dfn{cover} of $X$ if $X = \Union_{\alpha\in I} U_\alpha$, and a cover of a subset $A\subseteq X$ if $A\subseteq \Union_{\alpha\in I} U_\alpha$.
 If $X$ is a topological space and every $U_\alpha$ is open, $\mathcal U$ is an \dfn{open cover}.
 :::

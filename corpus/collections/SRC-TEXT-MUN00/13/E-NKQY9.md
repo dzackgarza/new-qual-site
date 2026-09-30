@@ -27,7 +27,7 @@ audit:
 (a) Apply Lemma 13.2 to show that the countable collection
 
 $$
-\mathcal{B} = \ts{(a, b) \mid a < b, \ a \text{ and } b \text{ rational}}
+\mathcal{B} = \theset{(a, b) \mid a < b, \ a \text{ and } b \text{ rational}}
 $$
 
 is a basis that generates the standard topology on $\mathbb{R}$.
@@ -35,7 +35,7 @@ is a basis that generates the standard topology on $\mathbb{R}$.
 (b) Show that the collection
 
 $$
-\mathcal{C} = \ts{[a, b) \mid a < b, \ a \text{ and } b \text{ rational}}
+\mathcal{C} = \theset{[a, b) \mid a < b, \ a \text{ and } b \text{ rational}}
 $$
 
 is a basis that generates a topology different from the lower limit topology on $\mathbb{R}$.

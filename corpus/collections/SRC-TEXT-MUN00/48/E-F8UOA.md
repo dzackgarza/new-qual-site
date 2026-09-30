@@ -27,7 +27,7 @@ If $D$ is a countable dense subset of $\mathbb{R}$, there is no function $f: \ma
 [Hint: Let $U_n$ be the union of all open sets $U$ of $\mathbb{R}$ such that $\operatorname{diam} f(U) < 1/n$. Show that $C = \bigcap U_n$.]
 
 (b) Show that $D$ is not a $G_\delta$ set in $\mathbb{R}$.
-[Hint: Suppose $D = \bigcap W_n$, where $W_n$ is open in $\mathbb{R}$. For $d \in D$, set $V_d = \mathbb{R} - \ts{d}$. Show $W_n$ and $V_d$ are dense in $\mathbb{R}$.]
+[Hint: Suppose $D = \bigcap W_n$, where $W_n$ is open in $\mathbb{R}$. For $d \in D$, set $V_d = \mathbb{R} - \theset{d}$. Show $W_n$ and $V_d$ are dense in $\mathbb{R}$.]
 :::
 
 ::: {.solution}

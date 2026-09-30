@@ -49,7 +49,7 @@ Assume $\chi_A$ splits over $k$, and let $f\colon V\to V$ be the linear map give
 
 - By Fitting's lemma, for every linear map $h\colon V\to V$ there is $m\geq 1$ with $V = \ker h^m \oplus \im h^m$, and both summands are $h$-invariant.
 
-- Let $\lambda$ be an eigenvalue of $f$ with eigenvector $v$, and apply Fitting's lemma to $h\da f-\lambda I$.
+- Let $\lambda$ be an eigenvalue of $f$ with eigenvector $v$, and apply Fitting's lemma to $h\definedas f-\lambda I$.
   Since $v\in\ker h^m$ and $f$ is indecomposable, $V = \ker h^m$, so $h$ is nilpotent; let $k$ be its nilpotency index.
 
 - Choose $w$ with $h^{k-1}w \neq 0$.
@@ -63,9 +63,9 @@ Assume $\chi_A$ splits over $k$, and let $f\colon V\to V$ be the linear map give
 [[L-W5S2W]]
 
 ::: {.remark title="The module structure"}
-Make $V$ a $k[x]$-module by $p(x)\actson \vector v \da p(A)\vector v$, and for $\vector v\in V$ let
+Make $V$ a $k[x]$-module by $p(x)\actson \vector v \definedas p(A)\vector v$, and for $\vector v\in V$ let
 $$
-\Ann(\vector v) \da \ts{ q(x) \in k[x] \st q(A)\vector v = 0}.
+\Ann(\vector v) \definedas \theset{ q(x) \in k[x] \st q(A)\vector v = 0}.
 $$
 A nonzero $\vector w$ is an eigenvector with eigenvalue $\lambda_i$ if and only if $x - \lambda_i \in \Ann(\vector w)$, and a generalized eigenvector for $\lambda_i$ if and only if
 $$
@@ -75,20 +75,20 @@ The generalized eigenspace for $\lambda_i$ is
 $$
 \begin{aligned}
 V^{\lambda_i}
-&\da \ts{\vector v\in V \st (A-\lambda_i I)^m \vector v = 0 \text{ for some }m } \\
-&= \ts{\vector v\in V \st x-\lambda_i \in \sqrt{\Ann(\vector v)} },
+&\definedas \theset{\vector v\in V \st (A-\lambda_i I)^m \vector v = 0 \text{ for some }m } \\
+&= \theset{\vector v\in V \st x-\lambda_i \in \sqrt{\Ann(\vector v)} },
 \end{aligned}
 $$
-and $V^{\lambda_i} = \ker (A-\lambda_i I)^n$ for $n \da \dim V$.
+and $V^{\lambda_i} = \ker (A-\lambda_i I)^n$ for $n \definedas \dim V$.
 If $\chi_A$ splits, then $V = \bigoplus_i V^{\lambda_i}$.
 :::
 
 ::: {.proof title="of the generalized eigenspace decomposition"}
 \envlist
 
-- Write $\chi_A(x) = \prod_i (x-\lambda_i)^{n_i}$ with the $\lambda_i$ distinct, and set $V^{j} \da \ker (A-\lambda_j I)^n$.
+- Write $\chi_A(x) = \prod_i (x-\lambda_i)^{n_i}$ with the $\lambda_i$ distinct, and set $V^{j} \definedas \ker (A-\lambda_j I)^n$.
 
-- For each $j$, let $h_j(x) = \prod_{i\neq j}(x-\lambda_i)^{n_i}$ and $W^j \da \im(h_j(A))$.
+- For each $j$, let $h_j(x) = \prod_{i\neq j}(x-\lambda_i)^{n_i}$ and $W^j \definedas \im(h_j(A))$.
 
 - $W^j \subseteq \ker (A - \lambda_j I)^{n_j}\subseteq V^j$, since $(A-\lambda_j I)^{n_j} h_j(A) = \chi_A(A) = 0$ by Cayley--Hamilton.
 

@@ -38,11 +38,11 @@ and each $U_{\sigma_i} \cong \CC^2$, with coordinates
 \[
 U_{\sigma_0} : (x, y), \qquad U_{\sigma_1} : (x^{-1}, x^{-1}y), \qquad U_{\sigma_2} : (y^{-1}, xy^{-1}) .
 \]
-Setting $x = t_1/t_0$ and $y = t_2/t_0$ identifies $U_{\sigma_i}$ with the standard chart $\ts{t_i \neq 0}$ of $\PP^2$, and the gluings agree.
+Setting $x = t_1/t_0$ and $y = t_2/t_0$ identifies $U_{\sigma_i}$ with the standard chart $\theset{t_i \neq 0}$ of $\PP^2$, and the gluings agree.
 :::
 
 ::: {.example title="Class group"}
-The map $M \to \ZZ^3$ is $m \mapsto (\inp{m}{u_1}, \inp{m}{u_2}, \inp{m}{u_0})$, with matrix rows $(1,0), (0,1), (-1,-1)$.
+The map $M \to \ZZ^3$ is $m \mapsto (\inner{m}{u_1}, \inner{m}{u_2}, \inner{m}{u_0})$, with matrix rows $(1,0), (0,1), (-1,-1)$.
 The cokernel is $\ZZ$ via $(a_1, a_2, a_0) \mapsto a_1 + a_2 + a_0$, since $e_1 \mapsto (1,0,-1)$ and $e_2 \mapsto (0,1,-1)$ both have coordinate sum $0$.
 So $\Cl(\PP^2) = \ZZ$, all three $D_i$ map to $1$, and $D_1 \sim D_2 \sim D_0 = H$ — the three coordinate lines.
 :::
@@ -50,7 +50,7 @@ So $\Cl(\PP^2) = \ZZ$, all three $D_i$ map to $1$, and $D_1 \sim D_2 \sim D_0 = 
 ::: {.example title="Anticanonical polytope"}
 $K_X = -(D_0 + D_1 + D_2) = -3H$, so $-K_X = 3H$ and
 \[
-P_{-K} = \ts{ m \st m_1 \geq -1,\ m_2 \geq -1,\ -m_1 - m_2 \geq -1 } = \operatorname{Conv}\big( (-1,-1),\ (2,-1),\ (-1,2) \big) ,
+P_{-K} = \theset{ m \st m_1 \geq -1,\ m_2 \geq -1,\ -m_1 - m_2 \geq -1 } = \operatorname{Conv}\big( (-1,-1),\ (2,-1),\ (-1,2) \big) ,
 \]
 the triangle $3\Delta$ translated to have the origin in its interior.
 Counting its lattice points gives $1 + 2 + 3 + 4 = 10 = h^0(\OO(3))$, which is the dimension of the space of plane cubics.

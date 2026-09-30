@@ -24,7 +24,7 @@ audit:
 
 ::: {.exercise}
 
-Let $\ts{A_\alpha}$ be a collection of connected subspaces of $X$; let $A$ be a connected subspace of $X$.
+Let $\theset{A_\alpha}$ be a collection of connected subspaces of $X$; let $A$ be a connected subspace of $X$.
 Show that if $A \cap A_\alpha \neq \varnothing$ for all $\alpha$, then $A \cup (\bigcup A_\alpha)$ is connected.
 :::
 

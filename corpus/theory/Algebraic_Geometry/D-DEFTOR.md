@@ -41,5 +41,5 @@ $\Tor_1^A(M,N)$ vanishing for all $N$ is equivalent to $\Tor_i^A(M,N)$ vanishing
 Moreover, $M$ is flat if and only if $\Tor_1^A(M,A/I)=0$ for every finitely generated ideal $I\subseteq A$.
 
 $\Tor$ is computed from a projective resolution of either argument, and $\Tor_i^A(M,N)\cong\Tor_i^A(N,M)$.
-Over $\ZZ$, resolving $\ZZ/m$ by $0\to\ZZ\mapsvia{m}\ZZ\to\ZZ/m\to 0$ and tensoring with an abelian group $B$ gives $\Tor^\ZZ_1(\ZZ/m,B)\cong\ts{b\in B\st mb=0}$, the $m$-torsion of $B$; in particular $\Tor^\ZZ_1(\ZZ/m,\ZZ/n) \cong \ZZ/{\gcd(m,n)}$.
+Over $\ZZ$, resolving $\ZZ/m$ by $0\to\ZZ\mapsvia{m}\ZZ\to\ZZ/m\to 0$ and tensoring with an abelian group $B$ gives $\Tor^\ZZ_1(\ZZ/m,B)\cong\theset{b\in B\st mb=0}$, the $m$-torsion of $B$; in particular $\Tor^\ZZ_1(\ZZ/m,\ZZ/n) \cong \ZZ/{\gcd(m,n)}$.
 :::

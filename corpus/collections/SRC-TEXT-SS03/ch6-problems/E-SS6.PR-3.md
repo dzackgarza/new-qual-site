@@ -39,7 +39,7 @@ and a k-fold integration by parts gives the analytic continuation for $\zeta ( s
 :::
 
 ::: {.solution}
-For $j\ge0$ and $\Re s>-j$ put $I_j(s)\da\int_1^\infty Q_j(x)x^{-s-1-j}\,dx$.
+For $j\ge0$ and $\Re s>-j$ put $I_j(s)\definedas\int_1^\infty Q_j(x)x^{-s-1-j}\,dx$.
 
 ::: pf
 

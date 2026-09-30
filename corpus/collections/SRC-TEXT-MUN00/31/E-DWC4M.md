@@ -16,7 +16,7 @@ review: draft
 ::: {.exercise}
 
 Let $f, g: X \to Y$ be continuous; assume that $Y$ is Hausdorff.
-Show that $\ts{x \mid f(x) = g(x)}$ is closed in $X$.
+Show that $\theset{x \mid f(x) = g(x)}$ is closed in $X$.
 :::
 
 ::: {.solution}

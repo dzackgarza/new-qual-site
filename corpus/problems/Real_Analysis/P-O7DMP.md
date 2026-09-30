@@ -21,8 +21,8 @@ audit:
 ::: {.problem}
 Define
 \[
-F(x) &\da \qty{ \sin(\pi x) \over \pi x}^2 \\
-G(x) &\da 
+F(x) &\definedas \qty{ \sin(\pi x) \over \pi x}^2 \\
+G(x) &\definedas 
 \begin{cases}
 1 - \abs{x} & \abs{x} \leq 1
 \\
@@ -38,7 +38,7 @@ c. Give an example of a function $g\not \in L^1(\RR)$ which is the Fourier trans
 
 *Hint: write \( \fourier{G}(\xi) = H(\xi) + H(-\xi) \)  where*
 \[
-H(\xi) \da e^{2\pi i \xi} \int_0^1 y e^{2\pi i y \xi }\dy 
+H(\xi) \definedas e^{2\pi i \xi} \int_0^1 y e^{2\pi i y \xi }\dy 
 .\]
 :::
 ::: {.solution}

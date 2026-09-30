@@ -36,7 +36,7 @@ Note that something like ${1\over 1-e^z} = \sum_{k\geq 0} e^{kz}$ won't converge
 {1\over e^z-1}
 &= {1\over z + {1\over 2}z^2 + {1\over 6}z^3 + \cdots } \\
 &= {1\over z(1 + {1\over 2}z + {1\over 6}z^2 + \cdots) } \\
-&= \inverseof{z} {1\over 1 + q(z) } \qquad q(z) \da {1\over 2}z + {1\over 6}z^2 + \cdots \\
+&= \inverseof{z} {1\over 1 + q(z) } \qquad q(z) \definedas {1\over 2}z + {1\over 6}z^2 + \cdots \\
 &= \inverseof{z} \sum_{k\geq 0}(-q(z))^k \\
 &= \inverseof{z} \qty{1 - q(z) + q(z)^2 - \cdots } \\
 &= \inverseof{z}\qty{1 - \qty{{1\over 2}z + {1\over 6}z^2 + \cdots } + \qty{{1\over 2}z + {1\over 6}z^2 + \cdots }^2 - \cdots } \\

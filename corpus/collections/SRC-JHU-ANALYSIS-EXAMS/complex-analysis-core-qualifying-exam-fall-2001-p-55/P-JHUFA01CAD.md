@@ -26,7 +26,7 @@ Problem 4. Suppose that $f : D _ { 1 } ( 0 ) \to \mathbb { C }$ is a one-to-one 
 
 ::: {.pf-step #s1}
 
-$h\da f^{-1}\circ g$ is a holomorphic self-map of $D_1(0)$ with $h(0)=0$.
+$h\definedas f^{-1}\circ g$ is a holomorphic self-map of $D_1(0)$ with $h(0)=0$.
 
 ::: pf-proof
 

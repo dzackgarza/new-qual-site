@@ -44,7 +44,7 @@ The inclusion is order-reversing on cones: a smaller cone has a larger dual, hen
 \[
 \tau \leq \sigma \implies \dualof{\sigma} \subseteq \dualof{\tau} \implies U_\tau \subseteq U_\sigma .
 \]
-The zero cone gives $S_{\ts{0}} = M$ and $U_{\ts{0}} = T$, which is therefore contained in every chart: that is why the torus is dense in $X_\Sigma$.
+The zero cone gives $S_{\theset{0}} = M$ and $U_{\theset{0}} = T$, which is therefore contained in every chart: that is why the torus is dense in $X_\Sigma$.
 :::
 
 ::: {.example title="The plane, in two charts"}
@@ -53,5 +53,5 @@ Then $S_{\sigma_1} = \NN^2$ and
 \[
 S_\tau = \NN^2 + \NN \cdot (0,-1) = \NN \oplus \ZZ , \qquad U_\tau = \Spec k[x, y^{\pm 1}] = D(y) \subseteq \AA^2 .
 \]
-For $\PP^1$, the two maximal cones $\RR_{\geq 0}$ and $\RR_{\leq 0}$ share the face $\ts{0}$, whose chart is $\Spec k[x^{\pm 1}] = \GG_m$, inverted from $k[x]$ on one side and from $k[\inverseof{x}]$ on the other; the gluing $x \mapsto \inverseof{x}$ is forced.
+For $\PP^1$, the two maximal cones $\RR_{\geq 0}$ and $\RR_{\leq 0}$ share the face $\theset{0}$, whose chart is $\Spec k[x^{\pm 1}] = \GG_m$, inverted from $k[x]$ on one side and from $k[\inverseof{x}]$ on the other; the gluing $x \mapsto \inverseof{x}$ is forced.
 :::

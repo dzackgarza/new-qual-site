@@ -17,10 +17,10 @@ review: draft
 ---
 
 ::: {.problem}
-Let $Y \subseteq \PP^n$ be a nonempty algebraic set, and let $\theta: \AA^{n+1} \sm \ts{(0,\ldots,0)} \to \PP^n$ send the point with affine coordinates $(a_0,\ldots,a_n)$ to the point with homogeneous coordinates $\tv{a_0 : \cdots : a_n}$.
+Let $Y \subseteq \PP^n$ be a nonempty algebraic set, and let $\theta: \AA^{n+1} \sm \theset{(0,\ldots,0)} \to \PP^n$ send the point with affine coordinates $(a_0,\ldots,a_n)$ to the point with homogeneous coordinates $\thevector{a_0 : \cdots : a_n}$.
 The **affine cone** over $Y$ is
 \[
-C(Y) = \inverseof{\theta}(Y) \union \ts{(0,\ldots,0)} .
+C(Y) = \inverseof{\theta}(Y) \union \theset{(0,\ldots,0)} .
 \]
 
 1. Show that $C(Y)$ is an algebraic set in $\AA^{n+1}$ whose ideal equals $I(Y)$, regarded as an ordinary ideal of $k[x_0,\ldots,x_n]$.
@@ -37,7 +37,7 @@ The projective closure $\overline{C(Y)}$ in $\PP^{n+1}$ is called the **projecti
 ::: {.solution}
 **Part 1.** The set $C(Y)$ is algebraic because it is of the form $C(Y) = V(I(Y))$.
 That the ideal is again $I(Y)$: a polynomial $f$ vanishing on $C(Y)$ vanishes at every $\vector{a} \neq \vector{0}$ of the cone, and reading $\vector{a}$ as homogeneous coordinates on $\PP^n$ shows $f$ vanishes on $Y$.
-Conversely, if $f \in I(Y)$ is homogeneous then $f(\lambda \vector{a}) = \lambda^{\deg f} f(\vector{a}) = 0$, so $f$ vanishes on $C(Y) \sm \ts{\vector{0}}$.
+Conversely, if $f \in I(Y)$ is homogeneous then $f(\lambda \vector{a}) = \lambda^{\deg f} f(\vector{a}) = 0$, so $f$ vanishes on $C(Y) \sm \theset{\vector{0}}$.
 Every homogeneous polynomial of positive degree also vanishes at $\vector{0}$, so $f \in I(C(Y))$.
 
 **Part 2.** An algebraic set is irreducible exactly when its ideal is prime, and by part 1 the two ideals coincide: $I(Y) = I(C(Y))$.

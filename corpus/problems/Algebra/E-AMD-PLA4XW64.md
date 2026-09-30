@@ -31,7 +31,7 @@ By orbit-stabilizer, $3$ divides the order of a transitive subgroup of $S_3$.
 ::: pf
 
 ::: pf-step
-Let $H \leq S_3$ act transitively on $X = \ts{1,2,3}$.
+Let $H \leq S_3$ act transitively on $X = \theset{1,2,3}$.
 :::
 
 ::: {.pf-step #h-order-divisible-by-3}
@@ -52,7 +52,7 @@ Orbit-stabilizer gives $\abs H = 3 \cdot \abs{H_1}$, where $H_1$ is the stabiliz
 :::
 
 ::: {.pf-step #h-order-three-or-six}
-$\abs H \in \ts{3, 6}$.
+$\abs H \in \theset{3, 6}$.
 
 ::: pf-proof
 $\abs H$ divides $\abs{S_3} = 6$ by Lagrange, and step [](#h-order-divisible-by-3){.pf-ref} rules out $1$ and $2$.
@@ -83,7 +83,7 @@ The number $n_3$ of Sylow $3$-subgroups satisfies $n_3 \equiv 1 \pmod 3$ and $n_
 :::
 
 ::: pf-step
-$A_3 = \gens{(1\,2\,3)}$ has order $3$, so it is that one Sylow subgroup, and $H = A_3$.
+$A_3 = \generators{(1\,2\,3)}$ has order $3$, so it is that one Sylow subgroup, and $H = A_3$.
 :::
 
 :::

@@ -12,7 +12,7 @@ Throughout, $G$ is a finite group and representations are finite-dimensional ove
 [[D-CTAKB]]
 
 ::: {.remark title="Characters determine representations"}
-The character $\chi_V(g) \da \tr\rho_V(g)$ determines $V$ up to isomorphism: by [[T-PIO2B|Maschke's theorem]] $V$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] and the orthogonality relations the multiplicity of each irreducible summand is an inner product of characters.
+The character $\chi_V(g) \definedas \tr\rho_V(g)$ determines $V$ up to isomorphism: by [[T-PIO2B|Maschke's theorem]] $V$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] and the orthogonality relations the multiplicity of each irreducible summand is an inner product of characters.
 
 - $\chi_V$ is a class function, since the trace is invariant under conjugation.
 
@@ -25,7 +25,7 @@ The character $\chi_V(g) \da \tr\rho_V(g)$ determines $V$ up to isomorphism: by 
 
 For representations $V$ and $W$,
 $$
-\inner{\chi_V}{\chi_W} \da {1\over\size G}\sum_{g\in G} \chi_V(g)\overline{\chi_W(g)} = \dim \Hom_G(V,W),
+\inner{\chi_V}{\chi_W} \definedas {1\over\size G}\sum_{g\in G} \chi_V(g)\overline{\chi_W(g)} = \dim \Hom_G(V,W),
 $$
 and the irreducible characters form an orthonormal basis of the space of class functions on $G$.
 Consequently:

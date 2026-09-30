@@ -32,7 +32,7 @@ $A$ is a finite $B$-algebra if and only if it is integral and finitely generated
 For example, $\bar{\QQ}$ is integral over $\QQ$ and not finite.
 
 In $k[t] \subseteq k[t,\inverseof{t}]$, the element $\inverseof{t}$ is a root of the non-monic polynomial $tx - 1$ and is not integral over $k[t]$: multiplying a relation $t^{-n}+b_1t^{-(n-1)}+\cdots+b_n=0$ by $t^n$ gives $1\in tk[t]$.
-So the open immersion $\Spec k[t,\inverseof{t}]\to\Spec k[t]$ is not finite; its image $\AA^1\sm\ts{0}$ is not closed.
+So the open immersion $\Spec k[t,\inverseof{t}]\to\Spec k[t]$ is not finite; its image $\AA^1\sm\theset{0}$ is not closed.
 
 For an integral extension $B\subseteq A$, lying over and going up hold, and no two distinct primes of $A$ over the same prime of $B$ are comparable [@AM18, Chapter 5].
 Hence $\Spec A\to\Spec B$ is surjective and closed, and its fibres have dimension $0$; the fibres need not be finite, since the fibre of $\Spec\bar\ZZ\to\Spec\ZZ$ over $(p)$ is infinite, where $\bar\ZZ$ is the ring of algebraic integers.

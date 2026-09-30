@@ -14,7 +14,7 @@ review: draft
 
 ::: {.exercise}
 
-Let $X$ be a compact Hausdorff space, let $\ts{A_n}$ be a countable collection of closed sets of $X$.
+Let $X$ be a compact Hausdorff space, let $\theset{A_n}$ be a countable collection of closed sets of $X$.
 Show that if each set $A_n$ has empty interior in $X$, then the union $\bigcup A_n$ has empty interior in $X$.
 [Hint: Imitate the proof of Theorem 27.7.]
 

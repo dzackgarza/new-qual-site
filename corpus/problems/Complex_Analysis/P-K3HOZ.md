@@ -34,26 +34,26 @@ What if $O$ is a region?
 
 ::: {.solution}
 **Part 1**:
-This is not true: take the holomorphic function $f(z) = z$, then $u(z) \da \Re(f(z)) = \Re(z)$ is harmonic on nonzero on $\RR$ but zero on $i\RR$.
+This is not true: take the holomorphic function $f(z) = z$, then $u(z) \definedas \Re(f(z)) = \Re(z)$ is harmonic on nonzero on $\RR$ but zero on $i\RR$.
 
 **Part 2**:
-Set $f \da u_x + i u_y$, then $f$ is holomorphic on $O$.
+Set $f \definedas u_x + i u_y$, then $f$ is holomorphic on $O$.
 Since $h\equiv 0$ on $\DD_\eps \subseteq O$, $g\equiv 0$ on this disc.
 By the identity principle for holomorphic functions, $g\equiv 0$ on $O$.
 So $h_x, h_y \equiv 0$, making $h$ constant, and since $h\equiv 0$ on $U$ this forces $h\equiv 0$ on $O$.
 
 **Part 3**:
 Let $u$ be harmonic on $S^+$, a region symmetric about $\RR$, and that $u\equiv 0$ on $\RR \intersect S^+$.
-Define $S^- = \ts{\bar{z} \st z\in S^+}$, and
+Define $S^- = \theset{\bar{z} \st z\in S^+}$, and
 \[
-U(z) \da 
+U(z) \definedas 
 \begin{cases}
  U(z) &  z\in S^+
 \\
  -U(\bar z) & z\in S^-.
 \end{cases}
 .\]
-Then $U$ is a harmonic extension of $u$ to $S \da S^+ \union (S^+ \intersect \RR) \union S^-$.
+Then $U$ is a harmonic extension of $u$ to $S \definedas S^+ \union (S^+ \intersect \RR) \union S^-$.
 To see that $U$ is harmonic on $S$, it suffices to check that $U$ satisfies the mean value property on $S$.
 This holds in $S^+$: on $S^+$ we have $U = u$, and $u$ is harmonic, so $u$ satisfies the mean value property there. Thus for $z_0\in S^+$ we have
 \[
@@ -65,7 +65,7 @@ U(z_0)
 So for $w_0\in S^-$, write it as $w_0 = \bar{z_0}$, then
 \[
 U(z_0)
-&\da -u(\bar{z_0}) \\
+&\definedas -u(\bar{z_0}) \\
 &= {1\over 2\pi }\int_{-\pi}^\pi - u\qty{\bar{z_0 + re^{it} }} \dt \\
 &= {1\over 2\pi }\int_{-\pi}^\pi - u\qty{\bar{z_0} + re^{-it} } \dt \\
 &= {1\over 2\pi }\int_{-\pi}^\pi - u\qty{\bar{z_0 + re^{-it} }} \dt \\

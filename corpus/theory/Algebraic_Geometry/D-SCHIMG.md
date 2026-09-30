@@ -25,7 +25,7 @@ prompts:
 ::: {.definition}
 For $f: X \to Y$, the image of $f$ \dfn{lies in} a closed subscheme $Z \subseteq Y$ with ideal sheaf $\mci_Z$ if the composite $\mci_Z \to \OO_Y \to f_* \OO_X$ is zero, equivalently if $f$ factors through $Z$.
 The \dfn{scheme-theoretic image} of $f$ is the smallest closed subscheme of $Y$ in which the image of $f$ lies, the intersection of all such $Z$.
-When $\mci \da \ker(\OO_Y \to f_* \OO_X)$ is quasicoherent — for instance when $f$ is quasicompact and quasiseparated — this ideal sheaf defines it.
+When $\mci \definedas \ker(\OO_Y \to f_* \OO_X)$ is quasicoherent — for instance when $f$ is quasicompact and quasiseparated — this ideal sheaf defines it.
 :::
 
 ::: {.definition title="Constructible set"}

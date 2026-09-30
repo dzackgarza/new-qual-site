@@ -29,7 +29,7 @@ Determine whether there is a nonzero smooth compactly supported function on $\ma
 :::
 
 ::: {.solution}
-No. Let $f$ be smooth with $\operatorname{supp}f\subseteq[-S,S]$ and put $F(\zeta)\da\int_{-S}^Sf(x)e^{-2\pi ix\zeta}\,dx$ for $\zeta\in\CC$, so that $F=\widehat f$ on $\RR$.
+No. Let $f$ be smooth with $\operatorname{supp}f\subseteq[-S,S]$ and put $F(\zeta)\definedas\int_{-S}^Sf(x)e^{-2\pi ix\zeta}\,dx$ for $\zeta\in\CC$, so that $F=\widehat f$ on $\RR$.
 
 ::: pf
 

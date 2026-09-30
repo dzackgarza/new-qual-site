@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $M$ be an $n$-[[D-UBWVX|manifold]], and for $A\subseteq M$ write $H_n(M\mid A)\coloneqq H_n(M, M\sm A;\ZZ)$.
-For $x\in M$, excision gives $H_n(M\mid x)\cong H_n(\RR^n, \RR^n\sm\ts{0};\ZZ)\cong\ZZ$.
+For $x\in M$, excision gives $H_n(M\mid x)\cong H_n(\RR^n, \RR^n\sm\theset{0};\ZZ)\cong\ZZ$.
 
 - A \dfn{local orientation} of $M$ at $x$ is a generator $\mu_x$ of $H_n(M\mid x)$.
 
@@ -27,7 +27,7 @@ For $x\in M$, excision gives $H_n(M\mid x)\cong H_n(\RR^n, \RR^n\sm\ts{0};\ZZ)\c
 
 ::: {.remark}
 Each $H_n(M\mid x)$ has exactly two generators, so $M$ has exactly two local orientations at each point.
-The local orientations form the orientation double cover $\tilde M = \ts{\mu_x \st x\in M,\ \mu_x \text{ a local orientation of } M \text{ at } x}$, with $\mu_x\mapsto x$.
+The local orientations form the orientation double cover $\tilde M = \theset{\mu_x \st x\in M,\ \mu_x \text{ a local orientation of } M \text{ at } x}$, with $\mu_x\mapsto x$.
 The manifold $\tilde M$ is orientable, and a connected manifold $M$ is orientable if and only if $\tilde M$ has two components [@Hat02].
 :::
 

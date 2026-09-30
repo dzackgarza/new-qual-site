@@ -50,7 +50,7 @@ Each $f_n$ is continuous and $f_n\to f$ uniformly on $\overline D$, so $f$ is co
 For a triangle $T\subseteq D$, Goursat's theorem gives $\int_{\bd T} f_n = 0$, and uniform convergence on $\bd T$ gives $\int_{\bd T} f = \lim_n \int_{\bd T} f_n = 0$.
 By Morera's theorem $f$ is holomorphic on $D$, hence on $\Omega$.
 
-For the derivatives, let $K\subseteq\Omega$ be compact and choose $r>0$ such that $K_r \coloneqq \ts{z : \operatorname{dist}(z, K)\leq r}\subseteq\Omega$; $K_r$ is compact.
+For the derivatives, let $K\subseteq\Omega$ be compact and choose $r>0$ such that $K_r \coloneqq \theset{z : \operatorname{dist}(z, K)\leq r}\subseteq\Omega$; $K_r$ is compact.
 For $z\in K$, Cauchy's estimate on the circle $\abs{\xi - z} = r$ gives $\abs{f_n'(z) - f'(z)} \leq \sup_{K_r}\abs{f_n - f}/r$, which tends to $0$ uniformly in $z\in K$.
 
 :::
@@ -76,7 +76,7 @@ The integral around $\partial R$ is the sum of the integrals around the four, so
 $$
 \left|\int_{\partial R_{1}} f(z) \dz \right| \geq \frac{1}{4}\left|\int_{\partial R} f(z) \dz \right|
 .$$
-Subdividing repeatedly yields nested $\ts{R_n}$ with
+Subdividing repeatedly yields nested $\theset{R_n}$ with
 $$
 \left|\int_{\partial R_{n}} f(z) \dz\right| \geq \frac{1}{4}\left|\int_{\partial R_{n-1}} f(z) \dz \right| \geq \cdots \geq \frac{1}{4^{n}}\left|\int_{\partial R} f(z) \dz\right|
 .$$

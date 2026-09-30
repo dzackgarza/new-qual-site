@@ -21,7 +21,7 @@ A Laurent series expands a holomorphic function on an annulus, with both positiv
 A function holomorphic on several disjoint annuli centered at $z_0$ has a Laurent series about $z_0$ on each of them, and the series can differ.
 
 ::: {.example title="One function, two expansions"}
-Let $f(z) = {1 \over z-1}$, holomorphic on $\CC\sm\ts{1}$, expanded about $z=0$.
+Let $f(z) = {1 \over z-1}$, holomorphic on $\CC\sm\theset{1}$, expanded about $z=0$.
 
 On $\abs z < 1$, write it as a geometric series in $z$:
 $$

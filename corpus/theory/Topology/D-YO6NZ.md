@@ -26,7 +26,7 @@ For a topological space $X$, the following are equivalent:
 
 (b) The only subsets of $X$ that are both open and closed are $\emptyset$ and $X$.
 
-(c) Every continuous map from $X$ to the discrete space $\ts{0, 1}$ is constant.
+(c) Every continuous map from $X$ to the discrete space $\theset{0, 1}$ is constant.
 :::
 
 ::: {.proposition}

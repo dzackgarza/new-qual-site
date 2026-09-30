@@ -19,7 +19,7 @@ The \dfn{local homology} of $X$ at $A$ in degree $n$ is the relative homology gr
 $$
 H_n(X\mid A) \coloneqq H_n(X, X\sm A; \ZZ)
 .$$
-For a point $x\in X$, write $H_n(X\mid x)\coloneqq H_n(X\mid\ts{x})$.
+For a point $x\in X$, write $H_n(X\mid x)\coloneqq H_n(X\mid\theset{x})$.
 :::
 
 ::: {.concept}

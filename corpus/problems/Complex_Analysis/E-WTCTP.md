@@ -26,7 +26,7 @@ We want to show that there exists discs $U = \DD_r(0)$ and $W = \DD_R(0)$ such t
 Since $0$ is a zero of order $n$, expand $f$ as $\sum_{k\geq n} c_k z^k = z^n\sum_{k\geq 0} c_{k+n}z^k$.
 By dividing coefficients through, we may assume $c_n = 1$, so 
 \[
-f(z) = z^n + \qty{ c_{n+1} z^{n+1} + c_{n+2}z^{n+2} + \cdots} = z^n + z^{n+1} \sum_{k\geq 0} c_{k+n+1}z^k \da z^n + g(z)
+f(z) = z^n + \qty{ c_{n+1} z^{n+1} + c_{n+2}z^{n+2} + \cdots} = z^n + z^{n+1} \sum_{k\geq 0} c_{k+n+1}z^k \definedas z^n + g(z)
 .\]
 
 ::: {.claim}
@@ -42,7 +42,7 @@ c_k = {f^{(n)}(z_0) \over n!} = {1\over 2\pi i} \oint_{\abs{\xi} = R} { f(\xi) \
 ,\]
 so
 \[
-\abs{c_k} \leq \max_{\abs{\xi} = R}\abs{f(\xi)} R^{-k} \da {M_R \over R^{k}}
+\abs{c_k} \leq \max_{\abs{\xi} = R}\abs{f(\xi)} R^{-k} \definedas {M_R \over R^{k}}
 .\]
 
 We can now estimate $g$:
@@ -55,7 +55,7 @@ We can now estimate $g$:
 &= \abs{z}^n {M_R \over R^{n+1}} \qty{1\over 1- {\rho \over R}} \\
 &= \abs{z}^n {M_R \over R^{n+1}} {R\over R-\rho} \\
 &= \abs{z}^n \qty{ {M_R\over R^n( R-\rho)} } \\
-&\da \abs{z}^n C_{R, \rho}
+&\definedas \abs{z}^n C_{R, \rho}
 ,\]
 and $R, \rho$ can be chosen such that $C_{R, \rho} < 1$.
 
@@ -74,7 +74,7 @@ The above estimate also shows that for $0 < \abs{z}\leq \rho$, $\abs{g(z)} \leq 
 so $g$ is nonzero on $\DD_\rho(0)\smz$.
 For the zero-counting function
 \[
-F(w) \da {1\over 2\pi i} \oint_{\abs{\xi} = \rho'} {f'(\xi) \over f(\xi) - w }\dxi
+F(w) \definedas {1\over 2\pi i} \oint_{\abs{\xi} = \rho'} {f'(\xi) \over f(\xi) - w }\dxi
 .\]
 Taking $\rho ' < \min_{\abs{\xi} = \rho} \abs{f(z)}$ makes this a holomorphic function of $w$ on $\DD_{\rho'}(0)$, and as a continuous $\ZZ\dash$valued function it is constant.
 Since $F(0) = n$, this forces $F(w) = n$ for all $\abs{w} < \rho'$, so there are $n$ solutions to $f(z) = w$ in these discs.

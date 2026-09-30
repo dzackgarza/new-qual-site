@@ -36,7 +36,7 @@ Then
 
 c. If $Y$ is a closed subset of $X$, then
 \[
-\codim(Y, X) = \inf \ts{\krulldim \OO_{P, X} \st P \in Y}.
+\codim(Y, X) = \inf \theset{\krulldim \OO_{P, X} \st P \in Y}.
 \]
 
 d. If $Y$ is a closed subset of $X$, then

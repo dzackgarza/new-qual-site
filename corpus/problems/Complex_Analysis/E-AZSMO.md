@@ -27,7 +27,7 @@ Show that $f$ must be constant.
 ::: {.solution title="Direct bound"}
 Define
 \[
-g(z) \da 
+g(z) \definedas 
 \begin{cases}
 {f(z) - f(0) \over z-0} & z\neq 0 
 \\
@@ -36,7 +36,7 @@ f'(0) & z=0.
 .\]
 Note that for $z\neq 0$,
 \[
-\abs{g(z)} \da \abs{f(z) - f(0)\over z} \leq \abs{f(z) \over z} + \abs{f(0)\over z} \convergesto{\abs{z} \to \infty }0
+\abs{g(z)} \definedas \abs{f(z) - f(0)\over z} \leq \abs{f(z) \over z} + \abs{f(0)\over z} \convergesto{\abs{z} \to \infty }0
 ,\]
 where we've used the assumption in the last step.
 The function $g$ is entire, since $f(z)-f(0)$ vanishes at $0$.

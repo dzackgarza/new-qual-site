@@ -36,20 +36,20 @@ Give an example of a finite extension $L/K$ that is not separable.
 - If $\ch k = p$, suppose toward a contradiction that $L/k$ is not separable.
   Then there is some $\alpha$ with an inseparable (and irreducible) minimal polynomial $f(x)\in k[x]$.
 - Claim: since $f$ is inseparable and irreducible, $f(x) = g(x^p)$ for some $g\in k[x]$.
-  - Note: write $g(x) \da \sum a_k x^k$, so that $f(x) = \sum a_k (x^p)^k = \sum a_k x^{pk}$.
+  - Note: write $g(x) \definedas \sum a_k x^k$, so that $f(x) = \sum a_k (x^p)^k = \sum a_k x^{pk}$.
 - This is a contradiction, since it makes $f$ reducible by using the "Freshman's dream":
 \[
-f(x) = \sum a_k x^{pk} = \qty{ \sum a_k^{1\over p} x^k}^p \da (h(x))^p 
+f(x) = \sum a_k x^{pk} = \qty{ \sum a_k^{1\over p} x^k}^p \definedas (h(x))^p 
 .\]
 
 - Proof of claim: in $\ch k = p, f$ inseparable $\implies f(x) = g(x^p)$. 
   - Use that $f$ is inseparable iff $\gcd(f, f') \neq 1$, and since $f$ is irreducible this forces $f' \equiv 0$, so $ka_k = 0$ for all $k$.
-  - Then $a_k\neq 0$ forces $p\divides k$, so $f(x) = a_0 + a_px^p + a_{2p}x^{2p} + \cdots$ and one takes $g(x) \da \sum a_{kp}x^{kp}$.
+  - Then $a_k\neq 0$ forces $p\divides k$, so $f(x) = a_0 + a_px^p + a_{2p}x^{2p} + \cdots$ and one takes $g(x) \definedas \sum a_{kp}x^{kp}$.
 
 - A finite inseparable extension:
   - It's a theorem that finite extensions of perfect fields are separable, so one needs a non-perfect field.
-  - Take $L/k \da \FF_p(t^{1\over p}) / \FF_p(t)$, which is a degree $p$ extension (although both fields are infinite are characteristic $p$).
-  - Then the minimal polynomial of $t$ is $f(x) \da x^p - t \in \FF_p(t)[x]$, where $f'(x) = px^p \equiv 0$
+  - Take $L/k \definedas \FF_p(t^{1\over p}) / \FF_p(t)$, which is a degree $p$ extension (although both fields are infinite are characteristic $p$).
+  - Then the minimal polynomial of $t$ is $f(x) \definedas x^p - t \in \FF_p(t)[x]$, where $f'(x) = px^p \equiv 0$
     Alternatively, just note that $f$ factors as $f(x) = (x-t^{1\over p})^p$ in $L[x]$, which has multiple roots.
 :::
 

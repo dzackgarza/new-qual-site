@@ -37,7 +37,7 @@ Prove that $f$ must be a constant.
 ,\]
 so $f$ is a polynomial of degree at most $m$.
 
-Now if $f$ is entire, $g(z) \da e^{f(z)}$ is entire and
+Now if $f$ is entire, $g(z) \definedas e^{f(z)}$ is entire and
 \[
 \abs{g(z)} = \abs{e^{f(z)}} = e^{\Re(f)} \leq e^M
 ,\]

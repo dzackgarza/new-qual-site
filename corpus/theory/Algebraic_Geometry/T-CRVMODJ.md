@@ -27,13 +27,13 @@ prompts:
 ---
 
 ::: {.theorem title="The modular function"}
-For $\tau$ in the upper half plane $\HH$ write $\Lambda_\tau \da \gens{1, \tau}_\ZZ$ and define
+For $\tau$ in the upper half plane $\HH$ write $\Lambda_\tau \definedas \generators{1, \tau}_\ZZ$ and define
 \[
-J(\tau) \da \frac{g_2(\Lambda_\tau)^3}{\Delta(\Lambda_\tau)},
+J(\tau) \definedas \frac{g_2(\Lambda_\tau)^3}{\Delta(\Lambda_\tau)},
 \qquad
 \Delta = g_2^3 - 27 g_3^2,
 \qquad
-j \da 1728 \, J .
+j \definedas 1728 \, J .
 \]
 This $j$ is the $j$-invariant of $E_{\Lambda_\tau}$.
 Then $J(\tau) = J(\tau')$ if and only if
@@ -44,7 +44,7 @@ Then $J(\tau) = J(\tau')$ if and only if
 \]
 and every $\SL_2(\ZZ)$-orbit has exactly one representative in the fundamental region
 \[
-F = \ts{ \tau \in \HH \st -\tfrac{1}{2} \leq \Re \tau < \tfrac{1}{2}, \ \abs{\tau} \geq 1, \text{ and } \abs\tau > 1 \text{ when } \Re\tau > 0 } .
+F = \theset{ \tau \in \HH \st -\tfrac{1}{2} \leq \Re \tau < \tfrac{1}{2}, \ \abs{\tau} \geq 1, \text{ and } \abs\tau > 1 \text{ when } \Re\tau > 0 } .
 \]
 So $J \colon \HH/\SL_2(\ZZ) \to \CC$ is a bijection.
 :::
@@ -56,10 +56,10 @@ The two checkable consequences, which pin the convention without appeal to any b
 J(i) = 1, \quad j(i) = 1728 ,
 \qquad
 J(\rho) = 0, \quad j(\rho) = 0 ,
-\qquad \rho \da e^{2\pi i/3} .
+\qquad \rho \definedas e^{2\pi i/3} .
 \]
-The first holds because multiplication by $i$ preserves $\gens{1,i}$, so $g_3 = \sum \omega^{-6} \cdot 140 = i^{-6} g_3 = -g_3$ forces $g_3 = 0$ and $\Delta = g_2^3$.
-The second holds because multiplication by $\rho$ preserves $\gens{1,\rho}$, so $g_2 = \rho^{-4} g_2$ forces $g_2 = 0$.
+The first holds because multiplication by $i$ preserves $\generators{1,i}$, so $g_3 = \sum \omega^{-6} \cdot 140 = i^{-6} g_3 = -g_3$ forces $g_3 = 0$ and $\Delta = g_2^3$.
+The second holds because multiplication by $\rho$ preserves $\generators{1,\rho}$, so $g_2 = \rho^{-4} g_2$ forces $g_2 = 0$.
 Many sources instead write $j = 1728 g_2^3/\Delta$ with no intermediate $J$, and analytic number theory rescales $\Delta$ by $(2\pi)^{12}$ to make $q$-expansions integral; none of that moves $j(i)$ or $j(\rho)$.
 :::
 

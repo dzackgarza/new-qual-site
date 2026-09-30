@@ -87,7 +87,7 @@ R &\to R\localize{S} \\
 x &\mapsto {x\over 1}
 \end{aligned}
 $$
-need not be injective: its kernel is $\ts{x\in R \st sx=0 \text{ for some } s\in S}$.
+need not be injective: its kernel is $\theset{x\in R \st sx=0 \text{ for some } s\in S}$.
 :::
 
 ::: {.remark}

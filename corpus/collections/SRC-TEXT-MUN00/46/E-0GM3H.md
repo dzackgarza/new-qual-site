@@ -23,7 +23,7 @@ Define a topology on $\mathcal{C}(X, Y)$ as follows.
 Given $f \in \mathcal{C}(X, Y)$, and given a positive continuous function $\delta: X \to \mathbb{R}_+$ on $X$, let
 
 $$
-B(f, \delta) = \ts{g \mid d(f(x), g(x)) < \delta(x) \text{ for all } x \in X}.
+B(f, \delta) = \theset{g \mid d(f(x), g(x)) < \delta(x) \text{ for all } x \in X}.
 $$
 
 (a) Show that the sets $B(f, \delta)$ form a basis for a topology on $\mathcal{C}(X, Y)$.

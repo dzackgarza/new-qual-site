@@ -24,7 +24,7 @@ audit:
 
 ::: {.exercise}
 
-Consider the nine topologies on the set $X = \ts{a, b, c}$ indicated in Example 1 of §12. Compare them; that is, for each pair of topologies, determine whether they are comparable, and if so, which is the finer.
+Consider the nine topologies on the set $X = \theset{a, b, c}$ indicated in Example 1 of §12. Compare them; that is, for each pair of topologies, determine whether they are comparable, and if so, which is the finer.
 :::
 
 ::: {.solution}

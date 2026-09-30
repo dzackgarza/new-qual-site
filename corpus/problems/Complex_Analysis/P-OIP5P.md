@@ -28,7 +28,7 @@ Show that
   Since $f(x)$ is even, the original integral is ${1\over 2}I$.
 
 - Write $f(z) = e^{iz} / (z^2 + b^2)$.
-  Take a semicircular contour $\Gamma \da \gamma_1 + \gamma_2$ where $\gamma_1$ is $[-R, R]$ on $\RR$ and $\gamma_2$ is the usual half-circle of radius $R$.
+  Take a semicircular contour $\Gamma \definedas \gamma_1 + \gamma_2$ where $\gamma_1$ is $[-R, R]$ on $\RR$ and $\gamma_2$ is the usual half-circle of radius $R$.
 
 - Claim: $\int_{\gamma_2} f \converges{R\to\infty}\too 0$, so $\int_\Gamma \to \int_\RR f(z)$.
   - Estimate the exponential factor:

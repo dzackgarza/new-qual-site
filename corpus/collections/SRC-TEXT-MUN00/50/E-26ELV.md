@@ -35,7 +35,7 @@ Conclude that if $f$ is injective as well, then $f$ is a homeomorphism of $X$ wi
 (c) Given $f: X \to \mathbb{R}^N$ and given a compact subspace $C$ of $X$, let
 
 $$
-U_\epsilon(C) = \ts{f \mid \Delta(f \mid C) < \epsilon}.
+U_\epsilon(C) = \theset{f \mid \Delta(f \mid C) < \epsilon}.
 $$
 
 Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \mathbb{R}^N)$.

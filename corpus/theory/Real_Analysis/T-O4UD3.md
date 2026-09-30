@@ -22,5 +22,5 @@ Every continuous function $f\colon X\to Y$ is [[D-WGYSB|uniformly continuous]] [
 
 ::: {.corollary}
 Let $U\subseteq\RR^n$ and let $f\colon U\to \RR$ be continuous.
-For every compact $K \subseteq U$, the restriction $\ro{f}{K}$ is uniformly continuous.
+For every compact $K \subseteq U$, the restriction $\restrictionof{f}{K}$ is uniformly continuous.
 :::

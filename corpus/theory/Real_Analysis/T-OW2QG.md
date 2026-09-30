@@ -17,11 +17,11 @@ review: draft
 ::: {.theorem}
 Let $\mathcal X$ be a real vector space and let $p\colon \mathcal X\to\RR$ be sublinear, that is, $p(x+y) \leq p(x) + p(y)$ and $p(\lambda x) = \lambda p(x)$ for all $x,y\in \mathcal X$ and all $\lambda \geq 0$.
 Let $\mathcal M \subseteq \mathcal X$ be a linear subspace and $f\colon\mathcal M\to\RR$ a linear functional with $f \leq p$ on $\mathcal M$.
-Then there exists a linear functional $F\colon\mathcal X\to\RR$ with $\ro{F}{\mathcal M} = f$ and $F \leq p$ on $\mathcal X$.
+Then there exists a linear functional $F\colon\mathcal X\to\RR$ with $\restrictionof{F}{\mathcal M} = f$ and $F \leq p$ on $\mathcal X$.
 
 Let $\mathcal X$ be a complex vector space and let $p\colon\mathcal X\to\RR$ be a seminorm, that is, $p(x+y) \leq p(x) + p(y)$ and $p(\lambda x) = \abs{\lambda} p(x)$ for all $x,y\in \mathcal X$ and all $\lambda \in\CC$.
 Let $\mathcal M \subseteq \mathcal X$ be a linear subspace and $f\colon\mathcal M\to\CC$ a [[D-EPSKF|linear functional]] with $\abs f \leq p$ on $\mathcal M$.
-Then there exists a linear functional $F\colon\mathcal X\to\CC$ with $\ro{F}{\mathcal M} = f$ and $\abs F \leq p$ on $\mathcal X$ [@Fol13].
+Then there exists a linear functional $F\colon\mathcal X\to\CC$ with $\restrictionof{F}{\mathcal M} = f$ and $\abs F \leq p$ on $\mathcal X$ [@Fol13].
 :::
 
 ::: {.remark}
@@ -38,7 +38,7 @@ For every $c\in[-1,1]$, the functional $F_c(x)\coloneqq x_1+cx_2$ extends $f$ an
 Let $\mathcal X$ be a normed vector space over $\RR$ or $\CC$ with dual space $\dualof{\mathcal X}$ of continuous linear functionals and [[D-T4LOC|dual norm]].
 
 1. If $\mathcal M \subseteq \mathcal X$ is a closed linear subspace and $x\in\mathcal X\setminus\mathcal M$, put $\delta \coloneqq \inf_{y\in \mathcal M}\norm{x-y}$.
-   Then there is $f \in \dualof{\mathcal X}$ with $\norm{f} = 1$, $\ro f {\mathcal M} = 0$, and $f(x) = \delta$.
+   Then there is $f \in \dualof{\mathcal X}$ with $\norm{f} = 1$, $\restrictionof f {\mathcal M} = 0$, and $f(x) = \delta$.
 
 2. For each $x\in\mathcal X$ with $x\neq 0$ there is $f\in \dualof{\mathcal X}$ with $\norm f = 1$ and $f(x) = \norm x$.
    In particular, the functionals in $\dualof{\mathcal X}$ separate the points of $\mathcal X$.

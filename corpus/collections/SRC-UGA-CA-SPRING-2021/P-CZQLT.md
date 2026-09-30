@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $\ts{f_n}_{n=1}^\infty$ is a sequence of holomorphic functions on $\DD$ and $f$ is also holomorphic on $\DD$. 
+Let $\theset{f_n}_{n=1}^\infty$ is a sequence of holomorphic functions on $\DD$ and $f$ is also holomorphic on $\DD$. 
 Show that the following are equivalent:
 
 - $f_n\to f$ uniformly on compact subsets of $\DD$.
@@ -32,7 +32,7 @@ Show that the following are equivalent:
 ::: {.solution}
 $\implies$: 
 
-- Fix $r \in (0, 1)$ and let $\gamma = \ts{\abs{z} = r}$.
+- Fix $r \in (0, 1)$ and let $\gamma = \theset{\abs{z} = r}$.
   This is compact, so $f_n\to f$ uniformly on $\gamma$:
 \[
 \int_\gamma \abs{f_n(z) - f(z) } \dz 
@@ -46,9 +46,9 @@ $\implies$:
 $\impliedby$:
 
 - Let $K$ be compact, then choose $\gamma$ enclosing but not intersecting $K$.
-- Since $\gamma, K$ are disjoint compact sets, define $M \da \inf \ts{\abs{z-\xi} \st z\in K, \xi\in \gamma}$, the $0<M<\infty$.
+- Since $\gamma, K$ are disjoint compact sets, define $M \definedas \inf \theset{\abs{z-\xi} \st z\in K, \xi\in \gamma}$, the $0<M<\infty$.
 
-- Apply Cauchy's formula to the function $F_n(z) \da f_n(z) - f(z)$, where we want to show $\abs{F_n(z)} < \eps$:
+- Apply Cauchy's formula to the function $F_n(z) \definedas f_n(z) - f(z)$, where we want to show $\abs{F_n(z)} < \eps$:
 \[
 F_n(z) 
 &= {1\over 2\pi i} \int_\gamma { F_n(\xi) \over z-\xi} \dxi \\

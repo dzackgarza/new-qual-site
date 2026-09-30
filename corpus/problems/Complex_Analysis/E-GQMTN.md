@@ -23,7 +23,7 @@ Find all entire functions $f$ satisfying
 :::
 
 ::: {.solution}
-The inequality implies $f$ has no zeros, so $g(z) \da 1/f(z)$ is entire.
+The inequality implies $f$ has no zeros, so $g(z) \definedas 1/f(z)$ is entire.
 Moreover it is bounded on $\CC$, since
 \[
 \abs{g(z)} \leq {1\over \abs{z} + 1} \leq 1

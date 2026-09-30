@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_\RR {\cos(x) \over x+i}\dx
+I \definedas \int_\RR {\cos(x) \over x+i}\dx
 .\]
 
 :::
@@ -26,10 +26,10 @@ I \da \int_\RR {\cos(x) \over x+i}\dx
 Since $x+i$ is not real, ${\cos(x) \over x+i}\neq \Re\qty{e^{ix}\over x+i}$.
 Use $\cos(z) = {1\over 2}(e^{iz} + e^{-iz})$ to decompose into two integrals:
 \[
-I \da \int_\RR {\cos(x) \over x+i}\dx
+I \definedas \int_\RR {\cos(x) \over x+i}\dx
 = \int_\RR f_1 + \int_\RR f_2,
 \qquad
-f_1(z)\da{e^{iz} \over 2(z+i)},\quad f_2(z)\da{e^{-iz} \over 2(z+i)}
+f_1(z)\definedas{e^{iz} \over 2(z+i)},\quad f_2(z)\definedas{e^{-iz} \over 2(z+i)}
 .\]
 Both are $e^{\pm iz}g(z)$ with $g(z)={1\over 2(z+i)}\to0$ as $\abs z\to\infty$, so Jordan's lemma applies on semicircles: for $e^{i\alpha z}$ with $\alpha>0$ on the upper half-plane (for $f_1$), and with $\alpha<0$ on the lower half-plane (for $f_2$). For $f_1$, use the upper contour:
 

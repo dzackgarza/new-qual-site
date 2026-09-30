@@ -22,26 +22,26 @@ prompts:
 ---
 
 ::: {.definition title="Elliptic function"}
-Fix a lattice $\Lambda = \gens{1, \tau}_\ZZ \subseteq \CC$ with $\tau \notin \RR$.
+Fix a lattice $\Lambda = \generators{1, \tau}_\ZZ \subseteq \CC$ with $\tau \notin \RR$.
 An \dfn{elliptic function} for $\Lambda$ is a meromorphic $f \colon \CC \to \PP^1$ with $f(z + \omega) = f(z)$ for every $\omega \in \Lambda$, that is, a meromorphic function on the torus $\CC/\Lambda$.
 These form a field.
 :::
 
 ::: {.definition title="The Weierstrass functions"}
-Write $\Lambda' \da \Lambda \smz$.
+Write $\Lambda' \definedas \Lambda \smz$.
 $$
-\wp(z) \da \frac{1}{z^2} + \sum_{\omega \in \Lambda'} \qty{ \frac{1}{(z-\omega)^2} - \frac{1}{\omega^2} },
+\wp(z) \definedas \frac{1}{z^2} + \sum_{\omega \in \Lambda'} \qty{ \frac{1}{(z-\omega)^2} - \frac{1}{\omega^2} },
 \qquad
 \wp'(z) = \sum_{\omega \in \Lambda} \frac{-2}{(z-\omega)^3} .
 $$
 The series converges locally uniformly on $\CC \setminus \Lambda$, so $\wp$ is elliptic with a double pole at each lattice point and no other poles; $\wp$ is even and $\wp'$ is odd.
 Set the Eisenstein series of the lattice,
 $$
-g_2 \da 60 \sum_{\omega \in \Lambda'} \frac{1}{\omega^4},
+g_2 \definedas 60 \sum_{\omega \in \Lambda'} \frac{1}{\omega^4},
 \qquad
-g_3 \da 140 \sum_{\omega \in \Lambda'} \frac{1}{\omega^6},
+g_3 \definedas 140 \sum_{\omega \in \Lambda'} \frac{1}{\omega^6},
 \qquad
-\Delta \da g_2^3 - 27 g_3^2 .
+\Delta \definedas g_2^3 - 27 g_3^2 .
 $$
 :::
 
@@ -54,7 +54,7 @@ and the field of elliptic functions for $\Lambda$ is $\CC(\wp, \wp')$.
 
 ::: {.remark}
 For $z$ in a fixed compact set, the bracket $\frac{1}{(z-\omega)^2} - \frac{1}{\omega^2}$ is $O(\abs\omega^{-3})$, and $\sum_{\omega\in\Lambda'} \abs{\omega}^{-3}$ converges, so the series for $\wp$ converges; $\sum_{\omega\in\Lambda'}\abs{\omega}^{-2}$ diverges.
-For the same reason the Eisenstein series $G_{2k}\da\sum_{\omega \in \Lambda'} \omega^{-2k}$ converge absolutely for $k\ge2$, and the odd-weight sums vanish because $\Lambda = -\Lambda$.
+For the same reason the Eisenstein series $G_{2k}\definedas\sum_{\omega \in \Lambda'} \omega^{-2k}$ converge absolutely for $k\ge2$, and the odd-weight sums vanish because $\Lambda = -\Lambda$.
 
 Integrating an elliptic function $f$ around the boundary of a fundamental parallelogram gives $\sum \operatorname{Res} f = 0$ on $\CC/\Lambda$, so no elliptic function has exactly one simple pole in a fundamental parallelogram.
 The function $\wp$ has a single double pole there.

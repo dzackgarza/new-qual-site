@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $\HH_R\coloneqq\ts{z\in\CC \st \Re z>0}$ be the right half-plane and $\DD\coloneqq\ts{w\in\CC \st \abs{w}<1}$ the unit disc.
+Let $\HH_R\coloneqq\theset{z\in\CC \st \Re z>0}$ be the right half-plane and $\DD\coloneqq\theset{w\in\CC \st \abs{w}<1}$ the unit disc.
 The map
 $$
 \varphi\colon\HH_R\to\DD,\qquad \varphi(z)=\frac{1-z}{1+z},
@@ -30,7 +30,7 @@ $$
 $$
 so $z$ is closer to $1$ than to $-1$ and $\abs{\varphi(z)}<1$.
 Hence $\varphi$ is a [[D-E7A5W|holomorphic]] map $\HH_R\to\DD$.
-The same map is the composite of the rotation $z\mapsto iz$, which maps $\HH_R$ onto the upper half-plane $\HH=\ts{u\in\CC\st\Im u>0}$, with the Cayley map $u\mapsto\frac{i-u}{i+u}$ from $\HH$ onto $\DD$:
+The same map is the composite of the rotation $z\mapsto iz$, which maps $\HH_R$ onto the upper half-plane $\HH=\theset{u\in\CC\st\Im u>0}$, with the Cayley map $u\mapsto\frac{i-u}{i+u}$ from $\HH$ onto $\DD$:
 $$
 \frac{i-iz}{i+iz}=\frac{1-z}{1+z}.
 $$

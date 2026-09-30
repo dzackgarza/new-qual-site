@@ -25,7 +25,7 @@ prompts:
 ::: {.definition}
 The \dfn{complete linear system} of $D$ is the set of effective divisors linearly equivalent to it,
 $$
-\abs{D} = \ts{ D' \geq 0 \st D' \sim D } \cong \PP H^0(X, \OO_X(D)) .
+\abs{D} = \theset{ D' \geq 0 \st D' \sim D } \cong \PP H^0(X, \OO_X(D)) .
 $$
 A \dfn{linear system} is a linear subspace of $\abs{D}$, that is, $\PP V$ for a subspace $V \subseteq H^0(X, \OO_X(D))$.
 A point $p$ is a \dfn{base point} when $p \in \supp D'$ for every $D'$ in the system; the \dfn{base locus} $\Bs\abs{D}$ is the set of base points, and the system is \dfn{base-point free} when this is empty.

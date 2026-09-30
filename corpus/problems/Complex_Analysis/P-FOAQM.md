@@ -27,8 +27,8 @@ Prove that $g$ is Riemann integrable.
 ::: {.solution}
 Write $U(f), L(f)$ for the upper and lower sums of $f$, so for $\Pi$ the collection of all partitions of $[0, 1]$,
 \[
-U(f) \da \inf_{P\in \Pi} U(f, P) && U(f, P) \da \sum_{k=1}^n \sup_{x\in I_k}f(x) \cdot \mu(I_k) \\
-L(f) \da \sup_{P\in \Pi} L(f, P) && L(f, P) \da \sum_{k=1}^n \inf_{x\in I_k} f(x) \cdot \mu(I_k)
+U(f) \definedas \inf_{P\in \Pi} U(f, P) && U(f, P) \definedas \sum_{k=1}^n \sup_{x\in I_k}f(x) \cdot \mu(I_k) \\
+L(f) \definedas \sup_{P\in \Pi} L(f, P) && L(f, P) \definedas \sum_{k=1}^n \inf_{x\in I_k} f(x) \cdot \mu(I_k)
 .\]
 
 Note that integrability of $f$ is equivalent to

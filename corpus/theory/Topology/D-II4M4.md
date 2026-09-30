@@ -18,9 +18,9 @@ review: draft
 Let $X$ be a topological space and $I = [0,1]$.
 The \dfn{cone} on $X$ is the quotient space
 $$
-CX\coloneqq(X\times I)/(X\times\ts{0}),
+CX\coloneqq(X\times I)/(X\times\theset{0}),
 $$
-in which $X\times\ts{0}$ is collapsed to a point.
+in which $X\times\theset{0}$ is collapsed to a point.
 :::
 
 ::: {.proposition}

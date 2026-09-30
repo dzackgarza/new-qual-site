@@ -54,7 +54,7 @@ Picard's theorems replace density of the image by omission of at most one value 
 
 ::: {.proof title="Little Picard theorem, by uniformization"}
 Let $f$ be entire and omit two values $a\neq b$.
-Replacing $f$ by $(f-a)/(b-a)$, $f$ is a holomorphic map $\CC\to X\coloneqq \CC\sm\ts{0,1}$.
+Replacing $f$ by $(f-a)/(b-a)$, $f$ is a holomorphic map $\CC\to X\coloneqq \CC\sm\theset{0,1}$.
 The universal covering space of $X$ is biholomorphic to $\HH$, and since $\CC$ is simply connected, $f$ lifts to a holomorphic map $\tilde f\colon\CC\to\HH$.
 Composing with the Cayley map gives a bounded entire function, which is constant by Liouville's theorem, so $\tilde f$ and $f$ are constant.
 

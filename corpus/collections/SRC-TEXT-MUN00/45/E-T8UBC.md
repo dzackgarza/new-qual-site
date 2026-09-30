@@ -18,7 +18,7 @@ Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces; give $X \times Y$ the correspond
 Consider the space $\mathcal{C}(X, Y)$ in the uniform metric; let $\operatorname{gr}: \mathcal{C}(X, Y) \to \mathcal{H}$ be the function that assigns, to each continuous function $f: X \to Y$, its graph
 
 $$
-G_f = \ts{x \times f(x) \mid x \in X}.
+G_f = \theset{x \times f(x) \mid x \in X}.
 $$
 
 (a) Show that the map $\operatorname{gr}$ is injective and uniformly continuous.

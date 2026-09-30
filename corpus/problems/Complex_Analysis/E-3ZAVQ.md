@@ -34,17 +34,17 @@ Jordan's lemma on this contour yields
 
 To compute the full integral, use an indented semicircular contour:
 
-- $C_+ \da [\eps, R]$
-- $C_- \da [-R, -\eps]$
-- $C_\eps \da \eps e^{it}$ with $t\in [0, \pi]$
-- $C_R \da R e^{it}$ with $t\in [0, \pi]$
-- $\Gamma \da C_+ + C_R + C_- - C_\eps$, where $C_\eps$ is taken with reversed orientation.
+- $C_+ \definedas [\eps, R]$
+- $C_- \definedas [-R, -\eps]$
+- $C_\eps \definedas \eps e^{it}$ with $t\in [0, \pi]$
+- $C_R \definedas R e^{it}$ with $t\in [0, \pi]$
+- $\Gamma \definedas C_+ + C_R + C_- - C_\eps$, where $C_\eps$ is taken with reversed orientation.
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-20_06-55-40.png)
 
 Write $I$ for the original integral, and
 \[
-f(z) \da { e^{iz} \over z} \implies I = \Im \lim_{\eps\to 0}\lim_{R\to \infty} \qty{\int_{C_-} + \int_{C_+}}f
+f(z) \definedas { e^{iz} \over z} \implies I = \Im \lim_{\eps\to 0}\lim_{R\to \infty} \qty{\int_{C_-} + \int_{C_+}}f
 .\]
 By the residue theorem
 \[

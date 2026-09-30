@@ -27,7 +27,7 @@ Accomplish this by sending
 
 Use the cross-ratio
 \[
-R(z) \da (z, \infty, i, -i) = {z-i \over z-(-i)} {\infty - (-i) \over \infty - i} = {z-i\over z+i}
+R(z) \definedas (z, \infty, i, -i) = {z-i \over z-(-i)} {\infty - (-i) \over \infty - i} = {z-i\over z+i}
 .\]
 
 Checking that this works:

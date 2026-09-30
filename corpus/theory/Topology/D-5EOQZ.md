@@ -29,7 +29,7 @@ The following subspaces of Euclidean space are not locally compact:
 
 - $\QQ\subseteq\RR$;
 
-- $\ts{\mathbf 0} \union \ts{(x, y)\in\RR^2 \st x>0} \subseteq\RR^2$, in which the origin has no neighborhood contained in a compact subset.
+- $\theset{\mathbf 0} \union \theset{(x, y)\in\RR^2 \st x>0} \subseteq\RR^2$, in which the origin has no neighborhood contained in a compact subset.
 :::
 
 ::: {.remark}

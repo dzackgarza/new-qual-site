@@ -65,7 +65,7 @@ $$
 \text{Euclidean domain}\implies\text{PID}\implies\text{UFD}\implies\text{integral domain},
 $$
 and none of these implications reverses.
-In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest common divisors; in a [[D-HTIL5|principal ideal domain]] $\gens{a,b}=\gens{d}$ for a greatest common divisor $d$ of $a$ and $b$; and in a [[D-INULL|unique factorization domain]] every nonzero nonunit is a product of irreducible elements, unique up to order and associates.
+In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest common divisors; in a [[D-HTIL5|principal ideal domain]] $\generators{a,b}=\generators{d}$ for a greatest common divisor $d$ of $a$ and $b$; and in a [[D-INULL|unique factorization domain]] every nonzero nonunit is a product of irreducible elements, unique up to order and associates.
 
 [[D-D7VK2]]
 

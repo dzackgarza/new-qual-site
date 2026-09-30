@@ -12,7 +12,7 @@ topics:
 
 The [[D-4R2Z5|dihedral group]] $D_4$ and the [[D-KRKV7|quaternion group]] $Q_8$ are the nonabelian groups of order $8$.
 A finite [[D-FIB7S|$p$-group]] has nontrivial center, by the class equation, and has a normal subgroup of each order dividing its order.
-A [[D-7UIPO|transitive subgroup]] of $S_n$ acts transitively on $\ts{1,\ldots,n}$, so its order is divisible by $n$.
+A [[D-7UIPO|transitive subgroup]] of $S_n$ acts transitively on $\theset{1,\ldots,n}$, so its order is divisible by $n$.
 
 [[D-4R2Z5]]
 

@@ -108,7 +108,7 @@ We then deduce:
   0 \injects H_3(X) \injects \ZZ \mapsvia{\cong_{\del_3}} \ZZ \surjects H_2(X) \surjects 0
   \]
   Claim: \( \bd_3 \) must be an isomorphism.
-  If this is true, $H_3(X) \cong \ker \bd_3 = 0$ and $H_2(X) \cong \coker(\bd_3) \da \ZZ/\im(\bd_3) \cong \ZZ/\ZZ = 0$.
+  If this is true, $H_3(X) \cong \ker \bd_3 = 0$ and $H_2(X) \cong \coker(\bd_3) \definedas \ZZ/\im(\bd_3) \cong \ZZ/\ZZ = 0$.
 
 ::: {.remark}
 Why is this true?

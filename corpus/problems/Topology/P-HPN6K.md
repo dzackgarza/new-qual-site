@@ -17,13 +17,13 @@ review: draft
 ::: {.problem}
 - $\ZZ$
 
-- $\ts{1}$
+- $\theset{1}$
 
-- $\ts{p \in \ZZ^{\geq 0} \st p\text{ is prime}}$
+- $\theset{p \in \ZZ^{\geq 0} \st p\text{ is prime}}$
 
-- $\ts{ {1\over n} \st n\in \ZZ^{\geq 0}}$
+- $\theset{ {1\over n} \st n\in \ZZ^{\geq 0}}$
 
-- $\ts{ {1\over n} \st n\in \ZZ^{\geq 0}} \union \ts{0}$
+- $\theset{ {1\over n} \st n\in \ZZ^{\geq 0}} \union \theset{0}$
 
 - Prove that $\RR^n$ is not homeomorphic to $\RR$ for any $n\geq 2$.
 

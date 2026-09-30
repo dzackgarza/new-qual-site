@@ -39,8 +39,8 @@ Computing the contribution from the residues:
 .\]
 The contribution from the integrals will come from $\qty{\int_{\gamma_1} + \int_{\gamma_2}}f$ where
 
-- $\gamma_1 \da \ts{tR + (1-t)\eps \st t\in [\eps, R] }$
-- $\gamma_2 \da \ts{t(-\eps) + (1-t)(-R) \st t\in [\eps, R] }$, 
+- $\gamma_1 \definedas \theset{tR + (1-t)\eps \st t\in [\eps, R] }$
+- $\gamma_2 \definedas \theset{t(-\eps) + (1-t)(-R) \st t\in [\eps, R] }$, 
 
 so that the overall contour is oriented counterclockwise.
 Noting that $\int_{\gamma_1}f(z)\dz \to I$ the desired integral, the other contribution is

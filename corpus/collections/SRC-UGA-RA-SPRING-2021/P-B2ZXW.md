@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f, g$ be Lebesgue integrable on $\RR$ and let $g_n(x) \da g(x- n)$.
+Let $f, g$ be Lebesgue integrable on $\RR$ and let $g_n(x) \definedas g(x- n)$.
 Prove that
 \[
 \lim_{n\to \infty } \norm{f + g_n}_1 = \norm{f}_1 + \norm{g}_1
@@ -34,7 +34,7 @@ Prove that
 ::: {.concept}
 \envlist
 
-- For $f\in L^1(X)$, $\norm{f}_1 \da \int_X \abs{f(x)} \dx < \infty$.
+- For $f\in L^1(X)$, $\norm{f}_1 \definedas \int_X \abs{f(x)} \dx < \infty$.
 
 - Small tails in $L^1$: if $f\in L^1(\RR^n)$, then for every $\eps>0$ there exists a radius $R$ such that
 \[

@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 Let $K$ be a Galois extension of $F$, and let $F \subset E \subset K$ be inclusions of fields.
-Let $G \da \Gal(K/F)$ and $H \da \Gal(K/E)$, and suppose $H$ contains $N_G(P)$, where $P$ is a Sylow $p$-subgroup of $G$ for $p$ a prime.
+Let $G \definedas \Gal(K/F)$ and $H \definedas \Gal(K/E)$, and suppose $H$ contains $N_G(P)$, where $P$ is a Sylow $p$-subgroup of $G$ for $p$ a prime.
 Prove that \( [E: F] \equiv 1 \mod p \).
 :::
 
@@ -26,9 +26,9 @@ The correspondence:
 \begin{tikzcd}
 	K &&&& 1 \\
 	\\
-	E &&&& {H \da \Gal(K/E)\hspace{4em}} \\
+	E &&&& {H \definedas \Gal(K/E)\hspace{4em}} \\
 	\\
-	F &&&& {G \da \Gal(K/F)\hspace{4em}}
+	F &&&& {G \definedas \Gal(K/F)\hspace{4em}}
 	\arrow["{[E:F]}", hook, from=5-1, to=3-1]
 	\arrow["{[K:E]}", hook, from=3-1, to=1-1]
 	\arrow[""{name=0, anchor=center, inner sep=0}, "{[K:F]}"', curve={height=30pt}, hook, from=5-1, to=1-1]
@@ -42,7 +42,7 @@ The correspondence:
 
 Normalizers:
 \[
-N_G(P) = \ts{g\in G \st gP\inverseof{g} = P}
+N_G(P) = \theset{g\in G \st gP\inverseof{g} = P}
 .\]
 
 :::

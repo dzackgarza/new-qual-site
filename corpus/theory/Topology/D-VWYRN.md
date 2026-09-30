@@ -16,7 +16,7 @@ review: draft
 Let $f\colon X\to Z$ and $g\colon Y\to Z$ be continuous maps of topological spaces.
 The \dfn{pullback} of $f$ and $g$ is the subspace
 $$
-X \cross_Z Y \coloneqq \ts{ (x,y) \in X\cross Y \st f(x) = g(y) }
+X \cross_Z Y \coloneqq \theset{ (x,y) \in X\cross Y \st f(x) = g(y) }
 $$
 of the product space $X\cross Y$, together with the restrictions $p_X\colon X\cross_Z Y\to X$ and $p_Y\colon X\cross_Z Y\to Y$ of the two projections.
 :::

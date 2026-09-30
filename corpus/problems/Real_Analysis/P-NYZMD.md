@@ -26,7 +26,7 @@ e_0(x) &= 1 \\
 e_1(x) &= \sqrt{3}(2x-1)
 .\]
 
-a. Show that $\ts{e_0, e_1}$ is an orthonormal system.
+a. Show that $\theset{e_0, e_1}$ is an orthonormal system.
 
 b. Show that the polynomial $p(x)$ where $\deg(p) = 1$ which is closest to $f(x) = x^2$ in $L^2([0, 1])$ is given by
 \[

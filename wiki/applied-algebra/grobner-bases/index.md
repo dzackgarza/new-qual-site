@@ -42,5 +42,5 @@ For $J = (x^2)\subseteq k[x,y]$, $V(J)$ is the line $x = 0$, of degree $1$, whil
 
 Let $k$ be algebraically closed.
 By the Nullstellensatz, $I(V(J)) = \sqrt J$.
-By the Rabinowitsch trick, $f\in\sqrt J$ if and only if $1\in J + \gens{1-yf}\subseteq R[y]$, which is an ideal membership test.
-In particular $V(J) = \emptyset$ if and only if $1\in J$, if and only if the reduced Gröbner basis of $J$ is $\ts 1$.
+By the Rabinowitsch trick, $f\in\sqrt J$ if and only if $1\in J + \generators{1-yf}\subseteq R[y]$, which is an ideal membership test.
+In particular $V(J) = \emptyset$ if and only if $1\in J$, if and only if the reduced Gröbner basis of $J$ is $\theset 1$.

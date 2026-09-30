@@ -20,7 +20,7 @@ prompts:
 
 ::: {.definition title="complex"}
 In an abelian category $\mca$, a \dfn{complex} $A^\bullet$ is a family of objects $A^i$, $i \in \ZZ$, with maps $\delta^i: A^i \to A^{i+1}$ such that $\delta^{i+1}\circ \delta^i = 0$ for all $i$; equivalently $\im \delta^i \subseteq \ker \delta^{i+1}$.
-Its cohomology is $h^i(A^\bullet) \da \ker \delta^i / \im \delta^{i-1}$.
+Its cohomology is $h^i(A^\bullet) \definedas \ker \delta^i / \im \delta^{i-1}$.
 
 A \dfn{morphism of complexes} $f: A^\bullet \to B^\bullet$ is a family $f^i: A^i \to B^i$ commuting with the differentials, $\delta^i \circ f^i = f^{i+1}\circ \delta^i$.
 :::

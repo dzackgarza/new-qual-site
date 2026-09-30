@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Generalize the glueing procedure of the text as follows.
-Let $\ts{X_i}$ be a possibly infinite family of schemes.
+Let $\theset{X_i}$ be a possibly infinite family of schemes.
 For each $i \neq j$ suppose given an open subset $U_{ij} \subseteq X_i$ with its induced scheme structure.
 Suppose also given for each $i \neq j$ an isomorphism of schemes $\phi_{ij}: U_{ij} \to U_{ji}$ such that
 

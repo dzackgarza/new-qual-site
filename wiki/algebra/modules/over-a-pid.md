@@ -42,7 +42,7 @@ Over $\ZZ$, the module $\ZZ$ is indecomposable and not simple, and $\ZZ/4$ is cy
 ## The structure theorem
 
 Let $M$ be a finitely generated module over a PID $R$ with torsion submodule $M_t$.
-Then $M\cong R^n\oplus M_t$, and $M_t$ is the direct sum of its $\gens p$-primary components $M_{(p)}=\ts{m\in M\st p^km=0\text{ for some }k}$ over the primes $p$ of $R$ up to associates, each a finite direct sum of modules $R/\gens{p^e}$.
+Then $M\cong R^n\oplus M_t$, and $M_t$ is the direct sum of its $\generators p$-primary components $M_{(p)}=\theset{m\in M\st p^km=0\text{ for some }k}$ over the primes $p$ of $R$ up to associates, each a finite direct sum of modules $R/\generators{p^e}$.
 The invariant factor and elementary divisor forms are two groupings of this decomposition.
 
 [[PR-DJZLY]]
@@ -75,11 +75,11 @@ $$
 (-m_2)\, m_1 + m_1\, m_2 = 0,
 $$
 which is a relation with nonzero coefficients $-m_2$ and $m_1$.
-This contradicts $B$ being a basis, so $B = \ts m$ has one element and $I = \gens{m}$ is principal.
+This contradicts $B$ being a basis, so $B = \theset m$ has one element and $I = \generators{m}$ is principal.
 
-$\impliedby$: Suppose $I = \gens{m}$ with $m \neq 0$.
+$\impliedby$: Suppose $I = \generators{m}$ with $m \neq 0$.
 Every $x\in I$ has the form $\alpha m$, and $\alpha m = 0$ implies $\alpha = 0$ because $R$ is a domain.
-So $\ts{m}$ is a basis of $I$.
+So $\theset{m}$ is a basis of $I$.
 :::
 
 ## Tensor products and duals

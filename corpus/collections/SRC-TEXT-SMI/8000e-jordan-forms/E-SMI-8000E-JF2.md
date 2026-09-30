@@ -30,7 +30,7 @@ audit:
 (ii) If $\mathrm{ch}(t) = \prod (X - t)^{m_t}$ is the characteristic polynomial of $f: M \to M$, prove every root of $\mathrm{ch}(t)$ is also a root of the minimal polynomial $m(t)$, and if
 
 $$
-M_t = \ts{v \in M : \text{for some } r > 0, \ (T - t)^r v = 0}
+M_t = \theset{v \in M : \text{for some } r > 0, \ (T - t)^r v = 0}
 $$
 
 is the primary subspace of $M$ corresponding to the root $t$, prove that $\dim(M_t) = m_t$.

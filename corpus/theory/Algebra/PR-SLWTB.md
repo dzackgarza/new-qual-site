@@ -22,7 +22,7 @@ Let $p$ and $q$ be primes with $q<p$, and let $G$ be a group of order $pq$.
 
 (b) If $q\divides p-1$, then either $G\cong C_{pq}$, or $G$ is nonabelian and
 $$
-G\cong C_p\semidirect_\psi C_q \cong \gens{a, b \suchthat a^p=b^q=1,\ bab^{-1} = a^\ell},
+G\cong C_p\semidirect_\psi C_q \cong \generators{a, b \suchthat a^p=b^q=1,\ bab^{-1} = a^\ell},
 $$
 where $\psi\colon C_q\to\Aut(C_p)$ is nontrivial and $\ell$ is any integer with $\ell \not\equiv 1 \pmod p$ and $\ell^q \equiv 1 \pmod p$.
 Up to isomorphism, the nonabelian group does not depend on the choice of $\psi$ or $\ell$.

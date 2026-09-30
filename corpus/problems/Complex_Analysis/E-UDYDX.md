@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_0^\infty {1\over x^4 + 1 }\dx = {\pi \over 2\sqrt 2}
+I \definedas \int_0^\infty {1\over x^4 + 1 }\dx = {\pi \over 2\sqrt 2}
 .\]
 
 :::
@@ -34,14 +34,14 @@ using the solution from a previous problem.
 A sector will work, since there is a symmetry under $z\to \zeta_4 z$ and $f(z) \sim z^{-4}$, so the semicircular piece will vanish.
 Take the contour $\Gamma$ comprised of
 
-- $\gamma_1: \ts{t + 0i \st t\in [0, R]}$,
+- $\gamma_1: \theset{t + 0i \st t\in [0, R]}$,
 
-- $C_R: \ts{Re^{it}\st t\in [0, \pi/2]}$,
+- $C_R: \theset{Re^{it}\st t\in [0, \pi/2]}$,
 
-- $\gamma_2: \ts{0 + it \st t\in [0, R]}$,
+- $\gamma_2: \theset{0 + it \st t\in [0, R]}$,
 
 oriented counter-clockwise.
-Note that $z^4+1 = \prod_{k=0}^3 (z-\omega \zeta_4)$ where $\omega = e^{i\pi \over 4}$ and $\zeta_4 = e^{2\pi i\over 4} = i$, so there is only one pole at $z_0 \da e^{i\pi\over 4}$ within this contour.
+Note that $z^4+1 = \prod_{k=0}^3 (z-\omega \zeta_4)$ where $\omega = e^{i\pi \over 4}$ and $\zeta_4 = e^{2\pi i\over 4} = i$, so there is only one pole at $z_0 \definedas e^{i\pi\over 4}$ within this contour.
 
 Computing the symmetry:
 \[
@@ -77,19 +77,19 @@ I
 :::
 
 ::: {.solution title="The log trick"}
-Consider the auxiliary function $g(z) \da \log(z) f(z)$, and take a keyhole contour:
+Consider the auxiliary function $g(z) \definedas \log(z) f(z)$, and take a keyhole contour:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_00-39-57.png)
 
 Let $\Gamma$ be the counterclockwise contour consisting of
 
-- $C_\eps = \ts{\eps e^{it}\st t\in [0+\eps, 2\pi - \eps]}$
+- $C_\eps = \theset{\eps e^{it}\st t\in [0+\eps, 2\pi - \eps]}$
 
-- $\gamma_+ = \ts{x+i\eps \st x\in [\eps, R]}$
+- $\gamma_+ = \theset{x+i\eps \st x\in [\eps, R]}$
 
-- $C_R= \ts{R e^{it}\st t\in [0+\eps, 2\pi - \eps]}$
+- $C_R= \theset{R e^{it}\st t\in [0+\eps, 2\pi - \eps]}$
 
-- $\gamma_- = \ts{x-i\eps \st x\in [\eps, R]}$
+- $\gamma_- = \theset{x-i\eps \st x\in [\eps, R]}$
 
 Computing the symmetry:
 \[

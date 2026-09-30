@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $\Omega\subseteq\CC$ be open, and put $\Omega^+\coloneqq\Omega\cap\ts{\Im z>0}$, $\Omega^-\coloneqq\Omega\cap\ts{\Im z<0}$, and $I\coloneqq\Omega\cap\RR$.
+Let $\Omega\subseteq\CC$ be open, and put $\Omega^+\coloneqq\Omega\cap\theset{\Im z>0}$, $\Omega^-\coloneqq\Omega\cap\theset{\Im z<0}$, and $I\coloneqq\Omega\cap\RR$.
 Let $f^+$ be [[D-E7A5W|holomorphic]] on $\Omega^+$ and $f^-$ holomorphic on $\Omega^-$, and suppose both extend continuously to $I$ with $f^+(x)=f^-(x)$ for all $x\in I$.
 Then the function
 $$

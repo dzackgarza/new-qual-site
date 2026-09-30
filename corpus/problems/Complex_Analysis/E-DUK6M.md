@@ -16,7 +16,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)
+I \definedas \int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)
 .\]
 
 :::

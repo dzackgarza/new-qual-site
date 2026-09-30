@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I\da \int_0^\infty {\log(x) \over 1+x^a}\dx 
+I\definedas \int_0^\infty {\log(x) \over 1+x^a}\dx 
 &= - \qty{\pi \over a}^2\cos\qty{\pi\over a}\csc^2\qty{\pi \over a} \\
 &= - {\pi^2\over a^2} {\cos\qty{\pi\over a} \over \sin^2\qty{\pi\over a}}
 .\]
@@ -25,20 +25,20 @@ I\da \int_0^\infty {\log(x) \over 1+x^a}\dx
 :::
 
 ::: {.solution}
-Assume $a>1$, so that the integral converges. The pole of $f(z)\da{\log(z)\over1+z^a}$ nearest the positive axis is $\omega_a \da e^{i\pi\over a}$. Take the sector $0\le\arg z\le 2\pi/a$ indented at $0$, which contains only this pole. By the ML estimate, the integrals over its arcs of radius $R$ and $\eps$ are $O\qty{R\log R/R^a}$ and $O\qty{\eps\abs{\log\eps}}$, so both tend to zero:
+Assume $a>1$, so that the integral converges. The pole of $f(z)\definedas{\log(z)\over1+z^a}$ nearest the positive axis is $\omega_a \definedas e^{i\pi\over a}$. Take the sector $0\le\arg z\le 2\pi/a$ indented at $0$, which contains only this pole. By the ML estimate, the integrals over its arcs of radius $R$ and $\eps$ are $O\qty{R\log R/R^a}$ and $O\qty{\eps\abs{\log\eps}}$, so both tend to zero:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-25-35.png)
 
-Set $\zeta_a \da e^{2\pi i \over a}$.
+Set $\zeta_a \definedas e^{2\pi i \over a}$.
 Contributions from the contours: let $\gamma_1$ be the contour along $\RR$ and $\gamma_2$ along $\zeta_a \RR$, oriented so the overall contour is counterclockwise.
-Then $\int_{\gamma_1}f(z)\dz \to I$ for $f(z) \da {\log(z) \over 1+z^a}$, so compute the monodromy term: parameterize $\gamma_2 \da \ts{\zeta_a t \st t\in [\eps, R]}$, so
+Then $\int_{\gamma_1}f(z)\dz \to I$ for $f(z) \definedas {\log(z) \over 1+z^a}$, so compute the monodromy term: parameterize $\gamma_2 \definedas \theset{\zeta_a t \st t\in [\eps, R]}$, so
 \[
 \int_{\gamma_2}f(z) \dz 
 &=\int_R^\eps f(\zeta_a t) \zeta_a \dt \\
 &= -\zeta_a \int_\eps^R {\log(\zeta_a t) \over (\zeta_a t)^a + 1}\dt \\
 &= -\zeta_a \int_{\eps}^R {\log(t) + {2\pi i \over a} \over  t^a+1}\dt \\
 &\to -\zeta_a I - \zeta_a {2\pi i \over a} \int_0^\infty {1\over t^a + 1 }\dt \\
-&\da -\zeta_a I - {2\pi i\over a}\zeta_a I'
+&\definedas -\zeta_a I - {2\pi i\over a}\zeta_a I'
 .\]
 
 ::: {.claim}
@@ -50,7 +50,7 @@ I' = {\pi\over a}\csc\qty{\pi\over a}
 ::: {.proof}
 Computing the auxiliary integral $I'$:
 the integrand has the same pole at $\omega_a$, so apply the same technique.
-Write $g(z) \da {1\over z^a+1}$.
+Write $g(z) \definedas {1\over z^a+1}$.
 
 The contributions from the contours:
 \[

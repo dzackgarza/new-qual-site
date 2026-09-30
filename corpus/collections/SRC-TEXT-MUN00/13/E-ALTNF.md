@@ -28,7 +28,7 @@ $\mathcal{T}_3$ = the finite complement topology,
 
 $\mathcal{T}_4$ = the upper limit topology, having all sets $(a, b]$ as basis,
 
-$\mathcal{T}_5$ = the topology having all sets $(-\infty, a) = \ts{x \mid x < a}$ as basis.
+$\mathcal{T}_5$ = the topology having all sets $(-\infty, a) = \theset{x \mid x < a}$ as basis.
 
 Determine, for each of these topologies, which of the others it contains.
 :::

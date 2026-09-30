@@ -36,12 +36,12 @@ The long line is path connected and locally homeomorphic to $\mathbb{R}$, but it
 Show that $[a, c)$ has the order type of $[0, 1)$ if and only if both $[a, b)$ and $[b, c)$ have the order type of $[0, 1)$.
 
 (b) Let $X$ be an ordered set.
-Let $x_0 < x_1 < \cdots$ be an increasing sequence of points of $X$; suppose $b = \sup\ts{x_i}$.
+Let $x_0 < x_1 < \cdots$ be an increasing sequence of points of $X$; suppose $b = \sup\theset{x_i}$.
 Show that $[x_0, b)$ has the order type of $[0, 1)$ if and only if each interval $[x_i, x_{i+1})$ has the order type of $[0, 1)$.
 
 (c) Let $a_0$ denote the smallest element of $S_\Omega$.
 For each element $a$ of $S_\Omega$ different from $a_0$, show that the interval $[a_0 \times 0, a \times 0)$ of $S_\Omega \times [0, 1)$ has the order type of $[0, 1)$.
-[Hint: Proceed by transfinite induction. Either $a$ has an immediate predecessor in $S_\Omega$, or there is an increasing sequence $a_i$ in $S_\Omega$ with $a = \sup\ts{a_i}$.]
+[Hint: Proceed by transfinite induction. Either $a$ has an immediate predecessor in $S_\Omega$, or there is an increasing sequence $a_i$ in $S_\Omega$ with $a = \sup\theset{a_i}$.]
 
 (d) Show that $L$ is path connected.
 

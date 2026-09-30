@@ -26,14 +26,14 @@ Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
 ::: pf
 
 ::: pf-step
-Write $\rad{I} = \ts{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \ts{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.
+Write $\rad{I} = \theset{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \theset{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.
 :::
 
 ::: {.pf-step #nilrad-subset-rad-zero}
 $\nilrad{R} \subseteq \rad{(0)}$.
 
 ::: pf-proof
-If $x^n = 0$ then $x^n \in (0)$, since $(0) = \ts 0$.
+If $x^n = 0$ then $x^n \in (0)$, since $(0) = \theset 0$.
 :::
 
 :::

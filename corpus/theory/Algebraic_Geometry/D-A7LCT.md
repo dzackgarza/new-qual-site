@@ -39,7 +39,7 @@ The cokernel presheaf can fail both axioms; sheafification sends to $0$ the sect
 :::
 
 ::: {.example title="The image presheaf of the exponential map"}
-On $X=\CC\sm\ts{0}$, let $\varphi=\exp\colon\OO_X\to\OO_X^\times$.
+On $X=\CC\sm\theset{0}$, let $\varphi=\exp\colon\OO_X\to\OO_X^\times$.
 The section $z\in\OO_X^\times(X)$ has a logarithm on every simply connected open subset of $X$ but none on $X$.
 So $z$ is not in the image presheaf on $X$, and its class in the cokernel presheaf on $X$ is nonzero but locally zero.
 The image sheaf is $\OO_X^\times$ and the cokernel sheaf is $0$.

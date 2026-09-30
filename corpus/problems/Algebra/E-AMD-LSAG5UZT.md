@@ -21,7 +21,7 @@ audit:
 ::: {.exercise}
 Let $p$ be a prime and $\abs{G} = p^3$. 
 Prove that $G$ has a normal subgroup $N$ of order $p^2$.
-- Suppose $N = \gens{h}$ is cyclic and classify all possibilities for $G$ if:
+- Suppose $N = \generators{h}$ is cyclic and classify all possibilities for $G$ if:
   - $\abs h = p^3$
   - $\abs h = p$.
 
@@ -29,7 +29,7 @@ Prove that $G$ has a normal subgroup $N$ of order $p^2$.
 :::
 
 ::: {.hint}
-For a central $z$ of order $p$, the quotient $G/\gens{z}$ has order $p^2$ and is abelian; the preimage of a subgroup of order $p$ is normal of order $p^2$.
+For a central $z$ of order $p$, the quotient $G/\generators{z}$ has order $p^2$ and is abelian; the preimage of a subgroup of order $p$ is normal of order $p^2$.
 :::
 
 ::: {.solution}
@@ -56,20 +56,20 @@ By Cauchy's theorem applied to $Z(G)$, pick $z \in Z(G)$ with $\abs z = p$.
 :::
 
 ::: pf-step
-$\gens z \normal G$, because a central subgroup is normalized by every element of $G$.
+$\generators z \normal G$, because a central subgroup is normalized by every element of $G$.
 :::
 
 ::: pf-step
-$\abs{G/\gens z} = p^3/p = p^2$, and every group of order $p^2$ is abelian: if $Q$ has order $p^2$ then $Q/Z(Q)$ is cyclic by step [](#class-equation-nontrivial-center){.pf-ref} applied to $Q$, and a group with cyclic central quotient is abelian.
+$\abs{G/\generators z} = p^3/p = p^2$, and every group of order $p^2$ is abelian: if $Q$ has order $p^2$ then $Q/Z(Q)$ is cyclic by step [](#class-equation-nontrivial-center){.pf-ref} applied to $Q$, and a group with cyclic central quotient is abelian.
 :::
 
 ::: pf-step
-By Cauchy's theorem, $G/\gens z$ has a subgroup $\bar H$ with $\abs{\bar H} = p$, and $\bar H \normal G/\gens z$ because that quotient is abelian.
+By Cauchy's theorem, $G/\generators z$ has a subgroup $\bar H$ with $\abs{\bar H} = p$, and $\bar H \normal G/\generators z$ because that quotient is abelian.
 :::
 
 ::: pf-step
-Let $N$ be the preimage of $\bar H$ under $\pi: G \to G/\gens z$. The correspondence theorem gives $N \normal G$, and
-$$\abs N = \abs{\bar H}\cdot \abs{\gens z} = p \cdot p = p^2 .$$
+Let $N$ be the preimage of $\bar H$ under $\pi: G \to G/\generators z$. The correspondence theorem gives $N \normal G$, and
+$$\abs N = \abs{\bar H}\cdot \abs{\generators z} = p \cdot p = p^2 .$$
 :::
 
 :::
@@ -99,7 +99,7 @@ If $\abs h = p^3$ then $G \cong \ZZ/p^3$.
 ::: pf-proof
 
 ::: pf-step
-$\gens h \leq G$ has $p^3 = \abs G$ elements, so $\gens h = G$.
+$\generators h \leq G$ has $p^3 = \abs G$ elements, so $\generators h = G$.
 :::
 
 ::: pf-step
@@ -132,17 +132,17 @@ So $G/Z(G)$ has order $p^2$ and is not cyclic, hence $G/Z(G) \cong (\ZZ/p)^2$.
 :::
 
 ::: pf-step
-Choose $x, y \in G$ whose images generate $G/Z(G)$, and write $Z(G) = \gens z$. Then $G = \gens{x, y, z}$.
+Choose $x, y \in G$ whose images generate $G/Z(G)$, and write $Z(G) = \generators z$. Then $G = \generators{x, y, z}$.
 :::
 
 ::: pf-step
-The commutator $[x,y]$ lies in $Z(G)$, because $G/Z(G)$ is abelian, and $[x,y] \neq 1$, because $x$ and $y$ do not commute. So $\gens{[x,y]} = Z(G)$, and after replacing $z$ by $[x,y]$ we may take
+The commutator $[x,y]$ lies in $Z(G)$, because $G/Z(G)$ is abelian, and $[x,y] \neq 1$, because $x$ and $y$ do not commute. So $\generators{[x,y]} = Z(G)$, and after replacing $z$ by $[x,y]$ we may take
 $$x^p = y^p = z^p = 1, \qquad [x,y] = z, \qquad z \text{ central}.$$
 :::
 
 ::: pf-step
 These relations write every element of $G$ once as $x^a y^b z^c$ with $0 \leq a,b,c < p$, so they present a single group of order $p^3$, namely the group of upper unitriangular $3\times 3$ matrices over $\FF_p$,
-$$G \cong \ts{ \begin{pmatrix} 1 & a & c \\ 0 & 1 & b \\ 0 & 0 & 1\end{pmatrix} \st a,b,c \in \FF_p } \cong (\ZZ/p)^2 \semidirect \ZZ/p .$$
+$$G \cong \theset{ \begin{pmatrix} 1 & a & c \\ 0 & 1 & b \\ 0 & 0 & 1\end{pmatrix} \st a,b,c \in \FF_p } \cong (\ZZ/p)^2 \semidirect \ZZ/p .$$
 :::
 
 ::: pf-step

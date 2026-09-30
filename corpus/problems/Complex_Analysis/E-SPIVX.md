@@ -16,7 +16,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_{0}^{\infty} \frac{\cos (x)}{x^{2}+b^{2}} d x=\frac{\pi \mathrm{e}^{-b}}{2 b}
+I \definedas \int_{0}^{\infty} \frac{\cos (x)}{x^{2}+b^{2}} d x=\frac{\pi \mathrm{e}^{-b}}{2 b}
 .\]
 
 :::
@@ -24,7 +24,7 @@ I \da \int_{0}^{\infty} \frac{\cos (x)}{x^{2}+b^{2}} d x=\frac{\pi \mathrm{e}^{-
 ::: {.solution}
 The integrand is even, so 
 \[
-I = \Re{1\over 2} \tilde I \da {1\over 2} \int_\RR {e^{iz} \over (z+ib)(z-ib)}
+I = \Re{1\over 2} \tilde I \definedas {1\over 2} \int_\RR {e^{iz} \over (z+ib)(z-ib)}
 \]
 
 Since $f \sim 1/x^2$, the ML estimate on a semicircular contour works:

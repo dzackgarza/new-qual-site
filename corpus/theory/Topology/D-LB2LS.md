@@ -17,7 +17,7 @@ review: draft
 Let $(X, \tau)$ be a topological space and $A\subseteq X$ a subset.
 The \dfn{subspace topology} on $A$ is
 $$
-\tau_A\coloneqq\ts{A\cap U \st U\in\tau}.
+\tau_A\coloneqq\theset{A\cap U \st U\in\tau}.
 $$
 :::
 

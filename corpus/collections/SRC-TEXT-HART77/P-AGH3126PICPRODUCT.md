@@ -30,7 +30,7 @@ audit:
 ::: {.problem}
 Let $X$ be an integral projective scheme over an algebraically closed field $k$, and assume that $H^1(X, \mco_X) = 0$. Let $T$ be a connected scheme of finite type over $k$.
 
-a. If $\mcl$ is an invertible sheaf on $X \times T$, show that the invertible sheaves $\mcl_t$ on $X = X \times \ts{t}$ are isomorphic for all closed points $t \in T$.
+a. If $\mcl$ is an invertible sheaf on $X \times T$, show that the invertible sheaves $\mcl_t$ on $X = X \times \theset{t}$ are isomorphic for all closed points $t \in T$.
 
 b. Show that $\Pic(X \times T) = \Pic X \times \Pic T$. Do not assume that $T$ is reduced.
 

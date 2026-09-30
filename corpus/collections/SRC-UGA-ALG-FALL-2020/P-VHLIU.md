@@ -21,7 +21,7 @@ audit:
 ::: {.problem}
 Consider the following matrix:
 \[
-B \da
+B \definedas
 \begin{bmatrix}
 1 & 3 & 3
 \\

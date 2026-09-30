@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.problem}
-Compute $\ext(\ZZ \oplus \ZZ/2 \oplus  \ZZ/3, \ZZ \oplus  \ZZ/4 \oplus  \ZZ/5)$.
+Compute $\Ext(\ZZ \oplus \ZZ/2 \oplus  \ZZ/3, \ZZ \oplus  \ZZ/4 \oplus  \ZZ/5)$.
 :::
 
 ::: {.solution}
@@ -26,17 +26,17 @@ Facts Used:[^fix_facts_on_ext_oskar]
 
 - Since $\ZZ$ is a free $\ZZ\dash$module,
 \[
-\ext(\ZZ, \ZZ/m) = 0
+\Ext(\ZZ, \ZZ/m) = 0
 \]
 
 - Using the usual projective resolution $0 \to \ZZ \to \ZZ \to \ZZ/n \to 0$, 
 \[
-\ext(\ZZ/n, \ZZ) = \ZZ/n
+\Ext(\ZZ/n, \ZZ) = \ZZ/n
 .\]
 
 \[
-\ext(\ZZ/n, \ZZ/m) = (\ZZ/m) / (n \cdot \ZZ/m) \cong (\ZZ/m) / (d \cdot \ZZ/m) && 
-\\ \text{where } d \da \gcd(m, n)
+\Ext(\ZZ/n, \ZZ/m) = (\ZZ/m) / (n \cdot \ZZ/m) \cong (\ZZ/m) / (d \cdot \ZZ/m) && 
+\\ \text{where } d \definedas \gcd(m, n)
 .\]
   General principle: $\Ext(\ZZ/n, G) = G/nG$ 
 
@@ -74,7 +74,7 @@ Facts Used:[^fix_facts_on_ext_oskar]
 
 3. Contravariant Hom takes coproducts to products:
 \[
-\ext(\bigoplus_{i\in I} A_i, \prod_{k\in K} B_k) = \prod_{i\in I} \prod_{k\in K} \ext(A_i, B_k)
+\Ext(\bigoplus_{i\in I} A_i, \prod_{k\in K} B_k) = \prod_{i\in I} \prod_{k\in K} \Ext(A_i, B_k)
 .\]
 
 :::
@@ -82,14 +82,14 @@ Facts Used:[^fix_facts_on_ext_oskar]
 
 Write 
 \[
-A_\wait &\da A_1 \oplus A_2 \oplus A_3 \da \ZZ \oplus  \ZZ/2 \oplus  \ZZ/3 \\
-B_\wait &\da B_1 \oplus B_2 \oplus B_3 \da \ZZ \oplus \ZZ/4 \oplus  \ZZ/5
+A_\wait &\definedas A_1 \oplus A_2 \oplus A_3 \definedas \ZZ \oplus  \ZZ/2 \oplus  \ZZ/3 \\
+B_\wait &\definedas B_1 \oplus B_2 \oplus B_3 \definedas \ZZ \oplus \ZZ/4 \oplus  \ZZ/5
 .\]
 
 We can then define the bicomplex \[
-C_{\wait, \wait} \da \Ext(A_\wait, B_\wait) = \bigoplus_{0 \leq i, k \leq 3} \Ext(A_i, B_k)
+C_{\wait, \wait} \definedas \Ext(A_\wait, B_\wait) = \bigoplus_{0 \leq i, k \leq 3} \Ext(A_i, B_k)
 ,\]
-i.e. $C_{i, k} \da \Ext(A_i, B_k)$, which can be organized into the following diagram where we take the Ext at each position and sum them all together:
+i.e. $C_{i, k} \definedas \Ext(A_i, B_k)$, which can be organized into the following diagram where we take the Ext at each position and sum them all together:
 
 \begin{tikzcd}
 	{\Ext(A_1, B_1)} && {\Ext(A_1, B_2)} && {\Ext(A_1, B_3)} \\

@@ -33,9 +33,9 @@ prompts:
 Let $X/k$ be a smooth projective curve of genus $g$ with a point $p_0$, and let $T \in \Sch^{\mathrm{ft}}_{/k}$ with second projection $p \colon X \times T \to T$.
 Put
 \[
-\Pic^0(X \times T) \da \ts{ \mcf \in \Pic(X \times T) \st \deg \ro{\mcf}{X_t} = 0 \ \forall t \in T },
+\Pic^0(X \times T) \definedas \theset{ \mcf \in \Pic(X \times T) \st \deg \restrictionof{\mcf}{X_t} = 0 \ \forall t \in T },
 \qquad
-\Pic^0(X/T) \da \Pic^0(X \times T) \, / \, p^* \Pic(T) ,
+\Pic^0(X/T) \definedas \Pic^0(X \times T) \, / \, p^* \Pic(T) ,
 \]
 the families of degree-zero line bundles on $X$ parameterised by $T$.
 :::
@@ -74,13 +74,13 @@ The quotient by $p^*\Pic(T)$ is not a technicality: without it the functor is no
 Quotienting kills exactly that ambiguity.
 The same issue reappears as the reason a universal family needs a rigidification, and it is why $\Jac$ is a fine moduli space while $\AA^1$ for elliptic curves is only coarse.
 
-That $k$-points give $\Pic^0(X)$ is then formal: a $k$-point is a map $\spec k \to \Jac(X)$, which by the universal property is an element of $\Pic^0(X/k) = \Pic^0(X)$.
+That $k$-points give $\Pic^0(X)$ is then formal: a $k$-point is a map $\Spec k \to \Jac(X)$, which by the universal property is an element of $\Pic^0(X/k) = \Pic^0(X)$.
 Thus $\Jac(X)$ upgrades the set $\Pic^0(X)$ of degree-zero line-bundle classes to a smooth proper group scheme representing families of such classes.
 :::
 
 ::: {.remark title="Smooth, of dimension $g$, and proper"}
 Dual numbers identify the tangent space directly.
-A tangent vector at $0$ is a map $T = \spec k[\eps]/\eps^2 \to \Jac(X)$ sending the closed point to $0$, hence a class in $\Pic^0(X/T)$ restricting to $0$ over $\spec k$.
+A tangent vector at $0$ is a map $T = \Spec k[\eps]/\eps^2 \to \Jac(X)$ sending the closed point to $0$, hence a class in $\Pic^0(X/T)$ restricting to $0$ over $\Spec k$.
 The exponential sequence for dual numbers gives
 \[
 0 \to H^1(X; \OO_X) \to \Pic\big(X[\eps]\big) \to \Pic(X) \to 0 ,
@@ -88,8 +88,8 @@ The exponential sequence for dual numbers gives
 so those classes are exactly $H^1(X;\OO_X)$, of dimension $g$.
 Translation by group elements propagates smoothness from the identity to every point.
 
-Properness is the valuative criterion applied to a DVR $R$ with fraction field $K$: one must extend a line bundle on $X \times \spec K$ over $X \times \spec R$.
-But $X \times \spec R$ is regular, so a Weil divisor extends and is automatically Cartier, and the extension is unique.
+Properness is the valuative criterion applied to a DVR $R$ with fraction field $K$: one must extend a line bundle on $X \times \Spec K$ over $X \times \Spec R$.
+But $X \times \Spec R$ is regular, so a Weil divisor extends and is automatically Cartier, and the extension is unique.
 Irreducibility comes from the other direction, via $\phi^n$: for $n \geq g$ Riemann--Roch makes every degree-$n$ class effective, so $\phi^n$ is surjective from an irreducible variety, and the generic fibre is finite because a general divisor of degree $g$ is nonspecial with $\ell(D) = 1$.
 Hence $\dim \Jac(X) = g$ by a second, independent route.
 :::

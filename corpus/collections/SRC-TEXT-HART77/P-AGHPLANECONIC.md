@@ -29,21 +29,21 @@ review: draft
 :::
 
 ::: {.solution}
-**(a)** $A(Y) = k[x,y]/\gens{y-x^2} \cong k[t,t^2] \cong k[t]$.
+**(a)** $A(Y) = k[x,y]/\generators{y-x^2} \cong k[t,t^2] \cong k[t]$.
 
-**(b)** $A(Z) = k[x,y]/\gens{xy-1} \cong k[x^{\pm 1}]$.
+**(b)** $A(Z) = k[x,y]/\generators{xy-1} \cong k[x^{\pm 1}]$.
 This is not a polynomial ring: it contains the unit $\inverseof{x} \notin k$, while the units of $k[t]$ are exactly $k^*$.
 
 **(c)** An affine change of coordinates reduces $F$ to one of the two cases above.
 Write the conic as
 \[
-F(x,y) = \tv{x, y, 1}^t
+F(x,y) = \thevector{x, y, 1}^t
 \begin{pmatrix}
 A & B/2 & D/2 \\
 B/2 & C & E/2 \\
 D/2 & E/2 & F
 \end{pmatrix}
-\tv{x, y, 1} .
+\thevector{x, y, 1} .
 \]
 The matrix is symmetric, so it diagonalises, and the corresponding affine change of coordinates puts $F$ in the form $\lambda_1 x^2 + \lambda_2 y^2 + \lambda_3$.
 

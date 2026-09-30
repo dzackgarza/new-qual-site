@@ -29,7 +29,7 @@ $\impliedby$:
 Suppose $f^{(k)}(a)=0$ for $k\le m-1$ and $f^{(m)}(a)\ne0$, so $c_k=0$ for $k\le m-1$ and $c_m\ne0$.
 Then
 \[
-f(z) = \sum_{k\geq m} c_k (z-a)^k = (z-a)^m \sum_{k\geq m} c_k (z-a)^{k-m} \da (z-a)^m g(z)
+f(z) = \sum_{k\geq m} c_k (z-a)^k = (z-a)^m \sum_{k\geq m} c_k (z-a)^{k-m} \definedas (z-a)^m g(z)
 ,\]
 where $g$ is holomorphic on $\DD_r(a)$ with $g(a) = c_m \neq 0$, making $a$ a zero of $f$ of multiplicity $m$.
 

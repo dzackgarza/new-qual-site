@@ -27,7 +27,7 @@ review: draft
 ::: {.solution}
 The usual substitution: $z=e^{i\theta}, \dz = (iz)\dtheta$.
 \[
-I\da \int_{[0, 2\pi]} \inverseof{\qty{a^2 - 2a\cos(\theta) + 1}} \dtheta
+I\definedas \int_{[0, 2\pi]} \inverseof{\qty{a^2 - 2a\cos(\theta) + 1}} \dtheta
 &= \oint \inverseof{\qty{a^2-2(z+\inverseof{z}) + 1}} \inverseof{(iz)} \dz \\
 &= -i\oint \inverseof{\qty{za^2 - a(z^2+1) +z}} \dz \\
 &= -i \oint\inverseof{\qty{-az^2 + (a^2+1)z - a}}\dz \\

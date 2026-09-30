@@ -14,11 +14,11 @@ review: draft
 ---
 
 ::: {.exercise}
-Let $A(z) \da 2z-1$ and find $1/A(z)$.
+Let $A(z) \definedas 2z-1$ and find $1/A(z)$.
 :::
 
 ::: {.solution}
-To compute the inverse of $A(z) \da (2z-1)$, note $a_0 = -1, a_1 = 2$, so
+To compute the inverse of $A(z) \definedas (2z-1)$, note $a_0 = -1, a_1 = 2$, so
 
 - $b_0 = 1/a_0 = -1$
 - $b_1 = -{1\over a_0}(a_1b_0) = 1(2\cdot -1) = -2$

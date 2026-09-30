@@ -22,5 +22,5 @@ Then $I$ is a [[D-LIEMF|free]] $R$-module if and only if $I$ is a [[D-D7VK2|prin
 
 ::: {.example}
 Over a ring with zero divisors, a principal ideal need not be free.
-In $\ZZ/6\ZZ$, the principal ideal $\gens{2}$ is not a free $\ZZ/6\ZZ$-module, since $3 \cdot 2 = 0$ with $3 \neq 0$, whereas a nonzero element of a basis of a free module has zero annihilator.
+In $\ZZ/6\ZZ$, the principal ideal $\generators{2}$ is not a free $\ZZ/6\ZZ$-module, since $3 \cdot 2 = 0$ with $3 \neq 0$, whereas a nonzero element of a basis of a free module has zero annihilator.
 :::

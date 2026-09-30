@@ -7,11 +7,11 @@ order: 101
 [[T-C7GBB]]
 
 ::: {.theorem title="Gauss--Lucas"}
-If $f$ is a nonconstant polynomial with zeros $a_1, \ldots, a_n$, listed with multiplicity, then every zero of $f'$ lies in the convex hull $\operatorname{conv}\ts{a_1, \ldots, a_n}$.
+If $f$ is a nonconstant polynomial with zeros $a_1, \ldots, a_n$, listed with multiplicity, then every zero of $f'$ lies in the convex hull $\operatorname{conv}\theset{a_1, \ldots, a_n}$.
 :::
 
 ::: {.proof}
-Let $f'(w) = 0$ and suppose $w \notin \operatorname{conv}\ts{a_1, \ldots, a_n}$; in particular $f(w)\neq 0$.
+Let $f'(w) = 0$ and suppose $w \notin \operatorname{conv}\theset{a_1, \ldots, a_n}$; in particular $f(w)\neq 0$.
 A point outside a compact convex set is strictly separated from it by a line, so after a rotation $z\mapsto e^{i\phi}z$ of the plane, which changes neither the hypotheses nor the conclusion, $\Re(a_k) < \Re(w)$ for every $k$.
 Writing $f(z) = c\prod_{k=1}^n (z-a_k)$,
 $$
@@ -23,7 +23,7 @@ So $\Re\qty{f'(w)/f(w)} > 0$, contradicting $f'(w) = 0$.
 
 ::: {.example}
 The zeros of $f'$ can lie on the boundary of the convex hull or in its interior.
-For $f(z) = z^n$ the hull is $\ts{0}$, and $f'(z) = nz^{n-1}$ vanishes only at $0$.
+For $f(z) = z^n$ the hull is $\theset{0}$, and $f'(z) = nz^{n-1}$ vanishes only at $0$.
 For $f(z) = z^3 - 1$ the hull is the triangle whose vertices are the cube roots of unity, and $f'(z) = 3z^2$ vanishes only at the interior point $0$.
 :::
 

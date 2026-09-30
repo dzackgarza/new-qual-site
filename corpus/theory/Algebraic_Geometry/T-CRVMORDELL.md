@@ -41,14 +41,14 @@ with $r$ the **rank** and the torsion subgroup finite.
 ::: {.example}
 **Rank $0$, torsion $C_3$.** The Fermat cubic $x^3 + y^3 = z^3$ has
 \[
-E(\QQ) = \ts{ \tv{1:-1:0},\ \tv{1:0:1},\ \tv{0:1:1} } \iso C_3 ,
+E(\QQ) = \theset{ \thevector{1:-1:0},\ \thevector{1:0:1},\ \thevector{0:1:1} } \iso C_3 ,
 \]
 these being its three rational inflection points.
 That the list stops there is Fermat's last theorem for $n=3$, so this example is a restatement of a genuine theorem and not a computation.
 
-**Rank $1$, no torsion.** For $y^2 + y = x^3 - x$ with $p_0 = \tv{0:1:0}$,
+**Rank $1$, no torsion.** For $y^2 + y = x^3 - x$ with $p_0 = \thevector{0:1:0}$,
 \[
-E(\QQ) = \gens{P} \iso \ZZ, \qquad P = (0,0) \text{ in affine coordinates} .
+E(\QQ) = \generators{P} \iso \ZZ, \qquad P = (0,0) \text{ in affine coordinates} .
 \]
 That $P$ has infinite order is visible after a few doublings, and the denominators are the thing to watch:
 \[

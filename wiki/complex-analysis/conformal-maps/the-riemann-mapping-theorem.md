@@ -27,7 +27,7 @@ $\Omega$ simply connected: a biholomorphism is a homeomorphism, and $\DD$ is sim
 ::: {.proof title="Sketch"}
 The proof maximizes $\abs{f'(z_0)}$ over injective holomorphic maps $f\colon\Omega\to\DD$ with $f(z_0)=0$ and shows that a maximizer is surjective.
 
-- Fix $z_0\in \Omega$ and set $\mathcal F = \ts{f\in \Hol(\Omega, \DD) \st f(z_0) = 0,\ f \text{ injective}}$.
+- Fix $z_0\in \Omega$ and set $\mathcal F = \theset{f\in \Hol(\Omega, \DD) \st f(z_0) = 0,\ f \text{ injective}}$.
 
 - $\mathcal F$ is nonempty.
   Choose $a\in\CC\sm\Omega$.
@@ -59,7 +59,7 @@ $$
 \abs{f'(z_0)} \leq \max_{\abs{z-z_0} = R} { \abs{f(z)} \over R} \leq {1\over R}
 .$$
 
-- Take $\ts{f_k}\subseteq\mathcal F$ with $\abs{f_k'(z_0)} \to m$, and use Montel to extract a locally uniformly convergent subsequence with limit $h$.
+- Take $\theset{f_k}\subseteq\mathcal F$ with $\abs{f_k'(z_0)} \to m$, and use Montel to extract a locally uniformly convergent subsequence with limit $h$.
 
 - $h\in\mathcal F$: $h$ is holomorphic with $h(z_0)=0$ and $\abs{h'(z_0)} = m>0$, so it is nonconstant, maps into $\DD$ by the maximum modulus principle, and is injective by Hurwitz's theorem as a locally uniform limit of injective maps.
 

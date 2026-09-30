@@ -30,7 +30,7 @@ Suppose $f_n\in L^2([0,1])$ converges weakly to $f\in L^2([0,1])$. Prove that $\
 :::
 
 ::: {.solution}
-Let $H=L^2([0,1])$ with $\langle g,h\rangle=\int_0^1g\bar h$, and for each $n$ let $\phi_n(g)\da\langle g,f_n\rangle$. The statement holds: $\sup_n\norm{f_n}_2<\infty$.
+Let $H=L^2([0,1])$ with $\langle g,h\rangle=\int_0^1g\bar h$, and for each $n$ let $\phi_n(g)\definedas\langle g,f_n\rangle$. The statement holds: $\sup_n\norm{f_n}_2<\infty$.
 
 ::: pf
 

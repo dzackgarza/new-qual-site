@@ -27,9 +27,9 @@ review: draft
 
 - Show that $$\phi(n) = n \prod_{p\mid n}\qty{1 - {1\over p}}.$$
 
-- Compute $\aut(\ZZ/n\ZZ)$ for $n$ composite.
+- Compute $\Aut(\ZZ/n\ZZ)$ for $n$ composite.
 
-- Compute $\aut(\qty{\ZZ/p\ZZ}^n)$.
+- Compute $\Aut(\qty{\ZZ/p\ZZ}^n)$.
 :::
 
 ::: {.solution}

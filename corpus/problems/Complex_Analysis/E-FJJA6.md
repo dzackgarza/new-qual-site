@@ -17,7 +17,7 @@ review: draft
 
 ::: {.exercise}
 \[
-I \da \int_0^\infty {\log(x) \over 1+x^2}\dx = 0
+I \definedas \int_0^\infty {\log(x) \over 1+x^2}\dx = 0
 .\]
 
 :::
@@ -27,11 +27,11 @@ The integrand $1/(1+x^2)$ is even, so the negative real axis contributes $I$ plu
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-21-05.png)
 
-For $f(z) \da {\log(z) \over z^2 + 1}$, the large arc contributes $O\qty{(\log R)/R}$ and the small arc $O\qty{\eps\abs{\log\eps}}$, so only the horizontal contours contribute as $R\to \infty$ and $\eps\to 0$.
+For $f(z) \definedas {\log(z) \over z^2 + 1}$, the large arc contributes $O\qty{(\log R)/R}$ and the small arc $O\qty{\eps\abs{\log\eps}}$, so only the horizontal contours contribute as $R\to \infty$ and $\eps\to 0$.
 Parameterize, oriented counterclockwise:
 
-- $\gamma_1 \da \ts{t+0i \st t\in [\eps, R]}$
-- $\gamma_2 \da \ts{t+0i \st t\in [-\eps, -R]}$
+- $\gamma_1 \definedas \theset{t+0i \st t\in [\eps, R]}$
+- $\gamma_2 \definedas \theset{t+0i \st t\in [-\eps, -R]}$
 
 Then $\int_{\gamma_1} f(z)\dz \to I$. 
 Computing the contribution from $\gamma_2$:

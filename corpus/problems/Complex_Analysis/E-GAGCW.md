@@ -38,12 +38,12 @@ i.e.
 :::
 
 ::: {.proof}
-Make a change of variables $a\da \psi_w(z)$ so $z=\inverseof{\psi_w}(a) = \psi_w(a)$, then the desired inequality follows if we can show
+Make a change of variables $a\definedas \psi_w(z)$ so $z=\inverseof{\psi_w}(a) = \psi_w(a)$, then the desired inequality follows if we can show
 \[
 \abs{ \psi_{f(w)}(f(\psi_w(a))) } \leq \abs{a}
 .\]
 
-So define $F \da \psi_{f(w)} \circ f \circ \psi_w$, then since $\psi_w(0) = w$,
+So define $F \definedas \psi_{f(w)} \circ f \circ \psi_w$, then since $\psi_w(0) = w$,
 \[
 F(0) = \psi_{f(w)}(f(w)) = 0
 .\]

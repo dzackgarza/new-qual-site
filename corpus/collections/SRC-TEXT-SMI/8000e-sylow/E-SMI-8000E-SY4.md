@@ -28,7 +28,7 @@ audit:
 The "normalizer" $N(H)$ of a subgroup $H$ of $G$ is
 
 $$
-N(H) = \ts{g \in G : gHg^{-1} = H}.
+N(H) = \theset{g \in G : gHg^{-1} = H}.
 $$
 
 If $P$ is a Sylow subgroup of $G$, prove that $N(N(P)) = N(P)$.

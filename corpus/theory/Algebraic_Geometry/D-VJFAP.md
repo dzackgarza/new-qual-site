@@ -26,7 +26,7 @@ prompts:
 Let $\mcf$ be a presheaf on $X$.
 Set
 $$
-\Et(\mcf) \da \disjoint_{p \in X} \mcf_p ,
+\Et(\mcf) \definedas \disjoint_{p \in X} \mcf_p ,
 \qquad
 \pi : \Et(\mcf) \to X ,
 $$
@@ -39,7 +39,7 @@ Give $\Et(\mcf)$ the finest topology making every such $\bar s$ continuous.
 ::: {.proposition}
 For that topology,
 $$
-\mcf^+(U) = \ts{ \text{continuous } t : U \to \Et(\mcf) \st \pi \circ t = \id_U } .
+\mcf^+(U) = \theset{ \text{continuous } t : U \to \Et(\mcf) \st \pi \circ t = \id_U } .
 $$
 :::
 
@@ -55,5 +55,5 @@ The functor $\mcf\mapsto(\Et(\mcf)\to X)$ restricts to an equivalence between sh
 Since $\Et(\mcf)$ is built from the stalks, $(\mcf^+)_p = \mcf_p$ for every $p$.
 The map $\mcf \to \mcf^+$ is an isomorphism if and only if $\mcf$ is a sheaf.
 
-For an abelian group $A$, the constant presheaf $U\mapsto A$ and the constant sheaf $\ul{A}$ have the same espace étalé, $X \times A$ with $A$ discrete; its continuous sections over $U$ are the locally constant functions $U\to A$, which are the sections of $\ul{A}$.
+For an abelian group $A$, the constant presheaf $U\mapsto A$ and the constant sheaf $\underline{A}$ have the same espace étalé, $X \times A$ with $A$ discrete; its continuous sections over $U$ are the locally constant functions $U\to A$, which are the sections of $\underline{A}$.
 :::

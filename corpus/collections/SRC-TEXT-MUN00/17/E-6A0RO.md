@@ -18,7 +18,7 @@ audit:
 
 ::: {.exercise}
 
-Show that $X$ is Hausdorff if and only if the diagonal $\Delta = \ts{x \times x \mid x \in X}$ is closed in $X \times X$.
+Show that $X$ is Hausdorff if and only if the diagonal $\Delta = \theset{x \times x \mid x \in X}$ is closed in $X \times X$.
 :::
 
 ::: {.solution}

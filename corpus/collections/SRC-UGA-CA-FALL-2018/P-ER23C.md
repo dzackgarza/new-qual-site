@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that $P(z) \da z^4 + 6z + 3$ has 3 zeros in $\ts{1\leq \abs{z} \leq 2}$.
+Show that $P(z) \definedas z^4 + 6z + 3$ has 3 zeros in $\theset{1\leq \abs{z} \leq 2}$.
 :::
 
 ::: {.solution}

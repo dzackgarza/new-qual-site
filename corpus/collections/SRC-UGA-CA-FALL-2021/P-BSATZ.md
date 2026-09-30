@@ -25,7 +25,7 @@ Show that if $f: D(0, R) \rightarrow \mathbb{C}$ is holomorphic, with $|f(z)| \l
 The strategy:
 
 - Write the RHS as $a$.
-  Note that we need to get rid of the $M^2$ on the LHS, so keep the $M$ around and write $a \da z/R$ so $z = aR$.
+  Note that we need to get rid of the $M^2$ on the LHS, so keep the $M$ around and write $a \definedas z/R$ so $z = aR$.
 
 - Make the substitution to get
 \[
@@ -35,7 +35,7 @@ The strategy:
 \abs{ f(aR)/M - f(0)/M  \over 1 - \bar{f(0)} f(aR)/M^2 } \leq \abs{a} 
 .\]
 
-  - Recognize the LHS as $\psi_w(g(a))$ for $w\da f(0)/M$ and $g(a) \da f(aR)/M$.
+  - Recognize the LHS as $\psi_w(g(a))$ for $w\definedas f(0)/M$ and $g(a) \definedas f(aR)/M$.
 
 :::
 
@@ -48,9 +48,9 @@ Fix $R, M$ and make a clever choice: define
 F: \DD &\to \CC \\
 z &\mapsto {f(Rz) \over M}
 .\]
-Write $a\da F(0)$ and consider the Blaschke factor
+Write $a\definedas F(0)$ and consider the Blaschke factor
 \[
-\psi_a(z) \da {a-z \over 1-\bar{a} z} \in \Aut(\DD)
+\psi_a(z) \definedas {a-z \over 1-\bar{a} z} \in \Aut(\DD)
 ,\]
 and define
 \[

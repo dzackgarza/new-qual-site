@@ -27,7 +27,7 @@ Find a conformal map that sends $i\RR$ to $\abs{z-{1\over 2}} = {1\over 2}$.
 \sin(2t) = {2\tan(t) \over 1+\tan^2(t)} && \cos(2t) = {1-\tan^2(t) \over 1+\tan^2(t)}
 .\]
 - Parameterize a line by $x=\tan(t)$ for $t\in (-\pi/2, \pi/2)$
-- The boundary behavior of $F(z) \da {i-z\over i+z}$ from [@SS03, Chapter 8, Theorem 1.2]: with $x=\tan(t)$, $F(\RR) = \ts{\cos(2t)+i\sin(2t) = e^{2it} \st t\in (-\pi/2, \pi/2)}$.
+- The boundary behavior of $F(z) \definedas {i-z\over i+z}$ from [@SS03, Chapter 8, Theorem 1.2]: with $x=\tan(t)$, $F(\RR) = \theset{\cos(2t)+i\sin(2t) = e^{2it} \st t\in (-\pi/2, \pi/2)}$.
 
 :::
 
@@ -55,21 +55,21 @@ Some deductions:
 
 - $R$ preserves angles, so at $w=R(0)=1$ the image of $i\RR$ is orthogonal to $\RR$, so it is either a circle or the vertical line through $1$.
 - $R$ sends $-i\infty \to 0 \to i\infty$ to $0\to 1\to 0$, so the image passes through $0$ and $1$ and is a circle.
-- Parameterize $i\RR = \ts{it\st t\in \RR}$ and put $t=\tan(s)$ with $s\in(-\pi/2,\pi/2)$. Then
+- Parameterize $i\RR = \theset{it\st t\in \RR}$ and put $t=\tan(s)$ with $s\in(-\pi/2,\pi/2)$. Then
 \[
 R(i\RR) 
-&= \ts{{1\over 1+it}} \\
-&= \ts{1-it\over 1+t^2} \\
-&= \ts{{1\over 1+t^2} - i {t\over 1+t^2}} \\
-&= \ts{{1\over 2} \qty{ 1 + {1-t^2\over 1+t^2} } - i{1\over 2}\qty{2t\over 1+t^2}} \\
-&= \ts{{1\over 2}\qty{1 + \cos(2s) - i\sin(2s)}} \\
-&= \ts{{1\over 2} + {1\over 2}e^{-2is} }
+&= \theset{{1\over 1+it}} \\
+&= \theset{1-it\over 1+t^2} \\
+&= \theset{{1\over 1+t^2} - i {t\over 1+t^2}} \\
+&= \theset{{1\over 2} \qty{ 1 + {1-t^2\over 1+t^2} } - i{1\over 2}\qty{2t\over 1+t^2}} \\
+&= \theset{{1\over 2}\qty{1 + \cos(2s) - i\sin(2s)}} \\
+&= \theset{{1\over 2} + {1\over 2}e^{-2is} }
 ,\]
 which is the circle of radius $1/2$ about $1/2$ with the point $0=R(\infty)$ removed.
 
 Conclusion:
 
-- $i\RR \to \ts{\abs{z-{1\over 2}} = {1\over 2} }$ by $z\to {1\over 1+z}$.
+- $i\RR \to \theset{\abs{z-{1\over 2}} = {1\over 2} }$ by $z\to {1\over 1+z}$.
 - The reverse map: $w\mapsto {1-w\over w}$.
 :::
 

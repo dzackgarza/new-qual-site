@@ -24,7 +24,7 @@ prompts:
 ::: {.definition}
 For $D = \sum_{\rho} a_\rho D_\rho$ on $X_\Sigma$ put
 $$
-P_D = \ts{ m \in M_\RR \st \inp{m}{u_\rho} \geq -a_\rho \text{ for all } \rho \in \Sigma(1) } .
+P_D = \theset{ m \in M_\RR \st \inner{m}{u_\rho} \geq -a_\rho \text{ for all } \rho \in \Sigma(1) } .
 $$
 :::
 
@@ -36,12 +36,12 @@ so $h^0(\OO(D))$ is a count of lattice points.
 :::
 
 ::: {.remark}
-Starting from a full-dimensional lattice polytope $P$ with facet presentation $\inp{m}{u_F} \geq -a_F$, the divisor $D_P = \sum_F a_F D_F$ on $X_P$ is ample and satisfies $P_{D_P} = P$.
+Starting from a full-dimensional lattice polytope $P$ with facet presentation $\inner{m}{u_F} \geq -a_F$, the divisor $D_P = \sum_F a_F D_F$ on $X_P$ is ample and satisfies $P_{D_P} = P$.
 Starting from a basepoint-free Cartier divisor $D$ on a complete toric variety $X_\Sigma$, the fan $\Sigma$ refines the normal fan of $P_D$.
 
 Since $K_X = -\sum_\rho D_\rho$, the anticanonical divisor has $a_\rho = 1$ for every $\rho$ and
 $$
-P_{-K_X} = \ts{ m \in M_\RR \st \inp{m}{u_\rho} \geq -1 } ,
+P_{-K_X} = \theset{ m \in M_\RR \st \inner{m}{u_\rho} \geq -1 } ,
 $$
 which, for $\Sigma$ complete, is the polar dual of the convex hull of the ray generators.
 For $X = X_P$ with $P$ reflexive this recovers $P_{-K_{X_P}} = P$.

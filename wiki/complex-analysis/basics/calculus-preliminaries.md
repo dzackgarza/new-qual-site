@@ -74,11 +74,11 @@ The even and odd partial sums are monotone and bounded, so they converge, and $S
 ::: {.fact title="Line integrals in the plane"}
 \envlist
 
-- For $f\colon\RR^2\to\RR$ differentiable, $\grad f = \tv{ \dd{f}{x}, \dd{f}{y} }$; a vector field of the form $F = \grad f$ is a gradient field.
+- For $f\colon\RR^2\to\RR$ differentiable, $\grad f = \thevector{ \dd{f}{x}, \dd{f}{y} }$; a vector field of the form $F = \grad f$ is a gradient field.
 
 - For $f$ differentiable and a differentiable curve $\gamma$, the chain rule gives $\frac{d}{dt} (f\circ \gamma)(t) = \inner{ (\grad f)(\gamma(t))} {\gamma'(t)}$.
 
-- For $F(x, y) = \tv{M(x, y), N(x, y)}$, $\curl F = \dd{N}{x} - \dd{M}{y}$ and $\div F = \dd{M}{x} + \dd{N}{y}$.
+- For $F(x, y) = \thevector{M(x, y), N(x, y)}$, $\curl F = \dd{N}{x} - \dd{M}{y}$ and $\div F = \dd{M}{x} + \dd{N}{y}$.
 
 - For $\gamma\colon[a,b]\to\RR^2$ piecewise $C^1$, $\int_\gamma F\cdot \dr = \int_a^b F(\gamma(t))\cdot \gamma'(t) \dt$.
 

@@ -41,5 +41,5 @@ The additive category of topological abelian groups has kernels and cokernels bu
 
 Examples include $\Ab$, $\mods{A}$ for a ring $A$, and $\mods{\OO_X}$ on a ringed space.
 Sheaves of abelian groups on a space form an abelian category, whose cokernel is the sheafification of the presheaf cokernel ([[D-A7LCT]]).
-The functor $\Gamma(X,\wait)$ preserves kernels but not cokernels: on $X=\CC\sm\ts{0}$, $\exp\colon\OO_X\to\OO_X^\times$ is an epimorphism of sheaves, and $z\in\OO_X^\times(X)$ is not the image of any section of $\OO_X$ over $X$.
+The functor $\Gamma(X,\wait)$ preserves kernels but not cokernels: on $X=\CC\sm\theset{0}$, $\exp\colon\OO_X\to\OO_X^\times$ is an epimorphism of sheaves, and $z\in\OO_X^\times(X)$ is not the image of any section of $\OO_X$ over $X$.
 :::

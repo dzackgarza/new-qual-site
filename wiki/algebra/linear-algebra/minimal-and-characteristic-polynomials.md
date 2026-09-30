@@ -7,7 +7,7 @@ topics:
 
 # Minimal and characteristic polynomials
 
-Let $A$ be an $n\times n$ matrix over a field $F$, and make $V=F^n$ an $F[t]$-module by $p(t)\actson v \da p(A)v$.
+Let $A$ be an $n\times n$ matrix over a field $F$, and make $V=F^n$ an $F[t]$-module by $p(t)\actson v \definedas p(A)v$.
 The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihilator of this module, and the [[D-QFYAC|characteristic polynomial]] $\chi_A(t)=\det(tI-A)$ is the product of its invariant factors, the largest of which is $\min_A$.
 
 [[PR-EDD7U]]
@@ -58,7 +58,7 @@ If $\chi_A = \prod_i q_i^{e_i}$ with the $q_i$ distinct monic irreducibles, then
 :::
 
 ::: {.example title="Polynomial long division"}
-For $f(x) \da x^3-6x^2+12x-8$, the rational root theorem restricts the rational roots to $\ts{\pm 8, \pm 4, \pm 2, \pm 1}$.
+For $f(x) \definedas x^3-6x^2+12x-8$, the rational root theorem restricts the rational roots to $\theset{\pm 8, \pm 4, \pm 2, \pm 1}$.
 Since $f(2) = 0$, divide by $x-2$:
 
 ![](../../../assets/figures/2021-07-24_18-32-38.png)

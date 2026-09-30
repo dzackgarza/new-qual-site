@@ -20,7 +20,7 @@ audit:
 ::: {.exercise}
 
 Let $p: X \to Y$ be a quotient map.
-Show that if each set $p^{-1}(\ts{y})$ is connected, and if $Y$ is connected, then $X$ is connected.
+Show that if each set $p^{-1}(\theset{y})$ is connected, and if $Y$ is connected, then $X$ is connected.
 :::
 
 ::: {.solution}

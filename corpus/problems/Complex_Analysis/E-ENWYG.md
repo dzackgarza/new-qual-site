@@ -18,7 +18,7 @@ review: draft
 ::: {.exercise}
 Evaluate
 \[
-I\da \int_0^\infty {\log x\over(1+x^2)^2}\,dx.
+I\definedas \int_0^\infty {\log x\over(1+x^2)^2}\,dx.
 \]
 :::
 

@@ -20,7 +20,7 @@ Let $f_k:[0,1]\to\CC$ be differentiable and suppose
 |f_k'(x)|\le M
 \]
 for every $k$ and every $x\in[0,1]$, where $M$ is independent of $k$.
-Show that $\ts{f_k}$ is equicontinuous.
+Show that $\theset{f_k}$ is equicontinuous.
 
 > Hint: MVT.
 :::
@@ -36,5 +36,5 @@ Then $|x-y|<\delta$ implies
 \[
 |f_k(x)-f_k(y)|<\varepsilon
 \]
-for every $k$, so $\ts{f_k}$ is equicontinuous.
+for every $k$, so $\theset{f_k}$ is equicontinuous.
 :::

@@ -26,7 +26,7 @@ $$
 Let $H\leq G$, and let $\psi\colon G \to \Sym(G/H)$, $g \mapsto (xH\mapsto gxH)$, be the action of $G$ on the left cosets of $H$.
 Then $H_G$ is the largest [[D-EKE4Q|normal subgroup]] of $G$ contained in $H$, and
 $$
-H_G = \gens{ N \st N \normal G,\ N \leq H} = \ker \psi.
+H_G = \generators{ N \st N \normal G,\ N \leq H} = \ker \psi.
 $$
 :::
 

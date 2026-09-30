@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \( \ts{ f_k } _{k=1}^{\infty } \) be a sequence of extended real-valued Lebesgue measurable functions.
+Let \( \theset{ f_k } _{k=1}^{\infty } \) be a sequence of extended real-valued Lebesgue measurable functions.
 
 a. Prove that \( \sup_k f_k \) is a Lebesgue measurable function.
 

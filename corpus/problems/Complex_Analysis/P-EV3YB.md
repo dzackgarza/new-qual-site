@@ -30,15 +30,15 @@ Fix $\eps> 0$, then choose $\delta_1 = \delta_1(\eps)$ by uniform continuity of 
 \[
 \abs{y_1 - y_2} \leq \delta_1 \implies \abs{f(y_1) - f(y_2) } < \eps \, \forall y_1, y_2\in X
 .\]
-Now by uniform convergence of $\ts{g_n}$, choose $N_0 = N_0(\delta_1)$ such that 
+Now by uniform convergence of $\theset{g_n}$, choose $N_0 = N_0(\delta_1)$ such that 
 \[
 i, j \geq N_0 \implies \abs{ g_i(x) - g_j(x) } < \delta_1 \, \forall x\in X
 .\]
 
-Now writing $y_1 \da g_i(x), y_2 \da g_j(x)$, choose $i, j > N_0$ yields
+Now writing $y_1 \definedas g_i(x), y_2 \definedas g_j(x)$, choose $i, j > N_0$ yields
 \[
-\abs{y_1 - y_2} \da \abs{g_i(x) - g_j(x) } < \delta_1 \\
-\implies \abs{f(y_1) - f(y_2)} \da \abs{f(g_i(x)) - f(g_j(x))} < \eps
+\abs{y_1 - y_2} \definedas \abs{g_i(x) - g_j(x) } < \delta_1 \\
+\implies \abs{f(y_1) - f(y_2)} \definedas \abs{f(g_i(x)) - f(g_j(x))} < \eps
 ,\]
 and taking the supremum over $x\in X$ preserves the inequality since $\delta_1$ and consequently $N_0$ only depend on $\eps$.
 :::

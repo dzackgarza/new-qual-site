@@ -39,7 +39,7 @@ Write $C_n$ for the cyclic group of order $n$.
 | $4$ | $S_4$, $A_4$, $D_4$, $C_4$, $C_2^2$ | $24$, $12$, $8$, $4$, $4$ | $S_4$, $A_4$, $D_4$ |
 | $5$ | $S_5$, $A_5$, $F_5\cong C_5\semidirect C_4$, $D_5$, $C_5$ | $120$, $60$, $20$, $10$, $5$ | $S_5$, $A_5$, $F_5$, $D_5$ |
 
-Here $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, and $F_5$ has presentation $\gens{a,b \st a^5, b^4, ba\inverseof{b} = a^2}$.
+Here $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, and $F_5$ has presentation $\generators{a,b \st a^5, b^4, ba\inverseof{b} = a^2}$.
 
 The quaternion group
 $$
@@ -92,7 +92,7 @@ A subgroup of $S_5$ containing a $5$-cycle and a transposition is $S_5$, so $G =
 :::
 
 ::: {.example title="$x^4+x+1$"}
-$f(x) \da x^4+x+1$ is irreducible modulo $2$, so $f$ is irreducible over $\QQ$ and $G$ contains a $4$-cycle.
+$f(x) \definedas x^4+x+1$ is irreducible modulo $2$, so $f$ is irreducible over $\QQ$ and $G$ contains a $4$-cycle.
 Modulo $3$, $f$ factors into irreducibles of degrees $1$ and $3$, so $G$ contains a $3$-cycle.
 Hence $12\divides\size G$, and $G$ contains the odd permutation given by the $4$-cycle, so $G = S_4$.
 :::
@@ -120,7 +120,7 @@ $n=5$ and general $n$:
 
 - A subgroup of $S_5$ containing a transposition and a $5$-cycle is $S_5$.
 
-- $S_n = \gens{(a,b), (1,2,\ldots,n)}$ if and only if $\gcd(b-a, n) = 1$.
+- $S_n = \generators{(a,b), (1,2,\ldots,n)}$ if and only if $\gcd(b-a, n) = 1$.
 :::
 
 [[PR-5PI25]]
