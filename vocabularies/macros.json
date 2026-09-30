@@ -276,7 +276,7 @@
   "\\norm": "{\\left\\lVert {#1} \\right\\rVert}",
   "\\normal": "{~\\trianglelefteq~}",
   "\\notdivides": "\\nmid",
-  "\\nullity": "\\operatorname{nullspace}",
+  "\\nullity": "\\operatorname{nullity}",
   "\\one": "{\\unicode{x1D7D9}}",
   "\\opcat": "{ {#1}^{\\operatorname{op}} }",
   "\\ord": "{\\operatorname{Ord}}",
