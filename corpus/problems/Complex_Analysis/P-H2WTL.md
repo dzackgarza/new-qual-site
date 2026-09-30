@@ -95,9 +95,13 @@ Combining the two cases step [](#case-n-minus-1){.pf-ref} and step [](#case-n-no
 
 :::
 
+:::
+
 * * *
 
 ### Part 2: Integral of $z^n$ on a Circle Not Containing 0
+
+::: pf
 
 ::: pf-step
 **Let $\gamma$ be a circle whose closed interior does not contain the origin $0$.
@@ -164,9 +168,13 @@ Combining the case $n \neq -1$ (step [](#case-n-not-minus-1-part2){.pf-ref}) and
 
 :::
 
+:::
+
 * * *
 
 ### Part 3: Evaluation of $\int_\gamma \frac{dz}{(z-a)(z-b)}$ for $|a| < r < |b|$
+
+::: pf
 
 ::: pf-step
 **Partial fraction decomposition of the integrand.**

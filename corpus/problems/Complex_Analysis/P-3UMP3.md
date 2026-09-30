@@ -133,9 +133,13 @@ The binomial coefficient $\binom{n+j-1}{j-1}$ is a polynomial in $n$ of degree $
 
 :::
 
+:::
+
 * * *
 
 ### Step 2: Asymptotics of the Coefficients $c_n$
+
+::: pf
 
 ::: pf-step
 **Asymptotic formula for $c_n$.**
@@ -164,9 +168,13 @@ The $j = k$ term dominates: the lower-order terms $j < k$ contribute $O(n^{k-2})
 
 :::
 
+:::
+
 * * *
 
 ### Step 3: Proof of (1) and (2)
+
+::: pf
 
 ::: pf-step
 **Proof of (1): $c_n \neq 0$ for all large enough $n$.**

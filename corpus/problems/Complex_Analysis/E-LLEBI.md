@@ -106,9 +106,13 @@ By step [](#schwarz-bound-g){.pf-ref}, $|g(z)| \le |z|$, and $|z| < 1$ since $z 
 
 :::
 
+:::
+
 * * *
 
 ### Step 2: Upper Bound for $|f(z)|$
+
+::: pf
 
 ::: {.pf-step #upper-bound-step}
 **Prove $|f(z)| \leq \frac{|a| + |z|}{1 - |a||z|}$.**
@@ -146,9 +150,13 @@ The numerator is at most $|a| + |z|$ and the positive denominator is at least $1
 
 :::
 
+:::
+
 * * *
 
 ### Step 3: Lower Bound for $|f(z)|$
+
+::: pf
 
 ::: {.pf-step #lower-bound-step}
 **Prove $|f(z)| \geq \frac{|a| - |z|}{1 + |a||z|}$.**
@@ -196,9 +204,13 @@ The numerator is at least the positive quantity $|a| - |z|$ and the denominator 
 
 :::
 
+:::
+
 * * *
 
 ### Step 4: Conclusion
+
+::: pf
 
 ::: pf-step
 **The double inequality holds for all $z \in \mathbb{D}$.**

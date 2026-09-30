@@ -111,9 +111,13 @@ Since $g(z) + A = (z-a)f(z)$, dividing both sides by $z - a \neq 0$ (valid becau
 
 :::
 
+:::
+
 * * *
 
 ### Step 2: Bound the Error Term
+
+::: pf
 
 ::: pf-step
 **Show that $\lim_{r \to 0^+} \int_{\gamma_r} \frac{g(z)}{z-a}\,dz = 0$.**
@@ -187,9 +191,13 @@ For every $\varepsilon > 0$ we found $\delta$ such that $r < \delta$ forces the 
 
 :::
 
+:::
+
 * * *
 
 ### Step 3: Conclusion
+
+::: pf
 
 ::: pf-step
 **$\lim_{r \to 0^+} \int_{\gamma_r} f(z)\,dz = i A \beta_0$.**
