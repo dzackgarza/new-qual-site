@@ -141,7 +141,7 @@ Follows from step [](#s2-3){.pf-ref}.
 
 ::: pf-proof
 
-::: pf-step
+::: {.pf-step #s3-1}
 By the Fundamental Theorem of Calculus for line integrals of exact forms, $\nabla v(x,y) = (P(x,y), Q(x,y)) = (-u_y(x,y), u_x(x,y))$.
 
 ::: pf-proof
@@ -154,7 +154,7 @@ Differentiating $v(x,y) = \int_{(a,b)}^{(x,y)} (P\,dx + Q\,dy)$ with respect to 
 Explicitly, $v_x = -u_y$ and $v_y = u_x$.
 
 ::: pf-proof
-Extracting components from the preceding step.
+Extracting components from step [](#s3-1){.pf-ref}.
 :::
 
 :::

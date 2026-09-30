@@ -98,3 +98,5 @@ Therefore $R/(p^n)$ is indecomposable.
 :::
 
 :::
+
+:::

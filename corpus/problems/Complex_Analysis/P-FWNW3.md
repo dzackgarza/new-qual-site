@@ -57,3 +57,5 @@ Thus polynomials approximate $f$ uniformly on every compact subset of $\Omega$.
 :::
 
 :::
+
+:::

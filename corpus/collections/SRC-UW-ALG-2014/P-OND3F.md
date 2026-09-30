@@ -183,7 +183,8 @@ Thus no such finite subgroup $H$ can exist.
 
 :::
 
-::: pf-qed
+::: pf-step
+Conclusion:
 $\operatorname{Gal}(\overline{\mathbb{F}}_p/\mathbb{F}_p) \cong \prod_q \mathbb{Z}_q$ is torsion-free, hence has no non-trivial finite subgroups.
 :::
 

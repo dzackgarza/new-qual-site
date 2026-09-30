@@ -80,6 +80,8 @@ Step [](#polynomial-degree-2){.pf-ref} is the claim.
 
 :::
 
+:::
+
 ::: {.solution}
 Take a Laurent expansion at zero:
 \[

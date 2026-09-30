@@ -125,7 +125,7 @@ step [](#p2-s4){.pf-ref}.
 :::
 
 ::: pf-qed
-step [](#p1-s5){.pf-ref} and step [](#p2-s5){.pf-ref}.
+Step [](#p1-s5){.pf-ref} (a) and step [](#p2-s5){.pf-ref} (b).
 :::
 
 :::

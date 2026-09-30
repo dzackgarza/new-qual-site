@@ -95,3 +95,5 @@ Therefore $f$ is an open continuous bijection, so $f$ is a homeomorphism.
 :::
 
 :::
+
+:::

@@ -42,15 +42,15 @@ Define the straight-line homotopy $H_1 \colon (S^1 \times [0, 1]) \times [0, 1] 
 
 ::: {.pf-step #s1-3}
 $H_1$ is continuous, $H_1((z, t), 0) = (z, t) = \operatorname{id}_{S^1 \times I}$, $H_1((z, t), 1) = (z, 1/2) = \iota_1(r_1(z, t))$, and $H_1((z, 1/2), s) = (z, 1/2)$ for all $s \in [0, 1]$.
+:::
+
+::: pf-step
+Thus $H_1$ is a strong deformation retraction of $S^1 \times [0, 1]$ onto the circle $S^1 \times \{1/2\} \cong S^1$.
 
 ::: pf-proof
 The three identities in step [](#s1-3){.pf-ref} are exactly the defining conditions of a strong deformation retraction, so $H_1$ is a strong deformation retraction of $S^1 \times [0, 1]$ onto $S^1 \times \{1/2\} \cong S^1$.
 :::
 
-:::
-
-::: pf-step
-Thus $H_1$ is a strong deformation retraction of $S^1 \times [0, 1]$ onto the circle $S^1 \times \{1/2\} \cong S^1$.
 :::
 
 ::: pf-step

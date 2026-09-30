@@ -89,7 +89,7 @@ by part (a) with $a_m = 1$ and $b_k = k^a$, we get $c_n = \sum_{mk = n} k^a = \s
 :::
 
 ::: pf-qed
-step [](#p1-s2){.pf-ref} and steps [](#p2-s1){.pf-ref} and [](#p2-s2){.pf-ref}.
+Step [](#p1-s2){.pf-ref} (a) and steps [](#p2-s1){.pf-ref} and [](#p2-s2){.pf-ref} (b).
 :::
 
 :::

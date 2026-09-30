@@ -126,7 +126,8 @@ Therefore $\mathbb{C}[t]$ is the integral closure of $A$ in $K$, with normalizat
 
 :::
 
-::: pf-qed
+::: pf-step
+Conclusion:
 $A$ is an integral domain, its real points form a nodal cubic curve with a loop on $[0, 1]$, and its integral closure is $\mathbb{C}[t]$ where $t = \frac{y}{x-1}$.
 :::
 

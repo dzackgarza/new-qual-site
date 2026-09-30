@@ -72,10 +72,10 @@ $\phi_1$ is an affine map with non-zero slope $\frac{i\pi}{2} \neq 0$, hence a b
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#phi1-biholomorphism){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -120,10 +120,10 @@ The map $\zeta \mapsto e^\zeta$ is a biholomorphism from the strip $S = \{\xi + 
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#phi2-biholomorphism){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -168,10 +168,10 @@ The function $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ is the biholomorphic 
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#phi3-biholomorphism){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -216,10 +216,12 @@ As a composition of biholomorphic maps $\Omega \xrightarrow{\phi_1} S \xrightarr
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#F-is-biholomorphism){.pf-ref}.
+:::
+
+:::
+
 :::
 
 :::

@@ -30,143 +30,25 @@ audit:
 
 ::: {.solution}
 
-::: pf
-
-::: pf-step
 A polynomial $f\in F[x]$ is **solvable by radicals** if its splitting field is contained in a tower
 \[
 F=K_0\subset K_1\subset\cdots\subset K_r
 \]
 in which each $K_{i+1}=K_i(\alpha_i)$ with $\alpha_i^{n_i}\in K_i$ for some $n_i\ge2$ (after adjoining the necessary roots of unity in the standard formulation). Galois theory gives the criterion: $f$ is solvable by radicals if and only if its Galois group is solvable.
 
-::: pf-proof
+We prove that $A_5$ is simple. Its conjugacy classes have sizes
+\[
+1,\ 20,\ 15,\ 12,\ 12,
+\]
+corresponding respectively to the identity, the $3$-cycles, the double transpositions, and the two $A_5$-classes of $5$-cycles. A normal subgroup is a union of conjugacy classes containing the identity, and its order must divide $60$. The sums obtained from a proper nonempty selection of the four nontrivial class sizes are
+\[
+13,16,21,25,28,33,36,40,45,48,
+\]
+none of which divides $60$. Hence the only normal subgroups are $\{e\}$ and $A_5$, so $A_5$ is simple.
 
-::: pf-step
-A polynomial $f(x) \in F[x]$ is **solvable by radicals** if its roots lie in a radical extension tower:
-$$F = K_0 \subseteq K_1 \subseteq K_2 \subseteq \cdots \subseteq K_m$$
-where each step $K_{i+1} = K_i(\alpha_i)$ with $\alpha_i^{n_i} \in K_i$ for some integer $n_i \ge 2$.
-
-:::
-
-::: pf-step
-**Theorem (Galois):** A polynomial $f(x) \in F[x]$ is solvable by radicals if and only if its Galois group $\operatorname{Gal}(f/F)$ is a **solvable group**.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Simplicity of $A_5$:
-
-::: pf-proof
-
-::: pf-step
-The alternating group $A_5$ has order $|A_5| = 5!/2 = 60$.
-
-:::
-
-::: pf-step
-We compute the conjugacy classes of $A_5$ by cycle types:
-
-- Identity: $1$ element ($e$).
-- 3-cycles: $\binom{5}{3} \times 2 = 20$ elements.
-- Products of two disjoint 2-cycles: $\frac{1}{2} \binom{5}{2}\binom{3}{2} = 15$ elements.
-- 5-cycles: In $S_5$ there are $4! = 24$ 5-cycles. In $A_5$, the centralizer of a 5-cycle has order 5, so the class splits into two $A_5$-conjugacy classes of size $\frac{60}{5} = 12$ each.
-
-:::
-
-::: pf-step
-The sizes of all conjugacy classes in $A_5$ are:
-$$\{1, 15, 20, 12, 12\}.$$
-
-:::
-
-::: pf-step
-Any normal subgroup $N \trianglelefteq A_5$ must be a union of conjugacy classes containing $e$ ($1 \in N$), and by Lagrange's Theorem, $|N|$ must divide $|A_5| = 60$.
-
-:::
-
-::: pf-step
-The possible proper divisors of 60 are $1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30$.
-
-:::
-
-::: pf-step
-Testing all sums of conjugacy class sizes containing 1:
-
-- $1 + 12 = 13 \nmid 60$.
-- $1 + 15 = 16 \nmid 60$.
-- $1 + 20 = 21 \nmid 60$.
-- $1 + 12 + 12 = 25 \nmid 60$.
-- $1 + 12 + 15 = 28 \nmid 60$.
-- $1 + 12 + 20 = 33 \nmid 60$.
-- $1 + 15 + 20 = 36 \nmid 60$.
-- $1 + 12 + 12 + 15 = 40 \nmid 60$.
-- $1 + 12 + 12 + 20 = 45 \nmid 60$.
-- $1 + 12 + 15 + 20 = 48 \nmid 60$.
-- $1 + 12 + 12 + 15 + 20 = 60 = |A_5|$.
-
-:::
-
-::: pf-step
-Thus the only divisors obtainable as class sums are $1$ and $60$.
-
-:::
-
-::: pf-step
-Therefore, the only normal subgroups of $A_5$ are $\{e\}$ and $A_5$, proving $A_5$ is **simple**.
-
-:::
-
-:::
-
-:::
-
-::: pf-step
-Insolvability of $S_5$ and General Quintics:
-
-::: pf-proof
-
-::: pf-step
-The composition series of $S_5$ is:
-$$\{e\} \triangleleft A_5 \triangleleft S_5.$$
-
-:::
-
-::: pf-step
-The composition factors are:
-
-- $S_5/A_5 \cong \mathbb{Z}_2$ (abelian).
-- $A_5/\{e\} \cong A_5$ (non-abelian simple group of order 60).
-
-:::
-
-::: pf-step
-Since $A_5$ is simple and non-abelian ($|A_5| = 60$ is not prime), its composition series cannot be refined to abelian factors.
-
-:::
-
-::: pf-step
-Therefore, $S_5$ is **not solvable**.
-
-:::
-
-::: pf-step
-By Galois Theory, any quintic polynomial over $\mathbb{Q}$ with Galois group $S_5$ (e.g. $f(x) = x^5 - 4x - 2$) cannot be solved by radicals (Abel-Ruffini Theorem).
-
-:::
-
-:::
-
-:::
-
-::: pf-qed
-Conclusion:
-$A_5$ is simple via class size sums $\{1, 12, 12, 15, 20\}$, making $S_5$ non-solvable and preventing radical solutions for quintics.
-:::
-
-:::
-
+Now
+\[
+1\triangleleft A_5\triangleleft S_5
+\]
+has composition factors $A_5$ and $S_5/A_5\cong C_2$. Since $A_5$ is nonabelian simple, $S_5$ is not solvable. Therefore any quintic whose Galois group is $S_5$ is not solvable by radicals. Since quintics with Galois group $S_5$ exist, there can be no radical formula valid for all quintic polynomials.
 :::

@@ -66,10 +66,10 @@ It suffices to prove: $$\text{(I)} \quad \iint_R \frac{\partial P}{\partial x} \
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#suffices-to-prove-I-and-II){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -123,10 +123,10 @@ Comparing step [](#claim-I-ftc-identity){.pf-ref} and step [](#claim-I-line-inte
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#claim-I-established){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -180,10 +180,10 @@ Negating both sides yields $-\oint_{\partial R} Q \, dx = \int_a^b (Q(x, d) - Q(
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#claim-II-established){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -202,10 +202,12 @@ Adding the equalities from step [](#claim-I-proof){.pf-ref} and step [](#claim-I
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#theorem-follows-from-claims){.pf-ref}.
+:::
+
+:::
+
 :::
 
 :::

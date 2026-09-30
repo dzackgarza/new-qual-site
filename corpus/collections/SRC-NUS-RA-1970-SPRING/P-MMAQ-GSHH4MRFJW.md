@@ -63,10 +63,10 @@ Each integral $\int f_k$ is $1$ by step [](#fk-definition){.pf-ref}, while the u
 
 :::
 
-:::
-
 ::: pf-qed
 The counterexample of step [](#fk-definition){.pf-ref} satisfies the hypotheses but not the conclusion, so (b) is false.
+:::
+
 :::
 
 :::
@@ -121,10 +121,10 @@ $2^{-j/2} \to 0$.
 
 :::
 
-:::
-
 ::: pf-qed
 By steps [](#ae-bound-holds){.pf-ref} and [](#fkj-converges-pointwise){.pf-ref}, the subsequence $f_{k_j}$ converges to $f$ almost everywhere.
+:::
+
 :::
 
 :::
@@ -133,6 +133,8 @@ By steps [](#ae-bound-holds){.pf-ref} and [](#fkj-converges-pointwise){.pf-ref},
 Conclusion: (b) is false and (c) is true.
 
 By steps [](#b-is-false){.pf-ref} and [](#c-is-true){.pf-ref}.
+:::
+
 :::
 
 :::

@@ -100,14 +100,15 @@ Check endpoints:
 
 - $H(x, 1) = \frac{N}{\|N\|} = N = c_N(x)$.
 
-::: pf-proof
-The endpoint computations in step [](#s3-3){.pf-ref} show $H(\cdot, 0) = f$ and $H(\cdot, 1) = c_N$, and $H$ is continuous, so $H$ is a homotopy from $f$ to the constant map.
-:::
-
 :::
 
 ::: pf-step
 Thus $H$ is a homotopy between $f$ and the constant map $c_N \colon X \to S^n$.
+
+::: pf-proof
+The endpoint computations in step [](#s3-3){.pf-ref} show $H(\cdot, 0) = f$ and $H(\cdot, 1) = c_N$, and $H$ is continuous, so $H$ is a homotopy from $f$ to the constant map.
+:::
+
 :::
 
 :::

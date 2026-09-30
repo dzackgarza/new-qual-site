@@ -104,10 +104,10 @@ Moreover, since $|f(z)| \geq |F_1(z)| - |G_1(z)| \geq 64 - 27 = 37 > 0$ on $|z|=
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#five-zeros-conclusion){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -189,10 +189,10 @@ Furthermore, on $|z|=1$, $|f(z)| \geq |F_2(z)| - |G_2(z)| \geq 6 - 4 = 2 > 0$, s
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#two-zeros-conclusion){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -246,10 +246,12 @@ Number of zeros in $A$ = (Number of zeros in $|z| < 2$) - (Number of zeros in $|
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#annulus-zero-count){.pf-ref}.
+:::
+
+:::
+
 :::
 
 :::

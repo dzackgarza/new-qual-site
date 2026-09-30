@@ -92,3 +92,5 @@ Composing this homotopy with $p$ gives a homotopy from $f$ to a constant map in 
 :::
 
 :::
+
+:::

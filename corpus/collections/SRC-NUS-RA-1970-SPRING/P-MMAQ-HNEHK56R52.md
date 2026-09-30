@@ -76,10 +76,10 @@ By step [](#monotone-convergence-integral){.pf-ref} the Lebesgue integral of the
 
 :::
 
-:::
-
 ::: pf-qed
 By step [](#f-lebesgue-integrable){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -125,10 +125,10 @@ Simple functions are dense in $L^1[0,1]$, and by regularity of Lebesgue measure 
 
 :::
 
-:::
-
 ::: pf-qed
 Combine steps [](#dense-subspace-suffices){.pf-ref}, [](#step-function-case){.pf-ref}, and [](#step-functions-dense){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -165,10 +165,10 @@ Take the partition points $x_k = \frac{2}{(2k+1)\pi}$; then $f(x_k) = (-1)^k x_k
 
 :::
 
-:::
-
 ::: pf-qed
 By steps [](#f-continuous){.pf-ref} and [](#f-not-bounded-variation){.pf-ref}, $f$ is continuous on $[0,1]$ and not of bounded variation, so (h) is false.
+:::
+
 :::
 
 :::
@@ -177,6 +177,8 @@ By steps [](#f-continuous){.pf-ref} and [](#f-not-bounded-variation){.pf-ref}, $
 Conclusion: (f) and (g) are true; (h) is false.
 
 By steps [](#f-is-true){.pf-ref}, [](#g-is-true){.pf-ref}, and [](#h-is-false){.pf-ref}.
+:::
+
 :::
 
 :::

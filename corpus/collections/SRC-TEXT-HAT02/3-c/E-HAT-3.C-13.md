@@ -108,3 +108,5 @@ Both $\Lambda_R[\alpha]$ and $\mathbb{Z}_p[\alpha]/(\alpha^p)$ are self-dual Hop
 :::
 
 :::
+
+:::

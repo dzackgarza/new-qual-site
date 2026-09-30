@@ -139,6 +139,8 @@ Step [](#rouche-setup-a){.pf-ref} proves (a); step [](#part-b-counterexample){.p
 
 :::
 
+:::
+
 ::: {.solution title="Part 1"}
 Use Rouché: if $\abs{f(z)} < 1$ is strict when $\abs{z} = 1$, then consider $F(z) \da f(z) - z$.
 Write the big part as $M(z) = z$ and the small as $m(z) = f(z)$, then on $\abs{z} = 1$

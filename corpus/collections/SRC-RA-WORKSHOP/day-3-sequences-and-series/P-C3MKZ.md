@@ -104,12 +104,13 @@ $a_n \ge \dfrac{1}{n+1}$ (by step [](#s5-1){.pf-ref}), so $\sum a_n$ diverges.
 
 :::
 
+::: pf-step
+The series converges for $x \in (-\infty, 1)$ — absolutely for $|x| < 1$, conditionally for $x \le -1$ — and diverges for $x \ge 1$.
+
+::: pf-proof
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, and [](#s5){.pf-ref} cover all real $x$.
 :::
 
-::: pf-qed
-the series converges for $x \in (-\infty, 1)$ — absolutely for $|x| < 1$, conditionally for $x \le -1$ — and diverges for $x \ge 1$.
-
-Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, and [](#s5){.pf-ref} cover all real $x$.
 :::
 
 :::

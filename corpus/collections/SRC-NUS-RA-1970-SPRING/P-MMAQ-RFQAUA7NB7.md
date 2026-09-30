@@ -64,10 +64,10 @@ $\lim_{x \to 1/2^+} f(x) = 1 \neq 0 = f(1/2)$.
 
 :::
 
-:::
-
 ::: pf-qed
 This disproves (a).
+:::
+
 :::
 
 :::
@@ -95,10 +95,10 @@ IVT applied to $g$: $0$ lies between $g(0) \geq 0$ and $g(1) \leq 0$.
 
 :::
 
-:::
-
 ::: pf-qed
 This proves (b).
+:::
+
 :::
 
 :::
@@ -145,10 +145,10 @@ By step [](#triangle-inequality-bound){.pf-ref}, the $\delta$ of step [](#delta-
 
 :::
 
-:::
-
 ::: pf-qed
 This proves (c).
+:::
+
 :::
 
 :::
@@ -204,10 +204,12 @@ Substitute $x - y = (2, 0)$ and use step [](#partial1-f-zero){.pf-ref}.
 
 :::
 
-:::
-
 ::: pf-qed
 By step [](#fx-minus-fy-equals-one){.pf-ref} the left side of $f(x) - f(y) = \nabla f(z)(x - y)$ is $1$, and by step [](#gradient-dot-difference-zero){.pf-ref} the right side is $0$ for every $z \in E$. So no $z \in E$ satisfies the equation, and (d) is false.
+:::
+
+:::
+
 :::
 
 :::

@@ -109,6 +109,8 @@ Step [](#lower-bound-rho){.pf-ref} gives the bound with $\varepsilon_0 = \rho^{-
 
 :::
 
+:::
+
 ::: {.remark}
 Part (1) requires $p\not\equiv0$: for $p\equiv0$, $z^mp(z)-1\equiv-1$ and $M_R=1$. Part (2) holds for every polynomial, including $p\equiv0$.
 :::

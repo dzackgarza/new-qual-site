@@ -74,3 +74,7 @@ Hence some orbit has size $1$. Its unique point is fixed by every element of
 $G$.
 :::
 :::
+
+:::
+
+:::

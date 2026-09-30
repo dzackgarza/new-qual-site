@@ -106,3 +106,5 @@ Thus \(U\) is an affine open subset of \(X\) containing \(S\).
 :::
 
 :::
+
+:::

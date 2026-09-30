@@ -141,6 +141,11 @@ For $z \neq 0$, $|f(z)| = |z| \cdot |h(z)| \le c |z|$; at $z = 0$ both sides van
 
 ::: pf
 
+::: pf-step
+**Induction bound on $|f^n(z)|$ on $K$.**
+
+::: pf-proof
+
 ::: {.pf-step #s3-1}
 Base case $n = 1$: For all $z \in K \subseteq \overline{D}(0, R)$, $|f(z)| \leq c |z| \leq c R \leq R$ (since $c < 1$).
 
@@ -182,6 +187,8 @@ Therefore, for all $n \geq 1$ and all $z \in K$: $$|f^n(z)| \leq R \cdot c^n.$$
 
 ::: pf-proof
 Induction on $n$ using the base case step [](#s3-1){.pf-ref} and the step [](#s3-4){.pf-ref} yields $|f^n(z)| \le c^n |z| \le c^n R$.
+:::
+
 :::
 
 :::

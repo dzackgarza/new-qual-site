@@ -82,10 +82,10 @@ Thus, $\frac{f'(z)}{f(z)}$ has a simple pole at $z_0$ with residue $\text{Res}\l
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#zero-residue-conclusion){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -140,10 +140,10 @@ Thus, $\frac{f'(z)}{f(z)}$ has a simple pole at $w_0$ with residue $\text{Res}\l
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#pole-residue-conclusion){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -179,10 +179,10 @@ Since zeros and poles of a non-trivial meromorphic function are isolated, $\text
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#finite-zeros-and-poles){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -228,10 +228,10 @@ Therefore: $$\oint_\gamma \frac{f'(z)}{f(z)} \, dz = \sum_{j=1}^p \oint_{C(a_j, 
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#cauchy-contour-integral-decomposition){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -285,10 +285,12 @@ Dividing both sides by $2\pi i$ yields $\frac{1}{2\pi i} \oint_\gamma \frac{f'(z
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#final-argument-principle-formula){.pf-ref}.
+:::
+
+:::
+
 :::
 
 :::

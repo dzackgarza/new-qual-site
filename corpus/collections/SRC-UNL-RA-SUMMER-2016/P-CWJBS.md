@@ -69,9 +69,11 @@ for $\eps > 0$, choose $N$ with $d(x_n, x_m) < \eps/2$ for $n, m \ge N$ (Cauchy)
 
 :::
 
-::: {.pf-qed #s3}
+::: {.pf-step #s3}
 $X$ is complete.
-step [](#s2){.pf-ref} is the definition.
+
+::: pf-proof
+Step [](#s2){.pf-ref} is the definition.
 :::
 
 :::
@@ -124,9 +126,13 @@ step [](#s6){.pf-ref} bounds $d(x_n, x_m)$ by the tail $\sum_{k \ge n} d(x_k, x_
 
 :::
 
-::: pf-qed
+::: pf-step
 $(x_k)$ converges in $X$.
-step [](#s6){.pf-ref} and step [](#s7){.pf-ref} show $(x_k)$ is Cauchy; completeness (step [](#s3){.pf-ref}) gives convergence.
+
+::: pf-proof
+Step [](#s6){.pf-ref} and step [](#s7){.pf-ref} show $(x_k)$ is Cauchy; completeness (step [](#s3){.pf-ref}) gives convergence.
+:::
+
 :::
 
 :::

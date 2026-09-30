@@ -206,8 +206,13 @@ $d_{M\times N}((s_{k_{j_l}},t_{k_{j_l}}),(s,t)) = d_M(s_{k_{j_l}}, s) + d_N(t_{k
 
 :::
 
-::: pf-qed
+::: pf-step
+$S \times T$ is compact.
+
+::: pf-proof
 Step [](#s5){.pf-ref} is sequential compactness, equivalent to compactness in metric spaces. (Alternatively: $S \times T$ is closed and bounded in the product of complete spaces, or use the open-cover/finite-subcover argument.)
+:::
+
 :::
 
 :::

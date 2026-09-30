@@ -83,3 +83,5 @@ Steps [](#affine-is-automorphism){.pf-ref} and [](#degree-one){.pf-ref} show $\A
 :::
 
 :::
+
+:::

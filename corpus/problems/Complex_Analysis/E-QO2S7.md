@@ -76,3 +76,5 @@ By step [](#vector-space-norm){.pf-ref}, $A(\Omega)$ is a normed space, and by s
 :::
 
 :::
+
+:::

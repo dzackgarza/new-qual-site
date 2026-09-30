@@ -132,7 +132,8 @@ Therefore, $V_4$ is the unique Sylow 2-subgroup of $A_4$, and is consequently a 
 
 :::
 
-::: pf-qed
+::: pf-step
+Conclusion:
 $A_4$ is solvable, and the Sylow theorems together with element counts establish that its unique Sylow 2-subgroup (the index-3 Klein four-group) is normal.
 :::
 

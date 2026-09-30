@@ -109,3 +109,5 @@ The dual simplicial space $\nabla X$ reflects the indexing of simplices and face
 :::
 
 :::
+
+:::

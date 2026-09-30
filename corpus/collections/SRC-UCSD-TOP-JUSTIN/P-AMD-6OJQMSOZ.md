@@ -165,9 +165,8 @@ This contradiction shows no such odd map $g \colon S^2 \to S^1$ exists.
 
 ::: pf-step
 Hence for any continuous $f \colon S^2 \to \mathbb{R}^2$, there exists $x \in S^2$ such that $f(x) = f(-x)$.
-:::
 
-::: pf-qed
+::: pf-proof
 Step [](#s2){.pf-ref} shows $\deg(h)$ is odd, while step [](#s3){.pf-ref} shows $\deg(h) = 0$; this contradiction rules out the existence of an odd map $g \colon S^2 \to S^1$, and hence of a map $f$ with $f(x) \neq f(-x)$ everywhere.
 :::
 

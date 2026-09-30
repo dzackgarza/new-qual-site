@@ -85,3 +85,5 @@ Thus $\operatorname{id}_A$ is nullhomotopic, so $A$ is contractible.
 :::
 
 :::
+
+:::

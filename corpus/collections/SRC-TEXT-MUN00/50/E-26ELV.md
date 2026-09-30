@@ -236,3 +236,5 @@ By step [](#s2){.pf-ref}, $f$ is a homeomorphism of $X$ onto a closed subspace o
 :::
 
 :::
+
+:::

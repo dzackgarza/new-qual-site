@@ -45,10 +45,10 @@ This is Lusin's theorem for the real-valued measurable function $f$ on the set $
 
 :::
 
-:::
-
 ::: pf-qed
 Step [](#lusin-theorem-application){.pf-ref} is precisely the assertion of (a).
+:::
+
 :::
 
 :::
@@ -78,10 +78,10 @@ $y \in g^{-1}(U) \iff f(x, y) \in U \iff (x, y) \in f^{-1}(U)$.
 
 :::
 
-:::
-
 ::: pf-qed
 By step [](#ginv-U-is-section){.pf-ref} the preimage of every open set is Borel, so $g$ is Borel measurable.
+:::
+
 :::
 
 :::
@@ -111,10 +111,12 @@ For every $n$, $E \setminus F \subseteq G_n \setminus F_n$, so $m^*(E \setminus 
 
 :::
 
-:::
-
 ::: pf-qed
 Steps [](#forward-direction){.pf-ref} and [](#backward-direction){.pf-ref} give both implications.
+:::
+
+:::
+
 :::
 
 :::

@@ -322,8 +322,13 @@ step [](#s15-3){.pf-ref} for all $k$.
 
 :::
 
-::: pf-qed
-step [](#s8){.pf-ref} (1) and step [](#s15){.pf-ref} (2).
+::: pf-step
+Conclusion: $\bigcap_{n=1}^\infty K_n \neq \emptyset$.
+
+::: pf-proof
+Step [](#s8){.pf-ref} (1) and step [](#s15){.pf-ref} (2).
+:::
+
 :::
 
 :::

@@ -219,7 +219,8 @@ Since $\lambda_C$ is a root of a monic polynomial with integer coefficients, $\f
 
 :::
 
-::: pf-qed
+::: pf-step
+Conclusion:
 Class sums form a $\mathbb{Z}$-basis of $\mathcal{Z} \cong \mathbb{Z}^d$, whose elements are integral over $\mathbb{Z}$; by Schur's Lemma $\pi(P_C) = \omega_\pi(C) \operatorname{id}_V$, so $\omega_\pi(C) = \frac{|C|\chi_\pi(C)}{\dim V}$ is an algebraic integer.
 :::
 

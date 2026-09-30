@@ -74,10 +74,10 @@ $g'(x_0) = f'(x_0) - 2 = 0$.
 
 :::
 
-:::
-
 ::: pf-qed
 This proves (a).
+:::
+
 :::
 
 :::
@@ -123,10 +123,12 @@ Divide steps [](#mvt-positive-side){.pf-ref} and [](#mvt-negative-side){.pf-ref}
 
 :::
 
-:::
-
 ::: pf-qed
 The two-sided limit $\lim_{x \to 0} (f(x) - f(0))/x$ exists and equals $L$, so $f$ is differentiable at $0$ with $f'(0) = L$.
+:::
+
+:::
+
 :::
 
 :::

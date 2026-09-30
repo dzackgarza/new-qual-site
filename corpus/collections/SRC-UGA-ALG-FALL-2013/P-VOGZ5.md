@@ -96,7 +96,7 @@ definitions.
 
 :::
 
-::: pf-step
+::: {.pf-step #p2-2}
 $\QQ(i)/\QQ$ is Galois (it is the splitting field of $x^2 + 1$), so $N$ is normal in $G$.
 
 ::: pf-proof
@@ -217,7 +217,7 @@ Step [](#p4-4){.pf-ref}.
 :::
 
 ::: pf-qed
-Step [](#p1-4){.pf-ref}, step [](#p4-2){.pf-ref}, step [](#p2-4){.pf-ref}, step [](#p3-4){.pf-ref}, step [](#p4-5){.pf-ref}.
+Step [](#p1-4){.pf-ref} (a), step [](#p2-2){.pf-ref}, step [](#p2-4){.pf-ref} (b), step [](#p3-4){.pf-ref} (c), step [](#p4-5){.pf-ref} (d).
 :::
 
 :::

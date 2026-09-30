@@ -104,3 +104,5 @@ Since $\pi_1(U \cap V, x_0)$ is the trivial group, both homomorphisms $i_*$ and 
 :::
 
 :::
+
+:::
