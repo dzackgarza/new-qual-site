@@ -92,7 +92,7 @@ corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1981/P-BERK81S-20.md	converted
 corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-01.md	converted	
 corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-02.md	converted	
 corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-03.md	converted	
-corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-04.md	pending	script refused: citation <2>2 names no step
+corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-04.md	converted	
 corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-05.md	converted	
 corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-06.md	converted	
 corpus/collections/SRC-BERKELEY-PRELIM-SUMMER-1982/P-PRELIM82S-07.md	converted	
@@ -176,12 +176,12 @@ corpus/collections/SRC-CA-ART-T34TG3/P-4Y4QT.md	converted
 corpus/collections/SRC-CA-ART-T34TG3/P-5LY53.md	converted	
 corpus/collections/SRC-CA-ART-T34TG3/P-COFTP.md	converted	
 corpus/collections/SRC-CA-ART-T34TG3/P-GLF66.md	converted	
-corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-726HQ.md	skipped	<1>k and <2>1 markers sit on the same source line (e.g. line 37); proof text uses inline *Proof:* not ::: {.proof} fences; step tree not unambiguous
-corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-AYDDA.md	skipped	problem asks for definitions/results "without proofs"; the <k>m markers organize an expository outline (no claim+proof pairs anywhere), not a typed-step proof
-corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-FQRRXNYJJL.md	skipped	<1>k and <2>1 markers share a line; proof text is inline *Proof:* not ::: {.proof} fences; dotted cross-refs like <1>2.<2>3 are ambiguous
-corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-WBI4DD2OZI.md	skipped	substep <2>4 uses inline "Proof:" text merged into the claim paragraph instead of a ::: {.proof} fence, unlike its sibling substeps; claim/proof boundary not reliably determined
-corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-ZMRHOSV3OG.md	skipped	<1>k and <2>1 markers share a line; proof text is inline *Proof:* not ::: {.proof} fences; dotted cross-refs like <1>1.<2>4
-corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-ZTRBMIG65D.md	skipped	<1>k and <2>1 markers share a line; proof text is inline *Proof:* not ::: {.proof} fences; dotted cross-refs like <1>3.<2>1
+corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-726HQ.md	converted	
+corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-AYDDA.md	converted	
+corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-FQRRXNYJJL.md	converted	
+corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-WBI4DD2OZI.md	converted	
+corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-ZMRHOSV3OG.md	converted	
+corpus/collections/SRC-EMORY-QUAL-PROBLEMS/P-MMAQ-ZTRBMIG65D.md	converted	
 corpus/collections/SRC-GATHMANN-AG/P-AGXGATHSTALKSUBVAR.md	converted	
 corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO5.md	converted	
 corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO50.md	converted	
@@ -194,7 +194,7 @@ corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO56.md	converted
 corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO57.md	converted	
 corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO6.md	converted	
 corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO7.md	converted	
-corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO8.md	pending	script refused: non-proof div among steps
+corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO8.md	converted	
 corpus/collections/SRC-HARVARD-COMM-ALG-ORAL/P-HCAO9.md	converted	
 corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX11.md	converted	
 corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX13.md	converted	
@@ -202,7 +202,7 @@ corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX18.md	converted
 corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX2.md	converted	
 corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX24.md	converted	
 corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX26.md	converted	
-corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX4.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-HARVARD-COMPLEX-ORAL/P-HCAX4.md	converted	
 corpus/collections/SRC-HARVARD-FIELDS-ORAL/P-HFGO1.md	converted	
 corpus/collections/SRC-HARVARD-FIELDS-ORAL/P-HFGO10.md	converted	
 corpus/collections/SRC-HARVARD-FIELDS-ORAL/P-HFGO11.md	converted	

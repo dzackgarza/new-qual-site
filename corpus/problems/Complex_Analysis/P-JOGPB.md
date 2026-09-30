@@ -71,9 +71,6 @@ Substituting $z - a = r e^{it}$ and $dz = i r e^{it}\,dt$, the factors $r e^{it}
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -108,9 +105,6 @@ For any $z \in S$, $f(z) = \frac{A + g(z)}{z-a} = \frac{A}{z-a} + \frac{g(z)}{z-
 Since $g(z) + A = (z-a)f(z)$, dividing both sides by $z - a \neq 0$ (valid because $z \in S$ has $|z-a| > 0$) gives the decomposition.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::
@@ -189,9 +183,6 @@ For every $\varepsilon > 0$ we found $\delta$ such that $r < \delta$ forces the 
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -221,9 +212,6 @@ Taking the limit as $r \to 0^+$ on both sides: $$\lim_{r \to 0^+} \int_{\gamma_r
 The first term $iA\beta_0$ is constant in $r$, and by step [](#error-term-vanishes){.pf-ref} the second term tends to $0$, so the limit is $iA\beta_0$.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::

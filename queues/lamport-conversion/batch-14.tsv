@@ -1,12 +1,12 @@
-corpus/collections/SRC-UCSD-CA-FALL-2016/P-CAFA16F.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-CA-FALL-2016/P-CAFA16F.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17B.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2017/P-CAFA17D.md	converted	
-corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19C.md	pending	script refused: step number 3 where 2 was expected
+corpus/collections/SRC-UCSD-CA-FALL-2019/P-CAFA19C.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2020/P-CAFA20C.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2020/P-CAFA20E.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2020/P-CAFA20F.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2021/P-CAFA21A.md	converted	
-corpus/collections/SRC-UCSD-CA-FALL-2021/P-CAFA21C.md	pending	script refused: proof before the first step
+corpus/collections/SRC-UCSD-CA-FALL-2021/P-CAFA21C.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2023/P-CAFA23B.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2023/P-CAFA23F.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2024/P-CAF24A.md	converted	
@@ -17,21 +17,21 @@ corpus/collections/SRC-UCSD-CA-SPRING-2008/P-CASP08A.md	converted
 corpus/collections/SRC-UCSD-CA-SPRING-2008/P-CASP08D.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2008/P-CASP08F.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2009/P-CASP09A.md	converted	
-corpus/collections/SRC-UCSD-CA-SPRING-2009/P-CASP09D.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-CA-SPRING-2009/P-CASP09D.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2009/P-CASP09H.md	converted	
-corpus/collections/SRC-UCSD-CA-SPRING-2011/P-CASP11A.md	pending	script refused: step number 1 where 3 was expected
+corpus/collections/SRC-UCSD-CA-SPRING-2011/P-CASP11A.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2011/P-CASP11B.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2011/P-CASP11D.md	converted	
-corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12C.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-CA-SPRING-2012/P-CASP12C.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19A.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19B.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2023/P-CASP23E.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2024/P-CAS24D.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2024/P-CAS24F.md	converted	
-corpus/collections/SRC-UCSD-CA-SPRING-2026/P-CASP26A.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-CA-SPRING-2026/P-CASP26A.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2026/P-CASP26B.md	converted	
 corpus/collections/SRC-UCSD-CA-SPRING-2026/P-CASP26C.md	converted	
-corpus/collections/SRC-UCSD-RA-FALL-2004/P-RAF04A.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-RA-FALL-2004/P-RAF04A.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2004/P-RAF04B.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2004/P-RAF04C.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2004/P-RAF04D.md	converted	
@@ -46,8 +46,8 @@ corpus/collections/SRC-UCSD-RA-FALL-2005/P-RAF05D.md	converted
 corpus/collections/SRC-UCSD-RA-FALL-2005/P-RAF05E.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2005/P-RAF05F.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2006/P-RAF06A.md	converted	
-corpus/collections/SRC-UCSD-RA-FALL-2006/P-RAF06B.md	pending	script refused: step number 1 where 5 was expected
-corpus/collections/SRC-UCSD-RA-FALL-2006/P-RAF06C.md	pending	script refused: step number 1 where 5 was expected
+corpus/collections/SRC-UCSD-RA-FALL-2006/P-RAF06B.md	converted	
+corpus/collections/SRC-UCSD-RA-FALL-2006/P-RAF06C.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2006/P-RAF06D.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2006/P-RAF06E.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2007/P-RAF07A.md	converted	
@@ -72,7 +72,7 @@ corpus/collections/SRC-UCSD-RA-FALL-2011/P-RAF11B.md	converted
 corpus/collections/SRC-UCSD-RA-FALL-2011/P-RAF11C.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2011/P-RAF11D.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2011/P-RAF11E.md	converted	
-corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16A.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16A.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16B.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16C.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16D.md	converted	
@@ -82,7 +82,7 @@ corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16G.md	converted
 corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16H.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16I.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2016/P-RAF16J.md	converted	
-corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17A.md	pending	script refused: step number 1 where 6 was expected
+corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17A.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17B.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17C.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17D.md	converted	
@@ -90,7 +90,7 @@ corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17E.md	converted
 corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17F.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2017/P-RAF17G.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2018/P-RAF18A.md	converted	
-corpus/collections/SRC-UCSD-RA-FALL-2018/P-RAF18B.md	pending	script refused: step number 1 where 4 was expected
+corpus/collections/SRC-UCSD-RA-FALL-2018/P-RAF18B.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2018/P-RAF18C.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2018/P-RAF18D.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2018/P-RAF18E.md	converted	
@@ -138,7 +138,7 @@ corpus/collections/SRC-UCSD-RA-FALL-2025/P-RAF25D.md	converted
 corpus/collections/SRC-UCSD-RA-FALL-2025/P-RAF25E.md	converted	
 corpus/collections/SRC-UCSD-RA-FALL-2025/P-RAF25F.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2004/P-RASP04A.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2004/P-RASP04B.md	pending	script refused: step number 1 where 5 was expected
+corpus/collections/SRC-UCSD-RA-SPRING-2004/P-RASP04B.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2004/P-RASP04C.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2004/P-RASP04D.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2004/P-RASP04E.md	converted	
@@ -157,13 +157,13 @@ corpus/collections/SRC-UCSD-RA-SPRING-2007/P-RASP07D.md	converted
 corpus/collections/SRC-UCSD-RA-SPRING-2007/P-RASP07E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2007/P-RASP07F.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08A.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08B.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08B.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08C.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08D.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08F.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2008/P-RASP08G.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09A.md	pending	script refused: step number 1 where 6 was expected
+corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09A.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09B.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09C.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2009/P-RASP09D.md	converted	
@@ -176,7 +176,7 @@ corpus/collections/SRC-UCSD-RA-SPRING-2013/P-RASP13A.md	converted
 corpus/collections/SRC-UCSD-RA-SPRING-2013/P-RASP13D.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2013/P-RASP13E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2013/P-RASP13F.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2013/P-RASP13G.md	pending	script refused: step number 1 where 3 was expected
+corpus/collections/SRC-UCSD-RA-SPRING-2013/P-RASP13G.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2013/P-RASP13H.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2015/P-RASP15A.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2015/P-RASP15C.md	converted	
@@ -186,23 +186,23 @@ corpus/collections/SRC-UCSD-RA-SPRING-2015/P-RASP15G.md	converted
 corpus/collections/SRC-UCSD-RA-SPRING-2015/P-RASP15H.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16A.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16B.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16C.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16C.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16D.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16F.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2016/P-RASP16H.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17A.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17B.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17C.md	pending	script refused: step number 1 where 5 was expected
+corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17C.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17D.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17E.md	pending	script refused: step number 1 where 4 was expected
+corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17F.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17G.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2017/P-RASP17H.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18A.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18B.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18C.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18D.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18C.md	converted	
+corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18D.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18F.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2018/P-RASP18G.md	converted	
@@ -213,7 +213,7 @@ corpus/collections/SRC-UCSD-RA-SPRING-2020/P-RASP20C.md	converted
 corpus/collections/SRC-UCSD-RA-SPRING-2020/P-RASP20D.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2020/P-RASP20E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2020/P-RASP20F.md	converted	
-corpus/collections/SRC-UCSD-RA-SPRING-2020/P-RASP20G.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-RA-SPRING-2020/P-RASP20G.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2021/P-RASP21B.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2021/P-RASP21D.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2021/P-RASP21F.md	converted	
@@ -236,14 +236,14 @@ corpus/collections/SRC-UCSD-RA-SPRING-2025/P-RASP25D.md	converted
 corpus/collections/SRC-UCSD-RA-SPRING-2025/P-RASP25E.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2025/P-RASP25F.md	converted	
 corpus/collections/SRC-UCSD-RA-SPRING-2026/P-RASP26A.md	converted	
-corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2009-section-8-printed-p-399/P-UCTOP-SU09-7.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2009-section-8-printed-p-399/P-UCTOP-SU09-8.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2009-section-8-printed-p-399/P-UCTOP-SU09-7.md	converted	
+corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2009-section-8-printed-p-399/P-UCTOP-SU09-8.md	converted	
 corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2011-section-11-printed-p-402/P-UCTOP-SU11-7.md	converted	
-corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2011-section-11-printed-p-402/P-UCTOP-SU11-8.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2011-section-11-printed-p-402/P-UCTOP-SU11-8.md	converted	
 corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2012-section-13-printed-p-404/P-UCTOP-SU12-7.md	converted	
 corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2012-section-13-printed-p-404/P-UCTOP-SU12-8.md	converted	
 corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2014-section-15-printed-p-406/P-UCTOP-SU14-7.md	converted	
-corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2014-section-15-printed-p-406/P-UCTOP-SU14-8.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-TOP-290QUALS/summer-2014-section-15-printed-p-406/P-UCTOP-SU14-8.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2003/P-TOPF03G.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2003/P-TOPF03H.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2004/P-TOPF04E.md	converted	

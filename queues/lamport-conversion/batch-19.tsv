@@ -3,27 +3,27 @@ corpus/problems/Complex_Analysis/P-OOVED.md	converted
 corpus/problems/Complex_Analysis/P-OZXEA.md	converted	
 corpus/problems/Complex_Analysis/P-P2W6W.md	converted	
 corpus/problems/Complex_Analysis/P-PPWDW.md	converted	
-corpus/problems/Complex_Analysis/P-ROEFL.md	pending	script refused: heading among steps
-corpus/problems/Complex_Analysis/P-S5FOO.md	pending	script refused: prose at a level boundary
+corpus/problems/Complex_Analysis/P-ROEFL.md	converted	
+corpus/problems/Complex_Analysis/P-S5FOO.md	converted	
 corpus/problems/Complex_Analysis/P-SWWWO.md	converted	
 corpus/problems/Complex_Analysis/P-SXZZW.md	converted	
-corpus/problems/Complex_Analysis/P-TFO34.md	pending	script refused: dotted step citation
+corpus/problems/Complex_Analysis/P-TFO34.md	converted	
 corpus/problems/Complex_Analysis/P-TQBRQ.md	converted	
 corpus/problems/Complex_Analysis/P-VH7IY.md	converted	
 corpus/problems/Complex_Analysis/P-VTCZF.md	converted	
-corpus/problems/Complex_Analysis/P-YDJE6.md	pending	script refused: prose at a level boundary
+corpus/problems/Complex_Analysis/P-YDJE6.md	converted	
 corpus/problems/Complex_Analysis/P-YEZTR.md	converted	
 corpus/problems/Complex_Analysis/P-YR75I.md	converted	
 corpus/problems/Complex_Analysis/P-ZDWLN.md	converted	
 corpus/problems/Complex_Analysis/P-ZJXP5.md	converted	
 corpus/problems/Complex_Analysis/P-ZORLW.md	converted	
-corpus/problems/Prelim/P-K5L2R.md	pending	script refused: step number 2 where 1 was expected
+corpus/problems/Prelim/P-K5L2R.md	converted	
 corpus/problems/Real_Analysis/E-7EL3U.md	converted	
-corpus/problems/Real_Analysis/E-BQBZI.md	pending	script refused: prose after substeps inside a proof
+corpus/problems/Real_Analysis/E-BQBZI.md	converted	
 corpus/problems/Real_Analysis/E-BTA5L.md	converted	
 corpus/problems/Real_Analysis/E-CGVE4.md	converted	
 corpus/problems/Real_Analysis/E-D75O4.md	converted	
-corpus/problems/Real_Analysis/E-DUWXR.md	pending	script refused: citation <2>1 names no step
+corpus/problems/Real_Analysis/E-DUWXR.md	converted	
 corpus/problems/Real_Analysis/E-E4H2J.md	converted	
 corpus/problems/Real_Analysis/E-EJN4Q.md	converted	
 corpus/problems/Real_Analysis/E-F6IXU.md	converted	
@@ -33,9 +33,9 @@ corpus/problems/Real_Analysis/E-GMYE2.md	converted
 corpus/problems/Real_Analysis/E-GQEMZ.md	converted	
 corpus/problems/Real_Analysis/E-IAQ6D.md	converted	
 corpus/problems/Real_Analysis/E-JJ746.md	converted	
-corpus/problems/Real_Analysis/E-JY5OT.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Real_Analysis/E-JY5OT.md	converted	
 corpus/problems/Real_Analysis/E-KO5PK.md	converted	
-corpus/problems/Real_Analysis/E-KUOXT.md	pending	script refused: step number 1 where 6 was expected
+corpus/problems/Real_Analysis/E-KUOXT.md	converted	
 corpus/problems/Real_Analysis/E-KVDIA.md	converted	
 corpus/problems/Real_Analysis/E-L3F4O.md	converted	
 corpus/problems/Real_Analysis/E-LYXHE.md	converted	
@@ -48,9 +48,9 @@ corpus/problems/Real_Analysis/E-QCYEM.md	converted
 corpus/problems/Real_Analysis/E-QFOPP.md	converted	
 corpus/problems/Real_Analysis/E-QSNCL.md	converted	
 corpus/problems/Real_Analysis/E-SA3HI.md	converted	
-corpus/problems/Real_Analysis/E-SDQ4U.md	pending	script refused: citation <2>3 names no step
+corpus/problems/Real_Analysis/E-SDQ4U.md	converted	
 corpus/problems/Real_Analysis/E-TF33D.md	converted	
-corpus/problems/Real_Analysis/E-TVBUC.md	pending	script refused: prose after substeps inside a proof
+corpus/problems/Real_Analysis/E-TVBUC.md	converted	
 corpus/problems/Real_Analysis/E-TXSKL.md	converted	
 corpus/problems/Real_Analysis/E-TZFC7.md	converted	
 corpus/problems/Real_Analysis/E-UYQED.md	converted	
@@ -76,7 +76,7 @@ corpus/problems/Real_Analysis/P-8RB01.md	converted
 corpus/problems/Real_Analysis/P-AGH3O.md	converted	
 corpus/problems/Real_Analysis/P-DFDX4.md	converted	
 corpus/problems/Real_Analysis/P-DQE3F.md	converted	
-corpus/problems/Real_Analysis/P-DQYX5.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Real_Analysis/P-DQYX5.md	converted	
 corpus/problems/Real_Analysis/P-DS4D6.md	converted	
 corpus/problems/Real_Analysis/P-E33SA.md	converted	
 corpus/problems/Real_Analysis/P-E4WZN.md	converted	
@@ -96,17 +96,17 @@ corpus/problems/Real_Analysis/P-JHWCH.md	converted
 corpus/problems/Real_Analysis/P-JPDRQ.md	converted	
 corpus/problems/Real_Analysis/P-K4EUR.md	converted	
 corpus/problems/Real_Analysis/P-KC3PY.md	converted	
-corpus/problems/Real_Analysis/P-LQEAV.md	pending	script refused: prose after substeps inside a proof
+corpus/problems/Real_Analysis/P-LQEAV.md	converted	
 corpus/problems/Real_Analysis/P-LUYHY.md	converted	
 corpus/problems/Real_Analysis/P-MLJMH.md	converted	
-corpus/problems/Real_Analysis/P-MNEPM.md	pending	script refused: prose at a level boundary
+corpus/problems/Real_Analysis/P-MNEPM.md	converted	
 corpus/problems/Real_Analysis/P-NYOLD.md	converted	
 corpus/problems/Real_Analysis/P-NYZMD.md	converted	
 corpus/problems/Real_Analysis/P-O2PWG.md	converted	
 corpus/problems/Real_Analysis/P-O4USN.md	converted	
 corpus/problems/Real_Analysis/P-O7DMP.md	converted	
 corpus/problems/Real_Analysis/P-OSPIM.md	converted	
-corpus/problems/Real_Analysis/P-PEND3.md	pending	script refused: typed marker or citation left in prose
+corpus/problems/Real_Analysis/P-PEND3.md	converted	
 corpus/problems/Real_Analysis/P-PIVLV.md	converted	
 corpus/problems/Real_Analysis/P-PUDXH.md	converted	
 corpus/problems/Real_Analysis/P-QMPVS.md	converted	
@@ -116,14 +116,14 @@ corpus/problems/Real_Analysis/P-RVL3K.md	converted
 corpus/problems/Real_Analysis/P-TFXE2.md	converted	
 corpus/problems/Real_Analysis/P-THQJ3.md	converted	
 corpus/problems/Real_Analysis/P-TZJQI.md	converted	
-corpus/problems/Real_Analysis/P-VLZN2.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Real_Analysis/P-VLZN2.md	converted	
 corpus/problems/Real_Analysis/P-VPCUJ.md	converted	
 corpus/problems/Real_Analysis/P-W6ITY.md	converted	
 corpus/problems/Real_Analysis/P-W7RQ2.md	converted	
 corpus/problems/Real_Analysis/P-X1WOB.md	converted	
-corpus/problems/Real_Analysis/P-XHQRW.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Real_Analysis/P-XHQRW.md	converted	
 corpus/problems/Real_Analysis/P-XKFPD.md	converted	
-corpus/problems/Real_Analysis/P-XLANN.md	pending	script refused: prose after substeps inside a proof
+corpus/problems/Real_Analysis/P-XLANN.md	converted	
 corpus/problems/Real_Analysis/P-YTOGK.md	converted	
 corpus/problems/Topology/E-22IOS.md	converted	
 corpus/problems/Topology/E-2BLQW.md	converted	
@@ -135,10 +135,10 @@ corpus/problems/Topology/E-54CQC.md	converted
 corpus/problems/Topology/E-5CCAN.md	converted	
 corpus/problems/Topology/E-5VQHD.md	converted	
 corpus/problems/Topology/E-6XHXX.md	converted	
-corpus/problems/Topology/E-7DSGZ.md	pending	script refused: step number 2 where 1 was expected
+corpus/problems/Topology/E-7DSGZ.md	converted	
 corpus/problems/Topology/E-7GKPR.md	converted	
-corpus/problems/Topology/E-ARJT3.md	pending	script refused: prose at a level boundary
-corpus/problems/Topology/E-AZ7SN.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Topology/E-ARJT3.md	converted	
+corpus/problems/Topology/E-AZ7SN.md	converted	
 corpus/problems/Topology/E-BOLN3.md	converted	
 corpus/problems/Topology/E-BPYQ4.md	converted	
 corpus/problems/Topology/E-C74H7.md	converted	
@@ -158,7 +158,7 @@ corpus/problems/Topology/E-GTNVU.md	converted
 corpus/problems/Topology/E-H7BO5.md	converted	
 corpus/problems/Topology/E-HYQMG.md	converted	
 corpus/problems/Topology/E-IECHS.md	converted	
-corpus/problems/Topology/E-IHJ56.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Topology/E-IHJ56.md	converted	
 corpus/problems/Topology/E-IOZ4G.md	converted	
 corpus/problems/Topology/E-ITANC.md	converted	
 corpus/problems/Topology/E-J3IO7.md	converted	
@@ -174,7 +174,7 @@ corpus/problems/Topology/E-T7PYZ.md	converted
 corpus/problems/Topology/E-TIFII.md	converted	
 corpus/problems/Topology/E-TMOKI.md	converted	
 corpus/problems/Topology/E-TRRUN.md	converted	
-corpus/problems/Topology/E-TTDES.md	pending	script refused: prose at a level boundary
+corpus/problems/Topology/E-TTDES.md	converted	
 corpus/problems/Topology/E-TTW3C.md	converted	
 corpus/problems/Topology/E-UBGWI.md	converted	
 corpus/problems/Topology/E-UDJ3C.md	converted	
@@ -184,7 +184,7 @@ corpus/problems/Topology/E-W4NZW.md	converted
 corpus/problems/Topology/E-WADQN.md	converted	
 corpus/problems/Topology/E-X36KD.md	converted	
 corpus/problems/Topology/E-XDNX3.md	converted	
-corpus/problems/Topology/E-XSXAZ.md	pending	script refused: prose at a level boundary
+corpus/problems/Topology/E-XSXAZ.md	converted	
 corpus/problems/Topology/E-Y52Y4.md	converted	
 corpus/problems/Topology/E-YAEMZ.md	converted	
 corpus/problems/Topology/E-YUGKU.md	converted	
@@ -192,7 +192,7 @@ corpus/problems/Topology/E-ZN7P4.md	converted
 corpus/problems/Topology/P-24CMJ.md	converted	
 corpus/problems/Topology/P-2V6GL.md	converted	
 corpus/problems/Topology/P-3GOJI.md	converted	
-corpus/problems/Topology/P-3QUC7.md	pending	script refused: prose at a level boundary
+corpus/problems/Topology/P-3QUC7.md	converted	
 corpus/problems/Topology/P-3TOOU.md	converted	
 corpus/problems/Topology/P-557LL.md	converted	
 corpus/problems/Topology/P-5WRVK.md	converted	
@@ -226,16 +226,16 @@ corpus/problems/Topology/P-LZDYV.md	converted
 corpus/problems/Topology/P-M62FC.md	converted	
 corpus/problems/Topology/P-MA7SC.md	converted	
 corpus/problems/Topology/P-MZZJH.md	converted	
-corpus/problems/Topology/P-N7RR5.md	pending	script refused: prose at a level boundary
+corpus/problems/Topology/P-N7RR5.md	converted	
 corpus/problems/Topology/P-NESQN.md	converted	
 corpus/problems/Topology/P-NJNNL.md	converted	
 corpus/problems/Topology/P-NNHWB.md	converted	
-corpus/problems/Topology/P-OX7OF.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Topology/P-OX7OF.md	converted	
 corpus/problems/Topology/P-PIW3Z.md	converted	
 corpus/problems/Topology/P-QFLQB.md	converted	
 corpus/problems/Topology/P-QNUFT.md	converted	
 corpus/problems/Topology/P-SCVNS.md	converted	
-corpus/problems/Topology/P-SDQTV.md	pending	script refused: prose at a level boundary
+corpus/problems/Topology/P-SDQTV.md	converted	
 corpus/problems/Topology/P-T5QRW.md	converted	
 corpus/problems/Topology/P-TC2PJ.md	converted	
 corpus/problems/Topology/P-TIRTE.md	converted	
@@ -246,12 +246,12 @@ corpus/problems/Topology/P-VTB25.md	converted
 corpus/problems/Topology/P-WAI3F.md	converted	
 corpus/problems/Topology/P-WHXWM.md	converted	
 corpus/problems/Topology/P-WXTVX.md	converted	
-corpus/problems/Topology/P-XAQEZ.md	pending	script refused: prose at a level boundary
-corpus/problems/Topology/P-XGHXK.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Topology/P-XAQEZ.md	converted	
+corpus/problems/Topology/P-XGHXK.md	converted	
 corpus/problems/Topology/P-XPDMQ.md	converted	
 corpus/problems/Topology/P-XSRNS.md	converted	
 corpus/problems/Topology/P-XWNF6.md	converted	
 corpus/problems/Topology/P-YBQ3V.md	converted	
 corpus/problems/Topology/P-ZI3L4.md	converted	
-corpus/problems/Topology/P-ZQBPZ.md	pending	script refused: second proof block or proof after substeps
-corpus/theory/Real_Analysis/FS-BM2PV.md	pending	script refused: prose at a level boundary
+corpus/problems/Topology/P-ZQBPZ.md	converted	
+corpus/theory/Real_Analysis/FS-BM2PV.md	converted	

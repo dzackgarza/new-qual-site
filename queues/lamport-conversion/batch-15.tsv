@@ -9,14 +9,14 @@ corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08A.md	converted
 corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08B.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08C.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08D.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08E.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-TOP-FALL-2008/P-TOPF08E.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09A.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09B.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09C.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09D.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09D.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09E.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09F.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09G.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09G.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2009/P-TOPF09H.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10A.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10B.md	converted	
@@ -27,7 +27,7 @@ corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10G.md	converted
 corpus/collections/SRC-UCSD-TOP-FALL-2010/P-TOPF10H.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2017/P-6P7O7.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2017/P-LMEKH.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2017/P-SAEXG.md	pending	script refused: step number 4 where 3 was expected
+corpus/collections/SRC-UCSD-TOP-FALL-2017/P-SAEXG.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2017/P-YHFCR.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2018/P-TOPF18A.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2018/P-TOPF18B.md	converted	
@@ -46,18 +46,18 @@ corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20A.md	converted
 corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20B.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20C.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20D.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20E.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20E.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20F.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20G.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20H.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-FALL-2020/P-TOPF20H.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2021/P-TOPF21A.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2021/P-TOPF21B.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2021/P-TOPF21C.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-FALL-2021/P-TOPF21C.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2021/P-TOPF21D.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22A.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22A.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22B.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22C.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22D.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22D.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22E.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22G.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2022/P-TOPF22H.md	converted	
@@ -70,13 +70,13 @@ corpus/collections/SRC-UCSD-TOP-FALL-2023/P-TOPF23F.md	converted
 corpus/collections/SRC-UCSD-TOP-FALL-2023/P-TOPF23G.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2023/P-TOPF23H.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24A.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24B.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24B.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24C.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24D.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24E.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24F.md	converted	
-corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24G.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24H.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24G.md	converted	
+corpus/collections/SRC-UCSD-TOP-FALL-2024/P-TOPF24H.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2025/P-TOPF25A.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2025/P-TOPF25C.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2025/P-TOPF25D.md	converted	
@@ -85,43 +85,43 @@ corpus/collections/SRC-UCSD-TOP-FALL-2025/P-TOPF25F.md	converted
 corpus/collections/SRC-UCSD-TOP-FALL-2025/P-TOPF25G.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2025/P-TOPF25H.md	converted	
 corpus/collections/SRC-UCSD-TOP-FALL-2025/P-TOPS24D.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-2AFAX7LD.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-2GG7VEF2.md	pending	script refused: step number 5 where 4 was expected
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-2AFAX7LD.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-2GG7VEF2.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-2IFZW3JK.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-4CDCOPRN.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-4DYUOGAJ.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-4DYUOGAJ.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-5A2VNO4E.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-5TW33AUF.md	pending	script refused: citation <2>2 names no step
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6GFMKZVQ.md	pending	script refused: second proof block or proof after substeps
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6KL53YZC.md	pending	script refused: citation <2>4 names no step
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6OJQMSOZ.md	pending	script refused: step number 3 where 2 was expected
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6QDQY5HT.md	pending	script refused: step number 3 where 2 was expected
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6RPCGOV7.md	pending	script refused: citation <2>4 names no step
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-5TW33AUF.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6GFMKZVQ.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6KL53YZC.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6OJQMSOZ.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6QDQY5HT.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6RPCGOV7.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-6TSC527D.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-7INMAFDG.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-7IWMHJHE.md	pending	script refused: citation <2>4 names no step
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-7IWMHJHE.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-7NJ4YRS5.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-A2CPGINL.md	pending	script refused: step number 3 where 2 was expected
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-A2CPGINL.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-A6MEOFBL.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-ALXD5IQN.md	pending	script refused: citation <2>4 names no step
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-AZWPAEUQ.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-ALXD5IQN.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-AZWPAEUQ.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-CM4OPBUE.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-D7IX7C4G.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-DDQM3X6Q.md	pending	script refused: step number 4 where 3 was expected
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-DX7L7EFB.md	pending	script refused: step number 5 where 4 was expected
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-E67LQFU5.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-EPCKWZSV.md	pending	script refused: citation <2>6 names no step
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-D7IX7C4G.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-DDQM3X6Q.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-DX7L7EFB.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-E67LQFU5.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-EPCKWZSV.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-ERYR6LDW.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-ES2H5QQF.md	pending	script refused: citation <2>4 names no step
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-F7UPRCWM.md	pending	script refused: citation <2>2 names no step
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-ES2H5QQF.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-F7UPRCWM.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-FV5LNKN4.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-FW4WE7JA.md	pending	script refused: citation <2>3 names no step
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-GEBWFMJF.md	pending	script refused: step number 5 where 3 was expected
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-FW4WE7JA.md	converted	
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-GEBWFMJF.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-HEIDFSO2.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-HWZNNEDG.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-HYX4PDY2.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-IJD6LW4S.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-IUGBCO5R.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-IUGBCO5R.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-JXFC4L6D.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-JXFYCMO7.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-KB4OBOHW.md	converted	
@@ -135,7 +135,7 @@ corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-M7AOQAZB.md	converted
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-ML25AJS7.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-MVCOFKIK.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-NEK7QHCS.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-OXM52UGE.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-OXM52UGE.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-PYAZZ4MG.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-Q35VMEOX.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-AMD-QVJXODCH.md	converted	
@@ -176,7 +176,7 @@ corpus/collections/SRC-UCSD-TOP-JUSTIN/P-UCTOP290-S12-8.md	converted
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-UCTOP290-S12-9.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-UCTOP290-S3-5.md	converted	
 corpus/collections/SRC-UCSD-TOP-JUSTIN/P-UCTOP290-S3-6.md	converted	
-corpus/collections/SRC-UCSD-TOP-JUSTIN/P-WOFN2.md	pending	script refused: step number 5 where 4 was expected
+corpus/collections/SRC-UCSD-TOP-JUSTIN/P-WOFN2.md	converted	
 corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17A.md	converted	
 corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17B.md	converted	
 corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/P-TOPQ17C.md	converted	
@@ -195,9 +195,9 @@ corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01A.md	converted
 corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01B.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01C.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01D.md	converted	
-corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01E.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01F.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-TOP-SPRING-2002/P-TOPS02A.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01E.md	converted	
+corpus/collections/SRC-UCSD-TOP-SPRING-2001/P-TOPS01F.md	converted	
+corpus/collections/SRC-UCSD-TOP-SPRING-2002/P-TOPS02A.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2002/P-TOPS02B.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2002/P-TOPS02C.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2002/P-TOPS02D.md	converted	
@@ -227,13 +227,13 @@ corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06A.md	converted
 corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06B.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06C.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06D.md	converted	
-corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06E.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-TOP-SPRING-2006/P-TOPS06E.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07A.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07B.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07C.md	converted	
-corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07D.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07E.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07F.md	pending	script refused: step number 3 where 1 was expected
+corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07D.md	converted	
+corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07E.md	converted	
+corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07F.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07G.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2007/P-TOPS07H.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08A.md	converted	
@@ -241,17 +241,17 @@ corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08B.md	converted
 corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08C.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08D.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08E.md	converted	
-corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08F.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08F.md	converted	
 corpus/collections/SRC-UCSD-TOP-SPRING-2008/P-TOPS08G.md	converted	
-corpus/collections/SRC-UCSD-TOP-SPRING-2010/P-TOPS10E.md	skipped	step markers appear mid-paragraph inside claims and proof bodies (e.g. "<2>1. By the UCT" fused onto <1>2's claim line; "<2>4." embedded mid-sentence inside a proof block); tree structure not certain
-corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23G.md	skipped	<1>1 and <2>1 fused on one line ("Descent...: <2>1. Let k=..."); <2>7 embedded mid-sentence inside <2>6's proof block; trailing unnumbered "Q.E.D." with no step line; tree structure not certain
-corpus/collections/SRC-UCSD-TOP-SPRING-2025/P-TOPS25G.md	skipped	dotted hierarchical citation "<1>2.3" does not resolve: step <1>2 has no substeps, so the referenced sub-part does not exist (other dotted citations <1>4.1 and <1>4.5 do resolve); tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2013/P-VOGZ5.md	skipped	four independent parts (a)-(d); part (d)'s Q.E.D. proof cites "<1>4 (a), <1>2, <1>4 (b), <1>4 (c), <1>5 (d)" using a nonstandard cross-part lettered citation format not in the defined grammar; which steps are meant is not certain
-corpus/collections/SRC-UGA-ALG-FALL-2014/P-732VA.md	skipped	uses italic "*Proof:*" markdown labels instead of ::: {.proof} fences; no ::: fences at all inside the solution besides the outer div; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-FALL-2014/P-WCV7R.md	skipped	uses italic "*Proof:*" markdown labels instead of ::: {.proof} fences; no ::: fences at all inside the solution besides the outer div; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-FALL-2015/P-65GIR.md	skipped	<2>n substep markers are nested INSIDE the parent step's own ::: {.proof} fence (with unnumbered dash sub-bullets mixed in), inverted from the standard step-then-proof pattern; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2015/P-LW3KB.md	skipped	same broken pattern as P-65GIR: <2>n substep markers nested inside the parent's own ::: {.proof} fence with unnumbered dash sub-bullets; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2015/P-TX3CN.md	skipped	same broken pattern as P-65GIR: <2>n substep markers nested inside the parent's own ::: {.proof} fence; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2015/P-XFXYS.md	skipped	same broken pattern as P-65GIR: <2>n substep markers nested inside the parent's own ::: {.proof} fence, with unnumbered dash sub-bullets and a dotted citation <1>1 inside that nested block; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2017/P-DXHST.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-FALL-2017/P-IKJXT.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
+corpus/collections/SRC-UCSD-TOP-SPRING-2010/P-TOPS10E.md	converted	
+corpus/collections/SRC-UCSD-TOP-SPRING-2023/P-TOPS23G.md	converted	
+corpus/collections/SRC-UCSD-TOP-SPRING-2025/P-TOPS25G.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2013/P-VOGZ5.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2014/P-732VA.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2014/P-WCV7R.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2015/P-65GIR.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2015/P-LW3KB.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2015/P-TX3CN.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2015/P-XFXYS.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2017/P-DXHST.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2017/P-IKJXT.md	converted	

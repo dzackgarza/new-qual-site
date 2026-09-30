@@ -89,13 +89,13 @@ corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2015-p-13/P-NRCTX.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT43.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT44.md	converted	
-corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT45.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT45.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-8XT46.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2017-p-9/P-WMJZB.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-7QJS2.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8RA17.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8XT20.md	converted	
-corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8XT21.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-8XT21.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-PAQ4K.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-PCOHF.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-in-analysis-september-4-2019-9am-12noon-pp-1-2/P-RGBUN.md	converted	
@@ -107,7 +107,7 @@ corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-8XT42.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-EA67C.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-spring-2016-analysis-p-11/P-KA5KL.md	converted	
-corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAD.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAD.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2001-pp-53-54/P-JHUFA01RAE.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAA.md	converted	
 corpus/collections/SRC-JHU-ANALYSIS-EXAMS/real-analysis-qualifying-exam-fall-2002/P-JHUFA02CAC.md	converted	
@@ -175,20 +175,20 @@ corpus/collections/SRC-MAT367-DIFFGEOM-2017/E-MAT367-19.md	converted
 corpus/collections/SRC-MAT367-DIFFGEOM-2017/E-MAT367-20.md	converted	
 corpus/collections/SRC-MAT367-DIFFGEOM-2017/E-MAT367-21.md	converted	
 corpus/collections/SRC-MAT367-DIFFGEOM-2017/E-MAT367-22.md	converted	
-corpus/collections/SRC-MATH8100-ASSIGNMENT-1/P-M81A1-3.md	skipped	step markers (<2>7, <2>3, <2>4, <2>6) embedded mid-paragraph inside proof blocks in all 3 parts; tree not decidable
-corpus/collections/SRC-MATH8100-ASSIGNMENT-8/P-M81A8-1.md	skipped	step <2>6 embedded mid-paragraph inside <2>5's proof block; misplaced bare Q.E.D. after closing fence; tree not decidable
-corpus/collections/SRC-NUS-CA-1970-SPRING/P-BCFIC.md	skipped	step <2>5 (with substantial math content) embedded mid-paragraph after <2>4's proof line; tree not decidable
-corpus/collections/SRC-NUS-CA-1970-SPRING/P-MMAQ-S7C4CCIUTP.md	skipped	step <2>3 (with substantial math content) embedded mid-paragraph after <2>2's proof line; tree not decidable
-corpus/collections/SRC-NUS-CA-1970-SPRING/P-MMAQ-WPHHQBXBQ3.md	skipped	step <2>2 (final integral value, substantial content) embedded mid-paragraph in <1>5's proof line; tree not decidable
-corpus/collections/SRC-NUS-CA-1970-SPRING/P-MMAQ-YUXDCVQRF5.md	skipped	step <2>4 (substantial content) embedded mid-paragraph after <2>3's proof line; tree not decidable
-corpus/collections/SRC-NUS-RA-1970-SPRING/P-Y3TRT.md	pending	script refused: step number 3 where 1 was expected; partly converted; finish it
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.1.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.2.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-MATH8100-ASSIGNMENT-1/P-M81A1-3.md	converted	
+corpus/collections/SRC-MATH8100-ASSIGNMENT-8/P-M81A8-1.md	converted	
+corpus/collections/SRC-NUS-CA-1970-SPRING/P-BCFIC.md	converted	
+corpus/collections/SRC-NUS-CA-1970-SPRING/P-MMAQ-S7C4CCIUTP.md	converted	
+corpus/collections/SRC-NUS-CA-1970-SPRING/P-MMAQ-WPHHQBXBQ3.md	converted	
+corpus/collections/SRC-NUS-CA-1970-SPRING/P-MMAQ-YUXDCVQRF5.md	converted	
+corpus/collections/SRC-NUS-RA-1970-SPRING/P-Y3TRT.md	converted	
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.1.md	converted	
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.2.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.3.md	converted	
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.4.md	pending	script refused: typed marker or citation left in prose
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.5.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.4.md	converted	
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.5.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.6.md	converted	
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.7.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-1.7.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-10.1.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-10.2.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-10.3.md	converted	
@@ -212,7 +212,7 @@ corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-15.4.md	converte
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-15.5.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-15.6.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-15.7.md	converted	
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-15.8.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-15.8.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-15.9.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-16.1.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-16.2.md	converted	
@@ -235,12 +235,12 @@ corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-24.4.md	converte
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-26.1.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-26.4.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-3.1.md	converted	
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-3.2.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-3.2.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-3.3.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-3.4.md	converted	
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-3.5.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-3.5.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-4.1.md	converted	
-corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-4.2.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-4.2.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-4.3.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-5.1.md	converted	
 corpus/collections/SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008/E-PER08-5.2.md	converted	

@@ -28,20 +28,20 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05D.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05E.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05F.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05G.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05H.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05H.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05I.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05J.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05K.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05L.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05L.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2005/P-ALGS05M.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06A.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06B.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06C.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06C.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06D.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06E.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06F.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06G.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06H.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06H.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2006/P-ALGS06I.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2007/P-ALGS07A.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2007/P-ALGS07B.md	converted	
@@ -61,7 +61,7 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09A.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09C.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09D.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09E.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09E.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09F.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09G.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/algebra/P-ALGS09H.md	converted	
@@ -69,8 +69,8 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09A.md	conver
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09C.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09D.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09E.md	pending	script refused: step number 1 where 4 was expected
-corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09F.md	pending	script refused: step number 1 where 4 was expected
+corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09E.md	converted	
+corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09F.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09G.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2009/applied-algebra/P-APASP09H.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2011/P-ALGS11A.md	converted	
@@ -82,7 +82,7 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2011/P-ALGS11F.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2011/P-ALGS11G.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2011/P-ALGS11H.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2012/P-ALGS12A.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2012/P-ALGS12B.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-ALG-SPRING-2012/P-ALGS12B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2012/P-ALGS12C.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2012/P-ALGS12D.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2012/P-ALGS12E.md	converted	
@@ -92,8 +92,8 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13A.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13C.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13D.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13E.md	pending	script refused: step number 1 where 6 was expected
-corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13F.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13E.md	converted	
+corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13F.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13G.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2013/P-ALGS13H.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2014/P-ALGS14A.md	converted	
@@ -105,8 +105,8 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2014/P-ALGS14F.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2014/P-ALGS14G.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2014/P-ALGS14H.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15A.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15B.md	pending	script refused: step number 1 where 5 was expected
-corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15C.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15B.md	converted	
+corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15C.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15D.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15E.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15F.md	converted	
@@ -115,12 +115,12 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2015/P-ALGS15H.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16A.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16C.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16D.md	pending	script refused: step number 1 where 2 was expected
+corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16D.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16E.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16F.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16G.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16H.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16I.md	pending	script refused: citation range across levels
+corpus/collections/SRC-UCSD-ALG-SPRING-2016/P-ALGS16I.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2017/P-ALGS17A.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2017/P-ALGS17B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2017/P-ALGS17C.md	converted	
@@ -132,9 +132,9 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18A.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18C.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18D.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18E.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18E.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18F.md	converted	
-corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18G.md	pending	script refused: step number 1 where 5 was expected
+corpus/collections/SRC-UCSD-ALG-SPRING-2018/P-ALGS18G.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2019/P-ALGS19A.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2019/P-ALGS19B.md	converted	
 corpus/collections/SRC-UCSD-ALG-SPRING-2019/P-ALGS19C.md	converted	
@@ -194,7 +194,7 @@ corpus/collections/SRC-UCSD-ALG-SPRING-2026/P-ALGS26F.md	converted
 corpus/collections/SRC-UCSD-ALG-SPRING-2026/P-ALGS26G.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2004/P-APAF04A.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2004/P-APAF04B.md	converted	
-corpus/collections/SRC-UCSD-APALG-FALL-2004/P-APAF04D.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-APALG-FALL-2004/P-APAF04D.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2004/P-APAF04E.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2004/P-APAF04F.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2004/P-APAS04C.md	converted	
@@ -211,10 +211,10 @@ corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAF11C.md	converted
 corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAF11E.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAF11F.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAF11G.md	converted	
-corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAF11H.md	pending	script refused: step number 1 where 6 was expected
+corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAF11H.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAF11I.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2011/P-APAS04N.md	converted	
-corpus/collections/SRC-UCSD-APALG-FALL-2017/P-APAF17A.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-APALG-FALL-2017/P-APAF17A.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2017/P-APAF17B.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2017/P-APAF17C.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2017/P-APAF17D.md	converted	
@@ -226,32 +226,32 @@ corpus/collections/SRC-UCSD-APALG-FALL-2018/P-APAF18A.md	converted
 corpus/collections/SRC-UCSD-APALG-FALL-2018/P-APAF18B.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2018/P-APAF18C.md	converted	
 corpus/collections/SRC-UCSD-APALG-FALL-2018/P-APAF18D.md	converted	
-corpus/collections/SRC-UCSD-APALG-FALL-2018/P-APAF18E.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-APALG-FALL-2024/P-APA24C.md	skipped	card has 7 duplicate ::: {.solution} blocks; block 2 has no typed steps and block 3 is missing its closing ::: fence (pre-existing div-nesting defect), so safe uniform conversion is not possible
+corpus/collections/SRC-UCSD-APALG-FALL-2018/P-APAF18E.md	converted	
+corpus/collections/SRC-UCSD-APALG-FALL-2024/P-APA24C.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2015/P-APAS15E.md	converted	
-corpus/collections/SRC-UCSD-APALG-SPRING-2015/P-APAS15F.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-APALG-SPRING-2015/P-APAS15F.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2015/P-APAS15G.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2017/P-APA17C.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2017/P-APA17G.md	converted	
-corpus/collections/SRC-UCSD-APALG-SPRING-2017/P-APA17H.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCSD-APALG-SPRING-2017/P-APA17H.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18A.md	converted	
-corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18F.md	pending	script refused: dotted step citation
-corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18H.md	pending	script refused: step number 1 where 5 was expected
+corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18F.md	converted	
+corpus/collections/SRC-UCSD-APALG-SPRING-2018/P-APAS18H.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2020/P-APAS20C.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2021/P-APAS21G.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2022/P-APA22C.md	converted	
-corpus/collections/SRC-UCSD-APALG-SPRING-2022/P-APA22F.md	pending	script refused: step number 1 where 6 was expected
+corpus/collections/SRC-UCSD-APALG-SPRING-2022/P-APA22F.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2022/P-APA22H.md	converted	
-corpus/collections/SRC-UCSD-APALG-SPRING-2023/P-APAS23C.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-APALG-SPRING-2023/P-APAS23C.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2024/P-APAS24I.md	converted	
-corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26B.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26E.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26F.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26B.md	converted	
+corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26E.md	converted	
+corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26F.md	converted	
 corpus/collections/SRC-UCSD-APALG-SPRING-2026/P-APAS26H.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2006/P-CAF06B.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2008/P-CAF08B.md	converted	
-corpus/collections/SRC-UCSD-CA-FALL-2009/P-CASP09E.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UCSD-CA-FALL-2009/P-CASP09E.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2011/P-CAF11B.md	converted	
-corpus/collections/SRC-UCSD-CA-FALL-2013/P-CAF13D.md	pending	script refused: step number 3 where 2 was expected
-corpus/collections/SRC-UCSD-CA-FALL-2013/P-CAF13I.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UCSD-CA-FALL-2013/P-CAF13D.md	converted	
+corpus/collections/SRC-UCSD-CA-FALL-2013/P-CAF13I.md	converted	
 corpus/collections/SRC-UCSD-CA-FALL-2016/P-CAFA16E.md	converted	

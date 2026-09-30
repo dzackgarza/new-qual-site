@@ -41,19 +41,19 @@ corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS01.md	converted
 corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS02.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2005/P-8TS03.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2005/P-E247B.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2005/P-FZIG3.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-TOP-SPRING-2005/P-FZIG3.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2005/P-LLCQX.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2005/P-RZFB4.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-26UEL.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-3H47Q.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-6XN3Z.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2006/P-7CYRD.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-TOP-SPRING-2006/P-7CYRD.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-8TS04.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-HXZYI.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-KM7Z4.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-OIH2N.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2006/P-VAJSW.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2007/P-3AKX2.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UGA-TOP-SPRING-2007/P-3AKX2.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2007/P-5JYOH.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2007/P-8TS05.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2007/P-8TS06.md	converted	
@@ -70,7 +70,7 @@ corpus/collections/SRC-UGA-TOP-SPRING-2008/P-YVYGB.md	converted
 corpus/collections/SRC-UGA-TOP-SPRING-2009/P-8TS09.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2009/P-8TS10.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2009/P-HBECH.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2009/P-L3BUX.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UGA-TOP-SPRING-2009/P-L3BUX.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2009/P-MCG5C.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2009/P-ZPH3J.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2010/P-2JRWF.md	converted	
@@ -78,7 +78,7 @@ corpus/collections/SRC-UGA-TOP-SPRING-2010/P-8TS11.md	converted
 corpus/collections/SRC-UGA-TOP-SPRING-2010/P-8TS12.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2010/P-8TS13.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2010/P-8TS14.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2010/P-MHQ6A.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-TOP-SPRING-2010/P-MHQ6A.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2010/P-S10I3.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2010/P-URS24.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2011/P-8TS15.md	converted	
@@ -100,7 +100,7 @@ corpus/collections/SRC-UGA-TOP-SPRING-2012/P-LMVF6.md	converted
 corpus/collections/SRC-UGA-TOP-SPRING-2013/P-3DTFZ.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2013/P-7PCEH.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2013/P-8TS20.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2013/P-8TS21.md	pending	script refused: step number 1 where 2 was expected
+corpus/collections/SRC-UGA-TOP-SPRING-2013/P-8TS21.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2013/P-8TS22.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2013/P-DLXGE.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2013/P-EOZ7B.md	converted	
@@ -115,7 +115,7 @@ corpus/collections/SRC-UGA-TOP-SPRING-2014/P-YTOUD.md	converted
 corpus/collections/SRC-UGA-TOP-SPRING-2015/P-22GH7.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2015/P-43KOX.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2015/P-72DG6.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2015/P-OKDFC.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-TOP-SPRING-2015/P-OKDFC.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2015/P-RIW3S.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2015/P-V45QY.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2015/P-Z74QX.md	converted	
@@ -146,8 +146,8 @@ corpus/collections/SRC-UGA-TOP-SPRING-2019/P-5JTV2.md	converted
 corpus/collections/SRC-UGA-TOP-SPRING-2019/P-G57K4.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2019/P-H42KM.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2019/P-KVMKV.md	converted	
-corpus/collections/SRC-UGA-TOP-SPRING-2019/P-LSJ7W.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-TOP-SPRING-2019/P-PATOJ.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-TOP-SPRING-2019/P-LSJ7W.md	converted	
+corpus/collections/SRC-UGA-TOP-SPRING-2019/P-PATOJ.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2019/P-R7EFJ.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2019/P-X6IHG.md	converted	
 corpus/collections/SRC-UGA-TOP-SPRING-2021/P-2CN7G.md	converted	
@@ -160,19 +160,19 @@ corpus/collections/SRC-UGA-TOP-SPRING-2021/P-P6A3Q.md	converted
 corpus/collections/SRC-UNL-RA-SPRING-2019/P-BKCZH.md	converted	
 corpus/collections/SRC-UNL-RA-SPRING-2019/P-RA19J1.md	converted	
 corpus/collections/SRC-UNL-RA-SPRING-2019/P-RA19J2.md	converted	
-corpus/collections/SRC-UNL-RA-SPRING-2019/P-RA19J5.md	pending	script refused: unclosed div
-corpus/collections/SRC-UNL-RA-SPRING-2019/P-RA19J6.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UNL-RA-SPRING-2019/P-RA19J5.md	converted	
+corpus/collections/SRC-UNL-RA-SPRING-2019/P-RA19J6.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2016/P-6LWY3.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2016/P-BDFPC.md	converted	
-corpus/collections/SRC-UNL-RA-SUMMER-2016/P-CWJBS.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UNL-RA-SUMMER-2016/P-CWJBS.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2016/P-DQQUE.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2016/P-FPWLY.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2016/P-XEEUX.md	converted	
-corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M1.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M1.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M2.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M3.md	converted	
-corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M4.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M5.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M4.md	converted	
+corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M5.md	converted	
 corpus/collections/SRC-UNL-RA-SUMMER-2018/P-RA18M6.md	converted	
 corpus/collections/SRC-UW-ALG-2005/P-MMAQ-BFNULVNWCY.md	converted	
 corpus/collections/SRC-UW-ALG-2005/P-MMAQ-CAEXKRPGEP.md	converted	
@@ -180,7 +180,7 @@ corpus/collections/SRC-UW-ALG-2005/P-MMAQ-F2ZJO265HN.md	converted
 corpus/collections/SRC-UW-ALG-2005/P-MMAQ-L3WFQPKGP5.md	converted	
 corpus/collections/SRC-UW-ALG-2005/P-MMAQ-N34EA7FB6T.md	converted	
 corpus/collections/SRC-UW-ALG-2005/P-MMAQ-WBJMPR2DHX.md	converted	
-corpus/collections/SRC-UW-ALG-2005/P-Z6IW6.md	pending	script refused: step number 4 where 1 was expected
+corpus/collections/SRC-UW-ALG-2005/P-Z6IW6.md	converted	
 corpus/collections/SRC-UW-ALG-2006/P-CTBJD.md	converted	
 corpus/collections/SRC-UW-ALG-2006/P-IH6FO.md	converted	
 corpus/collections/SRC-UW-ALG-2006/P-MMAQ-FJ4DDF5GZK.md	converted	
@@ -189,22 +189,22 @@ corpus/collections/SRC-UW-ALG-2006/P-Q5N2X.md	converted
 corpus/collections/SRC-UW-ALG-2007/P-GZX6P.md	converted	
 corpus/collections/SRC-UW-ALG-2007/P-MMAQ-2E54Q6DNML.md	converted	
 corpus/collections/SRC-UW-ALG-2007/P-MMAQ-PY65OT2X3L.md	converted	
-corpus/collections/SRC-UW-ALG-2008/P-FF2O5.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UW-ALG-2008/P-FF2O5.md	converted	
 corpus/collections/SRC-UW-ALG-2008/P-MMAQ-5EFTFEKRDI.md	converted	
-corpus/collections/SRC-UW-ALG-2008/P-MMAQ-KGHDXFTO6Z.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UW-ALG-2008/P-MMAQ-KGHDXFTO6Z.md	converted	
 corpus/collections/SRC-UW-ALG-2008/P-MMAQ-NCN7KYH27J.md	converted	
 corpus/collections/SRC-UW-ALG-2008/P-PLFQZ.md	converted	
 corpus/collections/SRC-UW-ALG-2009/P-E6DTF.md	converted	
-corpus/collections/SRC-UW-ALG-2009/P-JXIIG.md	pending	script refused: step number 4 where 1 was expected
-corpus/collections/SRC-UW-ALG-2009/P-LZVDM.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UW-ALG-2009/P-JXIIG.md	converted	
+corpus/collections/SRC-UW-ALG-2009/P-LZVDM.md	converted	
 corpus/collections/SRC-UW-ALG-2009/P-MMAQ-AYM7VHT2LA.md	converted	
 corpus/collections/SRC-UW-ALG-2009/P-MMAQ-OXWRG3VWFJ.md	converted	
 corpus/collections/SRC-UW-ALG-2009/P-TRSVD.md	converted	
 corpus/collections/SRC-UW-ALG-2010/P-MMAQ-6GE2BXA773.md	converted	
 corpus/collections/SRC-UW-ALG-2010/P-MMAQ-NMHZVYS2AS.md	converted	
 corpus/collections/SRC-UW-ALG-2010/P-MMAQ-ONXNRKJ737.md	converted	
-corpus/collections/SRC-UW-ALG-2010/P-MMAQ-PTGAAH4QQF.md	pending	script refused: step number 5 where 1 was expected
-corpus/collections/SRC-UW-ALG-2010/P-MMAQ-YUGGSYZGIM.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UW-ALG-2010/P-MMAQ-PTGAAH4QQF.md	converted	
+corpus/collections/SRC-UW-ALG-2010/P-MMAQ-YUGGSYZGIM.md	converted	
 corpus/collections/SRC-UW-ALG-2011/P-MMAQ-AIKDLY3MJC.md	converted	
 corpus/collections/SRC-UW-ALG-2011/P-MMAQ-CYOVTO7I2K.md	converted	
 corpus/collections/SRC-UW-ALG-2011/P-MMAQ-OSVOY6VRAB.md	converted	
@@ -215,29 +215,29 @@ corpus/collections/SRC-UW-ALG-2012/P-4RQ6K.md	converted
 corpus/collections/SRC-UW-ALG-2012/P-5EHW6.md	converted	
 corpus/collections/SRC-UW-ALG-2012/P-MMAQ-2ERSIB6V43.md	converted	
 corpus/collections/SRC-UW-ALG-2012/P-MMAQ-6DSHSTLKLP.md	converted	
-corpus/collections/SRC-UW-ALG-2013/P-QYKXK.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UW-ALG-2013/P-QYKXK.md	converted	
 corpus/collections/SRC-UW-ALG-2013/P-TKNYL.md	converted	
-corpus/collections/SRC-UW-ALG-2013/P-UIHJF.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UW-ALG-2013/P-UIHJF.md	converted	
 corpus/collections/SRC-UW-ALG-2013/P-VISUT.md	converted	
-corpus/collections/SRC-UW-ALG-2014/P-MMAQ-5FZWFKZKJ6.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UW-ALG-2014/P-MMAQ-5FZWFKZKJ6.md	converted	
 corpus/collections/SRC-UW-ALG-2014/P-MMAQ-5TRAOGBWCB.md	converted	
 corpus/collections/SRC-UW-ALG-2014/P-MMAQ-CAKXSUJ3LN.md	converted	
 corpus/collections/SRC-UW-ALG-2014/P-MMAQ-ENQNQKRU6T.md	converted	
 corpus/collections/SRC-UW-ALG-2014/P-MMAQ-JCG7I3RIX7.md	converted	
 corpus/collections/SRC-UW-ALG-2014/P-MMAQ-TBOFU3T6VV.md	converted	
-corpus/collections/SRC-UW-ALG-2014/P-OND3F.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UW-ALG-2014/P-OND3F.md	converted	
 corpus/collections/SRC-UW-ALG-2015/P-AZKKJ.md	converted	
 corpus/collections/SRC-UW-ALG-2015/P-EQE3U.md	converted	
-corpus/collections/SRC-UW-ALG-2015/P-MMAQ-FN3KU63N7K.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UW-ALG-2015/P-MMAQ-FN3KU63N7K.md	converted	
 corpus/collections/SRC-UW-ALG-2015/P-MMAQ-RI5DR4YG7C.md	converted	
 corpus/collections/SRC-UW-ALG-2015/P-MZLQ3.md	converted	
 corpus/collections/SRC-UW-ALG-2015/P-SJ47O.md	converted	
-corpus/collections/SRC-UW-ALG-2015/P-ZCQLF.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UW-ALG-2015/P-ZCQLF.md	converted	
 corpus/collections/SRC-UW-ALG-2016/P-MMAQ-4NMAR4LSEK.md	converted	
-corpus/collections/SRC-UW-ALG-2016/P-MMAQ-AWWA4FOL2L.md	pending	script refused: step number 6 where 1 was expected
+corpus/collections/SRC-UW-ALG-2016/P-MMAQ-AWWA4FOL2L.md	converted	
 corpus/collections/SRC-UW-ALG-2016/P-MMAQ-G2X5HB5VJS.md	converted	
-corpus/collections/SRC-UW-ALG-2016/P-QQLLL.md	pending	script refused: step number 5 where 1 was expected
-corpus/collections/SRC-UW-ALG-2016/P-VIFYJ.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UW-ALG-2016/P-QQLLL.md	converted	
+corpus/collections/SRC-UW-ALG-2016/P-VIFYJ.md	converted	
 corpus/collections/SRC-UW-ALG-2017/P-MMAQ-P35KHOGFWR.md	converted	
 corpus/collections/SRC-WESLEYAN-RA-2006/P-WESRA06-1.md	converted	
 corpus/collections/SRC-WESLEYAN-RA-2006/P-WESRA06-2.md	converted	

@@ -50,7 +50,7 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
 
 - **`lamport-conversion`**. **Needs:** none.
   A proof written with typed step numbers (`<1>2.`) violates `STYLE-08`. Convert every such proof to the syntax of pandoc-config's `lamport_proof.lua` filter. This is a syntax conversion: no mathematics and no prose changes.
-  On 2026-09-29 agents converted 1,808 cards and a one-time script converted 4,579 more. The script refused a card whose structure it could not read unambiguously, and it wrote a card only when every source word survived and the filter accepted the result. 449 refused cards and 96 cards an agent skipped remain.
+  On 2026-09-29 agents converted 1,808 cards and a one-time script converted 4,579 more. The script refused a card whose structure it could not read unambiguously, and it wrote a card only when every source word survived and the filter accepted the result. On 2026-09-30 agents converted the 449 refused and 96 skipped cards, and no typed step remains; every batch row is `converted`. A word check of those cards against their text before the conversion, and a fence count over the corpus, found lost claims and 220 cards with an unclosed section; both are repaired. Close step 1 is next.
 
   **Batches.** The batch files `queues/lamport-conversion/batch-00.tsv` through `batch-19.tsv` list every card in path order. A `pending` row's note gives the script's refusal reason; read the card with that reason in mind.
   Each row is `path<TAB>status<TAB>note`. The status is one of:

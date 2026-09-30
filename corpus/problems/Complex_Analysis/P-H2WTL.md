@@ -91,9 +91,6 @@ Combining the two cases step [](#case-n-minus-1){.pf-ref} and step [](#case-n-no
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -163,9 +160,6 @@ Combining the case $n \neq -1$ (step [](#case-n-not-minus-1-part2){.pf-ref}) and
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -195,9 +189,6 @@ Thus: $$\int_\gamma \frac{dz}{(z-a)(z-b)} = \frac{1}{a-b} \left( \int_\gamma \fr
 The integral is linear, so it distributes over the difference of the two terms.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::
@@ -236,9 +227,6 @@ By Part 1, $\int_\gamma z^{-1}\,dz = 2\pi i$ and $\int_\gamma z^{-m}\,dz = 0$ fo
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -275,9 +263,6 @@ By Part 1, $\int_\gamma z^k\,dz = 0$ for all $k \ge 0$; uniform convergence just
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -294,9 +279,6 @@ Substituting step [](#integral-z-minus-a){.pf-ref} and step [](#integral-z-minus
 Substituting the two evaluated integrals into the partial-fraction expression gives $\frac{1}{a-b}(2\pi i - 0) = \frac{2\pi i}{a-b}$.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::

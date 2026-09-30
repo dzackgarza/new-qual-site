@@ -125,7 +125,7 @@ corpus/problems/Algebra/P-FKTPQ.md	converted
 corpus/problems/Algebra/P-FN7H4.md	converted	
 corpus/problems/Algebra/P-FNSLB.md	converted	
 corpus/problems/Algebra/P-FOP4D.md	converted	
-corpus/problems/Algebra/P-FX46W.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/problems/Algebra/P-FX46W.md	converted	
 corpus/problems/Algebra/P-FZZWT.md	converted	
 corpus/problems/Algebra/P-G2KO6.md	converted	
 corpus/problems/Algebra/P-G3BXN.md	converted	
@@ -176,7 +176,7 @@ corpus/problems/Algebra/P-KDJFP.md	converted
 corpus/problems/Algebra/P-KGF7Z.md	converted	
 corpus/problems/Algebra/P-KHVM6.md	converted	
 corpus/problems/Algebra/P-KJAD3.md	converted	
-corpus/problems/Algebra/P-KM66S.md	pending	script refused: prose at a level boundary
+corpus/problems/Algebra/P-KM66S.md	converted	
 corpus/problems/Algebra/P-KPEPM.md	converted	
 corpus/problems/Algebra/P-KSSA7.md	converted	
 corpus/problems/Algebra/P-KXSW3.md	converted	
@@ -197,7 +197,7 @@ corpus/problems/Algebra/P-OTS37.md	converted
 corpus/problems/Algebra/P-P4KA6.md	converted	
 corpus/problems/Algebra/P-PCLDH.md	converted	
 corpus/problems/Algebra/P-PE7IZ.md	converted	
-corpus/problems/Algebra/P-PF5MC.md	pending	script refused: prose after substeps inside a proof
+corpus/problems/Algebra/P-PF5MC.md	converted	
 corpus/problems/Algebra/P-PFUVL.md	converted	
 corpus/problems/Algebra/P-PS4CG.md	converted	
 corpus/problems/Algebra/P-PS4ZH.md	converted	
@@ -209,7 +209,7 @@ corpus/problems/Algebra/P-QSHZ6.md	converted
 corpus/problems/Algebra/P-QWP3H.md	converted	
 corpus/problems/Algebra/P-RAZEV.md	converted	
 corpus/problems/Algebra/P-REKYU.md	converted	
-corpus/problems/Algebra/P-RHOWY.md	pending	script refused: step number 2 where 1 was expected
+corpus/problems/Algebra/P-RHOWY.md	converted	
 corpus/problems/Algebra/P-RI3ZA.md	converted	
 corpus/problems/Algebra/P-RI6SK.md	converted	
 corpus/problems/Algebra/P-RILUB.md	converted	
@@ -217,23 +217,23 @@ corpus/problems/Algebra/P-ROLXZ.md	converted
 corpus/problems/Algebra/P-RVASU.md	converted	
 corpus/problems/Algebra/P-S5JSR.md	converted	
 corpus/problems/Algebra/P-SPA3I.md	converted	
-corpus/problems/Algebra/P-T6YA3.md	pending	script refused: step number 2 where 1 was expected
+corpus/problems/Algebra/P-T6YA3.md	converted	
 corpus/problems/Algebra/P-TA426.md	converted	
 corpus/problems/Algebra/P-TO7DK.md	converted	
 corpus/problems/Algebra/P-TS2IM.md	converted	
 corpus/problems/Algebra/P-UMKJ4.md	converted	
 corpus/problems/Algebra/P-USAQT.md	converted	
 corpus/problems/Algebra/P-USPU6.md	converted	
-corpus/problems/Algebra/P-V3DIZ.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Algebra/P-V3DIZ.md	converted	
 corpus/problems/Algebra/P-WAH54.md	converted	
 corpus/problems/Algebra/P-WBK5B.md	converted	
 corpus/problems/Algebra/P-WVWEP.md	converted	
 corpus/problems/Algebra/P-X3QFP.md	converted	
 corpus/problems/Algebra/P-XIB32.md	converted	
-corpus/problems/Algebra/P-XODFX.md	pending	script refused: second proof block or proof after substeps
+corpus/problems/Algebra/P-XODFX.md	converted	
 corpus/problems/Algebra/P-XZRST.md	converted	
 corpus/problems/Algebra/P-YCLOT.md	converted	
-corpus/problems/Algebra/P-YCRKO.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/problems/Algebra/P-YCRKO.md	converted	
 corpus/problems/Algebra/P-YKB6A.md	converted	
 corpus/problems/Algebra/P-YSL2C.md	converted	
 corpus/problems/Algebra/P-ZBTCU.md	converted	
@@ -250,8 +250,8 @@ corpus/problems/Complex_Analysis/E-3KD4O.md	converted
 corpus/problems/Complex_Analysis/E-3M6WZ.md	converted	
 corpus/problems/Complex_Analysis/E-4WFQM.md	converted	
 corpus/problems/Complex_Analysis/E-5AKU5.md	converted	
-corpus/problems/Complex_Analysis/P-3YESG.md	skipped	final Q.E.D. step's own text cites "<1>4-<1>5" (a range including itself); pf-qed fences cannot carry an id per spec, so the self-citation has no valid target and no licensed word to paraphrase it; left byte-for-byte unchanged
+corpus/problems/Complex_Analysis/P-3YESG.md	converted	
 corpus/problems/Complex_Analysis/P-NC5CZ.md	converted	
-corpus/problems/Complex_Analysis/P-NL22Q.md	pending	script refused: dotted step citation
+corpus/problems/Complex_Analysis/P-NL22Q.md	converted	
 corpus/problems/Complex_Analysis/P-NVJN5.md	converted	
 corpus/problems/Complex_Analysis/P-OASVA.md	converted	

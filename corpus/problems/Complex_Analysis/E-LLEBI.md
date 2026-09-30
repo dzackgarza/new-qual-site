@@ -75,9 +75,6 @@ $g \colon \mathbb{D} \to \mathbb{D}$ is holomorphic with $g(0) = 0$, so the Schw
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -103,9 +100,6 @@ Define $w = g(z)$, which satisfies $|w| \leq |z| < 1$.
 By step [](#schwarz-bound-g){.pf-ref}, $|g(z)| \le |z|$, and $|z| < 1$ since $z \in \mathbb{D}$.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::
@@ -146,9 +140,6 @@ Combining the bounds for numerator and denominator: $$|f(z)| = \frac{|a - w|}{|1
 The numerator is at most $|a| + |z|$ and the positive denominator is at least $1 - |a||z|$, so the quotient is at most $\frac{|a| + |z|}{1 - |a||z|}$.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::
@@ -201,9 +192,6 @@ The numerator is at least the positive quantity $|a| - |z|$ and the denominator 
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -224,9 +212,6 @@ By step [](#upper-bound-step){.pf-ref} and step [](#lower-bound-step){.pf-ref}, 
 Combining the upper bound step [](#upper-bound-value){.pf-ref} and the lower bound step [](#lower-bound-value){.pf-ref}, and substituting $a = f(0)$, gives the double inequality.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::

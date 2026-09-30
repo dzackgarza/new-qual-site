@@ -84,9 +84,6 @@ Since $g$ is holomorphic on $U \supset \overline{\mathbb{D}}$, its Taylor series
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -132,9 +129,6 @@ The binomial coefficient $\binom{n+j-1}{j-1}$ is a polynomial in $n$ of degree $
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -164,9 +158,6 @@ Factoring out the dominant term $B_n = \frac{(-1)^k A_k}{z_0^{n+k}} \frac{n^{k-1
 The $j = k$ term dominates: the lower-order terms $j < k$ contribute $O(n^{k-2})$, which is $O(1/n)$ relative to $n^{k-1}$, and the remainder $d_n = O(\rho^{-n})$ with $\rho > 1$ decays exponentially, which is subsumed by $O(1/n)$.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::
@@ -218,9 +209,6 @@ If $c_n = 0$ then the ratio would be $0$, contradicting the lower bound $1/2 > 0
 
 :::
 
-::: pf-qed
-:::
-
 :::
 
 :::
@@ -246,9 +234,6 @@ Since $\lim_{n \to \infty} \left(\frac{n}{n+1}\right)^{k-1} = 1^{k-1} = 1$, and 
 The limit of a product is the product of the limits; each factor tends to $1$, so the product tends to $z_0$.
 :::
 
-:::
-
-::: pf-qed
 :::
 
 :::

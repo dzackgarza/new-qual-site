@@ -54,7 +54,7 @@ corpus/collections/SRC-TOP-UNL-2014Q2/P-T14A4.md	converted
 corpus/collections/SRC-TOP-UNL-2014Q2/P-T14B1.md	converted	
 corpus/collections/SRC-TOP-UNL-2014Q2/P-T14B2.md	converted	
 corpus/collections/SRC-TOP-UNL-2014Q2/P-T14B3.md	converted	
-corpus/collections/SRC-TOP-UNL-2014Q2/P-T14B4.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-TOP-UNL-2014Q2/P-T14B4.md	converted	
 corpus/collections/SRC-TOP-UNL-2016Q2/P-T16A1.md	converted	
 corpus/collections/SRC-TOP-UNL-2016Q2/P-T16A2.md	converted	
 corpus/collections/SRC-TOP-UNL-2016Q2/P-T16A3.md	converted	
@@ -63,7 +63,7 @@ corpus/collections/SRC-TOP-UNL-2016Q2/P-T16B1.md	converted
 corpus/collections/SRC-TOP-UNL-2016Q2/P-T16B2.md	converted	
 corpus/collections/SRC-TOP-UNL-2016Q2/P-T16B3.md	converted	
 corpus/collections/SRC-TOP-UNL-2016Q2/P-T16B4.md	converted	
-corpus/collections/SRC-TOP-UNL-2017Q1/P-T17Q1-1.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-TOP-UNL-2017Q1/P-T17Q1-1.md	converted	
 corpus/collections/SRC-TOP-UNL-2017Q1/P-T17Q1-2.md	converted	
 corpus/collections/SRC-TOP-UNL-2017Q1/P-T17Q1-3.md	converted	
 corpus/collections/SRC-TOP-UNL-2017Q1/P-T17Q1-4.md	converted	
@@ -112,16 +112,16 @@ corpus/collections/SRC-UCLA-BASIC-FALL-2009/P-UCLAB09F-01.md	converted
 corpus/collections/SRC-UCLA-BASIC-FALL-2009/P-UCLAB09F-02.md	converted	
 corpus/collections/SRC-UCLA-BASIC-FALL-2009/P-UCLAB09F-03.md	converted	
 corpus/collections/SRC-UCLA-BASIC-FALL-2009/P-UCLAB09F-10.md	converted	
-corpus/collections/SRC-UCLA-BASIC-FALL-2009/P-UCLAB09F-11.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UCLA-BASIC-FALL-2009/P-UCLAB09F-11.md	converted	
 corpus/collections/SRC-UCLA-BASIC-FALL-2009/P-UCLAB09F-12.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2006/P-UCLAB06S-10.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2007/P-UCLAB07S-09.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2007/P-UCLAB07S-11.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2007/P-UCLAB07S-12.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2008/P-UCLAB08S-01.md	converted	
-corpus/collections/SRC-UCLA-BASIC-SPRING-2008/P-UCLAB08S-05.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UCLA-BASIC-SPRING-2008/P-UCLAB08S-05.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2008/P-UCLAB08S-09.md	converted	
-corpus/collections/SRC-UCLA-BASIC-SPRING-2008/P-UCLAB08S-12.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UCLA-BASIC-SPRING-2008/P-UCLAB08S-12.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2011/P-UCLAB11S-04.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2011/P-UCLAB11S-08.md	converted	
 corpus/collections/SRC-UCLA-BASIC-SPRING-2011/P-UCLAB11S-10.md	converted	
@@ -139,15 +139,15 @@ corpus/collections/SRC-UCLA-RA-FALL-2009/P-Q75IH.md	converted
 corpus/collections/SRC-UCLA-RA-FALL-2009/P-QSYKP.md	converted	
 corpus/collections/SRC-UCLA-RA-FALL-2009/P-RC7YY.md	converted	
 corpus/collections/SRC-UCLA-RA-FALL-2009/P-ULPU3.md	converted	
-corpus/collections/SRC-UCLA-RA-FALL-2010/P-8XT68.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCLA-RA-FALL-2010/P-8XT68.md	converted	
 corpus/collections/SRC-UCLA-RA-FALL-2010/P-8XT70.md	converted	
-corpus/collections/SRC-UCLA-RA-SPRING-2009/P-7Q5AM.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UCLA-RA-SPRING-2009/P-7Q5AM.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2009/P-8XT58.md	converted	
-corpus/collections/SRC-UCLA-RA-SPRING-2009/P-8XT59.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UCLA-RA-SPRING-2009/P-8XT59.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2009/P-8XT60.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2009/P-8XT61.md	converted	
-corpus/collections/SRC-UCLA-RA-SPRING-2009/P-8XT62.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UCLA-RA-SPRING-2009/P-C44AH.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-UCLA-RA-SPRING-2009/P-8XT62.md	converted	
+corpus/collections/SRC-UCLA-RA-SPRING-2009/P-C44AH.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2009/P-DX7WA.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2009/P-QZE53.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2010/P-8XT64.md	converted	
@@ -155,7 +155,7 @@ corpus/collections/SRC-UCLA-RA-SPRING-2010/P-8XT65.md	converted
 corpus/collections/SRC-UCLA-RA-SPRING-2010/P-8XT66.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2010/P-8XT67.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2010/P-COS2L.md	converted	
-corpus/collections/SRC-UCLA-RA-SPRING-2010/P-HHNOP.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-UCLA-RA-SPRING-2010/P-HHNOP.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2010/P-PQG5I.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2010/P-PZO5Y.md	converted	
 corpus/collections/SRC-UCLA-RA-SPRING-2010/P-S4PJP.md	converted	
@@ -214,11 +214,11 @@ corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/P-AMD-VTWAA4SS.md	converted
 corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/P-AMD-WFZJNWCF.md	converted	
 corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/P-AMD-WHQSRWTW.md	converted	
 corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/P-AMD-X6B3FWHG.md	converted	
-corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13A.md	skipped	under <1>1, step <2>5's proof block contains a garbled "<2>4. <2>6." fragment followed by two adjacent proof blocks with no clean step boundary; ambiguous mid-paragraph markers
-corpus/collections/SRC-UCSD-ALG-FALL-2018/P-ALGF18E.md	pending	script refused: step number 3 where 1 was expected; partly converted; finish it
+corpus/collections/SRC-UCSD-ALG-FALL-2013/P-ALGF13A.md	converted	
+corpus/collections/SRC-UCSD-ALG-FALL-2018/P-ALGF18E.md	converted	
 corpus/collections/SRC-UCSD-ALG-FALL-2018/P-ALGF18F.md	converted	
 corpus/collections/SRC-UCSD-ALG-FALL-2018/P-ALGF18G.md	converted	
-corpus/collections/SRC-UCSD-ALG-FALL-2019/P-ALGF19A.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UCSD-ALG-FALL-2019/P-ALGF19A.md	converted	
 corpus/collections/SRC-UCSD-ALG-FALL-2019/P-ALGF19B.md	converted	
 corpus/collections/SRC-UCSD-ALG-FALL-2019/P-ALGF19C.md	converted	
 corpus/collections/SRC-UCSD-ALG-FALL-2019/P-ALGF19D.md	converted	

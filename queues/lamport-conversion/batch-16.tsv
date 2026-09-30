@@ -1,173 +1,173 @@
-corpus/collections/SRC-UGA-ALG-FALL-2017/P-NQAQK.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2017/P-OS765.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2017/P-VGN3T.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2017/P-YMOTZ.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2017/P-ZOYZH.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2018/P-3YFNY.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2018/P-EI5VA.md	skipped	<2>n and <3>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2018/P-EVBF7.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2018/P-G263Z.md	skipped	<2>n and <3>n substep markers nested inside the parent's own ::: {.proof} fence, with a doubly-nested ::: {.proof} inside a <2>n item; same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2018/P-P3GIM.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2018/P-PKXBP.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2018/P-RZ2JV.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-CGBXN.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-ESUCT.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-OWBTK.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-P3RNI.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-UQ4GC.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-USHDW.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-VI6QM.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2019/P-XCSKB.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2021/P-GFO6Q.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2021/P-LT6QB.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-FALL-2021/P-PSRIH.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-FALL-2021/P-QCF34.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-SPRING-2013/P-3Q2XT.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-SPRING-2013/P-67U4W.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-SPRING-2013/P-6KHMF.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-SPRING-2013/P-CZVX6.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-SPRING-2013/P-TM7YV.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-SPRING-2015/P-QWEAV.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2016/P-C2FE5.md	skipped	uses italic "*Proof:*" markdown labels with <2>n substeps nested inside, not ::: {.proof} fences; source layout does not match the defined grammar
-corpus/collections/SRC-UGA-ALG-SPRING-2017/P-63TON.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2017/P-GYQLA.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2017/P-JJ62Y.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2018/P-TR6YB.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-AIXPZ.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-IZ2VD.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-L37J7.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, with doubly-nested ::: {.proof} inside a <2>n item; same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-M6W74.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-MD2U3.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-NNNLA.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-RWPK4.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2019/P-UKZE6.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, with doubly-nested ::: {.proof} inside <2>n items; same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2020/P-J5GIE.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence for parts (c),(d); same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2020/P-KOSSD.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
-corpus/collections/SRC-UGA-ALG-SPRING-2021/P-JZSN3.md	skipped	<2>n substep markers nested inside the parent's own ::: {.proof} fence, same broken pattern as P-65GIR; tree structure not certain
+corpus/collections/SRC-UGA-ALG-FALL-2017/P-NQAQK.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2017/P-OS765.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2017/P-VGN3T.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2017/P-YMOTZ.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2017/P-ZOYZH.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2018/P-3YFNY.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2018/P-EI5VA.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2018/P-EVBF7.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2018/P-G263Z.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2018/P-P3GIM.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2018/P-PKXBP.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2018/P-RZ2JV.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-CGBXN.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-ESUCT.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-OWBTK.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-P3RNI.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-UQ4GC.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-USHDW.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-VI6QM.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2019/P-XCSKB.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2021/P-GFO6Q.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2021/P-LT6QB.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2021/P-PSRIH.md	converted	
+corpus/collections/SRC-UGA-ALG-FALL-2021/P-QCF34.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2013/P-3Q2XT.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2013/P-67U4W.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2013/P-6KHMF.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2013/P-CZVX6.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2013/P-TM7YV.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2015/P-QWEAV.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2016/P-C2FE5.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2017/P-63TON.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2017/P-GYQLA.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2017/P-JJ62Y.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2018/P-TR6YB.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-AIXPZ.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-IZ2VD.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-L37J7.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-M6W74.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-MD2U3.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-NNNLA.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-RWPK4.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2019/P-UKZE6.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2020/P-J5GIE.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2020/P-KOSSD.md	converted	
+corpus/collections/SRC-UGA-ALG-SPRING-2021/P-JZSN3.md	converted	
 corpus/collections/SRC-UGA-CA-COMPILATION/P-TIE-F09-04.md	converted	
-corpus/collections/SRC-UGA-CA-COMPILATION/P-TIE-F09-12.md	pending	script refused: step number 3 where 1 was expected; partly converted; finish it
-corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA39.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UGA-CA-COMPILATION/P-TIE-F09-12.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA39.md	converted	
 corpus/collections/SRC-UGA-CA-FALL-2009/P-8CA40.md	converted	
-corpus/collections/SRC-UGA-CA-FALL-2009/P-MMAQ-FLFHFN7LEF.md	pending	script refused: heading among steps
-corpus/collections/SRC-UGA-CA-FALL-2011/P-5R3FT.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-CA-FALL-2011/P-AMD-INYGESUE.md	pending	script refused: heading among steps
-corpus/collections/SRC-UGA-CA-FALL-2011/P-TA3FG.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-CA-FALL-2011/P-ZS4IH.md	pending	script refused: dotted step citation
+corpus/collections/SRC-UGA-CA-FALL-2009/P-MMAQ-FLFHFN7LEF.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2011/P-5R3FT.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2011/P-AMD-INYGESUE.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2011/P-TA3FG.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2011/P-ZS4IH.md	converted	
 corpus/collections/SRC-UGA-CA-FALL-2015/P-4ZZYV.md	converted	
-corpus/collections/SRC-UGA-CA-FALL-2015/P-AMD-YDNWHPDM.md	pending	script refused: heading among steps
-corpus/collections/SRC-UGA-CA-FALL-2015/P-IZW2T.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UGA-CA-FALL-2015/P-YVNUD.md	pending	script refused: second proof block or proof after substeps
-corpus/collections/SRC-UGA-CA-FALL-2016/P-3AEDF.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-FALL-2015/P-AMD-YDNWHPDM.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2015/P-IZW2T.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2015/P-YVNUD.md	converted	
+corpus/collections/SRC-UGA-CA-FALL-2016/P-3AEDF.md	converted	
 corpus/collections/SRC-UGA-CA-FALL-2016/P-57CAX.md	converted	
-corpus/collections/SRC-UGA-CA-FALL-2016/P-AEWN6.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-FALL-2016/P-AEWN6.md	converted	
 corpus/collections/SRC-UGA-CA-FALL-2017/P-8CA05.md	converted	
 corpus/collections/SRC-UGA-CA-FALL-2018/P-8CA31.md	converted	
-corpus/collections/SRC-UGA-CA-FALL-2019/P-4KVTJ.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-CA-FALL-2019/P-4KVTJ.md	converted	
 corpus/collections/SRC-UGA-CA-FALL-2019/P-PMH4D.md	converted	
 corpus/collections/SRC-UGA-CA-FALL-2020/P-P47SB.md	converted	
-corpus/collections/SRC-UGA-CA-SPRING-2009/P-8CA26.md	pending	script refused: step number 1 where 6 was expected
+corpus/collections/SRC-UGA-CA-SPRING-2009/P-8CA26.md	converted	
 corpus/collections/SRC-UGA-CA-SPRING-2011/P-34ALC.md	converted	
 corpus/collections/SRC-UGA-CA-SPRING-2014/P-8CA34.md	converted	
-corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-JWY5GWNO.md	pending	script refused: heading among steps
-corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-NFZKF2XH.md	pending	script refused: heading among steps
+corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-JWY5GWNO.md	converted	
+corpus/collections/SRC-UGA-CA-SPRING-2015/P-AMD-NFZKF2XH.md	converted	
 corpus/collections/SRC-UGA-CA-SPRING-2017/P-Q7NED.md	converted	
 corpus/collections/SRC-UGA-CA-SPRING-2021/P-3WZXM.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-A12ND.md	converted	
-corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-KU6C3.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-KU6C3.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2002/P-S10CN.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03D3.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03P2.md	converted	
-corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03VW.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-NVWMC.md	pending	script refused: step number 1 where 2 was expected
+corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-F03VW.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2003/P-NVWMC.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-F05AB.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-F05PR.md	converted	
-corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-HOBOM.md	pending	script refused: second proof block or proof after substeps
-corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-LHC3M.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-HOBOM.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2005/P-LHC3M.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-F06PD.md	converted	
-corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-MW5EM.md	pending	script refused: step number 1 where 7 was expected
-corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-4PCPV.md	pending	script refused: step number 1 where 5 was expected
-corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-5YTY5.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2006/P-MW5EM.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-4PCPV.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2007/P-5YTY5.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2010/P-F10CR.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2012/P-UU43Q.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2014/P-34W2F.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-3CU65.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-5RZWO.md	converted	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-KOTV2.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-MOL6S.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-KOTV2.md	converted	
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-MOL6S.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-R7TCU.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-SLNSQ.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-TAPVD.md	converted	
-corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-TOIEK.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-FALL-2015/P-TOIEK.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-2QLBW.md	converted	
 corpus/collections/SRC-UGA-PRELIM-FALL-2017/P-CWELY.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-GB7EM.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-MFVEZ.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3A3.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3DS.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3A3.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3DS.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3LC.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3LN.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SP.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SQ.md	pending	script refused: citation <2>1 names no step
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-4STQR.md	pending	script refused: step number 1 where 2 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-FPWV6.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3LN.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SP.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2003/P-SP3SQ.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-4STQR.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-FPWV6.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04DG.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04FG.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04KT.md	pending	script refused: dotted step citation
-corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04LM.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04FG.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04KT.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04LM.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-S04SQ.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2004/P-UE5L6.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-5XCMC.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-5XCMC.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-6POHT.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-OQW4B.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05A6.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05C4.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-OQW4B.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05A6.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05C4.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05T5.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05X3.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-S05X3.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2005/P-VA72Z.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-I3UPP.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-JLPVR.md	pending	script refused: step number 4 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06CA.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06EZ.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-I3UPP.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-JLPVR.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06CA.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06EZ.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06F8.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06FN.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06G6.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06N3.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2006/P-S06Q5.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CEU5R.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CQNPO.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-OK5P3.md	pending	script refused: step number 3 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07IN.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CEU5R.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-CQNPO.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-OK5P3.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07IN.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07KR.md	converted	
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07LM.md	pending	script refused: step number 2 where 1 was expected
-corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07SP.md	pending	script refused: step number 1 where 2 was expected
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07LM.md	converted	
+corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07SP.md	converted	
 corpus/collections/SRC-UGA-PRELIM-SPRING-2007/P-S07TY.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2014/P-5QNZJ.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2014/P-5SMO5.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2014/P-AKPMF.md	converted	
-corpus/collections/SRC-UGA-RA-FALL-2014/P-KH5ZV.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2014/P-KH5ZV.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2014/P-RHDT6.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2014/P-TUGZG.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2015/P-COY2N.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2015/P-P5TFA.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2015/P-RDMYM.md	converted	
-corpus/collections/SRC-UGA-RA-FALL-2015/P-RJV7Q.md	pending	script refused: step number 3 where 1 was expected
+corpus/collections/SRC-UGA-RA-FALL-2015/P-RJV7Q.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2015/P-XHEB6.md	converted	
-corpus/collections/SRC-UGA-RA-FALL-2017/P-7UIFE.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-FALL-2017/P-CKY3L.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-FALL-2017/P-DEFYR.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-FALL-2017/P-STYWD.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2017/P-7UIFE.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2017/P-CKY3L.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2017/P-DEFYR.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2017/P-STYWD.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2017/P-UCPPT.md	converted	
-corpus/collections/SRC-UGA-RA-FALL-2018/P-3AREP.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-FALL-2018/P-5YLZS.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2018/P-3AREP.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2018/P-5YLZS.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2018/P-6HV66.md	converted	
-corpus/collections/SRC-UGA-RA-FALL-2018/P-CN673.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2018/P-CN673.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2018/P-DWFMA.md	converted	
-corpus/collections/SRC-UGA-RA-FALL-2019/P-7QVGF.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2019/P-7QVGF.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2019/P-B6S3M.md	converted	
-corpus/collections/SRC-UGA-RA-FALL-2019/P-KBH2K.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-FALL-2019/P-S2SVK.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-FALL-2019/P-X3MW2.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-FALL-2020/P-B2CWE.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-FALL-2019/P-KBH2K.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2019/P-S2SVK.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2019/P-X3MW2.md	converted	
+corpus/collections/SRC-UGA-RA-FALL-2020/P-B2CWE.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2020/P-I3DSE.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2020/P-ZWJ7K.md	converted	
 corpus/collections/SRC-UGA-RA-FALL-2021/P-4E64D.md	converted	
@@ -195,7 +195,7 @@ corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA18.md	converted
 corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA19.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA20.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2009/P-8RA21.md	converted	
-corpus/collections/SRC-UGA-RA-SPRING-2009/P-OW5VL.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-UGA-RA-SPRING-2009/P-OW5VL.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA24.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA26.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2010/P-8RA27.md	converted	
@@ -209,13 +209,13 @@ corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA34.md	converted
 corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA35.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA36.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2012/P-8RA37.md	converted	
-corpus/collections/SRC-UGA-RA-SPRING-2014/P-2HIC2.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-SPRING-2014/P-2HIC2.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2014/P-CWRU6.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2014/P-KGSPZ.md	converted	
-corpus/collections/SRC-UGA-RA-SPRING-2014/P-UMAQ5.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-SPRING-2014/P-UMAQ5.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2014/P-XUV2I.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2015/P-BH66D.md	converted	
-corpus/collections/SRC-UGA-RA-SPRING-2015/P-BH7BM.md	pending	script refused: Q.E.D. step is not last
+corpus/collections/SRC-UGA-RA-SPRING-2015/P-BH7BM.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2015/P-GXAKN.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2015/P-JP74P.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2015/P-Q7WNK.md	converted	
@@ -227,15 +227,15 @@ corpus/collections/SRC-UGA-RA-SPRING-2016/P-O5S6X.md	converted
 corpus/collections/SRC-UGA-RA-SPRING-2016/P-VXO5U.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2016/P-WWNJC.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2017/P-25AFH.md	converted	
-corpus/collections/SRC-UGA-RA-SPRING-2017/P-4RXD2.md	pending	script refused: prose after substeps inside a proof
-corpus/collections/SRC-UGA-RA-SPRING-2017/P-BXD6O.md	pending	script refused: citation <2>3 names no step
+corpus/collections/SRC-UGA-RA-SPRING-2017/P-4RXD2.md	converted	
+corpus/collections/SRC-UGA-RA-SPRING-2017/P-BXD6O.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2017/P-TPZF3.md	converted	
-corpus/collections/SRC-UGA-RA-SPRING-2018/P-6FHOE.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-RA-SPRING-2018/P-6FHOE.md	converted	
 corpus/collections/SRC-UGA-RA-SPRING-2018/P-OFICU.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2011/P-8TF22.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2011/P-8TF23.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2011/P-ETP6C.md	converted	
-corpus/collections/SRC-UGA-TOP-FALL-2011/P-HZBSC.md	pending	script refused: step number 3 where 1 was expected; partly converted; finish it
+corpus/collections/SRC-UGA-TOP-FALL-2011/P-HZBSC.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2011/P-UG5YN.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2011/P-W3HQL.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2012/P-8TF24.md	converted	
@@ -246,7 +246,7 @@ corpus/collections/SRC-UGA-TOP-FALL-2012/P-QB5KF.md	converted
 corpus/collections/SRC-UGA-TOP-FALL-2012/P-SGK4K.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2012/P-Y7C7Z.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2013/P-4DIFI.md	converted	
-corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF27.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF27.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF28.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF29.md	converted	
 corpus/collections/SRC-UGA-TOP-FALL-2013/P-8TF30.md	converted	

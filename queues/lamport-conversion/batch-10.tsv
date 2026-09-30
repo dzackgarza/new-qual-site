@@ -1,31 +1,31 @@
 corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-7.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-8.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-2/E-HK-102-9.md	converted	
-corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-1.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-1.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-10.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-11.md	converted	
-corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-12.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-12.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-13.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-2.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-3.md	converted	
 corpus/collections/SRC-TEXT-HK71/10-3/E-HK-103-4.md	converted	
-corpus/collections/SRC-TEXT-HK71/10-4/E-HK-104-2.md	skipped	<2>1 marker appears mid-paragraph right after <1>2's own marker, not on its own line: ambiguous tree structure
-corpus/collections/SRC-TEXT-HK71/2-2/E-HK-22-2.md	skipped	malformed: <2>1./<2>3. markers concatenated inside a ::: {.proof} block (line 47), plus mid-paragraph <2>1 after bold-header <1>n markers throughout
-corpus/collections/SRC-TEXT-HK71/2-3/E-HK-23-10.md	skipped	<2>1 markers appear mid-paragraph right after <1>n's own marker at lines 27, 36, 57: ambiguous tree structure
-corpus/collections/SRC-TEXT-HK71/2-3/E-HK-23-4.md	skipped	no ::: {.proof} fences anywhere; proofs marked only by plain "*Proof:*" text label over indented substeps, non-standard format, structure not certain
-corpus/collections/SRC-TEXT-HK71/2-4/E-HK-24-5.md	skipped	no ::: {.proof} fences anywhere and no "*Proof:*" label either; claim and justification bundled in one paragraph with no marker, structure not certain
-corpus/collections/SRC-TEXT-HK71/3-2/E-HK-32-12.md	skipped	mid-paragraph <2>1 after <1>n markers (lines 29,56,70) plus malformed concatenated "<1>2. <2>2." inside a proof block (line 72)
-corpus/collections/SRC-TEXT-HK71/3-2/E-HK-32-4.md	skipped	no ::: {.proof} fences anywhere; claim and justification bundled with no marker, structure not certain
-corpus/collections/SRC-TEXT-HK71/4-2/E-HK-42-3.md	skipped	no ::: {.proof} fences anywhere; proofs marked only by plain "*Proof:*" text label over indented substeps, non-standard format
-corpus/collections/SRC-TEXT-HK71/4-2/E-HK-42-9.md	skipped	substep <1>5's <2>2 has empty claim text and two disconnected ::: {.proof} blocks with orphaned display math/prose between them, structure not certain
-corpus/collections/SRC-TEXT-HK71/4-4/E-HK-44-7.md	skipped	no ::: {.proof} fences anywhere; claim and justification bundled with no marker, structure not certain
-corpus/collections/SRC-TEXT-HK71/4-5/E-HK-45-2.md	skipped	no ::: {.proof} fences anywhere; proofs marked only by plain "*Proof:*" text label over indented substeps, non-standard format
-corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-1.md	skipped	mid-paragraph <2>1 after <1>n markers (lines 38, 47): ambiguous tree structure
-corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-2.md	skipped	no ::: {.proof} fences anywhere; proofs marked only by plain "*Proof:*" text label over indented substeps, non-standard format
-corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-6.md	skipped	no ::: {.proof} fences anywhere; claim and justification bundled with no marker, structure not certain
-corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-8.md	skipped	no ::: {.proof} fences anywhere; proofs marked only by plain "*Proof:*" text label over indented substeps, non-standard format
-corpus/collections/SRC-TEXT-HK71/6-2/E-HK-62-13.md	skipped	no ::: {.proof} fences anywhere; proofs marked only by plain "*Proof:*" text label over indented substeps, non-standard format
-corpus/collections/SRC-TEXT-HK71/6-2/E-HK-62-15.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-TEXT-HK71/10-4/E-HK-104-2.md	converted	
+corpus/collections/SRC-TEXT-HK71/2-2/E-HK-22-2.md	converted	
+corpus/collections/SRC-TEXT-HK71/2-3/E-HK-23-10.md	converted	
+corpus/collections/SRC-TEXT-HK71/2-3/E-HK-23-4.md	converted	
+corpus/collections/SRC-TEXT-HK71/2-4/E-HK-24-5.md	converted	
+corpus/collections/SRC-TEXT-HK71/3-2/E-HK-32-12.md	converted	
+corpus/collections/SRC-TEXT-HK71/3-2/E-HK-32-4.md	converted	
+corpus/collections/SRC-TEXT-HK71/4-2/E-HK-42-3.md	converted	
+corpus/collections/SRC-TEXT-HK71/4-2/E-HK-42-9.md	converted	
+corpus/collections/SRC-TEXT-HK71/4-4/E-HK-44-7.md	converted	
+corpus/collections/SRC-TEXT-HK71/4-5/E-HK-45-2.md	converted	
+corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-1.md	converted	
+corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-2.md	converted	
+corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-6.md	converted	
+corpus/collections/SRC-TEXT-HK71/5-2/E-HK-52-8.md	converted	
+corpus/collections/SRC-TEXT-HK71/6-2/E-HK-62-13.md	converted	
+corpus/collections/SRC-TEXT-HK71/6-2/E-HK-62-15.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-2/E-HK-62-6.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-3/E-HK-63-1.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-3/E-HK-63-2.md	converted	
@@ -35,15 +35,15 @@ corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-11.md	converted
 corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-12.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-13.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-6.md	converted	
-corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-8.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-8.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-4/E-HK-64-9.md	converted	
-corpus/collections/SRC-TEXT-HK71/6-5/E-HK-65-1.md	pending	script refused: step number 1 where 5 was expected
+corpus/collections/SRC-TEXT-HK71/6-5/E-HK-65-1.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-5/E-HK-65-2.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-5/E-HK-65-3.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-5/E-HK-65-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-5/E-HK-65-5.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-6/E-HK-66-1.md	converted	
-corpus/collections/SRC-TEXT-HK71/6-6/E-HK-66-10.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-TEXT-HK71/6-6/E-HK-66-10.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-6/E-HK-66-11.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-6/E-HK-66-2.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-6/E-HK-66-3.md	converted	
@@ -63,13 +63,13 @@ corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-11.md	converted
 corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-12.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-14.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-2.md	converted	
-corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-4.md	pending	script refused: step number 1 where 7 was expected
+corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-5.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-6.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-8.md	converted	
 corpus/collections/SRC-TEXT-HK71/6-8/E-HK-68-9.md	converted	
 corpus/collections/SRC-TEXT-HK71/7-1/E-HK-71-1.md	converted	
-corpus/collections/SRC-TEXT-HK71/7-1/E-HK-71-3.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-HK71/7-1/E-HK-71-3.md	converted	
 corpus/collections/SRC-TEXT-HK71/7-1/E-HK-71-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/7-1/E-HK-71-5.md	converted	
 corpus/collections/SRC-TEXT-HK71/7-1/E-HK-71-6.md	converted	
@@ -111,29 +111,29 @@ corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-13.md	converted
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-14.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-15.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-16.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-17.md	pending	script refused: citation <2>4 names no step
+corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-17.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-2.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-3.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-5.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-6.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-6.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-7.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-1/E-HK-81-8.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-13.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-15.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-16.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-17.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-17.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-3.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-6.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-7.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-2/E-HK-82-9.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-1.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-1.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-10.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-11.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-12.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-2.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-3.md	pending	script refused: dotted step citation
+corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-3.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-5.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-3/E-HK-83-6.md	converted	
@@ -144,13 +144,13 @@ corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-1.md	converted
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-10.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-11.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-12.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-13.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-13.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-2.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-3.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-5.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-6.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-7.md	pending	script refused: dotted step citation
+corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-6.md	converted	
+corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-7.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-8.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-4/E-HK-84-9.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-1.md	converted	
@@ -160,14 +160,14 @@ corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-12.md	converted
 corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-14.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-2.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-3.md	converted	
-corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-4.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-5.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-6.md	converted	
 corpus/collections/SRC-TEXT-HK71/8-5/E-HK-85-8.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-1.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-2.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-3.md	converted	
-corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-4.md	pending	script refused: citation <2>3 names no step
+corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-4.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-6.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-7.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-2/E-HK-92-8.md	converted	
@@ -194,7 +194,7 @@ corpus/collections/SRC-TEXT-HK71/9-5/E-HK-95-4.md	converted
 corpus/collections/SRC-TEXT-HK71/9-5/E-HK-95-5.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-5/E-HK-95-7.md	converted	
 corpus/collections/SRC-TEXT-HK71/9-5/E-HK-95-8.md	converted	
-corpus/collections/SRC-TEXT-HK71/9-5/E-HK-95-9.md	pending	script refused: dotted step citation
+corpus/collections/SRC-TEXT-HK71/9-5/E-HK-95-9.md	converted	
 corpus/collections/SRC-TEXT-HUN74/i-6/P-PADO6.md	converted	
 corpus/collections/SRC-TEXT-HUN74/i-6/P-VMXFR.md	converted	
 corpus/collections/SRC-TEXT-HUN74/i-9/P-IK7LQ.md	converted	
@@ -238,7 +238,7 @@ corpus/collections/SRC-TEXT-HUN74/v-3/P-OVWHL.md	converted
 corpus/collections/SRC-TEXT-HUN74/v-3/P-XJXHV.md	converted	
 corpus/collections/SRC-TEXT-HUN74/v-4/P-BWT7K.md	converted	
 corpus/collections/SRC-TEXT-HUN74/v-4/P-GXQFN.md	converted	
-corpus/collections/SRC-TEXT-HUN74/v-4/P-SH5P6.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-TEXT-HUN74/v-4/P-SH5P6.md	converted	
 corpus/collections/SRC-TEXT-HUN74/v-4/P-WODYX.md	converted	
 corpus/collections/SRC-TEXT-HUN74/v-5/P-7CR65.md	converted	
 corpus/collections/SRC-TEXT-HUN74/v-5/P-B33E4.md	converted	

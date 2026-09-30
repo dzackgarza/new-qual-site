@@ -20,7 +20,7 @@ corpus/collections/SRC-TEXT-HART77/P-AGH3104ETALECOMPL.md	converted
 corpus/collections/SRC-TEXT-HART77/P-AGH3105ETALENBHD.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3106NODALCOVER.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3107MOVINGSING.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH3108CONEPENCIL.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH3108CONEPENCIL.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3109MIRACLEFLAT.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH310SUBVARIETY.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3111PUNCTAFFINE.md	converted	
@@ -29,7 +29,7 @@ corpus/collections/SRC-TEXT-HART77/P-AGH3113BERTINICONN.md	converted
 corpus/collections/SRC-TEXT-HART77/P-AGH3114CONNPRINCIPLE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3115PICFORMAL.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3116ALGEBRAIZABLE.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH3117NONALGSHEAF.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH3117NONALGSHEAF.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3118VANISHNBHD.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH311PRIMESOFLOCAL.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3121EMBDIMSEMI.md	converted	
@@ -57,37 +57,37 @@ corpus/collections/SRC-TEXT-HART77/P-AGH325LOCALSPACE.md	converted
 corpus/collections/SRC-TEXT-HART77/P-AGH326COLIMINJECTIVE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH327CIRCLE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH32BIJNOTISO.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH331REDAFFINE.md	pending	script refused: unclosed div
+corpus/collections/SRC-TEXT-HART77/P-AGH331REDAFFINE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH332COMPONENTAFFINE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH333LOCALCOH.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH334DEPTHCOH.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH335DEPTHTWOEXT.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH336QCOHINJECTIVES.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH337DELIGNE.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH337DELIGNE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH338NONNOETHFAIL.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH33LOCALRINGS.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3410INFEXT.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3411LERAYACYCLIC.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH341AFFINEMORPH.md	pending	script refused: unclosed div
+corpus/collections/SRC-TEXT-HART77/P-AGH341AFFINEMORPH.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH342CHEVALLEY.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH343PUNCTUREDPLANE.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH344REFINEMENTH1.md	pending	script refused: typed marker or citation left in prose
-corpus/collections/SRC-TEXT-HART77/P-AGH345PICH1.md	pending	script refused: unclosed div
+corpus/collections/SRC-TEXT-HART77/P-AGH344REFINEMENTH1.md	converted	
+corpus/collections/SRC-TEXT-HART77/P-AGH345PICH1.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH346SQUAREZEROPIC.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH347PLANECURVEGENUS.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH348COHDIM.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH348COHDIM.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH349TWOPLANES.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH34DUPLEISO.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3510TWISTEXACT.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH351EULERCHAR.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH352HILBPOLY.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH352HILBPOLY.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH353ARITHGENUS.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH354KGROUPHILB.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH355COMPINT.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH356QUADRICCURVES.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH356QUADRICCURVES.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH357AMPLENESS.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH358ONEDIMPROJ.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH359NONPROJ.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH359NONPROJ.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH35COMPLHYP.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH3610FINITEFLATDUAL.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH361EXTONE.md	converted	
@@ -96,7 +96,7 @@ corpus/collections/SRC-TEXT-HART77/P-AGH363EXTCOHERENT.md	converted
 corpus/collections/SRC-TEXT-HART77/P-AGH364UNIVERSALDELTA.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH365HOMDIM.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH366REGLOCALEXT.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH367AFFINEEXT.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH367AFFINEEXT.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH368KLEIMAN.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH369KGROUPLOCFREE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH36PUNCTPLANE.md	converted	
@@ -134,7 +134,7 @@ corpus/collections/SRC-TEXT-HART77/P-AGH419RRSINGULAR.md	converted
 corpus/collections/SRC-TEXT-HART77/P-AGH41RATFNDOM.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH421PNSIMPLYCONNECTED.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH422GENUSTWOMODULI.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH423DUALCURVE.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH423DUALCURVE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH424FUNNYQUARTIC.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH425HURWITZAUTOMORPHISMBOUND.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH426PUSHFORWARDDIVISORS.md	converted	
@@ -180,7 +180,7 @@ corpus/collections/SRC-TEXT-HART77/P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION.
 corpus/collections/SRC-TEXT-HART77/P-AGH452AUTOMORPHISMGROUPFINITE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH453MODULIGENUSFOUR.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH454PLANEMODELSGENUSFOUR.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH455CURVESOFGENUSFIVE.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH455CURVESOFGENUSFIVE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH456PLANEQUINTICNOG13.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH457AUTOMORPHISMSGENUSTHREE.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH45QUADSURFBIR.md	converted	
@@ -215,7 +215,7 @@ corpus/collections/SRC-TEXT-HART77/P-AGH516DIAGONAL.md	converted
 corpus/collections/SRC-TEXT-HART77/P-AGH517ALGEQUIV.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH518COHOMCLASS.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH519HODGEINDEX.md	converted	
-corpus/collections/SRC-TEXT-HART77/P-AGH51PLANECURVESING.md	pending	script refused: typed marker or citation left in prose
+corpus/collections/SRC-TEXT-HART77/P-AGH51PLANECURVESING.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH5210CANONSCROLL.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH5211VERYAMPLESECT.md	converted	
 corpus/collections/SRC-TEXT-HART77/P-AGH5212ELLRULEDAMPLE.md	converted	
@@ -251,7 +251,7 @@ corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-7.md	converted
 corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-8.md	converted	
 corpus/collections/SRC-TEXT-HAT02/1-1/E-HAT-1.1-9.md	converted	
 corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-1.md	converted	
-corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-10.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-10.md	converted	
 corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-11.md	converted	
 corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-12.md	converted	
-corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-13.md	pending	script refused: second proof block or proof after substeps
+corpus/collections/SRC-TEXT-HAT02/1-2/E-HAT-1.2-13.md	converted	

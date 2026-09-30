@@ -15,20 +15,20 @@ corpus/collections/SRC-TEXT-MUN00/17/E-7I6BT.md	converted
 corpus/collections/SRC-TEXT-MUN00/17/E-9MCHZ.md	converted	
 corpus/collections/SRC-TEXT-MUN00/17/E-BI0O0.md	converted	
 corpus/collections/SRC-TEXT-MUN00/17/E-BRPKJ.md	converted	
-corpus/collections/SRC-TEXT-MUN00/25/E-QJXDP.md	skipped	mid-paragraph <2>k markers, duplicate proof blocks, bare unmarked Q.E.D.
-corpus/collections/SRC-TEXT-MUN00/29/E-0K3QV.md	skipped	mid-paragraph <2>k markers in step <1>4, and claim/proof substep count mismatch in step <1>1
-corpus/collections/SRC-TEXT-MUN00/30/E-KZPIX.md	skipped	mid-paragraph <2>9 marker embedded in step <2>8's proof, plus an orphaned duplicate proof block with no owning step
-corpus/collections/SRC-TEXT-MUN00/34/E-RX228.md	skipped	mid-paragraph <2>1 markers embedded in both <1>1's and <1>2's opening sentences
+corpus/collections/SRC-TEXT-MUN00/25/E-QJXDP.md	converted	
+corpus/collections/SRC-TEXT-MUN00/29/E-0K3QV.md	converted	
+corpus/collections/SRC-TEXT-MUN00/30/E-KZPIX.md	converted	
+corpus/collections/SRC-TEXT-MUN00/34/E-RX228.md	converted	
 corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-10.md	converted	
 corpus/collections/SRC-TEXT-MUN00/4/E-MUN-4-11.md	converted	
 corpus/collections/SRC-TEXT-MUN00/43/E-2TY2B.md	converted	
-corpus/collections/SRC-TEXT-MUN00/43/E-4P6A6.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/43/E-4P6A6.md	converted	
 corpus/collections/SRC-TEXT-MUN00/43/E-8QHNV.md	converted	
 corpus/collections/SRC-TEXT-MUN00/43/E-9TP29.md	converted	
 corpus/collections/SRC-TEXT-MUN00/43/E-AY5GK.md	converted	
 corpus/collections/SRC-TEXT-MUN00/43/E-O0XAB.md	converted	
 corpus/collections/SRC-TEXT-MUN00/45/E-3C4WF.md	converted	
-corpus/collections/SRC-TEXT-MUN00/45/E-4289E.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/45/E-4289E.md	converted	
 corpus/collections/SRC-TEXT-MUN00/45/E-5QSZ7.md	converted	
 corpus/collections/SRC-TEXT-MUN00/46/E-0GM3H.md	converted	
 corpus/collections/SRC-TEXT-MUN00/46/E-0HGNK.md	converted	
@@ -42,39 +42,39 @@ corpus/collections/SRC-TEXT-MUN00/48/E-1FRQL.md	converted
 corpus/collections/SRC-TEXT-MUN00/48/E-66SIM.md	converted	
 corpus/collections/SRC-TEXT-MUN00/48/E-85UIY.md	converted	
 corpus/collections/SRC-TEXT-MUN00/48/E-8KGS1.md	converted	
-corpus/collections/SRC-TEXT-MUN00/48/E-AKPMH.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/48/E-AKPMH.md	converted	
 corpus/collections/SRC-TEXT-MUN00/48/E-BTZ9P.md	converted	
 corpus/collections/SRC-TEXT-MUN00/48/E-F8UOA.md	converted	
 corpus/collections/SRC-TEXT-MUN00/48/E-NO7PH.md	converted	
 corpus/collections/SRC-TEXT-MUN00/49/E-23ASH.md	converted	
 corpus/collections/SRC-TEXT-MUN00/50/E-1SW9Q.md	converted	
-corpus/collections/SRC-TEXT-MUN00/50/E-26ELV.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/50/E-6E1DR.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/50/E-26ELV.md	converted	
+corpus/collections/SRC-TEXT-MUN00/50/E-6E1DR.md	converted	
 corpus/collections/SRC-TEXT-MUN00/50/E-LOA25.md	converted	
 corpus/collections/SRC-TEXT-MUN00/50/E-MI1BO.md	converted	
 corpus/collections/SRC-TEXT-MUN00/50/E-PYCIE.md	converted	
 corpus/collections/SRC-TEXT-MUN00/51/E-5T90S.md	converted	
-corpus/collections/SRC-TEXT-MUN00/51/E-69NKI.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/52/E-699Z7.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/52/E-758HY.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/51/E-69NKI.md	converted	
+corpus/collections/SRC-TEXT-MUN00/52/E-699Z7.md	converted	
+corpus/collections/SRC-TEXT-MUN00/52/E-758HY.md	converted	
 corpus/collections/SRC-TEXT-MUN00/53/E-2I601.md	converted	
-corpus/collections/SRC-TEXT-MUN00/53/E-9V3P6.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/53/E-9V3P6.md	converted	
 corpus/collections/SRC-TEXT-MUN00/53/E-LP0GM.md	converted	
 corpus/collections/SRC-TEXT-MUN00/54/E-2Z1TM.md	converted	
 corpus/collections/SRC-TEXT-MUN00/54/E-5U4U0.md	converted	
-corpus/collections/SRC-TEXT-MUN00/54/E-9H9P9.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/54/E-A9WFT.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/54/E-9H9P9.md	converted	
+corpus/collections/SRC-TEXT-MUN00/54/E-A9WFT.md	converted	
 corpus/collections/SRC-TEXT-MUN00/54/E-XIQ94.md	converted	
 corpus/collections/SRC-TEXT-MUN00/55/E-2STPW.md	converted	
 corpus/collections/SRC-TEXT-MUN00/55/E-994NL.md	converted	
-corpus/collections/SRC-TEXT-MUN00/55/E-B3WXJ.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/55/E-B3WXJ.md	converted	
 corpus/collections/SRC-TEXT-MUN00/57/E-0A010.md	converted	
 corpus/collections/SRC-TEXT-MUN00/58/E-0LZE7.md	converted	
 corpus/collections/SRC-TEXT-MUN00/58/E-2M0XQ.md	converted	
 corpus/collections/SRC-TEXT-MUN00/58/E-6RQWT.md	converted	
-corpus/collections/SRC-TEXT-MUN00/58/E-97HXB.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/58/E-97HXB.md	converted	
 corpus/collections/SRC-TEXT-MUN00/59/E-1QY2X.md	converted	
-corpus/collections/SRC-TEXT-MUN00/59/E-6C2JI.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/59/E-6C2JI.md	converted	
 corpus/collections/SRC-TEXT-MUN00/59/E-E79BA.md	converted	
 corpus/collections/SRC-TEXT-MUN00/59/E-WUZ10.md	converted	
 corpus/collections/SRC-TEXT-MUN00/6/E-MUN-6-5.md	converted	
@@ -83,46 +83,46 @@ corpus/collections/SRC-TEXT-MUN00/60/E-5CC0M.md	converted
 corpus/collections/SRC-TEXT-MUN00/61/E-5WDER.md	converted	
 corpus/collections/SRC-TEXT-MUN00/61/E-LP6WS.md	converted	
 corpus/collections/SRC-TEXT-MUN00/62/E-5VNUL.md	converted	
-corpus/collections/SRC-TEXT-MUN00/62/E-81J56.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/62/E-AGJM5.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/62/E-81J56.md	converted	
+corpus/collections/SRC-TEXT-MUN00/62/E-AGJM5.md	converted	
 corpus/collections/SRC-TEXT-MUN00/63/E-4E1C9.md	converted	
-corpus/collections/SRC-TEXT-MUN00/64/E-41BN2.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/66/E-3FN03.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/64/E-41BN2.md	converted	
+corpus/collections/SRC-TEXT-MUN00/66/E-3FN03.md	converted	
 corpus/collections/SRC-TEXT-MUN00/66/E-LHQJE.md	converted	
 corpus/collections/SRC-TEXT-MUN00/67/E-3CFLD.md	converted	
-corpus/collections/SRC-TEXT-MUN00/68/E-175IG.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/68/E-175IG.md	converted	
 corpus/collections/SRC-TEXT-MUN00/68/E-8NCA4.md	converted	
-corpus/collections/SRC-TEXT-MUN00/69/E-2P51H.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/69/E-66MV0.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-TEXT-MUN00/69/E-2P51H.md	converted	
+corpus/collections/SRC-TEXT-MUN00/69/E-66MV0.md	converted	
 corpus/collections/SRC-TEXT-MUN00/69/E-9IP2I.md	converted	
 corpus/collections/SRC-TEXT-MUN00/70/E-0EZ4U.md	converted	
-corpus/collections/SRC-TEXT-MUN00/70/E-1DM8W.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/71/E-5DDIL.md	pending	script refused: step number 2 where 1 was expected
+corpus/collections/SRC-TEXT-MUN00/70/E-1DM8W.md	converted	
+corpus/collections/SRC-TEXT-MUN00/71/E-5DDIL.md	converted	
 corpus/collections/SRC-TEXT-MUN00/71/E-9LY2B.md	converted	
-corpus/collections/SRC-TEXT-MUN00/71/E-HQ8N3.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/72/E-2B91X.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/72/E-5Y4F7.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/71/E-HQ8N3.md	converted	
+corpus/collections/SRC-TEXT-MUN00/72/E-2B91X.md	converted	
+corpus/collections/SRC-TEXT-MUN00/72/E-5Y4F7.md	converted	
 corpus/collections/SRC-TEXT-MUN00/72/E-FFNIM.md	converted	
 corpus/collections/SRC-TEXT-MUN00/73/E-A7HJX.md	converted	
-corpus/collections/SRC-TEXT-MUN00/74/E-160XR.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/74/E-2NLYP.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/74/E-160XR.md	converted	
+corpus/collections/SRC-TEXT-MUN00/74/E-2NLYP.md	converted	
 corpus/collections/SRC-TEXT-MUN00/74/E-8EX2G.md	converted	
 corpus/collections/SRC-TEXT-MUN00/75/E-04W6Q.md	converted	
-corpus/collections/SRC-TEXT-MUN00/75/E-4349Q.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/75/E-4349Q.md	converted	
 corpus/collections/SRC-TEXT-MUN00/75/E-II4JY.md	converted	
 corpus/collections/SRC-TEXT-MUN00/75/E-MYMF4.md	converted	
-corpus/collections/SRC-TEXT-MUN00/77/E-A3WS1.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/77/E-A3WS1.md	converted	
 corpus/collections/SRC-TEXT-MUN00/78/E-3BSN7.md	converted	
-corpus/collections/SRC-TEXT-MUN00/79/E-UYQU1.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/79/E-UYQU1.md	converted	
 corpus/collections/SRC-TEXT-MUN00/79/E-VFXN4.md	converted	
 corpus/collections/SRC-TEXT-MUN00/80/E-LV54B.md	converted	
 corpus/collections/SRC-TEXT-MUN00/81/E-4RF8O.md	converted	
 corpus/collections/SRC-TEXT-MUN00/81/E-4WKOG.md	converted	
 corpus/collections/SRC-TEXT-MUN00/81/E-79XXG.md	converted	
-corpus/collections/SRC-TEXT-MUN00/82/E-74C1G.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-MUN00/82/E-8Q9TN.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/82/E-74C1G.md	converted	
+corpus/collections/SRC-TEXT-MUN00/82/E-8Q9TN.md	converted	
 corpus/collections/SRC-TEXT-MUN00/84/E-44O6O.md	converted	
-corpus/collections/SRC-TEXT-MUN00/85/E-8IBEP.md	pending	script refused: prose at a level boundary
+corpus/collections/SRC-TEXT-MUN00/85/E-8IBEP.md	converted	
 corpus/collections/SRC-TEXT-MUN00/85/E-AL52O.md	converted	
 corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-2.md	converted	
 corpus/collections/SRC-TEXT-MUN00/9/E-MUN-9-4.md	converted	
@@ -134,7 +134,7 @@ corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEE.md	converte
 corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEF.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEG.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEH.md	converted	
-corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEI.md	pending	script refused: heading among steps
+corpus/collections/SRC-TEXT-SMI/8000-fall-2006-final/E-SMI-8000E-FEI.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000-fall-2006-midterm/E-SMI-8000E-MT1.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000-fall-2006-midterm/E-SMI-8000E-MT2.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000-fall-2006-midterm/E-SMI-8000E-MT3.md	converted	
@@ -188,7 +188,7 @@ corpus/collections/SRC-TEXT-SMI/8000e-noetherian-rings/E-SMI-8000E-NR5.md	conver
 corpus/collections/SRC-TEXT-SMI/8000e-noetherian-rings/E-SMI-8000E-NR6.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000e-noetherian-rings/E-SMI-8000E-NR7.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000e-noetherian-rings/E-SMI-8000E-NR8.md	converted	
-corpus/collections/SRC-TEXT-SMI/8000e-noetherian-rings/E-SMI-8000E-NR9.md	pending	script refused: filter:  /home/dzack/.pandoc/filters/lamport_proof.lua:490: in function 'Pandoc'
+corpus/collections/SRC-TEXT-SMI/8000e-noetherian-rings/E-SMI-8000E-NR9.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000e-normality-and-localization/E-SMI-8000E-N1.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000e-normality-and-localization/E-SMI-8000E-N2.md	converted	
 corpus/collections/SRC-TEXT-SMI/8000e-normality-and-localization/E-SMI-8000E-N345.md	converted	
@@ -234,21 +234,21 @@ corpus/collections/SRC-TEXT-SS03/ch2-problems/E-SS2.PR-2.md	converted
 corpus/collections/SRC-TEXT-SS03/ch2-problems/E-SS2.PR-3.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch3-exercises/E-SS3.EX-7.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch3-exercises/E-SS3.EX-8.md	converted	
-corpus/collections/SRC-TEXT-SS03/ch3-problems/E-SS3.PR-1.md	pending	script refused: dotted step citation
+corpus/collections/SRC-TEXT-SS03/ch3-problems/E-SS3.PR-1.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch3-problems/E-SS3.PR-2.md	converted	
-corpus/collections/SRC-TEXT-SS03/ch4-exercises/E-SS4.EX-1.md	pending	script refused: dotted step citation
+corpus/collections/SRC-TEXT-SS03/ch4-exercises/E-SS4.EX-1.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch5-exercises/E-SS5.EX-5.md	converted	
-corpus/collections/SRC-TEXT-SS03/ch6-exercises/E-SS6.EX-1.md	pending	script refused: prose at a level boundary
-corpus/collections/SRC-TEXT-SS03/ch6-exercises/E-SS6.EX-12.md	pending	script refused: step number 1 where 6 was expected
+corpus/collections/SRC-TEXT-SS03/ch6-exercises/E-SS6.EX-1.md	converted	
+corpus/collections/SRC-TEXT-SS03/ch6-exercises/E-SS6.EX-12.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch6-exercises/E-SS6.EX-3.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch6-exercises/E-SS6.EX-8.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch6-problems/E-SS6.PR-1.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch6-problems/E-SS6.PR-2.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch6-problems/E-SS6.PR-3.md	converted	
-corpus/collections/SRC-TEXT-SS03/ch7-exercises/E-SS7.EX-2.md	pending	script refused: step number 1 where 3 was expected
+corpus/collections/SRC-TEXT-SS03/ch7-exercises/E-SS7.EX-2.md	converted	
 corpus/collections/SRC-TEXT-SS03/ch8-exercises/E-SS8.EX-16.md	converted	
-corpus/collections/SRC-TEXT-SS03/ch8-exercises/E-SS8.EX-7.md	pending	script refused: step number 1 where 8 was expected
-corpus/collections/SRC-TEXT-SS03/ch8-exercises/E-SS8.EX-8.md	pending	script refused: prose after substeps inside a proof
+corpus/collections/SRC-TEXT-SS03/ch8-exercises/E-SS8.EX-7.md	converted	
+corpus/collections/SRC-TEXT-SS03/ch8-exercises/E-SS8.EX-8.md	converted	
 corpus/collections/SRC-TOP-UNL-2005Q2/P-T05A1.md	converted	
 corpus/collections/SRC-TOP-UNL-2005Q2/P-T05A2.md	converted	
 corpus/collections/SRC-TOP-UNL-2005Q2/P-T05A3.md	converted	
