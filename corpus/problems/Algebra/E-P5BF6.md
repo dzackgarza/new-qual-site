@@ -57,7 +57,7 @@ with both factors nonzero, so $a$ is a zero divisor.
 
 :::
 
-::: {.pf-step #1-plus-n-unit}
+::: {.pf-step #one-plus-n-unit}
 If $n\in N(R)$, then $1+n$ is a unit; consequently $N(R)+\unitsof{R}=\unitsof{R}$.
 
 ::: pf-proof
@@ -89,7 +89,7 @@ h(x)=\sum_{k=1}^d a_kx^k.
 Each summand $a_kx^k$ is nilpotent.
 A finite sum of nilpotent elements in a commutative ring is nilpotent: if $t_i^{e_i}=0$, then every monomial in $(t_1+\cdots+t_r)^{e_1+\cdots+e_r}$ contains some $t_i^{e_i}$ as a factor.
 Hence $h$ is nilpotent, and so is $a_0^{-1}h$.
-By step [](#1-plus-n-unit){.pf-ref},
+By step [](#one-plus-n-unit){.pf-ref},
 \[
 f=a_0(1+a_0^{-1}h)
 \]
