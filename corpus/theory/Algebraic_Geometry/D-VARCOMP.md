@@ -26,7 +26,9 @@ Finite type is automatic for varieties, so only the two substantive conditions a
 :::
 
 ::: {.proposition title="What completeness buys"}
-If $X$ is complete then $\OO_X(X) = k$, the image of $X$ under any morphism is closed, and any morphism from $X$ to an affine variety is constant.
+If $X$ is an integral complete variety over $k$, then $\Gamma(X,\OO_X)$ is a finite field extension of $k$.
+In particular, if $k$ is algebraically closed, then $\Gamma(X,\OO_X)=k$ and every morphism from $X$ to an affine $k$-variety is constant.
+The image of $X$ under any morphism to a $k$-variety is closed.
 Every projective variety is complete; over $\CC$, completeness is compactness in the Euclidean topology.
 :::
 
@@ -34,5 +36,5 @@ Every projective variety is complete; over $\CC$, completeness is compactness in
 The standard non-example is $\AA^1$, and the witness must be a base change, not a closed-map check on $\AA^1$ itself: the projection $\AA^1 \times \AA^1 \to \AA^1$ sends the closed hyperbola $V(xy-1)$ to $\AA^1 \sm \ts{0}$, which is not closed.
 
 The converse of "projective implies complete" is false: Nagata and Hironaka produced complete non-projective varieties, all of dimension at least three, since a complete curve or normal complete surface is projective.
-The function-count consequence $\OO_X(X) = k$ is the same argument that appears for projective varieties, run one level up.
+Over an algebraically closed field, the global-function consequence $\Gamma(X,\OO_X)=k$ is the proper analogue of the corresponding projective-variety statement.
 :::
