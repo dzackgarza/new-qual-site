@@ -22,17 +22,17 @@ prompts:
 
 ::: {.definition}
 For morphisms $X \to S$ and $Y \to S$, the \dfn{fibre product} $\fiberprod{X}{S}{Y}$ is a scheme over $S$ with projections to $X$ and $Y$, universal among schemes mapping compatibly to both:
-\[
+$$
 \Hom_S(T, \fiberprod{X}{S}{Y}) \cong \Hom_S(T, X) \times \Hom_S(T, Y) .
-\]
+$$
 :::
 
 ::: {.theorem title="Existence"}
 Fibre products exist in $\Sch$.
 For affines the anti-equivalence turns the limit into a colimit of rings:
-\[
+$$
 \fiberprod{\Spec A}{\Spec R}{\Spec B} \cong \Spec (A \tensor_R B) .
-\]
+$$
 The general case is obtained by covering $X$, $Y$, $S$ by affines, building the affine pieces, and gluing.
 :::
 
