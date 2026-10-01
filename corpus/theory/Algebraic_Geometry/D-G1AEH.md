@@ -34,18 +34,18 @@ For a projective integral curve $C$ over $k = \bar{k}$:
 
 ::: {.proposition title="One genus for a nonsingular curve"}
 If $X$ is a nonsingular projective curve over $k = \bar k$, then
-\[
+$$
 p_a(X) = p_g(X) = \dim_k H^1(X, \OO_X) ,
-\]
+$$
 the **genus** $g$ of $X$: since $h^0(\OO_X) = 1$, $p_a = 1 - \chi(\OO_X) = h^1(\OO_X)$, and Serre duality gives $h^0(\omega_X) = h^1(\OO_X)$.
 [@Har10a, Exercise III.5.3]
 :::
 
 ::: {.proposition}
 $p_g \leq p_a$, with
-\[
+$$
 p_a(C) - p_g(C) = \sum_{p \in C} \delta_p ,
-\]
+$$
 the sum of the delta invariants $\delta_p = \dim_k (\nu_* \OO_{\tilde{C}} / \OO_C)_p$ over the singular points.
 A node contributes $\delta = 1$, an ordinary cusp $\delta = 1$, an ordinary $m$-fold point $\binom{m}{2}$.
 :::
