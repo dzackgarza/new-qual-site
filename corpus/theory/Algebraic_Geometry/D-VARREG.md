@@ -25,7 +25,7 @@ prompts:
 ---
 
 ::: {.definition title="Regular functions"}
-Let $X$ be a variety and $U \subseteq X$ open.
+Let $X$ be a variety over an algebraically closed field $k$ and let $U \subseteq X$ be open.
 A function $\phi: U \to k$ is \dfn{regular} if for every $p \in U$ there is an open $U_p \ni p$ and polynomials $f, g$ with $g$ nowhere zero on $U_p$ and $\restrictionof{\phi}{U_p} = f/g$.
 These form a sheaf of rings $\OO_X$, with restriction of functions: regularity is a local condition, and a function that is zero on each set of an open cover is zero.
 The stalk $\OO_{X,p}$ is the **local ring at $p$**, with maximal ideal $\mfm_p$ the regular functions vanishing at $p$, and the stalk at the generic point is the **function field** $k(X)$.
@@ -33,21 +33,21 @@ The stalk $\OO_{X,p}$ is the **local ring at $p$**, with maximal ideal $\mfm_p$ 
 
 ::: {.proposition title="What the sections are, affinely"}
 For $X$ affine with coordinate ring $A(X) = k[X] = k[x_1,\ldots,x_n]/I(X)$ and $D(f) \da X \sm V(f)$,
-\[
+$$
 \OO_X(D(f)) = A(X)\invert{f}, \qquad \OO_X(X) = A(X), \qquad \OO_{X,p} = A(X)_{\mfm_p}, \qquad k(X) = \operatorname{Frac} A(X) .
-\]
+$$
 :::
 
 ::: {.proposition title="Sections as an intersection in the function field"}
 Let $X$ be a variety.
 For every nonempty open $U \subseteq X$, restriction identifies $\OO_X(U)$ with a subring of $k(X)$, and if $U = \bigcup_i U_i$ with each $U_i$ nonempty and open, then
-\[
+$$
 \OO_X(U) = \bigcap_i \OO_X(U_i) \quad \text{inside } k(X) .
-\]
+$$
 In particular, for an ideal $\mfa \neq 0$ of $k[x_1,\ldots,x_n]$, the open set $\AA^n \sm V(\mfa) = \bigcup_{0 \neq f \in \mfa} D(f)$ has
-\[
+$$
 \OO_{\AA^n}(\AA^n \sm V(\mfa)) = \bigcap_{0 \neq f \in \mfa} k[x_1,\ldots,x_n]\invert{f} \subseteq k(x_1,\ldots,x_n) .
-\]
+$$
 [@Har10a, §I.3]
 :::
 
