@@ -29,9 +29,9 @@ Quasi-projective contains all four.
 
 ::: {.proposition title="Standard charts"}
 $U_i \da \ts{x_i \neq 0} \subseteq \PP^n$ is open, the map
-\[
+$$
 \phi_i: U_i \to \AA^n, \qquad \tv{x_0 : \cdots : x_n} \mapsto \qty{ x_0/x_i, \ldots, \widehat{x_i/x_i}, \ldots, x_n/x_i }
-\]
+$$
 is an isomorphism of varieties, and $\PP^n = \union_{i=0}^n U_i$.
 :::
 
