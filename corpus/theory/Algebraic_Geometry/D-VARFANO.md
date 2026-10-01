@@ -20,12 +20,13 @@ prompts:
 - What is a Calabi--Yau variety?
 ---
 
-::: {.definition title="The trichotomy by canonical class"}
+::: {.definition title="Three canonical-class conditions"}
 Let $X$ be a smooth complete variety with canonical divisor $K_X$.
 
 - $X$ is \dfn{Fano} if $-K_X$ is ample.
 
-- $X$ is **Calabi--Yau** if $K_X \sim_\QQ 0$; the stricter convention demands $\omega_X \cong \OO_X$ together with $h^j(\OO_X) = 0$ for $1 \leq j \leq \dim X - 1$.
+- In the weak (K)-trivial convention, $X$ is **Calabi--Yau** if $K_X \sim_\QQ 0$.
+  A stricter convention requires $\omega_X \cong \OO_X$ together with $h^j(\OO_X)=0$ for $1\leq j\leq\dim X-1$.
 
 - $X$ is of **general type** if $K_X$ is big.
 
@@ -33,7 +34,8 @@ A **del Pezzo surface** is a Fano variety of dimension two.
 :::
 
 ::: {.remark}
-The sign of $K_X$ is the organising invariant of birational classification, and for curves the three cases are exactly $g = 0$, $g = 1$, $g \geq 2$.
+These three conditions are not exhaustive in higher dimension: many varieties have canonical class that is neither anti-ample, torsion, nor big.
+For smooth projective curves, however, they are exactly the cases $g=0$, $g=1$, and $g\ge2$.
 A Fano variety is automatically projective, since $-K_X$ is an ample divisor to embed by, so "complete" in the definition costs nothing.
 
 The two conventions for Calabi--Yau are not equivalent: abelian varieties have $K_X=0$ but do not satisfy the intermediate-cohomology vanishing, so they satisfy the first convention and not the second.
