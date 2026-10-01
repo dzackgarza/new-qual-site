@@ -26,9 +26,9 @@ The \dfn{dual variety} $X^\dual \subseteq (\PP^n)^\dual$ is the closure of the s
 
 ::: {.proposition}
 The incidence correspondence
-\[
+$$
 \Phi = \overline{\ts{ (p, H) \st p \in X_{\mathrm{sm}},\ \mathbb{T}_p X \subseteq H }} \subseteq X \times (\PP^n)^\dual
-\]
+$$
 is irreducible of dimension $n-1$, since over each smooth point $p$ the fibre is a projective space of dimension $n - 1 - \dim X$.
 So $X^\dual$, the image of $\Phi$ under the second projection, is irreducible of dimension at most $n-1$.
 Over a field of characteristic zero, $(X^\dual)^\dual = X$.
