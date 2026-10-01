@@ -14,7 +14,7 @@ The projective theory is not an equivalence, and the whole subject is the repair
 
 [[D-MODGRMOD]]
 
-The failure of injectivity is the first thing to say: modules differing only in low degrees, and modules supported on the irrelevant ideal, give the same sheaf.
+Sheafification from graded modules is not injective: modules differing only in low degrees, and modules supported on the irrelevant ideal, can give the same sheaf.
 $\Gamma_*$ is the section that puts a canonical module back.
 
 ## Generation and ampleness
@@ -22,19 +22,19 @@ $\Gamma_*$ is the section that puts a canonical module back.
 [[D-MODGG]]
 
 Global generation is what turns sections into a morphism to $\PP^n$.
-It is empty on an affine, so every question about it is really a question about a projective or proper scheme.
+Every quasicoherent sheaf on an affine scheme is globally generated, so global generation becomes restrictive on nonaffine schemes such as projective schemes.
 
 [[D-MODAMPLE]]
 
-The three conditions form a ladder: globally generated gives a morphism, very ample gives an immersion, ample gives an immersion after a twist.
-The last is stable under powers and is the one to work with; the middle is the one to verify.
+The three conditions form a ladder: globally generated gives a morphism, very ample gives a closed immersion, and ample means that some positive power is very ample.
+Ampleness is preserved by positive tensor powers.
 
 ## Serre's theorems
 
 [[T-MODSERRE]]
 
-Both parts say that a coherent sheaf on projective space becomes affine-like after enough twisting, and both are used only in the asymptotic form.
+Both parts say that a coherent sheaf on projective space acquires affine-like properties after sufficiently positive twisting.
 
 [[T-MODRES]]
 
-This is how every additive invariant is reduced to the twists, which is why the computation of $H^*(\PP^n, \OO(d))$ in [[algebraic-geometry/cohomology/index|cohomology]] carries the weight it does.
+Finite resolutions by twists reduce additive invariants of coherent sheaves to the corresponding invariants of $\OO(d)$, including the computation of cohomology in [[algebraic-geometry/cohomology/index|cohomology]].
