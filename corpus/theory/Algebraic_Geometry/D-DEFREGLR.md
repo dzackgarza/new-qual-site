@@ -27,9 +27,9 @@ prompts:
 
 ::: {.definition title="regular local ring"}
 A Noetherian local ring $(A,\mm)$ is a \dfn{regular local ring} if
-\[
+$$
 \dim A = \dim_{A/\mm} \mm/\mm^2 .
-\]
+$$
 A Noetherian ring $A$ is a **regular ring** if $A_\mfp$ is a regular local ring for every prime $\mfp$.
 :::
 
