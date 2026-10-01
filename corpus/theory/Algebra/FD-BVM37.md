@@ -17,5 +17,5 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a ring.
-An $R$-module $M$ is \dfn{irreducible} if its only submodules are $0$ and $M$; irreducible modules are also called [[D-4KM4P|simple]] modules.
+An $R$-module $M$ is \dfn{irreducible} if $M\neq0$ and its only submodules are $0$ and $M$; irreducible modules are also called [[D-4KM4P|simple]] modules.
 :::
