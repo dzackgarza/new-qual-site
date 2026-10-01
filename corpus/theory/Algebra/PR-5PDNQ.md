@@ -21,7 +21,7 @@ The $k$-linear map
 $$
 \begin{aligned}
 V\dual \tensor_k W\dual &\to (V \tensor_k W)\dual \\
-v \tensor w &\mapsto \big(x \tensor y \mapsto v(x)\, w(y)\big)
+v \tensor_k w &\mapsto \big(x \tensor_k y \mapsto v(x)\, w(y)\big)
 \end{aligned}
 $$
 is an isomorphism.
