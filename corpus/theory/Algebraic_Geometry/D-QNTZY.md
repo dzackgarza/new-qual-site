@@ -61,8 +61,8 @@ Quasicoherence is the condition that a sheaf of modules is *determined by algebr
 Quasicoherent sheaves on an affine scheme have vanishing higher cohomology.
 
 The practical test is local and needs no module in hand: $\mcf$ is quasicoherent exactly when every point has an affine neighbourhood on which $\mcf$ has a presentation
-\[
+$$
 \OO_X^{(I)} \to \OO_X^{(J)} \to \mcf \to 0 .
-\]
+$$
 This presentation criterion is often easier to verify for naturally occurring sheaves than constructing an explicit module on each affine chart.
 :::
