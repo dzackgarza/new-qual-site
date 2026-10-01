@@ -25,11 +25,11 @@ prompts:
 ::: {.definition title="Espace étalé"}
 Let $\mcf$ be a presheaf on $X$.
 Set
-\[
+$$
 \Et(\mcf) \da \disjoint_{p \in X} \mcf_p ,
 \qquad
 \pi : \Et(\mcf) \to X ,
-\]
+$$
 where $\pi$ sends every germ in $\mcf_p$ to $p$.
 
 Each $s \in \mcf(U)$ gives a set-theoretic section $\bar s : U \to \Et(\mcf)$, $p \mapsto s_p$, with $\pi \circ \bar s = \id_U$.
@@ -38,9 +38,9 @@ Give $\Et(\mcf)$ the finest topology making every such $\bar s$ continuous.
 
 ::: {.proposition}
 For that topology,
-\[
+$$
 \mcf^+(U) = \ts{ \text{continuous } t : U \to \Et(\mcf) \st \pi \circ t = \id_U } .
-\]
+$$
 :::
 
 ::: {.remark}
