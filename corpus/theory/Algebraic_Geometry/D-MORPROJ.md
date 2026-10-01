@@ -24,15 +24,15 @@ prompts:
 
 ::: {.definition title="Projective"}
 $f : X \to Y$ is \dfn{projective} if it factors as a closed immersion followed by the projection,
-\[
+$$
 X \injects \PP^N_Y \to Y, \qquad \PP^N_Y \da \fiberprod{\PP^N_\ZZ}{\Spec \ZZ}{Y} ,
-\]
+$$
 for some $N$.
 It is **quasi-projective** if it factors as an open immersion into a scheme projective over $Y$.
 :::
 
 ::: {.remark}
-For $Y$ Noetherian, projective implies proper.
+Every projective morphism is proper.
 The proof combines properness of closed immersions, stability of properness under composition, and universal closedness of $\PP^N_\ZZ \to \Spec \ZZ$ via elimination.
 
 The relative $\Proj$ supplies the examples: for a graded ring $S$ with $S_0 = A$ and $S$ generated in degree one by finitely many elements, $\Proj S \to \Spec A$ is projective.
