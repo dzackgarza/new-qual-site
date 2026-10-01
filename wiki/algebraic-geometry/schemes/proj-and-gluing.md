@@ -16,7 +16,7 @@ Affine schemes are all the local information there is, so every scheme that is n
 [[D-SCHGLUE]]
 
 The geometry depends on the chosen overlap isomorphism.
-Two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ give either $\PP^1$ or a pathology, according to which isomorphism you use on the overlap.
+Two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ give either $\PP^1$ or a pathology, according to the chosen isomorphism on the overlap.
 
 [[FE-SCHLINE]]
 
