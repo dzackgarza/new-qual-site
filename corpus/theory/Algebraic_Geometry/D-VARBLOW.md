@@ -21,17 +21,35 @@ prompts:
 
 ::: {.definition title="Blowup"}
 The blowup of $\AA^n$ at the origin is
-\[
+$$
 \Bl_0 \AA^n \da \ts{ (x, \ell) \in \AA^n \times \PP^{n-1} \st x \in \ell } ,
-\]
+$$
 with $\pi$ the first projection.
-For $X$ a variety and $p \in X$, $\Bl_p X$ is the closure of $\pi\inv(X \sm \ts{p})$ inside $\Bl_p \AA^n$ for a local embedding.
-The \dfn{exceptional divisor} is $E \da \pi\inv(p) \cong \PP^{n-1}$, and the **proper transform** of a subvariety $C \subseteq X$ is the closure of $\pi\inv(C \sm \ts{p})$.
+For a variety $X$ and a closed point $p\in X$ with ideal sheaf $\mci_p$, the intrinsic definition is
+$$
+\Bl_pX
+\coloneqq
+\Proj_X\bigoplus_{d\ge0}\mci_p^d,
+$$
+as in [[D-SCHBLOWUP]].
+The \dfn{exceptional divisor} is $E\da\pi^{-1}(p)$, and its fibre over $p$ is
+$$
+E
+\cong
+\Proj\operatorname{gr}_{\mfm_p}\OO_{X,p},
+$$
+the projectivized tangent cone.
+The **proper transform** of a subvariety $C\subseteq X$ is the closure of $\pi^{-1}(C\sm\ts{p})$.
 :::
 
 ::: {.proposition}
 $\pi$ is an isomorphism away from $E$, hence birational, and $\Bl_p X$ is again a variety, projective over $X$.
-For a surface, $E$ is a curve isomorphic to $\PP^1$, and the points of $E$ are the tangent directions at $p$.
+If $X$ is smooth of dimension $n$ at $p$, then
+$$
+E\cong\PP^{n-1}_{\kappa(p)},
+$$
+the projective space of one-dimensional quotients of the tangent space at $p$.
+In particular, for a smooth surface $E\cong\PP^1$.
 :::
 
 ::: {.remark}
