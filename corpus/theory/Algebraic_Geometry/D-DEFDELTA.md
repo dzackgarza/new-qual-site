@@ -25,9 +25,9 @@ Let $\mca, \mcb$ be abelian categories.
 A covariant \dfn{$\delta$-functor} from $\mca$ to $\mcb$ is a collection of functors $T = (T^i)_{i\geq 0}$ together with a boundary morphism $\delta^i: T^i(A'') \to T^{i+1}(A')$ for every short exact sequence $0 \to A' \to A \to A'' \to 0$, such that
 
 (i) each short exact sequence gives a long exact sequence
-\[
+$$
 0 \to T^0(A') \to T^0(A) \to T^0(A'') \mapsvia{\delta^0} T^1(A') \to T^1(A) \to \cdots ,
-\]
+$$
 
 (ii) for each morphism of short exact sequences the induced maps commute with the $\delta^i$.
 :::
