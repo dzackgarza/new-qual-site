@@ -26,9 +26,17 @@ prompts:
 ::: {.definition title="Relative Spec"}
 Let $X$ be a scheme and $\mathcal{A}$ a quasicoherent sheaf of $\OO_X$-algebras.
 The \dfn{relative Spec} of $\mathcal{A}$ is an $X$-scheme $\pi \colon \operatorname{\mathbf{Spec}}_X \mathcal{A} \to X$ representing the functor on $X$-schemes
-$$(t \colon T \to X) \longmapsto \Hom_{\OO_X\text{-alg}}(\mathcal{A}, t_* \OO_T),$$
+$$
+(t \colon T \to X)
+\longmapsto
+\Hom_{\OO_X\text{-alg}}(\mathcal{A},t_*\OO_T),
+$$
 so that for every $X$-scheme $t \colon T \to X$ there is a bijection, natural in $T$,
-$$\Hom_X(T, \operatorname{\mathbf{Spec}}_X \mathcal{A}) \cong \Hom_{\OO_X\text{-alg}}(\mathcal{A}, t_* \OO_T).$$
+$$
+\Hom_X(T,\operatorname{\mathbf{Spec}}_X\mathcal A)
+\cong
+\Hom_{\OO_X\text{-alg}}(\mathcal A,t_*\OO_T).
+$$
 :::
 
 ::: {.proposition}
@@ -40,7 +48,11 @@ In particular $\pi$ is affine, $\pi_* \OO_{\operatorname{\mathbf{Spec}}_X \mathc
 ::: {.definition title="Relative Proj"}
 Let $X$ be a scheme and $\mathcal{S} = \bigoplus_{d \geq 0} \mathcal{S}_d$ a quasicoherent sheaf of graded $\OO_X$-algebras with $\mathcal{S}_0 = \OO_X$, generated in degree $1$: the map $\operatorname{Sym}^\bullet_{\OO_X} \mathcal{S}_1 \to \mathcal{S}$ is surjective.
 The \dfn{relative Proj} $\operatorname{\mathbf{Proj}}_X \mathcal{S} \to X$ is the $X$-scheme obtained by gluing the schemes $\Proj \mathcal{S}(V) \to V$, for affine opens $V \subseteq X$, along the isomorphisms
-$$\Proj \mathcal{S}(V) \times_V V' \cong \Proj \mathcal{S}(V')$$
+$$
+\Proj \mathcal{S}(V) \times_V V'
+\cong
+\Proj \mathcal{S}(V')
+$$
 for affine opens $V' \subseteq V$, which come from $\mathcal{S}(V') \cong \mathcal{S}(V) \otimes_{\OO_X(V)} \OO_X(V')$.
 It carries the invertible sheaf $\OO(1)$ obtained by gluing the sheaves $\OO_{\Proj \mathcal{S}(V)}(1)$.
 :::
