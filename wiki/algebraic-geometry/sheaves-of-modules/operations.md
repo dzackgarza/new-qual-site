@@ -15,7 +15,7 @@ Before any sheaf is quasicoherent it is a sheaf of modules, and the category it 
 
 ## Pullback and pushforward
 
-Every geometric construction in the subject is one of these two applied to a sheaf one already understands.
+Pullback and pushforward are the basic functors relating sheaves on the source and target of a morphism.
 
 [[D-MODPULL]]
 
