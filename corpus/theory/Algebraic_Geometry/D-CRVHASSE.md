@@ -29,9 +29,9 @@ prompts:
 ::: {.definition}
 Let $k$ be perfect with $\operatorname{ch} k = p > 0$ and let $E/k$ be elliptic, with Frobenius $F \colon E \to E$.
 Then $F$ acts on cohomology by
-\[
+$$
 F^* \colon H^1(E; \OO_E) \selfmap ,
-\]
+$$
 which is not $k$-linear but $p$-linear: $F^*(\lambda a) = \lambda^p F^*(a)$ for $\lambda \in k$.
 Since $E$ is elliptic, $h^1(\OO_E) = 1$.
 Say $E$ has \dfn{Hasse invariant $0$}, and call $E$ **supersingular**, when $F^* = 0$; otherwise $F^*$ is bijective, the **Hasse invariant is $1$**, and $E$ is **ordinary**.
