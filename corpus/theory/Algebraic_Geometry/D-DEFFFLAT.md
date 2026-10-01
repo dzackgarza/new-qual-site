@@ -20,13 +20,13 @@ prompts:
 
 ::: {.definition title="faithfully flat"}
 An $A$-module $N$ is \dfn{faithfully flat} if for every complex of $A$-modules
-\[
+$$
 M' \to M \to M''
-\]
+$$
 the complex is exact **if and only if**
-\[
+$$
 M' \tensor_A N \to M \tensor_A N \to M'' \tensor_A N
-\]
+$$
 is exact.
 Flatness gives only one direction of this equivalence.
 An $A$-algebra $B$ is faithfully flat if it is so as an $A$-module.
