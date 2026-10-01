@@ -21,11 +21,17 @@ prompts:
 ---
 
 ::: {.definition title="Soft and fine sheaves"}
-Let $X$ be a paracompact Hausdorff space and $\mathcal{F}$ a sheaf of abelian groups on $X$.
+Let $X$ be a locally compact paracompact Hausdorff space and $\mathcal{F}$ a sheaf of abelian groups on $X$.
 
 - $\mathcal{F}$ is \dfn{soft} if for every closed $Z \subseteq X$ the restriction $\Gamma(X, \mathcal{F}) \to \Gamma(Z, \mathcal{F}|_Z)$ is surjective.
 
-- $\mathcal{F}$ is \dfn{c-soft} if for every compact $K \subseteq X$ the restriction $\Gamma(X, \mathcal{F}) \to \Gamma(K, \mathcal{F}|_K)$ is surjective.
+- $\mathcal{F}$ is \dfn{c-soft} if for every compact $K \subseteq X$ the restriction
+  $$
+  \Gamma_c(X,\mathcal F)
+  \longrightarrow
+  \Gamma(K,\mathcal F|_K)
+  $$
+  is surjective, where $\Gamma_c(X,\mathcal F)$ denotes the global sections with compact support.
 
 - $\mathcal{F}$ is \dfn{fine} if for every locally finite open cover $\{U_i\}$ of $X$ there are sheaf endomorphisms $\eta_i \colon \mathcal{F} \to \mathcal{F}$ with the support of $\eta_i$ contained in $U_i$ and $\sum_i \eta_i = \mathrm{id}_{\mathcal{F}}$.
 :::
@@ -33,6 +39,11 @@ Let $X$ be a paracompact Hausdorff space and $\mathcal{F}$ a sheaf of abelian gr
 ::: {.proposition}
 On a paracompact Hausdorff space, flasque sheaves and fine sheaves are soft, and soft sheaves are acyclic: $H^i(X, \mathcal{F}) = 0$ for $i > 0$.
 So a resolution of a sheaf by fine sheaves computes its cohomology.
+On a locally compact Hausdorff space, c-soft sheaves are acyclic for compactly supported sections:
+$$
+R^i\Gamma_c(X,\mathcal F)=0
+\qquad(i>0).
+$$
 :::
 
 ::: {.example}
