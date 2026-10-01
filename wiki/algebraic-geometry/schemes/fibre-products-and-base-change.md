@@ -36,7 +36,7 @@ Stability under base change depends on the property in question, so each adjecti
 [[PR-SCHFOP]]
 
 The universal property in the definition of the fibre product is a statement about $\Hom(T, -)$ for all $T$, which is to say it is a statement about the functor of points.
-Reading it that way turns the two standard computations — maps out of a field and maps out of the dual numbers — into the statement that points and tangent vectors are both things a scheme is probed by, and it is the language in which moduli problems are posed.
+Maps $\Spec K\to X$ are $K$-points, while maps from the dual numbers lifting a $K$-point encode tangent vectors; moduli problems use the same functorial dependence on a test scheme $T$.
 
 ## Fibres of families
 
