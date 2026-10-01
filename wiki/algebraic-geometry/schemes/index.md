@@ -11,7 +11,7 @@ topics:
 
 $\Spec$ and $\Proj$, gluing, fibre products, and the properties — reduced, irreducible, integral, Noetherian — read off the ring.
 
-The definition of a scheme is the starting point for everything on this page: the next questions are how you recognise an affine one, whether the Noetherian hypothesis in Serre's criterion can be weakened, and what goes wrong without quasicompactness.
+The definition of a scheme is the starting point for everything on this page: the next questions are how to recognise an affine scheme, whether the Noetherian hypothesis in Serre's criterion can be weakened, and what goes wrong without quasicompactness.
 
 - [[algebraic-geometry/schemes/what-is-a-scheme|What is a scheme]], the definition with the reason for each clause, and the test for affineness that needs no cohomology.
 
