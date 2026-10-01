@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-LPJLD
 kind: proposition
 title: $V^*\otimes_k W\cong\Hom_k(V,W)$ in finite dimensions
-slogan: 'For finite-dimensional $V$, $V^*\otimes W$ is the space of linear maps $V\to W$.'
+slogan: 'For finite-dimensional $V$, $V^*\otimes_k W$ is the space of $k$-linear maps $V\to W$.'
 classification:
   areas:
   - algebra
