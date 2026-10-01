@@ -21,9 +21,9 @@ prompts:
 
 ::: {.definition title="Saturated"}
 An affine semigroup $S \subseteq M$ is \dfn{saturated} if
-\[
+$$
 k \in \ZZ_{>0}, \quad m \in M, \quad km \in S \implies m \in S .
-\]
+$$
 $\Spec k[S]$ is normal exactly when $S$ is saturated in the lattice $\ZZ S$ it generates, and $S_\sigma = \sigma\dual \intersect M$ is saturated for every cone, since its defining inequalities are homogeneous.
 :::
 
@@ -34,13 +34,13 @@ Then $2 \cdot (2,2) = (4,4) = (4,0) + (0,4) \in S$, but $(2,2) \notin S$, so $S$
 
 ::: {.remark title="The normalisation recipe"}
 Given a non-normal affine toric variety $X = \Spec k[S]$, set $M = \ZZ S$, take any finite generating set $S'$ of $S$, and put
-\[
+$$
 \sigma \da \Cone(S')\dual \subseteq N_\RR .
-\]
+$$
 Then $\sigma\dual \intersect M$ is the saturation of $S$, and
-\[
+$$
 \Spec k[\sigma\dual \intersect M] \longrightarrow X
-\]
+$$
 is the normalisation.
 It is finite and birational, and it is the identity exactly when $S$ was already saturated.
 :::
