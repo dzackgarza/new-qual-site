@@ -19,9 +19,9 @@ prompts:
 ::: {.definition title="Hypersurface"}
 A \dfn{hypersurface} of degree $d$ in $\PP^n$ is the closed subscheme $V(F)$ of a nonzero homogeneous polynomial $F$ of degree $d$.
 Two polynomials define the same hypersurface exactly when they differ by a nonzero scalar, so the hypersurfaces of degree $d$ are the points of
-\[
+$$
 \PP^{N} = \PP H^0(\PP^n, \OO(d)), \qquad N = \binom{n+d}{d} - 1 .
-\]
+$$
 :::
 
 ::: {.definition title="General and very general"}
