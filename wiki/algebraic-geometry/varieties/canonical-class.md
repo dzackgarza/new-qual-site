@@ -13,11 +13,11 @@ Fano, Calabi--Yau, and general type are distinguished by the positivity behavior
 
 [[D-VARFANO]]
 
-## The computation that produces every example
+## Adjunction for hypersurfaces
 
 [[FE-VARADJ]]
 
-Adjunction is the whole toolkit here: it computes $K$ of a hypersurface from $K$ of the ambient space, and since $K_{\PP^n} = -(n+1)H$ is known, every hypersurface in $\PP^n$ is classified by comparing its degree to $n+1$.
+Adjunction computes $K$ of a hypersurface from $K$ of the ambient space. Since $K_{\PP^n}=-(n+1)H$, a degree-$d$ hypersurface in $\PP^n$ is distinguished by the sign of $d-(n+1)$.
 For surfaces in $\PP^3$, the quadric, cubic, and quartic correspond to degrees $2,3,4$ against the threshold $n+1=4$.
 
 ## Where completeness enters
