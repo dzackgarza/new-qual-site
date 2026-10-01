@@ -24,16 +24,16 @@ prompts:
 
 ::: {.definition title="Ideal sheaf"}
 For a closed immersion $i: Z \injects X$, the \dfn{ideal sheaf} is
-\[
+$$
 \mci_Z \da \ker\qty{\OO_X \mapsvia{i^\sharp} i_*\OO_Z} .
-\]
+$$
 :::
 
 ::: {.theorem}
 $Z \mapsto \mci_Z$ is a bijection between closed subschemes of $X$ and quasicoherent sheaves of ideals on $X$, and there is a short exact sequence
-\[
+$$
 0 \to \mci_Z \to \OO_X \to i_*\OO_Z \to 0 .
-\]
+$$
 :::
 
 ::: {.remark}
