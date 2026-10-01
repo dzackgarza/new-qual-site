@@ -23,8 +23,8 @@ The dual cone is central to the construction; the following three facts control 
 
 [[PR-FULFACEDUAL]]
 
-Together these say that a cone can be handed to you by generators or by inequalities, that either presentation recovers the other through the dual, and that the face posets on the two sides are the same poset read upside down.
-Everything later in the chapter uses one of the three without saying so: the dual cone computation uses the first two, the orbit-cone correspondence uses the third.
+Together these say that a cone may be presented by generators or by inequalities, that either presentation recovers the other through duality, and that duality reverses the face poset.
+The dual-cone computation uses separation and facet descriptions, while the orbit-cone correspondence uses the order-reversing correspondence of faces.
 
 ## How the affine charts glue
 
