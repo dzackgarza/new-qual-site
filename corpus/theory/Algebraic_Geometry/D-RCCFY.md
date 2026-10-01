@@ -17,7 +17,7 @@ prompts:
 ---
 
 ::: {.definition title="Presheaf"}
-A \dfn{presheaf} $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially, with $\mcf(\emptyset) = 0$.
+A \dfn{presheaf} $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially.
 Equivalently, $\mcf$ is a contravariant functor from the category of open subsets of $X$, with inclusions as morphisms, to abelian groups.
 More generally, a presheaf with values in a category $\mcc$ (sets, rings, modules) is a contravariant functor from open subsets of $X$ to $\mcc$, and sheaves with values in $\mcc$ are defined by the same two axioms.
 Elements of $\mcf(U)$ are **sections** of $\mcf$ over $U$, and elements of $\mcf(X)$ are **global sections**.
@@ -29,6 +29,8 @@ A presheaf is a \dfn{sheaf} if for every open $U$ and every open cover $\ts{U_i}
 - *identity*: a section $s \in \mcf(U)$ with $\ro{s}{U_i} = 0$ for all $i$ is $0$;
 
 - *gluing*: sections $s_i \in \mcf(U_i)$ agreeing on every overlap $U_i \intersect U_j$ come from a section of $\mcf(U)$.
+
+For the empty cover of $\emptyset$, these axioms force $\mcf(\emptyset)=0$.
 :::
 
 ::: {.remark}
@@ -40,9 +42,9 @@ Identity without gluing is a **separated presheaf**. Sheafification of a separat
 
 ::: {.remark title="The equalizer form"}
 Both axioms at once say that
-\[
+$$
 \mcf(U) \to \prod_i \mcf(U_i) \rightrightarrows \prod_{i,j} \mcf(U_i \intersect U_j)
-\]
+$$
 is an equalizer, the two maps being restriction from $U_i$ and from $U_j$ to the overlap.
 Injectivity of the first map is identity; that its image is exactly the equalizer is gluing.
 The equalizer formulation extends directly to sites and descent, where pointwise tests need not be available.
