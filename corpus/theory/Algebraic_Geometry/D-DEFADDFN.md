@@ -20,9 +20,9 @@ prompts:
 
 ::: {.definition title="additive functor"}
 A covariant functor $F: \mca \to \mcb$ between abelian categories is \dfn{additive} if the induced map
-\[
+$$
 \Hom_{\mca}(A, A') \to \Hom_{\mcb}(F(A), F(A'))
-\]
+$$
 is a homomorphism of abelian groups, that is, $F(f+g) = F(f) + F(g)$ for all $f, g \in \Hom(A,A')$.
 :::
 
