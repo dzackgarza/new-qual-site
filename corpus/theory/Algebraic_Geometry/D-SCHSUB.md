@@ -36,14 +36,21 @@ In general, closed subschemes of $X$ correspond to quasicoherent ideal sheaves $
 
 ::: {.proposition title="Closed subscheme sequences"}
 For a closed immersion $i: Z \to X$ with ideal sheaf $\mci$ there is an exact sequence of $\OO_X$-modules
-\[
+$$
 0 \to \mci \to \OO_X \to i_* \OO_Z \to 0 ,
-\]
-and tensoring with a locally free $\OO_X$-module $\mce$ keeps it exact: $0 \to \mci \tensor \mce \to \mce \to i_*(i^* \mce) \to 0$.
+$$
+and tensoring with a locally free $\OO_X$-module $\mce$ keeps it exact:
+$$
+0
+\to \mci\tensor_{\OO_X}\mce
+\to \mce
+\to i_*(i^*\mce)
+\to 0.
+$$
 If $Z = D$ is an effective Cartier divisor, then $\mci = \OO_X(-D) = \OO_X(D)^\vee$, giving
-\[
+$$
 0 \to \OO_X(-D) \to \OO_X \to \OO_D \to 0 , \qquad 0 \to \mcl(-D) \to \mcl \to \ro{\mcl}{D} \to 0
-\]
+$$
 for every invertible sheaf $\mcl$.
 [@Har10a, Proposition II.6.18]
 :::
