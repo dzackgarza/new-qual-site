@@ -25,9 +25,9 @@ prompts:
 ::: {.definition title="$\tilde M$ and $\Gamma_*$"}
 For $S$ a graded ring and $M$ a graded $S$-module, $\tilde M$ is the sheaf on $\Proj S$ with $\tilde M(D_+(f)) = (M_f)_0$, the degree-zero part of the localization.
 Conversely, for $\mcf \in \mods{\OO_X}$ with $X = \Proj S$,
-\[
+$$
 \Gamma_*(\mcf) \da \bigoplus_{n \in \ZZ} \Gamma(X, \mcf(n)) ,
-\]
+$$
 a graded $S$-module, where $\mcf(n) \da \mcf \tensor_{\OO_X} \OO_X(n)$.
 :::
 
