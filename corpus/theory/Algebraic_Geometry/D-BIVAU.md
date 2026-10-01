@@ -23,9 +23,9 @@ prompts:
 
 ::: {.definition title="Zariski topology"}
 The \dfn{Zariski topology} on $\AA^n$ has as its closed sets the vanishing loci
-\[
+$$
 V(J) \da \ts{ p \in \AA^n \st f(p) = 0 \text{ for all } f \in J }
-\]
+$$
 of ideals $J \subseteq k[x_1,\ldots,x_n]$.
 The **distinguished open set** attached to $f$ is $D_f \da \AA^n \sm V(f)$, and these form a basis.
 :::
