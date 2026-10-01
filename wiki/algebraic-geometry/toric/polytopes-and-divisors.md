@@ -41,15 +41,14 @@ Beyond that, the cone over the rational normal curve shows how badly they can di
 
 [[PR-TORPOS]]
 
-A useful order of operations when asked whether a divisor is ample:
-Write $D = \sum a_\rho D_\rho$, compute $P_D$ from the inequalities $\inp{m}{u_\rho} \geq -a_\rho$, and check whether its vertices are in bijection with the maximal cones.
+For $D = \sum a_\rho D_\rho$, compute $P_D$ from the inequalities $\inp{m}{u_\rho} \geq -a_\rho$ and compare its vertices with the maximal cones.
 If they are, $D$ is ample and $h^0$ is the number of lattice points in $P_D$; if two maximal cones share a vertex, the support function failed to crease and $D$ is at best base point free.
 
 [[D-FULNORMPOLY]]
 
 [[FE-FULAVA]]
 
-Very ampleness is the one clause on that list that is not visible on the fan alone, and the example shows what it costs to ignore it: a strictly convex support function, an ample divisor, and a map that is two-to-one instead of an embedding.
+Very ampleness is not visible from the fan alone; [[FE-FULAVA]] gives a strictly convex support function and an ample divisor whose associated map is two-to-one rather than an embedding.
 
 ## Fano and Calabi-Yau
 
@@ -58,4 +57,4 @@ Very ampleness is the one clause on that list that is not visible on the fan alo
 ![The five reflexive polygons of the toric del Pezzo surfaces](/assets/algebraic-geometry/toric/reflexive-polygons-of-toric-del-pezzo-surfaces.png)
 
 Reflexivity is also where toric geometry meets mirror symmetry: a reflexive polytope $P$ gives a Calabi-Yau anticanonical hypersurface in $X_P$, and $P^\circ$ gives its mirror.
-That is beyond what a qualifying exam will ask, but it explains why the $16$ reflexive polygons and the $4319$ reflexive polytopes in dimension three are tabulated at all.
+This mirror construction motivates the classification and tabulation of the $16$ reflexive polygons and the $4319$ reflexive polytopes in dimension three.
