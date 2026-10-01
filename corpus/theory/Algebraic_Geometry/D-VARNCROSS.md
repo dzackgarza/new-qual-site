@@ -23,9 +23,9 @@ prompts:
 ::: {.definition title="Normal crossings"}
 Let $k$ be an algebraically closed field.
 A variety $Y$ of dimension $n$ has a \dfn{normal crossing singularity} at a closed point $p$ if there is an isomorphism of complete local rings
-\[
+$$
 \hat{\OO}_{Y,p} \cong k[[x_0, \ldots, x_n]] / (x_0 x_1 \cdots x_r)
-\]
+$$
 for some $0 \leq r \leq n$.
 So near $p$, analytically, $Y$ looks like $r+1$ coordinate hyperplanes meeting in $\AA^{n+1}$.
 $Y$ has \dfn{normal crossings} if it has a normal crossing singularity or a smooth point at every closed point; the case $r = 0$ is a smooth point.
