@@ -23,19 +23,19 @@ prompts:
 ::: {.definition title="exact sequences and exact functors"}
 In an abelian category $\mca$, a sequence $A \mapsvia{f} B \mapsvia{g} C$ is \dfn{exact at $B$} if $\ker g = \im f$.
 A sequence
-\[
+$$
 0 \to A \mapsvia{f} B \mapsvia{g} C \to 0
-\]
+$$
 is a **short exact sequence** if $f$ is injective, $g$ is surjective, and $\ker g = \im f$.
 
 An additive functor $F: \mca \to \mcb$ is **left exact** if for every short exact sequence $0 \to A \to B \to C \to 0$ the sequence
-\[
+$$
 0 \to F(A) \to F(B) \to F(C)
-\]
+$$
 is exact, and **right exact** if
-\[
+$$
 F(A) \to F(B) \to F(C) \to 0
-\]
+$$
 is exact.
 $F$ is **exact** if it is both, in which case short exact sequences go to short exact sequences.
 :::
