@@ -22,9 +22,9 @@ prompts:
 
 ::: {.definition title="Separated"}
 A morphism $f : X \to Y$ is \dfn{separated} if the diagonal
-\[
+$$
 \Delta_{X/Y} : X \to \fiberprod{X}{Y}{X}
-\]
+$$
 is a closed immersion.
 It is **quasi-separated** if $\Delta_{X/Y}$ is quasicompact, equivalently if for every affine open $V \subseteq Y$ the scheme $f^{-1}(V)$ is quasi-separated in the sense below.
 :::
@@ -37,8 +37,8 @@ A scheme $X$ is **quasi-separated** if the intersection of any two quasicompact 
 ::: {.remark}
 The Hausdorff axiom is not available, because the Zariski topology is never Hausdorff for a positive-dimensional variety: any two nonempty opens meet.
 What survives is the equivalent formulation for topological spaces — $X$ is Hausdorff exactly when the diagonal is closed in $X \times X$ — once the product is taken in the right category.
-That is the whole content of the definition, and it is the answer to why the definition looks the way it does: the *statement* of Hausdorffness transfers even though the *proof technique* does not, provided $X \times X$ means the fibre product of schemes and not the topological product.
+Separatedness transfers this closed-diagonal criterion to schemes, with $X\times_YX$ the fibre product in schemes rather than the topological product.
 
-Quasi-separatedness is the same move applied one notch weaker, and it is a finiteness condition rather than a geometric one.
+Quasi-separatedness replaces the closed-diagonal condition by quasicompactness of the diagonal.
 Every separated morphism is quasi-separated, every morphism of Noetherian schemes is quasi-separated, and it is only for non-Noetherian schemes that one has to say so.
 :::
