@@ -17,5 +17,5 @@ review: draft
 
 ::: {.definition}
 Let $p$ be a prime.
-A \dfn{$p$-group} is a group of order $p^n$ for some integer $n\geq 1$.
+A \dfn{$p$-group} is a group of order $p^n$ for some integer $n\geq 0$.
 :::
