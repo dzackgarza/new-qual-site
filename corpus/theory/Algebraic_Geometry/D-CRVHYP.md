@@ -29,9 +29,9 @@ A curve $C$ of genus $g \geq 2$ is \dfn{hyperelliptic} if it admits a finite mor
 ::: {.proposition}
 A hyperelliptic curve has exactly one $g^1_2$.
 The canonical system $\abs{K}$ is base-point free for every $g \geq 2$, so it always defines a morphism $C \to \PP^{g-1}$; on a hyperelliptic curve that morphism factors as
-\[
+$$
 C \to \PP^1 \to \PP^{g-1} ,
-\]
+$$
 the degree-two map followed by the $(g-1)$-uple embedding, whose image is a rational normal curve of degree $g-1$.
 Equivalently $\abs{K} = (g-1)\, g^1_2$.
 :::
