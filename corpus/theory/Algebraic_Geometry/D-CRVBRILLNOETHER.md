@@ -41,6 +41,6 @@ Let $g$, $r$, $d$ be as above.
 
 ::: {.example}
 A $g^1_d$ has $\rho(g,1,d) = 2d - g - 2$.
-So every curve of genus $g$ has a map of degree $\lceil (g+2)/2 \rceil$ to $\PP^1$, and the general curve has no map of smaller degree: its gonality is $\lfloor (g+3)/2 \rfloor$.
+So every curve of genus $g$ has a map of degree at most $\lceil (g+2)/2 \rceil$ to $\PP^1$, after removing the base divisor of such a pencil, and the general curve has no map of smaller degree: its gonality is $\lfloor (g+3)/2 \rfloor$.
 For $d = 2$, $\rho = 2 - g$, which is negative for $g \geq 3$; this is why every curve of genus $2$ is hyperelliptic while the general curve of genus $g \geq 3$ is not.
 :::
