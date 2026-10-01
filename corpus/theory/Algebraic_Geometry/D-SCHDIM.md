@@ -22,9 +22,9 @@ prompts:
 
 ::: {.definition}
 The \dfn{dimension} of $X$ is the supremum of $n$ over chains
-\[
+$$
 Z_0 \subsetneq Z_1 \subsetneq \cdots \subsetneq Z_n
-\]
+$$
 of irreducible closed subsets of $X$; the length counts links, not sets.
 The **codimension** of an irreducible closed $Z \subseteq X$ is the supremum of lengths of such chains starting at $Z_0 = Z$; for arbitrary closed $Y$ take the infimum over irreducible $Z \subseteq Y$.
 :::
