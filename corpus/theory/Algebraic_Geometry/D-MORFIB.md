@@ -23,9 +23,9 @@ prompts:
 
 ::: {.definition title="Fibre"}
 For $f : X \to Y$ and $y \in Y$ with residue field $\kappa(y) = \OO_{Y,y}/\mfm_y$, the \dfn{fibre} is
-\[
+$$
 X_y \da \fiberprod{X}{Y}{\Spec \kappa(y)} .
-\]
+$$
 :::
 
 ::: {.definition title="Geometric points and fibres"}
