@@ -23,9 +23,9 @@ prompts:
 
 ::: {.definition title="full, faithful, fully faithful"}
 A covariant functor $F: \mca \to \mcb$ is \dfn{faithful} if for all objects $A, A'$ the induced map
-\[
+$$
 \Mor_{\mca}(A, A') \to \Mor_{\mcb}(F(A), F(A'))
-\]
+$$
 is injective, **full** if that map is surjective, and **fully faithful** if it is bijective.
 
 A subcategory $\mca'$ of $\mca$ is called **full** if its inclusion functor is full: it may have fewer objects, but it never loses morphisms between the objects it keeps.
