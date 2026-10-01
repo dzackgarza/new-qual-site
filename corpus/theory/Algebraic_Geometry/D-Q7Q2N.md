@@ -53,9 +53,9 @@ so $X_\Sigma = \PP^1$.
 :::
 
 ::: {.definition title="The variety"}
-\[
+$$
 \sigma \rightsquigarrow S_\sigma = \sigma\dual \intersect M \rightsquigarrow U_\sigma = \Spec k[S_\sigma] ,
-\]
+$$
 and $X_\Sigma$ is obtained by gluing the $U_\sigma$ along the $U_{\sigma \intersect \tau}$.
 :::
 
