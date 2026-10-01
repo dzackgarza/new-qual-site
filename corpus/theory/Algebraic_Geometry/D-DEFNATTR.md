@@ -19,13 +19,13 @@ prompts:
 ::: {.definition title="natural transformation"}
 Let $F, G: \mcc \to \mcd$ be covariant functors.
 A \dfn{natural transformation} $F \to G$ is the data of maps $F(X) \to G(X)$ in $\mcd$ for all $X \in \mcc$, such that for every $f: X \to Y$ in $\mcc$ the square
-\[
+$$
 \begin{matrix}
 F(X) & \to & G(X) \\
 \downarrow & & \downarrow \\
 F(Y) & \to & G(Y)
 \end{matrix}
-\]
+$$
 commutes.
 For contravariant functors one asks the analogous square, with the vertical arrows reversed, to commute.
 :::
