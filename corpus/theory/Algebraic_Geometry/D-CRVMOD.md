@@ -22,18 +22,29 @@ prompts:
 ---
 
 ::: {.definition title="Coarse moduli space"}
-A variety $M_g$ is a \dfn{coarse moduli space} for curves of genus $g$ when:
+Let $\mathcal F_g(T)$ be the set of isomorphism classes of flat families of smooth projective curves of genus $g$ over $T$.
+A variety $M_g$ is a \dfn{coarse moduli space} for $\mathcal F_g$ if there is a natural transformation
+$$
+\eta\colon \mathcal F_g \longrightarrow h_{M_g},
+\qquad
+h_{M_g}(T)=\Hom(T,M_g),
+$$
+such that:
 
-1. the closed points of $M_g$ are in bijection with isomorphism classes of smooth projective curves of genus $g$, and
+1. for every algebraically closed field extension $K$, the map
+$$
+\eta_K\colon \mathcal F_g(\Spec K)\longrightarrow M_g(K)
+$$
+is a bijection, and
 
-2. every flat family $\mathcal{X} \to T$ whose fibres are such curves induces a morphism $h\colon T \to M_g$ with $h(t)$ the class of the fibre $\mathcal{X}_t$.
+2. for every scheme $N$ and every natural transformation $\phi\colon\mathcal F_g\to h_N$, there is a unique morphism $u\colon M_g\to N$ such that $\phi=h_u\circ\eta$.
 :::
 
 ::: {.definition title="Fine moduli space"}
-$M_g$ is a \dfn{fine moduli space} when it represents the functor sending $T$ to the set of flat families over $T$ up to isomorphism: the assignment of (2) is a bijection
-\[
+$M_g$ is a \dfn{fine moduli space} when it represents $\mathcal F_g$: there is a natural bijection
+$$
 \operatorname{Hom}(T, M_g) \longleftrightarrow \ts{\text{families over } T}/{\cong}
-\]
+$$
 natural in $T$.
 Equivalently $M_g$ carries a **universal family** $\mathcal{U} \to M_g$ from which every family is pulled back along its own classifying map, in exactly one way.
 :::
@@ -49,9 +60,9 @@ The classifying map of any one of them is constant, being the point $[C]$; a uni
 
 The standard witness is a quadratic twist.
 Over $T = \AA^1 \smz$ with coordinate $t$, put
-\[
+$$
 \mathcal{E}_t : y^2 = x^3 + a t^2 x + b t^3 .
-\]
+$$
 Over $k = \kbar$ the substitution $x = t u$, $y = t^{3/2} v$ identifies each fibre with the fixed curve $v^2 = u^3 + au + b$, so every fibre is isomorphic and the classifying map is constant.
 The family is not $E \times T$: its class in $H^1(T, \mu_2)$ is the squaring cover of $\mathbf{G}_m$, which is nontrivial.
 The $\mu_2$ here is $\pm 1 \subseteq \Aut(E, p_0)$, so the example is powered by exactly the automorphism that the moduli problem forgets.
