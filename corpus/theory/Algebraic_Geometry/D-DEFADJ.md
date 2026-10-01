@@ -21,9 +21,9 @@ prompts:
 ::: {.definition title="adjoint"}
 Suppose $\mca$ and $\mcb$ are categories with functors $F: \mca \to \mcb$ and $G: \mcb \to \mca$.
 $F$ and $G$ are \dfn{adjoint} if there is a bijection
-\[
+$$
 \tau_{AB}: \Mor_{\mcb}(F(A), B) \to \Mor_{\mca}(A, G(B))
-\]
+$$
 for all $A \in \mca$ and $B \in \mcb$, natural in both arguments.
 We call $F$ the **left adjoint** and $G$ the **right adjoint**.
 
