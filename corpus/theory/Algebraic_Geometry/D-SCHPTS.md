@@ -39,8 +39,15 @@ For a morphism $f \colon X \to Y$ with $Y$ irreducible, a property holds for the
 :::
 
 ::: {.example}
-General and generic differ.
-On $\AA^1_k = \Spec k[t]$ over an algebraically closed field $k$, the property "$\kappa(x) = k$" holds at a general point, since it holds at every closed point and the closed points form the dense open set $\AA^1_k \setminus \{\eta\}$, but it fails at the generic point $\eta$, where $\kappa(\eta) = k(t)$.
+General and generic are different notions.
+The generic point is one actual point $\eta$, whereas saying that a property holds at a general point means that it holds at every point of some dense open subset.
+Consequently a general-point property always holds at $\eta$.
+The converse can fail: on $\AA^1_k=\Spec k[t]$ over an algebraically closed field, the property
+$$
+\operatorname{trdeg}_k\kappa(x)=1
+$$
+holds at the generic point $\eta$, where $\kappa(\eta)=k(t)$, but not at any closed point, so it does not hold on any dense open subset.
+Conversely, "$\kappa(x)=k$" holds at every closed point but is not a general-point property, because every nonempty open subset contains $\eta$.
 For the family $V(xy - t) \to \AA^1_t$, the general fibre is a smooth conic $xy = c$ with $c \neq 0$, while the generic fibre is the curve $xy = t$ over the field $k(t)$.
 :::
 
