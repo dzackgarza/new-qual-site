@@ -22,9 +22,9 @@ prompts:
 ::: {.example}
 Let $C$ be a singular curve with normalization $\nu : \tilde{C} \to C$.
 Comparing units gives the exact sequence
-\[
+$$
 0 \to \OO_C^* \to \nu_* \OO_{\tilde{C}}^* \to \mcs \to 0
-\]
+$$
 with $\mcs$ a skyscraper at the singular points, and its cohomology sequence computes $\Pic(C)$ from $\Pic(\tilde{C})$ and the local unit groups.
 
 For the **cusp** $A = k[t^2,t^3] \subseteq k[t]$, the conductor square gives $\Pic(\Spec A) \cong k^+ = \GG_a$.
