@@ -22,22 +22,22 @@ prompts:
 ::: {.definition title="Faces"}
 Let $P \subseteq M_\RR$ be a lattice polytope.
 A face is a slice by a supporting affine hyperplane,
-\[
+$$
 F = P \intersect \ts{m \in M_\RR \st \inp{m}{u} = r}, \qquad \inp{m}{u} \geq r \text{ on } P ,
-\]
+$$
 for some $u \in N$ and $r \in \RR$.
 The facets are the faces of codimension one, and $P$ has the facet presentation
-\[
+$$
 P = \ts{ m \in M_\RR \st \inp{m}{u_F} \geq -a_F \text{ for every facet } F } ,
-\]
+$$
 where $u_F \in N$ is the primitive inward normal to $F$.
 :::
 
 ::: {.definition title="The normal fan"}
 For a face $F \leq P$ set
-\[
+$$
 \sigma_F = \Cone\big( u_F' \st F \leq F',\ F' \text{ a facet} \big) \subseteq N_\RR .
-\]
+$$
 These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \da X_{\Sigma_P}$.
 Vertices of $P$ give the maximal cones, facets of $P$ give the rays, and the whole poset is reversed.
 The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \Cone(P \cap M - m_i)\dual$.
@@ -58,9 +58,27 @@ The same toric variety $X_P$ has three equivalent descriptions.
 
 1. The normal fan, as above.
 
-2. Cones over the proper faces of the polar dual $P^\circ$ — the normal fan of $P$ is the fan of cones over faces of $P^\circ$.
+2. If $0\in\operatorname{int}P$, define
+   $$
+   P^\circ
+   \coloneqq
+   \ts{
+   u\in N_\RR
+   \st
+   \inp{m}{u}\geq-1
+   \text{ for every }m\in P
+   }.
+   $$
+   Then $P^\circ$ is a rational polytope and $\Sigma_P$ is the fan of cones over its proper faces.
 
-3. A direct gluing: $X_P = \Union_{m \in P \intersect M} \Spec k[\sigma_{\hat m}\dual \intersect M]$ with $\sigma_{\hat m} = \Cone(P \intersect M - m)$, the cone of directions out of the vertex $m$.
+3. A direct affine cover indexed by the vertices:
+   $$
+   X_P
+   =
+   \Union_{v\in\operatorname{Vert}(P)}
+   \Spec k[\Cone(P-v)\intersect M].
+   $$
+   Here $\Cone(P-v)\subseteq M_\RR$ is the cone of directions out of the vertex $v$, dual to the maximal normal cone $\sigma_v\subseteq N_\RR$.
 
 The direct gluing description realizes explicitly what the normal-fan and polar-dual descriptions encode combinatorially.
 :::
