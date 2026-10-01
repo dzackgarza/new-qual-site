@@ -21,9 +21,9 @@ prompts:
 
 ::: {.definition title="Noetherian ring"}
 A ring $A$ is \dfn{Noetherian} if it satisfies the ascending chain condition on ideals: any increasing chain
-\[
+$$
 I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
-\]
+$$
 of ideals of $A$ eventually stabilises.
 Equivalently, every ideal of $A$ is finitely generated.
 An $A$-module $M$ is Noetherian if its submodules satisfy the same condition.
