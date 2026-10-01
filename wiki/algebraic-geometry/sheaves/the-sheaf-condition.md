@@ -27,13 +27,13 @@ The two failures are detected by different axioms.
 [[D-A7LCT]]
 
 Sheafification changes no stalk.
-Consequently every stalk-local construction — kernels, images, exactness — is insensitive to sheafification.
-The constructions that are not stalk-local, cokernels first among them, are exactly the ones that need it.
+Consequently a sequence of sheaves is exact exactly when the corresponding sequence of stalks is exact.
+Kernels are computed sectionwise, while the sectionwise presheaf image and cokernel need not be sheaves and are sheafified to obtain the image and cokernel in the sheaf category; their stalks are still the image and cokernel of the stalk maps.
 
 ## Sheafification as a space over $X$
 
-The compatible-families formula is correct and tells nobody why it is the right formula.
-The espace étalé does: a sheaf is a space over $X$ whose projection is a local homeomorphism, and the sections of $\mcf^+$ are its continuous sections.
+The compatible-families formula gives the sheafification explicitly.
+The espace étalé gives a geometric realization: a sheaf is a space over $X$ whose projection is a local homeomorphism, and the sections of $\mcf^+$ are its continuous sections.
 
 [[D-VJFAP]]
 
