@@ -22,11 +22,11 @@ prompts:
 
 ::: {.definition title="Unramified"}
 $f : X \to Y$ locally of finite type is \dfn{unramified} if for every $x \in X$ with $y = f(x)$,
-\[
+$$
 f^\sharp(\mfm_y) \OO_{X,x} = \mfm_x
 \qquad\text{and}\qquad
 \kappa(x)/\kappa(y) \text{ is a finite separable extension.}
-\]
+$$
 Equivalently, $\Omega_{X/Y} = 0$; equivalently, $\Delta_{X/Y}$ is an open immersion.
 :::
 
