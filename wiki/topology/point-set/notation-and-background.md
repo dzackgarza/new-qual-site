@@ -26,10 +26,10 @@ Further reading:
 
 | Notation                                             | Definition                          |
 |------------------------------------------------------|-------------------------------------|
-| $X\cross Y, \prod_{j\in J} X_j, X^{\cross n}$        | Direct products                     |
-| $X\oplus Y, \bigoplus_{j\in J} X_j, X^{\oplus n}$    | Direct sums                         |
-| $X\tensor Y, \bigotimes_{j\in J} X_j, X^{\tensor n}$ | Tensor products                     |
-| $X\ast Y, \ast_{j\in J} X_j, X^{\ast n}$             | Free products                       |
+| $X\cross Y, \prod_{j\in J} X_j, X^{\cross n}$ | Cartesian products of spaces |
+| $M\oplus N, \bigoplus_{j\in J} M_j, M^{\oplus n}$ | Direct sums of modules over a fixed ring $R$ |
+| $M\tensor_R N, M_1\tensor_R\cdots\tensor_R M_n$ | Tensor products of $R$-modules |
+| $G\ast H, \ast_{j\in J} G_j, G^{\ast n}$ | Free products of groups |
 | $\ZZ^n$                                              | The free abelian group of rank $n$  |
 | $F_n, \ZZ^{\ast n}$                                  | The free group on $n$ generators    |
 | $\pi_0(X)$                                           | The set of path components of $X$ |
@@ -42,8 +42,8 @@ The identity element of a group $G$ is written $e_G$, $1_G$, or $0_G$.
 :::
 
 ::: {.remark title="Direct sums and direct products"}
-For a family of modules $(X_j)_{j\in J}$, the direct product $\prod_{j\in J} X_j$ is the set of all tuples $(x_j)_{j\in J}$ with coordinatewise operations, and the direct sum $\bigoplus_{j\in J} X_j$ is the submodule of tuples with only finitely many nonzero entries.
-The inclusion $\bigoplus_{j\in J} X_j \injects \prod_{j\in J} X_j$ is an isomorphism when $J$ is finite, and it is not surjective when infinitely many $X_j$ are nonzero.
+For a ring $R$ and a family of $R$-modules $(M_j)_{j\in J}$, the direct product $\prod_{j\in J} M_j$ is the set of all tuples $(m_j)_{j\in J}$ with coordinatewise operations, and the direct sum $\bigoplus_{j\in J} M_j$ is the submodule of tuples with only finitely many nonzero entries.
+The inclusion $\bigoplus_{j\in J} M_j \injects \prod_{j\in J} M_j$ is an isomorphism when $J$ is finite, and it is not surjective when infinitely many $M_j$ are nonzero.
 
 :::
 
