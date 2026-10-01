@@ -27,7 +27,13 @@ prompts:
 Let $X$ be a Noetherian scheme and $Z \subseteq X$ a closed subscheme with ideal sheaf $\mathcal{I}$.
 The \dfn{Rees algebra} of $\mathcal{I}$ is the graded quasicoherent $\OO_X$-algebra $\bigoplus_{d \geq 0} \mathcal{I}^d$, with $\mathcal{I}^0 = \OO_X$; it is generated in degree $1$.
 The \dfn{blowup} of $X$ along $Z$ is the $X$-scheme
-$$\pi \colon \Bl_Z X \coloneqq \operatorname{\mathbf{Proj}}_X \bigoplus_{d \geq 0} \mathcal{I}^d \to X,$$
+$$
+\pi \colon \Bl_Z X
+\coloneqq
+\operatorname{\mathbf{Proj}}_X
+\bigoplus_{d \geq 0} \mathcal{I}^d
+\longrightarrow X,
+$$
 using the relative Proj of [[D-SCHRELSPECPROJ]].
 The \dfn{exceptional divisor} is the closed subscheme $E = \pi^{-1}(Z)$ of $\Bl_Z X$, with ideal sheaf $\mathcal{I} \cdot \OO_{\Bl_Z X}$.
 :::
