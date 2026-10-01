@@ -21,9 +21,9 @@ prompts:
 
 ::: {.definition title="Dimension"}
 The \dfn{dimension} of a topological space is the supremum of the lengths $n$ of chains
-\[
+$$
 Z_0 \subsetneq Z_1 \subsetneq \cdots \subsetneq Z_n
-\]
+$$
 of irreducible closed subsets.
 :::
 
@@ -45,9 +45,9 @@ If $Y$ is a quasi-affine variety, then $\dim Y = \dim \closure{Y}$, where $\clos
 
 ::: {.remark}
 Hence for an affine variety $X$ over $k$,
-\[
+$$
 \dim X = \krulldim A(X) = \trdeg_k k(X) ,
-\]
+$$
 and in particular $\dim \AA^n = n$ [@Har10a, Proposition I.1.9].
 A computation usually wants the last description: the dimension of $V(f) \subseteq \AA^n$ for $f$ nonconstant is $n-1$ because one algebraic relation drops the transcendence degree by one.
 :::
