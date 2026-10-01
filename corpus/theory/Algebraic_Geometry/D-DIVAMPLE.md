@@ -38,16 +38,22 @@ Equivalently, $D$ is linearly equivalent to a hyperplane section under some proj
 
 ::: {.proposition title="Tensor products and finite pullback"}
 On a noetherian scheme, the tensor product of an ample invertible sheaf with a globally generated invertible sheaf is ample, as is the tensor product of two ample invertible sheaves.
-If $\mcl$ is ample and $\mcm$ is any invertible sheaf, then $\mcm\otimes\mcl^{\otimes n}$ is ample for all sufficiently large $n$ [@Har10a, Exercise II.7.5].
+If $\mcl$ is ample and $\mcm$ is any invertible sheaf, then
+$\mcm\tensor_{\OO_X}(\mcl\tensorpower{\OO_X}{n})$ is ample for all sufficiently large $n$ [@Har10a, Exercise II.7.5].
 For a finite morphism $f:Y\to X$ of noetherian schemes and an ample invertible sheaf $\mcl$ on $X$, the pullback $f^*\mcl$ is ample.
 Indeed, for a coherent sheaf $\mathcal F$ on $Y$, the sheaf $f_*\mathcal F$ is coherent by [[P-AGH255PUSHCOH]].
-For large $n$, pull back the global generators of $f_*\mathcal F\otimes\mcl^{\otimes n}$ and use the surjection $f^*f_*\mathcal F\to\mathcal F$ to generate $\mathcal F\otimes(f^*\mcl)^{\otimes n}$.
-On $f^{-1}(\Spec A)=\Spec B$, with $\mathcal F$ represented by a finite $B$-module $M$, this surjection is $B\otimes_A M\to M$, $b\otimes m\mapsto bm$.
+For large $n$, pull back the global generators of
+$f_*\mathcal F\tensor_{\OO_X}(\mcl\tensorpower{\OO_X}{n})$
+and use the surjection $f^*f_*\mathcal F\to\mathcal F$ to generate
+$\mathcal F\tensor_{\OO_Y}((f^*\mcl)\tensorpower{\OO_Y}{n})$.
+On $f^{-1}(\Spec A)=\Spec B$, with $\mathcal F$ represented by a finite $B$-module $M$, this surjection is
+$B\tensor_A M\to M$, $b\tensor_A m\mapsto bm$.
 Thus the argument does not require properness over a ground field or surjectivity of $f$.
 :::
 
 ::: {.example title="An arbitrary twist need not remain ample"}
-On $\PP_k^1$, the sheaf $\OO(1)$ is ample, but $\OO(1)\otimes\OO(-2)\cong\OO(-1)$ is not.
+On $\PP_k^1$, the sheaf $\OO(1)$ is ample, but
+$\OO(1)\tensor_{\OO_{\PP^1_k}}\OO(-2)\cong\OO(-1)$ is not.
 Every positive tensor power of $\OO(-1)$ has no global sections, so it fails the ample global-generation condition even with the coherent sheaf $\OO_{\PP^1}$ [@Har10a, Proposition II.5.13].
 :::
 
