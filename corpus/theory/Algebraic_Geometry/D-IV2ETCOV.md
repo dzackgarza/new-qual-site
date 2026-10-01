@@ -37,9 +37,9 @@ $\PP^1_k$ over $k = \kbar$ is simply connected, in every characteristic.
 Let $f : X \to \PP^1$ be an étale cover; it is enough to treat $X$ connected, and then to show $f$ is an isomorphism.
 $X$ is regular because $f$ is étale and $\PP^1$ is smooth over $k$, and a connected regular scheme is irreducible, so $X$ is a curve; $f$ is finite, so $X$ is projective; $f$ is unramified, so $k(X)/k(\PP^1)$ is separable.
 Riemann--Hurwitz therefore applies, and $R = 0$ since $f$ is unramified, so with $n = \deg f$,
-\[
+$$
 2 g_X - 2 = n(2 \cdot 0 - 2) = -2n .
-\]
+$$
 Then $g_X \geq 0$ gives $-2n \geq -2$, so $n = 1$ and $g_X = 0$, and a finite morphism of degree $1$ between curves is an isomorphism.
 :::
 
