@@ -26,9 +26,9 @@ prompts:
 An object $I$ of an abelian category $\mca$ is \dfn{injective} if $\Hom(\wait, I)$ is an exact contravariant functor from $\mca$ to abelian groups.
 
 An **injective resolution** of $A$ is a complex $I^\bullet$ of injective objects with a map $A \to I^0$ such that
-\[
+$$
 0 \to A \to I^0 \to I^1 \to \cdots
-\]
+$$
 is exact.
 
 If every object of $\mca$ is isomorphic to a subobject of an injective object, then $\mca$ **has enough injectives**.
