@@ -27,9 +27,31 @@ By the proposition this *is* the failure of separatedness, not merely an illustr
 :::
 
 ::: {.example title="Separated but not reduced"}
-Take $Z = \Spec k[\varepsilon]/(\varepsilon^2)$ and $X = \AA^1 = \Spec k[x]$, with $g$ and $h$ given by $x \mapsto 0$ and $x \mapsto \varepsilon$.
-Both are morphisms to a separated $X$, and they agree on the unique point of $Z$ — indeed on every reduced subscheme of $Z$ — but $g \neq h$.
-The dense open here is not proper, and it need not be: on a nonreduced base, agreeing topologically is not agreeing.
+Let
+$$
+Z
+=
+\Spec A,
+\qquad
+A
+=
+k[t,\varepsilon]/(\varepsilon^2,t\varepsilon),
+$$
+and let $X=\AA^1_k=\Spec k[x]$.
+Define $g,h\colon Z\to X$ by the ring maps
+$$
+g^\sharp(x)=0,
+\qquad
+h^\sharp(x)=\varepsilon.
+$$
+They are distinct because $\varepsilon\neq0$ in $A$.
+On the dense open $D(t)\subseteq Z$, however, $t$ is invertible and the relation $t\varepsilon=0$ forces $\varepsilon=0$, so
+$$
+\restrictionof{g}{D(t)}
+=
+\restrictionof{h}{D(t)}.
+$$
+Thus the reducedness hypothesis cannot be removed even when the target is separated and the two morphisms agree on a genuine dense open subscheme.
 :::
 
 ::: {.remark}
