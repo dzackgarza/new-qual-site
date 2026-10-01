@@ -38,9 +38,9 @@ Finite means finitely generated as a module, while finite type means finitely ge
 [[D-MORPROJ]]
 
 The implication chain is
-\[
+$$
 \text{closed immersion} \implies \text{finite} \implies \text{projective} \implies \text{proper} \implies \text{universally closed} ,
-\]
+$$
 together with the fact that finite type sits underneath all of it and is implied by each.
 Standard converse counterexamples include $\PP^1_k \to \Spec k$, which is projective but not finite, and the hyperbola projection, which is quasi-finite but not proper.
 
