@@ -21,9 +21,9 @@ prompts:
 ::: {.definition title="Godement resolution"}
 Let $\mcf$ be a sheaf of abelian groups on a topological space $X$.
 Put
-\[
+$$
 \mathcal{G}^0(\mcf)(U) = \prod_{x \in U} \mcf_x ,
-\]
+$$
 the sheaf of all, not necessarily continuous, sections of the espace étalé, with the injection $\mcf \to \mathcal{G}^0(\mcf)$ sending $s$ to its germs.
 Inductively, with $\mathcal{Z}^0 = \mcf$ and $\mathcal{Z}^{n+1} = \operatorname{coker}\big(\mathcal{Z}^{n} \to \mathcal{G}^0(\mathcal{Z}^{n})\big)$, set $\mathcal{G}^n(\mcf) = \mathcal{G}^0(\mathcal{Z}^n)$ with differential $\mathcal{G}^n(\mcf) \to \mathcal{Z}^{n+1} \to \mathcal{G}^{n+1}(\mcf)$.
 The complex $0 \to \mcf \to \mathcal{G}^0(\mcf) \to \mathcal{G}^1(\mcf) \to \cdots$ is the \dfn{Godement resolution}.
