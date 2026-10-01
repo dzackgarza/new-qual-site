@@ -34,5 +34,5 @@ An element of $\mcf_p$ is a \dfn{germ} of a section at $p$: a pair $(U, s)$ with
 ::: {.remark}
 The colimit is filtered, which is what makes the stalk behave: filtered colimits are exact, so passing to stalks is exact, and that is why every diagram-chasing notion for sheaves can be checked there.
 
-A germ remembers a section only near $p$, so it is strictly less information than a section, and strictly more than a value: on the sheaf of smooth functions the germ at $0$ knows every derivative, while the value knows none.
+For the sheaf of smooth functions, a germ remembers the section only near $p$ and retains strictly more information than its value at $p$: the germ at $0$ determines every derivative there, while the value alone determines none of them.
 :::
