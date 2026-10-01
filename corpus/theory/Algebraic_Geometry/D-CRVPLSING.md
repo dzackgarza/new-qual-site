@@ -25,9 +25,9 @@ prompts:
 ::: {.definition title="Delta invariant"}
 Let $p$ be a singular point of a curve $C$ with normalisation $\nu : \tilde C \to C$.
 Then
-\[
+$$
 \delta_p \da \dim_k \qty{ \qty{\nu_* \OO_{\tilde C} / \OO_C}_p } ,
-\]
+$$
 a finite number, and $r_p$ denotes the number of analytic branches of $C$ at $p$.
 :::
 
@@ -45,9 +45,9 @@ More generally $A_n : y^2 = x^{n+1}$ has $\delta_p = \floor{(n+1)/2}$, and an or
 :::
 
 ::: {.proposition title="Genus drop"}
-\[
+$$
 p_a(C) - g(\tilde C) = \sum_{p \in \Sing C} \delta_p .
-\]
+$$
 For a plane curve of degree $d$ this reads $g = \binom{d-1}{2} - \sum_p \delta_p$.
 :::
 
