@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-LPJLD
 kind: proposition
-title: $V^*\otimes W\cong\Hom(V,W)$ in finite dimensions
+title: $V^*\otimes_k W\cong\Hom_k(V,W)$ in finite dimensions
 slogan: 'For finite-dimensional $V$, $V^*\otimes W$ is the space of linear maps $V\to W$.'
 classification:
   areas:
@@ -21,7 +21,7 @@ The $k$-linear map
 $$
 \begin{aligned}
 V\dual \tensor_k W &\to \Hom_k(V, W) \\
-\tilde v \tensor w &\mapsto \big(x \mapsto \tilde v(x)\, w\big)
+\tilde v \tensor_k w &\mapsto \big(x \mapsto \tilde v(x)\, w\big)
 \end{aligned}
 $$
 is an isomorphism.
