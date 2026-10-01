@@ -28,5 +28,13 @@ Over an infinite field choose $z$ distinct from every $p_i$ and $q_j$; then $(z,
 :::
 
 ::: {.remark}
-The product topology is strictly coarser: it sees only finite unions of horizontal and vertical lines, and no curve that is not one. The same phenomenon recurs for schemes: $\Spec$ does not take products to products, so the product in the category of varieties is not the topological product.
+The product topology is strictly coarser than the Zariski topology on the scheme product.
+Categorically,
+$$
+\Spec(A\tensor_k B)
+\cong
+\Spec A\times_{\Spec k}\Spec B,
+$$
+but the underlying topological space of this fibre product is generally not the product of the underlying Zariski spaces.
+The diagonal in $\AA^1_k\times_k\AA^1_k$ is the basic example of a closed subset detected by the scheme product and missed by the product topology.
 :::
