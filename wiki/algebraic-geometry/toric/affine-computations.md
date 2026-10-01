@@ -36,8 +36,8 @@ It is $1$ exactly when the cone is smooth, and in general it is the order of the
 
 [[D-FULSAT]]
 
-A semigroup handed to you need not be the semigroup of a cone.
-Saturation tests whether the semigroup already comes from the lattice points of its cone; passing to the saturation gives the normalization.
+A finitely generated affine semigroup need not contain every lattice point in the cone it spans.
+Saturation tests whether it already equals the lattice points of that cone in its group completion; passing to the saturation gives the normalization of the semigroup ring.
 
 ## The standard singular cone
 
