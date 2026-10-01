@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="The homogeneous spectrum"}
-Let $S = \bigoplus_{d \geq 0} S_d$ be a graded ring and $S_+ \da \bigoplus_{d \geq 1} S_d$ the \dfn{irrelevant ideal}. Then $\Proj S$ is the set of homogeneous primes $\mfp$ with $\mfp \not\supseteq S_+$, topologised by the closed sets $V(\mfa) = \ts{\mfp \st \mfp \supseteq \mfa}$ for $\mfa$ homogeneous.
+Let $S = \bigoplus_{d \geq 0} S_d$ be a nonnegatively graded commutative ring and $S_+ \da \bigoplus_{d \geq 1} S_d$ the \dfn{irrelevant ideal}. Then $\Proj S$ is the set of homogeneous primes $\mfp$ with $\mfp \not\supseteq S_+$, topologised by the closed sets $V(\mfa) = \ts{\mfp \st \mfp \supseteq \mfa}$ for $\mfa$ homogeneous.
 Its structure sheaf sends $U$ to the functions $s: U \to \coprod_{\mfp \in U} S_{(\mfp)}$ with $s(\mfp) \in S_{(\mfp)}$ and locally of the form $a/f$ with $a, f$ homogeneous of the *same* degree and $f \notin \mfp$, where $S_{(\mfp)}$ is the degree-zero part of the homogeneous localisation.
 :::
 
@@ -31,6 +31,7 @@ Each clause removes an affine-cone artifact from the projective construction.
 
 *Degree zero* fractions only, because a ratio $a/f$ of equal degrees is the thing that is constant on lines, hence an actual function on the projective object.
 
-*Discard $V(S_+)$*, because $S_+$ is the origin of the affine cone, and $\Proj$ is the set of lines through it.
-Keeping the irrelevant ideal would add one extra point below everything, which is precisely the point being blown down.
+*Discard $V(S_+)$*, because the primes containing all positive-degree elements belong to the affine-cone locus that projectivization removes.
+Since $S/S_+\cong S_0$, this closed subset of $\Spec S$ is canonically $\Spec S_0$.
+For $S=k[x_0,\ldots,x_n]$ it is the single affine origin, but over a general base it is an entire copy of the base rather than one extra point.
 :::
