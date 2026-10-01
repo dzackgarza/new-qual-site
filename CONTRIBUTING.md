@@ -165,6 +165,9 @@ A card that records a source's variant of a definition carries a `variant-of` re
 Read the definition card, and the cards it links, before writing a passage that depends on the notion.
 If that card conflicts with the literature, correct the card and repair the pages that depend on it.
 A definition-shaped sentence of running prose has no card ID and is not a defining occurrence.
+A use of a standard notion links its definition card (`MA-2`); if the corpus has no card for the notion, add one.
+A reminder of a definition says "Recall" and links the card: "Recall that a `[[D-…|left $A$-module]]` is …" (`DEF-17`, `PROSE-04`), never "is defined in `[[D-…]]`; it is …".
+Notation keeps its meaning across the cards a page transcludes (`NOT-3`, `MA-4`).
 
 ### Statement blocks (`DEF-4`, `SEC-*`)
 
@@ -181,10 +184,14 @@ uniformly on compact subsets of $\Omega$.
 ```
 
 A section's primary block may be a `::: {.proposition}` that states a standard result with a citation and no proof (`QUAL-10`).
+This is the corpus's proof obligation (`SEC-6`, `EX-2`): theory cards and wiki pages state and cite results; they carry no proof obligation.
+An implication between defined notions follows the definition as its own `::: {.proposition}` block; an example or a comparison is its own `::: {.example}` or `::: {.remark}` block (`DEF-15`, `DEF-16`).
+One `::: {.definition}` block may define an explicitly enumerated family of predicates on the same data, such as symmetric, skew-symmetric, and alternating bilinear forms (`DEF-15`).
 
 ### Definiendum (`DEF-26`, `PR-10`)
 
 The term being defined is marked `\dfn{term}` at its defining occurrence and nowhere else.
+`\dfn` is never replaced by `**bold**`, `*italic*`, or other emphasis; its style is set in one place.
 A remark, example, or proof is a fenced block, not a paragraph with a run-in label (`STYLE-07`).
 
 ### Links (`XREF-1`, `XREF-4`, `XREF-5`)
@@ -200,6 +207,8 @@ A page or section named after a mathematical term lets the reader reach the inte
 
 ### Citations (`CITE-1`)
 
+A citation is a Pandoc citation with a Better BibTeX key.
+Zotero is the source of truth for bibliographic metadata; if a work is not in Zotero, add it there first.
 A stable permalink whose job is to take the reader to a canonical definition or theorem is navigation under `SOURCE-02`; bibliographic claims about that work still go through the bibliography.
 
 ### Remarks on the public site (`SEC-7`)
@@ -207,6 +216,14 @@ A stable permalink whose job is to take the reader to a canonical definition or 
 Remarks render on the public site.
 A remark may note a starred question, explain a reference to something in the source ("this problem relies on Theorem X from the source"), describe which pages of a multi-institution scan an exam occupies, or record an erratum.
 It never discusses provenance bookkeeping, internal status, what is or is not included, collection membership, missing sources, the state of a provenance field, or any other curation concern (`PROSE-11`, `QUAL-08`).
+
+### Pullbacks (`MA-8`)
+
+Fiber-product notation may name a pullback when the fiber-product definition card is linked: "the fiber is the `[[D-…|fiber product]]` $X\times_Y 1$".
+
+### Curation and open problems (`PROSE-11`, `PR-72`)
+
+Provenance, status, and curation concerns, and deferred generalizations, are recorded in [COMPLAINTS.md](COMPLAINTS.md), [TODO.md](TODO.md), or the work queues (`QUAL-08`), never on a public page.
 
 ### Source formatting (`PR-11`)
 
