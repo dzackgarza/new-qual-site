@@ -34,7 +34,12 @@ The torsion reading is immediate: $E[n] = \tfrac{1}{n}\Lambda/\Lambda \cong (\ZZ
 [[T-CRVMODJ]]
 
 The normalisation must be fixed because conventions for $J$ and $j$ differ by the factor $1728$.
-The invariance is a weight count --- $g_2^3$ and $\Delta$ both scale by $\alpha^{-12}$ --- and the restriction to $\SL_2(\ZZ)$ rather than $\GL_2(\ZZ)$ comes from the formula for $\Im\qty{\tfrac{a\tau+b}{c\tau+d}}$, which is the usual place to slip.
+The invariance is a weight count --- $g_2^3$ and $\Delta$ both scale by $\alpha^{-12}$ --- and the restriction to $\SL_2(\ZZ)$ rather than $\GL_2(\ZZ)$ follows from
+$$
+\Im\qty{\frac{a\tau+b}{c\tau+d}}
+= \frac{(ad-bc)\Im\tau}{\abs{c\tau+d}^2},
+$$
+so determinant $1$ preserves the upper half-plane while determinant $-1$ exchanges it with the lower half-plane.
 
 Uniqueness of a representative in the fundamental region upgrades invariance into a moduli statement, and the two points where the region folds onto itself are the two curves with extra automorphisms.
 
