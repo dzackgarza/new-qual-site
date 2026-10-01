@@ -1,6 +1,6 @@
 ---
 order: 5
-title: Calculus Preliminaries
+title: Calculus preliminaries
 topics:
 - Calculus
 - Continuity
