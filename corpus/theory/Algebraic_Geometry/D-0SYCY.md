@@ -22,9 +22,9 @@ prompts:
 
 ::: {.definition title="Zariski tangent space"}
 For $p \in X$ with local ring $\OO_{X,p}$ and maximal ideal $\mfm_p$, the \dfn{Zariski tangent space} is
-\[
+$$
 T_p X \da (\mfm_p / \mfm_p^2)\dual .
-\]
+$$
 The point $p$ is **smooth** if $\dim_k T_p X = \dim_p X$, and **singular** otherwise, where the inequality $\geq$ always holds.
 :::
 
