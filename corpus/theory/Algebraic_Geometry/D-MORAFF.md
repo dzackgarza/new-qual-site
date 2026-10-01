@@ -29,7 +29,8 @@ The condition may be checked on one affine cover by the affine-communication arg
 Every affine morphism is separated and quasicompact.
 
 Closed immersions are affine, any morphism of affine schemes is affine, and finite morphisms are affine.
-Open immersions are not: $\AA^2 \sm \ts{0} \to \AA^2$ has non-affine source.
+Open immersions need not be affine: $\AA^2 \sm \ts{0} \to \AA^2$ has non-affine source.
+Principal open immersions $D(f)\hookrightarrow\Spec A$ are affine.
 
 The structural statement behind the definition is that an affine morphism to $Y$ is the same data as a quasicoherent sheaf of $\OO_Y$-algebras, via $X = \Spec_Y f_* \OO_X$.
 Relative spectra occur in the constructions of Stein factorisation and normalisation.
