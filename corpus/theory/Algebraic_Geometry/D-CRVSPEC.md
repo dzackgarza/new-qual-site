@@ -28,9 +28,9 @@ $D$ is **special** if this is positive, and **nonspecial** if it vanishes.
 
 ::: {.proposition}
 If $\deg D > 2g-2$ then $D$ is nonspecial, and then Riemann--Roch reads
-\[
+$$
 \ell(D) = \deg D + 1 - g .
-\]
+$$
 :::
 
 ::: {.remark}
