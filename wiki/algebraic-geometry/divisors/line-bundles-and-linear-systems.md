@@ -1,5 +1,5 @@
 ---
-title: Line Bundles and Linear Systems
+title: Line bundles and linear systems
 order: 2
 topics:
 - Invertible Sheaves
@@ -7,7 +7,7 @@ topics:
 - Base Locus
 ---
 
-# Line Bundles and Linear Systems
+# Line bundles and linear systems
 
 Divisors, invertible sheaves, and maps to projective space are three linked descriptions of the same linear-system data.
 
