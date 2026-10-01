@@ -23,7 +23,13 @@ prompts:
 ::: {.definition title="Todd class and Todd genus"}
 Let $X$ be a smooth projective variety of dimension $n$ over an algebraically closed field, and let $\alpha_1, \ldots, \alpha_n$ be the Chern roots of $T_X$.
 The \dfn{Todd class} of $X$ is
-$$\operatorname{td}(X) = \prod_{i=1}^n \frac{\alpha_i}{1 - e^{-\alpha_i}} = 1 + \frac{c_1}{2} + \frac{c_1^2 + c_2}{12} + \frac{c_1 c_2}{24} + \cdots,$$
+$$
+\operatorname{td}(X)
+=
+\prod_{i=1}^n \frac{\alpha_i}{1 - e^{-\alpha_i}}
+=
+1 + \frac{c_1}{2} + \frac{c_1^2 + c_2}{12} + \frac{c_1 c_2}{24} + \cdots,
+$$
 with $c_i = c_i(T_X)$.
 The \dfn{Todd genus} of $X$ is the degree of its component $\operatorname{td}_n(X)$ in dimension $0$.
 :::
@@ -34,5 +40,14 @@ The Todd genus of $X$ equals $\chi(X, \OO_X) = \sum_i (-1)^i h^i(X, \OO_X)$; in 
 
 ::: {.example}
 For a curve of genus $g$, $\operatorname{td}_1 = c_1/2$ has degree $(2 - 2g)/2 = 1 - g = \chi(\OO_C)$.
-For a surface, $c_1^2 = K_X^2$ and $c_2 = e(X)$ is the topological Euler characteristic, and the theorem is Noether's formula $\chi(\OO_X) = \frac{1}{12}(K_X^2 + e(X))$.
+For a smooth projective surface over $\CC$, $c_1^2 = K_X^2$ and
+$$
+\deg c_2(T_X)=e_{\mathrm{top}}(X),
+$$
+so the theorem is Noether's formula
+$$
+\chi(\OO_X)
+=
+\frac{1}{12}\qty(K_X^2+e_{\mathrm{top}}(X)).
+$$
 :::
