@@ -24,22 +24,22 @@ prompts:
 ::: {.definition title="Absolute Frobenius"}
 Let $X$ be a scheme all of whose local rings contain $\FF_p$.
 The \dfn{Frobenius morphism} $F : X \to X$ is the identity on the underlying topological space, with
-\[
+$$
 F^\sharp : \OO_X \to \OO_X, \qquad f \mapsto f^p .
-\]
+$$
 This is a ring homomorphism in characteristic $p$, so $F$ is a morphism of schemes.
 :::
 
 ::: {.definition title="The twist and the $k$-linear Frobenius"}
 For $X$ over $k$ with structure morphism $\pi : X \to \Spec k$, let $X_p$ denote $X$ with the structure morphism twisted by Frobenius, so that $k$ acts on $\OO_{X_p}$ through $p$-th powers.
 Then $F$ becomes a $k$-morphism
-\[
+$$
 F' : X_p \to X ,
-\]
+$$
 the \dfn{$k$-linear Frobenius}. For $X$ a curve over perfect $k$ it is finite of degree $p$, and on function fields it is the inclusion
-\[
+$$
 k(X) \subseteq k(X)^{1/p} .
-\]
+$$
 :::
 
 ::: {.remark title="Effect of the twist"}
