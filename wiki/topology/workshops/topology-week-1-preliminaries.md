@@ -1,9 +1,9 @@
 ---
 order: 19
-title: "Topology Qual Prep Week 1: Point-Set"
+title: "Topology qual prep week 1: point-set"
 ---
 
-# Topology Qual Prep Week 1: Point-Set
+# Topology qual prep week 1: point-set
 
 Point-set topology used in algebraic topology: definitions, theorems, and counterexamples.
 
