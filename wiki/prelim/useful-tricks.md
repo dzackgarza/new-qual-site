@@ -13,13 +13,13 @@ The tabular method records this: one column lists $P$ and its successive derivat
 ::: {.example}
 For constants $a,b,c$ and $\omega=n\Omega\neq 0$, the derivatives of $t^3+at^2+bt+c$ are $3t^2+2at+b$, $6t+2a$, $6$, $0$, and successive antiderivatives of $\sin(\omega t)$ are $-\frac{\cos(\omega t)}{\omega}$, $-\frac{\sin(\omega t)}{\omega^2}$, $\frac{\cos(\omega t)}{\omega^3}$, $\frac{\sin(\omega t)}{\omega^4}$.
 Pairing them along the diagonals with the signs $+,-,+,-$ gives
-\[
+$$
 \int (t^3+at^2+bt+c)\sin(\omega t)\,dt
 =-(t^3+at^2+bt+c)\frac{\cos(\omega t)}{\omega}
 +(3t^2+2at+b)\frac{\sin(\omega t)}{\omega^2}
 +(6t+2a)\frac{\cos(\omega t)}{\omega^3}
 -6\,\frac{\sin(\omega t)}{\omega^4}+C,
-\]
+$$
 and the process stops when the derivatives reach $0$.
 :::
 
