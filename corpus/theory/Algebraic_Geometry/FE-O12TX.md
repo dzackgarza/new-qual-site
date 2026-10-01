@@ -49,6 +49,5 @@ The first is the fibre of $\AA^1 \to \AA^1$, $t \mapsto t^2$, over the branch po
 :::
 
 ::: {.remark}
-The three examples are the three things schemes add: nilpotents record multiplicity, generic points record "generically", and arithmetic rings make the base something other than a field.
-Any one of them is a sufficient answer to why the classical language was replaced.
+The examples isolate three features absent from the classical point-set picture: nilpotents record multiplicity, generic points encode generic behaviour, and arithmetic schemes allow bases other than fields.
 :::
