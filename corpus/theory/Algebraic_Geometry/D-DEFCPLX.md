@@ -27,9 +27,9 @@ A **morphism of complexes** $f: A^\bullet \to B^\bullet$ is a family $f^i: A^i \
 
 ::: {.definition title="homotopic"}
 Morphisms of complexes $f, g: A^\bullet \to B^\bullet$ are \dfn{homotopic}, written $f \sim g$, if there are maps $h^i: A^i \to B^{i-1}$ with
-\[
+$$
 f^i - g^i = \delta^{i-1}h^i + h^{i+1}\delta^i
-\]
+$$
 for all $i$.
 :::
 
