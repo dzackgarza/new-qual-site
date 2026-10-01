@@ -32,7 +32,7 @@ Write $\chi(\mcf)$ when the scheme is fixed.
 :::
 
 ::: {.definition title="Hilbert polynomial"}
-Choose a very ample invertible sheaf $L$ on the projective $k$-scheme $X$ and put $\mcf(n)=\mcf\otimes L^{\otimes n}$, using the dual of $L$ for negative powers.
+Choose a very ample invertible sheaf $L$ on the projective $k$-scheme $X$ and put $\mcf(n)=\mcf\tensor_{\OO_X}L\tensorpower{\OO_X}{n}$, using the dual of $L$ for negative powers.
 The \dfn{Hilbert polynomial} of $\mcf$ with respect to $L$ is the unique $P_{\mcf,L}\in\QQ[z]$ satisfying
 $$
 P_{\mcf,L}(n)=\chi(X,\mcf(n))\qquad(n\in\ZZ)
@@ -60,6 +60,6 @@ This follows by taking the alternating sum of the dimensions in the finite long 
 :::
 
 ::: {.remark}
-For sufficiently large $n$, Serre vanishing gives $P_{\mcf,L}(n)=h^0(X,\mcf\otimes L^{\otimes n})$ [@Har10a, Theorem III.5.2].
+For sufficiently large $n$, Serre vanishing gives $P_{\mcf,L}(n)=h^0(X,\mcf\tensor_{\OO_X}L\tensorpower{\OO_X}{n})$ [@Har10a, Theorem III.5.2].
 The Euler-characteristic identity holds for every integer $n$; equality with the dimension of global sections is the eventual assertion.
 :::
