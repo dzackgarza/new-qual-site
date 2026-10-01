@@ -43,7 +43,7 @@ Genus $3$ is the plane quartic, genus $4$ is the intersection of a quadric and a
 
 [[PR-CRVHYPCI]]
 
-Genus $4$ is the case to hold next to this one: the canonical curve there *is* a complete intersection, and the formula $\omega_C \cong \OO_C(\sum d_i - n - 1)$ is what makes both statements the same computation.
+In genus $4$ the canonical curve *is* a complete intersection, and the formula $\omega_C \cong \OO_C(\sum d_i - n - 1)$ gives the corresponding computation.
 
 ## Brill--Noether theory
 
