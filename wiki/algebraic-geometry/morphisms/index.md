@@ -11,8 +11,8 @@ topics:
 
 Separated, proper, finite, flat, smooth, and the valuative criteria.
 
-Separatedness is the most examined property in this topic, and not for its definition: it is examined through the consequence that two morphisms agreeing on a dense open subset of a reduced scheme agree everywhere.
-The counterexamples for when reducedness or separatedness is dropped are worth having ready.
+If the target is separated, two morphisms from a reduced scheme that agree on a dense open subset agree everywhere.
+Dropping reducedness of the source or separatedness of the target gives distinct counterexamples to this uniqueness statement.
 
 Going up and going down belong here too, as statements about the geometry of the induced map on spectra rather than as facts about rings.
 
