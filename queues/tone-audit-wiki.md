@@ -1,6 +1,6 @@
 # Wiki authorial stance review
 
-Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-stance-).
+Policy: [authorial stance policies](https://github.com/dzackgarza/ai/blob/main/opencode/skills/mathematics/writing/policy/references/authorial-stance.md) (`STANCE-*`).
 
 ## Coverage
 

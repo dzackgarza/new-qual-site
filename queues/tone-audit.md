@@ -1,8 +1,8 @@
 # Corpus authorial stance audit
 
 Scope: reader-facing authored corpus cards, wiki pages, publication introductions,
-and shared site copy. Apply CONTRIBUTING.md's STANCE policies through full-text
-reading. Original mathematical problem instructions are not study prescriptions.
+and shared site copy. Apply the [authorial stance policies](https://github.com/dzackgarza/ai/blob/main/opencode/skills/mathematics/writing/policy/references/authorial-stance.md) (`STANCE-*`) through
+full-text reading. Original mathematical problem instructions are not study prescriptions.
 External source documents retain their authored text; this audit concerns the
 site's authored representations and commentary.
 

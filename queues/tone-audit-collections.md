@@ -1,7 +1,7 @@
 # Collection prose audit
 
 Scope: Markdown files under `corpus/collections/`.
-Policy: `CONTRIBUTING.md`, STANCE-01 through STANCE-25.
+Policy: the [authorial stance policies](https://github.com/dzackgarza/ai/blob/main/opencode/skills/mathematics/writing/policy/references/authorial-stance.md) (`STANCE-*`).
 
 Unchecked entries await full-file reading. Checked entries record an independent prose review.
 

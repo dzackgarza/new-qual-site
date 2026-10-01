@@ -5,18 +5,18 @@ Repo / cwd: `/home/dzack/gitclones/new-qual-site`
 ## Mandatory reading before any edit
 
 1. Read `queues/tone-audit.md` (scope and method).
-2. Read `CONTRIBUTING.md` in full for these sections — the file itself, not this contract’s summary:
-   - `## Contributing to this document`
-   - `## Professional equality and authorial stance (`STANCE-*`)` through `STANCE-25`
-   - `## Prose policies` through `PROVENANCE-01`
-   - all `RESOURCE-*` policies that follow
+2. Read these policies in full — the files themselves, not this contract’s summary:
+   - `CONTRIBUTING.md`, `## Contributing to this document` and `## Writing house conventions`
+   - [authorial stance](https://github.com/dzackgarza/ai/blob/main/opencode/skills/mathematics/writing/policy/references/authorial-stance.md) (`STANCE-*`)
+   - [prose](https://github.com/dzackgarza/ai/blob/main/opencode/skills/mathematics/writing/policy/references/prose.md) (`PROSE-*`)
+   - [resource descriptions](https://github.com/dzackgarza/ai/blob/main/opencode/skills/mathematics/writing/policy/references/resource-descriptions.md) (`RESOURCE-*`, `PROVENANCE-*`)
 3. Your assigned partition list: `queues/tone-audit-partitions/<name>.txt`
 
 Do not treat this contract as a substitute for those policies. Do not reduce the work to synonym cleanup, “friendlier tone,” or phrase search. A phrase search cannot close a coverage entry.
 
 ## What you are auditing for
 
-The relationship the prose establishes (writer as judge, supervisor, certifier of scholars, spokesperson for faculty, arbiter of worthwhile study) and the professional severity of that stance under the site owner’s name. Correction is substantive mathematical or bibliographic service that restores reader autonomy — not softer commands that keep the same hierarchy. See especially `STANCE-01`, `STANCE-11`–`STANCE-16`, and `STANCE-21`–`STANCE-25`.
+The relationship the prose establishes (writer as judge, supervisor, certifier of scholars, spokesperson for faculty, arbiter of worthwhile study) and the professional severity of that stance under the site owner’s name. Correction is substantive mathematical or bibliographic service that restores reader autonomy — not softer commands that keep the same hierarchy. See especially `STANCE-01`, `STANCE-11`–`STANCE-16`, and `STANCE-21`.
 
 ## Execution
 

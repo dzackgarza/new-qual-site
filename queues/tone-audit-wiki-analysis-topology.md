@@ -1,6 +1,6 @@
 # Analysis and topology wiki stance review
 
-Each checked path records a full-page reading under CONTRIBUTING.md's STANCE policies.
+Each checked path records a full-page reading under the [authorial stance policies](https://github.com/dzackgarza/ai/blob/main/opencode/skills/mathematics/writing/policy/references/authorial-stance.md) (`STANCE-*`).
 Source-authored mathematical tasks retain their instructions. A checked path is not a claim of full mathematical verification.
 
 - [ ] `wiki/complex-analysis/appendices/appendix-fta-proofs.md`
