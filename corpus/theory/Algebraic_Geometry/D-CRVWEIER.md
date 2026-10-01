@@ -29,24 +29,24 @@ These form a field.
 
 ::: {.definition title="The Weierstrass functions"}
 Write $\Lambda' \da \Lambda \smz$.
-\[
+$$
 \wp(z) \da \frac{1}{z^2} + \sum_{\omega \in \Lambda'} \qty{ \frac{1}{(z-\omega)^2} - \frac{1}{\omega^2} },
 \qquad
 \wp'(z) = \sum_{\omega \in \Lambda} \frac{-2}{(z-\omega)^3} .
-\]
+$$
 The series converges locally uniformly on $\CC \setminus \Lambda$, so $\wp$ is elliptic with a double pole at each lattice point and no other poles; $\wp$ is even and $\wp'$ is odd.
 Set the Eisenstein series of the lattice,
-\[
+$$
 g_2 \da 60 \sum_{\omega \in \Lambda'} \frac{1}{\omega^4},
 \qquad
 g_3 \da 140 \sum_{\omega \in \Lambda'} \frac{1}{\omega^6},
 \qquad
 \Delta \da g_2^3 - 27 g_3^2 .
-\]
+$$
 Then
-\[
+$$
 (\wp')^2 = 4\wp^3 - g_2 \wp - g_3 ,
-\]
+$$
 and the field of elliptic functions for $\Lambda$ is exactly $\CC(\wp, \wp')$.
 :::
 
@@ -59,10 +59,10 @@ A double pole is the smallest thing available, and $\wp$ is the canonical one.
 Counting poles then gives the degree of the induced map to $\PP^1$, so $\wp$ has degree $2$ and $\wp'$ degree $3$.
 
 The differential equation is proved by subtraction: expand
-\[
+$$
 \wp(z) = z^{-2} + \sum_{k \geq 1} (2k+1) G_{2k+2} z^{2k},
 \qquad G_{2k} \da \sum_{\omega \in \Lambda'} \omega^{-2k} ,
-\]
+$$
 form $(\wp')^2 - 4\wp^3 + g_2\wp + g_3$, and observe that all the polar terms cancel by construction and the constant term is zero.
 The difference is an elliptic function with no poles, hence constant by Liouville on the compact torus, hence $0$.
 
