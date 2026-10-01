@@ -32,9 +32,9 @@ On a smooth curve every local ring is a discrete valuation ring, so codimension-
 The method generalises to every computation in this topic: compare $X$ with something whose Picard group is known, and identify the correction term.
 For a singular curve the comparison is with the normalization and the correction is the local unit groups.
 For an open subset $U = X \sm Z$ of a smooth variety, the comparison is the excision sequence
-\[
+$$
 \ZZ^{\ts{\text{components of } Z \text{ of codimension } 1}} \to \Cl(X) \to \Cl(U) \to 0 ,
-\]
+$$
 which computes $\Cl(\AA^n) = 0$ from $\Cl(\PP^n) = \ZZ$ and gives the class group of any hypersurface complement immediately.
 
 [[FE-DIVPN]]
