@@ -26,15 +26,15 @@ prompts:
 ::: {.definition title="derived functors"}
 Let $\mca$ be an abelian category with enough injectives and $F: \mca \to \mcb$ an additive covariant left exact functor.
 The \dfn{right derived functors} $R^iF: \mca \to \mcb$ are
-\[
+$$
 R^iF(A) = h^i(F(I^\bullet)) ,
-\]
+$$
 where $A \to I^\bullet$ is any injective resolution of $A$.
 
 If instead $F$ is right exact and $\mca$ has enough projectives, the **left derived functors** are
-\[
+$$
 L^iF(A) = h^i(F(P^\bullet)) ,
-\]
+$$
 where $P^\bullet \to A$ is any projective resolution.
 
 For contravariant $F$ one modifies these, or regards $F$ as a covariant functor on $\mca\op$.
