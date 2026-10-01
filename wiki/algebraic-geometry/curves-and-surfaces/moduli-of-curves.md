@@ -30,7 +30,6 @@ In the latter two descriptions the relevant coordinate changes are $\PGL_2$ on t
 
 [[PR-CRVAUT]]
 
-This is the card both halves of the page lean on.
 Finiteness of $\Aut C$ is what makes the orbits in the quartic count $8$-dimensional, so the dimension comes out; nontriviality of $\Aut C$ on the hyperelliptic locus is what keeps any genus from having a fine moduli space.
 
 ## Smoothness and properness of the moduli stacks
