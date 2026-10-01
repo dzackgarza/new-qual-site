@@ -52,7 +52,11 @@ $$
 \abs{\det \begin{bmatrix} m & -1 \\ 0 & 1 \end{bmatrix}} = m
 $$
 inside $N$, and that index is the order of the group.
-This is the general statement: a simplicial cone whose generators span a sublattice of index $d$ gives the quotient of $\AA^n$ by a group of order $d$, and the group is $N/N'$ for $N'$ the sublattice.
+More generally, if a full-dimensional simplicial cone has primitive ray generators spanning a sublattice $N'\subseteq N$ of index $d$, then its affine toric variety is a quotient of $\AA^n$ by the finite diagonalizable group
+$$
+G=\Hom(N/N',\GG_m),
+$$
+whose order is $d$ when the characteristic does not divide $d$.
 Thus the same determinant that detects non-smoothness gives the order of the finite quotient group.
 
 For $m = 2$ this is the quadric cone $V(z_0 z_2 - z_1^2) = \AA^2/\pm 1$, the $A_1$ surface singularity, and the same variety appears as the singular chart of $\PP(1,1,2)$.
