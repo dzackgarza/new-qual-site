@@ -19,7 +19,8 @@ prompts:
 ---
 
 ::: {.definition title="faithfully flat"}
-An $A$-module $N$ is \dfn{faithfully flat} if for every complex of $A$-modules
+Let $A$ be a commutative ring and let $N$ be an $A$-module.
+$N$ is \dfn{faithfully flat} if for every complex of $A$-modules
 $$
 M' \to M \to M''
 $$
