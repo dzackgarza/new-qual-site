@@ -32,15 +32,15 @@ Over a perfect field the two criteria agree.
 
 [[D-QJ5M9]]
 
-Normality sits between regularity and nothing, and it is the condition under which the singular locus has codimension at least two.
-For a curve that leaves no room, which is why normalization resolves curve singularities and why the local rings of a smooth curve are discrete valuation rings — the fact the divisor theory of the next chapters runs on.
+Regular local rings are normal, and a normal variety is regular in codimension one; equivalently, its singular locus has codimension at least two.
+For a normal curve this leaves no singular points, which is why normalization resolves curve singularities; the local rings of a smooth curve are discrete valuation rings.
 
 ## Where the singular points are
 
 Finding them is the Jacobian computation: set the partials to zero, intersect with the variety, and use the Euler relation in $\PP^n$:
-\[
+$$
 \sum_i x_i \frac{\partial f}{\partial x_i} = (\deg f) \cdot f
-\]
+$$
 makes the vanishing of the partials imply the vanishing of $f$ whenever $\deg f$ is invertible in $k$.
 So for a plane curve in characteristic zero the singular locus is cut out by the partials alone.
 
