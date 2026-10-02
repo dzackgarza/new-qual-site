@@ -879,6 +879,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit removes the hook decoration from the
   `$\iota$` arrow and leaves the universal property unchanged.
 
+### Gram matrix had two defining cards
+
+- **Object and need:** `D-H4TDM` and `D-RG5FO` in
+  `corpus/theory/Algebra`. Both cards defined the Gram matrix of a bilinear
+  form, contrary to the single canonical defining-occurrence policy.
+- **Observed evidence:** `D-H4TDM` defines the matrix
+  `$(b(e_i,e_j))$` and records change of basis and nondegeneracy;
+  `D-RG5FO` independently defined the same matrix and then proved the distinct
+  proposition that Gram matrices classify bilinear forms in a fixed basis.
+  The wiki linked the term “Gram matrix” to `D-RG5FO` while other theory cards
+  linked it to `D-H4TDM`.
+- **Impact and owner:** the duplicated definition split the canonical link,
+  while the useful classification proposition on `D-RG5FO` should be retained
+  as separate mathematics.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit keeps `D-H4TDM` as the definition owner,
+  converts `D-RG5FO` to the proposition “Bilinear forms and Gram matrices,”
+  and redirects the wiki's definitional link to `D-H4TDM`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
