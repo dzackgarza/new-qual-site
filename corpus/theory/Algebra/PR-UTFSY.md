@@ -2,10 +2,8 @@
 schema: qual/card@1
 id: PR-UTFSY
 kind: proposition
-title: Krull's theorem on maximal ideals
+title: Existence of maximal ideals
 slogan: 'Every proper ideal is contained in a maximal ideal.'
-prompts:
-- What is Krull's theorem on maximal ideals?
 classification:
   areas:
   - algebra
