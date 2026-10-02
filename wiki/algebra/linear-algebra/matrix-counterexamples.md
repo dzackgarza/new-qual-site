@@ -85,4 +85,4 @@ Hence $A^n = B^n$ does not imply $A=B$ for real $2\times 2$ matrices, and $M_1$ 
 
 [[FF-VKYM3]]
 
-[[FE-W56LS]] [[FE-ISVDM]]
+[[FE-ISVDM]]
