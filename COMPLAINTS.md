@@ -1918,3 +1918,5 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `PR-IN9ZP`, which owns the inner-automorphism quotient theorem.
   `PR-SD8CY` now owns the semidirect-product action-change theorem and its
   canonical-form remark.
+  `PR-HM7QK` now owns the count of homomorphisms between finite cyclic
+  groups.

@@ -52,8 +52,6 @@ $$
 \abs{\GL_n(\FF_p)} = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1}).
 $$
 
-(g) For $m, n \geq 1$, $\abs{\Hom(C_n, C_m)} = \gcd(n, m)$.
-
 :::
 
 ::: {.example}
