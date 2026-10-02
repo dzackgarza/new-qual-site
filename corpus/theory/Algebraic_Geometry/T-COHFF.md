@@ -21,19 +21,49 @@ prompts:
 ---
 
 ::: {.theorem}
-Let $f: X \to Y$ be proper with $Y$ Noetherian, $\mcf$ coherent on $X$, and $y \in Y$ with maximal ideal $\mfm_y$.
-Write $X_n$ for the subscheme cut out by $\mfm_y^n \OO_X$.
-Then the completion of the stalk satisfies
-\[
-\hat{\qty{R^i f_* \mcf}_y} \cong \varprojlim_n H^i\qty{X_n, \mcf/\mfm_y^n \mcf} .
-\]
+Let $f\colon X\to Y$ be proper with $Y$ Noetherian, let $\mcf$ be coherent on $X$, and fix $y\in Y$.
+Put
+$$
+A\coloneqq\OO_{Y,y},\qquad \mfm\coloneqq\mfm_y,
+$$
+let
+$$
+X_A\coloneqq X\times_Y\Spec A,
+$$
+and let $\mcf_A$ be the pullback of $\mcf$ to $X_A$. For $n\geq1$, define
+$$
+X_n\coloneqq X_A\times_{\Spec A}\Spec(A/\mfm^n),
+\qquad
+\mcf_n\coloneqq\mcf_A/\mfm^n\mcf_A.
+$$
+Then there is a natural isomorphism of $\widehat A$-modules
+$$
+\widehat{(R^if_*\mcf)_y}
+\xrightarrow{\sim}
+\varprojlim_n H^i(X_n,\mcf_n).
+$$
+:::
+
+::: {.corollary title="Zariski connectedness"}
+Let $f\colon X\to Y$ be proper with $Y$ Noetherian and suppose
+$$
+f_*\OO_X\cong\OO_Y.
+$$
+Then every fibre of $f$ is connected.
+:::
+
+::: {.proof}
+Fix $y\in Y$ and use the notation of the theorem with $\mcf=\OO_X$ and $i=0$. The hypothesis gives
+$$
+\widehat{(f_*\OO_X)_y}\cong\widehat A,
+$$
+so formal functions yields
+$$
+\widehat A\cong\varprojlim_n H^0(X_n,\OO_{X_n}).
+$$
+If the fibre $X_1=X_y$ were disconnected, its ring of global sections would contain a nontrivial idempotent. Idempotents lift uniquely across nilpotent thickenings, so this idempotent would lift compatibly to every $H^0(X_n,\OO_{X_n})$ and hence to a nontrivial idempotent of the inverse limit. But the complete local ring $\widehat A$ has no nontrivial idempotents. Therefore $X_y$ is connected.
 :::
 
 ::: {.remark}
-The theorem identifies the completed stalk $\hat{(R^if_*\mcf)_y}$ with the inverse limit of the cohomology groups $H^i(X_n,\mcf/\mfm_y^n\mcf)$ over all infinitesimal thickenings $X_n$ of the fibre.
-Properness is load-bearing and is what makes the inverse limit converge to something algebraic; the statement is false for open immersions.
-
-Two corollaries are the reason it is on a syllabus.
-Zariski's connectedness theorem: if $f: X \to Y$ is proper with $f_* \OO_X = \OO_Y$, then every fibre is connected.
-And the version of Zariski's main theorem for a birational proper morphism to a normal variety: the fibres are connected, so no fibre breaks into pieces, which is what "no blowing down to two points" means in practice.
+For a proper birational morphism $f\colon X\to Y$ with $Y$ normal and $f_*\OO_X=\OO_Y$, the corollary gives connected fibres. This is the connectedness conclusion used in the normal-target form of Zariski's main theorem.
 :::
