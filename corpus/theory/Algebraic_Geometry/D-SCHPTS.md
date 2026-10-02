@@ -22,14 +22,14 @@ prompts:
 ---
 
 ::: {.definition}
-The \dfn{residue field} at $x \in X$ is $\kappa(x) \da \OO_{X,x}/\mfm_x$; for $x = \mfp \in \Spec A$ this is $\Frac(A/\mfp) = A_\mfp/\mfp A_\mfp$.
-To **evaluate** $f \in \OO_X(U)$ at $x$ is to take its image under $\OO_X(U) \to \OO_{X,x} \to \kappa(x)$.
+The \dfn{residue field} at $x \in X$ is $\kappa(x) \coloneqq \OO_{X,x}/\mfm_x$; for $x = \mfp \in \Spec A$ this is $\Frac(A/\mfp) \cong A_\mfp/\mfp A_\mfp$.
+To \dfn{evaluate} $f \in \OO_X(U)$ at $x$ is to take its image under $\OO_X(U) \to \OO_{X,x} \to \kappa(x)$.
 
-A **closed point** is one whose closure is itself, corresponding to a maximal ideal in an affine chart.
-A **generic point** of an irreducible closed $Z$ is $\eta$ with $\closure{\ts{\eta}} = Z$.
-For $X$ over $k$, a **rational point** is an $x$ with $\kappa(x) = k$.
+A \dfn{closed point} is a point whose closure is itself. On $\Spec A$, the closed points are exactly the maximal ideals of $A$.
+A \dfn{generic point} of an irreducible closed subset $Z$ is a point $\eta\in Z$ with $\closure{\ts{\eta}} = Z$.
+For a $k$-scheme $X$, a \dfn{rational point} over $k$ is a point $x\in X$ for which the structure map $k\to\kappa(x)$ is an isomorphism.
 
-Write $\tilde x \leadsto x$, "$\tilde x$ **specialises** to $x$", when $x \in \closure{\ts{\tilde x}}$; equivalently $\mfp_{\tilde x} \subseteq \mfp_x$ in an affine chart.
+Write $\tilde x \leadsto x$, "$\tilde x$ \dfn{specialises} to $x$", when $x \in \closure{\ts{\tilde x}}$; equivalently $\mfp_{\tilde x} \subseteq \mfp_x$ when both points lie in an affine open $\Spec A$.
 :::
 
 ::: {.definition title="General points and general fibres"}
@@ -48,15 +48,14 @@ $$
 $$
 holds at the generic point $\eta$, where $\kappa(\eta)=k(t)$, but not at any closed point, so it does not hold on any dense open subset.
 Conversely, "$\kappa(x)=k$" holds at every closed point but is not a general-point property, because every nonempty open subset contains $\eta$.
-For the family $V(xy - t) \to \AA^1_t$, the general fibre is a smooth conic $xy = c$ with $c \neq 0$, while the generic fibre is the curve $xy = t$ over the field $k(t)$.
+For the family $V(xy - t) \to \AA^1_t$, each fibre $xy=c$ with $c\neq0$ is a smooth affine curve isomorphic to $\GG_m$, while the generic fibre is the curve $xy=t$ over the field $k(t)$.
 :::
 
 ::: {.remark}
 A section of the structure sheaf evaluates in the residue field $\kappa(x)$, which can vary with $x$; it is therefore not generally a set-theoretic function from $\abs X$ to one fixed field.
 On $\Spec \ZZ$ the element $5$ evaluates to $0 \in \FF_5$, to $5 \in \FF_7$, and to $5 \in \QQ$ at the generic point.
 On a nonreduced scheme a function can be nonzero and vanish at every point: $\eps \in k[\eps]/\eps^2$.
-This is why $\OO_X$ is a sheaf of rings imposed on the space rather than extracted from it.
 
-Specialisation orders the points by inclusion of primes, so a scheme carries a partial order of which the classical picture only ever sees the minimal elements.
-A DVR is the smallest interesting example: $\Spec R$ is a generic point specialising to one closed point, and a morphism $\Spec R \to X$ is a choice of specialisation together with a valuation, which is exactly the data the valuative criteria for separatedness and properness test.
+Specialisation orders the points by inclusion of primes. For a variety over an algebraically closed field, its classical closed points are the maximal elements of this order.
+If $R$ is a DVR with fraction field $K$ and residue field $\kappa$, then the generic point of $\Spec R$ has residue field $K$ and specialises to its unique closed point, whose residue field is $\kappa$. The valuative criteria for separatedness and properness quantify over diagrams containing morphisms $\Spec K\to X$ and $\Spec R\to Y$ and ask for uniqueness or existence of a lift $\Spec R\to X$.
 :::
