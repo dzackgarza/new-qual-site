@@ -1100,6 +1100,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-7XH2R`,
   removes the duplicate wiki link, and deletes `FD-CD2FE`.
 
+### FD-CI4NB misclassified polynomial rings as a variant of rational-function fields
+
+- **Object and need:** `FD-CI4NB`, Polynomial ring, and its relation to
+  `FD-24RNF`, the field of rational functions.
+- **Observed evidence:** the polynomial-ring card declared
+  `variant-of: FD-24RNF`, although `$R[x]$` and `$K(x)$` are different
+  constructions and the latter is the fraction field of `$K[x]$` when `$K$`
+  is a field. The card also used `$K$` for an arbitrary commutative ring,
+  making the coefficient type look field-specific.
+- **Impact and owner:** the relation asserted mathematical equivalence where
+  there is only a constructional relation, and the notation obscured the
+  stated ring-level scope.
+- **Uncertainty:** none after reading both cards.
+- **Repair:** the same repair commit renames the coefficient ring `$R$`, uses
+  the title `Polynomial ring $R[x]$`, and changes the relation to
+  `related-to: FD-24RNF`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
