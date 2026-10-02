@@ -35,8 +35,6 @@ Over $\ZZ$, the module $\ZZ$ is indecomposable and not simple, and $\ZZ/4$ is cy
 
 [[D-HY7UU]]
 
-[[FD-S2W5E]]
-
 ## The structure theorem
 
 Let $M$ be a finitely generated module over a PID $R$ with torsion submodule $M_t$.

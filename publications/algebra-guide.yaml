@@ -453,7 +453,6 @@ sections:
       - ref: PR-TAPZF
       - ref: FD-SK4ON
       - ref: D-HY7UU
-      - ref: FD-S2W5E
       - ref: PR-RIJSC
       - ref: D-LIEMF
       - ref: FD-CVEAI
