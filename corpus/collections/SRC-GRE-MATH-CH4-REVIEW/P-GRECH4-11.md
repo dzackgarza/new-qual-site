@@ -31,3 +31,73 @@ What is the equation of this curve, given that it passes through the point $(1, 
 (D) $x^2y + y^3 - x + y = 2$
 (E) $x^2y^2 + xy^3 + x - y = 1$
 :::
+
+::: {.solution}
+<1>1. The slope equation is equivalent to the exact differential equation
+$$
+(2xy-1)\,dx+(x^2+3y^2+1)\,dy=0.
+$$
+
+::: {.proof}
+The given slope is
+$$
+\frac{dy}{dx}
+=\frac{1-2xy}{x^2+3y^2+1}.
+$$
+Multiplying through by the denominator and moving all terms to the left gives the displayed differential form. Its coefficients
+$$
+M=2xy-1,
+\qquad
+N=x^2+3y^2+1
+$$
+satisfy
+$$
+M_y=2x=N_x,
+$$
+so the equation is exact.
+:::
+
+<1>2. A potential for this differential form is
+$$
+F(x,y)=x^2y-x+y^3+y.
+$$
+
+::: {.proof}
+Integrating $M=2xy-1$ with respect to $x$ gives
+$$
+F=x^2y-x+h(y).
+$$
+Then
+$$
+F_y=x^2+h'(y)
+$$
+must equal
+$$
+N=x^2+3y^2+1.
+$$
+Thus $h'(y)=3y^2+1$, so one may take $h(y)=y^3+y$.
+:::
+
+<1>3. The curve through $(1,1)$ is
+$$
+\boxed{x^2y+y^3-x+y=2},
+$$
+so the answer is (D).
+
+::: {.proof}
+Integral curves of the exact equation satisfy $F(x,y)=C$. At $(1,1)$,
+$$
+C
+=F(1,1)
+=1-1+1+1
+=2.
+$$
+Substituting this value into the potential from step <1>2 gives the displayed curve.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required curve and corresponding choice.
+:::
+:::
