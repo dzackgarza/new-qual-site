@@ -15,8 +15,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
-**Owner decision, 2026-10-02: the current work is [Author solutions](#7-author-solutions).** Solutions no longer wait behind `copy-policy-repair` or `audited-deployment`; both are suspended, and no pass may delete, merge or consolidate owner-written cards.
-The copy pass run on 2026-10-01/02 deleted 46 owner-written corpus cards and merged others; restoring them precedes new solutions.
+**Owner decision, 2026-10-02 (later): resume the `audited-deployment` milestone.** `unsolved-contribution` and `slogans` remain closed; `copy-policy-repair` is the current ready node, followed by `audited-deployment` and its three consecutive clean open-ended rounds. Solution authorship waits until that milestone closes.
 
 #### Steward checkpoint — 2026-09-26
 
