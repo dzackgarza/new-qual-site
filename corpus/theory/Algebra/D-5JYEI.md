@@ -40,7 +40,15 @@ The following are equivalent:
 :::
 
 ::: {.remark}
-The separable degree counts the embeddings of $L$ into an algebraic closure that extend a fixed embedding of $k$:
-
-![figures/2021-08-09_22-29-40.png](../../assets/figures/2021-08-09_22-29-40.png)
+Fix an algebraic closure $\bar{k}$ of $k$. For every finite extension $L/k$,
+$$
+[L:k]_s
+=
+\size\Hom_{k\text{-alg}}(L,\bar{k}).
+$$
+If $L/k$ is Galois, normality implies that every $k$-embedding $L\hookrightarrow\bar{k}$ has image $L$. Hence
+$$
+\Hom_{k\text{-alg}}(L,\bar{k})=\Aut_k(L)=\Gal(L/k)
+$$
+and $\size\Gal(L/k)=[L:k]$.
 :::
