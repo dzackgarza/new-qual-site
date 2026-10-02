@@ -25,3 +25,39 @@ Given that $p(x)$ is a real polynomial of degree $\le 4$ such that one can find 
 (D) $5$
 (E) Cannot be determined from the information given
 :::
+
+::: {.solution}
+Define $q(x)=p(x)-5$.
+
+<1>1. $q$ is the zero polynomial.
+
+::: {.proof}
+The polynomial $q$ has degree at most $4$ unless it is identically zero. Every solution of $p(x)=5$ is a root of $q$, so by hypothesis $q$ has five distinct real roots. A nonzero polynomial of degree at most $4$ has at most four distinct roots. Therefore $q$ must be identically zero.
+:::
+
+<1>2. $p$ is identically equal to $5$.
+
+::: {.proof}
+By step <1>1,
+$$
+p(x)-5=q(x)=0
+$$
+for every $x$, so $p(x)=5$ identically.
+:::
+
+<1>3. The requested value is
+$$
+\boxed{p(5)=5},
+$$
+so the answer is (D).
+
+::: {.proof}
+Evaluate the identity from step <1>2 at $x=5$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value and choice.
+:::
+:::
