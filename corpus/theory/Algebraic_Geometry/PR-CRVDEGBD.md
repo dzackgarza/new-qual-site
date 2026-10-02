@@ -24,7 +24,7 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $D$ be a divisor on a smooth projective curve $C$ of genus $g$.
+Let $D$ be a divisor on a smooth projective curve $C$ of genus $g$ over an algebraically closed field.
 
 - $D$ is ample if and only if $\deg D > 0$.
 
@@ -32,16 +32,24 @@ Let $D$ be a divisor on a smooth projective curve $C$ of genus $g$.
 
 - $D$ is very ample if $\deg D \geq 2g+1$.
 
-The last two are sufficient, not necessary.
 :::
 
 ::: {.remark}
-All three come from running Riemann--Roch twice and watching the speciality term vanish.
-For base-point freeness one needs $\ell(D-p) = \ell(D)-1$; with $\deg D \geq 2g$ both $D$ and $D-p$ have degree $> 2g-2$, both are nonspecial, and subtracting the two formulas gives the drop of exactly one.
-For very ampleness one needs the drop by two at every pair, and $\deg D \geq 2g+1$ keeps $D-p-q$ nonspecial as well.
-Ampleness follows because $\deg nD > 0$ eventually exceeds $2g+1$.
+If $\deg D\geq2g$ and $p\in C$, then both $D$ and $D-p$ have degree greater than $2g-2$. Riemann--Roch therefore gives
+$$
+\ell(D)-\ell(D-p)=1,
+$$
+so $\abs D$ has no base point at $p$.
 
-The thresholds are not sharp, and the standard counterexample is the canonical divisor on a smooth plane quartic: $g=3$, $\deg K = 4 < 2g+1 = 7$, and $K$ is very ample.
-Standard specializations are: on $\PP^1$, ample, very ample, and $\deg D\ge1$ coincide; on an elliptic curve, $D$ is very ample exactly when $\deg D\ge3$, giving the plane cubic model; on a genus-$2$ curve, degree $5$ gives a quintic model in $\PP^3$.
+If $\deg D\geq2g+1$ and $E$ is any effective divisor of degree $2$, then $D-E$ has degree greater than $2g-2$, and
+$$
+\ell(D)-\ell(D-E)=2.
+$$
+Thus global sections separate every pair of points and every tangent direction, so $D$ is very ample.
+
+If $\deg D>0$, then $\deg(nD)\geq2g+1$ for all sufficiently large $n$, so some positive multiple of $D$ is very ample and $D$ is ample. Conversely, if $D$ is ample, some positive multiple $nD$ is very ample and therefore has positive degree; hence $\deg D>0$.
+
+The degree bounds for base-point freeness and very ampleness are sufficient rather than necessary. For a smooth plane quartic, $g=3$ and the canonical divisor has degree $4<2g+1=7$, but the canonical map is the given plane embedding.
+On $\PP^1$, a divisor is ample or very ample exactly when its degree is positive. On an elliptic curve, a divisor is very ample exactly when its degree is at least $3$; degree $3$ gives the plane cubic embedding. On a genus-$2$ curve, every divisor of degree at least $5$ is very ample, and a degree-$5$ divisor embeds the curve as a quintic in $\PP^3$.
 If $D$ is very ample and $\varphi$ is the resulting embedding, then $\deg \varphi(C) = \deg D$.
 :::
