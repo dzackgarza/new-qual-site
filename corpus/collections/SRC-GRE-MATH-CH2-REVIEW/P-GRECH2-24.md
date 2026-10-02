@@ -24,3 +24,75 @@ The function $f(x) = \int_{e^x}^{e^{2x}} t \log t \, dt$ has an absolute minimum
 (D) $1$
 (E) $\log 4$
 :::
+
+::: {.solution}
+<1>1. The derivative is
+$$
+f'(x)=x e^{2x}\left(4e^{2x}-1\right).
+$$
+
+::: {.proof}
+By the fundamental theorem of calculus and the chain rule,
+$$
+\begin{aligned}
+f'(x)
+&=\left[e^{2x}\log(e^{2x})\right](2e^{2x})
+-\left[e^x\log(e^x)\right]e^x\\
+&=4xe^{4x}-xe^{2x}\\
+&=xe^{2x}(4e^{2x}-1).
+\end{aligned}
+$$
+:::
+
+<1>2. The critical points are
+$$
+x=-\log2
+\quad\text{and}\quad
+x=0.
+$$
+
+::: {.proof}
+Since $e^{2x}>0$, step <1>1 vanishes exactly when $x=0$ or
+$$
+4e^{2x}=1.
+$$
+The latter equation gives
+$$
+2x=\log\frac14=-2\log2,
+$$
+hence $x=-\log2$.
+:::
+
+<1>3. $f$ has a local maximum at $x=-\log2$.
+
+::: {.proof}
+The factor $4e^{2x}-1$ is negative for $x<-\log2$ and positive for $x>-\log2$. Thus step <1>1 gives
+$$
+f'(x)>0\quad(x<-\log2),
+$$
+$$
+f'(x)<0\quad(-\log2<x<0),
+$$
+and
+$$
+f'(x)>0\quad(x>0).
+$$
+Therefore $f'$ changes from positive to negative at $-\log2$, while it changes from negative to positive at $0$.
+:::
+
+<1>4. The requested value is
+$$
+\boxed{-\log2},
+$$
+so the answer is (B).
+
+::: {.proof}
+Step <1>3 identifies the local maximum point among the two critical points.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested value and corresponding choice.
+:::
+:::
