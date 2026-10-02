@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-FULCM
 kind: proposition
-title: Toric varieties are rational and Cohen-Macaulay, and affine ones have no nontrivial vector bundles
+title: Rationality, Cohen--Macaulayness, and vector bundles on toric varieties
 slogan: 'Every toric variety is rational and Cohen--Macaulay; every vector bundle on an affine toric variety is trivial.'
 classification:
   areas:
@@ -20,21 +20,30 @@ prompts:
 - What are the vector bundles on an affine toric variety?
 ---
 
-::: {.proposition title="Three free properties"}
-Let $X_\Sigma$ be a toric variety of dimension $n$.
+::: {.proposition}
+Let $X_\Sigma$ be an $n$-dimensional toric variety over a field $k$.
 
-1. $X_\Sigma$ is rational: it contains the torus $T \cong \GG_m^n$ as a dense open set, so $k(X_\Sigma) = k(t_1, \ldots, t_n)$.
+1. $X_\Sigma$ is rational: the dense torus $T\cong\GG_m^n$ has function field
+$$
+k(T)=k(t_1,\ldots,t_n)=k(X_\Sigma).
+$$
 
-2. $X_\Sigma$ is Cohen-Macaulay: every local ring $R$ has $\depth R = \dim R$.
+2. $X_\Sigma$ is Cohen--Macaulay: every local ring $\OO_{X_\Sigma,x}$ satisfies
+$$
+\depth\OO_{X_\Sigma,x}=\dim\OO_{X_\Sigma,x}.
+$$
 
-3. Every vector bundle on an affine toric variety $U_\sigma$ is trivial, equivalently every finitely generated projective $k[S_\sigma]$-module is free.
+3. By Gubeladze's theorem on projective modules over normal monoid algebras, every vector bundle on an affine toric variety $U_\sigma$ is trivial. Equivalently, every finitely generated projective $k[S_\sigma]$-module is free.
 :::
 
 ::: {.remark title="Consequences"}
-Rationality implies that toric varieties cannot furnish unirational-but-nonrational examples: every toric variety is already rational.
+The rationality statement follows directly from the dense torus and does not require smoothness or completeness.
 
-Cohen-Macaulayness is the input that makes Serre duality and the vanishing theorems available without extra hypotheses, and it is why $\omega_{X_\Sigma} = \OO(-\sum_\rho D_\rho)$ behaves as a dualising sheaf even at singular points.
-Note the contrast with Gorenstein, which is a genuine condition: $X_\Sigma$ is Gorenstein exactly when $K_X$ is Cartier, which for $X_P$ means $P$ reflexive.
+Since toric varieties are normal and Cohen--Macaulay, their canonical module is represented by the torus-invariant canonical divisor
+$$
+K_{X_\Sigma}\sim-\sum_{\rho\in\Sigma(1)}D_\rho.
+$$
+The toric variety is Gorenstein exactly when this canonical divisor is Cartier.
 
-The third statement is the toric case of a theorem on semigroup rings, and it says that $\Pic(U_\sigma) = 0$ for every cone, which is what makes the class group of the cone over the rational normal curve a clean example of $\Pic \subsetneq \Cl$.
+The vector-bundle theorem implies $\Pic(U_\sigma)=0$ for every affine toric chart. Singular affine toric varieties can nevertheless have nonzero divisor class group; [[FE-TORCD]] gives $\Cl(U_\sigma)\cong\ZZ/d\ZZ$ for the cone over the rational normal curve of degree $d$.
 :::
