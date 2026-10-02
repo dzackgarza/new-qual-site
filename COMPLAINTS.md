@@ -1136,6 +1136,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-7XH2R`,
   removes the duplicate wiki link, and deletes `FD-CD2FE`.
 
+### Duplicate prime-ideal cards D-5BM46 and FD-OSSYR
+
+- **Object and need:** `D-5BM46` and `FD-OSSYR` in
+  `corpus/theory/Algebra`. Both define a proper ideal `$\mathfrak p$` of a
+  commutative ring to be prime when `$ab\in\mathfrak p$` implies
+  `$a\in\mathfrak p$` or `$b\in\mathfrak p$`.
+- **Observed evidence:** the definitions are identical. `D-5BM46` is the
+  dependency used by the prime spectrum, quotient criterion, and height
+  theorems; the wiki displayed `FD-OSSYR` immediately beside it.
+- **Impact and owner:** the flashcard adds no distinct mathematics and creates
+  a second defining occurrence.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `D-5BM46`,
+  removes the duplicate wiki link, and deletes `FD-OSSYR`.
+
 ### Sign homomorphism used incompatible codomains under one symbol
 
 - **Object and need:** `D-BZ3KD`, `D-TMME3`, and the permutation/determinant
