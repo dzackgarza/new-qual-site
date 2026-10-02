@@ -1439,20 +1439,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   to `D-KQFIV`, redirects all live theory references, removes duplicate
   reader-facing entries, and deletes `FD-YYLYR`.
 
-### Duplicate matrix-power counterexamples FE-ISVDM and FE-W56LS
+### Duplicate matrix-power counterexamples
 
-- **Object and need:** `FE-ISVDM` and `FE-W56LS` in
-  `corpus/theory/Algebra`. Both answer the same prompt with the same
-  counterexample to `$A^n=B^n\Rightarrow A=B$`.
-- **Observed evidence:** both complete cards use
+- **Object and need:** `FE-ISVDM`, `FE-W56LS`, and later `FF-VKYM3` in
+  `corpus/theory/Algebra`. They answer the same prompt about whether
+  `$A^n=B^n$` forces `$A=B$`.
+- **Observed evidence:** `FE-ISVDM` and `FE-W56LS` both use
   `$M=\begin{psmallmatrix}0&1\\1&0\end{psmallmatrix}$`, `$M^2=I$`, and
   `$M\ne I$`; `FE-W56LS` already declares itself `variant-of: FE-ISVDM`.
-  The wiki displayed both on the same line.
-- **Impact and owner:** this is one mathematical example with two intrinsic
-  addresses and no source-appearance distinction.
+  `FF-VKYM3` gives the same claim with another square-root-of-`$-I$` example.
+  All three examples only treated `$n=2$`, even though their body copy said
+  “for `$n\ge2$`.”
+- **Impact and owner:** one intrinsic counterexample question had multiple
+  addresses, and the displayed witnesses did not justify the universal
+  `$n\ge2$` wording.
 - **Uncertainty:** none after reading both complete cards.
-- **Repair:** the same repair commit retains `FE-ISVDM`, removes the duplicate
-  wiki reference, and deletes `FE-W56LS`.
+- **Repair:** the first repair retained `FE-ISVDM` and deleted `FE-W56LS`.
+  The later repair replaces its witness by the rotation matrix through
+  `$2\pi/n$`, which works for every `$n\ge2$`, redirects the remaining guide
+  and wiki references, and deletes `FF-VKYM3`.
 
 ### FF-6MNV6 called a disjoint-cycle product a cycle and changed sign notation
 

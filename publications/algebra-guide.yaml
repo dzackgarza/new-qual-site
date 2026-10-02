@@ -677,7 +677,7 @@ sections:
       - ref: PR-24CPI
       - ref: D-HGMOW
       - ref: D-23FX7
-      - ref: FF-VKYM3
+      - ref: FE-ISVDM
   - slug: canonical-forms
     title: Canonical forms
     parent: structure-theorem
