@@ -1418,6 +1418,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit removes “finitely generated” from the
   proposition and slogan.
 
+### PR-E4T3S repeated its quartic-Galois classification only as unlabeled screenshots
+
+- **Object and need:** `PR-E4T3S`, Galois groups of irreducible quartics over
+  `$\QQ$`. The proposition already states the complete discriminant/resolvent
+  decision tree in authored text.
+- **Observed evidence:** the closing remark appended two image-only summaries,
+  `2021-08-09_14-48-55.png` and `2021-07-20_22-06-48.png`, with empty alt text
+  and no mathematical content not already present in the proposition.
+- **Impact and owner:** the duplicated decision procedure was inaccessible to
+  text readers and depended on opaque legacy assets rather than authored
+  corpus copy.
+- **Uncertainty:** none; the textual proposition already enumerates every case.
+- **Repair:** the same repair commit removes the two redundant screenshots and
+  retains the distinct cycle-type remark for `$D_4$` versus `$C_4$`.
+
 ### Duplicate normal-extension cards D-LZTAK and FD-JJFZ3
 
 - **Object and need:** `D-LZTAK` and `FD-JJFZ3` in
