@@ -32,3 +32,40 @@ How many possible combinations must the man try to unlock his safe?
 (D) 35,400
 (E) 11,703,240
 :::
+
+::: {.solution}
+<1>1. The third number has exactly $10$ possible values.
+
+::: {.proof}
+If the third number is the prime $p$, then the second number is $2p$ and must be at most $60$. Hence $p\le30$. The primes at most $30$ are
+$$
+2,3,5,7,11,13,17,19,23,29,
+$$
+so there are exactly $10$ choices for the third number. Each choice determines the second number uniquely.
+:::
+
+<1>2. Once the second and third numbers are fixed, there are $58$ choices for the first number and then $57$ choices for the fourth number.
+
+::: {.proof}
+The second and third numbers are distinct because $2p\ne p$ for every positive prime $p$. The first number may therefore be any of the remaining $60-2=58$ numbers. After it is chosen, the fourth number may be any of the remaining $60-3=57$ numbers.
+:::
+
+<1>3. The number of possible combinations is
+$$
+10\cdot58\cdot57=\boxed{33{,}060},
+$$
+so the answer is (B).
+
+::: {.proof}
+By step <1>1 there are $10$ choices for the constrained second-third pair, and by step <1>2 each such pair admits $58\cdot57$ ordered choices for the first and fourth positions. The multiplication principle gives
+$$
+10\cdot58\cdot57=33{,}060.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested number of possible combinations.
+:::
+:::
