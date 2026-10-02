@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-JQNJQ
 kind: definition
 title: Elementary divisor decomposition
+prompts:
+- What are the elementary divisors of a finite abelian group?
 classification:
   areas:
   - algebra

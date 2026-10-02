@@ -67,7 +67,7 @@ The order of the group is $d_1\cdots d_k$ and its exponent is $d_k$.
 
 [[D-JQNJQ]]
 
-[[FD-JTWOB]] [[FD-H764S]]
+[[FD-JTWOB]]
 
 [[PR-TLPVU]]
 
