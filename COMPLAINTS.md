@@ -2213,3 +2213,28 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-GRECH7-44` records probability zero for the printed problem and
   derives approximately 52.219% for 100 flips, selecting (E) under the evident
   correction; the external source is left unchanged.
+
+### GRE Chapter 7 question 46 has corrupted duplicate answer choices
+
+- **Object and need:** `P-GRECH7-46` and Chapter 7 review question 46 in
+  `Cracking the GRE Mathematics Subject Test`. The problem asks for all complex
+  solutions of `$\cos z=3$`.
+- **Observed evidence:** direct high-resolution inspection of page 10 of
+  `assets/attachments/Chapter-7.pdf` shows `$\sqrt{2i}$` in every printed
+  choice. Choices (B) and (C) are identical, while (A), (D), and (E) are
+  identical. Solving the equation gives `$e^{iz}=3\pm2\sqrt2$` and hence
+  `$z=2k\pi-i\log(3\pm2\sqrt2)$`. The Chapter 8 solution derives exactly this
+  formula and labels it choice (C), despite the printed (C) containing
+  `$\sqrt{2i}$`.
+- **Impact and owner:** none of the printed answer choices matches the actual
+  solution, and the duplicated choices cannot support a unique multiple-choice
+  answer. The derivation in the solution section is mathematically consistent;
+  the corruption lies in the printed choices.
+- **Expected result:** derive the solution independently, preserve the
+  source-faithful printed choices, and record that the Chapter 8 formula is the
+  intended answer even though no printed choice contains it.
+- **Uncertainty:** none; the retained scan resolves the radical visibly and the
+  quadratic reduction of `$\cos z=3$` determines the required `$\sqrt2$` term.
+- **Repair:** `P-GRECH7-46` proves the full solution set and explains why no
+  retained answer choice is correct as printed; the external source is left
+  unchanged.
