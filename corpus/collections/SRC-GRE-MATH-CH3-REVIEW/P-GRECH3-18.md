@@ -33,3 +33,53 @@ what's the value of $\frac{\partial z}{\partial v}$ at $P_0$?
 (D) $12$
 (E) $-10$
 :::
+
+::: {.solution}
+<1>1. The chain rule gives
+$$
+\frac{\partial z}{\partial v}
+=
+\frac{\partial f}{\partial x}\frac{\partial g}{\partial v}
++
+\frac{\partial f}{\partial y}\frac{\partial h}{\partial v}.
+$$
+
+::: {.proof}
+Since
+$$
+z=f(x,y),\qquad x=g(u,v),\qquad y=h(u,v),
+$$
+the composite is
+$$
+z(u,v)=f\bigl(g(u,v),h(u,v)\bigr).
+$$
+Differentiating this composite with respect to $v$ gives the displayed multivariable chain-rule formula.
+:::
+
+<1>2. At $P_0=(0,1)$,
+$$
+\boxed{\frac{\partial z}{\partial v}=16},
+$$
+so the answer is (B).
+
+::: {.proof}
+At $P_0$, the intermediate point is $Q_0=(2,1)$. Substituting the supplied derivative values into step <1>1 gives
+$$
+\left.\frac{\partial z}{\partial v}\right|_{P_0}
+=
+\left.\frac{\partial f}{\partial x}\right|_{Q_0}
+\left.\frac{\partial g}{\partial v}\right|_{P_0}
++
+\left.\frac{\partial f}{\partial y}\right|_{Q_0}
+\left.\frac{\partial h}{\partial v}\right|_{P_0}
+=(11)(2)+(-3)(2)
+=16.
+$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the requested partial derivative and corresponding choice.
+:::
+:::
