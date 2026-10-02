@@ -3,8 +3,6 @@ schema: qual/card@1
 id: D-TO3IY
 kind: definition
 title: Irreducible element
-prompts:
-- When is a ring element irreducible?
 classification:
   areas:
   - algebra
