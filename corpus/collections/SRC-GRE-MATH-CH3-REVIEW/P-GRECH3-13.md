@@ -28,3 +28,70 @@ If the variables $P$, $V$, and $T$ are related by the equation $PV=nRT$, where $
 (D) $nR$
 (E) $\frac{1}{nR}$
 :::
+
+::: {.solution}
+<1>1. Holding $P$ fixed,
+$$
+\left(\frac{\partial V}{\partial T}\right)_P=\frac{nR}{P}.
+$$
+
+::: {.proof}
+From $PV=nRT$,
+$$
+V=\frac{nRT}{P}.
+$$
+Differentiating with respect to $T$ while $P$ is fixed gives the displayed derivative.
+:::
+
+<1>2. Holding $V$ fixed,
+$$
+\left(\frac{\partial T}{\partial P}\right)_V=\frac{V}{nR}.
+$$
+
+::: {.proof}
+Solving the relation for $T$ gives
+$$
+T=\frac{PV}{nR}.
+$$
+Differentiating with respect to $P$ while $V$ is fixed gives the displayed derivative.
+:::
+
+<1>3. Holding $T$ fixed,
+$$
+\left(\frac{\partial P}{\partial V}\right)_T=-\frac{nRT}{V^2}.
+$$
+
+::: {.proof}
+Solving the relation for $P$ gives
+$$
+P=\frac{nRT}{V}.
+$$
+Differentiating with respect to $V$ while $T$ is fixed yields
+$$
+\left(\frac{\partial P}{\partial V}\right)_T
+=-\frac{nRT}{V^2}.
+$$
+:::
+
+<1>4. The cyclic product is
+$$
+\boxed{-1},
+$$
+so the answer is (A).
+
+::: {.proof}
+Multiplying the derivatives from steps <1>1--<1>3 gives
+$$
+\frac{nR}{P}\cdot\frac{V}{nR}\cdot
+\left(-\frac{nRT}{V^2}\right)
+=-\frac{nRT}{PV}.
+$$
+The defining relation $PV=nRT$ therefore reduces this expression to $-1$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the simplified value and corresponding choice.
+:::
+:::
