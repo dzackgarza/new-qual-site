@@ -3,8 +3,6 @@ schema: qual/card@1
 id: D-INULL
 kind: definition
 title: Unique factorization domain
-prompts:
-- What does it mean for a ring to be a unique factorization domain?
 classification:
   areas:
   - algebra
