@@ -1053,6 +1053,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-TO3IY`,
   removes the duplicate wiki link, and deletes `FD-6LLJF`.
 
+### FD-6WSIA duplicated the separable-extension definition
+
+- **Object and need:** `D-JGYLA` and `FD-6WSIA` in
+  `corpus/theory/Algebra`. Both cards defined separability of an algebraic
+  field extension through separability of every element's minimal polynomial.
+- **Observed evidence:** the definition blocks are equivalent; `FD-6WSIA`
+  additionally proves the distinct criterion that an irreducible polynomial
+  is separable exactly when its formal derivative is nonzero.
+- **Impact and owner:** deleting the flashcard would discard useful
+  mathematics, but retaining its definition would leave two owners for
+  separable extension.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the two review prompts to
+  `D-JGYLA` and converts `FD-6WSIA` to the proposition-only card
+  “Irreducible separability criterion.”
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
