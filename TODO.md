@@ -15,9 +15,8 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
-The current milestone is **`audited-deployment`**: a deployed site whose copy is policy-aligned and which survives three consecutive open-ended audits.
-Its completed prerequisites include `unsolved-contribution` and `slogans`; the remaining route is `copy-policy-repair`, then the audit rounds.
-[Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
+**Owner decision, 2026-10-02: the current work is [Author solutions](#7-author-solutions).** Solutions no longer wait behind `copy-policy-repair` or `audited-deployment`; both are suspended, and no pass may delete, merge or consolidate owner-written cards.
+The copy pass run on 2026-10-01/02 deleted 46 owner-written corpus cards and merged others; restoring them precedes new solutions.
 
 #### Steward checkpoint — 2026-09-26
 
@@ -63,7 +62,7 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
 
 ### Solutions after the milestone
 
-The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs `audited-deployment`. Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
+The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs nothing. Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
 
 This is a finite DAG for each selected collection's authored card population.
 Returning to selection creates an instance for a different card, not a back-edge from commit to the same select node.
@@ -150,7 +149,7 @@ The recorded owner decisions were resolved; current owner decisions belong to th
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] **`select`**. **Needs:** `audited-deployment`. Select one unsolved card.
+- [ ] **`select`**. **Needs:** none. Select one unsolved card.
 
 - [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
 
