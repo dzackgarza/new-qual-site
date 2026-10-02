@@ -14,3 +14,85 @@ audit:
 Prove that the sum of two algebraic numbers is algebraic.
 Here an algebraic number means a complex root of a polynomial with rational coefficients.
 :::
+
+::: {.solution}
+Let $\alpha,\beta\in\mathbb C$ be algebraic over $\mathbb Q$.
+
+<1>1. The field extension $\mathbb Q(\alpha)/\mathbb Q$ is finite.
+
+::: {.proof}
+Since $\alpha$ is algebraic, it has a nonzero minimal polynomial over $\mathbb Q$ of finite degree. The standard basis theorem for a simple algebraic extension gives
+$$
+[\mathbb Q(\alpha):\mathbb Q]<\infty.
+$$
+:::
+
+<1>2. The number $\beta$ is algebraic over $\mathbb Q(\alpha)$.
+
+::: {.proof}
+There is a nonzero polynomial
+$$
+p(x)\in\mathbb Q[x]
+$$
+with $p(\beta)=0$. Since
+$$
+\mathbb Q[x]\subseteq\mathbb Q(\alpha)[x],
+$$
+the same polynomial witnesses that $\beta$ is algebraic over $\mathbb Q(\alpha)$.
+:::
+
+<1>3. The extension
+$$
+\mathbb Q(\alpha,\beta)/\mathbb Q
+$$
+is finite.
+
+::: {.proof}
+Step <1>2 gives
+$$
+[\mathbb Q(\alpha,\beta):\mathbb Q(\alpha)]<\infty.
+$$
+Combining this with step <1>1 and the tower law,
+$$
+[\mathbb Q(\alpha,\beta):\mathbb Q]
+=
+[\mathbb Q(\alpha,\beta):\mathbb Q(\alpha)]
+[\mathbb Q(\alpha):\mathbb Q]
+<\infty.
+$$
+:::
+
+<1>4. Every element of a finite extension of $\mathbb Q$ is algebraic over $\mathbb Q$.
+
+::: {.proof}
+Let $L/\mathbb Q$ be finite and let $\gamma\in L$. If
+$$
+d=[L:\mathbb Q],
+$$
+then the $d+1$ elements
+$$
+1,\gamma,\gamma^2,\ldots,\gamma^d
+$$
+are linearly dependent over $\mathbb Q$. Hence there are rational coefficients, not all zero, such that
+$$
+c_0+c_1\gamma+\cdots+c_d\gamma^d=0.
+$$
+Thus $\gamma$ is a root of a nonzero polynomial in $\mathbb Q[x]$.
+:::
+
+<1>5. The sum $\alpha+\beta$ is algebraic.
+
+::: {.proof}
+One has
+$$
+\alpha+\beta\in\mathbb Q(\alpha,\beta).
+$$
+The field on the right is finite over $\mathbb Q$ by step <1>3, so step <1>4 applies.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves the assertion.
+:::
+:::
