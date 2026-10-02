@@ -31,3 +31,46 @@ let $r$ denote its rank and $d$ denote its determinant. What is the value of $r 
 (D) $1$
 (E) $2$
 :::
+
+::: {.solution}
+<1>1. The rows of $A$ satisfy
+$$
+R_3-2R_2+R_1=0.
+$$
+
+::: {.proof}
+Indeed,
+$$
+(7,8,9)-2(4,5,6)+(1,2,3)=(0,0,0).
+$$
+Thus the three rows are linearly dependent.
+:::
+
+<1>2. The rank of $A$ is $r=2$.
+
+::: {.proof}
+Step <1>1 gives $r\le 2$. The first two rows $(1,2,3)$ and $(4,5,6)$ are not scalar multiples of one another, so they are linearly independent. Hence $r\ge 2$, and therefore $r=2$.
+:::
+
+<1>3. The determinant of $A$ is $d=0$.
+
+::: {.proof}
+By step <1>1, the rows of $A$ are linearly dependent. A square matrix with linearly dependent rows is singular, so its determinant is zero.
+:::
+
+<1>4. Therefore
+$$
+\boxed{r-d=2},
+$$
+so the answer is (E).
+
+::: {.proof}
+By steps <1>2 and <1>3, $r-d=2-0=2$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested value.
+:::
+:::
