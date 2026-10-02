@@ -863,6 +863,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   states the eight quaternion elements directly rather than treating `-1` as
   a presentation generator.
 
+### D-LIEMF marked the free-module universal map as injective without hypothesis
+
+- **Object and need:** `D-LIEMF`, Free module. The universal property of the
+  free module uses a set map `$\iota:\mathcal B\to M$`; injectivity is not
+  part of the universal property's statement.
+- **Observed evidence:** the commutative diagram rendered the arrow labelled
+  `$\iota$` with `hook`, although item (2) only assumes a map of sets. Over
+  the zero ring, the free module on a nonempty set is the zero module and the
+  universal structure map is not injective as a set map.
+- **Impact and owner:** the diagram asserted a stronger property than the
+  proposition and one that fails in an allowed ring case.
+- **Uncertainty:** none; the free-module adjunction requires a map, not an
+  injection.
+- **Repair:** the same repair commit removes the hook decoration from the
+  `$\iota$` arrow and leaves the universal property unchanged.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
