@@ -29,3 +29,60 @@ A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}
 (D) $-10$
 (E) $26$
 :::
+
+::: {.solution}
+<1>1. The vector $\mathbf b$ lies in the column space of $A$ exactly when the linear system $A\mathbf x=\mathbf b$ is consistent.
+
+::: {.proof}
+The column space of $A$ consists precisely of all linear combinations of the columns of $A$, equivalently of all vectors of the form $A\mathbf x$.
+:::
+
+<1>2. Row reduction of the augmented matrix gives
+$$
+\left(
+\begin{array}{ccc|c}
+1&2&3&12\\
+4&5&6&11\\
+7&8&9&d
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{ccc|c}
+1&2&3&12\\
+0&-3&-6&-37\\
+0&0&0&d-10
+\end{array}
+\right).
+$$
+
+::: {.proof}
+First replace $R_2$ by $R_2-4R_1$ and $R_3$ by $R_3-7R_1$, obtaining
+$$
+\left(
+\begin{array}{ccc|c}
+1&2&3&12\\
+0&-3&-6&-37\\
+0&-6&-12&d-84
+\end{array}
+\right).
+$$
+Then replace $R_3$ by $R_3-2R_2$. Its final augmented entry is $(d-84)-2(-37)=d-10$, giving the displayed echelon form.
+:::
+
+<1>3. The required value is
+$$
+\boxed{d=10},
+$$
+so the answer is (B).
+
+::: {.proof}
+By step <1>1, the augmented system must be consistent. By step <1>2, consistency holds exactly when its last row does not assert $0=d-10\ne0$, hence exactly when $d-10=0$. Thus $d=10$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the unique value for which $\mathbf b$ belongs to the column space of $A$.
+:::
+:::
