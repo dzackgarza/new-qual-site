@@ -29,8 +29,5 @@ Let $k$, $V$, $\mathcal B$, $b$, and $G$ be as in the definition, and write $[x]
 2. If $\mathcal B'$ is another ordered basis and $P\in\GL_n(k)$ satisfies $[x]_{\mathcal B} = P[x]_{\mathcal B'}$ for all $x\in V$, then the Gram matrix of $b$ with respect to $\mathcal B'$ is $P^t G P$. In particular, $\det G$ is well defined up to multiplication by the square of a nonzero element of $k$.
 
 3. $b$ is [[D-O4WWN|nondegenerate]] if and only if $G$ is invertible.
-:::
-
-::: {.concept}
-See [@Art11].
+[@Art11]
 :::
