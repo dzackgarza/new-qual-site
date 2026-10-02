@@ -25,3 +25,54 @@ Let $R$ be a ring; an element $x$ in $R$ is said to be idempotent if $x^2 = x$. 
 (D) $8$
 (E) $10$
 :::
+
+::: {.solution}
+<1>1. By the Chinese remainder theorem,
+$$
+\ZZ_{20}\cong\ZZ_4\times\ZZ_5,
+$$
+and idempotents correspond under this isomorphism.
+
+::: {.proof}
+Since $\gcd(4,5)=1$, reduction modulo $4$ and modulo $5$ gives a ring isomorphism
+$$
+\ZZ_{20}\longrightarrow\ZZ_4\times\ZZ_5.
+$$
+Ring homomorphisms preserve the equation $x^2=x$, so an element of $\ZZ_{20}$ is idempotent exactly when both of its components are idempotent.
+:::
+
+<1>2. Each of $\ZZ_4$ and $\ZZ_5$ has exactly two idempotents, $0$ and $1$.
+
+::: {.proof}
+In either ring, idempotence is equivalent to
+$$
+x(x-1)=0.
+$$
+Modulo $5$, which is a field, this forces $x=0$ or $x=1$. Modulo $4$, the integers $x$ and $x-1$ are coprime; if $4\mid x(x-1)$, the full factor $4$ must divide one of them, so again $x\equiv0$ or $1\pmod4$.
+:::
+
+<1>3. Hence $\ZZ_{20}$ has exactly four idempotents, represented by
+$$
+0,\quad1,\quad5,\quad16.
+$$
+
+::: {.proof}
+Steps <1>1 and <1>2 give $2\cdot2=4$ possible pairs of idempotent components. Solving the four pairs of congruences modulo $4$ and $5$ gives respectively $0,1,5,16$ modulo $20$.
+:::
+
+<1>4. Therefore the number of idempotents is
+$$
+\boxed{4},
+$$
+so the answer is (B).
+
+::: {.proof}
+This is the count established in step <1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested number.
+:::
+:::
