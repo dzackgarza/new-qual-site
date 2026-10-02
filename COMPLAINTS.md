@@ -2033,3 +2033,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-GRECH2-42` proves the convergence range, proves that $4$ is
   the largest threshold, and records why the literal word “smallest” cannot
   yield the source's answer.
+
+### GRE Chapter 2 answer 49 conflates Taylor degree with number of terms
+
+- **Object and need:** `P-GRECH2-49` and the Chapter 8 answer to Chapter 2
+  review question 49 in `Cracking the GRE Mathematics Subject Test`.
+- **Observed evidence:** the question asks for the minimum number of Taylor
+  terms. The source answer labels (C), $5$, but its proof introduces the
+  degree-$n$ Taylor polynomial $P_n$ and concludes that $n=5$ is the minimum
+  degree. A degree-$5$ Taylor polynomial contains the six terms indexed
+  $0,1,\ldots,5$.
+- **Impact and owner:** the supplied answer is off by one. Five terms leave an
+  error greater than the first omitted term
+  $1/(5^5 5!)=1/375000>10^{-6}$, whereas six terms have error less than
+  $10^{-6}$. The literal correct choice is (D), $6$.
+- **Expected result:** distinguish polynomial degree from number of terms and
+  prove the minimal term count directly.
+- **Uncertainty:** none; the question wording explicitly asks for terms, and
+  the source solution explicitly establishes degree $5$.
+- **Repair:** `P-GRECH2-49` proves that five terms are insufficient and six
+  terms suffice, and selects (D). The external source is left unchanged.
