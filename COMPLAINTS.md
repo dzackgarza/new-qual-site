@@ -1085,6 +1085,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-RHJMK`,
   removes duplicate reader-facing references, and deletes `FD-6XJ7D`.
 
+### Duplicate maximal-ideal cards D-7XH2R and FD-CD2FE
+
+- **Object and need:** `D-7XH2R` and `FD-CD2FE` in
+  `corpus/theory/Algebra`. Both define a proper ideal to be maximal when no
+  proper strictly larger ideal exists.
+- **Observed evidence:** the complete definitions are mathematically
+  identical. `D-7XH2R` is the dependency used throughout the ideal and local
+  ring theory; `FD-CD2FE` is a migrated flashcard and the wiki displayed it
+  beside the canonical card.
+- **Impact and owner:** the duplicate flashcard adds no mathematics and creates
+  a second defining occurrence.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `D-7XH2R`,
+  removes the duplicate wiki link, and deletes `FD-CD2FE`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card

@@ -54,8 +54,6 @@ The [[D-CXXCG|prime spectrum]] $\spec R$ is the set of prime ideals of $R$, and 
 
 [[D-7XH2R]]
 
-[[FD-CD2FE]]
-
 [[D-NX4KW]]
 
 ## Units and simple rings
