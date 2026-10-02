@@ -33,16 +33,24 @@ prompts:
 ---
 
 ::: {.definition title="Projective variety"}
-A subset of $\PP^n$ is \dfn{closed} if it is $V(T)$ for a set $T$ of homogeneous elements of $S \da k[x_0,\ldots,x_n]$.
-A **projective variety** is an irreducible closed subset of $\PP^n$; a **quasi-projective variety** is an open subset of one.
+Let $S\coloneqq k[x_0,\ldots,x_n]$.
+A subset of $\PP^n_k$ is \dfn{Zariski closed} if it is $V(T)$ for a set $T$ of homogeneous elements of $S$.
+A \dfn{projective variety} is an irreducible Zariski-closed subset of $\PP^n_k$; a \dfn{quasi-projective variety} is an open subvariety of a projective variety.
 :::
 
 ::: {.remark}
-Homogeneity is forced, not stylistic: a point of $\PP^n$ is a line through the origin, so $f(p)$ is only well defined up to the scaling $f(\lambda p) = \lambda^{\deg f} f(p)$, and only the condition $f(p) = 0$ survives it.
-An inhomogeneous $f$ has no vanishing locus in $\PP^n$ at all.
-Homogenizing with respect to a new variable $Z$ gives projective closures: $V(x^2 + y^2 - 1)$ becomes $V(X^2 + Y^2 - Z^2)$, and $V(y - x^3)$ becomes $V(YZ^2 - X^3)$.
+A homogeneous polynomial $f$ of degree $d$ satisfies
+$$
+f(\lambda x_0,\ldots,\lambda x_n)=\lambda^d f(x_0,\ldots,x_n),
+$$
+so the condition $f=0$ is invariant under rescaling homogeneous coordinates. An arbitrary inhomogeneous polynomial does not define a projective equation unless its vanishing condition is separately shown to be scaling-invariant.
 
-The correspondence transfers with one defect.
-The **irrelevant ideal** $S_+ = (x_0,\ldots,x_n)$ is homogeneous and radical, and $V(S_+) = \emptyset$, so it shares its vanishing locus with $(1)$.
-The projective Nullstellensatz reads: for a homogeneous ideal $J$, $V(J) = \emptyset$ exactly when $\sqrt{J} \supseteq S_+$, and otherwise $I(V(J)) = \sqrt{J}$.
+Homogenizing with respect to a new variable $Z$ gives projective closures: $V(x^2+y^2-1)\subseteq\AA^2$ has closure $V(X^2+Y^2-Z^2)\subseteq\PP^2$, and $V(y-x^3)$ has closure $V(YZ^2-X^3)$.
+
+The \dfn{irrelevant ideal} is $S_+=(x_0,\ldots,x_n)$. It is homogeneous and radical, and $V(S_+)=\emptyset$.
+For a homogeneous ideal $J\subseteq S$, the projective Nullstellensatz states
+$$
+V(J)=\emptyset\quad\Longleftrightarrow\quad S_+\subseteq\sqrt J.
+$$
+If $V(J)\ne\emptyset$, then $I(V(J))=\sqrt J$.
 :::
