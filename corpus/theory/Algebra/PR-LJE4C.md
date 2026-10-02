@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-LJE4C
 kind: proposition
-title: Correspondence theorem for ideals
+title: Correspondence and third isomorphism theorems for quotient rings
 slogan: 'Ideals above $I$ correspond exactly to ideals of $R/I$, and quotienting twice equals quotienting once.'
 classification:
   areas:

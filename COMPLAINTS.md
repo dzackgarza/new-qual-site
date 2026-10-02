@@ -1857,3 +1857,16 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   proposition and its example. The rational root theorem moves intact to
   `PR-RRTST`, with its proof and polynomial-division remark, and reader-facing
   uses link that canonical card.
+
+### PR-LJE4C's title omitted half of the card's stated theorem
+
+- **Object and need:** `PR-LJE4C` in `corpus/theory/Algebra`. Its title named
+  only the ideal correspondence theorem.
+- **Observed evidence:** the proposition also states the subring
+  correspondence and the third isomorphism theorem
+  `((R/I)/(J/I)) \cong R/J`.
+- **Impact and owner:** the title did not name the full mathematical unit on
+  the card and made the iterated-quotient theorem invisible in card lists.
+- **Uncertainty:** none after reading the complete proposition.
+- **Repair:** retitle the card “Correspondence and third isomorphism theorems
+  for quotient rings”; the existing slogan already names both components.
