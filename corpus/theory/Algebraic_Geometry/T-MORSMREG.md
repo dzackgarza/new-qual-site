@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-MORSMREG
 kind: theorem
-title: Smooth over an algebraically closed field equals regular
+title: Smoothness and regularity over a field
 slogan: 'Smoothness is geometric regularity: over a perfect field, finite-type schemes are smooth exactly when they are regular.'
 classification:
   areas:
@@ -14,6 +14,8 @@ classification:
 relations:
 - kind: uses
   target: D-MORSM
+- kind: related-to
+  target: PR-MORJAC
 review: draft
 prompts:
 - How is smoothness related to regularity?
@@ -27,17 +29,6 @@ If $X \to \Spec k$ is smooth of relative dimension $n$ then $X$ is regular of di
 The converse holds when $k$ is perfect, in particular when $k = \kbar$, and fails otherwise.
 :::
 
-::: {.theorem title="Jacobian criterion"}
-Let $k$ be an algebraically closed field, $X = V(f_1, \ldots, f_r) \subseteq \AA^m_k$, and $x \in X$ a closed point with $\dim \OO_{X,x} = n$.
-Let $J(x) = (\partial f_i / \partial x_j (x))$ be the Jacobian matrix at $x$.
-
-1. $\dim_k \mfm_x / \mfm_x^2 = \dim_k \Omega_{X/k} \otimes \kappa(x) = m - \operatorname{rank} J(x)$.
-
-2. $X$ is regular at $x$ if and only if $\operatorname{rank} J(x) = m - n$.
-
-[@Har10a, Theorem I.5.1, Proposition II.8.7]
-:::
-
 ::: {.theorem title="Smoothness over a field"}
 Let $k$ be a field and $X$ a scheme locally of finite type over $k$, of pure dimension $n$. The following are equivalent.
 
@@ -45,9 +36,7 @@ Let $k$ be a field and $X$ a scheme locally of finite type over $k$, of pure dim
 
 2. $\Omega_{X/k}$ is locally free of rank $n$.
 
-3. $X$ is covered by open subschemes isomorphic to open subschemes of $\Spec k[x_1, \ldots, x_m]/(f_1, \ldots, f_r)$ whose Jacobian matrix has rank $m - n$ at every point.
-
-4. $X_{\bar{k}} = X \times_k \Spec \bar{k}$ is regular.
+3. $X_{\bar{k}} = X \times_k \Spec \bar{k}$ is regular.
 
 If $k$ is perfect, these are also equivalent to: $X$ is regular.
 
@@ -56,9 +45,11 @@ If $k$ is perfect, these are also equivalent to: $X$ is regular.
 
 ::: {.remark}
 Smoothness is a property of a morphism, while regularity is a property of local rings.
-Smooth is the stronger, base-change-stable notion: it is "regular after every field extension", which is why the two agree exactly when there are no inseparable extensions to spoil it.
+For a finite-type scheme over a field, smoothness is geometric regularity: it is equivalent to regularity after extension to an algebraic closure. Over a perfect field, regularity is already geometric, so regular and smooth coincide.
+
+For an affine presentation by generators of the scheme-theoretic defining ideal, [[PR-MORJAC]] computes the tangent-space dimension from the Jacobian matrix and gives the corresponding smoothness criterion over an algebraically closed field.
 
 Over an imperfect field the converse fails: for $k=\FF_p(t)$, $X=\Spec k[x]/(x^p-t)$ is the spectrum of a field and hence regular, while $X_{\bar k}=\Spec \bar k[x]/(x-t^{1/p})^p$ is nonreduced, so $X$ is not smooth over $k$.
 
-A smooth morphism is regular fibrewise, not absolutely: a smooth morphism over a singular base has singular total space, and the fibres are what the definition controls.
+A smooth morphism has geometrically regular fibres. Regularity of the total space is a separate question: if the base is regular then a smooth total space is regular, while an open immersion from the regular locus of a singular scheme is smooth with regular source even though the ambient base is singular.
 :::
