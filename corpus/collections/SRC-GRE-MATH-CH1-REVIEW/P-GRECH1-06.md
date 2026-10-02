@@ -31,3 +31,47 @@ If $f(x) = x + 1$ and $g(x) = \sqrt{x}$, what is $h(x)$?
 (D) $x\sqrt{x} + 1$
 (E) $1 + (\sqrt{x} + 2)\sqrt{x}$
 :::
+
+::: {.solution}
+<1>1. $(f\circ g)(x)=\sqrt{x}+1$.
+
+::: {.proof}
+Using the given formulas,
+$$
+(f\circ g)(x)=f(\sqrt{x})=\sqrt{x}+1.
+$$
+:::
+
+<1>2. The composition identity implies
+$$
+\sqrt{h(x)}=\sqrt{x}+1.
+$$
+
+::: {.proof}
+Since $g(t)=\sqrt{t}$,
+$$
+(g\circ h)(x)=\sqrt{h(x)}.
+$$
+Equating this with step <1>1 gives the displayed equality.
+:::
+
+<1>3. Therefore
+$$
+h(x)=\boxed{1+(\sqrt{x}+2)\sqrt{x}},
+$$
+so the answer is (E).
+
+::: {.proof}
+Squaring the equality in step <1>2 gives
+$$
+h(x)=(\sqrt{x}+1)^2=x+2\sqrt{x}+1
+=1+(\sqrt{x}+2)\sqrt{x}.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested function and corresponding choice.
+:::
+:::
