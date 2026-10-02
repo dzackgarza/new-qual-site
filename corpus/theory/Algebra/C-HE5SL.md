@@ -4,8 +4,6 @@ id: C-HE5SL
 kind: corollary
 title: Burnside's lemma
 slogan: Orbit count is the average fixed-point count.
-prompts:
-- State Burnside's orbit-counting formula.
 classification:
   areas:
   - algebra
@@ -26,16 +24,6 @@ $$
 $$
 :::
 
-::: {.proof}
-Count
-$$
-\theset{(g,x)\in G\times X\suchthat g\cdot x=x}
-$$
-in two ways. Summing over $g$ gives $\sum_{g\in G}\size\Fix(g)$. Summing over $x$ gives
-$$
-\sum_{x\in X}\size G_x
-=
-\sum_{x\in X}\frac{\size G}{\size(G\cdot x)}
-$$
-by orbit-stabilizer. Each orbit contributes exactly $\size G$, so the latter sum is $\size G\,\size(X/G)$.
+::: {.remark}
+The number of orbits is the average over $G$ of the number of fixed points.
 :::
