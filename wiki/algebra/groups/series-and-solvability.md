@@ -18,8 +18,6 @@ A [[D-FYX4I|composition series]] of $G$ is a chain $1=G_0\normal G_1\normal\cdot
 
 [[D-FYX4I]]
 
-[[FD-PLAEO]]
-
 [[T-OSJ5S]]
 
 [[D-T2NZ4]]

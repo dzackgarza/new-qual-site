@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-FYX4I
 kind: definition
 title: Composition series
+prompts:
+- What is a composition series of a group $G$?
 classification:
   areas:
   - algebra
@@ -20,4 +22,5 @@ $$
 G = G^0 \geq G^1 \geq \cdots \geq G^n = \theset{e}, \qquad G^{i+1}\normal G^i,
 $$
 such that for each $0\leq i<n$, $G^{i+1}$ is a maximal proper normal subgroup of $G^i$.
+Equivalently, each quotient $G^i/G^{i+1}$ is simple; these simple quotients are the \dfn{composition factors} of the series.
 :::

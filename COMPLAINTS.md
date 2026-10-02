@@ -1024,6 +1024,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `D-T2NZ4`, redirects the remaining dependency, removes duplicate
   reader-facing references, and deletes `FD-2UWAQ`.
 
+### Duplicate composition-series cards D-FYX4I and FD-PLAEO
+
+- **Object and need:** `D-FYX4I` and `FD-PLAEO` in
+  `corpus/theory/Algebra`. They define the same finite normal series, with
+  `D-FYX4I` descending by maximal proper normal subgroups and `FD-PLAEO`
+  ascending with simple successive quotients.
+- **Observed evidence:** those conditions are equivalent, since
+  `$N_i\normal N_{i+1}$` is maximal proper exactly when
+  `$N_{i+1}/N_i$` is simple. `FD-PLAEO` additionally names the successive
+  simple quotients as composition factors. The wiki and algebra guide exposed
+  both cards, and `FD-T7IQV` linked to the flashcard duplicate.
+- **Impact and owner:** two cards owned one definition, while the composition
+  factor terminology belongs naturally on the canonical series card.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the prompt and composition-factor
+  terminology to `D-FYX4I`, redirects `FD-T7IQV`, removes duplicate
+  reader-facing references, and deletes `FD-PLAEO`.
+
 ### Duplicate finite-Galois card FD-4GFTY
 
 - **Object and need:** `D-5JYEI` and `FD-4GFTY` in

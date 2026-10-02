@@ -210,7 +210,6 @@ sections:
     items:
       - ref: D-KM2DV
       - ref: D-FYX4I
-      - ref: FD-PLAEO
       - ref: T-OSJ5S
       - ref: D-BQ4BQ
       - ref: D-W2QAA
