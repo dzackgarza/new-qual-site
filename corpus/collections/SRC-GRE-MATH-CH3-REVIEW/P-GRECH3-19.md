@@ -25,3 +25,66 @@ The temperature at each point $(x,y,z)$ in a room is given by the equation $T(x,
 (D) $-2\hat{\mathbf{i}}+8\hat{\mathbf{j}}-5\hat{\mathbf{k}}$
 (E) $-6\hat{\mathbf{i}}+4\hat{\mathbf{j}}-3\hat{\mathbf{k}}$
 :::
+
+::: {.solution}
+<1>1. The temperature gradient at $(2,2,2)$ is
+$$
+\nabla T(2,2,2)=(60,12,24)=12(5,1,2).
+$$
+
+::: {.proof}
+From
+$$
+T(x,y,z)=9x^2-3y^2+6xyz,
+$$
+one has
+$$
+T_x=18x+6yz,\qquad
+T_y=-6y+6xz,\qquad
+T_z=6xy.
+$$
+Evaluating at $(2,2,2)$ gives
+$$
+T_x=60,\qquad T_y=12,\qquad T_z=24.
+$$
+:::
+
+<1>2. The direction of most rapid decrease of $T$ at $(2,2,2)$ is the direction of
+$$
+-\nabla T(2,2,2).
+$$
+
+::: {.proof}
+For any unit direction vector $\mathbf{u}$, the directional derivative is
+$$
+D_{\mathbf{u}}T
+=\nabla T(2,2,2)\cdot\mathbf{u}.
+$$
+By the Cauchy--Schwarz inequality,
+$$
+D_{\mathbf{u}}T
+\ge -\|\nabla T(2,2,2)\|,
+$$
+with equality exactly when $\mathbf{u}$ points opposite to the gradient. Hence the maximal rate of decrease is attained in the direction of $-\nabla T(2,2,2)$.
+:::
+
+<1>3. The required listed direction is
+$$
+\boxed{-5\hat{\mathbf{i}}-\hat{\mathbf{j}}-2\hat{\mathbf{k}}},
+$$
+so the answer is (A).
+
+::: {.proof}
+By step <1>1,
+$$
+-\nabla T(2,2,2)=-12(5,1,2).
+$$
+Multiplying a nonzero direction vector by a positive scalar does not change its direction, so step <1>2 identifies $(-5,-1,-2)$, which is choice (A).
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested direction and corresponding choice.
+:::
+:::
