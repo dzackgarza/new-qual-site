@@ -28,3 +28,49 @@ Evaluate the following integral:
 (D) $\frac{1}{60}$
 (E) $\frac{7}{20}$
 :::
+
+::: {.solution}
+<1>1. With the substitution $u=x+1$, the integral becomes
+$$
+\int_0^1 (u^5-2u^4+u^3)\,du.
+$$
+
+::: {.proof}
+When $u=x+1$, one has $x=u-1$ and $dx=du$. The bounds $x=-1$ and $x=0$ become $u=0$ and $u=1$. Thus
+$$
+x^2(x+1)^3=(u-1)^2u^3=u^5-2u^4+u^3,
+$$
+which gives the displayed integral.
+:::
+
+<1>2. The value of the integral is
+$$
+\frac1{60}.
+$$
+
+::: {.proof}
+Integrating term by term in step <1>1 gives
+$$
+\left[\frac{u^6}{6}-\frac{2u^5}{5}+\frac{u^4}{4}\right]_0^1
+=\frac16-\frac25+\frac14
+=\frac{10-24+15}{60}
+=\frac1{60}.
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{\frac1{60}},
+$$
+so the answer is (D).
+
+::: {.proof}
+This is exactly the value established in step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested integral and corresponding choice.
+:::
+:::
