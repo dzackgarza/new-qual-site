@@ -5,7 +5,7 @@ kind: fact
 title: The Jacobson radical $J(R)$
 slogan: $J(R)$ annihilates every simple module, and for finite-type algebras over a field it is the nilradical.
 prompts:
-- What is ${J ({R}) }$? How is it interpreted geometrically?
+- What is the Jacobson radical $J(R)$, and how is it interpreted geometrically for a finitely generated algebra over an algebraically closed field?
 classification:
   areas:
   - algebra

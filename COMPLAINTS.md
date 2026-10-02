@@ -1453,6 +1453,20 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit says “permutation,” links the canonical
   sign card, and uses `\sgn` throughout the computation.
 
+### FF-7U6UY had malformed and underspecified review copy
+
+- **Object and need:** `FF-7U6UY`, the Jacobson-radical fact. Its review
+  prompt should name the invariant in ordinary notation and scope the geometric
+  interpretation to the hypotheses used by the card.
+- **Observed evidence:** the prompt read `What is ${J ({R}) }$? How is it
+  interpreted geometrically?`, while the geometric remark specifically uses a
+  finitely generated algebra over an algebraically closed field.
+- **Impact and owner:** the prompt exposed malformed legacy TeX and asked a
+  broader geometric question than the answer on the card supports.
+- **Uncertainty:** none.
+- **Repair:** the same repair commit writes `$J(R)$` normally and states the
+  finite-type/algebraically-closed scope in the prompt.
+
 ### Duplicate stabilizer card FD-IGEOR
 
 - **Object and need:** `D-WYC7C` and `FD-IGEOR` in
