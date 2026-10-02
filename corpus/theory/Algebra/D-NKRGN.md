@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-NKRGN
 kind: definition
 title: Euclidean domain
+prompts:
+- What is a Euclidean domain?
 classification:
   areas:
   - algebra

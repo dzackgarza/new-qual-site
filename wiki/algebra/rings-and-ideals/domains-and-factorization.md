@@ -71,8 +71,6 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 
 [[D-NKRGN]]
 
-[[FD-GXXBV]]
-
 ### Other classes of rings
 
 - A ring is [[D-TZXBO|Noetherian]] if every ascending chain of ideals stabilizes.
