@@ -1100,6 +1100,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-7XH2R`,
   removes the duplicate wiki link, and deletes `FD-CD2FE`.
 
+### Sign homomorphism used incompatible codomains under one symbol
+
+- **Object and need:** `D-BZ3KD`, `D-TMME3`, and the permutation/determinant
+  cards using `\sgn`. The canonical sign map must have one type.
+- **Observed evidence:** `D-BZ3KD` defined
+  `$\sgn:S_n\to\ZZ/2$` by transposition parity, and `D-TMME3` therefore used
+  `$\sgn(\sigma)=0$` for even permutations. `FD-GHDF2`, `FD-X4DBP`, and the
+  determinant formulas use the conventional multiplicative sign
+  `$\sgn:S_n\to\{\pm1\}$`.
+- **Impact and owner:** the same notation had two incompatible codomains, so
+  links to the canonical sign definition did not type-check against formulas
+  using it multiplicatively.
+- **Uncertainty:** none. The parity map and multiplicative sign are equivalent
+  via `$k\bmod2\mapsto(-1)^k$`, but they are not the same typed map.
+- **Repair:** the same repair commit makes `D-BZ3KD` own the conventional
+  multiplicative sign, updates `D-TMME3` to use sign `1` for even
+  permutations, and links `FD-GHDF2` to the canonical definition.
+
 ### FD-CI4NB misclassified polynomial rings as a variant of rational-function fields
 
 - **Object and need:** `FD-CI4NB`, Polynomial ring, and its relation to
