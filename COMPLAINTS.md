@@ -1920,3 +1920,5 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   canonical-form remark.
   `PR-HM7QK` now owns the count of homomorphisms between finite cyclic
   groups.
+  `PR-6JQ2M` now owns automorphisms of $C_m^n$ and the order of
+  $\GL_n(\FF_p)`, leaving `PR-N6S6P` focused on finite cyclic groups.

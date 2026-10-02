@@ -2,15 +2,14 @@
 schema: qual/card@1
 id: PR-N6S6P
 kind: proposition
-title: Automorphism groups of cyclic groups and related counts
-slogan: 'Cyclic-group automorphisms are units modulo the order; products and elementary abelian factors reduce to familiar linear groups.'
+title: Automorphism groups of finite cyclic groups
+slogan: 'Automorphisms of $C_n$ are the units modulo $n$.'
 classification:
   areas:
   - algebra
   topics:
   - Automorphisms
   - Cyclic Groups
-  - Semidirect Products
 relations: []
 review: draft
 ---
@@ -44,12 +43,6 @@ $$
 &\cong \qty{C_2 \times C_{2^{n_1-2}} } \times \prod_{k=2}^\ell C_{m_k},
 \qquad m_k \coloneqq \varphi(p_k^{n_k}) = p_k^{n_k-1}(p_k-1).
 \end{aligned}
-$$
-
-(f) For $m \geq 2$ and $n \geq 1$, $\Aut(C_m^n) \cong \GL_n(\ZZ/m\ZZ)$.
-For $p$ prime, $\Aut(C_p^n) \cong \GL_n(\FF_p)$, and
-$$
-\abs{\GL_n(\FF_p)} = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1}).
 $$
 
 :::
