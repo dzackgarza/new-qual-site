@@ -1438,6 +1438,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit retains `FE-ISVDM`, removes the duplicate
   wiki reference, and deletes `FE-W56LS`.
 
+### FF-6MNV6 called a disjoint-cycle product a cycle and changed sign notation
+
+- **Object and need:** `FF-6MNV6`, the worked sign computation for a
+  permutation in `$S_{18}$`.
+- **Observed evidence:** the review prompt called
+  `$(123456)(789)(10~11)(12~13~14~15)(16~17~18)$` “the cycle,” although it is
+  a product of five disjoint cycles. The body also denoted sign by
+  `$\varepsilon$` while the canonical sign homomorphism is `\sgn` on
+  `D-BZ3KD`.
+- **Impact and owner:** the prompt misstated the object type and the worked
+  example drifted from the corpus's canonical sign notation.
+- **Uncertainty:** none.
+- **Repair:** the same repair commit says “permutation,” links the canonical
+  sign card, and uses `\sgn` throughout the computation.
+
 ### Duplicate stabilizer card FD-IGEOR
 
 - **Object and need:** `D-WYC7C` and `FD-IGEOR` in
