@@ -20,3 +20,57 @@ audit:
 ::: {.problem}
 Suppose that N is a normal subgroup of a finite group G and H is a subgroup of G. If |G/N| is prime, prove that H is contained in N or that N H = G.
 :::
+
+::: {.solution}
+Let
+$$
+\pi:G\longrightarrow G/N
+$$
+be the quotient homomorphism.
+
+<1>1. The subgroup $\pi(H)$ is either $\{N\}$ or all of $G/N$.
+
+::: {.proof}
+Because $H\leq G$ and $\pi$ is a homomorphism, $\pi(H)$ is a subgroup
+of $G/N$. By hypothesis $|G/N|$ is prime. A group of prime order has
+no subgroups other than the identity subgroup and the whole group, so
+$$
+\pi(H)=\{N\}
+\qquad\text{or}\qquad
+\pi(H)=G/N.
+$$
+:::
+
+<1>2. If $\pi(H)=\{N\}$, then $H\subseteq N$.
+
+::: {.proof}
+For every $h\in H$, the assumption $\pi(H)=\{N\}$ gives
+$$
+hN=N.
+$$
+This is equivalent to $h\in N$. Hence every element of $H$ lies in
+$N$, so $H\subseteq N$.
+:::
+
+<1>3. If $\pi(H)=G/N$, then $NH=G$.
+
+::: {.proof}
+Let $g\in G$. Since $\pi(H)=G/N$, there is an $h\in H$ with
+$$
+gN=hN.
+$$
+Thus $gh^{-1}\in N$, so for some $n\in N$ one has
+$$
+g=nh\in NH.
+$$
+Hence $G\subseteq NH$. The reverse inclusion is immediate from
+$N,H\subseteq G$, so $NH=G$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the only two cases. Step <1>2 gives $H\subseteq N$ in
+the first case, and step <1>3 gives $NH=G$ in the second.
+:::
+:::
