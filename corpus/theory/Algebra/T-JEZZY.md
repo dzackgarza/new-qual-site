@@ -4,6 +4,8 @@ id: T-JEZZY
 kind: theorem
 title: Gauss's lemma
 slogan: 'For a primitive polynomial over a UFD, irreducibility is unchanged on passing to the fraction field.'
+prompts:
+- State Gauss' lemma.
 classification:
   areas:
   - algebra
@@ -16,12 +18,22 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $R$ be a [[D-INULL|unique factorization domain]] with [[D-OXIVT|field of fractions]] $F$, and let $p\in R[x]$ be [[D-4VC6X|primitive]].
-Then $p$ is irreducible in $R[x]$ if and only if $p$ is [[D-BVMTZ|irreducible]] in $F[x]$.
+Let $R$ be a [[D-INULL|unique factorization domain]] with [[D-OXIVT|field of fractions]] $F$.
+
+If $p\in R[x]$ and $p=AB$ with $A,B\in F[x]$ nonconstant, then there exist nonconstant $A',B'\in R[x]$ with
+$$
+p=A'B',\qquad \deg A'=\deg A,\qquad \deg B'=\deg B.
+$$
+
+Consequently, if $p\in R[x]$ is [[D-4VC6X|primitive]], then $p$ is irreducible in $R[x]$ if and only if $p$ is [[D-BVMTZ|irreducible]] in $F[x]$.
 
 More precisely, if $p=AB$ with $A,B\in F[x]$ nonconstant, then there exist $r,s\in F^\times$ with $rs=1$ such that $rA,sB\in R[x]$, so $p=(rA)(sB)$ is a factorization of $p$ in $R[x]$ into nonconstant polynomials.
 :::
 
 ::: {.example}
 Every monic polynomial in $R[x]$ is primitive, since its leading coefficient $1$ is a unit; so a monic $p\in\ZZ[x]$ is irreducible in $\ZZ[x]$ if and only if it is irreducible in $\QQ[x]$.
+:::
+
+::: {.remark}
+Gauss's lemma is the key step in proving that $R[x]$ is a unique factorization domain whenever $R$ is. Iterating gives that $R[x_1,\ldots,x_n]$ is a UFD; the same conclusion holds for a polynomial ring in any set of variables because each polynomial involves only finitely many variables.
 :::

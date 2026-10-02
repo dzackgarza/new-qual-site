@@ -23,8 +23,6 @@ A polynomial in $\ZZ[x]$ is primitive if the greatest common divisor of its coef
 
 [[T-JEZZY]]
 
-[[FT-OXN3Y]]
-
 ::: {.corollary}
 A primitive polynomial $p\in \ZZ[x]$ of positive degree is irreducible in $\ZZ[x]$ if and only if it is irreducible in $\QQ[x]$.
 :::
