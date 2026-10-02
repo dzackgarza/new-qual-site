@@ -2159,3 +2159,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-GRECH7-35` proves both counts and states the source's intended
   distinguished-committee answer without silently treating the wording as
   unambiguous; the external source is left unchanged.
+
+### GRE Chapter 7 question 38 uses decreasing “distribution functions” and omits independence
+
+- **Object and need:** `P-GRECH7-38` and Chapter 7 review question 38 in
+  `Cracking the GRE Mathematics Subject Test`. The problem asks for the
+  probability that at least one of two random variables exceeds $2$.
+- **Observed evidence:** direct inspection of page 9 of
+  `assets/attachments/Chapter-7.pdf` prints
+  `$F_X(t)=1/3^t$` and `$F_Y(t)=1/4^t$` and calls them distribution functions.
+  These are decreasing on the positive integers, so they cannot be cumulative
+  distribution functions. The Chapter 8 solution instead uses
+  `$P(X\le2)=1-1/9$` and `$P(Y\le2)=1-1/16$`, which treats the printed
+  quantities as survival probabilities. It then multiplies those probabilities
+  on the assertion that `$X$` and `$Y$` are independent, although independence
+  is absent from the problem statement.
+- **Impact and owner:** the printed marginal functions are mislabeled, and even
+  after interpreting them as tail probabilities the requested union
+  probability is not determined by the marginals without a joint-distribution
+  assumption. The supplied answer `$1/6$` follows only after both corrections:
+  tail-function interpretation and independence.
+- **Expected result:** identify the cumulative-distribution defect, distinguish
+  marginal information from a joint law, and compute `$1/6$` only under the
+  source's implicit independence assumption.
+- **Uncertainty:** none about either defect; monotonicity rules out the printed
+  cumulative-distribution interpretation, and the union formula explicitly
+  depends on `$P(X>2,Y>2)$`, which the marginals do not determine.
+- **Repair:** `P-GRECH7-38` proves the two defects and derives choice (E) under
+  the source's two implicit corrections; the external source is left unchanged.
