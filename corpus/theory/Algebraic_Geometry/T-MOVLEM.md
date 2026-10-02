@@ -25,8 +25,16 @@ Then $D$ is linearly equivalent to a Cartier divisor $D'$ whose support contains
 :::
 
 ::: {.theorem title="Chow's moving lemma"}
-Let $X$ be a smooth quasiprojective variety, and let $\alpha$ and $\beta$ be algebraic cycles on $X$.
-Then $\alpha$ is rationally equivalent to a cycle $\alpha'$ that meets $\beta$ properly: every irreducible component of $\supp \alpha' \cap \supp \beta$ has codimension $\codim \alpha + \codim \beta$.
+Let $X$ be a smooth quasiprojective variety over an algebraically closed field, and let
+$$
+\alpha\in Z^p(X),\qquad \beta\in Z^q(X)
+$$
+be cycles of pure codimensions $p$ and $q$.
+Then $\alpha$ is rationally equivalent to a cycle $\alpha'$ that meets $\beta$ properly: every irreducible component of
+$$
+\supp\alpha'\cap\supp\beta
+$$
+has codimension $p+q$ in $X$.
 :::
 
 ::: {.remark}
