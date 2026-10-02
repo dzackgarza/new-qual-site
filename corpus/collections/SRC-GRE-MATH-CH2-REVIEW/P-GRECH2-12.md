@@ -24,3 +24,54 @@ What is the equation of the tangent line to the curve $y = x^3 - 3x^2 + 4x$ at t
 (D) $y = 3x - 2$
 (E) $x + y = 1$
 :::
+
+::: {.solution}
+<1>1. The curve has its inflection point at $x=1$.
+
+::: {.proof}
+For
+$$
+y=x^3-3x^2+4x,
+$$
+the first two derivatives are
+$$
+y'=3x^2-6x+4,
+\qquad
+y''=6x-6.
+$$
+Thus $y''<0$ for $x<1$ and $y''>0$ for $x>1$. The concavity changes at $x=1$, so this is an inflection point.
+:::
+
+<1>2. The inflection point is $(1,2)$ and the tangent slope there is $1$.
+
+::: {.proof}
+Evaluating the function and its first derivative at $1$ gives
+$$
+y(1)=1-3+4=2
+$$
+and
+$$
+y'(1)=3-6+4=1.
+$$
+:::
+
+<1>3. The tangent line is
+$$
+\boxed{y=x+1},
+$$
+so the answer is (C).
+
+::: {.proof}
+Using the point and slope from step <1>2, the point-slope equation is
+$$
+y-2=1(x-1),
+$$
+which simplifies to $y=x+1$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested tangent line and corresponding choice.
+:::
+:::
