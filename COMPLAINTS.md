@@ -1485,6 +1485,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `regular ring`, moves the review prompt there, and converts `FF-CQSNC` to the
   proposition “Embedding dimension criterion for regular local rings.”
 
+### FF-ESIOA named only the nonzerodivisor corollary as Hauptidealsatz
+
+- **Object and need:** `FF-ESIOA` and the canonical principal-ideal theorem on
+  `PR-VARHT`.
+- **Observed evidence:** `FF-ESIOA` was titled “Krull's Hauptidealsatz” but
+  assumed the generator was a nonunit nonzerodivisor and concluded height
+  exactly `1`. The actual principal ideal theorem says every prime minimal over
+  a principal ideal has height at most `1`; exact height `1` is the stated
+  corollary under the extra nonzerodivisor hypothesis. `PR-VARHT` already owns
+  both statements.
+- **Impact and owner:** the Algebra card mislabeled a strengthened corollary as
+  the theorem itself, and `FF-CQSNC` linked to it when invoking Krull's height
+  theorem.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit retitles `FF-ESIOA` as the
+  nonzerodivisor corollary, links it to `PR-VARHT`, and redirects the
+  height-theorem reference on `FF-CQSNC` to the canonical theorem card.
+
 ### Duplicate stabilizer card FD-IGEOR
 
 - **Object and need:** `D-WYC7C` and `FD-IGEOR` in
