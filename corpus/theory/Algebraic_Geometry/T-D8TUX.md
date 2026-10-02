@@ -21,16 +21,19 @@ prompts:
 ---
 
 ::: {.theorem}
-Let $C$ be a smooth projective curve of genus $g$ over $k = \bar{k}$.
+Let $C$ be a smooth projective curve of genus $g$ over an algebraically closed field $k$.
 The canonical divisor $K$ is very ample exactly when $g \geq 3$ and $C$ is not hyperelliptic.
 :::
 
-::: {.proposition title="The criterion it comes from"}
-For every divisor $D$ and closed point $p$ on $C$, $\ell(D) - 1 \leq \ell(D - p) \leq \ell(D)$.
+::: {.proposition title="Very-ampleness criterion"}
+For every divisor $D$ and point $p\in C(k)$,
+$$
+\ell(D)-1\leq\ell(D-p)\leq\ell(D).
+$$
 A divisor $D$ on $C$ is very ample if and only if
-\[
+$$
 \ell(D - p - q) = \ell(D) - 2 \quad \text{for all points } p, q ,
-\]
+$$
 including $p = q$.
 It is base-point free if and only if $\ell(D - p) = \ell(D) - 1$ for all $p$.
 Any $D$ with $\deg D \geq 2g+1$ is very ample.
@@ -38,10 +41,18 @@ Any $D$ with $\deg D \geq 2g+1$ is very ample.
 :::
 
 ::: {.remark}
-The criterion says the linear system separates points and tangent vectors, which is exactly what an embedding must do.
-The inequalities come from the exact sequence $0 \to \mcl(D - p) \to \mcl(D) \to k(p) \to 0$, with $k(p)$ the skyscraper sheaf at $p$, whose global sections drop by at most $\dim_k k(p) = 1$.
-Applied to $K$ and using duality, $\ell(K-p-q) = \ell(K) - 2$ fails precisely when $\ell(p+q) = 2$, that is, when there is a degree-two map to $\PP^1$ — the definition of hyperelliptic.
+The inequalities follow from
+$$
+0\to\OO_C(D-p)\to\OO_C(D)\to\OO_C(D)|_p\to0,
+$$
+because $H^0(p,\OO_C(D)|_p)$ is one-dimensional over $k$.
+The very-ampleness criterion is equivalent to separation of pairs of points and tangent vectors, with the case $p=q$ testing tangent vectors.
+Applied to $K$ and using Riemann--Roch,
+$$
+\ell(K-p-q)=g-3+\ell(p+q).
+$$
+Hence $K$ fails to be very ample exactly when some divisor $p+q$ moves in a pencil, equivalently when $C$ has a $g^1_2$ and is hyperelliptic.
 
-The excluded cases are genuinely excluded: for $g = 0$, $\deg K < 0$; for $g = 1$, $K = 0$; for $g = 2$, every curve is hyperelliptic and $K$ gives the degree-two map rather than an embedding.
-For $g \geq 3$ non-hyperelliptic, $K$ embeds $C$ as a curve of degree $2g-2$ in $\PP^{g-1}$, the canonical curve, which for $g = 3$ is a smooth plane quartic and for $g = 4$ a curve of degree $6$ in $\PP^3$.
+For $g = 0$, $\deg K < 0$. For $g = 1$, $K \sim 0$. For $g = 2$, every curve is hyperelliptic and the canonical map has degree $2$ onto $\PP^1$.
+For $g \geq 3$ non-hyperelliptic, $K$ embeds $C$ as a curve of degree $2g-2$ in $\PP^{g-1}$. In genus $3$ the canonical curve is a smooth plane quartic, and in genus $4$ it has degree $6$ in $\PP^3$.
 :::
