@@ -1802,6 +1802,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   the corrected coordinatewise inequality `$A^T(y-Ax)\leq0$`, while a remark
   records the discrepancy with the source solution.
 
+### GRE Chapter 2 Problem 21 solution omits the critical point $x=\pi$
+
+- **Object and need:** `P-GRECH2-21` in `SRC-GRE-MATH-CH2-REVIEW`. A solution
+  locating the local maximum of
+  `$f(x)=\int_x^{2x}(\sin t/t)\,dt$` on `$(0,3\pi/2)$` must identify all
+  critical points in that interval before classifying them.
+- **Observed evidence:** the retained Chapter 8 solution correctly derives
+  `$f'(x)=\sin x(2\cos x-1)/x$`, then states that `\sin x=0` or
+  `\cos x=1/2` implies only `$x=\pi/3$` in the interval and consequently
+  claims that `$f$` has only one critical point there. However `$x=\pi$`
+  also lies in `$(0,3\pi/2)$` and satisfies `\sin x=0`.
+- **Impact and owner:** the source reasoning omits a genuine critical point.
+  The final answer remains correct: `$f'$` changes from positive to negative
+  at `$\pi/3$`, giving the local maximum, and from negative to positive at
+  `$\pi$`, giving a local minimum.
+- **Uncertainty:** none; the derivative formula and the missing root
+  `$\sin\pi=0$` are explicit.
+- **Repair:** the authored solution on `P-GRECH2-21` lists both critical
+  points and classifies them by the sign of `$f'$`; retain this entry as
+  source-solution errata.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
