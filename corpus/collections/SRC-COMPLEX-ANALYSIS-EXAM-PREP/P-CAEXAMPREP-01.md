@@ -16,3 +16,89 @@ audit:
 ::: {.problem}
 If $p(z)$ is a polynomial of degree at least $2$, show that the sum of the residues of $1/p(z)$ at all zeros of $p$ is $0$.
 :::
+
+::: {.solution}
+Write
+\[
+p(z)=a_mz^m+a_{m-1}z^{m-1}+\cdots+a_0,
+\qquad
+m\ge2,
+\qquad
+a_m\ne0,
+\]
+and let
+\[
+S=\sum_{p(b)=0}\operatorname{Res}_{z=b}\frac1{p(z)},
+\]
+where the sum is over the distinct zeros of \(p\).
+
+<1>1. There exist constants \(R_0>0\) and \(c>0\) such that
+\[
+|p(z)|\ge c|z|^m
+\]
+whenever \(|z|\ge R_0\).
+
+::: {.proof}
+For \(z\ne0\),
+\[
+\frac{p(z)}{z^m}
+=a_m+\frac{a_{m-1}}z+\cdots+\frac{a_0}{z^m}
+\longrightarrow a_m
+\]
+as \(|z|\to\infty\). Hence there is \(R_0>0\) such that
+\[
+\left|\frac{p(z)}{z^m}-a_m\right|\le\frac{|a_m|}{2}
+\]
+for \(|z|\ge R_0\). The reverse triangle inequality then gives
+\[
+\frac{|p(z)|}{|z|^m}\ge\frac{|a_m|}{2}.
+\]
+Thus one may take \(c=|a_m|/2\).
+:::
+
+<1>2. If \(R\ge R_0\) is larger than the modulus of every zero of \(p\), then
+\[
+\int_{|z|=R}\frac{dz}{p(z)}=2\pi i\,S.
+\]
+
+::: {.proof}
+All poles of \(1/p\) are precisely the zeros of \(p\), and by the choice of \(R\) every such pole lies strictly inside the positively oriented circle \(|z|=R\). The residue theorem therefore gives the displayed identity, with the residues summed once over the distinct poles.
+:::
+
+<1>3. One has
+\[
+\int_{|z|=R}\frac{dz}{p(z)}\longrightarrow0
+\qquad\text{as }R\to\infty.
+\]
+
+::: {.proof}
+By step <1>1, for every sufficiently large \(R\),
+\[
+\left|\int_{|z|=R}\frac{dz}{p(z)}\right|
+\le
+2\pi R\sup_{|z|=R}\frac1{|p(z)|}
+\le
+\frac{2\pi}{c}R^{1-m}.
+\]
+Since \(m\ge2\), the exponent \(1-m\le-1\), so the right-hand side tends to \(0\).
+:::
+
+<1>4. The sum of the residues is
+\[
+\boxed{S=0}.
+\]
+
+::: {.proof}
+For every sufficiently large \(R\), step <1>2 gives
+\[
+2\pi i\,S=\int_{|z|=R}\frac{dz}{p(z)}.
+\]
+Letting \(R\to\infty\) and applying step <1>3 yields \(2\pi iS=0\), hence \(S=0\).
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required residue sum.
+:::
+:::
