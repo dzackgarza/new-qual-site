@@ -24,3 +24,67 @@ What is the area of the region in the first quadrant bounded by the curve $y = x
 (D) $\frac{\pi+2}{4}$
 (E) $\frac{\pi+4}{4}$
 :::
+
+::: {.solution}
+<1>1. The required area is
+$$
+\int_0^1 x\arctan x\,dx.
+$$
+
+::: {.proof}
+For $0\le x\le1$, both $x$ and $\arctan x$ are nonnegative, so the graph lies above the $x$-axis. It meets the axis at $x=0$, and the vertical boundary is $x=1$, hence the first-quadrant area is the displayed integral.
+:::
+
+<1>2. An antiderivative of $x\arctan x$ is
+$$
+\frac12(x^2+1)\arctan x-\frac{x}{2}.
+$$
+
+::: {.proof}
+Integrate by parts with
+$$
+u=\arctan x,
+\qquad
+dv=x\,dx.
+$$
+Then
+$$
+du=\frac{dx}{1+x^2},
+\qquad
+v=\frac{x^2}{2},
+$$
+so
+$$
+\begin{aligned}
+\int x\arctan x\,dx
+&=\frac{x^2}{2}\arctan x-\frac12\int\frac{x^2}{1+x^2}\,dx\\
+&=\frac{x^2}{2}\arctan x-\frac12\int\left(1-\frac1{1+x^2}\right)dx\\
+&=\frac12(x^2+1)\arctan x-\frac{x}{2}+C.
+\end{aligned}
+$$
+:::
+
+<1>3. The area is
+$$
+\boxed{\frac{\pi-2}{4}},
+$$
+so the answer is (B).
+
+::: {.proof}
+Using step <1>2,
+$$
+\begin{aligned}
+\int_0^1 x\arctan x\,dx
+&=\left[\frac12(x^2+1)\arctan x-\frac{x}{2}\right]_0^1\\
+&=\frac\pi4-\frac12\\
+&=\frac{\pi-2}{4}.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested area and corresponding choice.
+:::
+:::
