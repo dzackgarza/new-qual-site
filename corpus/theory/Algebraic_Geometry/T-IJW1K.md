@@ -34,7 +34,7 @@ Then
 
 - $H^p(\PP^n, \OO(d)) = 0$ for $0 < p < n$ and for $p > n$, for every $d$.
 
-[@Har10a, Theorem III.5.1] The [projective-space cohomology calculation](https://stacks.math.columbia.edu/tag/01XS) gives these formulas over every ring $A$.
+[@Har10a, Theorem III.5.1] The same Čech computation on the standard affine cover gives these formulas over an arbitrary ring $A$.
 :::
 
 ::: {.remark title="Projective dimension zero"}
