@@ -1837,3 +1837,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `PR-PADL7` remains the normality theorem. `PR-E6VI4` is
   rewritten as the distinct proposition identifying the kernel of the coset
   action, and its relation becomes `related-to`.
+
+### PR-EDD7U bundled the rational root theorem into an unrelated matrix card
+
+- **Object and need:** `PR-EDD7U`, Characteristic polynomials via traces of
+  exterior powers. After its matrix proposition and example, the same card
+  contained the rational root theorem and a polynomial-division remark.
+- **Observed evidence:** the rational-root statement has independent
+  hypotheses, notation, applications, and subject matter; the Galois guide also
+  restated it in prose, while the minimal-polynomial page used it by name.
+- **Impact and owner:** one card had two unrelated primary propositions, and
+  the rational root theorem had no independent address for the pages that use
+  it.
+- **Uncertainty:** none after reading the complete card and both reader-facing
+  uses.
+- **Repair:** `PR-EDD7U` is restricted to the characteristic-polynomial
+  proposition and its example. The rational root theorem moves intact to
+  `PR-RRTST`, with its proof and polynomial-division remark, and reader-facing
+  uses link that canonical card.
