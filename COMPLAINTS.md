@@ -1234,6 +1234,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   proposition/proof to `D-WYC7C`, removes duplicate reader-facing references,
   and deletes `FD-IGEOR`.
 
+### FD-J3HIA treated $K(\alpha)$ as a variant of $K[\alpha]$
+
+- **Object and need:** `FD-J3HIA`, generated subfield `$K(\alpha)$`, and
+  `FD-3V3ZW`, generated subring `$K[\alpha]$`.
+- **Observed evidence:** `FD-J3HIA` declared `variant-of: FD-3V3ZW`, although
+  the two constructions differ for transcendental `$\alpha$`.
+- **Impact and owner:** the relation asserted equivalence between a subfield
+  and a subring construction. Equality requires the additional hypothesis
+  that `$\alpha$` is algebraic over `$K$`.
+- **Uncertainty:** none.
+- **Repair:** the same repair commit changes the edge to `related-to` and
+  records `$K[\alpha]\subseteq K(\alpha)$`, equality for algebraic
+  `$\alpha$`, and the polynomial/rational-function distinction in the
+  transcendental case.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
