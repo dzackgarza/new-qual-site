@@ -3,8 +3,6 @@ schema: qual/card@1
 id: D-AWSKI
 kind: definition
 title: Prime element
-prompts:
-- When is a ring element prime?
 classification:
   areas:
   - algebra
