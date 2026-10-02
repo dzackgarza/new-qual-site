@@ -25,8 +25,6 @@ A nonzero nonunit $p$ is [[D-TO3IY|irreducible]] if $p=ab$ implies that $a$ or $
 
 [[D-AWSKI]]
 
-[[FD-S52W7]]
-
 [[D-R4H6F]]
 
 ::: {.remark title="Prime and irreducible elements"}

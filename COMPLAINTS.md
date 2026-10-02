@@ -1090,6 +1090,20 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-TO3IY`,
   removes the duplicate wiki link, and deletes `FD-6LLJF`.
 
+### Duplicate prime-element cards D-AWSKI and FD-S52W7
+
+- **Object and need:** `D-AWSKI` and `FD-S52W7` in
+  `corpus/theory/Algebra`. Both define a nonzero nonunit `$p$` to be prime
+  when `$p\divides ab$` implies `$p\divides a$` or `$p\divides b$`.
+- **Observed evidence:** the definition bodies are mathematically identical.
+  `D-AWSKI` is the dependency used by the prime-versus-irreducible theorem and
+  factorization wiki; the wiki displayed `FD-S52W7` beside it.
+- **Impact and owner:** the flashcard adds no distinct mathematics and creates
+  a second defining occurrence.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `D-AWSKI`,
+  removes the duplicate wiki link, and deletes `FD-S52W7`.
+
 ### FD-R4K7Z was a second irreducible-element duplicate with a false variant edge
 
 - **Object and need:** `FD-R4K7Z` in `corpus/theory/Algebra`. The card defines
