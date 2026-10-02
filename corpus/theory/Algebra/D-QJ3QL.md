@@ -3,8 +3,6 @@ schema: qual/card@1
 id: D-QJ3QL
 kind: definition
 title: Integral domain
-prompts:
-- What is an integral domain?
 classification:
   areas:
   - algebra
