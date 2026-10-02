@@ -18,6 +18,7 @@ relations:
 review: draft
 prompts:
 - When is a Noetherian local ring regular?
+- What is a regular ring?
 - Characterise discrete valuation rings among Noetherian local rings.
 - Is a regular local ring a domain? Is it integrally closed?
 - Show that $R$ is a discrete valuation ring if and only if $R$ is a local PID that is not a field, and define a uniformizer.
@@ -30,7 +31,7 @@ A Noetherian local ring $(A,\mm)$ is a \dfn{regular local ring} if
 $$
 \dim A = \dim_{A/\mm} \mm/\mm^2 .
 $$
-A Noetherian ring $A$ is a **regular ring** if $A_\mfp$ is a regular local ring for every prime $\mfp$.
+A Noetherian ring $A$ is a \dfn{regular ring} if $A_\mfp$ is a regular local ring for every prime $\mfp$.
 :::
 
 ::: {.definition title="valuation"}

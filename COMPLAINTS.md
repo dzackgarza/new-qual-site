@@ -1467,6 +1467,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit writes `$J(R)$` normally and states the
   finite-type/algebraically-closed scope in the prompt.
 
+### Regular rings had two defining cards across Algebra and Algebraic Geometry
+
+- **Object and need:** `D-DEFREGLR` and `FF-CQSNC`. Both cards defined regular
+  local rings by the equality `$\dim R=\dim_k\mfm/\mfm^2$`, and both defined
+  regular rings by regularity of all prime localizations.
+- **Observed evidence:** `D-DEFREGLR` is the existing definition card used by
+  the scheme-theory material. `FF-CQSNC` independently introduced the same
+  definitions before applying Nakayama to identify the vector-space dimension
+  with the minimal number of generators of `\mfm`.
+- **Impact and owner:** the duplicate defining occurrences split one standard
+  commutative-algebra concept across areas. The Nakayama/embedding-dimension
+  observation is distinct and should remain available without redefining the
+  term.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit makes `D-DEFREGLR` explicitly own
+  `regular ring`, moves the review prompt there, and converts `FF-CQSNC` to the
+  proposition “Embedding dimension criterion for regular local rings.”
+
 ### Duplicate stabilizer card FD-IGEOR
 
 - **Object and need:** `D-WYC7C` and `FD-IGEOR` in
