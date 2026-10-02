@@ -27,3 +27,53 @@ Find the angle between the diagonals of the back and left faces of the cube show
 (D) $90^\circ$
 (E) $120^\circ$
 :::
+
+::: {.solution}
+<1>1. The two face diagonals may be represented by the direction vectors
+$$
+\mathbf A=(1,0,1),
+\qquad
+\mathbf B=(0,1,1).
+$$
+
+::: {.proof}
+Place a unit cube with a common vertex of the back and left faces at the origin and take its three incident edges as the coordinate directions. The back face is spanned by the first and third coordinate directions, so its displayed diagonal has direction $(1,0,1)$. The left face is spanned by the second and third coordinate directions, so its displayed diagonal has direction $(0,1,1)$.
+:::
+
+<1>2. If $\theta$ is the angle between these diagonals, then
+$$
+\cos\theta=\frac12.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\mathbf A\cdot\mathbf B=1,
+\qquad
+\norm{\mathbf A}=\norm{\mathbf B}=\sqrt2.
+$$
+Therefore the dot-product formula gives
+$$
+\cos\theta
+=\frac{\mathbf A\cdot\mathbf B}
+{\norm{\mathbf A}\norm{\mathbf B}}
+=\frac1{2}.
+$$
+:::
+
+<1>3. The angle is
+$$
+\boxed{60^\circ},
+$$
+so the answer is (A).
+
+::: {.proof}
+The angle between two vectors is taken in $[0,\pi]$. Step <1>2 therefore gives $\theta=\arccos(1/2)=\pi/3=60^\circ$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested angle and corresponding choice.
+:::
+:::
