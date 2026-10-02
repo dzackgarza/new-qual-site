@@ -1500,22 +1500,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `D-JQNJQ`, removes duplicate reader-facing references, and deletes
   `FD-H764S`.
 
-### Duplicate perfect-field cards D-KQFIV and FD-YYLYR
+### Perfect-field definition, criterion, and finite-field corollary shared three owners
 
-- **Object and need:** `D-KQFIV` and `FD-YYLYR` in
-  `corpus/theory/Algebra`. Both define perfect fields and prove the Frobenius
-  criterion in positive characteristic.
-- **Observed evidence:** `D-KQFIV` already gives the equivalence with
-  separability of all irreducible polynomials and all finite extensions;
-  `FD-YYLYR` repeats the same argument and adds only the review prompt and the
-  finite-field consequence. Reader-facing links and three theory cards were
-  split between the two owners.
-- **Impact and owner:** the duplicate split the canonical perfect-field link
-  across the corpus without adding distinct mathematics.
-- **Uncertainty:** none after reading both complete cards.
-- **Repair:** the same repair commit moves the prompt and finite-field remark
-  to `D-KQFIV`, redirects all live theory references, removes duplicate
-  reader-facing entries, and deletes `FD-YYLYR`.
+- **Object and need:** `D-KQFIV`, `PR-IK6AM`, and `FD-YYLYR` in
+  `corpus/theory/Algebra`. The first two both stated the characteristic/Frobenius
+  criterion, while `FD-YYLYR` independently defined perfect fields and repeated
+  the same criterion.
+- **Observed evidence:** `D-KQFIV` and `FD-YYLYR` gave equivalent definitions
+  and overlapping proofs; `PR-IK6AM` restated the same criterion without a
+  proof. Reader-facing links were split between `D-KQFIV` and `FD-YYLYR`.
+- **Impact and owner:** the standard notion had two defining occurrences, and
+  the Frobenius criterion had no single result card.
+- **Uncertainty:** none after reading all three cards and their live references.
+- **Repair:** `D-KQFIV` becomes the sole definition card and owns the
+  equivalence with separability of finite extensions; `PR-IK6AM` owns the
+  characteristic/Frobenius criterion and its proof; `FD-YYLYR` is preserved as
+  the distinct corollary that finite fields are perfect. Live uses of the term
+  link `D-KQFIV`, and the nearby wiki copy points to the criterion rather than
+  restating it.
 
 ### Duplicate matrix-power counterexamples
 

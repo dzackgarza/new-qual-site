@@ -45,7 +45,7 @@ By Descartes' rule of signs, the number of positive real roots of a real polynom
 The [[D-JNCUB|characteristic]] of a field is $0$ or a prime $p$, and its [[D-EOCCU|prime subfield]] is $\QQ$ or $\FF_p$ respectively.
 In characteristic $p$, $(a+b)^p = a^p+b^p$, so $a\mapsto a^p$ is a field homomorphism.
 For a group $G$ of automorphisms of a field $L$, the [[D-5FG7E|fixed field]] $L^G$ is the subfield of elements fixed by every element of $G$.
-A field $k$ is [[D-KQFIV|perfect]] if every irreducible polynomial over $k$ is separable; equivalently, $k$ has characteristic $0$, or characteristic $p$ and $a\mapsto a^p$ is surjective on $k$.
+[[D-KQFIV|Perfect fields]] are characterized by [[PR-IK6AM|the Frobenius criterion]].
 
 [[D-JNCUB]]
 
