@@ -587,7 +587,6 @@ sections:
       - ref: FD-YJEDU
       - ref: T-SGY3O
       - ref: PR-ZCKLJ
-      - ref: FT-GJ6NR
       - ref: T-NLPZY
       - ref: PR-QDRB4
       - ref: PR-3TYBE

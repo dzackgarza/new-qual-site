@@ -24,8 +24,6 @@ topics:
 
 [[T-NLPZY]]
 
-[[FT-GJ6NR]]
-
 [[T-SGY3O]]
 
 [[PR-FM5FN]]

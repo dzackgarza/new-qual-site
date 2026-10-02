@@ -1160,6 +1160,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `D-5JYEI`, redirects the downstream link, removes duplicate reader-facing
   references, and deletes `FT-3WWKN`.
 
+### Duplicate fundamental-theorem-of-Galois-theory cards
+
+- **Object and need:** `FT-GJ6NR` and `T-NLPZY` in
+  `corpus/theory/Algebra`. Both state the subgroup/intermediate-field
+  anti-isomorphism and its standard consequences.
+- **Observed evidence:** the field/subgroup bijection, inclusion reversal,
+  degree formulas, normal-subgroup criterion, and compositum/intersection
+  formulas agree exactly. `T-NLPZY` additionally records the normalizer of an
+  intermediate field and distinguishes `$\langle H_1,H_2\rangle$` from the
+  product set `$H_1H_2$`; `FT-GJ6NR` contributes only the review prompt.
+- **Impact and owner:** the same major theorem had two intrinsic addresses in
+  the Galois wiki and algebra guide.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `T-NLPZY`,
+  removes duplicate reader-facing references, and deletes `FT-GJ6NR`.
+
 ### Duplicate irreducible-element cards D-TO3IY and FD-6LLJF
 
 - **Object and need:** `D-TO3IY` and `FD-6LLJF` in
