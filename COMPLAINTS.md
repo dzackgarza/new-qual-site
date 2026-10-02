@@ -1937,3 +1937,17 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** keep `PR-LPJLD` as the canonical isomorphism and rewrite
   `PR-O5YUI` as the distinct basis-level proposition sending
   `$e_i^*\otimes f_j$` to matrix units and giving the explicit inverse.
+
+### PR-TGFTL duplicated the canonical trace-pairing isomorphism
+
+- **Object and need:** `PR-TGFTL` and `PR-GXII2` in
+  `corpus/theory/Algebra` had identical titles and identical isomorphism
+  statements for the trace pairing between opposite Hom spaces.
+- **Observed evidence:** `PR-TGFTL` declared `variant-of: PR-GXII2` and added
+  only the matrix-unit proof.
+- **Impact and owner:** the trace-pairing theorem had two addresses while the
+  useful coordinate duality exhibited by the proof had none.
+- **Uncertainty:** none after reading both cards.
+- **Repair:** keep `PR-GXII2` as the canonical trace-pairing isomorphism and
+  rewrite `PR-TGFTL` as the distinct matrix-unit duality proposition, with a
+  `related-to` relation.
