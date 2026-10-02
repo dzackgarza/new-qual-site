@@ -24,3 +24,68 @@ Calculate the length of the portion of the hypocycloid $x^{2/3} + y^{2/3} = 1$ i
 (D) $\frac{5\sqrt{2}}{8}$
 (E) $\frac{\sqrt{3}}{2}$
 :::
+
+::: {.solution}
+On the first-quadrant branch,
+$$
+y=(1-x^{2/3})^{3/2}.
+$$
+
+<1>1. For $0<x<1$,
+$$
+y'=-x^{-1/3}(1-x^{2/3})^{1/2}.
+$$
+
+::: {.proof}
+Differentiate the displayed expression by the chain rule:
+$$
+\begin{aligned}
+y'
+&=\frac32(1-x^{2/3})^{1/2}\left(-\frac23x^{-1/3}\right)\\
+&=-x^{-1/3}(1-x^{2/3})^{1/2}.
+\end{aligned}
+$$
+:::
+
+<1>2. The arc-length integrand simplifies to
+$$
+\sqrt{1+(y')^2}=x^{-1/3}.
+$$
+
+::: {.proof}
+Using step <1>1,
+$$
+\begin{aligned}
+1+(y')^2
+&=1+x^{-2/3}(1-x^{2/3})\\
+&=x^{-2/3}.
+\end{aligned}
+$$
+Since $x>0$, its positive square root is $x^{-1/3}$.
+:::
+
+<1>3. The required length is
+$$
+\boxed{\frac98},
+$$
+so the answer is (A).
+
+::: {.proof}
+The endpoint abscissas are $1/8$ and $1$. Therefore, by step <1>2,
+$$
+\begin{aligned}
+L
+&=\int_{1/8}^{1}x^{-1/3}\,dx\\
+&=\left[\frac32x^{2/3}\right]_{1/8}^{1}\\
+&=\frac32\left(1-\frac14\right)\\
+&=\frac98.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested arc length and corresponding choice.
+:::
+:::
