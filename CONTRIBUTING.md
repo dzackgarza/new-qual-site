@@ -1528,7 +1528,7 @@ Choose one term and link its definition card, or link both and state the relatio
 
 Each mathematical notion has one defining occurrence in the corpus: its definition card (`D-…`). Wiki pages, guides, and solutions link or transclude that card.
 They do not restate it, shadow it with a synonym, or write a second local definition.
-A card that records a source's variant of a definition carries a `variant-of` relation to the card the wiki uses.
+A second card stating the same notion is folded into the first; there is no variant card.
 
 **Bad:** Define “scheme” in a lede, restate it in a remark, and use both versions as if they had equal authority.
 
@@ -2103,7 +2103,7 @@ Look for undefined fields, rings, maps, or indices; variables introduced only in
 
 **Reading task:** read both complete statements, including hypotheses and roles in collections.
 Flag only when they appear to ask the same mathematics; identical wording is evidence to read, not a merge decision.
-Distinguish source appearances and variants.
+A problem that several collections list is one card listed by each; two cards that state the same mathematics are folded into one.
 **Origin:** [#70](https://github.com/dzackgarza/new-qual-site/issues/70), [#61](https://github.com/dzackgarza/new-qual-site/issues/61).
 
 ### `CARD-05`: Source appearance label treated as an intrinsic problem kind
