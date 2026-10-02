@@ -24,3 +24,63 @@ Integrate $\int \frac{x^2 dx}{\sqrt{1-x^2}}$.
 (D) $\frac{1}{2} \left( \arcsin x - x\sqrt{1-x^2} \right) + c$
 (E) $\frac{1}{2} \left( x \arcsin x + \sqrt{1-x^2} \right) + c$
 :::
+
+::: {.solution}
+Set $x=\sin\theta$ with $\theta=\arcsin x$.
+
+<1>1. The integral becomes
+$$
+\int \sin^2\theta\,d\theta.
+$$
+
+::: {.proof}
+On the principal range of $\arcsin$, one has
+$$
+\cos\theta=\sqrt{1-\sin^2\theta}=\sqrt{1-x^2}\ge0
+$$
+and
+$$
+dx=\cos\theta\,d\theta.
+$$
+Therefore
+$$
+\frac{x^2\,dx}{\sqrt{1-x^2}}
+=\frac{\sin^2\theta\cos\theta\,d\theta}{\cos\theta}
+=\sin^2\theta\,d\theta.
+$$
+:::
+
+<1>2. An antiderivative is
+$$
+\frac12\left(\theta-\sin\theta\cos\theta\right)+C.
+$$
+
+::: {.proof}
+Using
+$$
+\sin^2\theta=\frac{1-\cos2\theta}{2},
+$$
+step <1>1 gives
+$$
+\int\sin^2\theta\,d\theta
+=\frac\theta2-\frac{\sin2\theta}{4}+C
+=\frac12\left(\theta-\sin\theta\cos\theta\right)+C.
+$$
+:::
+
+<1>3. Returning to $x$ gives
+$$
+\boxed{\frac12\left(\arcsin x-x\sqrt{1-x^2}\right)+C},
+$$
+so the answer is (D).
+
+::: {.proof}
+Since $\theta=\arcsin x$, $\sin\theta=x$, and $\cos\theta=\sqrt{1-x^2}$, substitution into step <1>2 gives the displayed antiderivative.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested antiderivative and corresponding choice.
+:::
+:::
