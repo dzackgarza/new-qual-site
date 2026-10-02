@@ -46,8 +46,6 @@ It is a [[D-UI6CU|field]] if every nonzero element is a unit.
 
 [[D-4I3SL]]
 
-[[FD-S62UB]]
-
 [[D-QJ3QL]]
 
 [[FD-2A5XH]]
