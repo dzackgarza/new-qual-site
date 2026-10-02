@@ -81,8 +81,6 @@ The [[D-NK7G7|center]] $Z(G)=C_G(G)$ is normal in $G$, and if $G/Z(G)$ is cyclic
 
 [[D-PX64W]]
 
-[[FD-SSR6N]]
-
 [[D-OZ2RR]]
 
 [[FD-HRCTL]]
