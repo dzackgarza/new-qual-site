@@ -31,3 +31,56 @@ has which one of the following as an eigenvalue?
 (D) $i$
 (E) $1 + i$
 :::
+
+::: {.solution}
+<1>1. The characteristic polynomial of $A$ is
+$$
+p(\lambda)=\lambda^2-8\lambda+7.
+$$
+
+::: {.proof}
+One has
+$$
+\operatorname{tr}(A)=2+6=8
+$$
+and
+$$
+\det A
+=2\cdot6-(2+i)(2-i)
+=12-(4-i^2)
+=12-5
+=7.
+$$
+For a $2\times2$ matrix, the characteristic polynomial is
+$$
+\lambda^2-\operatorname{tr}(A)\lambda+\det A,
+$$
+which gives the displayed polynomial.
+:::
+
+<1>2. The eigenvalues of $A$ are $1$ and $7$.
+
+::: {.proof}
+By step <1>1,
+$$
+p(\lambda)=\lambda^2-8\lambda+7=(\lambda-1)(\lambda-7).
+$$
+The eigenvalues are precisely the roots of the characteristic polynomial.
+:::
+
+<1>3. Thus the listed eigenvalue is
+$$
+\boxed{7},
+$$
+so the answer is (C).
+
+::: {.proof}
+Step <1>2 gives the complete set of eigenvalues, and among the listed choices only $7$ occurs.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 identifies the required choice.
+:::
+:::
