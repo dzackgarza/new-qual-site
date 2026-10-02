@@ -2105,3 +2105,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   explicit bijections can be checked edge by edge.
 - **Repair:** `P-GRECH7-22` records the edge sets, gives explicit
   isomorphisms, and selects (E); the external source is left unchanged.
+
+### GRE Chapter 7 question 32 cannot define a probability density as printed
+
+- **Object and need:** `P-GRECH7-32` and Chapter 7 review question 32 in
+  `Cracking the GRE Mathematics Subject Test`. The problem asks for a constant
+  `$c$` making a piecewise linear function a probability density.
+- **Observed evidence:** direct inspection of page 7 of
+  `assets/attachments/Chapter-7.pdf` shows the first branch printed as
+  `$x/2+c$` under the condition `$0\le t\le8$`, even though the function is
+  written `$f(x)$`. Reading the evident variable typo as `$0\le x\le8$`,
+  normalization requires
+  `$1=\int_0^8(x/2+c)\,dx=16+8c$`, hence `$c=-15/8$`; then
+  `$f(0)=-15/8<0$`, so the result is not a density. Conversely any `$c\ge0$`
+  makes the integral at least `$16$`. The Chapter 8 solution instead writes
+  `$[x^2/4+cx]_0^8=64/4+6c$` and selects (E), `$c=-4/3$`; both the coefficient
+  of `$c$` and the resulting algebra are incorrect.
+- **Impact and owner:** the literal piecewise formula is malformed because its
+  branch condition uses an unrelated variable, and the evident corrected
+  problem has no real solution. None of the five answer choices can make the
+  function a probability density.
+- **Expected result:** preserve the source wording, explain the variable typo,
+  prove that normalization and nonnegativity are incompatible under the natural
+  `$x$`-support interpretation, and do not reproduce the supplied answer.
+- **Uncertainty:** none; the retained scan confirms the printed formula and
+  interval, while the two defining density conditions give a direct
+  contradiction for every real `$c$`.
+- **Repair:** `P-GRECH7-32` proves that no real `$c$` works and records why the
+  source answer `$-4/3$` fails both normalization and nonnegativity; the
+  external source is left unchanged.

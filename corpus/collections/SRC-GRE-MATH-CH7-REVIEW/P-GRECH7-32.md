@@ -24,3 +24,59 @@ If $f(x) = \begin{cases} \frac{x}{2} + c & \text{for } 0 \le t \le 8 \\ 0 & \tex
 (D) $-\frac{2}{3}$
 (E) $-\frac{4}{3}$
 :::
+
+::: {.solution}
+<1>1. As printed, the piecewise condition uses the variable $t$ rather than the argument $x$, so it does not define a function of $x$ without an evident correction.
+
+::: {.proof}
+The displayed formula is written as $f(x)$ but its first branch is conditioned on $0\le t\le8$, where $t$ is otherwise undefined. The natural intended correction is to read the branch condition as $0\le x\le8$.
+:::
+
+<1>2. Under that correction, normalization would force
+$$
+c=-\frac{15}{8}.
+$$
+
+::: {.proof}
+A probability density must satisfy
+$$
+\int_{-\infty}^{\infty} f(x)\,dx=1.
+$$
+Thus
+$$
+1=\int_0^8\left(\frac{x}{2}+c\right)dx
+=\left[\frac{x^2}{4}+cx\right]_0^8
+=16+8c.
+$$
+Hence $8c=-15$, so $c=-15/8$.
+:::
+
+<1>3. The value in step <1>2 does not make $f$ a probability density, and in fact no value of $c$ does.
+
+::: {.proof}
+For the normalized value from step <1>2,
+$$
+f(0)=c=-\frac{15}{8}<0,
+$$
+violating the nonnegativity requirement for a density. Conversely, nonnegativity at $x=0$ requires $c\ge0$, but then
+$$
+\int_0^8\left(\frac{x}{2}+c\right)dx=16+8c\ge16>1,
+$$
+so normalization is impossible. Therefore no real $c$ satisfies both density conditions.
+:::
+
+<1>4. Consequently none of choices (A)--(E) is correct; in particular, the source's supplied answer $c=-4/3$ neither normalizes the function nor makes it nonnegative.
+
+::: {.proof}
+Step <1>3 proves that no real value of $c$ works. The listed choices are all real numbers, so none can be correct. For $c=-4/3$, one has $f(0)<0$ and
+$$
+\int_0^8 f(x)\,dx=16-\frac{32}{3}=\frac{16}{3}\ne1.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 identify both the malformed variable in the printed statement and the mathematical impossibility of the intended density problem.
+:::
+:::
