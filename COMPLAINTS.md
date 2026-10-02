@@ -2187,3 +2187,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   depends on `$P(X>2,Y>2)$`, which the marginals do not determine.
 - **Repair:** `P-GRECH7-38` proves the two defects and derives choice (E) under
   the source's two implicit corrections; the external source is left unchanged.
+
+### GRE Chapter 7 question 44 prints ten flips and supplies the wrong answer even for one hundred
+
+- **Object and need:** `P-GRECH7-44` and Chapter 7 review question 44 in
+  `Cracking the GRE Mathematics Subject Test`. The problem asks for the
+  probability of obtaining between 40 and 50 heads.
+- **Observed evidence:** direct inspection of page 10 of
+  `assets/attachments/Chapter-7.pdf` shows “A fair coin is flipped 10 times,”
+  so the literal event is impossible and has probability zero. The Chapter 8
+  solution silently changes the experiment to 100 flips and supplies choice
+  (D), 47%. For 100 fair flips the exact probability is
+  `$2^{-100}\sum_{k=40}^{50}\binom{100}{k}\approx0.5221945186$`, whose closest
+  listed percentage is 53%, choice (E). The source's own stated continuity
+  correction gives standardized limits `-2.1` and `0.1`, for which
+  `$\Phi(0.1)-\Phi(-2.1)\approx0.5219$`, again near 52%, not 47%.
+- **Impact and owner:** the printed problem has no listed answer. Correcting the
+  evident “10” typo to “100” still does not recover the supplied answer; the
+  correct multiple-choice selection for the corrected problem is (E).
+- **Expected result:** solve the ten-flip statement literally, then separately
+  solve the evident 100-flip correction exactly and check the normal
+  approximation rather than laundering the source's 47% answer.
+- **Uncertainty:** none; the retained scan fixes the printed trial count and
+  the corrected binomial probability is an exact finite sum.
+- **Repair:** `P-GRECH7-44` records probability zero for the printed problem and
+  derives approximately 52.219% for 100 flips, selecting (E) under the evident
+  correction; the external source is left unchanged.
