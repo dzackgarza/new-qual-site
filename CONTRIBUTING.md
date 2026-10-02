@@ -17,9 +17,14 @@ Use the codes in contributions, commit messages, and review.
 
 ### Current milestone checkpoint
 
-The repository is in the `audited-deployment` milestone. `unsolved-contribution` and `slogans` are complete, and `copy-policy-repair` is active. The repository owner explicitly approved deploying the earlier handoff checkpoint for verification; that deployment did not close `copy-policy-repair` or begin the required audit rounds. Author solutions remain blocked until `audited-deployment` closes. The live dependencies, full obligations, and cold-resume instructions are recorded in [TODO.md](TODO.md#steward-checkpoint--2026-09-26).
+The repository is in the `audited-deployment` milestone.
+`unsolved-contribution` and `slogans` are complete, and `copy-policy-repair` is active.
+The repository owner explicitly approved deploying the earlier handoff checkpoint for verification; that deployment did not close `copy-policy-repair` or begin the required audit rounds.
+Author solutions remain blocked until `audited-deployment` closes.
+The live dependencies, full obligations, and cold-resume instructions are recorded in [TODO.md](TODO.md#steward-checkpoint--2026-09-26).
 
-An owner-requested handoff checkpoint may run `just build`, `just check`, and `just preview` locally to verify the parked working tree. This does not publish the site and does not weaken `QUAL-06`: ordinary content commits remain reading-verified, while build/render checks stay at an explicitly required integration or deployment boundary.
+An owner-requested handoff checkpoint may run `just build`, `just check`, and `just preview` locally to verify the parked working tree.
+This does not publish the site and does not weaken `QUAL-06`: ordinary content commits remain reading-verified, while build/render checks stay at an explicitly required integration or deployment boundary.
 
 | ID | Name | Required action |
 | --- | --- | --- |
@@ -159,20 +164,17 @@ The policy's derived and homotopical ontology (`DEF-8` to `DEF-14`) is not a def
 
 ### Defining occurrences (`DEF-1`, `DEF-2`, `DEF-29`)
 
-Each notion has one defining occurrence: its definition card (`D-…`).
-Wiki pages, guides, and solutions link or transclude that card; they do not restate it, shadow it with a synonym, or write a second local definition.
+Each notion has one defining occurrence: its definition card (`D-…`). Wiki pages, guides, and solutions link or transclude that card; they do not restate it, shadow it with a synonym, or write a second local definition.
 A card that records a source's variant of a definition carries a `variant-of` relation to the card the wiki uses.
 Read the definition card, and the cards it links, before writing a passage that depends on the notion.
 If that card conflicts with the literature, correct the card and repair the pages that depend on it.
 A definition-shaped sentence of running prose has no card ID and is not a defining occurrence.
 A use of a standard notion links its definition card (`MA-2`); if the corpus has no card for the notion, add one.
-A reminder of a definition says "Recall" and links the card: "Recall that a `[[D-…|left $A$-module]]` is …" (`DEF-17`, `PROSE-04`), never "is defined in `[[D-…]]`; it is …".
-Notation keeps its meaning across the cards a page transcludes (`NOT-3`, `MA-4`).
+A reminder of a definition says "Recall" and links the card: "Recall that a `[[D-…|left $A$-module]]` is …" (`DEF-17`, `PROSE-04`), never "is defined in `[[D-…]]`; it is …". Notation keeps its meaning across the cards a page transcludes (`NOT-3`, `MA-4`).
 
 ### Statement blocks (`DEF-4`, `SEC-*`)
 
-A wiki chapter's statement blocks are fenced blocks on cards — `::: {.definition}`, `::: {.theorem}`, `::: {.proposition}`, `::: {.example}`, `::: {.remark}`, … — linked or transcluded by card ID.
-A definition is a `::: {.definition}` block on a definition card.
+A wiki chapter's statement blocks are fenced blocks on cards — `::: {.definition}`, `::: {.theorem}`, `::: {.proposition}`, `::: {.example}`, `::: {.remark}`, … — linked or transcluded by card ID. A definition is a `::: {.definition}` block on a definition card.
 The card's front matter supplies its `id`, `title`, and classification; the block states the definition.
 
 ```markdown
@@ -183,10 +185,8 @@ uniformly on compact subsets of $\Omega$.
 :::
 ```
 
-A section's primary block may be a `::: {.proposition}` that states a standard result with a citation and no proof (`QUAL-10`).
-This is the corpus's proof obligation (`SEC-6`, `EX-2`): theory cards and wiki pages state and cite results; they carry no proof obligation.
-An implication between defined notions follows the definition as its own `::: {.proposition}` block; an example or a comparison is its own `::: {.example}` or `::: {.remark}` block (`DEF-15`, `DEF-16`).
-One `::: {.definition}` block may define an explicitly enumerated family of predicates on the same data, such as symmetric, skew-symmetric, and alternating bilinear forms (`DEF-15`).
+A section's primary block may be a `::: {.proposition}` that states a standard result with a citation and no proof (`QUAL-10`). This is the corpus's proof obligation (`SEC-6`, `EX-2`): theory cards and wiki pages state and cite results; they carry no proof obligation.
+An implication between defined notions follows the definition as its own `::: {.proposition}` block; an example or a comparison is its own `::: {.example}` or `::: {.remark}` block (`DEF-15`, `DEF-16`). One `::: {.definition}` block may define an explicitly enumerated family of predicates on the same data, such as symmetric, skew-symmetric, and alternating bilinear forms (`DEF-15`).
 
 ### Definiendum (`DEF-26`, `PR-10`)
 
@@ -198,11 +198,9 @@ A remark, example, or proof is a fenced block, not a paragraph with a run-in lab
 
 A reference to a definition, theorem, or problem is a wikilink to its card ID: `[[D-IJMPJ]]`, or `[[D-IJMPJ|normal family]]` to set the link text inside a sentence.
 A paragraph that holds nothing but card links transcludes those cards in place.
-Link a wiki page by its path and a section of it by its heading: `[[calculus-preliminaries#Green's Theorem|Green's theorem]]`.
-A path that names no page yet is an unwritten page: the build renders it as a red link and lists it on stderr, so a chapter's syllabus links each topic to its entry page before the page exists.
+Link a wiki page by its path and a section of it by its heading: `[[calculus-preliminaries#Green's Theorem|Green's theorem]]`. A path that names no page yet is an unwritten page: the build renders it as a red link and lists it on stderr, so a chapter's syllabus links each topic to its entry page before the page exists.
 A bare card ID or page name that resolves to nothing is an error.
-A use of a defined term links its definition card: "a `[[D-IJMPJ|normal family]]`".
-A page or section named after a mathematical term lets the reader reach the intended definition: a local definition card when it carries qual-specific value, otherwise the canonical external oracle (`SOURCE-02`).
+A use of a defined term links its definition card: "a `[[D-IJMPJ|normal family]]`". A page or section named after a mathematical term lets the reader reach the intended definition: a local definition card when it carries qual-specific value, otherwise the canonical external oracle (`SOURCE-02`).
 
 **Reading task:** for a page or section named after a mathematical term, check that the reader can reach the intended definition.
 **Origin:** [#71](https://github.com/dzackgarza/new-qual-site/issues/71).
@@ -229,8 +227,7 @@ Provenance, status, and curation concerns, and deferred generalizations, are rec
 
 ### Source formatting (`PR-11`)
 
-Card titles, like headings, are in sentence case, with proper names capitalized ("Sylow theorems", "Riemann mapping theorem").
-Source text uses straight quotes and `--` for an en dash, which Pandoc's smart punctuation typesets.
+Card titles, like headings, are in sentence case, with proper names capitalized ("Sylow theorems", "Riemann mapping theorem"). Source text uses straight quotes and `--` for an en dash, which Pandoc's smart punctuation typesets.
 
 ### Problem statements
 
@@ -291,31 +288,21 @@ Look for undefined fields, rings, maps, or indices; variables introduced only in
 
 ### `CARD-04`: One statement, one card, one id
 
-A mathematical statement has exactly one card and one id, as a result has one tag in the
-Stacks Project or Kerodon. A second card for the same statement is a defect, never a
-variant to keep: every correction, solution and backlink splits between two addresses that
-then drift apart. Where the statement occurs is recorded by collection appearances, not by
-copies of the card.
+A mathematical statement has exactly one card and one id, as a result has one tag in the Stacks Project or Kerodon.
+A second card for the same statement is a defect, never a variant to keep: every correction, solution and backlink splits between two addresses that then drift apart.
+Where the statement occurs is recorded by collection appearances, not by copies of the card.
 
 **Reading task:** read both complete statements, including hypotheses and roles in collections.
-Identical wording is evidence to read, not a merge decision, and different wording does not
-make two statements different.
+Identical wording is evidence to read, not a merge decision, and different wording does not make two statements different.
 
-A near-duplicate that differs only by a minor change of hypotheses or conclusion (uniform
-against locally uniform convergence, a closed against an open disc, one extra constant to
-compute) is the same card too. The main statement is the version whose proof is the most
-thorough or difficult, and the others are its variations.
+A near-duplicate that differs only by a minor change of hypotheses or conclusion (uniform against locally uniform convergence, a closed against an open disc, one extra constant to compute) is the same card too.
+The main statement is the version whose proof is the most thorough or difficult, and the others are its variations.
 
-**Repair:** when reading proves the same mathematics, merge in the same commit. Keep one
-survivor with the clearest source-faithful statement and the complete solution; a correct
-alternative method from the other card may become a `remark` on the survivor. For a
-near-duplicate, the survivor carries a `::: {.remark title="Variations"}` block that states
-each variation and gives only the change its proof needs: that the main proof applies
-unchanged, the steps that differ, or the simpler proof a stronger hypothesis allows, citing
-steps of the main proof rather than repeating them. Repoint every collection appearance,
-wiki reference and guide reference to the survivor, delete the other card and any asset only
-it used, and do not keep the retired id as an alias, a `duplicate-of` relation, or a record
-that both exist. Do not stop to ask whether to merge.
+**Repair:** when reading proves the same mathematics, merge in the same commit.
+Keep one survivor with the clearest source-faithful statement and the complete solution; a correct alternative method from the other card may become a `remark` on the survivor.
+For a near-duplicate, the survivor carries a `::: {.remark title="Variations"}` block that states each variation and gives only the change its proof needs: that the main proof applies unchanged, the steps that differ, or the simpler proof a stronger hypothesis allows, citing steps of the main proof rather than repeating them.
+Repoint every collection appearance, wiki reference and guide reference to the survivor, delete the other card and any asset only it used, and do not keep the retired id as an alias, a `duplicate-of` relation, or a record that both exist.
+Do not stop to ask whether to merge.
 **Origin:** [#70](https://github.com/dzackgarza/new-qual-site/issues/70), [#61](https://github.com/dzackgarza/new-qual-site/issues/61).
 
 ### `CARD-05`: Source appearance label treated as an intrinsic problem kind
@@ -530,18 +517,36 @@ Hint-level guidance is a hint block before the solution, not the opening of the 
 ### `STYLE-08`: Solutions are Lamport structured proofs in the filter's syntax
 
 A solution is a structured proof written in the syntax of pandoc-config's `lamport_proof.lua` filter.
-The source states structure only. The filter assigns the step numbers, prints them, indents each level, and writes the number into each step reference. Never type a step number or indent a step by hand.
+The source states structure only.
+The filter assigns the step numbers, prints them, indents each level, and writes the number into each step reference.
+Never type a step number or indent a step by hand.
 
 - Declare any notation used throughout in prose before the proof.
-- The proof is one `::: pf` block. It holds only steps.
-- A step is a `::: pf-step` block. Its first paragraph is the claim.
+
+- The proof is one `::: pf` block.
+  It holds only steps.
+
+- A step is a `::: pf-step` block.
+  Its first paragraph is the claim.
+
 - A step proved directly holds one `::: pf-proof` block written in complete sentences.
+
 - A step proved by substeps holds one `::: pf-proof` block that contains those substeps.
-- The filter labels the last step at each level QED: that step proves the level's goal. When the goal needs an argument but no claim of its own, write the last step as a `::: pf-qed` block holding that argument. Never write a `pf-qed` sentence that only says the earlier steps answer the question.
-- Give a step an identifier, `::: {.pf-step #name}`, only when another step cites it. The identifier is an anchor that readers never see; a kebab-case name for what the step claims, or a path such as `#s2-1`, both serve.
-- Cite a step as `step [](#name){.pf-ref}`; the filter fills in the number. Never write “above” or “the previous step” (`PROSE-03`).
+
+- The filter labels the last step at each level QED: that step proves the level's goal.
+  When the goal needs an argument but no claim of its own, write the last step as a `::: pf-qed` block holding that argument.
+  Never write a `pf-qed` sentence that only says the earlier steps answer the question.
+
+- Give a step an identifier, `::: {.pf-step #name}`, only when another step cites it.
+  The identifier is an anchor that readers never see; a kebab-case name for what the step claims, or a path such as `#s2-1`, both serve.
+
+- Cite a step as `step [](#name){.pf-ref}`; the filter fills in the number.
+  Never write “above” or “the previous step” (`PROSE-03`).
+
 - Put a blank line before and after every fence line.
+
 - Do not restate the problem as a “**Goal.**” paragraph: the statement is on the same card.
+
 - Write a requested value or object once, in `\boxed{…}`, in the claim of the step that establishes it.
 
 **Bad:**
