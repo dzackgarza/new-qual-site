@@ -23,8 +23,6 @@ A nonzero nonunit $p$ is [[D-TO3IY|irreducible]] if $p=ab$ implies that $a$ or $
 
 [[D-TO3IY]]
 
-[[FD-R4K7Z]]
-
 [[D-AWSKI]]
 
 [[FD-S52W7]]
