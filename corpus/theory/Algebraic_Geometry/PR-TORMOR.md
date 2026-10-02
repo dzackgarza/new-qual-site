@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: PR-TORMOR
-kind: proposition
+kind: definition
 title: Toric morphisms, completeness, and topological invariants
 slogan: 'A toric variety is complete exactly when its fan fills the lattice space; toric properness is the same support condition after pullback.'
 classification:
