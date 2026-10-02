@@ -31,3 +31,55 @@ such that $y = 0$ when $x = 0$. What is the value of $f(1)$?
 (D) $\log 2$
 (E) $\frac{1}{4}(4 - \pi)$
 :::
+
+::: {.solution}
+<1>1. Every solution of the differential equation has the form
+$$
+y=x-\arctan x+C.
+$$
+
+::: {.proof}
+Rewrite the right-hand side as
+$$
+\frac{x^2}{x^2+1}
+=1-\frac1{x^2+1}.
+$$
+Integrating gives
+$$
+y
+=\int\left(1-\frac1{x^2+1}\right)\,dx
+=x-\arctan x+C.
+$$
+:::
+
+<1>2. The initial condition forces $C=0$.
+
+::: {.proof}
+By step <1>1,
+$$
+0=f(0)=0-\arctan0+C=C.
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{f(1)=\frac14(4-\pi)},
+$$
+so the answer is (E).
+
+::: {.proof}
+Using step <1>2,
+$$
+f(1)
+=1-\arctan1
+=1-\frac{\pi}{4}
+=\frac14(4-\pi).
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value and corresponding choice.
+:::
+:::
