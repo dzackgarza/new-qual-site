@@ -23,7 +23,7 @@ prompts:
 ::: {.definition}
 Let $D$ be a divisor on a smooth projective curve $C$ of genus $g$.
 The \dfn{index of speciality} of $D$ is $\ell(K-D) = h^1(\OO_C(D))$.
-$D$ is **special** if this is positive, and **nonspecial** if it vanishes.
+$D$ is \dfn{special} if this number is positive and \dfn{nonspecial} if it is zero.
 :::
 
 ::: {.proposition}
@@ -37,7 +37,10 @@ $$
 Riemann--Roch expresses $\ell(D)$ as $\deg D+1-g+\ell(K-D)$.
 Once $\deg D$ exceeds $\deg K = 2g-2$, the divisor $K-D$ has negative degree, so $\ell(K-D)=0$.
 
-Thus when $\deg D>2g-2$, Riemann--Roch gives $\ell(D)$ directly.
-If it does not clear, Riemann--Roch gives only an inequality $\ell(D) \geq \deg D + 1 - g$, and the special case is where the geometry lives — $K$ itself is special, and so is every divisor cut out by the $g^1_2$ on a hyperelliptic curve.
-Clifford's theorem is the bound that replaces Riemann--Roch in exactly this range.
+Thus when $\deg D>2g-2$, Riemann--Roch gives $\ell(D)=\deg D+1-g$.
+For arbitrary $D$, Riemann--Roch gives
+$$
+\ell(D)=\deg D+1-g+\ell(K-D)\geq\deg D+1-g.
+$$
+The canonical divisor is special for $g\geq1$. On a hyperelliptic curve, a divisor in the $g^1_2$ is special for $g\geq2$. Clifford's theorem bounds $\ell(D)$ for effective special divisors.
 :::
