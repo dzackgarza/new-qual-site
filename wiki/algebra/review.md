@@ -71,7 +71,7 @@ Chapter: [[algebra/group-actions/index|Group actions]].
 
 [[T-V7JRG]]
 
-[[T-QSTRJ]]
+[[PR-UTFSY]]
 
 Chapter: [[algebra/rings-and-ideals/index|Rings and ideals]].
 

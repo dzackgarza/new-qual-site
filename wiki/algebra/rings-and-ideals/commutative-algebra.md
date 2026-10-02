@@ -19,10 +19,6 @@ Throughout, rings are commutative with identity.
 
 [[FT-PUVIQ]]
 
-[[T-QSTRJ]]
-
-[[FF-QELG7]]
-
 [[PR-UTFSY]]
 
 [[E-NXHG6]]
