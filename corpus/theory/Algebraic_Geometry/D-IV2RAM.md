@@ -32,10 +32,10 @@ $f\colon X\to Y$ be a finite nonconstant separable morphism of smooth curves ove
 Let $p \in X$, $q = f(p)$, and $t$ a uniformizer of the discrete valuation ring $\OO_{Y,q}$.
 The \dfn{ramification index} is
 $$
-e_p \definedas v_p(f^\sharp t) ,
+e_p \coloneqq v_p(f^\sharp t) ,
 $$
 the valuation at $p$ of the pulled-back uniformizer.
-$f$ is **ramified** at $p$ if $e_p > 1$ and **unramified** there if $e_p = 1$; the image $q$ of a ramification point is a **branch point**.
+$f$ is \dfn{ramified} at $p$ if $e_p > 1$ and \dfn{unramified} there if $e_p = 1$; the image $q$ of a ramification point is a \dfn{branch point}.
 :::
 
 ::: {.definition title="Pullback of divisors"}
@@ -58,9 +58,8 @@ The \dfn{branch locus} is the finite set $f(\supp R)$ of branch points, and the 
 :::
 
 ::: {.definition title="Tame and wild"}
-Let $\characteristic k = p_0$.
-The ramification at $p$ is \dfn{tame} if $p_0 \nmid e_p$, and **wild** if $p_0 \mid e_p$.
-In characteristic $0$ all ramification is tame.
+If $\operatorname{char}k=p_0>0$, the ramification at $p$ is \dfn{tame} if $p_0 \nmid e_p$, and \dfn{wild} if $p_0 \mid e_p$.
+If $\operatorname{char}k=0$, every ramification point is tame.
 :::
 
 ::: {.proposition title="The length formula"}
@@ -75,27 +74,33 @@ $$
 The ramification divisor is $R = \sum_{p \in X} \length (\Omega_{X/Y})_p \cdot [p]$.
 :::
 
-::: {.remark title="Where the dichotomy comes from"}
-The stalk length is computed by one derivative.
-With $u$ a uniformizer at $p$ and $t$ one at $q$, write $f^\sharp t = c u^{e_p}(1 + \cdots)$; then
+::: {.remark title="The local different exponent"}
+Assume $\operatorname{char}k=p_0>0$.
+With $u$ a uniformizer at $p$ and $t$ one at $q$, write
+$$
+f^\sharp t=c u^{e_p}+\text{higher-order terms},
+$$
+where $c\in k^\times$. Then
 $$
 f^* dt = \left( e_p \, c \, u^{e_p - 1} + \cdots \right) du ,
 $$
 and $\length(\Omega_{X/Y})_p$ is the valuation of that coefficient.
 If $p_0 \nmid e_p$ the leading term survives and the valuation is $e_p - 1$.
-If $p_0 \mid e_p$ the leading term is killed, the valuation is determined by whatever comes next, and it is strictly larger.
-So the tame/wild split is not a bookkeeping convention: it is the single question of whether $e_p$ is invertible in $k$.
+If $p_0 \mid e_p$ the leading coefficient vanishes in $k$, so separability forces the first nonzero derivative term to occur at higher order and the valuation is greater than $e_p-1$.
 
 $t \mapsto u^n$ with $p_0 \nmid n$ is the tame model, contributing $n-1$.
-For a wild example take $\characteristic k = p_0$ and $f : \PP^1 \to \PP^1$ with $t = u^{p_0} - u$, which is separable since $dt = -du$.
+For a wild example take $f : \PP^1 \to \PP^1$ with $t = u^{p_0} - u$, which is separable since $dt = -du$.
 It is unramified on the affine line and totally ramified at infinity with $e = p_0$, which is wild, and the local computation there gives length $2p_0 - 2 > p_0 - 1$.
 Riemann--Hurwitz confirms it: $-2 = p_0 \cdot (-2) + \deg R$ forces $\deg R = 2p_0 - 2$, carried by that one point.
 :::
 
 ::: {.remark title="Why this is the notion Riemann--Hurwitz needs"}
-[[T-LKT0U]] is stated with $\deg R = \sum_p \length (\Omega_{X/Y})_p$ and only becomes $\sum_p (e_p - 1)$ under tameness, and the word "tame" in that statement is defined here.
-The formula $\length(\Omega_{X/Y})_p=e_p-1$ is the tame special case; wild ramification makes the local length strictly larger, hence increases $\deg R$ and the genus contribution in Riemann--Hurwitz.
-The example above is the cleanest evidence, since a degree-$p_0$ self-map of $\PP^1$ with one branch point is impossible under the tame formula.
+For [[T-LKT0U]],
+$$
+\deg R=\sum_p\length(\Omega_{X/Y})_p.
+$$
+Under tame ramification this becomes $\sum_p(e_p-1)$; at a wild point the local contribution is strictly larger.
+For the Artin--Schreier example above, the single branch point at infinity contributes $2p_0-2$, whereas the tame expression $e-1$ would give only $p_0-1$.
 
 The unramified condition $e_p = 1$ for all $p$ is the same one appearing in [[D-MORUNR]], and for curves it upgrades to étale for free, since a nonconstant morphism of smooth curves is automatically flat.
 :::
