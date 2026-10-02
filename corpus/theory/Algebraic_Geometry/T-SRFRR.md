@@ -25,16 +25,20 @@ prompts:
 
 ::: {.theorem}
 For a divisor $D$ on a smooth projective surface $X$,
-\[
+$$
 \chi(\OO_X(D)) = \chi(\OO_X) + \tfrac{1}{2} D \cdot (D - K_X) .
-\]
+$$
 :::
 
 ::: {.theorem title="Noether's formula"}
-\[
-\chi(\OO_X) = \tfrac{1}{12}\left( K_X^2 + c_2(X) \right) ,
-\]
-where $c_2(X)$ is the topological Euler characteristic over $\CC$.
+For a smooth projective surface,
+$$
+12\chi(\OO_X)=K_X^2+\deg c_2(T_X).
+$$
+If the ground field is $\CC$, then
+$$
+\deg c_2(T_X)=\chi_{\mathrm{top}}(X(\CC)).
+$$
 :::
 
 ::: {.remark}
@@ -42,11 +46,16 @@ The surface formula parallels the curve formula, with $\deg D$ replaced by $\tfr
 
 The typical use is not to compute $\chi$ but to force a section.
 Serre duality gives $h^2(D) = h^0(K-D)$, so
-\[
-h^0(D) \geq \chi(\OO_X) + \tfrac{1}{2}D\cdot(D-K) ,
-\]
-and if in addition $h^0(K-D) = 0$ — for instance because $D \cdot H > K \cdot H$ for an ample $H$ — then $D^2$ large forces $D$ or $-D$ to be effective.
-This inequality is a standard mechanism for proving that a divisor on a surface has sections and hence moves in a linear system.
+$$
+h^0(D)
+\geq
+\chi(\OO_X)+\tfrac12D\cdot(D-K_X)-h^0(K_X-D).
+$$
+If $(K_X-D)\cdot H<0$ for an ample divisor $H$, then $K_X-D$ cannot be effective, so $h^0(K_X-D)=0$. Whenever
+$$
+\chi(\OO_X)+\tfrac12D\cdot(D-K_X)>0,
+$$
+it follows that $h^0(D)>0$, hence $D$ is linearly equivalent to an effective divisor.
 
-Noether's formula is the constraint relating $K^2$ and the topology: on $\PP^2$, $K^2 = 9$ and $c_2 = 3$, and $\tfrac{1}{12}(9+3) = 1 = \chi(\OO)$.
+For $X=\PP^2_\CC$, one has $K_X^2=9$ and $\chi_{\mathrm{top}}(X)=3$, so Noether's formula gives $\chi(\OO_X)=1$.
 :::
