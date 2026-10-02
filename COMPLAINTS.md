@@ -2080,3 +2080,28 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-GRECH7-21` records the literal two-answer defect, supplies
   counterexamples for (C) and (E), and states the corrected distributive law;
   the external source is left unchanged.
+
+### GRE Chapter 7 answer 22 incorrectly rejects an isomorphic graph
+
+- **Object and need:** `P-GRECH7-22` and Chapter 7 review question 22 in
+  `Cracking the GRE Mathematics Subject Test`. The question asks which of three
+  drawn graphs are mutually isomorphic.
+- **Observed evidence:** direct inspection of page 5 of
+  `assets/attachments/Chapter-7.pdf` gives edge sets
+  `$E(I)=\{AB,BC,CD\}$`, `$E(II)=\{FG,FH,EG\}$`, and
+  `$E(III)=\{JK,KL,LM\}$`. The crossing of the two diagonal edges in Graph II
+  is not a vertex; its only vertices are the labeled `$E,F,G,H$`. The bijection
+  `$A\mapsto E$, `$B\mapsto G$, `$C\mapsto F$, `$D\mapsto H$` sends the three
+  edges of I to `$EG,GF,FH$`, exactly the edges of II. The Chapter 8 solution
+  rejects I versus II only because the different trial bijection
+  `$A\mapsto E$, `$B\mapsto F$, `$C\mapsto G$, `$D\mapsto H$` fails.
+- **Impact and owner:** the source answer (C), “I and III only,” is false.
+  Failure of one candidate bijection does not prove nonisomorphism; all three
+  drawn graphs are copies of the path on four vertices, so the correct choice
+  is (E), “I, II, and III.”
+- **Expected result:** use an explicit adjacency-preserving bijection to prove
+  I is isomorphic to II and to III, and select (E).
+- **Uncertainty:** none; the retained scan shows the complete drawings and the
+  explicit bijections can be checked edge by edge.
+- **Repair:** `P-GRECH7-22` records the edge sets, gives explicit
+  isomorphisms, and selects (E); the external source is left unchanged.
