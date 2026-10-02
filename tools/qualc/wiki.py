@@ -495,6 +495,10 @@ def _page_target(
         return normalized_matches[0]
     if len(normalized_matches) > 1:
         raise AmbiguousPageReference(raw)
+    # A path names one page; matching only its last component would send
+    # `algebraic-geometry/toric/examples` to `topology/point-set/examples`.
+    if "/" in urlsplit(raw).path:
+        raise MissingPageReference(raw)
     stem = Path(key).stem
     candidates: list[WikiPage] = []
     for stem_key in (stem, stem.lower()):
@@ -605,6 +609,15 @@ def _canonical_target(
 # which anchors those are; `styles.css` owns what to do about it.
 MATH_LINK_CLASS = "qual-link-math"
 
+# A link to a wiki path that names no page is a page the book still owes, the
+# red link of a wiki: a chapter's syllabus links each topic to its entry page
+# before the page is written. Only a path reference qualifies -- one with a
+# directory in it, the form `STYLE-09` prescribes for page links. A bare name
+# is a card id or a page stem, and one that resolves to nothing is a typo, so
+# it stays an error. The reference renders as text the reader can see is not
+# yet a page, and every one is named on stderr.
+UNWRITTEN_PAGE_CLASS = "qual-link-unwritten"
+
 
 def _carries_math(inlines: list[pf.Inline]) -> bool:
     """Whether a link's text typesets as mathematics anywhere inside it.
@@ -635,6 +648,7 @@ def resolve_links(
     by_key, by_normalized, by_stem = _page_indexes(pages)
     errors: list[Diagnostic] = []
     unresolved: list[str] = []
+    unwritten: list[str] = []
 
     def visit(page: WikiPage, element: pf.Element) -> pf.Element:
         if isinstance(element, (pf.Link, pf.Image)):
@@ -664,6 +678,14 @@ def resolve_links(
                 if isinstance(element, pf.Link) and _carries_math(element.content) and MATH_LINK_CLASS not in element.classes:
                     element.classes.append(MATH_LINK_CLASS)
             except MissingPageReference as exc:
+                path = urlsplit(exc.raw).path
+                if isinstance(element, pf.Link) and "/" in path:
+                    unwritten.append(f"{page.source_rel.as_posix()} -> {path}")
+                    return pf.Span(
+                        *cast(list[pf.Inline], element.content),
+                        classes=[UNWRITTEN_PAGE_CLASS],
+                        attributes={"title": f"Not yet written: {path}"},
+                    )
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.PAGE_REFERENCE_MISSING,
@@ -687,6 +709,10 @@ def resolve_links(
 
     for page in pages:
         page.blocks = [cast(pf.Block, visit(page, block)) for block in page.blocks]
+    if unwritten:
+        print(f"{len(unwritten)} reference(s) name a wiki page not yet written:", file=sys.stderr)
+        for entry in sorted(set(unwritten)):
+            print(f"  {entry}", file=sys.stderr)
     if unresolved:
         print(
             f"{len(unresolved)} reference(s) kept their page and dropped a fragment naming no block:",

@@ -68,6 +68,17 @@ a:hover {
   color: var(--accent-dark);
 }
 
+/* A reference to a wiki page not yet written (`UNWRITTEN_PAGE_CLASS` in
+   qualc/wiki.py): the red link of a wiki, so a syllabus shows which of its
+   topics still owe a page. It is text, not an anchor, because there is
+   nowhere to go. */
+.qual-link-unwritten {
+  color: var(--alarm);
+  text-decoration: underline dotted;
+  text-underline-offset: 0.16em;
+  cursor: help;
+}
+
 /* A term at its defining occurrence (`\dfn{term}`, DEF-26): one style for every
    definiendum, whatever emphasis the source it came from used. */
 dfn.qual-dfn {

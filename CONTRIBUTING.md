@@ -199,6 +199,8 @@ A remark, example, or proof is a fenced block, not a paragraph with a run-in lab
 A reference to a definition, theorem, or problem is a wikilink to its card ID: `[[D-IJMPJ]]`, or `[[D-IJMPJ|normal family]]` to set the link text inside a sentence.
 A paragraph that holds nothing but card links transcludes those cards in place.
 Link a wiki page by its path and a section of it by its heading: `[[calculus-preliminaries#Green's Theorem|Green's theorem]]`.
+A path that names no page yet is an unwritten page: the build renders it as a red link and lists it on stderr, so a chapter's syllabus links each topic to its entry page before the page exists.
+A bare card ID or page name that resolves to nothing is an error.
 A use of a defined term links its definition card: "a `[[D-IJMPJ|normal family]]`".
 A page or section named after a mathematical term lets the reader reach the intended definition: a local definition card when it carries qual-specific value, otherwise the canonical external oracle (`SOURCE-02`).
 

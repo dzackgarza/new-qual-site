@@ -280,6 +280,10 @@ def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
         "Algebra/index.md": wiki_md("# Algebra\n", order=2, title="Algebra"),
         "Algebra/groups/index.md": wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"),
         "Algebra/groups/sylow.md": wiki_md("# Sylow\n", order=1),
+        "Algebra/groups/syllabus.md": wiki_md(
+            "# Syllabus\n\n- [[Algebra/groups/sylow|Sylow theorems]]\n- [[Algebra/groups/transfer|Transfer]]\n",
+            order=2,
+        ),
         "Algebra/topic-groups.md": "---\ntitle: Groups topic\norder: 2\ntopics: [Groups]\n---\n\n# Groups topic\n\nThe chapter.\n",
         "Algebra/topic-sheaves.md": "---\ntitle: Sheaves topic\norder: 3\ntopics: [Sheaf Cohomology]\n---\n\n# Sheaves topic\n\nThe chapter.\n",
     }
@@ -292,6 +296,20 @@ def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
     result = run("build", work)
     assert result.returncode == 0, result.stderr
     return work
+
+
+def test_a_path_to_an_unwritten_page_is_a_red_link(wiki_site: Path) -> None:
+    """A syllabus links each topic to its page before the page exists.
+
+    The written page is a link; the unwritten one is marked text, so the reader
+    sees which topics still owe a page and the build still succeeds.
+    """
+    html = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "algebra" / "groups" / "syllabus.html").read_text()
+    links = LinkCollector()
+    links.feed(html)
+    assert "sylow.html" in [href for href, _, _ in links.links]
+    assert '<span class="qual-link-unwritten" title="Not yet written: Algebra/groups/transfer">Transfer</span>' in html
+    assert not [href for href, _, _ in links.links if "transfer" in href]
 
 
 def test_a_standalone_image_is_a_figure_and_a_spaced_page_name_slugs(wiki_site: Path) -> None:

@@ -11,7 +11,15 @@ topics:
 
 For a smooth curve $C$ on a smooth projective surface $X$, adjunction gives $2g(C)-2=C\cdot(C+K_X)$, which computes the genus of a curve from the intersection pairing on $X$.
 
-- [[algebraic-geometry/curves-and-surfaces/genus|Genus]], arithmetic, geometric, and topological genus, their computation from plane models, Hilbert polynomials, and Riemann--Hurwitz, and the curves of genus zero.
+## Syllabus
+
+At the level of [@Har10a, Chapters IV–V].
+
+- [[algebraic-geometry/curves-and-surfaces/genus|Genus]], arithmetic, geometric, and topological genus, their computation from plane models and Hilbert polynomials, and the curves of genus zero.
+
+- [[algebraic-geometry/curves-and-surfaces/riemann-roch-for-curves|Riemann--Roch for curves]], the statement from Serre duality, $\deg K_C=2g-2$, and the consequences for linear systems of small and large degree.
+
+- [[algebraic-geometry/curves-and-surfaces/riemann-hurwitz|Riemann--Hurwitz]], the ramification divisor of a finite separable morphism of curves, the Hurwitz formula, and wild ramification in positive characteristic.
 
 - [[algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians|Embeddings and Jacobians]], when the canonical system embeds, and $\Pic^0$ as an abelian variety.
 
@@ -25,6 +33,8 @@ For a smooth curve $C$ on a smooth projective surface $X$, adjunction gives $2g(
 
 - [[algebraic-geometry/curves-and-surfaces/curves-in-projective-space|Curves in projective space]], projection, curves on a quadric, and which pairs $(d,g)$ occur.
 
-- [[algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces|Intersection theory on surfaces]], adjunction, Riemann--Roch, and the Hodge index theorem.
+- [[algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces|Intersection theory on surfaces]], the adjunction formula, Riemann--Roch for surfaces, and the Hodge index theorem.
 
 - [[algebraic-geometry/curves-and-surfaces/blowups-and-the-classification-of-surfaces|Blowups and the classification of surfaces]], the blowup formulas, contractibility, the cubic surface, and Kodaira dimension.
+
+- [[algebraic-geometry/curves-and-surfaces/crepant-resolutions|Crepant resolutions]], resolutions $f\colon Y\to X$ with $K_Y=f^*K_X$, the minimal resolution of a du Val surface singularity, and its exceptional curves of self-intersection $-2$.
