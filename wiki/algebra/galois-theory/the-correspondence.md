@@ -94,8 +94,6 @@ Modulo $2$, $f(0)=f(1)=1$, so $f$ has no linear factor, and the only monic irred
 
 [[T-CF6S3]]
 
-[[FT-2P5VV]]
-
 ::: {.remark title="Shifting"}
 For $a\in\ZZ$, $g(x)\mapsto g(x+a)$ is a ring automorphism of $\QQ[x]$, so if $f(x+a)$ satisfies Eisenstein's criterion at $p$, then $f$ is irreducible.
 For monic $f$ of degree $n\geq2$, in that case $f(x+a)\equiv x^n \pmod p$, so $f \bmod p$ has a repeated root, and $p$ divides $\Delta_f = \Delta_{f(x+a)}$; the primes to test are among the prime divisors of the discriminant.

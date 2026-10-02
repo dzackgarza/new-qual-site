@@ -1556,6 +1556,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   and review prompt, redirects all live references, and deletes `T-QSTRJ` and
   `FF-QELG7`.
 
+### Duplicate Eisenstein theorem cards FT-2P5VV and T-CF6S3
+
+- **Object and need:** `FT-2P5VV` and `T-CF6S3` in
+  `corpus/theory/Algebra`. Both state Eisenstein's criterion for
+  `$f\in\ZZ[x]$` and prove it by Gauss's lemma and reduction modulo `$p$`.
+- **Observed evidence:** the hypotheses and proof are the same. `T-CF6S3`
+  additionally records the primitive-polynomial consequence giving
+  irreducibility in `$\ZZ[x]$`; `FT-2P5VV` contributes only the review prompt.
+  The Galois-theory wiki and algebra guide displayed both.
+- **Impact and owner:** one standard irreducibility criterion had two theorem
+  addresses, while the richer card strictly contains the other.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `T-CF6S3`,
+  redirects the remaining theorem link, removes duplicate reader-facing
+  references, and deletes `FT-2P5VV`.
+
 ### Duplicate reduced-ring card FF-U4FHF
 
 - **Object and need:** `D-PQHHJ` and `FF-U4FHF` in
