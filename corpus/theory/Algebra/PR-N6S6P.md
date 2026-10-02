@@ -54,16 +54,8 @@ $$
 
 (g) For $m, n \geq 1$, $\abs{\Hom(C_n, C_m)} = \gcd(n, m)$.
 
-(h) Let $N, H$ be groups, $\psi\colon H \to \Aut(N)$ a homomorphism, $\sigma \in \Aut(H)$, and $\tau \in \Aut(N)$, and let $c_\tau\colon \Aut(N) \to \Aut(N)$ be conjugation $\alpha \mapsto \tau\alpha\tau\inv$.
-Then $N \semidirect_\psi H \cong N \semidirect_{c_\tau \circ \psi \circ \sigma} H$.
-
 :::
 
 ::: {.example}
 $\Aut(C_8) \cong (\ZZ/8\ZZ)\units = \theset{1, 3, 5, 7}$ has every nonidentity element of order $2$, so $\Aut(C_8) \cong C_2 \times C_2 \not\cong C_4$.
-:::
-
-::: {.remark}
-By (h), for $N = C_p^n$ and $H = C_k = \gens{h}$, a homomorphism $\psi\colon C_k \to \GL_n(\FF_p)$ is determined by the matrix $A = \psi(h)$, and replacing $A$ by a similar matrix $PAP\inv$ gives an isomorphic semidirect product.
-So it suffices to take $A$ in a canonical form, such as the rational canonical form.
 :::

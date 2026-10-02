@@ -1916,3 +1916,5 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** keep `PR-N6S6P` for cyclic-group automorphisms and extract the
   independent results to their own proposition cards. The first extraction is
   `PR-IN9ZP`, which owns the inner-automorphism quotient theorem.
+  `PR-SD8CY` now owns the semidirect-product action-change theorem and its
+  canonical-form remark.
