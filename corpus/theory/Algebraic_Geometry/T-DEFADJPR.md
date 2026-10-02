@@ -21,10 +21,12 @@ prompts:
 - Why is $i^{-1}$ exact for an open immersion $i$?
 ---
 
-::: {.proposition title="useful adjoint pairs"}
+::: {.proposition title="Useful adjoint pairs"}
 The left adjoint is named first in each pair.
 
-- "-ify" and "forget": free group on a set and the underlying set; sheafification and the inclusion of sheaves into presheaves; $\widetilde{\wait}$ from $\Gamma(X,\OO_X)$-modules to $\OO_X$-modules and global sections.
+- "-ify" and "forget": free group on a set and the underlying set; sheafification and the inclusion of sheaves into presheaves.
+
+- For $X=\Spec A$, the sheafification functor $M\mapsto\widetilde M$ from $A$-modules to quasicoherent $\OO_X$-modules and global sections $\Gamma(X,-)$.
 
 - Tensor $\wait \tensor_A N$ and $\Hom_A(N,\wait)$, as functors $\mods{A} \to \mods{A}$ for a fixed $A$-module $N$.
 
@@ -36,8 +38,7 @@ The left adjoint is named first in each pair.
 :::
 
 ::: {.remark}
-By RAPL and LAPC each left adjoint here is right exact and each right adjoint left exact, so the list doubles as a table of which functors have interesting derived functors: $R^i\pi_*$ for pushforward, $\Tor$ for tensor, $\Ext$ for $\Hom$.
+For the adjunctions between abelian categories, [[T-DEFRAPL]] implies that an additive left adjoint is right exact and an additive right adjoint is left exact. Thus $\wait\tensor_A N$ is right exact, $\Hom_A(N,\wait)$ and $\pi_*$ are left exact, and their failures of exactness lead to $\Tor$, $\Ext$, and $R^i\pi_*$. This exactness language does not apply to the Set/Grp adjunction in the first bullet.
 
-The last pair is the one with a surprise in it.
 For an open immersion, $i^{-1}$ is a right adjoint (of $i_!$) and a left adjoint (of $i_*$) at the same time, so it is exact --- which is why restricting a short exact sequence of sheaves to an open set keeps it exact, and why exactness of sheaves may be checked on any open cover or on stalks.
 :::
