@@ -24,3 +24,53 @@ The smallest positive integer $x$ for which the power series $\sum_{n=1}^{\infty
 (D) $8$
 (E) $9$
 :::
+
+::: {.solution}
+<1>1. If
+$$
+c_n(x)=\frac{n!(2n)!}{(3n)!}x^n,
+$$
+then for $x\ne0$,
+$$
+\lim_{n\to\infty}\abs{\frac{c_{n+1}(x)}{c_n(x)}}
+=\frac{4\abs{x}}{27}.
+$$
+
+::: {.proof}
+Cancelling factorials gives
+$$
+\abs{\frac{c_{n+1}(x)}{c_n(x)}}
+=\abs{x}\,
+\frac{(n+1)(2n+1)(2n+2)}
+{(3n+1)(3n+2)(3n+3)}.
+$$
+Dividing numerator and denominator by $n^3$ and taking the limit yields
+$4\abs{x}/27$.
+:::
+
+<1>2. The series converges absolutely for $\abs{x}<27/4$ and diverges for $\abs{x}>27/4$.
+
+::: {.proof}
+This is the ratio test applied to the limit in step <1>1. At $x=0$ the series is identically zero, so it also converges.
+:::
+
+<1>3. The smallest positive integer for which the series does not converge is
+$$
+\boxed{x=7},
+$$
+so the answer is (C).
+
+::: {.proof}
+The positive integers $1,\ldots,6$ all satisfy $x<27/4$, so step <1>2 gives convergence. Since
+$$
+7>\frac{27}{4},
+$$
+step <1>2 gives divergence at $x=7$. Thus $7$ is the first positive integer outside the convergence interval.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested integer and corresponding choice.
+:::
+:::
