@@ -974,6 +974,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `D-INULL`, removes duplicate reader-facing references, and deletes
   `FD-25SUQ`.
 
+### Duplicate integral-domain cards D-QJ3QL and FD-2A5XH
+
+- **Object and need:** `D-QJ3QL` and `FD-2A5XH` in
+  `corpus/theory/Algebra`. Both cards define a nonzero commutative ring with no
+  nonzero zero divisors.
+- **Observed evidence:** the complete statements are mathematically identical.
+  `D-QJ3QL` is the dependency used throughout the ring and factorization
+  theory; `FD-2A5XH` is a migrated flashcard and the wiki displayed it
+  immediately beside `D-QJ3QL`.
+- **Impact and owner:** the flashcard duplicate creates a second canonical
+  definition without additional mathematics.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `D-QJ3QL`,
+  removes the duplicate wiki entry, and deletes `FD-2A5XH`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card

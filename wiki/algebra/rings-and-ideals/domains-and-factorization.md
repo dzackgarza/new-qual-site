@@ -48,8 +48,6 @@ It is a [[D-UI6CU|field]] if every nonzero element is a unit.
 
 [[D-QJ3QL]]
 
-[[FD-2A5XH]]
-
 [[D-UI6CU]]
 
 [[FD-SNOTW]]
