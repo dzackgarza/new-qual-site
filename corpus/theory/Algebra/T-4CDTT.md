@@ -15,7 +15,7 @@ relations:
 - kind: uses
   target: T-QYDVH
 - kind: uses
-  target: L-DJKXL
+  target: L-354HC
 review: reviewed
 ---
 

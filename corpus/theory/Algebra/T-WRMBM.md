@@ -16,7 +16,7 @@ relations:
 - kind: uses
   target: T-XDMK2
 - kind: uses
-  target: L-DJKXL
+  target: L-354HC
 review: draft
 ---
 

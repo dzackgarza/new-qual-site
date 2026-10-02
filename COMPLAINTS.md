@@ -1176,6 +1176,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `T-NLPZY`,
   removes duplicate reader-facing references, and deletes `FT-GJ6NR`.
 
+### Duplicate fixed-point congruence lemmas L-354HC and L-DJKXL
+
+- **Object and need:** `L-354HC` and `L-DJKXL` in
+  `corpus/theory/Algebra`. Both state that for a finite `$p$`-group acting on a
+  finite set, the total number of points is congruent modulo `$p$` to the
+  number of global fixed points.
+- **Observed evidence:** the statements and orbit-partition proofs agree
+  term-for-term up to notation. The wiki used `L-354HC`; three Sylow-theory
+  cards used `L-DJKXL`; the algebra guide listed both.
+- **Impact and owner:** one lemma had two intrinsic addresses and split its
+  dependency graph.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit retains `L-354HC`, adds the explicit
+  action/orbit-stabilizer dependencies, redirects the three theorem links,
+  removes the duplicate guide entry, and deletes `L-DJKXL`.
+
 ### Duplicate irreducible-element cards D-TO3IY and FD-6LLJF
 
 - **Object and need:** `D-TO3IY` and `FD-6LLJF` in
