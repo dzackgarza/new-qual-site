@@ -25,3 +25,67 @@ If $\mathbf{F}=(3y-2x)\hat{\mathbf{i}}+(x^2+y)\hat{\mathbf{j}}$, find the value 
 (D) $2$
 (E) $3$
 :::
+
+::: {.solution}
+<1>1. A parametrization of $C$ with the required orientation is
+$$
+\mathbf{r}(t)=(t,t^2),
+\qquad -1\le t\le0.
+$$
+
+::: {.proof}
+The equation $y=x^2$ is satisfied by $(x,y)=(t,t^2)$. At $t=-1$ this gives $(-1,1)$, and at $t=0$ it gives the origin, so increasing $t$ follows the stated orientation.
+:::
+
+<1>2. Along this parametrization,
+$$
+\mathbf{F}(\mathbf{r}(t))\cdot\mathbf{r}'(t)
+=4t^3+3t^2-2t.
+$$
+
+::: {.proof}
+From step <1>1,
+$$
+\mathbf{r}'(t)=(1,2t).
+$$
+Also,
+$$
+\mathbf{F}(t,t^2)
+=\bigl(3t^2-2t,\ t^2+t^2\bigr)
+=\bigl(3t^2-2t,\ 2t^2\bigr).
+$$
+Therefore
+$$
+\mathbf{F}(\mathbf{r}(t))\cdot\mathbf{r}'(t)
+=(3t^2-2t)(1)+(2t^2)(2t)
+=4t^3+3t^2-2t.
+$$
+:::
+
+<1>3. The line integral is
+$$
+\boxed{1},
+$$
+so the answer is (C).
+
+::: {.proof}
+Using step <1>2,
+$$
+\int_C\mathbf{F}\cdot d\mathbf{r}
+=\int_{-1}^{0}(4t^3+3t^2-2t)\,dt
+=\left[t^4+t^3-t^2\right]_{-1}^{0}.
+$$
+Hence
+$$
+\int_C\mathbf{F}\cdot d\mathbf{r}
+=0-\bigl(1-1-1\bigr)
+=1.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested line-integral value and corresponding choice.
+:::
+:::
