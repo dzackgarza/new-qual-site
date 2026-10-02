@@ -1144,6 +1144,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes
   `FD-4GFTY`.
 
+### Duplicate finite-Galois characterization theorem FT-3WWKN
+
+- **Object and need:** `D-5JYEI` and `FT-3WWKN` in
+  `corpus/theory/Algebra`. Both list equivalent characterizations of a finite
+  Galois extension.
+- **Observed evidence:** `FT-3WWKN` lists separable splitting field, fixed
+  field, full automorphism count, and normal-plus-separable. `D-5JYEI` already
+  contains all four and additionally the irreducible separable splitting-field
+  characterization and the separable-degree equality.
+- **Impact and owner:** the flashcard theorem duplicates a strictly richer
+  canonical card; one downstream example still linked to the duplicate.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit adds a characterization review prompt to
+  `D-5JYEI`, redirects the downstream link, removes duplicate reader-facing
+  references, and deletes `FT-3WWKN`.
+
 ### Duplicate irreducible-element cards D-TO3IY and FD-6LLJF
 
 - **Object and need:** `D-TO3IY` and `FD-6LLJF` in

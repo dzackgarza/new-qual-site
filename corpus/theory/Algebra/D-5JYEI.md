@@ -5,6 +5,7 @@ kind: definition
 title: Galois extension and Galois group
 prompts:
 - In terms of $\abs{\Aut(K/F)}$, when is a finite extension $K/F$ Galois?
+- Give equivalent characterizations of a finite Galois extension.
 classification:
   areas:
   - algebra
