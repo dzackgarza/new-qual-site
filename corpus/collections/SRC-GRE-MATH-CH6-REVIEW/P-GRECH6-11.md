@@ -33,3 +33,51 @@ Note: $\tr(A)$ denotes the trace of $A$, which is the sum of the entries on the 
 (D) III only
 (E) I and III only
 :::
+
+::: {.solution}
+<1>1. The set $T$ is not a subgroup of $\GL(2,\RR)$.
+
+::: {.proof}
+The identity matrix has determinant $1$, so it does not belong to $T$. Hence $T$ cannot be a subgroup. Equivalently, if $A,B\in T$, then
+$$
+\det(AB)=\det(A)\det(B)=4\ne2,
+$$
+so $T$ is not closed under multiplication.
+:::
+
+<1>2. The set $U$ is a subgroup of $\GL(2,\RR)$.
+
+::: {.proof}
+The identity matrix is upper triangular. The product of two upper-triangular matrices is upper triangular. Finally, if
+$$
+A=\begin{pmatrix}a&b\\0&d\end{pmatrix}\in U,
+$$
+then $a,d\ne0$ because $A$ is invertible, and
+$$
+A^{-1}=\begin{pmatrix}a^{-1}&-b/(ad)\\0&d^{-1}\end{pmatrix},
+$$
+which is again upper triangular. Thus $U$ contains the identity and is closed under multiplication and inverses.
+:::
+
+<1>3. The set $V$ is not a subgroup of $\GL(2,\RR)$.
+
+::: {.proof}
+The identity matrix has trace $2$, not $0$, so it does not belong to $V$. Hence $V$ is not a subgroup.
+:::
+
+<1>4. Therefore the only subgroup among I, II, and III is
+$$
+\boxed{\text{II only}},
+$$
+so the answer is (B).
+
+::: {.proof}
+Steps <1>1--<1>3 show respectively that $T$ is not a subgroup, $U$ is a subgroup, and $V$ is not a subgroup.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the required choice.
+:::
+:::
