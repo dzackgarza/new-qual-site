@@ -23,7 +23,8 @@ prompts:
 ---
 
 ::: {.definition}
-A curve $C$ of genus $g \geq 2$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1$ of degree $2$, that is, a $g^1_2$.
+Let $C$ be a smooth projective curve of genus $g\geq2$ over an algebraically closed field $k$.
+The curve $C$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1_k$ of degree $2$, equivalently a $g^1_2$.
 :::
 
 ::: {.proposition}
@@ -39,9 +40,17 @@ Equivalently $\abs{K} = (g-1)\, g^1_2$.
 ::: {.remark}
 For a hyperelliptic curve, the canonical map is two-to-one onto a rational normal curve instead of an embedding.
 
-Base-point freeness of $\abs{K}$ follows from Riemann--Roch: $\ell(K)=g$, and $\ell(K-p)=g-1$ because $\ell(p)=1$ for a non-rational curve, so the dimension drops by exactly one at every point.
-Very ampleness needs the drop by two at every pair $p, q$, and $\ell(K - p - q) = \ell(K) - 2$ fails exactly when $\ell(p+q) = 2$ — a pencil of degree two, which is the definition.
+For every $p\in C$, one has $\ell(p)=1$: otherwise a nonconstant function with polar divisor bounded by $p$ would define a degree-one morphism $C\to\PP^1$, forcing $C\cong\PP^1$. Riemann--Roch therefore gives $\ell(K-p)=g-1$, so $\abs K$ is base-point free.
+Similarly, Riemann--Roch gives
+$$
+\ell(K-p-q)=g-3+\ell(p+q).
+$$
+Thus the canonical system fails to separate some pair of points or tangent direction exactly when $\ell(p+q)=2$, equivalently when $p+q$ belongs to a $g^1_2$.
 
 Every curve of genus $2$ is hyperelliptic, since $\abs{K}$ is then a $g^1_2$ outright.
-Hyperelliptic curves of genus $g$ are the double covers of $\PP^1$ branched at $2g+2$ points, so they form a family of dimension $2g-1$ inside $\mathcal{M}_g$, which is everything when $g=2$ and a proper subvariety when $g \geq 3$.
+If $\operatorname{char}k\ne2$, the degree-two map is tamely ramified at $2g+2$ points by Riemann--Hurwitz. Hence the hyperelliptic locus has dimension
+$$
+(2g+2)-\dim\PGL_2=2g-1;
+$$
+it is all of $\mathcal M_2$ and is a proper locus in $\mathcal M_g$ for $g\geq3$.
 :::
