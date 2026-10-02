@@ -41,9 +41,17 @@ $$
 It depends on the chosen twisting sheaf; its value at zero is the intrinsic Euler characteristic $\chi(X,\mcf)$.
 :::
 
-::: {.definition title="Arithmetic and geometric genus"}
+::: {.definition title="Arithmetic genus, geometric genus, irregularity, and plurigenera"}
 For a nonempty projective scheme $X$ over a field of dimension $n$, the \dfn{arithmetic genus} is $p_a(X)\coloneqq(-1)^n(\chi(\OO_X)-1)$, so $p_a(X)=1-\chi(\OO_X)$ for a curve.
 For a nonsingular projective integral variety $X$ of dimension $n$ over an algebraically closed field, the \dfn{geometric genus} is $p_g(X)\coloneqq h^0(X,\omega_X)$, and Serre duality gives $p_g(X)=h^n(X,\OO_X)$.
+Its \dfn{irregularity} is
+$$
+q(X)\coloneqq h^1(X,\OO_X).
+$$
+For every integer $m\geq1$, its \dfn{$m$-th plurigenus} is
+$$
+P_m(X)\coloneqq h^0(X,\omega_X^{\otimes m}).
+$$
 [@Har10a, §II.8, Exercise III.5.3]
 :::
 
