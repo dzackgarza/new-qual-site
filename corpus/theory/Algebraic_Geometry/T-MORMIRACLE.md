@@ -21,20 +21,28 @@ prompts:
 ---
 
 ::: {.theorem title="Miracle flatness"}
-Let $f : X \to Y$ be a local homomorphism of Noetherian local rings, or a morphism of schemes locally of finite type, with $X$ Cohen--Macaulay and $Y$ regular.
-If
-\[
-\dim_x X_{f(x)} = \dim_x X - \dim_{f(x)} Y
-\]
-at every point, that is, the fibres have the expected dimension, then $f$ is flat.
+Let $(A,\mfm)\to(B,\mfn)$ be a local homomorphism of Noetherian local rings. Assume that $A$ is regular, $B$ is Cohen--Macaulay, and
+$$
+\dim B=\dim A+\dim(B/\mfm B).
+$$
+Then $B$ is flat over $A$.
+:::
+
+::: {.corollary title="Geometric form"}
+Let $f\colon X\to Y$ be a morphism locally of finite type between locally Noetherian schemes. Assume that $X$ is Cohen--Macaulay and $Y$ is regular. If for every $x\in X$, with $y=f(x)$,
+$$
+\dim\OO_{X,x}
+=\dim\OO_{Y,y}+\dim\OO_{X_y,x},
+$$
+then $f$ is flat.
+
+In particular, if $X$ and $Y$ are smooth irreducible varieties and every nonempty fibre is pure of dimension $\dim X-\dim Y$, then $f$ is flat.
 :::
 
 ::: {.remark}
-This is the theorem that makes flatness checkable, since the hypotheses are about dimension and the conclusion is about modules.
-In the form one uses it: a morphism between smooth varieties with equidimensional fibres of the expected dimension is flat.
+Let $d=\dim A$ and choose a regular system of parameters $t_1,\ldots,t_d$ for $A$. The dimension equality says that their images in $B$ cut the dimension down by exactly $d$. Since $B$ is Cohen--Macaulay, $t_1,\ldots,t_d$ form a $B$-regular sequence. The local criterion for flatness then lifts flatness from the residue-field quotient $B/\mfm B$ successively across the parameters, giving flatness over $A$.
 
-It also explains the blowup counterexample rather than merely contradicting it: $\Bl_0 \AA^2 \to \AA^2$ has a fibre of dimension $1$ where the expected dimension is $0$, so the hypothesis fails at exactly the point where flatness does.
+For the blowup $\Bl_0\AA^2\to\AA^2$, the generic fibres are zero-dimensional while the exceptional fibre has dimension $1$. The local dimension equality therefore fails over the origin, consistently with nonflatness.
 
-The displayed dimension formula is itself a consequence of flatness in general, so the theorem says that for a Cohen--Macaulay source over a regular base the necessary condition is sufficient.
-The Cohen--Macaulay hypothesis rules out embedded depth defects that would otherwise allow the expected dimension formula without flatness.
+For flat local maps of Noetherian local rings the displayed dimension formula is necessary. Miracle flatness says that, with regular base and Cohen--Macaulay source, this necessary dimension condition is also sufficient.
 :::
