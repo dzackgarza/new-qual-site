@@ -1821,3 +1821,19 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   and retaining the other complete proof unchanged. The external handoff
   remains unresolved: a successor must not race a still-writing predecessor,
   and must reread the final settled card before editing it.
+
+### PR-E6VI4 duplicated the smallest-prime-index normality theorem
+
+- **Object and need:** `PR-E6VI4` and `PR-PADL7` in
+  `corpus/theory/Algebra`. Both stated that a subgroup whose index is the
+  smallest prime dividing the group order is normal.
+- **Observed evidence:** the two cards had the same title, slogan, hypotheses,
+  conclusion, and coset-action proof. `PR-E6VI4` differed only by a
+  `variant-of: PR-PADL7` relation.
+- **Impact and owner:** the duplicate violated the single-defining-occurrence
+  policy while the underlying coset-action proof contains a distinct structural
+  statement: the action kernel is exactly the subgroup.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** `PR-PADL7` remains the normality theorem. `PR-E6VI4` is
+  rewritten as the distinct proposition identifying the kernel of the coset
+  action, and its relation becomes `related-to`.
