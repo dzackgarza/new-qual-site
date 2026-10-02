@@ -22,15 +22,32 @@ prompts:
 - Why is a rational function with no poles on a normal Noetherian scheme regular?
 ---
 
-Let $X$ be an integral Noetherian scheme with function field $K$.
-For a prime divisor $Y \subseteq X$ with generic point $\eta_Y$ such that $\OO_{X, \eta_Y}$ is a discrete valuation ring with valuation $v_Y$, a function $t \in K^\times$ has a \dfn{zero} along $Y$ if $v_Y(t) > 0$ and a \dfn{pole} along $Y$ if $v_Y(t) < 0$.
-
 ::: {.proposition}
-1. A Noetherian topological space has finitely many irreducible components [@Har10a, Proposition I.1.5].
+Let $X$ be an integral Noetherian scheme with function field $K$ and let $t\in K^\times$.
 
-2. For $t \in K^\times$, there are only finitely many codimension-one points $y \in X$ with $t \notin \OO_{X,y}^\times$.
+1. There are only finitely many codimension-one points $y\in X$ for which $t\notin\OO_{X,y}^\times$.
 
-3. If $X$ is regular in codimension one, then $\div t = \sum_Y v_Y(t)\, Y$ is a finite sum, hence a Weil divisor [@Har10a, Lemma II.6.1].
+2. If $X$ is regular in codimension one and $Y\subseteq X$ is a prime divisor with generic point $\eta_Y$, then $\OO_{X,\eta_Y}$ is a discrete valuation ring. Writing its normalized valuation as $v_Y$, the sum
+$$
+\operatorname{div}_X(t)=\sum_Y v_Y(t)Y
+$$
+has finite support and hence is a Weil divisor [@Har10a, Lemma II.6.1]. The terms with $v_Y(t)>0$ are the zeros of $t$ and those with $v_Y(t)<0$ are its poles.
 
-4. If $X$ is normal, then $t \in K$ has no poles if and only if $t \in \OO_X(X)$; on an affine open $\Spec A$ this is $A = \bigcap_{\operatorname{ht} \mathfrak{p} = 1} A_{\mathfrak{p}}$ for a Noetherian normal domain $A$ [@Har10a, Proposition II.6.3A].
+3. If $X$ is normal, then
+$$
+t\in\Gamma(X,\OO_X)
+\quad\Longleftrightarrow\quad
+v_Y(t)\geq0\text{ for every prime divisor }Y\subseteq X.
+$$
+Equivalently, a rational function on a normal Noetherian integral scheme is regular exactly when it has no codimension-one poles [@Har10a, Proposition II.6.3A].
+:::
+
+::: {.remark}
+For the finiteness statement, cover $X$ by finitely many affine opens $U=\Spec A$. On such a $U$, write $t=a/b$ with nonzero $a,b\in A$. If a height-one prime $\mathfrak p$ satisfies $t\notin A_\mathfrak p^\times$, then $\mathfrak p$ contains $a$ or $b$. A height-one prime containing a nonzero principal ideal is minimal over that ideal, and a Noetherian ring has only finitely many minimal primes over a fixed ideal. Thus only finitely many height-one primes occur on each $U$.
+
+For the normality statement, on every affine open $U=\Spec A$, the Noetherian normal domain $A$ satisfies
+$$
+A=\bigcap_{\operatorname{ht}\mathfrak p=1}A_\mathfrak p
+$$
+inside $K$ [@Har10a, Proposition II.6.3A]. Hence nonnegative valuation at every prime divisor makes $t$ regular on every affine open and therefore on $X$.
 :::
