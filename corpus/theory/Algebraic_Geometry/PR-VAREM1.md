@@ -21,27 +21,52 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $X$ be a smooth projective surface, $\pi: \Bl_p X \to X$ the blowup at a point, $E$ the exceptional curve.
+Let $X$ be a smooth projective surface over a field $k$, let $p\in X(k)$, let
+$$
+\pi\colon\widetilde X=\Bl_pX\longrightarrow X
+$$
+be the blowup, and let $E$ be its exceptional curve.
 Then
-\[
-E \cong \PP^1, \qquad E^2 = -1, \qquad K_{\Bl_p X} = \pi^* K_X + E .
-\]
-In dimension $n$ the last formula reads $K_{\Bl_p X} = \pi^* K_X + (n-1)E$.
+$$
+E \cong \PP^1_k, \qquad E^2 = -1, \qquad K_{\widetilde X} = \pi^* K_X + E .
+$$
+More generally, if $X$ is a smooth $n$-dimensional variety and $p\in X(k)$, then
+$$
+K_{\Bl_pX}=\pi^*K_X+(n-1)E.
+$$
 :::
 
-::: {.proof title="of the self-intersection"}
-Pullback preserves intersection numbers, and $\pi^* A . E = 0$ for every divisor $A$ on $X$, since $\pi_* E = 0$.
-For $C \subseteq X$ a curve smooth at $p$, the proper transform satisfies $\pi^* C = \tilde{C} + E$ and $\tilde{C}$ meets $E$ transversally in the one point recording the tangent direction of $C$.
-Intersecting with $E$:
-\[
-0 = \pi^* C . E = (\tilde{C} + E).E = \tilde{C}.E + E^2 = 1 + E^2 .
-\]
+::: {.proof}
+For the blowup of a smooth point, the exceptional divisor is the projectivized tangent space and
+$$
+\OO_{\widetilde X}(E)|_E\cong\OO_E(-1)
+$$
+[@Har10a, Proposition II.8.24]. On a surface $E\cong\PP^1_k$, so
+$$
+E^2=\deg\OO_E(E)=\deg\OO_{\PP^1}(-1)=-1.
+$$
+
+For the canonical divisor formula, it is enough to compute near $p$. Choose étale local coordinates $x_1,\ldots,x_n$ at $p$. On the blowup chart in which the first homogeneous coordinate is nonzero, write
+$$
+x_1=u,\qquad x_i=u v_i\quad(2\leq i\leq n),
+$$
+so $E$ is given by $u=0$. Then
+$$
+\pi^*(dx_1\wedge\cdots\wedge dx_n)
+=u^{n-1}\,du\wedge dv_2\wedge\cdots\wedge dv_n.
+$$
+Thus the relative canonical divisor has multiplicity $n-1$ along $E$ and no support away from $E$, giving
+$$
+K_{\Bl_pX}=\pi^*K_X+(n-1)E.
+$$
 :::
 
 ::: {.remark}
-An alternative geometric computation uses two lines in $\PP^2$: when they meet transversally away from $p$, $\pi^* L_1 . \pi^* L_2 = L_1 . L_2 = 1$; moving them to meet at $p$ gives $\pi^* L_i' = \tilde{L}_i' + E$, while the proper transforms miss each other, so expanding gives $1 = 0 + 1 + 1 + E^2$.
-Both arguments run on the same two facts, $\pi^*A.E = 0$ and $\pi^*C = \tilde{C} + E$.
-
-The consequence is Castelnuovo's criterion — a smooth rational curve with $E^2 = -1$ on a surface is the exceptional curve of a blowup and can be contracted — which is what makes minimal models of surfaces possible.
-The canonical formula is the reason blowing up strictly increases $K^2$-deficiency: $K^2$ drops by one each time, and $p_a$ and $p_g$ do not change.
+On a surface the canonical formula and the projection formula give
+$$
+K_{\widetilde X}^2
+=(\pi^*K_X+E)^2
+=K_X^2-1,
+$$
+because $\pi^*K_X\cdot E=0$ and $E^2=-1$.
 :::
