@@ -898,6 +898,26 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   converts `D-RG5FO` to the proposition “Bilinear forms and Gram matrices,”
   and redirects the wiki's definitional link to `D-H4TDM`.
 
+### D-SSGKC duplicated the quadratic-form definition
+
+- **Object and need:** `D-NRRIT` and `D-SSGKC` in
+  `corpus/theory/Algebra`. `D-NRRIT` is the basis-free definition of a
+  quadratic form, while `D-SSGKC` independently redefined a quadratic form as
+  a degree-two polynomial before discussing its coordinate matrix and real
+  signature.
+- **Observed evidence:** the two complete cards define the same object in
+  equivalent forms when the characteristic is not `2`; `D-SSGKC` already had
+  a relation to `D-NRRIT` and a final concept block restating the basis-free
+  definition.
+- **Impact and owner:** the coordinate card duplicated the canonical
+  definiendum rather than using it, while its matrix/signature material is
+  distinct and useful.
+- **Uncertainty:** none; in characteristic different from `2`, a basis-free
+  quadratic form on `$k^n$` has a unique symmetric coordinate matrix.
+- **Repair:** the same repair commit makes `D-SSGKC` use `D-NRRIT`, defines
+  only the coordinate matrix and signature locally, and moves the Artin
+  citation onto Sylvester's law of inertia.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
