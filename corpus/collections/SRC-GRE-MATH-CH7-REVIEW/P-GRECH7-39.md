@@ -28,3 +28,50 @@ Which of the following sequences of vertices describes a circuit in the graph be
 ::: {.remark}
 The source shows the graph in a figure that is not reproduced here.
 :::
+
+::: {.solution}
+<1>1. The source figure has edges
+$$
+AB,\ BC,\ AE,\ ED,\ DB,\ DC,\ AD.
+$$
+
+::: {.proof}
+These are exactly the seven line segments shown between the labeled vertices $A,B,C,D,E$ in the retained figure.
+:::
+
+<1>2. Choice (A),
+$$
+B,D,A,E,D,C,B,
+$$
+is a circuit.
+
+::: {.proof}
+By step <1>1, every consecutive pair in the sequence is joined by an edge:
+$$
+BD,\ DA,\ AE,\ ED,\ DC,\ CB.
+$$
+The sequence begins and ends at $B$, and these six edges are pairwise distinct. Hence it is a closed trail, that is, a circuit.
+:::
+
+<1>3. None of choices (B)--(E) is a circuit.
+
+::: {.proof}
+Choice (B) begins with $C,A$, but $CA$ is not an edge. Choice (C) traverses the undirected edge $CD$ twice, once as $D,C$ and again as $C,D$, and also repeats $AD$. Choice (D) does not end at its starting vertex. Choice (E) contains the consecutive pair $E,B$, but $EB$ is not an edge.
+:::
+
+<1>4. Therefore the circuit is
+$$
+\boxed{B,D,A,E,D,C,B},
+$$
+so the answer is (A).
+
+::: {.proof}
+Step <1>2 establishes (A), and step <1>3 rules out all other choices.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the required sequence.
+:::
+:::
