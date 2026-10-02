@@ -1007,6 +1007,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-4HEUB`,
   removes duplicate reader-facing references, and deletes `FD-2EUYX`.
 
+### Simple ring had a second defining occurrence on the simple-module card
+
+- **Object and need:** `FD-SNOTW` and `D-4KM4P` in
+  `corpus/theory/Algebra`. `FD-SNOTW` defines simple rings for arbitrary
+  rings, while `D-4KM4P` independently defined the commutative special case
+  alongside simple modules.
+- **Observed evidence:** `D-4KM4P` called a commutative ring simple when it is
+  simple as a module over itself, equivalently when its only ideals are `0`
+  and `R`; `FD-SNOTW` gives the same two-sided-ideal definition without the
+  unnecessary commutativity restriction.
+- **Impact and owner:** the term “simple” had two defining occurrences for
+  rings, while `D-4KM4P` is otherwise the canonical simple-module card.
+- **Uncertainty:** none; the general ring definition specializes to the
+  commutative statement.
+- **Repair:** the same repair commit leaves `FD-SNOTW` as the sole simple-ring
+  owner, removes the ring definition from `D-4KM4P`, and records the relation
+  between the two cards.
+
 ### Duplicate cyclic-module cards D-HY7UU and FD-S2W5E
 
 - **Object and need:** `D-HY7UU` and `FD-S2W5E` in

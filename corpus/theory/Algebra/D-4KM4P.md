@@ -9,12 +9,13 @@ classification:
   topics:
   - Modules
   - Semisimplicity
-relations: []
+relations:
+- kind: related-to
+  target: FD-SNOTW
 review: draft
 ---
 
 ::: {.definition}
 Let $R$ be a ring.
 An $R$-module $M$ is \dfn{simple} if $M\neq 0$ and every submodule $M' \leq M$ is either $0$ or $M$.
-A commutative ring $R$ is \dfn{simple} if it is simple as an $R$-module, that is, if $R\neq 0$ and its only ideals are $0$ and $R$.
 :::
