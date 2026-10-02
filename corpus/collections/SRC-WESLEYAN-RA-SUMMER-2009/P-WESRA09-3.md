@@ -34,3 +34,146 @@ If $X,Y$ are normed and $f$ is continuous, state when a course theorem implies t
 \left\{x\mapsto\sum_{n=0}^N a_nx^{3n+1}:N\ge0,\ a_n\in\mathbb R\right\}.
 \]
 :::
+
+::: {.solution}
+For part (d), write
+\[
+\mathcal S
+=\left\{x\mapsto\sum_{n=0}^N a_nx^{3n+1}:N\ge0,\ a_n\in\mathbb R\right\}
+\subset C([-1,2],\mathbb R).
+\]
+
+<1>1. In part (a),
+\[
+\limsup_{n\to\infty}\mu(A_n)
+\le \mu\!\left(\limsup_{n\to\infty}A_n\right).
+\]
+
+::: {.proof}
+For \(m\ge1\), set
+\[
+B_m=\bigcup_{n\ge m}A_n.
+\]
+Then \((B_m)\) is decreasing,
+\[
+\bigcap_{m=1}^\infty B_m=\limsup_{n\to\infty}A_n,
+\]
+and \(\mu(B_1)\le\mu(\Omega)<\infty\). Continuity from above therefore gives
+\[
+\mu(B_m)\longrightarrow
+\mu\!\left(\limsup_{n\to\infty}A_n\right).
+\]
+For every \(n\ge m\), \(A_n\subseteq B_m\), so
+\[
+\sup_{n\ge m}\mu(A_n)\le\mu(B_m).
+\]
+Letting \(m\to\infty\) proves the desired inequality.
+:::
+
+<1>2. In part (b), every premeasure \(\mu\) on a ring \(\mathcal R\) is \(\sigma\)-subadditive: if \(A_n\in\mathcal R\) and \(A=\bigcup_{n=1}^\infty A_n\in\mathcal R\), then
+\[
+\boxed{\mu(A)\le\sum_{n=1}^\infty\mu(A_n)}.
+\]
+
+::: {.proof}
+Define
+\[
+C_1=A_1,
+\qquad
+C_n=A_n\setminus\bigcup_{k<n}A_k\quad(n\ge2).
+\]
+Because \(\mathcal R\) is a ring, every \(C_n\) lies in \(\mathcal R\). The sets \(C_n\) are pairwise disjoint, \(C_n\subseteq A_n\), and \(\bigcup_n C_n=A\). Hence countable additivity of the premeasure and monotonicity give
+\[
+\mu(A)=\sum_{n=1}^\infty\mu(C_n)
+\le\sum_{n=1}^\infty\mu(A_n).
+\]
+:::
+
+<1>3. In part (c), if \(f:X\to Y\) is a bijective linear map, then \(\boxed{f^{-1}:Y\to X\text{ is linear}}\).
+
+::: {.proof}
+Let \(y_1=f(x_1)\) and \(y_2=f(x_2)\), and let \(a,b\) be scalars. By linearity and bijectivity of \(f\),
+\[
+\begin{aligned}
+f^{-1}(ay_1+by_2)
+&=f^{-1}\!\bigl(af(x_1)+bf(x_2)\bigr)\\
+&=f^{-1}\!\bigl(f(ax_1+bx_2)\bigr)\\
+&=ax_1+bx_2\\
+&=af^{-1}(y_1)+bf^{-1}(y_2).
+\end{aligned}
+\]
+:::
+
+<1>4. If, in addition, \(X\) and \(Y\) are Banach spaces and \(f\) is continuous, then \(\boxed{f^{-1}\text{ is continuous}}\).
+
+::: {.proof}
+The map \(f\) is a continuous linear bijection between Banach spaces. The [[T-FO27T|bounded inverse theorem]] therefore gives continuity of \(f^{-1}\).
+:::
+
+<1>5. Every function in the uniform closure \(\overline{\mathcal S}^{\|\cdot\|_\infty}\) vanishes at \(0\).
+
+::: {.proof}
+Every \(s\in\mathcal S\) satisfies \(s(0)=0\). Evaluation at \(0\) is continuous in the uniform norm, since
+\[
+|u(0)-v(0)|\le\|u-v\|_\infty.
+\]
+Therefore every uniform limit of functions in \(\mathcal S\) also vanishes at \(0\).
+:::
+
+<1>6. Every \(g\in C([-1,2],\mathbb R)\) with \(g(0)=0\) belongs to \(\overline{\mathcal S}^{\|\cdot\|_\infty}\).
+
+::: {.proof}
+Fix \(\varepsilon>0\). By the [[T-3QNBQ|Weierstrass approximation theorem]], choose a real polynomial \(p\) such that
+\[
+\|g-p\|_\infty<\frac{\varepsilon}{4}.
+\]
+Since \(g(0)=0\), one has \(|p(0)|<\varepsilon/4\). Thus
+\[
+r(x)=p(x)-p(0)
+\]
+satisfies \(r(0)=0\) and
+\[
+\|g-r\|_\infty<\frac{\varepsilon}{2}.
+\]
+Write \(r(x)=xh(x)\) for a real polynomial \(h\). The function
+\[
+H(t)=h(t^{1/3}),\qquad -1\le t\le8,
+\]
+is continuous. Applying Weierstrass again, choose a real polynomial \(q\) such that
+\[
+\sup_{-1\le t\le8}|H(t)-q(t)|<\frac{\varepsilon}{4}.
+\]
+Then \(xq(x^3)\in\mathcal S\), and for \(x\in[-1,2]\),
+\[
+\begin{aligned}
+|r(x)-xq(x^3)|
+&=|x|\,|h(x)-q(x^3)|\\
+&=|x|\,|H(x^3)-q(x^3)|\\
+&<2\cdot\frac{\varepsilon}{4}
+=\frac{\varepsilon}{2}.
+\end{aligned}
+\]
+Hence
+\[
+\|g-xq(x^3)\|_\infty<\varepsilon.
+\]
+Since \(\varepsilon\) was arbitrary, \(g\in\overline{\mathcal S}^{\|\cdot\|_\infty}\).
+:::
+
+<1>7. The answer to part (d) is
+\[
+\boxed{
+\overline{\mathcal S}^{\|\cdot\|_\infty}
+=\{g\in C([-1,2],\mathbb R):g(0)=0\}}.
+\]
+
+::: {.proof}
+Step <1>5 gives one inclusion and step <1>6 gives the reverse inclusion.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>1 through <1>4 solve parts (a)--(c), and step <1>7 gives the uniform closure requested in part (d).
+:::
+:::
