@@ -2053,3 +2053,30 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   the source solution explicitly establishes degree $5$.
 - **Repair:** `P-GRECH2-49` proves that five terms are insufficient and six
   terms suffice, and selects (D). The external source is left unchanged.
+
+### GRE Chapter 7 question 21 prints a second non-tautology in choice (E)
+
+- **Object and need:** `P-GRECH7-21` and Chapter 7 review question 21 in
+  `Cracking the GRE Mathematics Subject Test`. The multiple-choice problem asks
+  for the unique formula that is not a tautology.
+- **Observed evidence:** direct inspection of page 5 of the retained
+  `assets/attachments/Chapter-7.pdf` shows choice (E) printed as
+  `$A\lor(B\land C)\leftrightarrow(A\land B)\lor(A\land C)$`. With `$A$`
+  true and `$B,C$` false, its left side is true and its right side is false,
+  so (E) is not a tautology. Choice (C) is also not a tautology: with the same
+  assignment, `$(A\land B)\to C$` is true while
+  `$A\to(B\lor C)$` is false. The Chapter 8 solution nevertheless labels (C)
+  as the answer and calls (E) the distributive property.
+- **Impact and owner:** the printed source problem has two correct choices.
+  The distributive law evidently intended in (E) is
+  `$A\lor(B\land C)\leftrightarrow(A\lor B)\land(A\lor C)$`; with that
+  correction, (C) is the unique non-tautology.
+- **Expected result:** preserve the source-faithful choices on the card, prove
+  that both printed (C) and (E) fail, and identify the corrected distributive
+  formula that recovers the source's intended answer (C).
+- **Uncertainty:** none; the retained PDF scan, both extracted copies, the
+  explicit truth assignments, and the source's own description of (E) as the
+  distributive property agree on the defect and intended correction.
+- **Repair:** `P-GRECH7-21` records the literal two-answer defect, supplies
+  counterexamples for (C) and (E), and states the corrected distributive law;
+  the external source is left unchanged.
