@@ -14,6 +14,10 @@ classification:
 relations:
 - kind: uses
   target: D-G1AEH
+- kind: uses
+  target: D-COHEULER
+- kind: related-to
+  target: D-VARFANO
 review: draft
 prompts:
 - What is the plurigenus of a smooth projective variety?
@@ -21,17 +25,6 @@ prompts:
 - What is a variety of general type?
 - Show that the geometric genus, plurigenera and irregularity are birational invariants.
 ---
-
-::: {.definition}
-Let $X$ be a smooth projective variety of dimension $n$ over an algebraically closed field.
-
-- The \dfn{geometric genus} is $p_g(X) = h^0(X, \omega_X)$, and the \dfn{$m$-th plurigenus} is $P_m(X) = h^0(X, \omega_X^{\otimes m})$ for $m \geq 1$.
-
-- The \dfn{irregularity} is $q(X)=h^1(X,\OO_X)$; for surfaces this is also $p_g(X)-p_a(X)$ [@Har10a, Remark III.7.12.3]. The number of regular one-forms is $h^{1,0}(X)=h^0(X,\Omega^1_{X/k})$.
-  In characteristic zero, Hodge symmetry gives $q(X)=h^{1,0}(X)$ [@Har10a, Appendix B].
-
-- $X$ is of \dfn{general type} if $P_m(X)$ grows like a positive multiple of $m^n$, that is, $X$ has Kodaira dimension $n$.
-:::
 
 ::: {.theorem}
 Let $X$ and $X'$ be birational smooth projective varieties of dimension $n$ over the same algebraically closed field $k$.
@@ -45,6 +38,10 @@ In particular $p_g$, every $P_m$, and every $h^{p,0}$ are birational invariants 
 The inverse pullbacks are constructed in [[P-AGH288PLURIGENUS]], following the method of [@Har10a, Theorem II.8.19 and Exercise II.8.8].
 :::
 
+::: {.remark title="Plurigenera and Kodaira dimension"}
+The invariants $p_g$, $q$, and $P_m$ are defined in [[D-COHEULER]]. Since every plurigenus is birationally invariant, the asymptotic growth of the sequence $P_m$ is birationally invariant. Hence Kodaira dimension and the property of being of general type in [[D-VARFANO]] are birational invariants for smooth projective varieties.
+:::
+
 ::: {.proposition title="Characteristic-zero Hodge comparison"}
 For smooth projective varieties in characteristic zero, Hodge symmetry gives
 $$
@@ -54,7 +51,7 @@ $$
 $$
 p_a(X)=(-1)^n\bigl(\chi(X,\OO_X)-1\bigr)
 $$
-[@Har10a, Chapter I, §7 and Exercise III.5.2]. The Euler characteristic and arithmetic genus are distinct quantities.
+[@Har10a, Chapter I, §7 and Exercise III.5.2].
 :::
 
 ::: {.remark}
