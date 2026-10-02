@@ -28,3 +28,59 @@ f(x) = \arcsin(\log \sqrt{x})
 (D) $\sqrt{2e}$
 (E) $\frac{3e}{\sqrt{2}}$
 :::
+
+::: {.solution}
+Set $u(x)=\log\sqrt{x}$.
+
+<1>1. For interior points of the domain,
+$$
+f'(x)=\frac{1}{2x\sqrt{1-[\log\sqrt{x}]^2}}.
+$$
+
+::: {.proof}
+The chain rule gives
+$$
+f'(x)=\frac{u'(x)}{\sqrt{1-u(x)^2}}.
+$$
+Since
+$$
+u(x)=\log(x^{1/2})=\frac12\log x,
+$$
+one has $u'(x)=1/(2x)$. Substitution gives the displayed derivative.
+:::
+
+<1>2. At $x=e$,
+$$
+f'(e)=\frac{1}{e\sqrt3}.
+$$
+
+::: {.proof}
+Because
+$$
+\log\sqrt e=\frac12,
+$$
+step <1>1 gives
+$$
+f'(e)
+=\frac{1}{2e\sqrt{1-(1/2)^2}}
+=\frac{1}{2e(\sqrt3/2)}
+=\frac{1}{e\sqrt3}.
+$$
+:::
+
+<1>3. Therefore the requested value is
+$$
+\boxed{\frac{1}{e\sqrt3}},
+$$
+so the answer is (A).
+
+::: {.proof}
+This is exactly the evaluation established in step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested derivative value and corresponding choice.
+:::
+:::
