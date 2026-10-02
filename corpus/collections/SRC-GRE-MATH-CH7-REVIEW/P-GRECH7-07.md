@@ -24,3 +24,45 @@ Which of the following sets is NOT countably infinite?
 (D) $\mathbb{Z}^+$, the set of positive integers
 (E) $E$, the set of positive even integers
 :::
+
+::: {.solution}
+<1>1. The sets $\ZZ^+$, $E$, $\ZZ$, and $\QQ$ are countably infinite.
+
+::: {.proof}
+The set $\ZZ^+$ is countably infinite by definition. The map
+$$
+n\longmapsto 2n
+$$
+is a bijection $\ZZ^+\to E$. The integers can be enumerated as
+$$
+0,1,-1,2,-2,3,-3,\ldots,
+$$
+so $\ZZ$ is countably infinite. Finally, every rational number has a representation $a/b$ with $a\in\ZZ$ and $b\in\ZZ^+$; hence $\QQ$ is the image of the countable set $\ZZ\times\ZZ^+$ under $(a,b)\mapsto a/b$. Thus $\QQ$ is countable, and it is infinite because it contains $\ZZ$.
+:::
+
+<1>2. The set $\QQ^c=\RR\setminus\QQ$ of irrational numbers is uncountable.
+
+::: {.proof}
+Cantor's diagonal argument shows that $\RR$ is uncountable. If $\QQ^c$ were countable, then
+$$
+\RR=\QQ\cup\QQ^c
+$$
+would be a union of two countable sets and therefore countable, contradicting Cantor's theorem. Hence $\QQ^c$ is uncountable.
+:::
+
+<1>3. Therefore the set that is not countably infinite is
+$$
+\boxed{\QQ^c},
+$$
+so the answer is (C).
+
+::: {.proof}
+Step <1>1 proves that choices (A), (B), (D), and (E) are countably infinite, while step <1>2 proves that choice (C) is uncountable.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required choice.
+:::
+:::
