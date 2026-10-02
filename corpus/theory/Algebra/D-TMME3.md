@@ -5,6 +5,7 @@ kind: definition
 title: Alternating group
 prompts:
 - What distinguishes an even permutation from an odd one?
+- What is the alternating group, as a kernel?
 classification:
   areas:
   - algebra

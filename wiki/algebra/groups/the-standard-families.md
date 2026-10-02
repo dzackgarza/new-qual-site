@@ -47,8 +47,6 @@ By the structure theorem, every finite abelian group is a direct product of cycl
 
 [[D-TMME3]]
 
-[[FD-X4DBP]]
-
 [[PR-JY4PV]]
 
 ::: {.remark title="Conjugacy classes in $S_n$ and $A_n$"}

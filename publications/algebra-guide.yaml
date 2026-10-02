@@ -177,7 +177,6 @@ sections:
       - ref: FD-GHDF2
       - ref: FF-6MNV6
       - ref: D-TMME3
-      - ref: FD-X4DBP
       - ref: PR-JY4PV
       - ref: D-7UIPO
       - ref: PR-5PI25

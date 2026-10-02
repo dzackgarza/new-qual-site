@@ -1270,6 +1270,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   multiplicative sign, updates `D-TMME3` to use sign `1` for even
   permutations, and links `FD-GHDF2` to the canonical definition.
 
+### Duplicate alternating-group card FD-X4DBP
+
+- **Object and need:** `D-TMME3` and `FD-X4DBP` in
+  `corpus/theory/Algebra`. `D-TMME3` already defines even/odd permutations and
+  the alternating group as the kernel of the sign homomorphism; `FD-X4DBP`
+  repeats only the latter definition.
+- **Observed evidence:** both complete cards state
+  `$A_n=\ker(\sgn)=\{\sigma\in S_n:\sgn(\sigma)=1\}$`. The wiki and algebra
+  guide displayed both cards adjacent to one another.
+- **Impact and owner:** the flashcard adds no distinct mathematics and creates
+  a second defining occurrence.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the kernel review prompt to
+  `D-TMME3`, removes duplicate reader-facing references, and deletes
+  `FD-X4DBP`.
+
 ### Duplicate even/odd-permutation card FD-PIVQZ
 
 - **Object and need:** `D-TMME3` and `FD-PIVQZ` in
