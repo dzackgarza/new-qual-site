@@ -46,25 +46,34 @@ $$
 \operatorname{Hom}(T, M_g) \longleftrightarrow \ts{\text{families over } T}/{\cong}
 $$
 natural in $T$.
-Equivalently $M_g$ carries a **universal family** $\mathcal{U} \to M_g$ from which every family is pulled back along its own classifying map, in exactly one way.
+Equivalently $M_g$ carries a \dfn{universal family} $\mathcal{U}\to M_g$ whose pullback along each classifying morphism recovers the corresponding family, compatibly with base change.
 :::
 
 ::: {.remark}
 For a coarse moduli space, families induce classifying maps; for a fine moduli space, this correspondence is bijective and natural in the base.
 Condition (2) alone does not imply that every map to $M_g$ comes from a family or that two families with the same classifying map are isomorphic.
-Take a family to its classifying map and the map back to a family and the round trip must return what you started with — that is representability, and it fails.
+Representability requires the natural transformation to be an isomorphism of functors, not merely universal among maps from the moduli functor to representable functors.
 
-Automorphisms are the obstruction, and the mechanism is twisting.
-Families over $T$ with all fibres isomorphic to a fixed curve $C$ are classified by $H^1(T, \Aut C)$, so as soon as $\Aut C \neq 1$ there are nontrivial such families.
-The classifying map of any one of them is constant, being the point $[C]$; a universal family would pull back along a constant map to a constant family, so no universal family exists.
+Nontrivial automorphisms produce an obstruction by twisting.
+If $C/k$ has finite constant automorphism group $G$ and a family over $T$ is étale-locally isomorphic to $C\times T$, its forms are classified by the pointed set
+$$
+H^1_{\acute{e}tale}(T,G).
+$$
+A nontrivial class gives an isotrivial but nonconstant family whose coarse classifying map is the constant map to $[C]$. Such a family cannot be obtained by pulling a single universal family back along that constant map.
 
-The standard witness is a quadratic twist.
-Over $T = \AA^1 \smz$ with coordinate $t$, put
+For a concrete witness, let $k$ be algebraically closed of characteristic different from $2$, fix an elliptic curve
+$$
+E\colon v^2=u^3+au+b,
+$$
+and put $T=\GG_{m,k}$ with coordinate $t$. Define
 $$
 \mathcal{E}_t : y^2 = x^3 + a t^2 x + b t^3 .
 $$
-Over $k = \kbar$ the substitution $x = t u$, $y = t^{3/2} v$ identifies each fibre with the fixed curve $v^2 = u^3 + au + b$, so every fibre is isomorphic and the classifying map is constant.
-The family is not $E \times T$: its class in $H^1(T, \mu_2)$ is the squaring cover of $\mathbf{G}_m$, which is nontrivial.
+After the étale cover $T'\to T$ given by $s^2=t$, the substitution
+$$
+x=s^2u,\qquad y=s^3v
+$$
+identifies $\mathcal E_{T'}$ with $E\times T'$. Thus every geometric fibre is isomorphic to $E$, while the family over $T$ is the nontrivial quadratic twist corresponding to the class of the cover $s^2=t$ in $H^1_{\acute{e}tale}(T,\mu_2)$.
 The $\mu_2$ here is $\pm 1 \subseteq \Aut(E, p_0)$, so the example is powered by exactly the automorphism that the moduli problem forgets.
 
 The same failure persists for every $g \geq 2$ even though a general curve of genus $g \geq 3$ has no nontrivial automorphisms: the hyperelliptic locus is nonempty in every genus and every curve on it carries the hyperelliptic involution.
