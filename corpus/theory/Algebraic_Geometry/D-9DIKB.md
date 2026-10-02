@@ -25,6 +25,8 @@ prompts:
 ::: {.definition title="Irreducible"}
 A nonempty topological space is \dfn{irreducible} if it is not the union of two proper closed subsets.
 Equivalently, any two nonempty open subsets meet.
+
+An \dfn{irreducible component} of a topological space $X$ is a maximal irreducible closed subset of $X$.
 :::
 
 ::: {.definition title="Noetherian"}
