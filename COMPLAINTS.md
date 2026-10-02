@@ -729,6 +729,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKS13-3B treats $k\neq0$ and $k=0$ separately and proves convergence
   of the resulting Fourier series in both cases.
 
+### Duplicate Burnside lemma cards C-CM7ZS and C-HE5SL
+
+- **Object and need:** `C-CM7ZS` and `C-HE5SL` in
+  `corpus/theory/Algebra`. The copy-policy pass must preserve one canonical
+  statement rather than two intrinsic cards for the same mathematics
+  (`CARD-04`, `SOURCE-02`).
+- **Observed evidence:** both complete cards have the title `Burnside's
+  lemma`, the same hypotheses (a finite group acting on a finite set), the
+  same fixed-point notation, and the same orbit-count formula. Before repair,
+  `C-CM7ZS` also declared itself `variant-of: C-HE5SL`. The wiki references
+  `C-HE5SL`; the only other reader-facing reference to `C-CM7ZS` was the
+  algebra-guide publication list.
+- **Impact and owner:** retaining both cards gives two addresses for one
+  theorem and lets guide surfaces disagree about which one is canonical.
+  `C-HE5SL` is the existing wiki-facing owner; the algebra guide must point to
+  it and the duplicate card must be removed.
+- **Uncertainty:** none after reading both complete cards; there is no
+  mathematical or source-appearance distinction between them.
+- **Repair:** the same repair commit redirects `publications/algebra-guide.yaml`
+  to `C-HE5SL` and removes `C-CM7ZS`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
