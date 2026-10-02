@@ -28,3 +28,47 @@ Which of the following represents the unoriented incidence matrix for the graph 
 ::: {.remark}
 The source shows the graph in a figure that is not reproduced here.
 :::
+
+::: {.solution}
+<1>1. From the source figure, the five edges have endpoints
+$$
+e_1=\{v_1,v_4\},\quad
+e_2=\{v_1,v_2\},\quad
+e_3=\{v_2,v_3\},\quad
+e_4=\{v_3,v_4\},\quad
+e_5=\{v_1,v_3\}.
+$$
+
+::: {.proof}
+These incidences are read directly from the labeled graph: $e_1$ is the upper-left slanted edge, $e_2$ the top horizontal edge, $e_3$ the upper-right slanted edge, $e_4$ the bottom horizontal edge, and $e_5$ the vertical edge from $v_1$ to $v_3$.
+:::
+
+<1>2. Therefore the unoriented incidence matrix, with rows $v_1,v_2,v_3,v_4$ and columns $e_1,\ldots,e_5$, is
+$$
+\begin{bmatrix}
+1&1&0&0&1\\
+0&1&1&0&0\\
+0&0&1&1&1\\
+1&0&0&1&0
+\end{bmatrix}.
+$$
+
+::: {.proof}
+In an unoriented incidence matrix, the $(i,j)$ entry is $1$ exactly when $v_i$ is an endpoint of $e_j$. Applying this rule to the incidences in step <1>1 gives the displayed rows.
+:::
+
+<1>3. Hence the answer is
+$$
+\boxed{\text{(B)}}.
+$$
+
+::: {.proof}
+The matrix in step <1>2 is exactly choice (B).
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required incidence matrix.
+:::
+:::
