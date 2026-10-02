@@ -21,23 +21,53 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $C$ be a smooth projective curve of genus $0$ over a field $k$.
+Let $C$ be a smooth projective geometrically integral curve of genus $0$ over a field $k$.
 
 - If $C$ has a $k$-rational point, then $C \cong \PP^1_k$.
 
-- In general $C$ embeds as a smooth conic in $\PP^2_k$ by the anticanonical system $\abs{-K}$, which has degree $2$ and $\ell(-K) = 3$.
+- The anticanonical line bundle $\omega_C^{-1}$ has degree $2$ and
+$$
+h^0(C,\omega_C^{-1})=3.
+$$
+Its complete linear system defines a closed immersion
+$$
+C\hookrightarrow\PP^2_k
+$$
+whose image is a smooth plane conic.
 
-- Over $k = \bar{k}$, and over any finite field, the first case always holds.
+- If $k$ is algebraically closed or finite, then $C(k)\ne\varnothing$, so $C\cong\PP^1_k$.
 :::
 
-::: {.remark}
-Riemann--Roch does the work.
-With $g = 0$ and $\deg D = 1$, $\ell(D) = 2$ and $\ell(K - D) = 0$ since $\deg(K-D) = -3 < 0$, so a degree-one divisor gives a degree-one map to $\PP^1$, which is an isomorphism.
-A $k$-point is exactly such a divisor, and that is where the rationality hypothesis enters.
+::: {.proof}
+Suppose first that $p\in C(k)$. Riemann--Roch gives
+$$
+h^0(C,\OO_C(p))=2,
+$$
+because $\deg(K_C-p)=-3$. After base change to $\bar k$, for every $q\in C(\bar k)$, Riemann--Roch applied to the degree-zero divisor $p-q$ gives
+$$
+h^0\bigl(C_{\bar k},\OO(p-q)\bigr)=1.
+$$
+Thus the two-dimensional linear system $\abs p$ has no base point and defines a nonconstant morphism to $\PP^1_{\bar k}$. Its degree is $\deg p=1$, so it is an isomorphism. Hence the morphism
+$$
+C\longrightarrow\PP^1_k
+$$
+defined by $\abs p$ becomes an isomorphism after the faithfully flat extension $k\subseteq\bar k$, and is therefore itself an isomorphism.
 
-Without a rational point the anticanonical divisor still has degree $2$ and $\ell = 3$, giving the conic.
-The conic $x^2 + y^2 + z^2 = 0$ over $\RR$ is the standard curve of genus zero that is not $\PP^1$.
+For the anticanonical system, Riemann--Roch gives
+$$
+h^0(C,\omega_C^{-1})
+=\deg(\omega_C^{-1})+1
+=3,
+$$
+since $\deg\omega_C^{-1}=2$ and $H^0(C,\omega_C^{\otimes2})=0$. After base change to $\bar k$, the line bundle becomes $\OO_{\PP^1}(2)$, whose complete linear system is the quadratic Veronese embedding into $\PP^2_{\bar k}$. Closed immersion descends under faithfully flat base change, so the anticanonical morphism embeds $C$ in $\PP^2_k$. Its image has degree $2$, hence is a smooth conic.
 
-Over a finite field the second case cannot occur: a smooth conic over $\FF_q$ always has a rational point by the Chevalley--Warning theorem, so every genus-zero curve there is $\PP^1$.
-Thus over a finite field every smooth projective genus-zero curve has a rational point and is isomorphic to $\PP^1$.
+If $k$ is algebraically closed, $C$ has a $k$-point. If $k=\FF_q$, the anticanonical conic is defined by one homogeneous quadratic equation in three variables. Chevalley--Warning gives a nonzero solution over $\FF_q$, hence a $k$-rational point on $C$.
+:::
+
+::: {.example}
+The smooth conic
+$$
+x^2+y^2+z^2=0
+$$
+over $\RR$ has no real point, so it is a genus-zero curve that is not isomorphic to $\PP^1_\RR$.
 :::
