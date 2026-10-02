@@ -17,7 +17,12 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-10-02
-  note: Independently reviewed the supplied Berkeley Spring 2017 triangular-splitting argument. The printed formula omits the final factor of $R$: multiplication gives $ER^{-1}=\operatorname{uph}(R^{-T}AR^{-1})$, hence $E=\operatorname{uph}(R^{-T}AR^{-1})R$. The solution below corrects this and gives the entries explicitly.
+  note: >-
+    Independently reviewed the supplied Berkeley Spring 2017 triangular-splitting argument.
+    The printed formula omits the final factor of $R$: multiplication gives
+    $ER^{-1}=\operatorname{uph}(R^{-T}AR^{-1})$, hence
+    $E=\operatorname{uph}(R^{-T}AR^{-1})R$. The solution below corrects this
+    and gives the entries explicitly.
 - event: solution-written
   by: chatgpt
   date: 2026-10-02
