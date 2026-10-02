@@ -28,3 +28,93 @@ Determine the image under $f$ of each of the following:
 
 4. the imaginary axis.
 :::
+
+::: {.solution}
+Regard \(f\) as the Möbius transformation of the Riemann sphere \(\mathbb C^*=\mathbb C\cup\{\infty\}\), so that \(f(-1)=\infty\) and \(f(\infty)=1\). For \(w\ne1\), solving \(w=f(z)\) gives
+\[
+z=\frac{1+w}{1-w}.
+\]
+
+<1>1. The image of the extended real axis is the extended real axis:
+\[
+\boxed{f(\mathbb R\cup\{\infty\})=\mathbb R\cup\{\infty\}}.
+\]
+
+::: {.proof}
+If \(z\in\mathbb R\setminus\{-1\}\), then \((z-1)/(z+1)\in\mathbb R\). Also \(f(-1)=\infty\) and \(f(\infty)=1\). Conversely, if \(w\in\mathbb R\setminus\{1\}\), then the inverse formula gives \(z=(1+w)/(1-w)\in\mathbb R\). Thus the image is exactly the extended real axis.
+:::
+
+<1>2. The image of \(|z|=2\) is the circle
+\[
+\boxed{\left|w-\frac53\right|=\frac43}.
+\]
+
+::: {.proof}
+For \(w=f(z)\), the inverse formula gives
+\[
+|z|=2
+\quad\Longleftrightarrow\quad
+|1+w|=2|1-w|.
+\]
+Writing \(w=u+iv\) and squaring gives
+\[
+(1+u)^2+v^2=4\bigl((1-u)^2+v^2\bigr),
+\]
+which rearranges to
+\[
+\left(u-\frac53\right)^2+v^2=\frac{16}{9}.
+\]
+The point \(w=1\) does not satisfy this equation, so the inverse formula proves both inclusions.
+:::
+
+<1>3. The image of \(|z|=1\) is the extended imaginary axis:
+\[
+\boxed{f(\{|z|=1\})=i\mathbb R\cup\{\infty\}}.
+\]
+
+::: {.proof}
+For finite \(w\ne1\),
+\[
+|z|=1
+\quad\Longleftrightarrow\quad
+|1+w|=|1-w|.
+\]
+If \(w=u+iv\), squaring this equality gives
+\[
+(1+u)^2+v^2=(1-u)^2+v^2,
+\]
+hence \(u=0\). Conversely, every finite \(w\) with \(\operatorname{Re}w=0\) satisfies the equality and therefore has a preimage on \(|z|=1\). Finally \(z=-1\) lies on the source circle and maps to \(\infty\).
+:::
+
+<1>4. The image of the extended imaginary axis is the unit circle:
+\[
+\boxed{f(i\mathbb R\cup\{\infty\})=\{|w|=1\}}.
+\]
+
+::: {.proof}
+If \(z=iy\) with \(y\in\mathbb R\), then
+\[
+|f(iy)|
+=\frac{|iy-1|}{|iy+1|}
+=1.
+\]
+Also \(f(\infty)=1\), so the image is contained in the unit circle. Conversely, if \(|w|=1\) and \(w\ne1\), then
+\[
+\overline{w}=\frac1w
+\]
+and the inverse formula satisfies
+\[
+\overline{\frac{1+w}{1-w}}
+=\frac{1+\overline w}{1-\overline w}
+=\frac{w+1}{w-1}
+=-\frac{1+w}{1-w}.
+\]
+Thus its real part is zero, so its preimage lies on the imaginary axis. The remaining point \(w=1\) is the image of \(z=\infty\).
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 determine all four requested images.
+:::
+:::
