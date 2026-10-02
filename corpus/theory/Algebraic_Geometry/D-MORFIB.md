@@ -24,7 +24,7 @@ prompts:
 ::: {.definition title="Fibre"}
 For $f : X \to Y$ and $y \in Y$ with residue field $\kappa(y) = \OO_{Y,y}/\mfm_y$, the \dfn{fibre} is
 $$
-X_y \da \fiberprod{X}{Y}{\Spec \kappa(y)} .
+X_y \coloneqq \fiberprod{X}{Y}{\Spec \kappa(y)} .
 $$
 :::
 
@@ -45,5 +45,5 @@ Base change to $\Spec\OO_{Y,y}$ instead retains the part of the family over the 
 
 The underlying space of $X_y$ is homeomorphic to $f^{-1}(y)$, while the scheme structure records multiplicity and residue-field information.
 For $\Spec \ZZ[i] \to \Spec \ZZ$, the fibres are two points, one point, or a fat point according as $p$ splits, is inert, or ramifies, and the length is $2$ in every case.
-That constancy is flatness, and it is the model for every statement that a numerical invariant is constant in a flat family.
+Indeed $\ZZ[i]$ is a free $\ZZ$-module of rank $2$. More generally, if $f\colon X\to Y$ is finite locally free of constant rank $r$, then every fibre is a finite $\kappa(y)$-scheme of length $r$.
 :::
