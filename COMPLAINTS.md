@@ -1823,6 +1823,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   points and classifies them by the sign of `$f'$`; retain this entry as
   source-solution errata.
 
+### GRE Chapter 2 Problem 32 omitted the figure that defines the region
+
+- **Object and need:** `P-GRECH2-32` in `SRC-GRE-MATH-CH2-REVIEW`. The problem
+  asks for the polar-area expression of a shaded region bounded by two circles,
+  so the circle equations and the shaded side of their boundaries must be
+  present on the card.
+- **Observed evidence:** both checked Markdown extractions refer to an image
+  but do not retain it, and the card consequently said only “pictured below”
+  while displaying no figure. Direct inspection of page 110 of the retained
+  book PDF (printed page 100) shows the circles labeled
+  `$r=\sqrt3\sin\theta$` and `$r=3\cos\theta$`, with their common lens in the
+  first quadrant shaded.
+- **Impact and owner:** without the figure, the card did not determine which
+  region bounded by the two circles was intended. The mathematical data are
+  recoverable exactly from the retained source page and belong in the problem
+  statement rather than in a missing image reference.
+- **Uncertainty:** none after direct inspection of the retained PDF page.
+- **Repair:** `P-GRECH2-32` now states the two polar equations and identifies
+  their common first-quadrant region in text; its solution derives the source
+  answer from those data.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
