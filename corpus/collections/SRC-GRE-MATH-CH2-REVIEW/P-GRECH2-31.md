@@ -24,3 +24,47 @@ Calculate the area of the region in the first quadrant bounded by the graphs of 
 (D) $\frac{16}{3}$
 (E) $4$
 :::
+
+::: {.solution}
+<1>1. The relevant intersection points occur at $x=1$ and $x=2$.
+
+::: {.proof}
+The line $y=8x$ meets $y=8$ when $8x=8$, hence at $x=1$. The curve $y=x^3$ meets $y=8$ when $x^3=8$, hence at $x=2$. The graphs $y=8x$ and $y=x^3$ meet at $x=0$ and at $x=\sqrt8>2$, so the first-quadrant bounded region begins at the origin and uses the horizontal line as its upper boundary after $x=1$.
+:::
+
+<1>2. The area is
+$$
+\int_0^1(8x-x^3)\,dx+\int_1^2(8-x^3)\,dx.
+$$
+
+::: {.proof}
+For $0\le x\le1$, the upper boundary is $y=8x$ and the lower boundary is $y=x^3$. For $1\le x\le2$, the upper boundary is $y=8$ and the lower boundary remains $y=x^3$. Thus vertical slices give the displayed sum.
+:::
+
+<1>3. The area equals
+$$
+\boxed{8},
+$$
+so the answer is (B).
+
+::: {.proof}
+Compute the two integrals from step <1>2:
+$$
+\begin{aligned}
+\int_0^1(8x-x^3)\,dx
+&=\left[4x^2-\frac{x^4}{4}\right]_0^1
+=\frac{15}{4},\\
+\int_1^2(8-x^3)\,dx
+&=\left[8x-\frac{x^4}{4}\right]_1^2
+=\frac{17}{4}.
+\end{aligned}
+$$
+Their sum is $32/4=8$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested area and corresponding choice.
+:::
+:::
