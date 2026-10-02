@@ -30,3 +30,73 @@ III. $45$
 (D) II and III only
 (E) I, II, and III
 :::
+
+::: {.solution}
+<1>1. The only possible multisets of team sizes are
+$$
+\{2,2,2\},\qquad \{3,2,1\},\qquad \{4,1,1\}.
+$$
+
+::: {.proof}
+The three team sizes are positive integers whose sum is $6$. Writing them in nonincreasing order, the only partitions of $6$ into exactly three positive parts are
+$$
+2+2+2,
+\qquad
+3+2+1,
+\qquad
+4+1+1.
+$$
+:::
+
+<1>2. If the three task-teams have sizes $2,2,2$, then there are
+$$
+\binom62\binom42\binom22=90
+$$
+assignments.
+
+::: {.proof}
+Choose the two students for the first task, then two of the remaining four for the second task; the final two students form the team for the third task. The tasks are distinct, so these choices determine an assignment uniquely.
+:::
+
+<1>3. If the task-teams have sizes $3,2,1$ in some fixed order, then there are
+$$
+\binom63\binom32\binom11=60
+$$
+assignments.
+
+::: {.proof}
+Choose the three students for the task receiving the $3$-person team and then two of the remaining three for the task receiving the $2$-person team. The last student is forced onto the remaining task.
+:::
+
+<1>4. If the task-teams have sizes $4,1,1$ in some fixed order, then there are
+$$
+\binom64\binom21\binom11=30
+$$
+assignments.
+
+::: {.proof}
+Choose the four students for the $4$-person team and then one of the remaining two for the first singleton task; the final student is forced onto the last task.
+:::
+
+<1>5. Hence among the listed numbers, exactly I and II are possible.
+
+::: {.proof}
+Steps <1>2--<1>4 show that the possible counts are $90$, $60$, and $30$. Thus I and II occur, while III, which is $45$, does not.
+:::
+
+<1>6. Therefore the answer is
+$$
+\boxed{\text{I and II only}},
+$$
+which is choice (B).
+
+::: {.proof}
+This is the conclusion of step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 gives the required choice.
+:::
+:::
