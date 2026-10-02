@@ -1870,3 +1870,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none after reading the complete proposition.
 - **Repair:** retitle the card “Correspondence and third isomorphism theorems
   for quotient rings”; the existing slogan already names both components.
+
+### PR-JLDJ6 defined the Möbius function inside a cyclotomic proposition
+
+- **Object and need:** `PR-JLDJ6` in `corpus/theory/Algebra`. Its cyclotomic
+  formula introduced the Möbius function by an inline three-case definition.
+- **Observed evidence:** no Möbius-function definition card existed anywhere
+  in the corpus, while the proposition uses `\mu` as named mathematical data.
+- **Impact and owner:** the function was defined in running proposition copy
+  rather than at an addressable definition, and the recursive formula wrote
+  polynomial division as multiplication by an untyped inverse.
+- **Uncertainty:** none after searching the full corpus and wiki for the
+  number-theoretic Möbius function.
+- **Repair:** add `D-6V3PZ`, which defines the Möbius function and records its
+  basic divisor-sum identity; link it from `PR-JLDJ6` and write the recursive
+  cyclotomic formula as an explicit quotient.

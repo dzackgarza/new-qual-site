@@ -21,21 +21,14 @@ Then
 $$
 x^{n}-1=\prod_{\substack{d \divides n \\ d > 0}} \Phi_{d}(x),
 \qquad\text{so}\qquad
-\Phi_n(x) = \qty{x^n-1} \qty{\prod_{\substack{d \divides n \\ 0 < d < n}} \Phi_{d}(x)}\inv,
+\Phi_n(x) =
+\frac{x^n-1}{\displaystyle\prod_{\substack{d \divides n \\ 0 < d < n}} \Phi_{d}(x)},
 $$
 and
 $$
 \Phi_{n}(x)=\prod_{\substack{ d \divides n \\  d > 0} }\left(x^{d}-1\right)^{\mu\left(n/d\right)},
 $$
-where $\mu$ is the Möbius function:
-$$
-\mu(m) =
-\begin{cases}
-1 & \text{if } m = 1, \\
-(-1)^{k} & \text{if } m \text{ is a product of } k \text{ distinct primes}, \\
-0 & \text{if } p^2 \divides m \text{ for some prime } p.
-\end{cases}
-$$
+where $\mu$ is the [[D-6V3PZ|Möbius function]].
 :::
 
 ::: {.remark}
