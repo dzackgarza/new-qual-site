@@ -21,5 +21,4 @@ The extension $L/k$ is \dfn{normal} if every [[D-BVMTZ|irreducible]] polynomial 
 
 ::: {.remark}
 Equivalently, for every $\alpha\in L$, all roots of the minimal polynomial of $\alpha$ over $k$ in an algebraic closure of $L$, the conjugates of $\alpha$ over $k$, lie in $L$.
-Thus an irreducible $f\in k[x]$ either splits in $L[x]$ or has no root in $L$.
 :::

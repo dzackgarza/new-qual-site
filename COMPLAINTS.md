@@ -1446,9 +1446,11 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Impact and owner:** the flashcard creates a second definition and splits
   dependencies for a basic Galois-theory concept.
 - **Uncertainty:** none after reading both complete cards.
-- **Repair:** the same repair commit moves both review prompts to `D-LZTAK`,
-  redirects the remaining proposition, removes duplicate reader-facing
-  references, and deletes `FD-JJFZ3`.
+- **Repair:** `D-LZTAK` remains the sole definition card. `FD-JJFZ3` is
+  preserved as the distinct corollary that an irreducible polynomial over the
+  base either has no root in a normal extension or splits completely there;
+  the duplicated sentence is removed from `D-LZTAK`, and the remaining
+  definition link on `PR-MHOVR` is redirected to `D-LZTAK`.
 
 ### Duplicate characteristic cards D-JNCUB and FD-LXZIW
 
