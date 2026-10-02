@@ -1637,6 +1637,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   consequence onto `T-JEZZY`, moves the review prompt there, redirects all
   live references, and deletes `FT-OXN3Y`.
 
+### PR-25FLW's title was broader than its theorem statement
+
+- **Object and need:** `PR-25FLW`, “Algebraic extensions of perfect fields are
+  separable.” The body should state the perfect-field theorem named by the
+  title.
+- **Observed evidence:** the proposition assumed only “characteristic zero or
+  finite,” then immediately proved the result by observing that such a field is
+  perfect. The same proof works for every perfect field by definition.
+- **Impact and owner:** the title promised the general theorem while the body
+  exposed only two sufficient subclasses.
+- **Uncertainty:** none; `D-KQFIV` defines perfectness by separability of all
+  irreducible polynomials.
+- **Repair:** the same repair commit assumes `$k$` perfect, adds the canonical
+  dependency, and retains characteristic-zero and finite fields as explicit
+  examples.
+
 ### Duplicate reduced-ring card FF-U4FHF
 
 - **Object and need:** `D-PQHHJ` and `FF-U4FHF` in
