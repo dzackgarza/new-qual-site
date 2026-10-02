@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-A field $k$ is [[D-KQFIV|perfect]], that is, every irreducible polynomial in $k[x]$ is separable, if and only if either
+A field $k$ is [[FD-YYLYR|perfect]], that is, every irreducible polynomial in $k[x]$ is separable, if and only if either
 
 - $\ch k = 0$, or
 
