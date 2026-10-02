@@ -25,3 +25,51 @@ A square matrix $A$ is said to be symmetric if it equals its own transpose: $A =
 (D) $\frac{1}{2}n(n + 1)$
 (E) $\frac{1}{2}n!$
 :::
+
+::: {.solution}
+For $1\le i,j\le n$, let $E_{ij}$ denote the matrix with a $1$ in position $(i,j)$ and zeros elsewhere.
+
+<1>1. The set
+$$
+\mathcal B=
+\{E_{ii}:1\le i\le n\}
+\cup
+\{E_{ij}+E_{ji}:1\le i<j\le n\}
+$$
+is a basis of $S_{n\times n}(\RR)$.
+
+::: {.proof}
+Every matrix in $\mathcal B$ is symmetric. If $A=(a_{ij})$ is symmetric, then
+$$
+A=\sum_{i=1}^n a_{ii}E_{ii}
++\sum_{1\le i<j\le n} a_{ij}(E_{ij}+E_{ji}),
+$$
+so $\mathcal B$ spans the symmetric matrices. In a linear combination of elements of $\mathcal B$, the coefficient of $E_{ii}$ is read from the $(i,i)$ entry and the coefficient of $E_{ij}+E_{ji}$ is read from the $(i,j)$ entry for $i<j$. Hence a zero linear combination has all coefficients zero, so $\mathcal B$ is linearly independent.
+:::
+
+<1>2. The set $\mathcal B$ has
+$$
+n+\binom n2=\frac{n(n+1)}2
+$$
+elements.
+
+::: {.proof}
+There are $n$ diagonal matrices $E_{ii}$ and one matrix $E_{ij}+E_{ji}$ for each unordered pair of distinct indices, of which there are $\binom n2=n(n-1)/2$.
+:::
+
+<1>3. Therefore
+$$
+\boxed{\dim S_{n\times n}(\RR)=\frac12 n(n+1)},
+$$
+so the answer is (D).
+
+::: {.proof}
+By step <1>1, $\mathcal B$ is a basis, and by step <1>2 it has $n(n+1)/2$ elements. The dimension equals the cardinality of a basis.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested dimension.
+:::
+:::
