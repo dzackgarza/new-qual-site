@@ -17,6 +17,8 @@ relations:
 - kind: uses
   target: PR-Y5S7V
 - kind: related-to
+  target: PR-CRVDEGBD
+- kind: related-to
   target: T-D8TUX
 review: draft
 prompts:
@@ -25,7 +27,7 @@ prompts:
 ---
 
 ::: {.proposition}
-Let $D$ be a divisor on a smooth projective curve $X$ of genus $g$ over $k = \bar{k}$.
+Let $D$ be a divisor on a smooth projective curve $X$ of genus $g$ over an algebraically closed field $k$.
 
 - $D$ is ample if and only if $\deg D > 0$.
 
@@ -35,9 +37,18 @@ Let $D$ be a divisor on a smooth projective curve $X$ of genus $g$ over $k = \ba
 :::
 
 ::: {.remark}
-On a curve ampleness collapses to a single integer, and this is the cleanest place to see the ample-against-very-ample distinction: positivity of the degree is ample, but very ampleness needs the degree to clear a genus-dependent threshold.
-Raising the degree past $2g+1$ is exactly what taking powers achieves, which is the definition of ample in this case.
+If $\deg D\geq2g$, then for every $p\in X(k)$, Riemann--Roch gives
+$$
+\ell(D)-\ell(D-p)=1,
+$$
+so $\abs D$ is base-point free.
+If $\deg D\geq2g+1$, then for every effective divisor $E$ of degree $2$,
+$$
+\ell(D)-\ell(D-E)=2,
+$$
+so sections separate points and tangent directions and $D$ is very ample.
 
-The thresholds are what Riemann--Roch gives: once $\deg D > 2g-2$ the correction term vanishes and $h^0$ is computable, so the conditions for base points and for separation become arithmetic.
-Both bounds are sharp on an elliptic curve, where $g = 1$ and degree $2$ gives the base-point-free double cover of $\PP^1$ while degree $3$ first embeds.
+If $\deg D>0$, then $nD$ has degree at least $2g+1$ for all sufficiently large $n$, so $D$ is ample. Conversely, if $D$ is ample, some $nD$ is very ample and therefore has positive degree.
+
+For an elliptic curve, degree $2$ is base-point free but not very ample, while every divisor of degree $3$ is very ample. Thus the two sufficient bounds are attained in genus $1$.
 :::
