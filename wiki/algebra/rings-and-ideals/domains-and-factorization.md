@@ -73,8 +73,6 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 
 [[D-INULL]]
 
-[[FD-25SUQ]]
-
 [[D-NKRGN]]
 
 [[FD-GXXBV]]

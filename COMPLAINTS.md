@@ -957,6 +957,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   converts `D-3T6O2` to the action/homomorphism proposition, and redirects
   definitional links to `D-WYC7C`.
 
+### Duplicate UFD cards D-INULL and FD-25SUQ
+
+- **Object and need:** `D-INULL` and `FD-25SUQ` in
+  `corpus/theory/Algebra`. Both cards gave the full definition of a unique
+  factorization domain, including existence and uniqueness up to order and
+  associates.
+- **Observed evidence:** the complete statements are mathematically identical;
+  `D-INULL` is the dependency used by the UFD theorems and polynomial-ring
+  material, while `FD-25SUQ` came from the flashcard migration. The wiki and
+  algebra guide displayed both adjacent to one another.
+- **Impact and owner:** the duplicate flashcard creates a second defining
+  occurrence and splits review/navigation without adding mathematics.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the flashcard review prompt to
+  `D-INULL`, removes duplicate reader-facing references, and deletes
+  `FD-25SUQ`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
