@@ -11,18 +11,16 @@ classification:
   - Separability
   - Field Extensions
   - Fields
-relations:
-- kind: uses
-  target: D-KQFIV
+relations: []
 review: draft
 ---
 
 ::: {.proposition}
-Let $k$ be a [[D-KQFIV|perfect field]].
+Let $k$ be a field with $\ch k=0$ or $k$ finite.
 Then every algebraic extension $L/k$ is [[D-JGYLA|separable]].
-In particular, this holds when $k$ has characteristic zero or when $k$ is finite.
 :::
 
 ::: {.proof}
+Such a field is [[FD-YYLYR|perfect]].
 For $\alpha\in L$, the minimal polynomial of $\alpha$ over $k$ is irreducible in $k[x]$, hence separable, so $\alpha$ is separable over $k$.
 :::
