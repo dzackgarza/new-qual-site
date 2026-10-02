@@ -35,3 +35,81 @@ is $(x, y, z) = (a, b, a)$. If $a$ is NOT an integer, what is the numerical valu
 (D) $\frac{1}{2}$
 (E) $1$
 :::
+
+::: {.solution}
+<1>1. Substituting $(x,y,z)=(a,b,a)$ into the third equation gives
+$$
+b=2a^2-1.
+$$
+
+::: {.proof}
+The third equation becomes
+$$
+a(a)-b+a(a)=1,
+$$
+so
+$$
+2a^2-b=1.
+$$
+Solving for $b$ gives the displayed formula.
+:::
+
+<1>2. The parameter $a$ satisfies
+$$
+(a^2-1)(2a+1)=0.
+$$
+
+::: {.proof}
+The first equation after substitution is
+$$
+a^2+ab-a=1.
+$$
+Using step <1>1,
+$$
+a^2+a(2a^2-1)-a=1,
+$$
+so
+$$
+2a^3+a^2-2a-1=0.
+$$
+Factoring gives
+$$
+2a^3+a^2-2a-1
+=(a^2-1)(2a+1).
+$$
+:::
+
+<1>3. Since $a$ is not an integer,
+$$
+a=-\frac12
+\qquad\text{and}\qquad
+b=-\frac12.
+$$
+
+::: {.proof}
+Step <1>2 gives
+$$
+a\in\left\{1,-1,-\frac12\right\}.
+$$
+The first two values are integers, so the hypothesis forces $a=-1/2$. Step <1>1 then gives
+$$
+b=2\left(\frac14\right)-1=-\frac12.
+$$
+:::
+
+<1>4. Therefore
+$$
+\boxed{a+b=-1},
+$$
+so the answer is (B).
+
+::: {.proof}
+Add the two values in step <1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested numerical value and corresponding choice.
+:::
+:::
