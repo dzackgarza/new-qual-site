@@ -528,7 +528,6 @@ sections:
     items:
       - ref: FD-J3HIA
       - ref: FD-3V3ZW
-      - ref: FD-QPNDA
       - ref: FD-NS5RF
       - ref: FD-2EVYB
       - ref: T-NGBVC

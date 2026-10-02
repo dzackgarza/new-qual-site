@@ -1354,6 +1354,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `$\alpha$`, and the polynomial/rational-function distinction in the
   transcendental case.
 
+### Duplicate generated-subfield card FD-QPNDA
+
+- **Object and need:** `FD-J3HIA` and `FD-QPNDA` in
+  `corpus/theory/Algebra`. Both define `$K(\alpha)$` as the smallest subfield
+  of an ambient extension containing `$K$` and `$\alpha$`.
+- **Observed evidence:** the definition bodies are identical. `FD-QPNDA`
+  declared itself `variant-of: FD-J3HIA` and also repeated the already-false
+  `variant-of: FD-3V3ZW` edge to the generated subring `$K[\alpha]$`. The wiki
+  and algebra guide exposed both generated-subfield cards.
+- **Impact and owner:** the duplicate adds no mathematics and reintroduces the
+  subfield/subring conflation repaired on `FD-J3HIA`.
+- **Uncertainty:** none after reading both complete generated-subfield cards.
+- **Repair:** the same repair commit moves the additional review prompt to
+  `FD-J3HIA`, removes duplicate reader-facing references, and deletes
+  `FD-QPNDA`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
