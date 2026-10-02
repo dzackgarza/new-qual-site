@@ -1406,6 +1406,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `D-JQNJQ`, removes duplicate reader-facing references, and deletes
   `FD-H764S`.
 
+### Duplicate perfect-field cards D-KQFIV and FD-YYLYR
+
+- **Object and need:** `D-KQFIV` and `FD-YYLYR` in
+  `corpus/theory/Algebra`. Both define perfect fields and prove the Frobenius
+  criterion in positive characteristic.
+- **Observed evidence:** `D-KQFIV` already gives the equivalence with
+  separability of all irreducible polynomials and all finite extensions;
+  `FD-YYLYR` repeats the same argument and adds only the review prompt and the
+  finite-field consequence. Reader-facing links and three theory cards were
+  split between the two owners.
+- **Impact and owner:** the duplicate split the canonical perfect-field link
+  across the corpus without adding distinct mathematics.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the prompt and finite-field remark
+  to `D-KQFIV`, redirects all live theory references, removes duplicate
+  reader-facing entries, and deletes `FD-YYLYR`.
+
 ### Duplicate stabilizer card FD-IGEOR
 
 - **Object and need:** `D-WYC7C` and `FD-IGEOR` in

@@ -21,6 +21,6 @@ Then every algebraic extension $L/k$ is [[D-JGYLA|separable]].
 :::
 
 ::: {.proof}
-Such a field is [[FD-YYLYR|perfect]].
+Such a field is [[D-KQFIV|perfect]].
 For $\alpha\in L$, the minimal polynomial of $\alpha$ over $k$ is irreducible in $k[x]$, hence separable, so $\alpha$ is separable over $k$.
 :::

@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $k$ be a [[FD-YYLYR|perfect field]], let $V$ be a finite-dimensional $k$-vector space, and let $T\colon V\to V$ be $k$-linear.
+Let $k$ be a [[D-KQFIV|perfect field]], let $V$ be a finite-dimensional $k$-vector space, and let $T\colon V\to V$ be $k$-linear.
 Then there are unique $k$-linear maps $S,N\colon V\to V$ with
 $$
 T=S+N,\qquad SN=NS,

@@ -65,8 +65,6 @@ A field $k$ is [[D-KQFIV|perfect]] if every irreducible polynomial over $k$ is s
 
 [[D-KQFIV]]
 
-[[FD-YYLYR]]
-
 [[FD-3GZPO]]
 
 [[PR-IK6AM]]
