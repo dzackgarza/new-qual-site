@@ -22,7 +22,10 @@ prompts:
 ---
 
 ::: {.definition}
-For $f: X \to Y$, the functor $f_*$ is left exact; set $R^i f_* \mcf \da R^i(f_*)(\mcf)$.
+For $f\colon X \to Y$, the functor $f_*$ is left exact. The \dfn{$i$-th higher direct image} of a sheaf $\mcf$ is
+$$
+R^i f_*\mcf\coloneqq R^i(f_*)(\mcf).
+$$
 Equivalently, $R^i f_* \mcf$ is the sheafification of
 $$
 V \mapsto H^i\qty{f\inv(V), \restrictionof{\mcf}{f\inv(V)}} .
@@ -38,9 +41,6 @@ Let $f \colon X \to Y$ be a morphism of schemes.
 :::
 
 ::: {.remark}
-Read it as the cohomology of $\mcf$ along the fibres of $f$: a sheaf on the base recording how the cohomology of the fibres varies.
-Two computations pin it down.
-
 If $Y = \Spec A$ is affine, $f$ is quasicompact and separated, and $\mcf$ is quasicoherent, then each $R^qf_*\mcf$ is quasicoherent; affine vanishing in the Leray spectral sequence gives
 $$
 R^i f_* \mcf \cong \widetilde{H^i(X,\mcf)}
