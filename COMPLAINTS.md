@@ -2010,3 +2010,26 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-GRECH2-38` handles $n=1$ separately and derives
   $\int_e^\infty dx/(x(\log x)^n)=1/(n-1)$ for the convergent range; the
   external source is left unchanged.
+
+### GRE Chapter 2 question 42 asks for the wrong extremum
+
+- **Object and need:** `P-GRECH2-42` and Chapter 2 review question 42 in
+  `Cracking the GRE Mathematics Subject Test`.
+- **Observed evidence:** the source asks for the *smallest* $b$ such that every
+  $0\le a<b$ gives convergence, while its Chapter 8 solution derives
+  convergence for $0\le a<4$ and selects (E), $b=4$. Every positive $b\le4$
+  therefore satisfies the literal implication, so $4$ is not its smallest
+  solution.
+- **Impact and owner:** the source problem is mathematically ill-posed as a
+  threshold question. Among the listed choices, (A), $b=1$, satisfies the
+  literal request; the supplied answer (E) is the largest convergence
+  threshold.
+- **Expected result:** preserve the source wording but make the authored
+  solution distinguish the literal statement from the intended maximal
+  threshold.
+- **Uncertainty:** none; the question wording agrees in both source
+  extractions, and the source's own ratio-test solution explicitly selects
+  $b=4$ as the threshold.
+- **Repair:** `P-GRECH2-42` proves the convergence range, proves that $4$ is
+  the largest threshold, and records why the literal word “smallest” cannot
+  yield the source's answer.

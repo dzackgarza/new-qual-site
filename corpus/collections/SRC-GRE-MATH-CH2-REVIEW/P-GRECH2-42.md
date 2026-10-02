@@ -26,3 +26,57 @@ If $0 \le a < b$, then the series $\sum_{n=1}^{\infty} \frac{(n!)^2 a^n}{(2n)!}$
 (D) $\sqrt{2}$
 (E) $4$
 :::
+
+::: {.solution}
+<1>1. For
+$$
+c_n(a)=\frac{(n!)^2a^n}{(2n)!},
+$$
+the ratio of consecutive terms satisfies
+$$
+\lim_{n\to\infty}\frac{c_{n+1}(a)}{c_n(a)}=\frac a4
+$$
+for $a>0$.
+
+::: {.proof}
+Direct cancellation gives
+$$
+\frac{c_{n+1}(a)}{c_n(a)}
+=a\frac{(n+1)^2}{(2n+1)(2n+2)}.
+$$
+Dividing numerator and denominator by $n^2$ and taking the limit gives $a/4$.
+:::
+
+<1>2. The series converges for every $0\le a<4$ and diverges for every $a>4$.
+
+::: {.proof}
+If $a=0$, every term is zero, so the series converges. If $0<a<4$, then the limit in step <1>1 is strictly less than $1$, so the ratio test gives convergence. If $a>4$, that limit is strictly greater than $1$, so the terms do not tend to zero and the series diverges.
+:::
+
+<1>3. The largest value of $b$ for which
+$$
+0\le a<b\quad\Longrightarrow\quad
+\sum_{n=1}^{\infty}\frac{(n!)^2a^n}{(2n)!}
+\text{ converges}
+$$
+is
+$$
+\boxed{b=4}.
+$$
+
+::: {.proof}
+Step <1>2 shows that $b=4$ has the stated property. If $b>4$, choose any $a$ with $4<a<b$; step <1>2 shows that the corresponding series diverges. Thus no $b>4$ has the property.
+:::
+
+<1>4. The source's word “smallest” makes the question false as a characterization of the threshold.
+
+::: {.proof}
+By step <1>2, every positive $b\le4$ also has the displayed implication, since $0\le a<b$ then forces $a<4$. Hence $4$ is not the smallest such positive $b$; among the listed choices, $1$ is smaller and also satisfies the implication. Without restricting $b$ to be positive, every $b\le0$ makes the implication vacuous. The source's supplied answer (E) therefore answers the mathematically intended largest-threshold question established in step <1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>3 and <1>4 determine both the convergence threshold and the defect in the literal wording.
+:::
+:::
