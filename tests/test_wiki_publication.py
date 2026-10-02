@@ -308,7 +308,7 @@ def test_a_path_to_an_unwritten_page_is_a_red_link(wiki_site: Path) -> None:
     links = LinkCollector()
     links.feed(html)
     assert "sylow.html" in [href for href, _, _ in links.links]
-    assert '<span class="qual-link-unwritten" title="Not yet written: Algebra/groups/transfer">Transfer</span>' in html
+    assert '<span class="qual-link-unwritten" title="Not yet written: Algebra/groups/transfer">Transfer</span>' in " ".join(html.split())
     assert not [href for href, _, _ in links.links if "transfer" in href]
 
 
