@@ -15,3 +15,48 @@ audit:
 ::: {.problem}
 Show that $\operatorname{GL}_n(\mathbb C)$ is path-connected.
 :::
+
+::: {.solution}
+<1>1. Under the coordinate identification
+$$
+M_n(\CC)\cong\CC^{n^2},
+$$
+the determinant is a polynomial function in $n^2$ complex variables.
+
+::: {.proof}
+For $A=(a_{ij})$, the Leibniz formula
+$$
+\det A
+=
+\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)
+\prod_{i=1}^n a_{i,\sigma(i)}
+$$
+is a polynomial in the matrix entries.
+:::
+
+<1>2. The singular matrices form the zero set of this polynomial, and therefore
+$$
+\operatorname{GL}_n(\CC)
+=
+\CC^{n^2}\setminus Z(\det).
+$$
+
+::: {.proof}
+A complex matrix is invertible if and only if its determinant is nonzero.
+:::
+
+<1>3. The space $\operatorname{GL}_n(\CC)$ is path-connected.
+
+::: {.proof}
+Theorem 9.5 in the source states that the complement of the zero set of any
+complex polynomial in $N$ variables is path-connected. Apply it with
+$N=n^2$ and the determinant polynomial from step <1>1, then use the
+identification in step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
+:::
