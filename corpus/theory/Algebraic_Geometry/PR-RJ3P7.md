@@ -16,6 +16,7 @@ relations:
   target: D-VKR54
 review: draft
 prompts:
+- What is the going up theorem?
 - What does the going up theorem mean in algebraic geometry?
 - What does going down mean geometrically?
 ---

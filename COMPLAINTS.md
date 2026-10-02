@@ -1503,6 +1503,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   nonzerodivisor corollary, links it to `PR-VARHT`, and redirects the
   height-theorem reference on `FF-CQSNC` to the canonical theorem card.
 
+### Duplicate lying-over/going-up cards FF-IBDAT and PR-RJ3P7
+
+- **Object and need:** `FF-IBDAT` and `PR-RJ3P7`. Both state lying over for
+  integral extensions and the going-up theorem for chains of prime ideals.
+- **Observed evidence:** the Algebra card is exactly the two algebraic clauses
+  already contained in the first theorem block of `PR-RJ3P7`; the latter also
+  proves closedness and states going down. The Algebra wiki and guide pointed
+  to `FF-IBDAT`, while the algebraic-geometry wiki pointed to `PR-RJ3P7`.
+- **Impact and owner:** one standard theorem had two intrinsic addresses split
+  by subject area, with no mathematical or source-appearance distinction.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the plain “What is going up?” prompt
+  to `PR-RJ3P7`, redirects the Algebra wiki and guide, and deletes
+  `FF-IBDAT`.
+
 ### Duplicate stabilizer card FD-IGEOR
 
 - **Object and need:** `D-WYC7C` and `FD-IGEOR` in
