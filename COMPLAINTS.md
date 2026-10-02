@@ -989,6 +989,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-QJ3QL`,
   removes the duplicate wiki entry, and deletes `FD-2A5XH`.
 
+### Duplicate indecomposable-module cards D-4HEUB and FD-2EUYX
+
+- **Object and need:** `D-4HEUB` and `FD-2EUYX` in
+  `corpus/theory/Algebra`. `D-4HEUB` already defines decomposable and
+  indecomposable modules; `FD-2EUYX` repeats the indecomposable definition.
+- **Observed evidence:** both complete statements say that a nonzero module is
+  indecomposable exactly when it cannot be written as a direct sum of two
+  nonzero submodules. The wiki and algebra guide displayed both adjacent to
+  one another.
+- **Impact and owner:** the flashcard duplicate adds no mathematics and creates
+  a second defining occurrence.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `D-4HEUB`,
+  removes duplicate reader-facing references, and deletes `FD-2EUYX`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card

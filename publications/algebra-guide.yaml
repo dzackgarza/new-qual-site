@@ -483,7 +483,6 @@ sections:
       - ref: D-4KM4P
       - ref: D-CYAJI
       - ref: D-4HEUB
-      - ref: FD-2EUYX
       - ref: FD-BVM37
   - slug: structure-theorem
     title: The structure theorem over a PID
