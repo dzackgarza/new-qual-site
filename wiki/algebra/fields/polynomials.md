@@ -19,7 +19,7 @@ A polynomial in $\ZZ[x]$ is primitive if the greatest common divisor of its coef
 
 [[D-BVMTZ]]
 
-[[FD-KPW3H]] [[FD-GHY34]]
+[[FD-KPW3H]]
 
 [[D-4VC6X]]
 

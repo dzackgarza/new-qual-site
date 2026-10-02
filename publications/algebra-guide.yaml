@@ -360,7 +360,6 @@ sections:
       - ref: FD-CI4NB
       - ref: FD-24RNF
       - ref: D-BVMTZ
-      - ref: FD-GHY34
       - ref: FT-2P5VV
       - ref: T-CF6S3
       - ref: D-4VC6X

@@ -1068,6 +1068,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit removes the duplicate wiki link and
   deletes `FD-R4K7Z`; `D-TO3IY` already carries the equivalent review prompt.
 
+### Duplicate irreducible-polynomial cards D-BVMTZ and FD-GHY34
+
+- **Object and need:** `D-BVMTZ` and `FD-GHY34` in
+  `corpus/theory/Algebra`. Both define irreducibility of a polynomial over a
+  field by absence of a factorization into two positive-degree factors.
+- **Observed evidence:** the definitions are equivalent; `FD-GHY34` adds only
+  the review prompt and the observation that degree-one polynomials are
+  irreducible. `D-BVMTZ` is the dependency used throughout Galois and
+  factorization theory. The wiki and algebra guide displayed the flashcard
+  beside the canonical card.
+- **Impact and owner:** the flashcard duplicates the defining occurrence while
+  its small useful remark can live on the canonical card.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the prompt and linear-polynomial
+  remark to `D-BVMTZ`, removes duplicate reader-facing references, and deletes
+  `FD-GHY34`.
+
 ### FD-6WSIA duplicated the separable-extension definition
 
 - **Object and need:** `D-JGYLA` and `FD-6WSIA` in
