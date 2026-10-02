@@ -1186,6 +1186,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   scopes its SNF remark to the field case, moves the review prompt there,
   removes duplicate reader-facing references, and deletes `FD-GOB47`.
 
+### Duplicate normal-extension cards D-LZTAK and FD-JJFZ3
+
+- **Object and need:** `D-LZTAK` and `FD-JJFZ3` in
+  `corpus/theory/Algebra`. Both define an algebraic extension to be normal
+  when every irreducible polynomial with one root in the extension splits
+  there.
+- **Observed evidence:** the complete definitions are equivalent. `D-LZTAK`
+  is the dependency used by Galois and splitting-field theory; `FD-JJFZ3` is
+  a migrated flashcard, and one proposition plus the wiki/guide still linked
+  to it.
+- **Impact and owner:** the flashcard creates a second definition and splits
+  dependencies for a basic Galois-theory concept.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves both review prompts to `D-LZTAK`,
+  redirects the remaining proposition, removes duplicate reader-facing
+  references, and deletes `FD-JJFZ3`.
+
 ### Duplicate Euclidean-domain cards D-NKRGN and FD-GXXBV
 
 - **Object and need:** `D-NKRGN` and `FD-GXXBV` in

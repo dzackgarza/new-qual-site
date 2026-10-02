@@ -542,7 +542,6 @@ sections:
       - ref: D-JMATC
       - ref: FD-LHTRR
       - ref: D-LZTAK
-      - ref: FD-JJFZ3
       - ref: PR-TZN4M
       - ref: D-XD5NG
       - ref: C-4GQK3

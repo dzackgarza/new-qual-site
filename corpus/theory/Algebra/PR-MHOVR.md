@@ -15,6 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $L/k$ be a finite [[FD-JJFZ3|normal extension]] and let $K$ be a field with $k \subseteq K \subseteq L$.
+Let $L/k$ be a finite [[D-LZTAK|normal extension]] and let $K$ be a field with $k \subseteq K \subseteq L$.
 Then $L/K$ is normal.
 :::
