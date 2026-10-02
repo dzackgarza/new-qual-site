@@ -918,6 +918,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   only the coordinate matrix and signature locally, and moves the Artin
   citation onto Sylvester's law of inertia.
 
+### D-TZXBO used commutative Noetherian terminology on arbitrary rings
+
+- **Object and need:** `D-TZXBO`, Noetherian ring. `D-GURUB` allows
+  noncommutative rings and `D-GOFWL` defines an unqualified ideal there to
+  mean a two-sided ideal.
+- **Observed evidence:** `D-TZXBO` quantified over an arbitrary ring and
+  called ACC on those two-sided ideals “Noetherian.” In noncommutative ring
+  theory the standard notions are left-Noetherian and right-Noetherian; ACC
+  only on two-sided ideals is a different condition. Every current use of
+  `D-TZXBO` in the corpus and wiki is in commutative algebra.
+- **Impact and owner:** the canonical definition silently changed meaning
+  outside the commutative setting and could be read as the standard
+  noncommutative notion when it is not.
+- **Uncertainty:** none about current scope; all observed consumers are
+  commutative.
+- **Repair:** the same repair commit restricts `D-TZXBO` to commutative rings
+  and leaves left/right Noetherian notions for separate definitions if they
+  are ever needed.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
