@@ -21,5 +21,5 @@ The \dfn{alternating group} is
 $$
 A_n\coloneqq\ker(\sgn)=\theset{\sigma\in S_n \st \sgn(\sigma)=1},
 $$
-the subgroup of [[FD-PIVQZ|even permutations]] of $S_n$.
+the subgroup of [[D-TMME3|even permutations]] of $S_n$.
 :::

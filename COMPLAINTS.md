@@ -1169,6 +1169,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   multiplicative sign, updates `D-TMME3` to use sign `1` for even
   permutations, and links `FD-GHDF2` to the canonical definition.
 
+### Duplicate even/odd-permutation card FD-PIVQZ
+
+- **Object and need:** `D-TMME3` and `FD-PIVQZ` in
+  `corpus/theory/Algebra`. `D-TMME3` already owns the definition of even
+  permutations and the alternating group; `FD-PIVQZ` repeats evenness and
+  adds oddness plus the parity characterization.
+- **Observed evidence:** after the sign convention repair, both use the same
+  multiplicative sign `$S_n\to\{\pm1\}$`. The wiki and algebra guide exposed
+  both recall units, and `FD-X4DBP` linked to the flashcard for “even.”
+- **Impact and owner:** the duplicated evenness definition splits a basic
+  permutation concept; the odd terminology and parity statement can be
+  preserved on the canonical alternating-group card.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the prompt, odd definition, and
+  parity remark to `D-TMME3`, redirects `FD-X4DBP`, removes duplicate
+  reader-facing references, and deletes `FD-PIVQZ`.
+
 ### FD-CI4NB misclassified polynomial rings as a variant of rational-function fields
 
 - **Object and need:** `FD-CI4NB`, Polynomial ring, and its relation to
