@@ -25,24 +25,24 @@ prompts:
 ---
 
 ::: {.theorem title="Lüroth"}
-Let $k = \kbar$ and let $L$ be a field with $k \subsetneq L \subseteq k(t)$.
+Let $k$ be an algebraically closed field and let $L$ be a field with $k \subsetneq L \subseteq k(t)$.
 Then $L$ is purely transcendental: $L = k(u)$ for some $u$.
 :::
 
 ::: {.proof}
 $L$ is a subfield of a finitely generated field of transcendence degree $1$, so $\trdeg_k L \leq 1$, and $\trdeg_k L = 1$ because $L \neq k$ and $k$ is algebraically closed, so any element of $L \setminus k$ is transcendental over $k$.
-Such an $L$ is itself finitely generated over $k$, hence $L = k(Y)$ for a unique smooth projective curve $Y$.
+Choose $u\in L\sm k$. Since $u$ is a nonconstant rational function of $t$, the extension $k(t)/k(u)$ is finite. Hence the intermediate field $L$ is finite over $k(u)$ and therefore finitely generated over $k$. Thus $L=k(Y)$ for a unique smooth projective curve $Y$.
 
 The inclusion $L \subseteq k(t) = k(\PP^1)$ is a finite extension of function fields, so it is induced by a finite morphism $f : \PP^1 \to Y$.
 A finite morphism of curves never decreases the genus, so $g(Y) \leq g(\PP^1) = 0$ and $g(Y) = 0$.
-A genus-$0$ curve over $k = \kbar$ is $\PP^1$, so $Y \cong \PP^1$ and $L \cong k(u)$.
+A genus-$0$ curve over an algebraically closed field is $\PP^1$, so $Y \cong \PP^1$ and $L \cong k(u)$.
 :::
 
-::: {.remark title="What the proof actually rests on"}
-The one input is $g(X) \geq g(Y)$ for a finite morphism $X \to Y$ of curves, and that is Riemann--Hurwitz read backwards: for separable $f$ of degree $n$,
-\[
+::: {.remark title="Genus inequality"}
+For a finite separable morphism $f\colon X\to Y$ of degree $n$ between smooth projective curves,
+$$
 2 g_X - 2 = n(2 g_Y - 2) + \deg R, \qquad \deg R \geq 0 ,
-\]
+$$
 so $g_X < g_Y$ is impossible.
 The inseparable case is not an exception but a separate mechanism: factor $f$ through its purely inseparable part, which preserves the genus, and apply the above to the separable part.
 This is the role of the inseparable factorization in [[PR-IV2INSEP]].
@@ -63,8 +63,8 @@ Castelnuovo's criterion itself holds in every characteristic, by Zariski and Mum
 What fails in characteristic $p$ is the other half: a unirational surface need not satisfy $q = P_2 = 0$.
 Zariski's surfaces, purely inseparable covers of $\PP^2$, are unirational and not rational, so the dimension-$2$ Lüroth statement is false as soon as $p > 0$ even though the criterion it invokes is not.
 
-In dimension $3$ it is false even over $\CC$.
-The three standard counterexamples are the smooth cubic threefold, non-rational because its intermediate Jacobian is not a Jacobian of a curve; the smooth quartic threefold, non-rational because its group of birational self-maps is too small; and the Artin--Mumford double solid, non-rational because it has torsion in $H^3$, which is a birational invariant.
-All three are unirational.
-Each counterexample is distinguished by a specific birational obstruction: the intermediate Jacobian, birational automorphism group, or torsion in $H^3$.
+In dimension $3$ the statement is false even over $\CC$.
+A smooth cubic threefold is unirational but not rational; Clemens--Griffiths detect irrationality from its intermediate Jacobian. The Artin--Mumford construction gives a unirational threefold whose desingularization is not rational because it has nonzero torsion in $H^3$, a birational obstruction.
+
+Smooth quartic threefolds provide another classical irrationality theorem, by Iskovskikh--Manin, but irrationality alone does not make them counterexamples to the Lüroth problem: a negative Lüroth example must also be unirational.
 :::
