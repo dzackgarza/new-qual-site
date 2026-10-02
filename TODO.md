@@ -16,7 +16,7 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
 The current milestone is **`audited-deployment`**: a deployed site whose copy is policy-aligned and which survives three consecutive open-ended audits.
-Its completed prerequisites are `unsolved-contribution`, `slogans`, and `copy-policy-repair`; the remaining route is deployment followed by the three required clean audit rounds.
+Its completed prerequisites include `unsolved-contribution` and `slogans`; the remaining route is `copy-policy-repair`, then the audit rounds.
 [Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
 
 #### Steward checkpoint — 2026-09-26
@@ -25,11 +25,11 @@ This section records the 2026-09-26 wind-down checkpoint. The workstream was sub
 
 - `unsolved-contribution` is complete at `29eebe3b4`: unsolved problems are reachable from navigation and each unsolved card has a prefilled GitHub solution-submission route.
 - `slogans` is complete. At this checkpoint every current theorem, proposition, lemma, corollary, and fact card has an authored slogan read against its statement; the schema, badge renderer, suggestion link, and issue form are present. `just check` passes, `just build` passes, and the focused rendered-site slogan tests pass.
-- `copy-policy-repair` was open at this checkpoint and was subsequently resumed. It **closed on 2026-10-02** after the semantic pass reached the end of the recomputed reader-facing surface population and every violation found in that pass had been repaired; the final algebraic-geometry theory repair is `dc0118628`.
-- At this checkpoint, `audited-deployment` remained blocked on `copy-policy-repair`. The repository owner explicitly approved deploying that parked checkpoint during the 2026-09-26 wind-down; that deployment did **not** close `copy-policy-repair` or start the three required clean audit rounds. The 2026-10-02 copy-repair closure now unblocks `audited-deployment`: deploy the completed revision and begin the required three consecutive clean open-ended audits against one stamped deployed revision; any finding is injected into this DAG and resets the count.
+- `copy-policy-repair` is **open and not yet semantically completed**. Resume here. Recompute the current reader-facing surface population, then read every in-scope surface against all policy families in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families), including the public copy introduced by `unsolved-contribution` and `slogans`. Repair each actual violation while preserving the mathematics. An inventory, grep result, crawler result, lint count, or audit receipt is only a lead and cannot close this node.
+- `audited-deployment` remains blocked on `copy-policy-repair`. The repository owner explicitly approved deploying this parked checkpoint during the 2026-09-26 wind-down; that deployment does **not** close `copy-policy-repair` or start the three required clean audit rounds. When `copy-policy-repair` later closes, deploy that completed revision and begin the required three consecutive clean open-ended audits against one stamped deployed revision; any finding is injected into this DAG and resets the count.
 - Author-solution selection remains blocked on `audited-deployment`; do not resume section 7 before that dependency closes.
 
-A cold resume now starts at **`audited-deployment`**, not at slogans, copy repair, or solution authorship. The 2026-09-26 checkpoint deployment was only a handoff verification of that older source state; the completed copy-repair revision must be deployed before the three clean audit rounds begin.
+A cold resume starts at **`copy-policy-repair`**, not at slogans, solution authorship, or an audit round. The checkpoint deployment was only a handoff verification of that source state; the live workstream has now resumed from this point.
 
 - **`site-renderability-repair`**. **Closed:** 2026-09-25 (`99a19db5e`, `884078a10`, `540665817`). **Needs:** none.
   At discovery, the corpus build stopped before site emission on authored math that used undefined notation aliases or had unterminated display-math delimiters in 16 problem cards (`\pr`, `\Specm`, `\ev`, `\Span`, `\mfn`, `\isom`, `\End`, `\Supp`, `\dashmapsto`, and three missing closing `\]` delimiters).
@@ -48,11 +48,12 @@ A cold resume now starts at **`audited-deployment`**, not at slogans, copy repai
   Readers can suggest a slogan for a result through the same prefilled GitHub issue-form mechanism `unsolved-contribution` builds.
   **Acceptance:** the slogan field exists in the card schema, renders as a badge on the built site, carries a working suggestion link, and every theorem, proposition, lemma, corollary, and fact card has an authored slogan read against its statement.
 
-- **`copy-policy-repair`**. **Closed:** 2026-10-02 (`dc0118628`). **Needs:** `policy-consolidation` (closed).
+- **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed).
   Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics.
   This includes the copy `unsolved-contribution` and `slogans` add.
   Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence.
   **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
+  **Reopened 2026-10-02** (closure `e2ef4ef04` reverted): the pass repaired 249 of 323 `corpus/theory/Algebraic_Geometry` cards but touched 15 of 410 `corpus/theory/Algebra`, none of `corpus/theory/Complex_Analysis` (241), `corpus/theory/Real_Analysis` (312), `corpus/theory/Topology` (278) or `corpus/problems` (1641), and 40 of 322 `wiki` pages. At the observed violation density those areas were not read; an earlier handoff's "read algebra, analysis, topology" referred to wiki pages, not the corpus cards. The remaining population is those areas.
 
 - **`audited-deployment`**. **Needs:** `unsolved-contribution`, `slogans`, `copy-policy-repair`. Push so `pages.yml` deploys, then audit the deployed site at <https://dzackgarza.github.io/new-qual-site/> in open-ended rounds.
   Each round reads the deployed pages against the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) policies and checks their mathematics for incorrect facts, statements, and solutions; it is a reading of the site, not a lint or crawl count.
