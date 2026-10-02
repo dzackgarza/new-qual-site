@@ -769,6 +769,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit redirects the algebra guide to
   `C-O7CP3` and removes `C-A6UAR`.
 
+### Duplicate coset-counting cards C-HWX2P and C-XRC67
+
+- **Object and need:** `C-HWX2P` and `C-XRC67` in
+  `corpus/theory/Algebra`. They state the same coset-counting formula and
+  therefore violate the single-owner expectation for standard statements
+  (`CARD-04`, `SOURCE-02`).
+- **Observed evidence:** both complete cards have the same title, hypotheses,
+  definition of the index, and equations
+  `$\size G=[G:H]\,\size H$` and `$[G:H]=\size G/\size H$`, differing only
+  by `\size` versus `\#` presentation syntax. `C-XRC67` also declares itself
+  `variant-of: C-HWX2P`. The wiki and algebra guide both reference
+  `C-HWX2P`; no reader-facing surface references `C-XRC67`.
+- **Impact and owner:** retaining `C-XRC67` creates a second intrinsic address
+  for the same theorem without a source or mathematical distinction.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit removes `C-XRC67` and retains
+  `C-HWX2P` as the canonical statement.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
