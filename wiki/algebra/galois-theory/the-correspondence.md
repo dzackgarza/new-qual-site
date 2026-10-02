@@ -12,8 +12,6 @@ topics:
 
 [[D-5JYEI]]
 
-[[FD-4GFTY]]
-
 [[FT-3WWKN]]
 
 [[FD-YJEDU]]

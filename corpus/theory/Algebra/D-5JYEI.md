@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-5JYEI
 kind: definition
 title: Galois extension and Galois group
+prompts:
+- In terms of $\abs{\Aut(K/F)}$, when is a finite extension $K/F$ Galois?
 classification:
   areas:
   - algebra
