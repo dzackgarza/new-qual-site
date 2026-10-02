@@ -25,3 +25,35 @@ Let $T\colon \RR^5 \to \RR^3$ be a linear transformation whose kernel is a three
 (D) all of $\RR^3$
 (E) Cannot be determined from the information given
 :::
+
+::: {.solution}
+<1>1. The image of $T$ has dimension $2$.
+
+::: {.proof}
+The rank-nullity theorem gives
+$$
+\dim\RR^5=\dim\ker T+\dim\operatorname{im}T.
+$$
+Since $\dim\ker T=3$, one obtains
+$$
+5=3+\dim\operatorname{im}T,
+$$
+and therefore $\dim\operatorname{im}T=2$.
+:::
+
+<1>2. The set $\{T(\mathbf x):\mathbf x\in\RR^5\}$ is
+$$
+\boxed{\text{a plane through the origin}},
+$$
+so the answer is (C).
+
+::: {.proof}
+The displayed set is $\operatorname{im}T$, which is a linear subspace of $\RR^3$. By step <1>1 it is two-dimensional. A two-dimensional linear subspace of $\RR^3$ is a plane containing the origin.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 identifies the image.
+:::
+:::
