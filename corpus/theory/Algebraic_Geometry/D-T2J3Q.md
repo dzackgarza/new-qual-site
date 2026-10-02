@@ -21,17 +21,17 @@ prompts:
 ---
 
 ::: {.definition title="Separated"}
-A morphism $f : X \to Y$ is \dfn{separated} if the diagonal
+A morphism $f\colon X \to Y$ is \dfn{separated} if the diagonal
 $$
 \Delta_{X/Y} : X \to \fiberprod{X}{Y}{X}
 $$
 is a closed immersion.
-It is **quasi-separated** if $\Delta_{X/Y}$ is quasicompact, equivalently if for every affine open $V \subseteq Y$ the scheme $f^{-1}(V)$ is quasi-separated in the sense below.
+It is \dfn{quasi-separated} if $\Delta_{X/Y}$ is quasicompact, equivalently if for every affine open $V \subseteq Y$ the scheme $f^{-1}(V)$ is quasi-separated in the sense below.
 :::
 
 ::: {.definition title="Quasicompact and quasi-separated"}
-A scheme $X$ is \dfn{quasicompact} if every open cover of $X$ has a finite subcover, and a morphism $f: X \to Y$ is **quasicompact** if $f^{-1}(V)$ is quasicompact for every affine open $V \subseteq Y$.
-A scheme $X$ is **quasi-separated** if the intersection of any two quasicompact open subsets of $X$ is quasicompact, equivalently if the intersection of any two affine open subsets is quasicompact; this is quasi-separatedness of $X \to \Spec \ZZ$.
+A scheme $X$ is \dfn{quasicompact} if every open cover of $X$ has a finite subcover, and a morphism $f\colon X \to Y$ is \dfn{quasicompact} if $f^{-1}(V)$ is quasicompact for every affine open $V \subseteq Y$.
+A scheme $X$ is \dfn{quasi-separated} if the intersection of any two quasicompact open subsets of $X$ is quasicompact, equivalently if the intersection of any two affine open subsets is quasicompact; this is quasi-separatedness of $X \to \Spec \ZZ$.
 :::
 
 ::: {.remark}
