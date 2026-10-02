@@ -20,3 +20,75 @@ audit:
 ::: {.problem}
 If G is non-Abelian, show that Aut(G) is not cyclic.
 :::
+
+::: {.solution}
+<1>1. If $\operatorname{Aut}(G)$ were cyclic, then $\operatorname{Inn}(G)$ would be cyclic.
+
+::: {.proof}
+Every inner automorphism is an automorphism, so
+$$
+\operatorname{Inn}(G)\leq\operatorname{Aut}(G).
+$$
+Every subgroup of a cyclic group is cyclic. Hence cyclicity of
+$\operatorname{Aut}(G)$ would imply cyclicity of $\operatorname{Inn}(G)$.
+:::
+
+<1>2. There is an isomorphism
+$$
+G/Z(G)\cong\operatorname{Inn}(G).
+$$
+
+::: {.proof}
+Define
+$$
+c:G\longrightarrow\operatorname{Inn}(G),
+\qquad
+c(g)(x)=gxg^{-1}.
+$$
+The map $c$ is a homomorphism and is surjective by the definition of
+inner automorphisms. Moreover, $c(g)$ is the identity automorphism
+exactly when $g$ commutes with every element of $G$, so
+$$
+\ker c=Z(G).
+$$
+The first isomorphism theorem therefore gives
+$G/Z(G)\cong\operatorname{Inn}(G)$.
+:::
+
+<1>3. If $G/Z(G)$ is cyclic, then $G$ is Abelian.
+
+::: {.proof}
+Suppose
+$$
+G/Z(G)=\langle gZ(G)\rangle.
+$$
+For arbitrary $x,y\in G$, there are integers $m,n$ and central
+elements $z_1,z_2\in Z(G)$ such that
+$$
+x=g^mz_1,
+\qquad
+y=g^nz_2.
+$$
+Therefore
+$$
+xy=g^{m+n}z_1z_2=g^{n+m}z_2z_1=yx.
+$$
+Thus all elements of $G$ commute, so $G$ is Abelian.
+:::
+
+<1>4. The group $\operatorname{Aut}(G)$ is not cyclic.
+
+::: {.proof}
+Suppose for contradiction that $\operatorname{Aut}(G)$ is cyclic.
+By step <1>1, $\operatorname{Inn}(G)$ is cyclic. By step <1>2,
+$G/Z(G)$ is therefore cyclic, and step <1>3 then makes $G$ Abelian.
+This contradicts the hypothesis that $G$ is non-Abelian. Hence
+$\operatorname{Aut}(G)$ cannot be cyclic.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
+:::
