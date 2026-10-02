@@ -1403,6 +1403,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   scopes its SNF remark to the field case, moves the review prompt there,
   removes duplicate reader-facing references, and deletes `FD-GOB47`.
 
+### PR-4K4XZ unnecessarily restricted free-module torsionfreeness
+
+- **Object and need:** `PR-4K4XZ`, Free modules over an integral domain are
+  torsionfree. Its title asserted the general theorem while the body and slogan
+  inserted finite generation.
+- **Observed evidence:** the proposition read “Every finitely generated free
+  `$R$`-module is torsionfree.” The proof of the standard statement is
+  coordinatewise and does not use finite generation: a vector in a direct sum
+  has finite support by definition.
+- **Impact and owner:** the body understated its own title and could suggest
+  finite generation is needed for torsionfreeness.
+- **Uncertainty:** none.
+- **Repair:** the same repair commit removes “finitely generated” from the
+  proposition and slogan.
+
 ### Duplicate normal-extension cards D-LZTAK and FD-JJFZ3
 
 - **Object and need:** `D-LZTAK` and `FD-JJFZ3` in
