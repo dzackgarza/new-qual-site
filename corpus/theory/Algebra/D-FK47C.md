@@ -32,8 +32,5 @@ Consequently, if a monic polynomial of degree $n$ over a commutative ring factor
 ::: {.theorem}
 Let $R$ be a commutative ring.
 Every symmetric polynomial in $R[x_1, \ldots, x_n]$ is equal to $g(e_1, \ldots, e_n)$ for a unique polynomial $g\in R[y_1,\ldots,y_n]$.
-:::
-
-::: {.concept}
-See [@DF04].
+[@DF04]
 :::
