@@ -718,7 +718,6 @@ sections:
     items:
       - ref: D-GK5SF
       - ref: D-QFYAC
-      - ref: FD-GOB47
       - ref: T-SJCF7
       - ref: PR-UFVPY
       - ref: PR-EDD7U

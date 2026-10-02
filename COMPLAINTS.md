@@ -1167,6 +1167,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   the title `Polynomial ring $R[x]$`, and changes the relation to
   `related-to: FD-24RNF`.
 
+### Duplicate characteristic-polynomial cards had inconsistent coefficient scope
+
+- **Object and need:** `D-QFYAC` and `FD-GOB47` in
+  `corpus/theory/Algebra`. Both define `$\det(xI-A)$`, but the canonical card
+  unnecessarily restricted to matrices over a field while the flashcard used
+  the correct commutative-ring scope.
+- **Observed evidence:** the determinant definition makes sense over any
+  commutative ring. The only field-specific content on `D-QFYAC` is its later
+  Smith-normal-form remark over `$k[x]$`. The wiki and algebra guide displayed
+  both definitions.
+- **Impact and owner:** retaining both split a standard definition and made
+  the canonical card less general than the duplicate.
+- **Uncertainty:** none; characteristic polynomials are defined over arbitrary
+  commutative coefficient rings, while Smith normal form here requires the
+  field hypothesis.
+- **Repair:** the same repair commit broadens `D-QFYAC` to a commutative ring,
+  scopes its SNF remark to the field case, moves the review prompt there,
+  removes duplicate reader-facing references, and deletes `FD-GOB47`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card

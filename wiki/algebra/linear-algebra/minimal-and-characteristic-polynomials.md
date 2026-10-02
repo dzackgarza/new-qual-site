@@ -23,8 +23,6 @@ The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihi
 
 [[D-QFYAC]]
 
-[[FD-GOB47]]
-
 ## The relation between the two polynomials
 
 [[T-SJCF7]]
