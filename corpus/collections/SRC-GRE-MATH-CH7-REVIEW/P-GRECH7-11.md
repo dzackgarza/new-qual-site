@@ -36,3 +36,49 @@ output gcd;
 (D) $6$
 (E) $7$
 :::
+
+::: {.solution}
+Interpreting the update lines in the displayed pseudocode as assignments, one loop iteration replaces $(a,b)$ by $(b,a\bmod b)$.
+
+<1>1. Starting from $(380,72)$, the successive pairs after each iteration are
+$$
+(72,20),\quad(20,12),\quad(12,8),\quad(8,4),\quad(4,0).
+$$
+
+::: {.proof}
+The successive Euclidean divisions are
+$$
+380=5\cdot72+20,
+$$
+$$
+72=3\cdot20+12,
+$$
+$$
+20=1\cdot12+8,
+$$
+$$
+12=1\cdot8+4,
+$$
+and
+$$
+8=2\cdot4+0.
+$$
+Thus each remainder produces exactly the next displayed value of $b$.
+:::
+
+<1>2. The loop terminates after
+$$
+\boxed{5}
+$$
+iterations, so the answer is (C).
+
+::: {.proof}
+By step <1>1, the value of $b$ becomes $0$ for the first time after the fifth update. The while-condition then fails, with $a=4$, so the algorithm terminates after five iterations.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the requested iteration count.
+:::
+:::
