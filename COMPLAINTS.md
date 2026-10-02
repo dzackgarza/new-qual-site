@@ -2134,3 +2134,28 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-GRECH7-32` proves that no real `$c$` works and records why the
   source answer `$-4/3$` fails both normalization and nonnegativity; the
   external source is left unchanged.
+
+### GRE Chapter 7 question 35 does not specify whether the committees are distinguished
+
+- **Object and need:** `P-GRECH7-35` and Chapter 7 review question 35 in
+  `Cracking the GRE Mathematics Subject Test`. The problem asks for the number
+  of ways to separate 12 employees into four equally-sized committees.
+- **Observed evidence:** the printed question supplies no committee names,
+  tasks, or labels. If the four three-person committees are unlabeled, the
+  number of set partitions is
+  `$12!/((3!)^4 4!)=15,400$`, which is not an answer choice. The Chapter 8
+  solution instead computes
+  `$\binom{12}{3}\binom{9}{3}\binom{6}{3}\binom{3}{3}=369,600$` and explains
+  that it matters which committee each employee joins, thereby treating the
+  committees as distinguished.
+- **Impact and owner:** the source statement is ambiguous between the standard
+  unlabeled-partition count and the labeled-committee count. Its supplied
+  answer (A) is correct only under the latter convention.
+- **Expected result:** distinguish the two conventions mathematically, give
+  both counts, and identify (A) as the intended answer under the convention
+  explicitly used by the source solution.
+- **Uncertainty:** the counting under each convention is exact; the only
+  uncertainty is the convention omitted from the problem statement.
+- **Repair:** `P-GRECH7-35` proves both counts and states the source's intended
+  distinguished-committee answer without silently treating the wording as
+  unambiguous; the external source is left unchanged.
