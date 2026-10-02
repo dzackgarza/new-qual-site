@@ -750,24 +750,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit redirects `publications/algebra-guide.yaml`
   to `C-HE5SL` and removes `C-CM7ZS`.
 
-### Duplicate class-equation cards C-A6UAR and C-O7CP3
+### Duplicate class-equation cards C-A6UAR, C-O7CP3, and FD-L2TEC
 
-- **Object and need:** `C-A6UAR` and `C-O7CP3` in
-  `corpus/theory/Algebra`. They are two intrinsic cards for the same class
+- **Object and need:** `C-A6UAR`, `C-O7CP3`, and `FD-L2TEC` in
+  `corpus/theory/Algebra`. They are intrinsic cards for the same class
   equation (`CARD-04`, `SOURCE-02`).
-- **Observed evidence:** after reading both complete cards, they have the same
+- **Observed evidence:** after reading all three complete cards, they have the same
   title, hypotheses, centralizer notation, choice of noncentral conjugacy-class
   representatives, and class-equation formula. Their only substantive source
   difference is presentation syntax (`\#` versus the repository's `\size`
-  macro). The wiki references `C-O7CP3`; `publications/algebra-guide.yaml`
-  referenced `C-A6UAR`.
-- **Impact and owner:** retaining both gives two canonical-looking addresses
-  for one theorem and splits guide references. `C-O7CP3` is already the
+  macro). `FD-L2TEC` later restated the same theorem and added its standard
+  conjugation-action proof. The wiki and algebra guide exposed the duplicate
+  theorem beside `C-O7CP3`.
+- **Impact and owner:** retaining the duplicates gives multiple canonical-looking
+  addresses for one theorem and splits guide references. `C-O7CP3` is already the
   wiki-facing statement and uses the current notation convention.
-- **Uncertainty:** none after reading both complete cards; no distinct source
+- **Uncertainty:** none after reading all three complete cards; no distinct source
   appearance or mathematical variant was found.
-- **Repair:** the same repair commit redirects the algebra guide to
-  `C-O7CP3` and removes `C-A6UAR`.
+- **Repair:** the first repair redirected the algebra guide to `C-O7CP3` and
+  removed `C-A6UAR`; the later repair moves the review prompt and proof from
+  `FD-L2TEC` onto `C-O7CP3`, removes duplicate reader-facing references, and
+  deletes `FD-L2TEC`.
 
 ### Duplicate coset-counting cards C-HWX2P and C-XRC67
 
