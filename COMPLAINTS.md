@@ -846,6 +846,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit redirects the wiki to `D-BGNME`, removes
   the duplicate guide entry, and deletes `D-D7L4X`.
 
+### D-KRKV7 printed an incorrect presentation of the quaternion group
+
+- **Object and need:** `D-KRKV7`, Quaternion group `$Q_8$`. The second
+  displayed presentation must actually force the generators to have the
+  quaternion orders.
+- **Observed evidence:** the card printed
+  `$\gens{x,y\mid x^4=y^4,\ x^2=y^2,\ yxy^{-1}=x^{-1}}$`. The relation
+  `$x^4=y^4$` follows already from `$x^2=y^2$` and does not impose
+  `$x^4=1$`.
+- **Impact and owner:** the displayed group need not be finite and is not the
+  standard presentation of `$Q_8$`. The canonical presentation requires
+  `$x^4=1$`, `$x^2=y^2$`, and `$yxy^{-1}=x^{-1}$`.
+- **Uncertainty:** none; the standard two-generator presentation is explicit.
+- **Repair:** the same repair commit replaces `$x^4=y^4$` by `$x^4=1$` and
+  states the eight quaternion elements directly rather than treating `-1` as
+  a presentation generator.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
