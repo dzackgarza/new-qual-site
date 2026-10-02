@@ -24,3 +24,61 @@ What is the maximum area of a rectangle inscribed in a semicircle of radius $a$?
 (D) $\frac{\pi}{2\sqrt{2}}a^2$
 (E) $a^2\sqrt{2}$
 :::
+
+::: {.solution}
+Let $x$ be the half-width and $y$ the height of an inscribed rectangle. Then the upper-right vertex $(x,y)$ lies on the semicircle, so
+$$
+x^2+y^2=a^2,
+$$
+and the rectangle has area $A=2xy$.
+
+<1>1. Every such rectangle satisfies $A\le a^2$.
+
+::: {.proof}
+Since
+$$
+(x-y)^2\ge0,
+$$
+one has
+$$
+2xy\le x^2+y^2.
+$$
+Using $x^2+y^2=a^2$ gives
+$$
+A=2xy\le a^2.
+$$
+:::
+
+<1>2. The upper bound in step <1>1 is attained.
+
+::: {.proof}
+Take
+$$
+x=y=\frac{a}{\sqrt2}.
+$$
+Then
+$$
+x^2+y^2=\frac{a^2}{2}+\frac{a^2}{2}=a^2,
+$$
+so this rectangle is inscribed in the semicircle, and its area is
+$$
+2xy=2\left(\frac{a}{\sqrt2}\right)^2=a^2.
+$$
+:::
+
+<1>3. Therefore the maximum area is
+$$
+\boxed{a^2},
+$$
+so the answer is (C).
+
+::: {.proof}
+Step <1>1 gives $a^2$ as an upper bound, and step <1>2 exhibits an inscribed rectangle attaining it.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested maximum and corresponding choice.
+:::
+:::
