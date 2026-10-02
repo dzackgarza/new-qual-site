@@ -1887,3 +1887,17 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** add `D-6V3PZ`, which defines the Möbius function and records its
   basic divisor-sum identity; link it from `PR-JLDJ6` and write the recursive
   cyclotomic formula as an explicit quotient.
+
+### PR-MK2W6 restated the definition of a perfect field as a proposition
+
+- **Object and need:** `PR-MK2W6` in `corpus/theory/Algebra`.
+- **Observed evidence:** after `D-KQFIV` became the sole definition card,
+  `PR-MK2W6` said only that irreducible polynomials over a perfect field are
+  separable, which is exactly the defining condition. Its distinct content was
+  the imperfect-field example `x^p-t` over `\FF_p(t)`.
+- **Impact and owner:** the proposition created a second statement of the
+  definition while the example had no card-level identity of its own.
+- **Uncertainty:** none after reading the definition, proposition, and example.
+- **Repair:** preserve `PR-MK2W6` as an example card for the irreducible
+  inseparable polynomial `x^p-t`, and supply the irreducibility and
+  inseparability proof instead of restating perfectness.
