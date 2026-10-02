@@ -1217,6 +1217,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `D-JQNJQ`, removes duplicate reader-facing references, and deletes
   `FD-H764S`.
 
+### Duplicate stabilizer card FD-IGEOR
+
+- **Object and need:** `D-WYC7C` and `FD-IGEOR` in
+  `corpus/theory/Algebra`. `D-WYC7C` already defines the stabilizer `$G_x$`;
+  `FD-IGEOR` repeats that definition and adds only prompts plus the proof that
+  `$G_x$` is a subgroup.
+- **Observed evidence:** both complete cards use
+  `$G_x=\{g\in G\mid g\cdot x=x\}$`. The canonical action card is the
+  dependency used throughout orbit–stabilizer theory, while the wiki and
+  algebra guide displayed the flashcard as an additional recall unit.
+- **Impact and owner:** the duplicated definition splits a basic group-action
+  concept, while the subgroup fact belongs naturally on the canonical card.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the two prompts and subgroup
+  proposition/proof to `D-WYC7C`, removes duplicate reader-facing references,
+  and deletes `FD-IGEOR`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
