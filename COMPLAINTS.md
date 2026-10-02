@@ -830,6 +830,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `$[L:k]_s=\size\Hom_{k\text{-alg}}(L,\bar k)$` and explains why normality
   identifies these embeddings with `\Gal(L/k)` in the Galois case.
 
+### Duplicate lower-central-series cards D-BGNME and D-D7L4X
+
+- **Object and need:** `D-BGNME` and `D-D7L4X` in
+  `corpus/theory/Algebra`. The two cards gave the same definition of the lower
+  central series (`CARD-04`, `SOURCE-02`).
+- **Observed evidence:** both complete cards define `$G^0=G$` and
+  `$G^{i+1}=[G,G^i]$` using the same commutator convention. `D-D7L4X`
+  declares itself `variant-of: D-BGNME`; `D-BGNME` additionally records the
+  nilpotence characterization. The wiki and algebra guide exposed both.
+- **Impact and owner:** two intrinsic addresses for the same definition split
+  links and duplicate the recall unit. `D-BGNME` is already used by
+  `T-4INET` and contains the strictly richer local exposition.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit redirects the wiki to `D-BGNME`, removes
+  the duplicate guide entry, and deletes `D-D7L4X`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
