@@ -57,7 +57,6 @@ $$
 (h) Let $N, H$ be groups, $\psi\colon H \to \Aut(N)$ a homomorphism, $\sigma \in \Aut(H)$, and $\tau \in \Aut(N)$, and let $c_\tau\colon \Aut(N) \to \Aut(N)$ be conjugation $\alpha \mapsto \tau\alpha\tau\inv$.
 Then $N \semidirect_\psi H \cong N \semidirect_{c_\tau \circ \psi \circ \sigma} H$.
 
-(i) For every group $G$, $\Inn(G) \cong G/Z(G)$.
 :::
 
 ::: {.example}

@@ -1901,3 +1901,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** preserve `PR-MK2W6` as an example card for the irreducible
   inseparable polynomial `x^p-t`, and supply the irreducibility and
   inseparability proof instead of restating perfectness.
+
+### PR-N6S6P bundled unrelated automorphism, Hom, and semidirect-product results
+
+- **Object and need:** `PR-N6S6P` in `corpus/theory/Algebra`.
+- **Observed evidence:** parts (a)--(e) concern automorphisms of finite cyclic
+  groups, but parts (f)--(i) separately state automorphisms of $C_m^n$, the
+  order of $\GL_n(\FF_p)$, the count of $\Hom(C_n,C_m)$, an isomorphism
+  criterion for semidirect products, and $\Inn(G)\cong G/Z(G)$.
+- **Impact and owner:** several independently reusable theorems had no
+  independent addresses and were hidden under a cyclic-group title.
+- **Uncertainty:** none after reading the complete card and searching the
+  Algebra theory corpus for the four statements.
+- **Repair:** keep `PR-N6S6P` for cyclic-group automorphisms and extract the
+  independent results to their own proposition cards. The first extraction is
+  `PR-IN9ZP`, which owns the inner-automorphism quotient theorem.
