@@ -14,6 +14,17 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the lost arrow in P_n/n! -> 0 and inline-math spacing against Sp17_Exam_0.pdf page 10 problem 9A.
+- event: source-checked
+  by: chatgpt
+  date: 2026-10-02
+  note: Independently reviewed the supplied Berkeley Spring 2017 recurrence argument. The recurrence is correct; the solution below makes explicit why the running maximum is bounded and therefore why the displayed estimate forces convergence to zero.
+- event: solution-written
+  by: chatgpt
+  date: 2026-10-02
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-10-02
+  note: Verified the Bell-number recurrence by the block containing 1, the normalized recurrence, the running-maximum estimate, and the final squeeze.
 ---
 
 ::: {.problem}
@@ -24,4 +35,102 @@ $$
 $$
 
 as $n \to \infty$.
+:::
+
+::: {.solution}
+Set $P_0\coloneqq1$ and
+$$
+Q_n\coloneqq\frac{P_n}{n!}
+\qquad(n\geq0).
+$$
+
+<1>1. For every $n\geq1$,
+$$
+P_n
+=
+\sum_{k=1}^n \binom{n-1}{k-1}P_{n-k}.
+$$
+
+::: {.proof}
+Consider the block containing the element $1$. If this block has cardinality $k$, its other $k-1$ elements can be chosen in
+$$
+\binom{n-1}{k-1}
+$$
+ways. The remaining $n-k$ elements can then be partitioned in $P_{n-k}$ ways. Summing over the possible values $1\leq k\leq n$ counts every set partition exactly once.
+:::
+
+<1>2. For every $n\geq0$,
+$$
+Q_{n+1}
+=
+\frac{1}{n+1}\sum_{k=0}^n\frac{Q_{n-k}}{k!}.
+$$
+
+::: {.proof}
+Applying step <1>1 with $n+1$ in place of $n$ gives
+$$
+P_{n+1}
+=
+\sum_{k=0}^n\binom{n}{k}P_{n-k}.
+$$
+After division by $(n+1)!$,
+$$
+\begin{aligned}
+Q_{n+1}
+&=\sum_{k=0}^n
+\frac{n!}{k!(n-k)!}\frac{P_{n-k}}{(n+1)!}\\
+&=\frac{1}{n+1}\sum_{k=0}^n\frac{Q_{n-k}}{k!}.
+\end{aligned}
+$$
+:::
+
+<1>3. If
+$$
+M_n\coloneqq\max_{0\leq j\leq n}Q_j,
+$$
+then $M_n=1$ for every $n\geq2$.
+
+::: {.proof}
+All $Q_j$ are nonnegative. By step <1>2,
+$$
+Q_{n+1}
+\leq
+\frac{M_n}{n+1}\sum_{k=0}^n\frac1{k!}
+\leq
+\frac{e}{n+1}M_n.
+$$
+For $n\geq2$, one has $e<n+1$, hence $Q_{n+1}<M_n$ whenever $M_n>0$. Therefore
+$$
+M_{n+1}=M_n
+\qquad(n\geq2).
+$$
+Moreover,
+$$
+Q_0=1,
+\qquad
+Q_1=1,
+\qquad
+Q_2=\frac{2}{2!}=1,
+$$
+so $M_2=1$. Induction gives $M_n=1$ for all $n\geq2$.
+:::
+
+<1>4. One has
+$$
+\boxed{\displaystyle \lim_{n\to\infty}\frac{P_n}{n!}=0}.
+$$
+
+::: {.proof}
+Combining steps <1>2 and <1>3, for every $n\geq2$,
+$$
+0\leq Q_{n+1}\leq\frac{e}{n+1}M_n=\frac{e}{n+1}.
+$$
+The right-hand side tends to $0$, so the squeeze theorem gives $Q_n\to0$. By definition of $Q_n$, this is exactly the asserted limit.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves the required limit.
+:::
 :::
