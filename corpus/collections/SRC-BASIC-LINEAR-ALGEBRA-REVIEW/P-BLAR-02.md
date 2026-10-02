@@ -32,3 +32,109 @@ Find the inverse of each matrix, or explain why it does not exist:
 \begin{bmatrix}0&1&0\\0&0&1\\1&0&0\end{bmatrix}.
 \]
 :::
+
+::: {.solution}
+<1>1. For
+\[
+A=\begin{bmatrix}3&2\\1&3\end{bmatrix},
+\]
+one has
+\[
+\boxed{
+A^{-1}=\frac17
+\begin{bmatrix}3&-2\\-1&3\end{bmatrix}}.
+\]
+
+::: {.proof}
+The determinant is
+\[
+\det A=3\cdot3-2\cdot1=7\neq0.
+\]
+The \(2\times2\) inverse formula therefore gives the displayed matrix.
+:::
+
+<1>2. The matrix
+\[
+B=\begin{bmatrix}1&2&4\\-1&2&0\end{bmatrix}
+\]
+has no inverse.
+
+::: {.proof}
+An inverse \(B^{-1}\) in the usual matrix sense can exist only for a square matrix: if an \(m\times n\) matrix had both a left and a right inverse, then its rank would be both \(m\) and \(n\), forcing \(m=n\). Here \(B\) is \(2\times3\), so it is not invertible.
+:::
+
+<1>3. For
+\[
+C=\begin{bmatrix}
+1&3&3\\
+1&4&3\\
+1&3&4
+\end{bmatrix},
+\]
+one has
+\[
+\boxed{
+C^{-1}=
+\begin{bmatrix}
+7&-3&-3\\
+-1&1&0\\
+-1&0&1
+\end{bmatrix}}.
+\]
+
+::: {.proof}
+Let
+\[
+D=
+\begin{bmatrix}
+7&-3&-3\\
+-1&1&0\\
+-1&0&1
+\end{bmatrix}.
+\]
+Direct multiplication gives
+\[
+CD=
+\begin{bmatrix}
+7-3-3&-3+3&-3+3\\
+7-4-3&-3+4&-3+3\\
+7-3-4&-3+3&-3+4
+\end{bmatrix}
+=I_3.
+\]
+Since \(C\) and \(D\) are square, a right inverse is also the inverse; hence \(D=C^{-1}\).
+:::
+
+<1>4. For
+\[
+P=\begin{bmatrix}
+0&1&0\\
+0&0&1\\
+1&0&0
+\end{bmatrix},
+\]
+one has
+\[
+\boxed{
+P^{-1}=
+\begin{bmatrix}
+0&0&1\\
+1&0&0\\
+0&1&0
+\end{bmatrix}}.
+\]
+
+::: {.proof}
+The columns of \(P\) are a permutation of the standard basis, so \(P\) is a permutation matrix. Hence
+\[
+P^{-1}=P^T,
+\]
+which is exactly the displayed matrix. Equivalently, direct multiplication gives \(PP^T=P^TP=I_3\).
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 through <1>4 determine the inverse, or nonexistence of an inverse, in every case.
+:::
+:::
