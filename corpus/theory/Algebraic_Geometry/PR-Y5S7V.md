@@ -14,24 +14,33 @@ classification:
 relations:
 - kind: uses
   target: D-5PQ5W
+- kind: uses
+  target: D-CRVDEGREES
 review: draft
 prompts:
 - What is the degree of a divisor?
 - Why does a principal divisor have degree zero?
 ---
 
-::: {.definition}
-For $D = \sum n_i P_i$ on a curve, $\deg D = \sum n_i [k(P_i) : k]$, which is $\sum n_i$ when $k = \bar{k}$.
-:::
-
 ::: {.proposition}
-On a smooth projective curve, $\deg \div(f) = 0$ for every $f \in K(X)^*$.
-Degree therefore descends to a homomorphism $\Pic(X) \to \ZZ$, and $\Pic^0(X)$ is its kernel.
+Let $C$ be a smooth projective integral curve over a field $k$. For a divisor $D=\sum_p n_p p$, its degree is
+$$
+\deg D=\sum_p n_p[\kappa(p):k]
+$$
+as in [[D-CRVDEGREES]]. For every $f\in K(C)^\times$,
+$$
+\deg\operatorname{div}(f)=0.
+$$
+Hence degree descends through the divisor--line-bundle correspondence to a homomorphism $\deg\colon\Pic(C)\to\ZZ$.
+If $k$ is algebraically closed, its kernel is $\Pic^0(C)$.
 :::
 
 ::: {.remark}
-Projectivity enters because a nonconstant $f$ defines a finite morphism $X\to\PP^1$, and $\div(f)=f^*(0)-f^*(\infty)$, where both fibres have degree $\deg f$ counted with multiplicity.
-Zeros and poles balance because the map has a well-defined degree, and the map has one because $X$ is projective.
+A nonconstant $f\in K(C)$ defines a morphism $f\colon C\to\PP^1_k$. Since $C$ is projective and $f$ is nonconstant, this morphism is finite. The divisor of $f$ is
+$$
+\operatorname{div}(f)=f^*[0]-f^*[\infty],
+$$
+and both pullback divisors have degree $\deg f$. Therefore $\deg\operatorname{div}(f)=0$.
 
-On $\AA^1$ the statement is false — $\div(x) = [0]$ has degree one — and this is the cleanest illustration that divisor theory is a theory about complete curves.
+On $\AA^1_k$, the rational function $x$ has divisor $[0]$ and degree one. Thus properness is essential for the degree-zero statement about principal divisors.
 :::
