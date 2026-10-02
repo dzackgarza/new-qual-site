@@ -31,3 +31,49 @@ are $-4$ and $b - 1$. Find $b$.
 (D) $5$
 (E) $6$
 :::
+
+::: {.solution}
+<1>1. The trace of $A$ is
+$$
+\operatorname{tr}(A)=1.
+$$
+
+::: {.proof}
+The diagonal entries of $A$ are $2$ and $-1$, so
+$$
+\operatorname{tr}(A)=2+(-1)=1.
+$$
+:::
+
+<1>2. The sum of the two given eigenvalues is
+$$
+b-5.
+$$
+
+::: {.proof}
+The eigenvalues are $-4$ and $b-1$, whose sum is
+$$
+-4+(b-1)=b-5.
+$$
+:::
+
+<1>3. The parameter is
+$$
+\boxed{b=6},
+$$
+so the answer is (E).
+
+::: {.proof}
+For a $2\times2$ matrix, the sum of the eigenvalues, counted with algebraic multiplicity, equals the trace. By steps <1>1 and <1>2,
+$$
+b-5=1,
+$$
+and hence $b=6$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value.
+:::
+:::
