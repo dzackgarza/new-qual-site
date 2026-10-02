@@ -1551,6 +1551,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   and review prompt, redirects all live references, and deletes `T-QSTRJ` and
   `FF-QELG7`.
 
+### Duplicate reduced-ring card FF-U4FHF
+
+- **Object and need:** `D-PQHHJ` and `FF-U4FHF` in
+  `corpus/theory/Algebra`. Both say that a ring is reduced exactly when it has
+  no nonzero nilpotent elements.
+- **Observed evidence:** `D-PQHHJ` is the canonical definition used by the
+  radical-ideal quotient criterion; `FF-U4FHF` repeats it for commutative rings
+  and adds only the review prompt and the equivalent nilradical formulation.
+  The wiki and algebra guide displayed both.
+- **Impact and owner:** the flashcard adds no independent mathematics and
+  creates a second defining occurrence.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the prompt and commutative
+  nilradical equivalence to `D-PQHHJ`, removes duplicate reader-facing
+  references, and deletes `FF-U4FHF`.
+
 ### Duplicate stabilizer card FD-IGEOR
 
 - **Object and need:** `D-WYC7C` and `FD-IGEOR` in

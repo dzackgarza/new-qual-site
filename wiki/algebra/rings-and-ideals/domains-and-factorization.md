@@ -87,8 +87,6 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 
 [[D-PQHHJ]]
 
-[[FF-U4FHF]]
-
 [[D-TGB4R]]
 
 [[E-YYL5U]]
