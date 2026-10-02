@@ -32,5 +32,5 @@ Let $g \geq 2$.
 :::
 
 ::: {.remark}
-The coarse moduli space $M_g$ is irreducible of dimension $3g-3$ but is singular for $g \geq 4$, at curves with extra automorphisms; smoothness is a property of the stack.
+The smoothness statement concerns the Deligne--Mumford stack. Étale-locally near a curve $C$, the coarse moduli space is a quotient of the smooth deformation space of $C$ by the finite group $\Aut(C)$. Thus the coarse space can have quotient singularities even though the stack is smooth; whether the quotient is singular depends on the actual representation of $\Aut(C)$ on the deformation space, not only on the fact that $\Aut(C)$ is nontrivial.
 :::
