@@ -1076,6 +1076,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   terminology to `D-FYX4I`, redirects `FD-T7IQV`, removes duplicate
   reader-facing references, and deletes `FD-PLAEO`.
 
+### FD-T7IQV restated solvability as a definition instead of a finite-group criterion
+
+- **Object and need:** `D-DFIDP` and `FD-T7IQV` in
+  `corpus/theory/Algebra`. `D-DFIDP` canonically defines solvable groups by a
+  finite normal series with abelian quotients; `FD-T7IQV` independently
+  defined finite-group solvability via abelian composition factors.
+- **Observed evidence:** the latter condition is an equivalent theorem for
+  finite groups, not a second definition owner. No other card states this
+  composition-factor criterion.
+- **Impact and owner:** keeping the card as a definition duplicated the term,
+  while deleting it would lose a useful finite-group characterization.
+- **Uncertainty:** none; the equivalence follows because subgroups and
+  quotients of solvable groups are solvable and a simple solvable group is
+  abelian.
+- **Repair:** the same repair commit converts `FD-T7IQV` to the proposition
+  “Solvability via composition factors,” links it to the canonical solvability
+  and composition-series cards, and adds the proof of the equivalence.
+
 ### Duplicate finite-Galois card FD-4GFTY
 
 - **Object and need:** `D-5JYEI` and `FD-4GFTY` in
