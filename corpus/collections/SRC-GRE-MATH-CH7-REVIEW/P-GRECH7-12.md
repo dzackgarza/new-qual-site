@@ -24,3 +24,67 @@ If $x^2 = 40$, use Newton's method twice to approximate the value of $x$ to thre
 (D) $6.323$
 (E) $6.325$
 :::
+
+::: {.solution}
+Let
+$$
+f(x)=x^2-40,
+$$
+so that $f'(x)=2x$. Since $6^2=36$ is close to $40$, take $x_0=6$.
+
+<1>1. The first Newton iterate is
+$$
+x_1=\frac{19}{3}.
+$$
+
+::: {.proof}
+Newton's formula gives
+$$
+x_1=x_0-\frac{f(x_0)}{f'(x_0)}
+=6-\frac{36-40}{12}
+=6+\frac13
+=\frac{19}{3}.
+$$
+:::
+
+<1>2. The second Newton iterate is
+$$
+x_2=\frac{721}{114}.
+$$
+
+::: {.proof}
+At $x_1=19/3$,
+$$
+f(x_1)=\frac{361}{9}-40=\frac19,
+\qquad
+f'(x_1)=\frac{38}{3}.
+$$
+Therefore
+$$
+x_2
+=\frac{19}{3}-\frac{1/9}{38/3}
+=\frac{19}{3}-\frac1{114}
+=\frac{721}{114}.
+$$
+:::
+
+<1>3. To three decimal places,
+$$
+\boxed{x\approx6.325},
+$$
+so the answer is (E).
+
+::: {.proof}
+By step <1>2,
+$$
+\frac{721}{114}=6.324561\ldots,
+$$
+which rounds to $6.325$ at three decimal places.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested approximation after two Newton iterations.
+:::
+:::
