@@ -1068,22 +1068,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit removes the duplicate wiki link and
   deletes `FD-R4K7Z`; `D-TO3IY` already carries the equivalent review prompt.
 
-### Duplicate irreducible-polynomial cards D-BVMTZ and FD-GHY34
+### Duplicate irreducible-polynomial cards D-BVMTZ, FD-GHY34, and FD-KPW3H
 
-- **Object and need:** `D-BVMTZ` and `FD-GHY34` in
-  `corpus/theory/Algebra`. Both define irreducibility of a polynomial over a
-  field by absence of a factorization into two positive-degree factors.
-- **Observed evidence:** the definitions are equivalent; `FD-GHY34` adds only
-  the review prompt and the observation that degree-one polynomials are
-  irreducible. `D-BVMTZ` is the dependency used throughout Galois and
-  factorization theory. The wiki and algebra guide displayed the flashcard
-  beside the canonical card.
+- **Object and need:** `D-BVMTZ`, `FD-GHY34`, and `FD-KPW3H` in
+  `corpus/theory/Algebra`. All three define irreducibility of a polynomial over
+  a field by absence of a factorization into two positive-degree factors.
+- **Observed evidence:** the definitions are equivalent; `FD-GHY34` added the
+  observation that degree-one polynomials are irreducible, while `FD-KPW3H`
+  restates the same condition as “no factorization into two strictly
+  lower-degree factors.” `D-BVMTZ` is the dependency used throughout Galois
+  and factorization theory. The wiki exposed the flashcard definitions beside
+  the canonical card.
 - **Impact and owner:** the flashcard duplicates the defining occurrence while
   its small useful remark can live on the canonical card.
-- **Uncertainty:** none after reading both complete cards.
-- **Repair:** the same repair commit moves the prompt and linear-polynomial
-  remark to `D-BVMTZ`, removes duplicate reader-facing references, and deletes
-  `FD-GHY34`.
+- **Uncertainty:** none after reading all three complete cards.
+- **Repair:** the first repair moved the prompt and linear-polynomial remark to
+  `D-BVMTZ` and deleted `FD-GHY34`; the later repair moves the factor-degree
+  review prompt to the same canonical card and deletes `FD-KPW3H`.
 
 ### FD-6WSIA duplicated the separable-extension definition
 

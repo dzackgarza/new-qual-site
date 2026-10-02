@@ -5,6 +5,7 @@ kind: definition
 title: Reducible and irreducible polynomials
 prompts:
 - When is a polynomial over a field irreducible?
+- When is a polynomial irreducible, in terms of the degrees of its factors?
 classification:
   areas:
   - algebra
