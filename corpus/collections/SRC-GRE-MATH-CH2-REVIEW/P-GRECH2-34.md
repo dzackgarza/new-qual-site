@@ -24,3 +24,58 @@ The region bounded by the graphs of $y = x^2$ and $y = 6 - |x|$ is revolved arou
 (D) $\frac{20}{3}\pi$
 (E) $\frac{16}{3}\pi$
 :::
+
+::: {.solution}
+<1>1. The two curves meet at $(\pm2,4)$.
+
+::: {.proof}
+By symmetry it suffices to solve for $x\ge0$, where the second curve is $y=6-x$. Intersections satisfy
+$$
+x^2=6-x,
+$$
+so
+$$
+x^2+x-6=(x-2)(x+3)=0.
+$$
+The nonnegative solution is $x=2$, giving $y=4$. Reflection across the $y$-axis gives the second point $(-2,4)$.
+:::
+
+<1>2. A horizontal cross-section of the rotated solid has radius
+$$
+R(y)=
+\begin{cases}
+\sqrt y,&0\le y\le4,\\
+6-y,&4\le y\le6.
+\end{cases}
+$$
+
+::: {.proof}
+The parabola gives $|x|=\sqrt y$, while the graph $y=6-|x|$ gives $|x|=6-y$. The bounded region uses the smaller of these two radii. They are equal at $y=4$ by step <1>1; below $4$ one has $\sqrt y\le6-y$, and above $4$ one has $6-y\le\sqrt y$.
+:::
+
+<1>3. The volume is
+$$
+\boxed{\frac{32}{3}\pi},
+$$
+so the answer is (A).
+
+::: {.proof}
+Using the disk method and step <1>2,
+$$
+\begin{aligned}
+V
+&=\pi\int_0^4 y\,dy+\pi\int_4^6(6-y)^2\,dy\\
+&=\pi\left[\frac{y^2}{2}\right]_0^4
++\pi\left[-\frac{(6-y)^3}{3}\right]_4^6\\
+&=8\pi+\frac{8\pi}{3}
+=\frac{32\pi}{3}.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested volume and corresponding choice.
+:::
+:::
