@@ -937,6 +937,26 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   and leaves left/right Noetherian notions for separate definitions if they
   are ever needed.
 
+### Group action had two defining cards
+
+- **Object and need:** `D-WYC7C` and `D-3T6O2` in
+  `corpus/theory/Algebra`. Both cards independently defined a group action,
+  while `D-3T6O2` also contained the distinct action/homomorphism
+  correspondence.
+- **Observed evidence:** both complete cards used the same axioms
+  `$e\cdot x=x$` and `$g\cdot(h\cdot x)=(gh)\cdot x$`. `D-WYC7C` additionally
+  owns orbit, stabilizer, and fixed-point definitions and is already the main
+  dependency of the action theorems. Reader-facing links were split between
+  the two cards.
+- **Impact and owner:** duplicate defining occurrences split the canonical
+  concept link, while deleting `D-3T6O2` would discard its useful proposition
+  identifying actions with homomorphisms into `\Aut(X)`.
+- **Uncertainty:** none after reading both live cards; the older candidate
+  `D-BVOUL` is absent from the current tree.
+- **Repair:** the same repair commit keeps `D-WYC7C` as the definition owner,
+  converts `D-3T6O2` to the action/homomorphism proposition, and redirects
+  definitional links to `D-WYC7C`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
