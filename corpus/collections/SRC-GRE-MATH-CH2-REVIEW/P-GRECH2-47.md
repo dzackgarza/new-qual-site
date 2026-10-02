@@ -24,3 +24,55 @@ In the Taylor series expansion (in powers of $x$) of the function $f(x) = e^{x^2
 (D) $\frac{7}{6}$
 (E) $\frac{3}{2}$
 :::
+
+::: {.solution}
+<1>1. Up to terms of degree greater than $3$,
+$$
+e^{x^2}=1+x^2+O(x^4)
+$$
+and
+$$
+e^{-x}=1-x+\frac{x^2}{2}-\frac{x^3}{6}+O(x^4).
+$$
+
+::: {.proof}
+These are the Taylor expansions of the exponential function after substituting $x^2$ and $-x$, respectively.
+:::
+
+<1>2. The coefficient of $x^3$ in $e^{x^2-x}$ is
+$$
+\boxed{-\frac76}.
+$$
+
+::: {.proof}
+Since
+$$
+e^{x^2-x}=e^{x^2}e^{-x},
+$$
+step <1>1 gives
+$$
+\begin{aligned}
+e^{x^2-x}
+&=(1+x^2+O(x^4))
+\left(1-x+\frac{x^2}{2}-\frac{x^3}{6}+O(x^4)\right).
+\end{aligned}
+$$
+The $x^3$ coefficient receives contributions only from
+$1\cdot(-x^3/6)$ and $x^2\cdot(-x)$, so it equals
+$$
+-\frac16-1=-\frac76.
+$$
+:::
+
+<1>3. Therefore the answer is (C).
+
+::: {.proof}
+Step <1>2 gives exactly the coefficient requested in the problem.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 identifies the corresponding choice.
+:::
+:::
