@@ -31,3 +31,58 @@ then $w$ could equal
 (D) $[\arccos(2y - 3x)]^2$
 (E) $\sqrt{2x + 3y}$
 :::
+
+::: {.solution}
+<1>1. If
+$$
+s=3x+2y,
+$$
+then
+$$
+2s_x-3s_y=0.
+$$
+
+::: {.proof}
+The partial derivatives are $s_x=3$ and $s_y=2$, so
+$$
+2s_x-3s_y=2(3)-3(2)=0.
+$$
+:::
+
+<1>2. Every differentiable function of $s=3x+2y$ satisfies the PDE.
+
+::: {.proof}
+Let $w=H(s)$ for a differentiable one-variable function $H$. By the chain rule,
+$$
+w_x=H'(s)s_x,
+\qquad
+w_y=H'(s)s_y.
+$$
+Therefore, by step <1>1,
+$$
+2w_x-3w_y
+=H'(s)(2s_x-3s_y)
+=0.
+$$
+:::
+
+<1>3. The function
+$$
+\boxed{w=e^{\arctan(3x+2y)}}
+$$
+satisfies the PDE, so the answer is (C).
+
+::: {.proof}
+This function has the form $H(3x+2y)$ with
+$$
+H(s)=e^{\arctan s}.
+$$
+Hence step <1>2 applies.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 identifies a listed solution of the given PDE.
+:::
+:::
