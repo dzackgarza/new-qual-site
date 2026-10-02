@@ -35,3 +35,86 @@ Which of these functions is/are continuous at the origin?
 (D) $f_3$ only
 (E) All three
 :::
+
+::: {.solution}
+<1>1. The function $f_1$ is not continuous at $(0,0)$.
+
+::: {.proof}
+At the origin, $x+y=0$, so
+$$
+f_1(0,0)=1.
+$$
+Along the line $y=2x$, for $x\ne0$,
+$$
+f_1(x,2x)
+=\frac{x-2x}{x+2x}
+=-\frac13.
+$$
+Hence
+$$
+\lim_{x\to0}f_1(x,2x)=-\frac13\ne1=f_1(0,0),
+$$
+so $f_1$ is not continuous at the origin.
+:::
+
+<1>2. The function $f_2$ is not continuous at $(0,0)$.
+
+::: {.proof}
+By definition, $f_2(0,0)=0$. Along the line $y=x$, for $x\ne0$,
+$$
+f_2(x,x)
+=\frac{x^2}{x^2+x^2}
+=\frac12.
+$$
+Thus
+$$
+\lim_{x\to0}f_2(x,x)=\frac12\ne0=f_2(0,0),
+$$
+so $f_2$ is not continuous at the origin.
+:::
+
+<1>3. The function $f_3$ is continuous at $(0,0)$.
+
+::: {.proof}
+For $(x,y)\ne(0,0)$, set
+$$
+\rho=\sqrt{x^2+y^2}.
+$$
+Then $|x|\le\rho$ and $|y|\le\rho$, so
+$$
+|x|^3\le \rho x^2,
+\qquad
+|y|^3\le \rho y^2.
+$$
+Therefore
+$$
+\left|f_3(x,y)\right|
+=\frac{|x^3-y^3|}{x^2+y^2}
+\le
+\frac{|x|^3+|y|^3}{x^2+y^2}
+\le
+\frac{\rho(x^2+y^2)}{x^2+y^2}
+=\rho.
+$$
+As $(x,y)\to(0,0)$, one has $\rho\to0$, so the squeeze theorem gives
+$$
+\lim_{(x,y)\to(0,0)}f_3(x,y)=0=f_3(0,0).
+$$
+Hence $f_3$ is continuous at the origin.
+:::
+
+<1>4. Exactly $f_3$ is continuous at the origin, so the answer is
+$$
+\boxed{\text{(D)}}.
+$$
+
+::: {.proof}
+Steps <1>1 and <1>2 exclude $f_1$ and $f_2$, while step <1>3 proves continuity of $f_3$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 identifies precisely which of the three functions is continuous at the origin.
+:::
+:::
