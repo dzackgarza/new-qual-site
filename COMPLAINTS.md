@@ -1922,3 +1922,18 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   groups.
   `PR-6JQ2M` now owns automorphisms of $C_m^n$ and the order of
   $\GL_n(\FF_p)`, leaving `PR-N6S6P` focused on finite cyclic groups.
+
+### PR-O5YUI duplicated the canonical tensor--Hom isomorphism
+
+- **Object and need:** `PR-O5YUI` and `PR-LPJLD` in
+  `corpus/theory/Algebra` stated the same canonical isomorphism
+  `$V^*\otimes_k W\cong\Hom_k(V,W)$` under the same finite-dimensional
+  hypotheses.
+- **Observed evidence:** `PR-O5YUI` differed only by carrying the basis proof
+  and a `variant-of: PR-LPJLD` relation.
+- **Impact and owner:** the same theorem had two proposition addresses, while
+  the useful matrix-unit description in the proof had no statement of its own.
+- **Uncertainty:** none after reading both cards.
+- **Repair:** keep `PR-LPJLD` as the canonical isomorphism and rewrite
+  `PR-O5YUI` as the distinct basis-level proposition sending
+  `$e_i^*\otimes f_j$` to matrix units and giving the explicit inverse.
