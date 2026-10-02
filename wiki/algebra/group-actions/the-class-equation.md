@@ -53,8 +53,6 @@ Consequences for a group $G$ of order $p^k$:
 
 [[FD-XRRNZ]]
 
-[[FF-OL75S]]
-
 ::: {.proof title="of Burnside's lemma"}
 Let $A \da \ts{ (g,x) \in G\cross X \st g\actson x = x }$, and write $\Stab(x) = \ts{g\in G \st gx=x}$ and $\Fix(g) = \ts{x\in X\st gx = x}$.
 

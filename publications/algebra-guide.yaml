@@ -126,7 +126,6 @@ sections:
       - ref: L-354HC
       - ref: PR-PYYRK
       - ref: C-HE5SL
-      - ref: FF-OL75S
   - slug: sylow-theory
     title: Sylow theory
     parent: group-actions-and-counting
