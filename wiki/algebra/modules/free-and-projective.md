@@ -36,8 +36,6 @@ Over a PID, a finitely generated torsion-free module is free, so finitely genera
 
 [[D-RHJMK]]
 
-[[FD-6XJ7D]]
-
 [[PR-RPL4Q]]
 
 ::: {.remark title="Free, projective, flat, torsion-free"}
