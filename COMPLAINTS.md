@@ -1004,6 +1004,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** the same repair commit moves the review prompt to `D-4HEUB`,
   removes duplicate reader-facing references, and deletes `FD-2EUYX`.
 
+### Duplicate simple-group cards D-T2NZ4 and FD-2UWAQ
+
+- **Object and need:** `D-T2NZ4` and `FD-2UWAQ` in
+  `corpus/theory/Algebra`. Both cards define a nontrivial group whose only
+  normal subgroups are the identity subgroup and the whole group.
+- **Observed evidence:** the complete definitions are mathematically
+  identical. `D-T2NZ4` is used by the alternating-group and finite-index
+  arguments; `FD-2UWAQ` is a migrated flashcard. The wiki and algebra guide
+  exposed both, and one flashcard-derived series card still linked to the
+  duplicate.
+- **Impact and owner:** the flashcard duplicate creates a second defining
+  occurrence and splits dependencies.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the prompt and citation to
+  `D-T2NZ4`, redirects the remaining dependency, removes duplicate
+  reader-facing references, and deletes `FD-2UWAQ`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
