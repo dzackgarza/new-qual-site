@@ -24,3 +24,54 @@ What is the slope of the tangent line to the curve $xy(x + y) = x + y^4$ at the 
 (D) $-1$
 (E) $-2$
 :::
+
+::: {.solution}
+<1>1. Along the curve, the derivative satisfies
+$$
+\frac{dy}{dx}
+=\frac{1-2xy-y^2}{x^2+2xy-4y^3}.
+$$
+
+::: {.proof}
+Expand the equation as
+$$
+x^2y+xy^2=x+y^4.
+$$
+Implicit differentiation gives
+$$
+2xy+x^2y'+y^2+2xyy'=1+4y^3y'.
+$$
+Collecting the $y'$ terms yields
+$$
+y'(x^2+2xy-4y^3)=1-2xy-y^2,
+$$
+which gives the displayed formula whenever the denominator is nonzero.
+:::
+
+<1>2. At $(1,1)$, the slope is
+$$
+\boxed{2},
+$$
+so the answer is (A).
+
+::: {.proof}
+At $(1,1)$, the denominator in step <1>1 equals
+$$
+1+2-4=-1\ne0,
+$$
+and the numerator equals
+$$
+1-2-1=-2.
+$$
+Therefore
+$$
+y'(1)=\frac{-2}{-1}=2.
+$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the tangent slope at the specified point and the corresponding choice.
+:::
+:::
