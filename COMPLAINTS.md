@@ -1777,6 +1777,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `FD-J3HIA`, removes duplicate reader-facing references, and deletes
   `FD-QPNDA`.
 
+### Berkeley Spring 2016 Problem 6B has the least-squares sign reversed
+
+- **Object and need:** `P-BKS16-6B` in
+  `SRC-BERKELEY-PRELIM-SPRING-2016`. The printed problem asks for the sign of
+  `$A^T(y-Ax)$` at a nonnegative least-squares minimizer.
+- **Observed evidence:** `Sp16_Exam.pdf` states that
+  `$A^T(y-Ax)$` has nonnegative entries. The vendored
+  `Sp16_Solutions.pdf` instead argues by assuming a negative entry of
+  `$A^T(Ax-y)$` and decreasing the objective, which proves
+  `$A^T(Ax-y)\geq0$`, equivalently `$A^T(y-Ax)\leq0$`.
+- **Impact and owner:** the exam statement is false as printed. For example,
+  with `$A=[1]$`, `$y=-1$`, the feasible minimizer is `$x=0$` but
+  `$A^T(y-Ax)=-1$`. The problem card correctly preserves the source wording,
+  so the solution must identify the source error rather than silently reverse
+  the statement.
+- **Uncertainty:** none; the one-dimensional counterexample and the supplied
+  solution agree on the corrected sign.
+- **Repair:** the solution on `P-BKS16-6B` gives the counterexample and proves
+  the corrected coordinatewise inequality `$A^T(y-Ax)\leq0$`, while a remark
+  records the discrepancy with the source solution.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
