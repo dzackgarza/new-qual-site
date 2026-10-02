@@ -25,7 +25,3 @@ $$
 \# (X/G) = \frac{1}{\# G}\sum_{g\in G} \# \Fix(g).
 $$
 :::
-
-::: {.remark}
-The number of orbits is the average over $G$ of the number of fixed points.
-:::
