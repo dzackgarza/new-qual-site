@@ -16,14 +16,10 @@ review: draft
 ---
 
 ::: {.example}
-For every integer $n\ge2$, there are distinct real $2\times2$ matrices with the same $n$th power.
-Let
+For square matrices $A,B$ and $n\ge2$, $A^n=B^n$ does not imply $A=B$.
+In $\Mat_2(\RR)$, let
 $$
-R_n=
-\begin{bmatrix}
-\cos(2\pi/n)&-\sin(2\pi/n)\\
-\sin(2\pi/n)&\cos(2\pi/n)
-\end{bmatrix}.
+M=\matt 0 1 1 0 .
 $$
-This is rotation through angle $2\pi/n$, so $R_n^n=I_2=I_2^n$, while $R_n\ne I_2$.
+Then $M^2=I=I^2$, but $M\ne I$.
 :::
