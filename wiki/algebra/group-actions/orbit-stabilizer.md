@@ -72,8 +72,6 @@ $$
 
 [[D-KGGWK]]
 
-[[FD-KSKDG]]
-
 ## The orbit-stabilizer theorem
 
 [[PR-GSDKO]]

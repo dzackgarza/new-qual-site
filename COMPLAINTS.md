@@ -1252,6 +1252,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   proposition/proof to `D-WYC7C`, removes duplicate reader-facing references,
   and deletes `FD-IGEOR`.
 
+### Duplicate transitive-action cards D-KGGWK and FD-KSKDG
+
+- **Object and need:** `D-KGGWK` and `FD-KSKDG` in
+  `corpus/theory/Algebra`. Both define transitivity of a group action by the
+  condition that for every `$x,y\in X$` some `$g\in G$` satisfies
+  `$g\cdot x=y$`.
+- **Observed evidence:** the definitions are identical. `D-KGGWK` is the
+  dependency used by transitive subgroups, covering-space theory, and the
+  canonical group-action card; the wiki displayed `FD-KSKDG` beside it.
+- **Impact and owner:** the flashcard adds no distinct mathematics and creates
+  a second defining occurrence.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `D-KGGWK`,
+  removes the duplicate wiki link, and deletes `FD-KSKDG`.
+
 ### FD-J3HIA treated $K(\alpha)$ as a variant of $K[\alpha]$
 
 - **Object and need:** `FD-J3HIA`, generated subfield `$K(\alpha)$`, and
