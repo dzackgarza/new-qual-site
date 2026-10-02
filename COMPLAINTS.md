@@ -1038,6 +1038,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   prompt to `D-5JYEI`, removes duplicate reader-facing references, and deletes
   `FD-4GFTY`.
 
+### Duplicate irreducible-element cards D-TO3IY and FD-6LLJF
+
+- **Object and need:** `D-TO3IY` and `FD-6LLJF` in
+  `corpus/theory/Algebra`. Both define a nonzero nonunit `$r$` to be
+  irreducible when every factorization `$r=ab$` has a unit factor.
+- **Observed evidence:** the complete definitions are mathematically
+  identical. `D-TO3IY` is used by the UFD and prime-element material;
+  `FD-6LLJF` is a migrated flashcard and the wiki displayed it beside the
+  canonical card.
+- **Impact and owner:** the flashcard duplicate creates a second defining
+  occurrence without additional mathematics.
+- **Uncertainty:** none after reading both complete cards.
+- **Repair:** the same repair commit moves the review prompt to `D-TO3IY`,
+  removes the duplicate wiki link, and deletes `FD-6LLJF`.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
