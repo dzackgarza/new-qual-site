@@ -1041,6 +1041,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   characterization/proof to `D-HY7UU`, removes duplicate reader-facing
   references, and deletes `FD-S2W5E`.
 
+### Duplicate torsion-free-module card FD-U6KUJ
+
+- **Object and need:** `D-ZJJ7G` and `FD-U6KUJ` in
+  `corpus/theory/Algebra`. `D-ZJJ7G` already defines torsion-free modules;
+  `FD-U6KUJ` restates the integral-domain special case as vanishing of the
+  torsion submodule.
+- **Observed evidence:** over an integral domain the torsion set on `D-ZJJ7G`
+  is exactly the torsion submodule of `FD-BPUNZ`, so `$M_t=\{0\}$` and
+  `$\tor(M)=0$` are the same condition. The wiki and algebra guide exposed
+  both definitions.
+- **Impact and owner:** the flashcard adds no distinct mathematics and splits
+  the definition of torsion-free modules.
+- **Uncertainty:** none after reading the canonical torsion card, the
+  domain-specific torsion-submodule card, and `FD-U6KUJ`.
+- **Repair:** the same repair commit moves the review prompt to `D-ZJJ7G`,
+  removes duplicate reader-facing references, and deletes `FD-U6KUJ`.
+
 ### Duplicate simple-group cards D-T2NZ4 and FD-2UWAQ
 
 - **Object and need:** `D-T2NZ4` and `FD-2UWAQ` in

@@ -22,7 +22,7 @@ An $R$-module is [[D-LIEMF|free]] if it has a basis, equivalently if it is isomo
 
 [[FF-CY5EA]]
 
-[[FD-BPUNZ]] [[FD-U6KUJ]]
+[[FD-BPUNZ]]
 
 [[FD-SK4ON]]
 

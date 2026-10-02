@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-ZJJ7G
 kind: definition
 title: Torsion elements, torsion modules, and torsion-free modules
+prompts:
+- What does it mean for a module to be torsion-free?
 classification:
   areas:
   - algebra
