@@ -1993,3 +1993,20 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** keep `PR-GXII2` as the canonical trace-pairing isomorphism and
   rewrite `PR-TGFTL` as the distinct matrix-unit duality proposition, with a
   `related-to` relation.
+
+### GRE Chapter 2 answer 38 gives the wrong exceptional exponent
+
+- **Object and need:** the external answer to Chapter 2 review question 38 in
+  `assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md`,
+  used when reviewing `P-GRECH2-38`.
+- **Observed evidence:** after substituting $u=\log x$, the source writes
+  $\int u^{-n}\,du$ with the power-rule branch for $n\ne-1$ and the logarithmic
+  branch for $n=-1$. The logarithmic exceptional case is instead $n=1$.
+- **Impact and owner:** the source solution contains a mathematical typo in its
+  antiderivative case split. The corpus solution must not reproduce it.
+- **Expected result:** the authored proof treats $n=1$ as the exceptional case
+  and derives convergence exactly for $n>1$.
+- **Uncertainty:** none.
+- **Repair:** `P-GRECH2-38` handles $n=1$ separately and derives
+  $\int_e^\infty dx/(x(\log x)^n)=1/(n-1)$ for the convergent range; the
+  external source is left unchanged.
