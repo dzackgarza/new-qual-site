@@ -28,3 +28,70 @@ What positive value of $a$ satisfies the following equation?
 (D) $e$
 (E) $e^2$
 :::
+
+::: {.solution}
+<1>1. For $a>0$ and $x>0$,
+$$
+\int_a^{ax}\frac{dy}{y}=\log x.
+$$
+
+::: {.proof}
+Direct evaluation gives
+$$
+\int_a^{ax}\frac{dy}{y}
+=\log(ax)-\log a
+=\log x.
+$$
+:::
+
+<1>2. Any positive $a$ satisfying the equation must have $a>1$, and the equation becomes
+$$
+\int_e^{a^e}\frac{dx}{x\log x}=1.
+$$
+
+::: {.proof}
+Step <1>1 gives the displayed integrand. If $0<a\le1$, then $a^e\le1$, so the interval from $e$ to $a^e$ reaches the singular point $x=1$ of $1/(x\log x)$; the corresponding improper integral does not converge to a finite value. Hence a solution must satisfy $a>1$, and step <1>1 reduces the original equation to the displayed one.
+:::
+
+<1>3. The equation in step <1>2 is equivalent to
+$$
+\log(e\log a)=1.
+$$
+
+::: {.proof}
+For $x>1$,
+$$
+\frac{d}{dx}\log(\log x)=\frac1{x\log x}.
+$$
+Therefore
+$$
+\begin{aligned}
+1
+&=\left[\log(\log x)\right]_e^{a^e}\\
+&=\log(\log(a^e))-\log(\log e)\\
+&=\log(e\log a),
+\end{aligned}
+$$
+because $\log e=1$.
+:::
+
+<1>4. The unique positive solution is
+$$
+\boxed{a=e},
+$$
+so the answer is (D).
+
+::: {.proof}
+Exponentiating step <1>3 gives
+$$
+e\log a=e,
+$$
+so $\log a=1$ and hence $a=e$. This value is admissible and therefore is the unique solution.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested positive value and corresponding choice.
+:::
+:::
