@@ -24,3 +24,122 @@ audit:
    \prod_{i=2}^n\lambda_i=n.
    \]
 :::
+
+::: {.solution}
+<1>1. One has
+$$
+\boxed{P_{n-1}(1)=n}.
+$$
+
+::: {.proof}
+For $x\neq1$,
+$$
+\frac{x^n-1}{x-1}
+=
+1+x+\cdots+x^{n-1}.
+$$
+The right-hand side is a polynomial and therefore gives the polynomial extension of $P_{n-1}$ to $x=1$. Substituting $x=1$ gives
+$$
+P_{n-1}(1)
+=
+\underbrace{1+\cdots+1}_{n\text{ terms}}
+=n.
+$$
+:::
+
+<1>2. Let
+$$
+\zeta\coloneqq e^{2\pi i/n}.
+$$
+After rotating the polygon if necessary, its vertices may be taken to be
+$$
+Q_j=\zeta^{j-1},
+\qquad
+1\leq j\leq n,
+$$
+on the unit circle.
+
+::: {.proof}
+Multiplication by a complex number of modulus $1$ is a Euclidean rotation, so it preserves all chord lengths. A regular $n$-gon on the unit circle has vertices obtained by successive rotations through angle $2\pi/n$, hence after one such overall rotation they have the displayed form.
+:::
+
+<1>3. For $i=2,\ldots,n$,
+$$
+\lambda_i
+=
+|1-\zeta^{i-1}|.
+$$
+
+::: {.proof}
+By step <1>2,
+$$
+Q_1=1,
+\qquad
+Q_i=\zeta^{i-1}.
+$$
+The Euclidean distance between two complex numbers is the modulus of their difference, so
+$$
+\lambda_i
+=
+|Q_i-Q_1|
+=
+|\zeta^{i-1}-1|
+=
+|1-\zeta^{i-1}|.
+$$
+:::
+
+<1>4. The factorization of $x^n-1$ gives
+$$
+P_{n-1}(x)
+=
+\prod_{k=1}^{n-1}(x-\zeta^k).
+$$
+
+::: {.proof}
+The $n$ distinct roots of $x^n-1$ are
+$$
+1,\zeta,\zeta^2,\ldots,\zeta^{n-1}.
+$$
+Hence
+$$
+x^n-1
+=(x-1)\prod_{k=1}^{n-1}(x-\zeta^k).
+$$
+Dividing by $x-1$ yields the displayed identity of polynomials.
+:::
+
+<1>5. The product of the chord lengths is
+$$
+\boxed{\prod_{i=2}^n\lambda_i=n}.
+$$
+
+::: {.proof}
+By step <1>3,
+$$
+\prod_{i=2}^n\lambda_i
+=
+\prod_{k=1}^{n-1}|1-\zeta^k|
+=
+\left|
+\prod_{k=1}^{n-1}(1-\zeta^k)
+\right|.
+$$
+By step <1>4, the product inside the modulus equals $P_{n-1}(1)$. Step <1>1 gives
+$$
+P_{n-1}(1)=n,
+$$
+so
+$$
+\prod_{i=2}^n\lambda_i
+=|n|
+=n.
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part 1, and step <1>5 proves part 2.
+:::
+:::
