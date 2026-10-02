@@ -25,3 +25,33 @@ The linear transformation $T\colon \RR^2 \to \RR^2$ that maps $(1, 2)$ to $(-1, 
 (D) $(2, 1)$
 (E) $(1, 1)$
 :::
+
+::: {.solution}
+<1>1. The vector $(1,1)$ decomposes as
+$$
+(1,1)=(1,2)+(0,-1).
+$$
+
+::: {.proof}
+Adding the two vectors on the right gives $(1+0,2-1)=(1,1)$.
+:::
+
+<1>2. One has
+$$
+\boxed{T(1,1)=(1,0)},
+$$
+so the answer is (B).
+
+::: {.proof}
+By linearity and step <1>1,
+$$
+T(1,1)=T(1,2)+T(0,-1)=(-1,1)+(2,-1)=(1,0).
+$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the requested image.
+:::
+:::
