@@ -2795,3 +2795,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   differential-operator computation is exact.
 - **Repair:** `P-HM21B18-PF5-14` gives the corrected complete solution; the
   external source is left unchanged.
+
+### Harvard Math 21b Practice Final 7 Problem 7 prints the wrong normal-equation right-hand side
+
+- **Object and need:** `P-HM21B18-PF7-07` in
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-7`. The problem asks for the
+  least-squares fit of `$z=axy+bx^2$` to three data points.
+- **Observed evidence:** direct inspection of page 11 of
+  `assets/attachments/solution7.pdf` shows the design matrix
+  `$A=\left[\begin{smallmatrix}1&1\\2&1\\0&1\end{smallmatrix}\right]$`, the
+  data vector `$(4,6,8)^T$`, and the printed claim
+  `$A^T(4,6,8)^T=(8,9)^T$`. Direct multiplication gives instead
+  `$A^T(4,6,8)^T=(16,18)^T$`.
+- **Impact and owner:** the printed intermediate normal equation is wrong by a
+  factor of two on its right-hand side. The source's final answer
+  `$a=-1,b=7$` is correct only for the corrected vector `$(16,18)^T`.
+- **Expected result:** use
+  `$\left[\begin{smallmatrix}5&3\\3&3\end{smallmatrix}\right](a,b)^T=(16,18)^T$`
+  and derive the fit `$z=-xy+7x^2$`.
+- **Uncertainty:** none; the retained PDF fixes the printed numbers and the
+  matrix multiplication is exact.
+- **Repair:** `P-HM21B18-PF7-07` derives the least-squares solution from the
+  corrected normal equations; the external source is left unchanged.
