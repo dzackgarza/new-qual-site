@@ -37,6 +37,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Harvard Math 21b Practice Final 5 Problem 3 omits transpose eigenvectors that are forced by the given orthogonal eigenbasis
+
+- **Object and need:** `P-HM21B18-PF5-03` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5`, Problem 3(a). The problem gives
+  $A$ the eigenpairs $2,(1,1)^T$ and $3,(1,-1)^T$ and asks which statements
+  hold for $A^T$, $A^2-A$, and $A^{-1}$.
+- **Observed evidence:** page 8 of `assets/attachments/solution5.pdf` checks that
+  $2,3$ remain eigenvalues of $A^T$ but leaves unchecked the box saying that
+  the two given vectors remain eigenvectors. However the two given eigenvectors
+  are orthogonal and form a basis, so after normalization
+  \[
+  A=Q\operatorname{diag}(2,3)Q^T,
+  \]
+  which is symmetric. Hence $A^T=A$, and both given vectors are necessarily
+  eigenvectors of $A^T$ as well.
+- **Impact and owner:** the source answer table is incomplete for the specific
+  matrix determined by the stated data. The authored solution must use the
+  actual orthogonal eigenbasis rather than the generic fact that transpose
+  eigenvectors need not coincide.
+- **Uncertainty:** none; the two vectors are visibly orthogonal and determine a
+  symmetric diagonalization exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF5-03` checks both boxes for $A^T$ and derives every row of
+  the table independently. Retain this entry as external source errata; the
+  provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 4 Problem 1 omitted statement 20 and gives a false explanation for statement 14
 
 - **Object and need:** `P-HM21B18-PF4-01` /
