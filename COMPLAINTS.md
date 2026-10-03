@@ -37,6 +37,35 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Harvard Math 21b Practice Final 4 Problem 1 omitted statement 20 and gives a false explanation for statement 14
+
+- **Object and need:** `P-HM21B18-PF4-01` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 1. The authored card
+  must contain all twenty true-or-false statements, and its solution must
+  independently verify the source's answers.
+- **Observed evidence:** page 5 of `assets/attachments/solution4.pdf` contains
+  statement 20, “A $3\times3$ matrix $A$ is invertible if and only if all its
+  eigenvalues are positive,” and marks it false; the retained Markdown
+  extraction lost the statement while retaining only its solution sentence,
+  “They can also be negative.” The card consequently declared statement 20
+  unrecovered. On page 4 the source correctly marks statement 14 false but
+  explains that the Jacobian eigenvalues are purely imaginary. Direct
+  differentiation gives
+  \[
+  J(0,0)=\begin{pmatrix}1&0\\1&0\end{pmatrix},
+  \]
+  whose eigenvalues are $1$ and $0$ and whose determinant is zero.
+- **Impact and owner:** the card omitted one requested statement, and copying
+  the supplied explanation for statement 14 would give a mathematically false
+  justification. The owning solution must restore statement 20 from the source
+  page and prove statement 14 by computing the Jacobian.
+- **Uncertainty:** none; both statements and selected truth values are visible
+  in the retained PDF, and the Jacobian calculation is exact.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-01` restores statement 20 and proves all twenty truth
+  values independently. Retain this entry for the external source's erroneous
+  explanation of statement 14; the provenance PDF itself is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
