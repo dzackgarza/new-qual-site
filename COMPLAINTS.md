@@ -37,6 +37,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### GRE Practice Test Question 38 has an impossible condition and an ill-typed composite
+
+- **Object and need:** `P-GREPT-38` / `SRC-GRE-MATH-PRACTICE-TEST`,
+  Question 38. The problem asks which listed conditions would ensure that a
+  function $f:[a,b]\to\mathbb R$, with $a<b$, is constant.
+- **Observed evidence:** condition I says that the inverse of $f$ is constant.
+  If an inverse function exists, then $f^{-1}(f(a))=a$ and
+  $f^{-1}(f(b))=b$, so condition I is impossible. Read as a formal sufficient
+  condition, it therefore implies constancy vacuously, whereas the source
+  solution at lines 17806--17808 discards I because it cannot occur. Condition
+  II quantifies over every real-valued $g$ on $[a,b]$, but $f\circ g$ is not
+  defined when $g([a,b])\nsubseteq[a,b]$; the source implicitly reads the
+  quantifier as ranging over composable self-maps. Condition III is valid and
+  does force constancy.
+- **Impact and owner:** the multiple-choice alternatives do not encode a
+  single literal mathematical reading. Under formal implication I is
+  vacuously sufficient, while II is not well-typed as quantified. The source's
+  answer (D) requires the conventions that impossible I is not counted and
+  that II ranges over composable maps.
+- **Uncertainty:** none about the two formal defects. The intended answer is
+  unambiguous from the retained source explanation.
+- **Repair:** `P-GREPT-38` records the literal defects, proves the substantive
+  sufficiency of II and III, and records (D) as the source-intended answer
+  rather than as a consequence of the statement literally parsed. Retain this
+  entry as source errata.
+
 ### GRE Practice Test Question 24 does not state independence of the two throws
 
 - **Object and need:** `P-GREPT-24` / `SRC-GRE-MATH-PRACTICE-TEST`,
