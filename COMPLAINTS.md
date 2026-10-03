@@ -66,6 +66,33 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   values independently. Retain this entry for the external source's erroneous
   explanation of statement 14; the provenance PDF itself is unchanged.
 
+### Harvard Math 21b Practice Final 4 Problem 4 writes the wrong coefficient matrix
+
+- **Object and need:** `P-HM21B18-PF4-04` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 4. Part (a) asks for
+  the coefficient matrix of the displayed six-variable system.
+- **Observed evidence:** page 8 of `assets/attachments/solution4.pdf` prints
+  the second equation as
+  \[
+  y+2z+2u+v=2,
+  \]
+  so the second row of the coefficient matrix is
+  $(0,1,2,2,1,0)$. Page 9 of the worked solution instead displays
+  $(1,1,2,2,1,1)$, inserting nonexistent $x$ and $w$ coefficients. Direct row
+  reduction of the correct augmented matrix nevertheless gives the same RREF
+  printed later in the source.
+- **Impact and owner:** copying the supplied matrix would answer part (a)
+  incorrectly even though the later RREF and general solution are valid for
+  the original system. The owning solution must transcribe the displayed
+  equations rather than inherit the worked-solution matrix.
+- **Uncertainty:** none; the system and the inconsistent matrix are both
+  legible in the retained PDF, and the correct reduction is an exact row
+  calculation.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-04` uses the correct second row, derives the RREF from it,
+  and recovers the general solution. Retain this entry as external source
+  errata; the provenance PDF itself is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
