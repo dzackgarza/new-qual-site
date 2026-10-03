@@ -37,6 +37,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
+
+- **Object and need:** P-HM21B18-PF3-13 /
+  SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-3, Problem 13(a). The source
+  reduces the modified heat equation to scalar sine-mode equations.
+- **Observed evidence:** in assets/attachments/solution3.pdf, the source
+  defines the spatial eigenvalue by \(\lambda_n=1-n^2\), but then says the
+  heat equation reduces to \(a_n'=-\lambda_n a_n\) with factor
+  \(e^{-\lambda_n t}\). Direct substitution gives
+  \(a_n'=(1-n^2)a_n=\lambda_n a_n\). The source's immediately following
+  displayed solution uses \(e^{(1-n^2)t}\), which has the correct sign.
+- **Impact and owner:** the prose derivation has the wrong sign even though
+  the final displayed answer is correct. The owning solution must derive the
+  mode equation without inheriting the sign error.
+- **Uncertainty:** none; substituting \(a_n(t)\sin(nx)\) into
+  \(u_t=u_{xx}+u\) determines the sign exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-HM21B18-PF3-13 derives
+  \(a_n'=(1-n^2)a_n\) directly and records the source-prose error. Retain this
+  entry as mathematical errata.
+
 ### Harvard Math 21b Practice Final 3 Problem 11 uses an inconclusive linearization at the origin
 
 - **Object and need:** P-HM21B18-PF3-11 /
