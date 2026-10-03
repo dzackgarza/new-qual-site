@@ -77,6 +77,33 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   in a mathematical remark. Retain this entry as external source
   errata/ambiguity; the provenance PDF is unchanged.
 
+### Tate Algebra 250(a), November 5 Problem 7 has the wrong sign in a radical identity
+
+- **Object and need:** `P-TATE85-1105-07` /
+  `SRC-HARVARD-TATE-ALGEBRA-250A-1985`, November 5, 1985, Problem 7. The
+  printed statement identifies
+  $(2+\sqrt2)(3+\sqrt3)$ with
+  $-\sqrt6(1+\sqrt2)(1+\sqrt3)$.
+- **Observed evidence:** line 153 of
+  `assets/attachments/extracted/Tate_Galois_Theory_Problems.md` contains the
+  minus sign. Direct factorization gives
+  $2+\sqrt2=\sqrt2(1+\sqrt2)$ and
+  $3+\sqrt3=\sqrt3(1+\sqrt3)$, hence
+  $(2+\sqrt2)(3+\sqrt3)=+\sqrt6(1+\sqrt2)(1+\sqrt3)$.
+  The same source then defines $\theta=\sqrt{-\alpha}=i\sqrt\alpha$, which is
+  consistent with the positive first expression for $\alpha$.
+- **Impact and owner:** the printed intermediate equality is false. The
+  authored proof should use the first definition of $\alpha$ and record the
+  corrected positive-sign factorization rather than relying on the false
+  equality.
+- **Uncertainty:** none; the sign follows by multiplying the two displayed
+  factorizations exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-TATE85-1105-07` retains the source-faithful problem text, records the
+  sign correction as mathematical errata, and proves the problem from the
+  first definition of $\alpha$. Retain this entry as external source errata;
+  the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 5 Problem 3 omits transpose eigenvectors that are forced by the given orthogonal eigenbasis
 
 - **Object and need:** `P-HM21B18-PF5-03` /
