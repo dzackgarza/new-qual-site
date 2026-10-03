@@ -37,6 +37,36 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Harvard Math 21b Practice Final 3 Problem 1 has three defective worked answers and one card transcription reversal
+
+- **Object and need:** `P-HM21B18-PF3-01` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-3`, Problem 1. The authored
+  statement must match the retained exam, and the solution must independently
+  adjudicate the source's twenty true-or-false answers.
+- **Observed evidence:** `assets/attachments/solution3.pdf`, Problem 1,
+  statement 18 says that the resonant initial-value problem has solutions for
+  which `|x(t)|` becomes arbitrarily large, while the card had reversed this
+  to the assertion that every solution is bounded. In
+  `assets/attachments/solution3_extracted.md`, lines 31--35 answer statement
+  2 by discussing the fact that the zero vector is not an eigenvector rather
+  than proving it lies in every kernel; lines 131--133 mark
+  `e^{-6t}sin(3x)` as a solution of `f_t=2f_{xx}`, although
+  `f_t=-6f` and `2f_{xx}=-18f`; and lines 149--153 declare the nonlinear
+  equilibrium unstable merely because the linearization has zero eigenvalues,
+  which is an inconclusive linearization test.
+- **Impact and owner:** the card's statement 18 changed the source truth value,
+  and copying the source worked answers would give a false answer to statement
+  12 and an invalid justification for statement 14. The owning card must
+  restore the source statement and supply independent arguments.
+- **Uncertainty:** none about these four defects. Statement 18 was checked
+  directly in the retained PDF text layer, and the derivative and explicit
+  nonlinear-flow calculations are exact.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF3-01` restores statement 18, proves all twenty truth
+  values independently, and records the source-solution defects as mathematical
+  errata. Retain this entry as source errata; the provenance PDF itself is not
+  rewritten.
+
 ### GRE Practice Test Question 41 treats a smooth function as its Taylor series
 
 - **Object and need:** `P-GREPT-41` / `SRC-GRE-MATH-PRACTICE-TEST`,
