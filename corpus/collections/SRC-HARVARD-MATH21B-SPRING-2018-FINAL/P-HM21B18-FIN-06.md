@@ -32,3 +32,89 @@ are eigenvectors and find their eigenvalues.
 \vec x(0)=\begin{pmatrix}7\\12\\6\end{pmatrix}.
 \]
 :::
+
+::: {.solution}
+<1>1. The vectors $v_1,v_2,v_3$ have eigenvalues $1,2,6$, respectively.
+
+::: {.proof}
+Direct multiplication gives
+\[
+Av_1
+=
+\begin{pmatrix}1\\0\\0\end{pmatrix}
+=v_1,
+\]
+\[
+Av_2
+=
+\begin{pmatrix}2\\2\\0\end{pmatrix}
+=2v_2,
+\]
+and
+\[
+Av_3
+=
+\begin{pmatrix}6\\18\\12\end{pmatrix}
+=6v_3.
+\]
+Thus the corresponding eigenvalues are $1,2,6$.
+:::
+
+<1>2. The initial vector decomposes as
+\[
+\vec x(0)=v_1+3v_2+3v_3.
+\]
+
+::: {.proof}
+Indeed,
+\[
+v_1+3v_2+3v_3
+=
+\begin{pmatrix}1\\0\\0\end{pmatrix}
++3\begin{pmatrix}1\\1\\0\end{pmatrix}
++3\begin{pmatrix}1\\3\\2\end{pmatrix}
+=
+\begin{pmatrix}7\\12\\6\end{pmatrix}.
+\]
+:::
+
+<1>3. For every integer $t\geq0$,
+\[
+\vec x(t)=v_1+3\cdot2^t v_2+3\cdot6^t v_3.
+\]
+
+::: {.proof}
+The recurrence gives $\vec x(t)=A^t\vec x(0)$. Applying $A^t$ to the
+decomposition in step <1>2 and using the eigenvalue equations from
+step <1>1 yields
+\[
+A^t v_1=1^t v_1,\qquad
+A^t v_2=2^t v_2,\qquad
+A^t v_3=6^t v_3,
+\]
+which proves the displayed formula.
+:::
+
+<1>4. Equivalently, the closed form is
+\[
+\boxed{
+\vec x(t)=
+\begin{pmatrix}
+1+3\cdot2^t+3\cdot6^t\\
+3\cdot2^t+9\cdot6^t\\
+6\cdot6^t
+\end{pmatrix},
+\qquad t\geq0.}
+\]
+
+::: {.proof}
+Expand the expression in step <1>3 using the coordinates of
+$v_1,v_2,v_3$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), and step <1>4 answers part (b).
+:::
+:::
