@@ -37,6 +37,46 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Tate Algebra 250(a), October 22 Problem 1 omits separability from the abelian Galois-group claim
+
+- **Object and need:** `P-TATE85-1022-01` /
+  `SRC-HARVARD-TATE-ALGEBRA-250A-1985`, October 22, 1985, Problem 1. The
+  printed statement says that if $f$ is irreducible and $G_f$ is abelian, then
+  $|G_f|=\deg f$. For the usual splitting-field automorphism group this requires
+  $f$ to be separable, unless separability is built into the course notation
+  $G_f$.
+- **Observed evidence:** line 5 of
+  `assets/attachments/extracted/Tate_Galois_Theory_Problems.md` contains the
+  statement with no separability or distinct-root hypothesis. Over
+  $F=\mathbb F_p(t)$, let $f(X)=X^p-t$. If $t=u^p$, then
+  $[\mathbb F_p(u):\mathbb F_p(u^p)]=p$: after clearing denominators, the
+  monomials $1,u,\ldots,u^{p-1}$ are linearly independent over
+  $\mathbb F_p(u^p)$ because their exponents occupy distinct congruence classes
+  modulo $p$. Hence $f$ is irreducible of degree $p$. But
+  $X^p-t=(X-u)^p$, so the splitting field has only the one root $u$ and every
+  $F$-automorphism fixes it. Thus $G_f$ is trivial and
+  $|G_f|=1\ne p=\deg f$.
+- **Impact and owner:** a proof of the printed statement over arbitrary fields
+  would be invalid. The authored solution must state the intended separability
+  convention, prove the transitive abelian action is regular, and retain the
+  source wording separately from the correction.
+- **Uncertainty:** the course may have treated separability as part of the
+  notation $G_f$. **Searched:** the retained extraction
+  `assets/attachments/extracted/Tate_Galois_Theory_Problems.md` for occurrences
+  of $G_f$, `separable`, `inseparable`, and `distinct roots`. **Found:** no
+  explicit global definition of $G_f$ in that artifact; October 22 Problem
+  2(b) explicitly asks for a polynomial "with distinct roots". **Conclusion:**
+  the local printed statement omits separability unless an external course
+  convention supplies it. **Confidence:** high for the local source text and
+  counterexample; moderate about the undocumented course convention. **Gaps:**
+  lecture notes or prior class definitions not present in the retained
+  provenance.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-TATE85-1022-01` keeps the printed problem unchanged, proves the claim
+  under the separable interpretation, and records the inseparable counterexample
+  in a mathematical remark. Retain this entry as external source
+  errata/ambiguity; the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 5 Problem 3 omits transpose eigenvectors that are forced by the given orthogonal eigenbasis
 
 - **Object and need:** `P-HM21B18-PF5-03` /
