@@ -63,6 +63,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   the table independently. Retain this entry as external source errata; the
   provenance PDF is unchanged.
 
+### Harvard Math 21b Practice Final 5 Problem 1 gives false spectral justifications for statements 14 and 19
+
+- **Object and need:** P-HM21B18-PF5-01 /
+  SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5, statements 14 and 19. The
+  source marks statement 14 false and statement 19 true, but its explanations
+  must justify those truth values.
+- **Observed evidence:** for statement 14 the source says an orthogonal
+  Jacobian has purely imaginary eigenvalues. This is false: $I_2$ is
+  orthogonal and has eigenvalues $1,1$. The statement itself is false because
+  the linear system $z'=I_2z$ has an orthogonal Jacobian at its unstable
+  equilibrium. For statement 19 the source says an idempotent matrix can have
+  eigenvalues $0,1,-1$. If $A^2=A$ and $Av=\lambda v$, then
+  $\lambda^2=\lambda$, so only $0$ and $1$ are possible. The multiplicity
+  conclusion is nevertheless true by the pigeonhole principle for four
+  eigenvalues taking only two possible values.
+- **Impact and owner:** both source truth values happen to be correct, but the
+  supplied explanations assert false spectral facts. The authored solution
+  must replace both arguments rather than reproduce them.
+- **Uncertainty:** none; the counterexample $I_2$ and the identity
+  $\lambda^2=\lambda$ settle the two issues exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-HM21B18-PF5-01 uses $z'=I_2z$ for statement 14 and the idempotent
+  eigenvalue equation for statement 19. Retain this entry as external source
+  errata; the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 5 Problem 10 uses the wrong forcing frequency in its particular-solution ansatz
 
 - **Object and need:** P-HM21B18-PF5-10 /
