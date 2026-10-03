@@ -63,6 +63,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   the table independently. Retain this entry as external source errata; the
   provenance PDF is unchanged.
 
+### Harvard Math 21b Practice Final 5 Problem 10 uses the wrong forcing frequency in its particular-solution ansatz
+
+- **Object and need:** P-HM21B18-PF5-10 /
+  SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5, Problem 10(a). The worked
+  solution derives a particular solution of
+  \[
+  f''+f=3\sin(2t)+1.
+  \]
+- **Observed evidence:** assets/attachments/solution5_extracted.md states that
+  one should try $A\sin t+B$. The term $\sin t$ lies in the kernel of
+  $D^2+1$, so such an ansatz cannot produce a $\sin(2t)$ forcing term. The
+  source's immediately following final solution instead contains
+  $-\sin(2t)+1$, which comes from the correct trial $A\sin(2t)+B$.
+- **Impact and owner:** the displayed final answer is correct, but the stated
+  particular-solution derivation does not yield it. The authored proof must
+  use the forcing frequency $2$.
+- **Uncertainty:** none; substitution into $f''+f$ determines the frequency and
+  coefficient directly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-HM21B18-PF5-10 derives $-\sin(2t)+1$ from the correct ansatz and then
+  imposes the initial conditions. Retain this entry as external source errata;
+  the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 5 Problem 9 gives the wrong shifted eigenvalues in a determinant remark
 
 - **Object and need:** P-HM21B18-PF5-09 /
