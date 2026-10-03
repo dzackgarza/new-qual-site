@@ -37,6 +37,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### GRE Practice Test Question 4 omits conditions on $a$
+
+- **Object and need:** `P-GREPT-04` / `SRC-GRE-MATH-PRACTICE-TEST`,
+  Question 4. The printed statement sets $A=\{\varnothing,a\}$ and
+  $B=\mathcal P(A)$, then asks for the cardinality of $A\cup B$ without
+  specifying what set-theoretic object $a$ is.
+- **Observed evidence:** the retained book extraction at
+  `assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md`
+  prints the statement at lines 16485--16495 and gives answer (B) at lines
+  17470--17474. If $a=\{\varnothing\}$, then
+  $A=\{\varnothing,\{\varnothing\}\}$ and both elements of $A$ already lie
+  in $\mathcal P(A)$, so $|A\cup\mathcal P(A)|=4$. If instead
+  $a=\{\{\varnothing\}\}$, then $a\notin\mathcal P(A)$ and the union has
+  cardinality $5$.
+- **Impact and owner:** the literal statement does not determine a unique
+  multiple-choice answer. The owning solution must record the ambiguity rather
+  than present the source's answer (B) as forced by the printed hypotheses.
+- **Uncertainty:** the source solution evidently treats $a$ as an atom or at
+  least assumes $a\notin\mathcal P(A)$, but the retained statement contains no
+  such convention or hypothesis.
+- **Repair:** `P-GREPT-04` exhibits the two admissible choices of $a$, concludes
+  that the printed problem is underdetermined, and records that the source's
+  answer (B) follows after adding $a\notin\mathcal P(A)$. Retain this entry as
+  source errata; the provenance source itself is not rewritten.
+
 ### Berkeley Spring 2000 Problem 14 permits degenerate intervals
 
 - **Object and need:** `P-BKS00-14` /
