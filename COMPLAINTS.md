@@ -119,6 +119,30 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   initial condition, and derives the same limiting equilibrium independently.
   Retain this entry as external source errata; the provenance PDF is unchanged.
 
+### Harvard Math 21b Practice Final 4 Problem 9(c) is not an eight-queens matrix and has determinant zero
+
+- **Object and need:** `P-HM21B18-PF4-09` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 9(c). The source calls
+  its displayed $8\times8$ matrix a solution of the eight-queens puzzle and
+  asks for its determinant.
+- **Observed evidence:** page 13 of `assets/attachments/solution4.pdf` visibly
+  places entries $2$ in column $4$ of both rows $1$ and $6$, and has no nonzero
+  entry in column $5$. Thus the displayed matrix has a zero fifth column and
+  repeated first and sixth rows, so its determinant is $0$. The worked solution
+  on the following page instead treats the matrix as $2$ times a permutation
+  matrix, counts an even permutation, and reports $2^8=256$.
+- **Impact and owner:** the source prose, displayed matrix, and worked answer
+  cannot all be correct. Solving the literal displayed problem gives
+  determinant $0$; silently replacing it by an unspecified intended queens
+  permutation would change the authored problem.
+- **Uncertainty:** none about the retained display or its determinant. The
+  intended corrected eight-queens permutation is not established by the source
+  material inspected here.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-09` restores the source-displayed matrix and computes its
+  determinant literally as $0$. Retain this entry as external source errata;
+  the provenance PDF itself is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
