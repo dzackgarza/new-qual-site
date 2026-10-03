@@ -26,3 +26,49 @@ $$\int_{0}^{\infty} \frac{e^{-x}}{\sqrt{x}} \, dx$$
 (D) $2\sqrt{\pi}$
 (E) $\frac{1}{4}\pi$
 :::
+
+::: {.solution}
+<1>1. Under the substitution
+$$
+x=u^2,
+$$
+the integral becomes
+$$
+\int_0^\infty\frac{e^{-x}}{\sqrt{x}}\,dx
+=2\int_0^\infty e^{-u^2}\,du.
+$$
+
+::: {.proof}
+For $u\ge0$, the substitution $x=u^2$ gives
+$dx=2u\,du$ and $\sqrt{x}=u$. Therefore
+$$
+\frac{e^{-x}}{\sqrt{x}}\,dx
+=\frac{e^{-u^2}}{u}(2u\,du)
+=2e^{-u^2}\,du.
+$$
+The endpoints $x=0$ and $x\to\infty$ correspond to $u=0$ and
+$u\to\infty$.
+:::
+
+<1>2. Therefore
+$$
+\int_0^\infty\frac{e^{-x}}{\sqrt{x}}\,dx
+=\boxed{\sqrt\pi},
+$$
+so the answer is (C).
+
+::: {.proof}
+Using the given Gaussian integral in step <1>1,
+$$
+2\int_0^\infty e^{-u^2}\,du
+=2\left(\frac12\sqrt\pi\right)
+=\sqrt\pi.
+$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the required value.
+:::
+:::
