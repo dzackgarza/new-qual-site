@@ -37,6 +37,28 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Harvard Math 21b Practice Final 3 Problem 11 uses an inconclusive linearization at the origin
+
+- **Object and need:** P-HM21B18-PF3-11 /
+  SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-3, Problem 11(c). The source
+  asks for stability analysis of all three nonlinear equilibria.
+- **Observed evidence:** page 16 of assets/attachments/solution3.pdf computes
+  \[
+  J(0,0)=\begin{pmatrix}0&1\\0&0\end{pmatrix}
+  \]
+  and then states that $(0,0)$ is not stable. Both eigenvalues of this
+  Jacobian are zero, so the hyperbolic linearization theorem is inapplicable
+  and the displayed calculation does not establish the stated conclusion.
+- **Impact and owner:** the source's conclusion is correct, but its argument
+  does not prove the nonlinear stability claim. A nonlinear argument is
+  required in the owning authored solution.
+- **Uncertainty:** none about the proof gap. The invariant region
+  \(0<x<1,\ x^2<y<x\) contains arbitrarily small initial data and its
+  trajectories converge to $(1,1)$, proving instability of the origin.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-HM21B18-PF3-11 supplies the invariant-region proof and retains the
+  source portrait choice A. Retain this entry as mathematical errata.
+
 ### Harvard Math 21b Practice Final 3 Problem 7 repeats the wrong eigenvector in the initial-value decomposition
 
 - **Object and need:** `P-HM21B18-PF3-07` /
