@@ -170,6 +170,28 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   accepted choice while stating that no candidate is exact. Retain this entry
   as external source errata; the provenance PDF is unchanged.
 
+### Harvard Math 21b Practice Final 4 Problem 12 substitutes the wrong cosine argument in the Fourier coefficient integral
+
+- **Object and need:** `P-HM21B18-PF4-12` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 12(a). The worked
+  solution computes the cosine coefficients of $|x|-\pi/2$.
+- **Observed evidence:** page 17 of `assets/attachments/solution4.pdf` displays
+  an integral with $x\cos(n\pi)$ where the Fourier coefficient requires
+  $x\cos(nx)$. The immediately following value
+  \[
+  \frac{2}{\pi n^2}(\cos(n\pi)-1)
+  \]
+  is the result of integrating $x\cos(nx)$, not $x\cos(n\pi)$.
+- **Impact and owner:** the displayed intermediate formula is false as written,
+  although the final coefficient is correct. The authored solution must derive
+  the coefficient from the proper Fourier integrand.
+- **Uncertainty:** none; the source display and the integration-by-parts
+  calculation are both explicit.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-12` uses $\cos(nx)$ and derives the source's final
+  coefficient independently. Retain this entry as external source errata; the
+  provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
