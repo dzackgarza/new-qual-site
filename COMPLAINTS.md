@@ -2769,3 +2769,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-GRECH7-46` proves the full solution set and explains why no
   retained answer choice is correct as printed; the external source is left
   unchanged.
+
+### Harvard Math 21b Practice Final 5 Problem 14 source solution solves the wrong characteristic roots and particular coefficient
+
+- **Object and need:** `P-HM21B18-PF5-14` in
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5`. The problem asks for the
+  general solution of `$D^{30}f-f=\sin(2t)$`.
+- **Observed evidence:** direct inspection of page 18 of
+  `assets/attachments/solution5.pdf` shows the supplied solution using modes
+  `$e^{2\pi i k t/30}$`. The characteristic roots are instead
+  `$\zeta_k=e^{2\pi i k/30}$`, so the homogeneous modes are
+  `$e^{\zeta_k t}$`. The same source then gives the particular coefficient
+  `$1/(2^{30}-1)$`, but
+  `$D^{30}\sin(2t)=-2^{30}\sin(2t)$`; hence
+  `$(D^{30}-1)(A\sin(2t))=-A(2^{30}+1)\sin(2t)$` and the required coefficient
+  is `$A=-1/(2^{30}+1)$`.
+- **Impact and owner:** both the homogeneous exponentials and the particular
+  solution in the supplied source answer are mathematically incorrect. The
+  corpus solution must derive both from the characteristic polynomial rather
+  than reproduce the source answer.
+- **Expected result:** the authored solution uses the thirty roots of unity as
+  characteristic roots and the particular solution
+  `$-\sin(2t)/(2^{30}+1)$`.
+- **Uncertainty:** none; the retained PDF fixes the printed formulas and the
+  differential-operator computation is exact.
+- **Repair:** `P-HM21B18-PF5-14` gives the corrected complete solution; the
+  external source is left unchanged.
