@@ -26,3 +26,57 @@ $$\frac{d^4y}{dx^4} + 2\frac{d^3y}{dx^3} + 5\frac{d^2y}{dx^2} = 0$$
 (D) $y = c_1 + c_2x + e^{-x}(c_3 \cos 2x + c_4 \sin 2x)$
 (E) $y = c_1 + e^x(c_2 \cos 2x + c_3 \sin 2x)$
 :::
+
+::: {.solution}
+<1>1. The characteristic polynomial is
+$$
+r^4+2r^3+5r^2
+=r^2(r^2+2r+5).
+$$
+
+::: {.proof}
+Substituting a trial solution $y=e^{rx}$ into the constant-coefficient
+differential equation produces
+$$
+(r^4+2r^3+5r^2)e^{rx}=0.
+$$
+Since $e^{rx}$ is nonzero, the displayed polynomial is the characteristic
+polynomial, and factoring out $r^2$ gives the stated form.
+:::
+
+<1>2. Its roots are
+$$
+r=0\quad\text{with multiplicity }2,
+\qquad
+r=-1\pm2i.
+$$
+
+::: {.proof}
+The factor $r^2$ gives the double root $0$. Completing the square in the
+remaining factor gives
+$$
+r^2+2r+5=(r+1)^2+4,
+$$
+whose roots are $-1\pm2i$.
+:::
+
+<1>3. Therefore the general real solution is
+$$
+\boxed{y=c_1+c_2x+e^{-x}(c_3\cos2x+c_4\sin2x)},
+$$
+so the answer is (D).
+
+::: {.proof}
+The double root $0$ contributes the independent solutions $1$ and $x$.
+The conjugate roots $-1\pm2i$ contribute the real independent solutions
+$e^{-x}\cos2x$ and $e^{-x}\sin2x$. Combining these four solutions with
+arbitrary real coefficients gives the displayed general solution.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the complete four-parameter solution of the fourth-order
+equation.
+:::
+:::
