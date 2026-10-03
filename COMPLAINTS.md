@@ -37,6 +37,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Harvard Math 21b Practice Final 3 Problem 7 repeats the wrong eigenvector in the initial-value decomposition
+
+- **Object and need:** `P-HM21B18-PF3-07` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-3`, Problem 7(c). The source
+  solution decomposes $(3,0,0,0)^T$ into eigenvectors before solving the
+  continuous and discrete systems.
+- **Observed evidence:** page 13 of `assets/attachments/solution3.pdf`
+  displays
+  `(3,0,0,0)^T=(-3/4)(-3,1,1,1)^T+(3/4)(-3,1,1,1)^T`, whose right-hand
+  side is zero. The immediately following formulas instead use
+  $(1,1,1,1)^T$ in the second summand. Direct calculation gives
+  `A(1,1,1,1)^T=0` and
+  `(3,0,0,0)^T=(-3/4)(-3,1,1,1)^T+(3/4)(1,1,1,1)^T`.
+- **Impact and owner:** the displayed decomposition in the source solution is
+  false, although its subsequent formulas reveal the intended correction.
+  The owning authored solution must use the $0$-eigenvector in the second
+  summand.
+- **Uncertainty:** none; the typo is visible in the retained PDF itself and
+  the corrected equality is exact.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF3-07` uses the correct decomposition and records the
+  source typo as mathematical errata. Retain this entry as source errata.
+
 ### Harvard Math 21b Practice Final 3 Problem 1 has three defective worked answers and one card transcription reversal
 
 - **Object and need:** `P-HM21B18-PF3-01` /
