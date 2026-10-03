@@ -36,7 +36,9 @@ $$
 
 (ii) $f ( X ) = X ^ { 3 } + t ^ { 3 } X + t ^ { 2 } ;$
 
-(iii) $f ( X ) = X ^ { 3 } + t ^ { 2 } X + ( t + 1 ) { \mathrm { { ' } } }$
+(iii) $f ( X ) = X ^ { 3 } + t ^ { 2 } X + ( t + 1 ) ;$
+
+<!-- Page-image correction, 2026-10-03: page 1 of Tate_Galois_Theory_Problems.pdf confirms that (iii) ends with +(t+1); the extracted trailing apostrophe was spurious. -->
 
 (f) Show that if the $a _ { i } \in \mathbb { Z }$ , then $d _ { f } \equiv 0$ or 1 (mod 4) (just express $d _ { f }$ in terms of b and c).
 
