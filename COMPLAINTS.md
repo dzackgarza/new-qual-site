@@ -2817,3 +2817,35 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   matrix multiplication is exact.
 - **Repair:** `P-HM21B18-PF7-07` derives the least-squares solution from the
   corrected normal equations; the external source is left unchanged.
+
+### Harvard Math 21b Practice Final 7 Problem 14 has an incorrect QR step and assumes convergence of accumulated Q factors
+
+- **Object and need:** `P-HM21B18-PF7-14` in
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-7`. The problem asks about one QR
+  iteration `$A=QR\mapsto RQ$` and the eigenvectors produced by iteration.
+- **Observed evidence:** direct inspection of page 17 of
+  `assets/attachments/solution7.pdf` shows the supplied part (b) using
+  `$C=\left[\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\right]$` and printing
+  `$T(C)=\frac15\left[\begin{smallmatrix}6&13\\-3&6\end{smallmatrix}\right]$`.
+  With the standard positive-diagonal QR factorization, direct computation
+  gives instead
+  `$T(C)=\frac15\left[\begin{smallmatrix}14&3\\3&6\end{smallmatrix}\right]$`.
+  The printed matrix cannot be correct under any orthogonal QR step for this
+  symmetric `$C$`, because `$T(C)=Q^TCQ$` must remain symmetric. The supplied
+  part (d) also writes `$\lim_k Q_1\cdots Q_k$` without deriving existence of
+  that limit from the only convergence granted in the problem, namely
+  `$A_k\to D$`.
+- **Impact and owner:** the numerical counterexample offered for nonlinearity
+  contains a wrong QR iterate, and the eigenvector argument assumes an extra
+  convergence statement. Neither defect changes the requested conclusions.
+- **Expected result:** prove nonlinearity with an explicitly checked QR
+  counterexample. For the eigenvectors, write
+  `$A_k=S_k^TAS_k$`, `$S_k=Q_1\cdots Q_k$`; compactness of `$O(n)$` gives a
+  convergent subsequence `$S_{k_j}\to S$`, and `$A_k\to D$` then yields
+  `$D=S^TAS$`, so the columns of `$S$` are an orthonormal eigenbasis.
+- **Uncertainty:** none about the two displayed logical/numerical defects. A
+  full-sequence limit of the accumulated `$Q$` factors can hold under extra QR
+  hypotheses, but it does not follow from the convergence assumption stated in
+  this problem alone.
+- **Repair:** `P-HM21B18-PF7-14` supplies the corrected QR computations and the
+  compactness argument; the external source is left unchanged.
