@@ -32,3 +32,97 @@ What is the smallest number $m$ that makes the statement $f(1) \leq m$ true?
 (D) $6$
 (E) $8$
 :::
+
+::: {.solution}
+<1>1. Define
+$$
+h(x)=
+\begin{cases}
+e^{-1/x^2}, & x\ne0,\\
+0, & x=0.
+\end{cases}
+$$
+Then $h$ is infinitely differentiable on $\RR$ and
+$$
+h^{(n)}(0)=0
+$$
+for every $n\ge0$.
+
+::: {.proof}
+For $x\ne0$, repeated differentiation shows that each derivative has the
+form
+$$
+h^{(n)}(x)=P_n(1/x)e^{-1/x^2}
+$$
+for a polynomial $P_n$. For every integer $N\ge0$,
+$$
+\lim_{x\to0}|x|^{-N}e^{-1/x^2}=0,
+$$
+because with $t=1/x^2$ this becomes a constant power of $t$ times $e^{-t}$
+as $t\to\infty$. Hence every such derivative tends to $0$ at the origin.
+The same estimate, with one additional factor $|x|^{-1}$, shows that the
+difference quotient of each extended derivative at $0$ also tends to $0$.
+Inductively, each derivative therefore extends differentiably across $0$ with
+derivative $0$, proving that $h$ is smooth and flat at $0$.
+:::
+
+<1>2. For every $M>0$, the function
+$$
+f_M(x)=x+x^2+Mh(x)
+$$
+satisfies all three hypotheses of the problem.
+
+::: {.proof}
+By step <1>1, $h^{(n)}(0)=0$ for every $n$. Therefore
+$$
+f_M(0)=0,
+\qquad
+f_M'(0)=1,
+\qquad
+f_M''(0)=2,
+$$
+and for every $n\ge3$,
+$$
+f_M^{(n)}(0)=0
+\le\frac{n!}{2^{n-3}}.
+$$
+:::
+
+<1>3. The values $f_M(1)$ are unbounded above as $M$ varies.
+
+::: {.proof}
+Since $h(1)=e^{-1}$,
+$$
+f_M(1)=1+1+Me^{-1}=2+\frac{M}{e}.
+$$
+This tends to $+\infty$ as $M\to\infty$.
+:::
+
+<1>4. Therefore
+$$
+\boxed{\text{no finite number }m\text{ makes }f(1)\le m\text{ follow from the stated hypotheses}},
+$$
+so none of choices (A)--(E) is correct as written.
+
+::: {.proof}
+Given any proposed finite $m$, choose $M>e(m-2)$. Then the function $f_M$
+from step <1>2 satisfies every printed hypothesis, while step <1>3 gives
+$f_M(1)>m$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves the literal conclusion.
+:::
+:::
+
+::: {.remark}
+The source selects (C) by replacing $f$ with its Taylor series at $0$. If one
+adds a hypothesis guaranteeing that this Taylor series represents $f$ at
+$x=1$, then the stated coefficient bounds give
+$$
+f(1)\le1+1+\sum_{n=3}^{\infty}2^{-(n-3)}=4,
+$$
+which is the source-intended answer.
+:::

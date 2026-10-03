@@ -37,6 +37,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### GRE Practice Test Question 41 treats a smooth function as its Taylor series
+
+- **Object and need:** `P-GREPT-41` / `SRC-GRE-MATH-PRACTICE-TEST`,
+  Question 41. The problem assumes only that $f$ has derivatives of every
+  order on $\mathbb R$ and bounds the derivatives at $0$, then asks for a
+  universal upper bound on $f(1)$.
+- **Observed evidence:** the retained source solution at lines 17828--17842
+  immediately writes $f(x)=\sum_{n\ge0}f^{(n)}(0)x^n/n!$. Smoothness does not
+  imply equality with the Taylor series. Let
+  $h(0)=0$ and $h(x)=e^{-1/x^2}$ for $x\ne0$; $h$ is smooth and all of its
+  derivatives at $0$ vanish. Then
+  $f_M(x)=x+x^2+Mh(x)$ satisfies all three printed derivative conditions for
+  every $M>0$, but $f_M(1)=2+M/e$ is unbounded above.
+- **Impact and owner:** no finite number $m$ has the stated property, so none
+  of choices (A)--(E) is correct. The source's value $4$ would follow from an
+  additional hypothesis ensuring that the Taylor expansion at $0$ represents
+  $f$ at $x=1$ together with the displayed coefficient bounds.
+- **Uncertainty:** none about the smooth counterexample. The intended analytic
+  or Taylor-representability hypothesis is not present in the retained
+  statement.
+- **Repair:** `P-GREPT-41` proves that the literal values of $f(1)$ are
+  unbounded above and records choice (C) only as the source-intended answer
+  under the missing Taylor-representability hypothesis. Retain this entry as
+  source errata.
+
 ### GRE Practice Test Question 38 has an impossible condition and an ill-typed composite
 
 - **Object and need:** `P-GREPT-38` / `SRC-GRE-MATH-PRACTICE-TEST`,
