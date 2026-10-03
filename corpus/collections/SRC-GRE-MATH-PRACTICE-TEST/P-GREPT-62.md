@@ -24,3 +24,66 @@ If $f\colon \RR \to \RR$ is a bounded function that is Lebesgue integrable, then
 (D) There does not exist an uncountable subset $E$ of $\RR$ such that $f$ is discontinuous at every $x \in E$.
 (E) None of the above.
 :::
+
+::: {.solution}
+Define $f=\mathbf 1_{\QQ}$, the characteristic function of the rational numbers.
+
+<1>1. The function $f$ is bounded and Lebesgue integrable on $\RR$.
+
+::: {.proof}
+The function takes only the values $0$ and $1$, so it is bounded. Since
+$\QQ$ is countable, it has Lebesgue measure zero. Thus $f=0$ almost
+everywhere, and consequently
+\[
+\int_{\RR}|f|\,dx=0.
+\]
+Hence $f$ is Lebesgue integrable.
+:::
+
+<1>2. The function $f$ is discontinuous at every point of $\RR$.
+
+::: {.proof}
+Every interval contains both rational and irrational numbers. Therefore,
+for every $x\in\RR$ and every neighborhood of $x$, the function assumes
+both values $0$ and $1$ in that neighborhood. Hence $f$ is not continuous
+at $x$. Since $x$ was arbitrary, $f$ is nowhere continuous.
+:::
+
+<1>3. The function $f$ is nondifferentiable at every point of $\RR$.
+
+::: {.proof}
+Differentiability at a point implies continuity at that point. Step <1>2
+shows that $f$ is continuous nowhere, so it is differentiable nowhere.
+:::
+
+<1>4. Statement (A) is false.
+
+::: {.proof}
+On the interval $[0,1]$, every nondegenerate subinterval contains both
+rational and irrational points. Hence every lower Darboux sum of $f$ is
+$0$ and every upper Darboux sum is $1$. Thus $f$ is not Riemann integrable
+even on $[0,1]$.
+:::
+
+<1>5. Statements (B), (C), and (D) are false.
+
+::: {.proof}
+By step <1>3, $f$ is nondifferentiable on all of $\RR$. Therefore any
+countably infinite subset of $\RR$ contradicts (B), while the uncountable
+set $E=\RR$ contradicts (C). By step <1>2, the same set $E=\RR$
+contradicts (D).
+:::
+
+<1>6. The correct answer is $\boxed{\text{(E) None of the above}}$.
+
+::: {.proof}
+Step <1>1 supplies a function satisfying the hypotheses, while steps
+<1>4 and <1>5 show that none of statements (A)--(D) must hold.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 gives the required choice.
+:::
+:::
