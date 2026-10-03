@@ -216,6 +216,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   verifies the initial data before superposing the forcing term. Retain this
   entry as external source errata; the provenance PDF is unchanged.
 
+### Harvard Math 21b Practice Final 4 Problem 14 shifts the cyclic eigenvalues by 2 instead of 3 in one sentence
+
+- **Object and need:** `P-HM21B18-PF4-14` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 14. The source writes
+  the displayed $40\times40$ matrix as
+  $L=Q+Q^T+3I_{40}$ for the cyclic shift $Q$ and computes its determinant from
+  the Fourier eigenvalues.
+- **Observed evidence:** page 19 of `assets/attachments/solution4.pdf` first
+  states that the eigenvalues of $L$ are
+  $\lambda_k+\lambda_k^{-1}+2$, although the definition of $L$ requires
+  $3+\lambda_k+\lambda_k^{-1}$. The very next sentence uses the correct value
+  $2\cos(2\pi k/40)+3$, and the printed final determinant agrees with the
+  correct shift.
+- **Impact and owner:** the intermediate eigenvalue formula is inconsistent
+  with both the matrix and the final calculation. The authored solution must
+  derive the eigenvalues directly from $L=Q+Q^T+3I_{40}$.
+- **Uncertainty:** none; applying $L$ to a Fourier eigenvector of $Q$ gives the
+  eigenvalue $3+\lambda_k+\lambda_k^{-1}$ exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-14` derives the correct eigenvalues and evaluates the
+  determinant independently. Retain this entry as external source errata; the
+  provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
