@@ -143,6 +143,33 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   determinant literally as $0$. Retain this entry as external source errata;
   the provenance PDF itself is unchanged.
 
+### Harvard Math 21b Practice Final 4 Problem 11 has no exact correct phase-portrait option
+
+- **Object and need:** `P-HM21B18-PF4-11` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 11(c). The problem asks
+  which of four displayed phase portraits A--D belongs to
+  $x'=x-y^3$, $y'=x^3+y$.
+- **Observed evidence:** page 16 of `assets/attachments/solution4.pdf` explicitly
+  says “None of the phase portrait matches exactly,” while also stating that B
+  was counted as correct because it supplies the intended unstable equilibrium.
+  Independently, the nullclines meet only at $(0,0)$, the Jacobian there is
+  $I_2$, and for every nonzero point
+  \[
+  \dot\theta=\frac{x^4+y^4}{x^2+y^2}>0.
+  \]
+  Moreover, with $V=x^2+y^2$, one has
+  $\dot V\ge2V-V^2>0$ sufficiently near the origin. Thus the exact local
+  portrait has one counterclockwise repelling spiral equilibrium.
+- **Impact and owner:** no displayed candidate represents all required local
+  features, so B is only the source's accepted grading choice rather than a
+  mathematically exact answer.
+- **Uncertainty:** none about the mismatch; the worked source itself records it,
+  and the local phase calculations are exact.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-11` derives the phase behavior and records B as the source's
+  accepted choice while stating that no candidate is exact. Retain this entry
+  as external source errata; the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
