@@ -63,6 +63,39 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   the table independently. Retain this entry as external source errata; the
   provenance PDF is unchanged.
 
+### Harvard Math 21b Practice Final 5 Problem 9 gives the wrong shifted eigenvalues in a determinant remark
+
+- **Object and need:** P-HM21B18-PF5-09 /
+  SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5, Problem 9(b). The worked
+  solution correctly proves the displayed $6\times6$ matrix is singular, then
+  gives an optional eigenvalue argument using $B=A-5I$.
+- **Observed evidence:** assets/attachments/solution5_extracted.md and the
+  retained source solution state that $B$ has four zero eigenvalues together
+  with $5$ and $-1$, and then shift them in the wrong direction to obtain
+  eigenvalues $0,-6,-5,-5,-5,-5$ for $A$. In fact the four-dimensional
+  subspace
+  \[
+  \{(0,x_2,\ldots,x_6):x_2+\cdots+x_6=0\}
+  \]
+  is the zero eigenspace of $B$, while on the span of
+  $e_1$ and $(0,1,1,1,1,1)^T$ the characteristic polynomial is
+  $\lambda^2+4\lambda-5=(\lambda-1)(\lambda+5)$. Thus
+  \[
+  \operatorname{Spec}(B)=\{1,-5,0,0,0,0\},
+  \qquad
+  \operatorname{Spec}(A)=\{6,0,5,5,5,5\}.
+  \]
+- **Impact and owner:** the optional spectral explanation is false as written,
+  although its conclusion $\det A=0$ is already correctly established by a
+  column dependence. The authored solution should not inherit the erroneous
+  eigenvalue remark.
+- **Uncertainty:** none; the two-dimensional restriction and the shift
+  $A=B+5I$ determine the eigenvalues exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-HM21B18-PF5-09 proves singularity directly from the column relation
+  and derives part (c) independently. Retain this entry as external source
+  errata; the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 4 Problem 1 omitted statement 20 and gives a false explanation for statement 14
 
 - **Object and need:** `P-HM21B18-PF4-01` /
