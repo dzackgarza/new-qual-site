@@ -93,6 +93,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   and recovers the general solution. Retain this entry as external source
   errata; the provenance PDF itself is unchanged.
 
+### Harvard Math 21b Practice Final 4 Problem 7 gives a false eigenvector decomposition
+
+- **Object and need:** `P-HM21B18-PF4-07` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 7. Part (b) asks for
+  the closed form of the two-state discrete system with initial state
+  $(100,0)^T$.
+- **Observed evidence:** page 12 of `assets/attachments/solution4.pdf` correctly
+  identifies eigenvectors $(8,9)^T$ for eigenvalue $1$ and $(1,-1)^T$ for
+  eigenvalue $-0.7$, but then prints
+  \[
+  \binom{100}{0}=-100\binom89+900\binom1{-1},
+  \]
+  whose right-hand side is $(100,-1800)^T$. Solving for the coefficients gives
+  $100/17$ and $900/17$ instead. The source's resulting closed form therefore
+  fails the initial condition, although its final normalized equilibrium
+  $(800/17,900/17)^T$ is correct.
+- **Impact and owner:** copying the worked decomposition would make part (b)
+  false at $t=0$. The owning solution must derive the coefficients from the
+  initial vector before applying the eigenvalue powers.
+- **Uncertainty:** none; the false equality is visible in the retained PDF and
+  the corrected coefficients solve a two-by-two linear system exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-07` uses coefficients $100/17$ and $900/17$, verifies the
+  initial condition, and derives the same limiting equilibrium independently.
+  Retain this entry as external source errata; the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
