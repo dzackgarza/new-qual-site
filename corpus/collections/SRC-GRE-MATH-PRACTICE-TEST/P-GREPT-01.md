@@ -24,3 +24,46 @@ If $x^2 + x = 3$, then $x^4 + x =$
 (D) $6(2 - x)$
 (E) $3x$
 :::
+
+::: {.solution}
+<1>1. The given equation implies
+$$
+x^2=3-x.
+$$
+
+::: {.proof}
+Subtracting $x$ from both sides of $x^2+x=3$ gives the stated identity.
+:::
+
+<1>2. One has
+$$
+x^4=12-7x.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+x^4=(x^2)^2=(3-x)^2=9-6x+x^2.
+$$
+Substituting $x^2=3-x$ again gives $x^4=9-6x+3-x=12-7x$.
+:::
+
+<1>3. Therefore
+$$
+x^4+x=\boxed{6(2-x)},
+$$
+so the answer is (D).
+
+::: {.proof}
+By step <1>2,
+$$
+x^4+x=(12-7x)+x=12-6x=6(2-x).
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required expression.
+:::
+:::
