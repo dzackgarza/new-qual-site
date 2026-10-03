@@ -54,3 +54,155 @@ f(x)=\frac{a_0}{\sqrt2}+\sum_{n\ge1}a_n\cos(nx)+b_n\sin(nx),
 \]
 decide which of the assertions $a_0=0$, all $a_n=0$ for $n>0$, and all $b_n=0$ hold for every even $f$, every odd $f$, and every $f$ with no real zeros.
 :::
+
+::: {.solution}
+<1>1. In part (a), only $B$ is diagonalizable over $\mathbb R$.
+
+::: {.proof}
+Let $\omega=e^{2\pi i/5}$. For
+\[
+v=(1,\omega,\omega^2,\omega^3,\omega^4)^T
+\]
+one has $Av=\omega v$. Thus $A$ has a nonreal eigenvalue and cannot be
+diagonalizable over $\mathbb R$.
+
+The matrix $B$ is real symmetric, since $B^T=B$. By the spectral theorem,
+$B$ is diagonalizable over $\mathbb R$.
+
+The matrix $C$ is strictly upper triangular, hence nilpotent, and it is
+nonzero. Therefore its only eigenvalue is $0$. If it were diagonalizable,
+it would be similar to the zero diagonal matrix and hence would itself be
+zero, a contradiction.
+:::
+
+<1>2. In part (b), Loaf has a nonreal eigenvalue, while Boat has only real
+eigenvalues.
+
+::: {.proof}
+The first and sixth coordinates of the Loaf matrix are zero direct
+summands. On the remaining four coordinates its matrix is
+\[
+M=
+\begin{pmatrix}
+0&1&1&0\\
+1&0&0&1\\
+0&1&0&1\\
+0&0&1&0
+\end{pmatrix}.
+\]
+A determinant expansion gives
+\[
+\det(\lambda I-M)
+=\lambda^4-2\lambda^2-2\lambda+1=:q(\lambda).
+\]
+For $s\geq0$,
+\[
+q(-s)=(s^2-1)^2+2s>0,
+\]
+so $q$ has no nonpositive real root. Moreover
+$q(0)=1$, $q(1)=-2$, and $q(2)=5$, so it has at least two positive real
+roots. Descartes' rule of signs gives at most two positive roots. Hence
+exactly two of the four roots of $q$ are real, and the other two form a
+nonreal conjugate pair. Thus Loaf has nonreal eigenvalues.
+
+The Boat matrix is real symmetric, so all of its eigenvalues are real by
+the spectral theorem.
+:::
+
+<1>3. Both sets in part (c) are linear subspaces of $X$.
+
+::: {.proof}
+Evaluation $f\mapsto f(1)$, differentiation followed by evaluation
+$f\mapsto f'(1)$, and the Fourier coefficient functional
+$f\mapsto b_1(f)$ are linear. Therefore
+\[
+\{f:f(1)=b_1(f)\}
+=\ker\bigl(f\mapsto f(1)-b_1(f)\bigr)
+\]
+and
+\[
+\{f:f'(1)=0\}
+=\ker\bigl(f\mapsto f'(1)\bigr)
+\]
+are kernels of linear maps, hence linear subspaces.
+:::
+
+<1>4. Neither map in part (c) is linear.
+
+::: {.proof}
+For $S(f)=a_1(f)f$, take $f(x)=\cos x$. Then $a_1(f)\neq0$, and
+\[
+S(2f)=a_1(2f)(2f)=4a_1(f)f=4S(f)\neq2S(f),
+\]
+so $S$ is not linear.
+
+For $R(f)=\|f\|\sin x$, any nonzero $f$ gives
+\[
+R(-f)=\|-f\|\sin x=\|f\|\sin x=R(f)\neq-R(f).
+\]
+Thus $R$ is not linear.
+:::
+
+<1>5. For every even $f$, all sine coefficients $b_n$ vanish, and neither
+of the two assertions about the cosine coefficients is forced.
+
+::: {.proof}
+If $f$ is even, then $f(x)\sin(nx)$ is odd, so its integral over
+$[-\pi,\pi]$ is zero and hence $b_n=0$ for every $n\geq1$.
+The constant function $1$ is even and has $a_0\neq0$, while $\cos x$ is
+even and has $a_1\neq0$. Therefore neither $a_0=0$ nor
+$a_n=0$ for all $n>0$ holds for every even function.
+:::
+
+<1>6. For every odd $f$, one has $a_0=0$ and $a_n=0$ for all $n>0$, while
+the sine coefficients need not all vanish.
+
+::: {.proof}
+If $f$ is odd, then both $f(x)$ and $f(x)\cos(nx)$ are odd. Their
+integrals over $[-\pi,\pi]$ vanish, giving $a_0=0$ and $a_n=0$ for every
+$n>0$. The odd function $\sin x$ has $b_1\neq0$, so the sine coefficients
+are not forced to vanish.
+:::
+
+<1>7. For a continuous periodic function having no real zeros, none of
+the three Fourier-vanishing assertions is forced.
+
+::: {.proof}
+The function
+\[
+f(x)=3+\cos x+\sin x
+\]
+satisfies
+\[
+f(x)\geq3-\sqrt2>0
+\]
+for every real $x$, so it has no real zeros. Its constant coefficient,
+its first cosine coefficient, and its first sine coefficient are all
+nonzero. Hence none of the three proposed vanishing conditions holds for
+every nowhere-zero function.
+:::
+
+<1>8. The complete answers are
+\[
+\boxed{
+\begin{gathered}
+\text{(a) only }B;\qquad
+\text{(b) Loaf};\\
+\text{(c) both sets are subspaces; both displayed maps are nonlinear};\\
+\text{(d) even: only all }b_n=0;\quad
+\text{odd: }a_0=0\text{ and all }a_n=0\ (n>0);\\
+\text{no real zeros: none of the three conditions is forced.}
+\end{gathered}}
+\]
+
+::: {.proof}
+Steps <1>1 through <1>7 establish the corresponding assertions in parts
+(a)--(d).
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 records all requested decisions.
+:::
+:::
