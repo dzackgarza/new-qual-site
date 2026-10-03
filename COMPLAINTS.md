@@ -37,6 +37,30 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### GRE Practice Test Question 24 does not state independence of the two throws
+
+- **Object and need:** `P-GREPT-24` / `SRC-GRE-MATH-PRACTICE-TEST`,
+  Question 24. The problem specifies the one-throw probabilities of the six
+  faces and asks for the probability of rolling a $5$ followed by a $6$ in
+  two throws.
+- **Observed evidence:** the retained source solution at
+  `assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md`,
+  lines 17636--17640, derives $P(5)=1/9$ and $P(6)=2/9$ and multiplies them,
+  without the printed problem having stated that the two throws are
+  independent. Independence gives $P(5,6)=2/81$, whereas the coupling in
+  which the second outcome always equals the first has the same prescribed
+  marginal distribution on each throw and gives $P(5,6)=0$.
+- **Impact and owner:** the one-throw distribution does not determine the
+  requested joint probability. Literally, choice (E) is correct; choice (A)
+  requires the additional independent-throws hypothesis.
+- **Uncertainty:** ordinary elementary-probability convention often treats
+  repeated die throws as independent, and the source solution plainly uses
+  that convention. The printed statement itself does not include it, despite
+  offering “Cannot be determined” as a choice.
+- **Repair:** `P-GREPT-24` proves the literal underdetermination and records
+  that the source's answer (A) follows under the intended independence
+  assumption. Retain this entry as source errata.
+
 ### GRE Practice Test Question 14 excludes valid nonzero constant solutions
 
 - **Object and need:** `P-GREPT-14` / `SRC-GRE-MATH-PRACTICE-TEST`,
