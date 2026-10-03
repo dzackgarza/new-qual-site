@@ -192,6 +192,30 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   coefficient independently. Retain this entry as external source errata; the
   provenance PDF is unchanged.
 
+### Harvard Math 21b Practice Final 4 Problem 13 uses the wrong wave speed and initial-velocity coefficient
+
+- **Object and need:** `P-HM21B18-PF4-13` /
+  `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4`, Problem 13. The worked
+  solution constructs the homogeneous sine modes for
+  $u_{tt}=9u_{xx}$ and must reproduce the prescribed initial velocity.
+- **Observed evidence:** page 18 of `assets/attachments/solution4.pdf` rewrites
+  the homogeneous equation as $u_{tt}=c^2u_{xx}$ and then states $c=9$, even
+  though $c^2=9$ gives $c=3$ and the source's subsequent frequencies $51$,
+  $30$, $3$, and $9$ all use $c=3$. The same page assigns the velocity mode
+  $-2\sin(3x)$ the term
+  $-(2/3)\sin(3x)\sin(9t)$. Its derivative at $t=0$ is
+  $-6\sin(3x)$, not $-2\sin(3x)$. The required coefficient is $-2/9$.
+- **Impact and owner:** the printed final solution fails one of the initial
+  conditions, and the stated wave speed contradicts both the PDE and the
+  frequencies actually used. The authored solution must derive each temporal
+  frequency and velocity coefficient directly.
+- **Uncertainty:** none; $c^2=9$ and differentiation at $t=0$ determine both
+  corrections exactly.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. `P-HM21B18-PF4-13` uses wave speed $3$ and coefficient $-2/9$, and
+  verifies the initial data before superposing the forcing term. Retain this
+  entry as external source errata; the provenance PDF is unchanged.
+
 ### Harvard Math 21b Practice Final 3 Problem 13 reverses the heat-mode sign in its prose
 
 - **Object and need:** P-HM21B18-PF3-13 /
