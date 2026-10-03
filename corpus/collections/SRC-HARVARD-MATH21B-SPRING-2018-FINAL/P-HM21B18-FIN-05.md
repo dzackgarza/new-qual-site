@@ -22,3 +22,93 @@ best fits the data
 (x,y)=(9,3),(6,1),(-3,1),(0,1).
 \]
 :::
+
+::: {.solution}
+<1>1. The four observations give the least-squares system
+\[
+M
+\begin{pmatrix}a\\b\end{pmatrix}
+\approx
+\begin{pmatrix}2\\2\\2\\2\end{pmatrix},
+\qquad
+M=
+\begin{pmatrix}
+1&-1\\
+2&-1\\
+-1&-1\\
+0&-1
+\end{pmatrix}.
+\]
+
+::: {.proof}
+For each data point, the coefficient of $a$ is $x/(3y)$ and the
+coefficient of $b$ is $-1$. The four values of $x/(3y)$ are
+$1,2,-1,0$, respectively, which gives the displayed matrix.
+:::
+
+<1>2. The normal equations are
+\[
+\begin{pmatrix}
+6&-2\\
+-2&4
+\end{pmatrix}
+\begin{pmatrix}a\\b\end{pmatrix}
+=
+\begin{pmatrix}4\\-8\end{pmatrix}.
+\]
+
+::: {.proof}
+From step <1>1,
+\[
+M^TM=
+\begin{pmatrix}
+1^2+2^2+(-1)^2&-1-2+1\\
+-1-2+1&4
+\end{pmatrix}
+=
+\begin{pmatrix}
+6&-2\\
+-2&4
+\end{pmatrix},
+\]
+and
+\[
+M^T
+\begin{pmatrix}2\\2\\2\\2\end{pmatrix}
+=
+\begin{pmatrix}
+2(1+2-1+0)\\
+-2(1+1+1+1)
+\end{pmatrix}
+=
+\begin{pmatrix}4\\-8\end{pmatrix}.
+\]
+:::
+
+<1>3. The unique least-squares parameters are
+\[
+\boxed{a=0,\qquad b=-2}.
+\]
+
+::: {.proof}
+Substitution into the normal equations of step <1>2 gives
+\[
+\begin{pmatrix}
+6&-2\\
+-2&4
+\end{pmatrix}
+\begin{pmatrix}0\\-2\end{pmatrix}
+=
+\begin{pmatrix}4\\-8\end{pmatrix}.
+\]
+The determinant of the normal-equation matrix is
+$24-4=20\neq0$, so this solution is unique. In fact,
+$M(0,-2)^T=(2,2,2,2)^T$, so the residual is zero.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required least-squares fit.
+:::
+:::
