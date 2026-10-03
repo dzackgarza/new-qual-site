@@ -26,3 +26,65 @@ $$\int_C e^x (\sin y \, dx + \cos y \, dy)$$
 (D) $2e$
 (E) $\pi e$
 :::
+
+::: {.solution}
+<1>1. The differential form
+$$
+e^x\sin y\,dx+e^x\cos y\,dy
+$$
+is exact, with potential
+$$
+F(x,y)=e^x\sin y.
+$$
+
+::: {.proof}
+Direct differentiation gives
+$$
+F_x=e^x\sin y
+\qquad\text{and}\qquad
+F_y=e^x\cos y,
+$$
+which are exactly the coefficients of $dx$ and $dy$ in the integrand.
+:::
+
+<1>2. The curve $C$ starts at $(0,0)$ and ends at $(1,\pi/2)$.
+
+::: {.proof}
+At $t=0$,
+$$
+x=0e^1=0,
+\qquad
+y=\arcsin0=0.
+$$
+At $t=1$,
+$$
+x=1e^0=1,
+\qquad
+y=\arcsin1=\frac\pi2.
+$$
+:::
+
+<1>3. Therefore
+$$
+\int_C e^x(\sin y\,dx+\cos y\,dy)=\boxed{e},
+$$
+so the answer is (B).
+
+::: {.proof}
+By the fundamental theorem for line integrals and steps <1>1--<1>2,
+$$
+\begin{aligned}
+\int_C dF
+&=F(1,\pi/2)-F(0,0)\\
+&=e\sin(\pi/2)-1\sin0\\
+&=e.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required integral.
+:::
+:::
