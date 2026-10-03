@@ -24,3 +24,80 @@ The curves $y = (\sin x + \cos x)^4$ and $y = (\sin x - \cos x)^4$ intersect at 
 (D) $\frac{3\pi}{2}$
 (E) $2\pi$
 :::
+
+::: {.solution}
+<1>1. The two curves intersect exactly when
+$$
+\sin 2x=0.
+$$
+
+::: {.proof}
+Let
+$$
+u=\sin x+\cos x,
+\qquad
+v=\sin x-\cos x.
+$$
+Since $u^4=v^4$ if and only if $u^2=v^2$, intersection is equivalent to
+$$
+0=u^2-v^2=(u-v)(u+v)=4\sin x\cos x=2\sin2x.
+$$
+:::
+
+<1>2. The smallest positive intersection after $x=0$ is
+$$
+a=\frac\pi2.
+$$
+
+::: {.proof}
+By step <1>1, the intersections occur when $2x=k\pi$, hence when
+$x=k\pi/2$. The smallest positive such value is $\pi/2$.
+:::
+
+<1>3. On $0<x<\pi/2$, the difference between the first curve and the second
+is
+$$
+4\sin2x>0.
+$$
+
+::: {.proof}
+Using the notation from step <1>1,
+$$
+u^4-v^4=(u^2-v^2)(u^2+v^2).
+$$
+Now
+$$
+u^2-v^2=2\sin2x
+$$
+and
+$$
+u^2+v^2=2(\sin^2x+\cos^2x)=2.
+$$
+Thus the difference is $4\sin2x$, which is positive on
+$(0,\pi/2)$.
+:::
+
+<1>4. Therefore the area between the curves is
+$$
+\boxed{4},
+$$
+so the answer is (C).
+
+::: {.proof}
+By steps <1>2--<1>3,
+$$
+\begin{aligned}
+A
+&=\int_0^{\pi/2}4\sin2x\,dx\\
+&=\left[-2\cos2x\right]_0^{\pi/2}\\
+&=4.
+\end{aligned}
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the required area.
+:::
+:::
