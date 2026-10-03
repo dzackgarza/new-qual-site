@@ -37,6 +37,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### GRE Practice Test Question 14 excludes valid nonzero constant solutions
+
+- **Object and need:** `P-GREPT-14` / `SRC-GRE-MATH-PRACTICE-TEST`,
+  Question 14. The printed problem asks for the family of all nonzero
+  solutions of $y''=(y')^2$.
+- **Observed evidence:** the retained source solution at
+  `assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md`,
+  lines 17554--17560, sets $u=y'$, solves $u'=u^2$, explicitly says “We
+  ignore the solution $u\equiv0$,” and selects
+  $y=c_2-\log(c_1+x)$. But $u\equiv0$ gives every constant solution
+  $y\equiv C$, and every choice $C\ne0$ is a nonzero solution of the printed
+  differential equation. None of the five listed families contains these
+  constant solutions. Moreover, the full real nonconstant family on an
+  interval is $y=C_2-\log|x+C_1|$, with the interval avoiding the pole.
+- **Impact and owner:** literally, no listed choice is the family of all
+  nonzero solutions. The owning card must classify the literal solutions and
+  distinguish the source's intended nonconstant branch from the stated
+  problem.
+- **Uncertainty:** the source explanation makes the intended reinterpretation
+  clear: “nonzero” is being applied to $u=y'$ rather than to $y$. The printed
+  problem itself does not say “nonconstant” or require $y'\ne0$.
+- **Repair:** `P-GREPT-14` records the complete literal solution family and
+  notes that choice (E) is obtained only after replacing the printed request by
+  the intended nonconstant-solution request and taking a domain where
+  $x+C_1>0$. Retain this entry as source errata.
+
 ### GRE Practice Test Question 4 omits conditions on $a$
 
 - **Object and need:** `P-GREPT-04` / `SRC-GRE-MATH-PRACTICE-TEST`,
