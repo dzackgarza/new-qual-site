@@ -16,12 +16,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be the real matrix displayed in Problem 4 of the UGA Mathematics Preliminary Examination, Fall 2008.
+Let
+$$
+A=\begin{pmatrix}
+-1&0&0\\
+-2&3&-2\\
+-2&3&-2
+\end{pmatrix}.
+$$
 
 Prove that $A$ is diagonalizable and use this fact to compute
 \[
 A^{19}.
 \]
-
-The retained extraction does not preserve the full displayed matrix $A$ reliably, so the matrix entries are left unrecovered rather than reconstructed heuristically.
 :::
