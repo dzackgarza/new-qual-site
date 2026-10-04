@@ -29,42 +29,101 @@ is an ideal of $R$.
 :::
 
 ::: {.solution}
-Proof. (I non-empty)
-[
-0 0
-0 0
-]
-∈I, so I⁄= ∅.
-(I closed under−) Given r =
-[a b
-0 0
-]
-and s =
-[c d
-0 0
-]
-, r−s =
-[a−c b −d
-0 0
-]
-∈I.
-(Sticky) Given r =
-[a b
-0 c
-]
-∈ R and s =
-[x y
-0 0
-]
-, rs =
-[ax ay
-0 0
-]
-∈ I and sr =
-[ax bx +cy
-0 0
-]
-∈ I.
-QED
-Here is problem that uses a deﬁnition you are not expected to have seen before.
+<1>1. The set $I$ is nonempty.
+
+::: {.proof}
+The zero matrix has the required form:
+$$
+\begin{pmatrix}
+0&0\\
+0&0
+\end{pmatrix}\in I.
+$$
+:::
+
+<1>2. The set $I$ is closed under subtraction.
+
+::: {.proof}
+Let
+$$
+A=
+\begin{pmatrix}
+a&b\\
+0&0
+\end{pmatrix},
+\qquad
+B=
+\begin{pmatrix}
+x&y\\
+0&0
+\end{pmatrix}
+$$
+belong to $I$.  Then
+$$
+A-B=
+\begin{pmatrix}
+a-x&b-y\\
+0&0
+\end{pmatrix},
+$$
+which again has the defining form of an element of $I$.
+:::
+
+<1>3. The set $I$ is closed under left multiplication by arbitrary elements
+of $R$.
+
+::: {.proof}
+Let
+$$
+R_0=
+\begin{pmatrix}
+r&s\\
+0&t
+\end{pmatrix}\in R,
+\qquad
+A=
+\begin{pmatrix}
+a&b\\
+0&0
+\end{pmatrix}\in I.
+$$
+Then
+$$
+R_0A=
+\begin{pmatrix}
+ra&rb\\
+0&0
+\end{pmatrix}\in I.
+$$
+:::
+
+<1>4. The set $I$ is closed under right multiplication by arbitrary elements
+of $R$.
+
+::: {.proof}
+With $R_0$ and $A$ as in step <1>3,
+$$
+AR_0=
+\begin{pmatrix}
+ar&as+bt\\
+0&0
+\end{pmatrix}\in I.
+$$
+Thus multiplication on the right also preserves $I$.
+:::
+
+<1>5. Therefore $I$ is a two-sided ideal of $R$.
+
+::: {.proof}
+Steps <1>1 and <1>2 show that $I$ is an additive subgroup of the additive group
+of $R$, using the subtraction criterion.  Steps <1>3 and <1>4 show absorption
+under multiplication by arbitrary elements of $R$ on both sides.  These are
+exactly the two-sided ideal axioms.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
 :::
