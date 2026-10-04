@@ -37,6 +37,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Spring 2015 Question 16 omits the condition that the curve bounds a region inside the domain
+
+- **Object and need:** `P-TIE-S15-16` / `SRC-UGA-CA-COMPILATION`,
+  Spring 2015, Question 16. The source claims that if a nonconstant analytic
+  function on a region \(\Omega\) maps a simple closed curve
+  \(\gamma\subset\Omega\) into \(\mathbb R\), then the function must be
+  constant.
+- **Observed evidence:** lines 587--588 of
+  `assets/attachments/extracted/Questions_from_Tie.md` contain no hypothesis
+  that the Jordan interior of \(\gamma\) lies in \(\Omega\). On
+  \(\Omega=\{1/2<|z|<2\}\), the function
+  \(f(z)=z+z^{-1}\) is holomorphic and nonconstant, while on the unit circle
+  \(\gamma\) one has \(f(e^{i\theta})=2\cos\theta\in\mathbb R\).
+- **Impact and owner:** the printed theorem is false. The standard maximum
+  principle proof is valid once the closed Jordan interior is contained in
+  \(\Omega\).
+- **Uncertainty:** none about the counterexample or the printed local source.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), issue #2.
+  `P-TIE-S15-16` retains the source statement, records the missing hypothesis,
+  gives the annulus counterexample, and proves the corrected theorem.
+
 ### Spring 2015 Question 5 claims a strict bound that fails for the zero polynomial
 
 - **Object and need:** `P-TIE-S15-05` / `SRC-UGA-CA-COMPILATION`,
