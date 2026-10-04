@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 95 uses the stronger Euclidean-function convention
+
+- **Object and need:** P-KSRING17-095 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source asks for the classification of Euclidean domains whose Euclidean function satisfies an ultrametric inequality.
+- **Observed evidence:** line 409 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md states the problem only by saying that \(\varphi\) is a Euclidean function. The repository's current definition card D-NKRGN uses only division with remainder, whereas the standard proof of this classification uses the additional monotonicity axiom \(\varphi(a)\le \varphi(ab)\) for nonzero \(a,b\).
+- **Impact and owner:** the problem is correct under the stronger classical Euclidean-function convention used by many algebra texts; with the repository's weaker convention, the supplied data do not justify the needed unit/minimal-value argument.
+- **Uncertainty:** the retained problem source does not restate its local definition of Euclidean function, so the intended convention must be inferred from the theorem being asked.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-095 records the convention explicitly and proves the theorem under that intended convention.
+
 ### Kent State Ring Theory Problem 78 omits that the principal product is nonzero
 
 - **Object and need:** P-KSRING17-078 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states that if IJ is principal in a domain, then I and J are finitely generated.
