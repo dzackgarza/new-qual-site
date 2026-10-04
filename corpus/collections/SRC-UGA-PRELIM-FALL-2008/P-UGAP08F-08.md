@@ -32,3 +32,100 @@ Give examples of the following. No proofs are required.
 \]
 where $C$ is the unit circle oriented counterclockwise.
 :::
+
+::: {.solution}
+<1>1. For part (a), one example is
+$$
+\boxed{\sum_{n=0}^{\infty} n!(x-5)^n}.
+$$
+
+::: {.proof}
+At $x=5$ every term except the constant term is $0$, so the series converges. If $x\ne5$, then
+$$
+\left|\frac{(n+1)!(x-5)^{n+1}}{n!(x-5)^n}\right|
+=(n+1)|x-5|\to\infty,
+$$
+so the terms do not tend to $0$. Hence the series diverges for every $x\ne5$.
+:::
+
+<1>2. For part (b), take
+$$
+\boxed{f(t)=|t-1|,
+\qquad
+g(t)=1+t.}
+$$
+
+::: {.proof}
+The function $f$ is differentiable at $0$ because near $0$ one has $f(t)=1-t$, and $g$ is differentiable everywhere. But
+$$
+(f\circ g)(t)=|t|,
+$$
+which is not differentiable at $0$.
+:::
+
+<1>3. For part (c), take
+$$
+\boxed{
+f(x,y)=
+\begin{cases}
+\dfrac{xy}{x^2+y^2},&(x,y)\ne(0,0),\\
+0,&(x,y)=(0,0).
+\end{cases}}
+$$
+
+::: {.proof}
+For each fixed $y$, the resulting function of $x$ is continuous, including at $x=0$; similarly for each fixed $x$. However,
+$$
+f(t,t)=\frac12
+$$
+for every $t\ne0$, so $f(t,t)$ does not tend to $f(0,0)=0$ as $t\to0$. Thus $f$ is not continuous at $(0,0)$.
+:::
+
+<1>4. For part (d), define the sequence in successive blocks: for each $k\ge1$, take $k$ consecutive terms equal to $1/k$, followed by $k$ consecutive terms equal to $-1/k$.
+
+::: {.proof}
+The terms tend to $0$ because the absolute value of every term in the $k$th block is $1/k$. At the start of every block the partial sum is $0$; during the first half of the block it increases from $0$ to $1$, and during the second half it decreases from $1$ back to $0$. Hence all partial sums lie in $[0,1]$, but the subsequence of block-end partial sums is constantly $0$ while the subsequence of midpoint partial sums is constantly $1$. Therefore the series diverges although its partial sums are bounded.
+:::
+
+<1>5. For part (e), take
+$$
+\boxed{
+F(x,y)=\left(-\frac{2}{\pi}y,\frac{2}{\pi}x\right).}
+$$
+
+::: {.proof}
+This vector field is continuously differentiable on $\RR^2$. Parametrize the counterclockwise unit circle by
+$$
+x=\cos t,
+\qquad
+y=\sin t,
+\qquad
+0\le t\le2\pi.
+$$
+Then
+$$
+dx=-\sin t\,dt,
+\qquad
+dy=\cos t\,dt,
+$$
+and therefore
+$$
+\begin{aligned}
+\int_C M\,dx+N\,dy
+&=\int_0^{2\pi}
+\left[
+\left(-\frac{2}{\pi}\sin t\right)(-\sin t)
++\left(\frac{2}{\pi}\cos t\right)(\cos t)
+\right]dt\\
+&=\frac{2}{\pi}\int_0^{2\pi}1\,dt\\
+&=4.
+\end{aligned}
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 give examples satisfying parts (a)--(e), respectively.
+:::
+:::
