@@ -18,3 +18,40 @@ audit:
 ::: {.problem}
 State the Maximum Principle.
 :::
+
+::: {.solution}
+<1>1. **Maximum Principle.** Let $\Omega\subseteq\CC$ be a domain and let $f:\Omega\to\CC$ be holomorphic. If $|f|$ attains a local maximum at a point of $\Omega$, then $f$ is constant on $\Omega$.
+
+::: {.proof}
+This is the maximum-modulus principle for holomorphic functions.
+:::
+
+<1>2. Equivalently, if $f$ is nonconstant and holomorphic on a domain $\Omega$, then
+$$
+|f(z)|
+$$
+has no local maximum at any interior point $z\in\Omega$.
+
+::: {.proof}
+This is the contrapositive of step <1>1.
+:::
+
+<1>3. In particular, if $\Omega$ is bounded, $f$ is continuous on $\overline\Omega$, and $f$ is holomorphic on $\Omega$, then
+$$
+\boxed{
+\max_{z\in\overline\Omega}|f(z)|
+=
+\max_{z\in\partial\Omega}|f(z)|}
+$$
+unless $f$ is constant.
+
+::: {.proof}
+Continuity on the compact set $\overline\Omega$ guarantees existence of a maximum. If a nonconstant $f$ attained that maximum at an interior point, step <1>1 would force $f$ to be constant. Hence every maximum occurs on the boundary.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 is the requested theorem statement; steps <1>2--<1>3 record its standard equivalent and boundary forms.
+:::
+:::
