@@ -26,3 +26,316 @@ audit:
 
 (d) Assuming the watermelon rind has a thickness 0.1 of its radius, find what fraction of the total volume of the 20-dimensional watermelon would be occupied by its rind.
 :::
+
+::: {.solution}
+<1>1. The one-dimensional Gaussian integral satisfies
+$$
+\int_{-\infty}^{\infty}e^{-x^2}\,dx
+=
+\sqrt\pi.
+$$
+
+::: {.proof}
+This is the standard Gaussian integral.
+:::
+
+<1>2. Therefore, in $\mathbb R^{n+1}$,
+$$
+\int_{\mathbb R^{n+1}}
+e^{-\|x\|^2}
+\,dx
+=
+\pi^{(n+1)/2}.
+$$
+
+::: {.proof}
+By Fubini's theorem, the integral factors into $n+1$ copies of the
+one-dimensional integral from step <1>1.
+:::
+
+<1>3. Let
+$$
+A_n=\operatorname{Area}(S^n)
+$$
+for the unit $n$-sphere in $\mathbb R^{n+1}$. Polar coordinates give
+$$
+\pi^{(n+1)/2}
+=
+A_n
+\int_0^\infty
+e^{-r^2}r^n
+\,dr.
+$$
+
+::: {.proof}
+In radial coordinates on $\mathbb R^{n+1}$, the volume element is
+$$
+r^n\,dr\,d\omega,
+$$
+where $d\omega$ is surface measure on $S^n$. Integrating over the angular
+variables gives the factor $A_n$.
+:::
+
+<1>4. The radial integral equals
+$$
+\int_0^\infty
+e^{-r^2}r^n
+\,dr
+=
+\frac12
+\Gamma\left(\frac{n+1}{2}\right).
+$$
+
+::: {.proof}
+Set
+$$
+u=r^2.
+$$
+Then
+$$
+dr=\frac{du}{2\sqrt u},
+$$
+and
+$$
+r^n\,dr
+=
+\frac12u^{(n-1)/2}\,du.
+$$
+Thus the integral becomes
+$$
+\frac12
+\int_0^\infty
+e^{-u}u^{(n-1)/2}
+\,du,
+$$
+which is the displayed Gamma value.
+:::
+
+<1>5. Hence
+$$
+\boxed{
+\operatorname{Area}(S^n)
+=
+\frac{2\pi^{(n+1)/2}}
+{\Gamma((n+1)/2)}.
+}
+$$
+
+::: {.proof}
+Solve the identity in step <1>3 for $A_n$ using step <1>4.
+:::
+
+<1>6. Part (a) follows.
+
+::: {.proof}
+This is step <1>5.
+:::
+
+<1>7. Let $V_n(R)$ be the volume of the radius-$R$ ball in $\mathbb R^n$.
+Then
+$$
+V_n(R)=V_n(1)R^n.
+$$
+
+::: {.proof}
+The dilation $x\mapsto Rx$ multiplies every $n$-dimensional volume by $R^n$.
+:::
+
+<1>8. Differentiating step <1>7 with respect to $R$ at $R=1$ gives
+$$
+\operatorname{Area}(S^{n-1})
+=
+nV_n(1).
+$$
+
+::: {.proof}
+The derivative of ball volume with respect to radius is the surface area of
+the boundary sphere. Differentiating
+$$
+V_n(1)R^n
+$$
+at $R=1$ gives $nV_n(1)$.
+:::
+
+<1>9. Therefore
+$$
+V_n
+\coloneqq
+V_n(1)
+=
+\frac1n
+\operatorname{Area}(S^{n-1}).
+$$
+
+::: {.proof}
+Rearrange step <1>8.
+:::
+
+<1>10. Using step <1>5 with $n-1$ in place of $n$,
+$$
+\boxed{
+V_n
+=
+\frac{\pi^{n/2}}
+{\Gamma(n/2+1)}.
+}
+$$
+
+::: {.proof}
+Step <1>5 gives
+$$
+\operatorname{Area}(S^{n-1})
+=
+\frac{2\pi^{n/2}}
+{\Gamma(n/2)}.
+$$
+Hence by step <1>9,
+$$
+V_n
+=
+\frac{2\pi^{n/2}}
+{n\Gamma(n/2)}.
+$$
+Using
+$$
+\Gamma\left(\frac n2+1\right)
+=
+\frac n2\Gamma\left(\frac n2\right)
+$$
+gives the formula.
+:::
+
+<1>11. Part (b) follows.
+
+::: {.proof}
+This is step <1>10.
+:::
+
+<1>12. The inner ball obtained by removing a boundary layer of depth $a$ has
+radius
+$$
+1-a.
+$$
+
+::: {.proof}
+The original ball has radius $1$, so removing an outer layer of radial
+thickness $a$ leaves the concentric ball of radius $1-a$.
+:::
+
+<1>13. Its volume is
+$$
+V_n(1-a)^n.
+$$
+
+::: {.proof}
+Apply the scaling relation from step <1>7 with $R=1-a$.
+:::
+
+<1>14. Therefore the shell volume is
+$$
+V_{n,a}
+=
+V_n
+\left[
+1-(1-a)^n
+\right].
+$$
+
+::: {.proof}
+Subtract the inner-ball volume from the total volume:
+$$
+V_{n,a}
+=
+V_n-V_n(1-a)^n.
+$$
+:::
+
+<1>15. Hence
+$$
+\boxed{
+\frac{V_{n,a}}{V_n}
+=
+1-(1-a)^n.
+}
+$$
+
+::: {.proof}
+Divide step <1>14 by $V_n>0$.
+:::
+
+<1>16. For fixed $0<a<1$,
+$$
+\boxed{
+\lim_{n\to\infty}
+\frac{V_{n,a}}{V_n}
+=1.
+}
+$$
+
+::: {.proof}
+Since
+$$
+0<1-a<1,
+$$
+one has
+$$
+(1-a)^n\to0.
+$$
+Apply step <1>15.
+:::
+
+<1>17. Part (c) follows.
+
+::: {.proof}
+Steps <1>15--<1>16 give the ratio and its high-dimensional limit.
+:::
+
+<1>18. For a $20$-dimensional ball with rind thickness $0.1$ of its radius,
+$$
+\frac{V_{20,0.1}}{V_{20}}
+=
+1-0.9^{20}.
+$$
+
+::: {.proof}
+Substitute
+$$
+n=20,
+\qquad
+a=0.1
+$$
+into step <1>15.
+:::
+
+<1>19. Numerically,
+$$
+0.9^{20}
+=
+0.12157665459\ldots,
+$$
+so
+$$
+\boxed{
+\frac{V_{20,0.1}}{V_{20}}
+=
+0.87842334541\ldots
+\approx87.84\%.
+}
+$$
+
+::: {.proof}
+Evaluate the expression in step <1>18.
+:::
+
+<1>20. Part (d) follows.
+
+::: {.proof}
+This is step <1>19.
+:::
+
+<1>21. Q.E.D.
+
+::: {.proof}
+Steps <1>6, <1>11, <1>17, and <1>20 establish parts (a)--(d).
+:::
+:::
