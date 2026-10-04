@@ -20,3 +20,105 @@ Consider the transformations A, B of the vector space $\mathbb { R } ^ { n }$ sh
 Is this sufficient for their commutator to be zero?
 Is this necessary for their commutator to be zero?
 :::
+
+::: {.solution}
+Interpret “sharing the same eigenvectors” as having a basis of common
+eigenvectors.
+
+<1>1. If $A$ and $B$ have a basis
+$$
+v_1,\ldots,v_n
+$$
+of common eigenvectors, then
+$$
+[A,B]=0.
+$$
+
+::: {.proof}
+For each $j$, write
+$$
+Av_j=\lambda_jv_j,
+\qquad
+Bv_j=\mu_jv_j.
+$$
+Then
+$$
+ABv_j
+=
+A(\mu_jv_j)
+=
+\mu_j\lambda_jv_j,
+$$
+while
+$$
+BAv_j
+=
+B(\lambda_jv_j)
+=
+\lambda_j\mu_jv_j.
+$$
+Hence
+$$
+(AB-BA)v_j=0
+$$
+for every basis vector $v_j$. Therefore
+$$
+AB-BA=0.
+$$
+:::
+
+<1>2. Thus a common eigenbasis is sufficient for the commutator to vanish.
+
+::: {.proof}
+This is step <1>1.
+:::
+
+<1>3. A common eigenbasis is not necessary for two transformations to
+commute.
+
+::: {.proof}
+In $\mathbb R^2$, take
+$$
+A=I,
+\qquad
+B=
+\begin{pmatrix}
+1&1\\
+0&1
+\end{pmatrix}.
+$$
+Since $A=I$,
+$$
+AB=BA=B,
+$$
+so the commutator is zero.
+
+However, $B$ is a nontrivial Jordan block. Its eigenspace is
+$$
+\ker(B-I)
+=
+\operatorname{span}
+\left\{
+\begin{pmatrix}1\\0\end{pmatrix}
+\right\},
+$$
+which is one-dimensional. Thus $B$ has no eigenbasis, and consequently there
+cannot be a basis of common eigenvectors of $A$ and $B$.
+:::
+
+<1>4. Therefore the answers are
+$$
+\boxed{\text{sufficient: yes; necessary: no}.}
+$$
+
+::: {.proof}
+Step <1>2 proves sufficiency, and step <1>3 gives a counterexample to
+necessity.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 answers both questions.
+:::
+:::
