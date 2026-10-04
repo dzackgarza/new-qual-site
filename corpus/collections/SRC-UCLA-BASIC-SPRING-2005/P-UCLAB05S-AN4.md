@@ -25,3 +25,67 @@ Show that
 =\int_0^1|f'(t)|\,dt.
 \]
 :::
+
+::: {.solution}
+<1>1. For each $n\ge1$ and each $1\le j\le n$, there exists
+$$
+\xi_{j,n}\in\left(\frac{j-1}{n},\frac jn\right)
+$$
+such that
+$$
+\left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
+=\frac1n|f'(\xi_{j,n})|.
+$$
+
+::: {.proof}
+Apply the mean value theorem to $f$ on
+$$
+\left[\frac{j-1}{n},\frac jn\right].
+$$
+There is a point $\xi_{j,n}$ in the interior such that
+$$
+f\!\left(\frac jn\right)-f\!\left(\frac{j-1}{n}\right)
+=f'(\xi_{j,n})\frac1n.
+$$
+Taking absolute values gives the claim.
+:::
+
+<1>2. For every $n$,
+$$
+\sum_{j=1}^n
+\left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
+=\sum_{j=1}^n\frac1n|f'(\xi_{j,n})|.
+$$
+
+::: {.proof}
+Sum the identities from step <1>1 over $j=1,\ldots,n$.
+:::
+
+<1>3. The right-hand side in step <1>2 converges to
+$$
+\int_0^1|f'(t)|\,dt.
+$$
+
+::: {.proof}
+Because $f$ is $C^1$, the function $t\mapsto|f'(t)|$ is continuous on $[0,1]$. The sum in step <1>2 is a tagged Riemann sum for this function on the uniform partition of $[0,1]$ into subintervals of length $1/n$. Since the mesh is $1/n\to0$, the Riemann sums converge to the integral.
+:::
+
+<1>4. Therefore
+$$
+\boxed{
+\lim_{n\to\infty}
+\sum_{j=1}^n
+\left|f\!\left(\frac{j-1}{n}\right)-f\!\left(\frac jn\right)\right|
+=\int_0^1|f'(t)|\,dt.}
+$$
+
+::: {.proof}
+Combine steps <1>2 and <1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required limit identity.
+:::
+:::
