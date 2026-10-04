@@ -22,3 +22,175 @@ Calculate the Fourier image $\tilde { f } ( \boldsymbol { k } )$ of the function
 
 (b) $f ( x ) = \left\{ { \begin{array} { l } { e ^ { - a x } , x \geqslant 0 , a > 0 , } \\ { 0 , x < 0 } \end{array} } \right.$
 :::
+
+::: {.remark}
+The source does not restate its Fourier-transform normalization here. The
+solution uses
+$$
+\widetilde f(k)
+=
+\frac1{2\pi}
+\int_{-\infty}^{\infty}
+f(x)e^{-ikx}
+\,dx,
+$$
+with inverse
+$$
+f(x)
+=
+\int_{-\infty}^{\infty}
+\widetilde f(k)e^{ikx}
+\,dk.
+$$
+This convention is consistent with the normalization of the adjacent inverse
+transform problem.
+:::
+
+::: {.solution}
+<1>1. In part (a),
+$$
+\widetilde f(k)
+=
+\frac{f_0}{2\pi}
+\int_{-x_0}^{x_0}
+e^{-ikx}
+\,dx.
+$$
+
+::: {.proof}
+The function equals $f_0$ on $[-x_0,x_0]$ and vanishes elsewhere, so only
+that interval contributes to the Fourier integral.
+:::
+
+<1>2. For $k\neq0$,
+$$
+\int_{-x_0}^{x_0}
+e^{-ikx}
+\,dx
+=
+\frac{2\sin(kx_0)}{k}.
+$$
+
+::: {.proof}
+An antiderivative is
+$$
+\frac{e^{-ikx}}{-ik}.
+$$
+Hence
+$$
+\begin{aligned}
+\int_{-x_0}^{x_0}e^{-ikx}\,dx
+&=
+\frac{e^{-ikx_0}-e^{ikx_0}}{-ik}\\
+&=
+\frac{-2i\sin(kx_0)}{-ik}\\
+&=
+\frac{2\sin(kx_0)}k.
+\end{aligned}
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+\widetilde f(k)
+=
+\frac{f_0}{\pi}
+\frac{\sin(kx_0)}{k}
+}
+$$
+for $k\neq0$.
+
+::: {.proof}
+Substitute step <1>2 into step <1>1.
+:::
+
+<1>4. The continuous value at $k=0$ is
+$$
+\boxed{
+\widetilde f(0)
+=
+\frac{f_0x_0}{\pi}.
+}
+$$
+
+::: {.proof}
+Using
+$$
+\lim_{k\to0}\frac{\sin(kx_0)}k=x_0,
+$$
+step <1>3 extends continuously to the displayed value. Equivalently, set
+$k=0$ directly in step <1>1.
+:::
+
+<1>5. Part (a) follows.
+
+::: {.proof}
+Steps <1>3--<1>4 give the complete transform.
+:::
+
+<1>6. In part (b),
+$$
+\widetilde f(k)
+=
+\frac1{2\pi}
+\int_0^\infty
+e^{-(a+ik)x}
+\,dx.
+$$
+
+::: {.proof}
+The function is zero for $x<0$ and equals $e^{-ax}$ for $x\geq0$. Multiplying
+by the Fourier kernel gives $e^{-(a+ik)x}$.
+:::
+
+<1>7. Since $a>0$,
+$$
+\int_0^\infty
+e^{-(a+ik)x}
+\,dx
+=
+\frac1{a+ik}.
+$$
+
+::: {.proof}
+The real part of $a+ik$ is positive, so the exponential decays at infinity.
+Thus
+$$
+\int_0^\infty e^{-(a+ik)x}\,dx
+=
+\left[
+-\frac{e^{-(a+ik)x}}{a+ik}
+\right]_0^\infty
+=
+\frac1{a+ik}.
+$$
+:::
+
+<1>8. Hence
+$$
+\boxed{
+\widetilde f(k)
+=
+\frac1{2\pi(a+ik)}
+=
+\frac{a-ik}{2\pi(a^2+k^2)}.
+}
+$$
+
+::: {.proof}
+Substitute step <1>7 into step <1>6 and rationalize the denominator.
+:::
+
+<1>9. Part (b) follows.
+
+::: {.proof}
+This is step <1>8.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>5 and <1>9 establish parts (a) and (b), respectively.
+:::
+:::
