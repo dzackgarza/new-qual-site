@@ -26,3 +26,109 @@ Find $\dim V+\dim W$.
 
 (A) $4$  (B) $5$  (C) $6$  (D) $7$  (E) $8$
 :::
+
+::: {.solution}
+<1>1. The vector space $V$ has dimension $4$.
+
+::: {.proof}
+Every polynomial in $V$ has the form
+$$
+a_0+a_1x+a_2x^2+a_3x^3.
+$$
+Thus
+$$
+\{1,x,x^2,x^3\}
+$$
+is a basis of $V$.
+Hence
+$$
+\dim V=4.
+$$
+:::
+
+<1>2. Every polynomial $p\in W$ is divisible by
+$$
+x(x-1)(x+1)=x^3-x.
+$$
+
+::: {.proof}
+The conditions
+$$
+p(0)=p(1)=p(-1)=0
+$$
+show that $0$, $1$, and $-1$ are roots of $p$.
+By the factor theorem,
+$$
+x,
+\quad
+x-1,
+\quad
+x+1
+$$
+all divide $p$.
+These factors are pairwise relatively prime, so their product divides $p$.
+Thus
+$$
+x(x-1)(x+1)=x^3-x
+$$
+divides $p$.
+:::
+
+<1>3. Every polynomial in $W$ is a scalar multiple of $x^3-x$.
+
+::: {.proof}
+By step <1>2,
+$$
+p(x)=(x^3-x)q(x)
+$$
+for some real polynomial $q$.
+If $p\ne0$, then
+$$
+\deg p\le3
+$$
+while
+$$
+\deg(x^3-x)=3.
+$$
+Therefore
+$$
+\deg q=0,
+$$
+so $q$ is a scalar.
+The zero polynomial is also a scalar multiple of $x^3-x$.
+Hence
+$$
+W=\operatorname{span}\{x^3-x\}.
+$$
+:::
+
+<1>4. Therefore
+$$
+\dim W=1.
+$$
+
+::: {.proof}
+The polynomial
+$$
+x^3-x
+$$
+is nonzero and spans $W$ by step <1>3.
+Thus it is a basis of $W$.
+:::
+
+<1>5. Consequently,
+$$
+\boxed{\dim V+\dim W=4+1=5}.
+$$
+
+::: {.proof}
+Combine steps <1>1 and <1>4.
+This is answer choice $\boxed{\text{(B)}}$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required value.
+:::
+:::
