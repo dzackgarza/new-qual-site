@@ -22,11 +22,84 @@ audit:
 :::
 
 ::: {.solution}
-Proof.
-(a) To be reducible,f must either have a degree one factor (and hence have a root in F2), orf must be a product of two irreducible factors of degree two.
-But f(0) =f(1) = 1 so f has no roots in F2. Hence f is the product of two irreducible quadratic factors.
-The possible quadratic polynomials are X 2, X 2 + 1, X 2 +X and X 2 +X + 1. The ﬁrst and third are clearly reducible, and over F2, we have X 2 + 1 = (X + 1)2, so X 2 +X + 1 is the only quadratic irreducible polynomial.
-Then an explicit calculation (made easier by using (a +b)2 =a2 +b2 since we are working over F2) shows that f(X) = (X 2 +X + 1)(X 2 +X + 1). QED (b) Since degg = 3, we know that g is reducible if and only if it has no roots.
-Checking shows: g(0) = 03 + 2(02) + 2(0) + 3 = 0 + 0 + 0 + 3 = 3⁄= 0 g(1) = 13 + 2(12) + 2(1) + 3 = 1 + 2 + 2 + 3 = 3⁄= 0 g(2) = 23 + 2(22) + 2(2) + 3 = 3 + 3 + 4 + 3 = 3⁄= 0 g(3) = 33 + 2(32) + 2(3) + 3 = 2 + 3 + 1 + 3 = 4⁄= 0 g(4) = 43 + 2(42) + 2(4) + 3 = 4 + 2 + 3 + 3 = 2⁄= 0 Since g(a)⁄= 0 for all a∈ F5, it follows that g is irreducible.
-QED
+<1>1. In $\FF_2[X]$,
+$$
+X^4+X^2+1=(X^2+X+1)^2.
+$$
+
+::: {.proof}
+Because the characteristic is $2$,
+$$
+(a+b+c)^2=a^2+b^2+c^2
+$$
+for all $a,b,c\in\FF_2[X]$.  Therefore
+$$
+(X^2+X+1)^2
+=X^4+X^2+1.
+$$
+:::
+
+<1>2. The polynomial $f(X)=X^4+X^2+1$ is reducible in $\FF_2[X]$.
+
+::: {.proof}
+Step <1>1 expresses $f$ as a product of two degree-$2$ polynomials:
+$$
+f=(X^2+X+1)(X^2+X+1).
+$$
+Both factors have positive degree strictly less than $4$, so this is a
+nontrivial factorization.
+:::
+
+<1>3. Part (a) follows.
+
+::: {.proof}
+This is step <1>2.
+:::
+
+<1>4. The cubic
+$$
+g(X)=X^3+2X^2+2X+3
+$$
+has no root in $\FF_5$.
+
+::: {.proof}
+Evaluating at the five elements of $\FF_5$ gives
+$$
+g(0)=3,
+$$
+$$
+g(1)=1+2+2+3=8\equiv3\pmod5,
+$$
+$$
+g(2)=8+8+4+3=23\equiv3\pmod5,
+$$
+$$
+g(3)=27+18+6+3=54\equiv4\pmod5,
+$$
+and
+$$
+g(4)=64+32+8+3=107\equiv2\pmod5.
+$$
+None of these values is zero.
+:::
+
+<1>5. The polynomial $g$ is irreducible in $\FF_5[X]$.
+
+::: {.proof}
+A cubic polynomial over a field is reducible if and only if it has a root in
+that field.  Step <1>4 shows that $g$ has no root in $\FF_5$, so $g$ is
+irreducible.
+:::
+
+<1>6. Part (b) follows.
+
+::: {.proof}
+This is step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>3 and <1>6 establish parts (a) and (b), respectively.
+:::
 :::
