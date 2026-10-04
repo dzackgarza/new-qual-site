@@ -18,3 +18,362 @@ audit:
 ::: {.problem}
 Let R be a commutative ring with identity and P a prime ideal of R. Let $R _ { P }$ be the ring of quotients of R with respect to the set $R - P = \{ s \in R \mid s \not \in P \}$ . Show that $R _ { P } / P _ { P }$ is the field of fractions of the integral domain $R / P$
 :::
+
+::: {.solution}
+Set
+$$
+S
+\coloneqq
+R\setminus P.
+$$
+Since $P$ is prime,
+$$
+R/P
+$$
+is an integral domain.
+Let
+$$
+K
+\coloneqq
+\operatorname{Frac}(R/P).
+$$
+
+<1>1. For every
+$$
+s\in S,
+$$
+the class
+$$
+s+P
+$$
+is nonzero in
+$$
+R/P.
+$$
+
+::: {.proof}
+The condition
+$$
+s\in S
+$$
+means
+$$
+s\notin P.
+$$
+Thus
+$$
+s+P
+\ne
+0+P.
+$$
+:::
+
+<1>2. Define
+$$
+\Phi:R_P\to K
+$$
+by
+$$
+\boxed{
+\Phi\left(\frac as\right)
+\coloneqq
+\frac{a+P}{s+P}.
+}
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+s+P
+$$
+is a nonzero element of the domain
+$$
+R/P.
+$$
+Hence it is a valid denominator in
+$$
+\operatorname{Frac}(R/P).
+$$
+:::
+
+<1>3. The map $\Phi$ is well-defined.
+
+::: {.proof}
+Suppose
+$$
+\frac as
+=
+\frac bt
+$$
+in
+$$
+R_P.
+$$
+Then there exists
+$$
+u\in S
+$$
+such that
+$$
+u(at-bs)=0.
+$$
+Passing to
+$$
+R/P,
+$$
+one obtains
+$$
+(u+P)
+\bigl(
+(a+P)(t+P)
+-
+(b+P)(s+P)
+\bigr)
+=
+0.
+$$
+By step <1>1,
+$$
+u+P
+\ne
+0+P.
+$$
+Since
+$$
+R/P
+$$
+is an integral domain,
+$$
+(a+P)(t+P)
+=
+(b+P)(s+P).
+$$
+This is precisely the equality
+$$
+\frac{a+P}{s+P}
+=
+\frac{b+P}{t+P}
+$$
+in the fraction field.
+:::
+
+<1>4. The map $\Phi$ preserves addition.
+
+::: {.proof}
+For
+$$
+\frac as,\frac bt
+\in
+R_P,
+$$
+$$
+\begin{aligned}
+\Phi\left(
+\frac as+\frac bt
+\right)
+&=
+\Phi\left(
+\frac{at+bs}{st}
+\right)\\
+&=
+\frac{at+bs+P}{st+P}\\
+&=
+\frac{a+P}{s+P}
++
+\frac{b+P}{t+P}.
+\end{aligned}
+$$
+:::
+
+<1>5. The map $\Phi$ preserves multiplication and identity.
+
+::: {.proof}
+One has
+$$
+\begin{aligned}
+\Phi\left(
+\frac as\frac bt
+\right)
+&=
+\Phi\left(
+\frac{ab}{st}
+\right)\\
+&=
+\frac{ab+P}{st+P}\\
+&=
+\frac{a+P}{s+P}
+\frac{b+P}{t+P}.
+\end{aligned}
+$$
+Also
+$$
+\Phi(1)
+=
+\Phi\left(\frac11\right)
+=
+\frac{1+P}{1+P}
+=
+1.
+$$
+Thus $\Phi$ is a unital ring homomorphism.
+:::
+
+<1>6. The map $\Phi$ is surjective.
+
+::: {.proof}
+Let
+$$
+\frac{a+P}{b+P}
+\in
+K
+$$
+be arbitrary.
+Its denominator is nonzero, so
+$$
+b\notin P.
+$$
+Hence
+$$
+b\in S,
+$$
+and
+$$
+\frac ab
+\in
+R_P.
+$$
+By definition,
+$$
+\Phi\left(\frac ab\right)
+=
+\frac{a+P}{b+P}.
+$$
+Thus $\Phi$ is onto.
+:::
+
+<1>7. If
+$$
+\frac as
+\in
+\ker\Phi,
+$$
+then
+$$
+a\in P.
+$$
+
+::: {.proof}
+The condition
+$$
+\Phi\left(\frac as\right)=0
+$$
+means
+$$
+\frac{a+P}{s+P}=0
+$$
+in the field of fractions of
+$$
+R/P.
+$$
+Since
+$$
+s+P\ne0,
+$$
+a fraction is zero exactly when its numerator is zero.
+Hence
+$$
+a+P=0+P,
+$$
+so
+$$
+a\in P.
+$$
+:::
+
+<1>8. Conversely, if
+$$
+a\in P,
+\qquad
+s\notin P,
+$$
+then
+$$
+\frac as
+\in
+\ker\Phi.
+$$
+
+::: {.proof}
+If
+$$
+a\in P,
+$$
+then
+$$
+a+P=0+P.
+$$
+Therefore
+$$
+\Phi\left(\frac as\right)
+=
+\frac{0+P}{s+P}
+=
+0.
+$$
+:::
+
+<1>9. The kernel of $\Phi$ is
+$$
+\boxed{
+\ker\Phi
+=
+P_P
+=
+\left\{
+\frac as:
+a\in P,\ s\notin P
+\right\}.
+}
+$$
+
+::: {.proof}
+Step <1>7 gives
+$$
+\ker\Phi
+\subseteq
+P_P,
+$$
+and step <1>8 gives the reverse inclusion.
+:::
+
+<1>10. Therefore
+$$
+\boxed{
+R_P/P_P
+\cong
+\operatorname{Frac}(R/P).
+}
+$$
+
+::: {.proof}
+By steps <1>5--<1>6, $\Phi$ is a surjective ring homomorphism.
+By step <1>9, its kernel is
+$$
+P_P.
+$$
+The first isomorphism theorem gives
+$$
+R_P/P_P
+\cong
+K
+=
+\operatorname{Frac}(R/P).
+$$
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required conclusion.
+:::
+:::
