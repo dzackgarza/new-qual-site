@@ -18,3 +18,205 @@ audit:
 ::: {.problem}
 For the vectors $A = { \left[ \begin{array} { l } { 1 } \\ { { \sqrt { 2 } } } \\ { { \sqrt { 3 } } } \end{array} \right] } , B = { \left[ \begin{array} { l } { 0 } \\ { { \sqrt { 2 } } } \\ { 2 } \end{array} \right] }$ find an orthogonal transformation that maps A to B.
 :::
+
+::: {.solution}
+Let
+$$
+a=
+\begin{pmatrix}
+1\\
+\sqrt2\\
+\sqrt3
+\end{pmatrix},
+\qquad
+b=
+\begin{pmatrix}
+0\\
+\sqrt2\\
+2
+\end{pmatrix}.
+$$
+
+<1>1. The two vectors have the same norm:
+$$
+\|a\|^2=\|b\|^2=6.
+$$
+
+::: {.proof}
+Directly,
+$$
+\|a\|^2=1+2+3=6,
+$$
+and
+$$
+\|b\|^2=0+2+4=6.
+$$
+:::
+
+<1>2. Put
+$$
+u=a-b
+=
+\begin{pmatrix}
+1\\
+0\\
+\sqrt3-2
+\end{pmatrix}.
+$$
+Then the Householder matrix
+$$
+H
+=
+I
+-
+2\frac{uu^T}{u^Tu}
+$$
+is orthogonal.
+
+::: {.proof}
+Let
+$$
+P=\frac{uu^T}{u^Tu}.
+$$
+Then $P^T=P$ and $P^2=P$. Hence
+$$
+H^T=H
+$$
+and
+$$
+H^2=(I-2P)^2=I-4P+4P^2=I.
+$$
+Therefore
+$$
+H^TH=I.
+$$
+:::
+
+<1>3. The Householder transformation sends $a$ to $b$.
+
+::: {.proof}
+Because $\|a\|=\|b\|$,
+$$
+u^Ta
+=(a-b)^Ta
+=
+\|a\|^2-a^Tb,
+$$
+while
+$$
+u^Tu
+=
+\|a-b\|^2
+=
+2(\|a\|^2-a^Tb).
+$$
+Thus
+$$
+2\frac{u^Ta}{u^Tu}=1.
+$$
+Therefore
+$$
+Ha
+=
+a-2u\frac{u^Ta}{u^Tu}
+=
+a-u
+=
+b.
+$$
+:::
+
+<1>4. Here
+$$
+u^Tu
+=
+8-4\sqrt3
+$$
+and
+$$
+\frac{2}{u^Tu}
+=
+1+\frac{\sqrt3}{2}.
+$$
+
+::: {.proof}
+One has
+$$
+u^Tu
+=
+1+(\sqrt3-2)^2
+=
+8-4\sqrt3.
+$$
+Rationalizing gives
+$$
+\frac2{8-4\sqrt3}
+=
+\frac1{4-2\sqrt3}
+=
+1+\frac{\sqrt3}{2}.
+$$
+:::
+
+<1>5. The matrix simplifies to
+$$
+\boxed{
+H=
+\begin{pmatrix}
+-\frac{\sqrt3}{2}&0&\frac12\\
+0&1&0\\
+\frac12&0&\frac{\sqrt3}{2}
+\end{pmatrix}.
+}
+$$
+
+::: {.proof}
+Substitute the vector $u$ and the scalar from step <1>4 into the Householder
+formula in step <1>2. The mixed coefficient uses
+$$
+\left(1+\frac{\sqrt3}{2}\right)(\sqrt3-2)=-\frac12,
+$$
+and the lower-right correction uses
+$$
+\left(1+\frac{\sqrt3}{2}\right)(\sqrt3-2)^2
+=
+1-\frac{\sqrt3}{2}.
+$$
+:::
+
+<1>6. Directly,
+$$
+Ha=b.
+$$
+
+::: {.proof}
+Multiplication gives
+$$
+H
+\begin{pmatrix}
+1\\
+\sqrt2\\
+\sqrt3
+\end{pmatrix}
+=
+\begin{pmatrix}
+-\sqrt3/2+\sqrt3/2\\
+\sqrt2\\
+1/2+3/2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\
+\sqrt2\\
+2
+\end{pmatrix}.
+$$
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>2 and <1>6 show that the displayed matrix is orthogonal and maps
+$A$ to $B$.
+:::
+:::
