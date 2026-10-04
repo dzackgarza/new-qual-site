@@ -32,3 +32,335 @@ A possible solution is to insert a chain of balls staying at rest with intermedi
 
 (b) Assuming $m \ll M$ , investigate the limit $n \to \infty$
 :::
+
+::: {.solution}
+Let
+$$
+q_0=M>q_1>\cdots>q_n>q_{n+1}=m
+$$
+be the masses in the order in which they are struck. Thus
+$$
+q_j=m_{n+1-j}
+$$
+for $1\leq j\leq n$ in the notation of the problem.
+
+<1>1. After all $n+1$ collisions, the final velocity of the mass $m$ is
+$$
+v
+=
+V
+\prod_{j=0}^{n}
+\frac{2q_j}{q_j+q_{j+1}}.
+$$
+
+::: {.proof}
+For one collision in which mass $q_j$ moves and the next mass $q_{j+1}$ is
+at rest, Eq. (11) multiplies the transmitted velocity by
+$$
+\frac{2q_j}{q_j+q_{j+1}}.
+$$
+Apply this successively through the chain.
+:::
+
+<1>2. Define the mass ratios
+$$
+r_j=\frac{q_{j+1}}{q_j},
+\qquad
+j=0,\ldots,n.
+$$
+Then
+$$
+0<r_j<1
+$$
+and
+$$
+\prod_{j=0}^{n}r_j=\frac mM.
+$$
+
+::: {.proof}
+The strict inequalities follow from the decreasing masses. The product
+telescopes:
+$$
+\frac{q_1}{q_0}
+\frac{q_2}{q_1}
+\cdots
+\frac{q_{n+1}}{q_n}
+=
+\frac{q_{n+1}}{q_0}
+=
+\frac mM.
+$$
+:::
+
+<1>3. In terms of the ratios,
+$$
+\frac vV
+=
+\prod_{j=0}^{n}
+\frac{2}{1+r_j}.
+$$
+
+::: {.proof}
+Divide numerator and denominator of each factor in step <1>1 by $q_j$.
+:::
+
+<1>4. Put
+$$
+t_j=-\log r_j>0
+$$
+and
+$$
+L=\log\frac Mm>0.
+$$
+Then
+$$
+\sum_{j=0}^{n}t_j=L.
+$$
+
+::: {.proof}
+Take logarithms of the product constraint in step <1>2:
+$$
+\sum_j\log r_j
+=
+\log\frac mM
+=
+-L.
+$$
+:::
+
+<1>5. Define
+$$
+h(t)=\log\frac{2}{1+e^{-t}}.
+$$
+Then $h$ is strictly concave for $t>0$.
+
+::: {.proof}
+One may write
+$$
+h(t)
+=
+\frac t2
+-
+\log\cosh\frac t2.
+$$
+Hence
+$$
+h''(t)
+=
+-\frac14
+\operatorname{sech}^2\frac t2
+<0.
+$$
+:::
+
+<1>6. The velocity is maximized exactly when
+$$
+t_0=t_1=\cdots=t_n
+=
+\frac{L}{n+1}.
+$$
+
+::: {.proof}
+By steps <1>3--<1>4,
+$$
+\log\frac vV
+=
+\sum_{j=0}^{n}h(t_j),
+$$
+with fixed sum $\sum t_j=L$. Since $h$ is strictly concave, Jensen's
+inequality gives
+$$
+\frac1{n+1}
+\sum_{j=0}^{n}h(t_j)
+\leq
+h\left(\frac{L}{n+1}\right),
+$$
+with equality exactly when all $t_j$ are equal.
+:::
+
+<1>7. Equivalently, all consecutive mass ratios must be equal:
+$$
+\boxed{
+r_j
+=
+\left(\frac mM\right)^{1/(n+1)}.
+}
+$$
+
+::: {.proof}
+Exponentiate the equality from step <1>6:
+$$
+r_j
+=
+e^{-L/(n+1)}
+=
+\left(\frac mM\right)^{1/(n+1)}.
+$$
+:::
+
+<1>8. Therefore the optimal intermediate masses are
+$$
+\boxed{
+m_k
+=
+m
+\left(\frac Mm\right)^{k/(n+1)},
+\qquad
+k=1,\ldots,n.
+}
+$$
+
+::: {.proof}
+The masses increase geometrically from $m$ to $M$. The displayed formula has
+$$
+m_0=m,
+\qquad
+m_{n+1}=M,
+$$
+and constant ratio
+$$
+\frac{m_{k+1}}{m_k}
+=
+\left(\frac Mm\right)^{1/(n+1)}.
+$$
+Reading the collision chain in decreasing order gives exactly the constant
+ratio in step <1>7.
+:::
+
+<1>9. Part (a) follows.
+
+::: {.proof}
+Steps <1>6--<1>8 give the unique maximizing choice of intermediate masses.
+:::
+
+<1>10. For the optimal chain,
+$$
+\boxed{
+\frac{v_n}{V}
+=
+\left[
+\frac{2}{1+(m/M)^{1/(n+1)}}
+\right]^{n+1}.
+}
+$$
+
+::: {.proof}
+Every factor in step <1>3 is the same under the optimal ratio from step
+<1>7, and there are $n+1$ collisions.
+:::
+
+<1>11. Let
+$$
+N=n+1
+$$
+and
+$$
+L=\log\frac Mm.
+$$
+Then
+$$
+\log\frac{v_n}{V}
+=
+N
+\log\left(
+\frac{2}{1+e^{-L/N}}
+\right).
+$$
+
+::: {.proof}
+Rewrite step <1>10 using
+$$
+(m/M)^{1/N}=e^{-L/N}.
+$$
+:::
+
+<1>12. As $N\to\infty$,
+$$
+\log\left(
+\frac{2}{1+e^{-L/N}}
+\right)
+=
+\frac{L}{2N}
++
+O(N^{-2}).
+$$
+
+::: {.proof}
+For small $x$,
+$$
+\frac{2}{1+e^{-x}}
+=
+\frac{e^{x/2}}{\cosh(x/2)}.
+$$
+Hence
+$$
+\log\frac{2}{1+e^{-x}}
+=
+\frac x2
+-
+\log\cosh\frac x2
+=
+\frac x2+O(x^2).
+$$
+Take $x=L/N$.
+:::
+
+<1>13. Therefore
+$$
+\lim_{n\to\infty}
+\log\frac{v_n}{V}
+=
+\frac L2.
+$$
+
+::: {.proof}
+Multiply the expansion in step <1>12 by $N$ and use step <1>11.
+:::
+
+<1>14. Thus
+$$
+\boxed{
+\lim_{n\to\infty}v_n
+=
+V\sqrt{\frac Mm}.
+}
+$$
+
+::: {.proof}
+Exponentiate step <1>13:
+$$
+\frac{v_n}{V}
+\longrightarrow
+e^{L/2}
+=
+\sqrt{\frac Mm}.
+$$
+:::
+
+<1>15. In this limit the kinetic-energy transfer becomes complete.
+
+::: {.proof}
+The final kinetic energy tends to
+$$
+\frac12m
+\left(
+V^2\frac Mm
+\right)
+=
+\frac12MV^2,
+$$
+which is the initial kinetic energy.
+:::
+
+<1>16. Part (b) follows.
+
+::: {.proof}
+Steps <1>14--<1>15 give the infinite-chain limit and its interpretation.
+:::
+
+<1>17. Q.E.D.
+
+::: {.proof}
+Steps <1>9 and <1>16 establish parts (a) and (b), respectively.
+:::
+:::
