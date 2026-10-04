@@ -33,3 +33,110 @@ which message was sent?
 
 (A) RUSH  (B) COME  (C) ROME  (D) CALL  (E) not uniquely determined by the information given
 :::
+
+::: {.solution}
+Let
+$$
+E=\begin{pmatrix}51&-3\\31&-8\end{pmatrix}.
+$$
+By hypothesis,
+$$
+E=MC.
+$$
+
+<1>1. The matrix $C$ is invertible.
+
+::: {.proof}
+One has
+$$
+\det C
+=
+\det\begin{pmatrix}2&-1\\1&1\end{pmatrix}
+=
+2\cdot1-(-1)\cdot1
+=
+3\ne0.
+$$
+Hence $C$ is invertible.
+:::
+
+<1>2. The inverse of $C$ is
+$$
+\boxed{
+C^{-1}
+=
+\frac13
+\begin{pmatrix}1&1\\-1&2\end{pmatrix}.
+}
+$$
+
+::: {.proof}
+This is the standard $2\times2$ inverse formula applied to
+$$
+C=\begin{pmatrix}2&-1\\1&1\end{pmatrix}
+$$
+with determinant $3$.
+:::
+
+<1>3. The message matrix is
+$$
+M=EC^{-1}.
+$$
+
+::: {.proof}
+From $E=MC$, multiply on the right by $C^{-1}$:
+$$
+EC^{-1}=MCC^{-1}=M.
+$$
+:::
+
+<1>4. One computes
+$$
+\boxed{
+M=\begin{pmatrix}18&15\\13&5\end{pmatrix}.
+}
+$$
+
+::: {.proof}
+Using step <1>2,
+$$
+\begin{aligned}
+M
+&=
+\begin{pmatrix}51&-3\\31&-8\end{pmatrix}
+\frac13
+\begin{pmatrix}1&1\\-1&2\end{pmatrix}\\
+&=
+\frac13
+\begin{pmatrix}
+51+3&51-6\\
+31+8&31-16
+\end{pmatrix}\\
+&=
+\frac13
+\begin{pmatrix}54&45\\39&15\end{pmatrix}\\
+&=
+\begin{pmatrix}18&15\\13&5\end{pmatrix}.
+\end{aligned}
+$$
+:::
+
+<1>5. The entries decode to ROME.
+
+::: {.proof}
+The encoding uses alphabet positions, so
+$$
+18=R,\qquad 15=O,\qquad 13=M,\qquad 5=E.
+$$
+Reading the matrix in the same row order as the example ``DEAD'' gives the message
+$$
+\boxed{\text{ROME}}.
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives answer choice $\boxed{\text{(C)}}$.
+:::
+:::
