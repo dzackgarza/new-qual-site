@@ -18,3 +18,125 @@ audit:
 ::: {.problem}
 Show that if R is a finite commutative ring with identity then every prime ideal of R is a maximal ideal.
 :::
+
+::: {.solution}
+Let
+$$
+P
+$$
+be a prime ideal of the finite commutative ring $R$.
+
+<1>1. The quotient
+$$
+R/P
+$$
+is an integral domain.
+
+::: {.proof}
+Because
+$$
+P
+$$
+is prime, the prime-ideal quotient criterion gives that
+$$
+R/P
+$$
+is an integral domain.
+:::
+
+<1>2. The quotient
+$$
+R/P
+$$
+is finite.
+
+::: {.proof}
+The quotient set
+$$
+R/P
+$$
+is the set of cosets of $P$ in the finite set $R$. Hence it has finitely many elements.
+:::
+
+<1>3. The finite integral domain
+$$
+R/P
+$$
+is a field.
+
+::: {.proof}
+Let
+$$
+0\ne a+P\in R/P.
+$$
+Multiplication by this element defines a map
+$$
+\mu_{a+P}:R/P\to R/P,
+\qquad
+x+P\longmapsto(a+P)(x+P).
+$$
+Since
+$$
+R/P
+$$
+is an integral domain, this map is injective.
+Because the quotient is finite by step <1>2, the map is therefore surjective.
+Hence
+$$
+1+P
+$$
+lies in its image, so there exists
+$$
+b+P
+$$
+with
+$$
+(a+P)(b+P)
+=
+1+P.
+$$
+Thus every nonzero element of $R/P$ is invertible.
+Therefore
+$$
+R/P
+$$
+is a field.
+:::
+
+<1>4. The ideal
+$$
+P
+$$
+is maximal.
+
+::: {.proof}
+By step <1>3,
+$$
+R/P
+$$
+is a field.
+The maximal-ideal quotient criterion therefore implies that
+$$
+P
+$$
+is maximal.
+:::
+
+<1>5. Hence every prime ideal of $R$ is maximal.
+
+::: {.proof}
+The prime ideal $P$ was arbitrary.
+Therefore
+$$
+\boxed{
+\text{every prime ideal of }R\text{ is maximal}.
+}
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::
