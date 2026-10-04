@@ -30,3 +30,291 @@ We choose to have a branch cut on the positive real axis.
 
 Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_\epsilon$: $L_+$ runs just above the positive real axis from the small circle $\gamma_\epsilon$ around $0$ out to the large circle $C_R$ of radius $R$ centered at $0$, $C_R$ is traversed counterclockwise, $L_-$ returns just below the positive real axis, and $\gamma_\epsilon$ is traversed clockwise around $0$.
 :::
+
+::: {.solution}
+Use the branch
+$$
+z^p
+=
+r^p e^{ip\theta},
+\qquad
+z=re^{i\theta},
+\qquad
+0<\theta<2\pi.
+$$
+
+<1>1. The function
+$$
+F(z)
+=
+\frac{z^p}{z^2+1}
+$$
+has two simple poles inside the keyhole contour:
+$$
+z=i
+\qquad\text{and}\qquad
+z=-i.
+$$
+
+::: {.proof}
+The denominator vanishes exactly at $\pm i$. Both points lie in the branch
+domain
+$$
+0<\arg z<2\pi.
+$$
+:::
+
+<1>2. The residue at $z=i$ is
+$$
+\operatorname{Res}_{z=i}F(z)
+=
+\frac{e^{i\pi p/2}}{2i}.
+$$
+
+::: {.proof}
+On the chosen branch,
+$$
+i^p
+=
+e^{i\pi p/2}.
+$$
+Since the derivative of $z^2+1$ at $i$ is $2i$,
+$$
+\operatorname{Res}_{z=i}F(z)
+=
+\frac{i^p}{2i}.
+$$
+:::
+
+<1>3. The residue at $z=-i$ is
+$$
+\operatorname{Res}_{z=-i}F(z)
+=
+-\frac{e^{3\pi i p/2}}{2i}.
+$$
+
+::: {.proof}
+On the branch $0<\arg z<2\pi$,
+$$
+\arg(-i)=\frac{3\pi}{2},
+$$
+so
+$$
+(-i)^p
+=
+e^{3\pi i p/2}.
+$$
+The derivative of $z^2+1$ at $-i$ is $-2i$, giving the result.
+:::
+
+<1>4. Hence the limiting contour integral is
+$$
+I_1
+=
+\pi
+\left(
+e^{i\pi p/2}
+-
+e^{3\pi i p/2}
+\right).
+$$
+
+::: {.proof}
+The residue theorem gives
+$$
+I_1
+=
+2\pi i
+\left(
+\frac{e^{i\pi p/2}}{2i}
+-
+\frac{e^{3\pi i p/2}}{2i}
+\right),
+$$
+provided the two circular arcs vanish. That vanishing is verified in
+steps <1>5--<1>6.
+:::
+
+<1>5. The outer-circle contribution tends to zero as $R\to\infty$.
+
+::: {.proof}
+On $|z|=R>1$,
+$$
+|z^p|=R^p
+$$
+and
+$$
+|z^2+1|
+\geq
+R^2-1.
+$$
+The outer circle has length $2\pi R$. Hence
+$$
+\left|
+\int_{C_R}F(z)\,dz
+\right|
+\leq
+\frac{2\pi R^{p+1}}{R^2-1}.
+$$
+Since $p<1$, the right-hand side tends to zero.
+:::
+
+<1>6. The inner-circle contribution tends to zero as
+$\varepsilon\to0^+$.
+
+::: {.proof}
+On $|z|=\varepsilon<1$,
+$$
+|z^p|=\varepsilon^p
+$$
+and
+$$
+|z^2+1|
+\geq
+1-\varepsilon^2.
+$$
+The inner circle has length $2\pi\varepsilon$, so
+$$
+\left|
+\int_{\gamma_\varepsilon}F(z)\,dz
+\right|
+\leq
+\frac{2\pi\varepsilon^{p+1}}
+{1-\varepsilon^2}
+\longrightarrow0
+$$
+because $p>0$.
+:::
+
+<1>7. The upper-ray contribution tends to
+$$
+I_2
+=
+\int_0^\infty
+\frac{x^p}{1+x^2}\,dx.
+$$
+
+::: {.proof}
+On the upper side of the positive axis,
+$$
+\arg z=0,
+$$
+so
+$$
+z^p=x^p.
+$$
+The ray is traversed from $\varepsilon$ to $R$, producing the truncated
+integral for $I_2$.
+:::
+
+<1>8. The lower-ray contribution tends to
+$$
+-e^{2\pi ip}I_2.
+$$
+
+::: {.proof}
+On the lower side of the positive-axis cut,
+$$
+\arg z=2\pi,
+$$
+so
+$$
+z^p
+=
+x^p e^{2\pi ip}.
+$$
+The lower ray is traversed from $R$ to $\varepsilon$, hence its contribution
+is
+$$
+\int_R^\varepsilon
+\frac{x^p e^{2\pi ip}}{1+x^2}\,dx
+=
+-e^{2\pi ip}
+\int_\varepsilon^R
+\frac{x^p}{1+x^2}\,dx.
+$$
+Take the limits.
+:::
+
+<1>9. Therefore
+$$
+I_1
+=
+(1-e^{2\pi ip})I_2.
+$$
+
+::: {.proof}
+By steps <1>5--<1>6 the circular arcs vanish, and by steps <1>7--<1>8 the
+two ray contributions sum to the displayed expression.
+:::
+
+<1>10. One has
+$$
+\boxed{
+I_2
+=
+\int_0^\infty
+\frac{x^p}{1+x^2}\,dx
+=
+\frac\pi2
+\sec\left(\frac{\pi p}{2}\right).
+}
+$$
+
+::: {.proof}
+By steps <1>4 and <1>9,
+$$
+I_2
+=
+\pi
+\frac{
+e^{i\pi p/2}
+-
+e^{3\pi i p/2}
+}{
+1-e^{2\pi ip}
+}.
+$$
+Factor
+$$
+e^{i\pi p/2}
+-
+e^{3\pi i p/2}
+=
+e^{i\pi p/2}(1-e^{i\pi p})
+$$
+and
+$$
+1-e^{2\pi ip}
+=
+(1-e^{i\pi p})(1+e^{i\pi p}).
+$$
+Because $0<p<1$,
+$$
+1-e^{i\pi p}\neq0.
+$$
+Cancel it to obtain
+$$
+I_2
+=
+\pi
+\frac{e^{i\pi p/2}}
+{1+e^{i\pi p}}.
+$$
+Finally,
+$$
+1+e^{i\pi p}
+=
+2e^{i\pi p/2}
+\cos\left(\frac{\pi p}{2}\right),
+$$
+which yields the stated formula.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>4 evaluates the contour integral $I_1$, step <1>9 gives its relation
+to $I_2$, and step <1>10 gives the requested real integral.
+:::
+:::
