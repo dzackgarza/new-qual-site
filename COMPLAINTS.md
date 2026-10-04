@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 58 says every ideal is prime, including the improper ideal
+
+- **Object and need:** P-KSRING17-058 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states that every ideal of R is prime.
+- **Observed evidence:** line 259 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md contains the literal wording. Under the standard definition used throughout the repository, a prime ideal is proper, so the whole-ring ideal R cannot be prime.
+- **Impact and owner:** the intended statement must be that every proper ideal is prime.
+- **Uncertainty:** none about the literal inconsistency; the supplied hint with (a) and (a^2) matches the corrected statement.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-058 records the correction and proves the intended statement.
+
 ### Kent State Ring Theory Problem 21 omits j != i from the intersection
 
 - **Object and need:** P-KSRING17-021 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source asks to show $I_i+\bigcap I_j=R$ for pairwise comaximal ideals.
