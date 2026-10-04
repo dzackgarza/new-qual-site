@@ -30,3 +30,215 @@ if
 
 and with C(0) = 0.
 :::
+
+::: {.solution}
+<1>1. First suppose
+$$
+a\neq b.
+$$
+Then the equation is separable:
+$$
+\frac{dC}{(a-C)(b-C)}
+=
+\alpha\,dt.
+$$
+
+::: {.proof}
+Rearrange
+$$
+C'=alpha(a-C)(b-C).
+$$
+:::
+
+<1>2. The partial-fraction decomposition is
+$$
+\frac1{(a-C)(b-C)}
+=
+\frac1{b-a}
+\left(
+\frac1{a-C}
+-
+\frac1{b-C}
+\right).
+$$
+
+::: {.proof}
+Combine the right-hand side over the common denominator:
+$$
+\frac{(b-C)-(a-C)}{(b-a)(a-C)(b-C)}
+=
+\frac1{(a-C)(b-C)}.
+$$
+:::
+
+<1>3. Integration gives
+$$
+\frac1{b-a}
+\log\left|
+\frac{b-C}{a-C}
+\right|
+=
+\alpha t
++
+K.
+$$
+
+::: {.proof}
+Use
+$$
+\int\frac{dC}{a-C}
+=
+-\log|a-C|
+$$
+and the analogous formula with $b$.
+:::
+
+<1>4. The initial condition $C(0)=0$ gives
+$$
+K
+=
+\frac1{b-a}
+\log\left|\frac ba\right|
+$$
+when $ab\neq0$.
+
+::: {.proof}
+Set $t=0$ and $C=0$ in step <1>3.
+:::
+
+<1>5. Hence
+$$
+\frac{b-C}{a-C}
+=
+\frac ba
+e^{\alpha(b-a)t}.
+$$
+
+::: {.proof}
+Subtract the constant from step <1>3 and exponentiate. On the interval containing the initial point, the sign of the ratio is fixed, so the absolute values may be removed consistently.
+:::
+
+<1>6. Solving for $C$ gives
+$$
+\boxed{
+C(t)
+=
+\frac{
+ab\left(e^{\alpha(b-a)t}-1\right)
+}{
+b e^{\alpha(b-a)t}-a
+}.
+}
+$$
+
+::: {.proof}
+Let
+$$
+q=e^{\alpha(b-a)t}.
+$$
+Then step <1>5 is
+$$
+a(b-C)=bq(a-C).
+$$
+Expanding and collecting the terms containing $C$ gives
+$$
+C(bq-a)=ab(q-1).
+$$
+:::
+
+<1>7. Part (a) follows.
+
+::: {.proof}
+Step <1>6 gives the solution for $a\neq b$. If $a=0$ or $b=0$, the initial condition $C(0)=0$ gives the equilibrium solution $C\equiv0$, which is also the continuous limiting case of the formula whenever defined.
+:::
+
+<1>8. Now suppose
+$$
+a=b.
+$$
+Then
+$$
+C'
+=
+\alpha(a-C)^2.
+$$
+
+::: {.proof}
+Substitute $b=a$ into the original differential equation.
+:::
+
+<1>9. If $a\neq0$, separation gives
+$$
+\frac1{a-C}
+=
+\alpha t
++
+\frac1a.
+$$
+
+::: {.proof}
+Since
+$$
+\frac d{dC}\frac1{a-C}
+=
+\frac1{(a-C)^2},
+$$
+integrating
+$$
+\frac{dC}{(a-C)^2}
+=
+\alpha,dt
+$$
+gives
+$$
+\frac1{a-C}
+=
+\alpha t+K.
+$$
+The initial condition $C(0)=0$ gives $K=1/a$.
+:::
+
+<1>10. Therefore
+$$
+\boxed{
+C(t)
+=
+\frac{\alpha a^2t}{1+\alpha at}.
+}
+$$
+
+::: {.proof}
+Invert step <1>9:
+$$
+a-C
+=
+\frac{a}{1+\alpha at}.
+$$
+Subtract from $a$.
+:::
+
+<1>11. If $a=b=0$, then
+$$
+\boxed{C(t)\equiv0}.
+$$
+
+::: {.proof}
+The equation becomes
+$$
+C'=\alpha C^2,
+$$
+and the initial value $C(0)=0$ yields the equilibrium solution. Uniqueness for this smooth right-hand side forces it to be the only solution through $0$.
+:::
+
+<1>12. Part (b) follows.
+
+::: {.proof}
+Steps <1>10--<1>11 cover the cases $a=b\neq0$ and $a=b=0$.
+:::
+
+<1>13. Q.E.D.
+
+::: {.proof}
+Steps <1>7 and <1>12 establish parts (a) and (b), respectively.
+:::
+:::
