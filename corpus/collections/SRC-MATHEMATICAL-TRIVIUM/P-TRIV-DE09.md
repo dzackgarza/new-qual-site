@@ -18,3 +18,191 @@ audit:
 ::: {.problem}
 Solve $y ^ { \prime \prime } + 3 y ^ { \prime } + 2 y = \operatorname { t a n h } x$
 :::
+
+::: {.solution}
+<1>1. Factor the differential operator:
+$$
+D^2+3D+2
+=
+(D+1)(D+2),
+$$
+where $D=d/dx$.
+
+::: {.proof}
+Expand
+$$
+(D+1)(D+2)
+=
+D^2+3D+2.
+$$
+:::
+
+<1>2. Set
+$$
+z=(D+2)y
+=
+y'+2y.
+$$
+Then $z$ satisfies
+$$
+z'+z=\tanh x.
+$$
+
+::: {.proof}
+Apply $D+1$ to the definition of $z$ and use step <1>1.
+:::
+
+<1>3. Multiplying by $e^x$ gives
+$$
+\frac d{dx}(e^xz)
+=
+e^x\tanh x.
+$$
+
+::: {.proof}
+The integrating factor for $z'+z=\tanh x$ is $e^x$.
+:::
+
+<1>4. One has
+$$
+\int e^x\tanh x\,dx
+=
+e^x
+-
+2\arctan(e^x)
++
+C.
+$$
+
+::: {.proof}
+Set
+$$
+u=e^x,
+\qquad
+du=e^x\,dx.
+$$
+Then
+$$
+\tanh x
+=
+\frac{u^2-1}{u^2+1},
+$$
+so
+$$
+\int e^x\tanh x\,dx
+=
+\int
+\frac{u^2-1}{u^2+1}
+\,du
+=
+\int
+\left(
+1-rac2{u^2+1}
+\right)du.
+$$
+:::
+
+<1>5. Hence
+$$
+z(x)
+=
+1
+-
+2e^{-x}\arctan(e^x)
++
+C_1e^{-x}.
+$$
+
+::: {.proof}
+Integrate step <1>3 using step <1>4 and divide by $e^x$.
+:::
+
+<1>6. Now solve
+$$
+y'+2y=z(x).
+$$
+Multiplying by $e^{2x}$ gives
+$$
+\frac d{dx}(e^{2x}y)
+=
+e^{2x}z(x).
+$$
+
+::: {.proof}
+The integrating factor for the first-order equation $y'+2y=z$ is $e^{2x}$.
+:::
+
+<1>7. A particular antiderivative of the nonhomogeneous part is
+$$
+\int
+\left[
+e^{2x}
+-
+2e^x\arctan(e^x)
+\right]dx
+=
+\frac12e^{2x}
+-
+2e^x\arctan(e^x)
++
+\log(1+e^{2x}).
+$$
+
+::: {.proof}
+For the second term, set $u=e^x$:
+$$
+2\int e^x\arctan(e^x)\,dx
+=
+2\int\arctan u\,du.
+$$
+Integration by parts gives
+$$
+\int\arctan u\,du
+=
+u\arctan u
+-
+\frac12\log(1+u^2).
+$$
+Substitute back $u=e^x$.
+:::
+
+<1>8. The term $C_1e^{-x}$ in $z$ contributes a homogeneous-mode term proportional to $e^{-x}$ in $y$, and the integrating constant contributes a term proportional to $e^{-2x}$.
+
+::: {.proof}
+Under step <1>6,
+$$
+e^{2x}C_1e^{-x}=C_1e^x,
+$$
+whose antiderivative is $C_1e^x$, yielding $C_1e^{-x}$ after multiplication by $e^{-2x}$. The final integration constant becomes $C_2e^{-2x}$.
+:::
+
+<1>9. Therefore the general solution is
+$$
+\boxed{
+\begin{aligned}
+y(x)
+&=
+C_1e^{-x}
++
+C_2e^{-2x}\\
+&\quad
++
+\frac12
+-
+2e^{-x}\arctan(e^x)
++
+e^{-2x}\log(1+e^{2x}).
+\end{aligned}
+}
+$$
+
+::: {.proof}
+Combine steps <1>5--<1>8 and multiply the particular antiderivative from step <1>7 by $e^{-2x}$.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Step <1>9 gives the complete two-parameter solution family.
+:::
+:::
