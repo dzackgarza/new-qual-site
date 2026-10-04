@@ -26,9 +26,66 @@ Prove that the following two statements are equivalent.
 :::
 
 ::: {.solution}
-Proof.
-(=⇒) Given b∈R and m≥ 1 with bm∈I, we have (I +b)m =I +bm =I + 0. SinceI + 0 is the zero element of R/I, it follows that I +b is either nilpotent or zero in R/I. But by assumption (a), I +b is not nilpotent.
-Therefore, I +b =I + 0, which means b =b− 0∈I. (⇐=) SupposeI +b∈R/I is a nilpotent.
-Then there is some integerm≥ 1 such that (I +b)m =I +0. That is, I +bm = (I +b)m =I + 0, and hence bm =bm− 0∈I. By property (b), we have b∈I. Thus, I +b =I + 0, contradicting the assumption that I +b is nilpotent, and proving that R/I has no nilpotents.
-QED
+<1>1. Assume (a).  If $b^m\in I$ for some $b\in R$ and $m\geq1$, then
+$b\in I$.
+
+::: {.proof}
+In the quotient ring,
+$$
+(I+b)^m=I+b^m=I,
+$$
+so the coset $I+b$ has a positive power equal to zero.  Under the convention in
+the problem, either $I+b$ is the zero element or it is a nonzero nilpotent.
+Condition (a) excludes the second possibility.  Hence
+$$
+I+b=I,
+$$
+which is equivalent to $b\in I$.
+:::
+
+<1>2. Therefore (a) implies (b).
+
+::: {.proof}
+Step <1>1 proves condition (b) for every $b\in R$ and every positive integer
+$m$ with $b^m\in I$.
+:::
+
+<1>3. Assume (b).  Then $R/I$ contains no nonzero nilpotent element.
+
+::: {.proof}
+Suppose, for contradiction, that $I+b$ is a nonzero nilpotent element of
+$R/I$.  Then for some $m\geq1$,
+$$
+(I+b)^m=I.
+$$
+Since $(I+b)^m=I+b^m$, equality of these cosets gives
+$$
+b^m\in I.
+$$
+Condition (b) then implies $b\in I$, so
+$$
+I+b=I,
+$$
+contradicting the assumption that $I+b$ is nonzero.
+:::
+
+<1>4. Therefore (b) implies (a).
+
+::: {.proof}
+Step <1>3 says exactly that the quotient ring contains no nilpotents under the
+problem's convention that nilpotent elements are required to be nonzero.
+:::
+
+<1>5. Hence (a) and (b) are equivalent.
+
+::: {.proof}
+Step <1>2 proves $(a)\Rightarrow(b)$ and step <1>4 proves
+$(b)\Rightarrow(a)$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required equivalence.
+:::
 :::
