@@ -33,3 +33,15 @@ The pitch by $\psi$ turns $x$ and $y$ by the angle $\psi$ to $x'$ and $y'$, keep
 Fig. 2 (positions of the stars), left panel: the three stars lie on the display at distances $r_1, r_2, r_3$ from $O$, at angles $\varphi_1 < \varphi_2 < \varphi_3$ measured from a horizontal line through $O$, all in the upper half of the display.
 Right panel: the target configuration is an equilateral triangle with side $d$ centered at $O$, with a horizontal lower side and the third vertex above $O$.
 :::
+
+::: {.remark}
+The retained source does not specify the map from a star's spatial direction to
+its display coordinates, nor the law by which a boost changes those display
+coordinates. Those data are necessary to determine the requested command
+sequence. For example, a relativistic solution would require an explicit
+aberration law together with a chosen projection of the celestial sphere onto
+the display (such as stereographic projection), and the relation between the
+command time $T$ and rapidity. Without such a rule, different physically
+reasonable display models produce different transformations of the points
+$(r_i,\varphi_i)$, so the problem is underdetermined as retained.
+:::
