@@ -33,3 +33,236 @@ The source prints this problem twice, as questions 24 and 30 of Spring 2015.
 Under question 30 it also prints "Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from half disc $\{z = x + iy : \abs{z} < 1,\ y > 0\}$ to upper half plane $\mathbb{H} = \{z = x + iy : y > 0\}$", which is question 25 of the same list.
 It is a separate problem, carried by its own card.
 :::
+
+::: {.remark}
+Erratum: part (b) includes $\alpha=0$ in the hypothesis, but the printed expression
+$$
+\frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}
+\log\frac1{1-\abs{\alpha}^2}
+$$
+is undefined there. For $\alpha=0$, the normalized integral equals $1$, which is also the limit of the displayed expression as $\alpha\to0$.
+:::
+
+::: {.solution}
+<1>1. One has
+$$
+\psi_\alpha'(z)
+=
+-\frac{1-\abs{\alpha}^2}
+{(1-\overline\alpha z)^2}.
+$$
+
+::: {.proof}
+Differentiate
+$$
+\psi_\alpha(z)
+=
+\frac{\alpha-z}{1-\overline\alpha z}.
+$$
+The quotient rule gives
+$$
+\begin{aligned}
+\psi_\alpha'(z)
+&=
+\frac{
+-(1-\overline\alpha z)
+-
+(\alpha-z)(-\overline\alpha)
+}
+{(1-\overline\alpha z)^2}\\
+&=
+\frac{-1+\abs{\alpha}^2}
+{(1-\overline\alpha z)^2},
+\end{aligned}
+$$
+which is the stated formula.
+:::
+
+<1>2. The map $\psi_\alpha$ is a conformal automorphism of $\DD$.
+
+::: {.proof}
+For $\abs{\alpha}<1$,
+$$
+\psi_\alpha(z)
+=
+\frac{\alpha-z}{1-\overline\alpha z}
+$$
+is the standard Blaschke automorphism interchanging $0$ and $\alpha$. Direct calculation gives
+$$
+\psi_\alpha(\psi_\alpha(z))=z,
+$$
+so it is bijective with holomorphic inverse equal to itself. By step <1>1,
+$$
+\psi_\alpha'(z)\ne0
+$$
+on $\DD$.
+:::
+
+<1>3. One has
+$$
+\boxed{
+\frac1\pi
+\iint_{\DD}
+\abs{\psi_\alpha'(z)}^2\,dA(z)
+=1.
+}
+$$
+
+::: {.proof}
+For a holomorphic map, the real Jacobian determinant is
+$$
+J_{\psi_\alpha}(z)
+=
+\abs{\psi_\alpha'(z)}^2.
+$$
+By step <1>2, $\psi_\alpha$ is a conformal bijection of $\DD$ onto itself. The change-of-variables formula therefore gives
+$$
+\iint_{\DD}
+\abs{\psi_\alpha'(z)}^2\,dA(z)
+=
+\operatorname{area}(\psi_\alpha(\DD))
+=
+\operatorname{area}(\DD)
+=
+\pi.
+$$
+Dividing by $\pi$ gives the result.
+:::
+
+<1>4. Put
+$$
+r\coloneqq\abs{\alpha}.
+$$
+For $0\le\rho<1$,
+$$
+\int_0^{2\pi}
+\frac{d\theta}
+{\abs{1-r\rho e^{i\theta}}^2}
+=
+\frac{2\pi}{1-r^2\rho^2}.
+$$
+
+::: {.proof}
+Rotating the variable $z$ does not change planar area, so the integral depends on $\alpha$ only through $r=\abs\alpha$. For $r\rho<1$,
+$$
+\frac1{1-r\rho e^{i\theta}}
+=
+\sum_{n=0}^{\infty}
+r^n\rho^n e^{in\theta},
+$$
+uniformly in $\theta$. Hence
+$$
+\frac1{\abs{1-r\rho e^{i\theta}}^2}
+=
+\sum_{m,n\ge0}
+r^{m+n}\rho^{m+n}e^{i(m-n)\theta}.
+$$
+Integrating over $0\le\theta\le2\pi$ kills all off-diagonal terms:
+$$
+\int_0^{2\pi}
+\frac{d\theta}
+{\abs{1-r\rho e^{i\theta}}^2}
+=
+2\pi
+\sum_{n=0}^{\infty}
+r^{2n}\rho^{2n}
+=
+\frac{2\pi}{1-r^2\rho^2}.
+$$
+:::
+
+<1>5. If $0<\abs{\alpha}<1$, then
+$$
+\boxed{
+\frac1\pi
+\iint_{\DD}
+\abs{\psi_\alpha'(z)}\,dA(z)
+=
+\frac{1-\abs{\alpha}^2}{\abs{\alpha}^2}
+\log\frac1{1-\abs{\alpha}^2}.
+}
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\abs{\psi_\alpha'(z)}
+=
+\frac{1-r^2}
+{\abs{1-\overline\alpha z}^2}.
+$$
+Using polar coordinates and step <1>4,
+$$
+\begin{aligned}
+\frac1\pi
+\iint_{\DD}
+\abs{\psi_\alpha'(z)}\,dA(z)
+&=
+\frac{1-r^2}{\pi}
+\int_0^1
+\int_0^{2\pi}
+\frac{\rho\,d\theta\,d\rho}
+{\abs{1-r\rho e^{i\theta}}^2}\\
+&=
+2(1-r^2)
+\int_0^1
+\frac{\rho}{1-r^2\rho^2}\,d\rho.
+\end{aligned}
+$$
+For $r>0$,
+$$
+\int_0^1
+\frac{\rho}{1-r^2\rho^2}\,d\rho
+=
+\frac1{2r^2}
+\log\frac1{1-r^2}.
+$$
+Substitution gives
+$$
+\frac{1-r^2}{r^2}
+\log\frac1{1-r^2}.
+$$
+Replacing $r$ by $\abs\alpha$ gives the formula.
+:::
+
+<1>6. If $\alpha=0$, then
+$$
+\boxed{
+\frac1\pi
+\iint_{\DD}
+\abs{\psi_0'(z)}\,dA(z)
+=1.
+}
+$$
+
+::: {.proof}
+When $\alpha=0$,
+$$
+\psi_0(z)=-z,
+$$
+so
+$$
+\abs{\psi_0'(z)}=1.
+$$
+Hence
+$$
+\frac1\pi
+\iint_{\DD}1\,dA
+=1.
+$$
+Also,
+$$
+\lim_{r\downarrow0}
+\frac{1-r^2}{r^2}
+\log\frac1{1-r^2}
+=1,
+$$
+so this is precisely the continuous extension of the formula in step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves part (a), while steps <1>5--<1>6 prove part (b), including the source's omitted $\alpha=0$ interpretation.
+:::
+:::

@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Spring 2015 Question 24(b) is undefined at alpha equals zero
+
+- **Object and need:** P-TIE-S15-24 in SRC-UGA-CA-COMPILATION. The source assumes $|\alpha|<1$ but writes the right-hand side of part (b) with a factor $|\alpha|^{-2}$.
+- **Observed evidence:** lines 615--623 of assets/attachments/extracted/Questions_from_Tie.md include $\alpha=0$ in the hypothesis, while the printed expression is undefined there. For $\alpha=0$, one has $\psi_0(z)=-z$, so the normalized integral is $1$.
+- **Impact and owner:** part (b) needs either the hypothesis $0<|\alpha|<1$ or the instruction to interpret the formula continuously at $\alpha=0$; the limit is $1$.
+- **Uncertainty:** none about the source text or the missing edge case.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-TIE-S15-24 records the erratum and proves both the nonzero formula and its continuous value at zero.
+
 ### Fall 2015 Question 16 and Spring 2015 Question 19 omit the disk self-map hypothesis
 
 - **Object and need:** P-TIE-F15-16 and P-TIE-S15-19 in SRC-UGA-CA-COMPILATION. Both source appearances define iterates $f^{n+1}=f\circ f^n$ on the unit disk and ask for compact-uniform convergence of $\sum f^n$, but state only that $f$ is analytic on $\DD$, fixes $0$, and is not a rotation.
