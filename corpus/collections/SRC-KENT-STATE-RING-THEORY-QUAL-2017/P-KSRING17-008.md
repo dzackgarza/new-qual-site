@@ -18,3 +18,178 @@ audit:
 ::: {.problem}
 If p is a prime satisfying $p \equiv 1$ (mod 4), then p is a sum of two squares.
 :::
+
+::: {.solution}
+<1>1. There exists an integer $a$ such that
+$$
+a^2\equiv-1\pmod p.
+$$
+
+::: {.proof}
+Write
+$$
+p=4m+1.
+$$
+Wilson's theorem gives
+$$
+(p-1)!\equiv-1\pmod p.
+$$
+Pair the factors $k$ and $p-k$ for
+$$
+1\le k\le\frac{p-1}{2}.
+$$
+Then
+$$
+\begin{aligned}
+(p-1)!
+&=
+\prod_{k=1}^{(p-1)/2}
+k(p-k)\\
+&\equiv
+(-1)^{(p-1)/2}
+\left(
+\left(\frac{p-1}{2}\right)!
+\right)^2
+\pmod p.
+\end{aligned}
+$$
+Since
+$$
+\frac{p-1}{2}=2m
+$$
+is even,
+$$
+\left(
+\left(\frac{p-1}{2}\right)!
+\right)^2
+\equiv
+-1
+\pmod p.
+$$
+Thus one may take
+$$
+a
+\coloneqq
+\left(\frac{p-1}{2}\right)!.
+$$
+:::
+
+<1>2. The element $p$ is not prime in the Gaussian integer ring
+$$
+\ZZ[i].
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+p
+\mid
+a^2+1
+=
+(a+i)(a-i)
+$$
+in $\ZZ[i]$.
+
+However,
+$$
+p\nmid a+i.
+$$
+Indeed, if
+$$
+a+i
+=
+p(x+iy),
+$$
+then comparison of imaginary parts would give
+$$
+1=py,
+$$
+impossible in $\ZZ$. Similarly,
+$$
+p\nmid a-i.
+$$
+Thus $p$ divides a product without dividing either factor, so it is not a prime element of $\ZZ[i]$.
+:::
+
+<1>3. The element $p$ is reducible in $\ZZ[i]$.
+
+::: {.proof}
+The Gaussian integers form a Euclidean domain with Euclidean function
+$$
+N(x+iy)
+\coloneqq
+x^2+y^2.
+$$
+Hence $\ZZ[i]$ is a UFD, and in a UFD every irreducible element is prime.
+
+Step <1>2 shows that $p$ is not prime. Therefore $p$ cannot be irreducible. Since $p$ is neither zero nor a unit, it is reducible:
+$$
+p=\alpha\beta
+$$
+for nonunits
+$$
+\alpha,\beta\in\ZZ[i].
+$$
+:::
+
+<1>4. One of the factors in step <1>3 has Gaussian norm exactly $p$.
+
+::: {.proof}
+Taking norms in
+$$
+p=\alpha\beta
+$$
+gives
+$$
+p^2
+=
+N(p)
+=
+N(\alpha)N(\beta).
+$$
+Since $\alpha$ and $\beta$ are nonunits,
+$$
+N(\alpha)>1,
+\qquad
+N(\beta)>1.
+$$
+Both norms are positive integers dividing $p^2$. Since $p$ is prime, the only possibility is
+$$
+N(\alpha)=N(\beta)=p.
+$$
+:::
+
+<1>5. Hence $p$ is a sum of two squares.
+
+::: {.proof}
+Write
+$$
+\alpha=x+iy
+$$
+with
+$$
+x,y\in\ZZ.
+$$
+By step <1>4,
+$$
+p
+=
+N(\alpha)
+=
+x^2+y^2.
+$$
+Therefore
+$$
+\boxed{
+p=x^2+y^2
+}
+$$
+for integers $x,y$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::
