@@ -18,3 +18,154 @@ audit:
 ::: {.problem}
 Show that if p is a prime such that $p \equiv 1 { \ : } ( \mathrm { m o d \ : } 6 )$ , then $x ^ { 3 } + 1$ splits in $\mathbb { Z } _ { p } [ x ]$
 :::
+
+::: {.solution}
+Assume
+$$
+p\equiv1\pmod6.
+$$
+
+<1>1. The integer
+$$
+p-1
+$$
+is divisible by $3$.
+
+::: {.proof}
+The congruence
+$$
+p\equiv1\pmod6
+$$
+means
+$$
+p-1
+$$
+is divisible by $6$, hence in particular by $3$.
+:::
+
+<1>2. The multiplicative group
+$$
+\FF_p^\times
+$$
+contains an element
+$$
+\omega
+$$
+of order $3$.
+
+::: {.proof}
+The group
+$$
+\FF_p^\times
+$$
+has order
+$$
+p-1.
+$$
+By step <1>1,
+$$
+3\mid\abs{\FF_p^\times}.
+$$
+Cauchy's theorem for finite groups therefore gives an element
+$$
+\omega\in\FF_p^\times
+$$
+of order $3$.
+:::
+
+<1>3. The elements
+$$
+1,\omega,\omega^2
+$$
+are the three distinct roots of
+$$
+t^3-1
+$$
+in $\FF_p$.
+
+::: {.proof}
+Because
+$$
+\omega^3=1,
+$$
+each of
+$$
+1,\omega,\omega^2
+$$
+satisfies
+$$
+t^3=1.
+$$
+They are distinct because $\omega$ has order exactly $3$.
+
+The polynomial
+$$
+t^3-1
+$$
+has degree $3$, so it has at most three roots in the field $\FF_p$. Hence these are all of its roots.
+:::
+
+<1>4. The elements
+$$
+-1,
+\qquad
+-\omega,
+\qquad
+-\omega^2
+$$
+are three distinct roots of
+$$
+x^3+1.
+$$
+
+::: {.proof}
+If
+$$
+\eta^3=1,
+$$
+then
+$$
+(-\eta)^3+1
+=
+-\eta^3+1
+=
+0.
+$$
+Apply this to
+$$
+\eta\in\{1,\omega,\omega^2\}.
+$$
+The three negatives remain distinct.
+:::
+
+<1>5. Therefore
+$$
+\boxed{
+x^3+1
+=
+(x+1)(x+\omega)(x+\omega^2)
+}
+$$
+in
+$$
+\FF_p[x].
+$$
+
+::: {.proof}
+By step <1>4, the monic cubic
+$$
+x^3+1
+$$
+has the three distinct roots
+$$
+-1,-\omega,-\omega^2.
+$$
+A monic degree-$3$ polynomial is therefore the product of the corresponding monic linear factors.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 shows that $x^3+1$ splits completely over $\FF_p$.
+:::
+:::
