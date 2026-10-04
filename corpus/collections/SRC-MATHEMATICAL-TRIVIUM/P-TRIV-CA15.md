@@ -16,5 +16,211 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int _ { - \infty } ^ { \infty } \frac { e ^ { i \alpha x } } { ( 3 - i x ) ( 1 + i x ) } \mathrm { d } x$
+For real $\alpha$, compute $\int _ { - \infty } ^ { \infty } \frac { e ^ { i \alpha x } } { ( 3 - i x ) ( 1 + i x ) } \mathrm { d } x$
+:::
+
+::: {.remark}
+The source does not state the domain of the parameter $\alpha$. The standard
+Fourier-transform interpretation, and the contour choice according to the sign
+of $\alpha$, use $\alpha\in\RR$.
+:::
+
+::: {.solution}
+Let
+$$
+F_\alpha(z)
+=
+\frac{e^{i\alpha z}}
+{(3-iz)(1+iz)}.
+$$
+
+<1>1. The poles of $F_\alpha$ are
+$$
+z=i
+\qquad\text{and}\qquad
+z=-3i.
+$$
+
+::: {.proof}
+The equations
+$$
+1+iz=0
+$$
+and
+$$
+3-iz=0
+$$
+give respectively $z=i$ and $z=-3i$.
+:::
+
+<1>2. The residue at $z=i$ is
+$$
+\operatorname{Res}_{z=i}F_\alpha(z)
+=
+\frac{e^{-\alpha}}{4i}.
+$$
+
+::: {.proof}
+Since
+$$
+1+iz=i(z-i),
+$$
+one has
+$$
+\operatorname{Res}_{z=i}F_\alpha(z)
+=
+\frac{e^{i\alpha i}}
+i(3-i i)
+=
+\frac{e^{-\alpha}}{4i}.
+$$
+:::
+
+<1>3. The residue at $z=-3i$ is
+$$
+\operatorname{Res}_{z=-3i}F_\alpha(z)
+=
+-\frac{e^{3\alpha}}{4i}.
+$$
+
+::: {.proof}
+The derivative of $3-iz$ is $-i$, and
+$$
+1+i(-3i)=4.
+$$
+Hence
+$$
+\operatorname{Res}_{z=-3i}F_\alpha(z)
+=
+\frac{e^{i\alpha(-3i)}}{(-i)4}
+=
+-\frac{e^{3\alpha}}{4i}.
+$$
+:::
+
+<1>4. If $\alpha>0$, then
+$$
+\boxed{
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}
+{(3-ix)(1+ix)}\,dx
+=
+\frac\pi2 e^{-\alpha}.
+}
+$$
+
+::: {.proof}
+Close the real segment by an upper semicircle. On the upper half-plane,
+$$
+|e^{i\alpha z}|
+=
+e^{-\alpha\operatorname{Im}z}
+\leq1.
+$$
+On the arc $|z|=R$,
+$$
+|3-iz|
+\geq
+R-3
+$$
+and
+$$
+|1+iz|
+\geq
+R-1.
+$$
+Thus the arc integral is bounded in absolute value by
+$$
+\frac{\pi R}{(R-3)(R-1)}
+\longrightarrow0.
+$$
+The only enclosed pole is $i$. Hence by step <1>2,
+$$
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}
+{(3-ix)(1+ix)}\,dx
+=
+2\pi i
+\frac{e^{-\alpha}}{4i}
+=
+\frac\pi2 e^{-\alpha}.
+$$
+:::
+
+<1>5. If $\alpha<0$, then
+$$
+\boxed{
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}
+{(3-ix)(1+ix)}\,dx
+=
+\frac\pi2 e^{3\alpha}.
+}
+$$
+
+::: {.proof}
+Close in the lower half-plane. There
+$$
+|e^{i\alpha z}|
+\leq1
+$$
+because $\alpha<0$ and $\operatorname{Im}z\leq0$. The same denominator
+estimate as in step <1>4 makes the lower-arc integral tend to zero.
+
+The contour is clockwise and encloses only the pole $-3i$. Therefore, using
+step <1>3,
+$$
+\begin{aligned}
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}
+{(3-ix)(1+ix)}\,dx
+&=
+-2\pi i
+\left(
+-\frac{e^{3\alpha}}{4i}
+\right)\\
+&=
+\frac\pi2 e^{3\alpha}.
+\end{aligned}
+$$
+:::
+
+<1>6. If $\alpha=0$, then
+$$
+\int_{-\infty}^{\infty}
+\frac{dx}{(3-ix)(1+ix)}
+=
+\frac\pi2.
+$$
+
+::: {.proof}
+Close in the upper half-plane. The rational integrand is $O(|z|^{-2})$, so
+the semicircular arc tends to zero. The residue at $i$ is $1/(4i)$ by
+step <1>2 with $\alpha=0$. Thus the residue theorem gives $\pi/2$.
+:::
+
+<1>7. Hence, for every real $\alpha$,
+$$
+\boxed{
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}
+{(3-ix)(1+ix)}\,dx
+=
+\begin{cases}
+\dfrac\pi2 e^{-\alpha},&\alpha\geq0,\\[6pt]
+\dfrac\pi2 e^{3\alpha},&\alpha\leq0.
+\end{cases}
+}
+$$
+
+::: {.proof}
+Steps <1>4--<1>6 give the three sign cases. At $\alpha=0$, both displayed
+formulas equal $\pi/2$.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required integral.
+:::
 :::
