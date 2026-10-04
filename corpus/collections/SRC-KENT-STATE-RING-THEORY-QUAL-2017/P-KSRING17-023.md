@@ -24,3 +24,220 @@ Let R be a ring with identity 1 and $a , b \in R$ such that $a b = 1$ . Denote $
 
 (c) If X has more than one element, then X is an infinite set.
 :::
+
+::: {.solution}
+Recall
+$$
+X
+\coloneqq
+\{x\in R:ax=1\},
+$$
+and
+$$
+ab=1.
+$$
+
+<1>1. If
+$$
+x\in X,
+$$
+then
+$$
+b+(1-xa)\in X.
+$$
+
+::: {.proof}
+Since
+$$
+x\in X,
+$$
+one has
+$$
+ax=1.
+$$
+Therefore
+$$
+\begin{aligned}
+a\bigl(b+(1-xa)\bigr)
+&=
+ab+a-axa\\
+&=
+1+a-(ax)a\\
+&=
+1+a-a\\
+&=
+1.
+\end{aligned}
+$$
+Hence
+$$
+b+(1-xa)\in X.
+$$
+:::
+
+<1>2. The map
+$$
+\varphi:X\to X,
+\qquad
+\varphi(x)
+\coloneqq
+b+(1-xa)
+$$
+is well-defined.
+
+::: {.proof}
+This is exactly step <1>1.
+:::
+
+<1>3. The map $\varphi$ is injective.
+
+::: {.proof}
+Suppose
+$$
+\varphi(x)=\varphi(y)
+$$
+for
+$$
+x,y\in X.
+$$
+Then
+$$
+b+(1-xa)
+=
+b+(1-ya),
+$$
+so
+$$
+xa=ya.
+$$
+Multiply on the right by $b$:
+$$
+xab
+=
+yab.
+$$
+Since
+$$
+ab=1,
+$$
+this becomes
+$$
+x=y.
+$$
+Thus $\varphi$ is one-to-one.
+:::
+
+<1>4. Suppose $X$ is finite. Then $\varphi$ is surjective.
+
+::: {.proof}
+By step <1>3, $\varphi$ is an injective self-map of the finite set $X$. Every injective self-map of a finite set is surjective.
+:::
+
+<1>5. Under the hypothesis of step <1>4, there exists
+$$
+x\in X
+$$
+such that
+$$
+\varphi(x)=b.
+$$
+
+::: {.proof}
+Because
+$$
+ab=1,
+$$
+one has
+$$
+b\in X.
+$$
+By surjectivity from step <1>4, $b$ has a preimage $x\in X$.
+:::
+
+<1>6. The element $x$ from step <1>5 is a two-sided inverse of $a$.
+
+::: {.proof}
+The equality
+$$
+\varphi(x)=b
+$$
+means
+$$
+b+(1-xa)
+=
+b.
+$$
+Therefore
+$$
+1-xa=0,
+$$
+so
+$$
+xa=1.
+$$
+Since
+$$
+x\in X,
+$$
+one also has
+$$
+ax=1.
+$$
+Thus $x$ is a two-sided inverse of $a$.
+:::
+
+<1>7. If $a$ has a two-sided inverse $x$, then $X=\{x\}$.
+
+::: {.proof}
+Let
+$$
+y\in X.
+$$
+Then
+$$
+ay=1.
+$$
+Using
+$$
+xa=1,
+$$
+one gets
+$$
+y
+=
+1y
+=
+(xa)y
+=
+x(ay)
+=
+x.
+$$
+Hence every element of $X$ equals $x$.
+:::
+
+<1>8. If $X$ has more than one element, then $X$ is infinite.
+
+::: {.proof}
+Suppose $X$ had more than one element but were finite. Steps <1>4--<1>6 would produce a two-sided inverse $x$ of $a$, and step <1>7 would then imply
+$$
+X=\{x\},
+$$
+contradicting the assumption that $X$ has more than one element.
+
+Therefore
+$$
+\boxed{
+\abs X>1
+\implies
+X\text{ is infinite}.
+}
+$$
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), step <1>3 proves part (b), and step <1>8 proves part (c).
+:::
+:::
