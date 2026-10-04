@@ -19,3 +19,39 @@ audit:
 Let $U\subseteq\mathbb C$ be open.
 Define what it means for a function $f:U\to\mathbb C$ to be analytic.
 :::
+
+::: {.solution}
+<1>1. The function $f:U\to\CC$ is **analytic on $U$** if it is complex differentiable at every point of $U$; that is, for every $z_0\in U$ the limit
+$$
+\boxed{
+f'(z_0)
+=
+\lim_{z\to z_0}
+\frac{f(z)-f(z_0)}{z-z_0}}
+$$
+exists as a complex number.
+
+::: {.proof}
+This is the standard definition of an analytic, or holomorphic, function on an open subset of $\CC$.
+:::
+
+<1>2. Equivalently, for every $z_0\in U$ there is an $r>0$ with
+$$
+B(z_0,r)\subseteq U
+$$
+and complex coefficients $a_0,a_1,\ldots$ such that
+$$
+f(z)=\sum_{n=0}^{\infty}a_n(z-z_0)^n
+$$
+for every $z\in B(z_0,r)$.
+
+::: {.proof}
+The equivalence between holomorphy and local representability by a convergent complex power series is the standard analyticity theorem for one complex variable.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the requested definition; step <1>2 records its equivalent power-series form.
+:::
+:::
