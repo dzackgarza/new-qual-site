@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Fall 2016 Question 8 omits the parameter domain for xi
+
+- **Object and need:** P-TIE-F16-08 in SRC-UGA-CA-COMPILATION. The source asks to compute the Fourier-type integral with parameter xi but does not state whether xi is real or complex.
+- **Observed evidence:** line 749 of assets/attachments/extracted/Questions_from_Tie.md contains the integral with xi but no parameter range. For complex xi, absolute convergence holds only in the strip |Im xi|<1/2; outside that strip the integral generally diverges.
+- **Impact and owner:** the Fourier-transform reading is xi in R. A mathematically complete statement must either specify xi real or state the larger convergence strip.
+- **Uncertainty:** the course context strongly suggests real Fourier frequency, but the local printed source is silent.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-TIE-F16-08 records the ambiguity and proves the stronger formula for |Im xi|<1/2, including the real case.
+
 ### Fall 2016 Question 3(c) does not specify a logarithm determination
 
 - **Object and need:** P-TIE-F16-03 in SRC-UGA-CA-COMPILATION. Part (c) asks for an upper bound on the contour integral of log(z)/z^2 around the full circle |z|=R.
