@@ -18,3 +18,120 @@ audit:
 ::: {.problem}
 Compute $\int _ { 0 } ^ { \pi } ( \cos \theta ) ^ { 2 n } \mathrm { d } \theta ;$
 :::
+
+::: {.solution}
+Assume $n$ is a nonnegative integer.
+
+<1>1. Since $\cos^{2n}\theta$ has period $\pi$,
+$$
+\int_0^{\pi}\cos^{2n}\theta\,d\theta
+=
+\frac12
+\int_0^{2\pi}\cos^{2n}\theta\,d\theta.
+$$
+
+::: {.proof}
+One has
+$$
+\cos(\theta+\pi)=-\cos\theta,
+$$
+so
+$$
+\cos^{2n}(\theta+\pi)=\cos^{2n}\theta.
+$$
+Thus the two half-period integrals over $[0,\pi]$ and $[\pi,2\pi]$ are
+equal.
+:::
+
+<1>2. Euler's formula gives
+$$
+\cos^{2n}\theta
+=
+\frac1{2^{2n}}
+\sum_{k=0}^{2n}
+\binom{2n}{k}
+e^{i(2n-2k)\theta}.
+$$
+
+::: {.proof}
+Since
+$$
+\cos\theta
+=
+\frac{e^{i\theta}+e^{-i\theta}}2,
+$$
+the binomial theorem gives
+$$
+\cos^{2n}\theta
+=
+\frac1{2^{2n}}
+\sum_{k=0}^{2n}
+\binom{2n}{k}
+e^{i(2n-k)\theta}e^{-ik\theta}.
+$$
+Combine the exponential factors.
+:::
+
+<1>3. For an integer $m$,
+$$
+\int_0^{2\pi}e^{im\theta}\,d\theta
+=
+\begin{cases}
+2\pi,&m=0,\\
+0,&m\ne0.
+\end{cases}
+$$
+
+::: {.proof}
+For $m=0$ the integrand is $1$. If $m\ne0$,
+$$
+\int_0^{2\pi}e^{im\theta}\,d\theta
+=
+\left[
+\frac{e^{im\theta}}{im}
+\right]_0^{2\pi}
+=0.
+$$
+:::
+
+<1>4. Therefore
+$$
+\int_0^{2\pi}\cos^{2n}\theta\,d\theta
+=
+\frac{2\pi}{4^n}
+\binom{2n}{n}.
+$$
+
+::: {.proof}
+In the expansion from step <1>2, step <1>3 kills every term except the one
+with
+$$
+2n-2k=0,
+$$
+namely $k=n$. The surviving coefficient is
+$$
+2^{-2n}\binom{2n}{n}.
+$$
+Multiplying it by $2\pi$ gives the result.
+:::
+
+<1>5. Hence
+$$
+\boxed{
+\int_0^{\pi}\cos^{2n}\theta\,d\theta
+=
+\frac{\pi}{4^n}
+\binom{2n}{n}.
+}
+$$
+
+::: {.proof}
+Apply step <1>1 to the value obtained in step <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the requested integral.
+:::
+:::
