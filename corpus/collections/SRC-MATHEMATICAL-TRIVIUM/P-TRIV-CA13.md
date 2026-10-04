@@ -18,3 +18,141 @@ audit:
 ::: {.problem}
 Compute $\int _ { - \infty } ^ { \infty } \frac { 1 } { 1 + x ^ { 6 } } \mathrm { d } x ;$
 :::
+
+::: {.solution}
+Let
+$$
+F(z)=\frac1{1+z^6}.
+$$
+
+<1>1. The poles of $F$ in the upper half-plane are
+$$
+\zeta_1=e^{i\pi/6},
+\qquad
+\zeta_2=i,
+\qquad
+\zeta_3=e^{5i\pi/6}.
+$$
+
+::: {.proof}
+The poles are the six roots
+$$
+e^{i(2k+1)\pi/6},
+\qquad
+k=0,1,\ldots,5,
+$$
+of $z^6=-1$. Exactly the three listed roots have positive imaginary part.
+:::
+
+<1>2. If $\zeta^6=-1$, then
+$$
+\operatorname{Res}_{z=\zeta}F(z)
+=
+-\frac{\zeta}{6}.
+$$
+
+::: {.proof}
+The pole is simple, so
+$$
+\operatorname{Res}_{z=\zeta}F(z)
+=
+\frac1{6\zeta^5}.
+$$
+Since $\zeta^6=-1$,
+$$
+\zeta^{-5}=-\zeta.
+$$
+:::
+
+<1>3. The sum of the residues in the upper half-plane is
+$$
+-\frac{i}{3}.
+$$
+
+::: {.proof}
+By step <1>2,
+$$
+\sum_{j=1}^{3}
+\operatorname{Res}_{z=\zeta_j}F(z)
+=
+-\frac16
+\left(
+e^{i\pi/6}+i+e^{5i\pi/6}
+\right).
+$$
+Since
+$$
+e^{i\pi/6}+e^{5i\pi/6}=i,
+$$
+the expression in parentheses is $2i$.
+:::
+
+<1>4. Let $C_R$ be the positively oriented contour consisting of
+$[-R,R]$ and the upper semicircle of radius $R$, with $R>1$. Then
+$$
+\int_{C_R}F(z)\,dz
+=
+\frac{2\pi}{3}.
+$$
+
+::: {.proof}
+By the residue theorem and step <1>3,
+$$
+\int_{C_R}F(z)\,dz
+=
+2\pi i
+\left(-\frac{i}{3}\right)
+=
+\frac{2\pi}{3}.
+$$
+:::
+
+<1>5. The integral over the upper semicircle tends to zero as
+$R\to\infty$.
+
+::: {.proof}
+On $|z|=R$,
+$$
+|1+z^6|
+\geq
+R^6-1.
+$$
+The arc length is $\pi R$. Thus the $ML$ estimate gives
+$$
+\left|
+\int_{\Gamma_R}F(z)\,dz
+\right|
+\leq
+\frac{\pi R}{R^6-1}
+\longrightarrow0.
+$$
+:::
+
+<1>6. Therefore
+$$
+\boxed{
+\int_{-\infty}^{\infty}
+\frac{dx}{1+x^6}
+=
+\frac{2\pi}{3}.
+}
+$$
+
+::: {.proof}
+Step <1>4 gives
+$$
+\int_{-R}^{R}\frac{dx}{1+x^6}
++
+\int_{\Gamma_R}F(z)\,dz
+=
+\frac{2\pi}{3}.
+$$
+Let $R\to\infty$ and use step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required value.
+:::
+:::
