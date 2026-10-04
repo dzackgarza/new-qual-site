@@ -19,3 +19,235 @@ audit:
 Let R be a principal ideal domain.
 Show that if (a) is a nonzero ideal in R, then there are only finitely many ideals in R containing (a).
 :::
+
+::: {.solution}
+Assume
+$$
+(a)\ne(0).
+$$
+Then
+$$
+a\ne0.
+$$
+
+<1>1. Every ideal of $R$ containing $(a)$ has the form
+$$
+(d)
+$$
+for some divisor
+$$
+d\mid a.
+$$
+
+::: {.proof}
+Let
+$$
+I
+$$
+be an ideal with
+$$
+(a)\subseteq I.
+$$
+Because $R$ is a principal ideal domain,
+$$
+I=(d)
+$$
+for some
+$$
+d\in R.
+$$
+The containment
+$$
+(a)\subseteq(d)
+$$
+means in particular that
+$$
+a\in(d).
+$$
+Thus
+$$
+a=dr
+$$
+for some
+$$
+r\in R,
+$$
+so
+$$
+d\mid a.
+$$
+:::
+
+<1>2. Conversely, if
+$$
+d\mid a,
+$$
+then
+$$
+(a)\subseteq(d).
+$$
+
+::: {.proof}
+Write
+$$
+a=dr.
+$$
+Every element of
+$$
+(a)
+$$
+has the form
+$$
+sa
+=
+sdr
+\in
+(d).
+$$
+Hence
+$$
+(a)\subseteq(d).
+$$
+:::
+
+<1>3. Since $R$ is a PID, it is a UFD.
+
+::: {.proof}
+Every principal ideal domain is a unique factorization domain.
+Hence every nonzero nonunit of $R$ has a factorization into irreducibles, unique up to order and associates.
+:::
+
+<1>4. If $a$ is a unit, then the only ideal containing $(a)$ is $R$.
+
+::: {.proof}
+If $a$ is a unit, then
+$$
+(a)=R.
+$$
+The only ideal containing $R$ is $R$ itself.
+:::
+
+<1>5. Suppose $a$ is not a unit.
+Choose a factorization
+$$
+a
+=
+u
+\prod_{i=1}^{r}
+p_i^{e_i},
+$$
+where
+$$
+u\in R^\times,
+$$
+the $p_i$ are pairwise nonassociate irreducibles, and
+$$
+e_i\ge1.
+$$
+Then every divisor $d$ of $a$ is associate to an element of the form
+$$
+\prod_{i=1}^{r}
+p_i^{f_i}
+$$
+with
+$$
+0\le f_i\le e_i.
+$$
+
+::: {.proof}
+Let
+$$
+d\mid a.
+$$
+Then
+$$
+a=dc
+$$
+for some
+$$
+c\in R.
+$$
+Factor $d$ and $c$ into irreducibles.
+By uniqueness of factorization, every irreducible factor of $d$ is associate to one of the $p_i$, and its exponent cannot exceed the corresponding exponent $e_i$ in the factorization of $a$.
+Thus, up to multiplication by a unit,
+$$
+d
+\sim
+\prod_{i=1}^{r}
+p_i^{f_i}
+$$
+with
+$$
+0\le f_i\le e_i.
+$$
+:::
+
+<1>6. There are only finitely many divisors of $a$ up to associates.
+
+::: {.proof}
+By step <1>5, an associate class of a divisor is determined by the finite tuple
+$$
+(f_1,\ldots,f_r)
+$$
+with
+$$
+0\le f_i\le e_i.
+$$
+There are exactly
+$$
+\prod_{i=1}^{r}(e_i+1)
+$$
+such tuples.
+Hence there are finitely many divisor classes up to associates.
+:::
+
+<1>7. Associate elements generate the same principal ideal.
+
+::: {.proof}
+If
+$$
+d'=vd
+$$
+with
+$$
+v
+$$
+a unit, then
+$$
+(d')
+=(vd)
+=(d),
+$$
+because multiplication by a unit does not change the set of multiples.
+:::
+
+<1>8. Therefore there are only finitely many ideals containing $(a)$.
+
+::: {.proof}
+By steps <1>1--<1>2, ideals containing
+$$
+(a)
+$$
+are exactly the ideals
+$$
+(d)
+$$
+with
+$$
+d\mid a.
+$$
+Step <1>6 gives only finitely many divisors up to associates, and step <1>7 shows associates yield the same ideal.
+Thus
+$$
+\boxed{
+\text{only finitely many ideals of }R\text{ contain }(a).
+}
+$$
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required conclusion.
+:::
+:::
