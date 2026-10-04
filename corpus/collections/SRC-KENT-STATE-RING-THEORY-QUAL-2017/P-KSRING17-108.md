@@ -20,3 +20,271 @@ audit:
 
 (b) Show that $x ^ { 4 } + 1$ is not irreducible in $\mathbb { Z } _ { 3 } [ x ]$
 :::
+
+::: {.solution}
+Set
+$$
+f(x)
+\coloneqq
+x^4+x^3+x^2+x+1
+\in
+\FF_3[x].
+$$
+
+<1>1. The polynomial $f$ has no root in $\FF_3$.
+
+::: {.proof}
+Evaluate at
+$$
+0,1,2.
+$$
+One has
+$$
+f(0)=1.
+$$
+Also,
+$$
+f(1)
+=
+1+1+1+1+1
+=
+5
+\equiv
+2
+\pmod3.
+$$
+Finally,
+$$
+\begin{aligned}
+f(2)
+&=
+2^4+2^3+2^2+2+1\\
+&=
+16+8+4+2+1\\
+&=
+31\\
+&\equiv
+1
+\pmod3.
+\end{aligned}
+$$
+Thus $f$ has no root in $\FF_3$.
+:::
+
+<1>2. If $f$ is reducible, then it factors as a product of two monic quadratics.
+
+::: {.proof}
+The polynomial $f$ has degree $4$.
+By step <1>1 it has no linear factor.
+Hence any nontrivial factorization over the field $\FF_3$ must have factor degrees
+$$
+2
+\qquad\text{and}\qquad
+2.
+$$
+Because $f$ is monic, the two factors may be chosen monic.
+:::
+
+<1>3. Suppose
+$$
+f(x)
+=
+(x^2+ax+b)(x^2+cx+d).
+$$
+Then
+$$
+a+c=1,
+$$
+$$
+ac+b+d=1,
+$$
+$$
+ad+bc=1,
+$$
+and
+$$
+bd=1.
+$$
+
+::: {.proof}
+Expand:
+$$
+\begin{aligned}
+(x^2+ax+b)(x^2+cx+d)
+&=
+x^4
++(a+c)x^3\\
+&\quad+
+(ac+b+d)x^2\\
+&\quad+
+(ad+bc)x
++bd.
+\end{aligned}
+$$
+Compare coefficients with
+$$
+x^4+x^3+x^2+x+1.
+$$
+:::
+
+<1>4. The equation
+$$
+bd=1
+$$
+forces either
+$$
+(b,d)=(1,1)
+$$
+or
+$$
+(b,d)=(2,2).
+$$
+
+::: {.proof}
+The nonzero elements of $\FF_3$ are $1$ and $2$.
+The products equal to $1$ are
+$$
+1\cdot1=1
+$$
+and
+$$
+2\cdot2=4\equiv1.
+$$
+:::
+
+<1>5. The case
+$$
+b=d=1
+$$
+is impossible.
+
+::: {.proof}
+The equations from step <1>3 become
+$$
+a+c=1
+$$
+and
+$$
+ac+2=1,
+$$
+so
+$$
+ac=2.
+$$
+Thus $a$ and $c$ would be roots of
+$$
+t^2-t+2.
+$$
+Its discriminant is
+$$
+1-8
+=
+-7
+\equiv
+2
+\pmod3.
+$$
+But the squares in $\FF_3$ are only
+$$
+0
+\qquad\text{and}\qquad
+1.
+$$
+Hence this quadratic has no roots in $\FF_3$, contradiction.
+:::
+
+<1>6. The case
+$$
+b=d=2
+$$
+is impossible.
+
+::: {.proof}
+The $x^2$-coefficient equation gives
+$$
+ac+2+2
+=
+1,
+$$
+so
+$$
+ac=0.
+$$
+The $x^3$-coefficient equation still gives
+$$
+a+c=1.
+$$
+But the $x$-coefficient becomes
+$$
+ad+bc
+=
+2a+2c
+=
+2(a+c)
+=
+2,
+$$
+whereas step <1>3 requires it to equal $1$.
+This is a contradiction.
+:::
+
+<1>7. Therefore
+$$
+\boxed{
+x^4+x^3+x^2+x+1
+\text{ is irreducible in }\FF_3[x].
+}
+$$
+
+::: {.proof}
+Step <1>1 rules out linear factors.
+Steps <1>2--<1>6 rule out every possible quadratic-by-quadratic factorization.
+Thus no nontrivial factorization exists.
+:::
+
+<1>8. In $\FF_3[x]$,
+$$
+\boxed{
+x^4+1
+=
+(x^2+x+2)(x^2+2x+2).
+}
+$$
+
+::: {.proof}
+Multiply:
+$$
+\begin{aligned}
+(x^2+x+2)(x^2+2x+2)
+&=
+x^4
++3x^3
++6x^2
++6x
++4\\
+&=
+x^4+1
+\end{aligned}
+$$
+in characteristic $3$.
+Both factors have positive degree.
+:::
+
+<1>9. Hence
+$$
+\boxed{
+x^4+1
+\text{ is reducible in }\FF_3[x].
+}
+$$
+
+::: {.proof}
+Step <1>8 gives a nontrivial factorization.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Step <1>7 proves part (a), and step <1>9 proves part (b).
+:::
+:::
