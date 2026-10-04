@@ -20,3 +20,93 @@ review: draft
 
 (c) The ideals of the form$\pi A$are the minimal elements in the set of nonzero prime ideals, ordered by inclusion, and they are the only nonzero principal prime ideals.
 :::
+
+::: {.solution}
+<1>1. If $\pi$ is a prime element of $A$, then $\pi A$ is a prime ideal.
+
+::: {.proof}
+The ideal $\pi A$ is proper because a prime element is not a unit. Suppose
+$$
+xy\in\pi A.
+$$
+Then $\pi\mid xy$. Since $\pi$ is prime, $\pi\mid x$ or $\pi\mid y$, so
+$$
+x\in\pi A
+\qquad\text{or}\qquad
+y\in\pi A.
+$$
+Thus $\pi A$ is prime.
+:::
+
+<1>2. Every nonzero prime ideal $P\subset A$ contains $\pi A$ for some prime element $\pi$.
+
+::: {.proof}
+Choose $0\ne a\in P$. Since $P$ is proper, $a$ is not a unit. Factor $a$ in the UFD $A$:
+$$
+a=u\pi_1\cdots\pi_r,
+$$
+where $u$ is a unit and each $\pi_i$ is irreducible. In a UFD every irreducible element is prime. Since
+$$
+a\in P
+$$
+and $P$ is prime, repeated application of the defining property of a prime ideal gives
+$$
+\pi_i\in P
+$$
+for some $i$. Therefore
+$$
+\pi_iA\subseteq P.
+$$
+Step <1>1 shows that $\pi_iA$ is itself a nonzero prime ideal.
+:::
+
+<1>3. For every prime element $\pi$, the prime ideal $\pi A$ is minimal among the nonzero prime ideals.
+
+::: {.proof}
+Let $Q$ be a nonzero prime ideal with
+$$
+Q\subseteq\pi A.
+$$
+By step <1>2 there is a prime element $\rho$ such that
+$$
+\rho A\subseteq Q.
+$$
+Hence
+$$
+\rho\in Q\subseteq\pi A,
+$$
+so $\pi\mid\rho$. Because $\rho$ is prime, hence irreducible, this divisibility forces $\pi$ and $\rho$ to be associates. Therefore
+$$
+\rho A=\pi A.
+$$
+Consequently
+$$
+\pi A=\rho A\subseteq Q\subseteq\pi A,
+$$
+and hence $Q=\pi A$.
+:::
+
+<1>4. The ideals $\pi A$, with $\pi$ prime, are exactly the nonzero principal prime ideals.
+
+::: {.proof}
+Step <1>1 proves that every ideal of the form $\pi A$ is a nonzero principal prime ideal.
+
+Conversely, let $aA$ be a nonzero principal prime ideal. Since it is proper, $a$ is a nonzero nonunit. If
+$$
+a\mid xy,
+$$
+then $xy\in aA$. Since $aA$ is prime,
+$$
+x\in aA
+\qquad\text{or}\qquad
+y\in aA,
+$$
+so $a\mid x$ or $a\mid y$. Thus $a$ is a prime element. Therefore the ideal is of the required form.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), step <1>2 proves part (b), and steps <1>3 and <1>4 prove part (c).
+:::
+:::
