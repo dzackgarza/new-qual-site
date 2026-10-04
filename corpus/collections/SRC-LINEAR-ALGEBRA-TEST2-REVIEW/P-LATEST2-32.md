@@ -29,3 +29,95 @@ Find the dimension of the subspace spanned by
 
 (A) $2$  (B) $3$  (C) $4$  (D) $5$  (E) $6$
 :::
+
+::: {.solution}
+Let
+$$
+v_1=\begin{pmatrix}1\\1\\0\\0\end{pmatrix},
+\quad
+v_3=\begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+\quad
+v_4=\begin{pmatrix}2\\0\\0\\3\end{pmatrix}.
+$$
+
+<1>1. The span of all six listed vectors has dimension at most $3$.
+
+::: {.proof}
+Every listed vector has third coordinate equal to $0$.
+Hence their span is contained in
+$$
+W
+=
+\left\{
+\begin{pmatrix}a\\b\\0\\c\end{pmatrix}
+:a,b,c\in\mathbb R
+\right\}.
+$$
+The vectors
+$$
+\begin{pmatrix}1\\0\\0\\0\end{pmatrix},
+\quad
+\begin{pmatrix}0\\1\\0\\0\end{pmatrix},
+\quad
+\begin{pmatrix}0\\0\\0\\1\end{pmatrix}
+$$
+form a basis of $W$, so
+$$
+\dim W=3.
+$$
+Therefore the required span has dimension at most $3$.
+:::
+
+<1>2. The vectors $v_1,v_3,v_4$ are linearly independent.
+
+::: {.proof}
+Suppose
+$$
+av_1+bv_3+cv_4=0.
+$$
+Looking at the fourth coordinate gives
+$$
+3c=0,
+$$
+so
+$$
+c=0.
+$$
+The first coordinate then gives
+$$
+a=0.
+$$
+Finally, the second coordinate gives
+$$
+a+b=0,
+$$
+so
+$$
+b=0.
+$$
+Thus only the trivial linear combination vanishes.
+:::
+
+<1>3. The span has dimension at least $3$.
+
+::: {.proof}
+Step <1>2 exhibits three linearly independent vectors among the six given vectors.
+Hence the span has dimension at least $3$.
+:::
+
+<1>4. Therefore the dimension is
+$$
+\boxed{3}.
+$$
+
+::: {.proof}
+Step <1>1 gives an upper bound of $3$, while step <1>3 gives a lower bound of $3$.
+Thus the dimension is exactly $3$, which is answer choice $\boxed{\text{(B)}}$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required dimension.
+:::
+:::
