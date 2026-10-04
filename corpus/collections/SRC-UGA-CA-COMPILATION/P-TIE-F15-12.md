@@ -19,3 +19,70 @@ audit:
 ::: {.problem}
 Assume f (z) is analytic in region D and Γ is a rectifiable curve in D with interior in D. Prove that if f (z) is real for all $z \in \Gamma$ , then $f ( z )$ is a constant.
 :::
+
+::: {.solution}
+Let $\Omega$ denote the interior bounded by $\Gamma$, and write
+$$
+f=u+iv.
+$$
+
+<1>1. The harmonic function $v$ vanishes on $\overline\Omega$.
+
+::: {.proof}
+Since $f$ is holomorphic on the region $D$ and $\overline\Omega\subset D$, its imaginary part $v$ is harmonic on a neighborhood of $\overline\Omega$ and continuous there. The hypothesis that $f$ is real on $\Gamma=\partial\Omega$ gives
+$$
+v=0
+$$
+on $\partial\Omega$.
+
+By the maximum principle for harmonic functions,
+$$
+\max_{\overline\Omega}v
+=
+\max_{\partial\Omega}v
+=0.
+$$
+Applying the same principle to $-v$ gives
+$$
+\max_{\overline\Omega}(-v)=0.
+$$
+Thus $v\le0$ and $v\ge0$ on $\Omega$, so
+$$
+v\equiv0
+$$
+on $\overline\Omega$.
+:::
+
+<1>2. The function $f$ is constant on $\Omega$.
+
+::: {.proof}
+By step <1>1,
+$$
+f(\Omega)\subset\RR.
+$$
+If $f$ were nonconstant on the connected open set $\Omega$, the open mapping theorem would imply that $f(\Omega)$ is open in $\CC$. No nonempty subset of $\RR$ is open in $\CC$. Hence $f$ must be constant on $\Omega$.
+:::
+
+<1>3. The function $f$ is constant on all of $D$.
+
+::: {.proof}
+Let $c$ be the constant value from step <1>2. Then the holomorphic function
+$$
+f-c
+$$
+vanishes on the nonempty open subset $\Omega$ of the region $D$. By the identity theorem,
+$$
+f-c\equiv0
+$$
+on $D$. Therefore
+$$
+\boxed{f\equiv c\text{ on }D.}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
+:::
