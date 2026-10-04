@@ -3097,3 +3097,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-UCLARA17S-05` records the counterexample and proves the
   corrected periodic version; the external exam and supplied solution remain
   unchanged.
+
+### Wesleyan August 2013 Topology Part I Problem 2 omits the nonempty-index hypothesis
+
+- **Object and need:** `P-WESTOP13-I2` in `SRC-WESLEYAN-TOP-SUMMER-2013`.
+  Part 2 asks to prove that `X = \prod_{\alpha\in J}Y_\alpha` is not compact,
+  where every factor is either the `K`-topology interval or the lower-limit
+  interval, but the source does not state that `J` is nonempty.
+- **Observed evidence:** the retained August 7, 2013 exam transcription gives
+  an arbitrary index set `J` and no nonemptiness condition. For `J=\varnothing`,
+  the product is the one-point space, hence compact.
+- **Impact and owner:** the printed conclusion has a degenerate counterexample.
+  For every nonempty `J`, the intended proof works exactly as requested: the
+  given product topology is strictly finer than the ordinary Hausdorff product
+  topology on `[0,1]^J`, so part 1 rules out compactness.
+- **Expected result:** preserve the literal source, record the empty-product
+  exception, and prove noncompactness for `J\ne\varnothing`.
+- **Uncertainty:** none; this is the standard empty-product convention.
+- **Repair:** `P-WESTOP13-I2` records the exception and proves the intended
+  nonempty-index-set statement.
