@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 21 omits j != i from the intersection
+
+- **Object and need:** P-KSRING17-021 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source asks to show $I_i+\bigcap I_j=R$ for pairwise comaximal ideals.
+- **Observed evidence:** line 121 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md prints the intersection without excluding $I_i$. Taken literally, $\bigcap_j I_j\subseteq I_i$, so the left side equals $I_i$ and need not be all of $R$.
+- **Impact and owner:** the intended statement must be $I_i+\bigcap_{j\ne i}I_j=R$.
+- **Uncertainty:** none about the literal statement being false; the intended pairwise-comaximal lemma is standard and is the only nearby statement consistent with the exercise.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-021 records the correction and proves the intended statement.
+
 ### Kent State Ring Theory Problem 9 omits that p is odd in Euler's criterion
 
 - **Object and need:** P-KSRING17-009 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states Euler's criterion for a prime p without saying p is odd.
