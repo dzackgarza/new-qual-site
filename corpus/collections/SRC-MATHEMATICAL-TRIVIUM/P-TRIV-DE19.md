@@ -24,3 +24,98 @@ $$
 
 as a power series about $x = 1$
 :::
+
+::: {.solution}
+Set $s=x-1$ and write
+\[
+y(s)=\sum_{n=0}^{\infty}a_ns^n.
+\]
+
+<1>1. In the variable $s$, the differential equation is
+\[
+(1-s^2)y''-3sy'-y=0.
+\]
+
+::: {.proof}
+Since $x=1+s$, one has
+\[
+x(2-x)=(1+s)(1-s)=1-s^2,
+\qquad
+1-x=-s,
+\]
+and differentiation with respect to $x$ is the same as differentiation with respect to $s$.
+:::
+
+<1>2. The power-series coefficients satisfy
+\[
+(n+2)(n+1)a_{n+2}-(n+1)^2a_n=0,
+\]
+or equivalently
+\[
+a_{n+2}=\frac{n+1}{n+2}a_n
+\qquad(n\geq0).
+\]
+
+::: {.proof}
+From the declared series,
+\[
+y'=\sum_{n=0}^{\infty}(n+1)a_{n+1}s^n,
+\qquad
+y''=\sum_{n=0}^{\infty}(n+2)(n+1)a_{n+2}s^n.
+\]
+Substitution into step <1>1 shows that the coefficient of $s^n$ is
+\[
+(n+2)(n+1)a_{n+2}
+-\bigl(n(n-1)+3n+1\bigr)a_n.
+\]
+The expression in parentheses is $(n+1)^2$, which gives the recurrence.
+:::
+
+<1>3. The even coefficients are
+\[
+a_{2m}=a_0\prod_{j=1}^{m}\frac{2j-1}{2j}
+=a_0\frac{(2m)!}{4^m(m!)^2}
+\qquad(m\geq0).
+\]
+
+::: {.proof}
+Apply the recurrence in step <1>2 successively with $n=0,2,\ldots,2m-2$. This gives the product. Using
+\[
+(2m)!!=2^m m!,
+\qquad
+(2m-1)!!=\frac{(2m)!}{2^m m!}
+\]
+gives the factorial form.
+:::
+
+<1>4. The odd coefficients are
+\[
+a_{2m+1}=a_1\prod_{j=1}^{m}\frac{2j}{2j+1}
+=a_1\frac{(2m)!!}{(2m+1)!!}
+\qquad(m\geq0).
+\]
+
+::: {.proof}
+Apply the recurrence in step <1>2 successively with $n=1,3,\ldots,2m-1$.
+:::
+
+<1>5. Hence the general power-series solution about $x=1$ is
+\[
+\boxed{
+y(x)=C_0\sum_{m=0}^{\infty}
+\frac{(2m)!}{4^m(m!)^2}(x-1)^{2m}
++C_1\sum_{m=0}^{\infty}
+\frac{(2m)!!}{(2m+1)!!}(x-1)^{2m+1}}
+\]
+for $|x-1|<1$.
+
+::: {.proof}
+Steps <1>3 and <1>4 determine all coefficients from the two independent initial coefficients $a_0=C_0$ and $a_1=C_1$. The nearest singular points of the differential equation to the expansion point $x=1$ occur at $x=0$ and $x=2$, both at distance $1$, so these power series converge for $|x-1|<1$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the two-parameter general solution as a power series about $x=1$.
+:::
+:::
