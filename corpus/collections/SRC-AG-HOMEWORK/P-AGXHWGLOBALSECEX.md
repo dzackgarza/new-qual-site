@@ -14,148 +14,151 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any open $U \subseteq X$ show that the functor
-\[
+$$
 \Gamma\qty{U, {-}}: \Sh(X) \to \mathsf{Ab}\mathsf{Grp}
-\]
+$$
 is left exact, but need not be exact.
 :::
 
-::: solution
-We are given exactness of
-\[
-\xi: 0 \to \mcf_1 \xrightarrow{f} \mcf_2 \xrightarrow{g} \mcf_3 \to 0
-,\]
-where a morphism such as $f$ is data of the form
+::: {.solution}
+Let
+$$
+0\longrightarrow \mathcal F'
+\xrightarrow{\alpha}
+\mathcal F
+\xrightarrow{\beta}
+\mathcal F''
+$$
+be an exact sequence of sheaves of abelian groups on $X$, and fix an open subset $U\subseteq X$.
 
-\begin{tikzcd}
-	U & {\mcf_1(U)} & {\mcf_2(U)} \\
-	V & {\mcf_1(V)} & {\mcf_2(V)}
-	\arrow[""{name=0, anchor=center, inner sep=0}, "{\iota_{UV}}", hook, from=2-1, to=1-1]
-	\arrow[""{name=1, anchor=center, inner sep=0}, "{\Res_1(U, V)}", from=1-2, to=2-2]
-	\arrow["{\Res_2(U, V)}", from=1-3, to=2-3]
-	\arrow["{f_U}", from=1-2, to=1-3]
-	\arrow["{f_V}"', from=2-2, to=2-3]
-	\arrow["f", shorten <=12pt, shorten >=12pt, from=0, to=1]
-\end{tikzcd}
+<1>1. The map $\alpha_U:\mathcal F'(U)\to\mathcal F(U)$ is injective.
 
-Applying $\Gamma(X; {-})$, we want to show exactness of
-\[
-\xi_X: 0 \to \mcf_1(X) \xrightarrow{f_X} \mcf_2(X) \xrightarrow{g_X} \mcf_3(X) \to \cdots
-.\]
+::: {.proof}
+The kernel sheaf of $\alpha$ is the zero sheaf because the given sheaf sequence is exact at $\mathcal F'$. Kernels of morphisms of sheaves are computed sectionwise, so
+$$
+\ker(\alpha_U)=(\ker\alpha)(U)=0.
+$$
+Hence $\alpha_U$ is injective.
+:::
 
-**Exactness at $\mcf_1(X)$**:
+<1>2. One has $\operatorname{im}(\alpha_U)\subseteq\ker(\beta_U)$.
 
-- Use that $f$ is a monomorphism $\iff \ker f = \mathbf 0$ as a sheaf, so
-\[
-(\ker f)(U) = (\mathbf 0)(U) = 0
-.\]
-- Use that
-\[
-(\ker f)(U) &\da \ker f_U \da \ker( \mcf_1(U) \xrightarrow{f_U} \mcf_2(U)) \\
-\implies \ker f_X &= (\ker f)(X) = (\mathbf 0)(X) = 0
-.\]
-- Why this works: the kernel presheaf is already a sheaf, so we can use the presheaf assignment $(\ker f)(U) = \ker f_U$ directly.
-  This does not work for the cokernel sheaf, since the image presheaf needs to be sheafified.
+::: {.proof}
+Exactness of the sheaf sequence gives $\beta\circ\alpha=0$. Evaluating this equality on $U$ gives $\beta_U\circ\alpha_U=0$, which is exactly the asserted inclusion.
+:::
 
-Alternatively, a direct argument that $f_X$ is injective.
-A fact we need: $\xi$ is exact iff it is exact on stalks, so there are commutative squares for all $p\in X$:
+<1>3. One has $\ker(\beta_U)\subseteq\operatorname{im}(\alpha_U)$.
 
-\begin{tikzcd}
-	{\xi:} & 0 & {\mcf_1} & {\mcf_2} & {\mcf_3} & 0 \\
-	{\xi_X:} & {?} & {\mcf_1(X)} & {\mcf_2(X)} & {\mcf_3(X)} & {?} \\
-	{\xi_p:} & 0 & {(\mcf_1)_p} & {(\mcf_2)_p} & {(\mcf_3)_p} & 0
-	\arrow[from=1-2, to=1-3]
-	\arrow["f", hook, from=1-3, to=1-4]
-	\arrow["g", two heads, from=1-4, to=1-5]
-	\arrow[from=1-5, to=1-6]
-	\arrow["{\Gamma(X;\wait)}", Rightarrow, from=1-4, to=2-4]
-	\arrow[from=2-2, to=2-3]
-	\arrow["{f_X}", from=2-3, to=2-4]
-	\arrow["{g_X}", from=2-4, to=2-5]
-	\arrow[from=2-5, to=2-6]
-	\arrow["{\Res_1(X, p)}", from=2-3, to=3-3]
-	\arrow["{\Res_2(X, p)}", from=2-4, to=3-4]
-	\arrow["{\Res_3(X, p)}", from=2-5, to=3-5]
-	\arrow[from=3-2, to=3-3]
-	\arrow["{f_p}"', hook, from=3-3, to=3-4]
-	\arrow["{g_p}"', two heads, from=3-4, to=3-5]
-	\arrow[from=3-5, to=3-6]
-\end{tikzcd}
+<2>1. Every $s\in\ker(\beta_U)$ lifts locally through $\alpha$.
 
+::: {.proof}
+Fix $p\in U$. Exactness may be checked on stalks, so
+$$
+\ker(\beta_p)=\operatorname{im}(\alpha_p).
+$$
+For $s\in\ker(\beta_U)$, its germ $s_p\in\mathcal F_p$ therefore equals $\alpha_p(t_p)$ for some $t_p\in\mathcal F'_p$. Choose a representative of $t_p$ on a neighborhood of $p$. Equality of the two germs then allows that neighborhood to be shrunk to an open set $V_p\subseteq U$ on which there is a section $t_p'\in\mathcal F'(V_p)$ satisfying
+$$
+\alpha_{V_p}(t_p')=s|_{V_p}.
+$$
+:::
 
-- Write the kernel out:
-\[
-\ker f_X \da \ts{ s\in \mcf_1(X) \st f_X(s) = 0 \in \mcf_2(X)}
-.\]
+<2>2. The local lifts from step <2>1 agree on overlaps.
 
-- Suppose $s\in \mcf_1(X)$ and $f_X(s) = 0$ in $\mcf_2(X)$. Then
-\[
-(\mcf_2 \mid^X_p \circ f_X )(s) &= \mcf_2\mid^X_p( 0) = 0 \in (\mcf_2)_p \quad\text{ring morphisms send $0$ to $0$}\\
-\implies (f_p \circ \mcf_1 \mid^X_p)(s) &= (\mcf_2 \mid^X_p \circ f_X)(s) = 0 \quad\text{by commutativity} \\
-\implies \mcf_1 \mid^X_p (s) &= 0 \quad\text{left-cancel $f_p$ since it is mono}
-,\]
-which holds for all $p$.
+::: {.proof}
+On $V_p\cap V_q$,
+$$
+\alpha_{V_p\cap V_q}(t_p'|_{V_p\cap V_q})
+=s|_{V_p\cap V_q}
+=\alpha_{V_p\cap V_q}(t_q'|_{V_p\cap V_q}).
+$$
+By step <1>1 applied to the open set $V_p\cap V_q$, the map $\alpha_{V_p\cap V_q}$ is injective. Hence
+$$
+t_p'|_{V_p\cap V_q}=t_q'|_{V_p\cap V_q}.
+$$
+:::
 
-- Claim: by the sheaf condition on $\mcf_1$, $s= 0 \in \mcf_1(X)$.
-  - Fix $p$. For $s\in \mcf_1(X)$, write a representative $\mcf_1\mid^X_p(s) = [U, \tilde s\in \mcf_1(U)]$.
+<2>3. The section $s$ lies in $\operatorname{im}(\alpha_U)$.
 
-  > Recall $(U_1, s_1) \sim (U_2, s_2) \in \mcf_p \iff$ they are both equivalent to $(W, t)$ where $W \subseteq U_1 \intersect U_2$ and
-  > \[
-  > \mcf_1 \mid^{U_1}_W (s_1) = t = \mcf_1\mid^{U_2}_W (s_2)
-  > .\]
+::: {.proof}
+The sets $V_p$ cover $U$, and step <2>2 shows that the sections $t_p'$ are compatible on overlaps. The sheaf gluing axiom gives a unique section $t\in\mathcal F'(U)$ restricting to each $t_p'$. The sections $\alpha_U(t)$ and $s$ have equal restrictions to every $V_p$, so the uniqueness part of the sheaf axiom gives $\alpha_U(t)=s$. Thus $s\in\operatorname{im}(\alpha_U)$.
+:::
 
-  - Then $s_p \da \mcf_1 \mid^X_p(s) = 0 \sim (W, 0) \in (\mcf_1)_p$ means there is some $W_p$ and a lift $\tilde s(p) = 0 \in \mcf_1(W_p)$ with $\mcf_1\mid^{W_p}_p(\tilde s(p)) = s_p$.
-  - But this holds for all $p$, and $\ts{W_p}_{p\in X} \covers X$, so by the gluing axiom for $\mcf_1$ the sections $\ts{ \tilde s(p) \in \mcf_1(W_p) \st p\in X}$ glue to a unique $\tilde s\in \mcf_1(X)$; by uniqueness $\tilde s = s = 0 \in \mcf_1(X)$.
+<2>4. Q.E.D.
 
-**Exactness at $\mcf_2(X)$**:
+::: {.proof}
+Step <2>3 proves the inclusion claimed in step <1>3.
+:::
 
-- We want $\ker g_X = \im f_X$. First show $\im f_X \subseteq \ker g_X$, and let $s \in \im f_X \subseteq \mcf_2(X)$.
-- A small diagram chase:
+<1>4. Therefore
+$$
+0\longrightarrow\Gamma(U,\mathcal F')
+\xrightarrow{\alpha_U}
+\Gamma(U,\mathcal F)
+\xrightarrow{\beta_U}
+\Gamma(U,\mathcal F'')
+$$
+is exact.
 
-\begin{tikzcd}
-	& {\color{rgb,255:red,92;green,92;blue,214}f_X\inv(s)} & {\color{rgb,255:red,92;green,92;blue,214}s} & {\ell \da g_X(s)} \\
-	0 & {\mcf_1(X)} & {\mcf_2(X)} & {\mcf_3(X)} & {?} \\
-	0 & {(\mcf_1)_p} & {(\mcf_2)_p} & {(\mcf_3)_p} \\
-	& {\color{rgb,255:red,92;green,92;blue,214}\mcf_1\mid^U_p(f_X\inv(s))} & {\color{rgb,255:red,92;green,92;blue,214}t \da \mcf_2\mid^U_p(s)} & 0
-	\arrow[from=2-1, to=2-2]
-	\arrow["{f_X}", from=2-2, to=2-3]
-	\arrow["{g_X}", from=2-3, to=2-4]
-	\arrow[from=2-4, to=2-5]
-	\arrow["{\mcf_1\mid^U_p}" description, from=2-2, to=3-2]
-	\arrow["{\mcf_2\mid^U_p}" description, from=2-3, to=3-3]
-	\arrow["{\mcf_3\mid^U_p}", from=2-4, to=3-4]
-	\arrow[from=3-1, to=3-2]
-	\arrow["{f_p}"', from=3-2, to=3-3]
-	\arrow["{g_p}"', from=3-3, to=3-4]
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, dashed, maps to, from=1-2, to=1-3]
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=-30pt}, dotted, maps to, from=1-3, to=4-3]
-	\arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=18pt}, dotted, maps to, from=1-2, to=4-3]
-\end{tikzcd}
+::: {.proof}
+Step <1>1 gives exactness at $\Gamma(U,\mathcal F')$, while steps <1>2 and <1>3 give
+$$
+\operatorname{im}(\alpha_U)=\ker(\beta_U).
+$$
+Hence $\Gamma(U,-)$ is left exact.
+:::
 
-- Push $s$ into $(\mcf_2)_p$ and pull back to $f_X^{-1}(s) \in \mcf_1(X)$; by commutativity the former lies in $\im f_p$, so
-\[
-\mcf_2\mid^X_p(s) \in \im f_p = \ker g_p
-.\]
-- Then push $s \xrightarrow{g_X} \ell$, so $\mcf_3 \mid^X_p(\ell) = 0$ by commutativity.
-  Since this is true at all stalks, $\ell = 0\in \mcf_3(X)$, so $s \in \ker g_X$.
+<1>5. The functor $\Gamma(U,-)$ need not be exact.
 
-**A counterexample**:
+<2>1. On $X=\CC^\times$, the exponential sequence
+$$
+0\longrightarrow\underline{\ZZ}
+\longrightarrow\mathcal O_X
+\xrightarrow{\exp(2\pi i\,\cdot)}
+\mathcal O_X^\times
+\longrightarrow 1
+$$
+is exact as a sequence of sheaves of abelian groups.
 
-The exponential short exact sequence, assembled from groups:
-\[
-0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\CC\units) \to 0 \in \Grp
-,\]
-which sheafifies over $X\da \CC\units$ to
-\[
-0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \Hol_X({-})\units \to 0 \in \Sh(X, \Grp)
-.\]
-Here $\Hol_X({-})\units$ denotes the multiplicatively invertible functions, i.e. the nonvanishing functions.
+::: {.proof}
+The kernel consists of holomorphic functions whose values lie in $\ZZ$; such functions are locally constant, so the kernel is $\underline{\ZZ}$. Every nowhere-vanishing holomorphic function admits a holomorphic logarithm locally, so the exponential map is surjective on stalks. Thus the sequence is exact as a sequence of sheaves.
+:::
 
-Applying $\Gamma(X; {-})$ gives
-\[
-0 \to \ZZ \to \Hol_X(X) \xrightarrow{\exp} \Hol_X(X)\units \to 0
-.\]
-If this bottom sequence were exact, then every invertible holomorphic function would have a logarithm on all of $\CC\units$, but the identity function does not.
+<2>2. The induced map
+$$
+\Gamma(X,\mathcal O_X)
+\xrightarrow{\exp(2\pi i\,\cdot)}
+\Gamma(X,\mathcal O_X^\times)
+$$
+is not surjective.
+
+::: {.proof}
+The identity function $z\mapsto z$ is a nowhere-vanishing holomorphic function on $\CC^\times$. Suppose there were $h\in\mathcal O_X(X)$ with
+$$
+e^{2\pi i h(z)}=z.
+$$
+Taking logarithmic derivatives gives
+$$
+2\pi i\,h'(z)=\frac1z.
+$$
+Integrating around the positively oriented unit circle $\gamma$ yields
+$$
+2\pi i\int_\gamma h'(z)\,dz
+=\int_\gamma\frac{dz}{z}.
+$$
+The left side is $0$ because $h'$ has the global primitive $h$, whereas the right side is $2\pi i$. This contradiction shows that the identity function has no global holomorphic logarithm, so the map on global sections is not surjective.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+Step <2>2 exhibits a short exact sequence of sheaves whose image under global sections fails to be exact at the rightmost nonzero term.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves left exactness for every open $U\subseteq X$, and step <1>5 gives an explicit failure of exactness.
+:::
 :::
