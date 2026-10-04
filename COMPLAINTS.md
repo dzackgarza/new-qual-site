@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 9 omits that p is odd in Euler's criterion
+
+- **Object and need:** P-KSRING17-009 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states Euler's criterion for a prime p without saying p is odd.
+- **Observed evidence:** line 87 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md states the exponent (p-1)/2 and the Legendre symbol (a/p) for an arbitrary prime p. Under the standard definition, the Legendre symbol has odd prime denominator, and for p=2 the displayed exponent is not an integer.
+- **Impact and owner:** the intended statement requires p to be an odd prime.
+- **Uncertainty:** none under the standard Legendre-symbol convention used by the statement.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-009 records the intended odd-prime hypothesis and proves Euler's criterion under it.
+
 ### Fall 2016 Question 8 omits the parameter domain for xi
 
 - **Object and need:** P-TIE-F16-08 in SRC-UGA-CA-COMPILATION. The source asks to compute the Fourier-type integral with parameter xi but does not state whether xi is real or complex.
