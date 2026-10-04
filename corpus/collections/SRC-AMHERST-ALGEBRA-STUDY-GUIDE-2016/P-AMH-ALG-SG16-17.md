@@ -21,7 +21,58 @@ audit:
 :::
 
 ::: {.solution}
-Proof.
-By hypothesis, there exist a,b∈I with gcd(a,b ) = 1. Thus, there are integers m,n∈ Z such thatma +nb = 1. But ma,nb∈I by the sticky property, so 1 = ma +nb∈I sinceI is closed under +. For any x∈ Z, then, we have x =x· 1∈I by the sticky property.
-So I = Z QED
+<1>1. There exist integers $a,b\in I$ and $m,n\in\ZZ$ such that
+$$
+ma+nb=1.
+$$
+
+::: {.proof}
+By hypothesis, $I$ contains two relatively prime integers $a$ and $b$, so
+$\gcd(a,b)=1$.  Bézout's identity therefore gives integers $m,n\in\ZZ$ with
+$$
+ma+nb=\gcd(a,b)=1.
+$$
+:::
+
+<1>2. One has $1\in I$.
+
+::: {.proof}
+Because $I$ is an ideal and $a,b\in I$, multiplication by arbitrary integers
+gives
+$$
+ma\in I
+\qquad\text{and}\qquad
+nb\in I.
+$$
+Ideals are closed under addition, so step <1>1 gives
+$$
+1=ma+nb\in I.
+$$
+:::
+
+<1>3. Every integer belongs to $I$.
+
+::: {.proof}
+Let $x\in\ZZ$.  By step <1>2, $1\in I$, and the ideal absorption property
+gives
+$$
+x=x\cdot1\in I.
+$$
+Thus $\ZZ\subseteq I$.
+:::
+
+<1>4. Therefore
+$$
+\boxed{I=\ZZ}.
+$$
+
+::: {.proof}
+By definition $I\subseteq\ZZ$, while step <1>3 gives the reverse inclusion.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::
