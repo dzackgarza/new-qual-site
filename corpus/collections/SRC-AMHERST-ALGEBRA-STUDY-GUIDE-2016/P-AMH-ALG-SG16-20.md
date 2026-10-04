@@ -27,9 +27,64 @@ Prove that $I$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-Proof.
-(Nonempty) Let f =g = 0∈R. Then 6f + (x + 1)g∈I, so I⁄= ∅. (Closed under−) Givena,b∈I, writea = 6f1+(x+1)g1 andb = 6f2+(x+1)g2 withf1,f 2,g 1,g 2∈R. Then a−b = 6f1 + (x + 1)g1− ( 6f2 + (x + 1)g2 ) = 6(f1−f2) + (x + 1)(g1−g2)∈I. (Sticky) Given a∈I and h∈R, write a = 6f + (x + 1)g with f,g ∈R. Then ah =ha =h ( 6f + (x + 1)g ) = 6(hf) + (x + 1)(hg)∈I QED
+<1>1. The set $I$ is nonempty.
 
-10 Quotient Rings Recall that an ideal I⊆R is a subgroup under addition, so the cosets of I are usually written I +r ={s +r|s∈I}, although sometimes you see r +I since addition is commutative.
-The deﬁnition of ideal guarantees that the set of cosets R/I ={I +r|r∈R} becomes a ring, called the quotient ring, under the following operations: (I +a) + (I +b) =I + (a +b) and ( I +a)(I +b) =I +ab.
+::: {.proof}
+Taking $f=g=0$ gives
+$$
+6f+(x+1)g=0,
+$$
+so $0\in I$.
+:::
+
+<1>2. The set $I$ is closed under subtraction.
+
+::: {.proof}
+Let $a,b\in I$.  Then there exist
+$f_1,f_2,g_1,g_2\in R$ such that
+$$
+a=6f_1+(x+1)g_1,
+\qquad
+b=6f_2+(x+1)g_2.
+$$
+Therefore
+$$
+\begin{aligned}
+a-b
+&=6(f_1-f_2)+(x+1)(g_1-g_2).
+\end{aligned}
+$$
+Since $f_1-f_2,g_1-g_2\in R$, this expression has the defining form of an
+element of $I$.  Hence $a-b\in I$.
+:::
+
+<1>3. The set $I$ absorbs multiplication by arbitrary elements of $R$.
+
+::: {.proof}
+Let $a\in I$ and $h\in R$.  Write
+$$
+a=6f+(x+1)g
+$$
+with $f,g\in R$.  Since $R=\ZZ[x]$ is commutative,
+$$
+ha=ah
+=6(hf)+(x+1)(hg).
+$$
+Because $hf,hg\in R$, the right-hand side belongs to $I$.  Thus both $ha$ and
+$ah$ lie in $I$.
+:::
+
+<1>4. Therefore $I$ is an ideal of $R$.
+
+::: {.proof}
+Steps <1>1 and <1>2 give the additive-subgroup condition by the subtraction
+criterion, and step <1>3 gives the absorption condition.  Hence $I$ is an
+ideal.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::
