@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 78 omits that the principal product is nonzero
+
+- **Object and need:** P-KSRING17-078 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states that if IJ is principal in a domain, then I and J are finitely generated.
+- **Observed evidence:** lines 341--343 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md contain no nonzero hypothesis. If J=(0), then IJ=(0) is principal while I may be any non-finitely-generated ideal of a non-Noetherian domain.
+- **Impact and owner:** the intended statement requires IJ=(a) with a != 0, equivalently (in a domain) both I and J nonzero.
+- **Uncertainty:** none about the literal counterexample; the supplied hint explicitly relies on cancellation by the generator a.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-078 records the correction and proves the intended nonzero-product statement.
+
 ### Kent State Ring Theory Problem 58 says every ideal is prime, including the improper ideal
 
 - **Object and need:** P-KSRING17-058 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states that every ideal of R is prime.
