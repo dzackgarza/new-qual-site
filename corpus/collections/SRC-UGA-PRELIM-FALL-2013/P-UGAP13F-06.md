@@ -25,3 +25,69 @@ s_k\le 2-\frac1k.
 \]
 Prove or disprove: $(s_k)$ is a Cauchy sequence.
 :::
+
+::: {.solution}
+<1>1. For every integer $j\ge2$,
+$$
+\frac1{j^2}
+\le
+\frac1{j(j-1)}
+=
+\frac1{j-1}-\frac1j.
+$$
+
+::: {.proof}
+Since $j-1\le j$ and both are positive,
+$$
+j(j-1)\le j^2,
+$$
+so taking reciprocals gives the inequality. The identity is the elementary partial-fraction decomposition
+$$
+\frac1{j(j-1)}=\frac1{j-1}-\frac1j.
+$$
+:::
+
+<1>2. For every $k\ge1$,
+$$
+\boxed{s_k\le2-\frac1k}.
+$$
+
+::: {.proof}
+For $k=1$, both sides equal $1$. For $k\ge2$, step <1>1 gives
+$$
+\begin{aligned}
+s_k
+&=1+\sum_{j=2}^k\frac1{j^2}\\
+&\le1+\sum_{j=2}^k\left(\frac1{j-1}-\frac1j\right)\\
+&=1+1-\frac1k\\
+&=2-\frac1k.
+\end{aligned}
+$$
+:::
+
+<1>3. The sequence $(s_k)$ is $\boxed{\text{Cauchy}}$.
+
+::: {.proof}
+Let $n>m\ge1$. By step <1>1,
+$$
+\begin{aligned}
+|s_n-s_m|
+&=\sum_{j=m+1}^n\frac1{j^2}\\
+&\le\sum_{j=m+1}^n\left(\frac1{j-1}-\frac1j\right)\\
+&=\frac1m-\frac1n\\
+&<\frac1m.
+\end{aligned}
+$$
+Given $\varepsilon>0$, choose $N\in\NN$ with $N>1/\varepsilon$. If $n,m\ge N$, relabeling if necessary so that $n\ge m$, the preceding estimate gives
+$$
+|s_n-s_m|<\frac1m\le\frac1N<\varepsilon.
+$$
+Hence $(s_k)$ satisfies the Cauchy criterion.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves the required bound, and step <1>3 proves that $(s_k)$ is Cauchy.
+:::
+:::
