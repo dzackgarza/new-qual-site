@@ -25,3 +25,78 @@ $$
 
 is a polynomial of degree n, then it has n zeros in C.
 :::
+
+::: {.solution}
+Write
+$$
+P_n(z)=a_nz^n+Q(z),
+\qquad
+Q(z)=a_0+a_1z+\cdots+a_{n-1}z^{n-1}.
+$$
+
+<1>1. There exists $R>0$ such that on $|z|=R$,
+$$
+|Q(z)|<|a_nz^n|.
+$$
+
+::: {.proof}
+For $|z|=R\ge1$,
+$$
+|Q(z)|
+\le
+\sum_{j=0}^{n-1}|a_j|R^j
+\le
+\left(\sum_{j=0}^{n-1}|a_j|\right)R^{n-1}.
+$$
+Choose $R$ so large that
+$$
+R>
+\frac{\sum_{j=0}^{n-1}|a_j|}{|a_n|}.
+$$
+Then
+$$
+|Q(z)|
+<
+|a_n|R^n
+=
+|a_nz^n|
+$$
+on the circle $|z|=R$.
+:::
+
+<1>2. The polynomials $P_n(z)$ and $a_nz^n$ have the same number of zeros in
+$|z|<R$, counted with multiplicity.
+
+::: {.proof}
+On $|z|=R$, step <1>1 gives
+$$
+|P_n(z)-a_nz^n|
+=
+|Q(z)|
+<
+|a_nz^n|.
+$$
+Rouché's theorem therefore gives the asserted equality of zero counts.
+:::
+
+<1>3. The polynomial $P_n$ has exactly
+$$
+\boxed{n}
+$$
+zeros in $\CC$, counted with multiplicity.
+
+::: {.proof}
+The polynomial $a_nz^n$ has exactly one zero, namely $0$, with multiplicity $n$.
+Hence step <1>2 shows that $P_n$ has exactly $n$ zeros in $|z|<R$, counted with
+multiplicity.
+
+A nonzero polynomial of degree $n$ cannot have more than $n$ zeros counted with
+multiplicity. Therefore these are all of the zeros of $P_n$ in $\CC$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the Fundamental Theorem of Algebra in the required form.
+:::
+:::
