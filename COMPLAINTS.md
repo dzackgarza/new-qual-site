@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 136 omits the non-field/proper-ideal qualification
+
+- **Object and need:** P-KSRING17-136 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source claims every nonzero ideal of a commutative Noetherian domain contains a product of nonzero prime ideals.
+- **Observed evidence:** line 529 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md contains the literal statement. Under the usual convention that such a product has at least one prime factor, the statement fails when R is a field: the only nonzero ideal is R and there are no nonzero prime ideals.
+- **Impact and owner:** the intended statement is correct for a Noetherian domain that is not a field; equivalently, the substantive proper-ideal case is correct, with the ambient ring handled separately when a nonzero prime exists.
+- **Uncertainty:** if the source intended the empty product to count as the unit ideal, the literal field case becomes vacuous, but that convention is not stated.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-136 records the qualification and proves the intended non-field statement.
+
 ### Kent State Ring Theory Problem 103 omits the hypothesis p divides a_0
 
 - **Object and need:** P-KSRING17-103 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states a generalized Eisenstein criterion with p dividing a_i only for i=1,...,k-1, together with p^2 not dividing a_0.
