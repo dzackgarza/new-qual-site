@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### January 2005 Problem 3 is truncated after the induced-map symbol
+
+- **Object and need:** P-MH07-JAN05-03 in SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007. The source begins a degree-one-map problem for closed connected oriented manifolds but does not retain the induced map or requested conclusion.
+- **Observed evidence:** the retained extraction at the end of assets/attachments/extracted/Topology_Prelim_Answers_-_Unknown.md stops after the phrase beginning the induced map following the degree-one hypothesis; the card records that neither variance nor target nor conclusion is recoverable. No independent transcription is present in the repository.
+- **Impact and owner:** TODO.md section 7 cannot complete source-review:P-MH07-JAN05-03 or prove:P-MH07-JAN05-03 without inventing missing mathematics. The source/card owner must recover the original statement before solution authoring can proceed.
+- **Uncertainty:** several standard degree-one-map consequences exist, including surjectivity on fundamental groups and injectivity/surjectivity statements on homology or cohomology, so reconstructing the intended result from context would be speculative.
+- **Repair:** issue #2 / TODO.md section 7. Recover January 2005 Problem 3 from an independent source or source image, update P-MH07-JAN05-03 with the verified statement, then resume the ordinary read/source-review/prove/attach/commit chain.
+
 ### January 2006 Problem 9 is truncated before the theorem statement
 
 - **Object and need:** P-MH07-JAN06-09 in SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007. The card is supposed to ask for a proof of a specific piece of the covering-space classification theorem.
