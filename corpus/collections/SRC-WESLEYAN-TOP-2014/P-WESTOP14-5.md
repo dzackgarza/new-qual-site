@@ -21,3 +21,72 @@ and
 \]
 Both define metrics on $C[0,1]$. Which metric induces the finer topology?
 :::
+
+::: {.solution}
+<1>1. For every $f,g\in C[0,1]$,
+$$
+\rho(f,g)\le \mu(f,g).
+$$
+
+::: {.proof}
+For every $x\in[0,1]$,
+$$
+|f(x)-g(x)|\le\mu(f,g).
+$$
+Integrating over an interval of length $1$ gives
+$$
+\rho(f,g)
+=\int_0^1|f(x)-g(x)|\,dx
+\le\int_0^1\mu(f,g)\,dx
+=\mu(f,g).
+$$
+:::
+
+<1>2. The topology induced by $\mu$ is finer than the topology induced by $\rho$.
+
+::: {.proof}
+Fix $f\in C[0,1]$ and $\varepsilon>0$. By step <1>1,
+$$
+B_\mu(f,\varepsilon)
+\subseteq
+B_\rho(f,\varepsilon).
+$$
+Hence every $\rho$-open neighborhood of $f$ contains a $\mu$-open neighborhood of $f$. Equivalently, every $\rho$-open set is $\mu$-open, so the $\mu$-topology is finer.
+:::
+
+<1>3. The inclusion of topologies is strict.
+
+::: {.proof}
+For $n\ge1$, define
+$$
+f_n(x)=\max(1-nx,0).
+$$
+Then $f_n\in C[0,1]$ and
+$$
+\mu(f_n,0)=1
+$$
+for every $n$, because $f_n(0)=1$. On the other hand,
+$$
+\rho(f_n,0)
+=\int_0^{1/n}(1-nx)\,dx
+=\frac1{2n}
+\longrightarrow0.
+$$
+Thus $f_n\to0$ in the metric $\rho$ but not in the metric $\mu$. Therefore the two topologies are not equal.
+:::
+
+<1>4. Therefore
+$$
+\boxed{\text{the uniform metric }\mu\text{ induces the strictly finer topology}.}
+$$
+
+::: {.proof}
+Step <1>2 proves fineness, and step <1>3 proves strictness.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 answers the comparison question.
+:::
+:::
