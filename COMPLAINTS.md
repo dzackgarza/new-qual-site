@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 140 omits that A is proper
+
+- **Object and need:** P-KSRING17-140 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source claims every nonzero ideal A contains a product of prime ideals, each containing A.
+- **Observed evidence:** line 537 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md contains the literal statement. For A=R this is impossible under the ordinary nonempty-product convention, because no prime ideal contains R.
+- **Impact and owner:** the intended statement is for nonzero proper ideals A. Under that correction the standard Noetherian maximal-counterexample proof works.
+- **Uncertainty:** if the source intended the empty product to be R, the unit-ideal edge case becomes vacuous, but that convention is not stated.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-140 records the missing properness hypothesis and proves the corrected theorem.
+
 ### Kent State Ring Theory Problem 136 omits the non-field/proper-ideal qualification
 
 - **Object and need:** P-KSRING17-136 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source claims every nonzero ideal of a commutative Noetherian domain contains a product of nonzero prime ideals.
