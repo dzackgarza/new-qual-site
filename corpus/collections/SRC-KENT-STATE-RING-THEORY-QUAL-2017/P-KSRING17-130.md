@@ -32,3 +32,316 @@ The non-empty set $\{P_n : n \geq 1\}$ has no maximal element.
 Likewise the prime ideals $Q_n = (x_n, x_{n+1}, \ldots)$, with $R/Q_n \cong k[x_1, \ldots, x_{n-1}]$, satisfy $Q_1 \supsetneq Q_2 \supsetneq \cdots$, so the non-empty set $\{Q_n : n \geq 1\}$ has no minimal element.
 The statement becomes true, by Zorn's lemma, for a non-empty set of prime ideals that contains the union and the intersection of each of its non-empty chains (the union and the intersection of a chain of prime ideals are prime); for example, the set of all prime ideals of a nonzero ring, or the set of all prime ideals containing a given proper ideal.
 :::
+
+::: {.solution}
+The source statement is false, as shown by the counterexamples in the remark.
+We prove the corrected statement recorded there.
+
+Let
+$$
+\mathcal S
+$$
+be a nonempty collection of prime ideals of $R$ such that for every nonempty chain
+$$
+\mathcal C
+\subseteq
+\mathcal S,
+$$
+both
+$$
+\bigcup_{P\in\mathcal C}P
+$$
+and
+$$
+\bigcap_{P\in\mathcal C}P
+$$
+belong to $\mathcal S$.
+
+<1>1. The union of a chain of prime ideals is an ideal.
+
+::: {.proof}
+Let
+$$
+\mathcal C
+$$
+be a chain under inclusion, and set
+$$
+U
+\coloneqq
+\bigcup_{P\in\mathcal C}P.
+$$
+Let
+$$
+x,y\in U.
+$$
+Then
+$$
+x\in P,
+\qquad
+y\in Q
+$$
+for some
+$$
+P,Q\in\mathcal C.
+$$
+Since the collection is a chain, either
+$$
+P\subseteq Q
+$$
+or
+$$
+Q\subseteq P.
+$$
+Thus $x$ and $y$ lie in a common member of the chain, so
+$$
+x-y\in U.
+$$
+If
+$$
+r\in R
+$$
+and
+$$
+x\in U,
+$$
+choose
+$$
+P\in\mathcal C
+$$
+with
+$$
+x\in P.
+$$
+Then
+$$
+rx\in P\subseteq U.
+$$
+Hence $U$ is an ideal.
+:::
+
+<1>2. The union of a nonempty chain of prime ideals is prime.
+
+::: {.proof}
+Let
+$$
+U
+=
+\bigcup_{P\in\mathcal C}P.
+$$
+By step <1>1, $U$ is an ideal.
+It is proper: if
+$$
+1\in U,
+$$
+then
+$$
+1\in P
+$$
+for some
+$$
+P\in\mathcal C,
+$$
+contradicting properness of the prime ideal $P$.
+
+Now suppose
+$$
+ab\in U.
+$$
+Then
+$$
+ab\in P
+$$
+for some
+$$
+P\in\mathcal C.
+$$
+Since $P$ is prime,
+$$
+a\in P
+\quad\text{or}\quad
+b\in P.
+$$
+Hence
+$$
+a\in U
+\quad\text{or}\quad
+b\in U.
+$$
+Thus $U$ is prime.
+:::
+
+<1>3. The poset
+$$
+(\mathcal S,\subseteq)
+$$
+has a maximal element.
+
+::: {.proof}
+The poset is nonempty by hypothesis.
+Let
+$$
+\mathcal C
+\subseteq
+\mathcal S
+$$
+be a nonempty chain.
+By the closure hypothesis,
+$$
+U
+\coloneqq
+\bigcup_{P\in\mathcal C}P
+$$
+belongs to $\mathcal S$.
+Clearly every
+$$
+P\in\mathcal C
+$$
+satisfies
+$$
+P\subseteq U.
+$$
+Thus $U$ is an upper bound for the chain.
+
+The empty chain has an upper bound because $\mathcal S$ is nonempty.
+Therefore every chain has an upper bound in $\mathcal S$.
+Zorn's lemma yields a maximal element.
+:::
+
+<1>4. The intersection of a chain of prime ideals is an ideal.
+
+::: {.proof}
+An arbitrary intersection of ideals is an ideal.
+Thus
+$$
+I
+\coloneqq
+\bigcap_{P\in\mathcal C}P
+$$
+is an ideal.
+:::
+
+<1>5. The intersection of a nonempty chain of prime ideals is prime.
+
+::: {.proof}
+Set
+$$
+I
+\coloneqq
+\bigcap_{P\in\mathcal C}P.
+$$
+It is proper because it is contained in every prime ideal of the nonempty chain.
+
+Suppose
+$$
+ab\in I
+$$
+and, for contradiction,
+$$
+a\notin I,
+\qquad
+b\notin I.
+$$
+Choose
+$$
+P,Q\in\mathcal C
+$$
+such that
+$$
+a\notin P,
+\qquad
+b\notin Q.
+$$
+Since $\mathcal C$ is a chain, assume without loss of generality that
+$$
+P\subseteq Q.
+$$
+Then
+$$
+b\notin Q
+$$
+implies
+$$
+b\notin P.
+$$
+But
+$$
+ab\in I\subseteq P,
+$$
+contradicting primality of $P$.
+Therefore
+$$
+a\in I
+\quad\text{or}\quad
+b\in I.
+$$
+Hence $I$ is prime.
+:::
+
+<1>6. Order $\mathcal S$ by reverse inclusion:
+$$
+P\preceq Q
+\quad\Longleftrightarrow\quad
+Q\subseteq P.
+$$
+Then every chain has an upper bound.
+
+::: {.proof}
+Let
+$$
+\mathcal C
+$$
+be a nonempty chain in the reverse order.
+It is also a chain under ordinary inclusion.
+By the closure hypothesis,
+$$
+I
+\coloneqq
+\bigcap_{P\in\mathcal C}P
+$$
+belongs to $\mathcal S$.
+For every
+$$
+P\in\mathcal C,
+$$
+one has
+$$
+I\subseteq P,
+$$
+which means
+$$
+P\preceq I.
+$$
+Thus $I$ is an upper bound in the reverse order.
+
+Again, the empty chain has an upper bound because $\mathcal S$ is nonempty.
+:::
+
+<1>7. The family $\mathcal S$ has a minimal element under ordinary inclusion.
+
+::: {.proof}
+Apply Zorn's lemma to the reverse-inclusion order from step <1>6.
+There is a maximal element with respect to
+$$
+\preceq.
+$$
+Maximality in reverse inclusion is exactly minimality in ordinary inclusion.
+:::
+
+<1>8. Therefore the corrected statement holds:
+$$
+\boxed{
+\mathcal S
+\text{ contains both a maximal and a minimal element}.
+}
+$$
+
+::: {.proof}
+Step <1>3 gives a maximal element, and step <1>7 gives a minimal element.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+The original source statement is false; step <1>8 proves the corrected version stated in the remark.
+:::
+:::
