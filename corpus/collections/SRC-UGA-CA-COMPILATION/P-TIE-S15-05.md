@@ -26,3 +26,150 @@ $$
 \operatorname* { s u p } \{ | p ( z ) - z ^ { - m } | : z \in K \} \geq \varepsilon _ { 0 } .
 $$
 :::
+
+::: {.remark}
+Erratum: part (1) is false for the zero polynomial, since $p=0$ gives
+$$
+M_R=1.
+$$
+The correct statement for arbitrary polynomials is $M_R\ge1$, and the inequality is strict when $p\ne0$. This corrected form is sufficient for part (2).
+:::
+
+::: {.solution}
+<1>1. For every polynomial $p$,
+$$
+M_R\ge1.
+$$
+If $p\ne0$, then in fact
+$$
+M_R>1.
+$$
+
+::: {.proof}
+Define
+$$
+q(z)\coloneqq z^mp(z)-1.
+$$
+Then $q$ is entire and
+$$
+q(0)=-1.
+$$
+By the maximum modulus principle on the disk $\abs{z}\le R$,
+$$
+1
+=
+\abs{q(0)}
+\le
+\max_{\abs{z}=R}\abs{q(z)}
+=
+M_R.
+$$
+Thus $M_R\ge1$.
+
+Suppose now that $p\ne0$ and $M_R=1$. Then $\abs{q}$ attains its maximum value $1$ at the interior point $0$. The strong maximum modulus principle forces $q$ to be constant. Since $q(0)=-1$,
+$$
+q\equiv-1,
+$$
+so
+$$
+z^mp(z)\equiv0.
+$$
+Hence $p\equiv0$, a contradiction. Therefore $M_R>1$ when $p\ne0$.
+:::
+
+<1>2. Using step <1>1, every polynomial $p$ satisfies
+$$
+\sup_{z\in K}\abs{p(z)-z^{-m}}
+\ge
+R^{-m}.
+$$
+
+::: {.proof}
+The outer circle $\abs{z}=R$ is contained in $K$. On that circle,
+$$
+\abs{p(z)-z^{-m}}
+=
+R^{-m}\abs{z^mp(z)-1}.
+$$
+Therefore
+$$
+\begin{aligned}
+\sup_{z\in K}\abs{p(z)-z^{-m}}
+&\ge
+\sup_{\abs{z}=R}\abs{p(z)-z^{-m}}\\
+&=
+R^{-m}M_R\\
+&\ge
+R^{-m}.
+\end{aligned}
+$$
+:::
+
+<1>3. Without using step <1>1, every polynomial $p$ still satisfies
+$$
+\sup_{z\in K}\abs{p(z)-z^{-m}}
+\ge
+R^{-m}.
+$$
+
+::: {.proof}
+Let $C_R$ be the positively oriented circle $\abs{z}=R$. Since $m\ge1$,
+$$
+p(z)z^{m-1}
+$$
+is a polynomial, so direct parametrization of $C_R$ gives
+$$
+\int_{C_R}p(z)z^{m-1}\,dz=0.
+$$
+Also,
+$$
+\int_{C_R}z^{-1}\,dz=2\pi i.
+$$
+Hence
+$$
+\begin{aligned}
+2\pi
+&=
+\abs{
+\int_{C_R}
+\left(z^{-m}-p(z)\right)z^{m-1}\,dz
+}\\
+&\le
+2\pi R\,
+R^{m-1}
+\sup_{\abs{z}=R}
+\abs{p(z)-z^{-m}}.
+\end{aligned}
+$$
+Dividing by $2\pi R^m$ gives
+$$
+\sup_{\abs{z}=R}
+\abs{p(z)-z^{-m}}
+\ge
+R^{-m}.
+$$
+Since $C_R\subset K$, the same lower bound holds for the supremum over $K$.
+:::
+
+<1>4. Thus one may take
+$$
+\boxed{\varepsilon_0=R^{-m}>0}
+$$
+in part (2).
+
+::: {.proof}
+Steps <1>2 and <1>3 each prove
+$$
+\sup_{z\in K}\abs{p(z)-z^{-m}}
+\ge
+R^{-m}
+$$
+for every polynomial $p$, respectively with and without using part (1).
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the corrected form of part (1) and identifies the source's strict-inequality exception. Step <1>4 proves part (2) by both requested methods.
+:::
+:::

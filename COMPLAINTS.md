@@ -37,6 +37,26 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Spring 2015 Question 5 claims a strict bound that fails for the zero polynomial
+
+- **Object and need:** `P-TIE-S15-05` / `SRC-UGA-CA-COMPILATION`,
+  Spring 2015, Question 5. Part (1) defines
+  $M_R=\sup_{\abs z=R}\abs{z^mp(z)-1}$ and asks to prove $M_R>1$ for
+  every polynomial $p$.
+- **Observed evidence:** lines 515--520 of
+  `assets/attachments/extracted/Questions_from_Tie.md` contain the strict
+  inequality with no hypothesis $p\ne0$. Taking $p=0$ gives
+  $M_R=\sup_{\abs z=R}\abs{-1}=1$. The correct universal assertion is
+  $M_R\ge1$; by the maximum modulus principle equality can occur only for
+  $p=0$, so $M_R>1$ is correct for nonzero polynomials.
+- **Impact and owner:** the literal part (1) is false. Part (2) remains valid
+  for every polynomial because the weaker bound $M_R\ge1$ already gives
+  $\sup_K\abs{p(z)-z^{-m}}\ge R^{-m}$.
+- **Uncertainty:** none about the printed source or counterexample.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), issue #2.
+  `P-TIE-S15-05` retains the printed problem, records the erratum, proves the
+  corrected part (1), and proves part (2) both using part (1) and independently.
+
 ### Tate Algebra 250(a), October 22 Problem 1 omits separability from the abelian Galois-group claim
 
 - **Object and need:** `P-TATE85-1022-01` /
