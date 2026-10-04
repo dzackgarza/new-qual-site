@@ -27,3 +27,70 @@ L_n(\mu)=\int_0^1 a_n(x)\,d\mu(x).
 \]
 Show that no subsequence of $L_n$ converges in the weak-* topology on $M([0,1))^*$.
 :::
+
+::: {.solution}
+<1>1. If a subsequence $(L_{n_k})$ converges weak-* in $M([0,1))^*$, then for every $x\in[0,1)$ the scalar sequence $(a_{n_k}(x))_k$ converges.
+
+::: {.proof}
+Weak-* convergence in $M([0,1))^*$ means pointwise convergence on $M([0,1))$. For each $x\in[0,1)$, let $\delta_x$ be the Dirac measure at $x$. Then
+$$
+L_{n_k}(\delta_x)
+=\int a_{n_k}(t)\,d\delta_x(t)
+=a_{n_k}(x).
+$$
+Thus weak-* convergence would force $(a_{n_k}(x))_k$ to converge for every $x$.
+:::
+
+<1>2. Given any strictly increasing sequence of indices
+$$
+n_1<n_2<\cdots,
+$$
+there exists $x\in[0,1)$ such that
+$$
+a_{n_k}(x)=
+\begin{cases}
+0,&k\text{ odd},\\
+1,&k\text{ even}.
+\end{cases}
+$$
+
+::: {.proof}
+Define a binary sequence $(b_n)$ by
+$$
+b_{n_k}=
+\begin{cases}
+0,&k\text{ odd},\\
+1,&k\text{ even},
+\end{cases}
+$$
+and set $b_n=0$ for indices not among the $n_k$. Put
+$$
+x\coloneqq\sum_{n=1}^{\infty}b_n2^{-n}.
+$$
+The sequence $(b_n)$ has infinitely many zeros, so it satisfies the convention
+$$
+\liminf_{n\to\infty}b_n=0.
+$$
+Because it is not the all-ones sequence, its sum satisfies $x<1$; and because it is not eventually $1$, this is the prescribed binary expansion under the stated convention. Therefore
+$$
+a_n(x)=b_n
+$$
+for every $n$, giving the asserted values along the chosen indices.
+:::
+
+<1>3. No subsequence of $(L_n)$ converges weak-*.
+
+::: {.proof}
+Suppose $(L_{n_k})$ were weak-* convergent. Choose the point $x$ from step <1>2. Then
+$$
+a_{n_k}(x)=0,1,0,1,\ldots
+$$
+does not converge, contradicting step <1>1.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
+:::
