@@ -3069,3 +3069,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   this problem alone.
 - **Repair:** `P-HM21B18-PF7-14` supplies the corrected QR computations and the
   compactness argument; the external source is left unchanged.
+
+### UCLA Spring 2017 Analysis Problem 5 is false for complex measures on the closed interval
+
+- **Object and need:** `P-UCLARA17S-05` in `SRC-UCLA-RA-SPRING-2017`. The
+  official problem asks for preservation of Fourier-coefficient decay under
+  absolute continuity for finite complex Borel measures on the literal closed
+  interval `[0,1]`.
+- **Observed evidence:** the official UCLA Spring 2017 exam states `[0,1]` for
+  both measures. Take `\mu=\delta_0-\delta_1`. Then
+  `\widehat\mu(n)=1-e^{2\pi i n}=0` for every integer `n`. Take
+  `\nu=\delta_0`; one has `|\nu|\ll|\mu|`, and even
+  `d\nu=f\,d\mu` with `f(0)=1,f(1)=0`, but
+  `\widehat\nu(n)=1` for every `n`. The retained source solution also uses the
+  false claim that periodic trigonometric polynomials are uniformly dense in
+  all of `C([0,1])`; they cannot distinguish the two endpoints.
+- **Impact and owner:** the requested conclusion cannot be proved from the
+  printed hypotheses. The standard Rajchman-band theorem is valid on the
+  circle (equivalently on a half-open fundamental interval such as `[0,1)`),
+  where the endpoint-cancellation counterexample disappears.
+- **Expected result:** preserve the source-faithful statement, refute it by the
+  endpoint counterexample, and state/prove the corrected circle or `[0,1)`
+  version separately rather than silently changing the source.
+- **Uncertainty:** none under the standard total-variation notion of absolute
+  continuity for complex measures; the same counterexample also satisfies the
+  Radon--Nikodym representation used by the retained source solution.
+- **Repair:** `P-UCLARA17S-05` records the counterexample and proves the
+  corrected periodic version; the external exam and supplied solution remain
+  unchanged.
