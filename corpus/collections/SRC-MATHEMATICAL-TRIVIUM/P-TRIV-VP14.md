@@ -31,4 +31,299 @@ Compare with the result of the previous point.
 
 ::: {.remark}
 The source says $\phi$ is a function "of $t$ and $x$", but the functional and the ansatz use the radial variable $r \in [0, \infty)$, with $\dot{\phi} = \partial_t \phi$ and $\phi' = \partial_r \phi$; the intended variables are $t$ and $r$.
+After the harmonic ansatz is substituted, the integrand is independent of $t$, so the printed integral over all $t\in\mathbb R$ contributes an infinite common factor. Part (b) is therefore interpreted as variation of the reduced action per unit time, equivalently as variation on any finite time interval before removing that overall factor.
+:::
+
+::: {.solution}
+Write
+$$
+s=\phi\phi^*.
+$$
+Treat $\phi$ and $\phi^*$ as independent fields in the variation.
+
+<1>1. The Lagrangian density, including the radial measure factor, is
+$$
+\mathcal L
+=
+r^2
+\left(
+\dot\phi\dot\phi^*
+-
+\phi'\phi'^*
+-
+U(s)
+\right).
+$$
+
+::: {.proof}
+This is the integrand of the given functional after omitting the constant factor $4\pi$.
+:::
+
+<1>2. Variation with respect to $\phi^*$ gives
+$$
+\frac{\partial\mathcal L}{\partial\phi^*}
+-
+\partial_t
+\frac{\partial\mathcal L}{\partial\dot\phi^*}
+-
+\partial_r
+\frac{\partial\mathcal L}{\partial\phi'^*}
+=0.
+$$
+
+::: {.proof}
+This is the Euler--Lagrange equation for a field depending on the independent variables $t$ and $r$.
+:::
+
+<1>3. The three derivatives in step <1>2 are
+$$
+\frac{\partial\mathcal L}{\partial\phi^*}
+=
+-r^2U'(s)\phi,
+$$
+$$
+\frac{\partial\mathcal L}{\partial\dot\phi^*}
+=
+r^2\dot\phi,
+$$
+and
+$$
+\frac{\partial\mathcal L}{\partial\phi'^*}
+=
+-r^2\phi'.
+$$
+
+::: {.proof}
+Differentiate the expression from step <1>1. For the potential term, use
+$$
+\frac{\partial}{\partial\phi^*}U(\phi\phi^*)
+=
+U'(s)\phi.
+$$
+:::
+
+<1>4. Hence the field equation is
+$$
+\boxed{
+\ddot\phi
+-
+\phi''
+-
+\frac2r\phi'
++
+U'(|\phi|^2)\phi
+=0.
+}
+$$
+
+::: {.proof}
+Substitute step <1>3 into step <1>2:
+$$
+-r^2U'(s)\phi
+-
+r^2\ddot\phi
++
+\partial_r(r^2\phi')
+=0.
+$$
+Expand
+$$
+\partial_r(r^2\phi')
+=
+r^2\phi''+2r\phi'
+$$
+and divide by $-r^2$.
+:::
+
+<1>5. Variation with respect to $\phi$ gives the conjugate equation
+$$
+\boxed{
+\ddot\phi^*
+-
+\phi^{*\prime\prime}
+-
+\frac2r\phi^{*\prime}
++
+U'(|\phi|^2)\phi^*
+=0.
+}
+$$
+
+::: {.proof}
+Repeat steps <1>2--<1>4 with $\phi$ and $\phi^*$ interchanged. Since $U$ is real-valued, $U'(s)$ is real for real $s=|\phi|^2$, so the result is the complex conjugate of step <1>4.
+:::
+
+<1>6. Substitute
+$$
+\phi(r,t)=f(r)e^{i\omega t}
+$$
+with real $f$. Then
+$$
+\ddot\phi=-\omega^2\phi,
+\qquad
+\phi'=f'e^{i\omega t},
+\qquad
+\phi''=f''e^{i\omega t}.
+$$
+
+::: {.proof}
+Differentiate the ansatz with respect to $t$ and $r$.
+:::
+
+<1>7. Equation <1>4 then becomes
+$$
+\boxed{
+f''
++
+\frac2r f'
++
+\omega^2 f
+-
+U'(f^2)f
+=0.
+}
+$$
+
+::: {.proof}
+Substitute step <1>6 into step <1>4 and divide by the nonzero factor $e^{i\omega t}$.
+:::
+
+<1>8. The conjugate equation gives the same real equation for $f$.
+
+::: {.proof}
+Substitute
+$$
+\phi^*=f(r)e^{-i\omega t}
+$$
+into step <1>5. The factor $e^{-i\omega t}$ cancels and yields step <1>7 again.
+:::
+
+<1>9. Part (a) follows.
+
+::: {.proof}
+Steps <1>4--<1>8 give the field equation, its conjugate, and the reduced radial equation.
+:::
+
+<1>10. Substituting the ansatz into the integrand first gives the reduced action per unit time
+$$
+\boxed{
+S_{\mathrm{red}}[f]
+=
+4\pi
+\int_0^\infty
+r^2
+\left(
+\omega^2f^2
+-
+(f')^2
+-
+U(f^2)
+\right)dr.
+}
+$$
+
+::: {.proof}
+For the ansatz,
+$$
+\dot\phi\dot\phi^*=\omega^2f^2,
+$$
+$$
+\phi'\phi'^*=(f')^2,
+$$
+and
+$$
+\phi\phi^*=f^2.
+$$
+The time dependence therefore cancels completely, leaving the displayed spatial functional after dividing out the common time interval.
+:::
+
+<1>11. The reduced Euler--Lagrange equation is
+$$
+\frac{\partial L_{\mathrm{red}}}{\partial f}
+-
+\frac d{dr}
+\frac{\partial L_{\mathrm{red}}}{\partial f'}
+=0,
+$$
+where
+$$
+L_{\mathrm{red}}
+=
+r^2
+\left(
+\omega^2f^2
+-
+(f')^2
+-
+U(f^2)
+\right).
+$$
+
+::: {.proof}
+This is the ordinary one-variable Euler--Lagrange equation for the reduced functional in step <1>10.
+:::
+
+<1>12. One has
+$$
+\frac{\partial L_{\mathrm{red}}}{\partial f}
+=
+2r^2
+\left(
+\omega^2f
+-
+U'(f^2)f
+\right)
+$$
+and
+$$
+\frac{\partial L_{\mathrm{red}}}{\partial f'}
+=
+-2r^2f'.
+$$
+
+::: {.proof}
+Differentiate the reduced Lagrangian from step <1>11. For the potential term, use
+$$
+\frac d{df}U(f^2)
+=
+2fU'(f^2).
+$$
+:::
+
+<1>13. Therefore the reduced Euler--Lagrange equation is again
+$$
+\boxed{
+f''
++
+\frac2r f'
++
+\omega^2 f
+-
+U'(f^2)f
+=0.
+}
+$$
+
+::: {.proof}
+Substitute step <1>12 into step <1>11:
+$$
+2r^2(\omega^2f-U'(f^2)f)
++
+2\frac d{dr}(r^2f')
+=0.
+$$
+Divide by $2r^2$ and expand the derivative.
+:::
+
+<1>14. The two procedures commute for this ansatz: varying first and substituting later gives exactly the same radial equation as substituting first and varying later.
+
+::: {.proof}
+Compare steps <1>7 and <1>13.
+:::
+
+<1>15. Q.E.D.
+
+::: {.proof}
+Step <1>9 proves part (a), and steps <1>10--<1>14 prove part (b) and the requested comparison.
+:::
 :::
