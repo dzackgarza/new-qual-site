@@ -27,9 +27,76 @@ Prove that $J$ is an ideal of $R$.
 :::
 
 ::: {.solution}
-Proof.
-(Nonempty) We have 0 R∈I and φ(0R) = 0S, so 0 R∈J. Thus, J⁄= ∅. (Closure under−) Given x,y∈J, we have x,y∈I and hence x−y∈I. Moreover, φ(x−y) =φ(x)−φ(y) = 0S− 0S = 0S, so x−y∈J. (Sticky) Given x∈J and r∈R, we have x∈I, and hence rx,xr ∈I. Moreover, φ(rx) =φ(r)φ(x) =φ(r)0S = 0S, and φ(xr) =φ(x)φ(r) = 0Sφ(r) = 0S, so rx,xr ∈J. The Fundamental Theorem of Ring Homomorphisms, Also called the First Homomorphism Theorem for Rings or the Basic Homomorphism Theorem for Rings , this theorem says that if φ : R→ S is a ring homomorphism, then there is a ring isomorphism ~φ :R/Ker(φ)≃ Im(φ) deﬁned by ~φ(Ker(φ) +r) =φ(r). 12 Quotient Rings and Fields Criteria for R to be a Field.
-Know that a commutive ring with unit is a ﬁeld if and only if its only ideals are{0} and the whole ring.
-Be prepared to prove this.
-For example, here is a problem asking to prove one direction of this statement:
+<1>1. The set $J$ is nonempty.
+
+::: {.proof}
+Because $I$ is an ideal, $0_R\in I$.  Every ring homomorphism preserves zero,
+so
+$$
+\varphi(0_R)=0_S.
+$$
+Hence $0_R\in J$.
+:::
+
+<1>2. The set $J$ is closed under subtraction.
+
+::: {.proof}
+Let $x,y\in J$.  Then $x,y\in I$, so
+$$
+x-y\in I
+$$
+because $I$ is an ideal.  Also,
+$$
+\varphi(x-y)
+=\varphi(x)-\varphi(y)
+=0_S-0_S
+=0_S.
+$$
+Therefore $x-y\in J$.
+:::
+
+<1>3. The set $J$ is closed under left multiplication by arbitrary elements
+of $R$.
+
+::: {.proof}
+Let $r\in R$ and $x\in J$.  Since $x\in I$ and $I$ is an ideal,
+$rx\in I$.  Moreover,
+$$
+\varphi(rx)
+=\varphi(r)\varphi(x)
+=\varphi(r)0_S
+=0_S.
+$$
+Thus $rx\in J$.
+:::
+
+<1>4. The set $J$ is closed under right multiplication by arbitrary elements
+of $R$.
+
+::: {.proof}
+Let $r\in R$ and $x\in J$.  Since $x\in I$,
+$xr\in I$.  Furthermore,
+$$
+\varphi(xr)
+=\varphi(x)\varphi(r)
+=0_S\varphi(r)
+=0_S.
+$$
+Hence $xr\in J$.
+:::
+
+<1>5. Therefore $J$ is a two-sided ideal of $R$.
+
+::: {.proof}
+Steps <1>1 and <1>2 show that $J$ is an additive subgroup of $R$ by the
+subtraction criterion.  Steps <1>3 and <1>4 give absorption under
+multiplication by arbitrary ring elements on both sides.  These are exactly
+the two-sided ideal axioms.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
 :::
