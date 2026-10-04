@@ -14,3 +14,163 @@ review: draft
 ::: {.problem}
 (9) Let E be a compact Hausdorff topological space. Let A be the ring of all continuous real valued functions on$E .$. For each$x \in E$, let$M ( x )$be the maximal ideal of$A$consisting of the functions$f \in A$such that$f ( x ) = 0 \ ( \mathrm { i . e . , } \ M ( x ) \ =$Kernel of the homomorphism$f \ \sim \ f ( x ) )$. Prove that the map$x \ \sim \ M ( x )$is a homeomorphism of$E$onto the maximal ideal spectrum of$A .$(You may use the well-known lemma which states that, given two disjoint closed subsets of$E$(in particular two distinct points of$E )$, there exists a continuous real valued function on$E$taking the value 0 on one of the sets and the value 1 on the other - if you don’t like too much abstraction, take E to be the closed interval [0, 1] on the real line.) (Hint : the only hard part is to show that every maximal ideal M of A is of the form$M ( x )$for some$x \in E$. To do this, suppose the contrary. Then for every$x \in E$there exists a function$f _ { x } \in \mathcal { M }$, but with$f _ { x } ( x ) \neq 0$. Show that if you replace$f _ { x }$by$g _ { x } f _ { x }$with a suitable$g _ { x } ,$, you can assume$f _ { x } \in \mathcal { M }$, and$f _ { x } ( y ) = 1$for all y in some neighborhood$U _ { x }$of x. Now these$U _ { x }$cover E, so already a finite number$U _ { x _ { 1 } } , U _ { x _ { 2 } } , \dotsc , U _ { x _ { n } }$cover E etc.).
 :::
+
+::: {.solution}
+Let
+$$
+A=C(E,\RR),
+\qquad
+M(x)=\{f\in A:f(x)=0\}.
+$$
+Give $\operatorname{MaxSpec}(A)$ the Zariski topology.
+
+<1>1. For each $x\in E$, the ideal $M(x)$ is maximal.
+
+::: {.proof}
+Evaluation at $x$ is a surjective ring homomorphism
+$$
+\operatorname{ev}_x:A\to\RR,
+\qquad
+f\mapsto f(x),
+$$
+with kernel $M(x)$. Hence
+$$
+A/M(x)\cong\RR
+$$
+is a field, so $M(x)$ is maximal.
+:::
+
+<1>2. Every maximal ideal $M\subset A$ has a common zero in $E$.
+
+::: {.proof}
+Suppose not. Then for every $x\in E$ there exists
+$$
+f_x\in M
+$$
+with $f_x(x)\ne0$. By continuity, there is an open neighborhood $U_x$ of $x$ on which $f_x$ is nowhere zero.
+
+Compactness of $E$ gives finitely many points $x_1,\ldots,x_n$ with
+$$
+E=U_{x_1}\cup\cdots\cup U_{x_n}.
+$$
+Set
+$$
+h=f_{x_1}^2+\cdots+f_{x_n}^2.
+$$
+Since $M$ is an ideal, $h\in M$. At every point of $E$, at least one summand is strictly positive, so
+$$
+h(y)>0
+\qquad
+\text{for all }y\in E.
+$$
+Therefore $1/h$ is a continuous real-valued function on $E$, so $h$ is a unit of $A$. A proper ideal cannot contain a unit, contradicting the maximality of $M$.
+:::
+
+<1>3. Every maximal ideal of $A$ is $M(x)$ for some $x\in E$.
+
+::: {.proof}
+By step <1>2, choose $x\in E$ such that
+$$
+f(x)=0
+\qquad
+\text{for all }f\in M.
+$$
+Then
+$$
+M\subseteq M(x).
+$$
+Both ideals are maximal by hypothesis and step <1>1, so
+$$
+M=M(x).
+$$
+:::
+
+<1>4. The point $x$ in step <1>3 is unique.
+
+::: {.proof}
+If $x\ne y$, the separation lemma supplied in the problem gives a continuous function $f:E\to\RR$ with
+$$
+f(x)=0,
+\qquad
+f(y)=1.
+$$
+Thus
+$$
+f\in M(x)
+\qquad\text{but}\qquad
+f\notin M(y),
+$$
+so $M(x)\ne M(y)$.
+:::
+
+<1>5. The map
+$$
+\Phi:E\to\operatorname{MaxSpec}(A),
+\qquad
+x\mapsto M(x),
+$$
+is a continuous bijection.
+
+::: {.proof}
+Bijectivity follows from steps <1>3 and <1>4.
+
+For any ideal $I\subseteq A$, the Zariski-closed subset
+$$
+V(I)=\{\mathfrak m\in\operatorname{MaxSpec}(A):I\subseteq\mathfrak m\}
+$$
+has inverse image
+$$
+\Phi^{-1}(V(I))
+=
+\{x\in E:f(x)=0\text{ for every }f\in I\}
+=
+\bigcap_{f\in I}f^{-1}(0),
+$$
+which is closed in $E$. Hence $\Phi$ is continuous.
+:::
+
+<1>6. The map $\Phi$ is closed.
+
+::: {.proof}
+Let $F\subseteq E$ be closed, and define
+$$
+I(F)=\{f\in A:f|_F=0\}.
+$$
+For $x\in F$, every function in $I(F)$ vanishes at $x$, so
+$$
+\Phi(x)=M(x)\in V(I(F)).
+$$
+Thus
+$$
+\Phi(F)\subseteq V(I(F)).
+$$
+
+Conversely, let $x\notin F$. Since $F$ and $\{x\}$ are disjoint closed subsets, the separation lemma gives $f\in A$ such that
+$$
+f|_F=0,
+\qquad
+f(x)=1.
+$$
+Then $f\in I(F)$ but $f\notin M(x)$, so
+$$
+M(x)\notin V(I(F)).
+$$
+Using the surjectivity of $\Phi$, this proves
+$$
+\Phi(F)=V(I(F)),
+$$
+which is closed in $\operatorname{MaxSpec}(A)$.
+:::
+
+<1>7. The map $\Phi$ is a homeomorphism.
+
+::: {.proof}
+By step <1>5, $\Phi$ is a continuous bijection, and by step <1>6 it is closed. Therefore its inverse is continuous, so $\Phi$ is a homeomorphism.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 proves the asserted identification of $E$ with the maximal ideal spectrum of $C(E,\RR)$.
+:::
+:::
