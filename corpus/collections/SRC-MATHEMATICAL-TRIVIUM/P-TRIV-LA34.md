@@ -23,3 +23,160 @@ Expand the expression $e ^ { - \lambda B } A e ^ { \lambda B }$
 
 (b) to any order in λ.
 :::
+
+::: {.solution}
+Define
+$$
+F(\lambda)
+=
+e^{-\lambda B}Ae^{\lambda B}.
+$$
+
+<1>1. One has
+$$
+F'(\lambda)
+=
+e^{-\lambda B}[A,B]e^{\lambda B}.
+$$
+
+::: {.proof}
+Differentiate using the product rule:
+$$
+\begin{aligned}
+F'(\lambda)
+&=
+-Be^{-\lambda B}Ae^{\lambda B}
++
+e^{-\lambda B}ABe^{\lambda B}.
+\end{aligned}
+$$
+Since $B$ commutes with $e^{-\lambda B}$,
+$$
+F'(\lambda)
+=
+e^{-\lambda B}(-BA+AB)e^{\lambda B}
+=
+e^{-\lambda B}[A,B]e^{\lambda B}.
+$$
+:::
+
+<1>2. At $\lambda=0$,
+$$
+F(0)=A
+$$
+and
+$$
+F'(0)=[A,B].
+$$
+
+::: {.proof}
+Substitute $\lambda=0$ into the definitions in step <1>1.
+:::
+
+<1>3. Therefore, to first order,
+$$
+\boxed{
+e^{-\lambda B}Ae^{\lambda B}
+=
+A+\lambda[A,B]+O(\lambda^2).
+}
+$$
+
+::: {.proof}
+Apply the Taylor expansion of $F$ at $\lambda=0$ using step <1>2.
+:::
+
+<1>4. Part (a) follows.
+
+::: {.proof}
+This is step <1>3.
+:::
+
+<1>5. Define recursively
+$$
+C_0=A,
+\qquad
+C_{n+1}=[C_n,B].
+$$
+Then
+$$
+F^{(n)}(\lambda)
+=
+e^{-\lambda B}C_ne^{\lambda B}
+$$
+for every $n\geq0$.
+
+::: {.proof}
+For $n=0$ this is the definition of $F$. Suppose it holds for $n$. Differentiate:
+$$
+F^{(n+1)}(\lambda)
+=
+e^{-\lambda B}[C_n,B]e^{\lambda B}
+=
+e^{-\lambda B}C_{n+1}e^{\lambda B},
+$$
+using the same calculation as in step <1>1.
+:::
+
+<1>6. Hence
+$$
+F^{(n)}(0)=C_n.
+$$
+
+::: {.proof}
+Set $\lambda=0$ in step <1>5.
+:::
+
+<1>7. Therefore the full expansion is
+$$
+\boxed{
+e^{-\lambda B}Ae^{\lambda B}
+=
+\sum_{n=0}^{\infty}
+\frac{\lambda^n}{n!}C_n
+}
+$$
+with
+$$
+C_n
+=
+\underbrace{[\cdots[[A,B],B],\ldots,B]}_{n\text{ copies of }B}.
+$$
+
+::: {.proof}
+Taylor-expand $F$ at $0$ and use step <1>6.
+:::
+
+<1>8. Equivalently,
+$$
+\boxed{
+e^{-\lambda B}Ae^{\lambda B}
+=
+A
++
+\lambda[A,B]
++
+\frac{\lambda^2}{2!}[[A,B],B]
++
+\frac{\lambda^3}{3!}[[[A,B],B],B]
++
+\cdots.
+}
+$$
+
+::: {.proof}
+Write out the first terms of the series in step <1>7.
+:::
+
+<1>9. Part (b) follows.
+
+::: {.proof}
+Steps <1>7--<1>8 give the expansion to arbitrary order.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>4 and <1>9 establish parts (a) and (b), respectively.
+:::
+:::
