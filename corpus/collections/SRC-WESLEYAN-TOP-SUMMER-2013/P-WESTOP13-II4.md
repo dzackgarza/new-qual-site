@@ -10,13 +10,13 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
-  note: Part (b) refers to a specific torus Delta-complex diagram. The retained Markdown extraction contains only an image placeholder for that diagram, so its precise simplex labels are unrecovered.
+  note: Direct inspection of the retained PDF recovers the source diagram: all four square corners are the vertex y; both vertical sides are the edge a oriented upward; both horizontal sides are the edge b oriented rightward; the diagonal c is oriented from lower left to upper right; the upper and lower 2-simplices are U and L.
 ---
 
 ::: {.problem}
 1. Calculate the simplicial homology groups of $S^1$.
 
-2. Calculate the simplicial homology groups of the torus using the $\Delta$-complex specified by the source diagram. The diagram itself is not present in the retained Markdown extraction, so its precise simplex labels remain unrecovered.
+2. Calculate the simplicial homology groups of the torus using the following $\Delta$-complex from the source diagram. Start with a square whose four corners are identified to one vertex $y$. Label both vertical sides by $a$ and orient them upward; label both horizontal sides by $b$ and orient them to the right. Add the diagonal edge $c$, oriented from the lower-left corner to the upper-right corner. Let $U$ be the upper triangle and $L$ the lower triangle.
 
 3. Let $T_0^2$ be the torus with the interior of a disk removed. Use the Mayer--Vietoris sequence for
    \[
