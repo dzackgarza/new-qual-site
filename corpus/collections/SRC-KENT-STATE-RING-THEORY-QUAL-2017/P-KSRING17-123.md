@@ -19,3 +19,397 @@ audit:
 Let D be an integral domain and F its field of fractions.
 Let P be a prime ideal in D and $D _ { P } = \{ a b ^ { - 1 } \mid a , b \in D , \ b \notin P \} \subseteq F$ . Show that $D _ { P }$ has a unique maximal ideal.
 :::
+
+::: {.solution}
+Define
+$$
+M
+\coloneqq
+\left\{
+\frac ab
+\in
+D_P:
+a\in P
+\right\}.
+$$
+
+<1>1. The set $M$ is well-defined.
+
+::: {.proof}
+Suppose
+$$
+\frac ab
+=
+\frac cd
+$$
+in the fraction field, with
+$$
+b,d\notin P.
+$$
+Then
+$$
+ad=bc.
+$$
+Assume
+$$
+a\in P.
+$$
+Then
+$$
+ad\in P,
+$$
+so
+$$
+bc\in P.
+$$
+Since
+$$
+b\notin P
+$$
+and $P$ is prime,
+$$
+c\in P.
+$$
+Thus membership in $M$ is independent of the chosen representative.
+:::
+
+<1>2. The set $M$ is closed under subtraction.
+
+::: {.proof}
+Let
+$$
+\frac ab,\frac cd
+\in
+M.
+$$
+Then
+$$
+a,c\in P
+$$
+and
+$$
+b,d\notin P.
+$$
+One has
+$$
+\frac ab-\frac cd
+=
+\frac{ad-bc}{bd}.
+$$
+Since
+$$
+a,c\in P
+$$
+and $P$ is an ideal,
+$$
+ad-bc
+\in
+P.
+$$
+Also
+$$
+bd\notin P
+$$
+because $P$ is prime and neither factor lies in $P$.
+Hence
+$$
+\frac ab-\frac cd
+\in
+M.
+$$
+:::
+
+<1>3. The set $M$ absorbs multiplication by arbitrary elements of $D_P$.
+
+::: {.proof}
+Let
+$$
+\frac rs
+\in
+D_P
+$$
+and
+$$
+\frac ab
+\in
+M.
+$$
+Then
+$$
+a\in P,
+\qquad
+s,b\notin P.
+$$
+Their product is
+$$
+\frac rs\frac ab
+=
+\frac{ra}{sb}.
+$$
+Because
+$$
+a\in P,
+$$
+one has
+$$
+ra\in P.
+$$
+Since
+$$
+s,b\notin P
+$$
+and $P$ is prime,
+$$
+sb\notin P.
+$$
+Therefore
+$$
+\frac{ra}{sb}
+\in
+M.
+$$
+:::
+
+<1>4. Thus
+$$
+\boxed{
+M
+\trianglelefteq
+D_P.
+}
+$$
+
+::: {.proof}
+Step <1>2 gives the additive-subgroup condition, and step <1>3 gives absorption under multiplication by arbitrary elements of $D_P$.
+:::
+
+<1>5. The ideal $M$ is proper.
+
+::: {.proof}
+The identity of $D_P$ is
+$$
+1=\frac11.
+$$
+Since $P$ is proper,
+$$
+1\notin P.
+$$
+Hence
+$$
+1\notin M.
+$$
+Therefore
+$$
+M\ne D_P.
+$$
+:::
+
+<1>6. If
+$$
+\frac ab
+\in
+D_P
+$$
+with
+$$
+a\notin P,
+$$
+then
+$$
+\frac ab
+$$
+is a unit.
+
+::: {.proof}
+Since
+$$
+a\notin P,
+$$
+the fraction
+$$
+\frac ba
+$$
+belongs to
+$$
+D_P.
+$$
+Moreover,
+$$
+\frac ab\frac ba
+=
+1.
+$$
+Thus
+$$
+\frac ab
+\in
+D_P^\times.
+$$
+:::
+
+<1>7. If
+$$
+\frac ab
+\in
+M,
+$$
+then
+$$
+\frac ab
+$$
+is not a unit.
+
+::: {.proof}
+Suppose
+$$
+a\in P
+$$
+and
+$$
+\frac ab
+$$
+were a unit.
+Then there would exist
+$$
+\frac cd
+\in
+D_P
+$$
+with
+$$
+\frac ab\frac cd
+=
+1.
+$$
+Hence
+$$
+ac=bd
+$$
+in $D$.
+Since
+$$
+a\in P,
+$$
+one has
+$$
+ac\in P,
+$$
+and therefore
+$$
+bd\in P.
+$$
+But
+$$
+b,d\notin P,
+$$
+contradicting primality of $P$.
+Thus
+$$
+\frac ab
+$$
+is not invertible.
+:::
+
+<1>8. The nonunits of $D_P$ are exactly the elements of $M$.
+
+::: {.proof}
+Step <1>6 shows that every fraction outside $M$ is a unit.
+Step <1>7 shows that every fraction in $M$ is a nonunit.
+Hence
+$$
+\boxed{
+M
+=
+D_P\setminus D_P^\times.
+}
+$$
+:::
+
+<1>9. The ideal $M$ is maximal.
+
+::: {.proof}
+The quotient
+$$
+D_P/M
+$$
+is nonzero by step <1>5.
+Let
+$$
+\frac ab+M
+\ne
+0+M.
+$$
+Then
+$$
+\frac ab
+\notin
+M.
+$$
+By step <1>8,
+$$
+\frac ab
+$$
+is a unit of $D_P$.
+Its image in the quotient is therefore a unit.
+Thus every nonzero element of
+$$
+D_P/M
+$$
+is invertible, so the quotient is a field.
+Hence $M$ is maximal.
+:::
+
+<1>10. The ideal $M$ is the unique maximal ideal of $D_P$.
+
+::: {.proof}
+Let
+$$
+N
+$$
+be any maximal ideal of
+$$
+D_P.
+$$
+A proper ideal cannot contain a unit, so every element of $N$ is a nonunit.
+By step <1>8,
+$$
+N\subseteq M.
+$$
+Since both
+$$
+N
+$$
+and
+$$
+M
+$$
+are maximal proper ideals, this containment forces
+$$
+N=M.
+$$
+:::
+
+<1>11. Therefore
+$$
+\boxed{
+D_P
+\text{ is a local ring with unique maximal ideal }
+P D_P
+=
+\left\{
+\frac ab:
+a\in P,\ b\notin P
+\right\}.
+}
+$$
+
+::: {.proof}
+Step <1>10 proves uniqueness, and the displayed description is the definition of $M$.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>11 is the required conclusion.
+:::
+:::
