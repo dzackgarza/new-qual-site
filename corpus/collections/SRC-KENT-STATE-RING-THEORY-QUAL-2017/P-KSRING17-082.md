@@ -27,3 +27,344 @@ Show the following:
 
 (b) $D$ is not a unique factorization domain.
 :::
+
+::: {.solution}
+Set
+$$
+f(x)
+\coloneqq
+x^2+x-1.
+$$
+
+<1>1. In the field
+$$
+F=\QQ(\sqrt5),
+$$
+the polynomial $f$ factors as
+$$
+\boxed{
+f(x)
+=
+\left(
+x-\frac{-1+\sqrt5}{2}
+\right)
+\left(
+x-\frac{-1-\sqrt5}{2}
+\right).
+}
+$$
+
+::: {.proof}
+The quadratic formula gives the two roots
+$$
+\alpha
+\coloneqq
+\frac{-1+\sqrt5}{2},
+\qquad
+\beta
+\coloneqq
+\frac{-1-\sqrt5}{2}.
+$$
+Both lie in
+$$
+\QQ(\sqrt5)=F.
+$$
+Therefore
+$$
+f(x)
+=(x-\alpha)(x-\beta)
+$$
+in
+$$
+F[x].
+$$
+Thus $f$ is reducible over $F$.
+:::
+
+<1>2. Neither root $\alpha$ nor $\beta$ belongs to
+$$
+D=\ZZ[\sqrt5].
+$$
+
+::: {.proof}
+Suppose
+$$
+\alpha
+=
+m+n\sqrt5
+$$
+for integers
+$$
+m,n.
+$$
+Then
+$$
+-\frac12
++
+\frac12\sqrt5
+=
+m+n\sqrt5.
+$$
+Because
+$$
+1
+\qquad\text{and}\qquad
+\sqrt5
+$$
+are linearly independent over $\QQ$, comparison of coefficients gives
+$$
+m=-\frac12,
+\qquad
+n=\frac12,
+$$
+contradicting
+$$
+m,n\in\ZZ.
+$$
+Thus
+$$
+\alpha\notin D.
+$$
+
+The same argument applied to
+$$
+\beta
+=
+-\frac12
+-
+\frac12\sqrt5
+$$
+shows
+$$
+\beta\notin D.
+$$
+:::
+
+<1>3. If a monic quadratic polynomial over an integral domain $A$ is reducible in $A[x]$, then it has a root in $A$.
+
+::: {.proof}
+Let
+$$
+g(x)
+=
+x^2+cx+d
+\in
+A[x]
+$$
+be monic and reducible.
+Because $A$ is a domain, degrees add under multiplication, so a nontrivial factorization has the form
+$$
+g(x)
+=
+(ux+a)(vx+b)
+$$
+with
+$$
+u,v,a,b\in A
+$$
+and
+$$
+uv=1
+$$
+because $g$ is monic.
+Thus $u$ and $v$ are units.
+Set
+$$
+a'
+\coloneqq
+u^{-1}a,
+\qquad
+b'
+\coloneqq
+v^{-1}b.
+$$
+Then
+$$
+\begin{aligned}
+g(x)
+&=
+uv(x+a')(x+b')\\
+&=
+(x+a')(x+b').
+\end{aligned}
+$$
+Hence
+$$
+-a'
+$$
+is a root of $g$ in $A$.
+:::
+
+<1>4. The polynomial
+$$
+x^2+x-1
+$$
+is irreducible in
+$$
+D[x].
+$$
+
+::: {.proof}
+The ring $D$ is an integral domain by hypothesis.
+If
+$$
+f(x)
+$$
+were reducible in
+$$
+D[x],
+$$
+step <1>3 would imply that it has a root in $D$.
+Its only roots in the fraction field are
+$$
+\alpha
+\qquad\text{and}\qquad
+\beta,
+$$
+and step <1>2 shows that neither lies in $D$.
+Therefore $f$ is irreducible in $D[x]$.
+:::
+
+<1>5. Thus
+$$
+\boxed{
+x^2+x-1
+\text{ is irreducible in }D[x]
+\text{ but reducible in }F[x].
+}
+$$
+
+::: {.proof}
+Irreducibility over $D$ is step <1>4, while reducibility over $F$ is step <1>1.
+:::
+
+<1>6. The element
+$$
+\alpha
+=
+\frac{-1+\sqrt5}{2}
+$$
+is integral over $D$ but does not lie in $D$.
+
+::: {.proof}
+By step <1>1,
+$$
+f(\alpha)=0,
+$$
+where
+$$
+f(x)=x^2+x-1
+$$
+is monic with coefficients in
+$$
+\ZZ\subseteq D.
+$$
+Hence $\alpha$ is integral over $D$.
+Step <1>2 shows
+$$
+\alpha\notin D.
+$$
+:::
+
+<1>7. Every UFD is integrally closed in its field of fractions.
+
+::: {.proof}
+Let
+$$
+A
+$$
+be a UFD and let
+$$
+\frac ab
+\in
+\operatorname{Frac}(A)
+$$
+be integral over $A$, written so that $a$ and $b$ have no common irreducible factor.
+Choose a monic equation
+$$
+\left(\frac ab\right)^n
++
+c_{n-1}\left(\frac ab\right)^{n-1}
++
+\cdots
++
+c_0
+=
+0
+$$
+with
+$$
+c_i\in A.
+$$
+Multiplying by
+$$
+b^n
+$$
+gives
+$$
+a^n
+=
+-b
+\left(
+c_{n-1}a^{n-1}
++
+c_{n-2}a^{n-2}b
++
+\cdots
++
+c_0b^{n-1}
+\right).
+$$
+Thus
+$$
+b\mid a^n.
+$$
+If $b$ were not a unit, some irreducible
+$$
+\pi
+$$
+would divide $b$.
+In a UFD irreducibles are prime, so
+$$
+\pi\mid a^n
+$$
+would imply
+$$
+\pi\mid a,
+$$
+contradicting the choice of $a,b$ with no common irreducible factor.
+Therefore
+$$
+b
+$$
+is a unit, so
+$$
+a/b\in A.
+$$
+Hence $A$ is integrally closed.
+:::
+
+<1>8. The ring $D$ is not a UFD.
+
+::: {.proof}
+By step <1>6, there is an element of
+$$
+\operatorname{Frac}(D)=F
+$$
+that is integral over $D$ but does not lie in $D$.
+Thus $D$ is not integrally closed.
+By step <1>7, every UFD is integrally closed.
+Therefore
+$$
+\boxed{
+D\text{ is not a unique factorization domain}.
+}
+$$
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves part (a), and step <1>8 proves part (b).
+:::
+:::
