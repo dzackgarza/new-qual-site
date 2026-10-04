@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Kent State Ring Theory Problem 103 omits the hypothesis p divides a_0
+
+- **Object and need:** P-KSRING17-103 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source states a generalized Eisenstein criterion with p dividing a_i only for i=1,...,k-1, together with p^2 not dividing a_0.
+- **Observed evidence:** line 431 of assets/attachments/extracted/Ring_Theory_Qual_Problems.md contains the literal statement. As written it is false: for k=2, p=2, f(x)=x^2-1 satisfies 2|a_1, 2 does not divide a_2, and 4 does not divide a_0=-1, but f factors into two linear factors.
+- **Impact and owner:** the intended criterion needs p|a_0 as well, so that p divides a_0,...,a_{k-1} and p^2 does not divide a_0.
+- **Uncertainty:** none about the counterexample; the corrected statement is the standard generalized Eisenstein argument.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-KSRING17-103 records the missing hypothesis and proves the corrected theorem.
+
 ### Kent State Ring Theory Problem 95 uses the stronger Euclidean-function convention
 
 - **Object and need:** P-KSRING17-095 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source asks for the classification of Euclidean domains whose Euclidean function satisfies an ultrametric inequality.
