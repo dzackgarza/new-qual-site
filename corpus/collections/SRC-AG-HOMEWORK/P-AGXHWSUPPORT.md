@@ -16,79 +16,87 @@ review: draft
 
 ::: {.problem}
 Let $\mcf\in \Sh(X)$ and $s\in \mcf(U)$ be a section, and define
-\[
-\supp s &\da \ts{p\in U \st s_p \neq 0} \subseteq U \\
-\supp \mcf &\da \ts{p\in X \st \mcf_p\neq 0} \subseteq  X
-,\]
+$$
+\supp s \coloneqq \{p\in U : s_p\neq0\}\subseteq U,
+\qquad
+\supp \mcf \coloneqq \{p\in X : \mcf_p\neq0\}\subseteq X,
+$$
 where $s_p$ denotes the germ of $s$ in the stalk $\mcf_p$.
 Show that $\supp s$ is closed in $U$ but $\supp \mcf$ need not be closed in $X$.
 :::
 
 ::: {.solution}
-**$\supp(s)$ is closed**:
+<1>1. The complement $U\setminus\supp s$ is open in $U$.
 
-- Write
-\[
-\supp(s) &\da \ts{p\in U \st \mcf\mid^U_p(s) \neq 0} \subseteq U \\
-\implies \supp(s)^c \da U\sm \supp(s) &\da \ts{p\in U \st \mcf\mid^U_p(s) = 0} \subseteq U
-.\]
+::: {.proof}
+Let $p\in U\setminus\supp s$. Then $s_p=0$ in the stalk $\mcf_p$. By the definition of equality of germs, there is an open neighborhood $V_p\subseteq U$ of $p$ such that
+$$
+s|_{V_p}=0.
+$$
+For every $q\in V_p$, the germ $s_q$ is therefore zero, so $V_p\subseteq U\setminus\supp s$. Thus every point of $U\setminus\supp s$ has an open neighborhood contained in that complement.
+:::
 
-- Now use that if $p\in U$ with $s=0$ in the stalk at $p$, then $s=0$ on an open neighborhood $W_p$ of $p$ with $W_p \subseteq U\sm \supp(s)$, so every such $p$ is interior.
+<1>2. The support $\supp s$ is closed in $U$.
 
-**$\supp(\mcf)$ is not closed**:
+::: {.proof}
+This is the complement statement from step <1>1.
+:::
 
-- Take the skyscraper sheaf: take the constant sheaf on a point $q\in X$, then push it forward along the inclusion $q\injects X$:
+<1>3. There exists a sheaf whose support is not closed.
 
-\begin{tikzcd}
-	{\ul{A}} & {q_* \ul{A}} \\
-	q & X
-	\arrow["{q_*}", from=1-1, to=1-2]
-	\arrow["q", hook, from=2-1, to=2-2]
-\end{tikzcd}
-
-
-- Then check
-\[
-q_* \underline{A}(U) =
+<2>1. Let $X=\RR$, let $q=0$, and define a presheaf $\mathcal P$ of abelian groups by
+$$
+\mathcal P(V)=
 \begin{cases}
-A & q\in U  \\
-0 & \text{else},
+\ZZ,&0\notin V,\\
+0,&0\in V,
 \end{cases}
-\qquad (q_* \underline{A})_p =
-\begin{cases}
-A & p=q  \\
-0 & \text{else}.
-\end{cases}
-\]
+$$
+with identity restriction maps between open sets avoiding $0$ and the unique zero restriction map whenever the source group is $0$. Let $\mathcal F=\mathcal P^{\mathrm{sh}}$ be its sheafification.
 
-- Now invert this construction by taking the sheaf
-\[
-\mcf \da \left( U \mapsto
-\begin{cases}
-A & q\not\in U  \\
-0 & q\in U
-\end{cases}
-\right)^{\scriptscriptstyle \mathrm{sh}}
-.\]
+::: {.proof}
+The displayed rule defines a presheaf: identity restrictions are identities, and every composition involving a restriction from the zero group is again the unique zero homomorphism. Sheafification therefore produces a sheaf $\mathcal F$ on $X$ with the same stalks as $\mathcal P$.
+:::
 
-- The presheaf and its sheafification $\mcf$ have the same stalks, and a computation shows
-\[
-\mcf_p =
-\begin{cases}
-A & p\neq q \\
-0 & p=q.
-\end{cases}
-\]
+<2>2. The stalk $\mathcal F_0$ is zero.
 
-- Then for a fixed $q\in X$, $\supp \mcf = X \sm \cl_X(\ts{q})$.
-  - Why: if there is some neighborhood $U\ni p$ that does not meet $q$, then the presheaf takes value $A$ on every $V \subseteq U$, so the colimit stabilizes and equals $A$.
-  - Conversely, if every neighborhood of $p$ meets $q$, then the presheaf takes value $0$ on every $V\subseteq U$, so the colimit stabilizes to zero.
+::: {.proof}
+Every open neighborhood $V$ of $0$ contains $0$, so $\mathcal P(V)=0$. Hence
+$$
+\mathcal P_0=\varinjlim_{0\in V}\mathcal P(V)=0.
+$$
+Sheafification preserves stalks, so $\mathcal F_0=0$.
+:::
 
-- Now concretely take $X \da \AA^1\slice{k}$ and $q=0$; then $\ts{0} = V(x)$ for $x\in k[x]$ is closed, so $\cl_X(\ts{0}) = \ts{0}$.
+<2>3. For every $p\neq0$, the stalk $\mathcal F_p$ is isomorphic to $\ZZ$.
 
-- Thus
-\[
-\supp \mcf = \AA^1 \sm \cl_X(\ts{0}) = \AA^1\smz = D(x)
-\]
-is open and not closed when $k$ is infinite.
+::: {.proof}
+Choose an open neighborhood $W$ of $p$ with $0\notin W$. The neighborhoods $V$ of $p$ contained in $W$ are cofinal among all neighborhoods of $p$, and for all such $V$ one has $\mathcal P(V)=\ZZ$ with identity transition maps. Therefore
+$$
+\mathcal P_p\cong\ZZ.
+$$
+Again using invariance of stalks under sheafification gives $\mathcal F_p\cong\ZZ$.
+:::
+
+<2>4. The support of $\mathcal F$ is
+$$
+\boxed{\supp\mathcal F=\RR\setminus\{0\}},
+$$
+which is not closed in $\RR$.
+
+::: {.proof}
+Steps <2>2 and <2>3 show that the stalk is zero exactly at $0$. Thus the support is $\RR\setminus\{0\}$. This set is not closed because its closure is all of $\RR$.
+:::
+
+<2>5. Q.E.D.
+
+::: {.proof}
+Step <2>4 gives the required counterexample for the support of a sheaf.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves that the support of every section is closed in its domain, and step <1>3 shows that the support of a sheaf need not be closed.
+:::
 :::
