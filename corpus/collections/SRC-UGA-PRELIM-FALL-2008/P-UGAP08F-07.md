@@ -21,3 +21,57 @@ S=\{nk:n\in\mathbb Z\}.
 \]
 You may use the division algorithm for $\mathbb Z$, but no more advanced theorem.
 :::
+
+::: {.solution}
+<1>1. If $S=\{0\}$, then
+$$
+S=0\ZZ.
+$$
+
+::: {.proof}
+This is immediate because $0\ZZ=\{0\}$.
+:::
+
+<1>2. Suppose $S\ne\{0\}$. Then $S$ contains a least positive integer $k$.
+
+::: {.proof}
+Choose a nonzero $s\in S$. Since $S$ is closed under additive inverses, either $s$ or $-s$ is a positive element of $S$. Thus the set of positive elements of $S$ is nonempty, so by the well-ordering principle it has a least element; call it $k$.
+:::
+
+<1>3. Every element of $S$ is an integer multiple of $k$.
+
+::: {.proof}
+Let $s\in S$. By the division algorithm, there are integers $q,r$ with
+$$
+s=qk+r,
+\qquad
+0\le r<k.
+$$
+Because $S$ is closed under addition and additive inverses, it is closed under integer multiples; hence $qk\in S$ and
+$$
+r=s-qk\in S.
+$$
+If $r>0$, then $r$ would be a positive element of $S$ smaller than the least positive element $k$, a contradiction. Therefore $r=0$, so $s=qk$.
+:::
+
+<1>4. Every integer multiple of $k$ belongs to $S$.
+
+::: {.proof}
+Since $k\in S$ and $S$ is closed under addition and additive inverses, $nk\in S$ for every $n\in\ZZ$.
+:::
+
+<1>5. There is an integer $k$ such that
+$$
+\boxed{S=\{nk:n\in\ZZ\}=k\ZZ}.
+$$
+
+::: {.proof}
+If $S=\{0\}$, use step <1>1. Otherwise choose $k$ as in step <1>2. Step <1>3 gives $S\subseteq k\ZZ$, and step <1>4 gives $k\ZZ\subseteq S$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::
