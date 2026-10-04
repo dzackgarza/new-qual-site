@@ -25,3 +25,55 @@ Discuss the truth of each statement.
 
 (d) There is an integer $x$ such that $xy$ is even for every integer $y$.
 :::
+
+::: {.solution}
+<1>1. Statement (a) is $\boxed{\text{true}}$.
+
+::: {.proof}
+Let $x\in\ZZ$ be arbitrary and choose
+$$
+y\coloneqq 1-x.
+$$
+Then $y\in\ZZ$ and
+$$
+x+y=1,
+$$
+which is odd. Thus the required integer $y$ exists for every integer $x$.
+:::
+
+<1>2. Statement (b) is $\boxed{\text{false}}$.
+
+::: {.proof}
+Let $x\in\ZZ$ be arbitrary. Taking $y=-x$ gives
+$$
+x+y=0,
+$$
+which is even. Hence no single integer $x$ can make $x+y$ odd for every integer $y$.
+:::
+
+<1>3. Statement (c) is $\boxed{\text{false}}$.
+
+::: {.proof}
+Take $x=2$. For every integer $y$,
+$$
+xy=2y
+$$
+is even, so there is no integer $y$ for which $xy$ is odd. Therefore the universal assertion over $x$ fails.
+:::
+
+<1>4. Statement (d) is $\boxed{\text{true}}$.
+
+::: {.proof}
+Choose $x=0$. Then for every integer $y$,
+$$
+xy=0,
+$$
+which is even. Thus such an integer $x$ exists.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 determine the truth of all four statements.
+:::
+:::
