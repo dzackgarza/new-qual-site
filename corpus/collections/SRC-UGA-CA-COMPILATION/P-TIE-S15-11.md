@@ -31,3 +31,139 @@ where $\norm{f}_{(\infty,s)} = \sup_{z\in D_s(z_0)} \abs{f(z)}$ and $\norm{f}_{(
 ::: {.remark}
 The source adds "Note: Exercise 3.8.20 on p.107 in Stein et al is a straightforward consequence of this stronger result using the integral form of the Cauchy-Schwarz inequality in real analysis.", a pointer to Stein and Shakarchi, *Complex Analysis*; the statement does not depend on it.
 :::
+
+::: {.solution}
+Set
+$$
+\rho\coloneqq r-s>0.
+$$
+
+<1>1. If $z\in D_s(z_0)$, then
+$$
+D_\rho(z)\subset D_r(z_0).
+$$
+
+::: {.proof}
+Let $w\in D_\rho(z)$. Then
+$$
+\abs{w-z_0}
+\le
+\abs{w-z}+\abs{z-z_0}
+<
+\rho+s
+=
+r.
+$$
+Thus $w\in D_r(z_0)$.
+:::
+
+<1>2. For every $z\in D_s(z_0)$ and every $0<t<\rho$,
+$$
+\abs{f(z)}
+\le
+\frac1{2\pi}
+\int_0^{2\pi}
+\abs{f(z+te^{i\theta})}\,d\theta.
+$$
+
+::: {.proof}
+By step <1>1, the closed circle
+$$
+\abs{w-z}=t
+$$
+lies in $D_r(z_0)$, where $f$ is holomorphic. Cauchy's integral formula gives
+$$
+f(z)
+=
+\frac1{2\pi}
+\int_0^{2\pi}
+f(z+te^{i\theta})\,d\theta.
+$$
+Taking absolute values yields the estimate.
+:::
+
+<1>3. For every $z\in D_s(z_0)$,
+$$
+\abs{f(z)}
+\le
+\frac1{\pi\rho^2}
+\int_{D_\rho(z)}
+\abs{f(w)}\,dA(w).
+$$
+
+::: {.proof}
+Multiply the inequality in step <1>2 by $2t$ and integrate from $t=0$ to $t=\rho$:
+$$
+\abs{f(z)}
+\int_0^\rho 2t\,dt
+\le
+\frac1\pi
+\int_0^\rho
+\int_0^{2\pi}
+\abs{f(z+te^{i\theta})}
+t\,d\theta\,dt.
+$$
+Since
+$$
+\int_0^\rho2t\,dt=\rho^2,
+$$
+and the double integral on the right is the polar-coordinate expression for
+$$
+\int_{D_\rho(z)}\abs{f(w)}\,dA(w),
+$$
+division by $\rho^2$ gives the claimed estimate.
+:::
+
+<1>4. For every $z\in D_s(z_0)$,
+$$
+\abs{f(z)}
+\le
+\frac1{\pi(r-s)^2}
+\norm{f}_{(1,r)}.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+D_\rho(z)\subset D_r(z_0).
+$$
+Hence step <1>3 gives
+$$
+\begin{aligned}
+\abs{f(z)}
+&\le
+\frac1{\pi\rho^2}
+\int_{D_\rho(z)}
+\abs{f(w)}\,dA(w)\\
+&\le
+\frac1{\pi\rho^2}
+\int_{D_r(z_0)}
+\abs{f(w)}\,dA(w).
+\end{aligned}
+$$
+Since $\rho=r-s$, this is the stated inequality.
+:::
+
+<1>5. Therefore
+$$
+\boxed{
+\norm{f}_{(\infty,s)}
+\le
+\frac1{\pi(r-s)^2}
+\norm{f}_{(1,r)}.
+}
+$$
+
+::: {.proof}
+Take the supremum of the pointwise estimate in step <1>4 over all $z\in D_s(z_0)$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves the assertion with
+$$
+\boxed{c=\frac1{\pi(r-s)^2}>0}.
+$$
+:::
+:::
