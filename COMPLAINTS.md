@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Fall 2015 Question 16 and Spring 2015 Question 19 omit the disk self-map hypothesis
+
+- **Object and need:** P-TIE-F15-16 and P-TIE-S15-19 in SRC-UGA-CA-COMPILATION. Both source appearances define iterates $f^{n+1}=f\circ f^n$ on the unit disk and ask for compact-uniform convergence of $\sum f^n$, but state only that $f$ is analytic on $\DD$, fixes $0$, and is not a rotation.
+- **Observed evidence:** lines 481 and 595 of assets/attachments/extracted/Questions_from_Tie.md contain no hypothesis $f(\DD)\subseteq\DD$. Without it the iterates need not be defined on all of $\DD$; for example $f(z)=2z$ is analytic, fixes $0$, is not a rotation, and sends many disk points outside the domain after one iterate.
+- **Impact and owner:** the printed statements are incomplete. The standard Schwarz-lemma proof requires $f:\DD\to\DD$.
+- **Uncertainty:** none about the local source text or the necessity of a composability hypothesis.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. The owning cards retain the printed statements and solve the intended self-map version explicitly.
+
 ### Spring 2015 Question 16 omits the condition that the curve bounds a region inside the domain
 
 - **Object and need:** `P-TIE-S15-16` / `SRC-UGA-CA-COMPILATION`,
