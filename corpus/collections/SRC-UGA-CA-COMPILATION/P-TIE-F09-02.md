@@ -31,3 +31,132 @@ $$
 $$
 where $L$ is the part of the circle $\abs{z} = R'$ which lies in the region $D$.
 :::
+
+::: {.solution}
+For $R'>R$, parametrize the arc $L$ counterclockwise by
+$$
+\gamma_{R'}(t)=R'e^{it},
+\qquad
+0\le t\le\theta.
+$$
+
+<1>1. The arc integral can be written as
+$$
+\int_L f(z)\,dz
+=
+i\int_0^\theta
+\gamma_{R'}(t)f(\gamma_{R'}(t))\,dt.
+$$
+
+::: {.proof}
+Since
+$$
+\gamma_{R'}'(t)=iR'e^{it}=i\gamma_{R'}(t),
+$$
+the definition of a contour integral gives
+$$
+\int_L f(z)\,dz
+=
+\int_0^\theta
+f(\gamma_{R'}(t))\gamma_{R'}'(t)\,dt
+=
+i\int_0^\theta
+\gamma_{R'}(t)f(\gamma_{R'}(t))\,dt.
+$$
+:::
+
+<1>2. For every $\varepsilon>0$, there exists $R_\varepsilon>R$ such that
+$$
+\left|
+\gamma_{R'}(t)f(\gamma_{R'}(t))-k
+\right|
+<\varepsilon
+$$
+for every $R'>R_\varepsilon$ and every $t\in[0,\theta]$.
+
+::: {.proof}
+The hypothesis
+$$
+\lim_{\substack{z\to\infty\\ z\in D}}zf(z)=k
+$$
+means that for every $\varepsilon>0$ there is $R_\varepsilon$ such that
+$$
+|zf(z)-k|<\varepsilon
+$$
+whenever $z\in D$ and $|z|>R_\varepsilon$.
+
+For $R'>R_\varepsilon$ and $t\in[0,\theta]$, one has
+$$
+\gamma_{R'}(t)\in D,
+\qquad
+|\gamma_{R'}(t)|=R'>R_\varepsilon,
+$$
+so the asserted estimate follows.
+:::
+
+<1>3. For $R'>R_\varepsilon$,
+$$
+\left|
+\int_L f(z)\,dz-i\theta k
+\right|
+\le
+\theta\varepsilon.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\begin{aligned}
+\int_L f(z)\,dz-i\theta k
+&=
+i\int_0^\theta
+\left(
+\gamma_{R'}(t)f(\gamma_{R'}(t))-k
+\right)\,dt.
+\end{aligned}
+$$
+Therefore step <1>2 gives
+$$
+\begin{aligned}
+\left|
+\int_L f(z)\,dz-i\theta k
+\right|
+&\le
+\int_0^\theta
+\left|
+\gamma_{R'}(t)f(\gamma_{R'}(t))-k
+\right|dt\\
+&\le
+\theta\varepsilon.
+\end{aligned}
+$$
+:::
+
+<1>4. Hence
+$$
+\boxed{
+\lim_{R'\to\infty}\int_L f(z)\,dz=i\theta k
+}.
+$$
+
+::: {.proof}
+Given any $\delta>0$, apply step <1>3 with
+$$
+\varepsilon=\frac{\delta}{\theta}.
+$$
+Then for all sufficiently large $R'$,
+$$
+\left|
+\int_L f(z)\,dz-i\theta k
+\right|
+<\delta.
+$$
+This is exactly the asserted limit.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
+:::
