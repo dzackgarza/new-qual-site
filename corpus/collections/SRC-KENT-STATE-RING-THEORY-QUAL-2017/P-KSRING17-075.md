@@ -24,3 +24,366 @@ Recall that if $R \subseteq S$ is an inclusion of commutative rings (with the sa
 
 (iii) There exists a faithful $R [ s ]$ module which is finitely generated as an R-module.
 :::
+
+::: {.solution}
+<1>1. Assume $s$ is integral over $R$.
+Then there exist
+$$
+n\ge1
+$$
+and coefficients
+$$
+a_0,\ldots,a_{n-1}\in R
+$$
+such that
+$$
+s^n+a_{n-1}s^{n-1}+\cdots+a_1s+a_0=0.
+$$
+
+::: {.proof}
+This is exactly the definition of integrality over $R$.
+:::
+
+<1>2. Under the hypothesis of step <1>1, every power
+$$
+s^m
+$$
+with
+$$
+m\ge n
+$$
+is an $R$-linear combination of
+$$
+1,s,\ldots,s^{n-1}.
+$$
+
+::: {.proof}
+The relation from step <1>1 gives
+$$
+s^n
+=
+-a_{n-1}s^{n-1}
+-\cdots
+-a_1s
+-a_0.
+$$
+Thus the claim holds for
+$$
+m=n.
+$$
+
+Assume it holds for all powers from $n$ through $m$.
+Multiplying an $R$-linear expression for
+$$
+s^m
+$$
+by $s$ expresses
+$$
+s^{m+1}
+$$
+as an $R$-linear combination of
+$$
+s,s^2,\ldots,s^n.
+$$
+Replace the $s^n$ term using the monic relation from step <1>1.
+This yields an $R$-linear combination of
+$$
+1,s,\ldots,s^{n-1}.
+$$
+Induction proves the assertion.
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+R[s]
+\text{ is finitely generated as an }R\text{-module}.
+}
+$$
+
+::: {.proof}
+Every element of
+$$
+R[s]
+$$
+is a polynomial in $s$ with coefficients in $R$.
+By step <1>2, all powers
+$$
+s^m
+$$
+with
+$$
+m\ge n
+$$
+reduce to $R$-linear combinations of
+$$
+1,s,\ldots,s^{n-1}.
+$$
+Hence
+$$
+R[s]
+=
+R\cdot1
++R\cdot s
++\cdots
++R\cdot s^{n-1}.
+$$
+Thus (i) implies (ii).
+:::
+
+<1>4. Assume
+$$
+R[s]
+$$
+is finitely generated as an $R$-module.
+Then there exists a faithful $R[s]$-module finitely generated over $R$.
+
+::: {.proof}
+Take
+$$
+M
+\coloneqq
+R[s]
+$$
+with its regular left $R[s]$-module structure.
+By hypothesis, $M$ is finitely generated as an $R$-module.
+
+It is faithful as an $R[s]$-module:
+if
+$$
+t\in R[s]
+$$
+annihilates $M$, then in particular
+$$
+t\cdot1=0,
+$$
+so
+$$
+t=0.
+$$
+Therefore (ii) implies (iii).
+:::
+
+<1>5. Assume now that there exists a faithful $R[s]$-module
+$$
+M
+$$
+that is finitely generated as an $R$-module.
+Choose $R$-module generators
+$$
+m_1,\ldots,m_n
+$$
+of $M$.
+
+::: {.proof}
+This is exactly the finite-generation hypothesis in (iii).
+:::
+
+<1>6. For each
+$$
+j=1,\ldots,n,
+$$
+there exist coefficients
+$$
+a_{1j},\ldots,a_{nj}\in R
+$$
+such that
+$$
+s m_j
+=
+\sum_{i=1}^{n}a_{ij}m_i.
+$$
+
+::: {.proof}
+Because $M$ is an $R[s]$-module,
+$$
+sm_j\in M.
+$$
+Because
+$$
+m_1,\ldots,m_n
+$$
+generate $M$ as an $R$-module, $sm_j$ has an $R$-linear expression in these generators.
+:::
+
+<1>7. Let
+$$
+A
+\coloneqq
+(a_{ij})
+\in
+M_n(R)
+$$
+and let
+$$
+\mathbf m
+\coloneqq
+\begin{pmatrix}
+m_1\\
+\vdots\\
+m_n
+\end{pmatrix}.
+$$
+Then
+$$
+(sI_n-A)\mathbf m=0.
+$$
+
+::: {.proof}
+The $j$th relation from step <1>6 is exactly the corresponding coordinate of the matrix equation
+$$
+(sI_n-A)\mathbf m=0,
+$$
+after choosing the convention that the $j$th column of $A$ records the coefficients of $sm_j$.
+Equivalently, one may transpose the coefficient matrix; the determinant below is unchanged.
+:::
+
+<1>8. Multiplying the equation in step <1>7 by the adjugate matrix gives
+$$
+\det(sI_n-A)\,m_j
+=
+0
+$$
+for every
+$$
+j=1,\ldots,n.
+$$
+
+::: {.proof}
+Over the commutative ring
+$$
+R[s],
+$$
+the adjugate identity gives
+$$
+\operatorname{adj}(sI_n-A)(sI_n-A)
+=
+\det(sI_n-A)I_n.
+$$
+Apply this matrix to $\mathbf m$ and use step <1>7:
+$$
+\det(sI_n-A)\mathbf m
+=
+0.
+$$
+Thus each coordinate satisfies the displayed annihilation relation.
+:::
+
+<1>9. The element
+$$
+\det(sI_n-A)
+\in
+R[s]
+$$
+annihilates all of $M$.
+
+::: {.proof}
+By step <1>8, it annihilates each $R$-module generator
+$$
+m_j.
+$$
+Since multiplication by an element of $R[s]$ is $R$-linear, it therefore annihilates every $R$-linear combination of the generators, hence all of $M$.
+:::
+
+<1>10. Because $M$ is faithful as an $R[s]$-module,
+$$
+\det(sI_n-A)=0
+$$
+in $R[s]$.
+
+::: {.proof}
+Faithfulness means that the annihilator of $M$ in $R[s]$ is zero.
+Step <1>9 shows
+$$
+\det(sI_n-A)
+$$
+lies in that annihilator.
+Hence it is zero.
+:::
+
+<1>11. The expression
+$$
+\det(TI_n-A)
+$$
+is a monic polynomial in
+$$
+R[T]
+$$
+of degree $n$.
+
+::: {.proof}
+In the determinant expansion, the unique degree-$n$ term is obtained by taking the diagonal term
+$$
+T
+$$
+from each row and column.
+Its coefficient is $1$.
+Every other term has smaller degree.
+Therefore
+$$
+\chi_A(T)
+\coloneqq
+\det(TI_n-A)
+$$
+is monic of degree $n$ with coefficients in $R$.
+:::
+
+<1>12. The element $s$ satisfies the monic polynomial
+$$
+\chi_A(T)
+\in
+R[T].
+$$
+
+::: {.proof}
+By step <1>10,
+$$
+\det(sI_n-A)=0.
+$$
+By step <1>11,
+$$
+\chi_A(T)
+=
+\det(TI_n-A)
+$$
+is a monic polynomial over $R$.
+Thus
+$$
+\chi_A(s)=0.
+$$
+Hence $s$ is integral over $R$.
+Therefore (iii) implies (i).
+:::
+
+<1>13. Consequently,
+$$
+\boxed{
+\text{(i)}
+\iff
+\text{(ii)}
+\iff
+\text{(iii)}.
+}
+$$
+
+::: {.proof}
+Step <1>3 proves
+$$
+\text{(i)}\implies\text{(ii)}.
+$$
+Step <1>4 proves
+$$
+\text{(ii)}\implies\text{(iii)}.
+$$
+Step <1>12 proves
+$$
+\text{(iii)}\implies\text{(i)}.
+$$
+:::
+
+<1>14. Q.E.D.
+
+::: {.proof}
+Step <1>13 establishes the equivalence of all three statements.
+:::
+:::
