@@ -18,3 +18,121 @@ audit:
 ::: {.problem}
 A linear transformation is given by the matrix $e ^ { A }$ in some basis in $\mathbb { R } ^ { n }$ . Consider the change of the basis determined by the transition matrix U. Find the matrix of the transformation in the new basis.
 :::
+
+::: {.solution}
+Use the convention
+$$
+x_{\mathrm{old}}=U x_{\mathrm{new}},
+$$
+so the columns of $U$ are the new basis vectors written in the old basis.
+
+<1>1. If a linear transformation has matrix $T$ in the old basis, then its
+matrix in the new basis is
+$$
+U^{-1}TU.
+$$
+
+::: {.proof}
+If
+$$
+x_{\mathrm{old}}=Ux_{\mathrm{new}},
+$$
+then after applying the transformation,
+$$
+y_{\mathrm{old}}
+=
+T x_{\mathrm{old}}
+=
+TUx_{\mathrm{new}}.
+$$
+Converting the output back to new coordinates gives
+$$
+y_{\mathrm{new}}
+=
+U^{-1}y_{\mathrm{old}}
+=
+U^{-1}TUx_{\mathrm{new}}.
+$$
+:::
+
+<1>2. Therefore the matrix of the given transformation in the new basis is
+$$
+\boxed{U^{-1}e^AU}.
+$$
+
+::: {.proof}
+Apply step <1>1 with
+$$
+T=e^A.
+$$
+:::
+
+<1>3. For every integer $k\geq0$,
+$$
+(U^{-1}AU)^k
+=
+U^{-1}A^kU.
+$$
+
+::: {.proof}
+Proceed by induction. The cases $k=0$ and $k=1$ are immediate. If the identity
+holds for $k$, then
+$$
+\begin{aligned}
+(U^{-1}AU)^{k+1}
+&=
+(U^{-1}A^kU)(U^{-1}AU)\\
+&=
+U^{-1}A^{k+1}U.
+\end{aligned}
+$$
+:::
+
+<1>4. Hence
+$$
+U^{-1}e^AU
+=
+e^{U^{-1}AU}.
+$$
+
+::: {.proof}
+Using the exponential series and step <1>3,
+$$
+\begin{aligned}
+e^{U^{-1}AU}
+&=
+\sum_{k=0}^{\infty}
+\frac{(U^{-1}AU)^k}{k!}\\
+&=
+\sum_{k=0}^{\infty}
+\frac{U^{-1}A^kU}{k!}\\
+&=
+U^{-1}
+\left(
+\sum_{k=0}^{\infty}\frac{A^k}{k!}
+\right)U\\
+&=
+U^{-1}e^AU.
+\end{aligned}
+$$
+:::
+
+<1>5. Therefore the transformed matrix may be written as
+$$
+\boxed{
+U^{-1}e^AU
+=
+e^{U^{-1}AU}.
+}
+$$
+
+::: {.proof}
+Combine steps <1>2 and <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required change-of-basis formula.
+:::
+:::
