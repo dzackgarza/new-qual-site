@@ -19,3 +19,145 @@ audit:
 ::: {.problem}
 Let $f_n:[0,1]\to[0,\infty)$ be a sequence of functions, each non-decreasing on $[0,1]$. Suppose the sequence is uniformly bounded in $L^2([0,1])$. Show that there exists a subsequence that converges in $L^1([0,1])$.
 :::
+
+::: {.solution}
+Choose $C\ge0$ such that
+$$
+\|f_n\|_{L^2([0,1])}\le C
+$$
+for every $n$.
+
+<1>1. For every $x\in[0,1)$ and every $n$,
+$$
+0\le f_n(x)\le\frac{C}{\sqrt{1-x}}.
+$$
+
+::: {.proof}
+Since $f_n$ is nonnegative and non-decreasing,
+$$
+\int_x^1 f_n(t)^2\,dt
+\ge (1-x)f_n(x)^2.
+$$
+The left-hand side is at most $C^2$. Dividing by $1-x>0$ and taking square roots gives the bound.
+:::
+
+<1>2. There is a subsequence $(f_{n_k})$ and a non-decreasing function $f:[0,1)\to[0,\infty)$ such that
+$$
+f_{n_k}(x)\longrightarrow f(x)
+$$
+for almost every $x\in[0,1)$.
+
+::: {.proof}
+Enumerate $\QQ\cap[0,1)$ as $q_1,q_2,\ldots$. By step <1>1, for each fixed $q_j$ the sequence $(f_n(q_j))_n$ is bounded. Successively extract subsequences converging at $q_1,q_2,\ldots$, and take the diagonal subsequence $(f_{n_k})$. Then
+$$
+g(q)\coloneqq\lim_{k\to\infty}f_{n_k}(q)
+$$
+exists for every rational $q\in[0,1)$, and $g$ is non-decreasing on the rationals.
+
+For $x\in(0,1)$ define
+$$
+\alpha(x)\coloneqq\sup_{q<x,\ q\in\QQ}g(q),
+\qquad
+\beta(x)\coloneqq\inf_{r>x,\ r\in\QQ}g(r).
+$$
+For rationals $q<x<r$, monotonicity gives
+$$
+f_{n_k}(q)\le f_{n_k}(x)\le f_{n_k}(r).
+$$
+Hence
+$$
+\alpha(x)
+\le\liminf_{k\to\infty}f_{n_k}(x)
+\le\limsup_{k\to\infty}f_{n_k}(x)
+\le\beta(x).
+$$
+
+The set
+$$
+E\coloneqq\{x\in(0,1):\alpha(x)<\beta(x)\}
+$$
+is countable. Indeed, if $x<y$, choose a rational $r$ with $x<r<y$; then
+$$
+\beta(x)\le g(r)\le\alpha(y),
+$$
+so the open intervals $(\alpha(x),\beta(x))$ for $x\in E$ are pairwise disjoint. Each contains a rational number, so there can be only countably many of them.
+
+Define $f(x)=\alpha(x)$ for $0<x<1$ and set $f(0)=0$. The function $f$ is non-decreasing on $[0,1)$. For every $x\notin E$, one has $\alpha(x)=\beta(x)$, so the displayed squeeze gives $f_{n_k}(x)\to f(x)$. Thus convergence holds almost everywhere.
+:::
+
+<1>3. The limit function satisfies
+$$
+f\in L^2([0,1])
+\qquad\text{and}\qquad
+\|f\|_2\le C.
+$$
+
+::: {.proof}
+Extend $f$ arbitrarily to the point $1$, which does not affect any integral. By step <1>2 and Fatou's lemma,
+$$
+\int_0^1 f(x)^2\,dx
+\le\liminf_{k\to\infty}\int_0^1 f_{n_k}(x)^2\,dx
+\le C^2.
+$$
+:::
+
+<1>4. For every $0<\delta<1$,
+$$
+\int_{1-\delta}^1|f_{n_k}(x)-f(x)|\,dx
+\le2C\sqrt\delta.
+$$
+
+::: {.proof}
+By the triangle inequality and Cauchy--Schwarz,
+$$
+\begin{aligned}
+\int_{1-\delta}^1|f_{n_k}-f|
+&\le\int_{1-\delta}^1 f_{n_k}+\int_{1-\delta}^1 f\\
+&\le\sqrt\delta\,\|f_{n_k}\|_2
++\sqrt\delta\,\|f\|_2\\
+&\le2C\sqrt\delta
+\end{aligned}
+$$
+by the uniform bound and step <1>3.
+:::
+
+<1>5. For every fixed $0<\delta<1$,
+$$
+\int_0^{1-\delta}|f_{n_k}(x)-f(x)|\,dx\longrightarrow0.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+0\le f_{n_k}(x)\le\frac C{\sqrt\delta}
+$$
+for $0\le x\le1-\delta$. The same bound holds for $f(x)$ at almost every point by step <1>2. Hence
+$$
+|f_{n_k}(x)-f(x)|\le\frac{2C}{\sqrt\delta}
+$$
+almost everywhere on this finite interval. Step <1>2 gives pointwise convergence almost everywhere, so the dominated convergence theorem gives the asserted $L^1$ convergence on $[0,1-\delta]$.
+:::
+
+<1>6. The subsequence $(f_{n_k})$ converges to $f$ in $L^1([0,1])$.
+
+::: {.proof}
+Let $\varepsilon>0$. If $C=0$, every $f_n=0$ almost everywhere and the conclusion is immediate. Assume $C>0$ and choose $\delta>0$ so small that
+$$
+2C\sqrt\delta<\frac\varepsilon2.
+$$
+By step <1>5, for all sufficiently large $k$,
+$$
+\int_0^{1-\delta}|f_{n_k}-f|<\frac\varepsilon2.
+$$
+Step <1>4 then gives
+$$
+\|f_{n_k}-f\|_1<\varepsilon.
+$$
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 constructs the required $L^1$-convergent subsequence.
+:::
+:::
