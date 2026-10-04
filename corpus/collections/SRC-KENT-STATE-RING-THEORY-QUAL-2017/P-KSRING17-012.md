@@ -19,3 +19,129 @@ audit:
 Let R be a finite commutative ring with more than one element and no zero-divisors.
 Show that R is a field.
 :::
+
+::: {.solution}
+<1>1. For every nonzero $a\in R$, the map
+$$
+L_a:R\to R,
+\qquad
+L_a(x)=ax
+$$
+is injective.
+
+::: {.proof}
+Suppose
+$$
+ax=ay.
+$$
+Then
+$$
+a(x-y)=0.
+$$
+Since $a\ne0$ and $R$ has no zero divisors,
+$$
+x-y=0.
+$$
+Hence
+$$
+x=y,
+$$
+so $L_a$ is injective.
+:::
+
+<1>2. For every nonzero $a\in R$, the map $L_a$ is bijective.
+
+::: {.proof}
+The set $R$ is finite. Any injective self-map of a finite set is surjective. Apply this to $L_a$ from step <1>1.
+:::
+
+<1>3. The ring $R$ has a multiplicative identity.
+
+::: {.proof}
+Because $R$ has more than one element, choose
+$$
+a\in R,
+\qquad
+a\ne0.
+$$
+By step <1>2, $L_a$ is surjective. Hence there exists
+$$
+e\in R
+$$
+such that
+$$
+ae=a.
+$$
+
+Let $x\in R$ be arbitrary. Using commutativity,
+$$
+\begin{aligned}
+a(ex-x)
+&=
+aex-ax\\
+&=
+(ae)x-ax\\
+&=
+ax-ax\\
+&=
+0.
+\end{aligned}
+$$
+Since $a\ne0$ and there are no zero divisors,
+$$
+ex-x=0.
+$$
+Thus
+$$
+ex=x
+$$
+for every $x\in R$. By commutativity also
+$$
+xe=x.
+$$
+Hence $e$ is a multiplicative identity.
+:::
+
+<1>4. Every nonzero element of $R$ is invertible.
+
+::: {.proof}
+Let
+$$
+x\in R,
+\qquad
+x\ne0.
+$$
+By step <1>2, the multiplication map
+$$
+L_x:R\to R
+$$
+is surjective. Therefore there exists
+$$
+y\in R
+$$
+such that
+$$
+xy=e,
+$$
+where $e$ is the identity from step <1>3. Since $R$ is commutative,
+$$
+yx=e
+$$
+as well. Thus $y$ is the multiplicative inverse of $x$.
+:::
+
+<1>5. Therefore
+$$
+\boxed{R\text{ is a field}.}
+$$
+
+::: {.proof}
+By step <1>3, $R$ is a nonzero commutative ring with identity. By step <1>4, every nonzero element has a multiplicative inverse. This is exactly the definition of a field.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::
