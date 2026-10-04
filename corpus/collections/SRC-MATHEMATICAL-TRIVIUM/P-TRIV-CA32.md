@@ -50,3 +50,603 @@ Figure 5 of the source (contour for problem 32) shows, with the cut line along t
 ::: {.remark}
 The source uses $I$ in the fourth part without defining it; it presumably denotes the contour integral of the third part.
 :::
+
+::: {.solution}
+Write
+$$
+s=\sigma+i\tau
+$$
+for the zeta parameter.
+
+<1>1. The Dirichlet series
+$$
+\sum_{n=1}^{\infty}n^{-s}
+$$
+converges absolutely when
+$$
+\sigma>1.
+$$
+
+::: {.proof}
+Since
+$$
+|n^{-s}|
+=
+n^{-\sigma},
+$$
+absolute convergence is exactly convergence of the $p$-series
+$$
+\sum_{n=1}^{\infty}n^{-\sigma},
+$$
+which occurs for $\sigma>1$.
+:::
+
+<1>2. The same series diverges when
+$$
+\sigma\leq1.
+$$
+
+::: {.proof}
+If $\sigma\leq0$, then
+$$
+|n^{-s}|=n^{-\sigma}
+$$
+does not tend to $0$.
+
+Now assume
+$$
+0<\sigma\leq1.
+$$
+Choose $\delta>0$ so small that
+$$
+|\tau|\log(1+\delta)<\frac\pi3.
+$$
+For $N<n\leq(1+\delta)N$, the arguments of the complex numbers $n^{-s}$
+differ from that of $N^{-s}$ by less than $\pi/3$. Projecting the block sum
+onto the direction of $N^{-s}$ therefore gives
+$$
+\left|
+\sum_{N<n\leq(1+\delta)N}
+n^{-s}
+\right|
+\geq
+\frac12
+\sum_{N<n\leq(1+\delta)N}
+n^{-\sigma}.
+$$
+The right side is bounded below by a positive constant times
+$$
+N^{1-\sigma}.
+$$
+For $\sigma<1$ it grows, and for $\sigma=1$ it stays bounded away from
+$0$. Hence these tails do not tend to $0$, violating the Cauchy criterion.
+:::
+
+<1>3. Therefore the defining Dirichlet series converges exactly in the
+half-plane
+$$
+\boxed{\operatorname{Re}s>1}.
+$$
+
+::: {.proof}
+Combine steps <1>1 and <1>2.
+:::
+
+<1>4. For $t>0$,
+$$
+\frac1{e^t-1}
+=
+\sum_{m=1}^{\infty}e^{-mt}.
+$$
+
+::: {.proof}
+Since $e^{-t}\in(0,1)$,
+$$
+\sum_{m=1}^{\infty}e^{-mt}
+=
+\frac{e^{-t}}{1-e^{-t}}
+=
+\frac1{e^t-1}.
+$$
+:::
+
+<1>5. If $\operatorname{Re}s>1$, then
+$$
+\int_0^\infty
+\frac{t^{s-1}}{e^t-1}
+\,dt
+=
+\Gamma(s)\zeta(s).
+$$
+
+::: {.proof}
+By step <1>4,
+$$
+\frac{t^{s-1}}{e^t-1}
+=
+\sum_{m=1}^{\infty}
+t^{s-1}e^{-mt}.
+$$
+For $\sigma>1$ this series is absolutely integrable, so sum and integral may
+be interchanged:
+$$
+\begin{aligned}
+\int_0^\infty
+\frac{t^{s-1}}{e^t-1}
+\,dt
+&=
+\sum_{m=1}^{\infty}
+\int_0^\infty
+t^{s-1}e^{-mt}
+\,dt.
+\end{aligned}
+$$
+With $u=mt$,
+$$
+\int_0^\infty
+t^{s-1}e^{-mt}
+\,dt
+=
+m^{-s}\Gamma(s).
+$$
+Summing gives the result.
+:::
+
+<1>6. Hence, for $\operatorname{Re}s>1$,
+$$
+\boxed{
+\zeta(s)
+=
+\frac1{\Gamma(s)}
+\int_0^\infty
+\frac{t^{s-1}}{e^t-1}
+\,dt.
+}
+$$
+
+::: {.proof}
+Divide step <1>5 by $\Gamma(s)$.
+:::
+
+<1>7. On the slit plane
+$$
+\CC\setminus[0,\infty),
+$$
+use the branch
+$$
+w^{s-1}
+=
+\exp((s-1)\Log w),
+\qquad
+0<\arg w<2\pi,
+$$
+and define the Hankel contour integral
+$$
+I(s)
+=
+\int_H
+\frac{w^{s-1}}{e^w-1}
+\,dw,
+$$
+where $H$ is the contour described in the problem.
+
+::: {.proof}
+This fixes the branch used on the two sides of the positive-real-axis cut.
+The upper side has argument $0$, while the lower side has argument $2\pi$.
+:::
+
+<1>8. For $\operatorname{Re}s>1$,
+$$
+I(s)
+=
+(e^{2\pi i s}-1)
+\int_0^\infty
+\frac{t^{s-1}}{e^t-1}
+\,dt.
+$$
+
+::: {.proof}
+On the upper side of the cut, the contour runs from $+\infty$ to the small
+circle and
+$$
+w^{s-1}=t^{s-1},
+$$
+so its contribution is
+$$
+-\int_\varepsilon^R
+\frac{t^{s-1}}{e^t-1}
+\,dt.
+$$
+
+On the lower side, the contour runs from the small circle back toward
+$+\infty$, and
+$$
+w^{s-1}
+=
+e^{2\pi i(s-1)}t^{s-1}
+=
+e^{2\pi i s}t^{s-1}.
+$$
+Thus its contribution is
+$$
+e^{2\pi i s}
+\int_\varepsilon^R
+\frac{t^{s-1}}{e^t-1}
+\,dt.
+$$
+
+Near $w=0$,
+$$
+e^w-1\sim w,
+$$
+so the integrand has size $O(|w|^{\sigma-2})$. The small-circle contribution
+is therefore $O(\varepsilon^{\sigma-1})$, which tends to $0$ because
+$\sigma>1$. Letting $R\to\infty$ and $\varepsilon\to0^+$ gives the
+formula.
+:::
+
+<1>9. Hence for $\operatorname{Re}s>1$,
+$$
+\boxed{
+I(s)
+=
+(e^{2\pi i s}-1)
+\Gamma(s)\zeta(s).
+}
+$$
+
+::: {.proof}
+Combine steps <1>5 and <1>8.
+:::
+
+<1>10. The contour formula in step <1>9 provides the analytic continuation
+mechanism for $\zeta$.
+
+::: {.proof}
+Away from the zeros of
+$$
+(e^{2\pi i s}-1)\Gamma(s),
+$$
+define
+$$
+\widetilde\zeta(s)
+=
+\frac{I(s)}
+{(e^{2\pi i s}-1)\Gamma(s)}.
+$$
+For $\operatorname{Re}s>1$, step <1>9 shows that
+$$
+\widetilde\zeta(s)=\zeta(s).
+$$
+Thus this quotient continues the original Dirichlet-series function wherever
+the quotient is holomorphic, with removable singularities filled by analytic
+continuation.
+:::
+
+<1>11. Suppose $\operatorname{Re}s<0$. The poles of
+$$
+\frac{w^{s-1}}{e^w-1}
+$$
+away from the branch point at $0$ are
+$$
+w=2\pi i n,
+\qquad
+n\in\ZZ\setminus\{0\},
+$$
+and the residue at such a pole is
+$$
+(2\pi i n)^{s-1}.
+$$
+
+::: {.proof}
+The zeros of $e^w-1$ occur at $w=2\pi i n$. For $n\neq0$ these zeros are
+simple because
+$$
+\frac{d}{dw}(e^w-1)
+=
+e^w
+=1
+$$
+there. Hence the residue is the numerator evaluated at the pole.
+:::
+
+<1>12. Expanding the small circle in the Hankel contour to infinity gives
+$$
+I(s)
+=
+-2\pi i
+\sum_{n\in\ZZ\setminus\{0\}}
+(2\pi i n)^{s-1}.
+$$
+
+::: {.proof}
+For $\sigma<0$, the large-circle contribution tends to zero: the factor
+$w^{s-1}$ has size $O(R^{\sigma-1})$, so after multiplication by the arc
+length the left-half-plane contribution is $O(R^\sigma)$, while the
+right-half-plane part has additional exponential decay from $e^w-1$.
+
+As the inner circle expands, it crosses all poles $2\pi i n$, $n\neq0$.
+With the orientation inherited from the Hankel contour, the residue theorem
+contributes the negative of $2\pi i$ times the sum of the crossed residues.
+The residue series is absolutely convergent because
+$$
+\sum_{n\neq0}|n|^{\sigma-1}
+$$
+converges when $\sigma<0$.
+:::
+
+<1>13. For $\operatorname{Re}s<0$,
+$$
+\sum_{n\in\ZZ\setminus\{0\}}
+(2\pi i n)^{s-1}
+=
+i(2\pi)^{s-1}
+\left(
+e^{3\pi i s/2}
+-
+e^{\pi i s/2}
+\right)
+\zeta(1-s).
+$$
+
+::: {.proof}
+Split the sum into $n>0$ and $n<0$. On the branch
+$0<\arg w<2\pi$,
+$$
+(2\pi i n)^{s-1}
+=
+(2\pi n)^{s-1}
+e^{i\pi(s-1)/2}
+$$
+for $n>0$, while
+$$
+(-2\pi i n)^{s-1}
+=
+(2\pi n)^{s-1}
+e^{3\pi i(s-1)/2}.
+$$
+Therefore
+$$
+\begin{aligned}
+\sum_{n\neq0}(2\pi i n)^{s-1}
+&=
+(2\pi)^{s-1}
+\left[
+e^{i\pi(s-1)/2}
++
+e^{3\pi i(s-1)/2}
+\right]
+\sum_{n=1}^{\infty}n^{s-1}.
+\end{aligned}
+$$
+Since
+$$
+\sum_{n=1}^{\infty}n^{s-1}
+=
+\zeta(1-s)
+$$
+and
+$$
+e^{i\pi(s-1)/2}
++
+e^{3\pi i(s-1)/2}
+=
+i
+\left(
+e^{3\pi i s/2}
+-
+e^{\pi i s/2}
+\right),
+$$
+the result follows.
+:::
+
+<1>14. Hence for $\operatorname{Re}s<0$,
+$$
+I(s)
+=
+(2\pi)^s
+\left(
+e^{3\pi i s/2}
+-
+e^{\pi i s/2}
+\right)
+\zeta(1-s).
+$$
+
+::: {.proof}
+Substitute step <1>13 into step <1>12 and use
+$$
+-2\pi i\cdot i(2\pi)^{s-1}
+=(2\pi)^s.
+$$
+:::
+
+<1>15. Comparing steps <1>9 and <1>14 gives
+$$
+\boxed{
+\zeta(s)
+=
+\zeta(1-s)
+\frac{
+e^{3\pi i s/2}
+-
+e^{\pi i s/2}
+}{
+e^{2\pi i s}-1
+}
+\frac{(2\pi)^s}{\Gamma(s)}.
+}
+$$
+
+::: {.proof}
+By step <1>10, the analytic continuation of $\zeta$ is defined from the same
+Hankel integral by
+$$
+\widetilde\zeta(s)
+=
+\frac{I(s)}
+{(e^{2\pi i s}-1)\Gamma(s)}.
+$$
+For $\operatorname{Re}s<0$, substitute the residue evaluation from step
+<1>14:
+$$
+\widetilde\zeta(s)
+=
+\zeta(1-s)
+\frac{
+e^{3\pi i s/2}
+-
+e^{\pi i s/2}
+}{
+e^{2\pi i s}-1
+}
+\frac{(2\pi)^s}{\Gamma(s)}.
+$$
+Since $\widetilde\zeta$ agrees with the original zeta function on
+$\operatorname{Re}s>1$, it is the analytic continuation denoted again by
+$\zeta(s)$.
+:::
+
+<1>16. The exponential quotient simplifies to
+$$
+\frac{
+e^{3\pi i s/2}
+-
+e^{\pi i s/2}
+}{
+e^{2\pi i s}-1
+}
+=
+\frac1{2\cos(\pi s/2)}.
+$$
+
+::: {.proof}
+Factor
+$$
+e^{3\pi i s/2}
+-
+e^{\pi i s/2}
+=
+e^{\pi i s/2}(e^{\pi i s}-1)
+$$
+and
+$$
+e^{2\pi i s}-1
+=
+(e^{\pi i s}-1)(e^{\pi i s}+1).
+$$
+Then use
+$$
+e^{\pi i s}+1
+=
+2e^{\pi i s/2}
+\cos\left(\frac{\pi s}{2}\right).
+$$
+:::
+
+<1>17. The functional equation is equivalently
+$$
+\boxed{
+\zeta(s)
+=
+2^s\pi^{s-1}
+\sin\left(\frac{\pi s}{2}\right)
+\Gamma(1-s)
+\zeta(1-s).
+}
+$$
+
+::: {.proof}
+By step <1>16, step <1>15 becomes
+$$
+\zeta(s)
+=
+\zeta(1-s)
+\frac{(2\pi)^s}{
+2\cos(\pi s/2)\Gamma(s)
+}.
+$$
+Euler's reflection formula gives
+$$
+\frac1{\Gamma(s)}
+=
+\Gamma(1-s)
+\frac{\sin\pi s}{\pi}.
+$$
+Using
+$$
+\sin\pi s
+=
+2\sin\left(\frac{\pi s}{2}\right)
+\cos\left(\frac{\pi s}{2}\right)
+$$
+yields the displayed form.
+:::
+
+<1>18. Substituting $s=-1$ gives
+$$
+\zeta(-1)
+=
+2^{-1}\pi^{-2}
+\sin\left(-\frac\pi2\right)
+\Gamma(2)
+\zeta(2).
+$$
+
+::: {.proof}
+The right-hand side of step <1>17 is regular at $s=-1$, so direct
+substitution is valid.
+:::
+
+<1>19. Therefore
+$$
+\boxed{
+\zeta(-1)
+=
+-\frac1{12}.
+}
+$$
+
+::: {.proof}
+Use
+$$
+\sin\left(-\frac\pi2\right)=-1,
+\qquad
+\Gamma(2)=1,
+\qquad
+\zeta(2)=\frac{\pi^2}{6}.
+$$
+Then
+$$
+\zeta(-1)
+=
+\frac1{2\pi^2}
+(-1)
+\frac{\pi^2}{6}
+=
+-\frac1{12}.
+$$
+:::
+
+<1>20. The value $-1/12$ is an analytic-continuation value, not the ordinary
+sum of $1+2+3+\cdots$.
+
+::: {.proof}
+By step <1>3, the Dirichlet series defining $\zeta(s)$ converges only for
+$\operatorname{Re}s>1$. At $s=-1$ it becomes
+$$
+1+2+3+\cdots,
+$$
+which diverges. The value in step <1>19 belongs to the meromorphic
+continuation.
+:::
+
+<1>21. Q.E.D.
+
+::: {.proof}
+Steps <1>3 and <1>6 answer the convergence and integral-representation parts.
+Steps <1>7--<1>17 construct the contour continuation and functional equation.
+Steps <1>18--<1>20 compute and interpret $\zeta(-1)$.
+:::
+:::
