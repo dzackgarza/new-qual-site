@@ -19,3 +19,277 @@ audit:
 Let R be any ring with identity, and n any positive integer.
 If $M _ { n } ( R )$ denotes the ring of $n \times n$ matrices with entries in R, prove that $M _ { n } ( I )$ is an ideal of $M _ { n } ( R )$ whenever I is an ideal of R, and that every ideal of $M _ { n } ( R )$ has this form.
 :::
+
+::: {.solution}
+Let
+$$
+E_{ij}
+$$
+denote the standard matrix unit with $1_R$ in position $(i,j)$ and $0$ elsewhere.
+
+<1>1. If
+$$
+I\trianglelefteq R,
+$$
+then
+$$
+M_n(I)
+$$
+is a two-sided ideal of
+$$
+M_n(R).
+$$
+
+::: {.proof}
+The set $M_n(I)$ is closed under subtraction entrywise because $I$ is an additive subgroup of $R$.
+
+Let
+$$
+A=(a_{ij})\in M_n(I),
+\qquad
+B=(b_{ij})\in M_n(R).
+$$
+The $(i,j)$ entry of $BA$ is
+$$
+\sum_{k=1}^n b_{ik}a_{kj}.
+$$
+Since every $a_{kj}\in I$ and $I$ is a left ideal,
+$$
+b_{ik}a_{kj}\in I.
+$$
+Hence every entry of $BA$ lies in $I$, so
+$$
+BA\in M_n(I).
+$$
+
+Similarly, the $(i,j)$ entry of $AB$ is
+$$
+\sum_{k=1}^n a_{ik}b_{kj},
+$$
+and every summand lies in $I$ because $I$ is a right ideal. Therefore
+$$
+AB\in M_n(I).
+$$
+Thus $M_n(I)$ is a two-sided ideal.
+:::
+
+<1>2. Let
+$$
+J\trianglelefteq M_n(R).
+$$
+Define
+$$
+I
+\coloneqq
+\{r\in R:rE_{11}\in J\}.
+$$
+Then $I$ is a two-sided ideal of $R$.
+
+::: {.proof}
+Since
+$$
+0\cdot E_{11}=0\in J,
+$$
+one has $0\in I$.
+
+If
+$$
+r,s\in I,
+$$
+then
+$$
+rE_{11},sE_{11}\in J,
+$$
+so
+$$
+(r-s)E_{11}
+=
+rE_{11}-sE_{11}
+\in J.
+$$
+Hence
+$$
+r-s\in I.
+$$
+
+Let
+$$
+t\in R
+$$
+and
+$$
+r\in I.
+$$
+Then
+$$
+(tE_{11})(rE_{11})
+=
+(tr)E_{11}
+\in J
+$$
+and
+$$
+(rE_{11})(tE_{11})
+=
+(rt)E_{11}
+\in J,
+$$
+because $J$ is a two-sided ideal of $M_n(R)$. Therefore
+$$
+tr,rt\in I.
+$$
+Thus $I\trianglelefteq R$.
+:::
+
+<1>3. If
+$$
+A=(a_{ij})\in J,
+$$
+then every entry
+$$
+a_{ij}
+$$
+lies in $I$.
+
+::: {.proof}
+For any indices
+$$
+i,j,
+$$
+the ideal property gives
+$$
+E_{1i}AE_{j1}
+\in J.
+$$
+A direct matrix-unit computation gives
+$$
+E_{1i}AE_{j1}
+=
+a_{ij}E_{11}.
+$$
+Hence
+$$
+a_{ij}E_{11}\in J,
+$$
+so by definition
+$$
+a_{ij}\in I.
+$$
+:::
+
+<1>4. One has
+$$
+J\subseteq M_n(I).
+$$
+
+::: {.proof}
+Let
+$$
+A=(a_{ij})\in J.
+$$
+By step <1>3, every entry $a_{ij}$ lies in $I$. Therefore
+$$
+A\in M_n(I).
+$$
+:::
+
+<1>5. If
+$$
+r\in I,
+$$
+then for every pair of indices $k,\ell$,
+$$
+rE_{k\ell}\in J.
+$$
+
+::: {.proof}
+By definition of $I$,
+$$
+rE_{11}\in J.
+$$
+Since $J$ is a two-sided ideal,
+$$
+E_{k1}(rE_{11})E_{1\ell}
+\in J.
+$$
+The product equals
+$$
+rE_{k\ell}.
+$$
+Hence
+$$
+rE_{k\ell}\in J.
+$$
+:::
+
+<1>6. One has
+$$
+M_n(I)\subseteq J.
+$$
+
+::: {.proof}
+Let
+$$
+A=(a_{k\ell})\in M_n(I).
+$$
+Then
+$$
+A
+=
+\sum_{k,\ell=1}^n
+a_{k\ell}E_{k\ell}.
+$$
+Each
+$$
+a_{k\ell}\in I,
+$$
+so step <1>5 gives
+$$
+a_{k\ell}E_{k\ell}\in J.
+$$
+Because $J$ is closed under finite sums,
+$$
+A\in J.
+$$
+Therefore
+$$
+M_n(I)\subseteq J.
+$$
+:::
+
+<1>7. Hence every ideal of $M_n(R)$ is of the form $M_n(I)$ for a unique ideal $I$ of $R$:
+$$
+\boxed{
+J=M_n(I).
+}
+$$
+
+::: {.proof}
+Steps <1>4 and <1>6 prove the two inclusions.
+
+Uniqueness follows because if
+$$
+M_n(I)=M_n(I'),
+$$
+then
+$$
+r\in I
+\iff
+rE_{11}\in M_n(I)
+\iff
+rE_{11}\in M_n(I')
+\iff
+r\in I'.
+$$
+Thus
+$$
+I=I'.
+$$
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves the first assertion, and steps <1>2--<1>7 prove the classification of all ideals of $M_n(R)$.
+:::
+:::
