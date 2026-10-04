@@ -22,3 +22,95 @@ audit:
 ::: {.problem}
 Find $f'(x)$, if $f(x) = \log\frac{a}{x}$, $\cos\arcsin x$, $\frac{x^2+1}{x^3+1}$.
 :::
+
+::: {.solution}
+<1>1. For
+$$
+f(x)=\log\frac{a}{x},
+$$
+one has
+$$
+\boxed{f'(x)=-\frac1x}
+$$
+wherever the logarithm is defined.
+
+::: {.proof}
+On any interval on which $a/x>0$,
+$$
+\log\frac{a}{x}
+=
+\log|a|-\log|x|.
+$$
+Therefore
+$$
+f'(x)=-\frac1x.
+$$
+:::
+
+<1>2. For
+$$
+f(x)=\cos(\arcsin x),
+$$
+one has
+$$
+\boxed{f'(x)=-\frac{x}{\sqrt{1-x^2}}}
+$$
+for $|x|<1$.
+
+::: {.proof}
+By the chain rule,
+$$
+f'(x)
+=
+-\sin(\arcsin x)
+\cdot
+\frac1{\sqrt{1-x^2}}.
+$$
+Since
+$$
+\sin(\arcsin x)=x,
+$$
+the formula follows.
+:::
+
+<1>3. For
+$$
+f(x)=\frac{x^2+1}{x^3+1},
+$$
+one has
+$$
+\boxed{
+f'(x)
+=
+\frac{-x^4-3x^2+2x}{(x^3+1)^2}
+}
+$$
+for $x\neq-1$.
+
+::: {.proof}
+The quotient rule gives
+$$
+\begin{aligned}
+f'(x)
+&=
+\frac{
+2x(x^3+1)
+-
+(x^2+1)3x^2
+}{(x^3+1)^2}\\
+&=
+\frac{
+2x^4+2x-3x^4-3x^2
+}{(x^3+1)^2}\\
+&=
+\frac{-x^4-3x^2+2x}{(x^3+1)^2}.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 give the three requested derivatives.
+:::
+:::
