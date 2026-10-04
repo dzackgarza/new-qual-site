@@ -16,5 +16,227 @@ audit:
 ---
 
 ::: {.problem}
-Compute $\int _ { - \infty } ^ { \infty } { \frac { e ^ { i \alpha x } } { x ^ { 2 } + m ^ { 2 } } }$ dx with $\alpha , m \in \mathbb { R }$ (hint: consider the two cases of positive or negative α separately);
+Compute $\int _ { - \infty } ^ { \infty } { \frac { e ^ { i \alpha x } } { x ^ { 2 } + m ^ { 2 } } }$ dx with $\alpha , m \in \mathbb { R }$ and $m\ne0$ (hint: consider the two cases of positive or negative α separately);
+:::
+
+::: {.remark}
+The source allows $m=0$, but then the ordinary improper integral diverges at
+$x=0$. The finite Fourier-transform formula therefore requires $m\ne0$.
+:::
+
+::: {.solution}
+Set
+$$
+a=|m|>0
+$$
+and
+$$
+F(z)=\frac{e^{i\alpha z}}{z^2+a^2}.
+$$
+
+<1>1. Suppose $\alpha>0$. On the upper semicircle
+$$
+z=Re^{it},
+\qquad
+0\leq t\leq\pi,
+$$
+one has
+$$
+|e^{i\alpha z}|
+=
+e^{-\alpha\operatorname{Im}z}
+\leq1.
+$$
+
+::: {.proof}
+On the upper half-plane,
+$$
+\operatorname{Im}z\geq0.
+$$
+Thus
+$$
+|e^{i\alpha z}|
+=
+e^{-\alpha\operatorname{Im}z}
+\leq1
+$$
+because $\alpha>0$.
+:::
+
+<1>2. For $R>a$, the upper-semicircle contribution tends to zero as
+$R\to\infty$.
+
+::: {.proof}
+On $|z|=R$,
+$$
+|z^2+a^2|
+\geq
+R^2-a^2.
+$$
+By step <1>1,
+$$
+|F(z)|
+\leq
+\frac1{R^2-a^2}.
+$$
+The arc length is $\pi R$, so
+$$
+\left|
+\int_{\Gamma_R}F(z)\,dz
+\right|
+\leq
+\frac{\pi R}{R^2-a^2}
+\longrightarrow0.
+$$
+:::
+
+<1>3. If $\alpha>0$, then
+$$
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}{x^2+a^2}\,dx
+=
+\frac\pi a e^{-\alpha a}.
+$$
+
+::: {.proof}
+The upper half-plane contains the simple pole $z=ia$. Its residue is
+$$
+\operatorname{Res}_{z=ia}F(z)
+=
+\frac{e^{i\alpha(ia)}}{2ia}
+=
+\frac{e^{-\alpha a}}{2ia}.
+$$
+The residue theorem gives
+$$
+\int_{-R}^{R}F(x)\,dx
++
+\int_{\Gamma_R}F(z)\,dz
+=
+2\pi i
+\frac{e^{-\alpha a}}{2ia}
+=
+\frac\pi a e^{-\alpha a}.
+$$
+Let $R\to\infty$ and use step <1>2.
+:::
+
+<1>4. Suppose $\alpha<0$. On the lower semicircle,
+$$
+|e^{i\alpha z}|
+\leq1.
+$$
+
+::: {.proof}
+If $\operatorname{Im}z\leq0$ and $\alpha<0$, then
+$$
+\alpha\operatorname{Im}z\geq0.
+$$
+Therefore
+$$
+|e^{i\alpha z}|
+=
+e^{-\alpha\operatorname{Im}z}
+\leq1.
+$$
+:::
+
+<1>5. The lower-semicircle contribution tends to zero as $R\to\infty$.
+
+::: {.proof}
+The denominator estimate from step <1>2 remains valid:
+$$
+|z^2+a^2|
+\geq
+R^2-a^2.
+$$
+Together with step <1>4 and the arc length $\pi R$, the $ML$ estimate gives
+$$
+\left|
+\int_{\Gamma_R^-}F(z)\,dz
+\right|
+\leq
+\frac{\pi R}{R^2-a^2}
+\longrightarrow0.
+$$
+:::
+
+<1>6. If $\alpha<0$, then
+$$
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}{x^2+a^2}\,dx
+=
+\frac\pi a e^{\alpha a}.
+$$
+
+::: {.proof}
+Close the contour in the lower half-plane. Its orientation is clockwise, so
+the residue theorem contributes a factor $-2\pi i$. The enclosed pole is
+$z=-ia$, with residue
+$$
+\operatorname{Res}_{z=-ia}F(z)
+=
+\frac{e^{i\alpha(-ia)}}{-2ia}
+=
+\frac{e^{\alpha a}}{-2ia}.
+$$
+Hence
+$$
+\int_{-R}^{R}F(x)\,dx
++
+\int_{\Gamma_R^-}F(z)\,dz
+=
+-2\pi i
+\frac{e^{\alpha a}}{-2ia}
+=
+\frac\pi a e^{\alpha a}.
+$$
+Let $R\to\infty$ and use step <1>5.
+:::
+
+<1>7. If $\alpha=0$, then
+$$
+\int_{-\infty}^{\infty}
+\frac{dx}{x^2+a^2}
+=
+\frac\pi a.
+$$
+
+::: {.proof}
+This is step <1>3 with $\alpha=0$; equivalently, the same upper-semicircle
+residue calculation applies because the exponential factor is identically
+$1$.
+:::
+
+<1>8. For every real $\alpha$ and every $m\ne0$,
+$$
+\boxed{
+\int_{-\infty}^{\infty}
+\frac{e^{i\alpha x}}{x^2+m^2}\,dx
+=
+\frac{\pi}{|m|}
+e^{-|alpha||m|}.
+}
+$$
+
+::: {.proof}
+Recall $a=|m|$. For $\alpha>0$, step <1>3 gives
+$$
+\frac\pi a e^{-\alpha a}.
+$$
+For $\alpha<0$, step <1>6 gives
+$$
+\frac\pi a e^{\alpha a}
+=
+\frac\pi a e^{-|alpha|a}.
+$$
+Step <1>7 handles $\alpha=0$. These are exactly the displayed unified
+formula.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required Fourier-transform integral in every convergent case.
+:::
 :::
