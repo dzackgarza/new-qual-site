@@ -29,3 +29,244 @@ Problem 34 of the source reads: Solve the integral $\int_0^\infty \frac{1}{1 + x
 
 Figure 3 of the source shows the contour $C = L_+ \cup C_R \cup L_- \cup \gamma_\epsilon$: $L_+$ runs just above the positive real axis from the small circle $\gamma_\epsilon$ around $0$ out to the large circle $C_R$ of radius $R$ centered at $0$, $C_R$ is traversed counterclockwise, $L_-$ returns just below the positive real axis, and $\gamma_\epsilon$ is traversed clockwise around $0$.
 :::
+
+::: {.solution}
+Use the branch
+$$
+\Log z=\log|z|+i\arg z,
+\qquad
+0<\arg z<2\pi,
+$$
+on the slit plane $\CC\setminus[0,\infty)$.
+
+<1>1. Let
+$$
+F(z)=\frac{(\Log z)^3}{1+z^2}.
+$$
+Inside the standard keyhole contour about the positive real axis, the poles of
+$F$ are $z=i$ and $z=-i$.
+
+::: {.proof}
+The only poles of $1/(1+z^2)$ are at $\pm i$, and both lie away from the
+branch cut.
+:::
+
+<1>2. The residues are
+$$
+\operatorname{Res}_{z=i}F(z)
+=
+-\frac{\pi^3}{16}
+$$
+and
+$$
+\operatorname{Res}_{z=-i}F(z)
+=
+\frac{27\pi^3}{16}.
+$$
+
+::: {.proof}
+On the chosen branch,
+$$
+\Log i=i\frac\pi2,
+\qquad
+\Log(-i)=i\frac{3\pi}{2}.
+$$
+Since the poles are simple,
+$$
+\operatorname{Res}_{z=i}F
+=
+\frac{(i\pi/2)^3}{2i}
+=
+-\frac{\pi^3}{16},
+$$
+and
+$$
+\operatorname{Res}_{z=-i}F
+=
+\frac{(3i\pi/2)^3}{-2i}
+=
+\frac{27\pi^3}{16}.
+$$
+:::
+
+<1>3. Hence the keyhole contour integral tends to
+$$
+\frac{13\pi^4 i}{4}.
+$$
+
+::: {.proof}
+The sum of the residues is
+$$
+\frac{26\pi^3}{16}
+=
+\frac{13\pi^3}{8}.
+$$
+The residue theorem therefore gives
+$$
+2\pi i\cdot\frac{13\pi^3}{8}
+=
+\frac{13\pi^4 i}{4}.
+$$
+The outer circular arc tends to zero because
+$$
+\frac{R(\log R+2\pi)^3}{R^2-1}
+\longrightarrow0,
+$$
+and the inner circular arc tends to zero because
+$$
+\varepsilon(|\log\varepsilon|+2\pi)^3
+\longrightarrow0.
+$$
+:::
+
+<1>4. Set
+$$
+I_j
+=
+\int_0^\infty
+\frac{(\log x)^j}{1+x^2}\,dx
+$$
+for $j=0,1,2$. Then the two radial sides of the keyhole contour contribute,
+in the limit,
+$$
+-6\pi i,I_2
++
+12\pi^2 I_1
++
+8\pi^3 i,I_0.
+$$
+
+::: {.proof}
+On the upper side of the positive real axis,
+$$
+\Log x=\log x,
+$$
+and the contour runs from $\varepsilon$ to $R$. Thus this side contributes
+$$
+\int_\varepsilon^R
+\frac{(\log x)^3}{1+x^2}\,dx.
+$$
+
+On the lower side, the chosen branch has
+$$
+\Log x=\log x+2\pi i,
+$$
+and the contour runs from $R$ back to $\varepsilon$. Hence that side
+contributes
+$$
+-\int_\varepsilon^R
+\frac{(\log x+2\pi i)^3}{1+x^2}\,dx.
+$$
+Subtracting the cubic expansions gives
+$$
+(\log x)^3
+-
+(\log x+2\pi i)^3
+=
+-6\pi i(\log x)^2
++
+12\pi^2\log x
++
+8\pi^3 i.
+$$
+Letting $\varepsilon\to0^+$ and $R\to\infty$ yields the displayed
+combination of $I_0,I_1,I_2$.
+:::
+
+<1>5. One has
+$$
+I_0=\frac\pi2
+$$
+and
+$$
+I_1=0.
+$$
+
+::: {.proof}
+The first identity is
+$$
+\int_0^\infty\frac{dx}{1+x^2}
+=
+\frac\pi2.
+$$
+For the second, Problem 23 with $\alpha=2$ gives
+$$
+I_1
+=
+-\frac{\pi^2}{4}
+\csc\left(\frac\pi2\right)
+\cot\left(\frac\pi2\right)
+=0.
+$$
+:::
+
+<1>6. Therefore
+$$
+-6\pi i,I_2
++
+4\pi^4 i
+=
+\frac{13\pi^4 i}{4}.
+$$
+
+::: {.proof}
+By step <1>4, the limiting contour integral is
+$$
+-6\pi i,I_2
++
+12\pi^2 I_1
++
+8\pi^3 i,I_0.
+$$
+Substitute the values from step <1>5:
+$$
+12\pi^2I_1=0,
+$$
+and
+$$
+8\pi^3 i I_0
+=
+8\pi^3 i\cdot\frac\pi2
+=
+4\pi^4i.
+$$
+Step <1>3 gives the value of the same contour integral.
+:::
+
+<1>7. Solving the equation in step <1>6 gives
+$$
+\boxed{
+\int_0^\infty
+\frac{\log^2 x}{1+x^2}\,dx
+=
+\frac{\pi^3}{8}.
+}
+$$
+
+::: {.proof}
+From step <1>6,
+$$
+-6\pi i,I_2
+=
+\left(
+\frac{13}{4}-4
+\right)\pi^4 i
+=
+-\frac{3\pi^4 i}{4}.
+$$
+Divide by $-6\pi i$:
+$$
+I_2
+=
+\frac{3\pi^4/4}{6\pi}
+=
+\frac{\pi^3}{8}.
+$$
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required value.
+:::
+:::
