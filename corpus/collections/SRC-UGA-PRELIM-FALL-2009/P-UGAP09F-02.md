@@ -33,3 +33,95 @@ over the region
 R=\{(x,y,z)\in\mathbb R^3:x\ge0,\ y+z\ge2,\ x^2+y^2+z^2\le4\}.
 \]
 :::
+
+::: {.solution}
+<1>1. For part (a),
+$$
+\boxed{
+f'(x)=6x\sec^3\!\bigl(\tan(x^2)\bigr)
+\tan\!\bigl(\tan(x^2)\bigr)\sec^2(x^2).
+}
+$$
+
+::: {.proof}
+Set $g(x)=\tan(x^2)$. Then
+$$
+g'(x)=2x\sec^2(x^2).
+$$
+Since $f(x)=\sec^3(g(x))$, the chain rule gives
+$$
+\begin{aligned}
+f'(x)
+&=3\sec^2(g(x))\bigl(\sec(g(x))\tan(g(x))\bigr)g'(x)\\
+&=6x\sec^3\!\bigl(\tan(x^2)\bigr)
+\tan\!\bigl(\tan(x^2)\bigr)\sec^2(x^2).
+\end{aligned}
+$$
+:::
+
+<1>2. For part (b), the Taylor expansion about $a=2$ is
+$$
+\boxed{
+\ln x
+=\ln 2+
+\sum_{n=1}^{\infty}
+\frac{(-1)^{n+1}}{n}
+\left(\frac{x-2}{2}\right)^n,
+\qquad |x-2|<2,
+}
+$$
+and its radius of convergence is $\boxed{2}$.
+
+::: {.proof}
+Write
+$$
+\ln x
+=\ln 2+\ln\!\left(1+\frac{x-2}{2}\right).
+$$
+For $|u|<1$,
+$$
+\ln(1+u)=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}u^n.
+$$
+Substituting $u=(x-2)/2$ gives the displayed expansion. For the $n$th term of the resulting power series, the ratio of successive absolute values tends to
+$$
+\frac{|x-2|}{2}.
+$$
+Hence the series converges for $|x-2|<2$ and diverges for $|x-2|>2$, so its radius of convergence is $2$.
+:::
+
+<1>3. For part (c), one suitable iterated integral is
+$$
+\boxed{
+\int_0^2
+\int_{2-y}^{\sqrt{4-y^2}}
+\int_0^{\sqrt{4-y^2-z^2}}
+x\sin(y+z)\,dx\,dz\,dy.
+}
+$$
+
+::: {.proof}
+Project $R$ onto the $yz$-plane. The conditions there are
+$$
+y^2+z^2\le4,
+\qquad
+y+z\ge2.
+$$
+The line $z=2-y$ meets the circle $y^2+z^2=4$ at $(0,2)$ and $(2,0)$. Therefore the projected region is described by
+$$
+0\le y\le2,
+\qquad
+2-y\le z\le\sqrt{4-y^2}.
+$$
+For such $(y,z)$, the remaining conditions $x\ge0$ and $x^2+y^2+z^2\le4$ give
+$$
+0\le x\le\sqrt{4-y^2-z^2}.
+$$
+Using these three bounds with the integrand $x\sin(y+z)$ gives the displayed iterated integral.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 answers part (c).
+:::
+:::
