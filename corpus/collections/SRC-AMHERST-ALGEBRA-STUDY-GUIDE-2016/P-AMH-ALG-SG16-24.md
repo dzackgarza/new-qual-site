@@ -22,14 +22,47 @@ Prove that either $J=\{0\}$ or $J=F$.
 :::
 
 ::: {.solution}
-Proof.
-If J ={0}, then we are done.
-If J⁄={0}, then there is a∈J with a⁄= 0. Since F is a ﬁeld, a has a multipllicative inverse a−1. Then 1 = a−1a∈J since J is an ideal.
-But an ideal that contains 1 is the whole ring, so J =F . QED
+<1>1. If $J=\{0\}$, then the required conclusion holds.
 
-Maximal Ideals.
-Know the deﬁnition of a maximal ideal M⊆R. Criteria for R/M to be a Field.
-Let R be a commutative ring with unit.
-Know that ideal M⊆ R is maximal if and only if R/M is a ﬁeld.
-Here is a problem that asks you to prove part of this result.
+::: {.proof}
+This is one of the two alternatives in the statement.
+:::
+
+<1>2. Suppose $J\neq\{0\}$.  Then $1\in J$.
+
+::: {.proof}
+Since $J$ is nonzero, choose $a\in J$ with $a\neq0$.  Because $F$ is a
+field, $a$ has a multiplicative inverse $a^{-1}\in F$.  Since $J$ is an ideal,
+multiplication by the ring element $a^{-1}$ preserves membership in $J$, so
+$$
+1=a^{-1}a\in J.
+$$
+:::
+
+<1>3. If $1\in J$, then $J=F$.
+
+::: {.proof}
+Let $x\in F$.  Since $1\in J$ and $J$ is an ideal,
+$$
+x=x\cdot1\in J.
+$$
+Thus $F\subseteq J$.  The reverse inclusion is part of the hypothesis
+$J\subseteq F$, so $J=F$.
+:::
+
+<1>4. Therefore
+$$
+\boxed{J=\{0\}\quad\text{or}\quad J=F}.
+$$
+
+::: {.proof}
+If $J=\{0\}$, step <1>1 applies.  Otherwise step <1>2 gives $1\in J$, and
+step <1>3 then gives $J=F$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required dichotomy.
+:::
 :::
