@@ -18,3 +18,123 @@ audit:
 ::: {.problem}
 Find if the quadratic form $f ( \vec { x } ) = 9 x _ { 1 } ^ { 2 } + 6 x _ { 1 } x _ { 2 } + 6 x _ { 2 } ^ { 2 } + 8 x _ { 2 } x _ { 3 } + 4 x _ { 3 } ^ { 2 }$ is positive definite or not.
 :::
+
+::: {.solution}
+<1>1. The symmetric matrix of the quadratic form is
+$$
+Q=
+\begin{pmatrix}
+9&3&0\\
+3&6&4\\
+0&4&4
+\end{pmatrix}.
+$$
+
+::: {.proof}
+For a symmetric quadratic form
+$$
+x^TQx,
+$$
+the coefficient of $x_ix_j$ for $i\neq j$ is $2q_{ij}$. Hence
+$$
+q_{12}=3,
+\qquad
+q_{23}=4,
+\qquad
+q_{13}=0,
+$$
+with the diagonal entries read directly from the square terms.
+:::
+
+<1>2. The first leading principal minor is
+$$
+\Delta_1=9>0.
+$$
+
+::: {.proof}
+This is the upper-left $1\times1$ determinant.
+:::
+
+<1>3. The second leading principal minor is
+$$
+\Delta_2
+=
+\det
+\begin{pmatrix}
+9&3\\
+3&6
+\end{pmatrix}
+=
+45>0.
+$$
+
+::: {.proof}
+Compute
+$$
+9\cdot6-3\cdot3
+=
+54-9
+=45.
+$$
+:::
+
+<1>4. The third leading principal minor is
+$$
+\Delta_3
+=
+\det Q
+=
+36>0.
+$$
+
+::: {.proof}
+Expand along the first row:
+$$
+\begin{aligned}
+\det Q
+&=
+9
+\det
+\begin{pmatrix}
+6&4\\
+4&4
+\end{pmatrix}
+-
+3
+\det
+\begin{pmatrix}
+3&4\\
+0&4
+\end{pmatrix}\\
+&=
+9(24-16)-3(12)\\
+&=
+72-36\\
+&=36.
+\end{aligned}
+$$
+:::
+
+<1>5. By Sylvester's criterion, the quadratic form is positive definite.
+
+::: {.proof}
+For a real symmetric matrix, Sylvester's criterion states that the associated
+quadratic form is positive definite exactly when all leading principal minors
+are positive. Steps <1>2--<1>4 verify this condition.
+:::
+
+<1>6. Therefore
+$$
+\boxed{f\text{ is positive definite}.}
+$$
+
+::: {.proof}
+This is step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::
