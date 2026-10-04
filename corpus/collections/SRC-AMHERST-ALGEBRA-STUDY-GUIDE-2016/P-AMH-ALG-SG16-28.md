@@ -21,57 +21,87 @@ audit:
 :::
 
 ::: {.solution}
-Proof. We’ll prove f reducible iﬀ f has a root in k.
-(=⇒): Since f is reducible, there exist g,h∈k[x] with f =gh and with degg, degh< 3. Since deg g
-and degh are nonnegative integers summing to deg f = 3, one of g and h must have degree 1 and
-the other must have degree 2. Without loss, deg g = 1. That is, g(x) =ax +b for some a,b∈k with
-a⁄= 0. Then −b/a∈k, and
-f
-(
-− b
-a
-)
-=g
-(
-− b
-a
-)
-h
-(
-− b
-a
-)
-=
-[
-a
-(
-− b
-a
-)
-+b
-]
-h
-(
-− b
-a
-)
-= (−b +b)h
-(
-− b
-a
-)
-= 0·
-(
-− b
-a
-)
-= 0,
-and hence−b/a is a root of of f in k.
-(⇐=): Let c∈k be a root of f, and let g(x) = x−c∈k[x]. By the division algorithm for f and g,
-there exist polynomials q,r ∈k[x] with f =qg +r and with either r = 0 or degr< degg = 1.
-If r⁄= 0 but degr< 1, then degr = 0, which means that r =b is a nonzero constant. Hence,
-0 =f(c) =q(c)g(c) +r(c) =q(c)· (c−c) +b = 0 +b =b⁄= 0,
-a contradiction. Thus, we must in fact have r = 0, and hence f =qg. Since deg f = 3 and degg = 1,
-we must have deg q = 3− 1 = 2, and hence we have factored f as a product of two lower-degree
-polynomials g and q, proving that f is reducible. QED
+<1>1. If the cubic polynomial $f$ is reducible, then $f$ has a root in $k$.
+
+::: {.proof}
+Since $f$ is reducible, there exist nonconstant polynomials $g,h\in k[x]$ such
+that
+$$
+f=gh
+$$
+and
+$$
+\deg g<3,
+\qquad
+\deg h<3.
+$$
+Because
+$$
+\deg g+\deg h=\deg f=3
+$$
+and both degrees are positive integers, one factor has degree $1$ and the other
+has degree $2$.  Without loss of generality, write
+$$
+g(x)=ax+b
+$$
+with $a\neq0$.  Since $k$ is a field,
+$$
+c=-\frac ba\in k.
+$$
+Then $g(c)=0$, and hence
+$$
+f(c)=g(c)h(c)=0.
+$$
+Thus $c$ is a root of $f$ in $k$.
+:::
+
+<1>2. If $f$ has a root in $k$, then $f$ is reducible.
+
+::: {.proof}
+Let $c\in k$ satisfy $f(c)=0$.  Divide $f(x)$ by $x-c$.  The division
+algorithm gives polynomials $q,r\in k[x]$ such that
+$$
+f(x)=q(x)(x-c)+r(x)
+$$
+with either $r=0$ or $\deg r<1$.  Thus $r$ is a constant.  Evaluating at
+$x=c$ gives
+$$
+0=f(c)=r,
+$$
+so in fact
+$$
+f(x)=q(x)(x-c).
+$$
+Since $\deg f=3$ and $\deg(x-c)=1$,
+$$
+\deg q=2.
+$$
+Thus $f$ factors as a product of two nonconstant polynomials of smaller degree,
+so $f$ is reducible.
+:::
+
+<1>3. A cubic polynomial is reducible if and only if it has a root in $k$.
+
+::: {.proof}
+Step <1>1 proves the forward implication and step <1>2 proves the reverse
+implication.
+:::
+
+<1>4. Therefore a cubic polynomial $f\in k[x]$ is irreducible if and only if
+it has no roots in $k$.
+
+::: {.proof}
+Negating both equivalent conditions in step <1>3 gives
+$$
+f\text{ irreducible}
+\iff
+f\text{ has no root in }k.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required equivalence.
+:::
 :::
