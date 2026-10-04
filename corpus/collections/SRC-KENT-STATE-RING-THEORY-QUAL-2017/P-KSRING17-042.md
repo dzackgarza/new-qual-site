@@ -19,3 +19,194 @@ audit:
 Let R be a non-zero ring with identity.
 Show that every proper ideal of R is contained in a maximal ideal.
 :::
+
+::: {.solution}
+Let
+$$
+I\trianglelefteq R
+$$
+be a proper ideal.
+Define
+$$
+\mathcal P
+\coloneqq
+\{
+J\trianglelefteq R:
+I\subseteq J\subsetneq R
+\},
+$$
+ordered by inclusion.
+
+<1>1. The partially ordered set $\mathcal P$ is nonempty.
+
+::: {.proof}
+The ideal
+$$
+I
+$$
+itself lies in $\mathcal P$, because it is proper by hypothesis.
+:::
+
+<1>2. Let
+$$
+\mathcal C
+\subseteq
+\mathcal P
+$$
+be a chain.
+Then
+$$
+U
+\coloneqq
+\bigcup_{J\in\mathcal C}J
+$$
+is an ideal of $R$.
+
+::: {.proof}
+The union is nonempty because every member of $\mathcal C$ contains $I$.
+
+Let
+$$
+x,y\in U.
+$$
+Then
+$$
+x\in J_1,
+\qquad
+y\in J_2
+$$
+for some
+$$
+J_1,J_2\in\mathcal C.
+$$
+Because $\mathcal C$ is totally ordered by inclusion, one of these ideals contains the other. Thus both $x$ and $y$ lie in a common member of the chain, and therefore
+$$
+x-y\in U.
+$$
+
+If
+$$
+r\in R
+$$
+and
+$$
+x\in U,
+$$
+choose
+$$
+J\in\mathcal C
+$$
+with
+$$
+x\in J.
+$$
+Since $J$ is a two-sided ideal,
+$$
+rx,xr\in J\subseteq U.
+$$
+Hence $U$ is a two-sided ideal.
+:::
+
+<1>3. The ideal $U$ from step <1>2 is proper.
+
+::: {.proof}
+Suppose
+$$
+U=R.
+$$
+Then
+$$
+1_R\in U.
+$$
+By the definition of the union, there exists
+$$
+J\in\mathcal C
+$$
+such that
+$$
+1_R\in J.
+$$
+But then
+$$
+J=R,
+$$
+contradicting
+$$
+J\in\mathcal P.
+$$
+Therefore
+$$
+U\subsetneq R.
+$$
+:::
+
+<1>4. The ideal $U$ is an upper bound for the chain $\mathcal C$ in $\mathcal P$.
+
+::: {.proof}
+Every member
+$$
+J\in\mathcal C
+$$
+is contained in the union $U$. Also
+$$
+I\subseteq U
+$$
+because $I$ is contained in every member of $\mathcal C$. By step <1>3, $U$ is proper. Hence
+$$
+U\in\mathcal P
+$$
+and is an upper bound for $\mathcal C$.
+:::
+
+<1>5. The poset $\mathcal P$ has a maximal element.
+
+::: {.proof}
+By step <1>1, $\mathcal P$ is nonempty. By step <1>4, every chain in $\mathcal P$ has an upper bound in $\mathcal P$. Zorn's lemma therefore gives a maximal element
+$$
+M\in\mathcal P.
+$$
+:::
+
+<1>6. The ideal $M$ from step <1>5 is a maximal ideal of $R$ containing $I$.
+
+::: {.proof}
+By definition of $\mathcal P$,
+$$
+I\subseteq M\subsetneq R.
+$$
+Suppose
+$$
+M\subseteq J\subsetneq R
+$$
+for some ideal $J$ of $R$. Then
+$$
+I\subseteq J,
+$$
+so
+$$
+J\in\mathcal P.
+$$
+Maximality of $M$ in $\mathcal P$ forces
+$$
+J=M.
+$$
+Thus there is no proper ideal strictly between $M$ and $R$, so $M$ is maximal.
+:::
+
+<1>7. Therefore every proper ideal is contained in a maximal ideal.
+
+::: {.proof}
+Starting from an arbitrary proper ideal $I$, step <1>6 constructs a maximal ideal $M$ with
+$$
+\boxed{
+I\subseteq M.
+}
+$$
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required conclusion.
+:::
+:::
