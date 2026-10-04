@@ -24,3 +24,346 @@ Let Q be the field of rational numbers and $D = \{ a + b { \sqrt { 2 } } \mid a 
 
 (c) Show that $\sqrt { 3 }$ is not an element of D.
 :::
+
+::: {.solution}
+<1>1. The set $D$ contains $0$ and $1$ and is closed under addition and additive inverses.
+
+::: {.proof}
+One has
+$$
+0=0+0\sqrt2
+\qquad\text{and}\qquad
+1=1+0\sqrt2.
+$$
+If
+$$
+x=a+b\sqrt2,
+\qquad
+y=c+d\sqrt2
+$$
+with
+$$
+a,b,c,d\in\QQ,
+$$
+then
+$$
+x+y
+=
+(a+c)+(b+d)\sqrt2
+\in D
+$$
+and
+$$
+-x
+=
+(-a)+(-b)\sqrt2
+\in D.
+$$
+:::
+
+<1>2. The set $D$ is closed under multiplication.
+
+::: {.proof}
+For
+$$
+x=a+b\sqrt2,
+\qquad
+y=c+d\sqrt2,
+$$
+one has
+$$
+\begin{aligned}
+xy
+&=
+(a+b\sqrt2)(c+d\sqrt2)\\
+&=
+(ac+2bd)
++
+(ad+bc)\sqrt2.
+\end{aligned}
+$$
+Both coefficients are rational, so
+$$
+xy\in D.
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{D\text{ is a subring of }\RR.}
+$$
+
+::: {.proof}
+Steps <1>1--<1>2 verify closure under the ring operations and show that the same $1$ as in $\RR$ belongs to $D$.
+:::
+
+<1>4. If
+$$
+0\ne x=a+b\sqrt2\in D,
+$$
+then
+$$
+a^2-2b^2\ne0.
+$$
+
+::: {.proof}
+Suppose
+$$
+a^2-2b^2=0.
+$$
+If
+$$
+b=0,
+$$
+then
+$$
+a=0,
+$$
+contrary to
+$$
+x\ne0.
+$$
+Thus
+$$
+b\ne0,
+$$
+and
+$$
+\left(\frac ab\right)^2=2.
+$$
+This would make
+$$
+\sqrt2
+=
+\abs{\frac ab}
+\in\QQ,
+$$
+impossible. Hence
+$$
+a^2-2b^2\ne0.
+$$
+:::
+
+<1>5. Every nonzero element of $D$ has an inverse in $D$.
+
+::: {.proof}
+Let
+$$
+x=a+b\sqrt2\ne0.
+$$
+By step <1>4,
+$$
+a^2-2b^2\ne0.
+$$
+Then
+$$
+\begin{aligned}
+x^{-1}
+&=
+\frac{a-b\sqrt2}{(a+b\sqrt2)(a-b\sqrt2)}\\
+&=
+\frac{a-b\sqrt2}{a^2-2b^2}\\
+&=
+\frac{a}{a^2-2b^2}
+-
+\frac{b}{a^2-2b^2}\sqrt2.
+\end{aligned}
+$$
+Both coefficients are rational, so
+$$
+x^{-1}\in D.
+$$
+:::
+
+<1>6. Hence $D$ is a field, and therefore a principal ideal domain.
+
+::: {.proof}
+By steps <1>3 and <1>5, $D$ is a commutative ring with identity in which every nonzero element is invertible. Thus $D$ is a field.
+
+The only ideals of a field are
+$$
+(0)
+\qquad\text{and}\qquad
+(1)=D,
+$$
+both principal. Therefore
+$$
+\boxed{D\text{ is a PID}.}
+$$
+:::
+
+<1>7. Suppose, for contradiction, that
+$$
+\sqrt3\in D.
+$$
+Then there exist
+$$
+a,b\in\QQ
+$$
+such that
+$$
+\sqrt3=a+b\sqrt2.
+$$
+
+::: {.proof}
+This is exactly the definition of membership in $D$.
+:::
+
+<1>8. Under the assumption of step <1>7,
+$$
+ab=0
+$$
+and
+$$
+a^2+2b^2=3.
+$$
+
+::: {.proof}
+Square the equation from step <1>7:
+$$
+3
+=
+a^2+2b^2+2ab\sqrt2.
+$$
+Since
+$$
+\sqrt2\notin\QQ,
+$$
+the representation
+$$
+r+s\sqrt2
+$$
+with $r,s\in\QQ$ is unique. Therefore the coefficient of $\sqrt2$ must vanish:
+$$
+2ab=0.
+$$
+Thus
+$$
+ab=0,
+$$
+and comparison of rational parts gives
+$$
+a^2+2b^2=3.
+$$
+:::
+
+<1>9. The case
+$$
+b=0
+$$
+is impossible.
+
+::: {.proof}
+If
+$$
+b=0,
+$$
+step <1>8 gives
+$$
+a^2=3.
+$$
+Write
+$$
+a=\frac rs
+$$
+in lowest terms with
+$$
+r,s\in\ZZ,
+\qquad
+s\ne0.
+$$
+Then
+$$
+r^2=3s^2.
+$$
+Thus $3\mid r^2$, so $3\mid r$. Write
+$$
+r=3k.
+$$
+Then
+$$
+9k^2=3s^2,
+$$
+so
+$$
+3k^2=s^2.
+$$
+Hence
+$$
+3\mid s,
+$$
+contradicting the assumption that $r/s$ is in lowest terms.
+:::
+
+<1>10. The case
+$$
+a=0
+$$
+is impossible.
+
+::: {.proof}
+If
+$$
+a=0,
+$$
+step <1>8 gives
+$$
+2b^2=3,
+$$
+so
+$$
+b^2=\frac32.
+$$
+Write
+$$
+b=\frac rs
+$$
+in lowest terms. Then
+$$
+2r^2=3s^2.
+$$
+The right side is even, so $s^2$ is even, hence
+$$
+2\mid s.
+$$
+Write
+$$
+s=2k.
+$$
+Then
+$$
+2r^2=12k^2,
+$$
+so
+$$
+r^2=6k^2,
+$$
+and hence
+$$
+2\mid r.
+$$
+This contradicts
+$$
+\gcd(r,s)=1.
+$$
+:::
+
+<1>11. Therefore
+$$
+\boxed{\sqrt3\notin D.}
+$$
+
+::: {.proof}
+Step <1>8 gives
+$$
+ab=0,
+$$
+so either $a=0$ or $b=0$. Steps <1>9--<1>10 rule out both possibilities.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves part (a), step <1>6 proves part (b), and step <1>11 proves part (c).
+:::
+:::
