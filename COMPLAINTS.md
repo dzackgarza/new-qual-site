@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### January 2006 Problem 9 is truncated before the theorem statement
+
+- **Object and need:** P-MH07-JAN06-09 in SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007. The card is supposed to ask for a proof of a specific piece of the covering-space classification theorem.
+- **Observed evidence:** lines 2534--2557 of assets/attachments/extracted/Topology_Prelim_Answers_-_Unknown.md define isomorphism of covering spaces, state the ambient local hypotheses, then begin “Prove the following piece of the classification theorem for covering spaces: Let x in X” before the extraction jumps to a distinct August 2005 block. The remainder of the mathematical statement is absent.
+- **Impact and owner:** TODO.md section 7 cannot soundly complete source-review:P-MH07-JAN06-09 or prove:P-MH07-JAN06-09 because the theorem hypotheses and conclusion are not recoverable from the retained source. The source/card owner must recover the missing statement before a solution can be authored.
+- **Uncertainty:** the standard covering-space classification theorem has several nearby formulations, so reconstructing the intended one from textbook knowledge would be speculation. The retained extraction also says “semilocally path-connected,” which may itself be an OCR corruption of “semilocally simply connected.”
+- **Repair:** issue #2 / TODO.md section 7. Recover the missing January 2006 Problem 9 source statement from an independent source or source image, update P-MH07-JAN06-09 to the verified statement, then resume the ordinary read/source-review/prove/attach/commit chain.
+
 ### Kent State Ring Theory Problem 140 omits that A is proper
 
 - **Object and need:** P-KSRING17-140 in SRC-KENT-STATE-RING-THEORY-QUAL-2017. The source claims every nonzero ideal A contains a product of prime ideals, each containing A.
