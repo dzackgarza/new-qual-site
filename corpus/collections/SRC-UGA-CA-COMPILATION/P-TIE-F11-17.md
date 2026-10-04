@@ -19,3 +19,110 @@ audit:
 ::: {.problem}
 Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } | a _ { n } ( z ) |$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \left| a _ { n } ^ { \prime } ( z ) \right|$ converges uniformly on bounded and closed sub-regions of D.
 :::
+
+::: {.solution}
+Let $K\subset D$ be an arbitrary bounded closed subregion.
+
+<1>1. There exists $\delta>0$ such that
+$$
+K_\delta
+\coloneqq
+\{w\in\CC:\operatorname{dist}(w,K)\le\delta\}
+$$
+is a compact subset of $D$.
+
+::: {.proof}
+Since $K$ is compact and $D$ is open,
+$$
+d\coloneqq\operatorname{dist}(K,\CC\setminus D)>0.
+$$
+Choose $0<\delta<d$. Then every point whose distance from $K$ is at most $\delta$ still lies in $D$. The set $K_\delta$ is closed and bounded, hence compact.
+:::
+
+<1>2. For every $z\in K$, every $n\ge0$, and the circle
+$$
+C_z\coloneqq\{z+\delta e^{it}:0\le t\le2\pi\},
+$$
+one has
+$$
+\abs{a_n'(z)}
+\le
+\frac1{2\pi\delta}
+\int_0^{2\pi}
+\abs{a_n(z+\delta e^{it})}\,dt.
+$$
+
+::: {.proof}
+By step <1>1, the closed disk $\abs{w-z}\le\delta$ lies in $D$. Cauchy's integral formula for derivatives gives
+$$
+a_n'(z)
+=
+\frac1{2\pi i}
+\int_{C_z}
+\frac{a_n(w)}{(w-z)^2}\,dw.
+$$
+Parametrize $C_z$ by $w=z+\delta e^{it}$. Then $\abs{dw}=\delta\,dt$ and $\abs{w-z}=\delta$, so taking absolute values gives the asserted estimate.
+:::
+
+<1>3. For integers $M\ge N$ and every $z\in K$,
+$$
+\sum_{n=N}^M\abs{a_n'(z)}
+\le
+\frac1\delta
+\sup_{w\in K_\delta}
+\sum_{n=N}^M\abs{a_n(w)}.
+$$
+
+::: {.proof}
+Summing the estimate from step <1>2 and using the finiteness of the sum,
+$$
+\begin{aligned}
+\sum_{n=N}^M\abs{a_n'(z)}
+&\le
+\frac1{2\pi\delta}
+\int_0^{2\pi}
+\sum_{n=N}^M
+\abs{a_n(z+\delta e^{it})}\,dt\\
+&\le
+\frac1\delta
+\sup_{w\in K_\delta}
+\sum_{n=N}^M\abs{a_n(w)}.
+\end{aligned}
+$$
+The points $z+\delta e^{it}$ lie in $K_\delta$, which justifies the last inequality.
+:::
+
+<1>4. The series
+$$
+\boxed{
+\sum_{n=0}^\infty\abs{a_n'(z)}
+}
+$$
+converges uniformly on $K$.
+
+::: {.proof}
+By hypothesis, the series
+$$
+\sum_{n=0}^\infty\abs{a_n(w)}
+$$
+converges uniformly on the compact set $K_\delta$. Hence its tails satisfy
+$$
+\sup_{w\in K_\delta}
+\sum_{n=N}^M\abs{a_n(w)}
+\longrightarrow0
+$$
+as $N,M\to\infty$ with $M\ge N$. Step <1>3 therefore implies
+$$
+\sup_{z\in K}
+\sum_{n=N}^M\abs{a_n'(z)}
+\longrightarrow0.
+$$
+Thus the partial sums of $\sum\abs{a_n'(z)}$ are uniformly Cauchy on $K$, and hence the series converges uniformly there.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+The bounded closed subregion $K\subset D$ was arbitrary, so step <1>4 proves the assertion on every such subregion.
+:::
+:::
