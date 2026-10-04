@@ -62,47 +62,78 @@ You should definitely think of the concepts like "subgroup under $+$" and "close
 So by all means think "closed," but write "for all $x,y\in I$, we have $x-y\in I$."
 :::
 
-:::::: {.solution}
-A subset $I\subseteq R$ is a two-sided ideal precisely when the following three explicit conditions hold:
+::: {.solution}
+<1>1. A subset $I\subseteq R$ is a two-sided ideal if and only if all three
+conditions hold:
 
-1. $I\ne\varnothing$.
+(a) $I\neq\varnothing$.
 
-2. For every $x,y\in I$, one has $x-y\in I$.
+(b) For all $x,y\in I$, one has $x-y\in I$.
 
-3. For every $x\in I$ and $r\in R$, one has both $rx\in I$ and $xr\in I$.
+(c) For all $x\in I$ and $r\in R$, one has $rx\in I$ and $xr\in I$.
 
-<1>1. Conditions 1 and 2 give exactly the required additive structure.
 ::: {.proof}
-Choose $a\in I$, possible by condition 1. Then condition 2 gives
-\[
+These conditions are explicit and contain no undefined auxiliary term such as
+“subgroup” or “closed under subtraction.”  Steps <1>2--<1>4 verify that they
+are exactly the usual two-sided ideal axioms.
+:::
+
+<1>2. Conditions (a) and (b) imply that $0\in I$ and that $I$ is closed under
+additive inverses.
+
+::: {.proof}
+Choose $a\in I$, which is possible by (a).  Then (b) gives
+$$
 0=a-a\in I.
-\]
-For $x\in I$,
-\[
+$$
+If $x\in I$, then $0,x\in I$, so another application of (b) gives
+$$
 -x=0-x\in I.
-\]
-For $x,y\in I$, since $-y\in I$,
-\[
-x+y=x-(-y)\in I.
-\]
-Thus $I$ contains $0$ and is closed under addition and additive inverses.
-Conversely, any subset with those additive properties is nonempty and is closed under subtraction, because
-\[
-x-y=x+(-y).
-\]
+$$
 :::
 
-<1>2. Condition 3 is exactly two-sided absorption by ring elements.
+<1>3. Conditions (a) and (b) imply that $I$ is closed under addition.
+
 ::: {.proof}
-The definition of a two-sided ideal requires that multiplying an element of $I$ by an arbitrary element of $R$ on either side remains in $I$.
-Condition 3 states precisely
-\[
-rI\subseteq I
-\qquad\text{and}\qquad
-Ir\subseteq I
-\]
-for every $r\in R$.
+Let $x,y\in I$.  By step <1>2, $-y\in I$.  Applying (b) to $x$ and $-y$
+gives
+$$
+x+y=x-(-y)\in I.
+$$
+Thus $I$ is an additive subgroup of the underlying additive group of $R$,
+with the subgroup property written out explicitly.
 :::
 
-Hence the three displayed conditions are a complete definition of a two-sided ideal and use no further technical term that needs expansion.
+<1>4. Condition (c) is exactly the required two-sided absorption condition.
+
+::: {.proof}
+For every $r\in R$ and $x\in I$, condition (c) asserts both
+$$
+rx\in I
+\qquad\text{and}\qquad
+xr\in I.
+$$
+Thus multiplication by an arbitrary ring element on either side preserves
+$I$.
+:::
+
+<1>5. Conversely, every two-sided ideal satisfies conditions (a)--(c).
+
+::: {.proof}
+A two-sided ideal is an additive subgroup of $R$, so it contains $0$ and is
+therefore nonempty.  If $x,y\in I$, then $-y\in I$ and hence
+$$
+x-y=x+(-y)\in I,
+$$
+which proves (b).  The two-sided ideal absorption axiom is precisely (c).
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>2--<1>4 show that conditions (a)--(c) imply the usual two-sided ideal
+axioms, and step <1>5 proves the converse.  Therefore the three explicit
+conditions in step <1>1 give the requested definition without invoking any
+further technical term.
+:::
 :::
