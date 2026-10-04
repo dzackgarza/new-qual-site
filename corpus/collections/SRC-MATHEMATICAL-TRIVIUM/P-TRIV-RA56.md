@@ -18,3 +18,156 @@ audit:
 ::: {.problem}
 Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } | 2 n + 1 | e ^ { - a | 2 n + 1 | }$ for $a > 0$
 :::
+
+::: {.solution}
+<1>1. The absolute values
+$$
+|2n+1|,
+\qquad
+n\in\mathbb Z,
+$$
+run through every positive odd integer exactly twice.
+
+::: {.proof}
+For $n=0,1,2,\ldots$, one obtains
+$$
+1,3,5,\ldots.
+$$
+For $n=-1,-2,-3,\ldots$, one obtains
+$$
+|-1|,|-3|,|-5|,\ldots
+=
+1,3,5,\ldots.
+$$
+:::
+
+<1>2. Therefore
+$$
+J(a)
+=
+2
+\sum_{m=0}^{\infty}
+(2m+1)e^{-a(2m+1)}.
+$$
+
+::: {.proof}
+Group the equal positive and negative odd contributions from step <1>1.
+:::
+
+<1>3. Put
+$$
+q=e^{-2a}.
+$$
+Then
+$$
+0<q<1
+$$
+and
+$$
+J(a)
+=
+2e^{-a}
+\sum_{m=0}^{\infty}(2m+1)q^m.
+$$
+
+::: {.proof}
+Factor
+$$
+e^{-a(2m+1)}
+=
+e^{-a}(e^{-2a})^m
+=
+e^{-a}q^m
+$$
+from step <1>2.
+:::
+
+<1>4. The geometric-series identities are
+$$
+\sum_{m=0}^{\infty}q^m
+=
+\frac1{1-q}
+$$
+and
+$$
+\sum_{m=0}^{\infty}m q^m
+=
+\frac{q}{(1-q)^2}.
+$$
+
+::: {.proof}
+The first is the geometric series. Differentiate it with respect to $q$ and
+multiply by $q$ to obtain the second.
+:::
+
+<1>5. Hence
+$$
+\sum_{m=0}^{\infty}(2m+1)q^m
+=
+\frac{1+q}{(1-q)^2}.
+$$
+
+::: {.proof}
+By step <1>4,
+$$
+\begin{aligned}
+\sum_{m=0}^{\infty}(2m+1)q^m
+&=
+2\sum_{m=0}^{\infty}m q^m
++
+\sum_{m=0}^{\infty}q^m\\
+&=
+\frac{2q}{(1-q)^2}
++
+\frac1{1-q}\\
+&=
+\frac{1+q}{(1-q)^2}.
+\end{aligned}
+$$
+:::
+
+<1>6. Therefore
+$$
+J(a)
+=
+2e^{-a}
+\frac{1+e^{-2a}}
+{(1-e^{-2a})^2}.
+$$
+
+::: {.proof}
+Substitute step <1>5 into step <1>3 and restore $q=e^{-2a}$.
+:::
+
+<1>7. Using
+$$
+1+e^{-2a}
+=
+2e^{-a}\cosh a
+$$
+and
+$$
+1-e^{-2a}
+=
+2e^{-a}\sinh a,
+$$
+one obtains
+$$
+\boxed{
+J(a)
+=
+\frac{\cosh a}{\sinh^2a}.
+}
+$$
+
+::: {.proof}
+Substitute the two hyperbolic identities into step <1>6. The common factor
+$4e^{-2a}$ cancels between numerator and denominator.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required closed form.
+:::
+:::
