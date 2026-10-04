@@ -19,3 +19,117 @@ audit:
 ::: {.problem}
 Let $f ( z ) = { \frac { 1 } { z } } + { \frac { 1 } { z ^ { 2 } - 1 } }$ . Find all the Laurent series of f and describe the largest annuli in which these series are valid.
 :::
+
+::: {.solution}
+The singularities of
+$$
+f(z)
+=
+\frac1z+\frac1{z^2-1}
+$$
+are
+$$
+z=0,\qquad z=1,\qquad z=-1.
+$$
+Thus the singularity moduli are $0$ and $1$.
+
+<1>1. On the annulus
+$$
+0<\abs{z}<1,
+$$
+one has
+$$
+\boxed{
+f(z)
+=
+\frac1z
+-
+\sum_{n=0}^{\infty}z^{2n}.
+}
+$$
+
+::: {.proof}
+If $\abs{z}<1$, then $\abs{z^2}<1$, so the geometric series gives
+$$
+\frac1{1-z^2}
+=
+\sum_{n=0}^{\infty}z^{2n}.
+$$
+Hence
+$$
+\frac1{z^2-1}
+=
+-\frac1{1-z^2}
+=
+-\sum_{n=0}^{\infty}z^{2n}.
+$$
+Adding $1/z$ gives the displayed Laurent series. The term $1/z$ excludes $z=0$, so the domain is
+$$
+0<\abs{z}<1.
+$$
+:::
+
+<1>2. The annulus
+$$
+0<\abs{z}<1
+$$
+is maximal for the Laurent series in step <1>1.
+
+::: {.proof}
+The function has a singularity at $z=0$, so the inner radius cannot be reduced below $0$. The points $z=\pm1$ are singularities with modulus $1$, so the outer radius cannot exceed $1$. Hence the annulus is maximal.
+:::
+
+<1>3. On the annulus
+$$
+\abs{z}>1,
+$$
+one has
+$$
+\boxed{
+f(z)
+=
+\frac1z
++
+\sum_{n=0}^{\infty}z^{-2n-2}.
+}
+$$
+
+::: {.proof}
+If $\abs{z}>1$, then $\abs{z^{-2}}<1$. Therefore
+$$
+\begin{aligned}
+\frac1{z^2-1}
+&=
+\frac{z^{-2}}{1-z^{-2}}\\
+&=
+z^{-2}
+\sum_{n=0}^{\infty}z^{-2n}\\
+&=
+\sum_{n=0}^{\infty}z^{-2n-2}.
+\end{aligned}
+$$
+Adding $1/z$ gives the displayed Laurent expansion.
+:::
+
+<1>4. The annulus
+$$
+\abs{z}>1
+$$
+is maximal for the Laurent series in step <1>3.
+
+::: {.proof}
+The singularities $z=\pm1$ lie on the circle $\abs{z}=1$, so the inner radius cannot be decreased below $1$. There are no finite singularities with modulus greater than $1$, so the outer radius is infinite. Hence this annulus is maximal.
+:::
+
+<1>5. These are all Laurent expansions of $f$ about $0$ on maximal annuli.
+
+::: {.proof}
+A Laurent expansion about $0$ is determined on each connected annular component obtained by removing the singularity circles centered at $0$. The only singularity radii are $0$ and $1$, so the only maximal annuli are exactly those in steps <1>2 and <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 give both Laurent series and their largest annuli of validity.
+:::
+:::
