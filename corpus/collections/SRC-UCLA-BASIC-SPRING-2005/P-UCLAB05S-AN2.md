@@ -23,3 +23,55 @@ Let $X$ be the set of all infinite sequences $(\sigma_n)_{n=1}^{\infty}$ of $0$'
 \]
 Give a direct proof that every infinite subset of $X$ has an accumulation point.
 :::
+
+::: {.solution}
+Let $A\subseteq X$ be infinite.
+
+<1>1. There are nested infinite subsets
+$$
+A=A_0\supseteq A_1\supseteq A_2\supseteq\cdots
+$$
+and bits $\tau_1,\tau_2,\ldots\in\{0,1\}$ such that every sequence in $A_n$ begins with
+$$
+\tau_1,\ldots,\tau_n.
+$$
+
+::: {.proof}
+Among the elements of the infinite set $A_0=A$, infinitely many have first coordinate $0$ or infinitely many have first coordinate $1$. Choose such an infinite subfamily $A_1$ and call its common first coordinate $\tau_1$.
+
+Inductively, suppose $A_n$ is infinite and all of its members have the same first $n$ coordinates. Partition $A_n$ according to the $(n+1)$st coordinate. One of the two parts is infinite. Choose it as $A_{n+1}$ and denote its common $(n+1)$st coordinate by $\tau_{n+1}$.
+:::
+
+<1>2. Let
+$$
+\tau\coloneqq(\tau_n)_{n=1}^{\infty}\in X.
+$$
+Every $\sigma\in A_n$ satisfies
+$$
+\operatorname{dist}(\sigma,\tau)\le2^{-n}.
+$$
+
+::: {.proof}
+The first $n$ coordinates of $\sigma$ and $\tau$ agree by step <1>1. Therefore
+$$
+\begin{aligned}
+\operatorname{dist}(\sigma,\tau)
+&=\sum_{k=n+1}^{\infty}\frac{|\sigma_k-\tau_k|}{2^k}\\
+&\le\sum_{k=n+1}^{\infty}\frac1{2^k}\\
+&=2^{-n}.
+\end{aligned}
+$$
+:::
+
+<1>3. The point $\tau$ is an accumulation point of $A$.
+
+::: {.proof}
+Let $\varepsilon>0$. Choose $n$ so large that $2^{-n}<\varepsilon$. By step <1>2, every element of the infinite set $A_n$ lies in the open ball $B(\tau,\varepsilon)$. Hence that ball contains infinitely many points of $A$, and in particular contains a point of $A$ distinct from $\tau$. Since this holds for every $\varepsilon>0$, the point $\tau$ is an accumulation point of $A$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves that every infinite subset $A\subseteq X$ has an accumulation point.
+:::
+:::
