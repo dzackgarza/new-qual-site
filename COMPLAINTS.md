@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Fall 2016 Question 3(c) does not specify a logarithm determination
+
+- **Object and need:** P-TIE-F16-03 in SRC-UGA-CA-COMPILATION. Part (c) asks for an upper bound on the contour integral of log(z)/z^2 around the full circle |z|=R.
+- **Observed evidence:** lines 695--707 of assets/attachments/extracted/Questions_from_Tie.md contain no branch or parametrized determination of log. No single-valued holomorphic logarithm exists on a neighborhood of a full circle winding once around 0.
+- **Impact and owner:** the printed contour integral is ambiguous as a line integral of a single-valued function on the contour. A branch/determination must be specified before applying the ML estimate.
+- **Uncertainty:** none about the branch obstruction; the intended classroom convention is not stated in the retained source.
+- **Repair:** Author solutions in TODO.md section 7, issue #2. P-TIE-F16-03 records the ambiguity and proves the requested estimate for the standard continuous determination log R + it along z=Re^{it}, 0<=t<=2pi.
+
 ### Spring 2015 Question 24(b) is undefined at alpha equals zero
 
 - **Object and need:** P-TIE-S15-24 in SRC-UGA-CA-COMPILATION. The source assumes $|\alpha|<1$ but writes the right-hand side of part (b) with a factor $|\alpha|^{-2}$.
