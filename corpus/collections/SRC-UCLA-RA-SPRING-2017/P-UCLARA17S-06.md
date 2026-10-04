@@ -17,13 +17,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $D$ be the closed unit disk in $\mathbb C$, let $\{p_n\}$ be distinct points in the open disk, and let $r_n>0$ be such that the disks
+Let
+\[
+\mathbb D=\{z\in\mathbb C:|z|<1\}
+\]
+be the open unit disk and let $\overline{\mathbb D}$ be the closed unit disk. Let $\{p_n\}$ be distinct points in $\mathbb D$, and let $r_n>0$ be such that the disks
 \[
 D_n=\{z:|z-p_n|\le r_n\}
 \]
-satisfy (i) $D_n\subset D$; (ii) $D_n\cap D_m=\varnothing$ if $n\ne m$; and (iii) $\sum_n r_n<\infty$. Prove that
+satisfy (i) $D_n\subset\mathbb D$; (ii) $D_n\cap D_m=\varnothing$ if $n\ne m$; and (iii) $\sum_n r_n<\infty$. Prove that
 \[
-X=D\setminus\bigcup_n D_n
+X=\overline{\mathbb D}\setminus\bigcup_n D_n
 \]
 has positive area.
 
