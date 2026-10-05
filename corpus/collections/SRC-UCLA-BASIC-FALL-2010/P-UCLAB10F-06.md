@@ -23,3 +23,91 @@ Prove that there exists a polynomial $f\in F[t]$ such that
 T^{-1}=f(T).
 \]
 :::
+
+::: {.solution}
+Let
+\[
+\chi_T(t)=t^n+c_{n-1}t^{n-1}+\cdots+c_1t+c_0
+\]
+be the characteristic polynomial of $T$, where $n=\dim V$.
+
+<1>1. The constant coefficient $c_0$ is nonzero.
+
+::: {.proof}
+Up to the sign convention for the characteristic polynomial,
+\[
+c_0=(-1)^n\det T.
+\]
+Since $T$ is invertible,
+\[
+\det T\ne0.
+\]
+Hence $c_0\ne0$.
+:::
+
+<1>2. By the Cayley--Hamilton theorem,
+\[
+T^n+c_{n-1}T^{n-1}+\cdots+c_1T+c_0I=0.
+\]
+
+::: {.proof}
+The Cayley--Hamilton theorem states that every endomorphism of a finite-dimensional vector space satisfies its characteristic polynomial.
+:::
+
+<1>3. Multiplying the identity in step <1>2 by $T^{-1}$ gives
+\[
+T^{n-1}+c_{n-1}T^{n-2}+\cdots+c_2T+c_1I+c_0T^{-1}=0.
+\]
+
+::: {.proof}
+Since $T$ is invertible, compose every term in step <1>2 with $T^{-1}$. Powers of the same operator commute, so
+\[
+T^jT^{-1}=T^{j-1}
+\]
+for $j\ge1$, while
+\[
+IT^{-1}=T^{-1}.
+\]
+:::
+
+<1>4. Define
+\[
+f(t)
+=
+-\frac1{c_0}
+\left(
+t^{n-1}
++c_{n-1}t^{n-2}
++\cdots
++c_2t
++c_1
+\right).
+\]
+Then
+\[
+\boxed{T^{-1}=f(T)}.
+\]
+
+::: {.proof}
+Solve the identity in step <1>3 for $T^{-1}$:
+\[
+T^{-1}
+=
+-\frac1{c_0}
+\left(
+T^{n-1}
++c_{n-1}T^{n-2}
++\cdots
++c_2T
++c_1I
+\right).
+\]
+This is exactly $f(T)$ for the polynomial defined above. Since $c_0\ne0$ by step <1>1, all coefficients lie in the field $F$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the required polynomial expression for the inverse.
+:::
+:::
