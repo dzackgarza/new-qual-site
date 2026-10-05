@@ -3172,3 +3172,34 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none; `V=\{0\}` makes the multiplier condition vacuous.
 - **Repair:** `P-UCLAB16F-05` records the exception and proves the corrected
   nonzero-span statement.
+
+### Nori Galois Theory Problem 6.1 reverses the multiplication order for left-module generators
+
+- **Object and need:** `P-NORI-GT-6-01` in `SRC-NORI-GALOIS-THEORY-PROBLEMS`.
+  The source composes ring homomorphisms `A -> B -> C`, treats `B` as a left
+  `A`-module and `C` as a left `B`-module, but asks for the `A`-module
+  generators `\gamma_i g(\beta_j)`.
+- **Observed evidence:** direct inspection of page 6 of the retained
+  `Nori_Galois_Theory_Problems.pdf` confirms that the source itself prints
+  `\gamma_i.g(\beta_j)`, so this is not an extraction reversal. For arbitrary
+  rings the left scalar actions instead produce `g(\beta_j)\gamma_i`. A
+  concrete counterexample is obtained from the diagonal subring
+  `A\subset M_2(k)=B=C`, with left `A`-basis `I,P` of `B` and left `B`-basis
+  `\gamma=\begin{psmallmatrix}1&1\\0&1\end{psmallmatrix}` of `C`: the left
+  `A`-span of `\gamma` and `\gamma P` contains only matrices whose first-row
+  entries are equal.
+- **Impact and owner:** part (1) is false as printed for arbitrary rings, and
+  therefore part (2) is false with the same displayed family. Reversing the
+  product to `g(\beta_j)\gamma_i` gives the standard correct left-module
+  statement. The printed order is also valid under an additional hypothesis
+  that every `g(\beta_j)` commutes with every `\gamma_i`, for example when
+  `C` is commutative.
+- **Expected result:** preserve the printed problem statement, refute the
+  arbitrary-ring assertion, prove the corrected left-module statement with
+  `g(\beta_j)\gamma_i`, and state the commutativity condition under which the
+  printed order becomes valid.
+- **Uncertainty:** none; the retained PDF fixes the printed order and the
+  matrix counterexample directly violates the claimed spanning conclusion.
+- **Repair:** `P-NORI-GT-6-01` records the source erratum, gives the explicit
+  counterexample, proves the corrected spanning and basis statements, and
+  notes the sufficient commuting hypothesis. The external source is unchanged.
