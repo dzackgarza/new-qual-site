@@ -27,3 +27,177 @@ A \coloneqq \left\{ f \in L^3(\mathbb{R}) : \int_{\mathbb{R}} |f(x)|^2\,dx < \in
 \]
 is a Borel subset of $L^3(\mathbb{R})$.
 :::
+
+::: {.solution}
+For each $n\in\mathbb N$, define
+\[
+\phi_n:L^3(\mathbb R)\to[0,\infty),
+\qquad
+\phi_n(f)=\int_{-n}^{n}|f(x)|^2\,dx.
+\]
+
+<1>1. For every measurable $h$ on $[-n,n]$,
+\[
+\|h\|_{L^2([-n,n])}
+\le
+(2n)^{1/6}\|h\|_{L^3([-n,n])}.
+\]
+
+::: {.proof}
+Apply Hölder's inequality with exponents
+\[
+\frac32
+\qquad\text{and}\qquad
+3
+\]
+to $|h|^2$ and $1$:
+\[
+\int_{-n}^{n}|h|^2
+\le
+\left(\int_{-n}^{n}|h|^3\right)^{2/3}
+\left(\int_{-n}^{n}1^3\right)^{1/3}.
+\]
+Thus
+\[
+\|h\|_2^2
+\le
+\|h\|_3^2(2n)^{1/3},
+\]
+and taking square roots gives the claim.
+:::
+
+<1>2. For every $f,g\in L^3(\mathbb R)$,
+\[
+|\phi_n(f)-\phi_n(g)|
+\le
+(2n)^{1/3}
+\|f-g\|_3
+\bigl(\|f\|_3+\|g\|_3\bigr).
+\]
+
+::: {.proof}
+On $[-n,n]$,
+\[
+\bigl||f|^2-|g|^2\bigr|
+\le
+|f-g|(|f|+|g|).
+\]
+Hence Cauchy--Schwarz gives
+\[
+\begin{aligned}
+|\phi_n(f)-\phi_n(g)|
+&\le
+\|f-g\|_{L^2([-n,n])}
+\bigl(
+\|f\|_{L^2([-n,n])}
++\|g\|_{L^2([-n,n])}
+\bigr).
+\end{aligned}
+\]
+Apply step <1>1 to each $L^2$ norm and use
+\[
+\|h\|_{L^3([-n,n])}\le\|h\|_{L^3(\mathbb R)}.
+\]
+The resulting factor is
+\[
+(2n)^{1/6}(2n)^{1/6}
+=(2n)^{1/3},
+\]
+which yields the displayed estimate.
+:::
+
+<1>3. Each functional
+\[
+\phi_n:L^3(\mathbb R)\to\mathbb R
+\]
+is continuous.
+
+::: {.proof}
+Fix $f\in L^3(\mathbb R)$ and let $g\to f$ in $L^3$. Then
+\[
+\|g\|_3
+\le
+\|f\|_3+\|g-f\|_3,
+\]
+so the factor
+\[
+\|f\|_3+\|g\|_3
+\]
+remains bounded near $f$. Step <1>2 then implies
+\[
+|\phi_n(g)-\phi_n(f)|\to0.
+\]
+:::
+
+<1>4. For every $f\in L^3(\mathbb R)$,
+\[
+\int_{\mathbb R}|f(x)|^2\,dx
+=
+\lim_{n\to\infty}\phi_n(f)
+\]
+in $[0,\infty]$.
+
+::: {.proof}
+The nonnegative functions
+\[
+|f|^2\chi_{[-n,n]}
+\]
+increase pointwise to $|f|^2$. The monotone convergence theorem therefore
+gives the equality.
+:::
+
+<1>5. The set $A$ has the representation
+\[
+\boxed{
+A
+=
+\bigcup_{m=1}^{\infty}
+\bigcap_{n=1}^{\infty}
+\{f\in L^3(\mathbb R):\phi_n(f)\le m\}}.
+\]
+
+::: {.proof}
+If
+\[
+\int_{\mathbb R}|f|^2<\infty,
+\]
+choose an integer $m$ larger than this integral. Then by step <1>4,
+\[
+\phi_n(f)\le m
+\]
+for every $n$, so $f$ belongs to the right-hand side.
+
+Conversely, if there is $m$ such that
+\[
+\phi_n(f)\le m
+\]
+for every $n$, then step <1>4 gives
+\[
+\int_{\mathbb R}|f|^2
+=
+\lim_{n\to\infty}\phi_n(f)
+\le m<\infty.
+\]
+Thus $f\in A$.
+:::
+
+<1>6. The set $A$ is Borel in $L^3(\mathbb R)$.
+
+::: {.proof}
+By step <1>3, each set
+\[
+\{f:\phi_n(f)\le m\}
+=
+\phi_n^{-1}((-\infty,m])
+\]
+is closed, hence Borel. Step <1>5 expresses $A$ using only countable
+intersections and a countable union of these Borel sets. Therefore $A$ is
+Borel.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::
