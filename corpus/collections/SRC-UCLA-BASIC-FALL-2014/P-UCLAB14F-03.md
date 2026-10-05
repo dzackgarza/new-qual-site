@@ -19,3 +19,176 @@ audit:
 ::: {.problem}
 Problem 3. Let $f_n:[0,1]\to\mathbb R$ be monotonically increasing continuous functions. Assume that $f_n$ converge pointwise to a continuous function $f:[0,1]\to\mathbb R$. Prove that $f_n$ converge uniformly to $f$.
 :::
+
+::: {.solution}
+<1>1. The pointwise limit $f$ is nondecreasing.
+
+::: {.proof}
+If
+\[
+x\le y,
+\]
+then for every $n$,
+\[
+f_n(x)\le f_n(y).
+\]
+Taking $n\to\infty$ and using pointwise convergence gives
+\[
+f(x)\le f(y).
+\]
+:::
+
+<1>2. Fix $\varepsilon>0$.
+There is a partition
+\[
+0=x_0<x_1<\cdots<x_m=1
+\]
+such that
+\[
+f(x_j)-f(x_{j-1})
+<
+\frac{\varepsilon}{3}
+\]
+for every $j$.
+
+::: {.proof}
+The function $f$ is continuous on the compact interval $[0,1]$, hence uniformly continuous.
+Choose $\delta>0$ such that
+\[
+|x-y|<\delta
+\]
+implies
+\[
+|f(x)-f(y)|<\frac{\varepsilon}{3}.
+\]
+Choose a partition whose mesh is smaller than $\delta$.
+Since $f$ is nondecreasing by step <1>1,
+\[
+0\le f(x_j)-f(x_{j-1})<\frac{\varepsilon}{3}.
+\]
+:::
+
+<1>3. There exists $N$ such that for every $n\ge N$ and every partition point $x_j$,
+\[
+|f_n(x_j)-f(x_j)|
+<
+\frac{\varepsilon}{3}.
+\]
+
+::: {.proof}
+For each fixed $j$, pointwise convergence gives an index $N_j$ such that the displayed inequality holds for all $n\ge N_j$.
+There are only finitely many partition points.
+Take
+\[
+N=\max_j N_j.
+\]
+:::
+
+<1>4. Let $n\ge N$ and
+\[
+x_{j-1}\le x\le x_j.
+\]
+Then
+\[
+f_n(x)-f(x)<\frac{2\varepsilon}{3}.
+\]
+
+::: {.proof}
+Monotonicity of $f_n$ gives
+\[
+f_n(x)\le f_n(x_j),
+\]
+while monotonicity of $f$ gives
+\[
+f(x)\ge f(x_{j-1}).
+\]
+Therefore
+\[
+\begin{aligned}
+f_n(x)-f(x)
+&\le
+f_n(x_j)-f(x_{j-1})\\
+&=
+\bigl(f_n(x_j)-f(x_j)\bigr)
++
+\bigl(f(x_j)-f(x_{j-1})\bigr)\\
+&<
+\frac{\varepsilon}{3}
++
+\frac{\varepsilon}{3}.
+\end{aligned}
+\]
+:::
+
+<1>5. Under the same hypotheses,
+\[
+f(x)-f_n(x)<\frac{2\varepsilon}{3}.
+\]
+
+::: {.proof}
+Monotonicity gives
+\[
+f(x)\le f(x_j)
+\]
+and
+\[
+f_n(x)\ge f_n(x_{j-1}).
+\]
+Hence
+\[
+\begin{aligned}
+f(x)-f_n(x)
+&\le
+f(x_j)-f_n(x_{j-1})\\
+&=
+\bigl(f(x_j)-f(x_{j-1})\bigr)
++
+\bigl(f(x_{j-1})-f_n(x_{j-1})\bigr)\\
+&<
+\frac{\varepsilon}{3}
++
+\frac{\varepsilon}{3}.
+\end{aligned}
+\]
+:::
+
+<1>6. For every $n\ge N$ and every $x\in[0,1]$,
+\[
+|f_n(x)-f(x)|<\varepsilon.
+\]
+
+::: {.proof}
+Choose the partition interval containing $x$.
+Steps <1>4 and <1>5 give
+\[
+-\frac{2\varepsilon}{3}
+<
+f_n(x)-f(x)
+<
+\frac{2\varepsilon}{3}.
+\]
+Thus
+\[
+|f_n(x)-f(x)|
+<
+\frac{2\varepsilon}{3}
+<
+\varepsilon.
+\]
+:::
+
+<1>7. Therefore
+\[
+\boxed{f_n\to f\text{ uniformly on }[0,1]}.
+\]
+
+::: {.proof}
+Step <1>6 is exactly the definition of uniform convergence.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required conclusion.
+:::
+:::
