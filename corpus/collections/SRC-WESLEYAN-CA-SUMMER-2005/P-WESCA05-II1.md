@@ -22,3 +22,51 @@ f(z)=e^{1/z^2}
 \]
 in a Laurent series on the annulus $0<|z|<\infty$.
 :::
+
+::: {.solution}
+<1>1. The exponential power series gives
+\[
+e^w=\sum_{n=0}^{\infty}\frac{w^n}{n!}
+\]
+for every \(w\in\mathbb C\).
+
+::: {.proof}
+The exponential function is entire, and its Taylor series about \(0\) has infinite radius of convergence.
+:::
+
+<1>2. For every \(z\ne0\), substituting
+\[
+w=\frac1{z^2}
+\]
+into step <1>1 gives
+\[
+e^{1/z^2}
+=
+\sum_{n=0}^{\infty}\frac{1}{n!z^{2n}}.
+\]
+
+::: {.proof}
+If \(z\ne0\), then \(w=1/z^2\) is a well-defined complex number. Since the series in step <1>1 converges for every complex \(w\), this substitution is valid.
+:::
+
+<1>3. Hence the Laurent expansion on \(0<|z|<\infty\) is
+\[
+\boxed{
+e^{1/z^2}
+=
+1+\frac1{z^2}+\frac1{2!z^4}
++\frac1{3!z^6}+\cdots
+=
+\sum_{n=0}^{\infty}\frac{z^{-2n}}{n!}.}
+\]
+
+::: {.proof}
+Step <1>2 gives the Laurent series. Its convergence domain is exactly the punctured plane: for every \(z\ne0\), it is the convergent exponential series evaluated at \(1/z^2\), while the expression is not defined at \(z=0\).
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the requested Laurent expansion on the stated annulus.
+:::
+:::
