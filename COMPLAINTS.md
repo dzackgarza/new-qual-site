@@ -3262,3 +3262,20 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-UGA8150S21-HW3-10` gives the counterexample and proves the
   corrected statement by excising a small square around `w` and applying
   Goursat's theorem to the remaining triangulated region.
+
+### Wesleyan August 2013 Supplemental Real Analysis Problem II2 extraction changed $1/2$ to $3/2$
+
+- **Object and need:** `P-WESRA13A-II2` in
+  `SRC-WESLEYAN-RA-AUGUST-2013-SUPPLEMENTAL`. The checked-in extraction reads
+  `\mu(B_i)>3/2`, impossible under the simultaneous hypothesis `\mu(X)=1`.
+- **Observed evidence:** direct inspection of page 1 of the retained
+  `analysis_2008-2013.pdf` shows the printed threshold clearly as
+  `\mu(B_i)>1/2`.
+- **Impact and owner:** the extracted threshold made the premise impossible
+  and reduced the problem to a vacuous implication. The retained source is
+  unambiguous.
+- **Expected result:** restore the source threshold `1/2` and prove that the
+  average of the indicators exceeds `1/2` on a positive-measure set.
+- **Uncertainty:** none after direct page inspection.
+- **Repair:** `P-WESRA13A-II2` restores the source threshold and supplies the
+  complete structured proof.
