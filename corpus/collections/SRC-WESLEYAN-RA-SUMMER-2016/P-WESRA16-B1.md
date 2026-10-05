@@ -25,3 +25,75 @@ M_n=\{x:|f_n(x)|\ge2^{-n}\}.
 
 (b) Prove that if $\mu(M_n)\le2^{-n}$ for every $n$, then $f_n\to0$ almost uniformly.
 :::
+
+::: {.solution}
+<1>1. The statement $f_n\to0$ almost uniformly means that for every $\varepsilon>0$ there exists a measurable set $E\subseteq X$ such that
+$$
+\mu(E)<\varepsilon
+$$
+and $f_n\to0$ uniformly on $X\setminus E$.
+
+::: {.proof}
+This is the definition of almost uniform convergence to zero. Equivalently, for every $\varepsilon>0$ there is such an $E$ for which
+$$
+\sup_{x\in X\setminus E}\abs{f_n(x)}\longrightarrow0.
+$$
+This answers part (a).
+:::
+
+<1>2. For $N\ge0$, define
+$$
+E_N=\bigcup_{n=N}^\infty M_n.
+$$
+Then
+$$
+\mu(E_N)\le2^{1-N}.
+$$
+
+::: {.proof}
+By countable subadditivity and the assumed estimate on $M_n$,
+$$
+\mu(E_N)
+\leq\sum_{n=N}^\infty\mu(M_n)
+\leq\sum_{n=N}^\infty2^{-n}
+=2^{1-N}.
+$$
+:::
+
+<1>3. For every $N$ and every $n\ge N$,
+$$
+\sup_{x\in X\setminus E_N}\abs{f_n(x)}\leq2^{-n}.
+$$
+
+::: {.proof}
+If $x\in X\setminus E_N$ and $n\ge N$, then $x\notin M_n$. By the definition of $M_n$,
+$$
+\abs{f_n(x)}<2^{-n}.
+$$
+Taking the supremum over $X\setminus E_N$ gives the asserted bound.
+:::
+
+<1>4. If $\mu(M_n)\le2^{-n}$ for every $n$, then
+$$
+\boxed{f_n\to0\text{ almost uniformly}.}
+$$
+
+::: {.proof}
+Let $\varepsilon>0$. Choose $N$ so large that
+$$
+2^{1-N}<\varepsilon.
+$$
+By step <1>2, $\mu(E_N)<\varepsilon$. By step <1>3,
+$$
+\sup_{x\in X\setminus E_N}\abs{f_n(x)}
+\leq2^{-n}\longrightarrow0
+$$
+for $n\ge N$. Hence $f_n\to0$ uniformly on $X\setminus E_N$, and therefore almost uniformly by step <1>1. This proves part (b).
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the requested definition, and step <1>4 proves the criterion.
+:::
+:::
