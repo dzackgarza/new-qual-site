@@ -23,3 +23,117 @@ Prove
 \]
 If $A\subset\mathbb R$ has finite Lebesgue measure, explain what this says about the translates $A+t$.
 :::
+
+::: {.solution}
+<1>1. If $g\in C_c(\mathbb R)$, then
+\[
+\|g-g_t\|_1\longrightarrow0
+\qquad(t\to0).
+\]
+
+::: {.proof}
+Choose $R>0$ such that
+\[
+\operatorname{supp}(g)\subseteq[-R,R].
+\]
+For $|t|\le1$, both $g$ and $g_t$ vanish outside
+\[
+[-R-1,R+1].
+\]
+Since $g$ is uniformly continuous on $\mathbb R$,
+\[
+\sup_{x\in\mathbb R}|g(x)-g(x-t)|\longrightarrow0
+\]
+as $t\to0$. Hence, for $|t|\le1$,
+\[
+\|g-g_t\|_1
+\le
+2(R+1)\sup_{x\in\mathbb R}|g(x)-g(x-t)|,
+\]
+and the right-hand side tends to $0$.
+:::
+
+<1>2. Translation preserves the $L^1$ norm:
+\[
+\|h_t\|_1=\|h\|_1
+\]
+for every $h\in L^1(\mathbb R)$ and every $t\in\mathbb R$.
+
+::: {.proof}
+By the translation invariance of Lebesgue measure,
+\[
+\|h_t\|_1
+=\int_{\mathbb R}|h(x-t)|\,dx
+=\int_{\mathbb R}|h(u)|\,du
+=\|h\|_1.
+\]
+:::
+
+<1>3. For every $f\in L^1(\mathbb R)$,
+\[
+\boxed{\|f-f_t\|_1\longrightarrow0}
+\qquad(t\to0).
+\]
+
+::: {.proof}
+Fix $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$,
+choose $g\in C_c(\mathbb R)$ such that
+\[
+\|f-g\|_1<\frac{\varepsilon}{3}.
+\]
+By step <1>1, for all sufficiently small $|t|$,
+\[
+\|g-g_t\|_1<\frac{\varepsilon}{3}.
+\]
+Using step <1>2,
+\[
+\|f_t-g_t\|_1
+=\|(f-g)_t\|_1
+=\|f-g\|_1
+<\frac{\varepsilon}{3}.
+\]
+Therefore
+\[
+\|f-f_t\|_1
+\le
+\|f-g\|_1+\|g-g_t\|_1+\|g_t-f_t\|_1
+<\varepsilon.
+\]
+This proves the limit.
+:::
+
+<1>4. If $A\subseteq\mathbb R$ is measurable with finite measure, then
+\[
+\boxed{m(A\triangle(A+t))\longrightarrow0}
+\qquad(t\to0).
+\]
+
+::: {.proof}
+Take
+\[
+f=\chi_A\in L^1(\mathbb R).
+\]
+Then
+\[
+f_t(x)=\chi_A(x-t)=\chi_{A+t}(x).
+\]
+Moreover,
+\[
+|\chi_A-\chi_{A+t}|
+=\chi_{A\triangle(A+t)}.
+\]
+Hence step <1>3 gives
+\[
+m(A\triangle(A+t))
+=\|\chi_A-\chi_{A+t}\|_1
+\longrightarrow0.
+\]
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the translation-continuity statement, and step <1>4 gives
+its consequence for finite-measure sets.
+:::
+:::
