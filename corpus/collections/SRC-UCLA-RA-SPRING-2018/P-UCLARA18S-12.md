@@ -27,3 +27,205 @@ f(w)=\frac1\pi\int_{\mathbb D}\frac{f(z)}{(1-\overline z w)^2}\,dA(z),
 \]
 where $dA(z)$ means integration with respect to Lebesgue measure.
 :::
+
+::: {.solution}
+Write the Taylor series of \(f\) at the origin as
+\[
+f(z)=\sum_{n=0}^{\infty}a_nz^n.
+\]
+
+<1>1. For every \(n\ge0\),
+\[
+\boxed{
+\int_{\mathbb D}
+f(z)\overline z^{\,n}\,dA(z)
+=
+\frac{\pi}{n+1}a_n}.
+\]
+
+::: {.proof}
+Because \(f\) is bounded and \(\mathbb D\) has finite area, the function
+\[
+f(z)\overline z^{\,n}
+\]
+is integrable. In polar coordinates,
+\[
+\begin{aligned}
+\int_{\mathbb D}
+f(z)\overline z^{\,n}\,dA(z)
+&=
+\int_0^1
+\int_0^{2\pi}
+f(re^{i\theta})
+r^n e^{-in\theta}
+r\,d\theta\,dr.
+\end{aligned}
+\]
+For fixed \(0<r<1\), the Taylor series of \(f\) converges uniformly on the
+circle \(|z|=r\), so
+\[
+\begin{aligned}
+\int_0^{2\pi}
+f(re^{i\theta})e^{-in\theta}\,d\theta
+&=
+\sum_{m=0}^{\infty}
+a_mr^m
+\int_0^{2\pi}
+e^{i(m-n)\theta}\,d\theta\\
+&=
+2\pi a_nr^n.
+\end{aligned}
+\]
+Therefore
+\[
+\begin{aligned}
+\int_{\mathbb D}
+f(z)\overline z^{\,n}\,dA(z)
+&=
+2\pi a_n
+\int_0^1r^{2n+1}\,dr\\
+&=
+2\pi a_n
+\frac1{2n+2}\\
+&=
+\frac{\pi}{n+1}a_n.
+\end{aligned}
+\]
+:::
+
+<1>2. For fixed \(w\in\mathbb D\),
+\[
+\boxed{
+\frac1{(1-\overline zw)^2}
+=
+\sum_{n=0}^{\infty}
+(n+1)\overline z^{\,n}w^n}
+\]
+uniformly for \(z\in\mathbb D\).
+
+::: {.proof}
+The differentiated geometric series gives
+\[
+\frac1{(1-\xi)^2}
+=
+\sum_{n=0}^{\infty}(n+1)\xi^n
+\qquad(|\xi|<1).
+\]
+Take
+\[
+\xi=\overline zw.
+\]
+Since \(|z|<1\),
+\[
+|\xi|
+\le
+|w|
+<1.
+\]
+Moreover,
+\[
+|(n+1)\overline z^{\,n}w^n|
+\le
+(n+1)|w|^n,
+\]
+and
+\[
+\sum_{n=0}^{\infty}(n+1)|w|^n
+<\infty.
+\]
+The Weierstrass \(M\)-test therefore gives uniform convergence in \(z\).
+:::
+
+<1>3. One may integrate the series in step <1>2 term by term against
+\(f(z)\,dA(z)\).
+
+::: {.proof}
+Let
+\[
+\|f\|_\infty
+=
+\sup_{z\in\mathbb D}|f(z)|
+<\infty.
+\]
+The terms satisfy
+\[
+|f(z)(n+1)\overline z^{\,n}w^n|
+\le
+\|f\|_\infty
+(n+1)|w|^n.
+\]
+The right-hand side is summable in \(n\) and independent of \(z\), while
+\(\mathbb D\) has finite area. Equivalently, the kernel series converges
+uniformly by step <1>2 and \(f\in L^1(\mathbb D)\). Hence integration and
+summation may be interchanged.
+:::
+
+<1>4. For every \(w\in\mathbb D\),
+\[
+\begin{aligned}
+\frac1\pi
+\int_{\mathbb D}
+\frac{f(z)}
+{(1-\overline zw)^2}
+\,dA(z)
+&=
+\sum_{n=0}^{\infty}a_nw^n.
+\end{aligned}
+\]
+
+::: {.proof}
+By steps <1>2 and <1>3,
+\[
+\begin{aligned}
+\frac1\pi
+\int_{\mathbb D}
+\frac{f(z)}
+{(1-\overline zw)^2}
+\,dA(z)
+&=
+\frac1\pi
+\sum_{n=0}^{\infty}
+(n+1)w^n
+\int_{\mathbb D}
+f(z)\overline z^{\,n}\,dA(z).
+\end{aligned}
+\]
+Apply step <1>1:
+\[
+\begin{aligned}
+&=
+\frac1\pi
+\sum_{n=0}^{\infty}
+(n+1)w^n
+\frac{\pi}{n+1}a_n\\
+&=
+\sum_{n=0}^{\infty}a_nw^n.
+\end{aligned}
+\]
+:::
+
+<1>5. Therefore
+\[
+\boxed{
+f(w)
+=
+\frac1\pi
+\int_{\mathbb D}
+\frac{f(z)}
+{(1-\overline zw)^2}
+\,dA(z)}
+\qquad(w\in\mathbb D).
+\]
+
+::: {.proof}
+The Taylor series of the holomorphic function \(f\) converges to \(f(w)\)
+for every \(w\in\mathbb D\). Thus the series on the right-hand side of
+step <1>4 equals \(f(w)\).
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required reproducing formula.
+:::
+:::
