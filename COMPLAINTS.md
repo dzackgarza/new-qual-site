@@ -45,6 +45,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** the mathematical counterexample is exact. The retained scan still needs direct inspection to determine whether the original exam included an omitted word such as “infinite” or whether the source itself stated the false finite case.
 - **Repair:** issue #2 / TODO.md section 7. Verify the original source wording, repair `P-WESTOP06-A5` source-faithfully, and then resume its ordinary source-review/prove/attach/commit chain.
 
+### Wesleyan 2006 topology A6 has a corrupted vanishing-ideal definition and a false converse
+
+- **Object and need:** `P-WESTOP06-A6` in `SRC-WESLEYAN-TOP-2006`. The retained source defines `I(S)` using `Z(f) \supseteq X` rather than `Z(f) \supseteq S`, then asks for every ideal of `C(X)` on compact `X` to equal `I(S)` for some closed `S`.
+- **Observed evidence:** under the literal definition, `I(S)={0}` for every `S`, so the notation does not depend on `S`. Under the evident corrected definition `I(S)={f:Z(f)\supseteq S}`, the converse is still false: for `X=[0,1]`, the principal ideal `(x)` is not `I(S)` for any closed `S`; since `x\in(x)`, necessarily `S\subseteq\{0\}`, but `I(\varnothing)=C(X)` and `\sqrt{x}\in I(\{0\})\setminus(x)`.
+- **Impact and owner:** parts 2 and 3 cannot be proved literally as a single correct theorem. The solution must distinguish the retained definition from the intended vanishing ideal and refute the false converse while proving the maximal-ideal classification independently.
+- **Uncertainty:** none about either mathematical defect in the retained statement. The original scan would be needed to determine whether the first defect is transcription/OCR corruption and whether part 3 omitted a qualifier such as closed ideal.
+- **Repair:** issue #2 / TODO.md section 7. `P-WESTOP06-A6` now records the literal and intended readings, gives the counterexample to part 3, and proves that the maximal ideals are the point-evaluation kernels.
+
 ### January 2005 Problem 3 is truncated after the induced-map symbol
 
 - **Object and need:** P-MH07-JAN05-03 in SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007. The source begins a degree-one-map problem for closed connected oriented manifolds but does not retain the induced map or requested conclusion.
