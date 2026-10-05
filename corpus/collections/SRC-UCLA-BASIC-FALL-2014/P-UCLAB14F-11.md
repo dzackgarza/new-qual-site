@@ -26,3 +26,108 @@ Prove that
 \lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2\in\mathbb Z.
 \]
 :::
+
+::: {.solution}
+<1>1. The matrix $A$ is diagonalizable over $\mathbb R$.
+
+::: {.proof}
+The four eigenvalues
+\[
+\lambda_1,\lambda_2,\lambda_3,\lambda_4
+\]
+are real and pairwise distinct.
+Choose corresponding nonzero real eigenvectors
+\[
+v_1,v_2,v_3,v_4.
+\]
+Eigenvectors belonging to distinct eigenvalues are linearly independent.
+Since the ambient space has dimension $4$, these four vectors form a basis.
+Thus, in this basis,
+\[
+A
+\sim
+\operatorname{diag}
+(\lambda_1,\lambda_2,\lambda_3,\lambda_4).
+\]
+:::
+
+<1>2. Consequently,
+\[
+A^2
+\sim
+\operatorname{diag}
+(\lambda_1^2,\lambda_2^2,\lambda_3^2,\lambda_4^2).
+\]
+
+::: {.proof}
+If
+\[
+A=SDS^{-1},
+\]
+then
+\[
+A^2
+=
+SD^2S^{-1}.
+\]
+Apply this with the diagonal matrix $D$ from step <1>1.
+:::
+
+<1>3. The trace of $A^2$ is
+\[
+\operatorname{Tr}(A^2)
+=
+\lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2.
+\]
+
+::: {.proof}
+Trace is invariant under similarity.
+By step <1>2,
+\[
+\operatorname{Tr}(A^2)
+=
+\operatorname{Tr}
+\operatorname{diag}
+(\lambda_1^2,\lambda_2^2,\lambda_3^2,\lambda_4^2),
+\]
+which is the sum of the diagonal entries.
+:::
+
+<1>4. The number
+\[
+\operatorname{Tr}(A^2)
+\]
+is an integer.
+
+::: {.proof}
+The matrix $A$ has integer entries.
+Therefore the product
+\[
+A^2
+\]
+also has integer entries.
+In particular, every diagonal entry of $A^2$ is an integer, so their sum
+\[
+\operatorname{Tr}(A^2)
+\]
+is an integer.
+:::
+
+<1>5. Therefore
+\[
+\boxed{
+\lambda_1^2+\lambda_2^2+\lambda_3^2+\lambda_4^2
+\in\mathbb Z
+}.
+\]
+
+::: {.proof}
+Combine steps <1>3 and <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::
