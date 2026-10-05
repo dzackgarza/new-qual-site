@@ -36,3 +36,228 @@ F\bigl(\{(x,y):x^2+y^2<1\}\bigr)
 
 Hint: if $U=\{(x,y):x^2+y^2<1\}$, prove that $F(U)\cap U$ is open and closed in $U$.
 :::
+
+::: {.solution}
+Let
+\[
+U=\{p\in\mathbb R^2:\|p\|<1\}
+\]
+and define
+\[
+Y=F(U)\cap U.
+\]
+
+<1>1. The set $Y$ is nonempty.
+
+::: {.proof}
+By hypothesis,
+\[
+F(0,0)=(0,0).
+\]
+Since
+\[
+(0,0)\in U,
+\]
+one has
+\[
+(0,0)\in F(U)\cap U=Y.
+\]
+:::
+
+<1>2. The set $F(U)$ is open in $\mathbb R^2$.
+
+::: {.proof}
+Fix
+\[
+p\in U.
+\]
+The derivative
+\[
+DF(p)
+\]
+has nonzero determinant by hypothesis, hence is invertible.
+The inverse function theorem therefore gives an open neighborhood
+\[
+N_p\subseteq U
+\]
+such that
+\[
+F(N_p)
+\]
+is open in $\mathbb R^2$.
+Since
+\[
+F(U)
+=
+\bigcup_{p\in U}F(N_p),
+\]
+the set $F(U)$ is open.
+:::
+
+<1>3. The set $Y$ is open in the subspace $U$.
+
+::: {.proof}
+By step <1>2, $F(U)$ is open in $\mathbb R^2$.
+Therefore
+\[
+Y=F(U)\cap U
+\]
+is open in the subspace topology on $U$.
+:::
+
+<1>4. Let $(y_n)$ be a sequence in $Y$ converging to a point
+\[
+y\in U.
+\]
+For each $n$, choose
+\[
+x_n\in U
+\]
+such that
+\[
+F(x_n)=y_n.
+\]
+
+::: {.proof}
+Every $y_n$ belongs to $F(U)$ by definition of $Y$, so such an $x_n$ exists.
+:::
+
+<1>5. The sequence $(x_n)$ has a convergent subsequence
+\[
+x_{n_k}\to x
+\]
+with
+\[
+x\in\overline U.
+\]
+
+::: {.proof}
+The closed unit disk
+\[
+\overline U
+=
+\{p\in\mathbb R^2:\|p\|\le1\}
+\]
+is compact.
+Every $x_n$ belongs to $U\subseteq\overline U$.
+Hence Bolzano--Weierstrass gives a convergent subsequence with limit in $\overline U$.
+:::
+
+<1>6. One has
+\[
+F(x)=y.
+\]
+
+::: {.proof}
+The map $F$ is continuous because its derivative matrix is continuous.
+Therefore
+\[
+F(x)
+=
+F\!\left(\lim_{k\to\infty}x_{n_k}\right)
+=
+\lim_{k\to\infty}F(x_{n_k})
+=
+\lim_{k\to\infty}y_{n_k}
+=
+y.
+\]
+:::
+
+<1>7. The limit point $x$ lies in $U$, not on $\partial U$.
+
+::: {.proof}
+Suppose
+\[
+\|x\|=1.
+\]
+Then the boundary hypothesis gives
+\[
+\|F(x)\|\ge1.
+\]
+By step <1>6,
+\[
+F(x)=y.
+\]
+But
+\[
+y\in U,
+\]
+so
+\[
+\|y\|<1,
+\]
+a contradiction.
+Thus
+\[
+\|x\|<1,
+\]
+so $x\in U$.
+:::
+
+<1>8. The set $Y$ is closed in $U$.
+
+::: {.proof}
+Let
+\[
+y_n\in Y
+\]
+converge to
+\[
+y\in U.
+\]
+Steps <1>4--<1>7 produce
+\[
+x\in U
+\]
+such that
+\[
+F(x)=y.
+\]
+Hence
+\[
+y\in F(U)\cap U=Y.
+\]
+Thus $Y$ contains every limit in $U$ of sequences from $Y$, so it is closed in the metric space $U$.
+:::
+
+<1>9. One has
+\[
+Y=U.
+\]
+
+::: {.proof}
+The open unit disk $U$ is connected.
+By steps <1>1, <1>3, and <1>8, the subset $Y\subseteq U$ is nonempty and both open and closed in $U$.
+Connectedness therefore forces
+\[
+Y=U.
+\]
+:::
+
+<1>10. Therefore
+\[
+\boxed{F(U)\supseteq U}.
+\]
+
+::: {.proof}
+Since
+\[
+Y=F(U)\cap U,
+\]
+step <1>9 gives
+\[
+F(U)\cap U=U.
+\]
+This is equivalent to
+\[
+U\subseteq F(U).
+\]
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required conclusion.
+:::
+:::
