@@ -36,7 +36,7 @@ Assume the round-off errors $\delta_k$ are independent. Put
 \[
 n=10^N,
 \qquad
-h=\frac12,10^{-m}.
+h=\frac12\,10^{-m}.
 \]
 Then $\delta=\sum_{k=1}^n\delta_k$.
 
@@ -50,7 +50,7 @@ Then $\delta=\sum_{k=1}^n\delta_k$.
 ::: {.proof}
 A uniform random variable on $(-h,h)$ is symmetric, hence has mean zero, and its variance is
 \[
-\frac1{2h}\int_{-h}^{h}x^2,dx
+\frac1{2h}\int_{-h}^{h}x^2\,dx
 =\frac{h^2}{3}.
 \]
 Substitute $h=10^{-m}/2$.
@@ -107,8 +107,8 @@ Setting this equal to $0.99$ gives $\Phi(z)=0.995$.
 \[
 \boxed{
 \epsilon\approx
-\frac{z_{0.995}}{\sqrt{12}},10^{N/2-m}
-\approx0.7435,10^{N/2-m}.}
+\frac{z_{0.995}}{\sqrt{12}}\,10^{N/2-m}
+\approx0.7435\,10^{N/2-m}.}
 \]
 
 ::: {.proof}
