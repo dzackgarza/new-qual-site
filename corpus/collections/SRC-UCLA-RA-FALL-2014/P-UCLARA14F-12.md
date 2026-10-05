@@ -23,3 +23,155 @@ audit:
 ::: {.problem}
 Let $\Omega = \{ z \in \mathbb{C} ; |z| > 1 \}$. Suppose $u : \overline{\Omega} \to \mathbb{R}$ is bounded and continuous on $\overline{\Omega}$ and that it is subharmonic on $\Omega$. Prove the following: If $u(z) \leq 0$ for all $|z| = 1$ then $u(z) \leq 0$ for all $z \in \Omega$.
 :::
+
+::: {.solution}
+<1>1. Since $u$ is bounded on $\overline\Omega$, there is $M>0$ such that
+\[
+|u(z)|\le M
+\qquad(z\in\overline\Omega).
+\]
+
+::: {.proof}
+This is the boundedness hypothesis.
+:::
+
+<1>2. Fix $\varepsilon>0$ and define
+\[
+v_\varepsilon(z)
+=
+u(z)-\varepsilon\log|z|.
+\]
+Then $v_\varepsilon$ is subharmonic on $\Omega$ and continuous on
+$\overline\Omega$.
+
+::: {.proof}
+The function
+\[
+z\longmapsto\log|z|
+\]
+is harmonic on $\Omega$, since $0\notin\Omega$. The difference of a
+subharmonic function and a harmonic function is subharmonic. Continuity is
+immediate from the continuity of the two summands.
+:::
+
+<1>3. On the inner boundary,
+\[
+v_\varepsilon(z)\le0
+\qquad(|z|=1).
+\]
+
+::: {.proof}
+If $|z|=1$, then
+\[
+\log|z|=0.
+\]
+Hence
+\[
+v_\varepsilon(z)=u(z)\le0
+\]
+by hypothesis.
+:::
+
+<1>4. Choose $R>1$ so large that
+\[
+M-\varepsilon\log R<0.
+\]
+Then
+\[
+v_\varepsilon(z)<0
+\qquad(|z|\ge R).
+\]
+
+::: {.proof}
+For $|z|\ge R$, step <1>1 gives
+\[
+v_\varepsilon(z)
+\le
+M-\varepsilon\log|z|
+\le
+M-\varepsilon\log R
+<0.
+\]
+:::
+
+<1>5. On the closed annulus
+\[
+A_R=\{z:1\le|z|\le R\},
+\]
+one has
+\[
+v_\varepsilon\le0.
+\]
+
+::: {.proof}
+The function $v_\varepsilon$ is continuous on $A_R$ and subharmonic in its
+interior. By steps <1>3 and <1>4, it is nonpositive on both boundary circles
+\[
+|z|=1
+\qquad\text{and}\qquad
+|z|=R.
+\]
+The maximum principle for subharmonic functions therefore gives
+\[
+v_\varepsilon(z)\le0
+\]
+throughout the annulus.
+:::
+
+<1>6. In fact,
+\[
+v_\varepsilon(z)\le0
+\qquad(z\in\overline\Omega).
+\]
+
+::: {.proof}
+Step <1>5 covers the region
+\[
+1\le|z|\le R.
+\]
+Step <1>4 covers
+\[
+|z|\ge R.
+\]
+Together they cover $\overline\Omega$.
+:::
+
+<1>7. For every $z\in\Omega$ and every $\varepsilon>0$,
+\[
+u(z)\le\varepsilon\log|z|.
+\]
+
+::: {.proof}
+Step <1>6 says
+\[
+u(z)-\varepsilon\log|z|\le0.
+\]
+Rearrange.
+:::
+
+<1>8. Therefore
+\[
+\boxed{u(z)\le0\qquad(z\in\Omega)}.
+\]
+
+::: {.proof}
+Fix $z\in\Omega$. Since
+\[
+\log|z|>0
+\]
+is finite, step <1>7 holds for every $\varepsilon>0$. Letting
+\[
+\varepsilon\downarrow0
+\]
+gives
+\[
+u(z)\le0.
+\]
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>8 is the required conclusion.
+:::
+:::
