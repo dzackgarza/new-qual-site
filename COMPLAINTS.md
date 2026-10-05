@@ -3335,3 +3335,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   contour integral and the printed integrand.
 - **Repair:** TODO.md section 7 / issue #2. `P-PRACT20-W5-28` supplies the
   corrected value and derivation.
+
+### UGA Math 8210 Homework 1 Exercise 6 omits smoothness of the graph map
+
+- **Object and need:** `P-UGA8210F18-HW1-06` in
+  `SRC-UGA-MATH8210-FALL-2018-HW1`. The final part asks to show that the
+  graph of an arbitrary map `h:X->Y` is a smooth manifold.
+- **Observed evidence:** direct inspection of `assets/attachments/HW1.pdf`
+  confirms that the source says only “suppose that h:X->Y” and does not
+  assume continuity or smoothness before the graph claim.
+- **Impact and owner:** the literal assertion is false. For example, with
+  `X=Y=R` and `h(0)=1`, `h(x)=0` for `x!=0`, the graph has an isolated
+  point together with non-isolated points and is not a manifold of any fixed
+  dimension. The intended standard theorem is that the graph of a smooth map
+  is a smooth embedded submanifold, diffeomorphic to `X`.
+- **Expected result:** preserve the literal source statement, refute it, and
+  prove the intended theorem under the added hypothesis that `h` is smooth.
+- **Uncertainty:** none about the printed wording or counterexample; the
+  missing smoothness hypothesis is forced by the hint using a diffeomorphism
+  `X -> graph(h)`.
+- **Repair:** TODO.md section 7 / issue #2. `P-UGA8210F18-HW1-06` supplies
+  the counterexample and proves the corrected smooth-map version.
