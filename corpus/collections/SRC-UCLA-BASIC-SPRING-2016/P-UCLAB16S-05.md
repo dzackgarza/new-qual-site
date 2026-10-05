@@ -28,3 +28,277 @@ Show that there is $\lambda\in\mathbb R$ such that
 \nabla f(x_0,y_0)=\lambda\nabla g(x_0,y_0).
 \]
 :::
+
+::: {.solution}
+Let
+\[
+p_0=(x_0,y_0).
+\]
+
+<1>1. Since
+\[
+\nabla g(p_0)\ne0,
+\]
+at least one of
+\[
+g_x(p_0),
+\qquad
+g_y(p_0)
+\]
+is nonzero.
+
+::: {.proof}
+The gradient is
+\[
+\nabla g(p_0)
+=
+\bigl(g_x(p_0),g_y(p_0)\bigr).
+\]
+A vector in $\mathbb R^2$ is nonzero exactly when at least one coordinate is nonzero.
+:::
+
+<1>2. After interchanging the coordinate names if necessary, assume
+\[
+\boxed{g_y(p_0)\ne0}.
+\]
+
+::: {.proof}
+Step <1>1 supplies a nonzero partial derivative.
+If
+\[
+g_x(p_0)\ne0
+\]
+instead, the same argument below is obtained by exchanging $x$ and $y$.
+:::
+
+<1>3. There exist an open interval
+\[
+I
+\]
+containing $x_0$ and a continuously differentiable function
+\[
+\phi:I\to\mathbb R
+\]
+such that
+\[
+\phi(x_0)=y_0
+\]
+and
+\[
+\boxed{
+g(x,\phi(x))=0
+}
+\]
+for every $x\in I$.
+
+::: {.proof}
+Apply the implicit function theorem to
+\[
+g(x,y)=0
+\]
+at $(x_0,y_0)$.
+The hypotheses hold because $g$ is $C^1$,
+\[
+g(x_0,y_0)=0,
+\]
+and
+\[
+g_y(x_0,y_0)\ne0
+\]
+by step <1>2.
+:::
+
+<1>4. The one-variable function
+\[
+h(x)
+=
+f(x,\phi(x))
+\]
+has a local minimum at
+\[
+x=x_0.
+\]
+
+::: {.proof}
+By step <1>3,
+\[
+g(x,\phi(x))=0
+\]
+for every $x\in I$.
+Thus every point
+\[
+(x,\phi(x))
+\]
+is feasible for the constrained minimization problem.
+The hypothesis says
+\[
+f(x_0,y_0)
+\le
+f(x,\phi(x))
+\]
+for every $x\in I$.
+Since
+\[
+\phi(x_0)=y_0,
+\]
+this means
+\[
+h(x_0)\le h(x)
+\]
+near $x_0$.
+:::
+
+<1>5. Therefore
+\[
+h'(x_0)=0.
+\]
+
+::: {.proof}
+The function $h$ is differentiable because both $f$ and $\phi$ are $C^1$.
+A differentiable one-variable function has derivative zero at an interior local minimum.
+:::
+
+<1>6. Differentiating the identity
+\[
+g(x,\phi(x))=0
+\]
+at $x_0$ gives
+\[
+\boxed{
+\phi'(x_0)
+=
+-
+\frac{g_x(p_0)}{g_y(p_0)}.
+}
+\]
+
+::: {.proof}
+The chain rule gives
+\[
+0
+=
+\frac d{dx}
+g(x,\phi(x))
+\Big|_{x=x_0}
+=
+g_x(p_0)
++
+g_y(p_0)\phi'(x_0).
+\]
+Divide by
+\[
+g_y(p_0)\ne0.
+\]
+:::
+
+<1>7. Differentiating
+\[
+h(x)=f(x,\phi(x))
+\]
+at $x_0$ gives
+\[
+0
+=
+f_x(p_0)
++
+f_y(p_0)\phi'(x_0).
+\]
+
+::: {.proof}
+By the chain rule,
+\[
+h'(x_0)
+=
+f_x(p_0)
++
+f_y(p_0)\phi'(x_0).
+\]
+Step <1>5 gives
+\[
+h'(x_0)=0.
+\]
+:::
+
+<1>8. Substituting step <1>6 into step <1>7 gives
+\[
+\boxed{
+f_x(p_0)g_y(p_0)
+-
+f_y(p_0)g_x(p_0)
+=
+0.
+}
+\]
+
+::: {.proof}
+Step <1>7 becomes
+\[
+0
+=
+f_x(p_0)
+-
+f_y(p_0)
+\frac{g_x(p_0)}{g_y(p_0)}.
+\]
+Multiply by
+\[
+g_y(p_0).
+\]
+:::
+
+<1>9. Define
+\[
+\lambda
+=
+\frac{f_y(p_0)}{g_y(p_0)}.
+\]
+Then
+\[
+f_y(p_0)=\lambda g_y(p_0)
+\]
+and
+\[
+f_x(p_0)=\lambda g_x(p_0).
+\]
+
+::: {.proof}
+The first equality is the definition of $\lambda$.
+From step <1>8,
+\[
+f_x(p_0)g_y(p_0)
+=
+f_y(p_0)g_x(p_0).
+\]
+Divide by
+\[
+g_y(p_0)\ne0
+\]
+and substitute
+\[
+f_y(p_0)=\lambda g_y(p_0)
+\]
+to obtain
+\[
+f_x(p_0)=\lambda g_x(p_0).
+\]
+:::
+
+<1>10. Therefore
+\[
+\boxed{
+\nabla f(x_0,y_0)
+=
+\lambda\nabla g(x_0,y_0).
+}
+\]
+
+::: {.proof}
+Step <1>9 gives equality of the two coordinate components.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required Lagrange-multiplier condition.
+:::
+:::
