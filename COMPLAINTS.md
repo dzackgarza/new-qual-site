@@ -3241,3 +3241,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none after direct inspection of the retained PDF page.
 - **Repair:** `P-UGA8150S21-HW3-01` restores the arrow and supplies the
   complete structured proof.
+
+### UGA Math 8150 Homework 3 Problem 10 is false without control at the exceptional point
+
+- **Object and need:** `P-UGA8150S21-HW3-10` in
+  `SRC-UGA-MATH8150-SPRING-2021-HW3`. The source assumes only that `f'(z)`
+  exists away from one point `w` and asks for vanishing of the integral around
+  a triangle containing `w`.
+- **Observed evidence:** the retained source PDF has no continuity or
+  boundedness hypothesis at `w`. Defining `f(w)=0` and
+  `f(z)=1/(z-w)` for `z\ne w` satisfies differentiability away from `w`, but
+  every positively oriented triangle containing `w` has integral `2\pi i`.
+- **Impact and owner:** the requested conclusion is false as printed. Local
+  boundedness near `w` is sufficient, and continuity at `w` is a standard
+  stronger sufficient hypothesis.
+- **Expected result:** preserve the source statement and erratum, refute the
+  printed claim explicitly, and prove the corrected locally bounded version.
+- **Uncertainty:** none; the counterexample directly violates the source
+  conclusion.
+- **Repair:** `P-UGA8150S21-HW3-10` gives the counterexample and proves the
+  corrected statement by excising a small square around `w` and applying
+  Goursat's theorem to the remaining triangulated region.
