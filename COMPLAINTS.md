@@ -3279,3 +3279,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none after direct page inspection.
 - **Repair:** `P-WESRA13A-II2` restores the source threshold and supplies the
   complete structured proof.
+
+### Wesleyan August 2013 Supplemental Real Analysis Problem II5 extraction lost the target in part (a)
+
+- **Object and need:** `P-WESRA13A-II5` in
+  `SRC-WESLEYAN-RA-AUGUST-2013-SUPPLEMENTAL`. The checked-in extraction kept
+  “Does this imply that” in part (a) but destroyed the derivative condition
+  being asked about.
+- **Observed evidence:** direct inspection of page 2 of the retained
+  `analysis_2008-2013.pdf` shows that part (a) asks whether a strictly
+  increasing function `F:[0,1]\to\mathbb R` must satisfy `F'(x)>0` almost
+  everywhere.
+- **Impact and owner:** the card previously could not state or answer part (a)
+  without guessing the missing formula. The retained source page resolves the
+  question unambiguously.
+- **Expected result:** restore the literal derivative condition from the
+  source and answer both implications in the two-part problem.
+- **Uncertainty:** none after direct inspection of the retained PDF page.
+- **Repair:** `P-WESRA13A-II5` restores the missing target and supplies
+  counterexamples to both implications in a complete structured proof.
