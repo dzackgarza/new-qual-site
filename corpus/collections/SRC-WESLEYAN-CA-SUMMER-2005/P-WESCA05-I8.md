@@ -21,3 +21,76 @@ Evaluate
 \int_{|z|=2}\frac{e^{\pi z}}{(z-1)^2}\,dz.
 \]
 :::
+
+::: {.solution}
+Assume the circle \(|z|=2\) has its standard positive orientation.
+
+<1>1. The function
+\[
+F(z)=e^{\pi z}
+\]
+is analytic on and inside the circle \(|z|=2\), and \(1\) lies inside that circle.
+
+::: {.proof}
+The exponential function is entire, so \(F\) is analytic on all of \(\mathbb C\). Moreover
+\[
+|1|=1<2.
+\]
+Thus the hypotheses of the differentiated Cauchy integral formula apply at \(a=1\).
+:::
+
+<1>2. The differentiated Cauchy integral formula gives
+\[
+\int_{|z|=2}\frac{e^{\pi z}}{(z-1)^2}\,dz
+=
+2\pi i\,F'(1).
+\]
+
+::: {.proof}
+For a function \(F\) analytic on and inside a positively oriented simple closed contour \(C\), the Cauchy integral formula for the first derivative states
+\[
+F'(a)
+=
+\frac{1}{2\pi i}
+\int_C\frac{F(z)}{(z-a)^2}\,dz.
+\]
+Apply this with \(C=\{|z|=2\}\), \(a=1\), and \(F(z)=e^{\pi z}\), using step <1>1.
+:::
+
+<1>3. One has
+\[
+F'(1)=\pi e^\pi.
+\]
+
+::: {.proof}
+Differentiating gives
+\[
+F'(z)=\pi e^{\pi z}.
+\]
+Evaluating at \(z=1\) gives the claim.
+:::
+
+<1>4. Therefore
+\[
+\boxed{\displaystyle
+\int_{|z|=2}\frac{e^{\pi z}}{(z-1)^2}\,dz
+=2\pi^2 i e^\pi.}
+\]
+
+::: {.proof}
+Substitute step <1>3 into the identity in step <1>2:
+\[
+2\pi i\,F'(1)
+=
+2\pi i\cdot\pi e^\pi
+=
+2\pi^2 i e^\pi.
+\]
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested contour integral.
+:::
+:::
