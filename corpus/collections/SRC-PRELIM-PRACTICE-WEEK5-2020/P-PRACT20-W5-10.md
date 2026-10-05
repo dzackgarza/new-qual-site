@@ -21,3 +21,117 @@ Suppose that subgroups $H$ and $K$ of some group have order $12$ and $30$ repect
 
 (a) $30$ (b) $60$ (c) $120$ (d) $360$ (e) countable infinity
 :::
+
+::: {.solution}
+<1>1. If $\langle H,K\rangle$ is finite, then its order is divisible by
+\[
+\operatorname{lcm}(12,30)=60.
+\]
+
+::: {.proof}
+Both
+\[
+H\le\langle H,K\rangle
+\qquad\text{and}\qquad
+K\le\langle H,K\rangle.
+\]
+If $\langle H,K\rangle$ is finite, Lagrange's theorem gives
+\[
+12\mid|\langle H,K\rangle|
+\qquad\text{and}\qquad
+30\mid|\langle H,K\rangle|.
+\]
+Hence their least common multiple $60$ divides the order.
+:::
+
+<1>2. Therefore
+\[
+\boxed{30}
+\]
+cannot be the order of $\langle H,K\rangle$.
+
+::: {.proof}
+The integer $30$ is not divisible by $60$, contradicting step <1>1.
+:::
+
+<1>3. The choice $60$ can occur.
+
+::: {.proof}
+Take the cyclic group
+\[
+G=\mathbb Z_{60}.
+\]
+Its unique subgroups of orders $12$ and $30$ generate the subgroup whose
+order is
+\[
+\operatorname{lcm}(12,30)=60,
+\]
+namely all of $G$.
+:::
+
+<1>4. The choices $120$ and $360$ can occur.
+
+::: {.proof}
+For $120$, take
+\[
+G=\mathbb Z_4\times\mathbb Z_2\times\mathbb Z_3\times\mathbb Z_5.
+\]
+Let
+\[
+H=\mathbb Z_4\times\{0\}\times\mathbb Z_3\times\{0\},
+\]
+so $|H|=12$, and let
+\[
+K=\{0\}\times\mathbb Z_2\times\mathbb Z_3\times\mathbb Z_5,
+\]
+so $|K|=30$. These subgroups together generate every direct factor, hence
+\[
+\langle H,K\rangle=G
+\]
+has order $120$.
+
+For $360$, take
+\[
+G=\mathbb Z_4\times\mathbb Z_2\times
+\mathbb Z_3\times\mathbb Z_3\times\mathbb Z_5.
+\]
+Let $H$ use the $\mathbb Z_4$ factor and the first $\mathbb Z_3$ factor, and
+let $K$ use the $\mathbb Z_2$ factor, the second $\mathbb Z_3$ factor, and
+the $\mathbb Z_5$ factor. Then
+\[
+|H|=12,\qquad |K|=30,
+\]
+and together they generate $G$, which has order $360$.
+:::
+
+<1>5. Countable infinity can occur.
+
+::: {.proof}
+Take the free product
+\[
+G=C_{12}*C_{30}.
+\]
+The two canonical free factors are subgroups of orders $12$ and $30$, and by
+definition they generate all of $G$. The free product of two nontrivial
+finite groups is countably infinite here, so
+\[
+|\langle C_{12},C_{30}\rangle|=\aleph_0.
+\]
+:::
+
+<1>6. Hence the unique impossible choice is
+\[
+\boxed{\text{(a) }30}.
+\]
+
+::: {.proof}
+Step <1>2 rules out $30$, while steps <1>3 through <1>5 realize every other
+listed possibility.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 gives the requested answer.
+:::
+:::
