@@ -3316,3 +3316,22 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   printed formula.
 - **Repair:** TODO.md section 7 / issue #2. `P-PRACT20-W5-04` supplies the
   correct four endomorphisms and explicitly identifies the source error.
+
+### Week 5 Practice Problem 28 drops the minus sign in the contour integral
+
+- **Object and need:** `P-PRACT20-W5-28` in
+  `SRC-PRELIM-PRACTICE-WEEK5-2020`. The problem asks for the positively
+  oriented integral of `sin(z) - cos(z)/(z-pi/4)` around `|z|=pi`.
+- **Observed evidence:** `assets/attachments/Week5_solns.pdf` correctly
+  computes the residue of `cos(z)/(z-pi/4)` as `cos(pi/4)=sqrt(2)/2`, but
+  its final integral is positive `sqrt(2) pi i`, dropping the minus sign
+  present in the original integrand.
+- **Impact and owner:** the supplied numerical answer has the wrong sign.
+  The entire sine term contributes zero, while Cauchy's formula gives
+  `-2 pi i cos(pi/4)=-sqrt(2) pi i`.
+- **Expected result:** retain the source problem and give the negative value,
+  explicitly preserving the sign of the pole term.
+- **Uncertainty:** none; the sign follows directly from linearity of the
+  contour integral and the printed integrand.
+- **Repair:** TODO.md section 7 / issue #2. `P-PRACT20-W5-28` supplies the
+  corrected value and derivation.
