@@ -18,3 +18,132 @@ audit:
 ::: {.problem}
 Let $f ~ \in ~ { \cal F } [ X ]$ Prove that $f ( X + Y ) = f ( X ) + f ( Y )$ if and only if $f \ =$ $a _ { 0 } X + a _ { 1 } X ^ { p } + \ldots + a _ { n } X ^ { p ^ { n } }$ for some $n \geq 0$ and $a _ { 0 } , . . . , a _ { n } \in F$
 :::
+
+::: {.solution}
+Write
+$$
+f(X)=\sum_{m=0}^d c_mX^m.
+$$
+
+<1>1. If
+$$
+f(X)=a_0X+a_1X^p+\cdots+a_nX^{p^n},
+$$
+then
+$$
+f(X+Y)=f(X)+f(Y).
+$$
+
+::: {.proof}
+In characteristic $p$, the Frobenius identity gives
+$$
+(X+Y)^p=X^p+Y^p.
+$$
+Iterating it yields
+$$
+(X+Y)^{p^i}=X^{p^i}+Y^{p^i}
+$$
+for every $i\geq0$. Therefore
+$$
+\begin{aligned}
+f(X+Y)
+&=\sum_{i=0}^n a_i(X+Y)^{p^i}\\
+&=\sum_{i=0}^n a_iX^{p^i}
++\sum_{i=0}^n a_iY^{p^i}\\
+&=f(X)+f(Y).
+\end{aligned}
+$$
+:::
+
+<1>2. Conversely, assume
+$$
+f(X+Y)=f(X)+f(Y).
+$$
+Then $c_0=0$.
+
+::: {.proof}
+Set $X=Y=0$. Then
+$$
+f(0)=f(0)+f(0),
+$$
+so $f(0)=0$. Hence the constant coefficient $c_0$ is zero.
+:::
+
+<1>3. If $m\geq1$ and $c_m\neq0$, then
+$$
+\binom{m}{k}=0
+$$
+in $F$ for every $1\leq k\leq m-1$.
+
+::: {.proof}
+Expanding the assumed identity gives
+$$
+0=f(X+Y)-f(X)-f(Y)
+=\sum_{m=1}^d c_m
+\sum_{k=1}^{m-1}\binom{m}{k}X^kY^{m-k}.
+$$
+Terms coming from different values of $m$ have different total degree. Hence for fixed $m$ and $1\leq k\leq m-1$, the coefficient of $X^kY^{m-k}$ is
+$$
+c_m\binom{m}{k},
+$$
+which must vanish. If $c_m\neq0$, then $\binom{m}{k}=0$ in $F$.
+:::
+
+<1>4. If every intermediate binomial coefficient
+$$
+\binom{m}{k},
+\qquad 1\leq k\leq m-1,
+$$
+vanishes in characteristic $p$, then $m$ is a power of $p$.
+
+::: {.proof}
+Write
+$$
+m=p^rq,
+$$
+where $r\geq0$ and $p\nmid q$. Suppose $q>1$. Then
+$$
+1\leq p^r<m.
+$$
+In the polynomial ring $\FF_p[T]$,
+$$
+(1+T)^m
+=\left((1+T)^{p^r}\right)^q
+=\left(1+T^{p^r}\right)^q,
+$$
+because repeated Frobenius gives $(1+T)^{p^r}=1+T^{p^r}$. The coefficient of $T^{p^r}$ on the left is
+$$
+\binom{m}{p^r},
+$$
+whereas on the right it is $q$. Thus
+$$
+\binom{m}{p^r}\equiv q\not\equiv0\pmod p,
+$$
+contradicting the hypothesis. Therefore $q=1$, so $m=p^r$.
+:::
+
+<1>5. Every exponent occurring in $f$ with nonzero coefficient is a power of $p$.
+
+::: {.proof}
+Let $m\geq1$ with $c_m\neq0$. By step <1>3, all intermediate binomial coefficients of $m$ vanish in $F$, hence modulo $p$. Step <1>4 therefore gives
+$$
+m=p^r
+$$
+for some $r\geq0$.
+:::
+
+<1>6. There exist $n\geq0$ and $a_0,\ldots,a_n\in F$ such that
+$$
+\boxed{f(X)=a_0X+a_1X^p+\cdots+a_nX^{p^n}}.
+$$
+
+::: {.proof}
+By step <1>2, no constant term occurs. By step <1>5, every nonzero remaining term has exponent $p^i$ for some $i\geq0$. Let $n$ be at least the largest such $i$ and let $a_i$ be the coefficient of $X^{p^i}$, allowing $a_i=0$ when that power is absent. This gives the displayed form. The zero polynomial is included by taking $n=0$ and $a_0=0$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves the forward implication from the displayed form to additivity, and steps <1>2 through <1>6 prove the converse.
+:::
+:::
