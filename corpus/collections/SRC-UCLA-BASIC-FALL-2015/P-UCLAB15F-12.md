@@ -29,3 +29,133 @@ M=\begin{pmatrix}
 \]
 is positive definite.
 :::
+
+::: {.solution}
+Let
+\[
+\mathbf1=
+\begin{pmatrix}
+1\\
+\vdots\\
+1
+\end{pmatrix}
+\in\mathbb R^n
+\]
+and let
+\[
+D=\operatorname{diag}(1,2,\ldots,n).
+\]
+
+<1>1. One has
+\[
+\boxed{M=D+\mathbf1\mathbf1^t}.
+\]
+
+::: {.proof}
+The matrix
+\[
+\mathbf1\mathbf1^t
+\]
+has every entry equal to $1$.
+Adding
+\[
+D=\operatorname{diag}(1,2,\ldots,n)
+\]
+changes the diagonal entries to
+\[
+2,3,\ldots,n+1
+\]
+while leaving every off-diagonal entry equal to $1$.
+This is exactly $M$.
+:::
+
+<1>2. For every vector
+\[
+x=(x_1,\ldots,x_n)^t\in\mathbb R^n,
+\]
+one has
+\[
+x^tMx
+=
+\sum_{j=1}^n jx_j^2
++
+\left(\sum_{j=1}^n x_j\right)^2.
+\]
+
+::: {.proof}
+Using step <1>1,
+\[
+\begin{aligned}
+x^tMx
+&=
+x^tDx
++
+x^t\mathbf1\mathbf1^tx\\
+&=
+\sum_{j=1}^n jx_j^2
++
+(\mathbf1^tx)^2\\
+&=
+\sum_{j=1}^n jx_j^2
++
+\left(\sum_{j=1}^n x_j\right)^2.
+\end{aligned}
+\]
+:::
+
+<1>3. If $x\ne0$, then
+\[
+\sum_{j=1}^n jx_j^2>0.
+\]
+
+::: {.proof}
+All coefficients
+\[
+j
+\]
+are positive.
+If $x\ne0$, at least one coordinate $x_j$ is nonzero, so the corresponding term
+\[
+jx_j^2
+\]
+is strictly positive, while every other term is nonnegative.
+:::
+
+<1>4. Hence for every nonzero $x$,
+\[
+\boxed{x^tMx>0}.
+\]
+
+::: {.proof}
+By step <1>2,
+\[
+x^tMx
+=
+\sum_{j=1}^n jx_j^2
++
+\left(\sum_{j=1}^n x_j\right)^2.
+\]
+The first term is strictly positive by step <1>3, and the second is nonnegative.
+Thus their sum is positive.
+:::
+
+<1>5. Therefore
+\[
+\boxed{M\text{ is positive definite}.}
+\]
+
+::: {.proof}
+A real symmetric matrix is positive definite precisely when
+\[
+x^tMx>0
+\]
+for every nonzero real vector $x$.
+Step <1>4 verifies this condition.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::
