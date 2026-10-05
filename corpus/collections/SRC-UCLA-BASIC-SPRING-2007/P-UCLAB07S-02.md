@@ -20,3 +20,179 @@ audit:
 Let $V,W,Z$ be $n$-dimensional vector spaces and let $T\colon V\to W$ and $U\colon W\to Z$ be linear.
 Prove, without using determinants, that if $UT\colon V\to Z$ is invertible, then both $T$ and $U$ are invertible.
 :::
+
+::: {.solution}
+<1>1. The map
+\[
+T:V\to W
+\]
+is injective.
+
+::: {.proof}
+Suppose
+\[
+Tv=0.
+\]
+Then
+\[
+(UT)v
+=
+U(Tv)
+=
+U(0)
+=0.
+\]
+Since
+\[
+UT
+\]
+is invertible, it is injective.
+Therefore
+\[
+v=0.
+\]
+Thus
+\[
+\ker T=\{0\},
+\]
+so $T$ is injective.
+:::
+
+<1>2. Since
+\[
+\dim V=\dim W=n,
+\]
+the injective map $T$ is surjective.
+
+::: {.proof}
+By rank-nullity,
+\[
+\dim V
+=
+\dim\ker T
++
+\dim\operatorname{im}T.
+\]
+Step <1>1 gives
+\[
+\dim\ker T=0.
+\]
+Therefore
+\[
+\dim\operatorname{im}T
+=
+n.
+\]
+But
+\[
+\operatorname{im}T
+\subseteq W
+\]
+and
+\[
+\dim W=n.
+\]
+Hence
+\[
+\operatorname{im}T=W.
+\]
+:::
+
+<1>3. Therefore $T$ is invertible.
+
+::: {.proof}
+Steps <1>1--<1>2 show that $T$ is both injective and surjective.
+A linear bijection between vector spaces has a linear inverse.
+Thus
+\[
+\boxed{T\text{ is invertible}.}
+\]
+:::
+
+<1>4. The map
+\[
+U:W\to Z
+\]
+is surjective.
+
+::: {.proof}
+Let
+\[
+z\in Z.
+\]
+Since
+\[
+UT:V\to Z
+\]
+is invertible, it is surjective.
+Therefore there exists
+\[
+v\in V
+\]
+such that
+\[
+UTv=z.
+\]
+Set
+\[
+w=Tv\in W.
+\]
+Then
+\[
+Uw=z.
+\]
+Thus every $z\in Z$ lies in the image of $U$.
+:::
+
+<1>5. Since
+\[
+\dim W=\dim Z=n,
+\]
+the surjective map $U$ is injective.
+
+::: {.proof}
+Rank-nullity gives
+\[
+\dim W
+=
+\dim\ker U
++
+\dim\operatorname{im}U.
+\]
+By step <1>4,
+\[
+\operatorname{im}U=Z,
+\]
+so
+\[
+\dim\operatorname{im}U=n.
+\]
+Hence
+\[
+n
+=
+\dim\ker U+n,
+\]
+which forces
+\[
+\dim\ker U=0.
+\]
+Thus $U$ is injective.
+:::
+
+<1>6. Therefore $U$ is invertible.
+
+::: {.proof}
+Steps <1>4--<1>5 show that $U$ is bijective.
+Thus
+\[
+\boxed{U\text{ is invertible}.}
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves that $T$ is invertible, and step <1>6 proves that $U$ is invertible, without using determinants.
+:::
+:::
