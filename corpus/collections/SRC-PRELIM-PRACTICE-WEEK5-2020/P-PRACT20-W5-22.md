@@ -19,3 +19,54 @@ audit:
 ::: {.problem}
 Put $(1 + i)^{10}$ in the form $a + bi$ for $a, b \in \RR$.
 :::
+
+::: {.solution}
+<1>1. One has
+\[
+(1+i)^2=2i.
+\]
+
+::: {.proof}
+Expanding gives
+\[
+(1+i)^2
+=1+2i+i^2
+=2i.
+\]
+:::
+
+<1>2. Therefore
+\[
+(1+i)^{10}=32i.
+\]
+
+::: {.proof}
+Using step <1>1,
+\[
+(1+i)^{10}
+=\bigl((1+i)^2\bigr)^5
+=(2i)^5
+=2^5i^5.
+\]
+Since
+\[
+i^5=i,
+\]
+the value is $32i$.
+:::
+
+<1>3. In the requested form,
+\[
+\boxed{(1+i)^{10}=0+32i}.
+\]
+
+::: {.proof}
+Step <1>2 gives real part $0$ and imaginary coefficient $32$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the requested expression.
+:::
+:::
