@@ -22,3 +22,309 @@ Prove existence and uniqueness of a nonnegative continuous function $f:[0,1]\to[
 f(x)=1-\left(\int_0^x t f(t)\,dt\right)^2.
 \]
 :::
+
+::: {.solution}
+Suppose first that $f:[0,1]\to[0,1]$ is a continuous solution, and define
+\[
+F(x)
+=
+\int_0^x t f(t)\,dt.
+\]
+
+<1>1. The function $F$ is continuously differentiable and satisfies
+\[
+F'(x)=xf(x),
+\qquad
+F(0)=0.
+\]
+
+::: {.proof}
+The integrand
+\[
+t\longmapsto tf(t)
+\]
+is continuous.
+The fundamental theorem of calculus therefore gives
+\[
+F'(x)=xf(x).
+\]
+Also,
+\[
+F(0)=0.
+\]
+:::
+
+<1>2. The integral equation is equivalent to
+\[
+\boxed{
+F'(x)=x\bigl(1-F(x)^2\bigr),
+\qquad
+F(0)=0.
+}
+\]
+
+::: {.proof}
+The original equation says
+\[
+f(x)=1-F(x)^2.
+\]
+Substitute this into the identity
+\[
+F'(x)=xf(x)
+\]
+from step <1>1.
+:::
+
+<1>3. For every
+\[
+x\in[0,1],
+\]
+one has
+\[
+0\le F(x)\le\frac{x^2}{2}\le\frac12.
+\]
+
+::: {.proof}
+Since
+\[
+0\le f(t)\le1,
+\]
+one has
+\[
+0
+\le
+F(x)
+=
+\int_0^x tf(t)\,dt
+\le
+\int_0^x t\,dt
+=
+\frac{x^2}{2}.
+\]
+:::
+
+<1>4. Since
+\[
+|F(x)|<1,
+\]
+one may divide the differential equation in step <1>2 by
+\[
+1-F(x)^2
+\]
+to obtain
+\[
+\frac{F'(x)}{1-F(x)^2}
+=
+x.
+\]
+
+::: {.proof}
+Step <1>3 gives
+\[
+0\le F(x)\le\frac12<1.
+\]
+Hence the denominator is strictly positive.
+:::
+
+<1>5. Integrating from $0$ to $x$ gives
+\[
+\operatorname{arctanh}F(x)
+=
+\frac{x^2}{2}.
+\]
+
+::: {.proof}
+An antiderivative of
+\[
+\frac1{1-u^2}
+\]
+on
+\[
+(-1,1)
+\]
+is
+\[
+\operatorname{arctanh}u.
+\]
+Thus step <1>4 gives
+\[
+\operatorname{arctanh}F(x)
+-
+\operatorname{arctanh}F(0)
+=
+\int_0^x s\,ds
+=
+\frac{x^2}{2}.
+\]
+Since
+\[
+F(0)=0,
+\]
+the initial term vanishes.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+F(x)
+=
+\tanh\left(\frac{x^2}{2}\right).
+}
+\]
+
+::: {.proof}
+Apply the inverse function
+\[
+\tanh
+\]
+to both sides of step <1>5.
+:::
+
+<1>7. Any continuous solution must therefore satisfy
+\[
+\boxed{
+f(x)
+=
+1-
+\tanh^2\left(\frac{x^2}{2}\right)
+=
+\operatorname{sech}^2\left(\frac{x^2}{2}\right).
+}
+\]
+
+::: {.proof}
+The integral equation gives
+\[
+f(x)=1-F(x)^2.
+\]
+Substitute step <1>6 and use
+\[
+1-\tanh^2u
+=
+\operatorname{sech}^2u.
+\]
+This proves uniqueness if a solution exists.
+:::
+
+<1>8. Define
+\[
+\boxed{
+f_0(x)
+=
+\operatorname{sech}^2\left(\frac{x^2}{2}\right).
+}
+\]
+Then
+\[
+f_0:[0,1]\to[0,1]
+\]
+is continuous and nonnegative.
+
+::: {.proof}
+The function $\operatorname{sech}^2$ is continuous and takes values in
+\[
+(0,1].
+\]
+Composing with
+\[
+x\mapsto x^2/2
+\]
+preserves continuity.
+:::
+
+<1>9. For
+\[
+F_0(x)
+=
+\tanh\left(\frac{x^2}{2}\right),
+\]
+one has
+\[
+F_0'(x)
+=
+x f_0(x)
+\]
+and
+\[
+F_0(0)=0.
+\]
+
+::: {.proof}
+Differentiate:
+\[
+\begin{aligned}
+F_0'(x)
+&=
+\operatorname{sech}^2\left(\frac{x^2}{2}\right)
+\cdot x\\
+&=
+x f_0(x).
+\end{aligned}
+\]
+Also,
+\[
+F_0(0)=\tanh0=0.
+\]
+:::
+
+<1>10. Hence
+\[
+\int_0^x t f_0(t)\,dt
+=
+F_0(x)
+=
+\tanh\left(\frac{x^2}{2}\right).
+\]
+
+::: {.proof}
+Integrate the differential identity in step <1>9 from $0$ to $x$.
+:::
+
+<1>11. The function $f_0$ satisfies the original integral equation.
+
+::: {.proof}
+By step <1>10,
+\[
+\left(
+\int_0^x t f_0(t)\,dt
+\right)^2
+=
+\tanh^2\left(\frac{x^2}{2}\right).
+\]
+Therefore
+\[
+\begin{aligned}
+1-
+\left(
+\int_0^x t f_0(t)\,dt
+\right)^2
+&=
+1-\tanh^2\left(\frac{x^2}{2}\right)\\
+&=
+\operatorname{sech}^2\left(\frac{x^2}{2}\right)\\
+&=
+f_0(x).
+\end{aligned}
+\]
+Thus existence holds.
+:::
+
+<1>12. Therefore there exists exactly one nonnegative continuous solution, namely
+\[
+\boxed{
+f(x)
+=
+\operatorname{sech}^2\left(\frac{x^2}{2}\right).
+}
+\]
+
+::: {.proof}
+Existence is step <1>11 and uniqueness is step <1>7.
+:::
+
+<1>13. Q.E.D.
+
+::: {.proof}
+Step <1>12 is the required existence-and-uniqueness statement.
+:::
+:::
