@@ -24,3 +24,179 @@ Call $S$ dense if every matrix in $\operatorname{Mat}(3,\mathbb C)$ is a limit o
 
 2. Prove that the set of matrices with one Jordan block is not dense in $\operatorname{Mat}(3,\mathbb C)$.
 :::
+
+::: {.solution}
+<1>1. Let
+\[
+A\in\operatorname{Mat}(3,\mathbb C).
+\]
+By Schur triangularization, there exists a unitary matrix $U$ such that
+\[
+U^*AU
+=
+T
+\]
+is upper triangular.
+
+::: {.proof}
+This is the complex Schur theorem.
+:::
+
+<1>2. Write the diagonal entries of $T$ as
+\[
+\lambda_1,\lambda_2,\lambda_3.
+\]
+For every $\varepsilon>0$, choose pairwise distinct complex numbers
+\[
+\mu_1,\mu_2,\mu_3
+\]
+such that
+\[
+|\mu_i-\lambda_i|<\varepsilon.
+\]
+
+::: {.proof}
+Each open disk
+\[
+B(\lambda_i,\varepsilon)
+\]
+contains infinitely many points.
+Choose the $\mu_i$ successively, avoiding the finitely many previous choices.
+:::
+
+<1>3. Let $T_\varepsilon$ be obtained from $T$ by replacing $\lambda_i$ by $\mu_i$ on the diagonal.
+Then $T_\varepsilon$ has three distinct eigenvalues and is diagonalizable.
+
+::: {.proof}
+The eigenvalues of an upper-triangular matrix are its diagonal entries.
+Thus
+\[
+\sigma(T_\varepsilon)
+=
+\{\mu_1,\mu_2,\mu_3\}.
+\]
+They are pairwise distinct by step <1>2.
+A $3\times3$ matrix with three distinct eigenvalues has three linearly independent eigenvectors and is therefore diagonalizable.
+:::
+
+<1>4. Define
+\[
+A_\varepsilon
+=
+UT_\varepsilon U^*.
+\]
+Then
+\[
+A_\varepsilon\to A
+\]
+and each $A_\varepsilon$ has distinct eigenvalues.
+
+::: {.proof}
+Similarity preserves eigenvalues, so $A_\varepsilon$ has the same three distinct eigenvalues as $T_\varepsilon$.
+Also,
+\[
+A_\varepsilon-A
+=
+U(T_\varepsilon-T)U^*,
+\]
+and
+\[
+T_\varepsilon-T\to0.
+\]
+Hence
+\[
+A_\varepsilon\to A.
+\]
+:::
+
+<1>5. Therefore matrices with distinct eigenvalues are dense in
+\[
+\boxed{\operatorname{Mat}(3,\mathbb C)}.
+\]
+
+::: {.proof}
+The matrix $A$ was arbitrary, and step <1>4 constructs matrices with distinct eigenvalues arbitrarily close to it.
+This proves part 1.
+:::
+
+<1>6. Let
+\[
+D
+=
+\operatorname{diag}(0,1,2).
+\]
+Then there exists an open neighborhood of $D$ in which every matrix has three distinct eigenvalues.
+
+::: {.proof}
+The discriminant of the characteristic polynomial is a polynomial in its coefficients, and those coefficients are polynomial functions of the matrix entries.
+Thus the discriminant
+\[
+\Delta(A)
+\]
+is a continuous polynomial function on
+\[
+\operatorname{Mat}(3,\mathbb C).
+\]
+
+For
+\[
+D=\operatorname{diag}(0,1,2),
+\]
+the characteristic polynomial is
+\[
+t(t-1)(t-2),
+\]
+which has three distinct roots.
+Hence
+\[
+\Delta(D)\ne0.
+\]
+By continuity, $\Delta(A)$ remains nonzero for all matrices $A$ in some open neighborhood of $D$.
+Nonzero discriminant means the characteristic polynomial has no repeated root, so every matrix in that neighborhood has three distinct eigenvalues.
+:::
+
+<1>7. Any $3\times3$ matrix with one Jordan block has only one eigenvalue.
+
+::: {.proof}
+A single $3\times3$ Jordan block has the form
+\[
+J_3(\lambda)
+=
+\begin{pmatrix}
+\lambda&1&0\\
+0&\lambda&1\\
+0&0&\lambda
+\end{pmatrix}.
+\]
+Its characteristic polynomial is
+\[
+(t-\lambda)^3.
+\]
+Thus any matrix similar to a single Jordan block has exactly one eigenvalue, of algebraic multiplicity $3$.
+:::
+
+<1>8. Hence the open neighborhood from step <1>6 contains no matrix with one Jordan block.
+
+::: {.proof}
+Every matrix in that neighborhood has three distinct eigenvalues by step <1>6.
+Every matrix with one Jordan block has only one eigenvalue by step <1>7.
+Thus the two sets are disjoint.
+:::
+
+<1>9. Therefore the set of matrices with one Jordan block is not dense in
+\[
+\boxed{\operatorname{Mat}(3,\mathbb C)}.
+\]
+
+::: {.proof}
+A dense subset must meet every nonempty open set.
+Step <1>8 exhibits a nonempty open neighborhood that contains no matrix with one Jordan block.
+This proves part 2.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves part 1, and step <1>9 proves part 2.
+:::
+:::
