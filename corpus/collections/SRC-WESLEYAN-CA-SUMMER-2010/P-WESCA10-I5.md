@@ -18,3 +18,27 @@ audit:
 ::: {.problem}
 State Morera's theorem.
 :::
+
+::: {.solution}
+<1>1. Morera's theorem states the following.
+
+::: {.proof}
+Let $D\subseteq\mathbb C$ be a domain and let
+$$
+f:D\to\mathbb C
+$$
+be continuous. Suppose that for every triangle $T$ whose closure is contained in $D$,
+$$
+\int_{\partial T}f(z)\,dz=0.
+$$
+Then $f$ is holomorphic on $D$.
+
+Equivalently, it is enough to assume that the integral of $f$ around every closed triangular path lying with its interior in $D$ vanishes.
+:::
+
+<1>2. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the requested precise statement, including the continuity hypothesis and the triangular-contour condition.
+:::
+:::
