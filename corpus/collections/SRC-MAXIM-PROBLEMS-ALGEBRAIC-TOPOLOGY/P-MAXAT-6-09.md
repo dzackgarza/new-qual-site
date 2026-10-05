@@ -19,3 +19,108 @@ audit:
 Show that $\mathbb { C P } ^ { 2 n }$ is not an oriented boundary.
 (Hint: use the Pontrjagin number)
 :::
+
+::: {.solution}
+Let
+\[
+M=\mathbb{CP}^{2n},
+\qquad n\geq1,
+\]
+and let
+\[
+x\in H^2(M;\mathbb Z)
+\]
+be the positive generator, normalized by
+\[
+\langle x^{2n},[M]\rangle=1.
+\]
+
+<1>1. The total Pontryagin class of $M$ is
+\[
+p(TM)=(1+x^2)^{2n+1}.
+\]
+
+::: {.proof}
+The complex Euler sequence gives the stable complex-bundle identity
+\[
+T\mathbb{CP}^{2n}\oplus\varepsilon^1_{\mathbb C}
+\cong(2n+1)\gamma^*,
+\]
+where $c_1(\gamma^*)=x$. The underlying real bundle of $\gamma^*$ has total Pontryagin class $1+x^2$. Pontryagin classes are stable and multiplicative, giving the formula.
+:::
+
+<1>2. In particular,
+\[
+p_n(TM)=\binom{2n+1}{n}x^{2n}.
+\]
+
+::: {.proof}
+Expand the formula in step <1>1:
+\[
+(1+x^2)^{2n+1}
+=\sum_{j=0}^{2n+1}\binom{2n+1}{j}x^{2j}.
+\]
+The degree-$4n$ component is obtained at $j=n$ and is exactly $p_n$.
+:::
+
+<1>3. Hence the Pontryagin number
+\[
+\langle p_n(TM),[M]\rangle
+\]
+is nonzero:
+\[
+\langle p_n(TM),[M]\rangle
+=\binom{2n+1}{n}\ne0.
+\]
+
+::: {.proof}
+Substitute step <1>2 and use the normalization
+\[
+\langle x^{2n},[M]\rangle=1.
+\]
+The binomial coefficient is a positive integer.
+:::
+
+<1>4. Every Pontryagin number of an oriented boundary is zero.
+
+::: {.proof}
+Suppose a closed oriented $4n$-manifold $N$ is the oriented boundary of a compact oriented $(4n+1)$-manifold $W$. Along the boundary,
+\[
+TW|_N\cong TN\oplus\varepsilon^1,
+\]
+so stability and naturality give
+\[
+p_i(TN)=i^*p_i(TW),
+\]
+where $i:N\hookrightarrow W$. Thus every degree-$4n$ polynomial $P(p_1(TN),\ldots,p_n(TN))$ is the restriction of the corresponding class on $W$. Its characteristic number is
+\[
+\langle i^*P,[N]\rangle.
+\]
+Since $[N]=\partial[W,N]$, the Kronecker pairing with a restricted absolute cohomology class vanishes by the cohomological boundary formula. Hence every Pontryagin number of $N$ is zero.
+:::
+
+<1>5. Therefore $\mathbb{CP}^{2n}$ cannot be an oriented boundary.
+
+::: {.proof}
+If $M=\mathbb{CP}^{2n}$ bounded orientably, step <1>4 would force
+\[
+\langle p_n(TM),[M]\rangle=0.
+\]
+Step <1>3 computes the same integer as the nonzero value $\binom{2n+1}{n}$, a contradiction.
+:::
+
+<1>6. Thus
+\[
+\boxed{\mathbb{CP}^{2n}\text{ is not an oriented boundary}.}
+\]
+
+::: {.proof}
+This is the conclusion of step <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 proves the required oriented non-bordism statement.
+:::
+:::
