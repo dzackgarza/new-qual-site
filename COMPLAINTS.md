@@ -3132,3 +3132,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none; this is the standard empty-product convention.
 - **Repair:** `P-WESTOP13-I2` records the exception and proves the intended
   nonempty-index-set statement.
+
+### UCLA Fall 2001 Basic Problem 1 omits the nonempty-set hypothesis
+
+- **Object and need:** `P-UCLAB01F-01` in `SRC-UCLA-BASIC-FALL-2001`.
+  The problem asks for a maximizer of a continuous real-valued function on a
+  compact subset `K\subset\mathbb R`.
+- **Observed evidence:** page 1 of `assets/attachments/basic-01F.pdf` states
+  only that `K` is compact and asks for a point `x_0\in K` satisfying
+  `f(x)\le f(x_0)` for every `x\in K`. Under the standard convention,
+  the empty set is compact. For `K=\varnothing`, there is no point
+  `x_0\in K`, so the conclusion is false.
+- **Impact and owner:** the printed statement has a degenerate counterexample.
+  For every nonempty compact `K`, the intended conclusion is the extreme
+  value theorem.
+- **Expected result:** preserve the source-faithful statement, record the
+  empty-set exception, and prove the intended theorem under the missing
+  hypothesis `K\ne\varnothing`.
+- **Uncertainty:** none; `K=\varnothing` settles the literal statement.
+- **Repair:** `P-UCLAB01F-01` records the exception and proves the intended
+  nonempty-compact-set statement.
