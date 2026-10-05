@@ -23,3 +23,160 @@ a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2<\frac1{10}.
 \]
 Prove that $I+A$ is invertible.
 :::
+
+::: {.solution}
+Let
+\[
+\|A\|_F
+=
+\left(
+a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2
+\right)^{1/2}
+\]
+be the Frobenius norm.
+
+<1>1. The hypothesis gives
+\[
+\|A\|_F<\frac1{\sqrt{10}}<1.
+\]
+
+::: {.proof}
+Take square roots of
+\[
+a_{11}^2+a_{12}^2+a_{21}^2+a_{22}^2
+<
+\frac1{10}.
+\]
+:::
+
+<1>2. For every
+\[
+x\in\mathbb R^2,
+\]
+one has
+\[
+\|Ax\|_2
+\le
+\|A\|_F\|x\|_2.
+\]
+
+::: {.proof}
+Write
+\[
+x=
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}.
+\]
+For each row $i$, Cauchy--Schwarz gives
+\[
+\left(
+a_{i1}x_1+a_{i2}x_2
+\right)^2
+\le
+\left(
+a_{i1}^2+a_{i2}^2
+\right)
+\left(
+x_1^2+x_2^2
+\right).
+\]
+Sum over
+\[
+i=1,2.
+\]
+Then
+\[
+\|Ax\|_2^2
+\le
+\|A\|_F^2\|x\|_2^2.
+\]
+Take square roots.
+:::
+
+<1>3. Suppose
+\[
+(I+A)x=0.
+\]
+Then
+\[
+x=-Ax.
+\]
+
+::: {.proof}
+Rearrange the equation
+\[
+x+Ax=0.
+\]
+:::
+
+<1>4. If
+\[
+x\ne0,
+\]
+then steps <1>1--<1>3 give a contradiction.
+
+::: {.proof}
+By step <1>3,
+\[
+\|x\|_2
+=
+\|Ax\|_2.
+\]
+Step <1>2 gives
+\[
+\|Ax\|_2
+\le
+\|A\|_F\|x\|_2.
+\]
+Thus
+\[
+\|x\|_2
+\le
+\|A\|_F\|x\|_2.
+\]
+If
+\[
+x\ne0,
+\]
+divide by
+\[
+\|x\|_2>0
+\]
+to obtain
+\[
+1\le\|A\|_F,
+\]
+contradicting step <1>1.
+:::
+
+<1>5. Therefore
+\[
+\ker(I+A)=\{0\}.
+\]
+
+::: {.proof}
+Step <1>4 rules out every nonzero vector in the kernel.
+:::
+
+<1>6. Since $I+A$ is a linear map
+\[
+\mathbb R^2\to\mathbb R^2,
+\]
+trivial kernel implies invertibility.
+
+::: {.proof}
+For an endomorphism of a finite-dimensional vector space, injectivity is equivalent to surjectivity.
+Step <1>5 gives injectivity.
+Therefore
+\[
+\boxed{I+A\text{ is invertible}.}
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::
