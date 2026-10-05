@@ -34,3 +34,270 @@ E=\left\{f\in L^2(\mathbb R):\limsup_{h\to0}Q(f,h)\le1\right\}
 \]
 is closed in $L^2(\mathbb R)$.
 :::
+
+::: {.solution}
+<1>1. For every $f\in L^2(\mathbb R)$ and $h>0$,
+\[
+\boxed{
+Q(f,h)
+=
+\frac1{h^2}
+\int_{\mathbb R}|f(x+h)-f(x)|^2\,dx}.
+\]
+
+::: {.proof}
+Set
+\[
+A_h
+=
+\int_{\mathbb R}f(x+h)\overline{f(x)}\,dx.
+\]
+By the change of variables $y=x-h$,
+\[
+\int_{\mathbb R}f(x-h)\overline{f(x)}\,dx
+=
+\int_{\mathbb R}f(y)\overline{f(y+h)}\,dy
+=
+\overline{A_h}.
+\]
+Therefore
+\[
+\begin{aligned}
+h^2Q(f,h)
+&=
+2\|f\|_2^2
+-A_h
+-\overline{A_h}\\
+&=
+2\|f\|_2^2
+-2\operatorname{Re}A_h.
+\end{aligned}
+\]
+Translation preserves the $L^2$ norm, so
+\[
+\begin{aligned}
+\|f(\cdot+h)-f\|_2^2
+&=
+\|f(\cdot+h)\|_2^2
++\|f\|_2^2
+-2\operatorname{Re}A_h\\
+&=
+2\|f\|_2^2
+-2\operatorname{Re}A_h.
+\end{aligned}
+\]
+The two expressions are equal.
+:::
+
+<1>2. Hence
+\[
+\boxed{Q(f,h)\ge0}.
+\]
+
+::: {.proof}
+The right-hand side in step <1>1 is a nonnegative squared norm divided by
+$h^2>0$.
+:::
+
+<1>3. Let $\widehat f$ denote the unitary Fourier transform of $f$. Then
+\[
+\boxed{
+Q(f,h)
+=
+\int_{\mathbb R}
+\frac{4\sin^2(h\xi/2)}{h^2}
+|\widehat f(\xi)|^2\,d\xi}.
+\]
+
+::: {.proof}
+Translation satisfies
+\[
+\widehat{f(\cdot+h)}(\xi)
+=
+e^{ih\xi}\widehat f(\xi).
+\]
+By Plancherel and step <1>1,
+\[
+\begin{aligned}
+Q(f,h)
+&=
+\frac1{h^2}
+\int_{\mathbb R}
+|e^{ih\xi}-1|^2
+|\widehat f(\xi)|^2\,d\xi\\
+&=
+\int_{\mathbb R}
+\frac{2-2\cos(h\xi)}{h^2}
+|\widehat f(\xi)|^2\,d\xi\\
+&=
+\int_{\mathbb R}
+\frac{4\sin^2(h\xi/2)}{h^2}
+|\widehat f(\xi)|^2\,d\xi.
+\end{aligned}
+\]
+:::
+
+<1>4. For every $\xi\in\mathbb R$,
+\[
+\frac{4\sin^2(h\xi/2)}{h^2}
+\longrightarrow
+\xi^2
+\qquad(h\to0),
+\]
+and
+\[
+0
+\le
+\frac{4\sin^2(h\xi/2)}{h^2}
+\le
+\xi^2.
+\]
+
+::: {.proof}
+The limit follows from
+\[
+\frac{\sin t}{t}\to1.
+\]
+The bound follows from
+\[
+|\sin t|\le|t|.
+\]
+:::
+
+<1>5. For every $f\in L^2(\mathbb R)$,
+\[
+\boxed{
+\lim_{h\to0}Q(f,h)
+=
+\int_{\mathbb R}
+\xi^2|\widehat f(\xi)|^2\,d\xi}
+\]
+as an equality in $[0,\infty]$.
+
+::: {.proof}
+If
+\[
+\int_{\mathbb R}\xi^2|\widehat f(\xi)|^2\,d\xi<\infty,
+\]
+then steps <1>3 and <1>4 allow the dominated convergence theorem, yielding
+the equality.
+
+If the weighted integral is infinite, Fatou's lemma applied to step <1>3
+gives
+\[
+\begin{aligned}
+\liminf_{h\to0}Q(f,h)
+&\ge
+\int_{\mathbb R}
+\liminf_{h\to0}
+\frac{4\sin^2(h\xi/2)}{h^2}
+|\widehat f(\xi)|^2\,d\xi\\
+&=
+\int_{\mathbb R}
+\xi^2|\widehat f(\xi)|^2\,d\xi
+=\infty.
+\end{aligned}
+\]
+Thus $Q(f,h)\to\infty$ in this case.
+:::
+
+<1>6. Consequently,
+\[
+\boxed{
+E
+=
+\left\{
+f\in L^2(\mathbb R):
+\int_{\mathbb R}
+\xi^2|\widehat f(\xi)|^2\,d\xi
+\le1
+\right\}}.
+\]
+
+::: {.proof}
+By step <1>5, the limit of $Q(f,h)$ exists in $[0,\infty]$. Therefore
+\[
+\limsup_{h\to0}Q(f,h)
+\le1
+\]
+is equivalent to the displayed weighted Fourier integral being at most $1$.
+:::
+
+<1>7. Suppose
+\[
+f_n\in E
+\qquad\text{and}\qquad
+f_n\to f
+\]
+in $L^2(\mathbb R)$. Then
+\[
+\widehat f_n\to\widehat f
+\]
+in $L^2(\mathbb R)$.
+
+::: {.proof}
+This is Plancherel's theorem: the Fourier transform is unitary on
+$L^2(\mathbb R)$.
+:::
+
+<1>8. There is a subsequence
+\[
+\widehat f_{n_j}
+\]
+converging to $\widehat f$ almost everywhere.
+
+::: {.proof}
+Every $L^2$-convergent sequence has a subsequence converging pointwise almost
+everywhere. Apply this to the convergence in step <1>7.
+:::
+
+<1>9. One has
+\[
+\int_{\mathbb R}
+\xi^2|\widehat f(\xi)|^2\,d\xi
+\le1.
+\]
+
+::: {.proof}
+By step <1>8 and Fatou's lemma,
+\[
+\begin{aligned}
+\int_{\mathbb R}
+\xi^2|\widehat f(\xi)|^2\,d\xi
+&\le
+\liminf_{j\to\infty}
+\int_{\mathbb R}
+\xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi.
+\end{aligned}
+\]
+Since every $f_{n_j}\in E$, step <1>6 gives
+\[
+\int_{\mathbb R}
+\xi^2|\widehat f_{n_j}(\xi)|^2\,d\xi
+\le1.
+\]
+Hence the liminf is at most $1$.
+:::
+
+<1>10. Therefore
+\[
+\boxed{f\in E}.
+\]
+
+::: {.proof}
+Apply the characterization in step <1>6 to the estimate in step <1>9.
+:::
+
+<1>11. Thus $E$ is closed in $L^2(\mathbb R)$.
+
+::: {.proof}
+Every $L^2$ limit of a sequence in $E$ belongs to $E$ by steps <1>7 through
+<1>10.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves part (a), and step <1>11 proves part (b).
+:::
+:::
