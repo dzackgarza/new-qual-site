@@ -30,3 +30,148 @@ k&1&1&\cdots&1\\
 \]
 Use the eigenvalues to compute $\det(M)$.
 :::
+
+::: {.solution}
+Let
+\[
+\mathbf 1=
+\begin{pmatrix}
+1\\
+\vdots\\
+1
+\end{pmatrix}
+\in\mathbb R^n,
+\]
+and let
+\[
+J=\mathbf1\mathbf1^t
+\]
+be the all-ones matrix.
+
+<1>1. The matrix $M$ can be written as
+\[
+\boxed{M=(k-1)I+J}.
+\]
+
+::: {.proof}
+The matrix $(k-1)I$ contributes $k-1$ on the diagonal and $0$ off the diagonal.
+Adding $J$, which has every entry equal to $1$, produces diagonal entries
+\[
+(k-1)+1=k
+\]
+and off-diagonal entries $1$.
+:::
+
+<1>2. One has
+\[
+J\mathbf1=n\mathbf1.
+\]
+
+::: {.proof}
+Every row of $J$ consists of $n$ ones, so every coordinate of $J\mathbf1$ equals $n$.
+:::
+
+<1>3. If
+\[
+v\in\mathbf1^\perp,
+\]
+then
+\[
+Jv=0.
+\]
+
+::: {.proof}
+Since
+\[
+J=\mathbf1\mathbf1^t,
+\]
+one has
+\[
+Jv
+=
+\mathbf1(\mathbf1^tv).
+\]
+The condition $v\in\mathbf1^\perp$ means
+\[
+\mathbf1^tv=0.
+\]
+Therefore $Jv=0$.
+:::
+
+<1>4. The vector $\mathbf1$ is an eigenvector of $M$ with eigenvalue
+\[
+\boxed{k+n-1}.
+\]
+
+::: {.proof}
+Using steps <1>1--<1>2,
+\[
+\begin{aligned}
+M\mathbf1
+&=
+(k-1)\mathbf1+J\mathbf1\\
+&=
+(k-1)\mathbf1+n\mathbf1\\
+&=
+(k+n-1)\mathbf1.
+\end{aligned}
+\]
+:::
+
+<1>5. Every vector in $\mathbf1^\perp$ is an eigenvector of $M$ with eigenvalue
+\[
+\boxed{k-1}.
+\]
+
+::: {.proof}
+If $v\in\mathbf1^\perp$, then by steps <1>1 and <1>3,
+\[
+Mv
+=(k-1)v+Jv
+=(k-1)v.
+\]
+:::
+
+<1>6. The eigenvalues of $M$ are
+\[
+\boxed{k+n-1}
+\]
+with multiplicity $1$ and
+\[
+\boxed{k-1}
+\]
+with multiplicity $n-1$.
+
+::: {.proof}
+The space decomposes orthogonally as
+\[
+\mathbb R^n
+=
+\operatorname{span}\{\mathbf1\}
+\oplus
+\mathbf1^\perp.
+\]
+The first summand has dimension $1$ and carries the eigenvalue from step <1>4.
+The second has dimension $n-1$ and carries the eigenvalue from step <1>5.
+Together these account for all $n$ dimensions.
+:::
+
+<1>7. Therefore
+\[
+\boxed{
+\det(M)
+=(k+n-1)(k-1)^{n-1}
+}.
+\]
+
+::: {.proof}
+The determinant of a matrix is the product of its eigenvalues counted with algebraic multiplicity.
+Apply step <1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>6--<1>7 give the requested spectrum and determinant.
+:::
+:::
