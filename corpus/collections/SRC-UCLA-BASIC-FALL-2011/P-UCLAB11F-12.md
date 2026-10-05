@@ -24,3 +24,96 @@ Prove that
 x-y\in\ker A.
 \]
 :::
+
+::: {.solution}
+Let
+\[
+M=\operatorname{image}(A)\subseteq\mathbb R^m.
+\]
+
+<1>1. The nearest point in the subspace $M$ to $b$ is unique.
+
+::: {.proof}
+Suppose
+\[
+u,v\in M
+\]
+both minimize the Euclidean distance to $b$, and let
+\[
+d=\|b-u\|=\|b-v\|.
+\]
+Since $M$ is a subspace,
+\[
+\frac{u+v}{2}\in M.
+\]
+Using the parallelogram identity with
+\[
+p=b-u,
+\qquad
+q=b-v,
+\]
+one obtains
+\[
+\left\|b-\frac{u+v}{2}\right\|^2
+=
+\frac12\|b-u\|^2
++
+\frac12\|b-v\|^2
+-
+\frac14\|u-v\|^2.
+\]
+Thus
+\[
+\left\|b-\frac{u+v}{2}\right\|^2
+=
+d^2-\frac14\|u-v\|^2.
+\]
+If $u\ne v$, the right side is strictly smaller than $d^2$, contradicting minimality of $d$. Hence
+\[
+u=v.
+\]
+:::
+
+<1>2. Under the hypotheses of the problem,
+\[
+Ax=Ay.
+\]
+
+::: {.proof}
+The vectors $Ax$ and $Ay$ both belong to
+\[
+M=\operatorname{image}(A)
+\]
+and both have minimal distance to $b$. By uniqueness from step <1>1, they are equal.
+:::
+
+<1>3. One has
+\[
+A(x-y)=0.
+\]
+
+::: {.proof}
+By linearity of $A$ and step <1>2,
+\[
+A(x-y)
+=
+Ax-Ay
+=0.
+\]
+:::
+
+<1>4. Therefore
+\[
+\boxed{x-y\in\ker A}.
+\]
+
+::: {.proof}
+Step <1>3 is exactly the defining condition for membership in the kernel of $A$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
+:::
