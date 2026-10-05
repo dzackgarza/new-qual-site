@@ -3152,3 +3152,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none; `K=\varnothing` settles the literal statement.
 - **Repair:** `P-UCLAB01F-01` records the exception and proves the intended
   nonempty-compact-set statement.
+
+### UCLA Fall 2016 Basic Problem 5 allows the zero span
+
+- **Object and need:** `P-UCLAB16F-05` in `SRC-UCLA-BASIC-FALL-2016`.
+  The problem asks to prove that a complex number `\beta` preserving the
+  finite-dimensional `\mathbb Q`-span `V` of `\alpha_1,\ldots,\alpha_n` is
+  algebraic of degree at most `n`.
+- **Observed evidence:** the retained statement imposes no hypothesis that one
+  of the `\alpha_i` is nonzero. If all `\alpha_i=0`, then `V=\{0\}` and
+  `\beta V\subseteq V` holds for every complex `\beta`, including transcendental
+  numbers.
+- **Impact and owner:** the printed statement is false in the degenerate
+  zero-space case. If `V\ne\{0\}`, the intended argument works: for nonzero
+  `v\in V`, the `n+1` vectors `v,\beta v,\ldots,\beta^n v` are linearly
+  dependent over `\mathbb Q`.
+- **Expected result:** preserve the source statement, record the zero-span
+  counterexample, and prove the intended result under `V\ne\{0\}`.
+- **Uncertainty:** none; `V=\{0\}` makes the multiplier condition vacuous.
+- **Repair:** `P-UCLAB16F-05` records the exception and proves the corrected
+  nonzero-span statement.
