@@ -37,6 +37,14 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Wesleyan 2006 topology A5 is false for finite compact zero-dimensional spaces
+
+- **Object and need:** `P-WESTOP06-A5` in `SRC-WESLEYAN-TOP-2006`. Part 2 asks to prove that every compact Hausdorff zero-dimensional space satisfies \(wX=|\operatorname{clop}(X)|\).
+- **Observed evidence:** the current source-checked card states the claim with no infinitude hypothesis. If \(X\) is a discrete \(n\)-point space with \(1\le n<\infty\), then \(X\) is compact, Hausdorff, and zero-dimensional, \(wX=n\), while every subset is clopen, so \(|\operatorname{clop}(X)|=2^n\ne n\). In particular, the one-point space already gives \(1\ne2\).
+- **Impact and owner:** the literal statement on the card cannot receive a correct proof. For infinite compact Hausdorff zero-dimensional \(X\), the intended equality follows because \(\operatorname{clop}(X)\) is a basis, while every clopen subset is a finite union of members of a basis of size \(wX\).
+- **Uncertainty:** the mathematical counterexample is exact. The retained scan still needs direct inspection to determine whether the original exam included an omitted word such as “infinite” or whether the source itself stated the false finite case.
+- **Repair:** issue #2 / TODO.md section 7. Verify the original source wording, repair `P-WESTOP06-A5` source-faithfully, and then resume its ordinary source-review/prove/attach/commit chain.
+
 ### January 2005 Problem 3 is truncated after the induced-map symbol
 
 - **Object and need:** P-MH07-JAN05-03 in SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007. The source begins a degree-one-map problem for closed connected oriented manifolds but does not retain the induced map or requested conclusion.
