@@ -35,3 +35,112 @@ and
 \dim\operatorname{im}T=\dim\operatorname{im}T^t.
 \]
 :::
+
+::: {.solution}
+<1>1. One has
+\[
+(\operatorname{im}T)^0\subseteq\ker(T^t).
+\]
+
+::: {.proof}
+Let $f\in(\operatorname{im}T)^0$. For every $v\in V$,
+\[
+(T^tf)(v)=(f\circ T)(v)=f(Tv).
+\]
+Since $Tv\in\operatorname{im}T$ and $f$ vanishes on $\operatorname{im}T$, this value is $0$. Hence $T^tf=0$, so $f\in\ker(T^t)$.
+:::
+
+<1>2. One has
+\[
+\ker(T^t)\subseteq(\operatorname{im}T)^0.
+\]
+
+::: {.proof}
+Let $f\in\ker(T^t)$. Then
+\[
+f(Tv)=(T^tf)(v)=0
+\]
+for every $v\in V$. Every vector in $\operatorname{im}T$ has the form $Tv$, so $f$ vanishes on $\operatorname{im}T$. Thus $f\in(\operatorname{im}T)^0$.
+:::
+
+<1>3. Therefore
+\[
+\boxed{(\operatorname{im}T)^0=\ker(T^t)}.
+\]
+
+::: {.proof}
+Steps <1>1 and <1>2 prove the two inclusions.
+:::
+
+<1>4. If $Y$ is a subspace of a finite-dimensional real vector space $W$, then
+\[
+\dim Y^0=\dim W-\dim Y.
+\]
+
+::: {.proof}
+Let
+\[
+y_1,\ldots,y_r
+\]
+be a basis of $Y$, and extend it to a basis
+\[
+y_1,\ldots,y_r,w_{r+1},\ldots,w_m
+\]
+of $W$, where $m=\dim W$. Let
+\[
+y_1^*,\ldots,y_r^*,w_{r+1}^*,\ldots,w_m^*
+\]
+be the dual basis of $W^*$. A functional lies in $Y^0$ exactly when its coefficients on
+\[
+y_1^*,\ldots,y_r^*
+\]
+are zero. Hence
+\[
+Y^0=\operatorname{span}\{w_{r+1}^*,\ldots,w_m^*\},
+\]
+so
+\[
+\dim Y^0=m-r=\dim W-\dim Y.
+\]
+:::
+
+<1>5. The nullity of $T^t$ is
+\[
+\dim\ker(T^t)=\dim W-\dim\operatorname{im}T.
+\]
+
+::: {.proof}
+By step <1>3,
+\[
+\ker(T^t)=(\operatorname{im}T)^0.
+\]
+Apply step <1>4 with $Y=\operatorname{im}T\subseteq W$.
+:::
+
+<1>6. The ranks of $T$ and $T^t$ are equal:
+\[
+\boxed{\dim\operatorname{im}T=\dim\operatorname{im}T^t}.
+\]
+
+::: {.proof}
+Apply rank-nullity to
+\[
+T^t:W^*\to V^*.
+\]
+Since $\dim W^*=\dim W$, step <1>5 gives
+\[
+\begin{aligned}
+\dim\operatorname{im}T^t
+&=\dim W^*-\dim\ker(T^t)\\
+&=\dim W-(\dim W-\dim\operatorname{im}T)\\
+&=\dim\operatorname{im}T.
+\end{aligned}
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the first assertion, and step <1>6 proves the second.
+:::
+:::
