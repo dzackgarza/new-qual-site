@@ -40,3 +40,114 @@ F(\gamma(t))=x_0
 \qquad\text{for every }t\in(-\varepsilon,\varepsilon).
 \]
 :::
+
+::: {.solution}
+Write
+\[
+v_0=(a_0,b_0,c_0).
+\]
+
+<1>1. After relabeling the coordinates of $\mathbb R^3$ if necessary, the $2\times2$ matrix
+\[
+\frac{\partial(F_1,F_2)}{\partial(a,b)}(v_0)
+\]
+is invertible.
+
+::: {.proof}
+The derivative
+\[
+F'(v_0):\mathbb R^3\to\mathbb R^2
+\]
+is onto, so its $2\times3$ matrix has rank $2$. Therefore at least one of its $2\times2$ minors is nonzero. Permuting the three domain coordinates if necessary, take that minor to be the one corresponding to the first two coordinates $(a,b)$.
+:::
+
+<1>2. There exist an interval $I$ containing $c_0$ and a continuously differentiable map
+\[
+\phi:I\to\mathbb R^2,
+\qquad
+\phi(c_0)=(a_0,b_0),
+\]
+such that
+\[
+F(\phi(c),c)=x_0
+\]
+for every $c\in I$.
+
+::: {.proof}
+Define
+\[
+G(a,b,c)=F(a,b,c)-x_0.
+\]
+Then
+\[
+G(a_0,b_0,c_0)=0.
+\]
+By step <1>1, the derivative of $G$ with respect to the variables $(a,b)$ is invertible at $(a_0,b_0,c_0)$. The implicit function theorem therefore gives a neighborhood $I$ of $c_0$ and a continuously differentiable function
+\[
+\phi(c)=(\phi_1(c),\phi_2(c))
+\]
+with
+\[
+G(\phi(c),c)=0.
+\]
+Equivalently,
+\[
+F(\phi(c),c)=x_0.
+\]
+:::
+
+<1>3. There exists $\varepsilon>0$ such that
+\[
+(c_0-\varepsilon,c_0+\varepsilon)\subseteq I.
+\]
+
+::: {.proof}
+The set $I$ is an open neighborhood of $c_0$, so it contains some open interval centered at $c_0$.
+:::
+
+<1>4. Define
+\[
+\gamma:(-\varepsilon,\varepsilon)\to\mathbb R^3
+\]
+by
+\[
+\gamma(t)=\bigl(\phi_1(c_0+t),\phi_2(c_0+t),c_0+t\bigr).
+\]
+Then $\gamma$ is continuously differentiable and
+\[
+F(\gamma(t))=x_0
+\]
+for every $t\in(-\varepsilon,\varepsilon)$.
+
+::: {.proof}
+The map $\phi$ is continuously differentiable by step <1>2, so $\gamma$ is continuously differentiable. By step <1>3, $c_0+t\in I$ for every $|t|<\varepsilon$. Step <1>2 therefore gives
+\[
+F(\gamma(t))
+=
+F(\phi(c_0+t),c_0+t)
+=
+x_0.
+\]
+:::
+
+<1>5. One has
+\[
+\gamma'(0)\ne0.
+\]
+
+::: {.proof}
+Differentiating the formula in step <1>4 gives
+\[
+\gamma'(0)
+=
+\bigl(\phi_1'(c_0),\phi_2'(c_0),1\bigr).
+\]
+Its third coordinate is $1$, so the vector is nonzero.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>4 constructs the required continuously differentiable curve in the level set $F^{-1}(x_0)$, and step <1>5 proves that it is nonconstant to first order at $0$.
+:::
+:::
