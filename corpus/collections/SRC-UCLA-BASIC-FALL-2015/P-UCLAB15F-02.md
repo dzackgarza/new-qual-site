@@ -23,3 +23,123 @@ Show that if $g,h:[a,b]\to\mathbb R$ are continuous and $h\ge0$, then there is $
 \int_a^b g(x)h(x)\,dx=g(c)\int_a^b h(x)\,dx.
 \]
 :::
+
+::: {.solution}
+<1>1. Let
+\[
+m=\min_{x\in[a,b]}g(x),
+\qquad
+M=\max_{x\in[a,b]}g(x).
+\]
+These numbers exist.
+
+::: {.proof}
+The interval $[a,b]$ is compact and $g$ is continuous.
+Hence the extreme value theorem gives a minimum and a maximum.
+:::
+
+<1>2. Since $h\ge0$,
+\[
+m\int_a^b h(x)\,dx
+\le
+\int_a^b g(x)h(x)\,dx
+\le
+M\int_a^b h(x)\,dx.
+\]
+
+::: {.proof}
+For every $x$,
+\[
+m\le g(x)\le M.
+\]
+Multiplying by the nonnegative number $h(x)$ gives
+\[
+mh(x)\le g(x)h(x)\le Mh(x).
+\]
+Integrate over $[a,b]$.
+:::
+
+<1>3. If
+\[
+\int_a^b h(x)\,dx=0,
+\]
+then the desired identity holds for every $c\in[a,b]$.
+
+::: {.proof}
+Since $h$ is continuous and nonnegative, the equality
+\[
+\int_a^b h(x)\,dx=0
+\]
+forces
+\[
+h\equiv0.
+\]
+Hence
+\[
+\int_a^b g(x)h(x)\,dx=0.
+\]
+The right-hand side is also
+\[
+g(c)\cdot0=0.
+\]
+:::
+
+<1>4. Suppose
+\[
+\int_a^b h(x)\,dx>0.
+\]
+Then
+\[
+m
+\le
+\frac{\int_a^b g(x)h(x)\,dx}
+{\int_a^b h(x)\,dx}
+\le
+M.
+\]
+
+::: {.proof}
+Divide the inequalities from step <1>2 by the positive number
+\[
+\int_a^b h(x)\,dx.
+\]
+:::
+
+<1>5. There exists $c\in[a,b]$ such that
+\[
+g(c)
+=
+\frac{\int_a^b g(x)h(x)\,dx}
+{\int_a^b h(x)\,dx}.
+\]
+
+::: {.proof}
+By step <1>1, the continuous function $g$ attains the values $m$ and $M$.
+By step <1>4, the displayed quotient lies between them.
+The intermediate value theorem therefore gives a point $c$ at which $g$ equals this quotient.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+\int_a^b g(x)h(x)\,dx
+=
+g(c)\int_a^b h(x)\,dx
+}
+\]
+for some $c\in[a,b]$.
+
+::: {.proof}
+Step <1>3 handles the case in which the integral of $h$ is zero.
+Otherwise multiply the identity in step <1>5 by
+\[
+\int_a^b h(x)\,dx.
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required weighted mean value theorem.
+:::
+:::
