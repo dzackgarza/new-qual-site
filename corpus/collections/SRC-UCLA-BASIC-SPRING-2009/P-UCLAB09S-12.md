@@ -31,3 +31,212 @@ at every point if and only if
 for every ball $\Omega$ of every positive radius and center.
 You may use the standard theorems of vector calculus without proof.
 :::
+
+::: {.solution}
+Define
+\[
+G=\operatorname{div}F-\rho.
+\]
+Since $F$ and $\rho$ are smooth, $G$ is continuous.
+
+<1>1. Suppose first that
+\[
+\operatorname{div}F=\rho
+\]
+everywhere.
+Then for every ball $\Omega$,
+\[
+\iint_{\partial\Omega}F\cdot dS
+=
+\iiint_\Omega\rho\,dx\,dy\,dz.
+\]
+
+::: {.proof}
+The divergence theorem gives
+\[
+\iint_{\partial\Omega}F\cdot dS
+=
+\iiint_\Omega
+\operatorname{div}F
+\,dx\,dy\,dz.
+\]
+Under the hypothesis
+\[
+\operatorname{div}F=\rho,
+\]
+the right side equals
+\[
+\iiint_\Omega\rho\,dx\,dy\,dz.
+\]
+:::
+
+<1>2. Conversely, suppose that for every ball $\Omega$,
+\[
+\iint_{\partial\Omega}F\cdot dS
+=
+\iiint_\Omega\rho\,dx\,dy\,dz.
+\]
+Then
+\[
+\iiint_\Omega G\,dx\,dy\,dz=0
+\]
+for every ball $\Omega$.
+
+::: {.proof}
+By the divergence theorem,
+\[
+\iint_{\partial\Omega}F\cdot dS
+=
+\iiint_\Omega\operatorname{div}F\,dx\,dy\,dz.
+\]
+Subtract the assumed identity:
+\[
+\iiint_\Omega
+\bigl(
+\operatorname{div}F-\rho
+\bigr)
+\,dx\,dy\,dz
+=0.
+\]
+This is
+\[
+\iiint_\Omega G=0.
+\]
+:::
+
+<1>3. Suppose, for contradiction, that
+\[
+G(p)>0
+\]
+at some point
+\[
+p\in\mathbb R^3.
+\]
+Then there exists a ball $\Omega$ centered at $p$ such that
+\[
+G>0
+\]
+throughout $\Omega$.
+
+::: {.proof}
+Since $G$ is continuous and
+\[
+G(p)>0,
+\]
+there exists $r>0$ such that
+\[
+|G(q)-G(p)|
+<
+\frac12G(p)
+\]
+whenever
+\[
+\|q-p\|<r.
+\]
+Hence on the ball
+\[
+\Omega=B(p,r),
+\]
+one has
+\[
+G(q)
+>
+\frac12G(p)
+>
+0.
+\]
+:::
+
+<1>4. The situation in step <1>3 contradicts step <1>2.
+
+::: {.proof}
+On the ball $\Omega$ from step <1>3,
+\[
+G(q)
+>
+\frac12G(p)
+\]
+for every $q\in\Omega$.
+Therefore
+\[
+\iiint_\Omega G
+>
+\frac12G(p)\operatorname{vol}(\Omega)
+>
+0.
+\]
+But step <1>2 says that the integral of $G$ over every ball is zero.
+This is a contradiction.
+:::
+
+<1>5. No point can satisfy
+\[
+G(p)<0.
+\]
+
+::: {.proof}
+Apply steps <1>3--<1>4 to the continuous function
+\[
+-G.
+\]
+If
+\[
+G(p)<0,
+\]
+then
+\[
+(-G)(p)>0,
+\]
+which would produce a ball on which
+\[
+\iiint_\Omega G<0,
+\]
+again contradicting step <1>2.
+:::
+
+<1>6. Therefore
+\[
+\boxed{G\equiv0}.
+\]
+
+::: {.proof}
+At every point, steps <1>4--<1>5 rule out both positive and negative values.
+Thus
+\[
+G(p)=0
+\]
+for every
+\[
+p\in\mathbb R^3.
+\]
+:::
+
+<1>7. Hence
+\[
+\boxed{\operatorname{div}F=\rho}
+\]
+everywhere.
+
+::: {.proof}
+By definition,
+\[
+G
+=
+\operatorname{div}F-\rho.
+\]
+Step <1>6 gives
+\[
+G=0,
+\]
+so
+\[
+\operatorname{div}F=\rho.
+\]
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves the forward implication, and steps <1>2--<1>7 prove the converse.
+:::
+:::
