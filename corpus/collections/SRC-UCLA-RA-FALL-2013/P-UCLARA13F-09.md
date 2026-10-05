@@ -32,3 +32,100 @@ Show that there is $C\ge0$ such that
 \]
 for all $x\in X$ and $y\in Y$.
 :::
+
+::: {.solution}
+For each $y\in Y$, regard $B(\,·\,,y)$ as a bounded linear functional on the Banach space $X$.
+
+<1>1. For each $y\in Y$, define
+\[
+T_y:X\to\mathbb R,
+\qquad
+T_y(x)=B(x,y).
+\]
+Then $T_y\in X^*$.
+
+::: {.proof}
+Bilinearity makes $T_y$ linear. The second hypothesis gives
+\[
+|T_y(x)|=|B(x,y)|\leq C_y\|x\|,
+\]
+so $T_y$ is bounded.
+:::
+
+<1>2. Consider the family
+\[
+\mathcal T=\{T_y:\|y\|\leq1\}\subset X^*.
+\]
+For each fixed $x\in X$, this family is pointwise bounded:
+\[
+\sup_{\|y\|\leq1}|T_y(x)|<\infty.
+\]
+
+::: {.proof}
+The first hypothesis gives a constant $C_x$ such that
+\[
+|T_y(x)|=|B(x,y)|\leq C_x\|y\|.
+\]
+Thus for $\|y\|\leq1$,
+\[
+|T_y(x)|\leq C_x,
+\]
+and taking the supremum gives a finite bound.
+:::
+
+<1>3. By the Uniform Boundedness Principle, there exists $C\geq0$ such that
+\[
+\|T_y\|_{X^*}\leq C
+\qquad\text{whenever }\|y\|\leq1.
+\]
+
+::: {.proof}
+The domain $X$ is Banach by hypothesis, every $T_y$ in the family is a bounded linear map by step <1>1, and the family is pointwise bounded by step <1>2. The Uniform Boundedness Principle therefore gives
+\[
+\sup_{\|y\|\leq1}\|T_y\|<\infty.
+\]
+Call this supremum $C$.
+:::
+
+<1>4. If $\|y\|\leq1$, then for every $x\in X$,
+\[
+|B(x,y)|\leq C\|x\|.
+\]
+
+::: {.proof}
+By definition of operator norm,
+\[
+|B(x,y)|=|T_y(x)|\leq\|T_y\|\,\|x\|,
+\]
+and step <1>3 bounds $\|T_y\|$ by $C$.
+:::
+
+<1>5. For arbitrary $y\ne0$, bilinearity gives
+\[
+B(x,y)=\|y\|B\left(x,\frac y{\|y\|}\right).
+\]
+
+::: {.proof}
+Since $y=\|y\|(y/\|y\|)$, linearity in the second argument gives the identity.
+:::
+
+<1>6. Therefore, for all $x\in X$ and $y\in Y$,
+\[
+\boxed{|B(x,y)|\leq C\|x\|\|y\|.}
+\]
+
+::: {.proof}
+If $y=0$, both sides give the desired inequality immediately. If $y\ne0$, apply step <1>4 to the unit vector $y/\|y\|$ and use step <1>5:
+\[
+|B(x,y)|
+=\|y\|\left|B\left(x,\frac y{\|y\|}\right)\right|
+\leq C\|x\|\|y\|.
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required joint boundedness estimate.
+:::
+:::
