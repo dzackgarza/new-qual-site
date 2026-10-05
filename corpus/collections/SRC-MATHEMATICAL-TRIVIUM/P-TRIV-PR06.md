@@ -26,3 +26,59 @@ The source also includes Figure 6 showing the tetrahedron; Flash preserves only 
 (b) Check if $P ( R \cap G \cap B ) = P ( R ) P ( G ) P ( B )$ . Are the events R, G, B pairwise independent?
 Are they mutually independent?
 :::
+
+::: {.solution}
+Assume the tetrahedron is fair, so each face has probability $1/4$. The four faces are $R$, $G$, $B$, and $RGB$.
+
+<1>1. Each color event has probability
+\[
+P(R)=P(G)=P(B)=\frac12.
+\]
+
+::: {.proof}
+The event $R$ occurs on the red-only face and on the $RGB$ face, two of the four equally likely faces. The same argument applies to $G$ and $B$.
+:::
+
+<1>2. For any two distinct colors $A,B\in\{R,G,B\}$,
+\[
+P(A\cap B)=\frac14.
+\]
+
+::: {.proof}
+The only face containing any prescribed pair of distinct colors is the $RGB$ face, whose probability is $1/4$.
+:::
+
+<1>3. Hence every pair of distinct color events is independent:
+\[
+P(A\cap B)=P(A)P(B)=\frac14.
+\]
+
+::: {.proof}
+By step <1>1, $P(A)P(B)=(1/2)(1/2)=1/4$, which equals the intersection probability in step <1>2.
+:::
+
+<1>4. The triple intersection has probability
+\[
+P(R\cap G\cap B)=\frac14,
+\]
+whereas
+\[
+P(R)P(G)P(B)=\frac18.
+\]
+
+::: {.proof}
+All three colors occur simultaneously exactly on the $RGB$ face, so the triple intersection has probability $1/4$. Step <1>1 gives the product $(1/2)^3=1/8$.
+:::
+
+<1>5. Therefore $R,G,B$ are pairwise independent but not mutually independent.
+
+::: {.proof}
+Pairwise independence is step <1>3. Mutual independence would require the triple-intersection identity, which fails by step <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>3--<1>5 answer parts (a) and (b).
+:::
+:::
