@@ -21,3 +21,51 @@ If $f$ is an entire function which maps the complex plane into the real axis, th
 
 (a) the point $0$ (b) any arbitrary point in $\RR$ (c) a half line (i.e., a set $(a, \infty)$ or $(-\infty, a)$) (d) the whole real line
 :::
+
+::: {.solution}
+<1>1. The function $f$ must be constant.
+
+::: {.proof}
+Suppose $f$ were nonconstant. By the open mapping theorem, the image
+\[
+f(\mathbb C)
+\]
+would be an open subset of $\mathbb C$. By hypothesis,
+\[
+f(\mathbb C)\subseteq\mathbb R.
+\]
+But the real axis contains no nonempty open subset of $\mathbb C$. This is a
+contradiction. Hence $f$ is constant.
+:::
+
+<1>2. Therefore the image of the imaginary axis is a singleton
+\[
+\boxed{\{c\}\qquad\text{for some arbitrary }c\in\mathbb R}.
+\]
+
+::: {.proof}
+By step <1>1 there is $c\in\mathbb R$ such that
+\[
+f(z)=c
+\qquad(z\in\mathbb C).
+\]
+Hence
+\[
+f(i\mathbb R)=\{c\}.
+\]
+Conversely, every real constant function is entire and has this image.
+:::
+
+<1>3. In the listed choices, (b) is the general answer, and (a) is its
+special case $c=0$; neither (c) nor (d) is possible.
+
+::: {.proof}
+This follows immediately from the singleton classification in step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 settles the alternatives.
+:::
+:::
