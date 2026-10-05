@@ -23,3 +23,120 @@ d(f(x),f(y))<d(x,y)\qquad\text{for all }x\ne y.
 \]
 Prove that there is a unique point $x\in X$ such that $f(x)=x$.
 :::
+
+::: {.solution}
+Define
+\[
+h:X\to\mathbb R,
+\qquad
+h(x)=d(x,f(x)).
+\]
+
+<1>1. The map $f$ is continuous.
+
+::: {.proof}
+For $x\ne y$,
+\[
+d(f(x),f(y))<d(x,y),
+\]
+and for $x=y$ both sides are zero. Hence for all $x,y\in X$,
+\[
+d(f(x),f(y))\le d(x,y).
+\]
+Thus $f$ is $1$-Lipschitz, and therefore continuous.
+:::
+
+<1>2. The function $h$ is continuous.
+
+::: {.proof}
+The map
+\[
+x\longmapsto (x,f(x))
+\]
+from $X$ to $X\times X$ is continuous by step <1>1. The metric
+\[
+d:X\times X\to\mathbb R
+\]
+is continuous, because
+\[
+|d(x,y)-d(x',y')|
+\le
+d(x,x')+d(y,y').
+\]
+Therefore their composition
+\[
+h(x)=d(x,f(x))
+\]
+is continuous.
+:::
+
+<1>3. There exists $x_0\in X$ such that
+\[
+h(x_0)=\min_{x\in X}h(x).
+\]
+
+::: {.proof}
+The space $X$ is compact and $h$ is continuous by step <1>2. The extreme value theorem therefore gives a minimizer $x_0$.
+:::
+
+<1>4. One has
+\[
+h(x_0)=0.
+\]
+
+::: {.proof}
+Suppose instead that
+\[
+h(x_0)>0.
+\]
+Then
+\[
+x_0\ne f(x_0).
+\]
+Applying the strict contraction hypothesis to the distinct points $x_0$ and $f(x_0)$ gives
+\[
+d(f(x_0),f(f(x_0)))
+<
+d(x_0,f(x_0)).
+\]
+Equivalently,
+\[
+h(f(x_0))<h(x_0),
+\]
+contradicting the minimality of $x_0$ from step <1>3.
+Thus $h(x_0)=0$.
+:::
+
+<1>5. The point $x_0$ is a fixed point of $f$.
+
+::: {.proof}
+By step <1>4,
+\[
+d(x_0,f(x_0))=0.
+\]
+Since $d$ is a metric,
+\[
+\boxed{f(x_0)=x_0}.
+\]
+:::
+
+<1>6. The fixed point is unique.
+
+::: {.proof}
+Suppose $x$ and $y$ are distinct fixed points. Then
+\[
+d(x,y)
+=
+d(f(x),f(y))
+<
+d(x,y),
+\]
+an impossibility. Hence no two distinct fixed points exist.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves existence, and step <1>6 proves uniqueness.
+:::
+:::
