@@ -3225,3 +3225,19 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   restrictions explicitly.
 - **Repair:** `P-WESRA16-B4` restores the omitted restrictions and supplies
   the complete structured proof.
+
+### UGA Math 8150 Homework 3 Problem 1 card lost the arrow in $r\to0$
+
+- **Object and need:** `P-UGA8150S21-HW3-01` in
+  `SRC-UGA-MATH8150-SPRING-2021-HW3`. The card displayed the limit subscript
+  as `r  0`, inherited from the checked-in extraction.
+- **Observed evidence:** direct inspection of page 1 of the retained
+  `8150-hw3.pdf` shows the limit explicitly as `r\to0` in the normalized
+  small-circle integral.
+- **Impact and owner:** the missing arrow makes the limiting process malformed
+  in the authored problem statement. The source PDF itself is unambiguous.
+- **Expected result:** restore `r\to0` literally from the source and prove the
+  stated equivalence with complex differentiability.
+- **Uncertainty:** none after direct inspection of the retained PDF page.
+- **Repair:** `P-UGA8150S21-HW3-01` restores the arrow and supplies the
+  complete structured proof.
