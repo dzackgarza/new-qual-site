@@ -30,3 +30,147 @@ Assume that $f$ is continuously differentiable and that for some constant $c>0$,
 for all $x,y\in\mathbb R^n$.
 Show that $f$ is convex.
 :::
+
+::: {.solution}
+Fix $x,y\in\mathbb R^n$ and define
+\[
+v=x-y,
+\qquad
+g(t)=f(y+tv),
+\qquad
+0\le t\le1.
+\]
+
+<1>1. The derivative of $g$ is
+\[
+g'(t)=\nabla f(y+tv)\cdot v.
+\]
+
+::: {.proof}
+This follows from the chain rule, since $f$ is continuously differentiable and the path $t\mapsto y+tv$ has derivative $v$.
+:::
+
+<1>2. For $0\le s<t\le1$,
+\[
+g'(t)-g'(s)
+\ge
+c(t-s)\|v\|^2
+\ge0.
+\]
+
+::: {.proof}
+By step <1>1,
+\[
+\begin{aligned}
+g'(t)-g'(s)
+&=
+\bigl(\nabla f(y+tv)-\nabla f(y+sv)\bigr)\cdot v.
+\end{aligned}
+\]
+Apply the hypothesis to
+\[
+x_t=y+tv,
+\qquad
+x_s=y+sv.
+\]
+Since
+\[
+x_t-x_s=(t-s)v,
+\]
+the hypothesis gives
+\[
+\bigl(\nabla f(x_t)-\nabla f(x_s)\bigr)\cdot((t-s)v)
+\ge
+c(t-s)^2\|v\|^2.
+\]
+Divide by the positive number $t-s$ to obtain the displayed inequality.
+:::
+
+<1>3. The function $g'$ is nondecreasing on $[0,1]$.
+
+::: {.proof}
+This is the second inequality in step <1>2.
+:::
+
+<1>4. For every $0\le\alpha\le1$,
+\[
+g(\alpha)
+\le
+(1-\alpha)g(0)+\alpha g(1).
+\]
+
+::: {.proof}
+For $0<\alpha<1$, the fundamental theorem of calculus gives
+\[
+g(\alpha)-g(0)
+=
+\int_0^\alpha g'(t)\,dt
+\]
+and
+\[
+g(1)-g(\alpha)
+=
+\int_\alpha^1g'(t)\,dt.
+\]
+Because $g'$ is nondecreasing by step <1>3,
+\[
+\frac1\alpha\int_0^\alpha g'(t)\,dt
+\le
+\frac1{1-\alpha}\int_\alpha^1g'(t)\,dt.
+\]
+Multiplying by $\alpha(1-\alpha)$ gives
+\[
+(1-\alpha)(g(\alpha)-g(0))
+\le
+\alpha(g(1)-g(\alpha)).
+\]
+Rearranging yields
+\[
+g(\alpha)
+\le
+(1-\alpha)g(0)+\alpha g(1).
+\]
+The cases $\alpha=0,1$ are equalities.
+:::
+
+<1>5. One has
+\[
+f(\alpha x+(1-\alpha)y)
+\le
+\alpha f(x)+(1-\alpha)f(y)
+\]
+for all $x,y\in\mathbb R^n$ and $0\le\alpha\le1$.
+
+::: {.proof}
+By definition,
+\[
+g(0)=f(y),
+\qquad
+g(1)=f(x),
+\]
+and
+\[
+g(\alpha)
+=
+f(y+\alpha(x-y))
+=
+f(\alpha x+(1-\alpha)y).
+\]
+Substitute these identities into step <1>4.
+:::
+
+<1>6. Therefore
+\[
+\boxed{f\text{ is convex}}.
+\]
+
+::: {.proof}
+Step <1>5 is exactly the defining convexity inequality.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
+:::
