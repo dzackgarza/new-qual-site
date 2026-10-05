@@ -23,3 +23,180 @@ z\mapsto F(z,z)
 \]
 is holomorphic.
 :::
+
+::: {.solution}
+Define
+\[
+f(z)=F(z,z).
+\]
+
+<1>1. Fix \(z_0\in\mathbb C\) and \(R>0\). For every
+\[
+a,b\in D(z_0,R),
+\]
+one has
+\[
+\boxed{
+F(a,b)
+=
+\frac1{(2\pi i)^2}
+\int_{|\zeta-z_0|=R}
+\int_{|\xi-z_0|=R}
+\frac{F(\zeta,\xi)}
+{(\zeta-a)(\xi-b)}
+\,d\xi\,d\zeta}.
+\]
+
+::: {.proof}
+For fixed \(b\), the map
+\[
+\zeta\longmapsto F(\zeta,b)
+\]
+is entire. Cauchy's formula gives
+\[
+F(a,b)
+=
+\frac1{2\pi i}
+\int_{|\zeta-z_0|=R}
+\frac{F(\zeta,b)}{\zeta-a}\,d\zeta.
+\]
+
+For each fixed \(\zeta\) on the outer contour, the map
+\[
+\xi\longmapsto F(\zeta,\xi)
+\]
+is entire, so
+\[
+F(\zeta,b)
+=
+\frac1{2\pi i}
+\int_{|\xi-z_0|=R}
+\frac{F(\zeta,\xi)}{\xi-b}\,d\xi.
+\]
+Substituting this identity into the first formula gives the displayed
+iterated integral. Joint continuity ensures that the integrand is continuous
+on the compact product of the two contour circles, so the iterated contour
+integral is well-defined.
+:::
+
+<1>2. For every \(z\in D(z_0,R)\),
+\[
+\boxed{
+f(z)
+=
+\frac1{(2\pi i)^2}
+\int_{|\zeta-z_0|=R}
+\int_{|\xi-z_0|=R}
+\frac{F(\zeta,\xi)}
+{(\zeta-z)(\xi-z)}
+\,d\xi\,d\zeta}.
+\]
+
+::: {.proof}
+Apply step <1>1 with
+\[
+a=b=z.
+\]
+:::
+
+<1>3. For every \(0<r<R\), the integrand in step <1>2 and its derivative
+with respect to \(z\) are uniformly bounded for
+\[
+|z-z_0|\le r
+\]
+and
+\[
+|\zeta-z_0|=|\xi-z_0|=R.
+\]
+
+::: {.proof}
+On the compact contour product,
+\[
+M_R
+=
+\max
+|F(\zeta,\xi)|
+<\infty
+\]
+by joint continuity. If \(|z-z_0|\le r\), then
+\[
+|\zeta-z|
+\ge
+R-r,
+\qquad
+|\xi-z|
+\ge
+R-r.
+\]
+Thus
+\[
+\left|
+\frac{F(\zeta,\xi)}
+{(\zeta-z)(\xi-z)}
+\right|
+\le
+\frac{M_R}{(R-r)^2}.
+\]
+Differentiating the rational kernel gives
+\[
+\frac{\partial}{\partial z}
+\frac1{(\zeta-z)(\xi-z)}
+=
+\frac1{(\zeta-z)^2(\xi-z)}
++
+\frac1{(\zeta-z)(\xi-z)^2},
+\]
+whose absolute value is at most
+\[
+\frac{2}{(R-r)^3}.
+\]
+Multiplying by \(M_R\) gives a uniform bound for the differentiated
+integrand.
+:::
+
+<1>4. The function \(f\) is holomorphic on \(D(z_0,R)\).
+
+::: {.proof}
+By steps <1>2 and <1>3, differentiation under the two contour integrals is
+valid on every smaller closed disk
+\[
+\overline{D(z_0,r)}
+\subset D(z_0,R).
+\]
+Therefore
+\[
+\begin{aligned}
+f'(z)
+=
+\frac1{(2\pi i)^2}
+\int_{|\zeta-z_0|=R}
+\int_{|\xi-z_0|=R}
+F(\zeta,\xi)
+\left[
+\frac1{(\zeta-z)^2(\xi-z)}
++
+\frac1{(\zeta-z)(\xi-z)^2}
+\right]
+d\xi\,d\zeta.
+\end{aligned}
+\]
+Thus the complex derivative exists at every \(z\in D(z_0,R)\).
+:::
+
+<1>5. Hence
+\[
+\boxed{z\longmapsto F(z,z)\text{ is entire}}.
+\]
+
+::: {.proof}
+The center \(z_0\) was arbitrary, and one may choose any \(R>0\). Step
+<1>4 therefore proves holomorphy in a neighborhood of every point of
+\(\mathbb C\).
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
+:::
