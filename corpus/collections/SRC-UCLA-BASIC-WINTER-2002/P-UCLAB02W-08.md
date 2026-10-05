@@ -28,3 +28,136 @@ Prove that
 
 Here the rank of a linear transformation is the dimension of its image.
 :::
+
+::: {.solution}
+Let
+$$
+R=\operatorname{im}T\subseteq W.
+$$
+
+<1>1. One has
+$$
+\operatorname{rank}(S\circ T)
+=\dim S(R).
+$$
+
+::: {.proof}
+By definition,
+$$
+\operatorname{im}(S\circ T)
+=S(T(V))
+=S(R).
+$$
+Taking dimensions gives the equality.
+:::
+
+<1>2. The restriction
+$$
+S|_R:R\to X
+$$
+satisfies
+$$
+\dim S(R)
+=\dim R-\dim(R\cap\ker S).
+$$
+
+::: {.proof}
+The image of $S|_R$ is $S(R)$, and its kernel is
+$$
+\ker(S|_R)=R\cap\ker S.
+$$
+Applying the rank-nullity theorem to $S|_R$ gives the formula.
+:::
+
+<1>3. The lower bound
+$$
+\operatorname{rank}(S\circ T)
+\ge
+\operatorname{rank}(T)+\operatorname{rank}(S)-\dim W
+$$
+holds.
+
+::: {.proof}
+By steps <1>1--<1>2,
+$$
+\operatorname{rank}(S\circ T)
+=\dim R-\dim(R\cap\ker S).
+$$
+Since
+$$
+\dim(R\cap\ker S)\le\dim\ker S,
+$$
+one obtains
+$$
+\operatorname{rank}(S\circ T)
+\ge
+\dim R-\dim\ker S.
+$$
+Now
+$$
+\dim R=\operatorname{rank}(T),
+$$
+and rank-nullity for $S:W\to X$ gives
+$$
+\dim\ker S
+=
+\dim W-\operatorname{rank}(S).
+$$
+Substitution yields the required lower bound.
+:::
+
+<1>4. One has
+$$
+\operatorname{rank}(S\circ T)
+\le
+\operatorname{rank}(T).
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\operatorname{rank}(S\circ T)=\dim S(R).
+$$
+The image of a linear map on the finite-dimensional space $R$ has dimension at most $\dim R$. Hence
+$$
+\dim S(R)\le\dim R=\operatorname{rank}(T).
+$$
+:::
+
+<1>5. One also has
+$$
+\operatorname{rank}(S\circ T)
+\le
+\operatorname{rank}(S).
+$$
+
+::: {.proof}
+Since
+$$
+\operatorname{im}(S\circ T)
+=S(R)
+\subseteq
+S(W)=\operatorname{im}S,
+$$
+taking dimensions gives the inequality.
+:::
+
+<1>6. Therefore
+$$
+\operatorname{rank}(S\circ T)
+\le
+\min\{\operatorname{rank}(T),\operatorname{rank}(S)\}
+\le
+\max\{\operatorname{rank}(T),\operatorname{rank}(S)\}.
+$$
+
+::: {.proof}
+The first inequality is the conjunction of steps <1>4 and <1>5. The second is immediate for two real numbers.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the required lower bound, and step <1>6 proves the requested upper bound.
+:::
+:::
