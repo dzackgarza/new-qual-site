@@ -21,3 +21,83 @@ Prove that $T$ : $R ^ { n } \to R ^ { n }$ is one-to-one if and only if det(T ) 
 
 Hint: Let K be the fraction field of R. We may regard $T$ as a member of $\mathrm { M } _ { n } ( K )$
 :::
+
+::: {.solution}
+Let $K=\operatorname{Frac}(R)$.
+
+<1>1. If
+$$
+\det(T)\ne0,
+$$
+then $T:R^n\to R^n$ is injective.
+
+::: {.proof}
+Suppose
+$$
+Tv=0
+$$
+for some $v\in R^n$. By the adjugate identity from Problem 4.1,
+$$
+\operatorname{adj}(T)T=\det(T)I_n.
+$$
+Therefore
+$$
+0=\operatorname{adj}(T)Tv=\det(T)v.
+$$
+Since $R$ is an integral domain and $\det(T)\ne0$, multiplication by $\det(T)$ is injective on $R$. Hence every coordinate of $v$ is zero, so $v=0$.
+:::
+
+<1>2. If
+$$
+\det(T)=0,
+$$
+then the induced $K$-linear map
+$$
+T_K:K^n\to K^n
+$$
+is not injective.
+
+::: {.proof}
+The same matrix $T$ may be viewed in $\mathbb M_n(K)$. Its determinant in $K$ is still $0$. Over a field, a square matrix is invertible if and only if its determinant is nonzero. Thus $T_K$ is singular and has a nonzero kernel vector.
+:::
+
+<1>3. Under the hypothesis of step <1>2, there exists a nonzero vector $v\in R^n$ satisfying
+$$
+Tv=0.
+$$
+
+::: {.proof}
+Choose
+$$
+0\ne x=(x_1,\ldots,x_n)\in K^n
+$$
+with $Tx=0$. Write the coordinates of $x$ with denominators in $R$. There is a nonzero common denominator $d\in R$ such that
+$$
+v=dx\in R^n.
+$$
+Since $d\ne0$ and $x\ne0$, the vector $v$ is nonzero in the $K$-vector space $K^n$, hence nonzero in $R^n$. Moreover,
+$$
+Tv=T(dx)=dTx=0.
+$$
+Thus $T:R^n\to R^n$ is not injective.
+:::
+
+<1>4. Therefore
+$$
+\boxed{
+T:R^n\to R^n\text{ is injective}
+\quad\Longleftrightarrow\quad
+\det(T)\ne0.
+}
+$$
+
+::: {.proof}
+Step <1>1 proves the forward condition from nonvanishing determinant, while steps <1>2--<1>3 prove that vanishing determinant forces failure of injectivity.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is exactly the required equivalence.
+:::
+:::
