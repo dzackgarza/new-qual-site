@@ -19,3 +19,60 @@ audit:
 ::: {.problem}
 The continuous functions on $[0, 1]$ form a ring under pointwise addition and pointwise multiplication. Show that this ring is not an integral domain.
 :::
+
+::: {.solution}
+<1>1. Define
+\[
+f(x)=\max\left\{0,\frac12-x\right\},
+\qquad
+g(x)=\max\left\{0,x-\frac12\right\}.
+\]
+Then $f,g\in C([0,1])$ and neither function is zero.
+
+::: {.proof}
+Each function is the maximum of two continuous real-valued functions, hence
+is continuous. Moreover,
+\[
+f(0)=\frac12\ne0,
+\qquad
+g(1)=\frac12\ne0.
+\]
+Thus both are nonzero elements of the ring.
+:::
+
+<1>2. Their pointwise product is identically zero:
+\[
+fg=0.
+\]
+
+::: {.proof}
+If $x\le1/2$, then
+\[
+g(x)=0.
+\]
+If $x\ge1/2$, then
+\[
+f(x)=0.
+\]
+Thus for every $x\in[0,1]$ at least one factor vanishes, so
+\[
+f(x)g(x)=0.
+\]
+:::
+
+<1>3. Therefore
+\[
+\boxed{C([0,1])\text{ is not an integral domain}}.
+\]
+
+::: {.proof}
+An integral domain has no nonzero zero divisors. Steps <1>1 and <1>2 exhibit
+two nonzero ring elements whose product is zero.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
+:::
