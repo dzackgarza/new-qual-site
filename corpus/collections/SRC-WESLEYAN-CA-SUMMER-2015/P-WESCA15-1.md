@@ -24,3 +24,110 @@ Classify each indicated isolated singularity as removable, a pole, or essential;
 
 3. $\displaystyle \frac{\cos(1/z)}{z^3}$ at $z=0$.
 :::
+
+::: {.solution}
+<1>1. The singularity of
+$$
+f(z)=\frac{(e^z-1)^3}{z^6}
+$$
+at $z=0$ is a pole of order $3$.
+
+::: {.proof}
+The function
+$$
+\phi(z)=\frac{e^z-1}{z}
+$$
+for $z\ne0$ extends holomorphically to $z=0$ by setting
+$$
+\phi(0)=1,
+$$
+because
+$$
+e^z-1=z+\frac{z^2}{2!}+\frac{z^3}{3!}+\cdots.
+$$
+Thus
+$$
+e^z-1=z\phi(z),
+\qquad
+\phi(0)=1\ne0.
+$$
+Hence
+$$
+f(z)
+=\frac{z^3\phi(z)^3}{z^6}
+=\frac{\phi(z)^3}{z^3}.
+$$
+The numerator is holomorphic and nonzero at $0$, so $f$ has a pole of order $3$ there.
+:::
+
+<1>2. The singularity of
+$$
+g(z)=\frac{\sin z}{z^2-\pi^2}
+$$
+at $z=\pi$ is removable.
+
+::: {.proof}
+Factor the denominator:
+$$
+z^2-\pi^2=(z-\pi)(z+\pi).
+$$
+Since $\sin\pi=0$, the quotient
+$$
+\psi(z)=\frac{\sin z}{z-\pi}
+$$
+for $z\ne\pi$ extends holomorphically to $z=\pi$, with
+$$
+\psi(\pi)=\cos\pi=-1.
+$$
+Therefore, near $\pi$,
+$$
+g(z)=\frac{\psi(z)}{z+\pi},
+$$
+and the denominator is nonzero at $z=\pi$. Hence $g$ extends holomorphically across $\pi$, with value
+$$
+g(\pi)=-\frac1{2\pi}.
+$$
+Thus the singularity is removable.
+:::
+
+<1>3. The singularity of
+$$
+h(z)=\frac{\cos(1/z)}{z^3}
+$$
+at $z=0$ is essential.
+
+::: {.proof}
+For $z\ne0$, the Laurent expansion is
+$$
+\cos(1/z)
+=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}z^{-2k}.
+$$
+Hence
+$$
+h(z)
+=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}z^{-(2k+3)}.
+$$
+The principal part contains infinitely many nonzero negative-power terms. Therefore the singularity is neither removable nor a pole of finite order, so it is essential.
+:::
+
+<1>4. Therefore the classifications are
+$$
+\boxed{
+\begin{array}{c|c}
+\text{function}&\text{singularity}\\ \hline
+(e^z-1)^3/z^6&\text{pole of order }3\\
+\sin z/(z^2-\pi^2)&\text{removable at }\pi\\
+\cos(1/z)/z^3&\text{essential at }0
+\end{array}}
+$$
+
+::: {.proof}
+This is exactly the combination of steps <1>1--<1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives all three requested classifications, including the order of the only pole.
+:::
+:::
