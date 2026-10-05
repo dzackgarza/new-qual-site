@@ -3298,3 +3298,21 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Uncertainty:** none after direct inspection of the retained PDF page.
 - **Repair:** `P-WESRA13A-II5` restores the missing target and supplies
   counterexamples to both implications in a complete structured proof.
+
+### Week 5 Practice Problem 4 gives a non-homomorphism in its supplied solution
+
+- **Object and need:** `P-PRACT20-W5-04` in
+  `SRC-PRELIM-PRACTICE-WEEK5-2020`. The problem asks for all endomorphisms
+  of `U_4={1,i,-1,-i}` under multiplication.
+- **Observed evidence:** `assets/attachments/Week5_solns.pdf` lists the map
+  `phi(x)=-x` as the homomorphism corresponding to `phi(i)=-i`. But this map
+  sends the identity `1` to `-1`, so it is not a group homomorphism.
+- **Impact and owner:** the source's list contains the correct number of
+  endomorphisms but gives the wrong formula for the endomorphism sending
+  `i` to `-i`. The correct map is `phi(z)=z^3`.
+- **Expected result:** the authored solution should derive all four maps from
+  cyclicity of `U_4` and list them as `z -> z^m` for `m=0,1,2,3`.
+- **Uncertainty:** none; preservation of the identity already disproves the
+  printed formula.
+- **Repair:** TODO.md section 7 / issue #2. `P-PRACT20-W5-04` supplies the
+  correct four endomorphisms and explicitly identifies the source error.
