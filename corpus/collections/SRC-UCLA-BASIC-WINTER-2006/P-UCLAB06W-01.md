@@ -23,3 +23,65 @@ Show that for each $\varepsilon>0$ there exists a sequence of intervals $(I_n)$ 
 \sum_{n=1}^{\infty}|I_n|<\varepsilon.
 \]
 :::
+
+::: {.solution}
+Fix $\varepsilon>0$.
+
+<1>1. Enumerate the rational numbers as
+$$
+\QQ=\{q_1,q_2,\ldots\}.
+$$
+
+::: {.proof}
+The set $\QQ$ is countable, so such an enumeration exists.
+:::
+
+<1>2. For each $n\ge1$, define
+$$
+I_n=
+\left(
+q_n-\frac{\varepsilon}{2^{n+3}},
+q_n+\frac{\varepsilon}{2^{n+3}}
+\right).
+$$
+Then
+$$
+|I_n|=\frac{\varepsilon}{2^{n+2}}.
+$$
+
+::: {.proof}
+The interval has radius $\varepsilon/2^{n+3}$, so its length is twice that number.
+:::
+
+<1>3. The intervals cover $\QQ$:
+$$
+\QQ\subseteq\bigcup_{n=1}^{\infty}I_n.
+$$
+
+::: {.proof}
+For every $n$, the center $q_n$ belongs to $I_n$. Hence every rational number belongs to at least one interval in the union.
+:::
+
+<1>4. Their total length satisfies
+$$
+\sum_{n=1}^{\infty}|I_n|<\varepsilon.
+$$
+
+::: {.proof}
+By step <1>2,
+$$
+\sum_{n=1}^{\infty}|I_n|
+=
+\varepsilon\sum_{n=1}^{\infty}2^{-(n+2)}
+=
+\frac{\varepsilon}{4}
+<\varepsilon.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>3 and <1>4 give exactly the two required properties.
+:::
+:::
