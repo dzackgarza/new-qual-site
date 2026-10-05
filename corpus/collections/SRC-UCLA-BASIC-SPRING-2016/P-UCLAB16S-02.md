@@ -30,3 +30,248 @@ f(x)=\begin{cases}
 \]
 Using your definition, prove that $f$ is Riemann integrable on $[a,b]$.
 :::
+
+::: {.solution}
+<1>1. For a bounded function
+\[
+f:[a,b]\to\mathbb R
+\]
+and a partition
+\[
+P:\quad a=t_0<t_1<\cdots<t_m=b,
+\]
+define
+\[
+M_i
+=
+\sup_{x\in[t_{i-1},t_i]}f(x),
+\qquad
+m_i
+=
+\inf_{x\in[t_{i-1},t_i]}f(x),
+\]
+and the Darboux sums
+\[
+U(f,P)
+=
+\sum_{i=1}^m
+M_i(t_i-t_{i-1}),
+\]
+\[
+L(f,P)
+=
+\sum_{i=1}^m
+m_i(t_i-t_{i-1}).
+\]
+
+::: {.proof}
+These are the standard upper and lower Darboux sums.
+:::
+
+<1>2. The function $f$ is Riemann integrable on $[a,b]$ if
+\[
+\boxed{
+\inf_P U(f,P)
+=
+\sup_P L(f,P).
+}
+\]
+Equivalently, for every $\varepsilon>0$ there exists a partition $P$ such that
+\[
+U(f,P)-L(f,P)<\varepsilon.
+\]
+
+::: {.proof}
+The equality of the upper and lower Darboux integrals is the definition.
+The equivalent criterion follows by taking common refinements of partitions, which decrease upper sums and increase lower sums.
+This answers part 1.
+:::
+
+<1>3. Let
+\[
+\ell=\lim_{n\to\infty}x_n.
+\]
+Fix
+\[
+\varepsilon>0.
+\]
+Choose $\delta>0$ so small that
+\[
+2\delta<\frac{\varepsilon}{2}.
+\]
+
+::: {.proof}
+For example, one may take
+\[
+\delta=\frac{\varepsilon}{8}.
+\]
+:::
+
+<1>4. There exists $N$ such that
+\[
+x_n\in(\ell-\delta,\ell+\delta)
+\]
+for every
+\[
+n\ge N.
+\]
+
+::: {.proof}
+This is the definition of convergence of the sequence $(x_n)$ to $\ell$.
+:::
+
+<1>5. The finitely many points
+\[
+x_1,\ldots,x_{N-1}
+\]
+can be covered by finitely many open intervals whose total length is less than
+\[
+\frac{\varepsilon}{2}.
+\]
+
+::: {.proof}
+For each
+\[
+1\le j<N,
+\]
+choose an open interval $I_j$ centered at $x_j$ of length less than
+\[
+\frac{\varepsilon}{2N}.
+\]
+Then
+\[
+\sum_{j=1}^{N-1}|I_j|
+<
+(N-1)\frac{\varepsilon}{2N}
+<
+\frac{\varepsilon}{2}.
+\]
+If some $x_j$ coincide, this only makes the cover more redundant.
+:::
+
+<1>6. Let
+\[
+J
+=
+(\ell-\delta,\ell+\delta)
+\cap[a,b],
+\]
+and let
+\[
+\mathcal U
+=
+J
+\cup
+\bigcup_{j=1}^{N-1}(I_j\cap[a,b]).
+\]
+Then every point
+\[
+x_n
+\]
+lies in $\mathcal U$, and the total length of these finitely many intervals is less than $\varepsilon$.
+
+::: {.proof}
+By step <1>4, every tail point
+\[
+x_n,\quad n\ge N,
+\]
+lies in $J$.
+The earlier points lie in the intervals from step <1>5.
+
+The interval $J$ has length at most
+\[
+2\delta<\frac{\varepsilon}{2},
+\]
+and the remaining intervals have total length less than
+\[
+\frac{\varepsilon}{2}.
+\]
+Thus the total is less than $\varepsilon$.
+:::
+
+<1>7. Choose a partition $P$ containing all endpoints of the finitely many intervals occurring in $\mathcal U$.
+Then every partition subinterval that meets
+\[
+\{x_n:n\ge1\}
+\]
+is contained in $\mathcal U$.
+
+::: {.proof}
+Every exceptional point $x_n$ belongs to one of the finitely many intervals forming $\mathcal U$.
+Because the partition contains all their endpoints, a partition cell containing such a point cannot cross from the inside of that interval to the outside without meeting one of those endpoints.
+Thus every cell that contains an exceptional point lies inside the union $\mathcal U$.
+:::
+
+<1>8. If a partition subinterval contains no point $x_n$, then
+\[
+M_i=m_i=1.
+\]
+
+::: {.proof}
+By definition,
+\[
+f(x)=1
+\]
+at every point outside the set
+\[
+\{x_n:n\ge1\}.
+\]
+Thus $f$ is identically $1$ on any such subinterval.
+:::
+
+<1>9. If a partition subinterval contains at least one point $x_n$, then
+\[
+0\le M_i-m_i\le1.
+\]
+
+::: {.proof}
+The function takes only the values
+\[
+0
+\quad\text{and}\quad
+1.
+\]
+Therefore every oscillation is at most $1$.
+:::
+
+<1>10. For the partition $P$ from step <1>7,
+\[
+U(f,P)-L(f,P)
+<
+\varepsilon.
+\]
+
+::: {.proof}
+By step <1>8, cells containing no exceptional point contribute zero to
+\[
+U-L.
+\]
+By step <1>9, each remaining cell contributes at most its length.
+By step <1>7, all such cells lie in $\mathcal U$.
+Hence
+\[
+U(f,P)-L(f,P)
+\le
+\operatorname{length}(\mathcal U)
+<
+\varepsilon.
+\]
+:::
+
+<1>11. Therefore $f$ is Riemann integrable on $[a,b]$.
+
+::: {.proof}
+The function is bounded, since
+\[
+0\le f\le1.
+\]
+For every $\varepsilon>0$, step <1>10 constructs a partition with upper-minus-lower sum less than $\varepsilon$.
+Apply the criterion from step <1>2.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the definition requested in part 1, and step <1>11 proves part 2.
+:::
+:::
