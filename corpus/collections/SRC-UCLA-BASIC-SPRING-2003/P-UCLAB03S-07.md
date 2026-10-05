@@ -26,3 +26,66 @@ If $W_1,W_2\subset V$ are subspaces, prove that
 W_1^0\cap W_2^0=(W_1+W_2)^0.
 \]
 :::
+
+::: {.solution}
+<1>1. One has
+\[
+W_1^0\cap W_2^0\subseteq (W_1+W_2)^0.
+\]
+
+::: {.proof}
+Let \(f\in W_1^0\cap W_2^0\). Then
+\[
+f(w_1)=0
+\qquad\text{and}\qquad
+f(w_2)=0
+\]
+for every \(w_1\in W_1\) and \(w_2\in W_2\). Every vector in \(W_1+W_2\) has the form \(w_1+w_2\), and linearity gives
+\[
+f(w_1+w_2)
+=
+f(w_1)+f(w_2)
+=0.
+\]
+Thus \(f\) vanishes on \(W_1+W_2\), so
+\[
+f\in(W_1+W_2)^0.
+\]
+:::
+
+<1>2. One has
+\[
+(W_1+W_2)^0\subseteq W_1^0\cap W_2^0.
+\]
+
+::: {.proof}
+Let \(f\in(W_1+W_2)^0\). Since
+\[
+W_1\subseteq W_1+W_2
+\qquad\text{and}\qquad
+W_2\subseteq W_1+W_2,
+\]
+the functional \(f\) vanishes on both \(W_1\) and \(W_2\). Hence
+\[
+f\in W_1^0
+\qquad\text{and}\qquad
+f\in W_2^0,
+\]
+so \(f\in W_1^0\cap W_2^0\).
+:::
+
+<1>3. Therefore
+\[
+\boxed{W_1^0\cap W_2^0=(W_1+W_2)^0.}
+\]
+
+::: {.proof}
+Steps <1>1 and <1>2 prove the two inclusions.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required equality.
+:::
+:::
