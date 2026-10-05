@@ -27,3 +27,277 @@ f(x) = \sum_{n=0}^{\infty} c_n \cos(nx) \quad \text{with} \quad \sum_{n=0}^{\inf
 \]
 Show that if $f \in \mathcal{G}$ and $g \in \mathcal{G}$ then $fg \in \mathcal{G}$.
 :::
+
+::: {.solution}
+Let
+\[
+f(x)=\sum_{n=0}^\infty c_n\cos(nx),
+\qquad
+g(x)=\sum_{n=0}^\infty d_n\cos(nx),
+\]
+with
+\[
+\sum_{n\ge0}(1+n^2)|c_n|^2<\infty,
+\qquad
+\sum_{n\ge0}(1+n^2)|d_n|^2<\infty.
+\]
+
+<1>1. The coefficient sequences $(c_n)$ and $(d_n)$ belong to $\ell^1$.
+
+::: {.proof}
+By Cauchy--Schwarz,
+\[
+\sum_{n=0}^\infty |c_n|
+\le
+\left(
+\sum_{n=0}^\infty(1+n^2)|c_n|^2
+\right)^{1/2}
+\left(
+\sum_{n=0}^\infty\frac1{1+n^2}
+\right)^{1/2}
+<\infty.
+\]
+The same argument applies to $(d_n)$.
+:::
+
+<1>2. The cosine series for $f$ and $g$ converge absolutely and uniformly
+on $\mathbb R$.
+
+::: {.proof}
+Since
+\[
+|\cos(nx)|\le1,
+\]
+step <1>1 and the Weierstrass $M$-test give absolute and uniform convergence.
+Thus the series define continuous even $2\pi$-periodic representatives of
+$f$ and $g$.
+:::
+
+<1>3. Define bilateral sequences $(a_k)_{k\in\mathbb Z}$ and
+$(b_k)_{k\in\mathbb Z}$ by
+\[
+a_0=c_0,
+\qquad
+a_k=a_{-k}=\frac{c_k}{2}\quad(k\ge1),
+\]
+and
+\[
+b_0=d_0,
+\qquad
+b_k=b_{-k}=\frac{d_k}{2}\quad(k\ge1).
+\]
+Then
+\[
+f(x)=\sum_{k\in\mathbb Z}a_ke^{ikx},
+\qquad
+g(x)=\sum_{k\in\mathbb Z}b_ke^{ikx},
+\]
+with absolute and uniform convergence.
+
+::: {.proof}
+Use
+\[
+\cos(kx)=\frac{e^{ikx}+e^{-ikx}}2.
+\]
+The bilateral series are absolutely summable because step <1>1 gives
+$a,b\in\ell^1(\mathbb Z)$.
+:::
+
+<1>4. The weighted sequences
+\[
+A_k=(1+k^2)^{1/2}|a_k|,
+\qquad
+B_k=(1+k^2)^{1/2}|b_k|
+\]
+belong to $\ell^2(\mathbb Z)$.
+
+::: {.proof}
+By the definitions in step <1>3,
+\[
+\sum_{k\in\mathbb Z}(1+k^2)|a_k|^2
+=
+|c_0|^2
++
+\frac12\sum_{k=1}^\infty(1+k^2)|c_k|^2
+<\infty.
+\]
+The same calculation applies to $b$.
+:::
+
+<1>5. The product has the absolutely convergent Fourier expansion
+\[
+f(x)g(x)
+=
+\sum_{n\in\mathbb Z}e_n e^{inx},
+\qquad
+e_n=(a*b)_n
+=
+\sum_{k\in\mathbb Z}a_kb_{n-k}.
+\]
+
+::: {.proof}
+The two Fourier series in step <1>3 are absolutely convergent. Their Cauchy
+product is therefore absolutely convergent and equals the pointwise product.
+The coefficient at frequency $n$ is exactly the convolution shown above.
+:::
+
+<1>6. There is an absolute constant $C$ such that for all integers $n,k$,
+\[
+(1+n^2)^{1/2}
+\le
+C\left(
+(1+k^2)^{1/2}
++
+(1+(n-k)^2)^{1/2}
+\right).
+\]
+
+::: {.proof}
+Since
+\[
+|n|
+\le
+|k|+|n-k|,
+\]
+one has
+\[
+(1+n^2)^{1/2}
+\le
+1+|n|
+\le
+(1+|k|)+(1+|n-k|).
+\]
+Also
+\[
+1+|j|
+\le
+\sqrt2\,(1+j^2)^{1/2}.
+\]
+Thus the inequality holds, for example with $C=\sqrt2$.
+:::
+
+<1>7. The weighted product coefficients satisfy
+\[
+\left\|
+\bigl((1+n^2)^{1/2}e_n\bigr)_{n\in\mathbb Z}
+\right\|_{\ell^2}
+<\infty.
+\]
+
+::: {.proof}
+By steps <1>5 and <1>6,
+\[
+\begin{aligned}
+(1+n^2)^{1/2}|e_n|
+&\le
+C\sum_k
+\left(
+(1+k^2)^{1/2}|a_k||b_{n-k}|
+\right.\\
+&\hspace{4em}\left.
++
+|a_k|(1+(n-k)^2)^{1/2}|b_{n-k}|
+\right).
+\end{aligned}
+\]
+Hence, pointwise in $n$,
+\[
+(1+n^2)^{1/2}|e_n|
+\le
+C\bigl((A*|b|)_n+(|a|*B)_n\bigr).
+\]
+Young's convolution inequality
+\[
+\ell^2*\ell^1\longrightarrow\ell^2
+\]
+therefore gives
+\[
+\begin{aligned}
+\left\|(1+n^2)^{1/2}e_n\right\|_{\ell^2}
+&\le
+C\left(
+\|A\|_2\|b\|_1
++
+\|a\|_1\|B\|_2
+\right)
+<\infty,
+\end{aligned}
+\]
+using steps <1>1 and <1>4.
+:::
+
+<1>8. The sequence $(e_n)$ is even:
+\[
+e_{-n}=e_n.
+\]
+
+::: {.proof}
+The sequences $a$ and $b$ are even by construction. Therefore
+\[
+\begin{aligned}
+e_{-n}
+&=
+\sum_k a_kb_{-n-k}\\
+&=
+\sum_j a_{-j}b_{n-j}
+\qquad(j=-k)\\
+&=
+\sum_j a_jb_{n-j}
+=e_n.
+\end{aligned}
+\]
+:::
+
+<1>9. Hence $fg$ has a cosine expansion
+\[
+fg(x)
+=
+\sum_{n=0}^\infty r_n\cos(nx)
+\]
+with
+\[
+\sum_{n=0}^\infty(1+n^2)|r_n|^2<\infty.
+\]
+
+::: {.proof}
+By step <1>8,
+\[
+\sum_{n\in\mathbb Z}e_ne^{inx}
+=
+e_0
++
+\sum_{n=1}^\infty
+e_n(e^{inx}+e^{-inx})
+=
+e_0
++
+\sum_{n=1}^\infty 2e_n\cos(nx).
+\]
+Set
+\[
+r_0=e_0,
+\qquad
+r_n=2e_n\quad(n\ge1).
+\]
+Step <1>7 gives
+\[
+\sum_{n\ge0}(1+n^2)|r_n|^2<\infty
+\]
+up to the harmless factor $4$ for $n\ge1$.
+:::
+
+<1>10. Therefore
+\[
+\boxed{f,g\in\mathcal G\Longrightarrow fg\in\mathcal G}.
+\]
+
+::: {.proof}
+Step <1>9 is exactly the defining condition for $fg\in\mathcal G$.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 is the required conclusion.
+:::
+:::
