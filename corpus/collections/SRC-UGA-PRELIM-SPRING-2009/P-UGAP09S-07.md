@@ -32,3 +32,114 @@ g(x,y)=
 \end{cases}
 \]
 :::
+
+::: {.solution}
+<1>1. The function $f$ is continuous at every point other than the origin.
+
+::: {.proof}
+Away from $(0,0)$ one has
+\[
+x^4+y^4>0,
+\]
+so $f$ is a quotient of polynomial functions with nonzero denominator and is
+therefore continuous there.
+:::
+
+<1>2. The function $f$ is not continuous at $(0,0)$.
+
+::: {.proof}
+Along the line $y=x$, for $x\ne0$,
+\[
+f(x,x)
+=\frac{x^4}{x^4+x^4}
+=\frac12.
+\]
+Thus
+\[
+\lim_{x\to0}f(x,x)=\frac12,
+\]
+whereas
+\[
+f(0,0)=0.
+\]
+Hence the two-variable limit at the origin cannot equal the function value.
+:::
+
+<1>3. The function $g$ is continuous at every point other than the origin.
+
+::: {.proof}
+Away from $(0,0)$,
+\[
+(x^2+y^2)^2>0,
+\]
+so $g$ is again a quotient of polynomial functions with nonzero denominator.
+:::
+
+<1>4. For every $(x,y)\ne(0,0)$,
+\[
+|g(x,y)|
+\le
+\sqrt{x^2+y^2}.
+\]
+
+::: {.proof}
+Set
+\[
+r=\sqrt{x^2+y^2}.
+\]
+Then
+\[
+|x|\le r,
+\qquad
+|y|\le r.
+\]
+Therefore
+\[
+|x^3y^2|
+\le r^5,
+\]
+while
+\[
+(x^2+y^2)^2=r^4.
+\]
+Hence
+\[
+|g(x,y)|
+=\frac{|x^3y^2|}{(x^2+y^2)^2}
+\le r.
+\]
+:::
+
+<1>5. The function $g$ is continuous at $(0,0)$.
+
+::: {.proof}
+By step <1>4,
+\[
+|g(x,y)-g(0,0)|
+=|g(x,y)|
+\le
+\sqrt{x^2+y^2}.
+\]
+The right-hand side tends to $0$ as $(x,y)\to(0,0)$, so the squeeze theorem
+gives
+\[
+g(x,y)\to0=g(0,0).
+\]
+:::
+
+<1>6. Therefore
+\[
+\boxed{f\text{ is discontinuous only at }(0,0),\qquad
+g\text{ is continuous on }\mathbb R^2}.
+\]
+
+::: {.proof}
+Combine steps <1>1 through <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 gives the requested determination.
+:::
+:::
