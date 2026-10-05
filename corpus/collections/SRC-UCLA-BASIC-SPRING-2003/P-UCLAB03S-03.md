@@ -22,3 +22,110 @@ Find a subset $S\subset\mathbb R$ such that both of the following hold:
 
 (ii) $S$ is not a countable intersection of open sets.
 :::
+
+::: {.solution}
+Let
+\[
+S=(\mathbb Q\cap(-\infty,0))\cup((\mathbb R\setminus\mathbb Q)\cap(0,\infty)).
+\]
+
+<1>1. The set $\mathbb Q\cap(-\infty,0)$ is not a countable intersection of open subsets of $(-\infty,0)$.
+
+::: {.proof}
+Suppose instead that
+\[
+\mathbb Q\cap(-\infty,0)=\bigcap_{n=1}^{\infty}U_n
+\]
+with each $U_n$ open in $(-\infty,0)$. Since $\mathbb Q\cap(-\infty,0)$ is dense in $(-\infty,0)$, every $U_n$ is dense there.
+
+Enumerate $\mathbb Q\cap(-\infty,0)=\{q_1,q_2,\ldots\}$. Each set
+\[
+(-\infty,0)\setminus\{q_m\}
+\]
+is open and dense in $(-\infty,0)$. Because $(-\infty,0)$ is a Baire space, the intersection
+\[
+\bigcap_{n=1}^{\infty}U_n
+\cap
+\bigcap_{m=1}^{\infty}\bigl(( -\infty,0)\setminus\{q_m\}\bigr)
+\]
+is nonempty. But the first intersection equals $\mathbb Q\cap(-\infty,0)$, while the second excludes every rational point, so their intersection is empty. This contradiction proves the claim.
+:::
+
+<1>2. The set $(\mathbb R\setminus\mathbb Q)\cap(0,\infty)$ is not a countable union of closed subsets of $(0,\infty)$.
+
+::: {.proof}
+Suppose instead that
+\[
+(\mathbb R\setminus\mathbb Q)\cap(0,\infty)
+=
+\bigcup_{n=1}^{\infty}F_n
+\]
+with each $F_n$ closed in $(0,\infty)$. Since $F_n$ contains no rational point and the rationals are dense in $(0,\infty)$, $F_n$ has empty interior. Hence each $F_n$ is nowhere dense in $(0,\infty)$.
+
+The set $\mathbb Q\cap(0,\infty)$ is countable, so it is also a countable union of nowhere dense singletons. Therefore
+\[
+(0,\infty)
+=
+\bigl((\mathbb R\setminus\mathbb Q)\cap(0,\infty)\bigr)
+\cup
+\bigl(\mathbb Q\cap(0,\infty)\bigr)
+\]
+would be a countable union of nowhere dense subsets of itself, contradicting the Baire category theorem.
+:::
+
+<1>3. The set $S$ is not a countable union of closed subsets of $\mathbb R$.
+
+::: {.proof}
+Suppose
+\[
+S=\bigcup_{n=1}^{\infty}C_n
+\]
+with each $C_n$ closed in $\mathbb R$. Intersecting with the open subspace $(0,\infty)$ gives
+\[
+S\cap(0,\infty)
+=
+\bigcup_{n=1}^{\infty}(C_n\cap(0,\infty)),
+\]
+where each $C_n\cap(0,\infty)$ is closed in $(0,\infty)$. By the definition of $S$,
+\[
+S\cap(0,\infty)=(\mathbb R\setminus\mathbb Q)\cap(0,\infty),
+\]
+contradicting step <1>2.
+:::
+
+<1>4. The set $S$ is not a countable intersection of open subsets of $\mathbb R$.
+
+::: {.proof}
+Suppose
+\[
+S=\bigcap_{n=1}^{\infty}V_n
+\]
+with each $V_n$ open in $\mathbb R$. Intersecting with the open subspace $(-\infty,0)$ gives
+\[
+S\cap(-\infty,0)
+=
+\bigcap_{n=1}^{\infty}(V_n\cap(-\infty,0)),
+\]
+where each $V_n\cap(-\infty,0)$ is open in $(-\infty,0)$. By the definition of $S$,
+\[
+S\cap(-\infty,0)=\mathbb Q\cap(-\infty,0),
+\]
+contradicting step <1>1.
+:::
+
+<1>5. Therefore
+\[
+\boxed{S=(\mathbb Q\cap(-\infty,0))\cup((\mathbb R\setminus\mathbb Q)\cap(0,\infty))}
+\]
+satisfies both required conditions.
+
+::: {.proof}
+Step <1>3 proves condition (i), and step <1>4 proves condition (ii).
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the requested subset.
+:::
+:::
