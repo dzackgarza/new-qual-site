@@ -3203,3 +3203,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** `P-NORI-GT-6-01` records the source erratum, gives the explicit
   counterexample, proves the corrected spanning and basis statements, and
   notes the sufficient commuting hypothesis. The external source is unchanged.
+
+### Wesleyan 2016 Real Analysis Problem B4 card dropped the source restriction to $[0,1]$
+
+- **Object and need:** `P-WESRA16-B4` in `SRC-WESLEYAN-RA-SUMMER-2016`.
+  The retained source defines all three sets `X`, `Y`, and `Z` by conditions
+  on points `x\in[0,1]`, but the card had transcribed only `{f>1}`, `{f=1}`,
+  and `{f<1}`.
+- **Observed evidence:** the checked-in MinerU extraction of the July 7, 2016
+  exam explicitly prints `X = { x \in [0,1] : f(x)>1 }`, and likewise for
+  `Y` and `Z`. Since the same problem assumes `supp(f)\subseteq[0,1]`, the
+  truncated card instead made every point outside `[0,1]` belong to `Z`.
+- **Impact and owner:** under the truncated card statement, `Z` has infinite
+  Lebesgue measure, so the requested decomposition by `\lambda(Z)` no longer
+  states the source problem and introduces an unnecessary extended-arithmetic
+  ambiguity. This is a card transcription defect, not source errata.
+- **Expected result:** restore the literal `x\in[0,1]` restrictions from the
+  source and solve the resulting three-region decomposition using monotone
+  convergence on `X` and dominated convergence on `Z`.
+- **Uncertainty:** none; the retained extraction contains all three interval
+  restrictions explicitly.
+- **Repair:** `P-WESRA16-B4` restores the omitted restrictions and supplies
+  the complete structured proof.
