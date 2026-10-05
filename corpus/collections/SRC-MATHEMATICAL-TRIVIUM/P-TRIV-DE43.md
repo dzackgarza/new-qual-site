@@ -24,3 +24,86 @@ $$
 
 so that $u = 0$ whenever any of the coordinates is equal to 0 or L. What are the allowed values of $k ^ { 2 } ?$
 :::
+
+::: {.solution}
+Seek a separated nonzero solution
+\[
+u(x,y,z)=X(x)Y(y)Z(z).
+\]
+
+<1>1. Separation of variables gives
+\[
+\frac{X''}{X}+\frac{Y''}{Y}+\frac{Z''}{Z}+k^2=0.
+\]
+
+::: {.proof}
+Substitute $XYZ$ into $(\nabla^2+k^2)u=0$ and divide by $XYZ$ wherever it is nonzero. Each of the first three terms depends on only one coordinate.
+:::
+
+<1>2. Write
+\[
+X''+\alpha^2X=0,
+\qquad
+Y''+\beta^2Y=0,
+\qquad
+Z''+\gamma^2Z=0,
+\]
+with
+\[
+k^2=\alpha^2+\beta^2+\gamma^2.
+\]
+
+::: {.proof}
+Since the sum in step <1>1 is constant, each coordinate-dependent quotient must be constant. Denote the three constants by $-\alpha^2,-\beta^2,-\gamma^2$; their sum must be $-k^2$.
+:::
+
+<1>3. The Dirichlet conditions in the $x$ coordinate require
+\[
+\alpha=\frac{n_x\pi}{L},
+\qquad
+X(x)=A\sin\frac{n_x\pi x}{L},
+\qquad n_x=1,2,3,\ldots.
+\]
+
+::: {.proof}
+The conditions $u=0$ on $x=0$ and $x=L$ imply $X(0)=X(L)=0$ for a nonzero separated mode. The standard Dirichlet problem $X''+\alpha^2X=0$ has a nonzero solution exactly when $\sin(\alpha L)=0$ with $\alpha>0$, giving the displayed values and eigenfunctions.
+:::
+
+<1>4. Similarly,
+\[
+\beta=\frac{n_y\pi}{L},
+\qquad
+\gamma=\frac{n_z\pi}{L},
+\qquad n_y,n_z=1,2,3,\ldots.
+\]
+
+::: {.proof}
+Apply the argument of step <1>3 to the pairs of faces $y=0,L$ and $z=0,L$.
+:::
+
+<1>5. Hence the separated eigenmodes are
+\[
+\boxed{
+u_{n_x,n_y,n_z}(x,y,z)=C
+\sin\frac{n_x\pi x}{L}
+\sin\frac{n_y\pi y}{L}
+\sin\frac{n_z\pi z}{L}}
+\]
+and the allowed values are
+\[
+\boxed{
+k^2=\frac{\pi^2}{L^2}
+\left(n_x^2+n_y^2+n_z^2\right),
+\qquad n_x,n_y,n_z\in\mathbb N.}
+\]
+
+::: {.proof}
+Substitute the values from steps <1>3--<1>4 into the relation in step <1>2. Each product mode vanishes on all six faces and satisfies the Helmholtz equation. Linear combinations of modes sharing the same value of $k^2$ give the full eigenspace for that eigenvalue.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the Dirichlet modes and every allowed value of $k^2$.
+:::
+:::
