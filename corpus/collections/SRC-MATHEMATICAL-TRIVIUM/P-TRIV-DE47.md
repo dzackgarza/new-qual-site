@@ -18,3 +18,90 @@ audit:
 ::: {.problem}
 Consider a metal rod of length L. One end is kept at temperature 0, and the other at temperature $T _ { 0 }$ . Find the temperature $T ( x , t )$ , knowing that $T ( x , 0 ) = 0$
 :::
+
+::: {.solution}
+Let the rod occupy $0<x<L$, take
+\[
+T(0,t)=0,
+\qquad
+T(L,t)=T_0,
+\]
+and write the heat equation as $T_t=\kappa T_{xx}$.
+
+<1>1. The stationary temperature profile is
+\[
+S(x)=\frac{T_0x}{L}.
+\]
+
+::: {.proof}
+A stationary profile satisfies $S''=0$, hence $S=A+Bx$. The endpoint values $S(0)=0$ and $S(L)=T_0$ give $A=0$ and $B=T_0/L$.
+:::
+
+<1>2. Set
+\[
+v(x,t)=T(x,t)-S(x).
+\]
+Then
+\[
+v_t=\kappa v_{xx},
+\qquad
+v(0,t)=v(L,t)=0,
+\qquad
+v(x,0)=-\frac{T_0x}{L}.
+\]
+
+::: {.proof}
+Since $S''=0$, subtracting $S$ preserves the heat equation. The boundary values become homogeneous, and the initial condition follows from $T(x,0)=0$ for $0<x<L$.
+:::
+
+<1>3. The separated Dirichlet expansion is
+\[
+v(x,t)=\sum_{n=1}^{\infty}b_n
+\sin\frac{n\pi x}{L}
+\exp\left(-\kappa\frac{n^2\pi^2}{L^2}t\right).
+\]
+
+::: {.proof}
+The Dirichlet eigenfunctions of $-d^2/dx^2$ on $(0,L)$ are $\sin(n\pi x/L)$ with eigenvalues $(n\pi/L)^2$. Separation of variables gives the displayed decay factors.
+:::
+
+<1>4. The Fourier coefficients are
+\[
+b_n=\frac{2T_0(-1)^n}{n\pi}.
+\]
+
+::: {.proof}
+By sine-series orthogonality,
+\[
+b_n=\frac2L\int_0^L
+\left(-\frac{T_0x}{L}\right)
+\sin\frac{n\pi x}{L}\,dx.
+\]
+Integration by parts gives
+\[
+\int_0^Lx\sin\frac{n\pi x}{L}\,dx
+=-\frac{L^2(-1)^n}{n\pi},
+\]
+which yields the stated coefficient.
+:::
+
+<1>5. Therefore
+\[
+\boxed{
+T(x,t)=\frac{T_0x}{L}
++\frac{2T_0}{\pi}
+\sum_{n=1}^{\infty}\frac{(-1)^n}{n}
+\sin\frac{n\pi x}{L}
+\exp\left(-\kappa\frac{n^2\pi^2}{L^2}t\right).}
+\]
+
+::: {.proof}
+Combine steps <1>1 and <1>3--<1>4. For $t>0$ the series satisfies the heat equation and both endpoint temperatures. As $t\to0^+$, its sine series equals $-T_0x/L$ for $0<x<L$, so the interior initial temperature is zero. The incompatibility at the corner $(L,0)$ is forced by the source data: the boundary prescribes $T(L,t)=T_0$ while the initial condition prescribes zero at $t=0$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the temperature evolution for the stated fixed endpoint temperatures and zero interior initial temperature.
+:::
+:::
