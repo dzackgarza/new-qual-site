@@ -28,3 +28,236 @@ for $(x,y)\ne(0,0)$ and set $f(0,0)=0$.
 (b) Is $f$ differentiable at $(0,0)$?
 Prove your answer.
 :::
+
+::: {.solution}
+Let
+\[
+v=(a,b)\in\mathbb R^2
+\]
+be a nonzero direction vector.
+
+<1>1. For $t\ne0$,
+\[
+f(tv)
+=
+\frac{t^2ab}
+{|t|\sqrt{a^2+b^2}}
+=
+|t|
+\frac{ab}{\sqrt{a^2+b^2}}.
+\]
+
+::: {.proof}
+Substitute
+\[
+(x,y)=(ta,tb)
+\]
+into the formula for $f$:
+\[
+\begin{aligned}
+f(ta,tb)
+&=
+\frac{(ta)(tb)}
+{\sqrt{t^2a^2+t^2b^2}}\\
+&=
+\frac{t^2ab}
+{|t|\sqrt{a^2+b^2}}\\
+&=
+|t|
+\frac{ab}{\sqrt{a^2+b^2}}.
+\end{aligned}
+\]
+:::
+
+<1>2. The two-sided directional difference quotient at the origin is
+\[
+\frac{f(tv)-f(0,0)}{t}
+=
+\frac{|t|}{t}
+\frac{ab}{\sqrt{a^2+b^2}}.
+\]
+
+::: {.proof}
+Since
+\[
+f(0,0)=0,
+\]
+divide the formula in step <1>1 by $t$.
+:::
+
+<1>3. If
+\[
+ab\ne0,
+\]
+the directional derivative in direction $v$ does not exist.
+
+::: {.proof}
+For
+\[
+t>0,
+\]
+step <1>2 gives
+\[
+\frac{f(tv)}t
+=
+\frac{ab}{\sqrt{a^2+b^2}}.
+\]
+For
+\[
+t<0,
+\]
+it gives
+\[
+\frac{f(tv)}t
+=
+-
+\frac{ab}{\sqrt{a^2+b^2}}.
+\]
+If
+\[
+ab\ne0,
+\]
+these one-sided limits are different.
+Hence the two-sided limit does not exist.
+:::
+
+<1>4. If
+\[
+ab=0,
+\]
+then the directional derivative exists and equals
+\[
+\boxed{0}.
+\]
+
+::: {.proof}
+When
+\[
+ab=0,
+\]
+the quotient in step <1>2 is identically zero for every
+\[
+t\ne0.
+\]
+Thus its limit is zero.
+:::
+
+<1>5. Therefore the directional derivatives at the origin exist exactly in the nonzero directions parallel to one of the coordinate axes, and all such derivatives equal $0$.
+
+::: {.proof}
+For a nonzero vector
+\[
+v=(a,b),
+\]
+the condition
+\[
+ab=0
+\]
+means exactly that
+\[
+a=0
+\quad\text{or}\quad
+b=0.
+\]
+Apply steps <1>3--<1>4.
+This answers part (a).
+:::
+
+<1>6. If $f$ were differentiable at $(0,0)$, then its derivative would be the zero linear map.
+
+::: {.proof}
+Differentiability implies existence of the partial derivatives, and they are the directional derivatives in the coordinate directions.
+By step <1>4,
+\[
+\frac{\partial f}{\partial x}(0,0)=0
+\qquad\text{and}\qquad
+\frac{\partial f}{\partial y}(0,0)=0.
+\]
+Thus the Jacobian matrix, and hence the derivative, would have to be
+\[
+Df(0,0)=0.
+\]
+:::
+
+<1>7. Along the line
+\[
+y=x,
+\]
+one has
+\[
+\frac{|f(t,t)|}
+{\|(t,t)\|_2}
+=
+\frac12
+\]
+for every
+\[
+t\ne0.
+\]
+
+::: {.proof}
+For
+\[
+t\ne0,
+\]
+\[
+f(t,t)
+=
+\frac{t^2}{\sqrt{2t^2}}
+=
+\frac{|t|}{\sqrt2}.
+\]
+Also
+\[
+\|(t,t)\|_2
+=
+\sqrt2\,|t|.
+\]
+Therefore
+\[
+\frac{|f(t,t)|}{\|(t,t)\|_2}
+=
+\frac{|t|/\sqrt2}{\sqrt2|t|}
+=
+\frac12.
+\]
+:::
+
+<1>8. The function $f$ is not differentiable at $(0,0)$.
+
+::: {.proof}
+If $f$ were differentiable there, step <1>6 says the derivative would be zero.
+The differentiability condition would then require
+\[
+\frac{
+|f(h)-f(0,0)|
+}{
+\|h\|_2
+}
+\to0
+\]
+as
+\[
+h\to0.
+\]
+But step <1>7 shows that along
+\[
+h=(t,t)\to(0,0),
+\]
+this quotient is constantly
+\[
+\frac12.
+\]
+Therefore the required limit is not zero.
+Hence
+\[
+\boxed{f\text{ is not differentiable at }(0,0).}
+\]
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>5 answers part (a), and step <1>8 answers part (b).
+:::
+:::
