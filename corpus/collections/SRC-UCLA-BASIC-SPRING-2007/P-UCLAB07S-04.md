@@ -27,3 +27,261 @@ and
 L=\left\{\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}:x\in X\right\}.
 \]
 :::
+
+::: {.solution}
+For each distinct eigenvalue $\lambda_j$, let
+\[
+E_j=\ker(A-\lambda_jI).
+\]
+
+<1>1. Since $A$ is real symmetric,
+\[
+\mathbb R^n
+=
+\bigoplus_{j=1}^{\ell}E_j
+\]
+orthogonally.
+
+::: {.proof}
+By the spectral theorem for real symmetric matrices, $\mathbb R^n$ has an orthonormal basis of eigenvectors of $A$.
+Grouping basis vectors with the same eigenvalue yields the stated orthogonal direct sum of eigenspaces.
+:::
+
+<1>2. Every
+\[
+x\in\mathbb R^n
+\]
+has a unique decomposition
+\[
+x=x_1+\cdots+x_\ell,
+\qquad
+x_j\in E_j,
+\]
+and
+\[
+\boxed{
+x^TA^{2k}x
+=
+\sum_{j=1}^{\ell}
+\|x_j\|_2^2\,\lambda_j^{2k}
+}.
+\]
+
+::: {.proof}
+The decomposition is given by step <1>1.
+Since
+\[
+Ax_j=\lambda_jx_j,
+\]
+one has
+\[
+A^{2k}x_j
+=
+\lambda_j^{2k}x_j.
+\]
+Therefore
+\[
+A^{2k}x
+=
+\sum_{j=1}^{\ell}
+\lambda_j^{2k}x_j.
+\]
+Using orthogonality of the eigenspaces,
+\[
+\begin{aligned}
+x^TA^{2k}x
+&=
+\left\langle
+\sum_i x_i,
+\sum_j\lambda_j^{2k}x_j
+\right\rangle\\
+&=
+\sum_{j=1}^{\ell}
+\lambda_j^{2k}\|x_j\|_2^2.
+\end{aligned}
+\]
+:::
+
+<1>3. For
+\[
+x\ne0,
+\]
+define
+\[
+M(x)
+=
+\max\left\{
+|\lambda_j|^2:
+x_j\ne0
+\right\}.
+\]
+Then
+\[
+\lim_{k\to\infty}
+\left(
+x^TA^{2k}x
+\right)^{1/k}
+=
+M(x).
+\]
+
+::: {.proof}
+By step <1>2,
+\[
+x^TA^{2k}x
+=
+\sum_{j:x_j\ne0}
+\|x_j\|_2^2
+\left(
+|\lambda_j|^2
+\right)^k.
+\]
+Let
+\[
+M=M(x).
+\]
+Choose an index $j_0$ with
+\[
+x_{j_0}\ne0
+\qquad\text{and}\qquad
+|\lambda_{j_0}|^2=M.
+\]
+Then
+\[
+\|x_{j_0}\|_2^2 M^k
+\le
+x^TA^{2k}x.
+\]
+Also,
+\[
+x^TA^{2k}x
+\le
+\left(
+\sum_j\|x_j\|_2^2
+\right)
+M^k
+=
+\|x\|_2^2M^k.
+\]
+Taking $k$th roots gives
+\[
+\|x_{j_0}\|_2^{2/k}M
+\le
+\left(
+x^TA^{2k}x
+\right)^{1/k}
+\le
+\|x\|_2^{2/k}M.
+\]
+Both scalar factors tend to $1$ as $k\to\infty$.
+Hence the squeeze theorem gives the stated limit.
+:::
+
+<1>4. For
+\[
+x=0,
+\]
+the limit exists and equals $0$.
+
+::: {.proof}
+For every $k$,
+\[
+x^TA^{2k}x=0.
+\]
+Thus
+\[
+\left(
+x^TA^{2k}x
+\right)^{1/k}
+=0.
+\]
+:::
+
+<1>5. Therefore
+\[
+\boxed{X=\mathbb R^n}.
+\]
+
+::: {.proof}
+Step <1>3 proves existence of the limit for every nonzero $x$, and step <1>4 handles $x=0$.
+Thus every vector belongs to $X$.
+:::
+
+<1>6. Every nonzero limit value is one of the numbers
+\[
+\lambda_1^2,\ldots,\lambda_\ell^2.
+\]
+
+::: {.proof}
+For $x\ne0$, step <1>3 says that the limit equals
+\[
+\max\left\{
+|\lambda_j|^2:x_j\ne0
+\right\}.
+\]
+Since the eigenvalues are real,
+\[
+|\lambda_j|^2=\lambda_j^2.
+\]
+The maximum of a finite nonempty subset of the numbers $\lambda_j^2$ is one of those numbers.
+:::
+
+<1>7. Every number
+\[
+\lambda_j^2
+\]
+occurs as a limit.
+
+::: {.proof}
+Choose a nonzero eigenvector
+\[
+v\in E_j.
+\]
+Then
+\[
+A^{2k}v
+=
+\lambda_j^{2k}v.
+\]
+Hence
+\[
+\begin{aligned}
+\left(
+v^TA^{2k}v
+\right)^{1/k}
+&=
+\left(
+\|v\|_2^2\lambda_j^{2k}
+\right)^{1/k}\\
+&=
+\|v\|_2^{2/k}\lambda_j^2
+\longrightarrow
+\lambda_j^2.
+\end{aligned}
+\]
+:::
+
+<1>8. Therefore
+\[
+\boxed{
+L
+=
+\{0\}
+\cup
+\{\lambda_1^2,\ldots,\lambda_\ell^2\}
+}.
+\]
+
+::: {.proof}
+The value $0$ occurs at $x=0$ by step <1>4.
+Step <1>6 shows that no other values can occur.
+Step <1>7 shows that every listed square does occur.
+Repeated squares, such as those coming from eigenvalues $\lambda$ and $-\lambda$, appear only once because $L$ is a set.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>5 determines $X$, and step <1>8 determines $L$.
+:::
+:::
