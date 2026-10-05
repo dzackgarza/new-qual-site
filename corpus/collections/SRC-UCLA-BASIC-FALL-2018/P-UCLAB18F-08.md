@@ -27,3 +27,193 @@ Show that for each $i$,
 \sum_{j=1}^n|G_{ij}|^2=\frac{\operatorname{Im}G_{ii}}{\operatorname{Im}z}.
 \]
 :::
+
+::: {.solution}
+<1>1. The matrix
+\[
+X-zI
+\]
+is invertible.
+
+::: {.proof}
+Suppose
+\[
+(X-zI)v=0
+\]
+for some
+\[
+v\in\mathbb C^n.
+\]
+Then
+\[
+Xv=zv.
+\]
+Since $X$ is real symmetric, it is Hermitian, so every eigenvalue of $X$ is real.
+But
+\[
+\operatorname{Im}z>0,
+\]
+so $z$ is not real.
+Hence no nonzero $v$ can satisfy the displayed equation.
+Thus
+\[
+\ker(X-zI)=\{0\},
+\]
+and the square matrix is invertible.
+:::
+
+<1>2. One has
+\[
+\boxed{
+G^*
+=(X-\overline z\,I)^{-1}
+}.
+\]
+
+::: {.proof}
+Since
+\[
+G=(X-zI)^{-1},
+\]
+taking adjoints gives
+\[
+G^*
+=
+\bigl((X-zI)^{-1}\bigr)^*
+=
+\bigl((X-zI)^*\bigr)^{-1}.
+\]
+Because $X^*=X$,
+\[
+(X-zI)^*
+=
+X-\overline z\,I.
+\]
+:::
+
+<1>3. The resolvent identity gives
+\[
+\boxed{
+G-G^*
+=(z-\overline z)\,GG^*
+}.
+\]
+
+::: {.proof}
+For invertible matrices $A,B$,
+\[
+A^{-1}-B^{-1}
+=
+A^{-1}(B-A)B^{-1}.
+\]
+Apply this with
+\[
+A=X-zI,
+\qquad
+B=X-\overline z\,I.
+\]
+Then
+\[
+B-A
+=(z-\overline z)I.
+\]
+Using step <1>2,
+\[
+\begin{aligned}
+G-G^*
+&=
+(X-zI)^{-1}
+-
+(X-\overline z\,I)^{-1}\\
+&=
+(X-zI)^{-1}
+\bigl((z-\overline z)I\bigr)
+(X-\overline z\,I)^{-1}\\
+&=
+(z-\overline z)\,GG^*.
+\end{aligned}
+\]
+:::
+
+<1>4. Taking the $(i,i)$ entry in step <1>3 gives
+\[
+2i\,\operatorname{Im}G_{ii}
+=
+2i\,\operatorname{Im}z\,(GG^*)_{ii}.
+\]
+
+::: {.proof}
+The left side is
+\[
+(G-G^*)_{ii}
+=
+G_{ii}-\overline{G_{ii}}
+=
+2i\,\operatorname{Im}G_{ii}.
+\]
+Also
+\[
+z-\overline z
+=
+2i\,\operatorname{Im}z.
+\]
+Substitute these into the diagonal entry of step <1>3.
+:::
+
+<1>5. One has
+\[
+(GG^*)_{ii}
+=
+\sum_{j=1}^n|G_{ij}|^2.
+\]
+
+::: {.proof}
+By matrix multiplication,
+\[
+(GG^*)_{ii}
+=
+\sum_{j=1}^n
+G_{ij}(G^*)_{ji}.
+\]
+Since
+\[
+(G^*)_{ji}
+=
+\overline{G_{ij}},
+\]
+this becomes
+\[
+\sum_{j=1}^n
+G_{ij}\overline{G_{ij}}
+=
+\sum_{j=1}^n|G_{ij}|^2.
+\]
+:::
+
+<1>6. Therefore, for every $i$,
+\[
+\boxed{
+\sum_{j=1}^n|G_{ij}|^2
+=
+\frac{\operatorname{Im}G_{ii}}
+{\operatorname{Im}z}
+}.
+\]
+
+::: {.proof}
+Combine steps <1>4 and <1>5 and divide by
+\[
+2i\,\operatorname{Im}z.
+\]
+This denominator is nonzero because
+\[
+\operatorname{Im}z>0.
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required identity.
+:::
+:::
