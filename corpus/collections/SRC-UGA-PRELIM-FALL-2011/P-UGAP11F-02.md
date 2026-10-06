@@ -24,3 +24,147 @@ Find an invertible matrix $A$ and a diagonal matrix $B$ such that
 =ABA^{-1}.
 \]
 :::
+
+::: {.solution}
+Let
+$$
+M=
+\begin{pmatrix}
+8&9\\
+-6&-7
+\end{pmatrix}.
+$$
+
+<1>1. The characteristic polynomial of $M$ is
+$$
+\boxed{\chi_M(\lambda)=(\lambda-2)(\lambda+1)}.
+$$
+
+::: {.proof}
+One computes
+$$
+\begin{aligned}
+\chi_M(\lambda)
+&=
+\det(\lambda I-M)\\
+&=
+\det
+\begin{pmatrix}
+\lambda-8&-9\\
+6&\lambda+7
+\end{pmatrix}\\
+&=
+(\lambda-8)(\lambda+7)+54\\
+&=
+\lambda^2-\lambda-2\\
+&=
+(\lambda-2)(\lambda+1).
+\end{aligned}
+$$
+:::
+
+<1>2. An eigenvector for the eigenvalue $2$ is
+$$
+v_2=
+\begin{pmatrix}
+-3\\
+2
+\end{pmatrix},
+$$
+and an eigenvector for the eigenvalue $-1$ is
+$$
+v_{-1}=
+\begin{pmatrix}
+1\\
+-1
+\end{pmatrix}.
+$$
+
+::: {.proof}
+For $\lambda=2$,
+$$
+M-2I
+=
+\begin{pmatrix}
+6&9\\
+-6&-9
+\end{pmatrix},
+$$
+and
+$$
+6(-3)+9(2)=0.
+$$
+Hence
+$$
+Mv_2=2v_2.
+$$
+
+For $\lambda=-1$,
+$$
+M+I
+=
+\begin{pmatrix}
+9&9\\
+-6&-6
+\end{pmatrix},
+$$
+and
+$$
+9(1)+9(-1)=0.
+$$
+Hence
+$$
+Mv_{-1}=-v_{-1}.
+$$
+:::
+
+<1>3. Define
+$$
+\boxed{
+A=
+\begin{pmatrix}
+-3&1\\
+2&-1
+\end{pmatrix},
+\qquad
+B=
+\begin{pmatrix}
+2&0\\
+0&-1
+\end{pmatrix}}.
+$$
+Then $A$ is invertible.
+
+::: {.proof}
+The columns of $A$ are the two eigenvectors from step <1>2. Moreover,
+$$
+\det A
+=
+(-3)(-1)-2
+=1\ne0.
+$$
+Thus $A$ is invertible.
+:::
+
+<1>4. One has
+$$
+M=ABA^{-1}.
+$$
+
+::: {.proof}
+Since the columns of $A$ are eigenvectors with eigenvalues given by the diagonal entries of $B$,
+$$
+MA=AB.
+$$
+Right-multiplying by $A^{-1}$ gives
+$$
+M=ABA^{-1}.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>3--<1>4 provide the requested matrices and verify the similarity relation.
+:::
+:::
