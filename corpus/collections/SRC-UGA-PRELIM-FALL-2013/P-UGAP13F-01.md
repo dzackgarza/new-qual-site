@@ -24,3 +24,129 @@ A function $f:\mathbb R\to\mathbb R$ is uniformly continuous if for every $\vare
 
 (b) Give an example, with brief explanation, of a function $f:\mathbb R\to\mathbb R$ that is continuous but not uniformly continuous.
 :::
+
+::: {.solution}
+<1>1. The negation of uniform continuity is:
+\[
+\boxed{
+\exists\varepsilon_0>0
+\text{ such that }
+\forall\delta>0
+\text{ there exist }x,y\in\mathbb R
+\text{ with }
+|x-y|<\delta
+\text{ and }
+|f(x)-f(y)|\ge\varepsilon_0.
+}
+\]
+
+::: {.proof}
+Uniform continuity is the statement
+\[
+\forall\varepsilon>0+\exists\delta>0+\forall x,y\in\mathbb R,
+\quad
+|x-y|<\delta
+\Longrightarrow
+|f(x)-f(y)|<\varepsilon.
+\]
+
+Negating the quantifiers gives
+\[
+\exists\varepsilon_0>0+\forall\delta>0+\exists x,y\in\mathbb R
+\]
+such that the implication fails.
+Failure of
+\[
+|x-y|<\delta
+\Longrightarrow
+|f(x)-f(y)|<\varepsilon_0
+\]
+means precisely
+\[
+|x-y|<\delta
+\]
+and
+\[
+|f(x)-f(y)|\ge\varepsilon_0.
+\]
+:::
+
+<1>2. Take
+\[
+\boxed{
+f(x)=x^2.
+}
+\]
+Then $f$ is continuous on $\mathbb R$.
+
+::: {.proof}
+It is a polynomial.
+:::
+
+<1>3. The function
+\[
+f(x)=x^2
+\]
+is not uniformly continuous.
+
+::: {.proof}
+Take
+\[
+\varepsilon_0=1.
+\]
+Let
+\[
+\delta>0
+\]
+be arbitrary, and set
+\[
+h
+\coloneqq
+\frac\delta2.
+\]
+Choose
+\[
+x>
+\frac1{2h}.
+\]
+Set
+\[
+y=x+h.
+\]
+Then
+\[
+|x-y|
+=
+h
+=
+\frac\delta2
+<
+\delta.
+\]
+
+But
+\[
+\begin{aligned}
+|f(y)-f(x)|
+&=
+(x+h)^2-x^2\\
+&=
+2xh+h^2\\
+&>
+1.
+\end{aligned}
+\]
+Thus the fixed number
+\[
+\varepsilon_0=1
+\]
+defeats every choice of $\delta$.
+By step <1>1, $f$ is not uniformly continuous.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), and steps <1>2--<1>3 answer part (b).
+:::
+:::
