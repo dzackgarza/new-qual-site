@@ -149,17 +149,13 @@ The recorded owner decisions were resolved; current owner decisions belong to th
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] **`select`**. **Needs:** none. Select one unsolved card.
-
-- [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
-
-- [ ] **`prove`**. **Needs:** `read`, `source-review`. Write a complete Lamport-style structured proof.
-
-- [ ] **`attach`**. **Needs:** `prove`. Add a `solution` section to the card.
-
-- [ ] **`source-review`**. **Needs:** `read`. Integrate a source solution only after independent mathematical review.
-
-- [ ] **`commit`**. **Needs:** `attach`. Review the complete authored proof and commit the completed solution before selecting another card.
+Closed 2026-10-06.
+Every current `kind: problem` card in `corpus/collections` has an authored
+`solution` section. The programme was completed card-by-card under the
+`select -> read/source-review -> prove -> attach -> commit` DAG above; its
+per-card proof and commit evidence remains in Git history. A later newly added
+problem without a solution is new authoring work, not a reason to reopen this
+completed finite programme.
 
 ## 8. Close the roadmap
 
