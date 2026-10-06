@@ -17,3 +17,155 @@ audit:
 ::: {.problem}
 Give an example, with proof, of a real power series that converges exactly on the interval $[2,4)$.
 :::
+
+::: {.solution}
+Consider
+\[
+\boxed{
+\sum_{n=1}^{\infty}
+\frac{(x-3)^n}{n}.
+}
+\]
+
+<1>1. The radius of convergence is
+\[
+R=1.
+\]
+
+::: {.proof}
+The coefficients are
+\[
+a_n=\frac1n.
+\]
+By the Cauchy--Hadamard formula,
+\[
+\frac1R
+=
+\limsup_{n\to\infty}
+|a_n|^{1/n}
+=
+\lim_{n\to\infty}
+n^{-1/n}
+=
+1.
+\]
+Hence
+\[
+R=1.
+\]
+Therefore the series converges absolutely for
+\[
+|x-3|<1,
+\]
+that is,
+\[
+2<x<4,
+\]
+and diverges for
+\[
+|x-3|>1.
+\]
+:::
+
+<1>2. At the left endpoint
+\[
+x=2,
+\]
+the series becomes
+\[
+\sum_{n=1}^{\infty}
+\frac{(-1)^n}{n},
+\]
+which converges.
+
+::: {.proof}
+This is the alternating harmonic series.
+The terms
+\[
+\frac1n
+\]
+decrease monotonically to $0$, so the alternating-series test gives
+convergence.
+:::
+
+<1>3. At the right endpoint
+\[
+x=4,
+\]
+the series becomes
+\[
+\sum_{n=1}^{\infty}
+\frac1n,
+\]
+which diverges.
+
+::: {.proof}
+This is the harmonic series.
+:::
+
+<1>4. For
+\[
+x<2
+\quad\text{or}\quad
+x>4,
+\]
+the series diverges.
+
+::: {.proof}
+By step <1>1,
+\[
+|x-3|>1.
+\]
+Then
+\[
+\left|
+\frac{(x-3)^n}{n}
+\right|
+\]
+does not tend to $0$; indeed the exponential factor
+\[
+|x-3|^n
+\]
+dominates the linear denominator $n$.
+Therefore the necessary term test fails.
+:::
+
+<1>5. Hence the exact interval of convergence is
+\[
+\boxed{
+[2,4).
+}
+\]
+
+::: {.proof}
+Steps <1>1--<1>4 show:
+
+- convergence for every
+  \[
+  2<x<4;
+  \]
+- convergence at
+  \[
+  x=2;
+  \]
+- divergence at
+  \[
+  x=4;
+  \]
+- divergence outside
+  \[
+  [2,4].
+  \]
+
+Thus the convergence set is exactly
+\[
+[2,4).
+\]
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the required example and proof.
+:::
+:::
