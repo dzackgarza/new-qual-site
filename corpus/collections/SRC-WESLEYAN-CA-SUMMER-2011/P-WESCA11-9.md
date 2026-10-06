@@ -23,3 +23,178 @@ Prove, using the maximum principle, that
 \]
 for $|z|<1$.
 :::
+
+::: {.solution}
+<1>1. Define
+\[
+g(z)
+\coloneqq
+\begin{cases}
+\dfrac{f(z)}{z},&z\ne0,\\[2mm]
+f'(0),&z=0.
+\end{cases}
+\]
+Then $g$ is holomorphic on the unit disk.
+
+::: {.proof}
+Since
+\[
+f(0)=0,
+\]
+the Taylor expansion of $f$ at $0$ has the form
+\[
+f(z)
+=
+a_1z+a_2z^2+\cdots.
+\]
+Therefore, for $z\ne0$,
+\[
+\frac{f(z)}z
+=
+a_1+a_2z+\cdots,
+\]
+which extends holomorphically across $0$ with value
+\[
+a_1=f'(0).
+\]
+:::
+
+<1>2. Fix
+\[
+0<r<1.
+\]
+On the circle
+\[
+|z|=r,
+\]
+one has
+\[
+|g(z)|
+\le
+\frac1r.
+\]
+
+::: {.proof}
+For
+\[
+|z|=r,
+\]
+the hypothesis gives
+\[
+|f(z)|\le1.
+\]
+Hence
+\[
+|g(z)|
+=
+\frac{|f(z)|}{|z|}
+\le
+\frac1r.
+\]
+:::
+
+<1>3. For every
+\[
+|z|\le r,
+\]
+one has
+\[
+|g(z)|
+\le
+\frac1r.
+\]
+
+::: {.proof}
+The function $g$ is holomorphic on a neighborhood of the closed disk
+\[
+\{|z|\le r\}.
+\]
+By the maximum modulus principle,
+\[
+\max_{|z|\le r}|g(z)|
+=
+\max_{|z|=r}|g(z)|.
+\]
+Apply the boundary estimate from step <1>2.
+:::
+
+<1>4. Fix
+\[
+z\in\mathbb D.
+\]
+Then
+\[
+|g(z)|\le1.
+\]
+
+::: {.proof}
+Choose any
+\[
+r
+\]
+with
+\[
+|z|<r<1.
+\]
+Step <1>3 gives
+\[
+|g(z)|
+\le
+\frac1r.
+\]
+This holds for every such $r$. Letting
+\[
+r\uparrow1
+\]
+gives
+\[
+|g(z)|\le1.
+\]
+:::
+
+<1>5. Therefore
+\[
+\boxed{
+|f(z)|\le|z|
+\qquad
+(|z|<1).
+}
+\]
+
+::: {.proof}
+For
+\[
+z\ne0,
+\]
+one has
+\[
+f(z)=zg(z).
+\]
+By step <1>4,
+\[
+|f(z)|
+=
+|z|\,|g(z)|
+\le
+|z|.
+\]
+At
+\[
+z=0,
+\]
+the inequality is
+\[
+0\le0
+\]
+because
+\[
+f(0)=0.
+\]
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is Schwarz's estimate obtained from the maximum principle.
+:::
+:::
