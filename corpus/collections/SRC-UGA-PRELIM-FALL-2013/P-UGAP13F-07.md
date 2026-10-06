@@ -32,3 +32,174 @@ f^{-1}(C-D)\qquad f^{-1}(C)-f^{-1}(D).
 f\bigl(f^{-1}(C)\bigr)\qquad C.
 \]
 :::
+
+::: {.solution}
+<1>1. For part (a),
+\[
+\boxed{
+f(A\cap B)
+\subseteq
+f(A)\cap f(B).
+}
+\]
+
+::: {.proof}
+If
+\[
+y\in f(A\cap B),
+\]
+then
+\[
+y=f(x)
+\]
+for some
+\[
+x\in A\cap B.
+\]
+Hence
+\[
+x\in A
+\quad\text{and}\quad
+x\in B,
+\]
+so
+\[
+y\in f(A)\cap f(B).
+\]
+
+The inclusion can be strict.
+For example, let
+\[
+X=\{1,2\},
+\qquad
+Y=\{0\},
+\]
+let $f$ be constant, and take
+\[
+A=\{1\},
+\qquad
+B=\{2\}.
+\]
+Then
+\[
+f(A\cap B)
+=
+\varnothing,
+\]
+while
+\[
+f(A)\cap f(B)
+=
+\{0\}.
+\]
+:::
+
+<1>2. For part (b),
+\[
+\boxed{
+f^{-1}(C-D)
+=
+f^{-1}(C)-f^{-1}(D).
+}
+\]
+
+::: {.proof}
+For
+\[
+x\in X,
+\]
+\[
+\begin{aligned}
+x\in f^{-1}(C-D)
+&\Longleftrightarrow
+f(x)\in C
+\text{ and }
+f(x)\notin D\\
+&\Longleftrightarrow
+x\in f^{-1}(C)
+\text{ and }
+x\notin f^{-1}(D)\\
+&\Longleftrightarrow
+x\in
+f^{-1}(C)-f^{-1}(D).
+\end{aligned}
+\]
+:::
+
+<1>3. For part (c),
+\[
+\boxed{
+f\bigl(f^{-1}(C)\bigr)
+\subseteq
+C.
+}
+\]
+
+::: {.proof}
+More precisely,
+\[
+f\bigl(f^{-1}(C)\bigr)
+=
+C\cap f(X).
+\]
+Indeed,
+\[
+y\in f(f^{-1}(C))
+\]
+exactly when
+\[
+y=f(x)
+\]
+for some $x\in X$ with
+\[
+f(x)\in C.
+\]
+Thus
+\[
+y\in C\cap f(X).
+\]
+
+The inclusion can be strict.
+For example, let
+\[
+X=\{1\},
+\qquad
+Y=\{0,1\},
+\qquad
+f(1)=0,
+\qquad
+C=Y.
+\]
+Then
+\[
+f(f^{-1}(C))
+=
+\{0\}
+\subsetneq
+\{0,1\}
+=
+C.
+\]
+:::
+
+<1>4. Therefore the best relations are
+\[
+\boxed{
+\begin{array}{c|c}
+(a)&\subseteq\\
+(b)&=\\
+(c)&\subseteq
+\end{array}
+}
+\]
+
+::: {.proof}
+Collect steps <1>1--<1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested choices.
+:::
+:::
