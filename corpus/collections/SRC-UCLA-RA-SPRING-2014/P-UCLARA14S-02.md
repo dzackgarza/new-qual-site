@@ -24,3 +24,145 @@ Prove that
 \]
 for Lebesgue-almost every $a\in\mathbb R$.
 :::
+
+::: {.solution}
+For $a\in\mathbb R$, define
+\[
+F(a)
+\coloneqq
+\int_{\mathbb R}
+\frac{|f(x)|}{|x-a|^\beta}\,dx
+\in[0,\infty].
+\]
+Also set
+\[
+w(a)
+\coloneqq
+\frac1{1+a^2}.
+\]
+
+<1>1. There is a constant $C_\beta<\infty$, depending only on $\beta$, such that for every $x\in\mathbb R$,
+\[
+\int_{\mathbb R}
+\frac{w(a)}{|x-a|^\beta}\,da
+\le
+C_\beta.
+\]
+
+::: {.proof}
+Split the integral into the regions $|a-x|<1$ and $|a-x|\ge1$.
+
+On the first region, $w(a)\le1$, so after the change of variables $h=a-x$,
+\[
+\int_{|a-x|<1}
+\frac{w(a)}{|x-a|^\beta}\,da
+\le
+\int_{|h|<1}|h|^{-\beta}\,dh
+=
+\frac{2}{1-\beta},
+\]
+which is finite because $0<\beta<1$.
+
+On the second region, $|x-a|^{-\beta}\le1$, hence
+\[
+\int_{|a-x|\ge1}
+\frac{w(a)}{|x-a|^\beta}\,da
+\le
+\int_{\mathbb R}\frac{da}{1+a^2}
+=
+\pi.
+\]
+Thus one may take
+\[
+C_\beta
+=
+\frac{2}{1-\beta}+\pi.
+\]
+:::
+
+<1>2. One has
+\[
+\int_{\mathbb R}w(a)F(a)\,da
+\le
+C_\beta\|f\|_{L^1(\mathbb R)}
+<
+\infty.
+\]
+
+::: {.proof}
+The function
+\[
+(a,x)
+\longmapsto
+w(a)\frac{|f(x)|}{|x-a|^\beta}
+\]
+is nonnegative and measurable. Tonelli's theorem therefore gives
+\[
+\begin{aligned}
+\int_{\mathbb R}w(a)F(a)\,da
+&=
+\int_{\mathbb R}
+\int_{\mathbb R}
+w(a)\frac{|f(x)|}{|x-a|^\beta}\,dx\,da\\
+&=
+\int_{\mathbb R}
+|f(x)|
+\left(
+\int_{\mathbb R}
+\frac{w(a)}{|x-a|^\beta}\,da
+\right)dx.
+\end{aligned}
+\]
+Apply step <1>1 to the inner integral:
+\[
+\int_{\mathbb R}w(a)F(a)\,da
+\le
+C_\beta
+\int_{\mathbb R}|f(x)|\,dx.
+\]
+The right-hand side is finite because $f\in L^1(\mathbb R)$.
+:::
+
+<1>3. The set
+\[
+E
+\coloneqq
+\{a\in\mathbb R:F(a)=\infty\}
+\]
+has Lebesgue measure zero.
+
+::: {.proof}
+The weight $w(a)=(1+a^2)^{-1}$ is strictly positive for every $a\in\mathbb R$. If $E$ had positive measure, then
+\[
+w(a)F(a)=\infty
+\qquad
+(a\in E),
+\]
+so the nonnegative integral
+\[
+\int_{\mathbb R}w(a)F(a)\,da
+\]
+would be infinite. This contradicts step <1>2. Hence $m(E)=0$.
+:::
+
+<1>4. Therefore
+\[
+\boxed{
+\int_{\mathbb R}
+\frac{|f(x)|}{|x-a|^\beta}\,dx
+<
+\infty
+}
+\]
+for Lebesgue-almost every $a\in\mathbb R$.
+
+::: {.proof}
+By definition, the integral is $F(a)$, and step <1>3 shows that $F(a)<\infty$ outside a null set.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
+:::
