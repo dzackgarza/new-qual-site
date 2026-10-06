@@ -17,3 +17,200 @@ Prove that there are disjoint open sets $U,V\subseteq X$ such that
 p\in U,\qquad C\subseteq V.
 \]
 :::
+
+::: {.solution}
+Fix a metric
+\[
+d
+\]
+that induces the topology of $X$.
+
+<1>1. Since $C$ is closed and
+\[
+p\notin C,
+\]
+there exists
+\[
+\varepsilon>0
+\]
+such that
+\[
+B(p,\varepsilon)
+\cap
+C
+=
+\varnothing.
+\]
+
+::: {.proof}
+Because $C$ is closed,
+\[
+X\setminus C
+\]
+is open.
+Since
+\[
+p\in X\setminus C,
+\]
+the metric topology gives an
+\[
+\varepsilon>0
+\]
+with
+\[
+B(p,\varepsilon)
+\subseteq
+X\setminus C.
+\]
+:::
+
+<1>2. In particular,
+\[
+d(p,c)
+\ge
+\varepsilon
+\qquad
+(c\in C).
+\]
+
+::: {.proof}
+If some
+\[
+c\in C
+\]
+satisfied
+\[
+d(p,c)<\varepsilon,
+\]
+then
+\[
+c\in B(p,\varepsilon),
+\]
+contradicting step <1>1.
+:::
+
+<1>3. Define
+\[
+U
+\coloneqq
+B\left(p,\frac{\varepsilon}{3}\right)
+\]
+and
+\[
+V
+\coloneqq
+\bigcup_{c\in C}
+B\left(c,\frac{\varepsilon}{3}\right).
+\]
+Then $U$ and $V$ are open,
+\[
+p\in U,
+\]
+and
+\[
+C\subseteq V.
+\]
+
+::: {.proof}
+Both sets are unions of open balls.
+
+Also
+\[
+d(p,p)=0<\frac{\varepsilon}{3},
+\]
+so
+\[
+p\in U.
+\]
+
+For every
+\[
+c\in C,
+\]
+one has
+\[
+c\in
+B\left(c,\frac{\varepsilon}{3}\right)
+\subseteq
+V.
+\]
+Thus
+\[
+C\subseteq V.
+\]
+:::
+
+<1>4. The open sets $U$ and $V$ are disjoint.
+
+::: {.proof}
+Suppose, toward a contradiction, that
+\[
+x\in U\cap V.
+\]
+Then
+\[
+d(p,x)
+<
+\frac{\varepsilon}{3}.
+\]
+Because
+\[
+x\in V,
+\]
+there is some
+\[
+c\in C
+\]
+such that
+\[
+d(x,c)
+<
+\frac{\varepsilon}{3}.
+\]
+By the triangle inequality,
+\[
+\begin{aligned}
+d(p,c)
+&\le
+d(p,x)+d(x,c)\\
+&<
+\frac{\varepsilon}{3}
++
+\frac{\varepsilon}{3}\\
+&=
+\frac{2\varepsilon}{3}
+<
+\varepsilon.
+\end{aligned}
+\]
+This contradicts step <1>2.
+Therefore
+\[
+U\cap V
+=
+\varnothing.
+\]
+:::
+
+<1>5. Hence
+\[
+\boxed{
+p\in U,
+\qquad
+C\subseteq V,
+\qquad
+U\cap V=\varnothing,
+}
+\]
+with $U$ and $V$ open.
+
+::: {.proof}
+Combine steps <1>3--<1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required separation.
+:::
+:::
