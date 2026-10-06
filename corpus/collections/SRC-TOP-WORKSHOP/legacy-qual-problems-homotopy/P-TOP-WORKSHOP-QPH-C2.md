@@ -96,7 +96,7 @@ with respect to the generator $x$: multiplication by $x$ sends the vertex labele
 
 <1>5. Attach six $2$-cells
 \[
-D_0,dots,D_5
+D_0,\dots,D_5
 \]
 to the hexagon, where the boundary of $D_j$ follows
 \[
