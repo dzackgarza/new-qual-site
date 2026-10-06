@@ -18,3 +18,330 @@ audit:
 ::: {.problem}
 Prove that every graph has a bipartition $V ( G ) = X \cup Y$ with the property that $e ( X , Y ) \geq e ( G ) / 2$ . Further, show that if G is cubic then we can achieve $e ( X , Y ) \geq$ $n ( G ) = 2 e ( G ) / 3$
 :::
+
+::: {.solution}
+For a bipartition
+$$
+V(G)=X\sqcup Y,
+$$
+write
+$$
+e(X,Y)
+$$
+for the number of edges with one endpoint in
+$$
+X
+$$
+and the other in
+$$
+Y.
+$$
+
+<1>1. Choose a bipartition
+$$
+V(G)=X\sqcup Y
+$$
+for which
+$$
+e(X,Y)
+$$
+is maximal.
+
+::: {.proof}
+There are finitely many bipartitions of the finite vertex set
+$$
+V(G),
+$$
+so the integer-valued function
+$$
+(X,Y)\longmapsto e(X,Y)
+$$
+attains a maximum.
+:::
+
+<1>2. For every vertex
+$$
+v\in V(G),
+$$
+the number of crossing edges incident to
+$$
+v
+$$
+is at least the number of noncrossing edges incident to
+$$
+v.
+$$
+
+::: {.proof}
+Suppose
+$$
+v\in X.
+$$
+Let
+$$
+c(v)
+$$
+be the number of neighbors of
+$$
+v
+$$
+in
+$$
+Y,
+$$
+and let
+$$
+s(v)
+$$
+be the number of neighbors of
+$$
+v
+$$
+in
+$$
+X.
+$$
+
+If
+$$
+s(v)>c(v),
+$$
+move
+$$
+v
+$$
+from
+$$
+X
+$$
+to
+$$
+Y.
+$$
+The
+$$
+s(v)
+$$
+formerly noncrossing edges at
+$$
+v
+$$
+become crossing, while the
+$$
+c(v)
+$$
+formerly crossing edges become noncrossing. Hence the cut size changes by
+$$
+s(v)-c(v)>0,
+$$
+contradicting maximality.
+
+Thus
+$$
+c(v)\ge s(v).
+$$
+The argument is identical if
+$$
+v\in Y.
+$$
+:::
+
+<1>3. For every graph,
+$$
+\boxed{
+e(X,Y)\ge\frac{e(G)}2}.
+$$
+
+::: {.proof}
+Let
+$$
+E_{\mathrm{cross}}
+$$
+be the set of crossing edges and
+$$
+E_{\mathrm{same}}
+$$
+the set of noncrossing edges.
+
+Summing the inequality from step <1>2 over all vertices gives
+$$
+\sum_{v\in V(G)}c(v)
+\ge
+\sum_{v\in V(G)}s(v).
+$$
+Every crossing edge contributes
+$$
+1
+$$
+to
+$$
+c(v)
+$$
+at each of its two endpoints, so
+$$
+\sum_v c(v)
+=
+2e(X,Y).
+$$
+Likewise,
+$$
+\sum_v s(v)
+=
+2|E_{\mathrm{same}}|.
+$$
+Therefore
+$$
+e(X,Y)
+\ge
+|E_{\mathrm{same}}|.
+$$
+Since
+$$
+e(G)
+=
+e(X,Y)+|E_{\mathrm{same}}|,
+$$
+we get
+$$
+e(G)
+\le
+2e(X,Y),
+$$
+hence
+$$
+e(X,Y)
+\ge
+\frac{e(G)}2.
+$$
+:::
+
+<1>4. Now suppose
+$$
+G
+$$
+is cubic. Then every vertex is incident to at least two crossing edges.
+
+::: {.proof}
+For every vertex
+$$
+v,
+$$
+one has
+$$
+c(v)+s(v)=3.
+$$
+Step <1>2 gives
+$$
+c(v)\ge s(v).
+$$
+Since
+$$
+c(v)
+$$
+and
+$$
+s(v)
+$$
+are nonnegative integers summing to
+$$
+3,
+$$
+this forces
+$$
+c(v)\ge2.
+$$
+:::
+
+<1>5. For a cubic graph,
+$$
+\boxed{
+e(X,Y)\ge n(G)}.
+$$
+
+::: {.proof}
+Sum the inequality
+$$
+c(v)\ge2
+$$
+from step <1>4 over all
+$$
+n(G)
+$$
+vertices:
+$$
+\sum_{v\in V(G)}c(v)
+\ge
+2n(G).
+$$
+But
+$$
+\sum_v c(v)
+=
+2e(X,Y).
+$$
+Therefore
+$$
+2e(X,Y)
+\ge
+2n(G),
+$$
+so
+$$
+e(X,Y)\ge n(G).
+$$
+:::
+
+<1>6. In a cubic graph,
+$$
+n(G)=\frac{2e(G)}3.
+$$
+
+::: {.proof}
+The handshaking lemma gives
+$$
+\sum_{v\in V(G)}\deg(v)
+=
+2e(G).
+$$
+Since every vertex has degree
+$$
+3,
+$$
+the left-hand side is
+$$
+3n(G).
+$$
+Hence
+$$
+3n(G)
+=
+2e(G),
+$$
+so
+$$
+n(G)
+=
+\frac{2e(G)}3.
+$$
+:::
+
+<1>7. Therefore, if $G$ is cubic, one can achieve
+$$
+\boxed{
+e(X,Y)
+\ge
+n(G)
+=
+\frac{2e(G)}3}.
+$$
+
+::: {.proof}
+Combine steps <1>5--<1>6.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the general bound, and step <1>7 proves the stronger cubic bound.
+:::
+:::
