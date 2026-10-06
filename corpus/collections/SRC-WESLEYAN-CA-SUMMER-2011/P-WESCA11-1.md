@@ -18,3 +18,247 @@ audit:
 ::: {.problem}
 Find algebraic expressions involving real square roots, sums, and differences for the real and imaginary parts of both square roots of $2-4i$.
 :::
+
+::: {.solution}
+Let
+\[
+w=a+ib
+\]
+be a square root of
+\[
+2-4i,
+\]
+with \(a,b\in\mathbb R\).
+
+<1>1. Expanding \(w^2\),
+\[
+(a+ib)^2
+=
+a^2-b^2+2abi.
+\]
+
+::: {.proof}
+Multiply out and use \(i^2=-1\).
+:::
+
+<1>2. Comparing real and imaginary parts with
+\[
+2-4i,
+\]
+one gets
+\[
+\boxed{a^2-b^2=2}
+\]
+and
+\[
+\boxed{2ab=-4}.
+\]
+
+::: {.proof}
+Equality of complex numbers implies equality of their real and imaginary
+parts.
+:::
+
+<1>3. Hence
+\[
+\boxed{ab=-2}.
+\]
+
+::: {.proof}
+Divide the second equation in step <1>2 by \(2\).
+:::
+
+<1>4. The modulus of \(2-4i\) is
+\[
+\boxed{|2-4i|=2\sqrt5}.
+\]
+
+::: {.proof}
+\[
+|2-4i|
+=
+\sqrt{2^2+(-4)^2}
+=
+\sqrt{20}
+=
+2\sqrt5.
+\]
+:::
+
+<1>5. Since
+\[
+|w|^2=|w^2|,
+\]
+one has
+\[
+\boxed{a^2+b^2=2\sqrt5}.
+\]
+
+::: {.proof}
+\[
+|w|^2=a^2+b^2,
+\]
+and
+\[
+|w|^2=|w^2|=|2-4i|.
+\]
+Apply step <1>4.
+:::
+
+<1>6. Adding the equations
+\[
+a^2-b^2=2
+\]
+and
+\[
+a^2+b^2=2\sqrt5
+\]
+gives
+\[
+2a^2=2+2\sqrt5.
+\]
+
+::: {.proof}
+The \(b^2\)-terms cancel.
+:::
+
+<1>7. Therefore
+\[
+\boxed{
+a^2=1+\sqrt5}.
+\]
+
+::: {.proof}
+Divide step <1>6 by \(2\).
+:::
+
+<1>8. Subtracting the first equation from the second gives
+\[
+2b^2=2\sqrt5-2.
+\]
+
+::: {.proof}
+\[
+(a^2+b^2)-(a^2-b^2)=2b^2.
+\]
+:::
+
+<1>9. Therefore
+\[
+\boxed{
+b^2=\sqrt5-1}.
+\]
+
+::: {.proof}
+Divide step <1>8 by \(2\).
+:::
+
+<1>10. Thus
+\[
+|a|
+=
+\sqrt{1+\sqrt5}
+\]
+and
+\[
+|b|
+=
+\sqrt{\sqrt5-1}.
+\]
+
+::: {.proof}
+Take nonnegative square roots in steps <1>7--<1>9.
+:::
+
+<1>11. The signs of \(a\) and \(b\) must be opposite.
+
+::: {.proof}
+Step <1>3 gives
+\[
+ab=-2<0.
+\]
+:::
+
+<1>12. Taking \(a>0\) forces
+\[
+\boxed{
+a=\sqrt{1+\sqrt5},
+\qquad
+b=-\sqrt{\sqrt5-1}}.
+\]
+
+::: {.proof}
+Use step <1>10 and the opposite-sign condition from step <1>11.
+:::
+
+<1>13. The product of these two numbers is indeed
+\[
+ab=-2.
+\]
+
+::: {.proof}
+\[
+\begin{aligned}
+ab
+&=
+-\sqrt{(1+\sqrt5)(\sqrt5-1)}\\
+&=
+-\sqrt{5-1}\\
+&=
+-2.
+\end{aligned}
+\]
+:::
+
+<1>14. Therefore one square root is
+\[
+\boxed{
+\sqrt{1+\sqrt5}
+-
+i\sqrt{\sqrt5-1}}.
+\]
+
+::: {.proof}
+Substitute step <1>12 into \(w=a+ib\).
+:::
+
+<1>15. The other square root is its negative:
+\[
+\boxed{
+-\sqrt{1+\sqrt5}
++
+i\sqrt{\sqrt5-1}}.
+\]
+
+::: {.proof}
+If \(w^2=z\), then \((-w)^2=z\). A nonzero complex number has exactly two
+square roots, which are opposites.
+:::
+
+<1>16. Hence the real and imaginary parts of the two roots are
+\[
+\boxed{
+\left(
+\sqrt{1+\sqrt5},
+-\sqrt{\sqrt5-1}
+\right)}
+\]
+and
+\[
+\boxed{
+\left(
+-\sqrt{1+\sqrt5},
+\sqrt{\sqrt5-1}
+\right)}.
+\]
+
+::: {.proof}
+Read off the real and imaginary parts from steps <1>14--<1>15.
+:::
+
+<1>17. Q.E.D.
+
+::: {.proof}
+Step <1>16 gives the requested algebraic expressions.
+:::
+:::
