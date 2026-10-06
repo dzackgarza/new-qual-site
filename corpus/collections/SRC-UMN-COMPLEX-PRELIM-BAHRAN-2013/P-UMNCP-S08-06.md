@@ -26,3 +26,208 @@ to
 R_2=\{z\in\mathbb C:\operatorname{Re}z>0,\ \operatorname{Im}z>0\}.
 \]
 :::
+
+::: {.solution}
+Define
+$$
+\boxed{
+F(z)
+=
+\frac{1+z^2}{1-z^2}}.
+$$
+
+<1>1. The map
+$$
+S(z)=z^2
+$$
+is a biholomorphism from $R_1$ onto the upper half-disk
+$$
+D_+
+\coloneqq
+\{w\in\CC:|w|<1,\ \operatorname{Im}w>0\}.
+$$
+
+::: {.proof}
+If
+$$
+z=re^{i\theta}
+$$
+with
+$$
+0<r<1,
+\qquad
+0<\theta<\frac\pi2,
+$$
+then
+$$
+z^2=r^2e^{2i\theta},
+$$
+so
+$$
+|z^2|<1
+$$
+and
+$$
+0<\arg(z^2)<\pi.
+$$
+Thus $S(R_1)\subseteq D_+$.
+
+Conversely, if
+$$
+w=\rho e^{i\varphi}\in D_+,
+$$
+then
+$$
+0<\rho<1,
+\qquad
+0<\varphi<\pi.
+$$
+The unique square root
+$$
+z=\sqrt\rho,e^{i\varphi/2}
+$$
+lies in $R_1$ and satisfies $z^2=w$. Hence $S$ is bijective.
+
+Finally,
+$$
+S'(z)=2z\ne0
+$$
+on $R_1$, so $S$ is conformal.
+:::
+
+<1>2. The Möbius map
+$$
+T(w)
+=
+\frac{1+w}{1-w}
+$$
+maps $D_+$ into $R_2$.
+
+::: {.proof}
+Let
+$$
+w=u+iv\in D_+.
+$$
+Then
+$$
+|w|<1
+$$
+and
+$$
+v>0.
+$$
+Multiplying numerator and denominator by
+$$
+1-\overline w
+$$
+gives
+$$
+T(w)
+=
+\frac{(1+w)(1-\overline w)}
+{|1-w|^2}.
+$$
+Its real part is
+$$
+\operatorname{Re}T(w)
+=
+\frac{1-|w|^2}
+{|1-w|^2}
+>0,
+$$
+and its imaginary part is
+$$
+\operatorname{Im}T(w)
+=
+\frac{2\operatorname{Im}w}
+{|1-w|^2}
+>0.
+$$
+Thus
+$$
+T(w)\in R_2.
+$$
+:::
+
+<1>3. The map $T:D_+\to R_2$ is bijective.
+
+::: {.proof}
+The inverse Möbius transformation is
+$$
+T^{-1}(\zeta)
+=
+\frac{\zeta-1}{\zeta+1}.
+$$
+Let
+$$
+\zeta=x+iy\in R_2,
+$$
+so $x>0$ and $y>0$. Set
+$$
+w=T^{-1}(\zeta).
+$$
+Then
+$$
+|w|^2
+=
+\frac{|\zeta-1|^2}
+{|\zeta+1|^2}.
+$$
+Because
+$$
+|\zeta+1|^2-|\zeta-1|^2
+=
+4x
+>0,
+$$
+one has
+$$
+|w|<1.
+$$
+Also
+$$
+\operatorname{Im}w
+=
+\frac{2y}
+{|\zeta+1|^2}
+>0.
+$$
+Hence
+$$
+w\in D_+.
+$$
+Therefore $T$ is onto $R_2$, and injectivity follows from the fact that it is a Möbius transformation.
+:::
+
+<1>4. The composition
+$$
+F=T\circ S
+$$
+is a conformal equivalence
+$$
+R_1\xrightarrow{\sim}R_2.
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+S:R_1\to D_+
+$$
+is a biholomorphism. By steps <1>2--<1>3,
+$$
+T:D_+\to R_2
+$$
+is a biholomorphism. Their composition is therefore a biholomorphism, and
+$$
+(T\circ S)(z)
+=
+\frac{1+z^2}{1-z^2}.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested explicit conformal equivalence.
+:::
+:::
