@@ -70,16 +70,16 @@ d\omega=0.
 Expand
 \[
 \omega
-=(u+iv)(dx+i,dy)
-=(u,dx-v,dy)
+=(u+iv)(dx+i\,dy)
+=(u\,dx-v\,dy)
 +
-i(v,dx+u,dy).
+i(v\,dx+u\,dy).
 \]
 
 For the real part,
 \[
 \begin{aligned}
-d(u,dx-v,dy)
+d(u\,dx-v\,dy)
 &=
 du\wedge dx-dv\wedge dy\\
 &=
@@ -95,7 +95,7 @@ makes this zero.
 For the imaginary part,
 \[
 \begin{aligned}
-d(v,dx+u,dy)
+d(v\,dx+u\,dy)
 &=
 dv\wedge dx+du\wedge dy\\
 &=
