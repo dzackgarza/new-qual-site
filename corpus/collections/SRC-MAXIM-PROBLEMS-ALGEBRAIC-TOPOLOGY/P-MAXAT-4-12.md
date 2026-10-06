@@ -16,5 +16,360 @@ audit:
 ---
 
 ::: {.problem}
-Calculate the cohomology of the space of maps from $S ^ { 1 } \to S ^ { 3 }$ , and similarly for the space of maps $S ^ { \bar { 1 } }  S ^ { 2 }$ and $S ^ { 1 } \to \mathbb { C P } ^ { n }$
+Calculate the cohomology of the space of maps from $S ^ { 1 } \to S ^ { 3 }$ , and similarly for the space of maps $S ^ { 1 } \to S ^ { 2 }$ and $S ^ { 1 } \to \mathbb { C P } ^ { n }$
+:::
+
+::: {.solution}
+Write
+\[
+LX
+\coloneqq
+\operatorname{Map}(S^1,X)
+\]
+for the free loop space, with the compact-open topology. The malformed middle
+All cohomology groups below have integral coefficients.
+
+<1>1. Since $S^3$ is a topological group, there is a homeomorphism
+\[
+LS^3
+\cong
+S^3\times\Omega S^3.
+\]
+
+::: {.proof}
+Identify $S^3$ with the unit quaternions. For a free loop
+\[
+\gamma:S^1\to S^3,
+\]
+define
+\[
+\Phi(\gamma)
+=
+\bigl(
+\gamma(1),
+\gamma(1)^{-1}\gamma(-)
+\bigr).
+\]
+The second coordinate is a based loop at the identity. Conversely, for
+\[
+(g,\omega)\in S^3\times\Omega S^3,
+\]
+define
+\[
+\Psi(g,\omega)(t)=g\omega(t).
+\]
+These maps are continuous and inverse to one another.
+:::
+
+<1>2. The based loop space has
+\[
+H_*(\Omega S^3;\mathbb Z)
+\cong
+\mathbb Z[t_2]
+\]
+as a Pontryagin algebra, and therefore
+\[
+H^*(\Omega S^3;\mathbb Z)
+\cong
+\Gamma_{\mathbb Z}(u_2),
+\qquad
+|u_2|=2,
+\]
+where $\Gamma$ denotes the divided-power algebra.
+
+::: {.proof}
+Since
+\[
+S^3
+=
+\Sigma S^2,
+\]
+the James--Bott--Samelson theorem gives
+\[
+H_*(\Omega S^3;\mathbb Z)
+\cong
+T\bigl(\widetilde H_*(S^2;\mathbb Z)\bigr).
+\]
+There is one generator $t_2$ in even degree $2$, so the tensor algebra on
+that single generator is the polynomial algebra
+\[
+\mathbb Z[t_2].
+\]
+
+Every homology group is free of rank one in an even degree. The graded dual
+Hopf algebra is therefore the divided-power algebra
+\[
+\Gamma_{\mathbb Z}(u_2),
+\]
+with multiplication
+\[
+\gamma_i(u_2)\gamma_j(u_2)
+=
+\binom{i+j}{i}\gamma_{i+j}(u_2).
+\]
+:::
+
+<1>3. Hence
+\[
+\boxed{
+H^*(LS^3;\mathbb Z)
+\cong
+\Lambda_{\mathbb Z}(z_3)
+\otimes
+\Gamma_{\mathbb Z}(u_2).
+}
+\]
+In particular,
+\[
+H^q(LS^3;\mathbb Z)
+\cong
+\begin{cases}
+0,&q=1,\\
+\mathbb Z,&q=0\text{ or }q\ge2.
+\end{cases}
+\]
+
+::: {.proof}
+By step <1>1, apply the integral Künneth theorem. The cohomology of $S^3$
+is
+\[
+H^*(S^3;\mathbb Z)
+\cong
+\Lambda_{\mathbb Z}(z_3),
+\]
+and step <1>2 gives the other factor. Both factors are torsion-free, so no
+Tor term occurs.
+
+The divided-power factor has one copy of $\mathbb Z$ in every nonnegative
+even degree. Multiplying by $z_3$ gives one copy in every odd degree at
+least $3$, proving the additive statement.
+:::
+
+<1>4. For $n\ge1$, Cohen--Jones--Yan compute the shifted loop homology
+algebra
+\[
+\mathbb H_*(L\mathbb{CP}^n)
+\coloneqq
+H_{*+2n}(L\mathbb{CP}^n;\mathbb Z)
+\]
+as
+\[
+\boxed{
+\mathbb H_*(L\mathbb{CP}^n)
+\cong
+\frac{
+\mathbb Z[a_{-2},x_{-1},y_{2n}]
+}{
+(a^{n+1},x^2,a^nx,(n+1)ya^n)
+}.
+}
+\]
+
+::: {.proof}
+This is the integral Cohen--Jones--Yan calculation from
+R. Cohen, J. Jones, and J. Yan,
+*The loop homology algebra of spheres and projective spaces*.
+It is obtained from the multiplicative Serre spectral sequence of the
+evaluation fibration
+\[
+\Omega\mathbb{CP}^n
+\longrightarrow
+L\mathbb{CP}^n
+\xrightarrow{\operatorname{ev}}
+\mathbb{CP}^n.
+\]
+The grading displayed here is the string-topology grading shifted downward by
+\[
+\dim_{\mathbb R}\mathbb{CP}^n=2n.
+\]
+:::
+
+<1>5. As an ordinary homology group,
+\[
+H_q(L\mathbb{CP}^n;\mathbb Z)
+\cong
+\begin{cases}
+\mathbb Z,
+&q\text{ odd},\\[2mm]
+\mathbb Z,
+&q=0,\\[2mm]
+\mathbb Z\oplus\mathbb Z/(n+1),
+&q=2nr\text{ for some }r\ge1,\\[2mm]
+\mathbb Z,
+&q>0\text{ even and }2n\nmid q.
+\end{cases}
+\]
+
+::: {.proof}
+Use the monomial basis of the algebra in step <1>4.
+
+First consider monomials without $x$:
+\[
+a^i y^k.
+\]
+Their shifted degree is
+\[
+-2i+2nk,
+\]
+so their ordinary homological degree is
+\[
+2n-2i+2nk
+=
+2\bigl(n(k+1)-i\bigr).
+\]
+For $k=0$ and $0\le i\le n$, these supply one free class in each even
+degree
+\[
+0,2,\dots,2n.
+\]
+For $k\ge1$ and $0\le i\le n-1$, they supply one free class in each
+successive positive even degree. Thus there is exactly one free
+$\mathbb Z$-summand in every nonnegative even degree.
+
+The remaining monomials
+\[
+a^n y^k,
+\qquad
+k\ge1,
+\]
+are killed by $n+1$ because
+\[
+(n+1)ya^n=0.
+\]
+They give a cyclic summand
+\[
+\mathbb Z/(n+1)
+\]
+in ordinary degree
+\[
+2nk.
+\]
+
+Finally, the monomials involving $x$ are
+\[
+x a^i y^k,
+\qquad
+0\le i\le n-1,
+\quad
+k\ge0,
+\]
+because $x^2=a^nx=0$. Their ordinary degrees are
+\[
+2n-1-2i+2nk.
+\]
+As $(i,k)$ varies, these run through every positive odd integer exactly
+once, and all such monomials are free. This proves the displayed homology
+groups.
+:::
+
+<1>6. The integral cohomology groups of the free loop space of
+$\mathbb{CP}^n$ are therefore
+\[
+\boxed{
+H^q(L\mathbb{CP}^n;\mathbb Z)
+\cong
+\begin{cases}
+\mathbb Z,
+&q\text{ even},\\[1mm]
+\mathbb Z,
+&q\text{ odd and }q\ne2nr+1\text{ for every }r\ge1,\\[1mm]
+\mathbb Z\oplus\mathbb Z/(n+1),
+&q=2nr+1\text{ for some }r\ge1.
+\end{cases}
+}
+\]
+In particular,
+\[
+H^1(L\mathbb{CP}^n;\mathbb Z)\cong\mathbb Z.
+\]
+
+::: {.proof}
+Apply the universal coefficient theorem:
+\[
+0
+\to
+\operatorname{Ext}
+\bigl(
+H_{q-1}(L\mathbb{CP}^n),\mathbb Z
+\bigr)
+\to
+H^q(L\mathbb{CP}^n;\mathbb Z)
+\to
+\operatorname{Hom}
+\bigl(
+H_q(L\mathbb{CP}^n),\mathbb Z
+\bigr)
+\to0.
+\]
+
+By step <1>5, every odd homology group is free cyclic, while every even
+homology group has one free cyclic summand and, precisely in degrees
+\[
+2nr,
+\qquad r\ge1,
+\]
+one additional $\mathbb Z/(n+1)$ summand.
+
+Therefore every even cohomology group is $\mathbb Z$. Every odd cohomology
+group has a free $\mathbb Z$ from Hom, and it acquires an additional
+\[
+\operatorname{Ext}(\mathbb Z/(n+1),\mathbb Z)
+\cong
+\mathbb Z/(n+1)
+\]
+exactly one degree after those exceptional even homology degrees, namely in
+degree
+\[
+2nr+1.
+\]
+The resulting short exact sequence splits because its free quotient is
+\[
+\mathbb Z,
+\]
+so the group is the displayed direct sum.
+:::
+
+<1>7. Since
+\[
+\mathbb{CP}^1\cong S^2,
+\]
+step <1>6 with $n=1$ gives
+\[
+\boxed{
+H^q(LS^2;\mathbb Z)
+\cong
+\begin{cases}
+\mathbb Z,&q=0,1,\\
+\mathbb Z,&q\ge2\text{ even},\\
+\mathbb Z\oplus\mathbb Z/2,&q\ge3\text{ odd}.
+\end{cases}
+}
+\]
+
+::: {.proof}
+Substitute $n=1$ into step <1>6. The exceptional odd degrees are
+\[
+2r+1,
+\qquad
+r\ge1,
+\]
+which are exactly the odd degrees at least $3$.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>3 computes the cohomology of
+\[
+\operatorname{Map}(S^1,S^3).
+\]
+Step <1>7 computes the cohomology of
+\[
+\operatorname{Map}(S^1,S^2),
+\]
+and step <1>6 computes the cohomology of
+\[
+\operatorname{Map}(S^1,\mathbb{CP}^n).
+\]
+:::
 :::
