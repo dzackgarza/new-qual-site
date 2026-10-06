@@ -24,3 +24,111 @@ Give an example each of an analytic function having at the origin:
 
 3. an essential singularity.
 :::
+
+::: {.solution}
+<1>1. A removable singularity at the origin is given by
+\[
+f_1(z)
+\coloneqq
+\frac{\sin z}{z},
+\qquad
+z\ne0.
+\]
+
+::: {.proof}
+The Taylor series for sine is
+\[
+\sin z
+=
+z-\frac{z^3}{3!}
++\frac{z^5}{5!}
+-\cdots.
+\]
+Therefore, for $z\ne0$,
+\[
+\frac{\sin z}{z}
+=
+1-\frac{z^2}{3!}
++\frac{z^4}{5!}
+-\cdots.
+\]
+The right-hand side is a power series convergent at $z=0$, so defining
+\[
+f_1(0)=1
+\]
+extends $f_1$ holomorphically across the origin. Hence the singularity is
+removable.
+:::
+
+<1>2. A pole at the origin is given by
+\[
+f_2(z)
+\coloneqq
+\frac1z.
+\]
+
+::: {.proof}
+The Laurent expansion of $f_2$ at $0$ is simply
+\[
+f_2(z)=z^{-1}.
+\]
+Thus the principal part has one nonzero term and the coefficient of
+$z^{-1}$ is nonzero. Equivalently,
+\[
+z f_2(z)=1
+\]
+extends holomorphically and nonvanishingly across $0$. Hence $0$ is a pole
+of order $1$.
+:::
+
+<1>3. An essential singularity at the origin is given by
+\[
+f_3(z)
+\coloneqq
+e^{1/z},
+\qquad
+z\ne0.
+\]
+
+::: {.proof}
+Substitute $1/z$ into the exponential series:
+\[
+e^{1/z}
+=
+\sum_{n=0}^{\infty}
+\frac1{n!z^n}
+=
+1
++\frac1z
++\frac1{2!z^2}
++\frac1{3!z^3}
++\cdots.
+\]
+Its Laurent series has infinitely many nonzero negative-power terms.
+
+A removable singularity has no negative-power terms, while a pole has only
+finitely many. Therefore the singularity of $e^{1/z}$ at $0$ is essential.
+:::
+
+<1>4. Thus one valid list is
+\[
+\boxed{
+\frac{\sin z}{z},
+\qquad
+\frac1z,
+\qquad
+e^{1/z},
+}
+\]
+for removable, pole, and essential singularities respectively.
+
+::: {.proof}
+This is exactly the content of steps <1>1--<1>3.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 supplies and classifies all three requested examples.
+:::
+:::
