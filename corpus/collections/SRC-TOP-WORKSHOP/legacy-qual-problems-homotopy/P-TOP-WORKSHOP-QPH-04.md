@@ -22,3 +22,142 @@ Show that every boundary point $x\in\partial D^2$ satisfies
 f(x)\in\partial D^2.
 \]
 :::
+
+::: {.solution}
+Write
+\[
+\mathring D^2
+\coloneqq
+D^2\setminus\partial D^2
+\]
+for the open unit disk.
+
+<1>1. One has
+\[
+f(\mathring D^2)
+\subseteq
+\mathring D^2.
+\]
+
+::: {.proof}
+Fix
+\[
+x\in\mathring D^2.
+\]
+Choose an open Euclidean disk
+\[
+U\subset\mathbb R^2
+\]
+with
+\[
+x\in U\subset\mathring D^2.
+\]
+The restriction
+\[
+f|_U:
+U\longrightarrow\mathbb R^2
+\]
+is continuous and injective. By invariance of domain,
+\[
+f(U)
+\]
+is open in $\mathbb R^2$.
+
+Suppose
+\[
+f(x)\in\partial D^2.
+\]
+Since $f(x)\in f(U)$ and $f(U)$ is Euclidean-open, some Euclidean ball about $f(x)$ is contained in $f(U)$. But
+\[
+f(U)\subset f(D^2)=D^2,
+\]
+whereas no Euclidean neighborhood of a boundary point of $D^2$ is contained in $D^2$. This is a contradiction.
+
+Thus
+\[
+f(x)\in\mathring D^2.
+\]
+:::
+
+<1>2. One has
+\[
+f^{-1}(\mathring D^2)
+\subseteq
+\mathring D^2.
+\]
+
+::: {.proof}
+The inverse
+\[
+f^{-1}:D^2\to D^2
+\]
+is also a homeomorphism. Apply step <1>1 to $f^{-1}$.
+:::
+
+<1>3. Therefore
+\[
+f(\mathring D^2)
+=
+\mathring D^2.
+\]
+
+::: {.proof}
+Step <1>1 gives one inclusion. For the reverse inclusion, let
+\[
+y\in\mathring D^2.
+\]
+By step <1>2,
+\[
+f^{-1}(y)\in\mathring D^2.
+\]
+Hence
+\[
+y
+=
+f(f^{-1}(y))
+\in
+f(\mathring D^2).
+\]
+:::
+
+<1>4. One has
+\[
+f(\partial D^2)
+=
+\partial D^2.
+\]
+
+::: {.proof}
+Since $f$ is a bijection,
+\[
+f(D^2\setminus\mathring D^2)
+=
+f(D^2)\setminus f(\mathring D^2).
+\]
+Using
+\[
+f(D^2)=D^2
+\]
+and step <1>3,
+\[
+f(\partial D^2)
+=
+D^2\setminus\mathring D^2
+=
+\partial D^2.
+\]
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 implies in particular that every
+\[
+x\in\partial D^2
+\]
+satisfies
+\[
+f(x)\in\partial D^2.
+\]
+:::
+:::
