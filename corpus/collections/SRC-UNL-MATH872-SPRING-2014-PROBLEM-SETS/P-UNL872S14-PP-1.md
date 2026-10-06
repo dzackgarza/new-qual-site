@@ -16,17 +16,380 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbf { A } _ { 1 } , \mathbf { A } _ { 2 } ,$and$\mathbf { A } _ { 3 }$be solid rectangular blocks in${ \bf R } ^ { 3 }$.
-For each q in$\mathrm { S } ^ { 2 }$and t in R, let$\mathrm { P _ { q , t } }$be the plane in${ \bf R } ^ { 3 }$containing the point tq and perpendicular to the vector pointing from$( 0 , 0 , 0 )$to${ \mathsf { q } } .$Let$\operatorname { H } _ { \mathfrak { q } , \mathfrak { t } }$be the connected component of$: \mathbf { R } ^ { 3 } - \mathrm { P } _ { \mathrm { q , t } }$containing the point$( { \sf t } { + } 1 ) { \sf q }$and let$\mathrm { J _ { q , t } }$ be the other connected component.
+Let \(A_1,A_2,A_3\) be solid rectangular blocks in \(\mathbb R^3\).
+For \(q\in S^2\) and \(t\in\mathbb R\), let
+\[
+P_{q,t}=\{x\in\mathbb R^3:x\cdot q=t\}
+\]
+be the plane through \(tq\) perpendicular to \(q\). Let
+\[
+H_{q,t}=\{x:x\cdot q>t\},
+\qquad
+J_{q,t}=\{x:x\cdot q<t\}.
+\]
 
-(a) Draw pictures of $\mathrm { \Delta P _ { q , t } }$and$\mathrm { H } _ { \mathrm { q , t } }$.
-Using pictures and multivariate calculus (Math 208), discuss how to compute the volume$\mathrm { v o l } ( \mathrm { A } _ { \mathrm { i } } \cap \mathrm { H } _ { \mathrm { q , t } } )$(b) Discuss why the function$\mathbf { S } ^ { 2 } \times \mathbf { R }  \mathbf { R }$given by$( \mathrm { q , t } ) \longrightarrow \mathrm { v o l } ( \mathrm { A } _ { 3 } \cap \mathrm { H } _ { \mathrm { q , t } } )$is continuous.
-Prove that for each q in$\mathrm { S } ^ { 2 }$there is a real number$\mathfrak { t } _ { \mathfrak { q } }$such that vol$\mathrm { \langle A } _ { 3 } \cap \mathrm { H } _ { \mathrm { q } , \mathrm { t } _ { \mathrm { q } } } ) = \mathrm { v o l } ( \mathrm { A } _ { 3 } \cap \mathrm { J } _ { \mathrm { q } , \mathrm { t } _ { \mathrm { q } } } )$.
-Discuss why$\mathfrak { t } _ { \mathfrak { q } }$ is unique.
+(a) Draw pictures of \(P_{q,t}\) and \(H_{q,t}\). Using pictures and multivariable calculus, discuss how to compute
+\[
+\operatorname{vol}(A_i\cap H_{q,t}).
+\]
 
-(c) For $_ \mathrm { i } = 1 , 2$define the functions$\mathrm { f } _ { \mathrm { i } } : \mathrm { S } ^ { 2 } \to \mathbf { R }$by$\mathrm { f _ { i } ( q ) : \mathrm { v o l ( A _ { i } \cap H _ { q , t _ { q } } ) } }$ . Discuss why these functions are continuous.
+(b) Discuss why
+\[
+(q,t)\longmapsto \operatorname{vol}(A_3\cap H_{q,t})
+\]
+is continuous. Prove that for each \(q\in S^2\) there is a unique real number \(t_q\) such that
+\[
+\operatorname{vol}(A_3\cap H_{q,t_q})
+=
+\operatorname{vol}(A_3\cap J_{q,t_q}).
+\]
 
-(d) Use the Borsuk-Ulam Theorem to prove that there is a plane in ${ \bf R } ^ { 3 }$that simultaneously divides each block$\mathrm { A } _ { \mathrm { i } }$ into two pieces of equal volume.
+(c) For \(i=1,2\), define
+\[
+f_i(q)=\operatorname{vol}(A_i\cap H_{q,t_q}).
+\]
+Discuss why \(f_i:S^2\to\mathbb R\) is continuous.
 
-(Note: In parts that say "discuss" you don't need to give a full proof; a discussion with pictures will do.)
+(d) Use the Borsuk--Ulam theorem to prove that there is a plane in \(\mathbb R^3\) that simultaneously divides each block \(A_i\) into two pieces of equal volume.
+:::
+
+::: {.solution}
+Write
+\[
+V_i=\operatorname{vol}(A_i).
+\]
+
+<1>1. The plane and half-spaces are exactly
+\[
+P_{q,t}=\{x:x\cdot q=t\},
+\qquad
+H_{q,t}=\{x:x\cdot q>t\},
+\qquad
+J_{q,t}=\{x:x\cdot q<t\}.
+\]
+
+::: {.proof}
+The vector \(q\) has length (1), so the affine plane perpendicular to
+\(q\) through (tq) consists of the points (x) satisfying
+\[
+(x-tq)\cdot q=0,
+\]
+equivalently (x\cdot q=t). The point ((t+1)q) has dot product
+(t+1>t), so the component containing it is (H_{q,t}); the other
+component is (J_{q,t}).
+:::
+
+<1>2. For a block (A_i),
+\[
+\boxed{
+\operatorname{vol}(A_i\cap H_{q,t})
+=
+\int_t^\infty
+\operatorname{area}(A_i\cap P_{q,s})\,ds}.
+\]
+
+::: {.proof}
+Choose an orthogonal coordinate system whose third coordinate is
+\[
+u=x\cdot q.
+\]
+Orthogonal changes of variables preserve volume. Fubini's theorem then
+expresses the volume above the level (u=t) as the integral, over
+(s>t), of the cross-sectional areas in the parallel planes (P_{q,s}).
+For a rectangular block these cross-sections are polygons, so their areas
+can be computed by elementary multivariable geometry.
+:::
+
+<1>3. For each fixed block (A_i), the function
+\[
+F_i:S^2\times\mathbb R\to\mathbb R,
+\qquad
+F_i(q,t)=\operatorname{vol}(A_i\cap H_{q,t}),
+\]
+is continuous.
+
+::: {.proof}
+Let
+\[
+(q_n,t_n)\to(q,t).
+\]
+For almost every (x\in\mathbb R^3),
+\[
+\mathbf 1_{A_i}(x)
+\mathbf 1_{\{x\cdot q_n>t_n\}}
+\longrightarrow
+\mathbf 1_{A_i}(x)
+\mathbf 1_{\{x\cdot q>t\}}.
+\]
+The only possible failure occurs on the plane
+\[
+P_{q,t},
+\]
+which has three-dimensional Lebesgue measure zero. The integrands are
+dominated by the integrable function (mathbf 1_{A_i}). Dominated
+convergence therefore gives
+\[
+F_i(q_n,t_n)\to F_i(q,t).
+\]
+:::
+
+<1>4. For fixed (q\in S^2), the function
+\[
+t\longmapsto F_3(q,t)
+\]
+is nonincreasing and continuous, with
+\[
+F_3(q,t)=V_3
+\]
+for all sufficiently negative (t), and
+\[
+F_3(q,t)=0
+\]
+for all sufficiently positive (t).
+
+::: {.proof}
+If (t_1<t_2), then
+\[
+H_{q,t_2}\subset H_{q,t_1},
+\]
+so the volume is nonincreasing. Continuity follows from step <1>3.
+
+Since (A_3) is compact, the continuous function (x\mapsto x\cdot q)
+attains a minimum and maximum on (A_3). Below the minimum, the whole block
+lies in (H_{q,t}); above the maximum, none of it does.
+:::
+
+<1>5. For each (q\in S^2), there exists (t_q\in\mathbb R) such that
+\[
+\boxed{F_3(q,t_q)=\frac{V_3}{2}}.
+\]
+
+::: {.proof}
+By step <1>4, the continuous function (F_3(q,-)) takes the values
+(V_3) and (0). The intermediate value theorem gives a level where it
+equals (V_3/2).
+:::
+
+<1>6. For fixed (q), the function (F_3(q,t)) is strictly decreasing
+while the plane (P_{q,t}) passes through the interior of (A_3).
+
+::: {.proof}
+Suppose
+\[
+t_1<t_2
+\]
+both lie strictly between
+\[
+\min_{x\in A_3}x\cdot q
+\qquad\text{and}\qquad
+\max_{x\in A_3}x\cdot q.
+\]
+Because (A_3) is a solid convex block with nonempty interior, the slab
+\[
+A_3\cap\{x:t_1<x\cdot q<t_2\}
+\]
+contains an open subset of (mathbb R^3), hence has positive volume.
+Therefore
+\[
+F_3(q,t_1)-F_3(q,t_2)>0.
+\]
+:::
+
+<1>7. The number (t_q) from step <1>5 is unique.
+
+::: {.proof}
+The value (V_3/2) is strictly between (0) and (V_3), so any level
+where it occurs lies between the minimum and maximum values of
+(x\cdot q) on (A_3). Step <1>6 gives strict decrease there, so the
+level is unique.
+:::
+
+<1>8. The plane (P_{q,t_q}) bisects (A_3):
+\[
+\boxed{
+\operatorname{vol}(A_3\cap H_{q,t_q})
+=
+\operatorname{vol}(A_3\cap J_{q,t_q})
+=
+\frac{V_3}{2}}.
+\]
+
+::: {.proof}
+Step <1>5 gives the first equality to (V_3/2). The plane
+(P_{q,t_q}) has three-dimensional volume zero, so the two open
+half-spaces partition (A_3) up to a null set. Hence the other half also
+has volume (V_3/2).
+:::
+
+<1>9. The half-volume level satisfies
+\[
+\boxed{t_{-q}=-t_q}.
+\]
+
+::: {.proof}
+One has
+\[
+H_{-q,-t_q}
+=
+\{x:-x\cdot q>-t_q\}
+=
+\{x:x\cdot q<t_q\}
+=
+J_{q,t_q}.
+\]
+By step <1>8, this half-space contains exactly half the volume of (A_3).
+Thus (-t_q) is a half-volume level for direction (-q). Uniqueness from
+step <1>7 gives
+\[
+t_{-q}=-t_q.
+\]
+:::
+
+<1>10. The map
+\[
+q\longmapsto t_q
+\]
+is continuous on (S^2).
+
+::: {.proof}
+Let (q_n\to q), and write (t_n=t_{q_n}). Since (A_3) is contained
+in some ball (B(0,R)), every half-volume plane meeting the block has
+\[
+|t_n|\le R.
+\]
+Thus every subsequence of ((t_n)) has a convergent further subsequence;
+let
+\[
+t_{n_j}\to t.
+\]
+By step <1>3,
+\[
+F_3(q,t)
+=
+\lim_{j\to\infty}
+F_3(q_{n_j},t_{n_j})
+=
+\frac{V_3}{2}.
+\]
+Uniqueness in step <1>7 gives (t=t_q). Therefore every convergent
+subsequence of ((t_n)) converges to (t_q), forcing
+\[
+t_n\to t_q.
+\]
+:::
+
+<1>11. For (i=1,2), the function
+\[
+f_i(q)=F_i(q,t_q)
+\]
+is continuous.
+
+::: {.proof}
+The map
+\[
+q\longmapsto(q,t_q)
+\]
+is continuous by step <1>10, and (F_i) is continuous by step <1>3.
+Their composition is (f_i).
+:::
+
+<1>12. For (i=1,2),
+\[
+\boxed{
+f_i(-q)=V_i-f_i(q)}.
+\]
+
+::: {.proof}
+By step <1>9,
+\[
+H_{-q,t_{-q}}
+=
+H_{-q,-t_q}
+=
+J_{q,t_q}.
+\]
+Therefore
+\[
+f_i(-q)
+=
+\operatorname{vol}(A_i\cap J_{q,t_q}).
+\]
+The separating plane has volume zero, so
+\[
+\operatorname{vol}(A_i\cap J_{q,t_q})
+=
+V_i-
+\operatorname{vol}(A_i\cap H_{q,t_q})
+=
+V_i-f_i(q).
+\]
+:::
+
+<1>13. Define
+\[
+F:S^2\to\mathbb R^2,
+\qquad
+F(q)=(f_1(q),f_2(q)).
+\]
+Then (F) is continuous.
+
+::: {.proof}
+This follows from step <1>11 componentwise.
+:::
+
+<1>14. By the Borsuk--Ulam theorem, there exists (q\in S^2) such that
+\[
+\boxed{F(q)=F(-q)}.
+\]
+
+::: {.proof}
+The Borsuk--Ulam theorem states that every continuous map
+\[
+S^2\to\mathbb R^2
+\]
+takes the same value at some antipodal pair. Apply it to the map in step
+<1>13.
+:::
+
+<1>15. For the (q) from step <1>14,
+\[
+\boxed{
+f_i(q)=\frac{V_i}{2}
+\qquad(i=1,2)}.
+\]
+
+::: {.proof}
+By step <1>14,
+\[
+f_i(q)=f_i(-q).
+\]
+Step <1>12 gives
+\[
+f_i(-q)=V_i-f_i(q).
+\]
+Hence
+\[
+2f_i(q)=V_i.
+\]
+:::
+
+<1>16. The plane
+\[
+\boxed{P_{q,t_q}}
+\]
+simultaneously bisects all three blocks (A_1,A_2,A_3).
+
+::: {.proof}
+Step <1>8 says this plane bisects (A_3). Step <1>15 says its
+(H_{q,t_q})-side contains half the volume of each of (A_1) and (A_2);
+since the plane itself has zero volume, their other halves also have half
+the volume. Thus all three blocks are bisected by the same plane.
+:::
+
+<1>17. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 address part (a), steps <1>3--<1>10 prove part (b), step
+<1>11 proves part (c), and steps <1>12--<1>16 prove part (d).
+:::
 :::
