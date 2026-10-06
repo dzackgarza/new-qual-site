@@ -23,3 +23,202 @@ For \(\alpha>0\), evaluate
 \]
 carefully justifying all steps.
 :::
+
+::: {.solution}
+Set
+$$
+I(\alpha)
+\coloneqq
+\int_0^\infty
+\frac{\log x}{x^2+\alpha^2}
+\,dx,
+\qquad
+\alpha>0.
+$$
+
+<1>1. The integral defining $I(\alpha)$ converges absolutely.
+
+::: {.proof}
+Near $0$,
+$$
+\frac{|\log x|}{x^2+\alpha^2}
+\le
+\frac1{\alpha^2}|\log x|,
+$$
+and
+$$
+\int_0^1|\log x|\,dx<\infty.
+$$
+
+For $x\ge1$,
+$$
+\frac{|\log x|}{x^2+\alpha^2}
+\le
+\frac{\log x}{x^2},
+$$
+and
+$$
+\int_1^\infty\frac{\log x}{x^2}\,dx<\infty.
+$$
+Thus the improper integral is absolutely convergent.
+:::
+
+<1>2. The substitution
+$$
+x=\alpha t
+$$
+gives
+$$
+I(\alpha)
+=
+\frac1\alpha
+\int_0^\infty
+\frac{\log\alpha+\log t}
+{1+t^2}
+\,dt.
+$$
+
+::: {.proof}
+Since
+$$
+x=\alpha t,
+\qquad
+dx=\alpha\,dt,
+$$
+and
+$$
+x^2+\alpha^2
+=
+\alpha^2(1+t^2),
+$$
+we obtain
+$$
+\begin{aligned}
+I(\alpha)
+&=
+\int_0^\infty
+\frac{\log(\alpha t)}
+{\alpha^2(1+t^2)}
+\alpha\,dt\\
+&=
+\frac1\alpha
+\int_0^\infty
+\frac{\log\alpha+\log t}
+{1+t^2}
+\,dt.
+\end{aligned}
+$$
+Absolute convergence from step <1>1 justifies the substitution and separation of terms.
+:::
+
+<1>3. One has
+$$
+\boxed{
+\int_0^\infty
+\frac{\log t}{1+t^2}
+\,dt
+=0}.
+$$
+
+::: {.proof}
+Let
+$$
+J
+\coloneqq
+\int_0^\infty
+\frac{\log t}{1+t^2}
+\,dt.
+$$
+This integral is absolutely convergent by the same endpoint estimates as in step <1>1.
+
+Make the substitution
+$$
+t=\frac1u,
+\qquad
+dt=-\frac1{u^2}\,du.
+$$
+Then
+$$
+\begin{aligned}
+J
+&=
+\int_\infty^0
+\frac{\log(1/u)}
+{1+u^{-2}}
+\left(
+-\frac1{u^2}
+\right)
+du\\
+&=
+\int_0^\infty
+\frac{-\log u}{1+u^2}
+\,du\\
+&=
+-J.
+\end{aligned}
+$$
+Hence
+$$
+2J=0,
+$$
+so $J=0$.
+:::
+
+<1>4. One has
+$$
+\int_0^\infty
+\frac{dt}{1+t^2}
+=
+\frac\pi2.
+$$
+
+::: {.proof}
+The antiderivative is
+$$
+\arctan t.
+$$
+Therefore
+$$
+\int_0^\infty
+\frac{dt}{1+t^2}
+=
+\lim_{R\to\infty}
+\left(
+\arctan R-\arctan0
+\right)
+=
+\frac\pi2.
+$$
+:::
+
+<1>5. Therefore
+$$
+\boxed{
+I(\alpha)
+=
+\frac{\pi}{2\alpha}\log\alpha}.
+$$
+
+::: {.proof}
+Split the integral in step <1>2:
+$$
+I(\alpha)
+=
+\frac{\log\alpha}{\alpha}
+\int_0^\infty
+\frac{dt}{1+t^2}
++
+\frac1\alpha
+\int_0^\infty
+\frac{\log t}{1+t^2}
+\,dt.
+$$
+Now apply steps <1>3--<1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required evaluation.
+:::
+:::
