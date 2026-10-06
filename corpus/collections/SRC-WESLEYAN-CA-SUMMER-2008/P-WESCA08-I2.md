@@ -19,3 +19,70 @@ audit:
 Let $U\subset\mathbb C$ be open, let $f_n:U\to\mathbb C$, and let $f:U\to\mathbb C$.
 Define what it means for $(f_n)$ to converge normally (locally uniformly) to $f$.
 :::
+
+::: {.solution}
+<1>1. The sequence \((f_n)\) converges locally uniformly to \(f\) on \(U\) if
+for every compact set
+\[
+K\subset U
+\]
+one has
+\[
+\boxed{
+\sup_{z\in K}|f_n(z)-f(z)|
+\longrightarrow0}.
+\]
+
+::: {.proof}
+This is the definition of uniform convergence on each compact subset of the
+domain.
+:::
+
+<1>2. Equivalently, for every compact \(K\subset U\) and every
+\[
+\varepsilon>0,
+\]
+there exists
+\[
+N=N(K,\varepsilon)
+\]
+such that
+\[
+\boxed{
+|f_n(z)-f(z)|<\varepsilon}
+\]
+for every \(z\in K\) and every \(n\ge N\).
+
+::: {.proof}
+The statement
+\[
+\sup_{z\in K}|f_n(z)-f(z)|\to0
+\]
+means exactly that eventually the supremum is \(<\varepsilon\), which is
+equivalent to the displayed pointwise inequality holding simultaneously for
+all \(z\in K\).
+:::
+
+<1>3. The index \(N\) may depend on the compact set \(K\), so local uniform
+convergence is weaker than uniform convergence on all of \(U\).
+
+::: {.proof}
+Uniform convergence on \(U\) would require one \(N(\varepsilon)\) that works
+for every point of the entire domain. The local version only requires such
+uniform control separately on each compact subset.
+:::
+
+<1>4. This mode of convergence is also called normal convergence in the
+terminology used by the source.
+
+::: {.proof}
+This is the terminology requested in the problem statement.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 give the requested definition and its equivalent
+\(\varepsilon\)-form.
+:::
+:::
