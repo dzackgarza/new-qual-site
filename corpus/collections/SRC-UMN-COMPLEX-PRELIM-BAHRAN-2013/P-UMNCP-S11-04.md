@@ -25,3 +25,134 @@ Prove that \(|f''(0)|\le2\), and describe all such \(f\) for which \(|f''(0)|=2\
 
 The retained solution notes explicitly record that the printed exam omitted the necessary hypothesis \(f(\mathbb D)\subseteq\mathbb D\); it is included here because without it the assertion is false.
 :::
+
+::: {.solution}
+<1>1. Schwarz's lemma gives
+$$
+|f(z)|\le |z|
+$$
+for every $z\in\mathbb D$.
+
+::: {.proof}
+The function $f$ maps the unit disk to itself and satisfies $f(0)=0$, so Schwarz's lemma applies.
+:::
+
+<1>2. The function
+$$
+g(z)=
+\begin{cases}
+f(z)/z,&z\ne0,\\
+f'(0),&z=0
+\end{cases}
+$$
+is holomorphic on $\mathbb D$, maps $\mathbb D$ into the closed unit disk, and satisfies $g(0)=0$.
+
+::: {.proof}
+Since $f(0)=0$, the quotient $f(z)/z$ has a removable singularity at $0$ with value $f'(0)$. Thus $g$ is holomorphic. Step <1>1 gives
+$$
+|g(z)|\le1
+$$
+for $z\ne0$, and continuity gives the same bound at $0$. The hypothesis $f'(0)=0$ gives $g(0)=0$.
+:::
+
+<1>3. A second application of Schwarz's lemma gives
+$$
+|g(z)|\le |z|
+$$
+for every $z\in\mathbb D$.
+
+::: {.proof}
+If $g$ were a unimodular constant then $g(0)$ would have modulus $1$, contrary to $g(0)=0$. Hence in fact $|g(z)|<1$ throughout the disk, and Schwarz's lemma applies to $g$.
+:::
+
+<1>4. There is a holomorphic function $h:\mathbb D\to\overline{\mathbb D}$ such that
+$$
+\boxed{f(z)=z^2h(z)}.
+$$
+
+::: {.proof}
+By step <1>3, the function
+$$
+h(z)=
+\begin{cases}
+g(z)/z,&z\ne0,\\
+g'(0),&z=0
+\end{cases}
+$$
+has a removable singularity at $0$ and is holomorphic there. Moreover,
+$$
+|h(z)|\le1.
+$$
+Since $g(z)=zh(z)$ and $f(z)=zg(z)$, one gets $f(z)=z^2h(z)$.
+:::
+
+<1>5. One has
+$$
+f''(0)=2h(0).
+$$
+
+::: {.proof}
+Differentiate
+$$
+f(z)=z^2h(z)
+$$
+twice:
+$$
+f''(z)=2h(z)+4zh'(z)+z^2h''(z).
+$$
+Evaluating at $z=0$ gives the formula.
+:::
+
+<1>6. Therefore
+$$
+\boxed{|f''(0)|\le2}.
+$$
+
+::: {.proof}
+By steps <1>4--<1>5,
+$$
+|f''(0)|=2|h(0)|\le2.
+$$
+:::
+
+<1>7. Equality
+$$
+|f''(0)|=2
+$$
+holds if and only if
+$$
+\boxed{f(z)=e^{i\theta}z^2}
+$$
+for some $\theta\in\RR$.
+
+::: {.proof}
+If equality holds, then step <1>5 gives
+$$
+|h(0)|=1.
+$$
+Since $|h|\le1$ on the disk, the maximum-modulus principle forces $h$ to be constant:
+$$
+h(z)=e^{i\theta}
+$$
+for some real $\theta$. Hence
+$$
+f(z)=e^{i\theta}z^2.
+$$
+
+Conversely, every function of this form maps the disk into itself, satisfies
+$$
+f(0)=f'(0)=0,
+$$
+and has
+$$
+f''(0)=2e^{i\theta},
+$$
+whose modulus is $2$.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>6 proves the bound, and step <1>7 gives the complete equality case.
+:::
+:::
