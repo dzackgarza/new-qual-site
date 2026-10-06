@@ -35,3 +35,175 @@ g(x,y)=
 \end{cases}
 \]
 :::
+
+::: {.solution}
+<1>1. Away from the origin, both $f$ and $g$ are continuous.
+
+::: {.proof}
+For
+\[
+(x,y)\ne(0,0),
+\]
+the denominator
+\[
+x^2+y^2
+\]
+is nonzero.
+Thus each displayed formula is a quotient of polynomial functions with
+nonvanishing denominator.
+:::
+
+<1>2. Along the line
+\[
+y=x,
+\]
+with
+\[
+x\ne0,
+\]
+one has
+\[
+f(x,x)=\frac12.
+\]
+
+::: {.proof}
+Substitute:
+\[
+f(x,x)
+=
+\frac{x^2}{x^2+x^2}
+=
+\frac12.
+\]
+:::
+
+<1>3. Hence
+\[
+f
+\]
+is not continuous at
+\[
+(0,0).
+\]
+
+::: {.proof}
+Along the sequence
+\[
+(x_n,y_n)
+=
+\left(
+\frac1n,\frac1n
+\right),
+\]
+one has
+\[
+(x_n,y_n)\to(0,0)
+\]
+but
+\[
+f(x_n,y_n)
+=
+\frac12
+\not\to
+0
+=
+f(0,0).
+\]
+Thus the limit at the origin does not equal the defined value.
+:::
+
+<1>4. For
+\[
+(x,y)\ne(0,0),
+\]
+\[
+|g(x,y)|
+=
+\frac{x^2|y|}{x^2+y^2}
+\le
+|y|.
+\]
+
+::: {.proof}
+Since
+\[
+0
+\le
+\frac{x^2}{x^2+y^2}
+\le
+1,
+\]
+multiply by
+\[
+|y|.
+\]
+:::
+
+<1>5. Also
+\[
+|y|
+\le
+\sqrt{x^2+y^2}.
+\]
+
+::: {.proof}
+Because
+\[
+y^2
+\le
+x^2+y^2,
+\]
+taking square roots gives the inequality.
+:::
+
+<1>6. Therefore
+\[
+g(x,y)\to0
+\]
+as
+\[
+(x,y)\to(0,0).
+\]
+
+::: {.proof}
+By steps <1>4--<1>5,
+\[
+|g(x,y)|
+\le
+\sqrt{x^2+y^2}.
+\]
+The right-hand side tends to $0$ at the origin.
+The squeeze theorem gives
+\[
+g(x,y)\to0.
+\]
+Since
+\[
+g(0,0)=0,
+\]
+$g$ is continuous at the origin.
+:::
+
+<1>7. Hence
+\[
+\boxed{
+f\text{ is not continuous on }\mathbb R^2,
+\qquad
+g\text{ is continuous on }\mathbb R^2.
+}
+\]
+
+::: {.proof}
+Step <1>3 shows $f$ fails continuity at the origin.
+Step <1>1 gives continuity elsewhere.
+
+Steps <1>1 and <1>6 show $g$ is continuous both away from and at the
+origin.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 gives the requested classification.
+:::
+:::
