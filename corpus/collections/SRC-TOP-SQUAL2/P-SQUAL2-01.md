@@ -22,3 +22,125 @@ Determine whether
 \]
 must hold. If equality can fail, determine which inclusion, if either, always holds.
 :::
+
+::: {.solution}
+<1>1. For every index \(\alpha\),
+\[
+A_\alpha
+\subseteq
+\bigcup_\beta A_\beta.
+\]
+
+::: {.proof}
+This is the defining property of a union.
+:::
+
+<1>2. Taking closures,
+\[
+\boxed{
+\overline{A_\alpha}
+\subseteq
+\overline{\bigcup_\beta A_\beta}}
+\]
+for every \(\alpha\).
+
+::: {.proof}
+Closure is monotone: if \(A\subseteq B\), then \(\overline A\subseteq\overline B\).
+Apply this to step <1>1.
+:::
+
+<1>3. Therefore
+\[
+\boxed{
+\bigcup_\alpha\overline{A_\alpha}
+\subseteq
+\overline{\bigcup_\alpha A_\alpha}}.
+\]
+
+::: {.proof}
+Every set \(\overline{A_\alpha}\) is contained in the right-hand side by step <1>2, so their union is also contained there.
+:::
+
+To show equality need not hold, take
+\[
+X=\mathbb R
+\]
+with the usual topology and, for \(n\ge1\),
+\[
+\boxed{
+A_n=\left\{\frac1n\right\}}.
+\]
+
+<1>4. Each \(A_n\) is closed.
+
+::: {.proof}
+Singletons are closed in the Hausdorff space \(\mathbb R\).
+:::
+
+<1>5. Hence
+\[
+\boxed{
+\overline{A_n}=A_n}.
+\]
+
+::: {.proof}
+The closure of a closed set is itself.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+\bigcup_{n=1}^{\infty}\overline{A_n}
+=
+\left\{\frac1n:n\ge1\right\}}.
+\]
+
+::: {.proof}
+Use step <1>5.
+:::
+
+<1>7. The point \(0\) belongs to
+\[
+\overline{\bigcup_{n=1}^{\infty}A_n}.
+\]
+
+::: {.proof}
+Every open interval around \(0\) contains \(1/n\) for all sufficiently large \(n\), since \(1/n\to0\).
+:::
+
+<1>8. But
+\[
+0\notin
+\bigcup_{n=1}^{\infty}\overline{A_n}.
+\]
+
+::: {.proof}
+The right-hand side is exactly the set of positive numbers \(1/n\) by step <1>6.
+:::
+
+<1>9. Thus the inclusion in step <1>3 can be strict.
+
+::: {.proof}
+Steps <1>7--<1>8 show that \(0\) belongs to the right-hand side but not the left-hand side.
+:::
+
+<1>10. Hence the correct general statement is
+\[
+\boxed{
+\bigcup_\alpha\overline{A_\alpha}
+\subseteq
+\overline{\bigcup_\alpha A_\alpha},
+}
+\]
+and equality need not hold.
+
+::: {.proof}
+The inclusion is step <1>3, and strictness is step <1>9.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 gives the complete answer.
+:::
+:::
