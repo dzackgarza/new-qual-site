@@ -39,6 +39,185 @@ $$
 $$
 g:\mathbb D\to\mathbb D
 $$
+is holomorphic and fixes $0$.
+
+::: {.proof}
+The maps
+$$
+\phi_p
+\quad\text{and}\quad
+\phi_p^{-1}
+$$
+are holomorphic automorphisms of the disk, so $g$ is a holomorphic self-map of $\mathbb D$. Since
+$$
+f(p)=p,
+$$
+one has
+$$
+g(0)
+=
+\phi_p(f(p))
+=0.
+$$
+:::
+
+<1>2. The nonzero point
+$$
+a
+\coloneqq
+\phi_p(q)
+$$
+is also fixed by $g$.
+
+::: {.proof}
+Because
+$$
+p\ne q
+$$
+and $\phi_p$ is injective,
+$$
+a=\phi_p(q)\ne0.
+$$
+Using
+$$
+f(q)=q,
+$$
+we get
+$$
+\begin{aligned}
+g(a)
+&=
+\phi_p\!\left(
+f(\phi_p^{-1}(\phi_p(q)))
+\right)\\
+&=
+\phi_p(f(q))\\
+&=
+\phi_p(q)\\
+&=
+a.
+\end{aligned}
+$$
+:::
+
+<1>3. Schwarz's lemma gives
+$$
+|g(z)|\le|z|
+$$
+for every
+$$
+z\in\mathbb D.
+$$
+
+::: {.proof}
+Step <1>1 gives a holomorphic self-map of the unit disk fixing the origin. Schwarz's lemma applies.
+:::
+
+<1>4. Equality holds in Schwarz's lemma at the nonzero point $a$:
+$$
+|g(a)|=|a|.
+$$
+
+::: {.proof}
+By step <1>2,
+$$
+g(a)=a.
+$$
+Taking absolute values gives the equality.
+:::
+
+<1>5. Therefore there is a real number $\theta$ such that
+$$
+g(z)=e^{i\theta}z
+$$
+for every $z\in\mathbb D$.
+
+::: {.proof}
+The equality case of Schwarz's lemma states that if a holomorphic self-map of the disk fixing $0$ satisfies
+$$
+|g(a)|=|a|
+$$
+at some
+$$
+a\ne0,
+$$
+then $g$ is a rotation.
+:::
+
+<1>6. In fact,
+$$
+\boxed{g(z)=z}
+$$
+for every $z\in\mathbb D$.
+
+::: {.proof}
+By step <1>2,
+$$
+g(a)=a
+$$
+with
+$$
+a\ne0.
+$$
+Substituting the formula from step <1>5 gives
+$$
+e^{i\theta}a=a.
+$$
+Hence
+$$
+e^{i\theta}=1,
+$$
+so $g$ is the identity.
+:::
+
+<1>7. Therefore
+$$
+\boxed{f(z)=z}
+$$
+for every $z\in\mathbb D$.
+
+::: {.proof}
+By definition,
+$$
+g
+=
+\phi_p\circ f\circ\phi_p^{-1}.
+$$
+Step <1>6 says $g=\operatorname{id}_{\mathbb D}$. Conjugating by $\phi_p^{-1}$ gives
+$$
+f
+=
+\phi_p^{-1}\circ g\circ\phi_p
+=
+\operatorname{id}_{\mathbb D}.
+$$
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required conclusion.
+:::
+:::
+
+::: {.solution}
+Let
+$$
+\phi_p(z)
+\coloneqq
+\frac{z-p}{1-\overline p z},
+$$
+the disk automorphism sending $p$ to $0$, and define
+$$
+g
+\coloneqq
+\phi_p\circ f\circ\phi_p^{-1}.
+$$
+
+<1>1. The map
+$$
+g:\mathbb D\to\mathbb D
+$$
 is holomorphic and satisfies
 $$
 g(0)=0.
