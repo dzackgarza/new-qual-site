@@ -17,3 +17,232 @@ audit:
 ::: {.problem}
 State both parts of the Fundamental Theorem of Calculus and outline a proof of one of them.
 :::
+
+::: {.solution}
+<1>1. **Fundamental Theorem of Calculus, Part I.**
+
+Let
+\[
+f:[a,b]\to\mathbb R
+\]
+be continuous, and define
+\[
+F(x)
+\coloneqq
+\int_a^x f(t)\,dt.
+\]
+Then $F$ is differentiable on
+\[
+(a,b)
+\]
+and
+\[
+\boxed{
+F'(x)=f(x).
+}
+\]
+
+::: {.proof}
+This is the first standard form of the theorem.
+The proof is given in steps <1>3--<1>6.
+:::
+
+<1>2. **Fundamental Theorem of Calculus, Part II.**
+
+Let
+\[
+f:[a,b]\to\mathbb R
+\]
+be continuous, and let
+\[
+G:[a,b]\to\mathbb R
+\]
+be any differentiable function satisfying
+\[
+G'(x)=f(x)
+\]
+for
+\[
+a<x<b.
+\]
+Then
+\[
+\boxed{
+\int_a^b f(x)\,dx
+=
+G(b)-G(a).
+}
+\]
+
+::: {.proof}
+Equivalently, definite integration computes the net change of any
+antiderivative.
+:::
+
+<1>3. To prove Part I, fix
+\[
+x\in(a,b)
+\]
+and let $h$ be small enough that
+\[
+x+h\in[a,b].
+\]
+Then
+\[
+\frac{F(x+h)-F(x)}{h}
+=
+\frac1h
+\int_x^{x+h}f(t)\,dt.
+\]
+
+::: {.proof}
+By additivity of the integral,
+\[
+F(x+h)-F(x)
+=
+\int_a^{x+h}f
+-
+\int_a^x f
+=
+\int_x^{x+h}f.
+\]
+Divide by $h$.
+:::
+
+<1>4. Subtracting $f(x)$ gives
+\[
+\frac{F(x+h)-F(x)}{h}
+-
+f(x)
+=
+\frac1h
+\int_x^{x+h}
+\bigl(f(t)-f(x)\bigr)
+\,dt.
+\]
+
+::: {.proof}
+Since
+\[
+f(x)
+=
+\frac1h
+\int_x^{x+h}f(x)\,dt,
+\]
+subtract the two averages.
+:::
+
+<1>5. Therefore
+\[
+\left|
+\frac{F(x+h)-F(x)}{h}
+-
+f(x)
+\right|
+\le
+\sup_{t\text{ between }x\text{ and }x+h}
+|f(t)-f(x)|.
+\]
+
+::: {.proof}
+Using step <1>4,
+\[
+\begin{aligned}
+\left|
+\frac1h
+\int_x^{x+h}
+\bigl(f(t)-f(x)\bigr)
+\,dt
+\right|
+&\le
+\frac1{|h|}
+\int_{\min(x,x+h)}^{\max(x,x+h)}
+|f(t)-f(x)|
+\,dt\\
+&\le
+\sup_{t\text{ between }x\text{ and }x+h}
+|f(t)-f(x)|.
+\end{aligned}
+\]
+:::
+
+<1>6. Letting
+\[
+h\to0,
+\]
+the right-hand side tends to $0$, so
+\[
+F'(x)=f(x).
+\]
+
+::: {.proof}
+Continuity of $f$ at $x$ implies
+\[
+|f(t)-f(x)|
+\to
+0
+\]
+uniformly for $t$ confined to a sufficiently small interval around $x$.
+Thus the supremum in step <1>5 tends to $0$ as $h\to0$.
+Hence
+\[
+\lim_{h\to0}
+\frac{F(x+h)-F(x)}{h}
+=
+f(x).
+\]
+:::
+
+<1>7. Part II follows immediately from Part I.
+
+::: {.proof}
+Define
+\[
+F(x)
+=
+\int_a^x f(t)\,dt.
+\]
+By Part I,
+\[
+F'=f.
+\]
+If $G'=f$ as well, then
+\[
+(G-F)'=0.
+\]
+By the Mean Value Theorem,
+\[
+G-F
+\]
+is constant.
+Since
+\[
+F(a)=0,
+\]
+one has
+\[
+G(x)-F(x)=G(a).
+\]
+At
+\[
+x=b,
+\]
+\[
+G(b)-\int_a^b f
+=
+G(a),
+\]
+so
+\[
+\int_a^b f
+=
+G(b)-G(a).
+\]
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 state both parts, and steps <1>3--<1>6 prove Part I.
+:::
+:::
