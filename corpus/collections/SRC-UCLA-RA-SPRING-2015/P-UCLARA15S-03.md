@@ -35,3 +35,206 @@ The Hardy--Littlewood maximal theorem may be used.
 \int \phi(Mf(x))\,dx\le C_n\int |f(x)|\left(\int_{0<t<2|f(x)|}\frac{\phi'(t)}t\,dt\right)dx.
 \]
 :::
+
+::: {.solution}
+<1>1. Fix $s>0$ and define
+\[
+\widetilde f_s(x)
+\coloneqq
+f(x)\mathbf 1_{\{|f(x)|>s/2\}}.
+\]
+Then
+\[
+\{x:Mf(x)>s\}
+\subseteq
+\{x:M\widetilde f_s(x)>s/2\}.
+\]
+
+::: {.proof}
+Suppose $Mf(x)>s$. Then there is a ball $B$ centered at $x$ such that
+\[
+\frac1{m(B)}
+\int_B|f(y)|\,dy
+>s.
+\]
+Split the integral according to whether $|f|\le s/2$ or $|f|>s/2$:
+\[
+\begin{aligned}
+s\,m(B)
+&<
+\int_{B\cap\{|f|\le s/2\}}|f|
++
+\int_{B\cap\{|f|>s/2\}}|f|\\
+&\le
+\frac{s}{2}m(B)
++
+\int_B|\widetilde f_s|.
+\end{aligned}
+\]
+Hence
+\[
+\frac1{m(B)}
+\int_B|\widetilde f_s|
+>
+\frac{s}{2}.
+\]
+Taking the supremum over balls centered at $x$ gives
+\[
+M\widetilde f_s(x)>s/2.
+\]
+:::
+
+<1>2. There is a dimensional constant $C_n$ such that
+\[
+\boxed{
+m(\{x:Mf(x)>s\})
+\le
+\frac{C_n}{s}
+\int_{|f(x)|>s/2}|f(x)|\,dx
+}.
+\]
+
+::: {.proof}
+If
+\[
+\int_{|f|>s/2}|f|=\infty,
+\]
+the asserted inequality is automatic. Otherwise
+\[
+\widetilde f_s\in L^1(\mathbb R^n).
+\]
+By step <1>1 and the weak-$(1,1)$ Hardy--Littlewood maximal inequality,
+\[
+\begin{aligned}
+m(\{Mf>s\})
+&\le
+m(\{M\widetilde f_s>s/2\})\\
+&\le
+\frac{C_n}{s}
+\|\widetilde f_s\|_1\\
+&=
+\frac{C_n}{s}
+\int_{|f|>s/2}|f|.
+\end{aligned}
+\]
+Absorbing the harmless factor $2$ from the threshold $s/2$ into $C_n$ gives the displayed estimate.
+:::
+
+<1>3. For every nonnegative measurable function $H$,
+\[
+\int_{\mathbb R^n}\phi(H(x))\,dx
+=
+\int_0^\infty
+\phi'(t)
+m(\{x:H(x)>t\})\,dt,
+\]
+with both sides interpreted in $[0,\infty]$.
+
+::: {.proof}
+Since $\phi(0)=0$ and $\phi'>0$,
+\[
+\phi(H(x))
+=
+\int_0^{H(x)}\phi'(t)\,dt
+=
+\int_0^\infty
+\phi'(t)
+\mathbf 1_{\{t<H(x)\}}\,dt.
+\]
+The integrand is nonnegative, so Tonelli's theorem gives
+\[
+\begin{aligned}
+\int_{\mathbb R^n}\phi(H(x))\,dx
+&=
+\int_0^\infty
+\phi'(t)
+\left(
+\int_{\mathbb R^n}
+\mathbf 1_{\{H(x)>t\}}\,dx
+\right)dt\\
+&=
+\int_0^\infty
+\phi'(t)
+m(\{H>t\})\,dt.
+\end{aligned}
+\]
+:::
+
+<1>4. Applying step <1>3 with $H=Mf$ and then step <1>2 gives
+\[
+\int_{\mathbb R^n}\phi(Mf(x))\,dx
+\le
+C_n
+\int_0^\infty
+\frac{\phi'(t)}{t}
+\left(
+\int_{|f(x)|>t/2}|f(x)|\,dx
+\right)dt.
+\]
+
+::: {.proof}
+Step <1>3 gives
+\[
+\int\phi(Mf)
+=
+\int_0^\infty
+\phi'(t)m(\{Mf>t\})\,dt.
+\]
+Substitute the estimate from step <1>2 for each $t>0$. Since every quantity is nonnegative, the inequality remains valid even when one or both sides are infinite.
+:::
+
+<1>5. The right-hand side in step <1>4 equals
+\[
+C_n
+\int_{\mathbb R^n}
+|f(x)|
+\left(
+\int_{0<t<2|f(x)|}
+\frac{\phi'(t)}{t}\,dt
+\right)dx.
+\]
+
+::: {.proof}
+The integrand is nonnegative, so Tonelli's theorem permits reversing the order of integration:
+\[
+\begin{aligned}
+&\int_0^\infty
+\frac{\phi'(t)}{t}
+\left(
+\int_{|f(x)|>t/2}|f(x)|\,dx
+\right)dt\\
+&\qquad=
+\int_{\mathbb R^n}
+|f(x)|
+\left(
+\int_{\{t>0:t<2|f(x)|\}}
+\frac{\phi'(t)}{t}\,dt
+\right)dx.
+\end{aligned}
+\]
+This is the claimed expression.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+\int \phi(Mf(x))\,dx
+\le
+C_n\int |f(x)|
+\left(
+\int_{0<t<2|f(x)|}
+\frac{\phi'(t)}t\,dt
+\right)dx
+}.
+\]
+
+::: {.proof}
+Combine steps <1>4 and <1>5.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves part (a), and step <1>6 proves part (b).
+:::
+:::
