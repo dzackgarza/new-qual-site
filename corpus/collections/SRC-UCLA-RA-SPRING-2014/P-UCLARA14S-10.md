@@ -24,3 +24,255 @@ f(z)=\sum_{n\ge1}\frac{a_n}{z-e^{i\alpha n}}
 \]
 converges and defines a function analytic in the unit disk $\mathbb D$, and that $f$ admits no analytic continuation to any domain properly containing $\mathbb D$.
 :::
+
+::: {.solution}
+<1>1. The natural-boundary assertion is false under the literal hypothesis
+\[
+\alpha\in[0,1]\setminus\mathbb Q.
+\]
+
+::: {.proof}
+Take
+\[
+\alpha=\frac\pi5,
+\qquad
+a_n=2^{-n}.
+\]
+Then $\alpha\in[0,1]\setminus\mathbb Q$, but
+\[
+e^{i\alpha n}
+=
+e^{2\pi i n/10}
+\]
+takes only ten distinct values.
+
+For $1\le j\le10$, set
+\[
+\zeta_j=e^{2\pi i j/10},
+\qquad
+b_j
+\coloneqq
+\sum_{m=0}^{\infty}2^{-(j+10m)}.
+\]
+Each $b_j$ is positive. Since the original series is absolutely convergent on compact subsets of $\mathbb D$, terms may be grouped by residue class modulo $10$, giving
+\[
+f(z)
+=
+\sum_{j=1}^{10}
+\frac{b_j}{z-\zeta_j}
+\qquad
+(z\in\mathbb D).
+\]
+The right-hand side is a rational function, holomorphic on
+\[
+\mathbb C\setminus\{\zeta_1,\dots,\zeta_{10}\}.
+\]
+Choose any point of the unit circle not among these ten poles and a sufficiently small disk around it avoiding all poles. The union of that disk with $\mathbb D$ is a domain properly containing $\mathbb D$ on which the rational expression gives an analytic continuation of $f$. Thus the literal claim is false.
+:::
+
+<1>2. The intended statement is correct under the corrected hypothesis
+\[
+\frac{\alpha}{2\pi}\notin\mathbb Q.
+\]
+Assume this hypothesis for the remainder of the proof.
+
+::: {.proof}
+The correction is exactly the condition that the rotation
+\[
+z\longmapsto e^{i\alpha}z
+\]
+have infinite order. Under it, the points
+\[
+\zeta_n
+\coloneqq
+e^{i\alpha n}
+\]
+are pairwise distinct and dense in the unit circle.
+:::
+
+<1>3. Under the corrected hypothesis, the series
+\[
+f(z)
+=
+\sum_{n=1}^{\infty}
+\frac{a_n}{z-\zeta_n}
+\]
+converges uniformly on compact subsets of $\mathbb D$.
+
+::: {.proof}
+Fix $0<r<1$. For $|z|\le r$ and every $n$,
+\[
+|z-\zeta_n|
+\ge
+1-|z|
+\ge
+1-r.
+\]
+Hence
+\[
+\left|
+\frac{a_n}{z-\zeta_n}
+\right|
+\le
+\frac{|a_n|}{1-r}.
+\]
+Since $(a_n)\in\ell^1$, the Weierstrass M-test gives uniform absolute convergence on $|z|\le r$. Every compact subset of $\mathbb D$ is contained in such a disk, so the convergence is locally uniform.
+:::
+
+<1>4. Under the corrected hypothesis, $f$ is holomorphic on $\mathbb D$.
+
+::: {.proof}
+Each summand
+\[
+z\longmapsto
+\frac{a_n}{z-\zeta_n}
+\]
+is holomorphic on $\mathbb D$, because $|\zeta_n|=1$. By step <1>3, the series converges uniformly on compact subsets. A locally uniform limit of holomorphic functions is holomorphic.
+:::
+
+<1>5. Let $\Omega$ be a domain properly containing $\mathbb D$. Then $\Omega$ contains at least one point $\zeta_k=e^{i\alpha k}$.
+
+::: {.proof}
+Because $\Omega$ properly contains $\mathbb D$, it contains a point $w\notin\mathbb D$. If $|w|=1$, openness of $\Omega$ gives a nearby point of modulus greater than $1$ that also lies in $\Omega$. Thus $\Omega$ contains a point outside the closed unit disk as well as points inside $\mathbb D$.
+
+Open connected subsets of $\mathbb C$ are path connected, so a path in $\Omega$ from an interior point of $\mathbb D$ to a point outside the closed unit disk must meet the unit circle. Thus $\Omega$ contains some point of $\partial\mathbb D$.
+
+Since $\Omega$ is open, it contains a nonempty open arc of the unit circle around that boundary point. By density of the set $\{\zeta_n\}$ from step <1>2, that arc contains some $\zeta_k$.
+:::
+
+<1>6. Suppose, toward a contradiction, that $f$ has a holomorphic continuation $F$ to such a domain $\Omega$. For the index $k$ from step <1>5$, define
+\[
+G(z)
+\coloneqq
+(z-\zeta_k)F(z).
+\]
+Then
+\[
+G(\zeta_k)=0.
+\]
+
+::: {.proof}
+The function $F$ is holomorphic at $\zeta_k\in\Omega$, so $G$ is holomorphic there and the factor $z-\zeta_k$ vanishes at $z=\zeta_k$.
+:::
+
+<1>7. For $0<r<1$,
+\[
+G(r\zeta_k)
+=
+a_k
++
+\sum_{n\ne k}
+a_n
+\frac{(r-1)\zeta_k}
+{r\zeta_k-\zeta_n}.
+\]
+
+::: {.proof}
+Inside $\mathbb D$, the continuation $F$ agrees with the original function $f$. Thus
+\[
+\begin{aligned}
+G(r\zeta_k)
+&=
+(r\zeta_k-\zeta_k)
+\sum_{n=1}^{\infty}
+\frac{a_n}{r\zeta_k-\zeta_n}\\
+&=
+a_k
++
+\sum_{n\ne k}
+a_n
+\frac{(r-1)\zeta_k}
+{r\zeta_k-\zeta_n}.
+\end{aligned}
+\]
+The series is absolutely convergent for each fixed $r<1$ by step <1>3, so the algebraic separation of the $k$-th term is justified.
+:::
+
+<1>8. For every $n\ne k$ and every $0<r<1$,
+\[
+\left|
+\frac{(r-1)\zeta_k}
+{r\zeta_k-\zeta_n}
+\right|
+\le1,
+\]
+and for each fixed $n\ne k$ this quantity tends to $0$ as $r\uparrow1$.
+
+::: {.proof}
+Since $|\zeta_k|=|\zeta_n|=1$,
+\[
+|r\zeta_k-\zeta_n|
+\ge
+\bigl||\zeta_n|-|r\zeta_k|\bigr|
+=
+1-r.
+\]
+The numerator has modulus $1-r$, proving the bound.
+
+For fixed $n\ne k$, pairwise distinctness from step <1>2 gives
+\[
+\zeta_k-\zeta_n\ne0.
+\]
+Hence the denominator tends to this nonzero number while the numerator tends to $0$, so the quotient tends to $0$.
+:::
+
+<1>9. One has
+\[
+\lim_{r\uparrow1}G(r\zeta_k)
+=
+a_k.
+\]
+
+::: {.proof}
+By steps <1>7 and <1>8,
+\[
+\left|
+a_n
+\frac{(r-1)\zeta_k}
+{r\zeta_k-\zeta_n}
+\right|
+\le
+|a_n|
+\qquad
+(n\ne k).
+\]
+The sequence $(|a_n|)$ is summable, and each summand tends to $0$ for fixed $n\ne k$. Dominated convergence for series therefore gives
+\[
+\sum_{n\ne k}
+a_n
+\frac{(r-1)\zeta_k}
+{r\zeta_k-\zeta_n}
+\longrightarrow0.
+\]
+Substitute into step <1>7.
+:::
+
+<1>10. The assumed continuation leads to a contradiction.
+
+::: {.proof}
+Since $G$ is holomorphic on $\Omega$, it is continuous at $\zeta_k$. Therefore
+\[
+\lim_{r\uparrow1}G(r\zeta_k)
+=
+G(\zeta_k)
+=0
+\]
+by step <1>6. But step <1>9 gives the same limit as
+\[
+a_k\ne0.
+\]
+This is a contradiction.
+:::
+
+<1>11. Under the corrected hypothesis $\alpha/(2\pi)\notin\mathbb Q$, the unit circle is a natural boundary for $f$.
+
+::: {.proof}
+Steps <1>5--<1>10 show that no domain properly containing $\mathbb D$ can support a holomorphic continuation of $f$.
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>1 refutes the literal source statement. Steps <1>2--<1>11 prove the intended theorem under the minimal density hypothesis $\alpha/(2\pi)\notin\mathbb Q$.
+:::
+:::
