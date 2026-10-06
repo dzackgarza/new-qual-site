@@ -17,3 +17,261 @@ For each of the following topologies on the underlying set $\mathbb R$, determin
 
 2. The included-point topology (with included point $0$).
 :::
+
+::: {.solution}
+<1>1. In the excluded-point topology with excluded point $0$, the open sets
+are
+\[
+\mathbb R
+\]
+and all subsets of
+\[
+\mathbb R\setminus\{0\}.
+\]
+
+::: {.proof}
+This is the definition of the excluded-point topology.
+Equivalently, every subset not containing $0$ is open, while the only open
+set containing $0$ is the whole space.
+:::
+
+<1>2. Let
+\[
+x,y\in\mathbb R
+\]
+be distinct nonzero points.
+Define
+\[
+\gamma:[0,1]\to\mathbb R
+\]
+by
+\[
+\gamma(t)
+=
+\begin{cases}
+x,&0\le t<\frac12,\\
+0,&t=\frac12,\\
+y,&\frac12<t\le1.
+\end{cases}
+\]
+Then $\gamma$ is continuous for the excluded-point topology.
+
+::: {.proof}
+Let
+\[
+U
+\]
+be open.
+
+If
+\[
+0\in U,
+\]
+then by the excluded-point topology
+\[
+U=\mathbb R,
+\]
+so
+\[
+\gamma^{-1}(U)
+=
+[0,1].
+\]
+
+If
+\[
+0\notin U,
+\]
+then the preimage is determined only by whether $x$ and $y$ belong to $U$.
+Thus it is one of
+\[
+\varnothing,
+\qquad
+\left[0,\frac12\right),
+\qquad
+\left(\frac12,1\right],
+\qquad
+\left[0,\frac12\right)
+\cup
+\left(\frac12,1\right].
+\]
+Each is open in the subspace topology on
+\[
+[0,1].
+\]
+Therefore $\gamma$ is continuous.
+:::
+
+<1>3. Every nonzero point can also be joined to $0$ by a path.
+
+::: {.proof}
+For
+\[
+x\ne0,
+\]
+define
+\[
+\eta(t)
+=
+\begin{cases}
+x,&0\le t<1,\\
+0,&t=1.
+\end{cases}
+\]
+If $U$ is open and does not contain $0$, then
+\[
+\eta^{-1}(U)
+\]
+is either
+\[
+\varnothing
+\]
+or
+\[
+[0,1),
+\]
+both open in $[0,1]$.
+If $0\in U$, then
+\[
+U=\mathbb R
+\]
+and the preimage is all of $[0,1]$.
+Thus $\eta$ is continuous.
+:::
+
+<1>4. Hence the excluded-point real line is path-connected.
+
+::: {.proof}
+If both endpoints are nonzero, use step <1>2.
+If one endpoint is $0$, use step <1>3 or reverse that path.
+Thus every two points can be joined by a path.
+:::
+
+<1>5. Therefore, in the excluded-point topology,
+\[
+\boxed{
+\text{there is exactly one path component and exactly one connected component, namely }\mathbb R.
+}
+\]
+
+::: {.proof}
+Path-connected spaces are connected.
+By step <1>4, the whole space is path-connected, so it is itself the unique
+path component and therefore also the unique connected component.
+:::
+
+<1>6. In the included-point topology with included point $0$, the open sets
+are
+\[
+\varnothing
+\]
+and all subsets containing $0$.
+
+::: {.proof}
+This is the definition of the included-point topology.
+:::
+
+<1>7. Let
+\[
+x,y\in\mathbb R.
+\]
+Define
+\[
+\gamma:[0,1]\to\mathbb R
+\]
+by
+\[
+\gamma(t)
+=
+\begin{cases}
+x,&t=0,\\
+0,&0<t<1,\\
+y,&t=1.
+\end{cases}
+\]
+Then $\gamma$ is continuous for the included-point topology.
+
+::: {.proof}
+Let
+\[
+U
+\]
+be open.
+If
+\[
+U=\varnothing,
+\]
+then the preimage is empty.
+
+Otherwise
+\[
+0\in U.
+\]
+Depending on whether $x$ and $y$ lie in $U$, the preimage is one of
+\[
+(0,1),
+\qquad
+[0,1),
+\qquad
+(0,1],
+\qquad
+[0,1].
+\]
+Each is open in the subspace topology on $[0,1]$.
+Hence $\gamma$ is continuous.
+:::
+
+<1>8. Therefore the included-point real line is path-connected.
+
+::: {.proof}
+Step <1>7 constructs a path between arbitrary
+\[
+x,y\in\mathbb R.
+\]
+:::
+
+<1>9. Consequently, in the included-point topology,
+\[
+\boxed{
+\text{there is exactly one path component and exactly one connected component, namely }\mathbb R.
+}
+\]
+
+::: {.proof}
+As in step <1>5, path-connectedness implies connectedness, and the whole
+space is the unique component of each type.
+:::
+
+<1>10. The complete answer is:
+\[
+\boxed{
+\begin{array}{c|cc|cc}
+&\text{connected}
+&\text{path-connected}
+&\text{connected components}
+&\text{path components}\\
+\hline
+\text{excluded-point}
+&\mathrm{yes}
+&\mathrm{yes}
+&\mathbb R
+&\mathbb R\\
+\text{included-point}
+&\mathrm{yes}
+&\mathrm{yes}
+&\mathbb R
+&\mathbb R
+\end{array}
+}
+\]
+
+::: {.proof}
+Collect steps <1>4--<1>5 and <1>8--<1>9.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 gives all requested classifications.
+:::
+:::
