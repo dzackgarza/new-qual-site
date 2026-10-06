@@ -19,3 +19,132 @@ audit:
 ::: {.problem}
 Let $\mathbb C_+=\{z\in\mathbb C:\operatorname{Im}z>0\}$ and let $f_n:\mathbb C_+\to\mathbb C_+$ be a sequence of holomorphic functions. Show that unless $|f_n|\to\infty$ uniformly on compact subsets of $\mathbb C_+$, there exists a subsequence converging uniformly on compact subsets of $\mathbb C_+$.
 :::
+
+::: {.solution}
+Let
+\[
+\Phi(w)
+\coloneqq
+\frac{w-i}{w+i},
+\qquad
+\Phi^{-1}(\zeta)
+=
+i\frac{1+\zeta}{1-\zeta}.
+\]
+Then $\Phi$ is a biholomorphism from $\mathbb C_+$ onto the unit disk $\mathbb D$.
+
+<1>1. Since $|f_n|$ does not tend to infinity uniformly on compact subsets, there exist a compact set $K\subset\mathbb C_+$, a constant $M>0$, a subsequence $(f_{n_j})$, and points $z_j\in K$ such that
+\[
+|f_{n_j}(z_j)|\le M
+\qquad
+(j\ge1).
+\]
+
+::: {.proof}
+Failure of uniform divergence on compact subsets means that for some compact $K\subset\mathbb C_+$ there is a number $M>0$ such that, for infinitely many indices $n$, the inequality
+\[
+|f_n(z)|>M
+\qquad
+(z\in K)
+\]
+fails. Select those indices as $n_j$ and choose $z_j\in K$ at which it fails.
+:::
+
+<1>2. After passing to a further subsequence, the functions
+\[
+g_j
+\coloneqq
+\Phi\circ f_{n_j}:\mathbb C_+\to\mathbb D
+\]
+converge uniformly on compact subsets of $\mathbb C_+$ to a holomorphic function $g:\mathbb C_+\to\overline{\mathbb D}$, and the points $z_j$ converge to some $z_\infty\in K$.
+
+::: {.proof}
+The family $(g_j)$ is uniformly bounded by $1$, so Montel's theorem gives a locally uniformly convergent subsequence. Relabel it as $(g_j)$. Since $K$ is compact, the associated sequence $(z_j)$ has a convergent subsequence; pass to it as well and write its limit as $z_\infty\in K$. Local uniform limits of holomorphic functions are holomorphic.
+:::
+
+<1>3. The limit function $g$ is not identically equal to $1$.
+
+::: {.proof}
+For every $w\in\mathbb C_+$,
+\[
+1-\Phi(w)
+=
+\frac{2i}{w+i},
+\]
+so
+\[
+|1-\Phi(w)|
+=
+\frac{2}{|w+i|}.
+\]
+By step <1>1,
+\[
+|1-g_j(z_j)|
+=
+\frac{2}{|f_{n_j}(z_j)+i|}
+\ge
+\frac{2}{M+1}.
+\]
+Because $z_j\to z_\infty$ and $g_j\to g$ locally uniformly, one has
+\[
+g_j(z_j)\longrightarrow g(z_\infty).
+\]
+Hence
+\[
+|1-g(z_\infty)|
+\ge
+\frac{2}{M+1}>0.
+\]
+Thus $g(z_\infty)\ne1$, so $g$ is not the constant function $1$.
+:::
+
+<1>4. The function $g$ never takes the value $1$ on $\mathbb C_+$.
+
+::: {.proof}
+The limit satisfies $|g|\le1$. If $g(z_0)=1$ at some interior point, then $|g|$ attains its maximum value $1$ at $z_0$. The maximum-modulus principle would force $g\equiv1$, contradicting step <1>3.
+:::
+
+<1>5. The subsequence $(f_{n_j})$ converges uniformly on compact subsets of $\mathbb C_+$.
+
+::: {.proof}
+Let $L\subset\mathbb C_+$ be compact. By steps <1>3 and <1>4, the continuous function $1-g$ has no zeros on $L$. Hence
+\[
+\delta
+\coloneqq
+\min_{z\in L}|1-g(z)|>0.
+\]
+For all sufficiently large $j$, local uniform convergence gives
+\[
+|1-g_j(z)|
+\ge
+\frac{\delta}{2}
+\qquad
+(z\in L).
+\]
+Since
+\[
+f_{n_j}
+=
+\Phi^{-1}(g_j)
+=
+i\frac{1+g_j}{1-g_j},
+\]
+and the rational function
+\[
+\zeta\longmapsto i\frac{1+\zeta}{1-\zeta}
+\]
+is uniformly continuous on a neighborhood of the compact set $g(L)$ that stays a positive distance from $1$, the convergence $g_j\to g$ on $L$ implies
+\[
+f_{n_j}
+\longrightarrow
+i\frac{1+g}{1-g}
+\]
+uniformly on $L$. Since $L$ was arbitrary, the convergence is uniform on compact subsets of $\mathbb C_+$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the required locally uniformly convergent subsequence.
+:::
+:::
