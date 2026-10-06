@@ -18,3 +18,134 @@ audit:
 ::: {.problem}
 State the Argument Principle.
 :::
+
+::: {.solution}
+<1>1. **Argument Principle.**
+
+Let $f$ be meromorphic on a domain containing a positively oriented simple
+closed contour
+\[
+\gamma
+\]
+and its interior.
+Assume $f$ has no zero and no pole on $\gamma$.
+Let
+\[
+N
+\]
+be the number of zeros of $f$ inside $\gamma$, counted with multiplicity,
+and let
+\[
+P
+\]
+be the number of poles inside $\gamma$, counted with order.
+Then
+\[
+\boxed{
+\frac1{2\pi i}
+\int_\gamma
+\frac{f'(z)}{f(z)}
+\,dz
+=
+N-P.
+}
+\]
+
+::: {.proof}
+At a zero $a$ of multiplicity $m$,
+\[
+f(z)
+=
+(z-a)^m g(z),
+\qquad
+g(a)\ne0,
+\]
+so
+\[
+\frac{f'(z)}{f(z)}
+=
+\frac{m}{z-a}
++
+\frac{g'(z)}{g(z)}.
+\]
+Thus
+\[
+\operatorname{Res}_{z=a}
+\frac{f'}f
+=
+m.
+\]
+
+At a pole $b$ of order $n$,
+\[
+f(z)
+=
+(z-b)^{-n}h(z),
+\qquad
+h(b)\ne0,
+\]
+so
+\[
+\operatorname{Res}_{z=b}
+\frac{f'}f
+=
+-n.
+\]
+
+The residue theorem therefore gives
+\[
+\frac1{2\pi i}
+\int_\gamma
+\frac{f'}f
+=
+\sum \text{zero multiplicities}
+-
+\sum \text{pole orders}
+=
+N-P.
+\]
+:::
+
+<1>2. Equivalently,
+\[
+N-P
+\]
+is the winding number of the closed curve
+\[
+f\circ\gamma
+\]
+about the origin.
+
+::: {.proof}
+Along $\gamma$,
+\[
+w=f(z)
+\]
+gives
+\[
+dw=f'(z)\,dz.
+\]
+Hence
+\[
+\frac1{2\pi i}
+\int_\gamma
+\frac{f'(z)}{f(z)}
+\,dz
+=
+\frac1{2\pi i}
+\int_{f\circ\gamma}
+\frac{dw}{w},
+\]
+which is precisely
+\[
+\operatorname{Ind}(f\circ\gamma,0).
+\]
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 is the standard Argument Principle, and step <1>2 records its
+winding-number interpretation.
+:::
+:::
