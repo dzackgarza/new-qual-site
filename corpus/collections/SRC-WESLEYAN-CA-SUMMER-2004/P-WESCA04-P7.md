@@ -22,3 +22,246 @@ Show that $f+g$ has either a removable singularity at $z_0$ or a pole of order a
 \max\{m,n\}.
 \]
 :::
+
+::: {.solution}
+Set
+\[
+M
+\coloneqq
+\max\{m,n\}.
+\]
+
+<1>1. There are holomorphic functions
+\[
+F,G
+\]
+near $z_0$ such that
+\[
+f(z)
+=
+\frac{F(z)}
+{(z-z_0)^m},
+\qquad
+g(z)
+=
+\frac{G(z)}
+{(z-z_0)^n},
+\]
+with
+\[
+F(z_0)\ne0,
+\qquad
+G(z_0)\ne0.
+\]
+
+::: {.proof}
+This is the local factorization characterizing a pole and its order.
+:::
+
+<1>2. The function
+\[
+H(z)
+\coloneqq
+(z-z_0)^M
+\bigl(
+f(z)+g(z)
+\bigr)
+\]
+extends holomorphically across $z_0$.
+
+::: {.proof}
+Using step <1>1,
+\[
+\begin{aligned}
+H(z)
+&=
+(z-z_0)^{M-m}F(z)
++
+(z-z_0)^{M-n}G(z).
+\end{aligned}
+\]
+Both exponents
+\[
+M-m
+\quad\text{and}\quad
+M-n
+\]
+are nonnegative integers.
+Hence each term is holomorphic near $z_0$, and so is their sum.
+:::
+
+<1>3. If
+\[
+H(z_0)\ne0,
+\]
+then $f+g$ has a pole of order exactly $M$ at $z_0$.
+
+::: {.proof}
+In that case,
+\[
+f(z)+g(z)
+=
+\frac{H(z)}
+{(z-z_0)^M}
+\]
+with $H$ holomorphic and nonzero at $z_0$.
+That is precisely a pole of order $M$.
+:::
+
+<1>4. If
+\[
+H(z_0)=0,
+\]
+let $r$ be the order of the zero of $H$ at $z_0$, unless
+\[
+H\equiv0
+\]
+near $z_0$.
+Then
+\[
+H(z)
+=
+(z-z_0)^rK(z)
+\]
+with $K$ holomorphic and
+\[
+K(z_0)\ne0.
+\]
+
+::: {.proof}
+This is the standard factorization of a nonzero holomorphic function at a
+zero.
+If $H$ vanishes identically on a neighborhood, then
+\[
+f+g=0
+\]
+there, so the singularity is removable; that case is already settled.
+:::
+
+<1>5. If
+\[
+0<r<M,
+\]
+then $f+g$ has a pole of order
+\[
+M-r.
+\]
+
+::: {.proof}
+By step <1>4,
+\[
+f(z)+g(z)
+=
+\frac{(z-z_0)^rK(z)}
+{(z-z_0)^M}
+=
+\frac{K(z)}
+{(z-z_0)^{M-r}}.
+\]
+Since
+\[
+K(z_0)\ne0,
+\]
+this is a pole of order
+\[
+M-r.
+\]
+In particular,
+\[
+M-r<M.
+\]
+:::
+
+<1>6. If
+\[
+r\ge M,
+\]
+then the singularity of $f+g$ at $z_0$ is removable.
+
+::: {.proof}
+Again using step <1>4,
+\[
+f(z)+g(z)
+=
+(z-z_0)^{r-M}K(z).
+\]
+The exponent
+\[
+r-M
+\]
+is nonnegative, so the right-hand side extends holomorphically across
+$z_0$.
+:::
+
+<1>7. Therefore
+\[
+\boxed{
+f+g
+\text{ has either a removable singularity or a pole of order at most }
+\max\{m,n\}.
+}
+\]
+
+::: {.proof}
+If $H(z_0)\ne0$, step <1>3 gives pole order
+\[
+M.
+\]
+If $H(z_0)=0$, steps <1>4--<1>6 give either a smaller pole order or a
+removable singularity.
+:::
+
+<1>8. More sharply, if
+\[
+m\ne n,
+\]
+then the pole order of $f+g$ is exactly
+\[
+\max\{m,n\}.
+\]
+
+::: {.proof}
+Suppose, for example,
+\[
+m>n.
+\]
+Then
+\[
+M=m,
+\]
+and step <1>2 gives
+\[
+H(z)
+=
+F(z)
++
+(z-z_0)^{m-n}G(z).
+\]
+At $z_0$,
+\[
+H(z_0)
+=
+F(z_0)
+\ne
+0.
+\]
+Thus step <1>3 gives a pole of order $m$.
+The case
+\[
+n>m
+\]
+is symmetric.
+Only when
+\[
+m=n
+\]
+can leading terms cancel.
+:::
+
+<1>9. Q.E.D.
+
+::: {.proof}
+Step <1>7 proves the required statement; step <1>8 records the sharper
+non-equal-order case.
+:::
+:::
