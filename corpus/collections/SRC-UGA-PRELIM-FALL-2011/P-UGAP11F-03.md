@@ -17,3 +17,76 @@ audit:
 ::: {.problem}
 Give an example, with proof, of a real power series that converges exactly on the interval $(1,3]$.
 :::
+
+::: {.solution}
+Consider
+$$
+\boxed{
+\sum_{n=1}^\infty
+\frac{(-1)^n}{n}(x-2)^n}.
+$$
+
+<1>1. The radius of convergence is $1$.
+
+::: {.proof}
+The coefficients are
+$$
+a_n=\frac{(-1)^n}{n}.
+$$
+Hence
+$$
+\limsup_{n\to\infty}|a_n|^{1/n}
+=
+\lim_{n\to\infty}n^{-1/n}
+=1.
+$$
+By the Cauchy--Hadamard formula, the radius of convergence is
+$$
+R=1.
+$$
+Thus the series converges absolutely for
+$$
+|x-2|<1,
+$$
+i.e. for $1<x<3$, and diverges for $|x-2|>1$.
+:::
+
+<1>2. At $x=3$, the series converges.
+
+::: {.proof}
+Substituting $x=3$ gives
+$$
+\sum_{n=1}^\infty
+\frac{(-1)^n}{n},
+$$
+the alternating harmonic series, which converges by the alternating-series test.
+:::
+
+<1>3. At $x=1$, the series diverges.
+
+::: {.proof}
+Substituting $x=1$ gives
+$$
+\sum_{n=1}^\infty
+\frac{(-1)^n}{n}(-1)^n
+=
+\sum_{n=1}^\infty\frac1n,
+$$
+which is the harmonic series and diverges.
+:::
+
+<1>4. Therefore the set of real points where the power series converges is exactly
+$$
+\boxed{(1,3]}.
+$$
+
+::: {.proof}
+Step <1>1 gives convergence on $(1,3)$ and divergence outside $[1,3]$. Steps <1>2--<1>3 determine the two endpoints.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 gives the requested example and its exact interval of convergence.
+:::
+:::
