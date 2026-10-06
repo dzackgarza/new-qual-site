@@ -27,3 +27,502 @@ Draw/describe the quotient Y/H of Y by the action of H.
 
 (c) Determine which reduced sequences in the free product group G do (or do not) lie in the subgroup K. Use this information to draw/describe the quotient Y/K of Y by the action of K. Find a presentation for the fundamental group $\pi _ { 1 } ( \mathrm { Y / K } )$ of the CW complex Y/K.
 :::
+
+::: {.solution}
+Let
+\[
+G=\langle a,b\mid a^2=1,\ b^3=1\rangle.
+\]
+
+## Part (a)
+
+<1>1. One has
+\[
+\boxed{
+G\cong
+\mathbb Z/2 * \mathbb Z/3}.
+\]
+
+::: {.proof}
+The presentation splits into the two factor presentations
+\[
+\langle a\mid a^2=1\rangle
+\cong
+\mathbb Z/2
+\]
+and
+\[
+\langle b\mid b^3=1\rangle
+\cong
+\mathbb Z/3,
+\]
+with no relation involving both \(a\) and \(b\). This is exactly the free
+product presentation.
+:::
+
+<1>2. The nonidentity elements of the two factors are
+\[
+\boxed{
+a}
+\]
+and
+\[
+\boxed{
+b,\ b^2}.
+\]
+
+::: {.proof}
+The first factor has two elements
+\[
+1,a,
+\]
+and the second has three elements
+\[
+1,b,b^2.
+\]
+:::
+
+<1>3. Every nonidentity element of \(G\) has a unique reduced form
+\[
+\boxed{
+x_1x_2\cdots x_r}
+\]
+where each \(x_i\) belongs to
+\[
+\{a,b,b^2\},
+\]
+and consecutive letters never both lie in the same factor.
+
+::: {.proof}
+This is the normal form theorem for free products. Since the only
+nonidentity letters available in the \(\mathbb Z/2\) factor and
+\(\mathbb Z/3\) factor are those listed in step <1>2, the stated description
+is exactly the reduced-sequence normal form.
+:::
+
+<1>4. Concretely, every reduced word alternates between \(a\) and one of
+\(b,b^2\).
+
+::: {.proof}
+Two consecutive letters from the same free factor would combine to a single
+letter or cancel, contradicting reducedness.
+:::
+
+<1>5. The presentation complex \(X\) has one vertex, two \(1\)-cells
+\(a,b\), and two \(2\)-cells attached along
+\[
+\boxed{a^2}
+\qquad\text{and}\qquad
+\boxed{b^3}.
+\]
+
+::: {.proof}
+This is the standard CW complex associated to the presentation of \(G\).
+:::
+
+<1>6. Hence
+\[
+\boxed{
+X\cong
+\mathbb{RP}^2
+\vee
+M(\mathbb Z/3,1)},
+\]
+where \(M(\mathbb Z/3,1)\) is the \(2\)-complex obtained from \(S^1\) by
+attaching a \(2\)-cell by a degree-\(3\) map.
+
+::: {.proof}
+The \(a\)-circle together with the \(a^2\)-cell is the standard CW structure
+on \(\mathbb{RP}^2\). The \(b\)-circle together with the \(b^3\)-cell is the
+standard Moore-space presentation complex for \(\mathbb Z/3\). The two
+subcomplexes meet only at the unique vertex.
+:::
+
+<1>7. The Cayley complex \(Y\) has vertex set \(G\).
+
+::: {.proof}
+The Cayley complex is the universal cover of the presentation complex, and
+the fiber over the unique vertex is naturally identified with the group
+\(G\).
+:::
+
+<1>8. From each vertex \(g\in G\), there is an \(a\)-edge
+\[
+g\longrightarrow ga
+\]
+and a \(b\)-edge
+\[
+g\longrightarrow gb.
+\]
+
+::: {.proof}
+These are the lifts of the two oriented \(1\)-cells of \(X\).
+:::
+
+<1>9. The \(a\)-edges occur in \(2\)-cycles and the \(b\)-edges occur in
+\(3\)-cycles.
+
+::: {.proof}
+Since
+\[
+a^2=1,
+\]
+right multiplication by \(a\) has orbit
+\[
+g\leftrightarrow ga.
+\]
+Since
+\[
+b^3=1,
+\]
+right multiplication by \(b\) has orbit
+\[
+g\to gb\to gb^2\to g.
+\]
+:::
+
+<1>10. At every vertex \(g\), attach one \(a^2\)-cell along the lifted
+\(2\)-edge \(a\)-cycle and one \(b^3\)-cell along the lifted \(3\)-edge
+\(b\)-cycle.
+
+::: {.proof}
+Every \(2\)-cell of the base presentation complex has one lift beginning at
+each vertex of the universal cover. Its attaching path is obtained by
+reading the corresponding relator from that vertex.
+:::
+
+<1>11. This Cayley complex \(Y\) is simply connected.
+
+::: {.proof}
+It is the universal covering complex of \(X\).
+:::
+
+## Part (b)
+
+Let
+\[
+H=\langle a\rangle\le G.
+\]
+
+<1>12. One has
+\[
+\boxed{
+H=\{1,a\}\cong\mathbb Z/2}.
+\]
+
+::: {.proof}
+The relation
+\[
+a^2=1
+\]
+shows that every power of \(a\) is \(1\) or \(a\). The generator \(a\) is
+nontrivial in the free product
+\[
+\mathbb Z/2 * \mathbb Z/3,
+\]
+so \(H\) has exactly two elements.
+:::
+
+<1>13. The quotient \(Y/H\) is the Schreier complex with vertex set
+\[
+\boxed{H\backslash G}.
+\]
+
+::: {.proof}
+The subgroup \(H\) acts on the universal cover \(Y\) by deck
+transformations. Orbits of vertices are left \(H\)-cosets, so the quotient
+vertices are the cosets \(Hg\).
+:::
+
+<1>14. From a vertex \(Hg\), the quotient has an \(a\)-edge
+\[
+\boxed{
+Hg\longrightarrow Hga}
+\]
+and a \(b\)-edge
+\[
+\boxed{
+Hg\longrightarrow Hgb}.
+\]
+
+::: {.proof}
+These are the images of the corresponding Cayley edges in \(Y\).
+:::
+
+<1>15. Attach to \(Y/H\), at every vertex \(Hg\), one \(2\)-cell along the
+closed path labeled \(a^2\) and one along the closed path labeled \(b^3\).
+
+::: {.proof}
+The \(2\)-cells of the quotient are \(H\)-orbits of the lifted relator
+cells. Equivalently, this is the standard Schreier complex for the subgroup
+\(H\).
+:::
+
+<1>16. The distinguished vertex \(H\) has an \(a\)-loop.
+
+::: {.proof}
+Since \(a\in H\),
+\[
+Ha=H.
+\]
+Thus the \(a\)-edge based at \(H\) begins and ends at the same quotient
+vertex.
+:::
+
+<1>17. All \(b\)-orbits in the quotient graph are \(3\)-cycles.
+
+::: {.proof}
+Right multiplication by \(b\) has order \(3\). A shorter orbit would mean
+that some conjugate of a nontrivial power of \(b\) lies in \(H\). But every
+nonidentity element of \(H\) has order \(2\), while \(b,b^2\) have order
+\(3\). Hence no orbit has size \(1\), so every orbit has size \(3\).
+:::
+
+<1>18. Except at the vertex \(H\), the \(a\)-orbits occur in pairs joined
+by the two oriented lifts of the \(a\)-edge.
+
+::: {.proof}
+Right multiplication by \(a\) is an involution on the coset set. A fixed
+coset \(Hg\) would satisfy
+\[
+Hga=Hg,
+\]
+equivalently
+\[
+gag^{-1}\in H.
+\]
+In the free product \(\mathbb Z/2*\mathbb Z/3\), a conjugate of the factor
+generator \(a\) lies in \(H=\langle a\rangle\) only when the coset is the
+distinguished one. Thus all remaining \(a\)-orbits have size \(2\).
+:::
+
+<1>19. Steps <1>13--<1>18 completely describe the quotient \(Y/H\):
+an infinite Schreier graph of \(b\)-triangles joined by \(a\)-edges, with
+one \(a\)-loop at the distinguished coset, together with the lifted
+\(a^2\)- and \(b^3\)-cells.
+
+::: {.proof}
+The vertex set, all \(1\)-cells, and all \(2\)-cell attaching maps have been
+specified in steps <1>13--<1>18.
+:::
+
+## Part (c)
+
+Let
+\[
+h:G\to\mathbb Z/2
+=
+\langle c\mid c^2=1\rangle
+\]
+satisfy
+\[
+h(a)=c,
+\qquad
+h(b)=1,
+\]
+and let
+\[
+K=\ker h.
+\]
+
+<1>20. For a reduced word
+\[
+w=x_1\cdots x_r,
+\]
+the value \(h(w)\) depends only on the parity of the number of occurrences of
+the letter \(a\).
+
+::: {.proof}
+Every \(b\) or \(b^2\) letter maps to the identity because
+\[
+h(b)=1.
+\]
+Every \(a\)-letter maps to \(c\). Hence
+\[
+h(w)=c^{N_a(w)},
+\]
+where \(N_a(w)\) is the number of \(a\)-letters.
+:::
+
+<1>21. Therefore
+\[
+\boxed{
+w\in K
+\iff
+N_a(w)\text{ is even}}.
+\]
+
+::: {.proof}
+The group \(\mathbb Z/2\) has
+\[
+c^m=1
+\iff
+m\text{ is even}.
+\]
+Apply step <1>20.
+:::
+
+<1>22. The subgroup \(K\) has index \(2\) and is normal.
+
+::: {.proof}
+It is the kernel of the surjective homomorphism \(h\). Hence
+\[
+G/K\cong\mathbb Z/2.
+\]
+:::
+
+<1>23. The quotient \(Y/K\) has exactly two vertices:
+\[
+\boxed{
+v_0=K,
+\qquad
+v_1=Ka}.
+\]
+
+::: {.proof}
+Vertices are the \(K\)-cosets. Step <1>22 gives exactly two cosets.
+:::
+
+<1>24. Each \(b\)-edge is a loop at its vertex.
+
+::: {.proof}
+Since
+\[
+b\in K,
+\]
+right multiplication by \(b\) does not change the \(K\)-coset:
+\[
+Kb=K,
+\qquad
+Kab=Ka
+\]
+because \(K\) is normal.
+:::
+
+<1>25. The two lifted \(a\)-edges run between \(v_0\) and \(v_1\), one in
+each orientation.
+
+::: {.proof}
+Right multiplication by \(a\) swaps the two quotient cosets because
+\[
+h(a)=c\ne1.
+\]
+Thus
+\[
+Ka=v_1,
+\qquad
+Kaa=K=v_0.
+\]
+There is one lifted oriented \(a\)-edge beginning at each vertex.
+:::
+
+<1>26. The quotient \(Y/K\) has two \(a^2\)-cells, one based at each vertex,
+and two \(b^3\)-cells, one attached to each \(b\)-loop by degree \(3\).
+
+::: {.proof}
+The cover has two sheets, so each base \(2\)-cell has exactly two lifts.
+Reading \(a^2\) traverses the two \(a\)-edges and closes; reading \(b^3\)
+goes three times around the \(b\)-loop at the chosen vertex.
+:::
+
+<1>27. Choose one of the two \(a\)-edges as a maximal tree and collapse it.
+
+::: {.proof}
+The \(1\)-skeleton has two vertices, so any one edge joining them is a
+maximal tree.
+:::
+
+<1>28. After this collapse, let
+\[
+x
+\]
+denote the remaining \(a\)-edge loop and let
+\[
+u,v
+\]
+denote the two \(b\)-loops.
+
+::: {.proof}
+Collapsing the tree identifies the two vertices. The other \(a\)-edge and
+the two \(b\)-edges become three loop generators.
+:::
+
+<1>29. The lifted \(a^2\)-cells impose the relation
+\[
+\boxed{x=1}.
+\]
+
+::: {.proof}
+Each lifted \(a^2\)-boundary consists of the tree \(a\)-edge followed by the
+remaining \(a\)-edge, or the reverse cyclic order. After the tree edge is
+collapsed, each attaching loop is just \(x\) or \(x^{-1}\). Thus \(x\) is
+killed.
+:::
+
+<1>30. The two \(b^3\)-cells impose
+\[
+\boxed{u^3=1}
+\qquad\text{and}\qquad
+\boxed{v^3=1}.
+\]
+
+::: {.proof}
+Each \(b^3\)-cell wraps three times around the \(b\)-loop at its vertex.
+After collapsing the tree, these are the loops \(u^3\) and \(v^3\).
+:::
+
+<1>31. Hence
+\[
+\boxed{
+\pi_1(Y/K)
+\cong
+\langle u,v\mid u^3=1,\ v^3=1\rangle}.
+\]
+
+::: {.proof}
+The collapsed \(1\)-skeleton has generators \(x,u,v\). Step <1>29 kills
+\(x\), and step <1>30 gives the only remaining relators.
+:::
+
+<1>32. Therefore
+\[
+\boxed{
+\pi_1(Y/K)
+\cong
+\mathbb Z/3 * \mathbb Z/3}.
+\]
+
+::: {.proof}
+The presentation in step <1>31 has two independent cyclic factors of order
+\(3\) and no relation mixing them, which is exactly their free product.
+:::
+
+<1>33. Since \(Y\) is simply connected, this fundamental group is also
+isomorphic to \(K\):
+\[
+\boxed{
+K
+\cong
+\mathbb Z/3 * \mathbb Z/3}.
+\]
+
+::: {.proof}
+The quotient
+\[
+Y\to Y/K
+\]
+is the covering corresponding to the subgroup \(K\le G=\pi_1(X)\).
+Because \(Y\) is the universal cover,
+\[
+\pi_1(Y/K)\cong K.
+\]
+Apply step <1>32.
+:::
+
+<1>34. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>11 answer part (a), steps <1>12--<1>19 answer part (b), and
+steps <1>20--<1>33 answer part (c).
+:::
+:::
