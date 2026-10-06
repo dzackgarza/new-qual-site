@@ -17,3 +17,291 @@ H_n(S^2,A)
 \]
 for all $n\ge0$.
 :::
+
+::: {.solution}
+All homology groups have integer coefficients.
+
+<1>1. Since $A$ consists of $r$ discrete points,
+\[
+H_n(A)
+\cong
+\begin{cases}
+\mathbb Z^r,&n=0,\\
+0,&n>0.
+\end{cases}
+\]
+
+::: {.proof}
+Each point contributes one path component, so
+\[
+H_0(A)\cong\mathbb Z^r.
+\]
+Every higher homology group of a discrete space vanishes.
+:::
+
+<1>2. The homology of the sphere is
+\[
+H_n(S^2)
+\cong
+\begin{cases}
+\mathbb Z,&n=0,2,\\
+0,&\text{otherwise}.
+\end{cases}
+\]
+
+::: {.proof}
+This is the standard homology computation for $S^2$.
+:::
+
+<1>3. For
+\[
+n\ge3,
+\]
+one has
+\[
+H_n(S^2,A)=0.
+\]
+
+::: {.proof}
+The long exact sequence of the pair contains
+\[
+H_n(A)
+\longrightarrow
+H_n(S^2)
+\longrightarrow
+H_n(S^2,A)
+\longrightarrow
+H_{n-1}(A).
+\]
+For
+\[
+n\ge3,
+\]
+all three absolute groups surrounding the relative group vanish by
+steps <1>1--<1>2.
+Hence exactness forces
+\[
+H_n(S^2,A)=0.
+\]
+:::
+
+<1>4. In degree $2$,
+\[
+\boxed{
+H_2(S^2,A)
+\cong
+\mathbb Z.
+}
+\]
+
+::: {.proof}
+The relevant part of the long exact sequence is
+\[
+H_2(A)
+\longrightarrow
+H_2(S^2)
+\longrightarrow
+H_2(S^2,A)
+\longrightarrow
+H_1(A).
+\]
+By step <1>1,
+\[
+H_2(A)=0
+\]
+and
+\[
+H_1(A)=0.
+\]
+Thus
+\[
+0
+\longrightarrow
+\mathbb Z
+\longrightarrow
+H_2(S^2,A)
+\longrightarrow
+0
+\]
+is exact, giving
+\[
+H_2(S^2,A)
+\cong
+\mathbb Z.
+\]
+:::
+
+<1>5. The degree-$1$ and degree-$0$ part of the long exact sequence is
+\[
+0
+\longrightarrow
+H_1(S^2,A)
+\xrightarrow{\partial}
+\mathbb Z^r
+\xrightarrow{i_*}
+\mathbb Z
+\longrightarrow
+H_0(S^2,A)
+\longrightarrow
+0.
+\]
+
+::: {.proof}
+Insert
+\[
+H_1(S^2)=0,
+\qquad
+H_0(A)=\mathbb Z^r,
+\qquad
+H_0(S^2)=\mathbb Z
+\]
+into the long exact sequence of the pair.
+:::
+
+<1>6. The map
+\[
+i_*:
+H_0(A)
+\to
+H_0(S^2)
+\]
+is
+\[
+\boxed{
+(n_1,\dots,n_r)
+\longmapsto
+n_1+\cdots+n_r.
+}
+\]
+
+::: {.proof}
+Each generator of
+\[
+H_0(A)
+\cong
+\mathbb Z^r
+\]
+comes from one point of $A$.
+Under inclusion into the connected space $S^2$, every such point represents
+the same generator of
+\[
+H_0(S^2)\cong\mathbb Z.
+\]
+Therefore each standard basis vector maps to $1$, giving the augmentation
+map.
+:::
+
+<1>7. The map $i_*$ is surjective and
+\[
+\ker i_*
+\cong
+\mathbb Z^{r-1}.
+\]
+
+::: {.proof}
+Surjectivity is immediate because
+\[
+(1,0,\dots,0)
+\longmapsto
+1.
+\]
+
+Its kernel is
+\[
+\left\{
+(n_1,\dots,n_r)
+\in
+\mathbb Z^r:
+n_1+\cdots+n_r=0
+\right\}.
+\]
+This is free of rank
+\[
+r-1.
+\]
+For example, a basis is
+\[
+e_1-e_r,
+\dots,
+e_{r-1}-e_r.
+\]
+:::
+
+<1>8. Therefore
+\[
+\boxed{
+H_1(S^2,A)
+\cong
+\mathbb Z^{r-1}.
+}
+\]
+
+::: {.proof}
+By exactness of the sequence in step <1>5,
+\[
+\operatorname{im}\partial
+=
+\ker i_*.
+\]
+The map
+\[
+\partial
+\]
+is injective because the preceding group is zero.
+Thus
+\[
+H_1(S^2,A)
+\cong
+\ker i_*
+\cong
+\mathbb Z^{r-1}
+\]
+by step <1>7.
+:::
+
+<1>9. One has
+\[
+\boxed{
+H_0(S^2,A)=0.
+}
+\]
+
+::: {.proof}
+In step <1>5, the map
+\[
+i_*:\mathbb Z^r\to\mathbb Z
+\]
+is surjective by step <1>7.
+Hence its cokernel is zero.
+Exactness gives
+\[
+H_0(S^2,A)=0.
+\]
+:::
+
+<1>10. The complete answer is
+\[
+\boxed{
+H_n(S^2,A)
+\cong
+\begin{cases}
+\mathbb Z,
+&n=2,\\
+\mathbb Z^{r-1},
+&n=1,\\
+0,
+&n=0\text{ or }n\ge3.
+\end{cases}
+}
+\]
+
+::: {.proof}
+Collect steps <1>3--<1>4 and <1>8--<1>9.
+:::
+
+<1>11. Q.E.D.
+
+::: {.proof}
+Step <1>10 gives all relative homology groups.
+:::
+:::
