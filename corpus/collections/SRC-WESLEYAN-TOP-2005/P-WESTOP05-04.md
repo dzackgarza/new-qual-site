@@ -20,3 +20,490 @@ Give Hausdorff examples of each requested phenomenon:
 5. a first-countable space that is not second countable;
 6. a separable space that is not metrizable.
 :::
+
+::: {.solution}
+Let \(\mathbb S\) denote the Sorgenfrey line.
+
+## 1. Normal factors with nonnormal product
+
+<1>1. The Sorgenfrey line is regular.
+
+::: {.proof}
+The basic neighborhoods are intervals
+\[
+[a,b).
+\]
+Let \(x\in[a,b)\). Choose \(c\) with
+\[
+x<c<b.
+\]
+Then
+\[
+x\in[x,c),
+\]
+and the closure of \([x,c)\) in the Sorgenfrey line is contained in
+\[
+[x,c]\subseteq[a,b).
+\]
+Thus points can be separated from closed sets by neighborhoods with closure
+inside a prescribed neighborhood, which is regularity.
+:::
+
+<1>2. The Sorgenfrey line is Lindelöf.
+
+::: {.proof}
+Let \(\mathcal U\) be an open cover. Refine it by basic intervals, choosing
+for each \(x\in\mathbb R\) a basic interval
+\[
+[x,b_x)
+\]
+contained in some member of \(\mathcal U\).
+
+Set
+\[
+O=\bigcup_{x\in\mathbb R}(x,b_x)
+\]
+using the ordinary Euclidean topology. The family
+\[
+\{(x,b_x):x\in\mathbb R\}
+\]
+is an ordinary open cover of \(O\). Since the Euclidean line is second
+countable, hence Lindelöf, choose countably many indices \(x_n\) such that
+\[
+O=\bigcup_{n=1}^{\infty}(x_n,b_{x_n}).
+\]
+
+The corresponding Sorgenfrey intervals
+\[
+[x_n,b_{x_n})
+\]
+cover \(O\).
+
+Now let
+\[
+A=\mathbb R-O.
+\]
+For distinct \(x<y\) in \(A\), one must have
+\[
+b_x\le y;
+\]
+otherwise
+\[
+y\in(x,b_x)\subseteq O,
+\]
+contradiction. Thus the ordinary open intervals
+\[
+(x,b_x)
+\qquad(x\in A)
+\]
+are pairwise disjoint. Each contains a rational number, so \(A\) is
+countable.
+
+Adding the countably many intervals \([x,b_x)\) for \(x\in A\) gives a
+countable subcover of \(\mathcal U\).
+:::
+
+<1>3. Therefore \(\mathbb S\) is normal.
+
+::: {.proof}
+A regular Lindelöf space is normal. Apply steps <1>1--<1>2.
+:::
+
+<1>4. The Sorgenfrey plane
+\[
+\mathbb S^2
+\]
+is separable.
+
+::: {.proof}
+The countable set
+\[
+\mathbb Q\times\mathbb Q
+\]
+is dense. Every nonempty basic rectangle
+\[
+[a,b)\times[c,d)
+\]
+contains a pair of rational points.
+:::
+
+<1>5. The anti-diagonal
+\[
+D=\{(x,-x):x\in\mathbb R\}
+\]
+is closed in \(\mathbb S^2\).
+
+::: {.proof}
+Let
+\[
+(a,b)\notin D,
+\]
+so
+\[
+a+b\ne0.
+\]
+
+If \(a+b>0\), then every point of
+\[
+[a,a+\varepsilon)\times[b,b+\varepsilon)
+\]
+has coordinate sum \(>0\), for any \(\varepsilon>0\), so this rectangle
+misses \(D\).
+
+If \(a+b<0\), choose
+\[
+0<\varepsilon<-\frac{a+b}{2}.
+\]
+Then every point \((x,y)\) in the rectangle satisfies
+\[
+x+y<a+b+2\varepsilon<0,
+\]
+so again the rectangle misses \(D\).
+
+Thus the complement of \(D\) is open.
+:::
+
+<1>6. The subspace \(D\) is discrete.
+
+::: {.proof}
+For \(x\in\mathbb R\), the basic rectangle
+\[
+[x,x+1)\times[-x,-x+1)
+\]
+meets \(D\) only at \((x,-x)\). Indeed, if
+\[
+(t,-t)
+\]
+belongs to the rectangle, then
+\[
+t\ge x
+\]
+and
+\[
+-t\ge -x,
+\]
+so
+\[
+t=x.
+\]
+:::
+
+<1>7. Hence \(D\) is a closed discrete subspace of cardinality
+\[
+\boxed{\mathfrak c}.
+\]
+
+::: {.proof}
+Closedness is step <1>5, discreteness is step <1>6, and the map
+\[
+x\longmapsto(x,-x)
+\]
+is a bijection from \(\mathbb R\) to \(D\).
+:::
+
+<1>8. A separable space has at most \(\mathfrak c\) continuous functions
+into \([0,1]\).
+
+::: {.proof}
+Let \(Q\) be a countable dense subset. A continuous function
+\[
+f:X\to[0,1]
+\]
+is determined uniquely by its restriction to \(Q\): if two continuous
+functions agree on the dense set \(Q\), they agree everywhere.
+
+Thus
+\[
+|C(X,[0,1])|
+\le
+|[0,1]^Q|
+=
+\mathfrak c^{\aleph_0}
+=
+\mathfrak c.
+\]
+:::
+
+<1>9. If \(\mathbb S^2\) were normal, then it would admit at least
+\[
+2^{\mathfrak c}
+\]
+distinct continuous functions to \([0,1]\).
+
+::: {.proof}
+For each subset
+\[
+A\subseteq D,
+\]
+both \(A\) and \(D-A\) are closed in \(\mathbb S^2\), because \(D\) is
+closed and discrete.
+
+If \(\mathbb S^2\) were normal, Urysohn's lemma would provide a continuous
+function
+\[
+f_A:\mathbb S^2\to[0,1]
+\]
+such that
+\[
+f_A|_A=0,
+\qquad
+f_A|_{D-A}=1.
+\]
+Distinct subsets \(A\) give distinct functions. Since
+\[
+|\mathcal P(D)|=2^{\mathfrak c},
+\]
+there would be at least \(2^{\mathfrak c}\) such functions.
+:::
+
+<1>10. This is impossible because
+\[
+2^{\mathfrak c}>\mathfrak c.
+\]
+
+::: {.proof}
+Cantor's theorem gives
+\[
+2^\kappa>\kappa
+\]
+for every cardinal \(\kappa\). Apply it to \(\kappa=\mathfrak c\), and
+compare steps <1>4, <1>8, and <1>9.
+:::
+
+<1>11. Therefore
+\[
+\boxed{
+\mathbb S\text{ and }\mathbb S\text{ are normal, but }
+\mathbb S\times\mathbb S\text{ is not normal}.}
+\]
+
+::: {.proof}
+Normality of each factor is step <1>3, while nonnormality of the product is
+steps <1>4--<1>10.
+:::
+
+## 2. A normal space with a nonnormal subspace
+
+<1>12. The Sorgenfrey line is completely regular Hausdorff.
+
+::: {.proof}
+The Sorgenfrey line is normal by step <1>3 and Hausdorff. Every normal
+Hausdorff space is completely regular by Urysohn's lemma.
+:::
+
+<1>13. Therefore
+\[
+Y=\mathbb S^2
+\]
+is completely regular Hausdorff.
+
+::: {.proof}
+Products of completely regular spaces are completely regular, and products
+of Hausdorff spaces are Hausdorff.
+:::
+
+<1>14. By the Tychonoff embedding theorem proved in the preceding problem,
+\(Y\) embeds in a compact Hausdorff space \(X\).
+
+::: {.proof}
+Every completely regular Hausdorff space embeds in a cube
+\[
+[0,1]^{C(Y,[0,1])},
+\]
+which is compact Hausdorff.
+:::
+
+<1>15. The ambient space \(X\) is normal, but the embedded subspace \(Y\) is
+not normal.
+
+::: {.proof}
+Compact Hausdorff spaces are normal. The subspace \(Y\cong\mathbb S^2\) is
+not normal by step <1>11.
+:::
+
+<1>16. Thus this \(X\) and \(Y\subseteq X\) answer part \(2\).
+
+::: {.proof}
+Step <1>15 gives exactly the requested phenomenon.
+:::
+
+## 3. Infinite compact spaces
+
+<1>17. The interval
+\[
+\boxed{[0,1]}
+\]
+is an infinite compact Hausdorff space with no isolated points.
+
+::: {.proof}
+It is compact by Heine--Borel. Every neighborhood of every point of
+\([0,1]\) contains another point of the interval, so no point is isolated.
+:::
+
+<1>18. The space
+\[
+\boxed{
+K=\{0\}\cup\{1/n:n\in\mathbb N\}}
+\]
+is infinite and compact.
+
+::: {.proof}
+It is a closed and bounded subset of \(\mathbb R\), hence compact by
+Heine--Borel.
+:::
+
+<1>19. Every point \(1/n\) is isolated in \(K\).
+
+::: {.proof}
+Choose an ordinary open interval around \(1/n\) small enough to contain no
+other point of the sequence and not \(0\). Its intersection with \(K\) is
+the singleton \(\{1/n\}\).
+:::
+
+<1>20. The set of isolated points
+\[
+\{1/n:n\in\mathbb N\}
+\]
+is dense in \(K\).
+
+::: {.proof}
+Its closure contains all sequence points and also the limit point \(0\).
+Thus its closure is all of \(K\).
+:::
+
+## 4. Compact with a non-first-countable point
+
+Let \(D\) be an uncountable discrete space and let
+\[
+D^*=D\cup\{\infty\}
+\]
+be its one-point compactification.
+
+<1>21. The space \(D^*\) is infinite compact Hausdorff.
+
+::: {.proof}
+The one-point compactification of a locally compact noncompact Hausdorff
+space is compact Hausdorff. An uncountable discrete space is locally compact,
+Hausdorff, and noncompact.
+:::
+
+<1>22. The point \(\infty\) has no countable local base.
+
+::: {.proof}
+As in the previous problem, neighborhoods of \(\infty\) are complements of
+finite subsets of \(D\).
+
+If
+\[
+U_1,U_2,\dots
+\]
+were a countable local base, choose finite \(F_n\subseteq D\) with
+\[
+D^*-F_n\subseteq U_n.
+\]
+The union
+\[
+F=\bigcup_nF_n
+\]
+is countable, so choose
+\[
+d\in D-F.
+\]
+Then
+\[
+V=D^*-\{d\}
+\]
+is a neighborhood of \(\infty\), but \(d\in U_n\) for every \(n\), so no
+\(U_n\subseteq V\), contradiction.
+:::
+
+<1>23. Thus \(D^*\) answers part \(4\).
+
+::: {.proof}
+Use steps <1>21--<1>22.
+:::
+
+## 5. First countable but not second countable
+
+Let \(D\) be an uncountable discrete space.
+
+<1>24. The space \(D\) is first countable.
+
+::: {.proof}
+At each point \(x\in D\), the singleton
+\[
+\{x\}
+\]
+is a one-element local base.
+:::
+
+<1>25. The space \(D\) is not second countable.
+
+::: {.proof}
+Let \(\mathcal B\) be any basis. Since the singleton \(\{x\}\) is open, for
+each \(x\in D\) there must be some basis element \(B_x\) with
+\[
+x\in B_x\subseteq\{x\}.
+\]
+Hence
+\[
+B_x=\{x\}.
+\]
+Thus every singleton belongs to every basis, so every basis has cardinality
+at least \(|D|\), which is uncountable.
+:::
+
+<1>26. Therefore an uncountable discrete space answers part \(5\).
+
+::: {.proof}
+Combine steps <1>24--<1>25.
+:::
+
+## 6. Separable but not metrizable
+
+<1>27. The Sorgenfrey line is separable.
+
+::: {.proof}
+The rationals are dense, as in the preceding problem: every nonempty basic
+interval
+\[
+[a,b)
+\]
+contains a rational point.
+:::
+
+<1>28. The Sorgenfrey line is not second countable.
+
+::: {.proof}
+For each \(x\), any basis must contain some
+\[
+B_x
+\]
+with
+\[
+x\in B_x\subseteq[x,x+1).
+\]
+If \(x<y\), then \(B_x\ne B_y\), because \(B_y\subseteq[y,y+1)\) cannot
+contain \(x\). Thus a basis has at least continuum many elements.
+:::
+
+<1>29. Hence the Sorgenfrey line is not metrizable.
+
+::: {.proof}
+Every separable metric space is second countable. Steps <1>27--<1>28
+contradict this consequence.
+:::
+
+<1>30. Therefore the Sorgenfrey line answers part \(6\).
+
+::: {.proof}
+It is separable by step <1>27 and nonmetrizable by step <1>29.
+:::
+
+<1>31. Q.E.D.
+
+::: {.proof}
+Steps <1>11, <1>16, <1>17--<1>20, <1>23, <1>26, and <1>30 provide the six
+requested Hausdorff examples.
+:::
+:::
