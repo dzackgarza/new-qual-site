@@ -24,3 +24,268 @@ Determine
 for all $x\in\mathbb R$.
 Justify all manipulations.
 :::
+
+::: {.solution}
+Let
+\[
+h(y)
+\coloneqq
+\frac1{1+y^2}.
+\]
+Use the Fourier transform convention
+\[
+\widehat h(\xi)
+\coloneqq
+\int_{\mathbb R}h(y)e^{-i\xi y}\,dy.
+\]
+
+<1>1. The integral in the problem is
+\[
+(h*h)(x).
+\]
+
+::: {.proof}
+By definition of convolution,
+\[
+(h*h)(x)
+=
+\int_{\mathbb R}
+h(y)h(x-y)\,dy
+=
+\int_{\mathbb R}
+\frac{dy}
+{(1+y^2)(1+(x-y)^2)}.
+\]
+Since $h\in L^1(\mathbb R)$, the convolution is absolutely convergent for almost every $x$; in the present case the displayed integrand is continuous and decays like $|y|^{-4}$, so it is absolutely integrable for every fixed $x$.
+:::
+
+<1>2. For every $\xi\in\mathbb R$,
+\[
+\widehat h(\xi)
+=
+\pi e^{-|\xi|}.
+\]
+
+<2>1. If $\xi>0$, then
+\[
+\widehat h(\xi)
+=
+\pi e^{-\xi}.
+\]
+
+::: {.proof}
+Integrate
+\[
+F_\xi(z)
+=
+\frac{e^{-i\xi z}}{1+z^2}
+\]
+over the contour consisting of $[-R,R]$ and the lower semicircle, oriented clockwise. On the lower semicircle,
+\[
+|e^{-i\xi z}|
+=
+e^{\xi\operatorname{Im}z}
+\le1,
+\]
+while
+\[
+|1+z^2|
+\ge
+R^2-1.
+\]
+Thus the semicircle integral has absolute value at most
+\[
+\frac{\pi R}{R^2-1}
+\longrightarrow0.
+\]
+
+The only enclosed pole is $z=-i$, with residue
+\[
+\operatorname*{Res}_{z=-i}F_\xi
+=
+\frac{e^{-i\xi(-i)}}{-2i}
+=
+\frac{e^{-\xi}}{-2i}.
+\]
+Because the contour is clockwise, the residue theorem gives
+\[
+\int_{-\infty}^{\infty}
+\frac{e^{-i\xi y}}{1+y^2}\,dy
+=
+-2\pi i
+\frac{e^{-\xi}}{-2i}
+=
+\pi e^{-\xi}.
+\]
+:::
+
+<2>2. If $\xi<0$, then
+\[
+\widehat h(\xi)
+=
+\pi e^{\xi}.
+\]
+
+::: {.proof}
+Use the upper semicircle instead. Since $\xi<0$ and $\operatorname{Im}z\ge0$ there,
+\[
+|e^{-i\xi z}|
+=
+e^{\xi\operatorname{Im}z}
+\le1,
+\]
+so the semicircle contribution again tends to zero. The enclosed pole is $z=i$, whose residue is
+\[
+\operatorname*{Res}_{z=i}F_\xi
+=
+\frac{e^{-i\xi i}}{2i}
+=
+\frac{e^{\xi}}{2i}.
+\]
+The positively oriented residue theorem gives
+\[
+\widehat h(\xi)
+=
+2\pi i
+\frac{e^{\xi}}{2i}
+=
+\pi e^{\xi}.
+\]
+:::
+
+<2>3. If $\xi=0$, then
+\[
+\widehat h(0)=\pi.
+\]
+
+::: {.proof}
+Directly,
+\[
+\widehat h(0)
+=
+\int_{-\infty}^{\infty}
+\frac{dy}{1+y^2}
+=
+\left[\arctan y\right]_{-\infty}^{\infty}
+=
+\pi.
+\]
+:::
+
+<2>4. Q.E.D.
+
+::: {.proof}
+Steps <2>1 through <2>3 combine to give
+\[
+\widehat h(\xi)
+=
+\pi e^{-|\xi|}
+\]
+for all real $\xi$.
+:::
+
+<1>3. The Fourier transform of the convolution is
+\[
+\widehat{h*h}(\xi)
+=
+\pi^2e^{-2|\xi|}.
+\]
+
+::: {.proof}
+Since $h\in L^1(\mathbb R)$, Fubini's theorem applies to the convolution-transform calculation and gives
+\[
+\widehat{h*h}
+=
+\widehat h\,\widehat h.
+\]
+Apply step <1>2.
+:::
+
+<1>4. For every $x\in\mathbb R$,
+\[
+(h*h)(x)
+=
+\frac1{2\pi}
+\int_{\mathbb R}
+\pi^2e^{-2|\xi|}
+e^{ix\xi}\,d\xi.
+\]
+
+::: {.proof}
+The function $h*h$ belongs to $L^1(\mathbb R)$ because $h\in L^1$, and step <1>3 gives
+\[
+\widehat{h*h}(\xi)
+=
+\pi^2e^{-2|\xi|}
+\in
+L^1(\mathbb R).
+\]
+Fourier inversion therefore gives the displayed formula at every point of continuity of $h*h$. Convolution of two $L^1$ functions is continuous, so the formula holds for every real $x$.
+:::
+
+<1>5. One has
+\[
+\int_{\mathbb R}
+e^{-2|\xi|}
+e^{ix\xi}\,d\xi
+=
+\frac4{x^2+4}.
+\]
+
+::: {.proof}
+Using symmetry,
+\[
+\begin{aligned}
+\int_{\mathbb R}
+e^{-2|\xi|}
+e^{ix\xi}\,d\xi
+&=
+2\operatorname{Re}
+\int_0^\infty
+e^{-(2-ix)\xi}\,d\xi\\
+&=
+2\operatorname{Re}
+\frac1{2-ix}\\
+&=
+2\cdot
+\frac2{4+x^2}\\
+&=
+\frac4{x^2+4}.
+\end{aligned}
+\]
+The integral is absolutely convergent because $e^{-2|\xi|}\in L^1$.
+:::
+
+<1>6. Therefore
+\[
+\boxed{
+\int_{-\infty}^{\infty}
+\frac{dy}
+{(1+y^2)(1+(x-y)^2)}
+=
+\frac{2\pi}{x^2+4}
+}
+\qquad
+(x\in\mathbb R).
+\]
+
+::: {.proof}
+By steps <1>1, <1>4, and <1>5,
+\[
+\begin{aligned}
+(h*h)(x)
+&=
+\frac{\pi^2}{2\pi}
+\frac4{x^2+4}\\
+&=
+\frac{2\pi}{x^2+4}.
+\end{aligned}
+\]
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 gives the requested value for every real $x$, and the preceding steps justify the contour, Fubini, convolution, and Fourier inversion manipulations.
+:::
+:::
