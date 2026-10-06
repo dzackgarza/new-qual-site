@@ -31,3 +31,186 @@ is false.
 
 (c) A sequence $(f_n)$ of real-valued functions $\mathbb R\to\mathbb R$ which converges pointwise but not uniformly.
 :::
+
+::: {.solution}
+<1>1. For part (a), take the universe to be
+\[
+\mathbb R
+\]
+and define
+\[
+P(x):
+x\ge0,
+\qquad
+Q(x):
+x\le0.
+\]
+
+::: {.proof}
+Every real number satisfies at least one of
+\[
+x\ge0
+\quad\text{or}\quad
+x\le0,
+\]
+so
+\[
+\forall x,[P(x)\lor Q(x)]
+\]
+is true.
+
+But
+\[
+P(-1)
+\]
+is false, so
+\[
+\forall x,P(x)
+\]
+is false.
+Likewise
+\[
+Q(1)
+\]
+is false, so
+\[
+\forall x,Q(x)
+\]
+is false.
+Hence
+\[
+[\forall x,P(x)]
+\lor
+[\forall x,Q(x)]
+\]
+is false.
+:::
+
+<1>2. For part (b), take
+\[
+\boxed{
+\sum_{n=1}^{\infty}
+\frac{(x-2)^n}{n,2^n}.
+}
+\]
+
+::: {.proof}
+The coefficients relative to the center
+\[
+2
+\]
+are
+\[
+a_n
+=
+\frac1{n2^n}.
+\]
+Since
+\[
+\limsup_{n\to\infty}
+|a_n|^{1/n}
+=
+\frac12,
+\]
+the radius of convergence is
+\[
+R=2.
+\]
+Thus the series converges absolutely for
+\[
+0<x<4
+\]
+and diverges for
+\[
+x<0
+\quad\text{or}\quad
+x>4.
+\]
+
+At
+\[
+x=0,
+\]
+the series is
+\[
+\sum_{n=1}^{\infty}
+\frac{(-2)^n}{n2^n}
+=
+\sum_{n=1}^{\infty}
+\frac{(-1)^n}{n},
+\]
+which converges.
+
+At
+\[
+x=4,
+\]
+the series is
+\[
+\sum_{n=1}^{\infty}
+\frac{2^n}{n2^n}
+=
+\sum_{n=1}^{\infty}
+\frac1n,
+\]
+which diverges.
+Hence the domain of convergence is exactly
+\[
+[0,4).
+\]
+:::
+
+<1>3. For part (c), define
+\[
+\boxed{
+f_n(x)=\frac{x}{n}
+\qquad
+(x\in\mathbb R).
+}
+\]
+
+::: {.proof}
+For every fixed
+\[
+x\in\mathbb R,
+\]
+\[
+f_n(x)
+=
+\frac{x}{n}
+\longrightarrow
+0.
+\]
+Thus
+\[
+f_n\to0
+\]
+pointwise.
+
+The convergence is not uniform on
+\[
+\mathbb R.
+\]
+Indeed, for every
+\[
+n,
+\]
+\[
+\sup_{x\in\mathbb R}
+|f_n(x)|
+=
+\sup_{x\in\mathbb R}
+\frac{|x|}{n}
+=
++\infty.
+\]
+In particular the supremum does not tend to $0$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 provide the three requested examples and verify their
+properties.
+:::
+:::
