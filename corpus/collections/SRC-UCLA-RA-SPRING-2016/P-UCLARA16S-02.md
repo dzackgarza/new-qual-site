@@ -23,3 +23,210 @@ Let $f\in L^1(\mathbb R)$. Show that the series
 \]
 converges absolutely for almost all $x\in\mathbb R$.
 :::
+
+::: {.solution}
+Define
+\[
+G(x)
+\coloneqq
+\sum_{n=1}^{\infty}
+\frac1{\sqrt n}
+|f(x-\sqrt n)|.
+\]
+
+<1>1. For every integer $M$,
+\[
+\int_M^{M+1}G(x)\,dx
+<\infty.
+\]
+
+<2>1. Tonelli's theorem gives
+\[
+\int_M^{M+1}G(x)\,dx
+=
+\sum_{n=1}^{\infty}
+\frac1{\sqrt n}
+\int_{M-\sqrt n}^{M+1-\sqrt n}
+|f(y)|\,dy.
+\]
+
+::: {.proof}
+The summands defining $G$ are nonnegative and measurable. Hence Tonelli's theorem allows interchange of the sum and integral:
+\[
+\begin{aligned}
+\int_M^{M+1}G(x)\,dx
+&=
+\sum_{n=1}^{\infty}
+\frac1{\sqrt n}
+\int_M^{M+1}|f(x-\sqrt n)|\,dx.
+\end{aligned}
+\]
+The change of variables
+\[
+y=x-\sqrt n
+\]
+gives the stated formula.
+:::
+
+<2>2. For each integer $k\ge1$, the integers $n$ satisfying
+\[
+k\le\sqrt n<k+1
+\]
+are at most $2k+1$ in number, satisfy
+\[
+\frac1{\sqrt n}\le\frac1k,
+\]
+and have
+\[
+[M-\sqrt n,M+1-\sqrt n]
+\subset
+[M-k-1,M+1-k].
+\]
+
+::: {.proof}
+The condition is equivalent to
+\[
+k^2\le n<(k+1)^2,
+\]
+which contains exactly
+\[
+(k+1)^2-k^2=2k+1
+\]
+integer values of $n$. The weight bound follows from $\sqrt n\ge k$. The interval containment follows from
+\[
+k\le\sqrt n<k+1.
+\]
+:::
+
+<2>3. The contribution of all indices with
+\[
+k\le\sqrt n<k+1
+\]
+to the sum in step <2>1 is at most
+\[
+3
+\int_{M-k-1}^{M+1-k}|f(y)|\,dy.
+\]
+
+::: {.proof}
+By step <2>2, the group contains at most $2k+1$ terms, each with coefficient at most $1/k$, and every integration interval is contained in
+\[
+[M-k-1,M+1-k].
+\]
+Therefore the group is bounded by
+\[
+\frac{2k+1}{k}
+\int_{M-k-1}^{M+1-k}|f(y)|\,dy.
+\]
+Since
+\[
+\frac{2k+1}{k}
+\le3
+\qquad
+(k\ge1),
+\]
+the claim follows.
+:::
+
+<2>4. One has
+\[
+\sum_{k=1}^{\infty}
+\int_{M-k-1}^{M+1-k}|f(y)|\,dy
+\le
+2\|f\|_{L^1}.
+\]
+
+::: {.proof}
+Split each interval into two unit intervals:
+\[
+[M-k-1,M+1-k]
+=
+[M-k-1,M-k]
+\cup
+[M-k,M+1-k].
+\]
+As $k$ varies, the intervals in each of the two families have disjoint interiors. Hence
+\[
+\sum_{k=1}^{\infty}
+\int_{M-k-1}^{M-k}|f(y)|\,dy
+\le
+\|f\|_1
+\]
+and
+\[
+\sum_{k=1}^{\infty}
+\int_{M-k}^{M+1-k}|f(y)|\,dy
+\le
+\|f\|_1.
+\]
+Adding the two estimates gives the result.
+:::
+
+<2>5. Q.E.D.
+
+::: {.proof}
+Combining steps <2>1 through <2>4,
+\[
+\int_M^{M+1}G(x)\,dx
+\le
+6\|f\|_1
+<\infty.
+\]
+This proves step <1>1.
+:::
+
+<1>2. For every integer $M$,
+\[
+G(x)<\infty
+\]
+for almost every $x\in[M,M+1]$.
+
+::: {.proof}
+The function $G$ is nonnegative and measurable. By step <1>1 it is integrable on $[M,M+1]$. A nonnegative integrable function is finite almost everywhere.
+:::
+
+<1>3. One has
+\[
+G(x)<\infty
+\]
+for almost every $x\in\mathbb R$.
+
+::: {.proof}
+The real line is the countable union
+\[
+\mathbb R
+=
+\bigcup_{M\in\mathbb Z}[M,M+1].
+\]
+By step <1>2, the exceptional set in each interval has measure zero. A countable union of null sets is null.
+:::
+
+<1>4. Therefore
+\[
+\boxed{
+\sum_{n=1}^{\infty}
+\frac1{\sqrt n}f(x-\sqrt n)
+\text{ converges absolutely for almost every }x\in\mathbb R.
+}
+\]
+
+::: {.proof}
+By definition,
+\[
+G(x)
+=
+\sum_{n=1}^{\infty}
+\left|
+\frac1{\sqrt n}
+f(x-\sqrt n)
+\right|.
+\]
+Step <1>3 says this sum is finite for almost every $x$, which is exactly absolute convergence of the original series.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
+:::
