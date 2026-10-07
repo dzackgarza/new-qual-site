@@ -30,12 +30,12 @@ $$A_1 = \begin{pmatrix} -2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \q
 A_2 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
 A_3 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 1 \\ 0 & 0 & -2 \end{pmatrix}.$$
 ::: {.proof}
-three Jordan forms with eigenvalue $-2$ and Jordan blocks of sizes $(1,1,1)$, $(2,1)$, and $(3)$ respectively.
+These are the three Jordan forms with sole eigenvalue $-2$ and Jordan-block partitions $(1,1,1)$, $(2,1)$, and $(3)$, respectively.
 :::
 
 <1>3. Each has characteristic polynomial $(x + 2)^3$.
 ::: {.proof}
-all eigenvalues are $-2$ with algebraic multiplicity $3$.
+Each matrix is upper triangular with diagonal entries $-2,-2,-2$. Therefore each characteristic polynomial is $(x+2)^3$, and $-2$ is the only eigenvalue.
 :::
 
 <1>4. The minimal polynomials are:
@@ -43,16 +43,16 @@ all eigenvalues are $-2$ with algebraic multiplicity $3$.
 - $A_2$: $(x+2)^2$ (elementary divisors $(x+2)^2, x+2$);
 - $A_3$: $(x+2)^3$ (elementary divisor $(x+2)^3$).
 ::: {.proof}
-the minimal polynomial is the product of the elementary divisors (the invariant factors), and the elementary divisors are the $(x+2)^k$ for the Jordan blocks of size $k$.
+For a Jordan block $J_k(-2)$, the corresponding elementary divisor is $(x+2)^k$. Thus the elementary divisors are exactly those listed above. The minimal polynomial is the least common multiple of the elementary divisors, equivalently $(x+2)^m$ where $m$ is the largest Jordan-block size. Hence the three displayed minimal polynomials follow.
 :::
 
 <1>5. The three matrices are pairwise non-similar.
 ::: {.proof}
-similar matrices have the same elementary divisors (or the same rational canonical form / Jordan form); the three sets of elementary divisors are distinct, so no two are similar.
+Similar matrices have the same minimal polynomial. The three minimal polynomials in step <1>4 are distinct, so no two of $A_1,A_2,A_3$ are similar.
 :::
 
 <1>6. Q.E.D.
 ::: {.proof}
-<1>2–<1>5.
+Step <1>2 gives the matrices, step <1>3 gives their characteristic polynomials and verifies the eigenvalue condition, step <1>4 gives their elementary divisors and minimal polynomials, and step <1>5 proves pairwise nonsimilarity.
 :::
 :::
