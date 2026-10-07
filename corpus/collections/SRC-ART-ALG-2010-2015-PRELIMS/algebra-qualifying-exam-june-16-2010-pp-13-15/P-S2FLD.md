@@ -79,4 +79,10 @@ this field, and the field they generate is exactly
 $\mathbb Q(\sqrt2,\sqrt5)=\mathbb Q(s)$.
 This proves that it is the asserted splitting field.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), and step <1>2 answers part (b).
+:::
 :::
