@@ -102,4 +102,9 @@ An additive-group isomorphism is $\mathbb Z$-linear because it
 preserves integer multiples, so this is the required module
 isomorphism.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>2 answers part (a), and step <1>3 proves part (b).
+:::
 :::
