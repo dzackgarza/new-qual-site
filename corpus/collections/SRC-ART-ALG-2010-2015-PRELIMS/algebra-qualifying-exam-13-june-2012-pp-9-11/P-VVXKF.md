@@ -97,4 +97,11 @@ $|G|\geq|A_5|=5!/2=60$, a contradiction. The argument
 does not assume beforehand that the simple group is
 finite; finiteness follows from the faithful action.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 records the requested Sylow-count facts in part (a), and
+step <1>2 proves part (b).
+:::
 :::
