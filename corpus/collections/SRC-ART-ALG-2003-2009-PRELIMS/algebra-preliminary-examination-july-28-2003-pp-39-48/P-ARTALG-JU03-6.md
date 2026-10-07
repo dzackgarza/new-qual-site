@@ -142,4 +142,9 @@ include the basis elements, which generate $E$ as a field.
 Thus the splitting field of $g$ inside $E$ is exactly $E$.
 Step <1>1 then gives the prescribed six-element lattice.
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>2 rules out (a) and (b), step <1>3 proves that (c) and (d) work, and step <1>4 proves that (e) works.
+:::
 :::
