@@ -23,7 +23,42 @@ audit:
 :::
 
 ::: {.solution}
-Solution.
-(a) The order of σ is the lcm of the orders of each individual disjoint cycle comprising σ (and the order of an n-cycle is n). Since 21 = lcm(3 , 7), the element σ = (1 2 3)(4 5 6 7 8 9 10) has order 21. (b) Suppose S10 has a permutation σ of order 11. Then σ must have a disjoint cycle structure such that the lcm of the cycle lengths is 11. If the disjoint cycles making up σ have lengths𝓁1,...,𝓁 k, then 11 =o(σ) = lcm(𝓁1,...,𝓁 k). Thus each 𝓁i divides 11. Since 11 is prime, each 𝓁i = 1 or 11. But an 11-cycle requires 11 distinct symbols, which can’t happen since we are in S10. So 𝓁i = 1 for all i, which means that σ is the identity.
-Yet it has order 11. This contradiction shows that no element of S10 has order 11. Here is a more abstract problem.
+<1>1. The permutation
+$$
+\boxed{\sigma=(1\ 2\ 3)(4\ 5\ 6\ 7\ 8\ 9\ 10)}
+$$
+has order $21$ in $S_{10}$.
+::: {.proof}
+The two cycles are disjoint and have lengths $3$ and $7$. Therefore
+$$
+\operatorname{ord}(\sigma)
+=\operatorname{lcm}(3,7)
+=21.
+$$
+:::
+
+<1>2. No element of $S_{10}$ has order $11$.
+::: {.proof}
+Suppose, for contradiction, that $\tau\in S_{10}$ has order $11$. Write $\tau$ as a product of disjoint cycles with lengths
+$$
+\ell_1,\ldots,\ell_r.
+$$
+Then
+$$
+11=\operatorname{ord}(\tau)
+=\operatorname{lcm}(\ell_1,\ldots,\ell_r).
+$$
+Hence every $\ell_i$ divides $11$. Since $11$ is prime,
+$$
+\ell_i\in\{1,11\}
+$$
+for every $i$.
+
+But an $11$-cycle requires $11$ distinct symbols, impossible in $S_{10}$. Therefore every $\ell_i=1$, so $\tau$ is the identity permutation, which has order $1$, not $11$. Contradiction.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and step <1>2 proves part (b).
+:::
 :::
