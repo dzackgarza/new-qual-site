@@ -46,4 +46,9 @@ ba=ab.
 \]
 Thus every pair of elements commutes and $G$ is abelian.
 :::
+
+<1>2. Q.E.D.
+::: {.proof}
+Step <1>1 proves that $G$ is abelian, so choice (D) is correct.
+:::
 :::
