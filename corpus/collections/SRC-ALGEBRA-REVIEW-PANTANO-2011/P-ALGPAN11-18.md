@@ -54,4 +54,9 @@ r^5=s^2=e,
 \]
 Thus the group has the presentation of $D_5$ and has order $10$.
 :::
+
+<1>2. Q.E.D.
+::: {.proof}
+Step <1>1 identifies the symmetry group as the dihedral group of order $10$, so choice (E) is correct.
+:::
 :::
