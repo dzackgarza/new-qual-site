@@ -180,4 +180,9 @@ with degrees $2,2,3$ at successive steps. Here
 $\sqrt{-3}=2\zeta+1=ib$, so the middle biquadratic field
 may also be written $\mathbb Q(i,\sqrt3)$.
 :::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>4 proves part (a), and step <1>5 proves part (b), including the corresponding fixed fields.
+:::
 :::
