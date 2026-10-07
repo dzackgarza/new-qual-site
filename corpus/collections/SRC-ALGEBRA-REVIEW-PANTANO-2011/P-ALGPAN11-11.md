@@ -46,4 +46,9 @@ Hence $a^{-1}=e$, so $a=e$.
 ::: {.proof}
 If $a=e$, then $\varphi(x)=x$ for all $x$, so $\varphi$ is the identity homomorphism.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves necessity and step <1>2 proves sufficiency, so $\varphi$ is a homomorphism exactly when $a=e$.
+:::
 :::
