@@ -78,10 +78,15 @@ Thus every nonzero element of \(A\) is a unit, so \(A\) is a field.
 
 <1>3. Every prime ideal in a commutative Artinian ring is maximal.
 ::: {.proof}
-Let \(\mathfrak p\) be a prime ideal of the commutative Artinian ring \(A\). The quotient \(A/\mathfrak p\) is an integral domain. By <1>1, applied to the quotient map
+Let \(\mathfrak p\) be a prime ideal of the commutative Artinian ring \(A\). The quotient \(A/\mathfrak p\) is an integral domain. By step <1>1, applied to the quotient map
 \[
 A\twoheadrightarrow A/\mathfrak p,
 \]
-the quotient is Artinian. By <1>2 it is therefore a field. Hence \(\mathfrak p\) is maximal.
+the quotient is Artinian. By step <1>2 it is therefore a field. Hence \(\mathfrak p\) is maximal.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Steps <1>1--<1>3 prove parts (a)--(c), respectively.
 :::
 :::
