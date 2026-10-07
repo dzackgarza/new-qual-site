@@ -473,4 +473,9 @@ $2$-subgroup but not a normal Sylow $3$-subgroup, or neither.
 Steps <1>1, <1>3, and <1>4 classify these disjoint cases, with
 $42$, $4$, and $4$ distinct classes respectively. Their sum is $50$.
 :::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 gives the complete list and proves that it contains exactly $50$ isomorphism classes.
+:::
 :::
