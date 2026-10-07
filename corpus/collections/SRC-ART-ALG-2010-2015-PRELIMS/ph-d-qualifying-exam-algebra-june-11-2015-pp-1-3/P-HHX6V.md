@@ -117,4 +117,11 @@ $s(Q)$. If $s(u)\in N$, applying $q$ gives
 $u=q(s(u))=0$, and hence $s(u)=0$.
 Therefore $N\cap s(Q)=0$ and $M=N\oplus s(Q)$.
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), step <1>2 proves part (b), and
+steps <1>3--<1>4 prove part (c).
+:::
 :::
