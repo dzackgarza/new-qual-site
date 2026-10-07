@@ -76,4 +76,9 @@ distinct and invariant under isomorphism, so no two listed groups
 are isomorphic. The primary-decomposition argument proves that
 every abelian group of order $300$ appears on the list.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and step <1>2 gives the complete classification required in part (b).
+:::
 :::
