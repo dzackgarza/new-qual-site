@@ -80,4 +80,11 @@ has the same order and must equal $P$, which is normality.
 For $a=0$, the unique Sylow subgroup is the trivial group,
 so all statements above also cover primes not dividing $|G|$.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 state the Sylow theorems and the requested properties
+of the number $n_p$ of Sylow $p$-subgroups.
+:::
 :::
