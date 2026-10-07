@@ -59,4 +59,10 @@ $$
 The left side is nonzero modulo $p$ by hypothesis, so $|X^G|$ cannot
 be zero. Any $x\in X^G$ is fixed by every element of $G$, as required.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives a point of $X$ fixed by every element of $G$.
+:::
 :::
