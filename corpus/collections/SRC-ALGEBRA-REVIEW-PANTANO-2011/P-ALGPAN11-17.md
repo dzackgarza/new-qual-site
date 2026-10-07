@@ -50,4 +50,9 @@ C_4\times C_4,
 \]
 These are pairwise nonisomorphic and exhaust the possibilities.
 :::
+
+<1>2. Q.E.D.
+::: {.proof}
+Step <1>1 gives exactly three isomorphism types, so choice (D) is correct.
+:::
 :::
