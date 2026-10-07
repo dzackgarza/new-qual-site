@@ -94,4 +94,9 @@ It follows that $60\mid |H|$. Both original generators are even,
 so $H\subseteq A_5$, whose order is $5!/2=60$.
 Thus $H=A_5$.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>2 proves part (a), and step <1>3 proves part (b).
+:::
 :::
