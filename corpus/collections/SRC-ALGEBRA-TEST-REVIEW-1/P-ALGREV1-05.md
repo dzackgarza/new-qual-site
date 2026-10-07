@@ -76,4 +76,9 @@ $$
 If $R$ has an identity and subrings are required to share it, then
 $1r=r=r1$ for every $r$, so $1\in Z(R)$ as well.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
