@@ -93,4 +93,11 @@ $(j,\ell)$. Preservation by the identity map implies
 $\varphi_\ell(j)=j$ for every $j,\ell$. Thus every
 $\varphi_\ell$ is the identity automorphism, proving the converse.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the requested definition, and step <1>2 proves the
+equivalence in part (b).
+:::
 :::
