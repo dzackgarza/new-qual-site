@@ -83,4 +83,9 @@ The repeated roots of this polynomial do not make the identity
 extension inseparable: every element of the splitting field has
 a linear minimal polynomial over the base field.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), and step <1>2 proves part (b).
+:::
 :::
