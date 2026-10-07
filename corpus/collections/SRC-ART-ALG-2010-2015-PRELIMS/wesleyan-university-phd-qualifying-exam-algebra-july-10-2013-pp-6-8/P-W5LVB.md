@@ -154,4 +154,11 @@ the five pairs displayed in the first five rows.
 These cases are exhaustive and disjoint, and uniqueness
 in step <1>2 shows that no two rows are isomorphic.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), and steps <1>2--<1>3 classify all modules
+required in part (b).
+:::
 :::
