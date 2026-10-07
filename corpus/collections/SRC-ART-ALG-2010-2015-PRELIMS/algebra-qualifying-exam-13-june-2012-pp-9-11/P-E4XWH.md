@@ -140,4 +140,10 @@ has order $2$. Thus $H_2\cong C_2\times C_2$ and
 $H_1\cong C_4$ are not isomorphic, since an isomorphism
 preserves element orders.
 :::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>6 answer parts (a)--(f), respectively.
+:::
 :::
