@@ -137,4 +137,11 @@ Thus none of the three cubic fields is Galois, and the
 exhaustive list in step <1>3 proves that these decisions
 cover every subfield.
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), step <1>2 proves part (b), step <1>3 proves
+part (c), and step <1>4 proves part (d).
+:::
 :::
