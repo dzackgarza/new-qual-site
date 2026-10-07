@@ -101,4 +101,11 @@ $$
 \boxed{f(z)=z^3+iC,\qquad C\in\mathbb R.}
 $$
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves harmonicity, and steps <1>2--<1>3 give all harmonic
+conjugates and the resulting analytic functions.
+:::
 :::
