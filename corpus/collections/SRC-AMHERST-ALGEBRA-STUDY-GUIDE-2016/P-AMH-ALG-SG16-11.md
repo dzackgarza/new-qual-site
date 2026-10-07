@@ -28,6 +28,62 @@ That is, prove that the order of $H_2$ divides the order of $G_1$.
 :::
 
 ::: {.solution}
-Proof.
-Let K = Ker(φ) denote the kernel of φ. Then: • φ(G1)∼=G1/K by the fundamental theorem of group homomorphisms, so |φ(G1)| =|G1/K|. • We also know that|G1/K| =|G1|/|K|. Together, these two facts yield (1) |φ(G1)|·| K| =|G1|, and hence|φ(G1)| ⏐⏐⏐|G1| We also observe the following about H1 and H2: • Since H1⊆G1, we have H2 =φ(H1)⊆φ(G1). • By Lagrange’s Theorem, it follows that |H2| divides|φ(G1)|. Since|H2| divides|φ(G1)| by the last bullet, and |φ(G1)| divides|G1| by (1), it follows that |H2| divides|G1|. QED
+<1>1. The order of $\varphi(G_1)$ divides $|G_1|$.
+::: {.proof}
+Let
+$$
+K=\ker\varphi.
+$$
+By the first isomorphism theorem,
+$$
+\varphi(G_1)\cong G_1/K.
+$$
+Since $G_1$ is finite,
+$$
+|\varphi(G_1)|
+=|G_1/K|
+=\frac{|G_1|}{|K|}.
+$$
+Hence
+$$
+|\varphi(G_1)|\mid |G_1|.
+$$
+:::
+
+<1>2. The order of $H_2$ divides $|\varphi(G_1)|$.
+::: {.proof}
+By definition,
+$$
+H_2=\varphi(H_1).
+$$
+Since $H_1\le G_1$,
+$$
+H_2\le \varphi(G_1).
+$$
+The group $\varphi(G_1)$ is finite, so Lagrange's theorem gives
+$$
+|H_2|\mid |\varphi(G_1)|.
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{|H_2|\mid |G_1|}.
+$$
+::: {.proof}
+By step <1>2,
+$$
+|H_2|\mid |\varphi(G_1)|,
+$$
+and by step <1>1,
+$$
+|\varphi(G_1)|\mid |G_1|.
+$$
+Divisibility is transitive.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
