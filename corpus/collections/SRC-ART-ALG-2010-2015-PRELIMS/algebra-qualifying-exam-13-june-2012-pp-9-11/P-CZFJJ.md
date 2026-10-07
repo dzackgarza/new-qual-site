@@ -147,4 +147,11 @@ of an idempotent in a field is $0$ or $1$. Finally, a nilpotent
 pair has nilpotent coordinates, which must both be zero.
 Thus $B$ is reduced despite having nonzero zero divisors.
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 describe $\ZZ[x]/I$, and steps <1>1, <1>3, and <1>4
+describe $\ZZ[x]/J$.
+:::
 :::
