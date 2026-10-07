@@ -48,7 +48,7 @@ This is equivalent to \(\tau\) fixing \(\sigma(K)\) pointwise, which is precisel
 Then \(H\trianglelefteq G\).
 ::: {.proof}
 Fix \(\sigma\in G\). The restriction \(\sigma|_K:K\to E\) is an \(F\)-embedding.
-Because \(K/F\) is finite and normal, every \(F\)-embedding of \(K\) into an algebraic closure has image \(K\). Hence \(\sigma(K)=K\). By <1>1,
+Because \(K/F\) is finite and normal, every \(F\)-embedding of \(K\) into an algebraic closure has image \(K\). Hence \(\sigma(K)=K\). By step <1>1,
 \[
 \sigma H\sigma^{-1}
 =\operatorname{Gal}(E/\sigma(K))
@@ -70,14 +70,14 @@ Since \(H\trianglelefteq G\), \(\sigma H\sigma^{-1}=H\), and therefore
 \]
 :::
 
-<1>4. Under the hypothesis of <1>3, the extension \(K/F\) is normal.
+<1>4. Under the hypothesis of step <1>3, the extension \(K/F\) is normal.
 ::: {.proof}
 Let \(\iota:K\hookrightarrow\overline F\) be any \(F\)-embedding into an algebraic closure.
 Because \(E/K\) is algebraic, the embedding-extension theorem extends \(\iota\) to an \(F\)-embedding
 \[
 \widetilde\iota:E\hookrightarrow\overline F.
 \]
-The extension \(E/F\) is finite Galois, hence normal, so every \(F\)-embedding of \(E\) into \(\overline F\) has image \(E\). Thus \(\widetilde\iota\) is an element of \(G=\operatorname{Gal}(E/F)\). By <1>3,
+The extension \(E/F\) is finite Galois, hence normal, so every \(F\)-embedding of \(E\) into \(\overline F\) has image \(E\). Thus \(\widetilde\iota\) is an element of \(G=\operatorname{Gal}(E/F)\). By step <1>3,
 \[
 \iota(K)=\widetilde\iota(K)=K.
 \]
@@ -86,11 +86,16 @@ Therefore every \(F\)-embedding of \(K\) into \(\overline F\) preserves \(K\), w
 
 <1>5. Hence
 \[
-K/F\text{ is normal}
+\boxed{K/F\text{ is normal}
 \quad\Longleftrightarrow\quad
-\operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F).
+\operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F)}.
 \]
 ::: {.proof}
-Combine <1>2 and <1>4.
+Combine step <1>2 and step <1>4.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 is the required equivalence.
 :::
 :::
