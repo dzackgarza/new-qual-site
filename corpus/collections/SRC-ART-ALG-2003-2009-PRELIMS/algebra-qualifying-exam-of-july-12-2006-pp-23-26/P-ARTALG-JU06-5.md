@@ -91,4 +91,9 @@ with kernel $H$, and therefore induces an isomorphism
 $$
 G/H\cong\operatorname{Gal}(E/F).
 $$
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 gives the definition requested in part (a), and step <1>2 states the Fundamental Theorem of Galois Theory requested in part (b).
+:::
 :::
