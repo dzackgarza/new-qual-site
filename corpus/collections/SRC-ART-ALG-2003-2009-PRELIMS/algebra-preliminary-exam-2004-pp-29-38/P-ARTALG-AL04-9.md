@@ -114,4 +114,9 @@ step <1>1 is onto, proving $\operatorname{Gal}(K/F)\cong G$.
 For the trivial group the construction has $F=K$, so that case
 is included as well.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 constructs fields $F\subseteq K$ with $K/F$ Galois and $\operatorname{Gal}(K/F)\cong G$.
+:::
 :::
