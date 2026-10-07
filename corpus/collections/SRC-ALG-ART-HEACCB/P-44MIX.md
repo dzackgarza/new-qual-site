@@ -53,9 +53,9 @@ c=\prod_{r\in\mathcal R}r
 be the factorization of $c$ into distinct monic irreducibles in $k[x]$.
 Then the elementary divisors are
 \[
-p^3,\ p,\ q,
+\boxed{p^3,\ p,\ q,
 \qquad
-r^2,r^2,r^4\quad(r\in\mathcal R).
+r^2,r^2,r^4\quad(r\in\mathcal R)}.
 \]
 ::: {.proof}
 The four cyclic summands contribute respectively
@@ -67,7 +67,7 @@ Since $p,q$, and the irreducible factors $r$ of $c$ are pairwise coprime, the Ch
 
 <1>3. In the same generic case, the invariant factors are
 \[
-d_1=c^2,\qquad d_2=pc^2,\qquad d_3=p^3qc^4.
+\boxed{d_1=c^2,\qquad d_2=pc^2,\qquad d_3=p^3qc^4}.
 \]
 ::: {.proof}
 For the prime $p$, the nonzero elementary-divisor exponents are $1,3$, so after padding to three slots they are $0,1,3$.
@@ -78,13 +78,13 @@ Multiplying the prime powers slotwise gives the displayed invariant factors, and
 
 <1>4. Suppose $\operatorname{char}k=3$. Then $p=q$, and the elementary divisors are
 \[
-p^3,p,p,
+\boxed{p^3,p,p,
 \qquad
-r^2,r^2,r^4\quad(r\mid c\text{ irreducible}).
+r^2,r^2,r^4\quad(r\mid c\text{ irreducible})}.
 \]
 The invariant factors are
 \[
-pc^2,\qquad pc^2,\qquad p^3c^4.
+\boxed{pc^2,\qquad pc^2,\qquad p^3c^4}.
 \]
 ::: {.proof}
 In characteristic $3$, $c(1)=2\ne0$, so $p$ is coprime to $c$.
@@ -98,11 +98,11 @@ c=(x+2)(x-2)=qr.
 \]
 The elementary divisors are
 \[
-p^3,p,\qquad q^2,q^3,q^4,\qquad r^2,r^2,r^4,
+\boxed{p^3,p,\qquad q^2,q^3,q^4,\qquad r^2,r^2,r^4},
 \]
 and the invariant factors are
 \[
-c^2,\qquad pqc^2,\qquad p^3c^4.
+\boxed{c^2,\qquad pqc^2,\qquad p^3c^4}.
 \]
 ::: {.proof}
 The four original summands contribute
@@ -119,11 +119,11 @@ c=x^2+1=(x+1)^2=p^2,
 \]
 The elementary divisors are
 \[
-p^3,p^4,p^4,p^9,q,
+\boxed{p^3,p^4,p^4,p^9,q},
 \]
 and the invariant factors are
 \[
-p^3,\qquad p^4,\qquad p^4,\qquad p^9q.
+\boxed{p^3,\qquad p^4,\qquad p^4,\qquad p^9q}.
 \]
 ::: {.proof}
 The four summands become
@@ -135,6 +135,11 @@ Since $p$ and $q$ are coprime, the last summand splits into $R/(q)\oplus R/(p^4)
 
 <1>7. These cases exhaust all fields $k$.
 ::: {.proof}
-By <1>1, the only possible collisions among $p$, $q$, and the factors of $c$ occur in characteristics $2,3,5$. Outside those characteristics, <1>2--<1>3 apply regardless of whether $c$ is irreducible or splits.
+By step <1>1, the only possible collisions among $p$, $q$, and the factors of $c$ occur in characteristics $2,3,5$. Outside those characteristics, step <1>2 and step <1>3 apply regardless of whether $c$ is irreducible or splits.
+:::
+
+<1>8. Q.E.D.
+::: {.proof}
+Step <1>2 and step <1>3 give the generic case, while step <1>4, step <1>5, and step <1>6 give the exceptional characteristics; step <1>7 shows that these cases are exhaustive.
 :::
 :::
