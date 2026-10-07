@@ -31,51 +31,103 @@ Use this to show that there exists an $R$-basis $\{e_1, \dots, e_n\}$ of $M$ and
 :::
 
 ::: {.solution}
-**Goal:** Prove that finitely generated submodules of vector spaces over a PID are torsion-free hence free of rank $\le n$, and prove the simultaneous basis theorem for full-rank lattices.
+<1>1. Every finitely generated $R$-submodule $M\subseteq V$ is
+torsion-free.
 
-<1>1. Part (a): Finitely Generated $R$-Submodules of $V$ are Free of Rank $\le n$:
-    *Proof:*
-    <2>1. Let $M \subseteq V$ be a finitely generated $R$-submodule.
-    <2>2. **Torsion-freeness:**
-        If $r \in R \setminus \{0\}$ and $v \in M \subseteq V$ satisfy $r \cdot v = 0$, then in the $F$-vector space $V$, multiplying by $r^{-1} \in F$ gives $v = r^{-1}(r v) = 0$.
-        Thus $M$ is a **torsion-free $R$-module**.
-    <2>3. **Structure Theorem for Finitely Generated Modules over a PID:**
-        Every finitely generated module over a PID is isomorphic to $R^k \oplus T(M)$. Since $M$ is torsion-free ($T(M) = 0$), $M$ is **free of finite rank $k$**:
-        $$M \cong R^k \quad \text{for some } k \ge 0.$$
-    <2>4. **Rank Bound $k \le n$:**
-        Let $\{m_1, \dots, m_k\}$ be an $R$-basis of $M$.
-        If $\sum_{i=1}^k c_i m_i = 0$ for $c_i \in F$, clear denominators: choose $d \in R \setminus \{0\}$ such that $d c_i \in R$ for all $i$.
-        Then $\sum_{i=1}^k (d c_i) m_i = 0$ with $d c_i \in R$. Since $\{m_1, \dots, m_k\}$ is linearly independent over $R$, $d c_i = 0 \implies c_i = 0$.
-        Thus $\{m_1, \dots, m_k\}$ is linearly independent over the field $F$.
-        Since $\dim_F(V) = n$, any $F$-linearly independent subset has size at most $n$, so $k = \operatorname{rank}_R(M) \le n$.
+::: {.proof}
+If $0\ne r\in R$ and $v\in M$ satisfy $rv=0$, then $r$ is invertible
+in the fraction field $F$. Since $V$ is an $F$-vector space,
+$$
+v=r^{-1}(rv)=0.
+$$
+Thus $M$ has no nonzero torsion.
+:::
 
-<1>2. Part (b), Step 1: Existence of $\alpha \in R \setminus \{0\}$ with $\alpha M \subseteq N$:
-    *Proof:*
-    <2>1. Let $\{u_1, \dots, u_n\}$ be an $R$-basis for $M$, and $\{w_1, \dots, w_n\}$ an $R$-basis for $N$.
-    <2>2. Since $N$ has rank $n$, $\{w_1, \dots, w_n\}$ is an $F$-basis for $V$.
-    <2>3. Each basis vector $u_i \in M \subseteq V$ can be expanded in the $F$-basis $\{w_j\}$:
-        $$u_i = \sum_{j=1}^n \frac{a_{ij}}{b_{ij}} w_j \quad \text{with } a_{ij}, b_{ij} \in R, \; b_{ij} \ne 0.$$
-    <2>4. Let $\alpha = \prod_{i, j=1}^n b_{ij} \in R \setminus \{0\}$.
-    <2>5. Then for every $i \in \{1, \dots, n\}$:
-        $$\alpha u_i = \sum_{j=1}^n \left( \alpha \frac{a_{ij}}{b_{ij}} \right) w_j \in \sum_{j=1}^n R w_j = N.$$
-    <2>6. Since $\alpha u_i \in N$ for all generators $u_i$ of $M$, $\alpha M \subseteq N$.
+<1>2. The module $M$ is free of rank at most $n$.
 
-<1>3. Part (b), Step 2: Simultaneous Basis for $M$ and $N$:
-    *Proof:*
-    <2>1. Consider the submodule $\alpha M \subseteq N$.
-    <2>2. Both $\alpha M \cong M$ and $N$ are free $R$-modules of rank $n$, with $\alpha M \subseteq N$.
-    <2>3. By the **Submodule Structure Theorem for Free Modules over a PID** (or Smith Normal Form):
-        There exists an $R$-basis $\{w_1', \dots, w_n'\}$ of $N$ and nonzero ring elements $d_1, \dots, d_n \in R \setminus \{0\}$ such that:
-        $$\{d_1 w_1', d_2 w_2', \dots, d_n w_n'\} \text{ is an } R\text{-basis for } \alpha M.$$
-    <2>4. Dividing by $\alpha \in F^\times$, the elements:
-        $$e_i \coloneqq \frac{d_i}{\alpha} w_i' \quad (i = 1, \dots, n)$$
-        form an $R$-basis for $M = \frac{1}{\alpha}(\alpha M)$.
-    <2>5. Solving for $w_i'$ in terms of $e_i$:
-        $$w_i' = \left( \frac{\alpha}{d_i} \right) e_i = \beta_i e_i \quad \text{where } \beta_i \coloneqq \frac{\alpha}{d_i} \in F \setminus \{0\}.$$
-    <2>6. Since $\{w_1', \dots, w_n'\}$ is an $R$-basis of $N$, the set:
-        $$\{\beta_1 e_1, \beta_2 e_2, \dots, \beta_n e_n\}$$
-        is an $R$-basis of $N$, where $\{e_1, \dots, e_n\}$ is an $R$-basis of $M$.
+::: {.proof}
+By the structure theorem for finitely generated modules over the PID
+$R$, a finitely generated torsion-free module is free. Write
+$$
+M\cong R^k.
+$$
+Let $m_1,\ldots,m_k$ be an $R$-basis. If
+$$
+\sum_{i=1}^k c_i m_i=0
+$$
+with $c_i\in F$, choose $0\ne d\in R$ clearing all denominators, so
+$dc_i\in R$ for every $i$. Then
+$$
+\sum_{i=1}^k (dc_i)m_i=0.
+$$
+The $R$-linear independence of the $m_i$ gives $dc_i=0$, hence $c_i=0$.
+Therefore the same family is $F$-linearly independent in the
+$n$-dimensional vector space $V$, so $k\le n$.
+:::
 
-<1>4. Conclusion:
-    Torsion-free f.g. modules over a PID are free of rank $\le \dim(V)$; clearing denominators embeds $\alpha M \subseteq N$, and Smith Normal Form yields simultaneous bases $\{e_i\}$ of $M$ and $\{\beta_i e_i\}$ of $N$. Q.E.D.
+<1>3. If $M$ and $N$ are free of rank $n$ in $V$, then there is
+$0\ne\alpha\in R$ such that
+$$
+\alpha M\subseteq N.
+$$
+
+::: {.proof}
+Choose $R$-bases $u_1,\ldots,u_n$ of $M$ and
+$w_1,\ldots,w_n$ of $N$. By step <1>2 applied to $N$, the vectors
+$w_1,\ldots,w_n$ are $F$-linearly independent. Since there are $n$ of
+them, they form an $F$-basis of $V$.
+
+Write
+$$
+u_i=\sum_{j=1}^n c_{ij}w_j,
+\qquad c_{ij}\in F.
+$$
+Choose one nonzero $\alpha\in R$ clearing all finitely many denominators
+of the $c_{ij}$. Then $\alpha c_{ij}\in R$ for every $i,j$, so
+$$
+\alpha u_i
+=\sum_{j=1}^n (\alpha c_{ij})w_j\in N.
+$$
+Since the $u_i$ generate $M$, this gives $\alpha M\subseteq N$.
+:::
+
+<1>4. There exist an $R$-basis $e_1,\ldots,e_n$ of $M$ and nonzero
+$\beta_1,\ldots,\beta_n\in F$ such that
+$$
+\beta_1e_1,\ldots,\beta_ne_n
+$$
+is an $R$-basis of $N$.
+
+::: {.proof}
+By step <1>3, choose $0\ne\alpha\in R$ with
+$\alpha M\subseteq N$. Both $\alpha M$ and $N$ are free of rank $n$.
+The invariant-factor theorem for a full-rank submodule of a free module
+over a PID gives an $R$-basis
+$w_1',\ldots,w_n'$ of $N$ and nonzero elements
+$d_1,\ldots,d_n\in R$ such that
+$$
+d_1w_1',\ldots,d_nw_n'
+$$
+is an $R$-basis of $\alpha M$.
+
+Set
+$$
+e_i=\frac{d_i}{\alpha}w_i',
+\qquad
+\beta_i=\frac{\alpha}{d_i}.
+$$
+Because multiplication by $1/\alpha$ carries the basis of
+$\alpha M$ to a basis of $M$, the $e_i$ form an $R$-basis of $M$.
+Moreover,
+$$
+\beta_i e_i=w_i',
+$$
+so $\beta_1e_1,\ldots,\beta_ne_n$ is the chosen $R$-basis of $N$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>4 prove part (b).
+:::
 :::
