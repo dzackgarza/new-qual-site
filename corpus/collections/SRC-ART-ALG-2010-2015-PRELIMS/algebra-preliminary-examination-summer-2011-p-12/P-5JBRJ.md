@@ -131,4 +131,10 @@ send $A$ to each of $A,B,C$, as explicitly computed in
 step <1>4. The orbit of $A$ is all of $X$, proving
 transitivity on this three-element set.
 :::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 answer parts (a)--(e), respectively.
+:::
 :::
