@@ -86,4 +86,10 @@ $$
 \boxed{P^n=I.}
 $$
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required positive integer $n$.
+:::
 :::
