@@ -48,18 +48,23 @@ Because \(x\) normalizes \(N_G(P)\),
 \[
 xN_G(P)x^{-1}=N_G(P).
 \]
-Since \(P\le N_G(P)\), this implies \(xPx^{-1}\le N_G(P)\). Conjugation preserves order, so \(xPx^{-1}\) is a Sylow \(p\)-subgroup of \(N_G(P)\). By the uniqueness from <1>1, it must equal \(P\).
+Since \(P\le N_G(P)\), this implies \(xPx^{-1}\le N_G(P)\). Conjugation preserves order, so \(xPx^{-1}\) is a Sylow \(p\)-subgroup of \(N_G(P)\). By the uniqueness from step <1>1, it must equal \(P\).
 :::
 
 <1>4. Therefore
 \[
-N_G(N_G(P))=N_G(P).
+\boxed{N_G(N_G(P))=N_G(P)}.
 \]
 ::: {.proof}
-By <1>3, every element of \(N_G(N_G(P))\) normalizes \(P\), so
+By step <1>3, every element of \(N_G(N_G(P))\) normalizes \(P\), so
 \[
 N_G(N_G(P))\subseteq N_G(P).
 \]
-Combine this with <1>2.
+Combine this with step <1>2.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 is the required equality.
 :::
 :::
