@@ -24,14 +24,140 @@ c. Find an explicit monic polynomial $f(t) \in R[t]$ such that $f(x) = 0$.
 :::
 
 ::: {.solution}
-**(a)** Consider $z = \sum c_{ij}x^iy^j \in S$.
-Then $$a\cdot z = \sum c_{ij}\omega^{i-j}x^iy^j$$ So need $c_{ij}=0$ unless $i\equiv j \pmod 3$.
-$$b\cdot z = \sum c_{ji}x^iy^j$$ So need $c_{ij}=c_{ji}$ for all $i,j$.
+Put
+$$
+u=x^3+y^3,
+\qquad
+v=xy.
+$$
 
-Shows $R$ is spanned by $x^3+y^3$ and $xy$ (you can get any $x^{3n}+y^{3n}$ as monomials in these!). Hence $R = \mathbb{C}[x^3+y^3,xy]$.
+<1>1. Both $u$ and $v$ are $G$-invariant.
+::: {.proof}
+Since $\omega^3=1$,
+$$
+a\cdot u=(\omega x)^3+(\omega^{-1}y)^3=u,
+\qquad
+a\cdot v=(\omega x)(\omega^{-1}y)=v.
+$$
+The element $b$ interchanges $x$ and $y$, so it fixes both $u$ and $v$. Hence
+$$
+\CC[u,v]\subseteq S^G.
+$$
+:::
 
-**(b)** This is a general fact about invariants of finite groups.
-Given $z\in S$, consider $$f(t) = \prod_{g\in G}(t - g\cdot z)$$ It's monic in $R[t]$ with $z$ as a root $\Rightarrow$ integral.
+<1>2. If
+$$
+z=\sum_{i,j}c_{ij}x^iy^j\in S^G,
+$$
+then $c_{ij}=0$ unless $i\equiv j\pmod3$, and $c_{ij}=c_{ji}$.
+::: {.proof}
+Invariance under $a$ gives
+$$
+z=a\cdot z
+=\sum_{i,j}c_{ij}\omega^{i-j}x^iy^j.
+$$
+Linear independence of the monomials implies
+$$
+c_{ij}\ne0\Longrightarrow \omega^{i-j}=1
+\Longrightarrow i\equiv j\pmod3.
+$$
 
-**(c)** Use the recipe from (b)! $$f(t) = \prod_{g\in G}(t-g\cdot x) = (t-x)(t-\omega x)(t-\omega^2 x)(t-y)(t-\omega y)(t-\omega^2 y)$$ $$= (t^3-x^3)(t^3-y^3) = t^6 - (x^3+y^3)t^3 + x^3y^3$$
+Invariance under $b$ gives
+$$
+z=b\cdot z
+=\sum_{i,j}c_{ij}y^ix^j
+=\sum_{i,j}c_{ji}x^iy^j,
+$$
+so $c_{ij}=c_{ji}$.
+:::
+
+<1>3. Every $G$-invariant polynomial lies in $\CC[u,v]$.
+::: {.proof}
+By step <1>2, an invariant polynomial is a linear combination of diagonal monomials
+$$
+x^iy^i=v^i
+$$
+and symmetric pairs
+$$
+x^iy^j+x^jy^i
+$$
+with $i>j$ and $i-j=3m$ for some $m\ge1$. Such a pair equals
+$$
+v^j(x^{3m}+y^{3m}).
+$$
+
+Set
+$$
+P_m=x^{3m}+y^{3m}.
+$$
+Then
+$$
+P_0=2,
+\qquad
+P_1=u,
+$$
+and, because $x^3$ and $y^3$ are the roots of
+$$
+T^2-uT+v^3,
+$$
+the power sums satisfy
+$$
+P_m=uP_{m-1}-v^3P_{m-2}
+\qquad(m\ge2).
+$$
+Induction gives $P_m\in\CC[u,v]$ for every $m$. Therefore every invariant monomial combination from step <1>2 belongs to $\CC[u,v]$.
+:::
+
+<1>4. Hence
+$$
+\boxed{R=S^G=\CC[x^3+y^3,xy]}.
+$$
+::: {.proof}
+Step <1>1 gives one inclusion and step <1>3 gives the reverse inclusion.
+:::
+
+<1>5. The extension $R\subseteq S$ is integral.
+::: {.proof}
+For arbitrary $z\in S$, define
+$$
+F_z(t)=\prod_{g\in G}(t-g\cdot z).
+$$
+This polynomial is monic. For every $h\in G$, applying $h$ to its coefficients merely permutes the factors because
+$$
+h\cdot(g\cdot z)=(hg)\cdot z.
+$$
+Thus all coefficients lie in $S^G=R$, so
+$$
+F_z(t)\in R[t].
+$$
+The factor corresponding to the identity shows $F_z(z)=0$. Hence every $z\in S$ is integral over $R$.
+:::
+
+<1>6. An explicit monic polynomial in $R[t]$ annihilating $x$ is
+$$
+\boxed{f(t)=t^6-(x^3+y^3)t^3+(xy)^3}.
+$$
+::: {.proof}
+The $G$-orbit of $x$ is
+$$
+\{x,\omega x,\omega^2x,y,\omega y,\omega^2y\}.
+$$
+Therefore the orbit polynomial from step <1>5 is
+$$
+\begin{aligned}
+f(t)
+&=(t-x)(t-\omega x)(t-\omega^2x)
+  (t-y)(t-\omega y)(t-\omega^2y)\\
+&=(t^3-x^3)(t^3-y^3)\\
+&=t^6-(x^3+y^3)t^3+x^3y^3\\
+&=t^6-ut^3+v^3.
+\end{aligned}
+$$
+By step <1>4, its coefficients lie in $R$, and clearly $f(x)=0$.
+:::
+
+<1>7. Q.E.D.
+::: {.proof}
+Step <1>4 proves part (a), step <1>5 proves part (b), and step <1>6 proves part (c).
+:::
 :::
