@@ -122,4 +122,9 @@ Therefore
 \boxed{\text{there is no simple group of order }56}.
 \]
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), and step <1>2 proves part (b).
+:::
 :::
