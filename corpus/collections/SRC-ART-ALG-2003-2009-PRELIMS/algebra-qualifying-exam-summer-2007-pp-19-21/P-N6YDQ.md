@@ -103,4 +103,9 @@ Both groups have five elements, making the map an isomorphism.
 In particular the automorphism fixing $F$ and sending
 $\alpha$ to $\zeta\alpha$ generates the group.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), step <1>3 proves part (b), and step <1>2 proves part (c).
+:::
 :::
