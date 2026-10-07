@@ -122,4 +122,9 @@ Consequently
 \boxed{\bigcup_{x\in G}x^{-1}Hx\ne G}.
 \]
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), and step <1>2 proves part (b).
+:::
 :::
