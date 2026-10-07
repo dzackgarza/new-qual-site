@@ -160,4 +160,10 @@ $$
 So every maximal linearly independent subset of $V$ has the same number of
 elements.
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and steps <1>2--<1>4 prove part (b).
+:::
 :::
