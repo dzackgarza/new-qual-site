@@ -99,4 +99,9 @@ theorem in $K^\times$ gives $a^{2^d}=a$ for each nonzero $a\in K$,
 and the equation holds at zero as well. Hence $K\subseteq K_d$.
 Both fields have $2^d$ elements, so they are equal.
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), while steps <1>2--<1>4 give all possible subfield orders in part (b), realize each one, and prove uniqueness.
+:::
 :::
