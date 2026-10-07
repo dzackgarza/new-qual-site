@@ -68,4 +68,9 @@ $$
 $$
 In particular, the intersection of any two normal subgroups is normal.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
