@@ -110,4 +110,9 @@ therefore sends all $f_i$ to $0$, but sends $x_j\in I$ to the nonzero
 polynomial $t$. This contradicts $I=(f_1,\ldots,f_s)$. Thus $R$ has
 an ideal that is not finitely generated and is not Noetherian.
 :::
+
+<1>6. Q.E.D.
+::: {.proof}
+Steps <1>1--<1>5 give the requested examples for parts (a)--(e), respectively.
+:::
 :::
