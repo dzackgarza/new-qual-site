@@ -77,4 +77,10 @@ and the same count applies.
 Every subgroup normalizes itself. Steps <1>1 and <1>2 give
 $[N_P(H):H]=|X^H|\geq p>1$, so $H\ne N_P(H)$.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required strict containment $H<N_P(H)$.
+:::
 :::
