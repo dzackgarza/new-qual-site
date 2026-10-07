@@ -19,12 +19,44 @@ Show that $\PP^n\cross \PP^m$ is rational.
 :::
 
 ::: {.solution}
-Take
-\[
-[x_0: x_1: \ldots: x_n] \cross [y_0: y_1: \ldots: y_m] \mapsto \left[1: \frac{x_1}{x_0}: \frac{x_2}{x_0}: \ldots: \frac{x_n}{x_0}: \frac{y_1}{y_0}: \frac{y_2}{y_0}: \ldots: \frac{y_m}{y_0}\right]
-.\]
-This has inverse
-\[
-[1: z_1: \ldots: z_{n+m}] \mapsto [1: z_1: \ldots: z_n] \cross [1: z_{n+1}: \ldots: z_{n+m}]
-.\]
+<1>1. The dense open subset
+$$
+U=D_+(x_0)\cross D_+(y_0)\subset\PP^n\cross\PP^m
+$$
+is isomorphic to $\AA^{n+m}$.
+::: {.proof}
+On $U$, define affine coordinates
+$$
+u_i=\frac{x_i}{x_0}\quad(1\le i\le n),
+\qquad
+v_j=\frac{y_j}{y_0}\quad(1\le j\le m).
+$$
+Then
+$$
+([x_0:\ldots:x_n],[y_0:\ldots:y_m])
+\longmapsto
+(u_1,\ldots,u_n,v_1,\ldots,v_m)
+$$
+is an isomorphism
+$$
+U\xrightarrow{\sim}\AA^{n+m},
+$$
+with inverse
+$$
+(u_1,\ldots,u_n,v_1,\ldots,v_m)
+\longmapsto
+([1:u_1:\ldots:u_n],[1:v_1:\ldots:v_m]).
+$$
+Both $D_+(x_0)\subset\PP^n$ and $D_+(y_0)\subset\PP^m$ are nonempty dense opens, so $U$ is dense in $\PP^n\cross\PP^m$.
+:::
+
+<1>2. $\PP^n\cross\PP^m$ is $\boxed{\text{rational}}$.
+::: {.proof}
+By step <1>1, $\PP^n\cross\PP^m$ contains a dense open subset isomorphic to $\AA^{n+m}$. Since $\AA^{n+m}$ is a dense open subset of $\PP^{n+m}$, the varieties $\PP^n\cross\PP^m$ and $\PP^{n+m}$ are birational. Hence $\PP^n\cross\PP^m$ is rational.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 is the required conclusion.
+:::
 :::
