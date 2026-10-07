@@ -121,4 +121,10 @@ Thus $F_n$ is a field of cardinality $p^n$. Step <1>2 gives
 $\operatorname{Aut}(F_n)\cong C_n$, realizing the prescribed
 cyclic group. For $n=1$ the group is trivial.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and steps <1>2--<1>3 prove part (b).
+:::
 :::
