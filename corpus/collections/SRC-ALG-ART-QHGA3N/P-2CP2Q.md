@@ -55,9 +55,14 @@ Since $-135<0$, it is not a square in $\QQ$.
 For an irreducible separable cubic over a field of characteristic different from $2$,
 the Galois group acts transitively on the three roots, so it is either $A_3$ or $S_3$.
 It is contained in $A_3$ exactly when the discriminant is a square in the base field. By
-<1>1 and <1>2, the polynomial is irreducible and its discriminant is not a square, hence
+step <1>1 and step <1>2, the polynomial is irreducible and its discriminant is not a square, hence
 \[
-\operatorname{Gal}(f/\QQ)\cong S_3.
+\boxed{\operatorname{Gal}(f/\QQ)\cong S_3}.
 \]
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 gives the requested Galois group.
 :::
 :::
