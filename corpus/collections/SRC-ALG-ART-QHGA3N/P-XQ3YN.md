@@ -43,7 +43,7 @@ which is reducible unless \(f\) has degree \(0\), a contradiction. Therefore \(f
 
 <1>2. Hence if every element of \(k\) is a \(p\)-th power, then \(k\) is perfect.
 ::: {.proof}
-A field is perfect exactly when every irreducible polynomial over it is separable. This holds by <1>1.
+A field is perfect exactly when every irreducible polynomial over it is separable. This holds by step <1>1.
 :::
 
 <1>3. Conversely, suppose some \(a\in k\) is not a \(p\)-th power. Then
@@ -70,16 +70,21 @@ and over an algebraic closure it equals \((x-\alpha)^p\), so its unique root has
 
 <1>5. Therefore, if \(k\) is perfect, every element of \(k\) is a \(p\)-th power.
 ::: {.proof}
-If some \(a\in k\) were not a \(p\)-th power, then by <1>3 and <1>4 there would be an irreducible inseparable polynomial over \(k\), contradicting perfectness.
+If some \(a\in k\) were not a \(p\)-th power, then by step <1>3 and step <1>4 there would be an irreducible inseparable polynomial over \(k\), contradicting perfectness.
 :::
 
 <1>6. Hence
 \[
-k\text{ is perfect}
+\boxed{k\text{ is perfect}
 \iff
-\forall x\in k\ \exists y\in k\text{ with }y^p=x.
+\forall x\in k\ \exists y\in k\text{ with }y^p=x}.
 \]
 ::: {.proof}
-Combine <1>2 and <1>5.
+Combine step <1>2 and step <1>5.
+:::
+
+<1>7. Q.E.D.
+::: {.proof}
+Step <1>6 is the required equivalence.
 :::
 :::
