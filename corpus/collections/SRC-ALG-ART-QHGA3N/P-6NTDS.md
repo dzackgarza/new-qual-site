@@ -50,18 +50,52 @@ Theorems used in the proof:
 :::
 
 ::: {.solution}
-> Proof due to Paco Adajar.
+<1>1. The center has order $p$:
+$$
+|Z(G)|=p.
+$$
+::: {.proof}
+Because $G$ is a nontrivial finite $p$-group, its center is nontrivial. By Lagrange's theorem,
+$$
+|Z(G)|\in\{p,p^2,p^3\}.
+$$
+The value $p^3$ would give $Z(G)=G$, contradicting that $G$ is nonabelian. If $|Z(G)|=p^2$, then
+$$
+|G/Z(G)|=p,
+$$
+so $G/Z(G)$ is cyclic. A group whose quotient by its center is cyclic is abelian, again a contradiction. Therefore $|Z(G)|=p$.
+:::
 
-Since $Z(G)$ is a subgroup of $G$ and $|G| = p^3$, by Lagrange's theorem, $|Z(G)| \in \{1, p, p^2, p^3\}$.
+<1>2. The quotient $G/Z(G)$ is abelian, so
+$$
+[G,G]\le Z(G).
+$$
+::: {.proof}
+By step <1>1,
+$$
+|G/Z(G)|=p^2.
+$$
+Every group of order $p^2$ is abelian. Since the commutator subgroup is the smallest normal subgroup with abelian quotient, the abelianity of $G/Z(G)$ implies
+$$
+[G,G]\le Z(G).
+$$
+:::
 
-Since we stipulated that $G$ is nonabelian, $|Z(G)| \ne p^3$.
-Also, since $G$ is a $p$-group, it has nontrivial center, so $|Z(G)| \ne 1$.
-Finally, by the $G/Z(G)$ theorem, $|Z(G)| \ne p^2$: if $|Z(G)| = p^2$, then $|G/Z(G)| = p$ and so $G/Z(G)$ would be cyclic, meaning that $G$ is abelian.
-Hence, $|Z(G)| = p$.
+<1>3. The commutator subgroup is nontrivial.
+::: {.proof}
+If $[G,G]=1$, then $G$ would be abelian, contrary to the hypothesis.
+:::
 
-Then, since $|Z(G)| = p$, we have that $|G/Z(G)| = p^2$, and so $G/Z(G)$ is abelian.
-Thus, $[G, G] \in Z(G)$.
-Since $|Z(G)| = p$, then $|[G,G]| \in \{ 1, p\}$ again by Lagrange's theorem.
-If $|[G,G]| = p$ then $[G,G] = Z(G)$ and we are done.
-And, indeed, we must have $|[G,G]| = p$, because $G$ is nonabelian and so $|[G,G]| \ne 1$.
+<1>4. Therefore
+$$
+\boxed{[G,G]=Z(G)}.
+$$
+::: {.proof}
+By step <1>2, $[G,G]$ is a subgroup of the group $Z(G)$ of prime order $p$. By step <1>3, it is nontrivial. Hence it must equal all of $Z(G)$.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 is the required equality.
+:::
 :::
