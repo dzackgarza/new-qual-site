@@ -49,4 +49,12 @@ so $G_{22}\times G_{33}$ is not cyclic.
 :::
 
 Hence the answer is $\boxed{\text{(D)}}$.
+::: {.proof}
+Step <1>1 shows that (A), (B), (C), and (E) are cyclic and that (D) is not.
+:::
+
+<1>2. Q.E.D.
+::: {.proof}
+The preceding conclusion identifies the unique noncyclic choice.
+:::
 :::
