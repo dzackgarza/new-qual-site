@@ -69,4 +69,10 @@ and the definition of $p$ imply $q\geq p$. This is a
 contradiction. Hence $m=1$ and $H=K$. By step <1>1,
 $H$ is normal in $G$.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves the required normality.
+:::
 :::
