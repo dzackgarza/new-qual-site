@@ -132,4 +132,10 @@ $t\in Z_G(Q)=Q$ by step <1>3. An element of order $2$ cannot
 belong to a group of order $3$. This contradiction excludes
 $|C|=14$, leaving $|C|=28$ as required.
 :::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 establish parts (a)--(e), respectively.
+:::
 :::
