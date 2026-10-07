@@ -64,4 +64,9 @@ kernel $C$. Its fibers are cosets of $C$, each of size $p$;
 hence $|N|=p|M|=p^i$. This constructs the required subgroup for
 every $i$ and completes the induction.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 proves the required existence for every $1\le i\le k$.
+:::
 :::
