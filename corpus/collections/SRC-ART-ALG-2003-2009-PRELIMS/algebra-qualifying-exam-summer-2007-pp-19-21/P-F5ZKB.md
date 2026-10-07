@@ -27,30 +27,104 @@ c. Give an example of an infinite field of characteristic $3$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that finite fields have prime-power cardinality, determine all subfields of $\mathbb{F}_{3^{12}}$, and provide an explicit example of an infinite field of characteristic $3$.
+<1>1. Every finite field has cardinality $p^n$ for some prime $p$ and integer $n\ge1$.
+::: {.proof}
+Let $F$ be finite. Its characteristic cannot be $0$, because then its prime subfield would be isomorphic to the infinite field $\QQ$. Hence
+$$
+\operatorname{char}(F)=p
+$$
+for some prime $p$, and the prime subfield is $\FF_p$.
 
-<1>1. Part (a): Any finite field $F$ has cardinality $|F| = p^n$ for a prime $p$ and integer $n \ge 1$.
-    *Proof:*
-    <2>1. The characteristic $\operatorname{char}(F)$ of any field $F$ is either $0$ or a prime $p$. If $\operatorname{char}(F) = 0$, the prime subfield is isomorphic to $\mathbb{Q}$, which is infinite, contradicting the finiteness of $F$. Thus $\operatorname{char}(F) = p$ for some prime $p$.
-    <2>2. The prime subfield of $F$ is $K_0 \cong \mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$.
-    <2>3. $F$ is a vector space over its prime subfield $\mathbb{F}_p$ under field addition and scalar multiplication by elements of $\mathbb{F}_p$.
-    <2>4. Since $F$ is finite, $F$ is finite-dimensional as an $\mathbb{F}_p$-vector space. Let $n = \dim_{\mathbb{F}_p}(F) \ge 1$.
-    <2>5. Any $n$-dimensional vector space over $\mathbb{F}_p$ is isomorphic to $\mathbb{F}_p^n$ as an $\mathbb{F}_p$-vector space, hence has cardinality $|\mathbb{F}_p|^n = p^n$.
+Thus $F$ is a vector space over $\FF_p$. Since $F$ is finite, this vector space has finite dimension, say
+$$
+n=[F:\FF_p]\ge1.
+$$
+An $n$-dimensional vector space over the $p$-element field has exactly $p^n$ elements. Therefore
+$$
+\boxed{|F|=p^n}.
+$$
+:::
 
-<1>2. Part (b): Subfields of $\mathbb{F}_{3^{12}}$.
-    *Proof:*
-    <2>1. For a finite field $\mathbb{F}_{p^m}$, every subfield is a finite field containing $\mathbb{F}_p$, so its degree $d$ over $\mathbb{F}_p$ must divide $m = [\mathbb{F}_{p^m} : \mathbb{F}_p]$ by the tower law.
-    <2>2. Conversely, for each positive divisor $d \mid m$, the polynomial $x^{p^d} - x$ divides $x^{p^m} - x$ in $\mathbb{F}_p[x]$, and the roots of $x^{p^d} - x$ in $\mathbb{F}_{p^m}$ form the unique subfield of size $p^d$, isomorphic to $\mathbb{F}_{p^d}$.
-    <2>3. Here $p = 3$ and $m = 12$. The positive divisors of $12$ are $d \in \{1, 2, 3, 4, 6, 12\}$.
-    <2>4. Therefore, the subfields of $\mathbb{F}_{3^{12}}$ are precisely the six subfields isomorphic to:
-        $$\mathbb{F}_3, \quad \mathbb{F}_{3^2} = \mathbb{F}_9, \quad \mathbb{F}_{3^3} = \mathbb{F}_{27}, \quad \mathbb{F}_{3^4} = \mathbb{F}_{81}, \quad \mathbb{F}_{3^6} = \mathbb{F}_{729}, \quad \mathbb{F}_{3^{12}} = \mathbb{F}_{531441}.$$
+<1>2. Every subfield of $\FF_{3^{12}}$ has order $3^d$ for some divisor $d\mid12$.
+::: {.proof}
+Every subfield contains the prime field $\FF_3$. If
+$$
+K\subseteq\FF_{3^{12}}
+$$
+and
+$$
+d=[K:\FF_3],
+$$
+then the tower law gives
+$$
+12=[\FF_{3^{12}}:K],d.
+$$
+Hence $d\mid12$, and step <1>1 gives
+$$
+|K|=3^d.
+$$
+The positive divisors of $12$ are
+$$
+1,2,3,4,6,12.
+$$
+:::
 
-<1>3. Part (c): Example of an infinite field of characteristic $3$.
-    *Proof:*
-    <2>1. Consider the field of rational functions in one indeterminate $t$ over $\mathbb{F}_3$:
-        $$K = \mathbb{F}_3(t) = \left\{ \frac{f(t)}{g(t)} : f(t), g(t) \in \mathbb{F}_3[t], \; g(t) \neq 0 \right\}.$$
-    <2>2. $K$ is the field of fractions of the polynomial ring $\mathbb{F}_3[t]$, which is an integral domain, so $K$ is a field.
-    <2>3. The characteristic of $K$ is $3$, since $1_K + 1_K + 1_K = 3 \cdot 1_{\mathbb{F}_3} = 0$.
-    <2>4. $K$ contains the monomials $\{t^k : k \in \mathbb{N}\}$, which are pairwise distinct in $\mathbb{F}_3[t] \subset K$, so $K$ is infinite.
-    *(Alternatively, the algebraic closure $\overline{\mathbb{F}}_3 = \bigcup_{n=1}^\infty \mathbb{F}_{3^n}$ is also an infinite field of characteristic $3$.)* Q.E.D.
+<1>3. For each divisor $d\mid12$, there is exactly one subfield of order $3^d$.
+::: {.proof}
+Inside $F=\FF_{3^{12}}$, define
+$$
+F_d=\{a\in F:a^{3^d}=a\}.
+$$
+Because $d\mid12$, the polynomial
+$$
+X^{3^d}-X
+$$
+divides
+$$
+X^{3^{12}}-X.
+$$
+The latter has every element of $F$ as a root, and has derivative $-1$, so it splits into distinct linear factors over $F$. Hence $X^{3^d}-X$ also splits into $3^d$ distinct linear factors in $F[X]$. Thus $|F_d|=3^d$.
+
+The Frobenius power map
+$$
+a\longmapsto a^{3^d}
+$$
+is a field endomorphism in characteristic $3$, so its fixed set $F_d$ is closed under addition, multiplication, additive inverses, and inverses of nonzero elements. Therefore $F_d$ is a subfield.
+
+If $K\subseteq F$ is any subfield of order $3^d$, then every nonzero $a\in K$ satisfies
+$$
+a^{3^d-1}=1
+$$
+by Lagrange's theorem, so every $a\in K$ satisfies $a^{3^d}=a$. Hence
+$$
+K\subseteq F_d.
+$$
+Both fields have $3^d$ elements, so $K=F_d$. This proves uniqueness.
+:::
+
+<1>4. Therefore the subfields of $\FF_{3^{12}}$ are exactly
+$$
+\boxed{\FF_3,\ \FF_9,\ \FF_{27},\ \FF_{81},\ \FF_{729},\ \FF_{3^{12}}}.
+$$
+::: {.proof}
+Combine step <1>2 with the existence and uniqueness from step <1>3.
+:::
+
+<1>5. The field
+$$
+\boxed{\FF_3(t)}
+$$
+is an infinite field of characteristic $3$.
+::: {.proof}
+The polynomial ring $\FF_3[t]$ is an integral domain, so its field of fractions $\FF_3(t)$ is a field. Its prime subfield is $\FF_3$, hence its characteristic is $3$. The elements
+$$
+1,t,t^2,t^3,\ldots
+$$
+are pairwise distinct, so the field is infinite.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), step <1>4 answers part (b), and step <1>5 answers part (c).
+:::
 :::
