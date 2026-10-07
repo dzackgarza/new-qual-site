@@ -60,4 +60,10 @@ $G\subseteq KN_G(P)$. The reverse inclusion holds
 because both factors are subsets of the group $G$ and
 their products lie in $G$. Hence $G=KN_G(P)$.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves the required equality.
+:::
 :::
