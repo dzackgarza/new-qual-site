@@ -122,4 +122,9 @@ Thus \(k[[t]]\) has the unique maximal ideal
 \]
 Since \((t)\ne0\), the ring is not a field, and it satisfies the three equivalent conditions.
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>1, step <1>2, and step <1>3 prove the equivalence, and step <1>4 gives the requested example.
+:::
 :::
