@@ -22,48 +22,56 @@ Show that the characteristic of an integral domain must be either zero or a prim
 :::
 
 ::: {.solution}
-<1>1. Let $R$ be an integral domain with identity $1_R \neq 0$, and let $n = \operatorname{char}(R)$.
+Let $R$ be an integral domain with identity $1_R\ne0$.
+
+<1>1. If $\operatorname{char}(R)>0$, then $\operatorname{char}(R)$ is prime.
 ::: {.proof}
-setup and definition of an integral domain (non-zero ring with no zero divisors).
+Write
+$$
+n=\operatorname{char}(R)>0.
+$$
+By definition, $n$ is the least positive integer such that
+$$
+n\cdot1_R=0.
+$$
+Since $1_R\ne0$, one has $n\ge2$.
+
+Suppose, for contradiction, that $n$ is composite. Then
+$$
+n=ab
+$$
+for integers $a,b$ with
+$$
+1<a<n,
+\qquad
+1<b<n.
+$$
+In $R$,
+$$
+(a\cdot1_R)(b\cdot1_R)
+=(ab)\cdot1_R
+=n\cdot1_R
+=0.
+$$
+Because $R$ is an integral domain, it has no zero divisors. Hence
+$$
+a\cdot1_R=0
+\qquad\text{or}\qquad
+b\cdot1_R=0.
+$$
+Either alternative contradicts the minimality of $n$. Thus $n$ is prime.
 :::
 
-<1>2. If $n = 0$, the claim holds.
+<1>2. Therefore
+$$
+\boxed{\operatorname{char}(R)=0\text{ or }\operatorname{char}(R)\text{ is prime}}.
+$$
 ::: {.proof}
-zero is one of the allowed alternatives.
+If the characteristic is zero, this is one of the two stated alternatives. If it is positive, step <1>1 shows that it is prime.
 :::
 
-<1>3. If $n > 0$, then $n$ must be a prime integer.
-<2>1. By definition of characteristic, $n$ is the smallest positive integer such that $n \cdot 1_R = 0_R$.
+<1>3. Q.E.D.
 ::: {.proof}
-definition of characteristic for a ring with unity.
+Step <1>2 is the required conclusion.
 :::
-<2>2. Since $1_R \neq 0_R$, $1 \cdot 1_R = 1_R \neq 0_R$, so $n \ge 2$.
-::: {.proof}
-<1>1. <2>3. Suppose for contradiction that $n$ is composite: $n = ab$ for integers $a, b$ with $1 < a < n$ and $1 < b < n$.
-:::
-::: {.proof}
-hypothesis for contradiction.
-:::
-<2>4. In the ring $R$, $(a \cdot 1_R)(b \cdot 1_R) = (ab) \cdot 1_R = n \cdot 1_R = 0_R$.
-::: {.proof}
-ring multiplication of integer multiples of unity.
-:::
-<2>5. Since $R$ is an integral domain, it has no zero divisors, so $a \cdot 1_R = 0_R$ or $b \cdot 1_R = 0_R$.
-::: {.proof}
-definition of an integral domain.
-:::
-<2>6. But $1 \le a < n$ and $1 \le b < n$, so $a \cdot 1_R = 0_R$ or $b \cdot 1_R = 0_R$ contradicts the minimality of $n$ in <2>1.
-::: {.proof}
-$n$ is the least positive integer annihilating $1_R$.
-:::
-<2>7. Thus $n$ cannot be composite, so $n$ is prime.
-::: {.proof}
-<2>2 and <2>6.
-:::
-
-<1>4. Conclusion: The characteristic of an integral domain is either zero or a prime.
-::: {.proof}
-<1>2 and <1>3.
-:::
-Q.E.D.
 :::
