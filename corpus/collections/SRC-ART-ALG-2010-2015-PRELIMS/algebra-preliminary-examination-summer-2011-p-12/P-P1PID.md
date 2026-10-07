@@ -63,4 +63,11 @@ with $a\ne0$ gives $1=ac$. This makes $a$ a unit, a
 contradiction. Hence every nonzero element is invertible,
 and the nonzero commutative unital ring $R$ is a field.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves that every nonzero element of $R$ is invertible, which
+is exactly the field property.
+:::
 :::
