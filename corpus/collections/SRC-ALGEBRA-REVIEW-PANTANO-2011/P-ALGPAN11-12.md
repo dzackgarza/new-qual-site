@@ -66,4 +66,14 @@ The element $1=1+0\sqrt5$ lies in III, but
 does not, since its coefficients satisfy $2^2+0^2=4>1$.
 Thus III is not closed under addition.
 :::
+
+<1>4. Therefore exactly I and II are subrings of $\RR$.
+::: {.proof}
+Step <1>1 and step <1>2 prove that I and II are subrings, while step <1>3 rules out III.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 gives the requested classification.
+:::
 :::
