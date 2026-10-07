@@ -110,6 +110,11 @@ definition also requiring $\delta(\alpha)\leq\delta(\alpha\beta)$
 for nonzero $\alpha,\beta$, that condition follows from
 multiplicativity and $\delta(\beta)\geq1$.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 identifies the ring of integers, step <1>2 establishes the Euclidean function, and step <1>3 proves Euclidean division.
+:::
 :::
 
 ::: {.remark}
