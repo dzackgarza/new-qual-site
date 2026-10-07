@@ -116,4 +116,9 @@ polynomial. Their minimal polynomials are their largest invariant
 factors, of degrees four and three respectively [@DF04]. They are
 therefore not similar, and step <1>2 proves completeness.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and step <1>3 gives all possibilities in part (b).
+:::
 :::
