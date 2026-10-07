@@ -25,17 +25,17 @@ Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(
 ::: {.solution}
 Let
 \[
-K=\mathbb Q(\zeta_n),
+K=\QQ(\zeta_n),
 \qquad
 \alpha=\zeta_n+\zeta_n^{-1}.
 \]
 Then
 \[
-\operatorname{Gal}(K/\mathbb Q)\cong (\mathbb Z/n\mathbb Z)^\times,
+\operatorname{Gal}(K/\QQ)\cong (\ZZ/n\ZZ)^\times,
 \]
-where \(a\in(\mathbb Z/n\mathbb Z)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^a\).
+where \(a\in(\ZZ/n\ZZ)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^a\).
 
-<1>1. For \(a\in(\mathbb Z/n\mathbb Z)^\times\),
+<1>1. For \(a\in(\ZZ/n\ZZ)^\times\),
 \[
 \sigma_a(\alpha)=\zeta_n^a+\zeta_n^{-a}.
 \]
@@ -43,7 +43,7 @@ where \(a\in(\mathbb Z/n\mathbb Z)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^
 This follows directly from the definition of \(\sigma_a\).
 :::
 
-<1>2. The stabilizer of \(\alpha\) in \(\operatorname{Gal}(K/\mathbb Q)\) is exactly
+<1>2. The stabilizer of \(\alpha\) in \(\operatorname{Gal}(K/\QQ)\) is exactly
 \[
 \{\sigma_1,\sigma_{-1}\}.
 \]
@@ -72,24 +72,29 @@ which means \(a\equiv\pm1\pmod n\). Since \(n\ge3\), the residues \(1\) and \(-1
 \frac{\varphi(n)}2.
 \]
 ::: {.proof}
-The Galois group has order \(\varphi(n)\). By orbit-stabilizer and <1>2,
+The Galois group has order \(\varphi(n)\). By orbit-stabilizer and step <1>2,
 \[
 |\operatorname{Orb}(\alpha)|
-=\frac{|\operatorname{Gal}(K/\mathbb Q)|}{|\operatorname{Stab}(\alpha)|}
+=\frac{|\operatorname{Gal}(K/\QQ)|}{|\operatorname{Stab}(\alpha)|}
 =\frac{\varphi(n)}2.
 \]
 :::
 
 <1>4. Therefore
 \[
-[\mathbb Q(\zeta_n+\zeta_n^{-1}):\mathbb Q]
-=\frac{\varphi(n)}2.
+\boxed{[\QQ(\zeta_n+\zeta_n^{-1}):\QQ]
+=\frac{\varphi(n)}2}.
 \]
 ::: {.proof}
-Because \(K/\mathbb Q\) is Galois, the distinct \(\mathbb Q\)-conjugates of \(\alpha\) inside \(K\) are exactly its Galois orbit. The degree of the minimal polynomial of \(\alpha\) over \(\mathbb Q\) is therefore the orbit size from <1>3. Since
+Because \(K/\QQ\) is Galois, the distinct \(\QQ\)-conjugates of \(\alpha\) inside \(K\) are exactly its Galois orbit. The degree of the minimal polynomial of \(\alpha\) over \(\QQ\) is therefore the orbit size from step <1>3. Since
 \[
-[\mathbb Q(\alpha):\mathbb Q]=\deg m_\alpha,
+[\QQ(\alpha):\QQ]=\deg m_\alpha,
 \]
 the claimed formula follows.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 is the required degree formula.
 :::
 :::
