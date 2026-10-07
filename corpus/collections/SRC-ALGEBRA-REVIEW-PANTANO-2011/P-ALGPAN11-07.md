@@ -65,4 +65,12 @@ Thus $-1$ has no inverse.
 :::
 
 Hence exactly I and II hold.
+::: {.proof}
+Step <1>1 proves I, step <1>2 proves II, and step <1>3 disproves III.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+The preceding conclusion gives the requested truth values.
+:::
 :::
