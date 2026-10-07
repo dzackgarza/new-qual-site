@@ -84,4 +84,9 @@ $$
 The primary decomposition theorem also shows that no two groups in this list
 are isomorphic.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 gives the complete classification up to isomorphism.
+:::
 :::
