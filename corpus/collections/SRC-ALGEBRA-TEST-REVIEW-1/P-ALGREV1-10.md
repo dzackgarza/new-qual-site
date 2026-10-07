@@ -71,4 +71,9 @@ $$
 For finitely many rings, the direct sum and direct product are the same
 underlying ring.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 proves the asserted equality, so the statement is true.
+:::
 :::
