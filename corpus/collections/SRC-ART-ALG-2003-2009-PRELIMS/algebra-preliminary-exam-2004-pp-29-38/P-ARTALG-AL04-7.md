@@ -71,4 +71,9 @@ Every maximal ideal $M$ is proper and so contains no units.
 Consequently $M\subseteq I$. Since $M$ is maximal and $I$
 is proper, $M=I$. This proves uniqueness and hence locality.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>2 proves the characterization of units in a local ring, and step <1>3 proves the converse.
+:::
 :::
