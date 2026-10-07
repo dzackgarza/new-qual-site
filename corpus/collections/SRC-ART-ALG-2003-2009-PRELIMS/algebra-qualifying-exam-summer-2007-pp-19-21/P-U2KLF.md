@@ -114,4 +114,9 @@ $x^3-7$. It contains one root of that irreducible polynomial, but
 the polynomial does not split there. Thus the extension is not
 normal and cannot be Galois. This covers all the remaining fields.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 answers part (c).
+:::
 :::
