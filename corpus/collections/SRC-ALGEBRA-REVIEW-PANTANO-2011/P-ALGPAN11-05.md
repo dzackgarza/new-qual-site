@@ -50,4 +50,9 @@ Therefore among
 \]
 exactly $p,pq,p^q$ lie in $J$.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 exhibits a proper subgroup containing $p,pq,p^q$, and step <1>2 shows that the other listed elements are excluded. Hence choice (E) is correct.
+:::
 :::
