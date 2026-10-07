@@ -141,4 +141,11 @@ $p\mid2$, hence $p=2$.
 Steps <1>4 and <1>5 establish irreducibility in both surviving
 cases, completing every part.
 :::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves part (a), step <1>4 proves part (b), step <1>5 proves
+part (c), and step <1>6 proves part (d).
+:::
 :::
