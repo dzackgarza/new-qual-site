@@ -42,74 +42,102 @@ e. $x^{13}-x-1$ over $\mathbf{F}_{13}$.
 :::
 
 ::: {.solution}
-<1>1. Over $\mathbf C$, with $\zeta=e^{2\pi i/5}$, the factorization is
+<1>1. For part (a), if $\zeta=e^{2\pi i/5}$, then over $\CC$,
 $$
-x^5-1=\prod_{j=0}^{4}(x-\zeta^j).
+x^5-1=\boxed{\prod_{j=0}^{4}(x-\zeta^j)}.
 $$
 
 ::: {.proof}
-The five numbers $\zeta^j$ are distinct and each has fifth power $1$.
-Thus the product of their linear factors divides $x^5-1$; both polynomials
-are monic of degree $5$, so they are equal. A polynomial of degree $1$
-over a field cannot be a product of two positive-degree polynomials, so
-every displayed factor is irreducible.
+The numbers $1,\zeta,\zeta^2,\zeta^3,\zeta^4$ are the five distinct roots of
+$x^5-1$. Hence the displayed product is a monic degree-$5$ polynomial with
+the same roots as $x^5-1$, so the two polynomials are equal. Each factor has
+degree $1$, hence is irreducible over the field $\CC$.
 :::
 
-<1>2. Over $\mathbf Q$, the factorization is
+<1>2. For part (b), over $\QQ$,
 $$
-x^6-1=(x-1)(x+1)(x^2+x+1)(x^2-x+1).
+x^6-1
+=\boxed{(x-1)(x+1)(x^2+x+1)(x^2-x+1)}.
 $$
 
 ::: {.proof}
-Factor $x^6-1=(x^3-1)(x^3+1)$ and use the sum and difference of cubes.
-The linear factors are irreducible. The two quadratic factors have
-discriminant $-3$, so neither has a rational root. A reducible quadratic
-over a field has a linear factor and hence a root, proving their
-irreducibility.
+The identities
+$$
+x^6-1=(x^3-1)(x^3+1)
+$$
+and
+$$
+x^3-1=(x-1)(x^2+x+1),
+\qquad
+x^3+1=(x+1)(x^2-x+1)
+$$
+give the factorization. The linear factors are irreducible. Each quadratic
+factor has discriminant $-3$, which is not a square in $\QQ$, so neither has
+a root in $\QQ$; therefore both quadratics are irreducible.
 :::
 
-<1>3. The polynomial $x^7+3x^5-6x^3+9x-15$ is itself irreducible over
-$\mathbf Q$, so there are no further factors.
+<1>3. For part (c), the complete factorization over $\QQ$ is the polynomial
+itself:
+$$
+\boxed{x^7+3x^5-6x^3+9x-15}.
+$$
 
 ::: {.proof}
-Its leading coefficient is $1$, all other coefficients are divisible by
-$3$, and its constant coefficient is not divisible by $9$. Here is the
-Eisenstein argument in this case. By Gauss's lemma, a proper factorization
-over $\mathbf Q$ would give monic positive-degree factors $g,h\in\mathbf Z[x]$
-[@DF04]. Modulo $3$, their product is $x^7$, so each reduction is a
-positive power of $x$. Consequently $3$ divides both $g(0)$ and $h(0)$,
-forcing $9\mid g(0)h(0)=-15$, a contradiction.
+Eisenstein's criterion applies with $p=3$: every nonleading coefficient is
+divisible by $3$, while the constant coefficient $-15$ is not divisible by
+$9$. Hence the polynomial is irreducible in $\QQ[x]$ [@DF04].
 :::
 
-<1>4. Over $\mathbf F_{11}$, the factorization is
+<1>4. For part (d), over $\FF_{11}$,
 $$
-x^{11}-x=\prod_{a\in\mathbf F_{11}}(x-a).
+x^{11}-x
+=\boxed{\prod_{a\in\FF_{11}}(x-a)}.
 $$
 
 ::: {.proof}
-Every nonzero $a$ belongs to the multiplicative group of order $10$, so
-$a^{10}=1$ and $a^{11}=a$. The identity also holds at $a=0$. Thus the
-eleven distinct field elements give eleven distinct linear factors of
-the monic degree-$11$ polynomial. Their product is the polynomial, and
-each factor is irreducible.
+For $a\in\FF_{11}^{\times}$, Fermat's theorem gives $a^{10}=1$, so
+$a^{11}=a$; the same identity is immediate for $a=0$. Thus every element of
+$\FF_{11}$ is a root of $x^{11}-x$. These are $11$ distinct roots of a monic
+degree-$11$ polynomial, so their linear factors multiply to the polynomial.
+Each linear factor is irreducible over $\FF_{11}$.
 :::
 
-<1>5. The polynomial $x^{13}-x-1$ is irreducible over $\mathbf F_{13}$.
+<1>5. For part (e), $x^{13}-x-1$ is irreducible over $\FF_{13}$, so its
+complete factorization is
+$$
+\boxed{x^{13}-x-1}.
+$$
 
 ::: {.proof}
-Choose a root $\alpha$ in an algebraic closure, and let
-$d=[\mathbf F_{13}(\alpha):\mathbf F_{13}]$. Its minimal polynomial divides
-the given polynomial, so $1\leq d\leq13$. The root equation gives
-$\alpha^{13}=\alpha+1$. Induction, using the Frobenius homomorphism in
-characteristic $13$, gives
+Let $\alpha$ be a root in an algebraic closure of $\FF_{13}$ and set
 $$
-\alpha^{13^j}=\alpha+j\cdot1\qquad(j\geq0).
+d=[\FF_{13}(\alpha):\FF_{13}].
 $$
-The field $\mathbf F_{13}(\alpha)$ has $13^d$ elements, so every element
-of it satisfies $z^{13^d}=z$. Taking $j=d$ in the displayed identity
-therefore gives $d\cdot1=0$, and hence $13\mid d$. Thus $d=13$.
-The degree-$13$ minimal polynomial divides the monic polynomial
-$x^{13}-x-1$ of the same degree, so they are equal. This proves
-irreducibility and completes all five factorizations.
+The minimal polynomial of $\alpha$ divides $x^{13}-x-1$, hence
+$1\le d\le13$. Since
+$$
+\alpha^{13}=\alpha+1,
+$$
+induction using the Frobenius homomorphism in characteristic $13$ gives
+$$
+\alpha^{13^j}=\alpha+j
+\qquad(j\ge0),
+$$
+where $j$ denotes its image in the prime field. The field
+$\FF_{13}(\alpha)$ has $13^d$ elements, so
+$$
+\alpha^{13^d}=\alpha.
+$$
+Taking $j=d$ in the preceding formula yields $d=0$ in $\FF_{13}$, hence
+$13\mid d$. Because $1\le d\le13$, one has $d=13$. Therefore the minimal
+polynomial of $\alpha$ has degree $13$ and divides the monic degree-$13$
+polynomial $x^{13}-x-1$; the two polynomials are equal.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 give the complete factorizations and irreducibility
+justifications required in parts (a)--(e).
 :::
 :::
