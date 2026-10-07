@@ -56,7 +56,7 @@ The eigenvalues $2$ and $1$ have algebraic multiplicity $1$. Direct row reductio
 
 <1>3. Therefore the Jordan canonical form is
 \[
-J=J_2(-1)\oplus[1]\oplus[2]
+\boxed{J=J_2(-1)\oplus[1]\oplus[2]}
 =
 \begin{pmatrix}
 -1&1&0&0\\
@@ -80,13 +80,13 @@ The size-$2$ Jordan block at $-1$ forces the exponent $2$ of $x+1$, while the ei
 
 <1>5. Hence $A$ has a single invariant factor, namely $m_A(x)$, so its rational canonical form is the companion matrix
 \[
-C(m_A)=
+\boxed{C(m_A)=
 \begin{pmatrix}
 0&0&0&-2\\
 1&0&0&-1\\
 0&1&0&3\\
 0&0&1&1
-\end{pmatrix}.
+\end{pmatrix}}.
 \]
 ::: {.proof}
 The invariant factors multiply to the characteristic polynomial and the largest invariant factor is the minimal polynomial. Since these two polynomials are equal, there can be only one nonconstant invariant factor. For
@@ -94,5 +94,10 @@ The invariant factors multiply to the characteristic polynomial and the largest 
 m_A(x)=x^4-x^3-3x^2+x+2,
 \]
 the displayed matrix is its standard companion matrix.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>3 gives the Jordan canonical form, and step <1>5 gives the rational canonical form.
 :::
 :::
