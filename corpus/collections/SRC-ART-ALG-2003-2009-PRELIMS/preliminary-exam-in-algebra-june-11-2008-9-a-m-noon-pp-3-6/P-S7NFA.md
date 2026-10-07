@@ -44,6 +44,10 @@ $$
 The roots may repeat. The generation condition is essential: merely
 containing all the roots does not make an extension a splitting field.
 
+::: {.proof}
+This is the definition of the splitting field of $g$ over $F$.
+:::
+
 <1>2. Every degree-$n$ polynomial over any field has a splitting field
 of degree at most $n!$ over that field; in particular the given $E$
 satisfies $[E:F]\leq n!$.
@@ -76,5 +80,12 @@ $$
 $$
 The argument uses neither separability nor an identification of the
 extension degree with the order of an automorphism group.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), and step <1>2 proves part (b) without invoking
+the Fundamental Theorem of Galois Theory.
 :::
 :::
