@@ -106,4 +106,9 @@ in $G$. They are Sylow subgroups of $G$ because $105$ contains each
 of $5$ and $7$ to the first power. By conjugacy, they are also the
 unique Sylow subgroups of $G$ for their respective primes.
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), step <1>2 proves part (b), step <1>3 proves part (c), and step <1>4 proves part (d).
+:::
 :::
