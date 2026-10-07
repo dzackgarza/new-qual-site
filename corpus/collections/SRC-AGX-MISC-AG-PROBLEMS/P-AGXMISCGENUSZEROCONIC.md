@@ -20,11 +20,43 @@ Give an explanation for your answer.
 :::
 
 ::: {.solution}
-Sketch: yes.
-Apply the Riemann--Roch theorem, which guarantees the existence of a nonconstant meromorphic function with a simple pole at exactly one point.
-Argue that this meromorphic function identifies the curve with $\PP^1$, and using that fact, embed the curve as a conic in the plane in any convenient way.
-For example, if $t_0, t_1$ are projective coordinates on $\PP^1$, let $z_0=t_0^2$, $z_1=t_0 t_1$, $z_2=t_1^2$ be the map to $\PP^2$.
-The conic is then $z_0 z_2=z_1^2$.
+Let $C$ be a smooth projective curve over $\CC$ with $g(C)=0$.
 
-Alternatively, one can consider the complete linear system attached to the anticanonical divisor.
+<1>1. $C\cong\PP^1$.
+::: {.proof}
+Fix a point $p\in C$. By Riemann--Roch,
+$$
+\ell(p)-\ell(K_C-p)=\deg(p)+1-g(C)=2.
+$$
+Since
+$$
+\deg(K_C-p)=2g(C)-2-1=-3<0,
+$$
+one has $\ell(K_C-p)=0$, so $\ell(p)=2$. Hence there exists a nonconstant meromorphic function $f\in L(p)$. Its only possible pole is at $p$, and that pole has order at most $1$.
+
+Because $f$ is nonconstant, it has a pole, so its pole divisor is exactly $[p]$. Therefore the induced morphism
+$$
+f:C\longrightarrow\PP^1
+$$
+has degree $1$. A finite morphism of degree $1$ between smooth projective curves is an isomorphism. Thus $C\cong\PP^1$.
+:::
+
+<1>2. $C$ is isomorphic to the plane conic
+$$
+\boxed{V(z_0z_2-z_1^2)\subset\PP^2}.
+$$
+::: {.proof}
+By step <1>1, it suffices to embed $\PP^1$ as a conic. The quadratic Veronese map
+$$
+\nu_2:\PP^1\longrightarrow\PP^2,
+\qquad
+[t_0:t_1]\longmapsto[t_0^2:t_0t_1:t_1^2]
+$$
+is a closed immersion. Its image satisfies $z_0z_2=z_1^2$. Conversely, every point of the smooth conic $V(z_0z_2-z_1^2)$ lies in this image, so $\nu_2$ identifies $\PP^1$ with that conic. Composing the isomorphism from step <1>1 with $\nu_2$ gives the required isomorphism from $C$ to a plane conic.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 proves that every smooth projective genus-zero curve over $\CC$ is isomorphic to a conic in $\PP^2$.
+:::
 :::
