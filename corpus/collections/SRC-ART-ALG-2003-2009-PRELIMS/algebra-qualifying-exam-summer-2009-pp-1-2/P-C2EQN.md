@@ -61,11 +61,16 @@ Partitioning \(H\) into conjugation orbits gives
 \[
 |H|=|H\cap Z(G)|+\sum_j |\mathcal O_j|,
 \]
-where the \(\mathcal O_j\) are the nontrivial orbits. Because \(H\) is a nontrivial subgroup of the finite \(p\)-group \(G\), its order is a positive power of \(p\), hence divisible by \(p\). By <1>3 every term in the sum is divisible by \(p\). Therefore \(|H\cap Z(G)|\equiv0\pmod p\).
+where the \(\mathcal O_j\) are the nontrivial orbits. Because \(H\) is a nontrivial subgroup of the finite \(p\)-group \(G\), its order is a positive power of \(p\), hence divisible by \(p\). By step <1>3 every term in the sum is divisible by \(p\). Therefore \(|H\cap Z(G)|\equiv0\pmod p\).
 :::
 
 <1>5. Hence \(H\) contains a nonidentity element of \(Z(G)\).
 ::: {.proof}
-The intersection \(H\cap Z(G)\) contains the identity, so it is nonempty. By <1>4 its cardinality is a positive multiple of \(p\), hence at least \(p\ge2\). Therefore it contains an element other than the identity.
+The intersection \(H\cap Z(G)\) contains the identity, so it is nonempty. By step <1>4 its cardinality is a positive multiple of \(p\), hence at least \(p\ge2\). Therefore it contains an element other than the identity.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and step <1>5 proves part (b).
 :::
 :::
