@@ -38,4 +38,9 @@ By Cauchy's theorem, $|G|$ must therefore be odd.
 Among $27,28,35,37,42$, the only odd multiple of $7$ is $35$.
 This value occurs: the cyclic group $C_{35}$ contains a subgroup of order $7$ and, being of odd order, has no nontrivial element of order $2$.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 restricts the possible order to an odd multiple of $7$, and step <1>2 shows that among the choices exactly $35$ works. Hence choice (C) is correct.
+:::
 :::
