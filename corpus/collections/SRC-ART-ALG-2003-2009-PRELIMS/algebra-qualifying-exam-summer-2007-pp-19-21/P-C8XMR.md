@@ -163,4 +163,9 @@ $$
 which is impossible since $3\mid24$ but $3\nmid2^m$.
 Thus $\alpha$ is not constructible.
 :::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>3 proves part (a), and step <1>5 proves part (b).
+:::
 :::
