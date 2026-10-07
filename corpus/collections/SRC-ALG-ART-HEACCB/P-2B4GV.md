@@ -69,20 +69,25 @@ Direct substitution gives
 \]
 :::
 
-<1>4. Hence $N=\mathbb Z^3$.
+<1>4. Hence $N=\ZZ^3$.
 ::: {.proof}
-By <1>1--<1>3, the standard basis of $\mathbb Z^3$ is contained in $N$, so $\mathbb Z^3\subseteq N$. The reverse inclusion is part of the definition of $N$.
+By step <1>1, step <1>2, and step <1>3, the standard basis of $\ZZ^3$ is contained in $N$, so $\ZZ^3\subseteq N$. The reverse inclusion is part of the definition of $N$.
 :::
 
 <1>5. Therefore one basis for $N$ is
 \[
-\{e_1,e_2,e_3\},
+\boxed{\{e_1,e_2,e_3\}},
 \]
 and
 \[
-\mathbb Z^3/N=0.
+\boxed{\ZZ^3/N=0}.
 \]
 ::: {.proof}
-This follows immediately from <1>4.
+This follows immediately from step <1>4.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 gives both the requested basis and the quotient.
 :::
 :::
