@@ -83,4 +83,11 @@ where strictness follows from $n\geq5>2$.
 This contradicts the previous inequality. Thus $d\geq n$,
 as required.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required lower bound on the degree of the minimal
+polynomial.
+:::
 :::
