@@ -76,4 +76,12 @@ Hence $\sqrt2\notin\operatorname{span}_{\mathbb Q}\{1,\alpha\}$.
 :::
 
 Therefore the answer is $\boxed{F_3\text{ only}}$.
+::: {.proof}
+Step <1>1, step <1>2, and step <1>4 rule out the other three subsets, while step <1>3 proves that $F_3$ is a field.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+The preceding conclusion gives the complete classification.
+:::
 :::
