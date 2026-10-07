@@ -28,32 +28,56 @@ Let $A$ be an abelian group, and show $A$ is a $\ZZ\dash$module in a unique way.
 :::
 
 ::: {.solution}
-**Theorem.**  
-Every abelian group $(A,+)$ admits exactly one $\mathbb Z$-module structure.
+<1>1. There is a $\ZZ$-action on $A$ defined by repeated addition.
+::: {.proof}
+For $a\in A$, define
+$$
+n\cdot a=
+\begin{cases}
+\underbrace{a+\cdots+a}_{n\text{ terms}},&n>0,\\
+0,&n=0,\\
+-\underbrace{(a+\cdots+a)}_{-n\text{ terms}},&n<0.
+\end{cases}
+$$
+:::
 
-*Proof.*
+<1>2. This action makes $A$ a $\ZZ$-module.
+::: {.proof}
+For $m,n\in\ZZ$ and $a,b\in A$, repeated addition and the abelian group law give
+$$
+n\cdot(a+b)=n\cdot a+n\cdot b,
+$$
+$$
+(m+n)\cdot a=m\cdot a+n\cdot a,
+$$
+and
+$$
+(mn)\cdot a=m\cdot(n\cdot a).
+$$
+Also $1\cdot a=a$. Hence all module axioms hold.
+:::
 
-1. For $n\in\mathbb Z$ and $a\in A$ define
-   \[
-   n\cdot a=
-   \begin{cases}
-   \underbrace{a+\cdots+a}_{n\text{ times}},&n>0,\\
-   0,&n=0,\\
-   -(\underbrace{a+\cdots+a}_{(-n)\text{ times}}),&n<0.
-   \end{cases}
-   \]
-2. Check module axioms from the abelian law:
-   - $n\cdot(a+b)=n\cdot a+n\cdot b$ and $(m+n)\cdot a=m\cdot a+n\cdot a$ by expanding sums.
-   - $(mn)\cdot a=m\cdot(n\cdot a)$ by regrouping repeated addition.
-   - $1\cdot a=a$ by definition and $0\cdot a=0$ as the empty sum.
-3. This defines a $\mathbb Z$-module structure on $A$.
-4. For uniqueness, let $A$ carry any $\mathbb Z$-module structure. Module axioms give
-   $1\cdot a=a$ and, by repeated addition,
-   \[
-   n\cdot a=\underbrace{(1\cdot a)+\cdots+(1\cdot a)}_{n\text{ times}},
-   \]
-   while for $n>0$, $(-n)\cdot a=-(n\cdot a)$.
-5. These formulas force the same action as in step 1 for every integer $n$, so no other action is possible.
+<1>3. This $\ZZ$-module structure is unique.
+::: {.proof}
+Let $A$ carry any $\ZZ$-module structure. The module axiom gives $1\cdot a=a$. For $n>0$,
+$$
+n\cdot a=(\underbrace{1+\cdots+1}_{n\text{ terms}})\cdot a
+=\underbrace{a+\cdots+a}_{n\text{ terms}},
+$$
+and
+$$
+(-n)\cdot a=-(n\cdot a).
+$$
+Thus the scalar action is forced to be exactly the action constructed in step <1>1.
+:::
 
-Hence $A$ is a $\mathbb Z$-module in a unique way.
+<1>4. Therefore every abelian group admits $\boxed{\text{a unique }\ZZ\text{-module structure}}$.
+::: {.proof}
+Existence is step <1>2 and uniqueness is step <1>3.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::
