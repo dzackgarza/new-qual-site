@@ -52,4 +52,9 @@ $$
 \boxed{\mathbb Q^*\not\cong\mathbb R^*.}
 $$
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
