@@ -36,4 +36,9 @@ For $m/n\in\mathbb Q$ with $n\ne0$,
 \]
 Thus $\varphi=\operatorname{id}_{\mathbb Q}$.
 :::
+
+<1>2. Q.E.D.
+::: {.proof}
+Step <1>1 proves that the identity is the only field automorphism of $\QQ$, so choice (B) is correct.
+:::
 :::
