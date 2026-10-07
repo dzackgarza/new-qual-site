@@ -67,4 +67,10 @@ The decompositions of $A$ and $B$ in step <1>1 therefore have precisely
 the same summands with the same multiplicities. Matching those
 summands gives an $R$-module isomorphism $A\cong B$.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 gives the required isomorphism $A\cong B$.
+:::
 :::
