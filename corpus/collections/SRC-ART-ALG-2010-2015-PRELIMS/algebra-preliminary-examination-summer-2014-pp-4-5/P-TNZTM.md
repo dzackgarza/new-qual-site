@@ -109,4 +109,10 @@ $$
 Thus the minimal polynomial has a repeated root, and $K/F$ is
 not separable. In particular it is not Galois [@DF04].
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 prove parts (a)--(d), respectively.
+:::
 :::
