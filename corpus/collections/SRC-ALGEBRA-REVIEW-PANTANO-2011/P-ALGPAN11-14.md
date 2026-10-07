@@ -90,4 +90,9 @@ For noncommuting $x,y\in S_3$,
 in general.
 Thus I is not forced by the stated axioms.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves II, step <1>2 proves III, and step <1>3 gives a counterexample to I. Hence choice (D) is correct.
+:::
 :::
