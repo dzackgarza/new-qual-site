@@ -65,4 +65,9 @@ by $p$. The same equation implies $p\mid |Z(G)|$.
 The center contains the identity, so its size is a positive multiple
 of $p$ and therefore at least $p>1$. In particular it is nontrivial.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and step <1>2 proves part (b).
+:::
 :::
