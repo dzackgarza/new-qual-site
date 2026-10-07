@@ -89,7 +89,7 @@ Thus every eigenvalue of \(A\) is \(0\). Over \(\mathbb C\), the characteristic 
 
 <1>3. \(A\) is nilpotent if and only if \(\operatorname{tr}(A^p)=0\) for \(1\le p\le n\).
 ::: {.proof}
-If \(A\) is nilpotent, then by <1>2 all eigenvalues are zero. Hence every \(A^p\) has all eigenvalues zero, and therefore
+If \(A\) is nilpotent, then by step <1>2 all eigenvalues are zero. Hence every \(A^p\) has all eigenvalues zero, and therefore
 \[
 \operatorname{tr}(A^p)=0
 \]
@@ -135,5 +135,10 @@ Thus
 \[
 \boxed{A\text{ is nilpotent}\iff \operatorname{tr}(A^p)=0\text{ for }p=1,\dots,n}.
 \]
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), step <1>2 proves part (b), and step <1>3 proves part (c).
 :::
 :::
