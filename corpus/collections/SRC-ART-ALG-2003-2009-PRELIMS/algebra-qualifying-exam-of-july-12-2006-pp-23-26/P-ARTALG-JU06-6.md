@@ -154,4 +154,9 @@ the subgroup enumeration in step <1>2 proves that no subfield
 has been omitted. Field inclusions are obtained by reversing
 the inclusions among the listed subgroups.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 determines the degree and Galois group, while steps <1>2--<1>3 give all subgroups and corresponding fixed fields.
+:::
 :::
