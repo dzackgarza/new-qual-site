@@ -82,4 +82,9 @@ along the cyclic basis. A cyclic module with this degree-three
 relation has the single invariant factor $f$, and its rational
 canonical form is the companion matrix $C$ [@DF04].
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 gives the rational canonical form of the given matrix.
+:::
 :::
