@@ -115,4 +115,10 @@ of $m$, gives $m\in N$. Hence $M\subseteq N$.
 Maximality of $M$ and properness of $N$ give $N=M$, so
 $\mathfrak n=M/M^n$. Thus no other maximal ideal exists.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 prove parts (a)--(c), respectively.
+:::
 :::
