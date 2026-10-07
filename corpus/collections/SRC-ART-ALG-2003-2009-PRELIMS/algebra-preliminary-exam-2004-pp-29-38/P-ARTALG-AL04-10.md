@@ -77,4 +77,9 @@ An intermediate field of a finite Galois extension is Galois
 over the base exactly when its corresponding subgroup is normal
 [@DF04]. Apply this criterion to the subgroup in step <1>2.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and steps <1>2--<1>3 prove part (b).
+:::
 :::
