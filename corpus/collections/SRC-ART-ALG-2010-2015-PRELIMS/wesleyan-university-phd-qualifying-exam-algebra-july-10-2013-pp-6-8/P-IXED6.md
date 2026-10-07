@@ -92,4 +92,11 @@ $g=ra+sb$; the explicit solution becomes
 $x=c-kra=d+ksb$. No assumption that $a$ and $b$ are
 coprime was used.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 answer part (a), and step <1>3 proves the equivalence
+in part (b).
+:::
 :::
