@@ -73,4 +73,9 @@ law. No separability assumption was used. A repeated root
 $\alpha$ may still belong to $R_h$, but the root-set union and
 the field equality in step <1>2 remain valid.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
