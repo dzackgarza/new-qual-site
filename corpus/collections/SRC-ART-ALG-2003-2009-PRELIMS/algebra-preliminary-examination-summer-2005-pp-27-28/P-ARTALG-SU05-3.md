@@ -66,4 +66,9 @@ The same leading-coefficient argument shows that $\mathbb Z[x]$
 is an integral domain. Its failure here is precisely the existence
 of the nonprincipal ideal $I$, not the domain condition.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and steps <1>2--<1>3 prove that $\ZZ[x]$ is not a PID in part (b).
+:::
 :::
