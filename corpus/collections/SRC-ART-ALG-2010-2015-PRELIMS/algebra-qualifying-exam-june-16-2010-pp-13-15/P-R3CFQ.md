@@ -105,4 +105,12 @@ If $A$ and $B$ were similar, adding the identity would
 preserve that similarity and hence their ranks, a contradiction.
 This proves the required failure of similarity.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 give the rational canonical form of $A$, and step
+<1>3 gives a matrix with the same characteristic polynomial that is not
+similar to $A$.
+:::
 :::
