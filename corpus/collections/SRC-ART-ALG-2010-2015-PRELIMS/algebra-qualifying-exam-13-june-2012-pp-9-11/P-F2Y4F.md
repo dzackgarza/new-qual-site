@@ -119,4 +119,11 @@ which is impossible for a positive integer degree.
 Hence $g$ has no root in $K$. Since its degree is three,
 it is irreducible over $K$.
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), steps <1>2--<1>3 prove part (b), and
+step <1>4 proves part (c).
+:::
 :::
