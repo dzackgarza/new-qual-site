@@ -95,4 +95,9 @@ $\rho^{-1}(A_4)$ is a nontrivial proper normal subgroup of $G$.
 All possibilities have been covered, so no group of order $24$
 is simple.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), step <1>2 answers part (b), and step <1>3 proves part (c).
+:::
 :::
