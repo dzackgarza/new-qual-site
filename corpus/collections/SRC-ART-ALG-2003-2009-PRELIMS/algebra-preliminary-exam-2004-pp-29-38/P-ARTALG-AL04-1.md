@@ -70,4 +70,9 @@ The kernel is normal, and it is therefore a nontrivial proper
 normal subgroup in this case as well. Neither possibility allows
 $G$ to be simple.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), and step <1>2 proves part (b).
+:::
 :::
