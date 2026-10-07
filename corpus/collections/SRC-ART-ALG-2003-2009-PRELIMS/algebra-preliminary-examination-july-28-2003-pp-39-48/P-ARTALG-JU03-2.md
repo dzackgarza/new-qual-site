@@ -100,4 +100,9 @@ Then $H'=gHg^{-1}$ is isomorphic to $H\cong D_8\times D_8$.
 Conjugating the relation $H\lhd P$ gives $H'\lhd P'$, which
 proves the statement for the arbitrary chosen $P'$.
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>4 proves the required statement for every Sylow $2$-subgroup of $S_8$.
+:::
 :::
