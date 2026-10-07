@@ -81,4 +81,9 @@ Q\subseteq Z_G(Q)\subseteq N_G(Q)=Q.
 $$
 All three subgroups coincide, as required.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), and steps <1>2--<1>3 prove part (b).
+:::
 :::
