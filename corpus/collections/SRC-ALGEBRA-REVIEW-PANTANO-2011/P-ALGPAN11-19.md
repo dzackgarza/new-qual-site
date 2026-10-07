@@ -80,4 +80,9 @@ and finally
 \]
 Thus the algorithm computes $r=53,4,1,0$ in order.
 :::
+
+<1>2. Q.E.D.
+::: {.proof}
+Step <1>1 yields the remainder sequence $53,4,1,0$, so choice (D) is correct.
+:::
 :::
