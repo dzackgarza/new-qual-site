@@ -79,4 +79,9 @@ Being the kernel of a homomorphism, it is a normal subgroup.
 Every case has produced a nontrivial proper normal subgroup,
 so no group of order $132$ is simple.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 answers parts (a) and (b), and step <1>2 proves part (c).
+:::
 :::
