@@ -43,19 +43,6 @@ f:\mathbb A^1\setminus\{0\}\longrightarrow\mathbb A^1.
 ::: {.solution}
 Write \(K=k(z)=k(\mathbb P^1)\).
 
-1. Every \(f\in k[z,z^{-1}]\subset K\) extends uniquely to a morphism
-   \[
-   \overline f:\mathbb P^1\to\mathbb P^1.
-   \]
-2. The automorphisms of \(\mathbb A^1\setminus\{0\}=\mathbb G_m\) arising this way are exactly
-   \[
-   \boxed{f(z)=az^{\pm1}\qquad(a\in k^\times).}
-   \]
-3. The pullback on rational differentials is an isomorphism exactly for
-   \[
-   \boxed{f(z)=az+b\quad\text{or}\quad f(z)=az^{-1}+b,\qquad a\in k^\times,\ b\in k.}
-   \]
-
 <1>1. Every Laurent polynomial extends uniquely to \(\mathbb P^1\).
 ::: {.proof}
 A Laurent polynomial \(f\) is an element of the rational function field \(K=k(z)\). A rational function on the nonsingular complete curve \(\mathbb P^1\) determines a morphism to \(\mathbb P^1\): at a point where \(f\) is finite it has value \([f:1]\), and at a pole it has value \([1:0]\). Thus \(f\) extends to a morphism
@@ -66,7 +53,10 @@ A Laurent polynomial \(f\) is an element of the rational function field \(K=k(z)
 The punctured affine line is a dense open subset of \(\mathbb P^1\). Since \(\mathbb P^1\) is separated, two morphisms \(\mathbb P^1\to\mathbb P^1\) agreeing on a dense open subset agree everywhere. Hence the extension is unique.
 :::
 
-<1>2. The automorphisms of \(\mathbb G_m\) are \(z\mapsto az^{\pm1}\).
+<1>2. The automorphisms of \(\mathbb G_m\) arising from Laurent polynomials are exactly
+\[
+\boxed{f(z)=az^{\pm1}\qquad(a\in k^\times).}
+\]
 ::: {.proof}
 The coordinate ring of \(\mathbb G_m\) is
 \[
@@ -87,7 +77,10 @@ f(z)=az\quad\text{or}\quad f(z)=az^{-1},\qquad a\ne0.
 Each such map has an inverse of the same form, so these and only these are automorphisms.
 :::
 
-<1>3. Classify when pullback on rational differentials is bijective.
+<1>3. The pullback on rational differentials is an isomorphism exactly for
+\[
+\boxed{f(z)=az+b\quad\text{or}\quad f(z)=az^{-1}+b,\qquad a\in k^\times,\ b\in k.}
+\]
 ::: {.proof}
 The \(K\)-vector space of rational differentials is one-dimensional:
 \[
@@ -118,5 +111,10 @@ if it is \(0\), then
 f(z)=az^{-1}+b,
 \]
 with \(a\ne0\). Conversely, each of these functions has degree one, so its pullback on rational differentials is bijective.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves the unique extension, step <1>2 classifies the automorphisms of $\mathbb G_m$, and step <1>3 classifies when pullback on rational differentials is an isomorphism.
 :::
 :::
