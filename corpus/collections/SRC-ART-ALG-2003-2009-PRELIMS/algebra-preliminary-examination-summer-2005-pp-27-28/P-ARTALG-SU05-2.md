@@ -88,4 +88,9 @@ $360,120,180,60,90,30$. They are pairwise distinct, so no two
 rows are isomorphic. Combined with step <1>2, this proves both
 exhaustiveness and absence of repetitions.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), while steps <1>2--<1>3 give the complete classification required in part (b).
+:::
 :::
