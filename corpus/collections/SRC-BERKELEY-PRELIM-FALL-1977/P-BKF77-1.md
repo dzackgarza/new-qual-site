@@ -105,4 +105,11 @@ $$
 B^{-1}AB=\begin{pmatrix}1&0\\0&2\end{pmatrix}.}
 $$
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 exhibits the required real matrix $B$ and computes the
+diagonal matrix $B^{-1}AB$.
+:::
 :::
