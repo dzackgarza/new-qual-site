@@ -147,4 +147,10 @@ power in the preceding field. Thus every root of the
 irreducible fifth-degree polynomial lies in a radical
 extension, which is exactly solvability by radicals.
 :::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>6 answer parts (a)--(f), respectively.
+:::
 :::
