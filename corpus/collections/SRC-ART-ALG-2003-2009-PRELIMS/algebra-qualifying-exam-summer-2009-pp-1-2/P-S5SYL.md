@@ -92,4 +92,9 @@ Therefore
 \frac{p!}{(p-2)!}=p(p-1).
 \]
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Steps <1>1--<1>4 answer parts (a)--(d), respectively.
+:::
 :::
