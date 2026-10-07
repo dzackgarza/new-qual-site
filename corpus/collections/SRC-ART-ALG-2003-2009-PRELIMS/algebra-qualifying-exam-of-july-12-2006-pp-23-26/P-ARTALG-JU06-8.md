@@ -68,4 +68,9 @@ If an isomorphism $\sigma:\mathbb Q(\sqrt2)\to\mathbb Q(\sqrt3)$
 existed, step <1>1 would give
 $\sigma(\sqrt2)^2=\sigma(2)=2$. This contradicts step <1>2.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
