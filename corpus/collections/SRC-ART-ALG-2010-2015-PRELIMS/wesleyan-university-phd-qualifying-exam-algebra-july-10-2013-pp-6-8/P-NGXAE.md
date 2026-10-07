@@ -168,4 +168,11 @@ outside that subgroup. These are all the order-$2$
 subgroups apart from $\langle r^2\rangle$, so exactly
 one quartic subfield is Galois. This proves the last column.
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), step <1>2 proves part (b), and steps
+<1>3--<1>4 prove parts (c)--(d).
+:::
 :::
