@@ -106,4 +106,10 @@ equals $E$. Step <1>2 shows that $\gamma$ has degree $4$.
 Its minimal polynomial is therefore the monic degree-four
 annihilating polynomial displayed above.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and steps <1>2--<1>3 prove part (b).
+:::
 :::
