@@ -112,4 +112,10 @@ $$
 x(t)=\frac{(1-t)e^t+\cos t}{2}.}
 $$
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the unique solution satisfying both initial conditions.
+:::
 :::
