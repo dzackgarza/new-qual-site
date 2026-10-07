@@ -88,4 +88,10 @@ Choosing a basis in each and matching the bases gives a linear
 isomorphism and hence the asserted group isomorphism. This also
 covers the trivial groups, with dimension zero.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and steps <1>2--<1>3 prove part (b).
+:::
 :::
