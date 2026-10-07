@@ -106,4 +106,9 @@ Setting $x=0$ yields the false identity $y=0$ in $\mathbb Q[y]$.
 Thus $I$ is not principal. This rules out the principal ideal
 domain property.
 :::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and steps <1>2--<1>5 classify the four rings in part (b).
+:::
 :::
