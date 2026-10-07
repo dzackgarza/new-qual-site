@@ -100,4 +100,9 @@ Z(R)=\{aI_2:a\in\mathbb Q\}.
 \]
 This is a proper subset of \(R\) but contains the identity matrix. Any two-sided ideal containing \(1\) is all of \(R\), so \(Z(R)\) is not an ideal.
 :::
+
+<1>7. Q.E.D.
+::: {.proof}
+Steps <1>1--<1>6 answer parts (a)--(f), respectively.
+:::
 :::
