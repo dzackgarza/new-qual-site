@@ -109,4 +109,11 @@ zero, so its automorphism group has order $[K:\mathbb Q]$
 The injective homomorphism in step <1>2 is therefore a bijection
 onto this affine group, as required.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>2--<1>3 identify the Galois group with the full affine group on
+$\ZZ/p\ZZ$.
+:::
 :::
