@@ -98,4 +98,9 @@ the norm $6$ of either factor on the right. Thus no rearrangement
 and multiplication by units can identify the two irreducible
 factorizations. This disproves unique factorization in $R$.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 gives the Euclidean-domain example, step <1>2 gives a UFD that is not a PID, and step <1>3 gives an integral domain that is not a UFD.
+:::
 :::
