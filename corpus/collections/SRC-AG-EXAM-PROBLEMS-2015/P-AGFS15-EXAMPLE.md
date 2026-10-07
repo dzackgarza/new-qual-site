@@ -234,4 +234,9 @@ Consequently the normalization is
  t\longmapsto(t^2,t^3).
 \]
 :::
+
+<1>9. Q.E.D.
+::: {.proof}
+Step <1>1 through step <1>8 answer the eight requested questions about the cuspidal cubic, from its coordinate ring through its normalization.
+:::
 :::
