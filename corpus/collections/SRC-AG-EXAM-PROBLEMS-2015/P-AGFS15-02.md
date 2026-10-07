@@ -37,12 +37,7 @@ Determine whether each statement is true or false.
 
 
 ::: {.solution}
-The truth values are
-\[
-\boxed{\text{False},\ \text{False},\ \text{True},\ \text{False}}.
-\]
-
-<1>1. Statement 1 is false.
+<1>1. Statement 1 is \(\boxed{\text{false}}\).
 ::: {.proof}
 If \(f:X\to Y\) is surjective and \(g\in A(Y)\) satisfies \(f^\sharp(g)=g\circ f=0\), then \(g\) vanishes at every point of \(Y\), hence \(g=0\). Thus surjectivity of \(f\) does imply injectivity of \(f^\sharp\).
 
@@ -57,7 +52,7 @@ j^\sharp:k[t]\longrightarrow k[t,t^{-1}]
 is the natural inclusion, so it is injective, but \(j\) is not surjective because \(0\notin\mathbb G_m\).
 :::
 
-<1>2. Statement 2 is false.
+<1>2. Statement 2 is \(\boxed{\text{false}}\).
 ::: {.proof}
 If \(f^\sharp:A(Y)\to A(X)\) is surjective, then \(f\) is a closed immersion onto the closed subvariety cut out by \(\ker f^\sharp\); in particular, \(f\) is injective.
 
@@ -72,7 +67,7 @@ j^\sharp:k[t]\longrightarrow k[t,t^{-1}]
 is not surjective because \(t^{-1}\) is not in its image.
 :::
 
-<1>3. Statement 3 is true.
+<1>3. Statement 3 is \(\boxed{\text{true}}\).
 ::: {.proof}
 An isomorphism \(f:\mathbb A^1\to\mathbb A^1\) induces a \(k\)-algebra automorphism
 \[
@@ -93,7 +88,7 @@ p(t)=at+b
 with \(a\ne0\), and therefore \(f(x)=ax+b\).
 :::
 
-<1>4. Statement 4 is false.
+<1>4. Statement 4 is \(\boxed{\text{false}}\).
 ::: {.proof}
 Consider
 \[
@@ -106,5 +101,10 @@ It has polynomial inverse
 F^{-1}(u,v)=(u,v-u^2),
 \]
 so \(F\) is an isomorphism. But \(F\) is not affine linear because its second coordinate contains the quadratic term \(x^2\).
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>1, step <1>2, step <1>3, and step <1>4 determine all four truth values and justify each one.
 :::
 :::
