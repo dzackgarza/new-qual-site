@@ -59,8 +59,9 @@ Hg^{-1},
 $$
 because inversion permutes the elements of the subgroup $H$.
 Therefore the displayed assignment is simply set inversion applied to
-a left coset. Since inversion of subsets is an involution, this
-assignment is bijective.
+a left coset. In particular it is well defined: if $gH=g'H$, then
+$(gH)^{-1}=(g'H)^{-1}$, hence $Hg^{-1}=H(g')^{-1}$. Since inversion of
+subsets is an involution, this assignment is bijective.
 :::
 
 <1>2. The subgroup $H$ has the same number of left cosets as right
