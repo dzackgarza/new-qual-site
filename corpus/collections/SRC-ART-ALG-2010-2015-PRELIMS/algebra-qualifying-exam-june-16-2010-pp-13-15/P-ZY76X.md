@@ -130,4 +130,11 @@ Conjugation takes its unique nonidentity element outside
 that subgroup. The normality criterion in step <1>1
 therefore gives precisely the last column of the table.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives both the complete list requested in part (a) and the
+Galois refinement requested in part (b).
+:::
 :::
