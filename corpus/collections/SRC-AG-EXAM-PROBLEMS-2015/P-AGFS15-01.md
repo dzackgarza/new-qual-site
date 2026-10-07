@@ -41,15 +41,11 @@ y_1&y_2&y_3
 \end{pmatrix}.
 \]
 Then
+
+<1>1. The matrices of rank at most one form the affine variety
 \[
 \boxed{X=V(x_1y_2-x_2y_1,\ x_1y_3-x_3y_1,\ x_2y_3-x_3y_2)}.
 \]
-In particular, \(X\) is an affine variety. Moreover, \(X\) is irreducible and
-\[
-\boxed{\dim X=4}.
-\]
-
-<1>1. The displayed equations cut out exactly the matrices of rank at most one.
 ::: {.proof}
 A \(2\times3\) matrix has rank at most one if and only if every \(2\times2\) minor vanishes. The three \(2\times2\) minors of \(M\) are precisely
 \[
@@ -81,7 +77,7 @@ Equivalently, \(X\) is the affine cone over the Segre embedding
 \]
 :::
 
-<1>3. \(\dim X=4\).
+<1>3. \(\dim X=\boxed{4}\).
 ::: {.proof}
 Use the affine chart
 \[
@@ -105,5 +101,10 @@ The set \(U\) is nonempty and open in the irreducible variety \(X\), hence it is
 \dim X=4.
 \]
 This also agrees with the cone description: the Segre variety \(\mathbf P^1\times\mathbf P^2\) has dimension \(1+2=3\), and its affine cone has dimension \(3+1=4\).
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves that $X$ is an affine variety, step <1>2 proves that it is irreducible, and step <1>3 computes its dimension.
 :::
 :::
