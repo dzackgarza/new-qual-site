@@ -76,4 +76,10 @@ generators, then $(x,y)^d=1$ exactly when both $p$ and $q$
 divide $d$, that is, exactly when $pq\mid d$. Hence $(x,y)$
 has order $pq$, and its image generates $G$.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), and steps <1>2--<1>3 prove part (b).
+:::
 :::
