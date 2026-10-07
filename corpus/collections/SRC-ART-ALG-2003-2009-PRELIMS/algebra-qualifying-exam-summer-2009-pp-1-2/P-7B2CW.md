@@ -58,7 +58,7 @@ n_p\equiv1\pmod p.
 Hence \(n_p\in\{1,q\}\). If \(n_p=q\), then \(q\equiv1\pmod p\), i.e. \(p\mid(q-1)\), contrary to hypothesis. Therefore \(n_p=1\).
 :::
 
-<1>4. Under the hypothesis of <1>3, one has
+<1>4. Under the hypothesis of step <1>3, one has
 \[
 G\cong C_p\times C_q\cong C_{pq},
 \]
@@ -80,5 +80,10 @@ The cyclic group \(C_{pq}\) always occurs. Since
 \operatorname{Aut}(C_q)\cong C_{q-1},
 \]
 the divisibility \(p\mid(q-1)\) gives a subgroup of order \(p\) in \(\operatorname{Aut}(C_q)\), hence a nontrivial homomorphism \(C_p\to\operatorname{Aut}(C_q)\) and therefore a nonabelian semidirect product \(C_q\rtimes C_p\). Because \(\operatorname{Aut}(C_q)\) is cyclic, it has a unique subgroup of order \(p\); all nontrivial actions have the same image and yield isomorphic semidirect products. Thus these are exactly the two isomorphism types.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>2 proves part (a), step <1>4 proves part (b), and step <1>5 answers part (c).
 :::
 :::
