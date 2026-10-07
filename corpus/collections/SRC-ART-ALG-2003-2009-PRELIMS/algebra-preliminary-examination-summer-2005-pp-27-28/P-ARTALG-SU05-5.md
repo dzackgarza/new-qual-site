@@ -88,4 +88,9 @@ a field implies that this monic divisor is itself a product of
 distinct linear factors in $F[x]$ [@DF04]. Its degree is $8$,
 so it has exactly $8$ distinct roots in $F$.
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Steps <1>2, <1>3, and <1>4 give the three requested root counts.
+:::
 :::
