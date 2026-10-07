@@ -27,6 +27,71 @@ Prove that for any $x,y\in G_1$, $H_1x=H_1y$ if and only if $H_2\varphi(x)=H_2\v
 :::
 
 ::: {.solution}
-Proof.
-(=⇒) Given x,y ∈G1 such that H1x =H1y, we have xy−1∈H1 [by the right coset relation for H1]. So φ(x)φ(y)−1 =φ ( xy−1) ∈H2, by deﬁnition of H1. Thus, [by the right coset relation for H2], we have H2φ(x) =H2φ(y). (⇐=) Given x,y ∈ G1 such that H2φ(x) = H2φ(y), we have φ(x)φ(y)−1∈ H2 [by the right coset relation for H2]. Thus, φ ( xy−1) =φ(x)φ(y)−1∈H2, and therefore xy−1∈ H1, by deﬁnition of H1. Thus, [by the right coset relation for H1], we have H1x =H1y. QED
+<1>1. If $H_1x=H_1y$, then
+$$
+H_2\varphi(x)=H_2\varphi(y).
+$$
+::: {.proof}
+By the right-coset criterion,
+$$
+H_1x=H_1y
+\iff
+xy^{-1}\in H_1.
+$$
+Thus
+$$
+\varphi(xy^{-1})\in H_2.
+$$
+Since $\varphi$ is a homomorphism,
+$$
+\varphi(xy^{-1})
+=\varphi(x)\varphi(y)^{-1}.
+$$
+Hence
+$$
+\varphi(x)\varphi(y)^{-1}\in H_2,
+$$
+and another application of the right-coset criterion gives
+$$
+H_2\varphi(x)=H_2\varphi(y).
+$$
+:::
+
+<1>2. If
+$$
+H_2\varphi(x)=H_2\varphi(y),
+$$
+then $H_1x=H_1y$.
+::: {.proof}
+By the right-coset criterion,
+$$
+\varphi(x)\varphi(y)^{-1}\in H_2.
+$$
+Since
+$$
+\varphi(x)\varphi(y)^{-1}
+=\varphi(xy^{-1}),
+$$
+the definition of $H_1$ gives
+$$
+xy^{-1}\in H_1.
+$$
+Therefore
+$$
+H_1x=H_1y.
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{H_1x=H_1y\iff H_2\varphi(x)=H_2\varphi(y)}.
+$$
+::: {.proof}
+Step <1>1 proves the forward implication and step <1>2 proves the reverse implication.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required equivalence.
+:::
 :::
