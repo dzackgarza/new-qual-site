@@ -117,4 +117,11 @@ polynomials are respectively $(x^4+1)(x-1)$ and
 $(x^4+1)(x+1)$. Step <1>1 proves that there are no
 additional classes.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required numbers of similarity classes for
+$n=3,4,5$.
+:::
 :::
