@@ -15,42 +15,63 @@ review: draft
 ---
 
 ::: {.problem}
-Let $V$ be a finite-dimensional $k\dash$vector space and $T:V\to V$ a non-invertible $k\dash$linear map.
+Let $V$ be a finite-dimensional $k\dash$vector space and $T:V\to V$ a nonzero, non-invertible $k\dash$linear map.
 Show that there exists a $k\dash$linear map $S:V\to V$ with $T\circ S = 0$ but $S\circ T\neq 0$.
 :::
 
 ::: {.solution}
-Suppose $T: V \to V$ is not invertible, then $\dim \im T < n$ and $\dim \ker T > 0$ by the Rank-Nullity theorem.
-This means that there is a nontrivial $\vector v \in \ker T$, and a nontrivial vector $\vector w \in \im(T)$, so let $S$ be the matrix formed by the outer product $\vector v \vector w^t$.
-Since $\vector w \in \im(T)$, fix an $\vector x_0$ with $T\vector x_0 = \vector w$; this is the vector the second computation will use.
+<1>1. There exist nonzero vectors $v\in\ker T$ and $w\in\im T$.
+::: {.proof}
+Since $T$ is not invertible on the finite-dimensional space $V$, rank-nullity gives
+$$
+\dim\ker T>0.
+$$
+Choose $0\ne v\in\ker T$. Since $T\ne0$, choose $x_0\in V$ with
+$$
+w\coloneqq T(x_0)\ne0.
+$$
+Then $w\in\im T$.
+:::
 
-We then consider how $ST$ acts on vectors $\vector x$:
+<1>2. There is a linear functional $\lambda\in V^\dual$ such that $\lambda(w)=1$.
+::: {.proof}
+Extend $w$ to a basis of $V$ and define $\lambda$ on that basis by sending $w$ to $1$ and all other basis vectors to $0$.
+:::
 
-\begin{align*}
-TS\vector x
-&= T\vector v \vector w^t \vector x  \\
-&= (T\vector v )\vector w^t \vector x  \\
-&= \vector 0 \vector w^t \vector x \\
-&= \mathbf{0_n} \vector x \\
-&= \vector 0
-,\end{align*}
+<1>3. Define
+$$
+S:V\longrightarrow V,
+\qquad
+S(y)=\lambda(y)v.
+$$
+Then $T\circ S=0$.
+::: {.proof}
+For every $y\in V$,
+$$
+(T\circ S)(y)=T(\lambda(y)v)=\lambda(y)T(v)=0
+$$
+because $v\in\ker T$.
+:::
 
-where $\mathbf{0_n}$ is the $n\times n$ matrix of all zeros.
+<1>4. The composite $S\circ T$ is nonzero.
+::: {.proof}
+Using the vector $x_0$ from step <1>1,
+$$
+(S\circ T)(x_0)=S(w)=\lambda(w)v=v\ne0
+$$
+by step <1>2. Hence $S\circ T\ne0$.
+:::
 
-For the other order, evaluate at the specific vector $\vector x_0$:
-\begin{align*}
-ST\vector x_0
-&= S \vector w \\
-&= \vector v \vector w^t \vector w \\
-&= \inner{\vector w}{\vector w} \vector v \\
-&= \norm{\vector w}^2 \vector v \\
-&\neq \vector 0,
-\end{align*}
+<1>5. Therefore
+$$
+\boxed{T\circ S=0\quad\text{and}\quad S\circ T\ne0}.
+$$
+::: {.proof}
+This is exactly step <1>3 together with step <1>4.
+:::
 
-since $\vector w \neq \vector 0$ and $\vector v \neq \vector 0$.
-
-> The choice $\vector x_0$ with $T\vector x_0 = \vector w$ is what makes this work.
-> Membership in $\im(T)$ alone gives nothing: two vectors of $\im(T)$ can perfectly well be orthogonal, so a general $\vector y \in \im(T)$ may have $\inner{\vector w}{\vector y} = 0$.
-
-$\qed$
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
 :::
