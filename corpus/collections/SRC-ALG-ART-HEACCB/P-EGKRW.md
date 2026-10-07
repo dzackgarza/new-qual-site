@@ -31,7 +31,7 @@ Let $I = (2, x)$ be an ideal in $R = \ZZ[x]$, and show that $I$ is not a direct 
 ::: {.solution}
 <1>1. The ideal $I$ is torsionfree and has rank $1$ as an $R$-module.
 ::: {.proof}
-The ring $R=\mathbb Z[x]$ is an integral domain and $I\subseteq R$, so $I$ is torsionfree. Let $K=\operatorname{Frac}(R)$. Since $I$ contains the nonzero element $2$, one has
+The ring $R=\ZZ[x]$ is an integral domain and $I\subseteq R$, so $I$ is torsionfree. Let $K=\operatorname{Frac}(R)$. Since $I$ contains the nonzero element $2$, one has
 \[
 K\otimes_R I\cong K,
 \]
@@ -56,24 +56,32 @@ Suppose
 \[
 I\cong C_1\oplus\cdots\oplus C_t
 \]
-with each $C_i$ nonzero and cyclic. Since each $C_i$ is a submodule of the torsionfree module $I$, it is torsionfree, hence $C_i\cong R$ by <1>2. Therefore
+with each $C_i$ nonzero and cyclic. Each direct summand is torsionfree because $I$ is torsionfree, hence $C_i\cong R$ by step <1>2. Therefore
 \[
 \operatorname{rank}_R I=t.
 \]
-By <1>1 this rank is $1$, so $t=1$ and $I$ is cyclic.
+By step <1>1 this rank is $1$, so $t=1$ and $I$ is cyclic.
 :::
 
 <1>4. The ideal $I=(2,x)$ is not principal.
 ::: {.proof}
-If $I=(f)$, then $f$ divides both $2$ and $x$ in the UFD $\mathbb Z[x]$. Any common divisor of $2$ and $x$ is a unit, so $(f)=R$. But $I$ is proper because
+If $I=(f)$, then $f$ divides both $2$ and $x$ in the UFD $\ZZ[x]$. Any common divisor of $2$ and $x$ is a unit, so $(f)=R$. But $I$ is proper because
 \[
-R/I\cong\mathbb F_2\ne0.
+R/I\cong\FF_2\ne0.
 \]
 This is a contradiction.
 :::
 
-<1>5. Hence $I$ is not a direct sum of nontrivial cyclic $R$-modules.
+<1>5. Hence
+$$
+\boxed{I\text{ is not a direct sum of nontrivial cyclic }R\text{-modules}}.
+$$
 ::: {.proof}
-By <1>3 such a decomposition would make $I$ cyclic, contradicting <1>4.
+By step <1>3 such a decomposition would make $I$ cyclic, contradicting step <1>4.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 is the required conclusion.
 :::
 :::
