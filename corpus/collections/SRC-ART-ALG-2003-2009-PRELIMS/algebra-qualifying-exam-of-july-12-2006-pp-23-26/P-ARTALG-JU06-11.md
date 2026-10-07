@@ -21,29 +21,75 @@ Give an example of an integral domain $R$, a free $R$-module $M$, and an $R$-sub
 :::
 
 ::: {.solution}
-<1>1. Construction of the domain, free module, and submodule:
-<2>1. Let $R = \mathbb{Z}[x]$, the polynomial ring with integer coefficients, which is an integral domain.
-<2>2. Let $M = R = \mathbb{Z}[x]$, which is a free $R$-module of rank 1 with basis $\{1\}$.
-<2>3. Let $N = \langle 2, x \rangle = \{ 2 p(x) + x q(x) \mid p, q \in \mathbb{Z}[x] \} \subset M$.
-As an ideal of $R$, $N$ is an $R$-submodule of $M$.
+<1>1. Let
+$$
+R=\ZZ[x],
+\qquad
+M=R,
+\qquad
+N=(2,x)\subseteq M.
+$$
+Then $R$ is an integral domain, $M$ is free of rank $1$, and $N$ is an $R$-submodule of $M$.
+::: {.proof}
+The polynomial ring $\ZZ[x]$ is an integral domain because the product of two nonzero polynomials has nonzero leading coefficient. As a module over itself, $M=R$ is free with basis $\{1\}$. The ideal
+$$
+N=(2,x)
+=\{2p(x)+xq(x):p,q\in\ZZ[x]\}
+$$
+is closed under addition and multiplication by elements of $R$, so it is an $R$-submodule of $M$.
+:::
 
-<1>2. Proof that $N$ is not a free $R$-module:
-<2>1. Suppose for contradiction that $N$ is a free $R$-module.
-For any two non-zero elements $a, b \in N \subset R$, we have the non-trivial relation:
-\[
-b \cdot a - a \cdot b = 0.
-\]
-Because $R$ is an integral domain and $a, b \neq 0$, any two elements of $N$ are linearly dependent over $R$.
-Thus the rank of $N$ as a free $R$-module can be at most 1.
-<2>2. Since $N \neq \{0\}$, the rank must be exactly 1, so $N = R \cdot f(x) = \langle f(x) \rangle$ for some non-zero polynomial $f(x) \in \mathbb{Z}[x]$ (i.e. $N$ must be a principal ideal).
-<2>3. Since $2 \in N = \langle f(x) \rangle$, $f(x)$ must divide $2$ in $\mathbb{Z}[x]$.
-The only divisors of $2$ in $\mathbb{Z}[x]$ are $\pm 1$ and $\pm 2$.
-<2>4. If $f(x) = \pm 1$, then $N = \mathbb{Z}[x]$, so $1 \in N$.
-However, every element in $\langle 2, x \rangle$ has an even constant term $2 p(0) + 0 \cdot q(0) \in 2\mathbb{Z}$, while $1$ is odd, so $1 \notin N$, contradiction.
-If $f(x) = \pm 2$, then $N = 2\mathbb{Z}[x]$.
-However, $x \in N$, but $x \notin 2\mathbb{Z}[x]$ since $x$ has coefficient $1 \notin 2\mathbb{Z}$, contradiction.
-<2>5. Therefore $N$ is not principal, so $N$ is not a free $R$-module.
+<1>2. If $N$ were free, then it would have rank $1$.
+::: {.proof}
+Suppose $N$ were free. Since $2\in N$, it is nonzero, so its rank is at least $1$.
 
-<1>3. Conclusion:
-$R = \mathbb{Z}[x]$, $M = \mathbb{Z}[x]$, and $N = \langle 2, x \rangle$ provide an example of a non-free submodule of a free module. Q.E.D.
+On the other hand, any two nonzero elements $a,b\in N\subseteq R$ satisfy the nontrivial $R$-linear relation
+$$
+b\,a-a\,b=0.
+$$
+The coefficients $b$ and $-a$ are not both zero. Thus no two nonzero elements of $N$ are $R$-linearly independent, so a basis of the free module $N$ can contain at most one element. Hence the rank is exactly $1$.
+:::
+
+<1>3. If $N$ were free, then the ideal $(2,x)$ would be principal.
+::: {.proof}
+By step <1>2, a free $N$ would have a one-element basis $\{f\}$ for some nonzero $f\in N$. Then
+$$
+N=Rf=(f),
+$$
+so $N$ would be principal.
+:::
+
+<1>4. The ideal $(2,x)$ is not principal.
+::: {.proof}
+Suppose
+$$
+(2,x)=(f).
+$$
+Since $2\in(f)$, one has
+$$
+2=fg
+$$
+for some $g\in\ZZ[x]$. Both factors are nonzero, so degrees add; since the right side has degree $0$, both $f$ and $g$ are constant integers. Thus $f$ divides $2$ in $\ZZ$, so
+$$
+f\in\{\pm1,\pm2\}.
+$$
+
+If $f=\pm1$, then $(f)=R$, but $(2,x)$ is proper because every element $2p+xq$ has even constant term, whereas $1$ does not.
+
+If $f=\pm2$, then $(f)=(2)$, but $x\in(2,x)$ while $x\notin(2)$ because its coefficient of $x$ is odd. Both cases are impossible.
+:::
+
+<1>5. Therefore
+$$
+\boxed{R=\ZZ[x],\quad M=R,\quad N=(2,x)}
+$$
+is an example in which $M$ is free and $N\le M$ is not free.
+::: {.proof}
+Step <1>1 gives the required domain, free module, and submodule. If $N$ were free, step <1>3 would make $(2,x)$ principal, contradicting step <1>4.
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 is the required example.
+:::
 :::
