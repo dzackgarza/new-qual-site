@@ -68,4 +68,9 @@ The resulting homomorphism satisfies
 \]
 so $\varphi(z)=z^k$ for all $z\in G$.
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves I, step <1>2 proves II, and step <1>3 proves III. Hence choice (E) is correct.
+:::
 :::
