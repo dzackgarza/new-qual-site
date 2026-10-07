@@ -57,4 +57,9 @@ An equality $ap=bq$ with $p,q$ prime forces the prime factors of $a,b$ to match 
 
 Thus only (C) is nonempty.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves that choice (C) has nonempty intersection, and step <1>2 rules out every other choice.
+:::
 :::
