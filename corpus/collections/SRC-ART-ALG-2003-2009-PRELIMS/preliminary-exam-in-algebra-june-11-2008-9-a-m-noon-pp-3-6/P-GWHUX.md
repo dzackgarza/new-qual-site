@@ -20,9 +20,116 @@ b. Determine the number of nonisomorphic Abelian groups of order 2700.
 :::
 
 ::: {.solution}
-**a.** $G=\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$.
-If $\gcd(a,b)=1$, then $\mathbf{Z}_a\times\mathbf{Z}_b\cong\mathbf{Z}_{ab}$, therefore we may conclude that $$\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9\cong\mathbf{Z}_{15}\times\mathbf{Z}_{180}$$ However, two groups are isomorphic just in case they have the same rank and list of invariant factors, so we may conclude that the invariant factors of $G$ are 15 and 180. In addition, we know $$\mathbf{Z}_{180}\cong\mathbf{Z}_{3^2}\times\mathbf{Z}_{2^2}\times\mathbf{Z}_5,\qquad \mathbf{Z}_{15}\cong\mathbf{Z}_3\times\mathbf{Z}_5$$ Therefore the elementary divisors of $G$ are $3,5,3^2,2^2,5$.
+Let
+$$
+G=\ZZ/15\ZZ\times\ZZ/20\ZZ\times\ZZ/9\ZZ.
+$$
 
-**b.** Too long to write out.
-Just think about it.
+<1>1. The elementary divisors of $G$ are
+$$
+\boxed{4,\ 3,\ 9,\ 5,\ 5}.
+$$
+
+::: {.proof}
+Using the Chinese remainder theorem,
+$$
+\ZZ/15\ZZ\cong\ZZ/3\ZZ\times\ZZ/5\ZZ
+$$
+and
+$$
+\ZZ/20\ZZ\cong\ZZ/4\ZZ\times\ZZ/5\ZZ.
+$$
+Therefore
+$$
+G\cong
+\ZZ/4\ZZ
+\times\ZZ/3\ZZ
+\times\ZZ/9\ZZ
+\times\ZZ/5\ZZ
+\times\ZZ/5\ZZ.
+$$
+Each displayed cyclic factor has prime-power order, so these orders are
+the elementary divisors.
+:::
+
+<1>2. The invariant factors of $G$ are
+$$
+\boxed{15,\ 180}.
+$$
+
+::: {.proof}
+Group the elementary-divisor decomposition by primes:
+$$
+G_{(2)}\cong\ZZ/4\ZZ,
+\qquad
+G_{(3)}\cong\ZZ/3\ZZ\times\ZZ/9\ZZ,
+\qquad
+G_{(5)}\cong\ZZ/5\ZZ\times\ZZ/5\ZZ.
+$$
+Pad the $2$-primary list by a trivial factor and align factors in
+nondecreasing divisibility order:
+$$
+(1,4),\qquad(3,9),\qquad(5,5).
+$$
+Multiplying componentwise gives
+$$
+(1\cdot3\cdot5,\ 4\cdot9\cdot5)=(15,180).
+$$
+Since $15\mid180$, this is the invariant-factor decomposition
+$$
+G\cong\ZZ/15\ZZ\times\ZZ/180\ZZ.
+$$
+:::
+
+<1>3. There are
+$$
+\boxed{12}
+$$
+isomorphism classes of abelian groups of order $2700$.
+
+::: {.proof}
+The prime factorization is
+$$
+2700=2^2\,3^3\,5^2.
+$$
+By the structure theorem for finite abelian groups [@DF04], the
+isomorphism type is determined independently by the partitions of the
+exponents $2,3,2$. There are
+$$
+p(2)=2,
+\qquad
+p(3)=3,
+\qquad
+p(2)=2
+$$
+choices, corresponding explicitly to
+$$
+\ZZ/4\ZZ
+\quad\text{or}\quad
+(\ZZ/2\ZZ)^2,
+$$
+$$
+\ZZ/27\ZZ,
+\quad
+\ZZ/9\ZZ\times\ZZ/3\ZZ,
+\quad
+(\ZZ/3\ZZ)^3,
+$$
+and
+$$
+\ZZ/25\ZZ
+\quad\text{or}\quad
+(\ZZ/5\ZZ)^2.
+$$
+The choices for the three primes are independent, so the total number is
+$$
+2\cdot3\cdot2=12.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 answer part (a), and step <1>3 answers part (b).
+:::
 :::
