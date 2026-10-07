@@ -61,4 +61,9 @@ $(p-1)!=1$. The two divisibilities imply $|\rho(H)|=1$.
 Consequently $H\subseteq\ker\rho$, and step <1>1 gives the reverse
 containment. Therefore $H=\ker\rho\lhd G$.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 is the required conclusion.
+:::
 :::
