@@ -126,4 +126,11 @@ where the nonidentity element of $C_2$ acts on $C_3$ by
 inversion, as the relation $srs=r^{-1}$ explicitly shows.
 This is not a direct product, since $r\ne r^{-1}$.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), step <1>2 proves part (b), and step <1>3
+proves parts (c)--(d).
+:::
 :::
