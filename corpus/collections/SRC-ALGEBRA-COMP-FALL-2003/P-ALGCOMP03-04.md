@@ -164,4 +164,9 @@ because every \(a\in K\) satisfies \(a^{p^n}=a\), and hence
 \]
 Uniqueness follows from injectivity of Frobenius.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 gives all intermediate fields in part (a), and step <1>2 proves the unique $p$-th-root statement in part (b).
+:::
 :::
