@@ -99,4 +99,9 @@ a repeated root, so $u$ is not separable over $F$ and $K/F$ is not
 separable. In fact every $r(u)\in\mathbb F_p(u)$ satisfies
 $r(u)^p=r(u^p)\in F$, so the extension is purely inseparable.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 answers part (a), and step <1>2 gives the required example in part (b).
+:::
 :::
