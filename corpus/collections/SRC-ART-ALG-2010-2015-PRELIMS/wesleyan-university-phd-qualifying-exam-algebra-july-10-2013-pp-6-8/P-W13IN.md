@@ -76,4 +76,11 @@ $$
 If $n=1$, the action is trivial and the construction gives
 $K=H=G$, with index $1=1!$.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 construct the required subgroup $K$, prove that it is
+normal in $G$ and contained in $H$, and establish $[G:K]\mid n!$.
+:::
 :::
