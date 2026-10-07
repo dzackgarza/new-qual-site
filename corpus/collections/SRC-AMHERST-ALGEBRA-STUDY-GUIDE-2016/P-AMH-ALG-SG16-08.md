@@ -23,7 +23,50 @@ Prove that $x^{42}\in N$ for every $x\in G$.
 :::
 
 ::: {.solution}
-Proof.
-The quotient groupG/N has order 42 since|G/N| = [G :N] = 42. Given any x∈G, consider the coset Nx∈ G/N. By Lagrange’s Theorem applied to the group G/N and the element Nx, we have (Nx)42 =Ne, since Ne is the identity element of G/N. Now (Nx)42 =N(x42) [by deﬁnition of the group operation in G/N], and therefore Nx 42 =Ne, and hence x42 =x42e−1∈N by the coset relation.
-QED
+<1>1. The quotient group $G/N$ has order $42$.
+::: {.proof}
+Since $N\trianglelefteq G$ and
+$$
+[G:N]=42,
+$$
+the quotient is defined and satisfies
+$$
+|G/N|=[G:N]=42.
+$$
+:::
+
+<1>2. For every $x\in G$,
+$$
+(xN)^{42}=N
+$$
+in $G/N$.
+::: {.proof}
+By Lagrange's theorem, the order of the element $xN\in G/N$ divides
+$$
+|G/N|=42.
+$$
+Hence its $42$-nd power is the identity coset $N$.
+:::
+
+<1>3. Therefore
+$$
+\boxed{x^{42}\in N}
+$$
+for every $x\in G$.
+::: {.proof}
+By the quotient-group multiplication law,
+$$
+(xN)^{42}=x^{42}N.
+$$
+Step <1>2 gives
+$$
+x^{42}N=N,
+$$
+which is equivalent to $x^{42}\in N$.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
