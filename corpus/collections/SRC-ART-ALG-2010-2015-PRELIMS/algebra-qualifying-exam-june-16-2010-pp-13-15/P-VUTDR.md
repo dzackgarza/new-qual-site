@@ -95,4 +95,10 @@ Therefore $t=(3-2)t=0$. Every element of the tensor
 product is a finite sum of elementary tensors, so the
 whole tensor product is zero, as required.
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 answer parts (a)--(d), respectively.
+:::
 :::
