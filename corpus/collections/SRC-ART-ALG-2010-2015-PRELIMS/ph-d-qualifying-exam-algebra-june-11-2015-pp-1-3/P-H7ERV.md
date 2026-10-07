@@ -24,54 +24,71 @@ Prove that there are at most two fields $M \subseteq \overline{F}$ conjugate to 
 :::
 
 ::: {.solution}
-**Goal.** For $[K:F] = 2$ and $L/K$ finite Galois, show there are at most two fields conjugate to $L$ over $F$.
+<1>1. The quadratic extension $K/F$ is Galois, and
+$|\Aut_F(K)|=2$.
 
-<1>1. The $F$-conjugates of $L$ are the images $\sigma(L)$ for $\sigma \in \operatorname{Aut}_F(\overline F)$.
 ::: {.proof}
-an $F$-isomorphism $L \to M$ extends to an automorphism of $\overline F$ fixing $F$, so $M = \sigma(L)$ for some $\sigma$.
-:::
-
-<1>2. $K/F$ is Galois (degree $2$ in characteristic $0$).
-::: {.proof}
-any degree-$2$ extension in characteristic $0$ is Galois (it is the splitting field of a quadratic).
-:::
-
-<1>3. Hence $\sigma(K) = K$ for all $\sigma \in \operatorname{Aut}_F(\overline F)$.
-::: {.proof}
-$K/F$ is Galois, so it is stable under every $F$-automorphism of $\overline F$.
+Because $\operatorname{char}F=0$, every algebraic extension of $F$ is
+separable. A separable extension of degree $2$ is normal: if
+$K=F(\alpha)$ and the minimal polynomial of $\alpha$ has roots
+$\alpha$ and $\alpha'$, then
+$\alpha'=-b-\alpha\in K$ for a quadratic
+$X^2+bX+c\in F[X]$. Hence $K/F$ is Galois. Therefore
+$$
+|\Aut_F(K)|=[K:F]=2.
+$$
 :::
 
-<1>4. $L/K$ is Galois, so $\sigma(L)$ depends only on $\sigma|_K$.
-<2>1. For $\sigma \in \operatorname{Aut}_F(\overline F)$, $\sigma(L)$ is a $K$-conjugate of $L$ (since $\sigma(K) = K$).
+<1>2. Every field $M\subseteq\overline F$ conjugate to $L$ over $F$ has
+the form $M=\sigma(L)$ for some
+$\sigma\in\Aut_F(\overline F)$.
+
 ::: {.proof}
-$\sigma|_K$ is an automorphism of $K$, and $\sigma(L)$ is a $K$-conjugate of $L$.
-:::
-<2>2. Since $L/K$ is Galois, $\sigma(L) = L$ for all $\sigma$ fixing $K$.
-::: {.proof}
-a Galois extension is stable under all $K$-automorphisms of $\overline F$.
-:::
-<2>3. Hence $\sigma(L)$ depends only on $\sigma|_K$.
-::: {.proof}
-if $\sigma|_K = \tau|_K$, then $\sigma^{-1}\tau$ fixes $K$, so $\sigma^{-1}\tau(L) = L$, i.e. $\sigma(L) = \tau(L)$.
+An $F$-isomorphism $L\to M$ is an embedding of the finite separable
+extension $L/F$ into the algebraic closure $\overline F$. By the extension
+theorem for embeddings of algebraic extensions, it extends to an
+$F$-automorphism $\sigma$ of $\overline F$. Its image of $L$ is exactly
+$M$.
 :::
 
-<1>5. There are at most two choices for $\sigma|_K$.
-<2>1. $\operatorname{Aut}_F(K)$ has order $2$ (since $[K:F] = 2$ and $K/F$ is Galois).
+<1>3. For every $\sigma\in\Aut_F(\overline F)$, one has
+$\sigma(K)=K$.
+
 ::: {.proof}
-$|\operatorname{Aut}_F(K)| = [K:F] = 2$.
-:::
-<2>2. Hence $\sigma|_K$ is one of at most two automorphisms.
-::: {.proof}
-$\sigma|_K \in \operatorname{Aut}_F(K)$, which has two elements.
+By step <1>1, $K/F$ is normal. Hence every $F$-embedding of $K$ into
+$\overline F$ has image $K$. Restricting $\sigma$ to $K$ gives such an
+embedding.
 :::
 
-<1>6. Hence there are at most two $F$-conjugates of $L$.
+<1>4. If $\sigma,\tau\in\Aut_F(\overline F)$ have
+$\sigma|_K=\tau|_K$, then
+$$
+\sigma(L)=\tau(L).
+$$
+
 ::: {.proof}
-by <1>4.3, $\sigma(L)$ is determined by $\sigma|_K$, and by <1>5.2 there are at most two such restrictions.
+By step <1>3, both $\sigma$ and $\tau$ stabilize $K$. Therefore
+$\sigma^{-1}\tau$ fixes $K$ pointwise. Since $L/K$ is Galois, hence
+normal, every $K$-automorphism of $\overline F$ stabilizes $L$. Thus
+$$
+(\sigma^{-1}\tau)(L)=L.
+$$
+Applying $\sigma$ gives $\tau(L)=\sigma(L)$.
 :::
 
-<1>7. Q.E.D.
+<1>5. There are at most two fields conjugate to $L$ over $F$.
+
 ::: {.proof}
-<1>6 is the claim.
+By step <1>2, every such field is $\sigma(L)$ for some
+$\sigma\in\Aut_F(\overline F)$. By step <1>4, this image depends only
+on the restriction $\sigma|_K$. Step <1>1 gives only two possible
+restrictions, namely the two elements of $\Aut_F(K)$. Hence at most two
+distinct images $\sigma(L)$ can occur.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required bound.
 :::
 :::
