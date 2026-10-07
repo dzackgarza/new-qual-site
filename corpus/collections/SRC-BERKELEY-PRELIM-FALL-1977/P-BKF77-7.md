@@ -136,4 +136,10 @@ $$
 =\frac\pi n\csc\left(\frac\pi{2n}\right).}
 $$
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the value of the required integral.
+:::
 :::
