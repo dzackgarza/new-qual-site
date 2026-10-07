@@ -105,4 +105,10 @@ the minimal polynomial. Its roots are the three distinct
 iterates above, so it is separable as well. The argument
 never divides by $2$ or $3$ and applies in every characteristic.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>2--<1>3 give the requested fixed field and minimal polynomial.
+:::
 :::
