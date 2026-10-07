@@ -186,4 +186,11 @@ $$
 so equality holds throughout and $[E^P:M]=1$.
 Therefore $E^P=M$, as claimed.
 :::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), step <1>2 proves part (b), step <1>4 proves
+part (c), and step <1>5 proves part (d).
+:::
 :::
