@@ -98,4 +98,9 @@ $$
 \boxed{\phi^{-1}(5)=\{1,5\}.}
 $$
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 determines $\phi$, step <1>2 gives its image and kernel, and step <1>3 gives the requested fiber.
+:::
 :::
