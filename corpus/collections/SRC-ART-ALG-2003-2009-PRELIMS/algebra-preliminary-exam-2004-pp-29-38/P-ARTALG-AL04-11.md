@@ -108,4 +108,9 @@ $$
 $$
 is the unique subfield of order $25$, answering part (b).
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 gives the only possible subfield orders, step <1>2 realizes each one, and step <1>3 proves uniqueness, including the order-$25$ case.
+:::
 :::
