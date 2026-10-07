@@ -102,4 +102,9 @@ $$
 $$
 This verifies both conditions in part (b).
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>2 proves part (a), and step <1>3 provides the counterexample required in part (b).
+:::
 :::
