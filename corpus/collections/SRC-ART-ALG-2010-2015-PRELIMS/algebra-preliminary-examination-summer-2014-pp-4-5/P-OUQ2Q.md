@@ -30,59 +30,182 @@ c. What are all the of the abelian groups of size 24 (up to isomorphism)?
 :::
 
 ::: {.solution}
-<1>1. Constraints on minimal and characteristic polynomials of $A$:
-<2>1. The condition $A^6 = I$ implies that the minimal polynomial $m_A(x)$ divides $x^6 - 1 \in \mathbb{Q}[x]$.
-The factorization of $x^6 - 1$ into irreducible polynomials over $\mathbb{Q}$ is:
-\[
-x^6 - 1 = (x - 1)(x + 1)(x^2 + x + 1)(x^2 - x + 1) = \Phi_1(x) \Phi_2(x) \Phi_3(x) \Phi_6(x).
-\]
-Because $x^6 - 1$ is square-free, $m_A(x)$ is square-free.
-The multiplicative order of $A$ is $6$ if and only if the least common multiple of the orders of the roots of $m_A(x)$ is $6$.
-This requires that either $\Phi_6(x) = x^2 - x + 1 \mid m_A(x)$, or both $\Phi_2(x) = x + 1$ and $\Phi_3(x) = x^2 + x + 1$ divide $m_A(x)$.
+Write
+$$
+\Phi_1=x-1,
+\qquad
+\Phi_2=x+1,
+\qquad
+\Phi_3=x^2+x+1,
+\qquad
+\Phi_6=x^2-x+1.
+$$
+For $j\in\{1,2,3,6\}$, put
+$$
+M_j=\QQ[x]/(\Phi_j).
+$$
 
-<1>2. Parts (a) and (b): Isomorphism classes and Rational Canonical Forms:
-<2>1. The invariant factors $d_1(x) \mid \cdots \mid d_k(x)$ of the $\mathbb{Q}[x]$-module $\mathbb{Q}^4$ are monic polynomials with $\sum \deg(d_i) = 4$ and $d_k(x) = m_A(x)$.
-The companion matrix of a monic polynomial $p(x) = x^n + c_{n-1}x^{n-1} + \dots + c_0$ is denoted $C(p)$.
+<1>1. The $\QQ[x]$-module $\QQ^4$ is a direct sum of copies of
+$M_1,M_2,M_3,M_6$, and the multiplicities
+$(a,b,c,d)$ satisfy
+$$
+a+b+2c+2d=4.
+$$
 
-<2>2. **Class 1:** Invariant factors $d_1(x) = x^2 - x + 1$, $d_2(x) = x^2 - x + 1$.
-- Module: $\mathbb{Q}[x]/\langle x^2 - x + 1 \rangle \oplus \mathbb{Q}[x]/\langle x^2 - x + 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 1 \end{pmatrix}$.
+::: {.proof}
+Since $A$ has multiplicative order $6$, one has $A^6=I$, so the minimal
+polynomial of $A$ divides
+$$
+x^6-1
+=\Phi_1\Phi_2\Phi_3\Phi_6.
+$$
+These four factors are distinct irreducibles in $\QQ[x]$, so
+$x^6-1$ is square-free. Hence the corresponding
+$\QQ[x]$-module is semisimple and decomposes as
+$$
+M_1^{\oplus a}\oplus
+M_2^{\oplus b}\oplus
+M_3^{\oplus c}\oplus
+M_6^{\oplus d}.
+$$
+The dimensions over $\QQ$ of these four simple modules are
+$1,1,2,2$, respectively, which gives the displayed dimension equation.
+:::
 
-<2>3. **Class 2:** Invariant factors $d_1(x) = x - 1$, $d_2(x) = (x - 1)(x^2 - x + 1) = x^3 - 2x^2 + 2x - 1$.
-- Module: $\mathbb{Q}[x]/\langle x - 1 \rangle \oplus \mathbb{Q}[x]/\langle x^3 - 2x^2 + 2x - 1 \rangle$.
-- RCF: $\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 1 & 0 & -2 \\ 0 & 0 & 1 & 2 \end{pmatrix}$.
+<1>2. The matrix $A$ has order exactly $6$ if and only if
+$$
+d>0
+\qquad\text{or}\qquad
+(b>0\text{ and }c>0).
+$$
 
-<2>4. **Class 3:** Invariant factors $d_1(x) = x + 1$, $d_2(x) = (x + 1)(x^2 - x + 1) = x^3 + 1$.
-- Module: $\mathbb{Q}[x]/\langle x + 1 \rangle \oplus \mathbb{Q}[x]/\langle x^3 + 1 \rangle$.
-- RCF: $\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{pmatrix}$.
+::: {.proof}
+The roots of $\Phi_j$ are primitive $j$th roots of unity. Because the
+minimal polynomial is square-free, the order of $A$ is the least common
+multiple of the orders $j$ for which $M_j$ occurs. Thus the least common
+multiple is $6$ exactly when a primitive sixth root occurs, or when both
+orders $2$ and $3$ occur.
+:::
 
-<2>5. **Class 4:** Single invariant factor $d_1(x) = (x^2 - 1)(x^2 - x + 1) = x^4 - x^3 + x - 1$.
-- Module: $\mathbb{Q}[x]/\langle x^4 - x^3 + x - 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & -1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 1 \end{pmatrix}$.
+<1>3. The seven possible module isomorphism classes in part (a) are
+$$
+\boxed{
+\begin{aligned}
+&M_6\oplus M_6,\\
+&M_3\oplus M_6,\\
+&M_2\oplus M_2\oplus M_6,\\
+&M_2\oplus M_2\oplus M_3,\\
+&M_1\oplus M_2\oplus M_6,\\
+&M_1\oplus M_2\oplus M_3,\\
+&M_1\oplus M_1\oplus M_6.
+\end{aligned}}
+$$
 
-<2>6. **Class 5:** Single invariant factor $d_1(x) = (x + 1)(x^3 - 1) = x^4 + x^3 - x - 1$.
-- Module: $\mathbb{Q}[x]/\langle x^4 + x^3 - x - 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & -1 \end{pmatrix}$.
+::: {.proof}
+By step <1>1, the multiplicity quadruples satisfy
+$a+b+2c+2d=4$, and step <1>2 imposes the order-$6$ condition.
 
-<2>7. **Class 6:** Single invariant factor $d_1(x) = (x^2 + x + 1)(x^2 - x + 1) = x^4 + x^2 + 1$.
-- Module: $\mathbb{Q}[x]/\langle x^4 + x^2 + 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & 0 & 0 & -1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}$.
+If $d=2$, the only solution is $(0,0,0,2)$.
+If $d=1$, the remaining dimension is $2$, giving
+$$
+(0,0,1,1),\quad
+(2,0,0,1),\quad
+(1,1,0,1),\quad
+(0,2,0,1).
+$$
+If $d=0$, step <1>2 requires $b,c>0$. Then necessarily $c=1$ and
+$a+b=2$, giving
+$$
+(1,1,1,0),\quad(0,2,1,0).
+$$
+These seven possibilities are pairwise nonisomorphic by uniqueness of
+the primary decomposition over the PID $\QQ[x]$.
+:::
 
-<1>3. Part (c): Classification of abelian groups of order 24:
-<2>1. Since $24 = 2^3 \cdot 3$, by the Fundamental Theorem of Finite Abelian Groups, any abelian group of order 24 is the direct product of its Sylow 2-subgroup and Sylow 3-subgroup:
-\[
-G \cong P_2 \times P_3.
-\]
-<2>2. The Sylow 3-subgroup has order 3, so $P_3 \cong \mathbb{Z}/3\mathbb{Z}$.
-The Sylow 2-subgroup has order $2^3 = 8$, corresponding to the partitions of 3:
-- Partition $3$: $P_2 \cong \mathbb{Z}/8\mathbb{Z}$,
-- Partition $2 + 1$: $P_2 \cong \mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$,
-- Partition $1 + 1 + 1$: $P_2 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
-<2>3. Combining with $P_3 \cong \mathbb{Z}/3\mathbb{Z}$ gives exactly three non-isomorphic abelian groups of order 24:
-1. $\mathbb{Z}/8\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/24\mathbb{Z}$,
-2. $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/12\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$,
-3. $(\mathbb{Z}/2\mathbb{Z})^3 \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z} \times (\mathbb{Z}/2\mathbb{Z})^2$.
+<1>4. For a monic polynomial
+$$
+p(x)=x^r+c_{r-1}x^{r-1}+\cdots+c_0,
+$$
+write
+$$
+C(p)=
+\begin{pmatrix}
+0&0&\cdots&0&-c_0\\
+1&0&\cdots&0&-c_1\\
+0&1&\cdots&0&-c_2\\
+\vdots&\vdots&\ddots&\vdots&\vdots\\
+0&0&\cdots&1&-c_{r-1}
+\end{pmatrix}.
+$$
+The seven rational canonical forms corresponding to step <1>3 are
+$$
+\boxed{
+\begin{aligned}
+&\operatorname{diag}(C(\Phi_6),C(\Phi_6)),\\
+&C(\Phi_3\Phi_6),\\
+&\operatorname{diag}(C(\Phi_2),C(\Phi_2\Phi_6)),\\
+&\operatorname{diag}(C(\Phi_2),C(\Phi_2\Phi_3)),\\
+&C(\Phi_1\Phi_2\Phi_6),\\
+&C(\Phi_1\Phi_2\Phi_3),\\
+&\operatorname{diag}(C(\Phi_1),C(\Phi_1\Phi_6)).
+\end{aligned}}
+$$
 
-<1>4. Conclusion:
-There are 6 isomorphism classes of $\mathbb{Q}[x]$-modules with their corresponding RCF matrices, and 3 abelian groups of size 24. Q.E.D.
+::: {.proof}
+The invariant factors are obtained by placing each irreducible factor
+$\Phi_j$ into the last as many invariant factors as its multiplicity.
+Thus the seven invariant-factor lists are
+$$
+\begin{aligned}
+&(\Phi_6,\Phi_6),\\
+&(\Phi_3\Phi_6),\\
+&(\Phi_2,\Phi_2\Phi_6),\\
+&(\Phi_2,\Phi_2\Phi_3),\\
+&(\Phi_1\Phi_2\Phi_6),\\
+&(\Phi_1\Phi_2\Phi_3),\\
+&(\Phi_1,\Phi_1\Phi_6).
+\end{aligned}
+$$
+Each list satisfies the required divisibility chain, and its companion
+blocks give the displayed rational canonical form. Explicitly,
+$$
+\begin{aligned}
+\Phi_3\Phi_6&=x^4+x^2+1,\\
+\Phi_2\Phi_6&=x^3+1,\\
+\Phi_2\Phi_3&=x^3+2x^2+2x+1,\\
+\Phi_1\Phi_2\Phi_6&=x^4-x^3+x-1,\\
+\Phi_1\Phi_2\Phi_3&=x^4+x^3-x-1,\\
+\Phi_1\Phi_6&=x^3-2x^2+2x-1.
+\end{aligned}
+$$
+:::
+
+<1>5. The abelian groups of order $24$ are
+$$
+\boxed{
+\ZZ/24,\qquad
+\ZZ/2\times\ZZ/12,\qquad
+(\ZZ/2)^2\times\ZZ/6}.
+$$
+
+::: {.proof}
+Since $24=2^3\cdot3$, the classification theorem for finite abelian
+groups gives three possibilities for the Sylow $2$-subgroup,
+$$
+\ZZ/8,
+\qquad
+\ZZ/4\times\ZZ/2,
+\qquad
+(\ZZ/2)^3,
+$$
+and the unique Sylow $3$-part $\ZZ/3$. Combining relatively prime cyclic
+factors gives exactly the three displayed groups.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>3 answers part (a), step <1>4 answers part (b), and step <1>5
+answers part (c).
+:::
 :::
