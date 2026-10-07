@@ -83,4 +83,11 @@ The minimal polynomial of $u$ over $F$ therefore has a
 repeated root and is not separable. Hence $K/F$ is a
 finite-dimensional, nonseparable extension, as required.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 supplies the example for part (a), and step <1>2 supplies the
+example for part (b).
+:::
 :::
