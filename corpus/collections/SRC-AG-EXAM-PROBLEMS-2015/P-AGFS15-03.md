@@ -49,7 +49,7 @@ Write
 \[
 S=\{p_1,\dots,p_r\}.
 \]
-For every \(i\), the point \(p_i\) does not lie in \(Z\). Hence the homogeneous ideal \(I(Z)\) is not contained in the homogeneous maximal ideal of \(p_i\). Therefore there is a homogeneous polynomial
+For every \(i\), the point \(p_i\) does not lie in \(Z\). Hence the homogeneous ideal \(I(Z)\) is not contained in the homogeneous prime ideal \(I(p_i)\) of the point \(p_i\). Therefore there is a homogeneous polynomial
 \[
 f_i\in I(Z)
 \]
@@ -93,5 +93,10 @@ On the other hand, \(F(p_i)\ne0\) for every \(p_i\in S\), so
 S\subseteq U.
 \]
 Thus \(U\) is an affine open subset of \(X\) containing \(S\).
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 constructs a homogeneous polynomial whose principal open avoids $Z$ and contains $S$, and step <1>2 proves that this principal open is affine and lies in $X$.
 :::
 :::
