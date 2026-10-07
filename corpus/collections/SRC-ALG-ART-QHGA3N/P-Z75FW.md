@@ -45,8 +45,16 @@ These are the Sylow divisibility and congruence conditions.
 The positive divisors of \(4\) are \(1,2,4\). Among these, only \(1\) is congruent to \(1\pmod{37}\).
 :::
 
-<1>3. Therefore \(G\) is not simple.
+<1>3. Therefore
+$$
+\boxed{G\text{ is not simple}}.
+$$
 ::: {.proof}
-By <1>2, the Sylow \(37\)-subgroup is unique, hence normal. Its order is \(37\), so it is nontrivial and proper in \(G\). Thus \(G\) has a nontrivial proper normal subgroup and cannot be simple.
+By step <1>2, the Sylow \(37\)-subgroup is unique, hence normal. Its order is \(37\), so it is nontrivial and proper in \(G\). Thus \(G\) has a nontrivial proper normal subgroup and cannot be simple.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
 :::
 :::
