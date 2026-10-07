@@ -112,4 +112,10 @@ $$
 \boxed{|\mathbb Z_{pq}^\times|=(p-1)(q-1).}
 $$
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 prove parts (a)--(c), respectively.
+:::
 :::
