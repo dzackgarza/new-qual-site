@@ -20,6 +20,26 @@ Give an explanation for your answer.
 :::
 
 ::: {.solution}
-By the Riemann--Hurwitz formula, if we have a mapping $f$ of finite degree $d$ from one smooth projective (irreducible, say) curve onto another, the Euler characteristic of the source curve is $d$ times the Euler characteristic of the target minus a certain nonnegative number $e$, and moreover $e$ is zero if and only if the mapping is unramified.
-Now compute: the Euler characteristic of our source and target curves is, by hypothesis, $0$, so this $e$ is zero, and therefore the mapping is unramified.
+<1>1. The total ramification of the map is zero.
+::: {.proof}
+Let $f:C\to D$ have finite degree $d$, with $g(C)=g(D)=1$. The Riemann--Hurwitz formula gives
+$$
+2g(C)-2=d\bigl(2g(D)-2\bigr)+\sum_{p\in C}(e_p-1),
+$$
+where $e_p\ge1$ is the ramification index at $p$. Since both genera are $1$,
+$$
+0=\sum_{p\in C}(e_p-1).
+$$
+Each summand is nonnegative, so every summand is zero.
+:::
+
+<1>2. The maximum number of ramification points is $\boxed{0}$.
+::: {.proof}
+By step <1>1, $e_p=1$ for every $p\in C$. Thus $f$ is unramified and has no ramification points.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 gives the requested maximum and its justification.
+:::
 :::
