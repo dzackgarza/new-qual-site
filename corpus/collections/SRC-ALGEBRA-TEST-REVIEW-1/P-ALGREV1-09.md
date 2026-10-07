@@ -73,4 +73,9 @@ $$
 \boxed{\text{sometimes true}.}
 $$
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the requested classification.
+:::
 :::
