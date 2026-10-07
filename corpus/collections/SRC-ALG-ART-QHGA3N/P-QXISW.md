@@ -27,7 +27,7 @@ Show that $S_p = \gens{\tau, \sigma}$ where $\tau$ is a transposition and $\sigm
 
 
 ::: {.solution}
-<1>1. Label the letters moved by \(\sigma\) as the elements of \(\mathbb Z/p\mathbb Z\) so that
+<1>1. Label the letters moved by \(\sigma\) as the elements of \(\ZZ/p\ZZ\) so that
 \[
 \sigma(i)=i+1.
 \]
@@ -35,12 +35,12 @@ Write the transposition as
 \[
 \tau=(a,\,a+d)
 \]
-for some nonzero \(d\in\mathbb Z/p\mathbb Z\).
+for some nonzero \(d\in\ZZ/p\ZZ\).
 ::: {.proof}
-A \(p\)-cycle acts transitively on the \(p\) letters, so after relabeling we may identify its action with translation by \(1\) on \(\mathbb Z/p\mathbb Z\). Since \(\tau\) is a transposition, its two entries are distinct, hence their difference \(d\) is nonzero.
+A \(p\)-cycle acts transitively on the \(p\) letters, so after relabeling we may identify its action with translation by \(1\) on \(\ZZ/p\ZZ\). Since \(\tau\) is a transposition, its two entries are distinct, hence their difference \(d\) is nonzero.
 :::
 
-<1>2. For every \(k\in\mathbb Z/p\mathbb Z\), the subgroup \(\langle\tau,\sigma\rangle\) contains the transposition
+<1>2. For every \(k\in\ZZ/p\ZZ\), the subgroup \(\langle\tau,\sigma\rangle\) contains the transposition
 \[
 (a+k,\,a+d+k).
 \]
@@ -52,13 +52,13 @@ Conjugating \(\tau\) by \(\sigma^k\) gives
 Since \(\tau,\sigma\in\langle\tau,\sigma\rangle\), every such conjugate lies in the subgroup.
 :::
 
-<1>3. The graph on \(\mathbb Z/p\mathbb Z\) with edges
+<1>3. The graph on \(\ZZ/p\ZZ\) with edges
 \[
 \{i,i+d\}
 \]
 is connected.
 ::: {.proof}
-Because \(p\) is prime and \(d\neq0\), the element \(d\) generates the additive group \(\mathbb Z/p\mathbb Z\). Thus from any vertex \(i\), repeated addition of \(d\) reaches every vertex.
+Because \(p\) is prime and \(d\neq0\), the element \(d\) generates the additive group \(\ZZ/p\ZZ\). Thus from any vertex \(i\), repeated addition of \(d\) reaches every vertex.
 :::
 
 <1>4. The transpositions corresponding to the edges of a connected graph on \(p\) vertices generate \(S_p\).
@@ -75,9 +75,14 @@ the edge transpositions generate the transposition \((r,v)\); explicitly, conjug
 
 <1>5. Therefore
 \[
-S_p=\langle\tau,\sigma\rangle.
+\boxed{S_p=\langle\tau,\sigma\rangle}.
 \]
 ::: {.proof}
-By <1>2, \(\langle\tau,\sigma\rangle\) contains every edge transposition of the connected graph in <1>3. By <1>4 these transpositions generate \(S_p\). The reverse inclusion is automatic because \(\tau,\sigma\in S_p\).
+By step <1>2, \(\langle\tau,\sigma\rangle\) contains every edge transposition of the connected graph in step <1>3. By step <1>4 these transpositions generate \(S_p\). The reverse inclusion is automatic because \(\tau,\sigma\in S_p\).
+:::
+
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 is the required equality.
 :::
 :::
