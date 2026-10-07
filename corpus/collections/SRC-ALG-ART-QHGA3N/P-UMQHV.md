@@ -56,7 +56,7 @@ f(x)=\sum_j a_{pj}x^{pj}=h(x^p)
 with \(h(y)=\sum_j a_{pj}y^j\in k[y]\).
 :::
 
-<1>3. In <1>2, if \(f\) is irreducible, then \(h\) is irreducible.
+<1>3. In step <1>2, if \(f\) is irreducible, then \(h\) is irreducible.
 ::: {.proof}
 If \(h=ab\) with nonconstant \(a,b\in k[x]\), then
 \[
@@ -65,13 +65,13 @@ f(x)=h(x^p)=a(x^p)b(x^p)
 would be a nontrivial factorization of \(f\), contradicting irreducibility.
 :::
 
-<1>4. Repeating <1>2 and <1>3 finitely many times gives
+<1>4. Repeating step <1>2 and step <1>3 finitely many times gives
 \[
-f(x)=g(x^{p^d})
+\boxed{f(x)=g(x^{p^d})}
 \]
 for some \(d\ge0\), where \(g\in k[x]\) is irreducible and \(g'\neq0\).
 ::: {.proof}
-Whenever the current irreducible polynomial has zero derivative, <1>2 writes it as \(h(x^p)\), and <1>3 shows \(h\) remains irreducible. Its degree is divided by \(p\), so the process strictly decreases degree and must terminate. At termination the resulting irreducible polynomial \(g\) has nonzero derivative.
+Whenever the current irreducible polynomial has zero derivative, step <1>2 writes it as \(h(x^p)\), and step <1>3 shows \(h\) remains irreducible. Its degree is divided by \(p\), so the process strictly decreases degree and must terminate. At termination the resulting irreducible polynomial \(g\) has nonzero derivative.
 :::
 
 <1>5. The terminal polynomial \(g\) is separable.
@@ -92,7 +92,7 @@ Then
 f(x)=c\prod_{i=1}^r (x-\alpha_i)^{p^d}.
 \]
 ::: {.proof}
-By <1>5 the roots \(\beta_i\) are distinct. In characteristic \(p\), Frobenius gives
+By step <1>5 the roots \(\beta_i\) are distinct. In characteristic \(p\), Frobenius gives
 \[
 x^{p^d}-\beta_i=x^{p^d}-\alpha_i^{p^d}=(x-\alpha_i)^{p^d}.
 \]
@@ -104,8 +104,16 @@ f(x)=g(x^{p^d})
 \]
 :::
 
-<1>7. Every root of \(f\) has multiplicity exactly \(p^d\).
+<1>7. Every root of \(f\) has multiplicity exactly
+\[
+\boxed{p^d}.
+\]
 ::: {.proof}
-The roots \(\alpha_i\) are distinct: if \(\alpha_i=\alpha_j\), then \(\beta_i=\alpha_i^{p^d}=\alpha_j^{p^d}=\beta_j\), contradicting distinctness of the roots of \(g\). Thus the factorization in <1>6 has distinct linear factors, each occurring with exponent \(p^d\).
+The roots \(\alpha_i\) are distinct: if \(\alpha_i=\alpha_j\), then \(\beta_i=\alpha_i^{p^d}=\alpha_j^{p^d}=\beta_j\), contradicting distinctness of the roots of \(g\). Thus the factorization in step <1>6 has distinct linear factors, each occurring with exponent \(p^d\).
+:::
+
+<1>8. Q.E.D.
+::: {.proof}
+Step <1>4 gives the required representation with irreducible $g$, step <1>5 proves that $g$ is separable, and step <1>7 gives the common multiplicity of the roots of $f$.
 :::
 :::
