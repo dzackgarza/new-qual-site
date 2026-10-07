@@ -95,4 +95,10 @@ Therefore $\overline\phi$ is a bijective ring homomorphism
 and hence the desired ring isomorphism. The argument does
 not require $I$ or $J$ to be proper.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and steps <1>2--<1>3 prove part (b).
+:::
 :::
