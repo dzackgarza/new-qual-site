@@ -65,4 +65,9 @@ $$
 \boxed{\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G).}
 $$
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 is the required conclusion.
+:::
 :::
