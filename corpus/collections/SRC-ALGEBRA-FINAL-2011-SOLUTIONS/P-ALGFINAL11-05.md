@@ -33,37 +33,241 @@ Total points:[80]
 :::
 
 ::: {.solution}
-(a) A real cube root x of $( - 1 + \sqrt { a ^ { 2 } - 4 } ) / 2$ is a root of $f .$ It is easy to check that if y is any root of f then $\omega y , \omega ^ { 2 } y , 1 / y , \omega / y$ , and $\omega ^ { 2 } / y$ are also roots.
-Since $y \ne 0$ , therefore $y \ne$ ωy and $y \ne \omega ^ { 2 } y$ . If $y = \omega ^ { i } / y \ ( 0 \leq i \leq 2 )$ then $y ^ { 3 } = 1 / y ^ { 3 }$ , so $y ^ { 3 } = \pm 1$ , and $y ^ { 6 } + a y ^ { 3 } + 1 = 1 \pm a + 1 \neq 0$ because $a = \pm 2 \implies f$ reducible.
-So $y \neq \omega ^ { i } / y ;$ and as before $y \neq \omega ^ { j } y \ ( j = 1 , 2 )$ . Thus the roots are distinct, and (a) results.
-
-(b) By $( \mathrm { a } ) , F = \mathbb { Q } ( x , \omega )$ ; and since x is real and $\omega$ is not, and x is a root of a degree-6 irreducible polynomial, therefore
-
+<1>1. Since $f$ is irreducible, $a\ne\pm2$; thus the hypothesis $|a|\ge2$ actually gives $|a|>2$.
+::: {.proof}
+If $a=2$, then
 $$
-| \mathcal { G } | = [ F : \mathbb { Q } ] = [ \mathbb { Q } ( x , \omega ) : \mathbb { Q } ( x ) ] [ \mathbb { Q } ( x ) : \mathbb { Q } ] = 2 \cdot 6 = 1 2 .
+f(X)=(X^3+1)^2,
 $$
-
-The two automorphisms of $\mathbb { Q } ( \omega )$ extend to automorphisms of the splitting field $F$ (shown in class).
-An extension θ is uniquely determined by $\theta ( x )$ , which is a root of $f ,$ so there are at most six extensions, and there must be exactly six because $F$ has twelve automorphisms.
-In other words, for each root $y$ of $f _ { : }$ there is $\textrm { a } \theta$ with $\theta ( x ) = y$ . Thus the nonidentity automorphism of $\mathbb { Q } ( \omega )$ , which takes ω to $\omega ^ { 2 }$ , extends to an automorphism $\psi$ of $F$ with $\psi x = \omega / x$ . Then
-
+and if $a=-2$, then
 $$
-\psi ^ { 2 } ( x ) = \psi ( \omega / x ) = \omega ^ { 2 } / ( \omega / x ) = \omega x \neq x ,
+f(X)=(X^3-1)^2.
 $$
+Both are reducible, contrary to hypothesis.
+:::
 
-whence $\psi ^ { 4 } ( x ) = \omega ^ { 2 } x$ and $\psi ^ { 6 } ( x ) = x ,$ . Also $\psi ^ { 3 } ( \omega ) = \omega ^ { 2 } \ne \omega ;$ and $\psi ^ { 6 } ( \omega ) = \omega$ . Hence $\psi ^ { 6 }$ is the identity, while $\psi ^ { 2 }$ and $\psi ^ { 3 }$ are not—that is, $\psi$ has order 6. So ψ generates a cyclic subgroup $\mathcal { C } \subset \mathcal { G }$ , which is of index 2 and hence normal.
+<1>2. The polynomial $f$ has a real root $x$, and its six roots are
+$$
+\boxed{x,\ \omega x,\ \omega^2x,\ x^{-1},\ \omega x^{-1},\ \omega^2x^{-1}}.
+$$
+::: {.proof}
+Put
+$$
+t=X^3.
+$$
+Then $f(X)=0$ is equivalent to
+$$
+t^2+at+1=0.
+$$
+Since $|a|>2$ by step <1>1, the discriminant $a^2-4$ is positive, so this quadratic has two distinct nonzero real roots
+$$
+t_\pm=\frac{-a\pm\sqrt{a^2-4}}2,
+$$
+with
+$$
+t_+t_-=1.
+$$
+Choose a real cube root $x$ of one root, say $x^3=t_+$. Then
+$$
+x^{-3}=t_-=t_+^{-1}.
+$$
+The cube roots of $x^3$ are $x,\omega x,\omega^2x$, and the cube roots of $x^{-3}$ are $x^{-1},\omega x^{-1},\omega^2x^{-1}$. These are all six roots of $f$. Since $f$ is irreducible over $\QQ$ in characteristic zero, it is separable, so the six roots are distinct.
+:::
 
-An easy calculation shows that $\gamma \psi \gamma ^ { - 1 } = \psi ^ { - 1 }$ . (Just apply both sides to x and to $\omega . )$ So γ is not contained in C (which is commutative), and hence generates a complement of $\mathcal { C } .$ Thus $\mathcal { G } \cong \mathbb { Z } _ { 2 } \rtimes _ { \phi } \mathbb { Z } _ { 6 }$ where φ takes the generator of $\mathbb { Z } _ { 2 }$ to the automorphism $\xi \mapsto \xi ^ { - 1 }$ of $\mathbb { Z } _ { 6 }$ that is, $\mathcal { G } \cong D _ { 1 2 }$
+<1>3. The splitting field is
+$$
+F=\QQ(x,\omega)
+$$
+and
+$$
+[F:\QQ]=12.
+$$
+::: {.proof}
+Step <1>2 shows that all roots lie in $\QQ(x,\omega)$, so this is the splitting field. Since $f$ is irreducible of degree $6$,
+$$
+[\QQ(x):\QQ]=6.
+$$
+The element $x$ is real, so $\QQ(x)\subset\RR$, while $\omega\notin\RR$. Hence
+$$
+[\QQ(x,\omega):\QQ(x)]=2,
+$$
+and therefore
+$$
+[F:\QQ]=2\cdot6=12.
+$$
+:::
 
-(c) Fields $E$ with $[ E : \mathbb { Q } ] = 3$ correspond 1-1 to order-4 subgroups of $\mathcal { G } \cong D _ { 1 2 }$ , i.e., to Sylow 2-subgroups, of which there must be 1 or 3. There can’t be 1, because, $\mathrm { e . g . } , D _ { 1 2 }$ has seven elements of order 2 (as one sees, e.g., by representing $D _ { 1 2 }$ as a group of symmetries of a regular hexagon), each of which is contained in a Sylow 2-subgroup.
-So there are 3 subfields of degree 3, conjugate to each other (since that is true for the $\mathrm { S y }$ low 2-subgroups).
+<1>4. There is an automorphism $\psi\in\Gal(F/\QQ)$ such that
+$$
+\psi(x)=\frac{\omega}{x},
+\qquad
+\psi(\omega)=\omega^2.
+$$
+::: {.proof}
+Over $\QQ(\omega)$, the element $x$ still has degree $6$, because
+$$
+[F:\QQ(\omega)]=\frac{12}{2}=6.
+$$
+Thus $f$ is the minimal polynomial of $x$ over $\QQ(\omega)$.
 
-The polynomial $X ^ { 3 } - 3 X + a$ is irreducible over $\mathbb { Q } ,$ because it has the three given $\mathcal { G } _ { - }$ conjugate roots.
-So any of these roots generates a degree-3 subfield, whose conjugates are the subfields generated (respectively) by the other two roots.
-By the preceding paragraph, these must be the three sought-after subfields.
+Start with the nontrivial automorphism of $\QQ(\omega)/\QQ$, sending $\omega$ to $\omega^2$. The embedding-extension theorem allows it to extend to a $\QQ$-embedding of $F$ into an algebraic closure sending $x$ to any root of the conjugated minimal polynomial, which is again $f$. Choose the root $\omega/x$. Since $F/\QQ$ is normal, the resulting embedding has image $F$ and is an automorphism.
+:::
 
-Supplementary exercise.
-Prove that F has precisely three quadratic subfields, generated by the square roots of $- 3 , a ^ { 2 } - 4$ and $( - 3 ) ( a ^ { 2 } - 4 )$ , respectively.
+<1>5. The automorphism $\psi$ has order $6$.
+::: {.proof}
+Using step <1>4,
+$$
+\psi^2(x)
+=\psi\left(\frac\omega x\right)
+=\frac{\omega^2}{\omega/x}
+=\omega x,
+$$
+and therefore
+$$
+\psi^3(x)=x^{-1},
+\qquad
+\psi^4(x)=\omega^2x,
+\qquad
+\psi^6(x)=x.
+$$
+Also $\psi$ interchanges $\omega$ and $\omega^2$, so $\psi^6(\omega)=\omega$. Hence $\psi^6=1$.
 
-Which one is the fixed field of C ? Which contains the discriminant of f? $\mathrm { O f } X ^ { 3 } - 3 X + a ?$
+But $\psi^2(x)=\omega x\ne x$, and
+$$
+\psi^3(\omega)=\omega^2\ne\omega.
+$$
+Thus the order of $\psi$ is neither $1$, $2$, nor $3$; since it divides $6$, it is exactly $6$.
+:::
+
+<1>6. If $\gamma$ is complex conjugation on $F$, then
+$$
+\gamma^2=1
+\qquad\text{and}\qquad
+\gamma\psi\gamma^{-1}=\psi^{-1}.
+$$
+::: {.proof}
+Because $x$ is real,
+$$
+\gamma(x)=x,
+\qquad
+\gamma(\omega)=\omega^2.
+$$
+On the generators $x$ and $\omega$,
+$$
+(\gamma\psi\gamma)(x)
+=\gamma\left(\frac\omega x\right)
+=\frac{\omega^2}{x}
+=\psi^{-1}(x),
+$$
+and
+$$
+(\gamma\psi\gamma)(\omega)
+=\gamma\bigl(\psi(\omega^2)\bigr)
+=\gamma(\omega)
+=\omega^2
+=\psi^{-1}(\omega).
+$$
+Thus the automorphisms agree on generators of $F$.
+:::
+
+<1>7. The Galois group is
+$$
+\boxed{\Gal(F/\QQ)\cong D_{12}}.
+$$
+::: {.proof}
+By step <1>5, the subgroup
+$$
+C=\langle\psi\rangle
+$$
+has order $6$. Step <1>6 shows that $\gamma$ conjugates $\psi$ to $\psi^{-1}$, so $\gamma\notin C$ and
+$$
+\langle\psi,\gamma\rangle
+$$
+has the dihedral presentation
+$$
+\langle r,s:r^6=s^2=1,\ srs=r^{-1}\rangle.
+$$
+This subgroup has order $12$, equal to $|\Gal(F/\QQ)|$ by step <1>3. Hence it is the whole Galois group.
+:::
+
+<1>8. The group $D_{12}$ has exactly three subgroups of order $4$, and they are conjugate.
+::: {.proof}
+Write
+$$
+D_{12}=\langle\psi,\gamma:\psi^6=\gamma^2=1,\ \gamma\psi\gamma=\psi^{-1}\rangle.
+$$
+The element $\psi^3$ is the unique element of order $2$ in the rotation subgroup. Every Sylow $2$-subgroup has order $4$ and is generated by $\psi^3$ together with a reflection. The six reflections are
+$$
+\psi^k\gamma,
+\qquad
+0\le k<6,
+$$
+and the reflections with indices $k$ and $k+3$ generate the same subgroup with $\psi^3$. Thus the three Sylow $2$-subgroups are
+$$
+\langle\psi^3,\gamma\rangle,
+\qquad
+\langle\psi^3,\psi\gamma\rangle,
+\qquad
+\langle\psi^3,\psi^2\gamma\rangle.
+$$
+They are conjugate by Sylow's theorem.
+:::
+
+<1>9. There are precisely three intermediate fields $E\subset F$ with
+$$
+[E:\QQ]=3,
+$$
+and they are conjugate.
+::: {.proof}
+By Galois correspondence and step <1>7, such fields correspond to subgroups of
+$$
+\Gal(F/\QQ)
+$$
+of order
+$$
+\frac{12}{3}=4.
+$$
+Step <1>8 gives exactly three such subgroups, all conjugate. Their fixed fields are therefore exactly three degree-$3$ intermediate fields, also conjugate.
+:::
+
+<1>10. Let
+$$
+u_0=x+x^{-1},
+\qquad
+u_1=\omega x+\omega^2x^{-1},
+\qquad
+u_2=\omega^2x+\omega x^{-1}.
+$$
+Then each $u_i$ is a root of
+$$
+h(T)=T^3-3T+a,
+$$
+and
+$$
+[\QQ(u_i):\QQ]=3.
+$$
+::: {.proof}
+The problem allows the first assertion and states that the three roots form one Galois orbit and are distinct. Since $F/\QQ$ is Galois, the size of the Galois orbit of $u_i$ equals the degree of its minimal polynomial over $\QQ$. The orbit has size $3$, hence
+$$
+[\QQ(u_i):\QQ]=3.
+$$
+In particular, $h$ is irreducible over $\QQ$.
+:::
+
+<1>11. The three degree-$3$ fields are exactly
+$$
+\boxed{\QQ(u_0),\quad\QQ(u_1),\quad\QQ(u_2)}.
+$$
+::: {.proof}
+By step <1>10, each displayed field has degree $3$. Their stabilizers in the Galois group have order $4$, hence are Sylow $2$-subgroups. By step <1>8 there are exactly three Sylow $2$-subgroups, so for any one of them $H$,
+$$
+[\Gal(F/\QQ):N_{\Gal(F/\QQ)}(H)]=3.
+$$
+Since $|\Gal(F/\QQ)|=12$, this gives $|N(H)|=4=|H|$, hence $N(H)=H$. Thus distinct points in the three-element Galois orbit have distinct stabilizers. Their stabilizers are therefore exactly the three Sylow $2$-subgroups from step <1>8, and their fixed fields are precisely the three degree-$3$ fields from step <1>9.
+:::
+
+<1>12. Q.E.D.
+::: {.proof}
+Step <1>2 proves part (a), step <1>7 proves part (b), and step <1>9 through step <1>11 prove part (c).
+:::
 :::
