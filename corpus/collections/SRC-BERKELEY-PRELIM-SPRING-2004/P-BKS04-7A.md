@@ -24,40 +24,158 @@ Evaluate $\int _ { 0 } ^ { \infty } { \frac { \sin { x } } { x } } d x .$
 :::
 
 ::: {.solution}
-For $R > 1$ , let $\gamma _ { 1 }$ be the straight line path from $1 / R$ to $R _ { : }$ , let $\gamma _ { 2 }$ be the straight line path from R to $R + R i$ , let $\gamma _ { 3 }$ be the straight line path from $R + R i { \mathrm { ~ t o ~ } } { - R + R i }$ , let $\gamma _ { 4 }$ be the straight line path from $- R + R i$ to $- R ,$ , let $\gamma _ { 5 }$ be the straight line path from $- R$ to
-
-$- 1 / R$ , and let $\gamma _ { 6 }$ be the upper semicircle from $- 1 / R$ to $1 / R$ given by the parameterization $\gamma _ { 6 } ( t ) = e ^ { i t }$ for t running from $\pi$ to 0. Let $\gamma$ be the closed loop formed by concatenating these six paths.
-Cauchy’s Theorem implies that $\begin{array} { r } { \int _ { \gamma } \frac { e ^ { i z } } { z } d z = 0 } \end{array}$
-
-We have
-
+For $R>1$, set $\varepsilon=1/R$ and let $\Gamma_R$ be the positively
+oriented boundary of the rectangle with vertices
 $$
-| \int _ { \gamma _ { 2 } } { \frac { e ^ { i z } } { z } } d z | \leq \int _ { 0 } ^ { R } { \frac { e ^ { - t } } { R } } d t = { \frac { 1 - e ^ { - R } } { R } }  0
+-R,\quad R,\quad R+iR,\quad -R+iR,
 $$
+with the upper semicircle $|z|=\varepsilon$ removed around the origin.
+Thus the small semicircle is traversed clockwise from $-\varepsilon$ to
+$\varepsilon$.
 
-as $R \to \infty$ . Similarly $\textstyle \int _ { \gamma _ { 4 } } { \frac { e ^ { i z } } { z } } d z \to 0$ , and
-
+<1>1. One has
 $$
-| \int _ { \gamma _ { 3 } } { \frac { e ^ { i z } } { z } } d z | \leq \int _ { - R } ^ { R } { \frac { e ^ { - R } } { R } } d t = 2 e ^ { - R }  0 .
+\int_{\Gamma_R}\frac{e^{iz}}{z}\,dz=0.
 $$
 
-On the other hand, $e ^ { i z } z$ differs from $1 / z \ \mathrm { b y }$ a holomorphic function, and $\gamma _ { 6 }$ is shrinking to a point, so
+::: {.proof}
+The indentation removes the only singularity of $e^{iz}/z$ from the
+interior of the contour. Hence the integrand is holomorphic on and inside
+$\Gamma_R$, so Cauchy's theorem gives the displayed identity.
+:::
 
+<1>2. The integrals over the two vertical sides and the top side tend to
+zero as $R\to\infty$.
+
+::: {.proof}
+On the right side, write $z=R+it$ with $0\le t\le R$. Then
 $$
-\begin{array} { l } { \displaystyle \operatorname* { l i m } _ { R \to \infty } \int _ { \gamma _ { 6 } } \frac { e ^ { i z } } { z } d z = \displaystyle \operatorname* { l i m } _ { R \to \infty } \int _ { \gamma _ { 6 } } \frac { 1 } { z } d z } \\ { = \displaystyle \operatorname* { l i m } _ { R \to \infty } \int _ { \pi } ^ { 0 } \frac { 1 } { ( 1 / R ) e ^ { i t } } ( 1 / R ) i e ^ { i t } d t } \\ { = - \pi i . } \end{array}
+|e^{iz}|=e^{-t},
+\qquad
+|z|\ge R,
+$$
+so
+$$
+\left|
+\int_0^R\frac{e^{i(R+it)}}{R+it}\,i\,dt
+\right|
+\le
+\frac1R\int_0^Re^{-t}\,dt
+\le\frac1R.
+$$
+The same estimate applies to the left side.
+
+On the top side $z=x+iR$, $-R\le x\le R$, so
+$$
+|e^{iz}|=e^{-R},
+\qquad
+|z|\ge R.
+$$
+Its length is $2R$, hence the ML estimate gives an absolute value at
+most $2e^{-R}$. All three contributions therefore tend to zero.
+:::
+
+<1>3. If $C_R$ denotes the small clockwise semicircle, then
+$$
+\lim_{R\to\infty}
+\int_{C_R}\frac{e^{iz}}{z}\,dz
+=-\pi i.
 $$
 
-Thus
-
+::: {.proof}
+Write
 $$
-\int _ { \gamma _ { 1 } } { \frac { e ^ { i z } } { z } } d z + \int _ { \gamma _ { 5 } } { \frac { e ^ { i z } } { z } } d z  \pi i
+\frac{e^{iz}}{z}
+=\frac1z+h(z),
+\qquad
+h(z)=\frac{e^{iz}-1}{z}.
+$$
+The function $h$ extends holomorphically to $z=0$, with $h(0)=i$, so it
+is bounded near the origin. Since the length of $C_R$ is
+$\pi\varepsilon=\pi/R$, one has
+$$
+\int_{C_R}h(z)\,dz\longrightarrow0.
 $$
 
-as $R \to \infty$ . Taking imaginary parts and using the fact that $( \sin z ) / z$ is an even function, we find that
-
+Parametrize the clockwise semicircle by
 $$
-2 \int _ { 1 / R } ^ { R } { \frac { \sin z } { z } } d z \to \pi
+z=\varepsilon e^{it},
+\qquad
+\pi\ge t\ge0.
+$$
+Then
+$$
+\int_{C_R}\frac{dz}{z}
+=\int_\pi^0 i\,dt
+=-\pi i.
+$$
+Combining these two facts gives the claim.
+:::
+
+<1>4. The two real-axis portions satisfy
+$$
+\lim_{R\to\infty}
+\left(
+\int_{-R}^{-1/R}\frac{e^{ix}}x\,dx
++
+\int_{1/R}^{R}\frac{e^{ix}}x\,dx
+\right)
+=\pi i.
 $$
 
-as $R \to \infty$ . Since $( \sin z ) / z$ is holomorphic, it does not hurt to replace the lower limit $1 / R$ by 0, so $\textstyle \int _ { 0 } ^ { \infty } { \frac { \sin x } { x } } d x = \pi / 2$
+::: {.proof}
+Decompose the contour integral in step <1>1 into the two real segments,
+the three outer sides, and $C_R$. Step <1>2 sends the outer-side
+contributions to zero, while step <1>3 sends the indentation contribution
+to $-\pi i$. Taking limits in the identity from step <1>1 therefore gives
+the displayed formula.
+:::
+
+<1>5. Taking imaginary parts in step <1>4 yields
+$$
+\lim_{R\to\infty}
+2\int_{1/R}^{R}\frac{\sin x}{x}\,dx
+=\pi.
+$$
+
+::: {.proof}
+The imaginary part of $e^{ix}/x$ is $\sin x/x$, which is an even
+function. Therefore
+$$
+\Im\left(
+\int_{-R}^{-1/R}\frac{e^{ix}}x\,dx
++
+\int_{1/R}^{R}\frac{e^{ix}}x\,dx
+\right)
+=2\int_{1/R}^{R}\frac{\sin x}{x}\,dx.
+$$
+The imaginary part of the limit $\pi i$ is $\pi$.
+:::
+
+<1>6. The required improper integral is
+$$
+\boxed{
+\int_0^\infty\frac{\sin x}{x}\,dx=\frac\pi2}.
+$$
+
+::: {.proof}
+The function $\sin x/x$ has a removable singularity at $0$, with limit
+$1$. Hence
+$$
+\int_0^{1/R}\frac{\sin x}{x}\,dx\longrightarrow0.
+$$
+Step <1>5 therefore implies
+$$
+\lim_{R\to\infty}
+\int_0^R\frac{\sin x}{x}\,dx
+=\frac\pi2,
+$$
+which is precisely the improper integral.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 gives the required value.
+:::
 :::
