@@ -82,4 +82,11 @@ identity holds on all of $T$. Both composites are the
 identity, proving the isomorphism. When $m=1$, the same
 formulas apply and both modules are zero.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 construct mutually inverse $\ZZ$-module homomorphisms,
+which proves the required isomorphism.
+:::
 :::
