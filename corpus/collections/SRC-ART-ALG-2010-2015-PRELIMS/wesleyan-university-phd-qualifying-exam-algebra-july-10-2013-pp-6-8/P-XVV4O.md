@@ -67,4 +67,11 @@ Lagrange's theorem asserts that a subgroup order divides the
 group order. Here that divisibility holds for $6\mid12$ but
 the requested subgroup does not exist, disproving the converse.
 :::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 provide the required counterexample and prove that it
+indeed refutes the converse of Lagrange's theorem.
+:::
 :::
