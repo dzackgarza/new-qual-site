@@ -60,4 +60,9 @@ fg=0.
 $\mathbb C$ is a field; $\mathbb Z/11$ is a field because $11$ is prime; $\mathbb Q(\sqrt2)$ is a field; and $\mathbb R[x]$ is a polynomial ring over a field, hence an integral domain.
 None of them has nonzero zero divisors.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 shows that choice (C) has nonzero zero divisors, and step <1>2 rules out every other choice.
+:::
 :::
