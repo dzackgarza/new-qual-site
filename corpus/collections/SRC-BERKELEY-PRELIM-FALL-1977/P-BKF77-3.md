@@ -141,4 +141,10 @@ T^k\to0
 \text{every eigenvalue $\lambda$ of $T$ satisfies $|\lambda|<1$.}}
 $$
 :::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves necessity, and steps <1>2--<1>4 prove sufficiency.
+:::
 :::
