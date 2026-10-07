@@ -118,4 +118,11 @@ Since elementary tensors generate $T$, these identities prove
 that both composites are the identity. Thus $\Phi$ is the
 claimed left $R$-module isomorphism.
 :::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>3 construct the two maps and prove that they are inverse
+left $R$-module homomorphisms.
+:::
 :::
