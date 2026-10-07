@@ -20,27 +20,87 @@ Give an example of a tower of field extensions $F \subseteq E \subseteq K \subse
 :::
 
 ::: {.solution}
-By the Galois correspondence, we have $$L \leftrightarrow \{e\}, \quad K \leftrightarrow H_2, \quad E \leftrightarrow H_1, \quad F \leftrightarrow D_4$$ and
+Let
+$$
+\alpha=\sqrt[4]{2},
+\qquad
+F=\QQ,
+\qquad
+E=\QQ(\alpha^2),
+\qquad
+K=\QQ(\alpha),
+\qquad
+L=\QQ(\alpha,i).
+$$
 
-- $E/F$ normal iff $H_1 \trianglelefteq D_4$
+<1>1. The extension $L/F$ is Galois with Galois group isomorphic to $D_4$.
+::: {.proof}
+The field $L$ is the splitting field over $\QQ$ of
+$$
+x^4-2,
+$$
+whose roots are $\alpha,i\alpha,-\alpha,-i\alpha$. Define automorphisms
+$$
+\sigma(\alpha)=i\alpha,
+\qquad
+\sigma(i)=i,
+$$
+and
+$$
+\tau(\alpha)=\alpha,
+\qquad
+\tau(i)=-i.
+$$
+Then $\sigma$ has order $4$, $\tau$ has order $2$, and
+$$
+\tau\sigma\tau^{-1}=\sigma^{-1}.
+$$
+Moreover $[L:\QQ]=8$: the polynomial $x^4-2$ is Eisenstein at $2$, so $[\QQ(\alpha):\QQ]=4$, and $\QQ(\alpha)\subset\RR$ does not contain $i$, so adjoining $i$ doubles the degree. Hence these eight automorphisms exhaust $\Gal(L/F)$, and
+$$
+\Gal(L/F)\cong D_4.
+$$
+:::
 
-- $K/E$ normal iff $H_2 \trianglelefteq H_2$
+<1>2. The extension $E/F$ is normal.
+::: {.proof}
+Since $\alpha^2=\sqrt2$,
+$$
+E=\QQ(\sqrt2).
+$$
+This is the splitting field over $\QQ$ of $x^2-2$, hence it is Galois and therefore normal over $F$.
+:::
 
-- $K/F$ not normal iff $H_2 \not\trianglelefteq D_4$
+<1>3. The extension $K/E$ is normal.
+::: {.proof}
+Over $E$, the element $\alpha$ satisfies
+$$
+x^2-\sqrt2.
+$$
+Its two roots are $\alpha$ and $-\alpha$, both lying in $K$. Thus $K$ is the splitting field of this polynomial over $E$, so $K/E$ is Galois and in particular normal.
+:::
 
-So writing $D_4 = \langle \sigma,\tau \mid \sigma^4=\tau^2=e,\ \tau\sigma\tau^{-1}=\sigma^{-1}\rangle$, we can take $H_1 = \langle \sigma^2,\tau\rangle = \{e,\tau,\sigma^2,\tau\sigma^2\}$, then $[D_4:H_1]=2$ so $H_1 \trianglelefteq D_4$.
-We can then take $H_2 = \langle \tau\rangle = \{e,\tau\} \le H_1$.
-We have $H_2 \not\trianglelefteq D_4$, since e.g. if we write $\sigma=(1234), \tau=(24) \in S_n$, $\sigma\tau\sigma^{-1} = (13) \notin \langle \tau\rangle$.
+<1>4. The extension $K/F$ is not normal.
+::: {.proof}
+The minimal polynomial of $\alpha$ over $\QQ$ is $x^4-2$. One of its conjugates is $i\alpha$, but
+$$
+K=\QQ(\alpha)\subset\RR,
+$$
+so $i\alpha\notin K$. Hence $x^4-2$ does not split over $K$, and $K/F$ is not normal.
+:::
 
-But $H_2 \trianglelefteq H_1$, since $H_1 \cong \{e,\tau,\sigma^2,\tau\sigma^2\} = \{(),(24),(13)(24),(13)\}$, while
+<1>5. Therefore
+$$
+\boxed{
+\QQ\subset\QQ(\sqrt2)\subset\QQ(\sqrt[4]{2})\subset\QQ(\sqrt[4]{2},i)
+}
+$$
+is a tower in which $E/F$ and $K/E$ are normal but $K/F$ is not normal, while $\Gal(L/F)\cong D_4$.
+::: {.proof}
+This combines step <1>1, step <1>2, step <1>3, and step <1>4.
+:::
 
-- $\tau\tau\tau^{-1} = \tau \in H_1$
-
-- $\sigma^2\tau\sigma^{-2} = (\sigma\tau\sigma^{-1})^2 = (13)(13) = e \in H_1$
-
-- $\tau\sigma^2\tau(\tau\sigma^2)^{-1} = (13)(24)(13) = (24) = \tau \in H_1$
-
-So $hH_2h^{-1} = H_2\ \forall h \in H_1$ and thus $H_2 \trianglelefteq H_1$.
-So taking $$H_1 = \langle \sigma^2,\tau\rangle, \qquad H_2 = \langle \tau\rangle$$ suffices.
-$\blacksquare$
+<1>6. Q.E.D.
+::: {.proof}
+Step <1>5 is the requested example.
+:::
 :::
