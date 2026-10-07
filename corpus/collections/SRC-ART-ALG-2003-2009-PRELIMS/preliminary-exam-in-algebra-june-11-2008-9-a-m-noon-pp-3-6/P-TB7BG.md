@@ -33,7 +33,7 @@ Show that every nilpotent $N$ is similar to a matrix of the form $$\begin{bmatri
 :::
 
 ::: {.solution}
-Let $T$ be the operator represented by $N$ on $V=\mathbb C^n$.
+Let $T$ be the operator represented by $N$ on $V=\CC^n$.
 We prove the assertion by induction on $n$. For $n=0$ the empty direct
 sum is the required form. Suppose $n>0$ and the assertion holds in
 smaller dimensions. Let $r\geq1$ be the least integer with $T^r=0$.
@@ -54,7 +54,7 @@ span $U$ is invariant because $T(T^{r-1}v)=0$.
 
 ::: {.proof}
 Extend the chain in step <1>1 to a basis of $V$. Define a linear
-functional $\ell:V\to\mathbb C$ to be $1$ on $T^{r-1}v$ and $0$
+functional $\ell:V\to\CC$ to be $1$ on $T^{r-1}v$ and $0$
 on every other vector of this basis. Define
 $$
 \pi(w)=\sum_{j=0}^{r-1}\ell\bigl(T^{r-1-j}w\bigr)T^jv.
@@ -90,6 +90,13 @@ Concatenating these two bases gives a basis of $V$ in which $T$ has
 the stated form. If $S$ has these basis vectors as columns in the
 original coordinates, then $S$ is invertible and $S^{-1}NS$ is
 exactly that block diagonal matrix.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives a basis in which $N$ is block diagonal with every block
+of the required nilpotent Jordan form.
 :::
 :::
 
