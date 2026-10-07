@@ -118,4 +118,9 @@ The resulting field $M(a)$ contains all five displayed roots of
 $g$. Thus $g$ is solvable by radicals. Degree five alone does
 not imply the nonsolvability claimed in part (c).
 :::
+
+<1>5. Q.E.D.
+::: {.proof}
+Step <1>1 gives the solvability criteria, step <1>2 proves that $S_4$ is solvable, step <1>3 answers part (b), and step <1>4 answers part (c).
+:::
 :::
