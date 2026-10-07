@@ -49,4 +49,9 @@ Substituting $x\equiv5y$ gives
 \]
 The other options reduce respectively to $4y$, $6y+5$, $5y$, and $6y-1$ modulo $11$, none of which is forced to vanish for all admissible $y$.
 :::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>2 shows that $4x-9y$ is always divisible by $11$, so choice (D) is correct.
+:::
 :::
