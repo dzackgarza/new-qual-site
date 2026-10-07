@@ -80,4 +80,9 @@ $$
 \boxed{(R/Z(R),+)\text{ is not cyclic}.}
 $$
 :::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required conclusion.
+:::
 :::
