@@ -34,14 +34,174 @@ $$
 :::
 
 ::: {.solution}
-(a) The automorphism of R that takes any $y \in R$ to $\bar { y }$ induces the first isomorphism.
-Multiplication by x induces the second (which is clearly surjective, and also injective since if $x y = x { \bar { x } } z$ then, R being an integral domain, $y = { \bar { x } } z )$ .
+<1>1. Conjugation induces an additive-group isomorphism
+$$
+\boxed{R/xR\xrightarrow{\sim}R/\bar xR},
+\qquad
+y+xR\longmapsto \bar y+\bar xR.
+$$
+::: {.proof}
+Complex conjugation restricts to a ring automorphism of $R$ and carries the ideal $xR$ onto $\bar xR$. Hence it induces the displayed quotient isomorphism.
+:::
 
-(b) Taking $( a , b ) \in \mathbb { Z } \times \mathbb { Z }$ to $a + b { \sqrt { - n } } \in R$ gives a group isomorphism.
-For $n > 0 \in \mathbb { Z } .$ there results an isomorphism $\mathbb { Z } _ { n } \times \mathbb { Z } _ { n } \cong R / n R \mathrm { : }$ ; so the cardinality $| R / n R | = [ R : n R ] = n ^ { 2 }$ In particular, for $n = x { \bar { x } }$ one gets $N ( x ) ^ { 2 } = [ R : x { \bar { x } } R ] = [ R : x R ] [ x R : x { \bar { x } } R ] = [ R : x R ] ^ { 2 }$ where the last equality holds by (a).
+<1>2. Multiplication by $x$ induces an additive-group isomorphism
+$$
+\boxed{R/\bar xR\xrightarrow{\sim}xR/x\bar xR},
+\qquad
+y+\bar xR\longmapsto xy+x\bar xR.
+$$
+::: {.proof}
+The map is well-defined and surjective. If
+$$
+xy\in x\bar xR,
+$$
+then
+$$
+xy=x\bar xz
+$$
+for some $z\in R$. Since $R$ is an integral domain and $x\ne0$, cancellation gives
+$$
+y=\bar xz,
+$$
+so the kernel is exactly $\bar xR$.
+:::
 
-(c) If $N ( x ) \stackrel { ( \mathrm { b } ) } { = } | R / x R |$ is prime, so that $R / x R$ has no nontrivial proper subgroup, then the ideal $x R$ is maximal, hence prime, i.e., x is prime in R.
+<1>3. Hence
+$$
+\boxed{R/xR\cong R/\bar xR\cong xR/x\bar xR}
+$$
+as additive groups.
+::: {.proof}
+Combine step <1>1 and step <1>2.
+:::
 
-(d) By (c), if $p \ = \ a ^ { 2 } + n b ^ { 2 } \ = \ x \bar { x } \ ( x : = \ a + b \sqrt { - n } )$ is a Z-prime then $p = x { \bar { x } }$ is a factorization of p into R-primes.
-By (b), any unit $u + v { \sqrt { - n } }$ in R has norm $\pm 1$ , i.e., $u ^ { 2 } + n v ^ { 2 } = \pm 1$ , whence $u = \pm 1$ and $v = 0$ . Since factorization into primes is unique up to multiplying by units and permuting the factors, it follows that if $p = a ^ { 2 } + n b ^ { 2 } = c ^ { 2 } + n d ^ { 2 }$ with $a , b ,$ c and d all positive then $a = c$ and $b = d .$
+<1>4. For every positive integer $m$,
+$$
+[R:mR]=m^2.
+$$
+::: {.proof}
+As an additive group,
+$$
+R\cong\ZZ\oplus\ZZ\sqrt{-n}\cong\ZZ^2.
+$$
+Therefore
+$$
+R/mR\cong(\ZZ/m\ZZ)^2,
+$$
+which has $m^2$ elements.
+:::
+
+<1>5. For $x\ne0$,
+$$
+\boxed{N(x)^2=[R:xR]\,[xR:x\bar xR]=[R:xR]^2},
+$$
+and therefore
+$$
+\boxed{[R:xR]=N(x)}.
+$$
+::: {.proof}
+Since
+$$
+x\bar x=N(x)\in\ZZ_{>0},
+$$
+step <1>4 gives
+$$
+[R:x\bar xR]=N(x)^2.
+$$
+Index multiplicativity gives
+$$
+[R:x\bar xR]
+=[R:xR]\,[xR:x\bar xR].
+$$
+By step <1>3,
+$$
+[xR:x\bar xR]=[R:\bar xR]=[R:xR].
+$$
+Thus
+$$
+N(x)^2=[R:xR]^2.
+$$
+Both sides are positive integers, so $[R:xR]=N(x)$.
+:::
+
+<1>6. If $N(x)$ is prime in $\ZZ$, then
+$$
+\boxed{x\text{ is prime in }R}.
+$$
+::: {.proof}
+By step <1>5,
+$$
+|R/xR|=N(x).
+$$
+If $N(x)=p$ is prime, then the quotient ring $R/xR$ has exactly $p$ elements. Its additive group is cyclic of prime order, so its identity is nonzero and every nonzero element is a nonzero multiple of $1$; hence $R/xR\cong\FF_p$ is a field. Therefore $xR$ is maximal, hence prime, so $x$ is a prime element.
+:::
+
+<1>7. The only units of $R$ are $\pm1$.
+::: {.proof}
+If $u\in R^\times$, then
+$$
+1=N(1)=N(u)N(u^{-1}).
+$$
+The norm takes nonnegative integer values, so $N(u)=1$. Writing
+$$
+u=a+b\sqrt{-n},
+$$
+one has
+$$
+a^2+nb^2=1.
+$$
+Since $n>1$, this forces $b=0$ and $a=\pm1$.
+:::
+
+<1>8. If a rational prime $p$ admits two representations
+$$
+p=a^2+nb^2=c^2+nd^2
+$$
+with $a,b,c,d>0$, then
+$$
+\boxed{a=c,\qquad b=d}.
+$$
+::: {.proof}
+Put
+$$
+x=a+b\sqrt{-n},
+\qquad
+y=c+d\sqrt{-n}.
+$$
+Then
+$$
+p=x\bar x=y\bar y
+$$
+and
+$$
+N(x)=N(y)=p.
+$$
+By step <1>6, $x$ is prime in $R$. Since
+$$
+x\mid y\bar y,
+$$
+primality gives
+$$
+x\mid y
+\qquad\text{or}\qquad
+x\mid\bar y.
+$$
+
+If $x\mid y$, write $y=xu$. Taking norms gives
+$$
+p=pN(u),
+$$
+so $N(u)=1$. By step <1>7, $u=\pm1$. Positivity of $a,b,c,d$ forces $u=1$, hence $y=x$ and therefore $a=c$, $b=d$.
+
+If $x\mid\bar y$, the same norm argument gives $\bar y=\pm x$. But
+$$
+\bar y=c-d\sqrt{-n}
+$$
+cannot equal either $x=a+b\sqrt{-n}$ or $-x=-a-b\sqrt{-n}$ when all four integers are positive. Thus this case is impossible.
+:::
+
+<1>9. Q.E.D.
+::: {.proof}
+Step <1>3 proves part (a), step <1>5 proves part (b), step <1>6 proves part (c), and step <1>8 proves part (d).
+:::
 :::
