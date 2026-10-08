@@ -26,9 +26,7 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 :::
 
 ::: {.solution}
-**Goal:** Characterize maximal submodules via simplicity of quotients in (a), deduce prime-order quotients for abelian groups in (b), and prove that the divisible group of roots of unity has no maximal submodules in (c).
-
-<1>1. Part (a): $N \subset M$ is maximal if and only if $M/N$ is simple.
+<1>1. The submodule $N$ is maximal in $M$ if and only if the quotient $M/N$ is simple.
 ::: {.proof}
     <2>1. By the Submodule Correspondence Theorem (Lattice Isomorphism Theorem for modules), the canonical quotient projection $\pi: M \to M/N$ induces an inclusion-preserving bijection between the set of submodules of $M$ containing $N$ and the set of submodules of $M/N$:
     $$P \longleftrightarrow P/N = \pi(P).$$
@@ -38,7 +36,7 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 
 :::
 
-<1>2. Part (b): A $\mathbb{Z}$-submodule $N \subseteq M$ is maximal if and only if $|M/N| = p$ is prime.
+<1>2. For abelian groups, $N$ is maximal if and only if $M/N$ has prime order.
 ::: {.proof}
     <2>1. A $\mathbb{Z}$-module is an abelian group, and $\mathbb{Z}$-submodules are subgroups.
     <2>2. By Part (a), $N$ is maximal if and only if $A = M/N$ is a simple abelian group.
@@ -52,7 +50,7 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 
 :::
 
-<1>3. Part (c): $M = \mu_\infty$ has no maximal $\mathbb{Z}$-submodules.
+<1>3. The group $\mu_\infty$ of all complex roots of unity has no maximal $\mathbb Z$-submodule.
 ::: {.proof}
     <2>1. Suppose for contradiction that $N \subset M$ is a maximal $\mathbb{Z}$-submodule (subgroup).
     <2>2. By Part (b), the quotient group $M/N$ has prime order $|M/N| = p$.
@@ -67,8 +65,8 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    Maximal submodules correspond to simple quotients, simple abelian groups are cyclic of prime order, and the divisible group of roots of unity possesses no maximal submodules.
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
 :::
 :::
