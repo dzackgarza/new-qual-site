@@ -22,31 +22,31 @@ Assume $\beta >0$, $a_n>0$, $n=1,2,\ldots$, and the series $\sum a_n$ is diverge
 Show that $\displaystyle \sum \frac{a_n}{\beta + a_n}$ is also divergent.
 :::
 ::: {.solution}
-<1>1. Claim: $\sum \frac{a_n}{\beta + a_n}$ diverges.
+<1>1. For every $n$,
+\[
+\frac{a_n}{\beta+a_n}\geq
+\frac12\min\left\{\frac{a_n}{\beta},1\right\}.
+\]
+
 ::: {.proof}
-we show its partial sums are unbounded, using the divergence of $\sum a_n$.
+If $a_n\leq\beta$, then $\beta+a_n\leq2\beta$, so the left side is at least $a_n/(2\beta)$. If $a_n>\beta$, then $\beta+a_n<2a_n$, so the left side exceeds $1/2$. These inequalities give the stated bound in both cases.
 :::
 
-<1>2. Two-case bound: if $a_n \le \beta$ then $\frac{a_n}{\beta + a_n} \ge \frac{a_n}{2\beta}$; if $a_n > \beta$ then $\frac{a_n}{\beta + a_n} > \frac{1}{2}$.
+<1>2. The series $\sum_{n=1}^{\infty}\min\{a_n/\beta,1\}$ diverges.
+
 ::: {.proof}
-$a_n \le \beta \Rightarrow \beta + a_n \le 2\beta$; $a_n > \beta \Rightarrow \beta + a_n < 2a_n \Rightarrow \frac{a_n}{\beta + a_n} > \frac{1}{2}$.
+Let $I=\{n\geq1:a_n\geq\beta\}$. If $I$ is infinite, the summand equals $1$ at every index in $I$, so the partial sums are unbounded. If $I$ is finite, the summand equals $a_n/\beta$ at every sufficiently large index. Its series then diverges because $\sum_n a_n$ diverges and $\beta>0$.
 :::
 
-<1>3. Hence $\frac{a_n}{\beta + a_n} \ge \frac{1}{2}\min\left\{\frac{a_n}{\beta}, 1\right\}$ for every $n$.
+<1>3. The series $\boxed{\sum_{n=1}^{\infty}\frac{a_n}{\beta+a_n}=+\infty}$.
+
 ::: {.proof}
-<1>2 covers both cases uniformly: for $a_n \le \beta$ the min is $a_n/\beta$ and the RHS is $a_n/(2\beta)$; for $a_n > \beta$ the min is $1$ and the RHS is $1/2$.
+The terms are positive. By step <1>1, their partial sums dominate half the corresponding partial sums of the divergent nonnegative series in step <1>2. They are therefore unbounded and tend to $+\infty$.
 :::
 
-<1>4. $\sum \min\left\{\frac{a_n}{\beta}, 1\right\}$ diverges.
-::: {.proof}
-let $I = \{n : a_n \ge \beta\}$.
-:::
-If $\sum_{n \in I} 1 = \infty$ we are done.
-Otherwise $I$ is finite, so for all but finitely many $n$, $\min\{a_n/\beta, 1\} = a_n/\beta$, and $\sum a_n/\beta = \infty$ (as $\sum a_n$ diverges).
-Either way the sum diverges.
+<1>4. Q.E.D.
 
-<1>5. Q.E.D.
 ::: {.proof}
-<1>3 and <1>4 give $\sum \frac{a_n}{\beta + a_n} \ge \frac12 \sum \min\{a_n/\beta, 1\} = \infty$.
+Step <1>3 proves the required divergence.
 :::
 :::
