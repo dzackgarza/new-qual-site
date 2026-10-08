@@ -22,10 +22,26 @@ audit:
 If $\sum b_n$ is convergent, show that $\sum a_nb_n$ is also convergent.
 :::
 
-:::: {.solution}
-<1>1. Bound $a_n$ uniformly.
-Proof: $\{a_n\}$ is bounded and positive, so there is $M > 0$ with $0 < a_n \le M$ for all $n$.
-<1>2. Compare $\sum a_n b_n$ with $\sum b_n$.
-Proof: for every $n$, $a_n b_n \le M b_n$ (as $b_n > 0$). Since $\sum b_n$ converges and $M$ is constant, $\sum M b_n$ converges; by the comparison test, $\sum a_n b_n$ converges.
+::: {.solution}
+<1>1. There exists $M>0$ such that $0\leq a_nb_n\leq Mb_n$ for every $n$.
+
+::: {.proof}
+Boundedness of the positive sequence $(a_n)$ supplies $M>0$ with $a_n\leq M$ for all $n$. Multiply this inequality by the positive number $b_n$.
+:::
+
+<1>2. The series $\sum_n a_nb_n$ converges.
+
+::: {.proof}
+For every $N$, step <1>1 yields
+\[
+0\leq\sum_{n=1}^N a_nb_n\leq M\sum_{n=1}^N b_n.
+\]
+The right-hand partial sums are bounded because $\sum_n b_n$ converges. The left-hand partial sums are nondecreasing and bounded, hence converge in $\mathbb R$.
+:::
+
 <1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 establishes the required convergence.
+:::
 :::
