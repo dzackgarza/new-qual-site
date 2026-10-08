@@ -25,31 +25,42 @@ Prove that $f$ is Riemann-Stieltjes integrable with respect to $\alpha$ over $[-
 
 ::: {.solution}
 <1>1. $\alpha$ has bounded variation and is constant on each side of its single jump at $0$: $\alpha \equiv -1$ on $[-1,0]$ and $\alpha \equiv 1$ on $(0,1]$, with jump $\alpha(0+) - \alpha(0-) = 2$.
+
 ::: {.proof}
-definition of $\alpha$; the value $\alpha(0)$ is irrelevant to the Stieltjes integral.
+By definition, $\alpha$ is nondecreasing and has total variation $\alpha(1)-\alpha(-1)=2$. Its sole increment occurs across an interval whose left endpoint is at most zero and whose right endpoint is strictly positive. In particular, $\alpha(0)=-1$ fixes which partition interval carries that increment.
 :::
 
-<1>2. $f$ is bounded and continuous at $0$; let $|f| \le M$.
+<1>2. For every tagged partition $(P,\tau)$ of $[-1,1]$, exactly one subinterval has nonzero $\alpha$-increment, equal to $2$, and its closure contains $0$.
+
 ::: {.proof}
-hypothesis.
+Write $P=(-1=x_0<\cdots<x_m=1)$. There is a unique index $j$ with $x_{j-1}\leq0<x_j$. The values of $\alpha$ at both endpoints of every other subinterval agree, whereas $\alpha(x_j)-\alpha(x_{j-1})=2$. Thus the tagged sum equals $2f(\tau_j)$, with $\tau_j\in[x_{j-1},x_j]$.
 :::
 
-<1>3. For any partition $P$ with $0$ as a partition point, the Stieltjes sum depends only on the interval containing $0$.
+<1>3. For every $\varepsilon>0$, there is $\delta>0$ such that every tagged partition of mesh less than $\delta$ satisfies
+\[
+|S_\alpha(f;P,\tau)-2f(0)|<\varepsilon.
+\]
+
 ::: {.proof}
-on intervals where $\alpha$ is constant, the $\alpha$-increment is $0$, so those terms contribute nothing to $\sum f(t_i)\Delta\alpha_i$.
+Continuity of $f$ at zero gives $\delta>0$ such that $|f(t)-f(0)|<\varepsilon/2$ whenever $|t|<\delta$. If the mesh is less than $\delta$, the interval $[x_{j-1},x_j]$ of step <1>2 lies in $(-\delta,\delta)$, including its endpoints. Therefore
+\[
+|S_\alpha(f;P,\tau)-2f(0)|
+=2|f(\tau_j)-f(0)|<\varepsilon.
+\]
 :::
 
-<1>4. Given $\eps > 0$, choose $\delta > 0$ with $|f(x) - f(0)| < \eps$ for $|x - 0| < \delta$ (continuity at $0$); then for any partition containing $0$ whose interval around $0$ has length $< \delta$: <2>1. The upper and lower Stieltjes sums satisfy $U(P) - L(P) \le 2\eps$ (the jump is $2$).
+<1>4. The function $f$ is Riemann–Stieltjes integrable with respect to $\alpha$ and
+\[
+\boxed{\int_{-1}^1 f(x)\,d\alpha(x)=2f(0)}.
+\]
+
 ::: {.proof}
-the only contributing interval $[x_j, x_{j+1}] \ni 0$ has $\Delta\alpha = 2$ and oscillation of $f$ on it $\le 2\eps$; every other interval has $\Delta\alpha = 0$.
-:::
-<2>2. Hence $f$ is Riemann–Stieltjes integrable with respect to $\alpha$.
-::: {.proof}
-the Riemann–Stieltjes criterion: $U(P) - L(P)$ can be made arbitrarily small by refining the partition.
+Step <1>3 proves convergence of all tagged Stieltjes sums, uniformly in the tags, to $2f(0)$ as the mesh tends to zero. This is the defining criterion for Riemann–Stieltjes integrability. The boundedness hypothesis ensures all tagged sums are finite.
 :::
 
-<1>5. $\int_{-1}^1 f\,d\alpha = 2f(0)$.
+<1>5. Q.E.D.
+
 ::: {.proof}
-for partitions as in <1>4, $\sum f(t_i)\Delta\alpha_i = f(t)(\alpha(0+) - \alpha(0-)) = 2f(t)$ for some $t$ in the interval around $0$, and $|f(t) - f(0)| < \eps$, so the sums converge to $2f(0)$ as the mesh tends to $0$.
+Step <1>4 establishes both assertions.
 :::
 :::
