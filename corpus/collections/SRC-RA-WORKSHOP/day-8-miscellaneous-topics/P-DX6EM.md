@@ -23,31 +23,52 @@ Prove $f$ is the difference of two increasing functions.
 :::
 ::: {.solution}
 <1>1. Define the total variation $V(x) = \sup \sum_{i=1}^n |f(x_i) - f(x_{i-1})|$ over all partitions $a = x_0 < \cdots < x_n = x$ of $[a, x]$, for $a \le x \le b$.
+
 ::: {.proof}
-$V$ is well-defined and finite because $f \in \text{BV}[a,b]$ (so $V(b) < \infty$), and $V(a) = 0$.
+For $x>a$, take the supremum over finite partitions of $[a,x]$; define $V(a)=0$ using the trivial partition. Every such partition extends to one of $[a,b]$ when $x<b$, so $0\le V(x)\le V(b)<\infty$ by bounded variation.
 :::
 
 <1>2. $V$ is increasing on $[a,b]$: for $a \le x < y \le b$, $V(y) \ge V(x)$.
+
 ::: {.proof}
-partitions of $[a,x]$ extend to partitions of $[a,y]$ by adding the point $y$, so the sup over the larger interval is $\ge$.
+For any partition of $[a,x]$, append $y$. The resulting variation sum is the original sum plus $|f(y)-f(x)|\ge0$. Taking the supremum over partitions of $[a,x]$ proves $V(y)\ge V(x)$.
 :::
 
 <1>3. $V + f$ and $V - f$ are increasing on $[a,b]$.
+
 <2>1. For $a \le x < y \le b$: $V(y) - V(x) \ge |f(y) - f(x)|$.
+
 ::: {.proof}
-$V(y) \ge V(x) + |f(y) - f(x)|$: a partition of $[a,x]$ achieving within $\eps$ of $V(x)$, extended by $y$, gives a partition of $[a,y]$ with variation $\ge V(x) + |f(y)-f(x)| - \eps$; let $\eps \to 0$.
-:::
-<2>2. $(V + f)(y) - (V + f)(x) = (V(y) - V(x)) + (f(y) - f(x)) \ge |f(y)-f(x)| + (f(y)-f(x)) \ge 0$.
-::: {.proof}
-<2>1 and $|u| + u \ge 0$.
-:::
-<2>3. $(V - f)(y) - (V - f)(x) = (V(y) - V(x)) - (f(y) - f(x)) \ge |f(y)-f(x)| - (f(y)-f(x)) \ge 0$.
-::: {.proof}
-<2>1 and $|u| - u \ge 0$.
+Fix $\varepsilon>0$ and choose a partition of $[a,x]$ whose variation sum exceeds $V(x)-\varepsilon$. Appending $y$ produces a partition of $[a,y]$ with variation sum exceeding $V(x)-\varepsilon+|f(y)-f(x)|$. Thus $V(y)\ge V(x)-\varepsilon+|f(y)-f(x)|$. Letting $\varepsilon\downarrow0$ gives the assertion.
 :::
 
-<1>4. Q.E.D.: $f = \frac12(V + f) - \frac12(V - f)$ is a difference of two increasing functions.
+<2>2. $(V + f)(y) - (V + f)(x) = (V(y) - V(x)) + (f(y) - f(x)) \ge |f(y)-f(x)| + (f(y)-f(x)) \ge 0$.
+
 ::: {.proof}
-<1>2 and <1>3 show both $V + f$ and $V - f$ are increasing (multiplying by $1/2$ preserves monotonicity), and the identity $f = \frac12(V+f) - \frac12(V-f)$ is a direct algebraic rearrangement.
+Set $u=f(y)-f(x)$. Step <2>1 gives $V(y)-V(x)\ge|u|$, so the increment of $V+f$ is at least $|u|+u\ge0$.
+:::
+
+<2>3. $(V - f)(y) - (V - f)(x) = (V(y) - V(x)) - (f(y) - f(x)) \ge |f(y)-f(x)| - (f(y)-f(x)) \ge 0$.
+
+::: {.proof}
+With the same $u$, step <2>1 gives an increment of $V-f$ at least $|u|-u\ge0$.
+:::
+
+<2>4. Q.E.D.
+
+::: {.proof}
+Steps <2>2 and <2>3 prove that both functions have nonnegative increments for every $x<y$.
+:::
+
+<1>4. The functions $g=(V+f)/2$ and $h=(V-f)/2$ are increasing and satisfy $\boxed{f=g-h}$.
+
+::: {.proof}
+Step <1>3 gives monotonicity of $V+f$ and $V-f$, preserved by multiplication by $1/2>0$. Subtracting the definitions gives $g-h=f$ pointwise.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 constructs the required difference of increasing functions.
 :::
 :::
