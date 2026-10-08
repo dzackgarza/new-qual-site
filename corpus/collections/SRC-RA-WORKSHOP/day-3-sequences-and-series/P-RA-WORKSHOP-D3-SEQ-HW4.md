@@ -22,10 +22,27 @@ audit:
 Prove that there is a subsequence $\{a_{n_k}\}$ of $\{a_n\}$ such that $\sum_{k=1}^{\infty}a_{n_k}$ converges.
 :::
 
-:::: {.solution}
-<1>1. Extract a rapidly decaying subsequence.
-Proof: since $|a_n| \to 0$, for each $k \ge 1$ we may choose an index $n_k$ with $n_1 < n_2 < \cdots$ and $|a_{n_k}| \le 2^{-k}$ (indeed $|a_n| < 2^{-k}$ for all sufficiently large $n$, so pick any $n_k$ larger than $n_{k-1}$ with this property).
-<1>2. The subseries converges absolutely.
-Proof: $\sum_{k=1}^\infty |a_{n_k}| \le \sum_{k=1}^\infty 2^{-k} = 1 < \infty$, so $\sum_k a_{n_k}$ converges absolutely, hence converges.
+::: {.solution}
+<1>1. There is a strictly increasing sequence of indices $(n_k)_{k\geq1}$ satisfying $|a_{n_k}|<2^{-k}$ for every $k$.
+
+::: {.proof}
+For $k=1$, use $|a_n|\to0$ to choose $n_1$ with $|a_{n_1}|<1/2$. Once $n_{k-1}$ has been chosen, convergence gives an integer $N_k$ such that $|a_n|<2^{-k}$ for every $n\geq N_k$. Choose $n_k>\max(n_{k-1},N_k)$. This inductively constructs the required subsequence.
+:::
+
+<1>2. The selected subseries $\sum_{k=1}^{\infty}a_{n_k}$ converges absolutely.
+
+::: {.proof}
+Step <1>1 and comparison with the geometric series give
+\[
+\sum_{k=1}^{\infty}|a_{n_k}|
+\leq\sum_{k=1}^{\infty}2^{-k}=1<\infty.
+\]
+Thus the subseries is absolutely convergent, hence convergent.
+:::
+
 <1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 constructs a subsequence, and step <1>2 establishes convergence of its series.
+:::
 :::
