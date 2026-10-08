@@ -24,9 +24,7 @@ Let $F = \mathbb{F}_p$, where $p$ is a prime number.
 :::
 
 ::: {.solution}
-**Goal:** Prove that an irreducible polynomial of degree $d$ over $\mathbb{F}_p$ divides $x^{p^d} - x$ in (a), and that any irreducible factor of $x^{p^n} - x$ has degree dividing $n$ in (b).
-
-<1>1. Part (a): $\pi(x) \mid (x^{p^d} - x)$ for irreducible $\pi(x)$ of degree $d$.
+<1>1. Every irreducible polynomial $\pi\in\mathbb F_p[x]$ of degree $d$ divides $x^{p^d}-x$.
 ::: {.proof}
     <2>1. Construct the field $K = \mathbb{F}_p[x]/\langle \pi(x) \rangle$. Since $\pi(x)$ is irreducible over $\mathbb{F}_p$, $\langle \pi(x) \rangle$ is a maximal ideal, so $K$ is a field.
     <2>2. The extension degree is $[K : \mathbb{F}_p] = \deg \pi(x) = d$, so $|K| = p^d$.
@@ -41,7 +39,7 @@ Let $F = \mathbb{F}_p$, where $p$ is a prime number.
 
 :::
 
-<1>2. Part (b): If $\pi(x) \mid (x^{p^n} - x)$, then $\deg \pi(x) \mid n$.
+<1>2. If an irreducible $\pi\in\mathbb F_p[x]$ divides $x^{p^n}-x$, then $\deg\pi\mid n$.
 ::: {.proof}
     <2>1. Let $L = \mathbb{F}_{p^n}$ be the splitting field of $x^{p^n} - x$ over $\mathbb{F}_p$, which is a finite field of degree $[L : \mathbb{F}_p] = n$.
     <2>2. The elements of $L$ are precisely the $p^n$ distinct roots of $x^{p^n} - x$.
@@ -56,9 +54,8 @@ Let $F = \mathbb{F}_p$, where $p$ is a prime number.
 
 :::
 
-<1>3. Conclusion:
+<1>3. Q.E.D.
 ::: {.proof}
-    Irreducible polynomials of degree $d$ divide $x^{p^d} - x$, and any irreducible factor of $x^{p^n} - x$ has degree dividing $n$.
+Step <1>1 proves part (a), and step <1>2 proves part (b).
 :::
 :::
-
