@@ -26,9 +26,7 @@ Let $F \subseteq K \subseteq L$ be finite-degree field extensions. For each of t
 :::
 
 ::: {.solution}
-**Goal:** Adjudicate the three transitivity/sub-extension assertions for Galois extensions.
-
-<1>1. Part (a): False.
+<1>1. Assertion (a) is false: an intermediate extension of a finite Galois extension need not be Galois over the base.
 ::: {.proof}
     <2>1. Counterexample: Let $F = \mathbb{Q}$, $K = \mathbb{Q}(\sqrt[3]{2})$, and $L = \mathbb{Q}(\sqrt[3]{2}, \omega)$, where $\omega = e^{2\pi i / 3}$.
     <2>2. $L/F$ is Galois: The polynomial $f(x) = x^3 - 2 \in \mathbb{Q}[x]$ is irreducible by Eisenstein's criterion at $p = 2$. Its roots in $\mathbb{C}$ are $\sqrt[3]{2}, \sqrt[3]{2}\omega, \sqrt[3]{2}\omega^2$. The field $L = \mathbb{Q}(\sqrt[3]{2}, \omega)$ is the splitting field of $f(x)$ over $\mathbb{Q}$. Since $\operatorname{char}(\mathbb{Q}) = 0$, $f(x)$ is separable, so $L/\mathbb{Q}$ is a Galois extension.
@@ -38,7 +36,7 @@ Let $F \subseteq K \subseteq L$ be finite-degree field extensions. For each of t
 
 :::
 
-<1>2. Part (b): True.
+<1>2. Assertion (b) is true: if $L/F$ is Galois, then $L/K$ is Galois.
 ::: {.proof}
     <2>1. Since $L/F$ is a finite Galois extension, it is both normal and separable.
     <2>2. $L/K$ is separable: Let $\alpha \in L$. Since $L/F$ is separable, the minimal polynomial $m_{\alpha, F}(x) \in F[x]$ has distinct roots in an algebraic closure $\overline{F}$. Since $F \subseteq K$, the minimal polynomial $m_{\alpha, K}(x) \in K[x]$ divides $m_{\alpha, F}(x)$ in $K[x]$. Any divisor of a separable polynomial is separable, so $m_{\alpha, K}(x)$ has distinct roots. Thus every element of $L$ is separable over $K$.
@@ -47,7 +45,7 @@ Let $F \subseteq K \subseteq L$ be finite-degree field extensions. For each of t
 
 :::
 
-<1>3. Part (c): False.
+<1>3. Assertion (c) is false: two successive Galois extensions need not have Galois composite extension.
 ::: {.proof}
     <2>1. Counterexample: Let $F = \mathbb{Q}$, $K = \mathbb{Q}(\sqrt{2})$, and $L = \mathbb{Q}(\sqrt[4]{2})$.
     <2>2. $K/F$ is Galois: $K = \mathbb{Q}(\sqrt{2})$ is an extension of degree 2 over $\mathbb{Q}$, which is the splitting field of $x^2 - 2$ over $\mathbb{Q}$, hence Galois.
@@ -58,8 +56,8 @@ Let $F \subseteq K \subseteq L$ be finite-degree field extensions. For each of t
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    (a) is false, (b) is true, and (c) is false.
+Steps <1>1, <1>2, and <1>3 settle parts (a), (b), and (c), respectively.
 :::
 :::
