@@ -22,14 +22,26 @@ audit:
 Prove your answer.
 :::
 
-:::: {.solution}
-<1>1. $f(x) = \ln x$ is NOT uniformly continuous on $(0,1]$.
-Proof: take $x_n = e^{-n}$ and $y_n = e^{-n-1}$.
-Then $x_n, y_n \in (0,1]$ and \[|x_n - y_n| = e^{-n-1}(e - 1) \to 0,\] but $|\ln x_n - \ln y_n| = |-n - (-n-1)| = 1$ for all $n$.
-Hence for $\epsilon = 1$ (say $\epsilon = 1/2$) there is no $\delta > 0$ working for all pairs; the $\epsilon$-$\delta$ definition of uniform continuity fails.
-<1>2. $g(x) = \sin(1/x)$ is also NOT uniformly continuous on $(0,\pi]$.
-Proof: take $x_n = \frac{1}{\pi/2 + 2\pi n}$ and $y_n = \frac{1}{3\pi/2 + 2\pi n}$.
-Both lie in $(0,\pi]$, and $|x_n - y_n| \to 0$, while $g(x_n) = \sin(\pi/2 + 2\pi n) = 1$ and $g(y_n) = \sin(3\pi/2 + 2\pi n) = -1$, so $|g(x_n) - g(y_n)| = 2$ for all $n$.
-Not uniformly continuous.
-<1>3. Q.E.D.
+::: {.solution}
+<1>1. The function $\ln:(0,1]\to\mathbb R$ is not uniformly continuous.
+
+::: {.proof}
+For every integer $n\geq1$, set $x_n=e^{-n}$ and $y_n=e^{-(n+1)}$. Both points belong to $(0,1]$, and
+\[
+|x_n-y_n|=(1-e^{-1})e^{-n}\longrightarrow0,
+\qquad
+|\ln x_n-\ln y_n|=1.
+\]
+Suppose that $\ln$ were uniformly continuous. Applying its definition with $\varepsilon=1/2$ would give $\delta>0$ such that $|x-y|<\delta$ implies $|\ln x-\ln y|<1/2$. Choosing $n$ sufficiently large that $|x_n-y_n|<\delta$ contradicts the displayed equality.
+:::
+
+<1>2. Q.E.D.
+
+::: {.proof}
+Step <1>1 supplies the required counterexample to uniform continuity.
+:::
+:::
+
+::: {.remark}
+Another example is $g:(0,\pi]\to\mathbb R$, $g(x)=\sin(1/x)$. For $n\geq1$, take $u_n=(\pi/2+2\pi n)^{-1}$ and $v_n=(3\pi/2+2\pi n)^{-1}$. Both lie in $(0,\pi]$, and $|u_n-v_n|\to0$, whereas $g(u_n)=1$ and $g(v_n)=-1$. Hence $g$ is not uniformly continuous.
 :::
