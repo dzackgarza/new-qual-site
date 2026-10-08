@@ -33,9 +33,7 @@ splits.
 :::
 
 ::: {.solution}
-**Goal:** Define free and torsion-free modules, prove that free modules are projective (surjective maps split), and deduce the direct sum decomposition $M \cong \operatorname{tor}(M) \oplus F$ for finitely generated modules over PIDs.
-
-<1>1. Part (a): Definition of a free $R$-module.
+<1>1. An $R$-module $F$ is free if it has an $R$-basis, equivalently if it is isomorphic to a direct sum of copies of $R$.
 ::: {.proof}
     An $R$-module $F$ is called **free** if it satisfies any of the following equivalent conditions:
     1. $F$ possesses an $R$-basis: a subset $B \subseteq F$ such that every element $m \in F$ can be expressed uniquely as a finite $R$-linear combination $m = \sum_{b \in B} r_b b$ with coefficients $r_b \in R$.
@@ -44,7 +42,7 @@ splits.
 
 :::
 
-<1>2. Part (b): Definition of a torsion-free $R$-module.
+<1>2. Over an integral domain $R$, a module $M$ is torsion-free if $rm=0$ implies $r=0$ or $m=0$.
 ::: {.proof}
     Let $R$ be an integral domain (or a commutative ring).
     1. An element $m \in M$ is called a **torsion element** if there exists a non-zero element $r \in R \setminus \{0\}$ such that $r m = 0$.
@@ -53,7 +51,7 @@ splits.
 
 :::
 
-<1>3. Part (c): Splitting of $0 \to N \xrightarrow{\iota} M \xrightarrow{\pi} F \to 0$ when $F$ is free.
+<1>3. Every short exact sequence $0\to N\xrightarrow{\iota}M\xrightarrow{\pi}F\to0$ with $F$ free splits.
 ::: {.proof}
     <2>1. Let $B \subseteq F$ be an $R$-basis of the free module $F$.
     <2>2. Construct a set map on the basis: Since $\pi: M \to F$ is surjective, for each basis element $b \in B$, the fiber $\pi^{-1}(\{b\})$ is non-empty. Choose an element $y_b \in M$ such that $\pi(y_b) = b$.
@@ -67,7 +65,11 @@ splits.
 
 :::
 
-<1>4. Part (d): Decomposition $M \cong \operatorname{tor}(M) \oplus F$ for finitely generated modules over a PID.
+<1>4. If $R$ is a PID and $M$ is finitely generated, then
+\[
+\boxed{M\cong\operatorname{tor}(M)\oplus F}
+\]
+for a free $R$-module $F$.
 ::: {.proof}
     <2>1. Define $T = \operatorname{tor}(M)$. Since $R$ is a PID (hence an integral domain), $T$ is an $R$-submodule of $M$.
     <2>2. Consider the canonical short exact sequence:
@@ -89,8 +91,8 @@ splits.
 
 :::
 
-<1>5. Conclusion:
+<1>5. Q.E.D.
 ::: {.proof}
-    Free modules have bases, torsion-free modules have no non-zero annihilators, surjections onto free modules split, and finitely generated modules over PIDs decompose as $\operatorname{tor}(M) \oplus F$.
+Steps <1>1--<1>4 establish parts (a)--(d), respectively.
 :::
 :::
