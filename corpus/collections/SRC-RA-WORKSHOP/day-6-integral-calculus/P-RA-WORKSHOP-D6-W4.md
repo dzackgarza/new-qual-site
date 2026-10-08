@@ -18,19 +18,32 @@ audit:
 ---
 
 ::: {.problem}
-([Apo74, 7.2]) If $f\in\mathcal R(\alpha)$ on $[a,b]$ and $\int_a^b f\,d\alpha=0$ for every $f$ which is monotonic on $[a,b]$, prove that $\alpha$ must be constant on $[a,b]$.
+([Apo74, 7.2]) Let $\alpha:[a,b]\to\mathbb R$ be increasing. If $f\in\mathcal R(\alpha)$ and $\int_a^b f\,d\alpha=0$ for every monotone function $f:[a,b]\to\mathbb R$, prove that $\alpha$ is constant on $[a,b]$.
 :::
 
-:::: {.solution}
-<1>1. Apply the hypothesis to $f \equiv 1$ (constant, hence monotone).
-Proof: $\int_a^b 1\,d\alpha = \alpha(b) - \alpha(a) = 0$, so $\alpha(a) = \alpha(b)$.
-<1>2. Apply the hypothesis to $f(x) = x$ (monotone increasing).
-Proof: $\int_a^b x\,d\alpha = 0$.
-By the Stieltjes integration-by-parts formula (valid since $f$ is continuous and $\alpha$ is monotone, both of bounded variation), \[\int_a^b x\,d\alpha = b\alpha(b) - a\alpha(a) - \int_a^b \alpha(x)\,dx.\] Using $\alpha(a) = \alpha(b) =: c$ from <1>1: \[0 = b c - a c - \int_a^b \alpha(x)\,dx = c(b-a) - \int_a^b \alpha(x)\,dx,\] so $\int_a^b (\alpha(x) - c)\,dx = 0$.
-<1>3. $\alpha \equiv c$ on $[a,b]$.
-Proof: $\alpha$ is increasing, so $\alpha(x) - c = \alpha(x) - \alpha(a) \ge 0$ for all $x$.
-A non-negative Riemann-integrable function with zero integral is $0$ a.e., so $\alpha(x) = c$ for a.e. $x \in [a,b]$.
-Since $\alpha$ is monotone, if $\alpha(x_0) > c$ at some point then $\alpha \ge \alpha(x_0) > c$ on $[x_0, b]$, a set of positive measure — contradiction.
-Hence $\alpha(x) = c$ for all $x \in [a,b]$; $\alpha$ is constant.
-<1>4. Q.E.D.
+::: {.solution}
+<1>1. The endpoints satisfy $\alpha(a)=\alpha(b)$.
+
+::: {.proof}
+The constant function $f\equiv1$ is monotone and Riemann–Stieltjes integrable with respect to every increasing $\alpha$: every tagged sum telescopes to $\alpha(b)-\alpha(a)$. The hypothesis therefore gives
+\[
+0=\int_a^b1\,d\alpha=\alpha(b)-\alpha(a).
+\]
+:::
+
+<1>2. The integrator $\alpha$ is constant on $[a,b]$.
+
+::: {.proof}
+For every $x\in[a,b]$, monotonicity of $\alpha$ and step <1>1 give
+\[
+\alpha(a)\leq\alpha(x)\leq\alpha(b)=\alpha(a).
+\]
+Hence $\alpha(x)=\alpha(a)$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 establishes the required constancy.
+:::
 :::
