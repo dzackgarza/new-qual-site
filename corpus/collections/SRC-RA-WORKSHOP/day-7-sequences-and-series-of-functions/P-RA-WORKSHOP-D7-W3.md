@@ -25,22 +25,44 @@ Assume that $\{f_n\}$ is a sequence of continuous functions $f_n:E\subset\mathbb
 Prove the results of Theorem 6.1 directly.
 :::
 
-:::: {.solution}
-**Goal:** Prove directly that the uniform limit $f$ of continuous functions $f_n: E \to \mathbb R$ is continuous.
+::: {.solution}
+<1>1. For every $x_0\in E$ and $\varepsilon>0$, there exists $N\geq1$ such that
+\[
+|f_N(x)-f(x)|<\varepsilon/3\qquad(x\in E).
+\]
 
-<1>1. $f$ is a function $E \to \mathbb R$.
-Proof: $f_n(x)$ converges for every $x \in E$ (uniform convergence implies pointwise), so $f(x) := \lim_n f_n(x)$ is a well-defined real number at each $x$.
+::: {.proof}
+This is the definition of uniform convergence applied with tolerance $\varepsilon/3$. If $E$ is empty, the continuity assertion is vacuous.
+:::
 
-<1>2. Fix $x_0 \in E$ and $\varepsilon > 0$.
-Choose $N$ with $\|f_n - f\|_\infty < \varepsilon/3$ for all $n \ge N$.
-Proof: uniform convergence of $f_n$ to $f$.
+<1>2. For $x_0,\varepsilon,N$ as in step <1>1, there exists $\delta>0$ such that
+\[
+|f_N(x)-f_N(x_0)|<\varepsilon/3
+\quad\text{whenever }x\in E,\ |x-x_0|<\delta.
+\]
 
-<1>3. Choose $\delta > 0$ such that $|x - x_0| < \delta \Rightarrow |f_N(x) - f_N(x_0)| < \varepsilon/3$.
-Proof: $f_N$ is continuous at $x_0$.
+::: {.proof}
+The function $f_N$ is continuous at $x_0$ by hypothesis. Apply its epsilon-delta condition with tolerance $\varepsilon/3$.
+:::
 
-<1>4. For $|x - x_0| < \delta$: $|f(x) - f(x_0)| \le |f(x) - f_N(x)| + |f_N(x) - f_N(x_0)| + |f_N(x_0) - f(x_0)| < \varepsilon/3 + \varepsilon/3 + \varepsilon/3 = \varepsilon$.
-Proof: the first and third terms are $< \varepsilon/3$ by <1>2 (uniform closeness of $f_N$ to $f$), the middle by <1>3.
+<1>3. The function $f$ is continuous at every $x_0\in E$.
 
-<1>5. $f$ is continuous at $x_0$.
-Proof: <1>4 gives the $\varepsilon$-$\delta$ condition at $x_0$; $x_0$ was arbitrary, so $f$ is continuous on $E$.
+::: {.proof}
+Fix $x_0\in E$ and $\varepsilon>0$, and choose $N$ and $\delta$ by steps <1>1 and <1>2. Whenever $x\in E$ and $|x-x_0|<\delta$, the triangle inequality gives
+\[
+\begin{aligned}
+|f(x)-f(x_0)|
+&\leq |f(x)-f_N(x)|+|f_N(x)-f_N(x_0)|\\
+&\quad+|f_N(x_0)-f(x_0)|
+<\varepsilon.
+\end{aligned}
+\]
+Thus the epsilon-delta condition holds at every $x_0\in E$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves continuity of the uniform limit on $E$.
+:::
 :::
