@@ -25,9 +25,7 @@ Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$
 :::
 
 ::: {.solution}
-**Goal:** Compute the cyclotomic extension degree in (a), classify its quadratic subfields via Galois correspondence in (b), and compute the field degree of $\mathbb{Q}(\zeta, \sqrt[4]{2})/\mathbb{Q}$ in (c).
-
-<1>1. Part (a): Degree $[\mathbb{Q}(\zeta) : \mathbb{Q}] = 4$.
+<1>1. The degree of the cyclotomic extension is $[\mathbb Q(\zeta):\mathbb Q]=4$.
 ::: {.proof}
     <2>1. The element $\zeta = e^{2\pi i / 8}$ is a primitive $8$-th root of unity.
     <2>2. The minimal polynomial of $\zeta$ over $\mathbb{Q}$ is the $8$-th cyclotomic polynomial:
@@ -37,7 +35,10 @@ Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$
 
 :::
 
-<1>2. Part (b): There are exactly 3 quadratic subfields of $\mathbb{Q}(\zeta)$.
+<1>2. The three quadratic subfields of $\mathbb Q(\zeta)$ are
+\[
+\boxed{\mathbb Q(i),\quad \mathbb Q(\sqrt2),\quad\mathbb Q(\sqrt{-2})}.
+\]
 ::: {.proof}
     <2>1. The extension $\mathbb{Q}(\zeta)/\mathbb{Q}$ is Galois, with Galois group isomorphic to the unit group $(\mathbb{Z}/8\mathbb{Z})^\times$:
     $$\operatorname{Gal}(\mathbb{Q}(\zeta)/\mathbb{Q}) \cong (\mathbb{Z}/8\mathbb{Z})^\times = \{1, 3, 5, 7\} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z},$$
@@ -54,7 +55,10 @@ Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$
 
 :::
 
-<1>3. Part (c): $[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}] = 8$.
+<1>3. The extension obtained by adjoining the fourth root of two has degree
+\[
+\boxed{[\mathbb Q(\zeta,\sqrt[4]2):\mathbb Q]=8}.
+\]
 ::: {.proof}
     <2>1. From <1>2, $\mathbb{Q}(\zeta) = \mathbb{Q}(i, \sqrt{2})$.
     <2>2. Since $(\sqrt[4]{2})^2 = \sqrt{2}$, we have $\mathbb{Q}(\sqrt{2}) \subseteq \mathbb{Q}(\sqrt[4]{2})$.
@@ -70,10 +74,9 @@ Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    $[\mathbb{Q}(\zeta) : \mathbb{Q}] = 4$, there are 3 quadratic subfields, and $[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}] = 8$.
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
 :::
 :::
-
 
