@@ -21,17 +21,33 @@ b. Define *maximal ideal*, give an example of a nontrivial maximal ideal in $\ZZ
 :::
 
 ::: {.solution}
-\envlist
+<1>1. An ideal $\mathfrak p$ of a commutative ring $R$ is prime if it is proper and $ab\in\mathfrak p$ implies $a\in\mathfrak p$ or $b\in\mathfrak p$.
 
-- $\mfp$ is **prime** iff $xy\in \mfp \implies x\in \mfp$ or $y\in \mfp$.
+::: {.proof}
+This is the defining condition for a prime ideal.
+:::
 
-  - An ideal $I\normal \ZZ$ that is not prime: $I \da 8\ZZ$.
+<1>2. The nonzero proper ideal $8\mathbb Z$ is not prime.
 
-  - For example, $2\cdot 4\in 8\ZZ$ but neither 2 nor 4 is a multiple of 8.
+::: {.proof}
+The integers $2$ and $4$ do not belong to $8\mathbb Z$, but their product $8$ does. Thus the implication in step <1>1 fails.
+:::
 
-- $\mfm$ is **maximal** iff whenever $I\contains \mfm$ is an ideal in $R$, then either $I=\mfm$ or $I = R$.
+<1>3. An ideal $\mathfrak m$ of a commutative ring $R$ is maximal if it is proper and every ideal $J$ satisfying $\mathfrak m\subseteq J\subseteq R$ equals $\mathfrak m$ or $R$.
 
-  - A maximal ideal in $\ZZ$: $p\ZZ$.
-    This is because primes are maximal in a PID and $p\ZZ$ is a prime ideal.
-    Alternatively, "to contain is to divide" holds for Dedekind domains, so $m\ZZ \contains p\ZZ \iff m\divides p$, which forces $m=1,p$, so either $m\ZZ = p\ZZ$ or $m\ZZ = \ZZ$.
+::: {.proof}
+This is the defining condition for a maximal ideal.
+:::
+
+<1>4. The ideal $2\mathbb Z$ is a nonzero maximal ideal of $\mathbb Z$.
+
+::: {.proof}
+The quotient $\mathbb Z/2\mathbb Z$ is a field. An ideal is maximal exactly when its quotient ring is a field, so $2\mathbb Z$ is maximal. Equivalently, any ideal containing $2\mathbb Z$ is $d\mathbb Z$ for a positive divisor $d$ of $2$, hence is either $2\mathbb Z$ or $\mathbb Z$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 answer part (a), and steps <1>3 and <1>4 answer part (b).
+:::
 :::
