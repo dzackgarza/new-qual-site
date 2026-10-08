@@ -24,23 +24,54 @@ The family $\mathcal F$ is uniformly equicontinuous if for every $\epsilon>0$ th
 Prove that these definitions are equivalent when $K$ is compact.
 :::
 
-:::: {.solution}
-**Goal:** Prove pointwise equicontinuity and uniform equicontinuity of a family $\mathcal F \subseteq C(K;\mathbb R^m)$ are equivalent when $K$ is compact.
-
+::: {.solution}
 <1>1. Uniform equicontinuity implies pointwise equicontinuity.
-Proof: if $\delta$ works for all $x, y$ simultaneously, then in particular it works for all $y$ with $y$ near a fixed $x$; so the pointwise condition holds with the same $\delta$ (independent of $x$, hence certainly allowed to depend on $x$).
 
-<1>2. Pointwise equicontinuity implies uniform equicontinuity.
-<2>1. Fix $\varepsilon > 0$.
-For each $x \in K$ choose $\delta_x > 0$ such that $\|x - y\| < \delta_x \Rightarrow \|f(x) - f(y)\| < \varepsilon/2$ for all $f \in \mathcal F$.
-Proof: the pointwise equicontinuity hypothesis at $x$ with $\varepsilon/2$ in place of $\varepsilon$.
-<2>2. The balls $B(x, \delta_x/2)$, $x \in K$, cover $K$.
-Proof: $x \in B(x, \delta_x/2)$ for each $x$.
-<2>3. $K$ is covered by finitely many of them: $K \subseteq \bigcup_{i=1}^n B(x_i, \delta_{x_i}/2)$.
-Proof: compactness of $K$ applied to the open cover of <2>2. <2>4. Set $\delta := \min_i \delta_{x_i}/2 > 0$.
-If $\|x - y\| < \delta$, then for every $f \in \mathcal F$, $\|f(x) - f(y)\| < \varepsilon$.
-Proof: $x$ lies in some $B(x_i, \delta_{x_i}/2)$ by <2>3, so $\|x - x_i\| < \delta_{x_i}/2$; then $\|y - x_i\| \le \|y - x\| + \|x - x_i\| < \delta + \delta_{x_i}/2 \le \delta_{x_i}/2 + \delta_{x_i}/2 = \delta_{x_i}$ since $\delta \le \delta_{x_i}/2$.
-Both $x$ and $y$ are within $\delta_{x_i}$ of $x_i$, so $\|f(x) - f(x_i)\| < \varepsilon/2$ and $\|f(y) - f(x_i)\| < \varepsilon/2$, hence $\|f(x) - f(y)\| \le \|f(x)-f(x_i)\| + \|f(y)-f(x_i)\| < \varepsilon$ by the triangle inequality.
-This holds for all $f \in \mathcal F$ simultaneously, and $\delta$ is independent of $x, y, f$.
-<2>5. Q.E.D. Proof: <2>4 is uniform equicontinuity.
+::: {.proof}
+Fix $x\in K$ and $\varepsilon>0$. A radius $\delta>0$ satisfying the uniform condition works in particular for every $y\in K$ within $\delta$ of this fixed $x$, uniformly over $f\in\mathcal F$.
+:::
+
+<1>2. If $K$ is compact, pointwise equicontinuity implies uniform equicontinuity.
+
+<2>1. For each $\varepsilon>0$ and each $z\in K$, there exists $r_z>0$ such that
+\[
+\|f(z)-f(w)\|<\varepsilon/2
+\quad\text{for all }f\in\mathcal F\text{ and }w\in K\text{ with }\|z-w\|<r_z.
+\]
+
+::: {.proof}
+Apply pointwise equicontinuity at $z$ with tolerance $\varepsilon/2$.
+:::
+
+<2>2. If $K\ne\varnothing$, there exist $z_1,\ldots,z_N\in K$ such that
+\[
+K\subseteq\bigcup_{i=1}^N B(z_i,r_{z_i}/2).
+\]
+
+::: {.proof}
+The balls $B(z,r_z/2)$ for $z\in K$ form an open cover of $K$. Compactness supplies a finite subcover. If $K$ is empty, uniform equicontinuity is vacuous.
+:::
+
+<2>3. For $K\ne\varnothing$, the number $\delta:=\min_{1\le i\le N}r_{z_i}/2>0$ satisfies the uniform equicontinuity condition for tolerance $\varepsilon$.
+
+::: {.proof}
+Fix $x,y\in K$ with $\|x-y\|<\delta$. By step <2>2, choose $i$ such that $\|x-z_i\|<r_{z_i}/2$. Then
+\[
+\|y-z_i\|\leq\|y-x\|+\|x-z_i\|
+<\delta+r_{z_i}/2\leq r_{z_i}.
+\]
+Step <2>1 applied at $z_i$ gives $\|f(x)-f(z_i)\|<\varepsilon/2$ and $\|f(y)-f(z_i)\|<\varepsilon/2$ for every $f\in\mathcal F$. The triangle inequality gives $\|f(x)-f(y)\|<\varepsilon$. The radius $\delta$ depends only on $\varepsilon$, not on $x,y$ or $f$.
+:::
+
+<2>4. Q.E.D.
+
+::: {.proof}
+Steps <2>2 and <2>3 prove uniform equicontinuity for nonempty $K$, and the empty case is immediate.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 establish both implications.
+:::
 :::
