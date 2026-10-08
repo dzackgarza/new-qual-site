@@ -27,6 +27,9 @@ b. Prove that $\alpha^{2020}$ is algebraic of odd degree over $F$.
 :::
 
 ::: {.solution}
+<1>1. The intermediate extension $F(\alpha)/F(\alpha^2)$ has degree at most two.
+
+::: {.proof}
 Because $\alpha$ satisfies
 \[
 x^2-\alpha^2\in F(\alpha^2)[x],
@@ -35,6 +38,11 @@ we have
 \[
 [F(\alpha):F(\alpha^2)]\le2.
 \]
+:::
+
+<1>2. The equality $F(\alpha)=F(\alpha^2)$ holds.
+
+::: {.proof}
 By the tower law,
 \[
 [F(\alpha):F]=[F(\alpha):F(\alpha^2)]\,[F(\alpha^2):F].
@@ -43,10 +51,21 @@ The left side is odd, so the first factor cannot be $2$. Hence it equals $1$, an
 \[
 F(\alpha)=F(\alpha^2).
 \]
+:::
 
+<1>3. The element $\alpha^{2020}$ is algebraic over $F$ of odd degree.
+
+::: {.proof}
 Now put $\beta=\alpha^{2020}$. Since $\beta\in F(\alpha)$, it is algebraic over $F$, and again the tower law gives
 \[
 [F(\alpha):F]=[F(\alpha):F(\beta)]\,[F(\beta):F].
 \]
 The left side is odd, so every positive divisor of it is odd. In particular $[F(\beta):F]$ is odd. Thus $\alpha^{2020}$ is algebraic of odd degree over $F$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 prove part (a), and step <1>3 proves part (b).
+:::
 :::
