@@ -29,9 +29,7 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove that $\operatorname{tor}(M)$ is a submodule over integral domains in (a), provide a counterexample over non-domains in (b), and prove the existence of non-zero torsion elements over rings with zero-divisors in (c).
-
-<1>1. Part (a): $\operatorname{tor}(M)$ is an $R$-submodule when $R$ is an integral domain.
+<1>1. If $R$ is an integral domain, then $\operatorname{tor}(M)$ is an $R$-submodule.
 ::: {.proof}
     <2>1. Non-empty: $0 \in \operatorname{tor}(M)$ since $1 \cdot 0 = 0$ and $1 \ne 0$ in $R$.
     <2>2. Closure under scalar multiplication:
@@ -50,7 +48,7 @@ $$
 
 :::
 
-<1>2. Part (b): Counterexample where $\operatorname{tor}(M)$ is not a submodule.
+<1>2. For the regular module $M=\mathbb Z/6\mathbb Z$, the set $\operatorname{tor}(M)$ is not a submodule.
 ::: {.proof}
     <2>1. Let $R = \mathbb{Z}/6\mathbb{Z}$ and consider $M = R = \mathbb{Z}/6\mathbb{Z}$ as a regular module over itself.
     <2>2. The element $\bar{2} \in \mathbb{Z}/6\mathbb{Z}$ is torsion: $3 \cdot \bar{2} = \bar{6} = \bar{0}$ with $\bar{3} \ne \bar{0}$, so $\bar{2} \in \operatorname{tor}(M)$.
@@ -62,7 +60,7 @@ $$
 
 :::
 
-<1>3. Part (c): Existence of non-zero torsion elements when $R$ has zero-divisors.
+<1>3. If $R$ has zero-divisors, every nonzero $R$-module has a nonzero torsion element.
 ::: {.proof}
     <2>1. Since $R$ has zero-divisors, there exist non-zero elements $a, b \in R \setminus \{0\}$ such that $a b = 0$.
     <2>2. Let $M \ne \{0\}$ be any non-zero $R$-module. Choose a non-zero element $m \in M \setminus \{0\}$.
@@ -78,9 +76,8 @@ $$
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    $\operatorname{tor}(M)$ is a submodule over integral domains, fails to be a submodule in general rings, and non-zero modules over rings with zero-divisors always contain non-zero torsion elements.
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
 :::
 :::
-
