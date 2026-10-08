@@ -25,14 +25,30 @@ $$
 (For simplicity, you may assume that this is an inner product space over $\mathbb R$.)
 :::
 
-:::: {.solution}
-<1>1. Expand both sides using bilinearity and symmetry of the inner product.
+::: {.solution}
+<1>1. For all $x,y$ in a real inner product space,
+\[
+\lVert x+y\rVert^2=\lVert x\rVert^2+2\langle x,y\rangle+\lVert y\rVert^2,
+\qquad
+\lVert x-y\rVert^2=\lVert x\rVert^2-2\langle x,y\rangle+\lVert y\rVert^2.
+\]
+
 ::: {.proof}
-For $x, y$ in a real inner product space, \[\lVert x+y\rVert^2 = \langle x+y, x+y\rangle = \lVert x\rVert^2 + 2\langle x, y\rangle + \lVert y\rVert^2,\] \[\lVert x-y\rVert^2 = \langle x-y, x-y\rangle = \lVert x\rVert^2 - 2\langle x, y\rangle + \lVert y\rVert^2.\]
+Expand $\langle x+y,x+y\rangle$ and $\langle x-y,x-y\rangle$ by bilinearity. The equality $\langle y,x\rangle=\langle x,y\rangle$ combines the two cross terms in each expression, and $\langle v,v\rangle=\lVert v\rVert^2$ identifies the diagonal terms.
 :::
-<1>2. Add.
+
+<1>2. The parallelogram identity holds:
+\[
+\boxed{\lVert x+y\rVert^2+\lVert x-y\rVert^2=2\lVert x\rVert^2+2\lVert y\rVert^2}.
+\]
+
 ::: {.proof}
-Adding the two identities, the cross terms cancel: \[\lVert x+y\rVert^2 + \lVert x-y\rVert^2 = 2\lVert x\rVert^2 + 2\lVert y\rVert^2.\]
+Add the two equalities in step <1>1. The terms $2\langle x,y\rangle$ and $-2\langle x,y\rangle$ cancel.
 :::
+
 <1>3. Q.E.D.
-::::
+
+::: {.proof}
+Step <1>2 is the required identity for arbitrary $x$ and $y$.
+:::
+:::
