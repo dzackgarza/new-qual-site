@@ -34,6 +34,9 @@ Prove that if the induced morphism \( \bar{f}: M/IM \to N/IN \) is surjective, t
 :::
 
 ::: {.solution}
+<1>1. The subset $IM\subseteq M$ is a left $R$-submodule.
+
+::: {.proof}
 For (a), $IM$ contains $0$ and is closed under addition by concatenating finite sums. If
 \[
 x=\sum_i a_i m_i\in IM
@@ -43,7 +46,11 @@ and $r\in R$, then, because $I$ is a left ideal,
 rx=\sum_i (ra_i)m_i\in IM.
 \]
 Thus $IM$ is a left $R$-submodule of $M$.
+:::
 
+<1>2. Surjectivity of $\bar f:M/IM\to N/IN$ implies $N=f(M)+IN$.
+
+::: {.proof}
 For (b), surjectivity of $\bar f$ means that for every $n\in N$ there exist $m\in M$ and $u\in IN$ such that
 \[
 n=f(m)+u.
@@ -52,7 +59,12 @@ Hence
 \[
 N=f(M)+IN.
 \]
-Let $Q=N/f(M)$. Since $f(M)$ is a submodule, $Q$ is a left $R$-module. The displayed equality says
+:::
+
+<1>3. If $I$ is nilpotent, then $f:M\to N$ is surjective.
+
+::: {.proof}
+Let $Q=N/f(M)$. Since $f(M)$ is a submodule, $Q$ is a left $R$-module. The equality from step <1>2 gives
 \[
 Q=IQ.
 \]
@@ -65,4 +77,11 @@ for every $k\ge1$. If $I$ is nilpotent, choose $k$ with $I^k=0$. Then
 Q=I^kQ=0.
 \]
 Therefore $N=f(M)$, so $f$ is surjective.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), while steps <1>2 and <1>3 prove part (b).
+:::
 :::
