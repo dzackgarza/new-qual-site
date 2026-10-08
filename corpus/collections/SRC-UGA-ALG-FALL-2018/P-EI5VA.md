@@ -28,9 +28,7 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove conjugacy of stabilizers in (a), prove that conjugates of a proper subgroup do not cover $G$ in (b), and deduce the existence of a fixed-point-free element (derangement) for transitive actions in (c).
-
-<1>1. Part (a): Conjugacy of stabilizers in an orbit.
+<1>1. For every $x\in X$ and $g\in G$, one has $G_{gx}=gG_xg^{-1}$.
 ::: {.proof}
     <2>1. Let $x \in X$ and $g \in G$, and let $y = g \cdot x \in X$.
     <2>2. An element $h \in G$ stabilizes $y$ if and only if $h \cdot y = y$.
@@ -42,7 +40,7 @@ $$
 
 :::
 
-<1>2. Part (b): Conjugates of a proper subgroup do not cover $G$.
+<1>2. The conjugates of any proper subgroup $H<G$ do not cover the finite group $G$.
 ::: {.proof}
     <2>1. Let $N_G(H) = \{g \in G : g H g^{-1} = H\}$ be the normalizer of $H$ in $G$.
     <2>2. The distinct conjugates of $H$ in $G$ are parameterized by the cosets of $N_G(H)$, so there are precisely $k = [G : N_G(H)]$ distinct conjugates $H_1, H_2, \dots, H_k$.
@@ -60,7 +58,7 @@ $$
 
 :::
 
-<1>3. Part (c): Transitive actions on $|S| \ge 2$ have a fixed-point-free element.
+<1>3. Every transitive action on a set of at least two points admits a fixed-point-free element.
 ::: {.proof}
     <2>1. Method 1 (via Part (b)):
         <3>1. Choose an arbitrary point $s_0 \in S$, and let $H = G_{s_0} \le G$ be its stabilizer.
@@ -83,8 +81,8 @@ $$
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    Stabilizers in an orbit are conjugate, conjugates of a proper subgroup cannot cover a finite group, and transitive actions on sets of size $\ge 2$ always contain derangements.
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
 :::
 :::
