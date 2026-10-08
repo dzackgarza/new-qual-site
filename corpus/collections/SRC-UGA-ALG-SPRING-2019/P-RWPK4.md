@@ -34,9 +34,7 @@ Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis
 :::
 
 ::: {.solution}
-**Goal:** Compute the characteristic polynomial, eigenspaces, Jordan canonical forms, and transition matrices of $A$ over $\mathbb{Q}$ in (a) and over $\mathbb{F}_p$ in (b).
-
-<1>1. Relation to the all-ones matrix $J_p$:
+<1>1. If $J_p$ is the all-ones matrix, then $A=J_p-I_p$.
 ::: {.proof}
     <2>1. Let $J_p \in M_p(F)$ denote the $p \times p$ all-ones matrix ($J_{i, j} = 1$ for all $1 \le i, j \le p$).
     <2>2. Then $A = J_p - I_p$.
@@ -46,7 +44,7 @@ Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis
 
 :::
 
-<1>2. Part (a): JCF and change-of-basis matrix over $\mathbb{Q}$.
+<1>2. Over $\mathbb Q$, the matrix $A$ is diagonalizable with eigenvalues $p-1$ and $-1$ of multiplicities $1$ and $p-1$, respectively.
 ::: {.proof}
     <2>1. Spectrum of $J_p$:
         - For the vector $v_1 = (1, 1, \dots, 1)^t \in \mathbb{Q}^p$, $J_p v_1 = p v_1$, so $\mu_1 = p$ is an eigenvalue of $J_p$.
@@ -73,7 +71,7 @@ Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis
 
 :::
 
-<1>3. Part (b): JCF and change-of-basis matrix over $\mathbb{F}_p$.
+<1>3. Over $\mathbb F_p$, the nilpotent part $A+I_p$ has square zero and rank one.
 ::: {.proof}
     <2>1. Characteristic polynomial over $\mathbb{F}_p$:
         - In $\mathbb{F}_p$, $p - 1 \equiv -1 \pmod p$.
@@ -108,7 +106,7 @@ Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
     Over $\mathbb{Q}$, $A$ is diagonalizable with eigenvalues $p-1$ (mult 1) and $-1$ (mult $p-1$). Over $\mathbb{F}_p$, $A$ has one Jordan block of size 2 and $p-2$ Jordan blocks of size 1 for eigenvalue $-1$.
 :::
