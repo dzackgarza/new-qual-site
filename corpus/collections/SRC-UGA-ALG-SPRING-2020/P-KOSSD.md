@@ -22,9 +22,7 @@ Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $N \trianglelefteq G$ has $\gcd(|N|, [G : N]) = 1$, then any subgroup $K \le G$ with $|K| = |N|$ satisfies $K = N$, using Bézout's identity and orders in the quotient group $G/N$.
-
-<1>1. Setting up notation and Bézout's identity:
+<1>1. There exist integers $s,t$ such that $|N|s+[G:N]t=1$.
 ::: {.proof}
     <2>1. Let $n = |N|$ and $m = [G : N] = |G/N|$.
     <2>2. Since $N \trianglelefteq G$, the quotient group $G/N$ is well-defined and has order $|G/N| = m$.
@@ -34,7 +32,7 @@ Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 
 :::
 
-<1>2. Inclusion $K \subseteq N$ for any subgroup $K \le G$ of order $|K| = n$:
+<1>2. Every subgroup $K\leq G$ with $|K|=|N|$ is contained in $N$.
 ::: {.proof}
     <2>1. Let $K \le G$ be a subgroup with $|K| = n$.
     <2>2. Let $x \in K$ be an arbitrary element.
@@ -49,7 +47,7 @@ Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 
 :::
 
-<1>3. Equality $K = N$:
+<1>3. Every subgroup $K$ of order $|N|$ equals $N$.
 ::: {.proof}
     <2>1. $K \subseteq N$ and $|K| = |N| = n < \infty$.
     <2>2. Any subset of a finite set with the same cardinality must be the entire set.
@@ -57,8 +55,8 @@ Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    $N$ is the unique subgroup of $G$ of order $|N|$.
+Step <1>3 proves the required uniqueness.
 :::
 :::
