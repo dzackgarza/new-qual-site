@@ -29,49 +29,27 @@ Suppose that $I = \operatorname{Ann}(\mu)$ for some non-zero element $\mu \in M 
 :::
 
 ::: {.solution}
-**Goal:** Define maximal ideals and prove their existence via Zorn's Lemma in (a), characterize non-units via containment in maximal ideals in (b), and prove that maximal element-annihilators are prime ideals in (c).
+<1>1. A maximal ideal is a proper ideal maximal under inclusion, and every nonzero unital commutative ring possesses one.
 
-<1>1. Part (a): Definition of maximal ideal and existence via Zorn's Lemma.
-    *Proof:*
-    <2>1. An ideal $\mathfrak{m} \subset R$ is a maximal ideal if $\mathfrak{m} \ne R$ (i.e. $\mathfrak{m}$ is a proper ideal) and the only ideals containing $\mathfrak{m}$ are $\mathfrak{m}$ and $R$.
-    <2>2. Define the family of proper ideals:
-    $$\mathcal{S} = \{I \subseteq R : I \text{ is an ideal of } R \text{ and } I \ne R\}.$$
-    <2>3. Since $R \ne 0$, the zero ideal $\{0\} \ne R$, so $\{0\} \in \mathcal{S}$ and $\mathcal{S} \ne \emptyset$.
-    <2>4. Partially order $\mathcal{S}$ by set inclusion $\subseteq$. Let $\mathcal{C} \subseteq \mathcal{S}$ be a non-empty totally ordered chain of proper ideals.
-    <2>5. The union $J = \bigcup_{I \in \mathcal{C}} I$ is an ideal of $R$: for any $x, y \in J$ and $r \in R$, there exist $I_1, I_2 \in \mathcal{C}$ with $x \in I_1$ and $y \in I_2$. Since $\mathcal{C}$ is a chain, assume without loss of generality that $I_1 \subseteq I_2$. Then $x, y \in I_2$, so $x - y \in I_2 \subseteq J$ and $r x \in I_2 \subseteq J$.
-    <2>6. The ideal $J$ is proper: if $J = R$, then $1 \in J = \bigcup_{I \in \mathcal{C}} I$, so $1 \in I_0$ for some $I_0 \in \mathcal{C}$, which would mean $I_0 = R$, contradicting $I_0 \in \mathcal{S}$. Thus $1 \notin J$, so $J \in \mathcal{S}$.
-    <2>7. Since $J$ contains every $I \in \mathcal{C}$, $J$ is an upper bound for $\mathcal{C}$ in $\mathcal{S}$.
-    <2>8. By Zorn's Lemma, $\mathcal{S}$ contains a maximal element $\mathfrak{m}$, which is a maximal ideal of $R$.
+::: {.proof}
+Let $\mathcal P$ be the partially ordered set of proper ideals of $R$. It is nonempty because $(0)\in\mathcal P$. The union of any nonempty chain of proper ideals is an ideal; it remains proper because if $1$ belonged to the union, it would belong to one of its proper constituent ideals. The empty chain has the upper bound $(0)$. Zorn's lemma provides a maximal member of $\mathcal P$, which is a maximal ideal by definition.
+:::
 
-<1>2. Part (b): Characterization of non-units by maximal ideals.
-    *Proof:*
-    <2>1. ($\impliedby$): Let $\mathfrak{m}$ be a maximal ideal and suppose $r \in \mathfrak{m}$. If $r$ were invertible (a unit), then $1 = r^{-1} r \in \mathfrak{m}$, which implies $\mathfrak{m} = R$, contradicting the definition of a maximal ideal ($\mathfrak{m} \ne R$). Thus $r$ is not invertible.
-    <2>2. ($\implies$): Suppose $r \in R$ is not invertible.
-    <2>3. The principal ideal $\langle r \rangle = R r$ is a proper ideal of $R$, because $1 \in \langle r \rangle \iff r$ is invertible.
-    <2>4. Define the family of proper ideals containing $\langle r \rangle$:
-    $$\mathcal{S}_r = \{J \subseteq R : J \text{ is an ideal of } R, \, \langle r \rangle \subseteq J, \text{ and } J \ne R\}.$$
-    <2>5. Since $\langle r \rangle \in \mathcal{S}_r$, $\mathcal{S}_r \ne \emptyset$.
-    <2>6. Exactly as in <1>1, every non-empty chain in $\mathcal{S}_r$ has its union as an upper bound in $\mathcal{S}_r$.
-    <2>7. By Zorn's Lemma, $\mathcal{S}_r$ contains a maximal element $\mathfrak{m}$.
-    <2>8. The ideal $\mathfrak{m}$ is a maximal ideal of $R$ containing $r$.
+<1>2. An element of $R$ is a nonunit precisely when it belongs to a maximal ideal.
 
-<1>3. Part (c): Proof that maximal element-annihilator $I$ is prime.
-    *Proof:*
-    <2>1. $I$ is a proper ideal: since $\mu \ne 0$, $1 \cdot \mu = \mu \ne 0$, so $1 \notin \operatorname{Ann}(\mu) = I$, which means $I \ne R$.
-    <2>2. Let $a, b \in R$ such that $a b \in I$. We show that $a \in I$ or $b \in I$.
-    <2>3. Suppose $b \notin I$. By definition of $I = \operatorname{Ann}(\mu)$, this means $b \mu \ne 0$ in $M$.
-    <2>4. Define the element $\nu = b \mu \in M \setminus \{0\}$, and consider its annihilator $J = \operatorname{Ann}(\nu) = \operatorname{Ann}(b \mu)$.
-    <2>5. $J$ is a proper ideal: since $\nu \ne 0$, $1 \notin J$.
-    <2>6. Containment $I \subseteq J$: for any $x \in I = \operatorname{Ann}(\mu)$, $x \mu = 0$, so
-    $$x \nu = x (b \mu) = b (x \mu) = b \cdot 0 = 0,$$
-    which proves $x \in \operatorname{Ann}(\nu) = J$. Thus $I \subseteq J$.
-    <2>7. Maximality of $I$: by hypothesis, $I$ is maximal among the set of all proper annihilator ideals of non-zero module elements. Since $J = \operatorname{Ann}(b \mu)$ is a proper annihilator ideal containing $I$, we must have $I = J = \operatorname{Ann}(b \mu)$.
-    <2>8. Deducing $a \in I$: since $a b \in I = \operatorname{Ann}(\mu)$, we have $(a b)\mu = 0$.
-    <2>9. Rewriting: $a (b \mu) = (a b) \mu = 0$, so $a \in \operatorname{Ann}(b \mu) = J$.
-    <2>10. Since $J = I$, we conclude $a \in I$.
-    <2>11. Therefore, $a b \in I \implies a \in I \lor b \in I$, so $I$ is a prime ideal of $R$.
+::: {.proof}
+If $r$ is contained in a proper ideal, it cannot be a unit, since $r^{-1}r=1$ would belong to that ideal. Conversely, for a nonunit $r$ the principal ideal $(r)$ is proper. Apply Zorn's lemma to the set of proper ideals containing $(r)$, as in step <1>1, to obtain a maximal ideal containing $r$.
+:::
 
-<1>4. Conclusion:
-    *Proof:*
-    Maximal ideals exist by Zorn's Lemma, non-units are precisely elements in maximal ideals, and maximal element-annihilator ideals are prime.
+<1>3. An annihilator $I=\operatorname{Ann}(\mu)$ maximal among annihilators of nonzero elements of $M$ is a prime ideal.
+
+::: {.proof}
+Since $\mu\neq0$, one has $1\notin I$, so $I$ is proper. Let $ab\in I$ and suppose $b\notin I$. Then $b\mu\neq0$. The ideal $J=\operatorname{Ann}(b\mu)$ contains $I$, because $r\mu=0$ implies $r(b\mu)=b(r\mu)=0$. By maximality, $J=I$. As $(ab)\mu=0$, one has $a(b\mu)=0$, hence $a\in J=I$. Therefore $ab\in I$ implies $a\in I$ or $b\in I$, the defining condition for a prime ideal.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
+:::
 :::
