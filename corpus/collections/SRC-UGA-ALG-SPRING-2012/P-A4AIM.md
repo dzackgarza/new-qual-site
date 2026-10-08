@@ -32,44 +32,42 @@ b. Exhibit with justification a subset $S$ of $M_{m, n}(k)$ which contains preci
 :::
 
 ::: {.solution}
-**Part (a).**
+<1>1. A group action of $G$ on a set $X$ is a map $G\times X\to X$ satisfying $e\cdot x=x$ and $(gh)\cdot x=g\cdot(h\cdot x)$.
 
-<1>1. A group $G$ acts on a set $X$ if there is a map $G \times X \to X$, $(g, x) \mapsto g \cdot x$, such that $e \cdot x = x$ and $g \cdot (h \cdot x) = (gh) \cdot x$ for all $g, h \in G$, $x \in X$.
 ::: {.proof}
-definition of a group action.
+These are the identity and associativity axioms defining a left group action.
 :::
 
-<1>2. The given formula defines a group action.
-<2>1. Identity: $(I_m, I_n) \cdot X = I_m X I_n^{-1} = X$.
-::: {.proof}
-the identity matrices act trivially.
-:::
-<2>2. Compatibility: $(A_1, B_1) \cdot ((A_2, B_2) \cdot X) = (A_1, B_1) \cdot (A_2 X B_2^{-1}) = A_1 A_2 X B_2^{-1} B_1^{-1} = (A_1 A_2) X (B_1 B_2)^{-1} = (A_1 A_2, B_1 B_2) \cdot X$.
-::: {.proof}
-direct computation, using $(B_1 B_2)^{-1} = B_2^{-1} B_1^{-1}$.
-:::
+<1>2. The formula $(A,B)\cdot X=AXB^{-1}$ defines an action of $\mathrm{GL}(m,k)\times\mathrm{GL}(n,k)$ on $M_{m,n}(k)$.
 
-<1>3. Hence this is a group action.
 ::: {.proof}
-<1>1 and <1>2.
+The identity pair acts by $I_mXI_n=X$. For two pairs $(A_1,B_1)$ and $(A_2,B_2)$, the iterated action is
+\[
+A_1(A_2XB_2^{-1})B_1^{-1}
+=(A_1A_2)X(B_1B_2)^{-1},
+\]
+which equals their product acting on $X$. Thus the axioms in step <1>1 hold.
 :::
 
-**Part (b).**
+<1>3. Two matrices belong to the same orbit if and only if they have equal rank.
 
-<1>1. Two matrices $X, Y \in M_{m,n}(k)$ are in the same orbit iff they have the same rank.
 ::: {.proof}
-$AXB^{-1}$ has the same rank as $X$ (since $A$ and $B^{-1}$ are invertible); conversely, two matrices of the same rank $r$ are related by $X = A Y B^{-1}$ for suitable invertible $A, B$ (row and column operations reduce any rank-$r$ matrix to the same canonical form).
+Multiplication on either side by an invertible matrix preserves rank. Conversely, elementary row and column operations reduce any matrix of rank $r$ to the matrix $D_r$ with an $r\times r$ identity block in its top-left corner and all other entries zero. Such operations are realized by left multiplication by a member of $\mathrm{GL}(m,k)$ and right multiplication by a member of $\mathrm{GL}(n,k)$, hence by the stated action. Therefore all matrices of rank $r$ lie in one orbit.
 :::
 
-<1>2. Hence a set $S$ containing exactly one element of each orbit is
-$$S = \{ D_r : 0 \le r \le \min(m, n) \},$$
-where $D_r$ is the $m \times n$ matrix with $1$'s in the first $r$ diagonal positions and $0$'s elsewhere.
+<1>4. A complete set of orbit representatives is
+\[
+\boxed{S=\{D_r:0\leq r\leq\min(m,n)\}},
+\]
+where $D_r$ has ones in the first $r$ diagonal positions and zeros elsewhere.
+
 ::: {.proof}
-$D_r$ has rank $r$, and by <1>1 the orbits are exactly the rank classes, so the $D_r$ (one per possible rank) form a complete set of orbit representatives.
+Every possible rank $r$ has representative $D_r$ by step <1>3. Distinct values of $r$ give distinct ranks, hence distinct orbits. Thus $S$ contains exactly one representative of each orbit.
 :::
 
-<1>3. Q.E.D.
+<1>5. Q.E.D.
+
 ::: {.proof}
-<1>3 (a) and <1>2 (b).
+Steps <1>1 and <1>2 establish part (a), and steps <1>3 and <1>4 establish part (b).
 :::
 :::
