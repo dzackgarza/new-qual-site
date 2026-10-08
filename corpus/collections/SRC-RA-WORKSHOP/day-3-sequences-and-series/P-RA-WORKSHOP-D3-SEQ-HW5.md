@@ -27,12 +27,41 @@ Find $\lim_{n\to\infty}x_n$.
 Hint: Show that $\{x_n\}$ is decreasing.
 :::
 
-:::: {.solution}
-<1>1. $x_n \ge \sqrt2$ for all $n$.
-Proof: by AM-GM, $x_{n+1} = \frac12\big(x_n + \frac{2}{x_n}\big) \ge \sqrt{x_n\cdot\frac{2}{x_n}} = \sqrt2$ for every $n$; since $x_1 = 2 \ge \sqrt2$, all $x_n \ge \sqrt2$.
-<1>2. The sequence is decreasing from $x_2$ onward.
-Proof: for $n \ge 1$, \[\frac{x_{n+1}}{x_n} = \frac12\left(1 + \frac{2}{x_n^2}\right) \le \frac12\left(1 + \frac{2}{2}\right) = 1,\] using $x_n^2 \ge 2$ from <1>1; so $x_{n+1} \le x_n$ for all $n$ (including $n=1$). Thus $(x_n)$ is decreasing and bounded below.
-<1>3. The sequence converges and we identify the limit.
-Proof: $(x_n)$ is decreasing and bounded below by $\sqrt2$, so it converges to some $L \ge \sqrt2$.
-Taking limits in the recursion (the map $x \mapsto \frac12(x + 2/x)$ is continuous on $[\sqrt2, \infty)$), \[L = \frac12\left(L + \frac{2}{L}\right) \implies 2L = L + \frac{2}{L} \implies L^2 = 2 \implies L = \sqrt2\] (as $L \ge \sqrt2 > 0$). <1>4. Q.E.D.
+::: {.solution}
+<1>1. Every iterate satisfies $x_n\geq\sqrt2>0$.
+
+::: {.proof}
+The initial value is $x_1=2>\sqrt2$. If $x_n>0$, the arithmetic–geometric mean inequality yields
+\[
+x_{n+1}=\frac12\left(x_n+\frac2{x_n}\right)
+\geq\sqrt{x_n\frac2{x_n}}=\sqrt2.
+\]
+Induction proves the assertion and shows the recurrence is defined for every $n$.
+:::
+
+<1>2. The sequence $(x_n)$ is nonincreasing.
+
+::: {.proof}
+By step <1>1, $x_n^2\geq2$. Consequently
+\[
+x_{n+1}-x_n=\frac{2-x_n^2}{2x_n}\leq0
+\]
+for every $n$.
+:::
+
+<1>3. The sequence converges to $\boxed{\sqrt2}$.
+
+::: {.proof}
+Steps <1>1 and <1>2 show that $(x_n)$ is bounded below and nonincreasing, so it converges to some $L\geq\sqrt2$. Since $L>0$, continuity of $t\mapsto(t+2/t)/2$ for positive $t$ permits passage to the limit:
+\[
+L=\frac12\left(L+\frac2L\right).
+\]
+Multiplying by $2L$ gives $L^2=2$. The inequality $L>0$ therefore yields $L=\sqrt2$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 identifies the requested limit.
+:::
 :::
