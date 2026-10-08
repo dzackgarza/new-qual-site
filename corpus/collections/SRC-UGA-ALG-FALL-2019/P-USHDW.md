@@ -30,9 +30,7 @@ is an ideal that is contained in every prime ideal of $R$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the nilradical is an ideal contained in all prime ideals in (a), use Zorn's Lemma to construct a prime ideal avoiding powers of a non-nilpotent element in (b), and prove that every element in a ring with a unique prime ideal is nilpotent or a unit in (c).
-
-<1>1. Part (a): $N$ is an ideal contained in every prime ideal.
+<1>1. The nilradical $N$ is an ideal contained in every prime ideal.
 ::: {.proof}
     <2>1. $N$ is an ideal:
         - $0 \in N$ since $0^1 = 0$.
@@ -50,7 +48,7 @@ is an ideal that is contained in every prime ideal of $R$.
 
 :::
 
-<1>2. Part (b): Existence of a prime ideal avoiding powers of $r$.
+<1>2. For every nonnilpotent $r\in R$, a prime ideal exists that contains no positive power of $r$.
 ::: {.proof}
     <2>1. Define the multiplicative set $\Sigma = \{r^k \mid k \in \mathbb{N}_{\ge 1}\}$.
     <2>2. Define the family of ideals:
@@ -74,7 +72,7 @@ is an ideal that is contained in every prime ideal of $R$.
 
 :::
 
-<1>3. Part (c): Rings with a unique prime ideal consist of nilpotents and units.
+<1>3. If $R$ has exactly one prime ideal, every element is nilpotent or a unit.
 ::: {.proof}
     <2>1. Let $P$ be the unique prime ideal of $R$.
     <2>2. Since every maximal ideal of $R$ is prime, and maximal ideals exist in every non-trivial commutative ring by Krull's Theorem, $P$ must also be the unique maximal ideal of $R$.
@@ -91,8 +89,8 @@ is an ideal that is contained in every prime ideal of $R$.
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    $N$ is an ideal contained in every prime, Zorn's Lemma yields a prime ideal avoiding powers of non-nilpotents, and every element in a ring with a unique prime is a unit or nilpotent.
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
 :::
 :::
