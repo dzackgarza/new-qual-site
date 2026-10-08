@@ -22,13 +22,35 @@ State the definition of uniform continuity.
 Give an example of a function $f:(0,1)\to\mathbb R$ which is continuous but not uniformly continuous.
 :::
 
-:::: {.solution}
-<1>1. Definition of uniform continuity.
-Proof: $f : D \subseteq \mathbb{R} \to \mathbb{R}$ is uniformly continuous on $D$ if for every $\epsilon > 0$ there is $\delta > 0$ such that for all $x, y \in D$, $|x - y| < \delta \implies |f(x) - f(y)| < \epsilon$.
-(The difference from plain continuity: the same $\delta$ must work for all pairs $x, y$, independent of where they sit.)
-<1>2. Example: $f(x) = 1/x$ on $(0,1)$ is continuous but not uniformly continuous.
-<2>1. Continuous: $f$ is a quotient of continuous functions with nonzero denominator on $(0,1)$, hence continuous at every point of $(0,1)$.
-<2>2. Not uniformly continuous: take $x_n = 1/n$ and $y_n = 1/(2n)$.
-Then $x_n, y_n \in (0,1)$ and $|x_n - y_n| = 1/(2n) \to 0$, but $|f(x_n) - f(y_n)| = |n - 2n| = n \to \infty$.
-Hence no $\delta > 0$ can control pairs $(x_n, y_n)$ with $|x_n - y_n| \to 0$, so the uniform-continuity definition fails (with any $\epsilon$, say $\epsilon = 1$). <1>3. Q.E.D.
+::: {.solution}
+<1>1. A function $f:D\to\mathbb R$ is uniformly continuous if for every $\varepsilon>0$ there exists $\delta>0$ such that, for every $x,y\in D$,
+\[
+|x-y|<\delta\quad\Longrightarrow\quad |f(x)-f(y)|<\varepsilon.
+\]
+
+::: {.proof}
+This is the definition of uniform continuity. The same $\delta$ depends only on $\varepsilon$, not on the points $x,y$.
+:::
+
+<1>2. The function $f:(0,1)\to\mathbb R$ defined by $f(x)=1/x$ is continuous.
+
+::: {.proof}
+The reciprocal function is continuous at every nonzero real number, so its restriction to $(0,1)$ is continuous.
+:::
+
+<1>3. The function in step <1>2 is not uniformly continuous.
+
+::: {.proof}
+Suppose it were uniformly continuous. Apply step <1>1 with $\varepsilon=1$ to obtain $\delta>0$. Choose an integer $n\geq2$ with $1/(2n)<\delta$, and put $x=1/n$ and $y=1/(2n)$. Then $x,y\in(0,1)$ and $|x-y|=1/(2n)<\delta$, while
+\[
+|f(x)-f(y)|=|n-2n|=n\geq2,
+\]
+contradicting the required inequality $|f(x)-f(y)|<1$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 states the definition, and steps <1>2–<1>3 establish the requested example.
+:::
 :::
