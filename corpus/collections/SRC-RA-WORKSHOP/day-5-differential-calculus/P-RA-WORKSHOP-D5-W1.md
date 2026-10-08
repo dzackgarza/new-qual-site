@@ -21,11 +21,26 @@ audit:
 (June 1999 #10) Show that if $f$ is differentiable on $(a,b)$ with $f'(x)=0$ on $(a,b)$, then $f$ is constant on $(a,b)$.
 :::
 
-:::: {.solution}
-<1>1. Fix $x < y$ in $(a,b)$ and apply the mean value theorem.
-Proof: $f$ is differentiable on $(a,b)$, hence continuous on $[x,y]$ and differentiable on $(x,y)$.
-By MVT there is $\xi \in (x,y)$ with \[f(y) - f(x) = f'(\xi)(y - x) = 0\cdot(y-x) = 0,\] since $f' \equiv 0$ on $(a,b)$.
-<1>2. Conclude.
-Proof: $f(x) = f(y)$ for all $a < x < y < b$; hence $f$ is constant on $(a,b)$.
+::: {.solution}
+<1>1. For every $a<x<y<b$, one has $f(y)=f(x)$.
+
+::: {.proof}
+Differentiability of $f$ on $(a,b)$ implies continuity on $[x,y]$ and differentiability on $(x,y)$. The mean value theorem therefore supplies $\xi\in(x,y)$ such that
+\[
+f(y)-f(x)=f'(\xi)(y-x)=0,
+\]
+because $f'$ vanishes throughout $(a,b)$.
+:::
+
+<1>2. The function $f$ is constant on $(a,b)$.
+
+::: {.proof}
+Choose any $x_0\in(a,b)$. For each $x\in(a,b)$ with $x\ne x_0$, step <1>1 applied to the smaller and larger of $x,x_0$ gives $f(x)=f(x_0)$. The equality also holds when $x=x_0$.
+:::
+
 <1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 is the required conclusion.
+:::
 :::
