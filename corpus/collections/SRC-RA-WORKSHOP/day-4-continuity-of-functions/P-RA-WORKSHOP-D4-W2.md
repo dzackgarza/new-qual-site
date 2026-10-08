@@ -21,11 +21,24 @@ audit:
 (c.f. June 2012 #1b) If $f:[0,1]\to[0,1]$ is continuous, show that $f(x)=x$ for some $x\in[0,1]$.
 :::
 
-:::: {.solution}
-<1>1. Consider $g(x) = f(x) - x$ on $[0,1]$.
-Proof: $g$ is continuous (difference of continuous functions).
-At the endpoints: \[g(0) = f(0) - 0 = f(0) \ge 0 \quad (\text{as } f([0,1]) \subseteq [0,1]),\] \[g(1) = f(1) - 1 \le 0 \quad (\text{as } f(1) \le 1).\] <1>2. Apply the intermediate value theorem.
-Proof: if $g(0) = 0$ or $g(1) = 0$, then $0$ or $1$ is a fixed point.
-Otherwise $g(0) > 0$ and $g(1) < 0$, so by IVT there is $x \in (0,1)$ with $g(x) = 0$, i.e. $f(x) = x$.
+::: {.solution}
+Set $g:[0,1]\to\mathbb R$ by $g(t)=f(t)-t$.
+
+<1>1. The function $g$ is continuous and satisfies $g(0)\geq0\geq g(1)$.
+
+::: {.proof}
+The difference of the continuous functions $f$ and $t\mapsto t$ is continuous. Since $f$ maps into $[0,1]$, one has $g(0)=f(0)\geq0$ and $g(1)=f(1)-1\leq0$.
+:::
+
+<1>2. There exists $x\in[0,1]$ such that $f(x)=x$.
+
+::: {.proof}
+By step <1>1, zero lies between the endpoint values $g(0)$ and $g(1)$. The intermediate value theorem gives $x\in[0,1]$ with $g(x)=0$. By definition of $g$, this is equivalent to $f(x)=x$.
+:::
+
 <1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 establishes the required fixed point.
+:::
 :::
