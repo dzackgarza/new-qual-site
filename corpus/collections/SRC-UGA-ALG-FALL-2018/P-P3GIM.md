@@ -25,9 +25,7 @@ where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent,
 :::
 
 ::: {.solution}
-**Goal:** Prove Fitting's Lemma for linear operators on finite-dimensional vector spaces using the stabilization of kernels and images of powers of $\phi$.
-
-<1>1. Stabilization of kernel and image chains:
+<1>1. For some $k\geq1$, the kernels of all powers $\phi^j$ with $j\geq k$ equal $\ker(\phi^k)$.
 ::: {.proof}
     <2>1. Let $n = \dim_F V < \infty$.
     <2>2. Consider the ascending chain of kernels and the descending chain of images:
@@ -40,7 +38,7 @@ where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent,
 
 :::
 
-<1>2. $U$ and $W$ are $\phi$-invariant subspaces:
+<1>2. The subspaces $U=\ker(\phi^k)$ and $W=\operatorname{im}(\phi^k)$ are $\phi$-invariant.
 ::: {.proof}
     <2>1. For $u \in U = \ker(\phi^k)$:
     $$\phi^k(\phi(u)) = \phi(\phi^k(u)) = \phi(0) = 0,$$
@@ -50,7 +48,7 @@ where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent,
 
 :::
 
-<1>3. Direct sum decomposition $V = U \oplus W$:
+<1>3. The vector space decomposes as $V=U\oplus W$.
 ::: {.proof}
     <2>1. Intersection $U \cap W = \{0\}$:
         - Let $v \in U \cap W$.
@@ -69,7 +67,7 @@ where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent,
 
 :::
 
-<1>4. Properties of the restrictions $\phi|_U$ and $\phi|_W$:
+<1>4. The restriction $\phi|_U$ is nilpotent, while $\phi|_W$ is invertible.
 ::: {.proof}
     <2>1. $\phi|_U$ is nilpotent:
         - For every $u \in U = \ker(\phi^k)$, $(\phi|_U)^k(u) = \phi^k(u) = 0$.
@@ -84,8 +82,8 @@ where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent,
 
 :::
 
-<1>5. Conclusion:
+<1>5. Q.E.D.
 ::: {.proof}
-    $V = U \oplus W$ with $U = \ker(\phi^k)$ and $W = \operatorname{Im}(\phi^k)$ is the required Fitting decomposition.
+Steps <1>2--<1>4, using the stabilized kernels from step <1>1, prove the required Fitting decomposition.
 :::
 :::
