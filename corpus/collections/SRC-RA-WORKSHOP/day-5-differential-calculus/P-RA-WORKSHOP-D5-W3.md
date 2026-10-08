@@ -21,13 +21,37 @@ audit:
 ([KRD10, Exercise 6.2.B]) If $f:(a,b)\to\mathbb R$ is continuously differentiable and $f'(x_0)\ne0$ for some $x_0\in(a,b)$, then $f$ is injective on some interval $(c,d)$ containing $x_0$.
 :::
 
-:::: {.solution}
-<1>1. $f'$ keeps the sign of $f'(x_0)$ in a neighborhood.
-Proof: assume $f'(x_0) > 0$ (the case $< 0$ is symmetric).
-Since $f'$ is continuous at $x_0$, there is $\delta > 0$ with $f'(x) > f'(x_0)/2 > 0$ for all $x \in (c, d) := (x_0 - \delta, x_0 + \delta) \subseteq (a,b)$.
-<1>2. $f$ is strictly increasing on $(c,d)$.
-Proof: for $c < u < v < d$, by MVT there is $\xi \in (u,v)$ with $f(v) - f(u) = f'(\xi)(v - u) > 0$ (as $f'(\xi) > 0$ and $v - u > 0$). Hence $f(u) < f(v)$.
-<1>3. $f$ is injective on $(c,d)$.
-Proof: a strictly increasing function is injective: if $f(u) = f(v)$ with $u \ne v$, say $u < v$, then $f(u) < f(v)$, contradiction.
+::: {.solution}
+<1>1. There exist $a<c<x_0<d<b$ such that $f'$ has constant strict sign on $(c,d)$.
+
+::: {.proof}
+Since $f'(x_0)\ne0$ and $f'$ is continuous at $x_0$, there is $\delta>0$ with $[x_0-\delta,x_0+\delta]\subset(a,b)$ and
+\[
+|f'(x)-f'(x_0)|<\tfrac12|f'(x_0)|
+\quad\text{whenever }|x-x_0|<\delta.
+\]
+Set $c=x_0-\delta$ and $d=x_0+\delta$. If $f'(x_0)>0$, then $f'(x)>f'(x_0)/2>0$ throughout $(c,d)$. If $f'(x_0)<0$, then $f'(x)<f'(x_0)/2<0$ throughout $(c,d)$.
+:::
+
+<1>2. The restriction $f|_{(c,d)}$ is strictly monotone.
+
+::: {.proof}
+For any $c<u<v<d$, the mean value theorem gives $\xi\in(u,v)$ such that
+\[
+f(v)-f(u)=f'(\xi)(v-u).
+\]
+By step <1>1, the right-hand side has the same nonzero sign for every such pair $u<v$. Hence $f$ is strictly increasing when $f'(x_0)>0$ and strictly decreasing when $f'(x_0)<0$.
+:::
+
+<1>3. The function $f$ is injective on $(c,d)$.
+
+::: {.proof}
+If $u,v\in(c,d)$ are distinct, order them so that $u<v$. Strict monotonicity from step <1>2 gives $f(u)\ne f(v)$.
+:::
+
 <1>4. Q.E.D.
+
+::: {.proof}
+The interval supplied by step <1>1 contains $x_0$, and step <1>3 establishes injectivity on it.
+:::
 :::
