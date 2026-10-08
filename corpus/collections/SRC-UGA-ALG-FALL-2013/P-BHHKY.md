@@ -28,51 +28,37 @@ You are not required to use your answer to (c).
 :::
 
 ::: {.solution}
-(a) Let $n_p$ be the number of Sylow $p$-subgroups of $G$. Sylow's theorems
-give
-\[
-n_3\in\{1,10\},\qquad n_5\in\{1,6\}.
-\]
-They cannot both be nonnormal, since otherwise the Sylow $3$-subgroups would
-contribute $10(3-1)=20$ distinct nonidentity elements of order $3$ and the
-Sylow $5$-subgroups would contribute $6(5-1)=24$ distinct nonidentity
-elements of order $5$.
+<1>1. Every group of order $30$ has a subgroup $H$ of order $15$.
 
-Thus a Sylow $3$- or Sylow $5$-subgroup is normal. Multiplying that normal
-Sylow subgroup by a Sylow subgroup for the other prime gives a subgroup $H$
-of order $15$.
+::: {.proof}
+By Sylow's theorems, $n_3\in\{1,10\}$ and $n_5\in\{1,6\}$. If both were greater than one, distinct Sylow $3$-subgroups would contribute $20$ nonidentity elements and distinct Sylow $5$-subgroups would contribute another $24$, impossible in a group of order $30$. Thus one of the two Sylow subgroups is normal. Its product with a Sylow subgroup for the other prime is a subgroup of order $3\cdot5=15$, since their intersection is trivial.
+:::
 
-(b) If $|H|=15$, then
-\[
-n_5\equiv1\pmod5,\quad n_5\mid3,
-\qquad
-n_3\equiv1\pmod3,\quad n_3\mid5.
-\]
-Hence both Sylow subgroups are unique and normal. Their intersection is
-trivial, so they commute, and
-\[
-H\cong C_5\times C_3\cong C_{15}.
-\]
+<1>2. Every group of order $15$ is cyclic.
 
-(c) The subgroup $H$ from (a) has index $2$, so $H\triangleleft G$. By (b),
-$H\cong C_{15}$. By Cauchy's theorem $G$ contains an element $s$ of order
-$2$. Since $H$ has odd order,
-\[
-H\cap\langle s\rangle=1,
-\]
-and $|H\langle s\rangle|=30$, so $G=H\langle s\rangle$. Therefore
-\[
-G\cong C_{15}\rtimes C_2.
-\]
+::: {.proof}
+For $|H|=15$, Sylow's theorems give $n_5\mid3$, $n_5\equiv1\pmod5$, $n_3\mid5$, and $n_3\equiv1\pmod3$. Thus both counts equal one. Their normal Sylow subgroups of orders $5$ and $3$ have trivial intersection and generate $H$, so $H\cong C_5\times C_3\cong C_{15}$.
+:::
 
-(d) Three examples are
+<1>3. Every group of order $30$ is isomorphic to $C_{15}\rtimes C_2$ for some action of $C_2$ on $C_{15}$.
+
+::: {.proof}
+The subgroup $H$ in step <1>1 has index two and is therefore normal, and by step <1>2 it is cyclic of order $15$. Cauchy's theorem provides an element $s$ of order two. Since $H$ has odd order, $H\cap\langle s\rangle=1$, and $H\langle s\rangle$ has order $30$. The multiplication map identifies $G$ with the semidirect product for the conjugation action of $\langle s\rangle$ on $H$.
+:::
+
+<1>4. Three pairwise nonisomorphic groups of order $30$ are
 \[
-C_{30},\qquad C_3\times D_{10},\qquad D_{30},
+\boxed{C_{30},\quad C_3\times D_{10},\quad D_{30}},
 \]
-where $D_{10}$ and $D_{30}$ denote the dihedral groups of orders $10$ and
-$30$. They have respectively $1$, $5$, and $15$ elements of order $2$:
-$C_{30}$ has its unique element of order $2$; $C_3\times D_{10}$ has one
-involution for each of the five reflections of $D_{10}$; and all fifteen
-reflections in $D_{30}$ are involutions. Hence these groups are pairwise
-nonisomorphic.
+where $D_{2n}$ denotes the dihedral group of order $2n$.
+
+::: {.proof}
+All three groups have order $30$. Their respective numbers of elements of order two are $1$, $5$, and $15$: a cyclic group of order $30$ has one involution; when $5$ is odd the dihedral group $D_{10}$ has five involutions, its reflections, and the $C_3$ factor adds none; similarly $D_{30}$ has fifteen reflections and no rotational involutions. Different involution counts are preserved under isomorphism, so the examples are pairwise nonisomorphic.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>4 establish parts (a)--(d), respectively.
+:::
 :::
