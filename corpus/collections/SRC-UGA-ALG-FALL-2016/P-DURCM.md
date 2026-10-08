@@ -20,40 +20,41 @@ Show that $N \cong \im f \oplus \ker g$.
 :::
 
 ::: {.solution}
-\envlist
+Define $e=f\circ g:N\to N$. The given identity $g\circ f=\operatorname{id}_M$ implies $e^2=e$.
 
-- We have the following situation:
+<1>1. The endomorphism $e$ is a projection with image $\operatorname{im}f$ and kernel $\ker g$.
 
-\begin{tikzcd}
-	M &&& N
-	\arrow["f", from=1-1, to=1-4]
-	\arrow["g"', curve={height=24pt}, dashed, from=1-4, to=1-1]
-\end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsMixbMCwwLCJNIl0sWzMsMCwiTiJdLFswLDEsImYiXSxbMSwwLCJnIiwyLHsiY3VydmUiOjQsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
-
-- Claim: $\im f + \ker g \subseteq N$, and this is in fact an equality.
-  - For $n\in N$, write
-  \[
-  n = n + (f\circ g)(n) - (f\circ g)(n) = \qty{n - (f\circ g)(n) } + (f\circ g)(n)
-  .\]
-  - The first term is in $\ker g$:
-  \[
-  g \qty{ n - (f\circ g)(n) }
-  &= g(n) - (g\circ f \circ g)(n)\\
-  &= g(n) - (\id_N \circ g)(n)\\
-  &= g(n) - g(n) \\
-  &= 0
-  .\]
-  - The second term is in $\im f$: it is $(f\circ g)(n) = f(g(n))$, which is the image under $f$ of the element $g(n) \in M$.
-- Claim: the sum is direct.
-  - Suppose $n\in \ker(g) \intersect \im(f)$, so $g(n) = 0$ and $n=f(m)$ for some $m\in M$.
-  Then
-  \[
-  0 = g(n) = g(f(m)) = (g\circ f)(m)
-  = \id_M(m) = m
-  ,\]
-  so $m=0$ and since $f$ is a morphism in \(R\dash\)modules, $n\da f(m) = 0$.
+::: {.proof}
+Since $e=f\circ g$, its image is contained in $\operatorname{im}f$. For $m\in M$, one has $e(f(m))=f(g(f(m)))=f(m)$, proving the reverse inclusion. If $g(n)=0$, then $e(n)=0$. Conversely, if $e(n)=0$, then $g(n)=g(f(g(n)))=g(e(n))=0$. Thus $\ker e=\ker g$.
 :::
 
+<1>2. The morphisms
+\[
+\alpha:\operatorname{im}f\oplus\ker g\longrightarrow N,\qquad (u,v)\longmapsto u+v,
+\]
+and
+\[
+\beta:N\longrightarrow\operatorname{im}f\oplus\ker g,\qquad n\longmapsto(e(n),n-e(n))
+\]
+are well-defined $R$-linear morphisms.
+
+::: {.proof}
+By step <1>1, $e(n)\in\operatorname{im}f$. Moreover, $g(n-e(n))=g(n)-g(f(g(n)))=0$, so $n-e(n)\in\ker g$. Both maps are $R$-linear because $e$ and the module operations are $R$-linear.
+:::
+
+<1>3. The required decomposition is
+\[
+\boxed{N\cong\operatorname{im}f\oplus\ker g}.
+\]
+
+::: {.proof}
+For every $n\in N$, $\alpha\beta(n)=e(n)+n-e(n)=n$. For $u\in\operatorname{im}f$ and $v\in\ker g$, step <1>1 gives $e(u)=u$ and $e(v)=0$, whence $\beta\alpha(u,v)=(u,v)$. Thus $\alpha$ and $\beta$ are inverse $R$-module isomorphisms.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the claimed direct-sum decomposition.
+:::
+:::
 
