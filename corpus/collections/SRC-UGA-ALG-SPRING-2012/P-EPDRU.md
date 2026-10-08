@@ -30,83 +30,31 @@ c. Prove that $M \cong M_t \oplus F$ where $F$ is a free module.
 :::
 
 ::: {.solution}
-<1>1. Part (a): Show that $M_t$ is a submodule of $M$:
-<2>1. $0 \in M_t$ because $1 \cdot 0 = 0$ with $1 \in R \setminus \{0\}$.
+<1>1. The torsion elements $M_t=\{m\in M:\exists\,0\neq r\in R,\ rm=0\}$ form a submodule of $M$.
+
 ::: {.proof}
-module identity axiom.
-:::
-<2>2. Let $x, y \in M_t$. There exist non-zero $r, s \in R \setminus \{0\}$ such that $rx = 0$ and $sy = 0$.
-Since $R$ is an integral domain, the product $rs \in R \setminus \{0\}$ is non-zero.
-Compute:
-\[
-(rs)(x - y) = s(rx) - r(sy) = s(0) - r(0) = 0.
-\]
-Thus $x - y \in M_t$.
-::: {.proof}
-commutativity and zero-divisor freeness of $R$.
-:::
-<2>3. For any $a \in R$ and $x \in M_t$ with $rx = 0$ ($r \neq 0$):
-\[
-r(ax) = a(rx) = a(0) = 0.
-\]
-Thus $ax \in M_t$.
-::: {.proof}
-$R$-action on modules.
-:::
-<2>4. Therefore $M_t$ is an $R$-submodule of $M$.
-::: {.proof}
-submodule criterion (<2>1 through <2>3).
+The zero element is torsion. If $rx=0$ and $sy=0$ for nonzero $r,s\in R$, then $rs\neq0$ because $R$ is a domain, and $(rs)(x-y)=0$. For $a\in R$, the equality $r(ax)=a(rx)=0$ shows that scalar multiples of torsion elements are torsion. Thus $M_t$ is an $R$-submodule.
 :::
 
-<1>2. Part (b): Show that $M/M_t$ is torsion-free:
-<2>1. Let $\bar{m} = m + M_t \in M/M_t$ and suppose $r \bar{m} = \bar{0}$ for some $r \in R \setminus \{0\}$.
+<1>2. The quotient $M/M_t$ is torsion-free.
+
 ::: {.proof}
-setup for torsion in quotient.
-:::
-<2>2. The condition $r \bar{m} = \bar{0}$ means $rm \in M_t$.
-::: {.proof}
-definition of cosets in quotient module.
-:::
-<2>3. By definition of $M_t$, there exists a non-zero $s \in R \setminus \{0\}$ such that $s(rm) = 0$.
-::: {.proof}
-definition of torsion elements.
-:::
-<2>4. Since $R$ is an integral domain, $sr \in R \setminus \{0\}$.
-Since $(sr)m = s(rm) = 0$, we have $m \in M_t$, which means $\bar{m} = \bar{0}$ in $M/M_t$.
-::: {.proof}
-$R$ has no non-zero zero divisors.
-:::
-<2>5. Thus $M/M_t$ contains no non-zero torsion elements, so $M/M_t$ is torsion-free.
-::: {.proof}
-<2>4.
+Suppose $0\neq r\in R$ and $r(m+M_t)=0$. Then $rm\in M_t$, so some $0\neq s\in R$ satisfies $srm=0$. Since $sr\neq0$, the element $m$ belongs to $M_t$. Hence $m+M_t=0$, establishing torsion-freeness.
 :::
 
-<1>3. Part (c): Splitting of $M \cong M_t \oplus F$:
-<2>1. Since $M$ is a finitely generated $R$-module, the quotient module $M/M_t$ is also finitely generated over $R$.
-::: {.proof}
-homomorphic image of a finitely generated module is finitely generated.
-:::
-<2>2. Over a PID $R$, every finitely generated torsion-free module is free.
-Since $M/M_t$ is finitely generated and torsion-free (by Part (b)), $F = M/M_t$ is a free $R$-module of finite rank.
-::: {.proof}
-Structure Theorem for finitely generated modules over a PID.
-:::
-<2>3. Consider the canonical short exact sequence:
+<1>3. There is an isomorphism
 \[
-0 \longrightarrow M_t \xrightarrow{i} M \xrightarrow{\pi} M/M_t \longrightarrow 0.
+\boxed{M\cong M_t\oplus F}
 \]
-Since $M/M_t \cong F$ is free (hence projective), the sequence splits: there exists an $R$-module homomorphism $\sigma: M/M_t \to M$ such that $\pi \circ \sigma = \operatorname{id}_{M/M_t}$.
+for a finite-rank free $R$-module $F$.
+
 ::: {.proof}
-projectivity of free modules.
-:::
-<2>4. By the Splitting Lemma, $M = M_t \oplus \operatorname{im}(\sigma) \cong M_t \oplus F$, where $F \cong M/M_t$ is a free $R$-module.
-::: {.proof}
-Splitting Lemma for module exact sequences.
+The quotient $M/M_t$ is finitely generated because $M$ is. By step <1>2 it is torsion-free, so the structure theorem for finitely generated modules over a PID makes it free. Choose a basis of $M/M_t$ and arbitrary lifts to $M$; these lifts define an $R$-linear section of the quotient map $\pi:M\to M/M_t$. Consequently the exact sequence $0\to M_t\to M\to M/M_t\to0$ splits. Taking $F=M/M_t$ gives the stated isomorphism.
 :::
 
-<1>4. Conclusion:
-$M_t \le M$ is a submodule, $M/M_t$ is torsion-free, and $M \cong M_t \oplus F$ with $F$ free. Q.E.D.
+<1>4. Q.E.D.
+
 ::: {.proof}
-<1>1 through <1>3.
+Steps <1>1, <1>2, and <1>3 establish parts (a), (b), and (c), respectively.
 :::
 :::
