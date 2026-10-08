@@ -31,28 +31,39 @@ Find its center and radius.
 
 :::
 
-::: {.solution title="part 1"}
+::: {.solution}
+<1>1. If $|w_1|=c|w_2|$ with $c>0$, then $|w_1-c^2w_2|=c|w_1-w_2|$.
+
+::: {.proof}
+Expanding the squared moduli gives
 \[
-\abs{w_1 - c^2 w_2}^2 
-&= (w_1 - c^2 w_2) ( \bar{w_1} - c^2 \bar{w_2} ) \\
-&= \abs{w_1}^2 + c^4 \abs{w_2}^2 - 2c^2 \Re(w_1 \bar{w_2}) \\
-&= {\color{green} c^2 \abs{w_2}^2 } + c^4 \abs{w_2}^2 - 2c^2 \Re(w_1 \bar{w_2}) \\
-&= c^2 \abs{w_2}^2 + {\color{green} c^2 \abs{w_1}^2 } - 2c^2 \Re(w_1 \bar{w_2}) \\
-&= c^2 \abs{w_1 - w_2}
-,\]
-where we've applied the assumption $\abs{w_1} = c\abs{w_2}$ twice.
+\begin{aligned}
+|w_1-c^2w_2|^2
+&=|w_1|^2+c^4|w_2|^2-2c^2\operatorname{Re}(w_1\overline{w_2})\\
+&=c^2(|w_1|^2+|w_2|^2-2\operatorname{Re}(w_1\overline{w_2}))\\
+&=c^2|w_1-w_2|^2.
+\end{aligned}
+\]
+Both sides of the asserted identity are nonnegative; taking square roots proves it.
 :::
 
-::: {.solution title="part 2"}
-Using part 1:
+<1>2. For $c>0$, $c\neq1$, and $z_1\neq z_2$, the locus in part (b) is the circle with center and radius
 \[
-w_1\da z-z_1, w_2 \da z-z_2 \implies \abs{w_1} &= c\abs{w_2} \\
-\implies \abs{w_1 - c^2 w_2} &= c \abs{w_1 - w_2} \\
-\implies \abs{ z-z_1 - c^2 (z-z_2) } &= \abs{(z-z_1) - (z-z_2)} \\
-\implies \abs{(1-c^2) z - z_3} &= \abs{ z_2 - z_1 } \\
-\implies \abs{z-z_4} &= r
-,\]
-where the $z_i$ and $r$ are all constant, so this is the equation of a circle.
+\boxed{\quad a=\frac{z_1-c^2z_2}{1-c^2},
+\qquad r=\frac{c|z_1-z_2|}{|1-c^2|}.\quad}
+\]
+
+::: {.proof}
+For $z\neq z_2$, the given equation is equivalent to $|z-z_1|=c|z-z_2|$. Apply step <1>1 with $w_1=z-z_1$ and $w_2=z-z_2$ to obtain
+\[
+|(1-c^2)z-(z_1-c^2z_2)|=c|z_1-z_2|.
+\]
+Since $1-c^2\neq0$, this is $|z-a|=r$ with the displayed $a,r$. Moreover, $r>0$, and $|z_2-a|=|z_1-z_2|/|1-c^2|\neq r$ because $c\neq1$. Thus the circle excludes $z_2$, where the original quotient is undefined, and the equivalence holds in both directions.
 :::
 
+<1>3. Q.E.D.
 
+::: {.proof}
+Step <1>1 proves part (a), and step <1>2 proves part (b).
+:::
+:::
