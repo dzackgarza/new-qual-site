@@ -24,16 +24,28 @@ audit:
 (The proof is nearly unchanged when $n$ or $m$ is greater than 1.)
 :::
 
-:::: {.solution}
-<1>1. Reduce to the one-dimensional extreme value theorem.
-Proof: let $f: K \to \mathbb{R}$ be continuous with $K \subseteq \mathbb{R}$ compact.
-We show $f$ attains a maximum; the minimum follows by applying the result to $-f$.
-<1>2. $f(K)$ is bounded above.
-Proof: suppose not; then for each $n$ there is $x_n \in K$ with $f(x_n) \ge n$.
-Since $K$ is compact (sequentially compact in $\mathbb{R}$), a subsequence $x_{n_j} \to x \in K$.
-By continuity $f(x_{n_j}) \to f(x)$, but $f(x_{n_j}) \ge n_j \to \infty$, contradiction.
-<1>3. The supremum is attained.
-Proof: let $M = \sup_{x \in K} f(x) < \infty$; choose $x_n \in K$ with $f(x_n) \to M$ (e.g. $f(x_n) \ge M - 1/n$). A subsequence $x_{n_j} \to x^* \in K$ (compactness), and by continuity $f(x^*) = \lim_j f(x_{n_j}) = M$.
-Hence $f$ attains its maximum at $x^* \in K$.
-<1>4. Q.E.D. Proof: $f$ attains both its maximum and (applied to $-f$) its minimum on $K$.
+::: {.solution}
+Let $K\subseteq\mathbb R$ be compact and $f:K\to\mathbb R$ continuous.
+
+<1>1. The image $f(K)$ is compact.
+
+::: {.proof}
+Let $(V_\alpha)_{\alpha\in A}$ be an open cover of $f(K)$ in $\mathbb R$. The sets $f^{-1}(V_\alpha)$ are open in the subspace $K$ by continuity and cover $K$. Compactness supplies finitely many indices $\alpha_1,\ldots,\alpha_r$ such that
+\[
+K=\bigcup_{j=1}^{r}f^{-1}(V_{\alpha_j}).
+\]
+Applying $f$ yields $f(K)\subseteq\bigcup_{j=1}^{r}V_{\alpha_j}$. Thus every open cover of $f(K)$ has a finite subcover.
+:::
+
+<1>2. If $K$ is nonempty, then $f$ attains both its maximum and minimum on $K$.
+
+::: {.proof}
+By step <1>1, the nonempty set $f(K)\subseteq\mathbb R$ is compact, hence closed and bounded. Set $M=\sup f(K)$ and $m=\inf f(K)$. Boundedness makes both numbers finite. The defining properties of supremum and infimum put $M$ and $m$ in the closure of $f(K)$; closedness therefore implies $M,m\in f(K)$. Thus there exist $p,q\in K$ with $f(p)=M$ and $f(q)=m$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves the compact-image assertion of Theorem 3.2 for functions on subsets of $\mathbb R$. Step <1>2 proves the extreme-value assertion, including its stated specialization to nondegenerate closed intervals.
+:::
 :::
