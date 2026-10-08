@@ -25,13 +25,39 @@ $$
 $$
 :::
 
-:::: {.solution}
-<1>1. Reduce to a direct $\epsilon$-$N$ estimate on the difference.
-Proof: put the two quotients over a common denominator: \[\frac{s_n + t_n}{s_n - t_n} - \frac{s + t}{s - t} = \frac{(s_n + t_n)(s - t) - (s + t)(s_n - t_n)}{(s_n - t_n)(s - t)} = \frac{2(s t_n - s_n t)}{(s_n - t_n)(s - t)}.\] Adding and subtracting $st$ in the numerator, $s t_n - s_n t = s(t_n - t) - t(s_n - s)$, so \[\frac{s_n + t_n}{s_n - t_n} - \frac{s+t}{s-t} = \frac{2\big(s(t_n - t) - t(s_n - s)\big)}{(s_n - t_n)(s - t)}.\] <1>2. Bound the numerator.
-Proof: since $s \ne t$, $\delta := |s - t|/2 > 0$; and $s_n \to s$, $t_n \to t$, so for large $n$, $|s_n - s| < \delta/2$ and $|t_n - t| < \delta/2$, giving $|s_n - t_n| \ge |s - t| - |s_n - s| - |t_n - t| \ge \delta > 0$; the denominator is bounded below in modulus by $\delta|s-t| = 2\delta^2$... precisely $|(s_n - t_n)(s-t)| \ge \delta \cdot |s-t|$.
-<1>3. $\epsilon$-$N$ conclusion.
-Proof: let $\epsilon > 0$.
-Choose $N$ so that for $n \ge N$: $|s_n - s| < \frac{\epsilon\,\delta\,|s-t|}{4|t| + 4|s| + 1}$ (and similarly for $t_n - t$) and $|s_n - t_n| \ge \delta$.
-Then \[\left|\frac{s_n + t_n}{s_n - t_n} - \frac{s+t}{s-t}\right| \le \frac{2\big(|s||t_n - t| + |t||s_n - s|\big)}{\delta\,|s - t|} < \epsilon.\] Hence the quotient converges to $\frac{s+t}{s-t}$.
-<1>4. Q.E.D.
+::: {.solution}
+Put $d=|s-t|>0$.
+
+<1>1. For all sufficiently large $n$, $|s_n-t_n|\geq d/2$.
+
+::: {.proof}
+Convergence supplies $N_0$ such that $|s_n-s|<d/4$ and $|t_n-t|<d/4$ whenever $n\geq N_0$. The reverse triangle inequality then gives
+\[
+|s_n-t_n|\geq |s-t|-|s_n-s|-|t_n-t|>d/2.
+\]
+:::
+
+<1>2. For each $\varepsilon>0$, there exists $N$ such that, whenever $n\geq N$,
+\[
+\left|\frac{s_n+t_n}{s_n-t_n}-\frac{s+t}{s-t}\right|<\varepsilon.
+\]
+
+::: {.proof}
+Fix $\varepsilon>0$ and set $\eta=\varepsilon d^2/(8(|s|+|t|+1))$. Choose $N\geq N_0$ such that $|s_n-s|<\eta$ and $|t_n-t|<\eta$ whenever $n\geq N$. A common-denominator calculation gives
+\[
+\frac{s_n+t_n}{s_n-t_n}-\frac{s+t}{s-t}
+=\frac{2(s(t_n-t)-t(s_n-s))}{(s_n-t_n)(s-t)}.
+\]
+By step <1>1, the absolute value is at most
+\[
+\frac{4(|s||t_n-t|+|t||s_n-s|)}{d^2}
+<\frac{4(|s|+|t|)\eta}{d^2}<\varepsilon.
+\]
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves the asserted limit by the $\varepsilon$-$N$ definition of convergence.
+:::
 :::
