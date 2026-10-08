@@ -30,9 +30,10 @@ c. Determine the Galois group of $E$ over $\QQ$ and determine all of the interme
 :::
 
 ::: {.solution}
-**Goal.** For $u = \sqrt{2+\sqrt2}$, $v = \sqrt{2-\sqrt2}$, $E = \QQ(u)$: find the minimal polynomial, show $E$ is a splitting field, and determine the Galois group and intermediate fields.
-
-<1>1. (a) The minimal polynomial of $u$ is $f(x) = x^4 - 4x^2 + 2$.
+<1>1. The minimal polynomial of $u$ is
+\[
+\boxed{f(x)=x^4-4x^2+2}.
+\]
 <2>1. $u^2 = 2 + \sqrt2$, so $(u^2 - 2)^2 = 2$, i.e. $u^4 - 4u^2 + 2 = 0$.
 ::: {.proof}
 square $u^2 - 2 = \sqrt2$.
@@ -46,7 +47,7 @@ it is Eisenstein at $p = 2$ (leading coefficient $1$, middle coefficient $-4$ di
 $f$ is monic, irreducible, and has $u$ as a root.
 :::
 
-<1>2. (b) $v \in E$ and $E$ is a splitting field of $f$.
+<1>2. The element $v$ belongs to $E$, and $E$ is the splitting field of $f$ over $\QQ$.
 <2>1. $uv = \sqrt{(2+\sqrt2)(2-\sqrt2)} = \sqrt{4 - 2} = \sqrt2$.
 ::: {.proof}
 multiply the two radicands.
@@ -64,7 +65,11 @@ $f(x) = (x^2 - (2+\sqrt2))(x^2 - (2-\sqrt2))$, so the roots are $\pm\sqrt{2+\sqr
 $u \in E$ and $v \in E$ by <1>2.2, so $\pm u, \pm v \in E$.
 :::
 
-<1>3. (c) The Galois group is $\ZZ/4$, and the intermediate fields are $\QQ$, $\QQ(\sqrt2)$, $E$.
+<1>3. The Galois group and the complete list of intermediate fields are
+\[
+\boxed{\Gal(E/\QQ)\cong C_4,\qquad
+\QQ\subset\QQ(\sqrt2)\subset E}.
+\]
 <2>1. $E/\QQ$ is Galois of degree $4$.
 ::: {.proof}
 $E$ is the splitting field of the separable polynomial $f$ (char $0$), so it is Galois, and $[E:\QQ] = 4$.
@@ -75,7 +80,7 @@ $|\Gal(E/\QQ)| = [E:\QQ] = 4$.
 :::
 <2>3. $\Gal(E/\QQ) \cong \ZZ/4$.
 ::: {.proof}
-the Galois group acts transitively on the four roots $\pm u, \pm v$; the automorphism $u \mapsto v$ has order $4$ (it cycles $u \mapsto v \mapsto -u \mapsto -v \mapsto u$), so the group is cyclic of order $4$.
+Since $f$ is the minimal polynomial of $u$ and $E$ is its splitting field, the assignment $\sigma(u)=v$ extends to an automorphism. One has $\sigma(\sqrt2)=v^2-2=-\sqrt2$, so $\sigma(v)=\sigma(\sqrt2/u)=-\sqrt2/v=-u$. Thus $\sigma$ has order four, and the Galois group of order four is cyclic.
 :::
 <2>4. The intermediate fields correspond to subgroups of $\ZZ/4$: the whole group (fixed field $\QQ$), the subgroup of order $2$ (fixed field $\QQ(\sqrt2)$), and the trivial subgroup (fixed field $E$).
 ::: {.proof}
@@ -84,6 +89,6 @@ $\ZZ/4$ has subgroups $\theset{0}, \theset{0,2}, \ZZ/4$; the fixed field of $\th
 
 <1>4. Q.E.D.
 ::: {.proof}
-<1>1, <1>2, <1>3 answer (a), (b), (c).
+Steps <1>1, <1>2, and <1>3 prove parts (a), (b), and (c), respectively.
 :::
 :::
