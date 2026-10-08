@@ -28,9 +28,7 @@ Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorn
 :::
 
 ::: {.solution}
-**Goal:** Prove normality of Sylow subgroups, existence of a cyclic subgroup of order 35, and deduce that $G$ is cyclic when all Sylow subgroups are normal.
-
-<1>1. Part (a): At least one of $Q$ or $R$ is normal in $G$.
+<1>1. At least one of $Q$ and $R$ is normal in $G$.
 ::: {.proof}
     <2>1. By Sylow's Theorems, the number $n_5$ of Sylow 5-subgroups satisfies $n_5 \equiv 1 \pmod 5$ and $n_5 \mid (3 \cdot 7) = 21$. Thus $n_5 \in \{1, 21\}$.
     <2>2. The number $n_7$ of Sylow 7-subgroups satisfies $n_7 \equiv 1 \pmod 7$ and $n_7 \mid (3 \cdot 5) = 15$. Thus $n_7 \in \{1, 15\}$.
@@ -46,7 +44,7 @@ Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorn
 
 :::
 
-<1>2. Part (b): $G$ has a cyclic subgroup of order 35.
+<1>2. The group $G$ contains a cyclic subgroup of order $35$.
 ::: {.proof}
     <2>1. By Part (a), $Q \trianglelefteq G$ or $R \trianglelefteq G$.
     <2>2. If one of two subgroups is normal, their set product is a subgroup. Thus $H = Q R \le G$.
@@ -61,7 +59,7 @@ Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorn
 
 :::
 
-<1>3. Part (c): Both $Q$ and $R$ are normal in $G$.
+<1>3. Both $Q$ and $R$ are normal in $G$.
 ::: {.proof}
     <2>1. Let $H \le G$ be the cyclic subgroup of order 35 from Part (b).
     <2>2. The index of $H$ in $G$ is $[G : H] = \frac{105}{35} = 3$.
@@ -73,7 +71,7 @@ Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorn
 
 :::
 
-<1>4. Part (d): If $P \trianglelefteq G$, then $G$ is cyclic.
+<1>4. If $P$ is normal in $G$, then $G$ is cyclic.
 ::: {.proof}
     <2>1. Assume $P \trianglelefteq G$. By Part (c), $Q \trianglelefteq G$ and $R \trianglelefteq G$.
     <2>2. All three Sylow subgroups $P, Q, R$ are normal in $G$.
@@ -87,9 +85,8 @@ Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorn
 
 :::
 
-<1>5. Conclusion:
+<1>5. Q.E.D.
 ::: {.proof}
-    $Q$ and $R$ are normal in $G$, $G$ contains a cyclic subgroup of order 35, and normality of $P$ implies $G \cong \mathbb{Z}/105\mathbb{Z}$.
+Steps <1>1--<1>4 establish parts (a)--(d), respectively.
 :::
 :::
-
