@@ -22,9 +22,7 @@ Let $R$ be a ring (not assumed to have an identity) with the property that $x^2 
 :::
 
 ::: {.solution}
-**Goal:** Prove that every Boolean ring has characteristic 2 in (a) and is commutative in (b) by evaluating the idempotent property on sums.
-
-<1>1. Part (a): $2x = 0$ for all $x \in R$.
+<1>1. Every element of $R$ satisfies $2x=0$.
 ::: {.proof}
     <2>1. Let $x \in R$. By hypothesis, $x + x \in R$ satisfies the idempotent property $(x + x)^2 = x + x$.
     <2>2. Expand the left-hand side using the distributive laws of ring arithmetic:
@@ -39,7 +37,7 @@ Let $R$ be a ring (not assumed to have an identity) with the property that $x^2 
 
 :::
 
-<1>2. Part (b): $R$ is commutative ($x y = y x$ for all $x, y \in R$).
+<1>2. The multiplication on $R$ is commutative: $xy=yx$ for all $x,y\in R$.
 ::: {.proof}
     <2>1. Let $x, y \in R$. By hypothesis, the element $x + y \in R$ satisfies $(x + y)^2 = x + y$.
     <2>2. Expand the left-hand side using distributivity:
@@ -55,8 +53,8 @@ Let $R$ be a ring (not assumed to have an identity) with the property that $x^2 
 
 :::
 
-<1>3. Conclusion:
+<1>3. Q.E.D.
 ::: {.proof}
-    Every Boolean ring satisfies $2x = 0$ and $x y = y x$.
+Step <1>1 proves part (a), and step <1>2 proves part (b).
 :::
 :::
