@@ -30,32 +30,39 @@ Show by means of an example that this inequality can be strict.
 The source page literally says “the power series series” in its opening sentence; that wording is preserved here.
 :::
 
-:::: {.solution}
-**Goal:** (a) If $\sum a_nx^n$ and $\sum b_nx^n$ have radii $R_1, R_2$ with $R_1 \neq R_2$, show $\sum(a_n+b_n)x^n$ has radius $\min\{R_1, R_2\}$; discuss $R_1 = R_2$.
-(b) Show $\sum a_nb_nx^n$ has radius $R \ge R_1R_2$, with a strict example.
+::: {.solution}
+<1>1. If $R_1\ne R_2$, the radius of $\sum_{n\ge0}(a_n+b_n)x^n$ is $\min\{R_1,R_2\}$.
 
-<1>1. (a) $R_1 \neq R_2$: the radius of $\sum(a_n+b_n)x^n$ is $\min\{R_1, R_2\}$.
-<2>1. Say $R_1 < R_2$.
-For $|x| < R_1$, both series converge absolutely, so their sum converges absolutely: the radius $R$ of the sum satisfies $R \ge R_1$.
-<2>2. For $R_1 < |x| < R_2$: $\sum(a_n+b_n)x^n$ diverges.
-Proof: if it converged, then $\sum a_nx^n = \sum(a_n+b_n)x^n - \sum b_nx^n$ would converge (difference of two convergent series, since $\sum b_nx^n$ converges for $|x| < R_2$), contradicting the divergence of $\sum a_nx^n$ for $|x| > R_1$.
-<2>3. $R = R_1 = \min\{R_1, R_2\}$.
-Proof: <2>1 gives $R \ge R_1$ and <2>2 gives $R \le R_1$.
-<2>4. If $R_1 = R_2 = R_0$, then $R \ge R_0$, and $R$ can be strictly larger.
-Proof: $R \ge R_0$ since both series converge absolutely for $|x| < R_0$.
-Strictness: $a_n = 1$, $b_n = -1$ gives $a_n + b_n = 0$, radius $\infty$; or $a_n = 1$, $b_n = -1 + 2^{-n}$ gives $a_n + b_n = 2^{-n}$, radius $2 > 1 = R_0$.
-Nothing more can be said in general.
-<2>5. Q.E.D. Proof: <2>3 and <2>4 answer (a).
+::: {.proof}
+By symmetry suppose $R_1<R_2$, allowing $R_1=0$ or $R_2=\infty$. On $|x|<R_1$, both original series converge absolutely, so their sum does too and $R\ge R_1$. If $R>R_1$, choose a positive real $x$ with $R_1<x<\min\{R,R_2\}$. Both the sum series and the $b_n$-series converge at $x$, hence their difference $\sum a_nx^n$ converges, contradicting its radius $R_1$. Thus $R\le R_1$.
+:::
 
-<1>2. (b) The radius $R$ of $\sum a_nb_nx^n$ satisfies $R \ge R_1R_2$.
-<2>1. Fix $|x| < R_1R_2$; choose $r_1 < R_1$, $r_2 < R_2$ with $|x| < r_1r_2$.
-Proof: e.g. take $r_1, r_2$ close to $R_1, R_2$ with $r_1r_2 > |x|$, possible since $R_1R_2 > |x|$.
-<2>2. $|a_n|r_1^n \to 0$ and $|b_n|r_2^n \to 0$.
-Proof: $\sum a_nr_1^n$ and $\sum b_nr_2^n$ converge absolutely (inside the radius of convergence), so their terms tend to $0$; in particular they are bounded: $|a_n|r_1^n \le C_1$, $|b_n|r_2^n \le C_2$.
-<2>3. $|a_nb_n||x|^n = (|a_n|r_1^n)(|b_n|r_2^n)\left(\frac{|x|}{r_1r_2}\right)^n \le C\rho^n$ with $\rho := |x|/(r_1r_2) < 1$.
-Proof: <2>2 and $|x| < r_1r_2$.
-<2>4. $\sum a_nb_nx^n$ converges absolutely for $|x| < R_1R_2$, so $R \ge R_1R_2$.
-Proof: comparison with the convergent geometric series $\sum C\rho^n$ by <2>3. <2>5. Strictness example: $a_{2k} = 1$, $a_{2k+1} = 0$ and $b_{2k} = 0$, $b_{2k+1} = 1$.
-Proof: $\sum a_nx^n = \sum_k x^{2k}$ has radius $R_1 = 1$ and $\sum b_nx^n = \sum_k x^{2k+1}$ has radius $R_2 = 1$; but $a_nb_n = 0$ for all $n$, so $\sum a_nb_nx^n = 0$ converges everywhere: $R = \infty > 1 = R_1R_2$.
-<2>6. Q.E.D. Proof: <2>4 gives $R \ge R_1R_2$; <2>5 exhibits strictness.
+<1>2. If $R_1=R_2=R_0$, the sum radius satisfies $R\ge R_0$, and equality need not hold.
+
+::: {.proof}
+Both series converge absolutely for every $|x|<R_0$, so their sum does as well. If $R_0=\infty$, this forces $R=\infty$. For $R_0=1$, take $a_n=1$ and $b_n=-1$, giving sum radius $\infty$; alternatively $b_n=-1+2^{-n}$ gives sum radius $2$. Equality occurs when $a_n=b_n=1$.
+:::
+
+<1>3. For every $0<r<R_1$ and $0<s<R_2$, the coefficientwise product series has radius $R\ge rs$.
+
+::: {.proof}
+Absolute convergence of $\sum a_nr^n$ and $\sum b_ns^n$ gives finite constants $A,B$ such that $|a_n|r^n\le A$ and $|b_n|s^n\le B$ for every $n$. For $|x|<rs$,
+\[
+|a_nb_nx^n|\le AB\left(\frac{|x|}{rs}\right)^n.
+\]
+The geometric majorant is summable, proving absolute convergence of the product series on $|x|<rs$.
+:::
+
+<1>4. The inequality $R\ge R_1R_2$ holds whenever the extended-real product is defined, and can be strict.
+
+::: {.proof}
+If both radii are positive, take the supremum of $rs$ in step <1>3, including when a radius is infinite. If either radius is zero and the other finite, $R\ge0$ is automatic. If one radius is zero and the other infinite, $R_1R_2$ is undefined; step <1>3 is the unambiguous formulation.
+
+For strictness let $a_{2k}=1,\ a_{2k+1}=0$ and $b_{2k}=0,\ b_{2k+1}=1$. Both original radii are $1$, whereas $a_nb_n=0$ for every $n$, giving product radius $\infty$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1–<1>2 establish part (a), and steps <1>3–<1>4 establish part (b) with the extended-radius qualification.
 :::
