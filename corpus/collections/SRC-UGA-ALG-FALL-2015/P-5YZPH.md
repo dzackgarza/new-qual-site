@@ -25,39 +25,26 @@ Prove that $xP$ is an orbit of length 1 $\iff H$ is contained in $xPx\inv$.
 :::
 
 ::: {.solution}
-Let $X=G/P$ be the set of left cosets of $P$. Since $P$ is a Sylow
-$p$-subgroup,
-\[
-|X|=[G:P]
-\]
-is not divisible by $p$.
+Write $X=G/P$ for the finite set of left cosets, with the action $h\cdot xP=hxP$.
 
-The $p$-group $H$ acts on $X$ by left multiplication. Every $H$-orbit has
-cardinality
-\[
-[H:H_{xP}],
-\]
-hence is a power of $p$. Therefore every orbit of size greater than $1$ has
-size divisible by $p$. If there were no orbit of size $1$, then $|X|$ would be
-a sum of integers divisible by $p$, contradicting $p\nmid|X|$. Thus there is
-at least one orbit of length $1$.
+<1>1. The action of $H$ on $X$ has an orbit of cardinality one.
 
-Now fix a coset $xP$. Its orbit has length $1$ exactly when every $h\in H$
-fixes $xP$, i.e.
-\[
-hxP=xP
-\qquad\text{for every }h\in H.
-\]
-For a given $h$ this is equivalent to
-\[
-x^{-1}hx\in P.
-\]
-Hence $xP$ is fixed by all of $H$ exactly when
-\[
-x^{-1}Hx\subseteq P,
-\]
-or equivalently
+::: {.proof}
+Since $P$ is a Sylow $p$-subgroup, the index $|X|=[G:P]$ is not divisible by $p$. For any coset $xP$, orbit–stabilizer gives $|H\cdot xP|=[H:H_{xP}]$, which is a power of $p$. If every orbit had cardinality greater than one, all orbit cardinalities would be divisible by $p$, as would their sum $|X|$. This is impossible. Therefore some coset is fixed by $H$.
+:::
+
+<1>2. A coset $xP$ is an orbit of cardinality one precisely when
 \[
 \boxed{H\subseteq xPx^{-1}}.
 \]
+
+::: {.proof}
+The orbit of $xP$ consists of one element if and only if $hxP=xP$ for all $h\in H$. For each $h$, equality of these left cosets is equivalent to $x^{-1}hx\in P$. Thus the condition is $x^{-1}Hx\subseteq P$, equivalently $H\subseteq xPx^{-1}$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 prove existence of a length-one orbit and characterize precisely which cosets have this property.
+:::
 :::
