@@ -28,31 +28,54 @@ Show that $f\equiv 0$.\
 
 ::: {.solution}
 <1>1. The hypotheses give $\int_0^1 f(x)\,x^{99}p(x)\,dx = 0$ for every polynomial $p$.
+
 ::: {.proof}
-$x^{99}p(x)$ is a finite linear combination of powers $x^{99}, x^{100}, \ldots$, each of which integrates to $0$ against $f$.
+Write $p(x)=\sum_{j=0}^N a_jx^j$. By linearity of integration,
+\[
+\int_0^1 f(x)x^{99}p(x)\,dx
+=\sum_{j=0}^N a_j\int_0^1 f(x)x^{99+j}\,dx=0.
+\]
 :::
 
 <1>2. Consequently $\int_0^1 f(x)\,x^{99}h(x)\,dx = 0$ for every $h \in C([0,1])$.
-<2>1. Polynomials are dense in $C([0,1])$ (Weierstrass), so $p_k \to h$ uniformly.
+
+<2>1. For every $h\in C([0,1])$ there are polynomials $p_k$ converging uniformly to $h$.
+
 ::: {.proof}
-Weierstrass approximation theorem.
+This is the Weierstrass approximation theorem on $[0,1]$.
 :::
-<2>2. $x^{99}p_k \to x^{99}h$ uniformly.
+
+<2>2. The integrals of $fx^{99}p_k$ converge to the integral of $fx^{99}h$.
+
 ::: {.proof}
-$|x^{99}p_k - x^{99}h| \le \|p_k - h\|_\infty \to 0$.
+Since $0\le x^{99}\le1$ and $f$ is bounded,
+\[
+\left|\int_0^1 f(x)x^{99}(p_k(x)-h(x))\,dx\right|
+\leq\|f\|_\infty\|p_k-h\|_\infty\longrightarrow0.
+\]
 :::
+
 <2>3. Q.E.D.
+
 ::: {.proof}
-$\int f\,x^{99}h = \lim_k \int f\,x^{99}p_k = 0$ by uniform convergence under the integral.
+By step <2>2 and step <1>1, the integral of $fx^{99}h$ is the limit of integrals equal to zero.
 :::
 
 <1>3. Take $h = f$: $\int_0^1 x^{99}f(x)^2\,dx = 0$.
+
 ::: {.proof}
-<1>2 with $h = f \in C([0,1])$.
+Apply step <1>2 with $h=f$, which is continuous by hypothesis.
 :::
 
 <1>4. $f \equiv 0$.
+
 ::: {.proof}
-$x^{99}f(x)^2 \ge 0$ is continuous with integral $0$, hence identically $0$; so $f = 0$ on $(0,1]$, and continuity at $0$ gives $f(0) = 0$.
+The continuous function $x\mapsto x^{99}f(x)^2$ is nonnegative. If it were positive at some point, continuity would give a subinterval of positive length on which it has a positive lower bound, contradicting step <1>3. Hence $x^{99}f(x)^2=0$ throughout $[0,1]$. For $x>0$ this implies $f(x)=0$, and continuity at zero gives $f(0)=0$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 establishes the required identity $f\equiv0$.
 :::
 :::
