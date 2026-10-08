@@ -27,21 +27,31 @@ Show that $\sum_{n=1}^\infty f_n$ does not satisfy the Weierstrass M-test but th
 ::: {.solution}
 <1>1. The Weierstrass M-test does not apply.
 ::: {.proof}
-the M-test requires $\sum_n M_n < \infty$ where $M_n = \sup_x |f_n(x)|$.
+Each $f_n$ equals $1/n$ on the nonempty interval $(2^{-(n+1)},2^{-n}]$, and is zero elsewhere. Thus $\|f_n\|_\infty=1/n$. Every majorant $M_n\ge\|f_n\|_\infty$ has divergent sum, by comparison with the harmonic series. Hence the summable-majorant hypothesis of the M-test fails.
 :::
-Here $M_n = 1/n$ (the supremum of $f_n$ on its support is $1/n$), and $\sum_n 1/n = \infty$, so the hypothesis of the M-test fails and it cannot be used.
+
 <1>2. The supports $\supp f_n = (2^{-(n+1)}, 2^{-n}]$ are pairwise disjoint.
 ::: {.proof}
-the intervals $(2^{-(n+1)}, 2^{-n}]$ for $n = 1, 2, \ldots$ are disjoint (they partition $(0, 1/2]$), and $f_n = 0$ elsewhere.
+For $m>n$, any $x\in(2^{-(m+1)},2^{-m}]$ satisfies $x\le2^{-m}\le2^{-(n+1)}$, whereas every point of $(2^{-(n+1)},2^{-n}]$ is strictly larger than $2^{-(n+1)}$. Therefore the nonzero loci of the functions are disjoint.
 :::
-Hence for each $x$, at most one of the values $f_n(x)$ is nonzero.
+
 <1>3. Pointwise limit: $S(x) = \sum_n f_n(x) = f_{n(x)}(x)$ where $n(x)$ is the unique index with $x \in (2^{-(n+1)}, 2^{-n}]$, and $S(x) = 0$ otherwise.
 ::: {.proof}
-by <1>2, at most one term is nonzero at each $x$, so the series has at most one nonzero summand and converges.
+By step <1>2, for each $x\in\mathbb R$ at most one term is nonzero. Thus the series converges pointwise, taking value $1/n$ on the $n$th interval and zero outside their union.
 :::
+
 <1>4. Uniform convergence on $\RR$.
 ::: {.proof}
-for the tail, $S(x) - S_N(x) = \sum_{n>N} f_n(x)$, which by <1>2 is either $0$ (if the support containing $x$ has index $\le N$) or $f_n(x) = 1/n \le 1/(N+1)$ (if its index is $n > N$). Hence \[ \sup_{x\in\RR}\big|S(x) - S_N(x)\big| \le \frac{1}{N+1} \to 0, \] so the series converges uniformly.
+Write $S_N=\sum_{n=1}^Nf_n$. For every $x$, step <1>2 implies that $S(x)-S_N(x)$ is either zero or $1/n$ for some $n>N$. Hence $|S(x)-S_N(x)|\le1/(N+1)$ everywhere. Equality holds for every $x\in(2^{-(N+2)},2^{-(N+1)}]$, so
+\[
+\boxed{\|S-S_N\|_\infty=\frac1{N+1}\longrightarrow0}.
+\]
+This is uniform convergence on $\mathbb R$.
 :::
+
 <1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves failure of the M-test hypothesis, and step <1>4 proves uniform convergence.
+:::
 :::
