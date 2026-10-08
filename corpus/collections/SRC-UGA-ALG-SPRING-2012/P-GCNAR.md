@@ -42,53 +42,50 @@ Find the Jordan canonical form of $A$.
 :::
 
 ::: {.solution}
-Let $T$ denote the operator represented by $A$. A direct determinant computation gives
-\[
-\chi_T(x)=(x-1)^4(x-2).
-\]
-For the eigenvalue $1$, the nullities of $(T-I)^k$ for $k=1,2,3$ are respectively
-\[
-2,3,4.
-\]
-Thus the Jordan blocks for eigenvalue $1$ have sizes $3$ and $1$. The eigenvalue $2$ has algebraic multiplicity $1$, so it contributes one block of size $1$.
+Let $T$ denote the operator with matrix $A$, and let $x$ act on $V$ by $T$.
 
-Hence the elementary divisors are
-\[
-(x-1)^3,\qquad x-1,\qquad x-2.
-\]
-To obtain invariant factors, align equal-prime powers so that divisibility is preserved. This gives
-\[
-d_1=x-1,
-\qquad
-d_2=(x-1)^3(x-2),
-\]
-and indeed $d_1\mid d_2$ and $d_1d_2=\chi_T$.
+<1>1. The elementary divisors of $T$ are $(x-1)^2$, $(x-1)$, $(x-1)$, and $(x-2)$.
 
-Therefore the invariant-factor decomposition is
+::: {.proof}
+The block upper-triangular matrix has characteristic polynomial
 \[
-V\cong \mathbb C[x]/(x-1)\oplus
-\mathbb C[x]/\bigl((x-1)^3(x-2)\bigr).
+\chi_T(x)=((x+1)(x-3)+4)(x-1)^2(x-2)=(x-1)^4(x-2).
+\]
+For $N=T-I$, the first two coordinates form the nilpotent block
+\(\begin{psmallmatrix}-2&1\\-4&2\end{psmallmatrix}\), whose square is zero. Direct calculation gives $\dim\ker N=3$ and $\dim\ker N^2=4$. The successive kernel increments $3,1$ show that the three Jordan blocks for eigenvalue one have sizes two, one, and one. Eigenvalue two has algebraic multiplicity one, giving one further block.
+:::
+
+<1>2. The invariant factors are
+\[
+\boxed{d_1=x-1,\quad d_2=x-1,\quad d_3=(x-1)^2(x-2)}.
 \]
 
-For the decomposition into indecomposable $\mathbb C[x]$-modules, split into the primary cyclic summands corresponding to the elementary divisors:
-\[
-V\cong
-\mathbb C[x]/((x-1)^3)
-\oplus \mathbb C[x]/(x-1)
-\oplus \mathbb C[x]/(x-2).
-\]
-Each summand is indecomposable because its annihilator is a power of a single irreducible polynomial.
+::: {.proof}
+The elementary divisors from step <1>1 comprise $(x-1)^2$, two copies of $(x-1)$, and $(x-2)$. Aligning the powers of $x-1$ in increasing order and combining the sole $x-2$ factor with the last one yields the displayed monic invariant factors. They satisfy $d_1\mid d_2\mid d_3$ and $d_1d_2d_3=\chi_T$.
+:::
 
-Finally, the Jordan canonical form is
+<1>3. The decomposition into indecomposable $\mathbb C[x]$-modules is
 \[
-J=J_3(1)\oplus[1]\oplus[2]
-=
-\begin{bmatrix}
-1&1&0&0&0\\
-0&1&1&0&0\\
-0&0&1&0&0\\
-0&0&0&1&0\\
-0&0&0&0&2
-\end{bmatrix}.
+\boxed{V\cong\mathbb C[x]/((x-1)^2)\oplus
+\bigl(\mathbb C[x]/(x-1)\bigr)^{\oplus2}\oplus\mathbb C[x]/(x-2)}.
 \]
+
+::: {.proof}
+The structure theorem over the PID $\mathbb C[x]$ gives the elementary-divisor decomposition from step <1>1. Each cyclic module killed by a power of an irreducible polynomial is indecomposable: its submodules form a chain, so it cannot split as a direct sum of two nonzero submodules.
+:::
+
+<1>4. The Jordan canonical form is
+\[
+\boxed{J_2(1)\oplus[1]\oplus[1]\oplus[2]}.
+\]
+
+::: {.proof}
+The elementary divisors determined in step <1>1 correspond to Jordan blocks of sizes two, one and one at eigenvalue one, and a single block at eigenvalue two.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>2, <1>3, and <1>4 prove parts (a), (b), and (c), respectively.
+:::
 :::
