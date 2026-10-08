@@ -23,29 +23,48 @@ audit:
 Prove that if $f \in \mathcal{R}$ on $[a,b]$ and $\alpha \in C^1[a,b]$, then the Riemann integral $\int_a^b f(x)\alpha'(x)dx$ exists and $$\int_a^b f(x) d\alpha(x)= \int_a^b f(x)\alpha'(x)dx.$$
 :::
 ::: {.solution}
-<1>1. $\alpha'$ is continuous, hence uniformly continuous and bounded on $[a,b]$; $\alpha$ is of bounded variation.
+<1>1. The product $f\alpha'$ is Riemann integrable on $[a,b]$.
+
 ::: {.proof}
-$\alpha \in C^1[a,b]$, so $\alpha'$ is continuous on the compact set $[a,b]$, hence uniformly continuous and bounded.
+The derivative $\alpha'$ is continuous on compact $[a,b]$, hence bounded and Riemann integrable. Since $f$ is Riemann integrable, the product theorem for Riemann-integrable functions gives $f\alpha'\in\mathcal R[a,b]$.
 :::
-By the mean value theorem, for any partition the total variation of $\alpha$ is at most $\norm{\alpha'}_\infty (b-a) < \infty$.
-<1>2. $f\alpha'$ is Riemann integrable on $[a,b]$.
+
+<1>2. For every tagged partition $(P,\xi)$, the difference between its Stieltjes sum and the Riemann sum for $f\alpha'$ with the same tags is bounded by
+\[
+\left|S_\alpha(f;P,\xi)-S(f\alpha';P,\xi)\right|
+\le B(b-a)\,\omega_{\alpha'}(\operatorname{mesh}P),
+\]
+where $B=\sup_{[a,b]}|f|$ and $\omega_{\alpha'}(\delta)=\sup\{|\alpha'(s)-\alpha'(t)|:s,t\in[a,b],\,|s-t|\le\delta\}$.
+
 ::: {.proof}
-$f$ is Riemann integrable, hence bounded and continuous a.e.; $\alpha'$ is continuous, hence Riemann integrable.
+For $P=(a=x_0<\cdots<x_m=b)$, the mean value theorem supplies $\eta_i\in(x_{i-1},x_i)$ with
+\[
+\alpha(x_i)-\alpha(x_{i-1})=\alpha'(\eta_i)(x_i-x_{i-1}).
+\]
+The difference between the two sums equals
+\[
+\sum_{i=1}^m f(\xi_i)(\alpha'(\eta_i)-\alpha'(\xi_i))(x_i-x_{i-1}).
+\]
+Taking absolute values and using $|\eta_i-\xi_i|\le\operatorname{mesh}P$ yields the claimed bound after summing the subinterval lengths to $b-a$.
 :::
-The product of two Riemann integrable functions is Riemann integrable, so $f\alpha' \in \mathcal{R}[a,b]$.
-<1>3. Compare Riemann--Stieltjes sums to Riemann sums for $f\alpha'$.
+
+<1>3. The difference in step <1>2 tends uniformly to zero over all tagged partitions as their mesh tends to zero.
+
 ::: {.proof}
-let $P = \{a = x_0 < \cdots < x_n = b\}$ be a partition and pick tags $\xi_k \in [x_{k-1}, x_k]$.
+Uniform continuity of $\alpha'$ on $[a,b]$ gives $\omega_{\alpha'}(\delta)\to0$ as $\delta\downarrow0$. The bound in step <1>2 is independent of the choice of partition tags, so the convergence is uniform.
 :::
-By the mean value theorem applied to $\alpha$, there are $\eta_k \in [x_{k-1}, x_k]$ with $\alpha(x_k) - \alpha(x_{k-1}) = \alpha'(\eta_k)(x_k - x_{k-1})$.
-Hence the Stieltjes sum is \[ S_P = \sum_k f(\xi_k)\big(\alpha(x_k) - \alpha(x_{k-1})\big) = \sum_k f(\xi_k)\alpha'(\eta_k)(x_k - x_{k-1}), \] which is a Riemann sum for $f\alpha'$ with tags $(\xi_k, \eta_k)$ in each subinterval.
-<1>4. Such sums converge to $\int_a^b f\alpha'$.
+
+<1>4. The Riemann–Stieltjes integral exists and satisfies
+\[
+\boxed{\int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx}.
+\]
+
 ::: {.proof}
-since $f$ is bounded ($|f| \le B$) and $\alpha'$ is uniformly continuous, the difference between the sums in <1>3 and the ordinary Riemann sums $\sum_k f(\xi_k)\alpha'(\xi_k)(x_k-x_{k-1})$ tends to $0$ as the mesh goes to $0$: \[ \Big|\sum_k f(\xi_k)\big(\alpha'(\eta_k) - \alpha'(\xi_k)\big)\Delta x_k\Big| \le B \sum_k |\alpha'(\eta_k)-\alpha'(\xi_k)|\Delta x_k \le B\,(b-a)\,\omega_\alpha'(\text{mesh}) \to 0. \] Both sums converge to $\int_a^b f(x)\alpha'(x)\,dx$ (<1>2), so the Stieltjes sums converge to the same value.
+By step <1>1, the tagged Riemann sums $S(f\alpha';P,\xi)$ converge to $I=\int_a^b f(x)\alpha'(x)\,dx$ as the mesh tends to zero, uniformly over all choices of tags. Steps <1>2–<1>3 show that the corresponding tagged Stieltjes sums converge to the same $I$. This is the tagged-sum criterion for Riemann–Stieltjes integrability and identifies the integral.
 :::
-<1>5. Conclude.
+
+<1>5. Q.E.D.
+
 ::: {.proof}
-the Riemann--Stieltjes integral $\int_a^b f\,d\alpha$ exists (as $f$ is Riemann integrable and $\alpha$ is of bounded variation, <1>1) and equals the limit of the Stieltjes sums, which by <1>4 is $\int_a^b f(x)\alpha'(x)\,dx$.
-:::
-<1>6. Q.E.D.
+Steps <1>1 and <1>4 establish both requested assertions.
 :::
