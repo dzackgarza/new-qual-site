@@ -23,17 +23,31 @@ Show that $g(x) = 1/f(x)$ is of bounded variation on $[a,b]$.
 :::
 ::: {.solution}
 <1>1. For $x, y \in [a,b]$: $\left|\frac{1}{f(x)} - \frac{1}{f(y)}\right| = \frac{|f(x) - f(y)|}{|f(x)f(y)|} \le \frac{1}{c^2}|f(x) - f(y)|$.
+
 ::: {.proof}
-$\frac{1}{f(x)} - \frac{1}{f(y)} = \frac{f(y) - f(x)}{f(x)f(y)}$; and $|f(x)f(y)| \ge c^2$ by the hypothesis $|f| \ge c > 0$.
+The lower bound $|f|\geq c>0$ ensures that $g=1/f$ is defined everywhere. For any $x,y\in[a,b]$,
+\[
+|g(x)-g(y)|=\frac{|f(y)-f(x)|}{|f(x)f(y)|}
+\leq c^{-2}|f(y)-f(x)|,
+\]
+since $|f(x)f(y)|\geq c^2$.
 :::
 
 <1>2. For any partition $a = x_0 < \cdots < x_n = b$: $\sum_{i=1}^n \left|\frac{1}{f(x_i)} - \frac{1}{f(x_{i-1})}\right| \le \frac{1}{c^2}\sum_{i=1}^n |f(x_i) - f(x_{i-1})| \le \frac{1}{c^2}V_{[a,b]}(f)$.
+
 ::: {.proof}
-<1>1 applied term by term; the last inequality is the definition of total variation.
+Apply step <1>1 to each pair $(x_i,x_{i-1})$ and sum. By definition, every partition variation sum of $f$ is bounded above by $V_{[a,b]}(f)$.
 :::
 
-<1>3. Q.E.D.: $g = 1/f$ is of bounded variation on $[a,b]$, with $V(g) \le V(f)/c^2$.
+<1>3. The reciprocal satisfies $\boxed{V_{[a,b]}(g)\leq c^{-2}V_{[a,b]}(f)<\infty}$.
+
 ::: {.proof}
-<1>2 bounds every partition sum of $g$ uniformly, so the total variation of $g$ is finite.
+Take the supremum of the left-hand partition sums in step <1>2 over all finite partitions of $[a,b]$. The right-hand bound is independent of the partition and finite because $f$ has bounded variation.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves that $g=1/f$ is of bounded variation.
 :::
 :::
