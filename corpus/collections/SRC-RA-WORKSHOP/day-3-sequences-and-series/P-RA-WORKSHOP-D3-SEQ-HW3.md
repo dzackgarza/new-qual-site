@@ -24,11 +24,22 @@ Prove that $\sum_{k=1}^{\infty}a_k$ does not converge absolutely.
 Compare this to June 2009 #3a and January 2005 #1b.)
 :::
 
-:::: {.solution}
-<1>1. Suppose, toward a contradiction, that $\sum |a_k|$ converges.
-<1>2. Then $|a_k| \le 1$ eventually.
-Proof: convergence of $\sum |a_k|$ forces $|a_k| \to 0$, so for all large $k$, $|a_k| \le 1$, hence $a_k^2 \le |a_k|$.
-<1>3. $\sum a_k^2$ converges, contradiction.
-Proof: for all large $k$, $0 \le a_k^2 \le |a_k|$; by comparison with the convergent series $\sum |a_k|$, the series $\sum a_k^2$ converges — contradicting the hypothesis that it diverges.
-<1>4. Q.E.D. Proof: hence $\sum a_k$ does not converge absolutely.
+::: {.solution}
+<1>1. If $\sum_{k=1}^{\infty}|a_k|$ converges, then there is $N$ such that $0\leq a_k^2\leq |a_k|$ for all $k\geq N$.
+
+::: {.proof}
+Convergence of the nonnegative series implies $|a_k|\to0$. Choose $N$ so that $|a_k|\leq1$ for $k\geq N$. Then $a_k^2=|a_k|^2\leq|a_k|$.
+:::
+
+<1>2. The series $\sum_{k=1}^{\infty}|a_k|$ cannot converge.
+
+::: {.proof}
+Suppose it converges. By step <1>1 and comparison of nonnegative series, the tail $\sum_{k=N}^{\infty}a_k^2$ converges. Adding the finite initial sum would make $\sum_{k=1}^{\infty}a_k^2$ convergent, contrary to the hypothesis.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves that the given convergent series is not absolutely convergent.
+:::
 :::
