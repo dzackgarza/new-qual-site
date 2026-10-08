@@ -33,17 +33,39 @@ c. Show that the extension $E/F$ in (b) is a Galois extension.
 :::
 
 ::: {.solution}
-A splitting field of $f\in F[x]$ is an extension $L/F$ in which $f$ factors completely into linear factors and which is generated over $F$ by the roots of $f$.
+<1>1. A splitting field of $f\in F[x]$ over $F$ is an extension $L/F$ in which $f$ factors into linear factors and which is generated over $F$ by all the roots of $f$ in $L$.
 
-Now let $|F|=q$ and $[E:F]=n$. Then $E$ has $q^n$ elements. Every $a\in E$ satisfies $a^{q^n}=a$, so every element of $E$ is a root of
-\[
-g(x)=x^{q^n}-x\in F[x].
-\]
-Conversely this polynomial has degree $q^n$ and already has the $q^n$ distinct elements of $E$ as roots. They are distinct because
-\[
-g'(x)=q^n x^{q^n-1}-1=-1
-\]
-in characteristic $p$, where $q$ is a power of $p$. Hence $E$ is exactly the splitting field of $g$ over $F$.
+::: {.proof}
+These are the defining properties of a splitting field.
+:::
 
-The polynomial $g$ is separable by the derivative computation. A splitting field of a separable polynomial is normal and separable, hence Galois. Therefore $E/F$ is Galois.
+Suppose henceforth that $|F|=q$ and $[E:F]=n>0$.
+
+<1>2. The polynomial
+\[
+\boxed{g(x)=x^{q^n}-x\in F[x]}
+\]
+has as its distinct roots exactly the elements of $E$.
+
+::: {.proof}
+As an $n$-dimensional vector space over the field of cardinality $q$, the field $E$ has $q^n$ elements. For each $a\in E^\times$, Lagrange's theorem applied to the finite group $E^\times$ of order $q^n-1$ gives $a^{q^n-1}=1$, hence $a^{q^n}=a$. The equality also holds for $a=0$. Therefore all $q^n$ elements of $E$ are roots of $g$. Since $g$ has degree $q^n$, these are all its roots, each of multiplicity one.
+:::
+
+<1>3. The extension $E/F$ is a splitting field of $g$.
+
+::: {.proof}
+By step <1>2, the polynomial $g$ splits completely over $E$, and its roots comprise every element of $E$. Consequently the subfield of $E$ generated over $F$ by these roots is $E$ itself. Step <1>1 therefore identifies $E$ as a splitting field.
+:::
+
+<1>4. The extension $E/F$ is Galois.
+
+::: {.proof}
+By step <1>2, the polynomial $g$ has no repeated root and is therefore separable. Step <1>3 exhibits $E$ as its splitting field, so $E/F$ is a finite normal and separable extension. Hence $E/F$ is Galois.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a), steps <1>2 and <1>3 answer part (b), and step <1>4 answers part (c).
+:::
 :::
