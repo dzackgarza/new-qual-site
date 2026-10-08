@@ -21,9 +21,7 @@ Show that if $a \in F$ is not a $p$-th power in $F$, then the polynomial $f(x) =
 :::
 
 ::: {.solution}
-**Goal:** Prove that $x^p - a \in F[x]$ is irreducible in characteristic $p$ by showing any non-trivial factor in a splitting field forces a $p$-th root of $a$ to lie in $F$ via Bézout's identity.
-
-<1>1. Factorization in a splitting field:
+<1>1. If $\alpha$ is a root of $x^p-a$ in an algebraic closure of $F$, then $x^p-a=(x-\alpha)^p$.
 ::: {.proof}
     <2>1. Let $K$ be a splitting field of $f(x) = x^p - a$ over $F$.
     <2>2. In $K$, there exists a root $\alpha \in K$ such that $\alpha^p = a$.
@@ -33,7 +31,7 @@ Show that if $a \in F$ is not a $p$-th power in $F$, then the polynomial $f(x) =
 
 :::
 
-<1>2. Form of divisors of $f(x)$ in $F[x]$:
+<1>2. If $x^p-a$ were reducible in $F[x]$, it would have a monic factor $(x-\alpha)^k$ with $1\leq k<p$.
 ::: {.proof}
     <2>1. Suppose for contradiction that $f(x)$ is reducible in $F[x]$.
     <2>2. Then there exists a monic irreducible factor $g(x) \in F[x]$ of $f(x)$ with degree $k = \deg g$ satisfying $1 \le k < p$.
@@ -43,7 +41,7 @@ Show that if $a \in F$ is not a $p$-th power in $F$, then the polynomial $f(x) =
 
 :::
 
-<1>3. Coefficient containment and Bézout's identity:
+<1>3. Any factor $(x-\alpha)^k\in F[x]$ with $1\leq k<p$ forces $\alpha\in F$.
 ::: {.proof}
     <2>1. Expanding $g(x) = (x - \alpha)^k$, its constant term is $(-1)^k \alpha^k$.
     <2>2. Since $g(x) \in F[x]$, all its coefficients lie in $F$, so $(-1)^k \alpha^k \in F$.
@@ -58,13 +56,18 @@ Show that if $a \in F$ is not a $p$-th power in $F$, then the polynomial $f(x) =
 
 :::
 
-<1>4. Contradiction and conclusion:
+<1>4. The polynomial $x^p-a$ is irreducible over $F$.
 ::: {.proof}
     <2>1. Since $\alpha \in F$, the element $a = \alpha^p$ is a $p$-th power of an element of $F$.
     <2>2. This contradicts the hypothesis that $a$ is not a $p$-th power in $F$.
     <2>3. Therefore $f(x) = x^p - a$ has no factors of degree $k$ with $1 \le k < p$, so $f(x)$ is irreducible in $F[x]$.
 :::
-:::
 
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves the assertion using steps <1>1--<1>3.
+:::
+:::
 
 
