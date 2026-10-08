@@ -30,94 +30,42 @@ d. Write down one representative from each isomorphism class of abelian groups o
 :::
 
 ::: {.solution}
-**(a).**
+<1>1. Every group of order $p^2$ is abelian.
 
-<1>1. Let $G$ have order $p^2$. Then $Z(G) \neq 1$ (a $p$-group has nontrivial center).
 ::: {.proof}
-class equation.
+The class equation for a finite $p$-group implies that its center is nontrivial. Thus, if $|G|=p^2$, then $|Z(G)|$ is $p$ or $p^2$. In the latter case $G=Z(G)$. In the former, $G/Z(G)$ has prime order and is cyclic. A group with cyclic central quotient is abelian: if $G/Z(G)=\langle gZ(G)\rangle$, every pair of elements has the form $g^az,g^bw$ with $z,w$ central, so they commute. Thus $G$ is abelian in either case.
 :::
 
-<1>2. $G/Z(G)$ has order $1$ or $p$ (since $|Z(G)|$ is $p$ or $p^2$).
+<1>2. The three Sylow theorems assert existence, conjugacy and containment, and a restriction on the number of Sylow subgroups.
+
 ::: {.proof}
-<1>1 and Lagrange.
+If $|G|=p^am$ with $p\nmid m$, then (i) there exists a subgroup of order $p^a$; (ii) every $p$-subgroup lies in a Sylow $p$-subgroup, and all Sylow $p$-subgroups are conjugate; (iii) their number $n_p$ divides $m$ and satisfies $n_p\equiv1\pmod p$. These are the three Sylow theorems.
 :::
 
-<1>3. If $|G/Z(G)| = p$, then $G/Z(G)$ is cyclic, which forces $G$ abelian (a group with cyclic center quotient is abelian).
+<1>3. Every group of order $4225=5^2\,13^2$ is abelian.
+
 ::: {.proof}
-standard fact.
+By step <1>2, $n_5$ divides $169$ and is congruent to $1$ modulo $5$. The divisors $1,13,169$ have residues $1,3,4$, respectively, so $n_5=1$. Likewise $n_{13}$ divides $25$ and is congruent to $1$ modulo $13$; the divisors $1,5,25$ have residues $1,5,12$, so $n_{13}=1$. Consequently the Sylow subgroups $P$ of order $25$ and $Q$ of order $169$ are normal. They have trivial intersection, and their product has order $4225$, so $G\cong P\times Q$. Both factors are abelian by step <1>1.
 :::
 
-<1>4. If $|G/Z(G)| = 1$, then $G = Z(G)$ is abelian.
+<1>4. There are exactly four isomorphism classes, represented by
+\[
+\boxed{\begin{gathered}
+C_{25}\times C_{169},\qquad
+C_{25}\times C_{13}\times C_{13},\\
+C_5\times C_5\times C_{169},\qquad
+C_5\times C_5\times C_{13}\times C_{13}.
+\end{gathered}}
+\]
+
 ::: {.proof}
-<1>2.
+By step <1>3, any such group is abelian. The classification of finite abelian groups gives two isomorphism classes of order $25$, namely $C_{25}$ and $C_5^2$, and two of order $169$, namely $C_{169}$ and $C_{13}^2$. Forming their direct products produces all four possibilities. The Sylow subgroups are characteristic, so differences in either primary factor distinguish the isomorphism classes.
 :::
 
-<1>5. Hence $G$ is abelian.
+<1>5. Q.E.D.
+
 ::: {.proof}
-<1>3 and <1>4.
+Steps <1>1, <1>2, <1>3, and <1>4 establish parts (a), (b), (c), and (d), respectively.
 :::
 
-**(b).**
-
-<1>1. **Sylow 1:** For each prime $p$ dividing $|G|$, there is a Sylow $p$-subgroup.
-**Sylow 2:** All Sylow $p$-subgroups are conjugate, and the number $n_p$ satisfies $n_p \equiv 1 \pmod p$ and $n_p \mid |G|$.
-**Sylow 3:** $n_p \equiv 1 \pmod p$ and $n_p$ divides $|G|/p^a$ (where $p^a$ is the largest power of $p$ dividing $|G|$).
-::: {.proof}
-statement of the Sylow theorems.
-:::
-
-**(c).**
-
-<1>1. Let $G$ have order $4225 = 5^2 \cdot 13^2$. By Sylow, $n_5 \equiv 1 \pmod 5$ and $n_5 \mid 13^2 = 169$, so $n_5 \in \{1, 169\}$.
-::: {.proof}
-Sylow's theorem.
-:::
-
-<1>2. $n_{13} \equiv 1 \pmod{13}$ and $n_{13} \mid 25$, so $n_{13} = 1$.
-::: {.proof}
-Sylow's theorem (the divisors of $25$ are $1, 5, 25$, and only $1 \equiv 1 \pmod{13}$).
-:::
-
-<1>3. Hence $G$ has a unique normal Sylow $13$-subgroup $P \cong \ZZ/13^2$ or $\ZZ/13 \times \ZZ/13$.
-::: {.proof}
-<1>2.
-:::
-
-<1>4. The normal subgroup $P$ acts by conjugation on the Sylow $5$-subgroups, so $n_5$ divides $|P| = 169$ and $n_5 \equiv 1 \pmod 5$; the only such divisor is $n_5 = 1$.
-::: {.proof}
-<1>3 and Sylow (the orbit sizes divide $169$, and $n_5 \equiv 1 \pmod 5$ forces $n_5 = 1$).
-:::
-
-<1>5. Hence $G$ has a unique normal Sylow $5$-subgroup $Q$ and a unique normal Sylow $13$-subgroup $P$, so $G = P \times Q$.
-::: {.proof}
-<1>3 and <1>4.
-:::
-
-<1>6. $P$ and $Q$ are abelian (groups of order $p^2$ are abelian by (a)), so $G = P \times Q$ is abelian.
-::: {.proof}
-<1>5 and (a).
-:::
-
-**(d).**
-
-<1>1. The abelian groups of order $4225 = 5^2 \cdot 13^2$ are the products of abelian groups of order $5^2$ and $13^2$.
-::: {.proof}
-fundamental theorem of finite abelian groups.
-:::
-
-<1>2. The abelian groups of order $5^2$ are $\ZZ/25$ and $\ZZ/5 \times \ZZ/5$; the abelian groups of order $13^2$ are $\ZZ/169$ and $\ZZ/13 \times \ZZ/13$.
-::: {.proof}
-fundamental theorem.
-:::
-
-<1>3. Hence the four isomorphism classes are:
-$$\ZZ/25 \times \ZZ/169,\ \ZZ/25 \times \ZZ/13 \times \ZZ/13,\ \ZZ/5 \times \ZZ/5 \times \ZZ/169,\ \ZZ/5 \times \ZZ/5 \times \ZZ/13 \times \ZZ/13.$$
-::: {.proof}
-<1>1 and <1>2.
-:::
-
-<1>4. Q.E.D.
-::: {.proof}
-<1>5 (a), <1>1 (b), <1>6 (c), <1>3 (d).
-:::
 :::
