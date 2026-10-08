@@ -30,6 +30,9 @@ b. Prove that the Sylow 5-subgroup is also normal.
 ::: {.solution}
 Let $P$ be the normal Sylow $3$-subgroup of $G$, so $|P|=3$.
 
+<1>1. The group $G$ is solvable.
+
+::: {.proof}
 For (a), the quotient $G/P$ has order $20$. If $n_5$ denotes the number of Sylow $5$-subgroups of $G/P$, then
 \[
 n_5\equiv1\pmod5,
@@ -41,7 +44,11 @@ so $n_5=1$. Hence $G/P$ has a normal subgroup $Q/P$ of order $5$, and
 1\triangleleft P\triangleleft Q\triangleleft G
 \]
 has successive quotients of orders $3$, $5$, and $4$. The first two are cyclic, and every group of order $4$ is abelian. Thus all successive quotients are abelian, so $G$ is solvable.
+:::
 
+<1>2. Every Sylow $5$-subgroup of $G$ is normal.
+
+::: {.proof}
 For (b), let $H/P$ be the unique Sylow $5$-subgroup of $G/P$. Then $H\triangleleft G$ and $|H|=15$. Inside $H$, the number of Sylow $5$-subgroups satisfies
 \[
 n_5(H)\equiv1\pmod5,
@@ -49,4 +56,11 @@ n_5(H)\equiv1\pmod5,
 n_5(H)\mid3,
 \]
 so $n_5(H)=1$. Let $S$ be this unique Sylow $5$-subgroup. It is characteristic in $H$ because it is uniquely determined as the Sylow $5$-subgroup, and $H\triangleleft G$; therefore $S\triangleleft G$. Hence the Sylow $5$-subgroup of $G$ is normal.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a), and step <1>2 proves part (b).
+:::
 :::
