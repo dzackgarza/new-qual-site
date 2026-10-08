@@ -24,29 +24,32 @@ Find a real number $k = k (p, n)$ such that for every integer $m\geq k$, every g
 :::
 
 ::: {.solution}
-Let $G$ have order $p^m n$, with $p\nmid n$. We claim that one may take
-\[
-k(p,n)=\left\lfloor \log_p((n-1)!)\right\rfloor+1.
-\]
-(For $n=1$, this gives $k=1$.)
+Assume $n$ is a positive integer, as required for $p^m n$ to be a group order.
 
-Suppose $m\ge k(p,n)$ and, toward a contradiction, that $G$ is simple. Let $r$ be the number of Sylow $p$-subgroups. If $r=1$, the unique Sylow $p$-subgroup is normal, contradicting simplicity. Thus $r>1$.
+<1>1. An admissible bound is
+\[
+\boxed{k(p,n)=\lfloor\log_p((n-1)!)\rfloor+1}.
+\]
 
-Conjugation gives a transitive action of $G$ on its $r$ Sylow $p$-subgroups and hence a homomorphism
-\[
-G\longrightarrow S_r.
-\]
-Its kernel is normal. The action is nontrivial because $r>1$, so the kernel is not all of $G$; simplicity therefore forces the kernel to be trivial. Hence
-\[
-|G|\le r!.
-\]
-By Sylow's theorem $r\mid n$, so $r\le n$. Consequently
-\[
-p^m n=|G|\le r!\le n!.
-\]
-But $m\ge k(p,n)$ implies
-\[
-p^m>(n-1)!,
-\]
-and therefore $p^m n>n!$, a contradiction. Thus every group of order $p^m n$ is nonsimple for every integer $m\ge k(p,n)$.
+::: {.proof}
+For every integer $m\geq k(p,n)$, one has $p^m>(n-1)!$, hence $p^mn>n!$. This applies also when $n=1$, when the bound equals one.
+:::
+
+<1>2. A simple group $G$ of order $p^m n$ with $m\geq1$ and $p\nmid n$ would embed into $S_r$ for some integer $r$ dividing $n$.
+
+::: {.proof}
+Let $r$ be the number of Sylow $p$-subgroups. If $r=1$, its unique Sylow $p$-subgroup is a proper nontrivial normal subgroup, contradicting simplicity. Therefore $r>1$. Conjugation on the Sylow $p$-subgroups yields a nontrivial homomorphism $G\to S_r$. Its kernel is normal and proper, so simplicity makes the kernel trivial. By Sylow's theorem $r$ divides $n$.
+:::
+
+<1>3. No group of order $p^m n$ with $m\geq k(p,n)$ is simple.
+
+::: {.proof}
+If such a group were simple, step <1>2 would give an embedding $G\hookrightarrow S_r$ with $r\leq n$, hence $p^mn=|G|\leq r!\leq n!$. This contradicts the strict inequality $p^mn>n!$ from step <1>1.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>3 give the requested bound and establish its asserted property.
+:::
 :::
