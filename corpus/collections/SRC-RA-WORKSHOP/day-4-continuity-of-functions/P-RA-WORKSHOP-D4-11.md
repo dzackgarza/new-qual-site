@@ -25,17 +25,27 @@ Provide a description of $A$ if $k<1$.
 Can anything be said about $A$ if $k\ge1$?
 :::
 
-:::: {.solution}
-<1>1. Case $k < 1$: $A$ is a singleton.
-Proof: $A \subseteq F(A)$ gives $\mathrm{diam}(A) \le \mathrm{diam}(F(A))$ (a subset has no larger diameter).
-Since $F$ is $k$-Lipschitz with $k < 1$, $\mathrm{diam}(F(A)) \le k\,\mathrm{diam}(A)$.
-Hence $\mathrm{diam}(A) \le k\,\mathrm{diam}(A)$, forcing $\mathrm{diam}(A) = 0$ (as $k < 1$ and $\mathrm{diam}(A) < \infty$ by boundedness).
-So $A$ contains at most one point, i.e. $A$ is either empty or a singleton. If $A = \{a\}$ is a singleton, then $A \subseteq F(A) = \{F(a)\}$ forces $F(a) = a$, so $A$ is the singleton containing the unique fixed point of the contraction $F$.
-(Uniqueness: two fixed points $a \ne a'$ would satisfy $d(a,a') = d(F(a),F(a')) \le k\,d(a,a') < d(a,a')$, impossible.)
-Existence of the fixed point is the Banach contraction theorem (complete space, $k < 1$), and $A$ must be exactly that point.
-<1>2. Case $k \ge 1$: nothing can be said in general.
-Proof: take $X = \mathbb{R}$ with the usual metric (complete) and $F = \mathrm{id}$, $k = 1$.
-Then $A \subseteq F(A) = A$ holds for every bounded nonempty $A$, and $A$ can be any bounded set (a point, an interval, infinitely many points).
-So no structural description of $A$ is possible from the hypotheses alone when $k \ge 1$.
+::: {.solution}
+<1>1. If $0<k<1$, then $A$ is empty or a singleton consisting of a fixed point of $F$.
+
+::: {.proof}
+Since $A\subseteq F(A)$ and $F$ is $k$-Lipschitz,
+\[
+\operatorname{diam}(A)\leq\operatorname{diam}(F(A))
+\leq k\,\operatorname{diam}(A).
+\]
+Boundedness gives $\operatorname{diam}(A)<\infty$, so $k<1$ forces $\operatorname{diam}(A)=0$. Thus $A$ contains at most one point. If $A=\{a\}$, the inclusion $\{a\}\subseteq F(\{a\})=\{F(a)\}$ implies $F(a)=a$. Such a fixed point is unique: if $F(a)=a$ and $F(b)=b$, then $d(a,b)\leq k\,d(a,b)$, hence $a=b$. Completeness guarantees existence of this unique fixed point by the Banach contraction theorem, but the empty set still satisfies the given inclusion.
+:::
+
+<1>2. If $k\geq1$, every bounded subset of $\mathbb R$ can occur.
+
+::: {.proof}
+Take $X=\mathbb R$ with its usual complete metric and $F=\operatorname{id}_{\mathbb R}$. For any $k\geq1$ the inequality $d(F(a),F(b))=d(a,b)\leq k\,d(a,b)$ holds, and $A=F(A)$ for every bounded subset $A\subseteq\mathbb R$, including the empty set. Thus the hypotheses impose no further restriction on $A$ beyond boundedness in this example.
+:::
+
 <1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 gives the exact classification for contractions; step <1>2 exhibits unrestricted bounded sets for $k\geq1$.
+:::
 :::
