@@ -25,9 +25,7 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
 :::
 
 ::: {.solution}
-**Goal:** Prove that the extension degree $[F(\omega) : F]$ for a primitive $n$-th root of unity over $\mathbb{F}_q$ equals the multiplicative order of $q$ modulo $n$.
-
-<1>1. Part (a): $n$ divides $q^k - 1$.
+<1>1. The integer $n$ divides $q^k-1$.
 ::: {.proof}
     <2>1. The field $E = F(\omega)$ is a finite field extension of $F = \mathbb{F}_q$ of degree $[E : F] = k$.
     <2>2. The cardinality of $E$ is $|E| = |F|^k = q^k$.
@@ -38,7 +36,7 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
 
 :::
 
-<1>2. Part (b): $m$ divides $k$.
+<1>2. The multiplicative order $m=\operatorname{ord}_n(q)$ divides $k$.
 ::: {.proof}
     <2>1. By Part (a), $n \mid (q^k - 1)$, which means $q^k \equiv 1 \pmod n$.
     <2>2. Since $\gcd(n, q) = 1$, the residue class $[q]_n \in (\mathbb{Z}/n\mathbb{Z})^\times$ has finite order $m = \operatorname{ord}_n(q)$.
@@ -47,7 +45,7 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
 
 :::
 
-<1>3. Part (c): $m = k$.
+<1>3. The extension degree is $k=m$.
 ::: {.proof}
     <2>1. Since $m = \operatorname{ord}_n(q)$, $q^m \equiv 1 \pmod n$, so $n$ divides $q^m - 1$.
     <2>2. Let $K = \mathbb{F}_{q^m}$ be the unique subfield of $\overline{F}$ with $q^m$ elements, which is an extension of $F = \mathbb{F}_q$ of degree $[K : F] = m$.
@@ -64,9 +62,8 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    $n \mid (q^k - 1)$, $m \mid k$, and $[F(\omega) : F] = m = \operatorname{ord}_n(q)$.
+Steps <1>1, <1>2, and <1>3 establish parts (a), (b), and (c), respectively.
 :::
 :::
-
