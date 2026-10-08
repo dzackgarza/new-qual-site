@@ -24,47 +24,25 @@ Prove that for every Noetherian module $M$, any proper submodule $N\subsetneq M$
 :::
 
 ::: {.solution}
-There is a small defect in the printed definition: if the two factors are only
-required to be proper submodules of $M$, then every proper $N$ satisfies
-$N=N\cap N$, so no proper submodule would be intersection-indecomposable.
-The standard intended definition is that $N$ is intersection-indecomposable
-if
-\[
-N=N_1\cap N_2
-\]
-implies $N=N_1$ or $N=N_2$; equivalently, $N$ cannot be written as the
-intersection of two submodules which both strictly contain $N$.
+<1>1. The printed definition does not define intersection-indecomposability.
 
-With this correction, suppose for contradiction that some proper submodule of
-$M$ is not a finite intersection of intersection-indecomposable submodules.
-Let $\mathcal S$ be the set of all such counterexamples. Since $M$ is
-Noetherian, every nonempty family of submodules has a maximal member under
-inclusion, so choose a maximal $N\in\mathcal S$.
+::: {.proof}
+Every proper submodule $N$ satisfies $N=N\cap N$, with both factors proper in $M$. Consequently no proper submodule meets the printed condition. The intended condition is that $N=N_1\cap N_2$ forces $N=N_1$ or $N=N_2$, equivalently that $N$ cannot be expressed as the intersection of two submodules strictly larger than $N$.
+:::
 
-The submodule $N$ itself cannot be intersection-indecomposable, because then it
-would already be a finite intersection with one factor. Hence there are
-submodules $N_1,N_2$ with
-\[
-N\subsetneq N_1,\qquad N\subsetneq N_2,
-\qquad N=N_1\cap N_2.
-\]
-Both $N_1$ and $N_2$ are proper: if, say, $N_1=M$, then
-$N=N_1\cap N_2=N_2$, contradicting $N\subsetneq N_2$.
+<1>2. Under the corrected definition, every proper submodule of a Noetherian module is a finite intersection of intersection-indecomposable submodules.
 
-By maximality of $N$ in $\mathcal S$, neither $N_1$ nor $N_2$ belongs to
-$\mathcal S$. Therefore there are intersection-indecomposable submodules
-$Q_1,\ldots,Q_r$ and $Q_{r+1},\ldots,Q_s$ such that
+::: {.proof}
+Suppose otherwise, and let $\mathcal S$ be the family of proper submodules not admitting such a finite intersection. The ascending chain condition implies that every nonempty family of submodules has a maximal member, so choose an inclusion-maximal $N\in\mathcal S$. It cannot itself be intersection-indecomposable, since then a single factor would suffice. Hence
 \[
-N_1=Q_1\cap\cdots\cap Q_r,
-\qquad
-N_2=Q_{r+1}\cap\cdots\cap Q_s.
+N=N_1\cap N_2,\qquad N\subsetneq N_1,\quad N\subsetneq N_2.
 \]
-Consequently
-\[
-N=N_1\cap N_2
-=Q_1\cap\cdots\cap Q_s,
-\]
-contradicting $N\in\mathcal S$. Thus $\mathcal S$ is empty, and every proper
-submodule of a Noetherian module is a finite intersection of
-intersection-indecomposable submodules.
+Both $N_i$ are proper, since $N_1=M$ would imply $N=N_2$, and similarly for $N_2=M$. By maximality of $N$, each $N_i$ is a finite intersection of intersection-indecomposable submodules. Combining these two finite intersections gives such a decomposition of $N$, contradicting $N\in\mathcal S$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 identifies the failure of the statement as printed, and step <1>2 proves the standard corrected assertion.
+:::
 :::
