@@ -28,18 +28,39 @@ $$
 What does this result imply if $\limsup_{n\to\infty}x_n<L$?
 :::
 
-:::: {.solution}
-<1>1. Upper bound: eventually $x_n < \limsup x_n + \epsilon$.
-Proof: let $L = \limsup x_n = \inf_N \sup_{n \ge N} x_n$ (finite by assumption).
-For any $\epsilon > 0$, $L + \epsilon$ is not a lower bound of the tail suprema... more precisely, $L = \inf_N S_N$ with $S_N = \sup_{n\ge N}x_n$, so there is $N_1$ with $S_{N_1} < L + \epsilon$.
-Then for all $n \ge N_1$, $x_n \le S_{N_1} < L + \epsilon$.
-<1>2. Lower bound: eventually $x_n > \liminf x_n - \epsilon$.
-Proof: let $\ell = \liminf x_n = \sup_N \inf_{n\ge N} x_n$.
-For any $\epsilon > 0$, $\ell - \epsilon$ is not an upper bound of the tail infima, so there is $N_2$ with $\inf_{n\ge N_2} x_n > \ell - \epsilon$; hence for all $n \ge N_2$, $x_n > \ell - \epsilon$.
-<1>3. Combine.
-Proof: with $N = \max(N_1, N_2)$, for all $n \ge N$: \[\ell - \epsilon < x_n < L + \epsilon.\] <1>4. Consequence if $\limsup x_n < L$.
-Proof: taking $\epsilon = L - \limsup x_n > 0$ in <1>1 gives $x_n < \limsup x_n + \epsilon = L$ for all $n \ge N$.
-Hence the sequence is eventually strictly bounded above by $L$: $x_n < L$ for all large $n$.
-(Similarly, $\liminf x_n > \ell$ would force $x_n > \ell$ eventually.)
+::: {.solution}
+Write $\ell=\liminf_{n\to\infty}x_n$ and $u=\limsup_{n\to\infty}x_n$, both finite by hypothesis.
+
+<1>1. For every $\varepsilon>0$, there exists $N_1$ such that $x_n<u+\varepsilon$ whenever $n\geq N_1$.
+
+::: {.proof}
+By definition, $u=\inf_{N\geq1}\sup_{n\geq N}x_n$. The infimum property supplies $N_1$ with $\sup_{n\geq N_1}x_n<u+\varepsilon$. Every term of this tail is bounded above by its supremum, giving the assertion.
+:::
+
+<1>2. For every $\varepsilon>0$, there exists $N_2$ such that $x_n>\ell-\varepsilon$ whenever $n\geq N_2$.
+
+::: {.proof}
+By definition, $\ell=\sup_{N\geq1}\inf_{n\geq N}x_n$. The supremum property supplies $N_2$ with $\inf_{n\geq N_2}x_n>\ell-\varepsilon$. Every term of this tail is at least its infimum.
+:::
+
+<1>3. For every $\varepsilon>0$, there exists $N$ such that
+\[
+\boxed{\ell-\varepsilon<x_n<u+\varepsilon\quad(n\geq N)}.
+\]
+
+::: {.proof}
+Choose $N=\max(N_1,N_2)$ with the indices from steps <1>1 and <1>2 for the same $\varepsilon$.
+:::
+
+<1>4. If $\limsup x_n<L$, then $x_n<L$ for every sufficiently large $n$.
+
+::: {.proof}
+Set $\varepsilon=L-u>0$. Step <1>1 gives an index $N$ such that $x_n<u+\varepsilon=L$ for every $n\geq N$.
+:::
+
 <1>5. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested two-sided tail inequality, and step <1>4 establishes its consequence.
+:::
 :::
