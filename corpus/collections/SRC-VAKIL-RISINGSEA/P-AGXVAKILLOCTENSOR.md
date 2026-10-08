@@ -23,62 +23,70 @@ of both $S^{-1}A\dash$modules and $A\dash$modules.
 :::
 
 ::: {.solution}
-Recall the definition
+Let $A$ be a commutative ring, $S\subseteq A$ a multiplicative subset, and $M$ an $A$-module. Both $(S^{-1}A)\otimes_A M$ and $S^{-1}M$ carry their canonical $S^{-1}A$-module structures.
+
+<1>1. There is an $S^{-1}A$-linear map
 \[
-S^{-1}A &\da \ts{ {a\over s} \st a\in A,\, s\in S} / \sim \\
-{a_1 \over s_1} &\sim {a_2 \over s_2} \iff \exists s\in S \text{ such that } s\qty{ s_2 a_1 - s_1 a_2 } = 0_A
-,\]
-and similarly $S^{-1}M = \ts{{m\over s}}/\sim$.
+\eta:(S^{-1}A)\otimes_A M\longrightarrow S^{-1}M,
+\qquad \eta\left(\frac a s\otimes m\right)=\frac{am}{s}.
+\]
 
-The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morphisms $\alpha: M\to N$ such that $\alpha(S) \subseteq N\units$:
-
-\begin{tikzcd}
-	& S^{-1}M \ar[d, dotted, "{\exists ! \tilde\alpha}"] \\
-	M\ar[ru, "S^{-1}\cdot"]\ar[r, "\alpha"] & N
-\end{tikzcd}
-
-> Strategy: define a map $M\to S^{-1}A \tensor_A M$ such that $S$ is invertible in the image, to obtain a map.
-> Show they satisfy the same universal property.
-
-- Since $M \in \mods{A}$, we have an action $a\cdot m$, so define
+::: {.proof}
+For fixed $m$, the assignment $a/s\mapsto am/s$ is well-defined: if $a/s=a'/s'$, some $t\in S$ annihilates $s'a-sa'$, hence also $s'am-sa'm$. It is additive. The map
 \[
-\eta: (S^{-1}A)\cross M &\to S^{-1}M \\
-\qty{ {a\over s}, m } &\mapsto {a\cdot m \over s }
-.\]
-
-- The tensor product $S^{-1}A \tensor_A M$ makes sense:
-  - $S^{-1}A$ is a right $A\dash$module by $a_0 \mapsto \qty{ {a\over s} \mapsto {a_0 a \over s}}$.
-  - $M$ is a left $A\dash$module by $a_0 \mapsto (m \mapsto a_0 \cdot m)$.
-
-- The map makes sense as an $A\dash$module morphism:
-  - $S^{-1}A \tensor_A M$ is a left $A\dash$module by $a_0 \mapsto \qty{{a\over s}\tensor m \mapsto {a_0 a \over s} \tensor m}$.
-  - $S^{-1}M$ is a left $A\dash$module by $a_0 \mapsto \qty{ {m\over s } \mapsto {a_0 \cdot m \over s}}$, using the $A\dash$module structure on $M$.
-
-- The map makes sense as an $S^{-1}A\dash$module morphism:
-  - $S^{-1}A \tensor_A M$ is a left $S^{-1}A\dash$module by ${a_0\over s_0} \mapsto \qty{ {a\over s}\tensor m \mapsto {a_0 a \over s_0 s} \tensor m }$.
-  - $S^{-1}M$ is a left $S^{-1}A\dash$module by ${a_0\over s_0} \mapsto \qty{{m \over s} \mapsto {a_0 \cdot m \over s_0 s} }$, by the $A\dash$module structure on $M$.
-
-- Well-defined: ?
-
-- $A\dash$bilinear: let $r\in A$, then
+(S^{-1}A)\times M\longrightarrow S^{-1}M,\qquad
+\left(\frac a s,m\right)\longmapsto\frac{am}{s}
+\]
+is additive in $m$ and $A$-balanced since, for $r\in A$,
 \[
-\eta\qty{r \cdot {a\over s}, m}
-&\da \eta\qty{{r\cdot a\over s}, m}  \\
-&\da {\psi(r\cdot a)(m) \over s} \\
-&= {r\cdot \psi(a)(m) \over s} \quad\text{since $\psi$ is a ring morphism} \\
-&= {\psi(a)(r\cdot m) \over s} \quad\text{since $\psi(a)$ is a ring morphism} \\
-&\da \eta\qty{ {a\over s}, r\cdot m}
-.\]
-So this lifts to a map out of the tensor product.
-
-- $S^{-1}A\dash$bilinear: ?
+\frac{(ra)m}{s}=\frac{a(rm)}{s}.
+\]
+It therefore factors uniquely through the tensor product. For $b/t\in S^{-1}A$, its value on an elementary tensor satisfies
+\[
+\eta\left(\frac bt\left(\frac as\otimes m\right)\right)
+=\frac{bam}{ts}
+=\frac bt\,\eta\left(\frac as\otimes m\right).
+\]
+Additivity proves $S^{-1}A$-linearity.
 :::
 
-::: {.remark}
-Erratum: the argument above is unfinished and uses undefined notation.
+<1>2. There is an $S^{-1}A$-linear map
+\[
+\theta:S^{-1}M\longrightarrow(S^{-1}A)\otimes_A M,
+\qquad \theta\left(\frac ms\right)=\frac1s\otimes m.
+\]
 
-- A module has no units. The universal property of $M \to S^{-1}M$ is initial among $A$-module maps $\alpha: M\to N$ into modules $N$ on which multiplication by every $s \in S$ is bijective.
-- The map $\psi$ in the bilinearity computation is never defined, and "$\psi(a)$ is a ring morphism" has no meaning here. The $A$-balance of $\eta$ is $\eta\qty{\frac{ra}{s}, m} = \frac{ram}{s} = \eta\qty{\frac{a}{s}, rm}$ by the module axioms.
-- Well-definedness, left as "?", holds because $t(s'a - sa') = 0$ implies $t(s'am - sa'm) = 0$, so $\frac{am}{s} = \frac{a'm}{s'}$.
-- The solution never shows that $\eta$ is an isomorphism. The map $\frac{m}{s} \mapsto \frac{1}{s}\tensor m$ is a well-defined inverse, and $S^{-1}A$-linearity, also left as "?", is checked on elementary tensors.
+::: {.proof}
+Suppose $m/s=m'/s'$. Then some $t\in S$ satisfies $t(s'm-sm')=0$. In the tensor product,
+\[
+\frac1s\otimes m-\frac1{s'}\otimes m'
+=\frac1{ss'}\otimes(s'm-sm')=0,
+\]
+because multiplication by $t$ is invertible on the $S^{-1}A$-module and the displayed element becomes zero after multiplication by $t$. Thus $\theta$ is well-defined. The fraction identities and the tensor-product relations show that $\theta$ is additive. Finally, for $a/t\in S^{-1}A$,
+\[
+\theta\left(\frac at\cdot\frac ms\right)
+=\frac1{ts}\otimes am
+=\frac at\left(\frac1s\otimes m\right).
+\]
+Hence $\theta$ is $S^{-1}A$-linear.
+:::
+
+<1>3. The maps $\eta$ and $\theta$ are inverse isomorphisms, natural in $M$.
+
+::: {.proof}
+For $m/s\in S^{-1}M$ and an elementary tensor $(a/s)\otimes m$,
+\[
+\eta\theta\left(\frac ms\right)=\frac ms,
+\qquad
+\theta\eta\left(\frac as\otimes m\right)
+=\frac1s\otimes am=\frac as\otimes m.
+\]
+Elementary tensors generate the tensor product, so both composites are identities. Given an $A$-linear morphism $f:M\to N$, the localization $S^{-1}f$ sends $m/s$ to $f(m)/s$, while $(\operatorname{id}_{S^{-1}A}\otimes f)$ sends $(a/s)\otimes m$ to $(a/s)\otimes f(m)$. Their composites with the corresponding $\eta$ agree on elementary tensors, proving naturality.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the claimed natural isomorphism of $S^{-1}A$-modules. Restriction of scalars along $A\to S^{-1}A$ also makes it an isomorphism of $A$-modules.
+:::
 :::
