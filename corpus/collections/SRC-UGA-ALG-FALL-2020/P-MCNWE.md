@@ -23,116 +23,48 @@ c. Find all subfields of the splitting field of $f(x)$ over $\QQ$.
 :::
 
 ::: {.solution}
-Part a:
+<1>1. A finite extension is Galois if and only if it is normal and separable.
 
-- A finite extension $E/F$ is **Galois** if it is normal and separable:
-  - Normal: every $f\in F[x]$ either has no roots in $E$ or all roots in $E$.
-  - Separable: every element $e\in E$ has a separable minimal polynomial $m(x)$, i.e. $m$ has no repeated roots.
+::: {.proof}
+This is the definition. Equivalently, it is the splitting field of a separable polynomial over the base field.
+:::
 
-Part b:
+Put $\alpha=\sqrt[3]{7}$, and let $\zeta$ be a primitive cube root of unity.
 
-- Note $f$ is irreducible by Eisenstein with $p=7$, and since $\QQ$ is perfect, irreducible implies separable.
-- Writing $L \da \SF(f)/\QQ$, this is a Galois extension:
-  - $L$ is separable: it is a finite extension of a perfect field, which is automatically separable.
-  - $L$ is normal: $L$ is the splitting field of a separable polynomial, and thus normal.
-- Since $f$ is degree 3, we have $G\da \Gal(L/k) \leq S_3$, and since $G$ is a transitive subgroup the only possibilities are
+<1>2. The splitting field and its Galois group are
 \[
-G = S_3 \cong D_3, A_3 \cong C_3
-.\]
+\boxed{L=\mathbb Q(\alpha,\zeta),\qquad
+\operatorname{Gal}(L/\mathbb Q)\cong S_3}.
+\]
 
-- Factor $x^3 - 7 = (x-\omega)(x-\zeta_3\omega)(x-\zeta_3^2\omega)$ where $\omega \da 7^{1\over 3}$ and $\zeta_3$ is a primitive 3rd root of unity.
-  Then $L = \QQ(\zeta_3, \omega)$.
-  - Aside: label the roots in this order, so $r_1 = \omega, r_2 = \zeta_3\omega, r_3 = \zeta_3^2\omega$.
+::: {.proof}
+The roots of $x^3-7$ are $\alpha,\zeta\alpha,\zeta^2\alpha$, so $L$ is its splitting field. Eisenstein's criterion at $7$ gives $[\mathbb Q(\alpha):\mathbb Q]=3$. Since $\mathbb Q(\alpha)$ is real and $\zeta$ is not, $[L:\mathbb Q(\alpha)]=2$, hence $[L:\mathbb Q]=6$. In characteristic zero the splitting field is Galois. Its Galois group permutes the three distinct roots faithfully, embedding in $S_3$. Because both groups have order six, this embedding is an isomorphism.
 
-- Write $\min_{\omega, \QQ}(x) = x^3 - 7$ and let $L_0/\QQ \da \QQ(\omega)/\QQ$ yields $[L_0: \QQ] = 3$.
-- Write $\min_{\zeta_3, \QQ}(x) = (x^3-1)/(x-1) = x^2 + x + 1$, and note that this is still the minimal polynomial over $L_0$ since $L_0 \subseteq \RR$ and $\zeta_3 \in \CC\sm\RR$.
-  So $[L:L_0] = 2$.
-
-- Counting in towers,
+Explicit automorphisms are
 \[
-[L:\QQ] = [L:L_0][L_0: \QQ] = (2)(3) = 6
-.\]
-- But $\size S_3 = 6$ and $\size A_3 = 3$, so $G = S_3$.
+\sigma(\alpha)=\zeta\alpha,\quad \sigma(\zeta)=\zeta,
+\qquad
+\tau(\alpha)=\alpha,\quad\tau(\zeta)=\zeta^2.
+\]
+They correspond respectively to $(123)$ and $(23)$ on the ordered roots $(\alpha,\zeta\alpha,\zeta^2\alpha)$, so they generate the Galois group with $\sigma^3=\tau^2=1$ and $\tau\sigma\tau=\sigma^{-1}$.
+:::
 
-- Explicitly, since we can write $\SF(f) = \QQ(\omega, \zeta_3)$, we can find explicit generators:
+<1>3. The complete list of intermediate fields between $\mathbb Q$ and $L$ is
 \[
-\sigma:
-&\begin{cases}
-\omega &\mapsto \omega
-\\
-\zeta_3 &\mapsto \zeta_3\cdot \zeta_3.
-\end{cases}
-&&
-\implies \sigma \sim (1,2,3) \\
-\tau:
-&\begin{cases}
-\omega &\mapsto \omega
-\\
-\zeta_3 &\mapsto \bar{\zeta_3}.
-\end{cases}
-&&
-\implies \tau \sim (2, 3)
-.\]
-  So $G = \gens{\sigma, \tau \st \sigma^3, \tau^2}$.
+\boxed{\mathbb Q,\quad \mathbb Q(\zeta),\quad
+\mathbb Q(\alpha),\quad \mathbb Q(\zeta\alpha),\quad
+\mathbb Q(\zeta^2\alpha),\quad L}.
+\]
 
-Part c:
+::: {.proof}
+The six subgroups of $S_3$ are the trivial subgroup, $S_3$, the unique subgroup $\langle\sigma\rangle$ of order three, and the three subgroups $\langle\tau\rangle$, $\langle\sigma\tau\rangle$, and $\langle\sigma^2\tau\rangle$ of order two. By the Galois correspondence, their fixed fields have degrees six, one, two, and three, respectively. The subgroup $\langle\sigma\rangle$ fixes $\zeta$, hence fixes the quadratic field $\mathbb Q(\zeta)$, which must be its full fixed field. The subgroup $\langle\tau\rangle$ fixes $\alpha$, $\langle\sigma\tau\rangle$ fixes $\zeta^2\alpha$, and $\langle\sigma^2\tau\rangle$ fixes $\zeta\alpha$, as follows directly from the displayed actions in step <1>2. Each corresponding cubic field has degree three because its generator is a root of the irreducible polynomial $x^3-7$. Together with $L$ and $\mathbb Q$, these exhaust the intermediate fields.
+:::
 
-- Note that the subgroup lattice for $S_3$ looks like the following:
+<1>4. Q.E.D.
 
-
-![](../../assets/figures/2021-08-14_18-00-51.png)
-
-- Note that we can identify
-  - $\tau = (2,3)$ which fixes $r_1$
-  - $\sigma \tau = (1,2)$ which fixes $r_3$
-  - $\sigma^2\tau = (1, 3)$ which fixes $r_2$
-  - $\sigma = (1,2,3)$, for which we need to calculate the fixed field.
-  Using that $\sigma(\omega) =\zeta\omega$ and $\sigma(\zeta)=\zeta$,
-  supposing $\sigma(\alpha) = \alpha$ we have
-  \[
-  \sigma(\alpha) &\da \sigma(a + b\zeta_3 + c\zeta_3^2 + d\omega + e\zeta_3\omega + f\zeta_3^2\omega) \\
-  &= a + b\zeta_3 + c\zeta_3^2 + d\zeta_3\omega + e\zeta_3^2\omega + f\omega \\
-  \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 + t_1(\omega + \zeta_3\omega + \zeta_3^2\omega) \\
-  \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 + t_1\omega (1 + \zeta_3+ \zeta_3^2) \\
-  \implies \alpha &= a + b\zeta_3 + c\zeta_3^2 
-  ,\]
-  using the general fact that $\sum_{k=0}^{n-1}\zeta_n^k = 0$.
-  So the fixed field is $\QQ(1, \zeta, \zeta^2) = \QQ(\zeta)$.
-
-- We thus get the following lattice correspondence:
-
-\begin{tikzcd}
-	&& {\QQ(\zeta_3,\omega)} \\
-	\\
-	{\QQ(\omega) = \QQ(r_1)} & {\QQ(\zeta_3\omega) = \QQ(r_2)} & {\QQ(\zeta_3^2\omega) = \QQ(r_3)} && {\QQ(\zeta_3)} \\
-	\\
-	&& \QQ \\
-	&& 1 \\
-	\\
-	{\gens{(2,3) = \tau} \cong C_2} & {\gens{(1,3) = \sigma^2\tau} \cong C_2} & {\gens{(1,2) = \sigma\tau} \cong C_2} && {\gens{(1,2,3) = \sigma} \cong C_3} \\
-	\\
-	&& {\gens{\sigma, \tau}\cong S_3}
-	\arrow["3"{description}, from=5-3, to=3-1]
-	\arrow["3"{description}, from=5-3, to=3-3]
-	\arrow["2"{description}, from=3-1, to=1-3]
-	\arrow["2"{description}, from=3-2, to=1-3]
-	\arrow["2"{description}, from=3-3, to=1-3]
-	\arrow["2"{description}, from=5-3, to=3-5]
-	\arrow["3"{description}, from=3-5, to=1-3]
-	\arrow["3"{description}, from=5-3, to=3-2]
-	\arrow["2"{description}, from=6-3, to=8-1]
-	\arrow["3"{description}, from=8-1, to=10-3]
-	\arrow["3"{description}, from=8-3, to=10-3]
-	\arrow["2"{description}, from=6-3, to=8-3]
-	\arrow["3"{description}, from=6-3, to=8-5]
-	\arrow["2"{description}, from=8-5, to=10-3]
-	\arrow["3"{description}, from=8-2, to=10-3]
-	\arrow["2"{description}, from=6-3, to=8-2]
-\end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsMTIsWzIsMCwiXFxRUShcXHpldGFfMyxcXG9tZWdhKSJdLFswLDIsIlxcUVEoXFxvbWVnYSkgPSBcXFFRKHJfMSkiXSxbMiwyLCJcXFFRKFxcemV0YV8zXjJcXG9tZWdhKSA9IFxcUVEocl8zKSJdLFsyLDQsIlxcUVEiXSxbMSwyLCJcXFFRKFxcemV0YV8zXFxvbWVnYSkgPSBcXFFRKHJfMikiXSxbNCwyLCJcXFFRKFxcemV0YV8zKSJdLFswLDcsIlxcZ2Vuc3soMiwzKSA9IFxcdGF1fSBcXGNvbmcgQ18yIl0sWzIsOSwiXFxnZW5ze1xcc2lnbWEsIFxcdGF1fVxcY29uZyBTXzMiXSxbMiw1LCIxIl0sWzIsNywiXFxnZW5zeygxLDIpID0gXFxzaWdtYVxcdGF1fSBcXGNvbmcgQ18yIl0sWzQsNywiXFxnZW5zeygxLDIsMykgPSBcXHNpZ21hfSBcXGNvbmcgQ18zIl0sWzEsNywiXFxnZW5zeygxLDMpID0gXFxzaWdtYV4yXFx0YXV9IFxcY29uZyBDXzIiXSxbMywxLCIzIiwxXSxbMywyLCIzIiwxXSxbMSwwLCIyIiwxXSxbNCwwLCIyIiwxXSxbMiwwLCIyIiwxXSxbMyw1LCIyIiwxXSxbNSwwLCIzIiwxXSxbMyw0LCIzIiwxXSxbOCw2LCIyIiwxXSxbNiw3LCIzIiwxXSxbOSw3LCIzIiwxXSxbOCw5LCIyIiwxXSxbOCwxMCwiMyIsMV0sWzEwLDcsIjIiLDFdLFsxMSw3LCIzIiwxXSxbOCwxMSwiMiIsMV1d)
-
-
+::: {.proof}
+Steps <1>1, <1>2, and <1>3 establish parts (a), (b), and (c), respectively.
+:::
 
 :::
 
