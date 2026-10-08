@@ -41,6 +41,12 @@ Write down the minimal polynomial of $A$.
 :::
 
 ::: {.solution}
+<1>1. The characteristic polynomial of $A$ is $(x-2)^3$, while its minimal polynomial is
+\[
+\boxed{m_A(x)=(x-2)^2}.
+\]
+
+::: {.proof}
 The characteristic polynomial is
 \[
 \chi_A(x)=(x-2)^3.
@@ -61,6 +67,15 @@ Thus the minimal polynomial is
 \[
 m_A(x)=(x-2)^2.
 \]
+Since $A-2I\neq0$ but $(A-2I)^2=0$, the minimal polynomial is exactly $(x-2)^2$.
+:::
+
+<1>2. The Jordan canonical form of $A$ is
+\[
+\boxed{J=\begin{pmatrix}2&1&0\\0&2&0\\0&0&2\end{pmatrix}}.
+\]
+
+::: {.proof}
 Consequently the Jordan form has one block of size $2$ and one block of size $1$:
 \[
 J=
@@ -70,7 +85,15 @@ J=
 0&0&2
 \end{bmatrix}.
 \]
+By step <1>1, these are precisely the block sizes compatible with the minimal and characteristic polynomials.
+:::
 
+<1>3. An invertible conjugating matrix is
+\[
+\boxed{P=\begin{pmatrix}0&1&-1\\4&0&1\\-16&0&0\end{pmatrix}}.
+\]
+
+::: {.proof}
 One suitable change-of-basis matrix is
 \[
 P=
@@ -85,4 +108,11 @@ Its determinant is $-16\ne0$, and direct multiplication gives
 AP=PJ,
 \]
 so $P^{-1}AP=J$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>2, <1>3, and <1>1 prove parts (a), (b), and (c), respectively.
+:::
 :::
