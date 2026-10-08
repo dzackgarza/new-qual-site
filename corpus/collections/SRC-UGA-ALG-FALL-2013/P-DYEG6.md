@@ -29,28 +29,42 @@ Give an example of a finite extension $L/K$ that is not separable.
 :::
 
 ::: {.solution}
-\envlist
+<1>1. The extension $L/K$ is separable if every $\alpha\in L$ has a minimal polynomial over $K$ with no repeated roots in an algebraic closure.
 
-- $L/k$ is **separable** iff every element $\alpha$ is separable, i.e. the minimal polynomial $m(x)$ of $\alpha$ is a separable polynomial, i.e. $m(x)$ has no repeated roots in (say) the algebraic closure of $L$ (or just any splitting field of $m$).
-
-- If $\ch k = p$, suppose toward a contradiction that $L/k$ is not separable.
-  Then there is some $\alpha$ with an inseparable (and irreducible) minimal polynomial $f(x)\in k[x]$.
-- Claim: since $f$ is inseparable and irreducible, $f(x) = g(x^p)$ for some $g\in k[x]$.
-  - Note: write $g(x) \da \sum a_k x^k$, so that $f(x) = \sum a_k (x^p)^k = \sum a_k x^{pk}$.
-- This is a contradiction, since it makes $f$ reducible by using the "Freshman's dream":
-\[
-f(x) = \sum a_k x^{pk} = \qty{ \sum a_k^{1\over p} x^k}^p \da (h(x))^p 
-.\]
-
-- Proof of claim: in $\ch k = p, f$ inseparable $\implies f(x) = g(x^p)$. 
-  - Use that $f$ is inseparable iff $\gcd(f, f') \neq 1$, and since $f$ is irreducible this forces $f' \equiv 0$, so $ka_k = 0$ for all $k$.
-  - Then $a_k\neq 0$ forces $p\divides k$, so $f(x) = a_0 + a_px^p + a_{2p}x^{2p} + \cdots$ and one takes $g(x) \da \sum a_{kp}x^{kp}$.
-
-- A finite inseparable extension:
-  - It's a theorem that finite extensions of perfect fields are separable, so one needs a non-perfect field.
-  - Take $L/k \da \FF_p(t^{1\over p}) / \FF_p(t)$, which is a degree $p$ extension (although both fields are infinite are characteristic $p$).
-  - Then the minimal polynomial of $t$ is $f(x) \da x^p - t \in \FF_p(t)[x]$, where $f'(x) = px^p \equiv 0$
-    Alternatively, just note that $f$ factors as $f(x) = (x-t^{1\over p})^p$ in $L[x]$, which has multiple roots.
+::: {.proof}
+This is the definition of a separable algebraic field extension.
 :::
 
+<1>2. Every finite extension of a finite field is separable.
+
+::: {.proof}
+Let $K=\mathbb F_q$ with $q=p^e$. The Frobenius map $a\mapsto a^p$ is injective on the finite field $K$ and hence surjective. Thus every coefficient in $K$ has a $p$-th root in $K$.
+
+Suppose an element of a finite extension had an inseparable irreducible minimal polynomial $f\in K[x]$. Since $f$ is irreducible and $\gcd(f,f')\neq1$, one has $f'=0$. Therefore all exponents appearing in $f$ are divisible by $p$, and $f(x)=\sum_j a_jx^{pj}$. Choosing $b_j\in K$ with $b_j^p=a_j$ gives
+\[
+f(x)=\left(\sum_j b_jx^j\right)^p,
+\]
+contradicting irreducibility of the nonconstant polynomial $f$. Hence every element of the extension is separable.
+:::
+
+<1>3. For any prime $p$, the finite extension
+\[
+\boxed{\mathbb F_p(t^{1/p})/\mathbb F_p(t)}
+\]
+is not separable.
+
+::: {.proof}
+Let $K=\mathbb F_p(t)$, with $t$ transcendental, and choose $\alpha$ satisfying $\alpha^p=t$. The polynomial $x^p-t\in K[x]$ is irreducible: viewed in $\mathbb F_p[t][x]$, it is Eisenstein at the prime element $t$, and Gauss's lemma gives irreducibility over $K$. Consequently $[K(\alpha):K]=p$. But
+\[
+x^p-t=(x-\alpha)^p
+\]
+over $K(\alpha)$, so its only root has multiplicity $p$. Thus $\alpha$ is inseparable over $K$, and the extension is not separable.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>2, and <1>3 respectively establish parts (a), (b), and (c).
+:::
+:::
 
