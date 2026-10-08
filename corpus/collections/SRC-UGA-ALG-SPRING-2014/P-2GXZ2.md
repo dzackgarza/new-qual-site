@@ -23,20 +23,30 @@ Prove that $a$ is not nilpotent $\iff$ there exists a commutative ring $S$ and a
 :::
 
 ::: {.solution}
-$\not A\implies \not B$:
+<1>1. As printed, the equivalence fails if the zero ring is permitted as $S$.
 
-- Suppose $a$ is nilpotent, so $a^m = 0_R$, and suppose $\phi: R\to S$ is a ring morphism.
+::: {.proof}
+The unique homomorphism $R\to0$ sends every $a\in R$ to $0=1$, which is a unit of the zero ring. For example, $a=0\in\mathbb Z$ is nilpotent but satisfies the stated existence condition with $S=0$. The equivalence therefore requires $S$ to be a nonzero ring.
+:::
 
-- Ring morphisms send zero to zero, so $0_S = \phi(0_R) = \phi(a^m) = \phi(a)^m$ and $\phi(a)$ is nilpotent.
+<1>2. If $a$ is nilpotent, its image under no ring homomorphism to a nonzero ring is invertible.
 
-- But nontrivial rings can't contain nilpotent units: if $u$ is a unit and $ut= 1$ with $u^k=0$, then $1 = 1^k = (ut)^k = u^k t^k=0$ and $R=0$.
+::: {.proof}
+If $a^m=0$ and $\phi:R\to S$ is a homomorphism, then $\phi(a)^m=0$. If $\phi(a)$ were a unit, multiplying by its inverse power would give $1_S=0_S$, contradicting $S\neq0$.
+:::
 
-$A\implies B$:
+<1>3. If $a$ is not nilpotent, there exists a homomorphism to a nonzero commutative ring in which its image is a unit:
+\[
+\boxed{\phi:R\longrightarrow R[a^{-1}]}.
+\]
 
-- If $a$ is not nilpotent, localize at the infinite multiplicative subset $A \da \ts{1, a, a^2, \cdots}$ to obtain $R\localize{A}$.
-  Since $0\not\in A$, this is not the zero ring.
+::: {.proof}
+Set $T=\{1,a,a^2,\ldots\}$. The hypothesis implies $0\notin T$. Hence the localization $R[T^{-1}]$ is nonzero: if $1/1=0/1$, the localization equality criterion would give some $t\in T$ with $t=0$. The canonical homomorphism $\phi:R\to R[T^{-1}]$ sends $a$ to $a/1$, whose inverse is $1/a$. This provides the required ring $S=R[T^{-1}]$.
+:::
 
-- By the universal property, there is a map $\phi: R\to R\localize{A}$, and the claim is that $\phi(a)$ is a unit in $R\localize{A}$.
+<1>4. Q.E.D.
 
-- More directly, $R\localize{A} = \ts{ [p/q] \st p\in R,\, q\in A }$ and $\phi(a) = [a/1]$, whose inverse is $[1/a]$: the product is $[a/a] = [1/1] = 1$.
+::: {.proof}
+Step <1>1 identifies the necessary nonzero-ring hypothesis. Under that hypothesis, steps <1>2 and <1>3 prove the two directions of the equivalence.
+:::
 :::
