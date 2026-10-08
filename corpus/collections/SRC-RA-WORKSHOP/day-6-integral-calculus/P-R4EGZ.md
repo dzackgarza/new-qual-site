@@ -23,12 +23,25 @@ If $f(0)>0$, prove that $\int_0^1 f(x)dx>0$.
 :::
 ::: {.solution}
 <1>1. Since $f(0) > 0$ and $f$ is continuous, there is $\delta \in (0,1)$ with $f(x) > f(0)/2$ for all $x \in [0,\delta]$.
+
 ::: {.proof}
-continuity at $0$ with $\eps = f(0)/2 > 0$ gives $|f(x) - f(0)| < f(0)/2$ for $|x| < \delta$, hence $f(x) > f(0) - f(0)/2 = f(0)/2$.
+Continuity at $0$ with $\varepsilon=f(0)/2>0$ supplies $\eta>0$ such that $|f(x)-f(0)|<f(0)/2$ whenever $x\in[0,1]$ and $|x|<\eta$. Choose $0<\delta<\min\{1,\eta\}$. For every $x\in[0,\delta]$, one has $f(x)>f(0)/2$.
 :::
-<1>2. $\int_0^1 f \ge \int_0^\delta f \ge \delta \cdot f(0)/2 > 0$.
+
+<1>2. The integral satisfies $\boxed{\int_0^1 f(x)\,dx>0}$.
+
 ::: {.proof}
-$f \ge 0$ on $[0,1]$ gives $\int_0^1 f \ge \int_0^\delta f$; and on $[0,\delta]$, $f \ge f(0)/2$ by <1>1, so $\int_0^\delta f \ge \delta f(0)/2 > 0$.
+Continuity guarantees Riemann integrability. Nonnegativity of $f$ on $[0,1]$ and the lower bound from step <1>1 give
+\[
+\int_0^1 f(x)\,dx\geq\int_0^\delta f(x)\,dx
+\geq\int_0^\delta\frac{f(0)}2\,dx
+=\frac{\delta f(0)}2>0.
+\]
 :::
+
 <1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves the assertion.
+:::
 :::
