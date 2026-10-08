@@ -21,45 +21,46 @@ audit:
 Determine the values of $x\in\mathbb{R}$ for which $\displaystyle\sum_{n=1}^\infty \frac{x^n}{1+n|x|^n}$ converges, justifying your answer carefully.
 :::
 ::: {.solution}
-<1>1. For $|x| < 1$: the series converges absolutely.
+<1>1. If $|x|<1$, the series converges absolutely.
+
 ::: {.proof}
-$\left|\dfrac{x^n}{1 + n|x|^n}\right| \le |x|^n$ (denominator $\ge 1$), and $\sum |x|^n$ is a convergent geometric series.
+For every $n\geq1$,
+\[
+\left|\frac{x^n}{1+n|x|^n}\right|\leq |x|^n.
+\]
+The geometric series $\sum_{n\geq1}|x|^n$ converges, so comparison gives absolute convergence.
 :::
 
-<1>2. At $x = 1$: the series diverges to $+\infty$.
+<1>2. If $x\geq1$, the series diverges to $+\infty$.
+
 ::: {.proof}
-every term is positive and $\dfrac{1}{1+n} \ge \dfrac{1}{2n}$, so the series dominates a divergent harmonic tail.
+Since $0<x^{-n}\leq1$,
+\[
+\frac{x^n}{1+nx^n}=\frac1{n+x^{-n}}\geq\frac1{n+1}.
+\]
+The harmonic comparison series diverges, and all terms are nonnegative.
 :::
 
-<1>3. At $x = -1$: the series converges.
+<1>3. If $x\leq-1$, the series converges conditionally.
+
 ::: {.proof}
-$\sum \dfrac{(-1)^n}{1+n}$ is an alternating series whose terms decrease to $0$; Leibniz's test applies.
+Put $r=|x|\geq1$ and $c_n=1/(n+r^{-n})$. The summand is $(-1)^nc_n$. Moreover
+\[
+(n+1+r^{-(n+1)})-(n+r^{-n})
+=1-r^{-n}(1-r^{-1})>0.
+\]
+Thus $(c_n)$ decreases strictly, and $0<c_n\leq1/n$ gives $c_n\to0$. The alternating-series test proves convergence. Since $r^{-n}\leq1$, however, $c_n\geq1/(n+1)$, so the series of absolute values diverges by harmonic comparison.
 :::
 
-<1>4. For $x > 1$: the series diverges to $+\infty$.
+<1>4. The convergence set is $\boxed{(-\infty,1)}$, with absolute convergence precisely when $|x|<1$.
+
 ::: {.proof}
-every term is positive and $\dfrac{x^n}{1 + nx^n} = \dfrac{1}{n + x^{-n}} \ge \dfrac{1}{n+1}$, so the series dominates $\sum \dfrac{1}{n+1} = \infty$.
+Steps <1>1–<1>3 cover every real value of $x$ and establish the asserted classifications.
 :::
 
-<1>5. For $x < -1$: the series converges (conditionally).
-<2>1. Write the terms as $(-1)^n a_n$ with $a_n = \dfrac{|x|^n}{1 + n|x|^n} = \dfrac{1}{n + |x|^{-n}}$.
-::: {.proof}
-$x^n = (-1)^n|x|^n$; divide numerator and denominator by $|x|^n$.
-:::
-<2>2. $a_n \downarrow 0$.
-::: {.proof}
-$n + |x|^{-n} \uparrow \infty$; the increment $\big((n+1) + |x|^{-(n+1)}\big) - \big(n + |x|^{-n}\big) = 1 - |x|^{-n}(1 - 1/|x|) > 0$ since $|x|^{-n}(1 - 1/|x|) < 1$ for $|x| > 1$.
-:::
-<2>3. $\sum (-1)^n a_n$ converges.
-::: {.proof}
-alternating series test with <2>2. <2>4. The convergence is not absolute.
-:::
-::: {.proof}
-$a_n \ge \dfrac{1}{n+1}$ (by <2>1), so $\sum a_n$ diverges.
-:::
+<1>5. Q.E.D.
 
-<1>6. Q.E.D.: the series converges for $x \in (-\infty, 1)$ — absolutely for $|x| < 1$, conditionally for $x \le -1$ — and diverges for $x \ge 1$.
 ::: {.proof}
-<1>1–<1>5 cover all real $x$.
+Step <1>4 gives the complete convergence classification.
 :::
 :::
