@@ -33,9 +33,7 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove Cayley's embedding in (a), determine the parity of left translation permutations in (b), and construct an index-2 normal subgroup via the sign homomorphism to prove nonsimplicity in (c).
-
-<1>1. Part (a): Cayley map is an injective group homomorphism.
+<1>1. The Cayley map $C:G\to\operatorname{Sym}(G)$ is an injective group homomorphism.
 ::: {.proof}
     <2>1. Homomorphism property:
         - For any $g, h \in G$ and all $x \in G$:
@@ -49,7 +47,11 @@ $$
 
 :::
 
-<1>2. Part (b): $\varepsilon(a) = -1 \iff d$ is even and $N/d$ is odd.
+<1>2. For $a$ of order $d$, one has
+\[
+\boxed{\varepsilon(a)=(-1)^{(N/d)(d-1)}}.
+\]
+In particular, $\varepsilon(a)=-1$ if and only if $d$ is even and $N/d$ is odd.
 ::: {.proof}
     <2>1. Let $a \in G$ have order $d = \operatorname{ord}(a)$.
     <2>2. The cyclic group $\langle a \rangle \le G$ has order $d$.
@@ -64,7 +66,7 @@ $$
 
 :::
 
-<1>3. Part (c): $G$ is not simple when $N > 2$ and $N \equiv 2 \pmod 4$.
+<1>3. If $N>2$ and $N\equiv2\pmod4$, then $G$ is not simple.
 ::: {.proof}
     <2>1. Since $N \equiv 2 \pmod 4$, $2 \mid N$ and $N/2$ is an odd integer.
     <2>2. By Cauchy's Theorem for finite groups, since $2 \mid |G| = N$, $G$ contains an element $g \in G$ of order $d = 2$.
@@ -80,9 +82,8 @@ $$
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    $C$ is injective, $\varepsilon(a) = (-1)^{\frac{N}{d}(d-1)}$, and the kernel of $\varepsilon$ provides an index 2 normal subgroup when $N \equiv 2 \pmod 4$ and $N > 2$.
+Steps <1>1, <1>2, and <1>3 establish parts (a), (b), and (c), respectively.
 :::
 :::
-
