@@ -25,121 +25,60 @@ Suppose $n \geq 2$. Use a wedge of angle $\frac{2 \pi}{n}$ to evaluate the integ
 The current Quals `.docx` writes the OMML limits as $-\infty$ to $\infty$ (Word’s default nary limits). That integral has a pole on the real axis when $n$ is odd, and the same sentence asks for a wedge of angle $2\pi/n$, which evaluates the integral from $0$ to $\infty$. The exam as transcribed in `2021_Fall.md.source`, and the existing solutions, are $\int_0^\infty$.
 :::
 
-::: {.solution title="Newer, sketch"}
-By the ML estimate, $\int_{C_R} f \to 0$.
+::: {.solution}
+Set $f(z)=1/(1+z^n)$, $\zeta=e^{2\pi i/n}$, and $\omega=e^{\pi i/n}$. For $R>1$, let $\Gamma_R$ be the positively oriented boundary of the sector $0\leq\arg z\leq2\pi/n$, $|z|\leq R$: the segments $[0,R]$ and $[R\zeta,0]$, joined by the counterclockwise arc $Re^{it}$, $0\leq t\leq2\pi/n$.
 
-The residue contribution: note the simple pole at $\omega_n \da e^{i\pi \over n}$,
+<1>1. The only pole of $f$ inside $\Gamma_R$ is $\omega$, and
 \[
-\Res_{z=\omega_n} f(z) = {1\over n\omega_n^{n-1}} = {\omega \over n\omega^n} = -{\omega_n \over n}
-.\]
+\operatorname{Res}_{z=\omega}f(z)=-\frac{\omega}{n}.
+\]
 
-The segment contributions: $\int_{\gamma_1}f\to I$, and
+::: {.proof}
+The roots of $1+z^n$ are $e^{(2k+1)\pi i/n}$ for $0\leq k<n$, all simple. Exactly one has argument strictly between $0$ and $2\pi/n$, namely $\omega$. Because $\omega^n=-1$, the simple-pole formula gives
 \[
-\int_{\gamma_2}f(z) \dz = \int_\infty^0 {1\over 1 + (\zeta_nt)^n} \zeta_n \dt = -\zeta_n I
-,\]
-so the contour contributions sum to $(1-\zeta_n)I$.
-
-Solving:
-\[
-I 
-= -{2\pi i \omega_n\over n(1-\zeta_n)} 
-= -2\pi i {1\over \omega_n\inv - \omega_n} 
-= -2\pi i {1\over 2i \sin\qty{\pi \over n}} 
-= {\pi \over n} \csc\qty{\pi \over n}
-.\]
+\operatorname{Res}_{z=\omega}f(z)
+=\frac1{n\omega^{n-1}}=-\frac{\omega}{n}.
+\]
 :::
 
-::: {.solution title="Older, detailed"}
-Write $\omega_{n, k} = \exp\qty{(2k+1)i\pi \over n}$ and factor $z^n+1$ as 
+<1>2. The integral over the circular arc of $\Gamma_R$ tends to zero as $R\to\infty$.
+
+::: {.proof}
+On the arc, $|1+z^n|\geq R^n-1$, while the arc length is $2\pi R/n$. Thus
 \[
-z^n+1  = \prod_{1\leq k \leq n}(z-\omega_{n, k}) = 
-(z-e^{i\pi \over n})(z-e^{3i\pi \over n})
-\cdots (z-e^{(2n-1)i\pi \over n})
-.\]
-Note that only the root $e^{i\pi\over n}$ lies in the $2\pi/n$ wedge, so it is the only (simple) pole of $f(z) \da {1\over 1+z^n}$ in this region.
-Since the pole is simple, the residue is computed by the simple-pole formula $\Res_{z=r_0} f = \lim_{z \to r_0} (z - r_0) f(z)$.
-Write $r_0 \da e^{i\pi\over n}$, then by L'Hôpital,
-\[
-\Res_{z = r_0} {1\over 1+z^n}
-&= \lim_{z\to r_0} {z-r_0 \over 1 + z^n} \\
-&= \lim_{z\to r_0} {1\over nz^{n-1}} \\
-&= {1\over nr_0^{n-1}} \\
-&= {1\over n e^{i\pi (n-1) \over n}} \\
-&= n\inv {\exp\qty{-i\pi (n-1)\over n }}
-.\]
-
-Take a contour $\Gamma$ comprised of
-
-- $\gamma_1 = [0, R] \subseteq \RR$
-- $\gamma_2 = \ts{Re^{it} \st t\in [0, 2\pi/n]}$
-- $\gamma_3 = \zeta_n [0, R]$
-
-By the residue theorem
-\[
-2\pi i \Res_{z=r_0} f(z) = I \da \int_\Gamma f = \qty{\int_{\gamma_1} + \int_{\gamma_2} + \int_{\gamma_3}}f
-.\]
-
-
-::: {.claim}
-Taking orientations into account,
-\[
-\int_{\gamma_3} f = -\zeta_n \int_{\gamma_1} f
-.\]
+\left|\int_{\mathrm{arc}}f(z)\,dz\right|
+\leq\frac{2\pi R}{n(R^n-1)}\longrightarrow0
+\]
+because $n\geq2$.
 :::
 
-::: {.claim}
+<1>3. The integral is
 \[
-\int_{\gamma_2}f\convergesto{R\to\infty}0
-.\]
+\boxed{I=\frac{\pi}{n\sin(\pi/n)}}.
+\]
+
+::: {.proof}
+Write $I_R=\int_0^R(1+x^n)^{-1}\,dx$. The outgoing radial segment contributes $I_R$. Parameterizing the return segment by $z=\zeta t$ with $t$ decreasing from $R$ to $0$, and using $\zeta^n=1$, shows that its contribution is $-\zeta I_R$. The residue theorem and step <1>1 therefore give
+\[
+(1-\zeta)I_R+\int_{\mathrm{arc}}f(z)\,dz
+=-\frac{2\pi i\omega}{n}.
+\]
+The improper integral converges, since $0<(1+x^n)^{-1}\leq x^{-n}$ for $x\geq1$. Letting $R\to\infty$ and applying step <1>2 yields
+\[
+I=-\frac{2\pi i\omega}{n(1-\zeta)}.
+\]
+Finally,
+\[
+1-\zeta
+=e^{\pi i/n}\bigl(e^{-\pi i/n}-e^{\pi i/n}\bigr)
+=-2i\omega\sin(\pi/n),
+\]
+which gives the claimed value.
 :::
 
+<1>4. Q.E.D.
 
-
-so in the limit we have
-\[
-2\pi i \Res_{z=r_0}f(z)  &= \qty{1 - \zeta_n}\int_{\gamma_1}f \\
-\implies \int_{\gamma_1} f 
-&= {2\pi i \Res_{z=r_0}f(z) \over 1 - \zeta_n}\\
-&= {2\pi i e^{-\pi (n-1) \over n} \over n\qty{1-e^{2\pi i \over n}}} \\
-&= {2\pi i \over n}
-\left[
-e^{i\pi} e^{-i\pi \over n}\qty{1 - e^{2\pi i \over n}}
-\right]\inv \\
-&= {2\pi i \over n}
-\left[
--1\qty{e^{-i\pi \over n} - e^{\pi i \over n}}
-\right]\inv\\
-&= {2\pi i \over n}
-\left[
-2i \sin\qty{\pi\over n}
-\right]\inv \\
-&= {\pi \over n\sin\qty{\pi \over n}}
-.\]
-
-::: {.proof title="of claim 1"}
-Parameterize the curves:
-
-- $\gamma_1 \da \ts{t \st t\in [0, R]}, \dz = \dt$
-- $\gamma_3 \da \ts{t\zeta_n \st t\in [0, R]}, \dz = \zeta_n \dt$
-
-Then, a direct check:
-\[
-\int_{\gamma_3}f(z) \dz 
-&= \int_0^R {1\over 1 + (\zeta_n t)^n}\zeta_n \dt \\
-&= \zeta_n\int_0^R {1\over 1 + t^n}\dt \\
-&= \zeta_n \int_{\gamma_1}f(z) \dz
-.\]
-
-
+::: {.proof}
+Step <1>3 evaluates the requested integral.
 :::
-
-::: {.proof title="of claim 2"}
-Parameterize $\gamma_2 = \ts{Re^{it} \st t\in [0, 2\pi/n]}$ and apply the ML estimate:
-\[
-{1\over 1 + (Re^{it})^n} \leq {1\over R^n - 1} \implies \int_{\gamma_2}f \leq {1\over R^n - 1} \qty{{2\pi R \over n}} = \bigo(R^{n-1})\convergesto{R\to\infty}0
-.\]
-
 :::
-
-:::
-
