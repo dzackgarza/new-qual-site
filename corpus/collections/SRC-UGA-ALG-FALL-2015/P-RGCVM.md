@@ -93,4 +93,10 @@ However, their Jordan block multisets are different: $A$ has type $(2,2)$ while 
 
 Thus the conclusion of part (a) fails in dimension $4$.
 :::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves part (a), and step <1>5 supplies the counterexample required for part (b).
+:::
 :::
