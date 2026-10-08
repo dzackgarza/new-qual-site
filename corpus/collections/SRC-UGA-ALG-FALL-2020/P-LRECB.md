@@ -48,49 +48,46 @@ N_G(P) = \ts{g\in G \st gPg\inv = P}
 :::
 
 ::: {.solution}
-\envlist
+<1>1. The field degree satisfies $[E:F]=[G:H]$.
 
-- Reduce to a group theory problem: $[E:F] = [G:H]$, despite the fact that $E/F$ is not necessarily Galois.
-  This is because we can count in towers:
-  \[
-  [K:F] = [K:E][E:F] &\implies [G:1] = [K:E][H:1] \\
-  &\implies \size G = [K:E] \size H \\
-  &\implies [G:H] = {\size G \over \size H} = [K:E]
-  .\]
-
-- Essential fact: if $P \in \Syl_p(G)$, we can use that $P \subseteq N_G(P) \subset H$ and so $P\in \Syl_p(H)$ as well.
-- Now use that $N_G(P) \subseteq H$, and do Sylow theory for $P$ in both $G$ and $H$:
-  - Sylow 3 on $G$ yields $n_p(G) = [G: N_G(P)] \equiv 1 \mod p$.
-  - Sylow 3 on $H$ yields $n_p(H) = [G: N_H(P)] \equiv 1 \mod p$.
-- Claim: $N_H(P) = N_G(P)$.
-  - We have $N_H(P) \subseteq N_G(P)$ since $H \subseteq G$, so $hPh\inv = P$ remains true regarding either $h\in H$ or $h\in G$.
-  - For $N_G(P) \subseteq N_H(P)$, use that $N_G(P) \subseteq H$ and so $gPg\inv = P$ implies $g\in H$, so $g\in N_H(P)$.
-
-- Now morally one might want to apply an isomorphism theorem:
+::: {.proof}
+Since $K/F$ is finite Galois and $H=\operatorname{Gal}(K/E)$, the Galois correspondence gives $[K:F]=|G|$ and $[K:E]=|H|$. The tower law therefore gives
 \[
-{G/ N_G(P) \over H/N_H(P)}=
-{G/ N_H(P) \over H/N_H(P)}\cong
-{G\over H}
-,\]
-  but we don't have normality.
-  However, we can still get away with the corresponding counting argument if everything is finite:
-  \[
-  {[G: N_G(P)] \over [H:N_H(P)] }=
-  {[G: N_H(P)] \over [H:N_H(P)] }=
-  {\size G / \size N_H(P) \over \size H / \size N_H(P)}
-  = {\size G \over \size H} 
-  = [G: H]
-  .\]
-
-- We have an equation of the form $n_p(G)/n_p(H) = m$, and we want to show $m\equiv 1 \mod p$.
-  So write
-  \[
-  {n_p(G) \over n_p(H) } 
-  = m \implies m n_p(H) &= n_p(G) \\
-  \implies m n_p(H) &\equiv n_p(G) \mod p \\
-  \implies m\cdot 1 &\equiv 1 \mod p \\
-  \implies m &\equiv 1 \mod p
-  .\]
-
+[E:F]=\frac{[K:F]}{[K:E]}=\frac{|G|}{|H|}=[G:H].
+\]
 :::
 
+<1>2. The Sylow counts satisfy
+\[
+n_p(G)=[G:N_G(P)],\qquad
+n_p(H)=[H:N_G(P)].
+\]
+
+::: {.proof}
+The inclusions $P\subseteq N_G(P)\subseteq H$ imply that $P$ is a Sylow $p$-subgroup of $H$, since it already has the largest possible $p$-power order in $G$. Moreover,
+\[
+N_H(P)=H\cap N_G(P)=N_G(P).
+\]
+The Sylow conjugacy theorem identifies the numbers of Sylow $p$-subgroups with their normalizer indices, giving the formulas.
+:::
+
+<1>3. The field degree obeys
+\[
+\boxed{[E:F]\equiv1\pmod p}.
+\]
+
+::: {.proof}
+By multiplicativity of subgroup indices and step <1>2,
+\[
+n_p(G)=[G:H][H:N_G(P)]=[G:H]n_p(H).
+\]
+Sylow's theorems give $n_p(G)\equiv n_p(H)\equiv1\pmod p$. Reducing the equality modulo $p$ therefore yields $1\equiv[G:H]\pmod p$. Substitute $[E:F]=[G:H]$ from step <1>1.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the required congruence.
+:::
+
+:::
