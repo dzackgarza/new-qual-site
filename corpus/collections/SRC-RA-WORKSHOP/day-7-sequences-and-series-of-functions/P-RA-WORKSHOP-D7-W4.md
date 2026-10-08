@@ -24,22 +24,42 @@ Is the convergence of $f_n$ to $f$ uniform?
 ([KRD10, 8.6.A]) Why is $$B=\{f\in C([0,1]):\|f\|_\infty\le1\}$$ not compact?
 :::
 
-:::: {.solution}
-**Goal:** (1) Find the pointwise limit of $f_n(x) = x^n$ on $[0,1]$; (2) decide uniformity; (3) explain why $B = \{f \in C[0,1] : \|f\|_\infty \le 1\}$ is not compact.
+::: {.solution}
+<1>1. The pointwise limit is
+\[
+\boxed{f(x)=\begin{cases}0,&0\leq x<1,\\1,&x=1.\end{cases}}
+\]
 
-<1>1. The pointwise limit is $f(x) = 0$ for $0 \le x < 1$ and $f(1) = 1$.
-Proof: for $0 \le x < 1$, $x^n \to 0$; at $x = 1$, $x^n = 1$ for all $n$.
+::: {.proof}
+For each fixed $x\in[0,1)$, the geometric sequence $x^n$ tends to zero. At $x=1$, one has $x^n=1$ for every positive integer $n$.
+:::
 
-<1>2. The convergence is not uniform on $[0,1]$.
-<2>1. Each $f_n$ is continuous.
-<2>2. $f$ is discontinuous at $1$: $\lim_{x \to 1^-} f(x) = 0 \neq 1 = f(1)$.
-Proof: by <1>1. <2>3. If $f_n \to f$ uniformly, $f$ would be continuous.
-Proof: uniform limits of continuous functions are continuous (e.g. Theorem 6.1 / D7-W3). <2>4. Q.E.D. Proof: <2>2 contradicts <2>3. Alternatively: $\|f_n - f\|_\infty = \sup_{x \in [0,1)}x^n = 1 \not\to 0$ — the sup is approached as $x \to 1^-$.
+<1>2. The convergence $f_n\to f$ is not uniform on $[0,1]$.
 
-<1>3. $B = \{f \in C[0,1] : \|f\|_\infty \le 1\}$ is not compact.
-<2>1. $f_n(x) = x^n$ is a sequence in $B$ with no uniformly convergent subsequence.
-Proof: every subsequence $f_{n_k}$ converges pointwise to the same discontinuous $f$ of <1>1; if some subsequence converged uniformly, its uniform limit (necessarily $f$, by uniqueness of pointwise limits) would be continuous, contradiction.
-<2>2. In a compact metric space every sequence has a convergent subsequence.
-Proof: sequential compactness, equivalent to compactness for metric spaces.
-<2>3. Q.E.D. Proof: <2>1 gives a sequence in $B$ without a convergent subsequence, so $B$ is not compact by <2>2. (Intuitively: $B$ is closed and bounded but not equicontinuous, so Arzelà–Ascoli fails.)
+::: {.proof}
+For every positive integer $n$, step <1>1 gives
+\[
+\|f_n-f\|_\infty
+=\sup_{0\leq x<1}x^n=1.
+\]
+Indeed $x^n<1$ for $x<1$, while $x^n\to1$ as $x\to1^-$ for fixed $n$. Thus the supremum norms do not tend to zero.
+:::
+
+<1>3. The sequence $(f_n)$ in $B$ has no subsequence converging in the supremum norm.
+
+::: {.proof}
+Each $f_n$ is continuous with $\|f_n\|_\infty=1$, so $f_n\in B$. Every subsequence $(f_{n_k})$ converges pointwise to the function $f$ from step <1>1, since $n_k\to\infty$. If a subsequence converged in supremum norm to a function $g\in C([0,1])$, then it would converge pointwise to $g$, forcing $g=f$. But $f$ is discontinuous at $1$, contradicting continuity of $g$.
+:::
+
+<1>4. The set $B$ is not compact in the supremum-norm topology.
+
+::: {.proof}
+The supremum norm makes $C([0,1])$ a metric space. Compact metric spaces are sequentially compact, whereas step <1>3 supplies a sequence in $B$ without a convergent subsequence in $B$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 identifies the pointwise limit, step <1>2 rules out uniform convergence, and step <1>4 establishes noncompactness of $B$.
+:::
 :::
