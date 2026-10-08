@@ -27,9 +27,7 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 :::
 
 ::: {.solution}
-**Goal:** Classify abelian groups of order 36, prove that non-abelian groups with normal Sylow 2-subgroups admit an $A_4$ quotient, prove direct product decomposition, and exhibit $D_{18}$ as a non-abelian counterexample to Sylow 2 normality.
-
-<1>1. Part (a): Classification of abelian groups of order 36.
+<1>1. There are four abelian groups of order $36$, up to isomorphism, represented by $C_{36}$, $C_2\times C_{18}$, $C_3\times C_{12}$, and $C_6\times C_6$.
 ::: {.proof}
     <2>1. The prime factorization of 36 is $36 = 2^2 \cdot 3^2$.
     <2>2. By the Fundamental Theorem of Finitely Generated Abelian Groups, any finite abelian group is isomorphic to a direct product of cyclic groups of prime power orders.
@@ -44,7 +42,7 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 
 :::
 
-<1>2. Part (b): If $P \in \operatorname{Syl}_2(G)$ is normal, then $G/N \cong A_4$ for some normal subgroup $N \trianglelefteq G$.
+<1>2. If $G$ is nonabelian with a normal Sylow $2$-subgroup, there exists a normal subgroup $N$ of order three such that $G/N\cong A_4$.
 ::: {.proof}
     <2>1. Let $P \in \operatorname{Syl}_2(G)$ with $|P| = 4$ and $P \trianglelefteq G$.
     <2>2. Number of Sylow 3-subgroups: By Sylow's Theorems, $n_3 \equiv 1 \pmod 3$ and $n_3 \mid 4$, so $n_3 \in \{1, 4\}$.
@@ -70,7 +68,7 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 
 :::
 
-<1>3. Part (c): Direct product decomposition $G \cong N \times H$.
+<1>3. If $N\trianglelefteq G$, $G/N\cong A_4$, and $H\leq G$ with $H\cong A_4$, then $G\cong N\times H$.
 ::: {.proof}
     <2>1. We are given $N \trianglelefteq G$ with $G/N \cong A_4$ ($|N| = 3$) and $H \le G$ with $H \cong A_4$ ($|H| = 12$).
     <2>2. Trivial intersection $N \cap H = \{e\}$:
@@ -90,7 +88,7 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 
 :::
 
-<1>4. Part (d): $D_{18}$ is non-abelian of order 36 with non-normal Sylow 2-subgroups.
+<1>4. The dihedral group $D_{18}$ has order $36$, is nonabelian, and has a nonnormal Sylow $2$-subgroup.
 ::: {.proof}
     <2>1. The dihedral group of order 36 has presentation:
     $$D_{18} = \langle r, s \mid r^{18} = 1, s^2 = 1, s r s = r^{-1} \rangle.$$
@@ -104,8 +102,8 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 
 :::
 
-<1>5. Conclusion:
+<1>5. Q.E.D.
 ::: {.proof}
-    Abelian groups of order 36 are classified by integer partitions, normal Sylow 2-subgroups yield an $A_4$ quotient via conjugation on $\operatorname{Syl}_3(G)$, subgroups isomorphic to $A_4$ decompose $G$ as a direct product $\mathbb{Z}/3\mathbb{Z} \times A_4$, and $D_{18}$ has non-normal Sylow 2-subgroups.
+Steps <1>1--<1>4 prove parts (a)--(d), respectively.
 :::
 :::
