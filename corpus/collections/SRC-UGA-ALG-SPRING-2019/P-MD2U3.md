@@ -19,9 +19,7 @@ How many isomorphism classes of groups of order 45 are there? Describe a represe
 :::
 
 ::: {.solution}
-**Goal:** Classify all groups of order $45 = 3^2 \cdot 5$ up to isomorphism using Sylow's Theorems.
-
-<1>1. Sylow subgroup analysis:
+<1>1. Every group $G$ of order $45$ has unique (hence normal) Sylow $3$- and $5$-subgroups $P$ and $Q$.
 ::: {.proof}
     <2>1. The prime factorization of the group order is $|G| = 45 = 3^2 \cdot 5$.
     <2>2. Sylow 5-subgroups: Let $n_5$ denote the number of Sylow 5-subgroups of $G$. By the Sylow Theorems, $n_5 \equiv 1 \pmod 5$ and $n_5 \mid 3^2 = 9$. The divisors of 9 are $\{1, 3, 9\}$, and only $1 \equiv 1 \pmod 5$. Thus $n_5 = 1$.
@@ -30,7 +28,7 @@ How many isomorphism classes of groups of order 45 are there? Describe a represe
 
 :::
 
-<1>2. Direct product decomposition $G \cong P \times Q$:
+<1>2. Every such group decomposes as $G\cong P\times Q$.
 ::: {.proof}
     <2>1. Coprime intersection: By Lagrange's Theorem, $|P \cap Q|$ divides both $|P| = 9$ and $|Q| = 5$. Since $\gcd(9, 5) = 1$, $P \cap Q = \{e\}$.
     <2>2. Group order: Since both $P$ and $Q$ are normal in $G$, the set product $P Q$ is a subgroup of $G$ with cardinality
@@ -40,7 +38,7 @@ How many isomorphism classes of groups of order 45 are there? Describe a represe
 
 :::
 
-<1>3. Classification of $P$ and $Q$:
+<1>3. The subgroup $Q$ is cyclic of order five, and $P$ is either cyclic of order nine or isomorphic to $C_3\times C_3$.
 ::: {.proof}
     <2>1. The group $Q$ has prime order $|Q| = 5$, so $Q \cong \mathbb{Z}/5\mathbb{Z}$.
     <2>2. The group $P$ has order $|P| = 3^2 = 9$. Every group of order $p^2$ for a prime $p$ is abelian.
@@ -49,7 +47,10 @@ How many isomorphism classes of groups of order 45 are there? Describe a represe
 
 :::
 
-<1>4. The isomorphism classes of $G$:
+<1>4. There are exactly two isomorphism classes, represented by
+\[
+\boxed{C_{45}\qquad\text{and}\qquad C_3\times C_{15}}.
+\]
 ::: {.proof}
     <2>1. Case 1 ($P \cong \mathbb{Z}/9\mathbb{Z}$):
     $$G_1 \cong \mathbb{Z}/9\mathbb{Z} \times \mathbb{Z}/5\mathbb{Z} \cong \mathbb{Z}/45\mathbb{Z}$$
@@ -60,8 +61,8 @@ How many isomorphism classes of groups of order 45 are there? Describe a represe
 
 :::
 
-<1>5. Conclusion:
+<1>5. Q.E.D.
 ::: {.proof}
-    There are precisely 2 isomorphism classes of groups of order 45, represented by $\mathbb{Z}/45\mathbb{Z}$ and $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/15\mathbb{Z}$.
+Steps <1>1--<1>4 prove the classification and distinguish the two groups.
 :::
 :::
