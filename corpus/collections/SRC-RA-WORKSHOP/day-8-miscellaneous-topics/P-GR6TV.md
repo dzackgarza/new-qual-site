@@ -23,28 +23,32 @@ Find an example of a metric space $X$ and a subset $E \subseteq X$ such that $E$
 :::
 ::: {.solution}
 <1>1. Example: $X = (0, 1)$ with the usual metric $d(x,y) = |x - y|$, and $E = (0, 1) = X$ itself.
+
 ::: {.proof}
-explicit space and subset.
+The restriction of the Euclidean distance to $X\times X$ is a metric, and $E=X$ is a subset of this metric space.
 :::
 
 <1>2. $E$ is closed in $X$.
+
 ::: {.proof}
-$E = X$ is the whole space, and the whole space is always closed (its complement $\varnothing$ is open).
+The complement $X\setminus E=\varnothing$ is open in $X$, hence $E$ is closed in $X$.
 :::
 
 <1>3. $E$ is bounded.
+
 ::: {.proof}
-$E \subseteq B(x_0, 1)$ for any $x_0 \in X$ (the diameter of $(0,1)$ is $1$; e.g. $E \subseteq B(1/2, 1)$).
+For every $x\in E$, $d(x,1/2)=|x-1/2|<1/2$. Thus $E\subseteq B_X(1/2,1/2)$.
 :::
 
 <1>4. $E$ is not compact.
+
 ::: {.proof}
-the sequence $x_k = 1/(k+1) \in E$ has no convergent subsequence in $X$: it converges to $0 \notin X$, and any subsequence also converges to $0$, so no subsequence converges to a point of $X$.
+Consider $x_k=1/(k+1)\in E$ for $k\geq1$. Every subsequence converges to zero in $\mathbb R$. If any subsequence converged in $X$ to a point $x\in X$, it would also converge to $x$ in $\mathbb R$, contradicting uniqueness of limits because $0\notin X$. Hence $E$ is not sequentially compact and therefore is not compact, since compact metric spaces are sequentially compact.
 :::
-(Compactness of metric spaces is equivalent to sequential compactness.)
 
 <1>5. Q.E.D.
+
 ::: {.proof}
-<1>2–<1>4 show closed + bounded $\not\Rightarrow$ compact in general metric spaces; compactness needs completeness (or the ambient space must be $\RR^n$). Alternative example: $X = \QQ$, $E = \QQ \cap [0,1]$ (closed and bounded in $\QQ$, not compact).
+Steps <1>2–<1>4 show that $E$ is closed and bounded in $X$ but not compact. Closedness and boundedness imply compactness in Euclidean spaces by Heine–Borel, but not in arbitrary metric spaces, even complete ones.
 :::
 :::
