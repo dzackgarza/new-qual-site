@@ -32,45 +32,45 @@ M N=\left(\begin{array}{ll}{0} & {0} \\ {0} & {*}\end{array}\right)
 :::
 
 ::: {.solution}
-\envlist
-
-- Multiply everything out to get
+<1>1. The first three entries of $MN$ vanish precisely when
 \[
-\matt{ax-by}{au-bv}{cx-dy}{cu-dv}
-,\]
-  so it suffices to show $cu=dv$ given
-  \[
-  ax &= by \\
-  cx &= dy \\
-  au &= bv
-  .\]
+ax=by,\qquad au=bv,\qquad cx=dy.
+\]
 
-- Writing $cu$:
-  - Use that $b\in R\units$, left-multiply (1) by $b\inv$ to get $b\inv a x = y$
-  - Substitute $y$ into (2) to get $cx = d(b\inv a x)$.
-  - Since $x\in R\units$, right-multiply by $x\inv$ to get $c = db\inv a$ and thus $cu = db\inv a u$.
-  - Summary:
-  \[
-  ax = by 
-  &\implies b\inv ax = y \\
-  &\implies cx = dy = d(b\inv a x) \\
-  &\implies c = db\inv a \\
-  &\implies cu = db\inv au 
-  .\]
-
-- Writing $dv$:
-  - Left-multiply (3) by $b\inv$ to get $b\inv au = v$.
-  - Left-multiply by $d$ to get $db\inv au = dv$
-  - Summary:
-  \[
-  au = bv 
-  &\implies b\inv a u = v \\
-  &\implies db\inv au = dv
-  .\]
-
-- So 
+::: {.proof}
+Matrix multiplication gives
 \[
-cu = db\inv a u = dv
-.\]
+MN=\begin{pmatrix}ax-by&au-bv\\cx-dy&cu-dv\end{pmatrix}.
+\]
+Thus the specified vanishing is equivalent to the displayed equations.
+:::
+
+<1>2. The fourth entry also vanishes: $cu=dv$.
+
+::: {.proof}
+Because $b$ and $x$ are units and $R$ is commutative, the first equation of step <1>1 gives $y=b^{-1}ax$. Substituting into the third yields
+\[
+cx=dy=db^{-1}ax.
+\]
+Multiplying by $x^{-1}$ gives $c=db^{-1}a$. The second equation of step <1>1 gives $v=b^{-1}au$. Consequently
+\[
+cu=db^{-1}au=dv.
+\]
+:::
+
+<1>3. The conclusion is
+\[
+\boxed{MN=0}.
+\]
+
+::: {.proof}
+The first three matrix entries vanish by hypothesis, and the final entry vanishes by step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves the requested implication.
+:::
 
 :::
