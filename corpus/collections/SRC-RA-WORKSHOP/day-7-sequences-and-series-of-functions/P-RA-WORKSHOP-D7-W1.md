@@ -25,20 +25,57 @@ Give a precise statement of the Stone–Weierstrass theorem for real-valued cont
 Then, verify that the set of all polynomials of the form $$\left\{\sum_{j=2017}^{N}a_jx^j:N\in\mathbb N,\ N\ge2017,\ a_j\in\mathbb R\right\}$$ along with the zero function is an algebra over $[-2,2]\subset\mathbb R$.
 :::
 
-:::: {.solution}
-**Goal:** (1) State Stone–Weierstrass for real-valued continuous functions; (2) verify that $\mathcal A = \{\sum_{j=2017}^{N}a_jx^j : N \ge 2017,\ a_j \in \mathbb R\} \cup \{0\}$ is an algebra over $[-2,2]$.
+::: {.solution}
+Write $X=[-2,2]$ and let $\mathcal A\subseteq C(X;\mathbb R)$ be the family of polynomial functions specified in the problem.
 
-<1>1. Statement of the theorem (real-valued version).
-Proof: If $X$ is a compact Hausdorff space and $\mathcal A \subseteq C(X;\mathbb R)$ is a subalgebra that (i) contains the constant functions, (ii) separates points of $X$ (for every $x \neq y$ there is $h \in \mathcal A$ with $h(x) \neq h(y)$), then $\mathcal A$ is dense in $C(X;\mathbb R)$ with the sup norm.
+<1>1. The real Stone–Weierstrass theorem states: if $K$ is compact Hausdorff and $B\subseteq C(K;\mathbb R)$ is an $\mathbb R$-subalgebra containing the constant functions and separating points of $K$, then $B$ is dense in $C(K;\mathbb R)$ in the uniform norm.
 
-<1>2. $\mathcal A$ is the set of all polynomials divisible by $x^{2017}$ (together with the zero polynomial), restricted to $[-2,2]$.
-Proof: a polynomial $p(x) = \sum_{j=0}^{N}a_jx^j$ has no terms of degree $< 2017$ exactly when $p(x) = x^{2017}q(x)$ for a polynomial $q$; the zero polynomial is included explicitly.
+::: {.proof}
+This is the unital real form of the Stone–Weierstrass theorem. Separation means that for every distinct $s,t\in K$ there exists $h\in B$ with $h(s)\ne h(t)$. The conclusion means that for every $u\in C(K;\mathbb R)$ and every $\varepsilon>0$ there exists $h\in B$ with $\|u-h\|_\infty<\varepsilon$.
+:::
 
-<1>3. $\mathcal A$ is a vector subspace of $C[-2,2]$ closed under products.
-<2>1. $0 \in \mathcal A$ by definition.
-<2>2. Sums and scalar multiples stay in $\mathcal A$: $\sum_{j\ge2017}a_jx^j + \sum_{j\ge2017}b_jx^j = \sum_{j\ge2017}(a_j+b_j)x^j$, and $c\sum a_jx^j = \sum (ca_j)x^j$.
-Proof: the lowest degree present remains $\ge 2017$.
-<2>3. Products stay in $\mathcal A$: $(x^{2017}p)(x^{2017}q) = x^{2017}(x^{2017}pq)$, and the lowest degree of a product of two terms of degree $\ge 2017$ is $\ge 2017 + 2017 \ge 2017$.
-Proof: $x^{2017}p \cdot x^{2017}q = x^{2017} \cdot [x^{2017}pq]$, and $x^{2017}pq$ is a polynomial; so the product is of the form $x^{2017}\cdot(\text{polynomial}) \in \mathcal A$.
-<2>4. Q.E.D. Proof: <2>1–<2>3 are the axioms of a subalgebra of $C[-2,2]$ (scalars over $\mathbb R$). No constant functions beyond $0$ belong to $\mathcal A$, so the algebra does not contain the constants — it is a subalgebra, and the problem only asks to verify it is an algebra, not that it satisfies the Stone–Weierstrass hypotheses.
+<1>2. The family $\mathcal A$ consists precisely of the functions $x\mapsto x^{2017}q(x)$ for $q\in\mathbb R[x]$.
+
+::: {.proof}
+Every displayed polynomial in the problem factors as $x^{2017}\sum_{j=2017}^N a_jx^{j-2017}$. Conversely, multiplying any polynomial $q$ by $x^{2017}$ produces a polynomial with no terms of degree below $2017$. The choice $q=0$ includes the zero function.
+:::
+
+<1>3. The family $\mathcal A$ is a (not necessarily unital) $\mathbb R$-subalgebra of $C(X;\mathbb R)$.
+
+<2>1. The family $\mathcal A$ is an $\mathbb R$-vector subspace.
+
+::: {.proof}
+By step <1>2, zero belongs to $\mathcal A$, and for polynomials $p,q$ and scalars $r,s\in\mathbb R$,
+\[
+r(x^{2017}p)+s(x^{2017}q)=x^{2017}(rp+sq)\in\mathcal A.
+\]
+:::
+
+<2>2. The family $\mathcal A$ is closed under pointwise multiplication.
+
+::: {.proof}
+For polynomials $p,q$,
+\[
+(x^{2017}p)(x^{2017}q)=x^{2017}(x^{2017}pq)\in\mathcal A
+\]
+by step <1>2.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+Steps <2>1 and <2>2 give the vector-space and multiplication axioms of an $\mathbb R$-subalgebra of $C(X;\mathbb R)$.
+:::
+
+<1>4. The algebra $\mathcal A$ is not unital and does not satisfy the hypotheses of step <1>1.
+
+::: {.proof}
+Every member of $\mathcal A$ vanishes at $0$ by step <1>2. Thus the constant function $1$ is not in $\mathcal A$. In particular, the unital hypothesis of step <1>1 fails. Indeed, $\mathcal A$ is not uniformly dense in $C(X;\mathbb R)$ because its uniform closure also consists of functions vanishing at $0$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 supplies the requested theorem, and step <1>3 establishes that the displayed polynomial family is an algebra. Step <1>4 clarifies its nonunital status.
+:::
 :::
