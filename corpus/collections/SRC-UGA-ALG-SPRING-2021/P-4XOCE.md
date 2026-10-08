@@ -73,11 +73,31 @@ p = 1 + \sum_{\substack{ j\leq k \\ j\neq 1 }} \size C_{i_j}
 :::
 
 ::: {.solution}
+<1>1. Conjugation by $G$ defines a homomorphism $\varphi:G\to\operatorname{Aut}(H)$, and its image has order dividing both $|G|$ and $p-1$.
+
+::: {.proof}
 Because $|H|=p$ is prime, $H\cong C_p$. Conjugation by $G$ on $H$ gives a homomorphism
 \[
 \varphi:G\longrightarrow \operatorname{Aut}(H)\cong C_{p-1}.
 \]
-Hence $|\operatorname{im}\varphi|$ divides both $|G|$ and $p-1$. Every prime divisor of $|\operatorname{im}\varphi|$ therefore divides $|G|$, so by minimality of $p$ it is at least $p$; but it also divides $p-1$. Thus $|\operatorname{im}\varphi|=1$.
+Lagrange's theorem applied to the domain and codomain shows that $|\operatorname{im}\varphi|$ divides both $|G|$ and $p-1$.
+:::
 
+<1>2. The homomorphism $\varphi$ is trivial.
+
+::: {.proof}
+Hence $|\operatorname{im}\varphi|$ divides both $|G|$ and $p-1$. Every prime divisor of $|\operatorname{im}\varphi|$ therefore divides $|G|$, so by minimality of $p$ it is at least $p$; but it also divides $p-1$. Thus $|\operatorname{im}\varphi|=1$.
+:::
+
+<1>3. The subgroup $H$ lies in the center of $G$.
+
+::: {.proof}
 Therefore conjugation by every $g\in G$ acts trivially on $H$. Equivalently, $ghg^{-1}=h$ for all $g\in G$ and $h\in H$, so $H\subseteq Z(G)$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required inclusion.
+:::
 :::
