@@ -26,25 +26,37 @@ Prove that $\mathcal{F}$ is equicontinuous on $[a,b]$.
 
 ::: {.solution}
 <1>1. Every $f \in \mathcal F$ is Lipschitz with constant $M$: $|f(x) - f(y)| \le M|x - y|$ for all $x, y \in [a,b]$.
+
 ::: {.proof}
-mean value theorem — for $x \ne y$, $f(x) - f(y) = f'(c)(x - y)$ for some $c$ between $x$ and $y$, and $|f'(c)| \le M$.
+The assertion is immediate if $\mathcal F$ is empty. Otherwise $|f'(x)|\le M$ implies $M\ge0$. For $a\le x<y\le b$, continuity on $[x,y]$ and differentiability on $(x,y)$ permit the mean value theorem: there is $c\in(x,y)$ such that $f(y)-f(x)=f'(c)(y-x)$. Taking absolute values proves the bound; the case $x=y$ is immediate.
 :::
 
 <1>2. $\mathcal F$ is equicontinuous on $[a,b]$.
-<2>1. Given $\eps > 0$, set $\delta = \eps/M$.
+
+<2>1. For every $\varepsilon>0$, the number $\delta=\varepsilon/(M+1)$ is positive and independent of $f\in\mathcal F$ and $x,y\in[a,b]$.
+
 ::: {.proof}
-$M < \infty$ by hypothesis.
+If $\mathcal F$ is nonempty, step <1>1 gives $M\ge0$, so $M+1>0$. If $\mathcal F$ is empty, equicontinuity is vacuous and any $\delta>0$ works.
 :::
-<2>2. For $|x - y| < \delta$: $|f(x) - f(y)| \le M|x - y| < \eps$ for every $f \in \mathcal F$.
+
+<2>2. Whenever $x,y\in[a,b]$ satisfy $|x-y|<\delta$, one has $|f(x)-f(y)|<\varepsilon$ for every $f\in\mathcal F$.
+
 ::: {.proof}
-<1>1 and <2>1. <2>3. Q.E.D.
+By step <1>1, $|f(x)-f(y)|\le M|x-y|<M\varepsilon/(M+1)<\varepsilon$ for $M>0$. If $M=0$, the bound in step <1>1 is zero, giving the same conclusion.
+:::
+
+<2>3. Q.E.D.
+
 ::: {.proof}
-<2>2 is exactly the definition of equicontinuity ($\delta$ independent of $x, y$, and $f$).
+Steps <2>1 and <2>2 establish the epsilon-delta criterion uniformly over the family.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves equicontinuity on $[a,b]$.
 :::
 :::
 
-<1>3. (Remark) each $f \in \mathcal F$ is also uniformly bounded: $|f(x)| \le M + M(b - a)$.
-::: {.proof}
-$|f(x)| \le |f(a)| + |f(x) - f(a)| \le M + M|x - a| \le M + M(b - a)$ by <1>1.
-:::
+For every $f\in\mathcal F$, the same Lipschitz estimate also gives the uniform bound $|f(x)|\le M+M(b-a)$, using $|f(a)|\le M$.
 :::
