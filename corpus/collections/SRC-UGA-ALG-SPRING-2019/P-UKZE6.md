@@ -26,9 +26,7 @@ Let $R$ be a commutative ring with identity $1 \ne 0$.
 :::
 
 ::: {.solution}
-**Goal:** Prove Krull's existence theorem for maximal ideals containing a given proper ideal in (a), characterize the Jacobson radical via units in (b), and prove $J(R) = \operatorname{Nil}(R)$ for finite commutative rings in (c).
-
-<1>1. Part (a): Every proper ideal is contained in a maximal ideal.
+<1>1. Every proper ideal is contained in a maximal ideal.
 ::: {.proof}
     <2>1. Let $I \subsetneq R$ be a proper ideal of $R$.
     <2>2. Define the family of proper ideals of $R$ containing $I$:
@@ -42,7 +40,7 @@ Let $R$ be a commutative ring with identity $1 \ne 0$.
 
 :::
 
-<1>2. Part (b): $x \in J(R) \iff 1 + r x \in R^\times$ for all $r \in R$.
+<1>2. An element $x$ lies in $J(R)$ if and only if $1+rx$ is a unit for every $r\in R$.
 ::: {.proof}
     <2>1. ($\implies$): Assume $x \in J(R)$, so $x \in \mathfrak{m}$ for every maximal ideal $\mathfrak{m}$.
         ::: {.proof}
@@ -55,7 +53,7 @@ Let $R$ be a commutative ring with identity $1 \ne 0$.
 
 :::
 
-<1>3. Part (c): $J(R) = \operatorname{Nil}(R)$ when $R$ is finite.
+<1>3. If $R$ is finite, then $J(R)=\operatorname{Nil}(R)$.
 ::: {.proof}
     <2>1. Finite integral domains are fields: Let $D$ be a finite integral domain. For any non-zero element $a \in D \setminus \{0\}$, the multiplication map $\mu_a: D \to D, y \mapsto a y$ is injective (since $a y_1 = a y_2 \implies a (y_1 - y_2) = 0 \implies y_1 = y_2$). Since $D$ is finite, every injective map on $D$ is surjective. Thus $1 \in \operatorname{im}(\mu_a)$, so there exists $b \in D$ such that $a b = 1$. Thus $D$ is a field.
     <2>2. Every prime ideal of a finite commutative ring is maximal: Let $\mathfrak{p} \subset R$ be a prime ideal. The quotient ring $R/\mathfrak{p}$ is a finite integral domain. By <2>1, $R/\mathfrak{p}$ is a field, which implies $\mathfrak{p}$ is a maximal ideal.
@@ -66,8 +64,8 @@ Let $R$ be a commutative ring with identity $1 \ne 0$.
 
 :::
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
 ::: {.proof}
-    All proper ideals lie in maximal ideals, $x \in J(R) \iff 1 + rx \in R^\times$ for all $r$, and $J(R) = \operatorname{Nil}(R)$ when $R$ is finite.
+Steps <1>1, <1>2, and <1>3 establish parts (a), (b), and (c), respectively.
 :::
 :::
