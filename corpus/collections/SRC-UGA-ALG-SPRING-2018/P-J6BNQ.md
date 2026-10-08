@@ -77,7 +77,7 @@ H_i=\Gal(K/E_i)\triangleleft G.
 <1>3. $H_1H_2$ is a subgroup of $G$.
 ::: {.proof}
 Let $h_1,h_1'\in H_1$ and $h_2,h_2'\in H_2$.
-Since $H_1\triangleleft G$ by <1>2,
+Since $H_1\triangleleft G$ by step <1>2,
 \[
 h_2h_1'h_2^{-1}\in H_1.
 \]
@@ -111,8 +111,14 @@ E_1\cap E_2\subseteq K^{H_1H_2}.
 
 <1>5. $\Gal(K/(E_1\cap E_2))=H_1H_2$.
 ::: {.proof}
-By <1>3, $H_1H_2$ is a subgroup of $G$, and by <1>4 its fixed field is $E_1\cap E_2$.
+By step <1>3, $H_1H_2$ is a subgroup of $G$, and by step <1>4 its fixed field is $E_1\cap E_2$.
 The Galois correspondence gives the claimed identity.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>1 establishes part (a), step <1>3 proves part (b), and step <1>5 proves part (c).
 :::
 
 :::
