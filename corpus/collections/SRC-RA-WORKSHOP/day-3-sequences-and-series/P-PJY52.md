@@ -22,21 +22,33 @@ If the series $\sum_{n=0}^\infty a_n$ converges conditionally, show that the rad
 :::
 
 ::: {.solution}
-<1>1. $a_n \to 0$.
+<1>1. The coefficient sequence $(a_n)$ is bounded.
+
 ::: {.proof}
-$\sum_{n\ge 0} a_n$ converges, so its terms tend to $0$.
+Since $\sum_{n=0}^{\infty}a_n$ converges, the difference of consecutive partial sums gives $a_n\to0$. Every convergent sequence is bounded, so some $C>0$ satisfies $|a_n|\leq C$ for all $n$.
 :::
-Hence $(a_n)$ is bounded: $|a_n| \le C$ for all $n$.
-<1>2. $R \ge 1$.
+
+<1>2. The radius of convergence $R$ satisfies $R\geq1$.
+
 ::: {.proof}
-for $|x| < 1$, $|a_n x^n| \le C|x|^n$, and $\sum_n C|x|^n$ is a convergent geometric series; so $\sum_n a_n x^n$ converges absolutely for every $|x| < 1$.
+For every $|x|<1$, step <1>1 gives $|a_nx^n|\leq C|x|^n$. The geometric comparison series converges. Thus the power series converges absolutely throughout $|x|<1$, proving $R\geq1$.
 :::
-<1>3. $R \le 1$.
+
+<1>3. The radius satisfies $R\leq1$.
+
 ::: {.proof}
-if $R > 1$, the power series converges absolutely for every $|x| < R$, in particular at $x = 1$, so $\sum_n |a_n| < \infty$, contradicting conditional convergence.
+If $R>1$, then $x=1$ lies strictly inside the disk of convergence. A power series converges absolutely at every point strictly inside its radius; hence $\sum_n|a_n1^n|=\sum_n|a_n|$ converges. This contradicts the assumption that $\sum_n a_n$ converges only conditionally.
 :::
-<1>4. $R = 1$.
+
+<1>4. The radius of convergence is $\boxed{R=1}$.
+
 ::: {.proof}
-<1>2 and <1>3. <1>5. Q.E.D.
+The inequalities of steps <1>2 and <1>3 imply $1\leq R\leq1$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 establishes the required radius.
 :::
 :::
