@@ -25,33 +25,33 @@ You may use canonical forms.
 :::
 
 ::: {.solution}
-<1>1. By the Jordan canonical form, $T$ is similar to a block-diagonal matrix $J = \bigoplus J_i$, where each $J_i$ is a Jordan block for an eigenvalue $\lambda_i$.
+Choose a complex basis of $V$ and write $A$ for the matrix of $T$ in this basis.
+
+<1>1. There exists $P\in\operatorname{GL}(V)$ such that $P^{-1}AP=J=\bigoplus_{i=1}^s J_i$, where $J_i=\lambda_i I_{m_i}+N_i$ is a Jordan block of size $m_i$.
 ::: {.proof}
-the Jordan canonical form over $\CC$.
+Since $\mathbb C$ is algebraically closed, the Jordan canonical form theorem supplies a basis in which the matrix of $T$ is the displayed block diagonal matrix. Each $N_i$ has ones on its superdiagonal and zero elsewhere, so $N_i^{m_i}=0$.
 :::
 
-<1>2. The characteristic polynomial is $p(x) = \prod_i (x - \lambda_i)^{m_i}$, where $m_i$ is the size of the Jordan block $J_i$.
+<1>2. The characteristic polynomial of $T$ is $p(x)=\prod_{i=1}^s(x-\lambda_i)^{m_i}$.
 ::: {.proof}
-the characteristic polynomial of a Jordan block $J_i$ (of size $m_i$ with eigenvalue $\lambda_i$) is $(x - \lambda_i)^{m_i}$.
+Similarity preserves characteristic polynomials, so $p(x)=\det(xI-J)$. The matrix $J$ is block diagonal, and $xI_{m_i}-J_i$ is upper triangular with diagonal entries $x-\lambda_i$. Multiplicativity of determinants across diagonal blocks therefore gives the formula.
 :::
 
-<1>3. For each Jordan block $J_i = \lambda_i I + N_i$ (where $N_i$ is nilpotent with $N_i^{m_i} = 0$), we have $(J_i - \lambda_i I)^{m_i} = N_i^{m_i} = 0$.
+<1>3. For every $1\leq i\leq s$, the evaluation $p(J_i)$ vanishes.
 ::: {.proof}
-$J_i - \lambda_i I = N_i$ is nilpotent of index $m_i$.
+By step <1>1, $(J_i-\lambda_i I_{m_i})^{m_i}=N_i^{m_i}=0$. By step <1>2, the polynomial $p(x)$ is divisible by $(x-\lambda_i)^{m_i}$. Therefore $p(J_i)$ has the zero factor $(J_i-\lambda_i I_{m_i})^{m_i}$, and hence $p(J_i)=0$.
 :::
 
-<1>4. Hence $p(J_i) = \prod_j (J_i - \lambda_j I)^{m_j} = 0$ for each block $J_i$.
+<1>4. The operator $T$ satisfies
+\[
+\boxed{p(T)=0}.
+\]
 ::: {.proof}
-the factor $(J_i - \lambda_i I)^{m_i} = 0$ (<1>3) is one of the factors of $p(J_i)$, so the whole product vanishes.
+Polynomial evaluation commutes with direct sums, so step <1>3 gives $p(J)=\bigoplus_i p(J_i)=0$. Polynomial evaluation also respects conjugation: $p(A)=Pp(J)P^{-1}=0$. Since $A$ represents $T$, this means $p(T)=0$.
 :::
 
-<1>5. Therefore $p(J) = \bigoplus_i p(J_i) = 0$, and since $T$ is similar to $J$, $p(T) = 0$.
+<1>5. Q.E.D.
 ::: {.proof}
-<1>4 and similarity.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+Step <1>4 proves the Cayley–Hamilton theorem.
 :::
 :::
