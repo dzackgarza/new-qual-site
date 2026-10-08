@@ -53,114 +53,43 @@ Write down the minimal polynomial of $A$.
 :::
 
 ::: {.solution}
-\envlist
+Let $A$ be the matrix in the problem.
 
-::: {.proof title="parts a and b"}
-\envlist
+<1>1. Its characteristic polynomial is $\chi_A(t)=(t-2)(t-1)^2$.
 
-- Write $\chi_A(t) = t^3 - T_1 t^2 + T_2 t - T_3$ where $T_i \da \tr\qty{\Extpower^i A}$:
-  - $T_1 = \tr(A) = 4-1+1=4$.
-  - $T_2 = (-1-2) + (4+2) + (-4-6) = 5$.
-  - $T_3 = \det(A) = 4(-1-2) -1(-10) + (-1)(-6+2) = 2$.
-- So $\chi_A(t) = t^3 - 4t^2 + 5t-2$.
-- Try rational roots test: $r \in \ts{\pm 2/1}$, and check that 2 is root.
-- By polynomial long division, $\chi_A(t) / (t-2) = t^2-2t+1 = (t-1)^2$.
-- So the eigenvalues are $\lambda = 2, 1$.
-- $\lambda = 2$:
-  - Set $U\da A-\lambda I$, then find $\RREF(U)$ to compute its kernel:
-  \[
-  U \da
-  \begin{bmatrix}
-  2 & 1 & -1
-  \\
-  -6 & -3 & 2
-  \\
-  2 & 1 & -1
-  \end{bmatrix}
-  \leadsto
-  \begin{bmatrix}
-  2 & 1 & 0
-  \\
-  0 & 0 & 1
-  \\
-  0 & 0 & 0
-  \end{bmatrix}
-  ,\]
-  which yields $v_1 = [1,-2,0]$.
+::: {.proof}
+Expansion of $\det(tI-A)$ gives $t^3-4t^2+5t-2=(t-2)(t-1)^2$.
+:::
 
-- $\lambda = 2$:
-  - Similarly,
-  \[
-  U \da 
-  \begin{bmatrix}
-  3 & 1 & -1 \\
-  -6 & -2 & 2 \\
-  2 & 1 & 0
-  \end{bmatrix}
-  \leadsto  
-  \begin{bmatrix}
-  1 & 0 & -1
-  \\
-  0 & 1 & 2
-  \\
-  0 & 0 & 0
-  \end{bmatrix}
-  ,\]
-  which yields $v_2 = [1,-2,1]$.
-
-  - Solve $Uw = v_3$:
-  \[
-  \begin{bmatrix}
-  3 & 1 & -1 & 1 \\
-  -6 & -2 & 2 & -2 \\
-  2 & 1 & 0 & 1
-  \end{bmatrix}
-  \leadsto
-  \begin{bmatrix}
-  1 & 0 & -1 & 0 \\
-  0 & 1 & 2 & 1 \\
-  0 & 0 & 0 & 0
-  \end{bmatrix}
-  ,\]
-  so take $v_3 = [0,1,0]$.
-
-- Putting things together:
+<1>2. The Jordan canonical form and a conjugating matrix are
 \[
-A &= P\inv J P \text{ where } \\
-J = J_1(\lambda = 2) \oplus J_2(\lambda = 1) 
-&=
-\begin{bmatrix}
-2 & 0 & 0
-\\
-0 & 1 & 1
-\\
-0 & 0 & 1
-\end{bmatrix} \\
-P = [v_1, v_2, v_3] 
-&= 
-\begin{bmatrix}
-1 & 1 & 0
-\\
--2 & -2 & 1
-\\
-0 & 1 & 0
-\end{bmatrix}
-.\]
+\boxed{J=\begin{pmatrix}2&0&0\\0&1&1\\0&0&1\end{pmatrix},
+\qquad
+P=\begin{pmatrix}1&1&0\\-2&-2&1\\0&1&0\end{pmatrix}}.
+\]
 
-:::
-
-::: {.proof title="part c"}
-\envlist
-
-- Write $\min_A(t) = (t-2)(t-1)^{\ell_1}$, then since $\min_A(t)$ divides $\chi_A(t)$ either $\ell_1 = 1, 2$.
-- $\ell_1$ is the size of the **largest** block corresponding to $\lambda = 1$, which is size 2, so $\lambda_1=2$.
-- Thus 
+::: {.proof}
+Set $v_1=(1,-2,0)^T$, $v_2=(1,-2,1)^T$, and $v_3=(0,1,0)^T$. Direct multiplication gives
 \[
-\min_A(t) = (t-2)(t-1)^2
-.\]
+(A-2I)v_1=0,\qquad (A-I)v_2=0,\qquad (A-I)v_3=v_2.
+\]
+The displayed matrix $P$ has these three columns and determinant $-1$, so it is invertible. The three equations give $AP=PJ$, hence $P^{-1}AP=J$. The Jordan form is therefore the stated one.
+:::
 
+<1>3. The minimal polynomial is
+\[
+\boxed{m_A(t)=(t-2)(t-1)^2}.
+\]
+
+::: {.proof}
+The minimal polynomial of a Jordan matrix is the least common multiple of the powers $(t-\lambda)^d$ corresponding to its blocks of sizes $d$. By step <1>2, the largest blocks for eigenvalues $2$ and $1$ have sizes one and two, respectively. Similarity preserves the minimal polynomial.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>2 establishes parts (a) and (b), and step <1>3 establishes part (c).
 :::
 
 :::
-
 
