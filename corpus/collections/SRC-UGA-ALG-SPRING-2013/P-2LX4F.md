@@ -28,71 +28,37 @@ b. Find $\gal(K/F)$ and express each intermediate field between $F$ and $K$ as $
 :::
 
 ::: {.solution}
-Let $r$ be a root of $f$. Since
-\[
-r^6+r^3+1=0,
-\]
-put $u=r^3$. Then
-\[
-u^2+u+1=0.
-\]
-Multiplying by $u-1$ gives $u^3-1=0$, so $r^9=u^3=1$. Moreover $u\ne1$, because in characteristic $2$,
-\[
-1^2+1+1=1\ne0.
-\]
-Thus $r^3\ne1$. In fact $r$ has multiplicative order $9$.
+<1>1. Every root $r$ of $f$ satisfies $r^9=1$ and $r^3\neq1$.
 
-Because $f$ is irreducible of degree $6$, $F(r)$ has $2^6=64$ elements. Every finite extension of a finite field is Galois, and all conjugates of $r$ are obtained by Frobenius powers, so the splitting field is
+::: {.proof}
+The equation $r^6+r^3+1=0$ gives $(r^3-1)(r^6+r^3+1)=r^9-1=0$. But $r^3=1$ would imply $r^6+r^3+1=1$ in characteristic two, a contradiction. Since $r^9=1$ and $r^3\neq1$, the multiplicative order of $r$ is nine.
+:::
+
+<1>2. The splitting field and Galois group are
 \[
-K=F(r)\cong\mathbb F_{64}.
-\]
-Therefore
-\[
-\operatorname{Gal}(K/F)=\langle\sigma\rangle\cong C_6,
-\qquad
-\sigma(z)=z^2.
+\boxed{K=F(r)\cong\mathbb F_{64},\qquad
+\operatorname{Gal}(K/F)=\langle\sigma\rangle\cong C_6,\quad\sigma(z)=z^2}.
 \]
 
-A cyclic group of order $6$ has one subgroup of each order $1,2,3,6$, so there are exactly four intermediate fields, namely the unique finite subfields of orders $2^d$ for $d\mid6$:
-\[
-\mathbb F_2,
-\quad
-\mathbb F_4,
-\quad
-\mathbb F_8,
-\quad
-\mathbb F_{64}.
-\]
-They can be written explicitly as follows.
+::: {.proof}
+The assumed irreducibility of the degree-six polynomial gives $[F(r):F]=6$, hence $|F(r)|=64$. Finite fields are Galois over their prime fields and the Frobenius automorphism $\sigma(z)=z^2$ generates the Galois group of order six. In particular, the Frobenius conjugates of $r$ belong to $F(r)$, so this field contains all roots of $f$ and is its splitting field.
+:::
 
-Since $r^3$ is a nontrivial cube root of unity, it satisfies $x^2+x+1$, which is irreducible over $\mathbb F_2$. Hence
+<1>3. All intermediate fields are
 \[
-\mathbb F_4=F(r^3).
+\boxed{F,\quad F(r^3)\cong\mathbb F_4,\quad
+F(r+r^8)\cong\mathbb F_8,\quad F(r)=K}.
 \]
-Set
-\[
-\beta=r+r^8=r+r^{-1}.
-\]
-Because $r^{64}=r$,
-\[
-\beta^8=r^8+r^{64}=r^8+r=\beta,
-\]
-so $\beta\in\mathbb F_8$. It is not in $\mathbb F_2$: $\beta=0$ would imply $r^7=1$, and $\beta=1$ would imply $r^2+r+1=0$, hence $r^3=1$, both contradicting that $r$ has order $9$. Thus $F(\beta)$ is a proper extension of $F$ inside $\mathbb F_8$; since $[\mathbb F_8:F]=3$ is prime,
-\[
-\mathbb F_8=F(r+r^8).
-\]
-Finally,
-\[
-\mathbb F_{64}=F(r).
-\]
-So the intermediate fields are exactly
-\[
-F,
-\qquad
-F(r^3),
-\qquad
-F(r+r^8),
-\qquad
-F(r)=K.
-\]
+
+::: {.proof}
+The cyclic group $C_6$ has exactly one subgroup of each order $1,2,3,6$, so the intermediate fields are the unique subfields of cardinalities $2,4,8,64$. By step <1>1, $r^3$ has order three and satisfies the irreducible polynomial $x^2+x+1$, hence generates $\mathbb F_4$.
+
+Put $\beta=r+r^8$. Because $r^9=1$, one has $r^{64}=r$, and thus $\beta^8=r^8+r^{64}=\beta$. Hence $\beta$ belongs to $\mathbb F_8$. It does not belong to $F$: if $\beta=0$ then $r^7=1$; if $\beta=1$, then multiplying $r+r^{-1}=1$ by $r$ gives $r^2+r+1=0$, implying $r^3=1$. Both contradict step <1>1. Since $[F_8:F]=3$, the nontrivial extension $F(\beta)$ equals $\mathbb F_8$. Finally $F(r)=K$ by step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part (a); steps <1>2 and <1>3 prove part (b).
+:::
 :::
