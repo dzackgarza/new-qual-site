@@ -23,17 +23,37 @@ audit:
 Show that $$\lim_{n\to\infty}f_n(x_n)=f(x).$$
 :::
 
-:::: {.solution}
-**Goal:** Show $f_n(x_n) \to f(x)$ given $f_n \to f$ uniformly on $[0,1]$, $f_n$ continuous, $x_n \to x$ in $[0,1]$.
+::: {.solution}
+<1>1. The uniform limit $f$ is continuous on $[0,1]$.
 
-<1>1. $|f_n(x_n) - f(x)| \le |f_n(x_n) - f(x_n)| + |f(x_n) - f(x)|$.
-Proof: triangle inequality.
+::: {.proof}
+Every $f_n$ is continuous, and the convergence $f_n\to f$ is uniform. The uniform limit theorem therefore gives continuity of $f$.
+:::
 
-<1>2. $|f_n(x_n) - f(x_n)| \le \|f_n - f\|_\infty \to 0$.
-Proof: uniform convergence, and $x_n \in [0,1]$.
+<1>2. The quantities $|f_n(x_n)-f(x_n)|$ and $|f(x_n)-f(x)|$ both tend to zero.
 
-<1>3. $|f(x_n) - f(x)| \to 0$.
-Proof: $f$ is continuous (uniform limit of continuous functions) and $x_n \to x$, so continuity of $f$ at $x$ gives $f(x_n) \to f(x)$.
+::: {.proof}
+Uniform convergence gives
+\[
+|f_n(x_n)-f(x_n)|\leq\|f_n-f\|_\infty\longrightarrow0,
+\]
+because $x_n\in[0,1]$. By step <1>1, $f$ is continuous at $x$, so $x_n\to x$ implies $f(x_n)\to f(x)$.
+:::
 
-<1>4. Q.E.D. Proof: <1>2 and <1>3 force the right side of <1>1 to $0$, so $f_n(x_n) \to f(x)$.
+<1>3. The limit is $\boxed{\lim_{n\to\infty}f_n(x_n)=f(x)}$.
+
+::: {.proof}
+By the triangle inequality,
+\[
+|f_n(x_n)-f(x)|
+\leq|f_n(x_n)-f(x_n)|+|f(x_n)-f(x)|.
+\]
+Both terms on the right tend to zero by step <1>2, so the left-hand side does as well.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 establishes the required convergence.
+:::
 :::
