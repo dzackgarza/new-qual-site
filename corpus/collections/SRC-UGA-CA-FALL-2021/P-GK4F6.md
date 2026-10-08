@@ -23,46 +23,36 @@ is analytic on the complement of the curve $\gamma$.
 
 :::
 
-::: {.solution title="Using Morera"}
-By Morera's theorem, it suffices to show $\int_\Delta f(z) \dz = 0$ for all triangles $\Delta \subseteq \gamma^c$.
-Claim:
+::: {.solution}
+Let $K=\gamma([0,1])$ and $U=\mathbb C\setminus K$. The compactness of $K$ implies that $U$ is open. Let $L$ be the length of the piecewise smooth curve $\gamma$.
+
+<1>1. For every $z_0\in U$, the derivative exists and equals
 \[
-\int_\Delta f(z) \dz 
-&= \int_\Delta \int_\gamma {F(w) \over w-z} \dw \dz \\
-&= \int_\gamma \int_\Delta {F(w) \over w-z} \dz \dw \\
-&= \int_\gamma F(w) \qty{ \int_\Delta {1 \over w-z} \dz} \dw \\
-&= \int_\gamma F(w) \cdot 0 \dw \\
-&= 0
-.\]
+\boxed{f'(z_0)=\int_\gamma\frac{F(w)}{(w-z_0)^2}\,dw}.
+\]
 
-That the inner integral is zero follows from the fact that the function $z\mapsto {1\over w-z}$ is holomorphic on $\gamma^c$, since it has only a simple pole at $w$ where $w\in \gamma$ is fixed.
-
-That the interchange of integrals is justified follows from Fubini's theorem: these are continuous functions on compact sets, which are uniformly bounded and thus Lebesgue measurable and integrable.
-
+::: {.proof}
+Fix $z_0\in U$ and let $d=\operatorname{dist}(z_0,K)>0$. For $0<|h|<d/2$, subtraction of the two integrals yields
+\[
+\frac{f(z_0+h)-f(z_0)}{h}
+=\int_\gamma\frac{F(w)}{(w-z_0-h)(w-z_0)}\,dw.
+\]
+For every $w\in K$, the difference between the integrand on the right and $F(w)/(w-z_0)^2$ is bounded in absolute value by
+\[
+\frac{2\|F\|_{\infty,K}|h|}{d^3}.
+\]
+The integral of that difference therefore has absolute value at most $2L\|F\|_{\infty,K}|h|/d^3$, which tends to zero with $h$. This proves the asserted derivative formula.
 :::
 
+<1>2. The function $f$ is holomorphic on $U$.
 
-::: {.solution title="Using limit definition"}
-The claim is that $f$ is complex differentiable, thus smooth, thus holomorphic and equal to its Taylor series expansion.
-The quick justification:
-\[
-\dd{}{z} f(z)
-&= \dd{}{z} \int_\gamma {F(w) \over w-z}\dw \\
-&= \int_\gamma \dd{}{z} {F(w) \over w-z} \dw \\
-&= \int_\gamma {F(w) \over (w-z)^2} \dw
-,\]
-where differentiating through the integral is justified since the integrand is a continuous function of $z$ on $\gamma$ since $w\neq z$ on $\gamma$, and $\gamma$ is a compact set.
-
-Slightly more rigorously, one can equivalently pass a limit through the integral to show that the defining limit exists:
-\[
-f(z+h) - f(z)
-&= \int_\gamma {F(w) \over w+h-z} \dw - \int_\gamma {F(w) \over w-z}\dw \\
-&= \int_\gamma {(w-z)F(w) - (w+h-z)F(w) \over (w+h-z)(w-z) } \dw \\
-&= \int_\gamma F(w) {h \over (w+h-z)(w-z)} \dw \\
-&\convergesto{h\to 0} \int_\gamma {F(w) \over (w-z)^2}\dw
-,\]
-since the term involving $h$ goes to 1.
-
-
+::: {.proof}
+Step <1>1 establishes complex differentiability at every point of the open set $U$. Hence $f$ is holomorphic on $U$.
 :::
 
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves the assertion.
+:::
+:::
